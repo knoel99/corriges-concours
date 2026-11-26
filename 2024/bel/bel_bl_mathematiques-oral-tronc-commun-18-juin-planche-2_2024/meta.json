@@ -1,0 +1,72 @@
+{
+  "slug": "bel_bl_mathematiques-oral-tronc-commun-18-juin-planche-2_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Mathématiques (oral tronc commun) — 18 juin, planche 2",
+    "annee": 2024
+  },
+  "type_epreuve": "oral",
+  "intitule_officiel": "Planche 2 du 18 juin 2024 — Épreuve orale de mathématiques, concours 2024 d’entrée à l’ENS Paris, voie B/L",
+  "questions": 9,
+  "redaction": "IA, corrigé non officiel",
+  "figures": [
+    {
+      "fichier": "figures/18b-illustration.svg",
+      "question": "1.3b",
+      "legende": "Les écarts calculés pour trois conditions initiales sont positifs ou nuls et décroissent. La condition initiale égale à 1 produit un écart identiquement nul."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/bl_sujets_oraux_mathematiques_2_18062024.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_oral_mathematiques.pdf",
+    "sha256_sujet": "699254e7e04bcc5cc9bd7852580eeb80f01cdc58d0038e30353930f7218347d0",
+    "sha256_rapport_jury": "923b6c7240094e9718b8fec845aa8713285a2a266592a62fad5bc2ea2bdf6cc7",
+    "calendrier": "https://www.ens.psl.eu/sujets-des-epreuves-orales-du-concours-bl-session-2024"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3a",
+      "1.3b",
+      "1.3c",
+      "2.1",
+      "2.2",
+      "2.3a",
+      "2.3b"
+    ],
+    "pages_pdf_des_questions": {
+      "1.1": 1,
+      "1.2": 1,
+      "1.3a": 1,
+      "1.3b": 1,
+      "1.3c": 1,
+      "2.1": 1,
+      "2.2": 1,
+      "2.3a": 1,
+      "2.3b": 1
+    },
+    "pages_du_sujet": 1,
+    "precision": "Comparaison avec les deux exercices et toutes leurs sous-questions sur le feuillet officiel."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Écart à une suite explicite et décomposition en espaces propres Rédaction et vérification des 9 démonstrations de la planche dans les deux éditions, préparation et reprise adaptées aux observations du jury, figure originale.",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "agent": "rennes_oraux_economie",
+      "session": "rennes_oraux_economie"
+    }
+  ]
+}
