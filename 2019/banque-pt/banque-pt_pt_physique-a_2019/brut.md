@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Épreuve de quatre heures sans calculatrice. Le fascicule attribue environ 35 % à l’électro-oculographie, 35 % à la biométrie par interférométrie et 30 % aux écoulements sanguins. Les valeurs tirées d’un graphe sont accompagnées des repères de lecture.
 
 [Sujet et figures officiels](https://www.banquept.fr/documents/2019/ph_a_2019_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2019/rapport_phys_a_ecrit_2019.pdf)
@@ -38,7 +40,7 @@ En un point où $\vec E\ne0$, la tangente à la ligne de champ est colinéaire a
 
 ### A-I-2-b — Orientation autour de l’œil
 
-Les lignes sortent de la cornée chargée positivement et aboutissent sur la rétine chargée négativement. Sur les deux flancs du modèle elles se recourbent vers la rétine. Le croquis utilise deux pôles pour rendre ce sens visible. La figure 1b du sujet répartit les charges sur des surfaces courbes.
+Les lignes sortent de la cornée chargée positivement et aboutissent sur la rétine chargée négativement. Sur les deux flancs du modèle elles se recourbent vers la rétine. Le croquis suit le champ de deux charges ponctuelles opposées pour rendre ce sens visible. La figure 1b du sujet répartit les charges sur des surfaces courbes.
 
 ![Figure 2 — Orientation de quelques lignes du champ oculaire dans une représentation à deux pôles.](figures/champ-oeil.svg)
 
@@ -86,7 +88,7 @@ L'amplitude est $101\times100\,\mu{\rm V}=10\,100\,\mu{\rm V}=10{,}1\,{\rm mV}$,
 
 ### A-II-2-a — Perturbation secteur
 
-Le réseau électrique à 50 Hz se couple aux fils et au corps par les champs ambiants. Une réjection étroite préserve les composantes physiologiques situées de part et d'autre du secteur. Ici la bande utile, de 0,002 à 10 Hz, est entière au-dessous de 50 Hz. Un passe-bas suffit en principe si la réjection obtenue est suffisante pour le niveau de parasite rencontré.
+Le réseau électrique à 50 Hz se couple aux fils et au corps par les champs ambiants. Une réjection étroite préserve les composantes physiologiques situées de part et d'autre du secteur. Ici la bande utile, de 0,002 à 10 Hz, se situe entièrement au-dessous de 50 Hz. Un passe-bas suffit en principe si sa réjection est adaptée au niveau du parasite. Avec le filtre spécifié ensuite, on obtient environ $-21\,{\rm dB}$ à 50 Hz, soit une amplitude résiduelle d'environ 9 %. Un coupe-bande peut donc rester utile si le couplage secteur est fort.
 
 ### A-II-2-b — Filtre haute fréquence
 
@@ -224,7 +226,7 @@ Posons $u=x-x_1$ en micromètres. Le domaine demandé est $[-2{,}70\,;\,2{,}70]$
 
 ### B-III-3-eα — Encadrement expérimental
 
-Dans le modèle à visibilité constante, tous les maxima de la fenêtre culminent à $4I_0$. La seule hauteur d'un maximum ne porte donc pas son numéro. En repérant la zone où des franges subsistent, on localise $x_0$ entre $x_-$ et $x_+$. Si l'on connaissait exactement les deux bords d'un modèle parfaitement symétrique, on pourrait calculer le centre exactement. Expérimentalement leur détection a une résolution finie.
+Dans le modèle à visibilité constante, tous les maxima de la fenêtre culminent à $4I_0$. La seule hauteur d'un maximum ne porte donc pas son numéro. En repérant la zone où des franges subsistent, on localise $x_0$ entre $x_-$ et $x_+$. Si l'on connaissait exactement les deux bords d'un modèle parfaitement symétrique, leur milieu donnerait le centre. De même, sur le tracé idéal de la question précédente, le troisième des cinq pics est identifiable si tous les pics sont résolus. Expérimentalement leur détection a une résolution finie.
 
 ### B-III-3-eβ — Centre et demi-largeur
 
@@ -316,7 +318,7 @@ Posons $X=\log_{10}\mathrm{Re}$ et $Y=\log_{10} f$. Sur la branche de gauche $Y=
 
 ### C-II-3-cβ — Lecture de la pente et du coefficient
 
-Sur la figure 14, on lit environ $(1\,000\,;\,0{,}065)$ et $(2\,000\,;\,0{,}032)$. Doubler $\mathrm{Re}$ divise $f$ par deux. $\alpha\simeq\log_{10}(0{,}032/0{,}065)/\log_{10}2\simeq-1$. Avec cette pente, $K\simeq 1\,000\times0{,}065\simeq65$, ou $2\,000\times0{,}032\simeq64$. L'épaisseur du trait limite la précision.
+Sur la figure 14, on lit environ $(1\,000\,;\,0{,}065)$ et $(2\,000\,;\,0{,}032)$. Ces lectures utilisent la grille logarithmique de chacun des deux axes. Doubler $\mathrm{Re}$ divise $f$ par deux. $\alpha\simeq\log_{10}(0{,}032/0{,}065)/\log_{10}2\simeq-1$. Avec cette pente, $K\simeq 1\,000\times0{,}065\simeq65$, ou $2\,000\times0{,}032\simeq64$. L'épaisseur du trait limite la précision.
 
 ### C-II-4-a — Vitesse moyenne
 
