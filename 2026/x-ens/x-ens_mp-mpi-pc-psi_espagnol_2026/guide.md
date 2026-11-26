@@ -10,6 +10,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 L’écrit commun du 15 avril 2026 dure quatre heures. La synthèse se rédige en espagnol, avec un titre, en 600 à 675 mots. Elle croise les documents 1 à 4, dont le dernier comprend **deux images**. Le texte d’opinion répond en espagnol à la chronique de Nuria Labari, en 500 à 600 mots. [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/LVE%20Espagnol.pdf)
