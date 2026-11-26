@@ -1689,6 +1689,7 @@
 | 2025 | X-ENS | PC | Chimie A | [md](2025/x-ens/x-ens_pc_chimie-a_2025/brut.md) | [md](2025/x-ens/x-ens_pc_chimie-a_2025/guide.md) |
 | 2026 | X-ENS | PC | Chimie A | [md](2026/x-ens/x-ens_pc_chimie-a_2026/brut.md) | [md](2026/x-ens/x-ens_pc_chimie-a_2026/guide.md) |
 | 2026 | X-ENS | PC | Maths PC | [md](2026/x-ens/x-ens_pc_maths-pc_2026/brut.md) | [md](2026/x-ens/x-ens_pc_maths-pc_2026/guide.md) |
+| 2011 | X-ENS | PC | Physique B | [md](2011/x-ens/x-ens_pc_physique-b_2011/brut.md) | [md](2011/x-ens/x-ens_pc_physique-b_2011/guide.md) |
 | 2015 | X-ENS | PC | Physique B | [md](2015/x-ens/x-ens_pc_physique-b_2015/brut.md) | [md](2015/x-ens/x-ens_pc_physique-b_2015/guide.md) |
 | 2016 | X-ENS | PC | Physique B | [md](2016/x-ens/x-ens_pc_physique-b_2016/brut.md) | [md](2016/x-ens/x-ens_pc_physique-b_2016/guide.md) |
 | 2017 | X-ENS | PC | Physique B | [md](2017/x-ens/x-ens_pc_physique-b_2017/brut.md) | [md](2017/x-ens/x-ens_pc_physique-b_2017/guide.md) |
