@@ -6,7 +6,11 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Le jury publie 12 billets pour le 26 juin, commission 2. Pour chacun, le premier intitulé est celui qui a été choisi. Le second était proposé au choix. Les deux reçoivent ici des réponses distinctes. Les exemples et arguments proposés servent à préparer une leçon personnelle.
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Le [feuillet du 26 juin, commission 2](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_2_al.pdf) contient 12 billets de deux sujets. Les développements suivent leur ordre. Le premier sujet a été choisi sur chacun des 12 billets. Le [rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf#page=8) permet de vérifier les choix. Dans l’[index officiel](https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-al), les liens du 29 reprennent les fichiers datés du 26.
+
+Lisez à haute voix les deux sujets du billet puis annoncez votre choix au début de l’exposé. Seul un dictionnaire de langue française est autorisé, à l’exclusion des dictionnaires de noms propres. Pour essayer l’autre sujet, utilisez la question d’entretien et la piste de réponse placées après son développement.
 
 ## Douze exercices d’entretien
 
@@ -35,6 +39,8 @@ Cette puissance peut aussi être mise en scène là où l’accord manque. Une a
 
 Un conseil qui décide d’une règle commune a intérêt à ce que chacun puisse en comprendre les raisons. Un accord large peut stabiliser la décision et révéler que les objections sérieuses ont été prises en compte. Mais exiger l’unanimité avant toute action rend possible un blocage permanent, et traiter tout désaccord comme une faute peut étouffer une minorité. Un silence obtenu sous pression ne fournit aucune preuve d’un accord réfléchi. L’objectif raisonnable est donc de construire des conditions équitables de discussion, puis d’annoncer la règle de décision et les possibilités de révision. Le consensus mérite d’être recherché quand il résulte de l’examen et respecte la possibilité de rester en désaccord. Il ne constitue pas une fin qui rendrait acceptable n’importe quelle manière de l’obtenir.
 
+**À l’entretien. Un accord unanime clôt-il nécessairement la délibération ?** Examiner comment s’est formée l’unanimité. Une objection écartée par la pression du groupe reste une objection. L’existence d’un procès-verbal et la possibilité de rouvrir la question donnent un contenu à l’accord.
+
 ## 2. À quelles conditions est-on responsable ?
 
 Une erreur résulte d’un relevé mal transmis. Participer à la chaîne qui l’a produite suffit-il à la rendre imputable ? Une personne peut être une cause matérielle de l’erreur tout en ayant reçu un relevé déjà faux qu’elle n’avait aucun moyen raisonnable de vérifier. Inversement, un responsable de service peut devoir répondre d’une procédure de contrôle défectueuse sans avoir personnellement recopié le nombre. Responsabilité causale, faute et obligation de rendre des comptes ne se superposent pas.
@@ -44,6 +50,8 @@ On doit donc demander ce que chacun pouvait savoir, quelles options étaient dis
 ### Le sens du détail
 
 Un restaurateur remarque sur un cadre une trace de fixation presque invisible. Ce détail devient important parce qu’il peut modifier la manière dont on reconstitue l’accrochage d’origine. Le sens du détail ne consiste donc pas à accumuler indistinctement les petites observations. Il unit attention et jugement sur ce qui pourrait mettre une hypothèse à l’épreuve. Une minuscule irrégularité peut aussi n’être qu’un accident récent sans rapport avec l’histoire recherchée. Pour lui donner sa vraie portée, il faut comparer, dater et revenir à l’ensemble. Le détail a une double valeur, il permet de corriger une représentation générale et peut empêcher de voir le principal lorsqu’on lui accorde un poids que rien ne justifie.
+
+**À l’entretien. À quel moment une petite différence devient-elle un détail décisif ?** Une virgule change parfois le sens d’une consigne. Comparer les deux lectures et leurs effets permet de montrer pourquoi ce trait importe ici. Sa taille matérielle n’est pas la mesure de sa portée.
 
 ![À qui imputer le relevé erroné ?](figures/imputer.svg)
 
@@ -57,6 +65,8 @@ La critique de la civilisation garde pourtant un sens. Le retrait volontaire peu
 
 Ma présence dans une pièce s’explique par un rendez-vous qui aurait pu être reporté. Le caractère contingent d’un fait signifie qu’il est mais aurait pu être autrement. Peut-on étendre sans autre argument cette modalité à la totalité du monde ? De la contingence de chaque événement examiné ne suit pas immédiatement celle de l’ensemble, pas plus qu’une explication d’un fait particulier ne répond à la demande de savoir pourquoi il y a quelque chose. Leibniz articule cette demande au principe de raison suffisante et distingue ce qui est nécessaire de ce qui existe dans un monde possible déterminé. Pour en discuter, il faut séparer ce que nous ne savons pas prévoir, ce qui manque d’explication connue et ce qui pourrait réellement ne pas être. L’ignorance d’une nécessité ne prouve pas à elle seule la contingence.
 
+**À l’entretien. Ce qui aurait pu être autrement est-il pour autant sans cause ?** L’emplacement d’une gare dépend de décisions et de contraintes identifiables. D’autres tracés étaient possibles. Distinguer l’explication du tracé retenu et la démonstration qu’aucun autre monde n’était possible.
+
 ## 4. Humanité et animalité
 
 Le biologiste classe l’être humain parmi les animaux. Dans la langue morale, le même mot « animalité » peut servir à retrancher quelqu’un de l’humanité à cause d’une conduite jugée brutale. Ce changement de sens est dangereux. Une classification biologique ne détermine pas le statut moral d’une personne et la condamnation d’un geste ne retire pas à son auteur sa dignité. Comment penser la continuité du vivant et les différences qui comptent sans convertir celles-ci en injures ou en privilèges arbitraires ?
@@ -66,6 +76,8 @@ La comparaison des pratiques fait apparaître des différences de langage, de tr
 ### Pourquoi mentir ?
 
 Cacher une faute, préserver une surprise ou tenter d’éviter un reproche font apparaître des motifs différents de tromper. Expliquer le motif ne suffit pas à justifier la conduite. Le mensonge exploite généralement l’attente de sincérité d’autrui pour orienter sa représentation de la situation et par là sa décision. Une personne qui feint de tenir une promesse obtient aujourd’hui un avantage en transférant à demain le coût de sa parole. Une demande d’information illégitime appelle toutefois une autre question, le demandeur a-t-il seulement droit à une réponse ? On peut parfois refuser de parler sans affirmer un faux. Pour juger d’un motif de mentir, il faut demander quelle confiance est engagée, qui supportera les effets de la tromperie et quelles autres réponses respecteraient mieux les personnes concernées.
+
+**À l’entretien. Taire une information et mentir relèvent-ils toujours du même motif ?** Comparer une discrétion demandée par un ami et une réponse fausse destinée à tromper un client. Examiner l’intention, le droit d’interroger et les conséquences du silence avant d’attribuer une justification morale.
 
 ## 5. La désobéissance civile
 
@@ -77,6 +89,8 @@ La publicité d’une cause ne garantit pourtant pas sa justice. Il faut examine
 
 Un peintre compose un coucher de soleil à partir d’observations. Plus tard, des promeneurs désignent un ciel réel comme « un Turner ». Dans le premier cas, le paysage fournit des phénomènes que l’artiste sélectionne et transforme. Dans le second, la peinture a donné une habitude de voir qui rend l’atmosphère reconnaissable sous un autre rapport. L’aphorisme paradoxal de Wilde dans *Le Déclin du mensonge* éclaire cette seconde direction. Il ne signifie pas que les nuages auraient physiquement copié le tableau. L’art peut imiter des configurations naturelles et surtout modifier la manière dont elles apparaissent à un regard cultivé. Les directions de l’imitation ne sont compatibles qu’après avoir distingué production matérielle, représentation et formation de l’attention.
 
+**À l’entretien. Une peinture peut-elle apprendre à regarder un paysage ?** Après avoir étudié des contrastes peints, le promeneur remarque une lumière jusque-là négligée. La peinture ne produit pas cette lumière. Elle transforme les habitudes grâce auxquelles le paysage devient perceptible.
+
 ## 6. Militer
 
 Assister régulièrement aux réunions d’une association de défense de l’accès aux bibliothèques, écouter des usagers et porter une demande auprès d’un conseil municipal constituent un engagement militant. Ce qui le distingue d’une simple préférence est la continuité d’une action orientée vers une cause que d’autres peuvent reprendre. Le militant parle souvent au nom d’un groupe. Comment éviter que la fidélité à cette cause ne devienne fidélité inconditionnelle à sa propre organisation ?
@@ -86,6 +100,8 @@ Il faut d’abord examiner ce que l’intervention change pour les personnes con
 ### L’attente
 
 Un voyageur arrive en avance et lit sur le quai. Un autre, privé d’information sur une correspondance indispensable, regarde l’horloge toutes les minutes. Ils disposent objectivement du même intervalle. L’attente organise autrement ce temps par l’événement espéré et par la possibilité, ou l’impossibilité, de se consacrer à autre chose. Elle peut être active, préparer un accueil, s’exercer ou écouter, ou devenir une prise exercée par autrui sur notre disponibilité. Dans le rapport à une promesse, faire attendre sans prévenir peut ainsi déprécier le temps de l’autre. Comprendre l’attente consiste à décrire non seulement sa durée mais l’horizon, la maîtrise des informations et les possibilités d’action qui lui donnent sa qualité vécue.
+
+**À l’entretien. Pourquoi une heure d’attente ne ressemble-t-elle pas toujours à une autre ?** Comparer un délai annoncé et un retard sans terme connu. La durée mesurée est la même. Les possibilités de mener un autre projet et de faire confiance à une promesse changent l’expérience du temps.
 
 ## 7. Une société est-elle analogue à un organisme ?
 
@@ -97,6 +113,8 @@ Les personnes qui concourent à un même service peuvent discuter du but, refuse
 
 Je crois la date d’un manuscrit sur le témoignage d’une spécialiste dont je ne peux pas refaire en quelques minutes toute l’expertise. Mon raisonnement peut être raisonnable si sa compétence est pertinente, si elle renvoie à des indices accessibles et si les lectures concurrentes ont pu intervenir. Il se transforme en argument d’autorité fermé lorsqu’un nom ou un titre tient lieu de preuve et disqualifie d’avance toute objection. La différence porte donc sur le rôle accordé à la source, sur le domaine de compétence et sur les possibilités de contrôle. Une science ou une société sans aucune confiance dans les témoignages serait impraticable. Une confiance révisable, proportionnée aux raisons de croire tel témoin dans tel domaine, laisse subsister l’obligation de juger.
 
+**À l’entretien. Quand est-il raisonnable de se fier à l’avis d’un spécialiste ?** Vérifier sa compétence sur la question, les contrôles auxquels son résultat a été soumis et les raisons d’un éventuel désaccord. Une division du travail intellectuel est défendable si elle conserve des moyens de vérification.
+
 ## 8. Droit et coutume
 
 Des voisins laissent depuis longtemps un passage dans une cour commune. Cette pratique peut être une simple commodité jusqu’au jour où quelqu’un affirme qu’il serait illégitime de fermer le passage, même en l’absence d’un service amical particulier. On passe alors de « cela se fait » à « on est tenu de le faire ». L’habitude répétée ne constitue pas automatiquement un droit. La coutume susceptible de valoir norme associe une pratique et la conviction d’une obligation dont une communauté ou une juridiction peut reconnaître la portée.
@@ -106,6 +124,8 @@ La loi écrite apporte publicité, précision et possibilité de rupture avec un
 ### Habiter
 
 Un voyageur a dormi une nuit dans une chambre d’hôtel. Un voisin occupe depuis longtemps un appartement dans lequel il lui est interdit de déplacer le moindre meuble. Résider, s’abriter et habiter ne désignent pas exactement la même expérience. Habiter suppose de pouvoir reconnaître des chemins, disposer des objets, nouer des relations et donner une certaine continuité à sa présence. La propriété juridique facilite parfois cette prise, mais un locataire peut habiter pleinement un lieu et un propriétaire en demeurer étranger. Il faut donc examiner le temps, la sécurité de l’occupation et les usages permis. Une ville habitable offre plus qu’un stock de logements. Elle doit aussi rendre possibles les manières concrètes de s’orienter, de rencontrer et de prendre part au voisinage.
+
+**À l’entretien. Une adresse administrative suffit-elle pour dire qu’on habite quelque part ?** Regarder si la personne peut y organiser son temps, recevoir quelqu’un et maintenir des relations dans le voisinage. L’adresse établit un statut. L’habitation implique aussi une certaine prise sur un milieu.
 
 ## 9. Conflit et démocratie
 
@@ -117,6 +137,8 @@ La démocratie institue donc la possibilité du conflit et des moyens de le trav
 
 Une poignée allongée permet de saisir la porte. Mais de nombreuses formes remplissent cette fonction et l’une d’elles peut être inaccessible à quelqu’un qui ne peut refermer la main. La maxime associée à l’architecte Louis Sullivan permet de contester un ornement qui gêne la destination d’un objet. Elle ne fournit pas une formule qui déduirait une seule forme d’un besoin donné. Les matériaux, les corps et les usages comptent dans ce choix. De plus, une forme peut faire découvrir une fonction imprévue, comme un large rebord qui devient un lieu où s’asseoir. Forme et fonction se modifient dans un processus de conception et d’usage. La maxime est un principe d’examen fécond si l’on demande quelle fonction, pour quel utilisateur et au prix de quelles autres possibilités.
 
+**À l’entretien. Pourquoi plusieurs chaises peuvent-elles remplir la même fonction avec des formes différentes ?** Faire varier le matériau, la posture et les usages du lieu. La fonction contraint la conception mais ne détermine pas à elle seule toutes les formes. Une nouvelle forme peut même suggérer une autre manière de s’asseoir.
+
 ## 10. L’usage de la parole
 
 Dans une assemblée, demander la parole peut signifier demander un temps de micro. Pourtant la capacité de produire un discours audible n’assure pas que sa plainte sera comprise ou même admise comme relevant du débat. Il faut distinguer l’usage individuel des ressources d’une langue et les conditions collectives qui donnent un effet à certaines paroles. Un vote déclaré ouvert par une personne compétente modifie la situation. La même formule lancée du public n’a pas automatiquement ce pouvoir. Austin analyse de telles conditions de réussite des actes de parole.
@@ -127,6 +149,8 @@ Mais l’usage vivant ne se réduit pas aux fonctions autorisées. Un témoignag
 
 Appeler révolution toute accélération technique rend mal compte de ce qui change dans une révolution politique. Il faut établir le principe d’après lequel la discontinuité est jugée décisive. En 1789, la formulation de la souveraineté nationale modifie la source au nom de laquelle une autorité peut légitimement édicter la loi. Les effets institutionnels et sociaux de cette rupture s’étendent dans le temps et ne se confondent pas avec une seule journée. Une transformation rapide peut au contraire laisser intactes les règles de succession ou les hiérarchies essentielles. Définir une révolution demande donc de préciser le domaine, l’ordre antérieur et les conditions nouvelles de sa reproduction. La rupture peut être datée sous certains rapports et n’apparaître qu’après coup sous d’autres.
 
+**À l’entretien. Une élection qui remplace tout le personnel dirigeant constitue-t-elle une révolution ?** Comparer le changement des personnes et celui des règles qui autorisent le pouvoir. La profondeur de la rupture se juge aussi aux institutions qui subsistent une fois l’événement passé.
+
 ## 11. Est-ce la mémoire qui constitue mon identité ?
 
 Je retrouve dans un carnet le récit précis d’une journée d’enfance dont je n’ai plus aucun souvenir. Ai-je cessé d’être la personne qui l’a vécue ? Locke étudie dans l’*Essai sur l’entendement humain* le lien entre identité personnelle et capacité d’une conscience à se reconnaître dans des actions passées. Le souvenir éclaire la manière dont je peux dire « c’est moi qui l’ai fait » et reprendre une action comme mienne. Il n’apporte toutefois pas un inventaire complet de tout ce qui m’est arrivé.
@@ -136,6 +160,8 @@ Un faux souvenir peut être très vif et un événement oublié rester attesté 
 ### Ami et ennemi
 
 Une personne peut être mon adversaire dans une élection sans cesser d’être mon amie. À l’inverse, un ennemi public peut m’être personnellement inconnu. Carl Schmitt, dans *La Notion de politique*, attribue à la distinction entre ami et ennemi une portée politique spécifique et distingue celle-ci d’une antipathie privée. L’analyse a le mérite de montrer qu’une collectivité peut instituer des frontières d’appartenance et les présenter comme décisives. Elle devient insuffisante si tout le politique se trouve réduit à cette opposition. Une démocratie suppose aussi la figure de l’adversaire légitime, dont on conteste le programme et dont on garantit cependant les droits. La question est alors de savoir quels désaccords une institution peut accueillir sans les transformer en inimitié et qui bénéficie ou pâtit du tracé de la frontière.
+
+**À l’entretien. Un adversaire électoral doit-il être traité comme un ennemi ?** Une opposition peut être profonde tout en reconnaissant à chacun le droit de concourir et de revenir devant les électeurs. Distinguer la rivalité réglée et la négation de la légitimité de l’autre.
 
 ![Qui a vécu la journée racontée par le carnet ?](figures/memoire.svg)
 
@@ -149,4 +175,4 @@ Ce monde propre ne signifie pourtant pas que l’on connaisse par une analogie s
 
 L’historien ne peut recommencer une élection ancienne pour observer ses variantes à volonté. Pourtant, il peut authentifier des listes, comparer leurs chiffres et corriger une assertion sur le nombre de votants. La possibilité de contrôle public et de réfutation ne suppose pas partout la répétition expérimentale du phénomène. Il y a aussi des sciences de traces, qui élaborent des hypothèses à partir de données présentes sur des configurations disparues. Le passé comme totalité ne se livre pas d’un coup et toute question ne reçoit pas une réponse avec les sources conservées. Mais certains énoncés sur le passé peuvent être établis, discutés ou abandonnés selon des méthodes explicites. La scientificité de l’enquête tient à ce rapport réglé aux preuves et à leurs lacunes, y compris lorsqu’elle propose un récit.
 
-[Feuille officielle du 26c2 juin](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_2_al.pdf) · [Rapport du jury, modalités et annexe des sujets](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf)
+**À l’entretien. Comment vérifier une proposition sur un événement qu’on ne peut pas reproduire ?** Confronter des témoignages indépendants, dater une trace et examiner ce qui contredirait l’hypothèse. La répétition de l’événement manque. La comparaison publique des preuves, elle, demeure possible.
