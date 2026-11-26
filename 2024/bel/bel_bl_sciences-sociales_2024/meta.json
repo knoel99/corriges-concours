@@ -45,7 +45,7 @@
       "legende": "Document 6, p. 9. Chaque coefficient porte sur le rythme d’entrée dans la propriété. La référence de chaque contraste vaut 1. Les quatre coefficients sont accompagnés de trois étoiles dans le tableau."
     }
   ],
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "modele_revision": "GPT-6.2 Astra Ultra (Codex)",
   "provenance": {
     "redaction": {
@@ -117,6 +117,70 @@
       "modifications": true,
       "perimetre": "Revue du PDF distribué et des deux copies. Lecture des deux modèles de durée du document 6 et des quatre coefficients de la personne de référence. Distinction entre la part estimée susceptible d’acheter, la vitesse de transition et la probabilité cumulée. Ajout d’une figure et d’un calcul illustratif au guidé.",
       "session": "astra_physique"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Les sept documents et le rapport du jury ont été confrontés à la dissertation et au parcours guidé. Le tableau de l’entrée dans la propriété distingue deux modèles de durée. Les deux tableaux du document 7 distinguent le classement par âge du classement par milieu social.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Les transferts intergénérationnels de capitaux : des accélérateurs des inégalités ?"
+    ],
+    "annexes_verifiees": [
+      {
+        "document": 1,
+        "pages": "2",
+        "intitule": "Composition du patrimoine selon la catégorie socioprofessionnelle du ménage"
+      },
+      {
+        "document": 2,
+        "pages": "3",
+        "intitule": "Répartition des héritages selon leur montant et les caractéristiques des héritiers"
+      },
+      {
+        "document": 3,
+        "pages": "4–5",
+        "intitule": "Mesurer la mobilité intergénérationnelle"
+      },
+      {
+        "document": 4,
+        "pages": "6",
+        "intitule": "Taux d’imposition effectif selon les centiles et le lien de parenté"
+      },
+      {
+        "document": 5,
+        "pages": "7–8",
+        "intitule": "Des stratégies de reproduction sociale familiales, le cas de la famille Pilon"
+      },
+      {
+        "document": 6,
+        "pages": "9",
+        "intitule": "Donations, héritages et dynamique de l’entrée dans la propriété de la résidence principale"
+      },
+      {
+        "document": 7,
+        "pages": "10–11",
+        "intitule": "La redistributivité de l’aide financière familiale selon l’âge et le milieu social"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "verification": "Les sept documents et le rapport du jury ont été confrontés à la dissertation et au parcours guidé. Le tableau de l’entrée dans la propriété distingue deux modèles de durée. Les deux tableaux du document 7 distinguent le classement par âge du classement par milieu social.",
+    "limites": "Une seule dissertation sur le dossier imprimé de onze pages."
+  }
 }
