@@ -13,7 +13,41 @@
     "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=2",
     "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Fascicule%20SES%202026.pdf#page=13",
     "sha256_sujet": "847171ded9dc9034f643a8c76267b6bd2f559e4c61d0b2cb7f8169517a49dcf8",
-    "sha256_rapport": "cce2c8b96882ea064fcfcbc3b70755ecb825b5c38973678634991eae4dd71bd3"
+    "sha256_rapport": "cce2c8b96882ea064fcfcbc3b70755ecb825b5c38973678634991eae4dd71bd3",
+    "fascicule_oral": "https://www.ens-lyon.fr/sites/default/files/2026-11/Fascicule%20SES%202026.pdf",
+    "index_session": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2026",
+    "index_sha256": "9f28b60b862adfb2de55d2385cc710222d9af63851dc88f51b3f9d270a0ec1f0",
+    "planches_absentes_annexe": [],
+    "rubriques_jury": [
+      {
+        "intitule": "Prestations globales",
+        "pages_pdf": [
+          13
+        ]
+      },
+      {
+        "intitule": "Connaissances",
+        "pages_pdf": [
+          13
+        ]
+      },
+      {
+        "intitule": "Précision et rigueur",
+        "pages_pdf": [
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "intitule": "Présentation et recommandations pour l’interrogation",
+        "pages_pdf": [
+          13,
+          14,
+          15
+        ]
+      }
+    ]
   },
   "figures": [
     {
@@ -48,6 +82,1893 @@
       "perimetre": "Rédaction intégrale des 214 réponses et des indications des deux éditions de l’oral B/L de Lyon, à partir des 15 planches de l’annexe officielle et du rapport du jury. Vérification du nœud manquant en planche 8 et de la masse au rang zéro en planche 15. Quatre figures originales.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "ens_lyon_bl_oraux_mathematiques_2526",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Confrontation des numéros et des pages de chaque question à l’annexe officielle, renvoi du fascicule oral et lecture du rapport mathématique. Contrôle des nœuds d’interpolation, du produit de renforcement, des temps d’arrêt et de la fonction génératrice pour les pièces défectueuses."
     }
-  ]
+  ],
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=2",
+      "sha256": "847171ded9dc9034f643a8c76267b6bd2f559e4c61d0b2cb7f8169517a49dcf8",
+      "nombre_pages": 21,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "78aa0a2975a2245d68143b9a654400030eb90975afc28d9372f4e2539e6786a6"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "acb593263bf205369d38d334fc67bc92dc990869b23e8ac86dfee8d8b3b5f1f1"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "3204605d64da408706f69f73206a38b397914f78c6ae7bd19e73f37bbc6ac68c"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "e8e8b31ab7404f0ebf9adf22a9cf14c0bec065780dbf14a55f6318757040f858"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "fd803885c2d1f9bfbb5dd0b2108549493e84e115a3e5f11ec29f97ccdc0a8b9a"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "aabb5b72e2e219d452e48c6801fe54571decc9a95c6edb557b134b130279214b"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "af0cbd3865cd0e7ac592ba49f404cb9f7311f3cd246556e3783d0e610d7db7bc"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "7384c46a1d19e8daddab07644069fcce2017e80eb5195d79a882a3761ac9e674"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "22500d641f846674f725fa7ee8aef3fd21d4024742d1814a67cf94a000265aa4"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "62bb78e023c32b212db4df2e1d693a26fa3137f75f0de15215030bc4f497a67f"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "6bbe009e797b60fbd1434368e046d88e095a9b9e319c2d935394df7803f61ac5"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "09ed028342c6739b3117b8ac7c236e012dc08234bc2dbf125f492e17e8ff6ad3"
+        },
+        {
+          "numero": 13,
+          "rendu_sha256": "1198508a3329ea00740ae075fc033557e795c6f7c8f58cfc6c011fc02e9b07c4"
+        },
+        {
+          "numero": 14,
+          "rendu_sha256": "732315ab8229bc4d396c9fc61ba9f86289e4ba856d779021fd70b5daeb8f8d31"
+        },
+        {
+          "numero": 15,
+          "rendu_sha256": "282edf38c869c9c716f9ddf26a893ddcfefe13e0d8c38a6d65f8d75fbc6629e6"
+        },
+        {
+          "numero": 16,
+          "rendu_sha256": "754eaf95817a82a85681d87391022f7f325feddc0bc7438e29c2904c54537f99"
+        },
+        {
+          "numero": 17,
+          "rendu_sha256": "8e1b53f1d4394a05eecc5abdff0dd1ad36a8b701f51f0ef3493ea68bdfc5b943"
+        },
+        {
+          "numero": 18,
+          "rendu_sha256": "bb0a7a1bda9eb2216c647e0d0d33db319cea20a9ff98c7610347a5f56073f1f8"
+        },
+        {
+          "numero": 19,
+          "rendu_sha256": "0fb3a9ee54f009416e0dd83e6f509cf72be9d113c2e460bed94f594ad3b52b17"
+        },
+        {
+          "numero": 20,
+          "rendu_sha256": "3d97a7ba1d53f846fe0c1569fad3cf75a8d430200b06b538ef107f376dcd0de8"
+        },
+        {
+          "numero": 21,
+          "rendu_sha256": "ff087753970d5492409cccfb02876960058dc914d277a7859fd210a1f887a401"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2026-10/Fascicule%20SES%202026.pdf#page=13",
+      "sha256": "cce2c8b96882ea064fcfcbc3b70755ecb825b5c38973678634991eae4dd71bd3",
+      "nombre_pages": 25,
+      "pages_verifiees": [
+        {
+          "numero": 13,
+          "rendu_sha256": "e48f81d454228d5f0baefb04feec946534ae541d8ffaefc3e3d032b6826aa621"
+        },
+        {
+          "numero": 14,
+          "rendu_sha256": "747bc8960aa61f81657198d83629d1d819510b8d4ec1fa11c776d59c27b7beb0"
+        },
+        {
+          "numero": 15,
+          "rendu_sha256": "8d57e6aa7087796fec4bcb460b8f4ff3352450dd7cbfb172431729ec766cadcb"
+        }
+      ]
+    },
+    "fascicule_oral": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2026-11/Fascicule%20SES%202026.pdf",
+      "sha256": "9af9d457809faa26a8ff73a93ab94300204afcf4089d3d71f0ae109381941358",
+      "nombre_pages": 17,
+      "pages_verifiees": [
+        {
+          "numero": 17,
+          "rendu_sha256": "17c8cd7d4255a580c8a7e63aa04636151db83934478739e0263e44c0d5347441"
+        }
+      ]
+    }
+  },
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "perimetre": "Session annuelle",
+    "statut_annexe_publiee": "complet",
+    "planches_reproduites": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "planches_absentes_de_l_annexe": [],
+    "questions_entierement_traitees": [
+      "Planche 1, exercice 1, question 1a",
+      "Planche 1, exercice 1, question 1b",
+      "Planche 1, exercice 1, question 1c",
+      "Planche 1, exercice 1, question 2a",
+      "Planche 1, exercice 1, question 2b",
+      "Planche 1, exercice 1, question 2c",
+      "Planche 1, exercice 1, question 3a",
+      "Planche 1, exercice 1, question 3b",
+      "Planche 1, exercice 1, question 3c",
+      "Planche 1, exercice 2, question 1",
+      "Planche 1, exercice 2, question 2a",
+      "Planche 1, exercice 2, question 2b",
+      "Planche 2, exercice 1, question 1",
+      "Planche 2, exercice 1, question 2a",
+      "Planche 2, exercice 1, question 2b",
+      "Planche 2, exercice 1, question 2c",
+      "Planche 2, exercice 1, question 3a",
+      "Planche 2, exercice 1, question 3b",
+      "Planche 2, exercice 1, question 3c",
+      "Planche 2, exercice 1, question 4",
+      "Planche 2, exercice 2, question 1a",
+      "Planche 2, exercice 2, question 1b",
+      "Planche 2, exercice 2, question 1c",
+      "Planche 2, exercice 2, question 1d",
+      "Planche 2, exercice 2, question 1e",
+      "Planche 2, exercice 2, question 1f",
+      "Planche 2, exercice 2, question 2",
+      "Planche 3, exercice 1, question 1",
+      "Planche 3, exercice 1, question 2",
+      "Planche 3, exercice 1, question 3",
+      "Planche 3, exercice 1, question 4",
+      "Planche 3, exercice 1, question 5",
+      "Planche 3, exercice 2, question 1",
+      "Planche 3, exercice 2, question 2a",
+      "Planche 3, exercice 2, question 2b",
+      "Planche 3, exercice 2, question 3a",
+      "Planche 3, exercice 2, question 3b",
+      "Planche 3, exercice 2, question 3c",
+      "Planche 4, exercice 1, question 1",
+      "Planche 4, exercice 1, question 2",
+      "Planche 4, exercice 1, question 3a",
+      "Planche 4, exercice 1, question 3b",
+      "Planche 4, exercice 1, question 4",
+      "Planche 4, exercice 2, question 1a",
+      "Planche 4, exercice 2, question 1b",
+      "Planche 4, exercice 2, question 2",
+      "Planche 4, exercice 2, question 3a",
+      "Planche 4, exercice 2, question 3b",
+      "Planche 4, exercice 2, question 3c",
+      "Planche 4, exercice 2, question 3d",
+      "Planche 4, exercice 2, question 3e",
+      "Planche 4, exercice 2, question 3f",
+      "Planche 5, exercice 1, question 1a",
+      "Planche 5, exercice 1, question 1b",
+      "Planche 5, exercice 1, question 1c",
+      "Planche 5, exercice 1, question 1d",
+      "Planche 5, exercice 1, question 1e",
+      "Planche 5, exercice 1, question 1f",
+      "Planche 5, exercice 1, question 2a",
+      "Planche 5, exercice 1, question 2b",
+      "Planche 5, exercice 1, question 2c",
+      "Planche 5, exercice 1, question 2d",
+      "Planche 5, exercice 1, question 2e",
+      "Planche 5, exercice 2, question 1a",
+      "Planche 5, exercice 2, question 1b",
+      "Planche 5, exercice 2, question 1c",
+      "Planche 5, exercice 2, question 1d",
+      "Planche 5, exercice 2, question 2",
+      "Planche 6, exercice 1, question 1",
+      "Planche 6, exercice 1, question 2a",
+      "Planche 6, exercice 1, question 2b",
+      "Planche 6, exercice 1, question 3",
+      "Planche 6, exercice 1, question 4",
+      "Planche 6, exercice 1, question 5",
+      "Planche 6, exercice 2, question 1",
+      "Planche 6, exercice 2, question 2a",
+      "Planche 6, exercice 2, question 2b",
+      "Planche 6, exercice 2, question 2c",
+      "Planche 6, exercice 2, question 2d",
+      "Planche 6, exercice 2, question 2e",
+      "Planche 6, exercice 2, question 3a.i",
+      "Planche 6, exercice 2, question 3a.ii",
+      "Planche 6, exercice 2, question 3b",
+      "Planche 6, exercice 2, question 3c",
+      "Planche 7, exercice 1, question 1",
+      "Planche 7, exercice 1, question 2a",
+      "Planche 7, exercice 1, question 2b",
+      "Planche 7, exercice 1, question 3a",
+      "Planche 7, exercice 1, question 3b",
+      "Planche 7, exercice 1, question 3c",
+      "Planche 7, exercice 1, question 3d",
+      "Planche 7, exercice 2, question 1",
+      "Planche 7, exercice 2, question 2a",
+      "Planche 7, exercice 2, question 2b",
+      "Planche 7, exercice 2, question 3a",
+      "Planche 7, exercice 2, question 3b",
+      "Planche 7, exercice 2, question 3c",
+      "Planche 7, exercice 2, question 3d",
+      "Planche 7, exercice 2, question 4a",
+      "Planche 7, exercice 2, question 4b",
+      "Planche 8, exercice 1, question 1a",
+      "Planche 8, exercice 1, question 1b",
+      "Planche 8, exercice 1, question 2a",
+      "Planche 8, exercice 1, question 2b",
+      "Planche 8, exercice 1, question 2c",
+      "Planche 8, exercice 1, question 3a",
+      "Planche 8, exercice 1, question 3b",
+      "Planche 8, exercice 1, question 3c",
+      "Planche 8, exercice 1, question 4a",
+      "Planche 8, exercice 1, question 4b",
+      "Planche 8, exercice 2, question 1a",
+      "Planche 8, exercice 2, question 1b",
+      "Planche 8, exercice 2, question 2",
+      "Planche 8, exercice 2, question 3",
+      "Planche 8, exercice 2, question 4a",
+      "Planche 8, exercice 2, question 4b",
+      "Planche 9, exercice 1, question 1a",
+      "Planche 9, exercice 1, question 1b",
+      "Planche 9, exercice 1, question 2a",
+      "Planche 9, exercice 1, question 2b",
+      "Planche 9, exercice 1, question 2c",
+      "Planche 9, exercice 1, question 2d",
+      "Planche 9, exercice 1, question 3a",
+      "Planche 9, exercice 1, question 3b",
+      "Planche 9, exercice 1, question 3c",
+      "Planche 9, exercice 2, question 1a",
+      "Planche 9, exercice 2, question 1b",
+      "Planche 9, exercice 2, question 2a",
+      "Planche 9, exercice 2, question 2b",
+      "Planche 9, exercice 2, question 2c",
+      "Planche 10, exercice 1, question 1",
+      "Planche 10, exercice 1, question 2a",
+      "Planche 10, exercice 1, question 2b",
+      "Planche 10, exercice 1, question 2c",
+      "Planche 10, exercice 1, question 3a",
+      "Planche 10, exercice 1, question 3b",
+      "Planche 10, exercice 1, question 3c",
+      "Planche 10, exercice 2, question 1a",
+      "Planche 10, exercice 2, question 1b",
+      "Planche 10, exercice 2, question 2a",
+      "Planche 10, exercice 2, question 2b",
+      "Planche 10, exercice 2, question 3a",
+      "Planche 10, exercice 2, question 3b",
+      "Planche 10, exercice 2, question 4",
+      "Planche 11, exercice 1, question 1",
+      "Planche 11, exercice 1, question 2",
+      "Planche 11, exercice 1, question 3",
+      "Planche 11, exercice 1, question 4a",
+      "Planche 11, exercice 1, question 4b",
+      "Planche 11, exercice 1, question 4c",
+      "Planche 11, exercice 2, question 1",
+      "Planche 11, exercice 2, question 2a",
+      "Planche 11, exercice 2, question 2b",
+      "Planche 11, exercice 2, question 3a",
+      "Planche 11, exercice 2, question 3b",
+      "Planche 11, exercice 2, question 3c",
+      "Planche 11, exercice 2, question 3d",
+      "Planche 12, exercice 1, question 1a",
+      "Planche 12, exercice 1, question 1b",
+      "Planche 12, exercice 1, question 1c",
+      "Planche 12, exercice 1, question 1d",
+      "Planche 12, exercice 1, question 2a",
+      "Planche 12, exercice 1, question 2b",
+      "Planche 12, exercice 2, question 1a",
+      "Planche 12, exercice 2, question 1b",
+      "Planche 12, exercice 2, question 2a",
+      "Planche 12, exercice 2, question 2b",
+      "Planche 12, exercice 2, question 3a",
+      "Planche 12, exercice 2, question 3b",
+      "Planche 12, exercice 2, question 4a",
+      "Planche 12, exercice 2, question 4b",
+      "Planche 12, exercice 2, question 4c",
+      "Planche 12, exercice 2, question 5",
+      "Planche 13, exercice 1, question 1",
+      "Planche 13, exercice 1, question 2a",
+      "Planche 13, exercice 1, question 2b",
+      "Planche 13, exercice 1, question 3a",
+      "Planche 13, exercice 1, question 3b",
+      "Planche 13, exercice 1, question 3c",
+      "Planche 13, exercice 1, question 3d",
+      "Planche 13, exercice 1, question 3e",
+      "Planche 13, exercice 2, question 1",
+      "Planche 13, exercice 2, question 2a",
+      "Planche 13, exercice 2, question 2b",
+      "Planche 13, exercice 2, question 2c",
+      "Planche 13, exercice 2, question 3",
+      "Planche 14, exercice 1, question 1a",
+      "Planche 14, exercice 1, question 1b",
+      "Planche 14, exercice 1, question 1c",
+      "Planche 14, exercice 1, question 2a",
+      "Planche 14, exercice 1, question 2b",
+      "Planche 14, exercice 1, question 3",
+      "Planche 14, exercice 1, question 4a",
+      "Planche 14, exercice 1, question 4b",
+      "Planche 14, exercice 1, question 4c",
+      "Planche 14, exercice 1, question 5a",
+      "Planche 14, exercice 1, question 5b",
+      "Planche 14, exercice 2, question 1",
+      "Planche 14, exercice 2, question 2",
+      "Planche 14, exercice 2, question 3a",
+      "Planche 14, exercice 2, question 3b",
+      "Planche 14, exercice 2, question 4",
+      "Planche 15, exercice 1, question 1",
+      "Planche 15, exercice 1, question 2",
+      "Planche 15, exercice 1, question 3",
+      "Planche 15, exercice 1, question 4",
+      "Planche 15, exercice 1, question 5",
+      "Planche 15, exercice 2, question 1",
+      "Planche 15, exercice 2, question 2",
+      "Planche 15, exercice 2, question 3",
+      "Planche 15, exercice 2, question 4",
+      "Planche 15, exercice 2, question 5",
+      "Planche 15, exercice 2, question 6",
+      "Planche 15, exercice 2, question 7"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "Planche 1, exercice 1, question 1a",
+        "page_pdf": 2,
+        "numero_planche": 1,
+        "exercice": 1,
+        "repere_imprime": "1a"
+      },
+      {
+        "question": "Planche 1, exercice 1, question 1b",
+        "page_pdf": 2,
+        "numero_planche": 1,
+        "exercice": 1,
+        "repere_imprime": "1b"
+      },
+      {
+        "question": "Planche 1, exercice 1, question 1c",
+        "page_pdf": 2,
+        "numero_planche": 1,
+        "exercice": 1,
+        "repere_imprime": "1c"
+      },
+      {
+        "question": "Planche 1, exercice 1, question 2a",
+        "page_pdf": 2,
+        "numero_planche": 1,
+        "exercice": 1,
+        "repere_imprime": "2a"
+      },
+      {
+        "question": "Planche 1, exercice 1, question 2b",
+        "page_pdf": 2,
+        "numero_planche": 1,
+        "exercice": 1,
+        "repere_imprime": "2b"
+      },
+      {
+        "question": "Planche 1, exercice 1, question 2c",
+        "page_pdf": 2,
+        "numero_planche": 1,
+        "exercice": 1,
+        "repere_imprime": "2c"
+      },
+      {
+        "question": "Planche 1, exercice 1, question 3a",
+        "page_pdf": 2,
+        "numero_planche": 1,
+        "exercice": 1,
+        "repere_imprime": "3a"
+      },
+      {
+        "question": "Planche 1, exercice 1, question 3b",
+        "page_pdf": 2,
+        "numero_planche": 1,
+        "exercice": 1,
+        "repere_imprime": "3b"
+      },
+      {
+        "question": "Planche 1, exercice 1, question 3c",
+        "page_pdf": 2,
+        "numero_planche": 1,
+        "exercice": 1,
+        "repere_imprime": "3c"
+      },
+      {
+        "question": "Planche 1, exercice 2, question 1",
+        "page_pdf": 2,
+        "numero_planche": 1,
+        "exercice": 2,
+        "repere_imprime": "1"
+      },
+      {
+        "question": "Planche 1, exercice 2, question 2a",
+        "page_pdf": 2,
+        "numero_planche": 1,
+        "exercice": 2,
+        "repere_imprime": "2a"
+      },
+      {
+        "question": "Planche 1, exercice 2, question 2b",
+        "page_pdf": 2,
+        "numero_planche": 1,
+        "exercice": 2,
+        "repere_imprime": "2b"
+      },
+      {
+        "question": "Planche 2, exercice 1, question 1",
+        "page_pdf": 3,
+        "numero_planche": 2,
+        "exercice": 1,
+        "repere_imprime": "1"
+      },
+      {
+        "question": "Planche 2, exercice 1, question 2a",
+        "page_pdf": 3,
+        "numero_planche": 2,
+        "exercice": 1,
+        "repere_imprime": "2a"
+      },
+      {
+        "question": "Planche 2, exercice 1, question 2b",
+        "page_pdf": 3,
+        "numero_planche": 2,
+        "exercice": 1,
+        "repere_imprime": "2b"
+      },
+      {
+        "question": "Planche 2, exercice 1, question 2c",
+        "page_pdf": 3,
+        "numero_planche": 2,
+        "exercice": 1,
+        "repere_imprime": "2c"
+      },
+      {
+        "question": "Planche 2, exercice 1, question 3a",
+        "page_pdf": 3,
+        "numero_planche": 2,
+        "exercice": 1,
+        "repere_imprime": "3a"
+      },
+      {
+        "question": "Planche 2, exercice 1, question 3b",
+        "page_pdf": 3,
+        "numero_planche": 2,
+        "exercice": 1,
+        "repere_imprime": "3b"
+      },
+      {
+        "question": "Planche 2, exercice 1, question 3c",
+        "page_pdf": 3,
+        "numero_planche": 2,
+        "exercice": 1,
+        "repere_imprime": "3c"
+      },
+      {
+        "question": "Planche 2, exercice 1, question 4",
+        "page_pdf": 3,
+        "numero_planche": 2,
+        "exercice": 1,
+        "repere_imprime": "4"
+      },
+      {
+        "question": "Planche 2, exercice 2, question 1a",
+        "page_pdf": 4,
+        "numero_planche": 2,
+        "exercice": 2,
+        "repere_imprime": "1a"
+      },
+      {
+        "question": "Planche 2, exercice 2, question 1b",
+        "page_pdf": 4,
+        "numero_planche": 2,
+        "exercice": 2,
+        "repere_imprime": "1b"
+      },
+      {
+        "question": "Planche 2, exercice 2, question 1c",
+        "page_pdf": 4,
+        "numero_planche": 2,
+        "exercice": 2,
+        "repere_imprime": "1c"
+      },
+      {
+        "question": "Planche 2, exercice 2, question 1d",
+        "page_pdf": 4,
+        "numero_planche": 2,
+        "exercice": 2,
+        "repere_imprime": "1d"
+      },
+      {
+        "question": "Planche 2, exercice 2, question 1e",
+        "page_pdf": 4,
+        "numero_planche": 2,
+        "exercice": 2,
+        "repere_imprime": "1e"
+      },
+      {
+        "question": "Planche 2, exercice 2, question 1f",
+        "page_pdf": 4,
+        "numero_planche": 2,
+        "exercice": 2,
+        "repere_imprime": "1f"
+      },
+      {
+        "question": "Planche 2, exercice 2, question 2",
+        "page_pdf": 4,
+        "numero_planche": 2,
+        "exercice": 2,
+        "repere_imprime": "2"
+      },
+      {
+        "question": "Planche 3, exercice 1, question 1",
+        "page_pdf": 5,
+        "numero_planche": 3,
+        "exercice": 1,
+        "repere_imprime": "1"
+      },
+      {
+        "question": "Planche 3, exercice 1, question 2",
+        "page_pdf": 5,
+        "numero_planche": 3,
+        "exercice": 1,
+        "repere_imprime": "2"
+      },
+      {
+        "question": "Planche 3, exercice 1, question 3",
+        "page_pdf": 5,
+        "numero_planche": 3,
+        "exercice": 1,
+        "repere_imprime": "3"
+      },
+      {
+        "question": "Planche 3, exercice 1, question 4",
+        "page_pdf": 5,
+        "numero_planche": 3,
+        "exercice": 1,
+        "repere_imprime": "4"
+      },
+      {
+        "question": "Planche 3, exercice 1, question 5",
+        "page_pdf": 5,
+        "numero_planche": 3,
+        "exercice": 1,
+        "repere_imprime": "5"
+      },
+      {
+        "question": "Planche 3, exercice 2, question 1",
+        "page_pdf": 5,
+        "numero_planche": 3,
+        "exercice": 2,
+        "repere_imprime": "1"
+      },
+      {
+        "question": "Planche 3, exercice 2, question 2a",
+        "page_pdf": 5,
+        "numero_planche": 3,
+        "exercice": 2,
+        "repere_imprime": "2a"
+      },
+      {
+        "question": "Planche 3, exercice 2, question 2b",
+        "page_pdf": 5,
+        "numero_planche": 3,
+        "exercice": 2,
+        "repere_imprime": "2b"
+      },
+      {
+        "question": "Planche 3, exercice 2, question 3a",
+        "page_pdf": 5,
+        "numero_planche": 3,
+        "exercice": 2,
+        "repere_imprime": "3a"
+      },
+      {
+        "question": "Planche 3, exercice 2, question 3b",
+        "page_pdf": 5,
+        "numero_planche": 3,
+        "exercice": 2,
+        "repere_imprime": "3b"
+      },
+      {
+        "question": "Planche 3, exercice 2, question 3c",
+        "page_pdf": 5,
+        "numero_planche": 3,
+        "exercice": 2,
+        "repere_imprime": "3c"
+      },
+      {
+        "question": "Planche 4, exercice 1, question 1",
+        "page_pdf": 6,
+        "numero_planche": 4,
+        "exercice": 1,
+        "repere_imprime": "1"
+      },
+      {
+        "question": "Planche 4, exercice 1, question 2",
+        "page_pdf": 6,
+        "numero_planche": 4,
+        "exercice": 1,
+        "repere_imprime": "2"
+      },
+      {
+        "question": "Planche 4, exercice 1, question 3a",
+        "page_pdf": 6,
+        "numero_planche": 4,
+        "exercice": 1,
+        "repere_imprime": "3a"
+      },
+      {
+        "question": "Planche 4, exercice 1, question 3b",
+        "page_pdf": 6,
+        "numero_planche": 4,
+        "exercice": 1,
+        "repere_imprime": "3b"
+      },
+      {
+        "question": "Planche 4, exercice 1, question 4",
+        "page_pdf": 6,
+        "numero_planche": 4,
+        "exercice": 1,
+        "repere_imprime": "4"
+      },
+      {
+        "question": "Planche 4, exercice 2, question 1a",
+        "page_pdf": 6,
+        "numero_planche": 4,
+        "exercice": 2,
+        "repere_imprime": "1a"
+      },
+      {
+        "question": "Planche 4, exercice 2, question 1b",
+        "page_pdf": 6,
+        "numero_planche": 4,
+        "exercice": 2,
+        "repere_imprime": "1b"
+      },
+      {
+        "question": "Planche 4, exercice 2, question 2",
+        "page_pdf": 6,
+        "numero_planche": 4,
+        "exercice": 2,
+        "repere_imprime": "2"
+      },
+      {
+        "question": "Planche 4, exercice 2, question 3a",
+        "page_pdf": 7,
+        "numero_planche": 4,
+        "exercice": 2,
+        "repere_imprime": "3a"
+      },
+      {
+        "question": "Planche 4, exercice 2, question 3b",
+        "page_pdf": 7,
+        "numero_planche": 4,
+        "exercice": 2,
+        "repere_imprime": "3b"
+      },
+      {
+        "question": "Planche 4, exercice 2, question 3c",
+        "page_pdf": 7,
+        "numero_planche": 4,
+        "exercice": 2,
+        "repere_imprime": "3c"
+      },
+      {
+        "question": "Planche 4, exercice 2, question 3d",
+        "page_pdf": 7,
+        "numero_planche": 4,
+        "exercice": 2,
+        "repere_imprime": "3d"
+      },
+      {
+        "question": "Planche 4, exercice 2, question 3e",
+        "page_pdf": 7,
+        "numero_planche": 4,
+        "exercice": 2,
+        "repere_imprime": "3e"
+      },
+      {
+        "question": "Planche 4, exercice 2, question 3f",
+        "page_pdf": 7,
+        "numero_planche": 4,
+        "exercice": 2,
+        "repere_imprime": "3f"
+      },
+      {
+        "question": "Planche 5, exercice 1, question 1a",
+        "page_pdf": 8,
+        "numero_planche": 5,
+        "exercice": 1,
+        "repere_imprime": "1a"
+      },
+      {
+        "question": "Planche 5, exercice 1, question 1b",
+        "page_pdf": 8,
+        "numero_planche": 5,
+        "exercice": 1,
+        "repere_imprime": "1b"
+      },
+      {
+        "question": "Planche 5, exercice 1, question 1c",
+        "page_pdf": 8,
+        "numero_planche": 5,
+        "exercice": 1,
+        "repere_imprime": "1c"
+      },
+      {
+        "question": "Planche 5, exercice 1, question 1d",
+        "page_pdf": 8,
+        "numero_planche": 5,
+        "exercice": 1,
+        "repere_imprime": "1d"
+      },
+      {
+        "question": "Planche 5, exercice 1, question 1e",
+        "page_pdf": 8,
+        "numero_planche": 5,
+        "exercice": 1,
+        "repere_imprime": "1e"
+      },
+      {
+        "question": "Planche 5, exercice 1, question 1f",
+        "page_pdf": 8,
+        "numero_planche": 5,
+        "exercice": 1,
+        "repere_imprime": "1f"
+      },
+      {
+        "question": "Planche 5, exercice 1, question 2a",
+        "page_pdf": 8,
+        "numero_planche": 5,
+        "exercice": 1,
+        "repere_imprime": "2a"
+      },
+      {
+        "question": "Planche 5, exercice 1, question 2b",
+        "page_pdf": 8,
+        "numero_planche": 5,
+        "exercice": 1,
+        "repere_imprime": "2b"
+      },
+      {
+        "question": "Planche 5, exercice 1, question 2c",
+        "page_pdf": 8,
+        "numero_planche": 5,
+        "exercice": 1,
+        "repere_imprime": "2c"
+      },
+      {
+        "question": "Planche 5, exercice 1, question 2d",
+        "page_pdf": 8,
+        "numero_planche": 5,
+        "exercice": 1,
+        "repere_imprime": "2d"
+      },
+      {
+        "question": "Planche 5, exercice 1, question 2e",
+        "page_pdf": 8,
+        "numero_planche": 5,
+        "exercice": 1,
+        "repere_imprime": "2e"
+      },
+      {
+        "question": "Planche 5, exercice 2, question 1a",
+        "page_pdf": 8,
+        "numero_planche": 5,
+        "exercice": 2,
+        "repere_imprime": "1a"
+      },
+      {
+        "question": "Planche 5, exercice 2, question 1b",
+        "page_pdf": 8,
+        "numero_planche": 5,
+        "exercice": 2,
+        "repere_imprime": "1b"
+      },
+      {
+        "question": "Planche 5, exercice 2, question 1c",
+        "page_pdf": 8,
+        "numero_planche": 5,
+        "exercice": 2,
+        "repere_imprime": "1c"
+      },
+      {
+        "question": "Planche 5, exercice 2, question 1d",
+        "page_pdf": 8,
+        "numero_planche": 5,
+        "exercice": 2,
+        "repere_imprime": "1d"
+      },
+      {
+        "question": "Planche 5, exercice 2, question 2",
+        "page_pdf": 8,
+        "numero_planche": 5,
+        "exercice": 2,
+        "repere_imprime": "2"
+      },
+      {
+        "question": "Planche 6, exercice 1, question 1",
+        "page_pdf": 9,
+        "numero_planche": 6,
+        "exercice": 1,
+        "repere_imprime": "1"
+      },
+      {
+        "question": "Planche 6, exercice 1, question 2a",
+        "page_pdf": 9,
+        "numero_planche": 6,
+        "exercice": 1,
+        "repere_imprime": "2a"
+      },
+      {
+        "question": "Planche 6, exercice 1, question 2b",
+        "page_pdf": 9,
+        "numero_planche": 6,
+        "exercice": 1,
+        "repere_imprime": "2b"
+      },
+      {
+        "question": "Planche 6, exercice 1, question 3",
+        "page_pdf": 9,
+        "numero_planche": 6,
+        "exercice": 1,
+        "repere_imprime": "3"
+      },
+      {
+        "question": "Planche 6, exercice 1, question 4",
+        "page_pdf": 9,
+        "numero_planche": 6,
+        "exercice": 1,
+        "repere_imprime": "4"
+      },
+      {
+        "question": "Planche 6, exercice 1, question 5",
+        "page_pdf": 9,
+        "numero_planche": 6,
+        "exercice": 1,
+        "repere_imprime": "5"
+      },
+      {
+        "question": "Planche 6, exercice 2, question 1",
+        "page_pdf": 9,
+        "numero_planche": 6,
+        "exercice": 2,
+        "repere_imprime": "1"
+      },
+      {
+        "question": "Planche 6, exercice 2, question 2a",
+        "page_pdf": 9,
+        "numero_planche": 6,
+        "exercice": 2,
+        "repere_imprime": "2a"
+      },
+      {
+        "question": "Planche 6, exercice 2, question 2b",
+        "page_pdf": 9,
+        "numero_planche": 6,
+        "exercice": 2,
+        "repere_imprime": "2b"
+      },
+      {
+        "question": "Planche 6, exercice 2, question 2c",
+        "page_pdf": 9,
+        "numero_planche": 6,
+        "exercice": 2,
+        "repere_imprime": "2c"
+      },
+      {
+        "question": "Planche 6, exercice 2, question 2d",
+        "page_pdf": 9,
+        "numero_planche": 6,
+        "exercice": 2,
+        "repere_imprime": "2d"
+      },
+      {
+        "question": "Planche 6, exercice 2, question 2e",
+        "page_pdf": 9,
+        "numero_planche": 6,
+        "exercice": 2,
+        "repere_imprime": "2e"
+      },
+      {
+        "question": "Planche 6, exercice 2, question 3a.i",
+        "page_pdf": 9,
+        "numero_planche": 6,
+        "exercice": 2,
+        "repere_imprime": "3a.i"
+      },
+      {
+        "question": "Planche 6, exercice 2, question 3a.ii",
+        "page_pdf": 9,
+        "numero_planche": 6,
+        "exercice": 2,
+        "repere_imprime": "3a.ii"
+      },
+      {
+        "question": "Planche 6, exercice 2, question 3b",
+        "page_pdf": 9,
+        "numero_planche": 6,
+        "exercice": 2,
+        "repere_imprime": "3b"
+      },
+      {
+        "question": "Planche 6, exercice 2, question 3c",
+        "page_pdf": 9,
+        "numero_planche": 6,
+        "exercice": 2,
+        "repere_imprime": "3c"
+      },
+      {
+        "question": "Planche 7, exercice 1, question 1",
+        "page_pdf": 10,
+        "numero_planche": 7,
+        "exercice": 1,
+        "repere_imprime": "1"
+      },
+      {
+        "question": "Planche 7, exercice 1, question 2a",
+        "page_pdf": 10,
+        "numero_planche": 7,
+        "exercice": 1,
+        "repere_imprime": "2a"
+      },
+      {
+        "question": "Planche 7, exercice 1, question 2b",
+        "page_pdf": 10,
+        "numero_planche": 7,
+        "exercice": 1,
+        "repere_imprime": "2b"
+      },
+      {
+        "question": "Planche 7, exercice 1, question 3a",
+        "page_pdf": 10,
+        "numero_planche": 7,
+        "exercice": 1,
+        "repere_imprime": "3a"
+      },
+      {
+        "question": "Planche 7, exercice 1, question 3b",
+        "page_pdf": 10,
+        "numero_planche": 7,
+        "exercice": 1,
+        "repere_imprime": "3b"
+      },
+      {
+        "question": "Planche 7, exercice 1, question 3c",
+        "page_pdf": 10,
+        "numero_planche": 7,
+        "exercice": 1,
+        "repere_imprime": "3c"
+      },
+      {
+        "question": "Planche 7, exercice 1, question 3d",
+        "page_pdf": 10,
+        "numero_planche": 7,
+        "exercice": 1,
+        "repere_imprime": "3d"
+      },
+      {
+        "question": "Planche 7, exercice 2, question 1",
+        "page_pdf": 10,
+        "numero_planche": 7,
+        "exercice": 2,
+        "repere_imprime": "1"
+      },
+      {
+        "question": "Planche 7, exercice 2, question 2a",
+        "page_pdf": 10,
+        "numero_planche": 7,
+        "exercice": 2,
+        "repere_imprime": "2a"
+      },
+      {
+        "question": "Planche 7, exercice 2, question 2b",
+        "page_pdf": 10,
+        "numero_planche": 7,
+        "exercice": 2,
+        "repere_imprime": "2b"
+      },
+      {
+        "question": "Planche 7, exercice 2, question 3a",
+        "page_pdf": 10,
+        "numero_planche": 7,
+        "exercice": 2,
+        "repere_imprime": "3a"
+      },
+      {
+        "question": "Planche 7, exercice 2, question 3b",
+        "page_pdf": 10,
+        "numero_planche": 7,
+        "exercice": 2,
+        "repere_imprime": "3b"
+      },
+      {
+        "question": "Planche 7, exercice 2, question 3c",
+        "page_pdf": 10,
+        "numero_planche": 7,
+        "exercice": 2,
+        "repere_imprime": "3c"
+      },
+      {
+        "question": "Planche 7, exercice 2, question 3d",
+        "page_pdf": 10,
+        "numero_planche": 7,
+        "exercice": 2,
+        "repere_imprime": "3d"
+      },
+      {
+        "question": "Planche 7, exercice 2, question 4a",
+        "page_pdf": 10,
+        "numero_planche": 7,
+        "exercice": 2,
+        "repere_imprime": "4a"
+      },
+      {
+        "question": "Planche 7, exercice 2, question 4b",
+        "page_pdf": 10,
+        "numero_planche": 7,
+        "exercice": 2,
+        "repere_imprime": "4b"
+      },
+      {
+        "question": "Planche 8, exercice 1, question 1a",
+        "page_pdf": 11,
+        "numero_planche": 8,
+        "exercice": 1,
+        "repere_imprime": "1a"
+      },
+      {
+        "question": "Planche 8, exercice 1, question 1b",
+        "page_pdf": 11,
+        "numero_planche": 8,
+        "exercice": 1,
+        "repere_imprime": "1b"
+      },
+      {
+        "question": "Planche 8, exercice 1, question 2a",
+        "page_pdf": 11,
+        "numero_planche": 8,
+        "exercice": 1,
+        "repere_imprime": "2a"
+      },
+      {
+        "question": "Planche 8, exercice 1, question 2b",
+        "page_pdf": 11,
+        "numero_planche": 8,
+        "exercice": 1,
+        "repere_imprime": "2b"
+      },
+      {
+        "question": "Planche 8, exercice 1, question 2c",
+        "page_pdf": 11,
+        "numero_planche": 8,
+        "exercice": 1,
+        "repere_imprime": "2c"
+      },
+      {
+        "question": "Planche 8, exercice 1, question 3a",
+        "page_pdf": 11,
+        "numero_planche": 8,
+        "exercice": 1,
+        "repere_imprime": "3a"
+      },
+      {
+        "question": "Planche 8, exercice 1, question 3b",
+        "page_pdf": 11,
+        "numero_planche": 8,
+        "exercice": 1,
+        "repere_imprime": "3b"
+      },
+      {
+        "question": "Planche 8, exercice 1, question 3c",
+        "page_pdf": 11,
+        "numero_planche": 8,
+        "exercice": 1,
+        "repere_imprime": "3c"
+      },
+      {
+        "question": "Planche 8, exercice 1, question 4a",
+        "page_pdf": 11,
+        "numero_planche": 8,
+        "exercice": 1,
+        "repere_imprime": "4a"
+      },
+      {
+        "question": "Planche 8, exercice 1, question 4b",
+        "page_pdf": 11,
+        "numero_planche": 8,
+        "exercice": 1,
+        "repere_imprime": "4b"
+      },
+      {
+        "question": "Planche 8, exercice 2, question 1a",
+        "page_pdf": 11,
+        "numero_planche": 8,
+        "exercice": 2,
+        "repere_imprime": "1a"
+      },
+      {
+        "question": "Planche 8, exercice 2, question 1b",
+        "page_pdf": 11,
+        "numero_planche": 8,
+        "exercice": 2,
+        "repere_imprime": "1b"
+      },
+      {
+        "question": "Planche 8, exercice 2, question 2",
+        "page_pdf": 11,
+        "numero_planche": 8,
+        "exercice": 2,
+        "repere_imprime": "2"
+      },
+      {
+        "question": "Planche 8, exercice 2, question 3",
+        "page_pdf": 11,
+        "numero_planche": 8,
+        "exercice": 2,
+        "repere_imprime": "3"
+      },
+      {
+        "question": "Planche 8, exercice 2, question 4a",
+        "page_pdf": 11,
+        "numero_planche": 8,
+        "exercice": 2,
+        "repere_imprime": "4a"
+      },
+      {
+        "question": "Planche 8, exercice 2, question 4b",
+        "page_pdf": 11,
+        "numero_planche": 8,
+        "exercice": 2,
+        "repere_imprime": "4b"
+      },
+      {
+        "question": "Planche 9, exercice 1, question 1a",
+        "page_pdf": 12,
+        "numero_planche": 9,
+        "exercice": 1,
+        "repere_imprime": "1a"
+      },
+      {
+        "question": "Planche 9, exercice 1, question 1b",
+        "page_pdf": 12,
+        "numero_planche": 9,
+        "exercice": 1,
+        "repere_imprime": "1b"
+      },
+      {
+        "question": "Planche 9, exercice 1, question 2a",
+        "page_pdf": 12,
+        "numero_planche": 9,
+        "exercice": 1,
+        "repere_imprime": "2a"
+      },
+      {
+        "question": "Planche 9, exercice 1, question 2b",
+        "page_pdf": 12,
+        "numero_planche": 9,
+        "exercice": 1,
+        "repere_imprime": "2b"
+      },
+      {
+        "question": "Planche 9, exercice 1, question 2c",
+        "page_pdf": 12,
+        "numero_planche": 9,
+        "exercice": 1,
+        "repere_imprime": "2c"
+      },
+      {
+        "question": "Planche 9, exercice 1, question 2d",
+        "page_pdf": 12,
+        "numero_planche": 9,
+        "exercice": 1,
+        "repere_imprime": "2d"
+      },
+      {
+        "question": "Planche 9, exercice 1, question 3a",
+        "page_pdf": 12,
+        "numero_planche": 9,
+        "exercice": 1,
+        "repere_imprime": "3a"
+      },
+      {
+        "question": "Planche 9, exercice 1, question 3b",
+        "page_pdf": 12,
+        "numero_planche": 9,
+        "exercice": 1,
+        "repere_imprime": "3b"
+      },
+      {
+        "question": "Planche 9, exercice 1, question 3c",
+        "page_pdf": 12,
+        "numero_planche": 9,
+        "exercice": 1,
+        "repere_imprime": "3c"
+      },
+      {
+        "question": "Planche 9, exercice 2, question 1a",
+        "page_pdf": 12,
+        "numero_planche": 9,
+        "exercice": 2,
+        "repere_imprime": "1a"
+      },
+      {
+        "question": "Planche 9, exercice 2, question 1b",
+        "page_pdf": 12,
+        "numero_planche": 9,
+        "exercice": 2,
+        "repere_imprime": "1b"
+      },
+      {
+        "question": "Planche 9, exercice 2, question 2a",
+        "page_pdf": 12,
+        "numero_planche": 9,
+        "exercice": 2,
+        "repere_imprime": "2a"
+      },
+      {
+        "question": "Planche 9, exercice 2, question 2b",
+        "page_pdf": 12,
+        "numero_planche": 9,
+        "exercice": 2,
+        "repere_imprime": "2b"
+      },
+      {
+        "question": "Planche 9, exercice 2, question 2c",
+        "page_pdf": 12,
+        "numero_planche": 9,
+        "exercice": 2,
+        "repere_imprime": "2c"
+      },
+      {
+        "question": "Planche 10, exercice 1, question 1",
+        "page_pdf": 13,
+        "numero_planche": 10,
+        "exercice": 1,
+        "repere_imprime": "1"
+      },
+      {
+        "question": "Planche 10, exercice 1, question 2a",
+        "page_pdf": 13,
+        "numero_planche": 10,
+        "exercice": 1,
+        "repere_imprime": "2a"
+      },
+      {
+        "question": "Planche 10, exercice 1, question 2b",
+        "page_pdf": 13,
+        "numero_planche": 10,
+        "exercice": 1,
+        "repere_imprime": "2b"
+      },
+      {
+        "question": "Planche 10, exercice 1, question 2c",
+        "page_pdf": 13,
+        "numero_planche": 10,
+        "exercice": 1,
+        "repere_imprime": "2c"
+      },
+      {
+        "question": "Planche 10, exercice 1, question 3a",
+        "page_pdf": 13,
+        "numero_planche": 10,
+        "exercice": 1,
+        "repere_imprime": "3a"
+      },
+      {
+        "question": "Planche 10, exercice 1, question 3b",
+        "page_pdf": 13,
+        "numero_planche": 10,
+        "exercice": 1,
+        "repere_imprime": "3b"
+      },
+      {
+        "question": "Planche 10, exercice 1, question 3c",
+        "page_pdf": 13,
+        "numero_planche": 10,
+        "exercice": 1,
+        "repere_imprime": "3c"
+      },
+      {
+        "question": "Planche 10, exercice 2, question 1a",
+        "page_pdf": 14,
+        "numero_planche": 10,
+        "exercice": 2,
+        "repere_imprime": "1a"
+      },
+      {
+        "question": "Planche 10, exercice 2, question 1b",
+        "page_pdf": 14,
+        "numero_planche": 10,
+        "exercice": 2,
+        "repere_imprime": "1b"
+      },
+      {
+        "question": "Planche 10, exercice 2, question 2a",
+        "page_pdf": 14,
+        "numero_planche": 10,
+        "exercice": 2,
+        "repere_imprime": "2a"
+      },
+      {
+        "question": "Planche 10, exercice 2, question 2b",
+        "page_pdf": 14,
+        "numero_planche": 10,
+        "exercice": 2,
+        "repere_imprime": "2b"
+      },
+      {
+        "question": "Planche 10, exercice 2, question 3a",
+        "page_pdf": 14,
+        "numero_planche": 10,
+        "exercice": 2,
+        "repere_imprime": "3a"
+      },
+      {
+        "question": "Planche 10, exercice 2, question 3b",
+        "page_pdf": 14,
+        "numero_planche": 10,
+        "exercice": 2,
+        "repere_imprime": "3b"
+      },
+      {
+        "question": "Planche 10, exercice 2, question 4",
+        "page_pdf": 14,
+        "numero_planche": 10,
+        "exercice": 2,
+        "repere_imprime": "4"
+      },
+      {
+        "question": "Planche 11, exercice 1, question 1",
+        "page_pdf": 15,
+        "numero_planche": 11,
+        "exercice": 1,
+        "repere_imprime": "1"
+      },
+      {
+        "question": "Planche 11, exercice 1, question 2",
+        "page_pdf": 15,
+        "numero_planche": 11,
+        "exercice": 1,
+        "repere_imprime": "2"
+      },
+      {
+        "question": "Planche 11, exercice 1, question 3",
+        "page_pdf": 15,
+        "numero_planche": 11,
+        "exercice": 1,
+        "repere_imprime": "3"
+      },
+      {
+        "question": "Planche 11, exercice 1, question 4a",
+        "page_pdf": 15,
+        "numero_planche": 11,
+        "exercice": 1,
+        "repere_imprime": "4a"
+      },
+      {
+        "question": "Planche 11, exercice 1, question 4b",
+        "page_pdf": 15,
+        "numero_planche": 11,
+        "exercice": 1,
+        "repere_imprime": "4b"
+      },
+      {
+        "question": "Planche 11, exercice 1, question 4c",
+        "page_pdf": 15,
+        "numero_planche": 11,
+        "exercice": 1,
+        "repere_imprime": "4c"
+      },
+      {
+        "question": "Planche 11, exercice 2, question 1",
+        "page_pdf": 15,
+        "numero_planche": 11,
+        "exercice": 2,
+        "repere_imprime": "1"
+      },
+      {
+        "question": "Planche 11, exercice 2, question 2a",
+        "page_pdf": 15,
+        "numero_planche": 11,
+        "exercice": 2,
+        "repere_imprime": "2a"
+      },
+      {
+        "question": "Planche 11, exercice 2, question 2b",
+        "page_pdf": 15,
+        "numero_planche": 11,
+        "exercice": 2,
+        "repere_imprime": "2b"
+      },
+      {
+        "question": "Planche 11, exercice 2, question 3a",
+        "page_pdf": 16,
+        "numero_planche": 11,
+        "exercice": 2,
+        "repere_imprime": "3a"
+      },
+      {
+        "question": "Planche 11, exercice 2, question 3b",
+        "page_pdf": 16,
+        "numero_planche": 11,
+        "exercice": 2,
+        "repere_imprime": "3b"
+      },
+      {
+        "question": "Planche 11, exercice 2, question 3c",
+        "page_pdf": 16,
+        "numero_planche": 11,
+        "exercice": 2,
+        "repere_imprime": "3c"
+      },
+      {
+        "question": "Planche 11, exercice 2, question 3d",
+        "page_pdf": 16,
+        "numero_planche": 11,
+        "exercice": 2,
+        "repere_imprime": "3d"
+      },
+      {
+        "question": "Planche 12, exercice 1, question 1a",
+        "page_pdf": 17,
+        "numero_planche": 12,
+        "exercice": 1,
+        "repere_imprime": "1a"
+      },
+      {
+        "question": "Planche 12, exercice 1, question 1b",
+        "page_pdf": 17,
+        "numero_planche": 12,
+        "exercice": 1,
+        "repere_imprime": "1b"
+      },
+      {
+        "question": "Planche 12, exercice 1, question 1c",
+        "page_pdf": 17,
+        "numero_planche": 12,
+        "exercice": 1,
+        "repere_imprime": "1c"
+      },
+      {
+        "question": "Planche 12, exercice 1, question 1d",
+        "page_pdf": 17,
+        "numero_planche": 12,
+        "exercice": 1,
+        "repere_imprime": "1d"
+      },
+      {
+        "question": "Planche 12, exercice 1, question 2a",
+        "page_pdf": 17,
+        "numero_planche": 12,
+        "exercice": 1,
+        "repere_imprime": "2a"
+      },
+      {
+        "question": "Planche 12, exercice 1, question 2b",
+        "page_pdf": 17,
+        "numero_planche": 12,
+        "exercice": 1,
+        "repere_imprime": "2b"
+      },
+      {
+        "question": "Planche 12, exercice 2, question 1a",
+        "page_pdf": 17,
+        "numero_planche": 12,
+        "exercice": 2,
+        "repere_imprime": "1a"
+      },
+      {
+        "question": "Planche 12, exercice 2, question 1b",
+        "page_pdf": 17,
+        "numero_planche": 12,
+        "exercice": 2,
+        "repere_imprime": "1b"
+      },
+      {
+        "question": "Planche 12, exercice 2, question 2a",
+        "page_pdf": 18,
+        "numero_planche": 12,
+        "exercice": 2,
+        "repere_imprime": "2a"
+      },
+      {
+        "question": "Planche 12, exercice 2, question 2b",
+        "page_pdf": 18,
+        "numero_planche": 12,
+        "exercice": 2,
+        "repere_imprime": "2b"
+      },
+      {
+        "question": "Planche 12, exercice 2, question 3a",
+        "page_pdf": 18,
+        "numero_planche": 12,
+        "exercice": 2,
+        "repere_imprime": "3a"
+      },
+      {
+        "question": "Planche 12, exercice 2, question 3b",
+        "page_pdf": 18,
+        "numero_planche": 12,
+        "exercice": 2,
+        "repere_imprime": "3b"
+      },
+      {
+        "question": "Planche 12, exercice 2, question 4a",
+        "page_pdf": 18,
+        "numero_planche": 12,
+        "exercice": 2,
+        "repere_imprime": "4a"
+      },
+      {
+        "question": "Planche 12, exercice 2, question 4b",
+        "page_pdf": 18,
+        "numero_planche": 12,
+        "exercice": 2,
+        "repere_imprime": "4b"
+      },
+      {
+        "question": "Planche 12, exercice 2, question 4c",
+        "page_pdf": 18,
+        "numero_planche": 12,
+        "exercice": 2,
+        "repere_imprime": "4c"
+      },
+      {
+        "question": "Planche 12, exercice 2, question 5",
+        "page_pdf": 18,
+        "numero_planche": 12,
+        "exercice": 2,
+        "repere_imprime": "5"
+      },
+      {
+        "question": "Planche 13, exercice 1, question 1",
+        "page_pdf": 19,
+        "numero_planche": 13,
+        "exercice": 1,
+        "repere_imprime": "1"
+      },
+      {
+        "question": "Planche 13, exercice 1, question 2a",
+        "page_pdf": 19,
+        "numero_planche": 13,
+        "exercice": 1,
+        "repere_imprime": "2a"
+      },
+      {
+        "question": "Planche 13, exercice 1, question 2b",
+        "page_pdf": 19,
+        "numero_planche": 13,
+        "exercice": 1,
+        "repere_imprime": "2b"
+      },
+      {
+        "question": "Planche 13, exercice 1, question 3a",
+        "page_pdf": 19,
+        "numero_planche": 13,
+        "exercice": 1,
+        "repere_imprime": "3a"
+      },
+      {
+        "question": "Planche 13, exercice 1, question 3b",
+        "page_pdf": 19,
+        "numero_planche": 13,
+        "exercice": 1,
+        "repere_imprime": "3b"
+      },
+      {
+        "question": "Planche 13, exercice 1, question 3c",
+        "page_pdf": 19,
+        "numero_planche": 13,
+        "exercice": 1,
+        "repere_imprime": "3c"
+      },
+      {
+        "question": "Planche 13, exercice 1, question 3d",
+        "page_pdf": 19,
+        "numero_planche": 13,
+        "exercice": 1,
+        "repere_imprime": "3d"
+      },
+      {
+        "question": "Planche 13, exercice 1, question 3e",
+        "page_pdf": 19,
+        "numero_planche": 13,
+        "exercice": 1,
+        "repere_imprime": "3e"
+      },
+      {
+        "question": "Planche 13, exercice 2, question 1",
+        "page_pdf": 19,
+        "numero_planche": 13,
+        "exercice": 2,
+        "repere_imprime": "1"
+      },
+      {
+        "question": "Planche 13, exercice 2, question 2a",
+        "page_pdf": 19,
+        "numero_planche": 13,
+        "exercice": 2,
+        "repere_imprime": "2a"
+      },
+      {
+        "question": "Planche 13, exercice 2, question 2b",
+        "page_pdf": 19,
+        "numero_planche": 13,
+        "exercice": 2,
+        "repere_imprime": "2b"
+      },
+      {
+        "question": "Planche 13, exercice 2, question 2c",
+        "page_pdf": 19,
+        "numero_planche": 13,
+        "exercice": 2,
+        "repere_imprime": "2c"
+      },
+      {
+        "question": "Planche 13, exercice 2, question 3",
+        "page_pdf": 19,
+        "numero_planche": 13,
+        "exercice": 2,
+        "repere_imprime": "3"
+      },
+      {
+        "question": "Planche 14, exercice 1, question 1a",
+        "page_pdf": 20,
+        "numero_planche": 14,
+        "exercice": 1,
+        "repere_imprime": "1a"
+      },
+      {
+        "question": "Planche 14, exercice 1, question 1b",
+        "page_pdf": 20,
+        "numero_planche": 14,
+        "exercice": 1,
+        "repere_imprime": "1b"
+      },
+      {
+        "question": "Planche 14, exercice 1, question 1c",
+        "page_pdf": 20,
+        "numero_planche": 14,
+        "exercice": 1,
+        "repere_imprime": "1c"
+      },
+      {
+        "question": "Planche 14, exercice 1, question 2a",
+        "page_pdf": 20,
+        "numero_planche": 14,
+        "exercice": 1,
+        "repere_imprime": "2a"
+      },
+      {
+        "question": "Planche 14, exercice 1, question 2b",
+        "page_pdf": 20,
+        "numero_planche": 14,
+        "exercice": 1,
+        "repere_imprime": "2b"
+      },
+      {
+        "question": "Planche 14, exercice 1, question 3",
+        "page_pdf": 20,
+        "numero_planche": 14,
+        "exercice": 1,
+        "repere_imprime": "3"
+      },
+      {
+        "question": "Planche 14, exercice 1, question 4a",
+        "page_pdf": 20,
+        "numero_planche": 14,
+        "exercice": 1,
+        "repere_imprime": "4a"
+      },
+      {
+        "question": "Planche 14, exercice 1, question 4b",
+        "page_pdf": 20,
+        "numero_planche": 14,
+        "exercice": 1,
+        "repere_imprime": "4b"
+      },
+      {
+        "question": "Planche 14, exercice 1, question 4c",
+        "page_pdf": 20,
+        "numero_planche": 14,
+        "exercice": 1,
+        "repere_imprime": "4c"
+      },
+      {
+        "question": "Planche 14, exercice 1, question 5a",
+        "page_pdf": 20,
+        "numero_planche": 14,
+        "exercice": 1,
+        "repere_imprime": "5a"
+      },
+      {
+        "question": "Planche 14, exercice 1, question 5b",
+        "page_pdf": 20,
+        "numero_planche": 14,
+        "exercice": 1,
+        "repere_imprime": "5b"
+      },
+      {
+        "question": "Planche 14, exercice 2, question 1",
+        "page_pdf": 20,
+        "numero_planche": 14,
+        "exercice": 2,
+        "repere_imprime": "1"
+      },
+      {
+        "question": "Planche 14, exercice 2, question 2",
+        "page_pdf": 20,
+        "numero_planche": 14,
+        "exercice": 2,
+        "repere_imprime": "2"
+      },
+      {
+        "question": "Planche 14, exercice 2, question 3a",
+        "page_pdf": 20,
+        "numero_planche": 14,
+        "exercice": 2,
+        "repere_imprime": "3a"
+      },
+      {
+        "question": "Planche 14, exercice 2, question 3b",
+        "page_pdf": 20,
+        "numero_planche": 14,
+        "exercice": 2,
+        "repere_imprime": "3b"
+      },
+      {
+        "question": "Planche 14, exercice 2, question 4",
+        "page_pdf": 20,
+        "numero_planche": 14,
+        "exercice": 2,
+        "repere_imprime": "4"
+      },
+      {
+        "question": "Planche 15, exercice 1, question 1",
+        "page_pdf": 21,
+        "numero_planche": 15,
+        "exercice": 1,
+        "repere_imprime": "1"
+      },
+      {
+        "question": "Planche 15, exercice 1, question 2",
+        "page_pdf": 21,
+        "numero_planche": 15,
+        "exercice": 1,
+        "repere_imprime": "2"
+      },
+      {
+        "question": "Planche 15, exercice 1, question 3",
+        "page_pdf": 21,
+        "numero_planche": 15,
+        "exercice": 1,
+        "repere_imprime": "3"
+      },
+      {
+        "question": "Planche 15, exercice 1, question 4",
+        "page_pdf": 21,
+        "numero_planche": 15,
+        "exercice": 1,
+        "repere_imprime": "4"
+      },
+      {
+        "question": "Planche 15, exercice 1, question 5",
+        "page_pdf": 21,
+        "numero_planche": 15,
+        "exercice": 1,
+        "repere_imprime": "5"
+      },
+      {
+        "question": "Planche 15, exercice 2, question 1",
+        "page_pdf": 21,
+        "numero_planche": 15,
+        "exercice": 2,
+        "repere_imprime": "1"
+      },
+      {
+        "question": "Planche 15, exercice 2, question 2",
+        "page_pdf": 21,
+        "numero_planche": 15,
+        "exercice": 2,
+        "repere_imprime": "2"
+      },
+      {
+        "question": "Planche 15, exercice 2, question 3",
+        "page_pdf": 21,
+        "numero_planche": 15,
+        "exercice": 2,
+        "repere_imprime": "3"
+      },
+      {
+        "question": "Planche 15, exercice 2, question 4",
+        "page_pdf": 21,
+        "numero_planche": 15,
+        "exercice": 2,
+        "repere_imprime": "4"
+      },
+      {
+        "question": "Planche 15, exercice 2, question 5",
+        "page_pdf": 21,
+        "numero_planche": 15,
+        "exercice": 2,
+        "repere_imprime": "5"
+      },
+      {
+        "question": "Planche 15, exercice 2, question 6",
+        "page_pdf": 21,
+        "numero_planche": 15,
+        "exercice": 2,
+        "repere_imprime": "6"
+      },
+      {
+        "question": "Planche 15, exercice 2, question 7",
+        "page_pdf": 21,
+        "numero_planche": 15,
+        "exercice": 2,
+        "repere_imprime": "7"
+      }
+    ]
+  },
+  "consignes_oral": {
+    "preparation_minutes": 60,
+    "interrogation_minutes": 30,
+    "presentation_libre_maximum_minutes": 15,
+    "choix": "Les deux exercices doivent être traités. Le candidat choisit leur ordre de présentation."
+  }
 }
