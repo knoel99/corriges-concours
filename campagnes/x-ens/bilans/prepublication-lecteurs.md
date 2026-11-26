@@ -1,8 +1,8 @@
 # Essai local de publication des corrigés
 
-Le 26/11/2026 à 11 h 27 UTC, les 1870 paires signées de la révision `963545b8` ont fourni les deux textes attendus et leurs signatures dans le service de lecture du site. Le journal de chaque fiche renvoie au bon dossier GitHub, reprend les interventions qualifiantes et indique le caractère partiel quand il est déclaré. [Résultats par épreuve](prepublication-lecteurs.tsv) · [Version des corrigés](https://github.com/knoel99/corriges-concours/tree/963545b89574b683d8cddf363d9f2b59f552c9af) · [Version du site](https://github.com/knoel99/prepa/tree/6e0485f92d31240e960ca1c3085f92d167170187)
+Le 26/11/2026 à 11 h 36 UTC, les 1872 paires signées de la révision `9ab9ad7c` ont fourni les deux textes attendus et leurs signatures dans le service de lecture du site. Le journal de chaque fiche renvoie au bon dossier GitHub, reprend les interventions qualifiantes et indique le caractère partiel quand il est déclaré. [Résultats par épreuve](prepublication-lecteurs.tsv) · [Version des corrigés](https://github.com/knoel99/corriges-concours/tree/9ab9ad7c8ad1a8c577ef1f28b989420673c83196) · [Version du site](https://github.com/knoel99/prepa/tree/6e0485f92d31240e960ca1c3085f92d167170187)
 
-Le contrôle couvre 2343 fiches de filière pour 1870 épreuves signées. Les épreuves communes sont aussi vérifiées sous chaque filière de leur notice éditoriale. [Contrôles des 473 fiches supplémentaires](prepublication-lecteurs-autres-filieres.tsv)
+Le contrôle couvre 2345 fiches de filière pour 1872 épreuves signées. Les épreuves communes sont aussi vérifiées sous chaque filière de leur notice éditoriale. [Contrôles des 473 fiches supplémentaires](prepublication-lecteurs-autres-filieres.tsv)
 
 L’essai utilise une base SQLite temporaire et les fichiers locaux des révisions Git. La conversion du dépôt public et le plan de publication du site produisent les clés du stockage. La synchronisation charge d’abord le contenu de `54fe93cd`, puis celui de la branche de travail. Pour chaque édition, le service qui alimente le lecteur doit restituer exactement le Markdown attendu après la réécriture des chemins d’illustrations. Le contrôle vérifie aussi la présence de chaque SVG référencé. Si une édition ne référence aucun SVG, la colonne de disponibilité est positive et le classeur des épreuves indique zéro illustration pour cette édition.
 
@@ -25,6 +25,8 @@ Les 40 sujets de physique A PC (2011 à 2014 et 2016 à 2021), d’italien (2005
 En physique, économie, gestion, médecine et humanités, littérature, portugais et russe, les 94 PDF des 47 paires ont été contrôlés sur leurs sources Git. Ils totalisent 482 pages et 184 insertions de schémas. [Révisions, pages et empreintes de chaque édition](pdf-physique-economie-humanites-langues-2026-11-26.tsv)
 
 Pour les 12 analyses économiques de Paris-Saclay et 14 sujets de la Sélection internationale Lettres de l’ENS-PSL, les archives ont été relues PDF par PDF. Les 52 fichiers totalisent 179 pages. Les signatures correspondent aux deux éditions et les arbres de rédaction à la branche. [Pages, empreintes et révisions](pdf-analyses-saclay-et-selection-lettres-2026-11-26.tsv)
+
+Les 47 épreuves relues en économie et en sociologie ont fourni 94 PDF signés, totalisant 427 pages. Chaque fichier a été comparé aux octets de l’archive et rattaché à l’arbre Git de la paire relue. [Couverture, signatures des PDF et empreintes](pdf-revues-economie-sociologie-2026-11-26.tsv)
 
 Le 25 novembre 2026, les deux lecteurs et les quatre téléchargements ont aussi été vérifiés sur les 134 fiches de filière de 45 épreuves communes déjà en production à la révision `54fe93cd`. [Adresses et empreintes des fichiers](production-filieres-54fe93cd.tsv)
 
