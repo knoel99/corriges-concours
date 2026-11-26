@@ -1,0 +1,160 @@
+{
+  "slug": "bel_al_etude-de-texte-francais-lyon_2023",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Étude de texte français (Lyon)",
+    "annee": 2023,
+    "modalite": "écrit de spécialité"
+  },
+  "intitule": "Alphonse Allais, « Une mort bizarre », À se tordre",
+  "gabarit": "commentaire",
+  "questions": 1,
+  "duree_heures": 5,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2023-09/Epreuve-de-specialite.pdf#page=6",
+    "sujet_sha256": "d646a518fbe4febf8a67e582f0310174ed455fa1f7d2c93d37f450a6420673a2",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2023-11/Lettres-Modernes-2023.pdf#page=2",
+    "rapport_jury_sha256": "e52255055ba7faafeccc3862388db662d18ae96c0c0968da489d00d2f3623de0",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2023",
+    "ouvrage": "Alphonse Allais, « Une mort bizarre », *À se tordre* (1891).",
+    "pages_rapport_verifiees": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2023-09/Epreuve-de-specialite.pdf#page=6",
+      "sha256": "d646a518fbe4febf8a67e582f0310174ed455fa1f7d2c93d37f450a6420673a2",
+      "pages": 20,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "d637c9f152c00d67d0ac53df6ca1a8afc6acd94775b42bc8aa249b7f1b2e0dc5"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "23197e3feb5af29cc10d3ecdefd9d1216be3f6253cf9bb7010d639a60bd3b7bd"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "ea24ca67705c8e1f81863dc59da0d937d7dcd1bc33b797c4430eac09730c2ff1"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "cf9ed2270e04c6db4fd96da7f504594adec50f1f45dc201d8acfeec8362bab88"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2023-11/Lettres-Modernes-2023.pdf#page=2",
+      "sha256": "e52255055ba7faafeccc3862388db662d18ae96c0c0968da489d00d2f3623de0",
+      "pages": 11,
+      "pages_verifiees": [
+        {
+          "numero": 2,
+          "rendu_sha256": "fe01260bdf8d07d789a8ac59a012f1701ec44f4f2bca0582b52a6a12922026de"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "18c5d7e1f2ff23a97e8bc5c76cc2eeaf6206bd68f623ebacba53f06b3fb6e463"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "a3da3e9070089a3b4d93ab05d8a9de20aac297eadc928d23da93e9452ace8120"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "35aaedc04abc1cf757b93f1a21e734718f0a6c5c2a3a9a53f0b3ebedfa3d4a0b"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "ecd5e8b486e7f52ee76f5daeb6e019ba949ef15ee5055459d225872e353a4fa8"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "952071a5a4cd717fcb3a63a2950e488608cf182ee79148be8ff713c63ef5788b"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "dd46969adacafa67a2a8bb062f8b8521305d0a82c5cbc7ffe4ead73c85da026c"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "Commentaire",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "Du reportage au récit de table, deux narrateurs se relaient avant que la parole de Johanson ne ramène le lecteur au Havre."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire stylistique original de la totalité du texte, guide et schéma de lecture."
+    },
+    {
+      "phase": "revision",
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Collation des 66 lignes et des notes, niveaux du récit, répétitions, image de la marée et attribution de la qualification finale."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Alphonse Allais, « Une mort bizarre », *À se tordre* (1891)."
+    ],
+    "note": "Commentaire et schéma originaux, accompagnés de citations brèves de l’extrait."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Commentaire",
+        "page_pdf": 6,
+        "pages_pdf": [
+          6,
+          7
+        ],
+        "ligne_debut": 1,
+        "ligne_fin": 66
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}
