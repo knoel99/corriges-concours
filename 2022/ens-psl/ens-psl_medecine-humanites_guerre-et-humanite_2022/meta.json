@@ -1,0 +1,69 @@
+{
+  "slug": "ens-psl_medecine-humanites_guerre-et-humanite_2022",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Médecine-Humanités",
+    "matiere": "Guerre et humanité",
+    "annee": 2022,
+    "modalite": "écrit"
+  },
+  "intitule": "Guerre et humanité",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://web.archive.org/web/20240216135532id_/https://www.ens.psl.eu/sites/default/files/sujet-b-mh2022.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport-jury-mh2022docx.pdf",
+    "index": "https://medecine-humanites.ens.psl.eu/sujets-et-rapports-du-concours-2018/",
+    "sha256_sujet": "76eca569886ae93f4a92968ed8c56cef6310433f4ef3f36e6cf9e61c513cecb2",
+    "sha256_rapport_jury": "60c5f0d2b6c2bdb1547f3fe7b893e1fd52dfde73f376a213a522f7addd06db6a",
+    "documents": [
+      {
+        "role": "sujet",
+        "url_officielle": "https://www.ens.psl.eu/sites/default/files/sujet-b-mh2022.pdf",
+        "url": "https://web.archive.org/web/20240216135532id_/https://www.ens.psl.eu/sites/default/files/sujet-b-mh2022.pdf",
+        "pages": 5,
+        "sha256": "76eca569886ae93f4a92968ed8c56cef6310433f4ef3f36e6cf9e61c513cecb2"
+      },
+      {
+        "role": "rapport",
+        "url_officielle": "https://www.ens.psl.eu/sites/default/files/rapport-jury-mh2022docx.pdf",
+        "url": "https://www.ens.psl.eu/sites/default/files/rapport-jury-mh2022docx.pdf",
+        "pages": 3,
+        "sha256": "60c5f0d2b6c2bdb1547f3fe7b893e1fd52dfde73f376a213a522f7addd06db6a"
+      }
+    ],
+    "corpus": "Le sujet de cinq pages donne Henry Dunant, *Un souvenir de Solférino* (1862), la parole de Tamara Stepanovna Oumniaguina recueillie par Svetlana Alexievitch (1985), une photographie de Lee Miller prise à Cologne en 1946, Luc Boltanski, *La souffrance à distance* (1993), et le compte d’emploi des ressources de MSF France au 31 décembre 2018. La dernière page commente le statut de ce tableau."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/lecture-croisee.svg",
+      "question": "Commentaire",
+      "legende": "Le dossier distingue la proximité du secours, la médiation du regard et les moyens durables de l’action."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "sciences_humaines_medecine",
+      "agent": "sciences_humaines_medecine",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture du sujet et du rapport authentifiés, étude des textes et de la reproduction, composition du commentaire, accompagnement pédagogique et schéma original."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire"
+    ]
+  }
+}
