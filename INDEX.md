@@ -1897,6 +1897,10 @@
 | 2007 | X | MP | Informatique (option) | [md](2007/x/x_mp_informatique-option_2007/brut.md) | [md](2007/x/x_mp_informatique-option_2007/guide.md) |
 | 2008 | X | MP | Informatique (option) | [md](2008/x/x_mp_informatique-option_2008/brut.md) | [md](2008/x/x_mp_informatique-option_2008/guide.md) |
 | 2009 | X | MP | Informatique (option) | [md](2009/x/x_mp_informatique-option_2009/brut.md) | [md](2009/x/x_mp_informatique-option_2009/guide.md) |
+| 2014 | X | MP | Maths B | [md](2014/x/x_mp_maths-b_2014/brut.md) | [md](2014/x/x_mp_maths-b_2014/guide.md) |
+| 2015 | X | MP | Maths B | [md](2015/x/x_mp_maths-b_2015/brut.md) | [md](2015/x/x_mp_maths-b_2015/guide.md) |
+| 2016 | X | MP | Maths B | [md](2016/x/x_mp_maths-b_2016/brut.md) | [md](2016/x/x_mp_maths-b_2016/guide.md) |
+| 2017 | X | MP | Maths B | [md](2017/x/x_mp_maths-b_2017/brut.md) | [md](2017/x/x_mp_maths-b_2017/guide.md) |
 | 2018 | X | MP | Maths B | [md](2018/x/x_mp_maths-b_2018/brut.md) | [md](2018/x/x_mp_maths-b_2018/guide.md) |
 | 2019 | X | MP | Maths B | [md](2019/x/x_mp_maths-b_2019/brut.md) | [md](2019/x/x_mp_maths-b_2019/guide.md) |
 | 2020 | X | MP | Maths B | [md](2020/x/x_mp_maths-b_2020/brut.md) | [md](2020/x/x_mp_maths-b_2020/guide.md) |
