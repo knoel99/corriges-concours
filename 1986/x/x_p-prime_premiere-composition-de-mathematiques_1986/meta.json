@@ -1,0 +1,274 @@
+{
+  "slug": "x_p-prime_premiere-composition-de-mathematiques_1986",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "P prime",
+    "filiere_historique": "P′",
+    "matiere": "Première composition de mathématiques",
+    "annee": 1986,
+    "modalite": "écrit"
+  },
+  "questions": 22,
+  "duree_heures": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-e6a9f32840d67cdd58ac",
+    "sujet_sha256": "29fc3a3783007f2c188beafc3ae88852798d9c0813eb54c9f4e63e0a8024ea48",
+    "notice_ups": "m86xp1",
+    "calendrier": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000330227",
+    "provenance": "Le fac-similé m86xp1ea porte le cartouche marginal « Option P′ Math 1 ». La première vue contient les feuillets 1 et 2, la seconde le feuillet 3. Un premier relevé indiquait II.5.c. Le feuillet 3 se termine en II.4.c, juste avant la note UPS sur cette question. Le maximum de G/g fournit la conclusion. La convergence uniforme est admise dans cette option."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "document": "m86xp1ea",
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-e6a9f32840d67cdd58ac",
+      "sha256": "29fc3a3783007f2c188beafc3ae88852798d9c0813eb54c9f4e63e0a8024ea48",
+      "pages": 2,
+      "rendu_page_sha256": [
+        "cf4d4b02a05d430a9f441db060ba5f6ec36beb425ba722ba3f5e3dfdc3574030",
+        "56e57073dcae4fbda11589f2bad88eccf6393bd2df0b915c2998c329c563a454"
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "I.4",
+      "numero": 1,
+      "fichier": "figures/deux-trajectoires.svg",
+      "legende": "Courbes positives définies sur tout l’intervalle de zéro exclu à un inclus. Les deux pentes en A illustrent la branche régulière et la famille qui diverge en zéro."
+    },
+    {
+      "question": "II.3.c",
+      "numero": 2,
+      "fichier": "figures/iterations-alternees.svg",
+      "legende": "Pour une valeur finale égale à 0,35, les premières bornes paires montent et les bornes impaires descendent. La courbe pointillée représente l’itérée de rang 12."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1.a",
+      "I.1.b",
+      "I.1.c",
+      "I.2.a",
+      "I.2.b",
+      "I.3.a",
+      "I.3.b",
+      "I.3.c",
+      "I.4",
+      "I.5",
+      "II.1.a",
+      "II.1.b",
+      "II.2.a",
+      "II.2.b",
+      "II.2.c",
+      "II.3.a",
+      "II.3.b",
+      "II.3.c",
+      "II.3.d",
+      "II.4.a",
+      "II.4.b",
+      "II.4.c"
+    ],
+    "repere_par_question": [
+      {
+        "question": "I.1.a",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 1
+      },
+      {
+        "question": "I.1.b",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 1
+      },
+      {
+        "question": "I.1.c",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 1
+      },
+      {
+        "question": "I.2.a",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 1
+      },
+      {
+        "question": "I.2.b",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 1
+      },
+      {
+        "question": "I.3.a",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 2
+      },
+      {
+        "question": "I.3.b",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 2
+      },
+      {
+        "question": "I.3.c",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 2
+      },
+      {
+        "question": "I.4",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 2
+      },
+      {
+        "question": "I.5",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 2
+      },
+      {
+        "question": "II.1.a",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 2
+      },
+      {
+        "question": "II.1.b",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 2
+      },
+      {
+        "question": "II.2.a",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      },
+      {
+        "question": "II.2.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      },
+      {
+        "question": "II.2.c",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      },
+      {
+        "question": "II.3.a",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      },
+      {
+        "question": "II.3.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      },
+      {
+        "question": "II.3.c",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      },
+      {
+        "question": "II.3.d",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      },
+      {
+        "question": "II.4.a",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      },
+      {
+        "question": "II.4.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      },
+      {
+        "question": "II.4.c",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Le fac-similé m86xp1ea porte le cartouche marginal « Option P′ Math 1 ». La première vue contient les feuillets 1 et 2, la seconde le feuillet 3. Un premier relevé indiquait II.5.c. Le feuillet 3 se termine en II.4.c, juste avant la note UPS sur cette question. Le maximum de G/g fournit la conclusion. La convergence uniforme est admise dans cette option."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "x_hist_1986",
+      "session": "x_hist_1986",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction originale des 22 réponses, des indications et de deux figures, à partir du fac-similé. Le fac-similé m86xp1ea porte le cartouche marginal « Option P′ Math 1 ». La première vue contient les feuillets 1 et 2, la seconde le feuillet 3. Un premier relevé indiquait II.5.c. Le feuillet 3 se termine en II.4.c, juste avant la note UPS sur cette question. Le maximum de G/g fournit la conclusion. La convergence uniforme est admise dans cette option."
+    }
+  ]
+}
