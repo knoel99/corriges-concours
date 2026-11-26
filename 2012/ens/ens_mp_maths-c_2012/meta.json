@@ -11,7 +11,14 @@
   "sources": {
     "sujet": "https://www.ens.psl.eu/IMG/file/concours/2012/MP%20I/mp2012_sujet_math_c_ulc%5B1%5D.pdf",
     "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2012/MP%20I/rap_ecrit_mathC_ulc_mpi2012%5B1%5D.pdf",
-    "sha256_sujet": "f34ea3c8830c855fcb7106f98639190fea83e6d1f3ac685976e2c3fc7caffec6"
+    "sha256_sujet": "f34ea3c8830c855fcb7106f98639190fea83e6d1f3ac685976e2c3fc7caffec6",
+    "index_banque": "https://www.ens.psl.eu/rapports-et-sujets-2012-mpi",
+    "index_banque_sha256": "2511c4e55d4b7f335f6e91e2b5eaf95fc63d8b37fb38fe4d33d461df4f333d0f",
+    "rapport": "https://www.ens.psl.eu/IMG/file/concours/2012/MP%20I/rap_ecrit_mathC_ulc_mpi2012%5B1%5D.pdf",
+    "sujet_sha256": "f34ea3c8830c855fcb7106f98639190fea83e6d1f3ac685976e2c3fc7caffec6",
+    "sujet_pages": 5,
+    "rapport_sha256": "a8cf3a3c6a750830a3fb06102eb5a06e49697af77f6a04678acfe1865c45a735",
+    "rapport_pages": 4
   },
   "figures": [
     {
@@ -31,6 +38,66 @@
       "perimetre": "Rédaction de la totalité du sujet ULC et lecture du rapport, vérification du critère de Hankel, de la signature du renversement en II.4.c, du traitement des pôles sur le bord et des deux produits infinis. Diagramme numérique comparant le cas 2 au nombre d’or.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Contrôle des 33 subdivisions et du rapport sur les nombres de Pisot, les déterminants de Hankel et le produit infini. Vérification du contenu et de la normalisation du dénominateur, du signe de l’antidiagonale dans II.4, de la convergence au bord et du cas exceptionnel du nombre 2.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4.a",
+      "II.4.b",
+      "II.4.c",
+      "II.4.d",
+      "II.5.a",
+      "II.5.b",
+      "II.5.c",
+      "II.5.d",
+      "III.1.a",
+      "III.1.b",
+      "III.1.c",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "IV.1",
+      "IV.2",
+      "IV.3.a",
+      "IV.3.b",
+      "IV.3.c",
+      "IV.4.a",
+      "IV.4.b",
+      "IV.4.c",
+      "IV.4.d"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "precision": "Contrôle des 33 subdivisions et du rapport sur les nombres de Pisot, les déterminants de Hankel et le produit infini. Vérification du contenu et de la normalisation du dénominateur, du signe de l’antidiagonale dans II.4, de la convergence au bord et du cas exceptionnel du nombre 2.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "relecture_corrige",
+      "perimetre": "Contrôle des 33 subdivisions et du rapport sur les nombres de Pisot, les déterminants de Hankel et le produit infini. Vérification du contenu et de la normalisation du dénominateur, du signe de l’antidiagonale dans II.4, de la convergence au bord et du cas exceptionnel du nombre 2.",
+      "sha256_sujet_controle": "f34ea3c8830c855fcb7106f98639190fea83e6d1f3ac685976e2c3fc7caffec6",
+      "sha256_rapport_controle": "a8cf3a3c6a750830a3fb06102eb5a06e49697af77f6a04678acfe1865c45a735"
+    }
+  }
 }

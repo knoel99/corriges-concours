@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Diffusion sur des ensembles finis.** Le produit scalaire et la norme de variation totale comprennent le facteur $1/N$. Le vecteur constant $\pi$ vaut 1 en chaque état, et les densités étudiées ont moyenne 1.
 
 ## 1. Énergie et trou spectral
@@ -150,5 +152,7 @@ Il suffit donc de prendre $T_P=\max\{0,(d/4)\ln((N-1)/\varepsilon^2)\}$.
 La convention en zéro donne $H(N\delta_x)=\ln N$. Par 2.4.d, 2.5.b et $\alpha=1/d$,
 $$\|u(t)-\pi\|_{\rm VT}\le\sqrt{2\ln N}\,e^{-2t/d}.$$
 Il suffit de prendre $T_S=\max\{0,(d/4)\ln(2\ln N/\varepsilon^2)\}$. Pour $d\ge2$, donc $N\ge4$, $2\ln N<N-1$ (vrai en 4 et la différence croît ensuite). Le terme exponentiel de décroissance est le même. L’entropie réduit le facteur initial et le temps suffisant. À précision fixée, quand $d\to\infty$, $T_P\sim (\ln2)d^2/4$ et $T_S\sim(d\ln d)/4$. Ce sont des estimations suffisantes du temps demandé.
+
+Pour $d=1$, avec la donnée initiale $(2,0)$, le mode non constant est $(1,-1)$ de valeur propre 2 pour $I-P$. Ainsi $u(t)=(1+e^{-2t},1-e^{-2t})$ et $\|u(t)-\pi\|_{\rm VT}=e^{-2t}$. Dans ce cas particulier la borne par l’énergie est exacte, tandis que celle par l’entropie porte le facteur $\sqrt{2\ln2}>1$.
 
 ![Figure 1 — Les deux bornes portent sur la même donnée initiale concentrée et sur la même précision. La différence augmente avec la dimension.](figures/temps-suffisants-sur-le-cube.svg)
