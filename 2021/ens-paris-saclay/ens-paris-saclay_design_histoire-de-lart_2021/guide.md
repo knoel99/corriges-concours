@@ -2,7 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 Claude Schnaidt prononce « La morale de l’environnement » à l’Union rationaliste, à Paris, le 8 février 1972. Le sujet invite à discuter son bilan dans les limites du programme « Design, de l’objet à l’environnement (1900–1980) ».
 
@@ -22,7 +24,7 @@ Parmi les objets qui nous font gagner du temps figurent des voitures parfois con
 
 Le dessin à gauche de la figure restitue ce niveau de raisonnement sans prétendre relever un appartement particulier. L’unité de mesure est le trajet d’une personne au travail. Si l’on demande à deux personnes de cuisiner ensemble, la même réduction de largeur devient une gêne. Si la famille est dans une pièce voisine, l’idéal de la travailleuse seule et efficace s’inscrit dans les cloisons. L’efficacité locale peut donc se vérifier en même temps que le partage des tâches demeure peu discuté. Un besoin collectif ne se déduit pas simplement du chronométrage d’une succession de gestes.
 
-![Figure 1 — Deux économies de trajet à des échelles différentes. Les postes d’une cuisine se rapprochent, les fonctions d’une ville peuvent s’éloigner.](figures/du-projet-au-milieu.svg)
+![Dans la cuisine, les postes se rapprochent. Dans la ville, des fonctions éloignées appellent des déplacements.](figures/du-projet-au-milieu.svg)
 
 ## II. Une machine peut appeler tout un milieu qui finit par imposer son usage
 
@@ -33,7 +35,12 @@ Le projet de *Ville contemporaine pour trois millions d’habitants* présenté 
 
 La transformation de Paris offre une autre sorte de preuve. La voie express rive droite, inaugurée en 1967, fait du bord du fleuve un axe de circulation motorisée. Le bénéfice des parcours automobiles se paie par un autre usage des berges et par une séparation physique pour le piéton. Le réseau contribue ainsi à produire le besoin qu’il promet de satisfaire. L’expression « machines à circuler » devient précise quand on indique qui est mobile, sur quel tracé et qui doit contourner l’aménagement. Elle reste excessive si elle suppose que tous les équipements de transport procurent les mêmes effets ou que les habitants ont perdu toute prise sur l’espace public.
 
+La Mini conçue par Alec Issigonis et lancée en 1959 permet de suivre le passage des « choses » mises sur le marché à celles qu’une société juge indispensables. Après la crise de Suez de 1956, l’économie de carburant constituait une contrainte précise. Disposé en travers, le moteur libère de la place pour quatre personnes dans une petite carrosserie. La voiture en coupe conservée au Science Museum rend ce gain d’espace vérifiable. Mais elle ne mesure pas les distances qu’un ménage devra parcourir pour atteindre une école ou un emploi. Si les services se concentrent dans un centre desservi par la route, une petite voiture efficace peut devenir une dépense obligée pour qui vit loin de ce centre. Ce mécanisme rend intelligible le rapprochement de deux observations de Schnaidt, les villes saturées de circulation et les régions délaissées. Prouver le dépérissement effectif d’une région exigerait encore de suivre ses activités et ses services dans le temps. Le dessin d’un véhicule révèle un progrès de conception, l’organisation du territoire décide qui peut en bénéficier. [Morris Mini-Minor de 1959 en coupe, Science Museum Group](https://collection.sciencemuseumgroup.org.uk/objects/co25251)
+
 ## III. Dans les années 1970, d’autres usages de la technique rendent la trajectoire contestable
+
+> [!INDICATION]
+> Imaginez deux ménages disposant du même véhicule, l’un à proximité des services, l’autre éloigné. Quelle propriété de la voiture reste mesurable dans les deux cas ? Quelle donnée sur l’organisation du territoire vous manque pour juger du bénéfice promis ?
 
 > [!INDICATION]
 > Relier la date de la conférence à un conflit de conception antérieur au choc pétrolier.
@@ -49,3 +56,5 @@ De la cuisine répétée dans le logement social à la voie rapide urbaine, le d
 ## Vérifier sa démonstration
 
 Pour chaque exemple, donner une date, un acteur et un bénéficiaire concret, puis une limite. Le projet exposé en 1922 et la voie effectivement construite en 1967 n’ont pas le même statut de preuve. Les identifier avant d’en tirer une conclusion sur la ville moderne.
+
+[Sujet officiel, p. 2](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2021_Sujet_1A_Design_histoire_de_l_art.pdf#page=2) · [Rapport du jury](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2021_rapport_ecrit_DESIGN_histoire_de_l_art.pdf)
