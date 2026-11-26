@@ -50,6 +50,36 @@
       "fichier": "figures/q38-balourd.svg",
       "question": "Q38",
       "legende": "Efforts sur le pot excentré. La réaction verticale du support équilibre le poids."
+    },
+    {
+      "fichier": "figures/q16-dr1-vis.svg",
+      "question": "Q16",
+      "legende": "DR1, figure 13, construction de l’action sur la roue pour la vis motrice"
+    },
+    {
+      "fichier": "figures/q17-dr1-roue.svg",
+      "question": "Q17",
+      "legende": "DR1, figure 14, inversion du frottement et composante motrice sur la vis"
+    },
+    {
+      "fichier": "figures/q21-dr2.svg",
+      "question": "Q21",
+      "legende": "DR2 complété sur le document de réponse distribué"
+    },
+    {
+      "fichier": "figures/q24-dr3.svg",
+      "question": "Q24",
+      "legende": "DR3 complété, branche haute négative et branche basse positive"
+    },
+    {
+      "fichier": "figures/q25-dr4.svg",
+      "question": "Q25",
+      "legende": "DR4 complété dans la convention de fermeture adoptée"
+    },
+    {
+      "fichier": "figures/q34-element.svg",
+      "question": "Q34",
+      "legende": "Élément de peinture en rotation, poids et résultante des pressions"
     }
   ],
   "sources": {
@@ -68,6 +98,397 @@
       "agent": "astra_info_si",
       "fournisseur": "codex",
       "perimetre": "Rédaction intégrale des 58 solutions des deux éditions et de huit figures à partir du livret de 24 pages XSR, des quatre documents-réponses et du rapport du jury. Décomposition des liaisons, contrôle de la fermeture et des efforts de roulement, stabilité, calcul des efforts tangentiels, bilans d’énergie et validation de la régression."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "perimetre": "Vérification des 58 questions, rapprochement du livret officiel, des annexes A à D et des quatre documents réponse. Report graphique des quatre grilles, bilan différentiel sur la peinture, contrôle des forces sur le pot et des maxima du cycle."
     }
-  ]
+  ],
+  "annexes_verifiees": {
+    "A": [
+      18,
+      19
+    ],
+    "B": [
+      20,
+      21,
+      22
+    ],
+    "C": [
+      23
+    ],
+    "D": [
+      24
+    ],
+    "DR1 à DR4, fichier séparé": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2024_PSI_Sciences_Industrielles_XSR.pdf",
+      "pages": 24,
+      "sha256": "7a9cc499d62b0a130d82bc626605c5f679c85215d06c597b7fbe86570b3e7442",
+      "rendus_sha256": [
+        "e1e6dcd1307985c0f2f0b50922c0872a8851deb435de1cbdb3b64084762bf158",
+        "251159eb55aad8b318ffce0b435ae94ca1058cf91c8231339f630fcad521ee05",
+        "443460db28c31ff26c1e80a468fbcff06434cc17a07e4e03d9ec29e901b91e4a",
+        "d292fad7261855e138b00c7c4e927cdedab642970b03b2f207d56f3539f18e5b",
+        "8df6bd74b6ab4e1c5abb2af27f9eb70ac8de83ba8eb554dfa5448fc6802caa62",
+        "96236df42cc12284cbce243a42cc13608237447808e5400173e642322d38c44b",
+        "9537ae63186f8bab2947e9095849c2488efba342a4a07ac6bdc5e8586b94e4f2",
+        "1de67c1ee534da65656b9d0adf0aa808f7b8946107ace281e275406ed19a121f",
+        "7ade895cba703e5df3a6b6d6b9e450c6935f6448e3d021bc1b50b817318877b0",
+        "55f7fe650ed9b9c242db055401bd512e72d28aeec70fb5f662cc0aef0c23866d",
+        "644c6b729a132fe776f636f6cf70345602066306e48e0b2ee3feebc74c463b76",
+        "17048dd68cbe58f87e3248a9a07a2360e7f761ddc84d87dfcb8ca613e4a547ec",
+        "193ae3423af1e74ea32d1e0679bdc818aaf704cbfcd3da89f2e0cb61dc2f7c68",
+        "4a724bfcc162a33dedaacf967cdb1088804a6f6555dc159d75da7b4821be6cad",
+        "bd9788a2a8aa8de9088057d0f1f275c3edc629fddbaa993f0451931a04bcc89d",
+        "95b98e4ed6318c019a4ffbf0ab360e8d8daffaa42d6e93449eee03adeecdae74",
+        "f555d8165a2ac2bdabad1ba0f48d3e43faf230261b2fd4eecb7a21331e64e480",
+        "6fb7ad84c702f71ccc3532de3f18b48393003afb407640d0d22b9b4d952f9e90",
+        "7bbab612bcda2f75f07703ae4d507dad84bdcf63a9ae15376e96a33103b8bff2",
+        "9ecc83065541f64e9907f820fd65753857495396a474a1cc96c83ceb91a482ad",
+        "3de39118937903f691c150c9292e41389e43958f68c9d8896958709869e5d018",
+        "38c01421e0f4c577fca3446ed3b0699c4b66a363f1ee1de5fcda78f9ef16a0c8",
+        "53b041fd72c91f76fa40d14fc3542c178a5dd8cfcc50113bf63d42089ddc6dca",
+        "e65ff4fdab8553f283a04af0982827aed56e896a6c5026408af30635f64f2f57"
+      ]
+    },
+    "rapport": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2024_Rapport_ecrit_SII.pdf",
+      "pages": 2,
+      "sha256": "f440c833685a4e86866044677bff18b1410f244eaede913d4910443b7f877ba3",
+      "rendus_sha256": [
+        "5def4c5e938a256cf01046a03715592e9597cd4c25a27ce68c28303750c31657",
+        "80c5a907f010d38aca873546c463586a247440189131532e1dff6412412f0d6d"
+      ]
+    },
+    "document_reponse": {
+      "url": "https://sti.eduscol.education.fr/sites/eduscol.education.fr.sti/files/concours-examens/17171/17171-document-reponse-x-ens-psi-2024-sii.pdf",
+      "pages": 4,
+      "sha256": "d26cfca0f15876431acc9488ee7f728fbdd30617baa08acd2fd8c871db9e6288",
+      "rendus_sha256": [
+        "5ff38a11ce3d446db717c4da25d83d0d05209f2d61bcf939956ff07e7f0d4904",
+        "3504e26602a856706bedc2725601b0307869fa085f36520ab9d7a5f65a02154a",
+        "10a7d9e74a2da28e981f5fb5f374124f8f438106d47829e819dd0ea9f336c6d1",
+        "326ea32ea12e861c1c3d94dfb7d4086a48eb536f44e3077828f892cc896f68f5"
+      ]
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "reperes": [
+      {
+        "question": 1,
+        "page_pdf": 5
+      },
+      {
+        "question": 2,
+        "page_pdf": 5
+      },
+      {
+        "question": 3,
+        "page_pdf": 5
+      },
+      {
+        "question": 4,
+        "page_pdf": 5
+      },
+      {
+        "question": 5,
+        "page_pdf": 5
+      },
+      {
+        "question": 6,
+        "page_pdf": 7
+      },
+      {
+        "question": 7,
+        "page_pdf": 7
+      },
+      {
+        "question": 8,
+        "page_pdf": 7
+      },
+      {
+        "question": 9,
+        "page_pdf": 8
+      },
+      {
+        "question": 10,
+        "page_pdf": 8
+      },
+      {
+        "question": 11,
+        "page_pdf": 8
+      },
+      {
+        "question": 12,
+        "page_pdf": 8
+      },
+      {
+        "question": 13,
+        "page_pdf": 8
+      },
+      {
+        "question": 14,
+        "page_pdf": 8
+      },
+      {
+        "question": 15,
+        "page_pdf": 8
+      },
+      {
+        "question": 16,
+        "page_pdf": 9
+      },
+      {
+        "question": 17,
+        "page_pdf": 9
+      },
+      {
+        "question": 18,
+        "page_pdf": 9
+      },
+      {
+        "question": 19,
+        "page_pdf": 10
+      },
+      {
+        "question": 20,
+        "page_pdf": 10
+      },
+      {
+        "question": 21,
+        "page_pdf": 10
+      },
+      {
+        "question": 22,
+        "page_pdf": 10
+      },
+      {
+        "question": 23,
+        "page_pdf": 10
+      },
+      {
+        "question": 24,
+        "page_pdf": 10
+      },
+      {
+        "question": 25,
+        "page_pdf": 11
+      },
+      {
+        "question": 26,
+        "page_pdf": 11
+      },
+      {
+        "question": 27,
+        "page_pdf": 11
+      },
+      {
+        "question": 28,
+        "page_pdf": 11
+      },
+      {
+        "question": 29,
+        "page_pdf": 11
+      },
+      {
+        "question": 30,
+        "page_pdf": 11
+      },
+      {
+        "question": 31,
+        "page_pdf": 11
+      },
+      {
+        "question": 32,
+        "page_pdf": 12
+      },
+      {
+        "question": 33,
+        "page_pdf": 12
+      },
+      {
+        "question": 34,
+        "page_pdf": 12
+      },
+      {
+        "question": 35,
+        "page_pdf": 12
+      },
+      {
+        "question": 36,
+        "page_pdf": 13
+      },
+      {
+        "question": 37,
+        "page_pdf": 13
+      },
+      {
+        "question": 38,
+        "page_pdf": 13
+      },
+      {
+        "question": 39,
+        "page_pdf": 13
+      },
+      {
+        "question": 40,
+        "page_pdf": 13
+      },
+      {
+        "question": 41,
+        "page_pdf": 14
+      },
+      {
+        "question": 42,
+        "page_pdf": 15
+      },
+      {
+        "question": 43,
+        "page_pdf": 15
+      },
+      {
+        "question": 44,
+        "page_pdf": 15
+      },
+      {
+        "question": 45,
+        "page_pdf": 15
+      },
+      {
+        "question": 46,
+        "page_pdf": 15
+      },
+      {
+        "question": 47,
+        "page_pdf": 15
+      },
+      {
+        "question": 48,
+        "page_pdf": 15
+      },
+      {
+        "question": 49,
+        "page_pdf": 16
+      },
+      {
+        "question": 50,
+        "page_pdf": 16
+      },
+      {
+        "question": 51,
+        "page_pdf": 16
+      },
+      {
+        "question": 52,
+        "page_pdf": 16
+      },
+      {
+        "question": 53,
+        "page_pdf": 16
+      },
+      {
+        "question": 54,
+        "page_pdf": 16
+      },
+      {
+        "question": 55,
+        "page_pdf": 17
+      },
+      {
+        "question": 56,
+        "page_pdf": 17
+      },
+      {
+        "question": 57,
+        "page_pdf": 17
+      },
+      {
+        "question": 58,
+        "page_pdf": 17
+      }
+    ]
+  },
+  "date_revision": "2026-11-26"
 }

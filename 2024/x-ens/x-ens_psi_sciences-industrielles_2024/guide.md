@@ -4,6 +4,12 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+Le sujet XSR comporte 58 questions. Les annexes A à D occupent les pages 18 à 24 du PDF officiel. Le cahier séparé contient quatre grilles à compléter. Les repères imprimés commencent après la garde.
+
+[Sujet original](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2024_PSI_Sciences_Industrielles_XSR.pdf) · [Rapport du jury](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2024_Rapport_ecrit_SII.pdf) · [Quatre documents réponse](https://sti.eduscol.education.fr/sites/eduscol.education.fr.sti/files/concours-examens/17171/17171-document-reponse-x-ens-psi-2024-sii.pdf)
+
 ## Repères de lecture
 
 La vis de fermeture et ses deux plateaux relèvent du moteur M2. Les rotations qui brassent ensuite le pot relèvent de M1. Conserver cette distinction permet de ramener les inerties au bon arbre. Les figures 3 à 12 du sujet donnent les axes, les transmissions, les cotes du montage et les caractéristiques du motoréducteur. Les documents-réponses DR1 à DR4 concernent les Q16, Q17, Q21, Q24 et Q25.
@@ -130,6 +136,10 @@ Le centrage 14–16 interdit quatre mobilités et la clavette interdit la rotati
 
 $F_{\max}=k\Delta E_{p,\max}=10^6\times4\,10^{-3}=4\,000$ N. En négligeant les frottements, $2\pi C=F_{\max}(2d_l)$ par tour, donc $C=F_{\max}d_l/\pi=1{,}59\ \mathrm{N\,m}$ à la sortie du réducteur. Si $\eta$ est le rendement des filetages, le couple nécessaire est $1{,}59/\eta$. Le couple annoncé de 4 N·m suffit dans ce modèle si $\eta\ge0{,}398$ ; il ne constitue pas une consigne permanente de serrage.
 
+On peut contrôler le facteur deux à partir d’un tour entier. Les plateaux se rapprochent alors de 2,50 mm et la compression maximale de 4 mm correspond à 1,60 tour après le premier contact. À la limite, le travail par tour à force instantanée constante est $2Fd_l$, donc $C=Fd_l/\pi$.
+
+[Feuillet officiel, p. 8 du PDF](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2024_PSI_Sciences_Industrielles_XSR.pdf#page=8)
+
 ### Question 15 · Cisaillement de la goupille
 
 **Indication.** Utiliser le diamètre de l’axe percé à l’endroit de la goupille et compter les deux plans cisaillés.
@@ -150,6 +160,12 @@ Sur le DR, prenons $\boldsymbol n=(\cos\gamma,-\sin\gamma)$ et $\boldsymbol t=(\
 
 ![Décomposition de l’action sur la roue pour les deux sens de transfert. Le segment de frottement est porté par le filet.](figures/q16-contact-roue-vis.svg)
 
+![DR1, figure 13, construction de l’action sur la roue pour la vis motrice](figures/q16-dr1-vis.svg)
+
+[Feuillet officiel, p. 9 du PDF](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2024_PSI_Sciences_Industrielles_XSR.pdf#page=9)
+
+[Document réponse DR1](https://sti.eduscol.education.fr/sites/eduscol.education.fr.sti/files/concours-examens/17171/17171-document-reponse-x-ens-psi-2024-sii.pdf#page=1)
+
 ### Question 17 · Roue motrice
 
 **Indication.** Le glissement relatif s’inverse. Distinguer force sur la roue et réaction sur la vis.
@@ -157,6 +173,12 @@ Sur le DR, prenons $\boldsymbol n=(\cos\gamma,-\sin\gamma)$ et $\boldsymbol t=(\
 #### Solution
 
 Sur le même flanc, l’action de la vis sur la roue est $N(\boldsymbol n+f\boldsymbol t)$. Par action-réaction, la composante tangentielle sur la vis vaut $N(\sin\gamma-f\cos\gamma)$ suivant $+y$ avec les axes retenus. Elle crée sur la vis un couple de module $r_V N|\sin\gamma-f\cos\gamma|$. L’entraînement en retour dans le sens souhaité exige $\tan\gamma>f$.
+
+![DR1, figure 14, inversion du frottement et composante motrice sur la vis](figures/q17-dr1-roue.svg)
+
+[Feuillet officiel, p. 9 du PDF](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2024_PSI_Sciences_Industrielles_XSR.pdf#page=9)
+
+[Document réponse DR1](https://sti.eduscol.education.fr/sites/eduscol.education.fr.sti/files/concours-examens/17171/17171-document-reponse-x-ens-psi-2024-sii.pdf#page=1)
 
 ### Question 18 · Irréversibilité
 
@@ -200,6 +222,12 @@ Le comparateur reçoit $+U,-E$. Le bloc qui produit $I$ vaut $1/(R+Lp)$, celui q
 
 ![DR2 à DR4. Retour de la force contre-électromotrice et déplacements de sens contraires.](figures/q21-blocs-verrouillage.svg)
 
+![DR2 complété sur le document de réponse distribué](figures/q21-dr2.svg)
+
+[Feuillet officiel, p. 10 du PDF](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2024_PSI_Sciences_Industrielles_XSR.pdf#page=10)
+
+[Document réponse DR2](https://sti.eduscol.education.fr/sites/eduscol.education.fr.sti/files/concours-examens/17171/17171-document-reponse-x-ens-psi-2024-sii.pdf#page=2)
+
 ### Question 22 · Transfert de vitesse
 
 **Indication.** Conserver la force contre-électromotrice même lorsque l’inductance et le frottement sont négligés.
@@ -224,6 +252,12 @@ Un capteur de force sur un plateau permet de limiter le serrage à $4$ kN. Deux 
 
 Le bloc initial est $H(p)$ de Q22. Depuis $\Omega$, la branche basse donne $V_A=+d_l\Omega/(2\pi N)$, la haute $V_B=-d_l\Omega/(2\pi N)$. Chaque vitesse est suivie d’un bloc $1/p$ pour donner la variation de $Z_A$ ou de $Z_B$ autour de la position initiale.
 
+![DR3 complété, branche haute négative et branche basse positive](figures/q24-dr3.svg)
+
+[Feuillet officiel, p. 10 du PDF](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2024_PSI_Sciences_Industrielles_XSR.pdf#page=10)
+
+[Document réponse DR3](https://sti.eduscol.education.fr/sites/eduscol.education.fr.sti/files/concours-examens/17171/17171-document-reponse-x-ens-psi-2024-sii.pdf#page=3)
+
 ### Question 25 · DR4 symétrique
 
 **Indication.** Les deux filetages ont le même pas en valeur absolue, un sens opposé et un entraînement commun.
@@ -231,6 +265,12 @@ Le bloc initial est $H(p)$ de Q22. Depuis $\Omega$, la branche basse donne $V_A=
 #### Solution
 
 $V_A=-V_B$ et les déplacements autour du plan médian sont opposés tant que la géométrie reste symétrique. Pour la branche haute seule du DR4, les trois blocs sont $H(p)$, $-d_l/(2\pi N)$ et $1/p$ avec l’axe commun de Q24. On récupère l’autre déplacement par changement de signe et $L_p=Z_A-Z_B=-2Z_B$ pour les variations.
+
+![DR4 complété dans la convention de fermeture adoptée](figures/q25-dr4.svg)
+
+[Feuillet officiel, p. 11 du PDF](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2024_PSI_Sciences_Industrielles_XSR.pdf#page=11)
+
+[Document réponse DR4](https://sti.eduscol.education.fr/sites/eduscol.education.fr.sti/files/concours-examens/17171/17171-document-reponse-x-ens-psi-2024-sii.pdf#page=4)
 
 ### Question 26 · Transfert du mécanisme
 
@@ -307,6 +347,12 @@ L’équation d’Euler donne $\nabla p=\rho_f\boldsymbol g=-\rho_f g\,\boldsymb
 #### Solution
 
 L’élément de volume $dV$ reçoit $-\nabla p\,dV$ des pressions et $\rho_f\boldsymbol g\,dV$ de son poids. Son accélération vaut $-\omega^2r\,\boldsymbol e_r$. Par conséquent $\nabla p=\rho_f\omega^2 r\,\boldsymbol e_r-\rho_fg\,\boldsymbol e_z$. L’axisymétrie annule la dérivée azimutale.
+
+Les deux composantes de la force de pression résultante sont $-\rho_f\omega^2 r\,dV$ vers le centre et $+\rho_fg\,dV$ vers le haut. La seconde équilibre le poids, la première courbe la trajectoire.
+
+![Élément de peinture en rotation, poids et résultante des pressions](figures/q34-element.svg)
+
+[Feuillet officiel, p. 12 du PDF](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2024_PSI_Sciences_Industrielles_XSR.pdf#page=12)
 
 ### Question 35 · Surface libre
 
@@ -432,6 +478,10 @@ $$
 
 Pour calculer ces vecteurs, écrire $A=J_t$, $B=J_a+m\rho^2$, $C=J_t+m\rho^2$, $s=\sin\beta$, $c=\cos\beta$. Dans le repère du pot, $\boldsymbol a_G=\rho(-b^2-a^2s^2,\,2ab c,\,a^2sc)$ et la dérivée inertielle du moment cinétique a pour composantes $(ab s(C-B-A),\,a^2sc(A-C),\,ab c(C+B-A))$. Ces termes incluent le terme gyroscopique de changement de base.
 
+Un contrôle immédiat consiste à choisir $\rho=0$. La résultante tangentielle devient la projection du poids opposé, tandis que le moment des contacts conserve le terme gyroscopique $J_aab$. Même centré, le pot impose donc deux contributions distinctes aux plateaux.
+
+[Feuillet officiel, p. 15 du PDF](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2024_PSI_Sciences_Industrielles_XSR.pdf#page=15)
+
 ### Question 48 · Maximum sur le cycle
 
 **Indication.** Préciser les phases couplées avant de prendre un maximum. La machine ne fournit pas une valeur numérique unique de la vitesse et de l’excentration pour cette partie.
@@ -543,3 +593,7 @@ Un réseau peut approximer une dynamique ou une loi de commande non linéaire d�
 #### Solution
 
 À partir d’un simulateur ou de mesures, recueillir des trajectoires couvrant vitesses, couples et masses admissibles. Former les couples d’apprentissage avec l’état $(i_d,i_q,C_{\rm em},\omega_r)$, les tensions $(V_d,V_q)$ et la cible. Par exemple entraîner dans PyTorch un réseau de prédiction de l’état suivant, puis l’utiliser dans une commande prédictive bornée pour choisir les tensions. Séparer les essais par trajectoire, ajuster la normalisation sur l’apprentissage, définir l’architecture et minimiser la somme pondérée des erreurs de prédiction. Vérifier sur des trajectoires réservées puis en simulation bouclée la poursuite, le couple, le décrochage, les saturations et les perturbations. Comparer à la commande nominale, tester le temps de calcul, puis valider progressivement sur banc avec les limites de courant et d’arrêt.
+
+Pour vérifier la généralisation à un nouveau pot, réserver des cycles complets à masse et remplissage absents de l’apprentissage. Mesurer l’écart quadratique de vitesse et le temps passé en saturation sur ces cycles. Un découpage aléatoire des instants d’un même cycle mêlerait des états voisins entre apprentissage et essai.
+
+[Feuillet officiel, p. 17 du PDF](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2024_PSI_Sciences_Industrielles_XSR.pdf#page=17)
