@@ -101,5 +101,47 @@
       "fournisseur": "codex",
       "agent": "astra_maths"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2a",
+      "2b",
+      "3a",
+      "3b",
+      "4a",
+      "4b",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10a",
+      "10b",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19a",
+      "19b",
+      "19c",
+      "19d",
+      "20",
+      "21",
+      "22"
+    ],
+    "precision": "Les 29 réponses des deux éditions correspondent aux 22 questions numérotées et à leurs subdivisions sur le fac-similé officiel. Le journal antérieur documente la portée du travail sur les solutions.",
+    "origine_attestation": {
+      "commit_du_journal": "643df26b72f210478e8fdda942086f21b743d63c",
+      "sha256_sujet_controle": "f964b9335d82c0eec9f9180a65fef11f51b62d45783dbb23bfea19b9f6732e01",
+      "phase": "relecture_corrige",
+      "date": "2026-11-24",
+      "perimetre": "Vérification des 22 questions numérotées et de leurs subdivisions dans les deux éditions, des indications, des sept schémas, du minimax et de la preuve de convergence en Q22 sur le sujet officiel MP-MPI. Le tableau ENS ne relie aucun rapport de maths C. Énoncé du résultat en 2a, choix explicite de N avant la construction à pas fixé en 8, identité complète en 14 et rétablissement de quatre figures dans le brut."
+    }
+  }
 }
