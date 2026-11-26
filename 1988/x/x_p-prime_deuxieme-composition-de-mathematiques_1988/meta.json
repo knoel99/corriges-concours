@@ -1,0 +1,274 @@
+{
+  "slug": "x_p-prime_deuxieme-composition-de-mathematiques_1988",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "P prime",
+    "annee": 1988,
+    "matiere": "Deuxième composition de mathématiques",
+    "modalite": "écrit"
+  },
+  "intitule": "Deuxième composition de mathématiques · option P′",
+  "questions": 31,
+  "duree_heures": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-44c3a4e126af6cfee26d",
+    "sujet_sha256": "07a90627c660963aca68a8aff656deb4bd8e7819ea37b678d10c0c3deebb9c28",
+    "notice_ups": "m88xp2",
+    "notice_officielle": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000697782",
+    "precisions": "Pages imprimées 122 à 124, garde propre à P′."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-44c3a4e126af6cfee26d",
+      "sha256": "07a90627c660963aca68a8aff656deb4bd8e7819ea37b678d10c0c3deebb9c28",
+      "pages": 3,
+      "rendu_page_sha256": [
+        "0211ca5438cb5444dfec4b2da80db721369dc6f161f9ebb9ee9532b7bd618eb5",
+        "3120f63313965073c823760aa192966cbca70a5af41ddce7beb17e795a2c4486",
+        "dc7876addb7bb324842e42cf1f837af5972f7cd0ddbee30a31a2ab0d500555c8"
+      ]
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "x_maths_b_anciennes",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Rédaction des 31 réponses à partir des trois pages imprimées, des indications et des deux figures."
+    },
+    {
+      "phase": "revision",
+      "session": "x_maths_b_anciennes",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Contrôle des multiplicités, du signe des exponentielles et du pivot de Rolle, de la parité et de sa perte pour les séries, puis des signes de tous les mineurs wronskiens."
+    }
+  ],
+  "figures": [
+    {
+      "question": "I.2.c",
+      "numero": 1,
+      "fichier": "figures/rolle-multiplicites.svg",
+      "legende": "Le polynôme représenté possède quatre zéros comptés avec multiplicité. Sa dérivée garde un zéro au point double et s’annule une fois dans chacun des deux intervalles entre zéros distincts."
+    },
+    {
+      "question": "II.1.b",
+      "numero": 2,
+      "fichier": "figures/signes-derivee.svg",
+      "legende": "Pour les exposants 0 à 4 et μ égal à 1,5, les signes deviennent plus, plus, plus, plus, moins. Un des deux changements de signe initiaux a disparu."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1.a",
+      "I.1.b",
+      "I.1.c",
+      "I.2.a",
+      "I.2.b",
+      "I.2.c",
+      "I.2.d",
+      "I.3",
+      "I.4",
+      "I.5",
+      "II.1.a",
+      "II.1.b",
+      "II.1.c",
+      "II.2",
+      "II.3.a",
+      "II.3.b",
+      "II.4.a",
+      "II.4.b",
+      "II.4.c",
+      "II.4.d",
+      "II.5.a",
+      "II.5.b",
+      "III.1",
+      "III.2.a",
+      "III.2.b",
+      "III.2.c",
+      "III.2.d",
+      "III.3.a",
+      "III.3.b",
+      "III.3.c",
+      "III.3.d"
+    ],
+    "repere_par_question": [
+      {
+        "question": "I.1.a",
+        "page_pdf": 1,
+        "page_imprimee": 122
+      },
+      {
+        "question": "I.1.b",
+        "page_pdf": 1,
+        "page_imprimee": 122
+      },
+      {
+        "question": "I.1.c",
+        "page_pdf": 1,
+        "page_imprimee": 122
+      },
+      {
+        "question": "I.2.a",
+        "page_pdf": 1,
+        "page_imprimee": 122
+      },
+      {
+        "question": "I.2.b",
+        "page_pdf": 1,
+        "page_imprimee": 122
+      },
+      {
+        "question": "I.2.c",
+        "page_pdf": 1,
+        "page_imprimee": 122
+      },
+      {
+        "question": "I.2.d",
+        "page_pdf": 1,
+        "page_imprimee": 122
+      },
+      {
+        "question": "I.3",
+        "page_pdf": 1,
+        "page_imprimee": 122
+      },
+      {
+        "question": "I.4",
+        "page_pdf": 1,
+        "page_imprimee": 122
+      },
+      {
+        "question": "I.5",
+        "page_pdf": 1,
+        "page_imprimee": 122
+      },
+      {
+        "question": "II.1.a",
+        "page_pdf": 2,
+        "page_imprimee": 123
+      },
+      {
+        "question": "II.1.b",
+        "page_pdf": 2,
+        "page_imprimee": 123
+      },
+      {
+        "question": "II.1.c",
+        "page_pdf": 2,
+        "page_imprimee": 123
+      },
+      {
+        "question": "II.2",
+        "page_pdf": 2,
+        "page_imprimee": 123
+      },
+      {
+        "question": "II.3.a",
+        "page_pdf": 2,
+        "page_imprimee": 123
+      },
+      {
+        "question": "II.3.b",
+        "page_pdf": 2,
+        "page_imprimee": 123
+      },
+      {
+        "question": "II.4.a",
+        "page_pdf": 2,
+        "page_imprimee": 123
+      },
+      {
+        "question": "II.4.b",
+        "page_pdf": 2,
+        "page_imprimee": 123
+      },
+      {
+        "question": "II.4.c",
+        "page_pdf": 2,
+        "page_imprimee": 123
+      },
+      {
+        "question": "II.4.d",
+        "page_pdf": 2,
+        "page_imprimee": 123
+      },
+      {
+        "question": "II.5.a",
+        "page_pdf": 2,
+        "page_imprimee": 123
+      },
+      {
+        "question": "II.5.b",
+        "page_pdf": 2,
+        "page_imprimee": 123
+      },
+      {
+        "question": "III.1",
+        "page_pdf": 3,
+        "page_imprimee": 124
+      },
+      {
+        "question": "III.2.a",
+        "page_pdf": 3,
+        "page_imprimee": 124
+      },
+      {
+        "question": "III.2.b",
+        "page_pdf": 3,
+        "page_imprimee": 124
+      },
+      {
+        "question": "III.2.c",
+        "page_pdf": 3,
+        "page_imprimee": 124
+      },
+      {
+        "question": "III.2.d",
+        "page_pdf": 3,
+        "page_imprimee": 124
+      },
+      {
+        "question": "III.3.a",
+        "page_pdf": 3,
+        "page_imprimee": 124
+      },
+      {
+        "question": "III.3.b",
+        "page_pdf": 3,
+        "page_imprimee": 124
+      },
+      {
+        "question": "III.3.c",
+        "page_pdf": 3,
+        "page_imprimee": 124
+      },
+      {
+        "question": "III.3.d",
+        "page_pdf": 3,
+        "page_imprimee": 124
+      }
+    ]
+  }
+}
