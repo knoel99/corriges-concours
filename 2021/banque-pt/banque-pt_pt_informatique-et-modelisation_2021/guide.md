@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Épreuve de quatre heures consacrée à l’autofocus d’un appareil photographique. Le sujet réserve 1 h 30 à la modélisation et 2 h 30 à l’informatique. Le jury indique une pondération proportionnelle. Le document réponse des questions 8 et 9 figure à la page 19 du PDF officiel.
 
 [Sujet officiel et document réponse](https://www.banquept.fr/documents/2021/info_mod_2021_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2021/rapport_info_model_ecrit_2021.pdf)
@@ -63,7 +65,7 @@ Un capteur conjugué réel derrière la lentille suppose $d_0>f'$.
 > [!INDICATION]
 > Sur le dessin, le rayon horizontal issu de A arrive au bord inférieur de la lentille supérieure. Par quel point connu ressort-il ?
 
-Le centre $O_1$ de la lentille supérieure est à la hauteur $a$. Le rayon AO₁ n'est pas dévié. Le rayon issu de A parallèle à l'axe propre de la lentille passe par son bord inférieur, puis par son foyer image $F'_1$. Ces deux droites se coupent en $A_1$ sur $P_1$. Le rayon par le bord supérieur doit également passer par $A_1$, puisque les deux plans sont conjugués.
+Le centre $O_1$ de la lentille supérieure est à la hauteur $a$. Le rayon AO₁ n'est pas dévié. Le rayon issu de A parallèle à l'axe propre de la lentille passe par son bord inférieur, puis par son foyer image $F'_1$. Le foyer $F'_1$ est placé à la hauteur de $O_1$, à une distance $f'$ derrière la lentille. Ces deux droites se coupent en $A_1$ sur $P_1$. Le rayon par le bord supérieur doit également passer par $A_1$, puisque les deux plans sont conjugués.
 
 ![Figure 2 — Mise au point réalisée. Les deux rayons de bord et le rayon central se rencontrent sur le capteur.](figures/lentilles-net.svg)
 
@@ -94,7 +96,7 @@ On retrouve $A_1$ à l'intersection du prolongement du rayon AO₁ et du rayon r
 $$
 y_1=a\left(1+\frac{x_1}{d_0-p}\right).
 $$
-Le dessin ci-dessous reprend les proportions du document réponse et place $A_1$ avant $P_1$.
+Sur le dessin, les distances entre le plan de référence, la lentille et le capteur reproduisent les proportions du document réponse. L’objet plus éloigné de $L_1$ a une image réelle plus proche de cette lentille. L’intersection calculée tombe bien avant $P_1$.
 
 ![Figure 3 — Construction de A₁ par le rayon central et le rayon passant par le foyer image de L₁, dans le cas du document réponse.](figures/lentilles-construction.svg)
 
@@ -208,7 +210,7 @@ Pour maintenir $i=i_0$ constant, la maille s'écrit $E_g+e=Ri_0$ (le terme propr
 > [!INDICATION]
 > Compter les valeurs possibles en incluant les deux bornes, puis multiplier successivement par trois et par le nombre de pixels.
 
-Il y a 256 intensités possibles, soit $2^8$ états. Le codage minimal sur un nombre entier de bits demande donc 8 bits, un octet par composante. Un pixel RVB occupe 3 octets. Dans le modèle sans compression de l'énoncé, les 48 millions de pixels demandent $48\times10^6\times3=144\,000\,000$ octets, soit **144 Mo**, environ **137,3 Mio**, hors en-tête et structures de gestion. Le calcul utilise le capteur informatique de 48 Mpixels ; celui de Q3 en avait six millions.
+Il y a 256 intensités possibles, soit $2^8$ états. Le codage minimal sur un nombre entier de bits demande donc 8 bits, un octet par composante. Un pixel RVB occupe 3 octets, soit 24 bits. Dans le modèle sans compression de l'énoncé, les 48 millions de pixels demandent $48\times10^6\times3=144\,000\,000$ octets, soit **144 Mo**, environ **137,3 Mio**, hors en-tête et structures de gestion. Le calcul utilise le capteur informatique de 48 Mpixels ; celui de Q3 en avait six millions.
 
 ### Q19 — Linéarisation d'une composante
 
@@ -336,7 +338,7 @@ L'appel est `reglage(position_objectif, prise)`. Pour un plateau, cette conventi
 > [!INDICATION]
 > Utiliser les exemples du sujet pour fixer le signe. Pour le décalage négatif, quelle liste perd ses premières valeurs ?
 
-Avec la convention de la figure 6, pour $d>0$ on associe le pixel $i$ du premier capteur au pixel $i+d$ du second. Pour $d<0$, on retire $-d$ valeurs au début du premier et à la fin du second. La longueur commune est $n-|d|$ pour les deux signes. L'expression imprimée $n-d$ ne convient que pour $d\geq0$ ; à $d=-3$ le dessin présente sept valeurs communes sur dix. Les tranches créent de nouvelles listes.
+Avec la convention de la figure 6, pour $d>0$ on associe le pixel $i$ du premier capteur au pixel $i+d$ du second. Pour $d<0$, on retire $-d$ valeurs au début du premier et à la fin du second. La longueur commune est $n-|d|$ pour les deux signes. L'expression imprimée $n-d$ ne convient que pour $d\geq0$ ; à $d=-3$ le dessin présente sept valeurs communes sur dix. Les tranches créent de nouvelles listes et laissent les mesures d’origine intactes. À $d=0$, elles copient la totalité des deux séries.
 
 ```python
 def extraction(L1, L2, dec):
@@ -446,7 +448,7 @@ Cette règle peut fournir un décalage malgré du bruit sur les mesures, même e
 
 Le contraste se mesure sur l'image elle-même, mais impose plusieurs déplacements et prises de vue.  
 La phase fournit directement le sens et l'amplitude du déplacement, au prix de deux mesures appariées et d'un étalonnage.  
-Pour suivre un sujet mobile, je choisis la phase ; le contraste reste une solution sur un capteur simple.
+Je choisis la phase pour un sujet mobile. Le contraste convient à un capteur simple.
 
 ## Pilotage du moteur pas à pas
 
@@ -552,7 +554,7 @@ WHERE p.date = '20181111';
 > [!INDICATION]
 > Tester le coin supérieur gauche d’un rectangle non carré, puis généraliser à une case intérieure.
 
-On numérote les lignes de haut en bas, les colonnes de gauche à droite, à partir de zéro. Dans une image $h\times l$, la case de départ $(i,j)$ se retrouve en $(h-1-i,l-1-j)$. Il suffit d'inverser l'ordre des lignes et, dans chaque ligne, celui des pixels. La copie profonde depuis le module `copy` préserve aussi l'indépendance des triplets RVB.
+On numérote les lignes de haut en bas, les colonnes de gauche à droite, à partir de zéro. La ligne du haut porte l’indice zéro. Dans une image $h\times l$, la case de départ $(i,j)$ se retrouve en $(h-1-i,l-1-j)$. Il suffit d'inverser l'ordre des lignes et, dans chaque ligne, celui des pixels. La copie profonde depuis le module `copy` préserve aussi l'indépendance des triplets RVB.
 
 ```python
 def rotation_180(image):
