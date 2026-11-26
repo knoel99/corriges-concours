@@ -1,0 +1,222 @@
+{
+  "slug": "bel_bl_histoire-contemporaine-oral-tronc-commun-21-juin_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Histoire contemporaine (oral tronc commun, 21 juin)",
+    "annee": 2024,
+    "modalite": "oral"
+  },
+  "intitule": "Histoire — Sujets du 21 juin 2024",
+  "questions": 0,
+  "tirages": 5,
+  "sujets": 10,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/bl_sujets_oraux_histoire_21062024.pdf",
+    "sha256_sujet": "f70a372e9132b00ea57e2fb1bae04c17e11493b7b64287dc3e45faf53403437f",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_oral_histoire.pdf",
+    "sha256_rapport_jury": "888e6723a8d4525e1f385ba55d1d7881d0ce80c84ad63f0acca3a47c35813058",
+    "pages_sujet": 1,
+    "pages_rapport_jury": 3
+  },
+  "billets": [
+    {
+      "numero": 1,
+      "sujets": [
+        "Être nationaliste en France 1870-1945",
+        "Les minorités sexuelles en Europe et aux Etats-Unis 1918-1990"
+      ],
+      "intitule_en_gras": "Être nationaliste en France 1870-1945",
+      "page": 1
+    },
+    {
+      "numero": 2,
+      "sujets": [
+        "Enseignants et enseignantes en France 1870-1990",
+        "Faire la révolution dans le monde 1918-1990"
+      ],
+      "intitule_en_gras": "Enseignants et enseignantes en France 1870-1990",
+      "page": 1
+    },
+    {
+      "numero": 3,
+      "sujets": [
+        "La presse politique en France des années 1900 aux années 1980",
+        "Contester la construction européenne en Europe de 1945 aux années 1990"
+      ],
+      "intitule_en_gras": "Contester la construction européenne en Europe de 1945 aux années 1990",
+      "page": 1
+    },
+    {
+      "numero": 4,
+      "sujets": [
+        "Le pacifisme en France, un engagement politique? 1870-1990",
+        "Les transferts de population dans le monde 1918-1990"
+      ],
+      "intitule_en_gras": "Le pacifisme en France, un engagement politique? 1870-1990",
+      "page": 1
+    },
+    {
+      "numero": 5,
+      "sujets": [
+        "Les démocrates-chrétiens en France, 1870-1990",
+        "Murs et frontières dans le monde 1945-1990"
+      ],
+      "intitule_en_gras": "Murs et frontières dans le monde 1945-1990",
+      "page": 1
+    }
+  ],
+  "figures": [
+    {
+      "fichier": "figures/figure-1.svg",
+      "question": "Enseignants et enseignantes en France 1870-1990",
+      "legende": "Trois transformations de l’enseignement"
+    },
+    {
+      "fichier": "figures/figure-2.svg",
+      "question": "Murs et frontières dans le monde 1945-1990",
+      "legende": "Deux frontières construites pendant la guerre froide"
+    }
+  ],
+  "reprises_du_corpus": [
+    {
+      "sujet": "Être nationaliste en France 1870-1945",
+      "fichier": "2026/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-16-juin_2026/brut.md",
+      "titre": "Patriotisme et nationalisme en France (1870–1914)",
+      "paragraphes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sha256_blocs": "0759e90dfa967b28f8d41bd772276df4d6c761a52bed8ea3255e981eb420639d",
+      "attributions": [
+        {
+          "phase": "redaction",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "autocontrole",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "relecture_corrige",
+          "session": "illustrations_double_edition",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-25"
+        }
+      ]
+    },
+    {
+      "sujet": "Enseignants et enseignantes en France 1870-1990",
+      "fichier": "2026/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-22-juin_2026/brut.md",
+      "titre": "Enseignants et élèves en France (1870-1990)",
+      "paragraphes": [
+        2
+      ],
+      "sha256_blocs": "8e763bf645f5a7ea7b5e3d09919ba08970d0eb7bb3ca886b1ee90f7d52059c47",
+      "attributions": [
+        {
+          "phase": "redaction",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "autocontrole",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "relecture_corrige",
+          "session": "illustrations_double_edition",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-25"
+        }
+      ]
+    },
+    {
+      "sujet": "Murs et frontières dans le monde 1945-1990",
+      "fichier": "2026/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-16-juin_2026/brut.md",
+      "titre": "Murs et frontières dans le monde (1945–1989)",
+      "paragraphes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sha256_blocs": "cbfed32ce991528a7bc42ffcfccc4490a18a7890996f0a13257436c49187378e",
+      "attributions": [
+        {
+          "phase": "redaction",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "autocontrole",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "relecture_corrige",
+          "session": "illustrations_double_edition",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-25"
+        }
+      ]
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "x_maths_b_recentes",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Comparaison du fac-similé du 21 juin et du rapport officiel ; vérification des 5 paires et du gras, rédaction et adaptation de 10 exposés, une relance avec réponse par sujet et deux figures originales. Les paragraphes adaptés du corpus antérieur sont rattachés à leurs auteurs dans les emprunts documentés."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Être nationaliste en France 1870-1945",
+      "Les minorités sexuelles en Europe et aux Etats-Unis 1918-1990",
+      "Enseignants et enseignantes en France 1870-1990",
+      "Faire la révolution dans le monde 1918-1990",
+      "La presse politique en France des années 1900 aux années 1980",
+      "Contester la construction européenne en Europe de 1945 aux années 1990",
+      "Le pacifisme en France, un engagement politique? 1870-1990",
+      "Les transferts de population dans le monde 1918-1990",
+      "Les démocrates-chrétiens en France, 1870-1990",
+      "Murs et frontières dans le monde 1945-1990"
+    ],
+    "precision": "Comparaison du fac-similé du 21 juin et du rapport officiel ; vérification des 5 paires et du gras, rédaction et adaptation de 10 exposés, une relance avec réponse par sujet et deux figures originales. Les paragraphes adaptés du corpus antérieur sont rattachés à leurs auteurs dans les emprunts documentés.",
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "perimetre": "Comparaison du fac-similé du 21 juin et du rapport officiel ; vérification des 5 paires et du gras, rédaction et adaptation de 10 exposés, une relance avec réponse par sujet et deux figures originales. Les paragraphes adaptés du corpus antérieur sont rattachés à leurs auteurs dans les emprunts documentés.",
+      "sha256_sujet_controle": "f70a372e9132b00ea57e2fb1bae04c17e11493b7b64287dc3e45faf53403437f",
+      "sha256_rapport_jury_controle": "888e6723a8d4525e1f385ba55d1d7881d0ce80c84ad63f0acca3a47c35813058"
+    }
+  }
+}
