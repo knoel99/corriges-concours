@@ -11,7 +11,8 @@
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/19_mpi_mathd_sujet.pdf",
     "rapport_jury": "https://www.ens.psl.eu/sites/default/files/19_mp_rap_emathd_u.pdf",
-    "sha256_sujet": "9a03f786e67b6a3e37bf051624c26c8f1acc46995736b0a1d157367ec4cb8829"
+    "sha256_sujet": "9a03f786e67b6a3e37bf051624c26c8f1acc46995736b0a1d157367ec4cb8829",
+    "sha256_rapport_jury": "10c9b88107d5d4605ef7304e798cb74e5e864ed685654eacdd6fb8a529321234"
   },
   "figures": [
     {
@@ -31,6 +32,86 @@
       "perimetre": "Rédaction intégrale des questions 1 à 25 et de toutes leurs sous-questions. Contrôle des signes et des conjugaisons sur le fac-similé, des hypothèses corrigées par le jury et du rôle de la coprimalité en 24b. Schéma de la méthode de l’hyperbole.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "ens_mp_mathematiques_d",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Pointage des 51 repères sur le sujet, les deux éditions et le rapport. p. 3–5, convergence des séries de Dirichlet, produit d’Euler et orthogonalité des caractères. p. 6–8, sommes de Gauss et de cotangentes, termes singuliers à s=1 et test sur le caractère impair modulo trois. p. 8–10, automorphismes du corps cyclotomique, matrice à décalage avec changement de signe et déterminant du système."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4a",
+      "I.4b",
+      "I.4c",
+      "I.5a",
+      "I.5b",
+      "I.5c",
+      "I.5d",
+      "II.6a",
+      "II.6b",
+      "II.6c",
+      "II.7a",
+      "II.7b",
+      "II.7c",
+      "II.7d",
+      "II.8a",
+      "II.8b",
+      "II.8c",
+      "II.9a",
+      "II.9b",
+      "II.10",
+      "III.11",
+      "III.12",
+      "III.13",
+      "III.14a",
+      "III.14b",
+      "III.14c",
+      "III.15",
+      "III.16",
+      "III.17",
+      "III.18",
+      "IV.19a",
+      "IV.19b",
+      "IV.19c",
+      "IV.20a",
+      "IV.20b",
+      "IV.20c",
+      "IV.20d",
+      "IV.21a",
+      "IV.21b",
+      "IV.22a",
+      "IV.22b",
+      "IV.23a",
+      "IV.23b",
+      "IV.23c",
+      "IV.23d",
+      "IV.24a",
+      "IV.24b",
+      "IV.25"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "controle": [
+      "p. 3–5, convergence des séries de Dirichlet, produit d’Euler et orthogonalité des caractères",
+      "p. 6–8, sommes de Gauss et de cotangentes, termes singuliers à s=1 et test sur le caractère impair modulo trois",
+      "p. 8–10, automorphismes du corps cyclotomique, matrice à décalage avec changement de signe et déterminant du système"
+    ]
+  }
 }
