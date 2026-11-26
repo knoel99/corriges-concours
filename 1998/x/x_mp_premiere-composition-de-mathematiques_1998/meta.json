@@ -1,0 +1,141 @@
+{
+  "slug": "x_mp_premiere-composition-de-mathematiques_1998",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Première composition de mathématiques",
+    "annee": 1998
+  },
+  "questions": 18,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.sujetsetcorriges.fr/dl/X/Maths/MP/sec-x-1998-maths1-MP.pdf",
+    "sha256_sujet": "71f037d3fc9394598f6076fb2108c43c54033e55d32da2aa7282fea6b439500a",
+    "rapport_jury": "",
+    "provenance": "Reproduction du sujet du concours d’admission diffusée par Sujets et Corrigés, 3 pages. La garde, la suite des consignes et la dernière page ont été contrôlées."
+  },
+  "figures": [
+    {
+      "fichier": "figures/coefficient-et-sommation.svg",
+      "question": "12",
+      "legende": "Les coefficients de la série double atteignent 1/2 aux rangs 2 et 3, puis décroissent vers zéro."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "maths_x_mp_1997_1999",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction intégrale des deux éditions sur les 3 pages du fac-similé. 18 consignes pointées. I. Séries entières et bord du disque ; II. Série de Dirichlet et développement local ; III. Séries à indices croissants ; IV. Intégrales itérées. Vérification des démonstrations, des notations et des bornes."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5.a",
+      "5.b",
+      "6",
+      "7",
+      "8.a",
+      "8.b",
+      "9",
+      "10",
+      "11.a",
+      "11.b",
+      "12",
+      "13",
+      "14",
+      "15"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1",
+        "page_pdf": 1
+      },
+      {
+        "question": "2",
+        "page_pdf": 1
+      },
+      {
+        "question": "3",
+        "page_pdf": 1
+      },
+      {
+        "question": "4",
+        "page_pdf": 1
+      },
+      {
+        "question": "5.a",
+        "page_pdf": 1
+      },
+      {
+        "question": "5.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "6",
+        "page_pdf": 2
+      },
+      {
+        "question": "7",
+        "page_pdf": 2
+      },
+      {
+        "question": "8.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "8.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "9",
+        "page_pdf": 2
+      },
+      {
+        "question": "10",
+        "page_pdf": 2
+      },
+      {
+        "question": "11.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "11.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "12",
+        "page_pdf": 3
+      },
+      {
+        "question": "13",
+        "page_pdf": 3
+      },
+      {
+        "question": "14",
+        "page_pdf": 3
+      },
+      {
+        "question": "15",
+        "page_pdf": 3
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

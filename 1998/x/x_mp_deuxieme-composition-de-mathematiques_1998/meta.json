@@ -1,0 +1,156 @@
+{
+  "slug": "x_mp_deuxieme-composition-de-mathematiques_1998",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Deuxième composition de mathématiques",
+    "annee": 1998
+  },
+  "questions": 21,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.sujetsetcorriges.fr/dl/X/Maths/MP/sec-x-1998-maths2-MP.pdf",
+    "sha256_sujet": "044bf2993e1866523e86ad489c65ea2f007e3a81ad7bfee8a41a216c9ef6cf54",
+    "rapport_jury": "",
+    "provenance": "Reproduction du sujet du concours d’admission diffusée par Sujets et Corrigés, 3 pages. La garde, la suite des consignes et la dernière page ont été contrôlées."
+  },
+  "figures": [
+    {
+      "fichier": "figures/cubique-et-racine.svg",
+      "question": "13.a",
+      "legende": "Les deux extrema du cubique sont sous l’axe. La branche croissante de droite le coupe en θ."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "maths_x_mp_1997_1999",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction intégrale des deux éditions sur les 3 pages du fac-similé. 21 consignes pointées. I. Polynôme minimal ; II. Plongements et générateurs ; III. Trace et discriminant. Vérification des démonstrations, des notations et des bornes."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.a",
+      "1.b",
+      "1.c",
+      "1.d",
+      "2.a",
+      "2.b",
+      "3",
+      "4.a",
+      "4.b",
+      "5",
+      "6",
+      "7",
+      "8.a",
+      "8.b",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13.a",
+      "13.b",
+      "13.c"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1.a",
+        "page_pdf": 1
+      },
+      {
+        "question": "1.b",
+        "page_pdf": 1
+      },
+      {
+        "question": "1.c",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.d",
+        "page_pdf": 2
+      },
+      {
+        "question": "2.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "2.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "3",
+        "page_pdf": 2
+      },
+      {
+        "question": "4.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "4.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "5",
+        "page_pdf": 2
+      },
+      {
+        "question": "6",
+        "page_pdf": 2
+      },
+      {
+        "question": "7",
+        "page_pdf": 3
+      },
+      {
+        "question": "8.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "8.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "9",
+        "page_pdf": 3
+      },
+      {
+        "question": "10",
+        "page_pdf": 3
+      },
+      {
+        "question": "11",
+        "page_pdf": 3
+      },
+      {
+        "question": "12",
+        "page_pdf": 3
+      },
+      {
+        "question": "13.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "13.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "13.c",
+        "page_pdf": 3
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}
