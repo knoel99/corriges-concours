@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Sujet officiel](https://www.ens-lyon.fr/sites/default/files/2025-07/Commentaire%20et%20traduction.pdf#page=14) · [Rapport du jury](https://www.ens-lyon.fr/sites/default/files/2025-11/Japonais%202025%20OK%20Lyon%20RELU.pdf#page=2) · [Archives de la session](https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2025)
 
 堀辰雄, 聖家族 (Hori Tatsuo, La Sainte Famille, 1930). Épreuve commune de six heures. Commentaire en japonais, pages 14 et 15. Lignes 1 à 23, de la mort qui ouvre une saison au geste du jeune homme et au tiret final. Version française. Lignes 1 à 23, totalité du texte, de « 死があたかも » à « 彼女の腕をつかまえたのを―― ».
@@ -38,7 +40,7 @@ Le texte annonce que la foule a vu quelque chose et en diffère l’objet jusqu�
 
 夫人を「仮死」から蘇らせる文の主語は、意外にも車の停止である。しかも「ように思われた」「ように見えた」と、長さについても原因についても、外から見た印象であることが繰り返される。その後、夫人は運転手に任せず自分でドアを開ける。車の方は持主をその場に「置いたまま」動き出す。人と物とに順々に行為の主導権を渡すこの構文のおかげで、夫人は確かに自分で降りたのに、気づけば流れの中にひとり取り残されてもいる。
 
-末尾では、最初に「人々は見た」と告げられてから、何を見たのかが明らかになるまで一息待たされる。帽子もなく髪を乱した青年が近づく間、夫人は群衆の中に浮き沈みする漂流物のように見える。青年の親しげな笑いは、窓の中に一様に浮かんだ先ほどの社交的な笑みとは違う、一人の相手に向けられた表情である。だが親しげに見えること以上に二人の仲を説明する言葉はない。腕をつかむ一瞬で文は長い線を引いて終わる。季節を開いた死から、生きた二人の思いがけない接触まで、見物人と一緒に読者が見届けられたのは、関係の名前ではなく、その関係が人目に触れた瞬間なのである。
+末尾では、最初に「人々は見た」と告げられてから、何を見たのかが明らかになるまで一息待たされる。帽子もなく髪を乱した青年が近づく間、夫人は群衆の中に浮き沈みする漂流物のように見える。青年の親しげな笑いは、窓の中に一様に浮かんだ先ほどの社交的な笑みとは違う、一人の相手に向けられた表情である。だが親しげに見えること以上に二人の仲を説明する言葉はない。腕をつかむ一瞬で文は長い線を引いて終わる。季節を開いた死から、生きた二人の思いがけない接触まで、読者は見物人と同じ場所に立たされている。二人の関係にまだ名前のつかないうちに、その関係が人目に触れる瞬間だけが訪れる。
 
 ![Figure 1 — Les regards changent de place](figures/lecture.svg)
 
@@ -48,7 +50,7 @@ On eût dit que la mort venait d’ouvrir une saison.
 
 Sur la route qui menait à la maison du mort, l’encombrement des automobiles allait croissant. La route était si étroite que chaque voiture en arrivait à passer plus de temps à l’arrêt qu’en mouvement.
 
-C’était en mars. L’air était encore froid, mais on n’avait déjà plus autant de peine à respirer. Sans qu’on s’en fût aperçu, un attroupement de curieux avait entouré les voitures. Pour mieux voir les gens à l’intérieur, ils collaient le nez aux vitres. Cela les couvrait d’une buée blanche. De l’autre côté, les propriétaires des voitures les regardaient à leur tour, avec un sourire inquiet, mais comme on en a en se rendant au bal.
+C’était en mars. L’air était encore froid, mais on n’avait déjà plus autant de peine à respirer. Sans qu’on s’en fût aperçu, un attroupement de curieux avait entouré les voitures. Pour mieux voir les gens à l’intérieur, ils collaient le nez aux vitres. Cela couvrit les vitres d’une buée blanche. De l’autre côté, les propriétaires des voitures les regardaient à leur tour, avec un sourire inquiet, mais comme on en a en se rendant au bal.
 
 Derrière l’une de ces vitres, ils aperçurent une femme qui avait l’air d’une grande dame. Elle gardait les yeux fermés et laissait peser sa tête sur le coussin, pareille à une morte.
 
@@ -58,4 +60,4 @@ Les gens se le demandaient à voix basse.
 
 C’était une veuve du nom de Saïki. Un arrêt de la voiture, qui parut plus long que tous les précédents, sembla tirer la dame de cette mort apparente. Alors, tout en disant quelque chose à son chauffeur, elle ouvrit elle-même la portière et descendit. Juste à ce moment, la voiture de devant s’ébranla, si bien que la sienne à son tour se remit en marche, laissant là sa propriétaire.
 
-Et voici ce que les gens virent presque au même instant. Un jeune homme sans chapeau, les cheveux en bataille, se frayait pour ainsi dire un chemin à travers la foule et s’approchait de la dame, qu’on voyait paraître et disparaître comme une épave au gré de l’eau. Et, tout en lui souriant avec une familiarité manifeste, il lui saisit le bras —
+Et voici ce que les gens virent presque au même instant. Un jeune homme sans chapeau, les cheveux en bataille, s’approchait comme en fendant la foule de cette dame que l’on voyait tantôt surnager, tantôt s’enfoncer, comme un objet à la dérive. Et, tout en lui souriant avec une familiarité manifeste, il lui saisit le bras —
