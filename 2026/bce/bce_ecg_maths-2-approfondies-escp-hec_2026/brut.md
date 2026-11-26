@@ -10,6 +10,8 @@
 
 **Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Épreuve de 4 h, sans document ni calculatrice. Thème : fonctions de répartition de couples, fonctions 2-croissantes, copules et théorème de Sklar.
 
 Notation utilisée dans tout le corrigé : $\varphi$ désigne la fonction de répartition de la loi uniforme sur $[0,1]$,
@@ -408,6 +410,14 @@ Avec $a_1'=1-b_1\leqslant b_1'=1-a_1$ et $a_2'=1-b_2\leqslant b_2'=1-a_2$, il re
 $$C(a_1',a_2')-C(b_1',a_2')-C(a_1',b_2')+C(b_1',b_2')\geqslant0,$$
 
 par 2-croissance de $C$ sur $[0,1]^2$. **$C^*$ est une copule.**
+
+Si $(U,V)$ est le couple associé à $C$, les marges uniformes n’ont pas d’atomes. Pour $u,v\in[0,1]$, le passage au complément donne
+$$\begin{aligned}
+\mathbb P(1-U\le u,\,1-V\le v)
+&=1-\mathbb P(U<1-u)-\mathbb P(V<1-v)\\
+&\quad+\mathbb P(U<1-u,\,V<1-v)\\
+&=u+v-1+C(1-u,1-v)=C^*(u,v).
+\end{aligned}$$
 
 #### 26. (a)
 
