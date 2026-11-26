@@ -12,12 +12,14 @@
     "model": "GPT-6"
   },
   "redaction": "Rédaction originale par IA à partir des documents officiels de la session 2026.",
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/08/26_2cc_sujet_geologie.pdf",
     "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/07/26_2cc_rap_eST.pdf",
     "sujet_sha256": "bef4f1c0bf081ea7b8253b4042210b1a92a8833738fe33a3f0f683b39f25659c",
-    "rapport_sha256": "116b7134544661fc74d97ea89271d71b376c3d82770710d51cf78991e69e17fb"
+    "rapport_sha256": "116b7134544661fc74d97ea89271d71b376c3d82770710d51cf78991e69e17fb",
+    "pages_sujet": 8,
+    "pages_rapport": 2
   },
   "figures": [
     {
@@ -88,6 +90,107 @@
       "perimetre": "Relecture des 15 questions du brut et du guidé, des sept schémas, du sujet avec ses annexes et du rapport. Correction de la lecture temporelle du sismogramme, calcul indépendant de la régression, du Moho et de la racine, contrôle des retards absolus et différentiels et des interprétations de la coupe.",
       "agent": "astra_physique",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Relecture des quinze questions et des deux éditions. Vérification des huit pointés, du tableau de vitesses et de la grille, ajustement indépendant et contrôle du Moho et de la racine. Lecture des cartes, du diagramme potassium-sodium et des annexes rhéologiques. Insertion des trois figures complémentaires dans le brut."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": 1,
+        "page_pdf": 2,
+        "documents_controles": "Figures 1 et 2, annexe A"
+      },
+      {
+        "question": 2,
+        "page_pdf": 2,
+        "documents_controles": "Figures 2 et 3"
+      },
+      {
+        "question": 3,
+        "page_pdf": 3,
+        "documents_controles": "Tableau STA1–STA8 et grille de tracé page 8"
+      },
+      {
+        "question": 4,
+        "page_pdf": 3,
+        "documents_controles": "Annexe B, vitesses typiques"
+      },
+      {
+        "question": 5,
+        "page_pdf": 3,
+        "documents_controles": "Figure 3, rai direct"
+      },
+      {
+        "question": 6,
+        "page_pdf": 3,
+        "documents_controles": "Figure 3, rai réfléchi"
+      },
+      {
+        "question": 7,
+        "page_pdf": 4,
+        "documents_controles": "Figure 3, géométrie du Moho"
+      },
+      {
+        "question": 8,
+        "page_pdf": 4,
+        "documents_controles": "Figure 2, figure 3, tableau des stations"
+      },
+      {
+        "question": 9,
+        "page_pdf": 4,
+        "documents_controles": "Modèle d’Airy et densités"
+      },
+      {
+        "question": 10,
+        "page_pdf": 4,
+        "documents_controles": "Figures 1 et 4, profil topographique"
+      },
+      {
+        "question": 11,
+        "page_pdf": 4,
+        "documents_controles": "Figure 4, vitesses, séismes et volcans"
+      },
+      {
+        "question": 12,
+        "page_pdf": 4,
+        "documents_controles": "Figure 4, annexes C et D"
+      },
+      {
+        "question": 13,
+        "page_pdf": 4,
+        "documents_controles": "Figure 4, annexe C et enclaves mafiques"
+      },
+      {
+        "question": 14,
+        "page_pdf": 5,
+        "documents_controles": "Figure 5, TAS et encart potassium–sodium"
+      },
+      {
+        "question": 15,
+        "page_pdf": 5,
+        "documents_controles": "Figure 6, carte des vents, courants et climats"
+      }
+    ],
+    "annexes": "A–D, pages 6 à 7, puis grille millimétrée page 8"
+  }
 }

@@ -6,6 +6,10 @@
 
 **Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Structure et dynamique du plateau Andin. Épreuve écrite de trois heures. [Sujet et annexes](https://banques-ecoles.fr/cms/wp-content/uploads/2026/08/26_2cc_sujet_geologie.pdf) · [Rapport du jury](https://banques-ecoles.fr/cms/wp-content/uploads/2026/07/26_2cc_rap_eST.pdf)
+
 ## Arrivées sismiques et vitesse crustale
 
 ### Question 1
@@ -13,6 +17,10 @@
 La rupture est repérée à 01 h 12 min 07,74 s. Le bruit initial est faible. Le premier pointé, P, est à 01 h 12 min 15,58 s, soit $7{,}84$ s après la rupture. Il inaugure un train de faible amplitude dont l'enveloppe augmente puis décroît. PmP est pointée à 01 h 12 min 31,54 s, soit $23{,}80$ s après la rupture et $15{,}96$ s après P. Elle se lit dans un train plus ample qui se prolonge en coda. Le dernier paquet, le plus ample par endroits, débute vers 01 h 12 min 48 s, soit environ 40 s après la rupture. Pour lire ce dernier instant, on prolonge l’échelle définie par les deux pointés P et PmP. Du pointé PmP au début du dernier paquet, la distance horizontale vaut approximativement celle qui sépare P de PmP, soit encore 16 à 17 s. Sans étalonnage vertical, les amplitudes ne peuvent être comparées qu'en valeur relative.
 
 Pour un foyer à 10 km et une distance épicentrale de 20,3 km, le trajet rectiligne vaut $\sqrt{20{,}3^2+10^2}=22{,}6$ km. Dans un matériau à 6 km/s il prendrait environ 3,8 s. La première arrivée est tardive et correspond à une vitesse apparente moyenne de $22{,}6/7{,}84\simeq2{,}9$ km/s. Des formations sédimentaires meubles ou des dépôts volcaniques poreux tels que des tufs et ignimbrites peuvent ralentir la traversée près de la station. Ce temps isolé ne permet pas de fixer à la fois la vitesse et l'épaisseur de la couche lente.
+
+![Figure 1 — Temps depuis la rupture à la station STA1. Les pointés de P et de PmP sont imprimés sur le sismogramme. Le début du train final est estimé.](figures/arrivees-sta1.svg)
+
+L’annexe A cartographie dans la région à la fois des unités volcaniques cénozoïques et des couvertures sédimentaires, ce qui donne un contexte indépendant à ces hypothèses. La carte est régionale. Un sondage ou plusieurs trajets locaux seraient nécessaires pour identifier les matériaux exactement sous STA1.
 
 ### Question 2
 
@@ -25,6 +33,8 @@ $$t\ (\mathrm{s})\simeq4{,}59+0{,}1652\,\Delta\ (\mathrm{km}),\qquad V_P\simeq\f
 Une pente tracée à la règle donne environ $6{,}1\ \mathrm{km/s}$. L'ordonnée à l'origine est le temps extrapolé du modèle ajusté. Elle englobe les effets de la géométrie du foyer, de la structure des premiers kilomètres et de l'ajustement affine. Ce n'est pas une nouvelle heure de rupture. Forcer la droite par l'origine biaiserait la pente. On peut vérifier la pente à la main avec les stations extrêmes : $(26{,}07-7{,}84)/(130-20{,}3)\simeq0{,}166\ \mathrm{s\,km^{-1}}$. Cette pente mesure la variation du temps avec la distance. Le quotient de la longueur d’un seul trajet par son temps à STA1 reste sensible à tout retard local.
 
 ![Figure 2 — Les huit temps de parcours sont ajustés en fonction de la distance épicentrale. La pente de la droite correspond à une vitesse proche de 6,1 km/s.](figures/regression-vitesses.svg)
+
+Pour reporter les points sur la grille de la page 8, on peut graduer l’abscisse de 0 à 140 km par pas de 20 km et l’ordonnée de 0 à 30 s par pas de 5 s. Le plus grand écart vertical à la droite ajustée vaut environ 0,16 s à STA4. Cet écart décrit la dispersion autour de la droite, tandis que le retard d’environ 4 s à STA1 concerne le modèle géométrique homogène.
 
 ### Question 4
 
@@ -70,6 +80,8 @@ Pour $H\simeq64$ km et les masses volumiques de la question 9, il vient $z\simeq
 
 ![Figure 4 — La croûte plus épaisse du plateau s’étend au-dessus de la surface de référence et sous le Moho de référence. Les deux colonnes exercent la même pression au niveau de compensation.](figures/colonnes-airy.svg)
 
+Un contrôle direct emploie l’altitude lue de 4 km. Pour les densités retenues, elle demanderait une racine $r=2{,}8\times4/(3{,}3-2{,}8)=22{,}4$ km et une épaisseur totale de $35+4+22{,}4=61{,}4$ km. L’écart d’environ 2 à 3 km avec l’estimation sismique donne l’échelle de l’accord avec ce modèle simple.
+
 ## Du plateau à la croûte profonde
 
 ### Question 11
@@ -83,6 +95,10 @@ Sur le profil ouest–est, le plateau porte plusieurs centres volcaniques, dont 
 À 30 km, la pression lithostatique d'une croûte de $2\,800\ \mathrm{kg/m^3}$ est de l'ordre de $\rho g z\simeq0{,}8$ GPa. La faible $V_S$ donnée, environ $2{,}8\ \mathrm{km/s}$, indique une rigidité au cisaillement réduite. Avec les anomalies négatives de $V_P$, le contexte volcanique et l'extinction de la sismicité crustale profonde, elle est compatible avec une croûte moyenne à inférieure chaude, affaiblie et localement partiellement fondue. À pression comparable, la présence d'eau abaisse la température nécessaire à l'amorce de la fusion selon l'annexe C. Une vitesse sismique ne fournit à elle seule ni température exacte ni fraction de liquide.
 
 Dans la partie froide superficielle, la résistance au frottement augmente avec le confinement et la déformation fragile produit des séismes. Avec la profondeur et la température, le fluage ductile devient possible à plus faible contrainte que la rupture fragile. L'enveloppe rhéologique de l'annexe D est l'enveloppe de la résistance la plus faible de ces deux régimes. Dans la croûte chaude de l'Altiplano, leur croisement peut être moins profond que pour une lithosphère froide. La croûte située sous ce niveau peut donc accommoder de la déformation sans forte sismicité. La croûte inférieure mafique peut, en outre, atteindre des faciès métamorphiques de haute pression sous la croûte épaissie.
+
+![Figure 6 — Schéma qualitatif de la concurrence entre rupture fragile et fluage ductile. À chaque profondeur, le comportement qui exige la plus faible contrainte gouverne la résistance.](figures/rheologie-crustale.svg)
+
+L’annexe D trace une enveloppe de référence avec un Moho vers 30 km et une résistance qui change au passage de la croûte au manteau. Sur l’Altiplano, les données placent ce passage vers 64 km. On transpose le mécanisme de concurrence entre rupture et fluage, en recalant la géométrie sur le profil local.
 
 ### Question 13
 
@@ -98,6 +114,8 @@ Pour les laves ultra-potassiques, une hypothèse est une fusion de faible degré
 
 Un liquide basaltique chaud et relativement fluide libère plus facilement ses gaz et peut alimenter des coulées. Un magma évolué, plus riche en silice, plus visqueux et chargé en volatils, peut retenir les bulles, se fragmenter et alimenter une colonne explosive. Les courants pyroclastiques déposent des ignimbrites. La vidange importante d'un réservoir peut s'accompagner d'un effondrement en caldera. Le débit, la teneur en gaz, la cristallinité et l'état du conduit comptent aussi. Un stratovolcan andésitique peut connaître des phases effusives et explosives successives.
 
+La figure principale représente la somme massique des deux alcalins. C’est l’encart qui sépare potassium et sodium. Certains échantillons y atteignent environ 8 % de K₂O pour moins de 2 % de Na₂O, donc un rapport massique supérieur à 4. Ils se situent au-dessus de la droite $\mathrm{K_2O/Na_2O}=2$ de la figure. Cette observation étaye la présence d’une série ultra-potassique.
+
 ## Relief andin et climats côtiers
 
 ### Question 15
@@ -107,3 +125,5 @@ Aux latitudes tropicales de l'Altiplano, de l'air humide venu de l'est, notammen
 Sur la côte de l'Atacama, le courant de Humboldt et les remontées d'eau froide refroidissent les basses couches. La subsidence des hautes pressions subtropicales réchauffe et assèche l'air en altitude, renforçant l'inversion et limitant la convection profonde. Des brouillards ou stratus côtiers peuvent ainsi coexister avec une pluie extrêmement rare. Le relief à l'est prive simultanément la côte d'une grande part des apports continentaux.
 
 La Namibie, avec le courant de Benguela, et la façade saharienne nord-occidentale, avec le courant des Canaries, offrent des analogies. L'alignement d'une chaîne de l'ampleur des Andes n'y est pas nécessaire. Sur de nombreuses marges occidentales subtropicales, circulation anticyclonique descendante, courants de bord est froids et remontées d'eaux profondes favorisent l'aridité côtière. Cette régularité dépend de la latitude, du relief et des vents dominants. Elle ne s'applique pas uniformément à toutes les côtes tournées vers l'ouest, notamment aux façades européennes tempérées parcourues par les perturbations d'ouest.
+
+![Figure 7 — Aux latitudes tropicales, l’humidité arrive principalement de l’est. Le versant pacifique abrité combine ombre pluviométrique et influence du courant marin froid.](figures/ombre-pluviometrique.svg)
