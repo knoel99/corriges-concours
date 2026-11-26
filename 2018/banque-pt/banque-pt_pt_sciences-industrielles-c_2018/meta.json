@@ -1,0 +1,618 @@
+{
+  "slug": "banque-pt_pt_sciences-industrielles-c_2018",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Sciences industrielles C",
+    "annee": 2018
+  },
+  "questions": 40,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2018/si_c_2018_pt.pdf",
+    "sujet_sha256": "3de54f18bd8c7e7b0f4304df049461218043934ae7b74e46a07a6412469aeb1c",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2018/rapport_si_c_ecrit_2018.pdf",
+    "rapport_sha256": "c959e19ae56567fb732ec03f63ac0ffe899d81abbd8725f37566aca5e5e984a7",
+    "lecture_rapport": "Rapport imprimé p. 41–44. Pondération p. 41. Écart entre grille GPS et énoncé p. 42. Schémas, hyperstatisme, électrification et mise en position p. 42–44."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2018/si_c_2018_pt.pdf",
+      "sha256": "3de54f18bd8c7e7b0f4304df049461218043934ae7b74e46a07a6412469aeb1c",
+      "nombre_pages": 60,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "153cebd694b7d37655485800b748f95a2658f10802f9035f4dbc1a37f1c290d0"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "d0ff4d2e0d2907461506a2f1cb9a0efefa3f1d79b3bfa6a31c2244416862fa46"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "dd125dad37fe3f2591be55a9a7e2f281210ab48316b0db6ebeec66d2f2c6efb9"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "a7087513f9410ae027d481e0d991904af55a6817fa5f96ac2ed4a600523e0055"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "4b3c0280dc239c7f40166a25b13389817e93884579ae39f7fc531607a1d739cb"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "d9be0de20b10f6d3088042e3fb26517217071f9733a58a09042978dc2cb6a3cc"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "28dc342c77aa71b4a54dc499cf6d951eda45cac5c2a70c5d712e6b3ce53d49bb"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "d58d763619bd88066ea18c9551e7ea3d4e2d41d83373b3dde695cbcaa27ab6ff"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "ff95cfc50eb036526e35ad1885dc5285d9de0be1668ba0f8e98102c2229c0fdd"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "de019328a63287564d746684f7ce5457556a26b8cc3ebb0e1bb223cd9c153861"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "d76043823514d28dfafdd7de591961e71cf5b6916039bf85b5f71f8b61ea9688"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "1759b0624fc214ac4a6279fa5f11ab4540e64381b5970b2f6422378b013dcde1"
+        },
+        {
+          "numero": 13,
+          "rendu_sha256": "592304f641d8d3cc105804943bf379d9511401d8b9a69e43665160c2c202764c"
+        },
+        {
+          "numero": 14,
+          "rendu_sha256": "fe2883f61819d8b89c7df33e230d5953df759bdb92e713022345cba5ef91da59"
+        },
+        {
+          "numero": 15,
+          "rendu_sha256": "07f75b30be61b55ebf234f823f21e55ed200c1f41b6026f39f02ac485fb8099d"
+        },
+        {
+          "numero": 16,
+          "rendu_sha256": "41e9c4181d047a31c65be86f7dd72937ee71265b54b568447abb566c0d857e54"
+        },
+        {
+          "numero": 17,
+          "rendu_sha256": "cc6f264c440a57e06da304ce7bf4ad532a25d174d812dd2a3f9c4c0fc574589f"
+        },
+        {
+          "numero": 18,
+          "rendu_sha256": "95e541a173d89915aa062e4bc761ceb90d378649c9fdeb054aa7da12b6a85df0"
+        },
+        {
+          "numero": 19,
+          "rendu_sha256": "68ac683d88cf8961008e14e5d185aefddcebb3762644b36874c1fdaf793abe80"
+        },
+        {
+          "numero": 20,
+          "rendu_sha256": "f2abe093cb7dd07ce829871a2092a7e494acf2bb7480cd9fea251f117920cd6c"
+        },
+        {
+          "numero": 21,
+          "rendu_sha256": "11410f9b8c2ed6c0c86880aa1df81fe985e1795eefa39b814f8a4513ffdd702c"
+        },
+        {
+          "numero": 22,
+          "rendu_sha256": "04788d28fd650da5eb8e65f190898f04608d8298e1f91d03b9bfcf4c2f1f6611"
+        },
+        {
+          "numero": 23,
+          "rendu_sha256": "7cd53627bd1fd3e0e5af969b9237202544eb39e423860a950010eda74565aaeb"
+        },
+        {
+          "numero": 24,
+          "rendu_sha256": "de0ce558745c2be35fc33ceb7fd0b91879d7c03d6220126baf51ec63ecf781e3"
+        },
+        {
+          "numero": 25,
+          "rendu_sha256": "fe62e49182b5e3ede8cfffebd094229664d0ac66c7172c629aa58a1caf848b62"
+        },
+        {
+          "numero": 26,
+          "rendu_sha256": "f6a99bf4be608b78df7ab8441ade14475e81e715a06dcdcb26da34e8b3e7dc34"
+        },
+        {
+          "numero": 27,
+          "rendu_sha256": "2dc51ea777a6dd16150cf3bf7454eac050a31e7a2d6cec6cca0d3d6f8840bc5b"
+        },
+        {
+          "numero": 28,
+          "rendu_sha256": "f38edc88320fd3602dc54857b56a0df6d05ec72253428abe1de78bdaefd8706f"
+        },
+        {
+          "numero": 29,
+          "rendu_sha256": "28bb7f9fb2ef50f23fc6fa7a54d5334e29f771dfe2026f3cd61691b8db84ccc4"
+        },
+        {
+          "numero": 30,
+          "rendu_sha256": "d1e12b795c9af4cdccbc4066dcbb5f1c69b252d28df43c09203dcdbd3b70d094"
+        },
+        {
+          "numero": 31,
+          "rendu_sha256": "40a708c88b522208b092e409e1f484549540ec248ad026d6dc3eb9058f05d9b5"
+        },
+        {
+          "numero": 32,
+          "rendu_sha256": "ac66fcddfac62b5c721dc3a57aa9e0f62c02184349ed504719306b5b12336b48"
+        },
+        {
+          "numero": 33,
+          "rendu_sha256": "9799aae06474d8b5a84df616f38084e53e59137fd5f7c8a9cd723452678c4921"
+        },
+        {
+          "numero": 34,
+          "rendu_sha256": "d6b40547bac391d98612f76b2975af0b0891cba3900ad65c1ea505d4b31ce20c"
+        },
+        {
+          "numero": 35,
+          "rendu_sha256": "c9a4e4b6b5e0081aca050c63d47f588fc1708d27c180026621f10915e1f75f8f"
+        },
+        {
+          "numero": 36,
+          "rendu_sha256": "381f72a6fac33e55233f316d66159f4708e6bff537455e8e53a5cd02c5b7ec69"
+        },
+        {
+          "numero": 37,
+          "rendu_sha256": "b907f8380b449043469df2af414a088f51eb0526dfa4d50f8f7b308e6f15c4c5"
+        },
+        {
+          "numero": 38,
+          "rendu_sha256": "289e7c24f050b671f6fa0205007734bd3eb7b3904d1d4e9158965b5a3e1aef6d"
+        },
+        {
+          "numero": 39,
+          "rendu_sha256": "95cd62f5434eb6b0d21cbb43536b9331439df64790a3e9ad27baa7c3f1fea92f"
+        },
+        {
+          "numero": 40,
+          "rendu_sha256": "c2a399ed7b26495c81a55f727047d8a67572f63d268c720e7f4de0f856058708"
+        },
+        {
+          "numero": 41,
+          "rendu_sha256": "2b45e8b2aff5a7445dcf3224cabb7fdc97a20f288404667a99c0f76a77cf7747"
+        },
+        {
+          "numero": 42,
+          "rendu_sha256": "f12d39d752f405e255556e248b98959bab891aa6d9ee6f4f77bcecedc1f2dac8"
+        },
+        {
+          "numero": 43,
+          "rendu_sha256": "34f32ac549862a31858903072046519ec789e06647923a8f3e4a3ff136fe656f"
+        },
+        {
+          "numero": 44,
+          "rendu_sha256": "6650e81637b8d7a5fd5cdaf362dcfac2b3a8bb70a8e12b927d38ba4eed70a502"
+        },
+        {
+          "numero": 45,
+          "rendu_sha256": "9e5abcaa94155b7b50a805747381636b15709cd2b3f5a3787ea82166228b7f56"
+        },
+        {
+          "numero": 46,
+          "rendu_sha256": "31f5fdadb01b9b12f6d5b82bf168496b0b4c066db31eed088139fd56ee8459bf"
+        },
+        {
+          "numero": 47,
+          "rendu_sha256": "8076e67c79a56f3988b8accd6c3059b22ea368aeed82ae1d14c95b600dda9f07"
+        },
+        {
+          "numero": 48,
+          "rendu_sha256": "62a40671738d46567594ee965666616f0f482379d21fc3e7e90aa43640f7719e"
+        },
+        {
+          "numero": 49,
+          "rendu_sha256": "c319a7102d56a744e4d72593c1d263394a34b0b41cb7d5e8dcc416a6b613d0e0"
+        },
+        {
+          "numero": 50,
+          "rendu_sha256": "dc0f903465805bcba9bea919e1171ecd6dce5eccdb88503f2d697082f73e56d4"
+        },
+        {
+          "numero": 51,
+          "rendu_sha256": "cbd8c71d36e3140c2a19201936e2a805051bbca47684bf05f6adc29f9fb23ea3"
+        },
+        {
+          "numero": 52,
+          "rendu_sha256": "78acd9e8db0dd849026302d9337dd0a1833325fa7edf1cdc0672329d4846c0e7"
+        },
+        {
+          "numero": 53,
+          "rendu_sha256": "94f69234b6dc5dd9f08143b9ffb8df5bb4cd893be4cbc33439df0cd6f9c6fef4"
+        },
+        {
+          "numero": 54,
+          "rendu_sha256": "896cbeadca044f219eb916707b84446a033d0201965a874291485e7c362245b6"
+        },
+        {
+          "numero": 55,
+          "rendu_sha256": "48990cf7ca7056c961355be4f92a8bb23f34008f55f97389f2d317bb789fa3e8"
+        },
+        {
+          "numero": 56,
+          "rendu_sha256": "3c93097a4918aa805813342af04ba621274c1645ccdc8028ec0dcf600633bb6a"
+        },
+        {
+          "numero": 57,
+          "rendu_sha256": "56bc187a9d5ae4db057dc3325ad5fad9d2e33d01e8e8cf20329d5ab605854e50"
+        },
+        {
+          "numero": 58,
+          "rendu_sha256": "4c5b2306e64daecb40e4e932a379405423dedac593c14b322543cd1080f188c8"
+        },
+        {
+          "numero": 59,
+          "rendu_sha256": "fc3484701cee421f73ab7091a1e6aaa17cfb560f01ff455c07f4bc92d466d836"
+        },
+        {
+          "numero": 60,
+          "rendu_sha256": "a64df61a5faeca5d784fc7314055a7e022fea587515215d4c440a57cc4fc96a1"
+        }
+      ],
+      "echelle_rendu": 0.6
+    },
+    "rapport_jury": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2018/rapport_si_c_ecrit_2018.pdf",
+      "sha256": "c959e19ae56567fb732ec03f63ac0ffe899d81abbd8725f37566aca5e5e984a7",
+      "nombre_pages": 4,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "f70c37152f24d7c0d78a563a568e519d8c77e0c92d4515753d02ef15b9304ca8"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "efa8c7eebbe869c4b72e121ef8542d2ae3df01b5deb6950c17f890df991cb1dc"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "e2290894637aa60561e17b8bf70e93b040e9c678bdd34a9a8eeceb77278445e5"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "68a5d8d4f1a4a24ef903450ed1b4f76b6c68fc2804c0074b91498004e7069add"
+        }
+      ],
+      "echelle_rendu": 0.6
+    }
+  },
+  "date_revision": "2026-11-26",
+  "figures": [
+    {
+      "fichier": "figures/lectures.svg",
+      "question": "Q9",
+      "legende": "Lecture de la poussée et report sur la commande du barillet"
+    },
+    {
+      "fichier": "figures/plateaux.svg",
+      "question": "Q12",
+      "legende": "Commande du pas du rotor principal et liaisons entre les deux plateaux"
+    },
+    {
+      "fichier": "figures/queue.svg",
+      "question": "Q16",
+      "legende": "Schéma du rotor de queue en projection et graphe des liaisons"
+    },
+    {
+      "fichier": "figures/calque.svg",
+      "question": "Q23",
+      "legende": "Modifications de la transmission sur le calque officiel de la coupe B–B"
+    },
+    {
+      "fichier": "figures/signaux.svg",
+      "question": "Q30",
+      "legende": "Hacheur série, diode de roue libre et signaux A et B en quadrature"
+    },
+    {
+      "fichier": "figures/surfaces.svg",
+      "question": "Q33",
+      "legende": "Surfaces de came, commande et portées en coupe du barillet"
+    },
+    {
+      "fichier": "figures/fonderie.svg",
+      "question": "Q39",
+      "legende": "Section de brut proposée et évolution comparée des coûts unitaires"
+    }
+  ],
+  "contributions": [
+    {
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "session": "banque_pt_si_c_hybridair_dynali_2018",
+      "phase": "redaction",
+      "perimetre": "40 solutions et indications sur les 60 pages du sujet, les 15 ressources et les graphes, mécanismes, coupe du calque 131 E, grilles de spécification, brut et coûts."
+    },
+    {
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "session": "banque_pt_si_c_hybridair_dynali_2018",
+      "phase": "relecture_corrige",
+      "perimetre": "Vérification des cotes et bras de levier, des courbes S1 et des masses, du dédoublement de la grille GPS, des appuis de la fourche, du guidage de 9 et 20, des efforts sur engrenages coniques et des rapports de vitesse. Contrôle de onze feuilles complétées et de chaque figure dans chaque PDF.",
+      "tour": 1
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21",
+      "Q22",
+      "Q23",
+      "Q24",
+      "Q25",
+      "Q26",
+      "Q27",
+      "Q28",
+      "Q29",
+      "Q30",
+      "Q31",
+      "Q32",
+      "Q33",
+      "Q34",
+      "Q35",
+      "Q36",
+      "Q37",
+      "Q38",
+      "Q39",
+      "Q40"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "Q1",
+        "page_pdf": 6,
+        "traitement": "Répartir les exigences entre les blocs"
+      },
+      {
+        "question": "Q2",
+        "page_pdf": 6,
+        "traitement": "Mettre le rotor en rotation"
+      },
+      {
+        "question": "Q3",
+        "page_pdf": 7,
+        "traitement": "Soutenir la charge en vol stationnaire"
+      },
+      {
+        "question": "Q4",
+        "page_pdf": 7,
+        "traitement": "Monter à vitesse constante"
+      },
+      {
+        "question": "Q5",
+        "page_pdf": 7,
+        "traitement": "Équilibrer le fuselage en lacet"
+      },
+      {
+        "question": "Q6",
+        "page_pdf": 7,
+        "traitement": "Obtenir le même moment sur le X3"
+      },
+      {
+        "question": "Q7",
+        "page_pdf": 7,
+        "traitement": "Calculer la poussée de queue"
+      },
+      {
+        "question": "Q8",
+        "page_pdf": 7,
+        "traitement": "Intégrer la portance des huit pales"
+      },
+      {
+        "question": "Q9",
+        "page_pdf": 7,
+        "traitement": "Lire l’incidence au stationnaire"
+      },
+      {
+        "question": "Q10",
+        "page_pdf": 8,
+        "traitement": "Calculer le couple de traînée"
+      },
+      {
+        "question": "Q11",
+        "page_pdf": 8,
+        "traitement": "Évaluer la puissance du moteur thermique"
+      },
+      {
+        "question": "Q12",
+        "page_pdf": 9,
+        "traitement": "Compléter les liaisons du plateau et des pales"
+      },
+      {
+        "question": "Q13",
+        "page_pdf": 9,
+        "traitement": "Utiliser levier collectif et manche cyclique"
+      },
+      {
+        "question": "Q14",
+        "page_pdf": 10,
+        "traitement": "Compter les contraintes de la tringlerie"
+      },
+      {
+        "question": "Q15",
+        "page_pdf": 10,
+        "traitement": "Faire passer une commande dans le repère tournant"
+      },
+      {
+        "question": "Q16",
+        "page_pdf": 10,
+        "traitement": "Représenter le rotor arrière et le barillet"
+      },
+      {
+        "question": "Q17",
+        "page_pdf": 10,
+        "traitement": "Transmettre la consigne des palonniers"
+      },
+      {
+        "question": "Q18",
+        "page_pdf": 10,
+        "traitement": "Relier rotation de came et angle de pale"
+      },
+      {
+        "question": "Q19",
+        "page_pdf": 11,
+        "traitement": "Réduction vers le rotor principal"
+      },
+      {
+        "question": "Q20",
+        "page_pdf": 11,
+        "traitement": "Vitesses des deux rotors"
+      },
+      {
+        "question": "Q21",
+        "page_pdf": 11,
+        "traitement": "Décrire la liaison 9–20"
+      },
+      {
+        "question": "Q22",
+        "page_pdf": 11,
+        "traitement": "Relever les défauts du couple conique et des paliers"
+      },
+      {
+        "question": "Q23",
+        "page_pdf": 11,
+        "traitement": "Corriger la coupe d’ensemble"
+      },
+      {
+        "question": "Q24",
+        "page_pdf": 11,
+        "traitement": "Choisir les roulements d’entrée"
+      },
+      {
+        "question": "Q25",
+        "page_pdf": 12,
+        "traitement": "Dimensionner la puissance continue à 1 800 tr/min"
+      },
+      {
+        "question": "Q26",
+        "page_pdf": 13,
+        "traitement": "Calculer le courant de batterie"
+      },
+      {
+        "question": "Q27",
+        "page_pdf": 13,
+        "traitement": "Autonomie au point de dimensionnement"
+      },
+      {
+        "question": "Q28",
+        "page_pdf": 13,
+        "traitement": "Identifier les constantes de l’autonomie"
+      },
+      {
+        "question": "Q29",
+        "page_pdf": 13,
+        "traitement": "Trouver le maximum et en apprécier la portée"
+      },
+      {
+        "question": "Q30",
+        "page_pdf": 13,
+        "traitement": "Moduler la tension de l’équivalent à courant continu"
+      },
+      {
+        "question": "Q31",
+        "page_pdf": 13,
+        "traitement": "Traiter un codeur incrémental"
+      },
+      {
+        "question": "Q32",
+        "page_pdf": 14,
+        "traitement": "Fonctions et sollicitations du barillet"
+      },
+      {
+        "question": "Q33",
+        "page_pdf": 14,
+        "traitement": "Désigner les surfaces fonctionnelles"
+      },
+      {
+        "question": "Q34",
+        "page_pdf": 14,
+        "traitement": "Lire la cote de taille avec enveloppe"
+      },
+      {
+        "question": "Q35",
+        "page_pdf": 14,
+        "traitement": "Compléter les trois grilles GPS"
+      },
+      {
+        "question": "Q36",
+        "page_pdf": 14,
+        "traitement": "Vérifier le matériau au contact"
+      },
+      {
+        "question": "Q37",
+        "page_pdf": 15,
+        "traitement": "Établir la gamme sur tour X–Z–C à outils tournants"
+      },
+      {
+        "question": "Q38",
+        "page_pdf": 15,
+        "traitement": "Calculer le défaut de cylindricité d’un nuage"
+      },
+      {
+        "question": "Q39",
+        "page_pdf": 15,
+        "traitement": "Tracer le brut de fonderie"
+      },
+      {
+        "question": "Q40",
+        "page_pdf": 15,
+        "traitement": "Comparer les coûts unitaires"
+      }
+    ]
+  }
+}
