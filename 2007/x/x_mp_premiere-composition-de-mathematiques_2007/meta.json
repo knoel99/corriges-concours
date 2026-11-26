@@ -9,7 +9,7 @@
   "questions": 21,
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
-    "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-1_mp_2007.pdf",
+    "sujet": "https://fichiers.wikiprepa.fr/data/x_maths-1_mp_2007.pdf",
     "rapport_jury": "",
     "sha256_sujet": "224ac8c620bd5b3d0fb1be482b5431c93b4d9b19bb8da7480da59e9eac0c31fd"
   },
@@ -31,6 +31,73 @@
       "perimetre": "Rédaction intégrale des deux éditions à partir du sujet. Dérivations normales, noyau de Poisson, convergence uniforme, estimations pondérées avec constantes explicites. Les questions 13.c et 17.b distinguent les représentants continus et les valeurs isolées permises par la continuité par morceaux. Figure des profils du noyau.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Sommes du noyau de Poisson, moyenne et masse ponctuelle limite, primitives périodiques, dérivation de Fourier et distinction entre représentant continu et valeurs isolées dans la norme demandée.",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "agent": "rennes_oraux_economie",
+      "session": "rennes_oraux_economie"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3.a",
+      "3.b",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13.a",
+      "13.b",
+      "13.c",
+      "14",
+      "15",
+      "16",
+      "17.a",
+      "17.b"
+    ],
+    "pages_du_sujet": 3,
+    "pages_pdf_des_questions": {
+      "1": 1,
+      "2": 1,
+      "3.a": 1,
+      "3.b": 2,
+      "4": 2,
+      "5": 2,
+      "6": 2,
+      "7": 2,
+      "8": 2,
+      "9": 2,
+      "10": 2,
+      "11": 2,
+      "12": 2,
+      "13.a": 3,
+      "13.b": 3,
+      "13.c": 3,
+      "14": 3,
+      "15": 3,
+      "16": 3,
+      "17.a": 3,
+      "17.b": 3
+    },
+    "precision": "Sous-questions relevées sur le fac-similé. Le numéro de page désigne le début de chaque demande dans le PDF original."
+  }
 }

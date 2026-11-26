@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Les opérateurs de multiplication par la variable et de division d’un accroissement servent à retrouver la formule de Taylor et les noyaux des opérateurs transposés sur les formes linéaires continues.
 
 ## Première partie. Multiplication et division par la variable
@@ -83,6 +85,8 @@ La convergence est uniforme dans l’intégrande puisque $|xt|\le |x|$ et $h$ es
 Pour $x\ne0$, l’identité $g^{(n)}=xf^{(n)}+nf^{(n-1)}$ donne, puisque $g^{(n)}(0)=nf^{(n-1)}(0)$ par 2.a,
 $$f^{(n)}(x)=h(x)-n\frac{f^{(n-1)}(x)-f^{(n-1)}(0)}x\longrightarrow L-nL/(n+1)=f^{(n)}(0).$$
 On a donc $f\in E_n$ et $g=A_nf$ partout, puisque $g(0)=0$. Avec 4.b, $\operatorname{Im}A_n=F_n$.
+
+L’identité utilisée en zéro se lit directement sur l’intégrale définissant $B_n$. Pour $x=0$, $f^{(n-1)}(0)=g^{(n)}(0)\int_0^1t^{n-1}\,dt=g^{(n)}(0)/n$. Cette étape évite de supposer à l’avance la continuité de $f^{(n)}$.
 
 ## Deuxième partie. L’espace des fonctions lisses
 
@@ -171,7 +175,7 @@ Les questions 7.a et 7.c donnent
 $$g(x)=P_{n-1}(x)+\frac{x^n}{(n-1)!}\int_0^1(1-t)^{n-1}g^{(n)}(xt)dt.$$
 Pour $x\ne0$, le changement $s=xt$ donne le reste $\int_0^x (x-s)^{n-1}g^{(n)}(s)ds/(n-1)!$ avec intégrale orientée si $x<0$. Pour $x=0$ le reste est nul.
 
-![Figure 1 — L’écart entre l’exponentielle et son polynôme quadratique est le reste A³B³g. Ses trois premiers jets en zéro sont nuls.](figures/reste-de-taylor.svg)
+![Figure 1 — L’écart entre l’exponentielle et son polynôme quadratique est le reste A³B³g. En zéro, sa valeur et ses dérivées d’ordres un et deux sont nulles.](figures/reste-de-taylor.svg)
 
 ### Question 8
 
@@ -201,6 +205,8 @@ Si $f_i\to f$ pour $\delta$, toutes les $\pi_n(f_i-f)$ tendent vers zéro par 5.
 #### Solution
 
 Comme $B^nA^n=I$, on a $(A')^n(B')^n=I$ sur $E'$. Donc $\operatorname{Im}(A')^n=E'$ et $\ker(B')^n=0$. Une forme est dans $\ker(A')^n$ exactement si elle s’annule sur les fonctions divisibles par $x^n$. Par 7.c, elle est alors déterminée par ses valeurs sur $1,X,\dots,X^{n-1}$ et s’écrit $\sum_{j<n}\varphi(X^j)\varphi_{0;j}/j!$. Ces évaluations sont continues par 5.b et annulent l’image en question par 8. Elles sont indépendantes en les testant sur $X^j/j!$. Elles forment la base demandée.
+
+Pour vérifier la normalisation, $\varphi_{0;i}(X^j/j!)$ vaut $1$ si $i=j$ et $0$ sinon. Pour $i<j$ il reste en zéro une puissance strictement positive de $X$, et pour $i>j$ la dérivée est identiquement nulle.
 
 ### Question 11
 
@@ -241,3 +247,5 @@ Pour chaque $n$, les dérivées du polynôme $Q$ sont bornées sur $[-1,1]$ et L
 Supposons $Q\ne0$. Les facteurs $x-\beta$ dont la racine est hors de $[-1,1]$ ont un inverse lisse sur cet intervalle. Ils induisent des automorphismes du dual (Leibniz pour la multiplication par l’inverse). Pour les racines distinctes $a$ dans l’intervalle, de multiplicités $m_a$, les opérateurs $(T'_a)^{m_a}$ sont surjectifs par le résultat admis. Donc $T'_Q$ est surjectif et son image est $E'$.
 
 Le noyau est engendré par les $\varphi_{a;j}$ pour $0\le j<m_a$. En effet, sur les jets au point $a$, multiplier par $(x-b)^{m_b}$ avec $a\ne b$ donne par Leibniz une matrice triangulaire de diagonale $(a-b)^{m_b}\ne0$. Cela vérifie la condition de 12 sur chacun des noyaux et donne la somme. Les familles sont indépendantes ensemble : pour les tester à un point $a$, prendre une fonction égale à $(x-a)^k/k!$ près de $a$, nulle près des autres racines, en utilisant une coupure lisse ; ses jets aux racines isolent le coefficient voulu. Ceci vaut également aux extrémités de l’intervalle. S’il n’y a aucune racine dans l’intervalle, le noyau est nul. Pour le polynôme identiquement nul, l’image est $\{0\}$ et le noyau est $E'$ tout entier : toute base algébrique de cet espace est alors une base du noyau.
+
+Par exemple, pour $Q(X)=(X-a)^2(X-b)$ avec $a,b\in[-1,1]$ distincts, le noyau a pour base l’évaluation en $a$, l’évaluation de la dérivée en $a$ et l’évaluation en $b$. Les multiplicités comptent donc les ordres de dérivation à conserver, y compris pour une racine située au bord.

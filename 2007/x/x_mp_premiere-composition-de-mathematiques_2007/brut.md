@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La série de Fourier du noyau de Poisson fournit une approximation régulière des fonctions périodiques. Le paramètre $t>0$ fixe la largeur du noyau et le poids quadratique des coefficients détermine la vitesse de convergence.
 
 ## Première partie. Le noyau de Poisson périodique
@@ -39,6 +41,8 @@ Posons $r=e^{-t}\in(0,1)$. Alors $P=(1-re^{ix})^{-1}+(1-re^{-ix})^{-1}-1$. En me
 ### Question 7
 
 Pour $x=0$, $P_t(0)=(1+r)/(1-r)\to+\infty$. Pour $0<|x|\le\pi$, le dénominateur tend vers $2(1-\cos x)>0$ et le numérateur vers zéro. Si $a\le |x|\le\pi$, on a $1-2r\cos x+r^2=(1-r)^2+2r(1-\cos x)\ge2r(1-\cos a)$. Cette borne indépendante de $x$ donne la convergence uniforme vers zéro sur l’ensemble demandé.
+
+Pour contrôler l’échelle de la figure, au centre $P_t(0)=(1+e^{-t})/(1-e^{-t})\sim2/t$. À distance fixe du centre le noyau tend vers zéro, alors que l’intégrale sur une période reste égale à $2\pi$.
 
 ![Figure 1 — Trois profils du noyau de Poisson de même intégrale 2π. La masse se concentre autour de zéro lorsque le paramètre t décroît.](figures/noyau-de-poisson.svg)
 
@@ -78,6 +82,8 @@ Pour $k=0$, Parseval donne la finitude de $\sum|\widehat f(n)|^2$. Pour $k\ge1$,
 
 Pour $k=0$, la dent de scie $g(x)=x$ sur $(-\pi,\pi)$ prolongée périodiquement appartient à $E_0$ par Parseval mais a un saut. Sa moyenne est nulle et ses coefficients pour $n\ne0$ sont de taille $1/|n|$, par intégration par parties. Pour $k\ge1$, prendre $k$ primitives périodiques successives, à chaque fois de moyenne nulle (soustraire une constante). Le résultat $f_k$ a des coefficients de taille $1/|n|^{k+1}$ : il est dans $E_k$ car la série pondérée se compare à $\sum n^{-2}$. Mais sur les intervalles de continuité sa dérivée d’ordre $k$ est la dent de scie, dont les deux limites diffèrent au raccord. Ainsi $f_k$ ne peut être de classe $C^k$.
 
+La primitive périodique dont on a besoin est explicite. Pour $h$ de moyenne nulle, $H(x)=\int_{-\pi}^x h(u)\,du$ prend la même valeur aux deux extrémités de la période. On soustrait sa moyenne avant de recommencer. L’intégration par parties donne alors $\widehat H(n)=\widehat h(n)/(in)$ pour chaque $n\ne0$.
+
 ### Question 13.c
 
 Posons $A^2=\sum_n(1+n^2)^\alpha|\widehat f(n)|^2$. Pour $0\le p\le k$, Cauchy–Schwarz donne, pour les indices non nuls,
@@ -107,3 +113,5 @@ Posons $r=2-2\alpha\ge0$. En appliquant 16 avec paramètre $2t\le2\tau$, on peut
 ### Question 17.b
 
 Pour $0<s<t\le\tau$, intégrer 17.a donne $\|\Phi_{f,t}-\Phi_{f,s}\|_\infty\le C''(t^{\alpha-1/2}-s^{\alpha-1/2})/(\alpha-1/2)$. Par 13.c, $f$ possède un représentant continu $g$ qui a les mêmes coefficients. Par 11, $\Phi_{f,s}=\Phi_{g,s}\to g$ uniformément. D’où l’inégalité demandée pour ce représentant avec $C'''=C''/(\alpha-1/2)$. Elle vaut aussi pour la norme essentielle avec $f$. Pour une norme suprême point par point, si l’on garde des valeurs isolées arbitraires de $f$, le contre-exemple de 13.c donne $\Phi=0$ et $\|\Phi-f\|_\infty=1$ pour tout $t$ ; aucun tel $C'''$ ne peut alors convenir.
+
+L’intégrabilité de $t^{\alpha-3/2}$ au voisinage de zéro utilise strictement $\alpha>1/2$. À l’extrémité $\alpha=1$ autorisée, l’exposant de la majoration finale est donc $1/2$. Le supremum du sujet impose de conserver la précision de 13.c sur les valeurs aux points de discontinuité.
