@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le calcul se fait d’abord coefficient par coefficient. Les convergents transforment ensuite une excellente approximation d’une racine carrée en une équation polynomiale. Celle-ci permet de reconnaître une primitive logarithmique.
 
 ## Partie 1 · Calcul dans les séries de Laurent
@@ -11,6 +13,8 @@ Le calcul se fait d’abord coefficient par coefficient. Les convergents transfo
 ### Question 1.1 · Valuations et convolution
 
 Regarder le premier indice possible pour chacune des opérations. Dans une addition, le plus petit des deux indices initiaux reste visible sauf si les deux séries commencent ensemble et se compensent. Dans un produit, les indices doivent vérifier simultanément $j\ge r$ et $i-j\ge s$. Cela laisse au plus $i-r-s+1$ termes si cet entier est positif, aucun sinon. À la première diagonale atteinte, il n’y a qu’un produit non nul. Une série non nulle se recentre à l’indice zéro en ôtant le facteur $z^r$.
+
+La borne sur le nombre de produits est atteinte, par exemple lorsque $a_j=1$ pour tout $j\ge r$ et $b_j=1$ pour tout $j\ge s$. Il s’agit du nombre de termes non nuls avant leur addition, même si leur somme s’annule dans le corps $K$. Si l’une des séries est nulle, tous ces produits sont nuls et la somme des séries est l’autre série.
 
 ### Question 1.2 · Structure d’anneau
 
@@ -86,7 +90,7 @@ Ici les degrés des dénominateurs augmentent au moins de un à chaque étage. L
 
 ### Question 3.3 · Développer une série irrationnelle
 
-Ôter la partie polynomiale laisse des puissances positives de $z$. Le reste ne peut s’annuler car l’algorithme donnerait alors une expression rationnelle finie de $F$. Son inverse commence donc par une puissance négative, assurant un quotient polynomial de degré positif. Replacer la queue réelle de l’expansion après les $k+1$ premiers étages remplace une variable de la matrice des convergents par $\alpha_{k+1}$. Soustraire $p_k/q_k$ donne un numérateur constant $\pm1$. La valuation des deux facteurs du dénominateur vaut au total $-d_k-d_{k+1}$. Cette erreur tend bien vers zéro au sens formel.
+Ôter la partie polynomiale laisse des puissances positives de $z$. Le reste ne peut s’annuler car l’algorithme donnerait alors une expression rationnelle finie de $F$. Son inverse commence donc par une puissance négative, assurant un quotient polynomial de degré positif. Replacer le quotient complet de la série formelle après les $k+1$ premiers étages remplace une variable de la matrice des convergents par $\alpha_{k+1}$. Soustraire $p_k/q_k$ donne un numérateur constant $\pm1$. La valuation des deux facteurs du dénominateur vaut au total $-d_k-d_{k+1}$. Cette erreur tend bien vers zéro au sens formel.
 
 ### Question 3.4 · Meilleure approximation
 

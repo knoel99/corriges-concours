@@ -45,6 +45,56 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Les 26 questions de majorisation, matrices stochastiques, colorations, tournois et géométrie. Construction du transfert en conservant le tri, preuve du critère des mariages, correction de Tournoi, hexagone projeté et analyse des polygones lorsque le centre est extérieur."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture des 26 questions sur le sujet ULC 523 et son rapport. Contrôle des transferts de majorisation, des sommets de l’hexagone, de la preuve par couplage, des 2 240 listes admissibles de scores de tournoi jusqu’à dix équipes et des trois illustrations. Détail de la dernière unité d’un échange de couleurs et justification de la stricte minimalité de l’aire et du moment sur un intervalle de rayons."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7",
+      "2.8",
+      "2.9",
+      "2.10",
+      "2.11",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.6"
+    ],
+    "precision": "Les 26 repères des quatre parties suivent le cahier ULC 523 dans les deux éditions.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "6b5eb001605cea4d93cb1f16aa784535277977733ededf1e14e0d5f269755870",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Relecture des 26 questions sur le sujet ULC 523 et son rapport. Contrôle des transferts de majorisation, des sommets de l’hexagone, de la preuve par couplage, des 2 240 listes admissibles de scores de tournoi jusqu’à dix équipes et des trois illustrations. Détail de la dernière unité d’un échange de couleurs et justification de la stricte minimalité de l’aire et du moment sur un intervalle de rayons.",
+      "commit_redaction_anterieure": "eb6cf94ef44eb65c09075b022ff03c21287c2add"
+    }
+  }
 }
