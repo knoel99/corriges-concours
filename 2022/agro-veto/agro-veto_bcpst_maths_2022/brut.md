@@ -4,6 +4,10 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Le sujet donne dix questions sur l’urne et dix-neuf sur l’équation différentielle. Chaque question 8 comporte des sous-questions. [Sujet officiel](https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/sujet2022.pdf) · [Rapport classé en 2022](https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/rapport2022_math_mullaert.pdf)
+
 ## Exercice 1. Vider une urne
 
 ### 1. Deux boules
@@ -18,7 +22,7 @@ P(X_3=1)=\tfrac13,\qquad P(X_3=2)=\tfrac13+\tfrac16=\tfrac12,\qquad P(X_3=3)=\tf
 $$
 L’espérance vaut $1/3+2/2+3/6=11/6$.
 
-![Figure 1 — Décomposition des chemins de tirage pour trois boules.](figures/arbre-trois-boules.svg)
+![Décomposition des chemins de tirage pour trois boules.](figures/arbre-trois-boules.svg)
 
 ### 3. Support
 
@@ -35,6 +39,8 @@ $$
 P(X_n=k)=\frac1n\sum_{i=2}^{n}P(X_{i-1}=k-1).
 $$
 
+Prenons quatre boules pour contrôler le conditionnement sur le premier tirage. Dans l’ordre des durées $1,2,3,4$, les probabilités sont $1/4,11/24,1/4,1/24$. Elles totalisent un et donnent une espérance $25/12$, égale à $1+1/2+1/3+1/4$.
+
 ### 6. Accroissement de l’espérance
 
 Écrivons $m_j=E(X_j)$. Le même conditionnement, en incluant cette fois $i=1$, donne $nm_n=\sum_{i=1}^n(1+m_{i-1})=n+\sum_{j=0}^{n-1}m_j$. À l’ordre $n+1$, le membre de droite gagne $1+m_n$. Ainsi $(n+1)m_{n+1}-nm_n=1+m_n$, soit $m_{n+1}-m_n=1/(n+1)$.
@@ -45,16 +51,22 @@ En sommant les accroissements depuis $m_1=1$, on obtient $E(X_n)=H_n$, avec $H_n
 
 ### 8. Comparaison intégrale
 
-**a)** Pour $k\ge2$, $t\mapsto 1/t$ est décroissante sur les deux intervalles d’intégration, chacun de longueur 1. Elle est minorée par $1/k$ sur $[k-1,k]$ et majorée par $1/k$ sur $[k,k+1]$. Par intégration,
+#### 8.a · Les deux rectangles
+
+Pour $k\ge2$, $t\mapsto 1/t$ est décroissante sur les deux intervalles d’intégration, chacun de longueur 1. Elle est minorée par $1/k$ sur $[k-1,k]$ et majorée par $1/k$ sur $[k,k+1]$. Par intégration,
 $$
 \int_k^{k+1}\frac{dt}{t}\le\frac1k\le\int_{k-1}^k\frac{dt}{t}.
 $$
 
-**b)** En sommant de $k=2$ à $n$, on trouve $\log(n+1)-\log 2\le H_n-1\le\log n$. Divisons par $\log n>0$. Comme $\log(n+1)=\log n+\log(1+1/n)$, les deux bornes de $H_n/\log n$ tendent vers 1.
+#### 8.b · L’équivalent de la somme harmonique
 
-**c)** Avec la question 7, $E(X_n)\sim\log n$.
+En sommant de $k=2$ à $n$, on trouve $\log(n+1)-\log 2\le H_n-1\le\log n$. Divisons par $\log n>0$. Comme $\log(n+1)=\log n+\log(1+1/n)$, les deux bornes de $H_n/\log n$ tendent vers 1.
 
-![Figure 2 — Le même rectangle de hauteur 1/k encadre les intégrales à droite et à gauche de k.](figures/rectangles-integrales.svg)
+#### 8.c · L’équivalent de l’espérance
+
+Avec la question 7, $E(X_n)\sim\log n$.
+
+![Le même rectangle de hauteur 1/k encadre les intégrales à droite et à gauche de k.](figures/rectangles-integrales.svg)
 
 ### 9. Second moment
 
@@ -83,7 +95,7 @@ L’équation caractéristique est $r^2=-\lambda$. Avec $a,b\in\mathbb R$ arbitr
 - Si $\lambda=0$, $f(t)=a+bt$.
 - Si $\lambda>0$, $f(t)=a\cos(\omega t)+b\sin(\omega t)$, avec $\omega=\sqrt{\lambda}$.
 
-### 2. Conditions $f(0)=f(1)=0$
+### 2. Conditions aux deux bords
 
 Pour $\lambda<0$, $b=-a$ puis $a(e^\omega-e^{-\omega})=0$. Comme $\omega>0$, $a=b=0$. Pour $\lambda=0$, les deux conditions imposent également $a=b=0$. Pour $\lambda>0$, $a=0$ puis $b\sin\omega=0$. Si $\lambda=(j\pi)^2$ avec $j\ge1$ entier, les solutions sont toutes les fonctions $t\mapsto b\sin(j\pi t)$. Pour toute autre valeur de $\lambda$, la seule solution est nulle.
 
@@ -97,6 +109,8 @@ M=M_{N-1,\lambda}=A_{N-1}+(\lambda/N^2-2)I_{N-1}.
 $$
 Pour $N=2$, il ne reste qu’une ligne et $A_1=(0)$. Le noyau porte sur les seules inconnues intérieures.
 
+La note attachée à cette question dans le PDF officiel rappelle les deux conditions $x_0=x_N=0$. Elles sont nécessaires pour la réciproque puisque le vecteur intérieur ne contient aucune information sur les bords.
+
 ### 4. Paramètres admissibles
 
 Un vecteur intérieur non nul résout $MX=0$ si et seulement si $A_{N-1}X=(2-\lambda/N^2)X$. Par définition d’une valeur propre,
@@ -108,7 +122,7 @@ $$
 
 La matrice $A_n$ est réelle symétrique pour tout $n\ge1$. Le théorème spectral fournit une base orthonormée de vecteurs propres réels. La matrice $A_{N-1}$ a au plus $N-1$ valeurs propres distinctes. L’application $\mu\mapsto N^2(2-\mu)$ est injective, donc $|\Lambda|\le N-1$.
 
-### 6. La matrice $A_3$
+### 6. La matrice à trois lignes
 
 Le produit $A_3(a,b,c)^{\mathsf T}=(b,a+c,b)^{\mathsf T}$ permet de vérifier directement les trois colonnes ci-dessous. On pose
 $$
@@ -123,17 +137,27 @@ Si $AV=\mu V$ avec $A=A_{N-1}$ et $V\ne0$, posons $v_0=v_N=0$ et prenons pour $v
 
 ### 8. Racines caractéristiques
 
-**a)** Si $|\mu|>2$, les deux racines réelles distinctes $r,s$ de $z^2-\mu z+1$ ont produit 1, donc même signe et modules différents. La condition $u_0=0$ ramène la solution générale à $u_n=a(r^n-s^n)$. Comme $|r|^N\ne|s|^N$, $u_N=0$ impose $a=0$.
+#### 8.a · Deux racines réelles distinctes
 
-**b)** Si $|\mu|=2$, la racine double $r=\mu/2$ vaut $1$ ou $-1$. La formule $u_n=(a+bn)r^n$ donne $a=0$ puis $bNr^N=0$, donc $b=0$.
+Si $|\mu|>2$, les deux racines réelles distinctes $r,s$ de $z^2-\mu z+1$ ont produit 1, donc même signe et modules différents. La condition $u_0=0$ ramène la solution générale à $u_n=a(r^n-s^n)$. Comme $|r|^N\ne|s|^N$, $u_N=0$ impose $a=0$.
 
-**c.i)** Pour $|\mu|<2$, le discriminant est négatif. Les racines sont conjuguées et leur produit est 1, donc leur module vaut 1. On peut les écrire $e^{\pm i\theta}$ pour l’unique $\theta\in(0,\pi)$ tel que $2\cos\theta=\mu$.
+#### 8.b · Une racine double
 
-**c.ii)** Une solution réelle s’écrit $a\cos(n\theta)+b\sin(n\theta)$. Le premier bord impose $a=0$. Comme $\sin\theta\ne0$, une solution non nulle existe exactement lorsque $\sin(N\theta)=0$, soit $\theta=j\pi/N$ pour $j=1,\ldots,N-1$.
+Si $|\mu|=2$, la racine double $r=\mu/2$ vaut $1$ ou $-1$. La formule $u_n=(a+bn)r^n$ donne $a=0$ puis $bNr^N=0$, donc $b=0$.
 
-**c.iii)** La décroissance stricte de $\cos$ sur $[0,\pi]$ rend les $2\cos(j\pi/N)$ deux à deux distincts. Chacun fournit le vecteur propre de composantes $\sin(kj\pi/N)$ pour $1\le k<N$. On obtient exactement $N-1$ valeurs propres.
+#### 8.c.i · Deux racines conjuguées
 
-![Figure 3 — Trois modes du maillage à six intervalles vérifient les deux conditions au bord.](figures/modes-du-maillage.svg)
+Pour $|\mu|<2$, le discriminant est négatif. Les racines sont conjuguées et leur produit est 1, donc leur module vaut 1. On peut les écrire $e^{\pm i\theta}$ pour l’unique $\theta\in(0,\pi)$ tel que $2\cos\theta=\mu$.
+
+#### 8.c.ii · Les angles admissibles
+
+Une solution réelle s’écrit $a\cos(n\theta)+b\sin(n\theta)$. Le premier bord impose $a=0$. Comme $\sin\theta\ne0$, une solution non nulle existe exactement lorsque $\sin(N\theta)=0$, soit $\theta=j\pi/N$ pour $j=1,\ldots,N-1$.
+
+#### 8.c.iii · Le nombre de valeurs propres
+
+La décroissance stricte de $\cos$ sur $[0,\pi]$ rend les $2\cos(j\pi/N)$ deux à deux distincts. Chacun fournit le vecteur propre de composantes $\sin(kj\pi/N)$ pour $1\le k<N$. On obtient exactement $N-1$ valeurs propres.
+
+![Trois modes du maillage à six intervalles vérifient les deux conditions au bord.](figures/modes-du-maillage.svg)
 
 ### 9. Ensemble discret
 
@@ -158,7 +182,7 @@ Pour tout entier $k\ge1$, le $k$-ième paramètre discret existe dès $N>k$ et t
 
 Avec la normalisation de la question 3, la discrétisation de $f''+\lambda f=b$ donne $MX=B_{\mathrm{phys}}/N^2$, où $(B_{\mathrm{phys}})_k=b(k/N)$. La page 4 du sujet juxtapose cette matrice normalisée et le second membre sans facteur. Dans les questions 12 à 19, $B$ désigne le second membre du système algébrique $MX=B$, conformément aux valeurs propres $\mu_k$ données. Le facteur commun $1/N^2$ s’élimine dans l’erreur relative du second membre.
 
-### 12. Unicité pour $\lambda<0$
+### 12. Unicité pour un paramètre négatif
 
 Pour $1\le k<N$, $\mu_k=\lambda/N^2-2+2\cos(k\pi/N)<0$, car $\cos(k\pi/N)<1$. Donc $M$ est inversible. Pour tout $B$, l’unique vecteur intérieur est $M^{-1}B$, et les deux valeurs aux bords sont fixées à zéro.
 
@@ -166,7 +190,7 @@ Pour $1\le k<N$, $\mu_k=\lambda/N^2-2+2\cos(k\pi/N)<0$, car $\cos(k\pi/N)<1$. Do
 
 Si $D=\operatorname{diag}(d_1,\ldots,d_{N-1})$, alors $(DX)_k=d_kx_k$. D’où $\|DX\|=\big(\sum_{k=1}^{N-1}d_k^2x_k^2\big)^{1/2}$.
 
-### 14. Majoration de la norme de $B$
+### 14. Majoration de la norme de la donnée
 
 Par le théorème spectral, $M=QDQ^{\mathsf T}$ avec $Q$ orthogonale et $D=\operatorname{diag}(\mu_1,\ldots,\mu_{N-1})$. Le cosinus décroît, donc $0<-\mu_1\le-\mu_k\le-\mu_{N-1}$. Posons $Y=Q^{\mathsf T}X$. Par conservation de la norme sous $Q$ et par la question 13,
 $$
@@ -200,10 +224,14 @@ $$
 
 Soient $q_1,q_{N-1}$ deux vecteurs propres unitaires pour $\mu_1,\mu_{N-1}$ respectivement (le même vecteur convient si $N=2$). Prenons $X=q_{N-1}$, $\widetilde X=q_{N-1}+\varepsilon q_1$ avec $\varepsilon\ne0$, puis $B=MX$ et $\widetilde B=M\widetilde X$. Alors $B=\mu_{N-1}q_{N-1}\ne0$ et $\widetilde B-B=\varepsilon\mu_1 q_1\ne0$. L’erreur relative de solution est $|\varepsilon|$, celle des données est $|\varepsilon|\,|\mu_1|/|\mu_{N-1}|$. L’inégalité de la question 16 est donc une égalité.
 
+Pour un contrôle chiffré, prenons $N=3$ et $\lambda=-1$. Les valeurs propres extrêmes de $M$ sont $-10/9$ et $-28/9$. Les directions $(1,1)$ et $(1,-1)$ sont orthogonales. Une perturbation selon la première direction, autour d’une solution alignée avec la seconde, donne un rapport exact de $14/5$ entre les deux erreurs relatives.
+
 ### 19. Conséquence numérique
 
 Pour les directions de la question 18, une erreur relative de taille $\delta$ sur les données produit une erreur relative de taille $(\mu_{N-1}/\mu_1)\delta$ sur la solution. Ce facteur, le conditionnement euclidien de $M$, croît comme $N^2$. Sur des maillages fins, des données arrondies ou mesurées avec une précision finie peuvent donc conduire à une forte perte de précision relative, même si le système inversible est résolu exactement.
 
-![Figure 4 — Pour λ = −1, le facteur maximal d’amplification croît avec le nombre d’intervalles.](figures/amplification-des-erreurs.svg)
+![Pour λ = −1, le facteur maximal d’amplification croît avec le nombre d’intervalles.](figures/amplification-des-erreurs.svg)
+
+Avec $\lambda=-1$, pour $N=10$ le facteur vaut environ $36{,}26$, et pour $N=100$ environ $3679{,}4$. Il s’agit du pire cas démontré à la question 18. Une perturbation alignée sur une autre direction peut subir une amplification plus faible.
 
 Le rapport classé par la banque avec les documents de 2022 porte « session 2021 » en couverture. Ses commentaires décrivent l’urne, la matrice et les estimations de cette épreuve. La question 19 figure sur la dernière page du sujet. [Sujet, p. 2–5](https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/sujet2022.pdf) · [Rapport, p. 2–4](https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/rapport2022_math_mullaert.pdf)

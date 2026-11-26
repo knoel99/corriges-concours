@@ -4,6 +4,10 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Le sujet donne dix questions sur l’urne et dix-neuf sur l’équation différentielle. Chaque question 8 comporte des sous-questions. [Sujet officiel](https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/sujet2022.pdf) · [Rapport classé en 2022](https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/rapport2022_math_mullaert.pdf)
+
 ## Exercice 1. Un tirage détermine la taille du problème restant
 
 ### 1. Commencer par les deux issues possibles
@@ -14,7 +18,7 @@ Imaginez les boules 1 et 2. Le numéro 1 fait disparaître tout le contenu, le 2
 
 Sur le dessin, les fractions le long des branches sont conditionnelles. Multipliez-les sur un chemin, puis additionnez les probabilités de tous les chemins de même durée.
 
-![Figure 1 — Les chemins 2 puis 1 et 3 puis 1 ont tous deux une durée de deux tirages.](figures/arbre-trois-boules.svg)
+![Les chemins 2 puis 1 et 3 puis 1 ont tous deux une durée de deux tirages.](figures/arbre-trois-boules.svg)
 
 Les feuilles de durée 1, 2, 3 ont respectivement pour poids totaux $1/3$, $1/3+(1/3)(1/2)=1/2$, $(1/3)(1/2)(1)=1/6$. La somme vaut 1. Le calcul pondéré donne $E(X_3)=1(1/3)+2(1/2)+3(1/6)=11/6$.
 
@@ -33,6 +37,8 @@ $$
 p_n(k)=\frac1n\sum_{i=2}^n p_{i-1}(k-1),\qquad p_m(s)=P(X_m=s).
 $$
 
+Prenons quatre boules pour contrôler le conditionnement sur le premier tirage. Dans l’ordre des durées $1,2,3,4$, les probabilités sont $1/4,11/24,1/4,1/24$. Elles totalisent un et donnent une espérance $25/12$, égale à $1+1/2+1/3+1/4$.
+
 ### 6. Comparer deux lignes de probabilités
 
 Multipliez la formule précédente par $n$ et écrivez-la ensuite pour $n+1$. Toutes les contributions anciennes s’annulent par soustraction, ce qui donne
@@ -47,16 +53,22 @@ Avec $m_n=E(X_n)$, dépliez $m_n=m_2+(m_3-m_2)+\cdots+(m_n-m_{n-1})$. Comme $m_2
 
 ### 8. Mesurer la taille de la somme
 
-**a)** Un intervalle de largeur 1 convertit la hauteur $1/k$ en aire $1/k$. À gauche de $k$ la courbe est au-dessus de cette hauteur, à droite elle est au-dessous, car $t\mapsto1/t$ décroît pour $t>0$. Voilà pourquoi $k\ge2$ garantit les deux comparaisons sur des intervalles positifs.
+#### 8.a · Les deux rectangles
+
+Un intervalle de largeur 1 convertit la hauteur $1/k$ en aire $1/k$. À gauche de $k$ la courbe est au-dessus de cette hauteur, à droite elle est au-dessous, car $t\mapsto1/t$ décroît pour $t>0$. Voilà pourquoi $k\ge2$ garantit les deux comparaisons sur des intervalles positifs.
 $$
 \int_k^{k+1}\frac{dt}{t}\le\frac1k\le\int_{k-1}^k\frac{dt}{t}.
 $$
 
-![Figure 2 — Comparer les deux intervalles voisins avant de sommer les aires.](figures/rectangles-integrales.svg)
+![Comparer les deux intervalles voisins avant de sommer les aires.](figures/rectangles-integrales.svg)
 
-**b)** Additionnez de $2$ à $n$ pour accoler les intervalles. La somme $H_n=\sum_{k=1}^n1/k$ vérifie $1+\log(n+1)-\log2\le H_n\le1+\log n$. Pour obtenir un équivalent, divisez tout par $\log n$, positif dès $n\ge2$. Le terme constant divisé par $\log n$ s’annule à la limite et $\log(n+1)/\log n=1+\log(1+1/n)/\log n\to1$. Le quotient $H_n/\log n$ tend donc vers 1.
+#### 8.b · L’équivalent de la somme harmonique
 
-**c)** La somme comparée est précisément l’espérance calculée à la question 7. Ainsi $E(X_n)\sim\log n$.
+Additionnez de $2$ à $n$ pour accoler les intervalles. La somme $H_n=\sum_{k=1}^n1/k$ vérifie $1+\log(n+1)-\log2\le H_n\le1+\log n$. Pour obtenir un équivalent, divisez tout par $\log n$, positif dès $n\ge2$. Le terme constant divisé par $\log n$ s’annule à la limite et $\log(n+1)/\log n=1+\log(1+1/n)/\log n\to1$. Le quotient $H_n/\log n$ tend donc vers 1.
+
+#### 8.c · L’équivalent de l’espérance
+
+La somme comparée est précisément l’espérance calculée à la question 7. Ainsi $E(X_n)\sim\log n$.
 
 ### 9. Reprendre le décalage avec un carré
 
@@ -74,7 +86,7 @@ Partir de l’urne à une boule, de durée certaine, donne $V(X_n)=\sum_{j=1}^n(
 
 ### I. Trouver les vibrations du problème continu
 
-### 1. Partir du signe de $-\lambda$
+### 1. Partir du signe de l’opposé de lambda
 
 Essayez $e^{rt}$. La condition est $r^2=-\lambda$. Deux racines réelles opposées donnent la famille $a e^{\sqrt{-\lambda}\,t}+b e^{-\sqrt{-\lambda}\,t}$ pour $\lambda<0$. La racine double nulle donne $a+bt$ pour $\lambda=0$. Deux racines imaginaires conjuguées donnent les solutions réelles $a\cos(\sqrt\lambda\,t)+b\sin(\sqrt\lambda\,t)$ pour $\lambda>0$. Dans chaque famille, $a,b$ sont deux constantes réelles.
 
@@ -88,6 +100,8 @@ Essayez $e^{rt}$. La condition est $r^2=-\lambda$. Deux racines réelles opposé
 
 Pour $1\le k<N$, les coefficients des trois inconnues $x_{k-1},x_k,x_{k+1}$ sont $1,\lambda/N^2-2,1$ après division par $N^2$. Aux deux extrémités de la liste, un voisin vaut déjà zéro. Ainsi, en posant $A=A_{N-1}$ et $d=\lambda/N^2-2$, l’équation des inconnues intérieures est $(A+dI)X=0$. Avec $N=3$, par exemple, elle se lit $dx_1+x_2=0$, $x_1+dx_2=0$. Restituez les deux valeurs $x_0=x_N=0$ après le calcul du noyau.
 
+La note attachée à cette question dans le PDF officiel rappelle les deux conditions $x_0=x_N=0$. Elles sont nécessaires pour la réciproque puisque le vecteur intérieur ne contient aucune information sur les bords.
+
 ### 4. Faire apparaître la valeur propre
 
 Transférez $dX$ au second membre. Il existe $X\ne0$ exactement lorsque $-d=2-\lambda/N^2$ est valeur propre de $A$. Chaque valeur propre $\mu$ de $A$ donne donc un paramètre $\lambda=N^2(2-\mu)$, et réciproquement.
@@ -96,7 +110,7 @@ Transférez $dX$ au second membre. Il existe $X\ne0$ exactement lorsque $-d=2-\l
 
 Regardez les entrées de part et d’autre de la diagonale. Elles se correspondent et sont réelles, donc le théorème spectral s’applique à tout $A_n$ et garantit sa diagonalisabilité dans une base orthonormée réelle. La base de $A_{N-1}$ ne comporte que $N-1$ vecteurs. Il y a au plus autant de valeurs propres distinctes et, par la correspondance de la question 4, au plus autant de paramètres dans $\Lambda$.
 
-### 6. Construire les colonnes de $P$
+### 6. Construire les colonnes de la matrice de passage
 
 Appliqué à une colonne $(a,b,c)^{\mathsf T}$, $A_3$ donne $(b,a+c,b)^{\mathsf T}$. Sur la droite $a=-c$, $b=0$, le vecteur $(1,0,-1)^{\mathsf T}$ donne la valeur propre zéro. Cherchez ensuite une colonne $(1,b,1)^{\mathsf T}$, symétrique entre ses deux extrémités. Son image est $(b,2,b)^{\mathsf T}$, colinéaire à la colonne initiale pour $b^2=2$, avec multiplicateur $b$. Rassemblez les vecteurs propres dans le même ordre que les valeurs propres :
 $$
@@ -110,17 +124,27 @@ Fixez $v_0=0$. Dès que $v_1$ est donné, la règle $v_{n+2}=\mu v_{n+1}-v_n$ d�
 
 ### 8. Chercher les suites qui s’annulent deux fois
 
-**a)** Lorsque $|\mu|>2$, le polynôme caractéristique $z^2-\mu z+1$ a deux racines $r,s$ réelles. Elles sont distinctes et de même signe puisque $rs=1$, donc de modules distincts. Le bord initial transforme $a r^n+b s^n$ en $a(r^n-s^n)$. Même si $N$ est pair, les modules distincts empêchent que $r^N=s^N$. Le bord final impose $a=0$.
+#### 8.a · Deux racines réelles distinctes
 
-**b)** Lorsque $\mu=2$ ou $\mu=-2$, la racine double $r=\mu/2$ donne $u_n=(a+bn)r^n$. Testez séparément $n=0$ et $n=N$. Vous trouvez $a=0$, puis $b=0$ puisque $Nr^N\ne0$.
+Lorsque $|\mu|>2$, le polynôme caractéristique $z^2-\mu z+1$ a deux racines $r,s$ réelles. Elles sont distinctes et de même signe puisque $rs=1$, donc de modules distincts. Le bord initial transforme $a r^n+b s^n$ en $a(r^n-s^n)$. Même si $N$ est pair, les modules distincts empêchent que $r^N=s^N$. Le bord final impose $a=0$.
 
-**c.i)** Si $|\mu|<2$, le discriminant $\mu^2-4$ est négatif. Les racines sont conjuguées, leur produit est à la fois 1 et le carré de leur module. Choisissez l’angle $\theta\in(0,\pi)$ de la racine de partie imaginaire positive. La somme des racines donne $\mu=2\cos\theta$.
+#### 8.b · Une racine double
 
-**c.ii)** Le bord $u_0=0$ élimine le cosinus de l’expression réelle $u_n=a\cos(n\theta)+b\sin(n\theta)$. Il reste la possibilité d’un $b\ne0$ lorsque $N\theta$ est un multiple de $\pi$. Cela donne $\theta=j\pi/N$, $1\le j<N$. Pour chacun de ces choix, le premier terme intérieur $b\sin\theta$ est bien non nul.
+Lorsque $\mu=2$ ou $\mu=-2$, la racine double $r=\mu/2$ donne $u_n=(a+bn)r^n$. Testez séparément $n=0$ et $n=N$. Vous trouvez $a=0$, puis $b=0$ puisque $Nr^N\ne0$.
 
-**c.iii)** Le cosinus décroît strictement entre 0 et $\pi$. Les valeurs $2\cos(j\pi/N)$ sont donc toutes différentes et la question 5 empêche d’en trouver davantage. Le dessin compare les suites associées, en reliant les nœuds uniquement pour la lecture.
+#### 8.c.i · Deux racines conjuguées
 
-![Figure 3 — Compter les demi-ondes entre les bords et retrouver l’indice j.](figures/modes-du-maillage.svg)
+Si $|\mu|<2$, le discriminant $\mu^2-4$ est négatif. Les racines sont conjuguées, leur produit est à la fois 1 et le carré de leur module. Choisissez l’angle $\theta\in(0,\pi)$ de la racine de partie imaginaire positive. La somme des racines donne $\mu=2\cos\theta$.
+
+#### 8.c.ii · Les angles admissibles
+
+Le bord $u_0=0$ élimine le cosinus de l’expression réelle $u_n=a\cos(n\theta)+b\sin(n\theta)$. Il reste la possibilité d’un $b\ne0$ lorsque $N\theta$ est un multiple de $\pi$. Cela donne $\theta=j\pi/N$, $1\le j<N$. Pour chacun de ces choix, le premier terme intérieur $b\sin\theta$ est bien non nul.
+
+#### 8.c.iii · Le nombre de valeurs propres
+
+Le cosinus décroît strictement entre 0 et $\pi$. Les valeurs $2\cos(j\pi/N)$ sont donc toutes différentes et la question 5 empêche d’en trouver davantage. Le dessin compare les suites associées, en reliant les nœuds uniquement pour la lecture.
+
+![Compter les demi-ondes entre les bords et retrouver l’indice j.](figures/modes-du-maillage.svg)
 
 ### 9. Revenir au paramètre de départ
 
@@ -184,10 +208,14 @@ $$
 $$
 Le rapport des deux erreurs atteint exactement la constante de 16, y compris si $N=2$, où les deux directions coïncident.
 
+Pour un contrôle chiffré, prenons $N=3$ et $\lambda=-1$. Les valeurs propres extrêmes de $M$ sont $-10/9$ et $-28/9$. Les directions $(1,1)$ et $(1,-1)$ sont orthogonales. Une perturbation selon la première direction, autour d’une solution alignée avec la seconde, donne un rapport exact de $14/5$ entre les deux erreurs relatives.
+
 ### 19. Expliquer l’enjeu de précision
 
 Supposons qu’on double $N$ dans le régime où l’équivalent est précis. Le facteur maximal d’amplification est alors environ quadruplé. Une perturbation relativement petite des mesures ou des données arrondies peut modifier sensiblement la solution calculée. La question 18 montre qu’il existe des données qui atteignent cette amplification, et la question 11 explique simultanément l’intérêt d’un maillage fin pour approcher les modes continus.
 
-![Figure 4 — Lire sur la courbe l’effet d’un doublement de la taille du maillage.](figures/amplification-des-erreurs.svg)
+![Lire sur la courbe l’effet d’un doublement de la taille du maillage.](figures/amplification-des-erreurs.svg)
 
 La couverture du rapport de la banque indique 2021. On identifie les commentaires associés à la session 2022 en retrouvant l’arbre des tirages et les questions de stabilité du maillage. [Sujet numérisé, exercices 1 et 2](https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/sujet2022.pdf) · [Rapport associé par la banque](https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/rapport2022_math_mullaert.pdf)
+
+Avec $\lambda=-1$, pour $N=10$ le facteur vaut environ $36{,}26$, et pour $N=100$ environ $3679{,}4$. Il s’agit du pire cas démontré à la question 18. Une perturbation alignée sur une autre direction peut subir une amplification plus faible.
