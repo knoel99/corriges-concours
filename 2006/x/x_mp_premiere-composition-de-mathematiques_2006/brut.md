@@ -58,7 +58,7 @@ Notons $s_n=n(n-1)/2$. Pour $|\gamma|\le1$ et $|x|\le R$, le terme dérivé $p$ 
 
 Pour $x\ge0$, la série a des termes positifs ou nuls et $f_\gamma(x)\ge1+x$, donc sa limite en $+\infty$ est $+\infty$. Pour $-1\le x<0$, les modules successifs $a_n=\gamma^{n(n-1)/2}|x|^n/n!$ décroissent, car leur rapport est $\gamma^n|x|/(n+1)\le1$ lorsque $\gamma>0$. Ainsi $f_\gamma(x)\ge1+x\ge0$ ; en $x=-1$ et $\gamma>0$, la paire $a_2-a_3$ est strictement positive et les suivantes sont positives ou nulles. Pour $\gamma=0$, $f_0=1+x$, nul seulement en $-1$. Enfin $f_\gamma'(x)=f_\gamma(\gamma x)$ est strictement positif sur $[-1,+\infty)$, également pour $\gamma=0$. Toutes les fonctions considérées sont donc strictement croissantes.
 
-![Figure 1 — Les solutions pour trois valeurs de γ coïncident en zéro avec la même tangente. Sur [−1,+∞), elles sont croissantes.](figures/solutions-positives.svg)
+![Figure 1 — Les solutions pour trois valeurs de γ coïncident en zéro avec la même tangente. Elles sont croissantes à partir de x = −1.](figures/solutions-positives.svg)
 
 ## Deuxième partie. Séries bilatères pour γ > 1
 
