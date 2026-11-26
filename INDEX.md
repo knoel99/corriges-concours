@@ -177,6 +177,7 @@
 | 2017 | BEL | B/L | Espagnol | [md](2017/bel/bel_bl_espagnol_2017/brut.md) | [md](2017/bel/bel_bl_espagnol_2017/guide.md) |
 | 2017 | BEL | B/L | Italien | [md](2017/bel/bel_bl_italien_2017/brut.md) | [md](2017/bel/bel_bl_italien_2017/guide.md) |
 | 2017 | BEL | B/L | Russe | [md](2017/bel/bel_bl_russe_2017/brut.md) | [md](2017/bel/bel_bl_russe_2017/guide.md) |
+| 2016 | ENS de Lyon | Second concours | Mathématiques | [md](2016/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2016/brut.md) | [md](2016/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2016/guide.md) |
 | 2017 | ENS de Lyon | Série SES (B/L) | Allemand (oral) | [md](2017/ens-de-lyon/ens-de-lyon_serie-ses-b-l_allemand-oral_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_serie-ses-b-l_allemand-oral_2017/guide.md) |
 | 2017 | ENS de Lyon | Série SES (B/L) | Anglais (oral) | [md](2017/ens-de-lyon/ens-de-lyon_serie-ses-b-l_anglais-oral_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_serie-ses-b-l_anglais-oral_2017/guide.md) |
 | 2022 | ENS de Lyon | Séries LA/LV/SH (A/L) | Allemand (oral) | [md](2022/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_allemand-oral_2022/brut.md) | [md](2022/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_allemand-oral_2022/guide.md) |
@@ -1741,6 +1742,8 @@
 | 2026 | X-ENS | PC | Physique B | [md](2026/x-ens/x-ens_pc_physique-b_2026/brut.md) | [md](2026/x-ens/x-ens_pc_physique-b_2026/guide.md) |
 | 2026 | X-ENS | PSI | Maths PSI | [md](2026/x-ens/x-ens_psi_maths-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_maths-psi_2026/guide.md) |
 | 2015 | X-ENS | PSI | Physique PSI | [md](2015/x-ens/x-ens_psi_physique-psi_2015/brut.md) | [md](2015/x-ens/x-ens_psi_physique-psi_2015/guide.md) |
+| 2016 | X-ENS | PSI | Physique PSI | [md](2016/x-ens/x-ens_psi_physique-psi_2016/brut.md) | [md](2016/x-ens/x-ens_psi_physique-psi_2016/guide.md) |
+| 2017 | X-ENS | PSI | Physique PSI | [md](2017/x-ens/x-ens_psi_physique-psi_2017/brut.md) | [md](2017/x-ens/x-ens_psi_physique-psi_2017/guide.md) |
 | 2019 | X-ENS | PSI | Physique PSI | [md](2019/x-ens/x-ens_psi_physique-psi_2019/brut.md) | [md](2019/x-ens/x-ens_psi_physique-psi_2019/guide.md) |
 | 2020 | X-ENS | PSI | Physique PSI | [md](2020/x-ens/x-ens_psi_physique-psi_2020/brut.md) | [md](2020/x-ens/x-ens_psi_physique-psi_2020/guide.md) |
 | 2021 | X-ENS | PSI | Physique PSI | [md](2021/x-ens/x-ens_psi_physique-psi_2021/brut.md) | [md](2021/x-ens/x-ens_psi_physique-psi_2021/guide.md) |
