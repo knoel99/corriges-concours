@@ -27,12 +27,12 @@
     {
       "fichier": "figures/q38-bode.svg",
       "question": "Q38",
-      "legende": "Courbes non corrigées relevées sur le graphe du sujet et effet du PI calculé. Le trait vertical repère 40 rad/s."
+      "legende": "À 40 rad/s, le PI porte le gain à 0 dB et la phase à −135°. La flèche mesure la marge de 45° depuis −180°."
     },
     {
       "fichier": "figures/q39-cascade.svg",
       "question": "Q39",
-      "legende": "Le courant mesuré ferme la boucle la plus rapide. Une seconde boucle régule la vitesse en commandant le courant admissible."
+      "legende": "La vitesse fixe une consigne de courant limitée. Le courant mesuré ferme la boucle interne ; la vitesse alimente le capteur externe et la force contre-électromotrice."
     },
     {
       "fichier": "figures/q48-plans.svg",
@@ -51,6 +51,78 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Rédaction des 48 questions sur la centrale osmotique de Tofte. Lecture du PDF original ENS et de ses schémas, mesure des courbes de la figure 17, bilan des puissances, essais de phase, équations de Park, contrôles numériques des fonctions Python et du calcul des masses à enlever. Cinq figures originales. La page officielle de la session présente la mention rapport de modélisation sans lien de téléchargement."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture des 48 réponses, des figures de l’énoncé et des deux éditions. Vérification de la symétrie des jets, du couple et des essais de phase, des intégrations d’Euler et des premiers moments des masses retirées. Relevé indépendant des deux graphes de Bode à 40 rad/s, tracé de la coupure et de la marge de phase, distinction entre la borne et le réglage à l’égalité. Vérification des deux boucles, de la contre-électromotrice et du couple résistant."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48"
+    ],
+    "precision": "Les 48 questions du sujet CX7612 sont traitées dans les deux éditions. Les quatre schémas de câblage demandés en Q28–31 et la cascade de courant sont restitués ; les courbes de la figure 17 sont relues sur leurs axes logarithmiques. Le sujet ne comporte pas de feuille réponse distincte. Le rapport de modélisation rangé sous 2017 par l’ENS Paris-Saclay traite explicitement de la session 2015 et d’une autre application.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "8473b75c6880fc52685a9e324483b87e24ed7d147a49241f0610079d820a17f9",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Relecture des 48 réponses, des figures de l’énoncé et des deux éditions. Vérification de la symétrie des jets, du couple et des essais de phase, des intégrations d’Euler et des premiers moments des masses retirées. Relevé indépendant des deux graphes de Bode à 40 rad/s, tracé de la coupure et de la marge de phase, distinction entre la borne et le réglage à l’égalité. Vérification des deux boucles, de la contre-électromotrice et du couple résistant.",
+      "commit_redaction_anterieure": "98d92063ffb0a927490f4f93350d40dfb6bd8bd6"
+    }
+  }
 }
