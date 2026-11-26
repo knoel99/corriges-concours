@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Relecture** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 Le sujet demande de commenter la réflexion de Modiano sur la relation du roman à son lecteur, en mobilisant des lectures littéraires et critiques, françaises ou étrangères.
@@ -12,11 +14,20 @@ Le sujet demande de commenter la réflexion de Modiano sur la relation du roman 
 
 Le tirage argentique rend lentement visible une image préparée. Le chant implique une voix, une manière de la soutenir et une écoute. Relevez ce que chaque comparaison explique, puis identifiez où la seconde fait apparaître une limite de la première.
 
-**Pourquoi revenir à une scène déjà lue ?** Après la lettre de Darcy, la parole de Wickham est la même sur la page et ne dispose plus pour le lecteur du même crédit. Ce changement distingue nettement la suite des événements et le temps propre de la relecture.
+> [!INDICATION]
+> Pourquoi revenir à une scène déjà lue ?
 
-**Que veut dire « en sait plus long » ?** Séparez un renseignement sur les brouillons, un fait de l’intrigue et un effet que le roman produit sur une personne qui découvre la fin. Ne donnez pas au lecteur un savoir biographique auquel il n’a pas accès.
+Après la lettre de Darcy, la parole de Wickham est la même sur la page et ne dispose plus pour le lecteur du même crédit. Ce changement distingue nettement la suite des événements et le temps propre de la relecture.
 
-**Comment employer un ouvrage critique ?** La lecture chez Iser permet de décrire les anticipations et leurs corrections. Mettez cette idée au travail sur une relation vérifiable du récit. Une liste d’autorités théoriques ne répondrait pas à la demande d’illustrer le propos par des œuvres.
+> [!INDICATION]
+> Que veut dire « en sait plus long » ?
+
+Séparez un renseignement sur les brouillons, un fait de l’intrigue et un effet que le roman produit sur une personne qui découvre la fin. Ne donnez pas au lecteur un savoir biographique auquel il n’a pas accès.
+
+> [!INDICATION]
+> Comment employer un ouvrage critique ?
+
+La lecture chez Iser permet de décrire les anticipations et leurs corrections. Mettez cette idée au travail sur une relation vérifiable du récit. Une liste d’autorités théoriques ne répondrait pas à la demande d’illustrer le propos par des œuvres.
 
 ## Le lecteur sait-il ce que le romancier ne pouvait savoir ?
 
@@ -30,9 +41,16 @@ Dans *Rue des Boutiques obscures*, le roman ne dispose pas de l’état civil de
 
 Le temps de la lecture n’est pas toutefois celui du seul premier parcours. Dans *Orgueil et Préjugés* de Jane Austen, la lettre de Darcy oblige Elizabeth à reprendre les renseignements qu’elle a reçus de Wickham et à réexaminer la préférence qui l’avait conduite à les croire. Le lecteur qui a partagé la vivacité de ses jugements peut revenir sur les scènes déjà lues. Les signes n’ont pas changé sur la page. Le statut de ce que l’on avait pris pour une preuve a changé. Une seconde lecture ne développe pas seulement une image plus nette. Elle révèle parfois pourquoi nous en avions construit une première qui était fausse.
 
+Austen fait même de la vitesse de lecture un ressort de la scène. Au chapitre 35, la lettre de Darcy est donnée au lecteur, qui peut s’y arrêter. Au chapitre 36, Elizabeth se précipite pour en connaître la suite et saisit à peine ce qu’elle a sous les yeux. Puis elle déplie la lettre une seconde fois et examine phrase par phrase ce qui concerne Wickham. En revenant sur le même écrit, elle découvre aussi le parti qu’elle avait pris avant de le lire. Cette différence entre ses deux parcours éclaire la limite de la chambre noire de Modiano. Le bain révèle une image latente ; la relecture d’Elizabeth révèle en outre les obstacles que sa propre impatience avait opposés à l’image.
+
+> [!INDICATION]
+> Quel fait précis du chapitre 36 rend le travail du lecteur observable ?
+
+Elizabeth replie la lettre, puis l’ouvre de nouveau. La première fois, son désir d’arriver à la phrase suivante l’empêche de comprendre celle qu’elle lit. La seconde fois, elle pèse les phrases sur Wickham. On peut donc discuter la comparaison photographique à partir de deux gestes, sans supposer qu’Elizabeth connaissait déjà la vérité.
+
 ## Une marge construite et non une licence illimitée
 
-La théorie du processus de lecture de Wolfgang Iser permet de préciser ce travail. Les points où un récit ne relie pas explicitement deux perspectives appellent l’activité du lecteur. Celui-ci anticipe une suite, puis doit parfois corriger une liaison qu’il avait tenue pour acquise. Dans le roman d’Austen, la lettre a un contenu précis qu’on ne peut remplacer arbitrairement par son contraire. Mais l’importance que je donnais moi-même à l’aisance de Wickham ou à la réserve de Darcy devient à son tour un objet de lecture. J’en sais peut-être davantage sur ce que cette opposition fait au lecteur que ne le disait chacune des scènes isolées.
+Dans « The Reading Process: A Phenomenological Approach » (1972), la théorie de Wolfgang Iser permet de préciser ce travail. Les points où un récit ne relie pas explicitement deux perspectives appellent l’activité du lecteur. Celui-ci anticipe une suite, puis doit parfois corriger une liaison qu’il avait tenue pour acquise. Dans le roman d’Austen, la lettre a un contenu précis qu’on ne peut remplacer arbitrairement par son contraire. Mais l’importance que je donnais moi-même à l’aisance de Wickham ou à la réserve de Darcy devient à son tour un objet de lecture. J’en sais peut-être davantage sur ce que cette opposition fait au lecteur que ne le disait chacune des scènes isolées.
 
 La photographie et le chant font ici des propositions légèrement différentes. L’image latente paraît pouvoir attendre qu’une opération adéquate la livre un jour telle qu’elle était déjà. La relation entre chanteur et auditeur ne produit pas un second exemplaire de la voix. Elle dépend du souffle, d’une salle et d’une écoute. Lorsque Modiano veut que le romancier ne force pas son lecteur, il ne recommande donc pas l’absence de toute construction. Il demande une conduite assez précise pour entraîner et assez discrète pour qu’on puisse éprouver ce mouvement comme le sien.
 
@@ -48,4 +66,4 @@ Il est également des romans qui guident très fortement la réponse du lecteur 
 
 La force du parallèle photographique est donc de reconnaître à une découverte sa durée et ses conditions matérielles. Sa limite est de suggérer une image définitive. Un lecteur peut savoir « plus long » lorsque la relation qu’il construit fait apparaître dans l’œuvre un effet réel dont son auteur ne pouvait posséder à l’avance l’expérience. Cette liberté demeure une manière de répondre au livre, jusque dans le retour sur la page qui nous a d’abord trompés.
 
-[Feuille de l’écrit](https://www.ens.psl.eu/IMG/file/admission/SI_2016/LITTERATURE.pdf) · [Modiano, conférence Nobel de 2014](https://www.nobelprize.org/prizes/literature/2014/modiano/25249-conference-nobel/) · [Wolfgang Iser, The Reading Process](https://ctlsites.uga.edu/eberle/wp-content/uploads/sites/78/2017/08/iser_readingProcess.pdf)
+[Feuille de l’écrit](https://www.ens.psl.eu/IMG/file/admission/SI_2016/LITTERATURE.pdf) · [Modiano, conférence Nobel de 2014](https://www.nobelprize.org/prizes/literature/2014/modiano/25249-conference-nobel/) · [Wolfgang Iser, The Reading Process](https://ctlsites.uga.edu/eberle/wp-content/uploads/sites/78/2017/08/iser_readingProcess.pdf) · [Austen, chapitres 35 et 36](https://austen.unl.edu/visualizations/pride_and_prejudice/all)
