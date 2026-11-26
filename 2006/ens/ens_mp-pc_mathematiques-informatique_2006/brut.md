@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le corps K est de caractéristique différente de deux. On note v la valuation en z. Lors du passage aux fractions continues, une lettre polynomiale dans une identité de séries désigne son image par la substitution x = 1/z.
 
 ## Partie 1 · Calcul dans les séries de Laurent
@@ -11,6 +13,8 @@ Le corps K est de caractéristique différente de deux. On note v la valuation e
 ### Question 1.1 · Valuations et convolution
 
 Soient $r=v(a)$, $s=v(b)$ finis. Sous $\min(r,s)$, les deux coefficients sont nuls. Si $r\ne s$, le premier coefficient pouvant intervenir dans la somme vient d’un seul opérande et est non nul. Dans le coefficient $c_i=\sum_j a_jb_{i-j}$ du produit, seuls $r\le j\le i-s$ interviennent, soit au plus $\max(0,i-r-s+1)$ termes. Au rang $r+s$, le seul terme est $a_rb_s\ne0$. Ainsi $v(ab)=r+s$. Un opérande nul donne le produit nul, de valuation infinie. Enfin $a=z^r\sum_{j\ge0}a_{j+r}z^j$ et le second facteur a valuation nulle.
+
+La borne sur le nombre de produits est atteinte, par exemple lorsque $a_j=1$ pour tout $j\ge r$ et $b_j=1$ pour tout $j\ge s$. Il s’agit du nombre de termes non nuls avant leur addition, même si leur somme s’annule dans le corps $K$. Si l’une des séries est nulle, tous ces produits sont nuls et la somme des séries est l’autre série.
 
 ### Question 1.2 · Structure d’anneau
 

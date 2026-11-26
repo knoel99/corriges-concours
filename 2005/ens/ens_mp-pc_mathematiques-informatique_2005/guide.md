@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 La majorisation mesure ce que peut produire un transfert entre coordonnées d’un vecteur. On l’utilise pour décomposer une matrice doublement stochastique, réaliser des scores de tournoi et comparer des polygones de même nombre de côtés.
 
 ## Partie 1 · Comparer des vecteurs triés
@@ -135,4 +137,4 @@ Sur un rayon formant un angle $t$ avec la normale extérieure d’une tangente, 
 
 ### Question 4.6 · Moment de rotation et aire minimale
 
-Découper en fines couronnes. La quantité d’aire apportée à distance $r$ est $h_r\,dr$. Pour le moment, la même contribution reçoit le poids supplémentaire $r^2$. Le polygone d’angles constants minimise déjà chaque longueur de couronne par la question précédente. Il minimise donc l’aire et le moment. Si certains angles diffèrent, choisir un rayon juste assez grand pour supprimer la contribution d’un petit écart sans encore atteindre l’écart moyen. Les contributions sont alors strictement plus grandes pour le polygone irrégulier sur une plage de rayons, ce qui donne l’unicité du régulier.
+Découper en fines couronnes. La quantité d’aire apportée à distance $r$ est $h_r\,dr$. Pour le moment, la même contribution reçoit le poids supplémentaire $r^2$. Le polygone d’angles constants minimise déjà chaque longueur de couronne par la question précédente. Il minimise donc l’aire et le moment. Si certains angles diffèrent, choisir un rayon juste assez grand pour supprimer la contribution d’un petit écart sans encore atteindre l’écart moyen. Le total de tous les écarts diminués du seuil $t=2\arccos(1/r)$ vaut $2\pi-nt$ pour les deux polygones. Pour le polygone irrégulier, la partie positive remplace au moins une valeur négative par zéro et augmente cette somme. Pour le régulier, toutes les valeurs sont encore positives. Cette différence stricte persiste pour tous les seuils compris entre le plus petit écart et la moyenne, donc sur un intervalle de rayons de longueur positive. Les deux intégrales sont alors strictement plus grandes que pour le régulier.

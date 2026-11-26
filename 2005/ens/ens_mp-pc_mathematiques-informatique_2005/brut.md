@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Les vecteurs sont des vecteurs lignes. On note x↓ leur réarrangement décroissant et Sₖ(x) la somme des k plus grandes coordonnées. La majorisation y ≼ x impose Sₖ(y) ≤ Sₖ(x) pour k inférieur à n et l’égalité des totaux.
 
 ## Partie 1 · Comparer des vecteurs triés
@@ -102,7 +104,7 @@ Soit $D=q_j-q_i\ge1$. Le transfert d’une unité est la transformation de 2.4 a
 
 ### Question 3.3 · Toutes les répartitions plus équilibrées
 
-Trier les effectifs en renommant les couleurs. Pour passer de $p$ à $q\preceq p$, choisir donneur et receveur comme en 2.5. Le transfert entier $\delta=\min(p_j-q_j,q_i-p_i)$ est réalisé par $\delta$ applications de 3.1 aux deux seules couleurs choisies. Pendant ces échanges, avant chaque unité, le donneur dépasse le receveur car il reste au-dessus de sa cible et l’autre en dessous de la sienne, avec $q_j\ge q_i$. Les autres couleurs sont intactes. À la fin du bloc, 2.5 assure tri, majorisation et gain d’une coordonnée correcte. Itérer puis remettre les noms prescrits.
+Trier les effectifs en renommant les couleurs. Pour passer de $p$ à $q\preceq p$, choisir donneur et receveur comme en 2.5. Le transfert entier $\delta=\min(p_j-q_j,q_i-p_i)$ est réalisé par $\delta$ applications de 3.1 aux deux seules couleurs choisies. Pendant ces échanges, avant chaque unité, le donneur dépasse le receveur car il reste au-dessus de sa cible et l’autre en dessous de la sienne, avec $q_j\ge q_i$. Les autres couleurs sont intactes. À la fin du bloc, 2.5 assure tri, majorisation et gain d’une coordonnée correcte. Plus précisément, avant le dernier échange le donneur a encore au moins $q_j+1$ arêtes et le receveur au plus $q_i-1$. Leur différence est donc au moins deux, même lorsque $q_j=q_i$. Itérer puis remettre les noms prescrits.
 
 ### Question 3.4 · Tournoi transitif
 
@@ -150,4 +152,4 @@ Chaque terme est convexe, donc la somme est Schur-croissante par Jensen. La form
 
 ### Question 4.6 · Moment de rotation et aire minimale
 
-En coordonnées polaires, le moment vaut $\int_0^\infty r^2h_r\,dr$ et l’aire $\int_0^\infty h_r\,dr$. Le vecteur constant d’angle moyen $2\pi/n$ est majorisé par tous les autres. Il minimise donc simultanément les deux intégrales. Si les angles sont inégaux, choisir $2\alpha$ strictement entre leur minimum et leur moyenne. À ce seuil au moins un terme est coupé pour la liste inégale alors qu’aucun ne l’est pour la liste uniforme, d’où une inégalité stricte sur un intervalle de rayons. Les minima sont donc atteints seulement par le polygone régulier, aux isométries près. Son aire est $n\tan(\pi/n)$.
+En coordonnées polaires, le moment vaut $\int_0^\infty r^2h_r\,dr$ et l’aire $\int_0^\infty h_r\,dr$. Le vecteur constant d’angle moyen $2\pi/n$ est majorisé par tous les autres. Il minimise donc simultanément les deux intégrales. Si les angles sont inégaux, choisir $2\alpha$ strictement entre leur minimum et leur moyenne. À ce seuil au moins un terme est coupé pour la liste inégale alors qu’aucun ne l’est pour la liste uniforme, car $\sum_i(\theta_i-t)_+=2\pi-nt+\sum_i(t-\theta_i)_+$ pour $t=2\alpha$. Le dernier terme est strictement positif pour la liste inégale et nul pour la liste uniforme. La condition $\min_i\theta_i<t<2\pi/n$ définit un intervalle ouvert non vide de rayons $r=1/\cos(t/2)$. Les minima sont donc atteints seulement par le polygone régulier, aux isométries près. Son aire est $n\tan(\pi/n)$.
