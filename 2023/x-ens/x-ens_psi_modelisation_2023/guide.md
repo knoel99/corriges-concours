@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Repères de résolution
 
 Le bâtiment possède deux températures dynamiques, intérieure et d’enveloppe. Pour les questions thermiques, donner le signe des flux avant de passer en Laplace. Dans le convertisseur, garder le même ordre de condensateurs dans les quatre configurations. Dans le pilotage prédictif, distinguer le pas présent, le retard et l’horizon.
@@ -247,7 +249,7 @@ Les états $1,2,3,4$ correspondent aux couples d’interrupteurs fermés $(1,1),
 
 Les flèches du diagramme portent ces instants comme gardes. À $\alpha=1/2$, les intervalles de recouvrement disparaissent et le cycle alterne $2,3$. À $\alpha=0$ les transistors restent ouverts, à $\alpha=1$ ils restent fermés.
 
-![Deux exemples du cycle commuté. Les largeurs des bandes représentent les durées, et le bord droit rejoint la première bande.](figures/q20-etats.svg)
+![Le graphe donne les états, les transitions et leurs instants pour les deux régions. Les bandes indiquent la durée de chaque passage pour deux rapports cycliques.](figures/q20-etats.svg)
 
 ### Question 21 · Chronogrammes en région 2
 

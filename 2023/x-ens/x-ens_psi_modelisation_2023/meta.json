@@ -11,7 +11,11 @@
   "sources": {
     "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2023_MODELISATION_PSI_001.pdf",
     "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2023_PSI_rapport_ecrit_Modelisation.pdf",
-    "documents_reponse": "https://www.doc-solus.fr/prepa/sci/adc/pdf/enonces.pdf/2023/PSI_PHYSIQUE_X_2_2023.enonce.pdf"
+    "documents_reponse": "https://www.doc-solus.fr/prepa/sci/adc/pdf/enonces.pdf/2023/PSI_PHYSIQUE_X_2_2023.enonce.pdf",
+    "sha256_sujet": "47b350d1c4430d80c46b67b9af5fc3a9efe36fa249429c4d77dee00a317c5583",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2023_PSI_rapport_ecrit_Modelisation.pdf",
+    "sha256_rapport_jury": "3c5e2e0fc3686b51fa25b5c152cdf1e20b3e053b0cb2e22f1286d99e6c1fd790",
+    "sha256_documents_reponse": "9caca796c1a492721c3a4723e9071174720d931eea845ae154eed0fd06373c51"
   },
   "figures": [
     {
@@ -32,7 +36,7 @@
     {
       "fichier": "figures/q20-etats.svg",
       "question": "Q20",
-      "legende": "Deux exemples du cycle commuté. Les largeurs des bandes représentent les durées, et le bord droit rejoint la première bande."
+      "legende": "Le graphe donne les états, les transitions et leurs instants pour les deux régions. Les bandes indiquent la durée de chaque passage pour deux rapports cycliques."
     },
     {
       "fichier": "figures/q21-chronogrammes.svg",
@@ -56,6 +60,83 @@
       "agent": "astra_info_si",
       "fournisseur": "codex",
       "perimetre": "Rédaction des 50 questions des éditions brute et guidée d’après le sujet institutionnel, les documents-réponses et le rapport du jury. Construction de six figures. Contrôles des requêtes, transferts thermiques et réglages PI, cycles du convertisseur, commande par Lyapunov, discrétisation retardée et rappels de classification."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_maths_b_recentes",
+      "modifications": true,
+      "perimetre": "50 questions, annexes photovoltaïques des pages 26 et 27 et trois documents-réponse du fac-similé complémentaire. Relecture des équations thermiques et des circuits, des chronogrammes, du comptage des états et des commandes. Exécution des requêtes SQL, contrôle des horizons retardés et des six rappels par classe. La nouvelle figure de Q20 représente le graphe des transitions et leurs gardes, y compris les deux sorties de l’état 4 ou 1 selon la région."
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50"
+    ],
+    "precision": "50 questions, annexes photovoltaïques des pages 26 et 27 et trois documents-réponse du fac-similé complémentaire. Relecture des équations thermiques et des circuits, des chronogrammes, du comptage des états et des commandes. Exécution des requêtes SQL, contrôle des horizons retardés et des six rappels par classe. La nouvelle figure de Q20 représente le graphe des transitions et leurs gardes, y compris les deux sorties de l’état 4 ou 1 selon la région.",
+    "origine_attestation": {
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "47b350d1c4430d80c46b67b9af5fc3a9efe36fa249429c4d77dee00a317c5583",
+      "perimetre": "50 questions, annexes photovoltaïques des pages 26 et 27 et trois documents-réponse du fac-similé complémentaire. Relecture des équations thermiques et des circuits, des chronogrammes, du comptage des états et des commandes. Exécution des requêtes SQL, contrôle des horizons retardés et des six rappels par classe. La nouvelle figure de Q20 représente le graphe des transitions et leurs gardes, y compris les deux sorties de l’état 4 ou 1 selon la région.",
+      "commit_edition_anterieure": "c8d16085bd6d420553823509d5759b4134f3e40a",
+      "sha256_rapport_jury_controle": "3c5e2e0fc3686b51fa25b5c152cdf1e20b3e053b0cb2e22f1286d99e6c1fd790"
+    }
+  }
 }
