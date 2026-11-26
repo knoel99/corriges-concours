@@ -4,6 +4,10 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+La garde nomme les Écoles normales supérieures et l’École polytechnique. Épreuve PSI du lundi 12 avril 2021, de 8 h à 12 h, sans document ni calculatrice. Le sujet compte huit pages. Le préambule autorise les résultats des préliminaires pour les fonctions continues sur la demi-droite ouverte et intégrables en zéro. Les pages 3 à 8 contiennent les 47 questions et sous-questions traitées ici.
+
 La composition du 12 avril 2021 construit les intégrales fractionnaires puis les deux dérivées de Riemann–Liouville et de Caputo. Les 47 réponses suivent les préliminaires et les parties A à C jusqu’à l’équation de relaxation. [Sujet officiel](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2021_Sujet_1A_PSI_Maths.pdf) · [Rapport du jury](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2021_Rapport_Ecrit_PSI_Maths.pdf)
 
 ## Préliminaires. Gamma, intégration sur un triangle et transformée de Laplace
@@ -70,6 +74,8 @@ Pour $\beta$ fixé, $u\mapsto\int_u^\beta f(t,u)dt$ est continue par la même s�
 #### Solution
 
 Pour chaque $u$, la dérivée en $\beta$ de $\int_u^\beta f(t,u)dt$ est $f(\beta,u)$. Elle est continue et uniformément bornée sur le carré compact, ce qui autorise la dérivation sous l’intégrale extérieure. Ainsi $\partial_\beta h(\alpha,\beta)=\int_0^\alpha f(\beta,u)du$.
+
+Pour $\eta\ne0$ avec $\beta+\eta\in[0,a]$, le quotient différentiel intérieur est la moyenne de $f(t,u)$ entre $\beta$ et $\beta+\eta$. Son écart à $f(\beta,u)$ est majoré par $\omega(|\eta|)$, uniformément en $u$. Après intégration sur $[0,\alpha]$, l’erreur est au plus $\alpha\omega(|\eta|)$, même si $\eta<0$. Ce calcul fournit directement la dérivée et ses versions unilatérales aux bords.
 
 ### Question 2b.iii
 
@@ -156,6 +162,8 @@ En augmentant l’exposant au besoin, supposons $|f(t)|\le Ae^{rt}$ et $|g(t)|\l
 
 Pour $s>r+1$ avec les bornes de 4c, l’intégrale de la valeur absolue sur le triangle infini est au plus $AB\int_0^\infty t e^{-(s-r)t}dt<\infty$. Par (E2), on intègre d’abord en $t$ de $u$ à l’infini. Le changement $v=t-u$ sépare $e^{-st}f(t-u)g(u)=e^{-sv}f(v)e^{-su}g(u)$. On obtient donc $L(f*g)(s)=L(f)(s)L(g)(s)$.
 
+Sur le domaine tronqué $u+v\le T$, l’indicatrice croît vers celle du quadrant. L’intégrale de la valeur absolue sur ce quadrant est bornée par $AB/(s-r)^2$. On peut donc passer à la limite dans les intégrales signées et factoriser les deux intégrales à une variable. En particulier, $s>r$ suffit pour ce calcul.
+
 ### Question 5a
 
 > [!INDICATION]
@@ -174,6 +182,8 @@ La différence $h=f-g$ reste continue d’ordre exponentiel et $L$ est linéaire
 
 Les moments nuls impliquent $\int_a^b P(x)f(x)dx=0$ pour tout polynôme. Prenons $P_j\to f$ uniformément. Alors $|\int_a^b(f-P_j)f|\le(b-a)\|f-P_j\|_\infty\|f\|_\infty\to0$, donc $\int_a^b f^2=0$. Sur un segment de longueur positive, la continuité et la positivité de $f^2$ imposent $f=0$ en chaque point.
 
+Si les valeurs autorisées de $a,b$ comprennent $a=b$, la conclusion ponctuelle exige une précision. Toute intégrale sur un singleton est nulle, même pour la fonction constante égale à un. La preuve d’injectivité en 5c utilise bien le segment non dégénéré $[0,1]$.
+
 ### Question 5c
 
 > [!INDICATION]
@@ -182,6 +192,8 @@ Les moments nuls impliquent $\int_a^b P(x)f(x)dx=0$ pour tout polynôme. Prenons
 #### Solution
 
 Supposons $L(f)(s)=0$ pour $s\ge s_0$ et $|f(t)|\le Me^{rt}$. Choisissons un entier $k>r$ avec $k+1\ge s_0$. Posons $h(y)=y^kf(-\log y)$ pour $0<y\le1$ et $h(0)=0$. La borne $|h(y)|\le My^{k-r}$ assure sa continuité en zéro. Pour tout entier $n\ge0$, le changement $y=e^{-t}$ donne $\int_0^1 y^nh(y)dy=L(f)(n+k+1)=0$. Par 5b, $h=0$, donc $f(t)=0$ en tout $t\ge0$. Ceci prouve l’injectivité.
+
+Le facteur $y^k$ traite un vrai problème au bord. Pour $f(t)=e^{rt}$ avec $r>0$, la fonction $f(-\log y)=y^{-r}$ ne se prolonge pas en zéro. Avec $k>r$, le produit se prolonge, et décaler tous les moments par le même entier ne change pas leur annulation.
 
 ## A. Intégration fractionnaire
 
@@ -230,6 +242,8 @@ Pour $s>0$, $u=st$ donne $L(\Phi_\alpha)(s)=s^{-\alpha}\int_0^\infty e^{-u}u^{\a
 
 Pour $\alpha,\beta>0$, l’associativité et 7b donnent $J^\alpha(J^\beta f)=(\Phi_\alpha*\Phi_\beta)*f=J^{\alpha+\beta}f$. La permutation des intégrales est justifiée en appliquant le même calcul aux noyaux positifs et à $|f|$ : la majorante finale $J^{\alpha+\beta}|f|(x)$ est finie par intégrabilité de $f$ près de zéro et bornitude locale près de $x>0$. Si l’un des ordres est nul, la formule vient de $J^0=\mathrm{Id}$.
 
+On peut aussi fixer $0<u<x$ et intégrer $(x-t)^{\alpha-1}(t-u)^{\beta-1}$ pour $u<t<x$. En posant $t=u+(x-u)v$, cette intégrale vaut $(x-u)^{\alpha+\beta-1}B(\alpha,\beta)$. Cette majorante intégrée contre $|f(u)|$ est finie en séparant $[0,x/2]$ et $[x/2,x]$. La singularité au sommet du triangle et celle de $f$ à l’origine ont ainsi été traitées séparément.
+
 ### Question 8b
 
 > [!INDICATION]
@@ -256,6 +270,8 @@ Par définition de $J^\alpha$ et par 7b, $J^\alpha\Phi_\gamma=\Phi_\alpha*\Phi_\
 #### Solution
 
 Si $J^\alpha f=0$, la question 8b donne $s^{-\alpha}L(f)(s)=0$ pour tout $s$ assez grand. Le facteur est non nul et l’injectivité de 5c, dans le cadre admis au préambule, donne $f=0$. La réciproque suit de la linéarité de l’intégrale.
+
+Un argument local donne la même conclusion. Prendre un entier $n>\alpha$, appliquer $J^{n-\alpha}$ aux deux membres de $J^\alpha f=0$, puis dériver $n$ fois l’égalité $J^nf=0$ sur $]0,+\infty[$. Cet argument permet aussi de reprendre 10d sans imposer que les intégrales intermédiaires soient bornées en zéro.
 
 ## B. Dérivées de Riemann–Liouville et de Caputo
 
@@ -306,6 +322,8 @@ On a $J^{m-\alpha}\Phi_\gamma=\Phi_{\gamma+m-\alpha}$ pour $\gamma>0$, par 8c ou
 
 Si $D^\alpha f=0$, alors $P=J^{m-\alpha}f$ a une dérivée d’ordre $m$ nulle sur la demi-droite. Il est donc combinaison des $\Phi_1,\ldots,\Phi_m$, base des polynômes de degré au plus $m-1$. Les fonctions $\Phi_{\alpha-j+1}$ avec $1\le j\le m$ ont un indice strictement positif, et $J^{m-\alpha}\Phi_{\alpha-j+1}=\Phi_{m-j+1}$. On peut donc choisir une combinaison $g$ de ces fonctions telle que $J^{m-\alpha}g=P$. L’injectivité de $J^{m-\alpha}$ par 8d, ou son identité si $m=\alpha$, donne $f=g$. Cela équivaut à $f(x)=\sum_{j=1}^m c_jx^{\alpha-j}$ car les facteurs gamma sont finis et non nuls. Réciproquement, 10c envoie chaque noyau sur $\Phi_{1-j}=0$. Toutes les puissances obtenues sont localement intégrables en zéro puisque $\alpha-m>-1$.
 
+Les $m$ générateurs sont indépendants. Multiplier une relation entre les $x^{\alpha-j}$ par $x^{m-\alpha}$ donne un polynôme nul sur $]0,+\infty[$, donc tous ses coefficients sont nuls. Lorsque $\alpha=m$, on retrouve exactement le noyau de la dérivée ordinaire d’ordre $m$.
+
 ### Question 11a
 
 > [!INDICATION]
@@ -338,6 +356,8 @@ $$J^\delta(t^\mu H(t))=\frac{t^{\mu+\delta}}{\Gamma(\delta)}
 \int_0^1(1-v)^{\delta-1}v^\mu H(tv)\,dv.$$
 Sur $0\le t\le r<R$, la série de $H(tv)$ converge absolument et uniformément et le poids est intégrable. L’intégrale s’effectue donc terme à terme en préservant un facteur analytique de rayon au moins $R$. Les dérivations entières suivantes sont légitimes sur les compacts de $]0,R[$ par les propriétés des séries entières et la règle du produit. Après la première opération l’exposant de base $\lambda-\beta>-1$ permet de recommencer. Pour un ordre nul, on utilise l’identité. La formule est ainsi prouvée pour $0<t<R$ et vaut en zéro lorsque les deux membres y ont une valeur définie par prolongement. La notation de l’énoncé inclut zéro même si, par exemple pour $\lambda<0$ et $H(0)\ne0$, la fonction initiale y diverge.
 
+Par exemple, pour $\lambda=0$, $\eta=1$, $\beta=1/2$ et $\alpha=1$, le résultat est $\Phi_{-1/2}(t)$. Il diverge en zéro alors même que la fonction de départ y est continue. Le prolongement de l’égalité à zéro doit donc porter sur le résultat de la dérivation aussi bien que sur la fonction de départ.
+
 ### Question 12a
 
 > [!INDICATION]
@@ -366,6 +386,10 @@ Si $\alpha=m$, $D_*^\alpha f=f^{(m)}=0$ et le résultat est immédiat. Sinon $0<
 Par 9, $f=\sum_{k=0}^{m-1}f^{(k)}(0)\Phi_{k+1}+J^mf^{(m)}$. Appliquons $D^\alpha$. La question 10c transforme le polynôme terme à terme en $\sum f^{(k)}(0)\Phi_{k+1-\alpha}$. Sur le reste, $D^\alpha J^m=D^mJ^{2m-\alpha}=D^m J^mJ^{m-\alpha}=J^{m-\alpha}$ par 8a. Cela donne
 $$D^\alpha f(x)=D_*^\alpha f(x)+\sum_{k=0}^{m-1} f^{(k)}(0)\frac{x^{k-\alpha}}{\Gamma(k+1-\alpha)}.$$
 
+Pour $0<\alpha<1$, la somme comporte seulement $f(0)\Phi_{1-\alpha}$. À l’ordre $1/2$, la relation donne pour $f=1$ une courbe $1/\sqrt{\pi t}$ et une dérivée de Caputo identiquement nulle. Pour $f(t)=t$, la donnée initiale s’annule et les deux dérivées valent $2\sqrt{t/\pi}$.
+
+![Pour une constante, la valeur initiale sépare les deux dérivées. Pour la fonction identité, elles coïncident.](figures/valeur-initiale.svg)
+
 ### Question 12d
 
 > [!INDICATION]
@@ -385,6 +409,8 @@ Par 10c, $D^\alpha(x^k/k!)=\Phi_{k+1-\alpha}$. Par linéarité, soustraire $\sum
 #### Solution
 
 L’équation d’Abel est $J^\alpha g=f$. La question 10a impose donc à toute solution $g(t)=D^\alpha f(t)=D(J^{1-\alpha}f)(t)$ pour $t>0$. Lorsque $f$ est $C^1$, 12b rend ce résultat explicite en $g=f(0)\Phi_{1-\alpha}+J^{1-\alpha}f'$. La substitution donne bien $J^\alpha g=f(0)\Phi_1+J^1f'=f$ dans ce cas.
+
+La valeur du second membre en zéro mérite d’être distinguée de sa trace à droite. Pour $f=1$ et $0<\alpha<1$, la solution sur $t>0$ est $g(t)=\Phi_{1-\alpha}(t)$. Elle est intégrable à l’origine et peut y diverger. En intégrant pour $t>0$, l’identité bêta donne $J^\alpha g(t)=1$, ce qui détermine sa limite à droite. Donner arbitrairement une valeur finie à $g(0)$ ne résout aucune condition supplémentaire.
 
 ### Question 13b
 
@@ -437,6 +463,8 @@ Le bord $\alpha=0$ dans la définition imprimée demanderait $E_0(-1)$ pour $t>0
 Pour $k\ge0$, $u_k=J^k e_\alpha$. Le calcul absolu de 14c assure l’intégrabilité avec poids $e^{-st}$ pour $s>1$. La convolution par $\Phi_k$ pour $k\ge1$ multiplie la transformée par $s^{-k}$, et $k=0$ laisse la fonction inchangée. Ainsi
 $$L(u_k)(s)=\frac{s^{\alpha-k-1}}{s^\alpha+1}.$$
 
+Pour rendre visible le terme intégrable dominant, lorsque $k\ge1$ on peut majorer $|u_k(t)|$ par $J^k|e_\alpha|(t)$. Après multiplication par $e^{-st}$ et intégration, l’intégrale de cette majorante vaut $s^{-k}\int_0^\infty e^{-sv}|e_\alpha(v)|\,dv<\infty$ pour $s>1$.
+
 ### Question 15
 
 > [!INDICATION]
@@ -456,3 +484,5 @@ Pour $m-1<\alpha\le m$, on a $J^\alpha D_*^\alpha u=J^\alpha J^{m-\alpha}D^m u=J
 Si $u$ est d’ordre exponentiel, 7c et 8b appliquées à 15 donnent, pour $s$ assez grand,
 $$L(u)(s)=\sum_{k=0}^{m-1}\frac{c_k}{s^{k+1}}-s^{-\alpha}L(u)(s).$$
 En divisant par $1+s^{-\alpha}$, $L(u)=\sum_{k=0}^{m-1}c_k s^{\alpha-k-1}/(s^\alpha+1)=\sum_k c_k L(u_k)$ par 14d. Les $u_k$ sont d’ordre exponentiel, comme $e_\alpha$ et ses primitives. L’injectivité donne $u(t)=\sum_{k=0}^{m-1}c_k u_k(t)$. Par exemple $\alpha=1$ donne la solution $c_0 e^{-t}$ et $\alpha=2$ donne $c_0\cos t+c_1\sin t$, en accord avec les deux équations ordinaires.
+
+Les traces peuvent se relire sur la formule obtenue. En intégrant la série de $e_\alpha$ sur les compacts, on a $u_k(t)=\sum_{j\ge0}(-1)^jt^{k+\alpha j}/\Gamma(1+k+\alpha j)$. Le terme $j=0$ vaut $t^k/k!$. Les autres exposants sont au moins $k+\alpha>m-1$, si bien que leurs dérivées jusqu’à l’ordre $m-1$ tendent vers zéro à droite. Les $m$ coefficients retrouvés sont donc exactement les $m$ conditions initiales. Pour vérifier l’équation, $J^\alpha u_k=\Phi_{k+1}-u_k$ résulte du même décalage de série. En retranchant le polynôme initial, puis en appliquant 10a et 12d, on retrouve la relation de Caputo pour $t>0$.

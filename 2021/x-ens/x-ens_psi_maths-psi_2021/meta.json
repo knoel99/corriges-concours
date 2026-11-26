@@ -4,20 +4,28 @@
     "concours": "X-ENS",
     "filiere": "PSI",
     "matiere": "Maths PSI",
-    "annee": 2021
+    "annee": 2021,
+    "modalite": "écrit"
   },
   "questions": 47,
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
     "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2021_Sujet_1A_PSI_Maths.pdf",
     "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2021_Rapport_Ecrit_PSI_Maths.pdf",
-    "sha256_sujet": "71e60e22fb7c424175e3331752b0f0f2f5c356db2aa135ba4ba3731cf5500d63"
+    "sha256_sujet": "71e60e22fb7c424175e3331752b0f0f2f5c356db2aa135ba4ba3731cf5500d63",
+    "sha256_rapport": "1b78488d07473473dc8a1a5b8d26ed06153d6be3618f817b14d7015113b393e9"
   },
   "figures": [
     {
       "fichier": "figures/triangle-fubini.svg",
       "question": "2c",
       "legende": "Le même triangle se parcourt verticalement à t fixé, entre 0 et t, ou horizontalement à u fixé, entre u et a."
+    },
+    {
+      "fichier": "figures/valeur-initiale.svg",
+      "question": "12c",
+      "legende": "Pour une constante, la valeur initiale sépare les deux dérivées. Pour la fonction identité, elles coïncident.",
+      "provenance": "Figure originale pour le contrôle de cette question."
     }
   ],
   "contributions": [
@@ -31,6 +39,381 @@
       "perimetre": "Rédaction des 47 réponses et indications sur le sujet officiel et les quatre pages de rapport. Justification des intégrales, de l’injectivité de Laplace, du calcul terme à terme des dérivées, précisions sur les valeurs en zéro et sur le cas divergent de la série de Mittag-Leffler d’ordre nul.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle des 47 réponses et du rapport sur les conditions de permutation et de dérivation. Précisions sur le singleton en 5b, les singularités des noyaux et l’hypothèse de croissance, les traces à droite et la vérification directe des solutions fondamentales. Figure des deux dérivées d’ordre un demi."
     }
-  ]
+  ],
+  "duree_heures": 4,
+  "date_revision": "2026-11-26",
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2021_Sujet_1A_PSI_Maths.pdf",
+      "sha256": "71e60e22fb7c424175e3331752b0f0f2f5c356db2aa135ba4ba3731cf5500d63",
+      "pages": 8,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "35ee6976c1f49db99a9fa352b826f660507894555ac8654ba8b5d31267dcac55"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "2b7c2e085eb8c4018586e82bbf5ea6c27b79c0bf2635ba03d876dadb9db704cf"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "7bf70b9f459adb78265a25bf0e80d9f98ef1c4f5d56275cb231fe762124c2705"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "10fc67843d92363bc0aaaedca919686242d20004bfdfd73fcfd63e27f7c6dbf9"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "74712392f940a354d5ef9b7ae4f03589a5013b4fa2cd622167b31bce0026feb4"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "32f4db8c785b0ebefd971a7fc0b9d623ae5cd1376103a71bcd9cd73abfa5d2a8"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "200555d13ddb98971538751305c979b4dcec14547d8cfd5bea00b86f97ec8c4f"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "548495cc02e2b254f81bef83c2dee0efdc9480324ec23ed066f303c5821afd46"
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2021_Rapport_Ecrit_PSI_Maths.pdf",
+      "sha256": "1b78488d07473473dc8a1a5b8d26ed06153d6be3618f817b14d7015113b393e9",
+      "pages": 4,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "6439fda8e699e23a6cf383d7fdf3a4771cc810caa97c7951763e00d38fa8b1f5"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "2ad3c4e81a1f710961693887f49f481fa00c0e69a17030b47f563ec6f34c33b7"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "6d69aa509a16a3823771ea46897049ba090508c3a71c91dc0d863c780a3617bb"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "c20b65a71fbec6da4b17ce6dd76a5d12cee88b24c570aefc930e423b76e77bc3"
+        }
+      ]
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1a",
+      "1b",
+      "2a.i",
+      "2a.ii",
+      "2a.iii",
+      "2b.i",
+      "2b.ii",
+      "2b.iii",
+      "2c",
+      "3a",
+      "3b",
+      "3c",
+      "4a",
+      "4b",
+      "4c",
+      "4d",
+      "5a",
+      "5b",
+      "5c",
+      "6",
+      "7a",
+      "7b",
+      "7c",
+      "8a",
+      "8b",
+      "8c",
+      "8d",
+      "9",
+      "10a",
+      "10b",
+      "10c",
+      "10d",
+      "11a",
+      "11b",
+      "11c",
+      "12a",
+      "12b",
+      "12c",
+      "12d",
+      "13a",
+      "13b",
+      "14a",
+      "14b",
+      "14c",
+      "14d",
+      "15",
+      "16"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "1a",
+        "page_pdf": 3,
+        "objet": "Convergence de Gamma aux deux bornes"
+      },
+      {
+        "question": "1b",
+        "page_pdf": 3,
+        "objet": "Relation fonctionnelle et valeurs entières"
+      },
+      {
+        "question": "2a.i",
+        "page_pdf": 3,
+        "objet": "Limite du terme dépendant du paramètre"
+      },
+      {
+        "question": "2a.ii",
+        "page_pdf": 3,
+        "objet": "Continuité avec borne variable"
+      },
+      {
+        "question": "2a.iii",
+        "page_pdf": 3,
+        "objet": "Dérivée de la première intégrale itérée"
+      },
+      {
+        "question": "2b.i",
+        "page_pdf": 3,
+        "objet": "Dérivée par rapport à la borne extérieure"
+      },
+      {
+        "question": "2b.ii",
+        "page_pdf": 4,
+        "objet": "Dérivée par rapport au paramètre intérieur"
+      },
+      {
+        "question": "2b.iii",
+        "page_pdf": 4,
+        "objet": "Dérivée le long de la diagonale"
+      },
+      {
+        "question": "2c",
+        "page_pdf": 4,
+        "objet": "Égalité des intégrales triangulaires"
+      },
+      {
+        "question": "3a",
+        "page_pdf": 4,
+        "objet": "Continuité de la convolution"
+      },
+      {
+        "question": "3b",
+        "page_pdf": 4,
+        "objet": "Commutativité"
+      },
+      {
+        "question": "3c",
+        "page_pdf": 4,
+        "objet": "Associativité"
+      },
+      {
+        "question": "4a",
+        "page_pdf": 4,
+        "objet": "Existence de la transformée de Laplace"
+      },
+      {
+        "question": "4b",
+        "page_pdf": 4,
+        "objet": "Transformée de la dérivée"
+      },
+      {
+        "question": "4c",
+        "page_pdf": 4,
+        "objet": "Croissance de la convolution"
+      },
+      {
+        "question": "4d",
+        "page_pdf": 4,
+        "objet": "Transformée du produit de convolution"
+      },
+      {
+        "question": "5a",
+        "page_pdf": 4,
+        "objet": "Réduction au noyau de la transformée"
+      },
+      {
+        "question": "5b",
+        "page_pdf": 5,
+        "objet": "Annulation de tous les moments"
+      },
+      {
+        "question": "5c",
+        "page_pdf": 5,
+        "objet": "Injectivité par changement de variable"
+      },
+      {
+        "question": "6",
+        "page_pdf": 5,
+        "objet": "Primitives itérées"
+      },
+      {
+        "question": "7a",
+        "page_pdf": 5,
+        "objet": "Dérivées entières des noyaux"
+      },
+      {
+        "question": "7b",
+        "page_pdf": 5,
+        "objet": "Convolution des noyaux"
+      },
+      {
+        "question": "7c",
+        "page_pdf": 5,
+        "objet": "Transformée de Laplace des noyaux"
+      },
+      {
+        "question": "8a",
+        "page_pdf": 6,
+        "objet": "Composition des intégrales fractionnaires"
+      },
+      {
+        "question": "8b",
+        "page_pdf": 6,
+        "objet": "Transformée de l’intégrale fractionnaire"
+      },
+      {
+        "question": "8c",
+        "page_pdf": 6,
+        "objet": "Action sur les noyaux"
+      },
+      {
+        "question": "8d",
+        "page_pdf": 6,
+        "objet": "Injectivité de l’intégrale fractionnaire"
+      },
+      {
+        "question": "9",
+        "page_pdf": 6,
+        "objet": "Primitive de la dérivée et polynôme initial"
+      },
+      {
+        "question": "10a",
+        "page_pdf": 6,
+        "objet": "Inverse à gauche de l’intégration"
+      },
+      {
+        "question": "10b",
+        "page_pdf": 6,
+        "objet": "Dérivée de la constante"
+      },
+      {
+        "question": "10c",
+        "page_pdf": 7,
+        "objet": "Dérivée fractionnaire d’un noyau"
+      },
+      {
+        "question": "10d",
+        "page_pdf": 7,
+        "objet": "Noyau de la dérivée de Riemann–Liouville"
+      },
+      {
+        "question": "11a",
+        "page_pdf": 7,
+        "objet": "Deux dérivées d’ordre un demi"
+      },
+      {
+        "question": "11b",
+        "page_pdf": 7,
+        "objet": "Ordre de composition"
+      },
+      {
+        "question": "11c",
+        "page_pdf": 7,
+        "objet": "Série analytique pondérée et loi des exposants"
+      },
+      {
+        "question": "12a",
+        "page_pdf": 7,
+        "objet": "Noyau de la dérivée de Caputo"
+      },
+      {
+        "question": "12b",
+        "page_pdf": 7,
+        "objet": "Commutateur de la dérivation ordinaire"
+      },
+      {
+        "question": "12c",
+        "page_pdf": 7,
+        "objet": "Différence entre les deux dérivées fractionnaires"
+      },
+      {
+        "question": "12d",
+        "page_pdf": 7,
+        "objet": "Retrait du polynôme initial"
+      },
+      {
+        "question": "13a",
+        "page_pdf": 8,
+        "objet": "Inversion de l’équation d’Abel"
+      },
+      {
+        "question": "13b",
+        "page_pdf": 8,
+        "objet": "Transformée de la solution d’Abel"
+      },
+      {
+        "question": "14a",
+        "page_pdf": 8,
+        "objet": "Trois fonctions de Mittag-Leffler classiques"
+      },
+      {
+        "question": "14b",
+        "page_pdf": 8,
+        "objet": "Rayon de convergence"
+      },
+      {
+        "question": "14c",
+        "page_pdf": 8,
+        "objet": "Transformée de la relaxation fondamentale"
+      },
+      {
+        "question": "14d",
+        "page_pdf": 8,
+        "objet": "Transformée des primitives"
+      },
+      {
+        "question": "15",
+        "page_pdf": 8,
+        "objet": "Équation intégrale et données initiales"
+      },
+      {
+        "question": "16",
+        "page_pdf": 8,
+        "objet": "Transformée puis identification de la solution"
+      }
+    ],
+    "annexes_imposees": []
+  }
 }
