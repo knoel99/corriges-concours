@@ -1898,6 +1898,10 @@
 | 2008 | X | MP | Informatique (option) | [md](2008/x/x_mp_informatique-option_2008/brut.md) | [md](2008/x/x_mp_informatique-option_2008/guide.md) |
 | 2009 | X | MP | Informatique (option) | [md](2009/x/x_mp_informatique-option_2009/brut.md) | [md](2009/x/x_mp_informatique-option_2009/guide.md) |
 | 2018 | X | MP | Maths B | [md](2018/x/x_mp_maths-b_2018/brut.md) | [md](2018/x/x_mp_maths-b_2018/guide.md) |
+| 2019 | X | MP | Maths B | [md](2019/x/x_mp_maths-b_2019/brut.md) | [md](2019/x/x_mp_maths-b_2019/guide.md) |
+| 2020 | X | MP | Maths B | [md](2020/x/x_mp_maths-b_2020/brut.md) | [md](2020/x/x_mp_maths-b_2020/guide.md) |
+| 2021 | X | MP | Maths B | [md](2021/x/x_mp_maths-b_2021/brut.md) | [md](2021/x/x_mp_maths-b_2021/guide.md) |
+| 2022 | X | MP | Maths B | [md](2022/x/x_mp_maths-b_2022/brut.md) | [md](2022/x/x_mp_maths-b_2022/guide.md) |
 | 2011 | X | PC | Physique A | [md](2011/x/x_pc_physique-a_2011/brut.md) | [md](2011/x/x_pc_physique-a_2011/guide.md) |
 | 2012 | X | PC | Physique A | [md](2012/x/x_pc_physique-a_2012/brut.md) | [md](2012/x/x_pc_physique-a_2012/guide.md) |
 | 2013 | X | PC | Physique A | [md](2013/x/x_pc_physique-a_2013/brut.md) | [md](2013/x/x_pc_physique-a_2013/guide.md) |
