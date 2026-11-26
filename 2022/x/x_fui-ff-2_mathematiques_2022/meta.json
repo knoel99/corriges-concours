@@ -30,6 +30,52 @@
       "perimetre": "Rédaction des 16 questions et de leurs subdivisions dans les deux éditions, soit 22 réponses. Lecture directe des trois pages imprimées du problème. Calcul de la matrice de Vandermonde inverse et du reste, contrôle de la singularité logarithmique et du choix du point de divergence, figure originale sur le phénomène de Runge.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Lecture du fac-similé intégral, notamment ses pages 3–5. Les questions 1–16 forment 22 rubriques. Vérification de l’inverse de Vandermonde et des bornes de dérivées, de la formule exponentielle (1), des deux contrôles de quadrature au voisinage de la singularité logarithmique et de la divergence sur une sous-suite dans le phénomène de Runge."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3a",
+      "3b",
+      "4a",
+      "4b",
+      "5",
+      "6",
+      "7a",
+      "7b",
+      "7c",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15a",
+      "15b",
+      "15c",
+      "16"
+    ],
+    "precision": "Les 22 rubriques des deux éditions ont été rapprochées du fascicule institutionnel de 5 pages de l’École polytechnique. Lecture du fac-similé intégral, notamment ses pages 3–5. Les questions 1–16 forment 22 rubriques. Vérification de l’inverse de Vandermonde et des bornes de dérivées, de la formule exponentielle (1), des deux contrôles de quadrature au voisinage de la singularité logarithmique et de la divergence sur une sous-suite dans le phénomène de Runge.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "9985bdebeb69154a2d202a1ccbf7627052918e2a8a09a3e1ce7d48ac4122a262",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Lecture du fac-similé intégral, notamment ses pages 3–5. Les questions 1–16 forment 22 rubriques. Vérification de l’inverse de Vandermonde et des bornes de dérivées, de la formule exponentielle (1), des deux contrôles de quadrature au voisinage de la singularité logarithmique et de la divergence sur une sous-suite dans le phénomène de Runge.",
+      "commit_redaction_anterieure": "f36c9effa08e6abcbf64c29ffeabfade869866e0"
+    }
+  }
 }
