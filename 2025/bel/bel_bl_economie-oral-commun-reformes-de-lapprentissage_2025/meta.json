@@ -1,0 +1,69 @@
+{
+  "slug": "bel_bl_economie-oral-commun-reformes-de-lapprentissage_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Économie (oral commun) — Réformes de l’apprentissage",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "Quel effet des réformes de l’apprentissage ?",
+  "questions": 1,
+  "sujets": 1,
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_dossiers_23_juin_economie.pdf#page=19",
+    "sujet_sha256": "e3a461318518d272cca4165a16d733c3e528cde116ca19a86b4ed561a46436b9",
+    "sujet_pages": 26,
+    "page_pdf": 19,
+    "fin_pdf": 26,
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_economie_tronc_commun.pdf",
+    "rapport_sha256": "b0b1a696afc5d758d40283be9361a3fe50abd56041e7cad3533c62eabb4c5dd7",
+    "rapport_pages": 2
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Quel effet des réformes de l’apprentissage ?"
+    ],
+    "documents_entierement_traites": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "precision": "Exposé sur la question de la page PDF 19, à partir des cinq documents du dossier. Le rapport commun cite le sujet page 2. Les questions de discussion sont éditoriales."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Quel effet des réformes de l’apprentissage ?",
+      "fichier": "figures/emploi-stable.svg",
+      "legende": "Part d’emploi stable à trente mois selon le diplôme obtenu en 2017 et la voie suivie, en pourcentage. Document 3."
+    },
+    {
+      "numero": 2,
+      "question": "Quel effet des réformes de l’apprentissage ?",
+      "fichier": "figures/suites-rupture.svg",
+      "legende": "Suites à six mois des ruptures précoces pour 100 contrats de niveau bac + 2 commencés en 2021. Calculs d’après le document 5b."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture des deux profils d’aide, de l’enquête de 2017, du double axe Unédic et des cohortes de rupture de la Dares. Analyse des contre-factuels de recrutement et des rendements différenciés. Rédaction intégrale des deux éditions, figures originales et entraînement à l’entretien."
+    }
+  ]
+}
