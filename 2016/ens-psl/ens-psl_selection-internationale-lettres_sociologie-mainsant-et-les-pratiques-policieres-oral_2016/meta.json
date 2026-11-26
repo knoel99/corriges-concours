@@ -1,0 +1,82 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_sociologie-mainsant-et-les-pratiques-policieres-oral_2016",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Sociologie — Mainsant et les pratiques policières (oral)",
+    "annee": 2016,
+    "modalite": "oral"
+  },
+  "intitule": "Commenter l’extrait de Gwénaëlle Mainsant sur la construction des populations cibles et la division du travail policier.",
+  "gabarit": "oral",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/ORAUX-SOCIO-SIL2016.pdf",
+    "sujet_sha256": "6e54af78e61d6d33745598ad7410843694bb396af07bd501ea9eac80b17bbb35",
+    "index": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2016-lettres",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/ORAUX-SOCIO-SIL2016.pdf",
+        "sha256": "6e54af78e61d6d33745598ad7410843694bb396af07bd501ea9eac80b17bbb35",
+        "pages": 11,
+        "pages_du_feuillet": [
+          5,
+          6
+        ]
+      },
+      {
+        "role": "attentes générales du jury",
+        "url": "https://www.ens.psl.eu/IMG/file/internationale/2008/Lettres/Lettres.pdf",
+        "sha256": "3a360c4a7769d5dbf001d43040fcd150dcf10e4ee661a0264586d3fb340a24f4",
+        "pages": 4,
+        "pages_utiles": [
+          3,
+          4
+        ]
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/statistiques-police.svg",
+      "question": "Commentaire",
+      "legende": "Une estimation de population et un nombre d’arrestations renseignent sur des processus et des unités différents."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/prestige-professionnel.svg",
+      "question": "Commentaire",
+      "legende": "Les stéréotypes professionnels ferment l’accès à des tâches prestigieuses et donc à la reconnaissance qui leur est attachée."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "sociologie_psl_oraux_individuels",
+      "agent": "sociologie_psl_oraux_individuels",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Distinction entre population et enregistrements, gestion différentielle, étiquetage, division sexuée des tâches et critique des instruments de mesure."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "limites": "Feuillet de sociologie, pages 5 à 6 du recueil. Le document général sur les attentes du jury est reproduit sur l’index de la session. Aucun rapport propre à ce passage n’y est proposé."
+  }
+}
