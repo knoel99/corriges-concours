@@ -1,0 +1,72 @@
+{
+  "slug": "bel_bl_version-grecque_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Version grecque",
+    "intitule": "Version grecque – Épouses indignes",
+    "annee": 2024,
+    "modalite": "écrit",
+    "duree": "4 heures"
+  },
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2024_blses_sujet_version_grecque.pdf",
+    "sha256_sujet": "23ce69d976755cab0459cce084af60ee07c46a2db020559029d50682f171842c",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_ecrit_grec_ancien.pdf",
+    "sha256_rapport": "58779e84b43330be992adf2a4848508f777f049a83dc904568070f93d7c83224"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "date": "2026-11-26",
+      "agent": "fui_physique_un",
+      "fournisseur": "codex",
+      "perimetre": "Traduction française des 21 vers visibles du feuillet, avec sa note sur Iphigénie, les changements de personne et les optatifs itératifs. Lecture visuelle des fac-similés et consultation du rapport 2024 propre à la discipline."
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version grecque – Épouses indignes"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Traduction française des 21 vers visibles du feuillet, avec sa note sur Iphigénie, les changements de personne et les optatifs itératifs.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "auteur_ou_titre": "Euripide, Électre",
+      "passages_ou_documents": [
+        "Vers 1 à 4 · Le prétexte",
+        "Vers 5 à 11 · Le miroir et le jugement",
+        "Vers 12 à 15 · Le sort de Troie",
+        "Vers 16 à 21 · La gloire possible"
+      ],
+      "pages_pdf_par_passage_ou_document": {
+        "Vers 1 à 4 · Le prétexte": 1,
+        "Vers 5 à 11 · Le miroir et le jugement": 1,
+        "Vers 12 à 15 · Le sort de Troie": 1,
+        "Vers 16 à 21 · La gloire possible": 1
+      },
+      "repères_imprimés": [
+        "1–4",
+        "5–11",
+        "12–15",
+        "16–21"
+      ]
+    }
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Version grecque – Épouses indignes",
+      "legende": "Le miroir passe de l’objet de toilette au terme d’une leçon morale prononcée par Électre."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "slug": "bel_bl_version-latine_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Version latine",
+    "intitule": "Version latine – Déloyautés en série",
+    "annee": 2024,
+    "modalite": "écrit",
+    "duree": "4 heures"
+  },
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2024_blses_sujet_version_latine.pdf",
+    "sha256_sujet": "f9349775943faa5741441fa0801ddb607b339b8c5452d9231e8529e095fcc457",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_ecrit_latin.pdf",
+    "sha256_rapport": "4a949623269740725504f3e2f5fd646c4bc012dda00aca6bd54108c264b1058e"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "date": "2026-11-26",
+      "agent": "fui_physique_un",
+      "fournisseur": "codex",
+      "perimetre": "Traduction française de toutes les phrases du feuillet, des trois discours rapportés, des deux notes et des marques temporelles. Lecture visuelle des fac-similés et consultation du rapport 2024 propre à la discipline."
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version latine – Déloyautés en série"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Traduction française de toutes les phrases du feuillet, des trois discours rapportés, des deux notes et des marques temporelles.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "auteur_ou_titre": "César, Guerre civile, livre I",
+      "passages_ou_documents": [
+        "Les messagers et le conseil",
+        "Ce que Domitius ne dit pas",
+        "La réponse de Pompée",
+        "Les soldats délibèrent"
+      ],
+      "pages_pdf_par_passage_ou_document": {
+        "Les messagers et le conseil": 1,
+        "Ce que Domitius ne dit pas": 1,
+        "La réponse de Pompée": 1,
+        "Les soldats délibèrent": 1
+      },
+      "repères_imprimés": [
+        "1–4",
+        "4–9",
+        "9–12",
+        "12–16"
+      ]
+    }
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Version latine – Déloyautés en série",
+      "legende": "Trois prises de parole font apparaître le décalage entre l’annonce du conseil et le projet de Domitius."
+    }
+  ]
+}

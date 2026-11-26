@@ -787,6 +787,8 @@
 | 2026 | BEL | BL | Portugais | [md](2026/bel/bel_bl_portugais_2026/brut.md) | [md](2026/bel/bel_bl_portugais_2026/guide.md) |
 | 2026 | BEL | BL | Russe | [md](2026/bel/bel_bl_russe_2026/brut.md) | [md](2026/bel/bel_bl_russe_2026/guide.md) |
 | 2024 | BEL | BL | Sciences sociales | [md](2024/bel/bel_bl_sciences-sociales_2024/brut.md) | [md](2024/bel/bel_bl_sciences-sociales_2024/guide.md) |
+| 2024 | BEL | B/L | Version grecque | [md](2024/bel/bel_bl_version-grecque_2024/brut.md) | [md](2024/bel/bel_bl_version-grecque_2024/guide.md) |
+| 2024 | BEL | B/L | Version latine | [md](2024/bel/bel_bl_version-latine_2024/brut.md) | [md](2024/bel/bel_bl_version-latine_2024/guide.md) |
 | 2025 | BEL | BL | Russe | [md](2025/bel/bel_bl_russe_2025/brut.md) | [md](2025/bel/bel_bl_russe_2025/guide.md) |
 | 2025 | BEL | BL | Sciences sociales | [md](2025/bel/bel_bl_sciences-sociales_2025/brut.md) | [md](2025/bel/bel_bl_sciences-sociales_2025/guide.md) |
 | 2025 | BEL | BL | Économie (oral commun) — Retour de l’inflation | [md](2025/bel/bel_bl_economie-oral-commun-retour-de-linflation_2025/brut.md) | [md](2025/bel/bel_bl_economie-oral-commun-retour-de-linflation_2025/guide.md) |
