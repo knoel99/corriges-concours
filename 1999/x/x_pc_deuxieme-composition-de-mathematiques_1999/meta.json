@@ -1,0 +1,116 @@
+{
+  "slug": "x_pc_deuxieme-composition-de-mathematiques_1999",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "PC",
+    "annee": 1999,
+    "matiere": "Deuxième composition de mathématiques",
+    "modalite": "écrit"
+  },
+  "intitule": "Deuxième composition de mathématiques",
+  "theme": "Approximation d'une intégrale et normes d'une forme linéaire.",
+  "organisateurs": "École polytechnique et École supérieure de physique et de chimie industrielles",
+  "identification": "Les deux établissements sont nommés en toutes lettres. Filière PC. Deuxième composition de mathématiques.",
+  "questions": 17,
+  "sources": {
+    "sujet": "https://www.sujetsetcorriges.fr/dl/X/Maths/PC/sec-x-1999-maths2-PC.pdf",
+    "sha256_sujet": "e494a48113f07c86de08de38f96636e16c160eb2af771aa4a032905a93c2785d",
+    "pages_sujet": 4,
+    "collection": "https://www.sujetsetcorriges.fr/cpge-spe/x/x-mathematiques/x-espci-maths-pc/",
+    "notice_ups": "m99xp2",
+    "pieces_ups": [
+      {
+        "id": "m99xp2",
+        "type": "énoncé",
+        "auteur": "École Polytechnique",
+        "source": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-5e28a4bc6abc5e0c325c",
+        "sha256": "cf24d637bcc73357f4d10edaf2259aa7a300687f4d6ac559c7a3604f017dafca"
+      },
+      {
+        "id": "m99xp2",
+        "type": "énoncé",
+        "auteur": "Mme Latrémolière",
+        "source": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-64d341a8c0f4aa684731",
+        "sha256": "31d129c576f62c792ec4758400ca3c3603648a2189af0b3aae904f37a0512078"
+      },
+      {
+        "id": "m99xp2",
+        "type": "énoncé",
+        "auteur": "Lemberg",
+        "source": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-d014dc7f5221b422f156",
+        "sha256": "80ff56af952a9710fb8772d655c35b744fb571cdba2f7c9cfb29b4f1d2ba024c"
+      },
+      {
+        "id": "m99xp2",
+        "type": "corrigé",
+        "auteur": "Mme Mazet",
+        "source": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-e94a0bbfc5b8d95cd20f",
+        "sha256": "3f35a4d338f81c4f6d0b5f60d58a630cce6fda616518cd894f1f450fb9b44139"
+      },
+      {
+        "id": "m99xp2",
+        "type": "corrigé",
+        "auteur": "Lemberg",
+        "source": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-90ea03bf7b9e452a0ae3",
+        "sha256": "a369e14a736fd90fe1c817b161759817ae38b6a187d84978cb128f7144b567aa"
+      }
+    ],
+    "recoupement": null,
+    "rapport_jury": null,
+    "precision_rapport": "Aucun rapport de jury identifié dans les deux collections consultées."
+  },
+  "figures": [
+    {
+      "fichier": "figures/figure-1.svg",
+      "question": "5.a",
+      "legende": "Les poids de la formule fermée à cinq points"
+    },
+    {
+      "fichier": "figures/figure-2.svg",
+      "question": "10.b",
+      "legende": "Évolution des deux normes de la forme intégrale"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "x_maths_b_recentes",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Contrôle de la garde et des parties du fac-similé, résolution de chaque consigne dans les deux éditions, indications par subdivision, figures mathématiques originales et rapprochement avec la notice UPS."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2.a",
+      "2.b",
+      "3",
+      "4.a",
+      "4.b",
+      "5.a",
+      "5.b",
+      "6.a",
+      "6.b",
+      "7",
+      "8.a",
+      "8.b",
+      "9.a",
+      "9.b",
+      "10.a",
+      "10.b"
+    ],
+    "precision": "Contrôle de la garde et des parties du fac-similé, résolution de chaque consigne dans les deux éditions, indications par subdivision, figures mathématiques originales et rapprochement avec la notice UPS.",
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "perimetre": "Contrôle de la garde et des parties du fac-similé, résolution de chaque consigne dans les deux éditions, indications par subdivision, figures mathématiques originales et rapprochement avec la notice UPS.",
+      "sha256_sujet_controle": "e494a48113f07c86de08de38f96636e16c160eb2af771aa4a032905a93c2785d"
+    }
+  }
+}
