@@ -38,10 +38,10 @@ class Moteur(unittest.TestCase):
     def test_indices_aux_bornes(self):
         A = [0.295, 0.390, 0.480, 0.565]
         for n, v in enumerate(A[:-1]):
-            self.assertEqual(p.indice(A, v), n)
-        self.assertEqual(p.indice(A, .435), 1)
+            self.assertEqual(p.Indice(A, v), n)
+        self.assertEqual(p.Indice(A, .435), 1)
         with self.assertRaises(ValueError):
-            p.indice(A, A[-1])
+            p.Indice(A, A[-1])
 
     def test_interpolation_et_sous_table(self):
         P = [.295, .39, .48]
@@ -49,6 +49,10 @@ class Moteur(unittest.TestCase):
         T = [[2.42,3.454,4.408],[2.702,3.776,4.852],
              [3.064,4.162,5.248],[3.27,4.412,5.552]]
         ST = p.sous_table(T, P, N, .435, 1500)
+        self.assertEqual(len(p.T),13)
+        self.assertTrue(all(len(ligne)==7 for ligne in p.T))
+        self.assertEqual(p.T[6][4],3.388)
+        self.assertEqual(ST,p.sous_table(p.T,p.P,p.Nm,.435,1500))
         self.assertEqual(ST, [[4.162,5.248,.39,1300],[4.412,5.552,.48,1700]])
         for i, n in enumerate(N[-2:]):
             for j, v in enumerate(P[-2:]):

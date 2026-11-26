@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Sujet officiel](https://www.banquept.fr/documents/2017/info_mod_2017_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2017/rapport_info_model_ecrit_2017.pdf) · [Livret de la session](https://www.banquept.fr/documents/livret/2017/Livret_PT_2017.pdf#page=12)
 
 **Moteurs à allumage commandé.** Épreuve de quatre heures, sans calculatrice. La première partie porte sur le cycle thermodynamique et le profil de température dans un cylindre. La seconde étudie la cartographie des durées d’injection et la boucle de régulation de richesse. Les repères M1 à M23 et I1 à I25 conservent la numérotation propre à chaque partie. Le sujet se termine page 16.
@@ -176,7 +178,7 @@ Un chiffre hexadécimal correspond exactement à quatre bits. Les adresses de 24
 Dans la liste triée, maintenir deux bornes vérifiant $A[\mathrm{bas}]\le v<A[\mathrm{haut}]$. La comparaison au milieu conserve cet invariant et réduit l’écart jusqu’à un. L’indice recherché est alors la borne basse. La recherche coûte $O(\log n)$, pour une liste de $n$ valeurs, et respecte la borne large du côté inférieur.
 
 ```python
-def indice(A, val):
+def Indice(A, val):
     if len(A) < 2 or not A[0] <= val < A[-1]:
         raise ValueError("Valeur hors des intervalles de la table")
     bas, haut = 0, len(A) - 1
@@ -201,12 +203,32 @@ def extraire(T, P, Nm, i, j):
 
 ### Question I10 · Enchaînement de la recherche et de l’extraction
 
-Rechercher le régime sur l’axe des lignes et la pression sur l’axe des colonnes, puis appeler l’extraction avec ces indices dans cet ordre. On conserve le résultat dans la variable $ST$. Pour 1 500 tr/min et 0,435 bar, les indices à partir de zéro sont $i=2$ et $j=1$.
+Rechercher le régime sur l’axe des lignes et la pression sur l’axe des colonnes, puis appeler l’extraction avec ces indices dans cet ordre. On conserve le résultat dans la variable $ST$. Pour 1 500 tr/min et 0,435 bar, les indices à partir de zéro sont $i=2$ et $j=1$. La table intégrale ci-dessous conserve la valeur 3,388 ms effectivement imprimée au croisement 3 200 tr/min et 0,645 bar.
 
 ```python
+# Table numérique de la figure 2 : pression en bar, régime en tr/min, durées en ms.
+P = [.295, .39, .48, .565, .645, .72, .79]
+Nm = [600, 900, 1300, 1700, 2200, 2700, 3200, 3800, 4400, 5000, 5600, 6300, 7000]
+T = [
+    [2.42, 3.454, 4.408, 5.44, 6.484, 7.522, 8.548],
+    [2.702, 3.776, 4.852, 5.9, 6.962, 8.004, 9.036],
+    [3.064, 4.162, 5.248, 6.33, 7.418, 8.432, 9.434],
+    [3.27, 4.412, 5.552, 6.644, 7.734, 8.774, 9.766],
+    [3.432, 4.63, 5.804, 6.952, 8.062, 9.126, 10.154],
+    [3.498, 4.71, 5.916, 7.09, 8.23, 9.334, 10.39],
+    [3.56, 4.778, 6.022, 7.214, 3.388, 9.552, 10.614],
+    [3.658, 4.878, 6.168, 7.358, 8.558, 9.742, 10.844],
+    [3.74, 5.008, 6.324, 7.51, 8.738, 9.962, 11.066],
+    [3.816, 5.134, 6.48, 7.708, 8.962, 10.204, 11.32],
+    [3.908, 5.29, 6.622, 7.89, 9.174, 10.408, 11.582],
+    [3.99, 5.39, 6.754, 8.076, 9.372, 10.612, 11.79],
+    [4.03, 5.436, 6.808, 8.152, 9.452, 10.7, 11.898],
+]
+
+
 def sous_table(T, P, Nm, Pcol, Nmot):
-    i = indice(Nm, Nmot)
-    j = indice(P, Pcol)
+    i = Indice(Nm, Nmot)
+    j = Indice(P, Pcol)
     ST = extraire(T, P, Nm, i, j)
     return ST
 ```
@@ -251,7 +273,7 @@ Pour une matrice triangulaire générale de taille $n$, la substitution cumule $
 
 ### Question I14 · Interpolation bilinéaire
 
-Appelons $a,b,c,d$ les durées lues aux quatre coins dans l’ordre des lignes. Les coefficients sont $b_0=a$, $b_1=b-a$, $b_2=c-a$, $b_3=d-b-c+a$. La dernière formule imprimée page 11 comporte le signe opposé devant $a$. En effet, $t(1,1)=b_0+b_1+b_2+b_3=d$ impose ce **plus**. En fonction des coordonnées réduites $x$ (pression) et $y$ (régime), le résultat est $a+(b-a)x+(c-a)y+(d-b-c+a)xy$. Il reproduit chacun des quatre coins.
+Appelons $a,b,c,d$ les durées lues aux quatre coins dans l’ordre des lignes. Les coefficients sont $b_0=a$, $b_1=b-a$, $b_2=c-a$, $b_3=d-b-c+a$. La dernière formule imprimée page 11 comporte le signe opposé devant $a$. En effet, $t(1,1)=b_0+b_1+b_2+b_3=d$ impose ce **plus**. En fonction des coordonnées réduites $x$ (pression) et $y$ (régime), le résultat est $a+(b-a)x+(c-a)y+(d-b-c+a)xy$. Il reproduit chacun des quatre coins. À 0,435 bar et 1 500 tr/min, $x=y=1/2$ et les quatre poids valent $1/4$. La moyenne de 4,162, 5,248, 4,412 et 5,552 donne **4,8435 ms**.
 
 ```python
 def interpol(ST, Pcol, Nmot):
@@ -322,7 +344,7 @@ Le sujet compte **deux cycles moteur par tour** pour cette simulation. À 4 000 
 
 ### Question I21 · Liste des instants
 
-La simulation dure $100T_{\rm cycle}=0{,}75$ s. Avec $dt=2$ µs, on compte 375 000 intervalles et **375 001 instants**. Les indices entiers évitent les dérives dues à l’addition répétée du pas. L’appel de la fonction avec les bornes et le pas donnés crée la liste demandée.
+La simulation dure $100T_{\rm cycle}=0{,}75$ s. Avec $dt=2$ µs, on compte 375 000 intervalles et **375 001 instants**. Les indices entiers évitent les dérives dues à l’addition répétée du pas. L’instruction `temps = base_temps(t0, tn, dt)` crée la liste demandée.
 
 ```python
 Tcycle = 60 / (4000 * 2)
@@ -332,15 +354,17 @@ tn = 100 * Tcycle
 
 
 def base_temps(debut, fin, pas):
+    if pas <= 0 or fin < debut:
+        raise ValueError("Pas positif et bornes croissantes requis")
     intervalles = round((fin - debut) / pas)
-    if pas <= 0 or intervalles < 0 or not isclose(debut + intervalles*pas, fin):
+    if not isclose(debut + intervalles*pas, fin):
         raise ValueError("Les bornes doivent être espacées d'un nombre entier de pas")
     return [debut + i * pas for i in range(intervalles + 1)]
 ```
 
 ### Question I22 · Simulation de la boucle échantillonnée
 
-Au rang $i$, la dynamique utilise la durée d’injection déjà connue et l’intégrateur utilise la lecture de sonde déjà mémorisée. On avance d’un pas avec ces données, puis on mémorise la nouvelle tension si l’indice atteint un multiple de $T_{\rm cycle}/dt=3750$. Entre lectures on recopie la tension précédente. L’initialisation reprend les trois listes demandées, $w_0=0{,}9$, un cumul nul et $t_{\rm injc0}=0{,}0123$ s. Cette dernière conversion fixe une unité commune avec $dt$. Le gain est son inverse.
+Au rang $i$, la dynamique utilise la durée d’injection déjà connue et l’intégrateur utilise la lecture de sonde déjà mémorisée. On avance d’un pas avec ces données, puis on mémorise la nouvelle tension si l’indice atteint un multiple de $T_{\rm cycle}/dt=3750$. Entre lectures on recopie la tension précédente. L’initialisation reprend les trois listes demandées, $w_0=0{,}9$, un cumul nul et $t_{\rm injc0}=0{,}0123$ s. Cette dernière conversion fixe une unité commune avec $dt$. Le gain est son inverse. Les lectures qui font basculer la tension ont lieu aux cycles 25, 42, 58, 70, 83 et 94, soit pour la première à 0,1875 s.
 
 ```python
 def simuler(temps, dt, Tcycle, tau1, tau2, K, Kpp, Kpn, Ki, tinjc0):
@@ -372,7 +396,7 @@ def simulation_sujet():
 
 ### Question I23 · Tracé de la richesse
 
-Tracer le temps en abscisse, porter la suite des richesses en ordonnée, puis afficher une légende et une grille. Les paramètres officiels fournissent un dépassement modéré au-dessus de la richesse unité, suivi d’oscillations rythmées par la lecture périodique de la sonde. La figure est recalculée à partir des sorties du programme.
+Tracer le temps en abscisse, porter la suite des richesses en ordonnée, puis afficher une légende et une grille. Les paramètres officiels fournissent un dépassement modéré au-dessus de la richesse unité, suivi d’oscillations rythmées par la lecture périodique de la sonde. Le maximum calculé est 1,018105 et la richesse finale est 0,992762 à 0,75 s. La figure est recalculée à partir des sorties du programme.
 
 ```python
 def tracer(temps, liste_richesse):
@@ -401,6 +425,25 @@ if __name__ == "__main__":
 
 La requête crée la table de destination à partir de toutes les colonnes. La comparaison stricte exclut les lignes dont la qualité est exactement 95. Le champ est supposé enregistré sur l’échelle en pourcentage indiquée dans le sujet.
 
+```sql
+CREATE TABLE table_injection_95 AS
+SELECT *
+FROM table_injection
+WHERE "Qualité" > 95;
+```
+
 ### Question I25 · Sélectionner les mesures optimales dans la plage
 
 On restreint d’abord la table à la plage de pression et à la plage de rotation, bornes incluses. On cherche ensuite le maximum de la qualité **dans cette même sélection** et l’on renvoie les trois colonnes demandées pour chaque ex æquo. Si la sélection est vide, le résultat est vide.
+
+```sql
+WITH admissibles AS (
+    SELECT Pression, Rotation, "Durée_injection", "Qualité"
+    FROM table_injection_95
+    WHERE Pression BETWEEN 0.3 AND 0.4
+      AND Rotation BETWEEN 1300 AND 1700
+)
+SELECT Pression, Rotation, "Durée_injection"
+FROM admissibles
+WHERE "Qualité" = (SELECT MAX("Qualité") FROM admissibles);
+```

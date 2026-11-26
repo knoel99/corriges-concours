@@ -60,6 +60,22 @@
         "guide"
       ],
       "perimetre": "Réponses M1–M23 et I1–I25. Thermodynamique du moteur à allumage commandé, profil de température, capteur, calculateur, interpolation, régulation et requêtes SQL."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle du tableau officiel et des 48 repères sur le feuillet, raccords thermiques, signe du quatrième coefficient, injection et temps de bascule des six lectures de sonde. Insertion des deux requêtes dans chacune des éditions et exécution SQL sur un jeu avec ex æquo."
     }
   ],
   "couverture": {

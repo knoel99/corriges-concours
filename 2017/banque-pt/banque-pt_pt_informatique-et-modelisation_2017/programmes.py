@@ -9,7 +9,7 @@ def vitesse_moteur(tdent):
 
 
 # Q31
-def indice(A, val):
+def Indice(A, val):
     if len(A) < 2 or not A[0] <= val < A[-1]:
         raise ValueError("Valeur hors des intervalles de la table")
     bas, haut = 0, len(A) - 1
@@ -29,9 +29,29 @@ def extraire(T, P, Nm, i, j):
 
 
 # Q33
+# Table numérique de la figure 2 : pression en bar, régime en tr/min, durées en ms.
+P = [.295, .39, .48, .565, .645, .72, .79]
+Nm = [600, 900, 1300, 1700, 2200, 2700, 3200, 3800, 4400, 5000, 5600, 6300, 7000]
+T = [
+    [2.42, 3.454, 4.408, 5.44, 6.484, 7.522, 8.548],
+    [2.702, 3.776, 4.852, 5.9, 6.962, 8.004, 9.036],
+    [3.064, 4.162, 5.248, 6.33, 7.418, 8.432, 9.434],
+    [3.27, 4.412, 5.552, 6.644, 7.734, 8.774, 9.766],
+    [3.432, 4.63, 5.804, 6.952, 8.062, 9.126, 10.154],
+    [3.498, 4.71, 5.916, 7.09, 8.23, 9.334, 10.39],
+    [3.56, 4.778, 6.022, 7.214, 3.388, 9.552, 10.614],
+    [3.658, 4.878, 6.168, 7.358, 8.558, 9.742, 10.844],
+    [3.74, 5.008, 6.324, 7.51, 8.738, 9.962, 11.066],
+    [3.816, 5.134, 6.48, 7.708, 8.962, 10.204, 11.32],
+    [3.908, 5.29, 6.622, 7.89, 9.174, 10.408, 11.582],
+    [3.99, 5.39, 6.754, 8.076, 9.372, 10.612, 11.79],
+    [4.03, 5.436, 6.808, 8.152, 9.452, 10.7, 11.898],
+]
+
+
 def sous_table(T, P, Nm, Pcol, Nmot):
-    i = indice(Nm, Nmot)
-    j = indice(P, Pcol)
+    i = Indice(Nm, Nmot)
+    j = Indice(P, Pcol)
     ST = extraire(T, P, Nm, i, j)
     return ST
 
@@ -107,8 +127,10 @@ tn = 100 * Tcycle
 
 
 def base_temps(debut, fin, pas):
+    if pas <= 0 or fin < debut:
+        raise ValueError("Pas positif et bornes croissantes requis")
     intervalles = round((fin - debut) / pas)
-    if pas <= 0 or intervalles < 0 or not isclose(debut + intervalles*pas, fin):
+    if not isclose(debut + intervalles*pas, fin):
         raise ValueError("Les bornes doivent être espacées d'un nombre entier de pas")
     return [debut + i * pas for i in range(intervalles + 1)]
 
