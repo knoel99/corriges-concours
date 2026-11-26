@@ -5,6 +5,9 @@
 | 2020 | Banque PT | PT | Langue vivante A | [md](2020/banque-pt/banque-pt_pt_langue-vivante-a_2020/brut.md) | [md](2020/banque-pt/banque-pt_pt_langue-vivante-a_2020/guide.md) |
 | 2021 | Banque PT | PT | Langue vivante A | [md](2021/banque-pt/banque-pt_pt_langue-vivante-a_2021/brut.md) | [md](2021/banque-pt/banque-pt_pt_langue-vivante-a_2021/guide.md) |
 | 2022 | Banque PT | PT | Langue vivante A | [md](2022/banque-pt/banque-pt_pt_langue-vivante-a_2022/brut.md) | [md](2022/banque-pt/banque-pt_pt_langue-vivante-a_2022/guide.md) |
+| 2023 | Banque PT | PT | Langue vivante A | [md](2023/banque-pt/banque-pt_pt_langue-vivante-a_2023/brut.md) | [md](2023/banque-pt/banque-pt_pt_langue-vivante-a_2023/guide.md) |
+| 2024 | Banque PT | PT | Langue vivante A | [md](2024/banque-pt/banque-pt_pt_langue-vivante-a_2024/brut.md) | [md](2024/banque-pt/banque-pt_pt_langue-vivante-a_2024/guide.md) |
+| 2025 | Banque PT | PT | Langue vivante A | [md](2025/banque-pt/banque-pt_pt_langue-vivante-a_2025/brut.md) | [md](2025/banque-pt/banque-pt_pt_langue-vivante-a_2025/guide.md) |
 | 2025 | Banque PT | PT | Mathématiques C | [md](2025/banque-pt/banque-pt_pt_maths-c_2025/brut.md) | [md](2025/banque-pt/banque-pt_pt_maths-c_2025/guide.md) |
 | 2025 | Agro-Véto | BCPST | Anglais | [md](2025/agro-veto/agro-veto_bcpst_anglais_2025/brut.md) | [md](2025/agro-veto/agro-veto_bcpst_anglais_2025/guide.md) |
 | 2025 | Agrégation | Chimie | Composition de chimie | [md](2025/agregation/agregation_chimie_composition-de-chimie_2025/brut.md) | [md](2025/agregation/agregation_chimie_composition-de-chimie_2025/guide.md) |
