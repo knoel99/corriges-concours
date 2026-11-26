@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le jury donne les pages 19 à 23 du Juge et l’historien. Considérations en marge du procès Sofri, dans sa traduction française publiée chez Verdier en 1997. Une coupure est signalée au milieu de l’extrait.
 
 ## Pourquoi rouvrir le rapprochement entre juge et historien ?
@@ -22,10 +24,12 @@ Les Rois thaumaturges, de Bloch, et La Grande Peur, de Georges Lefebvre, font ap
 
 Le second mouvement corrige un effet inattendu du succès de cette historiographie. En récusant l’historien qui distribue des verdicts, on en vient à récuser l’exigence de preuve elle-même. La référence à l’érudit jésuite Henri Griffet rappelle que le rapprochement avec le juge peut avoir une autre histoire que celle du moralisme. Ginzburg s’en prend à l’usage exclusif du terme « représentation ». Étudier comment une source a été produite et codée est indispensable. En tirer qu’elle ne renseigne jamais sur autre chose qu’elle-même transformerait cette précaution en obstacle.
 
+Le raccord de part et d’autre de la coupe mérite attention. Griffet fournit d’abord une raison de rapprocher deux métiers. Au retour de la coupure, Ginzburg précise que preuve et vérité ont été historiquement liées, sans déclarer ce lien nécessaire. L’auteur peut ainsi défendre l’exigence de preuve sans supposer que toutes les époques aient eu les mêmes procédures, ni que juge et historien obéissent à des règles identiques. Une trace que la procédure pénale ne permet pas de retenir peut encore renseigner, sous contrôle critique, sur les catégories d’une société. Réciproquement, l’intérêt qu’y trouve un historien ne lui confère aucune valeur nouvelle dans un procès.
+
 La critique vise aussi le réalisme trop facile du « reflet ». Un récit de brigands ne prouve pas qu’une bande existe. Mais plusieurs témoignages confrontés à leurs dates, à leurs dépendances et à d’autres traces peuvent prouver qu’une rumeur a circulé en un lieu donné et a entraîné un comportement. Aucun accès direct au réel n’est postulé. Une proposition déterminée est mise à l’épreuve d’éléments dont on discute la valeur. Le scepticisme radical, lui, exempterait sa propre thèse du doute qu’il applique aux autres.
 
 ## Deux usages de la preuve et deux types de conclusion
 
-Ginzburg peut reprendre la formule minimale « x a fait y » après avoir critiqué une histoire centrée sur les responsables individuels. Le x peut être anonyme. Surtout, la détermination d’un fait ne dicte ni une intention unique ni une appréciation morale. Un tribunal pourrait prononcer un non-lieu parce que les agressions imputées aux brigands sont sans preuve. L’historien peut ouvrir là son enquête sur une peur collective. L’inexistence de l’agent supposé rend cette question plus aiguë.
+Ginzburg peut reprendre la formule minimale « x a fait y » après avoir critiqué une histoire centrée sur les responsables individuels. Le x peut être anonyme. Surtout, la détermination d’un fait ne dicte ni une intention unique ni une appréciation morale. Dans la comparaison proposée par Ginzburg, un juge pourrait clore l’enquête par un non-lieu faute de charges suffisantes pour poursuivre l’agression alléguée. Une telle décision ne démontre à elle seule ni que personne n’a eu peur, ni que la rumeur s’est propagée. L’historien peut ouvrir là son enquête sur une peur collective. L’inexistence de l’agent supposé rend cette question plus aiguë.
 
 Le texte est un plaidoyer situé, marqué par le « pour moi » et par l’expérience d’un procès. Il ne fournit pas un manuel universel des règles probatoires. À une question sur la valeur d’un faux, la réponse peut donc distinguer deux preuves. Un acte apocryphe ne prouve pas la donation qu’il proclame. Une fois daté, attribué et replacé dans un conflit, il peut prouver le besoin d’inventer un titre ou de légitimer une prétention. La critique documentaire rend les deux jugements compatibles.
