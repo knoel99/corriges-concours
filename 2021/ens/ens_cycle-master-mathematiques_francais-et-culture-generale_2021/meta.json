@@ -1,0 +1,154 @@
+{
+  "slug": "ens_cycle-master-mathematiques_francais-et-culture-generale_2021",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "Cycle master mathématiques",
+    "matiere": "Français et culture générale",
+    "annee": 2021,
+    "modalite": "écrit",
+    "etablissements_sur_garde": [
+      "École normale supérieure Paris-Saclay",
+      "École normale supérieure de Rennes"
+    ],
+    "phase": "admission"
+  },
+  "intitule": "Français et culture générale",
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2021_Sujet_2C_Maths_Francais.pdf",
+    "sujet_sha256": "93fdb7015d6c5c757fcc9fa982678a45ae25cfdb8414c21095ddd3257ee8d312",
+    "modalites": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/CONCOURS_2021/Modalit%C3%A9s%20d%27inscription_2C_2021.pdf#page=2",
+    "modalites_sha256": "b3f1b0a9bda5be3ee854e35655896e6aa6d6eff1f79ee92ab5186490eb7ff25e"
+  },
+  "figures": [
+    {
+      "fichier": "figures/comparaison.svg",
+      "question": "1",
+      "legende": "Du cas chinois au critère libéral, l’extrait change trois fois de question.",
+      "provenance": "Figure originale."
+    },
+    {
+      "fichier": "figures/donnees.svg",
+      "question": "2",
+      "legende": "Deux questions publiques, deux besoins d’information",
+      "provenance": "Figure originale."
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction du résumé, du guide, des développements demandés et des deux figures."
+    },
+    {
+      "phase": "autocontrole",
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture des quatre pages du sujet, collation des questions, double décompte du résumé et vérification des exemples. Vérification du commentaire unique. Contrôle du statut et de l’horaire aux modalités officielles, p. 2."
+    }
+  ],
+  "duree_heures": 3,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2021_Sujet_2C_Maths_Francais.pdf",
+      "sha256": "93fdb7015d6c5c757fcc9fa982678a45ae25cfdb8414c21095ddd3257ee8d312",
+      "pages": 4,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "b5e1230bfc8e9481d319dfb5ff1da698992aef67e17030835fd4301c01afebe3"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "809ffd7d306659dbe594027b0118a3beeec2021833603201363949d4357b5eed"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "a14777898d931298db765891df0f646d5984f0325bff1da913636a56bc7b0211"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "31dc14b604bedcc5c58e3c4324bddbb0b8185364e945238c342f6b9254f49146"
+        }
+      ]
+    },
+    "modalites": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/CONCOURS_2021/Modalit%C3%A9s%20d%27inscription_2C_2021.pdf#page=2",
+      "sha256": "b3f1b0a9bda5be3ee854e35655896e6aa6d6eff1f79ee92ab5186490eb7ff25e",
+      "pages": 2,
+      "pages_verifiees": [
+        {
+          "numero": 2,
+          "rendu_sha256": "a08f32493a84d7352ccc6b1930576310eea2e3de1dfd9ff0d995cdb93b0afd36"
+        }
+      ],
+      "constat": "Épreuve écrite d’admission de français, durée de trois heures, le matin."
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1",
+        "page_pdf": 4,
+        "pages_texte": [
+          2,
+          3,
+          4
+        ],
+        "texte": "Yves Poullet, Marie-des-Neiges Ruffo de Calabre et Jessica Lombard, « Covid-19, numérique et libertés », Études, juin 2020, n° 6, p. 57–66. Le feuillet donne le début de l’article, p. 2–4 du PDF.",
+        "consigne": "Résumer le texte en 250 mots (avec une marge de tolérance de + ou – 10%). Le nombre exact de mots utilisés sera indiqué en fin de résumé.",
+        "cible_mots": 250,
+        "intervalle": [
+          225,
+          275
+        ],
+        "points": 10
+      },
+      {
+        "question": "2",
+        "page_pdf": 4,
+        "consigne": "Sous forme d’un développement construit, commenter la réflexion suivante des auteurs :",
+        "citation": "La restriction des libertés des populations en situation de pandémie serait donc légitime dans la mesure où elle assure la sécurité d’autrui, et non pas pour assurer « leur propre bien »."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "choix": "Développement unique obligatoire.",
+    "annexes_imposees": []
+  }
+}
