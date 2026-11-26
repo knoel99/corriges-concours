@@ -2,7 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 L’épreuve d’automne du concours 2021 a été composée le 19 octobre 2020, en trois heures. Les trois parties portent sur les polynômes de Bernstein, un théorème taubérien de Hardy et Littlewood et une application aux partitions. [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2021FUI-FF%20Session%201%20SUJET%20de%20MATHEMATIQUES.pdf)
 
@@ -44,7 +46,10 @@ Le degré est **au plus** $n$. Il peut être strictement plus petit que le degr�
 
 #### Solution
 
-La différence est au plus $\mathbb E|f(S_n/n)-f(x)|$. Sur $|S_n/n-x|<\delta$, l’écart est au plus $\omega(\delta)$, et sur le complément il est au plus $2\|f\|_\infty$. Cela donne la première inégalité. La fréquence a pour espérance $x$ et variance $x(1-x)/n\le1/(4n)$. Bienaymé–Tchebychev majore la probabilité du complément par $1/(4n\delta^2)$ pour $\delta>0$, d’où $|B_n(f)(x)-f(x)|\le\omega(\delta)+\|f\|_\infty/(2n\delta^2)$.
+La différence est au plus $\mathbb E|f(S_n/n)-f(x)|$. Sur $|S_n/n-x|<\delta$, l’écart est au plus $\omega(\delta)$, et sur le complément il est au plus $2\|f\|_\infty$. En prenant l’espérance sur ces deux événements, on obtient
+$$|B_n(f)(x)-f(x)|\le\omega(\delta)+2\|f\|_\infty\,\mathbb P\!\left(\left|S_n/n-x\right|\ge\delta\right).$$
+
+La fréquence a pour espérance $x$ et variance $x(1-x)/n\le1/(4n)$. Bienaymé–Tchebychev majore la probabilité du complément par $1/(4n\delta^2)$ pour $\delta>0$, d’où $|B_n(f)(x)-f(x)|\le\omega(\delta)+\|f\|_\infty/(2n\delta^2)$.
 
 ### Question 5
 
