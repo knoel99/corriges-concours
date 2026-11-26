@@ -1,0 +1,146 @@
+{
+  "slug": "bel_al_francais-oral-tronc-commun-21-juin_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Français (oral tronc commun 21 juin)",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "Explication d’un texte français — oral du 21 juin 2025",
+  "questions": 7,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/francais_1_21.06.pdf",
+    "sujet_sha256": "17c93022b450cd5d6f3d482b8d64e46deae14bc4f6855a3d1d13a37788e9f9c8",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2025_al_rapport_oral_francais_tc.pdf",
+    "rapport_sha256": "1242f06ffba7b6826d3aad28afcc4a1cb557b5d61fd68ec70dd15d8643997343",
+    "document": "Liste A/L de sept références, sans restitution des tirages ce jour-là.",
+    "page_pdf": "1"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lettre-entendue.svg",
+      "question": "Molière, L’École des femmes",
+      "legende": "Dans L’École des femmes, la même lettre prend trois sens selon la place de celui qui parle ou écoute."
+    }
+  ],
+  "reperes": [
+    {
+      "page_pdf": 1,
+      "rubrique": "Référence 1",
+      "texte": "Cyrano de Bergerac, Les États et Empires du Soleil",
+      "bornes": "De « On était aux escarmouches de la Bataille » à « qui n’eût commerce avec la Lune ».",
+      "choix": "non publié",
+      "statut": "traité"
+    },
+    {
+      "page_pdf": 1,
+      "rubrique": "Référence 2",
+      "texte": "Boileau, L’Art poétique",
+      "bornes": "Chant III, vers 1–37, de « Il n’est point de Serpent » à « assez tost expliqué ». Le rapport annuel donne aussi p. 96–97.",
+      "choix": "non publié",
+      "statut": "traité"
+    },
+    {
+      "page_pdf": 1,
+      "rubrique": "Référence 3",
+      "texte": "Molière, L’École des femmes",
+      "bornes": "III, 4, de « Mais il faut qu’en ami » à « C’est que je tousse ». Le rapport annuel indique p. 68.",
+      "choix": "non publié",
+      "statut": "traité"
+    },
+    {
+      "page_pdf": 1,
+      "rubrique": "Référence 4",
+      "texte": "Crébillon fils, Lettres de la Marquise de M*** au Comte de R***",
+      "bornes": "Lettre XI, de « Cependant vous croyez » à « qui m’y force ». Les bornes correspondent aux p. 30–31 de l’édition électronique du Boucher.",
+      "choix": "non publié",
+      "statut": "traité"
+    },
+    {
+      "page_pdf": 1,
+      "rubrique": "Référence 5",
+      "texte": "Baudelaire, Le Spleen de Paris, « Le Confiteor de l’artiste »",
+      "bornes": "Poème en prose nommé sans coupe. Le rapport annuel situe le texte p. 9–10.",
+      "choix": "non publié",
+      "statut": "traité"
+    },
+    {
+      "page_pdf": 1,
+      "rubrique": "Référence 6",
+      "texte": "Ponge, Le Parti pris des choses, « Le Cageot »",
+      "bornes": "Poème en prose nommé sans coupe. Le rapport annuel indique p. 38.",
+      "choix": "non publié",
+      "statut": "traité"
+    },
+    {
+      "page_pdf": 1,
+      "rubrique": "Référence 7",
+      "texte": "Ponge, Le Parti pris des choses, « L’Huître »",
+      "bornes": "Poème en prose nommé sans coupe.",
+      "choix": "non publié",
+      "statut": "traité"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "objet": "Références publiées sur le feuillet officiel",
+    "questions_entierement_traitees": [
+      "Référence 1 — Cyrano de Bergerac, Les États et Empires du Soleil",
+      "Référence 2 — Boileau, L’Art poétique",
+      "Référence 3 — Molière, L’École des femmes",
+      "Référence 4 — Crébillon fils, Lettres de la Marquise de M*** au Comte de R***",
+      "Référence 5 — Baudelaire, Le Spleen de Paris, « Le Confiteor de l’artiste »",
+      "Référence 6 — Ponge, Le Parti pris des choses, « Le Cageot »",
+      "Référence 7 — Ponge, Le Parti pris des choses, « L’Huître »"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "controle": [
+      "La page porte « Concours A/L ». Les sept références sont publiées dans cet ordre. Le rapport annuel cite plusieurs d’entre elles parmi ses exemples, dont un billet associant Molière au Confiteor. Le jour de ce tirage n’y est pas indiqué.",
+      "Le feuillet est une liste de sept références. Le choix des candidats et la composition de leurs tirages le 21 ne sont pas indiqués."
+    ]
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_al_2025_21_juin",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "7 commentaires, repères par feuillet, 7 relances argumentées dans le guidé et réalisation du schéma."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "francais_al_2025_21_juin",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": false,
+      "perimetre": "Collation du fac-similé et des deux éditions, vérification des ratures ou des limites du tirage, comparaison avec les références de lecture et le rapport du jury."
+    }
+  ]
+}
