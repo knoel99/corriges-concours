@@ -20,6 +20,8 @@ Pour les 28 compositions de français, d’anglais et d’arabe de 2005 à 2008,
 
 Pour les 21 dossiers de Médecine-Humanités de 2018 à 2026, l’API locale affiche les sources attendues sur chaque fiche, dont 18 avec un rapport et cinq liens complémentaires. [Vérifications des 21 fiches](sources-fiches-medecine-humanites-2018-2026.tsv)
 
+Les 40 sujets de physique A PC (2011 à 2014 et 2016 à 2021), d’italien (2005 à 2010), d’allemand et de chinois (2005 à 2008) ont fait l’objet d’un contrôle indépendant sur les fichiers compilés. Les 80 PDF portent la signature attendue et totalisent 267 pages. La conversion reproduit les 80 sources LaTeX, avec 150 références aux figures. La physique A PC 2017 reste partielle. [Contrôles par épreuve](pdf-physique-a-pc-italien-allemand-chinois-2026-11-26.tsv)
+
 Le 25 novembre 2026, les deux lecteurs et les quatre téléchargements ont aussi été vérifiés sur les 134 fiches de filière de 45 épreuves communes déjà en production à la révision `54fe93cd`. [Adresses et empreintes des fichiers](production-filieres-54fe93cd.tsv)
 
 Les contrôles sur sujet-corriges.ai portent leur propre date. Le relevé en production distingue les deux lecteurs HTML, les textes Markdown téléchargeables et les PDF signés. [Contrôles des lecteurs en production](lecteurs-a-verifier-54fe93cd.tsv) · [Téléchargements vérifiés](fichiers-telechargeables.tsv) · [Téléchargements complémentaires](fichiers-complementaires-54fe93cd.tsv)
