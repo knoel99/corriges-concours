@@ -1,0 +1,67 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_epreuve-a-option-dominante-gestion_2021",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Épreuve à option — dominante gestion",
+    "annee": 2021,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "FRESHPROX : profitabilité, trésorerie et pilotage d’une production régionale de produits frais",
+  "gabarit": "questions",
+  "questions": 6,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2021_Sujet_1A_D2-1_Option.pdf#page=2",
+    "sujet_sha256": "e7aadd02e7172ece29df11d6892f06517e0d77a6b9ab8957b4aeb368161deec1",
+    "index": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=289&field_year_target_id%5B%5D=545",
+    "pages_sujet": "2–8 du fascicule, quatre documents financiers",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2021_Sujet_1A_D2-1_Option.pdf",
+        "pages": 8,
+        "sha256": "e7aadd02e7172ece29df11d6892f06517e0d77a6b9ab8957b4aeb368161deec1"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/tresorerie-freshprox.svg",
+      "question": "1",
+      "legende": "Passage de l’EBE 2019 au flux d’exploitation. Le crédit aux clients explique l’essentiel de l’augmentation de 113 662 € du besoin en fonds de roulement d’exploitation."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Les six questions traitées : SIG, deux périmètres de trésorerie d’exploitation, bilan financier après affectation, ratios et pilotage de la performance pendant la crise sanitaire."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "limites": "Les constructions sont maintenues à zéro faute de valeur fiable ; la lecture de l’échéance bancaire à moins d’un an est précisée. Les états 2018–2019 ne mesurent pas les effets réels de 2020."
+  }
+}
