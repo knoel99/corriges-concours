@@ -1,0 +1,116 @@
+{
+  "slug": "bel_bl_geographie_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Géographie",
+    "annee": 2024,
+    "modalite": "écrit"
+  },
+  "intitule": "Les espaces forestiers face aux changements globaux",
+  "type_epreuve": "Épreuve à option",
+  "questions": 1,
+  "documents": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2024_blses_sujet_composition_geographie.pdf",
+    "sha256_sujet": "2cc08ab045466db9665ba195bacb592788fad591fe4f3b406f293c8f67b8f6c8",
+    "pages_sujet": 2,
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_ecrit_geographie_epreuve_a_option.pdf",
+    "sha256_rapport_jury": "579622ee30fcdaaa071b6659c81257359c818c94f5385f4978727fea173ce5ca",
+    "pages_rapport": 3
+  },
+  "ressources_graphiques": [
+    {
+      "ressource": "Natural Earth",
+      "url": "https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_110m_land.geojson",
+      "sha256": "9e0729ee253ca7d7a5c4ae9395fb1902264c5377c52e224d13dd85010e2835d9",
+      "usage": "Trait de côte en domaine public, localisation et légende originales."
+    }
+  ],
+  "lecture_du_sujet": [
+    {
+      "piece": "Consigne et intitulé",
+      "page_debut": 1,
+      "page_fin": 1,
+      "controle": "Traiter le sujet à partir d’exemples précis. Une ou plusieurs productions graphiques sont facultatives."
+    },
+    {
+      "piece": "Fond de carte du monde",
+      "page_debut": 2,
+      "page_fin": 2,
+      "controle": "Fond planisphère muet fourni à titre indicatif. Réalisation d’un croquis original de localisation et d’une coupe originale, mobilisés dans le développement."
+    }
+  ],
+  "journal": [
+    {
+      "section": "Introduction",
+      "rapport": "p. 1–2",
+      "verification": "Distinguer changement climatique, érosion de la biodiversité, usages du sol et cycles biogéochimiques. Préciser la différence entre un espace forestier et une simple surface arborée.",
+      "repere_dans_les_deux_editions": "Bornéo"
+    },
+    {
+      "section": "Des pressions mondiales prennent des formes territoriales distinctes",
+      "rapport": "p. 1–3",
+      "verification": "Localiser plusieurs exemples, distinguer front agricole, dégradation progressive et perturbations du peuplement.",
+      "repere_dans_les_deux_editions": "BR-163"
+    },
+    {
+      "section": "La transformation des massifs change aussi les conditions de vie au-delà des lisières",
+      "rapport": "p. 1–2",
+      "verification": "Relier écologie et territoires, passer des lisières au bassin, des stocks aux flux et au transport à longue distance.",
+      "repere_dans_les_deux_editions": "tourbe accumulée"
+    },
+    {
+      "section": "Gouverner des espaces forestiers engage des arbitrages entre lieux et entre durées",
+      "rapport": "p. 1–3",
+      "verification": "Arbitrages situés des propriétaires, des groupes d’usagers et des pouvoirs publics. Tester la portée d’une mesure au-delà de son périmètre.",
+      "repere_dans_les_deux_editions": "Népal"
+    },
+    {
+      "section": "Conclusion",
+      "rapport": "p. 2–3",
+      "verification": "Réponse argumentée sur les trajectoires à plusieurs échelles, appuyée sur deux dessins commentés.",
+      "repere_dans_les_deux_editions": "garantir un droit d’usage"
+    }
+  ],
+  "figures": [
+    {
+      "fichier": "figures/cas-forestiers.svg",
+      "question": "Des pressions mondiales prennent des formes territoriales distinctes",
+      "legende": "Figure 1 — Des changements globaux communs prennent des formes différentes dans six territoires. Les sites numérotés se retrouvent dans le développement."
+    },
+    {
+      "fichier": "figures/tourbiere-et-drainage.svg",
+      "question": "La transformation des massifs change aussi les conditions de vie au-delà des lisières",
+      "legende": "Figure 2 — À Kalimantan, abaisser la nappe expose la tourbe à l’air. La coupe explique comment la conversion d’un massif modifie les échanges de carbone."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "x_maths_b_recentes",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Composition sur les espaces forestiers et les changements globaux, étayée par des exemples localisés. Contrôle du planisphère fourni à titre indicatif et réalisation de deux productions graphiques originales."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Les espaces forestiers face aux changements globaux"
+    ],
+    "precision": "Composition sur les espaces forestiers et les changements globaux, étayée par des exemples localisés. Contrôle du planisphère fourni à titre indicatif et réalisation de deux productions graphiques originales.",
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "2cc08ab045466db9665ba195bacb592788fad591fe4f3b406f293c8f67b8f6c8",
+      "sha256_rapport_jury_controle": "579622ee30fcdaaa071b6659c81257359c818c94f5385f4978727fea173ce5ca",
+      "perimetre": "Composition sur les espaces forestiers et les changements globaux, étayée par des exemples localisés. Contrôle du planisphère fourni à titre indicatif et réalisation de deux productions graphiques originales."
+    }
+  }
+}

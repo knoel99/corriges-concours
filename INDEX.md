@@ -405,6 +405,7 @@
 | 2026 | BEL | AL | Composition française | [md](2026/bel/bel_al_composition-francaise_2026/brut.md) | [md](2026/bel/bel_al_composition-francaise_2026/guide.md) |
 | 2017 | BEL | AL | Allemand (commentaire et traduction) | [md](2017/bel/bel_al_allemand-commentaire-et-traduction_2017/brut.md) | [md](2017/bel/bel_al_allemand-commentaire-et-traduction_2017/guide.md) |
 | 2025 | BEL | BL | Français (oral tronc commun 18 juin) | [md](2025/bel/bel_bl_francais-oral-tronc-commun-18-juin_2025/brut.md) | [md](2025/bel/bel_bl_francais-oral-tronc-commun-18-juin_2025/guide.md) |
+| 2024 | BEL | BL | Géographie | [md](2024/bel/bel_bl_geographie_2024/brut.md) | [md](2024/bel/bel_bl_geographie_2024/guide.md) |
 | 2025 | BEL | BL | Géographie | [md](2025/bel/bel_bl_geographie_2025/brut.md) | [md](2025/bel/bel_bl_geographie_2025/guide.md) |
 | 2019 | ENS de Lyon | Séries LA/LV/SH (A/L) | Composition d'histoire (écrit) | [md](2019/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_composition-d-histoire-ecrit_2019/brut.md) | [md](2019/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_composition-d-histoire-ecrit_2019/guide.md) |
 | 2022 | ENS de Lyon | Séries LA/LV/SH (A/L) | Composition d'histoire (écrit) | [md](2022/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_composition-d-histoire-ecrit_2022/brut.md) | [md](2022/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_composition-d-histoire-ecrit_2022/guide.md) |
