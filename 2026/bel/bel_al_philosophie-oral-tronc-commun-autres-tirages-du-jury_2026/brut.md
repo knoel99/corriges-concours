@@ -6,7 +6,13 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Le rapport énumère 182 billets pour l’ensemble des commissions. Douze feuilles datées en documentent 135. Les 47 autres figurent ici, dans leur ordre au rapport et sans attribution de date. Le numéro indiqué est la position du billet depuis le début de l’annexe, à la page 6. Les billets 112–123 et 136–145 figurent à la page 8, les billets 146–147 et 160–182 à la page 9. Les deux intitulés de chaque billet reçoivent une réponse. Le sujet effectivement choisi est celui que le jury imprime en gras.
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Le rapport du jury énumère 182 billets de philosophie A/L. Douze feuillets de séance permettent d’en dater 135. Les 47 billets réunis ici forment le reste de la liste. Leur rang se compte depuis la [page 6 du rapport](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf#page=6). Lisez les rangs 112 à 123 et 136 à 145 à la [page 8](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf#page=8), puis les rangs 146 à 147 et 160 à 182 à la [page 9](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf#page=9). Le jury les donne pour l’ensemble des commissions. La date et la commission de chacun restent indéterminées.
+
+Chaque billet offre deux sujets. Le jury met en gras le sujet choisi, qui est le premier terme dans 32 cas et le second dans 15. Les deux développements suivent l’ordre du rapport. Dans l’[index officiel](https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-al), les liens du 29 juin renvoient aux feuillets qui portent la date du 26. Le [relevé des 182 paires](https://github.com/knoel99/corriges-concours/blob/d74206db70dcfac402a53244525d338900d7053c/campagnes/x-ens/philosophie-al-2026-tirages.tsv) permet de retrouver les six intitulés également proposés sur un billet daté, chaque fois avec un autre sujet.
+
+L’épreuve est de coefficient 3. Vous lisez les deux sujets du billet devant le jury, choisissez au cours des 90 minutes de préparation et annoncez votre choix au début des 20 minutes d’exposé. L’entretien dure ensuite 10 minutes. Seul un dictionnaire de langue française est autorisé, à l’exclusion des dictionnaires de noms propres.
 
 ## Billet 112 — Faut-il craindre la mort ?
 
@@ -160,6 +166,8 @@ Au terme d’une répétition, plusieurs musiciens rentrent chez eux heureux d�
 
 Une assemblée vote un texte, mais elle peut être soumise à une Constitution qui borne ses compétences. La souveraineté demande à quelle autorité ultime sont rapportées les compétences publiques. Selon un deuxième sens, elle désigne l’indépendance d’un État vis-à-vis de tout autre. Attribuer la souveraineté au peuple interdit de l’identifier sans autre preuve à la volonté personnelle d’un dirigeant. Rousseau distingue souveraineté et gouvernement. La première concerne la source de la loi, le second son administration. Dire où réside la souveraineté ne règle donc pas encore les procédures de représentation, les limites imposées par les droits ni les moyens de contrôle dont disposent effectivement les citoyens.
 
+![Le peuple, la Constitution et l’assemblée](figures/souverainete-et-competence.svg)
+
 ## Billet 139 — Faut-il respecter la nature ?
 
 *Rapport, p. 8. Sujet choisi — Les limites du corps*
@@ -277,6 +285,8 @@ La fonction du soldat se définit dans un cadre politique et juridique qui confi
 *Rapport, p. 9. Sujet choisi — Justice et vengeance*
 
 La justice et la vengeance supposent fréquemment une faute initiale reconnue par une personne qui en souffre. Une réponse devient vengeance lorsque la partie offensée détermine elle-même la mesure du retour et traite le nouveau dommage comme équivalent au premier. Une institution de justice intervient par une procédure, une qualification des faits et des garanties de contestation. Cette différence ne rend pas toute peine prononcée automatiquement juste. Une institution qui reprend le ressentiment d’un groupe sans examen des preuves trahirait sa fonction. Rendre justice implique d’entendre la victime et de limiter publiquement les conditions de la réponse. La réparation de ce qui peut l’être et la protection des droits restent distinctes du plaisir de faire subir une perte en retour.
+
+![Après un tort, qui peut juger ?](figures/tort-jugement-et-recours.svg)
 
 ### Pourquoi voyager ?
 
@@ -485,5 +495,3 @@ L’île décrite dans l’Utopie de Thomas More peut être lue à la fois comme
 ### À quelles conditions la discussion est-elle possible ?
 
 Deux personnes parlent alternativement sans se répondre. L’alternance matérielle des voix ne suffit pas à former une discussion. Il faut au moins un objet assez commun pour que les raisons se rencontrent, un accès intelligible aux termes et une possibilité de poser une objection à laquelle l’autre puisse réellement répondre. Un désaccord profond ne ferme pas nécessairement l’échange, mais une menace qui interdit de changer d’avis ou de refuser le vocabulaire peut le rendre fictif. L’égalité de dignité, des règles de temps et la disponibilité des preuves contribuent à l’effectivité d’une discussion. Son succès ne se mesure pas à la seule convergence finale. Pouvoir clarifier le motif d’un désaccord persistant peut déjà être un résultat rationnel.
-
-[Annexe officielle, p. 8](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf#page=8) · [Annexe officielle, p. 9](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf#page=9) · [Index des 182 billets et des choix](https://github.com/knoel99/corriges-concours/blob/master/campagnes/x-ens/philosophie-al-2026-tirages.tsv)
