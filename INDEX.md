@@ -183,6 +183,7 @@
 | 2016 | ENS de Lyon | Second concours | Mathématiques | [md](2016/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2016/brut.md) | [md](2016/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2016/guide.md) |
 | 2017 | ENS de Lyon | Série SES (B/L) | Allemand (oral) | [md](2017/ens-de-lyon/ens-de-lyon_serie-ses-b-l_allemand-oral_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_serie-ses-b-l_allemand-oral_2017/guide.md) |
 | 2017 | ENS de Lyon | Série SES (B/L) | Anglais (oral) | [md](2017/ens-de-lyon/ens-de-lyon_serie-ses-b-l_anglais-oral_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_serie-ses-b-l_anglais-oral_2017/guide.md) |
+| 2026 | ENS de Lyon | Série SES (B/L) | Histoire contemporaine (oral) | [md](2026/ens-de-lyon/ens-de-lyon_serie-ses-b-l_histoire-contemporaine-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_serie-ses-b-l_histoire-contemporaine-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Grec (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_grec-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_grec-oral_2026/guide.md) |
 | 2022 | ENS de Lyon | Séries LA/LV/SH (A/L) | Allemand (oral) | [md](2022/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_allemand-oral_2022/brut.md) | [md](2022/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_allemand-oral_2022/guide.md) |
 | 2017 | ENS de Lyon | Séries LA/LV/SH (A/L) | Anglais (oral) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_anglais-oral_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_anglais-oral_2017/guide.md) |
@@ -1767,7 +1768,9 @@
 | 2025 | X-ENS | MP-MPI-PC-PSI | Français | [md](2025/x-ens/x-ens_mp-mpi-pc-psi_francais_2025/brut.md) | [md](2025/x-ens/x-ens_mp-mpi-pc-psi_francais_2025/guide.md) |
 | 2025 | X-ENS | PC | Chimie A | [md](2025/x-ens/x-ens_pc_chimie-a_2025/brut.md) | [md](2025/x-ens/x-ens_pc_chimie-a_2025/guide.md) |
 | 2026 | X-ENS | PC | Chimie A | [md](2026/x-ens/x-ens_pc_chimie-a_2026/brut.md) | [md](2026/x-ens/x-ens_pc_chimie-a_2026/guide.md) |
+| 2019 | X-ENS | PC | Maths PC | [md](2019/x-ens/x-ens_pc_maths-pc_2019/brut.md) | [md](2019/x-ens/x-ens_pc_maths-pc_2019/guide.md) |
 | 2021 | X-ENS | PC | Maths PC | [md](2021/x-ens/x-ens_pc_maths-pc_2021/brut.md) | [md](2021/x-ens/x-ens_pc_maths-pc_2021/guide.md) |
+| 2022 | X-ENS | PC | Maths PC | [md](2022/x-ens/x-ens_pc_maths-pc_2022/brut.md) | [md](2022/x-ens/x-ens_pc_maths-pc_2022/guide.md) |
 | 2025 | X-ENS | PC | Maths PC | [md](2025/x-ens/x-ens_pc_maths-pc_2025/brut.md) | [md](2025/x-ens/x-ens_pc_maths-pc_2025/guide.md) |
 | 2026 | X-ENS | PC | Maths PC | [md](2026/x-ens/x-ens_pc_maths-pc_2026/brut.md) | [md](2026/x-ens/x-ens_pc_maths-pc_2026/guide.md) |
 | 2011 | X-ENS | PC | Physique B | [md](2011/x-ens/x-ens_pc_physique-b_2011/brut.md) | [md](2011/x-ens/x-ens_pc_physique-b_2011/guide.md) |
@@ -1783,6 +1786,7 @@
 | 2021 | X-ENS | PC | Physique B | [md](2021/x-ens/x-ens_pc_physique-b_2021/brut.md) | [md](2021/x-ens/x-ens_pc_physique-b_2021/guide.md) |
 | 2022 | X-ENS | PC | Physique B | [md](2022/x-ens/x-ens_pc_physique-b_2022/brut.md) | [md](2022/x-ens/x-ens_pc_physique-b_2022/guide.md) |
 | 2026 | X-ENS | PC | Physique B | [md](2026/x-ens/x-ens_pc_physique-b_2026/brut.md) | [md](2026/x-ens/x-ens_pc_physique-b_2026/guide.md) |
+| 2025 | X-ENS | PSI | Maths PSI | [md](2025/x-ens/x-ens_psi_maths-psi_2025/brut.md) | [md](2025/x-ens/x-ens_psi_maths-psi_2025/guide.md) |
 | 2026 | X-ENS | PSI | Maths PSI | [md](2026/x-ens/x-ens_psi_maths-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_maths-psi_2026/guide.md) |
 | 2015 | X-ENS | PSI | Physique PSI | [md](2015/x-ens/x-ens_psi_physique-psi_2015/brut.md) | [md](2015/x-ens/x-ens_psi_physique-psi_2015/guide.md) |
 | 2016 | X-ENS | PSI | Physique PSI | [md](2016/x-ens/x-ens_psi_physique-psi_2016/brut.md) | [md](2016/x-ens/x-ens_psi_physique-psi_2016/guide.md) |
