@@ -6,6 +6,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Relecture** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 Le rapport officiel de l’écrit reproduit la citation de La Littérature en péril de Tzvetan Todorov (2007) et précise l’exercice de commentaire. La proposition suit cette attestation en mobilisant œuvres, lecture critique et expérience de lecture.
@@ -14,11 +16,20 @@ Le rapport officiel de l’écrit reproduit la citation de La Littérature en p�
 
 Le rapport reproduit la citation et explicite la demande d’exemples littéraires, critiques et personnels. Deux mots permettent de construire le devoir, « figurer » et « mouvement ». Montrez d’abord ce que permet la représentation d’une scène, puis ce qui continue quand elle est terminée.
 
-**La morale finale annule-t-elle le rôle du lecteur ?** Dans la fable de La Fontaine, le résultat est peu ambigu. Il reste cependant à voir comment le Renard transforme un aveu en flatterie et pourquoi l’Âne n’obtient pas le bénéfice de la même opération. Localisez cette activité précise du lecteur.
+> [!INDICATION]
+> La morale finale annule-t-elle le rôle du lecteur ?
 
-**Que faire du « choc » ?** À la fin d’« Eveline », identifiez la question que vous posiez avant la scène du quai et demandez si elle convient encore. Une réaction compte dans le commentaire lorsque l’on peut montrer quel changement du récit l’a rendue possible.
+Dans la fable de La Fontaine, le résultat est peu ambigu. Il reste cependant à voir comment le Renard transforme un aveu en flatterie et pourquoi l’Âne n’obtient pas le bénéfice de la même opération. Localisez cette activité précise du lecteur.
 
-**Comment discuter Todorov ?** Une image répétée peut renforcer un stéréotype. La fiction n’assure donc pas automatiquement le gain de liberté qu’elle promet. Étayez votre jugement par la possibilité de reprendre le détail à une seconde lecture.
+> [!INDICATION]
+> Que faire du « choc » ?
+
+À la fin d’« Eveline », identifiez la question que vous posiez avant la scène du quai et demandez si elle convient encore. Une réaction compte dans le commentaire lorsque l’on peut montrer quel changement du récit l’a rendue possible.
+
+> [!INDICATION]
+> Comment discuter Todorov ?
+
+Une image répétée peut renforcer un stéréotype. La fiction n’assure donc pas automatiquement le gain de liberté qu’elle promet. Étayez votre jugement par la possibilité de reprendre le détail à une seconde lecture.
 
 ## Entre une fable que l’on sait et une scène que l’on ne sait plus juger
 
@@ -30,13 +41,20 @@ Le Lion de La Fontaine réunit un conseil pour déterminer celui dont les fautes
 
 Le particulier joue ici un rôle plus exigeant que celui d’un exemple décoratif. Les prises de parole se contredisent à l’intérieur d’une action unique. Pour comprendre la manière dont l’assemblée se rend injuste, il faut se souvenir de la norme qu’elle proclame et repérer discrètement le moment où elle cesse de l’appliquer également. La fable ne laisse guère ouverte la question de savoir si l’Âne a été jugé équitablement. Elle laisse au lecteur le travail d’identifier ce qui, dans une parole flatteuse ou dans un aveu sans protection, rend ce verdict possible. La présence d’une thèse explicite ne suffit donc pas à en faire une leçon imposée de bout en bout.
 
+Le premier verbe de Todorov appelle une objection. Si le lecteur doit formuler une thèse, qui décide que cette formulation est juste ? Dans la fable, je pourrais conclure que l’Âne a été condamné parce qu’il a mal parlé. Ce serait prendre pour cause première une maladresse que le loup exploite. Il faut revenir aux fautes plus graves déjà absoutes, puis au rang des orateurs. La scène m’oblige à corriger mon explication du verdict. La liberté du lecteur se mesure ici à la possibilité de proposer une raison, le pouvoir du texte à la précision des détails qui peuvent la démentir.
+
+> [!INDICATION]
+> Quel détail du conseil oblige à corriger une première interprétation du verdict ?
+
+Comparez la manière dont le Renard défend le Lion et celle dont le Loup interprète l’aveu de l’Âne. Un récit du conseil qui parlerait seulement d’une maladresse de l’Âne manquerait l’inégalité de ces deux médiations. La morale peut être annoncée franchement tout en laissant un mécanisme à découvrir.
+
 ## Une figuration peut défaire la question qu’on voulait lui poser
 
 Dans « Eveline », une nouvelle de James Joyce publiée dans *Dubliners* en 1914, une jeune femme envisage de quitter Dublin avec Frank. La perspective d’une vie nouvelle se trouve prise dans les souvenirs de la maison et des obligations envers la famille. Le titre donne un nom plutôt qu’un problème général. Le récit au plus près de la conscience d’Eveline nous fait d’abord chercher si elle aura le courage de partir. Au quai, au lieu d’une déclaration où elle s’expliquerait, apparaissent un corps qui s’agrippe et un visage qui ne transmet plus à Frank le signe attendu.
 
 Le changement de distance m’oblige alors à reprendre ma question. Demander si elle a du courage revient peut-être à adopter le point de vue de celui qui attend d’elle qu’elle parte. Les souvenirs familiaux font de l’immobilité autre chose qu’une simple préférence pour le familier. Mais en faire une héroïne du devoir familial effacerait la menace et la fatigue présentes dans ses souvenirs. L’alternative que je croyais claire se révèle incapable de distribuer proprement les raisons. C’est en ce sens qu’une figuration peut apprendre quelque chose qu’un énoncé moral ne donnerait pas déjà. Elle met en difficulté la forme même du jugement.
 
-Une lecture attentive aux émotions, comme y invite Martha Nussbaum, permet de préciser l’effet. Je peux éprouver d’abord l’impatience de voir l’héroïne se décider, puis reconnaître dans cette impatience une exigence que le récit me conduit à interroger. L’émotion n’est pas la récompense que l’on recevrait après avoir compris le sens. Elle fait apparaître ce que je tiens implicitement pour important. Elle n’accorde cependant aucun accès immédiat à la vérité d’autrui. Mon trouble n’autorise pas à écrire à la place d’Eveline la déclaration définitive que le texte a précisément suspendue.
+Dans Upheavals of Thought (2001), ouvrage mentionné par le jury, Martha Nussbaum étudie ce que les émotions révèlent de nos jugements de valeur. Ce rapprochement permet de préciser l’effet produit par Joyce. Je peux éprouver d’abord l’impatience de voir l’héroïne se décider, puis reconnaître dans cette impatience une exigence que le récit me conduit à interroger. L’émotion n’est pas la récompense que l’on recevrait après avoir compris le sens. Elle fait apparaître ce que je tiens implicitement pour important. Elle n’accorde cependant aucun accès immédiat à la vérité d’autrui. Mon trouble n’autorise pas à écrire à la place d’Eveline la déclaration définitive que le texte a précisément suspendue.
 
 ![Ce que fait varier la dernière scène](figures/ondes.svg)
 
@@ -46,6 +64,6 @@ Dans « Devant la loi » de Kafka, l’homme de la campagne attend longtemps dev
 
 Mais une œuvre peut aussi prendre le lecteur de vitesse, circonscrire ses sympathies ou flatter un préjugé déjà installé. Figurer une situation ne garantit pas qu’il la mette en question. La répétition de personnages définis par un trait unique peut produire un stéréotype au lieu d’ébranler un jugement. L’expérience d’un choc ne fournit pas à elle seule un critère de valeur littéraire. Il faut demander ce que l’œuvre permet d’examiner lorsque le premier effet est passé et si l’on peut éprouver son interprétation contre d’autres détails, ou contre celle d’un autre lecteur.
 
-La proposition de Todorov fournit donc une théorie d’une puissance que la littérature exerce diversement. Chez La Fontaine, une morale déclarée conserve derrière elle une scène de jugement à interroger. Chez Joyce, la représentation change la question que le lecteur croyait devoir résoudre. Chez Kafka, la dernière parole remet en circulation les possibilités du début. Dans chacun de ces cas, le lecteur demeure actif parce que le sens ne lui arrive pas comme le dernier mot d’une autorité. Il lui arrive comme une relation qu’il devra pouvoir reconnaitre, justifier et peut-être modifier lors d’une autre lecture.
+La proposition de Todorov fournit donc une théorie d’une puissance que la littérature exerce diversement. Chez La Fontaine, une morale déclarée conserve derrière elle une scène de jugement à interroger. Chez Joyce, la représentation change la question que le lecteur croyait devoir résoudre. Chez Kafka, la dernière parole remet en circulation les possibilités du début. Dans chacun de ces cas, le lecteur demeure actif parce que le sens ne lui arrive pas comme le dernier mot d’une autorité. Il lui arrive comme une relation qu’il devra pouvoir reconnaître, justifier et peut-être modifier lors d’une autre lecture.
 
-[Énoncé reproduit dans le rapport officiel](https://www.ens.psl.eu/sites/default/files/rapport_sil_litterature_ecrit_2018.pdf) · [James Joyce, Dubliners, nouvelle Eveline](https://www.gutenberg.org/files/2814/2814-h/2814-h.htm)
+[Énoncé reproduit dans le rapport officiel](https://www.ens.psl.eu/sites/default/files/rapport_sil_litterature_ecrit_2018.pdf) · [James Joyce, Dubliners, nouvelle Eveline](https://www.gutenberg.org/files/2814/2814-h/2814-h.htm) · [Martha Nussbaum, Upheavals of Thought, Cambridge University Press](https://assets.cambridge.org/97805215/31825/copyright/9780521531825_copyright_info.pdf)
