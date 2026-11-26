@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 La cellule GEMINI combine fabrication additive et usinage de grandes pièces. Le sujet étudie un robot chargé, son réducteur et le contrôle du poignet. Le rapport annonce 48 questions. L’énoncé imprimé p. 23 et la dernière page du cahier portent tous deux une question 49 sur le bloqueur. Les 49 questions sont traitées ici, avec la numérotation du feuillet.
 
 [Sujet et cahier officiels](https://www.banquept.fr/documents/2025/si_a_2025_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2025/rapport_si_a_ecrit_2025.pdf)
@@ -57,7 +59,7 @@ L’effort axial total vaut $F=nF_r$. L’intégration de la pression uniforme s
 
 #### Solution
 
-À rendement idéal, le couple de frein requis sur l’arbre moteur est $\kappa C_{A,max}=1000$ N·m. Le rayon moyen de frottement vaut $(2/3)(R_e^3-R_i^3)/(R_e^2-R_i^2)=0,1083$ m. Un ressort à 1 000 N apporte $2\mu F_r R_{moy}=86,7$ N·m. Il faut donc 12 ressorts.
+À rendement idéal, le couple de frein requis sur l’arbre moteur est $\kappa C_{A,max}=1000$ N·m. Le rayon moyen de frottement vaut $(2/3)(R_e^3-R_i^3)/(R_e^2-R_i^2)=0,1083$ m. Un ressort à 1 000 N apporte $2\mu F_r R_{moy}=86,7$ N·m. Il faut donc 12 ressorts. La distance entre centres voisins sur le cercle de 400 mm est $400\sin(\pi/12)=103,5$ mm, supérieure au diamètre de 20 mm. La place circonférentielle suffit dans l’hypothèse du modèle.
 
 ### Question 6 — Choisir l’arbre portant le frein
 
@@ -207,7 +209,7 @@ $x_D=a\cos\theta_1+b\cos(\theta_1+\theta_2)+c\cos(\theta_1+\theta_2+\theta_3)$. 
 
 #### Solution
 
-Dans la formule générale de Q17, remplacer chaque $\theta_i$ par $\theta_i+\Delta\theta_i$. Dans la posture donnée, en posant $d_i=\Delta\theta_i$ en radians, $x_D+\Delta x_D=-a\sin d_1+b\cos(d_1+d_2)+c\sin(d_1+d_2+d_3)$. Au premier ordre, $\Delta x_D=(c-a)d_1+cd_2+cd_3$.
+Dans la formule générale de Q17, remplacer chaque $\theta_i$ par $\theta_i+\Delta\theta_i$. Dans la posture donnée, en posant $d_i=\Delta\theta_i$ en radians, $x_D+\Delta x_D=-a\sin d_1+b\cos(d_1+d_2)+c\sin(d_1+d_2+d_3)$. Au premier ordre, $\Delta x_D=(c-a)d_1+cd_2+cd_3$. La contribution de la barre b est du deuxième ordre dans cette posture.
 
 ### Question 19 — Calculer le pire cumul angulaire
 
@@ -310,7 +312,7 @@ $|B_0(i\omega)|=|\sin u/u|$. Hors des zéros, une phase est $-u$ si $\sin u/u>0$
 
 #### Solution
 
-Pour $f_e=10^5$ Hz, les zéros sont à $\omega_n=2\pi n10^5$ rad/s. Le gain $20\log_{10}|\sin u/u|$ part de 0 dB et plonge à chaque zéro. À $\omega=\pi f_e$, il vaut −3,92 dB et la phase vaut −90°. Le premier lobe secondaire culmine vers −13,3 dB. La phase décroît linéairement en pulsation sur chaque lobe, ce qui devient une courbe sur une abscisse logarithmique.
+Pour $f_e=10^5$ Hz, les zéros sont à $\omega_n=2\pi n10^5$ rad/s. Le gain $20\log_{10}|\sin u/u|$ part de 0 dB et plonge à chaque zéro. À $\omega=\pi f_e$, il vaut −3,92 dB et la phase vaut −90°. Le premier lobe secondaire culmine vers −13,3 dB. La phase décroît linéairement en pulsation sur chaque lobe, ce qui devient une courbe sur une abscisse logarithmique. Les sauts de 180° rendent compte du changement de signe. Une branche de phase est tracée et les zéros sont exclus.
 
 ![Module et phase par lobe sur la grille logarithmique du bloqueur](figures/bloqueur.svg)
 
@@ -427,7 +429,7 @@ Avec $w_{mf}$ la vitesse filtrée et $w_m$ la mesure, $\ddot w_{mf}+2\xi_f\Omega
 
 #### Solution
 
-Posons $q=\Omega_fT_e$, $D=1+2\xi_f q+q^2$. Remplacer $\dot y_i$ par $(y_i-y_{i-1})/T_e$ et $\ddot y_i$ par $(y_i-2y_{i-1}+y_{i-2})/T_e^2$. Il vient $y_i=a_0w_{m,i}+b_0y_{i-1}+b_1y_{i-2}$ avec $a_0=q^2/D$, $b_0=(2+2\xi_fq)/D$, $b_1=-1/D$.
+Posons $q=\Omega_fT_e$, $D=1+2\xi_f q+q^2$. Remplacer $\dot y_i$ par $(y_i-y_{i-1})/T_e$ et $\ddot y_i$ par $(y_i-2y_{i-1}+y_{i-2})/T_e^2$. Il vient $y_i=a_0w_{m,i}+b_0y_{i-1}+b_1y_{i-2}$ avec $a_0=q^2/D$, $b_0=(2+2\xi_fq)/D$, $b_1=-1/D$. Le test sur un signal constant donne $a_0+b_0+b_1=1$, donc le gain continu est bien conservé.
 
 ### Question 41 — Choisir un ordre de grandeur pour la cassure
 
@@ -436,7 +438,7 @@ Posons $q=\Omega_fT_e$, $D=1+2\xi_f q+q^2$. Remplacer $\dot y_i$ par $(y_i-y_{i-
 
 #### Solution
 
-La montée utile dure quelques dizaines de millisecondes, avec une constante proche de 10 ms, soit une bande caractéristique de 100 rad/s. Les fluctuations rapides visibles se succèdent à l’échelle de la milliseconde ou en moins de temps. Une cassure de l’ordre de $10^3$ rad/s, soit environ 160 Hz, conserve la tendance et atténue fortement des fluctuations à plusieurs milliers de rad/s.
+La montée utile dure quelques dizaines de millisecondes, avec une constante proche de 10 ms, soit une bande caractéristique de 100 rad/s. Les fluctuations rapides visibles se succèdent à l’échelle de la milliseconde ou en moins de temps. Une cassure de l’ordre de $10^3$ rad/s, soit environ 160 Hz, conserve la tendance et atténue fortement des fluctuations à plusieurs milliers de rad/s. Il s’agit d’un choix de séparation des bandes. La figure 22 ne fournit pas un spectre permettant d’identifier une fréquence parasite unique.
 
 ### Question 42 — Identifier le transfert tension-vitesse
 
@@ -520,4 +522,4 @@ L’avance minimale est $60^\circ$. Avec $\sin\phi_m=(1-a_a)/(1+a_a)$, $a_a=(1-\
 
 #### Solution
 
-À 100 rad/s et $T_e=10^{-5}$ s, la perte vaut $\omega T_e/2=0,0005$ rad, soit $0,02865^\circ$. La marge passe théoriquement de 60° à 59,971°. L’effet est minime mais une avance réglée exactement au minimum manque strictement le seuil de 60°. Prévoir au moins 0,029° d’avance supplémentaire à la même coupure, outre les incertitudes réelles.
+À 100 rad/s et $T_e=10^{-5}$ s, la perte vaut $\omega T_e/2=0,0005$ rad, soit $0,02865^\circ$. La marge passe théoriquement de 60° à 59,971°. L’effet est minime mais une avance réglée exactement au minimum manque strictement le seuil de 60°. Prévoir au moins 0,029° d’avance supplémentaire à la même coupure, outre les incertitudes réelles. La seule marge ne certifie pas non plus $t_{5\%}\le0,03$ s. À titre de contrôle, le modèle continu avec les réglages minimaux de Q47–Q48 donne environ 0,075 s pour une consigne en échelon. Ce choix de paramètres ne valide donc pas l’ensemble du tableau.
