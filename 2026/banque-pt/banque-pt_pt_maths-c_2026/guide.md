@@ -10,6 +10,8 @@
 
 **Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
 **Format.** Épreuve de 4 h, calculatrice interdite, une feuille de papier millimétré à rendre avec la copie (pour le tracé de la question 4 du préambule). L'avertissement insiste sur la présentation et la justification des résultats. Il prévient aussi que les questions mal référencées ne sont pas notées. Il faut donc reprendre exactement la numérotation : Préambule 1 à 9, I.1 à I.7(d), II.1 à II.8, III.1 à III.5.
@@ -154,7 +156,7 @@ La courbe est au-dessus de $T$ pour $t<1$ (contact en $0$ seulement) et au-desso
 
 ![Figure 1 — Courbe de f(t) = t/(1 − t) (t₀ = 1), tangente T : y = t en O, asymptotes t = 1 et y = −1](figures/preambule-q4-trace-f.svg)
 
-Sur la copie, on trace à 1 cm par unité, sur un seul graphique. La branche gauche rejoint $y=-1$ par au-dessus en $-\infty$. La branche droite la rejoint par en dessous, car $f(t)+1=\frac1{1-t}<0$. La droite $T$ ne coupe la courbe qu'en $O$.
+Imprimé à 100 %, ce graphique donne 1 cm par unité sur les deux axes. La branche gauche rejoint $y=-1$ par au-dessus en $-\infty$. La branche droite la rejoint par en dessous, car $f(t)+1=\frac1{1-t}<0$. La droite $T$ ne coupe la courbe qu'en $O$.
 
 > [!METHODE]
 > Pour un tracé soigné en peu de temps, on procède dans l'ordre : asymptotes, tangentes remarquables, position relative, puis une demi-douzaine de points calculés de tête.
