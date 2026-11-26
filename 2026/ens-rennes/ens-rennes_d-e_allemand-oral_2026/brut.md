@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Fascicule officiel](https://www.ens-rennes.fr/medias/fichier/sujets-oraux-allemand-d-e-2026_1793377249028-pdf) · [Rapport du jury](https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-allemand-oral-2026_1793640932357-pdf)
 
 ## Sujet 1 — Wie weit trägt die Partnerschaft mit Indien?
