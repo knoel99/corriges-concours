@@ -2,9 +2,11 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
-**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 Le sujet propose un extrait de l’article « Le mobilier contemporain orné d’après la nature », publié par Gallé en 1900. Il invite à interroger les relations entre invention, service et plaisir dans le cadre du programme 1890–1939.
 
@@ -26,18 +28,23 @@ La modernité d’un meuble se mesure-t-elle à la nouveauté de son ornement, �
 
 #### Proposition de réponse
 
-Le lit Aube et Crépuscule est commandé à Gallé par Henry Hirsch à l’occasion de son mariage en 1903 et présenté à Nancy en 1904. Le meuble de chambre est un lieu où s’éprouvent le coucher, le retour du jour et les rythmes d’une vie. Il met ces expériences en relation avec les métamorphoses des papillons. Les ailes nacrées, l’œuf en cristal associé à la naissance et, à la tête du lit, le papillon orienté vers le bas donnent des sens différents aux deux extrémités. La marqueterie d’ébène et de palissandre, les contrastes de couleur et les incrustations changent avec la lumière. Le motif naturel ne se borne pas à copier un insecte sur une surface. Il fait du meuble une interprétation de l’activité pour laquelle il est conçu.
+Le lit Aube et Crépuscule est commandé à Gallé par Henry Hirsch à l’occasion de son mariage en 1903 et présenté à Nancy en 1904. Le meuble de chambre est un lieu où s’éprouvent le coucher, le retour du jour et les rythmes d’une vie. Il met ces expériences en relation avec les métamorphoses des papillons. Au pied du lit, deux papillons de jour aux ailes diaprées se font face au-dessus d’un œuf en cristal. Au chevet de tête, le papillon de nuit est un sphinx aux ailes déployées, la tête tournée vers le bas. L’aube et le crépuscule deviennent ainsi reconnaissables aux deux extrémités du meuble. La marqueterie d’ébène et de palissandre, les contrastes de couleur et les incrustations changent avec la lumière. Le motif naturel ne se borne pas à copier un insecte sur une surface. Il fait du meuble une interprétation de l’activité pour laquelle il est conçu.
 
 L’expression « orné pour plaire » dépasse donc ici l’ajout d’un motif séduisant à une structure déjà achevée. L’ornement participe de la signification du lit et de sa relation à la vie du commanditaire. Mais la commande est singulière, les matériaux précieux et la technique complexe. Une génération peut reconnaître dans cet objet un langage contemporain sans que la majorité de ses membres puisse l’acheter. Le passage des goûts de « notre génération » à l’expérience concrète d’un public déterminé est un point à discuter.
 
-![Deux rapports au corps. Le lit de Gallé fait sentir les rythmes du sommeil, tandis que la chaise longue permet de régler une posture.](figures/analyse-du-design.svg)
+![Du pied au chevet, deux moments du sommeil. Sur la chaise longue, l’inclinaison se règle.](figures/analyse-du-design.svg)
 
 L’enjeu de la « joie » apparaît si l’on parcourt le lit du pied à la tête comme y invite le dessin. La différence entre les deux extrémités donne un sens au trajet et à la durée. Le fabricant peut y inscrire une émotion que l’acheteur n’a pas commandée dans ses détails. Chez Gallé, convenir à une existence présente comporte donc une part d’invention. Cette marge devient un pouvoir de prescription quand un programme de logement définit à l’avance jusqu’à l’ordre des gestes de l’habitant.
 
 > [!INDICATION]
 > Faire deux colonnes au brouillon, « convenir à des habitudes » et « en faire naître ». Le lit de Gallé peut-il figurer dans les deux ? Utiliser l’œuf et le papillon pour expliquer comment le meuble accompagne un rythme quotidien tout en invitant son propriétaire à l’interpréter.
 
+Le vase *Hommes noirs*, réalisé en 1900 par Gallé avec Victor Prouvé, qui en dessine le décor, déplace la question du plaisir. Au lys doré répond la ciguë noire. Dans le contexte de l’affaire Dreyfus, l’une des plantes évoque l’innocence, l’autre la calomnie. Une personne peut apprécier le contraste des matières avant de comprendre que leur éclat et leur obscurité portent un jugement public. Le vase appartient à la verrerie. Le rapprochement avec le lit se justifie par la même opération, charger un motif naturel d’un sens qui déborde son apparence. Dans la chambre, c’est le temps vécu qui se donne à sentir. Ici, l’ornement engage le spectateur jusque dans un désaccord politique. La « joie » d’inventer peut ainsi se communiquer sous la forme d’une inquiétude. Qui se trouve alors inclus dans le « notre » de Gallé ? [Vase Hommes noirs, musée de l’École de Nancy](https://www.nancy.fr/fileadmin/NAN/culture/scolaires/2019/MEN_-_Exposition_Politique.pdf)
+
 ## II. « À notre taille » peut commander le mécanisme et la structure
+
+> [!INDICATION]
+> Relevez dans la citation qui parle et à qui renvoient les trois possessifs successifs. Faites ensuite l’expérience du vase de 1900. Un motif végétal y procure-t-il forcément une sensation agréable ? Quel élément visible vous permet de défendre votre interprétation ?
 
 > [!INDICATION]
 > Comparer une convenance symbolique avec une convenance posturale.
@@ -60,3 +67,5 @@ La cuisine de Francfort, conçue par Margarete Schütte-Lihotzky en 1926 pour de
 Cette rationalisation a ses limites. Le parcours de travail efficace d’une personne seule dans une étroite cuisine n’est pas forcément adapté à une cuisine partagée ou à un autre corps. Inversement, dans l’œuvre de Gallé, le plaisir d’une marqueterie singulière ne s’évalue pas par le seul nombre de gestes économisés. La question décisive n’oppose pas le beau meuble au meuble utile. Elle porte sur ceux qui ont la possibilité de définir leur usage et leur plaisir.
 
 Gallé propose finalement une définition ouverte de la modernité, produite dans le présent et adressée à des manières de vivre. Son œuvre montre ce que l’ornement peut apporter au sens d’un objet intime. Les recherches de l’entre-deux-guerres élargissent sa formule en concevant autrement la relation au corps et au logement, tout en laissant ouverte la question sociale contenue dans le mot « notre ».
+
+[Sujet officiel, p. 1](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2018_Sujet_1A_Design_Histoire_art.pdf#page=1) · [Rapport du jury, p. 3–7](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2018_RE_1A_Design.pdf#page=3)
