@@ -8,6 +8,8 @@
 
 **Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## Les enfants surdoués
@@ -37,3 +39,9 @@ Dans le document 6, 54,3 % des enfants du groupe enquêté jouent d’un instrum
 Le dossier permet ainsi d’expliquer comment se constitue une population reconnue comme exceptionnelle. Il faudrait une autre enquête pour mesurer toutes les aptitudes d’une cohorte. L’enquête sociologique gagne en précision en étudiant les conditions de passation, de reconnaissance et d’usage des résultats, y compris leurs bénéfices ou leurs contraintes pour l’enfant.
 
 [Dossier officiel](https://www.ens.psl.eu/sites/default/files/dossier_surdouance.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_tronc_commun_sociologie.pdf)
+
+## Vérification sur le dossier
+
+Élias et Lignier éclairent la formation des aptitudes et l’identification du diagnostic. Les tableaux sur les diplômes, la profession paternelle, les investissements parentaux et les activités des enfants puis les scores de maternelle ont été confrontés aux deux copies.
+
+Le document 6 distingue le nombre d’activités du fait de pratiquer au moins un sport. Trois activités ou davantage concernent 39,2 % du groupe enquêté et 6,1 % du groupe comparable. L’écart vaut 33,1 points et le rapport environ 6,4. Ces calculs décrivent les groupes constitués par l’enquête, dont le premier passe par une association de familles. Ils ne mesurent pas l’effet d’une activité supplémentaire sur un test individuel.
