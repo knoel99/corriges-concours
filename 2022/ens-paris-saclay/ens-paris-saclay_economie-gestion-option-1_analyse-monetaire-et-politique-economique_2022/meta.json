@@ -1,0 +1,61 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_analyse-monetaire-et-politique-economique_2022",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Analyse monétaire et politique économique",
+    "annee": 2022,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "L’inflation est-elle réellement de retour ?",
+  "gabarit": "dissertation",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2022_Sujet_Ecrit_Economie_Gestion_Option1_AMPE.pdf",
+    "sujet_sha256": "efd815983c38298bc0e8d78a3e993478231ac1375b7509bbb16d2062d6bf6ee6",
+    "index": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=289&field_year_target_id%5B%5D=572",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2022_Sujet_Ecrit_Economie_Gestion_Option1_AMPE.pdf",
+        "sha256": "efd815983c38298bc0e8d78a3e993478231ac1375b7509bbb16d2062d6bf6ee6",
+        "pages": 2
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/effet-de-base.svg",
+      "question": "Composition",
+      "legende": "Un unique passage de l’indice de 100 à 110 produit temporairement 10 % d’inflation en glissement annuel. Douze mois plus tard, l’inflation retombe à zéro si l’indice est resté à 110, sans diminution du niveau des prix."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Dissertation au 22 avril 2022 sur la mesure de l’inflation, les chocs d’offre et de demande, la diffusion et les anticipations. Figure d’effet de base, sources statistiques contemporaines et guide d’analyse."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Composition"
+    ],
+    "limites": "Composition proposée dans le contexte de la session ; les données des figures illustrent un mécanisme."
+  }
+}
