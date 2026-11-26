@@ -47,7 +47,7 @@
     "sujet_sha256": "0afe66914f6647eea47f44c16c959b7f2f2a011993cf266b67d492bce04f2f89",
     "rapport_sha256": "527fe2a0a4af2464a6e2f22d0ea5cba710914d81c5f410039ea6855b94eab558"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "provenance": {
     "redaction": {
       "provider": "codex",
@@ -92,6 +92,70 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Contrôle des deux versions sur les tableaux du dossier et les consignes. Calcul à partir des taux et des effectifs du document 2 pour distinguer risque conditionnel et composition de la population pauvre."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Les sept documents du fac-similé et leur analyse par le jury ont été vérifiés dans les deux copies. Les données du tableau d’activité distinguent taux par statut, effectifs en milliers et revenu du ménage par unité de consommation.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "L’emploi contre la pauvreté ?"
+    ],
+    "annexes_verifiees": [
+      {
+        "document": 1,
+        "pages": "2",
+        "intitule": "Taux de chômage et taux de pauvreté en France, 1996–2023"
+      },
+      {
+        "document": 2,
+        "pages": "3",
+        "intitule": "Niveau de vie et taux de pauvreté selon le statut d’activité en 2023"
+      },
+      {
+        "document": 3,
+        "pages": "4–5",
+        "intitule": "Inciter ou redistribuer : le contresens de la trappe à pauvreté"
+      },
+      {
+        "document": 4,
+        "pages": "6",
+        "intitule": "Caractéristiques des salariés à bas revenus salariaux en France en 2019"
+      },
+      {
+        "document": 5,
+        "pages": "7",
+        "intitule": "AAH, ASPA et RMI ou RSA en pourcentage du SMIC net à temps plein, 1990–2022"
+      },
+      {
+        "document": 6,
+        "pages": "8–9",
+        "intitule": "Politiques d’activation des chômeurs"
+      },
+      {
+        "document": 7,
+        "pages": "9–11",
+        "intitule": "Les conditions de travail des auto-entrepreneurs"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "verification": "Les sept documents du fac-similé et leur analyse par le jury ont été vérifiés dans les deux copies. Les données du tableau d’activité distinguent taux par statut, effectifs en milliers et revenu du ménage par unité de consommation.",
+    "limites": "Une seule dissertation sur le dossier imprimé de onze pages."
+  }
 }

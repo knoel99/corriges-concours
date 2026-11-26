@@ -10,6 +10,8 @@
 
 **Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Sujet** — Le travail comme (re)production des rapports sociaux
 
 ## Que faire des parenthèses ?
@@ -99,3 +101,11 @@ Le travail reconduit les rapports sociaux parce que sa répartition transforme d
 - [Lettre des grévistes au Premier ministre et présentation des archives nationales britanniques](https://www.nationalarchives.gov.uk/explore-the-collection/stories/letter-by-the-women-workers-at-fords-of-dagenham/)
 - [Parlement britannique, rapport d’enquête sur la grève de 1968](https://www.parliament.uk/about/living-heritage/transformingsociety/tradeindustry/industrycommunity/collections/equal-pay/ford-strike/)
 - [Trades Union Congress, retour sur les grèves de 1968 et de 1984](https://www.tuc.org.uk/workplace-guidance/case-studies/how-fords-striking-women-drove-equal-pay-act?language=en)
+
+## Vérification sur le sujet
+
+Le titre unique reproduit dans les annales pédagogiques a été comparé aux deux copies. L’analyse porte sur la distribution du travail domestique et salarié, les règles de qualification, les rapports de classe, de genre et de racialisation, ainsi que sur leur transformation collective.
+
+À Dagenham, une hausse du taux de rémunération dans la catégorie B et le reclassement du poste en catégorie C sont deux résultats empiriques distincts. Pour tester la reproduction d’une hiérarchie, on peut suivre, entre deux accords, les tâches attribuées, le groupe qui les exerce et le droit d’en fixer la valeur. Une hausse du salaire avec maintien du classement modifie la rémunération immédiate. Une nouvelle classification peut aussi modifier la référence applicable aux futures recrues. L’exemple rend ainsi observables à deux dates les processus visés par les parenthèses du sujet.
+
+Le libellé est reproduit dans les annales pédagogiques de la filière. La notice du concours décrit le format. La vérification porte sur cette dissertation et aucune pièce supplémentaire n’est annoncée sur la page qui la reproduit.

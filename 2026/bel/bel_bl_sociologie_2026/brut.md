@@ -10,6 +10,8 @@
 
 **Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Sujet** — Le travail comme (re)production des rapports sociaux
 
 ## Introduction
@@ -53,3 +55,11 @@ Il serait néanmoins hâtif de faire de tout collectif de travail une force de t
 ## Conclusion
 
 Le travail reconduit les rapports sociaux parce que sa répartition transforme des écarts de ressources et de disponibilité en différences de carrière, de reconnaissance ou de sécurité. Il les produit aussi, chaque fois qu’un objectif d’atelier, un mode de recrutement ou une classification acquiert la force d’une règle à laquelle les groupes se mesurent. Les deux processus sont donc liés. La hiérarchie ne dure qu’à travers des activités qui la rétablissent dans des conditions changeantes. Parce que les personnes qui travaillent assurent ensemble la continuité de ces activités, elles peuvent aussi en suspendre le cours et en discuter les règles. La portée de cette capacité se juge à ce qu’elle change concrètement à l’assignation des tâches, à leur valeur et au pouvoir de décider de l’une et de l’autre.
+
+## Vérification sur le sujet
+
+Le titre unique reproduit dans les annales pédagogiques a été comparé aux deux copies. L’analyse porte sur la distribution du travail domestique et salarié, les règles de qualification, les rapports de classe, de genre et de racialisation, ainsi que sur leur transformation collective.
+
+À Dagenham, une hausse du taux de rémunération dans la catégorie B et le reclassement du poste en catégorie C sont deux résultats empiriques distincts. Pour tester la reproduction d’une hiérarchie, on peut suivre, entre deux accords, les tâches attribuées, le groupe qui les exerce et le droit d’en fixer la valeur. Une hausse du salaire avec maintien du classement modifie la rémunération immédiate. Une nouvelle classification peut aussi modifier la référence applicable aux futures recrues. L’exemple rend ainsi observables à deux dates les processus visés par les parenthèses du sujet.
+
+Le libellé est reproduit dans les annales pédagogiques de la filière. La notice du concours décrit le format. La vérification porte sur cette dissertation et aucune pièce supplémentaire n’est annoncée sur la page qui la reproduit.
