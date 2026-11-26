@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Diviseurs de polynômes et opérateur de Hardy.** Les deux parties de cinq heures au total ont le même poids. L’algèbre distingue les coefficients entiers et les réductions dans un corps fini. L’analyse considère le spectre réel et compare deux normes sur l’espace d’arrivée.
 
 ## Algèbre I. Racines et réduction modulo un premier
@@ -285,6 +287,16 @@ $$\|(T-T_\varepsilon)u\|_p^p\le\int_0^1\left(\frac{\varepsilon}{x+\varepsilon}\r
 Le majorant intégral ne dépend pas de $u$ ; l’intégrande est dominé par 1 et tend vers 0 pour tout $x>0$. Par convergence dominée, l’intégrale tend vers 0, pour tout $1\le p<\infty$. En prenant le supremum sur $u$, la convergence a donc lieu en norme d’opérateur. Pour $u=1$, l’erreur réalise le majorant à chaque abscisse.
 
 ![Figure 2 — L’erreur atteint 1 à l’origine pour la fonction constante. Lorsque ε diminue, elle se concentre près de zéro et sa norme intégrale tend vers zéro.](figures/moyenne-regularisee-hardy.svg)
+
+La fonction constante étant extrémale, on peut calculer exactement cette norme :
+$$
+\|T-T_\varepsilon\|_{E,G}^p=
+\begin{cases}
+\varepsilon\log(1+1/\varepsilon),&p=1,\\[3pt]
+\dfrac{\varepsilon}{p-1}\left[1-\left(\dfrac{\varepsilon}{1+\varepsilon}\right)^{p-1}\right],&p>1.
+\end{cases}
+$$
+Les formules résultent du changement de variable $y=1+x/\varepsilon$ et confirment la limite aux deux régimes.
 
 ### Question Analyse 22.c
 

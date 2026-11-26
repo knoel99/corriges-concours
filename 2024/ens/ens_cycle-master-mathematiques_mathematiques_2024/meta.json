@@ -36,6 +36,72 @@
       "perimetre": "Rédaction des deux éditions des deux problèmes du 27 février 2024. Opérations triangulaires sur tout corps, invariants de rang et orbites de drapeaux, adjoints dans un Hilbert complexe, compacité diagonale, Volterra, extractions et adjoint. Schéma de la preuve de convergence uniforme.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "41 consignes du cahier. Contrôle de la succession des pivots, des deux invariances de rang, des orbites de couples de drapeaux, de la convention hermitienne et des cinq étapes de compacité de Volterra. Rattachement explicite de la figure de rang aux dimensions des intersections de drapeaux.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Algèbre I.1",
+      "Algèbre I.2",
+      "Algèbre I.3",
+      "Algèbre I.4",
+      "Algèbre I.5",
+      "Algèbre I.6",
+      "Algèbre I.7",
+      "Algèbre I.8",
+      "Algèbre I.9",
+      "Algèbre I.10",
+      "Algèbre II.1",
+      "Algèbre II.2",
+      "Algèbre II.3",
+      "Algèbre II.4",
+      "Algèbre II.5",
+      "Algèbre II.6",
+      "Analyse I.1",
+      "Analyse I.2.a",
+      "Analyse I.2.b",
+      "Analyse I.2.c",
+      "Analyse I.3.a",
+      "Analyse I.3.b",
+      "Analyse I.3.c",
+      "Analyse I.4",
+      "Analyse I.5",
+      "Analyse II.1",
+      "Analyse II.2",
+      "Analyse II.3",
+      "Analyse II.4",
+      "Analyse II.5",
+      "Analyse III.1.a",
+      "Analyse III.1.b",
+      "Analyse III.2",
+      "Analyse III.3",
+      "Analyse III.4.a",
+      "Analyse III.4.b",
+      "Analyse III.4.c",
+      "Analyse III.4.d",
+      "Analyse III.4.e",
+      "Analyse III.5",
+      "Analyse III.6"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "revision",
+      "sha256_sujet_controle": "6dda3414d7468eaa25f6d82f0967e42cb29197eab0d50710425e424a34123ce2",
+      "perimetre": "41 consignes du cahier. Contrôle de la succession des pivots, des deux invariances de rang, des orbites de couples de drapeaux, de la convention hermitienne et des cinq étapes de compacité de Volterra. Rattachement explicite de la figure de rang aux dimensions des intersections de drapeaux."
+    }
+  },
+  "date_revision": "2026-11-26"
 }

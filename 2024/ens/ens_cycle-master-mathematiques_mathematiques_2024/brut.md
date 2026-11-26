@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Décomposition de Bruhat, drapeaux et opérateur de Volterra.** Les deux problèmes indépendants de cette épreuve de cinq heures ont le même poids. En analyse, le produit hermitien est linéaire en son premier argument.
 
 ## Algèbre I. Décomposition de Bruhat
@@ -79,6 +81,10 @@ Appliquons Bruhat à $A^{-1}B=T P_\sigma U$ avec $T,U\in T^+$. Pour les classes 
 ### Question Algèbre II.6
 
 Par II.5 chaque orbite contient $([I],[P_\sigma])$. Si deux tels couples sont dans une même orbite, l’image de $[I]$ reste $[I]$ et la matrice agissante appartient à $T^+$. On en déduit $P_\tau\in T^+P_\sigma T^+$, donc $\sigma=\tau$. Les $n!$ permutations donnent exactement **$n!$ orbites** de couples de drapeaux.
+
+On peut lire la permutation directement dans les deux drapeaux. Après changement de base, écrivons le premier $D_0=(E_i)$ et le second $(F_j)$, où $F_j$ est engendré par les $j$ premières colonnes de $A$. La projection de $F_j$ sur les $n-i$ dernières coordonnées a pour noyau $F_j\cap E_i$. Sa matrice est précisément le rectangle de I.9, donc
+$$\dim(E_i\cap F_j)=j-r_{i+1,j}(A)=\#\{k\le j:\sigma(k)\le i\}.$$
+Pour $i=n$, on pose $r_{n+1,j}=0$. Pour deux drapeaux du plan, les deux orbites correspondent ainsi aux droites égales ou distinctes.
 
 ## Analyse I. Adjoint et opérateurs compacts
 
