@@ -1,0 +1,1073 @@
+{
+  "slug": "banque-pt_pt_sciences-industrielles-a_2021",
+  "commit_export": "1330278202e7d370e75ae20128a6829c1854e194",
+  "gabarit": "scripts/exporter du commit d’export",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Résolution des 50 questions, calculs homogènes, impédance et point de fonctionnement, annotation des plans et des graphiques."
+    },
+    {
+      "phase": "revision",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture des questions sur les deux cahiers et le rapport, vérification des signes, des butées, des pentes, des résultats numériques et des figures sur PDF."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21",
+      "Q22",
+      "Q23",
+      "Q24",
+      "Q25",
+      "Q26",
+      "Q27",
+      "Q28",
+      "Q29",
+      "Q30",
+      "Q31",
+      "Q32",
+      "Q33",
+      "Q34",
+      "Q35",
+      "Q36",
+      "Q37",
+      "Q38",
+      "Q39",
+      "Q40",
+      "Q41",
+      "Q42",
+      "Q43",
+      "Q44",
+      "Q45",
+      "Q46",
+      "Q47",
+      "Q48",
+      "Q49",
+      "Q50"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Q1",
+        "feuillets": "5 à 7",
+        "titre": "Les sept pivots du bras gauche"
+      },
+      {
+        "question": "Q2",
+        "feuillets": "8",
+        "titre": "Rotation autour du troisième axe"
+      },
+      {
+        "question": "Q3",
+        "feuillets": "8",
+        "titre": "Rotation autour du premier axe"
+      },
+      {
+        "question": "Q4",
+        "feuillets": "8 à 10",
+        "titre": "Composition des rotations"
+      },
+      {
+        "question": "Q5",
+        "feuillets": "8 et 9",
+        "titre": "Translation entre deux origines"
+      },
+      {
+        "question": "Q6",
+        "feuillets": "9 et 10",
+        "titre": "Repères de l’épaule"
+      },
+      {
+        "question": "Q7",
+        "feuillets": "10",
+        "titre": "Attitude du premier corps"
+      },
+      {
+        "question": "Q8",
+        "feuillets": "10",
+        "titre": "Attitude du deuxième corps"
+      },
+      {
+        "question": "Q9",
+        "feuillets": "10",
+        "titre": "Composition des deux attitudes"
+      },
+      {
+        "question": "Q10",
+        "feuillets": "10",
+        "titre": "Deux calculs de la position du coude"
+      },
+      {
+        "question": "Q11",
+        "feuillets": "6 et 11",
+        "titre": "Butées et symétrie des bras"
+      },
+      {
+        "question": "Q12",
+        "feuillets": "5 à 7 et 11",
+        "titre": "Distance atteignable entre les deux outils"
+      },
+      {
+        "question": "Q13",
+        "feuillets": "11",
+        "titre": "Interprétation d’une matrice numérique"
+      },
+      {
+        "question": "Q14",
+        "feuillets": "12",
+        "titre": "Vitesse du centre d’outil"
+      },
+      {
+        "question": "Q15",
+        "feuillets": "12",
+        "titre": "Action d’une matrice antisymétrique"
+      },
+      {
+        "question": "Q16",
+        "feuillets": "12",
+        "titre": "Vitesse angulaire de l’outil"
+      },
+      {
+        "question": "Q17",
+        "feuillets": "6, 13 et 14",
+        "titre": "Trajectoire et limites du mouvement simulé"
+      },
+      {
+        "question": "Q18",
+        "feuillets": "15 et 16",
+        "titre": "Dimensions minimales du voile de poignet"
+      },
+      {
+        "question": "Q19",
+        "feuillets": "16",
+        "titre": "Profilé en croix"
+      },
+      {
+        "question": "Q20",
+        "feuillets": "16 et 17",
+        "titre": "Bilan des moments sur l’inertie"
+      },
+      {
+        "question": "Q21",
+        "feuillets": "17",
+        "titre": "Couple exercé sur la charge"
+      },
+      {
+        "question": "Q22",
+        "feuillets": "17",
+        "titre": "Transmittances du modèle élastique"
+      },
+      {
+        "question": "Q23",
+        "feuillets": "17",
+        "titre": "Réponse du ressort lorsque la sortie est bloquée"
+      },
+      {
+        "question": "Q24",
+        "feuillets": "17",
+        "titre": "Critère d’impédance et résonance"
+      },
+      {
+        "question": "Q25",
+        "feuillets": "18",
+        "titre": "Écart permanent avec un correcteur PD"
+      },
+      {
+        "question": "Q26",
+        "feuillets": "18",
+        "titre": "Impédance de la boucle PID"
+      },
+      {
+        "question": "Q27",
+        "feuillets": "18",
+        "titre": "Signe de la partie imaginaire"
+      },
+      {
+        "question": "Q28",
+        "feuillets": "18",
+        "titre": "Limite aux basses fréquences"
+      },
+      {
+        "question": "Q29",
+        "feuillets": "18 et 19",
+        "titre": "Choix de la constante du correcteur modifié"
+      },
+      {
+        "question": "Q30",
+        "feuillets": "19",
+        "titre": "Anticipation de consigne de couple"
+      },
+      {
+        "question": "Q31",
+        "feuillets": "18 et 20",
+        "titre": "Performances de la commande en couple"
+      },
+      {
+        "question": "Q32",
+        "feuillets": "21",
+        "titre": "Puissance instantanée triphasée"
+      },
+      {
+        "question": "Q33",
+        "feuillets": "21 et 22",
+        "titre": "Composantes sur deux axes fixes"
+      },
+      {
+        "question": "Q34",
+        "feuillets": "22",
+        "titre": "Conservation de la puissance"
+      },
+      {
+        "question": "Q35",
+        "feuillets": "22",
+        "titre": "Passage aux axes direct et en quadrature"
+      },
+      {
+        "question": "Q36",
+        "feuillets": "22",
+        "titre": "Choix d’un angle tournant"
+      },
+      {
+        "question": "Q37",
+        "feuillets": "22 et 23",
+        "titre": "Pulsations électrique et mécanique"
+      },
+      {
+        "question": "Q38",
+        "feuillets": "22 et 23",
+        "titre": "Équations des tensions statoriques"
+      },
+      {
+        "question": "Q39",
+        "feuillets": "23",
+        "titre": "Blocs du modèle découplé"
+      },
+      {
+        "question": "Q40",
+        "feuillets": "23",
+        "titre": "Effet du correcteur proportionnel de courant"
+      },
+      {
+        "question": "Q41",
+        "feuillets": "23",
+        "titre": "Gain d’anticipation de courant"
+      },
+      {
+        "question": "Q42",
+        "feuillets": "24",
+        "titre": "Réglage proportionnel-intégral"
+      },
+      {
+        "question": "Q43",
+        "feuillets": "24",
+        "titre": "Mesure des temps de réponse du courant"
+      },
+      {
+        "question": "Q44",
+        "feuillets": "25",
+        "titre": "Couple résistant au coude"
+      },
+      {
+        "question": "Q45",
+        "feuillets": "25 et 26",
+        "titre": "Pulsation au point de fonctionnement"
+      },
+      {
+        "question": "Q46",
+        "feuillets": "26",
+        "titre": "Équation complexe de tension"
+      },
+      {
+        "question": "Q47",
+        "feuillets": "26",
+        "titre": "Construction de Fresnel"
+      },
+      {
+        "question": "Q48",
+        "feuillets": "25 et 26",
+        "titre": "Courant en quadrature"
+      },
+      {
+        "question": "Q49",
+        "feuillets": "26",
+        "titre": "Tension efficace d’une phase"
+      },
+      {
+        "question": "Q50",
+        "feuillets": "25 et 26",
+        "titre": "Compatibilité avec le variateur"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  },
+  "pieces": [
+    {
+      "doc": "sujet",
+      "pages": 56,
+      "sha256": "33cc5a184bc4097107c3b2e5fbc3b515c686fe8e0962717955fbbe219fbf128f",
+      "rendus_sha256": [
+        "905baef803fbc6d7036cd8e85a669fc60819ef9fc3b4f08385e54406a8b3fbe2",
+        "79b55662d1d000662f5a035a5c9537deb06260949ea77c422a61bae385e7ce00",
+        "360e0e813b7216e8429fe28d1ce4948aa410d34774ca68e5eccaa6f78d1183f7",
+        "6f6fce673c68c2f516a532c39a4e8312dc77fecca68befa72f2e23169645a6a6",
+        "80f9aa03b87dff581024ed788841af69e75b6997fb31b8779f784ad290f9d308",
+        "fca4443b818692142e5ed41ff4007ec06f1b395309e3b93c3c64df2877b30481",
+        "7cb2640d095247e2a70bc747313f6a88246e828fc053e5fd46a03f2d59f116ad",
+        "c2ee967d2b0a0fe7aad048816c8045ada8a583f6a44dddfc20284071efadc3df",
+        "6e5fa7df714a7a201793c763c63396240146aa2004e3c65cd9a39c334d6aacf6",
+        "47fe8cde119eebf55377b6746de7d6c11373f0d936196aea5a04e51da77cb81e",
+        "224209c23efc1054b0fa5faf58342ba0b85c86a497e75eea29ae793848d083e3",
+        "bf935db4303c826c161af86095a8effb76a57bd36514d46a13f5e26487453eca",
+        "dbd09c8522f9abee6efd02983630fdf96d1767ef75d00d059ba80b369bb5fff8",
+        "86565970016d6b0ee4afb5ea43f92ffbbeb3036e12bb0de4ef9b892b042488a3",
+        "b04618c48cb94961af9b54134db8b8f0ad2f5be50bb99bc7e1a99b7afd5adf1b",
+        "e137caffd5d830a533860556e997cc13bd93369585a57ac2f027e1c6f7deb061",
+        "d3cc2d0b4d03242f76cfd4418976512b179aa18d64a889bfb8a32f89484993cf",
+        "1d5a34f97f437876f045c204495573a464a9cf07dbfe815ecd6a145a26c3856d",
+        "611a90d7949a20e3e0de5846d6c9e598d442286be5fee5bf87288e29b85e826a",
+        "9cec90abc22ad71a9cb195d2cf8bc8cbb0ca71b256fad530dbd81b49337c0c0d",
+        "f450fb9b487631a69d7ac5bc20b16a750f33b20b19eec40bafdf1d67b5aa3501",
+        "93a02539260c8e7de2e7921b5038335b4b4328afe3869f958d629df5f6cc03b6",
+        "cb744dc76ff0defa44812bd4d351ba83aba0ae87d55a7e6930dcf8ea689968e1",
+        "d30893aae351ad591f9b6bca68f4bba57df44017ed667e5e64d183310f719ce8",
+        "9e5661a1f4328caa853fbfea18207114dc435d3e49606e5b38f19dc53be9a4b2",
+        "cbfe9de95ed783868e587ecd5c83f8da9ef4dff23ac6b298f99be3235dcdb555",
+        "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6",
+        "debb0693fc08d68819616ef0c573106b97c79d636081bc383034337f284fdae0",
+        "e2f8731610df72c0c146f98b8463c8e5a60797060cb213cd7397ca0814d5b62d",
+        "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6",
+        "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6",
+        "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6",
+        "f01cdea3334e79ac1b84cb43527fd47c8c0aad624c6596b951866e65495003f9",
+        "727e02e0fc76614df2f23d5e8c84bbe6cb2e920a8728c4d8093215610c99a00c",
+        "ec8e54af044cbcc13fee7e8a6123df4a623bc13f9c237f35d99a5e6830f4aecb",
+        "89e7787c18a97340e85ea1546c6bce461c827278cca42335a4061942e44e3d5d",
+        "0adb41d4fe8d2c8162157acc9494764dd3cf1f5a5f25362ab7fbc75b2ff52bfc",
+        "47e09b37da327efe8b65d5fac6add2825eed607635e0c40a86fd92ca9987864e",
+        "23075b3c4939a66697dd9ba6a6240a4da4e880d7c93974dde5f89365d5c76076",
+        "27a792733f65dfa90525b8f1a85f5422f360c43c83dbb9feb9aa4bae65a128a0",
+        "053298a16ba7e8e620c548996fe5955c237121dfc32d2008c4d80ece3a7023c3",
+        "afc33476062ec247318dfcdeed7eb1685c56d1b34b438676493c7777e611e58e",
+        "5640d95ecc71a573de53ad69c3ab216a2dc084804af028c37173c0e0297d5622",
+        "5fce08a172d818d69d35195ea0b6fa498f6f9752064a4b86adbd2e4958de06a1",
+        "cdd0020b46343fb23c4b7b7f479546d3b0aa98469aaa7fb597a51447dc05acb7",
+        "135477fec4edcf97b9ff5680122652943d332b98fad5df3f38b398d7b2f5be33",
+        "ea80529b8606453f2abf153b5c09dd7cc2b5567083ef2e8199bb56c2aec7dcf1",
+        "85581e650ea2f1440234a93d3d9bf1d5c5170c87c280a6e3cae806acae285937",
+        "1159e4c82c388a2d5d69aceeff357c4638b5636655c7631e8af71b115fcd6433",
+        "5565b864897556eedc7cc2c0511e0cb92bf2e6b55cc15aa73bd4871d46ea51c2",
+        "30e98d06f8f3599916ef5526e57fd0b663355e9c7a8d92ae4cac953e256ffdde",
+        "026cd2fa4017289aefc54ace19a4612f34b010090210512fcaadc788c9c41dee",
+        "1feb40586135f5def37c568fd2df64de0cca08fa26a2ad34f17fc43ea7364cfc",
+        "ab76f339dd2f8d36de3fc4019dd68b168553d0b4bb7fbbdf2ed1eec9038783d7",
+        "0cfd05cca4bb1de2275cf8a611839d8513261d92b96aaf7c6d557cc4ebca4f1d",
+        "5e0beb0605631aab2ac2606cab740d12bc1f659303e742d702209c99d36904fe"
+      ],
+      "pieces_jointes": []
+    },
+    {
+      "doc": "rapport",
+      "pages": 3,
+      "sha256": "4254201db66fb63c47ebd46bd45b29543fec3f230439ffb3c8ce7196993d0cd7",
+      "rendus_sha256": [
+        "88edc4669721339da31b0a6409cbccbd4654d8be9f64b58884e2e92047546d02",
+        "b0d9f06b1cbb9c6b51609b1f87efdfebfc96e201906fd665d8e15217e7d57c0d",
+        "91c4f0331aadcb4b3edb2547f89f0d7b50e54cea9a2a9452d96887aec7cf0983"
+      ],
+      "pieces_jointes": []
+    }
+  ],
+  "pdf": {
+    "brut": {
+      "pages": 14,
+      "nombre_signets": 54,
+      "signets": [
+        [
+          1,
+          "1 — Cinématique du bras gauche",
+          1
+        ],
+        [
+          2,
+          "Q1 — Les sept pivots du bras gauche",
+          1
+        ],
+        [
+          2,
+          "Q2 — Rotation autour du troisième axe",
+          1
+        ],
+        [
+          2,
+          "Q3 — Rotation autour du premier axe",
+          2
+        ],
+        [
+          2,
+          "Q4 — Composition des rotations",
+          2
+        ],
+        [
+          2,
+          "Q5 — Translation entre deux origines",
+          2
+        ],
+        [
+          2,
+          "Q6 — Repères de l'épaule",
+          2
+        ],
+        [
+          2,
+          "Q7 — Attitude du premier corps",
+          3
+        ],
+        [
+          2,
+          "Q8 — Attitude du deuxième corps",
+          3
+        ],
+        [
+          2,
+          "Q9 — Composition des deux attitudes",
+          3
+        ],
+        [
+          2,
+          "Q10 — Deux calculs de la position du coude",
+          4
+        ],
+        [
+          2,
+          "Q11 — Butées et symétrie des bras",
+          4
+        ],
+        [
+          2,
+          "Q12 — Distance atteignable entre les deux outils",
+          4
+        ],
+        [
+          2,
+          "Q13 — Interprétation d'une matrice numérique",
+          4
+        ],
+        [
+          2,
+          "Q14 — Vitesse du centre d'outil",
+          4
+        ],
+        [
+          2,
+          "Q15 — Action d'une matrice antisymétrique",
+          5
+        ],
+        [
+          2,
+          "Q16 — Vitesse angulaire de l'outil",
+          5
+        ],
+        [
+          2,
+          "Q17 — Trajectoire et limites du mouvement simulé",
+          5
+        ],
+        [
+          1,
+          "2 — Ressort et asservissement en couple",
+          6
+        ],
+        [
+          2,
+          "Q18 — Dimensions minimales du voile de poignet",
+          6
+        ],
+        [
+          2,
+          "Q19 — Profilé en croix",
+          6
+        ],
+        [
+          2,
+          "Q20 — Bilan des moments sur l'inertie",
+          6
+        ],
+        [
+          2,
+          "Q21 — Couple exercé sur la charge",
+          6
+        ],
+        [
+          2,
+          "Q22 — Transmittances du modèle élastique",
+          7
+        ],
+        [
+          2,
+          "Q23 — Réponse du ressort lorsque la sortie est bloquée",
+          7
+        ],
+        [
+          2,
+          "Q24 — Critère d'impédance et résonance",
+          7
+        ],
+        [
+          2,
+          "Q25 — Écart permanent avec un correcteur PD",
+          7
+        ],
+        [
+          2,
+          "Q26 — Impédance de la boucle PID",
+          8
+        ],
+        [
+          2,
+          "Q27 — Signe de la partie imaginaire",
+          8
+        ],
+        [
+          2,
+          "Q28 — Limite aux basses fréquences",
+          8
+        ],
+        [
+          2,
+          "Q29 — Choix de la constante du correcteur modifié",
+          8
+        ],
+        [
+          2,
+          "Q30 — Anticipation de consigne de couple",
+          9
+        ],
+        [
+          2,
+          "Q31 — Performances de la commande en couple",
+          9
+        ],
+        [
+          1,
+          "3 — Modèle électrique et asservissement de courant",
+          10
+        ],
+        [
+          2,
+          "Q32 — Puissance instantanée triphasée",
+          10
+        ],
+        [
+          2,
+          "Q33 — Composantes sur deux axes fixes",
+          10
+        ],
+        [
+          2,
+          "Q34 — Conservation de la puissance",
+          10
+        ],
+        [
+          2,
+          "Q35 — Passage aux axes direct et en quadrature",
+          10
+        ],
+        [
+          2,
+          "Q36 — Choix d'un angle tournant",
+          10
+        ],
+        [
+          2,
+          "Q37 — Pulsations électrique et mécanique",
+          10
+        ],
+        [
+          2,
+          "Q38 — Équations des tensions statoriques",
+          11
+        ],
+        [
+          2,
+          "Q39 — Blocs du modèle découplé",
+          11
+        ],
+        [
+          2,
+          "Q40 — Effet du correcteur proportionnel de courant",
+          11
+        ],
+        [
+          2,
+          "Q41 — Gain d'anticipation de courant",
+          11
+        ],
+        [
+          2,
+          "Q42 — Réglage proportionnel-intégral",
+          12
+        ],
+        [
+          2,
+          "Q43 — Mesure des temps de réponse du courant",
+          12
+        ],
+        [
+          1,
+          "4 — Point de fonctionnement du coude",
+          12
+        ],
+        [
+          2,
+          "Q44 — Couple résistant au coude",
+          12
+        ],
+        [
+          2,
+          "Q45 — Pulsation au point de fonctionnement",
+          13
+        ],
+        [
+          2,
+          "Q46 — Équation complexe de tension",
+          13
+        ],
+        [
+          2,
+          "Q47 — Construction de Fresnel",
+          13
+        ],
+        [
+          2,
+          "Q48 — Courant en quadrature",
+          14
+        ],
+        [
+          2,
+          "Q49 — Tension efficace d'une phase",
+          14
+        ],
+        [
+          2,
+          "Q50 — Compatibilité avec le variateur",
+          14
+        ]
+      ],
+      "pages_figures": [
+        1,
+        3,
+        5,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14
+      ],
+      "sha256": "1981220707f8249fb827a7b621a9728c86f3f0f1da514167e1378a3bbcd73439",
+      "rendus_sha256": [
+        "e8e4ade86c492208a01dc6a7ffb29d2d4382989f4757db2c810e16ee6cfdef44",
+        "f361b821506578b66e578832a6118e34c465e8afccc34ef83ae4c1ea94b293a0",
+        "d24ee736b67672319735d0395dbc9660f1c4d09979fd19231ff3a306a3639ee5",
+        "293a78f66ad62845a9599f23e2ada40aca5edb8a337d371b3b8e1a0a1e2435e6",
+        "527e0a746d4564125d7eeb66b8621f73ec469d4e36ed107741a0ee3acad3122f",
+        "e78e1a947e90733fbadf5ebaacfb41a1cfdc81350380ad8702e46d7d38e9b3bf",
+        "7283f7c27b8de167de5e18a78082061d7a4e7af2cd831f4eaa8ce9057fc86d5c",
+        "bdce3b58c4b28cc439e8e89cc556a5719321dc8182896f771dbb6faf575330af",
+        "6f70b21a61b889d8f3aeffacd4643ed9269ed46ef3224e259c0aa2065c744aab",
+        "3ba1be03e91eed392587c008f27a1e825a18deb12d952d9db68eedeb178a175e",
+        "79305e151092a21b8d70bae4aecbdfbe7d338f73d1e154137546a9023df80a81",
+        "5e6a71fc7b1a3114fc3323f297c244b8af37e3f5b32d915d576f648937df6147",
+        "8504daa8b3e7d04da3c3b82a1dbad6c1b53a0336dd9087e6d77cfaa31bd8705d",
+        "718e6651b74f2fdb9ee5ac2dc7cd61aaba81278b74201d805cd0196d6ed973cc"
+      ]
+    },
+    "guide": {
+      "pages": 18,
+      "nombre_signets": 54,
+      "signets": [
+        [
+          1,
+          "1 — Cinématique du bras gauche",
+          1
+        ],
+        [
+          2,
+          "Q1 — Les sept pivots du bras gauche",
+          1
+        ],
+        [
+          2,
+          "Q2 — Rotation autour du troisième axe",
+          1
+        ],
+        [
+          2,
+          "Q3 — Rotation autour du premier axe",
+          2
+        ],
+        [
+          2,
+          "Q4 — Composition des rotations",
+          2
+        ],
+        [
+          2,
+          "Q5 — Translation entre deux origines",
+          2
+        ],
+        [
+          2,
+          "Q6 — Repères de l'épaule",
+          2
+        ],
+        [
+          2,
+          "Q7 — Attitude du premier corps",
+          3
+        ],
+        [
+          2,
+          "Q8 — Attitude du deuxième corps",
+          3
+        ],
+        [
+          2,
+          "Q9 — Composition des deux attitudes",
+          4
+        ],
+        [
+          2,
+          "Q10 — Deux calculs de la position du coude",
+          4
+        ],
+        [
+          2,
+          "Q11 — Butées et symétrie des bras",
+          4
+        ],
+        [
+          2,
+          "Q12 — Distance atteignable entre les deux outils",
+          4
+        ],
+        [
+          2,
+          "Q13 — Interprétation d'une matrice numérique",
+          5
+        ],
+        [
+          2,
+          "Q14 — Vitesse du centre d'outil",
+          5
+        ],
+        [
+          2,
+          "Q15 — Action d'une matrice antisymétrique",
+          5
+        ],
+        [
+          2,
+          "Q16 — Vitesse angulaire de l'outil",
+          6
+        ],
+        [
+          2,
+          "Q17 — Trajectoire et limites du mouvement simulé",
+          6
+        ],
+        [
+          1,
+          "2 — Ressort et asservissement en couple",
+          6
+        ],
+        [
+          2,
+          "Q18 — Dimensions minimales du voile de poignet",
+          6
+        ],
+        [
+          2,
+          "Q19 — Profilé en croix",
+          7
+        ],
+        [
+          2,
+          "Q20 — Bilan des moments sur l'inertie",
+          7
+        ],
+        [
+          2,
+          "Q21 — Couple exercé sur la charge",
+          7
+        ],
+        [
+          2,
+          "Q22 — Transmittances du modèle élastique",
+          8
+        ],
+        [
+          2,
+          "Q23 — Réponse du ressort lorsque la sortie est bloquée",
+          8
+        ],
+        [
+          2,
+          "Q24 — Critère d'impédance et résonance",
+          9
+        ],
+        [
+          2,
+          "Q25 — Écart permanent avec un correcteur PD",
+          9
+        ],
+        [
+          2,
+          "Q26 — Impédance de la boucle PID",
+          9
+        ],
+        [
+          2,
+          "Q27 — Signe de la partie imaginaire",
+          9
+        ],
+        [
+          2,
+          "Q28 — Limite aux basses fréquences",
+          10
+        ],
+        [
+          2,
+          "Q29 — Choix de la constante du correcteur modifié",
+          10
+        ],
+        [
+          2,
+          "Q30 — Anticipation de consigne de couple",
+          10
+        ],
+        [
+          2,
+          "Q31 — Performances de la commande en couple",
+          11
+        ],
+        [
+          1,
+          "3 — Modèle électrique et asservissement de courant",
+          11
+        ],
+        [
+          2,
+          "Q32 — Puissance instantanée triphasée",
+          11
+        ],
+        [
+          2,
+          "Q33 — Composantes sur deux axes fixes",
+          12
+        ],
+        [
+          2,
+          "Q34 — Conservation de la puissance",
+          12
+        ],
+        [
+          2,
+          "Q35 — Passage aux axes direct et en quadrature",
+          12
+        ],
+        [
+          2,
+          "Q36 — Choix d'un angle tournant",
+          12
+        ],
+        [
+          2,
+          "Q37 — Pulsations électrique et mécanique",
+          12
+        ],
+        [
+          2,
+          "Q38 — Équations des tensions statoriques",
+          13
+        ],
+        [
+          2,
+          "Q39 — Blocs du modèle découplé",
+          13
+        ],
+        [
+          2,
+          "Q40 — Effet du correcteur proportionnel de courant",
+          13
+        ],
+        [
+          2,
+          "Q41 — Gain d'anticipation de courant",
+          14
+        ],
+        [
+          2,
+          "Q42 — Réglage proportionnel-intégral",
+          14
+        ],
+        [
+          2,
+          "Q43 — Mesure des temps de réponse du courant",
+          14
+        ],
+        [
+          1,
+          "4 — Point de fonctionnement du coude",
+          15
+        ],
+        [
+          2,
+          "Q44 — Couple résistant au coude",
+          15
+        ],
+        [
+          2,
+          "Q45 — Pulsation au point de fonctionnement",
+          16
+        ],
+        [
+          2,
+          "Q46 — Équation complexe de tension",
+          16
+        ],
+        [
+          2,
+          "Q47 — Construction de Fresnel",
+          16
+        ],
+        [
+          2,
+          "Q48 — Courant en quadrature",
+          17
+        ],
+        [
+          2,
+          "Q49 — Tension efficace d'une phase",
+          17
+        ],
+        [
+          2,
+          "Q50 — Compatibilité avec le variateur",
+          17
+        ]
+      ],
+      "pages_figures": [
+        1,
+        3,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        13,
+        15,
+        16,
+        17
+      ],
+      "sha256": "521a4606bbff8e1990cd57f32044cda8de80130ef89058be65cc19ee713add42",
+      "rendus_sha256": [
+        "3141653e23d2c63beebf7a47a30a3349b00540420ebf47fed3b381a88db35344",
+        "7e8b6b21fbf3af902808bddc2697aaba86608b8ff1620f58413fae8a38bcf6be",
+        "2381a4a92c07831d5b096aedddad68d093e40f0f959e63a1be4bb48056c0fd3a",
+        "6dd4c312877589f5a58aeecb0c9308b6600fcb18c273781fe06ea21d686bae41",
+        "0da036ec2a44e366a2827396025efa4f4a5fe56b9f25b8c6502c22a4041fe66d",
+        "9005175181b94d9f4b2323b4062776109d0fab4a23e72a646629007b793292cb",
+        "39e4f1e2f66dbb65d2f9a805b375c60e7d1eef3ea77ceb94d482202265c0cc8b",
+        "98817df0bb795c44d615050814702afa47c16385f078424e9176b6b7dfd9d487",
+        "d0dba0e659c5fc466d8bb6f0c99d72fa2b54bb07aa5b2b6c185e0be71da6beb1",
+        "138908dfa90d539870070fa084fec510e05b095b15e847ee832fec159a5db685",
+        "e3e68a92aa10e5e9036a38248c15fd13132d94ecba6ebaf0279de3e6ca87d8f5",
+        "efc13ef7845166a10e8454c7aebac8f3b78d348d3d0ca147305bfd6f33cfded6",
+        "0452c86a3e6ba785603f2b2b832e8c43dbee1d6f97405b11b3d17308c7b2705a",
+        "eaf86d03287ac04a48269b40b796ea91705222575a0b6d4c01c82a81dc53cac9",
+        "e73126f68749cd40f29ff5b97d013f806cb0afcec731313e4c57982bc3945f0c",
+        "bc0dac46319bbab355ef855d85b4a336728cfbbd1eb4a05ce65b2613e035221c",
+        "ed5e4fb74cfa5d885425ea09752db30303804878bdacd7cc900fc8f6bfaed15a",
+        "bbb6981d14be06199e0b77517b9c040ad0ceb98f6430a7c58dddaa963152b92a"
+      ]
+    }
+  },
+  "empreintes": {
+    "brut.md": "48d0547ce15428592ed6359ed78621b846197c944124b51efdcbb45a1bce21c0",
+    "guide.md": "6bbe98523bdb2a6c9f2ca10062751f53f6ee3e1d7e2855f99648a9f4b9197430",
+    "meta.json": "1084e56d9f60b1084f737303cf2e0590f5b57fe2e6b9d46c2f96c2333fa2bc24",
+    "verifier_calculs.py": "8ebba90b21f113f55622870b2ccb17263e46757449c3978e885b37357b674995",
+    "figures/chaine.svg": "4f0b5a934383c504cc99e997ed8345c5f72efa48f7276258b0a2d6f67769d013",
+    "figures/reperes.svg": "80a99285d14acb66c8b23211bab53f3a9395cc7ac904e0cbb241f559319001fe",
+    "figures/facteurs.svg": "4d4cdb66b8a32088079a199074f76270ebefd22283040e08615668e0a6983ff5",
+    "figures/butee.svg": "3441599008487246502dbc2499490458b8d1a6e73a308a3ca70b587276659a1f",
+    "figures/croix.svg": "891b6e360e3390342546d9a487cecbd82835450f64a1780f4340fd6c3a25eb34",
+    "figures/sea.svg": "f1492fd84428896cb9f2d59c992d3314251d631991b3d264d671f568d1e42aab",
+    "figures/phase.svg": "22e46a918a58aa121648b2428df841d64527f9de0de171910cf97f70d2437361",
+    "figures/couple.svg": "51486cb13a143984e950cd8e4d8387268d935cdb8f20ac8c5ba95b8a5d4d2a30",
+    "figures/decouplage.svg": "ea8bc904bc593b6773d4943f2e08e6a6f78d77f3947a5803c1943aa2bfa1fa23",
+    "figures/courant.svg": "5e64134c799f905c3fa756f2058c2be579c514870261dfaec5590f83e07dc20a",
+    "figures/charges.svg": "e37a1ec1c600543a5fa8cbb6ffcb6b79a1d0182785a9daf60ce4cd09be95ee99",
+    "figures/fresnel.svg": "aad433785221f355e70157d5f9cb875a6c12b5f2b5dd3977bc241442bc0dd77f",
+    "recu-tests.txt": "1515d982c20c510eea2a4d2d26e137ec50114ef803e7ce3c93f475dcd2ab9ff9",
+    "bilan-compilation.md": "d333d37bc24b2fee7c5d079e5154bc6f31fc67a9d8c114103d6fef8033bfd6ea",
+    "brut.pdf": "1981220707f8249fb827a7b621a9728c86f3f0f1da514167e1378a3bbcd73439",
+    "brut-planche-01.jpg": "9b8ee0fe14ea48065a00523f79b8a533e5ea911aaedca7ea9744460cbe35cfde",
+    "brut-planche-10.jpg": "7b2484d64ba706598dbec3b3be236a743348b0dab072567f606f04665d6a6059",
+    "guide.pdf": "521a4606bbff8e1990cd57f32044cda8de80130ef89058be65cc19ee713add42",
+    "guide-planche-01.jpg": "f7e53e088fc82d957bed83cd7e2645c3f75e5d8300e7ce75baa7bc4afce16562",
+    "guide-planche-10.jpg": "7c70709aed7e0a7f79f6af0c51d4c5747ccacc36d8a7367ac109544e4d7d97e6"
+  },
+  "archive": "Banque-PT-sciences-industrielles-A-2021.zip",
+  "sha256": "9e04b8955b91349db52437b36567022395b7d8cacc34f8ff483c22bf216b8f25"
+}
