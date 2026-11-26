@@ -18,7 +18,16 @@
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20MP-MPI-PC%20SUJET%20DE%20FRANCAIS%20(XEULSR).pdf",
     "sujet_sha256": "74035b13d5623b368b1ff6cbb0de3cf99e1809545b0ad74322437180cdaa293b",
     "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20MP-MPI-PC-PSI%20RAPPORT%20ECRIT%20FRANCAIS.pdf",
-    "rapport_sha256": "d57da64b4861710a70d99f952cec91cef5df4ab8788dc34021f2df8f077c7510"
+    "rapport_sha256": "d57da64b4861710a70d99f952cec91cef5df4ab8788dc34021f2df8f077c7510",
+    "programme": "https://www.education.gouv.fr/bo/22/Hebdo20/ESRS2213517A.htm",
+    "programme_sha256": "c89156c26e9d5a7429de38447d3b4a8db3cf60dea04a2a9370364705f39d4ec6",
+    "textes_de_reference": [
+      {
+        "libelle": "Weil, Condition première d’un travail non servile",
+        "url": "https://fr.wikisource.org/wiki/La_Condition_ouvri%C3%A8re/17"
+      }
+    ],
+    "perimetre_du_rapport": "MP, MPI, PC et PSI"
   },
   "figures": [
     {
@@ -37,7 +46,42 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Rédaction des deux éditions sur le sujet officiel et le rapport du jury. Dissertation sur le conseil de Condorcet tel qu’il est imprimé dans le sujet remis aux candidats, avec Les Géorgiques, La Condition ouvrière et la version hyper-brève de Par-dessus bord ; guide sur les termes de la comparaison, la variante plus longue du rapport et les décisions qui organisent le travail."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "fui_physique_un",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Contrôle du feuillet, du bulletin officiel et du rapport p. 3–8. La citation du sujet s’achève au plaisir procuré. Le rapport ajoute la suite du conseil sur le dégoût et la dépendance. Le fascicule détermine le périmètre de la dissertation. Vérification des trois axes, des références aux œuvres et des schémas."
     }
   ],
-  "date_revision": "2026-11-24"
+  "date_revision": "2026-11-26",
+  "intitule": "Nicolas de Condorcet, Conseils à sa fille (1794) — Le travail",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "precision": "La page 2 du sujet contient une seule consigne de commentaire et de discussion de la citation au moyen des œuvres du programme. Les trois axes identifient les étapes de la proposition pédagogique.",
+    "pages_pdf_sujet": [
+      2
+    ],
+    "programme": "Weil, La Condition ouvrière, Folio Essais n° 409, p. 49–76 et 205–351, avec p. 389–397 et 418–434. Le Journal d’usine, p. 77–204, est exclu. Vinaver, Par-dessus bord, version hyper-brève. Virgile, Géorgiques, traduction de Maurice Rat.",
+    "items_verifies": [
+      "Exercice de l’esprit dans le geste, goût du travail et résultat",
+      "Cadence, pouvoir de choisir, coût et distribution des plaisirs",
+      "Conditions collectives du travail et de la disponibilité de la pensée"
+    ],
+    "lecture_du_rapport": "La citation du sujet s’achève au plaisir procuré. Le rapport ajoute la suite du conseil sur le dégoût et la dépendance. Le fascicule détermine le périmètre de la dissertation."
+  }
 }
