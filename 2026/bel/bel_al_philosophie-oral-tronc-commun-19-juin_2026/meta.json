@@ -23,7 +23,8 @@
     "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_19_juin.pdf",
     "sujet_sha256": "9e82153559af6d0647aa45537af79fb8799dbe4d5586a290c17167bd4fd00377",
     "rapport": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf",
-    "rapport_sha256": "b7ae24985758ee21c7601a903f81ce57bdcef0cb108f8852ecd308eba32c7dca"
+    "rapport_sha256": "b7ae24985758ee21c7601a903f81ce57bdcef0cb108f8852ecd308eba32c7dca",
+    "index": "https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-al"
   },
   "figures": [
     {
@@ -37,7 +38,7 @@
       "question": "9"
     }
   ],
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -62,6 +63,94 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Confrontation de l’ordre, des choix et de chaque énoncé au feuillet et aux caractères gras de l’annexe du rapport. Vérification de la durée, des références conceptuelles, du lien entre cas concrets et thèses et de l’entraînement propre au guide."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "sociologie_psl_oraux_individuels",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rapprochement des 11 billets et des 22 intitulés avec le feuillet, les choix en gras du rapport et les développements des deux éditions. Ajout des consignes de tirage et des ouvrages autorisés, du renvoi aux sources et de 11 relances argumentées pour les alternatives dans le guidé."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "tirages_verifies": 11,
+    "sujets_choisis_verifies": 11,
+    "alternatives_verifiees": 11,
+    "intitules_par_edition": 22,
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "questions_entierement_traitees": [
+      "1. Sujet choisi — À quoi servent les encyclopédies ?",
+      "1. Alternative — Le féminisme",
+      "2. Sujet choisi — Mentir",
+      "2. Alternative — Les animaux sont-ils nos amis ?",
+      "3. Sujet choisi — Pourquoi des conflits de générations ?",
+      "3. Alternative — Le matérialisme",
+      "4. Sujet choisi — La jeunesse",
+      "4. Alternative — L’État se contente-t-il d’assurer la sécurité ?",
+      "5. Sujet choisi — La solidarité",
+      "5. Alternative — Y a-t-il des mensonges sans conséquences ?",
+      "6. Sujet choisi — Qu’est-ce qu’être de son temps ?",
+      "6. Alternative — Religion et lien social",
+      "7. Sujet choisi — Le non-être",
+      "7. Alternative — Que nous apprend l’histoire des religions ?",
+      "8. Sujet choisi — Puis-je faire ce que je veux de mon corps ?",
+      "8. Alternative — Histoire personnelle et histoire collective",
+      "9. Sujet choisi — Qui dit le juste ?",
+      "9. Alternative — Le fini et l’infini",
+      "10. Sujet choisi — À quoi sert la police ?",
+      "10. Alternative — Le jeu de mots",
+      "11. Sujet choisi — Peut-on perdre sa liberté ?",
+      "11. Alternative — L’utilité de la poésie"
+    ],
+    "choix_dans_ordre_feuillet": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "pages_verifiees": {
+      "sujet": [
+        1
+      ],
+      "rapport": [
+        1,
+        6,
+        7
+      ]
+    },
+    "rangs_annexe_rapport": [
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "controle": "11 billets sur le feuillet et aux rangs 36–46 dans la section V du rapport. Le sujet en gras est le sujet choisi. Chaque terme reçoit son propre développement dans chacune des deux éditions. Au billet 1, le feuillet imprime « encyclopéies ». Le rapport rétablit « encyclopédies ». Les mots « conflits » au billet 3 et « fini » et « infini » au billet 9 sont lisibles sur le feuillet malgré les défauts de sa couche texte."
+  }
 }
