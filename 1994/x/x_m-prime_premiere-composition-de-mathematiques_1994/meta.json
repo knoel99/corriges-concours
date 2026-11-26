@@ -1,0 +1,200 @@
+{
+  "slug": "x_m-prime_premiere-composition-de-mathematiques_1994",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "M prime",
+    "filiere_historique": "M′",
+    "matiere": "Première composition de mathématiques",
+    "annee": 1994
+  },
+  "questions": 21,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-753d92208a5232268a19",
+    "sujet_sha256": "591c8459e4fcd56014ffbd7b8aceb3e0337bc3bfbe1c2832d8f7ae9a260e2e28",
+    "notice_ups": "m94xm1",
+    "reproduction": "https://www.sujetsetcorriges.fr/dl/X/Maths/MP/sec-x-1994-maths1-MP.pdf",
+    "reproduction_sha256": "eab4a98fed2e574bd78823cf5d5be6d244f574b0accc18fdb12e298803160ab9",
+    "calendrier": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000180352",
+    "rapport_jury": "",
+    "observation_rapport": "Aucun rapport de jury identifié dans les notices et les deux collections consultées.",
+    "provenance": "Les pages de garde du fac-similé portent le nom de l’école, l’option M′, la session 1994, le rang de la composition et sa durée de quatre heures.",
+    "transcription_ups": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-43e1f0ef37f8ed5e3932",
+    "transcription_sha256": "46a61d1ee608fa2fa2d4fcfa80a60b3323b149b55cc612f600849a15145cdec2",
+    "precision_transcription": "La transcription disponible à la notice UPS ajoute « a) » au numéro 4. Le fac-similé imprimé donne une question 4 sans subdivision."
+  },
+  "figures": [
+    {
+      "question": "5",
+      "fichier": "figures/borne-du-quotient.svg",
+      "legende": "Le quotient est contrôlé par le plus petit des deux rapports issus des intégrales vers les extrémités."
+    },
+    {
+      "question": "12",
+      "fichier": "figures/deux-solutions-resonantes.svg",
+      "legende": "La solution logarithmique de l’équation intérieure diverge à l’origine tandis que le cosinus s’y prolonge."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2.a",
+      "2.b",
+      "3.a",
+      "3.b",
+      "3.c",
+      "3.d",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8.a",
+      "8.b",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13.a",
+      "13.b",
+      "14.a",
+      "14.b"
+    ],
+    "pages_du_sujet": 3,
+    "pages_pdf_des_questions": {
+      "1": 1,
+      "2.a": 1,
+      "2.b": 1,
+      "3.a": 1,
+      "3.b": 1,
+      "3.c": 1,
+      "3.d": 1,
+      "4": 2,
+      "5": 2,
+      "6": 2,
+      "7": 2,
+      "8.a": 2,
+      "8.b": 2,
+      "9": 2,
+      "10": 3,
+      "11": 3,
+      "12": 3,
+      "13.a": 3,
+      "13.b": 3,
+      "14.a": 3,
+      "14.b": 3
+    },
+    "repere_par_question": [
+      {
+        "question": "1",
+        "page_pdf": 1
+      },
+      {
+        "question": "2.a",
+        "page_pdf": 1
+      },
+      {
+        "question": "2.b",
+        "page_pdf": 1
+      },
+      {
+        "question": "3.a",
+        "page_pdf": 1
+      },
+      {
+        "question": "3.b",
+        "page_pdf": 1
+      },
+      {
+        "question": "3.c",
+        "page_pdf": 1
+      },
+      {
+        "question": "3.d",
+        "page_pdf": 1
+      },
+      {
+        "question": "4",
+        "page_pdf": 2
+      },
+      {
+        "question": "5",
+        "page_pdf": 2
+      },
+      {
+        "question": "6",
+        "page_pdf": 2
+      },
+      {
+        "question": "7",
+        "page_pdf": 2
+      },
+      {
+        "question": "8.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "8.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "9",
+        "page_pdf": 2
+      },
+      {
+        "question": "10",
+        "page_pdf": 3
+      },
+      {
+        "question": "11",
+        "page_pdf": 3
+      },
+      {
+        "question": "12",
+        "page_pdf": 3
+      },
+      {
+        "question": "13.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "13.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "14.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "14.b",
+        "page_pdf": 3
+      }
+    ],
+    "precision": "Numérotation et pages du fac-similé UPS, subdivisions imprimées comprises."
+  },
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Lecture du fac-similé paginé et confrontation au second exemplaire. Rédaction et vérification de 21 réponses et des indications. Prolongements en mπ, fermeture de A, approximation polynomiale, base des solutions intérieures et itération par barrières."
+    }
+  ]
+}
