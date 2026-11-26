@@ -1,0 +1,69 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire-les-limites-de-la-recherche-historique_2017",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire — les limites de la recherche historique",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "À partir du passage de Marc Bloch daté de 1939 et de l’exemple du Zwin, discuter les limites de la recherche historique et la place des phénomènes non anthropiques du passé. Mobiliser des exemples historiques et historiographiques précis.",
+  "gabarit": "dissertation",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://web.archive.org/web/20201230063148id_/https://www.ens.psl.eu/sites/default/files/histoire-ecrit-si17.pdf",
+    "sujet_sha256": "91c31f0846dfec029c5615ec1601212d9fb2d24a16b58f96088492eb3f1ab527",
+    "index": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2017-lettres-0",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://web.archive.org/web/20201230063148id_/https://www.ens.psl.eu/sites/default/files/histoire-ecrit-si17.pdf",
+        "url_ens": "https://www.ens.psl.eu/sites/default/files/histoire-ecrit-si17.pdf",
+        "sha256": "91c31f0846dfec029c5615ec1601212d9fb2d24a16b58f96088492eb3f1ab527",
+        "pages": 1
+      },
+      {
+        "role": "rapport",
+        "url": "https://www.ens.psl.eu/sites/default/files/rapport_s.i._histoire_2017.pdf",
+        "url_ens": "https://www.ens.psl.eu/sites/default/files/rapport_s.i._histoire_2017.pdf",
+        "sha256": "254e7e5cb46d5fd9e53ac43b3cde383015b5d5b5b92dc6787595b6f6295be021",
+        "pages": 2
+      }
+    ],
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_s.i._histoire_2017.pdf"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "question": "Composition",
+      "legende": "Le raisonnement qui relie une transformation physique à une histoire des sociétés."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Dissertation à partir du Zwin, de Braudel, de Le Roy Ladurie et du Tambora, relue avec le rapport d’écrit."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Composition"
+    ],
+    "limites": "À partir de Marc Bloch, discuter l’extension du domaine de l’histoire aux phénomènes non anthropiques."
+  }
+}
