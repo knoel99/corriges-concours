@@ -23,7 +23,8 @@
     "sujet": "https://www.ens.psl.eu/sites/default/files/philosophie_20_juin_tronc_commun.pdf",
     "sujet_sha256": "df2fe05517b80a17463e796bd1e5829aec51c0d89e22da451d0ffff686b14b55",
     "rapport": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf",
-    "rapport_sha256": "b7ae24985758ee21c7601a903f81ce57bdcef0cb108f8852ecd308eba32c7dca"
+    "rapport_sha256": "b7ae24985758ee21c7601a903f81ce57bdcef0cb108f8852ecd308eba32c7dca",
+    "index": "https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-al"
   },
   "figures": [
     {
@@ -37,7 +38,7 @@
       "question": "8"
     }
   ],
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -62,6 +63,97 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Confrontation de l’ordre, des choix et de chaque énoncé au feuillet et aux caractères gras de l’annexe du rapport. Vérification de la durée, des références conceptuelles, du lien entre cas concrets et thèses et de l’entraînement propre au guide."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "sociologie_psl_oraux_individuels",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rapprochement des 12 billets et des 24 intitulés avec le feuillet, les choix en gras du rapport et les développements des deux éditions. Ajout des consignes de tirage et des ouvrages autorisés, du renvoi aux sources et de 12 relances argumentées pour les alternatives dans le guidé."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "tirages_verifies": 12,
+    "sujets_choisis_verifies": 12,
+    "alternatives_verifiees": 12,
+    "intitules_par_edition": 24,
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "questions_entierement_traitees": [
+      "1. Sujet choisi — La critique d’art",
+      "1. Alternative — Le mal existe-t-il ?",
+      "2. Sujet choisi — Travail manuel, travail intellectuel",
+      "2. Alternative — Avons-nous des devoirs envers les animaux ?",
+      "3. Sujet choisi — Que faire de nos passions ?",
+      "3. Alternative — L’anarchie",
+      "4. Sujet choisi — La morale du citoyen",
+      "4. Alternative — Pourquoi lire des romans ?",
+      "5. Sujet choisi — L’humour",
+      "5. Alternative — Connaissance de la société et critique de la société vont-elles de pair ?",
+      "6. Sujet choisi — Le sport",
+      "6. Alternative — Y a-t-il un inconscient collectif ?",
+      "7. Sujet choisi — La culture artistique",
+      "7. Alternative — Un monde sans travail est-il souhaitable ?",
+      "8. Sujet choisi — Pourquoi pleurons-nous au cinéma ?",
+      "8. Alternative — L’égalité devant la loi",
+      "9. Sujet choisi — Une morale sans Dieu",
+      "9. Alternative — Quand peut-on dire qu’une œuvre est ratée ?",
+      "10. Sujet choisi — Domination et violence",
+      "10. Alternative — Ai-je un corps ou suis-je un corps ?",
+      "11. Sujet choisi — Imitation et création",
+      "11. Alternative — La connaissance de l’histoire nous rend-elle plus libres ?",
+      "12. Sujet choisi — Littérature et politique",
+      "12. Alternative — Faut-il oublier le passé pour se donner un avenir ?"
+    ],
+    "choix_dans_ordre_feuillet": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "pages_verifiees": {
+      "sujet": [
+        1
+      ],
+      "rapport": [
+        1,
+        7
+      ]
+    },
+    "rangs_annexe_rapport": [
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58
+    ],
+    "controle": "12 billets sur le feuillet et aux rangs 47–58 dans la section V du rapport. Le sujet en gras est le sujet choisi. Chaque terme reçoit son propre développement dans chacune des deux éditions."
+  }
 }
