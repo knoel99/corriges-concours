@@ -4,7 +4,9 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Ce sujet correspond à la seconde étude de documents identifiée pour l’écrit de 2023. Le commentaire met en relation la tribune, l’extrait de la DREES et le tableau. Le rapport du jury présente les critères communs aux deux sujets.
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Écrit de 2023, trois heures. Le rapport énonce les critères communs aux deux sujets de la session. [Sujet](https://web.archive.org/web/20250504030926id_/https://medecine-humanites.ens.fr/wp-content/uploads/2023/06/Sujet-2-deserts-med-MH2023.pdf) · [Rapport](https://web.archive.org/web/20240331041515id_/https://medecine-humanites.ens.fr/wp-content/uploads/2023/06/Rapport-Jury-MH2023.pdf)
 
 ## Un médecin présent, des soins accessibles ?
 
@@ -26,12 +28,10 @@ Dans le tableau, aucune horloge ne vient décider combien des personnes assises 
 
 ## Agir sur ce qui fait tenir une installation
 
-Jean-Paul Briand, médecin retraité du Loiret, constate que les initiatives se sont multipliées sans évaluation commune. Il redoute qu’imposer le lieu d’installation aux jeunes généralistes ne détourne certains d’entre eux de la médecine ambulatoire. C’est l’argument d’une tribune. La convergence du diagnostic avec celui de la DREES sur les limites de la densité ne transforme pas cette prévision en résultat démontré. En revanche, son inventaire des transports, de l’emploi, des services, des commerces et des connexions numériques change la formulation du problème. Le choix d’un cabinet s’inscrit dans une vie professionnelle et familiale. La suppression d’une ligne de transport peut éloigner à la fois un patient de son médecin et un territoire d’un futur praticien.
+Jean-Paul Briand, médecin retraité du Loiret, constate que les initiatives se sont multipliées sans évaluation commune. Il redoute qu’imposer le lieu d’installation aux jeunes généralistes ne détourne certains d’entre eux de la médecine ambulatoire. C’est l’argument d’une tribune. La convergence du diagnostic avec celui de la DREES sur les limites de la densité ne transforme pas cette prévision en résultat démontré. Son inventaire de l’emploi, des services administratifs, des commerces et du retard numérique change la formulation du problème. Le choix d’un cabinet s’inscrit dans une vie professionnelle et familiale. À titre d’hypothèse, la suppression d’une ligne de transport pourrait éloigner à la fois un patient de son médecin et un territoire d’un futur praticien.
 
 Pour départager les solutions, on peut alors formuler une comparaison dont les trois documents donnent le sens. L’ouverture d’un cabinet serait une réussite pour la statistique des installations. Si ce cabinet ne reçoit aucun nouveau patient ou si l’unique transport de retour part avant la fin des consultations, la réussite pour les habitants reste à établir. Mesurer les rendez-vous effectivement accessibles et les renoncements, avant et après l’ouverture, reviendrait à replacer dans la décision les personnes visibles sur la toile et celles qui ne franchissent pas la porte. Écouter aussi les praticiens permettrait de comprendre à quelles conditions cette offre peut durer.
 
 ## Conclusion
 
 Un désert médical se définit par une relation difficile entre des besoins, des services et des conditions de vie. La mesure en est nécessaire pour comparer les territoires. Elle ne gagne sa portée qu’en rendant explicites les obstacles retenus et le niveau d’effort jugé acceptable. À la question « y a-t-il un médecin ? », le dossier conduit ainsi à ajouter une autre question, vérifiable auprès des intéressés : qui arrive effectivement jusqu’à lui, quand et à quel prix ?
-
-[Sujet](https://web.archive.org/web/20250504030926id_/https://medecine-humanites.ens.fr/wp-content/uploads/2023/06/Sujet-2-deserts-med-MH2023.pdf) · [Rapport](https://web.archive.org/web/20240331041515id_/https://medecine-humanites.ens.fr/wp-content/uploads/2023/06/Rapport-Jury-MH2023.pdf)

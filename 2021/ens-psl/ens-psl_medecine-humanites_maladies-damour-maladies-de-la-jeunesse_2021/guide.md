@@ -4,15 +4,17 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve écrite de 2021 laisse trois heures pour une lecture croisée du dossier. La composition suit la façon dont les cinq documents établissent, racontent et attribuent un dommage.
 
 ## Lire le dossier
 
-- Jean Héroard, entrée du 25 janvier 1619. Distinguer le relevé médical quotidien, la pression de la cour et le refus de Louis XIII.
-- Samuel Auguste Tissot, *L’Onanisme*, 1769. Interroger la valeur probante d’un cas présenté en exemple et le vocabulaire de la faute.
-- Guy de Maupassant, « Rosalie Prudent », 1886. La syntaxe orale, les reprises et les questions donnent forme au témoignage du personnage.
-- Nan Goldin, autoportrait de 1984 présenté dans un diaporama en 1986. Le titre et le cadrage rendent visibles la durée des effets des coups et la position de l’autrice.
-- Tribune associative dans *Le Monde*, 23 juin 2001. Les signataires interviennent dans un débat de prévention et revendiquent le droit de vivre.
+- Document 1, p. 1 · Jean Héroard, entrée du 25 janvier 1619. Distinguer le relevé médical quotidien, la pression de la cour et le refus de Louis XIII.
+- Document 2, p. 2 · Samuel Auguste Tissot, *L’Onanisme*, 1769. Interroger la valeur probante d’un cas présenté en exemple et le vocabulaire de la faute.
+- Document 3, p. 3 · Guy de Maupassant, « Rosalie Prudent », 1886. La syntaxe orale, les reprises et les questions donnent forme au témoignage du personnage.
+- Document 4, p. 4 · Nan Goldin, autoportrait de 1984 présenté dans un diaporama en 1986. Le titre et le cadrage rendent visibles la durée des effets des coups et la position de l’autrice.
+- Document 5, p. 5 · Tribune associative dans *Le Monde*, 23 juin 2001. Les signataires interviennent dans un débat de prévention et revendiquent le droit de vivre.
 
 ## Qui nomme le mal ?
 
@@ -24,7 +26,7 @@ Le 25 janvier 1619, le médecin Héroard inscrit dans son journal l’heure du c
 
 **Piste de lecture** · Identifier l’institution qui attend un résultat chez Héroard et le projet moral de Tissot. Pour ce dernier, séparer l’observation de symptômes, l’attribution d’une cause et le jugement de valeur.
 
-Dans le journal royal, la visite de M. de Luynes rompt l’ordre ordinaire de la soirée. Le récit garde la trace d’une résistance ferme. Puis les tournures passives montrent un corps que d’autres déplacent. La note historique rappelle que le mariage avec Anne d’Autriche avait été conclu contre le gré de Louis. La succession des heures appartient au médecin, mais la demande adressée au roi relève des intérêts dynastiques. Une vie intime devient ainsi une affaire dont l’entourage entend constater publiquement l’accomplissement. La précision documentaire révèle la contrainte même là où le rédacteur s’en tient à l’enregistrement des faits.
+Dans le journal royal, la visite de M. de Luynes rompt l’ordre ordinaire de la soirée. Le récit garde la trace d’une résistance ferme. Puis les tournures passives montrent un corps que d’autres déplacent. La note historique rappelle que le mariage avec Anne d’Autriche avait été conclu contre le gré de Louis. La succession des heures appartient au médecin, mais la demande adressée au roi relève des intérêts dynastiques. Une vie intime devient ainsi une affaire dont l’entourage entend constater publiquement l’accomplissement. Deux mots du journal, « comme l’on dit », changent pourtant la portée du relevé. Le médecin date le retour du roi et son sommeil, mais signale un propos rapporté pour ce qui s’est passé dans la chambre. Les heures donnent au récit sa maîtrise apparente. Cette réserve laisse entendre à quel prix l’entourage a voulu savoir ce qui s’y était passé.
 
 Tissot intervient dans un autre milieu, celui d’un jeune horloger de dix-sept ans. Son traité de 1769 raconte un dépérissement qu’il attribue à la masturbation. Le texte passe de symptômes observés à un jugement sur la conduite puis sur la valeur de la personne. Le mot « crime » fait déjà le travail que devrait accomplir la démonstration. De plus, le médecin dit lui-même qu’il s’est rendu auprès du malade après avoir appris son état. Il a donc pu observer certains signes et un soulagement partiel, tandis qu’une part essentielle de la chaîne causale lui vient d’un récit antérieur. L’exemple historique ne fournit aucune preuve que la masturbation ait provoqué cette maladie ou cette mort. Il montre avec quelle force un cas singulier peut être composé comme un avertissement. Là où la cour voulait obtenir une conduite, le traité veut en détourner ses lecteurs. Dans les deux cas, les adultes ont fixé d’avance ce que la jeunesse devait faire de son corps.
 
