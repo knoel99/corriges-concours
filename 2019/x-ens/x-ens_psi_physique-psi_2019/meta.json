@@ -1,0 +1,104 @@
+{
+  "slug": "x-ens_psi_physique-psi_2019",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Physique PSI",
+    "annee": 2019
+  },
+  "intitule": "Ressorts : conception, caractérisation et propagation",
+  "questions": 40,
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "physique_psi_interens",
+      "session": "physique_psi_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": false,
+      "perimetre": "Rapport 2019 sur les deux interfaces de rupture, le signe du flux de chauffage, la surtension à pH 5 et le signe corrigé du critère de décollage."
+    },
+    {
+      "phase": "redaction",
+      "agent": "physique_psi_interens",
+      "session": "physique_psi_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Résolution des 40 questions énumérées et réalisation de 2 figures."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.doc-solus.fr/prepa/sci/adc/pdf/enonces.pdf/2019/PSI_PHYSIQUE_X_1_2019.enonce.pdf",
+    "sujet_sha256": "b972ecc5bf49df92928c50ea463ddbe20f49fc5e278517270f331ee567ad26b6",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2019_Rapport_Ecrits_PSI_Physique.pdf",
+    "rapport_sha256": "ec5237cbe0e620f30f6f5a4afa70813604f6ed7c3abeac53d01ef44106b013b5",
+    "garde": "XCR · écrit commun de physique PSI · 4 heures",
+    "provenance_sujet": "PDF ouvert, Sujet reproduit par Doc-Solus"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "14",
+      "fichier": "figures/cellule.svg",
+      "legende": "Schéma de principe de l’électrolyse. Le courant conventionnel traverse le bain du zinc vers la pièce."
+    },
+    {
+      "numero": 2,
+      "question": "31",
+      "fichier": "figures/modes.svg",
+      "legende": "Intersections de la tangente avec la branche hyperbolique pour un rapport de masses égal à 0,7."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ]
+  }
+}
