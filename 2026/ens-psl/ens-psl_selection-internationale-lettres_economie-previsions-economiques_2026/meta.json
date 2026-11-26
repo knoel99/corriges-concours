@@ -20,7 +20,8 @@
       "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/real-time-data-set-for-macroeconomists",
       "https://www.ecb.europa.eu/stats/ecb_surveys/survey_of_professional_forecasters/html/index.en.html",
       "https://www.bankofengland.co.uk/independent-evaluation-office/forecasting-for-monetary-policy-making-and-communication-at-the-bank-of-england-a-review"
-    ]
+    ],
+    "rapport_sha256": "de2de7badfe0c93897c67d74c736111ab7182145ccedc81aad6b505ae000b150"
   },
   "figures": [
     {
@@ -40,6 +41,33 @@
       "agent": "astra_info_si",
       "fournisseur": "codex",
       "perimetre": "Rédaction de la dissertation et de son guide à partir du sujet individuel écrit du candidat 3 reproduit page 2 du rapport du jury. Vérification des références académiques et institutionnelles, des raisonnements et de la figure originale sur le thème prévisions économiques."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "gestion_2022_2023",
+      "agent": "gestion_2022_2023",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Les deux copies distinguent prévision du présent, scénario de politique économique et décision sous risque. Le trimestre, le taux annualisé et la première publication du PIB visés par GDPNow sont précisés. Les coûts de deux décisions sont recalculés sous la même distribution pour vérifier le minimum de la figure."
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "À quoi servent les prévisions économiques ?"
+    ],
+    "precision": "Le rapport du jury donne page 2 l’écrit individuel du candidat 3. Son oral distinct a pour intitulé « Données et modèles en prévision économique ». La dissertation répond à une consigne unique, reproduite sans document annexe ni sous-question.",
+    "controle": "Les deux copies distinguent prévision du présent, scénario de politique économique et décision sous risque. Le trimestre, le taux annualisé et la première publication du PIB visés par GDPNow sont précisés. Les coûts de deux décisions sont recalculés sous la même distribution pour vérifier le minimum de la figure."
+  }
 }
