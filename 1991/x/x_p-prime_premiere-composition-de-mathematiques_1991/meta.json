@@ -1,0 +1,208 @@
+{
+  "slug": "x_p-prime_premiere-composition-de-mathematiques_1991",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "P prime",
+    "annee": 1991,
+    "matiere": "Première composition de mathématiques",
+    "modalite": "écrit"
+  },
+  "intitule": "Première composition de mathématiques · option P′",
+  "duree_heures": 4,
+  "questions": 18,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-3b2fc71dcee6aaf1566a",
+    "sujet_sha256": "571523803bc2849544ae5e02cfafa7bffd7cd6ee1663535dc9122efc3d9d7a69",
+    "second_exemplaire": "https://www.sujetsetcorriges.fr/dl/X/Maths/PC/sec-x-1991-maths1-PC.pdf",
+    "second_exemplaire_sha256": "ff96c4b5c4ce06453d521342e127a515c89623c95d42dc116acbbcc05b7df108",
+    "notice_ups": "m91xp1",
+    "instruction_officielle": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000353010",
+    "precisions": "Empreintes différentes des fichiers, rendus identiques page par page à 72 points par pouce. La reproduction distingue les feuillets et le rang de chaque composition."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-3b2fc71dcee6aaf1566a",
+      "sha256": "571523803bc2849544ae5e02cfafa7bffd7cd6ee1663535dc9122efc3d9d7a69",
+      "pages": 3,
+      "rendu_page_sha256": [
+        "842b5cf9b200a685de5a96a241dd40aad6b9cbc6c579a3f140dd3a42008b6cb4",
+        "da1dc8d5bbb660bc0a9f2f9c0c5f0cec7cc2f5eff0d2c5ebf66bc514493d668a",
+        "898953de9d3693427e1bf02cecfed2ceb5cb2b110a699e5c21e9a636c9b4eb69"
+      ]
+    },
+    "second": {
+      "url": "https://www.sujetsetcorriges.fr/dl/X/Maths/PC/sec-x-1991-maths1-PC.pdf",
+      "sha256": "ff96c4b5c4ce06453d521342e127a515c89623c95d42dc116acbbcc05b7df108",
+      "pages": 3,
+      "rendu_page_sha256": [
+        "842b5cf9b200a685de5a96a241dd40aad6b9cbc6c579a3f140dd3a42008b6cb4",
+        "da1dc8d5bbb660bc0a9f2f9c0c5f0cec7cc2f5eff0d2c5ebf66bc514493d668a",
+        "898953de9d3693427e1bf02cecfed2ceb5cb2b110a699e5c21e9a636c9b4eb69"
+      ]
+    }
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "III.1",
+      "fichier": "figures/grille-dirichlet.svg",
+      "legende": "Rectangle à cinq colonnes et quatre rangées intérieures. Les valeurs intérieures prolongent le côté supérieur ; la valeur du coin inférieur gauche peut changer indépendamment."
+    },
+    {
+      "numero": 2,
+      "question": "IV.4",
+      "fichier": "figures/modes-sinus.svg",
+      "legende": "Deux vecteurs propres pour six sites intérieurs. Le prolongement s’annule aux deux sites fictifs numérotés 0 et 7."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "x_maths_b_anciennes",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Rédaction de la totalité des 18 réponses, des indications et des deux figures propres à cette composition."
+    },
+    {
+      "phase": "revision",
+      "session": "x_maths_b_anciennes",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Calcul des coefficients diagonaux, cas n = 1, argument de maximum strict, construction de la rangée terminale q+1 et preuve que les coins ne modifient aucun site intérieur. Vérification des modes sinusoïdaux pour les deux signes de β."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5.a",
+      "I.5.b",
+      "I.5.c",
+      "I.6",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "III.1",
+      "III.2",
+      "IV.1",
+      "IV.2",
+      "IV.3",
+      "IV.4"
+    ],
+    "repere_par_question": [
+      {
+        "question": "I.1",
+        "page_pdf": 1,
+        "page_imprimee": 129
+      },
+      {
+        "question": "I.2",
+        "page_pdf": 1,
+        "page_imprimee": 129
+      },
+      {
+        "question": "I.3",
+        "page_pdf": 1,
+        "page_imprimee": 129
+      },
+      {
+        "question": "I.4",
+        "page_pdf": 2,
+        "page_imprimee": 130
+      },
+      {
+        "question": "I.5.a",
+        "page_pdf": 2,
+        "page_imprimee": 130
+      },
+      {
+        "question": "I.5.b",
+        "page_pdf": 2,
+        "page_imprimee": 130
+      },
+      {
+        "question": "I.5.c",
+        "page_pdf": 2,
+        "page_imprimee": 130
+      },
+      {
+        "question": "I.6",
+        "page_pdf": 2,
+        "page_imprimee": 130
+      },
+      {
+        "question": "II.1",
+        "page_pdf": 2,
+        "page_imprimee": 130
+      },
+      {
+        "question": "II.2",
+        "page_pdf": 2,
+        "page_imprimee": 130
+      },
+      {
+        "question": "II.3",
+        "page_pdf": 2,
+        "page_imprimee": 130
+      },
+      {
+        "question": "II.4",
+        "page_pdf": 2,
+        "page_imprimee": 130
+      },
+      {
+        "question": "III.1",
+        "page_pdf": 3,
+        "page_imprimee": 131
+      },
+      {
+        "question": "III.2",
+        "page_pdf": 3,
+        "page_imprimee": 131
+      },
+      {
+        "question": "IV.1",
+        "page_pdf": 3,
+        "page_imprimee": 131
+      },
+      {
+        "question": "IV.2",
+        "page_pdf": 3,
+        "page_imprimee": 131
+      },
+      {
+        "question": "IV.3",
+        "page_pdf": 3,
+        "page_imprimee": 131
+      },
+      {
+        "question": "IV.4",
+        "page_pdf": 3,
+        "page_imprimee": 131
+      }
+    ]
+  }
+}
