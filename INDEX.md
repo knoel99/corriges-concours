@@ -175,6 +175,7 @@
 | 2017 | BEL | B/L | Allemand | [md](2017/bel/bel_bl_allemand_2017/brut.md) | [md](2017/bel/bel_bl_allemand_2017/guide.md) |
 | 2017 | BEL | B/L | Anglais | [md](2017/bel/bel_bl_anglais_2017/brut.md) | [md](2017/bel/bel_bl_anglais_2017/guide.md) |
 | 2017 | BEL | BL | Arabe | [md](2017/bel/bel_bl_arabe_2017/brut.md) | [md](2017/bel/bel_bl_arabe_2017/guide.md) |
+| 2024 | BEL | BL | Économie (oral commun) — 12 juin, dossier 2 | [md](2024/bel/bel_bl_economie-oral-commun-12-juin-dossier-2_2024/brut.md) | [md](2024/bel/bel_bl_economie-oral-commun-12-juin-dossier-2_2024/guide.md) |
 | 2017 | BEL | B/L | Espagnol | [md](2017/bel/bel_bl_espagnol_2017/brut.md) | [md](2017/bel/bel_bl_espagnol_2017/guide.md) |
 | 2017 | BEL | B/L | Italien | [md](2017/bel/bel_bl_italien_2017/brut.md) | [md](2017/bel/bel_bl_italien_2017/guide.md) |
 | 2017 | BEL | B/L | Russe | [md](2017/bel/bel_bl_russe_2017/brut.md) | [md](2017/bel/bel_bl_russe_2017/guide.md) |
