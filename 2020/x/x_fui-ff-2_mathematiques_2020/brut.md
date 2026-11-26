@@ -2,7 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 Le sujet de printemps établit l’inégalité de trace de von Neumann par optimisation sur une orbite orthogonale. [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20FUI-FF%20S2%20SUJET%20MATHEMATIQUES.pdf)
 
@@ -79,6 +81,8 @@ Posons $K=C_0A-AC_0$. Comme $A$ et $C_0$ sont symétriques, $K^\top=-K$. Prenons
 Par 3 et 12, dans une base propre commune à $A$ et $C_0$, leurs diagonales sont $(a_i)$ et $(b_{\sigma(i)})$. Par 1, $\operatorname{tr}(AB)\le\operatorname{tr}(AC_0)=\sum_i a_i b_{\sigma(i)}\le\sum_i a_i b_i$. On atteint la dernière somme en plaçant les $b_i$ dans une base propre ordonnée de $A$.
 
 Si $B$ donne l’égalité, c’est lui-même un maximiseur, donc il commute avec $A$. Dans une base simultanée, une inversion $i<j$ avec $a_i<a_j$ et $b_{\sigma(i)}>b_{\sigma(j)}$ permettrait, en échangeant les deux valeurs de $B$, d’augmenter strictement la trace. Aucune n’est donc possible. En ordonnant les $b$ dans chaque espace propre de $A$, on obtient une base simultanée où les deux diagonales croissent. Réciproquement, une telle base donne immédiatement l’égalité.
+
+Dans la figure, prenons $A=\operatorname{diag}(1,3)$ et faisons tourner une base propre de $B$ d’un angle $\theta$. On obtient $\operatorname{tr}(AB)=17\cos^2\theta+11\sin^2\theta$. Aux deux extrémités du tracé les matrices commutent. Seule $\theta=0$ donne le maximum sur $[0,\pi/2]$, car les valeurs propres sont alors appariées dans le même ordre.
 
 ![Figure 1 — Pour les spectres (1, 3) et (2, 5), une rotation fait passer la trace de 17 à 11.](figures/appariement-spectral.svg)
 
