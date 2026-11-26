@@ -11,9 +11,17 @@
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/2018_psi_sujet_math.pdf",
     "rapport_jury": "",
-    "sha256_sujet": "7b17aed8aa72488dd263a72d10f57ca51e7901b543cce79d32edb196d68fa340"
+    "sha256_sujet": "7b17aed8aa72488dd263a72d10f57ca51e7901b543cce79d32edb196d68fa340",
+    "pages_sujet": 8,
+    "etat_rapport_jury": "Rapport de l’épreuve écrite de mathématiques non retrouvé lors de cette révision.",
+    "index_institutionnel": "https://www.ens.psl.eu/rapports-et-sujets-2018-psi"
   },
   "figures": [
+    {
+      "fichier": "figures/reconstruction-bernstein-charge-unite.svg",
+      "question": "22",
+      "legende": "Pour une charge égale à un et trois nœuds intérieurs, les disques sont les valeurs exactes calculées aux nœuds. La reconstruction de Bernstein utilise ces valeurs comme coefficients et atteint seulement trois quarts de la hauteur de la solution."
+    },
     {
       "fichier": "figures/barriere-parabolique.svg",
       "question": "24",
@@ -31,6 +39,186 @@
       "perimetre": "Rédaction de toutes les questions des cinq parties. Vérification des signes du principe du maximum, des valeurs propres du laplacien discret, des constantes de stabilité et des estimations de Bernstein. Schéma de la barrière parabolique.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Confrontation des 30 rubriques aux huit pages du sujet. Vérification de la comparaison, du spectre, de la constante de troncature, de la borne 1/8 et du décalage des coefficients de Bernstein. Résolution exacte de systèmes à seconds membres polynomiaux et tracé du contre-exemple à l’interpolation aux nœuds."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8a",
+      "8b",
+      "9",
+      "10a",
+      "10b",
+      "10c",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17a",
+      "17b",
+      "18",
+      "19a",
+      "19b",
+      "20",
+      "21",
+      "22",
+      "23a",
+      "23b",
+      "24"
+    ],
+    "numeros_principaux": 24,
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": "1",
+        "page_pdf": 3
+      },
+      {
+        "question": "2",
+        "page_pdf": 3
+      },
+      {
+        "question": "3",
+        "page_pdf": 3
+      },
+      {
+        "question": "4",
+        "page_pdf": 3
+      },
+      {
+        "question": "5",
+        "page_pdf": 3
+      },
+      {
+        "question": "6",
+        "page_pdf": 4
+      },
+      {
+        "question": "7",
+        "page_pdf": 4
+      },
+      {
+        "question": "8a",
+        "page_pdf": 4
+      },
+      {
+        "question": "8b",
+        "page_pdf": 4
+      },
+      {
+        "question": "9",
+        "page_pdf": 4
+      },
+      {
+        "question": "10a",
+        "page_pdf": 4
+      },
+      {
+        "question": "10b",
+        "page_pdf": 4
+      },
+      {
+        "question": "10c",
+        "page_pdf": 4
+      },
+      {
+        "question": "11",
+        "page_pdf": 4
+      },
+      {
+        "question": "12",
+        "page_pdf": 5
+      },
+      {
+        "question": "13",
+        "page_pdf": 5
+      },
+      {
+        "question": "14",
+        "page_pdf": 5
+      },
+      {
+        "question": "15",
+        "page_pdf": 5
+      },
+      {
+        "question": "16",
+        "page_pdf": 5
+      },
+      {
+        "question": "17a",
+        "page_pdf": 6
+      },
+      {
+        "question": "17b",
+        "page_pdf": 6
+      },
+      {
+        "question": "18",
+        "page_pdf": 6
+      },
+      {
+        "question": "19a",
+        "page_pdf": 7
+      },
+      {
+        "question": "19b",
+        "page_pdf": 7
+      },
+      {
+        "question": "20",
+        "page_pdf": 7
+      },
+      {
+        "question": "21",
+        "page_pdf": 7
+      },
+      {
+        "question": "22",
+        "page_pdf": 7
+      },
+      {
+        "question": "23a",
+        "page_pdf": 7
+      },
+      {
+        "question": "23b",
+        "page_pdf": 8
+      },
+      {
+        "question": "24",
+        "page_pdf": 8
+      }
+    ],
+    "precision": "Question 23a imprimée p. 7, 23b p. 8. La garde et les conventions occupent les p. 1 et 2."
+  },
+  "date_revision": "2026-11-26"
 }

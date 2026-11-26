@@ -4,7 +4,11 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le sujet compare la solution d’un problème de Dirichlet, son approximation aux différences finies et une reconstruction par les polynômes de Bernstein. [Sujet officiel](https://www.ens.psl.eu/sites/default/files/2018_psi_sujet_math.pdf)
+
+On étudie $-u^{\prime\prime}+cu=f$ avec $u(0)=u(1)=0$ et $c\geq0$. Le pas du maillage vaut $h=1/(n+1)$. Les $n$ inconnues intérieures ont pour abscisses $x_i=ih$. La vérification suit les questions du sujet officiel. Le rapport écrit de mathématiques de cette session reste introuvable dans les archives consultées.
 
 ## 1. Conditions de Dirichlet et principe du maximum
 
@@ -28,6 +32,8 @@ La condition $v_\lambda(1)=0$ équivaut à $\lambda=-w_2(1)/w_1(1)$, bien défin
 
 Si $u<0$ en un point, la composante de $\{u<0\}$ qui le contient est un intervalle $(a,b)$ dont les deux valeurs au bord sont nulles, grâce aussi aux conditions en $0,1$. Sur cet intervalle, $u''=cu-f\le0$. La fonction est concave et reste au-dessus de la corde de hauteur zéro entre ses extrémités, contradiction. Donc $u\ge0$.
 
+L’argument reste valable quand $f$ ou $c$ s’annulent au point de minimum. La concavité porte sur toute une composante connexe de l’ensemble ouvert où $u$ est strictement négative et se prolonge aux deux extrémités par continuité.
+
 ## 2. Spectre du laplacien discret et positivité des inverses
 
 ### Question 6
@@ -49,6 +55,8 @@ Le produit des racines étant $1$, leur module commun $\rho$ vérifie $\rho^2=1$
 ### Question 9
 
 Pour $k=1,\ldots,n$, posons $\theta_k=k\pi/(n+1)$, $\lambda_k=2-2\cos\theta_k$, $v_j^{(k)}=\sin(j\theta_k)$ pour $1\le j\le n$. L’addition des sinus vérifie la récurrence et les deux bords sont nuls. La première composante est non nulle. Les $n$ valeurs propres sont strictement croissantes, donc distinctes. Les $n$ vecteurs associés sont indépendants et fournissent une base de $\mathbb R^n$, ce qui épuise le spectre.
+
+La relation $r+r^{-1}=2-\lambda$ donne $\lambda=2-2\cos\theta=4\sin^2(\theta/2)$. Ainsi pour $n=1$, l’unique mode a pour composante $\sin(\pi/2)=1$ et pour valeur propre $2$, comme la matrice à un seul coefficient.
 
 ### Question 10a
 
@@ -94,6 +102,8 @@ Pour $\|x\|_\infty\le1$, chaque composante de $Ax$ est majorée en module par sa
 
 Posons $T=h^{-2}A_n$. Comme $T^{-1}\ge0$ coefficient par coefficient, $N(T^{-1})=\|T^{-1}\mathbf1\|_\infty$. Par 14, ce vecteur a pour composantes $x_i(1-x_i)/2$, toutes au plus $1/8$. Ainsi $N(((n+1)^2A_n)^{-1})\le1/8$.
 
+Lorsque $n$ est impair, le maillage contient $x_{(n+1)/2}=1/2$ et la constante $1/8$ est atteinte. Pour $n$ pair, ses deux nœuds les plus proches sont à distance $h/2$, donnant la valeur exacte $1/8-h^2/8$ pour la norme de cet inverse.
+
 ### Question 17b
 
 Pour toute diagonale $D\ge0$, la preuve de 15 donne $(T+D)^{-1}\ge0$, sans changer lorsqu’on prescrit simplement les $n$ entrées de $D$. Posons $v=(T+D)^{-1}\mathbf1\ge0$, $w=T^{-1}\mathbf1$. Alors $w-v=T^{-1}Dv\ge0$. Ainsi $N((T+D)^{-1})=\|v\|_\infty\le\|w\|_\infty\le1/8$.
@@ -101,6 +111,8 @@ Pour toute diagonale $D\ge0$, la preuve de 15 donne $(T+D)^{-1}\ge0$, sans chang
 ### Question 18
 
 Comme $u''=cu-f$ avec $u,c,f\in C^2$, on a $u\in C^4$. Pour $U^*=(u(x_i))_{1\le i\le n}$, 12 donne le résidu $(T+D)U^*-F$ de norme au plus $h^2\|u^{(4)}\|_\infty/12$. Le vecteur discret satisfait $(T+D)U=F$. En appliquant 17b à leur différence, on obtient $\|U^*-U\|_\infty\le h^2\|u^{(4)}\|_\infty/96$. L’erreur est nulle aux deux extrémités et $h^2=(n+1)^{-2}\le n^{-2}$, ce qui fournit la constante indépendante de $n$ (on peut l’augmenter pour la rendre strictement positive).
+
+Vérifions la constante sur $u(x)=x^2(1-x)^2$, avec $c=0$ et $f=-u''$. Alors $u^{(4)}=24$ et la différence seconde centrée divisée par $h^2$ vaut $u''+2h^2$. Par 14, $u(x_i)-u_i=-h^2x_i(1-x_i)$. Si le milieu appartient au maillage, le maximum de l’erreur vaut $h^2/4=h^2\|u^{(4)}\|_\infty/96$.
 
 ## 5. Approximation de Bernstein pour une donnée höldérienne
 
@@ -126,6 +138,10 @@ Notons $b_{j,m}(x)=\binom mjx^j(1-x)^{m-j}$ et posons les termes hors indices é
 $$(\widehat B_{n+1}u)''=n(n+1)\sum_{\ell=0}^{n-1}(u_{\ell+2}-2u_{\ell+1}+u_\ell)b_{\ell,n-1}.$$
 Par le système discret avec $c=0$, chaque différence seconde vaut $-(n+1)^{-2}f((\ell+1)/(n+1))$. Le coefficient devient $-n/(n+1)$, comme annoncé.
 
+Pour $f=1$, la somme des poids vaut un et $(\widehat B_{n+1}u)''=-n/(n+1)$. Avec les deux valeurs nulles aux bords, cela donne exactement $\widehat B_{n+1}u(x)=\tfrac{n}{n+1}\,x(1-x)/2$. Aux nœuds intérieurs, la solution discrète de 14 est exacte, mais sa reconstruction de Bernstein diffère en général de cette valeur.
+
+![Pour une charge égale à un et trois nœuds intérieurs, les disques sont les valeurs exactes calculées aux nœuds. La reconstruction de Bernstein utilise ces valeurs comme coefficients et atteint seulement trois quarts de la hauteur de la solution.](figures/reconstruction-bernstein-charge-unite.svg)
+
 ### Question 23a
 
 Écrivons $T(x)=\sum_{\ell=0}^{n-1}f((\ell+1)/(n+1))b_{\ell,n-1}(x)$. Alors $\|T\|_\infty\le\|f\|_\infty$ et $\chi_{n+1}''=f-T+T/(n+1)$ par 22 et $u''=-f$. Les points d’évaluation vérifient $|(\ell+1)/(n+1)-\ell/(n-1)|=|n-1-2\ell|/[(n+1)(n-1)]\le1/(n+1)$. Par la condition de Hölder et la somme unité des poids, $\|T-B_{n-1}f\|_\infty\le K/(n+1)^\alpha$. Ainsi $\|\chi_{n+1}''\|_\infty\le\|f-B_{n-1}f\|_\infty+\|f\|_\infty/(n+1)+K/(n+1)^\alpha$.
@@ -134,10 +150,12 @@ Par le système discret avec $c=0$, chaque différence seconde vaut $-(n+1)^{-2}
 
 Pour $0<x<1$, $\chi=\chi_{n+1}$ est nulle aux extrémités car $u_0=u_{n+1}=u(0)=u(1)=0$. La fonction $h(t)=\chi(t)-\chi(x)t(1-t)/(x(1-x))$ est nulle en $0,x,1$. Deux applications de Rolle donnent un $\xi\in(0,1)$ avec $h''(\xi)=0$. Ainsi $\chi(x)=-x(1-x)\chi''(\xi)/2$. Pour $x=0$ ou $1$ les deux membres sont nuls pour tout $\xi$.
 
+Plus précisément, Rolle sur $[0,x]$ puis $[x,1]$ fournit $s<x<t$ tels que $h'(s)=h'(t)=0$. Appliqué à $h'$ sur $[s,t]$, il fournit $\xi$ et donc le signe négatif du facteur devant $\chi''(\xi)$.
+
 ### Question 24
 
 Par 23b, $\|\chi_{n+1}\|_\infty\le\|\chi_{n+1}''\|_\infty/8$. Pour $n\ge2$, utiliser 21 au rang $n-1$ dans 23a et $n-1\ge n/2$. Comme $0<\alpha\le1$, les deux autres termes sont aussi $O(n^{-\alpha/2})$. On peut prendre pour ces rangs
 $$M_0=\tfrac18\bigl(3K2^{\alpha/2}/2+\|f\|_\infty+K\bigr).$$
 Enfin $M=\max(M_0,\|u-\widehat B_2u\|_\infty)$ inclut $n=1$. Ainsi la majoration uniforme demandée vaut pour tout $n\ge1$.
 
-![Figure 1 — La parabole de charge unité est exacte aux nœuds. Son maximum contrôle l’inverse discret et transforme aussi une borne de courbure en borne uniforme pour l’erreur continue.](figures/barriere-parabolique.svg)
+![La parabole de charge unité est exacte aux nœuds. Son maximum contrôle l’inverse discret et transforme aussi une borne de courbure en borne uniforme pour l’erreur continue.](figures/barriere-parabolique.svg)
