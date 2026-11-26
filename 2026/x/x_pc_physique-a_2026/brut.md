@@ -10,6 +10,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 *Techniques modernes de spectrométrie de masse de molécules complexes.* Durée 4 h, calculatrice interdite. 43 questions, deux parties indépendantes.
 
 ## I — Ionisation par électronébuliseur
@@ -71,7 +73,7 @@ $$\begin{aligned}
 
 $$\boxed{|Q|>Q_{\lim}=4\pi\sqrt{2\,\varepsilon_0\gamma R^3}}$$
 
-Comme $Q_{\lim}\propto R^{3/2}$, une goutte qui s'évapore à charge constante finit par devenir instable.
+Le modèle de la question emploie $\gamma/R$. Le sujet précise en note que le calcul de stabilité de Rayleigh donne un seuil $\sqrt2$ fois plus grand. Comme $Q_{\lim}\propto R^{3/2}$, une goutte qui s'évapore à charge constante finit par devenir instable.
 
 ### Cône de Taylor
 
@@ -140,9 +142,11 @@ $$\boxed{\sigma\propto r^{-1/2}}$$
 
 Les charges restent en surface du liquide conducteur. Leur densité croît sans limite vers la pointe ($r\to0$). Le jet part de la région la plus chargée de la surface : il emporte une charge par unité de volume de liquide très élevée.
 
-Les gouttelettes de très petit rayon qu'il produit portent donc une charge proche de la limite de Rayleigh, qui est grande devant leur volume ($Q_{\lim}/R^3\propto R^{-3/2}$). Elles sont ainsi fortement chargées, ce qui conduit aux ions multichargés.
+Le rapport $Q_{\lim}/R^3\propto R^{-3/2}$ est élevé pour les petites gouttes. L’évaporation concentre leur charge jusqu’au seuil de fragmentation. Ce mécanisme rend plausible la formation d’ions multichargés.
 
 ## II — Spectrométrie de masse à résonance cyclotronique ionique
+
+### Mouvement dans le champ magnétique
 
 #### Question 12
 
@@ -276,7 +280,7 @@ Le décalage du maximum est donc bien plus petit que la largeur du pic quand le 
 
 $\omega_0=zeB/m$ donne
 
-$$\frac{\delta(m/z)}{m/z}=\frac{\delta\omega_0}{\omega_0}.$$
+$$\frac{|\delta(m/z)|}{m/z}\simeq\frac{|\delta\omega_0|}{\omega_0}.$$
 
 Deux espèces ne sont séparées que si leurs pulsations diffèrent d'au moins $\Delta\omega\sim1/\tau$. La plus petite différence relative de masse détectable vaut donc
 
@@ -344,7 +348,7 @@ $$\boxed{r=\frac{A}{\omega_0}\Big(\frac\pi2-\theta\Big)=\frac{E}{2B\omega_0}\Big
 
 En $t=0^+$, l'ion part de $O$ selon $+\vec e_y$ ($Z\simeq iAt$), puis s'écarte de l'origine à la vitesse radiale constante $A$.
 
-**Rôles des deux champs.** Le champ magnétique ne travaille pas : il courbe la trajectoire et impose la pulsation de rotation $\omega_0$. Le champ électrique (sa composante résonante) reste en phase avec la vitesse de l'ion. Il lui fournit de l'énergie à chaque tour, ce qui fait croître la vitesse $v\simeq A\omega_0t$ et donc le rayon.
+**Rôles des champs.** Le champ magnétique courbe la trajectoire sans travailler. Pour la solution de Q25, la vitesse a pour affixe $A(\omega_0t+i)e^{-i\omega_0t}$. Sa projection sur la direction de la force électrique résonante vaut $A\omega_0t$. La puissance reçue vaut donc $(qE/2)A\omega_0t$, positive pour $t>0$ et nulle au départ. Ainsi l’énergie cinétique et le rayon augmentent. La vitesse ne s’aligne sur la force qu’asymptotiquement.
 
 #### Question 27
 
@@ -547,7 +551,7 @@ $$\boxed{f_{e,\min}\simeq2{,}5\times10^5\ \mathrm{Hz}}$$
 
 (environ 250 kHz). La correction $\omega_+<\omega_0$ est négligeable.
 
-Cette estimation prend le premier grand pic annoté, vers $m/z=898$. Pour acquérir aussi tout le bord gauche du graphe, qui commence vers $830$, le même calcul conduit à $2f_{\max}\simeq2{,}7\times10^5\,\mathrm{Hz}$.
+Cette estimation concerne le premier grand pic annoté, vers $m/z=898$. Pour couvrir toute la fenêtre de la figure 2, qui commence vers $830$, il faut dépasser le seuil de $2{,}7\times10^5\,\mathrm{Hz}$ environ. Une acquisition à $280$ kHz convient dans ce modèle.
 
 #### Question 43
 
