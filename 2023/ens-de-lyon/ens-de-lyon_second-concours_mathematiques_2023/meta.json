@@ -11,7 +11,12 @@
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2023/10/2c2023_math_V2.pdf",
     "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2023/08/23_2CC_rap_eMath.pdf",
-    "sha256_sujet": "f80f933475b6f3f93df24041e210cda040c2b4ce2a9ffc719929ae2b27602fc3"
+    "sha256_sujet": "f80f933475b6f3f93df24041e210cda040c2b4ce2a9ffc719929ae2b27602fc3",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2023/08/23_2CC_rap_eMath.pdf",
+    "sujet_sha256": "f80f933475b6f3f93df24041e210cda040c2b4ce2a9ffc719929ae2b27602fc3",
+    "rapport_sha256": "5cfaaef3e1991f33e7966689a897b1f757e57e2ffada258f08f1cec4e150b6ec",
+    "index_banque": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/",
+    "index_banque_sha256": "36243e7203175ea8fc3f1b47cf04cfaeff13de5e6fe10463bd7d894a9fca4bfe"
   },
   "figures": [
     {
@@ -36,6 +41,67 @@
       "perimetre": "Rédaction des 33 réponses des trois exercices après contrôle du sujet officiel sur le texte et les images des pages, et comparaison avec le rapport. Maximum des dérivées de Smirnov, dernier retour de la marche plane, logarithme tronqué sur les espaces caractéristiques et contre-exemples matriciels. Deux figures originales.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Confrontation de la version 2 du sujet et du rapport écrit aux deux éditions. Huit subdivisions en analyse, huit sur les retours de la marche et dix-sept sur l’exponentielle matricielle. Contrôle des majorants de Smirnov, de la loi de retour en dimension deux et des hypothèses de la réciproque matricielle sur deux exemples calculés.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
-  ]
+  ],
+  "questions_principales": 20,
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2a",
+      "1.2b",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "2.1",
+      "2.2",
+      "2.3a",
+      "2.3b",
+      "2.3c",
+      "2.3d",
+      "2.4a",
+      "2.4b",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4a",
+      "3.4b",
+      "3.5",
+      "3.6a",
+      "3.6b",
+      "3.6c",
+      "3.6d",
+      "3.7a",
+      "3.7b",
+      "3.7c",
+      "3.7d",
+      "3.8a",
+      "3.8b",
+      "3.9"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "precision": "Confrontation de la version 2 du sujet et du rapport écrit aux deux éditions. Huit subdivisions en analyse, huit sur les retours de la marche et dix-sept sur l’exponentielle matricielle. Contrôle des majorants de Smirnov, de la loi de retour en dimension deux et des hypothèses de la réciproque matricielle sur deux exemples calculés.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "relecture_corrige",
+      "perimetre": "Confrontation de la version 2 du sujet et du rapport écrit aux deux éditions. Huit subdivisions en analyse, huit sur les retours de la marche et dix-sept sur l’exponentielle matricielle. Contrôle des majorants de Smirnov, de la loi de retour en dimension deux et des hypothèses de la réciproque matricielle sur deux exemples calculés.",
+      "sha256_sujet_controle": "f80f933475b6f3f93df24041e210cda040c2b4ce2a9ffc719929ae2b27602fc3",
+      "sha256_rapport_controle": "5cfaaef3e1991f33e7966689a897b1f757e57e2ffada258f08f1cec4e150b6ec"
+    }
+  }
 }

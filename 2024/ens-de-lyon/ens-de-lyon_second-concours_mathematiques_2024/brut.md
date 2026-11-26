@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le sujet réunit une intégrale de Fourier, les moments de la loi de Poisson et un problème sur les matrices de Gram. La numérotation reprend celle des trois exercices.
 
 ## Exercice 1 · Une fonction définie par une intégrale
@@ -146,6 +148,8 @@ Pour tout entier impair $2m+1$, son carré vaut $1+4m(m+1)\equiv1\pmod8$. Sur la
 ### Question 2b
 
 La formule de Leibniz conserve cette congruence après prise du déterminant. Par I.3, les valeurs propres de $M(2,1)$ sont $1$ de multiplicité $n$ et $n+2$ de multiplicité un. Ainsi $\det G\equiv n+2\pmod8$, non nul modulo $8$ puisque $n\not\equiv6\pmod8$. Le déterminant est alors non nul dans $\mathbb R$. Pourtant les $n+1$ vecteurs de $\mathbb R^n$ sont liés, et I.4b donne la singularité de leur matrice de Gram ainsi que de son double. La contradiction exclut une telle configuration.
+
+En dimension $n=2$, le déterminant hypothétique est congru à 4 modulo 8. Il serait donc un entier de la forme $8k+4$, nécessairement non nul. Cette valeur illustre pourquoi il suffit de travailler avec le déterminant entier : la classe 4 admet pourtant des diviseurs de zéro modulo 8. Pour $n\equiv6\pmod8$, la congruence obtenue ne décide rien sur la nullité du déterminant entier.
 
 ### Question 3
 

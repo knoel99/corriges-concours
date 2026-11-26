@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Les trois exercices, indépendants, traitent d’estimations de dérivées, des retours d’une marche aléatoire et de la commutation des exponentielles matricielles.
 
 ## Exercice 1 · Deux estimations de dérivées
@@ -324,3 +326,5 @@ La non-résonance est supposée pour les valeurs propres de $M=AB$. D’après 7
 #### Solution
 
 Avec $c=2i\pi$, les produits sont $AB=\operatorname{Diag}(0,c)$ et $BA=\operatorname{Diag}(c,0)$. Ils diffèrent mais leurs exponentielles valent toutes deux $I_2$. La différence entre les deux valeurs propres vaut $2i\pi$ à un signe près, en violation de la condition de non-résonance. Les matrices $A,B$ de cet exemple sont également singulières. L’égalité des exponentielles de produits ne suffit donc pas à elle seule à conclure à la commutation.
+
+On peut isoler le rôle de la résonance avec deux facteurs inversibles. Posons $C=\operatorname{Diag}(1,1+2i\pi)$, choisissons $B$ qui échange les deux vecteurs de la base canonique et prenons $A=CB$. Alors $B^2=I_2$, donc $AB=C$ et $BA=BCB=\operatorname{Diag}(1+2i\pi,1)$. Ces deux produits sont distincts et ont tous deux pour exponentielle $eI_2$.
