@@ -27,9 +27,10 @@
   "sources": {
     "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-anglais-e-crit-2sep-2026_1791303325200-pdf",
     "index_banque": "https://www.ens-rennes.fr/admission/concours1a/2sep/concours-2sep-2026",
-    "regles_paris_2024": "https://stillmed.olympics.com/media/Documents/News/2023/12/principles-of-participation-for-individual-neutral-athletes.pdf"
+    "regles_paris_2024": "https://stillmed.olympics.com/media/Documents/News/2023/12/principles-of-participation-for-individual-neutral-athletes.pdf",
+    "sujet_sha256": "bcfbf54e2882978ce68295e5638c5095e33760bd75e87dd0d4e9ef0004b97f4f"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "relecture": "Passage à traduire et consignes confrontés au sujet officiel, comptages des deux productions vérifiés indépendamment.",
   "provenance": {
     "redaction": {
@@ -67,6 +68,32 @@
       "modifications": true,
       "perimetre": "Relecture des deux éditions sur les trois pages du PDF officiel. Délimitation du passage à traduire, chronologie du référent ministériel, portée du statut individuel et articulation des choix de la production écrite.",
       "agent": "astra_langues"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "fin_langues_x_interens",
+      "agent": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Le PDF officiel comporte trois pages. La version A correspond aux quatre paragraphes de la page 2, de « However, Matvii Bidnyi » à « integrity, and fair play ». Le paragraphe suivant, consacré au ministre des Affaires étrangères, figure hors des bornes. La production B demande une réponse de 200 mots à 10 % près au choix entre deux sujets de la page 3. Les deux modèles comportent 216 et 202 mots par espaces et portent leur numéro dans chaque édition. Correction de l’élision devant le nom de l’Association ukrainienne de football.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A. Version",
+      "B. Question 1 (option)",
+      "B. Question 2 (option)"
+    ],
+    "precision": "Le PDF officiel comporte trois pages. La version A correspond aux quatre paragraphes de la page 2, de « However, Matvii Bidnyi » à « integrity, and fair play ». Le paragraphe suivant, consacré au ministre des Affaires étrangères, figure hors des bornes. La production B demande une réponse de 200 mots à 10 % près au choix entre deux sujets de la page 3. Les deux modèles comportent 216 et 202 mots par espaces et portent leur numéro dans chaque édition."
+  }
 }
