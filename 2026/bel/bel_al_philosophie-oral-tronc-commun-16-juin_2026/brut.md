@@ -6,7 +6,11 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le jury publie 12 billets pour le 16 juin. Pour chacun, le premier intitulé est celui qui a été choisi. Le second était proposé au choix. Les deux reçoivent ici des réponses distinctes. Les exemples et arguments proposés servent à préparer une leçon personnelle.
+
+Le billet porte deux sujets à lire devant le jury. Vous choisissez pendant les 90 minutes de préparation et annoncez votre choix au début des 20 minutes d’exposé. L’entretien dure ensuite 10 minutes. L’épreuve est de coefficient 3. Seul un dictionnaire de langue française est autorisé, à l’exclusion des dictionnaires de noms propres.
 
 ## 1. Peut-on faire le bien d’autrui ?
 
