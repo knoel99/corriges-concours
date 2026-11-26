@@ -34,7 +34,7 @@
       "legende": "Ce que mesure le programme scolaire indonésien"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "lecture_rapport_jury",
@@ -71,6 +71,32 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Vérification de la consigne et de la modalité sur la feuille officielle, de la portée du rapport et des raisonnements et exemples des deux éditions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "gestion_2022_2023",
+      "agent": "gestion_2022_2023",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Les deux exposés relient les compétences acquises, le signal du diplôme et les bénéfices collectifs à la décision de financer une formation. Les résultats chiffrés de Duflo, leur population d’étude et leurs unités ont été vérifiés. La comparaison régionale et intergénérationnelle est appliquée ensuite à un exemple de reconversion."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "À quoi sert l’éducation ?"
+    ],
+    "precision": "Oral, sujet individuel 1 de la feuille officielle. Le rapport rattache le projet sur le rôle des politiques d’éducation et de formation face à la désindustrialisation à cette épreuve et à l’écrit « La fin de la croissance ». L’intitulé appelle un développement en économie et permet une mise en perspective par d’autres sciences sociales. Le fascicule ne comporte ni document annexe ni sous-question.",
+    "controle": "Les deux exposés relient les compétences acquises, le signal du diplôme et les bénéfices collectifs à la décision de financer une formation. Les résultats chiffrés de Duflo, leur population d’étude et leurs unités ont été vérifiés. La comparaison régionale et intergénérationnelle est appliquée ensuite à un exemple de reconversion."
+  }
 }
