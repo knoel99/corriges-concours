@@ -1,0 +1,143 @@
+{
+  "slug": "bel_al_version-grecque-lyon_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Version grecque (Lyon)",
+    "annee": 2025,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "duree_heures": 4,
+  "duree_sources": {
+    "feuillet_heures": 4
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2025-09/251113.pdf#page=5",
+    "sujet_sha256": "b7d09bb818f637ec169e3e81e4912858b211e06941981935364478be20cd6766",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2025-11/Grec%202025%20relu%20IM.pdf#page=2",
+    "rapport_jury_sha256": "26b1864dfa7e1bc9baabb301197243ea507685b17aed6a2fbc177677661c4458",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2025",
+    "ouvrage": "Aristophane, *Ploutos*.",
+    "pages_rapport_verifiees": [
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2025-09/251113.pdf#page=5",
+      "sha256": "b7d09bb818f637ec169e3e81e4912858b211e06941981935364478be20cd6766",
+      "pages": 20,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "8ec0333bc615d21e75fd6bd8739b8ac1ac8f7527ec5d1bc38afbba95f28f63b7"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "1e1909721dac127e8e06a09f7e05b1d30f529b6b81585c4eca3dc77cee26b663"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2025-11/Grec%202025%20relu%20IM.pdf#page=2",
+      "sha256": "26b1864dfa7e1bc9baabb301197243ea507685b17aed6a2fbc177677661c4458",
+      "pages": 14,
+      "pages_verifiees": [
+        {
+          "numero": 2,
+          "rendu_sha256": "8b6cf4acbf468f8ce7ac1c7de4d9746fcdaab10de760f8ebca5528e19f19640e"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "1def66f6b6f2d0011e4e95d1d6adf61d7b6fc9948c11c224ee813cbb785bda5e"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "1445c5bee7b4b6da89b7282a082a78ea3e10c539a7d10d8eb4acfec0cc3cbe6d"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "e38aafb966cd627cc137fc43e69b18b5cd96a92782709577677c20790217e9e4"
+        }
+      ]
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "bel_al_grec_specialite_2023_2025",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Traduction française de tout l’extrait grec, explication des difficultés et schéma."
+    },
+    {
+      "phase": "revision",
+      "session": "bel_al_grec_specialite_2023_2025",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle des constructions et des notes sur le feuillet, du rapport du jury (pages 2 à 5), des formes grecques et de la présence de toute la version dans chaque édition."
+    }
+  ],
+  "figures": [
+    {
+      "question": "Version française",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "Ploutos hésite entre deux mauvaises expériences. Chrémyle se présente comme l’hôte qui saurait user de la richesse."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Aristophane, *Ploutos*."
+    ],
+    "note": "Œuvre grecque antique. Traduction française et commentaires pédagogiques originaux."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Version française",
+        "pages_pdf": [
+          5
+        ],
+        "debut": "Σὺ δ’, ὦ κράτιστε Πλοῦτε",
+        "fin": "πρὸς σὲ τἀληθῆ λέγοι ;",
+        "notes_du_sujet": 1,
+        "precision_fin": "Accentuation de τἀληθῆ rétablie selon le rapport du jury.",
+        "repliques": 5
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}
