@@ -1,0 +1,72 @@
+{
+  "slug": "bel_bl_sociologie-oral-commun-ressorts-sociaux-de-la-conversion-ecologique-des-francais_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Sociologie (oral commun) — Ressorts sociaux de la conversion écologique des Français",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "Les ressorts sociaux de la conversion écologique des Français",
+  "questions": 0,
+  "documents": 7,
+  "date_revision": "2026-11-26",
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oraux_sociologie_option_bl.pdf#page=10",
+    "sujet_sha256": "a6cfd0e1d317596c64fdd7f85e2770ef806175c8b278483fe266bc97bed6e3d9",
+    "pages_sujet": "10–17 sur 54, pagination propre 1–8",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_sociologie_tronc_commun.pdf",
+    "rapport_sha256": "9bc988f94c13ebc880ab5860fd1c30f145a4bf52df2207b66bb6dbb78e4bd008",
+    "pages_rapport": "1–4, titre du dossier p. 4"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "agent": "fui_physique_un",
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Rédaction de l’exposé et du guidé à partir des sept documents, lecture des deux histogrammes sur page rendue, confrontation au rapport commun, deux figures des documents 2 et 5 et préparation à l’entretien."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Document 2",
+      "fichier": "figures/chauffage-et-tri.svg",
+      "legende": "Part déclarant éteindre le chauffage lors d’une absence de plus d’une journée ou trier les déchets, selon le niveau de vie et la lecture (SVEN, 2017)."
+    },
+    {
+      "numero": 2,
+      "question": "Document 5",
+      "fichier": "figures/contact-avec-la-nature.svg",
+      "legende": "Contact quotidien ou plusieurs fois par semaine avec la nature selon le genre et le revenu mensuel du foyer. Les deux seuils inférieurs se recouvrent (CGDD/SDES, 2020)."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "precision": "Un commentaire oral sur dossier. La garde ne contient ni question numérotée ni choix entre deux sujets. Les documents 1 à 7 sont mobilisés dans les deux éditions.",
+    "documents_entierement_traites": [
+      "Document 1",
+      "Document 2",
+      "Document 3",
+      "Document 4",
+      "Document 5",
+      "Document 6",
+      "Document 7"
+    ],
+    "controle_des_documents": [
+      "La priorité nationale en concurrence, ADEME 2011–2022.",
+      "Le tri et le chauffage selon deux niveaux de vie et deux catégories de lecture, SVEN 2017.",
+      "Motifs et unités des déplacements, seuil de 80 km et ménages équipés, SVEN 2017.",
+      "Construction des groupes de conviction par profession, ADEME 2023.",
+      "Contacts avec la nature par sexe et ressources, CGDD/SDES 2020.",
+      "Lecture de cinq critères d’achat par configuration familiale et distinction entre valeurs imprimées et estimées, SVEN 2017.",
+      "Interprétation des deux enquêtés de Grossetête et portée des entretiens, 2019."
+    ]
+  }
+}
