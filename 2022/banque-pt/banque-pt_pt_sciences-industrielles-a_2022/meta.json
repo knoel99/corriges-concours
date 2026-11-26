@@ -544,6 +544,22 @@
       "phase": "relecture_corrige",
       "tour": 1,
       "perimetre": "Vérification mécanique des aubes et du réducteur, de la chaîne de calage et de ses asservissements ; contrôle des courbes et constructions du cahier."
+    },
+    {
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "session": "banque_pt_si_a_2022",
+      "modifications": true,
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "perimetre": "Contrôle visuel du cahier scanné et élargissement du cadre du schéma de vérin pour afficher le bloc de retour en entier."
     }
   ],
   "date_revision": "2026-11-26"

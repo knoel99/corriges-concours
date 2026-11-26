@@ -6,6 +6,8 @@
 
 **Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Moteur Open Rotor.** Épreuve de cinq heures en quatre parties et 45 questions. Le dossier réunit la présentation, le travail demandé, les annexes et le cahier de réponses.
 
 [Sujet et cahier officiels](https://www.banquept.fr/documents/2022/si_a_2022_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2022/rapport_si_a_ecrit_2022.pdf)
