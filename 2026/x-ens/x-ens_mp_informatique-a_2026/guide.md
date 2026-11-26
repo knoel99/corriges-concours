@@ -312,7 +312,7 @@ La définition du minimum suppose une signature non vide. Une musique sans coupl
 
 **(b)**
 
-1. *Prétraitement.* Pour chaque musique $X$ de la base, on calcule $S_\Delta(X)$ à partir de sa représentation concise (I.2 et I.7). On tire une seule fois pour toute la base et les requêtes $r$ permutations uniformes indépendantes, et on ne stocke que $\sigma(X)=\big(\mathsf{minHash}(h_1)(S_\Delta(X)),\dots,\mathsf{minHash}(h_r)(S_\Delta(X))\big)$. Ce vecteur a une taille fixe $r$, ce qui économise beaucoup de mémoire.
+1. *Prétraitement.* Pour chaque musique $X$ de la base, on calcule $S_\Delta(X)$ à partir de sa représentation concise (I.2 et I.7). On tire une seule fois pour toute la base et les requêtes $r$ permutations uniformes indépendantes, et on ne stocke que $\sigma(X)=\big(\mathsf{minHash}(h_1)(S_\Delta(X)),\dots,\mathsf{minHash}(h_r)(S_\Delta(X))\big)$. Ses $r$ coordonnées prennent leurs valeurs dans $[N]\cup\{\bot\}$.
 2. *Requête.* On calcule $\sigma(M)$ pour l'extrait. La fraction des coordonnées où $\sigma(M)$ et $\sigma(X)$ coïncident est une moyenne de $r$ variables de Bernoulli indépendantes de paramètre $J(S_\Delta(M),S_\Delta(X))$. C'est donc un estimateur sans biais de l'indice de Jaccard, de variance au plus $1/(4r)$.
 3. On renvoie les musiques les mieux classées. On départage les meilleures par la cohérence temporelle des triplets communs, avec le critère de I.9. Pour ce départage, on relit les enregistrements retenus ou leurs dictionnaires d’occurrences afin de retrouver les dates des triplets.
 
