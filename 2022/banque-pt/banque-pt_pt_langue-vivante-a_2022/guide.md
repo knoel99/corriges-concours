@@ -156,7 +156,7 @@ La ciudadanía digital combina, pues, acceso a la palabra y responsabilidad por 
 
 ### Construire la synthèse
 
-Comparer les colonnes à unité égale. Revenir ensuite aux finalités du musée et distinguer la portée numérique d’une publication, la visite et la découverte effective d’une œuvre.
+La page 14 du rapport porte le seul titre « ITALIEN ». Le commentaire qui suit prend appui sur les cinq documents du sujet. Comparer les colonnes à unité égale. Revenir ensuite aux finalités du musée et distinguer la portée numérique d’une publication, la visite et la découverte effective d’une œuvre.
 
 **Document 1** · Le premier commentaire compare les cas de Ferragni et Will Smith, et interroge le choix des lieux à promouvoir.
 
