@@ -15,7 +15,9 @@
   "date_revision": "2026-11-24",
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/21_mp_sujet_mathd.pdf",
-    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/21_mp_rap_emathd.pdf"
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/21_mp_rap_emathd.pdf",
+    "sha256_sujet": "02b0bb97c289c92525e4369f872364d7a0f17def2ff25329a220639087fbf113",
+    "sha256_rapport_jury": "5cd285420152a7d89580cf2688fee935bffe376a3cdf85c7b4a7de37722deb59"
   },
   "figures": [
     {
@@ -86,6 +88,75 @@
       "perimetre": "Confrontation des 40 réponses et sept figures aux pages imprimées 1 à 7 et au rapport. Vérification des deux coquilles signalées en I.6b et II.1a, du second moment de l’échangeur et du saut de son exposant typique au bord. Contrôle des indépendances des demi-produits.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "agent": "ens_mp_mathematiques_d",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Pointage des 40 repères sur le sujet, les deux éditions et le rapport. p. 2–4, question préliminaire, produits triangulaires, Gelfand et hypothèse de non-nilpotence signalée par le jury. p. 4–7, erreur de signe de la majoration sous-additive, changements de norme, loi de l’échangeur et second moment exact. p. 7–8, découpage en blocs, Furstenberg–Kesten et preuve complémentaire sur les espaces propres généralisés communs."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "0",
+      "I.1",
+      "I.2",
+      "I.3a",
+      "I.3b",
+      "I.3c",
+      "I.4",
+      "I.5",
+      "I.6a",
+      "I.6b",
+      "I.6c",
+      "II.1a",
+      "II.1b",
+      "II.2a",
+      "II.2b",
+      "II.2c",
+      "II.3a",
+      "II.3b",
+      "II.3c.i",
+      "II.3c.ii",
+      "II.3c.iii",
+      "III.1a",
+      "III.1b",
+      "III.1c",
+      "III.2a",
+      "III.2b",
+      "III.3a",
+      "III.3b",
+      "III.3c",
+      "III.3d",
+      "III.3e",
+      "III.3f",
+      "III.3g",
+      "IV.1",
+      "IV.2",
+      "IV.3",
+      "IV.4",
+      "IV.5a",
+      "IV.5b",
+      "IV.5c"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "controle": [
+      "p. 2–4, question préliminaire, produits triangulaires, Gelfand et hypothèse de non-nilpotence signalée par le jury",
+      "p. 4–7, erreur de signe de la majoration sous-additive, changements de norme, loi de l’échangeur et second moment exact",
+      "p. 7–8, découpage en blocs, Furstenberg–Kesten et preuve complémentaire sur les espaces propres généralisés communs"
+    ]
+  }
 }
