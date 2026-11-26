@@ -6,7 +6,11 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Le jury publie 11 billets pour le 23 juin. Pour chacun, le premier intitulé est celui qui a été choisi. Le second était proposé au choix. Les deux reçoivent ici des réponses distinctes. Les exemples et arguments proposés servent à préparer une leçon personnelle.
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Le [feuillet du 23 juin](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_2_23_juinal.pdf) contient 11 billets de deux sujets. Les développements suivent leur ordre. Le premier sujet a été choisi sur chacun des 11 billets. Le [rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf#page=7) permet de vérifier les choix.
+
+Lisez à haute voix les deux sujets du billet puis annoncez votre choix au début de l’exposé. Seul un dictionnaire de langue française est autorisé, à l’exclusion des dictionnaires de noms propres. Pour essayer l’autre sujet, utilisez la question d’entretien et la piste de réponse placées après son développement.
 
 ## Préparer les onze reprises
 
@@ -34,6 +38,8 @@ Aristote, dans les livres VIII et IX de l’*Éthique à Nicomaque*, insiste pou
 
 Une bibliothèque pourrait ranger les livres par taille afin qu’ils tiennent au mieux sur les étagères. Le lecteur qui cherche toutes les éditions d’un auteur préférera un autre principe. Classer fait gagner une possibilité d’action en sélectionnant un caractère pertinent, avec des pertes que l’on peut préciser. Il existe aussi des classifications explicatives, comme celles qui regroupent des espèces selon des parentés et conduisent à rechercher des propriétés communes. Le choix des critères y est éprouvé par l’enquête, et non laissé à la commodité seule. Enfin, classer des personnes peut modifier la façon dont elles sont traitées. Une bonne classification indique donc à quelle question elle répond, quels cas mettent ses frontières en difficulté et dans quelles conditions ses catégories peuvent être révisées.
 
+**À l’entretien. Une même collection peut-elle recevoir deux classements justes ?** Classer des outils par matériau aide à les conserver, les classer par geste aide à les retrouver à l’atelier. Le but éclaire le choix du critère. Les cas limites permettent d’en éprouver la pertinence.
+
 ## 2. De quoi la musique est-elle l’art ?
 
 Deux pianistes jouent les mêmes hauteurs dans le même ordre. Une accentuation et un léger retard au retour du thème font entendre chez l’un une reprise qui hésite, chez l’autre une affirmation immédiate. Définir la musique comme l’art des sons ne suffit donc pas, puisque le silence, la durée attendue et le souvenir du son précédent contribuent aussi à la forme perçue. Il faut encore expliquer comment une suite devient un mouvement que l’auditeur peut suivre.
@@ -44,6 +50,8 @@ La musique peut évoquer une marche, une voix ou une scène. Mais toute pièce n
 
 J’entends la chanson qui passait dans un café de mon ancienne ville. Ce que je voudrais retrouver est-il la salle, la période de ma vie ou la manière dont cette chanson les rassemble aujourd’hui ? La nostalgie donne à l’absence une figure sensible et tend à réorganiser les souvenirs autour de ce qui paraît perdu. Un retour physique au lieu peut la décevoir, même si la salle a peu changé, parce que je ne reviens pas avec l’âge et les attentes d’autrefois. Ce sentiment ne se réduit ni à une erreur ni à un savoir fidèle sur le passé. Il peut reconnaître un attachement durable ou effacer des difficultés bien réelles. L’examiner consiste à distinguer le bien dont on garde le désir de l’impossibilité de répéter toute la situation qui l’avait fait aimer.
 
+**À l’entretien. Pourquoi regretter une époque dont on connaît aussi les défauts ?** Distinguer le jugement sur les conditions de vie passées et le désir de retrouver une relation ou un avenir alors possible. Ce que la nostalgie vise n’est pas nécessairement toute l’époque qu’elle évoque.
+
 ## 3. Entendre et comprendre
 
 Je peux répéter avec exactitude une phrase dans une langue que j’ignore. Les sons et même leur contour interrogatif me sont accessibles, mais je ne sais pas répondre à ce qui m’est demandé. Inversement, dans une gare bruyante, les gestes d’un voyageur et la situation peuvent me faire comprendre sa demande alors que plusieurs mots m’ont échappé. L’audition et la compréhension se distinguent donc sans être deux étapes qui se suivraient toujours mécaniquement.
@@ -53,6 +61,8 @@ Le double sens français d’« entendre », percevoir et saisir le sens, enregi
 ### La mauvaise foi
 
 Une personne s’engage à rendre service puis explique qu’elle « n’avait pas le choix » alors qu’une autre option, certes pénible, lui était apparue. Le problème n’est pas seulement de transmettre une information fausse à autrui. Elle se présente à elle-même sa conduite sous une description qui évite d’en répondre. Dans *L’Être et le Néant*, Sartre analyse la mauvaise foi à travers les manières de se réduire à un rôle ou de nier les contraintes réelles de sa situation. Il faut rendre compte de cette conduite sans imaginer deux consciences parfaitement séparées, l’une sachant tout et l’autre ignorant sincèrement tout. Une attention sélective et une manière d’écarter certaines questions permettent d’en comprendre le mouvement. Le diagnostic demande néanmoins des raisons. Tout désaccord sur un motif ou toute erreur d’interprétation n’est pas un indice de mauvaise foi.
+
+**À l’entretien. Suffit-il de se tromper sur soi pour être de mauvaise foi ?** Comparer l’erreur corrigée dès qu’apparaît une preuve et la conduite qui évite systématiquement toute mise à l’épreuve. La difficulté est d’expliquer comment une personne contribue à maintenir sa propre méprise.
 
 ![De la phrase entendue à la réponse comprise](figures/entendre.svg)
 
@@ -66,6 +76,8 @@ La comparaison devient féconde lorsque l’on demande quelle marge d’interpr�
 
 La canne rend sensible une bordure avant que le pied ne l’atteigne. L’usage exercé prolonge l’espace de perception, comme le montre l’analyse de Merleau-Ponty dans la *Phénoménologie de la perception*. Mais un instrument n’est pas toujours un bras allongé. Un thermomètre rend lisible une grandeur selon une échelle construite que le corps seul ne possédait pas. Un outil collectif peut également redistribuer des tâches entre plusieurs personnes. Prolonger peut donc signifier accroître la portée d’un geste, transformer la sensibilité ou instaurer une capacité nouvelle. Il faut examiner l’apprentissage et les conditions matérielles de l’usage. C’est l’activité coordonnée d’un corps, d’un dispositif et d’un milieu qui explique ce qui devient possible.
 
+**À l’entretien. Un instrument accroît-il toujours les possibilités du corps ?** Une canne ouvre l’espace perceptible à distance. Un poste de travail mal ajusté peut au contraire réduire l’amplitude d’un geste. Distinguer le prolongement matériel et l’apprentissage qui rend ce pouvoir disponible.
+
 ## 5. Qu’est-ce que le réel ?
 
 Sur une scène, une porte peinte donne l’impression d’ouvrir un passage. Elle est réellement une surface colorée, réellement porte dans l’histoire jouée et inutilisable pour sortir de la salle. Demander « est-ce réel ? » oblige déjà à préciser sous quel aspect l’affirmation est éprouvée. Cette pluralité ne met pas toutes les propositions sur le même plan. Une personne qui veut sortir rencontre une résistance que sa croyance ne suffira pas à supprimer.
@@ -75,6 +87,8 @@ La résistance constitue donc un indice de réalité, sans en épuiser la notion
 ### La valeur des promesses
 
 Promettre de venir demain donne à quelqu’un une raison d’organiser son temps autour d’une présence future. Une simple prévision du genre « je serai probablement là » ne l’autorise pas à me demander de la même façon pourquoi j’ai manqué. Une promesse crée un engagement et expose le promettant à devoir répondre de son avenir. Elle a de la valeur parce qu’elle rend une coopération possible malgré l’incertitude et reconnaît à l’autre une attente légitime. Tout engagement annoncé ne possède pourtant pas une valeur illimitée. Il faut considérer ce qui pouvait être promis, les contraintes, le consentement et les droits de tiers. Une impossibilité imprévue peut modifier l’obligation d’exécuter sans supprimer le devoir de prévenir, d’expliquer et parfois de réparer.
+
+**À l’entretien. Pourquoi une promesse oblige-t-elle si elle portait sur un avenir incertain ?** Le destinataire peut organiser sa conduite en se fiant à la parole donnée. Comparer un empêchement imprévisible et une simple préférence nouvelle. L’obligation peut subsister sous la forme d’explications ou de réparation.
 
 ## 6. Le design est-il un art ?
 
@@ -86,6 +100,8 @@ Il reste une différence avec certaines œuvres exposées pour une fin de contem
 
 Un conseil décide d’un impôt à la majorité. Il exerce une compétence publique, mais ses pouvoirs peuvent être limités par la Constitution et par la juridiction à laquelle un citoyen peut s’adresser. Tout pouvoir de décider n’est donc pas souverain. La souveraineté désigne une autorité ultime sous un rapport déterminé, la source à laquelle sont rapportées les compétences ou la capacité d’un État à ne pas relever d’un autre. Avec Rousseau, l’attribution de la souveraineté au peuple pose la question de la différence entre le souverain et ceux qui exercent le gouvernement. Dire que le peuple est souverain ne rend pas chacun individuellement maître de la loi, pas plus que cela ne confère à un gouvernant le pouvoir d’identifier sa volonté à celle de tous. Il faut examiner les procédures et les limites qui donnent sens à cette attribution.
 
+**À l’entretien. S’engager par traité est-il forcément perdre sa souveraineté ?** Distinguer le pouvoir de prendre un engagement et le fait de subir une décision étrangère. Examiner qui a autorisé le traité, quelle marge demeure et devant qui les autorités doivent répondre de leur décision.
+
 ## 7. Faut-il vivre dangereusement ?
 
 Une personne qui prend publiquement la défense d’un collègue traité injustement risque de perdre l’approbation de son groupe. Elle peut néanmoins avoir de bonnes raisons d’agir, alors qu’elle n’aurait aucune raison de rechercher cette perte pour elle-même. Le danger indique la possibilité d’un dommage. Il ne fournit pas, par sa seule présence, la valeur d’une conduite. Il s’agit donc de séparer l’acceptation d’un risque au nom d’une fin et l’admiration de l’exposition au risque comme style de vie.
@@ -95,6 +111,8 @@ La prudence d’Aristote permet de penser une décision réglée par les circons
 ### La foule
 
 À la sortie d’une gare, des voyageurs vont d’abord dans plusieurs directions. Un changement d’affichage attire bientôt leur attention sur la même issue. La proximité physique devient une situation de dépendance réciproque, chacun tenant compte du mouvement des autres. La foule ne se définit donc pas seulement par un nombre, ni par une volonté unique. L’accélération d’un mouvement et la propagation d’une attente peuvent se produire sans que chacun ait le même motif. À l’inverse, des inconnus peuvent s’organiser spontanément pour laisser passer une personne en difficulté. Réduire toute foule à une irrationalité essentielle manquerait ces formes de coopération. Il faut examiner les conditions du lieu, de l’information et de la possibilité de communiquer qui modifient la conduite collective.
+
+**À l’entretien. Les personnes dans une file d’attente forment-elles déjà une foule ?** Faire varier le nombre, l’orientation des gestes et l’apparition d’une attention commune. Une forte densité de personnes n’explique pas à elle seule la manière dont elles commencent à agir les unes sur les autres.
 
 ## 8. La nature a-t-elle des droits ?
 
@@ -106,6 +124,8 @@ Le *Te Awa Tupua Act* adopté en Nouvelle-Zélande en 2017 reconnaît comme pers
 
 Une personne instruit soigneusement un calcul et refuse d’examiner si la quantité calculée répond à la question qu’on lui pose. Elle peut être très compétente et commettre pourtant une bêtise. L’idée est plus précise que le simple défaut de connaissances. Elle peut désigner une manière de persévérer dans un automatisme de jugement quand la situation exige de s’arrêter et de changer de question. Flaubert, notamment dans *Bouvard et Pécuchet*, fait sentir le rôle des discours tout faits répétés avec assurance. Mais qualifier une personne de bête risque précisément de clore l’examen sous une étiquette commode. Il vaut mieux déterminer l’opération qui fait défaut, remarquer une différence, accepter un contre-exemple ou se demander si la bonne question est posée. La critique devient alors aussi applicable à nos certitudes.
 
+**À l’entretien. Peut-on tenir un raisonnement impeccable et faire preuve de bêtise ?** On peut déduire correctement les conséquences d’un classement tout en refusant de voir qu’il est hors sujet. Situer le défaut dans le choix du problème ou le jugement sur la situation.
+
 ## 9. En politique, faut-il ne croire qu’au rapport de force ?
 
 Un groupe de salariés obtient plus facilement d’être reçu lorsqu’il parle d’une voix commune. Le rapport des capacités d’action pèse incontestablement sur la décision. En conclure que seul ce rapport compte ferait cependant disparaître la différence entre être capable d’imposer une mesure et être autorisé à la prendre. Rousseau examine dans *Du contrat social* le prétendu droit du plus fort. Si le droit cessait dès qu’une force plus grande apparaît, il n’ajouterait aucun sens à la simple constatation du fait.
@@ -115,6 +135,8 @@ La difficulté inverse serait de traiter la règle de droit comme si la distribu
 ### La danse
 
 Traverser une scène et traverser une rue peuvent mobiliser les mêmes pas sans constituer la même action. Dans une danse, le passage peut faire sentir la durée, la pesanteur ou la relation entre des corps pour celui qui le fait comme pour celui qui le regarde. Une chorégraphie fixe certains rapports et laisse à l’interprète le détail de leur réalisation. La danse peut aussi exister comme pratique collective sans public séparé et sans partition préalablement écrite. Vouloir la définir uniquement par la présence d’une musique ou par la beauté conventionnelle des gestes en exclurait de nombreuses formes. Sa singularité tient au travail du mouvement corporel comme matière de sens, selon des règles et des traditions dont les danseurs peuvent renouveler l’usage.
+
+**À l’entretien. Deux personnes dansent-elles de la même façon en exécutant les mêmes pas ?** Comparer l’accentuation, l’anticipation du partenaire et le rapport à la musique. Une suite de positions peut rester reconnaissable tandis que sa qualité expressive change.
 
 ## 10. D’où viennent nos opinions politiques ?
 
@@ -126,6 +148,8 @@ Une enquête sociologique peut établir une probabilité de voter d’une certai
 
 Nul ne comprend un argument à ma place. Une classe entière peut approuver une proposition et je n’y vois encore qu’une suite de signes jusqu’à ce que je puisse refaire l’inférence. Cette solitude engage ma responsabilité de jugement. Elle ne signifie pas que la pensée s’effectue avec des moyens que j’aurais créés seul. Les mots, la question et les exemples employés me viennent d’activités partagées, et l’objection d’un interlocuteur peut révéler la prémisse que je négligeais. Même en silence, je peux reprendre un désaccord à travers lequel je pense. La solitude est féconde lorsqu’elle rend possible une appréciation personnelle, puis un retour vers l’échange. Elle devient isolement stérile si elle soustrait la pensée à toute correction.
 
+**À l’entretien. Penser seul exige-t-il d’oublier toute parole reçue ?** Une objection lue la veille peut orienter la délibération silencieuse. Distinguer l’absence physique d’interlocuteur et la responsabilité de juger soi-même des raisons apprises au contact d’autrui.
+
 ## 11. Que peut l’imagination ?
 
 Un architecte imagine un passage ouvert entre deux cours qui semblaient devoir rester séparées. Il rassemble des éléments reçus de la perception et les réorganise en une possibilité que l’expérience présente ne montre pas encore. Cette puissance n’opère pas uniquement dans la rêverie ou dans l’art. Pour comprendre le plan du voisin, prévoir l’effet d’une modification ou éprouver une objection, il faut pouvoir rendre présent ce qui ne l’est pas actuellement.
@@ -136,6 +160,6 @@ L’imagination peut aussi donner une consistance trompeuse à ce qui n’a jama
 
 Un équipage a besoin de tenir une direction en s’adaptant au vent. L’image aide à distinguer la décision d’un but et le choix variable des moyens. Appliquée à la cité, elle rencontre une limite essentielle. Les citoyens ne sont pas des passagers dont un pilote connaîtrait seul la destination. Gouverner consiste à prendre en charge des décisions qui engagent un ensemble humain, avec des compétences, des procédures et l’obligation de pouvoir en répondre. Une administration peut exécuter efficacement une mesure dont la finalité reste injustifiée. Inversement, une fin approuvée ne dispense pas de vérifier les effets de l’action. Un bon gouvernement se juge donc à sa capacité de décider, de rendre publiques ses raisons et de laisser les gouvernés participer, contester et corriger la direction prise.
 
-![De la passerelle imaginée au passage réel](figures/imaginer.svg)
+**À l’entretien. Administrer efficacement suffit-il à gouverner ?** Deux politiques peuvent être mises en œuvre avec la même efficacité et poursuivre des fins opposées. Le choix des fins, la justification publique et la possibilité de demander des comptes constituent des questions supplémentaires.
 
-[Feuille officielle du 23 juin](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_2_23_juinal.pdf) · [Rapport du jury, modalités et annexe des sujets](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf)
+![De la passerelle imaginée au passage réel](figures/imaginer.svg)

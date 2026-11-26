@@ -6,7 +6,11 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Le jury publie 11 billets pour le 23 juin. Pour chacun, le premier intitulé est celui qui a été choisi. Le second était proposé au choix. Les deux reçoivent ici des réponses distinctes. Les exemples et arguments proposés servent à préparer une leçon personnelle.
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Le [feuillet du 23 juin](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_2_23_juinal.pdf) contient 11 billets de deux sujets. Les développements suivent leur ordre. Le premier sujet a été choisi sur chacun des 11 billets. Le [rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf#page=7) permet de vérifier les choix.
+
+Lisez à haute voix les deux sujets du billet, choisissez pendant les 90 minutes de préparation et annoncez votre choix au début des 20 minutes d’exposé. L’entretien dure ensuite 10 minutes. Le coefficient est de 3. Seul un dictionnaire de langue française est autorisé, à l’exclusion des dictionnaires de noms propres.
 
 ## 1. Amour et amitié
 
@@ -121,5 +125,3 @@ L’imagination peut aussi donner une consistance trompeuse à ce qui n’a jama
 Un équipage a besoin de tenir une direction en s’adaptant au vent. L’image aide à distinguer la décision d’un but et le choix variable des moyens. Appliquée à la cité, elle rencontre une limite essentielle. Les citoyens ne sont pas des passagers dont un pilote connaîtrait seul la destination. Gouverner consiste à prendre en charge des décisions qui engagent un ensemble humain, avec des compétences, des procédures et l’obligation de pouvoir en répondre. Une administration peut exécuter efficacement une mesure dont la finalité reste injustifiée. Inversement, une fin approuvée ne dispense pas de vérifier les effets de l’action. Un bon gouvernement se juge donc à sa capacité de décider, de rendre publiques ses raisons et de laisser les gouvernés participer, contester et corriger la direction prise.
 
 ![De la passerelle imaginée au passage réel](figures/imaginer.svg)
-
-[Feuille officielle du 23 juin](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_2_23_juinal.pdf) · [Rapport du jury, modalités et annexe des sujets](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf)
