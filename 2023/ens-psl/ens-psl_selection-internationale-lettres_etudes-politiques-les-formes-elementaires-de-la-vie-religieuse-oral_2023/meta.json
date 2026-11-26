@@ -1,0 +1,55 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_etudes-politiques-les-formes-elementaires-de-la-vie-religieuse-oral_2023",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Études politiques — les formes élémentaires de la vie religieuse (oral)",
+    "annee": 2023,
+    "modalite": "oral"
+  },
+  "intitule": "Études politiques — les formes élémentaires de la vie religieuse (oral)",
+  "gabarit": "commentaire",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://web.archive.org/web/20251023091529id_/https://www.ens.psl.eu/sites/default/files/oral-5.pdf",
+    "sujet_sha256": "f77b3528365ef5348bebd0eae5d05cea39eb86f2f5d89578bb3c7e05497f7908",
+    "document_officiel": "https://www.ens.psl.eu/sites/default/files/oral-5.pdf",
+    "index": "https://www.ens.psl.eu/une-formation-d-exception/admission-concours/international/concours-selection-internationale-0",
+    "pages_sujet": 1,
+    "reference": "Émile Durkheim, Les formes élémentaires de la vie religieuse, 1912 ; édition Le Livre de poche, 1991, passages des p. 108–109, 365–370, 387–391, 395–396 et 468 reproduits sur la fiche."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/le-totem-et-l-action-du-groupe.svg",
+      "question": "Commentaire oral",
+      "legende": "Dans l’explication de Durkheim, la communauté agit sur ses membres ; l’emblème donne une forme visible à la dépendance et à la confiance éprouvées ; les rites entretiennent en retour la communauté."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "gestion_2022_2023",
+      "agent": "gestion_2022_2023",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Explication de l’ensemble des passages sélectionnés, du sacré à la vie sociale intériorisée ; statut du symbole, objections et exemple comparatif, figure originale et guide d’entretien."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire oral"
+    ],
+    "limites": "L’explication suit les extraits discontinus de la fiche. Les renvois de pages concernent l’édition indiquée par le jury ; les relances servent à l’entraînement."
+  }
+}
