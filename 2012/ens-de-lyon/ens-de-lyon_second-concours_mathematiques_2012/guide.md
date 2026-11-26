@@ -2,7 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 **Approximation d’exponentielles et fonctions mid-convexes.** Le premier exercice évalue l’erreur de la formule du produit de Lie. Le second examine le rôle de la continuité dans le passage de l’inégalité des milieux à la convexité. Le sommaire institutionnel rattache un rapport de mathématiques à l’oral et fournit le sujet de l’écrit sans rapport associé.
 
@@ -110,6 +112,8 @@ $$L'-SL=(Be^{tA}-e^{tA}B)e^{tB},\qquad L(0)=0.$$
 I.C.1 donne l’intégrale à un paramètre. Or I.C.2 donne $[B,e^{sA}]=\int_0^s e^{(s-r)A}[B,A]e^{rA}\,dr$. En substituant,
 $$L(t)=\int_0^t\int_0^s e^{(t-s)S}e^{(s-r)A}[B,A]e^{rA}e^{sB}\,dr\,ds.$$
 
+Le développement au voisinage de zéro vérifie le signe. Dans $e^{t(A+B)}$, le terme mixte d’ordre deux vaut $t^2(AB+BA)/2$. Dans $e^{tA}e^{tB}$, il vaut $t^2AB$. Leur différence est donc $t^2[B,A]/2+O(t^3)$, conforme à l’intégrale sur le triangle.
+
 ### Question I.C.4
 
 > [!INDICATION]
@@ -131,6 +135,8 @@ L’aire du triangle d’intégration est $t^2/2$. On obtient bien $\|L(t)\|\le 
 Prenons $h=T/m$, $X=e^{h(A+B)}$, $Y=e^{hA}e^{hB}$, $K=\|A\|+\|B\|$. On a $X^m=e^{T(A+B)}$ et $\|X\|,\|Y\|\le e^{hK}$. L’identité $X^m-Y^m=\sum_{j=0}^{m-1}X^{m-1-j}(X-Y)Y^j$ résulte d’une somme télescopique dans cet ordre. I.C.4 donne
 $$\|X^m-Y^m\|\le m e^{(m-1)hK}\frac{h^2}{2}e^{hK}\|[A,B]\|=\frac{T^2}{2m}e^{TK}\|[A,B]\|.$$
 Ainsi le produit demandé converge vers $e^{T(A+B)}$. Pour la figure, $A$ a pour seul coefficient non nul $a_{12}=1$ et $B=A^\mathsf{T}$. Comme $A^2=B^2=0$, le produit d’un pas vaut $(I+hA)(I+hB)$. De plus $(A+B)^2=I$, donc la valeur exacte à $T=1$ est $\cosh(1)I+\sinh(1)(A+B)$.
+
+Pour les matrices de la figure, un pas s’écrit explicitement $Y=\left(\begin{smallmatrix}1+h^2&h\\h&1\end{smallmatrix}\right)$. Dans la norme du sujet, $\|A\|=\|B\|=\|[A,B]\|=1$. Pour $T=1$, le majorant représenté est donc $e^2/(2m)$, ce qui fournit une vérification indépendante de son échelle.
 
 ![Figure 1 — Pour les matrices élémentaires A et B de la solution, doubler le nombre de pas divise asymptotiquement l’erreur par deux.](figures/produit-de-lie.svg)
 
@@ -180,6 +186,8 @@ Pour tout $t\in[0,1]$, appliquons II.2.a à $t_n$ de II.2.b. Par continuité, $f
 #### Solution
 
 En ajoutant les deux développements finis, l’unicité donne $w_h(x+y)=w_h(x)+w_h(y)$ pour chaque $h$. De même, les coordonnées sont homogènes sur $\mathbb Q$. Pour $q\in\mathbb Q$, le développement $q=q\cdot1$ donne $w_1(q)=q$. Si $w_1$ était continue, elle coïnciderait avec l’identité sur toute la droite par densité de $\mathbb Q$. Mais il existe un $h\in H\setminus\{1\}$ puisque $\mathbb R\ne\mathbb Q$ et alors $w_1(h)=0\ne h$. La fonction est donc discontinue.
+
+La discontinuité se manifeste à chaque point. Si $w_1$ était continue en un point $a$, l’identité $w_1(a+t)-w_1(a)=w_1(t)$ donnerait la continuité en zéro, puis partout par translation.
 
 ### Question II.3.b
 

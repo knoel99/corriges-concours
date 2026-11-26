@@ -31,6 +31,50 @@
       "perimetre": "Rédaction complète des deux exercices (20 items) sur l’original de quatre pages. Vérification des types vecteur/matrice en I.C.1, du signe du commutateur, du télescopage non commutatif et du contre-exemple de Hamel. Figure numérique calculée avec des matrices nilpotentes. Le sommaire publie seulement un rapport de mathématiques de l’oral.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "x_maths_b_anciennes",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Confrontation des 20 rubriques des deux éditions aux 4 pages du sujet. Calcul de la norme induite et du défaut local du produit de Lie, contrôle du signe et du majorant tracé. Vérification de la preuve dyadique, de la discontinuité de la coordonnée rationnelle et de la non-majoration."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.A.1",
+      "I.A.2",
+      "I.A.3",
+      "I.B.1",
+      "I.B.2",
+      "I.B.3",
+      "I.B.4",
+      "I.C.1",
+      "I.C.2",
+      "I.C.3",
+      "I.C.4",
+      "I.C.5",
+      "II.1",
+      "II.2.a",
+      "II.2.b",
+      "II.2.c",
+      "II.3.a",
+      "II.3.b",
+      "II.4.a",
+      "II.4.b"
+    ],
+    "precision": "Confrontation des 20 rubriques des deux éditions aux 4 pages du sujet. Calcul de la norme induite et du défaut local du produit de Lie, contrôle du signe et du majorant tracé. Vérification de la preuve dyadique, de la discontinuité de la coordonnée rationnelle et de la non-majoration.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "2e877ebeaf6a24c3ea13c9d98ec006eab8cfb827f1d29c9464320a5d63d06d65",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Confrontation des 20 rubriques des deux éditions aux 4 pages du sujet. Calcul de la norme induite et du défaut local du produit de Lie, contrôle du signe et du majorant tracé. Vérification de la preuve dyadique, de la discontinuité de la coordonnée rationnelle et de la non-majoration.",
+      "commit_redaction_anterieure": "af40ad73e07f1e2bd4bf61d3be9a10eb5cb79a37"
+    }
+  }
 }
