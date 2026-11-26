@@ -13,6 +13,16 @@ Posséder une adresse suffit-il pour disposer d’un logement habitable ? L’en
 > [!METHODE]
 > Préparer en 90 minutes une réponse qui rapproche les documents. Le rapport prévoit quinze minutes d’exposé puis quinze minutes d’entretien. Dans chaque tableau, lire d’abord la population et le dénominateur. Les valeurs lues sur les courbes sont arrondies.
 
+## Cheminement de l’exposé
+
+Compter requiert de préciser ce qu’habiter veut dire. Les documents 1 et 2 mettent en évidence l’absence de logement personnel et le défaut d’espace ; le document 3 complète l’adresse et la surface par le coût ou l’impossibilité de se chauffer. La définition change les personnes visibles dans la statistique.
+
+Les conditions de logement affectent des populations socialement situées. Un emploi déclaré n’assure pas un logement adéquat (document 4). Le niveau de vie, les conditions d’occupation et l’accès aux réparations permettent de relier le froid au logement (document 3) et l’inégale fréquence de symptômes (document 6).
+
+Une difficulté devient durable au fil des procédures. Les étapes judiciaires du document 5 indiquent différents moments d’intervention. Les portraits du document 7 montrent comment une dette d’énergie se transporte d’un logement à l’autre, ou comment la remise en état tardive du bâti alourdit une facture et compromet le paiement du loyer.
+
+## Lecture des pièces du dossier
+
 ### Définir et éviter les doubles comptes
 
 Document 1, p. 2. La Fondation Abbé Pierre recense 4 156 000 personnes mal logées sans double compte. Parmi elles, 1 098 000 n’ont pas de logement personnel, dont 330 000 sans domicile et 643 000 en hébergement contraint chez des tiers. Les conditions très difficiles touchent 2 885 000 personnes sans double compte ; 1 874 000 sont privées de confort et 1 128 000 sont en surpeuplement accentué. Leur somme dépasserait 2 885 000, car les deux difficultés se recouvrent. Il faut aussi distinguer personnes et ménages, colonnes différentes.

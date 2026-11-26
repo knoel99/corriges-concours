@@ -10,6 +10,16 @@
 
 Qu’est-ce qui rend certaines violences plus visibles que d’autres ? L’enquête Virage de 2015 interroge sur des faits précis et sur plusieurs scènes de vie. Elle permet de comparer expositions, répétitions et prises de parole. L’histoire du mouvement féministe permet ensuite de comprendre comment ces faits, souvent traités isolément, sont devenus un objet d’enquête.
 
+## Cheminement de l’exposé
+
+Définir un acte et sa scène d’exercice. Les liens de parenté au document 1, les faits sur la voie publique au document 5 et les classifications des atteintes au travail au document 6 produisent des configurations de genre différentes. Commencer par ces contrastes évite un palmarès global des victimes.
+
+Comprendre comment la répétition installe un pouvoir. Les documents 3 et 4 distinguent fréquence d’une atteinte, contrôle régulier et désaccord conjugal. Examiner le motif et la gravité aide à comprendre ce qui se joue quand l’un des partenaires perd la maîtrise de ses relations.
+
+Expliquer ce qui peut être dit. Les délais du document 2 rappellent que des faits vécus restent longtemps hors des archives institutionnelles. Delage (document 7) montre comment la mobilisation féministe a rendu les comparaisons entre scènes pensables. La mesure par enquête constitue elle-même une condition de visibilité.
+
+## Lecture des pièces du dossier
+
 ### Qui est l’auteur des violences avant 18 ans ?
 
 Document 1, p. 2. Le tableau porte sur les liens avec les auteurs pour les victimes de violences dans ou autour de la famille. Les personnes enquêtées mentionnent le père dans 53,3 % des cas de violences psychologiques chez les femmes, 56,7 % chez les hommes. Pour les violences sexuelles, un oncle est cité dans 20,2 % et 16,3 % des cas respectivement. Les catégories de proches et de personnes intervenant auprès d’un enfant ont des bases propres. Énoncer le type de violence, le sexe de la victime et la relation avec l’auteur permet d’éviter d’attribuer au sexe de l’auteur une colonne qui concerne celui de la victime.

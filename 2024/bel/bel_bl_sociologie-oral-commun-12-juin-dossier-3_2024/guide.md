@@ -13,6 +13,16 @@ Comment la diffusion de la contraception peut-elle coexister avec un recours dur
 > [!METHODE]
 > Préparer en 90 minutes une réponse qui rapproche les documents. Le rapport prévoit quinze minutes d’exposé puis quinze minutes d’entretien. Dans chaque tableau, lire d’abord la population et le dénominateur. Les valeurs lues sur les courbes sont arrondies.
 
+## Cheminement de l’exposé
+
+Rendre compte de la stabilité apparente exige d’abord de séparer les événements. Le document 1 compte les interruptions par année, le document 2 mesure la couverture contraceptive d’une population définie et le document 4 rapporte des décisions aux seules grossesses non souhaitées. Aucune de ces trois grandeurs ne suffit isolément à modéliser le recours.
+
+Les conditions d’usage et les étapes biographiques donnent leur sens aux courbes. Les femmes du document 3 ont souvent utilisé une méthode. Les documents 5 et 6 situent les interruptions aux différents âges et moments du parcours familial. Une méthode disponible ne résout pas automatiquement les difficultés d’anticipation et de continuité.
+
+La maternité jugée opportune est aussi une norme sociale. Le recours plus fréquent à certains âges conduit à s’interroger sur les conditions de la décision, sans attribuer une intention à partir d’un taux. Le document 7 permet d’aller plus loin en montrant les jugements portés sur les émotions exprimées quand une femme se présente au service.
+
+## Lecture des pièces du dossier
+
 ### Deux indicateurs sur deux échelles
 
 Document 1, p. 2. Les séries DREES-CNAM lues sur deux axes couvrent la France métropolitaine et les DROM. En 2019, 232 244 IVG sont comptabilisées et le ratio atteint 0,31, soit 31 IVG pour 100 naissances vivantes. L’effectif annuel baisse au milieu des années 1990 puis fluctue autour d’un niveau plus élevé. Le ratio divise par les naissances et dépend aussi de leur nombre. La figure ne donne ni la part des femmes ayant vécu une IVG ni la proportion exacte des conceptions interrompues.

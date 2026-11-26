@@ -13,6 +13,16 @@ Pourquoi des individus disposant du même nombre d’heures par jour ont-ils des
 > [!METHODE]
 > Préparer en 90 minutes une réponse qui rapproche les documents. Le rapport prévoit quinze minutes d’exposé puis quinze minutes d’entretien. Dans chaque tableau, lire d’abord la population et le dénominateur. Les valeurs lues sur les courbes sont arrondies.
 
+## Cheminement de l’exposé
+
+Les ressources économiques ouvrent ou ferment l’horizon. Mettre face à face les dépenses déjà promises du document 1 et le patrimoine de précaution du document 4 explique pourquoi un même imprévu peut être un accident absorbable pour les uns et engager plusieurs années pour les autres.
+
+Anticiper est une pratique socialement située. Les réponses d’orientation du document 2 et le pessimisme du document 3 ne mesurent pas la même attitude. Ils donnent cependant prise à une même question : à quelles conditions une personne peut-elle représenter l’avenir comme un domaine où elle a le choix ?
+
+Pouvoir découper le présent est une autre ressource. Les horaires contraints du document 5 et le partage domestique du document 6 précisent qui dispose de temps continu. En prépa, le document 7 en montre une traduction scolaire : la capacité à borner son travail permet de tenir l’urgence collective tout en apparaissant à l’aise.
+
+## Lecture des pièces du dossier
+
 ### Des ressources déjà engagées
 
 Document 1, p. 2. Le graphique empile les dépenses pré-engagées, notamment loyers, charges, remboursements et abonnements. De 2001 à 2017, elles passent de 31 % à 41 % de la dépense pour les ménages pauvres. En 2017 elles représentent 32 % pour l’ensemble, dont 14 % pour le loyer et les charges. Les quatre dates tracées vont jusqu’à 2017 bien que le titre de la fiche se termine par « 2007 ». Des ressources engagées avant arbitrage réduisent la latitude face à un imprévu. La part dans la dépense totale diffère d’une part dans le revenu.

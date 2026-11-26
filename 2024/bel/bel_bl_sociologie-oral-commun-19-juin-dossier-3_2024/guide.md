@@ -13,6 +13,16 @@ Que choisit une famille lorsqu’elle inscrit un enfant dans le privé ? Les pos
 > [!METHODE]
 > Préparer en 90 minutes une réponse qui rapproche les documents. Le rapport prévoit quinze minutes d’exposé puis quinze minutes d’entretien. Dans chaque tableau, lire d’abord la population et le dénominateur. Les valeurs lues sur les courbes sont arrondies.
 
+## Cheminement de l’exposé
+
+Le choix du privé est d’abord un usage situé de l’offre. Les documents 1 et 2 confrontent les choix différenciés entre enfants d’une famille aux passages effectivement observés entre secteurs. Le document 5 montre que choisir le privé n’a pas le même sens là où son offre est rare et là où elle est dense.
+
+Ces usages composent les publics qui seront ensuite évalués. Le document 3 établit une concentration sociale à l’échelle des collèges et le document 4 mesure des écarts très tôt au primaire. Ces pièces rendent crédible un mécanisme de sélection et montrent les données supplémentaires nécessaires pour isoler ce que ferait l’établissement lui-même.
+
+Enfin on choisit des institutions concrètes. Le diagramme du hors contrat (document 6) en expose l’hétérogénéité ; l’enquête sur les enseignantes du privé musulman (document 7) découvre les arbitrages professionnels et religieux qu’un simple classement public/privé ne peut restituer.
+
+## Lecture des pièces du dossier
+
 ### Les choix peuvent varier dans une même fratrie
 
 Document 1, p. 2. Barrault-Stella et Hugrée demandent si les enfants ont déjà été inscrits dans le privé à un moment de leur scolarité. Pour l’ensemble des familles enquêtées, 20 % répondent que tous l’ont été, 15 % que certains l’ont été, 65 % qu’aucun ne l’a été. Chez les indépendants, les deux premières proportions sont 30 % et 15 %. Parmi les classes supérieures du secteur public, 20 % ont inscrit tous les enfants et 26 % seulement certains. La question autorise des usages circonstanciels. Elle mesure l’histoire des inscriptions familiales et non une part d’élèves scolarisés dans le privé aujourd’hui.

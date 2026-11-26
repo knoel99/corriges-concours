@@ -10,6 +10,16 @@
 
 Qualifier une personne de « vieille » range sous un terme unique des situations qui dépendent de l’époque, du travail passé, du revenu et des soutiens disponibles. Mais l’usure du corps et les institutions d’âge ont des effets tangibles. Pour articuler ces deux aspects, il faut distinguer seuil de classement, inégalités de vieillissement et travail accompli par les personnes elles-mêmes.
 
+## Cheminement de l’exposé
+
+Le seuil d’âge change de signification avec la population qu’il regroupe. Relier le développement des âges élevés au document 1 aux niveaux de vie relatifs du document 2 conduit à séparer croissance démographique et homogénéité économique. Le même anniversaire ne place pas toutes les générations dans les mêmes conditions.
+
+Le vieillissement a des effets corporels socialement distribués. Le document 3 situe l’effet durable de l’ancienne profession, le document 4 les états de santé associés aux lieux de vie. Les biographies du document 7 permettent ensuite de distinguer un renoncement choisi à l’avance et une perte de capacité imposée.
+
+Les conduites reconnues comme celles d’un âge se lisent aussi à travers l’histoire des générations. Confronter le vote systématique du document 5 aux répertoires de protestation du document 6 rend visible un choix de définition : celui qui ne regarde que le vote décrit trop vite un retrait des jeunes ou un monopole politique des plus âgés.
+
+## Lecture des pièces du dossier
+
 ### Une catégorie dont le poids démographique varie
 
 Document 1, p. 2. Les aires empilées de l’Insee décomposent la population en quatre classes d’âge. En 1901, 10,2 % ont de 60 à 75 ans et 2,5 % 75 ans et plus. En 2018, les parts correspondantes sont 16,6 % et 9,3 %, près de 26 % ensemble contre près de 13 % autrefois. La surface des moins de vingt ans passe de 34,3 % à 24,1 %. La partie prolongée après le repère de 2018 est une projection centrale et dépend de ses hypothèses. Ce changement de structure ne détermine pas à lui seul l’âge auquel une personne se sent vieille.

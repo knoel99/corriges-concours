@@ -10,6 +10,16 @@
 
 Que reste-t-il de commun entre un agent territorial de catégorie C et une cadre hospitalière mobilisée le dimanche ? Le statut public définit un employeur et des règles. Il laisse varier la position hiérarchique, la trajectoire et le travail concret. On peut partir des modes de recrutement, puis suivre la manière dont le service distribue les horaires, les contraintes et les chances de carrière.
 
+## Cheminement de l’exposé
+
+Les règles d’entrée distribuent des positions. Rapprocher les documents 1, 2 et 5 : des concours ouverts à des diplômés de niveaux différents et des contrats temporaires alimentent des versants aux catégories très dissemblables. Le premier emploi public et l’accès à une carrière stable sont deux étapes distinctes.
+
+Les positions décident du contenu du travail. L’emploi hospitalier, très féminisé au document 1, associe permanence des soins le week-end (document 4) et port de charges (document 6). Dans l’enquête sur les conditions de travail, rapprocher ouvriers et cadres montre pourquoi la comparaison moyenne entre public et privé est insuffisante.
+
+Des institutions communes peuvent reproduire des hiérarchies. À qualification comparable il resterait à étudier les accès aux promotions et aux postes géographiquement mobiles. Les écarts de féminisation aux sommets (document 3) et de positions des métropolitains et ultramarins (document 7) situent les lieux où mener l’enquête.
+
+## Lecture des pièces du dossier
+
 ### Trois fonctions publiques, plusieurs hiérarchies
 
 Document 1, p. 2. Le tableau de l’Insee décrit la composition de chaque versant en 2021. Dans l’ensemble, 66 % des agents sont fonctionnaires et 21,5 % contractuels. L’État compte 55,2 % d’agents de catégorie A, la territoriale 74,7 % de catégorie C. L’hospitalière est féminine à 78,1 %, contre 57,4 % à l’État. Ces écarts mettent en jeu les métiers effectivement assurés. Le niveau de recrutement des enseignants, par exemple, contribue à la composition du versant d’État. Les lignes du sexe, du statut et de la catégorie décrivent des propriétés qui se croisent.

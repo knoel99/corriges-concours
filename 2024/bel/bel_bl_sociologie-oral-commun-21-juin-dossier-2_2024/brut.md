@@ -10,6 +10,16 @@
 
 Dormir répond à un besoin biologique mais impose aussi de libérer une partie de la journée, d’accorder ses horaires avec d’autres et de disposer de conditions permettant de se reposer. Les documents distinguent la durée passée à dormir, l’horaire du coucher, le sommeil partagé, la sieste et les difficultés déclarées.
 
+## Cheminement de l’exposé
+
+Décrire les rythmes suppose de distinguer les mesures : les heures totales en journée travaillée ou non (document 1), le moment du coucher (document 3) et la durée non partagée au sein du couple (document 4). La même quantité de sommeil peut être située différemment dans l’horaire collectif.
+
+La famille et le métier répartissent les ajustements. Le profil des femmes et des hommes selon le nombre d’enfants (document 2) et le décalage des couples ouvriers (document 4) renvoient à des contraintes domestiques et professionnelles qui s’emboîtent. Après la retraite, l’ancienne profession continue de différencier la sieste (document 5).
+
+Enfin, un repos long n’est pas forcément un sommeil réparateur : l’état de santé est associé à la sieste (document 5), la situation financière à l’insomnie (document 6). Le document 7 rappelle que l’idée d’une durée continue, vécue la nuit d’un seul tenant, a elle-même une histoire.
+
+## Lecture des pièces du dossier
+
 ### Le temps de sommeil change avec la journée et le métier
 
 Document 1, p. 2. Capucine Rauch présente des durées estimées à caractéristiques contrôlées, avec intervalles de confiance à 95 %. Les jours travaillés, les cadres et professions intellectuelles supérieures dorment autour de 7 h 47, contre environ 8 h 15 chez les agriculteurs, artisans et commerçants. Chez les ouvriers, le point monte d’un peu moins de 8 h en journée travaillée à environ 9 h 35 en journée non travaillée, soit près de 1 h 40 d’écart. Il s’agit d’un contraste ajusté entre types de journées. Il ne démontre pas à lui seul une dette de sommeil biologique.
