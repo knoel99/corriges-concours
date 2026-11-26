@@ -1,0 +1,232 @@
+{
+  "slug": "x_p-prime_premiere-composition-de-mathematiques_1993",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "P prime",
+    "annee": 1993,
+    "matiere": "Première composition de mathématiques",
+    "modalite": "écrit"
+  },
+  "intitule": "Première composition de mathématiques · option P′",
+  "duree_heures": 4,
+  "questions": 22,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-0f1cf13ecf7ab7862891",
+    "sujet_sha256": "17d50f059917bd17b92cfe119083638e315cbb0302686f33e6e2db29be3b6bb4",
+    "second_exemplaire": "https://www.sujetsetcorriges.fr/dl/X/Maths/PC/sec-x-1993-maths1-PC.pdf",
+    "second_exemplaire_sha256": "acfdaa851751f9babba15a67f39b06ed10140c8c45b13ea166c2defb03f03394",
+    "notice_ups": "m93xp1",
+    "instruction_officielle": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000345466",
+    "precisions": "Empreintes différentes des fichiers, rendus identiques page par page à 72 points par pouce. La reproduction distingue les feuillets et le rang de chaque composition."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-0f1cf13ecf7ab7862891",
+      "sha256": "17d50f059917bd17b92cfe119083638e315cbb0302686f33e6e2db29be3b6bb4",
+      "pages": 3,
+      "rendu_page_sha256": [
+        "b15e82deddd33099bf5ba617706a139b5e749470ace141a1aebd3f44a98bae56",
+        "22b11617607ccbc57859ac32c48cdd40ded813a039bc4622209146a72eebf66e",
+        "b9b696346944b3f270c680e95365a751d06f29e4c37baf488f04bb9e20384374"
+      ]
+    },
+    "second": {
+      "url": "https://www.sujetsetcorriges.fr/dl/X/Maths/PC/sec-x-1993-maths1-PC.pdf",
+      "sha256": "acfdaa851751f9babba15a67f39b06ed10140c8c45b13ea166c2defb03f03394",
+      "pages": 3,
+      "rendu_page_sha256": [
+        "b15e82deddd33099bf5ba617706a139b5e749470ace141a1aebd3f44a98bae56",
+        "22b11617607ccbc57859ac32c48cdd40ded813a039bc4622209146a72eebf66e",
+        "b9b696346944b3f270c680e95365a751d06f29e4c37baf488f04bb9e20384374"
+      ]
+    }
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "3",
+      "fichier": "figures/modes-periodiques.svg",
+      "legende": "Fréquences périodiques. Pour T = 4 et λ = 4/π, les modes d’indices −1 et 1 s’ajoutent au mode constant."
+    },
+    {
+      "numero": 2,
+      "question": "8.e",
+      "fichier": "figures/branche-complexe.svg",
+      "legende": "Une branche d’exposants complexes. La quantité positive représentée grandit sans borne vers la gauche lorsque b tend vers π par valeurs supérieures."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "x_maths_b_anciennes",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Rédaction de la totalité des 22 réponses, des indications et des deux figures propres à cette composition."
+    },
+    {
+      "phase": "revision",
+      "session": "x_maths_b_anciennes",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Vérification des translations et des coefficients de Fourier, construction du contre-exemple optimal pour 4.a, calcul télescopique pour les fonctions complexes, cas de la dérivée d’ordre zéro, limite de la branche complexe et obtention de β inclus."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.a",
+      "1.b",
+      "1.c",
+      "2",
+      "3",
+      "4.a",
+      "4.b",
+      "5.a",
+      "5.b",
+      "5.c",
+      "6.a",
+      "6.b",
+      "6.c",
+      "6.d",
+      "6.e",
+      "6.f",
+      "7",
+      "8.a",
+      "8.b",
+      "8.c",
+      "8.d",
+      "8.e"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1.a",
+        "page_pdf": 1,
+        "page_imprimee": 123
+      },
+      {
+        "question": "1.b",
+        "page_pdf": 1,
+        "page_imprimee": 123
+      },
+      {
+        "question": "1.c",
+        "page_pdf": 1,
+        "page_imprimee": 123
+      },
+      {
+        "question": "2",
+        "page_pdf": 1,
+        "page_imprimee": 123
+      },
+      {
+        "question": "3",
+        "page_pdf": 1,
+        "page_imprimee": 123
+      },
+      {
+        "question": "4.a",
+        "page_pdf": 2,
+        "page_imprimee": 124
+      },
+      {
+        "question": "4.b",
+        "page_pdf": 2,
+        "page_imprimee": 124
+      },
+      {
+        "question": "5.a",
+        "page_pdf": 2,
+        "page_imprimee": 124
+      },
+      {
+        "question": "5.b",
+        "page_pdf": 2,
+        "page_imprimee": 124
+      },
+      {
+        "question": "5.c",
+        "page_pdf": 2,
+        "page_imprimee": 124
+      },
+      {
+        "question": "6.a",
+        "page_pdf": 2,
+        "page_imprimee": 124
+      },
+      {
+        "question": "6.b",
+        "page_pdf": 2,
+        "page_imprimee": 124
+      },
+      {
+        "question": "6.c",
+        "page_pdf": 2,
+        "page_imprimee": 124
+      },
+      {
+        "question": "6.d",
+        "page_pdf": 2,
+        "page_imprimee": 124
+      },
+      {
+        "question": "6.e",
+        "page_pdf": 2,
+        "page_imprimee": 124
+      },
+      {
+        "question": "6.f",
+        "page_pdf": 2,
+        "page_imprimee": 124
+      },
+      {
+        "question": "7",
+        "page_pdf": 2,
+        "page_imprimee": 124
+      },
+      {
+        "question": "8.a",
+        "page_pdf": 3,
+        "page_imprimee": 125
+      },
+      {
+        "question": "8.b",
+        "page_pdf": 3,
+        "page_imprimee": 125
+      },
+      {
+        "question": "8.c",
+        "page_pdf": 3,
+        "page_imprimee": 125
+      },
+      {
+        "question": "8.d",
+        "page_pdf": 3,
+        "page_imprimee": 125
+      },
+      {
+        "question": "8.e",
+        "page_pdf": 3,
+        "page_imprimee": 125
+      }
+    ]
+  }
+}
