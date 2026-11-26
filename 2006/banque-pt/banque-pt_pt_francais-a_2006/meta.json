@@ -1,0 +1,76 @@
+{
+  "slug": "banque-pt_pt_francais-a_2006",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français A",
+    "annee": 2006
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2006/francais_a_2006.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_fra_ecrit_2006.pdf",
+    "programme_officiel": "https://www.education.gouv.fr/bo/2005/29/MENS0501372A.htm",
+    "notice": "https://www.banquept.fr/documents/livret/2006/Livret_Rose_2006_1_2.pdf#page=12",
+    "sujet_sha256": "10e5178f30f79b49a054851c894277baa445e004721b9b9f7b6a19b1a9b39613",
+    "rapport_jury_sha256": "9ce62e8260d1adb5accb8dacabb7439797992bc0c22294f4e00eeb602c8f14d9",
+    "programme_officiel_sha256": "9a79aab7198b6e5813134fb94a65b7820aa69517999748c75645d3210f0b46cc",
+    "notice_sha256": "5681be4b094f21d516a26f35fbc4958f52e9de82e5f9ad4eb9d2ecb0c2709269",
+    "oeuvres_au_programme": [
+      "Sénèque, La Vie heureuse et De la brièveté de la vie (traduction de François Rosso)",
+      "Anton Tchékhov, Oncle Vania (traduction d’André Markowicz et Françoise Morvan)",
+      "J. M. G. Le Clézio, Le Chercheur d’or"
+    ],
+    "theme": "La recherche du bonheur",
+    "admissibilite_admission": "École polytechnique, admissibilité, coefficient 4",
+    "pages_rapport": "Rapport officiel commun de 12 pages. Français A occupe les pages PDF 1 à 6. Analyse de l’impossibilité posée comme essence et de la propagation du malheur particulièrement page 3."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "D’un malheur subi à une conduite envers autrui"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture du sujet, de la rubrique Français A du rapport et de l’arrêté. Dissertation sur les deux propositions indépendantes, la voix romanesque citée et la prétention à l’impartialité."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 1,
+        "perimetre": "Votre lecture des œuvres au programme (ou d’autres ouvrages consacrés à la recherche du bonheur) confirme ou infirme-t-elle un propos aussi péremptoire ?",
+        "points": 20
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}
