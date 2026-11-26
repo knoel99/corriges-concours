@@ -2,7 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 Le premier problème décrit des solutions polynomiales d’une équation aux dérivées partielles. Les deux suivants relient la sommation de Cesàro, la limite d’Abel et la convergence d’une série lorsque ses termes sont dominés par une constante divisée par leur rang.
 
@@ -27,6 +29,8 @@ On a $\partial_x\partial_y=\partial_u^2-\partial_v^2$. Pour $f=e^uS$, l’équat
 ### Question I.3
 
 Écrivons $R_n=\lambda_0Q_0$ avec $\lambda_0\ne0$. Si $R_{n-j}=\sum_{h=0}^{j}\lambda_hQ_{j-h}$, alors $\sum_{h=0}^{j}\lambda_hQ_{j+1-h}$ est une solution particulière de $(D^2+2D)R_{n-j-1}=R_{n-j}$. Toutes les autres s’en déduisent par ajout d’une constante $\lambda_{j+1}Q_0$. La récurrence donne exactement les lignes de la matrice triangulaire $T$, chaque sous-diagonale étant constante. Réciproquement, ces combinaisons vérifient chaque équation, et $\lambda_0\ne0$ assure $R_n\ne0$.
+
+Si les lignes et les colonnes sont numérotées à partir de zéro, la ligne $j$ représente $R_{n-j}$ dans l’ordre $Q_0,\ldots,Q_n$. Ainsi $T_{jh}=\lambda_{j-h}$ pour $0\le h\le j$ et $T_{jh}=0$ pour $h>j$. Les $\lambda_j$ sont uniques car les $Q_h$, de degrés distincts $h$, sont linéairement indépendants.
 
 ## II. Sommation de Cesàro et limite d’Abel
 
@@ -93,5 +97,7 @@ Les termes en $n=0$ des différences sont nuls. Pour $n\ge1$, chaque écart entr
 ### Question III.4
 
 Par III.1.a et $P_i(1)=1$, les sommes avec $P_i(x^n)$ tendent vers $\ell$. Les deux bornes de III.3.c imposent pour $\sum a_n\chi(x^n)$ une limite supérieure au plus $\ell+(A+1)\varepsilon$ et une limite inférieure au moins $\ell-(A+1)\varepsilon$. Faire $\varepsilon\downarrow0$ donne la limite $\ell$. Prenons $x_N=2^{-1/N}$ pour $N\ge1$. Alors $x_N^n\ge1/2$ exactement pour $n\le N$, et $x_N\to1$. Donc $\sum_{n=0}^Na_n\to\ell$, ce qui prouve la convergence ordinaire.
+
+L’argument reste valable pour des $a_n$ de signes différents. C’est le module de la différence des deux sommes qui tend à être petit en III.3.c, et non un ordre terme à terme entre les sommes pondérées. Les polynômes utilisés ici s’annulent en zéro, de sorte que III.1.a suffit jusqu’à l’obtention de la convergence ordinaire.
 
 ![Figure 1 — Pour N = 8, les puissances sont au-dessus du seuil 1/2, ou sur ce seuil, exactement jusqu’au rang 8. L’indicatrice sélectionne la somme partielle voulue.](figures/seuil-et-somme-partielle.svg)
