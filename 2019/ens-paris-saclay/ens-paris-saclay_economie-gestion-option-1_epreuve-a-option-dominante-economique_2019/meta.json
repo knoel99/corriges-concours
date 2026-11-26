@@ -1,0 +1,76 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_epreuve-a-option-dominante-economique_2019",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Épreuve à option — dominante économique",
+    "annee": 2019,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "Dans quelle mesure peut-on dire que les politiques industrielles françaises, et plus généralement européennes, ont été un succès depuis 1945 ?",
+  "gabarit": "dissertation",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2019_Sujets_Ecrits_D2_Epreuve_Option.pdf#page=3",
+    "index": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=289&field_year_target_id%5B%5D=263&page=1",
+    "pages_sujet": "3",
+    "sujet_sha256": "363da0d66c6a283e17ed8598f6f19b7f539daf938950fef3a2974c597a7267f7",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2019_Sujets_Ecrits_D2_Epreuve_Option.pdf",
+        "pages": 15,
+        "sha256": "363da0d66c6a283e17ed8598f6f19b7f539daf938950fef3a2974c597a7267f7"
+      },
+      {
+        "role": "rapport-eco",
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2019_Rapport_Ecrits_D2_Option_economique.pdf",
+        "pages": 3,
+        "sha256": "943b60b0521630faefa1d32cf30894dab085c763f816f36b13346f7fbedc3168"
+      },
+      {
+        "role": "sujet-index",
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2019_%20D2-1_Sujet_Ecrit_Option_eco_gestion.pdf",
+        "pages": 8,
+        "sha256": "35a9690713510ea743acf443d7f9fe1086546123b064f1c89e2881291851bf3c"
+      }
+    ],
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2019_Rapport_Ecrits_D2_Option_economique.pdf",
+    "rapport_sha256": "943b60b0521630faefa1d32cf30894dab085c763f816f36b13346f7fbedc3168"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/comparaison.svg",
+      "question": "Dissertation",
+      "legende": "À coût fixe de 120 et coût variable unitaire de 2, doubler la production ramène le coût moyen de 6 à 4."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "inventaire_livraisons_26",
+      "agent": "inventaire_livraisons_26",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Dissertation comparative sur la reconstruction, la sélection des filières et leur adaptation à l'ouverture. Exemple calculé d'économie d'échelle et comparaison des objectifs."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "limites": "La page 3 du cahier porte l’unique question d’économie. Le rapport du jury, pages 2 et 3, recommande la comparaison des pays, l’analyse du rattrapage et celle des rapports entre politique industrielle et concurrence. L’exemple de coût unitaire est construit pour la démonstration. L’horizon principal va de la reconstruction à la crise de 2008."
+  }
+}
