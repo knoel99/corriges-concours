@@ -1,0 +1,60 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_etudes-politiques-achin-et-la-feminisation-du-metier-de-depute-oral_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Études politiques — Achin et la féminisation du métier de député (oral)",
+    "annee": 2018,
+    "modalite": "oral"
+  },
+  "intitule": "Études politiques — Achin et la féminisation du métier de député (oral)",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/ORAL-Et.politiques2018-1.pdf",
+    "sha256_sujet": "a021b1ddbdecda6be99794bda0bf16e210294736916eb21a315f75f8f8c3e875",
+    "pages_sujet": 2,
+    "bornes_extrait": "P. 1 : question initiale sur les modes d’exercice de la profession et le genre ; p. 2 : constat sur les commissions du premier mandat, de 1945 à 2000, achevé par « Jeunesse et Sport ». La déclaration d’O. se poursuit d’une page sur l’autre.",
+    "contenu_document": "Une seule consigne, commenter l’extrait. Référence de l’article en tête, pas de tableau chiffré ni de note ou d’annexe. Les relances du guide sont proposées par la rédaction.",
+    "article": "Catherine Achin, « Un “métier d’hommes” ? Les représentations du métier de député à l’épreuve de sa féminisation », Revue française de science politique, vol. 55, n° 3, 2005, p. 477–499 (pagination de l’article).",
+    "index_officiel": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2018-lettres",
+    "etat_rapport": "La rubrique orale de la session 2018 renvoie aux sujets 1 et 2 d’études politiques. L’index propose par ailleurs une note générale sur la sélection, sans rapport propre à ces deux sujets."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire de l’extrait d’Achin sur la féminisation et l’attribution des commissions parlementaires."
+    ],
+    "elements_verifies": [
+      "P. 1 : indicateur proposé, intérêt de la circonscription, préférences, critères du groupe, contraintes de places et reconnaissance des compétences.",
+      "P. 1–2 : trois types de discours distingués des trois personnes citées ; K. pour le premier, O. et L. pour le deuxième, placement sans choix pour le troisième. Récits, ressources et issues confrontés.",
+      "P. 2 : dernier résultat circonscrit au premier mandat des élues entre 1945 et 2000 ; distinction entre composition, distribution et effet causal, discussion de preuves complémentaires."
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/demande-et-affectation.svg",
+      "question": "Commentaire",
+      "legende": "Comment une demande devient-elle une affectation ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "classiques_2017",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Lecture des deux feuillets, rédaction et contrôle du commentaire et d’un guide autonome d’argumentation. Vérification de la typologie des discours, des carrières, des bornes du résultat final, du schéma et des relances."
+    }
+  ]
+}
