@@ -1,0 +1,137 @@
+{
+  "slug": "bel_al_version-grecque-lyon_2023",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Version grecque (Lyon)",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "duree_heures": 3,
+  "duree_sources": {
+    "feuillet_heures": 3,
+    "rapport_heures": 4
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2023-09/Epreuve-de-specialite.pdf#page=4",
+    "sujet_sha256": "d646a518fbe4febf8a67e582f0310174ed455fa1f7d2c93d37f450a6420673a2",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2023-11/Grec-2023.pdf#page=2",
+    "rapport_jury_sha256": "e7e9e3a76ce240af5be58105bdba81c5de6590311309e664846b66bd2c9af0ea",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2023",
+    "ouvrage": "Lysias, *Oraison funèbre*.",
+    "pages_rapport_verifiees": [
+      2,
+      3,
+      4
+    ]
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2023-09/Epreuve-de-specialite.pdf#page=4",
+      "sha256": "d646a518fbe4febf8a67e582f0310174ed455fa1f7d2c93d37f450a6420673a2",
+      "pages": 20,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "d637c9f152c00d67d0ac53df6ca1a8afc6acd94775b42bc8aa249b7f1b2e0dc5"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "23197e3feb5af29cc10d3ecdefd9d1216be3f6253cf9bb7010d639a60bd3b7bd"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "650d1b917e8bf9f9cffb436c7c19b301d8bb45d94ae906a748fd71f627cea316"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2023-11/Grec-2023.pdf#page=2",
+      "sha256": "e7e9e3a76ce240af5be58105bdba81c5de6590311309e664846b66bd2c9af0ea",
+      "pages": 10,
+      "pages_verifiees": [
+        {
+          "numero": 2,
+          "rendu_sha256": "eb83f2c75a6bcf47e2cbb8378ff87ca8219c080788b4dee2d300186f7523f03c"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "3c3e27ec78ed3783ef31070fe9832bd17bd1a82201cecca4d9d5ee308183a7c7"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "9eb4da414c9f63d4545000a8a95d0069af2131402e7434e9c7a64c5d3467010d"
+        }
+      ]
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "bel_al_grec_specialite_2023_2025",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Traduction française de tout l’extrait grec, explication des difficultés et schéma."
+    },
+    {
+      "phase": "revision",
+      "session": "bel_al_grec_specialite_2023_2025",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle des constructions et des notes sur le feuillet, du rapport du jury (pages 2 à 4), des formes grecques et de la présence de toute la version dans chaque édition."
+    }
+  ],
+  "figures": [
+    {
+      "question": "Version française",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "Aux deux hypothèses des généraux perses répond le choix des Athéniens de secourir eux-mêmes les autres Grecs."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Lysias, *Oraison funèbre*."
+    ],
+    "note": "Œuvre grecque antique. Traduction française et commentaires pédagogiques originaux."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Version française",
+        "pages_pdf": [
+          4
+        ],
+        "debut": "Ὁ γὰρ τῆς Ἀσίας βασιλεύς",
+        "fin": "τοὺς ἄλλους Ἕλληνας.",
+        "notes_du_sujet": 1
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}
