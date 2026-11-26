@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150mm" height="88mm" viewBox="0 0 440 258" font-family="DejaVu Sans, sans-serif"><title>Contour d’Ampère suivant la branche droite du flux utile</title><defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="3.7" markerHeight="3.7" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#007366"/></marker></defs>
+<circle cx="133" cy="127" r="112" fill="#d9e6ed" stroke="#334454" stroke-width="1"/>
+<circle cx="133" cy="127" r="85" fill="white" stroke="#334454" stroke-width="1"/>
+<path d="M115.33 43.86A85 85 0 0 1 150.67 43.86L146.31 64.40A64 64 0 0 0 119.69 64.40Z" fill="#d9e6ed" stroke="#334454" stroke-width="1" stroke-linejoin="round"/>
+<path d="M196.17 70.12A85 85 0 0 1 213.84 100.73L193.87 107.22A64 64 0 0 0 180.56 84.18Z" fill="#d9e6ed" stroke="#334454" stroke-width="1" stroke-linejoin="round"/>
+<path d="M213.84 153.27A85 85 0 0 1 196.17 183.88L180.56 169.82A64 64 0 0 0 193.87 146.78Z" fill="#d9e6ed" stroke="#334454" stroke-width="1" stroke-linejoin="round"/>
+<path d="M150.67 210.14A85 85 0 0 1 115.33 210.14L119.69 189.60A64 64 0 0 0 146.31 189.60Z" fill="#d9e6ed" stroke="#334454" stroke-width="1" stroke-linejoin="round"/>
+<path d="M69.83 183.88A85 85 0 0 1 52.16 153.27L72.13 146.78A64 64 0 0 0 85.44 169.82Z" fill="#d9e6ed" stroke="#334454" stroke-width="1" stroke-linejoin="round"/>
+<path d="M52.16 100.73A85 85 0 0 1 69.83 70.12L85.44 84.18A64 64 0 0 0 72.13 107.22Z" fill="#d9e6ed" stroke="#334454" stroke-width="1" stroke-linejoin="round"/>
+<circle cx="133" cy="127" r="45" fill="#e6e7ee" stroke="#334454" stroke-width="1"/>
+<circle cx="133" cy="127" r="20" fill="white" stroke="#334454" stroke-width="1"/>
+<path d="M117.29 72.21A57 57 0 0 1 148.71 72.21L145.40 83.74A45 45 0 0 0 120.60 83.74Z" fill="#edbd8b" stroke="#334454" stroke-width="1" stroke-linejoin="round"/>
+<path d="M148.71 181.79A57 57 0 0 1 117.29 181.79L120.60 170.26A45 45 0 0 0 145.40 170.26Z" fill="#edbd8b" stroke="#334454" stroke-width="1" stroke-linejoin="round"/>
+<path d="M138 26A101 101 0 0 1 239 127" fill="none" stroke="#007366" stroke-width="2.8" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M239 127A101 101 0 0 1 138 228" fill="none" stroke="#007366" stroke-width="2.8" stroke-linejoin="round"/>
+<path d="M138 228V192" fill="none" stroke="#007366" stroke-width="2.8" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M138 192V167" fill="none" stroke="#007366" stroke-width="2.8" stroke-linejoin="round"/>
+<path d="M138 167A33 40 0 0 0 171 127" fill="none" stroke="#007366" stroke-width="2.8" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M171 127A33 40 0 0 0 138 87" fill="none" stroke="#007366" stroke-width="2.8" stroke-linejoin="round"/>
+<path d="M138 87V57" fill="none" stroke="#007366" stroke-width="2.8" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M138 57V26" fill="none" stroke="#007366" stroke-width="2.8" stroke-linejoin="round"/>
+<text x="266" y="33" font-size="16" fill="#23323c" font-weight="bold">Circuit utile</text>
+<path d="M267 51H294" fill="none" stroke="#007366" stroke-width="2.8" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="300" y="56" font-size="12" fill="#23323c">Sens du parcours</text>
+<path d="M267 74h18v12h-18Z" fill="#d9e6ed" stroke="#334454" stroke-width="1" stroke-linejoin="round"/>
+<text x="294" y="85" font-size="13" fill="#23323c">Fer du stator</text>
+<path d="M267 102h18v12h-18Z" fill="#edbd8b" stroke="#334454" stroke-width="1" stroke-linejoin="round"/>
+<text x="294" y="113" font-size="13" fill="#23323c">Aimants</text>
+<path d="M267 130h18v12h-18Z" fill="#e6e7ee" stroke="#334454" stroke-width="1" stroke-linejoin="round"/>
+<text x="294" y="141" font-size="13" fill="#23323c">Fer du rotor</text>
+<path d="M245 164H198L148 66" fill="none" stroke="#556574" stroke-width="0.9" stroke-linejoin="round"/>
+<text x="250" y="169" font-size="12" fill="#23323c">Entrefer supérieur</text>
+<path d="M244 197H184L148 188" fill="none" stroke="#556574" stroke-width="0.9" stroke-linejoin="round"/>
+<text x="250" y="202" font-size="12" fill="#23323c">Entrefer inférieur</text>
+<text x="268" y="231" font-size="11" fill="#23323c">Coupe de principe</text>
+<text x="268" y="246" font-size="11" fill="#23323c">Espacements amplifiés</text>
+</svg>
