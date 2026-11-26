@@ -4,6 +4,10 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+La garde porte les noms des Écoles normales supérieures et de l’École polytechnique. Épreuve n° 1 de la filière PSI, lundi 15 avril 2024 de 8 h à 12 h. Les pages 3 et 4 fixent les notations du problème. Les pages 5 à 9 développent quatre parties. Le rapport Saclay commente explicitement la question 7 neutralisée. [Sujet officiel](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2024_PSI_Maths_XUSR.pdf) · [Rapport du jury](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2024_Rapport_PSI_Maths_ECRIT.pdf)
+
 Dans tout le sujet, u désigne la suite des coefficients de la série entière de somme U. La fonction de matrice u(A) est définie à la question 13 par interpolation.
 
 ## I · Matrices compatibles avec une série entière
@@ -62,6 +66,8 @@ Une série entière et sa série dérivée terme à terme ont le même rayon. En
 
 Pour $|z|<\min(R_u,R_v)$, les deux séries convergent absolument. Leur somme et leur produit de Cauchy sont donc absolument convergents, avec pour coefficients $u+v$ et $u\star v$. Les deux rayons correspondants sont au moins $\min(R_u,R_v)$. Si $A$ appartient aux deux ensembles de gauche, $\varrho(A)$ est strictement plus petit que ce minimum, d’où les deux compatibilités voulues.
 
+Une égalité des rayons est impossible à garantir. Prenons $u_k=1$ et $v_k=-1$ pour tout $k$. Les deux rayons valent un alors que $u+v$ est la suite nulle, de rayon infini. Ce sont bien des inclusions qui survivent à d’éventuelles annulations de coefficients.
+
 ### Question 7
 
 > [!INDICATION]
@@ -72,6 +78,8 @@ Pour $|z|<\min(R_u,R_v)$, les deux séries convergent absolument. Leur somme et 
 Le rapport précise que le mot « réelles » manquait et que le jury a neutralisé la question. Dans le cas réel symétrique prévu, les espaces propres de $A$ sont stables par $B$ puisque $AB=BA$. La restriction de $B$ à chacun est symétrique. Le théorème spectral donne ainsi une base commune, et les valeurs propres de $AB$ sont des produits $a_jb_j$ avec $|a_j|,|b_j|<R_u$. D’où $\varrho(AB)<R_u^2\le R_u$.
 
 Le résultat imprimé reste valable sur $\mathbb C$, où la symétrie seule ne garantit pas la diagonalisation. Deux matrices complexes commutantes se triangularisent simultanément. En effet, un espace propre de $A$ est non nul et stable sous $B$, donc contient un vecteur propre de $B$. La droite commune est stable et les endomorphismes induits sur le quotient commutent. Une récurrence sur la dimension, en relevant une base triangularisante du quotient, donne une base triangulaire commune. Les éléments diagonaux du produit sont encore les $a_jb_j$. La même majoration conclut.
+
+Pour voir où intervient l’hypothèse réelle dans la première preuve, la matrice complexe symétrique $N=\left(\begin{smallmatrix}1&i\\i&-1\end{smallmatrix}\right)$ est non nulle et son carré est nul. Elle ne peut donc pas avoir une base propre. Dans la seconde preuve, seule la commutation intervient. Sur les diagonales triangulaires, $\max_j|a_jb_j|\le(\max_j|a_j|)(\max_j|b_j|)<R_u^2$ puisque $R_u>0$. Cela inclut la valeur extrême $R_u=1$.
 
 ## II · Polynôme minimal et interpolation
 
@@ -131,6 +139,8 @@ L’application $T$ est linéaire. Si $P\in\ker T$, chaque $\lambda_i$ est racin
 
 ![Figure 1 — Avec deux conditions en 0 et une en 1, le polynôme quadratique d’Hermite partage une tangente et un second point avec l’exponentielle.](figures/13-hermite.svg)
 
+Dans la première figure, pour les nœuds $0$ de multiplicité deux et $1$ de multiplicité un, les trois conditions sont $Q(0)=1$, $Q'(0)=1$ et $Q(1)=e$. Elles déterminent $Q(X)=1+X+(e-2)X^2$. Un deuxième polynôme quadratique ayant les mêmes données aurait une différence divisible par $X^2(X-1)$, donc nulle.
+
 ### Question 14
 
 > [!INDICATION]
@@ -167,6 +177,8 @@ $$u(A)=\begin{pmatrix}U(\alpha)&\gamma\,\dfrac{U(\alpha)-U(\beta)}{\alpha-\beta}
 #### Solution
 
 Pour toute valeur propre $\lambda$ de $A$ ou $B$, prenons la multiplicité maximale de $\lambda$ dans leurs deux polynômes minimaux, la multiplicité absente étant nulle. Sur la réunion des nœuds, imposons à $R$ les dérivées de $U$ jusqu’à cet ordre moins un. La preuve de 13, appliquée à ces nœuds distincts et à ces multiplicités, assure l’existence de $R$. Il satisfait simultanément les conditions de 14 pour les deux matrices.
+
+Par exemple, les deux minimaux $(X-a)^2(X-b)$ et $(X-a)(X-b)^3$, avec $a\ne b$, demandent deux conditions en $a$ et trois en $b$. Le représentant commun a degré au plus quatre. Le même calcul explique l’emploi du maximum des multiplicités lorsque les matrices partagent une valeur propre.
 
 ### Question 17b
 
@@ -216,6 +228,8 @@ On a $Q_k^A(\lambda_j)=\delta_{kj}$, y compris si le produit est vide pour $\ell
 #### Solution
 
 Sur $E_j=\ker(A-\lambda_jI_n)$, $Q_k^A(A)$ agit par le scalaire $\delta_{kj}$. La décomposition directe de l’espace en $E_j$ montre que cet opérateur est le projecteur sur $E_k$ parallèlement à $\bigoplus_{j\ne k}E_j$. Ce sont respectivement son image et son noyau.
+
+Si $E_k$ est le seul espace propre, le produit vide donne $Q_k^A=1$. Plus généralement, par calcul sur chaque $E_j$, les opérateurs $P_k=Q_k^A(A)$ vérifient $P_k^2=P_k$ et $P_kP_h=0$ pour $k\ne h$. Ces identités confirment la description du noyau même si les sous-espaces propres ne sont pas orthogonaux.
 
 ### Question 20c
 
@@ -275,6 +289,10 @@ Pour $A=H+\alpha I_n$, le même argument appliqué à $A-\alpha I_n$ donne $\phi
 $$u(A)=\sum_{k=0}^{n-1}\frac{U^{(k)}(\alpha)}{k!}H^k.$$
 La matrice $H^k$ a des uns sur la $k$-ième surdiagonale et zéro ailleurs. Donc $[u(A)]_{ij}=U^{(j-i)}(\alpha)/(j-i)!$ si $j\ge i$, et zéro si $j<i$. Cela donne toutes les entrées de la matrice triangulaire demandée.
 
+Pour lire les surdiagonales sans recourir à une somme de matrices, on a $H^k e_j=e_{j-k}$ si $j>k$, et zéro pour $j\le k$. Un unique terme du polynôme de Taylor contribue donc à la case $(i,j)$ lorsque $i\le j$. L’exemple suivant prend $n=4$, $\alpha=0$ et $U(z)=e^z$.
+
+![Pour le décalage de taille quatre, les quatre coefficients de Taylor de l’exponentielle occupent chacun une surdiagonale.](figures/surdiagonales-exponentielle.svg)
+
 ### Question 24a
 
 > [!INDICATION]
@@ -329,6 +347,8 @@ Le polynôme affine $P(X)=U(0)+(U(c)-U(0))X/c$ a les bonnes valeurs en $0$ et $c
 
 Pour $c=0$, $G^2=0$ mais $G\ne0$ par son rang. Son minimal est donc $X^2$. L’interpolation demande la valeur et la dérivée en zéro, ce qui donne $u(G)=U(0)I_n+U'(0)G$.
 
+Le coefficient de $G$ en 24e est le taux d’accroissement de $U$ entre $0$ et $c$. Sa limite est $U'(0)$ quand $c$ tend vers zéro. Le calcul par le minimal $X^2$ démontre directement cette valeur au point de coïncidence et explique la présence d’une donnée de dérivée.
+
 ### Question 25a
 
 > [!INDICATION]
@@ -346,6 +366,8 @@ La matrice $F$ est symétrique, donc $F^*=\overline F$. Le coefficient $(k,j)$ d
 #### Solution
 
 Cette fois $[F^2]_{kj}=\frac1n\sum_{r=0}^{n-1}\omega^{(k+j-2)r}$. Le résultat est un si $k+j-2\equiv0\pmod n$ et zéro sinon. C’est la matrice réelle de la permutation $s\mapsto-s$ dans les indices décalés $s=j-1$ modulo $n$.
+
+Avec l’indexation de l’énoncé, la première colonne de $F^2$ est $e_1$, et, pour $2\le j\le n$, sa colonne $j$ vaut $e_{n+2-j}$. Pour $n$ pair, les points fixes sont les indices $1$ et $1+n/2$. Pour $n$ impair, seul $1$ est fixe.
 
 ### Question 25c
 
@@ -392,3 +414,5 @@ Pour $X\sim\mathcal B(N,p)$, la série génératrice est le polynôme $U(z)=\sum
 $$u(A)=S\operatorname{Diag}\left(\frac{p\lambda_i}{1-q\lambda_i}\right)S^{-1}
 =p(I_n-qA)^{-1}A.$$
 La même diagonalisation justifie l’existence de l’inverse intervenant dans la formule.
+
+Le coefficient d’ordre zéro disparaît car la probabilité du premier succès à l’essai zéro est nulle. En évaluant en $z=1$, on vérifie $p/(1-q)=1$. Sur une valeur propre $\lambda=0$, la formule donne aussi zéro. Enfin $A$ commute avec $I_n-qA$ et avec son inverse, ce qui permet les deux écritures du produit pour chaque $A$ diagonalisable demandé.
