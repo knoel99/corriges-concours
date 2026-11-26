@@ -4,7 +4,7 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 ## Présentation du sujet
 
