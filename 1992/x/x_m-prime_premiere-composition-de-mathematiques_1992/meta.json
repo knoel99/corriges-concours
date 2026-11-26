@@ -1,0 +1,207 @@
+{
+  "slug": "x_m-prime_premiere-composition-de-mathematiques_1992",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "M prime",
+    "filiere_historique": "M′",
+    "matiere": "Première composition de mathématiques",
+    "annee": 1992
+  },
+  "questions": 22,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-6ce99dbf4cf4d8c184da",
+    "sujet_sha256": "f561d03edebd9b092fc4ce6256bb183e8da8b4fbdf428a552159444d1d09b48e",
+    "notice_ups": "m92xm1",
+    "reproduction": "https://www.sujetsetcorriges.fr/dl/X/Maths/MP/sec-x-1992-maths1-MP.pdf",
+    "reproduction_sha256": "0f74c2c5fad520bf71cc429c21b1b482d07b3afa1645600cec1d4d0d6b825de4",
+    "calendrier": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000357550",
+    "rapport_jury": "",
+    "observation_rapport": "Aucun rapport de jury identifié dans les notices et les deux collections consultées.",
+    "provenance": "Les pages de garde du fac-similé portent le nom de l’école, l’option M′, la session 1992, le rang de la composition et sa durée de quatre heures.",
+    "transcription_ups": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-7b558ac8dc0b2b442c72",
+    "transcription_sha256": "75981054c56b027027223d0e0f717baad75fd1b65c141c805f87871fd262f84f",
+    "precision_transcription": "La transcription en deux pages ramène à deux les trois conditions de la partie III et formule 11.a sur R positif. Les références suivies ici sont les trois conditions et les deux intégrales bornées entre 0 et π de la composition imprimée en quatre pages."
+  },
+  "figures": [
+    {
+      "question": "5",
+      "fichier": "figures/limites-des-sommes-de-sinus.svg",
+      "legende": "Pour les coefficients 1/n, chaque somme part de zéro tandis que sa limite intérieure tend vers π/2. Le panneau de droite montre une série uniformément convergente."
+    },
+    {
+      "question": "9",
+      "fichier": "figures/rectangles-au-bord-singulier.svg",
+      "legende": "Les rectangles à droite de largeur 1/5 restent sous le graphe de la fonction positive décroissante, même dans la première maille."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.a",
+      "1.b",
+      "1.c",
+      "2",
+      "3.a",
+      "3.b",
+      "4.a",
+      "4.b",
+      "5",
+      "6.a",
+      "6.b",
+      "7",
+      "8.a",
+      "8.b",
+      "8.c",
+      "8.d",
+      "9",
+      "10.a",
+      "10.b",
+      "11.a",
+      "11.b",
+      "11.c"
+    ],
+    "pages_du_sujet": 4,
+    "pages_pdf_des_questions": {
+      "1.a": 1,
+      "1.b": 1,
+      "1.c": 1,
+      "2": 2,
+      "3.a": 2,
+      "3.b": 2,
+      "4.a": 2,
+      "4.b": 2,
+      "5": 2,
+      "6.a": 3,
+      "6.b": 3,
+      "7": 3,
+      "8.a": 3,
+      "8.b": 3,
+      "8.c": 3,
+      "8.d": 3,
+      "9": 3,
+      "10.a": 4,
+      "10.b": 4,
+      "11.a": 4,
+      "11.b": 4,
+      "11.c": 4
+    },
+    "repere_par_question": [
+      {
+        "question": "1.a",
+        "page_pdf": 1
+      },
+      {
+        "question": "1.b",
+        "page_pdf": 1
+      },
+      {
+        "question": "1.c",
+        "page_pdf": 1
+      },
+      {
+        "question": "2",
+        "page_pdf": 2
+      },
+      {
+        "question": "3.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "3.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "4.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "4.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "5",
+        "page_pdf": 2
+      },
+      {
+        "question": "6.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "6.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "7",
+        "page_pdf": 3
+      },
+      {
+        "question": "8.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "8.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "8.c",
+        "page_pdf": 3
+      },
+      {
+        "question": "8.d",
+        "page_pdf": 3
+      },
+      {
+        "question": "9",
+        "page_pdf": 3,
+        "page_pdf_fin": 4
+      },
+      {
+        "question": "10.a",
+        "page_pdf": 4
+      },
+      {
+        "question": "10.b",
+        "page_pdf": 4
+      },
+      {
+        "question": "11.a",
+        "page_pdf": 4
+      },
+      {
+        "question": "11.b",
+        "page_pdf": 4
+      },
+      {
+        "question": "11.c",
+        "page_pdf": 4
+      }
+    ],
+    "precision": "Numérotation et pages du fac-similé UPS, subdivisions imprimées comprises."
+  },
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Lecture du fac-similé paginé et confrontation au second exemplaire. Rédaction et vérification de 22 réponses et des indications. Bornes d’Abel et critère uniforme, trois conditions de convergence en partie III, hypothèse de signe en 11.b et deux intégrales de 0 à π en 11.a et 11.c."
+    }
+  ]
+}

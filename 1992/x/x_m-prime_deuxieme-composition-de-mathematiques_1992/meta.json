@@ -1,0 +1,197 @@
+{
+  "slug": "x_m-prime_deuxieme-composition-de-mathematiques_1992",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "M prime",
+    "filiere_historique": "M′",
+    "matiere": "Deuxième composition de mathématiques",
+    "annee": 1992
+  },
+  "questions": 21,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-0c16aa1b41e326fbd6c7",
+    "sujet_sha256": "b7aebe7b39a76e0ca981d1932cd82d6f10e3de023d671a9951130d894a2f4526",
+    "notice_ups": "m92xm2",
+    "reproduction": "https://www.sujetsetcorriges.fr/dl/X/Maths/MP/sec-x-1992-maths2-MP.pdf",
+    "reproduction_sha256": "e456c807aefb7d96871be9ece84eae1814406ee0d5389fa8602c28cbac7db292",
+    "calendrier": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000357550",
+    "rapport_jury": "",
+    "observation_rapport": "Aucun rapport de jury identifié dans les notices et les deux collections consultées.",
+    "provenance": "Les pages de garde du fac-similé portent le nom de l’école, l’option M′, la session 1992, le rang de la composition et sa durée de quatre heures."
+  },
+  "figures": [
+    {
+      "question": "13",
+      "fichier": "figures/grands-cercles-et-acceleration.svg",
+      "legende": "Sur cette sphère de dimension deux contenue dans la sphère de dimension trois, le grand cercle a une accélération radiale. Un parallèle de latitude non nulle conserve une composante tangentielle."
+    },
+    {
+      "question": "15",
+      "fichier": "figures/commutateurs-sur-trois-droites.svg",
+      "legende": "Les valeurs propres du premier générateur distinguent trois droites, tandis que les flèches indiquent les coefficients du deuxième générateur entre ces droites."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.a",
+      "1.b",
+      "1.c",
+      "2",
+      "3",
+      "4",
+      "5.a",
+      "5.b",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12.a",
+      "12.b",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17"
+    ],
+    "pages_du_sujet": 3,
+    "pages_pdf_des_questions": {
+      "1.a": 1,
+      "1.b": 1,
+      "1.c": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5.a": 2,
+      "5.b": 2,
+      "6": 2,
+      "7": 2,
+      "8": 2,
+      "9": 2,
+      "10": 2,
+      "11": 3,
+      "12.a": 3,
+      "12.b": 3,
+      "13": 3,
+      "14": 3,
+      "15": 3,
+      "16": 3,
+      "17": 3
+    },
+    "repere_par_question": [
+      {
+        "question": "1.a",
+        "page_pdf": 1
+      },
+      {
+        "question": "1.b",
+        "page_pdf": 1
+      },
+      {
+        "question": "1.c",
+        "page_pdf": 1
+      },
+      {
+        "question": "2",
+        "page_pdf": 1
+      },
+      {
+        "question": "3",
+        "page_pdf": 1
+      },
+      {
+        "question": "4",
+        "page_pdf": 1
+      },
+      {
+        "question": "5.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "5.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "6",
+        "page_pdf": 2
+      },
+      {
+        "question": "7",
+        "page_pdf": 2
+      },
+      {
+        "question": "8",
+        "page_pdf": 2
+      },
+      {
+        "question": "9",
+        "page_pdf": 2
+      },
+      {
+        "question": "10",
+        "page_pdf": 2
+      },
+      {
+        "question": "11",
+        "page_pdf": 3
+      },
+      {
+        "question": "12.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "12.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "13",
+        "page_pdf": 3
+      },
+      {
+        "question": "14",
+        "page_pdf": 3
+      },
+      {
+        "question": "15",
+        "page_pdf": 3
+      },
+      {
+        "question": "16",
+        "page_pdf": 3
+      },
+      {
+        "question": "17",
+        "page_pdf": 3
+      }
+    ],
+    "precision": "Numérotation et pages du fac-similé UPS, subdivisions imprimées comprises."
+  },
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Lecture du fac-similé paginé et confrontation au second exemplaire. Rédaction et vérification de 21 réponses et des indications. Ordre des facteurs dans le flot, projection sans trace, courbes de la sphère unité dans R⁴, trois matrices adjointes de la question 15, irréductibilité complexe."
+    }
+  ]
+}
