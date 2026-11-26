@@ -1,0 +1,61 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_sociologie-classe-race-genre_2023",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Sociologie — classe, race, genre",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "intitule": "« Classe, race, genre ». La fiche 6 de 2023 atteste cet intitulé écrit. Le texte qui le suit est attribué à l’oral de sociologie.",
+  "gabarit": "dissertation",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://web.archive.org/web/20251105050415id_/https://www.ens.psl.eu/sites/default/files/oral-6.pdf",
+    "sujet_sha256": "6eb49c63451d2ff44c84ff421fd8ce40e25c85269ab8d5efb13e8cc4ec905fda",
+    "index": "https://www.ens.psl.eu/une-formation-d-exception/admission-concours/international/concours-selection-internationale-0",
+    "documents": [
+      {
+        "role": "intitulé écrit dans le feuillet d’oral",
+        "url": "https://web.archive.org/web/20251105050415id_/https://www.ens.psl.eu/sites/default/files/oral-6.pdf",
+        "url_ens": "https://www.ens.psl.eu/sites/default/files/oral-6.pdf",
+        "sha256": "6eb49c63451d2ff44c84ff421fd8ce40e25c85269ab8d5efb13e8cc4ec905fda",
+        "pages": 2
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "question": "Composition",
+      "legende": "Trois lieux où l’articulation entre classe, racialisation et genre peut être observée dans le travail."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Dissertation sociologique sur les mécanismes, le droit antidiscriminatoire, le service domestique et les méthodes d’enquête."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Composition"
+    ],
+    "limites": "La fiche 6, classée par l’ENS parmi les oraux de 2023, désigne explicitement cet intitulé comme le sujet d’écrit, avant le texte d’oral. Seul l’intitulé de l’écrit est reproduit."
+  }
+}
