@@ -16,15 +16,15 @@ Discuter l’analyse d’Éric Weil qui relie la démocratie à la raison et à 
 
 **Que présuppose Weil ?**
 
-Relever le verbe qui porte sur la dernière proposition. La démocratie doit supposer qu’une voie existe. Cela ne garantit pas que chaque conflit sera effectivement réglé. Une raison d’enquêter manque si l’on déclare par avance que l’autorité ou la violence décidera de tout.
+« Présuppose » porte sur les deux propositions. Il faut chercher une voie de règlement même quand l’accord paraît hors de portée. Demander ensuite ce qui rend cette recherche possible.
 
 **Quelle différence entre un désaccord et un conflit d’intérêts ?**
 
-Les Roth peuvent comparer les résultats de mesures distinctes pour évaluer les promesses officielles. C’est une enquête sur des faits. Le voisin de Praxagora veut bénéficier du nouveau régime sans remettre ses biens. Ce sont ses intérêts qui divergent. Le démentir ne suffira pas à produire une répartition acceptable.
+Les Roth confrontent des faits aux promesses officielles. Chez Aristophane, le voisin veut profiter de la redistribution sans apporter ses biens. Quelle preuve pourrait suffire à changer son intérêt ?
 
 **Quelle institution illustre une voie de résolution ?**
 
-Le juge indépendant décrit par Tocqueville oblige le pouvoir à répondre à la plainte du particulier. On peut obtenir une décision sur un cas précis, sans supposer un accord total entre les parties. La possibilité de réexaminer les actes du pouvoir donne une portée concrète au lien entre démocratie et raison.
+Chez Tocqueville, le juge peut obliger le pouvoir à répondre à un particulier. Distinguer la résolution de ce litige et l’adhésion des parties à une même conception de la justice.
 
 ## Dissertation
 
