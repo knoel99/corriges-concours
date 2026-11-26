@@ -137,6 +137,7 @@
 | 2026 | Banque PT | PT | Physique A | [md](2026/banque-pt/banque-pt_pt_physique-a_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_physique-a_2026/guide.md) |
 | 2026 | Banque PT | PT | Physique B - chimie | [md](2026/banque-pt/banque-pt_pt_physique-b---chimie_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_physique-b---chimie_2026/guide.md) |
 | 2021 | Banque PT | PT | Physique B - Thermodynamique | [md](2021/banque-pt/banque-pt_pt_physique-b---thermodynamique_2021/brut.md) | [md](2021/banque-pt/banque-pt_pt_physique-b---thermodynamique_2021/guide.md) |
+| 2022 | Banque PT | PT | Physique B - Thermodynamique | [md](2022/banque-pt/banque-pt_pt_physique-b---thermodynamique_2022/brut.md) | [md](2022/banque-pt/banque-pt_pt_physique-b---thermodynamique_2022/guide.md) |
 | 2026 | Banque PT | PT | Physique B - thermodynamique | [md](2026/banque-pt/banque-pt_pt_physique-b---thermodynamique_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_physique-b---thermodynamique_2026/guide.md) |
 | 2026 | Banque PT | PT | Sciences industrielles A | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-a_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-a_2026/guide.md) |
 | 2026 | Banque PT | PT | Sciences industrielles B | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-b_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-b_2026/guide.md) |
