@@ -4,7 +4,11 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Le sujet relie approximation lipschitzienne, hyperplans d’appui des fonctions concaves et régularité du gradient sous deux conditions de courbure. [Sujet officiel](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2020/2020_Sujet_1A_PSI_Maths.pdf)
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+On écrit $B=\|f\|_\infty$ lorsqu’une fonction $f$ est bornée. Pour une fonction minorée $h$, l’opérateur étudié est $T_\varepsilon h(x)=\inf_y(h(y)+\|y-x\|^\alpha/\varepsilon)$, avec $\varepsilon>0$ et $\alpha\ge1$.
+
+Le sujet relie approximation lipschitzienne, hyperplans d’appui des fonctions concaves et régularité du gradient sous deux conditions de courbure. [Sujet officiel](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2020/2020_Sujet_1A_PSI_Maths.pdf) · [Rapport du jury](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2020/2020_Rapport_Ecrit_PSI_Maths.pdf)
 
 ## I. Régularisation par infimum
 
@@ -45,6 +49,8 @@ Le premier terme atteint zéro en $y=x/(1+\varepsilon)$, d’où $T_\varepsilon 
 #### Solution
 
 Pour $\alpha=1$, tout $y$ vérifie $h(y)+\|y-x\|/\varepsilon\le h(y)+\|y-z\|/\varepsilon+\|x-z\|/\varepsilon$. L’infimum donne $T_\varepsilon h(x)-T_\varepsilon h(z)\le\|x-z\|/\varepsilon$. L’échange de $x,z$ donne la borne en valeur absolue.
+
+Ce passage à l’infimum reste valable si le coût ne possède aucun minimiseur. En effet, pour tout $\eta>0$ on choisit $y_\eta$ dont le coût en $z$ est inférieur à $T_\varepsilon h(z)+\eta$. La majoration du coût en $x$ donne $T_\varepsilon h(x)\le T_\varepsilon h(z)+\eta+\|x-z\|/\varepsilon$. On fait tendre $\eta$ vers zéro avant d’intervertir $x$ et $z$.
 
 ### Question 4b
 
@@ -145,6 +151,8 @@ Pour $y\in A(x)$, $f(y)\ge f(x)-\omega_f(r_\varepsilon)$ car $\|y-x\|\le r_\vare
 
 Si $\omega_f(t)\to0$ en zéro, 10 donne la convergence uniforme car $r_{1/n}\to0$ (si $B=0$, $f=0$ et tout est immédiat). Réciproquement, pour une tolérance $\delta>0$, fixons $n$ tel que $\|T_{1/n}f-f\|_\infty<\delta/2$. Par 9a, $\omega_f(t)<\delta/2+nt^\alpha$, inférieur à $\delta$ pour $t$ assez petit. Ainsi la limite est nulle.
 
+Dans le sens (i) vers (ii), le rayon $t_0=(\delta/(2n))^{1/\alpha}$ convient pour tout $0<t<t_0$. L’ordre des choix importe puisque l’indice $n$ doit contrôler l’erreur uniforme pour tous les couples de points. Le majorant $nt^\alpha$ devient alors petit avec $t$.
+
 ## II. Fonctions concaves et hyperplans d’appui
 
 ### Question 12
@@ -183,6 +191,8 @@ L’unique inégalité $f(y)\ge\lambda f(x)+(1-\lambda)f(z)$ équivaut à $f(z)-
 
 Pour le sommet $X_\sigma=(M\sigma_1,\ldots,M\sigma_d)$ indexé par $\sigma_j\in\{-1,1\}$, posons $\lambda_\sigma=\prod_j\tfrac{1+\sigma_j x_j/M}{2}$, le produit portant sur les facteurs $(1+\sigma_jx_j/M)/2$. Ils sont positifs ou nuls. La sommation indépendante sur chaque signe donne $\sum_\sigma\lambda_\sigma=1$, et pour la coordonnée $j$, $\sum_\sigma M\sigma_j\lambda_\sigma=x_j$. D’où la décomposition voulue.
 
+Pour vérifier explicitement le barycentre, fixons $k$. Les signes autres que $\sigma_k$ donnent chacun le facteur $\sum_{\sigma=\pm1}(1+\sigma x_j/M)/2=1$. Le facteur qui subsiste est $M\sum_{\sigma=\pm1}\sigma(1+\sigma x_k/M)/2=x_k$. La formule conserve aussi les points du bord, où certaines pondérations s’annulent.
+
 ### Question 15b
 
 > [!INDICATION]
@@ -218,6 +228,8 @@ Pour $x\ne y$ dans le petit cube, posons $r=\|y-x\|$ et $z=y+(M/(2r))(y-x)$. Cha
 #### Solution
 
 Chaque point et un voisinage de celui-ci sont contenus dans un petit cube $[-M/2,M/2]^d$ pour $M$ assez grand. Par 15d, $f$ est lipschitzienne sur ce cube, donc continue au point considéré.
+
+La constante $4|D|/M$ dépend du cube choisi. Par exemple la fonction concave $x\mapsto-x^2$ est lipschitzienne sur chaque intervalle borné. Sur la droite entière, les quotients $|f(n+1)-f(n)|=2n+1$ sont arbitrairement grands. La continuité établie ici est donc bien une conclusion locale en chaque point.
 
 ### Question 16a
 
@@ -273,6 +285,8 @@ Si $y_\varepsilon<f(x_\varepsilon)$, la continuité de $f$ place $X_\varepsilon$
 
 En 16b, prenons $Y_0=(x_\varepsilon,f(x_\varepsilon))$ et $X=(x,f(x))$. On obtient $\langle x_*-x_\varepsilon,x-x_\varepsilon\rangle+a(\varepsilon)(f(x)-f(x_\varepsilon))\le0$. En écrivant $x-x_\varepsilon=(x-x_*)+(x_*-x_\varepsilon)$, apparaît le carré de norme demandé.
 
+![Projection d’un point extérieur sur l’hypographe de la parabole. Le segment qui le relie à son projeté est normal à la droite d’appui.](figures/projection-hypographe.svg)
+
 ### Question 17d
 
 > [!INDICATION]
@@ -319,6 +333,8 @@ Au départ tous les $u_k$ sont dans $[-K_0,K_0]$. Si l’intervalle au rang $n$ 
 #### Solution
 
 Par 18b, choisissons $\varphi(0)$ dans le premier ensemble d’indices puis $\varphi(n+1)>\varphi(n)$ tel que $u_{\varphi(n+1)}\in[a_{n+1},b_{n+1}]$. Comme $a_n\le u_{\varphi(n)}\le b_n$ et les bornes tendent vers $\ell$, cette extraite converge vers $\ell$.
+
+La possibilité de choisir un indice strictement plus grand à chaque étape vient de ce qu’un sous-ensemble infini de $\mathbb N$ est non borné. On utilise ici la limite commune des intervalles emboîtés. Cette construction établit l’extraction recherchée à partir des suites adjacentes.
 
 ### Question 19
 
@@ -423,6 +439,8 @@ Posons $R_u(v)=f(v)-f(u)-\langle\nabla f(u),v-u\rangle$. La question 24c donne $
 $$R_x(x+h)-R_y(x+h)+R_y(x)=\langle\nabla f(y)-\nabla f(x),h\rangle.$$
 Sommer les trois majorations donne la borne $K(\|h\|^2+\|x+h-y\|^2+\|x-y\|^2)$.
 
+Les développements utilisent trois centres et extrémités précis. Dans la combinaison affichée, les trois valeurs de $f$ en $x$, $y$ et $x+h$ se compensent. Les seuls termes linéaires restants sont $-\langle\nabla f(x),h\rangle+\langle\nabla f(y),h\rangle$. L’inégalité triangulaire explique ensuite le signe positif devant chacun des trois carrés.
+
 ### Question 24e
 
 > [!INDICATION]
@@ -432,4 +450,4 @@ Sommer les trois majorations donne la borne $K(\|h\|^2+\|x+h-y\|^2+\|x-y\|^2)$.
 
 Si $r=\|x-y\|>0$ et $v=\nabla f(y)-\nabla f(x)\ne0$, prenons $h=rv/\|v\|$. Alors $|\langle v,h\rangle|=r\|v\|$, $\|h\|=r$ et $\|x+h-y\|\le2r$. Par 24d, $r\|v\|\le K(r^2+4r^2+r^2)=6Kr^2$. Cela donne $\|v\|\le6Kr$, aussi vraie lorsque $r=0$ ou $v=0$. Le gradient est lipschitzien donc continu, et 24c entraîne $f\in C^1(\mathbb R^d)$.
 
-![Figure 1 — L’écart à la tangente du sinus est compris entre deux termes quadratiques de coefficient un demi.](figures/encadrement-quadratique.svg)
+![L’écart à la tangente du sinus est compris entre deux termes quadratiques de coefficient un demi.](figures/encadrement-quadratique.svg)
