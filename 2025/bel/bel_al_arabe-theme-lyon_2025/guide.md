@@ -21,6 +21,8 @@ Le premier geste est une révérence. Le titre de vicomte est conservé sous sa 
 
 Les sourcils dessinent un cadre artificiellement régulier, tandis que le bleu très discret nuance le blanc de l’œil. « Ses cils serrés » appelle un mot de densité. L’éloquence passe singulièrement du discours à la physionomie. Elle trouble la dame dans un salon et fait se retourner une jeune fille coiffée d’un bonnet, son panier à la main, dans la rue. Le dernier paragraphe évoque l’impression de profondeur produite par la langueur du regard. La valeur de la pensée et celle des paroles dépendent de cette impression. Un verbe comme *يوحي* garde ouverte la distance entre la personne et son effet sur autrui.
 
+Le duel aide à suivre le regard dans la longue phrase sur les yeux. *Ḥāǧibān* installe les deux sourcils comme sujet. Le verbe qui suit garde le duel et le pronom renvoie aux deux yeux sur lesquels ils agissent. Pour la couleur, on peut ensuite reprendre le nom et parler du « blanc de ses yeux ». Dans la dernière phrase, Maupassant revient au singulier. Ce changement permet de passer des traits du visage à la puissance d’un regard que les femmes interprètent.
+
 ![Figure 1 — Le portrait glisse d’un détail observable à l’idée que les autres se font du vicomte. La dernière étape attribue un effet à son regard.](figures/lecture.svg)
 
 ## Proposition de thème
