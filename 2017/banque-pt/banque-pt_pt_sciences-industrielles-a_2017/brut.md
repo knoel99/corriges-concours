@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Direction automobile découplée.** Épreuve de cinq heures, calculatrice interdite. Le sujet est accompagné de huit annexes et d’un cahier de réponses. Ses 49 questions se répartissent en quatre parties.
 
 [Sujet et cahier officiels](https://www.banquept.fr/documents/2017/si_a_2017_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2017/rapport_si_a_ecrit_2017.pdf)
@@ -68,7 +70,7 @@ Ici $L_1=(1+p)/[p^2(1+0{,}1p)]$. Les cassures sont 1 et $10\ \mathrm{rad\,s^{-1}
 
 ### Question 11 — Marge de phase de 45 degrés
 
-La haute intersection se lit vers $7{,}7$ à $8\ \mathrm{rad\,s^{-1}}$. À ce point le lieu de référence vaut environ $-20$ dB. On décale le gain d'environ $+20$ dB en multipliant $K_i$ par 10, soit $K_i\simeq5\ \mathrm{V\,rad^{-1}}$.
+La haute intersection se lit vers $7{,}7$ à $8\ \mathrm{rad\,s^{-1}}$. À ce point le lieu de référence vaut environ $-20$ dB. On décale le gain d'environ $+20$ dB en multipliant $K_i$ par 10, soit $K_i\simeq5\ \mathrm{V\,rad^{-1}}$. Le calcul donne $\omega=(9+\sqrt{41})/2=7{,}70$ et $K_i\simeq4{,}82$.
 
 ![Lecture du réglage de marge pour le PI seul](figures/marge-pi.svg)
 
@@ -116,7 +118,7 @@ On vise la phase $-180^\circ+58{,}5^\circ=-121{,}5^\circ$ sur la branche descend
 
 ### Question 20 — Validation du pilotage
 
-Le PI assure les zéros d'erreur de Q7 ; le retour tachymétrique déplace le pôle limitant, puis le gain règle la coupure. Pour $K_i\simeq120$, celle-ci est voisine de 35 rad/s, au-dessus de 30. B3 donne environ 0,12 s, à la borne de l'intervalle 0,08–0,12 s, et un dépassement voisin de 11 %, inférieur à 15 %. La marge de phase avoisine $58^\circ$ et celle de gain est infinie dans le modèle. L'erreur de consigne s'annule pour l'échelon et la rampe. L'erreur due à un échelon de couple s'annule aussi ; pour la rampe elle vaut environ $2{,}5/120=2{,}1\,\%$ de la pente. Le réglage satisfait les critères avec la précision de lecture des abaques.
+Le PI assure les zéros d'erreur de Q7 ; le retour tachymétrique déplace le pôle limitant, puis le gain règle la coupure. Pour $K_i\simeq120$, celle-ci est voisine de 35 rad/s, au-dessus de 30. B3 donne environ 0,12 s, à la borne de l'intervalle 0,08–0,12 s, et un dépassement voisin de 11 %, inférieur à 15 %. La marge de phase avoisine $58^\circ$ et celle de gain est infinie dans le modèle. L'erreur de consigne s'annule pour l'échelon et la rampe. L'erreur due à un échelon de couple s'annule aussi ; pour la rampe elle vaut environ $2{,}5/120=2{,}1\,\%$ de la pente. Le modèle temporel donne 0,1198 s au gain arrondi 120, contre 0,1205 s au gain 118,96 lu pour $58{,}5^\circ$. Le premier de ces deux réglages respecte la limite stricte.
 
 ### Question 21 — Limite physique du réglage
 
@@ -236,7 +238,7 @@ Le retour unitaire donne $T_b^*=1/[1+p/(KK_I)+\tau_f p^2/(KK_I)]$. Ainsi $\omega
 
 ### Question 48 — Bilan du braquage
 
-Pour $KK_I=50$ et $\tau_f=0{,}01$, la condition de coupure est $\omega_c\sqrt{1+(0{,}01\omega_c)^2}=50$, soit $\omega_c\simeq45{,}5$ rad/s, supérieure à 30. La marge de phase est $90^\circ-\arctan(0{,}455)\simeq65{,}5^\circ$, celle de gain est infinie. L'intégrateur annule l'erreur sur échelon, le traînage est de 20 ms pour 100 ms maximum et le dépassement est $100e^{-\pi}\simeq4{,}3$ % pour 5 % maximum. Le temps de 42 ms est plus rapide que 100 ms.
+Pour $KK_I=50$ et $\tau_f=0{,}01$, la condition de coupure est $\omega_c\sqrt{1+(0{,}01\omega_c)^2}=50$, soit $\omega_c\simeq45{,}5$ rad/s, supérieure à 30. La marge de phase est $90^\circ-\arctan(0{,}455)\simeq65{,}5^\circ$, celle de gain est infinie. L'intégrateur annule l'erreur sur échelon, le traînage est de 20 ms pour 100 ms maximum et le dépassement est $100e^{-\pi}\simeq4{,}3$ % pour 5 % maximum. Le temps de 42 ms est plus rapide que 100 ms. Pris littéralement, l'intervalle imprimé $100\pm20$ ms commence à 80 ms : cette seule cible bilatérale n'est pas respectée. Si la ligne est lue comme un temps maximal de 120 ms, elle est satisfaite.
 
 ### Question 49 — Portée de la simulation
 

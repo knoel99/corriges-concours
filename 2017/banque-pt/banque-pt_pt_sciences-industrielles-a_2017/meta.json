@@ -592,6 +592,23 @@
       "modifications": true,
       "phase": "redaction",
       "perimetre": "Résolution des 49 questions et rédaction des indications des deux éditions à partir du sujet et des grilles fournis."
+    },
+    {
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "session": "banque_pt_si_a_2017",
+      "modifications": true,
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "perimetre": "Contrôle des connexions, mesures sur les grilles, signes des projections et modèle du véhicule, dimensionnement électrique et comparaison aux tolérances exactes."
     }
-  ]
+  ],
+  "date_revision": "2026-11-26"
 }
