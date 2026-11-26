@@ -1,0 +1,204 @@
+{
+  "slug": "x_m-prime_deuxieme-composition-de-mathematiques_1991",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "M prime",
+    "filiere_historique": "M′",
+    "matiere": "Deuxième composition de mathématiques",
+    "annee": 1991
+  },
+  "questions": 18,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-fa66e6f81e049d9e1709",
+    "sujet_sha256": "68fb04484ad83afc91cb889df6e2063238ee2c5bf2a9b8722696880a87207c01",
+    "notice_ups": "m91xm2",
+    "reproduction": "https://www.sujetsetcorriges.fr/dl/X/Maths/MP/sec-x-1991-maths2-MP.pdf",
+    "reproduction_sha256": "5896e11f741e7c902ef1702282a357783e5fa158a0bbad10c80b9d3e7e93ee44",
+    "pages": 3,
+    "calendrier": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000353010",
+    "rapport_jury": "",
+    "observation_rapport": "Les deux exemplaires du sujet et la notice UPS sont les sources consultées ; aucun rapport de jury n’y est joint.",
+    "provenance": "Fac-similé UPS m91xm2eb, pages imprimées 126 à 128, couvrant les quatre parties. Le second exemplaire en deux pages est une adaptation qui conserve les quatre parties et la numérotation 1 à 14. Il ajoute en 9 une demande sur la queue gaussienne et comporte une coquille sur la partie imaginaire en IV. La notice m91xm2ec est une autre rédaction qui s’arrête, elle, à la partie III. Les repères de page et les questions de la correction suivent le fac-similé.",
+    "pages_reproduction": 2
+  },
+  "figures": [
+    {
+      "question": "13",
+      "fichier": "figures/noyau-angulaire.svg",
+      "legende": "Noyau pour un angle de π/3. Parti de −1/2 avec une tangente horizontale, il franchit zéro avant son maximum, puis redescend vers zéro."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.a",
+      "1.b",
+      "2.a",
+      "2.b",
+      "3",
+      "4",
+      "5",
+      "6.a",
+      "6.b",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11.a",
+      "11.b",
+      "12",
+      "13",
+      "14"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1.a",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ]
+      },
+      {
+        "question": "1.b",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ]
+      },
+      {
+        "question": "2.a",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ]
+      },
+      {
+        "question": "2.b",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ]
+      },
+      {
+        "question": "3",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ]
+      },
+      {
+        "question": "4",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ]
+      },
+      {
+        "question": "5",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ]
+      },
+      {
+        "question": "6.a",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ]
+      },
+      {
+        "question": "6.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ]
+      },
+      {
+        "question": "7",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ]
+      },
+      {
+        "question": "8",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ]
+      },
+      {
+        "question": "9",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ]
+      },
+      {
+        "question": "10",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ]
+      },
+      {
+        "question": "11.a",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ]
+      },
+      {
+        "question": "11.b",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ]
+      },
+      {
+        "question": "12",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ]
+      },
+      {
+        "question": "13",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ]
+      },
+      {
+        "question": "14",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ]
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Dix-huit rubriques sur les trois pages du fac-similé m91xm2eb. La partie IV, questions 10 à 14, comprend la non-uniformité, le passage au bord, le graphe de W et la divergence de C."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "histoire_lyon_2017",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Dix-huit rubriques sur les trois pages du fac-similé m91xm2eb. La partie IV, questions 10 à 14, comprend la non-uniformité, le passage au bord, le graphe de W et la divergence de C. Rédaction et vérification des solutions, des indications et de la figure."
+    }
+  ]
+}
