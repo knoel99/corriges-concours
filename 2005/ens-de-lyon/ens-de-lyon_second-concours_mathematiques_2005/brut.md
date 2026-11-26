@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le sujet étudie une équation intégrale sur la demi-droite. Les itérations donnent une solution bornée, puis les intégrales exponentielles déterminent le développement asymptotique de cette solution et de sa dérivée.
 
 ## I. Résolution d’une équation intégrale
@@ -12,11 +14,11 @@ Le sujet étudie une équation intégrale sur la demi-droite. Les itérations do
 
 Écrivons $k=\sup_{1\le x\le t}|K(x,t)|$. Pour $t\ge x$, le module de l’intégrande est au plus $k\|h\|/t^2$, de sorte que l’intégrale des modules est au plus $k\|h\|/x$ dès que l’intégrande est mesurable. Dans le cadre de l’intégrale impropre usuelle, la continuité de $K$ sur $\Theta$ assure son intégrabilité sur chaque segment et la convergence absolue à l’infini.
 
-La garde mathématique impose seulement que $K$ soit borné. Prendre $K(x,t)=\mathbf1_{\mathbb Q}(t)$ et $h=1$ empêche l’intégrabilité au sens de Riemann sur tout segment non trivial. Pour l’intégrale de Lebesgue, l’indicatrice d’un ensemble non mesurable contenu dans $[1,2]$ empêche même la mesurabilité pour $x=1$. Pour la suite de I on peut prendre $K$ continu borné, hypothèse satisfaite par le noyau de IV.
+Dans la partie I, le sujet suppose seulement que $K$ est borné. Prendre $K(x,t)=\mathbf1_{\mathbb Q}(t)$ et $h=1$ empêche l’intégrabilité au sens de Riemann sur tout segment non trivial. Pour l’intégrale de Lebesgue, l’indicatrice d’un ensemble non mesurable contenu dans $[1,2]$ empêche même la mesurabilité pour $x=1$. Pour la suite de I on peut prendre $K$ continu borné, hypothèse satisfaite par le noyau de IV.
 
 ### Question I.2
 
-Sous cette hypothèse, pour $x_m\to x$ les fonctions $\mathbf1_{t\ge x_m}K(x_m,t)h(t)/t^2$, prolongées par zéro pour $t<x_m$, convergent vers la fonction correspondante au point $x$ pour tout $t\ne x$. La majoration de I.1 est intégrable sur $[1,\infty[$. La convergence dominée donne $Th(x_m)\to Th(x)$. La linéarité vient de l’intégrale, et $\|Th\|\le k\|h\|$ donne la continuité de l’opérateur pour la norme uniforme.
+Supposons $K$ continu borné, et fixons $x_0\ge1$. Pour $R>x_0+1$ et $x$ proche de $x_0$, les deux intégrales au-delà de $R$ sont majorées en module par $k\|h\|/R$. Sur la partie comprise entre $x$ et $x_0$, la contribution est au plus $k\|h\|\,|x-x_0|$. Enfin, pour $\max(x,x_0)\le t\le R$, la continuité uniforme de $K$ sur le triangle compact $1\le s\le t\le R$ donne $K(x,t)-K(x_0,t)\to0$ uniformément en $t$. L’intégrale de cette différence pondérée par $h(t)/t^2$ tend donc vers zéro. En choisissant d’abord $R$ grand puis $x$ proche de $x_0$, on obtient $Th(x)\to Th(x_0)$. La linéarité vient de l’intégrale, et $\|Th\|\le k\|h\|$ donne la continuité de l’opérateur pour la norme uniforme.
 
 Même un noyau mesurable borné ne suffit pas à la conclusion imprimée. Avec $K(x,t)=\mathbf1_{\mathbb Q}(x)$ et $h=1$, on obtient $Th(x)=\mathbf1_{\mathbb Q}(x)/x$, discontinue en tout point.
 
@@ -42,7 +44,7 @@ Si $a_k,b_k$ sont les coefficients, ceux de la somme sont $a_k+b_k$, et ceux du 
 
 ### Question II.3
 
-Si $1/f$ a un développement, ses deux limites et celle de $f$ vérifient $a_0\lim(1/f)=1$, d’où $a_0\ne0$. Réciproquement, posons $b_0=1/a_0$ et $b_n=-a_0^{-1}\sum_{j=1}^n a_j b_{n-j}$. À tout ordre $N$, $f(x)\sum_{k=0}^Nb_kx^{-k}=1+o(x^{-N})$. Comme $f$ reste en module au-dessus de $|a_0|/2$ à l’infini, la division donne le reste requis pour $1/f$, qui est continue sur tout l’intervalle.
+Si $1/f$ a un développement, les limites finies de $f$ et $1/f$ vérifient $a_0\lim(1/f)=1$, d’où $a_0\ne0$. Réciproquement, posons $b_0=1/a_0$ et $b_n=-a_0^{-1}\sum_{j=1}^n a_j b_{n-j}$. À tout ordre $N$, $f(x)\sum_{k=0}^Nb_kx^{-k}=1+o(x^{-N})$. Comme $f$ reste en module au-dessus de $|a_0|/2$ à l’infini, la division donne le reste requis pour $1/f$, qui est continue sur tout l’intervalle.
 
 ### Question II.4
 
@@ -129,7 +131,7 @@ $$g'(x)=j_\beta(x)\int_x^\infty \frac{F(y)g(y)}{y^2j_\beta(y)}\,dy=e^{\alpha x}x
 
 ### Question IV.9
 
-Pour le monôme $d_ry^{-r}$ de $Fg$, la contribution est $d_rx^{-r-2}V_{\beta+r+2}(x)$, qui appartient à $\mathcal A$. Pour un développement de $Fg$ à l’ordre $N$, la contribution du reste $o(y^{-N})$ est $o(x^{-N-1})$ en utilisant IV.1 et le même calcul que pour IV.7. On obtient ainsi un développement de $g'$ à tout ordre. En particulier, si $F(x)\to f_0$, $g'(x)=f_0/(\alpha x^2)+o(x^{-2})$.
+Pour le monôme $d_ry^{-r}$ de $Fg$, la contribution est $d_rx^{-r-2}V_{\beta+r+2}(x)$, qui appartient à $\mathcal A$. Pour un développement de $Fg$ à l’ordre $N$, la contribution du reste $o(y^{-N})$ est $o(x^{-N-1})$ en utilisant IV.1 et le même calcul que pour IV.7. On obtient ainsi un développement de $g'$ à tout ordre. Pour lire le premier coefficient, prenons $N=1$. Comme $g\to1$, on a $d_0=f_0=\lim F$. Le terme associé à $d_1$ est $O(x^{-3})$, le reste est $o(x^{-2})$ et $V_{\beta+2}\to1/\alpha$. Ainsi $g'(x)=f_0/(\alpha x^2)+o(x^{-2})$.
 
 ### Question IV.10
 
