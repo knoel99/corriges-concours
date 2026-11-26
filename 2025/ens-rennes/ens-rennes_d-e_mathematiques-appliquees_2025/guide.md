@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le cahier d’options présente trois exercices indépendants. Les calculs du premier distinguent les ventes observées de la demande estimée. Les deux suivants portent sur une homographie et sur des lois de probabilité.
 
 ## Exercice 1. Enquête et choix du prix
@@ -127,11 +129,13 @@ On a $b'(x)=e^{-0{,}228x+6{,}272}[1-0{,}228(x-1{,}5)]$. La dérivée est positiv
 ### Question 1.II.4
 
 > [!INDICATION]
-> Lire le maximum du modèle, en distinguant prix continu et prix au centime.
+> Repérer le zéro du facteur affine de la dérivée. Pour un tarif exprimé en centimes, comparer ensuite les deux centimes voisins avec les valeurs non arrondies du bénéfice.
 
 #### Solution
 
 Le prix optimal du modèle est $x_*\simeq5{,}886$ euros et le bénéfice maximal vaut $606{,}928$ euros. Au centime, on retient **5,89 €** (entre les prix adjacents 5,88 et 5,89, le second donne le bénéfice le plus élevé).
+
+Une vérification au centime demande de conserver la précision avant de comparer. Le bénéfice modélisé vaut environ $606{,}927124$ euros à 5,88 € et $606{,}927429$ euros à 5,89 €. Si l’on choisit uniquement parmi les prix effectivement essayés, le maximum du tableau est 1 100 € au prix de 7 €. L’écart tient aux demandes différentes du modèle et de l’enquête.
 
 ## Exercice 2. Fonction homographique, suite et densité
 
@@ -170,6 +174,13 @@ Les deux polynômes sont dérivables et le dénominateur ne s’annule pas sur $
 #### Solution
 
 La dérivée est strictement positive. Sur $]-\infty,-6[$, $f$ croît de $1$ vers $+\infty$. Sur $]-6,+\infty[$, $f$ croît de $-\infty$ vers $1$. Les limites aux infinis ne sont pas atteintes.
+
+| Intervalle | Limite à gauche | Sens de variation | Limite à droite |
+|---|---:|:---:|---:|
+| $]-\infty,-6[$ | $1$ | Croît | $+\infty$ |
+| $]-6,+\infty[$ | $-\infty$ | Croît | $1$ |
+
+Les deux lignes correspondent aux deux branches séparées par l’asymptote $x=-6$.
 
 ### Question 2.I.5
 
@@ -464,6 +475,8 @@ Pour $k\ge r\ge1$, $k\binom{k-1}{r-1}=k!/[(r-1)!(k-r)!]=r\binom{k}{r}$.
 #### Solution
 
 La série positive devient $rp^r\sum_{k\ge r}\binom{k}{r}(1-p)^{k-r}$. La formule admise la fait converger vers $rp^r/p^{r+1}=r/p$. On a donc bien $\mathbb E(X_r)=r/p$.
+
+On peut vérifier cet ordre de grandeur en décomposant le temps d’attente total en $r$ temps entre succès consécutifs, en comptant le lancer réussi à la fin de chacun. Les lancers indépendants de paramètre $p$ donnent à chacun la même loi géométrique, de moyenne $1/p$. L’addition des moyennes retrouve $r/p$.
 
 ### Question 3.II.5.a
 
