@@ -1,8 +1,10 @@
-# Philosophie — Qu’est-ce qu’une analyse · Oral PSL 2018 · Corrigé brut
+# Philosophie — Qu’est-ce qu’une analyse ? · Oral PSL 2018 · Corrigé brut
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 ## Exposé
 
@@ -16,9 +18,11 @@ Descartes recommande dans le *Discours de la méthode* de diviser chacune des di
 
 ### Découvrir des conditions et des relations
 
-Quand on analyse un raisonnement, on trouve rarement des prémisses toutes faites que la phrase aurait empilées. « Ce témoin se contredit, donc l’accusé est innocent » saute d’une faiblesse du témoignage à une conclusion sur les faits. Faire apparaître l’hypothèse nécessaire au passage, par exemple que ce témoignage serait la seule preuve possible de culpabilité et que sa contradiction le détruirait entièrement, c’est produire une formulation absente du discours entendu. On peut alors distinguer le doute raisonnable sur l’accusation d’une preuve positive d’innocence. L’analyse fait apparaître une articulation dont dépend la force de la conclusion.
+Quand on analyse un raisonnement, on trouve rarement des prémisses toutes faites que la phrase aurait empilées. « Ce témoin se contredit, donc l’accusé est innocent » saute d’une faiblesse du témoignage à une conclusion sur les faits. Supposons que ce témoignage soit la seule pièce à charge et que sa contradiction lui ôte toute valeur. On peut conclure que le dossier n’établit pas la culpabilité. Pour conclure que l’accusé n’a pas accompli l’acte, il faudrait une autre raison, par exemple un alibi établi. Même en explicitant les prémisses les plus favorables à la critique du témoin, on repère donc un saut entre ce que le dossier permet de prouver et ce qui s’est effectivement passé. L’analyse fait apparaître une articulation dont dépend la force de la conclusion.
 
 Dans certaines démonstrations géométriques, on suppose le problème résolu et l’on remonte de la figure cherchée à une condition que l’on peut construire. L’analyse commence donc par prêter provisoirement à son objet une existence encore à établir. Si je cherche un point équidistant de deux points donnés, je peux supposer qu’il existe et en tirer son appartenance à la médiatrice. Pour résoudre un problème qui lui impose une autre contrainte, il reste à construire le croisement convenable et à vérifier que le point obtenu satisfait toutes les demandes. Une condition nécessaire ne devient pas suffisante par le seul mouvement de remontée. Ce retour donne un sens précis à la complémentarité de l’analyse et de la synthèse.
+
+On peut achever la construction. Soient A et B deux points distincts. On cherche un point P à trois centimètres de A et de B. Une solution éventuelle se trouve à la fois sur la médiatrice de AB et sur le cercle de centre A et de rayon trois centimètres. Réciproquement, tout point d’intersection satisfait les deux conditions, par définition du cercle et par la propriété de la médiatrice. Si AB mesure quatre centimètres, la distance du centre à la médiatrice est de deux centimètres et il y a deux intersections. Pour AB égal à six centimètres, il n’y en a qu’une. Au-delà de six, il n’y en a aucune. L’analyse peut donc déterminer où chercher sans garantir qu’il existe quelque chose à trouver. La synthèse permet d’établir à la fois l’existence et le nombre de solutions dans chacun des cas.
 
 ### Éprouver ce que l’analyse autorise à conclure
 
