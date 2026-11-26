@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Les trois exercices du cahier R 15-83 portent sur les données d’emploi et de salaires, la production d’une confiserie et les antécédents d’une fonction logarithmique. Les calculs statistiques utilisent les valeurs du tableau imprimé.
 
 ## Exercice 1. Emploi et salaires
@@ -60,7 +62,7 @@ L’égalité correspond à $ax+b=0$, soit $x\simeq135{,}668$. Le modèle attein
 
 ### Question 1.3.a
 
-Les valeurs au millième sont données pour les rangs consécutifs de chaque ligne.
+On applique $u_i=\ln(t_i)$ au salaire moyen d’ensemble exprimé en milliers d’euros. Pour 1995, par exemple, $t_0=17{,}9$ donne $u_0=\ln(17{,}9)\simeq2{,}885$. Voici les quinze valeurs au millième.
 
 | Rang | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
 |---|---|---|---|---|---|---|---|---|
@@ -107,6 +109,8 @@ $A,B$ sont incompatibles et forment un système complet. Ainsi $P(G)=P(A\cap G)+
 ### Question 2.I.5
 
 On a $P(B\mid G)=P(B\cap G)/P(G)=(3/40)/(1/8)=3/5=0{,}600$.
+
+Pour voir le conditionnement, prenons comme unité de comparaison 40 clients dans les proportions de l’énoncé. On attend deux gagnants issus de A et trois de B. Le dénominateur du rapport est donc cinq gagnants, ce qui redonne $3/5$.
 
 ### Question 2.I.6
 
@@ -176,6 +180,11 @@ Les termes sont dérivables sur son domaine. On a $g'(x)=1-(1+\ln x)=-\ln x$.
 
 Pour $0<x<1$, $g'>0$, puis $g'<0$ pour $x>1$. La fonction croît depuis $-1$ en $0^+$ jusqu’à $g(1)=0$, puis décroît vers $-\infty$ à l’infini.
 
+| $x$ | $0^+$ | $(0,1)$ | $1$ | $(1,+\infty)$ | $+\infty$ |
+| --- | --- | --- | --- | --- | --- |
+| $g'(x)$ |  | $+$ | $0$ | $-$ |  |
+| $g(x)$ | $-1$ | $\nearrow$ | $0$ | $\searrow$ | $-\infty$ |
+
 ### Question 3.I.4
 
 Le maximum est zéro, atteint seulement en $1$. Ainsi $g(x)<0$ pour tout $x>0$ distinct de $1$.
@@ -192,9 +201,21 @@ Sur les deux intervalles du domaine, $f$ est dérivable et $f'=[(x-1)/x-\ln x]/(
 
 La dérivée est strictement négative sur chaque intervalle. Sur $]0,1[$, $f$ décroît de $+\infty$ vers $1$. Sur $]1,\infty[$, elle décroît de $1$ vers zéro. À ce stade $1$ est encore exclu du domaine.
 
+| Intervalle | $f$ à gauche | Signe de $f'$ | Sens | $f$ à droite |
+| --- | --- | --- | --- | --- |
+| $(0,1)$ | $+\infty$ | $-$ | $\searrow$ | $1$ (limite) |
+| $(1,+\infty)$ | $1$ (limite) | $-$ | $\searrow$ | $0$ |
+
 ### Question 3.III.1
 
 Après prolongement, $f$ est strictement décroissante sur tout $]0,\infty[$. Elle tend vers $+\infty$ en zéro, passe par $f(1)=1$ et tend vers zéro en $+\infty$. La dérivée en $1$ est $-1/2$.
+
+En posant $h=x-1$, on peut retrouver la pente donnée dans le sujet. L’égalité $\ln(1+h)=h-h^2/2+o(h^2)$ donne $f(1+h)=1-h/2+o(h)$. Le taux d’accroissement tend donc vers $-1/2$ des deux côtés.
+
+| $x$ | $0^+$ | $(0,1)$ | $1$ | $(1,+\infty)$ | $+\infty$ |
+| --- | --- | --- | --- | --- | --- |
+| $f'(x)$ |  | $-$ | $-1/2$ | $-$ |  |
+| $f(x)$ | $+\infty$ | $\searrow$ | $1$ | $\searrow$ | $0$ |
 
 ### Question 3.III.2
 
