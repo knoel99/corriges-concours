@@ -33,11 +33,11 @@ L’enquête porte sur les 540 logements de la ville, c’est-à-dire sur l’en
 > [!INDICATION]
 > Utiliser les effectifs cumulés pour les deux rangs centraux.
 
-Le second moment repose sur la somme pondérée $25+4\times210+9\times190+16\times80+25\times30+36\times5=4\,785$. La variance exacte est donc $4\,785/540-(1\,515/540)^2=1283/1296$.
-
 #### Solution
 
 La moyenne pondérée vaut $\bar x=1515/540\simeq2{,}80556$ pièces. Les effectifs cumulés $25,235,425,505,535,540$ placent les rangs 270 et 271 à la valeur 3, donc la médiane est 3. La variance descriptive est $\sum N_i x_i^2/540-\bar x^2\simeq0{,}98997$ pièce² et l’écart-type vaut $0{,}99497$ pièce.
+
+Le second moment repose sur la somme pondérée $25+4\times210+9\times190+16\times80+25\times30+36\times5=4\,785$. La variance exacte est donc $4\,785/540-(1\,515/540)^2=1283/1296$.
 
 ### Question 1.4
 
@@ -55,11 +55,11 @@ La probabilité d’avoir deux pièces est $210/540=7/18$. Celle d’en avoir st
 > [!INDICATION]
 > Écrire séparément « euros non remboursés / euros prêtés » et « nombre de clients défaillants / nombre de clients ». Vérifier sous quelle hypothèse ils peuvent donner le même paramètre.
 
-Par exemple, si neuf personnes remboursent chacune 100 euros et qu’une dixième ne rembourse rien sur 100 euros, le défaut concerne 10 % des sommes et des clients. Si une personne rembourse 900 euros tandis que neuf autres doivent à elles toutes 100 euros et ne remboursent rien, la fraction monétaire est toujours de 10 % mais 90 % des clients sont en défaut. Des montants identiques par emprunteur et un défaut portant sur la totalité du prêt rendraient l’identification immédiate.
-
 #### Solution
 
 Le calcul attendu par le jury suppose quatre clients indépendants, ayant chacun une probabilité $p=0{,}10$ de défaut. Le pourcentage des sommes impayées donné par le texte ne détermine ce paramètre individuel que moyennant une hypothèse supplémentaire sur les montants. Sous le modèle attendu, le nombre $X$ de défauts suit $\mathcal B(4,0{,}1)$ et $P(X=1)=4(0{,}1)(0{,}9)^3=0{,}2916$.
+
+Par exemple, si neuf personnes remboursent chacune 100 euros et qu’une dixième ne rembourse rien sur 100 euros, le défaut concerne 10 % des sommes et des clients. Si une personne rembourse 900 euros tandis que neuf autres doivent à elles toutes 100 euros et ne remboursent rien, la fraction monétaire est toujours de 10 % mais 90 % des clients sont en défaut. Des montants identiques par emprunteur et un défaut portant sur la totalité du prêt rendraient l’identification immédiate.
 
 ### Question 2.2
 
@@ -199,11 +199,11 @@ Sans remise, le sous-ensemble tiré est uniforme. Il existe $\binom86\binom{12}9
 > [!INDICATION]
 > Pondérer les deux vraisemblances par les probabilités a priori.
 
-Avec une probabilité initiale quelconque $s=P(S)$, le même raisonnement donne $sq/[sq+(1-s)p]$. Lorsque $s=1/2$, le rapport de vraisemblances $q/p$ dépasse 1. L’observation de six blanches favorise alors le protocole sans remise et explique pourquoi la probabilité finale dépasse $1/2$.
-
 #### Solution
 
 Dans l’interprétation usuelle de la phrase, les deux protocoles sont équiprobables. En notant $S$ le protocole sans remise, la formule de Bayes donne $P(S\mid X=6)=(q/2)/(p/2+q/2)\simeq0{,}65790$. L’expression imprimée « avec ou sans remise » à la place de « avec remise » dans la première branche est ambiguë : prise littéralement comme la réunion des deux cas, elle imposerait $P(S)=1$ et rendrait le calcul trivial.
+
+Avec une probabilité initiale quelconque $s=P(S)$, le même raisonnement donne $sq/[sq+(1-s)p]$. Lorsque $s=1/2$, le rapport de vraisemblances $q/p$ dépasse 1. L’observation de six blanches favorise alors le protocole sans remise et explique pourquoi la probabilité finale dépasse $1/2$.
 
 ## Exercice 6. Fonction de demande et élasticité
 

@@ -51,6 +51,10 @@ $V(X)=5(1/3)(2/3)=10/9$, donc $\sigma_X=\sqrt{10}/3\simeq1{,}054$ réponse.
 > [!INDICATION]
 > Essayer de remplir un tableau de 48 personnes. Le quart est vacciné, puis un douzième des vaccinés est malade. Utiliser pour finir le rapport entre malades vaccinés et non vaccinés.
 
+#### Solution
+
+Notons $V$ le statut vacciné et $M$ la maladie. Le texte donne $P(V)=1/4$, $P(V\mid M)=1/5$ et $P(M\mid V)=1/12$. Ainsi $P(M\cap V)=1/48$ et $P(M)=5/48$. La probabilité cherchée est $P(M\mid V^c)=(5/48-1/48)/(3/4)=1/9$.
+
 Une population fictive de 48 personnes permet de lire les deux conditionnements sans changer implicitement de dénominateur.
 
 | État | Vaccinées | Non vaccinées | Total |
@@ -60,10 +64,6 @@ Une population fictive de 48 personnes permet de lire les deux conditionnements 
 | Total | 12 | 36 | 48 |
 
 Parmi les cinq malades, une personne est vaccinée. Parmi les 36 personnes non vaccinées, quatre sont malades, ce qui redonne $4/36$.
-
-#### Solution
-
-Notons $V$ le statut vacciné et $M$ la maladie. Le texte donne $P(V)=1/4$, $P(V\mid M)=1/5$ et $P(M\mid V)=1/12$. Ainsi $P(M\cap V)=1/48$ et $P(M)=5/48$. La probabilité cherchée est $P(M\mid V^c)=(5/48-1/48)/(3/4)=1/9$.
 
 ### Question 1.III
 
@@ -92,14 +92,14 @@ Pour $x\to+\infty$, $f(x)=13e^{-0{,}225x}\to0$. La demi-droite $y=0$ est asympto
 > [!INDICATION]
 > Vérifier le signe de la dérivée sur le domaine du modèle.
 
+#### Solution
+
+$f'(x)=-2{,}925e^{-0{,}225x}<0$. Sur $[0,+\infty[$, $f$ décroît strictement de $f(0)=13$ vers sa limite 0.
+
 | $x$ | $0$ | $0<x<+\infty$ | $+\infty$ |
 |---|---:|:---:|---:|
 | Signe de $f'(x)$ | $-$ | $-$ | |
 | $f(x)$ | $13$ | $\searrow$ | $0$ (limite) |
-
-#### Solution
-
-$f'(x)=-2{,}925e^{-0{,}225x}<0$. Sur $[0,+\infty[$, $f$ décroît strictement de $f(0)=13$ vers sa limite 0.
 
 ### Question 2.I.3
 
@@ -345,9 +345,9 @@ Par exemple, le premier coefficient de $AB$ vaut $1\cdot3+0\cdot0+2(-1)=1$.
 > [!INDICATION]
 > Résoudre le système linéaire de second membre quelconque.
 
-Pour contrôler le dernier coefficient, la troisième colonne de l’inverse est $(-1/6,1/3,-7/6)^\top$. Multipliée à gauche par $M$, elle donne $(0,0,1)^\top$ : les trois produits sont $-4/6+2/3$, $-3/6+5/3-7/6$ et $-2/6+4/3$.
-
 #### Solution
 
 En notant $M$ la matrice donnée, résolvons $M(x,y,z)^\top=(u,v,w)^\top$. La première et la troisième lignes donnent $x=u/3-w/6$, $y=-u/6+w/3$. En les substituant dans la deuxième, $z=-u/6+v-7w/6$. La solution est unique pour tout second membre, donc
 $$M^{-1}=\begin{pmatrix}1/3&0&-1/6\\-1/6&0&1/3\\-1/6&1&-7/6\end{pmatrix}.$$
+
+Pour contrôler le dernier coefficient, la troisième colonne de l’inverse est $(-1/6,1/3,-7/6)^\top$. Multipliée à gauche par $M$, elle donne $(0,0,1)^\top$ : les trois produits sont $-4/6+2/3$, $-3/6+5/3-7/6$ et $-2/6+4/3$.
