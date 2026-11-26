@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Repères
 
 La matrice relie les couples et les positions aux deux ports. Pour les moments plans, un sens positif est précisé en Q26. Les questions 30–32, 40–41 et 44 comportent des conventions ou arrondis dont les conséquences numériques sont détaillées.
@@ -136,7 +138,7 @@ Avec les valeurs de la figure, pour $k_p=4$, le pic passe d’environ 30 à 1,5 
 
 Parmi les quatre réglages de la figure 4, retenir $k_p=4$ et $k_d=0,1$ en unités SI : le gain d’amplitude reste entre 1 et environ 1,188, avec un maximum vers 7,8 Hz ; à 10 Hz il vaut 1,159. La déviation en amplitude reste donc inférieure à 20 %. Les réglages sans dérivée ont un pic marqué dans la bande ou à son voisinage et le réglage $(10;0,1)$ atteint déjà 1,30 à 10 Hz. Cette comparaison repose sur le Bode de gain demandé ; une exigence de suivi instantané tenant compte du déphasage demanderait aussi la phase.
 
-![Réponse recalculée avec les inertie et frottement du sujet. La bande verte représente ±20 % de gain d’amplitude jusqu’à 10 Hz.](figures/q13-bode.svg)
+![Réponse recalculée avec l’inertie et le frottement du sujet. La bande verte représente ±20 % de gain d’amplitude jusqu’à 10 Hz.](figures/q13-bode.svg)
 
 ## 2 · Stabilité
 
@@ -226,7 +228,7 @@ Pour piloter la position imposée par le geste volontaire, retenir la bande motr
 
 À la pièce 4 ajouter successivement les pièces 5, 6 et 7, cette dernière portant la main. Les liaisons 4–5, 5–6 et 6–7 sont trois pivots à axes concourants au centre du poignet et indépendants en posture ordinaire. On retrouve les trois rotations de l’épaule, une au coude et trois au poignet, soit sept coordonnées articulaires.
 
-![Chaîne de mobilité du torse à la main. Les articulations du poignet s’enchaînent sur les pièces 4, 5, 6 et 7 et partagent le même centre.](figures/q22-liaisons.svg)
+![Les trois pivots relient séparément l’avant-bras, les deux pièces intermédiaires et la main. À droite, les axes sont représentés dans une posture où ils se coupent en O et sont indépendants.](figures/q22-liaisons.svg)
 
 ### Question 23 · Une configuration singulière
 
@@ -299,7 +301,7 @@ La trajectoire prescrite a un rayon d’environ 15 à 16 cm sur la figure 9. L�
 
 #### Solution
 
-À distance égale de la fibre neutre, les déformations des deux faces d’une lame ont même module en flexion élastique et signes opposés. La fibre à l’extérieur de la courbure s’allonge ($+\epsilon$), la fibre intérieure se comprime ($-\epsilon$). La symétrie du montage reproduit cette alternance sur les jauges de la figure 11. $\epsilon=\Delta L/L$ est sans dimension, éventuellement exprimée en microdéformations.
+À distance égale de la fibre neutre, les déformations des deux faces d’une lame ont même module en flexion élastique et signes opposés. La fibre à l’extérieur de la courbure s’allonge ($+\epsilon$), la fibre intérieure se comprime ($-\epsilon$). Sur la lame dessinée à gauche de la figure 11(b), la jauge inférieure est en traction et la supérieure en compression. Sur la lame de droite, la jauge supérieure est en traction et l’inférieure en compression. Inverser le couple inverse ces quatre signes. $\epsilon=\Delta L/L$ est sans dimension, éventuellement exprimée en microdéformations.
 
 ### Question 30 · Résistance et facteur de jauge
 
@@ -349,7 +351,7 @@ Pour un échantillonnage périodique, deux acquisitions consécutives sont sépa
 
 #### Solution
 
-Le spectre d’une harmonique réelle possède deux raies en $\pm f$. L’échantillonnage répète ces raies tous les $F_e$ : dans $[0,2F_e]$ on trouve $f,F_e-f,F_e+f,2F_e-f$, à permutation près selon $f$. Pour un signal réel de bande positive $[f_m,f_M]$, les copies positives proches de $F_e$ occupent $[F_e-f_M,F_e-f_m]$ et $[F_e+f_m,F_e+f_M]$. Pour isoler la bande originale par passe-bas, il suffit d’avoir $f_M<F_e-f_M$, soit $F_e>2f_M$. Choisir par exemple $f_c=F_e/2$ dans l’intervalle libre. L’inégalité $f_M<4F_e$ donnée seule ne garantit pas cette séparation. Au recouvrement, les fréquences deviennent indiscernables : c’est le **repliement spectral** (aliasing).
+Le spectre d’une harmonique réelle possède deux raies en $\pm f$. L’échantillonnage répète ces raies tous les $F_e$ : dans $[0,2F_e]$ on trouve $f,F_e-f,F_e+f,2F_e-f$, à permutation près selon $f$. À $f=F_e/2$, les deux premières fréquences coïncident, de même que les deux dernières. Les coefficients complexes des raies correspondantes se somment. Une sinusoïde de phase nulle peut ainsi donner des échantillons tous nuls à la limite de Nyquist. Pour un signal réel de bande positive $[f_m,f_M]$, les copies positives proches de $F_e$ occupent $[F_e-f_M,F_e-f_m]$ et $[F_e+f_m,F_e+f_M]$. Pour isoler la bande originale par passe-bas, il suffit d’avoir $f_M<F_e-f_M$, soit $F_e>2f_M$. Choisir par exemple $f_c=F_e/2$ dans l’intervalle libre. L’inégalité $f_M<4F_e$ donnée seule ne garantit pas cette séparation. Au recouvrement, les fréquences deviennent indiscernables : c’est le **repliement spectral** (aliasing).
 
 ![Exemples de spectres échantillonnés sur deux périodes de répétition. Le trait interrompu sépare la bande originale de sa première image.](figures/q35-spectre.svg)
 

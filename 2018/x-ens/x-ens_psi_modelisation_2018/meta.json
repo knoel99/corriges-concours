@@ -11,18 +11,21 @@
   "redaction": "GPT-6.2 Astra · effort Ultra",
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/2018_psi_sujet_modelisation.pdf",
-    "sujet_sha256": "d4f20d833bcb16ca2c2ab29706fa1f4b5229021d084d8fde993298b027a144aa"
+    "sujet_sha256": "d4f20d833bcb16ca2c2ab29706fa1f4b5229021d084d8fde993298b027a144aa",
+    "sha256_sujet": "d4f20d833bcb16ca2c2ab29706fa1f4b5229021d084d8fde993298b027a144aa",
+    "index_jury": "https://www.ens.psl.eu/rapports-et-sujets-2018-psi",
+    "etat_rapport": "Aucun lien vers un rapport pour cette composition dans le tableau PSI 2018 de l’ENS. La vérification repose sur le sujet publié et les calculs indépendants."
   },
   "figures": [
     {
       "fichier": "figures/q13-bode.svg",
       "question": "Q13",
-      "legende": "Réponse recalculée avec les inertie et frottement du sujet. La bande verte représente ±20 % de gain d’amplitude jusqu’à 10 Hz."
+      "legende": "Réponse recalculée avec l’inertie et le frottement du sujet. La bande verte représente ±20 % de gain d’amplitude jusqu’à 10 Hz."
     },
     {
       "fichier": "figures/q22-liaisons.svg",
       "question": "Q22",
-      "legende": "Chaîne de mobilité du torse à la main. Les articulations du poignet s’enchaînent sur les pièces 4, 5, 6 et 7 et partagent le même centre."
+      "legende": "Les trois pivots relient séparément l’avant-bras, les deux pièces intermédiaires et la main. À droite, les axes sont représentés dans une posture où ils se coupent en O et sont indépendants."
     },
     {
       "fichier": "figures/q28-radial.svg",
@@ -51,6 +54,83 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Rédaction des 51 questions sur le bras exosquelette haptique. Lecture du PDF officiel et vérification graphique des réponses fréquentielles, du domaine du poignet, des courbes de trajectoire, des jauges et de la quantification. Cinq figures originales. Vérification de tous les mots du codeur et des conventions contradictoires imprimées. La page ENS de la session présente le rapport de modélisation sans lien."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_maths_b_recentes",
+      "modifications": true,
+      "perimetre": "51 questions et cinq figures. Les lois de suivi et de retard, le bilan autour du pivot mobile, la trajectoire de la figure 9, les deux conventions de jauge et les 65 536 mots du codeur ont été vérifiés. Le nouveau dessin de Q22 représente les trois pivots séparément et leurs trois axes en un point. Q29 repère les quatre jauges sur la figure 11. Q35 distingue le cas où les raies coïncident."
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51"
+    ],
+    "precision": "51 questions et cinq figures. Les lois de suivi et de retard, le bilan autour du pivot mobile, la trajectoire de la figure 9, les deux conventions de jauge et les 65 536 mots du codeur ont été vérifiés. Le nouveau dessin de Q22 représente les trois pivots séparément et leurs trois axes en un point. Q29 repère les quatre jauges sur la figure 11. Q35 distingue le cas où les raies coïncident.",
+    "origine_attestation": {
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "d4f20d833bcb16ca2c2ab29706fa1f4b5229021d084d8fde993298b027a144aa",
+      "perimetre": "51 questions et cinq figures. Les lois de suivi et de retard, le bilan autour du pivot mobile, la trajectoire de la figure 9, les deux conventions de jauge et les 65 536 mots du codeur ont été vérifiés. Le nouveau dessin de Q22 représente les trois pivots séparément et leurs trois axes en un point. Q29 repère les quatre jauges sur la figure 11. Q35 distingue le cas où les raies coïncident.",
+      "commit_edition_anterieure": "eccf72f29c386505dc63072c2ea11d57590fe452"
+    }
+  }
 }
