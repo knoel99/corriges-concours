@@ -15,6 +15,11 @@
       "legende": "Figure 1 — Spectres de Planck et de Rayleigh–Jeans sur les mêmes axes réduits, avec la fréquence rapportée à la fréquence thermique."
     },
     {
+      "question": "23",
+      "fichier": "figures/q23-potentiel-retardateur.svg",
+      "legende": "Énergie potentielle d’un électron entre cathode et anode pour une tension appliquée négative. La hauteur de la barrière fixe le seuil de collecte."
+    },
+    {
       "fichier": "figures/q27-photocourant.svg",
       "question": "27",
       "legende": "Figure 2 — Photocourant en fonction de la tension appliquée pour trois puissances croissantes à fréquence fixée. Les plateaux diffèrent et le seuil est commun."
@@ -66,7 +71,253 @@
       "perimetre": "Révision des éditions brute et guidée avec le sujet et le rapport du jury. Relecture des 44 questions effectivement numérotées entre 1 et 45, de l’électromagnétisme classique aux statistiques des photons. Vérification des spécifications graphiques du photomultiplicateur, calcul des pertes par temps mort et des effets d’une efficacité de détection finie.",
       "agent": "astra_physique",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "tour": 3,
+      "agent": "fui_physique_un",
+      "fournisseur": "codex",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture du fac-similé MP du 17 avril 2024, des trois pages du rapport et des deux solutions pour chacune des 44 questions imprimées. Contrôle du comptage des modes, des signes du potentiel d’arrêt, des lectures graphiques, des statistiques des photons et du photomultiplicateur. Schéma de la barrière de potentiel ajouté à la Q23. La garde et les sauts de page confirment le passage direct de Q31 à Q33."
     }
   ],
-  "date_revision": "2026-11-24"
+  "date_revision": "2026-11-24",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "1",
+        "page_pdf": 3
+      },
+      {
+        "question": "2",
+        "page_pdf": 3
+      },
+      {
+        "question": "3",
+        "page_pdf": 4
+      },
+      {
+        "question": "4",
+        "page_pdf": 4
+      },
+      {
+        "question": "5",
+        "page_pdf": 4
+      },
+      {
+        "question": "6",
+        "page_pdf": 4
+      },
+      {
+        "question": "7",
+        "page_pdf": 4
+      },
+      {
+        "question": "8",
+        "page_pdf": 4
+      },
+      {
+        "question": "9",
+        "page_pdf": 5
+      },
+      {
+        "question": "10",
+        "page_pdf": 5
+      },
+      {
+        "question": "11",
+        "page_pdf": 5
+      },
+      {
+        "question": "12",
+        "page_pdf": 6
+      },
+      {
+        "question": "13",
+        "page_pdf": 6
+      },
+      {
+        "question": "14",
+        "page_pdf": 6
+      },
+      {
+        "question": "15",
+        "page_pdf": 7
+      },
+      {
+        "question": "16",
+        "page_pdf": 7
+      },
+      {
+        "question": "17",
+        "page_pdf": 7
+      },
+      {
+        "question": "18",
+        "page_pdf": 7
+      },
+      {
+        "question": "19",
+        "page_pdf": 8
+      },
+      {
+        "question": "20",
+        "page_pdf": 8
+      },
+      {
+        "question": "21",
+        "page_pdf": 8
+      },
+      {
+        "question": "22",
+        "page_pdf": 9
+      },
+      {
+        "question": "23",
+        "page_pdf": 10
+      },
+      {
+        "question": "24",
+        "page_pdf": 10
+      },
+      {
+        "question": "25",
+        "page_pdf": 10
+      },
+      {
+        "question": "26",
+        "page_pdf": 10
+      },
+      {
+        "question": "27",
+        "page_pdf": 10
+      },
+      {
+        "question": "28",
+        "page_pdf": 10
+      },
+      {
+        "question": "29",
+        "page_pdf": 10
+      },
+      {
+        "question": "30",
+        "page_pdf": 11
+      },
+      {
+        "question": "31",
+        "page_pdf": 11
+      },
+      {
+        "question": "33",
+        "page_pdf": 11
+      },
+      {
+        "question": "34",
+        "page_pdf": 11
+      },
+      {
+        "question": "35",
+        "page_pdf": 11
+      },
+      {
+        "question": "36",
+        "page_pdf": 12
+      },
+      {
+        "question": "37",
+        "page_pdf": 12
+      },
+      {
+        "question": "38",
+        "page_pdf": 12
+      },
+      {
+        "question": "39",
+        "page_pdf": 12
+      },
+      {
+        "question": "40",
+        "page_pdf": 13
+      },
+      {
+        "question": "41",
+        "page_pdf": 13
+      },
+      {
+        "question": "42",
+        "page_pdf": 13
+      },
+      {
+        "question": "43",
+        "page_pdf": 14
+      },
+      {
+        "question": "44",
+        "page_pdf": 14
+      },
+      {
+        "question": "45",
+        "page_pdf": 14
+      }
+    ],
+    "precision": "Lecture du fac-similé MP du 17 avril 2024, des trois pages du rapport et des deux solutions pour chacune des 44 questions imprimées. Contrôle du comptage des modes, des signes du potentiel d’arrêt, des lectures graphiques, des statistiques des photons et du photomultiplicateur. Schéma de la barrière de potentiel ajouté à la Q23. La garde et les sauts de page confirment le passage direct de Q31 à Q33."
+  }
 }
