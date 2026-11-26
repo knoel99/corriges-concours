@@ -1,0 +1,56 @@
+{
+  "slug": "bel_bl_arabe_2017",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Arabe",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "Protection des réfugiés, première entrée en Europe et identités plurielles",
+  "questions": 1,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Analyse et commentaire"
+    ]
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/ecrits-communs-optionnels-ses-2017_1506587060551.pdf#page=20",
+    "sujet_sha256": "bdc658b34f2b80b696b7a912173f1ab822dae1d52727d0732ab0305166620e41",
+    "pages_sujet": "20–23 du PDF, pages imprimées 15–18",
+    "precision": "Cahier écrit commun, série Sciences économiques et sociales. Les documents sont un texte du HCR (2016), un article de Raseef (28 septembre 2016) et un compte rendu signé Omar al-Assad sur Souria Houria (15 juin 2015)."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Analyse et commentaire",
+      "fichier": "figures/protection.svg",
+      "legende": "Le franchissement d’une frontière et le motif du départ éclairent les catégories employées dans le dossier."
+    },
+    {
+      "numero": 2,
+      "question": "Analyse et commentaire",
+      "fichier": "figures/documents.svg",
+      "legende": "Le commentaire confronte la qualification juridique, l’autodéfinition des personnes et l’accès concret aux droits."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "fin_langues_x_interens",
+      "session": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Analyse et commentaire complets en arabe des trois pièces du fascicule commun, lecture guidée, vérification des qualifications et des dates, deux schémas.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}
