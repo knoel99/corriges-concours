@@ -216,7 +216,7 @@ Puisque les vecteurs sont unitaires, pour $i\ne j$ on a $|\alpha|=|\langle v_i,v
 ### Question 4b
 
 > [!INDICATION]
-> Combien de vecteurs se trouvent dans un espace de dimension n ?
+> Une famille de $n+1$ vecteurs peut-elle être libre dans un espace de dimension $n$ ?
 
 #### Solution
 

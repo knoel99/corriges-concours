@@ -85,7 +85,7 @@ Les valeurs propres de $SH$ sont positives par 1.7a. Leur produit est $\det(SH)=
 ### Question 1.8
 
 > [!INDICATION]
-> Après la minoration générale, choisir un $H$ qui rend le produit scalaire au sens matriciel.
+> Après la minoration générale, chercher une matrice $H$ pour laquelle $SH$ est un multiple de l’identité.
 
 #### Solution
 

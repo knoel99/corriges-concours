@@ -31,7 +31,7 @@ On peut prendre comme univers $\{1,\ldots,6\}^2$ indexant les deux faces obtenue
 ### Question 1.3
 
 > [!INDICATION]
-> Utiliser la différence de cubes puis celle des carrés.
+> Factoriser la différence des carrés de $T^3$ et de 1, puis la différence et la somme de deux cubes.
 
 #### Solution
 

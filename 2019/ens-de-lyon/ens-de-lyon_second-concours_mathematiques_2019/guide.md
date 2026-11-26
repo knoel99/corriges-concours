@@ -52,7 +52,7 @@ Posons plus précisément $f=x+ax^3+cx^5+O(x^7)$ et $g=x+bx^3+dx^5+O(x^7)$. On a
 ### Question E.5
 
 > [!INDICATION]
-> Soustraire la formule donnée à celle où f et g sont échangées.
+> Écrire la formule donnée pour les deux compositions, puis retrancher la dérivée de $g\circ f$ de celle de $f\circ g$.
 
 #### Solution
 

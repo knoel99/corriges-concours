@@ -240,7 +240,7 @@ Les deux exponentielles sont indépendantes. En écrivant chaque coefficient du 
 ### Question 3a
 
 > [!INDICATION]
-> La différence entre le plus grand multiple scalaire de l’identité et la seconde matrice est positive.
+> Pour une matrice symétrique $D$, pourquoi $\lambda_{\max}(D)I-D$ est-elle positive ?
 
 #### Solution
 
