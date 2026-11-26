@@ -1,0 +1,61 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_sociologie-les-jeunes-hors-emploi-et-formation-oral_2023",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Sociologie — les jeunes hors emploi et formation (oral)",
+    "annee": 2023,
+    "modalite": "oral"
+  },
+  "intitule": "Commenter les différents points de la conclusion de Francis Kramarz et Martina Viarengo, *Ni en emploi, ni en formation. Des jeunes laissés pour compte* (2015), et les mettre en relation avec un projet de recherche. Le projet personnel du candidat ne figure pas sur le feuillet. L’exposé propose un exemple explicite.",
+  "gabarit": "oral",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://web.archive.org/web/20251023230418id_/https://www.ens.psl.eu/sites/default/files/oral-4.pdf",
+    "sujet_sha256": "d6a4d2055de41f1b3cbde9340951bb93305ef9542baea7649f264fd4de1691ab",
+    "index": "https://www.ens.psl.eu/une-formation-d-exception/admission-concours/international/concours-selection-internationale-0",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://web.archive.org/web/20251023230418id_/https://www.ens.psl.eu/sites/default/files/oral-4.pdf",
+        "url_ens": "https://www.ens.psl.eu/sites/default/files/oral-4.pdf",
+        "sha256": "d6a4d2055de41f1b3cbde9340951bb93305ef9542baea7649f264fd4de1691ab",
+        "pages": 2
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "Les trois familles d’intervention de la conclusion et le résultat à mesurer pour chacune."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire de la conclusion, définition des indicateurs, effets de sélection et projet personnel illustratif."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire"
+    ],
+    "limites": "Fiche 4. Commenter la conclusion de Francis Kramarz et Martina Viarengo et la mettre en relation avec le projet de recherche."
+  }
+}
