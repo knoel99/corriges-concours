@@ -26,21 +26,31 @@ L’échec de la question 2 empêche de justifier directement l’intersection d
 
 Le numéro du sommet est un indice autorisé. Une consultation directe suffit une fois l’ensemble représenté.
 
+Renvoyer le bit d’indice $s$ du tableau indicateur, en $O(1)$.
+
 ### Question 4.2 · Égalité
 
 Pour deux ensembles écrits en indicatrices, l’égalité est coordonnée par coordonnée. Dans le pire cas ils sont égaux et on doit tout lire.
+
+La comparaison s’arrête au premier désaccord ; au pire son coût est $\Theta(N)$.
 
 ### Question 4.3 · Union
 
 Un sommet doit être conservé dès que l’un des deux bits est vrai. Un parcours commun des deux tableaux donne le résultat.
 
+Écrire $C[i]=A[i]\lor B[i]$ pour $i=1,\ldots,N$. Le temps est $\Theta(N)$.
+
 ### Question 4.4 · Union d’une famille
 
 Accumuler une ligne à la fois au lieu de recalculer l’union depuis zéro. La taille d’une ligne vaut $N$, et la création de la ligne résultat a aussi ce coût.
 
+Le coût est $O(N(1+|S|))$ si l’on parcourt directement les éléments de $S$, plus $O(N)$ si sa représentation exige de les retrouver en balayant son indicatrice.
+
 ### Question 4.5 · Compatibilité
 
 Le choix du tableau initial est crucial aux sommets sans fils : une disjonction vide donne faux, une conjonction vide vrai. Remettre ensuite le bit diagonal, puis tester toutes les coordonnées. Le nombre total de lectures de listes de fils est $M$, et chaque fusion de ligne examine $N$ bits.
+
+Le test complet prend $O(N(N+M))$ dans la représentation par lignes de bits et listes de successeurs.
 
 ### Question 5.1 · Itérations sur la figure
 
@@ -78,6 +88,8 @@ Il faut qu’une même cible soit garantie à toutes les branches d’un ET. Par
 
 Le fait qu’un compteur puisse devenir négatif n’augmente pas le coût : seul le passage exact à zéro déclenche un nouvel ajout. Chaque sommet extrait est distinct et un arc ne figure que dans la liste de son extrémité.
 
+Après l’initialisation, le parcours traite au plus $N$ sommets et $M$ arcs, d’où $O(N+M)$.
+
 ### Question 7.2 · Correction et puits ET
 
 Un ET vide est déjà satisfait pour n’importe quelle cible. Pour que l’algorithme fonctionne sur tous les graphes de la première page, l’enfiler dès le départ, même si la cible est ailleurs. Les autres ET attendent le dernier de leurs successeurs, les OU attendent le premier. Un sommet ajouté l’est ainsi toujours à bon droit. Au terme du parcours, aucune règle ne pourrait ajouter un nouveau sommet : la file vide certifie exactement le plus petit ensemble fermé contenant la cible.
@@ -102,6 +114,8 @@ Une branche peut réussir avant la fin du mot grâce à une conjonction vide. Ap
 
 Le choix existentiel d’un automate non déterministe est déjà un OU. Aucun dédoublement du chemin n’est nécessaire. Le cas du mot vide est aussi préservé, car seul l’état initial y est testé.
 
+On conserve les états et les transitions, toutes déclarées de type OU. La taille est $O(|A_1|)$.
+
 ### Question 10 · Complément
 
 Sur une lettre, « il existe un fils qui réussit » devient par négation « tous les fils échouent ». À la fin du mot il suffit de renverser le statut final. Une transition toujours vraie devient toujours fausse et réciproquement. Ces échanges se font localement dans la table.
@@ -110,9 +124,13 @@ Sur une lettre, « il existe un fils qui réussit » devient par négation « to
 
 Plutôt que de construire chacun des arbres de calcul, mémoriser une réponse par état pour le suffixe restant. Quand une lettre est placée devant le suffixe, une seule lecture des transitions suffit à mettre toutes les réponses à jour. Le ET vide vaut vrai même si le suffixe restant est long. Deux tableaux de $|Q|$ bits suffisent.
 
+Renvoyer le bit de l’état initial après lecture inverse, en $O(|w|\,|A|)$ pour $w$ non vide. Sur le mot vide, tester directement l’appartenance de l’état initial aux états finaux.
+
 ### Question 12 · Éliminer l’alternance
 
 Un chemin du nouvel automate transporte toute une rangée de l’arbre. Au départ elle ne contient que la racine. Pour la prochaine rangée, vérifier que chaque ET a tous ses enfants présents et chaque OU au moins un enfant présent. Les rangées pouvant seulement ajouter des obligations, toute rangée réussie fournit les branches requises. Un arbre réussi fournit en retour un chemin de rangées réussies, en fusionnant les obligations identiques. En fin de mot tous les états de la rangée doivent être finaux, ce qui accepte en particulier la rangée vide. Le passage d’états individuels à des parties explique le coût exponentiel.
+
+Avec $q=|Q|$ états dans le premier automate, la construction a au plus $2^q$ états, $2\cdot4^q$ transitions sur l’alphabet binaire et un temps $O(4^q|A_1|)$.
 
 ### Question 13.1 · Borne non déterministe
 
