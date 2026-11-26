@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 La question centrale est de choisir des cycles indépendants dont le poids total est minimal. On construit d’abord des cycles autour d’un arbre. Une contrainte de parité transforme ensuite la recherche d’un cycle léger en recherche d’un plus court chemin.
 
 ## Partie 1. Arbres couvrants et cycles fondamentaux
@@ -130,7 +132,7 @@ meilleur ← infini
 pour s de 1 à n :
     (d, chemin) ← PlusCourteChaine(G, S[i], s)
     si d < meilleur : (meilleur, témoin) ← (d, chemin)
-renvoyer le vecteur de parité du témoin
+renvoyer le vecteur de parité du témoin par la boucle de 2(b)
 ```
 
 L’existence d’un cycle impair assure un minimum fini. Avec l’algorithme admis, le temps pour un cycle est $O(n(m+n\log n))$, y compris le dernier parcours du témoin. La recherche entière demande $N$ fois ce temps et $O(N^3+mN)$ pour les supports de 2.3. Puisque $N\le m$ et $n\le m+1$, la borne demandée est $O(m^3+mn^2\log n)$.
