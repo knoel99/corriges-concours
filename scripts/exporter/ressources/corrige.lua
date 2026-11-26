@@ -240,7 +240,14 @@ end
 
 -- Parcours dans l'ordre du document (le compteur d'indications en dépend).
 function Pandoc(doc)
-  doc = doc:walk({ Math = Math, Image = Image, Code = Code, Table = Table, Str = Str })
+  -- Pandoc émet lui-même otherlanguage ou foreignlanguage pour lang=ru.
+  local russe_balise = false
+  local function relever_langue(element)
+    if element.attributes.lang == "ru" then russe_balise = true end
+  end
+  doc = doc:walk({ Math = Math, Image = Image, Code = Code, Table = Table, Str = Str,
+                   Div = relever_langue, Span = relever_langue })
+  if russe_balise then doc.meta.russe_balise = true end
   local blocs = pandoc.List()
   for _, b in ipairs(doc.blocks) do
     if b.t == "Header" then

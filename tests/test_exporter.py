@@ -486,6 +486,23 @@ def test_export_arabe_et_francais_dans_la_meme_copie(tmp_path):
 
 
 @pandoc
+def test_export_russe_dans_les_passages_balises(tmp_path):
+    source = (
+        "# Titre\n\nEn français [*сло́во!*]{lang=ru} puis en français.\n\n"
+        "::: {lang=ru}\nОн всё видел?\n:::\n\nÀ bientôt !\n"
+    )
+    tex = ex.generer_tex(source, META, "brut", tmp_path / "ru.tex").read_text()
+    assert r"\babelfont[russian]{rm}" in tex
+    assert r"\foreignlanguage{russian}{\emph{сло́во!}} puis en français." in tex
+    assert r"\begin{otherlanguage}{russian}" in tex
+    assert tex.index(r"\end{otherlanguage}") < tex.index("À bientôt")
+
+    sans_balise = "# Titre\n\nUn mot russe, ёлка, dans une phrase française.\n"
+    temoin = ex.generer_tex(sans_balise, META, "brut", tmp_path / "fr.tex").read_text()
+    assert r"\babelfont[russian]" not in temoin
+
+
+@pandoc
 @pytest.mark.parametrize("matiere", ["Chinois", "Chinois (commentaire et traduction)", "Chinois LVA (ELVi)"])
 def test_export_chinois_bilingue_et_autres_matieres(tmp_path, matiere):
     source = "# Titre\n\nUne comparaison.\n\n大学如何培养人才？\n"

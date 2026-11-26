@@ -38,6 +38,11 @@ $if(hebreu)$
 \babelfont[hebrew]{rm}[Renderer=HarfBuzz,RawFeature={fallback=repliTexte}]{Noto Serif Hebrew}
 \babelfont[hebrew]{sf}[Renderer=HarfBuzz,RawFeature={fallback=repliTexte}]{Noto Sans Hebrew}
 $endif$
+$if(russe_balise)$
+% Si les motifs russes manquent, une langue distincte préserve la ponctuation russe.
+\babelprovide[import,hyphenrules=russian +]{russian}
+\babelfont[russian]{rm}{DejaVu Serif}
+$endif$
 $if(chinois)$
 % Identifie les caractères han et autorise les coupures entre idéogrammes, y compris
 % dans une phrase bilingue. Les groupes de chiffres et la ponctuation restent liés.
