@@ -1,0 +1,221 @@
+{
+  "slug": "banque-pt_pt_maths-a_2012",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths A",
+    "annee": 2012
+  },
+  "questions": 31,
+  "redaction": "Corrigés non officiels rédigés et vérifiés par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2012/math_a_pt_2012.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2012/rapport_math_a_ecrit_2012.pdf",
+    "livret": "https://www.banquept.fr/documents/livret/2012/Livret_PT_2012.pdf#page=12",
+    "additif": "https://www.banquept.fr/documents/livret/2012/Livret_PT_2012_additif.pdf",
+    "sha256_sujet": "c7ed5dd0832efda1e53012a1a759acad31ad5b5b74e1bd4cc5666a310618d346",
+    "pages_sujet": 6,
+    "sha256_rapport_jury": "eb0d9d49025e7bd467a48d29ba6f7e799e2a9d68c0802aabbc5500029c401048",
+    "pages_rapport_jury": 3,
+    "sha256_livret": "778c796c26e1a3f2558523fa548e8d4fe4c92c6e0265a53fc4b63bd98a8c5c62",
+    "pages_livret": 72,
+    "sha256_additif": "d10aedefc4737d46c9e6b490cd004203ece7460d404ea3e60d73ef97ce4cf696",
+    "pages_additif": 1,
+    "coefficients_admissibilite": {
+      "ENS Cachan": 3,
+      "École polytechnique": 6
+    }
+  },
+  "figures": [
+    {
+      "question": "II.3.c",
+      "fichier": "figures/spectre-circulant.svg",
+      "legende": "Spectre de la circulante. Les quatre valeurs non réelles ont pour partie réelle 2,5. La cinquième vaut 15."
+    },
+    {
+      "question": "III.2.a",
+      "fichier": "figures/rotation-orientee.svg",
+      "legende": "Vue du plan perpendiculaire à l’axe orienté. La projection d’un vecteur tourne de 120 degrés dans le sens horaire."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Préliminaire",
+      "I.1",
+      "I.2",
+      "I.3",
+      "II.1",
+      "II.2.a",
+      "II.2.b",
+      "II.3.a",
+      "II.3.b",
+      "II.3.c",
+      "II.4.a",
+      "II.4.b",
+      "II.4.c",
+      "II.4.d.i",
+      "II.4.d.ii",
+      "II.4.d.iii",
+      "II.4.e",
+      "II.5.a",
+      "II.5.b",
+      "II.5.c",
+      "III.1.a",
+      "III.1.b",
+      "III.1.c",
+      "III.2.a",
+      "III.2.b",
+      "III.2.c",
+      "III.2.d",
+      "III.3",
+      "III.4.a",
+      "III.4.b",
+      "III.4.c"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": "Préliminaire",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.1",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.2",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.3",
+        "page_sujet": 2
+      },
+      {
+        "question": "II.1",
+        "page_sujet": 2
+      },
+      {
+        "question": "II.2.a",
+        "page_sujet": 2
+      },
+      {
+        "question": "II.2.b",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.3.a",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.3.b",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.3.c",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.4.a",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.4.b",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.4.c",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.4.d.i",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.4.d.ii",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.4.d.iii",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.4.e",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.5.a",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.5.b",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.5.c",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.1.a",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.1.b",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.1.c",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.2.a",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.2.b",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.2.c",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.2.d",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.3",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.4.a",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.4.b",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.4.c",
+        "page_sujet": 4
+      }
+    ],
+    "precision": "Préliminaire et trois parties, pages 2 à 4. Les pages 5 et 6 du PDF sont blanches. III.4 est traité sous la restriction de signe imprimée, puis pour un paramètre réel quelconque."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modifications": true,
+      "perimetre": "Résolution des trois parties et du préliminaire depuis le fac-similé. Vérification symbolique des matrices, du spectre circulant, des quatre racines carrées et des rotations orientées. Contrôle de la condition de signe en III.4 sur le fac-similé et lecture de l’additif."
+    }
+  ]
+}
