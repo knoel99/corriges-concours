@@ -1,0 +1,108 @@
+{
+  "slug": "x-ens_psi_maths-psi_1999",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "annee": 1999,
+    "matiere": "Maths PSI",
+    "modalite": "écrit"
+  },
+  "intitule": "Composition de mathématiques",
+  "theme": "Méthode de Laplace. Développement asymptotique de n!.",
+  "organisateurs": "École polytechnique et École normale supérieure de Cachan",
+  "identification": "Logos ENS et École polytechnique, 4 heures, marques 950 613 et J. 6151. Le scan ne porte pas de date, de filière ou de titre lisible en garde. Le catalogue UPS identifie la même épreuve sur la méthode de Laplace, le calendrier du ministère confirme la banque commune PSI 1999.",
+  "questions": 30,
+  "sources": {
+    "sujet": "https://www.sujetsetcorriges.fr/dl/X/Maths/PSI/sec-x-1999-maths-PSI.pdf",
+    "sha256_sujet": "4f89915cbf6f79e0bcb094e0d11855eb34ea57bd5b6c61c7676aeac0ecac858d",
+    "pages_sujet": 8,
+    "collection": "https://www.sujetsetcorriges.fr/cpge-spe/x/x-mathematiques/x-ens-maths-psi/",
+    "notice_ups": "m99hsu",
+    "pieces_ups": [
+      {
+        "id": "m99hsu",
+        "type": "énoncé",
+        "auteur": "UPS",
+        "source": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-1e8b52f4d4863ee3e854",
+        "sha256": "51fb208754d1992bebdcf77cf3d7688f6560889f5b8fdd1efe83db3d213d86d8"
+      },
+      {
+        "id": "m99hsu",
+        "type": "corrigé",
+        "auteur": "Jaboeuf",
+        "source": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-4119a2868b33b5e353bc",
+        "sha256": "375e9392d9aad414283c688ab4980a6132b85eae2cb3a1998975120019e30116"
+      }
+    ],
+    "recoupement": "https://www.education.gouv.fr/bo/BoAnnexes/1998/46/46.pdf",
+    "rapport_jury": null,
+    "precision_rapport": "Aucun rapport de jury identifié dans les deux collections consultées."
+  },
+  "figures": [
+    {
+      "fichier": "figures/figure-1.svg",
+      "question": "10",
+      "legende": "Concentration autour du maximum d’une phase logarithmique"
+    },
+    {
+      "fichier": "figures/figure-2.svg",
+      "question": "17",
+      "legende": "Erreur relative de Stirling avant et après la première correction"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "x_maths_b_recentes",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Contrôle de la garde et des parties du fac-similé, résolution de chaque consigne dans les deux éditions, indications par subdivision, figures mathématiques originales et rapprochement avec la notice UPS."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.a",
+      "1.b",
+      "2",
+      "3.a",
+      "3.b",
+      "3.c",
+      "4",
+      "5",
+      "7.a",
+      "7.b",
+      "7.c",
+      "7.d",
+      "8",
+      "9.a",
+      "9.b",
+      "9.c",
+      "9.d",
+      "10",
+      "11.a",
+      "11.b",
+      "12",
+      "13",
+      "14.a",
+      "14.b",
+      "14.c",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19"
+    ],
+    "precision": "Contrôle de la garde et des parties du fac-similé, résolution de chaque consigne dans les deux éditions, indications par subdivision, figures mathématiques originales et rapprochement avec la notice UPS.",
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "perimetre": "Contrôle de la garde et des parties du fac-similé, résolution de chaque consigne dans les deux éditions, indications par subdivision, figures mathématiques originales et rapprochement avec la notice UPS.",
+      "sha256_sujet_controle": "4f89915cbf6f79e0bcb094e0d11855eb34ea57bd5b6c61c7676aeac0ecac858d"
+    }
+  }
+}
