@@ -127,6 +127,7 @@
 | 2025 | Banque PT | PT | Physique B - Thermodynamique | [md](2025/banque-pt/banque-pt_pt_physique-b---thermodynamique_2025/brut.md) | [md](2025/banque-pt/banque-pt_pt_physique-b---thermodynamique_2025/guide.md) |
 | 2015 | Banque PT | PT | Français B | [md](2015/banque-pt/banque-pt_pt_francais-b_2015/brut.md) | [md](2015/banque-pt/banque-pt_pt_francais-b_2015/guide.md) |
 | 2016 | Banque PT | PT | Français B | [md](2016/banque-pt/banque-pt_pt_francais-b_2016/brut.md) | [md](2016/banque-pt/banque-pt_pt_francais-b_2016/guide.md) |
+| 2013 | Banque PT | PT | Français B | [md](2013/banque-pt/banque-pt_pt_francais-b_2013/brut.md) | [md](2013/banque-pt/banque-pt_pt_francais-b_2013/guide.md) |
 | 2026 | Banque PT | PT | Français B | [md](2026/banque-pt/banque-pt_pt_francais-b_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_francais-b_2026/guide.md) |
 | 2023 | Banque PT | PT | Informatique et modélisation | [md](2023/banque-pt/banque-pt_pt_informatique-et-modelisation_2023/brut.md) | [md](2023/banque-pt/banque-pt_pt_informatique-et-modelisation_2023/guide.md) |
 | 2023 | Banque PT | PT | Physique A | [md](2023/banque-pt/banque-pt_pt_physique-a_2023/brut.md) | [md](2023/banque-pt/banque-pt_pt_physique-a_2023/guide.md) |
