@@ -1,0 +1,360 @@
+{
+  "slug": "banque-pt_pt_langue-vivante-a_2017",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Langue vivante A",
+    "annee": 2017
+  },
+  "questions": 5,
+  "redaction": "IA (gpt-6.2-astra)",
+  "figures": [
+    {
+      "fichier": "figures/lecture-de.svg",
+      "question": "Allemand",
+      "legende": "Trois manières d’envisager l’avenir"
+    },
+    {
+      "fichier": "figures/lecture-en.svg",
+      "question": "Anglais",
+      "legende": "Parcours scolaires des personnalités interrogées"
+    },
+    {
+      "fichier": "figures/lecture-ar.svg",
+      "question": "Arabe",
+      "legende": "Ce que mesure la carte en octobre 2016"
+    },
+    {
+      "fichier": "figures/lecture-es.svg",
+      "question": "Espagnol",
+      "legende": "Une ouverture à plusieurs vitesses"
+    },
+    {
+      "fichier": "figures/lecture-it.svg",
+      "question": "Italien",
+      "legende": "PIB par habitant en 2013"
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "agent": "x_maths_b_recentes",
+      "perimetre": "Rédaction des cinq synthèses par langue et du commentaire des vingt-cinq documents du fascicule 2017, contrôle des figures et des décomptes dans les deux éditions."
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2017/lv_a_2017_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2017/rapport_lv_a_ecrit_2017.pdf",
+    "sujet_sha256": "a6372206d1425f36e787b0ba68ad4f5e7005d891e55425e03fe5e32c68d25be6",
+    "rapport_sha256": "c3117ffdc2e76969e556e497fdf72b608e41c783a1b134d0ea745485e731a0d6"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Allemand",
+      "Anglais",
+      "Arabe",
+      "Espagnol",
+      "Italien"
+    ],
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "a6372206d1425f36e787b0ba68ad4f5e7005d891e55425e03fe5e32c68d25be6",
+      "perimetre": "Rédaction des cinq synthèses par langue et du commentaire des vingt-cinq documents du fascicule 2017, contrôle des figures et des décomptes dans les deux éditions.",
+      "controles": [
+        {
+          "nom": "Allemand",
+          "titre": "Die Zukunft als Möglichkeit, nicht als Versprechen",
+          "consigne": "Die Welt der Zukunft: Optimistisch bleiben?",
+          "pages_sujet": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "pages_rapport": [
+            1,
+            2
+          ],
+          "mots_titre_inclus": 459,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                3
+              ],
+              "controle": "Le physicien Kaku part de techniques déjà amorcées et d’entretiens avec trois cents chercheurs pour envisager le siècle à venir."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                4
+              ],
+              "controle": "Katrin Frick projette la médecine connectée, l’enseignement et les achats automatisés à quinze ans. Le profil du client est le prix du service personnalisé."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                5
+              ],
+              "controle": "La prospective sur 2030 distingue les attentes selon les personnes et les régions. L’espace de travail choisi et les organisations moins hiérarchisées relèvent d’une hypothèse."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                6
+              ],
+              "controle": "La suite de silhouettes de Darmstadt reprend la pose de la marche évolutive et la prolonge par un corps mécanique. Son sens reste ouvert."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                6
+              ],
+              "controle": "Le schéma en étoile place les inégalités, les menaces écologiques et les risques sanitaires sur des branches distinctes. Il ne les hiérarchise pas."
+            }
+          ]
+        },
+        {
+          "nom": "Anglais",
+          "titre": "Who gets a place on the ladder?",
+          "consigne": "To what extent do grammar schools raise difficult questions about the British education system?",
+          "pages_sujet": [
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "pages_rapport": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "mots_titre_inclus": 464,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                8
+              ],
+              "controle": "Le témoignage recueilli par la BBC restitue l’ambition sociale de Harold Hill et l’expérience d’une ancienne élève."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                9
+              ],
+              "controle": "Le chroniqueur du Telegraph voit dans les déplacements vers le Kent une demande pour une éducation publique exigeante."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                10
+              ],
+              "controle": "Teaching Times oppose aux promesses d’égalité les frais et conditions d’accès qui avantagent certaines familles."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                11
+              ],
+              "controle": "Le prospectus de Cranbrook associe des élèves en tenue soignée à une promesse d’accès à Oxford, Cambridge ou à des études de médecine."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                11
+              ],
+              "controle": "Les 44 % issus du privé, 27 % des grammar schools et 10 % des comprehensives sont des parts des personnalités interrogées."
+            }
+          ]
+        },
+        {
+          "nom": "Arabe",
+          "titre": "ثمن الرحيل وحدود التضامن مع النازحين",
+          "consigne": "على ضوء الوثائق الخمس المقدمة أدناه، بيّن التحديات التي يواجهها النازحون في بحثهم عن أرض مأمونة.",
+          "pages_sujet": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "pages_rapport": [
+            9,
+            10,
+            11
+          ],
+          "mots_titre_inclus": 455,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                13
+              ],
+              "controle": "Dans les villes syriennes, l’accueil bénévole de familles côtoie la spéculation sur le logement et les vols dans des maisons abandonnées."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                14
+              ],
+              "controle": "Le récit du jeune Marocain met en rapport la précarité de départ, les dangers du voyage et l’incertitude à l’arrivée."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                15,
+                16
+              ],
+              "controle": "L’exode rural en Tunisie modifie simultanément les villages, les liens familiaux et les conditions de vie dans les villes d’accueil."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                16
+              ],
+              "controle": "La carte datée d’octobre 2016 distingue les arrivées par mer des morts et disparus. Les nombres sont arrêtés en cours d’année."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                17
+              ],
+              "controle": "Les papiers de soutien brûlent devant les tentes. Le contraste entre la chaleur du feu et les promesses écrites dénonce l’insuffisance des secours."
+            }
+          ]
+        },
+        {
+          "nom": "Espagnol",
+          "titre": "El precio desigual de la apertura cubana",
+          "consigne": "Analice las consecuencias de la apertura cubana.",
+          "pages_sujet": [
+            18,
+            19,
+            20,
+            21,
+            22
+          ],
+          "pages_rapport": [
+            12,
+            13
+          ],
+          "mots_titre_inclus": 467,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                19
+              ],
+              "controle": "L’enquête de La Vanguardia explique l’accélération des départs par la crainte de perdre le régime migratoire privilégié."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                20
+              ],
+              "controle": "La nouvelle autorisation de sortie demandée à des médecins oppose continuité du service de santé et liberté professionnelle."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                21
+              ],
+              "controle": "L’article sur les artistes montre les échanges culturels permis et les projets de cinéma encore freinés par l’embargo."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                22
+              ],
+              "controle": "L’arrestation photographiée d’une militante des Damas de Blanco remet en cause la portée politique de la normalisation."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                22
+              ],
+              "controle": "La photographie du vendeur de presse juxtapose Granma et Juventud Rebelde, dont les unes presque identiques interrogent le pluralisme."
+            }
+          ]
+        },
+        {
+          "nom": "Italien",
+          "titre": "Due Italie legate dalla stessa questione",
+          "consigne": "In che misura il secolare divario nord-sud è ancora una realtà socio-economica nell’Italia di oggi?",
+          "pages_sujet": [
+            23,
+            24,
+            25,
+            26,
+            27,
+            28
+          ],
+          "pages_rapport": [
+            14
+          ],
+          "mots_titre_inclus": 452,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                24
+              ],
+              "controle": "Galasso situe les origines médiévales du dualisme et insiste sur les échanges entre les deux parties du pays."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                25
+              ],
+              "controle": "Le rapport Svimez rapproche contraction de l’économie, pauvreté et difficultés d’emploi des femmes et des jeunes."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                26
+              ],
+              "controle": "Panorama relie les investissements inaboutis et les transports déficients au départ des jeunes qualifiés."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                27
+              ],
+              "controle": "Les séries régionales distinguent PIB et consommation finale des ménages par habitant, en milliers d’euros courants."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                28
+              ],
+              "controle": "Le dessin de Matera transforme l’accusation d’avoir troué la montagne en anticipation de la valeur culturelle des Sassi."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
