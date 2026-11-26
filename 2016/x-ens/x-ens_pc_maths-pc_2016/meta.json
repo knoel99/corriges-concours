@@ -11,7 +11,8 @@
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/05/16_pc_sujet_maths.pdf",
     "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/11/16_pc_rap_emath.pdf",
-    "sha256_sujet": "61c267432021cd324e9ad33c43eb8115afa20bdfd3c2aaab0dd87e293ac55a00"
+    "sha256_sujet": "61c267432021cd324e9ad33c43eb8115afa20bdfd3c2aaab0dd87e293ac55a00",
+    "sha256_rapport_jury": "1625a0c546946f780dc0aa892d509e0ab818f41e6e1c2a3212d92cffe24c2a6b"
   },
   "figures": [
     {
@@ -31,6 +32,85 @@
       "perimetre": "Rédaction sur le sujet original et le rapport commun des deux éditions, des exemples d’entropie infinie, de la condition tangentielle, de la Hessienne et de l’unicité sous contraintes. Graphique de la famille exponentielle à deux issues.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Entropie au bord, indépendance deux à deux, unicité sous contraintes, non-attainment possible du minimum et contrôle de la loi du graphique.",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "agent": "rennes_oraux_economie",
+      "session": "rennes_oraux_economie"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4a",
+      "4b",
+      "5a",
+      "5b",
+      "6",
+      "7",
+      "8a",
+      "8b",
+      "9a",
+      "9b",
+      "9c",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14a",
+      "14b",
+      "15",
+      "16",
+      "17",
+      "18a",
+      "18b",
+      "19a",
+      "19b"
+    ],
+    "pages_du_sujet": 4,
+    "pages_pdf_des_questions": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4a": 2,
+      "4b": 2,
+      "5a": 2,
+      "5b": 2,
+      "6": 2,
+      "7": 2,
+      "8a": 2,
+      "8b": 2,
+      "9a": 2,
+      "9b": 2,
+      "9c": 3,
+      "10": 3,
+      "11": 3,
+      "12": 3,
+      "13": 3,
+      "14a": 3,
+      "14b": 3,
+      "15": 4,
+      "16": 4,
+      "17": 4,
+      "18a": 4,
+      "18b": 4,
+      "19a": 4,
+      "19b": 4
+    },
+    "precision": "Pages du fac-similé institutionnel, garde incluse. Le numéro désigne le début de la demande imprimée."
+  }
 }

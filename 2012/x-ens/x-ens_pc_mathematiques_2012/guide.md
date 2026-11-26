@@ -4,148 +4,338 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Comment passer d'une équation logistique scalaire à la stabilité d'un équilibre dans le plan ? Le fil conducteur est l'unicité des trajectoires. Des estimations en norme permettent ensuite de contrôler la perturbation d'un système linéaire stable.
 
 ## Partie préliminaire · Norme d'opérateur
 
 ### Question 1 · Axiomes d'une norme
 
-Vérifiez d'abord que le nombre est défini : la fonction mesurée atteint son maximum sur la boule unité. Pour la séparation, il suffit de tester les vecteurs de base. Un scalaire sort de la norme en valeur absolue. Pour la somme, appliquez l'inégalité triangulaire avant de prendre le supremum sur les vecteurs.
+> [!INDICATION]
+> Tester la norme sur les vecteurs de base pour la séparation. La compacité de la boule unité garantit la finitude.
+
+#### Solution
+
+La boule unité fermée est compacte et $x\mapsto\|Ax\|$ continue ; le supremum $N(A)$ est fini et positif au sens large. Si $N(A)=0$, toutes les colonnes $Ae_j$ sont nulles, donc $A=0$, et la réciproque est immédiate. L'homogénéité de la norme euclidienne donne $N(cA)=|c|N(A)$. Enfin $\|(A+B)x\|\le N(A)+N(B)$ pour $\|x\|\le1$, d'où l'inégalité triangulaire.
 
 ### Question 2 · Sous-multiplicativité
 
-Le vecteur $Bx$ ne se trouve pas nécessairement dans la boule unité. La définition s'applique à $Bx/\|Bx\|$ s'il est non nul, puis on remet le facteur. On obtient deux majorations successives, une par opérateur.
+> [!INDICATION]
+> Normaliser le vecteur intermédiaire avant d’appliquer la définition.
+
+#### Solution
+
+Pour tout $y$, $\|Ay\|\le N(A)\|y\|$ en normalisant $y$ s'il est non nul. Appliquer cette inégalité à $y=Bx$ puis à $B$ donne $\|ABx\|\le N(A)N(B)\|x\|$. Prendre le supremum sur la boule unité.
 
 ## Partie 1 · Équation logistique
 
 ### Question 3 · Problème maximal
 
-Il suffit ici de vérifier la régularité du second membre. L'existence et l'unicité locales, puis l'existence de l'intervalle maximal, relèvent du théorème annoncé. L'étendue de cet intervalle sera déterminée pour les données de la question suivante.
+> [!INDICATION]
+> Vérifier les hypothèses du théorème de Cauchy sur le champ scalaire.
+
+#### Solution
+
+Le champ $u\mapsto au(1-u/b)$ est polynomial, donc $C^1$ sur $\mathbb R$. Le théorème du sujet fournit une unique solution maximale sur un intervalle ouvert $I$ contenant $0$, pour tout $y_0\in\mathbb R$.
 
 ### Question 4a · Invariance de l'intervalle
 
-Aux deux bords du domaine souhaité, le champ s'annule. Chaque bord est donc une trajectoire constante. Deux trajectoires distinctes ne peuvent avoir le même point à la même date par unicité, en temps croissant comme décroissant. La trajectoire qui commence entre les deux y reste.
+> [!INDICATION]
+> Comparer la trajectoire aux deux solutions constantes et invoquer l’unicité au temps de rencontre.
+
+#### Solution
+
+Les constantes $0$ et $b$ sont solutions globales. Si la solution issue de $0<y_0<b$ en rencontrait une au temps $t_*$, l'unicité au temps $t_*$ les ferait coïncider jusque $0$, contradiction. La continuité interdit alors de sortir de $]0,b[$.
 
 ### Question 4b · Séparation des variables
 
-Avant de diviser, utilisez 4a pour garantir que le dénominateur ne s'annule jamais. Choisissez une primitive qui vaut zéro en $y_0$. Sa composition avec la solution a une dérivée constante $a$, ce qui justifie la séparation rigoureusement, aussi pour $t<0$.
+> [!INDICATION]
+> Construire une primitive de la fraction rationnelle sur l’intervalle invariant.
+
+#### Solution
+
+Sur $]0,b[$, soit $H(v)=\int_{y_0}^v [u(1-u/b)]^{-1}du$. Alors $(H\circ y)'=y'/[y(1-y/b)]=a$ et $H(y_0)=0$. L'intégration entre $0$ et $t$ donne $H(y(t))=at$.
 
 ### Question 4c · Formule globale
 
-L'intégration fournit le logarithme du rapport entre la hauteur et sa distance au plafond $b$. Ce rapport est donc multiplié par $e^{at}$ depuis l'instant initial. Isolez $y(t)$ pour obtenir $b/[1+((b-y_0)/y_0)e^{-at}]$. Vérifiez la dérivée de cette expression, définie sur toute la droite, pour conclure au prolongement maximal.
+> [!INDICATION]
+> Décomposer le dénominateur en éléments simples et examiner les zéros éventuels du dénominateur obtenu.
+
+#### Solution
+
+La décomposition $1/[u(1-u/b)]=1/u+1/(b-u)$ donne
+\[
+\log\frac{y(t)}{b-y(t)}-\log\frac{y_0}{b-y_0}=at,\qquad
+y(t)=\frac{b}{1+(b/y_0-1)e^{-at}}.
+\]
+Le dénominateur est strictement positif sur $\mathbb R$. La formule globale satisfait l'équation et la donnée initiale ; la maximalité impose $I=\mathbb R$.
 
 ![Figure 1 — Pour a et b égaux à un, trois données initiales donnent trois solutions entre les deux équilibres.](figures/trajectoires-logistiques.svg)
 
 ### Question 4d · Limites
 
-Dans le dénominateur de 4c, le terme exponentiel disparaît vers le futur et croît sans borne vers le passé. Les deux équilibres de 4a sont ainsi les deux limites, dans cet ordre temporel : de zéro à $b$.
+> [!INDICATION]
+> Faire varier le signe du temps dans l’exponentielle de la formule explicite.
+
+#### Solution
+
+Puisque $(b/y_0-1)>0$, la formule donne $y(t)\to b$ quand $t\to+\infty$ et $y(t)\to0$ quand $t\to-\infty$.
 
 ## Partie 2 · Systèmes linéaires autonomes
 
 ### Question 5 · Opérateur d'évolution
 
-Fixez le temps d'observation et faites varier le point de départ. La superposition est justifiée en vérifiant l'équation puis la valeur initiale. Pour l'injectivité, deux solutions qui se rejoignent à l'arrivée coïncident par unicité à cette date. Elles sont globales dans le cas linéaire, donc ont aussi la même valeur à zéro.
+> [!INDICATION]
+> Comparer les solutions issues d’une combinaison linéaire et utiliser l’unicité en un temps quelconque.
+
+#### Solution
+
+Toute combinaison linéaire des solutions issues de $U,V$ est solution pour la combinaison des données correspondantes. L'unicité assure donc la linéarité de $\phi_A(t;\cdot)$. Si elle envoie $U$ sur zéro, l'unicité au temps $t$ avec la solution nulle entraîne $U=0$. En dimension finie, cette application linéaire injective est bijective ; sa matrice est $e_A(t)\in GL_n(\mathbb R)$.
 
 ### Question 6a · Dérivée de la matrice
 
-Choisissez les vecteurs de la base canonique comme données initiales. Les coordonnées des trajectoires obtenues sont exactement les entrées de la matrice. Leur régularité et leur équation différentielle donnent celles de la matrice entière.
+> [!INDICATION]
+> Chaque colonne correspond à une donnée initiale de la base canonique.
+
+#### Solution
+
+La colonne $j$ de $e_A(t)$ est la solution de donnée $e_j$. Elle est $C^1$ et sa dérivée est son produit à gauche par $A$. Colonne par colonne, $e_A$ est $C^1$ et $e_A'=Ae_A$.
 
 ### Question 6b · Composition des temps
 
-Faites d'abord évoluer une donnée pendant $s$, puis redémarrez l'horloge. Le champ autonome n'a pas changé. En prouvant l'égalité pour toute donnée initiale vous obtenez une identité matricielle. L'addition des durées commute, donc les deux opérateurs d'évolution commutent également.
+> [!INDICATION]
+> Décaler l’origine du temps et écrire deux solutions issues du même vecteur.
+
+#### Solution
+
+$e_A(0)U=U$ pour tout $U$, donc $e_A(0)=I_n$. À $s$ fixé, $t\mapsto e_A(t+s)U$ et $t\mapsto e_A(t)e_A(s)U$ vérifient la même équation et ont la même valeur $e_A(s)U$ à zéro. L'unicité pour tout $U$ donne $e_A(t+s)=e_A(t)e_A(s)$. Échanger $s,t$ donne l'autre ordre.
 
 ### Question 6c · Retour en arrière
 
-Un trajet de durée $t$ suivi d'un trajet de durée opposée a durée totale zéro. Sa matrice est l'identité. La formule de composition fournit l'inverse dans les deux ordres.
+> [!INDICATION]
+> Composer les évolutions aux temps opposés.
+
+#### Solution
+
+La relation 6b avec $s=-t$ donne $e_A(t)e_A(-t)=e_A(-t)e_A(t)=I_n$. D'où $e_A(-t)=e_A(t)^{-1}$.
 
 ### Question 7a · Changement de base
 
-Pour $Y'=AY$, posons $U=P^{-1}Y$. L'équation devient $U'=(P^{-1}AP)U$. À l'instant initial, puis à l'arrivée, traduisez les coordonnées à l'aide de $P$ et $P^{-1}$. Cette opération conjugue aussi la matrice d'évolution.
+> [!INDICATION]
+> Conjuguer le système et comparer les colonnes avec les conditions initiales.
+
+#### Solution
+
+La matrice $F(t)=P^{-1}e_A(t)P$ vérifie $F'=(P^{-1}AP)F$ et $F(0)=I_n$. Par unicité appliquée à ses colonnes, $F=e_{P^{-1}AP}$.
 
 ### Question 7b · Cas diagonal
 
-Aucune coordonnée n'entre dans l'équation d'une autre. Chacune évolue suivant une exponentielle scalaire, et une coordonnée initialement nulle reste nulle. Cela fournit les colonnes diagonales de l'évolution.
+> [!INDICATION]
+> Écrire une équation scalaire par coordonnée.
+
+#### Solution
+
+Pour $A=\mathrm{diag}(\lambda_i)$, les équations $y_i'=\lambda_i y_i$ sont découplées. Donc $y_i(t)=e^{t\lambda_i}y_i(0)$ et $e_A(t)=\mathrm{diag}(e^{t\lambda_i})$.
 
 ### Question 7c · Calcul explicite
 
-Le polynôme caractéristique est $(X-2)(X-3)$. Dans la base formée de $(1,1)$ et $(2,1)$, l'évolution multiplie donc ces colonnes par $u=e^{2t}$, $v=e^{3t}$. Le vecteur $(x,y)$ s'écrit $(2y-x)(1,1)+(x-y)(2,1)$. Après évolution, ses coordonnées sont $(2v-u)x+(2u-2v)y$ et $(v-u)x+(2u-v)y$.
+> [!INDICATION]
+> Identifier les deux espaces propres avant de calculer leurs projecteurs.
+
+#### Solution
+
+La matrice $\left(\begin{smallmatrix}4&-2\\1&1\end{smallmatrix}\right)$ a les valeurs propres $2,3$ avec vecteurs propres $(1,1)$ et $(2,1)$. Ses projecteurs spectraux sont $3I-A$ et $A-2I$. En posant $u=e^{2t},v=e^{3t}$, on obtient
+\[
+e_A(t)=u(3I-A)+v(A-2I)=
+\begin{pmatrix}2v-u&2u-2v\\v-u&2u-v\end{pmatrix}.
+\]
+
+On peut vérifier les deux conditions initiales sans recalculer une matrice inverse. Les projecteurs ont pour somme $I$ et $2(3I-A)+3(A-2I)=A$. La formule donne donc à la fois $e_A(0)=I$ et $e'_A(0)=A$.
 
 ### Question 8a · Inégalité de Gronwall
 
-Le membre droit a une dérivée connue, même si $\varphi$ n'est que continue. Multipliez-le par le facteur intégrant $e^{-\beta t}$. La dérivée ainsi obtenue a le signe de $\varphi-H$, négatif ou nul, et la valeur initiale contrôle toute la suite.
+> [!INDICATION]
+> Remplacer la quantité inconnue par son majorant intégral, puis dériver après multiplication par une exponentielle.
+
+#### Solution
+
+Avec $H(t)=\alpha+\beta\int_0^t\varphi$, l'hypothèse est $\varphi\le H$. Donc $(e^{-\beta t}H)'=\beta e^{-\beta t}(\varphi-H)\le0$. Sa valeur initiale vaut $\alpha$, d'où $\varphi(t)\le H(t)\le\alpha e^{\beta t}$.
 
 ### Question 8b · Majoration dans les deux sens du temps
 
-Travaillez d'abord vers les temps positifs pour garder le bon sens de l'inégalité intégrale. Les normes de $I$ et d'un produit sont contrôlées par 1 et 2. Pour les temps négatifs, recommencez le même raisonnement avec le champ linéaire opposé et la durée positive $|t|$.
+> [!INDICATION]
+> Distinguer les temps positifs et négatifs en appliquant le résultat précédent au système renversé.
+
+#### Solution
+
+Pour $t\ge0$, intégrer $e_A'=Ae_A$ puis prendre la norme donne $N(e_A(t))\le1+N(A)\int_0^t N(e_A(s))\,ds$. Par 8a, $N(e_A(t))\le e^{N(A)t}$. Pour $t<0$, $u\mapsto e_A(-u)$ résout l'équation de matrice $-A$ et vaut $I$ en zéro. Puisque $N(-A)=N(A)$, la borne est $e^{N(A)|t|}$ pour tout réel $t$.
 
 ### Question 9a · Variation de la constante
 
-Introduisez une donnée initiale variable $V$ en écrivant $Z=e_A V$. Le produit est dérivable si $V$ l'est. Pour fournir le second membre $g$, il faut $V'=e_A(-t)g(t)$ ; cette fonction est continue, donc son intégrale définit $V$ pour tout temps. La valeur en zéro fixe la constante.
+> [!INDICATION]
+> Vérifier la donnée initiale et différencier le produit avec une primitive vectorielle.
+
+#### Solution
+
+L'intégrande $e_A(-s)g(s)$ est continue sur $\mathbb R$, donc $V(t)=Z_0+\int_0^t e_A(-s)g(s)\,ds$ est $C^1$. Pour $Z=e_A V$, on a $Z(0)=Z_0$ et $Z'=Ae_AV+e_A(t)e_A(-t)g(t)=AZ+g$. La formule définit une solution globale.
 
 ### Question 9b · Unicité avec second membre
 
-Retrancher deux solutions fait disparaître exactement le terme imposé $g$. La nouvelle équation est homogène et commence à zéro. Sa solution maximale est identiquement nulle, donc toute restriction sur un intervalle contenant zéro l'est aussi.
+> [!INDICATION]
+> Soustraire les solutions pour éliminer le second membre.
+
+#### Solution
+
+La différence $\widetilde Z-Z$ vérifie $W'=AW$ et $W(0)=0$. L'unicité du problème homogène identifie cette différence à zéro sur l'intervalle commun. La formule précédente est l'unique solution de la donnée.
 
 ### Question 10a · Terme forcé négligeable
 
-Multipliez la solution par le poids dont vous voulez tester la négligeabilité. Il reste une équation stable de taux $\lambda+a<0$ forcée par un terme qui tend vers zéro. Redémarrez au temps où ce terme devient inférieur à $\eta$ en valeur absolue. La donnée ancienne est amortie exponentiellement et le terme récent est borné par $\eta/|\lambda+a|$. Faites ensuite tendre $\eta$ vers zéro.
+> [!INDICATION]
+> Séparer la contribution ancienne du forçage récent dans l’équation après changement d’inconnue.
+
+#### Solution
+
+Posons $h(t)=e^{at}g(t)\to0$, $w(t)=e^{at}y(t)$ et $c=-(\lambda+a)>0$. Alors $w'=-cw+h$. Pour tout $\eta>0$, choisir $M$ tel que $|h(s)|\le\eta$ pour $s\ge M$. La variation de la constante donne
+\[
+|w(t)|\le e^{-c(t-M)}|w(M)|+\frac{\eta}{c}(1-e^{-c(t-M)}).
+\]
+La limite supérieure est au plus $\eta/c$ pour tout $\eta$, donc $w\to0$.
 
 ### Question 10b · Système triangulaire
 
-Commencez par la dernière ligne, car le triangle supérieur la laisse indépendante. Remontez ensuite d'une ligne à la fois. Les termes venant des lignes déjà traitées forment le petit second membre de 10a. La dimension étant finie, le résultat coordonnée par coordonnée entraîne celui sur la norme.
+> [!INDICATION]
+> Commencer à la dernière coordonnée de la triangulaire et remonter.
+
+#### Solution
+
+La dernière coordonnée vérifie $y_n'=\lambda_n y_n$ et est $o(e^{-at})$. Si toutes les coordonnées d'indice $>i$ le sont, leur combinaison $g_i=\sum_{j>i}a_{ij}y_j$ l'est aussi. L'équation $y_i'=\lambda_i y_i+g_i$ satisfait 10a. Par récurrence descendante, toutes les coordonnées, puis la norme, sont $o(e^{-at})$.
 
 ### Question 10c · Décroissance en norme d'opérateur
 
-Le même taux $a$ doit convenir à toutes les directions. Prenez-le strictement sous le plus petit taux de décroissance des valeurs propres, triangulez, puis testez les colonnes de la matrice d'évolution. Une somme finie de leurs normes contrôle uniformément toutes les données initiales de norme au plus un. Revenez à la base initiale par 7a.
+> [!INDICATION]
+> Choisir un taux strictement inférieur au plus petit taux de décroissance avant de changer de base.
+
+#### Solution
+
+Choisir $0<a<-\max\mathrm{Sp}(A)$. Le polynôme caractéristique scindé autorise une triangularisation réelle $A=PTP^{-1}$. Pour toute colonne $e_T(t)e_j$, 10b donne une norme $o(e^{-at})$. L'inégalité de Cauchy-Schwarz majore $N(e_T(t))$ par $\big(\sum_j\|e_T(t)e_j\|^2\big)^{1/2}=o(e^{-at})$. La conjugaison coûte seulement le facteur fixe $N(P)N(P^{-1})$.
 
 ### Question 11a · Valeurs propres complexes
 
-Toute valeur propre doit être racine du polynôme donné. Il existe une valeur propre complexe et sa conjuguée est également racine du polynôme caractéristique réel, avec la même multiplicité. Cela organise toutes les racines par paires.
+> [!INDICATION]
+> Utiliser le polynôme annulateur puis la conjugaison des racines d’un polynôme réel.
+
+#### Solution
+
+Le polynôme annulateur $X^2+1$ impose des valeurs propres dans $\{\mathrm i,-\mathrm i\}$. Comme $A$ est réelle et $n\ge1$, les deux apparaissent et leurs multiplicités algébriques sont égales par conjugaison. Ainsi $n$ est pair.
 
 ### Question 11b · Conservation de la norme
 
-Le champ est orthogonal à la position : l'antisymétrie de $A$ donne $\langle AY,Y\rangle=0$. La vitesse ne modifie donc pas la norme. Chaque vecteur unitaire reste unitaire, d'où un supremum exactement égal à un.
+> [!INDICATION]
+> Relier la transposée à l’inverse et dériver le carré de la norme euclidienne.
+
+#### Solution
+
+$A^{-1}=-A$ et l'orthogonalité donne $A^{\mathsf T}=-A$. Donc $(\|Y\|^2)'=Y^{\mathsf T}(A+A^{\mathsf T})Y=0$ pour toute solution. L'application $e_A(t)$ conserve les normes et $N(e_A(t))=1$ à tout temps.
 
 ## Partie 3 · Systèmes non linéaires et stabilité
 
 ### Question 12a · Direction limite
 
-Projetez la vitesse sur le vecteur fixe $f(l)$. Cette quantité scalaire a une limite strictement positive dans l'hypothèse de contradiction ; la moitié de cette limite est une borne inférieure à partir d'un certain temps.
+> [!INDICATION]
+> Si la limite du champ est non nulle, projeter la vitesse sur sa direction.
+
+#### Solution
+
+Si $Y(t)\to l$, alors $Y'=f(Y)\to f(l)$ par continuité. Pour $f(l)\ne0$, $\langle Y'(t),f(l)\rangle\to\|f(l)\|^2>0$ et finit par être au moins $\|f(l)\|^2/2$.
 
 ### Question 12b · Dérive de la projection
 
-La dérivée de la projection de la position sur $f(l)$ est la projection de la vitesse. Intégrer la minoration constante de cette dérivée entre $M$ et $t$ fournit la minoration affine demandée.
+> [!INDICATION]
+> Intégrer la minoration de la projection de la vitesse.
+
+#### Solution
+
+Intégrer 12a sur $[M,t]$ donne $\langle Y(t),f(l)\rangle\ge\langle Y(M),f(l)\rangle+(t-M)\|f(l)\|^2/2$ pour $t\ge M$.
 
 ### Question 12c · Nécessité d'un équilibre
 
-Une trajectoire convergente a toutes ses projections bornées. Celle de 12b ne pourrait l'être si la vitesse limite était non nulle. Toute limite finie doit donc annuler le champ.
+> [!INDICATION]
+> Comparer la divergence de la projection à la convergence de la trajectoire.
+
+#### Solution
+
+La projection $\langle Y(t),f(l)\rangle$ converge vers $\langle l,f(l)\rangle$ alors que sa borne inférieure tendrait vers $+\infty$. La contradiction impose $f(l)=0$.
 
 ### Question 13a · Rotation uniforme
 
-Écrivez $w=y+\mathrm iz$. On obtient $w'=-\mathrm iw$, donc $w(t)=w(0)e^{-\mathrm it}$ sur toute la droite. Le module reste fixe tandis que l'argument décroît au rythme de un radian par unité de temps, sauf pour la solution nulle.
+> [!INDICATION]
+> Identifier l’orientation en calculant la vitesse initiale.
+
+#### Solution
+
+Pour $\alpha=0$, la solution globale est $(y_0\cos t+z_0\sin t,-y_0\sin t+z_0\cos t)$. C'est le cercle de centre zéro et de rayon $\|Y_0\|$, parcouru dans le sens horaire à vitesse angulaire un ; si $Y_0=0$, la courbe est réduite à un point.
 
 ### Question 13b · Attraction pour un coefficient négatif
 
-Dérivez le carré du rayon. Les termes $yz$ et $-zy$ s'annulent, laissant une équation scalaire. Tant que le rayon est non nul, $(1/q)'=-2\alpha$. Pour $\alpha<0$ l'inverse du carré du rayon croît linéairement et la trajectoire se rapproche de l'origine. Si elle y est déjà, elle y reste.
+> [!INDICATION]
+> Dériver la norme au carré pour éliminer la rotation.
+
+#### Solution
+
+La solution initialement nulle est constante. Sinon elle évite zéro par unicité. Pour $q=\|Y\|^2$, on a $q'=2\alpha q^2$ car la partie de rotation est orthogonale à $Y$. Ainsi $q(t)=q(0)/(1-2\alpha q(0)t)$ sur son intervalle. Si $\alpha<0$, le dénominateur tend vers $+\infty$ dans le futur, donc $Y(t)\to0$.
 
 ### Question 13c · Explosion en temps fini
 
-Le temps $T$ est le premier zéro du dénominateur de 13b. Si la solution existe jusqu'à tout $t<T$, son rayon devient arbitrairement grand lorsque $t$ approche $T$. Si elle devait être définie à $T$ ou après, son intervalle contiendrait $T$ et cette divergence contredirait la continuité. La figure compare les trois signes de $\alpha$.
+> [!INDICATION]
+> La même équation scalaire donne le temps de divergence. Vérifier où la solution explicite est définie.
+
+#### Solution
+
+Pour $\alpha>0$ et $Y_0\ne0$, la même identité donne $\|Y(t)\|=\|Y_0\|/\sqrt{1-t/T}$ avec $T=1/(2\alpha\|Y_0\|^2)$. Sur $[0,T[$ cette norme diverge à gauche de $T$. Un intervalle maximal contenant $0$ ne peut contenir $T$ ni un point au-delà, car une solution y serait continue et de valeur finie. Donc $I\subset]-\infty,T[$.
+
+Plus explicitement, avec $R(t)=\left(\begin{smallmatrix}\cos t&\sin t\\-\sin t&\cos t\end{smallmatrix}\right)$, la fonction $Y(t)=(1-t/T)^{-1/2}R(t)Y_0$ vérifie le système pour tout $t<T$. Sa dérivée additionne la rotation et le terme $\alpha\|Y(t)\|^2Y(t)$. L’unicité, puis la divergence de la norme, donnent même l’intervalle maximal $]-\infty,T[$.
 
 ![Figure 2 — Pour un rayon initial égal à un, la norme décroît, reste constante ou diverge selon le signe du paramètre. La branche croissante a pour temps limite 1.](figures/rayon-nonlineaire.svg)
 
 ### Question 14a · Jacobienne à l'origine
 
-Commencez par passer à la limite dans l'hypothèse pour déterminer la valeur du champ à l'origine. Une fois cette valeur soustraite, le reste est négligeable devant la norme de l'accroissement. L'application linéaire du développement est précisément la jacobienne.
+> [!INDICATION]
+> Utiliser la définition de la différentiabilité en zéro.
+
+#### Solution
+
+La continuité et $f(x)=Ax+o(\|x\|)$ imposent $f(0)=0$. Alors $f(x)-f(0)-Ax=o(\|x\|)$ est la définition de la différentiabilité en zéro de différentielle $A$, donc $Df(0)=A$.
 
 ### Question 14b · Inégalité de perturbation
 
-Traitez l'écart du système non linéaire au système linéaire comme un second membre connu le long de la trajectoire. Un apport à l'instant $s$ est propagé pendant $t-s$. Sa norme est donc multipliée au plus par $Ke^{-a(t-s)}$. La borne par $\varepsilon\|Y(s)\|$ et la mise en facteur de $e^{-at}$ fournissent l'inégalité.
+> [!INDICATION]
+> Appliquer la variation des constantes au système linéaire avec reste.
+
+#### Solution
+
+Par 10c et continuité, il existe $a>0$, $K\ge1$ tels que $N(e_A(t))\le Ke^{-at}$ pour tout $t\ge0$. Posons $g(s)=f(Y(s))-AY(s)$. La variation de la constante et 6b donnent
+\[
+Y(t)=e_A(t)Y_0+\int_0^t e_A(t-s)g(s)\,ds.
+\]
+Si $\|g(s)\|\le\varepsilon\|Y(s)\|$ sur $[0,t]$, prendre les normes et factoriser $Ke^{-at}$ donne exactement $\|Y(t)\|\le Ke^{-at}(\|Y_0\|+\varepsilon\int_0^t e^{as}\|Y(s)\|ds)$.
 
 ### Question 14c · Stabilité exponentielle locale
 
-Le contrôle du reste dépend de la taille de la trajectoire. Choisissez d'abord $\varepsilon$ pour que $K\varepsilon<a$, puis une boule où ce contrôle s'applique. Jusqu'au premier contact avec le bord, Gronwall donne une croissance de $e^{at}\|Y(t)\|$ au plus en $e^{K\varepsilon t}$. En prenant la donnée initiale dans une boule $2K$ fois plus petite, la borne reste à mi-rayon. Le premier contact est donc impossible et l'exponentielle décroissante vaut pour tout temps positif.
+> [!INDICATION]
+> Choisir d’abord la taille du reste, puis la taille de la donnée initiale, et exclure un premier contact avec le bord.
+
+#### Solution
+
+Fixons $\varepsilon=a/(2K)$ et un rayon $\rho>0$ tel que le contrôle du reste vaille pour $\|x\|\le\rho$. Tant que la solution reste dans cette boule, Gronwall appliqué à $e^{at}\|Y(t)\|$ donne $\|Y(t)\|\le K\|Y_0\|e^{-(a-K\varepsilon)t}$. Prenons $\delta=\rho/(2K)$ ; pour $\|Y_0\|\le\delta$, un premier contact avec le bord aurait une norme au plus $\rho/2$, contradiction. L'estimation vaut à tout temps sur la demi-droite supposée incluse dans $I$, avec $b=a/2$ et $C=K\delta$.
 
 ### Question 14d · Application après translation
 
-Recentrer au bon équilibre est essentiel. Les dérivées partielles de la première composante sont $z(1-2y)$ et $y(1-y)$ ; celles de la seconde sont $1$ et $-1$. Au point $(1,1)$ on lit une matrice triangulaire dont les deux valeurs propres valent $-1$. L'hypothèse de la question est exactement que la donnée translatée appartient à la petite boule de 14c. La convergence annoncée s'ensuit.
+> [!INDICATION]
+> Écrire explicitement le champ après avoir déplacé l’origine à l’équilibre.
+
+#### Solution
+
+L'équilibre visé est $(1,1)$. Le champ $F(y,z)=(zy(1-y),y-z)$ y est nul et sa jacobienne est $\left(\begin{smallmatrix}-1&0\\1&-1\end{smallmatrix}\right)$, de spectre $\{-1\}$. Avec $U=(y-1,z-1)$, on obtient $U'=DF(1,1)U+o(\|U\|)$. Par 14c, pour $\|U_0\|\le\delta$ on a $U(t)\to0$ et ainsi $y(t),z(t)\to1$.
+
+En posant $u=y-1$, $v=z-1$, le système translaté s’écrit $u'=-u-u^2-uv-u^2v$, $v'=u-v$. Le reste est bien de l’ordre de $\|(u,v)\|^2$ au voisinage de zéro. La condition initiale imprimée est exactement $\|(u(0),v(0))\|\le\delta$.

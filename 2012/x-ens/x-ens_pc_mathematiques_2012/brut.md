@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 On note $N(A)$ la norme d'opérateur induite par la norme euclidienne et $e_A(t)$ la matrice d'évolution construite à partir du problème de Cauchy. L'existence et l'unicité maximales annoncées dans le sujet sont utilisées sous leurs hypothèses.
 
 ## Partie préliminaire · Norme d'opérateur
@@ -79,6 +81,8 @@ e_A(t)=u(3I-A)+v(A-2I)=
 \begin{pmatrix}2v-u&2u-2v\\v-u&2u-v\end{pmatrix}.
 \]
 
+On peut vérifier les deux conditions initiales sans recalculer une matrice inverse. Les projecteurs ont pour somme $I$ et $2(3I-A)+3(A-2I)=A$. La formule donne donc à la fois $e_A(0)=I$ et $e'_A(0)=A$.
+
 ### Question 8a · Inégalité de Gronwall
 
 Avec $H(t)=\alpha+\beta\int_0^t\varphi$, l'hypothèse est $\varphi\le H$. Donc $(e^{-\beta t}H)'=\beta e^{-\beta t}(\varphi-H)\le0$. Sa valeur initiale vaut $\alpha$, d'où $\varphi(t)\le H(t)\le\alpha e^{\beta t}$.
@@ -145,6 +149,8 @@ La solution initialement nulle est constante. Sinon elle évite zéro par unicit
 
 Pour $\alpha>0$ et $Y_0\ne0$, la même identité donne $\|Y(t)\|=\|Y_0\|/\sqrt{1-t/T}$ avec $T=1/(2\alpha\|Y_0\|^2)$. Sur $[0,T[$ cette norme diverge à gauche de $T$. Un intervalle maximal contenant $0$ ne peut contenir $T$ ni un point au-delà, car une solution y serait continue et de valeur finie. Donc $I\subset]-\infty,T[$.
 
+Plus explicitement, avec $R(t)=\left(\begin{smallmatrix}\cos t&\sin t\\-\sin t&\cos t\end{smallmatrix}\right)$, la fonction $Y(t)=(1-t/T)^{-1/2}R(t)Y_0$ vérifie le système pour tout $t<T$. Sa dérivée additionne la rotation et le terme $\alpha\|Y(t)\|^2Y(t)$. L’unicité, puis la divergence de la norme, donnent même l’intervalle maximal $]-\infty,T[$.
+
 ![Figure 2 — Pour un rayon initial égal à un, la norme décroît, reste constante ou diverge selon le signe du paramètre. La branche croissante a pour temps limite 1.](figures/rayon-nonlineaire.svg)
 
 ### Question 14a · Jacobienne à l'origine
@@ -166,3 +172,5 @@ Fixons $\varepsilon=a/(2K)$ et un rayon $\rho>0$ tel que le contrôle du reste v
 ### Question 14d · Application après translation
 
 L'équilibre visé est $(1,1)$. Le champ $F(y,z)=(zy(1-y),y-z)$ y est nul et sa jacobienne est $\left(\begin{smallmatrix}-1&0\\1&-1\end{smallmatrix}\right)$, de spectre $\{-1\}$. Avec $U=(y-1,z-1)$, on obtient $U'=DF(1,1)U+o(\|U\|)$. Par 14c, pour $\|U_0\|\le\delta$ on a $U(t)\to0$ et ainsi $y(t),z(t)\to1$.
+
+En posant $u=y-1$, $v=z-1$, le système translaté s’écrit $u'=-u-u^2-uv-u^2v$, $v'=u-v$. Le reste est bien de l’ordre de $\|(u,v)\|^2$ au voisinage de zéro. La condition initiale imprimée est exactement $\|(u(0),v(0))\|\le\delta$.
