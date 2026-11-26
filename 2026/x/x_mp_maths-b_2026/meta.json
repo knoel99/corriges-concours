@@ -4,7 +4,11 @@
     "concours": "X",
     "filiere": "MP",
     "matiere": "Maths B",
-    "annee": 2026
+    "annee": 2026,
+    "filiere_commune": [
+      "MP",
+      "MPI"
+    ]
   },
   "questions": 30,
   "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
@@ -45,7 +49,7 @@
       "legende": "Le carré d’un coefficient diagonal intervient une fois dans la trace de X₃². Le carré d’un coefficient hors diagonale y intervient deux fois."
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "revision": {
     "date": "2026-11-22",
     "modele": "Codex (GPT-6)",
@@ -58,7 +62,9 @@
   },
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Maths%20B.pdf",
-    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/MP%2C%20MPI_Maths%20B%20OK.pdf"
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/MP%2C%20MPI_Maths%20B%20OK.pdf",
+    "sha256_sujet": "cf7cc1a6a667fed84f9aef4709b40e658f0ac285bdb081ef5f44091e439a0b09",
+    "sha256_rapport_jury": "f5356fa1301b67308eda0ffbe51709697c7fad5accf730d9e80fb712b1327f56"
   },
   "provenance": {
     "redaction": {
@@ -119,6 +125,62 @@
       "tour": 3,
       "fournisseur": "codex",
       "agent": "relecture_astra_maths_2026"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_maths_b_recentes",
+      "modifications": true,
+      "perimetre": "Vérification des 30 repères du sujet MP-MPI et des sept figures. Contrôle des valeurs aux bords, des coefficients du déterminant, des moments, des deux lois limites et de la troncature polynomiale en 17. Précision sur la translation du polynôme caractéristique en 8a, traitement explicite de P nul en 17b et correction du bilan des taux du jury."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3a",
+      "3b",
+      "3c",
+      "4a",
+      "4b",
+      "5a",
+      "5b",
+      "5c",
+      "5d",
+      "6",
+      "7",
+      "8a",
+      "8b",
+      "8c",
+      "9a",
+      "9b",
+      "10a",
+      "10b",
+      "11",
+      "12",
+      "13a",
+      "13b",
+      "13c",
+      "14",
+      "15",
+      "16",
+      "17a",
+      "17b"
+    ],
+    "precision": "Deux éditions comparées au sujet de 6 pages et au rapport de 5 pages. Vérification des 30 repères du sujet MP-MPI et des sept figures. Contrôle des valeurs aux bords, des coefficients du déterminant, des moments, des deux lois limites et de la troncature polynomiale en 17. Précision sur la translation du polynôme caractéristique en 8a, traitement explicite de P nul en 17b et correction du bilan des taux du jury.",
+    "origine_attestation": {
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "cf7cc1a6a667fed84f9aef4709b40e658f0ac285bdb081ef5f44091e439a0b09",
+      "sha256_rapport_jury_controle": "f5356fa1301b67308eda0ffbe51709697c7fad5accf730d9e80fb712b1327f56",
+      "perimetre": "Vérification des 30 repères du sujet MP-MPI et des sept figures. Contrôle des valeurs aux bords, des coefficients du déterminant, des moments, des deux lois limites et de la troncature polynomiale en 17. Précision sur la translation du polynôme caractéristique en 8a, traitement explicite de P nul en 17b et correction du bilan des taux du jury.",
+      "commit_edition_anterieure": "34e49094aaff4fddb35a28147b148cd92a1d19d6"
+    }
+  }
 }

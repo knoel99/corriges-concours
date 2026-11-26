@@ -6,6 +6,8 @@
 
 **Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
 L’épreuve de Mathématiques B de l’École polytechnique est commune aux filières MP et MPI. Elle dure quatre heures, sans calculatrice. Les 22 numéros officiels donnent 39 réponses élémentaires, chacune accompagnée de son repère d’origine.
@@ -21,9 +23,7 @@ Le sujet mobilise les équations différentielles linéaires, le calcul différe
 
 Les solutions forment un espace de dimension deux. La translation conserve cet espace et son polynôme caractéristique gouverne les solutions périodiques à un facteur exponentiel près.
 
-### Question 1
-
-**Repère officiel · 1a.**
+### Question 1a
 
 > [!INDICATION]
 > Transformez l’équation d’ordre deux en un système d’ordre un et utilisez l’évaluation initiale.
@@ -41,9 +41,7 @@ La première composante est de classe $C^2$, car sa dérivée est la seconde, de
 > [!JURY]
 > Le jury relève que des conditions initiales simplement distinctes ne garantissent pas l’indépendance. Ici, les deux données forment une base de l’espace des conditions initiales.
 
-### Question 2
-
-**Repère officiel · 1b.**
+### Question 1b
 
 > [!INDICATION]
 > Dérivez le déterminant formé par les deux solutions et leurs dérivées.
@@ -52,9 +50,7 @@ La première composante est de classe $C^2$, car sa dérivée est la seconde, de
 
 Pour $W(t)=y_1(t)y_2'(t)-y_1'(t)y_2(t)$, on a $W'=y_1y_2''-y_1''y_2=0$ par (1). Les conditions initiales donnent $W(0)=1$, donc **$W(t)=1$ pour tout $t$**.
 
-### Question 3
-
-**Repère officiel · 2.**
+### Question 2
 
 > [!INDICATION]
 > Vérifiez l’équation pour la translatée, puis relevez ses données initiales.
@@ -63,9 +59,7 @@ Pour $W(t)=y_1(t)y_2'(t)-y_1'(t)y_2(t)$, on a $W'=y_1y_2''-y_1''y_2=0$ par (1). 
 
 Pour $v(t)=y(t+T)$, la périodicité donne $v''(t)=-q(t+T)y(t+T)=-q(t)v(t)$. La solution $v$ a pour données initiales $y(T)$ et $y'(T)$. Par 1a, **$y(t+T)=y(T)y_1(t)+y'(T)y_2(t)$**.
 
-### Question 4
-
-**Repère officiel · 3.**
+### Question 3
 
 > [!INDICATION]
 > Interprétez la translation d’une période comme un endomorphisme de l’espace des solutions.
@@ -83,9 +77,7 @@ La relation (a) signifie que $\mu$ est une valeur propre de $\tau$. Le détermin
 
 Si (a) vaut, posons $u(t)=e^{-\lambda t}y(t)$. Cette fonction est de classe $C^2$ et $u(t+T)=e^{-\lambda T}\mu u(t)=u(t)$, donc (c) vaut. Réciproquement, sous (c), $y(t+T)=e^{\lambda T}e^{\lambda t}u(t)=\mu y(t)$, d’où (a).
 
-### Question 5
-
-**Repère officiel · 4a.**
+### Question 4a
 
 > [!INDICATION]
 > Utilisez le produit des racines et les deux espaces propres de la translation.
@@ -101,9 +93,7 @@ Leurs valeurs propres distinctes rendent ces solutions indépendantes. Par 1a, e
 > [!JURY]
 > Le jury signale une confusion entre produit des racines et conjugaison complexe. L’indépendance des solutions vient de leurs deux valeurs propres distinctes pour la translation.
 
-### Question 6
-
-**Repère officiel · 4b.**
+### Question 4b
 
 > [!INDICATION]
 > Déduisez la racine double du produit et appliquez la translation deux fois si nécessaire.
@@ -118,9 +108,7 @@ Elle est $T$-périodique pour $\mu=1$ et $2T$-périodique pour $\mu=-1$.
 
 La boule fermée permet d’atteindre le minimum. Pour exploiter la différentielle, il faut choisir un minimiseur dans la boule ouverte.
 
-### Question 7
-
-**Repère officiel · 5a.**
+### Question 5a
 
 > [!INDICATION]
 > Intégrez la dérivée de $h$ le long du segment joignant les deux points.
@@ -133,9 +121,7 @@ h(x_2)-h(x_1)=\int_0^1 dh(x(s))(x_2-x_1)\,ds.
 $$
 La norme du membre de droite est majorée par l’intégrale des normes, donc par $C\|x_2-x_1\|$.
 
-### Question 8
-
-**Repère officiel · 5b.**
+### Question 5b
 
 > [!INDICATION]
 > Appliquez 5a à l’écart entre $f$ et l’identité, sur une boule ouverte qui contient la boule fermée choisie.
@@ -156,9 +142,7 @@ $$
 \geq \tfrac12\|x_1-x_2\|.
 $$
 
-### Question 9
-
-**Repère officiel · 5c.**
+### Question 5c
 
 > [!INDICATION]
 > Gardez la direction fixe et appliquez la borne à une perturbation de taille variable.
@@ -169,9 +153,7 @@ Pour $x\in B(a,r)$ et $v\in E$, les points $x+sv$ restent dans la boule pour $s$
 
 Par 5b, pour $s\ne0$ assez petit, $\|(f(x+sv)-f(x))/s\|\geq\|v\|/2$. En passant à la limite en $s=0$, on obtient $\|df(x)v\|\geq \|v\|/2$. Donc **$df(x)$ est injective**, et surjective car c’est un endomorphisme en dimension finie.
 
-### Question 10
-
-**Repère officiel · 6a.**
+### Question 6a
 
 > [!INDICATION]
 > Minimisez d’abord sur la boule fermée, puis comparez la valeur au bord à celle au centre.
@@ -194,9 +176,7 @@ La dernière inégalité utilise $\|y_0-f(a)\|\leq r/4$. Ainsi $g(x)\geq g(a)$ s
 > [!JURY]
 > Le jury relève que la présence éventuelle d’un minimum sur le bord ne permet pas de conclure sans comparer sa valeur à celle en un point intérieur.
 
-### Question 11
-
-**Repère officiel · 6b.**
+### Question 6b
 
 > [!INDICATION]
 > Choisissez une direction dont l’image par $df(x_0)$ est le résidu à annuler.
@@ -212,9 +192,7 @@ Pour $0<s<1$ suffisamment petit, la norme du reste est inférieure à $s\|w\|/2$
 > [!JURY]
 > Le jury souligne que l’hypothèse de norme euclidienne est inutile. La surjectivité de la différentielle donne la direction de variation voulue.
 
-### Question 12
-
-**Repère officiel · 7a.**
+### Question 7a
 
 > [!INDICATION]
 > Utilisez la continuité de $f$ sur son ouvert de définition.
@@ -225,9 +203,7 @@ L’ensemble $W=B(f(a),r/4)$ est une boule ouverte de $E$.
 
 L’image réciproque $f^{-1}(W)$ est ouverte dans $U$, donc dans $E$ puisque $U$ est ouvert. Son intersection avec $B(a,r)$ est ouverte.
 
-### Question 13
-
-**Repère officiel · 7b.**
+### Question 7b
 
 > [!INDICATION]
 > Utilisez une question différente pour l’injectivité et la surjectivité, puis relisez l’inégalité de 5b dans l’autre sens.
@@ -244,9 +220,7 @@ La restriction est continue et son inverse est lipschitzien. **C’est un homéo
 
 L’algèbre des polynômes en une matrice permet de multiplier les exponentielles de ses éléments. L’inversion locale donne un premier voisinage à transporter.
 
-### Question 14
-
-**Repère officiel · 8a.**
+### Question 8a
 
 > [!INDICATION]
 > Vérifiez la stabilité par produit et inverse au sein de l’algèbre des polynômes en $A$.
@@ -259,9 +233,7 @@ Si $M,N\in(\mathbb C[A])^*$, alors $MN$ et $(MN)^{-1}=N^{-1}M^{-1}$ appartiennen
 
 L’inverse de $M$ appartient lui-même à $(\mathbb C[A])^*$ puisque son inverse est $M$. Ainsi **$(\mathbb C[A])^*$ est un sous-groupe abélien**.
 
-### Question 15
-
-**Repère officiel · 8b.**
+### Question 8b
 
 > [!INDICATION]
 > Appliquez Cayley–Hamilton à un élément inversible de $\mathbb C[A]$ et isolez son inverse.
@@ -277,9 +249,7 @@ c_n&=1.
 $$
 Cette expression appartient à l’algèbre engendrée par $M$. C’est un élément de $\mathbb C[A]$. L’inclusion réciproque vient de la définition, donc **$(\mathbb C[A])^*=\mathbb C[A]\cap GL_n(\mathbb C)$**.
 
-### Question 16
-
-**Repère officiel · 9.**
+### Question 9
 
 > [!INDICATION]
 > Utilisez les sommes partielles de la série exponentielle et la fermeture du sous-espace.
@@ -293,9 +263,7 @@ Par passage à la limite, $e^M\in\mathbb C[A]$, et $e^{-M}$ y appartient aussi. 
 > [!JURY]
 > Le jury demande de justifier le passage à la limite dans $\mathbb C[A]$ pour conclure que l’exponentielle d’un élément y appartient.
 
-### Question 17
-
-**Repère officiel · 10a.**
+### Question 10a
 
 > [!INDICATION]
 > Lisez la partie réelle avant de comparer les parties imaginaires.
@@ -304,9 +272,7 @@ Par passage à la limite, $e^M\in\mathbb C[A]$, et $e^{-M}$ y appartient aussi. 
 
 Si $Z_a(t)=Z_b(s)$, les parties réelles donnent $t=s$. Les parties imaginaires donnent $(a-b)t(1-t)=0$. Comme $0<t<1$, on obtient $a=b$. **L’application est injective.**
 
-### Question 18
-
-**Repère officiel · 10b.**
+### Question 10b
 
 > [!INDICATION]
 > Repérez les paramètres complexes qui annulent un déterminant, puis utilisez 10a pour éviter ces valeurs.
@@ -328,9 +294,7 @@ Par exemple, pour $M_1=1$ et $M_2=-1$, on a $P(z)=2z-1$. Seul $a=0$ fait passer 
 
 On choisit un réel $a$ permis. Alors $M(t)$ est une combinaison linéaire de $M_1,M_2$, inversible pour tout $t$, donc appartient à $(\mathbb C[A])^*$ d’après 8b.
 
-### Question 19
-
-**Repère officiel · 10c.**
+### Question 10c
 
 > [!INDICATION]
 > Vérifiez la continuité en $t$ et l’ordre des deux extrémités du chemin.
@@ -339,9 +303,7 @@ On choisit un réel $a$ permis. Alors $M(t)$ est une combinaison linéaire de $M
 
 Pour deux éléments quelconques $M_1,M_2$, le chemin de 10b est continu, reste dans $(\mathbb C[A])^*$ et va de $M_2$ à $M_1$. **Le groupe est connexe par arcs.**
 
-### Question 20
-
-**Repère officiel · 11a.**
+### Question 11a
 
 > [!INDICATION]
 > Calculez la différentielle dans l’algèbre commutative avant d’appliquer 7b.
@@ -361,9 +323,7 @@ On applique 7b à $f$ en $0$.
 
 Elle fournit des ouverts $U$ de $0$ et $V$ de $I_n$ dans $E$ tels que **$f|_U:U\to V$ est un homéomorphisme**.
 
-### Question 21
-
-**Repère officiel · 11b.**
+### Question 11b
 
 > [!INDICATION]
 > Transportez le voisinage de $I_n$ obtenu en 11a par multiplication.
@@ -378,9 +338,7 @@ Pour $L\in\mathcal H$, la multiplication par $L$ est un homéomorphisme de $\mat
 
 L’ensemble $LV$ est un ouvert contenant $L$ et inclus dans $\mathcal H$. **Donc $\mathcal H$ est ouvert dans $\mathbb C[A]$.**
 
-### Question 22
-
-**Repère officiel · 12.**
+### Question 12
 
 > [!INDICATION]
 > Employez le même voisinage de l’identité pour un élément extérieur à l’image de l’exponentielle.
@@ -396,9 +354,7 @@ Le complémentaire est ouvert dans $(\mathbb C[A])^*$, donc **$\mathcal H$ y est
 > [!JURY]
 > Le jury rappelle que des exponentielles matricielles bornées ne donnent pas nécessairement des exposants bornés.
 
-### Question 23
-
-**Repère officiel · 13a.**
+### Question 13a
 
 > [!INDICATION]
 > Utilisez les deux ouverts complémentaires pour définir une fonction à deux valeurs.
@@ -409,9 +365,7 @@ Définissons $f$ égale à $0$ sur $\mathcal H$ et à $1$ sur $(\mathbb C[A])^*\
 
 Ces deux parties sont ouvertes dans $(\mathbb C[A])^*$ par 11b et 12. Ce sont les préimages des deux singletons ouverts de $\{0,1\}$, d’où la continuité. On a $f(M_1)=0$ et $f(M_2)=1$.
 
-### Question 24
-
-**Repère officiel · 13b.**
+### Question 13b
 
 > [!INDICATION]
 > Composez cette fonction avec un chemin entre $M_1$ et $M_2$.
@@ -422,9 +376,7 @@ Par 10c, un chemin continu $\gamma:[0,1]\to(\mathbb C[A])^*$ relie $M_1$ à $M_2
 
 La fonction réelle continue $f\circ\gamma$ prend les valeurs $0$ et $1$. Le théorème des valeurs intermédiaires lui impose de prendre $1/2$, contradiction. **Ainsi $\exp(\mathbb C[A])=(\mathbb C[A])^*$.**
 
-### Question 25
-
-**Repère officiel · 14.**
+### Question 14
 
 > [!INDICATION]
 > Pour une matrice inversible $A$, choisissez l’algèbre associée à cette matrice.
@@ -437,9 +389,7 @@ Si $A$ est inversible, alors $A\in(\mathbb C[A])^*$ par 8b. Le résultat de 13b 
 
 La translation d’une période est encore à la base de la preuve. Elle est représentée par une matrice constante que la partie précédente permet d’écrire comme exponentielle.
 
-### Question 26
-
-**Repère officiel · 15.**
+### Question 15
 
 > [!INDICATION]
 > Faites agir la translation d’une période sur l’espace des solutions et utilisez le corps complexe.
@@ -455,9 +405,7 @@ Comme $n\geq1$ et que le corps est $\mathbb C$, $\tau$ admet une valeur propre, 
 > [!JURY]
 > Le jury relève que l’exponentielle d’une primitive des coefficients ne résout pas en général un système à coefficients variables. La preuve par translation s’applique sans hypothèse de commutation.
 
-### Question 27
-
-**Repère officiel · 16a.**
+### Question 16a
 
 > [!INDICATION]
 > Pour un temps quelconque, l’unicité d’un problème de Cauchy relie une dépendance entre colonnes à une dépendance entre solutions.
@@ -470,9 +418,7 @@ L’unicité pour la donnée nulle donne $Y=0$ sur $\mathbb R$. La famille $(Y_j
 
 Ainsi **$M(t)$ est inversible pour tout $t$**.
 
-### Question 28
-
-**Repère officiel · 16b.**
+### Question 16b
 
 > [!INDICATION]
 > Comparez les deux matrices de solutions normalisées à la même valeur au temps zéro.
@@ -489,9 +435,7 @@ $$
 \boxed{M(t)^{-1}M(t+T)=M(0)^{-1}M(T).}
 $$
 
-### Question 29
-
-**Repère officiel · 16c.**
+### Question 16c
 
 > [!INDICATION]
 > Appliquez la surjectivité de l’exponentielle à la matrice constante trouvée en 16b.
@@ -500,9 +444,7 @@ $$
 
 La matrice constante $K=M(0)^{-1}M(T)$ est inversible. Par 14, $K=e^C$ pour un $C\in M_n(\mathbb C)$. Comme $T>0$, prenons $B=C/T$. La question 16b donne $M(t+T)=M(t)e^{TB}$.
 
-### Question 30
-
-**Repère officiel · 16d.**
+### Question 16d
 
 > [!INDICATION]
 > Isolez le facteur périodique dans la forme annoncée, puis testez sa translation.
@@ -519,9 +461,7 @@ Q(t+T)&=M(t)e^{TB}e^{-(t+T)B}\\
 $$
 D’où **$M(t)=Q(t)e^{tB}$** avec $Q$ $T$-périodique.
 
-### Question 31
-
-**Repère officiel · 17a.**
+### Question 17a
 
 > [!INDICATION]
 > Interprétez la multiplication à droite par $P$ comme un changement de base de l’espace des solutions.
@@ -530,9 +470,7 @@ D’où **$M(t)=Q(t)e^{tB}$** avec $Q$ $T$-périodique.
 
 Chaque colonne de $M(t)P$ est une combinaison linéaire à coefficients constants des $Y_j$, donc une solution. La matrice $P$ est inversible, donc ces combinaisons forment une nouvelle base $(Z_1,\ldots,Z_n)$ de $S$.
 
-### Question 32
-
-**Repère officiel · 17b.**
+### Question 17b
 
 > [!INDICATION]
 > Séparez les deux exponentielles à l’aide de la commutation, puis placez le facteur diagonal à droite.
@@ -543,16 +481,14 @@ Comme $DN=ND$ par l’hypothèse admise, $e^{tB}=e^{tN}e^{tD}$. La nilpotence en
 $$
 M(t)P=\sum_{i=0}^{n-1}\frac{t^i}{i!}Q(t)N^iP\,e^{t\Delta}.
 $$
-Comme $e^{t\Delta}$ est diagonale, la colonne $k$ vaut $e^{\lambda_k t}\sum_{i=0}^{n-1}t^iR_{i,k}(t)$.
+En notant $R_{i,k}(t)$ la colonne $k$ de $Q(t)N^iP/i!$ et en utilisant la forme diagonale de $e^{t\Delta}$, la colonne $k$ vaut $e^{\lambda_k t}\sum_{i=0}^{n-1}t^iR_{i,k}(t)$.
 
 Chaque $R_{i,k}$ est continue et $T$-périodique puisque $Q$ l’est et que $N^iP/i!$ est constante.
 
 > [!JURY]
 > Le jury rappelle que la factorisation de l’exponentielle utilisée ici repose sur la commutation de $D$ et $N$.
 
-### Question 33
-
-**Repère officiel · 17c.**
+### Question 17c
 
 > [!INDICATION]
 > Majorez les facteurs périodiques sur une période et comparez les puissances à la décroissance exponentielle.
@@ -565,9 +501,7 @@ Pour tout $i$ fixé et chaque $k$, $t^i e^{t\operatorname{Re}\lambda_k}\to0$ si 
 
 Par 17a, toute solution est combinaison à coefficients constants des $Z_k$. **Donc $Y(t)\to0$.**
 
-### Question 34
-
-**Repère officiel · 18a.**
+### Question 18a
 
 > [!INDICATION]
 > Utilisez un vecteur propre de $B$ comme coefficient constant dans la base de solutions.
@@ -580,9 +514,7 @@ La solution $Y(t)=M(t)c=Q(t)e^{t\lambda}c$ est non nulle puisque $M(t)$ est inve
 
 Elle est $mT$-périodique car $Q$ est $T$-périodique et $e^{mT\lambda}=1$.
 
-### Question 35
-
-**Repère officiel · 18b.**
+### Question 18b
 
 > [!INDICATION]
 > Traduisez la périodicité dans les coordonnées d’une base de solutions, puis factorisez $X^m-1$.
@@ -597,9 +529,7 @@ Or $K^m-I_n$ est le produit des $K-\omega I_n$ sur toutes les racines $m$-ièmes
 
 Ce produit est singulier, donc au moins un facteur l’est. **$K$ a une valeur propre racine $m$-ième de l’unité.**
 
-### Question 36
-
-**Repère officiel · 19.**
+### Question 19
 
 > [!INDICATION]
 > Combinez les deux périodes de part et d’autre de l’équation, puis utilisez la densité du sous-groupe obtenu.
@@ -620,9 +550,7 @@ Le sous-groupe $\mathbb ZT+\mathbb ZT'$ n’est pas de la forme $a\mathbb Z$, ca
 
 En passant à la limite par continuité de $A$, on obtient **$A(u)X(t)=A(t)X(t)$** pour tout $u,t$.
 
-### Question 37
-
-**Repère officiel · 20.**
+### Question 20
 
 > [!INDICATION]
 > Distinguez les périodes commensurables avec $T$ des autres. Pour les secondes, étudiez l’espace engendré par toutes les valeurs de la solution.
@@ -660,9 +588,7 @@ Cette seconde possibilité est effective. Fixons $T=2\pi$, $A(t)=i\sqrt2$, $M(t)
 > [!PIEGE]
 > Le rapport présente le critère dans le cas $n\geq2$. Le sujet autorise aussi $n=1$. Pour $A=i\sqrt{2}$ et $T=2\pi$, la solution $e^{i\sqrt{2}t}$ est périodique alors que son multiplicateur sur $T$ n’est pas une racine de l’unité.
 
-### Question 38
-
-**Repère officiel · 21.**
+### Question 21
 
 > [!INDICATION]
 > Écrivez $X=M c$ et imposez l’égalité entre les valeurs aux temps $0$ et $T$.
@@ -684,9 +610,7 @@ Pour ce choix, $t\mapsto X(t+T)$ satisfait la même équation que $X$ puisque $A
 
 L’unicité du problème de Cauchy montre que $X$ est $T$-périodique. Toute solution $T$-périodique vérifie la même condition, d’où l’unicité.
 
-### Question 39
-
-**Repère officiel · 22.**
+### Question 22
 
 > [!INDICATION]
 > Repérez la rotation du plan dans la matrice des coefficients et isolez la croissance scalaire.

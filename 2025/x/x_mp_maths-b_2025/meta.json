@@ -4,7 +4,11 @@
     "concours": "X",
     "filiere": "MP",
     "matiere": "Maths B",
-    "annee": 2025
+    "annee": 2025,
+    "filiere_commune": [
+      "MP",
+      "MPI"
+    ]
   },
   "questions": 44,
   "redaction": "IA (GPT-6.2 Sol), relue et révisée par IA",
@@ -17,7 +21,9 @@
   ],
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Maths%20B%20MP-MPI%20sujet.pdf",
-    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Ecrits_MP_Maths%20B%20OK.pdf"
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Ecrits_MP_Maths%20B%20OK.pdf",
+    "sha256_sujet": "02bc10b9e42e4f255c8156d8b4c87bc81d8e4be56792f326bb54e3a1291e261b",
+    "sha256_rapport_jury": "e3e77f07b4af26e429ac22be0cf52beb57a3ee32b0f97593307c3b0fb29bb84b"
   },
   "contributions": [
     {
@@ -31,6 +37,76 @@
       "agent": "astra_maths",
       "fournisseur": "codex",
       "tour": 2
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_maths_b_recentes",
+      "modifications": true,
+      "perimetre": "Vérification des 44 repères du sujet MP-MPI et de la figure d’entrelacement. Ordres de Rolle, reste intégral, quadrature, indices du changement de base, contre-exemple aux coefficients strictement positifs en 13, récurrence en paramètre et conductivité. Indication de 11b précisée et titres alignés sur le fascicule."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1a",
+      "1b",
+      "2a",
+      "2b",
+      "3a",
+      "3b",
+      "4a",
+      "4b",
+      "5a",
+      "5b",
+      "6",
+      "7a",
+      "7b",
+      "7c",
+      "7d",
+      "8a",
+      "8b",
+      "9a",
+      "9b",
+      "9c",
+      "10a",
+      "10b",
+      "10c",
+      "11a",
+      "11b",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16a",
+      "16b",
+      "17a",
+      "17b",
+      "17c",
+      "17d",
+      "17e",
+      "18a",
+      "18b",
+      "18c",
+      "18d",
+      "18e",
+      "19",
+      "20",
+      "21"
+    ],
+    "precision": "Deux éditions comparées au sujet de 7 pages et au rapport de 8 pages. Vérification des 44 repères du sujet MP-MPI et de la figure d’entrelacement. Ordres de Rolle, reste intégral, quadrature, indices du changement de base, contre-exemple aux coefficients strictement positifs en 13, récurrence en paramètre et conductivité. Indication de 11b précisée et titres alignés sur le fascicule.",
+    "origine_attestation": {
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "02bc10b9e42e4f255c8156d8b4c87bc81d8e4be56792f326bb54e3a1291e261b",
+      "sha256_rapport_jury_controle": "e3e77f07b4af26e429ac22be0cf52beb57a3ee32b0f97593307c3b0fb29bb84b",
+      "perimetre": "Vérification des 44 repères du sujet MP-MPI et de la figure d’entrelacement. Ordres de Rolle, reste intégral, quadrature, indices du changement de base, contre-exemple aux coefficients strictement positifs en 13, récurrence en paramètre et conductivité. Indication de 11b précisée et titres alignés sur le fascicule.",
+      "commit_edition_anterieure": "88ea87376b1e9e26398faed87a5c7fc5c9c721e6"
+    }
+  }
 }

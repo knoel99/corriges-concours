@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le sujet construit une factorisation locale pour les polynômes à coefficients développables en série entière, puis une diagonalisation locale orthogonale pour les familles de matrices symétriques réelles.
 
 ## Première partie · Fonctions développables en série entière
@@ -54,7 +56,7 @@ Pour $r=\min(\rho,1/(2c))>0$, la série $g=\sum b_nt^n$ converge absolument sur 
 
 ### Question 7
 
-L’ensemble est un anneau commutatif unitaire de fonctions par 1–2, avec $1\ne0$. Si $f,g\ne0$ ont pour premiers coefficients non nuls $a_p,b_q$, le terme de degré $p+q$ de leur produit est exactement $a_pb_q\ne0$. Ainsi $fg\ne0$, ce qui établit l’intégrité.
+Les séries constantes donnent les fonctions $0$ et $1$, et changer le signe de chaque coefficient donne l’opposé d’une fonction développable. Avec la stabilité par somme et produit des questions 1 et 2, on obtient un sous-anneau commutatif unitaire des fonctions sur $U_\rho$, avec $1\ne0$. Si $f,g\ne0$ ont pour premiers coefficients non nuls $a_p,b_q$, le terme de degré $p+q$ de leur produit est exactement $a_pb_q\ne0$. Ainsi $fg\ne0$, ce qui établit l’intégrité.
 
 ## Deuxième partie · Factorisation locale d’un polynôme
 

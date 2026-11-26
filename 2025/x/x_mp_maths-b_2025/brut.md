@@ -6,9 +6,11 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Première partie — Interpolation avec multiplicités
 
-### Question 1 — 1a
+### Question 1a
 
 Au point $c_i$, les annulations imposées à $h$ donnent un ordre d’annulation d’au moins $k_i-1$ à $h'$.
 
@@ -22,11 +24,11 @@ $$
 $$
 Ainsi $h'$ s’annule à l’ordre $N$ au sens de l’énoncé.
 
-### Question 2 — 1b
+### Question 1b
 
 Par Q1a, $h'$ s’annule à l’ordre $N$. On itère tant que l’ordre est au moins deux, en utilisant la régularité de chaque dérivée. Ainsi $h^{(N)}$ s’annule à l’ordre 1, ce qui donne un point $c\in[a,b]$ où elle vaut zéro.
 
-### Question 3 — 2a
+### Question 2a
 
 Le développement de Taylor du polynôme $Q$ autour de $t_i$ montre que $(X-t_i)^{k_i}$ le divise.
 
@@ -36,7 +38,7 @@ Leur produit, de degré $\deg P$, divise donc $Q$.
 
 Comme $\deg Q<\deg P$, **$Q=0$**.
 
-### Question 4 — 2b
+### Question 2b
 
 Soit $d=\deg P$. L’application linéaire
 $$
@@ -52,7 +54,7 @@ Le vecteur des dérivées de $f$ admet ainsi un unique antécédent $H(f,P)$.
 
 Si $P$ est constant non nul, il n’y a aucune condition et $H=0$ dans l’espace réduit à zéro.
 
-### Question 5 — 3a
+### Question 3a
 
 Pour $g=f-H(f,P)$, les dérivées d’ordre strictement inférieur à $k_i$ sont nulles en $t_i$. Le reste intégral à l’ordre $k_i-1$, après la substitution $u=t_i+(x-t_i)s$ dans l’intégrale orientée, donne
 $$
@@ -62,13 +64,13 @@ $$
 Cette formule inclut $x=t_i$, où les deux membres s’annulent. Le changement de variable $v=1-s$ fournit explicitement
 $$g(x)=(x-t_i)^{k_i}\int_0^1\frac{v^{k_i-1}}{(k_i-1)!}\,g^{(k_i)}(t_i v+x(1-v))\,\mathrm dv.$$
 
-### Question 6 — 3b
+### Question 3b
 
 Au voisinage de $t_i$, les facteurs $(x-t_j)^{k_j}$ pour $j\ne i$ ne s’annulent pas. La formule Q3a simplifie le facteur $(x-t_i)^{k_i}$ dans le quotient. Il reste la division de l’intégrale de Q3a par le produit des autres facteurs.
 
 Cette intégrale est de classe $C^\infty$ en $x$. À chaque ordre de dérivation, l’intégrande contient une dérivée continue de $g$ évaluée sur le segment $[a,b]$, bornée sur ce segment, et des facteurs en $v$ bornés sur $[0,1]$. Le théorème de dérivation sous l’intégrale s’applique à chaque ordre. On obtient ainsi un prolongement lisse à toutes les racines. Il est unique par continuité, puisque le domaine initial est dense.
 
-### Question 7 — 4a
+### Question 4a
 
 Pour $P=(X-s_0)^n$, l’interpolateur est le Taylor d’ordre $n-1$ de $f$ en $s_0$. Le reste intégral de Q3a s’applique aussi si $s_0$ est une extrémité, en restant sur le segment. Après simplification du facteur $(x-s_0)^n$ et passage à la limite,
 $$
@@ -76,7 +78,7 @@ $$
 $$
 En effet, l’intégrale de $v^{n-1}/(n-1)!$ sur $[0,1]$ vaut $1/n!$.
 
-### Question 8 — 4b
+### Question 4b
 
 Pour un polynôme unitaire admissible $P$, on a $f=H(f,P)+P Q(f,P)$, y compris aux racines par continuité. Appliquons cette identité d’abord avec $P_1$, puis à $Q(f,P_1)$ avec $P_2$. Il vient
 $$
@@ -88,7 +90,7 @@ H(f,P_1P_2)=H(f,P_1)+P_1H(Q(f,P_1),P_2).
 $$
 En divisant le reste hors des racines puis en prolongeant, on obtient aussi $Q(f,P_1P_2)=Q(Q(f,P_1),P_2)$.
 
-### Question 9 — 5a
+### Question 5a
 
 À chaque $t_i$, les dérivées d’ordre inférieur à $k_i$ des deux termes $f-H(f,P)$ et $\prod_j(X-t_j)^{k_j}$ s’annulent.
 
@@ -100,14 +102,14 @@ Le point $t$ est distinct des nœuds et appartient au segment proposé.
 
 La somme des ordres retenus est $\deg P+1$.
 
-### Question 10 — 5b
+### Question 5b
 
 Posons $d=\deg P$. Par Q5a et Q1b, $Q_t^{(d)}(\xi)=0$ pour un point $\xi$ dans l’intervalle indiqué. La dérivée d’ordre $d$ de l’interpolateur est nulle et celle du produit unitaire est $d!$. Donc $Q(f,P)(t)=f^{(d)}(\xi)/d!$, d’où
 $$
 \boxed{f(t)-H(f,P)(t)=\frac{f^{(d)}(\xi)}{d!}P(t).}
 $$
 
-### Question 11 — 6
+### Question 6
 
 Pour un nœud $s\in]a,b[$, Q3a donne
 $$
@@ -127,11 +129,11 @@ Dans le cas d’un polynôme constant, le quotient est $f$.
 
 ## Deuxième partie — Quadrature et polynômes orthogonaux
 
-### Question 12 — 7a
+### Question 7a
 
 Soit $L_i=\prod_{j\ne i}(X-r_j)/(r_i-r_j)$. Pour $P\in\mathbb R_{n-1}[X]$, on a $P=\sum_i P(r_i)L_i$, car la différence est de degré au plus $n-1$ et s’annule aux $n$ nœuds. En intégrant, on obtient le résultat avec $\lambda_i=\int_{-1}^1 L_i(x) f(x)\,\mathrm dx$.
 
-### Question 13 — 7b
+### Question 7b
 
 Écrivons $P=QD+R$ par division euclidienne.
 
@@ -143,11 +145,11 @@ Il s’annule aussi en chaque $r_i$.
 
 On applique Q7a à $R$ pour retrouver l’égalité (1) pour $P$.
 
-### Question 14 — 7c
+### Question 7c
 
 Le polynôme $\prod_{j\ne i}(X-r_j)^2$ est de degré $2n-2$, positif ou nul et non nul. Son intégrale pondérée est strictement positive puisque $f$ est continue strictement positive. Dans (1), le terme d’indice $i$ est le seul qui subsiste, avec une évaluation strictement positive. Donc **$\lambda_i>0$**.
 
-### Question 15 — 7d
+### Question 7d
 
 Pour $P,Q$ de degré au plus $n-j-1$, le degré de $PQf_j$ est au plus $2n-j-2\leq2n-1$. Par Q7b,
 $$
@@ -156,11 +158,11 @@ $$
 Ici $w_{j,i}=\lambda_i f_j(r_i)$.
 Pour $i\leq j$, $f_j(r_i)=0$. Pour $i>j$, chacun des facteurs de $f_j(r_i)$ est positif, par l’ordre des racines. La forme est bilinéaire, symétrique et positive. Si la forme quadratique s’annule, le polynôme s’annule aux $n-j$ nœuds restants. Son degré étant au plus $n-j-1$, il est nul. C’est un produit scalaire.
 
-### Question 16 — 8a
+### Question 8a
 
 L’orthogonalisation de Gram–Schmidt de $(1,X,\ldots,X^{n-j-1})$ donne à chaque étape $X^i$ moins sa projection sur $\mathbb R_{i-1}[X]$. Le résultat est unitaire de degré $i$, et il est orthogonal à tous les degrés inférieurs. Pour l’unicité, deux candidats au même indice diffèrent d’un polynôme de degré inférieur à $i$, orthogonal à tout cet espace. Sa norme est nulle et il est donc nul.
 
-### Question 17 — 8b
+### Question 8b
 
 Le produit $q_{n-j}f_j$ est un multiple constant non nul de $D$, car il reprend toutes ses racines.
 
@@ -170,7 +172,7 @@ Le polynôme $q_{n-j}$ est unitaire.
 
 Deux candidats diffèrent par un élément de $\mathbb R_{n-j-1}[X]$ orthogonal à cet espace, donc nul par Q7d.
 
-### Question 18 — 9a
+### Question 9a
 
 Comme les deux polynômes sont unitaires de degré $i$, $q_i-Xq_{i-1}$ est de degré au plus $i-1$.
 
@@ -183,14 +185,14 @@ $$
 q_i-Xq_{i-1}=a_iq_{i-1}+b_iq_{i-2}.
 $$
 
-### Question 19 — 9b
+### Question 9b
 
 Les produits de $q_{i-2}$ avec $q_i$ et $q_{i-1}$ s’annulent. La relation de Q9a donne donc
 $$
 b_i\langle q_{i-2},q_{i-2}\rangle_j=-\langle Xq_{i-1},q_{i-2}\rangle_j.
 $$
 
-### Question 20 — 9c
+### Question 9c
 
 Le polynôme $Xq_{i-2}-q_{i-1}$ est de degré au plus $i-2$. Il est donc orthogonal à $q_{i-1}$. En faisant passer $X$ de l’autre côté du produit, Q9b donne
 $$
@@ -199,11 +201,11 @@ $$
 $$
 Les deux normes sont strictement positives par Q7d puisque $i-1\leq n-j-1$.
 
-### Question 21 — 10a
+### Question 10a
 
 On a $q_0=1$, sans racine. Le polynôme $q_1$ est réel, unitaire et de degré 1, donc possède exactement une racine réelle, simple. Cela vaut également si $q_1$ est le polynôme de Q8b.
 
-### Question 22 — 10b
+### Question 10b
 
 On raisonne par récurrence, avec le cas $i=1$ donné par Q10a.
 
@@ -229,7 +231,7 @@ Le degré impose qu’il y a exactement ces $i$ racines et qu’elles sont simpl
 
 ![Avec un poids constant sur le segment, les trois racines de degré 3 s’intercalent entre les quatre racines de degré 4. Les symboles correspondent aux zéros, sur le même axe.](figures/entrelacement-legendre.svg)
 
-### Question 23 — 10c
+### Question 10c
 
 Le polynôme $q_{n-j}$ de Q8b a pour plus grande racine $r_{j+1}$.
 
@@ -243,11 +245,11 @@ Pour $i=0$, $q_0=1$.
 
 Ainsi **$q_i(r_{j+1})>0$**.
 
-### Question 24 — 11a
+### Question 11a
 
 Posons $r=r_{j+1}$. Le quotient $(q_\ell-q_\ell(r))/(X-r)$ est un polynôme de degré au plus $\ell-1\leq i-1$, ou le polynôme nul si $\ell=0$. Il est orthogonal à $q_i$ et à $q_{i+1}$ par Q8a et Q8b, ce qui donne l’égalité.
 
-### Question 25 — 11b
+### Question 11b
 
 Par définition intégrale de la forme, on peut écrire Q11a sous la forme $\langle p_i,q_\ell-q_\ell(r)\rangle_j=0$. Dans la base orthogonale, en utilisant $q_0=1$, cela donne
 $$
@@ -258,7 +260,7 @@ Le coefficient multiplicatif de $c_0$ est donc strictement positif par Q7d et Q1
 
 Le polynôme $p_i$ est unitaire de degré $i$, d’où $c_i=1$, ce qui impose $c_0>0$ et alors $c_\ell>0$ pour tout $\ell\leq i$.
 
-### Question 26 — 12
+### Question 12
 
 On a $f_{j+1}=(r-X)f_j$ avec $r=r_{j+1}$. Pour $R\in\mathbb R_{i-1}[X]$,
 $$
@@ -267,7 +269,7 @@ $$
 $$
 par Q8a et Q8b. Pour $i=0$, l’espace à considérer est réduit à zéro. Pour l’indice maximal, l’égalité concerne la forme intégrale prolongée au degré du polynôme terminal, comme en Q8b.
 
-### Question 27 — 13
+### Question 13
 
 Notons $q_{j,i}$ le polynôme de degré $i$ du niveau $j$.
 
@@ -293,11 +295,11 @@ Par exemple, pour $n=2$ et le poids constant $1$ sur $[-1,1]$, la base unitaire 
 
 ## Troisième partie — Développement et orthogonalité
 
-### Question 28 — 14
+### Question 14
 
 On a $1-2rx+r^2=(r-x)^2+1-x^2>0$ pour $|x|<1$. Le trinôme est lisse et la puissance $u\mapsto u^{-\lambda}$ est lisse sur les réels strictement positifs. Leur composée est **de classe $C^\infty$ sur $]-1,1[^2$**.
 
-### Question 29 — 15
+### Question 15
 
 Le développement binomial est
 $$
@@ -318,7 +320,7 @@ Elle est finie.
 
 On regroupe donc par puissances de $r$, ce qui fournit un développement en série entière au voisinage de zéro.
 
-### Question 30 — 16a
+### Question 16a
 
 L’équation différentielle est
 $$
@@ -331,7 +333,7 @@ $$
 $$
 En regroupant, on retrouve la récurrence proposée.
 
-### Question 31 — 16b
+### Question 16b
 
 Comme $F_\lambda(x,0)=1$, $a_0^{(\lambda)}=1$.
 
@@ -344,11 +346,11 @@ $$
 \boxed{c_n=\frac{2^n}{n!}\prod_{j=0}^{n-1}(\lambda+j).}
 $$
 
-### Question 32 — 17a
+### Question 17a
 
 La série en $r$ est développable à l’origine et se dérive terme à terme dans son intervalle de convergence. À l’origine, la dérivée d’ordre $n$ vaut $n!$ fois le coefficient d’ordre $n$. Ainsi $a_n^{(\lambda)}(x)=\partial_r^nF_\lambda(x,0)/n!$.
 
-### Question 33 — 17b
+### Question 17b
 
 La génératrice vérifie $\partial_xF_\lambda=2\lambda r F_{\lambda+1}$. Elle est lisse d’après Q14 et les dérivées partielles commutent. D’après Q17a,
 $$
@@ -360,7 +362,7 @@ $$
 $$
 La dernière égalité résulte de la formule de Leibniz, le terme ayant encore un facteur $r$ s’annulant en zéro.
 
-### Question 34 — 17c
+### Question 17c
 
 Le produit $t(1-t^2)^{\lambda+1/2}$ s’annule aux deux bords. En intégrant sa dérivée, continue jusqu’aux bords puisque $\lambda>1/2$, on obtient
 $$
@@ -369,7 +371,7 @@ $$
 $$
 Posons $w(t)=(1-t^2)^{\lambda-1/2}$. Le membre gauche vaut $\int_{-1}^1(1-t^2)w(t)\,\mathrm dt$, donc $\int w=2(\lambda+1)\int t^2w$. La récurrence Q16a donne $a_2^{(\lambda)}=2\lambda(\lambda+1)X^2-\lambda$. Sa moyenne pondérée est donc nulle.
 
-### Question 35 — 17d
+### Question 17d
 
 Notons $w_\lambda(t)=(1-t^2)^{\lambda-1/2}$. Comme $w_{\lambda+1}'=-(2\lambda+1)t w_\lambda$, l’intégration par parties, sans terme de bord, donne par Q17b
 $$
@@ -389,7 +391,7 @@ En intégrant la récurrence Q16a, les deux termes du membre droit s’annulent 
 
 Cela prouve par récurrence toutes les annulations constantes, puis la formule donne toutes les annulations linéaires demandées.
 
-### Question 36 — 17e
+### Question 17e
 
 Pour $m\geq1$, la relation de Q16a exprime $Xa_m^{(\lambda)}$ comme combinaison de $a_{m-1}^{(\lambda)}$ et $a_{m+1}^{(\lambda)}$, car $2(m+\lambda)\ne0$.
 
@@ -407,19 +409,19 @@ Le poids est strictement positif sur $]-1,1[$, ce qui assure la positivité déf
 
 ## Quatrième partie — Fonctions de type positif
 
-### Question 37 — 18a
+### Question 18a
 
 La matrice $UU^T$ est symétrique. Pour tout $X$, $X^TUU^TX=(U^TX)^2\geq0$, donc $UU^T\in S_n^+$.
 
-### Question 38 — 18b
+### Question 18b
 
 Au coefficient $(i,j)$, le membre gauche vaut $a_{ij}(b_{ij}+c_{ij})$, qui est la somme $a_{ij}b_{ij}+a_{ij}c_{ij}$. C’est le coefficient correspondant du membre droit.
 
-### Question 39 — 18c
+### Question 18c
 
 La matrice réelle symétrique $M$ se diagonalise en base orthonormée de vecteurs propres $U_1,\ldots,U_n$. Ses valeurs propres $d_i$ sont positives ou nulles, en évaluant la forme quadratique sur ces vecteurs. La décomposition spectrale donne ainsi $M=\sum_i d_iU_iU_i^T$.
 
-### Question 40 — 18d
+### Question 18d
 
 Si $u,v$ sont deux vecteurs, le produit coefficient par coefficient de $uu^T$ et de $vv^T$ vaut $ww^T$, avec $w_i=u_iv_i$.
 
@@ -431,11 +433,11 @@ Par distributivité dans les deux arguments, le produit coefficient par coeffici
 
 Il est donc dans $S_n^+$.
 
-### Question 41 — 18e
+### Question 18e
 
 Pour tout $k$ et tout choix des points $x_i$, la matrice associée au produit de deux fonctions est le produit coefficient par coefficient de leurs matrices respectives. Elles sont positives par hypothèse, donc le produit est positif par Q18d. Cela donne la propriété de type positif.
 
-### Question 42 — 19
+### Question 19
 
 Écrivons $x_i=(\cos\theta_i,\sin\theta_i)$.
 
@@ -449,7 +451,7 @@ Elle est positive par Q18a, pour tout choix de points et tout $k$.
 
 Donc **$T_n$ est de type positif en dimension 2**, y compris pour $n=0$.
 
-### Question 43 — 20
+### Question 20
 
 Multiplier un polynôme admissible par une constante non nulle conserve les nœuds et leurs multiplicités, donc aussi $H$ et $Q$. Par conséquent on peut appliquer Q4b aux versions unitaires des deux polynômes. Notons $\widehat P_1$ la version unitaire de $P_1$.
 
@@ -463,7 +465,7 @@ La somme et le produit par $\widehat P_1$ préservent cette propriété, par add
 
 L’identité de Q4b donne alors la propriété pour $H(f,P_1P_2)$, donc **$P_1P_2$ est $N$-conductif**.
 
-### Question 44 — 21
+### Question 21
 
 Fixons $\lambda=(N-1)/2>1/2$ et $w(x)=(1-x^2)^{\lambda-1/2}$. D’après Q17e, le polynôme $D=a_n^{(\lambda)}$ est orthogonal aux degrés strictement inférieurs, et ses racines sont celles de l’énoncé. Bien que $w$ s’annule aux deux bords, la partie II s’applique à ce poids. La positivité définie initiale et la stricte positivité des intégrales de Q7c utilisent seulement la continuité, la positivité au sens large sur le segment et la stricte positivité à l’intérieur. Les autres étapes reposent sur ces propriétés et la quadrature.
 

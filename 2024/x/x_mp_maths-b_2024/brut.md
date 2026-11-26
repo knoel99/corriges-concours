@@ -6,11 +6,11 @@
 
 **Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Première partie — Équation scalaire à coefficient périodique
 
-### Question 1
-
-**Repère officiel · 1a.**
+### Question 1a
 
 Avec $Y=(y,y')^{\mathsf T}$, l’équation (1) équivaut à $Y'=C(t)Y$ où
 $$
@@ -20,21 +20,15 @@ La matrice $C$ est continue sur $\mathbb R$. Le théorème de Cauchy–Lipschitz
 
 La première composante est de classe $C^2$, car sa dérivée est la seconde, de classe $C^1$. L’évaluation initiale est donc un isomorphisme complexe de l’espace des solutions vers $\mathbb C^2$. Les antécédents des deux vecteurs canoniques sont $y_1,y_2$. **Ils forment une base des solutions.**
 
-### Question 2
-
-**Repère officiel · 1b.**
+### Question 1b
 
 Pour $W(t)=y_1(t)y_2'(t)-y_1'(t)y_2(t)$, on a $W'=y_1y_2''-y_1''y_2=0$ par (1). Les conditions initiales donnent $W(0)=1$, donc **$W(t)=1$ pour tout $t$**.
 
-### Question 3
-
-**Repère officiel · 2.**
+### Question 2
 
 Pour $v(t)=y(t+T)$, la périodicité donne $v''(t)=-q(t+T)y(t+T)=-q(t)v(t)$. La solution $v$ a pour données initiales $y(T)$ et $y'(T)$. Par 1a, **$y(t+T)=y(T)y_1(t)+y'(T)y_2(t)$**.
 
-### Question 4
-
-**Repère officiel · 3.**
+### Question 3
 
 Soit $\tau$ l’endomorphisme $y\mapsto y(\,\cdot+T)$ de l’espace des solutions, bien défini par 2. Dans la base $(y_1,y_2)$, la même question donne la matrice
 $$
@@ -44,9 +38,7 @@ La relation (a) signifie que $\mu$ est une valeur propre de $\tau$. Le détermin
 
 Si (a) vaut, posons $u(t)=e^{-\lambda t}y(t)$. Cette fonction est de classe $C^2$ et $u(t+T)=e^{-\lambda T}\mu u(t)=u(t)$, donc (c) vaut. Réciproquement, sous (c), $y(t+T)=e^{\lambda T}e^{\lambda t}u(t)=\mu y(t)$, d’où (a).
 
-### Question 5
-
-**Repère officiel · 4a.**
+### Question 4a
 
 Puisque $\mu_1\mu_2=1$, on a $\mu_2=e^{-\lambda T}$.
 
@@ -54,9 +46,7 @@ La question 3 donne deux solutions propres non nulles $e^{\lambda t}w_1(t)$ et $
 
 Leurs valeurs propres distinctes rendent ces solutions indépendantes. Par 1a, elles forment une base, d’où la décomposition demandée.
 
-### Question 6
-
-**Repère officiel · 4b.**
+### Question 4b
 
 La racine double $\mu$ vérifie $\mu^2=1$, donc $\mu=\pm1$. Par 3, il existe une solution non nulle telle que $y(t+T)=\mu y(t)$.
 
@@ -64,9 +54,7 @@ Elle est $T$-périodique pour $\mu=1$ et $2T$-périodique pour $\mu=-1$.
 
 ## Deuxième partie — Inversion locale
 
-### Question 7
-
-**Repère officiel · 5a.**
+### Question 5a
 
 Le segment $x(s)=x_1+s(x_2-x_1)$, $s\in[0,1]$, est inclus dans $V$ par convexité. Par la règle de dérivation d’une composée, puis le théorème fondamental de l’analyse,
 $$
@@ -74,9 +62,7 @@ h(x_2)-h(x_1)=\int_0^1 dh(x(s))(x_2-x_1)\,ds.
 $$
 La norme du membre de droite est majorée par l’intégrale des normes, donc par $C\|x_2-x_1\|$.
 
-### Question 8
-
-**Repère officiel · 5b.**
+### Question 5b
 
 Posons $h=f-\operatorname{Id}_E$.
 
@@ -89,17 +75,13 @@ $$
 \geq \tfrac12\|x_1-x_2\|.
 $$
 
-### Question 9
-
-**Repère officiel · 5c.**
+### Question 5c
 
 Pour $x\in B(a,r)$ et $v\in E$, les points $x+sv$ restent dans la boule pour $s$ assez petit.
 
 Par 5b, pour $s\ne0$ assez petit, $\|(f(x+sv)-f(x))/s\|\geq\|v\|/2$. En passant à la limite en $s=0$, on obtient $\|df(x)v\|\geq \|v\|/2$. Donc **$df(x)$ est injective**, et surjective car c’est un endomorphisme en dimension finie.
 
-### Question 10
-
-**Repère officiel · 6a.**
+### Question 6a
 
 La boule fermée est compacte en dimension finie et $g$ est continue, donc $g$ y atteint son minimum. Pour $x$ sur sa frontière, 5b et l’inégalité triangulaire donnent
 $$
@@ -111,9 +93,7 @@ $$
 $$
 La dernière inégalité utilise $\|y_0-f(a)\|\leq r/4$. Ainsi $g(x)\geq g(a)$ sur le bord. Si un minimiseur se trouve sur le bord, $a$ est donc lui aussi minimiseur. **On peut choisir un minimiseur $x_0\in B(a,r)$.**
 
-### Question 11
-
-**Repère officiel · 6b.**
+### Question 6b
 
 Supposons $w=y_0-f(x_0)\ne0$. Par 5c, prenons $v$ tel que $df(x_0)v=w$. Pour $s>0$ assez petit, $x_0+sv$ est dans la boule et
 $$
@@ -121,17 +101,13 @@ y_0-f(x_0+sv)=(1-s)w+o(s).
 $$
 Pour $0<s<1$ suffisamment petit, la norme du reste est inférieure à $s\|w\|/2$. La norme du résidu devient alors strictement inférieure à $\|w\|$, contredisant la minimalité. Donc **$f(x_0)=y_0$**.
 
-### Question 12
-
-**Repère officiel · 7a.**
+### Question 7a
 
 L’ensemble $W=B(f(a),r/4)$ est une boule ouverte de $E$.
 
 L’image réciproque $f^{-1}(W)$ est ouverte dans $U$, donc dans $E$ puisque $U$ est ouvert. Son intersection avec $B(a,r)$ est ouverte.
 
-### Question 13
-
-**Repère officiel · 7b.**
+### Question 7b
 
 Par définition, $f(V)\subset W$. Pour $y_0\in W$, 6a et 6b donnent $x_0\in B(a,r)$ tel que $f(x_0)=y_0$, donc $x_0\in V$. La question 5b assure l’injectivité et fournit, pour $y_1,y_2\in W$,
 $$
@@ -141,9 +117,7 @@ La restriction est continue et son inverse est lipschitzien. **C’est un homéo
 
 ## Troisième partie — Surjectivité de l’exponentielle matricielle
 
-### Question 14
-
-**Repère officiel · 8a.**
+### Question 8a
 
 L’ensemble $\mathbb C[A]$ est une sous-algèbre commutative contenant $I_n$, par les règles de calcul des polynômes en $A$.
 
@@ -151,9 +125,7 @@ Si $M,N\in(\mathbb C[A])^*$, alors $MN$ et $(MN)^{-1}=N^{-1}M^{-1}$ appartiennen
 
 L’inverse de $M$ appartient lui-même à $(\mathbb C[A])^*$ puisque son inverse est $M$. Ainsi **$(\mathbb C[A])^*$ est un sous-groupe abélien**.
 
-### Question 15
-
-**Repère officiel · 8b.**
+### Question 8b
 
 Si $M\in\mathbb C[A]\cap GL_n(\mathbb C)$, son polynôme caractéristique $X^n+c_{n-1}X^{n-1}+\cdots+c_0$ a $c_0\ne0$. Cayley–Hamilton, après multiplication par $M^{-1}$, donne
 $$
@@ -164,23 +136,17 @@ c_n&=1.
 $$
 Cette expression appartient à l’algèbre engendrée par $M$. C’est un élément de $\mathbb C[A]$. L’inclusion réciproque vient de la définition, donc **$(\mathbb C[A])^*=\mathbb C[A]\cap GL_n(\mathbb C)$**.
 
-### Question 16
-
-**Repère officiel · 9.**
+### Question 9
 
 Pour $M\in\mathbb C[A]$, les sommes partielles de $\sum_{k\geq0}M^k/k!$ appartiennent à $\mathbb C[A]$. Le sous-espace $\mathbb C[A]$ de $M_n(\mathbb C)$ est fermé en dimension finie.
 
 Par passage à la limite, $e^M\in\mathbb C[A]$, et $e^{-M}$ y appartient aussi. L’identité $e^Me^{-M}=I_n$ donne $\exp(\mathbb C[A])\subset(\mathbb C[A])^*$.
 
-### Question 17
-
-**Repère officiel · 10a.**
+### Question 10a
 
 Si $Z_a(t)=Z_b(s)$, les parties réelles donnent $t=s$. Les parties imaginaires donnent $(a-b)t(1-t)=0$. Comme $0<t<1$, on obtient $a=b$. **L’application est injective.**
 
-### Question 18
-
-**Repère officiel · 10b.**
+### Question 10b
 
 Le polynôme
 $$
@@ -194,15 +160,11 @@ Par exemple, pour $M_1=1$ et $M_2=-1$, on a $P(z)=2z-1$. Seul $a=0$ fait passer 
 
 On choisit un réel $a$ permis. Alors $M(t)$ est une combinaison linéaire de $M_1,M_2$, inversible pour tout $t$, donc appartient à $(\mathbb C[A])^*$ d’après 8b.
 
-### Question 19
-
-**Repère officiel · 10c.**
+### Question 10c
 
 Pour deux éléments quelconques $M_1,M_2$, le chemin de 10b est continu, reste dans $(\mathbb C[A])^*$ et va de $M_2$ à $M_1$. **Le groupe est connexe par arcs.**
 
-### Question 20
-
-**Repère officiel · 11a.**
+### Question 11a
 
 Munissons $E=\mathbb C[A]$, considéré comme espace réel de dimension finie, d’une norme matricielle sous-multiplicative. L’exponentielle $f:E\to E$ est bien définie par 9. Pour $M,H\in E$, les matrices commutent et le produit de Cauchy des séries exponentielles, absolument convergentes, donne $e^{M+H}=e^Me^H$.
 
@@ -214,9 +176,7 @@ On applique 7b à $f$ en $0$.
 
 Elle fournit des ouverts $U$ de $0$ et $V$ de $I_n$ dans $E$ tels que **$f|_U:U\to V$ est un homéomorphisme**.
 
-### Question 21
-
-**Repère officiel · 11b.**
+### Question 11b
 
 Notons $\mathcal H=\exp(\mathbb C[A])$. Par commutativité et le produit des exponentielles établi en 11a, $\mathcal H$ est un sous-groupe de $(\mathbb C[A])^*$.
 
@@ -226,9 +186,7 @@ Pour $L\in\mathcal H$, la multiplication par $L$ est un homéomorphisme de $\mat
 
 L’ensemble $LV$ est un ouvert contenant $L$ et inclus dans $\mathcal H$. **Donc $\mathcal H$ est ouvert dans $\mathbb C[A]$.**
 
-### Question 22
-
-**Repère officiel · 12.**
+### Question 12
 
 Pour $L\in(\mathbb C[A])^*\setminus\mathcal H$, l’ensemble $LV$ est un voisinage ouvert de $L$ dans $(\mathbb C[A])^*$.
 
@@ -236,33 +194,25 @@ Si $Lv\in\mathcal H$ pour un $v\in V\subset\mathcal H$, la propriété de groupe
 
 Le complémentaire est ouvert dans $(\mathbb C[A])^*$, donc **$\mathcal H$ y est fermé**.
 
-### Question 23
-
-**Repère officiel · 13a.**
+### Question 13a
 
 Définissons $f$ égale à $0$ sur $\mathcal H$ et à $1$ sur $(\mathbb C[A])^*\setminus\mathcal H$.
 
 Ces deux parties sont ouvertes dans $(\mathbb C[A])^*$ par 11b et 12. Ce sont les préimages des deux singletons ouverts de $\{0,1\}$, d’où la continuité. On a $f(M_1)=0$ et $f(M_2)=1$.
 
-### Question 24
-
-**Repère officiel · 13b.**
+### Question 13b
 
 Par 10c, un chemin continu $\gamma:[0,1]\to(\mathbb C[A])^*$ relie $M_1$ à $M_2$.
 
 La fonction réelle continue $f\circ\gamma$ prend les valeurs $0$ et $1$. Le théorème des valeurs intermédiaires lui impose de prendre $1/2$, contradiction. **Ainsi $\exp(\mathbb C[A])=(\mathbb C[A])^*$.**
 
-### Question 25
-
-**Repère officiel · 14.**
+### Question 14
 
 Si $A$ est inversible, alors $A\in(\mathbb C[A])^*$ par 8b. Le résultat de 13b donne $A=e^M$ pour un $M\in\mathbb C[A]\subset M_n(\mathbb C)$. Toute exponentielle matricielle est par ailleurs inversible, d’inverse $e^{-M}$. **Donc $\exp(M_n(\mathbb C))=GL_n(\mathbb C)$.**
 
 ## Quatrième partie — Forme normale des solutions
 
-### Question 26
-
-**Repère officiel · 15.**
+### Question 15
 
 L’espace complexe $S$ des solutions de (2) est de dimension $n$ par le théorème de Cauchy–Lipschitz linéaire, applicable car $A$ est continue sur $\mathbb R$.
 
@@ -270,9 +220,7 @@ La translation $\tau:Y\mapsto Y(\,\cdot+T)$ envoie $S$ dans $S$ puisque $A(t+T)=
 
 Comme $n\geq1$ et que le corps est $\mathbb C$, $\tau$ admet une valeur propre, nécessairement non nulle. Un vecteur propre $Y$ associé donne **$Y(t+T)=\mu Y(t)$**.
 
-### Question 27
-
-**Repère officiel · 16a.**
+### Question 16a
 
 Chaque colonne de $M$ satisfait (2), donc $M'=AM$. Si $M(t)c=0$ à un certain temps, la combinaison de solutions $Y=\sum_j c_jY_j$ s’annule en ce temps.
 
@@ -280,9 +228,7 @@ L’unicité pour la donnée nulle donne $Y=0$ sur $\mathbb R$. La famille $(Y_j
 
 Ainsi **$M(t)$ est inversible pour tout $t$**.
 
-### Question 28
-
-**Repère officiel · 16b.**
+### Question 16b
 
 La matrice $M(t+T)M(T)^{-1}$ satisfait la même équation matricielle $U'=A(t)U$ que $M(t)M(0)^{-1}$, par périodicité de $A$.
 
@@ -291,15 +237,11 @@ $$
 \boxed{M(t)^{-1}M(t+T)=M(0)^{-1}M(T).}
 $$
 
-### Question 29
-
-**Repère officiel · 16c.**
+### Question 16c
 
 La matrice constante $K=M(0)^{-1}M(T)$ est inversible. Par 14, $K=e^C$ pour un $C\in M_n(\mathbb C)$. Comme $T>0$, prenons $B=C/T$. La question 16b donne $M(t+T)=M(t)e^{TB}$.
 
-### Question 30
-
-**Repère officiel · 16d.**
+### Question 16d
 
 Posons $Q(t)=M(t)e^{-tB}$. C’est une matrice inversible pour tout $t$, continue en $t$. Par 16c et la commutation des multiples de $B$,
 $$
@@ -311,27 +253,21 @@ Q(t+T)&=M(t)e^{TB}e^{-(t+T)B}\\
 $$
 D’où **$M(t)=Q(t)e^{tB}$** avec $Q$ $T$-périodique.
 
-### Question 31
-
-**Repère officiel · 17a.**
+### Question 17a
 
 Chaque colonne de $M(t)P$ est une combinaison linéaire à coefficients constants des $Y_j$, donc une solution. La matrice $P$ est inversible, donc ces combinaisons forment une nouvelle base $(Z_1,\ldots,Z_n)$ de $S$.
 
-### Question 32
-
-**Repère officiel · 17b.**
+### Question 17b
 
 Comme $DN=ND$ par l’hypothèse admise, $e^{tB}=e^{tN}e^{tD}$. La nilpotence en taille $n$ donne $N^n=0$, et $D=P\Delta P^{-1}$ donne $e^{tD}P=Pe^{t\Delta}$. Par 16d,
 $$
 M(t)P=\sum_{i=0}^{n-1}\frac{t^i}{i!}Q(t)N^iP\,e^{t\Delta}.
 $$
-Comme $e^{t\Delta}$ est diagonale, la colonne $k$ vaut $e^{\lambda_k t}\sum_{i=0}^{n-1}t^iR_{i,k}(t)$.
+En notant $R_{i,k}(t)$ la colonne $k$ de $Q(t)N^iP/i!$ et en utilisant la forme diagonale de $e^{t\Delta}$, la colonne $k$ vaut $e^{\lambda_k t}\sum_{i=0}^{n-1}t^iR_{i,k}(t)$.
 
 Chaque $R_{i,k}$ est continue et $T$-périodique puisque $Q$ l’est et que $N^iP/i!$ est constante.
 
-### Question 33
-
-**Repère officiel · 17c.**
+### Question 17c
 
 Les $R_{i,k}$ sont bornées sur $\mathbb R$ par continuité et périodicité.
 
@@ -339,9 +275,7 @@ Pour tout $i$ fixé et chaque $k$, $t^i e^{t\operatorname{Re}\lambda_k}\to0$ si 
 
 Par 17a, toute solution est combinaison à coefficients constants des $Z_k$. **Donc $Y(t)\to0$.**
 
-### Question 34
-
-**Repère officiel · 18a.**
+### Question 18a
 
 Prenons un vecteur propre $c\ne0$ de $B$ pour $\lambda=i\,2k\pi/(mT)$. La série exponentielle donne $e^{tB}c=e^{t\lambda}c$.
 
@@ -349,9 +283,7 @@ La solution $Y(t)=M(t)c=Q(t)e^{t\lambda}c$ est non nulle puisque $M(t)$ est inve
 
 Elle est $mT$-périodique car $Q$ est $T$-périodique et $e^{mT\lambda}=1$.
 
-### Question 35
-
-**Repère officiel · 18b.**
+### Question 18b
 
 Soit $Y=M(\,\cdot\,)c$ une solution $mT$-périodique non nulle, donc $c\ne0$. En itérant 16c, on obtient $M(t+mT)=M(t)K^m$ avec $K=e^{TB}$.
 
@@ -361,9 +293,7 @@ Or $K^m-I_n$ est le produit des $K-\omega I_n$ sur toutes les racines $m$-ièmes
 
 Ce produit est singulier, donc au moins un facteur l’est. **$K$ a une valeur propre racine $m$-ième de l’unité.**
 
-### Question 36
-
-**Repère officiel · 19.**
+### Question 19
 
 Comme $X$ et $X'$ sont $T'$-périodiques, pour tout $\ell\in\mathbb Z$ on a
 $$
@@ -379,9 +309,7 @@ Le sous-groupe $\mathbb ZT+\mathbb ZT'$ n’est pas de la forme $a\mathbb Z$, ca
 
 En passant à la limite par continuité de $A$, on obtient **$A(u)X(t)=A(t)X(t)$** pour tout $u,t$.
 
-### Question 37
-
-**Repère officiel · 20.**
+### Question 20
 
 Sous l’hypothèse d’irréductibilité de l’énoncé, le système possède une solution périodique non nulle si et seulement si au moins l’une des conditions suivantes est vérifiée.
 
@@ -408,9 +336,7 @@ Une solution d’une équation scalaire constante $X'=aX$ a la forme $ce^{at}$, 
 
 Cette seconde possibilité est effective. Fixons $T=2\pi$, $A(t)=i\sqrt2$, $M(t)=e^{i\sqrt2 t}$ et $B=i\sqrt2$. La solution non nulle a pour période $2\pi/\sqrt2$, tandis que $e^{TB}$ n’est pas une racine de l’unité. Le théorème 2 du rapport se place dès le départ en dimension au moins deux.
 
-### Question 38
-
-**Repère officiel · 21.**
+### Question 21
 
 Par la variation des constantes et $M'=AM$, toutes les solutions s’écrivent
 $$
@@ -424,9 +350,7 @@ Pour ce choix, $t\mapsto X(t+T)$ satisfait la même équation que $X$ puisque $A
 
 L’unicité du problème de Cauchy montre que $X$ est $T$-périodique. Toute solution $T$-périodique vérifie la même condition, d’où l’unicité.
 
-### Question 39
-
-**Repère officiel · 22.**
+### Question 22
 
 Avec $J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, la matrice des coefficients est $I_2+\cos(t)J$. Comme $J^2=-I_2$,
 $$

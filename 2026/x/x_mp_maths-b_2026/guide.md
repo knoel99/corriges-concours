@@ -10,6 +10,8 @@
 
 **Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** Le sujet étudie la répartition des valeurs propres de grandes matrices symétriques à travers la statistique
@@ -574,7 +576,7 @@ et $R(X-a)$ ne s'annule pas en $\lambda+a$.
 
 Donc $\lambda+a$ est racine de multiplicité exactement $m$ de $\chi_{T_n(a,b,c)}$.
 
-Comme $a$ est réel, la translation $\lambda\mapsto\lambda+a$ est une bijection des racines réelles de l'un sur celles de l'autre :
+Le signe se vérifie déjà en dimension un avec le déterminant $X-a$. La translation $\lambda\mapsto\lambda+a$ est une bijection des racines réelles de l'un sur celles de l'autre :
 
 $$\boxed{\mathrm{Sp}(T_n(a,b,c))=\{(\lambda+a,\,m_\lambda)\ :\ (\lambda,m_\lambda)\in\mathrm{Sp}(T_n(0,b,c))\}.}$$
 
@@ -1203,7 +1205,7 @@ $$\boxed{\begin{aligned}\mathbb P(|S_n(f)-\Sigma(f)|\ge\varepsilon)\le{}&\mathbb
 
 #### Solution
 
-Écrivons $P=\sum_{j=0}^dp_jf_j$ et posons
+Si $P=0$, les deux probabilités à droite de 17a sont nulles et la conclusion suit. Pour $P\ne0$, écrivons $P=\sum_{j=0}^dp_jf_j$ avec $d=\deg P$ et posons
 
 $$\varepsilon'=\frac{\varepsilon}{4(d+1)(1+\max_j|p_j|)}>0.$$
 
@@ -1248,7 +1250,7 @@ $$\boxed{\lim_{n\to+\infty}\mathbb P\big(|S_n(f)-\Sigma(f)|\ge\varepsilon\big)=0
 
 **Justifications que le jury 2026 a souvent attendues en vain.** Hypothèses du changement de variable (3a), coefficient multiplicatif (3c), décalage d'indice (5c), passage des fonctions polynomiales aux polynômes (5d), $|2\cos\theta_k|<2$ et valeurs propres distinctes (6), multiplicité conservée par translation (8a), théorème de Heine (11), indépendance des $W_{i,i}$ (13c), positivité et croissance pour Markov (14).
 
-**Questions discriminantes (rapport 2026).** 8b, 8c, 9b, 12 et la fin de la partie IV (13c à 17b), toutes sous 10 % de réussite. Une copie qui traite proprement 14 et 16, courtes une fois $(H_k)$ admise, se distingue déjà.
+**Questions discriminantes (rapport 2026).** Le jury donne 10 % de réussite en 8b, 8 % en 8c, 6 % en 9b et 5 % en 12. De 13c à 17b, les taux vont de 0 % à 8 %.
 
 **Prérequis à revoir.** Théorème de Heine, changement de variable dans une intégrale généralisée, développement d'un déterminant selon une ligne, théorème spectral, variance d'une somme de variables indépendantes.
 
