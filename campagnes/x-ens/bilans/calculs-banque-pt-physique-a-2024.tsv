@@ -1,0 +1,33 @@
+question	controle	valeur	reference	unite	resultat
+2	Poussée divisée par le poids	0.001	0.001	1	réussi
+4	Relaxation via masse sur coefficient de frottement	0.444444444444	0.444444444444	s	réussi
+5	Vitesse par intégration temporelle à 0.01 s	0.098883390252	0.0988833902518	m/s	réussi
+5	Vitesse par intégration temporelle à 0.45 s	2.8297352473	2.82973524729	m/s	réussi
+5	Vitesse par intégration temporelle à 1.5 s	4.29236391861	4.29236391861	m/s	réussi
+7	Reynolds limite sur le diamètre	88.8888888889	88.88889	1	réussi
+11	Vitesse réduite par intégration à 0.1 s	0.981633426858	0.981633426853	m/s	réussi
+11	Vitesse réduite par intégration à 1 s	8.45336076822	8.45336076818	m/s	réussi
+11	Vitesse réduite par intégration à 4 s	24.0740740742	24.0740740741	m/s	réussi
+16	Incidence par maximisation numérique	1.03995297261	1.03995298529	rad	réussi
+17	Rayon apparent de l’arc	42.5163817211	42.517	°	réussi
+15	Angle de sortie par tracé vectoriel à 20 degrés	-2.79940377394	-2.79940377394	rad	réussi
+15	Angle de sortie par tracé vectoriel à 50 degrés	-2.43174496938	-2.43174496938	rad	réussi
+15	Angle de sortie par tracé vectoriel à 60 degrés	-2.39960916079	-2.39960916079	rad	réussi
+25	Capacité géométrique par intégration du champ	5.06388862989e-12	5.06388862989e-12	F	réussi
+27	Gain capacitif pour h/H=0	1	1	1	réussi
+27	Gain capacitif pour h/H=0.2	17	17	1	réussi
+27	Gain capacitif pour h/H=1	81	81	1	réussi
+31	Tension différentielle au seuil	0	0	V	réussi
+32	Tension différentielle au seuil	0	0	V	réussi
+36	Durée de la descente	2.2e-05	2.2e-05	s	réussi
+38	Durée jusqu’au second basculement	4.4e-05	4.4e-05	s	réussi
+40	Période pour C = 11 nF	4.4e-05	4.4e-05	s	réussi
+43	Hauteur déduite de la période	0.125	0.125	mm	réussi
+43	Hauteur rapportée au disque total	0.111111111111	0.111111111111	mm	réussi
+46	Durée par vitesse sur l’axe	400000000	400000000	s	réussi
+47	Débit obtenu par intégration de la vitesse	3.92699081699e-18	3.92699081699e-18	m³/s	réussi
+48	Rapport des vitesses	0.5	0.5	1	réussi
+49	Temps de renouvellement par volume sur débit	800000000	800000000	s	réussi
+55	Norme par intégration des composantes	237855467882	237855467882	N	réussi
+56	Force sur le modèle du quart de cercle	237855467882	237850000000	N	réussi
+57	Puissance moyenne par énergie annuelle	1.93429731101	1.9343	GW	réussi
