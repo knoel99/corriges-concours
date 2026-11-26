@@ -28,9 +28,21 @@
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2021%20FUI-FF%20Session%202%20SUJET%20DE%20FRANCAIS_0.pdf",
     "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
-    "sujet_sha256": "471e770114230fb8aa2f7d9179c5f7ea92e495fc6ac653ecf2370129d7501402"
+    "sujet_sha256": "471e770114230fb8aa2f7d9179c5f7ea92e495fc6ac653ecf2370129d7501402",
+    "numero_pages_sujet": 2,
+    "reperage": "P. 1 garde sans jour ni horaire, durée de deux heures ; p. 2 Bergson (1932), note sur la machine à vapeur, A1 à A3 et essai B.",
+    "modalites_verifiees": {
+      "date_imprimee": null,
+      "horaire_imprime": null,
+      "saison": "printemps",
+      "duree": "2 heures",
+      "instructions_materiel": "L’utilisation de dictionnaires et traducteurs électroniques n’est pas autorisée pour cette épreuve.",
+      "bareme": "Aucun barème chiffré sur ce feuillet.",
+      "longueur": "B : bref essai de forme libre, sans limitation du nombre de mots.",
+      "notes_du_texte": 1
+    }
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "revision": {
     "date": "2026-11-24",
     "modele": null,
@@ -85,6 +97,23 @@
       "modifications": true,
       "perimetre": "Relecture de Bergson, du contraste entre les énergies et de la note datée sur les machines à vapeur, examen des trois réponses, du schéma du Rhône et de l’attribution finale dans l’essai.",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "classiques_2017",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Vérification du feuillet non daté, de la note sur les premières machines et de l’emploi du conditionnel final. Dans les deux éditions, distinction de la possibilité de séparation et d’une recommandation ; essai et deux schémas contrôlés."
     }
   ],
   "provenance": {
@@ -101,5 +130,14 @@
       "effort": "ultra",
       "service_tier": null
     }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A1. Autonomie de l’invention mécanique et accélération de ses progrès par la connaissance scientifique ; appui sur la note du sujet.",
+      "A2. Sens du don naturel et exemple des améliorations dues aux ouvriers.",
+      "A3. Interprétation de l’entrée dans le lac, du mélange apparent et de la sortie du Rhône, portée du conditionnel.",
+      "B. Conception personnelle du progrès en société, avancée pour l’humanité, limites dangereuses et exemples concrets."
+    ]
   }
 }
