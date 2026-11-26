@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le graphe est simple, connexe, non orienté et fourni par ses listes d’adjacence. Il a n sommets et m arêtes. Les cycles de la deuxième partie sont représentés par des ensembles d’arêtes et les calculs de parité ont lieu dans le corps à deux éléments.
 
 ## Partie 1. Arbres couvrants et cycles fondamentaux
@@ -127,11 +129,34 @@ Les vecteurs restants sont des combinaisons de l’ancienne famille orthogonale 
 
 **2(a).** Projeter la chaîne fermée dans $G$ et garder les arêtes utilisées un nombre impair de fois. Chaque sommet a degré pair dans cet ensemble $C$ car entrées et sorties se compensent modulo deux. Un sous-graphe pair se décompose en cycles élémentaires disjoints en arêtes : suivre des arêtes jusqu’à fermer un circuit, en extraire un cycle simple, le retirer et recommencer. Le nombre de changements de signe est impair, donc $\langle C,S_i\rangle=1$. Les poids non négatifs assurent $w(C)\le w(\sigma)$.
 
-**2(b).** Initialiser $c[1..m]=0$. Pour chaque indice $j$ de chaîne, poser $k=\mathrm{chaine}[j]$ et $c[k]\gets1-c[k]$. Renvoyer $c$. Coût $O(m+\lambda)$.
+**2(b).** Les indices d’arêtes de la chaîne donnent directement les cases à modifier.
+
+```text
+VecteurCycle(chaine,m)
+    C ← tableau de m bits nuls
+    pour chaque indice k dans chaine :
+        C[k] ← 1 − C[k]
+    renvoyer C
+```
+
+Après chaque passage, le bit indique la parité du nombre d’occurrences déjà lues. Le coût est $O(m+\lambda)$.
 
 **2(c).** Tout cycle de produit 1 admet une composante élémentaire de produit 1 et de poids au plus égal au sien, par la décomposition précédente. En suivant cette composante depuis un sommet $t$, son relèvement part de $t^+$ et termine en $t^-$. Ainsi $\min_t\delta(t^+,t^-)\le w(D)$ pour tout cycle admissible $D$. Avec l’inégalité de 2(a) pour la chaîne minimale, toutes les bornes sont atteintes.
 
-**3(a–b).** Pour chacun des $n$ sommets, appeler PlusCourteChaine, conserver la distance la plus petite et sa chaîne. Appliquer 2(b) à la meilleure chaîne. Les $n$ appels coûtent $O(nm+n^2\log n)$, reconstruction comprise (on peut retenir une chaîne simple dans le graphe doublé). En répétant $N$ fois et en utilisant 2.3.2, le temps de BaseMinimale1 est $O(N(nm+n^2\log n)+N^3+mN)$, donc $O(m^3+mn^2\log n)$.
+**3(a).** La question 2.1.2 assure l’existence d’un cycle impair. Au moins une distance est donc finie.
+
+```text
+CycleImpairMinimum(G,S)
+    meilleur ← infini
+    pour chaque sommet s de G :
+        (d, chaine) ← PlusCourteChaine(G,S,s)
+        si d < meilleur :
+            meilleur ← d
+            temoin ← chaine
+    renvoyer VecteurCycle(temoin,m)
+```
+
+**3(b).** Les $n$ appels coûtent $O(nm+n^2\log n)$, reconstruction comprise (on peut retenir une chaîne simple dans le graphe doublé). En répétant $N$ fois et en utilisant 2.3.2, le temps de BaseMinimale1 est $O(N(nm+n^2\log n)+N^3+mN)$, donc $O(m^3+mn^2\log n)$.
 
 ### Question 2.5 · Mises à jour par blocs
 
