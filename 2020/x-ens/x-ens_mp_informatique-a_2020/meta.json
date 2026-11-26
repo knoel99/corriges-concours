@@ -12,7 +12,8 @@
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20MP%20SUJET%20ECRIT%20INFORMATIQUE%20A%20%28XULCR%29_0.pdf",
     "rapport": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20MP%20RAPPORT%20ECRIT%20INFORMATIQUE%20A%20%28XULCR%29.pdf",
-    "sujet_sha256": "64434a206004b91e984ed414dda216be20a76094a2f7aa2e7fc5da9f7f0d64ca"
+    "sujet_sha256": "64434a206004b91e984ed414dda216be20a76094a2f7aa2e7fc5da9f7f0d64ca",
+    "rapport_sha256": "19220cf751c3b3579ee49c6401b6bbe5a86006b165c39fa1e75fc3d510534f2e"
   },
   "figures": [
     {
@@ -42,6 +43,61 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Rédaction des 20 questions sur les arbres couvrants, les files circulaires et les plus courts chemins lexicographiques. Lecture du fac-similé et du rapport du jury, reproduction indépendante de la trace demandée sur les 16 sommets, trois schémas et tests des programmes OCaml et des critères de correction sur des petits graphes exhaustifs."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "archives_2016_2022",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture du fac-similé de treize pages numérotées, du rapport et des trois figures. Vérification des 20 questions et de la trace sur la grille à seize sommets. En 16, réponse par les deux fragments du squelette OCaml. En 18, distinction des transferts intermédiaires de sources. En 19, renforcement de l’invariant sur la longueur des sources en attente. Exécution des programmes des deux éditions, avec 10 034 parcours par édition sur 44 graphes connexes."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20"
+    ],
+    "precision": "Les questions 1 à 20 figurent sur les pages imprimées 4 à 13. Les deux éditions répondent aux deux propriétés de 7, aux fragments 3 et 4(c) de 16, à la trace de 18 et aux invariants de 19.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "64434a206004b91e984ed414dda216be20a76094a2f7aa2e7fc5da9f7f0d64ca",
+      "sha256_rapport_controle": "19220cf751c3b3579ee49c6401b6bbe5a86006b165c39fa1e75fc3d510534f2e",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Relecture du fac-similé de treize pages numérotées, du rapport et des trois figures. Vérification des 20 questions et de la trace sur la grille à seize sommets. En 16, réponse par les deux fragments du squelette OCaml. En 18, distinction des transferts intermédiaires de sources. En 19, renforcement de l’invariant sur la longueur des sources en attente. Exécution des programmes des deux éditions, avec 10 034 parcours par édition sur 44 graphes connexes.",
+      "commit_redaction_anterieure": "1848032870fc5d55e31ae99dc91da4d3fd26fbdc"
+    },
+    "subdivisions_du_sujet": {
+      "7": [
+        "1",
+        "2"
+      ],
+      "16": [
+        "3",
+        "4(c)"
+      ]
+    }
+  }
 }
