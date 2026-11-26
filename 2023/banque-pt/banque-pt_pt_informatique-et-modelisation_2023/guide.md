@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Sujet officiel](https://www.banquept.fr/documents/2023/info_mod_2023_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2023/rapport_info_model_ecrit_2023.pdf) · [Notice de la session](https://www.banquept.fr/documents/livret/2023/Livret_PT_2023.pdf#page=13)
 
 **Élasticité de l’ADN et étalonnage d’une pince optique.** Épreuve de quatre heures, sans calculatrice. La première phrase du rapport mentionne la réverbération à convolution. Le feuillet et les commentaires numérotés du jury portent sur les ressorts, le piège optique et son étalonnage. Les questions vont de 1 à 38 et la documentation Python occupe la page 16.
@@ -16,7 +18,7 @@
 
 Placer le nouvel A avant le nouvel B et exprimer la longueur de chaque ressort à l’aide des positions actuelles. Le signe se lit ensuite en regardant vers quelle extrémité le ressort tire.
 
-Dans le sens de $\vec u_x$, les allongements algébriques des ressorts valent $x_1$ et $x_2-x_1$. Le premier exerce sur A $-k_1 x_1\vec u_x$, le second $+k_2(x_2-x_1)\vec u_x$. Sur B, le second exerce $-k_2(x_2-x_1)\vec u_x$. La pesanteur est négligée et la traction extérieure n’intervient qu’à la question suivante. Une compression change le signe de la force par la même formule.
+Dans le sens de $\vec u_x$, les allongements algébriques des ressorts valent $x_1$ et $x_2-x_1$. Le premier exerce sur A $-k_1 x_1\vec u_x$, le second $+k_2(x_2-x_1)\vec u_x$. Sur B, le second exerce $-k_2(x_2-x_1)\vec u_x$. La pesanteur est négligée et la traction extérieure n’intervient qu’à la question suivante. Une compression change le signe de la force par la même formule. Le point fixe subit la réaction opposée à la force du premier ressort sur A.
 
 ### Question 2 · Deux ressorts en série
 
@@ -28,7 +30,7 @@ Partir de l’équilibre de B pour déterminer la tension dans le deuxième ress
 
 ![Figure — Série et parallèle, sous la même traction totale](figures/ressorts.svg)
 
-### Question 3 · Six bases en série
+### Question 3 · Sept bases, six intervalles
 
 **Piste de résolution**
 
@@ -108,7 +110,7 @@ $\vec F_{B,1}=-q\vec v_1\times\vec B$ et $\vec F_{B,2}=q\vec v_2\times\vec B$. L
 
 Suivre une crête de phase dans le temps, puis lire le vecteur unitaire qui multiplie le cosinus.
 
-Pour $\omega,k>0$, garder $\omega t-kz$ constant donne $\mathrm dz/\mathrm dt=\omega/k>0$. La propagation s’effectue vers $+z$. Le champ électrique oscille suivant une direction fixe, $\vec u_y$. La polarisation est rectiligne suivant $y$. L’enveloppe varie transversalement suivant $x$.
+Pour $\omega,k>0$, garder $\omega t-kz$ constant donne $\mathrm dz/\mathrm dt=\omega/k>0$. La propagation s’effectue vers $+z$. Le champ électrique oscille suivant une direction fixe, $\vec u_y$. La polarisation est rectiligne suivant $y$, perpendiculairement à cette direction de propagation. L’enveloppe varie transversalement suivant $x$.
 
 ### Question 13 · Moyenne du terme de gradient
 
@@ -271,7 +273,7 @@ Le calcul des deux moyennes prend un nombre linéaire d’opérations. La boucle
 
 Une pente et une ordonnée à l’origine suffisent aux deux extrémités. Conserver les marqueurs pour les mesures et relier uniquement les valeurs ajustées.
 
-Deux points d’abscisses extrêmes suffisent pour tracer une droite, même lorsque les mesures sont fournies dans le désordre. Le script accepte les tensions en volts et les représente en microvolts. Les points sont tracés sans barres d’erreur comme demandé. Le graphique ci-dessous utilise un jeu d’illustration, le sujet ne fournit pas les listes expérimentales de la figure 11.
+Deux points d’abscisses extrêmes suffisent pour tracer une droite, même lorsque les mesures sont fournies dans le désordre. Le script attend les tensions en microvolts, comme sur l’axe de la figure 11. Si elles sont en volts, on multiplie les ordonnées par un million avant l’appel. Les points sont tracés sans barres d’erreur comme demandé. Le graphique ci-dessous utilise un jeu d’illustration, le sujet ne fournit pas les listes expérimentales de la figure 11.
 
 ```python
 def tracer_regression(f, U):
@@ -310,7 +312,7 @@ def traitement(a):
 
 Diviser chaque ligne de la matrice des fonctions et l’observation correspondante par sa variance. Le carré de cette division apparaîtra dans les équations normales.
 
-On construit $J_{ij}=f_j(x_i)$ et $w_i=1/\nu_i^2$, exactement comme sur le feuillet, où $\nu_i$ désigne la variance fournie. Puis on résout $(J^\top VJ)\mathbf a=J^\top V\mathbf y$. La diagonale se traite en multipliant les lignes par leurs poids. Les variances doivent être positives et $J$ de rang colonne $m$. La résolution linéaire est algébriquement équivalente à l’inversion de la matrice indiquée en annexe.
+On construit $J_{ij}=f_j(x_i)$ et $w_i=1/\nu_i^2$, exactement comme sur le feuillet, où $\nu_i$ désigne la variance fournie. Puis on résout $(J^\top VJ)\mathbf a=J^\top V\mathbf y$. Le code divise chaque ligne de $J$ et chaque observation par $\nu_i$. Leur produit dans les équations normales donne exactement le poids $1/\nu_i^2$. Les variances doivent être positives et $J$ de rang colonne $m$. La résolution linéaire est algébriquement équivalente à l’inversion de la matrice indiquée en annexe. Avec $x=[0,1,2]$, les couples (mesure, variance) $(1,1),(3,2),(6,1)$ et les bases $1,x$, les coefficients sont $17/18$ et $5/2$.
 
 ```python
 def regression_lineaire_gen(x, yv, listf):
@@ -468,6 +470,8 @@ Faire deux expériences de pensée avec la même calibration et deux tensions op
 L’ajustement fournit $f_c=|a_1|$. Avec $A=\mathrm{aire}(f,S_u)>0$, la calibration de la page 14 donne
 $$K=\sqrt{\frac{2\pi\gamma k_bT\, f_c}{A}},\qquad F=KU.$$
 Si la tension est en volts et les autres grandeurs en SI, $K$ est en N/V et $F$ en newtons. La tension signée $U$ doit être mesurée par rapport au zéro de calibration. Le spectre de fluctuations, à lui seul, ne donne pas son signe. Les cinq arguments de la signature ne donnent ni $U$, ni $\gamma$, ni $T$, ni la tolérance. On fixe donc ces quatre valeurs dans le contexte de la mesure, puis on appelle la fonction à cinq arguments fournie ci-dessous. Le sujet ne fournit aucune série brute permettant d’annoncer une force expérimentale numérique.
+
+Sur un jeu synthétique, $f=[0{,}5;1;2;3;4]$ et $S_u=2/(1+f^2)$, la descente initialisée en $(1{,}6;1{,}2)$ avec $h=0{,}05$ et une tolérance $10^{-11}$ retrouve $(a_0,a_1)=(2,1)$ à $2\times10^{-9}$ près. Les trapèzes donnent $A=123/68$. En prenant $\gamma=10^{-8}$ kg/s, $T=300$ K et $U=1$ mV, on obtient $F\simeq1{,}20\times10^{-17}$ N pour cet exemple. Inverser $U$ inverse la force.
 
 ```python
 def configurer_force(U, gamma, T, err):

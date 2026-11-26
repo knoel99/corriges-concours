@@ -60,6 +60,22 @@
         "guide"
       ],
       "perimetre": "Trente-huit réponses, modélisation, calibration, schémas et programmes de calcul. Contradictions des données commentées aux questions 19, 27, 31, 36 et 38."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture des 38 numéros et des unités, recomptage des six liaisons, lecture indépendante du spectre et du critère d’arrêt imprimés, cohérence des poids et du tracé, ajout d’exemples chiffrés et exécution des tests des programmes."
     }
   ],
   "couverture": {
@@ -118,7 +134,7 @@
       {
         "question": "Q3",
         "page_pdf": 3,
-        "intitule": "Six bases en série"
+        "intitule": "Sept bases, six intervalles"
       },
       {
         "question": "Q4",
