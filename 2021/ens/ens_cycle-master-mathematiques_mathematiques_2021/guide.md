@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Le mot le plus long et un théorème d’interpolation.** L’épreuve dure cinq heures et ses deux parties ont le même poids. Le produit de permutations est la composition et le crochet de dualité de la partie analyse est bilinéaire.
 
 ## Algèbre I. Unicité de la signature
@@ -282,6 +284,8 @@ Pour $0<\theta<1$, posons $u=r_0/[(1-\theta)r]$ et $v=r_1/(\theta r)$. Alors $u,
 Posons $H=F_1F_2$, holomorphe dans la bande, continu et borné sur sa fermeture. La simple multiplication des deux estimations pour $F_1,F_2$ ne donne que les constantes $M_j(F_1)M_j(F_2)$, potentiellement plus grandes que $M_j(H)$. Pour obtenir les constantes correctes, prenons $a_j=M_j(H)+\delta$ avec $\delta>0$ et considérons
 $$G_n(z)=H(z)a_0^{z-1}a_1^{-z}\exp((z^2-1)/n).$$
 Sur chaque bord vertical, $|G_n|\le1$. Sur les horizontales $\operatorname{Im}z=\pm R$, le dernier facteur a module au plus $e^{-R^2/n}$ et les autres sont bornés indépendamment de $R$ ; pour $R$ grand, $|G_n|\le1$ aussi. Le maximum sur chaque grand rectangle donne $|G_n|\le1$ dans la bande. Pour $z=\theta+iy$ fixé, faire tendre $n$ vers l’infini puis $\delta$ vers zéro donne $|H(z)|\le M_0(H)^{1-\theta}M_1(H)^\theta$ à l’intérieur. Les deux extrémités sont immédiates. Ceci établit directement le résultat pour le produit.
+
+Par exemple, $F_1(z)=e^{z^2}$ et $F_2(z)=e^{(z-i)^2}$ atteignent leurs maxima sur la droite $\operatorname{Re}z=j$ à des hauteurs respectives $0$ et $1$. Le produit a son maximum à la hauteur $1/2$ et $M_j(F_1F_2)=e^{2j^2-1/2}$, strictement inférieur à $M_j(F_1)M_j(F_2)=e^{2j^2}$ pour $j=0,1$.
 
 ### Question B.II.1.b
 

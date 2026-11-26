@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Sous-groupes matriciels et contrôle linéaire.** Les problèmes A et B sont indépendants. La fermeture d’un sous-groupe dans la question A.7 dépend de l’espace ambiant ; l’équation du problème B est comprise sous sa forme intégrale.
 
 ## A.I. Exponentielle et logarithme matriciels
@@ -449,6 +451,10 @@ Pour chaque $u$, $v^t\Psi(u)=\int_0^Tv^te^{(T-s)A}Bu(s)ds=0$ d’après B.10.b. 
 Les conditions $v^tA^jB=0$ pour $0\le j<n$ équivalent à $v^tC=0$ pour $C=(B,AB,\ldots,A^{n-1}B)$. Par B.9 et B.10, $\Psi$ est surjective si et seulement si $\ker C^t=\{0\}$, c’est-à-dire $\operatorname{rg}C=n$. B.8.b donne $\operatorname{Acc}(T)=\mathbb R^n$ exactement dans ce cas. La figure compare $B=(1,0)^t$ avec $A=0$, puis avec $Ae_1=e_2$ et $Ae_2=0$.
 
 ![Figure 1 — Exemples en dimension deux à partir de l’origine avec un seul contrôle suivant le premier axe. Lorsque A envoie ce vecteur sur le second axe, les deux directions deviennent accessibles.](figures/directions-accessibles.svg)
+
+Dans le second exemple de la figure, pour $x_0=0$ et $u(s)=a+bs$, les deux coordonnées finales sont
+$$x_1(T)=Ta+\frac{T^2}{2}b,\qquad x_2(T)=\frac{T^2}{2}a+\frac{T^3}{6}b.$$
+En effet, $e^{(T-s)A}B=e_1+(T-s)e_2$. Le déterminant de cette application de $(a,b)$ vaut $-T^4/12$. À chaque $T>0$, ces seuls contrôles affines permettent donc déjà de réaliser toute cible du plan.
 
 ### Question B.12
 
