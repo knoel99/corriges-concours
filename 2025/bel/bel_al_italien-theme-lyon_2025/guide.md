@@ -26,7 +26,7 @@ Après *eravamo persuasi*, le tour est déjà venu dans l’esprit du groupe. Le
 
 **Qui a encore faim de mots ?**
 
-Le singulier collectif *la gente* impose un verbe au singulier. *Non ne aveva mai abbastanza* reprend, grâce à *ne*, les mots désormais lisibles. À la dernière ligne, le narrateur admet le peu de crédit qu’il accordait lui-même au mythe. *Crederci* permet de reprendre cette croyance sans lui chercher un nouvel objet.
+Le singulier collectif *la gente* impose un verbe au singulier. *Non ne aveva mai abbastanza* reprend, grâce à *ne*, les mots désormais lisibles. À la dernière ligne, le narrateur admet le peu de crédit qu’il accordait lui-même au mythe. *Crederci* permet de reprendre cette croyance sans lui chercher un nouvel objet. Pour l’image religieuse, *l’arte salvifica* insiste sur la puissance de salut, tandis que *l’arte redentrice* garde le nom d’agent et l’écho de la prophétie.
 
 ## Proposition de thème
 
