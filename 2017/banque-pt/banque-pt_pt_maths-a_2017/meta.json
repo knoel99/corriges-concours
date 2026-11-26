@@ -1,0 +1,205 @@
+{
+  "slug": "banque-pt_pt_maths-a_2017",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths A",
+    "intitule": "Épreuve de Mathématiques A",
+    "annee": 2017,
+    "duree": "4 h"
+  },
+  "questions": 30,
+  "redaction": "Proposition pédagogique non officielle, rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2017/math_a_2017_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2017/rapport_math_a_ecrit_2017.pdf",
+    "sujet_sha256": "cd3fc74d1afa415523e9f0a59b82fdfe0bc4ee34bf3be4c59c7829ca8b3e5720",
+    "rapport_jury_sha256": "c7928d5738d5e79286c4abb7bd0ecea934e0579e625ebaba8f87fa239d675780",
+    "observation_rapport": "Le rapport 2017, p. 2–3, demande de justifier la récurrence sur les puissances et de distinguer le produit colonne-ligne de son produit scalaire transposé. Il souligne aussi le rôle des séries géométriques dans l’exercice de probabilités. Le contre-exemple donné en II.3.b relève de notre vérification du texte imprimé."
+  },
+  "figures": [
+    {
+      "question": "III.7.b",
+      "fichier": "figures/projection.svg",
+      "legende": "Pour un produit scalaire non nul, la projection sur la droite de U parallèlement au noyau de V transposé décompose tout vecteur en deux composantes propres."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "II.1",
+      "II.2",
+      "II.3.a",
+      "II.3.b",
+      "II.3.c",
+      "II.3.d",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7.a",
+      "III.7.b",
+      "III.7.c",
+      "III.8",
+      "P.1.a",
+      "P.1.b",
+      "P.2.a",
+      "P.2.b",
+      "P.2.c",
+      "P.3.a",
+      "P.3.b",
+      "P.3.c",
+      "P.3.d"
+    ],
+    "repere_par_question": [
+      {
+        "question": "I.1",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.2",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.3",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.4",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.5",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.1",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.2",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.3.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.3.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.3.c",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.3.d",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.1",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.2",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.3",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.4",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.5",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.6",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.7.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.7.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.7.c",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.8",
+        "page_pdf": 3
+      },
+      {
+        "question": "P.1.a",
+        "page_pdf": 4
+      },
+      {
+        "question": "P.1.b",
+        "page_pdf": 4
+      },
+      {
+        "question": "P.2.a",
+        "page_pdf": 4
+      },
+      {
+        "question": "P.2.b",
+        "page_pdf": 4
+      },
+      {
+        "question": "P.2.c",
+        "page_pdf": 4
+      },
+      {
+        "question": "P.3.a",
+        "page_pdf": 4
+      },
+      {
+        "question": "P.3.b",
+        "page_pdf": 4
+      },
+      {
+        "question": "P.3.c",
+        "page_pdf": 4
+      },
+      {
+        "question": "P.3.d",
+        "page_pdf": 4
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "30 consignes ou sous-consignes numérotées traitées dans chaque édition. La relation de II.3.b vaut pour p ≥ 2. Un contre-exemple traite p = 1 sans affecter l’égalité des rangs."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "fui_physique_un",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture du sujet et du rapport annuels, rédaction et vérification des deux éditions illustrées et du décompte par page. La relation de II.3.b vaut pour p ≥ 2. Un contre-exemple traite p = 1 sans affecter l’égalité des rangs."
+    }
+  ]
+}
