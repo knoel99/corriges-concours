@@ -4,11 +4,15 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 Les pages imprimées 10 à 12 réunissent deux traductions et une expression écrite sur un troisième texte. Chaque réponse d’expression doit compter de 225 à 275 mots. Le nombre indiqué après chaque réponse exclut son titre.
 
 [Fascicule officiel, pages imprimées 10 à 12](https://www.ens-rennes.fr/medias/fichier/sujet-lve-d-e-2026_1790867583165-pdf#page=11)
+
+**Repère du fascicule.** Les deux consignes de traduction comprennent le titre. Dans le premier, le superlatif relatif compare les Italiens aux autres Européens. Dans le second, « enfin » présente le repeuplement comme une évolution attendue. Conserver ces deux prises de position dès les titres.
 
 ## I. Version française
 
