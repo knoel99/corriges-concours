@@ -4,11 +4,15 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Préparer l’exposé
 
 Gardez une personne et faites varier le complément du verbe, reconnaître son visage, son travail, ce qu’on lui doit. Demandez chaque fois qui peut corriger une reconnaissance fautive et ce qu’il faut pour la rendre effective.
 
 Pour l’entretien, donnez un cas où l’éloge tient lieu de droit sans le remplacer réellement. Vous pourrez ensuite distinguer l’estime accordée librement et la reconnaissance institutionnelle exigible.
+
+**Qui répond de la promesse ?** La musicienne reconnaît son écriture sur un ancien engagement, puis explique qu’elle joue désormais une autre musique. Imaginez les deux réponses de son ami. « Cette signature est bien la tienne » établit l’identité de la signataire. « Que faisons-nous de ta promesse ? » lui demande de décider si elle jouera, proposera une nouvelle date ou sollicitera d’être déliée. La deuxième question suppose la première et appelle un acte que l’expertise de la signature ne peut accomplir.
 
 ## Exposé
 
@@ -17,6 +21,8 @@ Une musicienne entre dans une salle. On la reconnaît sur une photographie, on r
 ### Reconnaître le même à travers une différence
 
 À première vue, la reconnaissance suppose une connaissance antérieure. Une personne reconnue a vieilli et le lieu dans lequel je la rencontre a changé. La répétition qui suffirait à un appareil de comparaison, juxtaposer deux images strictement identiques, rendrait la reconnaissance humaine presque impossible. Il faut pouvoir retrouver un geste ou une inflexion dans une nouvelle situation. Ce travail a ses risques. Un acteur maquillé peut être immédiatement reconnaissable à sa voix, tandis qu’un faux air de famille conduit à aborder un inconnu comme un ami. La reconnaissance comporte donc une prétention susceptible d’être corrigée. Je peux examiner d’autres indices ou écouter l’intéressé.
+
+Reste le cas où je me reconnais moi-même. Devant un ancien programme, la musicienne peut reconnaître son écriture et juger aujourd’hui sa pièce méconnaissable. Elle peut aussi se souvenir qu’elle en avait promis la première exécution à un ami. Son changement de goût la dispense-t-il de tenir parole ? La promesse engage quelqu’un qui change, mais auquel un autre peut encore demander des comptes. Me reconnaître comme l’auteur d’un acte ajoute ainsi quelque chose à l’identification d’une trace. Cela peut m’obliger à répondre de cet acte devant quelqu’un, jusque dans le désaccord avec ce que je pensais autrefois.
 
 Le signe reconnu peut aussi avoir été méconnu de tous. Reconnaître un droit jusque-là refusé n’implique pas nécessairement qu’un groupe ait d’abord joui de ce droit puis l’ait perdu. Ce que l’on reconnaît existait peut-être comme raison légitime de prétendre à une certaine considération sans avoir jamais eu d’expression institutionnelle. Une signature portée pour la première fois sur une partition peut ainsi faire apparaître ce qui était vrai du travail accompli depuis le début. De l’identification perceptive à l’attribution de droit, la continuité tient au fait qu’une apparence initiale doit être reprise à la lumière de ce qui se manifestait déjà, mais imparfaitement.
 

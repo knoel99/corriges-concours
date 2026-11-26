@@ -4,11 +4,15 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Préparer l’exposé
 
 Testez trois verbes dans une situation d’apprentissage, permettre, outiller et répondre. Dites quel obstacle est levé, quels moyens demeurent nécessaires et à qui l’autorité doit rendre compte. Vous pourrez passer d’un exemple scolaire à un exemple politique sans confondre les deux.
 
 Pour l’objection, imaginez un maître qui annonce vouloir l’autonomie tout en interdisant de contester ses réponses. Indiquez quelle modification concrète ferait sortir de cette contradiction.
+
+**Deux prises de parole.** Un agent annonce le tarif réglementaire au guichet. Le soir, il publie des raisons de modifier ce tarif et les soumet à tout lecteur. Au sens de Kant, le premier usage relève de sa charge et le second est public, même si le guichet accueille plus de monde que le texte ne trouve de lecteurs. Pour relancer l’exposé, demandez qui pourra donner suite à l’objection. Une rédaction libre et la capacité collective de modifier la règle répondent à deux difficultés différentes de l’émancipation.
 
 ## Exposé
 
@@ -23,6 +27,8 @@ Certains usages politiques du mot ont cette netteté. L’accès de personnes au
 ### Apprendre à exercer sa propre capacité
 
 Dans *Qu’est-ce que les Lumières ?*, Kant décrit la minorité comme l’incapacité de se servir de son entendement sans la direction d’autrui. Il pointe l’habitude et le confort qui peuvent entretenir la tutelle. Quelqu’un peut souhaiter qu’un autre lise, juge et décide à sa place, même lorsqu’aucune force matérielle ne l’en empêche. Mais Kant donne aussi une condition politique de la sortie de minorité, la liberté de faire un usage public de sa raison. Il serait contradictoire d’exiger de chacun un jugement autonome tout en sanctionnant la publication d’une objection qu’il aurait de bonnes raisons de faire.
+
+Le vocabulaire de Kant réserve ici une surprise. Dans son essai de 1784, il appelle « privé » l’usage de la raison attaché à une charge précise. Cet usage peut pourtant se dérouler devant beaucoup de monde. Le même homme fait un usage « public » de sa raison quand il s’adresse comme savant à l’ensemble de ses lecteurs. Un citoyen tenu de payer une contribution peut ainsi soumettre à la discussion les défauts du système fiscal. Distinguer ces deux situations explique comment la critique peut commencer avant l’abolition d’une règle. Cela ouvre aussi une objection politique. Si les intéressés peuvent écrire, mais ne disposent d’aucun moyen d’agir ensemble sur la règle, quelle part de la tutelle ont-ils effectivement levée ?
 
 L’éducation rend le paradoxe sensible. Un élève ne peut vérifier une traduction grecque sans avoir reçu un alphabet, des règles de grammaire et des textes à comparer. Sa dépendance envers ceux qui lui ont transmis ces moyens fut une condition de son indépendance future. Le maître entretient-il une tutelle au moment où il enseigne ? Cela dépend de ce qu’il demande à l’élève de reconnaître comme preuve. S’il faut toujours obtenir l’approbation personnelle du maître, même une fois les arguments donnés, l’apprentissage peut prolonger indéfiniment la dépendance. Si l’élève a accès au texte, peut justifier ses choix et reçoit une réponse à ses objections, le contrôle s’exerce sur des raisons qu’il pourra à son tour examiner. Une autorité peut donc préparer l’émancipation à condition que sa propre parole cesse d’être l’unique mesure du vrai.
 
