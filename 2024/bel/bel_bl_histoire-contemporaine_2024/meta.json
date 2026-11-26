@@ -1,0 +1,103 @@
+{
+  "slug": "bel_bl_histoire-contemporaine_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Histoire contemporaine",
+    "annee": 2024,
+    "modalite": "écrit"
+  },
+  "intitule": "Vivre en dictature dans le monde 1919-1990.",
+  "type_epreuve": "Épreuve commune",
+  "questions": 1,
+  "documents": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2024_blses_sujet_composition_histoire.pdf",
+    "sha256_sujet": "bac183878ff1e679cd21c3c2f7d9a4731ec9619497c659ec7cd7b5e45d244b2f",
+    "pages_sujet": 1,
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_ecrit_histoire.pdf",
+    "sha256_rapport_jury": "3e6ce830bf2fda6b15e1f7ef795dacb7bc76410a02504bae667e89fd1b231dd0",
+    "pages_rapport": 5
+  },
+  "ressources_graphiques": [],
+  "lecture_du_sujet": [
+    {
+      "piece": "Sujet unique",
+      "page_debut": 1,
+      "page_fin": 1,
+      "controle": "« Vivre en dictature dans le monde 1919-1990. » Composition commune de six heures, sans dossier documentaire."
+    }
+  ],
+  "journal": [
+    {
+      "section": "Introduction",
+      "rapport": "p. 1–2",
+      "verification": "Prendre le verbe vivre pour objet ; définition et périmètre temporel, ordre de grandeur de la population concernée.",
+      "repere_dans_les_deux_editions": "place de Mai"
+    },
+    {
+      "section": "Apprendre à tenir sa place",
+      "rapport": "p. 2–4",
+      "verification": "Socialisation, loisirs et appartenances inégales. Comparer les différences de situation et de rôle qui séparent les individus du même pays.",
+      "repere_dans_les_deux_editions": "Opera nazionale Balilla"
+    },
+    {
+      "section": "Manger, travailler et circuler",
+      "rapport": "p. 3–5",
+      "verification": "Examiner nourriture, travail, mobilité et survie à différentes échelles ; URSS, Chine, Cambodge, Ouganda et RDA.",
+      "repere_dans_les_deux_editions": "Grand Bond en avant"
+    },
+    {
+      "section": "Faire avec le régime, agir sur lui",
+      "rapport": "p. 2–5",
+      "verification": "Comparer la participation, les accommodements et les actes publics. Donner leur statut aux traces de surveillance et aux témoignages.",
+      "repere_dans_les_deux_editions": "chantiers navals"
+    },
+    {
+      "section": "Conclusion",
+      "rapport": "p. 4–5",
+      "verification": "Atteindre la borne de 1990 et faire ressortir les différences de prise institutionnelle sur le quotidien.",
+      "repere_dans_les_deux_editions": "années, les lieux ou les personnes perdus"
+    }
+  ],
+  "figures": [
+    {
+      "fichier": "figures/gestes-ordinaires.svg",
+      "question": "Manger, travailler et circuler",
+      "legende": "Figure 1 — Trois gestes quotidiens révèlent des prises différentes du pouvoir sur les familles et leur lieu de vie."
+    },
+    {
+      "fichier": "figures/traces-et-inferences.svg",
+      "question": "Faire avec le régime, agir sur lui",
+      "legende": "Figure 2 — La nature de la trace limite ce que l’historien peut inférer sur les conduites et les convictions."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "x_maths_b_recentes",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Composition d’histoire sociale pour le sujet commun, 1919 à 1990. Exemples précis en Europe, Asie, Afrique et Amérique ; gestes du quotidien, différences sociales, temporalités et sources."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Vivre en dictature dans le monde 1919-1990."
+    ],
+    "precision": "Composition d’histoire sociale pour le sujet commun, 1919 à 1990. Exemples précis en Europe, Asie, Afrique et Amérique ; gestes du quotidien, différences sociales, temporalités et sources.",
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "bac183878ff1e679cd21c3c2f7d9a4731ec9619497c659ec7cd7b5e45d244b2f",
+      "sha256_rapport_jury_controle": "3e6ce830bf2fda6b15e1f7ef795dacb7bc76410a02504bae667e89fd1b231dd0",
+      "perimetre": "Composition d’histoire sociale pour le sujet commun, 1919 à 1990. Exemples précis en Europe, Asie, Afrique et Amérique ; gestes du quotidien, différences sociales, temporalités et sources."
+    }
+  }
+}
