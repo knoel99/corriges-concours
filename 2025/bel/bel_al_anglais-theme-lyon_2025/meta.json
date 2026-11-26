@@ -1,0 +1,151 @@
+{
+  "slug": "bel_al_anglais-theme-lyon_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Anglais (thème Lyon)",
+    "annee": 2025,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "duree_heures": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2025-09/251113.pdf#page=11",
+    "sujet_sha256": "b7d09bb818f637ec169e3e81e4912858b211e06941981935364478be20cd6766",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2025-11/Anglais%202025%20RELU.pdf#page=23",
+    "rapport_jury_sha256": "042d368e5f23e7b745c565f6a4fe6bbf116328f6b8e4da5912fedca0b2f327d0",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2025",
+    "ouvrage": "Philippe Forest, *Je reste roi de mes chagrins* (2019).",
+    "provenance": "La garde rattache l’anglais à Paris-Saclay, en plus des écoles communes à cette épreuve.",
+    "pages_rapport_verifiees": [
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ]
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2025-09/251113.pdf#page=11",
+      "sha256": "b7d09bb818f637ec169e3e81e4912858b211e06941981935364478be20cd6766",
+      "pages": 20,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "8ec0333bc615d21e75fd6bd8739b8ac1ac8f7527ec5d1bc38afbba95f28f63b7"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "dae4071d6ffda5bc775651fcae7b94ceff2b917d343071c89efbd64f3f4b205b"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2025-11/Anglais%202025%20RELU.pdf#page=23",
+      "sha256": "042d368e5f23e7b745c565f6a4fe6bbf116328f6b8e4da5912fedca0b2f327d0",
+      "pages": 69,
+      "pages_verifiees": [
+        {
+          "numero": 23,
+          "rendu_sha256": "f80903ef277df55a005875171cc91f93c0707d846bd0485003a6798a228ad524"
+        },
+        {
+          "numero": 24,
+          "rendu_sha256": "12c584b23a715aad74df3eb832ae222ccecf6d70405d2a9c09388a6a531174b0"
+        },
+        {
+          "numero": 25,
+          "rendu_sha256": "a4204fad809c3890c16f9ca5ae08ccd68a8770d8ad81edc3b02bdf0abaa4da3b"
+        },
+        {
+          "numero": 26,
+          "rendu_sha256": "1cdc3c9af27658d794d0cb8a574cc53ebed121d251b2e8ce1aabaecf6ce930bf"
+        },
+        {
+          "numero": 27,
+          "rendu_sha256": "61d1934d5316090160775a192aedb58e7f3d7ddf25a240dda981a56ac1311c5c"
+        },
+        {
+          "numero": 28,
+          "rendu_sha256": "4a41a029633a219ce0c83e7a6655b81a4b9210929be74ff1099eed36c25df04f"
+        },
+        {
+          "numero": 29,
+          "rendu_sha256": "e8a18b1b0942e896daf3fe9d98fbd404bee2e7f774b8daa30028555340deedaa"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "Proposition de thème",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "La pente est visible, la chute imaginée. La vue en plan permet de retrouver le cercle parfait du bassin dans la comparaison avec un miroir."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Traduction originale complète, schéma et guide consacré aux difficultés de syntaxe, d’aspect, de lexique et de voix du passage."
+    },
+    {
+      "phase": "revision",
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Comparaison des quatre paragraphes avec le feuillet, des deux valeurs du conditionnel et des référents de on. Distinction de la date de l’œuvre et de l’édition indiquée par le jury."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Philippe Forest, *Je reste roi de mes chagrins* (2019)."
+    ],
+    "note": "Traduction pédagogique originale. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Proposition de thème"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Proposition de thème",
+        "page_pdf": 11,
+        "feuillet_imprime": 11,
+        "perimetre": "Du visage invisible sur la photographie aux regrets et aux remords du personnage."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}
