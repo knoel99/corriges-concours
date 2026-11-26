@@ -1,0 +1,177 @@
+{
+  "slug": "bel_bl_philosophie-oral-tronc-commun-25-juin_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Philosophie (oral tronc commun, 25 juin)",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie (oral tronc commun, 25 juin)",
+  "questions": 0,
+  "tirages": 11,
+  "sujets": 22,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/philosophie_25_juin.pdf",
+    "sha256_sujet": "03d85aef8e23d9f8954e88328aa9f8b69257d2c9c88b72319d0e431a183fbf59",
+    "pages_sujet": "Feuillet daté, page unique.",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_philosophie.pdf",
+    "sha256_rapport_jury": "f43dbd726e8d925d3dbf694566dff8fd1eab8da6e6e7a6d5b5a75f59a5470d14",
+    "pages_rapport": "1 pour les modalités, 2–5 pour les observations et 5–6 pour les 61 paires annuelles."
+  },
+  "billets": [
+    {
+      "numero": 1,
+      "sujets": [
+        "Science et sagesse",
+        "Chercher son intérêt est-il rationnel ?"
+      ],
+      "option_choisie": 2,
+      "sujet_choisi": "Chercher son intérêt est-il rationnel ?"
+    },
+    {
+      "numero": 2,
+      "sujets": [
+        "La duplicité",
+        "Qu’est-ce qui est sacré ?"
+      ],
+      "option_choisie": 2,
+      "sujet_choisi": "Qu’est-ce qui est sacré ?"
+    },
+    {
+      "numero": 3,
+      "sujets": [
+        "La solidarité",
+        "Que montre un tableau ?"
+      ],
+      "option_choisie": 2,
+      "sujet_choisi": "Que montre un tableau ?"
+    },
+    {
+      "numero": 4,
+      "sujets": [
+        "Le déni",
+        "Qu’est-ce qu’une mauvaise interprétation ?"
+      ],
+      "option_choisie": 2,
+      "sujet_choisi": "Qu’est-ce qu’une mauvaise interprétation ?"
+    },
+    {
+      "numero": 5,
+      "sujets": [
+        "La résistance",
+        "Pourquoi écrire ?"
+      ],
+      "option_choisie": 2,
+      "sujet_choisi": "Pourquoi écrire ?"
+    },
+    {
+      "numero": 6,
+      "sujets": [
+        "Le cynisme",
+        "Qu’est-ce qui est irréfutable ?"
+      ],
+      "option_choisie": 2,
+      "sujet_choisi": "Qu’est-ce qui est irréfutable ?"
+    },
+    {
+      "numero": 7,
+      "sujets": [
+        "La perfection",
+        "Pourquoi des cérémonies ?"
+      ],
+      "option_choisie": 2,
+      "sujet_choisi": "Pourquoi des cérémonies ?"
+    },
+    {
+      "numero": 8,
+      "sujets": [
+        "L’aventure",
+        "Peut-il y avoir de bons tyrans ?"
+      ],
+      "option_choisie": 2,
+      "sujet_choisi": "Peut-il y avoir de bons tyrans ?"
+    },
+    {
+      "numero": 9,
+      "sujets": [
+        "La connaissance du singulier",
+        "De quoi suis-je inconscient ?"
+      ],
+      "option_choisie": 1,
+      "sujet_choisi": "La connaissance du singulier"
+    },
+    {
+      "numero": 10,
+      "sujets": [
+        "Les frontières",
+        "Faut-il aimer la vie ?"
+      ],
+      "option_choisie": 1,
+      "sujet_choisi": "Les frontières"
+    },
+    {
+      "numero": 11,
+      "sujets": [
+        "Art et interdit",
+        "Qu’est-ce qu’un témoin ?"
+      ],
+      "option_choisie": 1,
+      "sujet_choisi": "Art et interdit"
+    }
+  ],
+  "figures": [
+    {
+      "fichier": "figures/billet-4-option-2.svg",
+      "question": "Qu’est-ce qu’une mauvaise interprétation ?",
+      "legende": "Trois repères pour examiner interprétation."
+    },
+    {
+      "fichier": "figures/billet-11-option-2.svg",
+      "question": "Qu’est-ce qu’un témoin ?",
+      "legende": "Trois repères pour examiner témoignage."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "x_maths_b_anciennes",
+      "modifications": true,
+      "perimetre": "Rédaction des propositions argumentées et des relances individuelles pour les 22 sujets et de deux figures. Contrôle visuel des 11 paires et du gras, confrontation des intitulés à la liste du rapport 2025."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Science et sagesse",
+      "Chercher son intérêt est-il rationnel ?",
+      "La duplicité",
+      "Qu’est-ce qui est sacré ?",
+      "La solidarité",
+      "Que montre un tableau ?",
+      "Le déni",
+      "Qu’est-ce qu’une mauvaise interprétation ?",
+      "La résistance",
+      "Pourquoi écrire ?",
+      "Le cynisme",
+      "Qu’est-ce qui est irréfutable ?",
+      "La perfection",
+      "Pourquoi des cérémonies ?",
+      "L’aventure",
+      "Peut-il y avoir de bons tyrans ?",
+      "La connaissance du singulier",
+      "De quoi suis-je inconscient ?",
+      "Les frontières",
+      "Faut-il aimer la vie ?",
+      "Art et interdit",
+      "Qu’est-ce qu’un témoin ?"
+    ],
+    "precision": "Intégralité du feuillet du 25 juin exclusivement. Les deux sujets de chacun des 11 billets y sont développés. Le rapport annuel compte 61 paires, dont 11 supplémentaires après les cinq feuillets datés."
+  }
+}
