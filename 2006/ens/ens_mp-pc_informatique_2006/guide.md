@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Un ordre topologique permet d’organiser deux calculs : découvrir les sommets accessibles et évaluer des portes logiques. Pour les bornes inférieures, on cherchera ensuite les portes que l’on peut supprimer en choisissant des entrées particulières.
 
 ## Partie 1. Ordre topologique et fermeture
@@ -18,11 +20,26 @@ Sur un circuit fermé de flèches, un rang finirait par être strictement supér
 
 ### Question 1.1.3 · Inverser la permutation
 
-Le tableau initial répond « quel rang pour ce sommet ? ». Pour répondre « quel sommet à ce rang ? », parcourir une fois les sommets $s$ et écrire $s$ dans la case numéro $o[s]$ du nouveau tableau. La bijectivité garantit qu’aucune case ne sera perdue ou écrasée.
+Le tableau initial répond « quel rang pour ce sommet ? ». Pour répondre « quel sommet à ce rang ? », parcourir une fois les sommets $s$ et écrire $s$ dans la case numéro $o[s]$ du nouveau tableau. La bijectivité garantit qu’aucune case ne sera perdue ou écrasée. Temps $\Theta(n)$ et $n$ cases pour le résultat.
+
+```text
+Inverse(o)
+créer inv de taille n
+pour s = 1,…,n : inv[o[s]] ← s
+renvoyer inv
+```
 
 ### Question 1.2.1 · Parents
 
-Inverser les flèches en une lecture des listes. À la lecture du fils $t$ de $s$, ajouter $s$ en tête de la liste des parents de $t$. Les listes initiales sans répétition empêchent les doublons, et les insertions en tête prennent un temps constant.
+Inverser les flèches en une lecture des listes. À la lecture du fils $t$ de $s$, ajouter $s$ en tête de la liste des parents de $t$. Les listes initiales sans répétition empêchent les doublons, et les insertions en tête prennent un temps constant. L’initialisation visite les $n$ sommets, la double boucle les $m$ arcs, soit $\Theta(n+m)$.
+
+```text
+Parents(Succ)
+P[1..n] ← listes vides
+pour s = 1,…,n :
+    pour t dans Succ[s] : P[t] ← concat(s,P[t])
+renvoyer P
+```
 
 ### Question 1.2.2 · Degrés et entrées
 
@@ -34,7 +51,16 @@ Un sommet devient disponible précisément quand son dernier parent a reçu un r
 
 ### Question 1.3 · Ordonner toutes les listes
 
-Pour éviter de trier chaque liste par comparaisons, traiter globalement les destinations dans l’ordre voulu. Prendre d’abord la destination de plus grand rang et la distribuer à ses parents, puis les suivantes. L’insertion en tête inverse ce parcours, et chaque arc est distribué une fois.
+Pour éviter de trier chaque liste par comparaisons, traiter globalement les destinations dans l’ordre voulu. Prendre d’abord la destination de plus grand rang et la distribuer à ses parents, puis les suivantes. L’insertion en tête inverse ce parcours, et chaque arc est distribué une fois. Former les deux tableaux auxiliaires et distribuer les arcs coûte $O(n+m)$.
+
+```text
+TriSuccesseurs(o,Succ)
+inv ← Inverse(o) ; P ← Parents(Succ) ; T ← n listes vides
+pour r de n à 1 :
+    v ← inv[r]
+    pour u dans P[v] : T[u] ← concat(v,T[u])
+renvoyer T
+```
 
 ### Question 1.4.1 · Trace de R et Q
 
@@ -58,6 +84,18 @@ Multiplier le nombre de flèches tout en empêchant les détours : relier chaque
 
 Une partition minimale au sens demandé exige qu’aucune paire de chaînes ne fusionne, même en entrelaçant leurs sommets. Partir du plus petit sommet libre et toujours suivre le premier fils encore libre. Aucun sommet d’une chaîne ultérieure ne peut précéder le départ, suivre le dernier sommet, ni s’insérer entre deux choix consécutifs : sa première insertion aurait offert un plus petit fils au moment du choix. Une liste d’adjacence n’est examinée qu’au passage sur son sommet, donc temps linéaire.
 
+```text
+Chaines(Succ)
+marquer tous les sommets libres
+pour i croissant :
+    si i est libre :
+        ouvrir une chaîne au sommet i
+        tant qu’un sommet v est sélectionné :
+            marquer v occupé et l’ajouter en queue à la chaîne
+            sélectionner le premier fils libre de v, ou arrêter la chaîne
+renvoyer les chaînes
+```
+
 ### Question 1.5.2.a · Premier sommet accessible
 
 Les sommets atteints sur une chaîne forment un suffixe. Pour en trouver le premier, il suffit de connaître les suffixes atteints par les fils indispensables. En effet, chaque arc supprimable peut être remplacé par un chemin de même origine et même arrivée ne comportant finalement que des arcs indispensables. Lorsque la position de départ appartient déjà à la chaîne, elle est le premier élément atteignable.
@@ -69,6 +107,19 @@ Le numéro $r$ résume ce que les fils indispensables déjà lus savent atteindr
 ### Question 1.5.2.c · Calcul des minima par chaîne
 
 Tenir pour chaque chaîne le meilleur point d’entrée trouvé pendant le traitement des fils. Tous les minima partent de la sentinelle. Un test sur une seule case élimine un arc redondant ; seul un nouveau fils indispensable entraîne la fusion de ses $k$ minima. À la toute fin, rendre au sommet $i$ sa propre place dans sa chaîne. Remplir cette case trop tôt ferait paraître redondant un véritable arc vers la même chaîne.
+
+```text
+PremiersAccessibles(Succ,C,k)
+pour i de n à 1 :
+    initialiser R[1..k,i] à n+1
+    pour j dans Succ[i] en ordre croissant :
+        si j < R[C[j],i] :
+            pour h = 1,…,k : R[h,i] ← min(R[h,i],R[h,j])
+    R[C[i],i] ← i
+renvoyer R
+```
+
+Chaque arc subit un test, chaque colonne exige $O(k)$ initialisations et seuls les $|A^-|$ arcs indispensables déclenchent une fusion de $k$ cases. Le coût total est $O(|A|+k(|S|+|A^-|))$.
 
 ### Question 1.5.3 · Développer les suffixes
 
@@ -96,7 +147,7 @@ Observer deux tranches du cube obtenues en fixant la dernière coordonnée. Une 
 
 ### Question 2.2.2 · Extraire une négation
 
-Sur un chemin de sommets croissants du cube, la sortie commence à 1 et finit à 0. Choisir la première chute. Les deux tests qui l’encadrent ne diffèrent que par le bit libre, et leur table unaire est exactement $1,0$.
+La non-monotonie fournit deux points $x\le y$ avec $f(x)=1$ et $f(y)=0$. De $x$ à $y$, retourner les bits différents un à un, de zéro à un. Choisir la première chute. Les deux tests qui l’encadrent ne diffèrent que par le bit libre, et leur table unaire est exactement $1,0$.
 
 ### Question 2.3.1 · Lire le circuit
 
@@ -104,11 +155,11 @@ La porte de gauche teste le couple $1,2$. La porte de droite teste si l’un de 
 
 ### Question 2.3.2 · Reconnaître un mot
 
-Chaque feuille donne une égalité à un bit de référence. Une feuille à tester contre 0 reçoit un inverseur. Au-dessus des feuilles, associer par paires les résultats sans attendre séquentiellement les $n$ tests. L’arbre binaire a $n-1$ nœuds internes et une hauteur logarithmique, même si $n$ n’est pas une puissance de deux.
+Chaque feuille donne une égalité à un bit de référence. Une feuille à tester contre 0 reçoit un inverseur. Au-dessus des feuilles, associer par paires les résultats sans attendre séquentiellement les $n$ tests. L’arbre binaire a $n-1$ nœuds internes et une hauteur logarithmique, même si $n$ n’est pas une puissance de deux. Avec au plus $n$ inverseurs, la taille est au plus $2n-1$ et la profondeur au plus $1+\lceil\log_2 n\rceil$.
 
 ### Question 2.3.3 · Table de vérité arbitraire
 
-Une fonction vaut 1 exactement sur l’union des mots marqués 1 dans sa table. Un reconnaisseur par mot, puis un arbre de « ou », réalisent cette union. Il y a au plus $2^n$ mots et l’arbre final ajoute au plus $n$ étages. Pour un seul mot cet arbre est inutile ; pour aucun mot utiliser directement zéro.
+Une fonction vaut 1 exactement sur l’union des mots marqués 1 dans sa table. Un reconnaisseur par mot, puis un arbre de « ou », réalisent cette union. Il y a au plus $2^n$ mots et l’arbre final ajoute au plus $n$ étages. Pour un seul mot cet arbre est inutile ; pour aucun mot utiliser directement zéro. Chaque reconnaisseur ayant une taille $O(n)$, la taille totale est $O(n2^n)$. La profondeur vaut $O(\log n)+O(n)=O(n)$.
 
 ### Question 2.4.1 · Une base minimale
 
@@ -132,7 +183,7 @@ Le produit booléen remplace « multiplier et sommer » par « et puis ou ». Un
 
 ### Question 3.1.2 · Circuit d’accessibilité
 
-Doubler la longueur maximale reconnue réclame un étage de multiplication matricielle, donc un nombre logarithmique d’étages pour couvrir $n-1$ arcs. À l’intérieur d’un tel étage, les $n$ possibilités de raccordement d’une case sont testées simultanément et réunies par un arbre binaire. Le coût en portes est cubique par étage, mais un chemin dans le circuit ne traverse qu’une hauteur logarithmique par étage. Lire enfin la case $i,j$.
+Doubler la longueur maximale reconnue réclame un étage de multiplication matricielle, donc un nombre logarithmique d’étages pour couvrir $n-1$ arcs. À l’intérieur d’un tel étage, les $n$ possibilités de raccordement d’une case sont testées simultanément et réunies par un arbre binaire. Le coût en portes est cubique par étage, mais un chemin dans le circuit ne traverse qu’une hauteur logarithmique par étage. Lire enfin la case $i,j$. La taille est $O(n^3\log n)$ et la profondeur $O((\log n)^2)$.
 
 ### Question 3.2.1 · Compter les arcs
 

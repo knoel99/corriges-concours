@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Soit n le nombre de sommets d’un graphe et m son nombre d’arcs. Dans les circuits, toutes les portes ont une arité positive et un même parent ne peut figurer deux fois à la même porte. Cette convention intervient dans le critère de complétude.
 
 ## Partie 1. Ordre topologique et fermeture
