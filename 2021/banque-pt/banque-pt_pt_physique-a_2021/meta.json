@@ -1,0 +1,644 @@
+{
+  "slug": "banque-pt_pt_physique-a_2021",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique A",
+    "annee": 2021
+  },
+  "questions": 68,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2021/ph_a_2021_pt.pdf",
+    "sujet_sha256": "9f974ac51137d422bb90425bc00cc870deea836d9e7836f54092d0081e35e51e",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2021/rapport_phys_a_ecrit_2021.pdf",
+    "rapport_sha256": "b566460373939527221e3f5a4f77ee695ff47536e360393f8f0dffb32a5ba1f0",
+    "rubriques_lues": [
+      {
+        "rubrique": "Ébauche de calendrier lunaire",
+        "pages_pdf": [
+          1
+        ]
+      },
+      {
+        "rubrique": "Pendule pesant",
+        "pages_pdf": [
+          1,
+          2
+        ]
+      },
+      {
+        "rubrique": "Pendule en rotation",
+        "pages_pdf": [
+          2
+        ]
+      },
+      {
+        "rubrique": "Oscillateur hydraulique",
+        "pages_pdf": [
+          2
+        ]
+      },
+      {
+        "rubrique": "Oscillateur de relaxation en électronique",
+        "pages_pdf": [
+          2,
+          3
+        ]
+      },
+      {
+        "rubrique": "Oscillateur quasi sinusoïdal",
+        "pages_pdf": [
+          3
+        ]
+      }
+    ],
+    "composition": "Couverture page 1, énoncé et figures F1 à F15 pages 2 à 13, pages 14 et 15 blanches et marque d’impression page 16."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2021/ph_a_2021_pt.pdf",
+      "sha256": "9f974ac51137d422bb90425bc00cc870deea836d9e7836f54092d0081e35e51e",
+      "nombre_pages": 16,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "f0b75fdbd2c723117d9050637d3478dd054c5792aa0a0102410fa46ad13519e6"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "ea90619febc040ade1ca81326bc46f1e35794e946c6955e644d11448b70eb082"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "c75a21d53ec934eae44b71812eca51ebbf3dc3c9556e33dbdfd85fac0eaccfd0"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "8488febfae57321f1d8b24132c79568a020439b652af0ee7176b2cb7d3df440d"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "2f475b7370d98dbcce8202fa2590add5f7de7c247b4b6a510ffd4271d8ad668f"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "a3973faf49be4a267ce55f074bbd29223375bc1f1f7cee47c639c78f2a94164b"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "359de1254ce69667de92587179a7f073d9f369ae91acf8120937c57ea4d5ee63"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "bdd51c2acc025436d5d1d9d7795566c34d3831ebcb0773069367f33fd4bab860"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "94f838ff138416ae1f5befee97aea68d58e526142f9faebb9773acc666925601"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "0903cd23f972a12e91034468c7b57194a9352485a9f0452678042adbbcbdc455"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "bf981c16b176bc5325efd36da98f12de250c46a98e645e9b9926184745620810"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "d68601c15549f62d46f66670adf0a8d5716e4d551d8c0a4172a85d3e5d20f8fc"
+        },
+        {
+          "numero": 13,
+          "rendu_sha256": "cf30e9beeb878b20a9363aeb62d71f759839f2529c32fe52c7110a31a2caa3c9"
+        },
+        {
+          "numero": 14,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        },
+        {
+          "numero": 15,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        },
+        {
+          "numero": 16,
+          "rendu_sha256": "b2dec810f31edb97e462ca19531864117cd6cfb8d3c52dc189f7d5fedd43fe16"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2021/rapport_phys_a_ecrit_2021.pdf",
+      "sha256": "b566460373939527221e3f5a4f77ee695ff47536e360393f8f0dffb32a5ba1f0",
+      "nombre_pages": 3,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "95f1e18168056395c4821447e96193c5e2919942c7227aeff3cc3f12392307f3"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "0cb83c38da04488c39d495d27212831917528966f7e947ebe95b5f6e7b308cb9"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "fe410eac1cc18c4b1a1d641f52f915bdc89797dc98abd3fad761bb84838d0eed"
+        }
+      ]
+    }
+  },
+  "date_revision": "2026-11-26",
+  "figures": [
+    {
+      "fichier": "figures/mecanique.svg",
+      "question": "Q3",
+      "legende": "Gravitation et forces du pendule, Q3 et Q7"
+    },
+    {
+      "fichier": "figures/siphon.svg",
+      "question": "Q19",
+      "legende": "Siphon amorcé"
+    },
+    {
+      "fichier": "figures/niveau.svg",
+      "question": "Q27",
+      "legende": "Deux périodes hydrauliques"
+    },
+    {
+      "fichier": "figures/cycle.svg",
+      "question": "Q33",
+      "legende": "Deux parcours colorés, Q32 et Q33"
+    },
+    {
+      "fichier": "figures/triangle.svg",
+      "question": "Q35",
+      "legende": "Triangle et sortie saturée sur deux périodes"
+    },
+    {
+      "fichier": "figures/gain.svg",
+      "question": "Q47",
+      "legende": "Gain et bande passante du filtre"
+    },
+    {
+      "fichier": "figures/bobine.svg",
+      "question": "Q61",
+      "legende": "Circuit électrique de la bobine réelle"
+    }
+  ],
+  "contributions": [
+    {
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "session": "pt_physique_a_horloges_2021",
+      "phase": "redaction",
+      "perimetre": "Solutions aux 68 questions, conseils individualisés et sept figures couvrant les tracés et schémas demandés."
+    },
+    {
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "session": "pt_physique_a_horloges_2021",
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "perimetre": "Contrôle des références de temps et longueurs, phases de vidange, seuils électriques, mesure du véritable oscillogramme F8, réponse et stabilité de boucle, conversions d’unités et de degrés. Vérification des figures, des signets et des calculs numériques."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21",
+      "Q22",
+      "Q23",
+      "Q24",
+      "Q25",
+      "Q26",
+      "Q27",
+      "Q28",
+      "Q29",
+      "Q30",
+      "Q31",
+      "Q32",
+      "Q33",
+      "Q34",
+      "Q35",
+      "Q36",
+      "Q37",
+      "Q38",
+      "Q39",
+      "Q40",
+      "Q41",
+      "Q42",
+      "Q43",
+      "Q44",
+      "Q45",
+      "Q46",
+      "Q47",
+      "Q48",
+      "Q49",
+      "Q50",
+      "Q51",
+      "Q52",
+      "Q53",
+      "Q54",
+      "Q55",
+      "Q56",
+      "Q57",
+      "Q58",
+      "Q59",
+      "Q60",
+      "Q61",
+      "Q62",
+      "Q63",
+      "Q64",
+      "Q65",
+      "Q66",
+      "Q67",
+      "Q68"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "Q1",
+        "page_pdf": 2,
+        "traitement": "Champ gravitationnel extérieur"
+      },
+      {
+        "question": "Q2",
+        "page_pdf": 2,
+        "traitement": "Force exercée sur la Lune"
+      },
+      {
+        "question": "Q3",
+        "page_pdf": 2,
+        "traitement": "Mouvement circulaire et période sidérale"
+      },
+      {
+        "question": "Q4",
+        "page_pdf": 3,
+        "traitement": "Troisième loi de Kepler"
+      },
+      {
+        "question": "Q5",
+        "page_pdf": 3,
+        "traitement": "Géométrie d’une nouvelle lune"
+      },
+      {
+        "question": "Q6",
+        "page_pdf": 3,
+        "traitement": "Dérive d’un calendrier lunaire"
+      },
+      {
+        "question": "Q7",
+        "page_pdf": 3,
+        "traitement": "Équation du pendule simple"
+      },
+      {
+        "question": "Q8",
+        "page_pdf": 3,
+        "traitement": "Petites oscillations à partir du repos"
+      },
+      {
+        "question": "Q9",
+        "page_pdf": 3,
+        "traitement": "Battre la seconde"
+      },
+      {
+        "question": "Q10",
+        "page_pdf": 3,
+        "traitement": "Rendre visible la rotation terrestre"
+      },
+      {
+        "question": "Q11",
+        "page_pdf": 3,
+        "traitement": "Une horloge à balancier"
+      },
+      {
+        "question": "Q12",
+        "page_pdf": 4,
+        "traitement": "Balancier et ressort spiral"
+      },
+      {
+        "question": "Q13",
+        "page_pdf": 4,
+        "traitement": "Période du balancier"
+      },
+      {
+        "question": "Q14",
+        "page_pdf": 4,
+        "traitement": "Rôle de l’échappement"
+      },
+      {
+        "question": "Q15",
+        "page_pdf": 5,
+        "traitement": "Bilan de Bernoulli"
+      },
+      {
+        "question": "Q16",
+        "page_pdf": 5,
+        "traitement": "Remplissage du dispositif"
+      },
+      {
+        "question": "Q17",
+        "page_pdf": 5,
+        "traitement": "Croissance du niveau"
+      },
+      {
+        "question": "Q18",
+        "page_pdf": 6,
+        "traitement": "Temps de remplissage"
+      },
+      {
+        "question": "Q19",
+        "page_pdf": 6,
+        "traitement": "Amorcer le siphon"
+      },
+      {
+        "question": "Q20",
+        "page_pdf": 6,
+        "traitement": "Vitesse du jet"
+      },
+      {
+        "question": "Q21",
+        "page_pdf": 6,
+        "traitement": "Débit sortant"
+      },
+      {
+        "question": "Q22",
+        "page_pdf": 6,
+        "traitement": "Bilan avec le robinet ouvert"
+      },
+      {
+        "question": "Q23",
+        "page_pdf": 6,
+        "traitement": "Condition pour vider jusqu’en bas"
+      },
+      {
+        "question": "Q24",
+        "page_pdf": 6,
+        "traitement": "Un équilibre intermédiaire"
+      },
+      {
+        "question": "Q25",
+        "page_pdf": 6,
+        "traitement": "Vidange rapide devant le remplissage"
+      },
+      {
+        "question": "Q26",
+        "page_pdf": 6,
+        "traitement": "Durée d’un cycle"
+      },
+      {
+        "question": "Q27",
+        "page_pdf": 6,
+        "traitement": "Deux périodes de hauteur d’eau"
+      },
+      {
+        "question": "Q28",
+        "page_pdf": 6,
+        "traitement": "Amplificateur linéaire intégré idéal et réel"
+      },
+      {
+        "question": "Q29",
+        "page_pdf": 6,
+        "traitement": "Ordres de grandeur d’un ALI usuel"
+      },
+      {
+        "question": "Q30",
+        "page_pdf": 7,
+        "traitement": "Fonctionnement de U0"
+      },
+      {
+        "question": "Q31",
+        "page_pdf": 7,
+        "traitement": "Tension de référence mobile"
+      },
+      {
+        "question": "Q32",
+        "page_pdf": 7,
+        "traitement": "Entrée croissante"
+      },
+      {
+        "question": "Q33",
+        "page_pdf": 7,
+        "traitement": "Entrée décroissante"
+      },
+      {
+        "question": "Q34",
+        "page_pdf": 7,
+        "traitement": "Pourquoi une hystérésis"
+      },
+      {
+        "question": "Q35",
+        "page_pdf": 7,
+        "traitement": "Réponse au triangle"
+      },
+      {
+        "question": "Q36",
+        "page_pdf": 8,
+        "traitement": "Charge initiale du condensateur"
+      },
+      {
+        "question": "Q37",
+        "page_pdf": 8,
+        "traitement": "Fin de la première montée"
+      },
+      {
+        "question": "Q38",
+        "page_pdf": 9,
+        "traitement": "Inversion du courant"
+      },
+      {
+        "question": "Q39",
+        "page_pdf": 9,
+        "traitement": "Équation de la descente"
+      },
+      {
+        "question": "Q40",
+        "page_pdf": 9,
+        "traitement": "Fin de la descente"
+      },
+      {
+        "question": "Q41",
+        "page_pdf": 9,
+        "traitement": "Période en régime établi"
+      },
+      {
+        "question": "Q42",
+        "page_pdf": 9,
+        "traitement": "Mesures sur l’oscillogramme F8"
+      },
+      {
+        "question": "Q43",
+        "page_pdf": 9,
+        "traitement": "Limites de fréquence"
+      },
+      {
+        "question": "Q44",
+        "page_pdf": 9,
+        "traitement": "Limites effectivement visibles"
+      },
+      {
+        "question": "Q45",
+        "page_pdf": 9,
+        "traitement": "Fonction de transfert du filtre"
+      },
+      {
+        "question": "Q46",
+        "page_pdf": 9,
+        "traitement": "Bande passante à trois décibels"
+      },
+      {
+        "question": "Q47",
+        "page_pdf": 10,
+        "traitement": "Diagramme de gain"
+      },
+      {
+        "question": "Q48",
+        "page_pdf": 10,
+        "traitement": "Deux amplificateurs"
+      },
+      {
+        "question": "Q49",
+        "page_pdf": 10,
+        "traitement": "Impédances d’entrée"
+      },
+      {
+        "question": "Q50",
+        "page_pdf": 10,
+        "traitement": "Association en cascade"
+      },
+      {
+        "question": "Q51",
+        "page_pdf": 11,
+        "traitement": "Équation de la boucle fermée"
+      },
+      {
+        "question": "Q52",
+        "page_pdf": 11,
+        "traitement": "Oscillations croissantes"
+      },
+      {
+        "question": "Q53",
+        "page_pdf": 11,
+        "traitement": "Fréquence au démarrage"
+      },
+      {
+        "question": "Q54",
+        "page_pdf": 11,
+        "traitement": "Fréquence proche de la résonance"
+      },
+      {
+        "question": "Q55",
+        "page_pdf": 11,
+        "traitement": "Limiter le gain électronique"
+      },
+      {
+        "question": "Q56",
+        "page_pdf": 11,
+        "traitement": "Différence entre les deux schémas"
+      },
+      {
+        "question": "Q57",
+        "page_pdf": 11,
+        "traitement": "D’où vient la résistance de pertes"
+      },
+      {
+        "question": "Q58",
+        "page_pdf": 12,
+        "traitement": "Résistance du fil de cuivre"
+      },
+      {
+        "question": "Q59",
+        "page_pdf": 12,
+        "traitement": "Capacité entre deux spires"
+      },
+      {
+        "question": "Q60",
+        "page_pdf": 12,
+        "traitement": "Capacité résultante"
+      },
+      {
+        "question": "Q61",
+        "page_pdf": 12,
+        "traitement": "Schéma complet de la bobine"
+      },
+      {
+        "question": "Q62",
+        "page_pdf": 12,
+        "traitement": "Conséquence sur la fréquence utile"
+      },
+      {
+        "question": "Q63",
+        "page_pdf": 13,
+        "traitement": "Condition d’oscillation sinusoïdale"
+      },
+      {
+        "question": "Q64",
+        "page_pdf": 13,
+        "traitement": "Phase du filtre"
+      },
+      {
+        "question": "Q65",
+        "page_pdf": 13,
+        "traitement": "Fluctuation de phase de l’amplificateur"
+      },
+      {
+        "question": "Q66",
+        "page_pdf": 13,
+        "traitement": "Sensibilité de la fréquence"
+      },
+      {
+        "question": "Q67",
+        "page_pdf": 13,
+        "traitement": "Aspect du spectre"
+      },
+      {
+        "question": "Q68",
+        "page_pdf": 13,
+        "traitement": "Comment améliorer la stabilité"
+      }
+    ]
+  }
+}
