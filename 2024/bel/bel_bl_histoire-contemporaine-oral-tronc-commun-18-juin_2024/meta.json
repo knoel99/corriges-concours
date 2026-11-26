@@ -1,0 +1,354 @@
+{
+  "slug": "bel_bl_histoire-contemporaine-oral-tronc-commun-18-juin_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Histoire contemporaine (oral tronc commun, 18 juin)",
+    "annee": 2024,
+    "modalite": "oral"
+  },
+  "intitule": "Histoire — Sujets du 18 juin 2024",
+  "questions": 0,
+  "tirages": 8,
+  "sujets": 16,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/bl_sujets_oraux_histoire_18062024.pdf",
+    "sha256_sujet": "364ada7873cd6cf19f49d439ea410f0261e04bcba2a2310696089b039857be24",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_oral_histoire.pdf",
+    "sha256_rapport_jury": "888e6723a8d4525e1f385ba55d1d7881d0ce80c84ad63f0acca3a47c35813058",
+    "pages_sujet": 1,
+    "pages_rapport_jury": 3
+  },
+  "billets": [
+    {
+      "numero": 1,
+      "sujets": [
+        "Être résistant en France 1940-1945",
+        "Les \"Pères de l'Europe\""
+      ],
+      "intitule_en_gras": "Être résistant en France 1940-1945",
+      "page": 1
+    },
+    {
+      "numero": 2,
+      "sujets": [
+        "Les paysannes en France de 1870 aux années 1960",
+        "L'Amérique latine entre dictatures et démocratie de 1918 aux années 1990"
+      ],
+      "intitule_en_gras": "Les paysannes en France de 1870 aux années 1960",
+      "page": 1
+    },
+    {
+      "numero": 3,
+      "sujets": [
+        "Être étudiant en France",
+        "Berlin au 20e s."
+      ],
+      "intitule_en_gras": "Être étudiant en France",
+      "page": 1
+    },
+    {
+      "numero": 4,
+      "sujets": [
+        "Le chômage en France des années 1880 aux années 1980",
+        "Le non-alignement"
+      ],
+      "intitule_en_gras": "Le non-alignement",
+      "page": 1
+    },
+    {
+      "numero": 5,
+      "sujets": [
+        "Naître, vivre et mourir en France de la fin du XIXe siècle aux années 1980",
+        "L’arme nucléaire dans les relations internationales de 1945 aux années 1980"
+      ],
+      "intitule_en_gras": "L’arme nucléaire dans les relations internationales de 1945 aux années 1980",
+      "page": 1
+    },
+    {
+      "numero": 6,
+      "sujets": [
+        "L'extrême gauche en France de 1945 aux années 1990",
+        "L'ONU 1945-1990"
+      ],
+      "intitule_en_gras": "L'extrême gauche en France de 1945 aux années 1990",
+      "page": 1
+    },
+    {
+      "numero": 7,
+      "sujets": [
+        "Les mutations du protestantisme en France 1870-1990",
+        "Les guerres de décolonisation dans le monde 1945-1975"
+      ],
+      "intitule_en_gras": "Les guerres de décolonisation dans le monde 1945-1975",
+      "page": 1
+    },
+    {
+      "numero": 8,
+      "sujets": [
+        "Syndicats et syndicalisme en France des années 1880 aux années 1980",
+        "L’Europe et ses frontières 1918-1990"
+      ],
+      "intitule_en_gras": "L’Europe et ses frontières 1918-1990",
+      "page": 1
+    }
+  ],
+  "figures": [
+    {
+      "fichier": "figures/figure-1.svg",
+      "question": "Berlin au 20e s.",
+      "legende": "Berlin dans les rapports Est-Ouest"
+    },
+    {
+      "fichier": "figures/figure-2.svg",
+      "question": "L'ONU 1945-1990",
+      "legende": "Comment l’ONU intervient-elle ?"
+    }
+  ],
+  "reprises_du_corpus": [
+    {
+      "sujet": "Être résistant en France 1940-1945",
+      "fichier": "2026/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-autres-tirages-du-jury_2026/brut.md",
+      "titre": "Résistantes et résistants en France (1940-1945)",
+      "paragraphes": [
+        1,
+        2
+      ],
+      "sha256_blocs": "1652fe3f81bcbc01915ca7ecbe04e5185780fcce0b401a3986d98a2293a4a9f4",
+      "attributions": [
+        {
+          "phase": "lecture_rapport_jury",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "redaction",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "autocontrole",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "relecture_corrige",
+          "session": "illustrations_double_edition",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-25"
+        }
+      ]
+    },
+    {
+      "sujet": "Berlin au 20e s.",
+      "fichier": "2026/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-autres-tirages-du-jury_2026/brut.md",
+      "titre": "Berlin au XXe siècle",
+      "paragraphes": [
+        1,
+        2
+      ],
+      "sha256_blocs": "001ef28f343058f5d76d46b1632200824e7fa65d2f1ee1d05b223822a2ad02fe",
+      "attributions": [
+        {
+          "phase": "lecture_rapport_jury",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "redaction",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "autocontrole",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "relecture_corrige",
+          "session": "illustrations_double_edition",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-25"
+        }
+      ]
+    },
+    {
+      "sujet": "Le non-alignement",
+      "fichier": "2026/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-autres-tirages-du-jury_2026/brut.md",
+      "titre": "Le non-alignement au temps de la guerre froide",
+      "paragraphes": [
+        1,
+        2
+      ],
+      "sha256_blocs": "83903b33879278708a278b0e286566b22aac5b4ba6e469b07a1301c9eca005c1",
+      "attributions": [
+        {
+          "phase": "lecture_rapport_jury",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "redaction",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "autocontrole",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "relecture_corrige",
+          "session": "illustrations_double_edition",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-25"
+        }
+      ]
+    },
+    {
+      "sujet": "Naître, vivre et mourir en France de la fin du XIXe siècle aux années 1980",
+      "fichier": "2026/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-autres-tirages-du-jury_2026/brut.md",
+      "titre": "Naître, vivre et mourir en France de 1870-1990",
+      "paragraphes": [
+        1,
+        2
+      ],
+      "sha256_blocs": "ed27531337c9bd621c00e657d282da1e4fa085a47963205d92762ecaaf04c189",
+      "attributions": [
+        {
+          "phase": "lecture_rapport_jury",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "redaction",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "autocontrole",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "relecture_corrige",
+          "session": "illustrations_double_edition",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-25"
+        }
+      ]
+    },
+    {
+      "sujet": "L’arme nucléaire dans les relations internationales de 1945 aux années 1980",
+      "fichier": "2025/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-19-juin_2025/brut.md",
+      "titre": "L’arme nucléaire dans le monde au XXe siècle",
+      "paragraphes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sha256_blocs": "2b208ad01db9c3f66499c9bf4860e29d4885160705de82776ed9c963e6e6bab0",
+      "attributions": [
+        {
+          "phase": "redaction",
+          "session": "rennes_oraux_economie",
+          "agent": "rennes_oraux_economie",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-26"
+        }
+      ]
+    },
+    {
+      "sujet": "L'ONU 1945-1990",
+      "fichier": "2025/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-28-juin_2025/brut.md",
+      "titre": "L'ONU, acteur de l'ordre international (de 1945 au début des années 1990)",
+      "paragraphes": [
+        1,
+        2
+      ],
+      "sha256_blocs": "8c5b601fe3e1811eb74580297b82526ac2d664d5feb46330896ad28ceff1d0e6",
+      "attributions": [
+        {
+          "phase": "redaction",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "agent": "fui_physique_un",
+          "date": "2026-11-26"
+        }
+      ]
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "x_maths_b_recentes",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Comparaison du fac-similé du 18 juin et du rapport officiel ; vérification des 8 paires et du gras, rédaction et adaptation de 16 exposés, une relance avec réponse par sujet et deux figures originales. Les paragraphes adaptés du corpus antérieur sont rattachés à leurs auteurs dans les emprunts documentés."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Être résistant en France 1940-1945",
+      "Les \"Pères de l'Europe\"",
+      "Les paysannes en France de 1870 aux années 1960",
+      "L'Amérique latine entre dictatures et démocratie de 1918 aux années 1990",
+      "Être étudiant en France",
+      "Berlin au 20e s.",
+      "Le chômage en France des années 1880 aux années 1980",
+      "Le non-alignement",
+      "Naître, vivre et mourir en France de la fin du XIXe siècle aux années 1980",
+      "L’arme nucléaire dans les relations internationales de 1945 aux années 1980",
+      "L'extrême gauche en France de 1945 aux années 1990",
+      "L'ONU 1945-1990",
+      "Les mutations du protestantisme en France 1870-1990",
+      "Les guerres de décolonisation dans le monde 1945-1975",
+      "Syndicats et syndicalisme en France des années 1880 aux années 1980",
+      "L’Europe et ses frontières 1918-1990"
+    ],
+    "precision": "Comparaison du fac-similé du 18 juin et du rapport officiel ; vérification des 8 paires et du gras, rédaction et adaptation de 16 exposés, une relance avec réponse par sujet et deux figures originales. Les paragraphes adaptés du corpus antérieur sont rattachés à leurs auteurs dans les emprunts documentés.",
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "perimetre": "Comparaison du fac-similé du 18 juin et du rapport officiel ; vérification des 8 paires et du gras, rédaction et adaptation de 16 exposés, une relance avec réponse par sujet et deux figures originales. Les paragraphes adaptés du corpus antérieur sont rattachés à leurs auteurs dans les emprunts documentés.",
+      "sha256_sujet_controle": "364ada7873cd6cf19f49d439ea410f0261e04bcba2a2310696089b039857be24",
+      "sha256_rapport_jury_controle": "888e6723a8d4525e1f385ba55d1d7881d0ce80c84ad63f0acca3a47c35813058"
+    }
+  }
+}

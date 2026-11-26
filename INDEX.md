@@ -777,6 +777,7 @@
 | 2024 | BEL | BL | Histoire contemporaine (oral tronc commun, 11 juin) | [md](2024/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-11-juin_2024/brut.md) | [md](2024/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-11-juin_2024/guide.md) |
 | 2024 | BEL | BL | Histoire contemporaine (oral tronc commun, 12 juin) | [md](2024/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-12-juin_2024/brut.md) | [md](2024/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-12-juin_2024/guide.md) |
 | 2024 | BEL | BL | Histoire contemporaine (oral tronc commun, 17 juin) | [md](2024/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-17-juin_2024/brut.md) | [md](2024/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-17-juin_2024/guide.md) |
+| 2024 | BEL | BL | Histoire contemporaine (oral tronc commun, 18 juin) | [md](2024/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-18-juin_2024/brut.md) | [md](2024/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-18-juin_2024/guide.md) |
 | 2025 | BEL | BL | Histoire contemporaine | [md](2025/bel/bel_bl_histoire-contemporaine_2025/brut.md) | [md](2025/bel/bel_bl_histoire-contemporaine_2025/guide.md) |
 | 2026 | BEL | BL | Histoire contemporaine | [md](2026/bel/bel_bl_histoire-contemporaine_2026/brut.md) | [md](2026/bel/bel_bl_histoire-contemporaine_2026/guide.md) |
 | 2026 | BEL | BL | Italien | [md](2026/bel/bel_bl_italien_2026/brut.md) | [md](2026/bel/bel_bl_italien_2026/guide.md) |
