@@ -8,6 +8,8 @@
 
 **Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 L’ENS Rennes publie vingt-trois sujets d’économie pour les oraux du concours D–E 2026. Chaque numéro ci-dessous reprend un intitulé, dans l’ordre du document.
 
 ## 1. Doit-on encore lutter contre l’inflation ?
@@ -153,3 +155,9 @@ La crédibilité désigne la confiance accordée à la capacité et à la volont
 Cette confiance découle d’instruments disponibles, de la cohérence des décisions antérieures et de la capacité à expliquer un changement de diagnostic. Un communiqué ne fournit pas de monnaie de règlement à une banque qui en manque dans l’heure. Les prêts, le bilan de la banque centrale et les taux restent nécessaires. Une annonce très précise peut même nuire à la crédibilité si les circonstances qui en justifieraient la révision sont mal comprises. Il est donc plus rigoureux de parler d’une condition de transmission qui rend les instruments plus efficaces, tout en étant elle-même entretenue par leur usage.
 
 [Liste officielle des sujets](https://www.ens-rennes.fr/medias/fichier/sujets-oraux-d-e-conomie-d-e-2026_1790958162018-pdf)
+
+## Vérification sur le sujet
+
+Les vingt-trois intitulés ont été confrontés dans leur ordre à la feuille officielle et aux vingt-trois réponses de chaque édition. Les illustrations et les calculs de la coopération répétée (billet 7), de la dette (8), du taux réel (10), de l’épargne (16) et du compte courant (22) ont été revus avec leurs hypothèses. Le jury publie une liste de sujets, sans questions complémentaires ni annexes individuelles.
+
+Pour rapprocher les billets 10 et 18, prenons un taux nominal de 5 % et une inflation attendue de 3 %. Le taux réel anticipé exact est $1{,}05/1{,}03-1$, soit environ 1,94 %. Si l’inflation réalisée atteint ensuite 6 %, le rendement réel constaté est proche de −0,94 %. Aucun de ces deux résultats ne fournit directement le taux naturel du billet 18. Celui-ci dépend des déterminants réels et du modèle utilisé pour l’estimer.

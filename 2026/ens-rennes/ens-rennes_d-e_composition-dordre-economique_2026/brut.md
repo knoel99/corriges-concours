@@ -8,6 +8,8 @@
 
 **Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Dans quelle mesure l’environnement économique construit au sein de l’Union européenne se conforme-t-il aux grands principes de l’analyse économique ?
 
 Un producteur établi dans un État membre peut vendre à des clients d’un autre État sans droit de douane intérieur, mais il peut aussi se voir interdire une entente sur les prix ou devoir acquitter le coût de ses émissions. L’environnement économique construit par l’Union européenne organise à la fois la liberté des échanges et leurs conditions d’exercice. Le verbe « se conformer » suppose un terme de comparaison. L’analyse économique n’offre pas un code unique de bonne conduite. Elle explique notamment les gains de la spécialisation, précise les conditions d’efficacité d’un marché et étudie les raisons et les coûts d’une intervention collective. Dans quelle mesure ces principes rendent-ils compte des institutions européennes, de leurs réussites et des tensions que leur architecture laisse subsister ?
@@ -43,3 +45,9 @@ Les règles budgétaires cherchent enfin à concilier la dette soutenable de cha
 L’environnement européen met donc en œuvre des principes économiques puissants, qui expliquent aussi certaines de ses limites. L’ouverture peut accroître le revenu tout en créant des perdants, la monnaie unique faciliter l’échange tout en rendant les ajustements nationaux plus difficiles, la subvention corriger une externalité tout en faussant la concurrence. La conformité se juge institution par institution, au regard des hypothèses, de l’échelle du problème et de l’objectif que les Européens ont choisi de poursuivre.
 
 [Énoncé officiel](https://www.ens-rennes.fr/medias/fichier/sujet-economie-d-e-2026_1790867553852-pdf)
+
+## Vérification sur le sujet
+
+La composition officielle de quatre heures tient sur une page et ne comporte pas d’annexe. Les deux copies étudient les principes de l’échange et de la concurrence, les corrections des externalités et les conditions d’une zone monétaire commune. La distinction entre intérêt privé et coût social est vérifiée sur l’exemple de détournement de commerce.
+
+Un second cas montre comment l’institution peut rapprocher une décision privée de l’intérêt collectif. Supposons une tonne de pollution évitée au coût de 30 euros sur un site et de 70 euros sur un autre. Pour une seule tonne à éviter et des dommages identiques quel que soit le site, choisir le premier économise 40 euros de ressources. Un marché de quotas peut sélectionner cette possibilité si les émissions sont mesurées, le plafond est contraignant et l’échange fonctionne. La répartition initiale des quotas et des recettes demeure une question distributive distincte.
