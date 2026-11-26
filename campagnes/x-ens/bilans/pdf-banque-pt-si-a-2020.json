@@ -1,0 +1,1069 @@
+{
+  "slug": "banque-pt_pt_sciences-industrielles-a_2020",
+  "commit_export": "64249f73c3c295df405e523daeaa4017d1aceb56",
+  "gabarit": "scripts/exporter du commit d’export",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Résolution des 44 questions. Compléments des plans Ca1 à Ca4, Cf4 et Cg3, schéma pneumatique et calculs des bras et des boucles."
+    },
+    {
+      "phase": "revision",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture des dix pièces du sujet et du rapport. Vérification des séquences, des signes du transport au point mobile, des domaines des gains et des valeurs de phase."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21",
+      "Q22",
+      "Q23",
+      "Q24",
+      "Q25",
+      "Q26",
+      "Q27",
+      "Q28",
+      "Q29",
+      "Q30",
+      "Q31",
+      "Q32",
+      "Q33",
+      "Q34",
+      "Q35",
+      "Q36",
+      "Q37",
+      "Q38",
+      "Q39",
+      "Q40",
+      "Q41",
+      "Q42",
+      "Q43",
+      "Q44"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Q1",
+        "feuillets": "A7, B4, Ca1",
+        "titre": "Chronogramme de la cellule"
+      },
+      {
+        "question": "Q2",
+        "feuillets": "A7, B5–7, Ca2",
+        "titre": "Ordre des douze demi-couches"
+      },
+      {
+        "question": "Q3",
+        "feuillets": "A7, B5–7, Ca2",
+        "titre": "Origine des demi-couches"
+      },
+      {
+        "question": "Q4",
+        "feuillets": "A7, Ca3",
+        "titre": "Nature des flux"
+      },
+      {
+        "question": "Q5",
+        "feuillets": "A7, Ca4",
+        "titre": "Fonctions de la chaîne de positionnement"
+      },
+      {
+        "question": "Q6",
+        "feuillets": "A5, A7, Cb1",
+        "titre": "Distributeurs à représenter"
+      },
+      {
+        "question": "Q7",
+        "feuillets": "A8, Cb2",
+        "titre": "Efforts de cohésion d’un montant"
+      },
+      {
+        "question": "Q8",
+        "feuillets": "A9, Cb2–3",
+        "titre": "Déformations axiales"
+      },
+      {
+        "question": "Q9",
+        "feuillets": "A9, Cb3",
+        "titre": "Équation de la flèche"
+      },
+      {
+        "question": "Q10",
+        "feuillets": "A9, Cb3",
+        "titre": "Vérification du socle"
+      },
+      {
+        "question": "Q11",
+        "feuillets": "A9, B9, Cb4",
+        "titre": "Moment du compensateur en A"
+      },
+      {
+        "question": "Q12",
+        "feuillets": "A10, B9, Cb4–Cc1",
+        "titre": "Fermeture du triangle du compensateur"
+      },
+      {
+        "question": "Q13",
+        "feuillets": "A10, B9, Cc1–2",
+        "titre": "Moment de pesanteur des trois masses"
+      },
+      {
+        "question": "Q14",
+        "feuillets": "A10, B9, Cc2",
+        "titre": "Contrainte de trajectoire"
+      },
+      {
+        "question": "Q15",
+        "feuillets": "A10, Cc2",
+        "titre": "Surcompensation et sens de puissance"
+      },
+      {
+        "question": "Q16",
+        "feuillets": "A11, B9, Cc2",
+        "titre": "Inertie du bras chargé"
+      },
+      {
+        "question": "Q17",
+        "feuillets": "A11, B9, Cc3",
+        "titre": "Barycentre de l’ensemble 4"
+      },
+      {
+        "question": "Q18",
+        "feuillets": "A11, Cc3",
+        "titre": "Vitesses de B et du centre de masse"
+      },
+      {
+        "question": "Q19",
+        "feuillets": "A11, Cc4",
+        "titre": "Moment cinétique au point mobile B"
+      },
+      {
+        "question": "Q20",
+        "feuillets": "A11, Cc4",
+        "titre": "Moment dynamique en B"
+      },
+      {
+        "question": "Q21",
+        "feuillets": "A11, Cd1",
+        "titre": "Couple exercé par l’axe J3"
+      },
+      {
+        "question": "Q22",
+        "feuillets": "A11, Cd2",
+        "titre": "Moment dynamique du bras 2"
+      },
+      {
+        "question": "Q23",
+        "feuillets": "A11, Cd2",
+        "titre": "Isolement pour calculer le couple J2"
+      },
+      {
+        "question": "Q24",
+        "feuillets": "A12, Cd3",
+        "titre": "Coefficients des quatre blocs"
+      },
+      {
+        "question": "Q25",
+        "feuillets": "A13–14, Cd4",
+        "titre": "Fonction propre de l’axe J2"
+      },
+      {
+        "question": "Q26",
+        "feuillets": "A14, Cd4",
+        "titre": "Pôles et stabilité"
+      },
+      {
+        "question": "Q27",
+        "feuillets": "A15, Ce1",
+        "titre": "Boucle de vitesse ouverte"
+      },
+      {
+        "question": "Q28",
+        "feuillets": "A15, Ce2",
+        "titre": "Compensation du pôle stable"
+      },
+      {
+        "question": "Q29",
+        "feuillets": "A15, Ce3",
+        "titre": "Réglage de la boucle interne"
+      },
+      {
+        "question": "Q30",
+        "feuillets": "A15, Ce4",
+        "titre": "Boucle de position"
+      },
+      {
+        "question": "Q31",
+        "feuillets": "A15, Ce4",
+        "titre": "Vérification des exigences de suivi"
+      },
+      {
+        "question": "Q32",
+        "feuillets": "A16, Cf1",
+        "titre": "Aire du profil de vitesse"
+      },
+      {
+        "question": "Q33",
+        "feuillets": "A16, Cf1",
+        "titre": "Vitesse maximale d’une rampe"
+      },
+      {
+        "question": "Q34",
+        "feuillets": "A16, Cf2",
+        "titre": "Profil triangulaire"
+      },
+      {
+        "question": "Q35",
+        "feuillets": "A17, Cf2",
+        "titre": "Inertie ramenée au moteur"
+      },
+      {
+        "question": "Q36",
+        "feuillets": "A17, Cf3",
+        "titre": "Accélération disponible"
+      },
+      {
+        "question": "Q37",
+        "feuillets": "A18, Cf4",
+        "titre": "États des six diodes et tension redressée"
+      },
+      {
+        "question": "Q38",
+        "feuillets": "A18, Cg1",
+        "titre": "Ondulation du pont"
+      },
+      {
+        "question": "Q39",
+        "feuillets": "A19, Cg1",
+        "titre": "Complémentarité des interrupteurs"
+      },
+      {
+        "question": "Q40",
+        "feuillets": "A19, B11, Cg2",
+        "titre": "Valeur moyenne de la tension modulée"
+      },
+      {
+        "question": "Q41",
+        "feuillets": "A20, Cg2",
+        "titre": "Synchronisme et quadrature"
+      },
+      {
+        "question": "Q42",
+        "feuillets": "A20, Cg2–3",
+        "titre": "Construction de Fresnel"
+      },
+      {
+        "question": "Q43",
+        "feuillets": "A17, A20, Cg3",
+        "titre": "Courant au point de fonctionnement"
+      },
+      {
+        "question": "Q44",
+        "feuillets": "A17, A20, Cg4",
+        "titre": "Compatibilité de la tension de phase"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  },
+  "pieces": [
+    {
+      "doc": "A",
+      "pages": 24,
+      "sha256": "2096745bcd87916986dc15594a2d186ba8341d5bebf250d936c21634901f0e70",
+      "rendus_sha256": [
+        "cfedcecb87b6d774870a70bd27a179db3d931a82bedd76b51b5d3000985e62b2",
+        "9788d4a91e0f4ef5c78751b9ce5da7a1288f3b0eb2e4cde32b2cef9345b8ca08",
+        "62ae71f7c593efd7929f311f83fe9c24337d5908c204066ae9ff0d514f76b69e",
+        "7bf20700b9091bdc742a19bbc71d2b6145a0f7b8b0a28f658b6938f13dbcb032",
+        "ef98ba437e575eea31fb178d4fe2cbeac484b553ed4b7b8d47d93cc850a3e74c",
+        "6afee5ca4c23134176561c5e39e159fc4666681ebd06ed5a7b9c1a61bc738790",
+        "25839f566ab20f9a1494c238a7a5b1f828c87f8ea967b0a5961106d695564179",
+        "b59951c1ba9bb4d0680fdc642e1273dd082296f0d7f6d7843488589de1521134",
+        "f427553816f8f15dd6c6ab03a407c5d1810ff6317dd0e8f3edac2176cd04f9b5",
+        "802e5aa19f0bcf2780afec41e07a23b0adca826885a0fba57d44199853dab89c",
+        "ec7721285ff04f36c2693db56b59ad676936783d1dd4aff75915563ef3871a52",
+        "f3a986cf2251e5630f3fab17bfb93bba7ba75a5fdcc80c801d615ef849a141f9",
+        "0b3321ff1b135546979c08ee1f8993f9176b9401cc201345697c28d3f0fbc493",
+        "9c597d42e91dd189ba4a1c7aaa05b3d3f3127798af2b4ead012eb18ef07a0eb9",
+        "47ff18536a7a908eb35a2185ac41d67496bc55cd34688af84376e518eb3da41d",
+        "d77c7185e97a701675a71fed43755866bb083cfa924f6e058985213445f4334a",
+        "f44bb3abfa977514b61ce4652531ee68069546fe5bd02f2cc147015d008ecafc",
+        "b9c264748d79a30e4dbbf3904fde4561a963c822fec7c0ceaf9f86df8240f246",
+        "72d06a4057cf3ba020fb39633a39fb549fca278c33c569e49a23ea37b25ca0b0",
+        "c7c8971586f31d58cc61f70aca9b48eadd4bf08dd69f03890122d48f61234487",
+        "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6",
+        "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6",
+        "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6",
+        "4fcd65146faed9389e6c143a8cb9d82d56d1d0a3a11ab4b32858bb3827666c77"
+      ],
+      "pieces_jointes": []
+    },
+    {
+      "doc": "B",
+      "pages": 11,
+      "sha256": "d3e4a4e9896a45850f12ce683a5012cd690988d07405d6fb498ebdeda8341e21",
+      "rendus_sha256": [
+        "a5104b6dbc1b4ad17ebb6ce5fd916313fb8c96ba805ef2216741d43d30e3f23f",
+        "aef956af3f1766a01a190d68269e7514007b855549c80c126b879881ae017783",
+        "f433e0f5d463930b65de7671ecf388e2c0ad25d1b35f4f7bd60c394f2814be31",
+        "d774d5792d4339ba869185c36827ba9c9df2c9f201d1a2f3a653f53a6d3b2ac6",
+        "fd814598c85623f325171b2a33a0ccdf3cd79a53fc81b731fc3390f1fd62ba66",
+        "6053f31ede04fdf2db6420abbf8fcd36ae5b1db48f9c986450bb9b2753fee3b9",
+        "a808c2b6dbf57b0edec5e7e37164f53a3d0f6e55794773c88bd3aeb5e08e6fed",
+        "d4b775b381fdf47c50dac48d5ff715a925c09fac74be9c76aac5ee7a136cdb07",
+        "6f62d34f6c101253d9019ce491a7563a01da5be97ff330ce47998308fd4d61c8",
+        "b6b22b5ab75a2da99bc6e8428acb7a845f3f9412d56c4ec623dd499e2c9bc93f",
+        "7d1a0e7d0b89fdacb8127af33a0878da76eb527b096478c82ae2dc37ecb36505"
+      ],
+      "pieces_jointes": []
+    },
+    {
+      "doc": "C",
+      "pages": 4,
+      "sha256": "9bf4307603d764a3b974cabd3cb638d4f70d32e0cfde2786f48874f0378a19f3",
+      "rendus_sha256": [
+        "de226859209d7dba8f2e2aa4350ecb7b0c6f15769147ae703d42e4bbd4bae26f",
+        "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6",
+        "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6",
+        "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+      ],
+      "pieces_jointes": []
+    },
+    {
+      "doc": "Ca",
+      "pages": 4,
+      "sha256": "b3de97910aeed7e07b7252078297f039c8c8ce363ba40d7aba31b49d2a074c9f",
+      "rendus_sha256": [
+        "2c22ab29520f94e9cc37358e2ce7f511a725f0534bd4176426b0a56f5a81f824",
+        "7e1d2e72faa90cb620b6624619adb1d70585e518e3ef4367de401376a41f650d",
+        "773bfcceaa2e207845da97e47f8a68254e9546b4c68a96daeb4c6f040e387289",
+        "ef8ad33f4cad70b5b52c37222533a8dc8d1fe4df9a1e3dc0a5f91054fb7047fc"
+      ],
+      "pieces_jointes": []
+    },
+    {
+      "doc": "Cb",
+      "pages": 4,
+      "sha256": "12ee708dec6d637f8f44665a86f8d9d405a137e92ab9bf6ecb6347890cba0c69",
+      "rendus_sha256": [
+        "522f4184083f263149e511d737cdcb3d20e65beb6bc250719a72c2b826d6d00c",
+        "afd116214b6192a817e082bdcc3673a8389e2bc96ce908fd12da65a55a3fcfb6",
+        "0fc26b5d27252d004d13beefd19893613eb7c37f9d5c2c8f0825cb2fab6987ed",
+        "c9a158b00582be48d62173253c76b5943c1ea1615422dde342424c476a1fde29"
+      ],
+      "pieces_jointes": []
+    },
+    {
+      "doc": "Cc",
+      "pages": 4,
+      "sha256": "f8978d9b2764770a42cb799c39a52b5373abf9119b7484b616a5a563e5c9e5cd",
+      "rendus_sha256": [
+        "08a8bf759f248ce74c72f1360bdbe376ff6ca53dade8e1f9165b0e0e58cc7d36",
+        "5b2961c0b6098d93d0187282377f6af42fdfae4dfd89cd9cd1ef6ed813e17417",
+        "0651771f753053670191395c12c6007383d7b4d24163cb41d43f71fba2c25007",
+        "1e44c8ed0b75a7afa0a6512a33370502ebaba6ee4880287f31e4ee13fdf0526e"
+      ],
+      "pieces_jointes": []
+    },
+    {
+      "doc": "Cd",
+      "pages": 4,
+      "sha256": "c696c53ac370591a44b9d82f9eb70ad43696c7c2530edd56c7ff98374ae3fbdc",
+      "rendus_sha256": [
+        "69c156d58eccb5930fc120eddcdf2c0ed2c5ec79be2c190c6751f1299a42e04b",
+        "5e327c6bb7d329985a2099007f3276f1febfebc239599e1ca57ada3a74133bf3",
+        "58905deacd147f4b86149e2bbe7a46dfd16120e591d7a6985cc11f643bce5530",
+        "26f4a8360a309a1b20e87459c9344d1df7993b0a7ea4d45010f5135da0264329"
+      ],
+      "pieces_jointes": []
+    },
+    {
+      "doc": "Ce",
+      "pages": 4,
+      "sha256": "d81464eaf767eb8b0c722b2ce183d2ca89467ec97860d1272d2ce61525985b0b",
+      "rendus_sha256": [
+        "45dd8fc084b359057b5a30465300378567c0b6149bbcc7bac5b820adab0ead1e",
+        "12d8ff129008dfae13a5e53cf79c840efb74c81a495fd4814a901edf95ee18b5",
+        "e69ba2dbf196a160b68e63b22e43b67f3d347fc7ac157bb3994f4ae2cd388f52",
+        "88f093b1dca8b5cc5398427cd73a83069cd7984c8b61554e0f3d21d3e0204c5a"
+      ],
+      "pieces_jointes": []
+    },
+    {
+      "doc": "Cf",
+      "pages": 4,
+      "sha256": "ab9d12c485ea7bd7be664ccb0cd52539ff4885a00147d3c6512a54bc455194e8",
+      "rendus_sha256": [
+        "404829977601b78f3225f85bef87428a93b2b38f2124db7ca8ff4f0979bebd83",
+        "a31187f20e517c649b031f1498d7d368cab9acc6313de48b8dd5144dc468bacd",
+        "4806dde4fd6ab0ed96c6f31d6bc0e3321e5d388a77eae60e429068fb38911a8b",
+        "6b4617679bb51724ac59aa2009644dc854d9492848981200cd007e504551d500"
+      ],
+      "pieces_jointes": []
+    },
+    {
+      "doc": "Cg",
+      "pages": 4,
+      "sha256": "d2a4f1c600c1734af9b4d75fe1c0d6eb264bf77d9ee3c2882974f1aac0e478a3",
+      "rendus_sha256": [
+        "145e833f6f2ddb3ab58197fe118eeb762446e895c6500a1cae198392adc3265f",
+        "b9b522bda2e117c1978110730298b4068470c9d2acb1d60873e57e41adce4d78",
+        "8aba1eb989ca4da3f25deced77f8254fb8f7b14efcb1cc74b2bc3c7fa132470c",
+        "601e34558f9b306010490ede3aa5729f18489df87ba3a48718ae0f9e17989e71"
+      ],
+      "pieces_jointes": []
+    },
+    {
+      "doc": "rapport",
+      "pages": 4,
+      "sha256": "15a3e2135123af4c0ac5a95670c6cb58b0d9c2efe5070134340fd4e278a095a4",
+      "rendus_sha256": [
+        "a79bf814924b6fc9b2cdbbb132bd9c9e1076e4dd9aadda9651d09d052f068662",
+        "8dc9166bd94f670779e185472f0c5f338f3cf648c3608fddc040f0dbe722e7bc",
+        "1c1147a61c696d7b13ff010a9f6639eef9fedb09f053835307fcde02914079c6",
+        "43f84a62f5903d6349da305cbe09b7f368b549c56638a7cf9d208ade21fe8174"
+      ],
+      "pieces_jointes": []
+    }
+  ],
+  "pdf": {
+    "brut": {
+      "pages": 15,
+      "nombre_signets": 49,
+      "signets": [
+        [
+          1,
+          "A — Fonctionnement et dépose",
+          1
+        ],
+        [
+          2,
+          "Q1 — Chronogramme de la cellule",
+          1
+        ],
+        [
+          2,
+          "Q2 — Ordre des douze demi-couches",
+          2
+        ],
+        [
+          2,
+          "Q3 — Origine des demi-couches",
+          2
+        ],
+        [
+          2,
+          "Q4 — Nature des flux",
+          3
+        ],
+        [
+          2,
+          "Q5 — Fonctions de la chaîne de positionnement",
+          4
+        ],
+        [
+          2,
+          "Q6 — Distributeurs à représenter",
+          5
+        ],
+        [
+          1,
+          "B — Déformation du socle",
+          6
+        ],
+        [
+          2,
+          "Q7 — Efforts de cohésion d'un montant",
+          6
+        ],
+        [
+          2,
+          "Q8 — Déformations axiales",
+          6
+        ],
+        [
+          2,
+          "Q9 — Équation de la flèche",
+          6
+        ],
+        [
+          2,
+          "Q10 — Vérification du socle",
+          7
+        ],
+        [
+          1,
+          "C — Dynamique des bras",
+          7
+        ],
+        [
+          2,
+          "Q11 — Moment du compensateur en A",
+          7
+        ],
+        [
+          2,
+          "Q12 — Fermeture du triangle du compensateur",
+          7
+        ],
+        [
+          2,
+          "Q13 — Moment de pesanteur des trois masses",
+          7
+        ],
+        [
+          2,
+          "Q14 — Contrainte de trajectoire",
+          7
+        ],
+        [
+          2,
+          "Q15 — Surcompensation et sens de puissance",
+          8
+        ],
+        [
+          2,
+          "Q16 — Inertie du bras chargé",
+          8
+        ],
+        [
+          2,
+          "Q17 — Barycentre de l'ensemble 4",
+          8
+        ],
+        [
+          2,
+          "Q18 — Vitesses de B et du centre de masse",
+          8
+        ],
+        [
+          2,
+          "Q19 — Moment cinétique au point mobile B",
+          9
+        ],
+        [
+          2,
+          "Q20 — Moment dynamique en B",
+          9
+        ],
+        [
+          2,
+          "Q21 — Couple exercé par l'axe J3",
+          9
+        ],
+        [
+          2,
+          "Q22 — Moment dynamique du bras 2",
+          9
+        ],
+        [
+          2,
+          "Q23 — Isolement pour calculer le couple J2",
+          9
+        ],
+        [
+          2,
+          "Q24 — Coefficients des quatre blocs",
+          9
+        ],
+        [
+          1,
+          "D — Correction des axes",
+          10
+        ],
+        [
+          2,
+          "Q25 — Fonction propre de l'axe J2",
+          10
+        ],
+        [
+          2,
+          "Q26 — Pôles et stabilité",
+          10
+        ],
+        [
+          2,
+          "Q27 — Boucle de vitesse ouverte",
+          10
+        ],
+        [
+          2,
+          "Q28 — Compensation du pôle stable",
+          10
+        ],
+        [
+          2,
+          "Q29 — Réglage de la boucle interne",
+          10
+        ],
+        [
+          2,
+          "Q30 — Boucle de position",
+          11
+        ],
+        [
+          2,
+          "Q31 — Vérification des exigences de suivi",
+          11
+        ],
+        [
+          1,
+          "E — Entraînement des rampes",
+          11
+        ],
+        [
+          2,
+          "Q32 — Aire du profil de vitesse",
+          11
+        ],
+        [
+          2,
+          "Q33 — Vitesse maximale d'une rampe",
+          11
+        ],
+        [
+          2,
+          "Q34 — Profil triangulaire",
+          11
+        ],
+        [
+          2,
+          "Q35 — Inertie ramenée au moteur",
+          12
+        ],
+        [
+          2,
+          "Q36 — Accélération disponible",
+          12
+        ],
+        [
+          2,
+          "Q37 — États des six diodes et tension redressée",
+          12
+        ],
+        [
+          2,
+          "Q38 — Ondulation du pont",
+          13
+        ],
+        [
+          2,
+          "Q39 — Complémentarité des interrupteurs",
+          13
+        ],
+        [
+          2,
+          "Q40 — Valeur moyenne de la tension modulée",
+          13
+        ],
+        [
+          2,
+          "Q41 — Synchronisme et quadrature",
+          14
+        ],
+        [
+          2,
+          "Q42 — Construction de Fresnel",
+          14
+        ],
+        [
+          2,
+          "Q43 — Courant au point de fonctionnement",
+          14
+        ],
+        [
+          2,
+          "Q44 — Compatibilité de la tension de phase",
+          15
+        ]
+      ],
+      "pages_figures": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        12,
+        13,
+        14,
+        15
+      ],
+      "sha256": "5cfe5c02a7075c8666d52801af31fa2c14905f391a8485edb5a3876e58c25c85",
+      "rendus_sha256": [
+        "b2f3f2032cca241f2a8aa13df7aee261e0c9c365fee542a0b686b1fe55b57748",
+        "2de09cd9d50cadd03ee424b0ac8d981b9fcb7364328730d656276b9feb16c188",
+        "84ce98c3dcb54e2fff80700173661dde23fb416155f87311f15b4bb6d6cb5775",
+        "abd2e1e8af213e4117f7cb8710c2deacf0d52c2004f7d952a132e9ace88d7ca4",
+        "0de95bb5f246f655d1fe868745e93c2886051ed6efca366e20871078272e7b0e",
+        "f5d157091086d0fcaaf8e70a721250a0a5459507d53f87286881f26cbf218f7f",
+        "8892bd370b5ab544159f110d3e036d2c409470fd8af24dce1006492fa88bb0a9",
+        "82b00f9cf5cd6c2b4c14693e671d0db1c8df2be78e3281e6f3b50a3ca3f92a54",
+        "d3c0c1e3af4d53e65ecd61581108788b10aa368097eb45672eca15fe5b02be99",
+        "eddbf9084e18050c386b5d5ebd6009ac455774ea2c3fdb1949dae1c7807447ac",
+        "2398bdeb84d348bd7093ca4911960232a10a2b92229182cec214805ed026f4d1",
+        "12fa04d063cec86c63dc59b3952e1df2970dd678561b6a1363fb437ca3b05f1d",
+        "86635b57518f139fd960e478faff190d12af0f541bb0e1b2e3f77270d5188385",
+        "126d4e7419c088b30b7dc05b24d9be78131bafaf892a2bb021af6dbe94557607",
+        "9e8c63d778ae56fd32bcc945665fe978dc50feb704215e20b718f83229042bc1"
+      ]
+    },
+    "guide": {
+      "pages": 18,
+      "nombre_signets": 49,
+      "signets": [
+        [
+          1,
+          "A — Fonctionnement et dépose",
+          1
+        ],
+        [
+          2,
+          "Q1 — Chronogramme de la cellule",
+          1
+        ],
+        [
+          2,
+          "Q2 — Ordre des douze demi-couches",
+          2
+        ],
+        [
+          2,
+          "Q3 — Origine des demi-couches",
+          2
+        ],
+        [
+          2,
+          "Q4 — Nature des flux",
+          3
+        ],
+        [
+          2,
+          "Q5 — Fonctions de la chaîne de positionnement",
+          4
+        ],
+        [
+          2,
+          "Q6 — Distributeurs à représenter",
+          5
+        ],
+        [
+          1,
+          "B — Déformation du socle",
+          6
+        ],
+        [
+          2,
+          "Q7 — Efforts de cohésion d'un montant",
+          6
+        ],
+        [
+          2,
+          "Q8 — Déformations axiales",
+          6
+        ],
+        [
+          2,
+          "Q9 — Équation de la flèche",
+          6
+        ],
+        [
+          2,
+          "Q10 — Vérification du socle",
+          7
+        ],
+        [
+          1,
+          "C — Dynamique des bras",
+          7
+        ],
+        [
+          2,
+          "Q11 — Moment du compensateur en A",
+          7
+        ],
+        [
+          2,
+          "Q12 — Fermeture du triangle du compensateur",
+          7
+        ],
+        [
+          2,
+          "Q13 — Moment de pesanteur des trois masses",
+          8
+        ],
+        [
+          2,
+          "Q14 — Contrainte de trajectoire",
+          8
+        ],
+        [
+          2,
+          "Q15 — Surcompensation et sens de puissance",
+          8
+        ],
+        [
+          2,
+          "Q16 — Inertie du bras chargé",
+          9
+        ],
+        [
+          2,
+          "Q17 — Barycentre de l'ensemble 4",
+          9
+        ],
+        [
+          2,
+          "Q18 — Vitesses de B et du centre de masse",
+          9
+        ],
+        [
+          2,
+          "Q19 — Moment cinétique au point mobile B",
+          10
+        ],
+        [
+          2,
+          "Q20 — Moment dynamique en B",
+          10
+        ],
+        [
+          2,
+          "Q21 — Couple exercé par l'axe J3",
+          10
+        ],
+        [
+          2,
+          "Q22 — Moment dynamique du bras 2",
+          10
+        ],
+        [
+          2,
+          "Q23 — Isolement pour calculer le couple J2",
+          11
+        ],
+        [
+          2,
+          "Q24 — Coefficients des quatre blocs",
+          11
+        ],
+        [
+          1,
+          "D — Correction des axes",
+          11
+        ],
+        [
+          2,
+          "Q25 — Fonction propre de l'axe J2",
+          11
+        ],
+        [
+          2,
+          "Q26 — Pôles et stabilité",
+          11
+        ],
+        [
+          2,
+          "Q27 — Boucle de vitesse ouverte",
+          12
+        ],
+        [
+          2,
+          "Q28 — Compensation du pôle stable",
+          12
+        ],
+        [
+          2,
+          "Q29 — Réglage de la boucle interne",
+          12
+        ],
+        [
+          2,
+          "Q30 — Boucle de position",
+          12
+        ],
+        [
+          2,
+          "Q31 — Vérification des exigences de suivi",
+          13
+        ],
+        [
+          1,
+          "E — Entraînement des rampes",
+          13
+        ],
+        [
+          2,
+          "Q32 — Aire du profil de vitesse",
+          13
+        ],
+        [
+          2,
+          "Q33 — Vitesse maximale d'une rampe",
+          13
+        ],
+        [
+          2,
+          "Q34 — Profil triangulaire",
+          13
+        ],
+        [
+          2,
+          "Q35 — Inertie ramenée au moteur",
+          14
+        ],
+        [
+          2,
+          "Q36 — Accélération disponible",
+          14
+        ],
+        [
+          2,
+          "Q37 — États des six diodes et tension redressée",
+          14
+        ],
+        [
+          2,
+          "Q38 — Ondulation du pont",
+          16
+        ],
+        [
+          2,
+          "Q39 — Complémentarité des interrupteurs",
+          16
+        ],
+        [
+          2,
+          "Q40 — Valeur moyenne de la tension modulée",
+          16
+        ],
+        [
+          2,
+          "Q41 — Synchronisme et quadrature",
+          16
+        ],
+        [
+          2,
+          "Q42 — Construction de Fresnel",
+          16
+        ],
+        [
+          2,
+          "Q43 — Courant au point de fonctionnement",
+          17
+        ],
+        [
+          2,
+          "Q44 — Compatibilité de la tension de phase",
+          18
+        ]
+      ],
+      "pages_figures": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        14,
+        15,
+        17,
+        18
+      ],
+      "sha256": "610a3e8731d162ae12f03c7418555c41dd1853dc2725aaab48ebf0a2b162a548",
+      "rendus_sha256": [
+        "c1367cb17b8518034d3f011807555958c1d5aa7486b646d06c70cbb12e3bbb50",
+        "b36cf265f47621200144256d65e43c8dae72221803269f89b5ffc41f8f13e2ca",
+        "b48b8fc302fa749b605de5e75f43fb11196cbe23468f1a2918629d01a123086f",
+        "83aa0f77bf73b2b8459f92615c5027bf998e520232c757154078b894c871b270",
+        "ffc348b76080d67a31d6d5b24fc6287052c1f774a75748c44f632ead45dc2ebb",
+        "de6a87324e2d590f58d675292ebe822bc97d95cc0d1a4182499ffeb3fbbcc8ab",
+        "0396fe770c6f0a7773daa908d9964058a1b9a9c1d99f417f406a37903fe3bf59",
+        "a114d49292d5ad289cdf64b32a7bb5f9d40f3f95aa731470b75351054e3b92c7",
+        "05ef516813a556e01a25ab09862206215efced801de97739de17897a32e585f0",
+        "a5f91fa8ed8d41511ab7ca3d9fb483b0a3f98aa5964fdf211ac3a6e9e0a9551c",
+        "59e0b97367eb84902d8abf3f06afd3d0b4c0603fc6c2a1f0accfba4611a676f2",
+        "feabe08cd66d15c5c88d28d5cef86c6eb179d7ea972a9498b7f69e44e7e2cd7c",
+        "64fb48dcc079993fab55a5a4cd148c5bd1df4837fdb74a49e7229382c180f6e6",
+        "656ddaf2985150cbe43bcef9becf12362456c4df5e658dea4f73e476d4f698de",
+        "1cde09d83e3187be018994ea3b4a318948e14069d7dde41f52b5ecc9f405dad5",
+        "0ee5100599983cd39ea1fc40fad6c7812df564506cc2bc73362488cec6d0e30d",
+        "54fe7519760fad1cc68e53b867c02a279512fa3a26eda20110d3861fa7e5c0e6",
+        "390b12603152b31fd898eff3556a1ddce092564b700a26d869f3c3f41f2e7fd1"
+      ]
+    }
+  },
+  "empreintes": {
+    "brut.md": "bd5438df379c6d725be0c1a13153e0fc038f076b31d95cc4644bb8fc6a2b52ea",
+    "guide.md": "c2c2fa1a53501aee6999c6db398ed5887fd5f094cdb5dce7afb31bd6647a906f",
+    "meta.json": "06cc59966c66ef1d1404b549200d201ac47c5d8c4242186ceff828bf3d1e6476",
+    "verifier_calculs.py": "986aa5aca8b32043e735571f52bb2cfa724f0c1b42b3642016d59a0831aec336",
+    "figures/chronogramme.svg": "758a0ed4a948300bc1508351a8f3c12125340b8501a4226ea2d3c6cccbdb5402",
+    "figures/demi-couches.svg": "29cdf25e59a486adeda469c245214d789b176d8636531b57bf51eced9b48f4d7",
+    "figures/flux.svg": "d6c025d5107d1b0aefa467cc696139daaa834260a97a24652ac1845901c2bcc8",
+    "figures/fonctions.svg": "73734d46e98a8e9d52471a8632b38b3ff17d63c41c2ddb16ffd90230670054f7",
+    "figures/distributeurs.svg": "8dcb58f1f34a77a5cb4a7073fad36723bc4c20d47d4924011ac31c765fb132c4",
+    "figures/flexion.svg": "9beea599decf0c7d7ed2f63b9255c2aff51423f8afb4063ba10b9b70664fddaa",
+    "figures/couples.svg": "a309435fd4b8e491d3195c0d0f83ddb5670c08fa734c7034ea95ebfcd885ac1c",
+    "figures/triangle.svg": "c26f708789d55accc65de0e3854d12dea1d7a8830f83a6094acf8683335f30b2",
+    "figures/pont.svg": "9e81a554948d30b9fb393cf54140e20c981cba68b1b424c769057e9bd8f50364",
+    "figures/fresnel.svg": "7b0a478b11a7b0599d31e862eb38c802dd19b2db8bf1d053928b7cc2596a0a70",
+    "figures/moteur.svg": "9034c9eba651ba11d688acff88980b9269ae64e953dd9b4057b117a3360c1a6b",
+    "recu-tests.txt": "93a9872a2bde5355af625209c565741cbf7aab56789959b1f9debd65e253ef6f",
+    "bilan-compilation.md": "666b986dc91d7714430e671238fe6237191711ad69b33a7a1fa2dc1ee018f980",
+    "brut.pdf": "5cfe5c02a7075c8666d52801af31fa2c14905f391a8485edb5a3876e58c25c85",
+    "brut-planche-01.jpg": "4143a2aae617a4eced235b72061cfab58781c96d87824f9558e43d8507a25aed",
+    "brut-planche-10.jpg": "a869dd4b0f527dc9b2a46cc217260d0ab1a4710d14ea1cfb1848b602ca3b48c4",
+    "guide.pdf": "610a3e8731d162ae12f03c7418555c41dd1853dc2725aaab48ebf0a2b162a548",
+    "guide-planche-01.jpg": "6679ef98e7497e13558f19b59e70679ae4a98df8ff4c8fe338c38391d78e2d76",
+    "guide-planche-10.jpg": "a5a48da853179d80262faed578d22d8ccf5849cb48f25f888c6fb378fec01341"
+  },
+  "archive": "Banque-PT-sciences-industrielles-A-2020.zip",
+  "sha256": "95186f77fb3638881b62aac7479c6488e710f4ef55e475a68c182b9f7288d3ec"
+}
