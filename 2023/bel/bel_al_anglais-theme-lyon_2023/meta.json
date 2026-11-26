@@ -1,0 +1,151 @@
+{
+  "slug": "bel_al_anglais-theme-lyon_2023",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Anglais (thème Lyon)",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "duree_heures": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2023-09/Epreuve-de-specialite.pdf#page=11",
+    "sujet_sha256": "d646a518fbe4febf8a67e582f0310174ed455fa1f7d2c93d37f450a6420673a2",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2023-11/Anglais-2023.pdf#page=23",
+    "rapport_jury_sha256": "b3c2ad3893b7f6f766897ec75d05c17f88f80283ca6aae1ae3606e28e7cc1e3c",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2023",
+    "ouvrage": "Irène Némirovsky, *Suite française* (2004).",
+    "provenance": "La garde rattache l’anglais à Paris-Saclay, en plus des écoles communes à cette épreuve.",
+    "pages_rapport_verifiees": [
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ]
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2023-09/Epreuve-de-specialite.pdf#page=11",
+      "sha256": "d646a518fbe4febf8a67e582f0310174ed455fa1f7d2c93d37f450a6420673a2",
+      "pages": 20,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "d637c9f152c00d67d0ac53df6ca1a8afc6acd94775b42bc8aa249b7f1b2e0dc5"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "23197e3feb5af29cc10d3ecdefd9d1216be3f6253cf9bb7010d639a60bd3b7bd"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "f9144080ebe8ea8891276e845d51b0d75937e1b65fd91c347ee2e48da73bb2ab"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2023-11/Anglais-2023.pdf#page=23",
+      "sha256": "b3c2ad3893b7f6f766897ec75d05c17f88f80283ca6aae1ae3606e28e7cc1e3c",
+      "pages": 54,
+      "pages_verifiees": [
+        {
+          "numero": 23,
+          "rendu_sha256": "9ae0b169c93315fa1ce8630c4a54cc5340eaab50509d7ceb2a7f60b933de3833"
+        },
+        {
+          "numero": 24,
+          "rendu_sha256": "77e5f97da3dc26e11cd75579f2f5c702620a6af99ac8ff614b2ee5c006a97946"
+        },
+        {
+          "numero": 25,
+          "rendu_sha256": "3a416754228fd64f78007c51c78f8abed44f3c4875f5d651ef63de1d1851bad1"
+        },
+        {
+          "numero": 26,
+          "rendu_sha256": "ea427e8f9934bc2bd97f391140f3e17e859af76a5fa419529bcbefc34626a798"
+        },
+        {
+          "numero": 27,
+          "rendu_sha256": "e02a0da63882922f3df8a2300c6c502cafcc8f7c3937ff0be39aa008e0c1df4b"
+        },
+        {
+          "numero": 28,
+          "rendu_sha256": "0df3ad6e5239680af2c526642b836b02f30514dd8e4edc58848878f242d5ca5c"
+        },
+        {
+          "numero": 29,
+          "rendu_sha256": "b888cce12a1365124d5b47477e97f5a1dd7d6992f6df0d35621a7008faad6ac0"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "Proposition de thème",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "Progression sonore du village. Les bruits familiers laissent place à un grondement dont la cause n’est identifiée qu’à l’approche des camions."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Traduction originale complète, schéma et guide consacré aux difficultés de syntaxe, d’aspect, de lexique et de voix du passage."
+    },
+    {
+      "phase": "revision",
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture des trois paragraphes, des deux emplois de depuis, de la syntaxe des camions et du dernier sujet collectif. Le feuillet imprime « deniers jours » : le contexte et la traduction du jury confirment le sens de « derniers jours »."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Irène Némirovsky, *Suite française* (2004)."
+    ],
+    "note": "Traduction pédagogique originale. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Proposition de thème"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Proposition de thème",
+        "page_pdf": 11,
+        "feuillet_imprime": 11,
+        "perimetre": "Des bicyclettes sur la route à la dernière série de gestes des soldats, avec la coupure imprimée après leur arrivée."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}
