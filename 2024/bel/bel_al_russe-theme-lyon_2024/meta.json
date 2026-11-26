@@ -1,0 +1,135 @@
+{
+  "slug": "bel_al_russe-theme-lyon_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Russe (thème Lyon)",
+    "annee": 2024,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "duree_heures": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2024-11/Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=17",
+    "sujet_sha256": "cbf76039969ec8cec685a228168381915bdc7b64ae30b2cbee576b3a4f1eeb56",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2024-11/Russe%202024%20OK.pdf#page=12",
+    "rapport_jury_sha256": "4d1448404cdc4195151ac19a7ee2a6a45823ef0a3f11eedea5ed717f652b40cd",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2024",
+    "ouvrage": "Andreï Makine, *Au temps du fleuve Amour* (1994).",
+    "pages_rapport_verifiees": [
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2024-11/Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=17",
+      "sha256": "cbf76039969ec8cec685a228168381915bdc7b64ae30b2cbee576b3a4f1eeb56",
+      "pages": 20,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "467f29e0ec3180170f83906b396898332e097600bd045b203d322734b30ba14a"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "8792f553de5cddb862b1610114caf646f31cce12b7629be38076e505305ad7a8"
+        },
+        {
+          "numero": 17,
+          "rendu_sha256": "3705dbc1a99c025a4f7a3b46ba36126f602a6f114b8e5c8a6babc23a5a35b967"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2024-11/Russe%202024%20OK.pdf#page=12",
+      "sha256": "4d1448404cdc4195151ac19a7ee2a6a45823ef0a3f11eedea5ed717f652b40cd",
+      "pages": 16,
+      "pages_verifiees": [
+        {
+          "numero": 12,
+          "rendu_sha256": "2174e55b1baa39fe355f9a41577d8b9198878e07d3a66e1bb5151dad8936e6d0"
+        },
+        {
+          "numero": 13,
+          "rendu_sha256": "f309b613ff61aea9af2649236d7f5919630bac961de1ed52fbdd52f4915ce29a"
+        },
+        {
+          "numero": 14,
+          "rendu_sha256": "aef1a70378dd24322045dc68ad6d635d8419879a59b40b01dc57c8cd01145b6d"
+        },
+        {
+          "numero": 15,
+          "rendu_sha256": "ce61f398c4eed0cb71b90c8fbafa2cba2b8aa9ed8acf3c56a0cdc34763a4c5b1"
+        }
+      ]
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "bel_al_russe_2023_2025",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Traduction russe intégrale originale, guide de grammaire et de lecture, variantes situées et schéma."
+    },
+    {
+      "phase": "revision",
+      "session": "bel_al_russe_2023_2025",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "De la provenance des passagers au temps arrêté. Les deux coupures sont conservées. Le sens de la première phrase est établi par le jury. Confrontation au rapport et vérification de la ponctuation, des noms et des marques de voix."
+    }
+  ],
+  "figures": [
+    {
+      "question": "Proposition de thème",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "Sur l’eau, le regard passe d’Outkine au narrateur, puis à Véra. La dernière image immobilise le mouvement du bac."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Andreï Makine, *Au temps du fleuve Amour* (1994)."
+    ],
+    "note": "Traduction pédagogique originale. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Proposition de thème"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Proposition de thème",
+        "page_pdf": 17,
+        "feuillet_imprime": 17,
+        "perimetre": "De la provenance des passagers au temps arrêté. Les deux coupures sont conservées. Le sens de la première phrase est établi par le jury."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}
