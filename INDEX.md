@@ -1833,10 +1833,14 @@
 | 2022 | X | FUI FF 1 | Mathématiques | [md](2022/x/x_fui-ff-1_mathematiques_2022/brut.md) | [md](2022/x/x_fui-ff-1_mathematiques_2022/guide.md) |
 | 2023 | X | FUI FF 1 | Mathématiques | [md](2023/x/x_fui-ff-1_mathematiques_2023/brut.md) | [md](2023/x/x_fui-ff-1_mathematiques_2023/guide.md) |
 | 2024 | X | FUI-FF 1 | Mathématiques | [md](2024/x/x_fui-ff-1_mathematiques_2024/brut.md) | [md](2024/x/x_fui-ff-1_mathematiques_2024/guide.md) |
+| 2020 | X | FUI-FF 1 | Physique | [md](2020/x/x_fui-ff-1_physique_2020/brut.md) | [md](2020/x/x_fui-ff-1_physique_2020/guide.md) |
+| 2021 | X | FUI-FF 1 | Physique | [md](2021/x/x_fui-ff-1_physique_2021/brut.md) | [md](2021/x/x_fui-ff-1_physique_2021/guide.md) |
 | 2020 | X | FUI FF 2 | Mathématiques | [md](2020/x/x_fui-ff-2_mathematiques_2020/brut.md) | [md](2020/x/x_fui-ff-2_mathematiques_2020/guide.md) |
 | 2021 | X | FUI FF 2 | Mathématiques | [md](2021/x/x_fui-ff-2_mathematiques_2021/brut.md) | [md](2021/x/x_fui-ff-2_mathematiques_2021/guide.md) |
 | 2022 | X | FUI FF 2 | Mathématiques | [md](2022/x/x_fui-ff-2_mathematiques_2022/brut.md) | [md](2022/x/x_fui-ff-2_mathematiques_2022/guide.md) |
 | 2023 | X | FUI FF 2 | Mathématiques | [md](2023/x/x_fui-ff-2_mathematiques_2023/brut.md) | [md](2023/x/x_fui-ff-2_mathematiques_2023/guide.md) |
+| 2020 | X | FUI-FF 2 | Physique | [md](2020/x/x_fui-ff-2_physique_2020/brut.md) | [md](2020/x/x_fui-ff-2_physique_2020/guide.md) |
+| 2021 | X | FUI-FF 2 | Physique | [md](2021/x/x_fui-ff-2_physique_2021/brut.md) | [md](2021/x/x_fui-ff-2_physique_2021/guide.md) |
 | 2005 | X | MP-PC | Allemand | [md](2005/x/x_mp-pc_allemand_2005/brut.md) | [md](2005/x/x_mp-pc_allemand_2005/guide.md) |
 | 2006 | X | MP-PC | Allemand | [md](2006/x/x_mp-pc_allemand_2006/brut.md) | [md](2006/x/x_mp-pc_allemand_2006/guide.md) |
 | 2007 | X | MP-PC | Allemand | [md](2007/x/x_mp-pc_allemand_2007/brut.md) | [md](2007/x/x_mp-pc_allemand_2007/guide.md) |
@@ -1897,6 +1901,9 @@
 | 2007 | X | MP | Informatique (option) | [md](2007/x/x_mp_informatique-option_2007/brut.md) | [md](2007/x/x_mp_informatique-option_2007/guide.md) |
 | 2008 | X | MP | Informatique (option) | [md](2008/x/x_mp_informatique-option_2008/brut.md) | [md](2008/x/x_mp_informatique-option_2008/guide.md) |
 | 2009 | X | MP | Informatique (option) | [md](2009/x/x_mp_informatique-option_2009/brut.md) | [md](2009/x/x_mp_informatique-option_2009/guide.md) |
+| 2011 | X | MP | Maths B | [md](2011/x/x_mp_maths-b_2011/brut.md) | [md](2011/x/x_mp_maths-b_2011/guide.md) |
+| 2012 | X | MP | Maths B | [md](2012/x/x_mp_maths-b_2012/brut.md) | [md](2012/x/x_mp_maths-b_2012/guide.md) |
+| 2013 | X | MP | Maths B | [md](2013/x/x_mp_maths-b_2013/brut.md) | [md](2013/x/x_mp_maths-b_2013/guide.md) |
 | 2014 | X | MP | Maths B | [md](2014/x/x_mp_maths-b_2014/brut.md) | [md](2014/x/x_mp_maths-b_2014/guide.md) |
 | 2015 | X | MP | Maths B | [md](2015/x/x_mp_maths-b_2015/brut.md) | [md](2015/x/x_mp_maths-b_2015/guide.md) |
 | 2016 | X | MP | Maths B | [md](2016/x/x_mp_maths-b_2016/brut.md) | [md](2016/x/x_mp_maths-b_2016/guide.md) |
