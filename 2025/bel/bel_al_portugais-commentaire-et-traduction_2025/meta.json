@@ -1,0 +1,90 @@
+{
+  "slug": "bel_al_portugais-commentaire-et-traduction_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Portugais (commentaire et traduction)",
+    "annee": 2025,
+    "modalite": "écrit"
+  },
+  "duree_heures": 6,
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2025-07/Commentaire%20et%20traduction.pdf#page=18",
+    "sujet_sha256": "ea1e2d243c18761ad6c43ed4f301fdebb92b05def7502a7357659f787a15ae35",
+    "pages_pdf_sujet": [
+      18,
+      19
+    ],
+    "pages_fascicule": 24,
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2025-11/Portugais%202025%20OK%20Lyon%20RELU.pdf#page=2",
+    "sha256_rapport_jury": "785e51913f403401e059336eb624125691fabcda16a51190358ce264d9dfed38",
+    "pages_rapport_verifiees": [
+      2,
+      3,
+      4
+    ],
+    "ouvrage": "Soeiro Pereira Gomes, Esteiros (1941)",
+    "etablissements_figurant_sur_la_garde": "ENS de Lyon / ENS (Paris)",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2025",
+    "lignes_version": [
+      7,
+      23
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/saison-salaire-foire.svg",
+      "question": "Commentaire intégral en portugais",
+      "legende": "De la tuilerie à la foire, trois mesures du temps"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire intégral en portugais",
+      "Version française des lignes 7–23"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ]
+  },
+  "contributions": [
+    {
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "phase": "redaction",
+      "perimetre": "Commentaire intégral en portugais, Version française des lignes 7–23, variantes et schéma de lecture."
+    },
+    {
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "perimetre": "Correction du nombre des premières pluies, de la désignation des journas et du retour au telhal dans le commentaire portugais. Relecture de la reprise de como um homem, des paies et des calendriers narratifs."
+    }
+  ]
+}
