@@ -1,0 +1,70 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_geographie-presentation-du-projet-de-recherche-oral_2022",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Géographie — présentation du projet de recherche (oral)",
+    "annee": 2022,
+    "modalite": "oral"
+  },
+  "intitule": "Le rôle de l’urbaniste face aux enjeux environnementaux et sociaux",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://web.archive.org/web/20240712023654id_/https://www.ens.psl.eu/sites/default/files/consignes_oral_sil_22.pdf",
+    "sujet_sha256": "046056fc992aa76d30643c8d4636e32658f067be304fb00ad379c38a8f27cd9e",
+    "index": "https://www.ens.psl.eu/une-formation-d-exception/admission-concours/international/concours-selection-internationale-0",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://web.archive.org/web/20240712023654id_/https://www.ens.psl.eu/sites/default/files/consignes_oral_sil_22.pdf",
+        "sha256": "046056fc992aa76d30643c8d4636e32658f067be304fb00ad379c38a8f27cd9e",
+        "pages": 1
+      },
+      {
+        "role": "rapport",
+        "url": "https://www.ens.psl.eu/sites/default/files/rapport-geographie-sil2022.pdf",
+        "sha256": "7d158b7532778a3355322f910c24f8abbec08d1ba3c6118aa87c5862e3e97b7b",
+        "pages": 2
+      }
+    ],
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport-geographie-sil2022.pdf"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/choix-du-site-et-acces.svg",
+      "question": "Consigne individuelle d’exposé",
+      "legende": "Arbitrages à examiner avant d’aménager un quartier de vallée"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "oraux_lyon_et_anciens_corriges",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture du feuillet individuel archivé et du rapport de deux pages. Exposé illustré et méthode pour le relier à un projet hypothétique, en distinguant les deux pièces officielles."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Exposé de dix minutes sur le rôle de l’urbaniste face aux enjeux environnementaux et sociaux."
+    ],
+    "detail": [
+      "Feuillet individuel intégral d’une page sur le rôle de l’urbaniste.",
+      "Articulation entre diagnostic multiscalaire, scénarios d’aménagement, décision politique et évaluation sociale.",
+      "Rapport du jury p. 2 : exemple explicite de présentation d’un projet scientifique, académique et professionnel, avec préparation de l’entretien."
+    ]
+  }
+}

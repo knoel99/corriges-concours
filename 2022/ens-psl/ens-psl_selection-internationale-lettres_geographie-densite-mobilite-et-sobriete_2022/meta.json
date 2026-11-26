@@ -1,0 +1,78 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_geographie-densite-mobilite-et-sobriete_2022",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Géographie — densité, mobilité et sobriété",
+    "annee": 2022,
+    "modalite": "écrit"
+  },
+  "intitule": "Densité, mobilité et sobriété",
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/consignes_ecrit_sil_22.pdf",
+    "sujet_sha256": "f8107f038722a4a4af87fe479c753a9e3943387eef615cc6d143d9f8b0191716",
+    "index": "https://www.ens.psl.eu/une-formation-d-exception/admission-concours/international/concours-selection-internationale-0",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.ens.psl.eu/sites/default/files/consignes_ecrit_sil_22.pdf",
+        "sha256": "f8107f038722a4a4af87fe479c753a9e3943387eef615cc6d143d9f8b0191716",
+        "pages": 1
+      },
+      {
+        "role": "rapport",
+        "url": "https://www.ens.psl.eu/sites/default/files/rapport-geographie-sil2022.pdf",
+        "sha256": "7d158b7532778a3355322f910c24f8abbec08d1ba3c6118aa87c5862e3e97b7b",
+        "pages": 2
+      },
+      {
+        "role": "annexe",
+        "url": "https://www.ens.psl.eu/sites/default/files/geo-ecrit-sil2022.pdf",
+        "sha256": "fbbae8acb4f7fecb8ff756f494fd84d1f565d6d9c5d7612ab97aedfaf84fb9c4",
+        "pages": 4
+      }
+    ],
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport-geographie-sil2022.pdf",
+    "annexe": "https://www.ens.psl.eu/sites/default/files/geo-ecrit-sil2022.pdf"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/actifs-et-emissions.svg",
+      "question": "Résumé critique de l’article",
+      "legende": "Parts des actifs et des émissions des migrations pendulaires selon deux situations résidentielles"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "oraux_lyon_et_anciens_corriges",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture de la consigne, de l’article de quatre pages, de sa courbe et du rapport. Les deux parties sont traitées dans chaque édition. Le projet de recherche illustratif est signalé comme tel."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Résumé critique dégageant les thèses de Jean-Pierre Orfeuil.",
+      "Apports et limites de l’article pour un projet de recherche personnel, illustrés par un projet explicitement proposé comme exemple."
+    ],
+    "detail": [
+      "Article de Constructif, n° 57, novembre 2020, p. 17–20, courbe de Newman et Kenworthy et discussion des agrégats.",
+      "Comparaison interurbaine, mobilités de longue distance, coût résidentiel et leviers de sobriété.",
+      "Projet d’enquête entre Montargis et Orléans, indicateurs d’accessibilité, protocole de comparaison, limites de l’inférence."
+    ]
+  }
+}
