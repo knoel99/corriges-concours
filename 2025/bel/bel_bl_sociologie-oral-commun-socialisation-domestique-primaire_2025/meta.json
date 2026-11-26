@@ -1,0 +1,63 @@
+{
+  "slug": "bel_bl_sociologie-oral-commun-socialisation-domestique-primaire_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Sociologie (oral commun) — Socialisation domestique primaire",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "La socialisation domestique primaire",
+  "questions": 0,
+  "documents": 7,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oraux_sociologie_option_bl.pdf#page=34",
+    "sha256_sujet": "a6cfd0e1d317596c64fdd7f85e2770ef806175c8b278483fe266bc97bed6e3d9",
+    "pages_sujet": "34–41 du recueil de 54 pages, correspondant aux pages 1–8 du dossier.",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_sociologie_tronc_commun.pdf",
+    "sha256_rapport_jury": "9bc988f94c13ebc880ab5860fd1c30f145a4bf52df2207b66bb6dbb78e4bd008",
+    "pages_rapport": "1 et 4 pour les modalités et l’intitulé du sujet."
+  },
+  "figures": [
+    {
+      "fichier": "figures/temps-domestique-et-parental.svg",
+      "question": "Document 3",
+      "legende": "Durée quotidienne des activités domestiques et de leur composante parentale dans le champ du document 3."
+    },
+    {
+      "fichier": "figures/apprentissages-dans-les-familles-enquetees.svg",
+      "question": "Document 7",
+      "legende": "Principes éducatifs et demandes concrètes dans le groupe de familles étudié au document 7."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_maths_b_anciennes",
+      "modifications": true,
+      "perimetre": "Rédaction des deux propositions pour l’oral, lecture graphique des six pièces statistiques et analyse de l’extrait de Court et al., contrôle des champs, unités et modalités sur les pages visibles, dessin des deux figures et préparation des relances du jury."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "La socialisation domestique primaire"
+    ],
+    "documents_entierement_traites": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "precision": "Oral sans questions numérotées. Les deux éditions mobilisent les sept documents du dossier identifié par sa couverture interne, pages 34–41 du PDF de l’ENS."
+  }
+}
