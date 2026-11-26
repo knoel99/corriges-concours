@@ -1,0 +1,282 @@
+{
+  "slug": "bel_bl_francais-oral-tronc-commun-18-juin_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Français (oral tronc commun 18 juin)",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "Explication d’un texte français — oral du 18 juin 2025",
+  "questions": 22,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/francais_18_juin.pdf",
+    "sujet_sha256": "0f7d754d384e97c65315e737ef659a1c807b12bc070d448a338204c88698887b",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_francais.pdf",
+    "rapport_sha256": "65335d9a083778da894a8b6e467681b30f9cbbca0ec3f32d31bab069958a4e4e",
+    "document": "Fascicule B/L de billets manuscrits",
+    "page_pdf": "1–3"
+  },
+  "figures": [
+    {
+      "fichier": "figures/grille-et-regards.svg",
+      "question": "Baudelaire, Le Spleen de Paris, « Le Joujou du pauvre »",
+      "legende": "Dans Le Joujou du pauvre, la grille sépare les espaces tandis que le regard et le rire rapprochent les enfants."
+    }
+  ],
+  "reperes": [
+    {
+      "page_pdf": 1,
+      "rubrique": "Billet 1, texte 1",
+      "texte": "Balzac, Les Chouans",
+      "bornes": "p. 64–65, Folio, de « Ce jeune chef » à « que je te démolisse ».",
+      "choix": "désigné",
+      "statut": "traité"
+    },
+    {
+      "page_pdf": 1,
+      "rubrique": "Billet 1, texte 2",
+      "texte": "Corneille, Cinna",
+      "bornes": "I, 1, p. 711–712, de « Impatients désirs » à « me venger ».",
+      "choix": "autre proposition",
+      "statut": "traité"
+    },
+    {
+      "page_pdf": 1,
+      "rubrique": "Billet 2, texte 1",
+      "texte": "Chassignet, « L’eau change tous les jours »",
+      "bornes": "Anthologie de la poésie baroque française, t. I, p. 199, poème entier.",
+      "choix": "désigné",
+      "statut": "traité"
+    },
+    {
+      "page_pdf": 1,
+      "rubrique": "Billet 2, texte 2",
+      "texte": "Claude Simon, La Route des Flandres",
+      "bornes": "p. 9–10, de l’ouverture à « reconnu le papier ».",
+      "choix": "autre proposition",
+      "statut": "traité"
+    },
+    {
+      "page_pdf": 1,
+      "rubrique": "Billet 3, texte 1",
+      "texte": "Zola, Au Bonheur des Dames",
+      "bornes": "p. 159–160, de « Tenez-vous droite » à « murmura-t-il ».",
+      "choix": "autre proposition",
+      "statut": "traité"
+    },
+    {
+      "page_pdf": 1,
+      "rubrique": "Billet 3, texte 2",
+      "texte": "Montaigne, Essais, « Des menteurs »",
+      "bornes": "I, IX, du début du chapitre, p. 155, à « mon humeur », p. 156.",
+      "choix": "désigné",
+      "statut": "traité"
+    },
+    {
+      "page_pdf": 2,
+      "rubrique": "Billet 4, texte 1",
+      "texte": "Diderot, sur les tableaux de Vernet",
+      "bornes": "p. 226–227, de « Quelle immense variété » à « et reprend tous ses charmes ». Le billet porte Essais sur la peinture, « Vernet ». Le passage figure dans le Salon de 1763.",
+      "choix": "autre proposition",
+      "statut": "traité"
+    },
+    {
+      "page_pdf": 2,
+      "rubrique": "Billet 4, texte 2",
+      "texte": "Hugo, Les Châtiments, « L’Expiation »",
+      "bornes": "p. 234–235, du début du poème à « un immense linceul ».",
+      "choix": "déduit de la rature",
+      "statut": "traité"
+    },
+    {
+      "page_pdf": 2,
+      "rubrique": "Billet 5, texte 1",
+      "texte": "Molière, Les Femmes savantes",
+      "bornes": "I, 1, p. 684, vers 26–52.",
+      "choix": "désigné",
+      "statut": "traité"
+    },
+    {
+      "page_pdf": 2,
+      "rubrique": "Billet 5, texte 2",
+      "texte": "Chateaubriand, Mémoires d’outre-tombe",
+      "bornes": "livre 42, chapitre 18, p. 606–608 selon le billet.",
+      "choix": "autre proposition",
+      "statut": "traité"
+    },
+    {
+      "page_pdf": 2,
+      "rubrique": "Billet 6, texte 1",
+      "texte": "Baudelaire, Le Spleen de Paris, « Le Joujou du pauvre »",
+      "bornes": "p. 65–66, de « Sur une route » à « égale blancheur ».",
+      "choix": "désigné",
+      "statut": "traité"
+    },
+    {
+      "page_pdf": 2,
+      "rubrique": "Billet 6, texte 2",
+      "texte": "Diderot, Jacques le Fataliste",
+      "bornes": "p. 3–4, du début de l’œuvre à « comme toujours » selon le billet.",
+      "choix": "autre proposition",
+      "statut": "traité"
+    },
+    {
+      "page_pdf": 2,
+      "rubrique": "Billet 7, texte 1",
+      "texte": "Voltaire, L’Ingénu",
+      "bornes": "p. 84–86, de « Mlle de St Yves était fort curieuse » à « cela ne m’a jamais consolé » selon la graphie du billet.",
+      "choix": "autre proposition",
+      "statut": "traité"
+    },
+    {
+      "page_pdf": 2,
+      "rubrique": "Billet 7, texte 2",
+      "texte": "Lamartine, Méditations poétiques, « Le Lac »",
+      "bornes": "p. 121–122, du début à « des plus beaux de nos jours ».",
+      "choix": "déduit de la rature",
+      "statut": "traité"
+    },
+    {
+      "page_pdf": 3,
+      "rubrique": "Billet 8, texte 1",
+      "texte": "La Fontaine, Fables, « Le Loup et l’Agneau »",
+      "bornes": "p. 73, LP. La fiche porte « I, IX ». Le titre identifie la fable X du livre I dans la numérotation usuelle.",
+      "choix": "déduit de la rature",
+      "statut": "traité"
+    },
+    {
+      "page_pdf": 3,
+      "rubrique": "Billet 8, texte 2",
+      "texte": "Genet, Les Paravents",
+      "bornes": "Xᵉ tableau, Folio, p. 107–109, du début de la scène à « vos enfants ».",
+      "choix": "autre proposition",
+      "statut": "traité"
+    },
+    {
+      "page_pdf": 3,
+      "rubrique": "Billet 9, texte 1",
+      "texte": "Du Bellay, Les Regrets",
+      "bornes": "sonnet XLVIII entier, p. 84.",
+      "choix": "autre proposition",
+      "statut": "traité"
+    },
+    {
+      "page_pdf": 3,
+      "rubrique": "Billet 9, texte 2",
+      "texte": "Giraudoux, La guerre de Troie n’aura pas lieu",
+      "bornes": "scène première, p. 9–11, du début à « Je ne te comprends pas ».",
+      "choix": "déduit de la rature",
+      "statut": "traité"
+    },
+    {
+      "page_pdf": 3,
+      "rubrique": "Billet 10, texte 1",
+      "texte": "Pascal, Pensées",
+      "bornes": "p. 139–140, de « Que l’homme contemple » à « l’infini où il est englouti ».",
+      "choix": "désigné",
+      "statut": "traité"
+    },
+    {
+      "page_pdf": 3,
+      "rubrique": "Billet 10, texte 2",
+      "texte": "Rostand, Cyrano de Bergerac",
+      "bornes": "I, IV, p. 92–93, de « Ces grands airs » à « Bouffon ! ».",
+      "choix": "autre proposition",
+      "statut": "traité"
+    },
+    {
+      "page_pdf": 3,
+      "rubrique": "Billet 11, texte 1",
+      "texte": "Montesquieu, Lettres persanes",
+      "bornes": "p. 92–93, de « Le roi de France » à « de cette espèce ».",
+      "choix": "désigné",
+      "statut": "traité"
+    },
+    {
+      "page_pdf": 3,
+      "rubrique": "Billet 11, texte 2",
+      "texte": "Éluard, Capitale de la douleur, « Paris pendant la guerre »",
+      "bornes": "p. 108, poème entier.",
+      "choix": "autre proposition",
+      "statut": "traité"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "objet": "Références publiées sur le feuillet officiel",
+    "questions_entierement_traitees": [
+      "Billet 1, texte 1 — Balzac, Les Chouans",
+      "Billet 1, texte 2 — Corneille, Cinna",
+      "Billet 2, texte 1 — Chassignet, « L’eau change tous les jours »",
+      "Billet 2, texte 2 — Claude Simon, La Route des Flandres",
+      "Billet 3, texte 1 — Zola, Au Bonheur des Dames",
+      "Billet 3, texte 2 — Montaigne, Essais, « Des menteurs »",
+      "Billet 4, texte 1 — Diderot, sur les tableaux de Vernet",
+      "Billet 4, texte 2 — Hugo, Les Châtiments, « L’Expiation »",
+      "Billet 5, texte 1 — Molière, Les Femmes savantes",
+      "Billet 5, texte 2 — Chateaubriand, Mémoires d’outre-tombe",
+      "Billet 6, texte 1 — Baudelaire, Le Spleen de Paris, « Le Joujou du pauvre »",
+      "Billet 6, texte 2 — Diderot, Jacques le Fataliste",
+      "Billet 7, texte 1 — Voltaire, L’Ingénu",
+      "Billet 7, texte 2 — Lamartine, Méditations poétiques, « Le Lac »",
+      "Billet 8, texte 1 — La Fontaine, Fables, « Le Loup et l’Agneau »",
+      "Billet 8, texte 2 — Genet, Les Paravents",
+      "Billet 9, texte 1 — Du Bellay, Les Regrets",
+      "Billet 9, texte 2 — Giraudoux, La guerre de Troie n’aura pas lieu",
+      "Billet 10, texte 1 — Pascal, Pensées",
+      "Billet 10, texte 2 — Rostand, Cyrano de Bergerac",
+      "Billet 11, texte 1 — Montesquieu, Lettres persanes",
+      "Billet 11, texte 2 — Éluard, Capitale de la douleur, « Paris pendant la guerre »"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "controle": [
+      "Le fac-similé réunit onze billets à deux textes sur trois pages. Quatre cartouches de choix sont coupés dans le scan. Dans ces quatre cas, le second indice disponible est la rature nette d’une seule des deux propositions.",
+      "Le numéro « billet » suit l’ordre vertical de la page puis l’ordre des pages."
+    ]
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_bl_2025_18_juin",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "22 commentaires, repères par feuillet, 22 relances argumentées dans le guidé et réalisation du schéma."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "francais_bl_2025_18_juin",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": false,
+      "perimetre": "Collation du fac-similé et des deux éditions, vérification des ratures ou des limites du tirage, comparaison avec les références de lecture et le rapport du jury."
+    }
+  ],
+  "tirages": 11
+}
