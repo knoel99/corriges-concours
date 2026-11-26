@@ -16,16 +16,24 @@
   },
   "sources": {
     "sujet": "https://www.concours-bce.com/sites/default/files/2026-04/76%20GB%20-%20LANGUE_VIVANTE_B_ELVI_ALLEMAND_ANGLAIS_ESPAGNOL.pdf#page=12",
-    "sujet_sha256": "3c3b5c1c8df940530b89438e51c458c92a8cbdf6e7752a643ca18057eb6ac1a0"
+    "sujet_sha256": "3c3b5c1c8df940530b89438e51c458c92a8cbdf6e7752a643ca18057eb6ac1a0",
+    "rapport_jury": "https://www.concours-bce.com/sites/default/files/2026-11/76%20-%20Espagnol%20LVB%20Elvi%202026.pdf",
+    "rapport_sha256": "d63b2d10fd7d997686ef3bd62b78ddb14869b2e6b7f50ab1042d83685229a1f9"
   },
   "figures": [
     {
       "fichier": "figures/dossier.svg",
       "question": "Dossier",
       "legende": "Del desacuerdo político a la reducción del riesgo"
+    },
+    {
+      "fichier": "figures/electricidad-renovable.svg",
+      "question": "Essai, lecture du document 5",
+      "legende": "Aportación de las renovables a la electricidad en España",
+      "description": "Porcentaje de toda la electricidad generada en 2024 Eólica 23,2 %. Solar fotovoltaica 17 %. Hidráulica 13,3 %. Solar térmica 1,6 %. Otras renovables 1,7 %."
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -36,6 +44,44 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Résumé comparatif et essai en espagnol sur la réponse politique aux risques climatiques en Espagne, thème français-espagnol sur l’été 2025 et schéma distinguant prévention, adaptation et atténuation."
+    },
+    {
+      "phase": "lecture_rapport_jury",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "fui_physique_deux",
+      "modifications": false,
+      "perimetre": "Rapprochement du rapport BCE de la langue et du niveau correspondants avec le sujet et les trois exercices."
+    },
+    {
+      "phase": "revision",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "fui_physique_deux",
+      "modifications": true,
+      "perimetre": "Fascicule 76-GB, section espagnol-lvb p. 12–16 et garde p. 1. Cinq pièces. Santiago et RTVE distingués par genre, désaccord sur l’alerte valencienne, affiche de lutte contre la désertification et graphique portant sur la production électrique en 2024. Thème du record de chaleur en Espagne à la fréquence et l’intensité des phénomènes extrêmes. Résumé 262 mots ; essai 364 mots. Contrôles dans les deux éditions."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I. Résumé analytique comparatif",
+      "II. Essai argumenté",
+      "III. Thème"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "origine_attestation": {
+      "phase": "revision",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "3c3b5c1c8df940530b89438e51c458c92a8cbdf6e7752a643ca18057eb6ac1a0",
+      "perimetre": "Fascicule 76-GB, section espagnol-lvb p. 12–16 et garde p. 1. Cinq pièces. Santiago et RTVE distingués par genre, désaccord sur l’alerte valencienne, affiche de lutte contre la désertification et graphique portant sur la production électrique en 2024. Thème du record de chaleur en Espagne à la fréquence et l’intensité des phénomènes extrêmes. Résumé 262 mots ; essai 364 mots. Contrôles dans les deux éditions."
+    }
+  }
 }
