@@ -38,6 +38,60 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Rédaction originale des 23 questions du sujet XULCR confrontée au sujet et au rapport du jury, aux graphes de dépendance et aux signatures de la bibliothèque. Preuve d’optimalité de Hu par seuils de profondeur. Exécution du Caml sur 3297 couples graphe–nombre de processeurs, dont 459 forêts validées par programmation dynamique exhaustive. Deux schémas originaux."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "archives_2016_2022",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture des 23 questions, du rapport et des figures 4 et 6. Vérification des deux ordonnancements, du départage pour Hu et de la preuve d’optimalité par seuils. En 13, justification de l’absence de niveau vide avant la hauteur maximale. En 14, distinction entre l’étiquetage et la production de l’ordonnancement. Exécution des programmes des deux éditions sur 3 297 couples graphe–nombre de processeurs, avec comparaison à l’optimum pour 459 forêts entrantes."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23"
+    ],
+    "precision": "Les 23 questions des parties II à IV sont traitées, y compris les deux fonctions de la question 3, les deux arbres de 14 et 17 et les deux implications et l’exemple de 9. Les parties I et V ne comportent aucune question.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "26b8532a7f1a740c1bf99e55ba9e47910da74b1f56a4ee0af77fae8c6faaec2c",
+      "sha256_rapport_controle": "e44295770f933ce1b069bd0df1f7dc8161ec149304ef1985bf7313dfe08e9f20",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Relecture des 23 questions, du rapport et des figures 4 et 6. Vérification des deux ordonnancements, du départage pour Hu et de la preuve d’optimalité par seuils. En 13, justification de l’absence de niveau vide avant la hauteur maximale. En 14, distinction entre l’étiquetage et la production de l’ordonnancement. Exécution des programmes des deux éditions sur 3 297 couples graphe–nombre de processeurs, avec comparaison à l’optimum pour 459 forêts entrantes.",
+      "commit_redaction_anterieure": "c970ddab4a7a5f6ab7c9c1987baa84a2f13eb064"
+    },
+    "subdivisions_du_sujet": {
+      "3": [
+        "1",
+        "2"
+      ]
+    }
+  }
 }

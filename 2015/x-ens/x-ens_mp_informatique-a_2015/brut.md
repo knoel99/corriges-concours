@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Les tâches ont une durée unitaire et les dépendances sont orientées du prédécesseur vers le successeur. Les fonctions utilisent les opérations de la bibliothèque Caml du sujet. Les parties I et V ne comportent pas de questions.
 
 ## II · Graphes de tâches acycliques
@@ -149,11 +151,11 @@ Le tableau de listes a $n$ cases. Chaque tâche est lue, classée et imprimée u
 
 ### Question 13 · Optimalité à un processeur
 
-Chaque tâche prend une unité et un processeur ne traite qu’une tâche par unité, donc toute durée est au moins $n$. Avec $p=1$ l’algorithme imprime exactement une tâche à chaque instant et les hauteurs augmentent strictement le long des arcs. L’ordonnancement est réalisable, dure $n$ et atteint cette borne.
+Chaque tâche prend une unité et un processeur ne traite qu’une tâche par unité, donc toute durée est au moins $n$. Si la hauteur maximale est $H$, un chemin critique vers une tâche de hauteur $H$ passe par des tâches de chacune des hauteurs $0,1,\ldots,H$ (récurrence de la question 8). Aucun niveau intermédiaire n’est vide. Avec $p=1$ l’algorithme imprime exactement une tâche à chaque instant et les hauteurs augmentent strictement le long des arcs. L’ordonnancement est réalisable, dure $n$ et atteint cette borne.
 
 ### Question 14 · Deux contre-exemples au classement par hauteur
 
-Dans les tableaux, un groupe entre parenthèses occupe un même créneau. Les tâches d’un même niveau sont départagées par ordre alphabétique.
+L’algorithme 1 attribue les hauteurs. Pour obtenir les créneaux demandés, on applique ensuite l’algorithme 2, comme le précise le jury. Dans les tableaux, un groupe entre parenthèses occupe un même créneau. Les tâches d’un même niveau sont départagées par ordre alphabétique.
 
 | Figure | Niveaux de hauteur successifs | Ordonnancement par hauteur, $p=2$ |
 |---|---|---|
