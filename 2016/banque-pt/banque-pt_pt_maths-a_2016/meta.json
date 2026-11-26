@@ -1,0 +1,391 @@
+{
+  "slug": "banque-pt_pt_maths-a_2016",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths A",
+    "intitule": "Épreuve de Mathématiques A",
+    "annee": 2016,
+    "duree": "4 h",
+    "modalite": "écrit",
+    "code_garde": "125"
+  },
+  "questions": 37,
+  "redaction": "Proposition pédagogique non officielle, rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2016/math_a_2016_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2016/rapport_math_a_ecrit_2016.pdf",
+    "livret": "https://www.banquept.fr/documents/livret/2016/Livret_PT_2016.pdf",
+    "sujet_sha256": "f01557ed753e4ab3b8f508498e325cd365973cb4562b35d225d19d44e1c16f43",
+    "rapport_jury_sha256": "cb98e7bfc8c49c4a1527fd63584f20abd2430c00f81b41bed9d19fd508c59cb0",
+    "observation_rapport": "La demande de Hessienne hors programme est signalée par le jury, p. 1. Les questions II.7 à II.9 sont commentées ensemble et la question III.6 dans la rubrique III.5–6."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2016/math_a_2016_pt.pdf",
+      "sha256": "f01557ed753e4ab3b8f508498e325cd365973cb4562b35d225d19d44e1c16f43",
+      "pages": 5,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "2f83b6f02b720797d24db6c76e68140ad672657b0c5a3944616ace6dd2c5a554"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "ecccac990e6d9ffae6529a849c460340be4ccacd0778e555aee8615949c3186c"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "48ad1b3b46b0ad2bceb68c15d3fd4a8c52ae2e93702054eac492a4ba0d27fd59"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "88f8f71c991c350ce1b8b5102889a8eb34db04261ad5573793d33172ad3e13d0"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2016/rapport_math_a_ecrit_2016.pdf",
+      "sha256": "cb98e7bfc8c49c4a1527fd63584f20abd2430c00f81b41bed9d19fd508c59cb0",
+      "pages": 4,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "7fbc1292b154231fabc1c631fe407207fb8e183d6d1b11cb73daa7d1fb188e82"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "5a401ac367d9ce8b8d629fb23254474c63c47dd1f79953cf9324010ed09eb5f1"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "a235e9387e28e2ee6fa87fc9838a3e11c2208cb95346cbb049555cdf0177566e"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "f055782b7a215491f13c9ed1b3b506fd22795dfef2042e2321e014a616c4341e"
+        }
+      ]
+    },
+    "livret": {
+      "url": "https://www.banquept.fr/documents/livret/2016/Livret_PT_2016.pdf",
+      "sha256": "2d38e7c0962f3db4e1bbe63bb8d19e7f666c04250d51a8f0716679c39f2f5cde",
+      "pages": 78,
+      "pages_verifiees": [
+        {
+          "numero": 8,
+          "rendu_sha256": "1240e15c9530bb6e14feb9458dd82b4ce35968a5a3bef29f39b236fb16ded74d"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "6e7cfb38e9a271d2bfd663581a088dd20ffbe0f33b99d0acaa0a97dc00d19c46"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "II.9",
+      "fichier": "figures/niveaux.svg",
+      "legende": "Dans le plan de deux vecteurs propres, les niveaux de la différence au minimum sont des ellipses centrées au minimiseur.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "P.6",
+      "fichier": "figures/loi-melange.svg",
+      "legende": "Pour une pièce équilibrée, la masse en zéro et la queue géométrique des masses positives proviennent de deux événements différents.",
+      "provenance": "Figure originale."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "II.8",
+      "II.9",
+      "III.1.a",
+      "III.1.b",
+      "III.1.c",
+      "III.1.d",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6.a",
+      "III.6.b",
+      "III.6.c",
+      "III.6.d",
+      "III.6.e",
+      "P.1",
+      "P.2",
+      "P.3",
+      "P.4",
+      "P.5.a",
+      "P.5.b",
+      "P.5.c",
+      "P.6"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "annexes_imposees": [],
+    "repere_par_question": [
+      {
+        "question": "I.1",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Base propre orthonormée"
+      },
+      {
+        "question": "I.2",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Calcul des trois couples propres"
+      },
+      {
+        "question": "I.3",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Inversibilité"
+      },
+      {
+        "question": "I.4",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Coordonnées dans la nouvelle base"
+      },
+      {
+        "question": "I.5",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Deux écritures de la forme quadratique"
+      },
+      {
+        "question": "I.6",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Borne inférieure spectrale"
+      },
+      {
+        "question": "I.7",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Produit scalaire associé à A"
+      },
+      {
+        "question": "II.1",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Type et valeur à l’origine de la fonction"
+      },
+      {
+        "question": "II.2",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Gradient et Hessienne"
+      },
+      {
+        "question": "II.3",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Minoration par une fonction du rayon"
+      },
+      {
+        "question": "II.4",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Minoration et absence de majorant"
+      },
+      {
+        "question": "II.5",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Signe de l’infimum"
+      },
+      {
+        "question": "II.6",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Signe à l’extérieur de la boule"
+      },
+      {
+        "question": "II.7",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Restriction de l’infimum à une boule"
+      },
+      {
+        "question": "II.8",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Existence du minimum global"
+      },
+      {
+        "question": "II.9",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Calcul et unicité du minimiseur"
+      },
+      {
+        "question": "III.1.a",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Base propre en dimension n"
+      },
+      {
+        "question": "III.1.b",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Norme et énergie en coordonnées propres"
+      },
+      {
+        "question": "III.1.c",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Contrôle par la première valeur propre"
+      },
+      {
+        "question": "III.1.d",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Non-annulation pour un vecteur non nul"
+      },
+      {
+        "question": "III.2",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Liberté des directions conjuguées"
+      },
+      {
+        "question": "III.3",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Transposition"
+      },
+      {
+        "question": "III.4",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Produits d’une colonne et d’une ligne"
+      },
+      {
+        "question": "III.5",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Transposée et produit scalaire"
+      },
+      {
+        "question": "III.6.a",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Symétrie de la somme C"
+      },
+      {
+        "question": "III.6.b",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Action de CₖA"
+      },
+      {
+        "question": "III.6.c",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Directions déjà fixées"
+      },
+      {
+        "question": "III.6.d",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Deux annulations"
+      },
+      {
+        "question": "III.6.e",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Reconstruction de l’inverse"
+      },
+      {
+        "question": "P.1",
+        "page_pdf": 4,
+        "page_rapport": 4,
+        "objet": "Lois du premier succès et du comptage conditionnel"
+      },
+      {
+        "question": "P.2",
+        "page_pdf": 4,
+        "page_rapport": 4,
+        "objet": "Loi conjointe"
+      },
+      {
+        "question": "P.3",
+        "page_pdf": 4,
+        "page_rapport": 4,
+        "objet": "Dérivées et série entière"
+      },
+      {
+        "question": "P.4",
+        "page_pdf": 4,
+        "page_rapport": 4,
+        "objet": "Loi marginale du nombre de piles"
+      },
+      {
+        "question": "P.5.a",
+        "page_pdf": 4,
+        "page_rapport": 4,
+        "objet": "Espérance du produit"
+      },
+      {
+        "question": "P.5.b",
+        "page_pdf": 4,
+        "page_rapport": 4,
+        "objet": "Distribution du produit"
+      },
+      {
+        "question": "P.5.c",
+        "page_pdf": 4,
+        "page_rapport": 4,
+        "objet": "Variance du produit"
+      },
+      {
+        "question": "P.6",
+        "page_pdf": 4,
+        "page_rapport": 4,
+        "objet": "Identification des deux lois"
+      }
+    ]
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_hist_1987",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture des 37 questions ou sous-questions et du rapport institutionnel, rédaction des solutions et indications, deux figures originales et contrôles algébriques et probabilistes."
+    }
+  ]
+}
