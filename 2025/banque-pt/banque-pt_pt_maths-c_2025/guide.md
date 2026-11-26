@@ -261,6 +261,11 @@ L’intégrale du membre de gauche de zéro à $b=1/\sqrt2$ vaut $2\arctan2$ par
 
 ## III. Intégrales oscillantes de Fresnel
 
+Pour $X>0$, on pose $I(X)=\int_1^X\cos(t^2)dt$ et $J(X)=\int_1^X\sin(t^2)dt$. En III.6, la fonction à paramètre est
+$$
+f(x)=\int_0^{+\infty}\frac{e^{-(t^2+i)x^2}}{t^2+i}\,dt.
+$$
+
 ### Question III.1
 
 > [!INDICATION]

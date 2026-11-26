@@ -77,6 +77,8 @@ $$
 
 ## I. Une représentation de la constante de Catalan
 
+On note $C=\sum_{n\ge0}(-1)^n/(2n+1)^2$. Pour l’approcher, on appellera $S_N$ la somme des termes d’indice 0 à $N$ inclus.
+
 ### Question I.1.a
 
 Sur $]0,+\infty[$, une primitive de $\log t$ est $t\log t-t$.
@@ -122,6 +124,8 @@ Le reste alterné vérifie $|C-S_N|\le1/(2N+3)^2$. Pour $p>2$ entier, il suffit 
 
 ## II. Équation différentielle sur l’intervalle ouvert
 
+Sur $]0,\pi[$, on cherche toutes les solutions de $y''+y=\cot x$, d’abord à partir d’une solution particulière, puis par variation de la constante.
+
 ### Question II.1
 
 Avec $f_4(x)=\sin x\,f_2(x)$, on a $f_4'=\cos x\,f_2(x)+1$ puisque $f_2'=1/\sin x$. Donc $f_4''=-\sin x\,f_2(x)+\cos x/\sin x=-f_4+\cot x$ sur $]0,\pi[$.
@@ -151,6 +155,8 @@ P.3.e donne une primitive de $1/\sin x$, et P.2.b une primitive de $1/\sin^2x$. 
 On multiplie par $\sin x$. Il vient $y=f_4(x)-A\cos x+B\sin x$. Comme $-A$ est un réel arbitraire, c’est exactement la famille de II.3.
 
 ## III. Calcul de l’intégrale de Gauss
+
+On considère $G(x)=\int_0^{\pi/4}\exp(-x^2/\cos^2\theta)\,d\theta$ et $H(x)=\int_0^x e^{-t^2}dt$.
 
 ### Question III.1
 
@@ -194,6 +200,8 @@ Par III.5.b–6, $(H^2+G)'=2He^{-x^2}-2e^{-x^2}H=0$. L’intervalle $\mathbb R$ 
 Quand $x\to+\infty$, III.3 et III.7 donnent $H(x)^2\to\pi/4$. Pour $x>0$, $H(x)>0$, donc $H(x)\to\sqrt\pi/2$. C’est la valeur de $\int_0^\infty e^{-t^2}dt$. Si $x>0$, la substitution $u=\sqrt{x}t$ fournit ensuite $\int_0^\infty e^{-xt^2}dt=\sqrt\pi/(2\sqrt{x})$.
 
 ## IV. Produit du sinus et sommes de séries
+
+La fonction $\varphi$ est définie par $\varphi(0)=1$ et $\varphi(x)=\sin(x)/x$ ailleurs. On étudie le produit fini $P_N(X)=\prod_{k=1}^N(1-X/(k\pi))(1+X/(k\pi))$, puis la somme $D=\sum_{n\ge0}(4n+1)^{-2}$.
 
 ### Question IV.1
 

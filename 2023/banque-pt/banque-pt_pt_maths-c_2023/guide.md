@@ -8,7 +8,7 @@ Une décomposition en éléments simples permet de sommer une série entière. L
 
 Écrit de quatre heures, sans calculatrice. Deux feuilles de papier millimétré sont à rendre pour II.1. La grille d’admissibilité attribue à Math C le coefficient 6 pour l’École polytechnique et 3 pour chacune des ENS Paris-Saclay et Rennes. [Sujet](https://www.banquept.fr/documents/2023/math_c_2023_pt.pdf) · [Livret, p. 13](https://www.banquept.fr/documents/livret/2023/Livret_PT_2023.pdf#page=13)
 
-En II.7.a, le jury signale en page 10 le terme omis lors de la recopie de la formule de sommation. La démonstration ci-dessous conserve le terme de bord. [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2023/rapport_math_c_ecrit_2023.pdf)
+Le jury signale en page 10 une coquille en II.7.a. Le calcul au premier rang permet de repérer le terme de bord absent de l’énoncé. [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2023/rapport_math_c_ecrit_2023.pdf)
 
 ## Repères de lecture
 
@@ -37,6 +37,8 @@ D’une part $(x-x_1)g(x)=P(x)/((x-x_2)(x-x_3))$ tend vers $P(x_1)/((x_1-x_2)(x_
 Pour $(x_1,x_2,x_3)=(0,-1,-1/2)$ et $P=1$, les produits des deux différences valent $1/2,1/2,-1/4$ respectivement. On obtient $(a_1,a_2,a_3)=(2,2,-4)$.
 
 ## I. Une série entière et une série numérique
+
+On pose $F(x)=\log(x(x+1)/(2x+1)^2)$ sur son domaine réel et $f=F'$. La série entière à sommer est $\sum_{n\ge1}f(n)x^{2n+1}$.
 
 ### Question I.1
 
@@ -195,6 +197,8 @@ $$
 En remplaçant $H(n+1)=H(n)+1/(n+1)$, on obtient $3+4H(n)-4H(2n+1)+1/(n+1)$.
 
 ## II. Sommation par parties et constante d’Euler
+
+Pour $x\ge1$, on note $n_x=\lfloor x\rfloor$ et $A(x)=\sum_{k=1}^{n_x}a_k$, avec $a_k>0$ et $A(0)=0$. La fonction $h$ est de classe $C^1$ sur $[1,+\infty[$ et à valeurs positives. On appliquera la formule obtenue aux sommes harmoniques $H(n)=\sum_{k=1}^n1/k$.
 
 ### Question II.1
 
