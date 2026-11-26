@@ -8,6 +8,8 @@
 
 **Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## Une nouvelle noblesse d’État ?
@@ -47,3 +49,9 @@ Une même personne peut détenir plusieurs des titres relevés. Les colonnes ne 
 Une demande est un acte de procédure, qui peut traduire une obligation plus étendue ou un meilleur repérage des situations. Il faudrait examiner les avis au fond, leurs éventuelles réserves et les suites réellement données.
 
 [Dossier officiel](https://www.ens.psl.eu/sites/default/files/dossier_ne.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_tronc_commun_sociologie.pdf)
+
+## Vérification sur le dossier
+
+Les extraits de Bourdieu et de France et Vauchez ont été rapprochés des cohortes de Rouban, des stocks et flux dans les corps et des deux volets du tableau d’activité de la HATVP. La lecture distingue titres, positions dix ans après la sortie, demandes administratives et avis rendus.
+
+Le document 7a indique, pour le ministère de l’Éducation nationale et de la Jeunesse, 800 demandes en 2020 et 1 016 en 2023. La hausse est de 216 dossiers, soit 27 % de l’effectif initial. Sans nombre d’agents en poste, on ne peut en déduire la fréquence individuelle d’un départ. Le document 7b donne des catégories d’avis rendus, dans un autre champ. Additionner dossiers et avis compterait deux opérations différentes.

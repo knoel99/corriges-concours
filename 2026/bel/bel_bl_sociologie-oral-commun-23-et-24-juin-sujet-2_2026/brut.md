@@ -8,6 +8,8 @@
 
 **Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## La contraception
@@ -37,3 +39,9 @@ En 2020, le document 7 compte environ 222 000 IVG en France, dont 72,4 % médica
 Mesurer seulement les méthodes utilisées effacerait donc la négociation qui les rend praticables. Mesurer seulement les issues de grossesse effacerait les préférences et les conditions de recours aux soins. La portée émancipatrice de la contraception se juge aussi à la capacité d’exercer un choix éclairé et d’en partager les contraintes matérielles au sein des relations.
 
 [Dossier officiel](https://www.ens.psl.eu/sites/default/files/dossier_contraception.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_tronc_commun_sociologie.pdf)
+
+## Vérification sur le dossier
+
+Les deux extraits sur les normes de genre et la charge de la contraception ont été relus avec les cinq documents statistiques. Chaque comparaison identifie la période, la population enquêtée et l’objet mesuré, des méthodes remboursées à la part des IVG médicamenteuses.
+
+Dans le document 7, le nombre total d’IVG et la part médicamenteuse sont représentés sur deux axes. La lecture pour 2020 donne 222 000 et 72,4 %. Leur produit est d’environ 160 700 IVG médicamenteuses. Les données initiales étant arrondies, il faut aussi arrondir ce résultat. Mesurer la fréquence dans une population demanderait de rapporter un effectif à la population correspondante, au cours de la même période.
