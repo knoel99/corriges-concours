@@ -53,6 +53,16 @@
       "modifications": true,
       "agent": "lva_pt_2325",
       "perimetre": "Rédaction des cinq synthèses par langue et du commentaire des vingt-cinq documents du fascicule 2013, contrôle des figures et des décomptes dans les deux éditions."
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "agent": "lva_pt_2325",
+      "perimetre": "Relecture des cinq copies sur les feuillets et le jury, contrôle de la fidélité des chiffres et des images, recomptage du titre et du corps, contrôle des cinq schémas et du rendu de la langue arabe."
     }
   ],
   "date_revision": "2026-11-26",
@@ -96,8 +106,8 @@
             1,
             2
           ],
-          "mots_titre_inclus": 458,
-          "mots_hors_titre": 450,
+          "mots_titre_inclus": 468,
+          "mots_hors_titre": 460,
           "documents": [
             {
               "numero": 1,
@@ -185,7 +195,7 @@
               "pages": [
                 11
               ],
-              "controle": "The Economist, données AIE de 2011. Le graphique porte sur les réserves récupérables en milliers de milliards de mètres cubes. La barre totale russe domine ; ses segments distinguent plusieurs catégories de gaz."
+              "controle": "The Economist, données AIE de 2011. Le graphique porte sur les réserves récupérables en milliers de milliards de mètres cubes. La barre totale russe domine. Ses segments distinguent gaz conventionnel, gaz de réservoir compact, gaz de schiste et méthane de houille."
             },
             {
               "numero": 5,
@@ -210,8 +220,8 @@
           "pages_rapport": [
             7
           ],
-          "mots_titre_inclus": 470,
-          "mots_hors_titre": 463,
+          "mots_titre_inclus": 474,
+          "mots_hors_titre": 467,
           "documents": [
             {
               "numero": 1,

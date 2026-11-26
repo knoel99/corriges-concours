@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve dure trois heures. Chaque candidat compose dans la langue choisie à l’inscription. Ce fascicule présente les cinq synthèses de 450 à 500 mots. Les feuillets fixent la longueur de la synthèse. Le rapport d’anglais précise que le titre ne figurait pas dans la consigne. Nous proposons un titre et indiquons les décomptes avec et sans titre.
 
 [Sujet et supports](https://www.banquept.fr/documents/2013/lv_a_2013_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2013/rapport_lv_a_ecrit_2013.pdf) · [Grille du livret](https://www.banquept.fr/documents/livret/2013/Livret_PT_2013.pdf#page=12)
@@ -20,11 +22,11 @@ Sabine Rückert erinnert daran, wie viele Aufgaben früher in einem einzigen Hau
 
 Was für die eine Person einen Gewinn an Freiheit bedeutet, kann die andere binden. Christoph Drösser wendet ein, dass ein dauerhafter Verzicht auf Erwerbsarbeit den Partner auf die Rolle des alleinigen Verdieners festlegt. In einer Wirtschaft, in der weder der Arbeitsplatz noch der Berufsweg für Jahrzehnte feststehen, kann er diesen Auftrag kaum garantieren. Drösser selbst arbeitet nach der Geburt seines Kindes weniger. Entscheidend ist für ihn, dass beide die Vereinbarung später ändern können. Fände seine Frau eine interessante Stelle, könnte er stärker für die Familie da sein. Die Aufteilung beträfe also das Paar und wäre keine vorab festgelegte Eigenschaft eines Geschlechts.
 
-Ob sich dieser Wunsch verwirklichen lässt, hängt auch von den Beschäftigungsbedingungen ab. Das deutsche Recht erleichtert die Verkürzung der Arbeitszeit, mit Einschränkungen für kleine Betriebe. Die Modelle reichen von kürzeren Tagen bis zur Verteilung ganzer Arbeitstage auf einzelne Wochen. Noch überwiegen die Frauen, doch inzwischen nutzt auch eine wachsende Zahl von Männern diese Möglichkeit. Wer seine Arbeitszeit verringert, nimmt allerdings seltener an Fortbildungen teil. Hinzu kommt, dass der durchschnittliche Stundenlohn in Teilzeit nur gut zwei Drittel des entsprechenden Durchschnitts in Vollzeit erreicht. Die Folgen reichen damit über die geringere Zahl bezahlter Stunden hinaus.
+Ob sich dieser Wunsch verwirklichen lässt, hängt auch von den Beschäftigungsbedingungen ab. Das deutsche Recht erleichtert die Verkürzung der Arbeitszeit, mit Einschränkungen für kleine Betriebe. Die Modelle reichen von kürzeren Tagen bis zur Verteilung ganzer Arbeitstage auf einzelne Wochen. Noch überwiegen die Frauen, doch inzwischen nutzt auch eine wachsende Zahl von Männern diese Möglichkeit. Arbeitgeber führen die gebremsten Berufsaussichten unter anderem darauf zurück, dass Teilzeitkräfte seltener als ihre Kollegen in Vollzeit an Fortbildungen teilnehmen. Hinzu kommt, dass der durchschnittliche Stundenlohn in Teilzeit nur gut zwei Drittel des entsprechenden Durchschnitts in Vollzeit erreicht. Die Folgen reichen damit über die geringere Zahl bezahlter Stunden hinaus.
 
 Die beiden Bilder gewinnen vor diesem Hintergrund einen gemeinsamen Sinn. Anerkennung verlangt, dass die Arbeit an der Wäsche ebenso sichtbar wird wie die Arbeit auf der Straße. Wahlfreiheit setzt darüber hinaus ein Einkommen voraus, von dem eine Familie leben kann, und Arbeitsbedingungen, die eine spätere Veränderung der Rollen zulassen. Erst dann kann die Entscheidung für Betreuung, Beruf oder eine Verbindung aus beidem dem entsprechen, was beide Partner für ihre jeweilige Lebensphase vereinbart haben.
 
-**(458 Wörter, einschließlich Titel · 450 ohne Titel)**
+**(468 Wörter, einschließlich Titel · 460 ohne Titel)**
 
 ![Qui décide du partage du travail ?](figures/lecture-de.svg)
 
@@ -58,7 +60,7 @@ The disagreement concerns the conditions under which the promise could be kept. 
 
 في أبو ظبي أرجعت شركات التوزيع الزيادة في سعر البنزين إلى خسائر تراكمت مع ارتفاع كلفة المنتج الذي تبيعه. وقد يخفف تعديل السعر العبء عن الشركات وعن الدولة التي تدعمها، ويتيح لها تحسين الخدمة وبناء محطات جديدة. لكن الكلفة لا تختفي بمجرد انتقالها من حساب إلى آخر. فالعائلة التي تعتمد على السيارة تواجه زيادة فورية في نفقاتها، والتاجر الذي ترتفع مصاريف نقله قد يحمل المستهلك جزءا منها. ولذلك توقع بعض المتحدثين أن يمتد الغلاء إلى سلع أخرى. ويمكن في المقابل أن يشجع ارتفاع السعر على الاقتصاد في استهلاك الوقود أو على الانتقال إلى وسائل نقل مشتركة، وهو ما يربط السياسة المالية بازدحام المدن وأوضاع البيئة.
 
-وعلى مستوى السوق الدولية لا تتحدد الأسعار بما يعرضه المنتجون ويطلبه المشترون في يوم بعينه فقط. فقد رأى خبير سعودي أن التوتر السياسي يمكن أن يرفع سعر البرميل إلى ما فوق مئة وخمسين دولارا في حال تصاعد النزاع. وهذا احتمال ربطه بظروف معينة، لا سعر تحقق فعلا. وتملك المملكة في نظره طاقة إنتاجية إضافية تسمح لها بأن تسهم في تلبية زيادة الطلب. لكن الاعتماد على دخل الصادرات يجعلها معنية أيضا بتطور مصادر أخرى للطاقة وبأثر تغير سعر الغاز في صناعاتها. فارتفاع السعر الذي يضر بلدا مستوردا ليس مكسبا خالصا بالضرورة لبلد مصدر إذا أصبح استقرار السوق نفسه معرضا للخطر.
+وعلى مستوى السوق الدولية لا تتحدد الأسعار بما يعرضه المنتجون ويطلبه المشترون في يوم بعينه فقط. فقد رأى خبير سعودي أن التوتر السياسي يمكن أن يرفع سعر البرميل إلى ما فوق مئة وخمسين دولارا في حال تصاعد النزاع بين إيران والدول الغربية. وهذا احتمال ربطه بظروف معينة، لا سعر تحقق فعلا. وتملك المملكة في نظره طاقة إنتاجية إضافية تسمح لها بأن تسهم في تلبية زيادة الطلب. لكن الاعتماد على دخل الصادرات يجعلها معنية أيضا بتطور مصادر أخرى للطاقة وبأثر تغير سعر الغاز في صناعاتها. فارتفاع السعر الذي يضر بلدا مستوردا ليس مكسبا خالصا بالضرورة لبلد مصدر إذا أصبح استقرار السوق نفسه معرضا للخطر.
 
 ويوضح الفرق بين القدرة على إنتاج مزيد من النفط والقرار الفعلي بإنتاجه مقدار ما تتركه الظروف الاقتصادية والسياسية مفتوحا أمام الدول.
 
@@ -66,7 +68,7 @@ The disagreement concerns the conditions under which the promise could be kept. 
 
 ويعيد الرسمان هذا الجدل إلى حجمه اليومي. فالخط الصاعد يحول تقلب السوق إلى مسافة لا يستطيع السائق تجاوزها بسهولة، وتصور علامة الخطر التبعية للوقود عبئا يهدد صاحبه. وقدرة الدولة على تخفيف هذا العبء تتوقف على ما تريد حمايته وعلى المدة التي تستطيع خلالها تحمل الكلفة. فالاختيار بين دعم الموزعين وتعديل سعر التجزئة، أو بين زيادة الإنتاج وحفظ المخزون، يفيد جماعات مختلفة في أوقات مختلفة. ومن ثم تفرض حركة الأسعار على الحكومات الموازنة بين حماية الدخل اليوم، وضمان استمرار الإمداد غدا، والحد من الآثار التي يخلفها استهلاك النفط على المجتمع والبيئة.
 
-**(470 كلمة، بما فيها العنوان · 463 دون العنوان)**
+**(474 كلمة، بما فيها العنوان · 467 دون العنوان)**
 
 ![Qui supporte la hausse ?](figures/lecture-ar.svg)
 
