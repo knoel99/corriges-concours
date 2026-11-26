@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
 L’épreuve de six heures du 18 avril 2024, spécifique à l’ENS Ulm, comporte 45 questions. Elle démontre l’indépendance linéaire sur les rationnels des exponentielles de rationnels distincts, puis applique les méthodes obtenues aux fonctions E et à la fonction de Bessel. [Sujet officiel](https://www.ens.psl.eu/sites/default/files/24_mp_sujet_mathd.pdf)
@@ -468,6 +470,11 @@ Pour $m=0$ l’égalité est immédiate, et le passage à $m$ ajoute le terme de
 $$\sum_jq_j t^{n-j}=t^{n-kr}\prod_{h=1}^r(t-a_h)^k.$$
 On obtient exactement $v_n(k)=\sum_i b_i e^{a_i}\int_{a_i}^\infty e^{-t}t^{n-kr}\prod_h(t-a_h)^k\,\mathrm dt$. La condition $n\geq kr$ assure que l’intégrande est défini même lorsque le trajet rencontre zéro.
 
+Pour un indice $0\le n<kr$, le produit de séries formelles impose la troncature. Le noyau toujours polynomial qui résulte du même calcul est
+$$K_{n,k}(t)=\sum_{j=0}^{\min(n,kr)}q_j t^{n-j},\qquad
+v_n(k)=\sum_i b_i e^{a_i}\int_{a_i}^{\infty} e^{-t}K_{n,k}(t)\,dt.$$
+La somme commence ainsi avec $K_{0,k}=q_0=1$. Dès $n\ge kr$, tous les coefficients de $Q^k$ sont présents et la factorisation de l’énoncé est exacte. Cette troncature précise où la preuve utilise la borne sur $n$.
+
 ## F — Annulation et conclusion du théorème
 
 Le dénominateur commun des exposants, la croissance réelle et la divisibilité des coefficients vont forcer une même série à être rationnelle sous l’hypothèse $f(1)=0$.
@@ -589,6 +596,12 @@ Pour $a\in\mathbb Q$, $e^{ax}$ satisfait $f'=af$. Ses coefficients normalisés s
 #### Solution
 
 Décomposons la fraction en partie polynomiale et termes $c/(1-ax)^m$ avec $a,c\in\mathbb Q$, $a\ne0$ et $m\geq1$. La transformation inverse de la partie polynomiale reste un polynôme. Les coefficients d’un terme simple sont $c\binom{n+m-1}{m-1}a^n$. Le facteur binomial est polynomial en $n$, et s’écrit comme combinaison rationnelle des $(n)_{\underline j}$. Or $\sum_{n\geq0}(n)_{\underline j}a^n x^n/n!=(ax)^j e^{ax}$. La série inverse est donc un polynôme exponentiel, fonction E par 41.
+
+Pour le pôle d’ordre $m$, on peut donner explicitement le facteur polynomial obtenu par transformation inverse. L’identité de Vandermonde donne
+$$\binom{n+m-1}{m-1}=\sum_{j=0}^{m-1}\binom{m-1}{j}\binom{n}{j}.$$
+Or $\sum_{n\ge0}\binom{n}{j}(ax)^n/n!=e^{ax}(ax)^j/j!$. Ainsi le terme $c/(1-ax)^m$ a pour série inverse
+$$c\, e^{ax}\sum_{j=0}^{m-1}\binom{m-1}{j}\frac{(ax)^j}{j!}.$$
+Le degré du facteur en $x$ est $m-1$ lorsque $a,c\ne0$.
 
 ### Question 43
 
