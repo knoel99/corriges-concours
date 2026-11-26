@@ -1,0 +1,1556 @@
+{
+  "slug": "banque-pt_pt_physique-a_2019",
+  "commit_export": "b4240767f8a5a929f8beed7c507b3c2b7acd247f",
+  "gabarit": "scripts/exporter de la même révision",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Résolution de 74 questions et sous-questions, onze figures originales et lectures des enregistrements du sujet."
+    },
+    {
+      "phase": "revision",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture du fascicule et du rapport, vérification des signes, des fenêtres de cohérence, des axes de lecture, du réseau capillaire et du rendu des onze figures."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A-I-1-a",
+      "A-I-1-b",
+      "A-I-1-cα",
+      "A-I-1-cβ",
+      "A-I-1-cγ",
+      "A-I-2-a",
+      "A-I-2-b",
+      "A-I-3-a",
+      "A-I-3-b",
+      "A-I-3-c",
+      "A-I-3-d",
+      "A-II-1-a",
+      "A-II-1-b",
+      "A-II-1-c",
+      "A-II-1-d",
+      "A-II-1-e",
+      "A-II-1-f",
+      "A-II-2-a",
+      "A-II-2-b",
+      "A-II-2-cα",
+      "A-II-2-cβ",
+      "A-II-3-a",
+      "A-II-3-b",
+      "A-II-3-c",
+      "B-I-1-a",
+      "B-I-1-b",
+      "B-I-1-c",
+      "B-I-1-d",
+      "B-I-1-e",
+      "B-I-2-a",
+      "B-I-2-b",
+      "B-I-2-c",
+      "B-II-1",
+      "B-II-2",
+      "B-II-3",
+      "B-III-1-a",
+      "B-III-1-b",
+      "B-III-1-c",
+      "B-III-1-d",
+      "B-III-2-a",
+      "B-III-2-bα",
+      "B-III-2-bβ",
+      "B-III-2-c",
+      "B-III-3-a",
+      "B-III-3-b",
+      "B-III-3-c",
+      "B-III-3-d",
+      "B-III-3-eα",
+      "B-III-3-eβ",
+      "B-IV-1",
+      "B-IV-2",
+      "B-IV-3",
+      "B-V-a",
+      "B-V-b",
+      "C-I-1",
+      "C-I-2-a",
+      "C-I-2-b",
+      "C-I-3",
+      "C-I-4",
+      "C-II-1-a",
+      "C-II-1-b",
+      "C-II-2-a",
+      "C-II-2-b",
+      "C-II-2-c",
+      "C-II-3-a",
+      "C-II-3-b",
+      "C-II-3-cα",
+      "C-II-3-cβ",
+      "C-II-4-a",
+      "C-II-4-b",
+      "C-II-4-c",
+      "C-II-4-d",
+      "C-II-5-a",
+      "C-II-5-b"
+    ],
+    "repere_par_question": [
+      {
+        "question": "A-I-1-a",
+        "page_pdf": "2",
+        "titre": "Flux électrostatique"
+      },
+      {
+        "question": "A-I-1-b",
+        "page_pdf": "2",
+        "titre": "Champ d’un plan chargé"
+      },
+      {
+        "question": "A-I-1-cα",
+        "page_pdf": "2",
+        "titre": "Deux nappes opposées"
+      },
+      {
+        "question": "A-I-1-cβ",
+        "page_pdf": "2",
+        "titre": "Potentiel entre les nappes"
+      },
+      {
+        "question": "A-I-1-cγ",
+        "page_pdf": "2",
+        "titre": "Équipotentielles"
+      },
+      {
+        "question": "A-I-2-a",
+        "page_pdf": "2",
+        "titre": "Ligne de champ"
+      },
+      {
+        "question": "A-I-2-b",
+        "page_pdf": "2",
+        "titre": "Orientation autour de l’œil"
+      },
+      {
+        "question": "A-I-3-a",
+        "page_pdf": "3",
+        "titre": "Champ près des électrodes"
+      },
+      {
+        "question": "A-I-3-b",
+        "page_pdf": "3",
+        "titre": "Projections du potentiel"
+      },
+      {
+        "question": "A-I-3-c",
+        "page_pdf": "3",
+        "titre": "Œil aligné"
+      },
+      {
+        "question": "A-I-3-d",
+        "page_pdf": "3",
+        "titre": "Tension et rotation"
+      },
+      {
+        "question": "A-II-1-a",
+        "page_pdf": "3",
+        "titre": "ALI réel"
+      },
+      {
+        "question": "A-II-1-b",
+        "page_pdf": "3",
+        "titre": "ALI idéal"
+      },
+      {
+        "question": "A-II-1-c",
+        "page_pdf": "4",
+        "titre": "Gain du premier étage"
+      },
+      {
+        "question": "A-II-1-d",
+        "page_pdf": "4",
+        "titre": "Signe du dernier étage"
+      },
+      {
+        "question": "A-II-1-e",
+        "page_pdf": "4",
+        "titre": "Valeur du gain différentiel"
+      },
+      {
+        "question": "A-II-1-f",
+        "page_pdf": "4",
+        "titre": "Amplitude en sortie"
+      },
+      {
+        "question": "A-II-2-a",
+        "page_pdf": "4",
+        "titre": "Perturbation secteur"
+      },
+      {
+        "question": "A-II-2-b",
+        "page_pdf": "4",
+        "titre": "Filtre haute fréquence"
+      },
+      {
+        "question": "A-II-2-cα",
+        "page_pdf": "5",
+        "titre": "Gain de Bode"
+      },
+      {
+        "question": "A-II-2-cβ",
+        "page_pdf": "5",
+        "titre": "Fréquence de coupure"
+      },
+      {
+        "question": "A-II-3-a",
+        "page_pdf": "5",
+        "titre": "Échantillonnage"
+      },
+      {
+        "question": "A-II-3-b",
+        "page_pdf": "5",
+        "titre": "Durée et nombre de points"
+      },
+      {
+        "question": "A-II-3-c",
+        "page_pdf": "5",
+        "titre": "Retard de l’œil"
+      },
+      {
+        "question": "B-I-1-a",
+        "page_pdf": "5",
+        "titre": "Durée d’un train d’onde"
+      },
+      {
+        "question": "B-I-1-b",
+        "page_pdf": "5",
+        "titre": "Ordre de grandeur pour un laser"
+      },
+      {
+        "question": "B-I-1-c",
+        "page_pdf": "5",
+        "titre": "Temps de cohérence de la source"
+      },
+      {
+        "question": "B-I-1-d",
+        "page_pdf": "6",
+        "titre": "Longueur de cohérence"
+      },
+      {
+        "question": "B-I-1-e",
+        "page_pdf": "6",
+        "titre": "Limite monochromatique"
+      },
+      {
+        "question": "B-I-2-a",
+        "page_pdf": "6",
+        "titre": "Différence de marche"
+      },
+      {
+        "question": "B-I-2-b",
+        "page_pdf": "6",
+        "titre": "Démonstration de la formule de Fresnel"
+      },
+      {
+        "question": "B-I-2-c",
+        "page_pdf": "6",
+        "titre": "Phase dans la relation c"
+      },
+      {
+        "question": "B-II-1",
+        "page_pdf": "6",
+        "titre": "Marche en lame d’air"
+      },
+      {
+        "question": "B-II-2",
+        "page_pdf": "6",
+        "titre": "Aspect de l’écran"
+      },
+      {
+        "question": "B-II-3",
+        "page_pdf": "6",
+        "titre": "Retour à la teinte plate"
+      },
+      {
+        "question": "B-III-1-a",
+        "page_pdf": "7",
+        "titre": "Marche des faisceaux au détecteur"
+      },
+      {
+        "question": "B-III-1-b",
+        "page_pdf": "7",
+        "titre": "Marche en incidence normale"
+      },
+      {
+        "question": "B-III-1-c",
+        "page_pdf": "7",
+        "titre": "Ordre d’interférence"
+      },
+      {
+        "question": "B-III-1-d",
+        "page_pdf": "7",
+        "titre": "Mesure par l’ordre zéro"
+      },
+      {
+        "question": "B-III-2-a",
+        "page_pdf": "7",
+        "titre": "Signal monochromatique"
+      },
+      {
+        "question": "B-III-2-bα",
+        "page_pdf": "7",
+        "titre": "Positions des maxima"
+      },
+      {
+        "question": "B-III-2-bβ",
+        "page_pdf": "7",
+        "titre": "Tracé monochromatique"
+      },
+      {
+        "question": "B-III-2-c",
+        "page_pdf": "7",
+        "titre": "Ambiguïté de l’ordre"
+      },
+      {
+        "question": "B-III-3-a",
+        "page_pdf": "8",
+        "titre": "Centre du paquet de franges"
+      },
+      {
+        "question": "B-III-3-b",
+        "page_pdf": "8",
+        "titre": "Fenêtre de cohérence"
+      },
+      {
+        "question": "B-III-3-c",
+        "page_pdf": "8",
+        "titre": "Combien de maxima ?"
+      },
+      {
+        "question": "B-III-3-d",
+        "page_pdf": "8",
+        "titre": "Tracé à cohérence limitée"
+      },
+      {
+        "question": "B-III-3-eα",
+        "page_pdf": "8",
+        "titre": "Encadrement expérimental"
+      },
+      {
+        "question": "B-III-3-eβ",
+        "page_pdf": "8",
+        "titre": "Centre et demi-largeur"
+      },
+      {
+        "question": "B-IV-1",
+        "page_pdf": "9",
+        "titre": "Marche optique pour l’interface B"
+      },
+      {
+        "question": "B-IV-2",
+        "page_pdf": "9",
+        "titre": "Position du pic biologique"
+      },
+      {
+        "question": "B-IV-3",
+        "page_pdf": "9",
+        "titre": "Épaisseur géométrique"
+      },
+      {
+        "question": "B-V-a",
+        "page_pdf": "10",
+        "titre": "Identification des interfaces"
+      },
+      {
+        "question": "B-V-b",
+        "page_pdf": "10",
+        "titre": "Épaisseur du cristallin"
+      },
+      {
+        "question": "C-I-1",
+        "page_pdf": "11",
+        "titre": "Normalisation du profil parabolique"
+      },
+      {
+        "question": "C-I-2-a",
+        "page_pdf": "11",
+        "titre": "Effort visqueux sur le tube"
+      },
+      {
+        "question": "C-I-2-b",
+        "page_pdf": "11",
+        "titre": "Sens des efforts"
+      },
+      {
+        "question": "C-I-3",
+        "page_pdf": "11",
+        "titre": "Bilan de quantité de mouvement"
+      },
+      {
+        "question": "C-I-4",
+        "page_pdf": "11",
+        "titre": "Résistance de Poiseuille"
+      },
+      {
+        "question": "C-II-1-a",
+        "page_pdf": "12",
+        "titre": "Unité de la charge"
+      },
+      {
+        "question": "C-II-1-b",
+        "page_pdf": "12",
+        "titre": "Relation de Bernoulli"
+      },
+      {
+        "question": "C-II-2-a",
+        "page_pdf": "12",
+        "titre": "Dimension du coefficient de Darcy"
+      },
+      {
+        "question": "C-II-2-b",
+        "page_pdf": "12",
+        "titre": "Perte de charge régulière"
+      },
+      {
+        "question": "C-II-2-c",
+        "page_pdf": "12",
+        "titre": "Pertes singulières"
+      },
+      {
+        "question": "C-II-3-a",
+        "page_pdf": "12–13",
+        "titre": "Limite de Colebrook"
+      },
+      {
+        "question": "C-II-3-b",
+        "page_pdf": "13",
+        "titre": "Régimes sur le diagramme de Moody"
+      },
+      {
+        "question": "C-II-3-cα",
+        "page_pdf": "13",
+        "titre": "Droite en coordonnées logarithmiques"
+      },
+      {
+        "question": "C-II-3-cβ",
+        "page_pdf": "13",
+        "titre": "Lecture de la pente et du coefficient"
+      },
+      {
+        "question": "C-II-4-a",
+        "page_pdf": "13",
+        "titre": "Vitesse moyenne"
+      },
+      {
+        "question": "C-II-4-b",
+        "page_pdf": "13",
+        "titre": "Pression et coefficient de frottement"
+      },
+      {
+        "question": "C-II-4-c",
+        "page_pdf": "13",
+        "titre": "Loi laminaire théorique"
+      },
+      {
+        "question": "C-II-4-d",
+        "page_pdf": "13",
+        "titre": "Comparaison avec la lecture"
+      },
+      {
+        "question": "C-II-5-a",
+        "page_pdf": "14",
+        "titre": "Résistance du réseau capillaire"
+      },
+      {
+        "question": "C-II-5-b",
+        "page_pdf": "14",
+        "titre": "Nombre de capillaires du modèle ramifié"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  },
+  "pieces": {
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2019/ph_a_2019_pt.pdf",
+      "sha256": "722af2b9d80a7043edd46f3c5705bee660b115113e1d8bc49297c26417ff0f21",
+      "pages": 16,
+      "pieces_jointes": [],
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "8dc5846438ce5629266b75910b209e297c01c5a6971f95b485593f35af4f5888"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "c8b22516316b44100f31a64cffa356e77438730ed2eaacaa7a570ddca3a765fb"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "fd3dcf239e80a94c598aac8ef974894ec8656e1aecb5fa1576e0c485269a33dd"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "adde1198a4da3a282710fa4b0092f4e729e28466f80984d3ee97ba8b9bda7fc6"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "90ed0bf88779cab34d476c3c0ac293ad22fcbc72de82ced40544b70e3776694d"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "23ec58c0743a5b5b467026ec65e24a3f4bbb10a6a27f5426633997e25d35fec0"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "cc64e0d2030de1c3d7313bbcece4e0e395c1cbdb76831107f642804acf1fff7b"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "ad8e3cffdb627719fd207f5cff48738482812d44ec21fa33310bd493013167f1"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "aa63e4dc178189565fc67cb0214bcc97b9b7927f0d8ac10ef279c3a5a2e9a2a2"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "63bb449afc076f5e5e441a7a92e46406abbb58143142afdbe0c47bd1a67cf5b3"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "f4acdb719ad0f6c40b6e60ade003344a6e3b1e661385379147f9bf8a29fe688b"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "a64c4f28f0af4000d8ed139d69da544cd58f8f97304b41bc42f87248e6129052"
+        },
+        {
+          "numero": 13,
+          "rendu_sha256": "50906593f6b9c0aeb6bdfc81844f6c2ab553ade28e7a190f692e3dc36c04983f"
+        },
+        {
+          "numero": 14,
+          "rendu_sha256": "e013e1e2723b193b3b23787441d5f5402add27148d7b39cf30b7589fbb495481"
+        },
+        {
+          "numero": 15,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        },
+        {
+          "numero": 16,
+          "rendu_sha256": "765e02f25d3925a3d0484ba4becc51f19e09e9f1a76579bafa9e50b2b4d48ec0"
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2019/rapport_phys_a_ecrit_2019.pdf",
+      "sha256": "7f6e7731dc1cb806390d140f7b3efdf15892cb4c297fe3c4fdaae80ff2e36574",
+      "pages": 2,
+      "pieces_jointes": [],
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "5ec2e461b3b952aefb764c97a9d40fe1cbac5bc905a379c7eef029899415f72a"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "13c9682e7b63d7676e3043449abebf5df1e4309ee0c3519bedd45b744575d24c"
+        }
+      ]
+    }
+  },
+  "controles": {
+    "portee": "74 questions ou sous-questions terminales, 24 en A, 30 en B, 20 en C. Onze figures originales dans chaque édition.",
+    "pieces": "Sujet 16 pages et rapport 2 pages. Pages 12 et 14 du sujet entièrement en images, fin du sujet p. 14, page 15 blanche et colophon p. 16.",
+    "lectures": {
+      "figure4": {
+        "franchissements_pixels": [
+          316,
+          330,
+          431,
+          446
+        ],
+        "pixels_par_seconde": 58,
+        "retards_secondes": [
+          0.2413793103448276,
+          0.25862068965517243
+        ]
+      },
+      "figure10": {
+        "pics_3_4_5_pixels": [
+          246,
+          410,
+          1043
+        ],
+        "epaisseur_cristallin_mm": 3.9972159937438065
+      },
+      "figure14": {
+        "Re": [
+          1000,
+          2000
+        ],
+        "f": [
+          0.065,
+          0.032
+        ]
+      },
+      "figure17": "Deux étages en série avec la moitié des capillaires dans chacun."
+    },
+    "recoupements": "Champ et montage différentiel, gains et coupure, somme des champs et formule de Fresnel, projection des rayons, ordres discrets, calibration des pics, quadrature du débit, pertes régulières et modèle capillaire.",
+    "rapport": "Établissement de Fresnel, incidence nulle en B-III, localisation à cohérence partielle, lecture des graphes et de Moody."
+  },
+  "pdf": {
+    "brut": {
+      "pages": 14,
+      "nombre_signets": 83,
+      "signets": [
+        [
+          1,
+          "A.I — Champ électrique et rotation oculaire",
+          1
+        ],
+        [
+          2,
+          "A-I-1-a — Flux électrostatique",
+          1
+        ],
+        [
+          2,
+          "A-I-1-b — Champ d'un plan chargé",
+          1
+        ],
+        [
+          2,
+          "A-I-1-cα — Deux nappes opposées",
+          1
+        ],
+        [
+          2,
+          "A-I-1-cβ — Potentiel entre les nappes",
+          1
+        ],
+        [
+          2,
+          "A-I-1-cγ — Équipotentielles",
+          1
+        ],
+        [
+          2,
+          "A-I-2-a — Ligne de champ",
+          2
+        ],
+        [
+          2,
+          "A-I-2-b — Orientation autour de l'œil",
+          2
+        ],
+        [
+          2,
+          "A-I-3-a — Champ près des électrodes",
+          2
+        ],
+        [
+          2,
+          "A-I-3-b — Projections du potentiel",
+          3
+        ],
+        [
+          2,
+          "A-I-3-c — Œil aligné",
+          3
+        ],
+        [
+          2,
+          "A-I-3-d — Tension et rotation",
+          3
+        ],
+        [
+          1,
+          "A.II — Amplification, filtrage et acquisition",
+          3
+        ],
+        [
+          2,
+          "A-II-1-a — ALI réel",
+          3
+        ],
+        [
+          2,
+          "A-II-1-b — ALI idéal",
+          3
+        ],
+        [
+          2,
+          "A-II-1-c — Gain du premier étage",
+          3
+        ],
+        [
+          2,
+          "A-II-1-d — Signe du dernier étage",
+          3
+        ],
+        [
+          2,
+          "A-II-1-e — Valeur du gain différentiel",
+          3
+        ],
+        [
+          2,
+          "A-II-1-f — Amplitude en sortie",
+          3
+        ],
+        [
+          2,
+          "A-II-2-a — Perturbation secteur",
+          4
+        ],
+        [
+          2,
+          "A-II-2-b — Filtre haute fréquence",
+          4
+        ],
+        [
+          2,
+          "A-II-2-cα — Gain de Bode",
+          4
+        ],
+        [
+          2,
+          "A-II-2-cβ — Fréquence de coupure",
+          4
+        ],
+        [
+          2,
+          "A-II-3-a — Échantillonnage",
+          4
+        ],
+        [
+          2,
+          "A-II-3-b — Durée et nombre de points",
+          5
+        ],
+        [
+          2,
+          "A-II-3-c — Retard de l'œil",
+          5
+        ],
+        [
+          1,
+          "B.I — Cohérence et interférences",
+          5
+        ],
+        [
+          2,
+          "B-I-1-a — Durée d'un train d'onde",
+          5
+        ],
+        [
+          2,
+          "B-I-1-b — Ordre de grandeur pour un laser",
+          5
+        ],
+        [
+          2,
+          "B-I-1-c — Temps de cohérence de la source",
+          5
+        ],
+        [
+          2,
+          "B-I-1-d — Longueur de cohérence",
+          6
+        ],
+        [
+          2,
+          "B-I-1-e — Limite monochromatique",
+          6
+        ],
+        [
+          2,
+          "B-I-2-a — Différence de marche",
+          6
+        ],
+        [
+          2,
+          "B-I-2-b — Démonstration de la formule de Fresnel",
+          6
+        ],
+        [
+          2,
+          "B-I-2-c — Phase dans la relation c",
+          6
+        ],
+        [
+          1,
+          "B.II — Michelson en lame d'air",
+          6
+        ],
+        [
+          2,
+          "B-II-1 — Marche en lame d'air",
+          6
+        ],
+        [
+          2,
+          "B-II-2 — Aspect de l'écran",
+          7
+        ],
+        [
+          2,
+          "B-II-3 — Retour à la teinte plate",
+          7
+        ],
+        [
+          1,
+          "B.III — Mesure de position",
+          7
+        ],
+        [
+          2,
+          "B-III-1-a — Marche des faisceaux au détecteur",
+          7
+        ],
+        [
+          2,
+          "B-III-1-b — Marche en incidence normale",
+          8
+        ],
+        [
+          2,
+          "B-III-1-c — Ordre d'interférence",
+          8
+        ],
+        [
+          2,
+          "B-III-1-d — Mesure par l'ordre zéro",
+          8
+        ],
+        [
+          2,
+          "B-III-2-a — Signal monochromatique",
+          8
+        ],
+        [
+          2,
+          "B-III-2-bα — Positions des maxima",
+          8
+        ],
+        [
+          2,
+          "B-III-2-bβ — Tracé monochromatique",
+          8
+        ],
+        [
+          2,
+          "B-III-2-c — Ambiguïté de l'ordre",
+          9
+        ],
+        [
+          2,
+          "B-III-3-a — Centre du paquet de franges",
+          9
+        ],
+        [
+          2,
+          "B-III-3-b — Fenêtre de cohérence",
+          9
+        ],
+        [
+          2,
+          "B-III-3-c — Combien de maxima ?",
+          9
+        ],
+        [
+          2,
+          "B-III-3-d — Tracé à cohérence limitée",
+          9
+        ],
+        [
+          2,
+          "B-III-3-eα — Encadrement expérimental",
+          10
+        ],
+        [
+          2,
+          "B-III-3-eβ — Centre et demi-largeur",
+          10
+        ],
+        [
+          1,
+          "B.IV — Biométrie de l'œil",
+          10
+        ],
+        [
+          2,
+          "B-IV-1 — Marche optique pour l'interface B",
+          10
+        ],
+        [
+          2,
+          "B-IV-2 — Position du pic biologique",
+          10
+        ],
+        [
+          2,
+          "B-IV-3 — Épaisseur géométrique",
+          10
+        ],
+        [
+          1,
+          "B.V — Lecture des interfaces",
+          11
+        ],
+        [
+          2,
+          "B-V-a — Identification des interfaces",
+          11
+        ],
+        [
+          2,
+          "B-V-b — Épaisseur du cristallin",
+          11
+        ],
+        [
+          1,
+          "C.I — Écoulement dans un tube",
+          11
+        ],
+        [
+          2,
+          "C-I-1 — Normalisation du profil parabolique",
+          11
+        ],
+        [
+          2,
+          "C-I-2-a — Effort visqueux sur le tube",
+          11
+        ],
+        [
+          2,
+          "C-I-2-b — Sens des efforts",
+          11
+        ],
+        [
+          2,
+          "C-I-3 — Bilan de quantité de mouvement",
+          12
+        ],
+        [
+          2,
+          "C-I-4 — Résistance de Poiseuille",
+          12
+        ],
+        [
+          1,
+          "C.II — Pertes de charge et circulation",
+          12
+        ],
+        [
+          2,
+          "C-II-1-a — Unité de la charge",
+          12
+        ],
+        [
+          2,
+          "C-II-1-b — Relation de Bernoulli",
+          12
+        ],
+        [
+          2,
+          "C-II-2-a — Dimension du coefficient de Darcy",
+          12
+        ],
+        [
+          2,
+          "C-II-2-b — Perte de charge régulière",
+          13
+        ],
+        [
+          2,
+          "C-II-2-c — Pertes singulières",
+          13
+        ],
+        [
+          2,
+          "C-II-3-a — Limite de Colebrook",
+          13
+        ],
+        [
+          2,
+          "C-II-3-b — Régimes sur le diagramme de Moody",
+          13
+        ],
+        [
+          2,
+          "C-II-3-cα — Droite en coordonnées logarithmiques",
+          13
+        ],
+        [
+          2,
+          "C-II-3-cβ — Lecture de la pente et du coefficient",
+          13
+        ],
+        [
+          2,
+          "C-II-4-a — Vitesse moyenne",
+          13
+        ],
+        [
+          2,
+          "C-II-4-b — Pression et coefficient de frottement",
+          13
+        ],
+        [
+          2,
+          "C-II-4-c — Loi laminaire théorique",
+          14
+        ],
+        [
+          2,
+          "C-II-4-d — Comparaison avec la lecture",
+          14
+        ],
+        [
+          2,
+          "C-II-5-a — Résistance du réseau capillaire",
+          14
+        ],
+        [
+          2,
+          "C-II-5-b — Nombre de capillaires du modèle ramifié",
+          14
+        ]
+      ],
+      "pages_figures": [
+        2,
+        2,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14
+      ],
+      "sha256": "5799cdefd1aa532768f003034bb9962bc856359a4cb84ac2acd0b4d664a6f87d",
+      "rendus_sha256": [
+        "a04094fe772cb14bdde0d631dec7edd04cd15b5e6e78d912f95a336860a47dd6",
+        "40d3bbe3415bb676b288a6dc891506de4255c7fc61639dda7ffd5f1987fe9095",
+        "028a49a622ac0e35a9384ec213328e3a07413f65bbdd469e40d1b7a5b31af4de",
+        "487dcdc0a368155acb734cf231653ff6194e37096d15a09dbce251171290eb0e",
+        "0d2314785b26ecd2f68f73f87c9ce4cf0518dc8bb1b6d853574b2517e699977d",
+        "7e212304002d795aaa33e73a0d52741cac8485523baef7696382a2bd6ff72767",
+        "d31c25bef38d370888c2816d64b8ba805eddc38e3317d5e7e30e9e1333f57ea7",
+        "81e367de734bac12edc85a0113acce349975e8945b621004094331e6bec1e126",
+        "0e854d7c03404048a2df230c761e60ee7cf0ea9eb13bdc5d6be2b22d8df69513",
+        "eb82b7b409274ffd351a54c8a14755ee7b4178616ea5022c13f04891578ebfb6",
+        "8501d5d959d23a1d6a2548c7da223bae2a49d763fc3808b0ead5e22ea4fd3c92",
+        "15fe9df4c1e0db6abdff821caca5d0faf7fb6258c06ac7e42f1c749646f5e636",
+        "07e0d9c2f56bbf8bbd714608a2e2333e9615c4cd8dbb8f71e62c35fbd73d5d68",
+        "8eb380ede8d376ff4e9999d3500439fb63ea840a24a16799535f524b3254a60c"
+      ]
+    },
+    "guide": {
+      "pages": 20,
+      "nombre_signets": 83,
+      "signets": [
+        [
+          1,
+          "A.I — Champ électrique et rotation oculaire",
+          1
+        ],
+        [
+          2,
+          "A-I-1-a — Flux électrostatique",
+          1
+        ],
+        [
+          2,
+          "A-I-1-b — Champ d'un plan chargé",
+          1
+        ],
+        [
+          2,
+          "A-I-1-cα — Deux nappes opposées",
+          1
+        ],
+        [
+          2,
+          "A-I-1-cβ — Potentiel entre les nappes",
+          2
+        ],
+        [
+          2,
+          "A-I-1-cγ — Équipotentielles",
+          2
+        ],
+        [
+          2,
+          "A-I-2-a — Ligne de champ",
+          2
+        ],
+        [
+          2,
+          "A-I-2-b — Orientation autour de l'œil",
+          2
+        ],
+        [
+          2,
+          "A-I-3-a — Champ près des électrodes",
+          3
+        ],
+        [
+          2,
+          "A-I-3-b — Projections du potentiel",
+          3
+        ],
+        [
+          2,
+          "A-I-3-c — Œil aligné",
+          3
+        ],
+        [
+          2,
+          "A-I-3-d — Tension et rotation",
+          4
+        ],
+        [
+          1,
+          "A.II — Amplification, filtrage et acquisition",
+          4
+        ],
+        [
+          2,
+          "A-II-1-a — ALI réel",
+          4
+        ],
+        [
+          2,
+          "A-II-1-b — ALI idéal",
+          4
+        ],
+        [
+          2,
+          "A-II-1-c — Gain du premier étage",
+          4
+        ],
+        [
+          2,
+          "A-II-1-d — Signe du dernier étage",
+          4
+        ],
+        [
+          2,
+          "A-II-1-e — Valeur du gain différentiel",
+          5
+        ],
+        [
+          2,
+          "A-II-1-f — Amplitude en sortie",
+          5
+        ],
+        [
+          2,
+          "A-II-2-a — Perturbation secteur",
+          5
+        ],
+        [
+          2,
+          "A-II-2-b — Filtre haute fréquence",
+          5
+        ],
+        [
+          2,
+          "A-II-2-cα — Gain de Bode",
+          5
+        ],
+        [
+          2,
+          "A-II-2-cβ — Fréquence de coupure",
+          6
+        ],
+        [
+          2,
+          "A-II-3-a — Échantillonnage",
+          6
+        ],
+        [
+          2,
+          "A-II-3-b — Durée et nombre de points",
+          6
+        ],
+        [
+          2,
+          "A-II-3-c — Retard de l'œil",
+          6
+        ],
+        [
+          1,
+          "B.I — Cohérence et interférences",
+          7
+        ],
+        [
+          2,
+          "B-I-1-a — Durée d'un train d'onde",
+          7
+        ],
+        [
+          2,
+          "B-I-1-b — Ordre de grandeur pour un laser",
+          7
+        ],
+        [
+          2,
+          "B-I-1-c — Temps de cohérence de la source",
+          7
+        ],
+        [
+          2,
+          "B-I-1-d — Longueur de cohérence",
+          8
+        ],
+        [
+          2,
+          "B-I-1-e — Limite monochromatique",
+          8
+        ],
+        [
+          2,
+          "B-I-2-a — Différence de marche",
+          8
+        ],
+        [
+          2,
+          "B-I-2-b — Démonstration de la formule de Fresnel",
+          8
+        ],
+        [
+          2,
+          "B-I-2-c — Phase dans la relation c",
+          8
+        ],
+        [
+          1,
+          "B.II — Michelson en lame d'air",
+          9
+        ],
+        [
+          2,
+          "B-II-1 — Marche en lame d'air",
+          9
+        ],
+        [
+          2,
+          "B-II-2 — Aspect de l'écran",
+          9
+        ],
+        [
+          2,
+          "B-II-3 — Retour à la teinte plate",
+          9
+        ],
+        [
+          1,
+          "B.III — Mesure de position",
+          10
+        ],
+        [
+          2,
+          "B-III-1-a — Marche des faisceaux au détecteur",
+          10
+        ],
+        [
+          2,
+          "B-III-1-b — Marche en incidence normale",
+          10
+        ],
+        [
+          2,
+          "B-III-1-c — Ordre d'interférence",
+          10
+        ],
+        [
+          2,
+          "B-III-1-d — Mesure par l'ordre zéro",
+          11
+        ],
+        [
+          2,
+          "B-III-2-a — Signal monochromatique",
+          11
+        ],
+        [
+          2,
+          "B-III-2-bα — Positions des maxima",
+          11
+        ],
+        [
+          2,
+          "B-III-2-bβ — Tracé monochromatique",
+          11
+        ],
+        [
+          2,
+          "B-III-2-c — Ambiguïté de l'ordre",
+          12
+        ],
+        [
+          2,
+          "B-III-3-a — Centre du paquet de franges",
+          12
+        ],
+        [
+          2,
+          "B-III-3-b — Fenêtre de cohérence",
+          12
+        ],
+        [
+          2,
+          "B-III-3-c — Combien de maxima ?",
+          12
+        ],
+        [
+          2,
+          "B-III-3-d — Tracé à cohérence limitée",
+          12
+        ],
+        [
+          2,
+          "B-III-3-eα — Encadrement expérimental",
+          13
+        ],
+        [
+          2,
+          "B-III-3-eβ — Centre et demi-largeur",
+          13
+        ],
+        [
+          1,
+          "B.IV — Biométrie de l'œil",
+          13
+        ],
+        [
+          2,
+          "B-IV-1 — Marche optique pour l'interface B",
+          13
+        ],
+        [
+          2,
+          "B-IV-2 — Position du pic biologique",
+          14
+        ],
+        [
+          2,
+          "B-IV-3 — Épaisseur géométrique",
+          14
+        ],
+        [
+          1,
+          "B.V — Lecture des interfaces",
+          14
+        ],
+        [
+          2,
+          "B-V-a — Identification des interfaces",
+          14
+        ],
+        [
+          2,
+          "B-V-b — Épaisseur du cristallin",
+          14
+        ],
+        [
+          1,
+          "C.I — Écoulement dans un tube",
+          15
+        ],
+        [
+          2,
+          "C-I-1 — Normalisation du profil parabolique",
+          15
+        ],
+        [
+          2,
+          "C-I-2-a — Effort visqueux sur le tube",
+          15
+        ],
+        [
+          2,
+          "C-I-2-b — Sens des efforts",
+          15
+        ],
+        [
+          2,
+          "C-I-3 — Bilan de quantité de mouvement",
+          16
+        ],
+        [
+          2,
+          "C-I-4 — Résistance de Poiseuille",
+          16
+        ],
+        [
+          1,
+          "C.II — Pertes de charge et circulation",
+          16
+        ],
+        [
+          2,
+          "C-II-1-a — Unité de la charge",
+          16
+        ],
+        [
+          2,
+          "C-II-1-b — Relation de Bernoulli",
+          17
+        ],
+        [
+          2,
+          "C-II-2-a — Dimension du coefficient de Darcy",
+          17
+        ],
+        [
+          2,
+          "C-II-2-b — Perte de charge régulière",
+          17
+        ],
+        [
+          2,
+          "C-II-2-c — Pertes singulières",
+          17
+        ],
+        [
+          2,
+          "C-II-3-a — Limite de Colebrook",
+          17
+        ],
+        [
+          2,
+          "C-II-3-b — Régimes sur le diagramme de Moody",
+          18
+        ],
+        [
+          2,
+          "C-II-3-cα — Droite en coordonnées logarithmiques",
+          18
+        ],
+        [
+          2,
+          "C-II-3-cβ — Lecture de la pente et du coefficient",
+          18
+        ],
+        [
+          2,
+          "C-II-4-a — Vitesse moyenne",
+          18
+        ],
+        [
+          2,
+          "C-II-4-b — Pression et coefficient de frottement",
+          18
+        ],
+        [
+          2,
+          "C-II-4-c — Loi laminaire théorique",
+          19
+        ],
+        [
+          2,
+          "C-II-4-d — Comparaison avec la lecture",
+          19
+        ],
+        [
+          2,
+          "C-II-5-a — Résistance du réseau capillaire",
+          19
+        ],
+        [
+          2,
+          "C-II-5-b — Nombre de capillaires du modèle ramifié",
+          19
+        ]
+      ],
+      "pages_figures": [
+        2,
+        3,
+        6,
+        7,
+        9,
+        10,
+        11,
+        13,
+        14,
+        16,
+        20
+      ],
+      "sha256": "2771cb87c58e99cd06c61b0c1b56443b6e814456b84b374356343bb4edd2758f",
+      "rendus_sha256": [
+        "f4605e49454e257093a58d6aa42fe0b01a058afed896a3f059178d008639c539",
+        "7bf6fe3fb2fd898511b71ed06965fb745fd0d80adc30f128191074e95295f37c",
+        "f80607841b9774862a979ce6901f2062fc0d820a78dfba65604a5c612d09b7d4",
+        "12895cca86d7bef25c0524c3647a38523b3b931a89f97d3d344e2a570adfe887",
+        "6777f8825fb1f5f75928269404dd2827f4ff5b745005bb4a4247545605591c49",
+        "3d739a57b762005b772625ed264cbcf2e1ec22d92b3bd2c6634c14a4e8145df6",
+        "36948293984e01d8fa806b82f326ecf1494b10068afeff200cc9e7bb84a91a9d",
+        "754e16f511fdecc7632912940e8c3f578a4d0c9b07011817c76b580b7d674034",
+        "c97954f25d0ecc28aa02142cec6ff265ceae4e975beaa1a4bf7af1fd91da8308",
+        "f68e965c69661d0ca6dbc9c67d2211dd3ea27e0c5995ff42f2417f07e4d730b3",
+        "9025900c590e060f0a55a20d6d11d9b5243489c48f23e339170720cb60f4bf75",
+        "1662532725ba98bbbaf845b798cdc63d042d57a04dd04dafb761015cc8331d68",
+        "d7579cb5a3fe7738817bfc341cb5a0815e6e37f8b2111dae9e5ce3784d098e79",
+        "4a9c0237fa387e08a63cdb540d6207fcdd1157d6713e3086f3dd99bf88ebbda8",
+        "6540dbd761666a0e709f150564ae06b9b6695a660eddac96da0aab97e0607cc5",
+        "fc697057431d0b9be5c9867d6b255b531851319f2b6dd650062e4467f5372b66",
+        "95e8931871cc639942ba9cc4d6a5f1dfb533dd1e667d25a55c2cf21d5fe4b246",
+        "c18c7ff89c3a272988228389959a0a0872e4da2cf9d9eccc3517121291889bc9",
+        "375465756f8a39288f66c53463a345f6c42eb6263772565b656940bef2dc1410",
+        "40db9aa99648b97b4a6e9a4d3da280c1ae2e086acc999e95b997d0fd65ae8fbc"
+      ]
+    }
+  },
+  "empreintes": {
+    "meta.json": "b4c1d2e84c7392133cfc734c061eb37f13bfb0533649e18ad9a6ab6da6d68e97",
+    "brut.md": "8a25f34982afdba239e741ad8057cba7003871f6458d7318f291d7f1e20c9d16",
+    "guide.md": "029ad39f5c515757ae56e69d62bf4058d232229a1fc015df1ed8d0409f5b7934",
+    "verifier_calculs.py": "9731495b07bcd484a9594a2a0ccdd26255619e23cb7143f124d641059d6ad915",
+    "figures/plaques.svg": "1309f75787dc566604e647884465d9e1337652a2819b47d3bdf67e79fea50a25",
+    "figures/champ-oeil.svg": "e042e5f386af80f0eb73a0edf54292256b237cb269d3290378ad53db2f9c1452",
+    "figures/bode.svg": "ccb1d5573393d2084e1fb5956c589dbccb1567cd0d6bf453987c162eb434f464",
+    "figures/trains.svg": "172ad75fe37f2ef807e6056b68b3173a822959d557c369a994425c602ad07058",
+    "figures/lame-air.svg": "db001a4e2e630423232be262a14d68d05eb66249558fc68d9d23fc1d58863c4a",
+    "figures/michelson.svg": "18be72ebb861e7c8692fd9f6d375c83c910be7a1aa352a1bfef87f0e875c2993",
+    "figures/franges-mono.svg": "3f1d7a53781161b1ddc2c08ecbc75aea1aaf493bb4046db33339e5e3e2d78cc9",
+    "figures/franges-finies.svg": "4f3f4cc4958ec04e7cc6f78f68238f821205cbc2dca88413cadb5477390a6b8d",
+    "figures/interfaces.svg": "581e5e4c0273587cb6044f42dff40ebe97a9c9f45ed2614a34dc28743fd912b2",
+    "figures/forces.svg": "7273e05290f0ea26c281a2327ad7d84821845bab09d707efb48d943045a64468",
+    "figures/reseau.svg": "1508f4fbda54fd918522dabeb6723ee795408218d0c7ce77c6eb074b2fd8a64e",
+    "bilan-compilation.md": "27d41af764c1aa159769fb00f1957ecc90154c06f606d9f8e6fc94e61f1cae40",
+    "recu-tests.txt": "fa94d71d883300da4399575064a010a5fa9a58db6352d1aa7026e31adfec418c",
+    "brut.pdf": "5799cdefd1aa532768f003034bb9962bc856359a4cb84ac2acd0b4d664a6f87d",
+    "guide.pdf": "2771cb87c58e99cd06c61b0c1b56443b6e814456b84b374356343bb4edd2758f",
+    "apercu.jpg": "56cdff78fd5d0bd06c246c567431d9ae936cdac5b4f9e097eeb68e417853d394"
+  },
+  "archive": "Banque-PT-physique-A-2019.zip",
+  "sha256": "62b4910021e32fcef781deeb48824e7443f069ef52b0b6550c66954cea805eff"
+}
