@@ -2,7 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 Le modèle de stationnement séquentiel relie une équation à retard, sa transformée de Laplace et un théorème taubérien. Les sauts de la fonction intégratrice et la convention de placement en longueur exactement un interviennent dans la démonstration.
 
@@ -104,6 +106,8 @@ La croissance de $\alpha$ permet d’encadrer l’expression pour $g$ par celles
 
 Le produit $e^{-t}g(e^{-t})$ est l’indicatrice de $[0,1]$, donc le membre de droite vaut $C$. À gauche, $e^{-yt}g(e^{-yt})$ est l’indicatrice de $[0,1/y]$. Les deux choix d’inclure ou non le dernier point encadrent l’accroissement $\alpha(1/y)-\alpha(0)$ : ils prennent le saut terminal en entier ou le laissent en dehors, tandis que cet accroissement en prend la partie gauche. Les deux expressions multipliées par $y$ tendent vers $C$ par I.9. Comme $\alpha(0)=0$, le changement $x=1/y$ donne $\alpha(x)/x\to C$.
 
+Plus précisément, pour $T=1/y>0$, les masses de $[0,T[$ et $[0,T]$ sont $\alpha(T-)-\alpha(0)$ et $\alpha(T+)-\alpha(0)$. Comme $\alpha(T-)\le\alpha(T)\le\alpha(T+)$, le résultat vaut même si la valeur choisie au saut n’est aucune des deux limites.
+
 ## II. Équation à retard et constante limite
 
 ### Question II.1
@@ -192,6 +196,8 @@ La dernière égalité utilise $z^{-2}=y^{-2}\exp(-2\int_y^z du/u)$. On obtient 
 #### Solution
 
 Écrivons $H(z)=\int_0^z(1-e^{-u})du/u$, dont l’intégrande se prolonge par $1$ en zéro. Alors $y^2\phi(y)=e^{-y+2H(y)}\int_y^\infty e^{-2H(z)}dz$. Pour $z\ge1$, $H(z)=H(1)+\log z-\int_1^z e^{-u}du/u=\log z+O(1)$. L’intégrande est donc $O(z^{-2})$ à l’infini et continu en zéro. À la limite $y\downarrow0$ on trouve $C_P=\int_0^\infty e^{-2H(z)}dz$, réel fini strictement positif.
+
+On peut contrôler numériquement la constante. Pour $z>0$, $H(z)=\gamma+\log z+E_1(z)$, où $E_1(z)=\int_z^\infty e^{-t}\,dt/t$ et $\gamma$ est la constante d’Euler. Le reste au-delà de $R$ équivaut donc à $e^{-2\gamma}/R$. Une quadrature de l’intégrale donne $C_P\simeq0{,}747598$.
 
 ### Question II.10
 
