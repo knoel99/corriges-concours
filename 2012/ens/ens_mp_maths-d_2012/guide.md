@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Invariants des formes binaires.** Le degré d’un polynôme en plusieurs variables est lexicographique dans la partie III. Dans les parties IV et V, le degré total en les coefficients et le poids d’un monôme sont distingués. Le dernier argument construit explicitement la projection sur les invariants.
 
 ## I. Polynômes homogènes et composition
@@ -72,6 +74,8 @@ Posons $b(x,y)=x^{\mathsf T}My$. Il existe $v$ avec $b(v,v)\ne0$, sinon la polar
 #### Solution
 
 Pour $A\in SL_2$, $\det(A^{\mathsf T}MA)=\det M$. Réciproquement, une diagonale $D$ satisfaisant $d_1d_2=\det M$ est obtenue par un $A\in GL_2$ selon II.1.a. Alors $(\det A)^2=1$. Si $\det A=-1$, multiplions $A$ à droite par $\operatorname{diag}(-1,1)$, qui préserve $D$ par congruence et change ce déterminant. Ainsi toutes et seules les diagonales de déterminant $\det M$ sont obtenues.
+
+Voici une congruence spéciale que la diagonalisation par similitude ne donnerait pas. Posons $N=\left(\begin{smallmatrix}1&i\\i&-1\end{smallmatrix}\right)$, matrice symétrique non nulle de carré nul. La matrice $M=I+N$ a pour seul sous-espace propre $\ker N$, de dimension un. Cependant $A=I-N/2$ est symétrique, de déterminant un, et $A^{\mathsf T}MA=(I-N/2)^2(I+N)=I$. Le déterminant prédit pour cette diagonale vaut bien $1$.
 
 ### Question II.2.a
 
@@ -424,9 +428,13 @@ L’expression est constante en $A$ (degré $2q$) et invariante par V.2.c. V.4 m
 
 Il reste à prouver $R(PH)=H R(P)$ pour un invariant homogène $H$ de degré $e$, supposé non nul. Écrivons $h=me/2$, entier. Si $md$ est impair, les deux projections sont nulles. Sinon posons $q=md/2$. Pour toute forme $f$, $H(f^A)=\delta(A)^h H(f)$. Pour un polynôme $G(A)$ homogène de degré $2q$, on a l’identité
 $$\frac{\Omega^{q+h}(\delta^hG)}{(q+h)!(q+h+1)!}=\frac{\Omega^q G}{q!(q+1)!}.$$
-Vérifions-la sur $G=a^i b^j c^k d^l$. Les deux membres sont nuls sauf si $i=l$, $j=k$ (les différentiations consomment autant de $a,d$ et autant de $b,c$). Dans ce dernier cas $i+j=q$, et le membre droit est $(-1)^j i!j!/(q+1)!$. Pour le membre gauche, développons $(ad-bc)^h$. Après extraction du signe $(-1)^j$, sa valeur est
-$$\frac{1}{(q+h+1)!}\sum_{t=0}^h\binom ht(i+h-t)!(j+t)!.$$
-Cette somme est égale à $i!j!(q+h+1)!/(q+1)!$. En effet après division par $h!i!j!$, il reste $\sum_{t=0}^h\binom{i+h-t}{i}\binom{j+t}{j}=\binom{i+j+h+1}{h}$, coefficient de $X^h$ dans $(1-X)^{-i-1}(1-X)^{-j-1}$. L’identité est établie. Avec $G(A)=P(f^A)$, elle prouve la propriété de $R$. Par décomposition des degrés et bilinéarité, celle-ci vaut pour $P$ et $H$ quelconques, $H$ invariant. Appliquons-la à l’égalité initiale. On obtient $\Psi=R(\Psi)=\sum_j R(\Phi_j)\Psi_j$. Les coefficients $\Pi_j=R(\Phi_j)$ appartiennent bien à $I_m$.
+On peut établir cette identité sans développer les monômes de $G$. Posons $\delta=ad-bc$ et notons $E=a\partial_a+b\partial_b+c\partial_c+d\partial_d$. La règle du produit dans les deux dérivées mixtes donne
+$$\Omega(\delta G)=\delta\,\Omega G+(E+2)G.$$
+Pour $G$ homogène de degré $m$, le dernier terme vaut $(m+2)G$. Comme $\Omega$ fait baisser le degré de deux, une récurrence sur $s\ge1$ donne
+$$\Omega^s(\delta G)=\delta\,\Omega^sG+s(m-s+3)\Omega^{s-1}G.$$
+En effet, au passage de $s$ à $s+1$, le coefficient nouveau est $(m-2s+2)+s(m-s+3)=(s+1)(m-s+2)$. Avec $m=2q$ et $s=q+1$, le premier terme est nul et le second vaut $(q+1)(q+2)\Omega^qG$. La division par $(q+1)!(q+2)!$ montre l’identité cherchée pour $h=1$. En répétant ce passage pour $G,\delta G,\ldots,\delta^{h-1}G$, on obtient tous les $h\ge0$.
+
+Avec $G(A)=P(f^A)$, elle prouve la propriété de $R$. Par décomposition des degrés et bilinéarité, celle-ci vaut pour $P$ et $H$ quelconques, $H$ invariant. Appliquons-la à l’égalité initiale. On obtient $\Psi=R(\Psi)=\sum_j R(\Phi_j)\Psi_j$. Les coefficients $\Pi_j=R(\Phi_j)$ appartiennent bien à $I_m$.
 
 ### Question V.6
 
