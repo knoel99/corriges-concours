@@ -1,0 +1,53 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_litterature-charlotte-delbo-et-aucun-de-nous-ne-reviendra-oral_2017",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Littérature — Charlotte Delbo et Aucun de nous ne reviendra (oral)",
+    "annee": 2017,
+    "modalite": "oral"
+  },
+  "intitule": "Littérature — Charlotte Delbo et Aucun de nous ne reviendra (oral)",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/litterature-4oraux-si17.pdf",
+    "archive_sujet": "https://web.archive.org/web/20201230063150id_/https://www.ens.psl.eu/sites/default/files/litterature-4oraux-si17.pdf",
+    "sha256_sujet": "87329feb3d7365419f4aa670fb881416860c2405db70373f89f0ce297763781c",
+    "reperage": "Recueil 2017, pages 7 et 8. Incipit « Rue de l’Arrivée, rue du Départ », du premier tableau de gare à l’absence de nom pour les arrivants.",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/ens_rapport_sil_litterature_2017.pdf",
+    "rapport_sha256": "9058fff717f3846beb5d505d56ade42b4ef87f88c66eb78fc30f626cbd3c8497",
+    "reperage_rapport": "Page 2, dernier paragraphe consacré à l’oral."
+  },
+  "figures": [
+    {
+      "fichier": "figures/gare.svg",
+      "question": "Commentaire",
+      "legende": "Comment change le sens des mots du voyage ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "reprise_oraux_litterature_sil_2017_2019",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": false,
+      "perimetre": "Lecture du paragraphe consacré au commentaire oral, à la lecture à haute voix et aux reprises demandées en entretien."
+    },
+    {
+      "phase": "redaction",
+      "session": "reprise_oraux_litterature_sil_2017_2019",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Lecture intégrale du fac-similé, commentaire de spécialité, préparation guidée et réponses pour l’entretien, rédaction et vérification du schéma."
+    }
+  ]
+}
