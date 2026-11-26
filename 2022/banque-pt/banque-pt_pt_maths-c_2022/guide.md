@@ -59,6 +59,8 @@ Si $u<v$, la stricte croissance de la bijection tangente impose $\arctan u<\arct
 
 La première courbe croît entre les asymptotes verticales $x=\pm\pi/2$ et passe par $(0,0)$ avec pente 1. Sa réflexion par rapport à $y=x$ échange chaque point $(x,\tan x)$ avec $(\tan x,x)$, donc dessine $y=\arctan x$, qui admet les asymptotes horizontales $y=\pm\pi/2$. Les points $(\pi/4,1)$ et $(1,\pi/4)$ contrôlent le dessin. La planche d’impression conserve 2 cm par unité sur chaque axe.
 
+Pour reproduire l’échelle du sujet, ouvrez le fichier SVG, puis imprimez en A4 paysage à 100 %, sans ajustement, sans marges et sans en-têtes de navigateur. Vérifiez à la règle que deux graduations entières successives sont distantes de 2 cm. [Télécharger la planche à l’échelle](https://raw.githubusercontent.com/knoel99/corriges-concours/9ff54cac1631b8c479f3ae657dbb042bbc41edc5/2022/banque-pt/banque-pt_pt_maths-c_2022/planches/trace-echelle.svg)
+
 ![Les deux graphes sont symétriques par rapport à la droite y = x. La planche séparée conserve 2 cm par unité à l’impression à 100 %.](figures/tangente-arctangente.svg)
 
 ### Question P.5

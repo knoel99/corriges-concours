@@ -105,6 +105,8 @@ $$
 
 Les deux courbes sont paires, passent par $(0,1)$ avec tangente horizontale. Les zéros de $\phi$ sont $\pm2\sqrt{3/5}$ et ceux du cosinus sont $\pm\pi/2$ sur le segment. À $\pm\pi$, $\phi$ vaut environ $-1{,}71$, le cosinus $-1$. Les courbes coïncident visuellement près de zéro puis s’écartent. I.5 fournit $\phi(x)=1-x^2/2+x^4/24-x^6/288+O(x^8)$. Pour le cosinus le coefficient en $x^6$ est $-1/720$, donc $\phi(x)-\cos x=-x^6/480+O(x^8)$. La planche d’impression reprend l’échelle de 3 cm par unité sur les deux axes.
 
+Pour reproduire l’échelle du sujet, ouvrez le fichier SVG, puis imprimez en A4 paysage à 100 %, sans ajustement, sans marges et sans en-têtes de navigateur. Vérifiez à la règle que deux graduations entières successives sont distantes de 3 cm. [Télécharger la planche à l’échelle](https://raw.githubusercontent.com/knoel99/corriges-concours/9ff54cac1631b8c479f3ae657dbb042bbc41edc5/2020/banque-pt/banque-pt_pt_maths-c_2020/planches/trace-echelle.svg)
+
 ![Cosinus et approximation rationnelle sur l’intervalle de −π à π, de même unité sur les deux axes. La planche séparée de l’archive est à imprimer à 100 %.](figures/cosinus-et-approximation.svg)
 
 ## II. Équation fonctionnelle et sinus cardinal
