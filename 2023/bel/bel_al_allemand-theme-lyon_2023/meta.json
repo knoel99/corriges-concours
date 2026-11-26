@@ -1,0 +1,151 @@
+{
+  "slug": "bel_al_allemand-theme-lyon_2023",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Allemand (thème Lyon)",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "duree_heures": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2023-09/Epreuve-de-specialite.pdf#page=10",
+    "sujet_sha256": "d646a518fbe4febf8a67e582f0310174ed455fa1f7d2c93d37f450a6420673a2",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2023-11/Allemand-2023.pdf#page=16",
+    "rapport_jury_sha256": "99014fdff00c016853394dc7aeec670ed5579ee35a8c195d63b3b27ba49e1bc2",
+    "pages_rapport_verifiees": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2023",
+    "ouvrage": "Florence Seyvos, *Une bête aux aguets* (2020).",
+    "provenance": "Sujet de spécialité, page 10. La garde du fascicule identifie les concours. La page du thème allemand donne une durée de quatre heures et interdit le dictionnaire."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2023-09/Epreuve-de-specialite.pdf#page=10",
+      "sha256": "d646a518fbe4febf8a67e582f0310174ed455fa1f7d2c93d37f450a6420673a2",
+      "pages": 20,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "d637c9f152c00d67d0ac53df6ca1a8afc6acd94775b42bc8aa249b7f1b2e0dc5"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "23197e3feb5af29cc10d3ecdefd9d1216be3f6253cf9bb7010d639a60bd3b7bd"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "a68554fedb3555e1bd727b391a1fe29804b901d41940a0d4c654fa36469bf2d4"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2023-11/Allemand-2023.pdf#page=16",
+      "sha256": "99014fdff00c016853394dc7aeec670ed5579ee35a8c195d63b3b27ba49e1bc2",
+      "pages": 38,
+      "pages_verifiees": [
+        {
+          "numero": 16,
+          "rendu_sha256": "94dfae5da631f787265e733bfb165d662df94abb6aa96bdd83eef4d7e3000646"
+        },
+        {
+          "numero": 17,
+          "rendu_sha256": "f26321ad48d7c0e1e09b24c02d5e21a1298aaa30fd0b69d36c2ffdb241420f85"
+        },
+        {
+          "numero": 18,
+          "rendu_sha256": "c8d8782c12c0c40492441ca46b3d764755470ab567bd6bc9c0d7ccdb1bc2b725"
+        },
+        {
+          "numero": 19,
+          "rendu_sha256": "11c6e4205d3ca18a1323ffeabe7a12e662f0a5e7f155ab45bda01c51bbb2c56f"
+        },
+        {
+          "numero": 20,
+          "rendu_sha256": "3722543fafbdb03be489b684cfc283075315c6fbf254ab13d8c9a1a7f5a61427"
+        },
+        {
+          "numero": 21,
+          "rendu_sha256": "8dacfa75a43242a04af0843ddcf84bd3c15f7509dd4e4f40ab4169a86b0157ef"
+        },
+        {
+          "numero": 22,
+          "rendu_sha256": "3778a5093cdaaf093a0cad6f98f97fe779dc5504c1f6c90c6e790c9b2b39ea06"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "Proposition de thème",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "Christine regarde les adultes. Au piano, la narratrice regarde Christine et l’écoute. Le complément passe de l’accusatif au datif avec le changement de verbe."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "x_hist_1986",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Traduction originale complète en allemand et guide centré sur les décisions concrètes de traduction, avec schéma."
+    },
+    {
+      "phase": "revision",
+      "agent": "x_hist_1986",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Vérification des trois paragraphes, de la chronologie scolaire, des datifs et accusatifs, des deux voix au piano et de la comparaison finale."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Florence Seyvos, *Une bête aux aguets* (2020)."
+    ],
+    "note": "Traduction pédagogique originale. Les droits sur le texte français appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Proposition de thème"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Proposition de thème",
+        "page_pdf": 10,
+        "feuillet_imprime": 10,
+        "perimetre": "Les trois paragraphes de la rencontre avec Christine au dernier souvenir de la voix maternelle."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}
