@@ -1,0 +1,233 @@
+{
+  "slug": "banque-pt_pt_langue-vivante-a_2010",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Langue vivante A",
+    "annee": 2010
+  },
+  "questions": 15,
+  "redaction": "IA (gpt-6.2-astra)",
+  "figures": [
+    {
+      "fichier": "figures/lecture-de.svg",
+      "question": "Allemand",
+      "legende": "Qu’a observé l’équipe ?"
+    },
+    {
+      "fichier": "figures/lecture-en.svg",
+      "question": "Anglais",
+      "legende": "Quels métiers rend possibles la transition ?"
+    },
+    {
+      "fichier": "figures/lecture-ar.svg",
+      "question": "Arabe",
+      "legende": "Pourquoi conserver l’écriture ?"
+    },
+    {
+      "fichier": "figures/lecture-es.svg",
+      "question": "Espagnol",
+      "legende": "Comment naît une idée scientifique ?"
+    },
+    {
+      "fichier": "figures/lecture-it.svg",
+      "question": "Italien",
+      "legende": "Ce que montre la controverse"
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "agent": "lva_pt_2325",
+      "perimetre": "Cinq versions françaises et dix réponses dans les langues des sujets, sources, commentaires et schémas par langue."
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2010/lv_a_pt_2010.pdf",
+    "sujet_sha256": "23ed8eef33fa30d02bbbed38262730c23dce6ad9834e12be38a82ba580c114ac",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2010/rapport_lv_a_ecrit_2010.pdf",
+    "rapport_sha256": "e2ef70648c1f1618fae77c1a9e4fc655cec9a7cacfad9a4c8a2dc42422c12b44",
+    "livret": "https://www.banquept.fr/documents/livret/2010/Livret_PT_2010.pdf#page=12",
+    "livret_sha256": "7cc6c6ae3007f08f1ba5351e2e64af501a4e93bef5175ed9429d5fdd34f32d00",
+    "index_sujets": "https://www.banquept.fr/article152.html",
+    "index_rapports": "https://www.banquept.fr/article153.html"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Allemand · version",
+      "Allemand · question a",
+      "Allemand · question b",
+      "Anglais · version",
+      "Anglais · question a",
+      "Anglais · question b",
+      "Arabe · version",
+      "Arabe · question a",
+      "Arabe · question b",
+      "Espagnol · version",
+      "Espagnol · question a",
+      "Espagnol · question b",
+      "Italien · version",
+      "Italien · question a",
+      "Italien · question b"
+    ],
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "23ed8eef33fa30d02bbbed38262730c23dce6ad9834e12be38a82ba580c114ac",
+      "perimetre": "Cinq versions françaises et dix réponses dans les langues des sujets, sources, commentaires et schémas par langue.",
+      "controles": [
+        {
+          "nom": "Allemand",
+          "titre": "Kann Handystrahlung Alzheimer verhindern?",
+          "pages_sujet": [
+            2,
+            3
+          ],
+          "pages_rapport": [
+            1,
+            2
+          ],
+          "origine": "Die Zeit, janvier 2010, pages 2–3. La version est page 2. Le rapport allemand occupe les pages 1–2. Il invite à répondre à la question personnelle posée et à organiser le développement.",
+          "bornes_version": "De « In wie weit die Handystrahlung gesundheitsschädlich ist » à « sieben bis neun Monate lang ».",
+          "consignes": [
+            "Was passiert genau, wenn die Mäuse Handystrahlungen bekommen? Was denken Sie darüber?",
+            "Würden Sie ohne Telefon leben können? Warum?"
+          ],
+          "compte_mots": [
+            90,
+            221
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-de.svg"
+        },
+        {
+          "nom": "Anglais",
+          "titre": "Wanted: green engineers",
+          "pages_sujet": [
+            4,
+            5
+          ],
+          "pages_rapport": [
+            3,
+            4,
+            5
+          ],
+          "origine": "The Economist, 13 novembre 2009, pages 4–5. La version porte sur deux passages discontinus en gras, dont le dernier paragraphe page 5. Rapport anglais, pages 3–5 du PDF.",
+          "bornes_version": "Deux extraits à traduire, de « The nuclear industry » à « designers and engineers », puis de « It’s all very well » à « education in engineering ».",
+          "consignes": [
+            "In what ways does green engineering provide new career opportunities?",
+            "To what extent should the work of scientists and engineers be primarily concerned with improving our living environment? Discuss."
+          ],
+          "compte_mots": [
+            87,
+            231
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-en.svg"
+        },
+        {
+          "nom": "Arabe",
+          "titre": "الكتابة أهم ما قدمه السومريون للبشرية",
+          "pages_sujet": [
+            6,
+            7
+          ],
+          "pages_rapport": [
+            6
+          ],
+          "origine": "Sara Taleb Al-Souhail, Al-Watan Al-Arabi, novembre 2009, page 6. Les bornes et les deux questions sont page 7. Rapport d’arabe, page 6 du PDF.",
+          "bornes_version": "De « الكتابة هي سجل الحياة الكامل » à « منذ العصر الإسلامي ».",
+          "consignes": [
+            "بينوا الفكرة الأساسية للنص.",
+            "تقول الكاتبة « الكتابة أدبية أم علمية، هي وسيلة للإفهام لا للإبهام ». ناقشوا هذا الرأي."
+          ],
+          "compte_mots": [
+            84,
+            208
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-ar.svg"
+        },
+        {
+          "nom": "Espagnol",
+          "titre": "Imaginación y ciencia",
+          "pages_sujet": [
+            8,
+            9
+          ],
+          "pages_rapport": [
+            7
+          ],
+          "origine": "Espéculo, mars–juillet 1997, entretien avec le physicien Antonio Fernández Rañada, pages 8–9. Rapport d’espagnol page 7 du PDF.",
+          "bornes_version": "De « Es una idea interesante » à « como la clonación ».",
+          "consignes": [
+            "Analice Usted en este texto la relación que establece el autor entre el arte (o la literatura) y la ciencia.",
+            "¿Piensa Usted que, realmente, «las emociones, costumbres y estilos» de los investigadores enriquecen su actividad científica? Justifique su opinión."
+          ],
+          "compte_mots": [
+            89,
+            226
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-es.svg"
+        },
+        {
+          "nom": "Italien",
+          "titre": "Maledetto lo spot Renault",
+          "pages_sujet": [
+            10,
+            11
+          ],
+          "pages_rapport": [],
+          "origine": "La Repubblica, mai 2009. Article, pages 10–11, version page 10. Le rapport complet publié se termine page 7 après l’espagnol. L’article 153 ne donne aucun lien de rapport écrit italien pour 2010.",
+          "bornes_version": "De « Mi è capitato » à « il nostrano Chinotto ».",
+          "consignes": [
+            "Secondo Lei, la pubblicità ha una vera influenza sulle nostre scelte?",
+            "[La pubblicità] « capta i segnali di cambiamento ». Lei pensa che la pubblicità possa essere un buon mezzo per far riflettere la gente sulla nostra società e sul suo evolversi?"
+          ],
+          "compte_mots": [
+            91,
+            213
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-it.svg"
+        }
+      ]
+    }
+  }
+}
