@@ -1,0 +1,123 @@
+{
+  "slug": "x_m-prime_premiere-composition-de-mathematiques_1995",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "M prime",
+    "filiere_historique": "M′",
+    "matiere": "Première composition de mathématiques",
+    "annee": 1995
+  },
+  "questions": 13,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-503948c7c0b48d859733",
+    "sujet_sha256": "24fe62d232eeeb365b7bc28377cbab9001fe9d87e11d6761aba5c4af329228b0",
+    "notice_ups": "m95xm1",
+    "reproduction": "https://www.sujetsetcorriges.fr/dl/X/Maths/MP/sec-x-1995-maths1-MP.pdf",
+    "reproduction_sha256": "a713dc2d68bfd4d9270debe9bf05810ec4cedc757cd4b1b2e5d9f37194a66560",
+    "calendrier": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000185476",
+    "rapport_jury": "",
+    "observation_rapport": "Aucun rapport de jury identifié dans les deux collections consultées.",
+    "provenance": "Le fac-similé UPS donne l’établissement et le rang de la composition ; la date et l’option sont rapprochées de la notice annuelle UPS classée sous MP, de la collection Sujets et Corrigés et du calendrier officiel des options M′ et P′. L’extrait reproduit ne fait pas apparaître M′ sur sa garde."
+  },
+  "figures": [
+    {
+      "question": "7.a",
+      "fichier": "figures/rectangle-de-double-integration.svg",
+      "legende": "Le rectangle intégré a pour sommets l’origine et le point étudié. Une dérivée supprime une intégration, deux dérivées mixtes restituent la donnée."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5.a",
+      "5.b",
+      "6",
+      "7.a",
+      "7.b",
+      "7.c",
+      "8",
+      "9",
+      "10"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1",
+        "page_pdf": 1
+      },
+      {
+        "question": "2",
+        "page_pdf": 2
+      },
+      {
+        "question": "3",
+        "page_pdf": 2
+      },
+      {
+        "question": "4",
+        "page_pdf": 2
+      },
+      {
+        "question": "5.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "5.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "6",
+        "page_pdf": 2
+      },
+      {
+        "question": "7.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "7.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "7.c",
+        "page_pdf": 3
+      },
+      {
+        "question": "8",
+        "page_pdf": 3
+      },
+      {
+        "question": "9",
+        "page_pdf": 3
+      },
+      {
+        "question": "10",
+        "page_pdf": 3
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "13 consignes repérées sur trois pages. Le fac-similé UPS donne l’établissement et le rang de la composition ; la date et l’option sont rapprochées de la notice annuelle UPS classée sous MP, de la collection Sujets et Corrigés et du calendrier officiel des options M′ et P′. L’extrait reproduit ne fait pas apparaître M′ sur sa garde."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "fui_physique_un",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture des trois pages, rédaction de 13 solutions et de leurs indications, vérification des démonstrations et des diagrammes."
+    }
+  ]
+}
