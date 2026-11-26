@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Sujet officiel](https://www.banquept.fr/documents/2020/info_mod_2020_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2020/rapport_info_model_ecrit_2020.pdf) · [Coefficients de la session](https://www.banquept.fr/documents/2020/Coefficients.pdf#page=1)
 
 **Microphone électrostatique et réverbération à convolution.** Épreuve de quatre heures, sans calculatrice. Le feuillet recommence sa numérotation au début de la seconde partie. M1 à M19 correspondent à la modélisation et I1 à I30 à l’informatique. Les tracés et exemples numériques ci-dessous utilisent des données calculées. Le sujet donne des figures des enregistrements audio.
@@ -253,7 +255,7 @@ def sigx(t):
 
 Tracer les données des deux fonctions dans le même repère et associer la légende à chaque courbe dès sa création.
 
-La figure ci-dessous résulte de l’appel de la fonction avec la liste des instants. On retrouve la modulation lente de $x$ et la décroissance rapide de $h$. Les couleurs, la légende et le label de l’axe des temps suivent la figure 3 et l’annexe du sujet.
+La figure ci-dessous résulte de l’appel de la fonction avec la liste des instants. On retrouve la modulation lente de $x$ et la décroissance rapide de $h$. Les couleurs, la légende et le libellé de l’axe des temps suivent la figure 3 et l’annexe du sujet.
 
 ```python
 def tracer(t):
@@ -261,11 +263,15 @@ def tracer(t):
     fig, ax = plt.subplots()
     ax.plot(t, sigx(t), color="blue", label="x(t)")
     ax.plot(t, sigh(t), color="green", label="h(t)")
-    ax.set(xlabel="temps (s)", xlim=(0, 10), ylim=(-2, 2))
-    ax.legend()
+    ax.set(xlabel="temps (s)", xlim=(0, 10), ylim=(-1.5, 2))
+    ax.set_yticks([i / 2 for i in range(-3, 5)])
+    ax.legend(loc="upper right")
     return fig, ax
 
-# En session interactive : tracer(tps), puis pyplot.show().
+if __name__ == "__main__":
+    from matplotlib import pyplot
+    tracer(tps)
+    pyplot.show()
 ```
 
 ![Figure — Signaux d’essai sur les 1 001 instants demandés](figures/signaux.svg)
@@ -278,7 +284,7 @@ Fixer un instant de sortie. Choisir les indices des bords gauches, puis ramener 
 
 Pour chaque $i$, l’équation (4) intègre de $0$ à $t_{n-1}$. Ses $n-1$ rectangles gauches donnent
 $$y_i\simeq dt\sum_{j=0}^{n-2} x_jh_{(i-j)\bmod n}.$$
-L’indexation circulaire traduit le prolongement demandé des listes. Avec des listes de taille $n$, Python permet aussi de lire directement $h[i-j]$. Pour la convolution circulaire discrète usuelle de $n$ valeurs, la somme va jusqu’à $n-1$ et couvre alors $n$ rectangles. Cette distinction reparaît à la question I14.
+L’indexation circulaire traduit le prolongement demandé des listes. Avec des listes de taille $n$, Python permet aussi de lire directement $h[i-j]$. Pour la convolution circulaire discrète usuelle de $n$ valeurs, la somme va jusqu’à $n-1$ et couvre alors $n$ rectangles. Sur trois points, pour $x=(1,2,3)$, $h=(1,0,2)$ et $dt=0{,}5$, les deux rectangles de (4) donnent $(2{,}5,1,1)$. Cette distinction reparaît à la question I14.
 
 ```python
 def convolution(x, h, t):
@@ -377,7 +383,7 @@ def produit(x, h):
 
 Poser sur le papier les deux spectres, leur produit et sa transformée inverse. Décider ensuite combien de rectangles l’intégrale considérée contient.
 
-Pour les deux listes $x$ et $h$, l’appel de la fonction ci-dessous avec le pas temporel calcule deux TFD, multiplie leurs coefficients puis applique la TFD inverse. L’orthogonalité des exponentielles donne $y_i=dt\sum_{j=0}^{n-1}x_jh_{(i-j)\bmod n}$. Pour la quadrature littérale de l’équation (4), le dernier rectangle est absent. Affecter zéro au dernier échantillon de l’entrée utilisée pour la TFD donne exactement la somme de I6. Avec des données réelles, la partie imaginaire du résultat traduit seulement l’arrondi.
+Pour les deux listes $x$ et $h$, l’appel de la fonction ci-dessous avec le pas temporel calcule deux TFD, multiplie leurs coefficients puis applique la TFD inverse. L’orthogonalité des exponentielles donne $y_i=dt\sum_{j=0}^{n-1}x_jh_{(i-j)\bmod n}$. Pour la quadrature littérale de l’équation (4), le dernier rectangle est absent. Affecter zéro au dernier échantillon de l’entrée utilisée pour la TFD donne exactement la somme de I6. Pour les signaux d’essai définis en I3–I4 et les temps de I2, l’instruction `y = convolution_tfd(x, h, tps[1] - tps[0])` donne la convolution circulaire pondérée. Sur l’exemple de I6, elle vaut $(2{,}5,4,2{,}5)$. L’option `dernier_rectangle=False` restitue $(2{,}5,1,1)$. Avec des données réelles, la partie imaginaire du résultat traduit seulement l’arrondi.
 
 ```python
 def convolution_tfd(x, h, dt=1.0, dernier_rectangle=True):
@@ -465,7 +471,7 @@ Le calcul du facteur exponentiel fait un travail constant par nœud interne, soi
 
 Lire deux temps de la même couleur pour un rapport de tailles connu. Un rapport de temps proche du carré du rapport de tailles signale une dépendance quadratique.
 
-En coordonnées logarithmiques, une croissance $t=cN^a$ a pour pente $a=\log(t_2/t_1)/\log(N_2/N_1)$. Sur la figure 7, de $N=512$ à $4096$ la taille est multipliée par huit. La convolution directe passe d’environ $0{,}17$ à $11$ s, soit une pente voisine de 2. Celle par TFD passe d’environ $1{,}8$ à $120$ s, soit également 2. La FFT passe d’environ $0{,}016$ à $0{,}15$ s, soit une pente proche de 1,08. Les lectures sont approximatives. Cette faible surlinéarité est compatible avec $N\log N$. La FFT devient largement avantageuse aux grandes tailles.
+En coordonnées logarithmiques, une croissance $t=cN^a$ a pour pente $a=\log(t_2/t_1)/\log(N_2/N_1)$. Sur la figure 7, de $N=512$ à $4096$ la taille est multipliée par huit. La convolution directe passe d’environ $0{,}17$ à $11$ s, soit une pente voisine de 2. Celle par TFD passe d’environ $1{,}8$ à $120$ s, soit également 2. La FFT passe d’environ $0{,}016$ à $0{,}15$ s, soit une pente proche de 1,08. Les lectures sont approximatives. Par exemple, $\log(11/0{,}17)/\log(8)\simeq2{,}01$. Cette faible surlinéarité est compatible avec $N\log N$. La FFT devient largement avantageuse aux grandes tailles.
 
 ## Informatique · Fichiers musicaux WAVE
 
@@ -577,7 +583,7 @@ Faire d’abord à la main la convolution de deux listes de trois valeurs. Le r�
 
 Chaque canal du signal se convolue avec le canal correspondant de la réponse impulsionnelle. Pour des longueurs $N_1$ et $N_2$, les indices de la convolution linéaire vont de 0 à $N_1+N_2-2$. Posons $K=N_1+N_2-1$. On complète chaque entrée par des zéros jusqu’à la première puissance de deux $N\ge K$. Après les FFT, le produit terme à terme et l’inverse, les $K$ premières valeurs forment la convolution entière. Les valeurs réelles des deux voies partagent la même normalisation lors de l’écriture.
 
-La page 16 prescrit aussi $N=\mathrm{nextpow2}(K)$, où I17 définit une puissance de deux **inférieure ou égale**. Pour reproduire cette convention imprimée lorsque les deux entrées tiennent dans $N$, on garde cette valeur, on complète les deux signaux et on écrit les $N$ échantillons de l’inverse. Si $N<K$, les termes d’indices $N$ et suivants se replient au début. Pour les durées indiquées, $K$ avoisine 189 100 et la figure 13 s’arrête à $131072/44100\simeq2{,}972$ s. Pour conserver toute la queue sonore demandée, le programme double la valeur trouvée en I17 si nécessaire, soit 262 144 ici, avant de revenir à $K$.
+La page 16 prescrit aussi $N=\mathrm{nextpow2}(K)$, où I17 définit une puissance de deux **inférieure ou égale**. Pour reproduire cette convention imprimée lorsque les deux entrées tiennent dans $N$, on garde cette valeur, on complète les deux signaux et on écrit les $N$ échantillons de l’inverse. Si $N<K$, les termes d’indices $N$ et suivants se replient au début. Pour les durées indiquées, $K$ avoisine 189 100 et la figure 13 s’arrête à $131072/44100\simeq2{,}972$ s. Pour conserver toute la queue sonore demandée, le programme double la valeur trouvée en I17 si nécessaire, soit 262 144 ici, avant de revenir à $K$. Dans le schéma, pour $x=h=(1,2,3)$, la convolution entière est $(1,4,10,12,9)$. Sur quatre points, sa dernière valeur se replie sur la première et donne $(10,4,10,12)$.
 
 ```python
 def extrawave_2oct(fichier):

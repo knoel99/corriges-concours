@@ -46,6 +46,8 @@ class Reverberation(unittest.TestCase):
         self.assertEqual([l.get_label() for l in ax.lines], ['x(t)', 'h(t)'])
         self.assertEqual([l.get_color() for l in ax.lines], ['blue', 'green'])
         self.assertEqual(ax.get_xlabel(), 'temps (s)')
+        self.assertEqual(ax.get_ylim(), (-1.5, 2))
+        self.proches(ax.get_yticks(), [i/2 for i in range(-3, 5)])
         plt.close(fig)
 
     def test_convolution_et_dernier_rectangle(self):

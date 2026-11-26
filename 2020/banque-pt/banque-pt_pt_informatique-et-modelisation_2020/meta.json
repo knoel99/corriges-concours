@@ -65,6 +65,22 @@
         "guide"
       ],
       "perimetre": "Réponses M1–M19 et I1–I30. Calculs électromécaniques, schémas, signaux, transformées de Fourier et implémentation stéréo WAVE éprouvée sur données synthétiques."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture du feuillet et du rapport, des 49 numéros et des annexes. Correction des bornes verticales du tracé I5, contrôle du signe de couplage et des pentes, ajout de résultats numériques vérifiés pour les rectangles, les longueurs de FFT et le repliement. Tests sur WAVE stéréo synthétiques."
     }
   ],
   "couverture": {

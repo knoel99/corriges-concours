@@ -28,11 +28,15 @@ def tracer(t):
     fig, ax = plt.subplots()
     ax.plot(t, sigx(t), color="blue", label="x(t)")
     ax.plot(t, sigh(t), color="green", label="h(t)")
-    ax.set(xlabel="temps (s)", xlim=(0, 10), ylim=(-2, 2))
-    ax.legend()
+    ax.set(xlabel="temps (s)", xlim=(0, 10), ylim=(-1.5, 2))
+    ax.set_yticks([i / 2 for i in range(-3, 5)])
+    ax.legend(loc="upper right")
     return fig, ax
 
-# En session interactive : tracer(tps), puis pyplot.show().
+if __name__ == "__main__":
+    from matplotlib import pyplot
+    tracer(tps)
+    pyplot.show()
 
 
 # Q25
