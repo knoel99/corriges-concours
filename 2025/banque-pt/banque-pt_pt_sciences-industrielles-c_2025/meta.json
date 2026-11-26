@@ -1,0 +1,617 @@
+{
+  "slug": "banque-pt_pt_sciences-industrielles-c_2025",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Sciences industrielles C",
+    "annee": 2025
+  },
+  "questions": 41,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2025/si_c_2025_pt.pdf",
+    "sujet_sha256": "52dc2f5e1a6aa7d266566d944d54f0516cad19cdbaa332f0d3b86d1c2d6941e0",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2025/rapport_si_c_ecrit_2025.pdf",
+    "rapport_sha256": "ae72e17b45bbcfdf5347ee98c5e9230fb1b96fc1b5d8284d144fdc66830b683d",
+    "lecture_rapport": "Quatre parties, barème et analyse des échecs sur l’énergie, les actions aux pivots, la précharge, la fonderie, la métrologie et les montages de la planche, p. 1–4."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2025/si_c_2025_pt.pdf",
+      "sha256": "52dc2f5e1a6aa7d266566d944d54f0516cad19cdbaa332f0d3b86d1c2d6941e0",
+      "nombre_pages": 57,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "84b817c69b5c49ae0463ce0c3ee69e27aa77e8b4a1dc264567ba806fb42e2659"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "19389036e20f9f56b8041d634def00ba4c7a84bb82e427e26f62965c80dbeb4e"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "b69ba0981bb6c8d7f484d4c731f07115a46feac851f96ac2483b5f9523ced752"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "60200aeef374eec05e849dd5ad51afbcf6763fb2c712a7388ae2c83de8da6638"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "bf875ce59114fe08b076bd4944e3f52f96322a1bebe4945fe0ffaa09d508bcc6"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "cf4250df4a53bd2603b8ef6be3af3a681367097197e3fabad68ab750be3f5a7e"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "f97d4c09c03793f54477e8670dc5f0830af45c3282f4de037eb17b80144338a8"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "98914808924288b22d9441ffa8f31010b25b2d369783d0dddc123d23395c35a9"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "7cc49b62060421e1a1183aa7274a57b4607ed004c3c6e3d37173c42217ff24b6"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "b184e86fb9975406a7edea24add2f1e86b84b0d0d4205a9be7aa970c2e0dd143"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "f64ddaafce67873dc10d62fc7ed3604f0abc0b1646325dd19615021621f0febf"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "6fc24b3f28b7e1491d6d5826645c2f2cb84e4a1ac11f1aadc6be5bfde1e24ea6"
+        },
+        {
+          "numero": 13,
+          "rendu_sha256": "0e9e92728716aefb28cfbb021f0ecf95b199aea232344b6a718a81221398026a"
+        },
+        {
+          "numero": 14,
+          "rendu_sha256": "586d24ae99f7299f7c267c212101e64bba61d73233289a00bec134183a3e7c48"
+        },
+        {
+          "numero": 15,
+          "rendu_sha256": "a67226a4195592b405eb47865ed6ebc358b345ee2b9cb6ac3a10b9a965f656b9"
+        },
+        {
+          "numero": 16,
+          "rendu_sha256": "f688fbbf5fba5a8ecdb4828aa48e6d10c1f4bfb83e3b833625353a23c3463eef"
+        },
+        {
+          "numero": 17,
+          "rendu_sha256": "508892721d10bc9a8918529fb5b5648b14cd9118d36c5d5e1b2b6e01e4694748"
+        },
+        {
+          "numero": 18,
+          "rendu_sha256": "70a93b0850f0e773a1f95ac1649994e728b48f6bc27ed7b3183be4ec1eacfdc2"
+        },
+        {
+          "numero": 19,
+          "rendu_sha256": "3811259555c2a6224c07b0c32df7260735e7b5a26c1e2d618c139abbf2647be1"
+        },
+        {
+          "numero": 20,
+          "rendu_sha256": "12eaa095a627244763c6990e10b11b7edc2be25cfd80e7924bdbec087bc01be0"
+        },
+        {
+          "numero": 21,
+          "rendu_sha256": "82ada1bc4972ef7f58bdde4a8a14b350ad50c789ecf9d3988fc5785ceafff2ca"
+        },
+        {
+          "numero": 22,
+          "rendu_sha256": "6067edf1e084549fa8c4567795b00489d8a449caeda9f3d1480fd90ab222e2d5"
+        },
+        {
+          "numero": 23,
+          "rendu_sha256": "a207374eeb18f5eeab4c9a41e2f68be2fdec7360917bcec1206f4d664281584d"
+        },
+        {
+          "numero": 24,
+          "rendu_sha256": "68b720735c185be9821d3ac280f46eef8a2579662ac1f07f2c8ca78271c41120"
+        },
+        {
+          "numero": 25,
+          "rendu_sha256": "2d1c3e72bc17d4a3a1ad78971c19d605cc451702ecc1e597ecfce456217cb2c8"
+        },
+        {
+          "numero": 26,
+          "rendu_sha256": "73754121844610b22c445a1be958eb85f3ffd1f44a9b503a8e6a8ce4b75819da"
+        },
+        {
+          "numero": 27,
+          "rendu_sha256": "162bef3230a024f1f414c02f17a43a04ffa6de56f09f06fee2e06dab385bd21d"
+        },
+        {
+          "numero": 28,
+          "rendu_sha256": "e12ec3d4f6d2d6be3f44f1cf5ded339e8f350e14aafbd3007be018c0e0e53c0c"
+        },
+        {
+          "numero": 29,
+          "rendu_sha256": "c14ee190705d00d62608205eecab20db92c54ab342fda4929ce380d2befd5d5b"
+        },
+        {
+          "numero": 30,
+          "rendu_sha256": "91a3e27819490c1e036520c7f843cc17914ae4bfaa29a5cad9d6c74cff0aa32b"
+        },
+        {
+          "numero": 31,
+          "rendu_sha256": "9fa8b93c0d4550d10eaa53a92a4cf223706d1f7ad2546fa61b95740ab5b8ddde"
+        },
+        {
+          "numero": 32,
+          "rendu_sha256": "ccf9d655387d6863545c2396b14c18a86e2a307dfe65690f041e92014dcde78d"
+        },
+        {
+          "numero": 33,
+          "rendu_sha256": "4a465e78e81ce1cf3e31ff0b77dfe513c1c0e0f1a2a098225516ccb2546ea4d2"
+        },
+        {
+          "numero": 34,
+          "rendu_sha256": "e18c11e6fb5696c347d53a87223cadb3cce8e5e5550cf3ef84adffdef10d94ed"
+        },
+        {
+          "numero": 35,
+          "rendu_sha256": "344dd77809df7ed333c9295937de5f4c98187ded3897c1afad256508a1010772"
+        },
+        {
+          "numero": 36,
+          "rendu_sha256": "344dd77809df7ed333c9295937de5f4c98187ded3897c1afad256508a1010772"
+        },
+        {
+          "numero": 37,
+          "rendu_sha256": "344dd77809df7ed333c9295937de5f4c98187ded3897c1afad256508a1010772"
+        },
+        {
+          "numero": 38,
+          "rendu_sha256": "df9cf9cc1a04c33392972825f519118d4d0f865d20f51806af823950f5510231"
+        },
+        {
+          "numero": 39,
+          "rendu_sha256": "897b5727014acccaf01010125d9ca2d666411b717e41e6edfc58a6b76db555a8"
+        },
+        {
+          "numero": 40,
+          "rendu_sha256": "439a6ce561f91fe0d375bdd462b257526827b8234bf3855694d40554fd5b6d5d"
+        },
+        {
+          "numero": 41,
+          "rendu_sha256": "0bd51ceb9a4d8541f80902d4f3322e472bb1b3b18ca4829af6eee2eea5ab9fca"
+        },
+        {
+          "numero": 42,
+          "rendu_sha256": "94cc2cf5a306f3956f07c7e708301e18fd0857ef5d0ca56838352da9c8c7a048"
+        },
+        {
+          "numero": 43,
+          "rendu_sha256": "c74103cf5e038bbd7564921791ffbc357ed2b7295e461fa59c3d34084a080185"
+        },
+        {
+          "numero": 44,
+          "rendu_sha256": "6b73b16f9119ae41a50951b4ad59b3056aae09106c84ace4f49e52e74431d0de"
+        },
+        {
+          "numero": 45,
+          "rendu_sha256": "5fb3952f8957b9f8f275c6dd28c7903103d7acfca52184792a69feec7355f2f4"
+        },
+        {
+          "numero": 46,
+          "rendu_sha256": "bc3f31b91d7073946fe2c26efbe88deab681b4f86d5a1b51551c6dc6d7e7e9d6"
+        },
+        {
+          "numero": 47,
+          "rendu_sha256": "c88489b957674b882b82db4e203e7f6e0a60c5a5a27f89dd3bd6d21080e4db0c"
+        },
+        {
+          "numero": 48,
+          "rendu_sha256": "23c9e2aceb05c9af95777051fa19abac7c38d89060165d3e65a6ab290a2d8f23"
+        },
+        {
+          "numero": 49,
+          "rendu_sha256": "5c488e2b31b75104764e316892dbbea48c3e03a060239381274f6d8ae1cd559e"
+        },
+        {
+          "numero": 50,
+          "rendu_sha256": "552a94951e5a5c1b6b4dc1de663332ac11cd3be1316c15cd5d2f5168a552a380"
+        },
+        {
+          "numero": 51,
+          "rendu_sha256": "e1c3c5fa98fafb73f3aa2bf5e41c5e719acaf35d0b87c93cdcd7f4f83bc48f35"
+        },
+        {
+          "numero": 52,
+          "rendu_sha256": "aba3f2f8e3f49404336a780275805c457b5a19c355eb62698c4c57743e6fe1a5"
+        },
+        {
+          "numero": 53,
+          "rendu_sha256": "01b95b99e5194b762fb27fc1fc28bd37787d79d3314af6b3b2bbe427003788ed"
+        },
+        {
+          "numero": 54,
+          "rendu_sha256": "944976370856bd3db70a301a377f1245cd718884d56e5a875fe52c6c6a02fb90"
+        },
+        {
+          "numero": 55,
+          "rendu_sha256": "fc3f6010ac6746e0e19404494b1f171ee4ac2167bb1919f29c05278368db41b1"
+        },
+        {
+          "numero": 56,
+          "rendu_sha256": "0875efae401f5c788e485eb07293b965f4876e582c46e865a3c5c7ad2629c94b"
+        },
+        {
+          "numero": 57,
+          "rendu_sha256": "b72b235e3f6169de012dcf99a7c413378516d5f6f08957b8f2048d812f327fa4"
+        }
+      ],
+      "echelle_rendu": 0.6
+    },
+    "rapport_jury": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2025/rapport_si_c_ecrit_2025.pdf",
+      "sha256": "ae72e17b45bbcfdf5347ee98c5e9230fb1b96fc1b5d8284d144fdc66830b683d",
+      "nombre_pages": 4,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "718f93e2c8fa610d0185d16264b8e2ceac185da2d41b71b9f6db981874e75298"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "33425dedee45d5fec9a701a950a79d7736132d6ed9a27421753b90694219d69c"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "746b62c3a43b52f4b0d2ebb8a99cc9612598564357c3d004a5fb778c95a53395"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "6af58a411ad4b6e2eceee9de9fb71187ed2dab7975f0610708f99740e9aa9c24"
+        }
+      ],
+      "echelle_rendu": 0.6
+    }
+  },
+  "date_revision": "2026-11-26",
+  "figures": [
+    {
+      "fichier": "figures/pale.svg",
+      "question": "II.4",
+      "legende": "Actions projetées sur une pale, points O, G et A."
+    },
+    {
+      "fichier": "figures/filiere.svg",
+      "question": "III.3",
+      "legende": "Sortie de filière, deux noyaux et nervure centrale."
+    },
+    {
+      "fichier": "figures/moule.svg",
+      "question": "III.6",
+      "legende": "Moule en coupe, empreinte, alimentation, évent et gravité."
+    },
+    {
+      "fichier": "figures/usinage.svg",
+      "question": "III.11",
+      "legende": "Axes minimaux en fraisage et en tournage, puis trajets des arêtes."
+    },
+    {
+      "fichier": "figures/metrologie.svg",
+      "question": "III.15",
+      "legende": "Construction des extrémités et contrôle des deux distances radiales."
+    },
+    {
+      "fichier": "figures/pivot.svg",
+      "question": "IV.1",
+      "legende": "Coupe du pivot et trajet de l’effort de serrage."
+    },
+    {
+      "fichier": "figures/rotor.svg",
+      "question": "IV.2",
+      "legende": "Coupe longitudinale du guidage et des barrières d’étanchéité."
+    },
+    {
+      "fichier": "figures/piston.svg",
+      "question": "IV.2",
+      "legende": "Piston en position repos, course, rappel, butée et maintien de l’ogive."
+    }
+  ],
+  "contributions": [
+    {
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "session": "banque_pt_si_c_hydrogenerateur_vitirover_2025",
+      "phase": "redaction",
+      "perimetre": "41 réponses et indications, documents ressources I à XV, tableaux GPS, coupes fonctionnelles et réponses graphiques. Dessin A3 et feuille de pivot sur les fonds originaux."
+    },
+    {
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "session": "banque_pt_si_c_hydrogenerateur_vitirover_2025",
+      "phase": "relecture_corrige",
+      "perimetre": "Contrôle des lectures graphiques, de l’effort sur trois pales, de la compatibilité du ressort aux deux extrémités, de la référence conique, des axes machines, du réglage des paliers et de la course du piston. Relecture des deux éditions et vérification des signets et illustrations.",
+      "tour": 1
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7",
+      "I.8",
+      "I.9",
+      "I.10",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "II.8",
+      "II.9",
+      "II.10",
+      "II.11",
+      "II.12",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7",
+      "III.8",
+      "III.9",
+      "III.10",
+      "III.11",
+      "III.12",
+      "III.13",
+      "III.14",
+      "III.15",
+      "III.16",
+      "III.17",
+      "IV.1",
+      "IV.2"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "I.1",
+        "page_pdf": 4,
+        "traitement": "Autonomie de quarante-huit heures"
+      },
+      {
+        "question": "I.2",
+        "page_pdf": 4,
+        "traitement": "Association des cellules"
+      },
+      {
+        "question": "I.3",
+        "page_pdf": 4,
+        "traitement": "Énergie du parc retenu"
+      },
+      {
+        "question": "I.4",
+        "page_pdf": 5,
+        "traitement": "Durée de production quotidienne"
+      },
+      {
+        "question": "I.5",
+        "page_pdf": 5,
+        "traitement": "Masses au départ et complémentarité"
+      },
+      {
+        "question": "I.6",
+        "page_pdf": 5,
+        "traitement": "Conversion et stockage"
+      },
+      {
+        "question": "I.7",
+        "page_pdf": 5,
+        "traitement": "Puissance de la veine d’eau"
+      },
+      {
+        "question": "I.8",
+        "page_pdf": 6,
+        "traitement": "De la limite de Betz aux bornes électriques"
+      },
+      {
+        "question": "I.9",
+        "page_pdf": 6,
+        "traitement": "Calage variable"
+      },
+      {
+        "question": "I.10",
+        "page_pdf": 6,
+        "traitement": "Puissance plafonnée"
+      },
+      {
+        "question": "II.1",
+        "page_pdf": 7,
+        "traitement": "Course de la commande"
+      },
+      {
+        "question": "II.2",
+        "page_pdf": 7,
+        "traitement": "Effort du vérin"
+      },
+      {
+        "question": "II.3",
+        "page_pdf": 8,
+        "traitement": "Position de sécurité et préactionneur"
+      },
+      {
+        "question": "II.4",
+        "page_pdf": 8,
+        "traitement": "Actions sur une pale"
+      },
+      {
+        "question": "II.5",
+        "page_pdf": 8,
+        "traitement": "Équilibre de la pale"
+      },
+      {
+        "question": "II.6",
+        "page_pdf": 8,
+        "traitement": "Précharge de rappel"
+      },
+      {
+        "question": "II.7",
+        "page_pdf": 9,
+        "traitement": "Raideur idéale"
+      },
+      {
+        "question": "II.8",
+        "page_pdf": 9,
+        "traitement": "Choix du ressort de catalogue"
+      },
+      {
+        "question": "II.9",
+        "page_pdf": 9,
+        "traitement": "Couple de l’emmanchement"
+      },
+      {
+        "question": "II.10",
+        "page_pdf": 9,
+        "traitement": "Pression normale et effort axial"
+      },
+      {
+        "question": "II.11",
+        "page_pdf": 9,
+        "traitement": "Sollicitation du bout d’arbre"
+      },
+      {
+        "question": "II.12",
+        "page_pdf": 9,
+        "traitement": "Résistance"
+      },
+      {
+        "question": "III.1",
+        "page_pdf": 10,
+        "traitement": "Chape en tôle"
+      },
+      {
+        "question": "III.2",
+        "page_pdf": 10,
+        "traitement": "Développé de pliage"
+      },
+      {
+        "question": "III.3",
+        "page_pdf": 10,
+        "traitement": "Filière à deux chambres"
+      },
+      {
+        "question": "III.4",
+        "page_pdf": 10,
+        "traitement": "Usiner ou mouler le chapeau"
+      },
+      {
+        "question": "III.5",
+        "page_pdf": 11,
+        "traitement": "Moulage en sable par gravité"
+      },
+      {
+        "question": "III.6",
+        "page_pdf": 11,
+        "traitement": "Coupe des demi-moules"
+      },
+      {
+        "question": "III.7",
+        "page_pdf": 11,
+        "traitement": "Trois détails de la coupe A–A"
+      },
+      {
+        "question": "III.8",
+        "page_pdf": 11,
+        "traitement": "Renseigner les trois fiches GPS"
+      },
+      {
+        "question": "III.9",
+        "page_pdf": 11,
+        "traitement": "Besoins fonctionnels"
+      },
+      {
+        "question": "III.10",
+        "page_pdf": 11,
+        "traitement": "Priorité du plan et du centrage"
+      },
+      {
+        "question": "III.11",
+        "page_pdf": 12,
+        "traitement": "Moyens et axes"
+      },
+      {
+        "question": "III.12",
+        "page_pdf": 12,
+        "traitement": "Dressage et alésage conique"
+      },
+      {
+        "question": "III.13",
+        "page_pdf": 12,
+        "traitement": "Mise en position pour la reprise"
+      },
+      {
+        "question": "III.14",
+        "page_pdf": 12,
+        "traitement": "Critique de gamme"
+      },
+      {
+        "question": "III.15",
+        "page_pdf": 13,
+        "traitement": "Segment réel de contrôle"
+      },
+      {
+        "question": "III.16",
+        "page_pdf": 13,
+        "traitement": "Construire les extrémités sur MMT"
+      },
+      {
+        "question": "III.17",
+        "page_pdf": 13,
+        "traitement": "Critère de décision"
+      },
+      {
+        "question": "IV.1",
+        "page_pdf": 14,
+        "traitement": "Pivot démontable du mâtereau"
+      },
+      {
+        "question": "IV.2",
+        "page_pdf": 14,
+        "traitement": "Assemblage axial du bulbe, du piston et de l’ogive"
+      }
+    ]
+  }
+}
