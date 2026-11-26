@@ -153,6 +153,8 @@ $$\dot x=L_7\cos u\,(\dot\theta_4+\dot\theta_6)+(-L_6s_4+L_5c_4)\dot\theta_4,$$
 $$\dot y=L_7\sin u\,(\dot\theta_4+\dot\theta_6)+(L_6c_4+L_5s_4)\dot\theta_4,\qquad \dot z=0.$$
 Pour remplir **la forme imprimée**, dont la première ligne utilise $\dot\theta_6-\dot\theta_4$, il faut $f_1=L_7\cos u$, $f_2=2L_7\cos u-L_6s_4+L_5c_4$, $f_3=L_7\sin u$, $f_4=L_6c_4+L_5s_4$. En développant ce regroupement, on retrouve la dérivée directe.
 
+![Figure 3 — Cahier 7. Coefficients de vitesse dans la forme factorisée imposée.](figures/facteurs.svg)
+
 ### Q15 — Action d’une matrice antisymétrique
 
 *Énoncé, feuillet 12 · cahier, page 7.*
@@ -182,7 +184,7 @@ L’unité est le radian par seconde.
 
 $x_3=0$ et $z_3=0$. Le TCP suit la droite $O_3y_3$. Sa coordonnée $y_3$ descend jusqu’à environ $-610$ mm vers 0,4 s, puis repart en sens inverse. Sa vitesse sur cet axe change de signe. Les courbes d’angle du feuillet 13 portent « rad », mais la variation de W1, voisine de 210 unités en 0,92 s à 4 rad/s, correspond à environ 210 **degrés**. On lit W1 d’environ $-90°$ à $+120°$, aux limites du tableau. E1 descend d’environ $+30°$ à $-40°$, sous sa butée de $-3°$. Les vitesses respectent leurs limites, $|\dot\theta_4|$ atteint environ 1,5 à 1,6 rad/s pour 2 permis et $\dot\theta_6=4$ rad/s pour 4 permis. La trajectoire complète est donc incompatible avec la butée du coude.
 
-![Figure 3 — Feuillet 13. Franchissement de la butée inférieure du coude.](figures/butee.svg)
+![Figure 4 — Feuillet 13. Franchissement de la butée inférieure du coude.](figures/butee.svg)
 
 ## 2 — Ressort et asservissement en couple
 
@@ -204,7 +206,7 @@ En N et mm, $G=220000/[2(1+0{,}3)]=84615$ MPa et la contrainte admissible vaut $
 
 On assimile la croix à deux voiles minces identiques en parallèle, en négligeant leur petite zone commune et les effets locaux de jonction. La contrainte maximale dans chacun obéit à la même loi en $t,G,\theta,L$ donc $L_{\rm cross,min}=L=63{,}46$ mm. La raideur totale est $2h_{\rm cross}t^3G/(3L)$, d’où $h_{\rm cross}=h/2=83{,}33$ mm et $h_{\rm cross}/t\simeq56$. Le couple de chaque voile est de 7,5 N·m à la torsion maximale. On divise par deux la largeur maximale de la section en conservant la longueur et la raideur. La nouvelle section occupe aussi de la place dans la seconde direction transverse.
 
-![Figure 4 — Feuillet 16. Dimensions du ressort à section en croix.](figures/croix.svg)
+![Figure 5 — Feuillet 16. Dimensions du ressort à section en croix.](figures/croix.svg)
 
 ### Q20 — Bilan des moments sur l’inertie
 
@@ -235,7 +237,7 @@ En Laplace, $(J_mp^2+k_s)\Theta_m=C_m+k_s\Theta_l$. En reportant dans $C_l$, il 
 $$H_m=\frac{k_s}{J_mp^2+k_s}=\frac{1}{1+p^2/\omega_0^2},\qquad H_l=\frac{k_sJ_mp^2}{J_mp^2+k_s}=\frac{ap^2}{1+p^2/\omega_0^2}.$$
 Ainsi $\omega_0=\sqrt{k_s/J_m}$ et $a=J_m$. Le bloc $H_l$ a un numérateur positif. L’entrée supérieure du sommateur porte le signe moins.
 
-![Figure 5 — Feuillet 17. Gains des deux branches et signe de la voie de charge.](figures/sea.svg)
+![Figure 6 — Cahier 11. Gains des deux branches et signe de la voie de charge.](figures/sea.svg)
 
 ### Q23 — Réponse du ressort lorsque la sortie est bloquée
 
@@ -307,7 +309,7 @@ Pour $K_i>0$ et $K_d$ finis, $K_d/K_i$ est une constante. Le membre $1/\omega^2$
 
 Pour le réglage des pôles envisagé, $\Im Z=|Z|\sin(\arg Z)$. La phase de $\tau_i=0{,}08$ s reste sur ou sous 0° dans la plage représentée, conformément au critère de stabilité au contact. Pour $0{,}2$ s, elle dépasse 0°, par exemple vers 3 à 4 rad/s. L’impédance a alors une partie imaginaire positive. Ce réglage perd la garantie de stabilité en contact avec tout environnement. La courbe de phase complète le contrôle des pôles présupposé dans la question.
 
-![Figure 6 — Feuillet 19. Excursion positive de la phase pour la constante de 0,2 s.](figures/phase.svg)
+![Figure 7 — Feuillet 19. Excursion positive de la phase pour la constante de 0,2 s.](figures/phase.svg)
 
 ### Q30 — Anticipation de consigne de couple
 
@@ -329,7 +331,7 @@ Le réglage $K_{ff}=1$ annule l’écart en régime permanent dans ce modèle.
 
 Le saut de 0 à 1 N·m a lieu à 0,050 s. Le premier maximum est d’environ 1,30 N·m, soit 30 % pour 40 % permis. La sortie entre durablement dans la bande 0,95 à 1,05 N·m vers 0,074 à 0,076 s, soit environ 25 ms après la demande pour 40 ms permis. Elle rejoint la consigne de 1 N·m. La perturbation à 0,100 s provoque un creux puis un retour à la même valeur. L’erreur statique lue est nulle et les trois exigences sont satisfaites.
 
-![Figure 7 — Feuillet 20. Bande à cinq pour cent et premier maximum du couple.](figures/couple.svg)
+![Figure 8 — Feuillet 20. Bande à cinq pour cent et premier maximum du couple.](figures/couple.svg)
 
 ## 3 — Modèle électrique et asservissement de courant
 
@@ -407,7 +409,7 @@ Les tensions comprennent les chutes résistives, les dérivées de flux et les t
 
 On obtient $v_{d1}=Ri_d+L\dot i_d$ et $v_{q1}=Ri_q+L\dot i_q$. Aux conditions initiales nulles, les deux grands blocs ont le même contenu $I_d/V_{d1}=I_q/V_{q1}=1/(R+Lp)=(1/R)/(1+\tau p)$, avec $\tau=L/R$. Le troisième bloc, de $I_q$ à $C_m$, porte le gain $P\phi_f$, car $C_m=P\phi_f i_q$.
 
-![Figure 8 — Cahier 19. Les trois blocs complétés sur le gabarit du sujet.](figures/decouplage.svg)
+![Figure 9 — Cahier 19. Les trois blocs complétés sur le gabarit du sujet.](figures/decouplage.svg)
 
 ### Q40 — Effet du correcteur proportionnel de courant
 
@@ -447,7 +449,7 @@ Avec $T_i=\tau=L/R$, la boucle ouverte est $K_p/(Lp)$ et la boucle fermée $1/(1
 
 Les deux courbes finissent à 1 A et restent sous cette valeur. Le premier dépassement est nul et aucun écart statique n’est visible. Le saut a lieu à 2 ms. À 0,95 A les intersections se lisent vers 6,5 à 6,7 ms pour la courbe bleue et 7,0 à 7,2 ms pour la courbe rouge. Les durées correspondantes sont donc environ 4,6 et 5,1 ms. Les deux appartiennent à l’intervalle exigé de 4 à 6 ms.
 
-![Figure 9 — Feuillet 24. Seuil de 0,95 A sur les deux réponses simulées.](figures/courant.svg)
+![Figure 10 — Feuillet 24. Seuil de 0,95 A sur les deux réponses simulées.](figures/courant.svg)
 
 ## 4 — Point de fonctionnement du coude
 
@@ -462,7 +464,7 @@ On isole avant-bras, outil et pièce. Au point horizontal et à vitesse angulair
 $$C_{E1}=g[m_{ab}L_a+m_{op}(L_a+L_b+L_c)]=9{,}81(9\times0{,}35+2\times0{,}65)=43{,}65\ {\rm N\,m}.$$
 La valeur approchée avec $g=10$ vaut 44,5 N·m. Le maximum de 50 N·m du motoréducteur couvre ce point, avec environ 6,35 N·m de marge à $g=9{,}81$.
 
-![Figure 10 — Feuillet 25. Forces de pesanteur aux deux centres de gravité.](figures/charges.svg)
+![Figure 11 — Feuillet 25. Forces de pesanteur aux deux centres de gravité.](figures/charges.svg)
 
 ### Q45 — Pulsation au point de fonctionnement
 
@@ -491,7 +493,7 @@ En posant $\underline I=I_d+jI_q$, le produit donne $R I_d-\omega_sL I_q+j(R I_q
 
 Pour $I_d=0$ et un couple moteur positif, $\underline I=jI_q$ pointe vers $+q$. Les vecteurs $\underline E$ et $R\underline I$ sont verticaux vers le haut. Le vecteur $j\omega_sL\underline I=-\omega_s L I_q$ pointe vers $-d$. En les reportant bout à bout, on obtient $\underline V$ dans le deuxième quadrant. Ses projections sont $-\omega_s L I_q$ et $\omega_s\phi_f+RI_q$.
 
-![Figure 11 — Cahier 23. Addition des trois tensions dans le plan direct-quadrature.](figures/fresnel.svg)
+![Figure 12 — Cahier 23. Addition des trois tensions dans le plan direct-quadrature.](figures/fresnel.svg)
 
 ### Q48 — Courant en quadrature
 
