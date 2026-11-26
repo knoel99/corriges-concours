@@ -4,11 +4,15 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Fascicule officiel](https://www.ens-rennes.fr/medias/fichier/sujets-oraux-anglais-d-e-2026_1793377266315-pdf) · [Rapport du jury](https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-anglais-oral-2026_1793640944998-pdf)
 
 ## Préparer le passage
 
 Le rapport donne vingt minutes de préparation, puis quinze minutes devant le jury, échange compris. Pour s'entraîner, on peut consacrer huit minutes à la lecture et aux notes, sept au plan et cinq à la reformulation orale. Le résumé fait entendre les acteurs, la thèse et les faits qui la portent. L'analyse commence au moment où l'on pose sa propre question sur ces faits. Les relances ci-dessous sont des exercices. Le jury peut aussi demander une courte traduction.
+
+**Repère du fascicule.** Chaque sujet anglais se poursuit sur une deuxième page. La fin du premier formule des questions sur l’énergie. Celle du deuxième propose des exemples de gestion urbaine. Celle du troisième introduit les demandes de bourse de familles dont les revenus peuvent sembler élevés. Prévoir dans chaque résumé la place de cette dernière étape.
 
 ## Sujet 1 — The different prices of an AI breakthrough
 
