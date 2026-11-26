@@ -1,0 +1,151 @@
+{
+  "slug": "x-ens_psi_physique-psi_2015",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Physique PSI",
+    "annee": 2015
+  },
+  "intitule": "Convertisseur pour table à induction",
+  "questions": 62,
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "reprise_physique_ulm",
+      "session": "reprise_physique_ulm",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": false,
+      "perimetre": "Identification du rapport 2015 par la description du sujet. Contrôle des phases du courant, du spectre de puissance et des constantes de temps thermiques."
+    },
+    {
+      "phase": "redaction",
+      "agent": "reprise_physique_ulm",
+      "session": "reprise_physique_ulm",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Résolution des 62 questions énumérées et réalisation de 6 figures."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.alloschool.com/assets/documents/course-252/x-ens-psi-2015-physique-epreuve.pdf",
+    "sujet_sha256": "204cb8cfe4a1e0f49936f4678a1814264810c886209af11ab3ce2406caac208d",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2017_RE_1A_PSI_Physique.pdf",
+    "rapport_sha256": "3ba16443d216e969a5f399b8b4c339f855465a94373aa4723c73e74213d8c6b1",
+    "garde": "Banque commune X–InterENS · écrit commun de physique PSI · 4 heures",
+    "provenance_sujet": "PDF ouvert, Fac-similé du sujet publié par AlloSchool",
+    "rapport_observation": "Le nom de fichier contient 2017. La page de titre et les six parties sur la table à induction rattachent son contenu à la session 2015."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I.1.2",
+      "fichier": "figures/pleine.svg",
+      "legende": "Tensions et courants de pleine onde pour un courant en retard de 30 degrés."
+    },
+    {
+      "numero": 2,
+      "question": "II.1 à II.3",
+      "fichier": "figures/decalee.svg",
+      "legende": "Commande décalée de 60 degrés et déphasage de charge de −30 degrés."
+    },
+    {
+      "numero": 3,
+      "question": "II.8 et III.2",
+      "fichier": "figures/reponses.svg",
+      "legende": "Distorsion de la tension, résonance en courant et phase de la charge pour Q = 5."
+    },
+    {
+      "numero": 4,
+      "question": "III.8, III.9 et VI.1",
+      "fichier": "figures/conduction.svg",
+      "legende": "Ondes pour un courant en avance ou en retard. Les courants de transistor et de diode sont comptés dans leurs sens passants."
+    },
+    {
+      "numero": 5,
+      "question": "V.8",
+      "fichier": "figures/thermique.svg",
+      "legende": "Échauffement calculé à partir des deux nœuds thermiques après un échelon de puissance."
+    },
+    {
+      "numero": 6,
+      "question": "VI.2 et VI.3",
+      "fichier": "figures/pertes.svg",
+      "legende": "Puissance au cours d’une commutation et pertes moyennes dans la plage de fréquence étudiée."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1.1",
+      "I.1.2",
+      "I.1.3",
+      "I.1.4",
+      "I.1.5.a",
+      "I.1.5.b",
+      "I.1.6",
+      "I.1.7",
+      "I.1.8",
+      "I.1.9",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "II.8",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7",
+      "III.8",
+      "III.9",
+      "III.10",
+      "IV.1",
+      "IV.2",
+      "IV.3",
+      "IV.4",
+      "IV.5",
+      "IV.6",
+      "IV.7",
+      "V.1.a",
+      "V.1.b",
+      "V.2",
+      "V.3",
+      "V.4",
+      "V.5",
+      "V.6",
+      "V.7",
+      "V.8",
+      "V.9",
+      "V.10",
+      "V.11.1",
+      "V.11.2",
+      "V.11.3",
+      "V.11.4",
+      "V.11.5",
+      "V.11.6",
+      "V.11.7",
+      "V.11.8",
+      "V.11.9",
+      "V.12",
+      "V.13",
+      "V.14",
+      "V.15",
+      "VI.1",
+      "VI.2",
+      "VI.3"
+    ]
+  }
+}
