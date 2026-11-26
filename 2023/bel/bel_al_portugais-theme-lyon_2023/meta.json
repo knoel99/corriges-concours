@@ -1,0 +1,83 @@
+{
+  "slug": "bel_al_portugais-theme-lyon_2023",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Portugais (thème Lyon)",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "duree_heures": 4,
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2023-09/Epreuve-de-specialite.pdf#page=16",
+    "sujet_sha256": "d646a518fbe4febf8a67e582f0310174ed455fa1f7d2c93d37f450a6420673a2",
+    "pages_pdf_sujet": [
+      16
+    ],
+    "pages_fascicule": 20,
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2023-11/Portugais-2023.pdf#page=7",
+    "sha256_rapport_jury": "8aab268627bedbe4c9b32085b5d47e25c39a371930025c1d2e33a258b1db314b",
+    "pages_rapport_verifiees": [
+      7,
+      8
+    ],
+    "ouvrage": "Annie Ernaux, La Place (1983)",
+    "etablissements_figurant_sur_la_garde": "ENS de Lyon",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2023"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/chronologie-et-memoire.svg",
+      "question": "Thème intégral en portugais",
+      "legende": "Les trois temps de la mémoire dans La Place"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Thème intégral en portugais"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ]
+  },
+  "contributions": [
+    {
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "phase": "redaction",
+      "perimetre": "Thème intégral en portugais, variantes et schéma de lecture."
+    },
+    {
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "perimetre": "Contrôle de la désignation du concours, du sens du reproche sur la lenteur de la leçon et du référent des lignes à numéroter. Vérification des points de vue temporels de la retraite et de la remémoration."
+    }
+  ]
+}
