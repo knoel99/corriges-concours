@@ -38,7 +38,7 @@
     "rapport_sha256": "a2cc761c83baffd16c4cf7f9f881721b91f9ec51780e6b994d03b97752ff75b6",
     "sujet_psi_sha256": "6a489ee22dd9acf0be399f826775540f9617d0e0f5eec30562b4c848aceb8266"
   },
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "revision": {
     "date": "2026-11-22",
     "modele": "Codex (GPT-6)",
@@ -102,6 +102,31 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Confrontation des deux volets du graphique Pew. Différenciation de la pluralité et de la majorité absolue, datation du terrain, estimation mondiale des projets en attente de raccordement et distinction entre tarif, facture et part des revenus."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "session": "fin_langues_x_interens",
+      "agent": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Collation des deux éditions avec la garde, les quatre documents de synthèse et l’éditorial. Vérification des longueurs (667 et 565 mots), du titre et du document visuel de la page 8 du PDF. La reconversion de centrales, les stratégies énergétiques et le projet de mine de lithium au Nevada sont confrontés aux deux questions de Pew sur le solaire et l’éolien. La réponse distingue le tarif de l’électricité en Californie et son poids dans le revenu des ménages.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ],
+    "precision": "La garde du sujet fixe les deux exercices. Le brut et le guidé donnent la même synthèse titrée des documents 1 à 4 (667 mots hors titre) et la même réponse argumentée au document 5 (565 mots). Comptage par espaces dans les deux copies. Document visuel à la page 8 du PDF, texte d’opinion à partir de la page 9. La reconversion de centrales, les stratégies énergétiques et le projet de mine de lithium au Nevada sont confrontés aux deux questions de Pew sur le solaire et l’éolien. La réponse distingue le tarif de l’électricité en Californie et son poids dans le revenu des ménages."
+  }
 }
