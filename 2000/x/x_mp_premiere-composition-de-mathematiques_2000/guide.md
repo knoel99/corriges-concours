@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Les trois premières parties portent sur une équation triangulaire de séries entières à terme de convolution. La dernière étudie une équation différentielle singulière et distingue l’analyticité de la régularité indéfinie en zéro.
 
 ## I. Majorations pour les séries entières

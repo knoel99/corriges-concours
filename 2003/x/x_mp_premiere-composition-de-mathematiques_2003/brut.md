@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’inversion d’un opérateur de Volterra construit deux solutions oscillantes d’une équation différentielle. Le développement à l’infini de l’une d’elles conduit à une série dont le rayon dépend du paramètre complexe.
 
 ## I. Inversion d’un opérateur intégral

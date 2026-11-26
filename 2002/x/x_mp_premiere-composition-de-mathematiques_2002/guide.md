@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La moyenne minimise l’écart quadratique et les médianes minimisent l’écart absolu. Les quatre parties précisent la différence entre les deux critères, le rôle des masses ponctuelles et le comportement des médianes pour la convergence en moyenne.
 
 ## I. Écarts quadratiques et moyenne

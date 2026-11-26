@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Une même équation différentielle apparaît sous forme de série entière puis comme équation radiale sur le demi-plan de Poincaré. Les puissances de nombres positifs utilisent le logarithme réel, même lorsque le paramètre est complexe.
 
 ## I. Série entière et équation différentielle
