@@ -1021,6 +1021,8 @@ Les alizés entretiennent normalement une accumulation d’eau chaude dans l’o
 
 Au large du Pérou, la couche d’eau chaude s’épaissit. Une remontée d’eau côtière peut subsister, mais elle puise alors dans des eaux plus chaudes, ce qui favorise le réchauffement de surface. C’est la **perturbation** qui traverse le bassin à la célérité $c$ : les particules d’eau ne parcourent pas toutes cette distance avec l’onde.
 
+On peut aussi vérifier le guidage équatorial avec les équations de Q32. Sur la branche de Kelvin, $v=0$ et $\omega=ck_x$ donnent $u=g\eta/c$ pour $k_x\ne0$. L’équilibre méridien impose alors $g\,\mathrm d\eta/\mathrm dy=-\beta yu$, soit $\eta(y)=\eta(0)\exp[-\beta y^2/(2c)]$. La perturbation qui se déplace vers l’est reste ainsi concentrée de part et d’autre de l’équateur sur une largeur caractéristique $\sqrt{c/\beta}$.
+
 ## Bilan
 
 **Méthodes à retenir.**
@@ -1040,5 +1042,3 @@ Au large du Pérou, la couche d’eau chaude s’épaissit. Une remontée d’ea
 **Questions classiques transposables.** La chaîne monoatomique et sa coupure (Q1–7) reviennent très souvent, de même que la chaîne diatomique (branches acoustique et optique). Les ondes en eau peu profonde ($c=\sqrt{gH}$) et la force de Coriolis à la latitude $\hat\ell$ sont des classiques. Pour les ondes de Rossby courtes de la Q35, crêtes et paquet se déplacent en sens opposés.
 
 Le rapport 2026 constate que « La majorité des candidats n'a traité qu'un peu moins de la moitié des questions proposées. » Sur ce sujet, les blocs Q1–13 et Q22–30 constituent un socle sûr à traiter vite.
-
-On peut aussi vérifier le guidage équatorial avec les équations de Q32. Sur la branche de Kelvin, $v=0$ et $\omega=ck_x$ donnent $u=g\eta/c$ pour $k_x\ne0$. L’équilibre méridien impose alors $g\,\mathrm d\eta/\mathrm dy=-\beta yu$, soit $\eta(y)=\eta(0)\exp[-\beta y^2/(2c)]$. La perturbation qui se déplace vers l’est reste ainsi concentrée de part et d’autre de l’équateur sur une largeur caractéristique $\sqrt{c/\beta}$.
