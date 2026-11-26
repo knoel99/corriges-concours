@@ -1,0 +1,256 @@
+{
+  "slug": "x_ta_premiere-epreuve-de-mathematiques_1987",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "TA",
+    "annee": 1987,
+    "matiere": "Première épreuve de mathématiques",
+    "modalite": "écrit"
+  },
+  "intitule": "Première épreuve de mathématiques · concours commun Mines-Ponts · X option T.A.",
+  "questions": 28,
+  "duree_heures": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-d05c8e57f22779798fce",
+    "sujet_sha256": "3027fa0c18cabf9af4a736b003326fe02c9679d11ceace61114e103dd7bac824",
+    "notice_ups": "m87mi1",
+    "notice_officielle": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000516456",
+    "precisions": "Le bandeau des écoles donne « École polytechnique (option T.A.) ». L’épreuve est commune aux options M, P′ et T.A. du concours commun. Pour l’X, seul le recrutement T.A. est mentionné dans la liste des écoles. La saisie m87mi1ea ne porte ni les écoles, ni la session, ni l’option ni le rang en tête ; elle réorganise le traitement en trois parties au lieu des deux de l’original."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-d05c8e57f22779798fce",
+      "sha256": "3027fa0c18cabf9af4a736b003326fe02c9679d11ceace61114e103dd7bac824",
+      "pages": 3,
+      "rendu_page_sha256": [
+        "0d46ff13f07a2c863034de4596b8412c945a6af6f1f977534000e1eb166173d9",
+        "6a5b1cbb0a22fc2e5b029b6bdc946f8b48ec1ba32a9013de63d4f9b155d98757",
+        "d8174ffa2b33fd1d37285c61184b9dedc3366961381483aafe5650eb1a15184d"
+      ]
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "x_ta_mathematiques_1_1985_1987",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Deux éditions complètes, 28 questions et sous-questions, indications et deux figures."
+    },
+    {
+      "phase": "revision",
+      "session": "x_ta_mathematiques_1_1985_1987",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Relecture des 28 sous-questions des deux parties originales, vérification du saut de dérivée, des bornes numériques et du tracé orthonormal."
+    }
+  ],
+  "figures": [
+    {
+      "question": "I.5.c",
+      "numero": 1,
+      "fichier": "figures/fonction-theta.svg",
+      "legende": "Figure 1 — La courbe de thêta rejoint l’asymptote horizontale de hauteur 1 et monte sans borne près de zéro. Les deux axes sont à la même échelle."
+    },
+    {
+      "question": "II.4.b",
+      "numero": 2,
+      "fichier": "figures/serie-cosinus.svg",
+      "legende": "Figure 2 — La somme de la série de cosinus est un arc de parabole sur chaque intervalle entre deux entiers."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1.a",
+      "I.1.b",
+      "I.1.c",
+      "I.1.d",
+      "I.2.a",
+      "I.2.b",
+      "I.2.c",
+      "I.3.a",
+      "I.3.b",
+      "I.3.c",
+      "I.3.d",
+      "I.4.a",
+      "I.4.b",
+      "I.4.c",
+      "I.4.d",
+      "I.5.a",
+      "I.5.b",
+      "I.5.c",
+      "II.1.a",
+      "II.1.b",
+      "II.1.c",
+      "II.2.a",
+      "II.2.b",
+      "II.2.c",
+      "II.3.a",
+      "II.3.b",
+      "II.4.a",
+      "II.4.b"
+    ],
+    "repere_par_question": [
+      {
+        "question": "I.1.a",
+        "page_pdf": 1,
+        "page_imprimee": 73
+      },
+      {
+        "question": "I.1.b",
+        "page_pdf": 1,
+        "page_imprimee": 73
+      },
+      {
+        "question": "I.1.c",
+        "page_pdf": 1,
+        "page_imprimee": 73
+      },
+      {
+        "question": "I.1.d",
+        "page_pdf": 1,
+        "page_imprimee": 73
+      },
+      {
+        "question": "I.2.a",
+        "page_pdf": 1,
+        "page_imprimee": 73
+      },
+      {
+        "question": "I.2.b",
+        "page_pdf": 1,
+        "page_imprimee": 73
+      },
+      {
+        "question": "I.2.c",
+        "page_pdf": 1,
+        "page_imprimee": 73
+      },
+      {
+        "question": "I.3.a",
+        "page_pdf": 1,
+        "page_imprimee": 73
+      },
+      {
+        "question": "I.3.b",
+        "page_pdf": 1,
+        "page_imprimee": 73
+      },
+      {
+        "question": "I.3.c",
+        "page_pdf": 1,
+        "page_imprimee": 73
+      },
+      {
+        "question": "I.3.d",
+        "page_pdf": 2,
+        "page_imprimee": 74
+      },
+      {
+        "question": "I.4.a",
+        "page_pdf": 2,
+        "page_imprimee": 74
+      },
+      {
+        "question": "I.4.b",
+        "page_pdf": 2,
+        "page_imprimee": 74
+      },
+      {
+        "question": "I.4.c",
+        "page_pdf": 2,
+        "page_imprimee": 74
+      },
+      {
+        "question": "I.4.d",
+        "page_pdf": 2,
+        "page_imprimee": 74
+      },
+      {
+        "question": "I.5.a",
+        "page_pdf": 2,
+        "page_imprimee": 74
+      },
+      {
+        "question": "I.5.b",
+        "page_pdf": 2,
+        "page_imprimee": 74
+      },
+      {
+        "question": "I.5.c",
+        "page_pdf": 2,
+        "page_imprimee": 74
+      },
+      {
+        "question": "II.1.a",
+        "page_pdf": 3,
+        "page_imprimee": 75
+      },
+      {
+        "question": "II.1.b",
+        "page_pdf": 3,
+        "page_imprimee": 75
+      },
+      {
+        "question": "II.1.c",
+        "page_pdf": 3,
+        "page_imprimee": 75
+      },
+      {
+        "question": "II.2.a",
+        "page_pdf": 3,
+        "page_imprimee": 75
+      },
+      {
+        "question": "II.2.b",
+        "page_pdf": 3,
+        "page_imprimee": 75
+      },
+      {
+        "question": "II.2.c",
+        "page_pdf": 3,
+        "page_imprimee": 75
+      },
+      {
+        "question": "II.3.a",
+        "page_pdf": 3,
+        "page_imprimee": 75
+      },
+      {
+        "question": "II.3.b",
+        "page_pdf": 3,
+        "page_imprimee": 75
+      },
+      {
+        "question": "II.4.a",
+        "page_pdf": 3,
+        "page_imprimee": 75
+      },
+      {
+        "question": "II.4.b",
+        "page_pdf": 3,
+        "page_imprimee": 75
+      }
+    ]
+  }
+}
