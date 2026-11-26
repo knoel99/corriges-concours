@@ -1,0 +1,106 @@
+{
+  "slug": "bel_al_explication-de-documents-historiques-lyon_2023",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Explication de documents historiques (Lyon)",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "duree_heures": 3,
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2023-09/Epreuve-de-specialite.pdf#page=8",
+    "sujet_sha256": "d646a518fbe4febf8a67e582f0310174ed455fa1f7d2c93d37f450a6420673a2",
+    "pages_pdf_sujet": [
+      8,
+      9
+    ],
+    "pages_fascicule": 20,
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2023-11/Histoire-2023.pdf#page=20",
+    "sha256_rapport_jury": "cc85e995bdd79986e81bba6d16bb20dfee991c6ba348430e1ac2526b5f2c3ce1",
+    "pages_rapport_verifiees": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36
+    ],
+    "documents": [
+      "A. Thucydide, Guerre du Péloponnèse, VI, 27–28.",
+      "B. Plutarque, Vie de Nicias, 13."
+    ],
+    "ecole": "ENS de Lyon",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2023"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/constat-soupcon-decision.svg",
+      "question": "Explication historique",
+      "legende": "Trois degrés de certitude dans le récit de Thucydide"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Explication historique du dossier complet"
+    ],
+    "documents_traites": [
+      "A. Thucydide, Guerre du Péloponnèse, VI, 27–28.",
+      "B. Plutarque, Vie de Nicias, 13."
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ]
+  },
+  "contributions": [
+    {
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "phase": "redaction",
+      "perimetre": "Présentation et explication de chaque pièce dans une démonstration rédigée, aide à la lecture et schéma."
+    },
+    {
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "perimetre": "Confrontation des deux témoignages, précision sur l’exil de Thucydide, sur l’identité inconnue des responsables et sur la distinction entre actes dénoncés. Relecture de la double interprétation du geste de Méton et du calendrier des Adonies."
+    }
+  ]
+}

@@ -2435,3 +2435,4 @@
 | 2023 | BEL | AL | Espagnol (commentaire et traduction) | [md](2023/bel/bel_al_espagnol-commentaire-et-traduction_2023/brut.md) | [md](2023/bel/bel_al_espagnol-commentaire-et-traduction_2023/guide.md) |
 | 2023 | BEL | AL | Portugais (thème Lyon) | [md](2023/bel/bel_al_portugais-theme-lyon_2023/brut.md) | [md](2023/bel/bel_al_portugais-theme-lyon_2023/guide.md) |
 | 2023 | BEL | AL | Portugais (commentaire et traduction) | [md](2023/bel/bel_al_portugais-commentaire-et-traduction_2023/brut.md) | [md](2023/bel/bel_al_portugais-commentaire-et-traduction_2023/guide.md) |
+| 2023 | BEL | AL | Explication de documents historiques (Lyon) | [md](2023/bel/bel_al_explication-de-documents-historiques-lyon_2023/brut.md) | [md](2023/bel/bel_al_explication-de-documents-historiques-lyon_2023/guide.md) |
