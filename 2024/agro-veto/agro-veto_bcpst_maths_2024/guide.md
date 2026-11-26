@@ -4,7 +4,11 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La numérotation des questions suit les quatre pages du sujet. Le premier problème étudie les extremums d’exponentielles et une loi limite. Le second construit la projection utilisée dans les moindres carrés.
+
+Le rapport du jury recommence la numérotation à 1 au deuxième problème. Son commentaire 1 correspond ainsi à la question 15 du sujet, et son commentaire 10 à la question 24. [Sujet officiel](https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/bcpst_0424_sp.pdf) · [Rapport du jury](https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/math_calcul_raisonnement_rapport_2024_relu_le.pdf)
 
 ## Problème 1 · I. Résultats préliminaires
 
@@ -46,7 +50,7 @@ Une densité est $f_X(x)=\lambda e^{-\lambda x}\mathbf1_{[0,+\infty[}(x)$. La fo
 Comme $i>1$, les intervalles $[i-1,i]$ et $[i,i+1]$ sont inclus dans $]0,+\infty[$. La fonction $t\mapsto 1/t$ y est décroissante. Sur le premier intervalle, $1/t\ge1/i$ et sur le second $1/t\le1/i$. Chaque intervalle a longueur $1$. Par croissance de l’intégrale,
 $$\int_i^{i+1}\frac{dt}{t}\le \frac1i\le \int_{i-1}^i\frac{dt}{t}.$$
 
-![Figure 1 — Chacun des deux rectangles a pour aire 1/i. Celui de gauche est sous la courbe, celui de droite au-dessus.](figures/encadrement-integral.svg)
+![Chacun des deux rectangles a pour aire 1/i. Celui de gauche est sous la courbe, celui de droite au-dessus.](figures/encadrement-integral.svg)
 
 ### Question 3.b
 
@@ -102,6 +106,10 @@ $$\mathbb E(X_{(n)})=n\lambda\sum_{j=0}^{n-1}\binom{n-1}{j}(-1)^j\int_0^\infty x
 Pour $a=(j+1)\lambda>0$, l’intégrale de $x a e^{-ax}$ vaut $1/a$, espérance de la loi exponentielle, d’où $\int_0^\infty x e^{-ax}dx=1/a^2$. On obtient $\lambda\mathbb E(X_{(n)})=n\sum_{j=0}^{n-1}\binom{n-1}{j}(-1)^j/(j+1)^2$. Avec la question 1.a,
 $$\mathbb E(X_{(n)})=\frac1\lambda\sum_{j=0}^{n-1}\binom n{j+1}\frac{(-1)^j}{j+1}.$$
 
+Une vérification indépendante consiste à intégrer la fonction de survie. En posant $v=1-e^{-\lambda x}$ sur $[0,+\infty[$, on obtient
+$$\mathbb E(X_{(n)})=\frac1\lambda\int_0^1\frac{1-v^n}{1-v}\,dv=\frac1\lambda\int_0^1(1+v+\cdots+v^{n-1})\,dv.$$
+La fraction se prolonge en $1$ par la valeur $n$. Cela retrouve directement le nombre harmonique que la question 7 demande d’établir par récurrence.
+
 ### Question 7.a
 
 > [!INDICATION]
@@ -141,6 +149,8 @@ Les questions 6 et 7 donnent $\mathbb E(X_{(n)})=H_n/\lambda$. La question 3.c e
 On a $u_n=H_n-\ln n$, donc $u_{n+1}-u_n=1/(n+1)-\ln(1+1/n)$. Avec $t=1/n$, on utilise $t/(1+t)=t-t^2+o(t^2)$ et $\ln(1+t)=t-t^2/2+o(t^2)$. Ainsi
 $$u_{n+1}-u_n\sim-\frac1{2n^2}.$$
 Les valeurs absolues sont équivalentes à $1/(2n^2)$. La série de Riemann correspondante converge, donc la série des différences converge absolument.
+
+Le signe peut aussi se vérifier sans développement limité. L’intégrale de $1/t$ sur $[n,n+1]$ dépasse strictement $1/(n+1)$. Ainsi $u_{n+1}-u_n<0$, ce qui concorde avec le signe du premier terme non nul.
 
 ### Question 10
 
@@ -191,7 +201,9 @@ Supposons $\lambda=1$. Pour chaque $x$ réel fixé, $x+\ln n\ge0$ dès que $n$ e
 $$\mathbb P(X_{(n)}-\ln n\le x)=\big(1-e^{-(x+\ln n)}\big)^n=\left(1-\frac{e^{-x}}n\right)^n\longrightarrow \exp(-e^{-x})$$
 par la question 13. La limite est la fonction de répartition continue de $Y$ pour $\lambda=1$. On a donc la convergence en loi annoncée.
 
-![Figure 2 — Les fonctions de répartition des maxima centrés tendent vers la loi de Gumbel de paramètre 1.](figures/maximum-centre.svg)
+![Les fonctions de répartition des maxima centrés tendent vers la loi de Gumbel de paramètre 1.](figures/maximum-centre.svg)
+
+Pour tout réel $x$, la formule valable à tous les rangs est $F_n(x)=(\max(0,1-e^{-x}/n))^n$. La partie positive tient compte du support de $X_{(n)}$. Par exemple en $x=0$ on trouve $(1-1/n)^n\to e^{-1}$. Le décalage par $\ln n$ explique pourquoi la limite est comprise strictement entre zéro et un.
 
 ## Problème 2 · Projection orthogonale et moindres carrés
 
@@ -244,6 +256,8 @@ Le calcul donne $A^TA=3I_3-J$, où $J$ est la matrice dont chaque entrée vaut $
 $$D=\operatorname{diag}(0,3,3),\qquad P=\begin{pmatrix}1&1&1\\1&-1&0\\1&0&-1\end{pmatrix}.$$
 Les deux dernières colonnes sont indépendantes dans le plan et la première lui est extérieure. Donc $P$ est inversible, sa première ligne convient et $A^TA=PDP^{-1}$. Les coefficients choisis sont réels, donc aussi complexes comme le permet l’énoncé.
 
+On peut vérifier la diagonalisation sans inverser $P$. La matrice $A^TA$ annule la première colonne de $P$ et multiplie les deux autres par trois, donc $A^TAP=PD$. De plus $\det P=3$, ce qui garantit que cette égalité livre bien une diagonalisation.
+
 ### Question 20
 
 > [!INDICATION]
@@ -291,7 +305,7 @@ Posons $\widehat X=S^{-1}A^TB$. Alors $A\widehat X=HB$. Comme $H$ est la project
 $$g(X)=\|B-HB\|^2+\|A(\widehat X-X)\|^2.$$
 Cette expression est minimale en $X=\widehat X$. L’égalité avec le minimum exige $A(\widehat X-X)=0$. La question 20 donne alors $X=\widehat X$, d’où l’unicité.
 
-![Figure 3 — La projection de B sur l’image de A décompose l’erreur en deux composantes orthogonales.](figures/projection-moindres-carres.svg)
+![La projection de B sur l’image de A décompose l’erreur en deux composantes orthogonales.](figures/projection-moindres-carres.svg)
 
 ### Question 23
 
@@ -310,3 +324,5 @@ Si $n=p$, la matrice carrée $A$ est inversible. L’équation $AX=B$ admet donc
 #### Solution
 
 On trouve $A^TA=\begin{pmatrix}2&2\\2&5\end{pmatrix}$ et $A^TB=(4,8)^T$. Les équations normales sont $2x+2y=4$ et $2x+5y=8$. Par soustraction $y=4/3$, puis $x=2/3$. Ainsi $\widehat X=(2/3,4/3)^T$. Le résidu $(1/3,2/3,-1/3)^T$ est bien orthogonal aux deux colonnes de $A$.
+
+Le carré de la norme du résidu vaut $2/3$. Ainsi la valeur minimale de $g$ est $2/3$. Pour une perturbation $(h,k)$ du minimiseur, l’augmentation vaut $h^2+k^2+(h+2k)^2$, strictement positive dès que $(h,k)\ne(0,0)$. Cela contrôle numériquement la conclusion d’unicité de la question 22.
