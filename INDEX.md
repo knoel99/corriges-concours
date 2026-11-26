@@ -698,6 +698,12 @@
 | 2026 | BEL | BL | Économie | [md](2026/bel/bel_bl_economie_2026/brut.md) | [md](2026/bel/bel_bl_economie_2026/guide.md) |
 | 2026 | BEL | BL | Espagnol | [md](2026/bel/bel_bl_espagnol_2026/brut.md) | [md](2026/bel/bel_bl_espagnol_2026/guide.md) |
 | 2026 | BEL | BL | Géographie | [md](2026/bel/bel_bl_geographie_2026/brut.md) | [md](2026/bel/bel_bl_geographie_2026/guide.md) |
+| 2025 | BEL | BL | Économie (oral à option) — 18 et 19 juin, billet 1 | [md](2025/bel/bel_bl_economie-oral-a-option-18-et-19-juin-billet-1_2025/brut.md) | [md](2025/bel/bel_bl_economie-oral-a-option-18-et-19-juin-billet-1_2025/guide.md) |
+| 2025 | BEL | BL | Économie (oral à option) — 18 et 19 juin, billet 2 | [md](2025/bel/bel_bl_economie-oral-a-option-18-et-19-juin-billet-2_2025/brut.md) | [md](2025/bel/bel_bl_economie-oral-a-option-18-et-19-juin-billet-2_2025/guide.md) |
+| 2025 | BEL | BL | Économie (oral à option) — 18 et 19 juin, billet 3 | [md](2025/bel/bel_bl_economie-oral-a-option-18-et-19-juin-billet-3_2025/brut.md) | [md](2025/bel/bel_bl_economie-oral-a-option-18-et-19-juin-billet-3_2025/guide.md) |
+| 2025 | BEL | BL | Économie (oral à option) — 18 et 19 juin, billet 4 | [md](2025/bel/bel_bl_economie-oral-a-option-18-et-19-juin-billet-4_2025/brut.md) | [md](2025/bel/bel_bl_economie-oral-a-option-18-et-19-juin-billet-4_2025/guide.md) |
+| 2025 | BEL | BL | Économie (oral à option) — 18 et 19 juin, billet 5 | [md](2025/bel/bel_bl_economie-oral-a-option-18-et-19-juin-billet-5_2025/brut.md) | [md](2025/bel/bel_bl_economie-oral-a-option-18-et-19-juin-billet-5_2025/guide.md) |
+| 2025 | BEL | BL | Économie (oral à option) — 18 et 19 juin, billet 6 | [md](2025/bel/bel_bl_economie-oral-a-option-18-et-19-juin-billet-6_2025/brut.md) | [md](2025/bel/bel_bl_economie-oral-a-option-18-et-19-juin-billet-6_2025/guide.md) |
 | 2025 | BEL | BL | Espagnol | [md](2025/bel/bel_bl_espagnol_2025/brut.md) | [md](2025/bel/bel_bl_espagnol_2025/guide.md) |
 | 2025 | BEL | BL | Histoire contemporaine | [md](2025/bel/bel_bl_histoire-contemporaine_2025/brut.md) | [md](2025/bel/bel_bl_histoire-contemporaine_2025/guide.md) |
 | 2026 | BEL | BL | Histoire contemporaine | [md](2026/bel/bel_bl_histoire-contemporaine_2026/brut.md) | [md](2026/bel/bel_bl_histoire-contemporaine_2026/guide.md) |

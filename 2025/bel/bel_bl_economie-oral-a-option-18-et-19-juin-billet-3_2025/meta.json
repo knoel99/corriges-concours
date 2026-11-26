@@ -1,0 +1,64 @@
+{
+  "slug": "bel_bl_economie-oral-a-option-18-et-19-juin-billet-3_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Économie (oral à option) — 18 et 19 juin, billet 3",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "Les coûts salariaux, un handicap pour l’emploi ? / Politiques macroéconomiques dans un monde globalisé",
+  "questions": 0,
+  "sujets": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/economie_18_et_19_juin.pdf#page=3",
+    "sujet_sha256": "7df76ce34689903b9c3212293ead03299ecdbb5abb7299bb9ad77f1b04d367d5",
+    "pages_pdf": "3",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_economie_option.pdf",
+    "rapport_sha256": "08b4440d451c1929edecc0a6e938636121c9e7d63af5b51a18887a8226f0bf6c"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Les coûts salariaux, un handicap pour l’emploi ?",
+      "fichier": "figures/embauche-en-monopsone.svg",
+      "legende": "Le monopsoniste égalise la dépense marginale avec la valeur du produit marginal, puis lit le salaire sur la courbe d’offre."
+    },
+    {
+      "numero": 2,
+      "question": "Politiques macroéconomiques dans un monde globalisé",
+      "fichier": "figures/multiplicateur-et-importations.svg",
+      "legende": "Dans cet exemple à prix fixes, 10 d’achats publics supplémentaires produisent 20 de revenu en économie ouverte et 40 en économie fermée."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Deux exposés distincts confrontés au billet imprimé et à la liste du jury. Contrôle des mécanismes, des hypothèses et des grandeurs de chaque démonstration. Le monopsoniste égalise la dépense marginale avec la valeur du produit marginal, puis lit le salaire sur la courbe d’offre. Dans cet exemple à prix fixes, 10 d’achats publics supplémentaires produisent 20 de revenu en économie ouverte et 40 en économie fermée.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "sujets_entierement_traites": [
+      "Les coûts salariaux, un handicap pour l’emploi ?",
+      "Politiques macroéconomiques dans un monde globalisé"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "redaction",
+      "sha256_sujet_controle": "7df76ce34689903b9c3212293ead03299ecdbb5abb7299bb9ad77f1b04d367d5",
+      "perimetre": "Deux exposés distincts confrontés au billet imprimé et à la liste du jury. Contrôle des mécanismes, des hypothèses et des grandeurs de chaque démonstration. Le monopsoniste égalise la dépense marginale avec la valeur du produit marginal, puis lit le salaire sur la courbe d’offre. Dans cet exemple à prix fixes, 10 d’achats publics supplémentaires produisent 20 de revenu en économie ouverte et 40 en économie fermée."
+    }
+  }
+}
