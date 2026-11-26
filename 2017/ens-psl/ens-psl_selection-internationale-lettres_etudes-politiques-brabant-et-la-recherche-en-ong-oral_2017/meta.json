@@ -1,0 +1,76 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_etudes-politiques-brabant-et-la-recherche-en-ong-oral_2017",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Études politiques — Brabant et la recherche en ONG (oral)",
+    "annee": 2017,
+    "modalite": "oral"
+  },
+  "intitule": "Commentaire de Justine Brabant sur la réflexivité dans une enquête au sein d’une ONG et mise en regard facultative avec un projet.",
+  "gabarit": "oral",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/et.politiques-oral-si17.pdf",
+    "sujet_sha256": "57be42b5989b8d147cbc73ffdc4c1591379b19418c8659338533ab973c669fe8",
+    "index": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2017-lettres-0",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.ens.psl.eu/sites/default/files/et.politiques-oral-si17.pdf",
+        "sha256": "57be42b5989b8d147cbc73ffdc4c1591379b19418c8659338533ab973c669fe8",
+        "pages": 2
+      },
+      {
+        "role": "attentes générales du jury",
+        "url": "https://www.ens.psl.eu/sites/default/files/qqs-attentes-jury-pageweb.pdf",
+        "sha256": "85a7f1b02fb26a186a71b820afe3bb118cd2320fc5cfbf5dcf78456c4c56c049",
+        "pages": 4
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/position-d-enquete.svg",
+      "question": "Commentaire de l’extrait",
+      "legende": "L’accès matériel et les attentes des interlocuteurs contribuent ensemble à la production des données."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/observation-reflexive.svg",
+      "question": "Commentaire de l’extrait",
+      "legende": "Documenter les circonstances aide à établir ce qu’un entretien permet de conclure."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "sociologie_psl_oraux_individuels",
+      "agent": "sociologie_psl_oraux_individuels",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire de Justine Brabant sur la réflexivité dans une enquête au sein d’une ONG et mise en regard facultative avec un projet. Vérification des éléments de la consigne, des deux éditions et de leurs schémas."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire de l’extrait",
+      "Apports de la réflexivité",
+      "Rapprochement facultatif illustré"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "limites": "Les attentes générales du jury figurent sur l’index de la session. Cet index ne fournit pas de rapport particulier à ce sujet."
+  }
+}
