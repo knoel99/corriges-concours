@@ -1,8 +1,8 @@
 # Essai local de publication des corrigés
 
-Le 26/11/2026 à 11 h 36 UTC, les 1872 paires signées de la révision `9ab9ad7c` ont fourni les deux textes attendus et leurs signatures dans le service de lecture du site. Le journal de chaque fiche renvoie au bon dossier GitHub, reprend les interventions qualifiantes et indique le caractère partiel quand il est déclaré. [Résultats par épreuve](prepublication-lecteurs.tsv) · [Version des corrigés](https://github.com/knoel99/corriges-concours/tree/9ab9ad7c8ad1a8c577ef1f28b989420673c83196) · [Version du site](https://github.com/knoel99/prepa/tree/6e0485f92d31240e960ca1c3085f92d167170187)
+Le 26/11/2026 à 12 h 33 UTC, les 1900 paires signées de la révision `e1e9bbd9` ont fourni les deux textes attendus et leurs signatures dans le service de lecture du site. Le journal de chaque fiche renvoie au bon dossier GitHub, reprend les interventions qualifiantes et indique le caractère partiel quand il est déclaré. [Résultats par épreuve](prepublication-lecteurs.tsv) · [Version des corrigés](https://github.com/knoel99/corriges-concours/tree/e1e9bbd97f672adbb9735ff32782dbde5ad517fb) · [Version du site](https://github.com/knoel99/prepa/tree/857bcd7ebbcd4b5c185db8ac28b66179ac8c9985)
 
-Le contrôle couvre 2345 fiches de filière pour 1872 épreuves signées. Les épreuves communes sont aussi vérifiées sous chaque filière de leur notice éditoriale. [Contrôles des 473 fiches supplémentaires](prepublication-lecteurs-autres-filieres.tsv)
+Le contrôle couvre 2373 fiches de filière pour 1900 épreuves signées. Les épreuves communes sont aussi vérifiées sous chaque filière de leur notice éditoriale. [Contrôles des 473 fiches supplémentaires](prepublication-lecteurs-autres-filieres.tsv)
 
 L’essai utilise une base SQLite temporaire et les fichiers locaux des révisions Git. La conversion du dépôt public et le plan de publication du site produisent les clés du stockage. La synchronisation charge d’abord le contenu de `54fe93cd`, puis celui de la branche de travail. Pour chaque édition, le service qui alimente le lecteur doit restituer exactement le Markdown attendu après la réécriture des chemins d’illustrations. Le contrôle vérifie aussi la présence de chaque SVG référencé. Si une édition ne référence aucun SVG, la colonne de disponibilité est positive et le classeur des épreuves indique zéro illustration pour cette édition.
 
@@ -27,6 +27,24 @@ En physique, économie, gestion, médecine et humanités, littérature, portugai
 Pour les 12 analyses économiques de Paris-Saclay et 14 sujets de la Sélection internationale Lettres de l’ENS-PSL, les archives ont été relues PDF par PDF. Les 52 fichiers totalisent 179 pages. Les signatures correspondent aux deux éditions et les arbres de rédaction à la branche. [Pages, empreintes et révisions](pdf-analyses-saclay-et-selection-lettres-2026-11-26.tsv)
 
 Les 47 épreuves relues en économie et en sociologie ont fourni 94 PDF signés, totalisant 427 pages. Chaque fichier a été comparé aux octets de l’archive et rattaché à l’arbre Git de la paire relue. [Couverture, signatures des PDF et empreintes](pdf-revues-economie-sociologie-2026-11-26.tsv)
+
+Pour les sept épreuves de langues du concours D-E et l’anglais 2SEP de Rennes en 2026, les signatures, les figures et les empreintes des seize PDF ont été vérifiées sur les fichiers issus de la rédaction. Ils totalisent 76 pages. [Contrôles et empreintes par PDF](pdf-langues-rennes-de-2sep-2026-11-26.tsv)
+
+Les 24 PDF de onze épreuves de la Sélection internationale Lettres et de l’oral d’histoire contemporaine B/L à Lyon totalisent 72 pages. Avec le gabarit corrigé, les 142 signets renvoient aux titres correspondants. [Contrôles et empreintes par PDF](pdf-signets-selection-lettres-et-histoire-lyon-2026-11-26.tsv)
+
+Les quatorze épreuves d’informatique ENS de 1997 à 2010, onze épreuves de lettres et l’oral de grec de Lyon ont été recompilés sur le gabarit aux signets corrigés. Les signatures, les pages et les figures ont été vérifiées dans les deux éditions. [Contrôles et empreintes par PDF](pdf-informatique-ens-1997-2010-et-lettres-2026-11-26.tsv)
+
+Les 26 PDF des treize épreuves de Médecine-Humanités de 2018, 2020 et 2022 totalisent 69 pages. La première page de chaque PDF porte la signature du journal. Chaque empreinte correspond au fichier de l’archive. [Oraux de 2018](pdf-medecine-humanites-2018-2026-11-26.tsv) · [Oraux de 2020](pdf-medecine-humanites-2020-2026-11-26.tsv) · [Écrits de 2022](pdf-medecine-humanites-2022-2026-11-26.tsv)
+
+Un contrôle consolidé relie les 146 PDF de langues anciennes et modernes à leurs sources et aux deux éditions. Ils totalisent 539 pages et 131 schémas distincts par épreuve. La série comprend 71 paires complètes et deux oraux de latin partiels, à Lyon et à Ulm. Les fichiers de Rennes figurent aussi dans leur relevé détaillé. [Empreintes, pages et couverture](pdf-73-epreuves-langues-anciennes-et-modernes-2026-11-26.tsv)
+
+Le 26 novembre, le contrôle sur le site public ne retrouvait pas encore la paire attendue pour le grec oral de Lyon 2026. Le lecteur de « Guerre et humanité » de 2022 répondait HTTP 404. [Résultat des deux sondes](production-grec-lyon-et-medecine-humanites-2026-11-26.tsv)
+
+Les sept épreuves mixtes de mathématiques-informatique de 2002, 2004, 2005, 2006, 2008, 2009 et 2010 disposent de 14 PDF complets et signés, soit 89 pages. Le rapport de 2002 reste introuvable. [Révisions et empreintes](pdf-mathematiques-informatique-ens-2002-2010.tsv)
+
+Les trois compositions françaises et les trois compositions de philosophie de Lyon (2017, 2019 et 2022), ainsi que les cinq oraux de philosophie de la Sélection internationale Lettres de 2018, ont été revus dans les deux éditions. Les 22 PDF totalisent 79 pages et 128 signets contrôlés. [Révisions et empreintes](pdf-signets-philosophie-et-francais-lyon-psl-2026-11-26.tsv)
+
+Les six oraux d’histoire et de littérature ENS-PSL 2018, sur Monteil, Ginzburg, Renan, Cendrars, Djebar et Rolin, comptent douze PDF de 35 pages et 69 signets vérifiés. [Feuillets officiels, commits et empreintes](pdf-signets-oraux-histoire-litterature-psl-2018-2026-11-26.tsv)
 
 Le 25 novembre 2026, les deux lecteurs et les quatre téléchargements ont aussi été vérifiés sur les 134 fiches de filière de 45 épreuves communes déjà en production à la révision `54fe93cd`. [Adresses et empreintes des fichiers](production-filieres-54fe93cd.tsv)
 
