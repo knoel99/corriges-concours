@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Définir le résultat qu’on cherche à expliquer
 
 Commencer par une phrase dont chaque terme pourra être mesuré. « Parmi les candidatures répondant à la même offre, à compétences présentées identiques, le prénom affiché modifie-t-il les rappels ? » Fixer aussi les personnes absentes de ce champ. Celles qui n’ont pas eu accès à la formation requise ne figurent pas dans la comparaison. Le devoir doit pouvoir passer de ce test local aux étapes antérieures et postérieures de la carrière. Le rapport de 2016 invite précisément à croiser les mécanismes économiques, les difficultés de mesure, les faits et les politiques.
@@ -31,3 +33,9 @@ Imaginons maintenant un responsable qui utilise un stéréotype de groupe faute 
 Prenons le CV anonyme. Il supprime certains signaux lors du premier tri. Son effet prévu se mesure donc d’abord sur les convocations. Si une photo est supprimée mais que l’adresse constitue un signal de substitution, l’effet peut être limité. Si la décision se déplace vers l’entretien, l’écart final de recrutement peut rester identique. Comparer des établissements ayant introduit le dispositif à des établissements comparables et suivre plusieurs étapes permet de départager ces cas. Si l’adoption est volontaire, les établissements réformateurs peuvent différer des autres dès le départ. Une introduction tirée au sort, lorsqu’elle est possible, améliore l’interprétation causale.
 
 Conclure sur un arbitrage empirique précis. Un recrutement réussi peut améliorer l’affectation des compétences et l’accès aux revenus. Une intervention sur le tri des CV ne corrige pas à elle seule les inégalités de formation ou les décisions de carrière. Le périmètre auquel l’on mesure l’efficacité doit correspondre au mécanisme avancé.
+
+## Vérification sur le sujet
+
+Le rapport de 2016 attend des faits d’emploi, une discussion de leur mesure, des mécanismes économiques et des politiques correctives. Les deux éditions traitent le test de correspondance, son champ et ses limites, la discrimination par préférence et la discrimination statistique.
+
+On peut prolonger la comparaison du testing jusqu’à l’inefficacité économique. Si un employeur choisit un candidat dont la productivité anticipée sur des critères professionnels est de 90 plutôt qu’un candidat à 100 en raison d’un signal d’origine, la production attendue perd 10 unités à poste et salaire donnés. Ce calcul illustratif décrit le coût pour l’employeur. Le coût social dépend aussi du poste que la personne écartée pourra trouver.

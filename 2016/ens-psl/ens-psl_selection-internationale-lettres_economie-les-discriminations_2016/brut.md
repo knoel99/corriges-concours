@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Les discriminations
 
 Deux candidatures présentent les mêmes expériences et les mêmes diplômes. Le changement du nom affiché suffit-il à modifier la probabilité d’un entretien ? Cette question porte sur un traitement différentiel. Elle est distincte de la mesure d’une inégalité globale de salaires, qui résulte d’une succession de sélections, d’affectations et de décisions de rémunération. L’économie cherche à établir dans quelles conditions l’appartenance réelle ou supposée à un groupe modifie l’accès aux ressources, pourquoi des décideurs adoptent de tels comportements et quelles interventions peuvent en réduire les effets.
@@ -31,3 +33,9 @@ La discrimination statistique intervient lorsque l’employeur ignore une caract
 Anonymiser les candidatures empêche le tri sur certains signaux au premier stade, sous réserve que les autres rubriques ne les révèlent pas. Une différence peut réapparaître en entretien ou un employeur peut perdre une information dont il tenait compte pour apprécier un parcours rendu difficile par des obstacles antérieurs. Une épreuve professionnelle commune et des critères d’évaluation définis avant de rencontrer les personnes rendent les comparaisons plus explicites. Des audits répétés et des sanctions effectives modifient le coût du comportement discriminatoire. Leurs effets dépendent de la probabilité du contrôle et des voies de recours accessibles aux candidats.
 
 Des mesures visant l’accès à la formation ou aux postes peuvent corriger des barrières accumulées en amont. Il faut préciser leur objectif, les conditions d’éligibilité et les effets éventuels sur d’autres groupes. L’évaluation suivra les rappels, les recrutements puis les rémunérations et promotions, en comparant des établissements ou des périodes où les règles diffèrent de façon exploitable. Une hausse des rappels avec un écart de promotion intact signale que l’intervention n’a traité qu’une étape de la trajectoire. Mettre au jour un traitement différentiel, en expliquer l’origine et évaluer une politique constituent trois résultats distincts, chacun exigeant ses propres preuves.
+
+## Vérification sur le sujet
+
+Le rapport de 2016 attend des faits d’emploi, une discussion de leur mesure, des mécanismes économiques et des politiques correctives. Les deux éditions traitent le test de correspondance, son champ et ses limites, la discrimination par préférence et la discrimination statistique.
+
+On peut prolonger la comparaison du testing jusqu’à l’inefficacité économique. Si un employeur choisit un candidat dont la productivité anticipée sur des critères professionnels est de 90 plutôt qu’un candidat à 100 en raison d’un signal d’origine, la production attendue perd 10 unités à poste et salaire donnés. Ce calcul illustratif décrit le coût pour l’employeur. Le coût social dépend aussi du poste que la personne écartée pourra trouver.
