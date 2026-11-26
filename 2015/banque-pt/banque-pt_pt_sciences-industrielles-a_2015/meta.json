@@ -709,6 +709,23 @@
       "modifications": true,
       "phase": "redaction",
       "perimetre": "Résolution des 58 questions et rédaction des indications des deux éditions après lecture du sujet, du cahier et du rapport du jury."
+    },
+    {
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "session": "banque_pt_si_a_2015",
+      "modifications": true,
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "perimetre": "Relecture du ZIP institutionnel et des six planches SysML, rapprochement des 58 entrées de l’énoncé et du cahier, vérification numérique du choc, du retard, des pôles continu et échantillonné, des deux courbes de position et des seuils des pistes du potentiomètre. Consignation du réarmement de RefP en annexe."
     }
-  ]
+  ],
+  "date_revision": "2026-11-26"
 }

@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le papillon motorisé règle l’admission d’air d’un moteur essence. Deux engrenages relient son axe à la machine à courant continu. Le sujet officiel est distribué dans une archive contenant deux PDF. La numérotation de chaque renvoi ci-dessous compte depuis le début du fichier indiqué.
 
 [Sujet et cahier officiels](https://www.banquept.fr/documents/2015/si_a_2015_pt.zip) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2015/rapport_si_a_ecrit_2015.pdf)
@@ -64,11 +66,11 @@ Pour deux radians, le temps vaut 61 ms (59 ms pour 105° exacts). Le ressort acc
 
 ### Question 12 — Comparer énergie de choc et énergie de rupture
 
-$C_R\theta_s=J_{\rm eq}\omega_e^2/2$ donne $\omega_s=k\sqrt{2C_R\theta_s/J_{\rm eq}}\simeq65,2$ rad/s. Pour $J_3=8,4\,10^{-7}$ kg·m², $E_{c3}=J_3\omega_s^2/2\simeq1,79$ mJ. La capacité indiquée vaut $13\,000\times0,008\times0,001=0,104$ J. La dent résiste suivant ce critère limité à l’ensemble 3.
+$C_R\theta_s=J_{\rm eq}\omega_e^2/2$ donne $\omega_s=k\sqrt{2C_R\theta_s/J_{\rm eq}}\simeq65,2$ rad/s. Pour $J_3=8,4\,10^{-7}$ kg·m², $E_{c3}=J_3\omega_s^2/2\simeq1,79$ mJ. La capacité indiquée vaut $13\,000\times0,008\times0,001=0,104$ J. La dent résiste suivant ce critère limité à l’ensemble 3. L’énergie cinétique totale des trois solides est 3,4 J dans la même approximation. Son transfert effectif au contact demanderait la dynamique du choc.
 
 ### Question 13 — Déterminer les efforts de denture
 
-Les efforts tangentiels valent $F_{t12}=2C_n/(mZ_{11})=42$ N et $F_{t23}=2C_n/[|k_1|mZ_{22}]=147$ N. L’effort normal réel est $F_{12}=42/\cos\phi$, $F_{23}=147/\cos\phi$, où $\phi$ est l’angle de pression.
+Les efforts tangentiels valent $F_{t12}=2C_n/(mZ_{11})=42$ N et $F_{t23}=2C_n/[|k_1|mZ_{22}]=147$ N. L’effort normal réel est $F_{12}=42/\cos\phi$, $F_{23}=147/\cos\phi$, où $\phi$ est l’angle de pression. La fiche donne module et largeur mais aucun angle de pression. Avec la convention usuelle de 20°, on obtient 44,7 et 156 N. Si le modèle assimile la normale à la tangente primitive, les nombres à reporter sont 42 et 147 N.
 
 ### Question 14 — Vérifier la résistance en flexion
 
@@ -198,7 +200,7 @@ $G_{\rm SIN}=g_F/(1+f_F)=q(1-a)/[(1-a)(1+q)]=q/(1+q)=G_{\rm SIC}$. Les deux mod�
 
 ### Question 41 — Confronter les réponses échantillon par échantillon
 
-La réponse continue échantillonnée contient $r_c^k$, avec $r_c=e^{-(1+q)T_e/\tau_0}=0,869706$. La fermeture numérique de Q34 donne $r_d=a-q(1-a)=0,867153$. Les deux bases diffèrent. Au premier pas pour une consigne unité, les courants valent 0,03696 et 0,03769 A. L’égalité exacte demandée ne découle donc pas des équations du feuillet.
+La réponse continue échantillonnée contient $r_c^k$, avec $r_c=e^{-(1+q)T_e/\tau_0}=0,869706$. La fermeture numérique de Q34 donne $r_d=a-q(1-a)=0,867153$. Les deux bases diffèrent. Au premier pas pour une consigne unité, les courants valent 0,03696 et 0,03769 A. L’égalité exacte demandée ne découle donc pas des équations du feuillet. Ils ont le même plateau et le même développement au premier ordre en $T_e$. Si l’on discrétise après avoir fermé le système continu, on obtient exactement $r_c$, ce qui explique la transposition suggérée. L’implémentation avec retour échantillonné ferme la boucle après le bloqueur.
 
 ![Réponses de courant et différence aux instants d’échantillonnage](figures/echantillons.svg)
 
@@ -210,7 +212,7 @@ $\tau_{\rm BF}=1/2000=0,50$ ms, donc $\tau_{\rm BF}/4=125$ µs. La période de 7
 
 ### Question 43 — Conclure sur les performances de la commande numérique
 
-La réponse discrète est monotone du premier ordre et de bande voisine de 2 000 rad/s. Le gain statique vaut seulement 0,2837. Les trois propriétés demandées simultanément ne sont donc pas obtenues.
+La réponse discrète est monotone du premier ordre et de bande voisine de 2 000 rad/s. Le gain statique vaut seulement 0,2837. Les trois propriétés demandées simultanément ne sont donc pas obtenues. Pour le véritable filtre discret, $H(z)=g_Fz^{-1}/(1-r_dz^{-1})$. À une atténuation relative de 3 dB, $\cos(\omega T_e)=1-(1-r_d)^2/(2r_d)$ donne environ 2 040 rad/s.
 
 ## 3.3 — Boucle de position
 
@@ -254,7 +256,7 @@ Avec $A=K_\theta K_1K_2$, $H_A=A(1+T_ip)/(T_i p^2+A T_i p+A)=(1+T_ip)/[1+T_ip+(T
 
 ### Question 53 — Synthétiser un dénominateur sans oscillation
 
-On a $\omega_n^2=A/T_i$ et $2\zeta/\omega_n=T_i$. Un choix rapide sans oscillation du dénominateur est $\zeta=1$. L’échelon du double pôle franchit 95 % à $\omega_n t=4,744$ car $(1+x)e^{-x}=0,05$. Pour 0,20 s, $\omega_n=23,72$ rad/s, $T_i=2/\omega_n=84,3$ ms et $K_\theta=2\omega_n/(K_1K_2)=4,74$.
+On a $\omega_n^2=A/T_i$ et $2\zeta/\omega_n=T_i$. Un choix rapide sans oscillation du dénominateur est $\zeta=1$. L’échelon du double pôle franchit 95 % à $\omega_n t=4,744$ car $(1+x)e^{-x}=0,05$. Pour 0,20 s, $\omega_n=23,72$ rad/s, $T_i=2/\omega_n=84,3$ ms et $K_\theta=2\omega_n/(K_1K_2)=4,74$. Ce réglage traite le dénominateur seul, comme demandé. Une plage de réglages convient si l’on impose une inégalité sur le temps. Le zéro effectivement présent affecte le dépassement.
 
 ### Question 54 — Analyser la réponse réelle du modèle PI
 
@@ -286,7 +288,7 @@ $K_t I_{\rm MCC}=kC_R$. Avec $1/20$, 1,7 N·m et 0,1 N·m/A, $I_{\rm MCC}=0,85$ 
 
 ### Question 58 — Dérouler la séquence de préparation au démarrage
 
-À l’événement Pp, le mode 1 mémorise $P_1=20\,IP1$ et $P_2=20\,IP2$ en pourcentage. Au repos, exiger $P_1<2$ et $P_2>98$, puis commander 10,5°. Attendre 0,4 s et relire. À l’index, exiger $8<P_1<12$, $88<P_2<92$ et Index vrai. Commander 52,5°, attendre 0,4 s et relire. Exiger les deux pistes entre 48 et 52, commander 105°, attendre encore 0,4 s puis exiger $P_1>98$, $P_2<2$. Passer à RefP=0, couper la puissance (CoupureP=1), laisser revenir le ressort 0,2 s, relire et exiger $P_1<2$, $P_2>98$. Le mode préparatoire se termine. Un échec à un test pose DéfautP=1 et conduit au traitement des défauts du superviseur.
+À l’événement Pp, le mode 1 mémorise $P_1=20\,IP1$ et $P_2=20\,IP2$ en pourcentage. Au repos, exiger $P_1<2$ et $P_2>98$, puis commander 10,5°. Attendre 0,4 s et relire. À l’index, exiger $8<P_1<12$, $88<P_2<92$ et Index vrai. Commander 52,5°, attendre 0,4 s et relire. Exiger les deux pistes entre 48 et 52, commander 105°, attendre encore 0,4 s puis exiger $P_1>98$, $P_2<2$. Passer à RefP=0, couper la puissance (CoupureP=1), laisser revenir le ressort 0,2 s, relire et exiger $P_1<2$, $P_2>98$. Le mode préparatoire se termine. Un échec à un test pose DéfautP=1 et conduit au traitement des défauts du superviseur. Les bornes sont strictes, y compris au retour. L’action d’entrée de « Mémorisation angle papillon » imprimée en annexe réécrit également RefP=0 à chaque passage, alors que les gardes suivantes consultent la cible non nulle. Pour exécuter la séquence décrite, il faut conserver cette consigne entre deux mesures et réserver l’initialisation à zéro au démarrage. À la lettre, le diagramme ne garantit pas le déroulement voulu.
 
 ![Parcours de diagnostic et mesures attendues sur les deux pistes](figures/diagnostic.svg)
 
