@@ -11,7 +11,8 @@
   "redaction": "GPT-6.2 Astra · effort Ultra",
   "sources": {
     "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-373928d79b341c35e3b7",
-    "sujet_sha256": "28035767b592db18153cc325e90b8e1d07f24b67299b155e4fab4d24f99e13ca"
+    "sujet_sha256": "28035767b592db18153cc325e90b8e1d07f24b67299b155e4fab4d24f99e13ca",
+    "sujet_ups": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-373928d79b341c35e3b7"
   },
   "figures": [
     {
@@ -51,6 +52,39 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Rédaction originale des 15 questions et subdivisions après lecture du fac-similé UPS de 15 pages. Reconstruction des réseaux et de l’arbre de Karp et Miller, hypothèses manquantes en questions 3, 5 et 6, preuves sur semi-anneaux, réalisation sur les poids naturels du sujet en question 14 et contrôle de 18 200 jeux et mots par comparaison avec les hauteurs géométriques. Cinq schémas originaux."
+    },
+    {
+      "phase": "relecture",
+      "fournisseur": "codex",
+      "agent": "reprise_physique_ulm",
+      "session": "reprise_physique_ulm",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Contrôle de la couverture, du fac-similé et des deux éditions. Ajout de la déclaration vérifiée dans les métadonnées."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15"
+    ],
+    "verification": "Confrontation des deux éditions avec les 15 pages du fac-similé UPS i983m1ea, y compris les arguments, dessins et demandes subdivisées repérés dans chaque rubrique."
+  }
 }
