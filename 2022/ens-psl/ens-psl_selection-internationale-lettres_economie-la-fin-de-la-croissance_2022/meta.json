@@ -35,7 +35,7 @@
       "legende": "Deux régimes de croissance en France"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "lecture_rapport_jury",
@@ -72,6 +72,32 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Vérification de la consigne et de la modalité sur la feuille officielle, de la portée du rapport et des raisonnements et exemples des deux éditions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "gestion_2022_2023",
+      "agent": "gestion_2022_2023",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "La dissertation et son guide traitent le ralentissement observé, les mécanismes de stagnation et la finalité de la croissance. Les taux français et leurs périodes de référence ont été rapprochés de la figure 1 de l’Insee. Une troisième période et une application au bassin industriel relient les séries nationales au projet décrit par le jury."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "La fin de la croissance"
+    ],
+    "precision": "Écrit, sujet individuel 1 de la feuille officielle. Le rapport rattache le projet sur le rôle des politiques d’éducation et de formation face à la désindustrialisation à cette épreuve et à l’oral « À quoi sert l’éducation ? ». L’intitulé appelle un développement en économie et permet une mise en perspective par d’autres sciences sociales. Le fascicule ne comporte ni document annexe ni sous-question.",
+    "controle": "La dissertation et son guide traitent le ralentissement observé, les mécanismes de stagnation et la finalité de la croissance. Les taux français et leurs périodes de référence ont été rapprochés de la figure 1 de l’Insee. Une troisième période et une application au bassin industriel relient les séries nationales au projet décrit par le jury."
+  }
 }
