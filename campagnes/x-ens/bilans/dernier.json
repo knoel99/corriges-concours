@@ -1,42 +1,42 @@
 {
-  "date": "2026-11-26T20:11:12+01:00",
-  "revision": "0423f413a3c21ba946cdcbba32314f124eea301e",
+  "date": "2026-11-26T20:19:08+01:00",
+  "revision": "cf12061ea4420099d3d039cf37a76f8466832263",
   "fichier": "2026-11-26.tsv",
   "perimetres": [
     {
       "nom": "Toutes les épreuves",
-      "recenses": 2245,
-      "paires": 2080,
-      "complets": 1539,
+      "recenses": 2278,
+      "paires": 2084,
+      "complets": 1548,
       "production": 58,
       "partiels": 136,
       "partiels_production": 18,
-      "schemas": 3579,
-      "a_confirmer": 405,
-      "a_confirmer_production": 72
+      "schemas": 3593,
+      "a_confirmer": 400,
+      "a_confirmer_production": 68
     },
     {
       "nom": "Écrits, toutes sessions",
-      "recenses": 1702,
-      "paires": 1606,
-      "complets": 1229,
+      "recenses": 1735,
+      "paires": 1610,
+      "complets": 1238,
       "production": 50,
       "partiels": 75,
       "partiels_production": 17,
-      "schemas": 2982,
-      "a_confirmer": 302,
-      "a_confirmer_production": 70
+      "schemas": 2996,
+      "a_confirmer": 297,
+      "a_confirmer_production": 66
     },
     {
       "nom": "Écrits 2026",
       "recenses": 222,
       "paires": 222,
-      "complets": 96,
+      "complets": 97,
       "production": 4,
       "partiels": 9,
       "partiels_production": 5,
-      "schemas": 298,
-      "a_confirmer": 117,
+      "schemas": 301,
+      "a_confirmer": 116,
       "a_confirmer_production": 33
     },
     {
@@ -139,15 +139,15 @@
     },
     {
       "nom": "Français et philosophie",
-      "recenses": 140,
+      "recenses": 146,
       "paires": 137,
-      "complets": 67,
+      "complets": 72,
       "production": 0,
       "partiels": 0,
       "partiels_production": 0,
-      "schemas": 86,
-      "a_confirmer": 70,
-      "a_confirmer_production": 5
+      "schemas": 93,
+      "a_confirmer": 65,
+      "a_confirmer_production": 1
     },
     {
       "nom": "Français et philosophie + Arts",
@@ -211,7 +211,7 @@
     },
     {
       "nom": "Informatique + Sciences de l'ingénieur",
-      "recenses": 1,
+      "recenses": 4,
       "paires": 1,
       "complets": 0,
       "production": 0,
@@ -223,7 +223,7 @@
     },
     {
       "nom": "Langues",
-      "recenses": 541,
+      "recenses": 544,
       "paires": 502,
       "complets": 410,
       "production": 0,
@@ -235,13 +235,13 @@
     },
     {
       "nom": "Mathématiques",
-      "recenses": 272,
-      "paires": 253,
-      "complets": 227,
+      "recenses": 278,
+      "paires": 257,
+      "complets": 231,
       "production": 0,
       "partiels": 0,
       "partiels_production": 0,
-      "schemas": 511,
+      "schemas": 518,
       "a_confirmer": 26,
       "a_confirmer_production": 14
     },
@@ -283,7 +283,7 @@
     },
     {
       "nom": "Physique",
-      "recenses": 137,
+      "recenses": 143,
       "paires": 137,
       "complets": 119,
       "production": 17,
@@ -307,7 +307,7 @@
     },
     {
       "nom": "Physique + Chimie",
-      "recenses": 21,
+      "recenses": 24,
       "paires": 17,
       "complets": 5,
       "production": 4,
@@ -331,7 +331,7 @@
     },
     {
       "nom": "Sciences de l'ingénieur",
-      "recenses": 42,
+      "recenses": 48,
       "paires": 42,
       "complets": 24,
       "production": 0,
@@ -405,7 +405,7 @@
     },
     {
       "nom": "Banque PT",
-      "recenses": 12,
+      "recenses": 45,
       "paires": 12,
       "complets": 8,
       "production": 0,
@@ -502,12 +502,12 @@
     {
       "nom": "X",
       "recenses": 221,
-      "paires": 202,
-      "complets": 201,
+      "paires": 206,
+      "complets": 205,
       "production": 10,
       "partiels": 1,
       "partiels_production": 0,
-      "schemas": 455,
+      "schemas": 462,
       "a_confirmer": 0,
       "a_confirmer_production": 0
     },
@@ -515,13 +515,13 @@
       "nom": "X-ENS",
       "recenses": 274,
       "paires": 270,
-      "complets": 228,
+      "complets": 233,
       "production": 12,
       "partiels": 12,
       "partiels_production": 5,
-      "schemas": 720,
-      "a_confirmer": 30,
-      "a_confirmer_production": 24
+      "schemas": 727,
+      "a_confirmer": 25,
+      "a_confirmer_production": 20
     }
   ],
   "toutes_modalites": {
@@ -612,15 +612,15 @@
       },
       {
         "nom": "Français et philosophie",
-        "recenses": 239,
+        "recenses": 245,
         "paires": 228,
-        "complets": 117,
+        "complets": 122,
         "production": 0,
         "partiels": 2,
         "partiels_production": 0,
-        "schemas": 169,
-        "a_confirmer": 109,
-        "a_confirmer_production": 5
+        "schemas": 176,
+        "a_confirmer": 104,
+        "a_confirmer_production": 1
       },
       {
         "nom": "Français et philosophie + Arts",
@@ -720,7 +720,7 @@
       },
       {
         "nom": "Informatique + Sciences de l'ingénieur",
-        "recenses": 1,
+        "recenses": 4,
         "paires": 1,
         "complets": 0,
         "production": 0,
@@ -732,7 +732,7 @@
       },
       {
         "nom": "Langues",
-        "recenses": 661,
+        "recenses": 664,
         "paires": 597,
         "complets": 446,
         "production": 0,
@@ -756,13 +756,13 @@
       },
       {
         "nom": "Mathématiques",
-        "recenses": 287,
-        "paires": 268,
-        "complets": 238,
+        "recenses": 293,
+        "paires": 272,
+        "complets": 242,
         "production": 0,
         "partiels": 0,
         "partiels_production": 0,
-        "schemas": 522,
+        "schemas": 529,
         "a_confirmer": 30,
         "a_confirmer_production": 16
       },
@@ -816,7 +816,7 @@
       },
       {
         "nom": "Physique",
-        "recenses": 137,
+        "recenses": 143,
         "paires": 137,
         "complets": 119,
         "production": 17,
@@ -840,7 +840,7 @@
       },
       {
         "nom": "Physique + Chimie",
-        "recenses": 21,
+        "recenses": 24,
         "paires": 17,
         "complets": 5,
         "production": 4,
@@ -876,7 +876,7 @@
       },
       {
         "nom": "Sciences de l'ingénieur",
-        "recenses": 42,
+        "recenses": 48,
         "paires": 42,
         "complets": 24,
         "production": 0,
@@ -962,7 +962,7 @@
       },
       {
         "nom": "Banque PT",
-        "recenses": 12,
+        "recenses": 45,
         "paires": 12,
         "complets": 8,
         "production": 0,
@@ -1059,12 +1059,12 @@
       {
         "nom": "X",
         "recenses": 221,
-        "paires": 202,
-        "complets": 201,
+        "paires": 206,
+        "complets": 205,
         "production": 10,
         "partiels": 1,
         "partiels_production": 0,
-        "schemas": 455,
+        "schemas": 462,
         "a_confirmer": 0,
         "a_confirmer_production": 0
       },
@@ -1072,17 +1072,17 @@
         "nom": "X-ENS",
         "recenses": 274,
         "paires": 270,
-        "complets": 228,
+        "complets": 233,
         "production": 12,
         "partiels": 12,
         "partiels_production": 5,
-        "schemas": 720,
-        "a_confirmer": 30,
-        "a_confirmer_production": 24
+        "schemas": 727,
+        "a_confirmer": 25,
+        "a_confirmer_production": 20
       }
     ]
   },
-  "fichiers_telechargeables": 266,
-  "blob_tableau": "042f51768be6b613aa122eef263393e7f50063a1",
-  "sha256_classeur": "e1614d288189a41feb93e9a59cdc5e6e2186b62f49af05f315eac1ea28bc3eb4"
+  "fichiers_telechargeables": 262,
+  "blob_tableau": "8272235d6b19e767ea39dc53f3d13974e1020a8d",
+  "sha256_classeur": "a777bcee6795eaebfd2d0cafab24051f9ec898792ee7533cf8f4465c23a1f3eb"
 }
