@@ -42,5 +42,61 @@
       "modifications": true,
       "perimetre": "Rédaction des cinq parties du cahier, 23 questions avec la double numérotation 5 de la partie IV. Lecture du PDF original, notamment des diagrammes vectoriels. Tests sur 24 576 fenêtres et anneaux, 1 296 mots en base six, et construction de période 13 certifiant le rayon minimal quatre. Correction des cas de la graine nulle et du motif 354. Trois figures originales."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "2.1",
+      "2.2",
+      "3.1.1",
+      "3.1.2",
+      "3.1.3",
+      "3.1.4",
+      "3.1.5",
+      "3.1.6",
+      "3.2.1",
+      "3.2.2",
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5a",
+      "4.5b",
+      "4.6",
+      "4.7",
+      "5"
+    ],
+    "precision": "Les 23 questions de la composition et les solutions signées des deux éditions ont été rapprochées partie par partie. Les deux questions numérotées 5 de la quatrième partie et le commentaire libre du dernier diagramme disposent de réponses distinctes.",
+    "origine_attestation": {
+      "commit_du_journal": "e74cdb4512ad40b1b2e773db76f12c7d01dc124e",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction des cinq parties du cahier, 23 questions avec la double numérotation 5 de la partie IV. Lecture du PDF original, notamment des diagrammes vectoriels. Tests sur 24 576 fenêtres et anneaux, 1 296 mots en base six, et construction de période 13 certifiant le rayon minimal quatre. Correction des cas de la graine nulle et du motif 354. Trois figures originales.",
+      "sha256_sujet_controle": "873957d2e48059bf62e02565f4e84087ac5260b657e7d3a13cdf3ab8c1bac7d7"
+    },
+    "subdivisions_du_sujet": {
+      "1.3": [
+        "a",
+        "b",
+        "c"
+      ],
+      "1.4": [
+        "a",
+        "b"
+      ],
+      "2.2": [
+        "a",
+        "b"
+      ],
+      "4.3": [
+        "a",
+        "b",
+        "c"
+      ]
+    }
+  }
 }
