@@ -1,0 +1,65 @@
+{
+  "slug": "bel_bl_espagnol_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Espagnol",
+    "intitule": "Analyse et commentaire de textes ou documents en espagnol",
+    "annee": 2024,
+    "modalite": "écrit",
+    "duree": "6 heures"
+  },
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2024_blses_sujet_analyse_commentaire_espagnol.pdf",
+    "sha256_sujet": "429425c57a47aaff85a9c62f13a201f824d3d555f87eecea66b93076282e8d64",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_ecrit_espagnol_epreuve_a_option.pdf",
+    "sha256_rapport": "0db4bd5d7cfb538c3849cee7deb7856e06b98bfcfd90f79bddf38ecfcf23b8a8"
+  },
+  "figures": [
+    {
+      "question": "Analyse et commentaire de textes ou documents en espagnol",
+      "fichier": "figures/lecture.svg",
+      "legende": "Tres formas documentales de expresar los márgenes de decisión ante un aliado."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Analyse et commentaire de textes ou documents en espagnol"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Comentario histórico en español de las cuatro fuentes, de cada artículo del convenio seleccionado y de la diferencia entre 1940 y la publicación de las memorias en 1977.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "passages_ou_documents": [
+        "Carta de Negrín",
+        "Memorias de Serrano Suñer",
+        "Convenio entre Chile y Estados Unidos",
+        "Discurso de Fidel Castro en Moa"
+      ],
+      "pages_pdf_par_passage_ou_document": {
+        "Carta de Negrín": "1–2",
+        "Memorias de Serrano Suñer": "2–4",
+        "Convenio entre Chile y Estados Unidos": "4–5",
+        "Discurso de Fidel Castro en Moa": "6–7"
+      }
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "agent": "fui_physique_un",
+      "fournisseur": "codex",
+      "date": "2026-11-26",
+      "perimetre": "Comentario histórico en español de las cuatro fuentes, de cada artículo del convenio seleccionado y de la diferencia entre 1940 y la publicación de las memorias en 1977."
+    }
+  ]
+}

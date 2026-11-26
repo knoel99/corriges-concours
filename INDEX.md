@@ -678,6 +678,7 @@
 | 2017 | BEL | AL | Études théâtrales | [md](2017/bel/bel_al_etudes-theatrales_2017/brut.md) | [md](2017/bel/bel_al_etudes-theatrales_2017/guide.md) |
 | 2026 | BEL | AL | Études théâtrales | [md](2026/bel/bel_al_etudes-theatrales_2026/brut.md) | [md](2026/bel/bel_al_etudes-theatrales_2026/guide.md) |
 | 2026 | BEL | AL | Explication de documents historiques (Lyon) | [md](2026/bel/bel_al_explication-de-documents-historiques-lyon_2026/brut.md) | [md](2026/bel/bel_al_explication-de-documents-historiques-lyon_2026/guide.md) |
+| 2024 | BEL | B/L | Espagnol | [md](2024/bel/bel_bl_espagnol_2024/brut.md) | [md](2024/bel/bel_bl_espagnol_2024/guide.md) |
 | 2024 | BEL | AL | Géographie | [md](2024/bel/bel_al_geographie_2024/brut.md) | [md](2024/bel/bel_al_geographie_2024/guide.md) |
 | 2025 | BEL | AL | Français (oral tronc commun 21 juin) | [md](2025/bel/bel_al_francais-oral-tronc-commun-21-juin_2025/brut.md) | [md](2025/bel/bel_al_francais-oral-tronc-commun-21-juin_2025/guide.md) |
 | 2025 | BEL | AL | Géographie | [md](2025/bel/bel_al_geographie_2025/brut.md) | [md](2025/bel/bel_al_geographie_2025/guide.md) |
@@ -809,6 +810,7 @@
 | 2026 | BEL | BL | Philosophie (oral tronc commun, autres tirages du jury) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-autres-tirages-du-jury_2026/brut.md) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-autres-tirages-du-jury_2026/guide.md) |
 | 2026 | BEL | BL | Portugais | [md](2026/bel/bel_bl_portugais_2026/brut.md) | [md](2026/bel/bel_bl_portugais_2026/guide.md) |
 | 2026 | BEL | BL | Russe | [md](2026/bel/bel_bl_russe_2026/brut.md) | [md](2026/bel/bel_bl_russe_2026/guide.md) |
+| 2024 | BEL | B/L | Russe | [md](2024/bel/bel_bl_russe_2024/brut.md) | [md](2024/bel/bel_bl_russe_2024/guide.md) |
 | 2024 | BEL | BL | Sciences sociales | [md](2024/bel/bel_bl_sciences-sociales_2024/brut.md) | [md](2024/bel/bel_bl_sciences-sociales_2024/guide.md) |
 | 2024 | BEL | B/L | Version grecque | [md](2024/bel/bel_bl_version-grecque_2024/brut.md) | [md](2024/bel/bel_bl_version-grecque_2024/guide.md) |
 | 2024 | BEL | B/L | Version latine | [md](2024/bel/bel_bl_version-latine_2024/brut.md) | [md](2024/bel/bel_bl_version-latine_2024/guide.md) |

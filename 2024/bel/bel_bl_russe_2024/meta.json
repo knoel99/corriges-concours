@@ -1,0 +1,71 @@
+{
+  "slug": "bel_bl_russe_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Russe",
+    "intitule": "Analyse et commentaire de textes ou documents en russe",
+    "annee": 2024,
+    "modalite": "écrit",
+    "duree": "6 heures"
+  },
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2024_blses_sujet_analyse_commentaire_russe.pdf",
+    "sha256_sujet": "42c9b8f8298997b0e7a4d9b643599134a1d91590375613793566495c48c5fa0b",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_ecrit_russe.pdf",
+    "sha256_rapport": "ca324ea4872a0f4ad44f904541476158c6f78f4ae2b56713541d859c3ce23335",
+    "contexte_onu": {
+      "url": "https://www.un.org/depts/los/clcs_new/submissions_files/rus01_rev15/2023RusRev1RecSum.pdf",
+      "pages": "1 (page de titre contrôlée)",
+      "approbation_sous_commission": "2022-10-20",
+      "approbation_commission": "2023-02-06"
+    }
+  },
+  "figures": [
+    {
+      "question": "Analyse et commentaire de textes ou documents en russe",
+      "fichier": "figures/lecture.svg",
+      "legende": "В интервью разделены возможность извлечь доход, право принимать решения и способность контролировать последствия."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Analyse et commentaire de textes ou documents en russe"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Комментарий на русском языке ко всем четырём страницам интервью об Арктике. Разобраны экономические, правовые, экологические и социальные аргументы, проверены границы выводов автора.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "passages_ou_documents": [
+        "Возможные выгоды и международные связи",
+        "Группы влияния и экологические приоритеты",
+        "Шельф, санкции и пределы контроля",
+        "Коренные народы и будущее сотрудничества"
+      ],
+      "pages_pdf_par_passage_ou_document": {
+        "Возможные выгоды и международные связи": "1–2",
+        "Группы влияния и экологические приоритеты": "2–3",
+        "Шельф, санкции и пределы контроля": "3–4",
+        "Коренные народы и будущее сотрудничества": "4"
+      }
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "agent": "fui_physique_un",
+      "fournisseur": "codex",
+      "date": "2026-11-26",
+      "perimetre": "Комментарий на русском языке ко всем четырём страницам интервью об Арктике. Разобраны экономические, правовые, экологические и социальные аргументы, проверены границы выводов автора."
+    }
+  ]
+}
