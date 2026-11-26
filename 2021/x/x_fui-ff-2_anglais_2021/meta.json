@@ -35,7 +35,7 @@
     "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
     "sujet_sha256": "83c1eec65c4714d4218b05e8a86669649601fed3caa07c74d7cd9417a18481fd"
   },
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "revision": {
     "date": "2026-11-24",
     "modele": null,
@@ -100,6 +100,23 @@
       "fournisseur": "codex",
       "session": "astra_langues",
       "perimetre": "Distinction entre comparaison effective du corpus et scénario hypothétique de réappropriation. Remplacement de la conférence imaginaire par les cas documentés de Preskill, de la presse et de l’équipe chinoise."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "session": "fin_langues_x_interens",
+      "agent": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Fascicule officiel, consignes de compréhension et d’essai en fin de sujet (PDF de 6 pages). Les quatre réponses comptent respectivement 70, 66, 70, 63 mots hors références. L’essai compte 424 mots pour une cible de 450 à 10 % près, avec un séparateur tous les 50 mots. Les cinq réponses sont présentes dans les deux éditions. Le débat sur le terme anglais employé en informatique quantique appelle quatre réponses sur la réappropriation, le terme primacy, l’histoire de la physique et l’anglais scientifique. L’essai discute la position de Steven Pinker sur les changements de vocabulaire.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
   ],
   "provenance": {
@@ -116,5 +133,16 @@
       "effort": "ultra",
       "service_tier": null
     }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "Essai"
+    ],
+    "precision": "Fascicule officiel, consignes de compréhension et d’essai en fin de sujet (PDF de 6 pages). Les quatre réponses comptent respectivement 70, 66, 70, 63 mots hors références. L’essai compte 424 mots pour une cible de 450 à 10 % près, avec un séparateur tous les 50 mots. Les cinq réponses sont présentes dans les deux éditions. Le débat sur le terme anglais employé en informatique quantique appelle quatre réponses sur la réappropriation, le terme primacy, l’histoire de la physique et l’anglais scientifique. L’essai discute la position de Steven Pinker sur les changements de vocabulaire."
   }
 }
