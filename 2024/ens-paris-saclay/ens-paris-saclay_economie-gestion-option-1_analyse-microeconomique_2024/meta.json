@@ -1,0 +1,84 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_analyse-microeconomique_2024",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Analyse microéconomique",
+    "annee": 2024,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "Travail, loisir et fiscalité du salaire",
+  "gabarit": "questions",
+  "questions": 26,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2024%20-%20Rapport%20Micro%C3%A9conomique_Eco-Gestion%201_%C3%A9crit.pdf",
+    "rapport_sha256": "03735db942eadd41c74ad850ca2c3e8ab6350b760507df52b4bc0109ec13ccbf",
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/2024-10/2024_Analyse_micro_economique_EG1.pdf",
+    "sujet_sha256": "20068810ed624a58b408af9858fa8e5e3fc06128708a9b2e987caea41cc9617c"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/offre-travail.svg",
+      "question": "1.3–1.5",
+      "legende": "Exemple avec T = 8, p = w = 1 et y = 2. Le changement de salaire pivote autour de la dotation D. Un supplément de revenu exogène translate la droite."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/salaire-reservation.svg",
+      "question": "2.2–2.4",
+      "legende": "Au coin D le loisir supplémentaire vaut 1,25 unité de consommation à la marge. Un salaire réel de 1 laisse l’agent inactif ; au-dessus de 1,25, il choisit du travail."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "micro_2023_2025",
+      "session": "micro_2023_2025",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Résolution de chaque question, calculs, cas limites, figures originales et indications pas à pas."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2.1",
+      "1.2.2",
+      "1.2.3",
+      "1.3",
+      "1.4",
+      "1.5",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "3.7",
+      "3.8",
+      "3.9",
+      "3.10.1",
+      "3.10.2",
+      "3.10.3",
+      "3.11.1",
+      "3.11.2",
+      "3.11.3"
+    ]
+  }
+}
