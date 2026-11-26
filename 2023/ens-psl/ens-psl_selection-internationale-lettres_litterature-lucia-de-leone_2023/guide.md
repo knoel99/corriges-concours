@@ -4,11 +4,21 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Sujet officiel](https://www.ens.psl.eu/sites/default/files/litterature-ecrit4-sil2023.pdf)
 
-La sélection internationale demande une composition de deux heures sur un extrait traduit de l’article que Lucía De Leone consacre en 2017 à la nouvelle de Samanta Schweblin. La copie suit une même question de lecture à travers trois manières d’écrire le champ. [Article de De Leone dans 452ºF](https://revistes.ub.edu/index.php/452f/article/view/16250)
+La sélection internationale demande une composition de deux heures sur un extrait traduit de l’article que Lucía De Leone consacre en 2017 au récit de Samanta Schweblin. La copie suit une même question de lecture à travers trois manières d’écrire le champ. [Article de De Leone dans 452ºF](https://revistes.ub.edu/index.php/452f/article/view/16250)
+
+## Sujet de l’écrit
+
+Vous analyserez et commenterez la citation ci-dessous sous la forme d’un écrit organisé. Vous pouvez éclairer ces propos par des éléments de contexte, par vos connaissances d’histoire et de théorie littéraires et poétiques. Vous ferez appel à votre expérience de lectrice, sans vous limiter au corpus de votre projet de recherche.
+
+Lucia Maria De Leone, « Campos que matan. Espacios, tiempos y narración en Distancia de rescate de Samanta Schweblin », *452ºF*, 16, 2017. Extrait traduit de l’espagnol sur le feuillet. Le passage commence par « De nombreuses expressions artistiques contemporaines » et se termine par « des traces de son passé idéologisé. ».
 
 ## Préparer la réponse
+
+**Que change un traitement narratif ?** Dans la scène de Sand, répartissez les huit bœufs entre le jeune homme et l’enfant. Dans le dialogue de Schweblin, relevez au contraire ce qui oblige Amanda à revenir sur un moment dont la portée lui avait échappé. Pourquoi l’une de ces lectures répartit-elle le regard dans l’espace, tandis que l’autre oblige à remonter dans le temps ?
 
 Relever les deux opérations que rapproche la critique. Un sujet neuf peut entrer dans une forme ancienne. Inversement, un sujet familier peut devenir méconnaissable parce que les voix, le temps ou l’échelle du récit ont changé. Pour le montrer, choisir une scène dont on peut nommer le dispositif. Chez Schweblin, qui raconte la première intoxication, à qui et à quel moment par rapport à la seconde ?
 
@@ -25,6 +35,8 @@ Le pré de la première *Bucolique* de Virgile est assez frais pour qu’un berg
 Dans la première *Bucolique*, Tityre peut faire de l’ombre d’un arbre le lieu d’un chant. Mélibée doit emmener son troupeau et quitter une terre dont un autre disposera. Le texte ne charge pas une voix souveraine de choisir entre bonheur et désolation. Il fait parler l’un à l’autre deux hommes dont les conditions matérielles déterminent jusqu’à la manière de conjuguer leurs verbes. Pour Tityre, demeure la possibilité d’un lendemain semblable au jour présent. Pour Mélibée, il faut imaginer les soins donnés à ses terres poursuivis ou perdus sous une autre autorité. La proposition de passer la nuit auprès de Tityre mesure précisément la limite de sa générosité. Une soirée de repos est à sa portée, un droit de séjour lui échappe. Le conflit traverse ainsi l’image pastorale dès l’intérieur. Il serait étrange de réserver la découverte du politique à l’écrivain d’aujourd’hui.
 
 Lorsque George Sand ouvre *La Mare au diable*, elle interroge à son tour celui qui produit l’image. Dans la gravure de Holbein dont elle part, la Mort accompagne le laboureur. Une seconde scène répond à la première. Aux champs, Sand voit un homme et un enfant conduire des bœufs. Une racine accroche le soc, les bêtes s’énervent, et la voix du laboureur qui les appelle par leur nom rétablit l’accord. Ce petit incident change ce que l’on peut voir du travail. Il demande une connaissance des êtres qui y prennent part, un ajustement que ferait disparaître aussi bien l’allégorie de la peine que l’image générale d’une campagne paisible. Puis Sand fait un pas supplémentaire. Elle connaît cet homme et cet enfant et ils ont une histoire. Les faire entrer dans un roman, c’est leur donner un passé, des deuils et des préférences qui excèdent leur fonction dans un tableau. Le désir de beauté que revendique Sand oriente assurément son regard. Mais la possibilité même de discuter son idéal tient à ce montage de deux images et au passage de l’image au récit. [George Sand, les deux premiers chapitres](https://www.gutenberg.org/cache/epub/23582/pg23582-images.html)
+
+De Leone distingue ce dont une œuvre parle de la manière dont elle permet d’en faire l’expérience. On peut le vérifier sur le labour de Sand. La racine ne fait pas seulement entrer dans la fiction un fait ordinaire du travail. Quand l’attelage résiste, le jeune homme doit retenir les quatre premiers bœufs et l’enfant gouverner les quatre autres. Mon regard quitte un paysage que je croyais pouvoir embrasser d’un coup pour aller d’un groupe de bêtes à l’autre. La forme du récit fait découvrir une répartition concrète des efforts là où une scène champêtre ne semblait d’abord offrir qu’une image d’harmonie. Cette différence entre motif rural et traitement du motif aide à lire le passage à un tout autre danger chez Schweblin.
 
 ### Quand la proximité cesse de protéger
 
