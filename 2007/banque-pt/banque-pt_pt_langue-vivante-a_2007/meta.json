@@ -1,0 +1,293 @@
+{
+  "slug": "banque-pt_pt_langue-vivante-a_2007",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Langue vivante A",
+    "annee": 2007
+  },
+  "questions": 15,
+  "redaction": "IA (gpt-6.2-astra)",
+  "figures": [
+    {
+      "fichier": "figures/lecture-de.svg",
+      "question": "Allemand",
+      "legende": "Que prévoit le texte de 2006 ?"
+    },
+    {
+      "fichier": "figures/lecture-en.svg",
+      "question": "Anglais",
+      "legende": "Que devient un renseignement ?"
+    },
+    {
+      "fichier": "figures/lecture-ar.svg",
+      "question": "Arabe",
+      "legende": "Distinguer les déplacements"
+    },
+    {
+      "fichier": "figures/lecture-es.svg",
+      "question": "Espagnol",
+      "legende": "De quelle objection s’agit-il ?"
+    },
+    {
+      "fichier": "figures/lecture-it.svg",
+      "question": "Italien",
+      "legende": "Du séjour à une paix durable"
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "agent": "lva_pt_2325",
+      "perimetre": "Cinq versions françaises et dix réponses dans les langues des sujets, sources, commentaires et schémas par langue."
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2007/lv_a_2007.pdf",
+    "sujet_sha256": "1ada4201149b52d13274f709731905247cb52f30b9018b8ec36b11079f40e339",
+    "rapport_jury": "https://www.banquept.fr/article153.html",
+    "rapports_par_piece": {
+      "de": {
+        "url": "https://www.banquept.fr/documents/ecrit/rapport/2007/rapport_lv_a_all_ecrit_2007.pdf",
+        "sha256": "0e78630bd98cf349f659fb6c27258e56f55c52f2e789e5a0e2015910cc034363",
+        "pages": 2,
+        "rendus_sha256": [
+          "24822da1ff935e6d218405791535c2b8054236444abefd9fc94f8dc4b778c167",
+          "d4b65348856c2aab2df851fe4811cce8ab8e56dbe9b5ddef75baf9761da0c649"
+        ],
+        "index": "https://www.banquept.fr/article153.html",
+        "sha256_index": "12a4a0b5710f8cb8cf7b71a6b75822f8e6036e5a84a391e6b3c003c170846638"
+      },
+      "en": {
+        "url": "https://www.banquept.fr/documents/ecrit/rapport/2007/rapport_lv_a_ang_ecrit_2007.pdf",
+        "sha256": "ded4b039abdc549b1d2f4d202666ada6c31f0b387755fe7656eff63566dfc3da",
+        "pages": 3,
+        "rendus_sha256": [
+          "8f78685598da05859e6e2910f51cc2500939d154431fc0831777260599adbff2",
+          "431a14a15b62e1ab7b936328d8185f2d64b38e7eeb20069f15a53b1148d13aa6",
+          "106864ff5236d31cf4bab87cfa657df7e37984adce3270b92a7e61d3c761eb26"
+        ],
+        "index": "https://www.banquept.fr/article153.html",
+        "sha256_index": "12a4a0b5710f8cb8cf7b71a6b75822f8e6036e5a84a391e6b3c003c170846638"
+      },
+      "ar": {
+        "url": "https://www.banquept.fr/documents/ecrit/rapport/2007/rapport_lv_a_ara_ecrit_2007.pdf",
+        "sha256": "b0606891f4f2a8323d07601b839a6dfc003eff66d0a6227dccea280bd8d8b3cd",
+        "pages": 2,
+        "rendus_sha256": [
+          "3db77eaf298a22c82b05d05a03e436c66b295adf0aba27758bb871bd7ac239d7",
+          "20593e0fe0a66d3d4230ecfe97f4cc5cf1cc8fcbc219ca7dff712057c3ca7e57"
+        ],
+        "index": "https://www.banquept.fr/article153.html",
+        "sha256_index": "12a4a0b5710f8cb8cf7b71a6b75822f8e6036e5a84a391e6b3c003c170846638"
+      },
+      "es": {
+        "url": "https://www.banquept.fr/documents/ecrit/rapport/2007/rapport_lv_a_aut_ecrit_2007.pdf",
+        "sha256": "21a3c00fe84b5cc284b45347c5f05e1cbea92a5dccfdce26b141a64d07658ad1",
+        "pages": 2,
+        "rendus_sha256": [
+          "10de9fdf42d76aa8eda4e99b33e2eb908f447d23fcf040d4c83bf4a389763f0d",
+          "9c30959bee2de02eb339e17a7d56e37f1d997649b784b3e528d1309031026387"
+        ],
+        "index": "https://www.banquept.fr/article153.html",
+        "sha256_index": "12a4a0b5710f8cb8cf7b71a6b75822f8e6036e5a84a391e6b3c003c170846638"
+      }
+    },
+    "livret": "https://www.banquept.fr/documents/livret/2007/Livret_Rose_2007_1_2.pdf",
+    "livret_sha256": "92b0f9429df696ee5c62424af4ce682b8ad1b2aafa7d90e2e50e620b545274d0",
+    "index_sujets": "https://www.banquept.fr/article152.html",
+    "index_rapports": "https://www.banquept.fr/article153.html"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Allemand · version",
+      "Allemand · question a",
+      "Allemand · question b",
+      "Anglais · version",
+      "Anglais · question a",
+      "Anglais · question b",
+      "Arabe · version",
+      "Arabe · question a",
+      "Arabe · question b",
+      "Espagnol · version",
+      "Espagnol · question a",
+      "Espagnol · question b",
+      "Italien · version",
+      "Italien · question a",
+      "Italien · question b"
+    ],
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "1ada4201149b52d13274f709731905247cb52f30b9018b8ec36b11079f40e339",
+      "perimetre": "Cinq versions françaises et dix réponses dans les langues des sujets, sources, commentaires et schémas par langue.",
+      "controles": [
+        {
+          "nom": "Allemand",
+          "titre": "Nasa-Entscheidung: 2024 soll die Mondbasis stehen",
+          "pages_sujet": [
+            2,
+            3
+          ],
+          "pages_rapport": [
+            1,
+            2
+          ],
+          "rapport_url": "https://www.banquept.fr/documents/ecrit/rapport/2007/rapport_lv_a_all_ecrit_2007.pdf",
+          "rapport_sha256": "0e78630bd98cf349f659fb6c27258e56f55c52f2e789e5a0e2015910cc034363",
+          "origine": "D’après Stern, 6 décembre 2006. Texte pages 2 et 3, questions page 3. Le rapport d’allemand invite à restituer les nuances lexicales et à rédiger dans un français fluide. [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2007/rapport_lv_a_all_ecrit_2007.pdf)",
+          "bornes_version": "De « Mit einer internationalen Station » à « andere Ressourcen gewonnen werden können ».",
+          "consignes": [
+            "Die Mond-Pläne der Nasa haben mehrere Ziele. Erklären Sie, inwiefern die Ergebnisse dieser neuen Mondmission das Leben der Menschen verändern können.",
+            "Die Wissenschaftler machen seit einigen Jahren große Fortschritte im Bereich der Technik und Eroberung des Weltraums. Wie stellen Sie sich in naher und ferner Zukunft das Leben im Weltraum vor?"
+          ],
+          "compte_mots": [
+            86,
+            204
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-de.svg"
+        },
+        {
+          "nom": "Anglais",
+          "titre": "Surveillance is really getting under my skin",
+          "pages_sujet": [
+            4,
+            5
+          ],
+          "pages_rapport": [
+            1,
+            2,
+            3
+          ],
+          "rapport_url": "https://www.banquept.fr/documents/ecrit/rapport/2007/rapport_lv_a_ang_ecrit_2007.pdf",
+          "rapport_sha256": "ded4b039abdc549b1d2f4d202666ada6c31f0b387755fe7656eff63566dfc3da",
+          "origine": "Henry Porter, The Observer, 19 novembre 2006, article adapté. Texte page 4, questions page 5. Le rapport d’anglais est une pièce de trois pages. [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2007/rapport_lv_a_ang_ecrit_2007.pdf)",
+          "bornes_version": "De « Take the new passport » à « it is that much easier to clone it ».",
+          "consignes": [
+            "In what ways can RFID technologies be used to increase surveillance?",
+            "To what degree should new technologies be used to control people?"
+          ],
+          "compte_mots": [
+            87,
+            217
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-en.svg"
+        },
+        {
+          "nom": "Arabe",
+          "titre": "وطن بلا شعب",
+          "pages_sujet": [
+            6,
+            7
+          ],
+          "pages_rapport": [
+            1,
+            2
+          ],
+          "rapport_url": "https://www.banquept.fr/documents/ecrit/rapport/2007/rapport_lv_a_ara_ecrit_2007.pdf",
+          "rapport_sha256": "b0606891f4f2a8323d07601b839a6dfc003eff66d0a6227dccea280bd8d8b3cd",
+          "origine": "Daoud Al-Farhan, Al-Ahram Al-Arabi, n° 503, 11 novembre 2006. Texte page 6, questions page 7. Le rapport d’arabe souligne la difficulté des noms propres et des nombres. [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2007/rapport_lv_a_ara_ecrit_2007.pdf)",
+          "bornes_version": "De « لم تجد المنظمات الإنسانية » à « في المدارس والجامعات », soit le premier paragraphe.",
+          "consignes": [
+            "بينوا الفكرة الأساسية للنص.",
+            "هل مغادرة الوطن أثناء الحرب هو الحل الوحيد؟"
+          ],
+          "compte_mots": [
+            84,
+            203
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-ar.svg"
+        },
+        {
+          "nom": "Espagnol",
+          "titre": "La ciencia y sus adversarios culturales",
+          "pages_sujet": [
+            8,
+            9
+          ],
+          "pages_rapport": [
+            1
+          ],
+          "rapport_url": "https://www.banquept.fr/documents/ecrit/rapport/2007/rapport_lv_a_aut_ecrit_2007.pdf",
+          "rapport_sha256": "21a3c00fe84b5cc284b45347c5f05e1cbea92a5dccfdce26b141a64d07658ad1",
+          "origine": "Francisco García Olmedo, Cultural, 23 octobre 2003. Texte page 8, questions page 9. Les remarques d’espagnol figurent page 1 de la pièce commune à l’espagnol et à l’italien. [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2007/rapport_lv_a_aut_ecrit_2007.pdf)",
+          "bornes_version": "De « La Ciencia tiene hoy abiertos » à « una floreciente tecnología ».",
+          "consignes": [
+            "Analice Usted en este texto la relación que mantiene hoy la ciencia con los otros campos del saber y de la cultura en nuestras sociedades.",
+            "¿Piensa Usted que la ciencia ofrece una respuesta adecuada a tantas preguntas esenciales como las que considera Steven Weinberg?"
+          ],
+          "compte_mots": [
+            88,
+            219
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-es.svg"
+        },
+        {
+          "nom": "Italien",
+          "titre": "Erasmus, la festa dei vent’anni",
+          "pages_sujet": [
+            10,
+            11
+          ],
+          "pages_rapport": [
+            1,
+            2
+          ],
+          "rapport_url": "https://www.banquept.fr/documents/ecrit/rapport/2007/rapport_lv_a_aut_ecrit_2007.pdf",
+          "rapport_sha256": "21a3c00fe84b5cc284b45347c5f05e1cbea92a5dccfdce26b141a64d07658ad1",
+          "origine": "Federico Pace, La Repubblica, décembre 2006. Article pages 10 et 11, questions page 11. Commentaire du jury d’italien à la suite de l’espagnol, pages 1 et 2 du PDF commun. [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2007/rapport_lv_a_aut_ecrit_2007.pdf)",
+          "bornes_version": "De « Ma anche gli italiani » à « il 15% degli studenti ».",
+          "consignes": [
+            "Spiegate come una tale esperienza possa aprire la mente?",
+            "«Vera messa fuori legge della guerra tra europei». Pensate che quegli studi all’estero permettano veramente e a lungo di stabilire la pace europea?"
+          ],
+          "compte_mots": [
+            89,
+            217
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-it.svg"
+        }
+      ]
+    }
+  }
+}
