@@ -8,6 +8,12 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+Les 63 questions et les annexes A à F figurent au livret. Les deux documents réponse annoncés en page 2 manquent dans les exemplaires de Saclay et d’Éduscol, identiques octet pour octet. Les constructions de Q4.2 et Q4.10 sont données sur des grilles reconstituées. La couverture de ces deux reports graphiques reste partielle.
+
+[Sujet original](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2026/2026_PSI_SI_XSR.pdf) · [Présentation Éduscol](https://sti.eduscol.education.fr/concours_examens/concours-cpge-2026-x-ens-epreuve-de-sciences-industrielles-filiere-psi-systemes) · [Exemplaire Éduscol](https://sti.eduscol.education.fr/sites/eduscol.education.fr.sti/files/concours-examens/19517/19517-x-ens-psi-2026-si-robots-polyarticules.pdf)
+
 ## Présentation du sujet
 
 Le sujet du 14 avril 2026 étudie le robot industriel KUKA KR 500, depuis ses effecteurs jusqu’au frein de sécurité. Les six parties de cette épreuve de cinq heures comportent 63 questions. Les valeurs tirées des tracés et des vues sans cotes sont indiquées comme des lectures graphiques. [Sujet officiel de l’ENS Paris-Saclay](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2026/2026_PSI_SI_XSR.pdf)
@@ -48,6 +54,8 @@ Distinguer corps et tige du vérin. Trois solides mobiles dans le plan donnent n
 Le vérin, articulé à ses extrémités et de poids négligé, agit suivant $AC$. Isoler le harnais et prendre le moment en $B$ pour éliminer la réaction de son pivot. Les bras de levier de $F_f$ et $F_v$ valent respectivement $|y_P|$ et $BA|\sin\alpha|$. Pour un seul vérin,
 $$ F_f=F_v\frac{\sqrt{x_A^2+y_A^2}}{|y_P|}\,|\sin\alpha|.$$
 Les deux vérins identiques additionnent leurs moments. Si $F_v$ désigne la force dans chacun, il faut alors multiplier le membre de droite par deux.
+
+![Le couple au pivot est le produit de la force par la distance perpendiculaire à sa droite d’action.](figures/harnais-bras-de-levier.svg)
 
 ### Question 1.7
 
@@ -118,6 +126,8 @@ Au soulèvement, la réaction d’appui passe par le bord $K$. Le poids tend à 
 $$F_{\rm basc,g}=\frac{Mg(x_G-x_K)}{16x_K}\simeq 0{,}92\ \mathrm{kN}$$
 par boulon pour $g=9{,}81\ \mathrm{m\,s^{-2}}$. La résultante des boulons sur le socle est dirigée vers le sol.
 
+![Les tensions des boulons s’opposent au moment du poids et de la force d’inertie autour du bord K.](figures/basculement-au-bord.svg)
+
 ### Question 2.5
 
 Dans le modèle de résultante centrifuge appliquée en $G$, elle vaut $\vec R=M\omega^2(x_G\vec x_0+y_G\vec y_0)$. Avec $\rho_G=\sqrt{x_G^2+y_G^2}$, la part tangentielle par emplacement vaut $M\omega^2\rho_G/16$. La condition de Coulomb donne l’effort normal de serrage requis
@@ -146,6 +156,8 @@ Notons $N_7,N_{10}$ les normes des réactions de la platine et du piston sur une
 $$F_7=p_p S_p\frac{-\tan\alpha}{\tan\beta}.$$
 La valeur obtenue est la capacité d’arrachement pour une pression donnée, sous répartition symétrique.
 
+![Les trois réactions d’une bille sont normales aux surfaces. Leur projection radiale élimine l’effort exercé par la cage.](figures/trois-normales-bille.svg)
+
 ### Question 2.9
 
 L’équilibre axial de la platine seul donne $F_{79a}=N_7=k F_7$, avec $k=1/[6(-\sin\alpha)]\simeq0{,}355$. Le module de l’effort de contact est plus grand que sa projection axiale.
@@ -155,6 +167,8 @@ L’équilibre axial de la platine seul donne $F_{79a}=N_7=k F_7$, avec $k=1/[6(
 La position de $G_6$ en 2.3 donne $x_6\simeq3{,}401\ \mathrm m$. À la vitesse nominale maximale de l’axe 1, l’arrachement radial maximal vaut $F_7=m_6\omega^2x_6\simeq2{,}96\ \mathrm{kN}$. Les autres composantes de charge sont exclues du torseur d’arrachement imposé. Avec $S_p=5{,}03\times10^{-3}\ \mathrm{m^2}$, le seuil est
 $$p_{p,\min}=\frac{F_7\tan 16^\circ}{S_p\tan28^\circ}\simeq3{,}18\ \mathrm{bar}.$$
 Le constructeur prescrit une alimentation entre $4{,}1$ et $6{,}9\ \mathrm{bar}$. Même sa borne basse dépasse le seuil calculé et correspond à une capacité d’environ $3{,}82\ \mathrm{kN}$ dans le modèle.
+
+![Le seuil calculé croît comme le carré de la vitesse. À 69 degrés par seconde, il reste sous la pression minimale de service.](figures/seuil-pression-verrouillage.svg)
 
 ### Question 2.11
 
@@ -317,6 +331,10 @@ En entrée, l'adaptateur transforme $I^*$ en $k_{I0}I^*$. Le comparateur soustra
 
 ![Figure 9 — L’adaptateur et le capteur ont le même gain. Le comparateur soustrait le courant mesuré après conversion en tension.](figures/p4-boucle-courant.svg)
 
+Le schéma ci-dessus reconstruit les blocs depuis les équations des pages imprimées 23 et 24. La grille du document réponse 1, annoncée sur la garde intérieure, manque aux deux exemplaires institutionnels vérifiés.
+
+[Feuillet officiel, p. 25 du PDF](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2026/2026_PSI_SI_XSR.pdf#page=25)
+
 ### Question 4.3
 
 Sans correction, le gain statique de boucle est $k_{cap}K_1\simeq1{,}6\,10^{-5}$. L'erreur relative permanente à un échelon de courant est $1/(1+k_{cap}K_1)$, soit environ $0{,}999984$. La spécification impose zéro. Un correcteur PI apporte un intégrateur, donc un gain de boucle infini à fréquence nulle, et conserve un paramètre de réglage de la rapidité. L'erreur d'échelon s'annulera si la boucle fermée est stable.
@@ -348,6 +366,8 @@ Avec $\omega_V=40\ \mathrm{rad/s}$ et $K_{pV}=1\ \mathrm{A/V}$, on lit à $40\ \
 $$K_{pV}=\frac{\sqrt{f^2+(40J)^2}}{k_ck_V\sqrt2}\simeq141{,}42\ \mathrm{A/V},\qquad K_{iV}=40K_{pV}\simeq5{,}66\,10^3\ \mathrm{A/(V\,s)}.$$
 Si l'on arrondit les gains pour les appliquer, $K_{pV}=142$ et $K_{iV}=5680$ conservent le rapport prescrit et placent la coupure légèrement au-dessus de $40\ \mathrm{rad/s}$.
 
+![Les deux gains du PI sont augmentés dans le même rapport. La phase demeure identique et le gain coupe 0 dB à 40 rad/s.](figures/p4-bode-vitesse-reglee.svg)
+
 ### Question 4.8
 
 Avec les valeurs de 4.7 la coupure atteint au moins $40\ \mathrm{rad/s}$ et la marge vaut au moins $45^\circ$. Le dénominateur fermé $Jp^2+(f+k_ck_VK_{pV})p+k_ck_VK_{iV}$ est stable. La boucle est de classe un, donc l'erreur permanente de vitesse pour un échelon est nulle. Pour une rampe de pente $a=10\ \mathrm{rad/s^2}$, l'erreur de traînage exprimée en vitesse vaut
@@ -365,6 +385,10 @@ Considérons deux positions de l'axe d'épaule, avec la même charge et la même
 Sans correction $L_J(p)=(k_ck_V/f)/(1+Jp/f)$. Le plateau de gain vaut $20\log_{10}(2500)\simeq68\ \mathrm{dB}$ pour les deux inerties. Pour $J_1=10^2\ \mathrm{kg\,m^2}$ (vert), la cassure est $f/J_1=10^{-4}\ \mathrm{rad/s}$. Pour $J_2=10^3\ \mathrm{kg\,m^2}$ (rouge), elle est $10^{-5}\ \mathrm{rad/s}$. Après leur cassure, les deux asymptotes de gain décroissent de $20\ \mathrm{dB}$ par décade. À haute fréquence, la rouge se trouve $20\ \mathrm{dB}$ sous la verte. La phase exacte est $-\arctan(J\omega/f)$, de $0^\circ$ à $-90^\circ$ avec $-45^\circ$ à la cassure. Le tracé asymptotique usuel relie les deux plateaux entre un dixième et dix fois la pulsation de cassure. Multiplier l'inertie par dix déplace les courbes d'une décade vers la gauche.
 
 ![Figure 12 — Les deux tracés asymptotiques ont le même plateau de gain. Une inertie dix fois plus forte déplace chaque cassure d’une décade vers la gauche.](figures/p4-bode-inerties.svg)
+
+La lecture du feuillet imprimé p. 27 confirme les exposants positifs 2 et 3. À $10^{-4}$ rad/s, les asymptotes placent la courbe verte sur son plateau et la rouge à 20 dB sous celui-ci. Le tracé ci-dessus restitue ces réponses sur une grille reconstruite. Le document réponse 2 annoncé manque aux exemplaires vérifiés.
+
+[Feuillet officiel, p. 28 du PDF](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2026/2026_PSI_SI_XSR.pdf#page=28)
 
 ### Question 4.11
 
@@ -462,6 +486,10 @@ Le rayon efficace est entre $r_1$ et $r_2$. L’ouverture disparaît lorsqu’on
 
 ![Figure 13 — Le contact d’une couronne se décompose en éléments de surface. Chacun produit un couple proportionnel au carré du rayon par unité de rayon et d’angle.](figures/frein-contact-sectoriel.svg)
 
+En posant $r_1\to r_2$ dans le quotient du couple par $fF$, on retrouve le rayon unique de contact. Pour un disque plein $r_1=0$, le même quotient tend vers $2r_2/3$. Ces deux limites vérifient l’intégration.
+
+[Feuillet officiel, p. 34 du PDF](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2026/2026_PSI_SI_XSR.pdf#page=34)
+
 ### Question 6.4
 
 Après l’échelon de 15 V, la force contre-électromotrice est d’abord nulle. L’inductance limite la montée initiale du courant ; le moteur accélère à vide, la force contre-électromotrice croît et le courant retombe presque à zéro. Vers 26–27 ms, le contact charge et ralentit le moteur. Le courant remonte, dépasse brièvement sa valeur finale (environ 9 A au pic, 7,5 A en régime permanent) puis se stabilise. Le déplacement de l’écrou commence dès la rotation de la vis, mais il faut d’abord rattraper le jeu entre disque et garniture. L’effort naît au contact puis augmente avec la compression.
@@ -469,3 +497,9 @@ Après l’échelon de 15 V, la force contre-électromotrice est d’abord nulle
 ### Question 6.5
 
 Le plateau vaut environ $4{,}0\times10^4\ \mathrm N$ et le maximum $5{,}4\times10^4\ \mathrm N$. Le dépassement est donc voisin de $35\,\%$, inférieur aux $40\,\%$ autorisés. Pour le temps de réponse **à compter de l’échelon**, tracer la bande $[3{,}8;4{,}2]\times10^4\ \mathrm N$. Après une première traversée, la courbe redescend un peu sous la limite basse vers 39–40 ms. Son dernier retour dans la bande se situe vers 42–43 ms, au-delà des 40 ms exigées. La lecture est graphique à quelques millisecondes près. Le critère de dépassement est respecté, la double spécification de maintien n’est pas validée par cette simulation.
+
+Le plateau autorise 2 000 N d’écart de part et d’autre de 40 000 N. Le contact prend à lui seul environ 26 ms sur le budget de 40 ms, avant la montée et l’oscillation de l’effort.
+
+![Lecture des seuils à 5 % et des 40 ms sur la courbe d’effort de freinage](figures/q65-frein-seuil.svg)
+
+[Feuillet officiel, p. 36 du PDF](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2026/2026_PSI_SI_XSR.pdf#page=36)
