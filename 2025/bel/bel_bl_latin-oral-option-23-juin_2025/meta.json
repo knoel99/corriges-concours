@@ -1,0 +1,56 @@
+{
+  "slug": "bel_bl_latin-oral-option-23-juin_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Latin (oral option, 23 juin)",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie pour tous ! / Savoir considérer les esclaves / Il ne faut pas craindre la mort",
+  "questions": 0,
+  "sujets": 3,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/latin_23_juin.pdf",
+    "sujet_sha256": "267839d70cfd8a48cab210111953d45b9bb5eafbcafb70941ff6deac88328ffe",
+    "pages_pdf": "1–6",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_latin_oral_option.pdf",
+    "rapport_sha256": "d94d3b6be4704b6f827667017fadd878461b3097e48fe2f820f4dcdd0a4e3ecf",
+    "index_oraux": "https://www.ens.psl.eu/sujets-des-epreuves-orales-du-concours-bl-session-2025-0",
+    "index_oraux_sha256": "391af10509e2aaed3272651aa1c8107a143ea6f36de76d7ca95a916357380ce1",
+    "index_session": "https://www.ens.psl.eu/rapports-et-sujets-du-concours-2025-section-des-lettres-groupe-bl",
+    "index_session_sha256": "5c8c1e2d1a4820a38b0514443293fe832e3f5611808955e98dff4c6860b5e500"
+  },
+  "figures": [],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Traductions intégrales des 12, 13 et 13 lignes de Sénèque, présentation, lecture, construction et commentaire littéraire de chaque extrait dans les deux éditions ; contrôle des trois notes et des trois lexiques, attribution aux lettres 44, 47 et 24 dans le rapport.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "sujets_entierement_traites": [
+      "Philosophie pour tous !",
+      "Savoir considérer les esclaves",
+      "Il ne faut pas craindre la mort"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "redaction",
+      "sha256_sujet_controle": "267839d70cfd8a48cab210111953d45b9bb5eafbcafb70941ff6deac88328ffe",
+      "perimetre": "Traductions intégrales des 12, 13 et 13 lignes de Sénèque, présentation, lecture, construction et commentaire littéraire de chaque extrait dans les deux éditions ; contrôle des trois notes et des trois lexiques, attribution aux lettres 44, 47 et 24 dans le rapport."
+    }
+  }
+}

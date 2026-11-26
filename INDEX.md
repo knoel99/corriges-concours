@@ -710,6 +710,7 @@
 | 2026 | BEL | BL | Italien | [md](2026/bel/bel_bl_italien_2026/brut.md) | [md](2026/bel/bel_bl_italien_2026/guide.md) |
 | 2025 | BEL | BL | Hébreu | [md](2025/bel/bel_bl_hebreu_2025/brut.md) | [md](2025/bel/bel_bl_hebreu_2025/guide.md) |
 | 2025 | BEL | BL | Italien | [md](2025/bel/bel_bl_italien_2025/brut.md) | [md](2025/bel/bel_bl_italien_2025/guide.md) |
+| 2025 | BEL | BL | Latin (oral option, 23 juin) | [md](2025/bel/bel_bl_latin-oral-option-23-juin_2025/brut.md) | [md](2025/bel/bel_bl_latin-oral-option-23-juin_2025/guide.md) |
 | 2025 | BEL | BL | Mathématiques (oral) | [md](2025/bel/bel_bl_mathematiques-oral_2025/brut.md) | [md](2025/bel/bel_bl_mathematiques-oral_2025/guide.md) |
 | 2026 | BEL | BL | Mathématiques (oral) | [md](2026/bel/bel_bl_mathematiques-oral_2026/brut.md) | [md](2026/bel/bel_bl_mathematiques-oral_2026/guide.md) |
 | 2022 | BEL | AL | Allemand (commentaire et traduction) | [md](2022/bel/bel_al_allemand-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_allemand-commentaire-et-traduction_2022/guide.md) |
@@ -768,6 +769,7 @@
 | 2025 | BEL | BL | Économie (oral commun) — Protéger l’innovation | [md](2025/bel/bel_bl_economie-oral-commun-proteger-linnovation_2025/brut.md) | [md](2025/bel/bel_bl_economie-oral-commun-proteger-linnovation_2025/guide.md) |
 | 2025 | BEL | BL | Économie (oral commun) — Agriculture durable | [md](2025/bel/bel_bl_economie-oral-commun-agriculture-durable_2025/brut.md) | [md](2025/bel/bel_bl_economie-oral-commun-agriculture-durable_2025/guide.md) |
 | 2025 | BEL | BL | Histoire contemporaine (oral tronc commun) — 16 juin | [md](2025/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-16-juin_2025/brut.md) | [md](2025/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-16-juin_2025/guide.md) |
+| 2025 | BEL | BL | Russe (oral, tronc commun, 26 juin) | [md](2025/bel/bel_bl_russe-oral-tronc-commun-26-juin_2025/brut.md) | [md](2025/bel/bel_bl_russe-oral-tronc-commun-26-juin_2025/guide.md) |
 | 2025 | BEL | BL | Version grecque | [md](2025/bel/bel_bl_version-grecque_2025/brut.md) | [md](2025/bel/bel_bl_version-grecque_2025/guide.md) |
 | 2025 | BEL | BL | Version latine | [md](2025/bel/bel_bl_version-latine_2025/brut.md) | [md](2025/bel/bel_bl_version-latine_2025/guide.md) |
 | 2026 | BEL | BL | Sciences sociales | [md](2026/bel/bel_bl_sciences-sociales_2026/brut.md) | [md](2026/bel/bel_bl_sciences-sociales_2026/guide.md) |
