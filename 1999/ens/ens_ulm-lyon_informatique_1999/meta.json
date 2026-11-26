@@ -13,7 +13,8 @@
     "sujet": "https://stephane.gonnord.org/Info/ul99.pdf",
     "sujet_sha256": "30883432553fbcee3cab6ee119ce0e5b7b641bb0d7ec9c287cf93a92ae63c6ef",
     "etude_kari": "https://doi.org/10.1016/j.tcs.2004.11.021",
-    "cours_kari": "https://users.utu.fi/jkari/wp-content/uploads/sites/1251/2025/12/fullnotes.pdf"
+    "cours_kari": "https://users.utu.fi/jkari/wp-content/uploads/sites/1251/2025/12/fullnotes.pdf",
+    "sujet_ups": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-2c307e5f157d0fa47d6b"
   },
   "figures": [
     {
@@ -48,6 +49,51 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Rédaction originale des 27 questions et de leurs subdivisions sur le fac-similé complet LUC 321. Relecture des deux diagrammes dans le PDF original. Contrôle de l’algorithme par deux méthodes indépendantes sur les 256 règles binaires de voisinage trois, et des îlots finis sur 3 280 mots. Vérification du statut des trois implications de 5.3 dans les publications. Quatre schémas originaux."
+    },
+    {
+      "phase": "relecture",
+      "fournisseur": "codex",
+      "agent": "reprise_physique_ulm",
+      "session": "reprise_physique_ulm",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Contrôle de la couverture, du fac-similé et des deux éditions. Ajout de la déclaration vérifiée dans les métadonnées."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "3.7",
+      "3.8",
+      "3.9",
+      "3.10",
+      "4.1",
+      "4.2",
+      "4.3",
+      "5.1",
+      "5.2",
+      "5.3"
+    ],
+    "verification": "Confrontation des deux éditions avec les 9 pages du fac-similé UPS i993m1ea, y compris les arguments, dessins et demandes subdivisées repérés dans chaque rubrique."
+  }
 }
