@@ -748,6 +748,7 @@
 | 2026 | BEL | BL | Sociologie (oral à option) — 26 juin, sujet 1 | [md](2026/bel/bel_bl_sociologie-oral-a-option-26-juin-sujet-1_2026/brut.md) | [md](2026/bel/bel_bl_sociologie-oral-a-option-26-juin-sujet-1_2026/guide.md) |
 | 2026 | BEL | BL | Sociologie (oral à option) — 26 juin, sujet 2 | [md](2026/bel/bel_bl_sociologie-oral-a-option-26-juin-sujet-2_2026/brut.md) | [md](2026/bel/bel_bl_sociologie-oral-a-option-26-juin-sujet-2_2026/guide.md) |
 | 2026 | BEL | BL | Sociologie (oral à option) — 26 juin, sujet 3 | [md](2026/bel/bel_bl_sociologie-oral-a-option-26-juin-sujet-3_2026/brut.md) | [md](2026/bel/bel_bl_sociologie-oral-a-option-26-juin-sujet-3_2026/guide.md) |
+| 2025 | BEL | BL | Sociologie (oral commun) — Le vote d’extrême droite | [md](2025/bel/bel_bl_sociologie-oral-commun-vote-dextreme-droite_2025/brut.md) | [md](2025/bel/bel_bl_sociologie-oral-commun-vote-dextreme-droite_2025/guide.md) |
 | 2026 | BEL | BL | Sociologie (oral commun) — 22 juin, sujet 1 | [md](2026/bel/bel_bl_sociologie-oral-commun-22-juin-sujet-1_2026/brut.md) | [md](2026/bel/bel_bl_sociologie-oral-commun-22-juin-sujet-1_2026/guide.md) |
 | 2026 | BEL | BL | Sociologie (oral commun) — 22 juin, sujet 2 | [md](2026/bel/bel_bl_sociologie-oral-commun-22-juin-sujet-2_2026/brut.md) | [md](2026/bel/bel_bl_sociologie-oral-commun-22-juin-sujet-2_2026/guide.md) |
 | 2026 | BEL | BL | Sociologie (oral commun) — 22 juin, sujet 3 | [md](2026/bel/bel_bl_sociologie-oral-commun-22-juin-sujet-3_2026/brut.md) | [md](2026/bel/bel_bl_sociologie-oral-commun-22-juin-sujet-3_2026/guide.md) |
