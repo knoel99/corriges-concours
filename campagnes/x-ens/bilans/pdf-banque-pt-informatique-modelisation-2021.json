@@ -1,0 +1,1101 @@
+{
+  "slug": "banque-pt_pt_informatique-et-modelisation_2021",
+  "commit_export": "cdeda4faf42ae3e071973299ae6b19fc571f9b3a",
+  "gabarit": "scripts/exporter de la même révision",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Résolution des 40 questions, rédaction de deux éditions, programmes Python, indications et sept schémas originaux."
+    },
+    {
+      "phase": "revision",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture avec le fascicule et les deux pages du jury, vérification des rayons avec le document réponse, du couple magnétique et des demi-pas, contrôle du pire cas de comparaison, du sens des rotations et des requêtes SQL."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21",
+      "Q22",
+      "Q23",
+      "Q24",
+      "Q25",
+      "Q26",
+      "Q27",
+      "Q28",
+      "Q29",
+      "Q30",
+      "Q31",
+      "Q32",
+      "Q33",
+      "Q34",
+      "Q35",
+      "Q36",
+      "Q37",
+      "Q38",
+      "Q39",
+      "Q40"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Q1",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ],
+        "titre": "Position du capteur et taille de l'image"
+      },
+      {
+        "question": "Q2",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ],
+        "titre": "Rayon du disque de flou"
+      },
+      {
+        "question": "Q3",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ],
+        "titre": "Taille d'un pixel et tolérance"
+      },
+      {
+        "question": "Q4",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ],
+        "titre": "Conjugaison des plans auxiliaires"
+      },
+      {
+        "question": "Q5",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ],
+        "titre": "Construction quand A appartient à P"
+      },
+      {
+        "question": "Q6",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ],
+        "titre": "Ordonnées des deux images nettes"
+      },
+      {
+        "question": "Q7",
+        "page_pdf": 4,
+        "pages_pdf": [
+          4
+        ],
+        "titre": "Écart des images au point"
+      },
+      {
+        "question": "Q8",
+        "page_pdf": 4,
+        "pages_pdf": [
+          4,
+          19
+        ],
+        "titre": "Construction de l'image hors du plan de référence"
+      },
+      {
+        "question": "Q9",
+        "page_pdf": 4,
+        "pages_pdf": [
+          4,
+          19
+        ],
+        "titre": "Rayons de bord sur le document réponse"
+      },
+      {
+        "question": "Q10",
+        "page_pdf": 4,
+        "pages_pdf": [
+          4
+        ],
+        "titre": "Extrémités de la tache supérieure"
+      },
+      {
+        "question": "Q11",
+        "page_pdf": 4,
+        "pages_pdf": [
+          4
+        ],
+        "titre": "Différence de phase mesurée"
+      },
+      {
+        "question": "Q12",
+        "page_pdf": 4,
+        "pages_pdf": [
+          4
+        ],
+        "titre": "Variation par rapport au réglage net"
+      },
+      {
+        "question": "Q13",
+        "page_pdf": 5,
+        "pages_pdf": [
+          5
+        ],
+        "titre": "Déplacement de mise au point"
+      },
+      {
+        "question": "Q14",
+        "page_pdf": 5,
+        "pages_pdf": [
+          5
+        ],
+        "titre": "Champ et positions successives du rotor"
+      },
+      {
+        "question": "Q15",
+        "page_pdf": 5,
+        "pages_pdf": [
+          5
+        ],
+        "titre": "Moment magnétique d'une spire et d'un aimant"
+      },
+      {
+        "question": "Q16",
+        "page_pdf": 6,
+        "pages_pdf": [
+          6
+        ],
+        "titre": "Moment axial des forces de Laplace"
+      },
+      {
+        "question": "Q17",
+        "page_pdf": 6,
+        "pages_pdf": [
+          6
+        ],
+        "titre": "Force électromotrice induite et alimentation"
+      },
+      {
+        "question": "Q18",
+        "page_pdf": 7,
+        "pages_pdf": [
+          7
+        ],
+        "titre": "Mémoire nécessaire"
+      },
+      {
+        "question": "Q19",
+        "page_pdf": 8,
+        "pages_pdf": [
+          8
+        ],
+        "titre": "Linéarisation d'une composante"
+      },
+      {
+        "question": "Q20",
+        "page_pdf": 8,
+        "pages_pdf": [
+          8
+        ],
+        "titre": "Luminance d'un pixel"
+      },
+      {
+        "question": "Q21",
+        "page_pdf": 8,
+        "pages_pdf": [
+          8
+        ],
+        "titre": "Conversion de l'image entière"
+      },
+      {
+        "question": "Q22",
+        "page_pdf": 8,
+        "pages_pdf": [
+          8
+        ],
+        "titre": "Produit de deux matrices locales"
+      },
+      {
+        "question": "Q23",
+        "page_pdf": 8,
+        "pages_pdf": [
+          8
+        ],
+        "titre": "Contraste d'un pixel intérieur"
+      },
+      {
+        "question": "Q24",
+        "page_pdf": 8,
+        "pages_pdf": [
+          8
+        ],
+        "titre": "Contraste moyen"
+      },
+      {
+        "question": "Q25",
+        "page_pdf": 9,
+        "pages_pdf": [
+          9
+        ],
+        "titre": "Régler l'objectif par recherche du maximum"
+      },
+      {
+        "question": "Q26",
+        "page_pdf": 9,
+        "pages_pdf": [
+          9
+        ],
+        "titre": "Extraire deux fenêtres superposables"
+      },
+      {
+        "question": "Q27",
+        "page_pdf": 9,
+        "pages_pdf": [
+          9
+        ],
+        "titre": "Comparer deux listes à la main"
+      },
+      {
+        "question": "Q28",
+        "page_pdf": 9,
+        "pages_pdf": [
+          9
+        ],
+        "titre": "Rechercher un décalage exact"
+      },
+      {
+        "question": "Q29",
+        "page_pdf": 9,
+        "pages_pdf": [
+          9
+        ],
+        "titre": "Nombre de comparaisons"
+      },
+      {
+        "question": "Q30",
+        "page_pdf": 10,
+        "pages_pdf": [
+          10
+        ],
+        "titre": "Erreur quadratique moyenne"
+      },
+      {
+        "question": "Q31",
+        "page_pdf": 10,
+        "pages_pdf": [
+          10
+        ],
+        "titre": "Décalage d'erreur minimale"
+      },
+      {
+        "question": "Q32",
+        "page_pdf": 10,
+        "pages_pdf": [
+          10
+        ],
+        "titre": "Contraste ou phase"
+      },
+      {
+        "question": "Q33",
+        "page_pdf": 11,
+        "pages_pdf": [
+          11
+        ],
+        "titre": "Commander un seul demi-pas positif"
+      },
+      {
+        "question": "Q34",
+        "page_pdf": 12,
+        "pages_pdf": [
+          12
+        ],
+        "titre": "Atteindre une position absolue"
+      },
+      {
+        "question": "Q35",
+        "page_pdf": 12,
+        "pages_pdf": [
+          12
+        ],
+        "titre": "Clé primaire"
+      },
+      {
+        "question": "Q36",
+        "page_pdf": 12,
+        "pages_pdf": [
+          12
+        ],
+        "titre": "Photos du 11 novembre 2018"
+      },
+      {
+        "question": "Q37",
+        "page_pdf": 12,
+        "pages_pdf": [
+          12
+        ],
+        "titre": "Photographes ayant travaillé ce jour-là"
+      },
+      {
+        "question": "Q38",
+        "page_pdf": 12,
+        "pages_pdf": [
+          12
+        ],
+        "titre": "Photographe et heure de chaque cliché"
+      },
+      {
+        "question": "Q39",
+        "page_pdf": 12,
+        "pages_pdf": [
+          12
+        ],
+        "titre": "Rotation d'un demi-tour"
+      },
+      {
+        "question": "Q40",
+        "page_pdf": 12,
+        "pages_pdf": [
+          12
+        ],
+        "titre": "Quart de tour trigonométrique"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  },
+  "pieces": {
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2021/info_mod_2021_pt.pdf",
+      "sha256": "8ae7d60fed92a70241748e04a986127b00998392f1aedb95212eb48001c51ade",
+      "pages": 20,
+      "pieces_jointes": [],
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "da58b7f3f5ea4a5acb9588dbe0ed8ee3bbcbdfd0f98f75d9b6df210934a081d7"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "0e1e6e87c172b2976058accdbdc2ba3950638addb72c3bb76194887f20b86886"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "0c1f3fe49140d1a11fcde9007ec504b6cd3ba5dff5d83afb1a5944bf298e5e5d"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "2fbc479b3954da3eae32d771cda8f3493e1ed1f556b90ba7ebb2277bbee9d451"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "e5fdcad4277e2f1eb25b72636b622da9d5356aee7aacba48a4ef854f12df9a56"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "5dc00ceb82c7f4f872497411cd0b97335b8b6e7883d02ef99e373e57781cecd0"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "7b5570030188f83ce4044a6e0a6455ebcd91dc93e35714581047dd627c88c16b"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "08afb588b0c6e2802d3d9e3c267a957ccec2a0ee763dff53f29647fe25991f3c"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "7230d7d36d74c104867422cbcafc9c8f4f65b669cca7029bc05f0e04d3e610c2"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "9f02bd9a3869010170d0e9d5bb239accf26f22ac2ca2c37e2910ec52b6feb62e"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "f82f7c01b1ef8eb5d5292993e0046a9cd1ddb0c8d8ccf6229d27516512eddc84"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "5acacacf81b77d5df4b9144e3aacb2eeea7e82e2b3238a28c131412c0805448c"
+        },
+        {
+          "numero": 13,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        },
+        {
+          "numero": 14,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        },
+        {
+          "numero": 15,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        },
+        {
+          "numero": 16,
+          "rendu_sha256": "8f5bdb4da56c57e674d332d84970069f56858a71460c4fb4792ea8c358605e91"
+        },
+        {
+          "numero": 17,
+          "rendu_sha256": "3e9353c8c7cf833bd926facb7855be09c72338ce853b7e959dc3d33df967e652"
+        },
+        {
+          "numero": 18,
+          "rendu_sha256": "ef671d5b6a07ed378867f6c9d8e53276c470f5517d43afa1c67e257ceaa14374"
+        },
+        {
+          "numero": 19,
+          "rendu_sha256": "e0e95990dbf5b38bb01c0a6ca5d2e0b09cd962febcac785ab3e875c1f00d185e"
+        },
+        {
+          "numero": 20,
+          "rendu_sha256": "a3028b76b749a877113fe4a2ffddd8d289c595a353eea318a6734bd458fff9c0"
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2021/rapport_info_model_ecrit_2021.pdf",
+      "sha256": "a526be9095510e5c809c3642b1737b0a3702f53357b4b9a343f1f395b6df4885",
+      "pages": 2,
+      "pieces_jointes": [],
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "d7c8596d0e03951e03489ebcdd4c2811f24a299afab54a5b66f6b7532217d07a"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "da399844d8dbda1f0b13de528bc82047c4653917ff0101ac18e6c177ada3acf8"
+        }
+      ]
+    }
+  },
+  "controles": {
+    "portee": "40 questions, sept schémas originaux. Q2, Q5, Q8, Q9, Q14, Q39 et Q40 chacune illustrée. La comparaison Q32 est vérifiée à cinq lignes maximum dans chaque PDF.",
+    "document_reponse": "Le PDF du sujet comporte 20 pages et contient le fascicule réponse aux pages physiques 17–20. Page 19, imprimée 3/4, gabarit des constructions des questions 8 et 9. Le sujet, le rapport et la case de leurs liens annuels ont été contrôlés.",
+    "executions": "Conjugaison, tolérance de netteté, rayons de bord, cinq défocalisations et signe du déplacement. Couple de Laplace et puissance. Luminance, Sobel, images rectangulaires, arrêt sur maximum ou butée. Les 161 décalages sont testés avec et sans bruit. Tests effectifs des 20 et 9 620 comparaisons, des 2 000 changements de demi-pas, des rotations et des trois requêtes SQL avec des homonymes et des clichés simultanés.",
+    "fonctions_du_module_identiques_aux_deux_markdown": [
+      "Clinear",
+      "NiveauxGris",
+      "Y",
+      "comparaison",
+      "contraste",
+      "contraste_pixel",
+      "convolution",
+      "erreur",
+      "extraction",
+      "faire_un_pas_positif",
+      "position_objectif",
+      "recherche_decalage",
+      "recherche_decalage_2",
+      "reglage",
+      "rotation_180",
+      "rotation_90"
+    ],
+    "requetes_sql_identiques_aux_deux_markdown": true
+  },
+  "pdf": {
+    "brut": {
+      "pages": 13,
+      "nombre_signets": 47,
+      "signets": [
+        [
+          1,
+          "Mise au point de l'objectif",
+          1
+        ],
+        [
+          2,
+          "Q1 — Position du capteur et taille de l'image",
+          1
+        ],
+        [
+          2,
+          "Q2 — Rayon du disque de flou",
+          1
+        ],
+        [
+          2,
+          "Q3 — Taille d'un pixel et tolérance",
+          2
+        ],
+        [
+          1,
+          "Mesure optique de la différence de phase",
+          2
+        ],
+        [
+          2,
+          "Q4 — Conjugaison des plans auxiliaires",
+          2
+        ],
+        [
+          2,
+          "Q5 — Construction quand A appartient à P",
+          2
+        ],
+        [
+          2,
+          "Q6 — Ordonnées des deux images nettes",
+          3
+        ],
+        [
+          2,
+          "Q7 — Écart des images au point",
+          3
+        ],
+        [
+          2,
+          "Q8 — Construction de l'image hors du plan de référence",
+          3
+        ],
+        [
+          2,
+          "Q9 — Rayons de bord sur le document réponse",
+          4
+        ],
+        [
+          2,
+          "Q10 — Extrémités de la tache supérieure",
+          4
+        ],
+        [
+          2,
+          "Q11 — Différence de phase mesurée",
+          5
+        ],
+        [
+          2,
+          "Q12 — Variation par rapport au réglage net",
+          5
+        ],
+        [
+          2,
+          "Q13 — Déplacement de mise au point",
+          5
+        ],
+        [
+          1,
+          "Moment magnétique et moteur",
+          5
+        ],
+        [
+          2,
+          "Q14 — Champ et positions successives du rotor",
+          5
+        ],
+        [
+          2,
+          "Q15 — Moment magnétique d'une spire et d'un aimant",
+          6
+        ],
+        [
+          2,
+          "Q16 — Moment axial des forces de Laplace",
+          6
+        ],
+        [
+          2,
+          "Q17 — Force électromotrice induite et alimentation",
+          6
+        ],
+        [
+          1,
+          "Mise au point par contraste",
+          6
+        ],
+        [
+          2,
+          "Q18 — Mémoire nécessaire",
+          6
+        ],
+        [
+          2,
+          "Q19 — Linéarisation d'une composante",
+          7
+        ],
+        [
+          2,
+          "Q20 — Luminance d'un pixel",
+          7
+        ],
+        [
+          2,
+          "Q21 — Conversion de l'image entière",
+          7
+        ],
+        [
+          2,
+          "Q22 — Produit de deux matrices locales",
+          7
+        ],
+        [
+          2,
+          "Q23 — Contraste d'un pixel intérieur",
+          7
+        ],
+        [
+          2,
+          "Q24 — Contraste moyen",
+          8
+        ],
+        [
+          2,
+          "Q25 — Régler l'objectif par recherche du maximum",
+          8
+        ],
+        [
+          1,
+          "Mise au point par détection de phase",
+          9
+        ],
+        [
+          2,
+          "Q26 — Extraire deux fenêtres superposables",
+          9
+        ],
+        [
+          2,
+          "Q27 — Comparer deux listes à la main",
+          9
+        ],
+        [
+          2,
+          "Q28 — Rechercher un décalage exact",
+          9
+        ],
+        [
+          2,
+          "Q29 — Nombre de comparaisons",
+          10
+        ],
+        [
+          2,
+          "Q30 — Erreur quadratique moyenne",
+          10
+        ],
+        [
+          2,
+          "Q31 — Décalage d'erreur minimale",
+          10
+        ],
+        [
+          2,
+          "Q32 — Contraste ou phase",
+          10
+        ],
+        [
+          1,
+          "Pilotage du moteur pas à pas",
+          11
+        ],
+        [
+          2,
+          "Q33 — Commander un seul demi-pas positif",
+          11
+        ],
+        [
+          2,
+          "Q34 — Atteindre une position absolue",
+          11
+        ],
+        [
+          1,
+          "Base de données et orientation des clichés",
+          11
+        ],
+        [
+          2,
+          "Q35 — Clé primaire",
+          11
+        ],
+        [
+          2,
+          "Q36 — Photos du 11 novembre 2018",
+          11
+        ],
+        [
+          2,
+          "Q37 — Photographes ayant travaillé ce jour-là",
+          12
+        ],
+        [
+          2,
+          "Q38 — Photographe et heure de chaque cliché",
+          12
+        ],
+        [
+          2,
+          "Q39 — Rotation d'un demi-tour",
+          12
+        ],
+        [
+          2,
+          "Q40 — Quart de tour trigonométrique",
+          13
+        ]
+      ],
+      "pages_figures": [
+        2,
+        3,
+        4,
+        4,
+        6,
+        13,
+        13
+      ],
+      "lignes_reponse_Q32": 4,
+      "sha256": "903ec7d69c0d82ebc451ce2a2122e88c118827b38861faab8c6cc168d1c29382",
+      "rendus_sha256": [
+        "7fba22d24e0eaba7e00e0efd050cbe9211ccf27b140fea00431ece8c768f86ec",
+        "02049662175d2e755f13763fbc04e41af6070bb9f0ea3aebc14ab74e7141794d",
+        "85ce52b022eaca53a4ebaa59bfaab48b996f4f08f7dd1bf1d41081b013e8a945",
+        "a92262a137e1beac581efcd2909716e04584a6c9713aa891dff7866c901d0650",
+        "f5507576087d50ab6aa49d779a833d45f5505ec61202e527d0e4716495e9e8b1",
+        "c27c7b3f6ceda261ae5d8751f4c20c87791c6af4ecbf7caa6b79b891266ca4e7",
+        "78db969718dbdc550ca49ced0dc9908a7834407f53a5bb396a7040f81d686da4",
+        "da2b4adbc348aca8533d58a44985b97a02e55378a7ebab5bfa1dc19ee683a61c",
+        "1f2aa1933c6c3f193f3d9bed51810230812410bc5070086f65977d4d6214c84d",
+        "63a621e3927ac5248c4b11ed311b3dadad54d84e100e5ef9ff5692276a87c4fc",
+        "df4e0db266428ebf8bfa5bd0c1408d6b83c436640b945a1546aebc401e727c79",
+        "ea3b0a516ce33e9c862017f3ba0a1a40da078fb2161203369a84b21ab0e50d0c",
+        "15e33cf7b2c42c93d250c5699e1bc64f2977287910402db1558816dadab36c8c"
+      ]
+    },
+    "guide": {
+      "pages": 16,
+      "nombre_signets": 47,
+      "signets": [
+        [
+          1,
+          "Mise au point de l'objectif",
+          1
+        ],
+        [
+          2,
+          "Q1 — Position du capteur et taille de l'image",
+          1
+        ],
+        [
+          2,
+          "Q2 — Rayon du disque de flou",
+          1
+        ],
+        [
+          2,
+          "Q3 — Taille d'un pixel et tolérance",
+          2
+        ],
+        [
+          1,
+          "Mesure optique de la différence de phase",
+          2
+        ],
+        [
+          2,
+          "Q4 — Conjugaison des plans auxiliaires",
+          2
+        ],
+        [
+          2,
+          "Q5 — Construction quand A appartient à P",
+          3
+        ],
+        [
+          2,
+          "Q6 — Ordonnées des deux images nettes",
+          3
+        ],
+        [
+          2,
+          "Q7 — Écart des images au point",
+          3
+        ],
+        [
+          2,
+          "Q8 — Construction de l'image hors du plan de référence",
+          4
+        ],
+        [
+          2,
+          "Q9 — Rayons de bord sur le document réponse",
+          4
+        ],
+        [
+          2,
+          "Q10 — Extrémités de la tache supérieure",
+          5
+        ],
+        [
+          2,
+          "Q11 — Différence de phase mesurée",
+          5
+        ],
+        [
+          2,
+          "Q12 — Variation par rapport au réglage net",
+          6
+        ],
+        [
+          2,
+          "Q13 — Déplacement de mise au point",
+          6
+        ],
+        [
+          1,
+          "Moment magnétique et moteur",
+          6
+        ],
+        [
+          2,
+          "Q14 — Champ et positions successives du rotor",
+          6
+        ],
+        [
+          2,
+          "Q15 — Moment magnétique d'une spire et d'un aimant",
+          7
+        ],
+        [
+          2,
+          "Q16 — Moment axial des forces de Laplace",
+          7
+        ],
+        [
+          2,
+          "Q17 — Force électromotrice induite et alimentation",
+          7
+        ],
+        [
+          1,
+          "Mise au point par contraste",
+          8
+        ],
+        [
+          2,
+          "Q18 — Mémoire nécessaire",
+          8
+        ],
+        [
+          2,
+          "Q19 — Linéarisation d'une composante",
+          8
+        ],
+        [
+          2,
+          "Q20 — Luminance d'un pixel",
+          8
+        ],
+        [
+          2,
+          "Q21 — Conversion de l'image entière",
+          9
+        ],
+        [
+          2,
+          "Q22 — Produit de deux matrices locales",
+          9
+        ],
+        [
+          2,
+          "Q23 — Contraste d'un pixel intérieur",
+          9
+        ],
+        [
+          2,
+          "Q24 — Contraste moyen",
+          10
+        ],
+        [
+          2,
+          "Q25 — Régler l'objectif par recherche du maximum",
+          10
+        ],
+        [
+          1,
+          "Mise au point par détection de phase",
+          11
+        ],
+        [
+          2,
+          "Q26 — Extraire deux fenêtres superposables",
+          11
+        ],
+        [
+          2,
+          "Q27 — Comparer deux listes à la main",
+          11
+        ],
+        [
+          2,
+          "Q28 — Rechercher un décalage exact",
+          11
+        ],
+        [
+          2,
+          "Q29 — Nombre de comparaisons",
+          12
+        ],
+        [
+          2,
+          "Q30 — Erreur quadratique moyenne",
+          12
+        ],
+        [
+          2,
+          "Q31 — Décalage d'erreur minimale",
+          13
+        ],
+        [
+          2,
+          "Q32 — Contraste ou phase",
+          13
+        ],
+        [
+          1,
+          "Pilotage du moteur pas à pas",
+          13
+        ],
+        [
+          2,
+          "Q33 — Commander un seul demi-pas positif",
+          13
+        ],
+        [
+          2,
+          "Q34 — Atteindre une position absolue",
+          14
+        ],
+        [
+          1,
+          "Base de données et orientation des clichés",
+          14
+        ],
+        [
+          2,
+          "Q35 — Clé primaire",
+          14
+        ],
+        [
+          2,
+          "Q36 — Photos du 11 novembre 2018",
+          14
+        ],
+        [
+          2,
+          "Q37 — Photographes ayant travaillé ce jour-là",
+          15
+        ],
+        [
+          2,
+          "Q38 — Photographe et heure de chaque cliché",
+          15
+        ],
+        [
+          2,
+          "Q39 — Rotation d'un demi-tour",
+          15
+        ],
+        [
+          2,
+          "Q40 — Quart de tour trigonométrique",
+          16
+        ]
+      ],
+      "pages_figures": [
+        2,
+        3,
+        4,
+        5,
+        7,
+        16,
+        16
+      ],
+      "lignes_reponse_Q32": 4,
+      "sha256": "2c904e64407ab028c638d531d3d7334ff49ddeb61fe1674472349609d16b5014",
+      "rendus_sha256": [
+        "96d97dfa8d8f00342ab3e37d0de716404a8c160b1c77d020e01579d1d38d797c",
+        "3deca089a748bdbc3783e45f6a6ccca3323f740bbf579b7f372b6ef8a3f2a2c3",
+        "f5ebbe314bd8c1f9ae508a63d381ec9784a531a90eed7a08d3405516a34fdd9d",
+        "d68f35dd26234e91a7d93230ec4f88c0fd18cc23bda25278517a09b791ba067b",
+        "fa02c9fbc208b9e6c79ee29f0603ced741753fb70d76621a02b3c85a7166171e",
+        "e8035d73afc473b3531d2bd87ce7e9fbd615f2380b61fbfd7169ced520b654cf",
+        "b30d7a08b391cb6333218721fdcffc61290907a2b2d81e2c6935bd572a282829",
+        "085b966367de9d6b71a8ba7f4aa5a0ddf367e27e843ff18b29d2007a1d779048",
+        "8058c574492357fb16a8f9578b0264eb831b8faa490625d2e36587d4511e20a4",
+        "ad3e67ce20d3c99a20d604ba40cc948dd0e52735e2c9624696102ff3938840b7",
+        "fd8c2467446c5fe2a25b8205a324a9ca105064ec83bc7e2870cdb20cf8b04e7c",
+        "99e65ce69ad39315a27be0981a6af0f292fa6109022bef53dcf79f90df536c62",
+        "775aefbec7444adcf6aa039c53ef40e42ec811b6e9641d0a2aaaa965c75fde64",
+        "f596c7ece671679df77fc10a486121a47d2decb77dcd6438e0eb7e7d9f62a284",
+        "fb42a4c258a573bd3d4cc468465e9b922ab37f395c221f94884e6c2dd005fefc",
+        "34ebf390c12d3a373c38f9134de0aa2cd89dc13e15a6d4805bd3a77281a482d4"
+      ]
+    }
+  },
+  "empreintes": {
+    "meta.json": "951fef5208390416ed39e29a7c2a0a2035da30d28796d3ca33b550037303b024",
+    "brut.md": "14f332f39f2b61319a28d1f8afb6e6921be82580d5bdc6c86d4d3be424e101e1",
+    "guide.md": "9a67230bf6abe7ea70ab493241617c0ceafcb1f17f9e0b534d6f37d199780643",
+    "programmes.py": "d15914fec59300e78b15689ce74dec77d1415a786bdc1fdcf7df96d6cba49cc2",
+    "verifier_calculs.py": "fcb9f3b59e3ad2d057baa78d43de81ea6bd3859e15741e2aef546dd315809ac1",
+    "requetes.sql": "024c6f8dc25559760473edfbb766ae0b8d929a0522d15195001a3f81c133343c",
+    "figures/flou.svg": "e17b2dc8be00eaa0d1553dcedcadc3322cc1f8cbb3d9d7a0e2f8ef752d69e71a",
+    "figures/lentilles-net.svg": "c135bda92955823b7c664d00949d00ed661f592b39e552a5c2a02035a097aba1",
+    "figures/lentilles-construction.svg": "9cbc77a953ddad7f28d86eb30d8928c891fda615457414c58467d7ede8c5721b",
+    "figures/lentilles-bords.svg": "240202300c76cc14f89ae4ec2b1b17494048d466eaaa58b2bc7214ca58c5f0cf",
+    "figures/moments.svg": "10aaf5c6bbf4155f085409d5c009eb4e2abd597840ca7371710250d0ec1c8cc8",
+    "figures/rotation-180.svg": "00f3aa02676d1d7082b9dcb28e6d8c7a88cd6d34c8b71a604019e557362f381d",
+    "figures/rotation-90.svg": "fb151c2dc91f827351878743f7d1b741202fb1017554cd52b6c5a3d37631ff2b",
+    "bilan-compilation.md": "963658f4c33f4b22f5cf68ccaf362c2f2907332dcc4e606e7d643dae2ee623f1",
+    "recu-tests.txt": "090871c3e3001530122edb8ca0af4055d2b4b42b0f2d935d7b2fd8f37c62050f",
+    "brut.pdf": "903ec7d69c0d82ebc451ce2a2122e88c118827b38861faab8c6cc168d1c29382",
+    "guide.pdf": "2c904e64407ab028c638d531d3d7334ff49ddeb61fe1674472349609d16b5014",
+    "apercu.jpg": "f677b0e72be988be065bdfd5c16c11d72ab7a7c72acc42922b8b9661f07d5126"
+  },
+  "archive": "Banque-PT-informatique-modelisation-2021.zip",
+  "sha256": "7b8724ecf80969e85bec97b9f289fdde5c57ec75adec67d9f4798a3fc909b1f5"
+}
