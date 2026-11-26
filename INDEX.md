@@ -5,14 +5,22 @@
 | 2018 | Banque PT | PT | Informatique et modélisation | [md](2018/banque-pt/banque-pt_pt_informatique-et-modelisation_2018/brut.md) | [md](2018/banque-pt/banque-pt_pt_informatique-et-modelisation_2018/guide.md) |
 | 2021 | Banque PT | PT | Informatique et modélisation | [md](2021/banque-pt/banque-pt_pt_informatique-et-modelisation_2021/brut.md) | [md](2021/banque-pt/banque-pt_pt_informatique-et-modelisation_2021/guide.md) |
 | 2024 | Banque PT | PT | Informatique et modélisation | [md](2024/banque-pt/banque-pt_pt_informatique-et-modelisation_2024/brut.md) | [md](2024/banque-pt/banque-pt_pt_informatique-et-modelisation_2024/guide.md) |
+| 2016 | Banque PT | PT | Langue vivante A | [md](2016/banque-pt/banque-pt_pt_langue-vivante-a_2016/brut.md) | [md](2016/banque-pt/banque-pt_pt_langue-vivante-a_2016/guide.md) |
 | 2020 | Banque PT | PT | Langue vivante A | [md](2020/banque-pt/banque-pt_pt_langue-vivante-a_2020/brut.md) | [md](2020/banque-pt/banque-pt_pt_langue-vivante-a_2020/guide.md) |
 | 2021 | Banque PT | PT | Langue vivante A | [md](2021/banque-pt/banque-pt_pt_langue-vivante-a_2021/brut.md) | [md](2021/banque-pt/banque-pt_pt_langue-vivante-a_2021/guide.md) |
 | 2022 | Banque PT | PT | Langue vivante A | [md](2022/banque-pt/banque-pt_pt_langue-vivante-a_2022/brut.md) | [md](2022/banque-pt/banque-pt_pt_langue-vivante-a_2022/guide.md) |
 | 2023 | Banque PT | PT | Langue vivante A | [md](2023/banque-pt/banque-pt_pt_langue-vivante-a_2023/brut.md) | [md](2023/banque-pt/banque-pt_pt_langue-vivante-a_2023/guide.md) |
 | 2024 | Banque PT | PT | Langue vivante A | [md](2024/banque-pt/banque-pt_pt_langue-vivante-a_2024/brut.md) | [md](2024/banque-pt/banque-pt_pt_langue-vivante-a_2024/guide.md) |
 | 2025 | Banque PT | PT | Langue vivante A | [md](2025/banque-pt/banque-pt_pt_langue-vivante-a_2025/brut.md) | [md](2025/banque-pt/banque-pt_pt_langue-vivante-a_2025/guide.md) |
+| 2010 | Banque PT | PT | Maths A | [md](2010/banque-pt/banque-pt_pt_maths-a_2010/brut.md) | [md](2010/banque-pt/banque-pt_pt_maths-a_2010/guide.md) |
+| 2011 | Banque PT | PT | Maths A | [md](2011/banque-pt/banque-pt_pt_maths-a_2011/brut.md) | [md](2011/banque-pt/banque-pt_pt_maths-a_2011/guide.md) |
+| 2012 | Banque PT | PT | Maths A | [md](2012/banque-pt/banque-pt_pt_maths-a_2012/brut.md) | [md](2012/banque-pt/banque-pt_pt_maths-a_2012/guide.md) |
+| 2014 | Banque PT | PT | Maths A | [md](2014/banque-pt/banque-pt_pt_maths-a_2014/brut.md) | [md](2014/banque-pt/banque-pt_pt_maths-a_2014/guide.md) |
 | 2015 | Banque PT | PT | Maths A | [md](2015/banque-pt/banque-pt_pt_maths-a_2015/brut.md) | [md](2015/banque-pt/banque-pt_pt_maths-a_2015/guide.md) |
 | 2016 | Banque PT | PT | Maths A | [md](2016/banque-pt/banque-pt_pt_maths-a_2016/brut.md) | [md](2016/banque-pt/banque-pt_pt_maths-a_2016/guide.md) |
+| 2014 | Banque PT | PT | Maths C | [md](2014/banque-pt/banque-pt_pt_maths-c_2014/brut.md) | [md](2014/banque-pt/banque-pt_pt_maths-c_2014/guide.md) |
+| 2015 | Banque PT | PT | Maths C | [md](2015/banque-pt/banque-pt_pt_maths-c_2015/brut.md) | [md](2015/banque-pt/banque-pt_pt_maths-c_2015/guide.md) |
+| 2016 | Banque PT | PT | Maths C | [md](2016/banque-pt/banque-pt_pt_maths-c_2016/brut.md) | [md](2016/banque-pt/banque-pt_pt_maths-c_2016/guide.md) |
 | 2025 | Banque PT | PT | Mathématiques C | [md](2025/banque-pt/banque-pt_pt_maths-c_2025/brut.md) | [md](2025/banque-pt/banque-pt_pt_maths-c_2025/guide.md) |
 | 2025 | Agro-Véto | BCPST | Anglais | [md](2025/agro-veto/agro-veto_bcpst_anglais_2025/brut.md) | [md](2025/agro-veto/agro-veto_bcpst_anglais_2025/guide.md) |
 | 2025 | Agrégation | Chimie | Composition de chimie | [md](2025/agregation/agregation_chimie_composition-de-chimie_2025/brut.md) | [md](2025/agregation/agregation_chimie_composition-de-chimie_2025/guide.md) |
@@ -155,11 +163,14 @@
 | 2019 | Banque PT | PT | Physique B - Thermodynamique | [md](2019/banque-pt/banque-pt_pt_physique-b---thermodynamique_2019/brut.md) | [md](2019/banque-pt/banque-pt_pt_physique-b---thermodynamique_2019/guide.md) |
 | 2026 | Banque PT | PT | Physique B - thermodynamique | [md](2026/banque-pt/banque-pt_pt_physique-b---thermodynamique_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_physique-b---thermodynamique_2026/guide.md) |
 | 2017 | Banque PT | PT | Sciences industrielles A | [md](2017/banque-pt/banque-pt_pt_sciences-industrielles-a_2017/brut.md) | [md](2017/banque-pt/banque-pt_pt_sciences-industrielles-a_2017/guide.md) |
+| 2018 | Banque PT | PT | Sciences industrielles A | [md](2018/banque-pt/banque-pt_pt_sciences-industrielles-a_2018/brut.md) | [md](2018/banque-pt/banque-pt_pt_sciences-industrielles-a_2018/guide.md) |
 | 2019 | Banque PT | PT | Sciences industrielles A | [md](2019/banque-pt/banque-pt_pt_sciences-industrielles-a_2019/brut.md) | [md](2019/banque-pt/banque-pt_pt_sciences-industrielles-a_2019/guide.md) |
 | 2020 | Banque PT | PT | Sciences industrielles A | [md](2020/banque-pt/banque-pt_pt_sciences-industrielles-a_2020/brut.md) | [md](2020/banque-pt/banque-pt_pt_sciences-industrielles-a_2020/guide.md) |
 | 2021 | Banque PT | PT | Sciences industrielles A | [md](2021/banque-pt/banque-pt_pt_sciences-industrielles-a_2021/brut.md) | [md](2021/banque-pt/banque-pt_pt_sciences-industrielles-a_2021/guide.md) |
+| 2022 | Banque PT | PT | Sciences industrielles A | [md](2022/banque-pt/banque-pt_pt_sciences-industrielles-a_2022/brut.md) | [md](2022/banque-pt/banque-pt_pt_sciences-industrielles-a_2022/guide.md) |
 | 2026 | Banque PT | PT | Sciences industrielles A | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-a_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-a_2026/guide.md) |
 | 2026 | Banque PT | PT | Sciences industrielles B | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-b_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-b_2026/guide.md) |
+| 2017 | Banque PT | PT | Sciences industrielles C | [md](2017/banque-pt/banque-pt_pt_sciences-industrielles-c_2017/brut.md) | [md](2017/banque-pt/banque-pt_pt_sciences-industrielles-c_2017/guide.md) |
 | 2022 | Banque PT | PT | Sciences industrielles C | [md](2022/banque-pt/banque-pt_pt_sciences-industrielles-c_2022/brut.md) | [md](2022/banque-pt/banque-pt_pt_sciences-industrielles-c_2022/guide.md) |
 | 2025 | Banque PT | PT | Sciences industrielles C | [md](2025/banque-pt/banque-pt_pt_sciences-industrielles-c_2025/brut.md) | [md](2025/banque-pt/banque-pt_pt_sciences-industrielles-c_2025/guide.md) |
 | 2026 | Banque PT | PT | Sciences industrielles C | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-c_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-c_2026/guide.md) |
