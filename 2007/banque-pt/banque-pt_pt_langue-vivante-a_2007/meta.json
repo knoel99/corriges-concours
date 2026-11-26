@@ -53,6 +53,16 @@
       "modifications": true,
       "agent": "lva_pt_2325",
       "perimetre": "Cinq versions françaises et dix réponses dans les langues des sujets, sources, commentaires et schémas par langue."
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "agent": "lva_pt_2325",
+      "perimetre": "Comparaison des bornes et du contenu des versions sur le fac-similé, relecture des réponses avec le jury, recomptage et examen des schémas et de l’arabe."
     }
   ],
   "date_revision": "2026-11-26",
@@ -211,7 +221,7 @@
           ],
           "rapport_url": "https://www.banquept.fr/documents/ecrit/rapport/2007/rapport_lv_a_ara_ecrit_2007.pdf",
           "rapport_sha256": "b0606891f4f2a8323d07601b839a6dfc003eff66d0a6227dccea280bd8d8b3cd",
-          "origine": "Daoud Al-Farhan, Al-Ahram Al-Arabi, n° 503, 11 novembre 2006. Texte page 6, questions page 7. Le rapport d’arabe souligne la difficulté des noms propres et des nombres. [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2007/rapport_lv_a_ara_ecrit_2007.pdf)",
+          "origine": "Daoud Al-Farhan, Al-Ahram Al-Arabi, n° 503, 11 novembre 2006. Texte page 6, questions page 7. Le rapport d’arabe (deux pages) relève notamment les noms propres et les nombres. Il distingue le résumé de l’argumentation personnelle. [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2007/rapport_lv_a_ara_ecrit_2007.pdf)",
           "bornes_version": "De « لم تجد المنظمات الإنسانية » à « في المدارس والجامعات », soit le premier paragraphe.",
           "consignes": [
             "بينوا الفكرة الأساسية للنص.",

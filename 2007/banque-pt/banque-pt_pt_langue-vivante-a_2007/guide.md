@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve dure trois heures. Chaque candidat traite la langue choisie à l’inscription. La version française vaut 10 points. La question a demande 80 à 100 mots pour 4 points. La question b demande 200 à 250 mots pour 6 points.
 
 [Sujet](https://www.banquept.fr/documents/2007/lv_a_2007.pdf) · [Index des rapports](https://www.banquept.fr/article153.html) · [Grille du livret](https://www.banquept.fr/documents/livret/2007/Livret_Rose_2007_1_2.pdf)
@@ -56,7 +58,7 @@ Ich glaube deshalb nicht, dass eine größere Siedlung allein durch leistungsfä
 
 Henry Porter, The Observer, 19 novembre 2006, article adapté. Texte page 4, questions page 5. Le rapport d’anglais est une pièce de trois pages. [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2007/rapport_lv_a_ang_ecrit_2007.pdf)
 
-Attribuer la démonstration et les inquiétudes à l’auteur, qui parle du projet britannique de son époque. Repérer les degrés de certitude dans « may », « could » et « is likely to ». En b, examiner la finalité, la proportionnalité et les possibilités de recours.
+Attribuer la démonstration et les inquiétudes à l’auteur, qui parle du projet britannique de son époque. Repérer les degrés de certitude dans « may », « could » et « is likely to ». En a, le jury demande les usages de surveillance de la RFID. En b, il invite à dépasser le seul exemple des caméras. Examiner la finalité de la mesure, sa proportionnalité et les possibilités de recours.
 
 ![Que devient un renseignement ?](figures/lecture-en.svg)
 
@@ -96,7 +98,7 @@ Finally, any measure that is introduced for an emergency should have an end date
 
 *وطن بلا شعب*
 
-Daoud Al-Farhan, Al-Ahram Al-Arabi, n° 503, 11 novembre 2006. Texte page 6, questions page 7. Le rapport d’arabe souligne la difficulté des noms propres et des nombres. [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2007/rapport_lv_a_ara_ecrit_2007.pdf)
+Daoud Al-Farhan, Al-Ahram Al-Arabi, n° 503, 11 novembre 2006. Texte page 6, questions page 7. Le rapport d’arabe (deux pages) relève notamment les noms propres et les nombres. Il distingue le résumé de l’argumentation personnelle. [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2007/rapport_lv_a_ara_ecrit_2007.pdf)
 
 Suivre les catégories de personnes et de pays sans confondre déplacements intérieurs, départs à l’étranger et arrivées quotidiennes. Les chiffres et les termes décrivant le conflit sont ceux de l’article de 2006. Pour b, envisager les choix accessibles aux civils, sans leur imposer une conduite.
 
@@ -170,7 +172,7 @@ Por eso entiendo la admiración de Weinberg ante el cielo nocturno. Saber de qu�
 
 Federico Pace, La Repubblica, décembre 2006. Article pages 10 et 11, questions page 11. Commentaire du jury d’italien à la suite de l’espagnol, pages 1 et 2 du PDF commun. [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2007/rapport_lv_a_aut_ecrit_2007.pdf)
 
-Les 160 000 participants représentent le cumul. Environ 16 000 est l’effectif annuel stabilisé. La réforme « 3+2 » organise les diplômes en deux cycles. Le jury invite à distinguer les étudiants universitaires des enseignants et à éviter les réponses sans exemples.
+Les 160 000 participants représentent le cumul. Environ 16 000 est l’effectif annuel stabilisé. Le fascicule imprime deux fois « 32 ». La version rétablit le signe de la formule universitaire « 3 + 2 », soit trois ans pour le premier cycle puis deux pour le second. Le jury invite à distinguer les étudiants universitaires des enseignants et à éviter les réponses sans exemples.
 
 ![Du séjour à une paix durable](figures/lecture-it.svg)
 
