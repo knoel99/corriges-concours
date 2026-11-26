@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Dans les pages 266–267 de l’édition parisienne de 1853 de l’Histoire des Français des divers états, Monteil fait visiter l’Hôpital général par un personnage fictif. Comment faire une histoire des pauvres avec un témoignage ainsi construit ?
 
 ## Qui dit « je » dans ce texte ?
@@ -16,13 +18,15 @@ Le dispositif éclaire le projet de Monteil. Au lieu d’enchaîner les règnes 
 
 L’édit royal de 1656 institue l’Hôpital général de Paris. Le récit privilégie 1657, année de l’ouverture effective et de la mort de Bellièvre, premier président du parlement, cour de justice de l’Ancien Régime. Monfranc voudrait rebaptiser l’ensemble « l’hôpital Pomponne ». Ce nom de son invention concentre sur un bienfaiteur personnel une œuvre où se rencontrent religion, magistrature, pouvoir royal, police et familles. L’échec prêté à la régence de Marie de Médicis fait ressortir par contraste la volonté de Bellièvre.
 
-Le terme d’hôpital pouvait désigner une institution d’assistance et d’hébergement dotée de fonctions de police. Les malades ne constituent ici qu’une catégorie parmi d’autres. Le narrateur range d’abord les mendiants du côté de la menace. Aux « quarante mille » il impute collectivement larcins et violences tout en reconnaissant le défaut d’aumônes. Puis il se réjouit de leur disparition du paysage urbain. Or certains sont partis dans les provinces. Cette transformation du spectacle de la pauvreté ne dit rien sur sa disparition effective. L’expression « de gré ou de force » fissure déjà l’hommage rendu à la charité.
+Le terme d’hôpital pouvait désigner une institution d’assistance et d’hébergement dotée de fonctions de police. Les malades ne constituent ici qu’une catégorie parmi d’autres. Le narrateur range d’abord les mendiants du côté de la menace. Il avance le chiffre de quarante mille mendiants et en accuse seulement « un grand nombre » de vivre de larcins ou d’actes plus graves faute d’aumônes. Le glissement décisif vient ensuite. Le soupçon qui portait sur une partie des pauvres sert à justifier une mesure visant l’ensemble. Puis il se réjouit de leur disparition du paysage urbain. Or certains sont partis dans les provinces. Cette transformation du spectacle de la pauvreté ne dit rien sur sa disparition effective. L’expression « de gré ou de force » fissure déjà l’hommage rendu à la charité.
 
 ![La voix qui célèbre la fondation décrit également ses moyens de contrainte.](figures/lecture-du-document.svg)
 
 ## Administrer des « mondes de toute espèce »
 
 Les sept établissements dessinent un réseau. La Salpêtrière accueille notamment des femmes, Bicêtre surtout des hommes. L’adverbe « en grande partie » importe, puisque le même Bicêtre possède des ateliers de dentelle pour filles. Saint-Antoine et la Pitié recueillent des enfants. Le Saint-Esprit reçoit des orphelins et Sainte-Pélagie assure la correction des femmes. La rue d’Orléans abrite d’anciens personnels religieux. Monfranc mêle capacités d’accueil, effectifs et destinations. Les « sept mille » enfants ou les deux salles de huit cents ouvrières sont des chiffres rapportés, sans date commune ni état nominatif. Les additionner donnerait une précision illusoire.
+
+Il faut aussi dater l’inventaire. Au récit de la fondation succède une énumération qui fait entendre le présent du visiteur fictif. La notice historique des Archives de l’AP-HP compte, à l’origine, cinq maisons, parmi lesquelles l’hôtel Scipion et la Savonnerie de Chaillot. La liste de sept divisions donnée par Monfranc ne correspond donc pas à un organigramme que l’on pourrait dater en bloc de 1656. Le document permet en revanche d’étudier ce que le narrateur rassemble sous un seul nom. Il accompagne une fille depuis l’apprentissage jusqu’au placement et retrouve à Bicêtre des ouvrières dans un établissement présenté comme surtout masculin. L’unité de l’institution tient aux circulations entre les maisons autant qu’à leur nombre.
 
 Le garçon apprend à lire, puis peut passer chez un maître ou rejoindre armée et flotte. La fille apprend aussi lecture et écriture mais le récit insiste sur couture, dentelle, service domestique et départ dans les colonies. Classer, former et placer répondent à des besoins de main-d’œuvre et de service public. Les verbes passifs (« sont menées », « envoyées ») disent peu de la volonté des intéressés. Les détenues placées par la police et celles que leur famille fait retenir rappellent aussi que des autorités différentes peuvent intervenir dans un même espace.
 
