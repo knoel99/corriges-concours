@@ -1,0 +1,146 @@
+{
+  "slug": "bel_al_version-grecque-lyon_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Version grecque (Lyon)",
+    "annee": 2024,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "duree_heures": 4,
+  "duree_sources": {
+    "feuillet_heures": 4
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2024-11/Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=4",
+    "sujet_sha256": "cbf76039969ec8cec685a228168381915bdc7b64ae30b2cbee576b3a4f1eeb56",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2024-11/Grec%202024%20OK.pdf#page=2",
+    "rapport_jury_sha256": "b6baa6590cc36a4684d25dad54140b266765bbf3b7c76a5b73f98efa784f8cc5",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2024",
+    "ouvrage": "Ælius Aristide, *Lettre aux empereurs au sujet de Smyrne*.",
+    "pages_rapport_verifiees": [
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2024-11/Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=4",
+      "sha256": "cbf76039969ec8cec685a228168381915bdc7b64ae30b2cbee576b3a4f1eeb56",
+      "pages": 20,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "467f29e0ec3180170f83906b396898332e097600bd045b203d322734b30ba14a"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "8792f553de5cddb862b1610114caf646f31cce12b7629be38076e505305ad7a8"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "bcaaf1be5e80a4ded297e04115573c03d76845384bfe79919629775d9d4d3c7f"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "6af0b3c4b1183f95b3162a6878d68bc69495dae7efce5050f20913483742d226"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2024-11/Grec%202024%20OK.pdf#page=2",
+      "sha256": "b6baa6590cc36a4684d25dad54140b266765bbf3b7c76a5b73f98efa784f8cc5",
+      "pages": 13,
+      "pages_verifiees": [
+        {
+          "numero": 2,
+          "rendu_sha256": "718cd3d6304bb49f74585ed2d395d8e080e9d0e9d8ef5a9f8ee1a5a6aed440ae"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "ffc0193a28e1275fe93b13d3cdb5e9e805f77e5cfd7998471b3bacc845c063f5"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "ac17663afd3393f8258e99fcb7dd73f3d1059412ce9a55e699570b4b51228d97"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "db31089f2e9b793d584e3131aa23ef815c65081e4ebb20a0797744ec75b4c88d"
+        }
+      ]
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "bel_al_grec_specialite_2023_2025",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Traduction française de tout l’extrait grec, explication des difficultés et schéma."
+    },
+    {
+      "phase": "revision",
+      "session": "bel_al_grec_specialite_2023_2025",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle des constructions et des notes sur le feuillet, du rapport du jury (pages 2 à 5), des formes grecques et de la présence de toute la version dans chaque édition."
+    }
+  ],
+  "figures": [
+    {
+      "question": "Version française",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "La visite ancienne des empereurs fait d’eux les témoins de tout ce que la ville a perdu."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Ælius Aristide, *Lettre aux empereurs au sujet de Smyrne*."
+    ],
+    "note": "Œuvre grecque antique. Traduction française et commentaires pédagogiques originaux."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Version française",
+        "pages_pdf": [
+          4,
+          5
+        ],
+        "debut": "κεῖται Σμύρνα",
+        "fin": "κολωνὸς ἐρειπίων καὶ νεκρῶν.",
+        "notes_du_sujet": 5
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

@@ -819,6 +819,7 @@
 | 2026 | BEL | AL | Textes antiques grecs (Ulm) | [md](2026/bel/bel_al_textes-antiques-grecs-ulm_2026/brut.md) | [md](2026/bel/bel_al_textes-antiques-grecs-ulm_2026/guide.md) |
 | 2026 | BEL | AL | Textes antiques latins (Ulm) | [md](2026/bel/bel_al_textes-antiques-latins-ulm_2026/brut.md) | [md](2026/bel/bel_al_textes-antiques-latins-ulm_2026/guide.md) |
 | 2023 | BEL | AL | Version grecque (Lyon) | [md](2023/bel/bel_al_version-grecque-lyon_2023/brut.md) | [md](2023/bel/bel_al_version-grecque-lyon_2023/guide.md) |
+| 2024 | BEL | AL | Version grecque (Lyon) | [md](2024/bel/bel_al_version-grecque-lyon_2024/brut.md) | [md](2024/bel/bel_al_version-grecque-lyon_2024/guide.md) |
 | 2026 | BEL | AL | Version grecque (Lyon) | [md](2026/bel/bel_al_version-grecque-lyon_2026/brut.md) | [md](2026/bel/bel_al_version-grecque-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Version grecque (Ulm) | [md](2026/bel/bel_al_version-grecque-ulm_2026/brut.md) | [md](2026/bel/bel_al_version-grecque-ulm_2026/guide.md) |
 | 2026 | BEL | AL | Version latine (Lyon) | [md](2026/bel/bel_al_version-latine-lyon_2026/brut.md) | [md](2026/bel/bel_al_version-latine-lyon_2026/guide.md) |
