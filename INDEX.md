@@ -977,6 +977,7 @@
 | 2025 | BEL | BL | Sociologie (oral commun) — Confinés et confinées | [md](2025/bel/bel_bl_sociologie-oral-commun-confines-et-confinees_2025/brut.md) | [md](2025/bel/bel_bl_sociologie-oral-commun-confines-et-confinees_2025/guide.md) |
 | 2025 | BEL | BL | Sociologie (oral commun) — Le vote d’extrême droite | [md](2025/bel/bel_bl_sociologie-oral-commun-vote-dextreme-droite_2025/brut.md) | [md](2025/bel/bel_bl_sociologie-oral-commun-vote-dextreme-droite_2025/guide.md) |
 | 2025 | BEL | AL | Espagnol (thème Lyon) | [md](2025/bel/bel_al_espagnol-theme-lyon_2025/brut.md) | [md](2025/bel/bel_al_espagnol-theme-lyon_2025/guide.md) |
+| 2025 | BEL | AL | Espagnol (commentaire et traduction) | [md](2025/bel/bel_al_espagnol-commentaire-et-traduction_2025/brut.md) | [md](2025/bel/bel_al_espagnol-commentaire-et-traduction_2025/guide.md) |
 | 2026 | BEL | BL | Sociologie (oral commun) — 22 juin, sujet 1 | [md](2026/bel/bel_bl_sociologie-oral-commun-22-juin-sujet-1_2026/brut.md) | [md](2026/bel/bel_bl_sociologie-oral-commun-22-juin-sujet-1_2026/guide.md) |
 | 2026 | BEL | BL | Sociologie (oral commun) — 22 juin, sujet 2 | [md](2026/bel/bel_bl_sociologie-oral-commun-22-juin-sujet-2_2026/brut.md) | [md](2026/bel/bel_bl_sociologie-oral-commun-22-juin-sujet-2_2026/guide.md) |
 | 2026 | BEL | BL | Sociologie (oral commun) — 22 juin, sujet 3 | [md](2026/bel/bel_bl_sociologie-oral-commun-22-juin-sujet-3_2026/brut.md) | [md](2026/bel/bel_bl_sociologie-oral-commun-22-juin-sujet-3_2026/guide.md) |
