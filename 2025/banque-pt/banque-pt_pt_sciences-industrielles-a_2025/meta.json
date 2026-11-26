@@ -1,0 +1,576 @@
+{
+  "slug": "banque-pt_pt_sciences-industrielles-a_2025",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Sciences industrielles A",
+    "annee": 2025
+  },
+  "questions": 49,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "figures": [
+    {
+      "fichier": "figures/bloqueur.svg",
+      "question": "Q29",
+      "legende": "Module et phase par lobe sur la grille logarithmique du bloqueur",
+      "page_source": 42
+    },
+    {
+      "fichier": "figures/mailles.svg",
+      "question": "Q34",
+      "legende": "Trajets du courant passant et en roue libre, quadrant moteur direct",
+      "page_source": 44
+    },
+    {
+      "fichier": "figures/tension.svg",
+      "question": "Q35",
+      "legende": "Tension bipolaire sur une période du hacheur",
+      "page_source": 45
+    },
+    {
+      "fichier": "figures/quadrants.svg",
+      "question": "Q36",
+      "legende": "Régimes effectivement disponibles avec courant de signe imposé",
+      "page_source": 45
+    },
+    {
+      "fichier": "figures/identification.svg",
+      "question": "Q42",
+      "legende": "Gain et constante de temps lus sur la vitesse filtrée",
+      "page_source": 21
+    },
+    {
+      "fichier": "figures/double-integrateur.svg",
+      "question": "Q46",
+      "legende": "Gain et phase de la boucle ouverte compensée, gain intégral unitaire",
+      "page_source": 50
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2025/si_a_2025_pt.pdf",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2025/rapport_si_a_ecrit_2025.pdf"
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2025/si_a_2025_pt.pdf",
+      "sha256": "835de8c0f2430931561851404c83dd9614346994fec11d50123e146e17af9f72",
+      "pages": 52,
+      "fichier": "si_a_2025_pt.pdf",
+      "rendus_sha256": [
+        "0d533f56743d50ab9fc92303c40ce0cf6afbab4995f932787170486de0a729fb",
+        "16c22cb6037c8efb822580a5fa737c0c57dd7c8fe7c42adcbb436a58cb271d60",
+        "98a1d0e8b248970ef0e55b18b4e97e268ce58adf0f4299cbd71f30c66dede685",
+        "a70d372791535ca2f13a4c54e5290f5556137dd7927f1f8e8adb164cb335cf1d",
+        "9b6ffe83c97efe9d2eaa431ad735e3c8c4768f740006f84b038966c245467c31",
+        "9c5b44dde52a40473094340d84dde7f5120c383faa742487c9ac70265f636496",
+        "50fb4c152af2ac81255902f6ad690f435547083839b43c8eb0fe6f01ecbb98f2",
+        "7c7cf689605b33d514457d49ed1615e2e75b184558e14e22816ef3eb1f378a1a",
+        "389851ab3be8dda198fe2f069b20a75e2c2e64158fb6e5fb2026a8cb9be59191",
+        "bc59e3adaeaaa07e636d639ba31513b50dadf3a8aa2201302a81dfb83eb85d48",
+        "6ebd5006491bd0531e6af87d73cbecf28a1db4e5723720556d9eae4204ac2961",
+        "4ce86138297bfe85eb1a01193b593a1764d6e7c33557fbc71cdeb71399d17c5f",
+        "0840eb3fbd192afad12ba86c5589812191d71fbcb5e9a83df567ed2d8ad9bf7b",
+        "dbf0eea6c60de66f199c4c0b27aa34b65b6ee02cedf0bd788eeaf02d93730c33",
+        "326acf9ebbbe7715747e64fd825c756e7c734aeaed7f3e5b58e5e66e50ad1b0f",
+        "ee6121af771f16829b11069fd751fc96d7f139ad810f980021fed61a0cdd670e",
+        "d5cf1f25d9c69be5bb2186cfdebd48b734c9d6cf8d7b2f97e6ac9b956903252d",
+        "156da6b426886b37973df49ad8fbab8c4c362cd0e5b5d539964d739afedbe0d5",
+        "c1d1208c622b78f2c57a06c13ebbc46e41f0ce3dac7a7fab57016bfd6a75eb31",
+        "e66a2acaeebc6020359d05a4e0be3757e4c0033172154f8e270fbd44db9aa72f",
+        "8d18ff2ded85c4bdbf495f745375ea782154358fa1037cc0d3ab8733fc71e8f1",
+        "5290323f5f3ceb1671485aca6d1028a46a8e917802d6c880c8e65c92f0984819",
+        "c2f1de2762e9f7fe4e3a96a797b0bd6d2549268d08852bcdd16d219aa7606f48",
+        "d4f05739e035ae557f9674f53e18a2abff972842053ae340ada97977e03ed269",
+        "4485bace0734baf967058f581fc04bbe41d1b44b2f8d9a9ed24c8f314d26f753",
+        "3da2598e5872b8c1dc93df3176557ee45375f7936b11f4ffa0288619d4f8a5ac",
+        "3da2598e5872b8c1dc93df3176557ee45375f7936b11f4ffa0288619d4f8a5ac",
+        "3da2598e5872b8c1dc93df3176557ee45375f7936b11f4ffa0288619d4f8a5ac",
+        "ec81a6d8f2d54629cd0c14261bf384942e9a88fe66aa897379e9e3e08c9d4496",
+        "4e66a5594ceb0958fa6e2ca9d0c28978537f5d23e137557553a51ef97e113cf2",
+        "f53ad5e8b43a4359e31a9d984f0279e2aaf225c069dd5cb70b1ca1e45c18314c",
+        "68f60bb5eaadb8f3f0617aa4d367bda86a0f8dc4579d473fc054200991b43180",
+        "e7c8e0ed4b8724b1455950ddacfb8486a38e0caf558bf107f9324c3f5cee566e",
+        "bca877c9fa6a5d7e70183f501127350d9c03316f63d2f9e69636293f2e698634",
+        "cd75e4f61a85303d223a56879de0a65172cb7f498dd86332cbc39acf1b04c145",
+        "547f29e6274d4ba606d83f966e0dfef1d2bc66c5ea8264821b6d5f430949ae11",
+        "70553ea9f2bf6426bc2a158f2524678e4f9c19cbcfa16a7d3c893664d6f2e9a9",
+        "d0cd92a214e86888ee38d19745996a28eb662da4561eea57e14c42219d942d87",
+        "1c5a63a512508d9fbd19e153e13bdb1fa13b10540ba7a367352364a59d7d2cb5",
+        "df7e30e1919cbb98516ef4a15d83f0f398883f3c5cb0b4675a00ad9cd71136c5",
+        "31fa14540fd44011e27daaa79de52d4c44f1ec9f4c853bb190eed1f719604a61",
+        "3330c16db19441c30f0a1250ea17bad22651d6dd47835a61b1aa8a2a444d50c1",
+        "3f1be9e6c96deac99c4fec6c1275484261c19baa716d8785b9900997790f3689",
+        "333133e612259918605eba94206c41a73b8053b041f3a02161b5f0e51c7b7b5b",
+        "dc0c98ffe5c3e5cd3daa4bd7e547fb2ed5ff4a3406ea34e3740a760567681465",
+        "c1efe19387991834be98429f990c4050017aefe6aa36af9460ebd411801c2b54",
+        "dfbdb52f5f7d195428e40e7c00b8ff78d230c1967bcdfececdf28f75f15c080a",
+        "147e4c2ab7a00bd5fc2f4fb8b3ab157b3b4aa7b42dbc6ad8e155a94d41780c51",
+        "aa842d7fc4ff9e38106b6d01632fc2e7875e11c17cd2564b51ee3c5225e4bd76",
+        "e917939c43f0c9c975c2122174101a9000bd0ebfae70b966d6cf00a6cd5ce349",
+        "84943439de03fa84cd9b0f2883cfd90735a3a44479cf3595a01135937b8b9851",
+        "ecaf217eaa2104b7e0f070866cbfebfcc5a877c0cc2278c8239a042310781873"
+      ]
+    },
+    "rapport": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2025/rapport_si_a_ecrit_2025.pdf",
+      "sha256": "5a183402cdd04d1574d4f0b6a84de02851d7e6eacbbdaa60fffc0790acdcba24",
+      "pages": 4,
+      "fichier": "rapport_si_a_ecrit_2025.pdf",
+      "rendus_sha256": [
+        "78091632d3417030a4e03196427a97f66da50c5f39b7edc2e5545d80e208f2af",
+        "c5dc310cbb2e596af8c41dfc50ae835a38552abcf6254eb909e3460d29056594",
+        "b1008d57e839e6bbb0c384d85beaf45f01744810710a459d45e8af77589a934f",
+        "c3d29c50cebd44b904ba5c7c153ed0a54d2daa3346461b400f19d6ba6d1e7e85"
+      ]
+    }
+  },
+  "annexes": {
+    "III.7 — Annexe correcteur à avance de phase, figure 26": [
+      23
+    ],
+    "Cahier réponses de Q1 à Q49": [
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52
+    ]
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "reperes": [
+      {
+        "question": 1,
+        "page_sujet": 6,
+        "pages_cahier": [
+          29
+        ]
+      },
+      {
+        "question": 2,
+        "page_sujet": 6,
+        "pages_cahier": [
+          30
+        ]
+      },
+      {
+        "question": 3,
+        "page_sujet": 7,
+        "pages_cahier": [
+          30
+        ]
+      },
+      {
+        "question": 4,
+        "page_sujet": 7,
+        "pages_cahier": [
+          31
+        ]
+      },
+      {
+        "question": 5,
+        "page_sujet": 7,
+        "pages_cahier": [
+          31
+        ]
+      },
+      {
+        "question": 6,
+        "page_sujet": 7,
+        "pages_cahier": [
+          32
+        ]
+      },
+      {
+        "question": 7,
+        "page_sujet": 8,
+        "pages_cahier": [
+          32
+        ]
+      },
+      {
+        "question": 8,
+        "page_sujet": 8,
+        "pages_cahier": [
+          32
+        ]
+      },
+      {
+        "question": 9,
+        "page_sujet": 8,
+        "pages_cahier": [
+          33
+        ]
+      },
+      {
+        "question": 10,
+        "page_sujet": 8,
+        "pages_cahier": [
+          33
+        ]
+      },
+      {
+        "question": 11,
+        "page_sujet": 9,
+        "pages_cahier": [
+          34
+        ]
+      },
+      {
+        "question": 12,
+        "page_sujet": 9,
+        "pages_cahier": [
+          34
+        ]
+      },
+      {
+        "question": 13,
+        "page_sujet": 9,
+        "pages_cahier": [
+          35
+        ]
+      },
+      {
+        "question": 14,
+        "page_sujet": 10,
+        "pages_cahier": [
+          35
+        ]
+      },
+      {
+        "question": 15,
+        "page_sujet": 10,
+        "pages_cahier": [
+          35
+        ]
+      },
+      {
+        "question": 16,
+        "page_sujet": 10,
+        "pages_cahier": [
+          35
+        ]
+      },
+      {
+        "question": 17,
+        "page_sujet": 11,
+        "pages_cahier": [
+          36
+        ]
+      },
+      {
+        "question": 18,
+        "page_sujet": 12,
+        "pages_cahier": [
+          36
+        ]
+      },
+      {
+        "question": 19,
+        "page_sujet": 12,
+        "pages_cahier": [
+          37
+        ]
+      },
+      {
+        "question": 20,
+        "page_sujet": 12,
+        "pages_cahier": [
+          37
+        ]
+      },
+      {
+        "question": 21,
+        "page_sujet": 13,
+        "pages_cahier": [
+          38
+        ]
+      },
+      {
+        "question": 22,
+        "page_sujet": 13,
+        "pages_cahier": [
+          38
+        ]
+      },
+      {
+        "question": 23,
+        "page_sujet": 13,
+        "pages_cahier": [
+          39
+        ]
+      },
+      {
+        "question": 24,
+        "page_sujet": 15,
+        "pages_cahier": [
+          40
+        ]
+      },
+      {
+        "question": 25,
+        "page_sujet": 16,
+        "pages_cahier": [
+          40
+        ]
+      },
+      {
+        "question": 26,
+        "page_sujet": 16,
+        "pages_cahier": [
+          40
+        ]
+      },
+      {
+        "question": 27,
+        "page_sujet": 16,
+        "pages_cahier": [
+          41
+        ]
+      },
+      {
+        "question": 28,
+        "page_sujet": 16,
+        "pages_cahier": [
+          42
+        ]
+      },
+      {
+        "question": 29,
+        "page_sujet": 17,
+        "pages_cahier": [
+          42
+        ]
+      },
+      {
+        "question": 30,
+        "page_sujet": 17,
+        "pages_cahier": [
+          43
+        ]
+      },
+      {
+        "question": 31,
+        "page_sujet": 17,
+        "pages_cahier": [
+          43
+        ]
+      },
+      {
+        "question": 32,
+        "page_sujet": 17,
+        "pages_cahier": [
+          43
+        ]
+      },
+      {
+        "question": 33,
+        "page_sujet": 17,
+        "pages_cahier": [
+          43
+        ]
+      },
+      {
+        "question": 34,
+        "page_sujet": 18,
+        "pages_cahier": [
+          44
+        ]
+      },
+      {
+        "question": 35,
+        "page_sujet": 19,
+        "pages_cahier": [
+          45
+        ]
+      },
+      {
+        "question": 36,
+        "page_sujet": 19,
+        "pages_cahier": [
+          45
+        ]
+      },
+      {
+        "question": 37,
+        "page_sujet": 19,
+        "pages_cahier": [
+          46
+        ]
+      },
+      {
+        "question": 38,
+        "page_sujet": 20,
+        "pages_cahier": [
+          46
+        ]
+      },
+      {
+        "question": 39,
+        "page_sujet": 20,
+        "pages_cahier": [
+          46
+        ]
+      },
+      {
+        "question": 40,
+        "page_sujet": 21,
+        "pages_cahier": [
+          47
+        ]
+      },
+      {
+        "question": 41,
+        "page_sujet": 21,
+        "pages_cahier": [
+          48
+        ]
+      },
+      {
+        "question": 42,
+        "page_sujet": 21,
+        "pages_cahier": [
+          48
+        ]
+      },
+      {
+        "question": 43,
+        "page_sujet": 22,
+        "pages_cahier": [
+          48
+        ]
+      },
+      {
+        "question": 44,
+        "page_sujet": 22,
+        "pages_cahier": [
+          49
+        ]
+      },
+      {
+        "question": 45,
+        "page_sujet": 22,
+        "pages_cahier": [
+          49
+        ]
+      },
+      {
+        "question": 46,
+        "page_sujet": 22,
+        "pages_cahier": [
+          50
+        ]
+      },
+      {
+        "question": 47,
+        "page_sujet": 22,
+        "pages_cahier": [
+          51
+        ]
+      },
+      {
+        "question": 48,
+        "page_sujet": 23,
+        "pages_cahier": [
+          51
+        ]
+      },
+      {
+        "question": 49,
+        "page_sujet": 23,
+        "pages_cahier": [
+          52
+        ]
+      }
+    ]
+  },
+  "contributions": [
+    {
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "session": "banque_pt_si_a_2025",
+      "modifications": true,
+      "phase": "redaction",
+      "perimetre": "Résolution des 49 questions et rédaction des indications des deux éditions après lecture du sujet, du cahier et du rapport du jury."
+    }
+  ]
+}
