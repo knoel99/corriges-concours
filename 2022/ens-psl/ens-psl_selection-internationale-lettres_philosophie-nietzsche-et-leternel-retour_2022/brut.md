@@ -4,15 +4,19 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Écrit du 7 février 2022, de 12 h à 14 h. Friedrich Nietzsche, *Le Gai Savoir*, livre IV, § 341. Le feuillet imprime « § 381 ».
+
 ## 1. Nietzsche et son œuvre
 
 Friedrich Nietzsche (1844–1900), philologue de formation et professeur à Bâle, part dans *La Naissance de la tragédie* d’une enquête sur les Grecs, leur art et leur rapport à la souffrance. Dans *Le Gai Savoir* puis *Ainsi parlait Zarathoustra*, il demande ce que vaudraient nos façons de connaître, de juger et d’espérer une fois ébranlée la croyance en un ordre moral du monde garanti par Dieu. *Par-delà bien et mal* et *La Généalogie de la morale* examineront notamment l’origine et la valeur de nos évaluations. La variété des formes d’écriture participe de l’enquête. Un lecteur qui examinerait de loin des propositions abstraites n’apercevrait pas toujours ce que sa propre manière de réagir révèle de ses valeurs. Ici, le texte lui adresse la parole et lui fait imaginer sa rencontre avec un démon.
 
-Le sujet imprimé donne le § 381 du *Gai Savoir*. L’extrait reproduit est le § 341, à la fin du livre IV, souvent intitulé « Le poids le plus lourd » ou « Le poids formidable » selon les traductions. L’aphorisme suivant met en scène le départ de Zarathoustra. L’épreuve qui nous est adressée à la deuxième personne se situe ainsi au seuil d’une nouvelle forme de présentation philosophique.
+La scène du démon se reconnaît dès l’ouverture du § 341 du *Gai Savoir*. « Le poids formidable » est le titre que lui donne Henri Albert dans l’édition française de 1901. Ce numéro permet de retrouver le texte à la fin du livre IV. L’aphorisme suivant met en scène le départ de Zarathoustra. L’épreuve qui nous est adressée à la deuxième personne se situe ainsi au seuil d’une nouvelle forme de présentation philosophique.
 
 ## 2. Le sens de l’éternel retour
 
-Le démon demande d’imaginer que toute cette vie reviendra une infinité de fois. Ce serait mal entendre son propos que de se représenter un second essai où nous pourrions corriger nos maladresses, ou un cycle des saisons dont seuls les grands types d’événements se répéteraient. Le texte s’attarde sur une araignée, la lumière entre les arbres et l’instant même de l’annonce. Leur place dans la succession reviendrait avec chacun des événements qu’elle relie. Une autre enfance, la suppression d’une peine ou la simple connaissance nouvelle d’en être à son deuxième passage feraient déjà une autre vie.
+Le démon demande d’imaginer que toute cette vie reviendra une infinité de fois. Ce serait mal entendre son propos que de se représenter un second essai où nous pourrions corriger nos maladresses, ou un cycle des saisons dont seuls les grands types d’événements se répéteraient. Le texte s’attarde sur une araignée, la lumière entre les arbres et l’instant même de l’annonce. Leur place dans la succession reviendrait avec chacun des événements qu’elle relie. Le détail de l’araignée impose une condition rigoureuse à la réponse. Si elle revenait un soir plus tôt, ou si je reconnaissais le démon en me souvenant d’une première annonce, l’enchaînement aurait changé. Le retour comprend donc jusqu’à mon ignorance de l’avoir déjà vécu.
 
 La forme hypothétique du récit est essentielle à la question. L’aphorisme n’expose aucun calcul physique qui permettrait de conclure que l’univers a effectivement cette structure. Il demande ce qu’une pensée de cette portée nous ferait, si elle prenait sur nous tout son poids. Une action que j’accepte pour en finir avec elle pourrait-elle être voulue encore, sans que sa répétition me conduise enfin à un autre monde ? À supposer que je maudisse le démon, je découvre ce qui, dans ma façon de vivre, dépend de l’espoir que cela passe et ne revienne jamais. À supposer que je le bénisse, je m’aperçois capable d’un autre rapport à ce qui m’échoit. Entre les deux réactions s’ouvre le travail même d’une transformation des valeurs.
 
@@ -20,9 +24,11 @@ L’expérience est plus difficile qu’une invitation à multiplier les instant
 
 ## 3. Le « sceau ultime et éternel »
 
-Un sceau ratifie. Celui qui l’appose prend à son compte le document entier auquel il vient donner sa marque. L’adjectif « ultime » fait entendre qu’on cesse de demander à une instance supérieure de justifier la vie ou de promettre que ses insuffisances seront réparées ailleurs. L’adjectif « éternel » précise l’ampleur de l’assentiment. Ce que je voudrais, dans cette hypothèse, je le voudrais avec toutes ses conditions et dans l’infinité des retours. L’acte par lequel je consens fait lui-même partie de ce qui reviendrait. Il n’y a aucun juge qui se placerait en dehors du temps pour certifier après coup la valeur de ma vie.
+Un sceau ratifie. Celui qui l’appose prend à son compte le document entier auquel il vient donner sa marque. L’adjectif « ultime » fait entendre qu’on cesse de demander à une instance supérieure de justifier la vie ou de promettre que ses insuffisances seront réparées ailleurs. L’adjectif « éternel » précise l’ampleur de l’assentiment. Ce que je voudrais, dans cette hypothèse, je le voudrais avec toutes ses conditions et dans l’infinité des retours. L’image d’un sceau ajoute quelque chose à la simple prévision. Je pourrais croire que ma vie doit revenir et m’en désoler. Apposer ma marque, ce serait m’en reconnaître responsable jusque dans les détails que je voudrais effacer du récit. Cet acte même d’approbation reviendrait à son tour. Il n’y a aucun juge qui se placerait en dehors du temps pour certifier après coup la valeur de ma vie.
 
 La métaphore clôt une question adressée au lecteur. Elle mesure la force d’une affirmation possible et ne constate pas que chacun la possède. Imaginons une promesse pénible à tenir. Si je n’envisage ma fidélité que comme le prix provisoire d’une récompense ultérieure, l’annonce du retour de chaque moment de l’effort m’effraiera peut-être. Si j’en viens à vouloir aussi cet effort, mon évaluation présente aura changé, alors même qu’aucune circonstance passée ne sera effacée. Voilà comment une idée qui représente le retour du même peut transformer celui auquel elle s’adresse.
+
+![Figure 1 — Qu’accepte-t-on dans l’hypothèse du retour ?](figures/experiences.svg)
 
 ## 4. Quatre concepts
 
@@ -40,8 +46,6 @@ Le surhomme, *Übermensch*, figure dans cette même œuvre la possibilité d’u
 
 ### d. La généalogie des valeurs
 
-Une généalogie reconstruit les conditions historiques, affectives et sociales dans lesquelles une manière d’évaluer est devenue dominante. Elle examine en même temps quelle forme de vie cette évaluation favorise ou appauvrit. Dans la première dissertation de *La Généalogie de la morale*, Nietzsche distingue ainsi l’opposition du bon et du mauvais, issue d’une affirmation de soi, de l’opposition du bien et du mal dans laquelle le ressentiment joue un rôle créateur. Montrer qu’une valeur a une histoire ne suffit pas à l’invalider. Il reste à demander ce qu’elle fait faire et devenir à ceux qui l’emploient. L’aphorisme du démon accomplit pour le lecteur une épreuve complémentaire. Il lui fait éprouver, dans sa propre réaction, la forme de vie à laquelle il tient effectivement.
-
-![Figure 1 — Ce que change le retour dans la question posée à l’action](figures/experiences.svg)
+Une généalogie reconstruit les conditions historiques, affectives et sociales dans lesquelles une manière d’évaluer est devenue dominante. Elle examine en même temps quelle forme de vie cette évaluation favorise ou appauvrit. Dans la première dissertation de *La Généalogie de la morale*, Nietzsche distingue ainsi l’opposition du bon et du mauvais, issue d’une affirmation de soi, de l’opposition du bien et du mal dans laquelle le ressentiment joue un rôle créateur. Prenons un même jugement de « bonté ». Vient-il de celui qui affirme spontanément sa manière de vivre ou de celui qui commence par condamner celle de son adversaire ? La ressemblance des mots cache deux manières de fabriquer une valeur. L’enquête sur leur provenance ouvre alors la question de leur valeur pour la vie. Il reste à demander ce qu’elle fait faire et devenir à ceux qui l’emploient. L’aphorisme du démon accomplit pour le lecteur une épreuve complémentaire. Il lui fait éprouver, dans sa propre réaction, la forme de vie à laquelle il tient effectivement.
 
 [Énoncé](https://www.ens.psl.eu/sites/default/files/philo-ecrit-sil2022-2.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/rapport-philo-sil2022.pdf)
