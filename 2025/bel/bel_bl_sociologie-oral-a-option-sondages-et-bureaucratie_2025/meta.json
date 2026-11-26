@@ -1,0 +1,64 @@
+{
+  "slug": "bel_bl_sociologie-oral-a-option-sondages-et-bureaucratie_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Sociologie (oral à option) — Sondages et bureaucratie",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "Les sondages font-ils l’élection ? / « Le capitalisme requiert la bureaucratie » (Max Weber, Économie et société, 1922)",
+  "questions": 0,
+  "sujets": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oraux_sociologie_option_bl.pdf#page=53",
+    "sha256_sujet": "a6cfd0e1d317596c64fdd7f85e2770ef806175c8b278483fe266bc97bed6e3d9",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_sociologie_option.pdf",
+    "sha256_rapport_jury": "514cddfb2a08ef98d7d1375ef107103a12e496e5c827f26b9640024be445eb8b",
+    "pages_sujet_dans_pdf": [
+      53,
+      53
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/precision-et-effectif.svg",
+      "question": "Les sondages font-ils l’élection ?",
+      "legende": "Illustration théorique pour une proportion de 20 %. Intervalle à 95 % approximatif par la formule normale sous échantillonnage aléatoire simple, hors biais de sélection et de mesure."
+    },
+    {
+      "fichier": "figures/achat-et-controle.svg",
+      "question": "« Le capitalisme requiert la bureaucratie » (Max Weber, Économie et société, 1922)",
+      "legende": "Circuit illustratif d’un achat dans une entreprise. Les pièces conservées rendent possible la vérification après le départ de la personne qui a passé la commande."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "agent": "x_maths_b_recentes",
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Deux exposés indépendants sur les intitulés visibles page 53. Distinction entre erreur de mesure, publication et influence sur le vote, contrôle de l’exemple d’échantillonnage. Définition de l’idéal-type wébérien, administration externe et interne, Merton et Crozier. Deux figures et préparation de la discussion dans les deux domaines."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Les sondages font-ils l’élection ?",
+      "« Le capitalisme requiert la bureaucratie » (Max Weber, Économie et société, 1922)"
+    ],
+    "precision": "Les deux alternatives imprimées sur le billet et énumérées dans le rapport sont traitées intégralement et séparément.",
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "a6cfd0e1d317596c64fdd7f85e2770ef806175c8b278483fe266bc97bed6e3d9",
+      "sha256_rapport_jury_controle": "514cddfb2a08ef98d7d1375ef107103a12e496e5c827f26b9640024be445eb8b",
+      "perimetre": "Deux exposés indépendants sur les intitulés visibles page 53. Distinction entre erreur de mesure, publication et influence sur le vote, contrôle de l’exemple d’échantillonnage. Définition de l’idéal-type wébérien, administration externe et interne, Merton et Crozier. Deux figures et préparation de la discussion dans les deux domaines."
+    }
+  }
+}
