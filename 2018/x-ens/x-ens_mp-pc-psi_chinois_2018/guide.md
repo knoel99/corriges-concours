@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Les index identifient le chinois MP, PC et PSI (XEULCR dans la banque). La notice 2018, p. 14 et 18, fixe quatre heures et deux textes en chinois. A demande une synthèse de 600 à 675 mots des documents 1 à 4, avec titre et sans opinion personnelle. B demande une réaction à l’éditorial 5 en 500 à 600 mots.
 
 ## A. Synthèse de documents
@@ -56,6 +58,8 @@ Le découpage lexical indicatif donne 616 mots hors titre et ponctuation.
 
 Le découpage lexical indicatif donne 548 mots hors titre et ponctuation.
 
-Les deux copies commencent par A1. La garde chinoise et le rapport écrit manquent. Les éventuelles consignes propres à cette garde, notamment sur les aides autorisées, restent inconnues. La notice demande de discuter l’éditorial sans assigner de rôle ni de destinataire.
+Le cahier chinois commence au document A1. Les quatre gardes conservées pour la même épreuve XEULCR 2018 donnent mot pour mot les mêmes consignes de rédaction, explicitement communes aux langues proposées. Elles demandent une synthèse titrée des documents 1 à 4, puis une prise de position sur le document 5. La notice de la session confirme ces deux travaux en MP et PC et étend leurs modalités à PSI. Les cinq documents chinois et les deux réponses sont complets. La garde propre au chinois reste introuvable.
 
 [Cahier de chinois, p. 1–6](https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_MPPC_sujet_Chinois.pdf) · [Copie ENS du cahier](https://www.ens.psl.eu/sites/default/files/2018_mppc_sujet_chinois.pdf) · [Notice ENS 2018, p. 14 et 18](https://www.ens.psl.eu/sites/default/files/notice_ENS_2018.pdf) · [Arrêté du 5 janvier 2018, annexe, A, 2, § 2.1](https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000036484682)
+
+[Consigne commune sur la garde allemande](https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_MPPC_sujet_All.pdf#page=1) · [Consigne commune sur la garde espagnole](https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_MPPC_sujet_Esp.pdf#page=1)

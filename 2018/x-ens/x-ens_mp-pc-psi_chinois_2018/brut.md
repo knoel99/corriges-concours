@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Les index identifient le chinois MP, PC et PSI (XEULCR dans la banque). La notice 2018, p. 14 et 18, fixe quatre heures et deux textes en chinois. A demande une synthèse de 600 à 675 mots des documents 1 à 4, avec titre et sans opinion personnelle. B demande une réaction à l’éditorial 5 en 500 à 600 mots.
 
 ## A. Synthèse de documents
@@ -40,6 +42,8 @@ Les index identifient le chinois MP, PC et PSI (XEULCR dans la banque). La notic
 
 此外，选择只有在拒绝之后仍然能正常生活时才算数。一个人如果不用指定软件就连车票也买不了，屏幕上的“同意”很难代表真正的意愿。保留现金和其他付款办法，让不会用手机或不愿交出更多资料的人照样能够办事，同改善软件本身一样重要。少带一个钱包确实是进步，让人们在享受便利以后仍能决定自己的行踪由谁知晓，才会使这种进步值得信任。
 
-Les deux copies commencent par A1. La garde chinoise et le rapport écrit manquent. Les éventuelles consignes propres à cette garde, notamment sur les aides autorisées, restent inconnues. La notice demande de discuter l’éditorial sans assigner de rôle ni de destinataire.
+Le cahier chinois commence au document A1. Les quatre gardes conservées pour la même épreuve XEULCR 2018 donnent mot pour mot les mêmes consignes de rédaction, explicitement communes aux langues proposées. Elles demandent une synthèse titrée des documents 1 à 4, puis une prise de position sur le document 5. La notice de la session confirme ces deux travaux en MP et PC et étend leurs modalités à PSI. Les cinq documents chinois et les deux réponses sont complets. La garde propre au chinois reste introuvable.
 
 [Cahier de chinois, p. 1–6](https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_MPPC_sujet_Chinois.pdf) · [Copie ENS du cahier](https://www.ens.psl.eu/sites/default/files/2018_mppc_sujet_chinois.pdf) · [Notice ENS 2018, p. 14 et 18](https://www.ens.psl.eu/sites/default/files/notice_ENS_2018.pdf) · [Arrêté du 5 janvier 2018, annexe, A, 2, § 2.1](https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000036484682)
+
+[Consigne commune sur la garde allemande](https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_MPPC_sujet_All.pdf#page=1) · [Consigne commune sur la garde espagnole](https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_MPPC_sujet_Esp.pdf#page=1)
