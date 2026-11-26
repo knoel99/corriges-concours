@@ -1,0 +1,63 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_etude-de-documents-la-democratie-en-debat_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Étude de documents — la démocratie en débat",
+    "annee": 2018,
+    "modalite": "écrit"
+  },
+  "intitule": "La démocratie en débat. Commentaire synthétique du dossier.",
+  "questions": 1,
+  "gabarit": "dissertation",
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/Epreuve%20sur%20documents%20SIL%202018.pdf",
+    "sha256_sujet": "5e9a64c709e376864b65a8fe2e09af74e1044b2391cc03f739d569af0ad0c4c5",
+    "pages_sujet": 4,
+    "page_officielle": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2018-lettres",
+    "reperage": "Une consigne de commentaire synthétique, cinq extraits et un dessin de presse accompagné d’une légende anglaise. Les textes sont commentés dans les limites des coupes du dossier.",
+    "reference_complementaire": "https://www.rousseauonline.ch/Text/du-contrat-social-ou-principes-du-droit-politique.php",
+    "precision_reference": "Le document 2 indique chapitre V. Le texte de 1762 place le passage au livre III, chapitre IV."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/comparaisons.svg",
+      "question": "Commentaire synthétique",
+      "legende": "Des documents à la comparaison, trois questions à poser à la démocratie."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "oraux_lyon_et_anciens_corriges",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction des deux commentaires après lecture des quatre pages et examen séparé du dessin et de la légende. Comparaison thématique des six pièces, distinctions de vocabulaire politique, exercices de lecture dans l’édition guidée et schéma original."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire synthétique unique des six documents, « La démocratie en débat »."
+    ],
+    "elements_verifies": [
+      "Doc. 1, p. 1–2. Discours de Périclès chez Thucydide, loi, offices, liberté, vote, proposition et discussion avant l’action.",
+      "Doc. 2, p. 2. Rousseau, sens de gouvernement, permanence de l’assemblée, conditions de taille, de mœurs et de fortune, vigilance.",
+      "Doc. 3, p. 2. Tocqueville, emprunts entre peuples et changement d’échelle du sujet poétique.",
+      "Doc. 4, p. 2–3. James, relation entre scène, fenêtres, formes et conscience de l’artiste.",
+      "Doc. 5, p. 3–4. Cohen-Tanugi, pronostics situés en 2018, travail, information, coopération et tensions internationales.",
+      "Doc. 6, p. 4. Joe Dator, plateau de jeu, panneau sur le statut des faits, réplique du présentateur à Jeannie, points à Kevin et portée de la satire."
+    ]
+  }
+}
