@@ -23,7 +23,8 @@
     "sujet": "https://www.ens.psl.eu/sites/default/files/philosophie_tronc_commun_1.pdf",
     "sujet_sha256": "f6ff168d1e7e28e131eecdd58f129bc5ee01237762390b745b80c6c9e11c05f5",
     "rapport": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf",
-    "rapport_sha256": "b7ae24985758ee21c7601a903f81ce57bdcef0cb108f8852ecd308eba32c7dca"
+    "rapport_sha256": "b7ae24985758ee21c7601a903f81ce57bdcef0cb108f8852ecd308eba32c7dca",
+    "index": "https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-al"
   },
   "figures": [
     {
@@ -37,7 +38,7 @@
       "question": "11"
     }
   ],
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -62,6 +63,67 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Confrontation de l’ordre, des choix et de chaque énoncé au feuillet et aux caractères gras de l’annexe du rapport. Vérification de la durée, des références conceptuelles, du lien entre cas concrets et thèses et de l’entraînement propre au guide."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "sociologie_psl_oraux_individuels",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Confrontation des 11 billets et de leurs 22 intitulés aux feuillets et au gras de l’annexe du jury. Vérification de chaque réponse dans les deux éditions, précision des modalités de tirage et des ouvrages autorisés, rédaction de 11 relances avec réponse pour les sujets proposés en alternative dans le guidé."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "tirages_verifies": 11,
+    "sujets_choisis_verifies": 11,
+    "alternatives_verifiees": 11,
+    "intitules_par_edition": 22,
+    "questions_entierement_traitees": [
+      "1. Sujet choisi — Y a-t-il des progrès en art ?",
+      "1. Alternative — Le racisme",
+      "2. Sujet choisi — Qu’est-ce qui est commun à toutes les langues ?",
+      "2. Alternative — Les conflits sociaux",
+      "3. Sujet choisi — Se faire justice",
+      "3. Alternative — Qu'est-ce qu’une bonne définition ?",
+      "4. Sujet choisi — La nature est-elle une invention de l’homme ?",
+      "4. Alternative — Musique et émotion",
+      "5. Sujet choisi — Le progrès technique",
+      "5. Alternative — À quoi servent les cérémonies ?",
+      "6. Sujet choisi — L’hypocrisie",
+      "6. Alternative — Peut-on lutter contre le destin ?",
+      "7. Sujet choisi — Le récit historique",
+      "7. Alternative — Une société sans droit est-elle possible ?",
+      "8. Sujet choisi — Technique et liberté",
+      "8. Alternative — Peut-on penser la mort ?",
+      "9. Sujet choisi — Qui es-tu ?",
+      "9. Alternative — Technique et nature",
+      "10. Sujet choisi — Existe-t-il des devoirs envers soi-même ?",
+      "10. Alternative — Guerre et paix",
+      "11. Sujet choisi — La technique et le corps",
+      "11. Alternative — Peut-on changer le passé ?"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "controle": "Feuillet sans date imprimée. Le lien « 17 juin » de la rubrique Philosophie, oral, épreuve commune désigne ce PDF. Les billets 1 à 11 correspondent aux lignes 13 à 23 de la liste du rapport. Au billet 4, le rapport corrige « ets-elle » en « est-elle ». Le premier sujet est en gras. Chaque intitulé possède son propre développement dans les deux éditions. Dans le guidé, les exercices de reprise sont des propositions pédagogiques.",
+    "pages_verifiees": {
+      "sujet": [
+        1
+      ],
+      "rapport": [
+        1,
+        6
+      ]
+    }
+  }
 }
