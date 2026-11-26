@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Épreuve de quatre heures, sans calculatrice. Le sujet porte sur la température et la filtration de l’air en salle de fabrication de batteries. Le jury indique environ 40 % pour la modélisation et 60 % pour l’informatique.
 
 [Sujet officiel et diagramme du R404A](https://www.banquept.fr/documents/2024/info_mod_2024_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2024/rapport_info_model_ecrit_2024.pdf)
@@ -143,7 +145,7 @@ Le fluide extrait environ $115\,\mathrm{kJ}$ de la pièce pour environ $36\,\mat
 > [!INDICATION]
 > Repérer les températures de changement d'état. Le numérateur du coefficient réversible exige une température absolue.
 
-L'évaporation s'effectue vers $-12\,^{\circ}\mathrm C$ et la liquéfaction à $20\,\mathrm{bar}$ vers $44\,^{\circ}\mathrm C$. Avec $T_f\simeq261\,\mathrm K$ et $T_c\simeq317\,\mathrm K$, on trouve $\varepsilon_{\rm rév}\simeq261/(317-261)\simeq4{,}7$. La valeur réelle d'environ $3{,}2$ reste inférieure au maximum. La détente et les transferts thermiques à différence finie de température créent de l'entropie.
+L'évaporation s'effectue vers $-12\,^{\circ}\mathrm C$ et la liquéfaction à $20\,\mathrm{bar}$ vers $44\,^{\circ}\mathrm C$. Avec $T_f\simeq261\,\mathrm K$ et $T_c\simeq317\,\mathrm K$, on trouve $\varepsilon_{\rm rév}\simeq261/(317-261)\simeq4{,}7$. Un contrôle par l’équation d’état du R404A donne $h_A=379{,}9$, $h_B=416{,}3$, $h_C=h_D=265{,}2$ en $\mathrm{kJ\,kg^{-1}}$, et $x_D=0{,}466$. Ces valeurs confirment la lecture sans exiger une telle précision sur le graphique. La valeur réelle d'environ $3{,}2$ reste inférieure au maximum. La détente et les transferts thermiques à différence finie de température créent de l'entropie.
 
 ## Conduction dans une ailette
 
@@ -195,7 +197,7 @@ $$
 P=hp(T_0-T_{\rm air})\int_0^\infty e^{-x/\delta}\,\mathrm dx
 =\sqrt{2h\lambda ab(a+b)}\,(T_0-T_{\rm air}).
 $$
-Retrouver au pied $-\lambda ab T'(0)=\lambda ab(T_0-T_{\rm air})/\delta=P$ vérifie le bilan. Pour un pied plus chaud que l'air, la puissance évacuée est positive, en watts.
+On peut aussi évaluer le flux à la base. Retrouver au pied $-\lambda ab T'(0)=\lambda ab(T_0-T_{\rm air})/\delta=P$ vérifie le bilan. Pour un pied plus chaud que l'air, la puissance évacuée est positive, en watts.
 
 ## Implantation des groupes de ventilation
 
@@ -263,7 +265,7 @@ def repartition(L, l, n):
     return nx, ny, u, v
 ```
 
-Par exemple, avec $L=10$, $\ell=5$, $n=11$, on aboutit à $n_x=n_y=3$, $u=1{,}75\,\mathrm m$ et $v=0{,}5\,\mathrm m$. Les neuf appareils doivent alors fournir chacun le débit total requis divisé par neuf. Si l'on exige littéralement moins de $n$ appareils dès le départ, le budget entier devient $n-1$, ce qui change l'initialisation demandée en Q26.
+Par exemple, avec $L=10$, $\ell=5$, $n=11$, on aboutit à $n_x=n_y=3$, $u=1{,}75\,\mathrm m$ et $v=0{,}5\,\mathrm m$. Les neuf appareils doivent alors fournir chacun le débit total requis divisé par neuf. Avec le débit nominal fictivement ajustable, le rapport de vitesses vaut $V\,tx_{\rm renew}/(n_xn_y Q)$. Dans l'installation réelle, le débit requis par appareil doit aussi rester sous le maximum constructeur de $2200\,\mathrm{m^3\,h^{-1}}$ indiqué p. 7. Si l'on exige littéralement moins de $n$ appareils dès le départ, le budget entier devient $n-1$, ce qui change l'initialisation demandée en Q26.
 
 ![Figure 3 — Exemple de répartition dans dix mètres sur cinq. Les marges verticales changent avec le décalage des colonnes.](figures/implantation.svg)
 
@@ -396,7 +398,7 @@ def analyse_essais(dossier="."):
     return L_vit, L_Cr
 ```
 
-Dans le répertoire des essais, `L_vit, L_Cr = analyse_essais()` produit les deux listes de longueur 18.
+Dans le répertoire des essais, `L_vit, L_Cr = analyse_essais()` produit les deux listes de longueur 18. Q31 et Q35 demandent d’écrire les scripts qui lisent puis affichent ou mémorisent les données. Le fascicule publie des lignes d’exemple et des graphes. L’annale n’y joint aucun des dix-huit fichiers complets. Le contrôle fourni rejoue les six lignes tabulées de la p. 12 et traite dix-huit fichiers de test synthétiques, identifiés dans son code.
 
 ## Régression sur le couple résistant
 
@@ -423,7 +425,7 @@ Les coefficients ont les unités qui convertissent chaque terme en couple. Le mo
 > [!INDICATION]
 > Écrire à la main une ligne de la matrice. Sa seconde composante doit restituer la constante du modèle quelle que soit la vitesse.
 
-Former une colonne de $m$ carrés de vitesses et une colonne de $m$ unités, dans cet ordre. La sortie a la forme $(m,2)$. Si les données initiales sont en tr/min, $\omega=2\pi N/60$ avant l'élévation au carré. On utilise `import numpy as np`.
+Former une colonne de $m$ carrés de vitesses et une colonne de $m$ unités, dans cet ordre. La sortie a la forme $(m,2)$. Si les données initiales sont en tr/min, $\omega=2\pi N/60$ avant l'élévation au carré. Les entrées `X` et `Y` restent alignées sur l’ordre des dix-huit essais. On utilise `import numpy as np`.
 
 ```python
 def matrice_explicative(V_N2):
@@ -531,7 +533,7 @@ def descente_gradient(X, Y, theta_init, alpha, n):
     return theta
 ```
 
-Avec un pas suffisamment petit, le coût décroît. Si $X$ est de rang deux, la Hessienne $2X^{\mathsf T}X$ est définie positive. Le choix $0<\alpha<1/\lambda_{\max}(X^{\mathsf T}X)$ donne une convergence vers le minimum unique. La figure de l'énoncé indique après 300 itérations $a_1\simeq5{,}3137\times10^{-6}$ et $a_0\simeq0{,}0500$.
+La mise à jour élément par élément serait incorrecte si elle recalculait le second gradient avec une pente déjà modifiée. Avec un pas suffisamment petit, le coût décroît. Si $X$ est de rang deux, la Hessienne $2X^{\mathsf T}X$ est définie positive. Le choix $0<\alpha<1/\lambda_{\max}(X^{\mathsf T}X)$ donne une convergence vers le minimum unique. La figure de l'énoncé indique après 300 itérations $a_1\simeq5{,}3137\times10^{-6}$ et $a_0\simeq0{,}0500$.
 
 ## Régimes établi et transitoire du moteur
 
@@ -662,4 +664,4 @@ tr, w_inf = caracteristiques(LT, Lw)
 print(f"Temps de réponse à 5 % : {tr:.2f} s")
 print(f"Vitesse permanente : {w_inf:.2f} rad/s")
 ```
-La courbe imprimée pour l'échelon de $6{,}5\,\mathrm A$ atteint environ $130\,\mathrm{rad\,s^{-1}}$. Le seuil inférieur est donc voisin de $123{,}5\,\mathrm{rad\,s^{-1}}$. Sa dernière traversée se lit vers $7$ à $8\,\mathrm s$. Les listes de la simulation fourniraient une datation au pas près.
+La courbe imprimée pour l'échelon de $6{,}5\,\mathrm A$ atteint environ $130\,\mathrm{rad\,s^{-1}}$. Le seuil inférieur est donc voisin de $123{,}5\,\mathrm{rad\,s^{-1}}$. Son entrée définitive dans la bande se lit vers $7$ à $8\,\mathrm s$. Les listes de la simulation fourniraient une datation au pas près. La reproduction numérique exacte de cette courbe exigerait également les paramètres de la dynamique, dont l’inertie $J$ ne reçoit aucune valeur dans le fascicule.
