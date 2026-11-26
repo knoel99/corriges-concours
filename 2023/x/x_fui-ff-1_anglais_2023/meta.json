@@ -35,7 +35,7 @@
     "vocabulaire": "https://now.tufts.edu/2022/06/15/how-slavery-ended-slowly-and-emancipation-laws-often-kept-enslaved-bondage-and-rewarded",
     "sujet_sha256": "d5aafe58c0e82febace637b75fef81df719190ff0725be2dae8b4b49c89b9796"
   },
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "revision": {
     "date": "2026-11-24",
     "modele": "Codex (GPT-6)",
@@ -99,6 +99,34 @@
       "fournisseur": "codex",
       "session": "astra_langues",
       "perimetre": "Définition historique de ghostlining vérifiée sur l’entretien personnel de Manjapra et illustrée par les bénéficiaires des indemnisations, traitement explicite de la prémisse inversée sur les financements et de la conclusion de Morton."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "session": "fin_langues_x_interens",
+      "agent": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Fascicule officiel, consignes de compréhension et d’essai en fin de sujet (PDF de 6 pages). Les quatre réponses comptent respectivement 57, 66, 68, 73 mots hors références. L’essai compte 372 mots pour une cible de 400 à 10 % près, avec un séparateur tous les 50 mots. Les cinq réponses sont présentes dans les deux éditions. Le fascicule pose en Q2 une question sur ghostlining, terme absent du texte de Morton. Les deux éditions signalent cette anomalie et documentent le sens par l’entretien de Kris Manjapra. En Q3 elles rectifient la prémisse que contredit l’article. Q1, Q4 et l’essai portent sur les limites du projet et les priorités de conservation.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "Essai"
+    ],
+    "precision": "Fascicule officiel, consignes de compréhension et d’essai en fin de sujet (PDF de 6 pages). Les quatre réponses comptent respectivement 57, 66, 68, 73 mots hors références. L’essai compte 372 mots pour une cible de 400 à 10 % près, avec un séparateur tous les 50 mots. Les cinq réponses sont présentes dans les deux éditions. Le fascicule pose en Q2 une question sur ghostlining, terme absent du texte de Morton. Les deux éditions signalent cette anomalie et documentent le sens par l’entretien de Kris Manjapra. En Q3 elles rectifient la prémisse que contredit l’article. Q1, Q4 et l’essai portent sur les limites du projet et les priorités de conservation."
+  }
 }
