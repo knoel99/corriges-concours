@@ -4,7 +4,9 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 Les deux exercices sont indépendants. Le premier fait apparaître une même équation différentielle sous deux intégrales. Le second utilise une norme adaptée pour étudier la stabilité de suites récurrentes.
 
@@ -45,6 +47,8 @@ Le terme de bord en $R$ tend vers zéro et l’intégrale restante converge abso
 La même intégration par parties fournit une borne uniforme sur la queue. En faisant tendre $R$ vers l’infini, on obtient
 $$\left|\int_T^\infty\frac{\sin t}{t+x}\,\mathrm dt\right|\le\frac1{T+x}+\int_T^\infty\frac{\mathrm dt}{(t+x)^2}=\frac2{T+x}\le\frac2T.$$
 Elle vaut pour tout $x\ge0$ et tout $T>0$.
+
+La distinction entre convergence et convergence absolue est effective. Sur $[2k\pi+\pi/6,2k\pi+5\pi/6]$, on a $|\sin t|\ge1/2$. Pour $x\ge0$ fixé, l’intégrale du module sur cet intervalle est donc au moins $\pi/[3(2k\pi+5\pi/6+x)]$. La série de ces minorants diverge, tandis que la borne de queue ci-dessus établit la convergence de l’intégrale signée.
 
 ### I.2b · Déplacer la borne inférieure
 
@@ -204,6 +208,8 @@ Puisque $P(1)=1-\sum_i a_i\ne0$, la suite constante de valeur $\ell=b/P(1)$ est 
 > Fixer une longueur de bloc avec une inégalité stricte pour la matrice limite. Garder cette longueur fixe en faisant tendre l’indice de départ vers l’infini.
 
 Notons $A_n$ la matrice compagnon de dernière ligne $(b_0(n),\ldots,b_{d-1}(n))$. Alors $V_{n+1}=A_nV_n$ et $A_n\to A$. Fixons $r=\sigma(A)+\varepsilon$. Par II.6c, il existe $q\geq1$ avec $\|A^q\|_{\mathrm{op}}^{1/q}<r$, donc une **marge strictement positive** $r^q-\|A^q\|_{\mathrm{op}}$. Pour ce $q$ fixé, $A_{n+q-1}\cdots A_n\to A^q$ par continuité du produit d’un nombre fini de matrices. Pour tout $n$ au-delà d’un même $n_0$, la norme du produit est ainsi au plus $r^q$. En l’appliquant à $V_n$, on obtient exactement $\|V_{n+q}\|_\infty\leq r^q\|V_n\|_\infty$.
+
+La norme de la matrice limite ne garantit pas une contraction en un seul pas dans la norme initiale. Pour la récurrence $v_{n+2}=0$, la matrice compagnon est $A=\left(\begin{smallmatrix}0&1\\0&0\end{smallmatrix}\right)$. On a $\sigma(A)=0$, $\|A\|_{\mathrm{op}}=1$ et $A^2=0$. À l’indice initial, le vecteur $(0,1)^T$ conserve sa norme après un pas. Le choix $q=2$ donne ici un produit de norme nulle à chaque indice.
 
 ### II.12 · Maîtriser les indices intermédiaires
 
