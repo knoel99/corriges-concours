@@ -1,0 +1,212 @@
+{
+  "slug": "banque-pt_pt_physique-b---thermodynamique_2025",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique B - Thermodynamique",
+    "annee": 2025
+  },
+  "duree_heures": 2,
+  "questions": 26,
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2025/ph_b_th_2025_pt.pdf",
+    "sujet_sha256": "05d225871ee53546e0c92a567781f6c87dea23bc479b72edbea5eeb569651b6f",
+    "pages_sujet": 16,
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2025/rapport_phys_b_ecrit_2025.pdf",
+    "rapport_sha256": "88126375c671d63fcba8180e307bc9f34402e8727271a6adc9a48e96c1b04506",
+    "pages_rapport": 6,
+    "pages_rapport_thermodynamique": "4–6",
+    "livret": "https://www.banquept.fr/documents/livret/2025/Livret_PT_2025.pdf#page=13",
+    "livret_sha256": "4b83162034dd73f2516707f35e52b18ea6799a215935e95005f6a24bd66664ba",
+    "coefficient_physique_B": {
+      "ENS Paris-Saclay": 2,
+      "ENS Rennes": 2
+    },
+    "pieces": "Figures 1–4 et tableaux dans le sujet. Fascicule réponse p. 13–16 du PDF complet, diagramme R134a en p. 15 (3/4 du feuillet). Le numéro Q16 est un exposé documentaire sans question, ce que confirme le rapport p. 5."
+  },
+  "figures": [
+    {
+      "question": "Q4",
+      "legende": "Cycle du R134a dans le plan pression–enthalpie, avec courbes de saturation et flèches du parcours.",
+      "fichier": "figures/cycle-r134a.svg"
+    },
+    {
+      "question": "Q11",
+      "legende": "Diagramme de phases de l'eau et agrandissement du refroidissement nocturne pour la pression partielle de vapeur.",
+      "fichier": "figures/phases-rosee.svg"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "reperes": [
+      {
+        "question": 1,
+        "page_pdf": 3
+      },
+      {
+        "question": 2,
+        "page_pdf": 4
+      },
+      {
+        "question": 3,
+        "page_pdf": 4
+      },
+      {
+        "question": 4,
+        "page_pdf": 4
+      },
+      {
+        "question": 5,
+        "page_pdf": 4
+      },
+      {
+        "question": 6,
+        "page_pdf": 4
+      },
+      {
+        "question": 7,
+        "page_pdf": 4
+      },
+      {
+        "question": 8,
+        "page_pdf": 4
+      },
+      {
+        "question": 9,
+        "page_pdf": 4
+      },
+      {
+        "question": 10,
+        "page_pdf": 4
+      },
+      {
+        "question": 11,
+        "page_pdf": 5
+      },
+      {
+        "question": 12,
+        "page_pdf": 5
+      },
+      {
+        "question": 13,
+        "page_pdf": 5
+      },
+      {
+        "question": 14,
+        "page_pdf": 5
+      },
+      {
+        "question": 15,
+        "page_pdf": 6
+      },
+      {
+        "question": 16,
+        "page_pdf": 6
+      },
+      {
+        "question": 17,
+        "page_pdf": 6
+      },
+      {
+        "question": 18,
+        "page_pdf": 7
+      },
+      {
+        "question": 19,
+        "page_pdf": 7
+      },
+      {
+        "question": 20,
+        "page_pdf": 8
+      },
+      {
+        "question": 21,
+        "page_pdf": 8
+      },
+      {
+        "question": 22,
+        "page_pdf": 8
+      },
+      {
+        "question": 23,
+        "page_pdf": 8
+      },
+      {
+        "question": 24,
+        "page_pdf": 8
+      },
+      {
+        "question": 25,
+        "page_pdf": 8
+      },
+      {
+        "question": 26,
+        "page_pdf": 8
+      }
+    ],
+    "numeros_documentaires_sans_consigne": [
+      16
+    ],
+    "questions_appelant_une_reponse": 25
+  },
+  "contributions": [
+    {
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "phase": "redaction",
+      "perimetre": "Rédaction des réponses et des pistes de toutes les questions imprimées, calculs et graphiques pédagogiques."
+    },
+    {
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "perimetre": "Vérification du schéma de machine et des lectures thermodynamiques, des bilans de l’air humide et du fonctionnement de l’échangeur au regard du rapport."
+    }
+  ]
+}
