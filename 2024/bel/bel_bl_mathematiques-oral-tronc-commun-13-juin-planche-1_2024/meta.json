@@ -1,0 +1,74 @@
+{
+  "slug": "bel_bl_mathematiques-oral-tronc-commun-13-juin-planche-1_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Mathématiques (oral tronc commun) — 13 juin, planche 1",
+    "annee": 2024
+  },
+  "type_epreuve": "oral",
+  "intitule_officiel": "Planche 1 du 13 juin 2024 — Épreuve orale de mathématiques, concours 2024 d’entrée à l’ENS Paris, voie B/L",
+  "questions": 10,
+  "redaction": "IA, corrigé non officiel",
+  "figures": [
+    {
+      "fichier": "figures/13a-illustration.svg",
+      "question": "1.2",
+      "legende": "La majoration en fonction du décalage atteint son minimum pour a égal à 1 lorsque la variance et le seuil valent 1."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/bl_sujets_oraux_mathematiques_1_13062024.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_oral_mathematiques.pdf",
+    "sha256_sujet": "0571690905b998c961f835e5fe6ccf36c1ea0a050b56e2f97f9669169a1387fa",
+    "sha256_rapport_jury": "923b6c7240094e9718b8fec845aa8713285a2a266592a62fad5bc2ea2bdf6cc7",
+    "calendrier": "https://www.ens.psl.eu/sujets-des-epreuves-orales-du-concours-bl-session-2024"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "2.1a",
+      "2.1b",
+      "2.2",
+      "2.3a",
+      "2.3b",
+      "2.3c"
+    ],
+    "pages_pdf_des_questions": {
+      "1.1": 1,
+      "1.2": 1,
+      "1.3": 1,
+      "1.4": 1,
+      "2.1a": 1,
+      "2.1b": 1,
+      "2.2": 1,
+      "2.3a": 1,
+      "2.3b": 1,
+      "2.3c": 1
+    },
+    "pages_du_sujet": 1,
+    "precision": "Comparaison avec les deux exercices et toutes leurs sous-questions sur le feuillet officiel."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Une borne unilatérale et une application multiplicative Rédaction et vérification des 10 démonstrations de la planche dans les deux éditions, préparation et reprise adaptées aux observations du jury, figure originale.",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "agent": "rennes_oraux_economie",
+      "session": "rennes_oraux_economie"
+    }
+  ]
+}

@@ -774,6 +774,9 @@
 | 2022 | BEL | AL | Russe (thème Lyon) | [md](2022/bel/bel_al_russe-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_russe-theme-lyon_2022/guide.md) |
 | 2022 | BEL | BL | Mathématiques | [md](2022/bel/bel_bl_mathematiques_2022/brut.md) | [md](2022/bel/bel_bl_mathematiques_2022/guide.md) |
 | 2024 | BEL | BL | Mathématiques | [md](2024/bel/bel_bl_mathematiques_2024/brut.md) | [md](2024/bel/bel_bl_mathematiques_2024/guide.md) |
+| 2024 | BEL | BL | Mathématiques (oral tronc commun) — 12 juin | [md](2024/bel/bel_bl_mathematiques-oral-tronc-commun-12-juin_2024/brut.md) | [md](2024/bel/bel_bl_mathematiques-oral-tronc-commun-12-juin_2024/guide.md) |
+| 2024 | BEL | BL | Mathématiques (oral tronc commun) — 13 juin, planche 1 | [md](2024/bel/bel_bl_mathematiques-oral-tronc-commun-13-juin-planche-1_2024/brut.md) | [md](2024/bel/bel_bl_mathematiques-oral-tronc-commun-13-juin-planche-1_2024/guide.md) |
+| 2024 | BEL | BL | Mathématiques (oral tronc commun) — 13 juin, planche 2 | [md](2024/bel/bel_bl_mathematiques-oral-tronc-commun-13-juin-planche-2_2024/brut.md) | [md](2024/bel/bel_bl_mathematiques-oral-tronc-commun-13-juin-planche-2_2024/guide.md) |
 | 2026 | BEL | BL | Mathématiques | [md](2026/bel/bel_bl_mathematiques_2026/brut.md) | [md](2026/bel/bel_bl_mathematiques_2026/guide.md) |
 | 2024 | BEL | BL | Philosophie | [md](2024/bel/bel_bl_philosophie_2024/brut.md) | [md](2024/bel/bel_bl_philosophie_2024/guide.md) |
 | 2025 | BEL | BL | Philosophie | [md](2025/bel/bel_bl_philosophie_2025/brut.md) | [md](2025/bel/bel_bl_philosophie_2025/guide.md) |
