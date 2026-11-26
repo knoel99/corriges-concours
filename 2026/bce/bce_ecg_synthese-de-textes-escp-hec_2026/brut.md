@@ -14,6 +14,8 @@
 
 **Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+## Synthèse rédigée
+
 Quelle place pour la diversité quand les langues circulent ?
 
 Que révèle leur pluralité ? Pour Benjamin, le français pain et le mot allemand Brot désignent la même chose. Pourtant, chaque langue la signifie selon une intention singulière. Yannic reconnaît dans chaque langue une manière de concevoir le monde, porteuse de valeurs // culturelles et politiques. Larsonneur déplace cette observation vers les usages internes : des groupes parlant une même langue développent des styles distincts, que les outils numériques peuvent méconnaître.
@@ -24,7 +26,9 @@ Comment préserver la singularité des langues dans ces relations ? Yannic mise 
 
 *(300 mots)*
 
-**Repère de lecture après la copie.** Pour confronter les trois positions, il faut préciser ce que désigne la diversité dans chacune : un rapport entre manières de signifier chez Benjamin, des relations entre communautés chez Yannic, des usages susceptibles d’être privilégiés par un dispositif technique chez Larsonneur. Une traduction disponible dans davantage de langues peut ainsi accroître les possibilités d’échange sans garantir la diversité de leurs usages.
+## Repère après la synthèse
+
+Pour confronter les trois positions, il faut préciser ce que désigne la diversité dans chacune : un rapport entre manières de signifier chez Benjamin, des relations entre communautés chez Yannic, des usages susceptibles d’être privilégiés par un dispositif technique chez Larsonneur. Une traduction disponible dans davantage de langues peut ainsi accroître les possibilités d’échange sans garantir la diversité de leurs usages.
 
 ![Figure 1 — Un même mot, trois échelles de diversité](figures/lecture-du-sujet.svg)
 
