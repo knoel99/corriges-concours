@@ -8,9 +8,7 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Le jury publie 12 billets pour le 18 juin. Pour chacun, le premier intitulé est celui qui a été choisi. Le second était proposé au choix. Les deux reçoivent ici des réponses distinctes. Les exemples et arguments proposés servent à préparer une leçon personnelle.
-
-Le billet porte deux sujets à lire devant le jury. Vous choisissez pendant les 90 minutes de préparation et annoncez votre choix au début des 20 minutes d’exposé. L’entretien dure ensuite 10 minutes. L’épreuve est de coefficient 3. Seul un dictionnaire de langue française est autorisé, à l’exclusion des dictionnaires de noms propres.
+Les 12 billets du [18 juin](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_tc_al.pdf) figurent ici dans l’ordre du feuillet. Le premier sujet de chaque paire a été choisi. Les deux sont traités. Le [rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf) précise les modalités. Lisez les deux sujets devant le jury, puis annoncez votre choix après 1 h 30 de préparation. L’oral, de coefficient 3, comprend 20 minutes d’exposé et 10 minutes d’entretien. Seul le dictionnaire de langue française est autorisé, à l’exclusion des dictionnaires de noms propres.
 
 ## 1. Le bien commun
 
@@ -135,5 +133,3 @@ Il faut aussi demander qui applique le nom. Un observateur peut reconnaître la 
 ### Le droit de la guerre
 
 L’expression désigne deux questions qu’il faut séparer. Dans quelles conditions le recours à la force entre États est-il licite ? Quelles obligations protègent les personnes lorsqu’un conflit existe déjà ? L’interdiction du recours à la force dans la Charte des Nations unies, avec les exceptions qu’elle prévoit, relève du premier registre. Les protections humanitaires des conventions de Genève relèvent du second. Leur application ne doit pas dépendre du jugement préalable de chacun sur la justice de sa cause. Une personne blessée ou détenue garde des droits quel que soit le camp qui la tient. Le paradoxe se résout ainsi en partie. Régler une situation où des vies sont menacées ne confère pas un brevet de légitimité au conflit lui-même. C’est précisément l’universalité de certaines protections qui interdit de les réserver à ceux que l’on juge innocents ou victorieux.
-
-[Feuille officielle du 18 juin](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_tc_al.pdf) · [Rapport du jury, modalités et annexe des sujets](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf)
