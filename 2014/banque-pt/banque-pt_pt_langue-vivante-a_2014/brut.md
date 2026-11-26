@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve dure trois heures. Chaque candidat compose dans la langue choisie à l’inscription. Ce fascicule présente les cinq synthèses de 450 à 500 mots. Les feuillets demandent un titre et le nombre de mots à la fin de la copie. Les deux décomptes indiqués, avec et sans titre, respectent la fourchette.
 
 [Sujet et supports](https://www.banquept.fr/documents/2014/lv_a_2014_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2014/rapport_lv_a_ecrit_2014.pdf) · [Grille du livret](https://www.banquept.fr/documents/livret/2014/Livret_PT_2014.pdf#page=12)
@@ -34,9 +36,9 @@ Gesunde Ernährung erscheint damit als eine gemeinsame Aufgabe von Erzeugern, Au
 
 **Who could share in Mandela’s promise?**
 
-Two sisters have just laid flowers in Cape Town. In the photograph they stand beneath an enormous portrait of Nelson Mandela, whose smile fills the wall behind them. The contrast in scale catches something of the moment of his death. A figure claimed by the whole nation had also become part of the lives of children born long after apartheid ended. Whether the society they inherited had overcome its racial divisions is a harder question than the public mourning might suggest.
+Two sisters have just laid flowers in Cape Town. In the photograph they stand beneath an enormous portrait of Nelson Mandela, the country’s first black president, whose smile fills the wall behind them. The contrast in scale catches something of the moment of his death. A figure claimed by the whole nation had also become part of the lives of children born long after apartheid ended. Whether the society they inherited had overcome its racial divisions is a harder question than the public mourning might suggest.
 
-In December 2013 people in a wealthy Johannesburg shopping district and in a poor part of Soweto found quite different ways of expressing attachment to the same man. Shirts bearing his prison number sold readily, while a musician in Soweto paid tribute on a battered recorder. One buyer regarded a purchase as an act of remembrance. The Telegraph nevertheless wondered what a man conscious of his own faults would have made of his transformation into a marketable saint. Foreign politicians, too, could gain from being seen at the memorial. Agreement on whom to honour did not necessarily imply agreement on what honouring him required.
+In December 2013 people in a wealthy Johannesburg shopping district and in a poor part of Soweto expressed attachment to the same man. People who had been separated by law and who still lived far apart could now sing the same liberation songs. The Telegraph nevertheless wondered what a leader conscious of his own faults would have made of a tribute that left so little room for critical judgement. Foreign politicians, too, could gain from being seen at the memorial. Agreement on whom to honour did not necessarily imply agreement on what honouring him required.
 
 Among the Afrikaners interviewed by the Observer, many credited Mandela with making reconciliation possible when violent confrontation had seemed likely. Others feared that the settlement might unravel without his personal authority. An extreme minority even wanted separation restored. The interviews distinguish these positions from the views of most mourners, but they also reveal how seldom people from different groups might meet as friends. Shared grief could coexist with quite separate social lives.
 
@@ -46,7 +48,7 @@ These disparities help explain a dispute over trainee pilots. Two otherwise equi
 
 Mandela left a country able to mourn him together and to debate openly what equality should entail. The girls at the mural could inherit that public space even while the opportunities awaiting their generation continued to depend heavily on race, income and access to work.
 
-**(472 words, title included · 466 without the title)**
+**(468 words, title included · 462 without the title)**
 
 ![Que lègue la réconciliation ?](figures/lecture-en.svg)
 
@@ -82,11 +84,11 @@ Quienes nacieron en democracia y estudiaron idiomas conocen una Europa en la que
 
 La magnitud del desempleo explica la distancia entre el lenguaje de la movilidad y el de la protesta. ABC cifra el paro juvenil en un cincuenta y siete por ciento y recuerda la emigración de los años sesenta. Esta vez abundan los profesionales cualificados, aunque también salen personas con menos estudios o con responsabilidades familiares. Europa atrae por la cercanía y la libre circulación, pero países latinoamericanos también demandan especialistas. En la fotografía de la manifestación, los jóvenes presentan el viaje como una expulsión. Lo que ponen en duda es que aceptar un empleo fuera constituya siempre una elección entre varias posibilidades reales.
 
-Los responsables políticos dan interpretaciones distintas a esa falta de oportunidades. En Italia, Enrico Letta pide disculpas a los jóvenes a quienes su país ha dejado de lado. En España, dirigentes del Partido Popular destacan el valor de formarse fuera y González Pons insiste en la pertenencia a un espacio europeo común. El dibujo de Josep Berenguel da la vuelta a esa imagen optimista. El cerebro sale del país como un paquete listo para entregar. El país receptor aprovecha una inversión educativa que financiaron otros, mientras España pierde posibles investigadores, consumidores y cotizantes.
+Los responsables políticos dan interpretaciones distintas a esa falta de oportunidades. En Italia, Enrico Letta pide disculpas a los jóvenes a quienes su país ha dejado de lado. En España, dirigentes del Partido Popular destacan el valor de formarse fuera y Pons insiste en la pertenencia a un espacio europeo común. El dibujo de Josep Berenguel da la vuelta a esa imagen optimista. El cerebro sale del país como un paquete listo para entregar. El país receptor aprovecha una inversión educativa que financiaron otros, mientras España pierde posibles investigadores, consumidores y cotizantes.
 
 El balance puede cambiar si se abre un camino de vuelta. Una ingeniera que amplía su formación en Suecia espera aplicar en España lo que aprenda. Para que esa expectativa sea algo más que un deseo, los testimonios reclaman empleo cualificado e intercambios entre universidad e industria. La experiencia adquirida fuera podría enriquecer también al país de origen. Mientras quienes se marchan no puedan contar con esas condiciones, el éxito profesional individual y la pérdida colectiva seguirán siendo dos resultados posibles de un mismo viaje.
 
-**(470 palabras, incluido el título · 462 sin el título)**
+**(469 palabras, incluido el título · 461 sin el título)**
 
 ![Qui tire parti de la mobilité ?](figures/lecture-es.svg)
 
