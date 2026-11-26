@@ -1,0 +1,76 @@
+{
+  "slug": "banque-pt_pt_francais-a_2011",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français A",
+    "annee": 2011
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2011/fr_a_pt_2011.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2011/rapport_fra_a_ecrit_2011.pdf",
+    "programme_officiel": "https://www.education.gouv.fr/bo/2010/17/esrs1000116a.htm",
+    "notice": "https://www.banquept.fr/documents/livret/2011/Livret_PT_2011.pdf#page=13",
+    "sujet_sha256": "db4f65cea22948546e00276984ee30a811b4a56933aeb8e3f4ccbc61bed6f853",
+    "rapport_jury_sha256": "56c60562e9cac75d46eb74c2d4a55e2654120dfa4ea04f42dc60ef39d2b52211",
+    "programme_officiel_sha256": "fa86864d5262f2564a329b023d1ceb1e0f3960b987a3f68cebb8e0aa30726b63",
+    "notice_sha256": "f9cd26395e9749f34a6ba265a7ac7f313e4550c3ab2d4fca547d3d492498f219",
+    "oeuvres_au_programme": [
+      "Jean-Jacques Rousseau, Profession de foi du vicaire savoyard (Émile, livre IV, extrait prescrit)",
+      "William Shakespeare, Macbeth (traduction de Pierre-Jean Jouve)",
+      "Jean Giono, Les Âmes fortes"
+    ],
+    "theme": "Le mal",
+    "admissibilite_admission": "École polytechnique, admissibilité, coefficient 4",
+    "pages_rapport": "Rapport PDF p. 1 à 8. Analyse de l’humanité et de l’inhumain, de la composition et de la connaissance des trois œuvres, en particulier p. 4 à 7."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "Depuis quelle place rencontre-t-on l’inhumain ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Analyse de la parodie de Térence, des délibérations et de la plainte dans Macbeth, du jugement de conscience chez Rousseau et des voix de la veillée chez Giono."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 1,
+        "perimetre": "Les œuvres au programme vous permettent-elles de vérifier cette assertion ?",
+        "points": 20
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}
