@@ -1,0 +1,203 @@
+{
+  "slug": "x_m-prime_premiere-composition-de-mathematiques_1991",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "M prime",
+    "filiere_historique": "M′",
+    "matiere": "Première composition de mathématiques",
+    "annee": 1991
+  },
+  "questions": 18,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-3dc103f4f7280c30d879",
+    "sujet_sha256": "382c9535786a490517c068b93218adb85809e1438f6110f5eb9b1ebc58d6088d",
+    "notice_ups": "m91xm1",
+    "reproduction": "https://www.sujetsetcorriges.fr/dl/X/Maths/MP/sec-x-1991-maths1-MP.pdf",
+    "reproduction_sha256": "02cecb42ba45c64046e80413ad4b4f4c9b66398c03e39e88544c5dec77cc6c99",
+    "pages": 3,
+    "calendrier": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000353010",
+    "rapport_jury": "",
+    "observation_rapport": "Les deux exemplaires du sujet et la notice UPS sont les sources consultées ; aucun rapport de jury n’y est joint.",
+    "provenance": "Le fac-similé de l’UPS porte l’option M′ et le rang de la composition. Les expressions et les conditions initiales ont été relues sur les pages originales."
+  },
+  "figures": [
+    {
+      "question": "II.6",
+      "fichier": "figures/orbites-hyperboliques.svg",
+      "legende": "Orbites à hauteur fixée. Chaque branche colorée est une orbite. Les diagonales portent quatre demi-droites ouvertes et leur intersection est fixe."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2.a",
+      "I.2.b",
+      "I.2.c",
+      "I.3",
+      "II.1",
+      "II.2.a",
+      "II.2.b",
+      "II.2.c",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5"
+    ],
+    "repere_par_question": [
+      {
+        "question": "I.1",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ]
+      },
+      {
+        "question": "I.2.a",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ]
+      },
+      {
+        "question": "I.2.b",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ]
+      },
+      {
+        "question": "I.2.c",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ]
+      },
+      {
+        "question": "I.3",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ]
+      },
+      {
+        "question": "II.1",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ]
+      },
+      {
+        "question": "II.2.a",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ]
+      },
+      {
+        "question": "II.2.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ]
+      },
+      {
+        "question": "II.2.c",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ]
+      },
+      {
+        "question": "II.3",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ]
+      },
+      {
+        "question": "II.4",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ]
+      },
+      {
+        "question": "II.5",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ]
+      },
+      {
+        "question": "II.6",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ]
+      },
+      {
+        "question": "III.1",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ]
+      },
+      {
+        "question": "III.2",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ]
+      },
+      {
+        "question": "III.3",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ]
+      },
+      {
+        "question": "III.4",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ]
+      },
+      {
+        "question": "III.5",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ]
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Dix-huit rubriques dans les trois parties, avec numérotation recommençant à 1. La forme indéfinie, les orbites dégénérées et le facteur 1/4 du modèle périodique sont démontrés."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "histoire_lyon_2017",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Dix-huit rubriques dans les trois parties, avec numérotation recommençant à 1. La forme indéfinie, les orbites dégénérées et le facteur 1/4 du modèle périodique sont démontrés. Rédaction et vérification des solutions, des indications et de la figure."
+    }
+  ]
+}
