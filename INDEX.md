@@ -2108,6 +2108,17 @@
 | 2021 | X | MP | Maths B | [md](2021/x/x_mp_maths-b_2021/brut.md) | [md](2021/x/x_mp_maths-b_2021/guide.md) |
 | 2022 | X | MP | Maths B | [md](2022/x/x_mp_maths-b_2022/brut.md) | [md](2022/x/x_mp_maths-b_2022/guide.md) |
 | 2023 | X | MP-MPI | Maths B | [md](2023/x/x_mp_maths-b_2023/brut.md) | [md](2023/x/x_mp_maths-b_2023/guide.md) |
+| 2000 | X | MP | Première composition de mathématiques | [md](2000/x/x_mp_premiere-composition-de-mathematiques_2000/brut.md) | [md](2000/x/x_mp_premiere-composition-de-mathematiques_2000/guide.md) |
+| 2001 | X | MP | Première composition de mathématiques | [md](2001/x/x_mp_premiere-composition-de-mathematiques_2001/brut.md) | [md](2001/x/x_mp_premiere-composition-de-mathematiques_2001/guide.md) |
+| 2002 | X | MP | Première composition de mathématiques | [md](2002/x/x_mp_premiere-composition-de-mathematiques_2002/brut.md) | [md](2002/x/x_mp_premiere-composition-de-mathematiques_2002/guide.md) |
+| 2003 | X | MP | Première composition de mathématiques | [md](2003/x/x_mp_premiere-composition-de-mathematiques_2003/brut.md) | [md](2003/x/x_mp_premiere-composition-de-mathematiques_2003/guide.md) |
+| 2004 | X | MP | Première composition de mathématiques | [md](2004/x/x_mp_premiere-composition-de-mathematiques_2004/brut.md) | [md](2004/x/x_mp_premiere-composition-de-mathematiques_2004/guide.md) |
+| 2005 | X | MP | Première composition de mathématiques | [md](2005/x/x_mp_premiere-composition-de-mathematiques_2005/brut.md) | [md](2005/x/x_mp_premiere-composition-de-mathematiques_2005/guide.md) |
+| 2006 | X | MP | Première composition de mathématiques | [md](2006/x/x_mp_premiere-composition-de-mathematiques_2006/brut.md) | [md](2006/x/x_mp_premiere-composition-de-mathematiques_2006/guide.md) |
+| 2007 | X | MP | Première composition de mathématiques | [md](2007/x/x_mp_premiere-composition-de-mathematiques_2007/brut.md) | [md](2007/x/x_mp_premiere-composition-de-mathematiques_2007/guide.md) |
+| 2008 | X | MP | Première composition de mathématiques | [md](2008/x/x_mp_premiere-composition-de-mathematiques_2008/brut.md) | [md](2008/x/x_mp_premiere-composition-de-mathematiques_2008/guide.md) |
+| 2009 | X | MP | Première composition de mathématiques | [md](2009/x/x_mp_premiere-composition-de-mathematiques_2009/brut.md) | [md](2009/x/x_mp_premiere-composition-de-mathematiques_2009/guide.md) |
+| 2010 | X | MP | Première composition de mathématiques | [md](2010/x/x_mp_premiere-composition-de-mathematiques_2010/brut.md) | [md](2010/x/x_mp_premiere-composition-de-mathematiques_2010/guide.md) |
 | 2011 | X | PC | Physique A | [md](2011/x/x_pc_physique-a_2011/brut.md) | [md](2011/x/x_pc_physique-a_2011/guide.md) |
 | 2012 | X | PC | Physique A | [md](2012/x/x_pc_physique-a_2012/brut.md) | [md](2012/x/x_pc_physique-a_2012/guide.md) |
 | 2013 | X | PC | Physique A | [md](2013/x/x_pc_physique-a_2013/brut.md) | [md](2013/x/x_pc_physique-a_2013/guide.md) |
