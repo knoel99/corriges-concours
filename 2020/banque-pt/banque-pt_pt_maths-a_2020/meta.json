@@ -1,0 +1,225 @@
+{
+  "slug": "banque-pt_pt_maths-a_2020",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths A",
+    "intitule": "Épreuve de Mathématiques A",
+    "annee": 2020,
+    "duree": "4 h"
+  },
+  "questions": 34,
+  "redaction": "Proposition pédagogique non officielle, rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2020/math_a_2020_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2020/rapport_math_a_ecrit_2020.pdf",
+    "sujet_sha256": "e4104dd5d951f675d746b1230e6ec057cc2aa3d8469652af4e87ff5bf50c9fd9",
+    "rapport_jury_sha256": "c56f32e99ed77f688459cb854a3c8c8e3cd3684babc978df252374601fa14496",
+    "observation_rapport": "Le rapport de la Banque PT, p. 2–4, distingue la symétrie orthogonale par rapport à une droite de la réflexion par rapport à un hyperplan. Pour la marche aléatoire, il souligne p. 5 que l’égalité des lois des blocs et l’indépendance des blocs justifient deux étapes différentes."
+  },
+  "figures": [
+    {
+      "question": "IV.2.d",
+      "fichier": "figures/reflexion.svg",
+      "legende": "Deux points de même norme sont échangés par la réflexion de normale x₀ − y₀. La somme x₀ + y₀ appartient à l’hyperplan fixe."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2.a",
+      "I.2.b",
+      "I.2.c",
+      "I.3",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "IV.1",
+      "IV.2.a",
+      "IV.2.b",
+      "IV.2.c",
+      "IV.2.d",
+      "IV.2.e",
+      "IV.2.f",
+      "P.1",
+      "P.2",
+      "P.3.a",
+      "P.3.b",
+      "P.3.c",
+      "P.3.d",
+      "P.3.e.i",
+      "P.3.e.ii",
+      "P.4",
+      "P.5",
+      "P.6",
+      "P.7"
+    ],
+    "repere_par_question": [
+      {
+        "question": "I.1",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.2.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.2.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.2.c",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.3",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.1",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.2",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.3",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.4",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.5",
+        "page_pdf": 2
+      },
+      {
+        "question": "III.1",
+        "page_pdf": 2
+      },
+      {
+        "question": "III.2",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.3",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.4",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.5",
+        "page_pdf": 3
+      },
+      {
+        "question": "IV.1",
+        "page_pdf": 3
+      },
+      {
+        "question": "IV.2.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "IV.2.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "IV.2.c",
+        "page_pdf": 3
+      },
+      {
+        "question": "IV.2.d",
+        "page_pdf": 3
+      },
+      {
+        "question": "IV.2.e",
+        "page_pdf": 3
+      },
+      {
+        "question": "IV.2.f",
+        "page_pdf": 3
+      },
+      {
+        "question": "P.1",
+        "page_pdf": 4
+      },
+      {
+        "question": "P.2",
+        "page_pdf": 4
+      },
+      {
+        "question": "P.3.a",
+        "page_pdf": 4
+      },
+      {
+        "question": "P.3.b",
+        "page_pdf": 4
+      },
+      {
+        "question": "P.3.c",
+        "page_pdf": 4
+      },
+      {
+        "question": "P.3.d",
+        "page_pdf": 4
+      },
+      {
+        "question": "P.3.e.i",
+        "page_pdf": 4
+      },
+      {
+        "question": "P.3.e.ii",
+        "page_pdf": 4
+      },
+      {
+        "question": "P.4",
+        "page_pdf": 5
+      },
+      {
+        "question": "P.5",
+        "page_pdf": 5
+      },
+      {
+        "question": "P.6",
+        "page_pdf": 5
+      },
+      {
+        "question": "P.7",
+        "page_pdf": 5
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "34 consignes ou sous-consignes numérotées traitées dans chaque édition. Toutes les sous-questions sont suivies jusqu’à la probabilité d’un premier passage, en incluant le produit vide de réflexions et les bornes s = 0 et s = 1."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "fui_physique_un",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture du sujet et du rapport annuels, rédaction et vérification des deux éditions illustrées et du décompte par page. Toutes les sous-questions sont suivies jusqu’à la probabilité d’un premier passage, en incluant le produit vide de réflexions et les bornes s = 0 et s = 1."
+    }
+  ]
+}

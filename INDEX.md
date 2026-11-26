@@ -72,6 +72,7 @@
 | 2019 | Banque PT | PT | Maths A | [md](2019/banque-pt/banque-pt_pt_maths-a_2019/brut.md) | [md](2019/banque-pt/banque-pt_pt_maths-a_2019/guide.md) |
 | 2017 | Banque PT | PT | Français A | [md](2017/banque-pt/banque-pt_pt_francais-a_2017/brut.md) | [md](2017/banque-pt/banque-pt_pt_francais-a_2017/guide.md) |
 | 2018 | Banque PT | PT | Français A | [md](2018/banque-pt/banque-pt_pt_francais-a_2018/brut.md) | [md](2018/banque-pt/banque-pt_pt_francais-a_2018/guide.md) |
+| 2020 | Banque PT | PT | Maths A | [md](2020/banque-pt/banque-pt_pt_maths-a_2020/brut.md) | [md](2020/banque-pt/banque-pt_pt_maths-a_2020/guide.md) |
 | 2026 | Banque PT | PT | Français A | [md](2026/banque-pt/banque-pt_pt_francais-a_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_francais-a_2026/guide.md) |
 | 2017 | Banque PT | PT | Français B | [md](2017/banque-pt/banque-pt_pt_francais-b_2017/brut.md) | [md](2017/banque-pt/banque-pt_pt_francais-b_2017/guide.md) |
 | 2018 | Banque PT | PT | Français B | [md](2018/banque-pt/banque-pt_pt_francais-b_2018/brut.md) | [md](2018/banque-pt/banque-pt_pt_francais-b_2018/guide.md) |
