@@ -8,9 +8,9 @@
 
 Épreuve de quatre heures. Le thème « La démocratie » réunit les œuvres suivantes. Tocqueville, De la démocratie en Amérique, tome II, partie IV · Aristophane, L’Assemblée des femmes et Les Cavaliers (traduction Marc-Jean Alfonsi) · Philip Roth, Le Complot contre l’Amérique (traduction Josée Kamoun).
 
-Philippe Braud, Le Jardin des délices démocratiques. Pour une lecture psycho-affective des régimes pluralistes (Presses de la Fondation nationale des sciences politiques, 1991). Du premier paragraphe page 2, « L’invocation du peuple », à la fin du dernier paragraphe page 5, « de l’ordre social tout entier ». L’extrait contient une coupe signalée au premier paragraphe. Les questions sont imprimées page 5. La page 6 est blanche.
+Philippe Braud, *Le Jardin des délices démocratiques* (1991). Extrait p. 2–5, de « L’invocation du peuple » à « de l’ordre social tout entier ». Une coupe est signalée p. 2. Les questions suivent p. 5. La page 6 est blanche.
 
-Le résumé compte pour 8 points et la dissertation pour 12. Le sujet demande 200 mots avec une tolérance de 10 %, soit de 180 à 220 mots.
+Résumé de 200 mots à 10 % près (180 à 220 mots), 8 points. Dissertation, 12 points.
 
 ## Résumé
 
