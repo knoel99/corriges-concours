@@ -44,5 +44,116 @@
       "modifications": true,
       "perimetre": "Rédaction des 27 réponses numérotées, lecture du sujet et du rapport officiels, lecture visuelle des graphes, trois figures originales. Exécution des programmes C et OCaml de chaque édition, contrôles des ordres, des listes et des arbres couvrants."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7",
+      "I.8",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7",
+      "IV.1",
+      "IV.2",
+      "IV.3",
+      "IV.4",
+      "IV.5",
+      "IV.6",
+      "IV.7"
+    ],
+    "pages_des_questions": {
+      "I.1": 7,
+      "I.2": 7,
+      "I.3": 7,
+      "I.4": 7,
+      "I.5": 7,
+      "I.6": 7,
+      "I.7": 7,
+      "I.8": 7,
+      "II.1": 8,
+      "II.2": 8,
+      "II.3": 8,
+      "II.4": 8,
+      "II.5": 9,
+      "III.1": 10,
+      "III.2": 10,
+      "III.3": 11,
+      "III.4": 11,
+      "III.5": 11,
+      "III.6": 11,
+      "III.7": 11,
+      "IV.1": 13,
+      "IV.2": 13,
+      "IV.3": 13,
+      "IV.4": 14,
+      "IV.5": 14,
+      "IV.6": 14,
+      "IV.7": 14
+    },
+    "origine_attestation": {
+      "commit_du_journal": "49627f02a677c0cb62da54dd34a33e1b27a791b7",
+      "phase": "redaction",
+      "date": "2026-11-24",
+      "perimetre": "Rédaction des 27 réponses numérotées, lecture du sujet et du rapport officiels, lecture visuelle des graphes, trois figures originales. Exécution des programmes C et OCaml de chaque édition, contrôles des ordres, des listes et des arbres couvrants.",
+      "sha256_sujet_controle": "badb2b9300bb5315307fd19290536ccea614ae5fa2ceca14d1229bffc03581ad",
+      "sha256_rapport_controle": "9b9d91223447e14abf6ab5af9cdf3e6caa625753f30137f6bd26dfd64663a13b"
+    },
+    "controle_programmes": {
+      "langages": [
+        "OCaml",
+        "C"
+      ],
+      "editions_extraites": [
+        "brut",
+        "guide"
+      ],
+      "resultats": [
+        "3969 distances et 62 emissions.",
+        "26704 graphes connexes, 5000 opérations de liste.",
+        "3969 distances et 62 emissions.",
+        "26704 graphes connexes, 5000 opérations de liste.",
+        "brut 302 émissions C, trois parcours des figures corrects.",
+        "guide 302 émissions C, trois parcours des figures corrects."
+      ],
+      "sha256_script_de_verification": "4f3e379946051eac5d9267c9b5db7e856d8a49685f758243da877651fdae5a36"
+    },
+    "precision": "Les réponses numérotées ont été retrouvées dans les deux éditions au commit du journal. La pagination provient du fac-similé institutionnel. Les programmes ont été extraits à nouveau de chaque édition pour les contrôles ci-dessus.",
+    "subdivisions_du_sujet": {
+      "I.7": [
+        "a",
+        "b"
+      ],
+      "III.2": [
+        "a",
+        "b"
+      ],
+      "III.4": [
+        "a",
+        "b"
+      ],
+      "III.7": [
+        "a",
+        "b"
+      ],
+      "IV.6": [
+        "a",
+        "b"
+      ]
+    }
+  }
 }
