@@ -1,0 +1,352 @@
+{
+  "slug": "banque-pt_pt_maths-c_2015",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths C",
+    "intitule": "Épreuve de Mathématiques C",
+    "annee": 2015,
+    "duree": "4 h",
+    "modalite": "écrit",
+    "code_garde": "034"
+  },
+  "questions": 30,
+  "redaction": "Proposition pédagogique non officielle, rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2015/math_c_2015_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2015/rapport_math_c_ecrit_2015.pdf",
+    "livret": "https://www.banquept.fr/documents/livret/2015/Livret_PT_2015.pdf",
+    "sujet_sha256": "f63f48e68c5a0f0d073b54c4ccaf2a082dc8b5643f8fbee148d8e50502f718f8",
+    "rapport_jury_sha256": "13c5f4eb70ba14059e44a5fd24952aec122a5e1f3559269acc2e22fb71d84cc8",
+    "observation_rapport": "Le rapport insiste sur les échelles en I.2.c, les hypothèses de convergence et de dérivation en II et la justification du reste en III.4."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2015/math_c_2015_pt.pdf",
+      "sha256": "f63f48e68c5a0f0d073b54c4ccaf2a082dc8b5643f8fbee148d8e50502f718f8",
+      "pages": 5,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "a6b28676d7e44a5a0e5da7e331e856b7745c8f22d9823d11e1e0b92e2bdaeda2"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "0650050944f5478641779768d44ae442ae743138fa54c0bbacc5fd6693f7c666"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "22dfc4e6f38c53650597b30dbbd76ae00f283cef513bf39d713e4e3be559165b"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "a4c3aa76bc92b92a1fa255cf49b7d73ea9915bae5ea4af978d68973ae61cbaa5"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2015/rapport_math_c_ecrit_2015.pdf",
+      "sha256": "13c5f4eb70ba14059e44a5fd24952aec122a5e1f3559269acc2e22fb71d84cc8",
+      "pages": 6,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "cf4301168465e18e08fe5b9b5a4c795af45b7a289b420b39279cb748160c681e"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "ffb094cd094fe5f55981cc518215c31e624289b3791b0369add36a430d633ef7"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "3319eaebf34acb56158eb719554b48448aa6cb3508efaf6bec093a3a24cc2a56"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "6926093e26b02e646034b094001b3d59e2dd38b25340e3a882a64e9392267ef5"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "0105611cf67454151a4bdd32dfb1daa758d2e317dfeec20c155059d04400e4cd"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "7e86ee97faa9431e2681b63c41b8c764a7ebbbc44341eaece51687f62020d9be"
+        }
+      ]
+    },
+    "livret": {
+      "url": "https://www.banquept.fr/documents/livret/2015/Livret_PT_2015.pdf",
+      "sha256": "00daed661c4cca725666c4035b6b2b29111ac29ccd980edf6db5421458ba7b68",
+      "pages": 79,
+      "pages_verifiees": [
+        {
+          "numero": 8,
+          "rendu_sha256": "97c5fb7054318f30b930c5d09fb183a3edad8ef240920837c06b2fb50876235f"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "c73be06e960ffc50f91687716c1dbb3811f1b85e2fa4339606e62683ddf4dd72"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "I.2.c",
+      "fichier": "figures/gaussiennes-10cm.svg",
+      "legende": "Les fonctions f₁ et g₁ sur le segment unité, à raison de 10 cm par unité sur les deux axes.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "II.8",
+      "fichier": "figures/encadrement.svg",
+      "legende": "Le reste positif de la formule de II.8 est dominé par une exponentielle qui tend vers zéro.",
+      "provenance": "Figure originale."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2.a",
+      "I.2.b",
+      "I.2.c",
+      "I.3.a",
+      "I.3.b",
+      "I.3.c",
+      "I.3.d",
+      "I.3.e",
+      "I.4.a",
+      "I.4.b",
+      "I.4.c",
+      "II.1",
+      "II.2",
+      "II.3.a",
+      "II.3.b",
+      "II.4",
+      "II.5",
+      "II.6.a",
+      "II.6.b",
+      "II.6.c",
+      "II.7.a",
+      "II.7.b",
+      "II.8",
+      "II.9",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4.a",
+      "III.4.b"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "annexes_imposees": [
+      "Feuille de papier millimétré à rendre ; tracé reproduit sur grille originale."
+    ],
+    "repere_par_question": [
+      {
+        "question": "I.1",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Parité et domaine d’étude"
+      },
+      {
+        "question": "I.2.a",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Différence des courbes"
+      },
+      {
+        "question": "I.2.b",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Comparaison des deux courbes"
+      },
+      {
+        "question": "I.2.c",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Tracé sur papier millimétré"
+      },
+      {
+        "question": "I.3.a",
+        "page_pdf": 2,
+        "page_rapport": 3,
+        "objet": "Dérivées pour n au moins deux"
+      },
+      {
+        "question": "I.3.b",
+        "page_pdf": 2,
+        "page_rapport": 3,
+        "objet": "Variations sur la demi-droite positive"
+      },
+      {
+        "question": "I.3.c",
+        "page_pdf": 2,
+        "page_rapport": 3,
+        "objet": "Positivité"
+      },
+      {
+        "question": "I.3.d",
+        "page_pdf": 2,
+        "page_rapport": 3,
+        "objet": "Encadrement exponentiel"
+      },
+      {
+        "question": "I.3.e",
+        "page_pdf": 2,
+        "page_rapport": 3,
+        "objet": "Deux limites à x fixé"
+      },
+      {
+        "question": "I.4.a",
+        "page_pdf": 2,
+        "page_rapport": 3,
+        "objet": "Comparaison rationnelle uniforme"
+      },
+      {
+        "question": "I.4.b",
+        "page_pdf": 2,
+        "page_rapport": 4,
+        "objet": "Valeur de l’intégrale de comparaison"
+      },
+      {
+        "question": "I.4.c",
+        "page_pdf": 2,
+        "page_rapport": 4,
+        "objet": "Existence de l’intégrale gaussienne"
+      },
+      {
+        "question": "II.1",
+        "page_pdf": 3,
+        "page_rapport": 4,
+        "objet": "Existence et continuité de h"
+      },
+      {
+        "question": "II.2",
+        "page_pdf": 3,
+        "page_rapport": 4,
+        "objet": "Valeur initiale"
+      },
+      {
+        "question": "II.3.a",
+        "page_pdf": 3,
+        "page_rapport": 4,
+        "objet": "Dérivation sous le signe intégral"
+      },
+      {
+        "question": "II.3.b",
+        "page_pdf": 3,
+        "page_rapport": 4,
+        "objet": "Passage à tous les paramètres positifs"
+      },
+      {
+        "question": "II.4",
+        "page_pdf": 3,
+        "page_rapport": 5,
+        "objet": "Variation et bornes"
+      },
+      {
+        "question": "II.5",
+        "page_pdf": 3,
+        "page_rapport": 5,
+        "objet": "Équation différentielle pour h"
+      },
+      {
+        "question": "II.6.a",
+        "page_pdf": 3,
+        "page_rapport": 5,
+        "objet": "Solutions homogènes"
+      },
+      {
+        "question": "II.6.b",
+        "page_pdf": 3,
+        "page_rapport": 5,
+        "objet": "Primitive normalisée"
+      },
+      {
+        "question": "II.6.c",
+        "page_pdf": 3,
+        "page_rapport": 5,
+        "objet": "Variation de la constante"
+      },
+      {
+        "question": "II.7.a",
+        "page_pdf": 3,
+        "page_rapport": 5,
+        "objet": "Intégrale impropre près de zéro"
+      },
+      {
+        "question": "II.7.b",
+        "page_pdf": 3,
+        "page_rapport": 5,
+        "objet": "Détermination de la constante"
+      },
+      {
+        "question": "II.8",
+        "page_pdf": 3,
+        "page_rapport": 5,
+        "objet": "Encadrement du terme entre parenthèses"
+      },
+      {
+        "question": "II.9",
+        "page_pdf": 3,
+        "page_rapport": 6,
+        "objet": "Valeur de l’intégrale de Gauss"
+      },
+      {
+        "question": "III.1",
+        "page_pdf": 4,
+        "page_rapport": 6,
+        "objet": "Convergence de la série numérique"
+      },
+      {
+        "question": "III.2",
+        "page_pdf": 4,
+        "page_rapport": 6,
+        "objet": "Série de la gaussienne"
+      },
+      {
+        "question": "III.3",
+        "page_pdf": 4,
+        "page_rapport": 6,
+        "objet": "Intégration de la série"
+      },
+      {
+        "question": "III.4.a",
+        "page_pdf": 4,
+        "page_rapport": 6,
+        "objet": "Méthode à erreur garantie"
+      },
+      {
+        "question": "III.4.b",
+        "page_pdf": 4,
+        "page_rapport": 6,
+        "objet": "Approximation au millième"
+      }
+    ]
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_hist_1987",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture des 30 questions ou sous-questions et du rapport institutionnel, rédaction des solutions et indications, figures originales et vérifications indépendantes des calculs."
+    }
+  ]
+}
