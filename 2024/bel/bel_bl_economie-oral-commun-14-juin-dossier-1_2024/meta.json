@@ -31,9 +31,28 @@
       "perimetre": "Lecture du fascicule de 8 pages avec contrôle des 5 documents et de leurs figures. Vérification des champs, unités et conclusions du commentaire.",
       "fournisseur": "codex",
       "agent": "fui_physique_deux"
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Conception et vérification du schéma du document 1. Tableau de la DREES, document 1, p. 2 du fascicule. Les valeurs représentées sont arrondies. Le rapport publié repose sur les données avant arrondi. Légende descriptive et alternative textuelle intégrées aux deux éditions.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
   ],
-  "figures": [],
+  "figures": [
+    {
+      "fichier": "figures/accessibilite-generalistes.svg",
+      "question": "Document 1",
+      "legende": "Figure 1 — Accessibilité aux médecins généralistes en France hors Mayotte. Pour les 10 % d’habitants les mieux dotés, l’accessibilité passe de 5,9 consultations ou visites par an et par habitant standardisé en 2016 à 5,7 en 2019. Chez les 10 % les moins bien dotés, elle passe de 1,8 à 1,6. Le rapport publié passe de 3,2 à 3,5.",
+      "description": "Pour les 10 % d’habitants les mieux dotés, l’accessibilité passe de 5,9 consultations ou visites par an et par habitant standardisé en 2016 à 5,7 en 2019. Chez les 10 % les moins bien dotés, elle passe de 1,8 à 1,6. Le rapport publié passe de 3,2 à 3,5.",
+      "source": "Tableau de la DREES, document 1, p. 2 du fascicule. Les valeurs représentées sont arrondies. Le rapport publié repose sur les données avant arrondi."
+    }
+  ],
   "couverture": {
     "statut": "complet",
     "sujets_entierement_traites": [

@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le jury propose un sujet unique accompagné de documents. La préparation dure 1 h 30, l’exposé et l’entretien durent chacun 15 minutes. [Sujet officiel](https://www.ens.psl.eu/sites/default/files/bl_sujets_oraux_economie_1_10062024.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_oral_economie_epreuve_commune.pdf)
 
 ## Les politiques commerciales face au réchauffement climatique
@@ -18,6 +20,9 @@ Fontagné et Schubert (2023, p. 2) distinguent deux incitations au report. Un pa
 
 La série bleue de l’inventaire territorial se lit à gauche en millions de tonnes d’équivalent CO₂. Elle passe d’un peu plus de 3 600 en 2010 à environ 3 100 en 2019. La courbe rouge du carbone incorporé aux importations se lit à droite. Elle part d’environ 1 000 et termine près de 900, après un creux et une remontée. Le croisement visuel des courbes n’exprime donc aucune égalité de tonnages. On ne peut pas non plus additionner ces deux courbes pour obtenir l’empreinte de la consommation européenne : il faut retrancher les émissions domestiques incorporées aux exportations. La différence des trajectoires justifie d’examiner les chaînes de valeur. Elle ne démontre pas qu’une politique européenne a causé une délocalisation.
 
+![Figure 1 — Inventaire territorial et empreinte de la consommation européenne. Les émissions européennes destinées à la consommation européenne entrent dans les deux mesures. Les émissions européennes destinées à l’étranger comptent dans l’inventaire territorial. Les émissions étrangères destinées à l’Union européenne comptent dans l’empreinte.](figures/perimetres-empreinte-carbone.svg)
+
+Schéma de comptabilité construit pour la lecture du document 2, p. 3 du fascicule. Les cases décrivent des périmètres, sans représenter des volumes.
 
 ### Document 3 — Deux usages différents de la frontière
 

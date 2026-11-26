@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le jury propose un sujet unique accompagné de documents. La préparation dure 1 h 30, l’exposé et l’entretien durent chacun 15 minutes. [Sujet officiel](https://www.ens.psl.eu/sites/default/files/bl_sujets_oraux_economie_1_14062024.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_oral_economie_epreuve_commune.pdf)
 
 ## Inégalités d’accès aux soins
@@ -13,6 +15,10 @@ Deux personnes bénéficiant de la même couverture légale peuvent devoir parco
 ### Document 1 — Les écarts territoriaux dépendent de la profession
 
 La DREES (p. 2) compare les 10 % d’habitants les moins bien dotés aux 10 % les mieux dotés, entre 2016 et 2019 en France hors Mayotte. Pour les généralistes, l’accessibilité des premiers passe de 1,8 à 1,6 consultation ou visite annuelle par habitant standardisé et celle des seconds de 5,9 à 5,7. Le rapport calculé sur les valeurs non arrondies passe de 3,2 à 3,5. La baisse moyenne masque donc un éloignement relatif du groupe défavorisé. Pour les infirmiers, l’unité change. Les valeurs de 2019 sont 53,7 et 351,7 équivalents temps plein accessibles pour 100 000 habitants standardisés, soit un rapport d’environ 6,6. Pour les sages-femmes, le rapport descend de 7,2 à 5,8, alors qu’il monte de 6,1 à 6,6 pour les kinésithérapeutes. On ne peut donc pas résumer toutes les professions par la seule évolution des effectifs nationaux.
+
+![Figure 1 — Accessibilité aux médecins généralistes en France hors Mayotte. Pour les 10 % d’habitants les mieux dotés, l’accessibilité passe de 5,9 consultations ou visites par an et par habitant standardisé en 2016 à 5,7 en 2019. Chez les 10 % les moins bien dotés, elle passe de 1,8 à 1,6. Le rapport publié passe de 3,2 à 3,5.](figures/accessibilite-generalistes.svg)
+
+Tableau de la DREES, document 1, p. 2 du fascicule. Les valeurs représentées sont arrondies. Le rapport publié repose sur les données avant arrondi.
 
 ### Document 2 — La pauvreté et la géographie dans le renoncement déclaré
 

@@ -31,9 +31,28 @@
       "perimetre": "Lecture du fascicule de 8 pages avec contrôle des 4 documents et de leurs figures. Vérification des champs, unités et conclusions du commentaire.",
       "fournisseur": "codex",
       "agent": "fui_physique_deux"
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Conception et vérification du schéma du document 2. Calcul sur les valeurs arrondies du graphique 2b, p. 4 du fascicule. Pour les engrais, la conversion de l’azote en équivalent protéines mesure une dépendance aux intrants. Légende descriptive et alternative textuelle intégrées aux deux éditions.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
   ],
-  "figures": [],
+  "figures": [
+    {
+      "fichier": "figures/soldes-cereales-et-azote.svg",
+      "question": "Document 2",
+      "legende": "Figure 1 — Deux soldes extérieurs de la France en 2021. Les céréales représentent 2,9 Mt exportées et 0,4 Mt importée en équivalent protéines, soit un solde de +2,5 Mt. Les engrais azotés représentent 0,9 Mt exportée et 6 Mt importées après conversion, soit −5,1 Mt.",
+      "description": "Les céréales représentent 2,9 Mt exportées et 0,4 Mt importée en équivalent protéines, soit un solde de +2,5 Mt. Les engrais azotés représentent 0,9 Mt exportée et 6 Mt importées après conversion, soit −5,1 Mt.",
+      "source": "Calcul sur les valeurs arrondies du graphique 2b, p. 4 du fascicule. Pour les engrais, la conversion de l’azote en équivalent protéines mesure une dépendance aux intrants."
+    }
+  ],
   "couverture": {
     "statut": "complet",
     "sujets_entierement_traites": [

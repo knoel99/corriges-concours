@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le jury propose un sujet unique accompagné de documents. La préparation dure 1 h 30, l’exposé et l’entretien durent chacun 15 minutes. [Sujet officiel](https://www.ens.psl.eu/sites/default/files/bl_sujets_oraux_economie_1_10062024.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_oral_economie_epreuve_commune.pdf)
 
 ## Les politiques commerciales face au réchauffement climatique
@@ -20,6 +22,10 @@ La série bleue de l’inventaire territorial se lit à gauche en millions de to
 
 > [!INDICATION]
 > Montrer les deux graduations avant de commenter les pentes. Pour établir une fuite de carbone, il faudrait estimer comment la production étrangère et les émissions auraient évolué en l’absence de politique européenne.
+
+![Figure 1 — Inventaire territorial et empreinte de la consommation européenne. Les émissions européennes destinées à la consommation européenne entrent dans les deux mesures. Les émissions européennes destinées à l’étranger comptent dans l’inventaire territorial. Les émissions étrangères destinées à l’Union européenne comptent dans l’empreinte.](figures/perimetres-empreinte-carbone.svg)
+
+Schéma de comptabilité construit pour la lecture du document 2, p. 3 du fascicule. Les cases décrivent des périmètres, sans représenter des volumes.
 
 ### Document 3 — Deux usages différents de la frontière
 

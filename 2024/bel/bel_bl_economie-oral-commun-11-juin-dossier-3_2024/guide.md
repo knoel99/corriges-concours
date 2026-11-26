@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le jury propose un sujet unique accompagné de documents. La préparation dure 1 h 30, l’exposé et l’entretien durent chacun 15 minutes. [Sujet officiel](https://www.ens.psl.eu/sites/default/files/bl_sujets_oraux_economie_tc_3_11062024.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_oral_economie_epreuve_commune.pdf)
 
 ## La souveraineté alimentaire européenne
@@ -22,6 +24,10 @@ Le rapport gouvernemental de mars 2024 distingue, sur 2020–2022, les importati
 > Écrire $P+M=C+X$ en négligeant la variation des stocks. Une valeur élevée de $P/C$ ne force pas $M/C$ à être faible lorsqu’il existe simultanément des exportations.
 
 En 2021, le deuxième graphique (p. 4) représente des mégatonnes en équivalent protéines, avec les exportations en positif et les importations en négatif. Les céréales comptent pour environ +2,9 et −0,4 Mt. Les engrais azotés représentent environ +0,9 et −6 Mt après conversion de l’azote en équivalent protéique. Cette conversion représente la dépendance aux intrants et ne signifie pas que l’on importe six mégatonnes de protéines comestibles. La barre de solde est tracée à −4,2. Les repères de consommation et de besoins nutritionnels, 1,9 et 1,12 Mt, n’ont pas le même sens qu’un flux extérieur. La différence ne mesure à elle seule aucun déficit alimentaire.
+
+![Figure 1 — Deux soldes extérieurs de la France en 2021. Les céréales représentent 2,9 Mt exportées et 0,4 Mt importée en équivalent protéines, soit un solde de +2,5 Mt. Les engrais azotés représentent 0,9 Mt exportée et 6 Mt importées après conversion, soit −5,1 Mt.](figures/soldes-cereales-et-azote.svg)
+
+Calcul sur les valeurs arrondies du graphique 2b, p. 4 du fascicule. Pour les engrais, la conversion de l’azote en équivalent protéines mesure une dépendance aux intrants.
 
 ### Document 3 — Les règles miroir exigent des preuves et des contrôles
 

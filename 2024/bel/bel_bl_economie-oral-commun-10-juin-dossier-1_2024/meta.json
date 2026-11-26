@@ -31,9 +31,28 @@
       "perimetre": "Lecture du fascicule de 6 pages avec contrôle des 5 documents et de leurs figures. Vérification des champs, unités et conclusions du commentaire.",
       "fournisseur": "codex",
       "agent": "fui_physique_deux"
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Conception et vérification du schéma du document 2. Schéma de comptabilité construit pour la lecture du document 2, p. 3 du fascicule. Les cases décrivent des périmètres, sans représenter des volumes. Légende descriptive et alternative textuelle intégrées aux deux éditions.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
   ],
-  "figures": [],
+  "figures": [
+    {
+      "fichier": "figures/perimetres-empreinte-carbone.svg",
+      "question": "Document 2",
+      "legende": "Figure 1 — Inventaire territorial et empreinte de la consommation européenne. Les émissions européennes destinées à la consommation européenne entrent dans les deux mesures. Les émissions européennes destinées à l’étranger comptent dans l’inventaire territorial. Les émissions étrangères destinées à l’Union européenne comptent dans l’empreinte.",
+      "description": "Les émissions européennes destinées à la consommation européenne entrent dans les deux mesures. Les émissions européennes destinées à l’étranger comptent dans l’inventaire territorial. Les émissions étrangères destinées à l’Union européenne comptent dans l’empreinte.",
+      "source": "Schéma de comptabilité construit pour la lecture du document 2, p. 3 du fascicule. Les cases décrivent des périmètres, sans représenter des volumes."
+    }
+  ],
   "couverture": {
     "statut": "complet",
     "sujets_entierement_traites": [

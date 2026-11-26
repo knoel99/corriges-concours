@@ -43,9 +43,28 @@
       "perimetre": "Restitution textuelle du sujet à son URL identifiée par le calendrier officiel. Le PDF ne peut être téléchargé (HTTP 404). Les cinq pièces sont vérifiées par concordance entre le texte de l’épreuve et les graphiques originaux des éditeurs.",
       "fournisseur": "codex",
       "agent": "fui_physique_deux"
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Conception et vérification du schéma du document 2. Calcul aux deux dates du document 2, graphique 2 de la DGE. Le total couvre les émissions directes territoriales. Isoler les effets du volume produit, de la composition et de l’efficacité exige une décomposition. Légende descriptive et alternative textuelle intégrées aux deux éditions.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
   ],
-  "figures": [],
+  "figures": [
+    {
+      "fichier": "figures/emissions-directes-industrie.svg",
+      "question": "Document 2",
+      "legende": "Figure 1 — Émissions directes de l’industrie manufacturière en France. Les émissions directes passent de 139,3 Mt équivalent CO₂ en 1990 à 76,3 en 2019. La baisse atteint 63,0 Mt, soit 45,2 % de la valeur de 1990.",
+      "description": "Les émissions directes passent de 139,3 Mt équivalent CO₂ en 1990 à 76,3 en 2019. La baisse atteint 63,0 Mt, soit 45,2 % de la valeur de 1990.",
+      "source": "Calcul aux deux dates du document 2, graphique 2 de la DGE. Le total couvre les émissions directes territoriales. Isoler les effets du volume produit, de la composition et de l’efficacité exige une décomposition."
+    }
+  ],
   "couverture": {
     "statut": "complet",
     "sujets_entierement_traites": [

@@ -31,9 +31,28 @@
       "perimetre": "Lecture du fascicule de 6 pages avec contrôle des 5 documents et de leurs figures. Vérification des champs, unités et conclusions du commentaire.",
       "fournisseur": "codex",
       "agent": "fui_physique_deux"
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Conception et vérification du schéma du document 2. Exemple chiffré construit pour expliquer le mécanisme du document 2, p. 3 du fascicule. La consommation initiale est fixée à 100 unités. Légende descriptive et alternative textuelle intégrées aux deux éditions.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
   ],
-  "figures": [],
+  "figures": [
+    {
+      "fichier": "figures/rebond-apres-isolation.svg",
+      "question": "Document 2",
+      "legende": "Figure 1 — Calcul de l’effet rebond après isolation. Dans cet exemple, l’énergie consommée vaut 100 avant rénovation, 60 après rénovation à confort constant et 75 après adaptation des usages. Sur les 40 unités d’économie technique, 15 sont reprises et 25 économisées. Le taux de rebond est de 37,5 %.",
+      "description": "Dans cet exemple, l’énergie consommée vaut 100 avant rénovation, 60 après rénovation à confort constant et 75 après adaptation des usages. Sur les 40 unités d’économie technique, 15 sont reprises et 25 économisées. Le taux de rebond est de 37,5 %.",
+      "source": "Exemple chiffré construit pour expliquer le mécanisme du document 2, p. 3 du fascicule. La consommation initiale est fixée à 100 unités."
+    }
+  ],
   "couverture": {
     "statut": "complet",
     "sujets_entierement_traites": [

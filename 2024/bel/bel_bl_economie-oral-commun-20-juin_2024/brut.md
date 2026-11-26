@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le jury propose un sujet unique accompagné de documents. La préparation dure 1 h 30, l’exposé et l’entretien durent chacun 15 minutes. [Sujet officiel](https://www.ens.psl.eu/sites/default/files/bl_sujets_oraux_economie_tc_20062024.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_oral_economie_epreuve_commune.pdf)
 
 ## Logement, bâtiment et changement climatique
@@ -20,6 +22,10 @@ Le chiffrage suppose notamment que les rénovations considérées ne remplacent 
 ### Document 2 — L’usage peut absorber une partie de l’économie d’énergie
 
 France Stratégie (2022, p. 3) distingue le gain technique et le gain réalisé. Pour un logement qui consommait 100 unités, une isolation qui en économiserait 40 à confort constant, mais dont la consommation tombe effectivement à 75, économise 25. Le rebond vaut $(40-25)/40=37,5\%$. Une température intérieure plus élevée après rénovation est un effet direct. Les dépenses d’énergie évitées peuvent financer d’autres consommations et un gain général de productivité peut modifier la demande totale. Atteindre un confort convenable procure un bénéfice réel à un ménage qui se chauffait trop peu. Les résultats empiriques varient avec le climat, les usages et les méthodes. Il faut comparer des consommations corrigées des conditions météorologiques et distinguer énergie finale et émissions de la source de chauffage.
+
+![Figure 1 — Calcul de l’effet rebond après isolation. Dans cet exemple, l’énergie consommée vaut 100 avant rénovation, 60 après rénovation à confort constant et 75 après adaptation des usages. Sur les 40 unités d’économie technique, 15 sont reprises et 25 économisées. Le taux de rebond est de 37,5 %.](figures/rebond-apres-isolation.svg)
+
+Exemple chiffré construit pour expliquer le mécanisme du document 2, p. 3 du fascicule. La consommation initiale est fixée à 100 unités.
 
 ### Document 3 — Cibler les situations énergétiques et locatives
 

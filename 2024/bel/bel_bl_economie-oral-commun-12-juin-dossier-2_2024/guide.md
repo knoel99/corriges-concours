@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le jury propose un sujet unique accompagné de documents. La préparation dure 1 h 30, l’exposé et l’entretien durent chacun 15 minutes. [Sujet officiel](https://www.ens.psl.eu/sites/default/files/bl_sujets_oraux_economie_2_12062024.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_oral_economie_epreuve_commune.pdf)
 
 **État des sources.** Restitution textuelle du sujet à son URL identifiée par le calendrier officiel. Le PDF ne peut être téléchargé (HTTP 404). Les cinq pièces sont vérifiées par concordance entre le texte de l’épreuve et les graphiques originaux des éditeurs.
@@ -24,6 +26,10 @@ Les figures 1 et 2 de la note IPP 102 divisent les émissions directes de combus
 ### Document 2 — Expliquer une baisse sur le territoire
 
 Dans le graphique 2 de la DGE, chaque segment empilé donne des millions de tonnes équivalent CO₂ d’un secteur et la hauteur totale donne les émissions manufacturières. Elles passent de 139,3 Mt en 1990 à 76,3 en 2019, soit −63 Mt ou −45 %. La chimie, la métallurgie et les minéraux contribuent visiblement au recul. Un recul de la production, une modification de sa composition ou une technologie plus sobre réduisent tous la barre. La décomposition complémentaire de la DGE attribue une contribution importante à l’efficacité. Un graphique en niveaux ne suffit pas à isoler cette contribution. Pour comparer deux usines, contrôler aussi le produit, les volumes et le périmètre d’émissions.
+
+![Figure 1 — Émissions directes de l’industrie manufacturière en France. Les émissions directes passent de 139,3 Mt équivalent CO₂ en 1990 à 76,3 en 2019. La baisse atteint 63,0 Mt, soit 45,2 % de la valeur de 1990.](figures/emissions-directes-industrie.svg)
+
+Calcul aux deux dates du document 2, graphique 2 de la DGE. Le total couvre les émissions directes territoriales. Isoler les effets du volume produit, de la composition et de l’efficacité exige une décomposition.
 
 ### Document 3 — Organiser la rareté des quotas
 
