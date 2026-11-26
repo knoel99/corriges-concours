@@ -6,14 +6,15 @@
     "matiere": "Histoire de l'art",
     "annee": 2026,
     "date": "2026-06-02",
-    "duree_heures": 3
+    "duree_heures": 3,
+    "modalite": "écrit"
   },
   "intitule": "Les mots dans les arts visuels",
   "gabarit": "dissertation",
-  "questions": 0,
+  "questions": 1,
   "redaction": "GPT-6.2 Astra · effort Ultra",
   "sources": {
-    "sujet": "https://www.ens.psl.eu/sites/default/files/rapport_du_jury_du_departement_arts_cnel_2026_ens-psl.pdf",
+    "sujet": "https://www.ens.psl.eu/sites/default/files/rapport_du_jury_du_departement_arts_cnel_2026_ens-psl.pdf#page=4",
     "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_du_jury_du_departement_arts_cnel_2026_ens-psl.pdf",
     "page_sujet": 4,
     "sujet_sha256": "4f032bb394ecb223ce6827de20caada0c29d10558e4ba4b8cb74b077a11f90d5",
@@ -27,19 +28,29 @@
       "https://www.moma.org/collection/works/81435",
       "https://www.guggenheim.org/artwork/artist/jenny-holzer",
       "https://www.publicartfund.org/exhibitions/view/messages-to-the-public/messages-to-the-public-holzer/",
-      "https://www.guggenheim.org/audio/track/introduction-to-jenny-holzer-light-line"
-    ]
+      "https://www.guggenheim.org/audio/track/introduction-to-jenny-holzer-light-line",
+      "https://www.museothyssen.org/sites/default/files/document/2024-03/03_Magritte_JL%20Calderon%20Aguirrezabala_OpenWindows_13.pdf#page=11",
+      "https://fr.wikisource.org/wiki/Page:Apollinaire_-_Calligrammes.djvu/62",
+      "https://www.academiedesbeauxarts.fr/les-calligrammes-dapollinaire"
+    ],
+    "index_annales": "https://www.ens.psl.eu/rapports-et-sujets-concours-normalien-etudiant-lettres-2026",
+    "index_annales_sha256": "3d6f12d0fb0e8431c209767bcd94a369425677ab1adc7cf5d8b6eed50947b809",
+    "page_conditions": 2,
+    "sha256_rapport_jury": "4f032bb394ecb223ce6827de20caada0c29d10558e4ba4b8cb74b077a11f90d5",
+    "statut_sujet": "Énoncé reproduit dans le rapport du département Arts. L’index de la session affiche le sujet sans lien distinct.",
+    "consigne_attestee": "Les mots dans les arts visuels",
+    "attendus": "Exemples précis choisis à travers différentes époques de l’Antiquité à nos jours et différents médiums."
   },
   "figures": [
     {
       "fichier": "figures/deux-parcours-de-lecture.svg",
       "question": "Composition",
-      "legende": "Deux parcours de lecture. Le cercle du bol conduit l’œil le long d’une inscription fixe. Dans la rotonde de Holzer, la ligne défile devant un lecteur lui-même mobile. Schémas de principe."
+      "legende": "Sur le bol, l’inscription reste fixe sur le bord. Dans la rotonde de 2024, le texte défile et le lecteur peut se déplacer."
     },
     {
       "fichier": "figures/picasso-magritte-kosuth.svg",
       "question": "Composition",
-      "legende": "Trois opérations confiées au spectateur. Un fragment appelle un complément, une légende appelle une vérification, une définition appelle une comparaison."
+      "legende": "De Picasso à Kosuth, trois gestes de lecture. Chez Magritte, une seule des quatre cases fait coïncider le mot avec l’objet."
     }
   ],
   "contributions": [
@@ -53,6 +64,128 @@
       "agent": "astra_info_si",
       "fournisseur": "codex",
       "perimetre": "Rédaction de la dissertation et du guide à partir de la page 4 du rapport ENS-PSL. Étude de l’amphore d’Exékias, du bol de Nichapour, de Van Eyck, Picasso, Magritte, Kosuth et Holzer de 1977 à 2024. Contrôle des notices de collection et des archives d’exposition, création de deux schémas de lecture."
+    },
+    {
+      "phase": "revision",
+      "modifications": true,
+      "agent": "x_hist_1986",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture du sujet et des attentes p. 2 et 4 du rapport. Vérification du quatrième compartiment de Magritte, de la disposition du calligramme de 1918 et de la diversité des œuvres discutées. Refonte des deux schémas partagés et du guidage."
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "pieces_verifiees": {
+    "sujet_et_rapport": {
+      "url": "https://www.ens.psl.eu/sites/default/files/rapport_du_jury_du_departement_arts_cnel_2026_ens-psl.pdf",
+      "sha256": "4f032bb394ecb223ce6827de20caada0c29d10558e4ba4b8cb74b077a11f90d5",
+      "pages": 4,
+      "pages_verifiees": [
+        {
+          "numero": 2,
+          "rendu_sha256": "07b4d1cb19ceb939300b770ad3ca27bca17c08fb13449c88563949746474a830"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "a89f2fc0f15b18ef1b63d328e5b5dd113fe97d8afb7d89b287a755be4c7a404a"
+        }
+      ]
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "reperes": [
+      {
+        "question": "Dissertation",
+        "intitule": "Les mots dans les arts visuels",
+        "page_pdf": 4
+      }
+    ],
+    "annexes_sujet": [],
+    "reproductions_imposees": [],
+    "precision": "Le jury laisse choisir les exemples. Le rapport nomme les collages cubistes et La clef des songes comme repères. Aucun corpus ni dossier de reproductions imposé."
+  },
+  "oeuvres_verifiees": [
+    {
+      "oeuvre": "Exékias, amphore à figures noires",
+      "notice": "https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/museo-gregoriano-etrusco/sala-xix--emiciclo-inferiore--collezione-dei-vasi--ceramica-atti/anfora-attica-a-figure-nere-firmata-da-exekias.html",
+      "sha256_notice": "907f63f79bf7739cb6a2480ac8db9e1056c68c9f64ba78d8d1c6511bc665ec77",
+      "source_reproduction": "https://www.museivaticani.va/content/dam/museivaticani/immagini/collezioni/musei/museo_gregoriano_etrusco/15_04_anfora_Exekias_Dettaglio.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg",
+      "sha256_source_reproduction": "78600a2f6713fdbccc17f69e46b47886f2d5271efc4261672671ca6fc3d58b17"
+    },
+    {
+      "oeuvre": "Bol à inscription arabe, Nichapour",
+      "notice": "https://www.metmuseum.org/art/collection/search/451802",
+      "sha256_notice": "86b6acf9bbb698f115766c39bb8d81209a0d31b4061b175c133effd5e1ff1372",
+      "source_reproduction": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/451802/881133/main-image",
+      "sha256_source_reproduction": "9732cd580a4733b92363865755388803770eb83e67d90bd6eb7b5e66c37a91af"
+    },
+    {
+      "oeuvre": "Picasso, Nature morte à la chaise cannée",
+      "notice": "https://cep.museepicassoparis.fr/explorer/nature-morte-la-chaise-cannee-mp36",
+      "sha256_notice": "1b0c31f6ab03b10786f8a1ee6be1640f8583ba10ac4a48a867efc3a24908dbea",
+      "source_reproduction": "https://cep.museepicassoparis.fr/sites/default/files/styles/image_liste_visionneuse_desktop/public/medias/image/import/navigart/4C22557.jpg?itok=pBDYRG3V",
+      "sha256_source_reproduction": "c6556e8d35a390c45504bdfcb5229a246508719009a20ab3764a3a2f73adf8b3"
+    },
+    {
+      "oeuvre": "Kosuth, One and Three Chairs",
+      "notice": "https://www.moma.org/collection/works/81435",
+      "sha256_notice": "92ddf66c245c95b5089556c82db65de1a353480641a6057f25cceb3817b24b9f",
+      "source_reproduction": "https://www.moma.org/media/W1siZiIsIjE3MDMzMSJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=9ec6b1b0f44ccf97",
+      "sha256_source_reproduction": "c28e7dee0b82930ee368965a5d50a9cd56ebf935b3878ad6987a088514e62817"
+    },
+    {
+      "oeuvre": "Holzer, Times Square, 1982",
+      "notice": "https://www.publicartfund.org/exhibitions/view/messages-to-the-public/messages-to-the-public-holzer/",
+      "sha256_notice": "817e260cf79186f49ad73ace359853c4faca99addb49670aab380c64ba0dacdd",
+      "source_reproduction": "https://www.publicartfund.org/wp-content/uploads/2019/06/HolzerJ_841_Horizontal.jpg",
+      "sha256_source_reproduction": "a98f6abd0a0af5a6e8a02e6d28f13c2295d9c566e11015e25cb29335c9404ef4"
+    },
+    {
+      "oeuvre": "Holzer, Light Line, Guggenheim, 2024",
+      "notice": "https://www.guggenheim.org/audio/track/introduction-to-jenny-holzer-light-line",
+      "sha256_notice": "03b75ab0c45a2b6f88f17821900dde67434ab535d04986908c5f0c3bdd19b7a3",
+      "source_reproduction": "https://www.guggenheim.org/wp-content/uploads/2023/09/installation-srgm-jenny-holzer-lightline-2024-25-oculus.jpg",
+      "sha256_source_reproduction": "02ef16ee3dd962a0721bbf3d32c876747739d57ee161bc87b4592d09b8402080"
+    },
+    {
+      "oeuvre": "Van Eyck, Portrait dit des Arnolfini",
+      "notice": "https://www.nationalgallery.org.uk/paintings/catalogues/campbell-1998/the-arnolfini-portrait",
+      "sha256_notice": "7f2ce964021a2fbcc3a0b5b1ed9abd95482e096cf3c9f6747faa10f417eea9f6",
+      "source_reproduction": "https://www.nationalgallery.org.uk/media/l2lpojej/n-0186-00-000230-xl-hd.jpg?rxy=0.49391727493917276,0.23851590106007067&width=800&height=800&v=1dbcbd0fa344fd0",
+      "sha256_source_reproduction": "d3ed1605631f6a0ab84b1cbde24d26424854f6ebfeda9b739ada7af7d47f8a85"
+    },
+    {
+      "oeuvre": "Magritte, La clef des songes, Munich, 1927",
+      "notice": "https://www.sammlung.pinakothek.de/de/artwork/jpxe1JnxJ7",
+      "sha256_notice": "a374fe5fe855e667bcd9cf124362b77bc041f7ea99a9cff005832fe78d85ae39",
+      "source_reproduction": "https://www.museothyssen.org/sites/default/files/document/2024-03/03_Magritte_JL%20Calderon%20Aguirrezabala_OpenWindows_13.pdf",
+      "sha256_source_reproduction": "2b042baaeaf02396dd5c4c7b9b9154623570995bfbc1229ecc9852f5caabbcf5",
+      "repère_reproduction": "PDF p. 11, œuvre en quatre cases"
+    },
+    {
+      "oeuvre": "Holzer, Truisms : série commencée en 1977",
+      "notice": "https://www.guggenheim.org/artwork/artist/jenny-holzer",
+      "sha256_notice": "db3d8749a3a9fc74d93023d621000451e11df1c23a68d4daee384a73ddefe633"
+    },
+    {
+      "oeuvre": "Apollinaire, Il pleut, dans Calligrammes, 1918, p. 62",
+      "notice": "https://www.academiedesbeauxarts.fr/les-calligrammes-dapollinaire",
+      "source_reproduction": "https://fr.wikisource.org/wiki/Page:Apollinaire_-_Calligrammes.djvu/62",
+      "sha256_source_reproduction": "93a685ecbd00309f39a0cc5ae209eebf2ad3546c83bc2a03fac043ddc2492357",
+      "url_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Apollinaire_-_Calligrammes.djvu/page62-1280px-Apollinaire_-_Calligrammes.djvu.jpg?utm_source=fr.wikisource.org&utm_campaign=index&utm_content=thumbnail"
     }
   ]
 }

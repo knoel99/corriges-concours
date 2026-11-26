@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Les mots dans les arts visuels
 
 Deux hommes penchés sur un jeu, de part et d’autre d’une petite table. Sur une amphore attique d’Exékias, le spectateur qui reconnaît cette scène peut encore ignorer ce qui s’y passe. Il faut lire les mots peints devant la bouche des joueurs pour apprendre le résultat de leur coup. L’image acquiert alors une durée très brève, celle de deux voix qui annoncent leurs points. D’autres mots, sur ce même vase, donnent les noms des héros. Lire introduit donc au moins deux opérations dans l’acte de regarder, identifier quelqu’un et lui entendre dire quelque chose. [Musées du Vatican, amphore d’Exékias](https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/museo-gregoriano-etrusco/sala-xix--emiciclo-inferiore--collezione-dei-vasi--ceramica-atti/anfora-attica-a-figure-nere-firmata-da-exekias.html)
@@ -24,6 +26,12 @@ L’importance du collage cubiste tient à une expérience concrète de cette h�
 
 La mise en page de *La clef des songes* de René Magritte semble, en revanche, garantir une correspondance réglée. Dans la version de 1927 conservée à Munich, des objets isolés sont disposés en cases avec des mots écrits à leur pied. L’arrangement rappelle la planche d’apprentissage sur laquelle un enfant doit pouvoir passer sans difficulté de la chose représentée à son nom. Or un sac se trouve associé au ciel, un couteau à l’oiseau. Le lecteur reconnaît assez bien le dessin et comprend assez bien le mot pour éprouver leur désaccord. La place de la légende a fait naître une promesse de désignation que les associations défont. Picasso laissait le lecteur compléter un fragment. Magritte rend le mot disponible en entier et déplace la difficulté vers la relation que nous attendions entre deux signes parfaitement reconnaissables. Le trouble repose sur cette attente apprise. [Pinakothek der Moderne, version de 1927](https://www.sammlung.pinakothek.de/de/artwork/jpxe1JnxJ7)
 
+Le quatrième compartiment est décisif. Sous une feuille, on lit « la table », mais sous l’éponge on lit bien « l’éponge ». Si toutes les étiquettes avaient été déplacées, il suffirait de conclure que ce petit lexique a été mal rangé. Le seul accord oblige au contraire à reprendre l’examen case par case. Pourquoi avons-nous admis aussitôt que l’inscription inférieure devait nommer la chose supérieure ? Le cadre qui les réunit et l’habitude de l’imagier scolaire ont institué cette fonction avant même la lecture du premier mot. Magritte peut alors la suspendre trois fois et la satisfaire une fois. C’est en ménageant cet accord qu’il rend sensible la convention qui règle les quatre. [La version de 1927 reproduite, Musée Thyssen-Bornemisza, p. 11](https://www.museothyssen.org/sites/default/files/document/2024-03/03_Magritte_JL%20Calderon%20Aguirrezabala_OpenWindows_13.pdf#page=11)
+
+En 1918, la page 62 de *Calligrammes* d’Apollinaire propose une expérience inverse. Dans *Il pleut*, cinq traînées de mots presque verticales descendent de gauche à droite, sous un titre composé horizontalement. De loin, l’œil saisit leur direction commune d’un coup. Pour comprendre une phrase, il faut revenir à son départ, descendre une seule ligne et laisser momentanément les quatre autres. Les premiers mots font entendre des « voix de femmes » : la pluie que l’on avait cru voir devient aussi une pluralité de voix et de souvenirs. Recopier le poème sur cinq lignes horizontales conserverait les mots et changerait le temps que nous mettons à passer de la pluie visible aux voix entendues. Cet exemple éclaire la place de la poésie dans une histoire des arts visuels. La page fournit ici une partie de la preuve, au même titre que la surface du tableau. [Fac-similé de la page 62, édition du Mercure de France](https://fr.wikisource.org/wiki/Page:Apollinaire_-_Calligrammes.djvu/62)
+
+![De Picasso à Kosuth, trois gestes de lecture. Chez Magritte, une seule des quatre cases fait coïncider le mot avec l’objet.](figures/picasso-magritte-kosuth.svg)
+
 ### III. Faire du lecteur un participant et lui assigner une place
 
 Il suffit parfois d’exposer une définition à la place où l’on attendrait une explication pour que l’explication devienne un nouvel objet à examiner. Dans *One and Three Chairs* de Joseph Kosuth, en 1965, une chaise pliante en bois voisine avec une photographie de chaise et un agrandissement photographique d’une entrée de dictionnaire. Si l’on retire mentalement la définition, il reste une comparaison entre un objet singulier et son image. Quand on la rétablit, la classe entière des objets que l’on peut appeler *chair* entre dans le jeu. La photographie permet de reconnaître une apparence particulière, la définition peut convenir à des chaises qui auraient une tout autre apparence, et le meuble occupe devant nous un volume que les deux panneaux figurent ou décrivent. Le visiteur éprouve ces écarts en passant de l’un à l’autre. La définition exposée possède désormais un format et une place aussi déterminants que ses termes. [Museum of Modern Art, *One and Three Chairs*](https://www.moma.org/collection/works/81435)
@@ -34,8 +42,8 @@ Le lecteur de l’amphore pouvait départager deux voix en se penchant sur deux 
 
 ## Schéma de lecture
 
-![Deux parcours de lecture. Le cercle du bol conduit l’œil le long d’une inscription fixe. Dans la rotonde de Holzer, la ligne défile devant un lecteur lui-même mobile. Schémas de principe.](figures/deux-parcours-de-lecture.svg)
+![Sur le bol, l’inscription reste fixe sur le bord. Dans la rotonde de 2024, le texte défile et le lecteur peut se déplacer.](figures/deux-parcours-de-lecture.svg)
 
 ## Source du sujet
 
-Le département Arts reproduit l’intitulé à la page 4 et indique les conditions de l’écrit à la page 2. [Rapport du jury ENS-PSL 2026](https://www.ens.psl.eu/sites/default/files/rapport_du_jury_du_departement_arts_cnel_2026_ens-psl.pdf)
+Le département Arts reproduit l’intitulé à la page 4 et indique les conditions de l’écrit à la page 2. Les candidats choisissaient leurs exemples à travers les époques et les médiums. [Rapport du jury ENS-PSL 2026](https://www.ens.psl.eu/sites/default/files/rapport_du_jury_du_departement_arts_cnel_2026_ens-psl.pdf)
