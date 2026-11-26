@@ -1,0 +1,383 @@
+{
+  "slug": "banque-pt_pt_maths-c_2011",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths C",
+    "intitule": "Épreuve de Mathématiques C",
+    "annee": 2011,
+    "duree": "4 h",
+    "modalite": "écrit",
+    "code_garde": "11PT30"
+  },
+  "questions": 34,
+  "redaction": "Proposition pédagogique non officielle, rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2011/math_c_pt_2011.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2011/rapport_math_c_ecrit_2011.pdf",
+    "livret": "https://www.banquept.fr/documents/livret/2011/Livret_PT_2011.pdf",
+    "sujet_sha256": "8e049e0ace5b9c0d56200d9accdf7bfb37d5ae43c4fb7c3b729ba2499ca15810",
+    "rapport_jury_sha256": "355d2fab130302dad81ab06924f95993236b168c9f62fddaea43b85ce5a32a6f",
+    "observation_rapport": "La garde impose deux feuilles millimétrées. Les deux courbes et le schéma de comparaison demandé sont reproduits. En I.3.e le quotient par ln n ne se définit que pour n ≥ 2. La forme sans division vaut aussi pour n = 1."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2011/math_c_pt_2011.pdf",
+      "sha256": "8e049e0ace5b9c0d56200d9accdf7bfb37d5ae43c4fb7c3b729ba2499ca15810",
+      "pages": 4,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "30398d43864c8494b828bfcd4207a9c8e477101eb539407cd19c4f36ab90c89f"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "81e6b18620dba626e6b30ccb59d42abb4c1eef415aed14f9107635f9c445178a"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "0056221b793f2237bd380276c37a4f5ba52755ee6661b61851bfdd25d7a75753"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "b90d1481b0b52400132ee6f7d54aae7f8b0a17be31dab28b8b410483774f8827"
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2011/rapport_math_c_ecrit_2011.pdf",
+      "sha256": "355d2fab130302dad81ab06924f95993236b168c9f62fddaea43b85ce5a32a6f",
+      "pages": 5,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "2996b97da7c257243a2ac3c573dda7bc50a8cc3236e1b1e17569a1e122a73882"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "80363b56896160f75779c0d3620ee61c9bf522105ac315248947afa6d9416797"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "2cc9dbcea52a5af0217ffc99cdbfdd137960618be06004680100ab0172ad3d62"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "3ed89e6297714e46c6ad72d062b93ef40d0c739eadc1c54c6173a2a3c881ec82"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "c78c37410693aa58206039aacef237f3d8b1489db4effb296633931558da4047"
+        }
+      ]
+    },
+    "livret": {
+      "url": "https://www.banquept.fr/documents/livret/2011/Livret_PT_2011.pdf",
+      "sha256": "f9cd26395e9749f34a6ba265a7ac7f313e4550c3ab2d4fca547d3d492498f219",
+      "pages": 73,
+      "pages_verifiees": [
+        {
+          "numero": 9,
+          "rendu_sha256": "654aa4480a126ea375ebbbfe8bf73008c8e3c3dd9542c27344f5eaf9b77e7764"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "4a0d7c87b8c2a1ada27a3a153532248a1a6fc26357cf469c594cdabb80e01d0c"
+        },
+        {
+          "numero": 13,
+          "rendu_sha256": "d32aeaa8960bcd3f63d8921ad8da22a774905f9e69196acc49991f4627564757"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "P.a",
+      "fichier": "figures/rectangles.svg",
+      "legende": "À gauche de k le rectangle est sous la courbe et à droite il est au-dessus. Sa hauteur est f(k).",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "I.1.c",
+      "fichier": "figures/courbe-1.svg",
+      "legende": "La courbe de f sur grille millimétrée commence au point marqué d’abscisse e et descend vers zéro.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "I.2.c",
+      "fichier": "figures/courbe-2.svg",
+      "legende": "La courbe de g sur grille millimétrée commence au point marqué d’abscisse e et descend vers zéro.",
+      "provenance": "Figure originale."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "P.a",
+      "P.b",
+      "P.c",
+      "I.1.a",
+      "I.1.b",
+      "I.1.c",
+      "I.1.d",
+      "I.1.e",
+      "I.2.a",
+      "I.2.b",
+      "I.2.c",
+      "I.2.d",
+      "I.2.e",
+      "I.3.a",
+      "I.3.b",
+      "I.3.c",
+      "I.3.d",
+      "I.3.e",
+      "I.4.a",
+      "I.4.b",
+      "I.4.c",
+      "I.4.d",
+      "I.4.e",
+      "I.4.f",
+      "I.4.g",
+      "I.4.h",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "III.a",
+      "III.b",
+      "III.c"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "annexes_imposees": [
+      "La garde demande deux feuilles de papier millimétré."
+    ],
+    "document_reponse_mentionne": null,
+    "repere_par_question": [
+      {
+        "question": "P.a",
+        "page_pdf": 1,
+        "page_rapport": 2,
+        "objet": "Deux rectangles de même largeur"
+      },
+      {
+        "question": "P.b",
+        "page_pdf": 1,
+        "page_rapport": 2,
+        "objet": "Encadrement des sommes partielles"
+      },
+      {
+        "question": "P.c",
+        "page_pdf": 1,
+        "page_rapport": 2,
+        "objet": "Critère série-intégrale"
+      },
+      {
+        "question": "I.1.a",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Dérivée de f"
+      },
+      {
+        "question": "I.1.b",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Variations de f"
+      },
+      {
+        "question": "I.1.c",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Courbe de f"
+      },
+      {
+        "question": "I.1.d",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Primitive et intégrale"
+      },
+      {
+        "question": "I.1.e",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Première série logarithmique"
+      },
+      {
+        "question": "I.2.a",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Dérivée de g"
+      },
+      {
+        "question": "I.2.b",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Variations de g"
+      },
+      {
+        "question": "I.2.c",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Courbe de g"
+      },
+      {
+        "question": "I.2.d",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Convergence de l’intégrale de g"
+      },
+      {
+        "question": "I.2.e",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Deuxième série logarithmique"
+      },
+      {
+        "question": "I.3.a",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Primitive de ln(t)/t"
+      },
+      {
+        "question": "I.3.b",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Décroissance de la suite compensée"
+      },
+      {
+        "question": "I.3.c",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Minorant uniforme"
+      },
+      {
+        "question": "I.3.d",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Convergence de la suite compensée"
+      },
+      {
+        "question": "I.3.e",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Divergence de la série harmonique"
+      },
+      {
+        "question": "I.4.a",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Deux bornes harmoniques"
+      },
+      {
+        "question": "I.4.b",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Existence de la constante d’Euler"
+      },
+      {
+        "question": "I.4.c",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Équivalent des accroissements et télescopage"
+      },
+      {
+        "question": "I.4.d",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Somme des accroissements"
+      },
+      {
+        "question": "I.4.e",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Reste harmonique"
+      },
+      {
+        "question": "I.4.f",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Contrôle du reste local"
+      },
+      {
+        "question": "I.4.g",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Sommation de l’erreur locale"
+      },
+      {
+        "question": "I.4.h",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Terme correctif de la constante"
+      },
+      {
+        "question": "II.1",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Domination des puissances de logarithme"
+      },
+      {
+        "question": "II.2",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Choix d’un seuil"
+      },
+      {
+        "question": "II.3",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Majoration par une puissance"
+      },
+      {
+        "question": "II.4",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Intégrale de Bertrand"
+      },
+      {
+        "question": "II.5",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Série de Bertrand"
+      },
+      {
+        "question": "III.a",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Limite du quotient de logarithmes"
+      },
+      {
+        "question": "III.b",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Normalisation de la fraction"
+      },
+      {
+        "question": "III.c",
+        "page_pdf": 4,
+        "page_rapport": 4,
+        "objet": "Premier terme non nul et sommabilité"
+      }
+    ]
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_hist_1987",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture des 34 questions ou sous-questions et du rapport institutionnel, rédaction des solutions et indications, figures originales et vérifications indépendantes des calculs."
+    }
+  ]
+}
