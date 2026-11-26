@@ -1,0 +1,187 @@
+{
+  "slug": "bel_al_russe-commentaire-et-traduction_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Russe (commentaire et traduction)",
+    "annee": 2025,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "duree_heures": 6,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2025-07/Commentaire%20et%20traduction.pdf#page=20",
+    "sujet_sha256": "ea1e2d243c18761ad6c43ed4f301fdebb92b05def7502a7357659f787a15ae35",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2025-11/Russe%202025%20OK%20Lyon%20RELU.pdf#page=2",
+    "rapport_jury_sha256": "d4113cf7e36fa112a338a42c226f12f1044e729b5693fd8bd4543e8946e8838d",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2025",
+    "ouvrage": "Maxime Gorki, *La Mère*, 1906/1907 selon le feuillet.",
+    "pages_rapport_verifiees": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2025-07/Commentaire%20et%20traduction.pdf#page=20",
+      "sha256": "ea1e2d243c18761ad6c43ed4f301fdebb92b05def7502a7357659f787a15ae35",
+      "pages": 24,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "d10fc4d68158b2c87292528c0faa5bf3de66f9759bfb6b0292536515d81036d3"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "1e7bff601e229489b20e9530d41c12b6a405a88fd4acd1634098b88de711e417"
+        },
+        {
+          "numero": 20,
+          "rendu_sha256": "187e39d284761e002874a21375047f06df4c51bc251dc2ac0b48b2ef73f7f063"
+        },
+        {
+          "numero": 21,
+          "rendu_sha256": "e00009996c907bb4a3f0d5b8ee6360f50ff89dee11e7e80afe1a7e4cc72df64f"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2025-11/Russe%202025%20OK%20Lyon%20RELU.pdf#page=2",
+      "sha256": "d4113cf7e36fa112a338a42c226f12f1044e729b5693fd8bd4543e8946e8838d",
+      "pages": 15,
+      "pages_verifiees": [
+        {
+          "numero": 2,
+          "rendu_sha256": "716d55516c55623c65a93bc45d1d362880feb58c81988e38ca5833d4f28bdaee"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "4c901ba9bb517956111589e01294cb96c61af1bc90412592af42354e0f1fb3fc"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "8a415a53b82a111d3d2c2d41809f3e65b14572755cf6257df99784db25d30119"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "d46c3503b88f0a5c01cea3f8a12e73fabf258fb6869063344fa519aae829f8ea"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "16bf23887c83e40cee0172eb605bc9a3197d1c1682ec865264222e7410701f3b"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "6f58e41939949f14442d2833c1e30375d52510a635d72f1e1b235fc741c76c27"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "386f65b4a940d9ed38fb71519dd18857ad46f15c1764db45e062eb9a03d9044b"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "e1b1d948abeb47ba2050a87d7dc79f17cbc6fcc678a253b3048da205cf538f34"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "2fec61da7e2a4fb544b9ce5c003aa47577a280f93d9f5f4382fb5c0c50f8883d"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "fe15fd6dd893a07b0d3c8d0fc9788b791d754d29f239b38a037aa16e57c9ac2a"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "b67a88d2da2a5e7c5a666a0774b2108b472208a3d7f3860ad37d4568b210c0d5"
+        }
+      ]
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "bel_al_russe_commun_2023_2025",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire russe sur les lignes 1–70, version française des lignes 18–43, guide et schéma."
+    },
+    {
+      "phase": "revision",
+      "session": "bel_al_russe_commun_2023_2025",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle des bornes et de chaque unité de la version sur le sujet, relecture du commentaire, des points de vue et des choix de langue avec le rapport pages 2 à 12."
+    }
+  ],
+  "figures": [
+    {
+      "question": "Commentaire en russe",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "L’usine rythme les journées, les jours de fête et la vie entière. Les paroles nouvelles font apparaître des réactions différentes."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Maxime Gorki, *La Mère*, 1906/1907 selon le feuillet."
+    ],
+    "note": "Commentaire et traduction pédagogiques originaux. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire en russe",
+      "Version française"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Commentaire en russe",
+        "pages_pdf": [
+          20,
+          21
+        ],
+        "lignes": "1–70"
+      },
+      {
+        "question": "Version française",
+        "pages_pdf": [
+          20,
+          21
+        ],
+        "lignes": "18–43",
+        "debut": "По праздникам спали часов до десяти",
+        "fin": "Иногда парней приводили домой матери, отцы."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}
