@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Projet astronomique Darwin.** Le cahier CX9614 étudie une plate-forme de Stewart entre un télescope et les poutres de la station. Les mouvements lents doivent orienter l’instrument. Les vibrations rapides doivent être filtrées pour préserver la mesure interférométrique.
 
 ## Repères de résolution
@@ -145,6 +147,8 @@ Avec $c_T>0$, le zéro de la transmission passive dégrade la pente finale. Avec
 #### Solution
 
 Chaque bras sans masse, articulé par deux rotules, transmet une force axiale décrite par un seul scalaire. Six bras fournissent six inconnues d’effort. Le solide supérieur possède six équations scalaires de dynamique et son déplacement relatif possède six composantes. Au voisinage de la configuration cubique régulière, les six directions et leurs bras de levier donnent une matrice de rang six. Les variations de longueur, les lois d’effort et ces équations déterminent le comportement de la plate-forme. Cette justification suppose une pose régulière.
+
+Pour vérifier le rang au repos, prenons les trois arêtes comme axes. Les deux bras parallèles à $x$ ont des attaches supérieures séparées du vecteur $(0,L,-L)$, au signe près. Si les six longueurs sont instantanément constantes, la différence des vitesses axiales de ces deux attaches donne $L(\Omega_y+\Omega_z)=0$ pour la rotation relative. Les deux autres paires donnent $\Omega_z+\Omega_x=0$ et $\Omega_x+\Omega_y=0$. La rotation est donc nulle. Il reste une vitesse de translation dont les trois projections sur les arêtes sont nulles. Le noyau de la jacobienne est réduit à zéro.
 
 ### Question 15 · Distance entre les deux plans
 
