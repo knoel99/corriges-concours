@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Session de printemps 2021. Les trois exercices sont indépendants.
 
 ## Présentation du sujet
@@ -119,7 +121,7 @@ L’exponentielle imprimée s’obtient dans la limite **$e\gg\delta$**. En effe
 
 $$T\simeq\left|\frac{4kq}{(k+q)^2}\right|^2e^{-2e/\delta},\qquad \gamma\simeq8(k\delta)^2=16\varepsilon_0\omega/\sigma\quad(k\delta\ll1).$$
 
-Ici $\gamma$ est indépendant de l’épaisseur. Une épaisseur plus grande accentue l’atténuation. Une augmentation de $\sigma$ réduit le préfacteur et la profondeur de peau. À $\sigma$ constante, $\gamma\propto\omega$ alors que $1/\delta\propto\sqrt\omega$ et l’exponentielle domine dans la limite épaisse. Pour les données du sujet $k\delta=0,0086$, $e/\delta=1,46$. La formule exacte donne $T\simeq2,84\times10^{-5}$. La figure compare les domaines des deux simplifications.
+Ici $\gamma$ est indépendant de l’épaisseur. Une épaisseur plus grande accentue l’atténuation. Une augmentation de $\sigma$ réduit le préfacteur et la profondeur de peau. À $\sigma$ constante, $\gamma\propto\omega$ alors que $1/\delta\propto\sqrt\omega$ et l’exponentielle domine dans la limite épaisse. Pour les données du sujet $k\delta=0,0086$, $e/\delta=1,46$. La formule exacte donne $T\simeq2,84\times10^{-5}$. À cette même épaisseur, la limite mince donne $3,43\times10^{-5}$ et la limite épaisse avec son préfacteur $|4kq/(k+q)^2|^2$ donne $3,14\times10^{-5}$. Les deux écarts par rapport au résultat exact sont respectivement de $21\,\%$ et $11\,\%$.
 
 ![Figure 1 — Pour les données de l’or à 10 µm, chaque approximation rejoint la courbe exacte dans son domaine d’épaisseur.](figures/transmission-or.svg)
 
@@ -181,7 +183,7 @@ Ses racines sont $-\kappa$ et $+\kappa$. La solution est $u(r)=Ae^{-\kappa r}+Be
 
 #### Solution
 
-La condition $V(\infty)=0$ élimine $Be^{+\kappa r}/r$, donc $B=0$. Un petit contour sphérique entourant l’ion porte un flux $e/\varepsilon_0$ à la limite $r\to0$. Ainsi $V\sim e/(4\pi\varepsilon_0r)$ et $A=e/(4\pi\varepsilon_0)$. Les constantes des exposants sont $\alpha=\kappa$ et $\beta=-\kappa$. On utilise ici la condition coulombienne admise pour raccorder la solution linéarisée à la source. Au cœur même de l’ion, le critère de faible potentiel utilisé en question 4 cesse d’être valable.
+La condition $V(\infty)=0$ élimine $Be^{+\kappa r}/r$, donc $B=0$. À travers une petite surface sphérique entourant l’ion, le flux du champ électrique tend vers $e/\varepsilon_0$ lorsque $r\to0$. Ainsi $V\sim e/(4\pi\varepsilon_0r)$ et $A=e/(4\pi\varepsilon_0)$. Les constantes des exposants sont $\alpha=\kappa$ et $\beta=-\kappa$. On utilise ici la condition coulombienne admise pour raccorder la solution linéarisée à la source. Au cœur même de l’ion, le critère de faible potentiel utilisé en question 4 cesse d’être valable.
 
 ### 7 · Potentiel et longueur de Debye
 

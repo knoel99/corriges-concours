@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Épreuve de printemps de la formation francophone, trois heures sans calculatrice. Les estimations suivent la précision demandée dans le sujet.
 
 ## Problème — Cosmologie newtonienne
@@ -117,6 +119,8 @@ Le facteur d’échelle s’annule à **$t''_*=-2/(3H_0)$**. Il s’écrit $a(t)
 
 La courbe part de $(t''_*,0)$ avec tangente verticale et passe par $(0,1)$ avec pente $H_0$. Elle reste croissante et concave, et tend vers l’infini avec une pente qui tend vers zéro. Sa forme est une puissance $2/3$.
 
+![Figure 4 — Solution critique dans le repère du sujet. Le point de référence correspond à t = 0 et a = 1.](figures/expansion-critique.svg)
+
 ### Question 7.e
 
 On a
@@ -129,7 +133,7 @@ $$\rho(t)=\frac{\rho_0}{(1+3H_0t/2)^2}=\frac1{6\pi G(t-t''_*)^2}.$$
 
 Notons $s$ le temps écoulé depuis l’origine de chaque solution et comparons à $K$ fixé. Près de $s=0$, toutes ont la même loi dominante $a\sim[(3/2)\sqrt{2K}\,s]^{2/3}$. Puis la solution ouverte tend vers une croissance linéaire, la solution critique poursuit sa loi en $s^{2/3}$ et la solution liée se retourne et s’effondre. Pour un même $a$ en expansion, $\dot a=\sqrt{2(K/a+E)}$ croît avec $E$ : les courbes se rangent dans cet ordre dès la phase montante.
 
-![Figure 4 — Les trois solutions représentées ont le même K. Les temps sont comptés depuis le début de chacune.](figures/trois-cosmologies-de-poussiere.svg)
+![Figure 5 — Les trois solutions représentées ont le même K. Les temps sont comptés depuis le début de chacune.](figures/trois-cosmologies-de-poussiere.svg)
 
 ### Question 9
 
@@ -166,7 +170,7 @@ $$E_x(0^+,r)=-\frac{2qa}{4\pi\varepsilon_0(a^2+r^2)^{3/2}},\qquad
 \boxed{\sigma(r)=-\frac{qa}{2\pi(a^2+r^2)^{3/2}}}.$$
 La distribution est circulaire et négative, minimale à $r=0$ avec $\sigma(0)=-q/(2\pi a^2)$. Elle remonte vers zéro comme $-qa/(2\pi r^3)$ au loin.
 
-![Figure 5 — La densité est négative, maximale en valeur absolue sous la charge et tend vers zéro comme l’inverse du cube de la distance.](figures/charge-induite-densite-radiale.svg)
+![Figure 6 — La densité est négative, maximale en valeur absolue sous la charge et tend vers zéro comme l’inverse du cube de la distance.](figures/charge-induite-densite-radiale.svg)
 
 Un contrôle local de la normalisation consiste à intégrer la densité jusqu’à un rayon $R$. On obtient $Q(R)=-q[1-a/\sqrt{a^2+R^2}]$. La moitié de la valeur absolue de la charge induite est donc contenue dans le disque $R=\sqrt3\,a$. Cela relie la largeur spatiale de la distribution à la hauteur de la charge au-dessus du plan.
 
@@ -176,4 +180,4 @@ La charge totale vaut
 $$Q_{\rm ind}=2\pi\int_0^\infty\sigma(r)r\,dr=-qa\int_0^\infty\frac{r\,dr}{(a^2+r^2)^{3/2}}=-q.$$
 La paire fictive $q,-q$ donne un potentiel nul sur tout le plan, avec le bon comportement à grande distance. L’unicité de la solution électrostatique dans $x>0$ explique qu’elle y reproduise exactement le champ de la charge réelle et de la distribution induite. Les lignes partent de $q$ et atteignent le plan perpendiculairement. L’image représente la distribution vue de l’extérieur. Le champ physique à l’intérieur du conducteur est nul.
 
-![Figure 6 — Lignes du champ physique dans une coupe contenant la charge et la normale au plan.](figures/champ-et-plan-conducteur.svg)
+![Figure 7 — Lignes du champ physique dans une coupe contenant la charge et la normale au plan.](figures/champ-et-plan-conducteur.svg)

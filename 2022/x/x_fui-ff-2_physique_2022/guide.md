@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Formation francophone, session 2 (printemps), trois heures sans calculatrice.
 
 ## Présentation du sujet
@@ -173,7 +175,7 @@ L’argument de la première expression fixe la phase $\phi$.
 
 #### Solution
 
-Le module varie comme $u^2$ pour $u\ll1$ et tend vers 1 pour $u\gg1$. À $u=1$, il vaut $Q$, ce qui permet de repérer les différentes courbes. Les grands $Q$ produisent un maximum au-dessus du plateau. Le dispositif est un filtre **passe-haut du second ordre** pour le déplacement relatif mesuré.
+Le module varie comme $u^2$ pour $u\ll1$ et tend vers 1 pour $u\gg1$. À $u=1$, il vaut $Q$, ce qui permet de repérer les différentes courbes. Les deux pics peuvent se contrôler avec la formule de la question 8. Pour $Q=2$, le maximum vaut $8/\sqrt{15}\simeq2,07$ à $u=\sqrt{8/7}\simeq1,07$. Pour $Q=1$, il vaut $2/\sqrt3\simeq1,15$ à $u=\sqrt2$. Les trois autres courbes croissent jusqu’au plateau. Le dispositif est un filtre **passe-haut du second ordre** pour le déplacement relatif mesuré.
 
 ![Figure 3 — La limite à haute fréquence est commune. Une résonance apparaît au-dessus de Q = 1/√2.](figures/gain-du-sismographe.svg)
 
@@ -184,7 +186,7 @@ Le module varie comme $u^2$ pour $u\ll1$ et tend vers 1 pour $u\gg1$. À $u=1$, 
 
 #### Solution
 
-Avec $\xi=1/u$, $Y=[(1-\xi^2)^2+\xi^2/Q^2]^{-1}$. Le dénominateur est $1+(Q^{-2}-2)\xi^2+\xi^4$. Il a un minimum pour une valeur strictement positive de $\xi^2$ seulement si $Q^{-2}<2$. Ainsi **$Q_0=1/\sqrt2$**. Pour $Q>Q_0$, le maximum est à $u=(1-1/(2Q^2))^{-1/2}$. Pour $Q\le Q_0$, le gain rejoint le plateau sans pic.
+Avec $\xi=1/u$, le carré du gain vaut $Y=(X_0/Z_0)^2=[(1-\xi^2)^2+\xi^2/Q^2]^{-1}$. Le dénominateur est $1+(Q^{-2}-2)\xi^2+\xi^4$. Il a un minimum pour une valeur strictement positive de $\xi^2$ seulement si $Q^{-2}<2$. Ainsi **$Q_0=1/\sqrt2$**. Pour $Q>Q_0$, le maximum est à $u=(1-1/(2Q^2))^{-1/2}$. Pour $Q\le Q_0$, le gain rejoint le plateau sans pic.
 
 ### Question 9
 
@@ -193,7 +195,7 @@ Avec $\xi=1/u$, $Y=[(1-\xi^2)^2+\xi^2/Q^2]^{-1}$. Le dénominateur est $1+(Q^{-2
 
 #### Solution
 
-Pour $\omega\gg\omega_0$, $\underline X/Z_0\simeq-1$. L’enregistrement relatif reproduit donc le déplacement du sol en amplitude, avec un signe connu à inverser. Il faut placer la pulsation propre suffisamment en dessous de la bande sismique visée. Pour un compromis entre bande passante plate, absence de pic et amortissement du transitoire, le choix usuel est $Q=1/\sqrt2$. Un critère différent, celui du retour libre le plus rapide **sans oscillation**, privilégie l’amortissement critique $Q=1/2$. Le choix numérique optimal dépend du critère retenu ; un grand $Q$ allonge le transitoire.
+Pour $\omega\gg\omega_0$, $\underline X/Z_0\simeq-1$. La masse suspendue reste alors presque immobile dans le référentiel galiléen, car son déplacement absolu a pour amplitude complexe $Z_0+\underline X\simeq0$. L’enregistrement relatif reproduit donc le déplacement du sol en amplitude, avec un signe connu à inverser. Il faut placer la pulsation propre suffisamment en dessous de la bande sismique visée. Pour un compromis entre bande passante plate, absence de pic et amortissement du transitoire, le choix usuel est $Q=1/\sqrt2$. Un critère différent, celui du retour libre le plus rapide **sans oscillation**, privilégie l’amortissement critique $Q=1/2$. Le choix numérique optimal dépend du critère retenu ; un grand $Q$ allonge le transitoire.
 
 Le choix de l’amortissement se vérifie en chiffrant la fidélité près du plateau. Pour $Q=1/\sqrt2$, le module se réduit à $[1+(\omega_0/\omega)^4]^{-1/2}$. À $\omega=2\omega_0$, le gain est $4/\sqrt{17}\simeq0{,}970$. Pour l’amortissement critique $Q=1/2$, il vaut $u^2/(1+u^2)=0{,}800$ à la même pulsation. La réponse libre du premier choix décroît comme $e^{-\omega_0 t/\sqrt2}$ avec oscillation, celle du second comme $(A+Bt)e^{-\omega_0t}$, ce qui explicite le compromis évoqué.
 

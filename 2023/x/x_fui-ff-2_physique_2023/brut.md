@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Formation francophone, session 2 (printemps), trois heures sans calculatrice.
 
 ## Exercice 1 — Résonance paramétrique du pendule
@@ -41,7 +43,11 @@ $$\frac{\dot E_m}{E_m}\simeq\frac{\varepsilon\Omega}{2}\sin(\Omega t)-\frac{3\va
 
 ### Question 6
 
-Pour $\Omega\ne2\omega_0$, la moyenne longue des trois sinus est nulle au premier ordre à phase fixée (hors voisinage résonnant de largeur d’ordre $\varepsilon\omega_0$). Pour **$\Omega=2\omega_0$**, le dernier terme devient constant. Le taux moyen est $\gamma=(3\varepsilon\Omega/4)\sin(2\phi)$. L’enveloppe énergétique varie donc comme $E_m(0)e^{\gamma t}$ dans cette approximation. La phase amplifiée $\phi=\pi/4$ modulo $\pi$ donne $\gamma=3\varepsilon\omega_0/2$ et l’amplitude croît avec le taux $\gamma/2$. La quadrature opposée s’atténue. Le travail fourni par la modulation est à l’origine de cette résonance paramétrique.
+Pour $\Omega\ne2\omega_0$, la moyenne longue des trois sinus est nulle au premier ordre à phase fixée (hors voisinage résonnant de largeur d’ordre $\varepsilon\omega_0$). Pour **$\Omega=2\omega_0$**, le dernier terme devient constant. À la phase $\phi$, le taux relatif moyenné sur les oscillations rapides est $(3\varepsilon\Omega/4)\sin(2\phi)$. Pour $\varepsilon>0$, la quadrature de phase $\pi/4$ modulo $\pi$ a une phase stationnaire et son amplitude croît comme $e^{st}$, avec $s=3\varepsilon\omega_0/4$. La quadrature de phase $-\pi/4$ décroît comme $e^{-st}$. Pour une phase initiale $\phi_0$ quelconque, la projection sur ces deux oscillations en quadrature donne l’énergie moyenne
+
+$$\frac{\overline E_m(t)}{\overline E_m(0)}=\cos^2(\phi_0-\pi/4)e^{2st}+\sin^2(\phi_0-\pi/4)e^{-2st}.$$
+
+Toute composante initiale sur la quadrature amplifiée finit ainsi par dominer dans le domaine des petites oscillations. Le travail fourni par la modulation est à l’origine de cette résonance paramétrique.
 
 ![Figure 2 — À la fréquence double, le signe du travail moyen dépend de la phase de l’oscillation.](figures/gain-de-phase.svg)
 
@@ -134,7 +140,7 @@ Dans le volume des conducteurs parfaits en régime ondulatoire, le champ électr
 
 ### Question 2
 
-Avec cette convention, $\mathbf n=+\mathbf e_r$ en $a$ et $\mathbf n=-\mathbf e_r$ en $b$. Pour les champs du mode du côté de l’isolant, la continuité de $\mathbf E$ tangentiel et de $\mathbf B$ normal donne $\mathbf n\times\mathbf E=0$, $\mathbf n\cdot\mathbf B=0$. Les autres relations de saut sont
+Orientons la normale de chaque paroi métallique vers l’isolant. Alors $\mathbf n=+\mathbf e_r$ en $a$ et $\mathbf n=-\mathbf e_r$ en $b$. Pour les champs du mode du côté de l’isolant, la continuité de $\mathbf E$ tangentiel et de $\mathbf B$ normal donne $\mathbf n\times\mathbf E=0$, $\mathbf n\cdot\mathbf B=0$. Les autres relations de saut sont
 $$\mathbf n\cdot\mathbf D=\sigma,\qquad \mathbf n\times\mathbf H=\mathbf K,$$
 où $\sigma$ et $\mathbf K$ désignent la charge et le courant surfaciques libres, $\mathbf D=\varepsilon_0\varepsilon\mathbf E$ et $\mathbf H=\mathbf B/\mu_0$. Ces signes produisent des courants opposés sur les deux parois.
 

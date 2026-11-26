@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Épreuve de printemps de la formation francophone, trois heures sans calculatrice. Les estimations suivent la précision demandée dans le sujet.
 
 ## Partie I — Orbites képlériennes
@@ -85,7 +87,7 @@ L’équation $r+ex=r_0$ donne $(1-e^2)x^2+y^2+2er_0x-r_0^2=0$, avec $r_0-ex\ge0
 
 ### Question 10.a
 
-Au niveau monopolaire le potentiel gravitationnel massique est $-GM_T/R$. La force centrifuge par unité de masse est dirigée vers l’extérieur de l’axe de rotation et vaut $+\omega_T^2r_z\mathbf e_s$, où $s=r_z$ est la distance à cet axe. Elle dérive de $-\omega_T^2 r_z^2/2$. Ainsi **$V_{\rm pes}=-GM_T/R-\omega_T^2r_z^2/2$**. Le signe négatif dans la formulation de la force scalaire du sujet doit être lu en tenant compte de l’orientation radiale choisie. Le potentiel demandé donne bien une force centrifuge vers les $r_z$ croissants.
+Au niveau monopolaire le potentiel gravitationnel massique est $-GM_T/R$. La force centrifuge par unité de masse est dirigée vers l’extérieur de l’axe de rotation et vaut $+\omega_T^2r_z\mathbf e_s$, où $s=r_z$ est la distance à cet axe. Elle dérive de $-\omega_T^2 r_z^2/2$. Ainsi **$V_{\rm pes}=-GM_T/R-\omega_T^2r_z^2/2$**. En projetant sur $\mathbf e_s$ vers les $r_z$ croissants, on obtient $-\partial_{r_z}(-\omega_T^2r_z^2/2)=+\omega_T^2r_z$. Le signe moins imprimé devant la force centrifuge dans le texte de 10.a est incompatible avec ce choix et avec le potentiel donné.
 
 ### Question 10.b
 
@@ -172,6 +174,6 @@ La courbe se décale à chaque révolution au lieu de retracer une ellipse fixe.
 
 Un siècle contient environ $100\times365/88\simeq415$ tours. Dans l’approximation quasi circulaire avec les valeurs fournies,
 $$\Delta\varpi_{100}\simeq415\times360^\circ\times7{,}7\times10^{-8}\simeq0{,}0115^\circ\simeq41''.$$
-À la précision visée, $0{,}0115^\circ$ s’arrondit à **$0{,}012^\circ$**, soit environ **$43''$** si l’on convertit la valeur arrondie. L’orbite réelle de Mercure est légèrement excentrique. Dans le calcul relativiste elliptique, le demi-latus rectum $a_{\rm ell}(1-e^2)$ remplace le rayon circulaire. Cette correction explique également le passage d’environ $41''$ à la valeur physique voisine de $43''$ par siècle.
+En gardant les constantes du sujet jusqu’au dernier calcul, la valeur circulaire est $0{,}01145^\circ$, soit $41{,}2''$ par siècle. La valeur de $0{,}012^\circ$ annoncée correspond à $43{,}2''$. L’écart s’explique par l’excentricité de Mercure. Avec $r_1$ pris pour le demi-grand axe et $e\simeq0{,}20$, le facteur $1/(1-e^2)$ donne environ $43''$ par siècle.
 
 Le remplacement du rayon par le paramètre orbital se démontre directement avec le potentiel du sujet. Posons $u=1/r$ et $p=\ell^2/(GMm^2)$. L’équation de Binet devient $u''+u=1/p+3bu^2$ (dérivées en angle polaire). Dans la correction du premier ordre on insère $u_0=(1+e\cos\theta)/p$. La composante résonante du second membre est $(6be/p^2)\cos\theta$. Elle produit le terme $(3be/p^2)\theta\sin\theta$, c’est-à-dire le premier développement de $(e/p)\cos[(1-3b/p)\theta]$. La précession vaut donc $6\pi b/p$ par révolution. Pour une ellipse $p=a(1-e^2)$, ce qui justifie le facteur de correction cité pour Mercure.

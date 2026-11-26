@@ -8,7 +8,7 @@
   },
   "questions": 29,
   "redaction": "Corrigés originaux rédigés par IA.",
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2021%20FUI-FF%20Session%202%20SUJET%20DE%20PHYSIQUE_0.pdf",
     "sujet_sha256": "342199a56235287eb8bcc0968fe898d470a901912702a9f3cf7671b03a8962f2",
@@ -39,6 +39,59 @@
       "perimetre": "Rédaction des 29 réponses et des 29 indications sur le film métallique, le plasma et la chaîne de Kronig-Penney. Dérivation des limites de la transmission et calcul de contrôle du film d’or, deux figures originales.",
       "agent": "astra_physique",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Contrôle des 29 questions du fac-similé, des raccordements du film et du réseau, des constantes de Debye et des deux figures. Évaluation séparée du film de 20 nm avec le résultat exact et les deux limites.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "1.8",
+      "1.9",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7",
+      "2.8",
+      "2.9",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "3.7",
+      "3.8",
+      "3.9",
+      "3.10",
+      "3.11"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "relecture_corrige",
+      "sha256_sujet_controle": "342199a56235287eb8bcc0968fe898d470a901912702a9f3cf7671b03a8962f2",
+      "perimetre": "Contrôle des 29 questions du fac-similé, des raccordements du film et du réseau, des constantes de Debye et des deux figures. Évaluation séparée du film de 20 nm avec le résultat exact et les deux limites."
+    }
+  }
 }
