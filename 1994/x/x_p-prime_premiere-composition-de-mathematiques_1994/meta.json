@@ -1,0 +1,170 @@
+{
+  "slug": "x_p-prime_premiere-composition-de-mathematiques_1994",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "P prime",
+    "matiere": "Première composition de mathématiques",
+    "annee": 1994
+  },
+  "questions": 15,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-f236d8d7fad5ef871c51",
+    "sha256_sujet": "6c21cd6d119ec86d64943d4e9bbe50fcecb193c3e359d8fba09fcbc92718743b",
+    "rapport_jury": "",
+    "provenance": "Fac-similé UPS de trois pages (pages 98 à 100 du recueil). Le second fichier est une autre diffusion du même tirage.",
+    "notice_ups": "m94xp1",
+    "document_ups": "m94xp1ea",
+    "second_exemplaire": "https://www.sujetsetcorriges.fr/dl/X/Maths/PC/sec-x-1994-maths1-PC.pdf",
+    "sha256_second_exemplaire": "5290e2027142179d6c1529c8aec63a8f9f188f80b01abd246c3360f592077840",
+    "pages_fac_simile": 3,
+    "instruction_concours": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000180352",
+    "sha256_instruction": "163e49a257b8c069e672c6524a1ea2129ef6ae2bedc09a57be890241eaccf3c6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/noyau-cubique.svg",
+      "question": "12",
+      "legende": "Figure 1 — Noyau impair et amortissement au passage d’une cellule à la suivante"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "lyon_ses_sources",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction et vérification des 15 questions et sous-questions des deux éditions. Estimation de Taylor, déterminants et polynôme réciproque, noyau cubique par morceaux, prolongement impair et signes des sauts dans les intégrations par parties."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9.a",
+      "9.b",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1",
+        "page_pdf": 1,
+        "page_pdf_second": 1,
+        "perimetre": "Écrire les développements en $t+1$ et en $t-1$, puis soustraire."
+      },
+      {
+        "question": "2",
+        "page_pdf": 1,
+        "page_pdf_second": 1,
+        "perimetre": "Sur la ligne $i$, la multiplication à gauche introduit le facteur $x^{-i}$."
+      },
+      {
+        "question": "3",
+        "page_pdf": 1,
+        "page_pdf_second": 1,
+        "perimetre": "Le produit des racines, multiplicités comprises, est le déterminant."
+      },
+      {
+        "question": "4",
+        "page_pdf": 2,
+        "page_pdf_second": 2,
+        "perimetre": "Exploiter $X(-x)=J_NX(x)$ et $J_N^{-1}=J_N$."
+      },
+      {
+        "question": "5",
+        "page_pdf": 2,
+        "page_pdf_second": 2,
+        "perimetre": "Écrire les lignes successives comme $1$, puis $j$, puis $j(j-1)$."
+      },
+      {
+        "question": "6",
+        "page_pdf": 2,
+        "page_pdf_second": 2,
+        "perimetre": "Les polynômes en $j$ qui décrivent les lignes sont unitaires et de degrés successifs."
+      },
+      {
+        "question": "7",
+        "page_pdf": 2,
+        "page_pdf_second": 2,
+        "perimetre": "Former le produit des deux matrices $2\\times2$ et en prendre la trace et le déterminant."
+      },
+      {
+        "question": "8",
+        "page_pdf": 2,
+        "page_pdf_second": 2,
+        "perimetre": "Comparer la matrice de transfert à son inverse en remplaçant $x$ par $-x$ dans la question 4."
+      },
+      {
+        "question": "9.a",
+        "page_pdf": 2,
+        "page_pdf_second": 2,
+        "perimetre": "Utiliser les trois lignes explicites de $A_3$ et conserver l’alternance des signes dans $T_3(-1)$."
+      },
+      {
+        "question": "9.b",
+        "page_pdf": 2,
+        "page_pdf_second": 2,
+        "perimetre": "Une racine est déjà connue. Les deux autres ont un produit égal à $1$."
+      },
+      {
+        "question": "10",
+        "page_pdf": 3,
+        "page_pdf_second": 3,
+        "perimetre": "Évaluer le même jet de dérivées au raccord vu depuis les deux centres consécutifs."
+      },
+      {
+        "question": "11",
+        "page_pdf": 3,
+        "page_pdf_second": 3,
+        "perimetre": "Un choix de $v_0$ fixe tous les coefficients. Vérifier également la réciproque au bord de chaque cellule."
+      },
+      {
+        "question": "12",
+        "page_pdf": 3,
+        "page_pdf_second": 3,
+        "perimetre": "Traduire la décroissance de la fonction en décroissance des trois coefficients en l’évaluant à trois abscisses fixes."
+      },
+      {
+        "question": "13",
+        "page_pdf": 3,
+        "page_pdf_second": 3,
+        "perimetre": "Faire quatre intégrations par parties sur chaque morceau. À l’origine, la dérivée seconde change de signe ; aux demi-entiers, c’est la dérivée troisième qui saute."
+      },
+      {
+        "question": "14",
+        "page_pdf": 3,
+        "page_pdf_second": 3,
+        "perimetre": "Translater la fonction test avant de prendre le supremum."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}
