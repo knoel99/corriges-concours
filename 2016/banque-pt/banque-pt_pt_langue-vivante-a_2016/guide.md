@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve dure trois heures. Chaque candidat compose dans la langue choisie à l’inscription. Ce fascicule présente les cinq synthèses de 450 à 500 mots. Le décompte indiqué inclut le titre.
 
 [Sujet et supports](https://www.banquept.fr/documents/2016/lv_a_2016_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2016/rapport_lv_a_ecrit_2016.pdf) · [Grille du livret](https://www.banquept.fr/documents/livret/2016/Livret_PT_2016.pdf#page=12)
@@ -58,7 +60,7 @@ Distinguer l’accès à la nourriture, qui dépend du revenu, et les pertes mat
 
 **Document 3** · Elizabeth Royte, National Geographic, 20 octobre 2014. Surproduction de précaution, exigences de présentation et stockage domestique expliquent les pertes. Les débouchés secondaires et les portions adaptées illustrent la prévention.
 
-**Document 4** · Histogramme de shrinkthatfootprint.com. Le premier groupe comprend États-Unis, Canada, Australie et Nouvelle-Zélande. L’unité est le kilogramme de CO₂ équivalent par personne. Les segments distinguent agriculture, opérations de production et déforestation.
+**Document 4** · Histogramme de shrinkthatfootprint.com. Le premier groupe comprend États-Unis, Canada, Australie et Nouvelle-Zélande. L’unité est le kilogramme de CO₂ équivalent par personne. La première barre approche 360 dans cette unité. Les segments distinguent agriculture, opérations de production et déforestation.
 
 **Document 5** · National Geographic, octobre 2014. Une famille sourit au milieu de l’équivalent de son gaspillage annuel. Le contraste entre l’attitude ordinaire et le volume cumulé rend perceptible ce que masque chaque petit reste.
 
@@ -70,7 +72,7 @@ Distinguer l’accès à la nourriture, qui dépend du revenu, et les pertes mat
 
 A family smiling behind a year's worth of discarded food makes an arresting photograph. Its impact depends on a habit that is harder to photograph. A little waste at the end of each meal rarely seems to amount to very much. Meanwhile, for millions of American households, putting the next meal on the table remains uncertain. The two experiences coexist in a food system that produces abundance but distributes both its benefits and its environmental costs unevenly.
 
-The Department of Agriculture found that 14.3 percent of households experienced food insecurity in 2013, a modest decline from 2011. Recovery from the recession had not made groceries affordable for everyone. Rising prices absorbed part of the benefit of better employment, and some parents protected their children by eating less themselves. Federal assistance, including food stamps, reached many of the households surveyed. Recovering edible surplus could complement that support. It would hardly follow, however, that throwing out less in an affluent home automatically puts more food within a poorer family's reach.
+The Department of Agriculture found that 14.3 percent of households experienced food insecurity in 2013, a modest decline from 2011. Recovery from the recession had not made groceries affordable for everyone. Food prices rising relative to other prices helped explain why better employment figures had not translated into equivalent gains at the table, and some parents protected their children by eating less themselves. Federal assistance, including food stamps, reached many of the households surveyed. Recovering edible surplus could complement that support. It would hardly follow, however, that throwing out less in an affluent home automatically puts more food within a poorer family's reach.
 
 Waste has a rationale at several points along the supply chain. Growers plant extra to meet contracts, shops fear losing customers to an empty shelf, and discounting surplus can undercut sales at the regular price. In the kitchen, uncertainty about storage and freshness encourages people to discard what they bought. The family portrait makes the cumulative scale visible. A regional comparison supplies another measure. The group comprising the United States, Canada, Australia and New Zealand has the highest carbon footprint per person associated with consumer food waste. Agriculture and deforestation account for much of that burden. Food in the bin carries the environmental cost of producing it in the first place.
 
@@ -78,7 +80,7 @@ Different incentives can bring prevention and redistribution within reach. Resta
 
 The challenge, then, is to connect changes that operate on different scales. Learning to use leftovers or interpret freshness labels gives consumers room to act, while changing purchasing practices can prevent losses before food reaches a household. Neither measure settles the question of income that confronts a family unable to afford groceries. Taken together with public assistance and organized donations, however, they open up more than one response to the uncomfortable contrast captured by the photograph.
 
-**(462 words, title included)**
+**(474 words, title included)**
 
 ## Arabe
 
@@ -108,7 +110,7 @@ Organiser les cas par mécanisme. Comparer d’abord les effets de l’insécuri
 
 في الجزائر يخشى العاملون في سياحة الصحراء أن تؤدي أخبار مقتل رهينة فرنسي إلى عزوف الزوار عن الجنوب كله. فالمسافر الأجنبي قد لا يميز بين المنطقة التي وقع فيها الاعتداء والمسالك التي ينتظر فيها المرشدون زبائنهم. وفي لبنان أثرت الحرب في سورية في بلد مجاور اعتاد استقبال المصطافين العرب. ويصف العاملون في المطاعم والفنادق تراجع النشاط مقارنة بمواسم سابقة، مع أن بعض المؤشرات الرسمية توحي ببداية انتعاش. ولا يكفي تحسن الأرقام العامة لإعادة الزبائن إلى كل مطعم أو لتعويض مؤسسة اضطرت إلى إغلاق أبوابها. كما أن الوجهات الأوروبية التي تقدم عروضا منافسة تستفيد بدورها من تردد المسافرين.
 
-وتوضح الأرقام التونسية ضرورة التمييز بين وجوه الانتعاش المختلفة. ففي الأشهر التسعة الأولى من عام ألفين وأربعة عشر زادت المداخيل السياحية بأكثر من اثني عشر في المئة قياسا إلى الفترة نفسها من السنة السابقة. لكن عدد الوافدين لم يزد إلا زيادة طفيفة، وتراجع عدد الليالي المقضاة قليلا. بل ظل عدد الليالي أقل مما كان عليه في الفترة نفسها قبل أربع سنوات. فالتعافي الذي يظهر في الإيرادات لا يعني بالضرورة أن الفنادق استعادت نشاطها السابق أو أن الزوار يمكثون مدة أطول.
+وتوضح الأرقام التونسية ضرورة التمييز بين وجوه الانتعاش المختلفة. ففي الأشهر التسعة الأولى من عام ألفين وأربعة عشر زادت المداخيل السياحية بأكثر من اثني عشر في المئة قياسا إلى الفترة نفسها من السنة السابقة. لكن عدد الوافدين لم يزد إلا زيادة طفيفة، وتراجع عدد الليالي المقضاة قليلا. بل ظل عدد الليالي أقل مما كان عليه في الفترة نفسها من سنة ألفين وعشر بنحو سبعة عشر في المئة. فالتعافي الذي يظهر في الإيرادات لا يعني بالضرورة أن الفنادق استعادت نشاطها السابق أو أن الزوار يمكثون مدة أطول.
 
 لهذا تتجه الأنظار إلى زوار أقرب جغرافيا. وتسعى بلدان مجلس التعاون إلى تنمية السفر في ما بينها والتعريف بمواقعها وتراثها، ولا سيما لدى الشباب الذين قد يعرفون وجهات بعيدة أكثر مما يعرفون تاريخ المنطقة. ويتيح التعاون بين الهيئات المعنية عرض فرص متعددة على المسافر. أما في لبنان فتتعلق الآمال أيضا بتيسير الوصول وتشجيع القادمين من البلدان العربية على الرجوع. وتختلف نقطة الانطلاق هنا عن المبادرة الخليجية، إذ تحاول مؤسسات قائمة أن تستعيد جمهورا كان يسهم فعلا في استمرار نشاطها.
 
@@ -116,7 +118,7 @@ Organiser les cas par mécanisme. Comparer d’abord les effets de l’insécuri
 
 وهكذا تتفاوت سبل مواجهة الأزمة بتفاوت أسبابها. فمعالجة مخاوف المسافر الخارجي تخدم بلدان المقصد، لكن توسيع قاعدة الزوار يقتضي أيضا معرفة من يستطيع السفر فعلا وما الذي يطلبه من الرحلة. ويصبح استثمار التراث المحلي وتيسير الدخول وتوفير خيارات تناسب الدخول المختلفة أجدى حين يقاس نجاحها بعدد الزوار ومدة إقامتهم وما يعود على العاملين، إلى جانب الإيرادات التي تسجلها الوزارة.
 
-**(460 كلمة، بما فيها العنوان)**
+**(466 كلمة، بما فيها العنوان)**
 
 ## Espagnol
 
