@@ -692,6 +692,7 @@
 | 2017 | BEL | BL | Géographie | [md](2017/bel/bel_bl_geographie_2017/brut.md) | [md](2017/bel/bel_bl_geographie_2017/guide.md) |
 | 2017 | BEL | BL | Histoire contemporaine | [md](2017/bel/bel_bl_histoire-contemporaine_2017/brut.md) | [md](2017/bel/bel_bl_histoire-contemporaine_2017/guide.md) |
 | 2017 | BEL | BL | Philosophie | [md](2017/bel/bel_bl_philosophie_2017/brut.md) | [md](2017/bel/bel_bl_philosophie_2017/guide.md) |
+| 2025 | BEL | BL | Économie (oral commun) — Partage de la valeur ajoutée | [md](2025/bel/bel_bl_economie-oral-commun-partage-de-la-valeur-ajoutee_2025/brut.md) | [md](2025/bel/bel_bl_economie-oral-commun-partage-de-la-valeur-ajoutee_2025/guide.md) |
 | 2026 | BEL | BL | Économie (oral) | [md](2026/bel/bel_bl_economie-oral_2026/brut.md) | [md](2026/bel/bel_bl_economie-oral_2026/guide.md) |
 | 2026 | BEL | BL | Économie | [md](2026/bel/bel_bl_economie_2026/brut.md) | [md](2026/bel/bel_bl_economie_2026/guide.md) |
 | 2026 | BEL | BL | Espagnol | [md](2026/bel/bel_bl_espagnol_2026/brut.md) | [md](2026/bel/bel_bl_espagnol_2026/guide.md) |
