@@ -1,0 +1,177 @@
+{
+  "slug": "ens-de-lyon_pc_physique-chimie_2011",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "PC",
+    "matiere": "Physique-chimie",
+    "annee": 2011
+  },
+  "intitule": "Étude du phénomène de transition de spin",
+  "questions": 77,
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "physique_psi_interens",
+      "session": "physique_psi_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": false,
+      "perimetre": "Lecture du rapport ENS de Lyon sur les bilans mécaniques, le potentiel de mélange, les spectres de RMN et IR, la coordination et les unités molaires."
+    },
+    {
+      "phase": "redaction",
+      "agent": "physique_psi_interens",
+      "session": "physique_psi_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Résolution des 77 questions énumérées et réalisation de 8 figures."
+    }
+  ],
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2011/2011%20Physique_Chimie_PC.pdf",
+    "sujet_sha256": "38c6b22506faa9e80f8a1a105bb615daee1610cc340f00bb2d83fadf6086c293",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2011/rapport_ecrit_pc_lyon_pc2011.pdf",
+    "rapport_sha256": "3e50278b2a45896cc8fa771e696c99ba9065fdb269832561e4928abc6c3040e8",
+    "garde": "L · 5 heures",
+    "provenance_sujet": "PDF de la banque des écoles."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I.C.1–5",
+      "fichier": "figures/fourche.svg",
+      "legende": "Géométrie du potentiel réduit et branches d’équilibre du cerceau. Le segment central pointillé est instable."
+    },
+    {
+      "numero": 2,
+      "question": "I.E.b.1–3",
+      "fichier": "figures/force.svg",
+      "legende": "Pour une force positive, les trois intersections correspondent à deux minima inégaux séparés par une barrière."
+    },
+    {
+      "numero": 3,
+      "question": "I.C.5, I.D.3, I.E.c.4",
+      "fichier": "figures/reponses.svg",
+      "legende": "Réponse en énergie à angle fixé, période des petites oscillations et susceptibilité sur les branches stables."
+    },
+    {
+      "numero": 4,
+      "question": "II.C.6–9, II.D.5–6",
+      "fichier": "figures/spin.svg",
+      "legende": "À gauche, populations du modèle idéal et anomalie calorifique de conversion. À droite, cycle calculé du modèle coopératif."
+    },
+    {
+      "numero": 5,
+      "question": "III.A.1–2",
+      "fichier": "figures/bipy.svg",
+      "legende": "Les huit hydrogènes de la 2,2′-bipyridine. Les contours intérieurs indiquent les cycles aromatiques."
+    },
+    {
+      "numero": 6,
+      "question": "III.B.1.b–i",
+      "fichier": "figures/dialdehyde.svg",
+      "legende": "Connectivité du dialdéhyde 8. Les éthers sont en position 3 sur chaque noyau et les deux phénols en ortho du formyle."
+    },
+    {
+      "numero": 7,
+      "question": "III.D.2–3",
+      "fichier": "figures/orbitales.svg",
+      "legende": "Remplissage des orbitales moléculaires de valence du dioxygène dans son état fondamental."
+    },
+    {
+      "numero": 8,
+      "question": "III.D.4",
+      "fichier": "figures/heme.svg",
+      "legende": "Sphère de coordination simplifiée de l’hème avant et après fixation du dioxygène. Les quatre azotes équatoriaux appartiennent à la porphyrine."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.A.1",
+      "I.A.2",
+      "I.A.3",
+      "I.A.4",
+      "I.B.1",
+      "I.B.2",
+      "I.B.3",
+      "I.B.4",
+      "I.B.5",
+      "I.B.6",
+      "I.B.7",
+      "I.C.1",
+      "I.C.2",
+      "I.C.3",
+      "I.C.4",
+      "I.C.5",
+      "I.D.1",
+      "I.D.2",
+      "I.D.3",
+      "I.E.a.1",
+      "I.E.a.2",
+      "I.E.b.1",
+      "I.E.b.2",
+      "I.E.b.3",
+      "I.E.c.1",
+      "I.E.c.2",
+      "I.E.c.3",
+      "I.E.c.4",
+      "II.A.1",
+      "II.A.2",
+      "II.A.3",
+      "II.A.4",
+      "II.A.5",
+      "II.A.6",
+      "II.B.1",
+      "II.B.2",
+      "II.B.3",
+      "II.C.1",
+      "II.C.2",
+      "II.C.3",
+      "II.C.4",
+      "II.C.5",
+      "II.C.6",
+      "II.C.7",
+      "II.C.8",
+      "II.C.9",
+      "II.C.10",
+      "II.D.1",
+      "II.D.2",
+      "II.D.3",
+      "II.D.4",
+      "II.D.5",
+      "II.D.6",
+      "III.A.1",
+      "III.A.2",
+      "III.B.1.a",
+      "III.B.1.b",
+      "III.B.1.c",
+      "III.B.1.d",
+      "III.B.1.e",
+      "III.B.1.f",
+      "III.B.1.g",
+      "III.B.1.h",
+      "III.B.1.i",
+      "III.B.1.j",
+      "III.B.1.k",
+      "III.B.2",
+      "III.C.1",
+      "III.C.2",
+      "III.C.3",
+      "III.D.1",
+      "III.D.2",
+      "III.D.3",
+      "III.D.4",
+      "IV.1",
+      "IV.2",
+      "IV.3"
+    ]
+  }
+}
