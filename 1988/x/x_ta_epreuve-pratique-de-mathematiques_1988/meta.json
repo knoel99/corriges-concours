@@ -1,0 +1,255 @@
+{
+  "slug": "x_ta_epreuve-pratique-de-mathematiques_1988",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "TA",
+    "annee": 1988,
+    "matiere": "Épreuve pratique de mathématiques",
+    "modalite": "pratique"
+  },
+  "intitule": "Épreuve pratique de mathématiques · concours commun Mines-Ponts · X option T.A.",
+  "questions": 28,
+  "duree_heures": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-317ce6bbf6a5b1419fe8",
+    "sujet_sha256": "838c6fa20fdf86430c2258d92c0e9034a7f4ad1636350556a435eeb964339ebc",
+    "notice_ups": "m88mip",
+    "notice_officielle": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000697782",
+    "precisions": "Épreuve pratique distincte des compositions numérotées. Le bandeau mentionne l’X (option T.A.) et la garde énumère M, P′ et T.A."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-317ce6bbf6a5b1419fe8",
+      "sha256": "838c6fa20fdf86430c2258d92c0e9034a7f4ad1636350556a435eeb964339ebc",
+      "pages": 2,
+      "rendu_page_sha256": [
+        "e6128c5d3fb359b8a2a1ac61e20c0c2f26bd2c3b87d0ff9df4634b1c7fce6ef5",
+        "5f4c1d9a578695af9e936a76f2bdd697d9858ea651f4449f5f3951e97556224e"
+      ]
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "x_ta_pratiques_1985_1988",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Deux éditions complètes, 28 questions et sous-questions, indications et deux figures."
+    },
+    {
+      "phase": "revision",
+      "session": "x_ta_pratiques_1985_1988",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Contrôle des restes de Taylor sur les deux intervalles et du reste asymptotique optimal en 30."
+    }
+  ],
+  "figures": [
+    {
+      "question": "II.4",
+      "numero": 1,
+      "fichier": "figures/variation-g.svg",
+      "legende": "Figure 1 — La fonction passe par zéro en 1, atteint son maximum un peu après 2,3 puis décroît vers zéro."
+    },
+    {
+      "question": "II.5.d",
+      "numero": 2,
+      "fichier": "figures/reste-optimal.svg",
+      "legende": "Figure 2 — Pour une abscisse de 30, le reste positif est minimal à l’indice 8."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2.a",
+      "I.2.b",
+      "I.3.a",
+      "I.3.b",
+      "I.3.c",
+      "I.4.a",
+      "I.4.b",
+      "I.4.c",
+      "I.5.a",
+      "I.5.b",
+      "II.1.a",
+      "II.1.b",
+      "II.1.c",
+      "II.1.d",
+      "II.2.a",
+      "II.2.b",
+      "II.2.c",
+      "II.3.a",
+      "II.3.b",
+      "II.3.c",
+      "II.3.d",
+      "II.4",
+      "II.5.a",
+      "II.5.b",
+      "II.5.c",
+      "II.5.d",
+      "II.5.e"
+    ],
+    "repere_par_question": [
+      {
+        "question": "I.1",
+        "page_pdf": 1,
+        "page_imprimee": 136
+      },
+      {
+        "question": "I.2.a",
+        "page_pdf": 1,
+        "page_imprimee": 136
+      },
+      {
+        "question": "I.2.b",
+        "page_pdf": 1,
+        "page_imprimee": 136
+      },
+      {
+        "question": "I.3.a",
+        "page_pdf": 1,
+        "page_imprimee": 136
+      },
+      {
+        "question": "I.3.b",
+        "page_pdf": 1,
+        "page_imprimee": 136
+      },
+      {
+        "question": "I.3.c",
+        "page_pdf": 1,
+        "page_imprimee": 136
+      },
+      {
+        "question": "I.4.a",
+        "page_pdf": 1,
+        "page_imprimee": 136
+      },
+      {
+        "question": "I.4.b",
+        "page_pdf": 1,
+        "page_imprimee": 136
+      },
+      {
+        "question": "I.4.c",
+        "page_pdf": 1,
+        "page_imprimee": 136
+      },
+      {
+        "question": "I.5.a",
+        "page_pdf": 1,
+        "page_imprimee": 136
+      },
+      {
+        "question": "I.5.b",
+        "page_pdf": 1,
+        "page_imprimee": 136
+      },
+      {
+        "question": "II.1.a",
+        "page_pdf": 2,
+        "page_imprimee": 137
+      },
+      {
+        "question": "II.1.b",
+        "page_pdf": 2,
+        "page_imprimee": 137
+      },
+      {
+        "question": "II.1.c",
+        "page_pdf": 2,
+        "page_imprimee": 137
+      },
+      {
+        "question": "II.1.d",
+        "page_pdf": 2,
+        "page_imprimee": 137
+      },
+      {
+        "question": "II.2.a",
+        "page_pdf": 2,
+        "page_imprimee": 137
+      },
+      {
+        "question": "II.2.b",
+        "page_pdf": 2,
+        "page_imprimee": 137
+      },
+      {
+        "question": "II.2.c",
+        "page_pdf": 2,
+        "page_imprimee": 137
+      },
+      {
+        "question": "II.3.a",
+        "page_pdf": 2,
+        "page_imprimee": 137
+      },
+      {
+        "question": "II.3.b",
+        "page_pdf": 2,
+        "page_imprimee": 137
+      },
+      {
+        "question": "II.3.c",
+        "page_pdf": 2,
+        "page_imprimee": 137
+      },
+      {
+        "question": "II.3.d",
+        "page_pdf": 2,
+        "page_imprimee": 137
+      },
+      {
+        "question": "II.4",
+        "page_pdf": 2,
+        "page_imprimee": 137
+      },
+      {
+        "question": "II.5.a",
+        "page_pdf": 2,
+        "page_imprimee": 137
+      },
+      {
+        "question": "II.5.b",
+        "page_pdf": 2,
+        "page_imprimee": 137
+      },
+      {
+        "question": "II.5.c",
+        "page_pdf": 2,
+        "page_imprimee": 137
+      },
+      {
+        "question": "II.5.d",
+        "page_pdf": 2,
+        "page_imprimee": 137
+      },
+      {
+        "question": "II.5.e",
+        "page_pdf": 2,
+        "page_imprimee": 137
+      }
+    ]
+  }
+}

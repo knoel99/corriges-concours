@@ -2188,6 +2188,7 @@
 | 1985 | X | T.A. | Épreuve pratique de mathématiques (concours commun Mines-Ponts) | [md](1985/x/x_ta_epreuve-pratique-de-mathematiques_1985/brut.md) | [md](1985/x/x_ta_epreuve-pratique-de-mathematiques_1985/guide.md) |
 | 1986 | X | T.A. | Épreuve pratique de mathématiques (concours commun Mines-Ponts) | [md](1986/x/x_ta_epreuve-pratique-de-mathematiques_1986/brut.md) | [md](1986/x/x_ta_epreuve-pratique-de-mathematiques_1986/guide.md) |
 | 1987 | X | T.A. | Épreuve pratique de mathématiques (concours commun Mines-Ponts) | [md](1987/x/x_ta_epreuve-pratique-de-mathematiques_1987/brut.md) | [md](1987/x/x_ta_epreuve-pratique-de-mathematiques_1987/guide.md) |
+| 1988 | X | T.A. | Épreuve pratique de mathématiques (concours commun Mines-Ponts) | [md](1988/x/x_ta_epreuve-pratique-de-mathematiques_1988/brut.md) | [md](1988/x/x_ta_epreuve-pratique-de-mathematiques_1988/guide.md) |
 | 1989 | X | P prime | Deuxième composition de mathématiques | [md](1989/x/x_p-prime_deuxieme-composition-de-mathematiques_1989/brut.md) | [md](1989/x/x_p-prime_deuxieme-composition-de-mathematiques_1989/guide.md) |
 | 1985 | X | M′ | Première composition de mathématiques | [md](1985/x/x_m-prime_premiere-composition-de-mathematiques_1985/brut.md) | [md](1985/x/x_m-prime_premiere-composition-de-mathematiques_1985/guide.md) |
 | 1985 | X | P′ | Deuxième composition de mathématiques | [md](1985/x/x_p-prime_deuxieme-composition-de-mathematiques_1985/brut.md) | [md](1985/x/x_p-prime_deuxieme-composition-de-mathematiques_1985/guide.md) |
