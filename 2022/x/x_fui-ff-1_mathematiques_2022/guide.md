@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le concours 2022 désigne cette composition comme sa session d’automne, tenue le 18 septembre 2021. On note $r_n=p_n/q_n$ la réduite d’ordre $n$.
 
 ## 1. Convergence des fractions continues
@@ -33,7 +35,7 @@ La matrice $M(a)=\left(\begin{smallmatrix}a&1\\1&0\end{smallmatrix}\right)$ repr
 
 #### Solution
 
-Chaque facteur a déterminant $-1$, d’où $p_nq_{n-1}-p_{n-1}q_n=(-1)^{n+1}$. Diviser par $q_n q_{n-1}>0$ donne la différence voulue.
+Chaque facteur a déterminant $-1$, d’où $p_nq_{n-1}-p_{n-1}q_n=(-1)^{n+1}$. Pour $n\ge1$, on peut diviser par $q_n q_{n-1}>0$. Ainsi $r_n-r_{n-1}=(-1)^{n+1}/(q_nq_{n-1})$.
 
 ### Question 4
 
@@ -76,13 +78,13 @@ Toutes les fractions tronquées à un chiffre de moins tendent aussi vers $x$, e
 ### Question 8
 
 > [!INDICATION]
-> Tracer chaque branche sur laquelle la partie entière reste constante.
+> Découper $]0,1[$ aux inverses des entiers. Pour chaque branche, repérer les extrémités où la formule est valable.
 
 #### Solution
 
-Pour $k\ge1$ et $1/(k+1)<x\le1/k$, on a $T(x)=1/x-k$. Chaque branche est décroissante, part de la limite $1$ au bord gauche ouvert et arrive à $0$ au bord droit. Si le domaine est $]0,1[$, le point $x=1$ est à omettre. La restriction aux irrationnels conserve les valeurs de cette courbe aux seules abscisses irrationnelles.
+Sur $0<x<1$, le graphe de la partie fractionnaire de $1/x$ se décrit branche par branche. Pour $1/(k+1)<x\le1/k$, on a $T(x)=1/x-k$. La branche décroît de la limite $1$ au bord gauche à $0$ au bord droit. Ce zéro est atteint en $1/k$ pour $k\ge2$. Sur la première branche, $x$ tend vers $1$ sans l’atteindre. La figure représente la formule sur $]0,1[$. Pour le développement d’un irrationnel, on en conserve les seules abscisses irrationnelles.
 
-![Figure 1 — Les branches décroissent de 1 exclu à 0 inclus. Elles s’accumulent vers zéro.](figures/transformation-gauss.svg)
+![Figure 1 — Les cercles vides marquent les extrémités exclues. Les points pleins sont les zéros en 1/k pour k au moins égal à 2.](figures/transformation-gauss.svg)
 
 ### Question 9
 
@@ -174,7 +176,7 @@ Pour $m=a+b\ge2$, $m^2<m^2+4<(m+1)^2$ puisque $2m+1\ge5$. Aucun entier ne peut a
 
 #### Solution
 
-Le discriminant est $(a+b)^2+4>0$. Son carré radical est irrationnel par 15a (la racine rationnelle d’un entier est entière). Les racines $(a-b\pm\sqrt{(a+b)^2+4})/2$ sont irrationnelles de signes opposés, car leur produit vaut $-ab-1<0$. La positive est celle du signe $+$.
+Le discriminant est $(a+b)^2+4>0$. Sa racine carrée est irrationnelle par 15a (la racine rationnelle d’un entier est entière). Les racines $(a-b\pm\sqrt{(a+b)^2+4})/2$ sont irrationnelles de signes opposés, car leur produit vaut $-ab-1<0$. La positive est celle du signe $+$.
 
 ### Question 15c
 
