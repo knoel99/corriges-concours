@@ -40,5 +40,87 @@
       "modifications": true,
       "perimetre": "Rédaction originale des huit questions et de leurs subdivisions, incluant les deux variantes Caml et Pascal du sujet. Lecture de la garde et des sept pages, confrontation avec le corrigé historique de Martine Lannaud. Vérification des deux implémentations sur 1 798 couples par langage et cinq motifs invalides, dont chaînes vides, options imbriquées, chevauchements et distance d’édition. Deux schémas originaux."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "pages_des_questions": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 5
+    },
+    "origine_attestation": {
+      "commit_du_journal": "e898e232a6ab80120fa8a1f4dfafaf6c6eeedef5",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction originale des huit questions et de leurs subdivisions, incluant les deux variantes Caml et Pascal du sujet. Lecture de la garde et des sept pages, confrontation avec le corrigé historique de Martine Lannaud. Vérification des deux implémentations sur 1 798 couples par langage et cinq motifs invalides, dont chaînes vides, options imbriquées, chevauchements et distance d’édition. Deux schémas originaux.",
+      "sha256_sujet_controle": "ccf431d7fc64914a3c3bddf7ffbf0c3322ba56e4afb0df88ff774d33ee7076ba"
+    },
+    "controle_programmes": {
+      "brut": "1798 couples par langage, plus cinq motifs invalides ; calcul indépendant de la distance et des factorisations, incluant chaînes vides et occurrences chevauchantes.",
+      "guide": "1798 couples par langage, plus cinq motifs invalides ; calcul indépendant de la distance et des factorisations, incluant chaînes vides et occurrences chevauchantes."
+    },
+    "precision": "Les réponses ont été pointées sur les feuillets et retrouvées dans la rédaction signée. Les exemples exécutables de chaque édition ont été soumis à nouveau aux contrôles. Le brut et le guidé donnent les deux variantes Caml et Pascal. Le corrigé historique est identifié dans les sources.",
+    "subdivisions_du_sujet": {
+      "1": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "2": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "4": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "5": [
+        "a",
+        "b"
+      ],
+      "6": [
+        "a",
+        "b"
+      ],
+      "7": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "8": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ]
+    },
+    "pages_de_la_variante_pascal": {
+      "4": 6,
+      "5": 6,
+      "6": 6,
+      "7": 7,
+      "8": 7
+    }
+  }
 }
