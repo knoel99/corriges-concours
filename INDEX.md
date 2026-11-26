@@ -129,6 +129,7 @@
 | 2015 | Banque PT | PT | Français B | [md](2015/banque-pt/banque-pt_pt_francais-b_2015/brut.md) | [md](2015/banque-pt/banque-pt_pt_francais-b_2015/guide.md) |
 | 2016 | Banque PT | PT | Français B | [md](2016/banque-pt/banque-pt_pt_francais-b_2016/brut.md) | [md](2016/banque-pt/banque-pt_pt_francais-b_2016/guide.md) |
 | 2013 | Banque PT | PT | Français B | [md](2013/banque-pt/banque-pt_pt_francais-b_2013/brut.md) | [md](2013/banque-pt/banque-pt_pt_francais-b_2013/guide.md) |
+| 2014 | Banque PT | PT | Français B | [md](2014/banque-pt/banque-pt_pt_francais-b_2014/brut.md) | [md](2014/banque-pt/banque-pt_pt_francais-b_2014/guide.md) |
 | 2026 | Banque PT | PT | Français B | [md](2026/banque-pt/banque-pt_pt_francais-b_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_francais-b_2026/guide.md) |
 | 2023 | Banque PT | PT | Informatique et modélisation | [md](2023/banque-pt/banque-pt_pt_informatique-et-modelisation_2023/brut.md) | [md](2023/banque-pt/banque-pt_pt_informatique-et-modelisation_2023/guide.md) |
 | 2023 | Banque PT | PT | Physique A | [md](2023/banque-pt/banque-pt_pt_physique-a_2023/brut.md) | [md](2023/banque-pt/banque-pt_pt_physique-a_2023/guide.md) |
