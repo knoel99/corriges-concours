@@ -1,0 +1,76 @@
+{
+  "slug": "banque-pt_pt_francais-a_2005",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français A",
+    "annee": 2005
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/IMG/pdf/francais_a_2005.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2005/rapport_fra_a_ecrit_2005.pdf",
+    "programme_officiel": "https://www.education.gouv.fr/bo/2004/23/MENS0400963A.htm",
+    "notice": "https://www.banquept.fr/documents/livret/2005/Livret_Rose_2005_1_2.pdf#page=12",
+    "sujet_sha256": "9495a4011fd0c691f110e358ac62858c1e9cb61e8ebab4d70c406d3270389526",
+    "rapport_jury_sha256": "849e78919e6b94cf11a2bf03c0b1c1f8fe403c9ee89f35164818f6d69b139879",
+    "programme_officiel_sha256": "40625dc64cfdf72b38f9d0f3696e63597931d91ae77a7867eea703dbe60fb5ad",
+    "notice_sha256": "6cd807006fd8f343e68c410bc382b6f648b5d46fb18d2140680176d4eb4efc8b",
+    "oeuvres_au_programme": [
+      "Étienne Bonnot de Condillac, Traité des animaux",
+      "Jean de La Fontaine, Fables, livres VII à XI",
+      "Franz Kafka, La Métamorphose (traduction de Bernard Lortholary)"
+    ],
+    "theme": "L’animal et l’homme",
+    "admissibilite_admission": "École polytechnique, admissibilité, coefficient 4",
+    "pages_rapport": "Rapport propre à Français A, 6 pages. Pages PDF 3 et 4 pour les sens de nature, le jeu sur « dénaturé » et les limites du schéma opposant continuité et dualisme."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "Que veut dire « faire un » ou « faire deux » ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture du feuillet et du rapport propre à l’épreuve. Discussion du jeu entre « un », « deux » et « dénaturé » à partir des trois œuvres et de Montaigne en lecture personnelle."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 1,
+        "perimetre": "L’étude que vous avez faite des œuvres au programme (et d’autres textes sur le thème L’Animal et l’Homme) vous permet-elle de partager cette assertion ?",
+        "points": 20
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}
