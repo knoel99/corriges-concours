@@ -211,6 +211,8 @@ def verifier_paire(dossier: Path, *, integralite: bool = False) -> tuple[str, se
 def fiches_site(slug: str) -> tuple[str, ...]:
     """Adresses publiques de chacune des voies d’une épreuve commune."""
     banque, voie, epreuve = slug.split("_", 2)
+    if voie == "m-prime-p-prime":
+        return tuple(f"{banque}_{filiere}_{epreuve}" for filiere in ("m-prime", "p-prime"))
     filieres = voie.split("-")
     if len(filieres) > 1 and set(filieres) <= {
         "mp",

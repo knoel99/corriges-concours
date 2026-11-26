@@ -99,6 +99,10 @@ def test_pas_de_relecture_attribuee_par_inference(modification):
 
 
 def test_lien_vers_fiche_simple_ou_filiere_administrative():
+    assert couverture.fiches_site("x_m-prime-p-prime_deuxieme-composition-de-mathematiques_1990") == (
+        "x_m-prime_deuxieme-composition-de-mathematiques_1990",
+        "x_p-prime_deuxieme-composition-de-mathematiques_1990",
+    )
     assert (
         couverture.fiche_site("ccinp_mp-mpi-pc-psi-tpc-tsi_anglais_2026")
         == "ccinp_mp_anglais_2026"
