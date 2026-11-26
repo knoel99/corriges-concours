@@ -4,7 +4,9 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Le cahier C1792 de quatre heures comporte trois exercices indépendants. La somme des rectangles s’arrête à l’indice $N-1$, tandis que l’urne entièrement rouge, de numéro $N$, participe aux observations.
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+La composition C1792 de quatre heures occupe les pages 15 à 19 du recueil. La pagination interne va de 1 à 5. Les trois exercices sont indépendants. La somme des rectangles s’arrête à l’indice $N-1$, tandis que l’urne entièrement rouge, de numéro $N$, participe aux observations.
 
 ## Exercice 1. Tirages successifs dans une urne inconnue
 
@@ -292,7 +294,7 @@ Posons $a_n=4^{-n}$ pour $n\ge1$. Les trois intervalles semi-ouverts $[a_n,2a_n[
 
 #### Solution
 
-Sur $[1/16,1/4]$, relier successivement $(1/16,0),(2/16,0),(3/16,1),(4/16,0)$. Sur $[1/4,1]$, relier $(1/4,0),(1/2,0),(3/4,1),(1,0)$. Enfin prolonger horizontalement jusqu’à $3/2$. La figure respecte le rapport d’unités indiqué, 10 cm en abscisse pour 5 cm en ordonnée.
+Sur $[1/16,1/4]$, relier successivement $(1/16,0),(2/16,0),(3/16,1),(4/16,0)$. Sur $[1/4,1]$, relier $(1/4,0),(1/2,0),(3/4,1),(1,0)$. Enfin prolonger horizontalement jusqu’à $3/2$. Le rapport des unités du tracé est de deux à un. Pour le reproduire sur la copie à l’échelle demandée, placer les sommets des deux dents à 1,875 cm et 7,5 cm à droite de l’origine, tous deux à 5 cm de hauteur. Le point final est à 15 cm de l’origine.
 
 ![Figure 1 — Les triangles ont la même hauteur et des bases différentes. Les segments horizontaux correspondent aux intervalles où h vaut zéro.](figures/deux-dents-et-leurs-aires.svg)
 
@@ -322,7 +324,7 @@ $$\int_{4^{-n}}^1 h(x)\,dx=\sum_{j=1}^n4^{-j}=\frac{1-4^{-n}}3.$$
 
 #### Solution
 
-Comme $0\le h\le1$, la contribution possible sur $[0,4^{-n}]$ est au plus $4^{-n}$. Le passage à la limite dans la troisième intégrale donne $\int_0^1h(x)\,dx=1/3$. L’existence de l’intégrale usuelle se justifie aussi à la question suivante.
+Pour $0<\delta<4^{-n}$, on a $0\le\int_\delta^{4^{-n}} h(x)\,dx\le4^{-n}-\delta$ puisque $0\le h\le1$ et que $h$ est continue loin de zéro. Le critère de Cauchy donne l’existence de l’intégrale à la borne zéro. En faisant $n\to\infty$ dans la troisième intégrale de 3.2.d, on obtient $\int_0^1h(x)\,dx=1/3$. La question suivante établit aussi l’intégrabilité au sens de Riemann sur le segment fermé.
 
 ### Question 3.2.f
 
