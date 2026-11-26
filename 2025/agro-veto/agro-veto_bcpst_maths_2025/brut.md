@@ -4,7 +4,11 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le sujet comporte trois parties. Sa numérotation imprimée place la question 9 puis les questions 9.a à 9.d à la fin de la première partie. Le rapport du jury numérote ce second groupe 10 et décale ensuite les numéros d’une unité. Les repères ci-dessous suivent le sujet.
+
+Les valeurs propres de la dernière partie se calculent dans les deux blocs associés au renversement des coordonnées. [Sujet officiel](https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/bcpst_0425_sp.pdf) · [Rapport du jury](https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/rapport_bcpst_methodes_de_calcul_et_raisonnement_2025.pdf)
 
 ## I. Autour d’une intégrale
 
@@ -12,7 +16,7 @@ Le sujet comporte trois parties. Sa numérotation imprimée place la question 9 
 
 Les deux graphes passent par $(0,0)$ et $(1,0)$. La parabole $f_{1,1}(x)=x-x^2$ a pour dérivée $1-2x$. Elle croît jusqu’au sommet $(1/2,1/4)$ puis décroît. Pour $f_{2,1}(x)=x^2-x^3$, la dérivée $x(2-3x)$ est positive sur $]0,2/3[$ et négative sur $]2/3,1]$. Le maximum vaut $4/27$ en $2/3$. Les tangentes sont horizontales en $0$ et en $2/3$. Enfin $f_{2,1}(x)=x f_{1,1}(x)$ place la seconde courbe sous la première sur $]0,1[$.
 
-![Figure 1 — Les courbes se rejoignent aux extrémités. Les petits segments marquent les tangentes horizontales.](figures/deux-integrandes.svg)
+![Les courbes se rejoignent aux extrémités. Les petits segments marquent les tangentes horizontales.](figures/deux-integrandes.svg)
 
 ### Question 2
 
@@ -43,6 +47,8 @@ $$\forall\varepsilon>0,\quad\exists N\in\mathbb N,\quad\forall n\in\mathbb N,\qu
 
 Appliquons la question 6 au quotient de la question 5 avec $\ell=1/4$ et $\varepsilon=1/4$. Il existe $n_0$ tel que, pour tout $n\ge n_0$, le quotient est strictement inférieur à $1/4+1/4=1/2$. Cela donne en particulier l’inégalité large demandée.
 
+On peut aussi déterminer un rang explicite. Le quotient vaut $(n+1)/(4n+6)$, strictement inférieur à $1/4$ dès $n=0$. Ainsi $n_0=0$ convient si la suite est indexée à partir de zéro. La preuve par la définition de la limite explique pourquoi aucun calcul explicite du rang n’était nécessaire.
+
 ### Question 8
 
 À $n=n_0$, l’inégalité demandée est une égalité. Si $n\ge n_0$ et $I_{n,n}\le 2^{n_0}I_{n_0,n_0}/2^n$, la question 7 et la positivité de $I_{n,n}$ donnent
@@ -67,6 +73,8 @@ La question 9.a donne $(2n+1)\ln(2n/(2n+1))\to-1$. La continuité de l’exponen
 La formule intégrale donne $4^n I_{n,n}=4^n(n!)^2/((2n+1)(2n)!)$. Stirling appliqué à $n$ et à $2n$ fournit
 $$4^n I_{n,n}\sim\frac{4^n n^{2n}e^{-2n}2\pi n}{(2n+1)(2n)^{2n}e^{-2n}\sqrt{4\pi n}}=\frac{\sqrt{\pi n}}{2n+1}\sim\frac{\sqrt{\pi}}{2\sqrt n}.$$
 En appliquant directement Stirling à $2n+1$, la puissance $(2n/(2n+1))^{2n+1}$ a la limite obtenue à la question 9.b et compense le facteur $e$ issu des exponentielles.
+
+La formule peut être contrôlée en termes du coefficient binomial central. On a $4^n I_{n,n}=4^n/((2n+1)\binom{2n}{n})$. Le coefficient central est équivalent à $4^n/\sqrt{\pi n}$ par Stirling, ce qui redonne le facteur $\sqrt\pi/2$.
 
 ### Question 9.d
 
@@ -99,7 +107,7 @@ Une puissance d’exposant nul vaut ici $1$, y compris pour un intervalle de lon
 La différence des fonctions de répartition vaut $\mathbb P(x<X_{(k)}\le x+h)$. Si $i$ observations sont au plus égales à $x$ et $j$ supplémentaires au plus égales à $x+h$, l’événement équivaut à $i<k\le i+j$. Les couples d’effectifs décrivent des événements disjoints, avec $0\le i\le k-1$ et $k-i\le j\le n-i$. Par la question 13.a,
 $$F_{X_{(k)}}(x+h)-F_{X_{(k)}}(x)=\sum_{i=0}^{k-1}\sum_{j=k-i}^{n-i}\frac{n!x^i h^j(1-x-h)^{n-i-j}}{i!j!(n-i-j)!}.$$
 
-![Figure 2 — Compter séparément les observations au plus égales à x et celles de l’intervalle suivant.](figures/compter-les-rangs.svg)
+![Compter séparément les observations au plus égales à x et celles de l’intervalle suivant.](figures/compter-les-rangs.svg)
 
 ### Question 13.c
 
@@ -107,12 +115,16 @@ Fixons $0\le x<1$. Tous les termes de la somme sont divisibles par $h$ puisque $
 $$\frac{n!}{(k-1)!(n-k)!}x^{k-1}(1-x)^{n-k}=n\binom{n-1}{k-1}x^{k-1}(1-x)^{n-k}.$$
 Le texte admet que la fonction obtenue, prolongée par zéro hors de $[0,1]$, est une densité. La valeur choisie en un point isolé ne change pas la loi.
 
+Aux rangs extrêmes, la limite devient $n(1-x)^{n-1}$ pour $k=1$ et $nx^{n-1}$ pour $k=n$. Ce sont les dérivées des deux fonctions de répartition déjà obtenues en 12. Au rang général, on peut aussi compter les observations de $[0,x]$ selon une loi binomiale, puis dériver la somme de sa queue.
+
 ### Question 14
 
 La variable $X_{(k)}$ appartient presque sûrement à $[0,1]$, ce qui garantit l’existence de ses moments d’ordres 1 et 2. Écrivons $C=n!/((k-1)!(n-k)!)$. Alors
 $$\mathbb E(X_{(k)})=C I_{k,n-k}=\frac{k}{n+1},\qquad \mathbb E(X_{(k)}^2)=C I_{k+1,n-k}=\frac{k(k+1)}{(n+1)(n+2)}.$$
 En soustrayant le carré de l’espérance et en réduisant au même dénominateur, on obtient
 $$\operatorname{Var}(X_{(k)})=\frac{k((k+1)(n+1)-k(n+2))}{(n+1)^2(n+2)}=\frac{k(n+1-k)}{(n+1)^2(n+2)}.$$
+
+Au rang minimal, on obtient $\mathbb E(X_{(1)})=1/(n+1)$ et, au rang maximal, $\mathbb E(X_{(n)})=n/(n+1)$. Les deux variances coïncident, ce que confirme la symétrie de l’échantillon transformé par $x\mapsto1-x$.
 
 ## III. Matrices bisymétriques et application
 
@@ -161,3 +173,7 @@ $$U=\begin{pmatrix}10&5\\5&5\end{pmatrix},\qquad W=\begin{pmatrix}3&1\\1&2\end{p
 Les questions 20 et 21 ramènent le spectre de $V$ à la réunion de ceux de $U$ et $W$. Pour $U$, l’équation $(10-\lambda)(5-\lambda)-25=0$ devient $\lambda^2-15\lambda+25=0$, de discriminant $125$. Pour $W$, on obtient $(3-\lambda)(2-\lambda)-1=\lambda^2-5\lambda+5=0$, de discriminant $5$. Finalement,
 $$\operatorname{Sp}(V)=\left\{\frac{15-5\sqrt5}{2},\frac{15+5\sqrt5}{2},\frac{5-\sqrt5}{2},\frac{5+\sqrt5}{2}\right\}.$$
 Leur somme vaut $20$, comme la trace de $V$.
+
+Les déterminants des deux blocs valent $25$ et $5$, d’où $\det V=125$. La factorisation $(z^2-15z+25)(z^2-5z+5)$ donne pour coefficient de $z^3$ la valeur $-20$, opposée de la trace de $V$. Ces deux contrôles utilisent directement les invariants de la matrice.
+
+![Les nombres représentent V puis sa matrice dans les coordonnées du sujet. Les zéros hors des deux blocs séparent le calcul du spectre en deux problèmes de taille deux.](figures/covariance-par-blocs.svg)
