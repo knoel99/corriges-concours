@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Sujet officiel](https://www.ens-lyon.fr/sites/default/files/2025-09/251113.pdf#page=4) · [Rapport du jury](https://www.ens-lyon.fr/sites/default/files/2025-11/Latin%202025%20relu%20IM.pdf#page=2) · [Archives de la session](https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2025)
 
 Stace, Achilléide, I, 350–378 (référence donnée par le rapport). Écrit de spécialité de quatre heures. Sujet, page 4. Les vingt-neuf vers du feuillet, de Hanc tibi à ad alta cubilia ducunt. Les numéros des notes ci-dessous sont ceux du livre I.
@@ -24,11 +26,11 @@ Le récit de la cour se suspend quand surgissent les oiseaux d’Idalie. Ici la 
 
 ## Version française
 
-« Cette jeune fille que voici, ô roi, dit-elle, c’est la sœur de notre Achille. Ne vois-tu pas combien son visage a l’air farouche et comme elle soutient la comparaison avec son frère ? C’est elle que nous te confions. Pleine d’ardeur, elle voulait porter sur ses épaules les armes et l’arc, et repousser le mariage à la manière des Amazones. Mais le souci de mon enfant mâle me suffit. Qu’elle porte, elle, la corbeille et les objets sacrés. À toi de mater par ta conduite son caractère indocile et de la maintenir dans le rôle qui revient à son sexe, jusqu’à l’âge du mariage, quand sa pudeur pourra se dénouer. Ne lui permets ni de se livrer aux audacieux exercices de la palestre ni d’errer parmi les repaires des bêtes dans les bois. Élève-la à l’intérieur et tiens-la à l’écart, parmi des jeunes filles pareilles à elle. Avant tout, souviens-toi de la tenir loin du rivage et du port. Tu viens de voir les voiles des Phrygiens. Déjà, en traversant la mer, les navires ont appris à trahir les droits qui lient les hommes entre eux. »
+« Cette jeune fille que voici, ô roi, dit-elle, c’est la sœur de notre Achille. Ne vois-tu pas combien son visage a l’air farouche et comme elle soutient la comparaison avec son frère ? C’est elle que nous te confions. Pleine d’ardeur, elle voulait porter sur ses épaules les armes et l’arc, et repousser le mariage à la manière des Amazones. Mais le souci de mon enfant mâle me suffit. Qu’elle porte, elle, les corbeilles et les objets sacrés. À toi, par la discipline que tu lui imposeras, de mater son caractère indocile et de la maintenir dans le rôle qui revient à son sexe, jusqu’à l’âge du mariage, quand sa pudeur pourra se dénouer. Ne lui permets ni de se livrer aux audacieux exercices de la palestre ni d’errer parmi les repaires des bêtes dans les bois. Élève-la à l’intérieur et tiens-la à l’écart, parmi des jeunes filles pareilles à elle. Avant tout, souviens-toi de la tenir loin du rivage et du port. Tu viens de voir les voiles des Phrygiens. Déjà, en traversant la mer, les navires ont appris à trahir les droits qui lient les hommes entre eux. »
 
 Le vieillard se rend à ses paroles et accueille le petit-fils d’Éaque, dissimulé par l’ingéniosité de sa mère. Qui pourrait faire obstacle aux ruses des dieux ? Bien plus, de lui-même, il rend hommage à la déesse en tendant une main suppliante et la remercie de l’avoir choisi. Et la foule des pieuses filles de Scyros ne se lasse pas de fixer avec une insistance extrême le visage de la nouvelle venue. Comme elle se distingue par son port de tête et par ses cheveux ! Quelle ampleur dans ses épaules et sa poitrine ! Puis elles l’invitent à se joindre à leurs danses et à prendre part à leurs rites purs. Elles lui font place et se réjouissent de la toucher.
 
-Ainsi font les oiseaux d’Idalie lorsqu’ils fendent les nuages moelleux. Depuis longtemps ils forment une troupe, au ciel comme au logis. Si une étrangère vient d’une autre contrée et mêle ses ailes aux leurs, toutes, dans un premier temps, s’étonnent et frémissent. Bientôt elles volent de plus en plus près. En plein ciel, peu à peu, elles en ont fait l’une des leurs et, dans un battement d’ailes bienveillant, l’entourent joyeusement et la conduisent vers leurs nids haut perchés.
+Ainsi font les oiseaux d’Idalie lorsqu’ils fendent les nuages moelleux. Depuis longtemps ces colombes vivent groupées, au ciel comme au logis. Si une étrangère vient d’une autre contrée et mêle ses ailes aux leurs, toutes, dans un premier temps, s’étonnent et frémissent. Bientôt elles volent de plus en plus près. En plein ciel, peu à peu, elles en ont fait l’une des leurs et, dans un battement d’ailes bienveillant, l’entourent joyeusement et la conduisent vers leurs nids haut perchés.
 
 ![Figure 1 — Qui reconnaît qui à Scyros ?](figures/lecture.svg)
 
@@ -40,7 +42,7 @@ Hanc anticipe le geste de présentation, avant le verbe tradimus. Germanam est e
 
 **V. 355–360 · ferat, frange, tene, memento**
 
-Fer[a]t a pour sujet la prétendue fille. Frange et tene s’adressent au roi. La note sur sexuque tene explicite le rôle que Thétis prétend faire respecter. Dum ouvre le terme de l’éducation demandée. Soluendus est un adjectif verbal accordé à pudor. Ale vient de alo, avec le sens large d’« élever ». Memento introduit arcere.
+Ferat a pour sujet la prétendue fille. Frange et tene s’adressent au roi. La note sur sexuque tene explicite le rôle que Thétis prétend faire respecter. Dum ouvre le terme de l’éducation demandée. Soluendus est un adjectif verbal accordé à pudor. Ale vient de alo, avec le sens large d’« élever ». Memento introduit arcere.
 
 **V. 361–365 · didicere, parentis, diuum**
 
