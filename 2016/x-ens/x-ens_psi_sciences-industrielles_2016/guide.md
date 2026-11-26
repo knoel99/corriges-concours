@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Repères
 
 L’épreuve change de modèle selon la phase de vie. À quai, distinguer le débit total du débit par coussin. En roulage, distinguer la force d’une roue de la charge totale d’un essieu, puis le tangage longitudinal du roulis transversal.
@@ -116,6 +118,8 @@ On a $K_2pP=K_1(Y_c-Y)-SpY$. En remplaçant dans $(mp^2+fp)Y=SP-F_{\rm ext}$, on
 
 Pour des marches de consigne et de surcharge et une boucle stable, $H_1(0)=1$, $H_2(0)=0$. La position finale est la consigne, d'où $e_\infty=0$ m dans les deux cas. La surcharge $P_0$ impose une augmentation permanente de pression $P_0/S$ après un déplacement transitoire. Ce résultat suppose que l'alimentation peut fournir cette pression.
 
+Pour $m,K_2,S,f,K_1>0$, le critère de Routh appliqué au dénominateur cubique donne la condition supplémentaire $fK_2 S^2>mK_2 SK_1$, soit $fS>mK_1$. À l’égalité, le modèle admet une paire de pôles imaginaires et le théorème de la valeur finale ne permet plus de conclure.
+
 ### Question 13 · Boucle de régulation en roulage
 
 **Indication.** Ramener le débit équivalent de la perturbation avant le gain de commande.
@@ -159,6 +163,8 @@ Pour $F=1/(1+2p)$, le gain asymptotique est nul en dB jusqu'à $0{,}5\ \mathrm{r
 #### Solution
 
 La coupure asymptotique reste $0{,}4\ \mathrm{rad/s}$. Le retard supplémentaire est $\arctan(2\times0{,}4)\simeq38{,}66°$, donc la marge vaut environ $49°$. La boucle est stable dans ce modèle, mais sa marge est inférieure aux $70°$ prescrits.
+
+En conservant le module exact de la boucle filtrée, la coupure se déplace à $0{,}334$ rad/s et la marge calculée à cette fréquence vaut $54{,}3°$. Les $49°$ se rapportent à la coupure asymptotique prescrite dans l’énoncé. Les deux lectures restent sous $70°$.
 
 ### Question 18 · Contraintes de conception du passe-bas
 
