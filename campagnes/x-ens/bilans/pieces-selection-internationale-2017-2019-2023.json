@@ -1,0 +1,125 @@
+{
+  "date": "2026-11-26",
+  "verification": {
+    "modele": "gpt-6.2-astra",
+    "effort": "ultra",
+    "vitesse": null,
+    "agent": "x_maths_b_anciennes",
+    "phase": "controle documentaire"
+  },
+  "epreuves": [
+    {
+      "slug": "ens-psl_selection-internationale-lettres_etudes-classiques-solitude-et-dialogue-interieur-chez-seneque-oral_2017",
+      "annuaire_ens": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2017-lettres-0",
+      "statut": "Paire absente ou incomplète",
+      "piece_recherchee": "Titre et bornes du troisième extrait annoncé dans la consigne.",
+      "observations": [
+        "Le sujet demande de discuter la solitude et le dialogue intérieur à partir de trois textes. Il donne vingt minutes pour l’exposé et dix pour les questions.",
+        "Les deux fichiers officiels ont des empreintes différentes. Le décompte des mots extraits par PyMuPDF concorde mot à mot en fréquence sur chaque page, 401 occurrences puis 403. La première reproduit les Lettres à Lucilius 7, 1–3, traduites par Henri Noblot. La seconde reproduit Œdipe, v. 87–109, traduit par François-Régis Chaumartin, puis un filet de fin.",
+        "Le sujet voisin, dans les deux listes de 2017, est consacré aux enjeux de la poésie chez Platon. Les notices des éditions de Sénèque identifient les deux textes imprimés."
+      ],
+      "limite": "La permission de citer d’autres passages de Sénèque laisse un choix au candidat. Elle ne permet pas d’identifier le troisième passage que le jury annonce.",
+      "sources_verifiees": [
+        {
+          "url": "https://www.ens.psl.eu/sites/default/files/lettres-classiques-ecrit2.pdf",
+          "sha256": "93663f86f2f2ff27019291e17bbd4989ab196e720f6a9a2fcaeab0bba115534a",
+          "pages": 2,
+          "pieces_jointes": 0,
+          "repere": "Deux feuillets bilingues ; indexé parmi les écrits, le document porte le titre d’une épreuve orale."
+        },
+        {
+          "url": "https://www.ens.psl.eu/sites/default/files/Et.classiques-oral2-SI17.pdf",
+          "sha256": "b9ac15423b3735a739870839396a0338626f4f5ba052269e9600ce49208dc559",
+          "pages": 2,
+          "pieces_jointes": 0,
+          "repere": "Autre exemplaire de l’oral, deux pages. Dans le lien actuel indexé, le nom du fichier est en minuscules et renvoie HTTP 404 ; les capitales ci-dessus restituent le document."
+        },
+        {
+          "url": "https://www.ens.psl.eu/sites/default/files/lettres-classiques-ecrit1.pdf",
+          "sha256": "9740dc5702769a803e480ddb8bdf2cbac7e239387bb27034307c76d60debe806",
+          "pages": 2,
+          "pieces_jointes": 0,
+          "repere": "Sujet voisin sur Platon."
+        },
+        {
+          "url": "https://www.ens.psl.eu/sites/default/files/et.classiques-oral1-si17.pdf",
+          "sha256": "fe561509d30d794312f0e3a75d3fd3d1f67c38178d334f4693b7f55e462b39bb",
+          "pages": 2,
+          "pieces_jointes": 0,
+          "repere": "Autre exemplaire du sujet voisin sur Platon."
+        }
+      ],
+      "references_bibliographiques": [
+        "https://catalogue.bnf.fr/ark:/12148/cb34877893g",
+        "https://www.lesbelleslettres.com/livre/9782251014111/tragedies-tome-ii-oedipe-agamemnon-thyeste"
+      ],
+      "travail_anterieur": "129fe611a9c4075d6e1765d4e3e7626ca27c9d33"
+    },
+    {
+      "slug": "ens-psl_selection-internationale-lettres_geographie-la-production-de-la-ville-latino-americaine_2019",
+      "annuaire_ens": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2019-lettres",
+      "statut": "Paire absente ou incomplète",
+      "piece_recherchee": "Consigne individuelle de l’écrit de géographie sur l’article d’Adrián Gorelik.",
+      "observations": [
+        "L’archive annuelle classe un seul lien sous la géographie écrite. Son PDF de 22 pages contient la couverture de diffusion et l’article d’Adrián Gorelik, traduit par Marie-France Prévôt-Schapira, publié dans Problèmes d’Amérique latine, 2018/3, no 110, p. 17–37.",
+        "Le titre de l’oral de géographie apparaît sur sa propre page de garde. Il s’agit d’un article de Sandra Fiori sur Sérgio Ferro, DOI 10.4000/craup.591, et d’un feuillet de 27 pages.",
+        "Les attentes générales du jury, à la page 3 du PDF, décrivent les épreuves de spécialité. L’annuaire ne renvoie à aucun rapport spécifique de géographie écrite pour cette année."
+      ],
+      "limite": "Le document permet d’identifier l’auteur, le texte, la traduction et l’intégralité de la pagination publiée. Il manque la formulation du travail effectivement demandé sur ce support lors de l’écrit de 2019.",
+      "sources_verifiees": [
+        {
+          "url": "https://www.ens.psl.eu/sites/default/files/geographie-ecrit-sil2019.pdf",
+          "sha256": "ecbbe9ee80ef3b9e676b5e01691c5592bc028fd7fafe0921f1834f0be9672dfb",
+          "pages": 22,
+          "pieces_jointes": 0,
+          "repere": "Page 1, couverture de diffusion ; pages 2 à 22, p. 17–37 de la revue."
+        },
+        {
+          "url": "https://www.ens.psl.eu/sites/default/files/geographie-oral-sil2019.pdf",
+          "sha256": "00bb444bb4edeff0d76dc41e5e35c3c7fe6c972233a1bc8e027f18f0e90fdf19",
+          "pages": 27,
+          "pieces_jointes": 0,
+          "repere": "Document distinct ; Sandra Fiori, Les Cahiers de la recherche architecturale urbaine et paysagère."
+        },
+        {
+          "url": "https://www.ens.psl.eu/IMG/file/internationale/2008/Lettres/Lettres.pdf",
+          "sha256": "3a360c4a7769d5dbf001d43040fcd150dcf10e4ee661a0264586d3fb340a24f4",
+          "pages": 4,
+          "pieces_jointes": 0,
+          "repere": "Note commune ; p. 3 sur les exercices de spécialité."
+        }
+      ],
+      "references_bibliographiques": [
+        "https://doi.org/10.3917/pal.110.0017",
+        "https://doi.org/10.4000/craup.591"
+      ],
+      "travail_anterieur": "2b87296e514683be5563a12be44473cdb8895d78"
+    },
+    {
+      "slug": "ens-psl_selection-internationale-lettres_sociologie-le-conseil-et-les-dispositifs-de-jugement-oral_2023",
+      "annuaire_ens": "https://www.ens.psl.eu/une-formation-d-exception/admission-concours/international/concours-selection-internationale-0",
+      "statut": "Paire absente ou incomplète",
+      "piece_recherchee": "Projet de recherche soumis par la personne candidate sur la facilitation comme travail de consultation.",
+      "observations": [
+        "Dans la rubrique de la session 2023, l’ENS distingue l’écrit et six oraux de sciences sociales. Oral 3 reproduit une introduction d’Odile Henry, dont le titre, la revue et les pages concordent avec sa bibliographie institutionnelle.",
+        "La consigne en gras, en haut de la p. 1, demande de relier le projet de recherche de la personne candidate à cet extrait. Le texte de Henry occupe les deux premières pages. La deuxième s’achève sur le rapprochement entre sociologie économique et histoire des groupes professionnels.",
+        "La p. 3 se rend intégralement en blanc. Elle ne contient ni texte extractible, ni image, ni tracé vectoriel, ni annotation ou lien. Le fichier ne comporte aucune pièce jointe. La liste publique ne pointe pas vers un projet de candidature."
+      ],
+      "limite": "Le thème du projet est connu. Le terrain, le corpus, les méthodes et les hypothèses effectivement soumis par la personne candidate restent indéterminés.",
+      "sources_verifiees": [
+        {
+          "url": "https://www.ens.psl.eu/sites/default/files/oral-3.pdf",
+          "sha256": "357eb39fc3fb1e86c351110a9b5fe9766b50bff2253a87d33f429ba194856b4a",
+          "pages": 3,
+          "pieces_jointes": 0,
+          "repere": "Consigne et début de l’introduction p. 1, suite et fin p. 2, p. 3 blanche."
+        }
+      ],
+      "references_bibliographiques": [
+        "https://doi.org/10.3917/rfse.012.0171",
+        "https://www.cresppa.cnrs.fr/membre/henry-odile/"
+      ],
+      "travail_anterieur": "889cf339"
+    }
+  ]
+}
