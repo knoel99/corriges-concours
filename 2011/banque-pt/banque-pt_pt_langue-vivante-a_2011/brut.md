@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve dure trois heures. Chaque candidat traite la langue choisie à l’inscription. La version française vaut 10 points. La question a demande 80 à 100 mots pour 4 points. La question b demande 200 à 250 mots pour 6 points.
 
 [Sujet](https://www.banquept.fr/documents/2011/lv_a_pt_2011.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2011/rapport_lv_a_ecrit_2011.pdf) · [Grille du livret](https://www.banquept.fr/documents/livret/2011/Livret_PT_2011.pdf#page=13)
@@ -26,9 +28,9 @@ Les sismomètres ont commencé à enregistrer des signaux quarante-quatre minute
 
 *Was würde eine Vorwarnzeit von 20 Minuten in Erdbebengebieten genau ändern?*
 
-Zwanzig Minuten wären in Istanbul wesentlich mehr als die bislang erwarteten acht bis zwanzig Sekunden. Automatische Systeme könnten schon bei einer sehr kurzen Warnung Leitungen abschalten, U-Bahnen anhalten oder Brücken sperren. Mit einem längeren Vorlauf könnten Verantwortliche zusätzlich Menschen verständigen, Hilfskräfte in Bereitschaft versetzen und eingeübte Schutzmaßnahmen in Schulen und Krankenhäusern einleiten. Ob das gelingt, hängt von zuverlässigen Meldungen und klaren Zuständigkeiten ab. Die Untersuchung des Bebens von Izmit zeigt vor allem, was sich im Nachhinein erkennen ließ. Eine sichere Vorhersage für das nächste Beben ist damit noch nicht erreicht.
+Nach dem Artikel könnten bei einer Vorwarnzeit von zwanzig Minuten Zehntausende Menschen gerettet werden. In Istanbul rechnet man bislang mit acht bis zwanzig Sekunden. Automatische Systeme könnten schon bei einer sehr kurzen Warnung Leitungen abschalten, U-Bahnen anhalten oder Brücken sperren. Mit einem längeren Vorlauf könnten Verantwortliche zusätzlich Menschen verständigen, Hilfskräfte in Bereitschaft versetzen und eingeübte Schutzmaßnahmen in Schulen und Krankenhäusern einleiten. Voraussetzung wären zuverlässige Meldungen und klare Zuständigkeiten. Die Untersuchung des Bebens von Izmit zeigt vor allem, was sich im Nachhinein erkennen ließ. Eine sichere Vorhersage für das nächste Beben ist damit noch nicht erreicht.
 
-**90 mots**
+**95 mots**
 
 ### Question b
 
@@ -88,7 +90,7 @@ These technologies also let families stay in contact and people speak about issu
 
 Du début sur l’infiltration de l’eau de mer, « تتسرب مياه البحر », à « خصائص الطبقة المائية الجوفية » à la fin du premier paragraphe.
 
-L’eau de mer s’infiltre dans les puits souterrains des villes côtières libanaises. Dans une large mesure, le phénomène résulte de plusieurs années de mauvaise gestion de l’eau par les autorités locales. Les quinze années de conflit intérieur qu’a connues le pays n’ont fait que l’aggraver. La qualité des eaux souterraines du Grand Beyrouth s’est gravement détériorée, peut-être au-delà de toute possibilité de remédier à la situation. Et la dégradation se poursuit du fait du pompage excessif dans les puits par la population de cette agglomération, qui compte peut-être plus d’un million et demi d’habitants. Une limite dite « ligne de contact » entre l’eau de mer et les eaux souterraines se déplace davantage vers les terres sous l’effet de ce phénomène dynamique. L’infiltration d’eau de mer a rendu les eaux souterraines de Beyrouth impropres aux usages domestiques et agricoles, voire industriels, car, dans de nombreux puits, la salinité a atteint des milliers de milligrammes par litre. Le signe direct attestant que l’eau de mer s’est infiltrée dans les eaux douces souterraines est la présence de chlorure, souvent mesuré comme indicateur de salinité. Toute hausse de la salinité des eaux souterraines ou de leur teneur en chlorure est toujours préoccupante et exige des mesures correctives coûteuses qui prennent beaucoup de temps. Lorsque les eaux salées pénètrent dans les aquifères côtiers, il se forme une zone où eaux souterraines douces et eau de mer se mélangent. La limite entre elles n’est pas nécessairement nette. Il s’agit d’une zone de transition dont la largeur dépend en partie des caractéristiques de la couche aquifère.
+L’eau de mer s’infiltre dans les puits souterrains des villes côtières libanaises. Dans une large mesure, le phénomène résulte de plusieurs années de mauvaise gestion de l’eau par les autorités locales. Les quinze années de conflit intérieur qu’a connues le pays n’ont fait que l’aggraver. La qualité des eaux souterraines du Grand Beyrouth s’est gravement détériorée, peut-être au-delà de toute possibilité de remédier à la situation. Et la dégradation se poursuit du fait du pompage excessif dans les puits par la population de cette agglomération, qui compte peut-être plus d’un million et demi d’habitants. Une limite dite « ligne de contact » entre l’eau de mer et les eaux souterraines se déplace davantage vers les terres sous l’effet de ce phénomène dynamique. L’infiltration d’eau de mer a rendu les eaux souterraines de Beyrouth impropres aux usages domestiques et agricoles, voire industriels, car, dans de nombreux puits, la salinité a atteint des milliers de milligrammes par litre. L’indice incontestable d’une infiltration d’eau de mer dans les eaux douces souterraines est le chlorure, souvent mesuré comme indicateur de salinité. Toute hausse de la salinité des eaux souterraines ou de leur teneur en chlorure est toujours préoccupante et exige des mesures correctives coûteuses qui prennent beaucoup de temps. Lorsque les eaux salées pénètrent dans les aquifères côtiers, il se forme une zone où eaux souterraines douces et eau de mer se mélangent. La limite entre elles n’est pas nécessairement nette. Il s’agit d’une zone de transition dont la largeur dépend en partie des caractéristiques de la couche aquifère.
 
 ### Question a
 
@@ -156,7 +158,7 @@ Por último, una sociedad que espera vidas más largas tiene que pensar en vivie
 
 De « La ricerca condotta » à « così via ».
 
-Les recherches menées par le psychologue Brent Scott montrent en effet que le sourire feint adressé à des collègues ou à des clients peut conduire à l’épuisement émotionnel de celui qui est obligé de l’afficher. Scott a notamment étudié les réactions psychologiques d’un échantillon de conducteurs de bus que leur contrat obligeait à sourire lors de leurs échanges avec les passagers. Il a également constaté combien l’effort pour donner l’apparence d’une bonne humeur que l’on ne ressent pas est éprouvant et déprimant.
+Les recherches menées par le psychologue Brent Scott montrent en effet que le sourire feint adressé à des collègues ou à des clients peut conduire à l’épuisement émotionnel de celui qui est obligé de l’afficher. Scott a notamment étudié les réactions psychologiques d’un échantillon de conducteurs de bus que leur contrat obligeait à sourire lors de leurs échanges avec les passagers. Il a aussi constaté que l’effort nécessaire pour afficher une bonne humeur que l’on ne ressent pas se révèle plus éprouvant et plus déprimant.
 
 Mais le rapport de cause à effet entre émotions et expressions du visage est-il vraiment aussi simple ? Raffaella Rumiati, professeure de neurosciences cognitives à la SISSA, l’École internationale supérieure d’études avancées de Trieste, explique qu’il existe deux types d’émotions. Les émotions primaires, ou fondamentales, sont la peur, la colère, la surprise, la tristesse, le dégoût et la joie. Les émotions complexes, ou sociales, sont la compassion, la gêne, la honte, la culpabilité, la fierté, l’envie, la gratitude, l’indignation et le mépris. Une façon simple de les étudier consiste précisément à observer les expressions du visage. « L’émotion, explique la chercheuse, est la réponse complexe d’un organisme à un stimulus donné. Notre cerveau, comme celui d’autres animaux, est prédisposé à réagir aux sollicitations émotionnelles en puisant dans un répertoire précis d’actions. À la vue d’un serpent, nous sursautons. Un aliment manifestement avarié nous inspire du dégoût, et ainsi de suite. »
 
@@ -172,12 +174,12 @@ Quando il sorriso diventa un obbligo professionale, al lavoratore si chiede di m
 
 *Come si spiega il fatto che l’uomo e la donna non sono uguali sul fatto di falsificare l’umore?*
 
-Lo studio citato osserva che fingere il buonumore sembra pesare di più sulle donne esaminate. Trovo importante distinguere questa osservazione dalla spiegazione che se ne dà. Scott richiama un’aspettativa sociale: le donne possono sentire che dagli altri ci si attende una risposta più calorosa o più visibile da parte loro. Chi pensa di dover sorridere a ogni incontro sostiene uno sforzo diverso da chi può scegliere quando farlo.
+Lo studio citato osserva che fingere il buonumore sembra pesare di più sulle donne esaminate. Trovo importante distinguere questa osservazione dalla spiegazione che se ne dà. Scott richiama un’aspettativa sociale: le donne possono sentire che gli altri si aspettano da loro una risposta più calorosa o più visibile. Chi pensa di dover sorridere a ogni incontro sostiene uno sforzo diverso da chi può scegliere quando farlo.
 
 Rumiati invita però a considerare la posizione occupata sul lavoro. Un dipendente il cui contratto è incerto può temere che un cliente interpreti un’espressione seria come scortesia e si lamenti. Una responsabile con maggiore autonomia potrebbe esprimere disaccordo senza correre lo stesso rischio. Se le donne del campione occupano più spesso i posti meno sicuri, una parte della differenza osservata potrebbe dipendere dalle condizioni professionali. Per capire meglio il fenomeno bisognerebbe confrontare persone con mansioni, autonomia e rapporti con il pubblico simili.
 
 Nella vita quotidiana si incontrano uomini che devono nascondere la stanchezza e donne libere di esprimerla. Mi sembra dunque poco convincente trasformare una differenza media in una regola sul carattere dei due sessi. Un’azienda può chiedere a tutti rispetto e chiarezza nel trattare con le persone. Ha invece buone ragioni per evitare di giudicare la professionalità dalla frequenza dei sorrisi.
 
-**210 mots**
+**208 mots**
 
 ![Interpréter un résultat de groupe](figures/lecture-it.svg)
