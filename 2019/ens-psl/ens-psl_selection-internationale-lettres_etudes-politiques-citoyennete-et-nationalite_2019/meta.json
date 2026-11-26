@@ -1,0 +1,64 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_etudes-politiques-citoyennete-et-nationalite_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Études politiques — citoyenneté et nationalité",
+    "annee": 2019,
+    "modalite": "écrit"
+  },
+  "intitule": "Citoyenneté et nationalité",
+  "questions": 1,
+  "gabarit": "dissertation",
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/etudes_politiques-ecrit-sil2019.pdf",
+    "sha256_sujet": "ff28e3b85aefa81d734529277478cd119b3ef46b4af421ad365cf58dcc705e00",
+    "pages_sujet": 1,
+    "index_officiel": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2019-lettres",
+    "description": "Sujet unique sur un feuillet, dissertation de février 2019, sans texte annexe. Définition de la nationalité et de la citoyenneté en distinguant appartenance juridique, droits politiques et pratiques civiques.",
+    "references_complementaires": [
+      "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006527454/",
+      "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000006527627",
+      "https://eur-lex.europa.eu/eli/treaty/tfeu_2012/art_20/oj/fra",
+      "https://eur-lex.europa.eu/eli/treaty/tfeu_2012/art_22/oj/fra",
+      "https://www2.assemblee-nationale.fr/decouvrir-l-assemblee/histoire/le-suffrage-universel/la-conquete-de-la-citoyennete-politique-des-femmes"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/scrutins.svg",
+      "question": "Composition",
+      "legende": "Le scrutin, l’appartenance et le lieu de résidence."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Citoyenneté et nationalité"
+    ],
+    "elements_verifies": [
+      "Sujet unique sur un feuillet, dissertation de février 2019, sans texte annexe. Définition de la nationalité et de la citoyenneté en distinguant appartenance juridique, droits politiques et pratiques civiques.",
+      "La délimitation du corps électoral est étudiée à partir de l’article 3 de la Constitution et des modes d’acquisition de la nationalité. La comparaison entre 1848, 1944 et 1945 éclaire la distinction entre appartenance et suffrage.",
+      "Les droits municipaux et européens, la situation d’un résident ressortissant d’un État tiers et celle des nationaux expatriés conduisent à discuter les critères de résidence et d’appartenance à chaque échelle."
+    ]
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "oraux_lyon_et_anciens_corriges",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture du feuillet intégral, rédaction des deux éditions, vérification des exemples et des références, création du schéma et des exercices guidés. La délimitation du corps électoral est étudiée à partir de l’article 3 de la Constitution et des modes d’acquisition de la nationalité. La comparaison entre 1848, 1944 et 1945 éclaire la distinction entre appartenance et suffrage."
+    }
+  ]
+}
