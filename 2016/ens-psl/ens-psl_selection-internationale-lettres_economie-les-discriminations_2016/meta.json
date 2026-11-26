@@ -34,7 +34,7 @@
       "legende": "Ce que chaque comparaison permet d’établir"
     }
   ],
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "lecture_rapport_jury",
@@ -71,6 +71,34 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Vérification des consignes, des raisonnements et des légendes dans les deux éditions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Le rapport de 2016 attend des faits d’emploi, une discussion de leur mesure, des mécanismes économiques et des politiques correctives. Les deux éditions traitent le test de correspondance, son champ et ses limites, la discrimination par préférence et la discrimination statistique.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation unique sur les discriminations. Mesure des écarts de traitement, préférences, information imparfaite, effets d’allocation et politiques publiques."
+    ],
+    "annexes_verifiees": [],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "limites": "Le sujet écrit tient sur une page et comporte une consigne de composition. Le rapport rattache les trois documents sur la santé à l’oral.",
+    "verification": "Le rapport de 2016 attend des faits d’emploi, une discussion de leur mesure, des mécanismes économiques et des politiques correctives. Les deux éditions traitent le test de correspondance, son champ et ses limites, la discrimination par préférence et la discrimination statistique."
+  }
 }

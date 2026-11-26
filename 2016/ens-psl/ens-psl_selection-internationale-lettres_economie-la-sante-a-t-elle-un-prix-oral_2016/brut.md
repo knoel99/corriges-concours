@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Exposé proposé — La santé a-t-elle un prix ?
 
 En 2008, d’après le document 1, la dépense de santé représentait 11,2 % du PIB en France et 16,4 % aux États-Unis. Il serait aventureux de déduire de ce rapport que les Américains étaient mieux soignés ou qu’ils accordaient mécaniquement davantage de valeur à la vie. Une dépense additionne prix et quantités, alors que la santé désigne un état dont les soins ne sont qu’un déterminant. Je distinguerai le prix auquel on accède à un soin, la valeur que l’on attribue à une amélioration de santé et les règles qui président à son financement collectif.
@@ -33,3 +35,9 @@ L’interprétation suppose que le risque est connu et que l’arbitrage observ�
 L’incertitude sur la maladie rend l’assurance précieuse. Des contributions régulières remplacent pour chacun une dépense rare et potentiellement insupportable. Une mutualisation large limite le risque que les personnes les plus coûteuses soient exclues. La couverture réduit le prix au point d’usage, ce qui peut ouvrir un accès jusque-là empêché mais aussi favoriser des actes de faible bénéfice. Le patient s’en remet en outre à un professionnel mieux informé, dont le mode de rémunération influe sur les actes proposés. Les infections transmissibles fournissent un autre motif d’action collective puisque la prévention d’une personne peut réduire le risque pour les autres.
 
 La collectivité peut évaluer le coût d’une intervention par année de vie en bonne santé gagnée, tout en prenant en compte l’urgence et l’accès équitable. Le prix monétaire des soins, le coût d’opportunité des ressources et la valeur sociale de leur résultat se rencontrent au moment de décider, mais répondent à des questions distinctes. C’est la possibilité d’exposer ces arbitrages, leurs hypothèses et leur répartition qui donne son sens à l’évaluation économique.
+
+## Vérification sur le sujet
+
+Les trois documents ont été relus dans leur version graphique. Les montants et parts de PIB du tableau, les écarts entre catégories à 35 ans et la prime de 500 dollars pour un risque de 1 sur 10 000 concordent avec l’exposé.
+
+Sur le graphique de Murphy et Topel, exprimé en milliers de dollars, les deux profils atteignent leur maximum vers 30 ans puis diminuent. Une ordonnée voisine de 7 000 à cet âge représente environ 7 millions de dollars dans la convention du graphique. Cette estimation de la valeur de la vie restante est distincte de l’exemple de prime salariale qui donne 5 millions. Ce profil modélisé n’établit aucune règle de priorité entre patients.

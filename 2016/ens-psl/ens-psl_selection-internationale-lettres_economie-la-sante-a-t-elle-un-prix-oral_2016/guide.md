@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Préparer trois phrases d’ouverture avec les documents
 
 **Document 1.** En 2008, la France dépensait 3 371 euros par habitant et les États-Unis 5 227 euros selon le tableau fourni. La somme moyenne par habitant répond à une question différente de la part du PIB. Pour attribuer une dépense élevée à des soins plus nombreux, il faudrait isoler les prix, les besoins selon l’âge et le périmètre des services. Présenter les valeurs comme celles du dossier historique.
@@ -29,3 +31,9 @@ Pour expliquer le capital santé, utiliser un exemple quotidien. Si un trajet lo
 **Un prix nul peut-il conduire à trop de soins ?** Certains actes de faible bénéfice deviennent plus attractifs, mais d’autres deviennent enfin accessibles. Pour départager les situations, observer le type d’acte, les gains de santé, les inégalités d’accès et les alternatives disponibles. Un reste à charge uniforme peut décourager une consultation utile chez un ménage modeste.
 
 **Comment choisir entre deux programmes de prévention ?** Construire un scénario de référence pour chacun, calculer les coûts supplémentaires et les diminutions de risques attendues, puis rendre explicite l’incertitude et la population concernée. Une valorisation monétaire ou un rapport coût-efficacité informe ce choix. Une décision sur la priorité aux plus vulnérables demande aussi un critère de justice. Conclure en distinguant le tarif réglé, les ressources sacrifiées et le bénéfice de santé attendu.
+
+## Vérification sur le sujet
+
+Les trois documents ont été relus dans leur version graphique. Les montants et parts de PIB du tableau, les écarts entre catégories à 35 ans et la prime de 500 dollars pour un risque de 1 sur 10 000 concordent avec l’exposé.
+
+Sur le graphique de Murphy et Topel, exprimé en milliers de dollars, les deux profils atteignent leur maximum vers 30 ans puis diminuent. Une ordonnée voisine de 7 000 à cet âge représente environ 7 millions de dollars dans la convention du graphique. Cette estimation de la valeur de la vie restante est distincte de l’exemple de prime salariale qui donne 5 millions. Ce profil modélisé n’établit aucune règle de priorité entre patients.
