@@ -16,7 +16,14 @@
   },
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/2025_blses_epreuve_a_option_sujet_italien.pdf",
-    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_ecrit_italien_option.pdf"
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_ecrit_italien_option.pdf",
+    "sujet_sha256": "78d4200f5ffee4b645ac0d63706cddb639c559edc5a469d6efe92a45f41c66c2",
+    "fascicule": "https://www.ens-lyon.fr/sites/default/files/2025-10/Sujets%20BLSES%20%C3%A9preuves%20optionnelles%202025.pdf",
+    "fascicule_sha256": "ad7d4877a638d78c47207dd017be3bc1db45f86ee0ce486f5f6b255d7030285b",
+    "pages_fascicule": [
+      40,
+      44
+    ]
   },
   "figures": [
     {
@@ -25,7 +32,7 @@
       "question": "Commentaire"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -36,6 +43,30 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Commentaire composé en italien des 5 documents du sujet officiel de six heures, guidage et schéma comparatif."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "fin_langues_x_interens",
+      "agent": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Le feuillet officiel demande un commentaire en six heures sur 5 documents. Les pages 40 à 44 du fascicule commun ENS Ulm et Lyon reproduisent le PDF individuel, garde incluse. Le commentaire complet des deux éditions rapproche Pasolini (transcription), le témoignage de Frasca Polara sur Iotti, le roman de Sapienza, le photogramme de Cortellesi et l’article de Camilli. Attribution séparée des deux comptages à la date de parution de l’article de Camilli.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Analyse et commentaire du dossier en italien"
+    ],
+    "precision": "Le feuillet officiel demande un commentaire en six heures sur 5 documents. Les pages 40 à 44 du fascicule commun ENS Ulm et Lyon reproduisent le PDF individuel, garde incluse. Le commentaire complet des deux éditions rapproche Pasolini (transcription), le témoignage de Frasca Polara sur Iotti, le roman de Sapienza, le photogramme de Cortellesi et l’article de Camilli."
+  }
 }
