@@ -68,6 +68,7 @@
 | 2025 | Bac professionnel | Toutes spécialités | Français | [md](2025/bac-professionnel/bac-professionnel_toutes-specialites_francais_2025/brut.md) | [md](2025/bac-professionnel/bac-professionnel_toutes-specialites_francais_2025/guide.md) |
 | 2026 | Bac technologique | Toutes séries | Philosophie | [md](2026/bac-technologique/bac-technologique_toutes-series_philosophie_2026/brut.md) | [md](2026/bac-technologique/bac-technologique_toutes-series_philosophie_2026/guide.md) |
 | 2017 | Banque PT | PT | Maths A | [md](2017/banque-pt/banque-pt_pt_maths-a_2017/brut.md) | [md](2017/banque-pt/banque-pt_pt_maths-a_2017/guide.md) |
+| 2018 | Banque PT | PT | Maths A | [md](2018/banque-pt/banque-pt_pt_maths-a_2018/brut.md) | [md](2018/banque-pt/banque-pt_pt_maths-a_2018/guide.md) |
 | 2026 | Banque PT | PT | Français A | [md](2026/banque-pt/banque-pt_pt_francais-a_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_francais-a_2026/guide.md) |
 | 2026 | Banque PT | PT | Français B | [md](2026/banque-pt/banque-pt_pt_francais-b_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_francais-b_2026/guide.md) |
 | 2026 | Banque PT | PT | Informatique et modélisation | [md](2026/banque-pt/banque-pt_pt_informatique-et-modelisation_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_informatique-et-modelisation_2026/guide.md) |
