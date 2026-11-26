@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Sujet commun](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20MP-MPI-PC-PSI%20SUJET%20ANGLAIS%20(XEULSR).pdf) · [Fascicule PSI](https://www.ens.psl.eu/sites/default/files/2024_psi_lv_anglais_xusr.pdf) · [Rapport du jury](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20MP-MPI-PC%20RAPPORT%20ECRIT%20ANGLAIS%20(XEULSR).pdf)
 
 ## A · Synthèse des documents 1 à 4
