@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 L’écrit de chimie « Autour des métaux de transition » dure deux heures. Le fascicule comprend six parties indépendantes et un document-réponse pour la question 36. Le rapport de Physique B consacre ses deux premières pages à la chimie. Le livret attribue le coefficient 2 à Physique B pour les ENS Paris-Saclay et Rennes.
 
 [Sujet et document-réponse](https://www.banquept.fr/documents/2023/ph_b_ch_2023_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2023/rapport_phys_b_ecrit_2023.pdf) · [Livret, p. 13](https://www.banquept.fr/documents/livret/2023/Livret_PT_2023.pdf#page=13)
@@ -74,7 +76,7 @@ L’ordonnée initiale $1/b'=100\,\mathrm{L\,mol^{-1}}$ est cohérente avec $99{
 
 ### Q14 — Ordre en protons et dimension de la constante
 
-Avec $\alpha=1$, $k_1/a=kh_{0,1}^{\gamma}$ et $k_2/(3/2)=kh_{0,2}^{\gamma}$. Il suffit de diviser puis de prendre les logarithmes :
+Avec $\alpha=1$, $k_1/a=kh_{0,1}^{\gamma}$ et $k_2/(3/2)=kh_{0,2}^{\gamma}$. Le quotient des deux égalités conduit à
 $$
 \gamma=\frac{\ln\!\left(2ak_2/(3k_1)\right)}{\ln(h_{0,2}/h_{0,1})}.
 $$
@@ -153,11 +155,11 @@ Chaque soluté redox possède initialement $0{,}060\,\mathrm{mol}$ dans son comp
 
 ### Q26 — Choix de la longueur d’onde
 
-La figure 4 situe le maximum d’absorbance près de $808\,\mathrm{nm}$, dans le proche infrarouge. À cette longueur d’onde la sensibilité en concentration $dA/dc$ est forte. Près d’un maximum, un petit décalage de longueur d’onde a un effet du premier ordre faible sur l’absorbance. Le complexe du zinc est décrit comme incolore dans le modèle de l’épreuve.
+La figure 4 situe le maximum d’absorbance près de $808\,\mathrm{nm}$, dans le proche infrarouge. À cette longueur d’onde la sensibilité en concentration $dA/dc$ est forte. Près d’un maximum, un petit décalage de longueur d’onde a un effet du premier ordre faible sur l’absorbance. Le dosage du feuillet attribue le signal mesuré à cette longueur d’onde au complexe du cuivre.
 
 ### Q27 — Droite d’étalonnage
 
-La loi de Beer-Lambert s’écrit $A=\varepsilon_\lambda\ell c$. L’absorbance est sans dimension. Pour une même cuve et une même longueur d’onde, la pente est constante et la droite idéale passe par l’origine. L’ajustement imprimé $A=12{,}033\,c+0{,}007$ présente un faible décalage expérimental et $R^2=0{,}9998$. Dans le tableau 3, les deuxième et troisième abscisses sont toutes deux imprimées $0{,}03$. La figure 5 place les points correspondants à $0{,}02$ et $0{,}03\,\mathrm{mol\,L^{-1}}$. La droite fournie permet de traiter la question sans supposer deux absorbances différentes pour un même étalon idéal.
+La loi de Beer-Lambert s’écrit $A=\varepsilon_\lambda\ell c$. L’absorbance est sans dimension. Pour une même cuve et une même longueur d’onde, la pente est constante et la droite idéale passe par l’origine. L’ajustement imprimé $A=12{,}033\,c+0{,}007$ présente un faible décalage expérimental et $R^2=0{,}9998$. Dans le tableau 3, les deuxième et troisième abscisses sont toutes deux imprimées $0{,}03$. La figure 5 place les points correspondants à $0{,}02$ et $0{,}03\,\mathrm{mol\,L^{-1}}$. En reprenant les dix abscisses visibles sur le graphe et les dix absorbances du tableau, on obtient une pente de $12{,}0327$ et une ordonnée à l’origine de $0{,}0070$, ce qui reproduit la régression imprimée.
 
 ### Q28 — Coefficient d’absorption molaire
 
@@ -197,6 +199,6 @@ La différence standard de potentiel vaut $0{,}80-0{,}34=0{,}46\,\mathrm V$. Ain
 
 ### Q36 — Potentiel mixte sur l’annexe
 
-Au potentiel de la lame, $i_{\rm Cu,ox}(E_{\rm m})+i_{\rm Ag^+,red}(E_{\rm m})=0$. Sur l’annexe, on place une verticale entre les deux pieds des branches métalliques, puis on ajuste sa position pour que les segments au-dessus et au-dessous de l’axe aient la même hauteur. Le pied de cette verticale sur l’axe donne $E_{\rm m}$, ici à peu près à mi-distance des deux pieds. Le courant d’échange entre les deux réactions a un module appréciable sur le dessin, ce qui indique une réaction relativement rapide dans les conditions représentées. Les axes n’étant pas gradués, on ne peut pas donner de valeur en volts ou en ampères.
+Au potentiel de la lame, $i_{\rm Cu,ox}(E_{\rm m})+i_{\rm Ag^+,red}(E_{\rm m})=0$. Sur l’annexe, on place une verticale entre les deux pieds des branches métalliques, puis on ajuste sa position pour que les segments au-dessus et au-dessous de l’axe aient la même hauteur. Le pied de cette verticale sur l’axe donne $E_{\rm m}$, ici à peu près à mi-distance des deux pieds. Chacun des deux courants partiels a un module appréciable sur le dessin, ce qui indique une réaction relativement rapide dans les conditions représentées. Les axes n’étant pas gradués, on ne peut pas donner de valeur en volts ou en ampères.
 
 ![Figure 5 — Construction sur les branches de l’annexe. Les deux segments verticaux au potentiel mixte ont la même hauteur.](figures/potentiel-mixte.svg)
