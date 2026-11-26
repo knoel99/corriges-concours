@@ -1,0 +1,632 @@
+{
+  "slug": "banque-pt_pt_sciences-industrielles-c_2020",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Sciences industrielles C",
+    "annee": 2020
+  },
+  "questions": 39,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2020/si_c_2020_pt.zip",
+    "sujet_sha256": "1b019422cfef600c2150bde2e7d3945c6837e37f86383bef6c8b653a1353a721",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2020/rapport_si_c_ecrit_2020.pdf",
+    "rapport_sha256": "8c991c1b1ef56142fe59ce60f1e9f170ad707494e297f01f33f748b7c8d326eb",
+    "lecture_rapport": "Rapport PDF p. 1 à 5. Pondération, signification des 24 bits, topologies, hyperstatisme, position réglable des paliers, effet de la charge ; poutre, matériaux Ashby, gamme de trempe, moindres carrés, tendeur et construction des paliers.",
+    "sujet_membre_principal": "si_c_2020_pt/201109 A.pdf",
+    "sujet_membre_principal_sha256": "b439ac8be5d618637543e98861e032ca4bedd5c3d806663f2cb13f69e86202c8"
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2020/si_c_2020_pt.zip",
+      "sha256": "b439ac8be5d618637543e98861e032ca4bedd5c3d806663f2cb13f69e86202c8",
+      "nombre_pages": 16,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "a5c97a3098680e8812b6c77217742ed95ec9de62b5c067b1d5041f76c0299ae0"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "cd0299b0d229a6feb326bea5e4cd7f2dddf5727b38a342aa870eaf371f8878ee"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "70a57fdde5df0cc9cb490c89eccbb8314d8df8dae66fd4c188131cb740996145"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "49ace65640247415b4e960559946757f92f5b3642b08e718c172c339145e8422"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "27315f38141583b7d0cf94280a24ff67c7ded6e4911b8ab1e4d5bb33c68c4b91"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "3bc77741678782f7fcb11ec03089edc6d4fecf58882cdaf67f83e6318832c32b"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "4e631467b577f4485024f8b3401c020a42f7289a4c2bbcb8fa20048b7a757138"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "dde92c715bb443a0befedf11402e2c07872476b76ac1630c5d57ed596f21a9c7"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "d94068db37c8f5ca5c9f32c31d78bac469b6924ade8bd431e4ebd84c31dc36f3"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "bb735362f98c34c87eea30e2222943e3e02aa17ec48d6e2d7442833897038f11"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "8cd0807306f135c01f74df7a88b9db1853a7ec9022e96fa058a9a82a7f28dcc7"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "f1635999dacc9898ce9612d8715056b445682b2643d3aa4a4c13d70baa09e659"
+        },
+        {
+          "numero": 13,
+          "rendu_sha256": "344dd77809df7ed333c9295937de5f4c98187ded3897c1afad256508a1010772"
+        },
+        {
+          "numero": 14,
+          "rendu_sha256": "344dd77809df7ed333c9295937de5f4c98187ded3897c1afad256508a1010772"
+        },
+        {
+          "numero": 15,
+          "rendu_sha256": "344dd77809df7ed333c9295937de5f4c98187ded3897c1afad256508a1010772"
+        },
+        {
+          "numero": 16,
+          "rendu_sha256": "702f1851dde9055da9355e7472686549c0c11a8955111b74103fc37d03f67cac"
+        }
+      ],
+      "echelle_rendu": 0.6,
+      "membre_archive": "si_c_2020_pt/201109 A.pdf"
+    },
+    "piece_201109 B": {
+      "url": "https://www.banquept.fr/documents/2020/si_c_2020_pt.zip",
+      "sha256": "57ec7102f6503f4b9ec60320400f53b4f58b6ac5c0ce7a54236a8daecc92857a",
+      "nombre_pages": 12,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "d2da4f969d4c7013832d2ceaa73a93add2e3790ae3fb68b9c0516ea9d16bbb94"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "f7c31f1c77106ce3fedc00e4cde40fdaf37019a973aa719d54b80347b9ec9fda"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "e9b7a403c2fec69c25e4a1c76a1bd7d8a0ad5cdde680d939fb1ec07d1594a3ef"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "b02a44eaae1040789745d970e2780843295f9ad5a22032bb9a62404c2aebdbc5"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "513b00f09ebd9797416b23d0d4a7322df29fb9dc3a3a7a8bcd357236a4e7f486"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "07900c2acbb365465afcb06b06baf8e2bf7a6dd802c411eeb19c6589f4fab4cc"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "ce6bafbda35c8e78eabfea6823ad78c9755ac508b7c26c7e8f26518d77af50e6"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "519cd2baad7860d6b00289c31d120365a868e66eee6921e98fa226546ee7e6a9"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "02a0ec4fc4e16ad6629c9b827765667795a79d6ebca4a67f40bd3a0b60bbedf9"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "dca2fc10fb364374ea2b684c4218e580b4b8b2125db52b57d71e68329749043b"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "752b331535291ea1a0b44d3fec4ae237c9aa52d6cd361964b02e7f8e1d4fbda8"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "d2e3a578e878638cdb61efc059c28e39396dac47ad64648661c1c2518dfa4bbc"
+        }
+      ],
+      "echelle_rendu": 0.6,
+      "membre_archive": "si_c_2020_pt/201109 B.pdf"
+    },
+    "piece_201109 C": {
+      "url": "https://www.banquept.fr/documents/2020/si_c_2020_pt.zip",
+      "sha256": "ccc4a9f53804161d86943f7bb74087c1c1d86e4f886d3b7b935c04aa14a726a6",
+      "nombre_pages": 4,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "42748966f552e302b4f492d6f651e48e33de0aa64fab9a0bf466873edcdb1381"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "344dd77809df7ed333c9295937de5f4c98187ded3897c1afad256508a1010772"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "344dd77809df7ed333c9295937de5f4c98187ded3897c1afad256508a1010772"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "344dd77809df7ed333c9295937de5f4c98187ded3897c1afad256508a1010772"
+        }
+      ],
+      "echelle_rendu": 0.6,
+      "membre_archive": "si_c_2020_pt/201109 C.pdf"
+    },
+    "piece_201109 Ca": {
+      "url": "https://www.banquept.fr/documents/2020/si_c_2020_pt.zip",
+      "sha256": "3a8cb4e30ba9698be43711097e3abeb09fc4952e342cac952348b5cc0b8dbc8a",
+      "nombre_pages": 4,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "749f091191a6cf0180b80b6a1923207653893f8aea8ab84e7d09d255dc832ec1"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "1a79adca2d9510ecafc620f2044be26b4770ea427dfe8b477de0fadddd547b59"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "7d4b3dd2c24ab00991fa014c2d56e7bed24251e45865e724fd8cbdb2ad165a80"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "235e55d5df32ce032ade3a94ad074dba6e37810c820128c04a730bf084f0513d"
+        }
+      ],
+      "echelle_rendu": 0.6,
+      "membre_archive": "si_c_2020_pt/201109 Ca.pdf"
+    },
+    "piece_201109 Cb": {
+      "url": "https://www.banquept.fr/documents/2020/si_c_2020_pt.zip",
+      "sha256": "827b9f09980628faf76b7153374126d4182c90dac1402e04ddf2c8b7bf3e016b",
+      "nombre_pages": 4,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "cd7925c774690d14e9bd3890b9e8c85d480addaf302232f0af6cecbb14527562"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "069e47dba94e5d2d5f4e31cd935e5f93fdcfe3d8854ff6874fa8772de7c74436"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "be5a6a291bcc1faf8676469ee23e956d46530ab1324595491d4c6d847054678c"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "2e6d912d1d0dff8c4047990eab0fe86031499c61353de90b220e920b599898bf"
+        }
+      ],
+      "echelle_rendu": 0.6,
+      "membre_archive": "si_c_2020_pt/201109 Cb.pdf"
+    },
+    "piece_201109 Cc": {
+      "url": "https://www.banquept.fr/documents/2020/si_c_2020_pt.zip",
+      "sha256": "21e562ace1cd4c49ce3af1331a7307cd06a51dc3bcfd4ea9802a55130eeafa32",
+      "nombre_pages": 4,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "dd9c6944e71966b32409d3ce541092aef3e246584e3c523251ae13b312a1fd8c"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "06576893c8c78db6477ed2a5406eb63ddb05b41b3e607e826ed27159806bbf72"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "7af7d7d9c115f94119233c9114cb699f57bd6deb7e04598a24f798e2b9f1bf69"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "f467f0dfa9f565ce7270e8b5ad41d016bf2fb248182420a63977fe6a130fc122"
+        }
+      ],
+      "echelle_rendu": 0.6,
+      "membre_archive": "si_c_2020_pt/201109 Cc.pdf"
+    },
+    "piece_201109 Cd": {
+      "url": "https://www.banquept.fr/documents/2020/si_c_2020_pt.zip",
+      "sha256": "37103b1d6b1cb273b3a971fb8600965642b1e8427c1026467cd4c7264799d6c5",
+      "nombre_pages": 4,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "06808bcf4a33300c0e55ed6bf1de0bf8d0fee224a5f8fad0f05ed87077f647bb"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "29b90d2bb5a5dad889a678b03af2a66e2b0d383606fcfdc0ee6ae57fa60ca5bd"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "6c632b7a40144705b4be7dfa7a0ae722f55759d66aa269bd7df5dc84a3e71104"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "344dd77809df7ed333c9295937de5f4c98187ded3897c1afad256508a1010772"
+        }
+      ],
+      "echelle_rendu": 0.6,
+      "membre_archive": "si_c_2020_pt/201109 Cd.pdf"
+    },
+    "piece_201109 Ce": {
+      "url": "https://www.banquept.fr/documents/2020/si_c_2020_pt.zip",
+      "sha256": "0dd2246f41c21ef063b77d22b2b3ea7b3cb614f42eba432d8528e59fb8ed144b",
+      "nombre_pages": 2,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "bbc6d68d1bc5aa96f20ab2bc7e4306676cd99b352dd2c75163ea97452c645de3"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "a40221d4e7b949b3b13a97347ecf8810077862e107e69c401607234d94a279e7"
+        }
+      ],
+      "echelle_rendu": 0.6,
+      "membre_archive": "si_c_2020_pt/201109 Ce.pdf"
+    },
+    "rapport_jury": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2020/rapport_si_c_ecrit_2020.pdf",
+      "sha256": "8c991c1b1ef56142fe59ce60f1e9f170ad707494e297f01f33f748b7c8d326eb",
+      "nombre_pages": 5,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "8389b3149cf3d0f20f03b6ee822c67cb0b2d380525741cc9cabec3262a205015"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "04d3a752d8b725a0c7f002d70169ef3cda6d265db31c9ba4130d40df4d1f0d59"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "206bc7d872c6c46a9b9cde258b7510f709f3713d2829f0852ce4d872668d622d"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "748a75f46c7bfcb16d50d74bc7a0041c7e936ad2fb2034be6908b6f98320e4b3"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "f9b6252f3fa9e2fd9f8f6413ef453a85c593d98725b2a29e86a850979d63b658"
+        }
+      ],
+      "echelle_rendu": 0.6
+    }
+  },
+  "date_revision": "2026-11-26",
+  "figures": [
+    {
+      "fichier": "figures/balayage.svg",
+      "question": "I.3",
+      "legende": "Balayage aller–retour et raccord hors exposition"
+    },
+    {
+      "fichier": "figures/hall-reseau.svg",
+      "question": "I.6",
+      "legende": "Plaquette à effet Hall et architectures en ligne et en étoile"
+    },
+    {
+      "fichier": "figures/poutre.svg",
+      "question": "III.3",
+      "legende": "Réactions, effort tranchant et moment de flexion sous charge répartie"
+    },
+    {
+      "fichier": "figures/tendeur.svg",
+      "question": "III.16",
+      "legende": "Platine réglable du motoréducteur et blocage dans les deux lumières"
+    },
+    {
+      "fichier": "figures/palier.svg",
+      "question": "III.17",
+      "legende": "Coupe du palier droit et entraînement sur le dessin Ce"
+    }
+  ],
+  "contributions": [
+    {
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "session": "banque_pt_si_c_ecorner_formup_percage_2020",
+      "phase": "redaction",
+      "perimetre": "39 réponses et indications. Vérification de chacune des pièces du ZIP de la session d’exception 2020, livrets A et B et cahiers C à Ce. Palier et poulies sur Ce, surfaces et indications géométriques."
+    },
+    {
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "session": "banque_pt_si_c_ecorner_formup_percage_2020",
+      "phase": "relecture_corrige",
+      "perimetre": "Reprise des unités, de la définition du rendement réseau, du schéma de guidage VI, du diamètre des rouleaux, de la profondeur résiduelle après finition, des quatre mesures et de l’ordre de démontage du palier. Contrôle distinct des originaux et des éditions.",
+      "tour": 1
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7",
+      "I.8",
+      "I.9",
+      "I.10",
+      "I.11",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "II.8",
+      "II.9",
+      "II.10",
+      "II.11",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7",
+      "III.8",
+      "III.9",
+      "III.10",
+      "III.11",
+      "III.12",
+      "III.13",
+      "III.14",
+      "III.15",
+      "III.16",
+      "III.17"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "I.1",
+        "page_pdf": 4,
+        "traitement": "Énergie apportée par unité de volume"
+      },
+      {
+        "question": "I.2",
+        "page_pdf": 4,
+        "traitement": "Vitesse maximale suivant un axe et en diagonale"
+      },
+      {
+        "question": "I.3",
+        "page_pdf": 4,
+        "traitement": "Changer de ligne à vitesse programmée"
+      },
+      {
+        "question": "I.4",
+        "page_pdf": 5,
+        "traitement": "Résolution angulaire"
+      },
+      {
+        "question": "I.5",
+        "page_pdf": 5,
+        "traitement": "Résolution dans le plan de travail"
+      },
+      {
+        "question": "I.6",
+        "page_pdf": 5,
+        "traitement": "Mesurer un champ par effet Hall"
+      },
+      {
+        "question": "I.7",
+        "page_pdf": 5,
+        "traitement": "Topologies du réseau"
+      },
+      {
+        "question": "I.8",
+        "page_pdf": 5,
+        "traitement": "Série, synchrone et full-duplex"
+      },
+      {
+        "question": "I.9",
+        "page_pdf": 6,
+        "traitement": "Occupation de la trame pour un variateur"
+      },
+      {
+        "question": "I.10",
+        "page_pdf": 6,
+        "traitement": "Tenir compte du temps de réaction"
+      },
+      {
+        "question": "I.11",
+        "page_pdf": 6,
+        "traitement": "Mutualiser les six consignes"
+      },
+      {
+        "question": "II.1",
+        "page_pdf": 7,
+        "traitement": "Décrire les pivots de vis"
+      },
+      {
+        "question": "II.2",
+        "page_pdf": 7,
+        "traitement": "Calculer le degré d’hyperstatisme"
+      },
+      {
+        "question": "II.3",
+        "page_pdf": 7,
+        "traitement": "Intérêt de la redondance des appuis"
+      },
+      {
+        "question": "II.4",
+        "page_pdf": 7,
+        "traitement": "Modifier la liaison d’une vis au bâti"
+      },
+      {
+        "question": "II.5",
+        "page_pdf": 7,
+        "traitement": "Mettre les pivots en position au montage"
+      },
+      {
+        "question": "II.6",
+        "page_pdf": 7,
+        "traitement": "Choisir la résolution du codeur moteur"
+      },
+      {
+        "question": "II.7",
+        "page_pdf": 8,
+        "traitement": "Justifier l’hypothèse de charge d’une vis"
+      },
+      {
+        "question": "II.8",
+        "page_pdf": 8,
+        "traitement": "Allongement pour 200 kg de poudre"
+      },
+      {
+        "question": "II.9",
+        "page_pdf": 8,
+        "traitement": "Allongement pour 500 kg de poudre"
+      },
+      {
+        "question": "II.10",
+        "page_pdf": 8,
+        "traitement": "Conclusion sur la mesure moteur"
+      },
+      {
+        "question": "II.11",
+        "page_pdf": 8,
+        "traitement": "Autres sources d’écart"
+      },
+      {
+        "question": "III.1",
+        "page_pdf": 9,
+        "traitement": "Lire les trois spécifications du rouleau"
+      },
+      {
+        "question": "III.2",
+        "page_pdf": 9,
+        "traitement": "Calculer les réactions aux deux extrémités"
+      },
+      {
+        "question": "III.3",
+        "page_pdf": 9,
+        "traitement": "Torseur de cohésion"
+      },
+      {
+        "question": "III.4",
+        "page_pdf": 9,
+        "traitement": "Équation de la déformée"
+      },
+      {
+        "question": "III.5",
+        "page_pdf": 9,
+        "traitement": "Flèche maximale"
+      },
+      {
+        "question": "III.6",
+        "page_pdf": 9,
+        "traitement": "Choisir le diamètre"
+      },
+      {
+        "question": "III.7",
+        "page_pdf": 9,
+        "traitement": "Séparer matériau, géométrie et chargement"
+      },
+      {
+        "question": "III.8",
+        "page_pdf": 10,
+        "traitement": "Sélection de familles de matériaux"
+      },
+      {
+        "question": "III.9",
+        "page_pdf": 10,
+        "traitement": "Trempe superficielle par induction"
+      },
+      {
+        "question": "III.10",
+        "page_pdf": 10,
+        "traitement": "Comparer les trois ordonnancements"
+      },
+      {
+        "question": "III.11",
+        "page_pdf": 11,
+        "traitement": "Transport du petit déplacement"
+      },
+      {
+        "question": "III.12",
+        "page_pdf": 11,
+        "traitement": "Écart radial résiduel"
+      },
+      {
+        "question": "III.13",
+        "page_pdf": 11,
+        "traitement": "Résoudre les équations normales"
+      },
+      {
+        "question": "III.14",
+        "page_pdf": 11,
+        "traitement": "Calculer le déplacement du centre"
+      },
+      {
+        "question": "III.15",
+        "page_pdf": 11,
+        "traitement": "Défaut de circularité dans la section"
+      },
+      {
+        "question": "III.16",
+        "page_pdf": 12,
+        "traitement": "Régler la tension au niveau du moteur"
+      },
+      {
+        "question": "III.17",
+        "page_pdf": 12,
+        "traitement": "Réaliser le palier, l’étanchéité et la transmission"
+      }
+    ]
+  }
+}
