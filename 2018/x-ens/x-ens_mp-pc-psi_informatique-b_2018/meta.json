@@ -39,5 +39,45 @@
       "modifications": true,
       "perimetre": "Rédaction des 26 questions à partir du sujet et du rapport de la banque. Exécution des opérateurs Python sur des tables incluant doublons, clés manquantes et tables vides. Comparaison des six traductions aux résultats SQL en conservant les multiplicités. Deux schémas originaux."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7",
+      "I.8",
+      "I.9",
+      "I.10",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7",
+      "III.8",
+      "III.9",
+      "III.10"
+    ],
+    "precision": "Les 26 consignes numérotées ont été rapprochées dans l’ordre des solutions de chacune des deux éditions. Le sujet et le rapport ont été identifiés par leur empreinte et la portée du travail par le journal original.",
+    "origine_attestation": {
+      "commit_du_journal": "a70b79617ebc42b792a1d1a5576236927c65d302",
+      "phase": "redaction",
+      "date": "2026-11-24",
+      "perimetre": "Rédaction des 26 questions à partir du sujet et du rapport de la banque. Exécution des opérateurs Python sur des tables incluant doublons, clés manquantes et tables vides. Comparaison des six traductions aux résultats SQL en conservant les multiplicités. Deux schémas originaux.",
+      "sha256_sujet_controle": "d414372acfe4a82f487dbfd98d6c187e8ae27979424a54d37b64cdd6e7a84079",
+      "sha256_rapport_controle": "2bb98933e0c3912276bcaae179c7ce0428a7024c55c50e3358027616099dc47c"
+    }
+  }
 }

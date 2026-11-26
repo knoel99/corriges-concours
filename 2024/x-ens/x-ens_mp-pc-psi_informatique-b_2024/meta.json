@@ -40,5 +40,33 @@
       "modifications": true,
       "perimetre": "Rédaction et vérification des 14 questions Logimage à partir du sujet et du rapport originaux. Deux figures originales. Tests des fonctions Python des deux éditions sur les positions extrêmes, les conflits aux bords, les matrices des préfixes et les déductions de couleurs. Confirmation indépendante de la solution unique de la figure 1. La garde de l’épreuve mentionne également MPI, filière exclue de cette épreuve B par la structure de sa banque 2024."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
+    "precision": "Les 14 consignes numérotées ont été rapprochées dans l’ordre des solutions de chacune des deux éditions. Le sujet et le rapport ont été identifiés par leur empreinte et la portée du travail par le journal original.",
+    "origine_attestation": {
+      "commit_du_journal": "9a1c592606d7877ac77d6697f55ccb4a796a4d3e",
+      "phase": "redaction",
+      "date": "2026-11-24",
+      "perimetre": "Rédaction et vérification des 14 questions Logimage à partir du sujet et du rapport originaux. Deux figures originales. Tests des fonctions Python des deux éditions sur les positions extrêmes, les conflits aux bords, les matrices des préfixes et les déductions de couleurs. Confirmation indépendante de la solution unique de la figure 1. La garde de l’épreuve mentionne également MPI, filière exclue de cette épreuve B par la structure de sa banque 2024.",
+      "sha256_sujet_controle": "dd325c3b9cd0c62326d858bf4f90773c806be524d98e2b926ad659642c729e10",
+      "sha256_rapport_controle": "72aaefecae1831662bb373949144528828b0eb1982e079c1d1fe0816f553c6fd"
+    }
+  }
 }

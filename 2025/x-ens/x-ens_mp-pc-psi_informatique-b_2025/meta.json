@@ -39,5 +39,45 @@
       "modifications": true,
       "perimetre": "Rédaction des 15 questions du jeu de Röckse, y compris les sept blancs de Q14 et la reconstruction. Vérification sur le PDF et le rapport officiels, deux figures originales. Exécution des programmes Python des deux éditions, comparaison de la recherche et de la programmation dynamique à un énumérateur indépendant, vérification des horizons gloutons et du cas des pénalités négatives près d’une impasse."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15"
+    ],
+    "precision": "Les 15 consignes numérotées ont été rapprochées dans l’ordre des solutions de chacune des deux éditions. Le sujet et le rapport ont été identifiés par leur empreinte et la portée du travail par le journal original. Les sept emplacements à compléter du programme de la question 14 ont chacun une réponse.",
+    "origine_attestation": {
+      "commit_du_journal": "9350af74c7dc89198648df826f76bd864baa3a5e",
+      "phase": "redaction",
+      "date": "2026-11-24",
+      "perimetre": "Rédaction des 15 questions du jeu de Röckse, y compris les sept blancs de Q14 et la reconstruction. Vérification sur le PDF et le rapport officiels, deux figures originales. Exécution des programmes Python des deux éditions, comparaison de la recherche et de la programmation dynamique à un énumérateur indépendant, vérification des horizons gloutons et du cas des pénalités négatives près d’une impasse.",
+      "sha256_sujet_controle": "e38213f2c8c26988033718acef6562b9da62b67d17564eeead22b41be678334a",
+      "sha256_rapport_controle": "ddcd9dfb9db77bebae3d90460ab847a937ed55eac987b1db76ddb617fd2e48a0"
+    },
+    "subdivisions_du_sujet": {
+      "14": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ]
+    }
+  }
 }
