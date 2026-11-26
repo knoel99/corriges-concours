@@ -6,7 +6,11 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Le jury publie 12 billets pour le 24 juin. Pour chacun, le premier intitulé est celui qui a été choisi. Le second était proposé au choix. Les deux reçoivent ici des réponses distinctes. Les exemples et arguments proposés servent à préparer une leçon personnelle.
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Le [feuillet du 24 juin](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_24_juin_al.pdf) contient 12 billets de deux sujets. Les développements suivent leur ordre. Le premier sujet a été choisi sur chacun des 12 billets. Le [rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf#page=7) permet de vérifier les choix.
+
+Lisez à haute voix les deux sujets du billet, choisissez pendant les 90 minutes de préparation et annoncez votre choix au début des 20 minutes d’exposé. L’entretien dure ensuite 10 minutes. Le coefficient est de 3. Seul un dictionnaire de langue française est autorisé, à l’exclusion des dictionnaires de noms propres.
 
 ## 1. Interpréter une œuvre d’art
 
@@ -131,5 +135,3 @@ Une chanson donne à un groupe dispersé une occasion de faire entendre un souve
 ### Pacifier
 
 Un conflit disparaît de la place publique parce que les personnes qui le portaient n’osent plus parler. Est-ce une pacification réussie ? La cessation visible du désordre compte, mais elle ne dit pas ce qui a été fait des désaccords et des droits. Pacifier peut signifier faire cesser une hostilité immédiate ou établir des conditions dans lesquelles les différends se règlent durablement selon des procédures communes. Ce second sens exige de reconnaître les parties, d’ouvrir des recours et de rendre possibles des engagements auxquels chacune peut raisonnablement se fier. Le mot a également pu masquer une domination historique sous le langage du retour à l’ordre. Son emploi appelle donc une question de vérification, qui peut désormais se faire entendre, de quelle manière et sous quelles garanties ? Une paix durable laisse place à des désaccords qu’il devient possible de traverser ensemble.
-
-[Feuille officielle du 24 juin](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_24_juin_al.pdf) · [Rapport du jury, modalités et annexe des sujets](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf)
