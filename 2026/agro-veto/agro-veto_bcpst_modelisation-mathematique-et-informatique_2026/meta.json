@@ -27,7 +27,12 @@
     {
       "fichier": "figures/q32-4-segments-confiance.svg",
       "question": "Q32.4",
-      "legende": "Sortie de trace1 simulée pour X de loi binomiale ℬ(2, 1/2), p = 5, ε = 0,1 : la courbe de G_X coupe les p + 1 segments verticaux de longueur 2ε"
+      "legende": "Fonction génératrice de la binomiale de paramètres 2 et 1/2, deux bornes empiriques et six segments pour un tirage de 1 537 valeurs."
+    },
+    {
+      "fichier": "figures/q33-generatrice-bernoulli.svg",
+      "legende": "Les onze points de la question 33 pour une variable de Bernoulli de paramètre 3/5.",
+      "question": "Q33"
     }
   ],
   "contributions": [
@@ -63,6 +68,22 @@
       "perimetre": "Reprise des 81 sous-questions des deux versions sur le sujet et les éléments de correction du jury. Vérification des lois de floraison, des parcours d’arbres, des temps d’extinction, des encadrements de la dichotomie et du tracé des fonctions génératrices.",
       "agent": "astra_info_si",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Vérification des 81 réponses terminales des deux éditions sur le sujet et les éléments de correction du jury. Relecture des hypothèses, des quatre arbres et des preuves. Exécution des programmes des deux éditions sur tirages contrôlés, contrôle exact de la loi binomiale et des bornes de dichotomie. Reproduction de trace1 sur un échantillon identifié et tracé des onze points de trace2. Vérification de l’annexe Python.",
+      "agent": "x_hist_8589",
+      "fournisseur": "codex",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
   ],
   "provenance": {
@@ -79,14 +100,520 @@
       "service_tier": null
     }
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "revision": {
     "modele": "GPT-6.2 Astra (effort Ultra)",
-    "date": "2026-11-24",
-    "verification": "Reprise des 81 sous-questions des deux versions sur le sujet et les éléments de correction du jury. Vérification des lois de floraison, des parcours d’arbres, des temps d’extinction, des encadrements de la dichotomie et du tracé des fonctions génératrices."
+    "date": "2026-11-26",
+    "verification": "Vérification des 81 réponses terminales des deux éditions sur le sujet et les éléments de correction du jury. Relecture des hypothèses, des quatre arbres et des preuves. Exécution des programmes des deux éditions sur tirages contrôlés, contrôle exact de la loi binomiale et des bornes de dichotomie. Reproduction de trace1 sur un échantillon identifié et tracé des onze points de trace2. Vérification de l’annexe Python."
   },
   "sources": {
     "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2026-04/bcpst_0226_sp.pdf",
-    "rapport": "https://concours-agro-veto.fr/sites/default/files/media/2026-09/rapport-mmi-cpge-bcpst-2026.pdf"
+    "rapport": "https://concours-agro-veto.fr/sites/default/files/media/2026-09/rapport-mmi-cpge-bcpst-2026.pdf",
+    "pages_sujet": 9,
+    "sha256_sujet": "f73ad2b5bcabf9a99de01411de54462b3c2fd2a28915f1954ee758bffa6cbcf2",
+    "pages_rapport": 14,
+    "sha256_rapport": "c69991821c09640d7cb4c880880674eb749e2f2d28f8aae8d5b4e821eb6bce11"
+  },
+  "couverture": {
+    "statut": "complet",
+    "numeros_principaux": 33,
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "2",
+      "3.1",
+      "3.2",
+      "4",
+      "5",
+      "6",
+      "7.1",
+      "7.2",
+      "8.1",
+      "8.2",
+      "8.3",
+      "8.4",
+      "8.5",
+      "9",
+      "10.1",
+      "10.2",
+      "10.3",
+      "11.1",
+      "11.2",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17.1",
+      "17.2",
+      "17.3",
+      "17.4",
+      "17.5",
+      "18.1",
+      "18.2",
+      "18.3",
+      "18.4",
+      "19",
+      "20",
+      "21.1",
+      "21.2",
+      "21.3",
+      "22.1",
+      "22.2",
+      "22.3",
+      "23.1",
+      "23.2",
+      "23.3",
+      "23.4",
+      "24.1",
+      "24.2",
+      "24.3",
+      "24.4",
+      "25.1",
+      "25.2",
+      "25.3",
+      "25.4",
+      "25.5",
+      "25.6",
+      "26",
+      "27.1",
+      "27.2",
+      "27.3",
+      "28.1",
+      "28.2",
+      "28.3",
+      "29.1",
+      "29.2",
+      "29.3",
+      "29.4",
+      "30",
+      "31.1",
+      "31.2",
+      "31.3",
+      "32.1",
+      "32.2",
+      "32.3",
+      "32.4",
+      "33"
+    ],
+    "repere_arbres": 4,
+    "repere_annexe_python": 9,
+    "repere_code_q30": 8,
+    "repere_code_q32": 8,
+    "reperes": [
+      {
+        "question": "1.1",
+        "page_pdf_sujet": 1,
+        "page_pdf_rapport": 3
+      },
+      {
+        "question": "1.2",
+        "page_pdf_sujet": 1,
+        "page_pdf_rapport": 3
+      },
+      {
+        "question": "1.3",
+        "page_pdf_sujet": 1,
+        "page_pdf_rapport": 3
+      },
+      {
+        "question": "1.4",
+        "page_pdf_sujet": 1,
+        "page_pdf_rapport": 3
+      },
+      {
+        "question": "1.5",
+        "page_pdf_sujet": 1,
+        "page_pdf_rapport": 3
+      },
+      {
+        "question": "1.6",
+        "page_pdf_sujet": 1,
+        "page_pdf_rapport": 3
+      },
+      {
+        "question": "2",
+        "page_pdf_sujet": 1,
+        "page_pdf_rapport": 3
+      },
+      {
+        "question": "3.1",
+        "page_pdf_sujet": 1,
+        "page_pdf_rapport": 3
+      },
+      {
+        "question": "3.2",
+        "page_pdf_sujet": 2,
+        "page_pdf_rapport": 4
+      },
+      {
+        "question": "4",
+        "page_pdf_sujet": 2,
+        "page_pdf_rapport": 4
+      },
+      {
+        "question": "5",
+        "page_pdf_sujet": 2,
+        "page_pdf_rapport": 4
+      },
+      {
+        "question": "6",
+        "page_pdf_sujet": 2,
+        "page_pdf_rapport": 4
+      },
+      {
+        "question": "7.1",
+        "page_pdf_sujet": 2,
+        "page_pdf_rapport": 5
+      },
+      {
+        "question": "7.2",
+        "page_pdf_sujet": 2,
+        "page_pdf_rapport": 5
+      },
+      {
+        "question": "8.1",
+        "page_pdf_sujet": 3,
+        "page_pdf_rapport": 5
+      },
+      {
+        "question": "8.2",
+        "page_pdf_sujet": 3,
+        "page_pdf_rapport": 5
+      },
+      {
+        "question": "8.3",
+        "page_pdf_sujet": 3,
+        "page_pdf_rapport": 5
+      },
+      {
+        "question": "8.4",
+        "page_pdf_sujet": 3,
+        "page_pdf_rapport": 5
+      },
+      {
+        "question": "8.5",
+        "page_pdf_sujet": 3,
+        "page_pdf_rapport": 6
+      },
+      {
+        "question": "9",
+        "page_pdf_sujet": 3,
+        "page_pdf_rapport": 6
+      },
+      {
+        "question": "10.1",
+        "page_pdf_sujet": 3,
+        "page_pdf_rapport": 6
+      },
+      {
+        "question": "10.2",
+        "page_pdf_sujet": 3,
+        "page_pdf_rapport": 6
+      },
+      {
+        "question": "10.3",
+        "page_pdf_sujet": 3,
+        "page_pdf_rapport": 6
+      },
+      {
+        "question": "11.1",
+        "page_pdf_sujet": 3,
+        "page_pdf_rapport": 6
+      },
+      {
+        "question": "11.2",
+        "page_pdf_sujet": 3,
+        "page_pdf_rapport": 6
+      },
+      {
+        "question": "12",
+        "page_pdf_sujet": 3,
+        "page_pdf_rapport": 6
+      },
+      {
+        "question": "13",
+        "page_pdf_sujet": 5,
+        "page_pdf_rapport": 6
+      },
+      {
+        "question": "14",
+        "page_pdf_sujet": 5,
+        "page_pdf_rapport": 6
+      },
+      {
+        "question": "15",
+        "page_pdf_sujet": 5,
+        "page_pdf_rapport": 7
+      },
+      {
+        "question": "16",
+        "page_pdf_sujet": 5,
+        "page_pdf_rapport": 7
+      },
+      {
+        "question": "17.1",
+        "page_pdf_sujet": 5,
+        "page_pdf_rapport": 7
+      },
+      {
+        "question": "17.2",
+        "page_pdf_sujet": 5,
+        "page_pdf_rapport": 7
+      },
+      {
+        "question": "17.3",
+        "page_pdf_sujet": 5,
+        "page_pdf_rapport": 7
+      },
+      {
+        "question": "17.4",
+        "page_pdf_sujet": 5,
+        "page_pdf_rapport": 7
+      },
+      {
+        "question": "17.5",
+        "page_pdf_sujet": 5,
+        "page_pdf_rapport": 7
+      },
+      {
+        "question": "18.1",
+        "page_pdf_sujet": 5,
+        "page_pdf_rapport": 7
+      },
+      {
+        "question": "18.2",
+        "page_pdf_sujet": 5,
+        "page_pdf_rapport": 7
+      },
+      {
+        "question": "18.3",
+        "page_pdf_sujet": 5,
+        "page_pdf_rapport": 8
+      },
+      {
+        "question": "18.4",
+        "page_pdf_sujet": 5,
+        "page_pdf_rapport": 8
+      },
+      {
+        "question": "19",
+        "page_pdf_sujet": 5,
+        "page_pdf_rapport": 8
+      },
+      {
+        "question": "20",
+        "page_pdf_sujet": 5,
+        "page_pdf_rapport": 8
+      },
+      {
+        "question": "21.1",
+        "page_pdf_sujet": 5,
+        "page_pdf_rapport": 8
+      },
+      {
+        "question": "21.2",
+        "page_pdf_sujet": 6,
+        "page_pdf_rapport": 8
+      },
+      {
+        "question": "21.3",
+        "page_pdf_sujet": 6,
+        "page_pdf_rapport": 9
+      },
+      {
+        "question": "22.1",
+        "page_pdf_sujet": 6,
+        "page_pdf_rapport": 9
+      },
+      {
+        "question": "22.2",
+        "page_pdf_sujet": 6,
+        "page_pdf_rapport": 9
+      },
+      {
+        "question": "22.3",
+        "page_pdf_sujet": 6,
+        "page_pdf_rapport": 9
+      },
+      {
+        "question": "23.1",
+        "page_pdf_sujet": 6,
+        "page_pdf_rapport": 9
+      },
+      {
+        "question": "23.2",
+        "page_pdf_sujet": 6,
+        "page_pdf_rapport": 9
+      },
+      {
+        "question": "23.3",
+        "page_pdf_sujet": 6,
+        "page_pdf_rapport": 9
+      },
+      {
+        "question": "23.4",
+        "page_pdf_sujet": 6,
+        "page_pdf_rapport": 9
+      },
+      {
+        "question": "24.1",
+        "page_pdf_sujet": 7,
+        "page_pdf_rapport": 10
+      },
+      {
+        "question": "24.2",
+        "page_pdf_sujet": 7,
+        "page_pdf_rapport": 10
+      },
+      {
+        "question": "24.3",
+        "page_pdf_sujet": 7,
+        "page_pdf_rapport": 10
+      },
+      {
+        "question": "24.4",
+        "page_pdf_sujet": 7,
+        "page_pdf_rapport": 10
+      },
+      {
+        "question": "25.1",
+        "page_pdf_sujet": 7,
+        "page_pdf_rapport": 10
+      },
+      {
+        "question": "25.2",
+        "page_pdf_sujet": 7,
+        "page_pdf_rapport": 11
+      },
+      {
+        "question": "25.3",
+        "page_pdf_sujet": 7,
+        "page_pdf_rapport": 11
+      },
+      {
+        "question": "25.4",
+        "page_pdf_sujet": 7,
+        "page_pdf_rapport": 11
+      },
+      {
+        "question": "25.5",
+        "page_pdf_sujet": 7,
+        "page_pdf_rapport": 11
+      },
+      {
+        "question": "25.6",
+        "page_pdf_sujet": 7,
+        "page_pdf_rapport": 11
+      },
+      {
+        "question": "26",
+        "page_pdf_sujet": 7,
+        "page_pdf_rapport": 11
+      },
+      {
+        "question": "27.1",
+        "page_pdf_sujet": 7,
+        "page_pdf_rapport": 11
+      },
+      {
+        "question": "27.2",
+        "page_pdf_sujet": 7,
+        "page_pdf_rapport": 11
+      },
+      {
+        "question": "27.3",
+        "page_pdf_sujet": 7,
+        "page_pdf_rapport": 12
+      },
+      {
+        "question": "28.1",
+        "page_pdf_sujet": 7,
+        "page_pdf_rapport": 12
+      },
+      {
+        "question": "28.2",
+        "page_pdf_sujet": 7,
+        "page_pdf_rapport": 12
+      },
+      {
+        "question": "28.3",
+        "page_pdf_sujet": 7,
+        "page_pdf_rapport": 12
+      },
+      {
+        "question": "29.1",
+        "page_pdf_sujet": 7,
+        "page_pdf_rapport": 12
+      },
+      {
+        "question": "29.2",
+        "page_pdf_sujet": 7,
+        "page_pdf_rapport": 12
+      },
+      {
+        "question": "29.3",
+        "page_pdf_sujet": 7,
+        "page_pdf_rapport": 12
+      },
+      {
+        "question": "29.4",
+        "page_pdf_sujet": 7,
+        "page_pdf_rapport": 12
+      },
+      {
+        "question": "30",
+        "page_pdf_sujet": 7,
+        "page_pdf_rapport": 12
+      },
+      {
+        "question": "31.1",
+        "page_pdf_sujet": 8,
+        "page_pdf_rapport": 13
+      },
+      {
+        "question": "31.2",
+        "page_pdf_sujet": 8,
+        "page_pdf_rapport": 13
+      },
+      {
+        "question": "31.3",
+        "page_pdf_sujet": 8,
+        "page_pdf_rapport": 13
+      },
+      {
+        "question": "32.1",
+        "page_pdf_sujet": 9,
+        "page_pdf_rapport": 13
+      },
+      {
+        "question": "32.2",
+        "page_pdf_sujet": 9,
+        "page_pdf_rapport": 13
+      },
+      {
+        "question": "32.3",
+        "page_pdf_sujet": 9,
+        "page_pdf_rapport": 13
+      },
+      {
+        "question": "32.4",
+        "page_pdf_sujet": 9,
+        "page_pdf_rapport": 14
+      },
+      {
+        "question": "33",
+        "page_pdf_sujet": 9,
+        "page_pdf_rapport": 14
+      }
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ]
   }
 }
