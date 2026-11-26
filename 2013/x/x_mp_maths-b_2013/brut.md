@@ -2,7 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 **Exposant de Hölder ponctuel.** Les coefficients de Schauder mesurent l’écart entre la valeur au milieu d’une maille et la moyenne aux extrémités. L’interpolation sur les grilles successives permet de remonter de ces coefficients à la régularité ponctuelle.
 
@@ -72,7 +74,7 @@ Pour la maille de bornes $a,b$ et de milieu $m$, on a $c_{j,k}(f)=\frac12[(f(m)-
 
 ### Question 7.a
 
-Si $i<j$, la fonction $\theta_{i,\ell}$ est affine sur la maille de niveau $j$ par 5.c, donc son écart entre valeur médiane et moyenne des extrémités est nul. Si $i=j$, tous les bouts ont valeur 0 et le milieu a valeur $\mathbf1_{k=\ell}$ par 5.b. Si $i>j$, les trois points d’évaluation sont des multiples de $2^{-i}$, où toute tente de niveau $i$ s’annule. Finalement $c_{j,k}(\theta_{i,\ell})=\mathbf1_{i=j}\mathbf1_{k=\ell}$.
+Si $i<j$, la fonction $\theta_{i,\ell}$ est affine sur la maille de niveau $j$ par 5.c, donc sa valeur au milieu égale la moyenne des valeurs aux extrémités. Si $i=j$, tous les bouts ont valeur 0 et le milieu a valeur $\mathbf1_{k=\ell}$ par 5.b. Si $i>j$, les trois points d’évaluation sont des multiples de $2^{-i}$, où toute tente de niveau $i$ s’annule. Finalement $c_{j,k}(\theta_{i,\ell})=\mathbf1_{i=j}\mathbf1_{k=\ell}$.
 
 ### Question 7.b
 
@@ -92,11 +94,15 @@ Chaque terme de $S_nf$ est un multiple d’une tente de niveau $j\le n$, affine 
 
 ### Question 9.b
 
-Pour $n\ge1$, $S_nf=S_{n-1}f+\sum_{k\in T_n}c_{n,k}(f)\theta_{n,k}$. Aux anciens nœuds (indices pairs), les tentes de niveau $n$ s’annulent et l’égalité est conservée. La valeur en 1 est également correcte puisque toutes les fonctions y sont nulles. Au nouvel indice $2k+1$, le nœud est le milieu $m$ de la maille $[a,b]$ de niveau $n$. Par 9.a et l’hypothèse, $S_{n-1}f(m)=(f(a)+f(b))/2$. La seule tente nouvelle qui vaille 1 est celle d’indice $k$. Son coefficient $f(m)-(f(a)+f(b))/2$ fournit donc exactement la correction nécessaire.
+Au rang $n=0$, la somme vide définit $S_{-1}f=0$. Comme $f(0)=f(1)=0$, $S_0f=f(1/2)\theta_{0,0}$ interpole bien $f$ aux nœuds $0,1/2,1$. Pour $n\ge1$, $S_nf=S_{n-1}f+\sum_{k\in T_n}c_{n,k}(f)\theta_{n,k}$. Aux anciens nœuds (indices pairs), les tentes de niveau $n$ s’annulent et l’égalité est conservée. La valeur en 1 est également correcte puisque toutes les fonctions y sont nulles. Au nouvel indice $2k+1$, le nœud est le milieu $m$ de la maille $[a,b]$ de niveau $n$. Par 9.a et l’hypothèse, $S_{n-1}f(m)=(f(a)+f(b))/2$. La seule tente nouvelle qui vaille 1 est celle d’indice $k$. Son coefficient $f(m)-(f(a)+f(b))/2$ fournit donc exactement la correction nécessaire.
+
+Dans l’exemple $f(x)=4x(1-x)$, l’ancienne ligne brisée vaut $1/2$ en $1/4$ et en $3/4$, où $f$ vaut $3/4$. Les deux coefficients du niveau 1 sont donc égaux à $1/4$.
+
+![Figure 2 — Pour f(x) = 4x(1 − x), les flèches figurent les deux corrections de hauteur 1/4 aux nouveaux nœuds.](figures/interpolation-aux-milieux.svg)
 
 ### Question 9.c
 
-Comme $f(0)=f(1)=0$, $S_0f=f(1/2)\theta_{0,0}$ coïncide avec $f$ en $0,1/2,1$. La question 9.b propage ce résultat à toutes les grilles suivantes. On peut aussi initialiser la notation de 9.b par $S_{-1}f=0$ aux deux extrémités.
+Le cas initial de 9.b donne l’égalité aux trois nœuds du niveau 0. Son étape d’hérédité donne alors, pour tout $n\ge0$ et tout $\ell\in T_{n+1}$, $(S_nf)(\ell 2^{-n-1})=f(\ell 2^{-n-1})$. L’égalité vaut aussi à l’extrémité droite $1$.
 
 ### Question 10.a
 
@@ -124,7 +130,7 @@ Posons $d=|x-x_0|\in]0,1]$. L’unique entier vérifiant la double inégalité e
 
 ### Question 13
 
-Écrivons $k_j(y)=\min(\lfloor2^j y\rfloor,2^j-1)$. Cette précision traite $y=1$, où l’indice imprimé $\widetilde k_j(1)=2^j$ sort de $T_j$. Toutes les tentes y sont nulles, donc choisir la dernière cellule est licite. Ailleurs $k_j$ est l’indice imprimé. Pour une tentative de contribution à $W_j$, la tente doit être non nulle en $x$ ou en $x_0$, si bien que seuls $k_j(x)$ et $k_j(x_0)$ peuvent intervenir. Par 5.d chaque différence absolue de tentes est au plus $2^{j+1}d$. Ainsi
+Écrivons $k_j(y)=\min(\lfloor2^j y\rfloor,2^j-1)$. Cette précision traite $y=1$, où l’indice imprimé $\widetilde k_j(1)=2^j$ sort de $T_j$. Toutes les tentes y sont nulles, donc choisir la dernière cellule est licite. Ailleurs $k_j$ est l’indice imprimé. Pour qu’un terme contribue à $W_j$, sa tente doit être non nulle en $x$ ou en $x_0$. Ainsi seuls $k_j(x)$ et $k_j(x_0)$ peuvent intervenir. Par 5.d chaque différence absolue de tentes est au plus $2^{j+1}d$. Ainsi
 $$ W_j\le (|c_{j,k_j(x)}|+|c_{j,k_j(x_0)}|)2^{j+1}d.$$
 Si les indices coïncident, la borne compte deux fois le même coefficient et reste valide. Dans toute cette partie, $c_{j,k}$ désigne $c_{j,k}(f)$.
 
@@ -155,7 +161,7 @@ La dernière inégalité suit de $2^{-n_0}<2d$. Ceci donne en particulier la bor
 
 ### Question 18.a
 
-Pour $n_0<j\le n_1$, $h_j=2^{-j}<d$. Avec $a=k_j(x)h_j$, on a $h_j+|a-x_0|\le2h_j+d\le3d$. Par P1, $|c_{j,k_j(x)}|\le c_1 3^s d^s$. À $x$, les autres tentes du niveau sont nulles et la hauteur de celle-ci est au plus 1. En sommant les $n_1-n_0$ niveaux, on obtient exactement $c_1 3^s(n_1-n_0)d^s$.
+Pour $n_0<j\le n_1$, $h_j=2^{-j}<d$. Avec $a=k_j(x)h_j$, on a $h_j+|a-x_0|\le2h_j+d\le3d$. Par P1, $|c_{j,k_j(x)}|\le c_1 3^s d^s$. À $x$, les autres tentes du niveau sont nulles et la hauteur de celle-ci est au plus 1. Chacun des $n_1-n_0$ niveaux contribue donc au plus $c_1 3^s d^s$, ce qui donne la majoration demandée.
 
 ### Question 18.b
 
