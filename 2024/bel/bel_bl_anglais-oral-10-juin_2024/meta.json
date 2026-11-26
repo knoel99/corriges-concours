@@ -1,0 +1,93 @@
+{
+  "slug": "bel_bl_anglais-oral-10-juin_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Anglais (oral) — 10 juin",
+    "annee": 2024
+  },
+  "type_epreuve": "oral",
+  "questions": 3,
+  "redaction": "IA, corrigé non officiel",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/bl_sujets_oraux_anglais_10062024.pdf",
+    "sha256_sujet": "4662b8b730904b621bec197c319e94a7358aa6319df6680ee1b6b548cf178ae4",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_oral_anglais_epreuve_commune.pdf",
+    "sha256_rapport_jury": "dd11c4519d2d3c9e7e39d9b9856c91626ac0a68e14e0395c4f84562905be2fa4",
+    "calendrier": "https://www.ens.psl.eu/sujets-des-epreuves-orales-du-concours-bl-session-2024"
+  },
+  "figures": [
+    {
+      "fichier": "figures/reading-the-evidence.svg",
+      "question": "3. Frederick Jackson Turner",
+      "legende": "How Turner turns a census observation into a cause, and then into a claim about national character."
+    }
+  ],
+  "documents_du_fascicule": [
+    {
+      "auteur": "Ronald Reagan",
+      "titre": "Second Inaugural Address",
+      "date": "21 January 1985",
+      "pages": [
+        1
+      ]
+    },
+    {
+      "auteur": "Winston Churchill",
+      "titre": "Address at Westminster College, Fulton, Missouri",
+      "date": "5 March 1946",
+      "pages": [
+        2
+      ]
+    },
+    {
+      "auteur": "Frederick Jackson Turner",
+      "titre": "The Significance of the Frontier in American History",
+      "date": "1893",
+      "pages": [
+        3,
+        4
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1. Ronald Reagan",
+      "2. Winston Churchill",
+      "3. Frederick Jackson Turner"
+    ],
+    "pages_du_sujet": 4,
+    "pages_pdf_des_documents": {
+      "1. Ronald Reagan": [
+        1
+      ],
+      "2. Winston Churchill": [
+        2
+      ],
+      "3. Frederick Jackson Turner": [
+        3,
+        4
+      ]
+    },
+    "precision": "Tous les extraits sont traités séparément en anglais. Les pages de continuation sont rattachées au document dont elles prolongent le texte."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Attributions et pages pointées sur le sujet et sur l’annexe du rapport. Commentaires en anglais, lectures rapprochées, préparation guidée et échanges de reprise pour chaque extrait, figure interprétative.",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "agent": "rennes_oraux_economie",
+      "session": "rennes_oraux_economie"
+    }
+  ]
+}
