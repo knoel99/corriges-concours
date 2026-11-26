@@ -43,5 +43,54 @@
       "modifications": true,
       "perimetre": "Rédaction des 14 questions sur le fac-similé. Traitement du trajet vide, de la fiabilité nulle et des durées nulles. Énumération des 16 configurations et des 58 arcs dirigés, vérification des coûts optimaux de partage. Trois schémas originaux."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
+    "reperes_par_page_du_pdf": {
+      "3": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "4": [
+        "7"
+      ],
+      "5": [
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ]
+    },
+    "precision": "Les 14 numéros du fac-similé institutionnel ont été rapprochés dans leur ordre des solutions de la rédaction signée. Chaque édition présente une solution pour chaque numéro. Les formulations vérifiées sont celles de la contribution archivée.",
+    "origine_attestation": {
+      "commit_du_journal": "22a6bbdf92304102b02d691bd127ab42fc2dc6fd",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction des 14 questions sur le fac-similé. Traitement du trajet vide, de la fiabilité nulle et des durées nulles. Énumération des 16 configurations et des 58 arcs dirigés, vérification des coûts optimaux de partage. Trois schémas originaux.",
+      "sha256_sujet_controle": "7577748cd890bc734ef028aef42614b3c9a03d914519545d741408e3afdc7b36"
+    }
+  }
 }
