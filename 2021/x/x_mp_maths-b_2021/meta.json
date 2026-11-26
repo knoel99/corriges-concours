@@ -11,7 +11,8 @@
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/07/2021_MP_sujet_MathB.pdf",
     "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2021%20MP%20RAPPORT%20ECRIT%20MATHEMATIQUES%20B%20%28X%29.pdf",
-    "sha256_sujet": "4cab2db1d1b6919fa40ea741885b3fdaa9b5bb0990b5f670a76f56dd884a8c00"
+    "sha256_sujet": "4cab2db1d1b6919fa40ea741885b3fdaa9b5bb0990b5f670a76f56dd884a8c00",
+    "sha256_rapport_jury": "a23a9840eca7297850ba72aaf192f030e2ef8c35fab80ee6f4d8cc80389745b0"
   },
   "figures": [
     {
@@ -31,6 +32,69 @@
       "perimetre": "Rédaction des 39 réponses et des indications de chaque sous-question, vérifiées sur le sujet natif et les sept pages du rapport. Contre-exemple au minorant imprimé en 11b et rétablissement de la limite, preuve de l’intégrale bêta et traitement du coefficient conditionnellement sommable de la sécante.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Les questions 1a à 19b comprennent 39 rubriques. Contrôle de la loi zêta et de ses facteurs premiers, du produit d’Euler, des dérivées logarithmiques de Gamma, du calcul bêta et des coefficients de la sécante. En Q11b, l’inégalité imprimée est réfutée dans son domaine littéral et une nouvelle borne uniforme, valable dès m>|x|, établit la conclusion."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1a",
+      "1b",
+      "2a",
+      "2b",
+      "3a",
+      "3b",
+      "3c",
+      "4a",
+      "4b",
+      "5",
+      "6a",
+      "6b",
+      "7a",
+      "7b",
+      "8a",
+      "8b",
+      "8c",
+      "9a",
+      "9b",
+      "9c",
+      "10a",
+      "10b",
+      "10c",
+      "11a",
+      "11b",
+      "11c",
+      "12",
+      "13",
+      "14a",
+      "14b",
+      "15a",
+      "15b",
+      "16",
+      "17",
+      "18a",
+      "18b",
+      "18c",
+      "19a",
+      "19b"
+    ],
+    "precision": "Les 39 rubriques des deux éditions ont été rapprochées du fascicule de 6 pages et du rapport du jury de 7 pages. Les questions 1a à 19b comprennent 39 rubriques. Contrôle de la loi zêta et de ses facteurs premiers, du produit d’Euler, des dérivées logarithmiques de Gamma, du calcul bêta et des coefficients de la sécante. En Q11b, l’inégalité imprimée est réfutée dans son domaine littéral et une nouvelle borne uniforme, valable dès m>|x|, établit la conclusion.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "4cab2db1d1b6919fa40ea741885b3fdaa9b5bb0990b5f670a76f56dd884a8c00",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Les questions 1a à 19b comprennent 39 rubriques. Contrôle de la loi zêta et de ses facteurs premiers, du produit d’Euler, des dérivées logarithmiques de Gamma, du calcul bêta et des coefficients de la sécante. En Q11b, l’inégalité imprimée est réfutée dans son domaine littéral et une nouvelle borne uniforme, valable dès m>|x|, établit la conclusion.",
+      "commit_redaction_anterieure": "18c04b72c8b8d4a151cabcc273766cad672fc577"
+    }
+  }
 }
