@@ -10,9 +10,11 @@
 
 **Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
-**Sujet : « L’alimentation : à quels prix ? »** Épreuve commune ENS Ulm, Lyon, Paris-Saclay et ENSAE/INSEE/ENSAI ; durée : **6 heures**. Le dossier officiel comporte **11 pages et huit documents**, dont plusieurs occupent deux pages. Il faut rédiger une dissertation de sciences sociales qui mette les documents au service d'un raisonnement, en articulant économie et sociologie. Le rapport appelle à suivre une même question en économie et en sociologie et à préciser comment les prix se forment. Sa première présentation annonce sept documents. Le sujet imprimé et la section du rapport consacrée aux marchés financiers établissent la présence d’un huitième document.
+**Sujet : « L’alimentation : à quels prix ? »** Épreuve commune ENS Ulm, Lyon, Paris-Saclay et ENSAE/INSEE/ENSAI ; durée : **6 heures**. Le dossier officiel comporte **11 pages et huit documents**, dont plusieurs occupent deux pages. Il faut rédiger une dissertation de sciences sociales qui mette les documents au service d'un raisonnement, en articulant économie et sociologie. Pour suivre une même question en économie et en sociologie, précisez comment les prix se forment, puis qui les paie. Le document 8, consacré aux marchés financiers, commence à la page 10 et se poursuit à la page 11.
 
 Le pluriel « prix » porte la difficulté : prix de marché, différences entre prix à la production et à la consommation, disparités selon les produits et les territoires, mais aussi coûts sanitaires, sociaux et environnementaux. Le sujet n'appelle ni une simple description de l'inflation, ni un plaidoyer moral détaché des mécanismes économiques.
 
@@ -219,3 +221,9 @@ Les acquis transférables sont la lecture des unités et des catégories de réf
 Un plan différent est recevable s'il traite le pluriel du sujet, mobilise le dossier avec précision et répond à la question de savoir **qui paie quoi**. L'objectif n'est pas de définir un unique « vrai prix », mais d'expliciter les arbitrages que différentes institutions peuvent organiser.
 
 [Sujet officiel](https://www.ens.psl.eu/sites/default/files/2025_blses_sujet_composition_sciences_sociales.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_ecrit_sciences_economiques_et_sociales.pdf)
+
+## Vérification sur le sujet
+
+Les huit documents du sujet imprimé ont été comparés aux deux éditions, y compris les suites des extraits de Perrin Heredia, Pinaud, Tordjman et Stanziani. Les notes sur les quintiles, les cotes, les taux de mortalité et les soldes commerciaux ont été vérifiées sur les pages 2, 4, 5 et 10. L’introduction du rapport du jury compte sept documents. Sa page 15 présente le huitième, consacré aux marchés financiers, qui figure aux pages 10 et 11 du sujet.
+
+Le document 7 permet de faire dialoguer le prix payé par les ménages et la spécialisation productive sans les confondre. De juillet 2020 à juin 2021, le solde « vins et spiritueux » est de +12 707 millions d’euros et celui des fruits et légumes de −6 541 millions. Leur somme algébrique vaut +6 166 millions pour ces deux secteurs réunis. Cette somme laisse invisibles les autres filières et la répartition de la valeur ajoutée. Pour expliquer le prix des fruits en magasin, il faudrait aussi observer les coûts et les marges le long de la chaîne, comme le suggère, pour le lait, l’analyse de la PAC au document 5.
