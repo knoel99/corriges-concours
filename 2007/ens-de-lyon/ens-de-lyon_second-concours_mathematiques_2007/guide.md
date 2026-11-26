@@ -2,7 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 Le premier exercice construit un opérateur d’interpolation à poids positifs et contrôle son erreur uniforme. Le second optimise un produit de moyennes pour en déduire une inégalité sur les matrices symétriques définies positives.
 
@@ -61,6 +63,8 @@ L’écriture $\pi_n(X)=(X-x_i)\prod_{j\ne i}(X-x_j)$ donne $\pi_n'(x_i)=\prod_{
 #### Solution
 
 Comme $\pi_n(X)=(X-x_i)\pi_n'(x_i)\ell_i(X)$, on a $\ell_i(x_i)=1$ et $2\ell_i'(x_i)=\pi_n''(x_i)/\pi_n'(x_i)$. Pour $j\ne i$, $\ell_i^2$ a un zéro double en $x_j$. Ainsi $F_i(x_j)=\delta_{ij}$ et $F_i'(x_j)=0$ dans tous les cas : en $x_i$, la dérivée du facteur affine compense celle de $\ell_i^2$. Le polynôme $\sum_i f(x_i)F_i$ a degré au plus $2n-1$ et vérifie toutes les conditions de 1.4, d’où la formule.
+
+Le polynôme cardinal employé s’écrit $F_i(X)=\bigl(1-(X-x_i)\pi_n''(x_i)/\pi_n'(x_i)\bigr)\ell_i(X)^2$. En $x_i$, sa dérivée est bien $-\pi_n''(x_i)/\pi_n'(x_i)+2\ell_i'(x_i)=0$.
 
 ### Question 1.7
 
@@ -172,6 +176,8 @@ Pour $z\perp\omega$, $x+tz$ reste admissible pour $|t|$ assez petit dès que tou
 #### Solution
 
 Le maximum est positif et atteint sur la face de somme un par homogénéité. Si trois indices ou plus avaient un poids positif, 2.4 appliquée sur leur support donnerait une contradiction. Un support de taille un donne un, et deux indices donnent au plus la valeur de 2.2. Par 2.1, cette dernière est maximale pour les deux extrêmes $a=\lambda_1$, $b=\lambda_n$. Les poids $1/2,1/2$ les réalisent et $\rho(J)=(a+b)^2/(4ab)$. Si des valeurs se répètent, regroupons les poids qui leur correspondent : le produit et la contrainte de somme demeurent identiques. Une unique valeur distincte donne le maximum un, également conforme à la formule.
+
+On peut aussi caractériser l’égalité directement. Pour $a<b$ et $a\le\lambda\le b$, $(b-\lambda)(\lambda-a)\ge0$ donne $\lambda+ab/\lambda\le a+b$. En moyennant avec des poids de somme un, puis en appliquant l’inégalité arithmético-géométrique aux deux moyennes positives, on retrouve la borne. L’égalité exige que tout le poids porte sur $a$ et $b$ et que leurs poids totaux soient égaux. Si $a=b$, toute distribution de masse totale un convient.
 
 ### Question 2.6
 

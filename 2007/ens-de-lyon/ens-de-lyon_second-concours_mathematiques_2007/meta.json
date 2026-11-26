@@ -31,6 +31,48 @@
       "perimetre": "Rédaction intégrale des deux exercices des deux éditions à partir des quatre pages imprimées. Vérification du signe pour les nœuds ordonnés en sens croissant, base cardinale et approximation sur nœuds arbitraires, démonstration de Kantorovitch incluant les multiplicités. Figure des quatre poids d’interpolation.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "x_maths_b_anciennes",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Confrontation des 18 rubriques des deux éditions aux 5 pages du sujet. Contrôle du signe de la dérivée aux racines ordonnées, des conditions cardinales et des poids positifs de la figure. Polynôme cardinal explicité et cas d’égalité de la borne de Kantorovitch justifié."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "1.8",
+      "1.9",
+      "1.9.a",
+      "1.9.b",
+      "1.10",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6"
+    ],
+    "precision": "Confrontation des 18 rubriques des deux éditions aux 5 pages du sujet. Contrôle du signe de la dérivée aux racines ordonnées, des conditions cardinales et des poids positifs de la figure. Polynôme cardinal explicité et cas d’égalité de la borne de Kantorovitch justifié.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "b2ae5e6dfce78bb726c0cdd58164e2c5299f60f96772b8b1cf94ceca995108e8",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Confrontation des 18 rubriques des deux éditions aux 5 pages du sujet. Contrôle du signe de la dérivée aux racines ordonnées, des conditions cardinales et des poids positifs de la figure. Polynôme cardinal explicité et cas d’égalité de la borne de Kantorovitch justifié.",
+      "commit_redaction_anterieure": "d41aae10f3194961baaf3603a56fc699d61dfaa7"
+    }
+  }
 }
