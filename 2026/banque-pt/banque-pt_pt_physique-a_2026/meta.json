@@ -91,7 +91,458 @@
       "perimetre": "Relecture du sujet officiel, du rapport du jury et des 50 questions dans les deux éditions. Vérification des six schémas, du tri granulométrique et de la taille limite après 72 heures, de la polarisation de la sonde et des durées de fonctionnement de la pompe.",
       "agent": "astra_physique",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "session": "revue_banque_pt_physique_2026",
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Inventaire des 50 questions et de la feuille à rendre. Encadrement de la lecture logarithmique, vérification du Reynolds à partir du débit et du bilan de volume à chaque cycle de pompe."
     }
   ],
-  "date_revision": "2026-11-24"
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": 1,
+        "page_pdf": 4,
+        "statut": "complet"
+      },
+      {
+        "question": 2,
+        "page_pdf": 4,
+        "statut": "complet"
+      },
+      {
+        "question": 3,
+        "page_pdf": 4,
+        "statut": "complet"
+      },
+      {
+        "question": 4,
+        "page_pdf": 4,
+        "statut": "complet"
+      },
+      {
+        "question": 5,
+        "page_pdf": 4,
+        "statut": "complet"
+      },
+      {
+        "question": 6,
+        "page_pdf": 5,
+        "statut": "complet"
+      },
+      {
+        "question": 7,
+        "page_pdf": 5,
+        "statut": "complet"
+      },
+      {
+        "question": 8,
+        "page_pdf": 5,
+        "statut": "complet"
+      },
+      {
+        "question": 9,
+        "page_pdf": 5,
+        "statut": "complet"
+      },
+      {
+        "question": 10,
+        "page_pdf": 5,
+        "statut": "complet"
+      },
+      {
+        "question": 11,
+        "page_pdf": 6,
+        "statut": "complet"
+      },
+      {
+        "question": 12,
+        "page_pdf": 6,
+        "statut": "complet"
+      },
+      {
+        "question": 13,
+        "page_pdf": 6,
+        "statut": "complet"
+      },
+      {
+        "question": 14,
+        "page_pdf": 6,
+        "statut": "complet"
+      },
+      {
+        "question": 15,
+        "page_pdf": 6,
+        "statut": "complet"
+      },
+      {
+        "question": 16,
+        "page_pdf": 6,
+        "statut": "complet"
+      },
+      {
+        "question": 17,
+        "page_pdf": 6,
+        "statut": "complet"
+      },
+      {
+        "question": 18,
+        "page_pdf": 7,
+        "statut": "complet"
+      },
+      {
+        "question": 19,
+        "page_pdf": 7,
+        "statut": "complet"
+      },
+      {
+        "question": 20,
+        "page_pdf": 7,
+        "statut": "complet"
+      },
+      {
+        "question": 21,
+        "page_pdf": 8,
+        "statut": "complet"
+      },
+      {
+        "question": 22,
+        "page_pdf": 8,
+        "statut": "complet"
+      },
+      {
+        "question": 23,
+        "page_pdf": 8,
+        "statut": "complet"
+      },
+      {
+        "question": 24,
+        "page_pdf": 8,
+        "statut": "complet"
+      },
+      {
+        "question": 25,
+        "page_pdf": 8,
+        "statut": "complet"
+      },
+      {
+        "question": 26,
+        "page_pdf": 8,
+        "statut": "complet"
+      },
+      {
+        "question": 27,
+        "page_pdf": 8,
+        "statut": "complet"
+      },
+      {
+        "question": 28,
+        "page_pdf": 8,
+        "statut": "complet"
+      },
+      {
+        "question": 29,
+        "page_pdf": 8,
+        "statut": "complet"
+      },
+      {
+        "question": 30,
+        "page_pdf": 8,
+        "statut": "complet"
+      },
+      {
+        "question": 31,
+        "page_pdf": 8,
+        "statut": "complet"
+      },
+      {
+        "question": 32,
+        "page_pdf": 9,
+        "statut": "complet"
+      },
+      {
+        "question": 33,
+        "page_pdf": 9,
+        "statut": "complet"
+      },
+      {
+        "question": 34,
+        "page_pdf": 9,
+        "statut": "complet"
+      },
+      {
+        "question": 35,
+        "page_pdf": 9,
+        "statut": "complet"
+      },
+      {
+        "question": 36,
+        "page_pdf": 9,
+        "statut": "complet"
+      },
+      {
+        "question": 37,
+        "page_pdf": 9,
+        "statut": "complet"
+      },
+      {
+        "question": 38,
+        "page_pdf": 9,
+        "statut": "complet"
+      },
+      {
+        "question": 39,
+        "page_pdf": 10,
+        "statut": "complet"
+      },
+      {
+        "question": 40,
+        "page_pdf": 10,
+        "statut": "complet"
+      },
+      {
+        "question": 41,
+        "page_pdf": 10,
+        "statut": "complet"
+      },
+      {
+        "question": 42,
+        "page_pdf": 11,
+        "statut": "complet"
+      },
+      {
+        "question": 43,
+        "page_pdf": 11,
+        "statut": "complet"
+      },
+      {
+        "question": 44,
+        "page_pdf": 11,
+        "statut": "complet"
+      },
+      {
+        "question": 45,
+        "page_pdf": 11,
+        "statut": "complet"
+      },
+      {
+        "question": 46,
+        "page_pdf": 11,
+        "statut": "complet"
+      },
+      {
+        "question": 47,
+        "page_pdf": 12,
+        "statut": "complet"
+      },
+      {
+        "question": 48,
+        "page_pdf": 12,
+        "statut": "complet"
+      },
+      {
+        "question": 49,
+        "page_pdf": 12,
+        "statut": "complet"
+      },
+      {
+        "question": 50,
+        "page_pdf": 12,
+        "statut": "complet"
+      }
+    ]
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2026/ph_a_2026_pt.pdf",
+      "sha256": "6f3707497bd73b929b3a6c10135db6d6bec418a22300af2c6dcfd83f87fd04ef",
+      "pages_pdf": 17,
+      "pages_examinees": [
+        {
+          "page": 1,
+          "rendu_sha256": "0e12d15351c49dc81b0505dbfecd61202adc31000911631bbe4574df7ac1dcb3"
+        },
+        {
+          "page": 2,
+          "rendu_sha256": "6b41c8edece0db743cfeb6b0fb877f3471b59b373c07fd90ecfbd44ccdb2c7ef"
+        },
+        {
+          "page": 3,
+          "rendu_sha256": "4c09e747e2ea0c6edfb0baff11b47acb5d6a3cb72ce975c6996a7cd34da44955"
+        },
+        {
+          "page": 4,
+          "rendu_sha256": "8488e9d800a8dde0e1470de98548bfc09b63d74513d8c3fa74d09c3b83307fc7"
+        },
+        {
+          "page": 5,
+          "rendu_sha256": "c75bc782c4b93b1011ed77cfe3ccb3f330565e4c4cb6a1d67d6a94cc92e9f304"
+        },
+        {
+          "page": 6,
+          "rendu_sha256": "37e72c1478e88942e9fc36ee99e319454c6d3034369eeba4550c714a626145f6"
+        },
+        {
+          "page": 7,
+          "rendu_sha256": "2ea76739d4758773c2868c5b34ba97d5cff2ce979c7f0959df536faf0374e53f"
+        },
+        {
+          "page": 8,
+          "rendu_sha256": "cce0532120d3a6864cac31ab96fdd2555d8fa1e8eb7e90efa89d6cd9dcf527e4"
+        },
+        {
+          "page": 9,
+          "rendu_sha256": "487b8b499829a8abd00f8b04c550f7df4426f2d7d4f8da5697756434e2757d30"
+        },
+        {
+          "page": 10,
+          "rendu_sha256": "9ee9baadf78ac5e0cec53e3e081a14d02f4c5d26d482c8f94759839760f97a0c"
+        },
+        {
+          "page": 11,
+          "rendu_sha256": "d3f62e4d54c84dd4cfe5ff173d68eba66006c92f762582f9c7c5ae01715bb84b"
+        },
+        {
+          "page": 12,
+          "rendu_sha256": "d193649edd2feb0a7050fba26a39fed17f74c35f3780c32f3305042f865b5ecb"
+        },
+        {
+          "page": 13,
+          "rendu_sha256": "8ad962bc6acd701798f74528f6e10ebe7353dd1260fb907aea2723bf0001afe3"
+        },
+        {
+          "page": 14,
+          "rendu_sha256": "98b7273342e6ef47c7dff2f2223e4b04909fecdf2fe9f061e31e507c1e8af524"
+        },
+        {
+          "page": 15,
+          "rendu_sha256": "de298c26df8b03abb3b26ed4281e483a3f9f5c5c5370cde92ab6a191b22f8385"
+        },
+        {
+          "page": 16,
+          "rendu_sha256": "da9011ba11674520c1f38a4094470768a02eed793c4f7b6144983a8b5b349b28"
+        },
+        {
+          "page": 17,
+          "rendu_sha256": "75eb5fe523d56e5dc7fc0719e612b439d079a5675c1ee4340ea514cbdf001cda"
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2026/rapport_phys_a_ecrit_2026.pdf",
+      "sha256": "709698b64a171fd01af4295c2b3f85597778f20e48a92ee2b79cbb2ed2dd3d29",
+      "pages_pdf": 5,
+      "pages_examinees": [
+        {
+          "page": 1,
+          "rendu_sha256": "51ac16065322382526bd33232687cdc59d0bea3f85f1101dd8be9929f2ca95c7"
+        },
+        {
+          "page": 2,
+          "rendu_sha256": "33c8ee8c08d5218e3b91bea2f1c33bd2774d6eba51dd736e2b6ba57cdd6bcbf5"
+        },
+        {
+          "page": 3,
+          "rendu_sha256": "ad230564b060d63dfe96cf7fe6df95b396c268a139b74324b2c1527cc1413eba"
+        },
+        {
+          "page": 4,
+          "rendu_sha256": "7a867f5547880dc834e4157c25a0d8ff24cee645696860f9733063f370bd758f"
+        },
+        {
+          "page": 5,
+          "rendu_sha256": "7f18d3859fddd61422da84c736ede875a97683884e0196062fc6d1db14804be5"
+        }
+      ]
+    }
+  },
+  "annexe_reponse": {
+    "pages_pdf": [
+      14,
+      15,
+      16,
+      17
+    ],
+    "page_utile": 16,
+    "identifiant_imprime": "3/4",
+    "contenu": "Reproduction de la figure 3 en coordonnées logarithmiques pour la question 6.",
+    "pages_barrees": [
+      15,
+      17
+    ]
+  },
+  "pages_rapport_applicables": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ]
 }

@@ -10,6 +10,10 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+Le feuillet à rendre occupe les pages 14 à 17 du PDF. La courbe de décantation se trouve page 16, entre deux pages barrées. [Feuillet officiel, p. 16](https://www.banquept.fr/documents/2026/ph_a_2026_pt.pdf#page=16) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2026/rapport_phys_a_ecrit_2026.pdf#page=1)
+
 Épreuve de 4 h, calculatrice interdite. Sujet : *Système automatique d'irrigation maraîchère*. Les applications numériques sont menées à la main, avec un ou deux chiffres significatifs. Les pressions sont lues comme des pressions absolues, avec $P_0=1{,}0$ bar.
 
 ## I. Arroser juste quand il faut
@@ -101,6 +105,8 @@ Contrôle : pour $x\ll1$, $f(x)\simeq x^2/2$ (pente 2 en log-log), d'où $x\sime
 
 On note que $\tau_s<\tau_c$ : le grain de sable touche le fond avant d'avoir atteint sa vitesse limite. On ne peut donc pas écrire $\tau_s=p/v_\ell$.
 
+La lecture peut être encadrée directement : $f(0{,}33)\simeq0{,}0489$ et $f(0{,}34)\simeq0{,}0518$. Comme $f'(x)=1-e^{-x}>0$ pour $x>0$, l'intersection est unique et $0{,}297<\tau_s<0{,}306$ s. Le dixième de seconde est une précision adaptée au tracé.
+
 ### Question 7
 
 Pour $x\gg1$, $e^{-x}\ll1$ et $1\ll x$, donc
@@ -112,9 +118,9 @@ En échelle log-log, cette approximation s'écrit $\log f\simeq\log x$ : une dro
 Le seul fait de voir une droite ne suffit pas : une droite en log-log traduit n'importe quelle loi de puissance $f\simeq Kx^n$. Il faut vérifier les deux paramètres sur la figure 3.
 
 - Pente : pour $x\gtrsim10$, la courbe monte d'une décade d'ordonnée par décade d'abscisse, donc $n=1$.
-- Coefficient : la courbe passe par $(10^2,10^2)$, $(10^3,10^3)$ et $(10^4,10^4)$, donc $K=1$.
+- Coefficient : la courbe se rapproche de la diagonale $f=x$. Aux abscisses 100 et 1 000, les rapports $f(x)/x$ valent environ 0,99 et 0,999. Le coefficient asymptotique est donc 1.
 
-L'approximation $f(x)\simeq x$ est confirmée pour $x\gtrsim10^2$. L'écart relatif $1/x$ vaut 10 % en $x=10$ ($f(10)\approx9$), où elle est encore grossière.
+L'approximation $f(x)\simeq x$ est confirmée pour $x\gtrsim10^2$. L'écart relatif rapporté à $x$, $(1-e^{-x})/x$, vaut environ 10 % en $x=10$ ($f(10)\approx9$), où elle est encore grossière.
 
 ### Question 8
 
@@ -509,6 +515,8 @@ Même avec $V=1\ \mathrm{m\cdot s^{-1}}$, ordre de grandeur de la vitesse moyenn
 
 D'après le calcul de la question 32, $Re$ est très inférieur à la valeur critique d'environ $2\times10^3$ : **l'écoulement est laminaire**, dominé par la viscosité. Avec l'estimation « goutte à goutte » ($Re\ll1$), il est même rampant ; avec la vitesse moyenne de la question 39 ($Re\approx12$), il reste laminaire.
 
+La vitesse de croissance d'une goutte visible dépend de sa section. Elle ne mesure pas directement la vitesse moyenne dans le pore. Le profil de Q38 donne après intégration $\bar v=\Delta P R^2/(8\eta e)=0{,}625\ \mathrm{m\,s^{-1}}$. Il conduit à $Re=12{,}5$, ce qui confirme le régime laminaire. La qualification d'écoulement rampant dépend donc de la vitesse choisie en première estimation.
+
 ### Question 34
 
 Le champ eulérien $\vec v(M,t)$ donne la vitesse du fluide en chaque point fixe $M$. La vitesse d'une particule de fluide est la valeur de ce champ au point qu'elle occupe à l'instant considéré. La stationnarité du champ ne suffit donc pas : si la particule se déplaçait vers des points où le champ est différent, sa vitesse changerait. Il faut suivre la particule.
@@ -788,3 +796,5 @@ Confrontation chiffrée aux préconisations :
 - durée entre deux allumages successifs : la période du cycle vaut $\tau_1+\tau_2=6{,}25$ min $>6$ min, **respecté**.
 
 La marche de la pompe dure 15 secondes de moins que le maximum prescrit. Deux allumages sont espacés de 6 minutes et 15 secondes, soit 15 secondes de plus que le minimum demandé.
+
+Sur un cycle, le bilan de volume offre une vérification indépendante. La pompe fournit $1\,000\times3{,}75=3\,750$ L et le réseau distribue $600\times(3{,}75+2{,}50)=3\,750$ L. Le vase retrouve son volume initial. La pompe fonctionne pendant $3{,}75/6{,}25=60\,\%$ du temps.
