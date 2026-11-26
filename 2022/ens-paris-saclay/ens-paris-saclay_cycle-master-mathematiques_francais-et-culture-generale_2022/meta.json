@@ -1,0 +1,174 @@
+{
+  "slug": "ens-paris-saclay_cycle-master-mathematiques_francais-et-culture-generale_2022",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Cycle master mathématiques",
+    "matiere": "Français et culture générale",
+    "annee": 2022,
+    "modalite": "écrit",
+    "etablissements_sur_garde": [
+      "École normale supérieure Paris Saclay"
+    ],
+    "phase": "admission"
+  },
+  "intitule": "Français et culture générale",
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2022_Sujet_Ecrit_2A_Maths_Francais.pdf",
+    "sujet_sha256": "4bc3c1f7bd5ca48506bd066327bf90a4b2c8c159d6d23a39990ba2f4b5602070",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2022_Rapport_Ecrit_2A_Math%C3%A9matiques_Fran%C3%A7ais.pdf",
+    "rapport_sha256": "38d9659ad19fcbb117b72c1a5fe2bdc40e7c483b32df7b568d0f19b776f61a2a",
+    "modalites": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/Reglements/2022_Modalites_d_inscription_CCM.pdf#page=2",
+    "modalites_sha256": "2e60172ead48e5a0413f5cf835957829dbcdcba7737e440f56de9cb34792987c"
+  },
+  "figures": [
+    {
+      "fichier": "figures/ecole.svg",
+      "question": "1",
+      "legende": "Les finalités de l’école, les moyens de les atteindre et les indicateurs mobilisent des jugements distincts.",
+      "provenance": "Figure originale."
+    },
+    {
+      "fichier": "figures/menon.svg",
+      "question": "2b",
+      "legende": "La diagonale dans le problème du Ménon",
+      "provenance": "Figure originale."
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction du résumé, du guide, des développements demandés et des deux figures."
+    },
+    {
+      "phase": "autocontrole",
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture des quatre pages du sujet, collation des questions, double décompte du résumé et vérification des exemples. Confrontation à la page du rapport écrit. Contrôle du statut et de l’horaire aux modalités officielles, p. 2."
+    }
+  ],
+  "duree_heures": 3,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2022_Sujet_Ecrit_2A_Maths_Francais.pdf",
+      "sha256": "4bc3c1f7bd5ca48506bd066327bf90a4b2c8c159d6d23a39990ba2f4b5602070",
+      "pages": 4,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "1ccf9230a3431b110b52493e82b2465fc9e99d2b65e89686b0bcfb094beec79d"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "7956dcafdb09e7264ae9b6a6e36cf5abdf6950c02ea57a6e2035b3e5403b050f"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "7686c6062fb8d93e6c04840d7aa8e11d2d342359da1a2fef5e417b5cacd28510"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "31beb933720e6e40d6157f0975ee094e85fa1997fa9c6ee30eb7139922a1626d"
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2022_Rapport_Ecrit_2A_Math%C3%A9matiques_Fran%C3%A7ais.pdf",
+      "sha256": "38d9659ad19fcbb117b72c1a5fe2bdc40e7c483b32df7b568d0f19b776f61a2a",
+      "pages": 1,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "37cedd9302e8c42ad95675d428f81931737a5a7229fbd46fc14bb5eb37a9b17b"
+        }
+      ],
+      "rubriques": "p. 1, reformulation, intervalle strict, absence de commentaire dans le résumé, définition des termes, exemple socratique et vérification de la langue."
+    },
+    "modalites": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/Reglements/2022_Modalites_d_inscription_CCM.pdf#page=2",
+      "sha256": "2e60172ead48e5a0413f5cf835957829dbcdcba7737e440f56de9cb34792987c",
+      "pages": 3,
+      "pages_verifiees": [
+        {
+          "numero": 2,
+          "rendu_sha256": "3c6c26c09b58e49808d47e39581ec8de872be1633974cd143d2bfb2fc6578a81"
+        }
+      ],
+      "constat": "Épreuve écrite d’admission de français, durée de trois heures, le matin."
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2a",
+      "2b"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1",
+        "page_pdf": 4,
+        "pages_texte": [
+          2,
+          3,
+          4
+        ],
+        "texte": "François de Smet et Laurent Vercueil, « À l’école de l’homme neuronal », Esprit, septembre 2018, p. 14–17. Le titre placé en tête de l’extrait porte un point d’interrogation. Texte p. 2–4 du PDF et sept notes p. 4.",
+        "consigne": "Résumer le texte en 250 mots (avec une marge de tolérance de + ou – 10%). Le nombre exact de mots utilisés sera indiqué en fin de résumé.",
+        "cible_mots": 250,
+        "intervalle": [
+          225,
+          275
+        ],
+        "points": 10
+      },
+      {
+        "question": "2a",
+        "page_pdf": 4,
+        "consigne": "Sous forme d’un développement construit, commenter, au choix, l’une des deux réflexions suivantes des auteurs :",
+        "citation": "« Cette réinscription du corps au sein même du cerveau privait l’homme du fruit de sa modernité libératrice »"
+      },
+      {
+        "question": "2b",
+        "page_pdf": 4,
+        "consigne": "Sous forme d’un développement construit, commenter, au choix, l’une des deux réflexions suivantes des auteurs :",
+        "citation": "« l’enseignement, […] est ‘un art et non une science’ »"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "choix": "Un développement au choix sur dix points. Les deux options sont entièrement traitées.",
+    "annexes_imposees": []
+  }
+}
