@@ -10,9 +10,12 @@
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
     "sujet": "https://cpge-paradise.com/Concours2025/XENS/MP/MathC2025.pdf",
-    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/11/Rapport_ECRIT_Maths_C_2025.pdf"
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/11/Rapport_ECRIT_Maths_C_2025.pdf",
+    "sha256_sujet": "50e5e50fc4eec148c454c91990464e92cc5a895e8bd7e70ac39f29d0e8b91f8d",
+    "sha256_rapport_jury": "a4be055a08ce8a6d393330c25670fbdf08b275fa409d0ea2519e06b96c4e8434",
+    "provenance": "Fac-similé de 9 pages diffusé par CPGE Paradise. Garde ENS du 18 avril 2025, épreuve n° 9 « Mathématiques C (ULSR) », filières MP et MPI. Rapport du jury diffusé par la Banque d’épreuves des concours des écoles normales supérieures, 3 pages."
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "figures": [
     {
       "fichier": "figures/i4-parite.svg",
@@ -95,6 +98,317 @@
       "agent": "astra_maths",
       "fournisseur": "codex",
       "tour": 2
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "agent": "maths_ens_mp_mpi",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture des 40 consignes sur les neuf pages du fac-similé et le rapport. Rectification de la lecture de (51), distinction entre r>0 en (69) et r=0 en (70), précision pour γ=0 en II.2k. Pointage des huit figures dans les deux éditions."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4a",
+      "I.4b",
+      "I.4c",
+      "I.5a",
+      "I.5b",
+      "I.5c",
+      "I.5d",
+      "I.5e",
+      "I.5f",
+      "I.5g",
+      "I.5h",
+      "I.6a",
+      "I.6b",
+      "I.6c",
+      "I.6d",
+      "II.1a",
+      "II.1b",
+      "II.2a",
+      "II.2b",
+      "II.2c",
+      "II.2d",
+      "II.2e",
+      "II.2f",
+      "II.2g",
+      "II.2h",
+      "II.2i",
+      "II.2j",
+      "II.2k",
+      "II.3a",
+      "II.3b",
+      "II.3c",
+      "II.3d",
+      "II.3e",
+      "II.3f",
+      "II.3g",
+      "II.3h",
+      "II.3i"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "I.1",
+        "page_pdf": 3,
+        "page_imprimee": 2,
+        "objet": "Exemples de lois bornée et non bornées"
+      },
+      {
+        "question": "I.2",
+        "page_pdf": 3,
+        "page_imprimee": 2,
+        "objet": "Somme de variables totalement dépendantes"
+      },
+      {
+        "question": "I.3",
+        "page_pdf": 3,
+        "page_imprimee": 2,
+        "objet": "Second moment et majoration de la queue"
+      },
+      {
+        "question": "I.4a",
+        "page_pdf": 3,
+        "page_imprimee": 2,
+        "objet": "Indépendance de rang inférieur"
+      },
+      {
+        "question": "I.4b",
+        "page_pdf": 3,
+        "page_imprimee": 2,
+        "objet": "Indépendance mutuelle"
+      },
+      {
+        "question": "I.4c",
+        "page_pdf": 3,
+        "page_imprimee": 2,
+        "objet": "Parité de trois bits"
+      },
+      {
+        "question": "I.5a",
+        "page_pdf": 4,
+        "page_imprimee": 3,
+        "objet": "Cardinaux extrêmes des familles de mots"
+      },
+      {
+        "question": "I.5b",
+        "page_pdf": 4,
+        "page_imprimee": 3,
+        "objet": "Développement et élimination des singletons"
+      },
+      {
+        "question": "I.5c",
+        "page_pdf": 4,
+        "page_imprimee": 3,
+        "objet": "Contrôle des puissances par la variance"
+      },
+      {
+        "question": "I.5d",
+        "page_pdf": 4,
+        "page_imprimee": 3,
+        "objet": "Choix de l’alphabet"
+      },
+      {
+        "question": "I.5e",
+        "page_pdf": 4,
+        "page_imprimee": 3,
+        "objet": "Minoration de la factorielle"
+      },
+      {
+        "question": "I.5f",
+        "page_pdf": 4,
+        "page_imprimee": 3,
+        "objet": "Somme géométrique des contributions"
+      },
+      {
+        "question": "I.5g",
+        "page_pdf": 5,
+        "page_imprimee": 4,
+        "objet": "Raison de la somme et ses deux majorations"
+      },
+      {
+        "question": "I.5h",
+        "page_pdf": 5,
+        "page_imprimee": 4,
+        "objet": "Inégalité de Markov pour un ordre pair"
+      },
+      {
+        "question": "I.6a",
+        "page_pdf": 5,
+        "page_imprimee": 4,
+        "objet": "Normalisation par K"
+      },
+      {
+        "question": "I.6b",
+        "page_pdf": 5,
+        "page_imprimee": 4,
+        "objet": "Choix du plus grand entier pair"
+      },
+      {
+        "question": "I.6c",
+        "page_pdf": 5,
+        "page_imprimee": 4,
+        "objet": "Borne gaussienne dans le régime intermédiaire"
+      },
+      {
+        "question": "I.6d",
+        "page_pdf": 5,
+        "page_imprimee": 4,
+        "objet": "Petits et grands seuils"
+      },
+      {
+        "question": "II.1a",
+        "page_pdf": 6,
+        "page_imprimee": 5,
+        "objet": "Sous-niveau convexe et produit des deux queues"
+      },
+      {
+        "question": "II.1b",
+        "page_pdf": 6,
+        "page_imprimee": 5,
+        "objet": "Choix du seuil de référence"
+      },
+      {
+        "question": "II.2a",
+        "page_pdf": 6,
+        "page_imprimee": 5,
+        "objet": "Masques exacts et fermeture croissante"
+      },
+      {
+        "question": "II.2b",
+        "page_pdf": 7,
+        "page_imprimee": 6,
+        "objet": "Appartenance au convexe et masque nul"
+      },
+      {
+        "question": "II.2c",
+        "page_pdf": 7,
+        "page_imprimee": 6,
+        "objet": "Exemple de face du cube"
+      },
+      {
+        "question": "II.2d",
+        "page_pdf": 7,
+        "page_imprimee": 6,
+        "objet": "Réduction du nombre de points"
+      },
+      {
+        "question": "II.2e",
+        "page_pdf": 7,
+        "page_imprimee": 6,
+        "objet": "Convexité et compacité"
+      },
+      {
+        "question": "II.2f",
+        "page_pdf": 7,
+        "page_imprimee": 6,
+        "objet": "Triangle, tétraèdre et cube ; réalisabilité"
+      },
+      {
+        "question": "II.2g",
+        "page_pdf": 7,
+        "page_imprimee": 6,
+        "objet": "Existence du minimiseur"
+      },
+      {
+        "question": "II.2h",
+        "page_pdf": 7,
+        "page_imprimee": 6,
+        "objet": "Distance nulle et majoration"
+      },
+      {
+        "question": "II.2i",
+        "page_pdf": 7,
+        "page_imprimee": 6,
+        "objet": "Infimum sur les masques exacts"
+      },
+      {
+        "question": "II.2j",
+        "page_pdf": 7,
+        "page_imprimee": 6,
+        "objet": "Comparaison des deux distances"
+      },
+      {
+        "question": "II.2k",
+        "page_pdf": 7,
+        "page_imprimee": 6,
+        "objet": "Implication pour une constante positive"
+      },
+      {
+        "question": "II.3a",
+        "page_pdf": 8,
+        "page_imprimee": 7,
+        "objet": "Initialisation en dimension un"
+      },
+      {
+        "question": "II.3b",
+        "page_pdf": 8,
+        "page_imprimee": 7,
+        "objet": "Relèvement des masques"
+      },
+      {
+        "question": "II.3c",
+        "page_pdf": 8,
+        "page_imprimee": 7,
+        "objet": "Section, projection, combinaison des poids"
+      },
+      {
+        "question": "II.3d",
+        "page_pdf": 8,
+        "page_imprimee": 7,
+        "objet": "Conditionnement et Hölder"
+      },
+      {
+        "question": "II.3e",
+        "page_pdf": 9,
+        "page_imprimee": 8,
+        "objet": "Rapport des probabilités"
+      },
+      {
+        "question": "II.3f",
+        "page_pdf": 9,
+        "page_imprimee": 8,
+        "objet": "Supremum pour r positif et section de masse nulle"
+      },
+      {
+        "question": "II.3g",
+        "page_pdf": 9,
+        "page_imprimee": 8,
+        "objet": "Retour à la probabilité initiale"
+      },
+      {
+        "question": "II.3h",
+        "page_pdf": 9,
+        "page_imprimee": 8,
+        "objet": "Somme sur les atomes et hérédité"
+      },
+      {
+        "question": "II.3i",
+        "page_pdf": 9,
+        "page_imprimee": 8,
+        "objet": "Optimisation explicite de la parabole"
+      }
+    ],
+    "controle": [
+      "Comparaison des 18 consignes de la partie I et des 22 consignes de la partie II dans les deux éditions.",
+      "Vérification sur les images natives des formules (34), (51), (60), (64) et (69) ainsi que de l’ordre pair de I.6b. La lecture du tour 2 attribuait par erreur au fac-similé le |x| d’une transcription en (51).",
+      "Rapport du jury p. 2–3 sur les hypothèses de moment, le choix de l’ordre et les enveloppes de II.2f."
+    ]
+  }
 }
