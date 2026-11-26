@@ -39,5 +39,58 @@
       "modifications": true,
       "perimetre": "Rédaction des quinze questions à partir du sujet et du rapport de la banque. Vérification des fonctions Python de chaque édition sur des séquences licites de réservation et de libération, avec contrôle de la capacité, des balises, du chaînage, des caractères et de la fusion des portions. Deux schémas originaux."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15"
+    ],
+    "pages_des_questions": {
+      "1": 4,
+      "2": 4,
+      "3": 4,
+      "4": 6,
+      "5": 6,
+      "6": 6,
+      "7": 7,
+      "8": 7,
+      "9": 8,
+      "10": 8,
+      "11": 10,
+      "12": 10,
+      "13": 10,
+      "14": 10,
+      "15": 11
+    },
+    "origine_attestation": {
+      "commit_du_journal": "008b4d9988ec706dab4c158925970c1191a57935",
+      "phase": "redaction",
+      "date": "2026-11-24",
+      "perimetre": "Rédaction des quinze questions à partir du sujet et du rapport de la banque. Vérification des fonctions Python de chaque édition sur des séquences licites de réservation et de libération, avec contrôle de la capacité, des balises, du chaînage, des caractères et de la fusion des portions. Deux schémas originaux.",
+      "sha256_sujet_controle": "60ce8f7de7ff26a6507c63ae0f16886df2a079601c9955affbc8a9b7e1a75541",
+      "sha256_rapport_controle": "2155f10e89a2740a3fafd6f67c2e4d7e0ccfd8d402da9860d236a9ebac86ac6d"
+    },
+    "controle_programmes": {
+      "resultats_par_edition": {
+        "brut": "brut 36720 opérations licites avec contrôle d’état",
+        "guide": "guide 36720 opérations licites avec contrôle d’état"
+      },
+      "controle_sur": "Programmes extraits de chaque édition et vérifiés à nouveau. Les tests portent aussi sur les requêtes SQL lorsqu’elles sont proposées."
+    },
+    "precision": "Les numéros et pages ont été relevés dans le fac-similé du concours. Les réponses des deux éditions sont présentes au commit éditorial indiqué. Les numéros de question ont été lus dans les fragments de texte gras du PDF afin de les distinguer des étiquettes superposées des schémas."
+  }
 }
