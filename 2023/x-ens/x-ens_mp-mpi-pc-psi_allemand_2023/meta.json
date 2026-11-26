@@ -37,7 +37,32 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Rédaction des deux éditions sur le sujet officiel et le rapport du jury. Synthèse des documents 1 à 4 (609 mots hors titre) et réaction personnelle au document 5 (523 mots), avec guidage et schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "fin_langues_x_interens",
+      "agent": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Collation des deux éditions avec la garde, les quatre documents de synthèse et l’éditorial. Vérification des longueurs (609 et 523 mots), du titre et du document visuel de la page 8 du PDF. Le traité d’Aix-la-Chapelle et les échanges de jeunes éclairent la poignée de main à distance entre Hollande et Merkel dessinée en 2013. La réponse à l’éditorial examine les désaccords entre Paris et Berlin au moment du report du conseil des ministres en 2022.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
   ],
-  "date_revision": "2026-11-24"
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ],
+    "precision": "La garde du sujet fixe les deux exercices. Le brut et le guidé donnent la même synthèse titrée des documents 1 à 4 (609 mots hors titre) et la même réponse argumentée au document 5 (523 mots). Comptage par espaces dans les deux copies. Document visuel à la page 8 du PDF, texte d’opinion à partir de la page 9. Le traité d’Aix-la-Chapelle et les échanges de jeunes éclairent la poignée de main à distance entre Hollande et Merkel dessinée en 2013. La réponse à l’éditorial examine les désaccords entre Paris et Berlin au moment du report du conseil des ministres en 2022."
+  }
 }
