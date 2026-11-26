@@ -177,6 +177,7 @@
 | 2017 | BEL | BL | Arabe | [md](2017/bel/bel_bl_arabe_2017/brut.md) | [md](2017/bel/bel_bl_arabe_2017/guide.md) |
 | 2024 | BEL | BL | Économie (oral commun) — 12 juin, dossier 2 | [md](2024/bel/bel_bl_economie-oral-commun-12-juin-dossier-2_2024/brut.md) | [md](2024/bel/bel_bl_economie-oral-commun-12-juin-dossier-2_2024/guide.md) |
 | 2017 | BEL | B/L | Espagnol | [md](2017/bel/bel_bl_espagnol_2017/brut.md) | [md](2017/bel/bel_bl_espagnol_2017/guide.md) |
+| 2025 | BEL | BL | Français (oral tronc commun 19 juin) | [md](2025/bel/bel_bl_francais-oral-tronc-commun-19-juin_2025/brut.md) | [md](2025/bel/bel_bl_francais-oral-tronc-commun-19-juin_2025/guide.md) |
 | 2017 | BEL | B/L | Italien | [md](2017/bel/bel_bl_italien_2017/brut.md) | [md](2017/bel/bel_bl_italien_2017/guide.md) |
 | 2017 | BEL | B/L | Russe | [md](2017/bel/bel_bl_russe_2017/brut.md) | [md](2017/bel/bel_bl_russe_2017/guide.md) |
 | 2017 | BEL | BL | Sciences sociales | [md](2017/bel/bel_bl_sciences-sociales_2017/brut.md) | [md](2017/bel/bel_bl_sciences-sociales_2017/guide.md) |
@@ -2117,6 +2118,10 @@
 | 1995 | X | M′ | Deuxième composition de mathématiques | [md](1995/x/x_m-prime_deuxieme-composition-de-mathematiques_1995/brut.md) | [md](1995/x/x_m-prime_deuxieme-composition-de-mathematiques_1995/guide.md) |
 | 1997 | X | MP | Première composition de mathématiques | [md](1997/x/x_mp_premiere-composition-de-mathematiques_1997/brut.md) | [md](1997/x/x_mp_premiere-composition-de-mathematiques_1997/guide.md) |
 | 1997 | X-ENS | PSI | Maths PSI | [md](1997/x-ens/x-ens_psi_maths-psi_1997/brut.md) | [md](1997/x-ens/x-ens_psi_maths-psi_1997/guide.md) |
+| 1995 | X | P prime | Deuxième composition de mathématiques | [md](1995/x/x_p-prime_deuxieme-composition-de-mathematiques_1995/brut.md) | [md](1995/x/x_p-prime_deuxieme-composition-de-mathematiques_1995/guide.md) |
+| 1996 | X | P prime | Deuxième composition de mathématiques | [md](1996/x/x_p-prime_deuxieme-composition-de-mathematiques_1996/brut.md) | [md](1996/x/x_p-prime_deuxieme-composition-de-mathematiques_1996/guide.md) |
+| 1995 | X | P prime | Première composition de mathématiques | [md](1995/x/x_p-prime_premiere-composition-de-mathematiques_1995/brut.md) | [md](1995/x/x_p-prime_premiere-composition-de-mathematiques_1995/guide.md) |
+| 1996 | X | P prime | Première composition de mathématiques | [md](1996/x/x_p-prime_premiere-composition-de-mathematiques_1996/brut.md) | [md](1996/x/x_p-prime_premiere-composition-de-mathematiques_1996/guide.md) |
 | 1997 | X | PC | Deuxième composition de mathématiques | [md](1997/x/x_pc_deuxieme-composition-de-mathematiques_1997/brut.md) | [md](1997/x/x_pc_deuxieme-composition-de-mathematiques_1997/guide.md) |
 | 1997 | X | PC | Première composition de mathématiques | [md](1997/x/x_pc_premiere-composition-de-mathematiques_1997/brut.md) | [md](1997/x/x_pc_premiere-composition-de-mathematiques_1997/guide.md) |
 | 1997 | X | MP | Deuxième composition de mathématiques | [md](1997/x/x_mp_deuxieme-composition-de-mathematiques_1997/brut.md) | [md](1997/x/x_mp_deuxieme-composition-de-mathematiques_1997/guide.md) |
