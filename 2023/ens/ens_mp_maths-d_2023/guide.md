@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 L’épreuve de mathématiques D de l’ENS Ulm comporte 37 questions et sous-questions. Elle étudie la génération finie des groupes et anneaux, les déterminants sur un anneau commutatif et les espaces de matrices de rang borné. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/uploads/2023/09/23_mp_sujet_MathD.pdf)
@@ -301,7 +303,7 @@ III.1 fournit un sous-anneau $C\subset A$ satisfaisant (TF) qui contient les coe
 
 Dans un anneau intègre, l’injection dans le corps des fractions permet de lire dans l’anneau l’égalité $\det(MN)=\det M\det N$ connue sur ce corps. Pour un anneau quelconque, III.1 appliquée à $\{M,N\}$ fournit un même sous-anneau de type (TF) contenant leurs coefficients. Relevons les deux matrices à travers une surjection d’un anneau de polynômes entier sur ce sous-anneau. L’égalité démontrée dans l’anneau intègre descend par le morphisme, car celui-ci préserve multiplication matricielle et déterminant. Elle reste vraie dans $A$.
 
-On suppose $A\ne\{0\}$ et $M\in M_{s,r}(A)$. L’application $u:A^r\to A^s$, $X\mapsto MX$, est surjective.
+On suppose $A\ne\{0\}$ et $M\in M_{s,r}(A)$. Dans les questions III.3a à III.3c, on suppose que l’application $u:A^r\to A^s$, $X\mapsto MX$, est surjective.
 
 ### Question III.3a
 
@@ -351,7 +353,7 @@ La matrice $M_1$ possède au moins une colonne nulle, donc $\det M_1=0$ par la f
 
 #### Solution
 
-(i) entraîne (ii) car $MN=I_r$ donne $\det M\det N=1$. Si (ii) vaut, posons $N=(\det M)^{-1}\widetilde M$. L’identité des cofacteurs de III.2c donne $MN=NM=I_r$, donc (iii). Une telle matrice $N$ définit l’application inverse de $u$, donc (iii) entraîne la bijectivité (iv). Enfin toute bijection est surjective, ce qui referme le cycle.
+Fixons maintenant $r=s$ et une matrice carrée $M$ quelconque. D’après III.3a, (i) entraîne (ii) car $MN=I_r$ donne $\det M\det N=1$. Si (ii) vaut, posons $N=(\det M)^{-1}\widetilde M$. L’identité des cofacteurs de III.2c donne $MN=NM=I_r$, donc (iii). Une telle matrice $N$ définit l’application inverse de $u$, donc (iii) entraîne la bijectivité (iv). Enfin toute bijection est surjective, ce qui referme le cycle.
 
 ## IV — Équivalence des matrices
 
@@ -367,7 +369,7 @@ Deux matrices du même format sont équivalentes sur $A$ si l’une s’écrit $
 
 #### Solution
 
-L’identité appartient à $GL_r(A)$. Les produits y restent puisque $\det(MN)=\det M\det N$ est une unité lorsque les deux facteurs le sont. L’associativité vient du produit matriciel. D’après III.3d, tout $M\in GL_r(A)$ possède un inverse bilatère $N$, lequel appartient lui-même à $GL_r(A)$ puisqu’il admet $M$ pour inverse. Cela donne une structure de groupe.
+Le renvoi « II.3.d) » dans la définition imprimée de $GL_r(A)$, page 4, désigne III.3d. L’identité appartient à $GL_r(A)$. Les produits y restent puisque $\det(MN)=\det M\det N$ est une unité lorsque les deux facteurs le sont. L’associativité vient du produit matriciel. D’après III.3d, tout $M\in GL_r(A)$ possède un inverse bilatère $N$, lequel appartient lui-même à $GL_r(A)$ puisqu’il admet $M$ pour inverse. Cela donne une structure de groupe.
 
 ### Question IV.1b
 
@@ -443,7 +445,7 @@ Pour une ligne $u$ de $B_{21}$, une colonne $v$ de $B_{12}$ et l’entrée corre
 $$
 P(t)=\det\begin{pmatrix}tI_r+B_{11}&v\\u&b\end{pmatrix}.
 $$
-Il est nul pour tout $t\in\mathbb C$, car $tA+B\in V$. Le coefficient de $t^r$, obtenu en choisissant tous les termes diagonaux $t$, est $b$. Donc $b=0$. Avec $b=0$, un terme en $t^{r-1}$ choisit $r-1$ diagonales et échange l’indice restant $j$ avec le dernier. Sa contribution est $-u_jv_j$, ce qui donne le coefficient $-uv$. Le polynôme étant identiquement nul sur le corps infini $\mathbb C$, on a $uv=0$. Cela vaut pour chaque ligne et chaque colonne, donc $B_{22}=0$ et $B_{21}B_{12}=0$.
+Il est nul pour tout $t\in\mathbb C$, car $tA+B\in V$. Le coefficient de $t^r$, obtenu en choisissant tous les termes diagonaux $t$, est $b$. Donc $b=0$. Avec $b=0$, un terme en $t^{r-1}$ choisit $r-1$ diagonales et échange l’indice restant $j$ avec le dernier. Une fois les $r-1$ diagonales choisies, le déterminant restant est celui du bloc $\left(\begin{smallmatrix}(B_{11})_{jj}&v_j\\ u_j&0\end{smallmatrix}\right)$ et vaut $-u_jv_j$. La somme sur $j$ donne le coefficient $-uv$, y compris pour $r=1$. Le polynôme étant identiquement nul sur le corps infini $\mathbb C$, on a $uv=0$. Cela vaut pour chaque ligne et chaque colonne, donc $B_{22}=0$ et $B_{21}B_{12}=0$.
 
 ![Figure 6 — Le mineur bordé impose d’abord la nullité du bloc inférieur droit. Une fois cette nullité acquise, il impose celle du produit des deux blocs hors diagonale.](figures/v2-blocs.svg)
 

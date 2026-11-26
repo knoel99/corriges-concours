@@ -91,6 +91,67 @@
       "perimetre": "Relecture des 37 questions et sous-questions des deux éditions contre les six pages imprimées du sujet scanné et le rapport. Vérification des arguments sur la génération finie, la descente des identités, des formats des matrices et des rangs. Contrôles des cas extrêmes dans Cauchy–Binet en IV.2 et calcul explicite des indices de la forme trace en V.3a. Figures existantes contrôlées.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Comparaison des 37 réponses et de leurs indications aux six pages imprimées du fac-similé, dans l’ordre des numéros de page. Renvoi interne de la page 4 rectifié en IV.1a. Distinction des hypothèses en III.3a–c et III.3d, justification du coefficient sous-dominant du mineur bordé en V.2a. Contrôle des sept figures du guide et des trois du brut.",
+      "fournisseur": "codex",
+      "agent": "anciens_maths_x_lyon"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "II.1",
+      "II.2a",
+      "II.2b",
+      "II.2c",
+      "II.2d",
+      "II.3a",
+      "II.3b",
+      "II.3c",
+      "II.4",
+      "II.5a",
+      "II.5b",
+      "II.5c",
+      "III.1",
+      "III.2a",
+      "III.2b",
+      "III.2c",
+      "III.2d",
+      "III.3a",
+      "III.3b",
+      "III.3c",
+      "III.3d",
+      "IV.1a",
+      "IV.1b",
+      "IV.2",
+      "IV.3",
+      "V.1",
+      "V.2a",
+      "V.2b",
+      "V.3a",
+      "V.3b",
+      "V.4a",
+      "V.4b"
+    ],
+    "detail": [
+      "I.1–I.5. Génération finie additive et génération comme anneau, exemples et contre-exemples.",
+      "II.1–II.5c. Morphismes, groupes libres, sous-groupes et sous-anneau engendré par les monômes XYᵏ.",
+      "III.1–III.3d. Descente des identités polynomiales, surjectivité et inversibilité sur un anneau commutatif.",
+      "IV.1a–IV.3. Équivalence des matrices, pgcd des mineurs et changement de l’anneau de base.",
+      "V.1–V.4b. Mineurs bordés, polarisation, annulateur et dimension maximale des sous-espaces de petit rang."
+    ]
+  }
 }
