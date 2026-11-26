@@ -27,6 +27,7 @@
 | 2022 | Agro-Véto | BCPST | Biologie | [md](2022/agro-veto/agro-veto_bcpst_biologie_2022/brut.md) | [md](2022/agro-veto/agro-veto_bcpst_biologie_2022/guide.md) |
 | 2023 | Banque PT | PT | Mathématiques C | [md](2023/banque-pt/banque-pt_pt_maths-c_2023/brut.md) | [md](2023/banque-pt/banque-pt_pt_maths-c_2023/guide.md) |
 | 2023 | Agro-Véto | BCPST | Biologie | [md](2023/agro-veto/agro-veto_bcpst_biologie_2023/brut.md) | [md](2023/agro-veto/agro-veto_bcpst_biologie_2023/guide.md) |
+| 2024 | Banque PT | PT | Mathématiques C | [md](2024/banque-pt/banque-pt_pt_maths-c_2024/brut.md) | [md](2024/banque-pt/banque-pt_pt_maths-c_2024/guide.md) |
 | 2024 | Agro-Véto | BCPST | Biologie | [md](2024/agro-veto/agro-veto_bcpst_biologie_2024/brut.md) | [md](2024/agro-veto/agro-veto_bcpst_biologie_2024/guide.md) |
 | 2025 | Agro-Véto | BCPST | Biologie | [md](2025/agro-veto/agro-veto_bcpst_biologie_2025/brut.md) | [md](2025/agro-veto/agro-veto_bcpst_biologie_2025/guide.md) |
 | 2026 | Agro-Véto | BCPST | Biologie | [md](2026/agro-veto/agro-veto_bcpst_biologie_2026/brut.md) | [md](2026/agro-veto/agro-veto_bcpst_biologie_2026/guide.md) |
