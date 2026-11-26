@@ -94,7 +94,7 @@ Organiser le développement autour des effets sur les deux territoires, des parc
 
 **Document 3** · L’article d’Al-Arab examine le mouvement inverse de citadins séduits par le calme et les possibilités d’une vie rurale.
 
-**Document 4** · Arabie21 compare des intentions de départ. La Jordanie atteint 48 %, le Soudan 46 % et l’Égypte 13 % dans les pays figurés.
+**Document 4** · Arabi21 compare des intentions de départ. La Jordanie atteint 48 %, le Soudan 46 % et l’Égypte 13 % dans les pays figurés.
 
 **Document 5** · Dans la caricature libyenne, un homme compte les billets tandis que des mains apparaissent autour d’un bateau en train de sombrer.
 

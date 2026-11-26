@@ -40,9 +40,9 @@ Sport offers another way to see what a measurement adds. CNN describes a chip in
 
 The Guardian had already identified that difficulty in 2015. Professional players might welcome better training while objecting to an employer following their sleep, diet and private activities away from the field. The Raconteur graphic from the same year shows why such concerns extended beyond one team. It mapped large regional markets, particularly in Asia and the Pacific and in North America, and projected increasing shipments. Its figures for later years were forecasts at publication. They indicate commercial expectations, while telling us little about whether individual athletes or patients wanted every projected use.
 
-The New Yorker cartoon approaches the question from the other end of the age spectrum. A child explains, with cheerful certainty, that a device hears everything and that a future version will even read thoughts. The adult’s alarm turns a promise of greater sensitivity into a joke about losing the last private space. Its force comes from the gap between a child’s easy familiarity with an interface and the far more difficult question of consent. Wearable technologies can have a future in both healthcare and sport precisely because they can record what would otherwise pass unnoticed. Their usefulness to the person being measured will depend on whether the setting, purpose and audience of that record remain open to scrutiny.
+The New Yorker cartoon approaches the question from the other end of the age spectrum. A child explains, with cheerful certainty, that a device hears everything and that a future version will even read thoughts. The listener’s anxious expression turns a promise of greater sensitivity into a joke about losing the last private space. Its force comes from the gap between a child’s easy familiarity with an interface and the far more difficult question of consent. Wearable technologies can have a future in both healthcare and sport precisely because they can record what would otherwise pass unnoticed. Their usefulness to the person being measured will depend on whether the setting, purpose and audience of that record remain open to scrutiny.
 
-**(472 words, title included)**
+**(473 words, title included)**
 
 ![Une donnée, plusieurs destinataires](figures/lecture-en.svg)
 
@@ -106,4 +106,4 @@ Resta da capire quale vulnerabilità sopravviva al soccorso immediato. Se un cre
 
 **(468 parole, titolo compreso)**
 
-![De la dépendance au budget public](figures/lecture-it.svg)
+![Principales mesures du plan italien de 2022](figures/lecture-it.svg)
