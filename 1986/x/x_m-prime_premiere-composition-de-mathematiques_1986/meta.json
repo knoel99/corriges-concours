@@ -1,0 +1,408 @@
+{
+  "slug": "x_m-prime_premiere-composition-de-mathematiques_1986",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "M prime",
+    "filiere_historique": "M′",
+    "matiere": "Première composition de mathématiques",
+    "annee": 1986,
+    "modalite": "écrit"
+  },
+  "questions": 34,
+  "duree_heures": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-6f8234ba13f28e1ec0fe",
+    "sujet_sha256": "71fc15284e703dc6ae9c13766d55e8fc016bce4928ba42b63e820ccbbffa4155",
+    "notice_ups": "m86xm1",
+    "calendrier": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000330227",
+    "provenance": "Le fac-similé m86xm1eb donne les pages 64 et 65 du recueil et quatre feuillets du sujet. La note UPS en bas de la dernière vue signale une difficulté en III.5.c. Le maximum de G/g permet de conclure cette question, avant le dessin demandé en III.6."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "document": "m86xm1eb",
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-6f8234ba13f28e1ec0fe",
+      "sha256": "71fc15284e703dc6ae9c13766d55e8fc016bce4928ba42b63e820ccbbffa4155",
+      "pages": 2,
+      "rendu_page_sha256": [
+        "dcacd4e54c0c1018a4987f0ad1878b6c180713d09c3fc548a9653676842ff310",
+        "3e5c2470dcd7fc12202dc1d566e6d030ffc918d552d62a0a8af172c084c4d103"
+      ]
+    },
+    "transcription": {
+      "document": "m86xm1ea",
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-c5ffe9f8f0848a1c7502",
+      "sha256": "0dbeb3040312cafe8b969a36064862e4694fe05cbbd9260b13fee6c2b0c4c19b",
+      "pages": 5,
+      "rendu_page_sha256": [
+        "b8c74b31514ad81739985236e1a83dea53bca7a068226a59f15cedf19ed6a490",
+        "8114d2556b6b83ffd8653e0381f5c67b6726bbffa8aede3457d95c91640650d3",
+        "321ffe1616f0f4283e1b688e9f3108dc698f4d445b3d39a9cf31cacafac128f2",
+        "18969717b6b0b5ba99e52efb63c20f58f9787930d2cd4a3c231954073ee301ce",
+        "2163d0dc5a443583d9863fc9c8ceeef1e7d923f18a990bca8cf8ec01ca9267cd"
+      ]
+    },
+    "corrige_archive": {
+      "document": "m86xm1ca",
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-7e177953727bb7926c06",
+      "sha256": "6210a06a763142c7760d183f21513362b85bc2c6eb739567c7cc4551ac60d277",
+      "pages": 5,
+      "rendu_page_sha256": [
+        "9e2aaddf9e0082f92ece26b910113323b01ab456eb37c8d0d726381898c9d3b2",
+        "88ee0ca53f4a470d61eaee6817528def03bcc3ea81fa31bac81aa315a03f26d1",
+        "c5c30b8fc32630b3bdcad5e7e522dd38c2297343586374988fac3e0116e5c7c2",
+        "ac222b27e090c1fa04bd86f2d3c1a0a39fa481baaa73b23503787ec8bfc76aa5",
+        "c41d067bfa24038c08188a6b5a48a5e69159717a0e26dd81cfd915bae54e1592"
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "II.6",
+      "numero": 1,
+      "fichier": "figures/trois-trajectoires.svg",
+      "legende": "Les trois courbes se croisent en A. À gauche, la branche de pente forte s’arrête sur l’axe horizontal, la branche régulière atteint l’axe vertical et la branche de pente faible croît sans borne vers zéro."
+    },
+    {
+      "question": "III.6",
+      "numero": 2,
+      "fichier": "figures/solution-paire.svg",
+      "legende": "Solution régulière normalisée par sa valeur 1 à l’origine. Les cercles ouverts indiquent les extrémités du domaine maximal."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "II.1.a",
+      "II.1.b",
+      "II.1.c",
+      "II.2.a",
+      "II.2.b",
+      "II.3.a",
+      "II.3.b",
+      "II.3.c",
+      "II.4.a",
+      "II.4.b",
+      "II.5.a",
+      "II.5.b",
+      "II.5.c",
+      "II.5.d",
+      "II.6",
+      "III.1.a",
+      "III.1.b",
+      "III.2.a",
+      "III.2.b",
+      "III.2.c",
+      "III.3.a",
+      "III.3.b",
+      "III.3.c",
+      "III.4.a",
+      "III.4.b",
+      "III.4.c",
+      "III.4.d",
+      "III.5.a",
+      "III.5.b",
+      "III.5.c",
+      "III.6"
+    ],
+    "repere_par_question": [
+      {
+        "question": "I.1",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 1
+      },
+      {
+        "question": "I.2",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 1
+      },
+      {
+        "question": "I.3",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 1
+      },
+      {
+        "question": "II.1.a",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 1
+      },
+      {
+        "question": "II.1.b",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 2
+      },
+      {
+        "question": "II.1.c",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 2
+      },
+      {
+        "question": "II.2.a",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 2
+      },
+      {
+        "question": "II.2.b",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 2
+      },
+      {
+        "question": "II.3.a",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 2
+      },
+      {
+        "question": "II.3.b",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 2
+      },
+      {
+        "question": "II.3.c",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 2
+      },
+      {
+        "question": "II.4.a",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 2
+      },
+      {
+        "question": "II.4.b",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 2
+      },
+      {
+        "question": "II.5.a",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      },
+      {
+        "question": "II.5.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      },
+      {
+        "question": "II.5.c",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      },
+      {
+        "question": "II.5.d",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      },
+      {
+        "question": "II.6",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      },
+      {
+        "question": "III.1.a",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      },
+      {
+        "question": "III.1.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      },
+      {
+        "question": "III.2.a",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      },
+      {
+        "question": "III.2.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 4
+      },
+      {
+        "question": "III.2.c",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 4
+      },
+      {
+        "question": "III.3.a",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 4
+      },
+      {
+        "question": "III.3.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 4
+      },
+      {
+        "question": "III.3.c",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 4
+      },
+      {
+        "question": "III.4.a",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 4
+      },
+      {
+        "question": "III.4.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 4
+      },
+      {
+        "question": "III.4.c",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 4
+      },
+      {
+        "question": "III.4.d",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 4
+      },
+      {
+        "question": "III.5.a",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 4
+      },
+      {
+        "question": "III.5.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 4
+      },
+      {
+        "question": "III.5.c",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 4
+      },
+      {
+        "question": "III.6",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 4
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Le fac-similé m86xm1eb donne les pages 64 et 65 du recueil et quatre feuillets du sujet. La note UPS en bas de la dernière vue signale une difficulté en III.5.c. Le maximum de G/g permet de conclure cette question, avant le dessin demandé en III.6."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "x_hist_1986",
+      "session": "x_hist_1986",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction originale des 34 réponses, des indications et de deux figures, à partir du fac-similé. Le fac-similé m86xm1eb donne les pages 64 et 65 du recueil et quatre feuillets du sujet. La note UPS en bas de la dernière vue signale une difficulté en III.5.c. Le maximum de G/g permet de conclure cette question, avant le dessin demandé en III.6."
+    }
+  ]
+}
