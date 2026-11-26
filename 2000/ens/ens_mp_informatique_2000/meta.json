@@ -1,0 +1,71 @@
+{
+  "slug": "ens_mp_informatique_2000",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Informatique",
+    "annee": 2000
+  },
+  "intitule": "Graphes pondérés et séquentialité des transducteurs",
+  "questions": 22,
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "reprise_physique_ulm",
+      "session": "reprise_physique_ulm",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Résolution des 22 questions énumérées et réalisation de 2 figures."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/ens_option-info_mp_2000.pdf",
+    "sujet_sha256": "25bf57de6dd262bebb4fe7ad0b38cc84ea545f18e54e58178e8d542317bf8be6",
+    "garde": "La garde nomme les ENS de Paris, Lyon et Cachan pour la filière MP. Le sujet de quatre heures étudie les multigraphes orientés et les transducteurs. Fac-similé publié par WikiPrépa."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "2.3",
+      "fichier": "figures/retenue.svg",
+      "legende": "Addition de droite à gauche. Chaque étiquette indique chiffre lu / bit émis. Le chiffre inscrit dans un cercle est la retenue."
+    },
+    {
+      "numero": 2,
+      "question": "3.8",
+      "fichier": "figures/residus.svg",
+      "legende": "Transducteur des résidus de la question 2.4. Les étiquettes au-dessus des flèches sont les sorties, chaque flèche lit a. La ligne du bas donne la sortie finale."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2.a",
+      "1.2.b",
+      "1.2.c",
+      "1.3",
+      "1.4",
+      "1.5",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "3.7",
+      "3.8",
+      "3.9",
+      "3.10"
+    ]
+  }
+}
