@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Table sismique AZALÉE.** Épreuve de cinq heures, calculatrice interdite. Le sujet est accompagné des annexes A et B et d’un cahier de réponses. Ses 47 questions se répartissent en trois parties.
 
 [Sujet et cahier officiels](https://www.banquept.fr/documents/2019/si_a_2019_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2019/rapport_si_a_ecrit_2019.pdf)
@@ -164,7 +166,7 @@ Le moment élémentaire est $-\mu pR(\vec e_r\times\vec t)\,dS$. Avec la derniè
 
 #### Solution
 
-En utilisant les résultats fournis par le sujet, $\alpha=3\mu/2$ et $\beta=3\mu R/y_{\max}=6\mu$. Les deux rapports doivent être strictement inférieurs à 0,10, donc $\mu<1/60\simeq0{,}0167$. Ce faible frottement impose une lubrification adaptée ; l'hypothèse de rotule parfaite doit être vérifiée en conditions d'essai.
+En utilisant les résultats fournis par le sujet, $\alpha=3\mu/2$ et $\beta=3\mu R/y_{\max}=6\mu$. Les deux rapports doivent être strictement inférieurs à 0,10, donc $\mu<1/60\simeq0{,}0167$. Ce faible frottement impose une lubrification adaptée ; l'hypothèse de rotule parfaite doit être vérifiée en conditions d'essai. Contrôle du feuillet. Les deux intégrales tangentielles imprimées diffèrent de celles du modèle géométrique annoncé. Sur le disque unité projeté, $\cos\theta\,dS=R^2\,dx\,dy$. À $x$ fixé, posons $b=\sqrt{1-x^2}$ ; $t_y=-\sqrt{b^2-y^2}/b$ et $(\vec e_r\times\vec t)_x=b$. En intégrant pour $|y|\leq b$, puis $|x|\leq1$, on obtient respectivement $-\pi^2 R^2/4$ et $8R^2/3$. Avec ces intégrales recalculées, $\alpha=3\pi\mu/8$, $\beta=4\mu R/(\pi y_{\max})$ et la borne devient $\mu<\pi/80\simeq0{,}0393$. Le premier seuil est la réponse suivant les indications du concours.
 
 ## II. Transmission hydraulique et comportement en boucle fermée
 
@@ -311,7 +313,7 @@ $\varepsilon=K_{ae}A_c-CA_t$. Pour que $a_c=a_t$ donne un écart nul pour toute 
 
 #### Solution
 
-Les valeurs imposées donnent $CK_sK_{4v}=10^{-3}$ et $L_o(p)=10^{-3}/[p(1+p^2/1500^2)]$ pour $K_{co}=1$. Le gain asymptotique vaut $-60-20\log_{10}\omega$ avant 1500 rad/s ; après la cassure ajouter $-40\log_{10}(\omega/1500)$. Pentes successives $-20$ et $-60$ dB/décade. Phase $-90^\circ$ avant le pôle double conjugué sur l'axe imaginaire, puis $-270^\circ$. La phase est indéfinie en 1500.
+Les valeurs imposées donnent $CK_sK_{4v}=10^{-3}$ et $L_o(p)=10^{-3}/[p(1+p^2/1500^2)]$ pour $K_{co}=1$. Le gain asymptotique vaut $-60-20\log_{10}\omega$ avant 1500 rad/s ; après la cassure ajouter $-40\log_{10}(\omega/1500)$. Pentes successives $-20$ et $-60$ dB/décade. Phase $-90^\circ$ avant la pulsation de la paire de pôles conjugués sur l'axe imaginaire, puis $-270^\circ$. La phase est indéfinie en 1500.
 
 ![Q31 à Q33 : Bode asymptotique et réel, gain du correcteur égal à un](figures/bode-verin.svg)
 
@@ -355,7 +357,7 @@ Ajouter un retour négatif de gain $\delta$ de $P_r$ au comparateur d'entrée, e
 
 #### Solution
 
-Posons $r=1000/1500=2/3$. À coupure maintenue, la marge de phase vaut $90^\circ-\arctan[2\xi_v r/(1-r^2)]$. Imposer $55^\circ$ donne la **borne supérieure** $\xi_v\leq0{,}292$. Pour traduire la valeur limite en débit, $\delta=2\xi_v S_e\sqrt{L/M_e}$. Avec les paramètres physiques par vérin de Q28 on obtient $3{,}69\times10^{-10}\ \mathrm{m^3\,s^{-1}\,Pa^{-1}}$, soit environ 266 L/min à 120 bar. Le déplacement seul consomme $Sv_{\max}=2100$ L/min (2000 nominalement dans l'annexe) ; trois valves plafonnent nominalement à 2100 L/min. Ajouter cette fuite excède cette capacité. Les paramètres dynamiques imposés p. 19 diffèrent des constantes déduites de Q28. En les interprétant comme un vérin équivalent avec le même $L$, $1/S_e=2$ et $\omega_{4v}=1500$ donnent $S_e=0{,}50$ et $M_e\simeq22\,222$ en SI. La même borne formelle donne alors $\delta=4{,}38\times10^{-9}$, soit environ 3150 L/min pour ce modèle équivalent.
+Posons $r=1000/1500=2/3$. À coupure maintenue, la marge de phase vaut $90^\circ-\arctan[2\xi_v r/(1-r^2)]$. Imposer $55^\circ$ donne la **borne supérieure** $\xi_v\leq0{,}292$. Pour traduire la valeur limite en débit, $\delta=2\xi_v S_e\sqrt{L/M_e}$. Avec les paramètres physiques par vérin de Q28 on obtient $3{,}69\times10^{-10}\ \mathrm{m^3\,s^{-1}\,Pa^{-1}}$, soit environ 266 L/min à 120 bar. Le déplacement seul consomme $Sv_{\max}=2100$ L/min (2000 nominalement dans l'annexe) ; trois valves plafonnent nominalement à 2100 L/min. Ajouter cette fuite excède cette capacité. Les paramètres dynamiques imposés p. 19 diffèrent des constantes déduites de Q28. En les interprétant comme un vérin équivalent avec le même $L$, $1/S_e=2$ et $\omega_{4v}=1500$ donnent $S_e=0{,}50$ et $M_e\simeq22\,222$ en SI. La même borne formelle donne alors $\delta=4{,}38\times10^{-9}$, soit environ 3150 L/min pour ce modèle équivalent. Peut-on satisfaire les deux marges ? À $\omega_{4v}$ la phase vaut $-180^\circ$ et le module vaut $r\sqrt{(1-r^2)^2+4\xi_v^2r^2}/(2\xi_v)>r^2$. La marge de gain est donc inférieure à $-40\log_{10}r=7{,}04$ dB, alors que 12 dB sont requis. Une coupure plus élevée sous la résonance aggrave cette borne ; au-dessus de la résonance la marge de phase est négative. Aucune fuite ne garantit simultanément les deux marges et la coupure spécifiées. Les chiffres précédents sont des limites de phase, pas un réglage réalisable pour tout le cahier des charges.
 
 ### Question 36 — Redimensionnement du vérin
 
@@ -442,7 +444,7 @@ Avec $\omega_d=10^5$ et $\xi_d=1$, $L_o=CK_sK_{4v}K_{i2}/[p(1+p/\omega_d)^2]$. L
 
 #### Solution
 
-Le modèle dominant donne la réponse fermée $1000/(p+1000)$, une bande à $-3$ dB de $1000$ rad/s et une marge de phase de $90^\circ$. Le modèle complet donne environ $89^\circ$ et une marge de gain proche de 46 dB ; ces deux marges dépassent 55° et 12 dB. L'erreur de traînage vaut presque $1/1000=10^{-3}\ \mathrm{m\,s^{-2}}$, deux fois le plafond $5\times10^{-4}$. La bande et les marges sont satisfaites, la précision en rampe reste insuffisante.
+Le modèle dominant donne la réponse fermée $1000/(p+1000)$, une bande à $-3$ dB de $1000$ rad/s et une marge de phase de $90^\circ$. Le modèle complet donne une bande fermée à −3 dB proche de 1021 rad/s, une marge de phase d’environ $89^\circ$ et une marge de gain proche de 46 dB ; ces deux marges dépassent 55° et 12 dB. L'erreur de traînage vaut presque $1/1000=10^{-3}\ \mathrm{m\,s^{-2}}$, deux fois le plafond $5\times10^{-4}$. La bande et les marges sont satisfaites, la précision en rampe reste insuffisante.
 
 ### Question 43 — Retard pur et erreur mesurée
 
@@ -495,7 +497,7 @@ Dans le modèle dominant, $\phi=-180^\circ-(180/\pi)\omega T_r$. À 10, 100, 100
 
 #### Solution
 
-La figure 24 montre un décalage au démarrage, puis une convergence sur la droite de pente unitaire. Vers 20–30 ms, la différence moyenne est voisine de zéro à l'échelle du tracé, compatible avec $5\times10^{-4}\ \mathrm{m\,s^{-2}}$. Le comportement mesuré valide la poursuite sur cet essai. Une rampe seule ne mesure pas les marges fréquentielles.
+La figure 24 montre un décalage au démarrage, puis une convergence sur la droite de pente unitaire. Vers 20–30 ms, la différence moyenne est voisine de zéro à l'échelle du tracé, compatible avec $5\times10^{-4}\ \mathrm{m\,s^{-2}}$. Le comportement mesuré valide la poursuite sur cet essai. Une rampe seule ne mesure pas les marges fréquentielles. Pour le modèle complet avec le retard lu à 0,4 ms et le réglage de Q46, le passage de phase à $-180^\circ$ se situe près de $3{,}0\times10^3$ rad/s et la marge de gain vaut environ 9,9 dB, inférieure à 12 dB. Un contrôle fréquentiel indépendant est donc nécessaire pour valider toutes les exigences.
 
 ![Convergence de la réponse mesurée sur la rampe de consigne](figures/rampe.svg)
 

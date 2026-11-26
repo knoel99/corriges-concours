@@ -450,6 +450,7 @@
         "question": 33,
         "page_sujet": 19,
         "pages_cahier": [
+          47,
           48
         ]
       },
@@ -568,6 +569,23 @@
       "modifications": true,
       "phase": "redaction",
       "perimetre": "Résolution des 47 questions et rédaction des indications des deux éditions à partir du sujet et des grilles fournis."
+    },
+    {
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "session": "banque_pt_si_a_2019",
+      "modifications": true,
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "perimetre": "Relecture des mouvements de la table, contacts, modèles hydrauliques et réglages temporels et fréquentiels à partir des grilles officielles."
     }
-  ]
+  ],
+  "date_revision": "2026-11-26"
 }
