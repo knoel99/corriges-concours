@@ -29,7 +29,7 @@
     "index_organisateur": "https://www.ens.psl.eu/rapports-et-sujets-2026-bcpst",
     "sujet_sha256": "ce0653ccf99a04728fdd7d9ac0ca35ed6fc9d9c2dc329c4651d6dd86b0a4dc30"
   },
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "provenance": {
     "redaction": {
       "provider": "codex",
@@ -77,6 +77,32 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Distinction entre revendication de 2024 et règle adoptée en 2025, dénominateur et cumul des réponses de l’enquête de 2022, lien entre dons, textiles collectés et déchets exportés ; restitution du contrefactuel en version."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "fin_langues_x_interens",
+      "agent": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Page 5 du PDF officiel, trois exercices, notés sur 8, 8 et 4. Dans les deux éditions, la synthèse des documents 1 à 3 compte 259 mots, la réponse personnelle 241 mots, par espaces. La traduction française couvre le passage demandé en entier. Le défilé de Greenpeace et les règles européennes sont rapprochés du diagramme sur les pratiques de tri et de don. La prise de position évalue l’efficacité des règles annoncées. La version rétablit le conditionnel passé et le rôle des militants dans la collecte à Kantamanto.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I",
+      "II",
+      "III"
+    ],
+    "precision": "Page 5 du PDF officiel, trois exercices, notés sur 8, 8 et 4. Dans les deux éditions, la synthèse des documents 1 à 3 compte 259 mots, la réponse personnelle 241 mots, par espaces. La traduction française couvre le passage demandé en entier. Le défilé de Greenpeace et les règles européennes sont rapprochés du diagramme sur les pratiques de tri et de don. La prise de position évalue l’efficacité des règles annoncées. La version rétablit le conditionnel passé et le rôle des militants dans la collecte à Kantamanto."
+  }
 }
