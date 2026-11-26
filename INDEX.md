@@ -683,6 +683,7 @@
 | 2022 | BEL | AL | Chinois (thème Lyon) | [md](2022/bel/bel_al_chinois-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_chinois-theme-lyon_2022/guide.md) |
 | 2022 | BEL | AL | Deuxième composition de philosophie (Lyon) | [md](2022/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2022/brut.md) | [md](2022/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2022/guide.md) |
 | 2023 | BEL | AL | Deuxième composition de philosophie (Lyon) | [md](2023/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2023/brut.md) | [md](2023/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2023/guide.md) |
+| 2024 | BEL | AL | Deuxième composition de philosophie (Lyon) | [md](2024/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2024/brut.md) | [md](2024/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2024/guide.md) |
 | 2026 | BEL | AL | Deuxième composition de philosophie (Lyon) | [md](2026/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2026/brut.md) | [md](2026/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Espagnol (commentaire et traduction) | [md](2026/bel/bel_al_espagnol-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_espagnol-commentaire-et-traduction_2026/guide.md) |
 | 2026 | BEL | AL | Espagnol (oral option Calderón, vers 445 à 542) | [md](2026/bel/bel_al_espagnol-oral-option-calderon-vers-445-a-542_2026/brut.md) | [md](2026/bel/bel_al_espagnol-oral-option-calderon-vers-445-a-542_2026/guide.md) |
