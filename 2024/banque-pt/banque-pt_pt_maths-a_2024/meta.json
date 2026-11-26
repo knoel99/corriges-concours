@@ -1,0 +1,345 @@
+{
+  "slug": "banque-pt_pt_maths-a_2024",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths A",
+    "intitule": "Épreuve de Mathématiques A",
+    "annee": 2024,
+    "duree": "4 h"
+  },
+  "questions": 57,
+  "redaction": "Proposition pédagogique non officielle, rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2024/math_a_2024_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2024/rapport_math_a_ecrit_2024.pdf",
+    "sujet_sha256": "e817d07aabbaa6ebc8ea33a0ebb6876920dd69d946b15c5038312c4d2a603779",
+    "rapport_jury_sha256": "09c572b98dbdf7a5b3c6b897446bf309d119cff14796b9e083405dc811b64a6c",
+    "observation_rapport": "Le jury distingue la possibilité algébrique du jeu équitable de sa réalisation avec un paquet fini (partie I.C). Il demande ensuite de préciser le sous-espace de projection, de démontrer le minimum global et de légender les axes du graphique des inverses des mesures (p. 6–8)."
+  },
+  "figures": [
+    {
+      "question": "II.4",
+      "fichier": "figures/residus.svg",
+      "legende": "Les quatre segments verticaux joignent les points observés aux points de la droite de même abscisse."
+    },
+    {
+      "question": "II.9.a",
+      "fichier": "figures/mesures.svg",
+      "legende": "Les quatre mesures réciproques sur un quadrillage gradué. La droite représente l’ajustement calculé en II.10."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.A.1.a",
+      "I.A.1.b",
+      "I.A.2.a",
+      "I.A.2.b",
+      "I.A.3",
+      "I.A.4.a",
+      "I.A.4.b",
+      "I.A.5",
+      "I.A.6.a",
+      "I.A.6.b",
+      "I.A.6.c",
+      "I.A.6.d",
+      "I.A.7",
+      "I.A.8",
+      "I.A.9",
+      "I.B.1.a",
+      "I.B.1.b",
+      "I.B.1.c",
+      "I.B.1.d",
+      "I.B.1.e",
+      "I.B.2",
+      "I.B.3.a",
+      "I.B.3.b",
+      "I.B.3.c",
+      "I.B.3.d",
+      "I.B.3.e",
+      "I.B.3.f",
+      "I.B.3.g",
+      "I.C.1",
+      "I.C.2.a",
+      "I.C.2.b",
+      "I.C.2.c",
+      "I.C.3",
+      "I.C.4",
+      "I.C.5",
+      "I.C.6",
+      "II.1.a",
+      "II.1.b",
+      "II.1.c",
+      "II.2.a",
+      "II.2.b",
+      "II.2.c",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6.a",
+      "II.6.b",
+      "II.6.c",
+      "II.7.a",
+      "II.7.b",
+      "II.8.a",
+      "II.8.b",
+      "II.9.a",
+      "II.9.b",
+      "II.10.a",
+      "II.10.b",
+      "II.10.c"
+    ],
+    "repere_par_question": [
+      {
+        "question": "I.A.1.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.A.1.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.A.2.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.A.2.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.A.3",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.A.4.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.A.4.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.A.5",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.A.6.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.A.6.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.A.6.c",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.A.6.d",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.A.7",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.A.8",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.A.9",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.B.1.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.B.1.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.B.1.c",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.B.1.d",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.B.1.e",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.B.2",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.B.3.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.B.3.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.B.3.c",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.B.3.d",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.B.3.e",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.B.3.f",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.B.3.g",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.C.1",
+        "page_pdf": 4
+      },
+      {
+        "question": "I.C.2.a",
+        "page_pdf": 4
+      },
+      {
+        "question": "I.C.2.b",
+        "page_pdf": 4
+      },
+      {
+        "question": "I.C.2.c",
+        "page_pdf": 4
+      },
+      {
+        "question": "I.C.3",
+        "page_pdf": 4
+      },
+      {
+        "question": "I.C.4",
+        "page_pdf": 4
+      },
+      {
+        "question": "I.C.5",
+        "page_pdf": 4
+      },
+      {
+        "question": "I.C.6",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.1.a",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.1.b",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.1.c",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.2.a",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.2.b",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.2.c",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.3",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.4",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.5",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.6.a",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.6.b",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.6.c",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.7.a",
+        "page_pdf": 6
+      },
+      {
+        "question": "II.7.b",
+        "page_pdf": 6
+      },
+      {
+        "question": "II.8.a",
+        "page_pdf": 6
+      },
+      {
+        "question": "II.8.b",
+        "page_pdf": 6
+      },
+      {
+        "question": "II.9.a",
+        "page_pdf": 6
+      },
+      {
+        "question": "II.9.b",
+        "page_pdf": 6
+      },
+      {
+        "question": "II.10.a",
+        "page_pdf": 6
+      },
+      {
+        "question": "II.10.b",
+        "page_pdf": 6
+      },
+      {
+        "question": "II.10.c",
+        "page_pdf": 6
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "57 consignes ou sous-consignes numérotées traitées dans chaque édition. Les éditions contiennent les deux schémas demandés, la preuve des conditions de minimum global et les calculs de seuil avec l’arrondi à l’heure."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "fui_physique_un",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture du sujet et du rapport annuels, rédaction et vérification des deux éditions illustrées et du décompte par page. Les éditions contiennent les deux schémas demandés, la preuve des conditions de minimum global et les calculs de seuil avec l’arrondi à l’heure."
+    }
+  ]
+}
