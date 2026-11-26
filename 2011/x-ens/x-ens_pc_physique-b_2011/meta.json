@@ -1,0 +1,93 @@
+{
+  "slug": "x-ens_pc_physique-b_2011",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Physique B",
+    "annee": 2011
+  },
+  "intitule": "Activité optique",
+  "questions": 30,
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "reprise_physique_ulm",
+      "session": "reprise_physique_ulm",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": false,
+      "perimetre": "Vérification du sens de rotation, de la moyenne sur la sphère et des déviations aux deux interfaces."
+    },
+    {
+      "phase": "redaction",
+      "agent": "reprise_physique_ulm",
+      "session": "reprise_physique_ulm",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Résolution des 30 questions énumérées et réalisation de 2 figures."
+    }
+  ],
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2011/2011%20PC%20SUJET%20ECRIT%20PHYSIQUE%20B%20-XELC.pdf",
+    "sujet_sha256": "74cf64bc96c1f13a20e43c933a2b17594473add8ef85b2d1696ab5040bd4823e",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2011/rap_ecrit_physique_b_xelc_pc2011.pdf",
+    "rapport_sha256": "616a14da3dfa5d9b775ef9257ced8caab167c8134a9261b58c221c73997e64ee",
+    "garde": "XELC · École polytechnique, ESPCI, ENS de Lyon et ENS de Cachan · 4 heures"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V.1.2",
+      "fichier": "figures/prismes.svg",
+      "legende": "Trajets des deux modes circulaires. Les variations de pente sont amplifiées pour la lecture."
+    },
+    {
+      "numero": 2,
+      "question": "V.2.3",
+      "fichier": "figures/cavite.svg",
+      "legende": "Addition des cinq premières contributions à résonance pour un effet Faraday et une activité naturelle."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "III.1.1",
+      "III.1.2",
+      "III.1.3",
+      "III.1.4",
+      "III.1.5",
+      "III.1.6",
+      "III.2.1",
+      "III.2.2",
+      "III.2.3",
+      "IV.1.1",
+      "IV.1.2",
+      "IV.1.3",
+      "IV.1.4",
+      "IV.1.5",
+      "IV.1.6",
+      "IV.1.7",
+      "IV.1.8",
+      "IV.2.1",
+      "IV.2.2",
+      "V.1.1",
+      "V.1.2",
+      "V.2.1",
+      "V.2.2",
+      "V.2.3"
+    ]
+  }
+}
