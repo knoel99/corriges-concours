@@ -171,6 +171,7 @@
 | 2026 | BEL | AL | Commentaire littéraire (Ulm) | [md](2026/bel/bel_al_commentaire-litteraire-ulm_2026/brut.md) | [md](2026/bel/bel_al_commentaire-litteraire-ulm_2026/guide.md) |
 | 2026 | BEL | AL | Commentaire philosophique (Ulm) | [md](2026/bel/bel_al_commentaire-philosophique-ulm_2026/brut.md) | [md](2026/bel/bel_al_commentaire-philosophique-ulm_2026/guide.md) |
 | 2024 | Agro-Véto | BCPST | Anglais | [md](2024/agro-veto/agro-veto_bcpst_anglais_2024/brut.md) | [md](2024/agro-veto/agro-veto_bcpst_anglais_2024/guide.md) |
+| 2026 | BEL | AL | Latin (oral option 19 juin) | [md](2026/bel/bel_al_latin-oral-option-19-juin_2026/brut.md) | [md](2026/bel/bel_al_latin-oral-option-19-juin_2026/guide.md) |
 | 2017 | BEL | B/L | Allemand | [md](2017/bel/bel_bl_allemand_2017/brut.md) | [md](2017/bel/bel_bl_allemand_2017/guide.md) |
 | 2017 | BEL | B/L | Anglais | [md](2017/bel/bel_bl_anglais_2017/brut.md) | [md](2017/bel/bel_bl_anglais_2017/guide.md) |
 | 2017 | BEL | BL | Arabe | [md](2017/bel/bel_bl_arabe_2017/brut.md) | [md](2017/bel/bel_bl_arabe_2017/guide.md) |
@@ -178,6 +179,7 @@
 | 2017 | BEL | B/L | Italien | [md](2017/bel/bel_bl_italien_2017/brut.md) | [md](2017/bel/bel_bl_italien_2017/guide.md) |
 | 2017 | BEL | B/L | Russe | [md](2017/bel/bel_bl_russe_2017/brut.md) | [md](2017/bel/bel_bl_russe_2017/guide.md) |
 | 2011 | ENS de Lyon | PC | Physique-chimie | [md](2011/ens-de-lyon/ens-de-lyon_pc_physique-chimie_2011/brut.md) | [md](2011/ens-de-lyon/ens-de-lyon_pc_physique-chimie_2011/guide.md) |
+| 2005 | ENS de Lyon | Second concours | Mathématiques | [md](2005/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2005/brut.md) | [md](2005/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2005/guide.md) |
 | 2013 | ENS de Lyon | Second concours | Mathématiques | [md](2013/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2013/brut.md) | [md](2013/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2013/guide.md) |
 | 2014 | ENS de Lyon | Second concours | Mathématiques | [md](2014/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2014/brut.md) | [md](2014/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2014/guide.md) |
 | 2016 | ENS de Lyon | Second concours | Mathématiques | [md](2016/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2016/brut.md) | [md](2016/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2016/guide.md) |
@@ -1791,6 +1793,7 @@
 | 2021 | X-ENS | PC | Physique B | [md](2021/x-ens/x-ens_pc_physique-b_2021/brut.md) | [md](2021/x-ens/x-ens_pc_physique-b_2021/guide.md) |
 | 2022 | X-ENS | PC | Physique B | [md](2022/x-ens/x-ens_pc_physique-b_2022/brut.md) | [md](2022/x-ens/x-ens_pc_physique-b_2022/guide.md) |
 | 2026 | X-ENS | PC | Physique B | [md](2026/x-ens/x-ens_pc_physique-b_2026/brut.md) | [md](2026/x-ens/x-ens_pc_physique-b_2026/guide.md) |
+| 2023 | X-ENS | PSI | Maths PSI | [md](2023/x-ens/x-ens_psi_maths-psi_2023/brut.md) | [md](2023/x-ens/x-ens_psi_maths-psi_2023/guide.md) |
 | 2025 | X-ENS | PSI | Maths PSI | [md](2025/x-ens/x-ens_psi_maths-psi_2025/brut.md) | [md](2025/x-ens/x-ens_psi_maths-psi_2025/guide.md) |
 | 2026 | X-ENS | PSI | Maths PSI | [md](2026/x-ens/x-ens_psi_maths-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_maths-psi_2026/guide.md) |
 | 2015 | X-ENS | PSI | Physique PSI | [md](2015/x-ens/x-ens_psi_physique-psi_2015/brut.md) | [md](2015/x-ens/x-ens_psi_physique-psi_2015/guide.md) |
@@ -1802,6 +1805,7 @@
 | 2021 | X-ENS | PSI | Physique PSI | [md](2021/x-ens/x-ens_psi_physique-psi_2021/brut.md) | [md](2021/x-ens/x-ens_psi_physique-psi_2021/guide.md) |
 | 2022 | X-ENS | PSI | Physique PSI | [md](2022/x-ens/x-ens_psi_physique-psi_2022/brut.md) | [md](2022/x-ens/x-ens_psi_physique-psi_2022/guide.md) |
 | 2020 | X | FUI FF 1 | Mathématiques | [md](2020/x/x_fui-ff-1_mathematiques_2020/brut.md) | [md](2020/x/x_fui-ff-1_mathematiques_2020/guide.md) |
+| 2022 | X | FUI FF 1 | Mathématiques | [md](2022/x/x_fui-ff-1_mathematiques_2022/brut.md) | [md](2022/x/x_fui-ff-1_mathematiques_2022/guide.md) |
 | 2005 | X | MP-PC | Allemand | [md](2005/x/x_mp-pc_allemand_2005/brut.md) | [md](2005/x/x_mp-pc_allemand_2005/guide.md) |
 | 2006 | X | MP-PC | Allemand | [md](2006/x/x_mp-pc_allemand_2006/brut.md) | [md](2006/x/x_mp-pc_allemand_2006/guide.md) |
 | 2007 | X | MP-PC | Allemand | [md](2007/x/x_mp-pc_allemand_2007/brut.md) | [md](2007/x/x_mp-pc_allemand_2007/guide.md) |
