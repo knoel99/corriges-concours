@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="335" viewBox="0 0 880 335" role="img" aria-labelledby="titre desc">
+  <title id="titre">Du souhait d’aménagement au bulletin de vote</title>
+  <desc id="desc">Trois étapes illustratives d’un budget participatif. Seules les demandes déposées puis jugées recevables arrivent au bulletin. Une observation en amont et les dossiers de la commission éclairent donc des sélections différentes.</desc>
+  <rect width="880" height="335" rx="8" fill="#fff"/>
+  <g font-family="DejaVu Sans, sans-serif" fill="#173641">
+    <g fill="#eaf3f1" stroke="#2e625e" stroke-width="2">
+      <rect x="12" y="18" width="256" height="67" rx="6"/>
+      <rect x="312" y="18" width="256" height="67" rx="6"/>
+      <rect x="612" y="18" width="256" height="67" rx="6"/>
+    </g>
+    <g font-size="20" font-weight="bold" text-anchor="middle">
+      <text x="140" y="60">Demande discutée</text>
+      <text x="440" y="60">Dossier déposé</text>
+      <text x="740" y="60">Projet au bulletin</text>
+    </g>
+    <g fill="#2e625e" stroke="#2e625e" stroke-width="2">
+      <path d="M270 52h33m-8-6 9 6-9 6" fill="none"/>
+      <path d="M570 52h33m-8-6 9 6-9 6" fill="none"/>
+    </g>
+    <g font-size="18" text-anchor="middle">
+      <text x="140" y="118">Réunions et entretiens</text>
+      <text x="440" y="118">Formulaires enregistrés</text>
+      <text x="740" y="118">Liste soumise au vote</text>
+    </g>
+    <g stroke="#90612e" stroke-width="2" fill="none" stroke-dasharray="6 4">
+      <path d="M290 68v89l-34 26"/>
+      <path d="M590 68v89l34 26"/>
+    </g>
+    <g fill="#faf4e9" stroke="#ab8451" stroke-width="1.5">
+      <rect x="47" y="184" width="313" height="90" rx="6"/>
+      <rect x="520" y="184" width="313" height="90" rx="6"/>
+    </g>
+    <g text-anchor="middle" font-size="18">
+      <text x="203" y="214" font-weight="bold">Renoncement au dépôt</text>
+      <text x="203" y="244">Peut échapper au registre</text>
+      <text x="676" y="214" font-weight="bold">Dossier jugé irrecevable</text>
+      <text x="676" y="244">Chercher le motif de décision</text>
+    </g>
+    <text x="440" y="313" text-anchor="middle" font-size="17" fill="#43565c">Parcours proposé pour l’enquête · Les critères doivent être établis dans chaque commune.</text>
+  </g>
+</svg>

@@ -1,0 +1,58 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_sciences-sociales_2023",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Sciences sociales",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "intitule": "Anthropologie, histoire, science politique, sociologie : une même science sociale ?",
+  "gabarit": "dissertation",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sc.sociales-ecrit-sil2023.pdf",
+    "sujet_sha256": "8912158df76a0dcf5e4476bfcaa3f43bc95f95f0a0ddf4d2b3fc490648d20789",
+    "pages": 1,
+    "precision": "Le feuillet demande un essai mobilisant la formation, les lectures et le projet de recherche du candidat."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Essai sur l’unité de l’anthropologie, de l’histoire, de la science politique et de la sociologie."
+    ],
+    "precision": "Les deux éditions traitent l’intégralité de la question commune, avec trois lectures, des acquis méthodologiques explicités et un exemple de projet d’enquête. Le sujet ne contient aucun dossier individuel. Les références au parcours et au projet relèvent d’une proposition à personnaliser."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/parcours-demande.svg",
+      "question": "Essai",
+      "legende": "Trois opérations et les demandes qui disparaissent du décompte"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "sil_2023_unite_sciences_sociales",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": ["brut", "guide"],
+      "perimetre": "Lecture du feuillet intégral et de sa consigne personnelle. Rédaction des deux essais, du guidage méthodologique et d’une figure sur le passage d’une demande au bulletin dans un projet d’enquête explicitement proposé."
+    }
+  ]
+}
