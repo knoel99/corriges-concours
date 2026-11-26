@@ -4,11 +4,21 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Sujet officiel](https://www.ens.psl.eu/sites/default/files/litterature-ecrit1-sil2023.pdf) · [Second exemplaire officiel](https://www.ens.psl.eu/sites/default/files/litterature-ecrit2-sil2023.pdf)
 
 Les deux exemplaires de l’épreuve de deux heures proposent la même citation de « Poésie et pensée abstraite » et le même travail. L’expérience de lecture demandée est ici développée à partir de Verlaine, de Racine et d’Apollinaire.
 
+## Sujet de l’écrit
+
+Vous analyserez et commenterez la citation ci-dessous sous la forme d’un écrit organisé. Vous pouvez éclairer ces propos par des éléments de contexte, par vos connaissances d’histoire et de théorie littéraires et poétiques. Vous ferez appel à votre expérience de lectrice, sans vous limiter au corpus de votre projet de recherche.
+
+Paul Valéry, « Poésie et pensée abstraite » (1939), *Variétés*, Gallimard, 1957, selon le feuillet. Le passage commence par « Pensez à un pendule qui oscille » et se termine par « qui lui a donné naissance. ». La coupure entre parenthèses appartient au texte proposé. Les deux exemplaires reproduisent la même citation. Le premier dit « expérience de lectrice » et « de théorie », le second « expérience de lecteur » et « de théories ».
+
 ## Préparer la réponse
+
+**Qu’est-ce qui redemande la forme ?** Essayez une paraphrase de l’aveu de Phèdre. Notez ce qu’elle préserve, puis revenez au mouvement qui va de la rougeur à la pâleur. Dans la dernière phrase du feuillet, observez à quoi renvoient les deux emplois de « même ». Cette insistance vous demande de retrouver la forme particulière qui a rendu cette perception possible.
 
 Le pendule n’oppose pas deux écoles poétiques. Il donne à imaginer une durée de lecture. Relever dans la citation les premières opérations prescrites au lecteur, de la construction d’un modèle abstrait à l’observation de ce qui arrive dans un vers. Le mouvement décisif est le retour du sens vers la forme qui l’a suscité. Une équivalence entre poésie et musicalité omettrait toute la deuxième moitié de l’expérience.
 
@@ -27,6 +37,8 @@ Revenons au début de la troisième des *Ariettes oubliées*. « Il pleure dans 
 L’image présente cependant un trait dont il faut se méfier. Une masse suspendue revient vers un point déjà occupé. Le lecteur qui revient à « il pleure » a désormais entendu « il pleut ». Il n’occupe plus la même position. Même une répétition littérale peut faire entendre un changement irréversible. Lorsque revient le refrain du « Pont Mirabeau » d’Apollinaire, j’en reconnais chaque mot et la cadence qui me permettait de l’attendre. Cependant le temps du poème a passé. La Seine, l’amour perdu, les journées qui s’en vont ont donné à l’affirmation « je demeure » une valeur de plus en plus incertaine. Est-ce la force de celui qui persiste ou la solitude de celui qui reste lorsque tout est parti ? Le refrain permet de soutenir les deux lectures et de percevoir combien la seconde pèse à présent sur la première. À imaginer seulement une oscillation régulière, on perdrait cette action de la mémoire sur le vers qui revient.
 
 Valéry prend précisément la précaution de rendre son pendule « vivant ». Une vie n’est pas le déplacement d’un objet que l’on pourrait observer de l’extérieur sans le modifier. Il s’agit de discerner l’effet produit en soi. C’est particulièrement sensible au théâtre. Lorsque Phèdre, dans son aveu à Œnone, fait suivre la vue d’Hippolyte de la rougeur, puis de la pâleur, les segments du vers de Racine paraissent d’abord restituer, dans l’ordre, trois événements physiques. À la représentation, on ne dispose pas du temps nécessaire pour arrêter l’actrice et revenir au premier segment. Pourtant l’arrivée du dernier modifie le souvenir immédiat des précédents. La pâleur ne succède pas tranquillement à la rougeur. Leur réunion dans la mesure d’un alexandrin fait sentir ce que le personnage a éprouvé avant de pouvoir se l’expliquer. De retour au texte écrit, je peux essayer plusieurs vitesses de diction. Le maintien du mètre et les ruptures introduites par la ponctuation donnent à l’interprète des choix qu’une paraphrase de l’aveu n’aurait jamais indiqués. La signification redemande la forme parce qu’il reste à l’éprouver, non parce qu’une analyse savante aurait décrété leurs rapports.
+
+La fin de la citation laisse entendre ce que le retour a de singulier. Les mots « issue », « expression », « réponse » se succèdent avant que Valéry ne retrouve cette musique-là. On ne peut substituer à la phrase qu’on a entendue un son quelconque, comme on changerait le décor d’une idée toute faite. Je peux l’éprouver chez Racine en disant « j’ai vu Hippolyte et j’ai changé de couleur ». Je conserve une information très sommaire. Je perds l’insistance des premières personnes successives et le contraste entre les deux couleurs, logés dans une seule mesure de vers. Ces détails redeviennent nécessaires au moment précis où je tente de dire ce que j’avais compris. Voilà en quel sens le point de départ sensible peut être une réponse.
 
 Il serait toutefois difficile de tirer de ce retour un critère qui déciderait de toute poésie. Le regard du lecteur importe autant que sa voix dans certains poèmes. Dans « Il pleut », Apollinaire fait descendre selon plusieurs lignes obliques des paroles qui ont déjà pris sur la page l’aspect d’une pluie. Pour lire, je dois choisir une ligne, avancer de mot en mot et momentanément perdre de vue la simultanéité du dessin. Une fois un groupe compris, je reprends de la distance et je regarde l’ensemble. Ici encore la signification me reconduit jusqu’à la forme qui l’a suscitée, mais il faut passer de l’œil à l’oreille, puis revenir à la page. S’en tenir à deux extrêmes bien distincts appauvrirait l’expérience. Le dispositif de Valéry retrouve son pouvoir si on l’entend comme une question posée à chaque lecture. À quel détail sensible ce que j’ai compris me rend-il aujourd’hui attentive ?
 

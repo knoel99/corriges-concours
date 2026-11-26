@@ -18,7 +18,9 @@
     "sujet": "https://www.ens.psl.eu/sites/default/files/litterature-ecrit1-sil2023.pdf",
     "sujet_sha256": "171320e9c38db8ce749a8dfe91b397f5e54130578e6b33a46529cd19655e721c",
     "sujet_2": "https://www.ens.psl.eu/sites/default/files/litterature-ecrit2-sil2023.pdf",
-    "sujet_2_sha256": "b7efec8597eb26ea3a7ff8d55a8fa86e27a902b886ab1d58670da0c600f6561f"
+    "sujet_2_sha256": "b7efec8597eb26ea3a7ff8d55a8fa86e27a902b886ab1d58670da0c600f6561f",
+    "index_officiel": "https://www.ens.psl.eu/une-formation-d-exception/admission-concours/international/concours-selection-internationale-0",
+    "rapport_et_perimetre": "La rubrique Littérature 2023 de l’archive officielle présente cinq sujets. Elle ne lie pas de rapport d’écrit pour la discipline."
   },
   "figures": [
     {
@@ -37,7 +39,47 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Commentaire organisé de la citation de Paul Valéry, vérifiée dans les deux exemplaires 1 et 2, avec expérience explicite de lecture de Verlaine, Racine et Apollinaire, préparation et schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "fournisseur": "codex",
+      "session": "francais_pt_2325",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture intégrale du ou des feuillets et comparaison aux deux éditions. Comparaison des deux exemplaires personnalisés et de leurs variantes de consigne ; analyse de la dernière proposition et épreuve de paraphrase de l’aveu de Phèdre."
     }
   ],
-  "date_revision": "2026-11-24"
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "Commentaire",
+        "auteur_reference": "Paul Valéry, « Poésie et pensée abstraite » (1939), Variétés, Gallimard, 1957, selon le feuillet.",
+        "debut": "Pensez à un pendule qui oscille",
+        "fin": "qui lui a donné naissance.",
+        "sha256_extrait_espaces_unifies": "8ac8ae88de074f05b1113c490c7f2ba308b2ec04898fbb0c86e48ec03b462c3d",
+        "consigne": "Vous analyserez et commenterez la citation ci-dessous sous la forme d’un écrit organisé. Vous pouvez éclairer ces propos par des éléments de contexte, par vos connaissances d’histoire et de théorie littéraires et poétiques. Vous ferez appel à votre expérience de lectrice, sans vous limiter au corpus de votre projet de recherche.",
+        "page_pdf": 1,
+        "duree": "2 heures",
+        "exercices": 1,
+        "annexes": [],
+        "consigne_second_exemplaire": "Vous analyserez et commenterez la citation ci-dessous sous la forme d’un écrit organisé. Vous pouvez éclairer ces propos par des éléments de contexte, par vos connaissances d’histoire et de théories littéraires et poétiques. Vous ferez appel à votre expérience de lecteur, sans vous limiter au corpus de votre projet de recherche.",
+        "coupure_interne": "(…) imprimé sur le feuillet"
+      }
+    ]
+  }
 }
