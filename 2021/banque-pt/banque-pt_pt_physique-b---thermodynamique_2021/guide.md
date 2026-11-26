@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Sujet et document réponse](https://www.banquept.fr/documents/2021/ph_b_th_2021_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2021/rapport_phys_b_ecrit_2021.pdf) · [Coefficients de la session](https://www.banquept.fr/documents/livret/2021/Livret_PT_2021.pdf#page=13)
 
 **Liquéfaction et transport du gaz naturel.** Les puissances et transferts sont orientés explicitement dans les bilans. Les valeurs relevées graphiquement sont arrondies à la précision des diagrammes du sujet.
@@ -48,7 +50,7 @@ La deuxième loi donne $P_{\rm th}=DT_0(s_f-s_i-s_c)$. En remplaçant dans le pr
 
 Le seul terme susceptible de varier possède un coefficient positif et une borne inférieure connue.
 
-Comme $D>0$, $T_0>0$ et $s_c\geq0$, le minimum est obtenu pour une liquéfaction réversible, $s_c=0$. On obtient $P_{\min}=D[(h_f-h_i)-T_0(s_f-s_i)]$. C’est la variation de débit d’exergie entre les deux états. Le sujet donne **10,6 kW** pour la suite. Les entrées du tableau I, déjà arrondies, donnent environ 10,9 kW avec $s_f\simeq-6{,}70$ kJ/(kg·K).
+Comme $D>0$, $T_0>0$ et $s_c\geq0$, le minimum est obtenu pour une liquéfaction réversible, $s_c=0$. En unités massiques, chaque terme du crochet est en kJ/kg si les enthalpies sont en kJ/kg et les entropies en kJ/(kg·K). On obtient $P_{\min}=D[(h_f-h_i)-T_0(s_f-s_i)]$. C’est la variation de débit d’exergie entre les deux états. Le sujet donne **10,6 kW** pour la suite. Les entrées du tableau I, déjà arrondies, donnent environ 10,9 kW avec $s_f\simeq-6{,}70$ kJ/(kg·K).
 
 ### Question 6 · Taux de performance et domaine physique
 
@@ -162,7 +164,7 @@ M est isolé et sans arbre. Le premier principe donne $Dh_0+D_2h_{11}=D_1h_1$. A
 
 Sur l’isobare de 1 bar, lire les deux enthalpies à 7 °C et à −43 °C puis placer le résultat entre les isothermes voisines.
 
-On lit $h_0\simeq-40$ et $h_1\simeq-150$ kJ/kg. Le résultat est $h_{11}\simeq[-150-0{,}4(-40)]/0{,}6\simeq-223$ kJ/kg. Selon la finesse de lecture de $h_1$, on trouve environ −220 kJ/kg. Le tableau demandé est **1 bar, environ −80 °C, environ −220 kJ/kg, gaz sec**. Ce point se place sur l’isobare basse entre 10 et 1, du côté vapeur de la cloche.
+On lit $h_0\simeq-40$ et $h_1\simeq-150$ kJ/kg. Le résultat est $h_{11}\simeq[-150-0{,}4(-40)]/0{,}6\simeq-223$ kJ/kg. Selon la finesse de lecture de $h_1$, on trouve environ −220 kJ/kg. Le tableau demandé est **1 bar, environ −80 °C, environ −220 kJ/kg, gaz sec**. Une lecture plus fine de $h_1$ vers −148 kJ/kg conduit à −220 kJ/kg et environ −77 °C pour le retour. Ce point se place sur l’isobare basse entre 10 et 1, du côté vapeur de la cloche.
 
 ## B · Réfrigérateurs auxiliaires
 
@@ -216,7 +218,7 @@ Avec l’approximation numérique fournie, $x=100/(1+4\times10^4e)$ pour $e$ en 
 
 Inverser la relation en utilisant le taux limite donné, sous forme d’une fraction.
 
-Le critère $x\leq0{,}01$ donne $1+4\times10^4e\geq10^4$. L’épaisseur seuil vaut $e_0=(10^4-1)/(4\times10^4)=0{,}249975$ m, soit **environ 25 cm**. Si l’on exige une inégalité stricte, il faut choisir $e>e_0$. Le rapport $e_0/b\simeq0{,}025$ est compatible avec l’hypothèse de couche mince.
+Le critère $x\leq0{,}01$ donne $1+4\times10^4e\geq10^4$. L’épaisseur seuil vaut $e_0=(10^4-1)/(4\times10^4)=0{,}249975$ m, soit **environ 25 cm**. Si l’on exige une inégalité stricte, il faut choisir $e>e_0$. À la limite de 1 %, on évapore 18 tonnes sur les 1 800 tonnes embarquées. Le rapport $e_0/b\simeq0{,}025$ est compatible avec l’hypothèse de couche mince.
 
 ### Question 23 · Constante du profil sphérique
 
