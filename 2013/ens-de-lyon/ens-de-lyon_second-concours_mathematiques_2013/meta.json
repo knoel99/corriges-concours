@@ -37,5 +37,38 @@
       "fournisseur": "codex",
       "agent": "astra_maths"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3.a",
+      "3.b",
+      "3.c",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15.a",
+      "15.b",
+      "16.a",
+      "16.b"
+    ],
+    "precision": "Les 20 repères de questions et sous-questions ont été rapprochés dans l’ordre du sujet officiel et dans chacune des deux éditions. La portée de la rédaction ou de la révision est conservée dans le journal cité.",
+    "origine_attestation": {
+      "commit_du_journal": "2202822d297f42bf8cf2c8a00bd1457d2f1200a6",
+      "sha256_sujet_controle": "3dfbb91c385836f091716d033bdaa4e92d89c34679d366ab81d3a5ce033d9328",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction des 20 questions et sous-questions des deux éditions sur le sujet officiel de quatre pages. Le sommaire institutionnel consulté ne rattache aucun rapport à cet écrit. Deux figures originales pour les questions 4 et 12. Vérification des arguments de compacité, de réduction de Carathéodory, de séparation, de point fixe et de propagation du cocycle dans les deux sens."
+    }
+  }
 }
