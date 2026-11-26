@@ -16,15 +16,21 @@ Une boucle de longueur deux donnerait une boucle de longueur un par transitivit�
 
 L’arbre accumulé est le deuxième fils de chaque nouveau nœud, et le prochain élément de la liste son premier fils. Après avoir lu $X,Y$, par exemple, l’accumulateur vaut $Y\cdot(X\cdot A)$. La liste vide laisse l’arbre intact.
 
+L’algorithme itératif initialise l’accumulateur à $A$. Tant que $L$ est non vide, remplacer dans cet ordre $A$ par $\mathrm{tête}(L)\cdot A$, puis $L$ par sa queue. Renvoyer $A$ après la dernière itération.
+
 ## Partie II. Décomposition héréditaire et arithmétique
 
 ### Question II.1 · 4 et 83 en base trois
 
 Le plus grand terme qui tient dans 83 est $3^4$. Le reste comporte deux unités. Pour effacer le chiffre 4 de l’exposant, remplacer 4 par $3^{3^0}+3^0$. À la fin, les seules feuilles numériques sont des zéros et la base elle-même est le paramètre des puissances.
 
+En posant $u=3^0$, les résultats sont $4=3^u+u$ et $83=3^{3^u+u}+u+u$.
+
 ### Question II.2 · Opérations nécessaires
 
 La soustraction dans le calcul du reste sert à construire l’écriture et n’apparaît pas dans le résultat. De même, chercher un exposant n’ajoute pas une opération à l’expression finale : une fois son arbre construit, on ne lit que des zéros, des sommes et des puissances de la base.
+
+Plus formellement, initialiser au naturel zéro. Pour $n>0$, si $p$ est maximal tel que $b^p\le n$ et $q=n-b^p$, construire l’expression $b^{E(p)}+E(q)$. Les deux arguments $p,q<n$ justifient la récurrence.
 
 ### Question II.3 · Construire les arbres
 
@@ -32,13 +38,19 @@ La soustraction dans le calcul du reste sert à construire l’écriture et n’
 
 ![Figure 1 — L’arbre de b + 1 porte à gauche l’exposant 1 et, à droite, le terme unité restant.](figures/arbre-de-base.svg)
 
+En notant $U=O\cdot O$ et $V=U\cdot O$, la liste demandée est $U,V,U\cdot U,V\cdot O$. Pour tout $n>0$ et $(p,q)=\operatorname{dec1}(b,n)$, $T_b(n)=T_b(p)\cdot T_b(q)$, avec $T_b(0)=O$.
+
 ### Question II.4 · Interpréter la pile
 
 Les cadres séparent deux niveaux : calculer le prochain exposant, ou reprendre la liste de termes de son parent. Les résultats sont consés en tête, donc le dernier exposant achevé arrive en premier dans liste_res. Replier cette liste sur $O$ rétablit les plus grands termes en tête de l’arbre. La pile vide signifie qu’on vient de rendre un seul arbre au cadre fictif initial.
 
+Précisément, un cadre appartient à $\mathbb N\times\operatorname{Liste}(\mathcal A)$, courant est un cadre, pile une liste de cadres, et liste_res une liste d’arbres. À la sortie, courant vaut $(0,[T_b(n)])$.
+
 ### Question II.5 · Évaluation
 
 Lire le nœud comme « une puissance, plus le reste ». L’évaluation des deux fils fournit les deux nombres nécessaires à cette opération. L’hypothèse sur le coût arithmétique permet de compter les visites seules, même si la valeur du résultat est très grande.
+
+Les équations de l’algorithme sont $E_b(O)=0$ et $E_b(X\cdot Y)=b^{E_b(X)}+E_b(Y)$. Un arbre de $h$ nœuds binaires contient $h+1$ feuilles, d’où un temps $\Theta(h+1)$ dans le modèle indiqué.
 
 ### Question II.6 · Premiers termes et très grande valeur
 
@@ -65,6 +77,8 @@ Le premier endroit où deux écritures diffèrent fournit leur ordre. Pour évit
 ### Question III.2 · Descente infinie
 
 Un premier nœud à gauche non nul domine tout arbre dont la gauche est nulle. Après cette première baisse, repousser sans cesse le lieu de différence d’un niveau vers la droite. La taille des arbres augmente alors que leur ordre diminue.
+
+Un témoin explicite est $U=O\cdot O$, $A_0=U\cdot O$ et $A_{i+1}=O\cdot A_i$. La première comparaison se gagne à gauche ; ensuite préfixer la même feuille transporte chaque inégalité au rang suivant.
 
 ### Question III.3 · Produit lexicographique
 
