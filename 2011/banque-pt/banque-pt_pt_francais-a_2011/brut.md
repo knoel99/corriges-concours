@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Énoncé officiel](https://www.banquept.fr/documents/2011/fr_a_pt_2011.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2011/rapport_fra_a_ecrit_2011.pdf) · [Programme officiel](https://www.education.gouv.fr/bo/2010/17/esrs1000116a.htm) · [Grille de la session](https://www.banquept.fr/documents/livret/2011/Livret_PT_2011.pdf#page=13)
 
 Épreuve de quatre heures sur « Le mal ». Jean-Jacques Rousseau, Profession de foi du vicaire savoyard (Émile, livre IV, extrait prescrit) · William Shakespeare, Macbeth (traduction de Pierre-Jean Jouve) · Jean Giono, Les Âmes fortes.
@@ -18,7 +20,7 @@ Les œuvres au programme vous permettent-elles de vérifier cette assertion ?
 
 ## Dissertation
 
-Au banquet de Macbeth, les convives voient leur roi s’adresser avec épouvante à une place qu’ils croient vide. Le spectateur, lui, sait pourquoi cette place est devenue insupportable. Il a été admis assez près de Macbeth pour comprendre ce que les invités ignorent. Doit-il pour autant se dire semblable à celui qui a fait tuer son compagnon ? Glucksmann transforme la maxime de Térence en un commandement qui engage celui qui le prononce, « que rien de ce qui est inhumain ne me demeure étranger ». Le verbe « demeure » laisse à entendre qu’il y aurait un travail à faire sur une première réaction d’horreur ou de distance. À quelles conditions peut-on reconnaître l’inhumain comme une possibilité qui nous concerne, sans effacer la distance entre celui qui fait le mal et celui qui le subit ?
+Au banquet de Macbeth, les convives voient leur roi s’adresser avec épouvante à une place qu’ils croient vide. Le spectateur, lui, sait pourquoi cette place est devenue insupportable. Il sait que Banquo vient de mourir et reconnaît dans l’apparition la forme que prend pour Macbeth l’absence de son ancien compagnon. Le théâtre lui donne ainsi une connaissance refusée aux invités sans lui imposer pour autant le jugement du roi. Doit-il pour autant se dire semblable à celui qui a fait tuer son compagnon ? Glucksmann transforme la maxime de Térence en un commandement qui engage celui qui le prononce, « que rien de ce qui est inhumain ne me demeure étranger ». Le verbe « demeure » laisse à entendre qu’il y aurait un travail à faire sur une première réaction d’horreur ou de distance. À quelles conditions peut-on reconnaître l’inhumain comme une possibilité qui nous concerne, sans effacer la distance entre celui qui fait le mal et celui qui le subit ?
 
 L’inhumain paraît d’abord désigner une limite qu’il serait mauvais d’abolir. Lorsque Macduff apprend que les siens ont été tués, il demande à plusieurs reprises si les enfants aussi sont morts. Le spectateur connaissait déjà le sort de la famille. Pourtant le trajet de cette nouvelle jusqu’à son père fait entendre ce qui échappe au simple énoncé d’un fait. Dans cette répétition, une conscience se heurte à ce qu’elle ne peut recevoir comme un événement ordinaire. Éprouver de l’effroi, ici, est une manière de rester humain. Si l’on voulait ne plus jamais rien sentir d’étranger dans la cruauté, on finirait par en prendre son parti. Le commandement de Glucksmann n’est défendable que s’il sauvegarde cette résistance.
 
