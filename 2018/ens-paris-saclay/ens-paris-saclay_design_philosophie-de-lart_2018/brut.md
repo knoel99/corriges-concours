@@ -1,14 +1,22 @@
-# Quand les choses dérangent le designer · 2018 · Corrigé brut
+# Devrions-nous ainsi décrire la tâche du designer ? · 2018 · Corrigé brut
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+ENS Paris-Saclay · concours Design de première année · écrit de quatre heures · C18102. Francis Ponge oppose « arranger les choses » à l’exigence de se laisser déranger par elles (*Méthodes*, 1961, p. 263).
+
+[Sujet officiel, p. 1](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2018_Sujet_1A_Design_Philo_art.pdf) · [Rapport du jury, p. 11–13](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2018_RE_1A_Design.pdf#page=11)
 
 ## Introduction
 
 Une porte qui coince fait remarquer son poids et sa charnière à celui qui les avait oubliés. Le visiteur chargé d’un sac subit l’obstacle. Le menuisier peut y lire une indication sur l’affaissement du battant. Francis Ponge demande que les choses nous dérangent. L’énoncé ne donne pas au poète pour mission de fabriquer des objets importuns. Il confie à ce qui lui résiste le pouvoir de le déplacer. Devrions-nous décrire ainsi la tâche du designer ? Son travail consiste souvent à arranger, c’est-à-dire à ordonner des éléments ou à remédier à une difficulté réelle. Comment l’attention à ce qui dérange pourrait-elle améliorer ce travail sans faire porter à l’usager le prix de notre curiosité ?
 
 ## I. L’arrangement est une promesse que la résistance des choses met à l’épreuve
+
+L’expression « arranger les choses » prend une couleur différente selon la personne qui la prononce. Pour celui qui ferme la porte, l’arranger peut vouloir dire en réparer la charnière. Pour celui qui présente une photographie de la pièce, ce peut être masquer la porte défectueuse derrière un rideau. Le même résultat visible peut signaler la solution d’une difficulté ou sa dissimulation. Chez Ponge, les choses deviennent sujets du verbe qui dit le dérangement. Accepter ce renversement engage le designer à laisser une difficulté réelle défaire le bel ordre de son projet.
 
 Celui qui conçoit un tiroir veut qu’on puisse l’ouvrir d’une main tout en soutenant une casserole de l’autre. Une façade parfaitement alignée peut dissimuler une prise trop mince. La composition paraît achevée sur le dessin tandis qu’un geste ordinaire la dément. Écouter la résistance, c’est reprendre le profil, le poids et les conditions d’approche de la main. Un tiroir plus facile à ouvrir peut être le résultat d’une conception qui a accepté d’être dérangée. Si le dessinateur exigeait en revanche de chaque cuisinier le même effort pénible au nom d’une expérience plus riche, il confondrait deux moments et deux destinataires de son projet.
 
@@ -19,6 +27,8 @@ Ponge, dans « Le Cageot » du *Parti pris des choses*, s’attarde sur une peti
 ## II. Certains arrangements soustraient à l’attention ce qui devrait faire question
 
 Une interface propose d’acheter en un geste et exige plusieurs écrans pour retirer une option ajoutée. Tout semble « arrangé » tant que l’on suit le chemin le plus court. Cette facilité distribue de manière inégale les chances de consentir ou de refuser. Il serait possible de ralentir le paiement pour demander de confirmer précisément l’option. Le dérangement aurait ici un contenu. Il rendrait saillant un choix que le premier parcours faisait presque disparaître. La qualité d’une interface dépend donc aussi de ce qu’elle autorise l’usager à interrompre.
+
+Dans la commode de Tejo Remy *You Can’t Lay Down Your Memory* (1991), des tiroirs de récupération, chacun entouré d’un caisson, sont réunis par une sangle. L’ensemble déroute l’attente d’une façade régulière et laisse visibles les différences que le meuble industriel ordinaire tend à effacer. C’est aussi un arrangement au sens matériel le plus strict. Sans les caissons et la sangle, les tiroirs ne formeraient aucun meuble. Le cas oblige à nuancer l’alternative de départ. Ce que l’ordre produit peut être précisément l’occasion de remarquer les choses auxquelles on ne prêtait plus attention. Son intérêt ne dispense cependant pas de demander ce que vaut la commode pour qui veut atteindre un tiroir.
 
 Le schéma montre deux réactions à un arrêt identique. Si aucune raison n’apparaît, l’obstacle mange du temps et l’on recommence à l’aveugle. Si le retour désigne le point sur lequel on peut agir, l’interruption se transforme en enquête. Il existe pourtant une limite. Amasser des demandes de confirmation pour chaque geste conduit à cliquer sans lire. La nouveauté formelle et l’effet de choc se consument de la même manière lorsqu’ils deviennent systématiques. Ce qui dérange mérite d’être conservé lorsqu’il rend perceptible un enjeu sur lequel le destinataire peut encore intervenir.
 
