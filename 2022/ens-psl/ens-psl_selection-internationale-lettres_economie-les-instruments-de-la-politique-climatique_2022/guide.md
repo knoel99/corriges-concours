@@ -8,6 +8,10 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+**Couverture vérifiée.** Écrit, sujet individuel 2 de la feuille officielle. Le rapport rattache le projet sur la transition entre énergies fossiles et renouvelables à cette épreuve et à l’oral « Décroissance ou croissance verte ? ». La dissertation et son guide examinent la taxe, les quotas, les normes, l’innovation, l’adaptation et la redistribution. Le coût réel de réduction est distingué des paiements de taxe et de quotas. L’estimation de Bayer et Aklin a été contrôlée en précisant le contrefactuel, la période et le caractère cumulé des tonnes évitées.
+
 ## Associer chaque instrument à ce qu’il corrige
 
 - **Externalité négative.** Une taxe relève le coût privé d’émettre. Un quota échangeable crée un prix à partir d’un plafond.
@@ -19,7 +23,9 @@
 
 Le jury rattache cet écrit à un projet sur la transition des combustibles fossiles aux renouvelables. L’enjeu d’une copie est de relier cette application à l’externalité climatique, aux institutions et à au moins un fait empirique.
 
-![Deux possibilités de réduction, un prix de 50 euros](figures/couts-et-prix.svg)
+**Comment lire l’estimation européenne ?** Bayer et Aklin comparent la trajectoire des émissions de CO₂ à une trajectoire construite sans le système européen d’échange. Leur estimation d’environ 1,2 milliard de tonnes évitées est cumulée sur 2008–2016. La comparer à une seule année d’émissions ou l’attribuer entièrement à la seule conjoncture de 2009 changerait l’objet mesuré. Le résultat renseigne sur l’effet d’un dispositif historique. Pour choisir entre taxe et plafond dans un autre pays, il faudrait aussi examiner les sources couvertes, la mesure des émissions et le respect des obligations.
+
+![Figure 1 — Deux possibilités de réduction, un prix de 50 euros](figures/couts-et-prix.svg)
 
 ## Les instruments de la politique climatique
 
@@ -29,7 +35,9 @@ Une tonne de dioxyde de carbone ajoute à un stock mondial dont les dommages se 
 
 Une taxe par tonne incite chaque émetteur à réduire tant que sa dernière tonne évitée coûte moins que la taxe. Considérons deux établissements qui pourraient éviter chacun une tonne pour 20 ou 70 euros. À 50 euros la tonne, le premier réduit son émission et le second acquitte la taxe. Sous réserve que la mesure des émissions soit fiable et que les acteurs puissent répondre au signal, les efforts sont ainsi dirigés vers les réductions les moins coûteuses. Le taux qui internaliserait le dommage externe marginal n’est pas donné par cet exemple. Il dépend de l’évaluation du dommage, des risques, de l’actualisation et de la trajectoire retenue. Un calendrier annoncé aide à orienter des investissements qui dureront bien au-delà du taux appliqué aujourd’hui.
 
-Un marché de quotas négociables fixe un volume de droits et laisse leur prix émerger des échanges. Avec échange concurrentiel et contrôle crédible, la tonne évitée tend vers le même coût marginal chez les participants. La taxe fixe davantage le prix et laisse varier les quantités. Le plafond règle la quantité couverte et expose davantage le prix aux variations de la conjoncture et de la technologie. Une entreprise qui reçoit certains droits gratuitement conserve un coût d’opportunité à les utiliser si elle peut les vendre. Les modalités d’allocation modifient cependant les rentes et les choix d’investissement. Dans le système européen d’échange de quotas, lancé en 2005, une étude de Bayer et Aklin estime qu’environ 1,2 milliard de tonnes de CO₂ ont été évitées de 2008 à 2016 par rapport à un scénario reconstruit sans marché. Ce résultat est une estimation contrefactuelle. Il ne se déduit pas de la simple observation d’une baisse pendant la crise financière.
+Un marché de quotas négociables fixe un volume de droits et laisse leur prix émerger des échanges. Avec échange concurrentiel et contrôle crédible, la tonne évitée tend vers le même coût marginal chez les participants. La taxe fixe davantage le prix et laisse varier les quantités. Le plafond règle la quantité couverte et expose davantage le prix aux variations de la conjoncture et de la technologie. Une entreprise qui reçoit certains droits gratuitement conserve un coût d’opportunité à les utiliser si elle peut les vendre. Les modalités d’allocation modifient cependant les rentes et les choix d’investissement. Dans le système européen d’échange de quotas, lancé en 2005, une étude de Bayer et Aklin estime qu’environ 1,2 milliard de tonnes de CO₂ ont été évitées au total de 2008 à 2016 par rapport à un scénario reconstruit sans marché. Ce résultat est une estimation contrefactuelle. Il ne se déduit pas de la simple observation d’une baisse pendant la crise financière.
+
+Pour comparer directement taxe et quotas, reprenons les deux établissements de la figure. Chacun émettrait une tonne sans mesure. Le régulateur émet un seul quota, attribué à A. B doit alors réduire sa tonne au coût de 70 euros ou acheter le droit. A peut réduire la sienne pour 20 euros et le vendre. À un prix négocié de 50 euros, A dépense 20 euros et en reçoit 50, B verse 50 euros et économise les 70 euros de réduction. Il reste une tonne émise, pour une dépense réelle de réduction de 20 euros dans l’ensemble des deux établissements. Le versement de 50 euros change de mains. Avec une taxe de 50 euros, A réduirait aussi sa tonne pour 20 euros, tandis que le versement de B alimenterait le budget public. Le rapprochement repose sur les deux coûts et les deux possibilités d’action posés dans l’exemple.
 
 ### Corriger d’autres obstacles que le seul prix du carbone
 
