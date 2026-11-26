@@ -59,6 +59,18 @@
       "perimetre": "Relecture intégrale des 30 questions et subdivisions des deux éditions, avec le sujet imprimé et les deux pages du rapport. Rectification de la caractérisation des fonctions S-convexes, deux contre-exemples et graphique du mélange des coordonnées. Précision sur la non-unicité de Birkhoff, la simulation dans l’intervalle ouvert et le défaut de somme après un nombre fini d’itérations.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Comparaison des 46 réponses et de leurs indications aux 30 numéros du sujet, avec le rapport. Vérification des programmes de tri et de normalisation, de la relation entre les six permutations de taille trois et des inégalités finales. Exemple numérique de non-unicité de Birkhoff ajouté au brut en 9e. Indication rectifiée en 14 sur le choix d’un contre-exemple. Dans le bilan, la dérivée en 19 est justifiée par la comparaison à la valeur en zéro.",
+      "fournisseur": "codex",
+      "agent": "anciens_maths_x_lyon"
     }
   ],
   "sources": {
@@ -66,5 +78,62 @@
     "rapport_jury": "https://www.concours-bce.com/sites/default/files/2026-10/282%20-%20Maths%20appro%20HEC%20Paris.ESSEC%20BS%202026.pdf",
     "sha256_sujet": "e6e76345a669a86fc297d132810b8265d6cbbcdcdb904d231bc223a4923aa4f6",
     "sha256_rapport": "be429523a2ca934e4eb9a309c5180f3243b081393561fb9ca0d7cbb2e259736b"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7a",
+      "7b",
+      "8a",
+      "8b",
+      "9a",
+      "9b",
+      "9c",
+      "9d",
+      "9e",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15a",
+      "15b",
+      "15c",
+      "16",
+      "17",
+      "18",
+      "19a",
+      "19b",
+      "19c",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25a",
+      "25b",
+      "25c",
+      "26",
+      "27a",
+      "27b",
+      "27c",
+      "27d",
+      "28a",
+      "28b",
+      "29",
+      "30"
+    ],
+    "detail": [
+      "1–6. Permutations, tri décroissant et algorithme de sélection.",
+      "7a–10. Orthostochasticité, théorème de Birkhoff–von Neumann en dimensions 2 et 3, normalisations alternées.",
+      "11–21. Symétrie, S-convexité, dérivées partielles et condition sur les sommes séparables.",
+      "22–30. Diagonalisation orthogonale, théorème de Davis, sommes des valeurs propres dominantes et inégalités de Fan."
+    ]
   }
 }
