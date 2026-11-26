@@ -734,6 +734,7 @@
 | 2017 | BEL | BL | Géographie | [md](2017/bel/bel_bl_geographie_2017/brut.md) | [md](2017/bel/bel_bl_geographie_2017/guide.md) |
 | 2017 | BEL | BL | Histoire contemporaine | [md](2017/bel/bel_bl_histoire-contemporaine_2017/brut.md) | [md](2017/bel/bel_bl_histoire-contemporaine_2017/guide.md) |
 | 2017 | BEL | BL | Philosophie | [md](2017/bel/bel_bl_philosophie_2017/brut.md) | [md](2017/bel/bel_bl_philosophie_2017/guide.md) |
+| 2024 | BEL | BL | Philosophie (oral tronc commun) — 13 juin | [md](2024/bel/bel_bl_philosophie-oral-tronc-commun-13-juin_2024/brut.md) | [md](2024/bel/bel_bl_philosophie-oral-tronc-commun-13-juin_2024/guide.md) |
 | 2024 | BEL | BL | Philosophie (oral tronc commun) — 12 juin | [md](2024/bel/bel_bl_philosophie-oral-tronc-commun-12-juin_2024/brut.md) | [md](2024/bel/bel_bl_philosophie-oral-tronc-commun-12-juin_2024/guide.md) |
 | 2024 | BEL | BL | Philosophie (oral tronc commun) — 10 juin | [md](2024/bel/bel_bl_philosophie-oral-tronc-commun-10-juin_2024/brut.md) | [md](2024/bel/bel_bl_philosophie-oral-tronc-commun-10-juin_2024/guide.md) |
 | 2025 | BEL | BL | Économie (oral commun) — Partage de la valeur ajoutée | [md](2025/bel/bel_bl_economie-oral-commun-partage-de-la-valeur-ajoutee_2025/brut.md) | [md](2025/bel/bel_bl_economie-oral-commun-partage-de-la-valeur-ajoutee_2025/guide.md) |
