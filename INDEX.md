@@ -728,6 +728,7 @@
 | 2025 | BEL | BL | Arabe | [md](2025/bel/bel_bl_arabe_2025/brut.md) | [md](2025/bel/bel_bl_arabe_2025/guide.md) |
 | 2025 | BEL | BL | Chinois | [md](2025/bel/bel_bl_chinois_2025/brut.md) | [md](2025/bel/bel_bl_chinois_2025/guide.md) |
 | 2017 | BEL | BL | Composition française | [md](2017/bel/bel_bl_composition-francaise_2017/brut.md) | [md](2017/bel/bel_bl_composition-francaise_2017/guide.md) |
+| 2024 | BEL | BL | Composition française | [md](2024/bel/bel_bl_composition-francaise_2024/brut.md) | [md](2024/bel/bel_bl_composition-francaise_2024/guide.md) |
 | 2025 | BEL | BL | Composition française | [md](2025/bel/bel_bl_composition-francaise_2025/brut.md) | [md](2025/bel/bel_bl_composition-francaise_2025/guide.md) |
 | 2026 | BEL | BL | Composition française | [md](2026/bel/bel_bl_composition-francaise_2026/brut.md) | [md](2026/bel/bel_bl_composition-francaise_2026/guide.md) |
 | 2017 | BEL | BL | Géographie | [md](2017/bel/bel_bl_geographie_2017/brut.md) | [md](2017/bel/bel_bl_geographie_2017/guide.md) |
@@ -770,7 +771,9 @@
 | 2022 | BEL | AL | Russe (commentaire et traduction) | [md](2022/bel/bel_al_russe-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_russe-commentaire-et-traduction_2022/guide.md) |
 | 2022 | BEL | AL | Russe (thème Lyon) | [md](2022/bel/bel_al_russe-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_russe-theme-lyon_2022/guide.md) |
 | 2022 | BEL | BL | Mathématiques | [md](2022/bel/bel_bl_mathematiques_2022/brut.md) | [md](2022/bel/bel_bl_mathematiques_2022/guide.md) |
+| 2024 | BEL | BL | Mathématiques | [md](2024/bel/bel_bl_mathematiques_2024/brut.md) | [md](2024/bel/bel_bl_mathematiques_2024/guide.md) |
 | 2026 | BEL | BL | Mathématiques | [md](2026/bel/bel_bl_mathematiques_2026/brut.md) | [md](2026/bel/bel_bl_mathematiques_2026/guide.md) |
+| 2024 | BEL | BL | Philosophie | [md](2024/bel/bel_bl_philosophie_2024/brut.md) | [md](2024/bel/bel_bl_philosophie_2024/guide.md) |
 | 2025 | BEL | BL | Philosophie | [md](2025/bel/bel_bl_philosophie_2025/brut.md) | [md](2025/bel/bel_bl_philosophie_2025/guide.md) |
 | 2025 | BEL | BL | Philosophie (oral tronc commun, 20 juin) | [md](2025/bel/bel_bl_philosophie-oral-tronc-commun-20-juin_2025/brut.md) | [md](2025/bel/bel_bl_philosophie-oral-tronc-commun-20-juin_2025/guide.md) |
 | 2025 | BEL | BL | Philosophie (oral tronc commun, 19 juin) | [md](2025/bel/bel_bl_philosophie-oral-tronc-commun-19-juin_2025/brut.md) | [md](2025/bel/bel_bl_philosophie-oral-tronc-commun-19-juin_2025/guide.md) |
