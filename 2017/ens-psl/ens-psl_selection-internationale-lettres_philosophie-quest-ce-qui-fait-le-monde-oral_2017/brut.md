@@ -1,8 +1,10 @@
-# Philosophie — Qu’est-ce qui fait le monde · Oral PSL 2017 · Corrigé brut
+# Philosophie — Qu’est-ce qui fait le monde ? · Oral PSL 2017 · Corrigé brut
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 ## Exposé
 
@@ -10,7 +12,7 @@ Les mêmes pierres peuvent se trouver sur un terrain vague et appartenir, pour u
 
 ### Un univers, un ordre, une totalité
 
-La réponse la plus immédiate ferait du monde l’ensemble de ce qui existe. Nulle chose réelle ne pourrait alors se trouver à l’extérieur de lui. Mais dire que toutes les pierres, tous les vivants et tous les astres appartiennent à cet ensemble ne dit pas encore ce qui les lie. Un inventaire peut rassembler, par une décision de classement, ma chaise, deux canards et une galaxie. Est-ce suffisamment parvenir à un monde ? La notion grecque de *kosmos* met l’accent sur un ordre. Comprendre le monde peut ainsi vouloir dire chercher des relations qui en font un tout intelligible. La possibilité de rapporter la chute d’un objet et le mouvement d’un corps céleste à des lois communes a un tout autre pouvoir d’unification qu’une simple addition d’éléments.
+La réponse la plus immédiate ferait du monde l’ensemble de ce qui existe. Nulle chose réelle ne pourrait alors se trouver à l’extérieur de lui. Mais dire que toutes les pierres, tous les vivants et tous les astres appartiennent à cet ensemble ne dit pas encore ce qui les lie. Un inventaire peut rassembler, par une décision de classement, ma chaise, deux canards et une galaxie. Qu’ajouterait à cette liste l’idée qu’ils appartiennent à un seul monde ? La notion grecque de *kosmos* met l’accent sur un ordre. Comprendre le monde peut ainsi vouloir dire chercher des relations qui en font un tout intelligible. La possibilité de rapporter la chute d’un objet et le mouvement d’un corps céleste à des lois communes a un tout autre pouvoir d’unification qu’une simple addition d’éléments.
 
 Faut-il aller au-delà de ces relations et chercher qui ou quoi a fabriqué le monde ? La grammaire du verbe « faire » peut encourager cette inférence. Pour une table, j’identifie un artisan, des matériaux préalables et un temps au cours duquel la fabrication commence. Étendre ce modèle à la totalité de ce qui est soulève une difficulté. Où situer les matériaux et le temps présupposés s’il s’agit de rendre compte de la totalité ? Kant montre dans la première antinomie de la *Critique de la raison pure* les difficultés auxquelles se heurte une raison qui traite le monde entier comme un objet donné et prétend décider si sa série temporelle a un commencement absolu. Une enquête cosmologique peut déterminer des états anciens de l’univers et en construire des modèles contrôlables. Elle ne se confond pas avec la représentation d’un artisan placé devant le tout. La question sur ce qui « fait » monde peut dès lors se porter vers ce qui rend possible l’expérience d’un ensemble lié.
 
@@ -19,6 +21,8 @@ Faut-il aller au-delà de ces relations et chercher qui ou quoi a fabriqué le m
 Lorsque je regarde le devant d’une maison, je ne vois pas simultanément sa façade arrière, ni la rue qui se poursuit au prochain tournant. Pourtant la façade ne se présente pas comme une mince surface colorée suspendue dans le vide. Je pourrais avancer, tourner ou rencontrer d’autres habitants qui ont vu l’autre côté. Husserl appelle horizon cette ouverture d’un champ de perceptions possibles autour de ce qui se donne actuellement. Le monde, en ce sens phénoménologique, est ce dans quoi un objet peut se montrer à plusieurs reprises et où ses apparences sont susceptibles de se confirmer ou de se démentir. Il n’est pas une dernière apparence que l’on ajouterait à toutes les autres.
 
 Cela permet de préciser la différence entre faire et fabriquer. Mes habitudes corporelles et mes anticipations contribuent à constituer le sens de ce que je rencontre. Elles ne décident pourtant pas de ce que je trouverai derrière la maison. Le passage peut être muré et l’ami que je croyais y trouver a pu partir. L’unité du monde comprend cette résistance d’une expérience à une autre. Si tout ce qui me surprenait était rejeté dans un univers étranger, je ne pourrais ni corriger une erreur ni apprendre où je suis. En un sens, ce qui fait monde est donc la possibilité de rapprocher des perspectives différentes et de soumettre une attente à la suite de l’expérience.
+
+Un décor de théâtre permet d’isoler la différence. De face, sa porte ressemble à celle d’une maison. En passant sur le côté, j’aperçois les montants qui soutiennent une simple façade. Je peux alors dire que ma première interprétation était fausse. Or cette correction suppose que mes déplacements m’ont conduit devant la même chose. Le changement de perspective ne fabrique pas la maison qu’il me semblait voir. Il révèle ce dont l’objet est fait et m’amène à le situer autrement dans un monde où les expériences se répondent. Le monde comme horizon inclut ainsi la possibilité d’une surprise autant que la continuité des habitudes.
 
 Une objection surgit toutefois. Le champ de mon expérience ne peut pas contenir à lui seul tout ce qui est. La rue continue pendant mon absence et ceux qui l’habitaient il y a cent ans y avaient d’autres affaires que les miennes. Pour parler d’un monde plutôt que du décor de ma vie, il faut expliquer ce qui tient ensemble des expériences auxquelles une seule personne n’aura jamais accès.
 
@@ -32,10 +36,12 @@ Qu’est-ce donc qui fait le monde ? L’unité des choses demande des relations
 
 ![Figure 1 — Qu’est-ce qui fait unité ?](figures/experiences.svg)
 
-## Pour l’entretien
+## Questions d’entraînement pour l’entretien
 
 **Y aurait-il encore un monde sans personne pour le voir ?** La question distingue l’univers physique et le monde comme horizon d’apparition. On peut soutenir la réalité de l’univers avant les humains tout en étudiant les conditions auxquelles il fait monde pour un être percevant.
 
 **Deux cultures habitent-elles des mondes absolument étrangers ?** Des institutions et des découpages symboliques peuvent différer profondément. La rencontre, la traduction et la résistance de certaines choses communes seraient pourtant incompréhensibles si toute comparaison était impossible.
+
+**Une carte périmée fait-elle disparaître le monde qu’elle décrivait ?** Elle a perdu une part de sa justesse si elle donne encore pour praticable un passage fermé. Elle demeure une trace du parcours autrefois possible. Cette distinction suppose que le lieu puisse à la fois démentir une attente actuelle et conserver les marques d’un usage ancien.
 
 [Énoncé](https://www.ens.psl.eu/sites/default/files/philo-oral-sil17-sujet3.pdf)

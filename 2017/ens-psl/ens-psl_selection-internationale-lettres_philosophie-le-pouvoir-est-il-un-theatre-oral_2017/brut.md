@@ -1,8 +1,10 @@
-# Philosophie — Le pouvoir est-il un théâtre · Oral PSL 2017 · Corrigé brut
+# Philosophie — Le pouvoir est-il un théâtre ? · Oral PSL 2017 · Corrigé brut
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 ## Exposé
 
@@ -18,7 +20,7 @@ Ce constat explique néanmoins la possibilité du faux-semblant. Les signes capa
 
 ### Le visible de la scène et les conditions de l’action
 
-Le fabricant d’un spectacle semble posséder un privilège, il peut choisir le cadre, la lumière et le moment où le rideau tombera. De même une autorité peut montrer une inauguration en un lieu et rendre peu visibles les conditions de travail qui ont permis la construction de l’édifice. Si nous ne suivons que la représentation offerte, nous pouvons attribuer à une personne l’ensemble d’une œuvre à laquelle beaucoup ont pris part. Il est alors justifié de parler de théâtre pour prendre distance à l’égard d’une certaine distribution des images et des responsabilités.
+Le metteur en scène choisit le cadre, la lumière et le moment où le rideau tombe. Son privilège consiste à régler ce que le public verra d’une action. De même une autorité peut montrer une inauguration en un lieu et rendre peu visibles les conditions de travail qui ont permis la construction de l’édifice. Si nous ne suivons que la représentation offerte, nous pouvons attribuer à une personne l’ensemble d’une œuvre à laquelle beaucoup ont pris part. Il est alors justifié de parler de théâtre pour prendre distance à l’égard d’une certaine distribution des images et des responsabilités.
 
 Cette critique deviendrait cependant naïve si elle imaginait qu’il suffit de passer « en coulisses » pour découvrir le véritable pouvoir tenu par un petit nombre de machinistes. L’action sur les conduites passe aussi par des formulaires, des horaires, des conditions d’accès à une procédure dont personne ne donne habituellement le spectacle. Une autorité administrative peut répondre très poliment à chaque requérant et maintenir par ses modalités d’accueil un obstacle infranchissable pour certains. Ces relations n’exigent pas de croire à la grandeur des dirigeants pour fonctionner. Une analyse du pouvoir demande de suivre ce qui se passe après le geste public, qui doit suivre la décision, qui dispose des ressources pour l’exécuter, à quel endroit elle peut être contestée ou rester sans effet.
 
@@ -28,16 +30,20 @@ Nous pouvons à présent revenir à nos deux séances. Une représentation thé�
 
 Une réponse consisterait à vouloir chasser du gouvernement tout apparat et toute mise en scène. Mais une autorité qui règlerait les affaires en secret, sous prétexte d’écarter les spectacles inutiles, retirerait aux gouvernés le moyen de savoir ce qui se décide en leur nom. À certaines conditions, la publicité d’une séance peut transformer un rapport de force. Un élu doit écouter une objection que le procès-verbal retiendra et répondre d’un vote que ses électeurs retrouveront. La distribution visible des rôles et du temps de parole peut protéger la possibilité d’un désaccord. Ici la question n’est plus de faire disparaître la scène, mais de déterminer qui peut y paraître et ce que devient le désaccord une fois que le rideau est tombé.
 
+Comparons deux cérémonies d’investiture tout à fait semblables. Dans la première, une autorité habilitée prononce la nomination prévue par le règlement. Dans la seconde, le même texte est lu pour les besoins d’une répétition. Les gestes et même la sincérité des participants peuvent coïncider. Pour savoir qui pourra signer un acte le lendemain, il faut connaître la procédure dont ces paroles font partie. Ce test interdit de conclure de la similitude visible à l’identité du pouvoir. Il explique aussi ce que fait le rituel dans le premier cas. Il donne à plusieurs témoins l’occasion de reconnaître et, si les règles ont été enfreintes, de contester la nomination.
+
 Chez Arendt, l’espace public est un espace d’apparition où quelqu’un se montre à d’autres par ses actes et ses paroles. L’apparence n’est pas dans cette perspective le contraire systématique du réel. Pour une décision qui doit être assumée en commun, apparaître devant des témoins fait partie de la réalité de l’acte. Le rapprochement avec le théâtre rencontre pourtant sa limite. Un public politique ne saurait rester indéfiniment dans la position de spectateurs qui applaudissent ou quittent la salle. Il doit pouvoir devenir interlocuteur, contrôler les actes et parfois changer la distribution des rôles.
 
 Le pouvoir est donc théâtral dans la mesure où son exercice doit être rendu perceptible et adressé à un public. Il risque de devenir pur spectacle lorsqu’il monopolise ce qui est montrable et réduit le jugement des gouvernés à leurs impressions. Sa réalité s’éprouve alors par deux questions complémentaires, quelles conséquences suivent les paroles et ceux qui les subissent disposent-ils d’une scène où ils puissent à leur tour demander des comptes ?
 
 ![Figure 1 — Que fait l’apparition publique ?](figures/experiences.svg)
 
-## Pour l’entretien
+## Questions d’entraînement pour l’entretien
 
 **Une mise en scène est-elle toujours trompeuse ?** Elle peut rendre un office identifiable ou donner à une décision la publicité nécessaire pour qu’on puisse la contester. Il faut distinguer l’organisation des signes et la manipulation du jugement.
 
 **Le pouvoir le plus efficace est-il toujours caché ?** Des mécanismes discrets peuvent contraindre, mais certaines décisions n’agissent que si elles sont annoncées et reconnues. L’opposition du visible et du caché ne suffit pas à mesurer leur efficacité.
+
+**La retransmission d’une séance suffit-elle à contrôler les décisions ?** Elle permet de constater qu’un élu a pris position et de conserver ses mots. Pour en tirer une conséquence, il faut encore connaître l’acte adopté, retrouver sa trace et pouvoir demander pourquoi il diffère de ce qui avait été promis. Une salle très visible peut rester politiquement fermée.
 
 [Énoncé](https://www.ens.psl.eu/sites/default/files/philo-oral-sil17-sujet2.pdf)
