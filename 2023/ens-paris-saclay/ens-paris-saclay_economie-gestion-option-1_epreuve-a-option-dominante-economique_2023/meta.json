@@ -1,0 +1,70 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_epreuve-a-option-dominante-economique_2023",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Épreuve à option — dominante économique",
+    "annee": 2023,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "L’abondance des matières premières est-elle un handicap pour le développement des États ?",
+  "gabarit": "dissertation",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2023_sujet_ecrit_ecoG_option_mercredi_2023_V2.pdf#page=2",
+    "index": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=289&field_year_target_id%5B%5D=583&page=1",
+    "pages_sujet": "2",
+    "sujet_sha256": "c0323ca9b95b217d13756ab8746e48543d0dbd1fd0a27987488a9a78cae43722",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2023_sujet_ecrit_ecoG_option_mercredi_2023_V2.pdf",
+        "pages": 10,
+        "sha256": "c0323ca9b95b217d13756ab8746e48543d0dbd1fd0a27987488a9a78cae43722"
+      },
+      {
+        "role": "rapport-eco",
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2023_EcoG1_Rapport_%C3%A9crit_option_Eco.pdf",
+        "pages": 2,
+        "sha256": "85eefe39859eff7450a761640edcc72a13d626bc06071050ee88522eac1b4dc7"
+      }
+    ],
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2023_EcoG1_Rapport_%C3%A9crit_option_Eco.pdf",
+    "rapport_sha256": "85eefe39859eff7450a761640edcc72a13d626bc06071050ee88522eac1b4dc7"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/comparaison.svg",
+      "question": "Dissertation",
+      "legende": "Le prix des importations reste fixé à l’indice 100. Pour compenser la baisse du prix exporté à 80, le volume vendu doit augmenter de 25 %."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "inventaire_livraisons_26",
+      "agent": "inventaire_livraisons_26",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Dissertation portant sur les usages industriels, les termes de l’échange, la maladie hollandaise et les modalités de conversion de la rente en capital durable."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "limites": "Le sujet économique tient page 2 et ne comporte aucune annexe statistique. Le rapport du jury, pages 1 et 2, rapproche les exemples de première industrialisation de ceux des économies exportatrices. Il distingue causalité, dépendance commerciale et rôle des institutions. Le calcul des termes de l’échange repose sur deux indices fictifs."
+  }
+}
