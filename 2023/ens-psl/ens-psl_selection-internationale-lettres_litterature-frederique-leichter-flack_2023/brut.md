@@ -4,13 +4,23 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Sujet officiel](https://www.ens.psl.eu/sites/default/files/litterature-sujet5-sil2023.pdf)
 
 Le sujet de deux heures propose un extrait du Laboratoire des cas de conscience de Frédérique Leichter-Flack. La copie examine comment un récit agit sur le jugement, puis ce que le lecteur peut transporter de cette expérience dans une décision.
 
+## Sujet de l’écrit
+
+Vous analyserez et commenterez la citation ci-dessous sous la forme d’un écrit organisé. Vous pouvez éclairer ces propos par des éléments de contexte, par vos connaissances d’histoire de la littérature. Vous ferez appel à votre expérience de lectrice, sans vous limiter au corpus de votre projet de recherche.
+
+Frédérique Leichter-Flack, *Le Laboratoire des cas de conscience*, Paris, Flammarion, 2012. Le passage commence par « La fiction littéraire porte en elle » et se termine par « à la table du décideur. ».
+
 ## À la table de celui qui doit décider
 
 Quand Champmathieu comparaît devant les assises dans *Les Misérables*, il suffirait, semble-t-il, qu’un témoin dise la vérité. Un homme est pris pour Jean Valjean. Le lecteur sait que Jean Valjean est assis dans la salle. Que peut donc ajouter à cette donnée simple le long récit que Hugo consacre à l’affaire ? Précisément le temps que met un homme à devenir ce témoin, les raisons qu’il trouve de se taire et la difficulté pour un tribunal de reconnaître une parole vraie quand elle lui parvient. La « réserve de sens » que Frédérique Leichter-Flack attribue à la fiction apparaît dans cet écart entre une proposition facilement énonçable et les actes nécessaires pour lui donner effet. Encore faut-il expliquer comment une émotion de lecture peut contribuer à la justice, alors qu’elle peut aussi nous attacher au seul être que le récit nous a donné à aimer.
+
+D’une phrase à l’autre, la fiction demeure sujet des verbes chez Leichter-Flack, mais change de rôle. Elle détient d’abord une réserve. Elle devient ensuite éducatrice, puis hôtesse qui invite à une table des convives habituellement écartés. Pourquoi cette dernière image ? Une décision a une heure, un lieu et des personnes habilitées à la prendre. Faire entrer le doute à leur table ne lui donne pas le dernier mot. Cela oblige à écouter ce qui survivrait mal à une formulation impersonnelle du cas. Cette différence permet de comprendre pourquoi Hugo prend le temps de nous faire hésiter avec Madeleine, alors que le devoir de libérer Champmathieu ne fait aucun doute.
 
 ### Ce qu’ajoute une nuit à un principe
 

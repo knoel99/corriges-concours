@@ -16,7 +16,9 @@
   },
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/litterature-sujet5-sil2023.pdf",
-    "sujet_sha256": "19f8c1097854d24c123477fadfafe91dd59ce17b73597ea377630adbcf5f9431"
+    "sujet_sha256": "19f8c1097854d24c123477fadfafe91dd59ce17b73597ea377630adbcf5f9431",
+    "index_officiel": "https://www.ens.psl.eu/une-formation-d-exception/admission-concours/international/concours-selection-internationale-0",
+    "rapport_et_perimetre": "La rubrique Littérature 2023 de l’archive officielle présente cinq sujets. Elle ne lie pas de rapport d’écrit pour la discipline."
   },
   "figures": [
     {
@@ -35,7 +37,45 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Commentaire organisé de la proposition de Frédérique Leichter-Flack, avec lecture de la comparution de Champmathieu chez Hugo, des récits de Billy Budd et du conflit des morts chez Sophocle, préparation méthodique et schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "fournisseur": "codex",
+      "session": "francais_pt_2325",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture intégrale du ou des feuillets et comparaison aux deux éditions. Progression de la réserve de sens à la table du décideur et distinction entre les fonctions de témoin, de juge et de lecteur."
     }
   ],
-  "date_revision": "2026-11-24"
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "Commentaire",
+        "auteur_reference": "Frédérique Leichter-Flack, Le Laboratoire des cas de conscience, Paris, Flammarion, 2012.",
+        "debut": "La fiction littéraire porte en elle",
+        "fin": "à la table du décideur.",
+        "sha256_extrait_espaces_unifies": "6f286a30abc90bce31a2379e1617c1bc5a8035ffb100ecd58db6e56ad71e7322",
+        "consigne": "Vous analyserez et commenterez la citation ci-dessous sous la forme d’un écrit organisé. Vous pouvez éclairer ces propos par des éléments de contexte, par vos connaissances d’histoire de la littérature. Vous ferez appel à votre expérience de lectrice, sans vous limiter au corpus de votre projet de recherche.",
+        "page_pdf": 1,
+        "duree": "2 heures",
+        "exercices": 1,
+        "annexes": []
+      }
+    ]
+  }
 }
