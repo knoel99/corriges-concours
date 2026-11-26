@@ -2069,6 +2069,17 @@
 | 2010 | X | MP-PC | Russe | [md](2010/x/x_mp-pc_russe_2010/brut.md) | [md](2010/x/x_mp-pc_russe_2010/guide.md) |
 | 2010 | X | MP | Composition de physique et sciences de l’ingénieur | [md](2010/x/x_mp_composition-de-physique-et-sciences-de-lingenieur_2010/brut.md) | [md](2010/x/x_mp_composition-de-physique-et-sciences-de-lingenieur_2010/guide.md) |
 | 2010 | X | MP | Composition de physique | [md](2010/x/x_mp_composition-de-physique_2010/brut.md) | [md](2010/x/x_mp_composition-de-physique_2010/guide.md) |
+| 2000 | X | MP | Deuxième composition de mathématiques | [md](2000/x/x_mp_deuxieme-composition-de-mathematiques_2000/brut.md) | [md](2000/x/x_mp_deuxieme-composition-de-mathematiques_2000/guide.md) |
+| 2001 | X | MP | Deuxième composition de mathématiques | [md](2001/x/x_mp_deuxieme-composition-de-mathematiques_2001/brut.md) | [md](2001/x/x_mp_deuxieme-composition-de-mathematiques_2001/guide.md) |
+| 2002 | X | MP | Deuxième composition de mathématiques | [md](2002/x/x_mp_deuxieme-composition-de-mathematiques_2002/brut.md) | [md](2002/x/x_mp_deuxieme-composition-de-mathematiques_2002/guide.md) |
+| 2003 | X | MP | Deuxième composition de mathématiques | [md](2003/x/x_mp_deuxieme-composition-de-mathematiques_2003/brut.md) | [md](2003/x/x_mp_deuxieme-composition-de-mathematiques_2003/guide.md) |
+| 2004 | X | MP | Deuxième composition de mathématiques | [md](2004/x/x_mp_deuxieme-composition-de-mathematiques_2004/brut.md) | [md](2004/x/x_mp_deuxieme-composition-de-mathematiques_2004/guide.md) |
+| 2005 | X | MP | Deuxième composition de mathématiques | [md](2005/x/x_mp_deuxieme-composition-de-mathematiques_2005/brut.md) | [md](2005/x/x_mp_deuxieme-composition-de-mathematiques_2005/guide.md) |
+| 2006 | X | MP | Deuxième composition de mathématiques | [md](2006/x/x_mp_deuxieme-composition-de-mathematiques_2006/brut.md) | [md](2006/x/x_mp_deuxieme-composition-de-mathematiques_2006/guide.md) |
+| 2007 | X | MP | Deuxième composition de mathématiques | [md](2007/x/x_mp_deuxieme-composition-de-mathematiques_2007/brut.md) | [md](2007/x/x_mp_deuxieme-composition-de-mathematiques_2007/guide.md) |
+| 2008 | X | MP | Deuxième composition de mathématiques | [md](2008/x/x_mp_deuxieme-composition-de-mathematiques_2008/brut.md) | [md](2008/x/x_mp_deuxieme-composition-de-mathematiques_2008/guide.md) |
+| 2009 | X | MP | Deuxième composition de mathématiques | [md](2009/x/x_mp_deuxieme-composition-de-mathematiques_2009/brut.md) | [md](2009/x/x_mp_deuxieme-composition-de-mathematiques_2009/guide.md) |
+| 2010 | X | MP | Deuxième composition de mathématiques | [md](2010/x/x_mp_deuxieme-composition-de-mathematiques_2010/brut.md) | [md](2010/x/x_mp_deuxieme-composition-de-mathematiques_2010/guide.md) |
 | 1997 | X | MP | Informatique (option) | [md](1997/x/x_mp_informatique-option_1997/brut.md) | [md](1997/x/x_mp_informatique-option_1997/guide.md) |
 | 1999 | X | MP | Informatique (option) | [md](1999/x/x_mp_informatique-option_1999/brut.md) | [md](1999/x/x_mp_informatique-option_1999/guide.md) |
 | 2000 | X | MP | Informatique (option) | [md](2000/x/x_mp_informatique-option_2000/brut.md) | [md](2000/x/x_mp_informatique-option_2000/guide.md) |
