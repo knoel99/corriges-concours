@@ -31,6 +31,152 @@
       "perimetre": "Rédaction intégrale sur les trois pages du cahier. Vérification de la séparation uniforme, du dénominateur commun, des changements de base entière, des ordres des matrices et du groupe d’isométries du réseau rectangulaire. Figure des vecteurs minimaux.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "x_mp_deuxieme_composition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Pointage physique des 23 consignes sur 3 pages. Contrôle de l’exemple irrationnel, du rang égal à la dimension de l’espace réel engendré et des quatre symétries du réseau. Ajout d’une identification du quotient, d’une vérification des ordres et de la loi affine sur les paramètres finaux."
     }
-  ]
+  ],
+  "intitule": "Sous-groupes discrets euclidiens et isométries des réseaux",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.a",
+      "1.b",
+      "1.c",
+      "2",
+      "3",
+      "4.a",
+      "4.b",
+      "4.c",
+      "4.d",
+      "5.a",
+      "5.b",
+      "5.c",
+      "6",
+      "7.a",
+      "7.b",
+      "8.a",
+      "8.b",
+      "9",
+      "10.a",
+      "10.b",
+      "11.a",
+      "11.b",
+      "11.c"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1.a",
+        "page_pdf": "1"
+      },
+      {
+        "question": "1.b",
+        "page_pdf": "1"
+      },
+      {
+        "question": "1.c",
+        "page_pdf": "1"
+      },
+      {
+        "question": "2",
+        "page_pdf": "1"
+      },
+      {
+        "question": "3",
+        "page_pdf": "2"
+      },
+      {
+        "question": "4.a",
+        "page_pdf": "2"
+      },
+      {
+        "question": "4.b",
+        "page_pdf": "2"
+      },
+      {
+        "question": "4.c",
+        "page_pdf": "2"
+      },
+      {
+        "question": "4.d",
+        "page_pdf": "2"
+      },
+      {
+        "question": "5.a",
+        "page_pdf": "2"
+      },
+      {
+        "question": "5.b",
+        "page_pdf": "2"
+      },
+      {
+        "question": "5.c",
+        "page_pdf": "2"
+      },
+      {
+        "question": "6",
+        "page_pdf": "2"
+      },
+      {
+        "question": "7.a",
+        "page_pdf": "3"
+      },
+      {
+        "question": "7.b",
+        "page_pdf": "3"
+      },
+      {
+        "question": "8.a",
+        "page_pdf": "3"
+      },
+      {
+        "question": "8.b",
+        "page_pdf": "3"
+      },
+      {
+        "question": "9",
+        "page_pdf": "3"
+      },
+      {
+        "question": "10.a",
+        "page_pdf": "3"
+      },
+      {
+        "question": "10.b",
+        "page_pdf": "3"
+      },
+      {
+        "question": "11.a",
+        "page_pdf": "3"
+      },
+      {
+        "question": "11.b",
+        "page_pdf": "3"
+      },
+      {
+        "question": "11.c",
+        "page_pdf": "3"
+      }
+    ],
+    "controle": [
+      "p. 1, isolement de zéro, fermeture, premier générateur positif, rationalité du deuxième générateur",
+      "p. 2, projection non discrète, représentants du parallélépipède, dénominateur uniforme, sous-groupes libres et conservation des aires",
+      "p. 3, base entière du groupe fini, ordres effectivement réalisés, compacité orthogonale, produit affine, symétries du réseau rectangulaire",
+      "Contrôle de l’exemple irrationnel, du rang égal à la dimension de l’espace réel engendré et des quatre symétries du réseau. Ajout d’une identification du quotient, d’une vérification des ordres et de la loi affine sur les paramètres finaux."
+    ]
+  }
 }

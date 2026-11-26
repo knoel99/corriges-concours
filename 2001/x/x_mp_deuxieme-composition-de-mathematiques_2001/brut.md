@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le problème établit la structure des sous-groupes discrets des espaces euclidiens puis l’applique aux groupes finis de matrices rationnelles et aux isométries affines d’un réseau.
 
 ## I. Structure des sous-groupes discrets
@@ -44,6 +46,8 @@ Les $z_k$ appartiennent à l’ensemble fini $P$, donc $z_k=z_\ell$ pour deux in
 
 Posons $N=|P|!$. Pour tout $x\in L$, un $d\in\{1,\ldots,|P|\}$ vérifie $dx\in L'$, et donc $Nx\in L'$. L’application $x\mapsto Nx$ est un morphisme injectif de $L$ dans $L'\simeq\mathbb Z^m$, l’isomorphisme étant fourni par les coordonnées sur les $a_i$. Le groupe nul est couvert par $m=0$.
 
+La question 4.b donne aussi une lecture en termes de classes. Deux éléments de $P$ qui diffèrent d’un élément de $L'$ ont les mêmes coordonnées fractionnaires, donc sont égaux. Ainsi $P$ est un système de représentants de $L/L'$, dont l’ordre est $|P|$. Le théorème de Lagrange fournit alors directement $|P|x\in L'$ pour tout $x$. L’argument par factorielle donne un multiple commun sans faire appel à ce théorème.
+
 ### Question 5.a
 
 Si l’image est nulle, prenons $k=0$ et $x^\circ=0$. Sinon le plus petit entier positif $k$ de $\pi(L)$ engendre ce sous-groupe par division euclidienne. Par définition de l’image, il existe $x^\circ\in L$ de dernière coordonnée $k$, ce qui donne $\pi(L)=k\mathbb Z=\pi(x^\circ)\mathbb Z$.
@@ -78,6 +82,8 @@ Le groupe des puissances de $A$ est fini et rationnel. La question 7.b rend $A$ 
 
 Comme $X^r-1$ est scindé à racines simples sur $\mathbb C$, $A$ est diagonalisable et ses valeurs propres sont de module un. Si elles sont réelles, elles valent $\pm1$ et $r\in\{1,2\}$. Sinon elles valent $e^{\pm i\theta}$ ; la trace entière $2\cos\theta$ est strictement entre $-2$ et $2$, donc vaut $-1,0$ ou $1$. Ces cas donnent respectivement $r=3,4,6$. Pour $r=1,2$, prenons $I,-I$. Pour $r=3,4,6$, prenons respectivement $t=-1,0,1$ dans $A_t=\left(\begin{smallmatrix}0&-1\\1&t\end{smallmatrix}\right)$. Son polynôme est $X^2-tX+1$ ; ses deux racines ont exactement l’ordre annoncé, donc la matrice aussi.
 
+On peut contrôler les ordres des trois exemples sans calculer leurs angles. Pour $t=-1$, $A_t^2+A_t+I=0$ entraîne $A_t^3=I$ et $A_t\ne I$. Pour $t=0$, $A_t^2=-I$. Pour $t=1$, $A_t^2-A_t+I=0$ donne $A_t^3=-I$, et $A_t^2=A_t-I\ne I$. Les ordres sont donc exactement $3,4,6$.
+
 ## III. Isométries affines préservant un réseau
 
 ### Question 9
@@ -106,3 +112,5 @@ Dans $L=2\mathbb Z\times\mathbb Z$, les seuls vecteurs unitaires sont $(0,1)$ et
 $$(x,y)\longmapsto(\varepsilon_1x+2k,\varepsilon_2y+\ell),\qquad k,\ell\in\mathbb Z,\quad \varepsilon_i\in\{-1,1\}.$$
 
 ![Figure 1 — Dans le réseau de pas horizontal 2 et vertical 1, les deux vecteurs minimaux sont verticaux. Toute symétrie orthogonale du réseau conserve leur axe.](figures/reseau-rectangulaire.svg)
+
+Dans ces paramètres, composer une transformation de signes $(\varepsilon_1,\varepsilon_2)$ et translation $(2k,\ell)$ après une transformation de signes $(\delta_1,\delta_2)$ et translation $(2m,n)$ donne les signes $(\varepsilon_1\delta_1,\varepsilon_2\delta_2)$ et la translation $(2(k+\varepsilon_1m),\ell+\varepsilon_2n)$. Les quatre transformations linéaires agissent donc sur les translations par changement des deux signes.
