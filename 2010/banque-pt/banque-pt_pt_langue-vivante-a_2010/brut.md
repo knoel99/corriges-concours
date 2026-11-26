@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve dure trois heures. Chaque candidat traite la langue choisie à l’inscription. La version française vaut 10 points. La question a demande 80 à 100 mots pour 4 points. La question b demande 200 à 250 mots pour 6 points.
 
 [Sujet](https://www.banquept.fr/documents/2010/lv_a_pt_2010.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2010/rapport_lv_a_ecrit_2010.pdf) · [Grille du livret](https://www.banquept.fr/documents/livret/2010/Livret_PT_2010.pdf#page=12)
@@ -90,7 +92,7 @@ There are nevertheless responsibilities that travel with this freedom. Scientist
 
 De « الكتابة هي سجل الحياة الكامل » à « منذ العصر الإسلامي ».
 
-L’écriture est le registre complet de la vie, avec ses aspects négatifs et positifs, le bien et le mal, la volonté de réformer et la persistance dans l’erreur, la ruine et la désolation, les élans de l’esprit et la chute dans les profondeurs les plus viles. Elle est tout. Plus l’écriture est réaliste, sans pour autant s’abandonner à la réalité, plus elle cherche à donner une impulsion morale qui permette à l’homme d’accéder à une conscience équilibrée, plus grande est la part de raison que l’on peut tirer de cette forme de production écrite. Nous en concluons que l’écriture, littéraire ou scientifique, est un moyen de faire comprendre et non d’obscurcir. Plus l’auteur se rapproche d’une manière simple et naturelle de s’exprimer, mieux il peut faire saisir au lecteur le concept et la façon de traiter les mots de sa vie humaine, qui est le but premier. De là l’importance de l’invention de l’écriture.
+L’écriture est le registre complet de la vie, avec ses aspects négatifs et positifs, le bien et le mal, les réformes et les constructions, la ruine et la désolation, les élans de l’esprit et la chute au plus bas de la déchéance. Elle est tout. Plus l’écriture est réaliste, sans pour autant s’abandonner à la réalité, plus elle cherche à donner une impulsion puissante qui permette à l’homme d’accéder à une conscience équilibrée, plus grande est la part de raison que l’on peut tirer de cette forme de production écrite. Nous en concluons que l’écriture, littéraire ou scientifique, est un moyen de faire comprendre et non de donner le change. Plus l’auteur se rapproche d’une manière simple et naturelle de s’exprimer, mieux il peut donner au lecteur une image d’un texte intelligible et lui montrer comment aborder les éléments de sa vie d’être humain, qui est le but premier. De là l’importance de l’invention de l’écriture.
 
 Les Arabes ont célébré le cinq-millième anniversaire de l’invention de l’écriture cunéiforme sumérienne. La célébration s’est tenue au Musée irakien de Bagdad, à l’occasion de la dernière fête d’Akitu. Autrefois, en Mésopotamie, les Akkadiens donnaient le nom de « Kalam » à leur pays, celui de « Ma » est attesté en sumérien au sens de « la terre », tandis que les anciens Égyptiens l’appelaient « Neherina » et les Grecs « Mésopotamie ». Il est connu sous le nom d’Irak depuis l’époque islamique.
 
@@ -104,15 +106,15 @@ Les Arabes ont célébré le cinq-millième anniversaire de l’invention de l�
 
 ### Question b
 
-*تقول الكاتبة « الكتابة أدبية أم علمية، هي وسيلة للإفهام لا للإبهام ». ناقشوا هذا الرأي.*
+*تقول الكاتبة « الكتابة أدبية أم علمية، هي وسيلة للإفهام لا للإيهام ». ناقشوا هذا الرأي.*
 
 أتفق مع الكاتبة في أن من يكتب يتحمل مسؤولية تجاه قارئه. فإذا وصف باحث نتيجة تجربة من غير أن يبين ما قاسه وما استنتجه، تعذر على غيره أن يراجع حكمه. وقد تكون الكلمة المتخصصة أدق من كلمة مألوفة، لكن من واجبه أن يشرح معناها حين يخاطب قراء يلتقون بها للمرة الأولى. فالوضوح لا يقتضي حذف صعوبة الفكرة، بل يقتضي أن يعرف القارئ في أي موضع تكمن هذه الصعوبة.
 
 أما في الأدب فقد يحتاج الكاتب إلى شيء من الغموض ليجعلنا ننتبه إلى تجربة لا نستطيع تلخيصها في خبر مباشر. قد يصف روائي بيتا بعد رحيل أهله ولا يذكر الحزن باسمه، ومع ذلك يفهم القارئ من الصمت والأشياء المتروكة أكثر مما يفهم من جملة تصرح بأن صاحب البيت حزين. مثل هذا النص يمنح القارئ دورا في بناء المعنى، ومن الخطأ أن نعد كل سؤال يتركه عجزا عن الإفهام.
 
-ومع ذلك يوجد فرق بين قراءة تتطلب المشاركة وعبارة صيغت لتوهم القارئ بعمق لا وجود له. أستطيع بعد قراءة جيدة لقصيدة أن أذكر الكلمات التي جعلتني أفهمها على نحو معين، حتى إذا قرأها غيري على نحو مختلف. وفي مقال علمي أستطيع أن أرجع إلى الدليل الذي استند إليه صاحبه. لذلك أرى أن الكتابة الناجحة تمنح القارئ وسيلة للوصول إلى المعنى أو لمناقشته، سواء أكان الطريق إليه مباشرا أم احتاج إلى خيال وصبر.
+ومع ذلك يوجد فرق بين قراءة تتطلب المشاركة وعبارة صيغت لتوهم القارئ بعمق لا وجود له. فالإيهام قد يجعل فرضية علمية تبدو يقينا من غير دليل، بينما يعرف قارئ الرواية منذ البداية أنه أمام عالم متخيل. وأستطيع بعد قراءة جيدة لقصيدة أن أذكر الكلمات التي جعلتني أفهمها على نحو معين، حتى إذا قرأها غيري على نحو مختلف. وفي مقال علمي أستطيع أن أرجع إلى الدليل الذي استند إليه صاحبه. لذلك أرى أن الكتابة الناجحة تمنح القارئ وسيلة للوصول إلى المعنى أو لمناقشته، سواء أكان الطريق إليه مباشرا أم احتاج إلى خيال وصبر.
 
-**208 mots**
+**228 mots**
 
 ![Pourquoi conserver l’écriture ?](figures/lecture-ar.svg)
 
