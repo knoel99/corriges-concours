@@ -1,0 +1,144 @@
+{
+  "slug": "bel_bl_histoire-contemporaine-oral-tronc-commun-16-juin_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Histoire contemporaine (oral tronc commun) — 16 juin",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "Histoire 1 · 16 juin 2025",
+  "questions": 10,
+  "sujets": 10,
+  "tirages": 5,
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/histoire_1_16_juin.pdf",
+    "sujet_sha256": "d25a410bd35869bb3a6812f6d4457378da924a80a4889109ac21ac489e83ab36",
+    "sujet_pages": 1,
+    "page_pdf": 1,
+    "fin_pdf": 1,
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_histoire.pdf",
+    "rapport_sha256": "9c2020f0dc2791a9be15e3ac9dcde965712c4e272499cc8a8f77f6fdc8f65594",
+    "rapport_pages": 6
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "T01-F",
+      "T01-M",
+      "T02-F",
+      "T02-M",
+      "T03-F",
+      "T03-M",
+      "T04-F",
+      "T04-M",
+      "T05-F",
+      "T05-M"
+    ],
+    "precision": "Chaque tirage contient deux propositions, France puis monde, traitées dans les deux éditions. Le gras du feuillet désigne la proposition effectivement choisie. Les relances sont éditoriales.",
+    "propositions": [
+      {
+        "tirage": 1,
+        "colonne": "France",
+        "intitule": "L’immigration en France sous la IIIe République",
+        "choisi": true,
+        "repere": "T01-F"
+      },
+      {
+        "tirage": 1,
+        "colonne": "Monde",
+        "intitule": "La Seconde Guerre mondiale hors d’Europe",
+        "choisi": false,
+        "repere": "T01-M"
+      },
+      {
+        "tirage": 2,
+        "colonne": "France",
+        "intitule": "André Malraux",
+        "choisi": false,
+        "repere": "T02-F"
+      },
+      {
+        "tirage": 2,
+        "colonne": "Monde",
+        "intitule": "Sortir de la Grande Guerre en Europe",
+        "choisi": true,
+        "repere": "T02-M"
+      },
+      {
+        "tirage": 3,
+        "colonne": "France",
+        "intitule": "Vieillir en France (1870-années 1980)",
+        "choisi": true,
+        "repere": "T03-F"
+      },
+      {
+        "tirage": 3,
+        "colonne": "Monde",
+        "intitule": "Réfugiés et déplacés dans le monde au 20e siècle",
+        "choisi": false,
+        "repere": "T03-M"
+      },
+      {
+        "tirage": 4,
+        "colonne": "France",
+        "intitule": "Les intellectuels et l’Affaire Dreyfus",
+        "choisi": true,
+        "repere": "T04-F"
+      },
+      {
+        "tirage": 4,
+        "colonne": "Monde",
+        "intitule": "La dénazification de l’Europe",
+        "choisi": false,
+        "repere": "T04-M"
+      },
+      {
+        "tirage": 5,
+        "colonne": "France",
+        "intitule": "Voter en France des années 1870 aux années 1980",
+        "choisi": false,
+        "repere": "T05-F"
+      },
+      {
+        "tirage": 5,
+        "colonne": "Monde",
+        "intitule": "Le terrorisme dans le monde après 1945",
+        "choisi": true,
+        "repere": "T05-M"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "T02-M",
+      "fichier": "figures/sorties-de-guerre.svg",
+      "legende": "Sortir de guerre à des dates différentes en Europe."
+    },
+    {
+      "numero": 2,
+      "question": "T05-F",
+      "fichier": "figures/vote-et-citoyennete.svg",
+      "legende": "Quatre transformations du vote en France."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture du feuillet imprimé et identification des sujets choisis par la graisse, confrontation au rapport. Rédaction pour chaque proposition d’une problématique, d’une démonstration historique en plusieurs temps, d’exemples situés, d’une relance et d’une aide propre au guidé. Création des deux figures explicatives."
+    }
+  ]
+}
