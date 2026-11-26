@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Les indices commencent à zéro. Nₙ désigne les entiers de zéro à n−1. Les pgcd sont positifs. Le sujet original sert de référence pour les formules et les indices ; la fiche de la banque ne fournit pas de rapport de jury pour cette session.
 
 ## Partie 1 · Matrices entières et opérations modulo
@@ -115,6 +117,16 @@ Pour un premier $\ell\mid p$, notons $r=v_\ell(p)$, $e_i=v_\ell(c_i)$, $S=\sum_i
 
 Pour $p=\ell^r$, parcourir $m$ de $\lceil r/(d-1)\rceil$ à $r$. Appeler $P(r+m,m,2,d)$ et émettre $(\ell^{e_0},\ldots,\ell^{e_{d-1}})$ pour chaque répartition énumérée. En effet, $r+m\le dm$ et $2m\le r+m$ sont exactement les bornes sur $m$, et 3.2 caractérise les solutions. Pour $p$ quelconque, factoriser $p$, générer les listes pour chaque puissance première et prendre tous leurs produits composante par composante. Les critères premiers sont indépendants. Pour $p=1$ l’unique taille élémentaire est $(1,\ldots,1)$.
 
+À une feuille de $P$, le tableau partagé des exposants est complet. On en prend une copie avant que l’appel suivant le modifie. Le pseudocode suivant utilise cette action de sortie.
+
+```text
+Tailles(premier, r, d) :
+    pour m de plafond(r / (d - 1)) à r :
+        appeler P(r + m, m, 2, d)
+        à chaque feuille de cet appel :
+            émettre le tuple (premier ^ boîte[j] pour j de 0 à d - 1)
+```
+
 ### Question 3.4 · Tranches parallèles
 
 Sur la tranche $x_i=k$, $Ax$ diffère de sa valeur sur $x_i=0$, les autres coordonnées étant conservées, de $k$ fois la colonne $i$. Modulo $a$, cette translation permute les symboles et conserve les multiplicités. Tester toutes les tranches de niveau zéro est donc nécessaire et suffisant. Sur une telle tranche, la colonne et la coordonnée $i$ s’effacent, ce qui donne précisément l’application $B_a$ sur la boîte tronquée.
@@ -135,7 +147,7 @@ Enfin $\prod_{j=0}^i a_j=p/G_{i+2}$. Or la compatibilité après suppression du 
 
 ### Question 3.8 · Diagonale d’une matrice bordée
 
-Supposons les paramètres diagonaux positifs et $v_{d-2}>0$, comme dans l’application (prendre les valeurs absolues pour les signes). Posons $r_i=\gcd(v_i,\ldots,v_{d-2})$. Pour les $k+1$ premières lignes de $C$, le pgcd des mineurs maximaux est
+Supposons les paramètres diagonaux positifs et $v_{d-2}>0$, comme dans l’application. Pour une matrice entière de plein rang dont ces coefficients sont signés, employer $|s_i|$ et $|v_{d-2}|$ pour obtenir les pivots positifs. Si un facteur diagonal ou le dernier coefficient est nul, le déterminant est nul et la forme d’Hermite de 1.5 ne s’applique plus. Posons $r_i=\gcd(v_i,\ldots,v_{d-2})$. Pour les $k+1$ premières lignes de $C$, le pgcd des mineurs maximaux est
 $$
 D_{k+1}=(s_0\cdots s_{k-1})r_k .
 $$

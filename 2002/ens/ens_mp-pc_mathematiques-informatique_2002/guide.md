@@ -4,17 +4,19 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Un même problème traverse le sujet : répartir des symboles exactement une fois, ou le même nombre de fois, sur chaque tranche d’un tableau. La forme d’Hermite traduit ces contraintes de comptage en conditions sur une matrice entière.
 
 ## Partie 1 · Matrices entières et opérations modulo
 
 ### Question 1.1 · Opérations élémentaires en colonnes
 
-Examiner une colonne du produit $AM$. Les colonnes de $M$ disent quelles colonnes de $A$ combiner. Une permutation de deux colonnes inverse l’orientation, tout comme un changement de signe. Retrancher une colonne à une autre préserve le déterminant et se défait par l’addition correspondante. Toutes ces opérations restent entières.
+Examiner une colonne du produit $AM$. Les colonnes de $M$ disent quelles colonnes de $A$ combiner. Une permutation de deux colonnes inverse l’orientation, tout comme un changement de signe. Retrancher une colonne à une autre préserve le déterminant et se défait par l’addition correspondante. Les déterminants sont respectivement $-1$ pour un échange de colonnes distinctes, $-1$ pour un changement de signe et $1$ pour une soustraction. Pour $i=j$, $P_{ii}=I$ et son déterminant vaut $1$. Les deux premières matrices sont leurs propres inverses, et $(I-E_{ij})^{-1}=I+E_{ij}$ pour $i\ne j$.
 
 ### Question 1.2 · Réduction du premier rang
 
-Le principe est l’algorithme d’Euclide appliqué à plusieurs nombres à la fois. Un pivot non nul sert à remplacer tous les autres nombres de la première ligne par leurs restes. La prochaine valeur non nulle retenue est plus petite et les entiers positifs ne peuvent décroître indéfiniment. Un diviseur commun de n’importe quelle ligne avant un tour reste diviseur de cette ligne après le tour, et la réciproque suit de l’inverse entier. Le dernier nombre non nul concentre donc le pgcd.
+Le principe est l’algorithme d’Euclide appliqué à plusieurs nombres à la fois. Un pivot non nul sert à remplacer tous les autres nombres de la première ligne par leurs restes. La prochaine valeur non nulle retenue est plus petite et les entiers positifs ne peuvent décroître indéfiniment. Un diviseur commun de n’importe quelle ligne avant un tour reste diviseur de cette ligne après le tour, et la réciproque suit de l’inverse entier. Le dernier pivot occupe la colonne zéro et vaut le pgcd. Une première ligne entièrement nulle reste nulle et a pour pgcd zéro.
 
 ### Question 1.3 · Triangularisation et réduction des restes
 
@@ -38,7 +40,7 @@ Lire les congruences comme une appartenance à un réseau. Dans la base triangul
 
 ### Question 1.8 · Même module dans toutes les directions
 
-Dans la matrice triangulaire réduite, le déterminant est au signe près le produit des pivots. S’il est une unité modulo $a$, chacun des pivots l’est. On peut donc résoudre successivement sans ambiguïté les congruences triangulaires. Dans l’autre sens, une surjection permet de relever toute la base canonique. Sa matrice de relèvement est un inverse à droite modulo $a$. Prendre les déterminants donne Bézout pour $\det A$ et $a$. Les deux ensembles ayant la même taille, injectivité et surjectivité coïncident.
+Dans la matrice triangulaire réduite, le déterminant est au signe près le produit des pivots. S’il est une unité modulo $a$, chacun des pivots l’est. On peut donc résoudre successivement sans ambiguïté les congruences triangulaires. Dans l’autre sens, une surjection permet de relever toute la base canonique. Sa matrice de relèvement est un inverse à droite modulo $a$. Prendre les déterminants donne Bézout pour $\det A$ et $a$. Les deux ensembles ayant la même taille, injectivité et surjectivité coïncident. Le raisonnement par pivots suppose $a>1$, car la condition de Bézout force alors $\det A\ne0$. Pour $a=1$, les deux boîtes sont des singletons et $\gcd(\det A,1)=1$ même si $A$ est singulière.
 
 ## Partie 2 · Carrés latins, orthogonaux et magiques
 
@@ -101,6 +103,16 @@ La tranche la plus exigeante pour le premier $\ell$ est celle qui retire sa plus
 
 Le paramètre $m$ est la puissance maximale à distribuer. Le total à distribuer vaut $r+m$ et au moins deux boîtes doivent être pleines. Employer le programme précédent avec ces paramètres, en excluant les valeurs de $m$ trop petites pour loger le total ou trop grandes pour remplir deux boîtes. Transformer les exposants en puissances du premier choisi. Répéter indépendamment pour chaque premier de $p$, puis faire le produit des composantes de chaque choix de listes.
 
+À une feuille de $P$, le tableau partagé des exposants est complet. On en prend une copie avant que l’appel suivant le modifie. Le pseudocode suivant utilise cette action de sortie.
+
+```text
+Tailles(premier, r, d) :
+    pour m de plafond(r / (d - 1)) à r :
+        appeler P(r + m, m, 2, d)
+        à chaque feuille de cet appel :
+            émettre le tuple (premier ^ boîte[j] pour j de 0 à d - 1)
+```
+
 ### Question 3.4 · Tranches parallèles
 
 Déplacer une tranche parallèlement à elle-même ajoute le même vecteur à toutes ses sorties. Les noms des symboles changent par translation, sans modifier leurs nombres d’occurrences. Dans la tranche de niveau zéro, la contribution de la position fixée est nulle. La supprimer dans la boîte et dans la matrice décrit exactement le même tableau.
@@ -121,7 +133,7 @@ Pour vérifier les produits de gauche, le produit des modules de zéro à $i$ va
 
 ### Question 3.8 · Diagonale d’une matrice bordée
 
-Sur une matrice à deux lignes la première ligne donne son pgcd et le déterminant donne le produit des pivots. Pour généraliser, appliquer le même principe aux mineurs des premières lignes. Les opérations entières de colonnes ne changent pas leur pgcd, car chaque nouveau mineur est combinaison entière des anciens et les opérations sont réversibles. Dans la forme triangulaire, seul le mineur des premières colonnes peut être non nul. Dans la matrice bordée, les lignes diagonales fixent au contraire toutes les colonnes à choisir sauf une. Les valeurs restantes sont proportionnelles à la liste finale $v_k,\ldots,v_{d-2}$. Le quotient de deux pgcd de mineurs successifs donne alors le nouveau pivot. On obtient la récurrence annoncée et le premier pivot est le pgcd de toute la première ligne.
+Sur une matrice à deux lignes la première ligne donne son pgcd et le déterminant donne le produit des pivots. Pour généraliser, appliquer le même principe aux mineurs des premières lignes. Les opérations entières de colonnes ne changent pas leur pgcd, car chaque nouveau mineur est combinaison entière des anciens et les opérations sont réversibles. Dans la forme triangulaire, seul le mineur des premières colonnes peut être non nul. Dans la matrice bordée, les lignes diagonales fixent au contraire toutes les colonnes à choisir sauf une. Les valeurs restantes sont proportionnelles à la liste finale $v_k,\ldots,v_{d-2}$. Le quotient de deux pgcd de mineurs successifs donne alors le nouveau pivot. En notant $r_k=\gcd(v_k,\ldots,v_{d-2})$, ce pgcd de mineurs vaut $|s_0\cdots s_{k-1}|r_k$ pour les $k+1$ premières lignes. On obtient $h_0=r_0$, puis $h_{i+1}=|s_i|r_{i+1}/r_i$, avec $r_{d-2}=|v_{d-2}|$. Le déterminant est non nul dès que les $s_i$ et $v_{d-2}$ sont non nuls, condition requise par 1.5. Les coefficients de l’application en 3.10 sont positifs à ces emplacements.
 
 ### Question 3.9 · Les pivots divisent les côtés
 

@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Un triangle rempli et son seul contour se distinguent par leurs cycles qui ne sont pas des bords. Le sujet relie le calcul de ces cycles au nombre de questions qu’un arbre de décision doit poser pour reconnaître un simplexe.
 
 ## Partie 1 · Calculs matriciels
@@ -121,7 +123,9 @@ Pour comparer deux listes, lire jusqu’au premier désaccord. Si une liste se t
 
 Au sein d’une paire, l’entrée haute ajoute la réponse positive de dernier rang. Sa liste, plus longue et de même préfixe, vient avant celle de l’entrée basse. Échanger chaque membre avec son partenaire donne l’inégalité demandée.
 
-Pour prouver l’acyclicité, effacer maintenant le rang $n$ de toutes les listes. Les membres d’une paire ont la même nouvelle liste. Toute autre arête descendante retire un sommet testé plus tôt, disons au rang $k$. La stratégie a posé les mêmes questions jusqu’à ce rang, mais reçoit maintenant non à la place de oui. Le premier indice positif divergent devient donc plus grand, ou bien la liste se termine. Toute descente fait strictement augmenter cette mesure, alors que les montées la conservent. Comme chaque montée gagne une dimension, un circuit ne pourrait se fermer sans descente. Le champ réduit à $K$ est bien acyclique.
+Suivre ensuite une descente non appariée $\beta\to\alpha$. Quel sommet disparaît, et quand a-t-il été testé ? Son rang $k$ est inférieur à $n$. S’il avait été testé en dernier, les deux entrées formeraient une paire orientée dans le sens montant. Les deux exécutions prennent le même chemin jusqu’à la question $k$, où la réponse passe de oui à non. Passer aux partenaires $\check\beta$ et $\check\alpha$ laisse intactes les $n-1$ premières réponses de chaque exécution. Les listes de leurs réponses positives coïncident donc avant $k$. La liste de $\check\beta$ donne ensuite $k$, et celle de $\check\alpha$ donne un rang supérieur ou se termine. Dans les deux cas, la règle de 5.2 place la première strictement avant la seconde.
+
+La liste du partenaire augmente donc strictement à chaque flèche, montante ou descendante. Elle ne peut revenir à son point de départ. La restriction à $K$ conserve la propriété de partenaire unique et chaque paire monte d’une seule dimension. Le champ est acyclique.
 
 ![Figure 2 — Pour un ordre fixe de trois questions, les deux entrées d’une paire répondent de la même manière aux premières questions et diffèrent seulement à la dernière.](figures/paire.svg)
 

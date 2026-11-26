@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Toutes les chaînes sont à coefficients réels. Les simplexes sont non vides. On note rₚ le rang du bord dₚ et βₚ le nombre de Betti en dimension p. Les flèches d’un appariement montent et les incidences non appariées descendent.
 
 ## Partie 1 · Calculs matriciels
@@ -118,7 +120,9 @@ Compléter chaque suite finie par une infinité de symboles $+\infty$, supérieu
 
 Notons $L(\alpha)$ la liste croissante des rangs des réponses positives. Pour une paire montante $\beta\triangleright\alpha$, les permutations coïncident et $L(\alpha)$ prolonge $L(\beta)$ par le rang $n$. Comme $\check\beta=\alpha$ et $\check\alpha=\beta$, on a $L(\check\beta)\prec L(\check\alpha)$.
 
-Pour exclure aussi les cycles comportant des flèches descendantes, prenons comme mesure la liste $J(\gamma)$ des seules réponses positives avant le rang $n$, ordonnée selon 5.2. Une flèche montante laisse $J$ fixe. Pour une descente non appariée de $\gamma$ vers $\eta$, le sommet enlevé avait été testé à un rang $k<n$, sinon ce serait la paire du dernier test. Jusqu’à cette question incluse, les deux ordres d’interrogation coïncident. Les réponses précédentes sont égales et celle de rang $k$ passe de oui à non. La liste de départ a donc pour prochain indice $k$, celle d’arrivée un indice plus grand ou le symbole de fin. Ainsi $J(\gamma)\prec J(\eta)$. Un cycle devrait comporter une descente et contredirait cet ordre. La restriction aux simplexes non vides conserve au plus une paire incidente par simplexe, toujours face directe et coface, d’où le champ discret acyclique.
+Il reste à établir l’inégalité demandée pour une flèche descendante non appariée $\beta\to\alpha$. Écrivons $\alpha=\beta\setminus\{v\}$, et soit $k$ le rang du test de $v$ sur $\beta$. On a $k<n$, car le retrait du dernier sommet testé formerait une paire appariée dont la flèche serait ascendante. Sur $\alpha$ et $\beta$, les questions posées jusqu’au rang $k$ sont identiques, ainsi que les réponses avant $k$. Le changement en $\check\alpha$ et $\check\beta$ ne modifie que la dernière réponse de chacune de ces exécutions. Les deux listes $L(\check\beta)$ et $L(\check\alpha)$ ont donc le même préfixe avant $k$. La première a ensuite l’indice $k$, alors que la seconde a un indice supérieur ou se termine. Dans l’ordre de 5.2, cela donne bien $L(\check\beta)\prec L(\check\alpha)$.
+
+Cette même mesure augmente strictement sur toute flèche. Un circuit contredirait la transitivité et l’irréflexivité de $\prec$. Chaque simplexe de $K$ conserve au plus un partenaire par 5.1, et toute paire restante relie une face directe à sa coface. On obtient ainsi le champ de vecteurs discret acyclique demandé.
 
 ![Figure 2 — Pour un ordre fixe de trois questions, les deux entrées d’une paire répondent de la même manière aux premières questions et diffèrent seulement à la dernière.](figures/paire.svg)
 
