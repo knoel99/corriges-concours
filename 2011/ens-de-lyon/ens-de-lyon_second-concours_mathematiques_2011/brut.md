@@ -2,7 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 **Image numérique d’une matrice.** Le produit hermitien est linéaire dans sa première variable. L’ellipse en dimension deux sert ensuite à démontrer la convexité en dimension quelconque par compression sur un plan. L’archive institutionnelle ne rattache pas de rapport à cet écrit.
 
@@ -80,6 +82,8 @@ Le facteur $t\sqrt{1-t^2}$ remplit $[0,1/2]$. L’image numérique est ainsi l�
 $$W(A)=\{z:|z-\sqrt{ab}|+|z+\sqrt{ab}|\le a+b\}.$$
 Pour vérifier l’inégalité intérieure, le calcul précédent avec $M/2,N/2,c/2$ identifie la frontière, et la fonction somme des distances est convexe et croît sur chaque rayon depuis son minimum central (elle est paire et convexe sur chaque droite). Au-delà du bord, la somme est strictement plus grande, par la convexité et la valeur centrale $2\sqrt{ab}<M$. Le sous-niveau est convexe par inégalité triangulaire. Les deux emplois de $x_+,x_-$ dans l’énoncé requièrent donc des foyers de tailles différentes.
 
+Dans la figure, $a=4$ et $b=1$. La frontière a pour paramétrisation $(5\cos\theta/2,3\sin\theta/2)$. Au sommet du petit axe, situé en $3i/2$, chaque distance aux foyers $-2$ et $2$ vaut $5/2$. Au sommet du grand axe, situé en $5/2$, elles valent $9/2$ et $1/2$. Les deux contrôles donnent la même somme $5$.
+
 ![Figure 1 — Pour a = 4 et b = 1, les foyers de l’image numérique sont −2 et 2. La somme des deux distances en orange vaut 5 sur le bord.](figures/ellipse-et-foyers.svg)
 
 ### Question 10.a
@@ -106,6 +110,8 @@ Si $e_2=ce_1$, alors $|c|=1$ par normalisation, et $(Ae_2,e_2)=|c|^2(Ae_1,e_1)=\
 ### Question 12.b
 
 Pour $x\in M$, $Ax-P_MAx$ est orthogonal à $M$, donc à $x$. Ainsi $(A_Mx,x)=(P_MAx,x)=(Ax,x)$, même si $Ax$ n’appartient pas à $M$.
+
+La compression est un endomorphisme du plan $M$ même si ce plan n’est pas stable par $A$. C’est précisément la projection qui permet d’appliquer le résultat en dimension deux dans la question suivante.
 
 ### Question 12.c
 

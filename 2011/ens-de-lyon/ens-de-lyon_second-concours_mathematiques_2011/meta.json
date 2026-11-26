@@ -31,6 +31,54 @@
       "perimetre": "Rédaction des trois parties sur les six pages natives de l’énoncé. Contrôle des foyers aux deux échelles de Q9.c, du symbole T de Q10.a et de la condition de trace nulle de Q13.b. Ellipse focale calculée, puis démonstration de la généralisation à diagonale constante. Rapport écrit non rattaché dans le sommaire institutionnel.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "x_maths_b_anciennes",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Confrontation des 24 rubriques des deux éditions aux 6 pages du sujet. Contrôle des deux échelles focales de 9.c, des phases en 8.b et 10.a, des cas dégénérés et de la condition de trace en 13.b. Calcul explicite des distances de la figure et rôle de la compression."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4.a",
+      "4.b",
+      "5",
+      "6.a",
+      "6.b",
+      "6.c",
+      "7",
+      "8.a",
+      "8.b",
+      "8.c",
+      "9.a",
+      "9.b",
+      "9.c",
+      "10.a",
+      "10.b",
+      "11",
+      "12.a",
+      "12.b",
+      "12.c",
+      "13.a",
+      "13.b"
+    ],
+    "precision": "Confrontation des 24 rubriques des deux éditions aux 6 pages du sujet. Contrôle des deux échelles focales de 9.c, des phases en 8.b et 10.a, des cas dégénérés et de la condition de trace en 13.b. Calcul explicite des distances de la figure et rôle de la compression.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "85c07e6d330759bd094b18716765f6fb6d1103c0d1b8d76c05ecbfb32baae29f",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Confrontation des 24 rubriques des deux éditions aux 6 pages du sujet. Contrôle des deux échelles focales de 9.c, des phases en 8.b et 10.a, des cas dégénérés et de la condition de trace en 13.b. Calcul explicite des distances de la figure et rôle de la compression.",
+      "commit_redaction_anterieure": "0980e16f9206be6dffae85462d187c57c16c1984"
+    }
+  }
 }
