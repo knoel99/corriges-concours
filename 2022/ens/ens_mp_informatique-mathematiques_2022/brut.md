@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Automates, points fixes et équivalence de langage.** Un état accepte un mot lorsque le parcours de ses lettres aboutit à une sortie 1. On cherche à décider si deux états acceptent les mêmes mots, puis à calculer toutes les classes en une seule fois.
 
 ## 1. Langages reconnus et parcours de paires
@@ -221,7 +223,7 @@ On extrait d’abord $(x_1,y_1),(x_2,y_2),(x_3,y_3)$. Les deux parcours se rejoi
 
 ### Question 3.21
 
-Choisissons $g(R)=R\cup 1=r^\omega(R)$. C’est la clôture réflexive. La constante $r$ est compatible car $r(p(R))=1\subseteq p(1)$, chaque état ayant ses propres sorties et successeurs. L’identité et la réunion conservent la compatibilité par 3.16. La question 3.19 s’applique. Après les trois premières comparaisons, la quatrième extraction est diagonale et ignorée. Quatre itérations suffisent, indépendamment de $n$.
+Choisissons $g(R)=R\cup 1=r^\omega(R)$. C’est la clôture réflexive. La constante $r$ est compatible car $r(p(R))=1\subseteq p(1)$, chaque état ayant ses propres sorties et successeurs. L’identité et la réunion conservent la compatibilité par 3.16. La question 3.19 s’applique. Après les trois premières comparaisons, la quatrième extraction est diagonale et ignorée. Pour tester $(x,y)\in g(R)$, comparer d’abord $x$ et $y$, puis, si nécessaire, chercher la paire dans la liste $R$. Sur ces entrées, cette liste contient au plus trois paires. En initialisant $R$ à la liste vide et la file à la seule paire de départ, les quatre itérations et leur initialisation prennent donc un temps constant.
 
 ### Question 3.22
 
@@ -270,7 +272,7 @@ Dans l’automate quotient on a $[0]\to[14]\to[25]\to[3]\to[14]$, où $[0]$ et $
 
 ### Question 4.7
 
-Numérotons les états de 0 à $n-1$ et les lettres de 1 à $k$. Stockons les transitions dans un tableau $n\times k$, les sorties dans un tableau, la classe courante dans $c[x]$, initialisée selon $o(x)$. À une étape, constituer la clé
+Numérotons les états de 0 à $n-1$ et les lettres de 1 à $k$. Stockons les transitions dans un tableau $n\times k$, les sorties dans un tableau, la classe courante dans $c[x]$, initialisée en numérotant les classes de sortie non vides de 0 à $q-1$, où $q$ est leur nombre. Même si tous les états sont acceptants, l’unique classe reçoit le numéro 0. À une étape, constituer la clé
 $$K_x=(c[x],c[\delta(x,a_1)],\ldots,c[\delta(x,a_k)]).$$
 Trier les indices des états selon leurs clés. Une lecture des indices triés attribue le même nouveau numéro à deux clés identiques et incrémente le numéro à chaque changement. Conserver les anciens numéros jusqu’à la fin de ce passage. Si le nombre de classes ne change pas, retourner les nouvelles classes. Sinon, recommencer.
 
