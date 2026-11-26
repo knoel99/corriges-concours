@@ -16,16 +16,24 @@
   },
   "sources": {
     "sujet": "https://www.concours-bce.com/sites/default/files/2026-04/76%20GB%20-%20LANGUE_VIVANTE_B_ELVI_ALLEMAND_ANGLAIS_ESPAGNOL.pdf#page=2",
-    "sujet_sha256": "3c3b5c1c8df940530b89438e51c458c92a8cbdf6e7752a643ca18057eb6ac1a0"
+    "sujet_sha256": "3c3b5c1c8df940530b89438e51c458c92a8cbdf6e7752a643ca18057eb6ac1a0",
+    "rapport_jury": "https://www.concours-bce.com/sites/default/files/2026-11/76%20-%20Allemand%20LVB%20Elvi%202026.pdf",
+    "rapport_sha256": "174255376aa5599f0a5f0e88275ff60d83de1e68b8db98d3dcc05af23ea46ea0"
   },
   "figures": [
     {
       "fichier": "figures/dossier.svg",
       "question": "Dossier",
       "legende": "Was sollen Lernende selbst leisten?"
+    },
+    {
+      "fichier": "figures/erwartungen.svg",
+      "question": "Essai, lecture du document 4",
+      "legende": "Berufliche Bedeutung von KI-Kenntnissen",
+      "description": "Zustimmung nach sozialer Schicht, unter deutschsprachigen 14- bis 20-Jährigen Untere / Arbeiterschicht 58 %. Untere / mittlere Mitte 69 %. Obere Mitte / Oberschicht 78 %."
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -36,6 +44,44 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Résumé comparatif en allemand des positions de Hartwin Maas et Ben Mann, essai sur le jugement critique dans l’enseignement, traduction limitée au témoignage d’Éric Hans et schéma pédagogique."
+    },
+    {
+      "phase": "lecture_rapport_jury",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "fui_physique_deux",
+      "modifications": false,
+      "perimetre": "Rapprochement du rapport BCE de la langue et du niveau correspondants avec le sujet et les trois exercices."
+    },
+    {
+      "phase": "revision",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "fui_physique_deux",
+      "modifications": true,
+      "perimetre": "Fascicule 76-GB, section allemand-lvb p. 2–6 et garde p. 1. Cinq pièces, garde et page du thème contrôlées malgré la duplication de la couche texte. Comparaison Maas/Mann, dessin de la classe sans enseignant et enquête des 14–20 ans. Traduction de « Dans son témoignage » au développement de l’esprit critique, en conservant les citations. Résumé 245 mots ; essai 340 mots. Contrôles dans les deux éditions."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I. Résumé analytique comparatif",
+      "II. Essai argumenté",
+      "III. Thème"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "origine_attestation": {
+      "phase": "revision",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "3c3b5c1c8df940530b89438e51c458c92a8cbdf6e7752a643ca18057eb6ac1a0",
+      "perimetre": "Fascicule 76-GB, section allemand-lvb p. 2–6 et garde p. 1. Cinq pièces, garde et page du thème contrôlées malgré la duplication de la couche texte. Comparaison Maas/Mann, dessin de la classe sans enseignant et enquête des 14–20 ans. Traduction de « Dans son témoignage » au développement de l’esprit critique, en conservant les citations. Résumé 245 mots ; essai 340 mots. Contrôles dans les deux éditions."
+    }
+  }
 }
