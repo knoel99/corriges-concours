@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 La cellule de la cave coopérative de Lugny transfère des bouteilles et compose des caisses. L’épreuve de cinq heures demande 44 réponses. Les repères A et B renvoient au texte et aux annexes du ZIP officiel. Ca à Cg désignent les sept feuillets de réponses. Les extraits annotés reproduisent les cadres utiles de la Banque PT.
 
 [Sujet, annexes et cahier de réponse](https://www.banquept.fr/documents/2020/si_a_2020_pt.zip) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2020/rapport_si_a_ecrit_2020.pdf)
@@ -58,7 +60,7 @@ Le premier double rang de dix prélevé en caisse est stocké en PTT1. Une prise
 
 *Feuillets A7, Ca3.*
 
-Sur Ca3, les six liaisons d’information entre l’automate et le vacuostat ou les cinq types d’organes commandés portent **E**. L’arrivée de vide au vacuostat, puis à l’électrovanne de coupure, porte **V**. L’arrivée d’air comprimé à l’électrovanne de contre-soufflage et aux distributeurs d’escamotage porte **P**, tout comme la conduite de contre-soufflage vers la coupure et les liaisons des distributeurs aux vérins. En aval de la sélection du fluide, la liaison vers la rampe fixe, les vannes d’isolation et les rampes escamotables porte **V/P**, suivant que l’outil aspire ou souffle. Les sorties de tige des deux types de vérin vers leur rampe portent **M**. La figure place ces lettres dans les cases libres de Ca3.
+Sur Ca3, la sortie du vacuostat vers l’automate et les six liaisons de commande vers les organes de l’outil portent **E**. L’arrivée de vide au vacuostat, puis à l’électrovanne de coupure, porte **V**. L’arrivée d’air comprimé à l’électrovanne de contre-soufflage et aux distributeurs d’escamotage porte **P**, tout comme la conduite de contre-soufflage vers la coupure et les liaisons des distributeurs aux vérins. En aval de la sélection du fluide, la liaison vers la rampe fixe, les vannes d’isolation et les rampes escamotables porte **V/P**, suivant que l’outil aspire ou souffle. Les sorties de tige des deux types de vérin vers leur rampe portent **M**. La figure place ces lettres dans les cases libres de Ca3.
 
 ![Figure 3 — Ca3. Nature des flux dans les cases du diagramme.](figures/flux.svg)
 
@@ -181,7 +183,7 @@ On a $\dot D=-H\dot\theta_3$. La projection sur $\vec y_0$ du terme de transport
 $$
 \vec\delta_B\cdot\vec y_0=B_4\ddot\phi+m_4 L_2[D\ddot\theta_2+H\dot\theta_2^2].
 $$
-Une autre vérification part de $\vec\delta_B=I(B,4)\ddot\phi\vec y_0+\overrightarrow{BG_4}\times m_4\vec a_B$, avec $\vec a_B=L_2(\ddot\theta_2\vec x_2-\dot\theta_2^2\vec z_2)$.
+Ce résultat peut aussi s’obtenir à partir de $\vec\delta_B=I(B,4)\ddot\phi\vec y_0+\overrightarrow{BG_4}\times m_4\vec a_B$, avec $\vec a_B=L_2(\ddot\theta_2\vec x_2-\dot\theta_2^2\vec z_2)$.
 
 ### Q21 — Couple exercé par l’axe J3
 
