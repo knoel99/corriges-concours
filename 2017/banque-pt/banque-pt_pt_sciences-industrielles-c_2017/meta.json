@@ -1,0 +1,581 @@
+{
+  "slug": "banque-pt_pt_sciences-industrielles-c_2017",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Sciences industrielles C",
+    "annee": 2017
+  },
+  "questions": 40,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2017/si_c_2017_pt.pdf",
+    "sujet_sha256": "c9603d32d49c8adc6ed4239fff6221366fde83cb5bce0764c043e5c5b16d8b75",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2017/rapport_si_c_ecrit_2017.pdf",
+    "rapport_sha256": "ee772a275e5bc672869e8dd0d861128e1c6aaaf85af0842aa0086ff88107ed14",
+    "lecture_rapport": "Rapport p. 1, barème en cinq parties. P. 2–3, aire de stockage, question polytropique et barème ajusté, cinématique, hyperstatisme, montage du palier, arbitrage et usinage. P. 3–4, lecture GPS et état de surface hors programme neutralisé."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2017/si_c_2017_pt.pdf",
+      "sha256": "c9603d32d49c8adc6ed4239fff6221366fde83cb5bce0764c043e5c5b16d8b75",
+      "nombre_pages": 52,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "6677fb8f4b89e74e41a3aae5987797d5f55a14f63ed565afb74b459cf8b2bb61"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "8f46decc808a5066bbcd48d34e8e127cb0c9bb16f61f5d0156b2e4caf10367fa"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "b06653565cea58184bd205b9e9314f3326cbf2766e543185c8720ba0279864d7"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "939b2dfb7471871ef6c6ed23e940fa139c020f1e2ea6028e99815c94d76e1eec"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "76c6c19d020e2abf3f8ccae4cdd4fa833fb59c2160a2d78e041ac05367540638"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "d645655df5b7881a1c7d5a6962426611ccc5c405fdfdc9a2216a51d3e4ef2c9f"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "b97ece63d39628ecff145fccd8042076e2cc1679fb0ac84ac67915e42e8f11a1"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "118257f3e53a4a1a970638af664b00ef77f0bc764c6486945abd939bc53b3287"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "9f4c09120970d040afd8150a21443609e79d689e3b74022ebdee1ea471ffaa1a"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "146f35e6c51b7795a97b5862a232e36cf7722f97951e613c4cc948638f5971f7"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "c1b5ad560d2029106a1849dfc36e0bc9087fb85a11c47b833bc86bdf1610635d"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "5b6fc6ebe75025f604bd41ed955f2757a51b8cfe2991b592bdca511b89d9013f"
+        },
+        {
+          "numero": 13,
+          "rendu_sha256": "2b92d9894c79375ce3fddea8daf69fe96d97dced84948643ffb1eb9c75b6eec2"
+        },
+        {
+          "numero": 14,
+          "rendu_sha256": "071f1b64d86e24ac9f3e50a219138817e98da5be5232b65ad67c22b93173db48"
+        },
+        {
+          "numero": 15,
+          "rendu_sha256": "d11a81bd692434b176872f1f56718f11e2e8411f6d780207184c78aa12a33799"
+        },
+        {
+          "numero": 16,
+          "rendu_sha256": "718c0c69d0edcef45b15d889766cf745d286b0b72d8a43187d4339bd06c95ad1"
+        },
+        {
+          "numero": 17,
+          "rendu_sha256": "7ad985c85df1feeae7cc6ec4bad411ce07a7ce3966d76ceda5993ca6c7656b9d"
+        },
+        {
+          "numero": 18,
+          "rendu_sha256": "4e35b5318e88faaaf5b5b97f3edf61e2485e93eaeaf092a62fd7c87f7ae7ad0f"
+        },
+        {
+          "numero": 19,
+          "rendu_sha256": "6d69b79f28a2e154647de0524185641fdd2787f6152e02ecea54407db1dfa254"
+        },
+        {
+          "numero": 20,
+          "rendu_sha256": "8f1583cc5e84af74d318bf02228a88ccd029ea92d477d75e273ec88695b20a4d"
+        },
+        {
+          "numero": 21,
+          "rendu_sha256": "54fccaa022adafe6048038087a74294a2c7f9053e6f0b0ed12f9c19e98569a26"
+        },
+        {
+          "numero": 22,
+          "rendu_sha256": "64a91942465bb5d46c3ade9348c270f234b18750b2179b56f561d6dd65ad3099"
+        },
+        {
+          "numero": 23,
+          "rendu_sha256": "37615697d47e190d8d0141d8345037fbc3d207b57cc36229815e8c1019eeeb02"
+        },
+        {
+          "numero": 24,
+          "rendu_sha256": "8e2647010607dac96de42f40fcc11a4d52d868cfcb7f0725745f519d2ecd74c2"
+        },
+        {
+          "numero": 25,
+          "rendu_sha256": "7a77c864c6233b72b8f764c0c83930c4b011f5fb08b17d4f876f998693285323"
+        },
+        {
+          "numero": 26,
+          "rendu_sha256": "330c4c77d148c145dd87560366176e534fde0f29fb2f4b804b281de8202cad3f"
+        },
+        {
+          "numero": 27,
+          "rendu_sha256": "bf16313108d5107ab29f5863d3da642d4851f4c827ebd50eb35c7126abd05ddd"
+        },
+        {
+          "numero": 28,
+          "rendu_sha256": "18634efe7d95cdda9241fe40e02a82e76188d80cd2bdca54e75ba28f1fc47d52"
+        },
+        {
+          "numero": 29,
+          "rendu_sha256": "0907a5a9ee99da605ddb97d3553bc9bc2ba285876855b3ff0cd0567b0601c83b"
+        },
+        {
+          "numero": 30,
+          "rendu_sha256": "6c91937e1c1d72727377c331039b43fae7df6c9a1e9c92806f8d37138b1153fc"
+        },
+        {
+          "numero": 31,
+          "rendu_sha256": "8bdac4b62088b10dfb028caf6c7c75a9f38c5e080ff93541015cd48551535b10"
+        },
+        {
+          "numero": 32,
+          "rendu_sha256": "0f4fcf849e13d5dfd2edd7b6debb2786b8e10f92826f416550b012cd8e8dc605"
+        },
+        {
+          "numero": 33,
+          "rendu_sha256": "3c9a27a301a87b29e1f79697f64c45716f20d94d5e7aefea2779473da4281bc9"
+        },
+        {
+          "numero": 34,
+          "rendu_sha256": "7dfd6502709128b45c0dc1e2d9052a9efae7a047003ea3e881f0cc85024c7f02"
+        },
+        {
+          "numero": 35,
+          "rendu_sha256": "cd404d3b8f14a7bbdf250a0aa904868c6b32b4f53c742b8d13cd6302780bf5af"
+        },
+        {
+          "numero": 36,
+          "rendu_sha256": "073c630e05b045751dba3e4651d291ee86745df6173687e5f54ee1b30583272d"
+        },
+        {
+          "numero": 37,
+          "rendu_sha256": "99a7a7caf949c0165ba84cf573185ab0977b4c62e245cd44921ef13a66fe886e"
+        },
+        {
+          "numero": 38,
+          "rendu_sha256": "329ca445c10e55234ecc35a573ef92403df8ee82058486681b6ad4b80440c800"
+        },
+        {
+          "numero": 39,
+          "rendu_sha256": "273467b781576f58e6544749a624c271ba0dd268fe12492b1441490916fbc5a9"
+        },
+        {
+          "numero": 40,
+          "rendu_sha256": "9b7b64426ed6857f7cfaab8a16681e85fb6ef82bd82d59a4293601f1b0954a4b"
+        },
+        {
+          "numero": 41,
+          "rendu_sha256": "ec341f48ee82c16da8cdddd01a6fd7e2edbffe87d35c48667c59396798ebdb24"
+        },
+        {
+          "numero": 42,
+          "rendu_sha256": "5f7c5082adabdf9c986f3d4c112c387bbe76d69b22c20db9a1960a56218f8665"
+        },
+        {
+          "numero": 43,
+          "rendu_sha256": "4b0a5fcad570319d40b95b9c3f32ddcc5f0944c9747c2fa3aab781e0c3ca3861"
+        },
+        {
+          "numero": 44,
+          "rendu_sha256": "897d02465093f2f88ae67b7b83c0160417b5342654911d1286573629d41e7b63"
+        },
+        {
+          "numero": 45,
+          "rendu_sha256": "cb12c358699c54bb1ed18e068ac8d12252cca57494a72ea0057980a57bcdd790"
+        },
+        {
+          "numero": 46,
+          "rendu_sha256": "fef90ef74d211323e42981e0f04b5f99b0846d696c70db3104da47a73f287baa"
+        },
+        {
+          "numero": 47,
+          "rendu_sha256": "8a95aa05a853639afa3024ec320b19e6ba8b9a7dd48f285c0621b6f65b37996e"
+        },
+        {
+          "numero": 48,
+          "rendu_sha256": "99529290de19d08f199560d913b0bd3e7a96ba749763193f0a42a338d971e635"
+        },
+        {
+          "numero": 49,
+          "rendu_sha256": "3c9a27a301a87b29e1f79697f64c45716f20d94d5e7aefea2779473da4281bc9"
+        },
+        {
+          "numero": 50,
+          "rendu_sha256": "06d4b75263bf28d404e89578d94f62e416942b52dbc2ca959f0184a230c9eb94"
+        },
+        {
+          "numero": 51,
+          "rendu_sha256": "f2321e4c7f6d00465ee600e5461b024d446f5cd930887e054aa49c49c93bbb8b"
+        },
+        {
+          "numero": 52,
+          "rendu_sha256": "c576968c5a8f28bef0577dcaa81cc240c299f6c21ffd0f8313eb5c9298c9815b"
+        }
+      ],
+      "echelle_rendu": 0.6
+    },
+    "rapport_jury": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2017/rapport_si_c_ecrit_2017.pdf",
+      "sha256": "ee772a275e5bc672869e8dd0d861128e1c6aaaf85af0842aa0086ff88107ed14",
+      "nombre_pages": 4,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "9490b2e841f391488405864580c97b5c66dbcaee8370dc13518f084f269b696d"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "d04e6fbcfbd48d87fd9aff55ed2f213447a9ef3e7259c62c4da471a196a8c128"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "aae989b1b82405addabc02b266e8d8455fbde0cd31df4ea083818871917507df"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "8af9ade4345ff6091d990ed190c231bd01dbca63189afb9e427c0b2172bbca06"
+        }
+      ],
+      "echelle_rendu": 0.6
+    }
+  },
+  "date_revision": "2026-11-26",
+  "figures": [
+    {
+      "fichier": "figures/stockage.svg",
+      "question": "Q5",
+      "legende": "Aire entre haute et basse pression sur les 15 litres transférés."
+    },
+    {
+      "fichier": "figures/jeux.svg",
+      "question": "Q17",
+      "legende": "Trois contacts à 120 degrés et projections normales du déplacement."
+    },
+    {
+      "fichier": "figures/palier.svg",
+      "question": "Q20",
+      "legende": "Réponse sur le calque A3, roulement gauche et retenues démontables."
+    },
+    {
+      "fichier": "figures/arbitrage.svg",
+      "question": "Q23",
+      "legende": "Niveau du bus sur onze bits et deux instants de perte d’arbitrage."
+    },
+    {
+      "fichier": "figures/hall.svg",
+      "question": "Q24",
+      "legende": "Aimant mobile et capteur de Hall fixe vus suivant l’axe."
+    },
+    {
+      "fichier": "figures/percages.svg",
+      "question": "Q39",
+      "legende": "Porte-pièce indexé et direction du foret sur le tour et la fraiseuse."
+    }
+  ],
+  "contributions": [
+    {
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "session": "banque_pt_si_c_hybridair_dynali_2017",
+      "phase": "redaction",
+      "perimetre": "40 réponses et indications, ressources I à XV, arbitrage bit à bit, choix du diazote, palier colorisé sur calque A3 et schémas des axes machines."
+    },
+    {
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "session": "banque_pt_si_c_hybridair_dynali_2017",
+      "phase": "relecture_corrige",
+      "perimetre": "Contrôle des aires en bar·L, du signe et des bornes du rapport global, des trois projections de déplacement, de la chronologie de l’arbitrage, des surfaces GPS et des chemins de montage. Contrôle des figures, des signets et de la paire PDF.",
+      "tour": 1
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21",
+      "Q22",
+      "Q23",
+      "Q24",
+      "Q25",
+      "Q26",
+      "Q27",
+      "Q28",
+      "Q29",
+      "Q30",
+      "Q31",
+      "Q32",
+      "Q33",
+      "Q34",
+      "Q35",
+      "Q36",
+      "Q37",
+      "Q38",
+      "Q39",
+      "Q40"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "Q1",
+        "page_pdf": 5,
+        "traitement": "Énergie du démarrage"
+      },
+      {
+        "question": "Q2",
+        "page_pdf": 6,
+        "traitement": "Quantité de diazote"
+      },
+      {
+        "question": "Q3",
+        "page_pdf": 6,
+        "traitement": "Travail de compression isotherme"
+      },
+      {
+        "question": "Q4",
+        "page_pdf": 7,
+        "traitement": "Choix de la masse de gaz"
+      },
+      {
+        "question": "Q5",
+        "page_pdf": 7,
+        "traitement": "Bilan des deux accumulateurs"
+      },
+      {
+        "question": "Q6",
+        "page_pdf": 7,
+        "traitement": "Évolution pendant un cycle rapide"
+      },
+      {
+        "question": "Q7",
+        "page_pdf": 7,
+        "traitement": "Détente brusque"
+      },
+      {
+        "question": "Q8",
+        "page_pdf": 8,
+        "traitement": "Relation du train de répartition"
+      },
+      {
+        "question": "Q9",
+        "page_pdf": 8,
+        "traitement": "Rapport court"
+      },
+      {
+        "question": "Q10",
+        "page_pdf": 8,
+        "traitement": "Rapport long"
+      },
+      {
+        "question": "Q11",
+        "page_pdf": 9,
+        "traitement": "Variation continue"
+      },
+      {
+        "question": "Q12",
+        "page_pdf": 9,
+        "traitement": "Plage numérique"
+      },
+      {
+        "question": "Q13",
+        "page_pdf": 9,
+        "traitement": "Point de fonctionnement du moteur"
+      },
+      {
+        "question": "Q14",
+        "page_pdf": 9,
+        "traitement": "Marche arrière"
+      },
+      {
+        "question": "Q15",
+        "page_pdf": 9,
+        "traitement": "Rôle du différentiel"
+      },
+      {
+        "question": "Q16",
+        "page_pdf": 10,
+        "traitement": "Mobilité et hyperstatisme"
+      },
+      {
+        "question": "Q17",
+        "page_pdf": 11,
+        "traitement": "Trois ajustements pour trois contacts"
+      },
+      {
+        "question": "Q18",
+        "page_pdf": 11,
+        "traitement": "Liaison isostatique"
+      },
+      {
+        "question": "Q19",
+        "page_pdf": 11,
+        "traitement": "Concentricité des appuis droits"
+      },
+      {
+        "question": "Q20",
+        "page_pdf": 11,
+        "traitement": "Palier gauche sur le calque"
+      },
+      {
+        "question": "Q21",
+        "page_pdf": 12,
+        "traitement": "Multiplexage"
+      },
+      {
+        "question": "Q22",
+        "page_pdf": 12,
+        "traitement": "Caractéristiques du bus"
+      },
+      {
+        "question": "Q23",
+        "page_pdf": 12,
+        "traitement": "Arbitrage de la feuille réponse"
+      },
+      {
+        "question": "Q24",
+        "page_pdf": 12,
+        "traitement": "Mesure de l’inclinaison"
+      },
+      {
+        "question": "Q25",
+        "page_pdf": 12,
+        "traitement": "Moteur de sélection"
+      },
+      {
+        "question": "Q26",
+        "page_pdf": 12,
+        "traitement": "Ordre des cames"
+      },
+      {
+        "question": "Q27",
+        "page_pdf": 13,
+        "traitement": "Codeur incrémental et réinitialisation"
+      },
+      {
+        "question": "Q28",
+        "page_pdf": 13,
+        "traitement": "Indices tachymétriques"
+      },
+      {
+        "question": "Q29",
+        "page_pdf": 14,
+        "traitement": "Trois fiches GPS"
+      },
+      {
+        "question": "Q30",
+        "page_pdf": 14,
+        "traitement": "Taille locale et rugosité"
+      },
+      {
+        "question": "Q31",
+        "page_pdf": 14,
+        "traitement": "Pourquoi cémenter"
+      },
+      {
+        "question": "Q32",
+        "page_pdf": 14,
+        "traitement": "Mécanisme de la cémentation"
+      },
+      {
+        "question": "Q33",
+        "page_pdf": 14,
+        "traitement": "Transformer la structure par trempe"
+      },
+      {
+        "question": "Q34",
+        "page_pdf": 14,
+        "traitement": "Propriétés modifiées"
+      },
+      {
+        "question": "Q35",
+        "page_pdf": 15,
+        "traitement": "Surface et cœur"
+      },
+      {
+        "question": "Q36",
+        "page_pdf": 15,
+        "traitement": "Nécessité de rectifier"
+      },
+      {
+        "question": "Q37",
+        "page_pdf": 15,
+        "traitement": "Rectification cylindrique extérieure"
+      },
+      {
+        "question": "Q38",
+        "page_pdf": 15,
+        "traitement": "Gamme proposée"
+      },
+      {
+        "question": "Q39",
+        "page_pdf": 15,
+        "traitement": "Trois perçages radiaux à 120 degrés"
+      },
+      {
+        "question": "Q40",
+        "page_pdf": 15,
+        "traitement": "Choix économique"
+      }
+    ]
+  }
+}
