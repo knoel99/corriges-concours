@@ -23,7 +23,8 @@
     "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_3_al.pdf",
     "sujet_sha256": "29fae7b96402102436173db873e05635f585ec1c38fd86bbeb4e963f0a55dd5f",
     "rapport": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf",
-    "rapport_sha256": "b7ae24985758ee21c7601a903f81ce57bdcef0cb108f8852ecd308eba32c7dca"
+    "rapport_sha256": "b7ae24985758ee21c7601a903f81ce57bdcef0cb108f8852ecd308eba32c7dca",
+    "index": "https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-al"
   },
   "figures": [
     {
@@ -37,7 +38,7 @@
       "question": "10"
     }
   ],
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -62,6 +63,22 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Confrontation de l’ordre, des choix et de chaque énoncé au feuillet et aux caractères gras de l’annexe du rapport. Vérification de la durée, des références conceptuelles, du lien entre cas concrets et thèses et de l’entraînement propre au guide."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "sociologie_psl_oraux_individuels",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rapprochement des 12 billets et des 24 intitulés avec le feuillet, les choix en gras du rapport et les développements des deux éditions. Ajout des consignes de tirage et des ouvrages autorisés, du renvoi aux sources et de 12 relances argumentées pour les alternatives dans le guidé."
     }
   ],
   "choix_dans_ordre_feuillet": [
@@ -77,5 +94,80 @@
     1,
     2,
     1
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "tirages_verifies": 12,
+    "sujets_choisis_verifies": 12,
+    "alternatives_verifiees": 12,
+    "intitules_par_edition": 24,
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "questions_entierement_traitees": [
+      "1. Sujet choisi — Avoir des principes",
+      "1. Alternative — L’artiste est-il maître de son œuvre ?",
+      "2. Sujet choisi — La fin de la guerre",
+      "2. Alternative — Une œuvre d’art doit-elle être originale ?",
+      "3. Sujet choisi — Qu’est-ce qu’un mythe ?",
+      "3. Alternative — Le pardon",
+      "4. Sujet choisi — Obéir",
+      "4. Alternative — Le beau est-il toujours bizarre ?",
+      "5. Alternative — Le caractère",
+      "5. Sujet choisi — Faut-il avoir peur de la technique ?",
+      "6. Sujet choisi — La non-violence",
+      "6. Alternative — Peut-on prouver l’existence ?",
+      "7. Alternative — Le monde du rêve",
+      "7. Sujet choisi — Peut-on justifier l’existence du mal ?",
+      "8. Alternative — Y a-t-il une sagesse des nations ?",
+      "8. Sujet choisi — L’existence d’autrui",
+      "9. Sujet choisi — Aimer et être aimé",
+      "9. Alternative — Le principe de raison",
+      "10. Sujet choisi — Le progrès",
+      "10. Alternative — En quel sens dit-on d’une œuvre d’art qu’elle est abstraite ?",
+      "11. Alternative — L’indicible",
+      "11. Sujet choisi — La nature a-t-elle des droits ?",
+      "12. Sujet choisi — Toute vérité est-elle bonne à dire ?",
+      "12. Alternative — L’histoire de la philosophie"
+    ],
+    "choix_dans_ordre_feuillet": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      1
+    ],
+    "pages_verifiees": {
+      "sujet": [
+        1
+      ],
+      "rapport": [
+        1,
+        8
+      ]
+    },
+    "rangs_annexe_rapport": [
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135
+    ],
+    "controle": "12 billets sur le feuillet et aux rangs 124–135 dans la section V du rapport. Le sujet en gras est le sujet choisi. Chaque terme reçoit son propre développement dans chacune des deux éditions. Les liens des commissions 2 et 3 sous le 29 juin dans l’index de l’ENS reprennent les deux PDF dont les en-têtes portent le 26 juin. Ce feuillet documente le 26 uniquement."
+  }
 }

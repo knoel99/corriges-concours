@@ -6,7 +6,11 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-La troisième commission du 26 juin a distribué douze billets de deux sujets. Les réponses suivent l’ordre de la feuille. Le rapport, page 8, permet de reconnaître par ses caractères gras le sujet choisi, qui est signalé à chaque billet. La rédaction et les relances du guide sont des propositions d’entraînement.
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Le [feuillet du 26 juin, commission 3](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_3_al.pdf) contient 12 billets de deux sujets. Les développements suivent leur ordre. Le jury a mis en gras le premier sujet sur 8 billets et le second sur 4. Le choix est indiqué à chaque billet. Le [rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf#page=8) permet de vérifier les choix. Dans l’[index officiel](https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-al), les liens du 29 reprennent les fichiers datés du 26.
+
+Lisez à haute voix les deux sujets du billet puis annoncez votre choix au début de l’exposé. Seul un dictionnaire de langue française est autorisé, à l’exclusion des dictionnaires de noms propres. Pour essayer l’autre sujet, utilisez la question d’entretien et la piste de réponse placées après son développement.
 
 ## Préparer l’entretien à partir des choix effectifs
 
@@ -37,6 +41,8 @@ Si la règle interdit toute exception de procédure, que faire de la candidature
 
 Avant l’exposition, une artiste choisit une disposition, reprend une couleur et signe le résultat. Cette maîtrise comme pouvoir de faire et de modifier est indéniable, bien que les résistances du matériau et les habitudes acquises interviennent déjà dans la création. Une fois l’œuvre visible, elle demeure son auteur sans déterminer seule tout ce que les spectateurs y discernent. Une lettre de l’artiste peut éclairer un motif, mais une interprétation attentive peut relever un effet qu’elle n’avait pas anticipé. Toutes les lectures ne se valent pas pour autant. Certaines se heurtent à des traits publics de l’œuvre. Il faut ainsi distinguer l’autorité sur la réalisation, les droits qui subsistent après publication et le pouvoir, plus limité, de fixer définitivement le sens.
 
+**À l’entretien. Une interprétation imprévue par l’artiste peut-elle être juste ?** Revenir à un détail de l’œuvre que cette lecture rend intelligible. L’intention déclarée est une source pertinente. Elle ne suffit pas à éliminer d’avance tout effet argumenté que l’auteur n’avait pas anticipé.
+
 ## 2. La fin de la guerre
 
 *Sujet choisi sur ce billet — La fin de la guerre*
@@ -48,6 +54,8 @@ Le congrès de Vienne de 1814–1815 permet d’interroger l’ambition d’éta
 ### Une œuvre d’art doit-elle être originale ?
 
 Une interprète joue une suite de Bach sans en modifier les notes et propose pourtant une écoute singulière par le tempo et l’articulation. L’originalité ne consiste donc pas nécessairement à créer une matière sans précédent. Elle peut se trouver dans un rapport nouveau à une forme reçue. Inversement, un procédé insolite peut rester arbitraire et sans portée. L’originalité devient une exigence historique forte dans certaines conceptions de l’artiste, mais ne saurait servir de mesure identique à toutes les œuvres, notamment à une icône ou à une interprétation musicale. Pour juger une œuvre, il faut examiner ce qu’elle fait du modèle et ce qu’elle donne effectivement à percevoir. La transgression d’une convention est une possibilité de création, sans être en elle-même une preuve de réussite.
+
+**À l’entretien. Une variation sur un thème connu doit-elle être tenue pour moins bonne ?** Faire entendre ce qui se conserve, puis ce qu’une modification du tempo ou de l’harmonie fait découvrir. L’écart quantitatif avec le modèle et la qualité de l’expérience proposée sont deux critères différents.
 
 ![Qu’est-ce qui prend fin ?](figures/paix.svg)
 
@@ -63,6 +71,8 @@ L’analyse structurale des mythes chez Lévi-Strauss attire l’attention sur l
 
 Pardonner suppose un tort dont on reconnaît encore la réalité. Si l’auteur n’a jamais commis l’acte, justice lui est rendue en dissipant l’accusation, non en lui faisant grâce. Le pardon transforme le rapport entre une personne et celui qui lui a fait tort, sans abolir magiquement les conséquences ni imposer une réconciliation. Il peut être précédé d’un aveu ou d’une réparation. Pourtant, dire que l’auteur aurait « acheté » son pardon par une indemnisation lui conférerait un pouvoir sur la réponse de la victime. Un tiers peut proposer une médiation et une institution trancher les obligations publiques. Ni l’un ni l’autre ne dispose de la parole personnelle de celui qui a subi le tort. Le pardon est possible comme ouverture d’une histoire nouvelle, sans devenir un devoir général qu’on adresserait aux victimes.
 
+**À l’entretien. Pardonner implique-t-il de renoncer à demander réparation ?** La victime peut renoncer au ressentiment et demander encore que le dommage soit réparé. Distinguer la relation personnelle, les conséquences matérielles et la responsabilité devant une collectivité.
+
 ## 4. Obéir
 
 *Sujet choisi sur ce billet — Obéir*
@@ -75,11 +85,15 @@ Cette structure ouvre une question de légitimité. Un supérieur peut être com
 
 La formule de Baudelaire « Le beau est toujours bizarre » invite à examiner ce qui détache une forme de l’indifférence. Une légère dissymétrie dans un portrait peut donner à la figure une présence qu’une régularité parfaite aurait rendue anonyme. La bizarrerie peut alors désigner une singularité difficile à réduire à une recette. Elle peut aussi signifier une étrangeté voyante recherchée pour elle-même. Un détail inattendu qui détourne sans raison le regard de l’ensemble ne rend pas nécessairement l’œuvre belle. Inversement, une forme longtemps familière peut redevenir saisissante lorsqu’on y distingue des rapports jusque-là inaperçus. Si le beau exige une singularité éprouvée, il ne dépend pas toujours d’une anomalie spectaculaire. Il faut dire en quel sens une œuvre résiste à l’habitude et ce que cette résistance fait percevoir.
 
+**À l’entretien. Pourquoi confond-on parfois ce qui étonne et ce qui est beau ?** Une forme insolite arrête le regard. Il faut encore examiner ce qu’elle fait percevoir une fois la surprise dissipée. Un contraste familier peut rester beau même quand on ne s’en étonne plus.
+
 ## 5. Le caractère
 
 *Sujet choisi sur ce billet — Faut-il avoir peur de la technique ?*
 
 Un enfant qu’on dit timide intervient soudain avec assurance pour expliquer un problème qu’il connaît bien. A-t-il changé de caractère ou croyait-on avoir nommé une disposition stable à partir de situations trop étroites ? Le caractère donne une intelligibilité à la continuité d’une conduite. Il devient une étiquette quand il fait de tout geste à venir la manifestation inévitable d’une essence. Chez Aristote, les dispositions éthiques se constituent par des actes et des habitudes. Elles orientent ce que l’on remarque et la manière dont on répond, sans dispenser de juger les circonstances. Avoir du caractère peut signifier tenir un engagement malgré la pression, alors que « avoir mauvais caractère » peut désigner une habitude que l’on gagnerait à modifier. Parler du caractère est défendable si l’on décrit des dispositions acquises et révisables en laissant une place aux situations et aux apprentissages qui les transforment.
+
+**À l’entretien. Un geste isolé permet-il de juger le caractère d’une personne ?** Chercher ce que l’acte doit aux circonstances, puis le comparer à d’autres décisions. Attribuer une disposition aide à expliquer certaines régularités. L’attribution doit rester ouverte à l’apprentissage et au changement.
 
 ### Faut-il avoir peur de la technique ?
 
@@ -99,11 +113,15 @@ Il reste une difficulté de responsabilité. Déclarer la paix au nom d’autrui
 
 Un mathématicien peut établir l’existence d’une solution sans la connaître sous une forme directement calculable. Une historienne prouve l’existence passée d’une personne grâce à des traces indépendantes et contrôlées. Les opérations diffèrent, l’une porte sur un objet défini dans une théorie, l’autre sur une réalité passée dont les documents sont les indices présents. Lorsque Kant examine la preuve ontologique de l’existence de Dieu, il conteste que l’existence soit une propriété qui compléterait le concept à la manière d’une qualité nouvelle. Une définition, si cohérente soit-elle, ne fait pas surgir son objet dans le monde. La réponse ne peut donc être une négation de toutes les preuves ni une seule recette universelle. Il faut exposer le domaine, les règles de preuve et ce que l’existence revendiquée signifierait dans ce domaine.
 
+**À l’entretien. Définir très précisément une chose suffit-il à établir qu’elle existe ?** On peut convenir des propriétés d’un bâtiment projeté. Il faut une autre raison pour affirmer que le bâtiment a été construit. Distinguer ce qu’implique un concept et ce qui permet d’identifier un cas réel.
+
 ## 7. Le monde du rêve
 
 *Sujet choisi sur ce billet — Peut-on justifier l’existence du mal ?*
 
 Dans un rêve, une maison familière ouvre sur une plage inconnue et ces deux lieux semblent appartenir naturellement au même itinéraire. Au réveil, l’étrangeté de la transition saute aux yeux. Le rêve produit donc un monde au sens d’un ensemble momentanément habitable de significations et de perceptions, sans fournir par là un monde extérieur sur lequel nous pourrions compter ensemble. Dans la première *Méditation*, Descartes utilise l’expérience du rêve pour interroger les signes qui permettraient de distinguer avec certitude une expérience présente de sa ressemblance imaginaire. Le problème ne se réduit pas à dire que tout serait toujours également incertain. La reprise du souvenir, la cohérence des situations et la confrontation aux observations d’autrui changent la justification d’une croyance. Le rêve est réel comme expérience vécue, tandis que les événements qu’il fait apparaître demandent d’autres preuves pour être affirmés du monde commun.
+
+**À l’entretien. Le rêve forme-t-il un monde même si ses lieux changent en un instant ?** Comparer la cohérence suffisante pour agir dans une scène et la continuité que l’on pourrait vérifier en revenant au même endroit. Dire quel sens du mot « monde » résiste à cette différence.
 
 ### Peut-on justifier l’existence du mal ?
 
@@ -116,6 +134,8 @@ Une objection demeure, avons-nous accès à la comparaison entre ces totalités 
 *Sujet choisi sur ce billet — L’existence d’autrui*
 
 Les proverbes transmettent des observations accumulées et des manières de juger, comme l’invitation à prendre conseil avant d’agir. Un autre proverbe pourra louer l’occasion saisie sans attendre. Cette tension n’établit pas que la tradition soit vide. Elle montre que l’emploi d’une formule exige un discernement sur le cas présent que la formule seule ne procure pas. L’expression « des nations » pose aussi un problème. Attribuer à tout un peuple une voix unique efface les désaccords et les circulations historiques de proverbes semblables entre langues. Il existe des savoirs pratiques partagés, transmis et transformés, dont chacun peut se servir pour éprouver une conduite. Il serait excessif d’élever leur ancienneté ou leur diffusion en garantie de vérité. Une sagesse transmise reste vivante dans la possibilité de discuter ses maximes et leurs domaines d’usage.
+
+**À l’entretien. Que vaut un proverbe lorsqu’un autre recommande la conduite inverse ?** Opposer la prudence à la maxime qui conseille l’audace. Leur coexistence révèle des expériences accumulées. Encore faut-il juger dans quel cas chacune s’applique, ce qu’aucune formule ne décide seule.
 
 ### L’existence d’autrui
 
@@ -135,6 +155,8 @@ Le désir de réciprocité n’est pas en lui-même un défaut. Une relation où
 
 Lorsque l’horloge s’arrête, je cherche pourquoi. Le principe de raison, formulé notamment par Leibniz, affirme de façon plus ambitieuse que rien n’est sans raison suffisante pour qu’il en soit ainsi plutôt qu’autrement. Il faut distinguer une cause antérieure, une preuve logique et une raison d’agir. Un retard peut avoir une cause mécanique sans constituer ma raison personnelle de manquer une réunion. Comme règle d’enquête, le principe incite à ne pas transformer une ignorance en explication ultime. Comme thèse sur tout ce qui existe, il soulève la difficulté de la régression et du rapport entre les faits contingents et une raison qui les expliquerait. Le fait que nous ayons une raison de chercher ne nous donne donc pas encore une explication suffisante de chaque chose.
 
+**À l’entretien. Exiger une raison revient-il à supposer que nous pouvons toujours la connaître ?** Une enquête peut échouer faute d’archives sans établir que l’événement n’a pas de cause. Distinguer l’exigence qui guide la recherche et la thèse sur la manière dont la réalité est constituée.
+
 ## 10. Le progrès
 
 *Sujet choisi sur ce billet — Le progrès*
@@ -147,6 +169,8 @@ L’idée d’un progrès de l’humanité entière suppose une mesure plus exig
 
 Une toile composée de bandes colorées n’est pas abstraite au sens où elle manquerait de matière. Sa surface, sa texture et les distances entre les bandes se présentent très concrètement. On peut dire qu’elle est abstraite parce qu’elle ne représente pas de façon reconnaissable un objet extérieur ou parce qu’elle isole, à partir d’un motif, certaines relations de forme. Ces sens ne sont pas identiques. Une peinture géométrique peut procéder d’un projet qui n’a jamais cherché à simplifier un paysage préalable. Inversement, le portrait le plus figuratif sélectionne et organise lui aussi des traits. L’abstraction désigne donc un rapport particulier à la représentation et une orientation de l’attention vers certaines relations. Elle ne signifie ni absence de sens ni rupture obligatoire avec toute expérience sensible.
 
+**À l’entretien. Une peinture abstraite doit-elle nécessairement ne rien représenter ?** Observer un rapport de forces entre des formes de couleur. L’absence d’objet immédiatement identifiable peut laisser subsister une organisation expressive, voire des allusions. Décrire ce qui se donne à voir avant de trancher.
+
 ![Un train plus rapide pour quels voyageurs ?](figures/progres.svg)
 
 ## 11. L’indicible
@@ -154,6 +178,8 @@ Une toile composée de bandes colorées n’est pas abstraite au sens où elle m
 *Sujet choisi sur ce billet — La nature a-t-elle des droits ?*
 
 Après avoir écouté une musique nouvelle, une personne dit qu’elle ne trouve pas les mots pour désigner ce qui l’a touchée. Trois possibilités se présentent. Elle peut manquer pour l’instant d’un vocabulaire, l’expérience peut résister par nature à la traduction intégrale en propositions, ou bien une situation sociale peut rendre une parole difficile à prononcer ou à faire entendre. Les confondre transformerait toute hésitation en interdiction absolue de dire. Le paradoxe est qu’appeler quelque chose « indicible » constitue déjà une manière de le situer dans le langage. Il reste une différence entre tout décrire et inviter autrui à écouter un passage, reprendre une métaphore ou reconnaître une limite. On peut donc parler rigoureusement des conditions dans lesquelles les mots échouent sur une dimension de l’expérience, et chercher d’autres modes de partage sans promettre une transparence parfaite.
+
+**À l’entretien. Dire « je ne peux pas le dire » est-ce contradictoire ?** Nommer une difficulté n’en fournit pas encore le contenu. Comparer le mot qui manque momentanément et l’expérience qu’aucune formulation déterminée ne semble épuiser. Le geste de désigner la limite ne la supprime pas.
 
 ### La nature a-t-elle des droits ?
 
@@ -173,4 +199,4 @@ Un responsable qui se tait sur un défaut important dont des usagers subiront le
 
 Lire un débat ancien sur la liberté impose de reconstituer le sens que ses termes prenaient dans une controverse particulière. Une lecture purement actuelle risquerait d’attribuer à un auteur une réponse à une question qu’il ne posait pas. Mais raconter seulement les circonstances extérieures laisserait inexplicable la possibilité qu’un argument nous oblige encore à revoir une distinction présente. L’histoire de la philosophie étudie ainsi à la fois des textes historiquement situés et des prétentions à donner des raisons dont l’examen reste possible. Comparer plusieurs usages d’un même terme peut révéler une transformation des problèmes, et non seulement une succession d’opinions. La lecture la plus féconde rend l’argument assez précis pour pouvoir le discuter et assez étranger pour ne pas lui faire dire ce que le lecteur attendait déjà.
 
-[Feuille officielle du 26c3 juin](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_3_al.pdf) · [Rapport du jury, modalités et annexe des sujets](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf)
+**À l’entretien. Pourquoi relire une philosophie dont certaines connaissances sont dépassées ?** Reconstituer le problème qui rendait sa thèse plausible et les raisons qu’elle avançait. Certaines prémisses peuvent avoir disparu tandis qu’une distinction reste féconde. La lecture historique permet de tester cette différence.
