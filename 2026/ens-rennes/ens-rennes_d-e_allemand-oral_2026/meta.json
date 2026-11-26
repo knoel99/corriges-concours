@@ -22,7 +22,51 @@
     "sujet_sha256": "70f0336b958d8f80800577d4684e69d9b8e8593ed505a52056e98b29c491a632",
     "apercu_sujet_sha256": "327990ae18aa7299c1b1b7538c049f826aa2ef0a24fae09625eec2b588a3890f",
     "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2026-1",
-    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-allemand-oral-2026_1793640932357-pdf"
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-allemand-oral-2026_1793640932357-pdf",
+    "reperes_verifies": [
+      {
+        "sujet": 1,
+        "pages_pdf": [
+          1
+        ],
+        "repere": "Hasselbach"
+      },
+      {
+        "sujet": 2,
+        "pages_pdf": [
+          2
+        ],
+        "repere": "Pieper"
+      },
+      {
+        "sujet": 3,
+        "pages_pdf": [
+          3
+        ],
+        "repere": "Güler"
+      },
+      {
+        "sujet": 4,
+        "pages_pdf": [
+          4
+        ],
+        "repere": "Hartwig"
+      },
+      {
+        "sujet": 5,
+        "pages_pdf": [
+          5
+        ],
+        "repere": "Cyrulies"
+      },
+      {
+        "sujet": 6,
+        "pages_pdf": [
+          6
+        ],
+        "repere": "Magro"
+      }
+    ]
   },
   "figures": [
     {
@@ -31,7 +75,7 @@
       "legende": "Drei Fragen zur Wirkung einer Zuckerabgabe"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -42,6 +86,35 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "6 exposés en allemand sur chacun des articles, guidage, schéma et relances d'entraînement."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "fin_langues_x_interens",
+      "agent": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Chaque sujet demande une analyse du texte et sa présentation au jury. Les 6 exposés en langue étrangère sont présents dans les deux éditions. Le rapport du jury énumère les mêmes six textes. La page 2 du fascicule porte par erreur la session 2025 alors que l’article MDR est daté du 30 avril 2026 et identifié comme le deuxième texte dans le rapport 2026.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Sujet 1 — Wie weit trägt die Partnerschaft mit Indien?",
+      "Sujet 2 — Was soll eine Zuckerabgabe erreichen?",
+      "Sujet 3 — Was verrät der Beifall auf einem Gewerkschaftskongress?",
+      "Sujet 4 — Wer verfügt über die gewonnene Flexibilität?",
+      "Sujet 5 — Wessen Zukunft kommt zur Sprache?",
+      "Sujet 6 — Wie verlässlich ist eine europäische Partnerschaft?"
+    ],
+    "precision": "Chaque sujet demande une analyse du texte et sa présentation au jury. Les 6 exposés en langue étrangère sont présents dans les deux éditions. Le rapport du jury énumère les mêmes six textes. La page 2 du fascicule porte par erreur la session 2025 alors que l’article MDR est daté du 30 avril 2026 et identifié comme le deuxième texte dans le rapport 2026."
+  }
 }
