@@ -1,0 +1,77 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_etudes-politiques-la-professionnalisation-de-la-vie-politique_2016",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Études politiques — la professionnalisation de la vie politique",
+    "annee": 2016,
+    "modalite": "écrit"
+  },
+  "intitule": "Engagement, rémunération du personnel politique et indépendance des représentants chez Max Weber.",
+  "gabarit": "dissertation",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/ET.POLITIQUES.pdf",
+    "sujet_sha256": "c76d7c23a8d7fa5a67cbeb848305ed0ad11e5e68a5680e8acd75a9e2285484c0",
+    "index": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2016-lettres",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/ET.POLITIQUES.pdf",
+        "sha256": "c76d7c23a8d7fa5a67cbeb848305ed0ad11e5e68a5680e8acd75a9e2285484c0",
+        "pages": 1
+      },
+      {
+        "role": "attentes générales du jury",
+        "url": "https://www.ens.psl.eu/IMG/file/internationale/2008/Lettres/Lettres.pdf",
+        "sha256": "3a360c4a7769d5dbf001d43040fcd150dcf10e4ee661a0264586d3fb340a24f4",
+        "pages": 4
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/payer-le-temps.svg",
+      "question": "Engagement politique",
+      "legende": "Deux mécanismes de financement du temps consacré à une activité politique durable."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/dependances.svg",
+      "question": "Engagement politique",
+      "legende": "La rémunération rend un engagement durable possible et le renouvellement du mandat peut devenir un enjeu matériel."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "sociologie_psl_oraux_individuels",
+      "agent": "sociologie_psl_oraux_individuels",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Engagement, rémunération du personnel politique et indépendance des représentants chez Max Weber. Vérification des éléments de la consigne, des deux éditions et de leurs schémas."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Engagement politique",
+      "Professionnalisation de la vie politique",
+      "Indépendance des représentants",
+      "Comparaisons empiriques et socio-historiques"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "limites": "Les attentes générales du jury figurent sur l’index de la session. Cet index ne fournit pas de rapport particulier à ce sujet."
+  }
+}
