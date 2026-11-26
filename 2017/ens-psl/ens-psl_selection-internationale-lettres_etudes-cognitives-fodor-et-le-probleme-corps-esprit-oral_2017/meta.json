@@ -1,0 +1,87 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_etudes-cognitives-fodor-et-le-probleme-corps-esprit-oral_2017",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Études cognitives — Fodor et le problème corps-esprit (oral)",
+    "annee": 2017,
+    "modalite": "oral"
+  },
+  "intitule": "Fodor et le problème corps-esprit",
+  "questions": 10,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/etudes-cognitives-oral.pdf",
+    "sujet_sha256": "9f4ceed61ce2a6d3f7bd7c82831dcbbaa3da07064b17c4024b43c5e834e79a30",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.ens.psl.eu/sites/default/files/etudes-cognitives-oral.pdf",
+        "sha256": "9f4ceed61ce2a6d3f7bd7c82831dcbbaa3da07064b17c4024b43c5e834e79a30",
+        "pages": 2
+      },
+      {
+        "role": "annexe distribuée",
+        "url": "https://web.archive.org/web/20201230063149id_/https://www.ens.psl.eu/sites/default/files/fodor-1981-mind-body_sil_2017.pdf",
+        "url_ens": "https://www.ens.psl.eu/sites/default/files/fodor-1981-mind-body_sil_2017.pdf",
+        "sha256": "45a2127c83aca6d3fd528270bbad964415fd94b31ccde466867b3d90bc6791b9",
+        "pages": 8
+      },
+      {
+        "role": "édition publiée",
+        "url": "https://philosophy.org.za/uploads_other/Fodor_1981.pdf",
+        "sha256": "f5852cf942024005817850f4813be19bb31356a59e1e01b79056e4d7358f9acc",
+        "pages": 9,
+        "doi": "10.1038/scientificamerican0181-114"
+      }
+    ],
+    "precision_sujet": "Le sujet bilingue demande de lire jusqu’à la page imprimée 122 incluse. Les huit pages du feuillet ENS correspondent aux pages imprimées 114 à 120 puis 122. L’exemplaire publié comporte aussi la p. 123, hors consigne. Les dix questions figurent en anglais et en français."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/transactions-du-distributeur.svg",
+      "question": "Q7",
+      "legende": "Un même crédit de cinq cents modifie la réponse à chacune des pièces"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "classiques_2017",
+      "agent": "classiques_2017",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture du questionnaire bilingue, de l’annexe distribuée et de la pagination du fac-similé publié. Réponses numérotées 1 à 10 dans chaque édition, vérification des transitions et de la borne p. 122."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1. Le problème corps-esprit",
+      "Q2. Dualisme et interaction",
+      "Q3. Béhaviorisme radical et paradoxe",
+      "Q4. Matérialismes",
+      "Q5. Physicalisme des types et des occurrences",
+      "Q6. Dilemme matérialiste",
+      "Q7. Les deux machines à Coca",
+      "Q8. Limites du fonctionnalisme",
+      "Q9. Portée de l’analogie informatique",
+      "Q10. Position argumentée"
+    ],
+    "elements_verifies": [
+      "Q1 à Q6 confrontées au développement sur le dualisme, les béhaviorismes, les identités et l’individuation fonctionnelle.",
+      "Q7 vérifiée sur le texte de la page 119 et le tableau du distributeur en page 120 : une transaction en S0, quatre transactions en S1/S2.",
+      "Q8 à Q10 : mécanismes, spectre inversé, intentionnalité et contenu représenté, distinction entre exposé de Fodor et prise de position."
+    ]
+  }
+}
