@@ -1,0 +1,74 @@
+{
+  "slug": "banque-pt_pt_francais-a_2018",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français A",
+    "annee": 2018
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2018/fr_a_2018_pt.pdf",
+    "sujet_sha256": "6fa3c695e14b59b18851de56884bddd88658919db02c1b8417721c9abea3aac9",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2018/rapport_fra_a_ecrit_2018.pdf",
+    "rapport_sha256": "e686466ff35a0b442d0d2eea037004f270289928eea0a5df2012071017249f47",
+    "programme_officiel": "https://www.education.gouv.fr/bo/17/Hebdo26/ESRS1700064A.htm",
+    "theme": "L’aventure",
+    "oeuvres_au_programme": [
+      "Homère, L’Odyssée (traduction Philippe Jaccottet)",
+      "Conrad, Au cœur des ténèbres (traduction Jean-Jacques Mayoux)",
+      "Jankélévitch, L’Aventure, l’Ennui, le Sérieux, chapitre I, « L’aventure »"
+    ],
+    "source_coefficients": "https://www.banquept.fr/documents/livret/2018/Livret_PT_2018.pdf#page=12",
+    "admissibilite_admission": "École polytechnique, admissibilité, coefficient 4"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "Du risque vécu à l’aventure racontée"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lyon_ses_sources",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Pointage de la proposition elliptique de Jünger, de la figure des cercles et des trois œuvres. Vérification des Sirènes, du chant de Démodocos, du timonier et des distinctions de Jankélévitch. Rédaction des deux éditions, vérification du programme et réalisation du schéma."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 1,
+        "page_pdf_fin": 1,
+        "perimetre": "Analyser et commenter l’analogie établie par Ernst Jünger entre le plaisir qui vit de l’esprit et l’aventure qui vit de la proximité de la mort."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

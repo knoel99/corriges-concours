@@ -1,0 +1,95 @@
+{
+  "slug": "banque-pt_pt_francais-b_2017",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français B",
+    "annee": 2017
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2017/fr_b_2017_pt.pdf",
+    "sujet_sha256": "7459b2d8c6d674e8540ca2796ffdd44094b674d995583d7eb67a647ad01af4bf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2017/rapport_fra_b_ecrit_2017.pdf",
+    "rapport_sha256": "14a5206c4f8d5b9263dd5a7882166981962149dbc19c9a0b30b4302d99cb3335",
+    "programme_officiel": "https://www.education.gouv.fr/bo/16/Hebdo26/MENS1600411A.htm",
+    "theme": "Servitude et soumission",
+    "oeuvres_au_programme": [
+      "La Boétie, Discours de la servitude volontaire",
+      "Montesquieu, Lettres persanes",
+      "Ibsen, Une maison de poupée (traduction Éloi Recoing)"
+    ],
+    "source_coefficients": "https://www.banquept.fr/documents/livret/2017/Livret_PT_2017.pdf#page=12",
+    "admissibilite_admission": "ENS Paris-Saclay et ENS Rennes, admission seule, coefficient 4"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "Trois significations possibles du silence"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lyon_ses_sources",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture suivie de Camus, jusqu’à la solidarité des captifs, puis de la question sur le silence. Contrôle de la progression du résumé et des exemples de clientèle, de dette et de révolte. Rédaction des deux éditions, vérification du programme et réalisation du schéma."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Résumé",
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Résumé",
+        "page_pdf": 2,
+        "page_pdf_fin": 3,
+        "page_consigne": 4,
+        "perimetre": "Texte du début de la page 2, « Qu’est-ce qu’un homme révolté ? », à la fin du dernier paragraphe de la page 3, « qui naît dans les chaînes ». Les deux notes sont imprimées à la suite. Les questions figurent page 4.",
+        "mots_demandes": 190,
+        "mots_admis": [
+          171,
+          209
+        ],
+        "mots_par_paragraphe": [
+          71,
+          47,
+          72
+        ],
+        "mots_rediges": 190,
+        "points": 8
+      },
+      {
+        "question": "Dissertation",
+        "page_pdf": 4,
+        "page_pdf_fin": 4,
+        "perimetre": "Discuter, à partir des œuvres, l’explication que Camus donne du silence de l’esclave par la préférence accordée à son intérêt immédiat sur la conscience de son droit.",
+        "points": 12
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}
