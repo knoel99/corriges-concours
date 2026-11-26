@@ -21,7 +21,65 @@
     "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-oraux-espagnol-d-e-2026_1793377280812-pdf",
     "sujet_sha256": "b40548672148a43639845fbbadd42558dc03277915431c2a276232bfb4bc60ce",
     "apercu_sujet_sha256": "22d8c6e2f6e20e41d3b7d7112596e97de7199b8b17a38386631581c7e10a553d",
-    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2026-1"
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2026-1",
+    "reperes_verifies": [
+      {
+        "sujet": 1,
+        "pages_pdf": [
+          2
+        ],
+        "repere": "Esaá"
+      },
+      {
+        "sujet": 2,
+        "pages_pdf": [
+          3
+        ],
+        "repere": "Machorro"
+      },
+      {
+        "sujet": 3,
+        "pages_pdf": [
+          4
+        ],
+        "repere": "Rosales"
+      },
+      {
+        "sujet": 4,
+        "pages_pdf": [
+          5
+        ],
+        "repere": "SUMMA"
+      },
+      {
+        "sujet": 5,
+        "pages_pdf": [
+          6
+        ],
+        "repere": "Nación"
+      },
+      {
+        "sujet": 6,
+        "pages_pdf": [
+          7
+        ],
+        "repere": "Reid"
+      },
+      {
+        "sujet": 7,
+        "pages_pdf": [
+          8
+        ],
+        "repere": "Kurmanaev"
+      },
+      {
+        "sujet": 8,
+        "pages_pdf": [
+          9
+        ],
+        "repere": "Barroso"
+      }
+    ]
   },
   "figures": [
     {
@@ -30,7 +88,7 @@
       "legende": "Brasil: tres cifras, tres alcances"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -41,6 +99,37 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "8 exposés en espagnol sur chacun des articles, guidage, schéma et relances d'entraînement."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "fin_langues_x_interens",
+      "agent": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Chaque sujet demande une analyse du texte et sa présentation au jury. Les 8 exposés en langue étrangère sont présents dans les deux éditions. Les huit billets sont numérotés de 1 à 8 après la couverture. Les deux textes sur le Mexique et l’UE présentent deux angles différents. Pour le dernier article les chiffres concernent, selon les cas, le Brésil entier, les contrôles ou des biomes déterminés.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Sujet 1 — Cuba, entre el anuncio de sanciones y la vida durante los apagones",
+      "Sujet 2 — El acuerdo México–UE y el poder de tener otra opción",
+      "Sujet 3 — Cómo defiende Sheinbaum la diversificación comercial",
+      "Sujet 4 — Cómo se mide una alianza entre Costa Rica y la Unión Europea",
+      "Sujet 5 — UE–Mercosur, de la aplicación provisional a la aceptación pública",
+      "Sujet 6 — Qué significa hablar de un giro latinoamericano a la derecha",
+      "Sujet 7 — Por qué cambia el cálculo de Exxon en Venezuela",
+      "Sujet 8 — Qué mide la caída de la deforestación brasileña"
+    ],
+    "precision": "Chaque sujet demande une analyse du texte et sa présentation au jury. Les 8 exposés en langue étrangère sont présents dans les deux éditions. Les huit billets sont numérotés de 1 à 8 après la couverture. Les deux textes sur le Mexique et l’UE présentent deux angles différents. Pour le dernier article les chiffres concernent, selon les cas, le Brésil entier, les contrôles ou des biomes déterminés."
+  }
 }

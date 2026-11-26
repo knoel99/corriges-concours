@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Fascicule officiel](https://www.ens-rennes.fr/medias/fichier/sujets-oraux-espagnol-d-e-2026_1793377280812-pdf)
 
 ## Sujet 1 — Cuba, entre el anuncio de sanciones y la vida durante los apagones
@@ -180,6 +182,6 @@ El contexto electoral da a Lula motivos para destacar el resultado. También da 
 
 ### Relances d’entraînement
 
-**¿Se puede hablar de recuperación del bosque solo con esta cifra?** La pérdida anual ha disminuido. Para afirmar una recuperación neta necesitaríamos también medir regeneración, cambios de cobertura y su evolución durante más tiempo.
+**¿Se puede hablar de recuperación del bosque solo con esta cifra?** Ha disminuido la pérdida anual. Para comprobar una recuperación neta habría que medir también la regeneración y los cambios de cobertura a largo plazo.
 
-**¿Por qué resulta importante mencionar el Cerrado?** Concentra alrededor de la mitad de la pérdida nacional. Una mirada limitada a la selva amazónica ocultaría gran parte del problema y podría orientar mal las prioridades de vigilancia.
+**¿Por qué resulta importante mencionar el Cerrado?** El Cerrado concentra cerca de la mitad de la pérdida nacional. Vigilar solo la Amazonía dejaría desatendida gran parte del problema.
