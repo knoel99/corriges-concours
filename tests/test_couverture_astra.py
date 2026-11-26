@@ -63,6 +63,15 @@ def test_deux_editions_signees(tmp_path, phase, role, vitesse, fin):
         )
     (tmp_path / "meta.json").write_text(json.dumps(meta))
     assert couverture.verifier_paire(tmp_path) == ("signature présente", {signature})
+    assert couverture.verifier_paire(tmp_path, integralite=True)[0] == "signature présente, couverture à confirmer"
+    for valeur in ("complet", {"statut": "complet"}):
+        meta["couverture"] = valeur
+        (tmp_path / "meta.json").write_text(json.dumps(meta))
+        assert couverture.verifier_paire(tmp_path, integralite=True)[0] == "signature présente"
+    for valeur in ("partielle", {"statut": "complet", "questions_non_traitees": [3]}):
+        meta["couverture"] = valeur
+        (tmp_path / "meta.json").write_text(json.dumps(meta))
+        assert couverture.verifier_paire(tmp_path, integralite=True)[0] == "signature présente, corrigé partiel"
     meta["couverture"] = {"statut": "partiel"}
     (tmp_path / "meta.json").write_text(json.dumps(meta))
     assert (
@@ -291,7 +300,7 @@ def test_controle_internet_examine_chaque_voie(tmp_path, monkeypatch):
     monkeypatch.setattr(couverture, "RACINE", tmp_path)
     monkeypatch.setattr(couverture, "registre", lambda: {slug: "écrit"})
     monkeypatch.setattr(couverture, "exemples_documentes", lambda _: {})
-    monkeypatch.setattr(couverture, "verifier_paire", lambda _: ("signature présente", {"signature"}))
+    monkeypatch.setattr(couverture, "verifier_paire", lambda _, *, integralite: ("signature présente", {"signature"}))
     monkeypatch.setattr(couverture, "site_verifie", visite)
     monkeypatch.setattr(couverture.sys, "argv", ["controle", slug, "--site", "--exiger"])
     assert couverture.main() == 1

@@ -153,7 +153,22 @@ def segment_adresse(libelle: str) -> str:
     return re.sub(r"[^\w.-]+", "-", ascii_libelle.lower()).strip("-")
 
 
-def verifier_paire(dossier: Path) -> tuple[str, set[str]]:
+def statut_couverture(couverture: object) -> str:
+    """Lire les deux formats historiques et tenir compte des omissions explicites."""
+    if isinstance(couverture, dict):
+        if couverture.get("questions_non_traitees") or couverture.get("questions_partiellement_traitees"):
+            return "partiel"
+        couverture = couverture.get("statut")
+    if isinstance(couverture, str):
+        statut = couverture.strip().casefold()
+        if statut in {"partiel", "partielle"}:
+            return "partiel"
+        if statut in {"complet", "complète", "intégral", "intégrale"}:
+            return "complet"
+    return "à confirmer"
+
+
+def verifier_paire(dossier: Path, *, integralite: bool = False) -> tuple[str, set[str]]:
     fichiers = [dossier / f for f in ("meta.json", "brut.md", "guide.md")]
     if not all(f.is_file() for f in fichiers):
         return "paire absente ou incomplète", set()
@@ -185,9 +200,11 @@ def verifier_paire(dossier: Path) -> tuple[str, set[str]]:
     for md in fichiers[1:]:
         if not signatures <= entete(md.read_text(encoding="utf-8")):
             return "signature à vérifier dans les deux éditions", set()
-    couverture = meta.get("couverture")
-    if isinstance(couverture, dict) and couverture.get("statut") == "partiel":
+    couverture = statut_couverture(meta.get("couverture"))
+    if couverture == "partiel":
         return "signature présente, corrigé partiel", signatures
+    if integralite and couverture != "complet":
+        return "signature présente, couverture à confirmer", signatures
     return "signature présente", signatures
 
 
@@ -423,6 +440,10 @@ def main() -> int:
     parser.add_argument(
         "--exiger", action="store_true", help="échouer si une épreuve reste à couvrir"
     )
+    parser.add_argument(
+        "--integral", action="store_true",
+        help="exiger une paire Astra signée et une couverture intégrale documentée pour chaque épreuve",
+    )
     args = parser.parse_args()
     perimetre = registre()
     if args.depuis or args.slugs:
@@ -446,7 +467,7 @@ def main() -> int:
     def ligne(slug):
         banque = slug.split("_", 1)[0]
         dossier = RACINE / slug[-4:] / banque / slug
-        local, signatures = verifier_paire(dossier)
+        local, signatures = verifier_paire(dossier, integralite=args.integral)
         if args.depuis and signatures and not edition_attribuee_depuis(dossier, base):
             local, signatures = "modification du corrigé sans nouvelle attribution Astra Ultra", set()
         fiche = fiche_site(slug)
@@ -486,7 +507,7 @@ def main() -> int:
             tab.writerow(("slug", "modalite", "github", "site", "fiche"))
             tab.writerows(bilan)
     acceptes = {"signature présente"}
-    if args.depuis:
+    if args.depuis and not args.integral:
         # Une PR peut publier les parties effectivement traitées, signalées dans le bilan global.
         acceptes.add("signature présente, corrigé partiel")
     incompletes = [
@@ -499,7 +520,7 @@ def main() -> int:
     if args.depuis or args.slugs:
         for slug, modalite, local, site, _ in incompletes:
             print(f"{slug} ({modalite}) : {local} — site {site}")
-    return int(bool(incompletes) and args.exiger)
+    return int(bool(incompletes) and (args.exiger or args.integral))
 
 
 if __name__ == "__main__":
