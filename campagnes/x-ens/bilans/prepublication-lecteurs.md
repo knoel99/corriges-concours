@@ -1,6 +1,6 @@
 # Essai local de publication des corrigés
 
-Le 26/11/2026 à 12 h 40 UTC, les 1900 paires signées de la révision `41945e63` ont fourni les deux textes attendus et leurs signatures dans le service de lecture du site. Le journal de chaque fiche renvoie au bon dossier GitHub, reprend les interventions qualifiantes et indique le caractère partiel quand il est déclaré. [Résultats par épreuve](prepublication-lecteurs.tsv) · [Version des corrigés](https://github.com/knoel99/corriges-concours/tree/41945e638ab9a4f9eeecf11922801cdc38f5695b) · [Version du site](https://github.com/knoel99/prepa/tree/857bcd7ebbcd4b5c185db8ac28b66179ac8c9985)
+Le 26/11/2026 à 12 h 42 UTC, les 1900 paires signées de la révision `c86fecdb` ont fourni les deux textes attendus et leurs signatures dans le service de lecture du site. Le journal de chaque fiche renvoie au bon dossier GitHub, reprend les interventions qualifiantes et indique le caractère partiel quand il est déclaré. [Résultats par épreuve](prepublication-lecteurs.tsv) · [Version des corrigés](https://github.com/knoel99/corriges-concours/tree/c86fecdb9053f19226b1871e6eb8b3f92e785c7e) · [Version du site](https://github.com/knoel99/prepa/tree/857bcd7ebbcd4b5c185db8ac28b66179ac8c9985)
 
 Le contrôle couvre 2373 fiches de filière pour 1900 épreuves signées. Les épreuves communes sont aussi vérifiées sous chaque filière de leur notice éditoriale. [Contrôles des 473 fiches supplémentaires](prepublication-lecteurs-autres-filieres.tsv)
 
@@ -47,6 +47,10 @@ Les trois compositions françaises et les trois compositions de philosophie de L
 Les six oraux d’histoire et de littérature ENS-PSL 2018, sur Monteil, Ginzburg, Renan, Cendrars, Djebar et Rolin, comptent douze PDF de 35 pages et 69 signets vérifiés. [Feuillets officiels, commits et empreintes](pdf-signets-oraux-histoire-litterature-psl-2018-2026-11-26.tsv)
 
 Pour sept sessions de sciences industrielles PSI de 2009 à 2017, les 14 PDF signés totalisent 179 pages. La relecture couvre 332 questions et 22 documents-réponses. Pour 2016, les trois feuilles absentes du livret institutionnel ont été vérifiées sur la reproduction renseignée de l’UPSTI. [Révisions, figures et empreintes](pdf-sciences-industrielles-psi-2009-2017.tsv)
+
+Les huit options de langues vivantes B/L de 2025 ont été confrontées à leurs 29 documents. Leurs seize PDF signés totalisent 39 pages. [Feuillets, révisions et empreintes](pdf-bel-bl-huit-langues-2025.tsv)
+
+Les deux épreuves de mathématiques approfondies BCE 2026 et les mathématiques D ENS 2023 totalisent 137 questions et sous-questions. Les six PDF ont été vérifiés sur leurs 100 pages. [Révisions, pagination et empreintes](pdf-bce-approfondies-2026-et-maths-d-2023.tsv)
 
 Le 25 novembre 2026, les deux lecteurs et les quatre téléchargements ont aussi été vérifiés sur les 134 fiches de filière de 45 épreuves communes déjà en production à la révision `54fe93cd`. [Adresses et empreintes des fichiers](production-filieres-54fe93cd.tsv)
 
