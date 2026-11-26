@@ -1,0 +1,126 @@
+{
+  "slug": "bel_al_chinois-theme-lyon_2023",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Chinois (thème Lyon)",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "duree_heures": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2023-09/Epreuve-de-specialite.pdf#page=12",
+    "sujet_sha256": "d646a518fbe4febf8a67e582f0310174ed455fa1f7d2c93d37f450a6420673a2",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2023-11/Chinois-2023.pdf#page=5",
+    "rapport_jury_sha256": "4fc13b722a5e3c52a25ec87d2aa98e0d19d46ecc4122c8ee3658a89d012042e2",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2023",
+    "ouvrage": "Théophile Gautier, *La Morte amoureuse* (1836).",
+    "provenance": "",
+    "pages_rapport_verifiees": [
+      5,
+      6
+    ]
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2023-09/Epreuve-de-specialite.pdf#page=12",
+      "sha256": "d646a518fbe4febf8a67e582f0310174ed455fa1f7d2c93d37f450a6420673a2",
+      "pages": 20,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "d637c9f152c00d67d0ac53df6ca1a8afc6acd94775b42bc8aa249b7f1b2e0dc5"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "23197e3feb5af29cc10d3ecdefd9d1216be3f6253cf9bb7010d639a60bd3b7bd"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "2a7d2e2dc95a1810e12df84730f8dcf2502173e4f381382db2b4fb2e2f56fdf1"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2023-11/Chinois-2023.pdf#page=5",
+      "sha256": "4fc13b722a5e3c52a25ec87d2aa98e0d19d46ecc4122c8ee3658a89d012042e2",
+      "pages": 8,
+      "pages_verifiees": [
+        {
+          "numero": 5,
+          "rendu_sha256": "7ad0076f2a7e563afe9793392771a66dfb2acd5c6269a856073b09a41919542e"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "bcf5a1897db1309f2f846e8803b245a652f5a653213ef296820f377bd3a4fa16"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "Proposition de thème",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "Barbara avertit le prêtre. Ses questions retardent l’annonce dont le narrateur perçoit la portée religieuse."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Traduction originale complète, schéma et guide consacré aux difficultés de syntaxe, d’aspect, de lexique et de voix du passage."
+    },
+    {
+      "phase": "revision",
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle phrase par phrase du livret et de la proposition du jury, de la charge paroissiale et de la crainte d’oublier, présente dans le seul livret."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Théophile Gautier, *La Morte amoureuse* (1836)."
+    ],
+    "note": "Traduction pédagogique originale. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Proposition de thème"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Proposition de thème",
+        "page_pdf": 12,
+        "feuillet_imprime": 12,
+        "perimetre": "De la visite matinale de Sérapion à la nouvelle de la mort de Clarimonde, huit jours et huit nuits de fête compris."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}
