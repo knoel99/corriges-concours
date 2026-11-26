@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le sujet compare la convergence vers l’équilibre pour une chaîne de Markov réversible et pour le semi-groupe d’Ornstein–Uhlenbeck. [Sujet officiel](https://www.ens.psl.eu/sites/default/files/2018_mpi_sujet_mathc.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/18_mp_rap_emathc.pdf)
 
 ## I. Noyaux de transition et convergence vers l’équilibre
@@ -228,5 +230,7 @@ $$V'(t)=2\langle u_tLu_t\rangle=-2\langle(u_t')^2\rangle\le-2\operatorname{Var}(
 
 Pour $h=f-\langle f\rangle$, on a $Q_th=Q_tf-\langle f\rangle$ par 3.1 et $\operatorname{Var}(Q_tf)=\langle(Q_th)^2\rangle$ par 3.4. Selon 3.9a, $e^{2t}\langle(Q_th)^2\rangle$ est décroissante sur $(0,\infty)$. Sa limite à droite en zéro est $\langle h^2\rangle$ par continuité ponctuelle et domination uniforme. Ainsi, pour tout $t>0$,
 $$\operatorname{Var}(Q_tf)\le e^{-2t}\operatorname{Var}(f).$$
+
+Pour le test borné $f(x)=\sin x$, posons $a=e^{-t}$. La formule gaussienne de 3.1 donne $Q_tf(x)=e^{-(1-a^2)/2}\sin(ax)$. Cette fonction est centrée par imparité. Comme $\langle\cos(2ax)\rangle=e^{-2a^2}$, sa variance vaut $e^{-1}\sinh(a^2)$. Le rapport à la variance initiale est $\sinh(e^{-2t})/\sinh(1)$, bien inférieur ou égal à $e^{-2t}$ par convexité de $\sinh$ sur $[0,1]$.
 
 ![Figure 1 — Après centrage, la variance relative reste sous la courbe exp(−2t). L’estimation provient de la dissipation de l’énergie gaussienne.](figures/decroissance-variance.svg)

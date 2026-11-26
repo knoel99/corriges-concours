@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le sujet commun aux quatre ENS démontre les critères d’équirépartition jusqu’au théorème de Weyl et à une estimation quantitative. La convergence uniforme pour toute fonction continue de la partie II concerne les moyennes de Fejér. Le rapport attire l’attention sur cette distinction et sur l’ordre des limites de van der Corput.
 
 ## I. Préliminaires
@@ -193,6 +195,8 @@ Pour $k\ne0$, la limite de la moyenne de $e_k(x_n)$ et l’intégrale de $e_k$ s
 #### Solution
 
 Pour $k\ne0$, posons $w=e^{2\pi i k\alpha}\ne1$ puisque $\alpha$ est irrationnel. Alors $N^{-1}\sum_{n=1}^Ne_k(\alpha n+x)=e_k(x)w(1-w^N)/(N(1-w))$, de module au plus $2/(N|1-w|)\to0$. Le critère III.4 conclut pour tout $x$.
+
+Le calcul géométrique montre aussi où l’irrationalité intervient. Si $\alpha=p/q$ et que l’on choisit le mode $k=q$, alors $e_k(n\alpha+x)=e^{2\pi iqx}$ pour tout $n$. Sa moyenne reste de module 1, tandis que son intégrale sur une période est nulle. La conclusion précédente ne s’étend donc pas aux rotations rationnelles.
 
 ### Question III.6
 

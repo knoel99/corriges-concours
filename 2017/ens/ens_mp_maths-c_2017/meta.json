@@ -11,7 +11,14 @@
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/07/2017_MP_sujet_MathC.pdf",
     "rapport_jury": "https://www.ens.psl.eu/sites/default/files/17_MP_rap_eMathC.pdf",
-    "sha256_sujet": "e612aae931048a5e31b7b1ba5ed7a87d98094b2bead402a0bbfd352767d04e16"
+    "sha256_sujet": "e612aae931048a5e31b7b1ba5ed7a87d98094b2bead402a0bbfd352767d04e16",
+    "index_banque": "https://www.ens.psl.eu/rapports-et-sujets-2017-mpi",
+    "index_banque_sha256": "4ec94381d5c1f3a6dca67edf2b95c735935bb87a609e274680dff52fdee31b79",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/17_MP_rap_eMathC.pdf",
+    "sujet_sha256": "e612aae931048a5e31b7b1ba5ed7a87d98094b2bead402a0bbfd352767d04e16",
+    "sujet_pages": 6,
+    "rapport_sha256": "8a3a1a74d60ec0a8ba61eaa9cb56a4726f5c71fb153872b413978c42549ff32b",
+    "rapport_pages": 4
   },
   "figures": [
     {
@@ -31,6 +38,65 @@
       "perimetre": "Rédaction des deux éditions à partir du sujet natif de six pages et du rapport de l’écrit commun. Vérification de chaque item, du dessin périodique en III.3a, des constantes de van der Corput et de la borne diophantienne quantitative.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Contrôle des 32 subdivisions de Fejér à l’équirépartition quantitative. Vérification du schéma exigé en III.3a et de la construction périodique aux extrémités, du dénombrement des corrélations et des termes de bord dans IV.1, de l’ordre des limites et du traitement du dénominateur 1 en V.3.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "II.1",
+      "II.2",
+      "II.3a",
+      "II.3b",
+      "II.4a",
+      "II.4b",
+      "II.4c",
+      "II.5a",
+      "II.5b",
+      "II.5c",
+      "III.1",
+      "III.2a",
+      "III.2b",
+      "III.3a",
+      "III.3b",
+      "III.4",
+      "III.5",
+      "III.6",
+      "IV.1a",
+      "IV.1b",
+      "IV.1c",
+      "IV.1d",
+      "IV.2",
+      "IV.3",
+      "V.1",
+      "V.2a",
+      "V.2b",
+      "V.2c",
+      "V.3"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "precision": "Contrôle des 32 subdivisions de Fejér à l’équirépartition quantitative. Vérification du schéma exigé en III.3a et de la construction périodique aux extrémités, du dénombrement des corrélations et des termes de bord dans IV.1, de l’ordre des limites et du traitement du dénominateur 1 en V.3.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "relecture_corrige",
+      "perimetre": "Contrôle des 32 subdivisions de Fejér à l’équirépartition quantitative. Vérification du schéma exigé en III.3a et de la construction périodique aux extrémités, du dénombrement des corrélations et des termes de bord dans IV.1, de l’ordre des limites et du traitement du dénominateur 1 en V.3.",
+      "sha256_sujet_controle": "e612aae931048a5e31b7b1ba5ed7a87d98094b2bead402a0bbfd352767d04e16",
+      "sha256_rapport_controle": "8a3a1a74d60ec0a8ba61eaa9cb56a4726f5c71fb153872b413978c42549ff32b"
+    }
+  }
 }
