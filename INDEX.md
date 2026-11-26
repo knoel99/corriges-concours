@@ -498,6 +498,13 @@
 | 2021 | ENS Rennes | D-E | Italien | [md](2021/ens-rennes/ens-rennes_d-e_italien_2021/brut.md) | [md](2021/ens-rennes/ens-rennes_d-e_italien_2021/guide.md) |
 | 2022 | ENS Rennes | D-E | Italien | [md](2022/ens-rennes/ens-rennes_d-e_italien_2022/brut.md) | [md](2022/ens-rennes/ens-rennes_d-e_italien_2022/guide.md) |
 | 2023 | ENS Rennes | D-E | Italien | [md](2023/ens-rennes/ens-rennes_d-e_italien_2023/brut.md) | [md](2023/ens-rennes/ens-rennes_d-e_italien_2023/guide.md) |
+| 2020 | ENS Rennes | D-E | Mathématiques appliquées | [md](2020/ens-rennes/ens-rennes_d-e_mathematiques-appliquees_2020/brut.md) | [md](2020/ens-rennes/ens-rennes_d-e_mathematiques-appliquees_2020/guide.md) |
+| 2021 | ENS Rennes | D-E | Mathématiques appliquées | [md](2021/ens-rennes/ens-rennes_d-e_mathematiques-appliquees_2021/brut.md) | [md](2021/ens-rennes/ens-rennes_d-e_mathematiques-appliquees_2021/guide.md) |
+| 2022 | ENS Rennes | D-E | Mathématiques appliquées | [md](2022/ens-rennes/ens-rennes_d-e_mathematiques-appliquees_2022/brut.md) | [md](2022/ens-rennes/ens-rennes_d-e_mathematiques-appliquees_2022/guide.md) |
+| 2023 | ENS Rennes | D-E | Mathématiques appliquées | [md](2023/ens-rennes/ens-rennes_d-e_mathematiques-appliquees_2023/brut.md) | [md](2023/ens-rennes/ens-rennes_d-e_mathematiques-appliquees_2023/guide.md) |
+| 2024 | ENS Rennes | D-E | Mathématiques appliquées | [md](2024/ens-rennes/ens-rennes_d-e_mathematiques-appliquees_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_mathematiques-appliquees_2024/guide.md) |
+| 2025 | ENS Rennes | D-E | Mathématiques appliquées | [md](2025/ens-rennes/ens-rennes_d-e_mathematiques-appliquees_2025/brut.md) | [md](2025/ens-rennes/ens-rennes_d-e_mathematiques-appliquees_2025/guide.md) |
+| 2026 | ENS Rennes | D-E | Mathématiques appliquées | [md](2026/ens-rennes/ens-rennes_d-e_mathematiques-appliquees_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_mathematiques-appliquees_2026/guide.md) |
 | 2017 | ENS Rennes | D1 | Allemand | [md](2017/ens-rennes/ens-rennes_d1_allemand_2017/brut.md) | [md](2017/ens-rennes/ens-rennes_d1_allemand_2017/guide.md) |
 | 2017 | ENS Rennes | D1 | Anglais | [md](2017/ens-rennes/ens-rennes_d1_anglais_2017/brut.md) | [md](2017/ens-rennes/ens-rennes_d1_anglais_2017/guide.md) |
 | 2005 | ENS Rennes | D1 | Composition d’ordre économique | [md](2005/ens-rennes/ens-rennes_d1_composition-dordre-economique_2005/brut.md) | [md](2005/ens-rennes/ens-rennes_d1_composition-dordre-economique_2005/guide.md) |
@@ -717,7 +724,6 @@
 | 2025 | BEL | BL | Arabe | [md](2025/bel/bel_bl_arabe_2025/brut.md) | [md](2025/bel/bel_bl_arabe_2025/guide.md) |
 | 2025 | BEL | BL | Chinois | [md](2025/bel/bel_bl_chinois_2025/brut.md) | [md](2025/bel/bel_bl_chinois_2025/guide.md) |
 | 2017 | BEL | BL | Composition française | [md](2017/bel/bel_bl_composition-francaise_2017/brut.md) | [md](2017/bel/bel_bl_composition-francaise_2017/guide.md) |
-| 2024 | BEL | BL | Composition française | [md](2024/bel/bel_bl_composition-francaise_2024/brut.md) | [md](2024/bel/bel_bl_composition-francaise_2024/guide.md) |
 | 2025 | BEL | BL | Composition française | [md](2025/bel/bel_bl_composition-francaise_2025/brut.md) | [md](2025/bel/bel_bl_composition-francaise_2025/guide.md) |
 | 2026 | BEL | BL | Composition française | [md](2026/bel/bel_bl_composition-francaise_2026/brut.md) | [md](2026/bel/bel_bl_composition-francaise_2026/guide.md) |
 | 2017 | BEL | BL | Géographie | [md](2017/bel/bel_bl_geographie_2017/brut.md) | [md](2017/bel/bel_bl_geographie_2017/guide.md) |
@@ -759,9 +765,7 @@
 | 2022 | BEL | AL | Russe (commentaire et traduction) | [md](2022/bel/bel_al_russe-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_russe-commentaire-et-traduction_2022/guide.md) |
 | 2022 | BEL | AL | Russe (thème Lyon) | [md](2022/bel/bel_al_russe-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_russe-theme-lyon_2022/guide.md) |
 | 2022 | BEL | BL | Mathématiques | [md](2022/bel/bel_bl_mathematiques_2022/brut.md) | [md](2022/bel/bel_bl_mathematiques_2022/guide.md) |
-| 2024 | BEL | BL | Mathématiques | [md](2024/bel/bel_bl_mathematiques_2024/brut.md) | [md](2024/bel/bel_bl_mathematiques_2024/guide.md) |
 | 2026 | BEL | BL | Mathématiques | [md](2026/bel/bel_bl_mathematiques_2026/brut.md) | [md](2026/bel/bel_bl_mathematiques_2026/guide.md) |
-| 2024 | BEL | BL | Philosophie | [md](2024/bel/bel_bl_philosophie_2024/brut.md) | [md](2024/bel/bel_bl_philosophie_2024/guide.md) |
 | 2025 | BEL | BL | Philosophie | [md](2025/bel/bel_bl_philosophie_2025/brut.md) | [md](2025/bel/bel_bl_philosophie_2025/guide.md) |
 | 2025 | BEL | BL | Philosophie (oral tronc commun, 20 juin) | [md](2025/bel/bel_bl_philosophie-oral-tronc-commun-20-juin_2025/brut.md) | [md](2025/bel/bel_bl_philosophie-oral-tronc-commun-20-juin_2025/guide.md) |
 | 2025 | BEL | BL | Philosophie (oral tronc commun, 19 juin) | [md](2025/bel/bel_bl_philosophie-oral-tronc-commun-19-juin_2025/brut.md) | [md](2025/bel/bel_bl_philosophie-oral-tronc-commun-19-juin_2025/guide.md) |
@@ -1412,9 +1416,21 @@
 | 2019 | ENS | MP | Informatique-mathématiques | [md](2019/ens/ens_mp_informatique-mathematiques_2019/brut.md) | [md](2019/ens/ens_mp_informatique-mathematiques_2019/guide.md) |
 | 2020 | ENS | Cycle master mathématiques | Français et culture générale | [md](2020/ens/ens_cycle-master-mathematiques_francais-et-culture-generale_2020/brut.md) | [md](2020/ens/ens_cycle-master-mathematiques_francais-et-culture-generale_2020/guide.md) |
 | 2020 | ENS | MP | Informatique-mathématiques | [md](2020/ens/ens_mp_informatique-mathematiques_2020/brut.md) | [md](2020/ens/ens_mp_informatique-mathematiques_2020/guide.md) |
+| 2011 | ENS | MP | Maths C | [md](2011/ens/ens_mp_maths-c_2011/brut.md) | [md](2011/ens/ens_mp_maths-c_2011/guide.md) |
+| 2012 | ENS | MP | Maths C | [md](2012/ens/ens_mp_maths-c_2012/brut.md) | [md](2012/ens/ens_mp_maths-c_2012/guide.md) |
+| 2013 | ENS | MP | Maths C | [md](2013/ens/ens_mp_maths-c_2013/brut.md) | [md](2013/ens/ens_mp_maths-c_2013/guide.md) |
+| 2014 | ENS | MP | Maths C | [md](2014/ens/ens_mp_maths-c_2014/brut.md) | [md](2014/ens/ens_mp_maths-c_2014/guide.md) |
+| 2015 | ENS | MP | Maths C | [md](2015/ens/ens_mp_maths-c_2015/brut.md) | [md](2015/ens/ens_mp_maths-c_2015/guide.md) |
+| 2016 | ENS | MP | Maths C | [md](2016/ens/ens_mp_maths-c_2016/brut.md) | [md](2016/ens/ens_mp_maths-c_2016/guide.md) |
+| 2017 | ENS | MP | Maths C | [md](2017/ens/ens_mp_maths-c_2017/brut.md) | [md](2017/ens/ens_mp_maths-c_2017/guide.md) |
+| 2018 | ENS | MP | Maths C | [md](2018/ens/ens_mp_maths-c_2018/brut.md) | [md](2018/ens/ens_mp_maths-c_2018/guide.md) |
+| 2019 | ENS | MP | Maths C | [md](2019/ens/ens_mp_maths-c_2019/brut.md) | [md](2019/ens/ens_mp_maths-c_2019/guide.md) |
 | 2020 | ENS | MP | Maths C | [md](2020/ens/ens_mp_maths-c_2020/brut.md) | [md](2020/ens/ens_mp_maths-c_2020/guide.md) |
 | 2021 | ENS | MP | Maths C | [md](2021/ens/ens_mp_maths-c_2021/brut.md) | [md](2021/ens/ens_mp_maths-c_2021/guide.md) |
 | 2022 | ENS | MP | Maths C | [md](2022/ens/ens_mp_maths-c_2022/brut.md) | [md](2022/ens/ens_mp_maths-c_2022/guide.md) |
+| 2011 | ENS | MP | Maths D | [md](2011/ens/ens_mp_maths-d_2011/brut.md) | [md](2011/ens/ens_mp_maths-d_2011/guide.md) |
+| 2012 | ENS | MP | Maths D | [md](2012/ens/ens_mp_maths-d_2012/brut.md) | [md](2012/ens/ens_mp_maths-d_2012/guide.md) |
+| 2013 | ENS | MP | Maths D | [md](2013/ens/ens_mp_maths-d_2013/brut.md) | [md](2013/ens/ens_mp_maths-d_2013/guide.md) |
 | 2018 | ENS | MP | Maths D | [md](2018/ens/ens_mp_maths-d_2018/brut.md) | [md](2018/ens/ens_mp_maths-d_2018/guide.md) |
 | 2021 | ENS | MP | Maths D | [md](2021/ens/ens_mp_maths-d_2021/brut.md) | [md](2021/ens/ens_mp_maths-d_2021/guide.md) |
 | 2022 | ENS | MP | Maths D | [md](2022/ens/ens_mp_maths-d_2022/brut.md) | [md](2022/ens/ens_mp_maths-d_2022/guide.md) |
