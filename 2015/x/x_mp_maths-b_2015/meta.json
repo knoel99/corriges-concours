@@ -10,14 +10,28 @@
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
     "sujet": "https://www.vmaths.fr/wp-content/uploads/XENS/MP/X_ENS_2015_MP_MB_enonce.pdf",
-    "rapport_jury": "",
-    "sha256_sujet": "4c91ea39c3b36b8507e76ed40ab77be40bd71e12cb5181393d2e929fa2cb8028"
+    "rapport_jury": "https://mpi.lecontedelisle.re/wp-content/uploads/2026/01/X-ENS_2015_B_rapport.pdf",
+    "sha256_sujet": "4c91ea39c3b36b8507e76ed40ab77be40bd71e12cb5181393d2e929fa2cb8028",
+    "recoupements": [
+      {
+        "nature": "copie_sujet",
+        "url": "https://groupe-reussite.fr/ressources/wp-content/uploads/Annales/x-ens/maths/mp/maths2/x-ens-mp-maths2-2015-sujet.pdf",
+        "sha256": "4c91ea39c3b36b8507e76ed40ab77be40bd71e12cb5181393d2e929fa2cb8028"
+      },
+      {
+        "nature": "calendrier",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2014/12/15_mp_structure1.pdf",
+        "sha256": "afd85e2d6c53b760cc0bb9ef10ef3babc34023b0062814a23b6668af8484a2e4"
+      }
+    ],
+    "provenance": "Énoncé en miroir VMaths et Groupe Réussite, rapport de jury en miroir du lycée Leconte-de-Lisle. Le calendrier de la banque confirme la session et la voie.",
+    "sha256_rapport_jury": "d4e78f3c77ccf971cf159eca9c2be83019664ba6cbd89f43428fba9e572c6b2d"
   },
   "figures": [
     {
       "fichier": "figures/deux-branches-inverses.svg",
       "question": "3a",
-      "legende": "La fonction présente deux branches monotones de part et d’autre de son minimum. Un niveau strictement positif rencontre chacune d’elles une fois."
+      "legende": "Branches de φ(s) = s − ln(1 + s). Le niveau 0,65 coupe chaque branche une fois. La droite verticale en s = −1 est une asymptote."
     }
   ],
   "contributions": [
@@ -31,6 +45,61 @@
       "perimetre": "Rédaction des quatre parties dans les deux éditions, à partir du sujet original conservé en miroir. Graphe des branches inverses demandé en 3a, calcul du terme de Stirling, du rang optimal, des poids de la grille et des conditions de résonance.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Quatre parties sur la méthode de Laplace, le reste de la série divergente, le tore et le flot. Direction asymptotique, résonance, reste uniforme et deux branches du graphe vérifiés. Énoncé en deux miroirs identiques, rapport du jury en miroir et calendrier institutionnel."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1a",
+      "1b",
+      "2a",
+      "2b",
+      "2c",
+      "2d",
+      "3a",
+      "3b",
+      "3c",
+      "3d",
+      "3e",
+      "4",
+      "5",
+      "6a",
+      "6b",
+      "6c",
+      "6d",
+      "7a",
+      "7b",
+      "8",
+      "9",
+      "10a",
+      "10b",
+      "11",
+      "12",
+      "13",
+      "14a",
+      "14b",
+      "15a",
+      "15b",
+      "15c"
+    ],
+    "precision": "Les 31 rubriques des deux éditions ont été rapprochées du fascicule de 7 pages et du rapport du jury de 8 pages. Quatre parties sur la méthode de Laplace, le reste de la série divergente, le tore et le flot. Direction asymptotique, résonance, reste uniforme et deux branches du graphe vérifiés. Énoncé en deux miroirs identiques, rapport du jury en miroir et calendrier institutionnel.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "4c91ea39c3b36b8507e76ed40ab77be40bd71e12cb5181393d2e929fa2cb8028",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Quatre parties sur la méthode de Laplace, le reste de la série divergente, le tore et le flot. Direction asymptotique, résonance, reste uniforme et deux branches du graphe vérifiés. Énoncé en deux miroirs identiques, rapport du jury en miroir et calendrier institutionnel.",
+      "commit_redaction_anterieure": "bfe8b68b93080888317853f1c53ce1c3e7b7f345"
+    }
+  }
 }
