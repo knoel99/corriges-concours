@@ -1,4 +1,4 @@
-# X-ENS MP — Mathématiques A 2024 · Corrigé guidé
+# X-ENS MP-MPI — Mathématiques A 2024 · Corrigé guidé
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
@@ -6,19 +6,19 @@
 
 **Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
 L’épreuve commune MP–MPI de quatre heures porte sur deux problèmes indépendants. Dans le premier, on dénombre les permutations selon leur signature, leurs points fixes et leurs cycles, puis on contrôle l’écart du nombre de cycles à ln n. Dans le second, on estime la moyenne et les écarts du nombre de diviseurs premiers distincts.
 
-Les questions 1 à 8 et 16 à 19 de l’énoncé offrent des points d’entrée. Les estimations des paires de premiers en 22c et le passage à la densité en 23 demandent plus de temps. Les deux parties peuvent être traitées dans l’ordre choisi. Les 23 numéros imprimés sont ici détaillés en 44 rubriques. Chaque rubrique indique le repère original, qui est aussi celui utilisé dans les renvois des solutions.
+Les questions 1 à 8 et 16 à 19 de l’énoncé offrent des points d’entrée. Les estimations des paires de premiers en 22c et le passage à la densité en 23 demandent plus de temps. Les deux parties peuvent être traitées dans l’ordre choisi. Les 23 numéros imprimés sont ici détaillés en 44 rubriques. Les titres et les renvois des solutions suivent les repères du sujet.
 
 ## Première partie — Permutations
 
 Une identité de déterminant encode les signatures et les points fixes. Une autre identité polynomiale donne les moments du nombre de cycles.
 
-### Question 1
-
-**Repère officiel · 1a.**
+### Question 1a
 
 > [!INDICATION]
 > Relier la matrice à la matrice de rang 1 construite à partir du vecteur de tous les 1.
@@ -29,9 +29,7 @@ Soit $\mathbf 1=(1,\ldots,1)^{\mathsf T}$. On a $-M_0=I_n-\mathbf 1\mathbf 1^{\m
 
 Tout vecteur se décompose en sa moyenne fois $\mathbf 1$ et un vecteur de $H$. On a donc les deux espaces propres $\mathbb R\mathbf 1$ et $H$, de dimensions 1 et $n-1$. Ils sont supplémentaires, ce qui donne la diagonalisation.
 
-### Question 2
-
-**Repère officiel · 1b.**
+### Question 1b
 
 > [!INDICATION]
 > Interpréter un facteur diagonal dans chaque produit de Leibniz.
@@ -45,9 +43,7 @@ F_n(x):=\sum_{\sigma\in S_n}\varepsilon(\sigma)x^{\nu(\sigma)}
 $$
 Les termes d’exposant nul représentent le polynôme constant 1.
 
-### Question 3
-
-**Repère officiel · 2.**
+### Question 2
 
 > [!INDICATION]
 > Évaluer, dériver et intégrer ce même polynôme. Contrôler l’ordre d’annulation en 1.
@@ -68,9 +64,7 @@ $$
 > [!JURY]
 > Le rapport relève que le second calcul dépend de l’ordre d’annulation en 1. Le rang 2 doit être isolé.
 
-### Question 4
-
-**Repère officiel · 3.**
+### Question 3
 
 > [!INDICATION]
 > Lire la somme des signatures comme une différence de deux effectifs.
@@ -79,9 +73,7 @@ $$
 
 La différence entre l’effectif des permutations paires et celui des impaires vaut la première somme de 2, soit zéro. Les deux ensembles forment une partition de $S_n$, donc chacun compte $n!/2$ éléments. Une signature prescrite a ainsi une probabilité $1/2$.
 
-### Question 5
-
-**Repère officiel · 4.**
+### Question 4
 
 > [!INDICATION]
 > Isoler le terme constant de $F_n$.
@@ -90,9 +82,7 @@ La différence entre l’effectif des permutations paires et celui des impaires 
 
 Un dérangement est une permutation avec $\nu(\sigma)=0$. Le terme constant de $F_n$ est donc la différence des nombres de dérangements de signature $+1$ et $-1$. L’évaluation en zéro dans 1b donne $(-1)^{n-1}(n-1)$, d’où l’égalité demandée.
 
-### Question 6
-
-**Repère officiel · 5a.**
+### Question 5a
 
 > [!INDICATION]
 > Utiliser le degré des polynômes et le cardinal de chaque famille.
@@ -101,9 +91,7 @@ Un dérangement est une permutation avec $\nu(\sigma)=0$. Le terme constant de $
 
 Dans chacune des deux familles, le polynôme d’indice $k$ est unitaire de degré $k$. Toute combinaison linéaire non triviale a donc un terme dominant issu du plus grand indice de coefficient non nul. Chaque famille est libre et compte $m+1$ éléments, soit la dimension de $\mathbb R_m[X]$. Ce sont donc deux bases.
 
-### Question 7
-
-**Repère officiel · 5b.**
+### Question 5b
 
 > [!INDICATION]
 > Développer $X^k=(1+(X-1))^k$, puis lire la colonne d’indice $k$.
@@ -117,9 +105,7 @@ Le coefficient de ligne $\ell$ et colonne $k$ de la matrice est donc $M_{k,\ell}
 > [!JURY]
 > Le rapport attend la colonne de la matrice exprimée dans la base d’arrivée. Le binôme fait apparaître explicitement la transposée.
 
-### Question 8
-
-**Repère officiel · 5c.**
+### Question 5c
 
 > [!INDICATION]
 > Pour changer de base en sens inverse, développer $(X-1)^k$ en puissances de $X$.
@@ -137,9 +123,7 @@ $$
 \end{cases}
 $$
 
-### Question 9
-
-**Repère officiel · 5d.**
+### Question 5d
 
 > [!INDICATION]
 > Traduire la relation donnée en un produit de la matrice $M$ par un vecteur colonne.
@@ -151,9 +135,7 @@ $$
 v_k=\sum_{\ell=0}^k(-1)^{k-\ell}\binom{k}{\ell}u_\ell.
 $$
 
-### Question 10
-
-**Repère officiel · 6.**
+### Question 6
 
 > [!INDICATION]
 > Classer les permutations par leur ensemble de points non fixes et appliquer l’inversion précédente.
@@ -173,9 +155,7 @@ D_n&=\sum_{\ell=0}^n(-1)^{n-\ell}\binom n\ell\ell!\\
 $$
 après le changement d’indice $k=n-\ell$.
 
-### Question 11
-
-**Repère officiel · 7a.**
+### Question 7a
 
 > [!INDICATION]
 > Connaissant le total et la différence des effectifs, résoudre les deux équations.
@@ -189,9 +169,7 @@ $$
 \mathbb P(Y_n=\eta)=\frac12\left(1+\eta\frac{(-1)^{n-1}(n-1)}{D_n}\right).
 $$
 
-### Question 12
-
-**Repère officiel · 7b.**
+### Question 7b
 
 > [!INDICATION]
 > Identifier la limite de la somme partielle de 6.
@@ -200,9 +178,7 @@ $$
 
 La série exponentielle en $-1$ donne $D_n/n!\to e^{-1}$ par 6. En particulier $(n-1)/D_n\to0$ puisque $(n-1)/n!\to0$. D’après 7a, pour chacune des deux signatures, la probabilité tend vers $1/2$.
 
-### Question 13
-
-**Repère officiel · 8a.**
+### Question 8a
 
 > [!INDICATION]
 > Choisir l’ensemble des points fixes, puis ne permettre aucun autre point fixe.
@@ -218,9 +194,7 @@ $$
 $$
 En dehors de ces indices entiers, la probabilité vaut zéro. La convention $D_0=1$ couvre $k=n$.
 
-### Question 14
-
-**Repère officiel · 8b.**
+### Question 8b
 
 > [!INDICATION]
 > Fixer $k$ avant de faire tendre $n$ vers l’infini.
@@ -229,9 +203,7 @@ En dehors de ces indices entiers, la probabilité vaut zéro. La convention $D_0
 
 Pour tout $k\in\mathbb N$ fixé, $n-k\to+\infty$. En utilisant $D_{n-k}/(n-k)!\to e^{-1}$ établi en 7b, on trouve $\mathbb P(Z_n=k)\to e^{-1}/k!$.
 
-### Question 15
-
-**Repère officiel · 8c.**
+### Question 8c
 
 > [!INDICATION]
 > Exprimer le nombre de points fixes comme une somme d’indicatrices.
@@ -240,9 +212,7 @@ Pour tout $k\in\mathbb N$ fixé, $n-k\to+\infty$. En utilisant $D_{n-k}/(n-k)!\t
 
 On a $Z_n=\sum_{i=1}^n\mathbf 1_{\{\sigma(i)=i\}}$. Pour un $i$ fixé, les $(n-1)!$ permutations des autres points sont toutes possibles. Cet événement a donc pour probabilité $1/n$. Par linéarité de l’espérance, $\mathbb E[Z_n]=1$ pour tout $n$, et sa limite est 1.
 
-### Question 16
-
-**Repère officiel · 9.**
+### Question 9
 
 > [!INDICATION]
 > Classer les petites permutations par leurs longueurs de cycles.
@@ -262,9 +232,7 @@ Pour le type $3+1$, on choisit le point fixe de 4 façons, puis un cycle sur les
 
 ![Figure 1 — Les onze permutations à deux cycles comprennent huit cycles de longueur trois avec un point fixe et trois produits de deux transpositions disjointes.](figures/q09-cycles.svg)
 
-### Question 17
-
-**Repère officiel · 10.**
+### Question 10
 
 > [!INDICATION]
 > Supprimer le point 1. S’il appartenait à un cycle de longueur au moins deux, repérer le choix nécessaire à sa réinsertion.
@@ -278,9 +246,7 @@ $$
 s(n,k)=s(n-1,k-1)+(n-1)s(n-1,k).
 $$
 
-### Question 18
-
-**Repère officiel · 11.**
+### Question 11
 
 > [!INDICATION]
 > Multiplier le polynôme du rang précédent par $x+n-1$, puis contrôler les coefficients extrêmes.
@@ -297,9 +263,7 @@ $$
 > [!JURY]
 > Le rapport demande de partir de la taille 1 et de vérifier séparément les deux coefficients extrêmes.
 
-### Question 19
-
-**Repère officiel · 12.**
+### Question 12
 
 > [!INDICATION]
 > Dériver l’identité du produit et l’évaluer en 1.
@@ -312,9 +276,7 @@ $$
 $$
 En dérivant la somme dans la définition de $P_n$, le membre de gauche est $\mathbb E[X_n]$. L’estimation admise pour $H_n$ donne $\mathbb E[X_n]=\ln n+\gamma+O(1/n)$.
 
-### Question 20
-
-**Repère officiel · 13a.**
+### Question 13a
 
 > [!INDICATION]
 > La dérivée seconde du produit choisit deux facteurs distincts, avec ordre.
@@ -329,9 +291,7 @@ $$
 $$
 La dérivée seconde de la somme des coefficients donne au membre de gauche $\frac1{n!}\sum_{k=1}^n k(k-1)s(n,k)$.
 
-### Question 21
-
-**Repère officiel · 13b.**
+### Question 13b
 
 > [!INDICATION]
 > Écrire $k^2$ à l’aide du produit $k(k-1)$.
@@ -346,9 +306,7 @@ $$
 \end{aligned}
 $$
 
-### Question 22
-
-**Repère officiel · 14a.**
+### Question 14a
 
 > [!INDICATION]
 > Borner le reste de la série des inverses des carrés avant de développer $H_n^2$.
@@ -371,9 +329,7 @@ La constante vaut $c=\gamma^2+\gamma-\sum_{i\ge1}i^{-2}$.
 > [!JURY]
 > Le rapport souligne qu’un reste seulement convergent vers zéro ne suffit pas. La comparaison à une intégrale donne le taux requis.
 
-### Question 23
-
-**Repère officiel · 14b.**
+### Question 14b
 
 > [!INDICATION]
 > Recentrer par $\ln n$ et utiliser le développement de l’espérance avec son reste.
@@ -386,9 +342,7 @@ $$
 $$
 avec la même constante $c$.
 
-### Question 24
-
-**Repère officiel · 15.**
+### Question 15
 
 > [!INDICATION]
 > Appliquer Markov au carré centré en $\ln n$.
@@ -408,9 +362,7 @@ La borne imprimée avec $n=1$ a un dénominateur nul. Si l’on prolonge la déf
 
 Les estimations de sommes sur les premiers fournissent les ordres de grandeur. Les dénombrements servent ensuite à contrôler les écarts.
 
-### Question 25
-
-**Repère officiel · 16.**
+### Question 16
 
 > [!INDICATION]
 > Sur chaque intervalle $[k,k+1[$, la fonction $A$ est constante. Utiliser Chasles.
@@ -426,9 +378,7 @@ Après regroupement, $A(n)b(n)$ moins cette somme vaut $\sum_{k=2}^n(A(k)-A(k-1)
 > [!JURY]
 > Le rapport demande de décomposer l’intégrale par Chasles sur les intervalles où la fonction est constante.
 
-### Question 26
-
-**Repère officiel · 17a.**
+### Question 17a
 
 > [!INDICATION]
 > Utiliser la convention du produit vide au premier rang.
@@ -439,9 +389,7 @@ Notons $P(n)=\prod_{p\le n,\ p\ \mathrm{premier}}p$. On a $P(1)=1$, $P(2)=2$ et 
 
 Ces trois valeurs sont respectivement inférieures ou égales à $4$, $16$ et $64$.
 
-### Question 27
-
-**Repère officiel · 17b.**
+### Question 17b
 
 > [!INDICATION]
 > Pour le rang pair $2m$, étudier les facteurs premiers de $\binom{2m}{m}$ supérieurs à $m$.
@@ -456,9 +404,7 @@ P(2m)\le P(m)4^m\le4^{2m}.
 $$
 La dernière inégalité utilise l’hypothèse de récurrence.
 
-### Question 28
-
-**Repère officiel · 17c.**
+### Question 17c
 
 > [!INDICATION]
 > Comparer chaque premier aux deux factorielles du dénominateur. Utiliser ensuite les deux termes centraux égaux.
@@ -472,9 +418,7 @@ Dans la somme des coefficients de la ligne $2m+1$ du binôme, les deux coefficie
 > [!JURY]
 > Le rapport attend que la divisibilité par chaque premier, puis par leur produit, soit justifiée.
 
-### Question 29
-
-**Repère officiel · 17d.**
+### Question 17d
 
 > [!INDICATION]
 > Factoriser le produit au rang impair en séparant les premiers jusqu’à $m+1$.
@@ -487,9 +431,7 @@ P(2m+1)\le P(m+1)4^m\le4^{m+1}4^m=4^{2m+1}.
 $$
 Les cas initiaux de 17a et les deux parités de 17b et 17d établissent la propriété pour tout entier $n\ge1$.
 
-### Question 30
-
-**Repère officiel · 18.**
+### Question 18
 
 > [!INDICATION]
 > Compter une contribution pour chaque puissance de $p$ qui divise un facteur de $n!$.
@@ -504,9 +446,7 @@ $$
 $$
 Le premier terme est strictement supérieur à $n/p-1$. En majorant chacun par $n/p^k$, on obtient d’autre part $\nu_p(n!)\le n/(p-1)=n/p+n/[p(p-1)]$.
 
-### Question 31
-
-**Repère officiel · 19a.**
+### Question 19a
 
 > [!INDICATION]
 > Encadrer la somme par deux intégrales d’une fonction croissante.
@@ -522,9 +462,7 @@ $$
 $$
 En effet, sur chaque intervalle $[k,k+1]$, sa valeur est comprise entre les deux valeurs aux bornes. L’intégrale vaut $n\ln n-n+1$, d’où la formule avec un reste $O(\ln n)$.
 
-### Question 32
-
-**Repère officiel · 19b.**
+### Question 19b
 
 > [!INDICATION]
 > Prendre le logarithme de la décomposition en facteurs premiers, puis utiliser les deux bornes de 18.
@@ -542,9 +480,7 @@ n\sum_{p\le n}\frac{\ln p}{p(p-1)}.
 $$
 Par 17, $\sum_{p\le n}\ln p=\ln P(n)\le n\ln4$, ce qui donne la minoration demandée. Pour $n=1$, les sommes sont vides et l’inégalité se lit $-\ln4<0\le0$.
 
-### Question 33
-
-**Repère officiel · 19c.**
+### Question 19c
 
 > [!INDICATION]
 > Comparer le terme général à une série de Riemann d’exposant strictement supérieur à 1.
@@ -553,9 +489,7 @@ Par 17, $\sum_{p\le n}\ln p=\ln P(n)\le n\ln4$, ce qui donne la minoration deman
 
 Pour $k\ge2$, $k(k-1)\ge k^2/2$. Comme $\ln k=O(\sqrt{k})$, on a $\ln k/[k(k-1)]=O(k^{-3/2})$. La série, à termes positifs, converge par comparaison.
 
-### Question 34
-
-**Repère officiel · 19d.**
+### Question 19d
 
 > [!INDICATION]
 > Diviser l’encadrement de 19b par $n$. Le supplément de la borne haute est une somme partielle bornée.
@@ -568,9 +502,7 @@ T(n)-\ln4<\frac{\ln(n!)}n\le T(n)+B.
 $$
 Ainsi $T(n)=\ln(n!)/n+O(1)$. La formule de 19a donne $\ln(n!)/n=\ln n-1+O((\ln n)/n)$, d’où $T(n)=\ln n+O(1)$.
 
-### Question 35
-
-**Repère officiel · 20a.**
+### Question 20a
 
 > [!INDICATION]
 > Appliquer 16 avec une suite portée par les nombres premiers et un poids $1/\ln t$.
@@ -585,9 +517,7 @@ $$
 $$
 La contribution de $\ln t$ est $\ln_2(n)-\ln_2(2)$, ce qui donne l’égalité demandée.
 
-### Question 36
-
-**Repère officiel · 20b.**
+### Question 20b
 
 > [!INDICATION]
 > Étendre la borne de 19d aux réels, puis intégrer la fonction qui reste au dénominateur.
@@ -601,9 +531,7 @@ $$
 $$
 La primitive $-1/\ln t$ montre que le majorant a une intégrale finie sur $[2,+\infty[$. L’intégrale demandée converge absolument.
 
-### Question 37
-
-**Repère officiel · 20c.**
+### Question 20c
 
 > [!INDICATION]
 > Isoler l’intégrale jusqu’à l’infini et borner la queue.
@@ -622,9 +550,7 @@ La même estimation vaut pour un réel $x$ tendant vers l’infini. La somme ne 
 > [!JURY]
 > Le rapport demande une majoration explicite de la queue de l’intégrale.
 
-### Question 38
-
-**Repère officiel · 21a.**
+### Question 21a
 
 > [!INDICATION]
 > Les multiples positifs de $q$ sont exactement les $jq$ avec $j\ge1$.
@@ -633,9 +559,7 @@ La même estimation vaut pour un réel $x$ tendant vers l’infini. La somme ne 
 
 Les indices $j$ admissibles vont de 1 à $\lfloor x/q\rfloor$, donc le cardinal vaut $\lfloor x/q\rfloor$. Sa différence avec $x/q$ a une valeur absolue strictement inférieure à 1, uniformément en $x$ et en $q$.
 
-### Question 39
-
-**Repère officiel · 21b.**
+### Question 21b
 
 > [!INDICATION]
 > Intervertir le comptage des entiers et celui des nombres premiers qui les divisent.
@@ -651,9 +575,7 @@ $$
 \frac1x\sum_{n\le x}\omega(n)=\ln_2(x)+O(1).
 $$
 
-### Question 40
-
-**Repère officiel · 22a.**
+### Question 22a
 
 > [!INDICATION]
 > Développer le carré et compter exactement le nombre de termes constants pour un réel $x$.
@@ -671,9 +593,7 @@ $$
 $$
 Par 21b, le deuxième terme vaut $-2L^2+O(L)$. Le dernier vaut $L^2+O(L^2/x)$, avec $L^2/x=o(L)$ à l’infini. La somme des deux termes vaut donc $-L^2+O(L)$.
 
-### Question 41
-
-**Repère officiel · 22b.**
+### Question 22b
 
 > [!INDICATION]
 > Écrire $\omega(n)$ comme une somme d’indicatrices de divisibilité.
@@ -682,35 +602,23 @@ Par 21b, le deuxième terme vaut $-2L^2+O(L)$. Le dernier vaut $L^2+O(L^2/x)$, a
 
 Pour $n\le x$, on a $\omega(n)=\sum_{p\le x}\mathbf 1_{\{p\mid n\}}$. Son carré s’écrit comme une somme sur les paires ordonnées $(p_1,p_2)$ de premiers au plus égaux à $x$. Le produit des deux indicatrices vaut 1 précisément si les deux divisent $n$. En sommant sur $n$ puis en permutant ces sommes finies, on obtient le dénombrement demandé.
 
-### Question 42
-
-**Repère officiel · 22c.**
+### Question 22c
 
 > [!INDICATION]
 > Estimer séparément l’erreur de partie entière et le poids des couples dont le produit dépasse $x$.
 
 > [!INDICATION]
-> Pour compter les couples de produit au plus $x$, l’un des deux premiers est au plus $\sqrt x$. Utiliser la borne sur le produit des premiers pour en déduire une borne sur leur nombre.
+> Fixer le produit entier $m=pq$. Combien de couples ordonnés de deux premiers distincts peuvent avoir ce produit ?
 
 #### Solution
 
 Pour deux premiers distincts, les multiples communs sont les multiples de leur produit. Notons $U(x)$ la somme de ces cardinaux sur les couples ordonnés distincts de premiers au plus égaux à $x$. Seuls les couples de produit au plus $x$ contribuent.
 
-Établissons une borne sur leur nombre. Posons $\Pi(y)=\#\{p\le y\}$ et $\Theta(y)=\sum_{p\le y}\ln p$ pour les premiers. Par 17, $\Theta(y)\le y\ln4$ pour $y\ge2$. Chaque premier supérieur à $\sqrt y$ apporte au moins $\frac12\ln y$ dans cette somme.
-
-Comme $\Pi(\sqrt y)\le\sqrt y$, on obtient
+À chaque couple admissible $(p,q)$ associons l’entier $m=pq\le x$. L’unicité de la factorisation donne exactement deux antécédents pour chaque entier de l’image, $(p,q)$ et $(q,p)$. Le nombre de couples est donc au plus $2\lfloor x\rfloor$. Pour chacun, $0\le x/(pq)-\lfloor x/(pq)\rfloor<1$. En sommant sur les couples de produit au plus $x$, on obtient
 $$
-\Pi(y)\le\sqrt y+\frac{2y\ln4}{\ln y}=O(y/\ln y).
+\left|U(x)-x\!\sum_{\substack{p,q\ \mathrm{premiers},\ p\ne q\\pq\le x}}\frac1{pq}\right|\le 2\lfloor x\rfloor .
 $$
-Si $pq\le x$, l’un des deux premiers est au plus $\sqrt x$. Le nombre de tels couples est donc majoré par $2\sum_{p\le\sqrt x}\Pi(x/p)$. Sur cette plage, $\ln(x/p)\ge\ln x/2$. En utilisant 20c, il vient
-$$
-\begin{aligned}
-2\sum_{p\le\sqrt x}\Pi(x/p)
-&=O\left(\frac{x}{\ln x}\sum_{p\le\sqrt x}\frac1p\right)\\
-&=O\left(\frac{x\ln_2(x)}{\ln x}\right).
-\end{aligned}
-$$
-Par 21a, remplacer chaque partie entière $\lfloor x/(pq)\rfloor$ par $x/(pq)$ coûte au plus une unité par couple admissible. Le coût total est donc $O(x\ln_2(x)/\ln x)$, et en particulier $O(x\ln_2(x))$ comme le demande l’énoncé.
+Cette erreur est $O(x)$. Il reste à contrôler le poids des couples exclus par les conditions $p\ne q$ et $pq\le x$.
 
 ![Figure 2 — Fenêtre sur les couples ordonnés de premiers pour x = 80. Sous l’hyperbole, les deux premiers possèdent un multiple commun inférieur ou égal à 80. La diagonale relève de la question suivante.](figures/q22c-couples-premiers.svg)
 
@@ -723,9 +631,7 @@ $$
 U(x)-x(\ln_2(x))^2=O(x\ln_2(x)).
 $$
 
-### Question 43
-
-**Repère officiel · 22d.**
+### Question 22d
 
 > [!INDICATION]
 > Dans 22b, ajouter la diagonale, puis utiliser le recentrage de 22a.
@@ -741,9 +647,7 @@ $$
 \frac1x\sum_{n\le x}(\omega(n)-\ln_2(x))^2=O(\ln_2(x)).
 $$
 
-### Question 44
-
-**Repère officiel · 23.**
+### Question 23
 
 > [!INDICATION]
 > Écarter les entiers au-dessous de $\sqrt x$. Sur le reste, recentrer les écarts à $\ln_2(x)$.
