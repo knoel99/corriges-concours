@@ -222,7 +222,13 @@
 | 2026 | BEL | AL | Anglais (version et thème Ulm) | [md](2026/bel/bel_al_anglais-version-et-theme-ulm_2026/brut.md) | [md](2026/bel/bel_al_anglais-version-et-theme-ulm_2026/guide.md) |
 | 2026 | BEL | AL | Arabe (commentaire et traduction) | [md](2026/bel/bel_al_arabe-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_arabe-commentaire-et-traduction_2026/guide.md) |
 | 2026 | BEL | AL | Arabe (thème Lyon) | [md](2026/bel/bel_al_arabe-theme-lyon_2026/brut.md) | [md](2026/bel/bel_al_arabe-theme-lyon_2026/guide.md) |
+| 2023 | BEL | AL | Chinois (commentaire et traduction) | [md](2023/bel/bel_al_chinois-commentaire-et-traduction_2023/brut.md) | [md](2023/bel/bel_al_chinois-commentaire-et-traduction_2023/guide.md) |
+| 2024 | BEL | AL | Chinois (commentaire et traduction) | [md](2024/bel/bel_al_chinois-commentaire-et-traduction_2024/brut.md) | [md](2024/bel/bel_al_chinois-commentaire-et-traduction_2024/guide.md) |
+| 2025 | BEL | AL | Chinois (commentaire et traduction) | [md](2025/bel/bel_al_chinois-commentaire-et-traduction_2025/brut.md) | [md](2025/bel/bel_al_chinois-commentaire-et-traduction_2025/guide.md) |
 | 2026 | BEL | AL | Chinois (commentaire et traduction) | [md](2026/bel/bel_al_chinois-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_chinois-commentaire-et-traduction_2026/guide.md) |
+| 2023 | BEL | AL | Chinois (thème Lyon) | [md](2023/bel/bel_al_chinois-theme-lyon_2023/brut.md) | [md](2023/bel/bel_al_chinois-theme-lyon_2023/guide.md) |
+| 2024 | BEL | AL | Chinois (thème Lyon) | [md](2024/bel/bel_al_chinois-theme-lyon_2024/brut.md) | [md](2024/bel/bel_al_chinois-theme-lyon_2024/guide.md) |
+| 2025 | BEL | AL | Chinois (thème Lyon) | [md](2025/bel/bel_al_chinois-theme-lyon_2025/brut.md) | [md](2025/bel/bel_al_chinois-theme-lyon_2025/guide.md) |
 | 2026 | BEL | AL | Chinois (thème Lyon) | [md](2026/bel/bel_al_chinois-theme-lyon_2026/brut.md) | [md](2026/bel/bel_al_chinois-theme-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Chinois (version et thème Ulm) | [md](2026/bel/bel_al_chinois-version-et-theme-ulm_2026/brut.md) | [md](2026/bel/bel_al_chinois-version-et-theme-ulm_2026/guide.md) |
 | 2026 | BEL | AL | Commentaire de carte géographique (Lyon) | [md](2026/bel/bel_al_commentaire-de-carte-geographique-lyon_2026/brut.md) | [md](2026/bel/bel_al_commentaire-de-carte-geographique-lyon_2026/guide.md) |
