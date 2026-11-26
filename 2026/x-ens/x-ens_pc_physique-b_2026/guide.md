@@ -10,6 +10,8 @@
 
 **Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** *De la topologie dans les ondes : de la matière condensée à El Niño.* Le sujet part d'un objet de cours, la chaîne de masses et de ressorts, et va jusqu'à une notion de recherche : l'**invariant topologique** d'une structure de bandes et la **correspondance volume-bord**, qui prédit le nombre de modes piégés à une interface.
@@ -1003,6 +1005,8 @@ Pour $\lambda>\lambda_c$, $v_g<0$ : les paquets **longs** vont vers l'**Ouest**.
 >
 > Donc $c/\beta$ est en $\mathrm{m^2}$ et $\lambda_c$ en mètres. Le rapport note aussi que Q34 et Q35 ont souvent été traitées.
 
+Au seuil $|k_x|=\sqrt A$, la vitesse de groupe s’annule. En posant $L_{\rm eq}=\sqrt{c/\beta}$, on trouve pour le premier mode de Rossby ($n=1$) $\lambda_c=(2\pi/\sqrt3)L_{\rm eq}\simeq3{,}63L_{\rm eq}$. La profondeur $H$ qui fixe $c=\sqrt{gH}$ n’est pas chiffrée dans l’énoncé.
+
 ### Question 36
 
 > [!INDICATION]
@@ -1036,3 +1040,5 @@ Au large du Pérou, la couche d’eau chaude s’épaissit. Une remontée d’ea
 **Questions classiques transposables.** La chaîne monoatomique et sa coupure (Q1–7) reviennent très souvent, de même que la chaîne diatomique (branches acoustique et optique). Les ondes en eau peu profonde ($c=\sqrt{gH}$) et la force de Coriolis à la latitude $\hat\ell$ sont des classiques. Pour les ondes de Rossby courtes de la Q35, crêtes et paquet se déplacent en sens opposés.
 
 Le rapport 2026 constate que « La majorité des candidats n'a traité qu'un peu moins de la moitié des questions proposées. » Sur ce sujet, les blocs Q1–13 et Q22–30 constituent un socle sûr à traiter vite.
+
+On peut aussi vérifier le guidage équatorial avec les équations de Q32. Sur la branche de Kelvin, $v=0$ et $\omega=ck_x$ donnent $u=g\eta/c$ pour $k_x\ne0$. L’équilibre méridien impose alors $g\,\mathrm d\eta/\mathrm dy=-\beta yu$, soit $\eta(y)=\eta(0)\exp[-\beta y^2/(2c)]$. La perturbation qui se déplace vers l’est reste ainsi concentrée de part et d’autre de l’équateur sur une largeur caractéristique $\sqrt{c/\beta}$.
