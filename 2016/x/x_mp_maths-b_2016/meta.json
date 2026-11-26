@@ -11,13 +11,14 @@
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/05/16_mp_sujets_maths_b.pdf",
     "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/03/16_MP_rap_EmathB.pdf",
-    "sha256_sujet": "98f4b91b685be5c5e0223fdcf2cbab1ef0300edf1e81d862f5cdd35b22489a1e"
+    "sha256_sujet": "98f4b91b685be5c5e0223fdcf2cbab1ef0300edf1e81d862f5cdd35b22489a1e",
+    "sha256_rapport_jury": "18575c1330df94bf410bded0a13f7b317d0528b04c3f2d7d51eb640edf4ab0f5"
   },
   "figures": [
     {
       "fichier": "figures/renouvellement-sur-reseau.svg",
       "question": "18",
-      "legende": "Accroissement déterministe égal à un et fenêtre de longueur un demi. Le comptage oscille selon la position de la fenêtre."
+      "legende": "Visites des entiers dans la fenêtre fermée de longueur ½. Aux extrémités de chaque palier, le point plein indique la valeur prise et le point évidé la valeur exclue."
     }
   ],
   "contributions": [
@@ -31,6 +32,76 @@
       "perimetre": "Rédaction des deux éditions sur les six pages du sujet natif et le rapport du jury. Vérification des franchissements, de la convergence normale locale, du semi-groupe additif, de la constante de renouvellement et de l’exemple périodique de réseau.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Quatre parties sur les sommes de renouvellement, équation fonctionnelle, stabilité par addition et limite hors réseau. Intégrale de la queue à support fini et valeurs exactes de la figure pour la fenêtre fermée."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1a",
+      "1b",
+      "2",
+      "3a",
+      "3b",
+      "3c",
+      "4a",
+      "4b",
+      "4c",
+      "4d",
+      "5",
+      "6a",
+      "6b",
+      "7a",
+      "7b",
+      "7c",
+      "8a",
+      "8b",
+      "8c",
+      "9a",
+      "9b",
+      "9c",
+      "10a",
+      "10b",
+      "11a",
+      "11b",
+      "11c",
+      "11d",
+      "12a",
+      "12b",
+      "13a",
+      "13b",
+      "13c",
+      "13d",
+      "14a",
+      "14b",
+      "14c",
+      "14d",
+      "14e",
+      "14f",
+      "15a",
+      "15b",
+      "16a",
+      "16b",
+      "17",
+      "18"
+    ],
+    "precision": "Les 46 rubriques des deux éditions ont été rapprochées du fascicule de 6 pages et du rapport du jury de 13 pages. Quatre parties sur les sommes de renouvellement, équation fonctionnelle, stabilité par addition et limite hors réseau. Intégrale de la queue à support fini et valeurs exactes de la figure pour la fenêtre fermée.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "98f4b91b685be5c5e0223fdcf2cbab1ef0300edf1e81d862f5cdd35b22489a1e",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Quatre parties sur les sommes de renouvellement, équation fonctionnelle, stabilité par addition et limite hors réseau. Intégrale de la queue à support fini et valeurs exactes de la figure pour la fenêtre fermée.",
+      "commit_redaction_anterieure": "4b1eec4e9d693cefb8cc74022b94e140586fb183"
+    }
+  }
 }
