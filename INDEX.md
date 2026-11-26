@@ -1939,6 +1939,8 @@
 | 2010 | X | MP-PC | Russe | [md](2010/x/x_mp-pc_russe_2010/brut.md) | [md](2010/x/x_mp-pc_russe_2010/guide.md) |
 | 2010 | X | MP | Composition de physique et sciences de l’ingénieur | [md](2010/x/x_mp_composition-de-physique-et-sciences-de-lingenieur_2010/brut.md) | [md](2010/x/x_mp_composition-de-physique-et-sciences-de-lingenieur_2010/guide.md) |
 | 2010 | X | MP | Composition de physique | [md](2010/x/x_mp_composition-de-physique_2010/brut.md) | [md](2010/x/x_mp_composition-de-physique_2010/guide.md) |
+| 1997 | X | MP | Informatique (option) | [md](1997/x/x_mp_informatique-option_1997/brut.md) | [md](1997/x/x_mp_informatique-option_1997/guide.md) |
+| 1999 | X | MP | Informatique (option) | [md](1999/x/x_mp_informatique-option_1999/brut.md) | [md](1999/x/x_mp_informatique-option_1999/guide.md) |
 | 2000 | X | MP | Informatique (option) | [md](2000/x/x_mp_informatique-option_2000/brut.md) | [md](2000/x/x_mp_informatique-option_2000/guide.md) |
 | 2001 | X | MP | Informatique (option) | [md](2001/x/x_mp_informatique-option_2001/brut.md) | [md](2001/x/x_mp_informatique-option_2001/guide.md) |
 | 2002 | X | MP | Informatique (option) | [md](2002/x/x_mp_informatique-option_2002/brut.md) | [md](2002/x/x_mp_informatique-option_2002/guide.md) |
