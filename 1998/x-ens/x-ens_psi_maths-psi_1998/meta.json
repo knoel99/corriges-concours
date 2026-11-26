@@ -1,0 +1,117 @@
+{
+  "slug": "x-ens_psi_maths-psi_1998",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "annee": 1998,
+    "matiere": "Maths PSI",
+    "modalite": "écrit"
+  },
+  "intitule": "Composition de mathématiques",
+  "theme": "Interpolation de Lagrange et phénomène de Runge.",
+  "organisateurs": "École polytechnique et École normale supérieure de Cachan",
+  "identification": "Logos ENS et École polytechnique, composition de mathématiques, session de 1998 ; le groupe PSI et Cachan sont recoupés par l’UPS et le livre de la session.",
+  "questions": 39,
+  "sources": {
+    "sujet": "https://www.sujetsetcorriges.fr/dl/X/Maths/PSI/sec-x-1998-maths-PSI.pdf",
+    "sha256_sujet": "b21ee84d30d4b0396267c14f6ad5377d19912dd84f2a1b11d0297509423d47d1",
+    "pages_sujet": 7,
+    "collection": "https://www.sujetsetcorriges.fr/cpge-spe/x/x-mathematiques/x-ens-maths-psi/",
+    "notice_ups": "m98hsu",
+    "pieces_ups": [
+      {
+        "id": "m98hsu",
+        "type": "énoncé",
+        "auteur": "UPS",
+        "source": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-df6ef9b3036f34201598",
+        "sha256": "b9f7711ef12d67597b9bcb8278a4acb643698fef9b145e3fefc55e4551a9cd0a"
+      },
+      {
+        "id": "m98hsu",
+        "type": "corrigé",
+        "auteur": "Michel Quercia",
+        "source": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-dc7b9ef07e52f467fd8d",
+        "sha256": "a269ec795a082195ee192a6b504b218a0f1f662bd3ff37a224f15f49e244af0c"
+      }
+    ],
+    "recoupement": "https://link.springer.com/book/9783540656753",
+    "rapport_jury": null,
+    "precision_rapport": "Aucun rapport de jury identifié dans les deux collections consultées."
+  },
+  "figures": [
+    {
+      "fichier": "figures/figure-1.svg",
+      "question": "7.2",
+      "legende": "Les taux limites pour une grille équidistante"
+    },
+    {
+      "fichier": "figures/figure-2.svg",
+      "question": "9",
+      "legende": "Croissance de l’erreur au point irrationnel choisi"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "x_maths_b_recentes",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Contrôle de la garde et des parties du fac-similé, résolution de chaque consigne dans les deux éditions, indications par subdivision, figures mathématiques originales et rapprochement avec la notice UPS."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "0.1",
+      "0.2.1",
+      "0.2.2",
+      "0.3",
+      "0.4",
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "2.1",
+      "2.2",
+      "2.3.a",
+      "2.3.b",
+      "2.3.c",
+      "2.4",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "5",
+      "6.1",
+      "6.2",
+      "6.3",
+      "7.1",
+      "7.2",
+      "8.1",
+      "8.2",
+      "8.3",
+      "8.4",
+      "8.5",
+      "8.6",
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "precision": "Contrôle de la garde et des parties du fac-similé, résolution de chaque consigne dans les deux éditions, indications par subdivision, figures mathématiques originales et rapprochement avec la notice UPS.",
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "perimetre": "Contrôle de la garde et des parties du fac-similé, résolution de chaque consigne dans les deux éditions, indications par subdivision, figures mathématiques originales et rapprochement avec la notice UPS.",
+      "sha256_sujet_controle": "b21ee84d30d4b0396267c14f6ad5377d19912dd84f2a1b11d0297509423d47d1"
+    }
+  }
+}

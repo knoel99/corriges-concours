@@ -2099,6 +2099,7 @@
 | 1997 | X | PC | Première composition de mathématiques | [md](1997/x/x_pc_premiere-composition-de-mathematiques_1997/brut.md) | [md](1997/x/x_pc_premiere-composition-de-mathematiques_1997/guide.md) |
 | 1997 | X | MP | Deuxième composition de mathématiques | [md](1997/x/x_mp_deuxieme-composition-de-mathematiques_1997/brut.md) | [md](1997/x/x_mp_deuxieme-composition-de-mathematiques_1997/guide.md) |
 | 1998 | X | MP | Première composition de mathématiques | [md](1998/x/x_mp_premiere-composition-de-mathematiques_1998/brut.md) | [md](1998/x/x_mp_premiere-composition-de-mathematiques_1998/guide.md) |
+| 1998 | X-ENS | PSI | Maths PSI | [md](1998/x-ens/x-ens_psi_maths-psi_1998/brut.md) | [md](1998/x-ens/x-ens_psi_maths-psi_1998/guide.md) |
 | 1998 | X | PC | Deuxième composition de mathématiques | [md](1998/x/x_pc_deuxieme-composition-de-mathematiques_1998/brut.md) | [md](1998/x/x_pc_deuxieme-composition-de-mathematiques_1998/guide.md) |
 | 1998 | X | PC | Première composition de mathématiques | [md](1998/x/x_pc_premiere-composition-de-mathematiques_1998/brut.md) | [md](1998/x/x_pc_premiere-composition-de-mathematiques_1998/guide.md) |
 | 1998 | X | MP | Deuxième composition de mathématiques | [md](1998/x/x_mp_deuxieme-composition-de-mathematiques_1998/brut.md) | [md](1998/x/x_mp_deuxieme-composition-de-mathematiques_1998/guide.md) |
