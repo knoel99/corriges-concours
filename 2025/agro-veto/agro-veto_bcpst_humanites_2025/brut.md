@@ -8,7 +8,17 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La dissertation de trois heures porte sur Jean Rostand et les quatre œuvres du programme « Individu et communauté ».
+
+## Sujet
+
+« Il est possible que l’individu trouve son profit et même son aise à se fondre dans la collectivité, mais ce ne serait qu’au détriment de celle-ci. Pour elle, et non pour lui, il doit se défendre contre elle. »
+
+Jean Rostand, *Carnet d’un biologiste*, Éditions Stock, 1959.
+
+En quoi cette affirmation vous permet-elle d’approfondir votre réflexion sur Les Sept contre Thèbes et Les Suppliantes d’Eschyle, le Traité théologico-politique (préface et chapitres XVI à XX) de Spinoza et Le Temps de l’innocence d’Edith Wharton ?
 
 ## Dissertation
 
@@ -24,7 +34,7 @@ Spinoza donne à cette distinction sa formulation institutionnelle. Au chapitre 
 
 ![Trois décisions par lesquelles une voix singulière peut retrouver le commun](figures/jugement.svg)
 
-Que signifierait alors se défendre pour la collectivité ? Il faut que la différence puisse devenir une proposition adressée à ceux dont elle affecte l’existence. Pélasgos pourrait décider seul s’il accepte d’accueillir les Danaïdes. En consultant les Argiens, il reconnaît qu’ils partageront le risque politique de sa décision. Les mains levées dont Danaos rapporte le vote manifestent une unanimité, tout le contraire en apparence d’une défense de l’individu contre le groupe. Mais cette unanimité résulte d’une décision à prendre sous la pression d’une demande extérieure. Les habitantes nouvelles obligent les citoyens à définir ce qu’implique leur devoir envers des suppliantes. Le roi, les femmes réfugiées et le peuple auraient chacun pu se retrancher derrière une nécessité reçue. Leur conduite fait émerger une obligation publique qui n’existait pas sous cette forme auparavant.
+Que signifierait alors se défendre pour la collectivité ? Il faut que la différence puisse devenir une proposition adressée à ceux dont elle affecte l’existence. Les suppliantes lui attribuent l’autorité d’accorder l’asile. Lui refuse de décider d’une affaire qui engage la cité avant d’avoir porté leur demande devant elle. Cette différence de point de vue fait tout le prix de la délibération. On peut entendre l’objection individuelle du roi à la représentation du pouvoir que lui renvoie le groupe des femmes, puis reconnaître que cette objection lui sert à engager publiquement les Argiens qui partageront le risque du choix. Les mains levées dont Danaos rapporte le vote manifestent une unanimité, tout le contraire en apparence d’une défense de l’individu contre le groupe. Mais cette unanimité résulte d’une décision à prendre sous la pression d’une demande extérieure. Les habitantes nouvelles obligent les citoyens à définir ce qu’implique leur devoir envers des suppliantes. Le roi, les femmes réfugiées et le peuple auraient chacun pu se retrancher derrière une nécessité reçue. Leur conduite fait émerger une obligation publique qui n’existait pas sous cette forme auparavant.
 
 Le citoyen de Spinoza qui tient une loi pour déraisonnable peut en présenter les raisons à la puissance souveraine tout en continuant à lui obéir. Le chapitre XX distingue cette discussion d’une prétention à imposer immédiatement sa volonté particulière. La communauté y gagne une épreuve de ses raisons et la possibilité d’une modification. Mais cette initiative individuelle n’est praticable que si les institutions protègent le jugement. Rostand adressait son impératif à un individu. Le *Traité* permet de le retourner aussi vers la collectivité elle-même, qui doit rendre une telle conduite possible. Wharton en élargit le sens au-delà de la délibération publique. Au dernier chapitre, on apprend qu’Archer a contribué à la vie artistique, philanthropique et civique de sa ville. Son jugement particulier devient quelque chose qu’on vient lui demander. Ce résultat ne répare ni son silence au dîner ni les occasions perdues avec Ellen. L’ellipse du roman empêche précisément de ramener une existence au seul choix entre soumission et rupture. Une société dépend aussi des usages patients que ses membres inventent pour leurs aptitudes propres.
 
