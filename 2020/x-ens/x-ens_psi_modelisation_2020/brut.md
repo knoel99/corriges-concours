@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 L’erratum inséré dans le sujet remplace les questions 11 et 12. Les deux questions que le sujet numérote 33 sont repérées ici par 33a pour le flux et 33b pour la conduction.
 
 ## A.1 · Efforts sur le foil
@@ -128,18 +130,19 @@ def dicho(f, psi_i, psi_f, eps):
         return b
     if (fa > 0) == (fb > 0):
         raise ValueError("zéro non encadré")
-    while (b - a) / 2 > eps:
-        m = (a + b) / 2
+    while True:
+        m = a/2 + b/2 if a < 0 < b else a + (b-a)/2
         fm = f(m)
-        if fm == 0 or m == a or m == b:
+        if fm == 0 or max(m-a, b-m) <= eps:
             return m
+        if m == a or m == b:
+            raise ArithmeticError("précision inaccessible entre ces bornes")
         if (fm > 0) == (fa > 0):
             a, fa = m, fm
         else:
             b = m
-    return (a + b) / 2
 ```
-Le demi-intervalle borne l’erreur absolue jusqu’à la précision machine. L’erratum place bien la recherche sur $\psi$, à $\theta$ fixé.
+La solution reste dans l’intervalle. Le programme contrôle la distance du milieu calculé à chacune des bornes. Si deux flottants adjacents empêchent d’atteindre la précision requise, il le signale. L’erratum place bien la recherche sur $\psi$, à $\theta$ fixé.
 
 ### Question 12 · Traction suivant le cap
 
@@ -160,17 +163,21 @@ from math import acos, cos, hypot, sin, sqrt
 def Fi(u, V, mu_a):
     if V <= 0 or u < 0:
         raise ValueError("vitesses hors domaine")
-    r = u / V
-    h = 1 + r*r
-    c = 2*r / (h + hypot(h, sqrt(12)*r))
+    echelle = max(u, V)
+    bateau, vent = u/echelle, V/echelle
+    q = min(bateau, vent)
+    h = 1 + q*q
+    c = 2*q / (h + hypot(h, sqrt(12)*q))
     theta = acos(c)
-    if r == 0:
+    if u == 0:
         return theta
     def g(psi):
-        return sin(theta)*cos(psi) - (r+c)*sin(psi)
+        if psi == theta:
+            return -bateau * sin(theta)
+        return vent*sin(theta)*cos(psi) - (bateau+vent*c)*sin(psi)
     return dicho(g, 0, theta, 1e-10)
 ```
-Pour $r=3$, on trouve $\theta\simeq75{,}8°$, $\psi\simeq16{,}6°$, en accord avec l’ordre de grandeur de la figure 11. Une incidence imposée change le facteur de portance, commun à toutes les allures.
+Pour $r>0$, diviser l’équation du maximum par $r$ donne $3c^2+(r+1/r)c-1=0$. Elle est inchangée en remplaçant $r$ par $1/r$, ce qui permet de calculer $c$ avec $q=\min(r,1/r)\le1$. À la borne $\psi=\theta$, les deux termes en $V\sin\theta\cos\theta$ s’annulent exactement. Le code y utilise directement le terme restant. Pour $r=3$, on trouve $\theta\simeq75{,}8°$, $\psi\simeq16{,}6°$, en accord avec l’ordre de grandeur de la figure 11. Une incidence imposée change le facteur de portance, commun à toutes les allures.
 
 ### Question 14 · Équilibre des résultantes
 
@@ -224,7 +231,7 @@ c&=x_Fa,\qquad d=-x_S b.
 \end{aligned}
 $$
 
-La page 15 imprime $T=-\rho_{\rm air}S_vC_z(\mu_a)W^2/2$, tandis que Q12 donne la projection motrice positive pour l’amure de sa figure. Conserver $T$ signé permet d’appliquer l’un ou l’autre modèle sans inverser arbitrairement le moment. Si l’on conserve les faibles traînées dans les moments, remplacer $c$ par $c-y_F(S_p/2)k_{x1}$ et $d$ par $d-y_S S_{sa}k_{x2}$. Conserver aussi la rotation du bras de voile ajouterait $x_BT\varphi$ au moment au premier ordre. La suite utilise les bras gelés annoncés ici.
+La page 15 imprime $T=-\rho_{\rm air}S_vC_z(\mu_a)W^2/2$, tandis que Q12 donne la projection motrice positive pour l’amure de sa figure. Conserver $T$ signé permet d’appliquer l’un ou l’autre modèle sans inverser arbitrairement le moment. Si l’on conserve les faibles traînées dans les moments, remplacer $c$ par $c-y_F(S_p/2)k_{x1}$ et $d$ par $d-y_S S_{sa}k_{x2}$. La variation des bras se calcule aussi. À l’horizontale, notons $L_{F0}=\rho u^2a\alpha_{a0}$ et $L_{S0}=\rho u^2b\beta_{a0}$ les portances d’équilibre. Après une rotation $\delta$, les abscisses des points $F$ et $S$ deviennent $x_F\cos\delta+y_F\sin\delta$ et $-x_S\cos\delta+y_S\sin\delta$. Au premier ordre, les bras des portances ajoutent donc $(y_FL_{F0}+y_SL_{S0})\delta$ au moment. Le bras vertical de la traction vaut $-x_B\sin\delta+y_B\cos\delta$, d’où la contribution supplémentaire $x_BT\delta$. Le poids a pour bras $x_G\cos\delta$, de dérivée nulle à l’horizontale.
 
 ![Efforts avec traction positive et bras de levier figés à l’assiette horizontale. Les deux portances font tourner le bateau en sens opposés autour de P.](figures/q19-moments.svg)
 
@@ -256,6 +263,14 @@ $$
 F_0=\binom{-mg}{D},\qquad X_0=\rho u^2\binom{a\alpha_{a0}+b\beta_{a0}}{c\alpha_{a0}+d\beta_{a0}}.
 $$
 
+Ces $R_1,R_2$ correspondent aux bras gelés de Q19. Si l’on conserve leur rotation au premier ordre, toujours en négligeant les moments de traînée, $R_1$ reste $a+b$ et il faut remplacer $R_2$ par
+
+$$
+R_{2,\mathrm{rot}}=c+d+\frac{y_F L_{F0}+y_S L_{S0}+x_B T}{\rho u^2}.
+$$
+
+Les constantes $F_0$ et $X_0$ restent celles de l’assiette horizontale. Les termes ajoutés ne sont négligeables que si leur somme est petite devant la raideur de tangage retenue.
+
 Le terme de tangage peut être négatif puisque la portance arrière exerce autour de $P$ un moment opposé à celui de la portance avant.
 
 ### Question 23 · Annuler les termes constants
@@ -284,7 +299,7 @@ $$
 \det(\lambda^2M+K)=m\lambda^2\big[I_G\lambda^2-\rho u^2(R_2+x_G R_1)\big].
 $$
 
-Il existe une valeur propre réelle strictement positive, et donc une instabilité exponentielle, si $R_2+x_G R_1>0$. Avec le signe opposé, les deux racines de tangage sont imaginaires pures. L’égalité est un cas dégénéré. Le critère spectral énoncé dans le sujet classe seulement l’apparition d’une partie réelle positive. Pour la stabilité au sens de bornitude, la racine nulle mérite aussi examen. Ici un mouvement $\delta=0$, $y=y_0+v_0t$ est solution et donne une dérive verticale si $v_0\ne0$.
+Il existe une valeur propre réelle strictement positive, et donc une instabilité exponentielle, si $R_2+x_G R_1>0$. Pour la linéarisation avec rotation des bras, on applique le même critère à $R_{2,\mathrm{rot}}+x_G R_1$. Avec le signe opposé, les deux racines de tangage sont imaginaires pures. L’égalité est un cas dégénéré. Le critère spectral énoncé dans le sujet classe seulement l’apparition d’une partie réelle positive. Pour la stabilité au sens de bornitude, la racine nulle mérite aussi examen. Ici un mouvement $\delta=0$, $y=y_0+v_0t$ est solution et donne une dérive verticale si $v_0\ne0$.
 
 ## B.2 · Circuit magnétique du moteur
 
@@ -309,6 +324,8 @@ Partir de la dent supérieure, longer le stator jusqu’à la dent opposée, tra
 $$
 H_{fs}L_{cmfs}+H_{fr}L_{cmfr}+2eH_e+2aH_a=0.
 $$
+
+![Contour orienté passant par le fer du stator, les deux entrefers, les deux aimants et le fer du rotor. La branche symétrique porte l’autre moitié du flux de dent.](figures/q29-contour-ampere.svg)
 
 Les longueurs de fer sont déjà les longueurs parcourues dans chaque milieu. Les deux aimants magnétisés en sens géométriques opposés contribuent dans le même sens autour de la boucle.
 
