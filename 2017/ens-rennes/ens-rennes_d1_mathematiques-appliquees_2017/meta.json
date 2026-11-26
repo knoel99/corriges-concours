@@ -26,6 +26,11 @@
       "fichier": "figures/courbes-logarithme.svg",
       "question": "3.III.1",
       "legende": "Les courbes se touchent en (1,0), puis atteignent des maxima distincts. La tangente d’inflexion croise C1 en x = exp(3/2)."
+    },
+    {
+      "fichier": "figures/aire-entre-courbes.svg",
+      "question": "3.III.6",
+      "legende": "Aire entre les courbes logarithmiques de 1 à e. La coupe verticale indique la hauteur intégrée."
     }
   ],
   "contributions": [
@@ -39,6 +44,76 @@
       "perimetre": "Rédaction intégrale des deux éditions après lecture du fascicule, pages physiques 3 à 10, et du rapport de jury. Calculs de statistique, deux conventions log-normales, distinction conditionnement et quantile, dérivées, tangentes et aires. Deux figures.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "rennes_d1_mathematiques_2015_2019",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Pointage des 41 questions et sous-questions des deux éditions sur l’énoncé et le rapport. p. 4–5, régression sur les neuf indices, quartiles des 24 pays et intervalle normal ; p. 6–7, sens du conditionnement, risque après exposition et quantiles log-normaux ; p. 8–9, dérivées, tableau, tangentes et figure de la surface entre les courbes."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.A.1",
+      "1.A.2",
+      "1.A.3",
+      "1.A.4",
+      "1.A.5",
+      "1.B.1",
+      "1.B.2",
+      "1.B.3",
+      "1.B.4",
+      "1.B.5.a",
+      "1.B.5.b",
+      "1.B.5.c",
+      "2.I.1",
+      "2.I.2",
+      "2.I.3",
+      "2.I.4",
+      "2.I.5",
+      "2.II.1",
+      "2.II.2",
+      "2.II.3",
+      "2.III.1",
+      "2.III.2",
+      "2.III.3",
+      "2.IV.1",
+      "2.IV.2",
+      "3.I.1",
+      "3.I.2",
+      "3.I.3",
+      "3.I.4",
+      "3.I.5",
+      "3.II.1",
+      "3.II.2",
+      "3.II.3",
+      "3.II.4",
+      "3.II.5",
+      "3.III.1",
+      "3.III.2",
+      "3.III.3",
+      "3.III.4",
+      "3.III.5",
+      "3.III.6"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "controle": [
+      "p. 4–5, régression sur les neuf indices, quartiles des 24 pays et intervalle normal",
+      "p. 6–7, sens du conditionnement, risque après exposition et quantiles log-normaux",
+      "p. 8–9, dérivées, tableau, tangentes et figure de la surface entre les courbes"
+    ]
+  }
 }

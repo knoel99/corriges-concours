@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Les trois exercices étudient des dépenses de santé, des modèles probabilistes et une famille de courbes logarithmiques. Le calcul d’un quantile d’incubation et celui d’une probabilité après contact font appel à des informations différentes.
 
 ## Exercice 1. Emploi dans l’optique et dépenses de santé
@@ -16,7 +18,7 @@ Aux abscisses entières de 1 à 9, placer successivement les valeurs $100,99,101
 
 ### Question 1.A.2
 
-Les rangs ont pour moyenne $5$ et variance $6{,}666667$. Les indices ont pour moyenne $98{,}444444$ et variance $3{,}358025$. La covariance $C_{xy}=\frac19\sum(x_i-\bar x)(y_i-\bar y)=-3{,}777778$, donc $r=C_{xy}/\sqrt{V_xV_y}\simeq-0{,}798$. Un ajustement affine décrit la tendance décroissante, avec une dispersion visible. Il explique environ $r^2=0{,}637$ de la variance observée.
+Les rangs ont pour moyenne $5$ et variance $6{,}666667$. Les indices ont pour moyenne $98{,}444444$ et variance $3{,}358025$. La covariance $C_{xy}=\frac19\sum(x_i-\bar x)(y_i-\bar y)=-3{,}777778$, donc $r=C_{xy}/\sqrt{V_xV_y}\simeq-0{,}798$. Un ajustement affine décrit la tendance décroissante, avec une dispersion visible. Il explique $r^2=0{,}6375$, soit $63{,}75\,\%$ de la variance observée.
 
 ### Question 1.A.3
 
@@ -114,6 +116,8 @@ Parmi les personnes contaminées, le temps auquel $99\,\%$ ont déclaré leurs s
 
 L’énoncé demande aussi d’inverser le conditionnement pour une personne exposée. Le risque initial $p=P(C\mid\text{contact})$ est nécessaire. Si les non-contaminés restent sans ces symptômes et si $F$ est la fonction de répartition de l’incubation chez les contaminés, alors $P(\bar C\mid\text{aucun symptôme à }t)=(1-p)/[(1-p)+p(1-F(t))]$. Cette probabilité est au moins $0{,}99$ quand $p(1-F(t))\le(1-p)/99$. Le texte ne fixe pas le risque après ce contact. Le quantile d’incubation seul ne détermine donc pas cette probabilité inverse.
 
+Le rôle du risque initial peut être vérifié numériquement. À titre d’exemple, en ajoutant l’hypothèse $p=0{,}02$ après le contact, on obtient $F(t)\ge 1-0{,}98/(99\times0{,}02)\simeq0{,}50505$. Sous la lecture littérale des moments, le seuil correspondant vaut $\exp(\mu+s\Phi^{-1}(0{,}50505))\simeq4{,}828$ jours, donc cinq jours entiers. Si $p=1/2$, le même calcul exige $F(t)\ge98/99$. La prévalence donnée pour la population de la partie I ne fixe pas $p$ pour la personne exposée en partie IV.
+
 ## Exercice 3. Fonctions logarithmiques et tangentes
 
 ### Question 3.I.1
@@ -127,6 +131,11 @@ Pour $x>0$ ces deux fonctions sont dérivables. On a $f'_n(x)=x^{-n-1}-n(\ln x)x
 ### Question 3.I.3
 
 De $0^+$ à $\alpha_n$, $f_n$ croît strictement de $-\infty$ à $1/(ne)$. De $\alpha_n$ à $+\infty$, elle décroît strictement vers zéro, d’après les limites admises.
+
+| $x$ | $0^+$ |  | $e^{1/n}$ |  | $+\infty$ |
+| --- | --- | --- | --- | --- | --- |
+| $f_n'(x)$ |  | $+$ | $0$ | $-$ |  |
+| $f_n(x)$ | $-\infty$ | $\nearrow$ | $1/(ne)$ | $\searrow$ | $0$ |
 
 ### Question 3.I.4
 
@@ -181,3 +190,7 @@ $\int_1^e(\ln x)/x\,dx=[(\ln x)^2/2]_1^e=1/2$.
 ### Question 3.III.6
 
 Sur $[1,e]$ on a $f_1\ge f_2$. L’aire entre les courbes est $1/2-(1-2/e)=2/e-1/2\simeq0{,}236$ unité d’aire, soit $16(2/e-1/2)\simeq3{,}772$ cm² à l’échelle du dessin.
+
+La largeur d’une tranche verticale est $dx$ et sa hauteur est $f_1(x)-f_2(x)=(x-1)\ln(x)/x^2$. Ce terme s’annule au bord gauche. Au bord droit, la verticale $x=e$ ferme la région entre les deux ordonnées $1/e$ et $1/e^2$.
+
+![Figure 3 — Aire entre les courbes logarithmiques de 1 à e. La coupe verticale indique la hauteur intégrée.](figures/aire-entre-courbes.svg)
