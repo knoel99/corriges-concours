@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le cahier C1583 comporte quatre exercices sans calculatrice. Ils portent sur une fonction définie par morceaux, une somme binomiale, une répartition de pertes et la linéarité de la moyenne.
 
 ## Exercice 1. Fonction à seuil
@@ -43,6 +45,14 @@ Pour $x<0$, $f'(x)=0$. Pour $x>0$, le produit donne $f'(x)=(1-x)e^{-x}$. En zér
 #### Solution
 
 La fonction est constante de valeur 0 sur $]-\infty,0]$, puis strictement croissante de 0 à $f(1)=1/e$ sur $[0,1]$ et strictement décroissante sur $[1,+\infty[$. Sa limite à droite est 0 car l’exponentielle domine $x$. Son maximum est $1/e$, atteint seulement en 1.
+
+| Intervalle de $x$ | Signe de la dérivée à l’intérieur | Variation de $f$ |
+|---|---|---|
+| $]-\infty,0]$ | $0$ | constante, égale à $0$ |
+| $[0,1]$ | positif | de $0$ à $1/e$ |
+| $[1,+\infty[$ | négatif | de $1/e$ vers $0$ |
+
+Au raccord $0$, la fonction est continue et possède deux demi-tangentes. En $1$, sa dérivée s’annule.
 
 ### Question 1.5
 
@@ -85,7 +95,7 @@ Soit $D$ le défaut. Les probabilités conjointes $P(F_i\cap D)$ valent $0{,}30\
 | F2 | $31500/23$ | 1 369,56 € |
 | F3 | $94500/23$ | 4 108,70 € |
 
-Les deux centimes au-delà des montants tronqués vont aux plus grands restes. Si les valeurs moyennes varient selon l’origine, il faudrait les connaître pour répartir une perte monétaire proportionnellement aux valeurs.
+Les deux centimes au-delà des montants tronqués vont aux plus grands restes. Si la valeur moyenne d’un article défectueux du fournisseur $i$ est $v_i$, les pertes attendues des trois origines sont proportionnelles à $3v_1$, $5v_2$ et $15v_3$. Ainsi, la part du premier fournisseur vaudrait $6300\times 3v_1/(3v_1+5v_2+15v_3)$ euros. Le calcul du tableau correspond à des valeurs moyennes identiques.
 
 ## Exercice 4. Moyenne d’une variable multipliée par une constante
 

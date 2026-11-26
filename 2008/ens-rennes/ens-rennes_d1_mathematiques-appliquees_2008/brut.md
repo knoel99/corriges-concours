@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Les deux entreprises emploient chacune 400 salariés. Les estimations issues des classes sont distinguées des observations individuelles du second tableau. Les fonctions et le protocole de tirage sont étudiés sur leurs domaines effectifs.
 
 ## Exercice 1. Statistiques descriptives des salaires
@@ -83,7 +85,13 @@ Les 13 points forment des colonnes aux abscisses 0 à 4. Dans ces données les s
 
 ### Question 1.II.2
 
-Avec $N$ le nombre d’années et $W$ le salaire, $\bar N\simeq2{,}07692$, $\bar W\simeq1826{,}84615$ euros. Les variances avec diviseur 13 valent $V_N\simeq1{,}91716$ et $V_W\simeq443940{,}74556$. La covariance $\sum N_iW_i/13-\bar N\bar W\simeq867{,}70414$.
+Les 13 couples imprimés page 6 donnent les totaux suivants.
+
+| $\sum N$ | $\sum W$ | $\sum N^2$ | $\sum W^2$ | $\sum NW$ |
+|---:|---:|---:|---:|---:|
+| 27 | 23 749 | 81 | 49 156 999 | 60 605 |
+
+Le calcul sur les observations utilise, par exemple, $V_N=81/13-(27/13)^2$ et $C_{NW}=60605/13-(27/13)(23749/13)$. Avec $N$ le nombre d’années et $W$ le salaire, $\bar N\simeq2{,}07692$, $\bar W\simeq1826{,}84615$ euros. Les variances avec diviseur 13 valent $V_N\simeq1{,}91716$ et $V_W\simeq443940{,}74556$. La covariance $\sum N_iW_i/13-\bar N\bar W\simeq867{,}70414$.
 
 ### Question 1.II.3
 
@@ -125,7 +133,7 @@ Avec $f(x)=x^{2\alpha}$ pour $x>0$, on a $f(\delta x)/f(x)=\delta^{2\alpha}$. Ce
 
 ### Question 2.II.3
 
-Pour $x>0$, $f(x)=-x^3+2x^2+4x$ a pour dérivée $-3x^2+4x+4=-3(x-2)(x+2/3)$. La fonction croît strictement jusqu’à $x=2$, sa dérivée est positive pour $0<x<2$ et nulle en 2. La différence $f'(x)-f(x)/x=-2x^2+2x=2x(1-x)$ est négative exactement pour $x>1$. Les rendements locaux décroissants sur la plage croissante correspondent donc à $1<x\le2$, ou $1<x<2$ si l’on impose une dérivée strictement positive.
+Pour $x>0$, $f(x)=-x^3+2x^2+4x$ a pour dérivée $-3x^2+4x+4=-3(x-2)(x+2/3)$. La fonction croît strictement jusqu’à $x=2$, sa dérivée est positive pour $0<x<2$ et nulle en 2. La différence $f'(x)-f(x)/x=-2x^2+2x=2x(1-x)$ est négative exactement pour $x>1$. Les rendements locaux décroissants sur la plage croissante correspondent donc à $1<x\le2$, ou $1<x<2$ si l’on impose une dérivée strictement positive. Pour interpréter ces deux seuils, la productivité moyenne vaut $f(x)/x=-x^2+2x+4$. Elle atteint son maximum en $1$ puis diminue. À $x=1{,}5$, une unité de facteur produit en moyenne $4{,}75$ unités de bien et la productivité marginale vaut $3{,}25$. Une petite hausse de la quantité de facteur accroît donc encore la production totale tout en abaissant la production par unité de facteur.
 
 ## Exercice 3. Dérivation et extrema
 

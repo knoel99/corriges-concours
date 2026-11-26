@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le cahier C1783 réunit une limite par morceaux, une somme télescopique, un mélange de salaires et une inégalité de moyennes. La quatrième question est résolue en tenant compte de l’hypothèse manquante sur les exposants.
 
 ## Exercice 1. Une limite de fractions rationnelles
@@ -53,11 +55,11 @@ Posons $a_k=1/(k!k)$. Le terme d’indice $k$ vaut $a_k-a_{k+1}$. En sommant de 
 ### Question 3.a
 
 > [!INDICATION]
-> Standardiser dans le groupe des syndiqués.
+> Standardiser dans le groupe des syndiqués. La table donne la probabilité à gauche du seuil. Repérer les cellules 1,13 et 1,14 avant de prendre la probabilité complémentaire.
 
 #### Solution
 
-Soit $S$ l’événement « syndiqué » et $H$ l’événement « salaire au moins égal à 40 000 ». Si $\Phi$ est la fonction de répartition normale standard, $P(H\mid S)=1-\Phi((40000-35123)/4287)\simeq1-\Phi(1{,}13763)\simeq0{,}12764$.
+Soit $S$ l’événement « syndiqué » et $H$ l’événement « salaire au moins égal à 40 000 ». Les symboles monétaires du feuillet varient. Les moyennes, les écarts-types et le seuil sont ici exprimés dans une même unité, conformément aux montants en euros des questions a à c. Si $\Phi$ est la fonction de répartition normale standard, $P(H\mid S)=1-\Phi((40000-35123)/4287)\simeq1-\Phi(1{,}13763)\simeq0{,}12764$.
 
 ### Question 3.b
 
@@ -66,7 +68,7 @@ Soit $S$ l’événement « syndiqué » et $H$ l’événement « salaire au mo
 
 #### Solution
 
-$P(H\mid S^c)=1-\Phi((40000-51325)/8012)=\Phi(1{,}41350)\simeq0{,}92125$, par symétrie de la loi normale.
+Sur la table jointe, $\Phi(1{,}41)=0{,}9207$ et $\Phi(1{,}42)=0{,}9222$. Leur interpolation au rang $1{,}4135$ donne environ $0{,}9212$. En utilisant la loi normale sans arrondir le seuil réduit, on trouve $P(H\mid S^c)=1-\Phi((40000-51325)/8012)=\Phi(1{,}41350)\simeq0{,}92125$, par symétrie de la loi normale.
 
 ### Question 3.c
 
@@ -84,7 +86,7 @@ Par probabilités totales, $P(H)=0{,}9P(H\mid S)+0{,}1P(H\mid S^c)\simeq0{,}2070
 
 #### Solution
 
-Par Bayes, $P(S\mid H^c)=0{,}9[1-P(H\mid S)]/[1-P(H)]\simeq0{,}99007$. Environ 99,01 % des employés sous le seuil sont syndiqués dans ce modèle.
+Par Bayes, $P(S\mid H^c)=0{,}9[1-P(H\mid S)]/[1-P(H)]\simeq0{,}99007$. Environ 99,01 % des employés sous le seuil sont syndiqués dans ce modèle. On peut contrôler le résultat sur 10 000 employés fictifs. Sur 9 000 syndiqués, environ 7 851 ont un salaire inférieur au seuil. Sur 1 000 non-syndiqués, environ 79 gagnent également moins que le seuil. La proportion cherchée est donc voisine de $7851/(7851+79)$.
 
 ## Exercice 4. Une inégalité à condition de conjugaison
 

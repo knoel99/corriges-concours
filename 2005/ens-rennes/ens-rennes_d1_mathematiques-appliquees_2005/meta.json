@@ -31,6 +31,53 @@
       "perimetre": "Rédaction intégrale des quatre exercices du cahier C1583 lus sur la page scannée. Contrôle des dérivées latérales, de la somme au rang 1 et du partage au centime. Figure originale du raccord et du maximum.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Feuillet C1583, quatre exercices sur une page. Le tableau de variations demandé en 1.4 et les pondérations des valeurs défectueuses en 3 ont été explicités.",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "agent": "rennes_oraux_economie",
+      "session": "rennes_oraux_economie"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "2.1",
+      "3",
+      "4"
+    ],
+    "origine_attestation": {
+      "commit_du_journal": "935d5ea615e667904cdf7156fe3b14ec4e7024dc",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction intégrale des quatre exercices du cahier C1583 lus sur la page scannée. Contrôle des dérivées latérales, de la somme au rang 1 et du partage au centime. Figure originale du raccord et du maximum.",
+      "sha256_sujet_controle": "6e722c986780682109dc35cd612f69dd9f54c1674c5c472c52b1da9d33b0e220"
+    },
+    "pages_pdf_des_questions": {
+      "1.1": 4,
+      "1.2": 4,
+      "1.3": 4,
+      "1.4": 4,
+      "1.5": 4,
+      "2.1": 4,
+      "3": 4,
+      "4": 4
+    },
+    "precision": "Feuillet C1583, quatre exercices sur une page. Le tableau de variations demandé en 1.4 et les pondérations des valeurs défectueuses en 3 ont été explicités."
+  }
 }
