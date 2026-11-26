@@ -148,7 +148,7 @@ Prenons $V=\mathbb C[X,Y]/(X^2,Y^2)$ avec la base $(1,X,Y,XY)$ et $u,v$ les mult
 
 Dans l’ordre $(XY,Y,X,1)$, en notant $E_{ij}$ la matrice élémentaire, les multiplications ont pour matrices $U=E_{12}+E_{34}$ et $V=E_{13}+E_{24}$. Ainsi $UV=VU=E_{14}$. Les trois supports de $U,V,UV$ sont disjoints, ce qui vérifie aussi leur indépendance directement sur les matrices.
 
-![Figure 3 — Les deux chemins qui partent de 1 donnent le même monôme XY. Les autres produits par X ou Y se lisent en annulant les carrés.](figures/multiplications-commutantes.svg)
+![Figure 2 — Les deux chemins qui partent de 1 donnent le même monôme XY. Les autres produits par X ou Y se lisent en annulant les carrés.](figures/multiplications-commutantes.svg)
 
 ## II.D. Partitions et dominance
 
@@ -210,4 +210,4 @@ D.4 permet de continuer en restant sous $\lambda$ jusqu’à l’atteindre, car 
 $$\overline{\mathcal N_\lambda}=\bigcup_{\mu\le\lambda}\mathcal N_\mu.$$
 La flèche supplémentaire part de la dernière case de la petite chaîne. Son point d’arrivée explique pourquoi le cas des tailles inégales fonctionne aussi.
 
-![Figure 2 — Pour a = 5 et b = 3, la flèche de poids t donne des blocs de tailles 6 et 2 si t est non nul. En l’annulant on retrouve les tailles 5 et 3.](figures/degenerescence-de-deux-chaines.svg)
+![Figure 3 — Pour a = 5 et b = 3, la flèche de poids t donne des blocs de tailles 6 et 2 si t est non nul. En l’annulant on retrouve les tailles 5 et 3.](figures/degenerescence-de-deux-chaines.svg)
