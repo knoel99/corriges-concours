@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 L’équation de Stein relie des espérances de fonctions tests à la loi gaussienne. Le problème l’utilise pour mesurer l’erreur d’approximation des sommes indépendantes bornées, puis obtient des bornes exponentielles pour leurs grandes déviations.
 
 ## I. Équation de Stein pour la gaussienne
@@ -273,3 +275,5 @@ $$
 \mathbb E e^{tX_i}\le 1+\frac{e^{tM}-1-tM}{M^2}\le\exp\left(\frac{e^{tM}-1-tM}{M^2}\right).
 $$
 Markov et l’indépendance donnent une borne d’exposant $n[(e^{tM}-1-tM)/M^2-t\delta]$. Cette fonction convexe est minimale pour $t=\ln(1+M\delta)/M$, d’où $\exp[-n\Phi(M\delta)/M^2]$. La borne de Bennett conserve la variance un et peut améliorer IV.2. Les deux bornes sont valides et l’on peut retenir leur minimum : pour $M=1$, par exemple, $\Phi(\delta)<\delta^2/2$ pour $\delta>0$ puisque $\ln(1+\delta)<\delta$.
+
+La fonction de l’énoncé est $\Phi(s)=(1+s)\ln(1+s)-s$. Par exemple, pour $M=2$ et $\delta=1/4$, Bennett donne l’exposant $-n\Phi(1/2)/4$, soit environ $-0{,}02705n$, tandis que IV.2 donne $-n/128$. Ici la borne de Bennett est donc strictement plus petite.

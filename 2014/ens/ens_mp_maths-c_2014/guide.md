@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Minima de Minkowski en dimension deux.** On note $\lambda_1,\lambda_2$ les deux plus petites longueurs nécessaires pour trouver deux vecteurs entiers indépendants, dans la norme associée à $M$. Les moyennes angulaires sont normalisées par la longueur de leur intervalle.
 
 ## A.I. Norme associée à une matrice positive
@@ -414,6 +416,8 @@ Choisir une base propre orthonormée directe, quitte à changer le signe d’un 
 #### Solution
 
 Pour chaque angle, A.II.3 place les minima entre $\mu_1$ et $\mu_2$, ici 1 et 100. Leurs **moyennes** sont chacune de l’ordre de $\sqrt{\mu_1\mu_2}=10$, avec des constantes universelles. Aux angles extrêmes de la figure, les axes propres sont alignés avec le réseau et les valeurs 1 et 100 sont réalisées. Des pics du second minimum accompagnent des creux du premier, en accord avec le contrôle ponctuel du produit à l’échelle $\mu_1\mu_2=100$. Le graphique est en ordonnées logarithmiques.
+
+À l’angle $\pi/4$, la forme quadratique sur $(m,n)$ s’écrit $\big((m-n)^2+10^4(m+n)^2\big)/2$. Le vecteur $(1,-1)$ donne $\lambda_1=\sqrt2$. Tout vecteur indépendant a $m+n\ne0$. Si $|m+n|=1$, alors $m-n$ est impair et la plus petite norme au carré est $10001/2$, atteinte en $(1,0)$. Pour $|m+n|\ge2$, elle est encore plus grande. Ainsi $\lambda_2=\sqrt{10001/2}$, ce qui explique le pic visible au milieu de l’intervalle $[0,\pi/2]$.
 
 ![Figure 1 — Minima calculés par réduction du réseau lorsque les valeurs propres de M sont 1 et 10 000. La ligne horizontale repère l’échelle 10.](figures/minima-selon-angle.svg)
 

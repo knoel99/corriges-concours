@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Rotations et théorème H de Boltzmann.** La collision du sujet fait tourner un couple de vitesses dans le plan. On caractérise les produits invariants, on construit une solution locale et on détermine les cas d’égalité dans la dissipation de l’entropie.
 
 ## I. Invariance par rotation dans le cas dérivable
@@ -253,6 +255,8 @@ $$I'=\tfrac14\int_*(B-A)\big(\phi(x)+\phi(y)-\phi(x')-\phi(y')\big).$$
 #### Solution
 
 Avec $\phi=1$, la parenthèse de V.2 est nulle. La masse est donc constante sur $[0,T]$, égale à $m=\int_{\mathbb R} f_{\rm in}(x)\,dx$, finie et positive.
+
+Le même calcul contrôle directement la rotation de la figure : pour $\phi(x)=x^2$, les quatre termes dans la parenthèse de V.2 ont pour somme $x^2+y^2-(x^{\prime})^2-(y^{\prime})^2=0$. L’énergie $\int x^2 f(t,x)\,dx$ est donc constante elle aussi. La domination gaussienne justifie ce second choix de fonction test.
 
 ### Question V.3.ii
 

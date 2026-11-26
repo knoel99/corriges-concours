@@ -11,7 +11,14 @@
   "sources": {
     "sujet": "https://www.ens.psl.eu/IMG/file/concours/2015/MPI/sujets/sujet_mpi_mathc2015.pdf",
     "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2015/MPI/rapports/15_mp_rap_emathc.pdf",
-    "sha256_sujet": "cf9509ba0d55d816d1be1fd833b058897051f4d12d5106f70ee0fa9301b9bec9"
+    "sha256_sujet": "cf9509ba0d55d816d1be1fd833b058897051f4d12d5106f70ee0fa9301b9bec9",
+    "index_banque": "https://www.ens.psl.eu/rapports-et-sujets-mpi-2015",
+    "index_banque_sha256": "0faf3f83fbfcd1f8311ee2d49b36ba7fac0226c6b6a96d1f50c89c484cc83eba",
+    "rapport": "https://www.ens.psl.eu/IMG/file/concours/2015/MPI/rapports/15_mp_rap_emathc.pdf",
+    "sujet_sha256": "cf9509ba0d55d816d1be1fd833b058897051f4d12d5106f70ee0fa9301b9bec9",
+    "sujet_pages": 4,
+    "rapport_sha256": "b3f2fff0ec54f850eeb70a1a07e947e191529fd0473c458172c2f40013e8c0b5",
+    "rapport_pages": 3
   },
   "figures": [
     {
@@ -31,6 +38,59 @@
       "perimetre": "Rédaction des deux éditions sur le sujet de quatre pages et le rapport du jury. Constantes explicites de Stein, troncature uniforme, contrôle du troisième moment par la variance, lissage de l’indicatrice et comparaison des bornes de concentration.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Comparaison des 26 subdivisions du sujet et du rapport. Vérification des constantes explicites dans l’équation de Stein, des majorants uniformes servant à la troncature et au lissage, des vitesses aux échelles centrale et déviée, et de l’optimisation du majorant de Bennett.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1a",
+      "I.1b",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "II.1",
+      "II.2",
+      "II.3a",
+      "II.3b",
+      "II.3c",
+      "II.3d",
+      "II.3e",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "IV.1a",
+      "IV.1b",
+      "IV.2",
+      "IV.3",
+      "IV.4a",
+      "IV.4b"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "precision": "Comparaison des 26 subdivisions du sujet et du rapport. Vérification des constantes explicites dans l’équation de Stein, des majorants uniformes servant à la troncature et au lissage, des vitesses aux échelles centrale et déviée, et de l’optimisation du majorant de Bennett.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "relecture_corrige",
+      "perimetre": "Comparaison des 26 subdivisions du sujet et du rapport. Vérification des constantes explicites dans l’équation de Stein, des majorants uniformes servant à la troncature et au lissage, des vitesses aux échelles centrale et déviée, et de l’optimisation du majorant de Bennett.",
+      "sha256_sujet_controle": "cf9509ba0d55d816d1be1fd833b058897051f4d12d5106f70ee0fa9301b9bec9",
+      "sha256_rapport_controle": "b3f2fff0ec54f850eeb70a1a07e947e191529fd0473c458172c2f40013e8c0b5"
+    }
+  }
 }
