@@ -1100,6 +1100,7 @@
 | 2026 | ENS Rennes | D-E | Espagnol | [md](2026/ens-rennes/ens-rennes_d-e_espagnol_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_espagnol_2026/guide.md) |
 | 2026 | ENS Rennes | D-E | Espagnol (oral) | [md](2026/ens-rennes/ens-rennes_d-e_espagnol-oral_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_espagnol-oral_2026/guide.md) |
 | 2026 | ENS Rennes | D-E | Italien | [md](2026/ens-rennes/ens-rennes_d-e_italien_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_italien_2026/guide.md) |
+| 1997 | ENS | Groupes C/S, M et I | Informatique | [md](1997/ens/ens_groupes-c-s-m-et-i_informatique_1997/brut.md) | [md](1997/ens/ens_groupes-c-s-m-et-i_informatique_1997/guide.md) |
 | 1998 | ENS | Groupes C/S, M et I | Informatique | [md](1998/ens/ens_groupes-c-s-m-et-i_informatique_1998/brut.md) | [md](1998/ens/ens_groupes-c-s-m-et-i_informatique_1998/guide.md) |
 | 2026 | ENS | BCPST | Allemand | [md](2026/ens/ens_bcpst_allemand_2026/brut.md) | [md](2026/ens/ens_bcpst_allemand_2026/guide.md) |
 | 2026 | ENS | BCPST | Anglais | [md](2026/ens/ens_bcpst_anglais_2026/brut.md) | [md](2026/ens/ens_bcpst_anglais_2026/guide.md) |
@@ -1749,6 +1750,7 @@
 | 2015 | X-ENS | PSI | Physique PSI | [md](2015/x-ens/x-ens_psi_physique-psi_2015/brut.md) | [md](2015/x-ens/x-ens_psi_physique-psi_2015/guide.md) |
 | 2016 | X-ENS | PSI | Physique PSI | [md](2016/x-ens/x-ens_psi_physique-psi_2016/brut.md) | [md](2016/x-ens/x-ens_psi_physique-psi_2016/guide.md) |
 | 2017 | X-ENS | PSI | Physique PSI | [md](2017/x-ens/x-ens_psi_physique-psi_2017/brut.md) | [md](2017/x-ens/x-ens_psi_physique-psi_2017/guide.md) |
+| 2018 | X-ENS | PSI | Physique PSI | [md](2018/x-ens/x-ens_psi_physique-psi_2018/brut.md) | [md](2018/x-ens/x-ens_psi_physique-psi_2018/guide.md) |
 | 2019 | X-ENS | PSI | Physique PSI | [md](2019/x-ens/x-ens_psi_physique-psi_2019/brut.md) | [md](2019/x-ens/x-ens_psi_physique-psi_2019/guide.md) |
 | 2020 | X-ENS | PSI | Physique PSI | [md](2020/x-ens/x-ens_psi_physique-psi_2020/brut.md) | [md](2020/x-ens/x-ens_psi_physique-psi_2020/guide.md) |
 | 2021 | X-ENS | PSI | Physique PSI | [md](2021/x-ens/x-ens_psi_physique-psi_2021/brut.md) | [md](2021/x-ens/x-ens_psi_physique-psi_2021/guide.md) |
