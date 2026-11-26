@@ -17,7 +17,17 @@
   "sources": {
     "sujet": "https://www.ens-lyon.fr/sites/default/files/2019-10/2019%20Commentaire%20et%20traduction%20en%20LVE.pdf#page=8",
     "sujet_sha256": "2bd23d0dbb0cf0decbef400bf4f915dcdf3e0ee739454679f39f79836660887c",
-    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2019-10/ESPAGNOL_2019_0.pdf#page=1"
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2019-10/ESPAGNOL_2019_0.pdf#page=1",
+    "sha256_rapport_jury": "3f815d06b3b60777fbd6f58e7ec230b396282ae566d39d166e840561f2e97193",
+    "pages_rapport_verifiees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "ouvrage": "Ángeles Mastretta, Arráncame la vida, édition datée de 1987 par le sujet."
   },
   "figures": [
     {
@@ -26,7 +36,7 @@
       "legende": "Qui règle les gestes de la cérémonie ?"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -37,6 +47,23 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Commentaire espagnol de l’ensemble de l’extrait d’Arráncame la vida et traduction française de l’ouverture jusqu’à la première question d’Andrés, distinction du fantasme, de l’acte civil et de la scène à table, schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "lyon_ses_sources",
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture des deux éditions sur le feuillet et le rapport du jury. Souhait contrefactuel, habitudes quotidiennes, changement de voix dans la scène du mariage civil et redoublement pronominal final."
     }
   ],
   "droits_sources": {
@@ -44,5 +71,28 @@
       "L’épreuve porte sur Arráncame la vida d’Ángeles Mastretta, dans l’édition datée de 1987 par le sujet. Le commentaire examine toute la scène. La version commence à la première phrase et s’arrête lorsque Andrés demande si les parents de Catalina sont là."
     ],
     "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire",
+      "Version française"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Commentaire",
+        "page_pdf": 8,
+        "page_pdf_fin": 9,
+        "perimetre": "Lignes 1–87, du mariage religieux rêvé au dernier avertissement d’Andrés à don Marcos, avec le retour anticipé sur le mariage de Lilia et la coupure imprimée."
+      },
+      {
+        "question": "Version française",
+        "page_pdf": 8,
+        "page_pdf_fin": 8,
+        "perimetre": "Lignes 1–21, de « A veces todavía tengo nostalgia » à la question « ¿Están tus papás? » et à son incise « preguntó ». La réponse qui suit est hors passage."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
   }
 }
