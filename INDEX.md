@@ -2176,6 +2176,7 @@
 | 2021 | X-ENS | PC | Physique B | [md](2021/x-ens/x-ens_pc_physique-b_2021/brut.md) | [md](2021/x-ens/x-ens_pc_physique-b_2021/guide.md) |
 | 2022 | X-ENS | PC | Physique B | [md](2022/x-ens/x-ens_pc_physique-b_2022/brut.md) | [md](2022/x-ens/x-ens_pc_physique-b_2022/guide.md) |
 | 2026 | X-ENS | PC | Physique B | [md](2026/x-ens/x-ens_pc_physique-b_2026/brut.md) | [md](2026/x-ens/x-ens_pc_physique-b_2026/guide.md) |
+| 2020 | X-ENS | PSI | Maths PSI | [md](2020/x-ens/x-ens_psi_maths-psi_2020/brut.md) | [md](2020/x-ens/x-ens_psi_maths-psi_2020/guide.md) |
 | 2023 | X-ENS | PSI | Maths PSI | [md](2023/x-ens/x-ens_psi_maths-psi_2023/brut.md) | [md](2023/x-ens/x-ens_psi_maths-psi_2023/guide.md) |
 | 2025 | X-ENS | PSI | Maths PSI | [md](2025/x-ens/x-ens_psi_maths-psi_2025/brut.md) | [md](2025/x-ens/x-ens_psi_maths-psi_2025/guide.md) |
 | 2026 | X-ENS | PSI | Maths PSI | [md](2026/x-ens/x-ens_psi_maths-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_maths-psi_2026/guide.md) |
