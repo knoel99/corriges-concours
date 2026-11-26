@@ -1,0 +1,146 @@
+{
+  "slug": "bel_al_anglais-theme-lyon_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Anglais (thème Lyon)",
+    "annee": 2024,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "duree_heures": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2024-11/Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=11",
+    "sujet_sha256": "cbf76039969ec8cec685a228168381915bdc7b64ae30b2cbee576b3a4f1eeb56",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2024-11/Anglais%202024%20OK.pdf#page=29",
+    "rapport_jury_sha256": "3a9cdeca6086608c76bb0dca634f27ef4304bf4cb3b9bf37cb968fe8fda023a8",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2024",
+    "ouvrage": "Marguerite Yourcenar, *Mémoires d’Hadrien* (1951).",
+    "provenance": "La garde rattache l’anglais à Paris-Saclay, en plus des écoles communes à cette épreuve.",
+    "pages_rapport_verifiees": [
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ]
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2024-11/Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=11",
+      "sha256": "cbf76039969ec8cec685a228168381915bdc7b64ae30b2cbee576b3a4f1eeb56",
+      "pages": 20,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "467f29e0ec3180170f83906b396898332e097600bd045b203d322734b30ba14a"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "8792f553de5cddb862b1610114caf646f31cce12b7629be38076e505305ad7a8"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "0582d24ff4517d4882b8006a1b6a02e2ee25bb9e7e2b0b683bffc2ff53533468"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2024-11/Anglais%202024%20OK.pdf#page=29",
+      "sha256": "3a9cdeca6086608c76bb0dca634f27ef4304bf4cb3b9bf37cb968fe8fda023a8",
+      "pages": 65,
+      "pages_verifiees": [
+        {
+          "numero": 29,
+          "rendu_sha256": "67fb6a203befd628dadd0a15e1e33ae7175618b12a0031f40ffa4c3236fd17f3"
+        },
+        {
+          "numero": 30,
+          "rendu_sha256": "8d21338bb929234bd5a4f9b39bac5602e8beb8e1a72915498368c302a8e181ff"
+        },
+        {
+          "numero": 31,
+          "rendu_sha256": "6fab497d2f1a3d1893f2962d2bcb5ab048dd50b60260a234e576a93c11175daa"
+        },
+        {
+          "numero": 32,
+          "rendu_sha256": "9bada8728081e816e3d063d2169a3fb64da6664067878b646c4e262fdf461b5e"
+        },
+        {
+          "numero": 33,
+          "rendu_sha256": "e2d31107ee086834ec545b713ca32cf856285a2f1379fec38f0fbfdf0a799d05"
+        },
+        {
+          "numero": 34,
+          "rendu_sha256": "0c8f2affc268a9db16e2a2e72165920d394bb4186ad26bf55d052a2b51e96a65"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "Proposition de thème",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "Deux circonstances s’intercalent entre la coupe et le verbe qui nomme son effet. La branche hivernale développe la sensation du vin qui circule."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Traduction originale complète, schéma et guide consacré aux difficultés de syntaxe, d’aspect, de lexique et de voix du passage."
+    },
+    {
+      "phase": "revision",
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle du feuillet numérisé, de l’orthographe Apicius, des habitudes passées, de la pluralité des expériences et du verbe principal de la dernière période."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Marguerite Yourcenar, *Mémoires d’Hadrien* (1951)."
+    ],
+    "note": "Traduction pédagogique originale. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Proposition de thème"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Proposition de thème",
+        "page_pdf": 11,
+        "feuillet_imprime": 11,
+        "perimetre": "Du souvenir des repas officiels de Rome au jugement sur la coupe de Samos, avec la marque de coupure finale."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}
