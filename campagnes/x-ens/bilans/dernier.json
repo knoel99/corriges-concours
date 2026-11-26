@@ -1,54 +1,54 @@
 {
-  "date": "2026-11-26T12:18:58+01:00",
-  "revision": "a499ebfdf404f1e4099b8a2860d27929aa9d12e6",
+  "date": "2026-11-26T12:27:26+01:00",
+  "revision": "4079ea0b9f3abf53ed1e61dd6468152d6b3733fa",
   "fichier": "2026-11-26.tsv",
   "perimetres": [
     {
       "nom": "Toutes les épreuves",
       "recenses": 2008,
-      "paires": 1866,
-      "complets": 780,
+      "paires": 1870,
+      "complets": 806,
       "production": 58,
       "partiels": 133,
       "partiels_production": 18,
-      "schemas": 1956,
-      "a_confirmer": 953,
-      "a_confirmer_production": 295
+      "schemas": 2001,
+      "a_confirmer": 931,
+      "a_confirmer_production": 284
     },
     {
       "nom": "Écrits, toutes sessions",
       "recenses": 1599,
-      "paires": 1540,
-      "complets": 681,
+      "paires": 1543,
+      "complets": 699,
       "production": 50,
       "partiels": 75,
       "partiels_production": 17,
-      "schemas": 1678,
-      "a_confirmer": 784,
-      "a_confirmer_production": 290
+      "schemas": 1710,
+      "a_confirmer": 769,
+      "a_confirmer_production": 279
     },
     {
       "nom": "Écrits 2026",
       "recenses": 222,
       "paires": 222,
-      "complets": 21,
+      "complets": 25,
       "production": 4,
       "partiels": 9,
       "partiels_production": 5,
-      "schemas": 66,
-      "a_confirmer": 192,
-      "a_confirmer_production": 70
+      "schemas": 72,
+      "a_confirmer": 188,
+      "a_confirmer_production": 68
     },
     {
       "nom": "Oraux et fascicules",
       "recenses": 380,
-      "paires": 297,
-      "complets": 75,
+      "paires": 298,
+      "complets": 83,
       "production": 8,
       "partiels": 55,
       "partiels_production": 1,
-      "schemas": 165,
-      "a_confirmer": 167,
+      "schemas": 178,
+      "a_confirmer": 160,
       "a_confirmer_production": 5
     },
     {
@@ -200,14 +200,14 @@
     {
       "nom": "Informatique",
       "recenses": 107,
-      "paires": 105,
-      "complets": 11,
+      "paires": 107,
+      "complets": 15,
       "production": 0,
       "partiels": 0,
       "partiels_production": 0,
-      "schemas": 12,
-      "a_confirmer": 94,
-      "a_confirmer_production": 37
+      "schemas": 25,
+      "a_confirmer": 92,
+      "a_confirmer_production": 36
     },
     {
       "nom": "Informatique + Sciences de l'ingénieur",
@@ -225,13 +225,13 @@
       "nom": "Langues",
       "recenses": 485,
       "paires": 484,
-      "complets": 314,
+      "complets": 322,
       "production": 0,
       "partiels": 5,
       "partiels_production": 0,
-      "schemas": 405,
-      "a_confirmer": 165,
-      "a_confirmer_production": 70
+      "schemas": 413,
+      "a_confirmer": 157,
+      "a_confirmer_production": 62
     },
     {
       "nom": "Mathématiques",
@@ -284,12 +284,12 @@
     {
       "nom": "Physique",
       "recenses": 137,
-      "paires": 136,
-      "complets": 103,
+      "paires": 137,
+      "complets": 104,
       "production": 17,
       "partiels": 7,
       "partiels_production": 1,
-      "schemas": 497,
+      "schemas": 501,
       "a_confirmer": 26,
       "a_confirmer_production": 23
     },
@@ -357,13 +357,13 @@
       "nom": "Économie, droit et sciences sociales",
       "recenses": 168,
       "paires": 161,
-      "complets": 135,
+      "complets": 140,
       "production": 12,
       "partiels": 2,
       "partiels_production": 0,
-      "schemas": 221,
-      "a_confirmer": 24,
-      "a_confirmer_production": 9
+      "schemas": 228,
+      "a_confirmer": 19,
+      "a_confirmer_production": 7
     }
   ],
   "banques": [
@@ -383,24 +383,24 @@
       "nom": "BCE",
       "recenses": 29,
       "paires": 29,
-      "complets": 6,
+      "complets": 8,
       "production": 2,
       "partiels": 0,
       "partiels_production": 0,
-      "schemas": 6,
-      "a_confirmer": 23,
-      "a_confirmer_production": 15
+      "schemas": 8,
+      "a_confirmer": 21,
+      "a_confirmer_production": 13
     },
     {
       "nom": "BEL",
       "recenses": 176,
       "paires": 170,
-      "complets": 18,
+      "complets": 19,
       "production": 0,
       "partiels": 1,
       "partiels_production": 0,
-      "schemas": 19,
-      "a_confirmer": 151,
+      "schemas": 22,
+      "a_confirmer": 150,
       "a_confirmer_production": 46
     },
     {
@@ -442,14 +442,14 @@
     {
       "nom": "ENS",
       "recenses": 265,
-      "paires": 260,
-      "complets": 137,
+      "paires": 263,
+      "complets": 142,
       "production": 11,
       "partiels": 17,
       "partiels_production": 10,
-      "schemas": 349,
-      "a_confirmer": 106,
-      "a_confirmer_production": 33
+      "schemas": 366,
+      "a_confirmer": 104,
+      "a_confirmer_production": 32
     },
     {
       "nom": "ENS Paris-Saclay",
@@ -467,12 +467,12 @@
       "nom": "ENS Rennes",
       "recenses": 205,
       "paires": 205,
-      "complets": 159,
+      "complets": 160,
       "production": 12,
       "partiels": 5,
       "partiels_production": 0,
-      "schemas": 225,
-      "a_confirmer": 41,
+      "schemas": 226,
+      "a_confirmer": 40,
       "a_confirmer_production": 11
     },
     {
@@ -491,12 +491,12 @@
       "nom": "ENS-PSL",
       "recenses": 157,
       "paires": 135,
-      "complets": 48,
+      "complets": 49,
       "production": 3,
       "partiels": 5,
       "partiels_production": 1,
-      "schemas": 140,
-      "a_confirmer": 82,
+      "schemas": 141,
+      "a_confirmer": 81,
       "a_confirmer_production": 2
     },
     {
@@ -515,13 +515,13 @@
       "nom": "X-ENS",
       "recenses": 271,
       "paires": 267,
-      "complets": 113,
+      "complets": 121,
       "production": 12,
       "partiels": 12,
       "partiels_production": 5,
-      "schemas": 347,
-      "a_confirmer": 142,
-      "a_confirmer_production": 116
+      "schemas": 355,
+      "a_confirmer": 134,
+      "a_confirmer_production": 108
     }
   ],
   "toutes_modalites": {
@@ -661,14 +661,14 @@
       {
         "nom": "Informatique",
         "recenses": 107,
-        "paires": 105,
-        "complets": 11,
+        "paires": 107,
+        "complets": 15,
         "production": 0,
         "partiels": 0,
         "partiels_production": 0,
-        "schemas": 12,
-        "a_confirmer": 94,
-        "a_confirmer_production": 37
+        "schemas": 25,
+        "a_confirmer": 92,
+        "a_confirmer_production": 36
       },
       {
         "nom": "Informatique + Sciences de l'ingénieur",
@@ -685,14 +685,14 @@
       {
         "nom": "Langues",
         "recenses": 591,
-        "paires": 569,
-        "complets": 339,
+        "paires": 570,
+        "complets": 348,
         "production": 0,
         "partiels": 46,
         "partiels_production": 0,
-        "schemas": 445,
-        "a_confirmer": 184,
-        "a_confirmer_production": 73
+        "schemas": 455,
+        "a_confirmer": 176,
+        "a_confirmer_production": 65
       },
       {
         "nom": "Mathématiques",
@@ -745,12 +745,12 @@
       {
         "nom": "Physique",
         "recenses": 137,
-        "paires": 136,
-        "complets": 103,
+        "paires": 137,
+        "complets": 104,
         "production": 17,
         "partiels": 7,
         "partiels_production": 1,
-        "schemas": 497,
+        "schemas": 501,
         "a_confirmer": 26,
         "a_confirmer_production": 23
       },
@@ -818,13 +818,13 @@
         "nom": "Économie, droit et sciences sociales",
         "recenses": 246,
         "paires": 223,
-        "complets": 168,
+        "complets": 180,
         "production": 18,
         "partiels": 7,
         "partiels_production": 1,
-        "schemas": 289,
-        "a_confirmer": 48,
-        "a_confirmer_production": 9
+        "schemas": 307,
+        "a_confirmer": 36,
+        "a_confirmer_production": 7
       }
     ],
     "banques": [
@@ -844,24 +844,24 @@
         "nom": "BCE",
         "recenses": 29,
         "paires": 29,
-        "complets": 6,
+        "complets": 8,
         "production": 2,
         "partiels": 0,
         "partiels_production": 0,
-        "schemas": 6,
-        "a_confirmer": 23,
-        "a_confirmer_production": 15
+        "schemas": 8,
+        "a_confirmer": 21,
+        "a_confirmer_production": 13
       },
       {
         "nom": "BEL",
         "recenses": 292,
         "paires": 264,
-        "complets": 18,
+        "complets": 24,
         "production": 0,
         "partiels": 11,
         "partiels_production": 1,
-        "schemas": 19,
-        "a_confirmer": 235,
+        "schemas": 29,
+        "a_confirmer": 229,
         "a_confirmer_production": 48
       },
       {
@@ -903,14 +903,14 @@
       {
         "nom": "ENS",
         "recenses": 265,
-        "paires": 260,
-        "complets": 137,
+        "paires": 263,
+        "complets": 142,
         "production": 11,
         "partiels": 17,
         "partiels_production": 10,
-        "schemas": 349,
-        "a_confirmer": 106,
-        "a_confirmer_production": 33
+        "schemas": 366,
+        "a_confirmer": 104,
+        "a_confirmer_production": 32
       },
       {
         "nom": "ENS Paris-Saclay",
@@ -928,23 +928,23 @@
         "nom": "ENS Rennes",
         "recenses": 252,
         "paires": 252,
-        "complets": 194,
+        "complets": 196,
         "production": 20,
         "partiels": 11,
         "partiels_production": 0,
-        "schemas": 337,
-        "a_confirmer": 47,
+        "schemas": 341,
+        "a_confirmer": 45,
         "a_confirmer_production": 14
       },
       {
         "nom": "ENS de Lyon",
         "recenses": 227,
-        "paires": 182,
-        "complets": 57,
+        "paires": 183,
+        "complets": 58,
         "production": 0,
         "partiels": 55,
         "partiels_production": 0,
-        "schemas": 240,
+        "schemas": 242,
         "a_confirmer": 70,
         "a_confirmer_production": 0
       },
@@ -952,12 +952,12 @@
         "nom": "ENS-PSL",
         "recenses": 285,
         "paires": 227,
-        "complets": 73,
+        "complets": 75,
         "production": 3,
         "partiels": 7,
         "partiels_production": 1,
-        "schemas": 167,
-        "a_confirmer": 147,
+        "schemas": 169,
+        "a_confirmer": 145,
         "a_confirmer_production": 2
       },
       {
@@ -976,17 +976,17 @@
         "nom": "X-ENS",
         "recenses": 271,
         "paires": 267,
-        "complets": 113,
+        "complets": 121,
         "production": 12,
         "partiels": 12,
         "partiels_production": 5,
-        "schemas": 347,
-        "a_confirmer": 142,
-        "a_confirmer_production": 116
+        "schemas": 355,
+        "a_confirmer": 134,
+        "a_confirmer_production": 108
       }
     ]
   },
-  "fichiers_telechargeables": 535,
-  "blob_tableau": "0e090a946cbd0d481749ee71e6616af0db0e074d",
-  "sha256_classeur": "dcaef3f884a4b0425f6d4e3a6e26169e659050e52491cf58413c184556c8ac3d"
+  "fichiers_telechargeables": 524,
+  "blob_tableau": "09441a525119c983988aa57c9a1d2b1ede61bc8e",
+  "sha256_classeur": "f2151bcef6dc769b3f2aa33aa9affbb3f46ede0fca386b88c5034aeb57115b12"
 }
