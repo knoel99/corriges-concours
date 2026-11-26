@@ -1,0 +1,89 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_etudes-cognitives-signaux-de-communication-oral_2023",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Études cognitives — signaux de communication (oral)",
+    "annee": 2023,
+    "modalite": "oral"
+  },
+  "intitule": "Regard, pointage et attention conjointe chez un observateur",
+  "gabarit": "questions",
+  "questions": 10,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/cogsci-oral-sil2023.pdf",
+    "sujet_sha256": "b401124b2835379fa0d0eaaa583c8e51904886ca55f685fb9a9eff9e59e983e5",
+    "pages": 2,
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_sil_dec_2022-2023.pdf",
+    "rapport_sha256": "59772278d46b92f6fc87c8e7ec7177b79bde8b669ad2d14d3443b289fee3ef62",
+    "annexes": [
+      {
+        "titre": "Kourtis et collègues (2020)",
+        "url": "https://www.nature.com/articles/s41598-020-75283-3.pdf",
+        "sha256": "71373381f0ceffaac13241b80bd707615be2ede7df58a1e0550360b7a4aadcc0",
+        "pages": 8
+      }
+    ]
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "1. Le problème d’un observateur extérieur",
+      "2. Les prédictions",
+      "3. Trois images et huit conditions",
+      "4. Ce que signalent regard mutuel et pointage",
+      "5. Comment l’EEG met les prédictions à l’épreuve",
+      "6. Le contrebalancement",
+      "7. Ce que montrent les résultats",
+      "8. Les limites",
+      "9. La question théorique",
+      "10. Une extension qui départage des explications"
+    ],
+    "precision": "Les dix questions sur l’article sont traitées. Selon le rapport, la même épreuve comprenait aussi l’entretien de motivation, dont les échanges individuels restent inconnus.",
+    "questions_non_traitees": [
+      "Entretien de motivation et de candidature, échanges personnels non publiés."
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/scene-finale-et-potentiels.svg",
+      "legende": "Comparaisons sur la scène finale et composantes de l’EEG",
+      "question": "Questions 5 et 7"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "cognition_selection_2023",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": false,
+      "perimetre": "Rapport DEC 2022–2023 p. 1. Vérification de la durée, du support, des attentes et du périmètre personnel de l’entretien de motivation."
+    },
+    {
+      "phase": "redaction",
+      "session": "cognition_selection_2023",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Collation du feuillet bilingue et de l’article distribué. Rédaction et contrôle des deux éditions et du schéma. Les dix questions sur l’article sont traitées. Selon le rapport, la même épreuve comprenait aussi l’entretien de motivation, dont les échanges individuels restent inconnus."
+    }
+  ]
+}
