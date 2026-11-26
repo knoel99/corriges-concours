@@ -1,0 +1,179 @@
+{
+  "date": "2026-11-26",
+  "portee": "Oral, ENS de Lyon, séries LA/LV/SH (A/L), sessions 2017 et 2022. Pagination physique des PDF, première page comptée 1.",
+  "etat_des_paires": {
+    "conclusion": "Aucune paire brut/guide intégrale des quatre options ne peut être étayée par les seules pièces consultées. Les sept séquences de cinéma restent à visionner et à recaler sur les bornes du jury. Les seize passages de théâtre (dix en 2017 et six en 2022) restent à confronter aux éditions prescrites. Les listes d’œuvres identifient un autre travail possible, la recherche de vues documentées dans les collections et le rapprochement avec chaque légende.",
+    "historique": "Les historiques de branches consultés classent séparément les écrits BEL de 2017 et ces deux épreuves orales de Lyon. Au 26 novembre 2026, les deux dossiers de corrigés sont absents de la base examinée."
+  },
+  "methode": "Pages officielles annuelles relues, liens des rubriques Arts et rapports suivis, huit PDF de jury téléchargés et hachés, sujets paginés, images et partitions inspectées par page. pdfdetach -list dénombre zéro fichier joint dans les deux fascicules. Les annexes de géographie de 2017 concernent une autre épreuve. Aucun lien distinct vers une planche d’histoire des arts ou une séquence du tirage n’a été trouvé sous la rubrique orale d’arts des deux pages de session.",
+  "sessions": [
+    {
+      "session": 2017,
+      "slug": "ens-de-lyon_series-la-lv-sh-a-l_arts-oral_2017",
+      "index": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2017",
+      "enonce": {
+        "url": "https://www.ens-lyon.fr/sites/default/files/2017-11/sujets-arts-oraux-2017_1506587669086.pdf",
+        "sha256": "f770c5bd7df9c34276714ebc736a8f6ad18766b9d4ace28f0b258dac143f4590",
+        "pages": 18
+      },
+      "rapports": [
+        {
+          "option": "théâtre",
+          "url": "https://www.ens-lyon.fr/sites/default/files/2018-03/Etudes%20th%C3%A9%C3%A2trales_2017.pdf",
+          "pages": 2,
+          "pages_oral": "2",
+          "sha256": "04f41d5408288d23437dcc737e7ba9a8ebed09d2be1e3990924ce197dd8edb51"
+        },
+        {
+          "option": "cinéma",
+          "url": "https://www.ens-lyon.fr/sites/default/files/2018-03/Etudes%20cin%C3%A9matographiques_2017.pdf",
+          "pages": 3,
+          "pages_oral": "2–3",
+          "sha256": "c83def71a9de0d52d801b7224358f00c9cada72dde338be9c9b6c7321bbffe9b"
+        },
+        {
+          "option": "histoire des arts",
+          "url": "https://www.ens-lyon.fr/sites/default/files/2018-03/Histoire%20et%20th%C3%A9orie%20des%20arts_2017.pdf",
+          "pages": 2,
+          "pages_oral": "2",
+          "sha256": "9cc1bdf23678cad0ae14e0b858795a3a74555b8df5bf80ad23177f06111cbb61"
+        },
+        {
+          "option": "musique",
+          "url": "https://www.ens-lyon.fr/sites/default/files/2018-03/Musique_2017.pdf",
+          "pages": 3,
+          "pages_oral": "1–3",
+          "sha256": "a7f2797084236ed69cdb7c68df6993301a3687c861eaaea0e9d9715b4071b1fe"
+        }
+      ],
+      "options": [
+        {
+          "option": "Théâtre",
+          "pages": "1",
+          "nombre": 10,
+          "disponible": "Actes/scènes et deux bornes textuelles pour les dix passages de Kleist. Propositions de plateau et commentaire attendus.",
+          "manque": "Texte continu aux bornes de la traduction de P. Deshusses et I. Kuhn, éd. M. Corvin, Gallimard, Folio Théâtre, 2014, ISBN 9782070458837. Les extraits de l’édition prescrite n’ont pas été joints à la page annuelle.",
+          "source_edition": "https://www.enseignementsup-recherche.gouv.fr/fr/bo/16/Hebdo33/MENS1600615A.htm"
+        },
+        {
+          "option": "Cinéma",
+          "pages": "1–6",
+          "nombre": 4,
+          "repris": [
+            "p. 1–2, Nuit et brouillard, 15 min 10 s–17 min 53 s ; la carte postale de cinéma forain est imprimée p. 2.",
+            "p. 3, Guernica, 0 min 57 s–4 min 18 s ; le passage d’Akutagawa est imprimé sur la même page.",
+            "p. 3–4, Toute la mémoire du monde, 6 min 40 s–8 min 38 s ; la photographie de Viktor Kolář est imprimée p. 4.",
+            "p. 5–6, Nuit et brouillard, 6 min 00 s–8 min 57 s ; la photographie de Josef Koudelka est imprimée p. 6."
+          ],
+          "manque": "Les quatre lots comprennent chacun une séquence filmée et un support de scénario. Les quatre supports de scénario figurent au PDF ; les séquences avec image en mouvement et bande-son restent à vérifier sur les trois films. Les notices de collection ou de distribution ne prouvent pas l’observation des plans et des sons aux bornes du jury.",
+          "sources_de_recherche": [
+            "https://catalogue.bnf.fr/ark:/12148/cb38323853x",
+            "https://catalogue.bnf.fr/ark:/12148/cb38485726n",
+            "https://www.bnf.fr/fr/des-livres-imaginaires-la-reserve-des-livres-rares"
+          ]
+        },
+        {
+          "option": "Histoire des arts",
+          "pages": "7–10",
+          "nombre": 12,
+          "disponible": "Douze paires d’exercices. Pour chaque dossier, cinq légendes d’œuvres et une question à exposer à des non-spécialistes. Deux billets successifs sur la ligne et le contour ont des œuvres et une seconde question distinctes.",
+          "manque": "Les 60 références d’images (avec œuvres récurrentes) sont légendées. Les reproductions présentées aux candidats, attestées par le rapport p. 2, ne figurent pas aux pages 7–10. Les images effectivement incorporées au PDF sont les supports des scénarios et les partitions. Une autre vue d’une œuvre doit être identifiée comme telle."
+        },
+        {
+          "option": "Écriture musicale",
+          "pages": "10–18",
+          "nombre": 4,
+          "disponible": "Consigne p. 10 ; n° 1 pp. 11–12, n° 3 pp. 13–14, n° 4 pp. 15–16, n° 5 pp. 17–18. Chaque chant et ses portées pour quatuor à cordes sont lisibles. Le rapport parle de quatre candidats et des mêmes quatre numéros. Le saut du n° 2 ne constitue donc pas une annexe manquante.",
+          "vigilance": "Les pages 11 et 17 portent le même intitulé de mouvement du trio K. 498 alors que les chants imprimés diffèrent. Le tempo indiqué sur la portée p. 17 est Menuetto. Le rapport donne une autre description pour le n° 1. Partir des notes et indications de chaque fac-similé pour toute réalisation. L’autre volet de l’admission, exécution instrumentale ou vocale au choix et entretien, est décrit par le jury ; il n’appelle pas une partition imposée supplémentaire."
+        }
+      ]
+    },
+    {
+      "session": 2022,
+      "slug": "ens-de-lyon_series-la-lv-sh-a-l_arts-oral_2022",
+      "index": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2022",
+      "enonce": {
+        "url": "https://www.ens-lyon.fr/sites/default/files/2022-11/Arts2022_0.pdf",
+        "sha256": "15dc250f07123d499e92adc815b3d147987692f0268c4ac3ff0e0b55925b1142",
+        "pages": 14
+      },
+      "rapports": [
+        {
+          "option": "cinéma",
+          "url": "https://www.ens-lyon.fr/sites/default/files/2022-11/Cin%C3%A9ma%202022.pdf",
+          "pages": 5,
+          "pages_oral": "4–5",
+          "sha256": "824898e7ff6257bcb89fe9c9121a93394560d39c03405148f46209f40b182e3c"
+        },
+        {
+          "option": "théâtre",
+          "url": "https://www.ens-lyon.fr/sites/default/files/2022-11/Th%C3%A9%C3%A2tre%202022.pdf",
+          "pages": 4,
+          "pages_oral": "4",
+          "sha256": "7561f95fc5a719ef808e58767e1ce974d96db128457a9bc04318ba30f7b074b1"
+        },
+        {
+          "option": "histoire des arts",
+          "url": "https://www.ens-lyon.fr/sites/default/files/2022-11/Th%C3%A9orie%20des%20arts%202022.pdf",
+          "pages": 5,
+          "pages_oral": "5",
+          "sha256": "ac3e0febc977d8ae08bb5f00b188f86ee6409e3eea8a247ea5d146dbe59b0201"
+        },
+        {
+          "option": "musique",
+          "url": "https://www.ens-lyon.fr/sites/default/files/2022-11/Histoire%20de%20la%20musique%202022.pdf",
+          "pages": 5,
+          "pages_oral": "4–5",
+          "sha256": "a5992dd5fbf5e5be44f5239336e10a852dc8ca691d774fa65dbc878eff665b34"
+        }
+      ],
+      "options": [
+        {
+          "option": "Cinéma",
+          "pages": "2–4 (couverture p. 1)",
+          "nombre": 3,
+          "repris": [
+            "p. 2, Les Garçons de Fengkuei (Hou Hsiao-hsien), 13 min 19 s–15 min 48 s ; extrait de Moby Dick sur la page.",
+            "p. 3, Un temps pour vivre, un temps pour mourir (Hou Hsiao-hsien), 41 min 45 s–45 min 57 s ; photographie de Jonathan Bachman reproduite.",
+            "p. 4, A Brighter Summer Day (Edward Yang), 1 h 06 min 03 s–1 h 09 min 59 s ; œuvre de Caspar David Friedrich reproduite."
+          ],
+          "manque": "Les trois documents de scénario sont présents. Les séquences audiovisuelles du premier exercice sont seulement délimitées, et l’énoncé fait explicitement primer la description des plans de début et de fin sur le minutage. Les éditions de distribution repérées permettent de chercher une copie consultable ; les bornes et le montage n’ont pas été contrôlés sur une telle copie.",
+          "sources_de_recherche": [
+            "https://carlottafilms.com/films/retrospective-hou-hsiao-hsien-1/",
+            "https://laboutique.carlottafilms.com/products/a-brighter-summer-day-de-edward-yang"
+          ]
+        },
+        {
+          "option": "Théâtre",
+          "pages": "5",
+          "nombre": 6,
+          "disponible": "Les six couples de bornes et les pages de l’édition L’Arche de Jelinek, Les Suppliants, trad. M. Jourdan et M. Sobottke, 2016, ISBN 9782851819000. Passages pp. 9–10, 36–37, 74–75, 75–76, 100–101 et 117–119.",
+          "manque": "Texte continu des six passages de cette traduction. L’archive donne les incipits et explicits, sans annexer ces pages ; le rapport traite du commentaire et de la proposition de mise en scène.",
+          "source_edition": "https://www.enseignementsup-recherche.gouv.fr/fr/bo/21/Hebdo37/ESRS2127855A.htm",
+          "editeur": "https://www.arche-editeur.com/index.php/livre/les-suppliants-621"
+        },
+        {
+          "option": "Histoire des arts",
+          "pages": "6–8",
+          "nombre": 5,
+          "disponible": "p. 6, monument éphémère et monument contesté ; p. 7, femmes dans les monuments publics et échelles du monument ; p. 8, verticalité. Chaque billet unit commentaire de cinq références et question à des non-spécialistes.",
+          "manque": "Les 25 légendes sont imprimées. Les cinq dossiers de cinq reproductions décrits par le rapport p. 5 n’apparaissent pas dans le fascicule. Certains items spécifient la photographie d’un monument détruit, renversé ou temporaire. Les titres seuls ne déterminent pas tout ce qui était visible sur les documents."
+        },
+        {
+          "option": "Écriture musicale",
+          "pages": "9–14",
+          "nombre": 3,
+          "disponible": "Trois chants pour quatuor à cordes sont reproduits sur deux pages chacun. N° 1 Mozart, Quatuor K. 157, pp. 9–10 ; n° 2 Mendelssohn, Suleika op. 34 n° 4, pp. 11–12 ; n° 3 Mendelssohn, Romance sans paroles op. 62 n° 6, pp. 13–14. L’ordre de l’énumération du rapport est différent. Les portées et les notes des sujets publiés fournissent la donnée nécessaire à trois réalisations écrites.",
+          "vigilance": "Le rapport pp. 4–5 distingue harmonisation et interprétation libre de pièces choisies par chaque candidat, suivie d’un entretien. Il n’y a pas d’enregistrement imposé à retrouver pour harmoniser ces chants."
+        }
+      ]
+    }
+  ],
+  "controle": {
+    "session": "histoire_lyon_2017",
+    "modele": "gpt-6.2-astra",
+    "effort": "ultra",
+    "vitesse": null,
+    "operation": "Contrôle des deux fascicules, des huit rapports, des pièces incorporées et des références manquantes."
+  }
+}
