@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import shutil
 import subprocess
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 import pytest
@@ -421,6 +422,37 @@ def test_export_complet_pdf(tmp_path):
     assert all(r.ok for r in resultats), [(r.message, r.diagnostic) for r in resultats]
     assert (dossier / "guide.pdf").exists()
     assert (dossier / "figures" / "q1.pdf").exists()
+
+
+@pytest.mark.skipif(
+    any(shutil.which(o) is None for o in ("pandoc", "latexmk", "lualatex", "rsvg-convert", "pdftohtml")),
+    reason="chaîne LaTeX ou lecteur de signets absent",
+)
+def test_signets_pdf_pointent_sur_les_titres(tmp_path):
+    dossier = _depot(tmp_path)
+    paragraphes = "\n\n".join(["Une ligne de texte."] * 55)
+    titres = ["Première partie", "Question suivante", "Dernière solution"]
+    # Espacer les titres et la figure pour distinguer leurs destinations dans le PDF.
+    corps = [
+        "# Copie", paragraphes, f"## {titres[0]}", "![Figure témoin](figures/q1.svg)",
+        paragraphes, f"### {titres[1]}", paragraphes, f"#### {titres[2]}", "Fin.",
+    ]
+    (dossier / "brut.md").write_text("\n\n".join(corps), encoding="utf-8")
+    resultat = ex.exporter_document(dossier, "brut", pdf=True)
+    assert resultat.ok, (resultat.message, resultat.diagnostic)
+
+    xml = subprocess.check_output(["pdftohtml", "-xml", "-i", "-stdout", str(resultat.pdf)])
+    document = ET.fromstring(xml)
+    pages_des_titres = {}
+    for page in document.findall("page"):
+        for ligne in page.findall("text"):
+            texte = "".join(ligne.itertext()).strip()
+            if texte in titres:
+                pages_des_titres[texte] = int(page.attrib["number"])
+    assert set(pages_des_titres) == set(titres)
+    assert len(set(pages_des_titres.values())) == len(titres)
+    signets = [(item.text, int(item.attrib["page"])) for item in document.findall(".//outline/item")]
+    assert signets == [(titre, pages_des_titres[titre]) for titre in titres]
 
 
 def test_slugs_modifies(tmp_path):
