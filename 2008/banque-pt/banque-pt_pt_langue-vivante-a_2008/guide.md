@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve dure trois heures. Chaque candidat traite la langue choisie à l’inscription. La version française vaut 10 points. La question a demande 80 à 100 mots pour 4 points. La question b demande 200 à 250 mots pour 6 points.
 
 [Sujet](https://www.banquept.fr/documents/2008/lv_a_2008.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2008/rapport_lv_a_ecrit_2008.pdf) · [Grille du livret](https://www.banquept.fr/documents/livret/2008/Livret_PT_2008.pdf#page=12)
@@ -56,7 +58,7 @@ Auf längere Sicht stelle ich mir Arbeitsplätze vor, an denen Menschen weniger 
 
 Reportage sur le salon de robotique de Tokyo, pages 4 et 5. Le fascicule passe directement de la fin de l’article à une note de vocabulaire. Rapport d’anglais pages 3 et 4.
 
-La première version s’arrête avant les chiffres sur les emplois industriels. La seconde commence avec Tocco-chan et s’arrête avant l’incident du robot Hitachi. Le jury invite à distinguer les deux noms qui ouvrent la version et à identifier ce que les fabricants donnent pour cause aux pannes. Pour a, classer les usages observés. Pour b, donner un sens précis à « should ».
+Le premier extrait s’arrête avant les chiffres sur les emplois industriels. La seconde commence avec Tocco-chan et s’arrête avant l’incident du robot Hitachi. Le jury invite à distinguer les deux noms qui ouvrent la version et à identifier ce que les fabricants donnent pour cause aux pannes. Pour a, classer les usages observés. Pour b, donner un sens précis à « should ».
 
 ![Quels rôles pour les robots ?](figures/lecture-en.svg)
 
@@ -104,7 +106,7 @@ Distinguer les onze pays représentés par les organisations et les dix législa
 
 ### Version française
 
-Les deux premiers paragraphes de la page 6, depuis « لا يزال إلغاء عقوبة » dans le corps du texte jusqu’à « إلى تحقق نتيجة معينة ». Le renvoi de la page 7 imprime « لا تزال إلغاء عقوبة » au début.
+Les deux premiers paragraphes de la page 6, depuis « لا يزال إلغاء عقوبة » dans le corps du texte jusqu’à « إلى تحقق نتيجة معينة ». Au début du renvoi, la page 7 imprime « لا تزال » et, à la fin, emploie le pluriel « نتائج » là où le texte porte le singulier « نتيجة ». Le passage se termine avant le paragraphe historique.
 
 L’abolition de la peine de mort continue de susciter une vive controverse dans les pays arabes, surtout depuis que plusieurs d’entre eux, la Tunisie, l’Algérie et le Maroc, ont annoncé l’avoir supprimée de leur législation pénale. Récemment, le débat a gagné l’Égypte lorsque le Conseil national des droits de l’homme a examiné la question. Des opinions divergentes se sont fait entendre, les uns souhaitant le maintien de la peine, les autres son abolition. Puis est parue une étude arabe sur la peine capitale dans le monde arabe. Elle a relancé la question de savoir si cette peine pouvait être abolie dans les législations pénales arabes, à un moment où onze organisations arabes représentant onze pays arabes n’avaient pas réussi à dégager une perspective claire en faveur de l’abolition. Nombre de leurs représentants ont affirmé que l’abolition de cette peine se heurtait au caractère même des sociétés arabes, ainsi qu’aux lois en vigueur dans les pays dont le droit interne s’inspire des dispositions de la loi islamique.
 
@@ -136,7 +138,7 @@ Les divergences se sont accentuées entre les délégations arabes réunies pour
 
 Lamberto García del Cid, REDcientífica.com. Texte page 8, questions page 9. Rapport d’espagnol page 7. La citation de Samuel Butler ouvre l’article et éclaire le raisonnement en a.
 
-La version fait passer le lecteur du groupe désigné par « ellos » au « nous », puis l’interpelle directement. Conserver ces changements ainsi que les hypothèses, l’ironie et la dernière question implicite. Le jury relève le risque de calquer « a los que no nos importa » et de prendre « entretenerse » pour un verbe de parole.
+La version fait passer le lecteur du groupe désigné par « ellos » au « nous », puis l’interpelle directement. Conserver ces changements, les hypothèses et l’ironie. « Lo » dans la dernière proposition désigne le superprogrammeur dont le lecteur pourrait découvrir l’existence. Le jury relève le risque de calquer « a los que no nos importa » et de prendre « entretenerse » pour un verbe de parole.
 
 ![Du vivant à l’hypothèse de simulation](figures/lecture-es.svg)
 
@@ -146,7 +148,7 @@ De « Pobres de aquellos que odian los ordenadores » à « que lo descubriéram
 
 Pauvres de ceux qui détestent les ordinateurs et vouent l’informatique aux gémonies ! Les malheureux, ils se croient uniques, êtres en soi et pour soi, ou en soi et pour Dieu, alors qu’ils ne seraient qu’une suite d’algorithmes appartenant à un programme d’une complexité si extrême que, par lâcheté ou par ignorance, ils donnent à son créateur le nom de Dieu ou quelque autre appellation du même ordre. Quant à nous, à qui il importe peu d’être de simples instructions (ou des instructions pas si simples que cela) dans un superprogramme, des simulations à l’intérieur d’un ordinateur, ou des simulations de simulations, nous ne nous soucions guère non plus de donner un nom au superanalyste qui nous a conçus. Qu’il s’appelle Pepito ou Ughtrz, quelle importance ? Profite de ce que le programme est en cours et essaie d’en « vivre » toutes les possibilités avant qu’il ne se lasse de ce jeu ou ne débranche l’appareil.
 
-L’idée effraie-t-elle quelqu’un ? Le scandalise-t-elle ? Ne vous êtes-vous pas aperçus que, dans les avant-gardes scientifiques et artistiques, on prend de plus en plus conscience de ce fait ? Ce n’est pas un hasard si, en peu de temps, deux films importants, Matrix et Le Treizième Étage, ont repris et développé cette idée. On dirait en quelque sorte que le superprogrammeur qui contrôle nos vies s’amuse à nous laisser des indices sur notre fausse réalité, comme s’il voulait que nous le découvrions.
+L’idée effraie-t-elle quelqu’un ? Le scandalise-t-elle ? Ne vous êtes-vous pas aperçus que, dans les avant-gardes scientifiques et artistiques, on prend de plus en plus conscience de ce fait ? Ce n’est pas un hasard si, en peu de temps, deux films importants, Matrix et Passé virtuel (El nivel 13), ont repris et développé cette idée. On dirait en quelque sorte que le superprogrammeur qui contrôle nos vies s’amuse à nous laisser des indices sur notre fausse réalité, comme s’il voulait que nous le découvrions.
 
 ### Question a
 
@@ -174,7 +176,7 @@ El éxito de películas como Matrix demuestra, a mi juicio, que una idea ha entr
 
 Pasquale Notargiacomo, La Repubblica, septembre 2007. Texte pages 10 et 11, questions page 11. Rapport d’italien page 8. Le jury souligne le rôle des dialectes et des références littéraires.
 
-Comparer les jugements portés sur soi et sur les autres, puis les préférences scolaires. Les 70 % qui jugent les efforts à l’étranger insuffisants apparaissent après la borne. L’accord inhabituel « veridica » est celui du sujet. En a, expliquer pourquoi l’identité commune évolue encore. En b, illustrer le double statut de la langue par des œuvres précises.
+Comparer les jugements portés sur soi et sur les autres, puis les préférences scolaires. Les 70 % qui jugent les efforts à l’étranger insuffisants apparaissent après la borne. Les formes « veridica » et « ambascatori » sont celles du feuillet. La réponse emploie la graphie usuelle « ambasciatori ». En a, expliquer pourquoi l’identité commune évolue encore. En b, illustrer le double statut de la langue par des œuvres précises.
 
 ![Que mesurent les sondages ?](figures/lecture-it.svg)
 
@@ -198,7 +200,7 @@ Un’identità può avere radici antiche senza essere compiuta una volta per tut
 
 ### Question b
 
-*Pensate che la propria lingua possa essere un patrimonio individuale e collettivo. In che senso gli scrittori nazionali possano essere gli ambasciatori del proprio paese?*
+*Pensate che la propria lingua possa essere un patrimonio individuale e collettivo. In che senso gli scrittori nazionali possano essere gli ambascatori del proprio paese?*
 
 Una lingua appartiene alla collettività perché nessuno potrebbe costruirne da solo le parole e le regole. Eppure ciascuno ne possiede una versione personale. Una parola della mia famiglia può ricordarmi una voce precisa, mentre per un compagno indica semplicemente un oggetto. Se poi la stessa cosa ha un altro nome nel dialetto dei nonni, scegliere quale nome usare diventa un modo di raccontare la mia storia.
 

@@ -53,6 +53,16 @@
       "modifications": true,
       "agent": "lva_pt_2325",
       "perimetre": "Cinq versions françaises et dix réponses dans les langues des sujets, sources, commentaires et schémas par langue."
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "agent": "lva_pt_2325",
+      "perimetre": "Comparaison des bornes et du contenu des versions sur le fac-similé, relecture des réponses avec le jury, recomptage et examen des schémas et de l’arabe."
     }
   ],
   "date_revision": "2026-11-26",
@@ -159,7 +169,7 @@
             6
           ],
           "origine": "Akhîr Sâ’a, hebdomadaire égyptien, n° 3813 du 21 novembre 2007. Article page 6, questions page 7. Rapport d’arabe pages 5 et 6. L’énumération des trois pays dans l’introduction restitue les annonces telles que les présente le journaliste en 2007.",
-          "bornes_version": "Les deux premiers paragraphes de la page 6, depuis « لا يزال إلغاء عقوبة » dans le corps du texte jusqu’à « إلى تحقق نتيجة معينة ». Le renvoi de la page 7 imprime « لا تزال إلغاء عقوبة » au début.",
+          "bornes_version": "Les deux premiers paragraphes de la page 6, depuis « لا يزال إلغاء عقوبة » dans le corps du texte jusqu’à « إلى تحقق نتيجة معينة ». Au début du renvoi, la page 7 imprime « لا تزال » et, à la fin, emploie le pluriel « نتائج » là où le texte porte le singulier « نتيجة ». Le passage se termine avant le paragraphe historique.",
           "consignes": [
             "بينوا الفكرة الأساسية للنص.",
             "هل تطبيق عقوبة الإعدام كاف للحد من جرائم القتل في المجتمع؟"
@@ -216,7 +226,7 @@
           "bornes_version": "De « Meglio i giornalisti » à « per sostenere l’uso della lingua nel mondo ». Les deux intertitres compris dans ces bornes appartiennent à la version.",
           "consignes": [
             "«Un’identità (…) ancora in formazione». Spiegate come un tale pensiero possa essere veridica?",
-            "Pensate che la propria lingua possa essere un patrimonio individuale e collettivo. In che senso gli scrittori nazionali possano essere gli ambasciatori del proprio paese?"
+            "Pensate che la propria lingua possa essere un patrimonio individuale e collettivo. In che senso gli scrittori nazionali possano essere gli ambascatori del proprio paese?"
           ],
           "compte_mots": [
             89,
