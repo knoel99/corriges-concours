@@ -1,6 +1,6 @@
 # Banque PT — Langue vivante A 2017 · Corrigé guidé
 
-*Proposition de corrigé non officiel.*
+*Corrigé rédigé par IA, non officiel.*
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
