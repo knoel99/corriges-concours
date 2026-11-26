@@ -1,0 +1,275 @@
+{
+  "slug": "banque-pt_pt_maths-a_2023",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths A",
+    "intitule": "Épreuve de Mathématiques A",
+    "annee": 2023,
+    "duree": "4 h"
+  },
+  "questions": 44,
+  "redaction": "Proposition pédagogique non officielle, rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2023/math_a_2023_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2023/rapport_math_a_ecrit_2023.pdf",
+    "sujet_sha256": "5c1f712095e24cb8d1e72d2eb52d21156156081da8619fba271bea1b9ef858ce",
+    "rapport_jury_sha256": "830cd69423acd2d5e63fccf91d6e4ba581a4b61e14c61a24ae8dfbe07537b945",
+    "observation_rapport": "Le rapport du jury (p. 2–3) demande une justification des coefficients des puissances et de la récurrence. Pour les probabilités, il insiste p. 4 sur le système complet d’événements et p. 5 sur le signe du logarithme et les hypothèses de Markov. Il ne donne pas de rectificatif à la courbe ni à la borne bilatérale."
+  },
+  "figures": [
+    {
+      "question": "II.9.a",
+      "fichier": "figures/courbe.svg",
+      "legende": "Comparaison entre la fonction définie dans la question et deux lectures du graphique imprimé, aux abscisses 0,30 et 0,50."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1.a",
+      "I.1.b",
+      "I.1.c",
+      "I.1.d",
+      "I.1.e",
+      "I.1.f",
+      "I.2.a",
+      "I.2.b",
+      "I.2.c",
+      "I.3.a",
+      "I.3.b",
+      "I.3.c",
+      "I.4.a",
+      "I.4.b",
+      "I.4.c",
+      "I.4.d",
+      "I.4.e",
+      "I.4.f",
+      "I.5.a",
+      "I.5.b",
+      "II.1",
+      "II.2",
+      "II.3.a",
+      "II.3.b",
+      "II.3.c",
+      "II.4.a",
+      "II.4.b",
+      "II.5",
+      "II.6.a",
+      "II.6.b",
+      "II.7.a",
+      "II.7.b",
+      "II.7.c",
+      "II.8.a",
+      "II.8.b",
+      "II.9.a",
+      "II.9.b",
+      "II.9.c",
+      "II.9.d",
+      "II.10.a",
+      "II.10.b",
+      "II.10.c",
+      "II.10.d",
+      "II.11"
+    ],
+    "repere_par_question": [
+      {
+        "question": "I.1.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.1.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.1.c",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.1.d",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.1.e",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.1.f",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.2.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.2.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.2.c",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.3.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.3.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.3.c",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.4.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.4.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.4.c",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.4.d",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.4.e",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.4.f",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.5.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.5.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.1",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.2",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.3.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.3.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.3.c",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.4.a",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.4.b",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.5",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.6.a",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.6.b",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.7.a",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.7.b",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.7.c",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.8.a",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.8.b",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.9.a",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.9.b",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.9.c",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.9.d",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.10.a",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.10.b",
+        "page_pdf": 6
+      },
+      {
+        "question": "II.10.c",
+        "page_pdf": 6
+      },
+      {
+        "question": "II.10.d",
+        "page_pdf": 6
+      },
+      {
+        "question": "II.11",
+        "page_pdf": 6
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "44 consignes ou sous-consignes numérotées traitées dans chaque édition. La réponse II.4.a distingue le rang un. Les questions II.9.b–d documentent la discordance entre le graphique et la formule, et II.11 sépare la comparaison demandée de la preuve d’une borne bilatérale valide."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "fui_physique_un",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture du sujet et du rapport annuels, rédaction et vérification des deux éditions illustrées et du décompte par page. La réponse II.4.a distingue le rang un. Les questions II.9.b–d documentent la discordance entre le graphique et la formule, et II.11 sépare la comparaison demandée de la preuve d’une borne bilatérale valide."
+    }
+  ]
+}
