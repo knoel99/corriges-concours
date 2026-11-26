@@ -6,7 +6,11 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le jury publie 12 billets pour le 16 juin. Pour chacun, le premier intitulé est celui qui a été choisi. Le second était proposé au choix. Les deux reçoivent ici des réponses distinctes. Les exemples et arguments proposés servent à préparer une leçon personnelle.
+
+Lisez les deux intitulés devant le jury et annoncez au début de l’exposé le sujet retenu pendant la préparation. Seul un dictionnaire de langue française est autorisé, à l’exclusion des dictionnaires de noms propres. Chaque alternative comporte ci-dessous une question d’entretien assortie d’une piste de réponse.
 
 ## Préparer la leçon et répondre à la commission
 
@@ -35,6 +39,8 @@ Le secours urgent montre la limite d’une réponse qui laisserait chacun entiè
 
 Une prothèse ne se confond ni avec un organisme entier ni avec un objet que l’on poserait simplement à côté de lui. À quoi tient son efficacité ? Une pièce peut être fabriquée selon un plan et évaluée en atelier. Son usage exige ensuite des ajustements à une morphologie, à une fatigue, à des apprentissages. Une mécanique réparable par remplacement n’épuise donc pas le vivant, capable de modifier ses relations avec son milieu. Dans *La Connaissance de la vie*, Canguilhem demande aussi que l’on éclaire la machine par l’activité du vivant qui l’invente. Le technicien isole une fonction que l’organisme coordonne avec beaucoup d’autres. Une technique féconde travaille avec cette faculté de réorganisation. En retour, elle transforme ce que « pouvoir marcher » signifie concrètement pour la personne appareillée.
 
+**À l’entretien. Une prothèse parfaitement ajustée en atelier peut-elle rester inutilisable ?** Comparer le réglage mesuré en position assise et la fatigue ressentie après une journée de marche. L’organisme apprend à se servir de la prothèse. Son expérience peut aussi conduire le technicien à modifier la pièce.
+
 ![Qui décide de ce qui fait du bien ?](figures/aider.svg)
 
 ## 2. Le devoir d’aimer
@@ -47,6 +53,8 @@ Dans la *Doctrine de la vertu*, Kant distingue l’amour comme inclination et la
 
 Deux élèves reçoivent des durées différentes pour composer parce qu’un handicap ralentit la lecture de l’un. Une différence de traitement peut ainsi corriger l’inégalité qui rendait le temps identique injuste. Cette réponse n’autorise pourtant pas tous les écarts présentés comme utiles. Une hausse de salaire au sommet peut accroître la production totale sans améliorer la vie des moins favorisés. Chez Rawls, les libertés de base égales et la juste égalité des chances encadrent le principe de différence, qui exige que les inégalités sociales et économiques bénéficient le plus aux moins avantagés. Le critère oblige à comparer les arrangements effectivement possibles. Une inégalité est acceptable sous des raisons publiquement défendables devant ceux qui en supportent le prix. L’habitude de la voir passer pour normale ne fournit aucune de ces raisons.
 
+**À l’entretien. Un aménagement accordé à un seul élève est-il un privilège ?** Préciser le bien dont on mesure l’accès. Donner plus de temps à qui doit lire en braille peut rendre comparable la possibilité de raisonner. La même faveur accordée par amitié n’aurait pas cette justification.
+
 ## 3. Pourquoi donne-t-on ?
 
 Après un déménagement, les amis qui ont aidé sont invités à dîner. Si le repas était le salaire convenu, l’opération relèverait de l’échange marchand. Pourtant, l’invitation fait aussi attendre une autre rencontre. Le caractère gratuit d’un geste exclut-il qu’il engage celui qui reçoit ?
@@ -56,6 +64,8 @@ L’*Essai sur le don* de Mauss étudie, dans des sociétés déterminées, l’
 ### Voir
 
 Un radiologue et son patient regardent le même cliché. Les yeux reçoivent des variations de contraste comparables. Pourtant, un détail est immédiatement visible pour l’un et presque indiscernable pour l’autre. Voir engage des habitudes d’attention et des possibilités de vérification apprises. Cela ne permet pas de conclure que chacun crée librement ce qu’il voit. La zone désignée sur l’image résiste à certaines descriptions, et une vue prise sous un autre angle peut contraindre le spécialiste à changer d’avis. On gagne donc à distinguer l’apparition, la reconnaissance et le jugement déclaré. Le patient peut voir la forme qu’on lui indique tout en ignorant ce dont elle est le signe. Le regard instruit élargit le visible lorsqu’il sait aussi revenir à ce qui contrarie son attente.
+
+**À l’entretien. Peut-on voir un détail avant de l’avoir reconnu ?** Le patient peut indiquer une tache sur la radiographie avant de savoir la nommer. Distinguer la présence perceptible, l’attention qui l’isole et le jugement du praticien sur sa signification.
 
 ## 4. Réforme et révolution
 
@@ -67,6 +77,8 @@ La différence se précise si l’on sépare la procédure, les transformations 
 
 Dire qu’un tableau me plaît informe autrui de mon état. L’appeler beau invite quelqu’un qui ne l’aime pas à regarder de nouveau. Dans la *Critique de la faculté de juger*, Kant prend au sérieux cette prétention de partage qui ne dispose pourtant pas d’une preuve contraignante comme celle d’un théorème. Le regard du restaurateur peut attirer l’attention sur une relation de couleurs devenue difficile à voir. Son savoir lui donne des raisons d’être écouté, sans lui permettre de goûter à notre place. Une personne sans titre peut découvrir une justesse que le spécialiste avait négligée. Chacun peut donc porter un jugement de goût. Son autorité grandit par la précision de ce qu’il rend sensible à d’autres et par sa capacité à supporter leur désaccord.
 
+**À l’entretien. Le critique qui me fait changer d’avis a-t-il prouvé que le tableau est beau ?** Lui demander quel détail il m’a appris à percevoir. L’argument peut enrichir une expérience que je dois encore faire moi-même. La compétence du critique ne fixe pas à l’avance mon jugement.
+
 ## 5. La laideur
 
 Une façade délabrée heurte un promeneur qui attend une rue uniforme. Un photographe, au même endroit, compose une image dont les fissures font la force. Suffit-il de modifier le regard pour faire disparaître la laideur ? Le jugement négatif peut d’abord signaler une forme qui contrarie l’attente éprouvée dans une situation. Une chaussure élégante et une chaussure orthopédique ne se mesurent déjà pas au même usage. Mais réduire le laid à l’inefficace échoue devant un objet parfaitement fonctionnel que l’on trouve disgracieux.
@@ -76,6 +88,8 @@ La distinction que fait Kant entre la beauté d’une chose et la belle représe
 ### Les générations futures ont-elles des droits ?
 
 Un dépôt de déchets impose des frais pendant une durée supérieure à la vie des personnes qui en décident. Les destinataires futurs ne peuvent ni voter ni renoncer aujourd’hui au bénéfice d’une protection. Faut-il en conclure qu’il n’existe aucune obligation de justice à leur égard ? Avoir un droit et pouvoir l’exercer soi-même sont déjà distincts pour un enfant actuel. La difficulté supplémentaire est ici l’identité incertaine des personnes à venir. Nos décisions contribuent à déterminer qui naîtra, comme le montre le problème de la non-identité chez Parfit. Pourtant, on peut formuler un seuil de protection dû à quiconque habitera ce lieu. Garantir l’eau potable et transmettre les données nécessaires au suivi imposent des devoirs dès maintenant. Des représentants présents peuvent défendre ces conditions, même s’ils ne connaissent ni les goûts ni les noms des bénéficiaires.
+
+**À l’entretien. Au nom de qui parle-t-on si personne ne sait quels individus naîtront ?** Distinguer la prévision des préférences et la préservation des conditions d’action. Une eau durablement potable est une condition dont tout habitant futur pourra avoir besoin, quelles que soient ses préférences.
 
 ## 6. Foi et superstition
 
@@ -87,6 +101,8 @@ La foi peut elle aussi se nourrir d’une angoisse. Ce qui la distingue alors ne
 
 Une salle de musée aligne des tableaux selon leur date. La succession est exacte, mais que faut-il raconter pour expliquer pourquoi le portrait d’un marchand a pu devenir un sujet de peinture ? Une histoire des commandes, des modèles de représentation et des usages domestiques éclaire une possibilité nouvelle. Une histoire de la forme demande comment l’orientation du regard ou le cadrage changent le rapport du spectateur au modèle. Les deux enquêtes peuvent porter sur le même objet sans se remplacer. Il faut également interroger les œuvres conservées, les pièces perdues et les sélections du musée. L’histoire de l’art construit ainsi des récits contrôlables à partir de traces. Elle échoue lorsqu’elle transforme l’ordre des dates en marche nécessaire vers le goût de celui qui raconte.
 
+**À l’entretien. Une œuvre que personne n’a imitée mérite-t-elle de figurer dans une histoire de l’art ?** Construire deux récits à partir de la même œuvre. L’un suit ses influences, l’autre explique les conditions qui ont rendu possible sa forme singulière. Son absence de postérité importe différemment selon la question.
+
 ## 7. Vivre et exister
 
 On dit d’une ville qu’elle existe et d’une graine qu’elle vit. Le couple ne se laisse donc pas ordonner par un simple degré d’intensité. Exister, au sens le plus large, c’est être effectivement. Vivre implique une activité propre de maintien et de transformation. Pourtant, celui qui dit « j’ai longtemps vécu sans vraiment exister » renverse apparemment cet ordre. Il déclare avoir mené une vie dans laquelle il peinait à reconnaître ses propres choix.
@@ -96,6 +112,8 @@ Ce deuxième sens engage le temps. Un engagement pris aujourd’hui détermine c
 ### Y a-t-il plus dans la volonté que dans le désir ?
 
 Je désire parler une autre langue et je le désire peut-être davantage le soir d’un beau film que le lendemain au bureau. Vouloir l’apprendre implique de choisir un cours, d’accepter l’exercice et de reprendre après une interruption. L’écart ne se mesure donc pas à l’intensité de l’affect. La volonté ajoute une organisation temporelle, une évaluation des moyens et la faculté de maintenir une raison d’agir malgré la fluctuation de l’envie. Reste qu’une volonté absolument privée de désir serait difficile à reconnaître comme un mouvement vers quelque chose. Même tenir une promesse à contrecœur suppose que la fidélité à l’engagement compte pour moi. La volonté est « plus » que le désir spontané par sa structure. Elle ne s’en sépare pas au point de commander depuis un lieu sans motifs.
+
+**À l’entretien. Persévérer dans un apprentissage prouve-t-il qu’on a cessé d’en avoir envie ?** Faire varier les jours d’enthousiasme et les jours de lassitude. La décision règle la conduite à travers ces variations. Elle n’abolit ni les motifs du projet ni la possibilité de le réviser.
 
 ## 8. Les cinq sens
 
@@ -107,6 +125,8 @@ Dans le problème de Molyneux, repris par Locke dans l’*Essai sur l’entendem
 
 Qui attend d’être heureux seulement une fois tous les imprévus supprimés remet son bonheur à une date impossible. La discipline stoïcienne, chez Épictète, commence par examiner ce qui dépend de nous. Réviser l’exigence d’être admiré peut délivrer d’une dépendance au jugement d’autrui. Toutefois, demander à une personne isolée de « vouloir » une amitié ne produit pas la présence d’un ami. Chez Aristote, l’activité d’une vie accomplie suppose aussi des relations et certains biens extérieurs. La volonté compte donc par l’orientation qu’elle donne aux pratiques et aux jugements. Elle échoue à garantir le bonheur comme un résultat dû au mérite, et attribuer tout malheur à son insuffisance serait ajouter un reproche à une épreuve.
 
+**À l’entretien. Si une volonté raisonnable suffit au bonheur, comment comprendre le malheur d’une personne sage ?** Examiner un deuil. L’effort peut porter sur les jugements et les gestes par lesquels on traverse l’épreuve. La perte d’une relation chère ne dépendait pas pour autant de la qualité de cet effort.
+
 ## 9. La ressemblance et l’identité
 
 Deux exemplaires neufs du même roman présentent le même texte et la même couverture. Une dédicace inscrite sur l’un ne paraît pourtant pas sur l’autre. Ils sont qualitativement semblables et numériquement distincts. Inversement, je reconnais comme mien un livre que le temps a jauni au point que sa couleur diffère de celle dont je me souviens. La ressemblance aide donc à identifier, mais ni sa présence ni sa disparition ne tranche à elle seule la question du même.
@@ -116,6 +136,8 @@ Le bateau de Thésée rend le critère positif difficile à fixer. Si l’on rem
 ### L’amour a-t-il à voir avec la morale ?
 
 Aimer cet ami en particulier explique que je lui garde du temps au lieu de le répartir également entre tous mes voisins. Cette préférence a une valeur morale lorsque la relation fonde une promesse ou rend quelqu’un attentif à une détresse que personne n’avait remarquée. Elle devient pourtant injuste si un examinateur relève la note de son ami pour lui témoigner son affection. L’amour fait donc connaître certaines raisons d’agir sans conférer par lui-même le pouvoir de toutes les justifier. La morale impose à la préférence une épreuve de situation. Est-ce mon temps que je donne, ou la part d’un tiers dont j’ai reçu la garde ? Inversement, la morale s’appauvrit si son impartialité rend invisible ce que des relations singulières nous engagent à faire.
+
+**À l’entretien. Puis-je favoriser un ami lorsque j’attribue une bourse ?** Comparer l’aide que je lui offre avec mes propres moyens et la décision que je prends au nom d’une institution. L’attachement garde sa valeur, mais la fonction change les raisons que je dois aux autres candidats.
 
 ![Qu’est-ce qui reste le même ?](figures/identite.svg)
 
@@ -129,6 +151,8 @@ Dans *Le 18 Brumaire de Louis Bonaparte*, Marx soutient que les hommes font leur
 
 Réparer une charpente ancienne exige un calcul de charge et une épreuve des pièces une à une. Opposer immédiatement la main de l’artisan à l’esprit de l’ingénieur rendrait les deux opérations incompréhensibles. Le charpentier qui reconnaît un fil du bois raisonne à partir de signes. L’ingénieur qui mesure la flèche d’une poutre expose son calcul à une résistance sensible. La distinction porte davantage sur la portée et la transmission du jugement. Le modèle rend comparables des cas éloignés et permet à une équipe de discuter des hypothèses. Le savoir de métier ajuste une règle à ce matériau-ci, y compris lorsqu’il présente une singularité que le modèle négligeait. La réussite commune exige de pouvoir justifier l’écart entre le chantier et la prévision, puis de modifier chacun à la lumière de l’autre.
 
+**À l’entretien. L’ingénieur qui vérifie lui-même l’assemblage cesse-t-il d’être ingénieur ?** Suivre une décision précise, par exemple adapter la pièce à la courbure d’une poutre. Le calcul et l’essai sur le bois peuvent se corriger mutuellement sans répartir une fois pour toutes le savoir entre deux personnes.
+
 ## 11. L’art s’adresse-t-il à la sensibilité ?
 
 Une fugue se donne à entendre. Pour en reconnaître le sujet lorsqu’il revient dans une autre voix, il faut cependant avoir gardé en mémoire le début tandis que se poursuit une autre ligne. La sensibilité désigne-t-elle une simple réception des sons ou cette attention capable d’en construire les rapports ? Dans le premier sens, il paraît nécessaire mais insuffisant d’entendre. Une personne attentive pourra suivre des entrées qu’une personne distraite, présente à la même place, n’aura jamais remarquées.
@@ -139,6 +163,8 @@ Un objet ordinaire exposé dans un musée rend l’objection plus forte. Sa ress
 
 Déplacer une chaise suffit à rendre le monde physiquement différent. Pourtant, celui qui promet de « changer le monde » annonce une modification des conditions sous lesquelles d’autres pourront agir. Une bibliothèque qui étend ses horaires change le jour d’un lecteur. La permanence d’un accès public transforme, au-delà du bénéfice individuel, ce qui est ordinairement possible dans un quartier. L’ampleur de l’intention ne garantit toutefois ni la durée ni la valeur de ses effets. Une réforme ambitieuse peut rendre un service inaccessible à ceux qui le fréquentaient. Il faut donc identifier ce que le projet prétend ouvrir, qui peut en éprouver les conséquences et comment il peut être corrigé. Changer le monde au sens politique engage un monde commun dont les autres demeurent aussi les auteurs.
 
+**À l’entretien. Une transformation locale mérite-t-elle le nom de changement du monde ?** Prendre une rampe d’accès. Elle occupe peu de place et transforme durablement qui peut entrer, participer et décider d’une activité commune. Expliquer ainsi quelle échelle de changement compte pour le jugement.
+
 ## 12. Faut-il cultiver le naturel ?
 
 On admire le naturel d’une comédienne dont le geste a été répété pendant des semaines. Si le naturel était le simple défaut de culture, l’éloge serait incohérent. On distingue en réalité ce qui se fait sans intervention humaine, ce qui se produit sans effort apparent et ce qui exprime une personne sans affectation. Un travail peut détruire le premier naturel tout en rendant le deuxième possible.
@@ -148,5 +174,7 @@ Reste à savoir si l’on doit rechercher le troisième. L’élève qui imite l
 ### Traiter autrui comme on veut qu’il nous traite
 
 La réciprocité décentre mon jugement. Avant de répandre une information sur un ami, je peux me demander ce que j’éprouverais si l’on disposait de mes confidences. La règle perd cependant sa force si j’impose à autrui le détail de mes goûts. J’aime recevoir des visites sans prévenir, mon voisin a besoin de solitude. Lui rendre exactement ce que je souhaite pour moi peut le gêner. Ce que la permutation des places permet de dégager est une exigence valable pour chacun, par exemple pouvoir décider qui entre chez soi. L’application morale demande ensuite de s’informer des raisons et des circonstances de la personne réelle. Le passage par soi est ainsi une occasion de sortir de sa place, à condition d’accepter que l’autre nous apprenne en quoi la sienne diffère.
+
+**À l’entretien. Que vaut la règle de réciprocité si l’autre souhaite le contraire de moi ?** Un malade peut désirer de la compagnie alors que je préférerais être seul. Intervertir les places invite à demander son avis et à respecter sa réponse. La réciprocité porte alors sur la considération accordée à chacun.
 
 [Feuille officielle du 16 juin](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_tc_1al.pdf) · [Rapport du jury, modalités et annexe des sujets](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf)
