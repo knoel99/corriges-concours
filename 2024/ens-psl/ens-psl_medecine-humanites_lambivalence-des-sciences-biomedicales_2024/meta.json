@@ -1,0 +1,68 @@
+{
+  "slug": "ens-psl_medecine-humanites_lambivalence-des-sciences-biomedicales_2024",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Médecine-Humanités",
+    "matiere": "L’ambivalence des sciences biomédicales",
+    "annee": 2024,
+    "modalite": "écrit"
+  },
+  "intitule": "L’ambivalence des sciences biomédicales",
+  "questions": 1,
+  "redaction": "Commentaire rédigé en lecture croisée sur « L’ambivalence des sciences biomédicales », guide d’analyse de chaque document, composition développée et schéma.",
+  "sources": {
+    "sujet": "https://medecine-humanites.ens.psl.eu/wp-content/uploads/2024/07/Sujet_1_Ambivalence-de-la-science-2024-2025.pdf",
+    "index": "https://medecine-humanites.ens.psl.eu/sujets-et-rapports-du-concours-2018/",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://medecine-humanites.ens.psl.eu/wp-content/uploads/2024/07/Sujet_1_Ambivalence-de-la-science-2024-2025.pdf",
+        "fac_simile": "https://docs.google.com/viewerng/viewer?embedded=true&url=https://medecine-humanites.ens.psl.eu/wp-content/uploads/2024/07/Sujet_1_Ambivalence-de-la-science-2024-2025.pdf",
+        "sha256": "a57df1313957a26a3d22bab8a469c55f8134b2347ffefc524a42153484322cae",
+        "nature": "PDF",
+        "pages": 5
+      },
+      {
+        "role": "rapport",
+        "url": "https://medecine-humanites.ens.fr/wp-content/uploads/2024/11/CR-Jury-MH_ED_final-2024_2.pdf",
+        "fac_simile": "https://web.archive.org/web/20250211202642id_/https://medecine-humanites.ens.fr/wp-content/uploads/2024/11/CR-Jury-MH_ED_final-2024_2.pdf",
+        "sha256": "fdf5bdd618d4daa89dd2c8b459a7c43f832f103ac338e3ab6f1fe1ab2c8c91bd",
+        "nature": "PDF",
+        "pages": 4
+      }
+    ]
+  },
+  "documents_commentes": [
+    "Document 1, p. 1–2 · Mary Shelley, *Frankenstein ou le Prométhée moderne*, traduction d’Alain Morvan. Repérer les changements du regard de Victor et la main tendue à la fin du passage.",
+    "Document 2, p. 3–4 · CCNE, avis 133 du 19 septembre 2019, extrait de la p. 25. Distinguer les objections du comité à une intervention précise et le débat entre organismes sur les décisions futures.",
+    "Document 3, p. 5 · Cornelia Hesse-Honnegger, *Pyrrhocoridae, Pyrrhocoris apterus*, Séljony Mys, Ukraine, 1990. Confronter le dessin à la notice de collecte et au commentaire du jury, p. 3 du rapport."
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Commentaire",
+      "fichier": "figures/lecture-croisee.svg",
+      "legende": "À quel moment devient-on responsable des effets d’une intervention ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "reprise_medecine_humanites",
+      "session": "reprise_medecine_humanites",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Commentaire rédigé en lecture croisée sur « L’ambivalence des sciences biomédicales », guide d’analyse de chaque document, composition développée et schéma."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire de documents"
+    ]
+  }
+}
