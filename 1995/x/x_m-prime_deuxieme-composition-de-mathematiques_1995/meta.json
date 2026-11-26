@@ -1,0 +1,138 @@
+{
+  "slug": "x_m-prime_deuxieme-composition-de-mathematiques_1995",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "M prime",
+    "filiere_historique": "M′",
+    "matiere": "Deuxième composition de mathématiques",
+    "annee": 1995
+  },
+  "questions": 16,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-e31dd2c97f45c03353a8",
+    "sujet_sha256": "e4518934356362d038cfd81ed22304549fafe511dc1f9324e30ac56f6dd4ca62",
+    "notice_ups": "m95xm2",
+    "reproduction": "https://www.sujetsetcorriges.fr/dl/X/Maths/MP/sec-x-1995-maths2-MP.pdf",
+    "reproduction_sha256": "0d174ae7fbdc25a6b453344670cf5efd56dcac0fbbed68a9052afb66991b3dcb",
+    "calendrier": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000185476",
+    "rapport_jury": "",
+    "observation_rapport": "Aucun rapport de jury identifié dans les deux collections consultées.",
+    "provenance": "Le fac-similé UPS donne l’établissement et le rang de la composition ; la date et l’option sont rapprochées de la notice annuelle UPS classée sous MP, de la collection Sujets et Corrigés et du calendrier officiel des options M′ et P′. L’extrait reproduit ne fait pas apparaître M′ sur sa garde."
+  },
+  "figures": [
+    {
+      "question": "10",
+      "fichier": "figures/energie-transitoire.svg",
+      "legende": "Pour la donnée initiale (1,1), la norme euclidienne au carré augmente au début puis tend vers zéro."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2.a",
+      "2.b",
+      "3",
+      "4",
+      "5.a",
+      "5.b",
+      "6.a",
+      "6.b",
+      "7",
+      "8.a",
+      "8.b",
+      "9.a",
+      "9.b",
+      "9.c",
+      "10"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1",
+        "page_pdf": 1
+      },
+      {
+        "question": "2.a",
+        "page_pdf": 1
+      },
+      {
+        "question": "2.b",
+        "page_pdf": 1
+      },
+      {
+        "question": "3",
+        "page_pdf": 1
+      },
+      {
+        "question": "4",
+        "page_pdf": 1
+      },
+      {
+        "question": "5.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "5.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "6.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "6.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "7",
+        "page_pdf": 2
+      },
+      {
+        "question": "8.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "8.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "9.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "9.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "9.c",
+        "page_pdf": 3
+      },
+      {
+        "question": "10",
+        "page_pdf": 3
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "16 consignes repérées sur trois pages. Le fac-similé UPS donne l’établissement et le rang de la composition ; la date et l’option sont rapprochées de la notice annuelle UPS classée sous MP, de la collection Sujets et Corrigés et du calendrier officiel des options M′ et P′. L’extrait reproduit ne fait pas apparaître M′ sur sa garde."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "fui_physique_un",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture des trois pages, rédaction de 16 solutions et de leurs indications, vérification des démonstrations et des diagrammes."
+    }
+  ]
+}
