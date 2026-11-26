@@ -4,13 +4,15 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Sujet commun](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20MP-PC-PSI%20SUJET%20ECRIT%20D'ALLEMAND%20(XEULSR)_0.pdf) · [Rapport du jury](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20MP-PC%20RAPPORT%20ECRIT%20ALLEMAND%20(XEULSR)_0.pdf)
 
 ## Préparer la composition
 
-Ne pas confondre les deux départs. Les journaux étrangers commentent en 2018 l’abandon de la présidence de la CDU et la décision de ne pas se représenter en 2021. Les articles de 2021 évaluent un bilan et, pour l’un d’eux, le discours de la Journée de l’unité. L’armoire de Sakurai donne à voir une impression de permanence tout en suggérant une incertitude sur la durée de formation d’un gouvernement. Merkel envisage les vœux du Nouvel An au conditionnel.
+En 2018, Merkel quitte la présidence de la CDU et annonce sa dernière législature. Les articles de 2021 dressent son bilan et évoquent son discours pour la Journée de l’unité. Chez Sakurai, Merkel hésite devant son armoire. Le conditionnel des vœux de Nouvel An traduit une incertitude sur la durée des négociations.
 
-L’éditorial de Jürgen Paul est daté du 20 septembre 2021. Argumenter dans son horizon préélectoral. Il présente des scénarios possibles. Les électeurs élisent les députés du Bundestag, lesquels élisent ensuite le chancelier. Une image de campagne ou la première place dans les sondages ne constitue donc pas un mandat personnel immédiat.
+Jürgen Paul écrit le 20 septembre 2021, avant le scrutin. Les électeurs choisissent les députés au Bundestag, qui élisent ensuite le chancelier. Cette procédure explique pourquoi une avance dans les sondages laisse plusieurs coalitions possibles.
 
 ![Trois dates pour lire le départ d’Angela Merkel](figures/lecture.svg)
 
@@ -44,6 +46,4 @@ Besonders deutlich wird das bei den Farben der denkbaren Bündnisse. In einem Wa
 
 Ich teile daher Pauls Zurückhaltung gegenüber den Umfragen. Die Ungewissheit ist nicht bloß eine aufregende Eigenschaft dieses Wahlkampfs. Sie schützt auch die Bedeutung der letzten Stimme und die Freiheit der Abgeordneten, eine tragfähige Mehrheit zu finden. Eine lange Verhandlung muss keine Niederlage der Demokratie sein. Problematisch wäre sie dann, wenn die Beteiligten bis zum Schluss unkenntlich machten, zwischen welchen Alternativen sie wählen und welchen Preis sie anderen zumuten.
 
-Nach sechzehn Jahren mit derselben Kanzlerin fällt es leicht, das Ende einer Ära am Wechsel des Gesichts bei der Neujahrsansprache festzumachen. Ein anspruchsvollerer Maßstab wäre die Fähigkeit der Wähler, im späteren Koalitionsvertrag die Entscheidungen wiederzufinden, über die sie im September gestritten haben. Erst dann ließe sich beurteilen, ob dieser ungewöhnliche Wahlkampf mehr hinterlassen hat als Erinnerungen an eine Aufholjagd, ein Lachen und einige besonders umstrittene Buchseiten. Eine Wahl sollte ihren politischen Gehalt auch nach dem Verschwinden der Plakate behalten.
-
-*507 mots, selon le même décompte.*
+Nach sechzehn Jahren mit derselben Kanzlerin fällt es leicht, das Ende einer Ära am Wechsel des Gesichts bei der Neujahrsansprache festzumachen. Ein anspruchsvollerer Maßstab wäre die Fähigkeit der Wähler, im späteren Koalitionsvertrag die Entscheidungen wiederzufinden, über die sie im September gestritten haben. Erst dann ließe sich beurteilen, ob dieser ungewöhnliche Wahlkampf mehr hinterlassen hat als Erinnerungen an eine Aufholjagd, ein Lachen und einige besonders umstrittene Buchseiten. Eine Wahl sollte ihren politischen Gehalt auch nach dem Verschwinden der Plakate behalten. *(507 mots)*
