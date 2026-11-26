@@ -20,7 +20,7 @@ Pour l’essai, passer de la question « combien de langues ? » aux situations 
 
 Dans le thème, « depuis le Moyen Âge » appelle *dal Medioevo*, la veille historique *alla vigilia*, « désormais uniques » la mise en commun nationale de trois institutions. Conserver le temps du récit et la différence finale entre savoir écrire à dix ans et parler habituellement la langue.
 
-Le rapport parle de cinq documents. La liste imprimée p. 8 et les numéros des pages suivantes en donnent quatre. On dispose de l’entretien de Balboni p. 9, de l’article du *Post* p. 10–11, de l’extrait de Christian Bec p. 11 et de la carte p. 12. Pour rapprocher les deux articles, comparer les choix de langue de Montalbano chez Camilleri et les choix de diction d’un acteur à l’écran. Les deux composent une voix pour un public, même si le personnage donne l’impression de parler spontanément. Dans le thème, *si è affermato un potere centralizzato* permet d’exprimer l’absence d’un pouvoir central sans calquer « connaître une centralisation ».
+Le rapport parle de cinq documents. La liste imprimée p. 8 et les numéros des pages suivantes en donnent quatre. On dispose de l’entretien de Balboni p. 9, de l’article du *Post* p. 10, de l’extrait de Christian Bec p. 11 et de la carte p. 12. Pour rapprocher les deux articles, comparer les choix de langue de Montalbano chez Camilleri et les choix de diction d’un acteur à l’écran. Les deux composent une voix pour un public, même si le personnage donne l’impression de parler spontanément. Dans le thème, *si è affermato un potere centralizzato* permet d’exprimer l’absence d’un pouvoir central sans calquer « connaître une centralisation ».
 
 ![Schéma — Langue commune et usages locaux](figures/dossier.svg)
 
