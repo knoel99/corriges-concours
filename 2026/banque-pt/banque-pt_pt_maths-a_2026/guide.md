@@ -10,6 +10,8 @@
 
 **Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
 **Format.** Épreuve de 4 heures, **calculatrice interdite**. Une feuille de papier millimétré est à rendre avec la copie. Le sujet compte quatre parties et 41 questions élémentaires en comptant chaque sous-question. Les parties A et B sont indépendantes ; les parties C et D réutilisent leurs résultats.
@@ -768,19 +770,28 @@ Notons $S_n$ la somme partielle d'indice $n$ de $I$, de sorte que $I-S_n=R_n$.
 
 On s'arrête au premier $n$ pour lequel le majorant de 6(a) est inférieur ou égal à `eps`. Ce majorant tend vers $0$, donc la boucle termine.
 
+Notons $u_n=e^{-(\lambda+\mu)}(\lambda\mu)^n/(n!)^2$ le terme ajouté et $B_n=e^{\lambda\mu-(\lambda+\mu)}/(n+1)!$ le majorant de 6(a). En Python, $\lambda=\mu=30$ donnerait déjà un dépassement de capacité pour $e^{840}$. On compare donc $\ln B_n$ à $\ln(\mathtt{eps})$. Pour passer du rang $n-1$ au rang $n$, on utilise $u_n/u_{n-1}=\lambda\mu/n^2$ et $B_n/B_{n-1}=1/(n+1)$.
+
 ```python
-from math import exp, factorial
+from math import exp, log
 
 def val_app(eps):
-    # n : indice du dernier terme ajouté ; S : somme partielle S_n
     n = 0
-    S = exp(-(la + mu))          # S_0 : terme d'indice k = 0
-    # tant que le majorant de |R_n| (question 6.a) dépasse eps, on ajoute un terme
-    while exp(la * mu - (la + mu)) / factorial(n + 1) > eps:
-        n = n + 1
-        S = S + (la * mu) ** n / factorial(n) ** 2 * exp(-(la + mu))   # S devient S_n
-    return S                     # |I - S_n| <= eps
+    log_terme = -(la + mu)
+    log_majorant = la * mu - (la + mu)
+    log_produit = log(la) + log(mu)
+    log_eps = log(eps)
+    somme = exp(log_terme)
+
+    while log_majorant > log_eps:
+        n += 1
+        log_terme += log_produit - 2 * log(n)
+        somme += exp(log_terme)
+        log_majorant -= log(n + 1)
+    return somme
 ```
+
+À la sortie, la somme partielle $S_n$ vérifie $0\le I-S_n\le B_n\le\mathtt{eps}$ en arithmétique exacte. La valeur renvoyée est l’évaluation de $S_n$ en virgule flottante.
 
 Avec $\lambda=1$, $\mu=2$ et `eps = 1e-5`, la boucle s'arrête à $n=7$ et renvoie $0{,}211712\ldots$
 

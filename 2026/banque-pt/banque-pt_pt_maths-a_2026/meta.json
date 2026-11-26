@@ -84,11 +84,79 @@
       "tour": 3,
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Contrôle des quatre parties et des 41 réponses élémentaires, des trois figures et de la feuille graphique sur le fascicule 045 et le rapport. Vérification du discriminant, des rangs des matrices de lois, des probabilités et de la borne de troncature de C.6. Exécution de la fonction corrigée dans les deux éditions et comparaison à la série de Bessel mise à l’échelle, y compris pour λ = μ = 30 et 500."
     }
   ],
   "date_revision": "2026-11-24",
   "sources": {
     "sujet": "https://www.banquept.fr/documents/2026/math_a_2026_pt.pdf",
-    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2026/rapport_math_a_ecrit_2026.pdf"
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2026/rapport_math_a_ecrit_2026.pdf",
+    "sujet_sha256": "087d0ecb80ce70a3fe3e9fb6b5162b4d6bca756f932b0151cdbe7e4d7e302f61",
+    "rapport_sha256": "3359e40f1911b7974629f8b0c9c4514a524fba7346c031a533fa7219b96dab99"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A.1",
+      "A.2",
+      "A.3",
+      "A.4(a)",
+      "A.4(b)",
+      "A.5",
+      "A.6",
+      "A.7(a)",
+      "A.7(b)",
+      "A.8",
+      "B.1(a)",
+      "B.1(b)",
+      "B.2",
+      "B.3",
+      "B.4",
+      "B.5",
+      "B.6",
+      "C.1(a)",
+      "C.1(b)",
+      "C.2",
+      "C.3(a)",
+      "C.3(b)",
+      "C.3(c)",
+      "C.4(a)",
+      "C.4(b)",
+      "C.4(c)",
+      "C.5",
+      "C.6(a)",
+      "C.6(b)",
+      "C.6(c)",
+      "C.7(a)",
+      "C.7(b)",
+      "C.7(c)",
+      "C.7(d)",
+      "C.7(e)",
+      "C.7(f)",
+      "D.1(a)",
+      "D.1(b)",
+      "D.1(c)",
+      "D.1(d)",
+      "D.2"
+    ],
+    "precision": "Le fascicule 045 demande 10 réponses en A, 7 en B, 19 en C et 5 en D en comptant les subdivisions. La construction A.8 sur papier millimétré figure dans les deux corrigés.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "087d0ecb80ce70a3fe3e9fb6b5162b4d6bca756f932b0151cdbe7e4d7e302f61",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Contrôle des quatre parties et des 41 réponses élémentaires, des trois figures et de la feuille graphique sur le fascicule 045 et le rapport. Vérification du discriminant, des rangs des matrices de lois, des probabilités et de la borne de troncature de C.6. Exécution de la fonction corrigée dans les deux éditions et comparaison à la série de Bessel mise à l’échelle, y compris pour λ = μ = 30 et 500.",
+      "commit_redaction_anterieure": "d48df23ae4ef6bf653bbe82e6ed589096a57309d"
+    }
   }
 }
