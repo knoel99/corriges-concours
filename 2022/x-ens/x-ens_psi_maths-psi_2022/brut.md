@@ -4,6 +4,10 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+La garde porte les noms des Écoles normales supérieures et de l’École polytechnique. Les sept pages numérotées du sujet suivent la garde dans le PDF de huit pages. Les questions portent sur la projection, les points extrémaux, les cônes polaires et les solutions parcimonieuses. Durée de l’épreuve, quatre heures.
+
 La composition du 25 avril 2022 part de la projection euclidienne et aboutit à la construction de solutions peu denses d’un système linéaire. Les 26 numéros donnent ici 32 réponses en séparant les quatre projections de la question 4 et les subdivisions des questions 9 et 20. [Sujet officiel](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2022_Sujet_Ecrit_PSI_Math%C3%A9matiques.pdf) · [Rapport du jury](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2022_Rapport_Ecrit_PSI_Maths.pdf)
 
 ## I. Projection et séparation
@@ -36,6 +40,8 @@ Pour $\|x\|\le1$ la projection est $x$. Si $\|x\|>1$, tout $y$ de la boule véri
 
 Avec $e=(1,\ldots,1)$ et $s=e\cdot x$, le point est fixé si $s\le1$. Sinon posons $y=x-[(s-1)/d]e$. Alors $e\cdot y=1$ et pour tout $z\in C$, $(x-y)\cdot(z-y)=[(s-1)/d](e\cdot z-1)\le0$. Par 2, la formule générale est $\operatorname{proj}_C x=x-\max(s-1,0)e/d$.
 
+Par exemple, en dimension deux, $(3,0)$ se projette en $(2,-1)$. Les deux coordonnées ont subi le même déplacement et leur somme vaut un. La correction agit donc aussi sur une coordonnée initialement nulle.
+
 ### Question 4iv
 
 La somme des carrés se minimise indépendamment en chaque coordonnée. Sur $[-1,1]$, le nombre le plus proche de $x_i$ est $-1$ pour $x_i<-1$, $x_i$ pour $|x_i|\le1$ et $1$ pour $x_i>1$. Ainsi $(\operatorname{proj}_Cx)_i=\max(-1,\min(x_i,1))$.
@@ -61,6 +67,8 @@ Notons $C=\overline A$, convexe puisque les combinaisons convexes passent à la 
 Si $x\in C\setminus A$, montrons qu’il est au bord de $C$. S’il était intérieur, on pourrait placer dans une boule de $C$ autour de $x$ un simplexe de dimension $d$ dont $x$ est le barycentre, par exemple en prenant pour directions $e_1,\ldots,e_d,-\sum_i e_i$ à la même petite échelle. Approchons chacun de ses sommets par des points de $A$. Les poids barycentriques de $x$ restent strictement positifs pour une approximation assez fine, car ils s’obtiennent en inversant une matrice non singulière dépendant continûment des sommets. La convexité donnerait alors $x\in A$. Cette contradiction exclut l’intérieur et couvre aussi le cas où $C$ est contenu dans un sous-espace affine propre.
 
 Prenons donc $x_n\notin C$ tendant vers $x$ et $z_n=\operatorname{proj}_Cx_n$. Puisque $x\in C$, $\|z_n-x_n\|\le\|x_n-x\|$, d’où $z_n\to x$. Les vecteurs unitaires $p_n=(z_n-x_n)/\|z_n-x_n\|$ ont une sous-suite convergente de limite $p$ unitaire. Pour tout $y\in C$, $p_n\cdot(y-z_n)\ge0$ par 2. Le passage à la limite donne $p\cdot x\le p\cdot y$ pour tout $y\in A$.
+
+Dans le cas de dimension affine strictement inférieure à $d$, on peut raccourcir le passage à la limite. Si $x\in\overline A$, il appartient à l’enveloppe affine de $A$, qui est fermée. Un vecteur unitaire orthogonal à sa direction vérifie alors $p\cdot x=p\cdot y$ pour tout $y\in A$. Cet exemple explique pourquoi le signe large figure dans la conclusion.
 
 ## II. Points extrémaux
 
@@ -88,6 +96,8 @@ Le polyèdre $A$ est une intersection finie de demi-espaces fermés convexes. Si
 
 Réciproquement, si $x=(1-\lambda)y+\lambda z$ pour $0<\lambda<1$ et $y,z\in A$, toute contrainte active en $x$ est active en $y$ et $z$ car les deux valeurs sont au plus $b_i$ et leur moyenne pondérée vaut $b_i$. Si les normales actives engendrent tout l’espace, $y-z$, orthogonal à chacune, est nul. C’est bien l’équivalence. Enfin, si deux points extrémaux ont la même liste active, leur différence est également orthogonale à un système de rang $d$, donc ils coïncident. L’injection dans les parties de $\{1,\ldots,k\}$ fournit la borne $2^k$.
 
+Pour rendre le pas commun explicite, soit $H$ l’ensemble des contraintes inactives dont la normale a un produit non nul avec $h$. Si $H$ est non vide, choisir $t=\tfrac12\min_{i\in H}(b_i-p_i\cdot x)/|p_i\cdot h|$. Si $H$ est vide, prendre $t=1$. Cela traite aussi le polyèdre entier lorsque toutes les normales sont nulles.
+
 ### Question 13
 
 La fonction $x\mapsto p\cdot x$ continue atteint son minimum $m$ sur le compact non vide $K$. L’ensemble $K_p=K\cap\{x:p\cdot x=m\}$ est non vide, fermé et convexe. Si $x\in K_p$ est un barycentre strict de $y,z\in K$, les valeurs en $y,z$ sont toutes deux au moins $m$ et leur moyenne vaut $m$. Elles valent donc $m$ et les deux points appartiennent à $K_p$. Si $x$ est extrémal dans $K_p$, ils doivent coïncider. Ainsi $x$ est extrémal dans $K$.
@@ -103,6 +113,8 @@ où la dernière comparaison utilise la maximalité aux deux points. Une telle r
 L’inclusion $\operatorname{co}(\operatorname{Ext}K)\subset K$ vient de la convexité. Pour l’autre sens, raisonnons par récurrence sur la dimension affine $m$ de $K$, en munissant son enveloppe affine de la métrique euclidienne induite. Pour $m=0$, $K$ est un singleton. Pour $m>0$, soit $x$ un point de son bord relatif. Approchons $x$ par des points de l’enveloppe affine extérieurs à $K$. Comme dans la preuve de 8, les directions unitaires vers leurs projetés ont une sous-suite convergeant vers une normale unitaire $p$ dans l’espace directeur. On a $p\cdot(y-x)\ge0$ pour tout $y\in K$. La face $K_p$ contient donc $x$ et est de dimension au plus $m-1$, car elle est contenue dans un hyperplan propre de l’enveloppe affine. Par récurrence, puis par 13, $x$ est combinaison convexe de points extrémaux de $K_p$, donc de $K$.
 
 Si $x$ est intérieur relativement, une droite de l’enveloppe affine passant par $x$ coupe $K$ suivant un segment fermé borné dont $x$ est intérieur. Les deux extrémités sont au bord relatif et ont déjà la représentation voulue. Leur barycentre $x$ l’a donc aussi, sans aucune prise d’adhérence.
+
+Le choix d’une normale dans la direction de l’enveloppe affine est décisif. Si elle était constante sur tout $K$, elle serait orthogonale à tous les $y-x$ pour $y\in K$, donc au sous-espace qu’ils engendrent. Comme elle appartient à ce sous-espace et y est unitaire, c’est impossible. La face retenue est donc propre et la récurrence descend effectivement.
 
 ## III. Cônes polaires et dualité linéaire
 
@@ -120,6 +132,8 @@ Le cône $F$ est stable par addition et multiplication par un scalaire positif o
 
 Pour une telle sous-famille, l’application des coordonnées vers son espace engendré est un isomorphisme. Elle envoie l’orthant fermé sur un ensemble fermé de cet espace, lequel est fermé dans $\mathbb R^d$. Le cône $F$ est réunion d’un nombre fini de ces cônes fermés, donc fermé. Son polaire est exactement $\{x:\xi_i\cdot x\ge0\ \forall i\}$, comme on le vérifie sur les générateurs puis leurs combinaisons positives. Par 17, $F=F^{++}$, ce qui est l’équivalence demandée.
 
+On peut aussi lire la fermeture sur une suite convergente $v_n$. Après réduction des supports et extraction, un même support libre $S$ convient pour tous les $v_n$. La matrice $B$ de ses colonnes a $B^{\mathsf T}B$ inversible. Les coefficients sont $(B^{\mathsf T}B)^{-1}B^{\mathsf T}v_n$ et convergent donc vers des coefficients positifs ou nuls. Lorsque $S$ est vide sur la sous-suite, sa limite vaut zéro. L’argument évite de supposer bornés les coefficients d’une représentation quelconque.
+
 ### Question 19
 
 Pour $x\ge0$, $Mx\le b$, $q\le0$ et $M^{\mathsf T}q\le p$, on a $p\cdot x\ge (M^{\mathsf T}q)\cdot x=q\cdot Mx\ge q\cdot b$. Passer à l’infimum en $x$ puis au supremum en $q$ donne $\alpha\ge\beta$. Si l’un des ensembles admissibles est vide, la conclusion suit aussi avec les conventions données.
@@ -127,6 +141,8 @@ Pour $x\ge0$, $Mx\le b$, $q\le0$ et $M^{\mathsf T}q\le p$, on a $p\cdot x\ge (M^
 ### Question 20a
 
 Soit $z$ satisfaisant les conditions indiquées. Pour $j\in J$, $x_j+tz_j\ge0$ lorsque $t\ge0$. Pour $i\in I$, $M_i\cdot(x+tz)\le b_i$. Aux autres indices, les contraintes ont une marge stricte. Leur nombre étant fini, on peut prendre un même $t>0$ assez petit pour conserver toutes ces marges, y compris la positivité des coordonnées initialement strictement positives. La minimalité donne $p\cdot(x+tz)\ge p\cdot x$, donc $p\cdot z\ge0$.
+
+On peut prendre pour majorants de $t$ les rapports $x_j/(-z_j)$ lorsque $x_j>0$ et $z_j<0$, puis $(b_i-M_i\cdot x)/(M_i\cdot z)$ lorsque $i\notin I$ et $M_i\cdot z>0$. Chacun est strictement positif. Choisir la moitié du minimum de ces rapports et de $1$ suffit dans tous les cas.
 
 ### Question 20b
 
@@ -137,6 +153,10 @@ La formule subsiste avec des sommes vides, le cône sans générateur étant $\{
 ### Question 20c
 
 La seconde complémentarité donne $p\cdot x=q\cdot Mx$ et la première donne $q\cdot Mx=q\cdot b$. Comme $x$ réalise $\alpha$ et $q$ est admissible au dual, $\alpha=b\cdot q\le\beta$. La borne opposée vient de 19, d’où $b\cdot q=\alpha=\beta$, avec maximum dual atteint.
+
+Vérifions les signes sur la contrainte $-x_1-2x_2\le-2$, avec $x\ge0$ et $p=(1,3)$. Tout point admissible vérifie $x_1+3x_2=(x_1+2x_2)+x_2\ge2$. Au point $x=(2,0)$, le multiplicateur $q=-1$ donne $M^{\mathsf T}q=(1,2)$ et $p-M^{\mathsf T}q=(0,1)$. Les deux produits de complémentarité sont nuls et $bq=2$.
+
+![Au minimum de x₁ + 3x₂, la droite de coût rencontre le domaine admissible en (2, 0).](figures/contraintes-actives.svg)
 
 ## IV. Minimisation de la norme ℓ¹ et nombre de coordonnées non nulles
 
@@ -154,6 +174,8 @@ Notons $B=\{v:\|v\|_1<r\}$ et $L=\{z:Mz=b\}$. Le convexe $L-B$ est non vide et n
 $$q\cdot x\ge r\|q\|_\infty=\|x\|_1\|q\|_\infty\ge q\cdot x.$$
 Chaque écart $\|q\|_\infty|x_i|-q_ix_i$ est non négatif. Leur somme étant nulle, ils sont tous nuls, comme demandé.
 
+Pour préciser l’extraction d’un vecteur de la boule ouverte, choisir $j$ tel que $|q_j|=\|q\|_\infty$ et $v_\delta=(1-\delta)r\,\operatorname{sgn}(q_j)e_j$, où $0<\delta<1$. Son produit avec $q$ tend vers $r\|q\|_\infty$. La séparation reste valable dans la limite, alors même que la boule ouverte ne contient pas ce point de contact.
+
 ### Question 24
 
 Par 23, $x$ satisfait les conditions et appartient à $K$. Pour $y\in K$, toute coordonnée $y_i\ne0$ implique $x_i\ne0$, donc $|q_i|=\|q\|_\infty$ par 23. En outre $q_i y_i\ge0$. Ainsi $q\cdot y=\|q\|_\infty\|y\|_1$. Comme $M(y-x)=0$ et que $q\perp\ker M$, $q\cdot y=q\cdot x=\|q\|_\infty r$. En divisant par $\|q\|_\infty>0$, on trouve $\|y\|_1=r$, d’où $K\subset C$.
@@ -167,3 +189,5 @@ Supposons $Mh=0$ et $h_i=0$ lorsque $y_i=0$. Pour tout $i$ où $h_i\ne0$, $y_i\n
 Soit $S=I_+(y)\cup I_-(y)$. La question 25 dit que la restriction de $M$ au sous-espace $V_S$ des vecteurs nuls hors de $S$ est injective. Ainsi $|S|=\dim V_S\le\operatorname{rg} M=k$. Il reste à vérifier que l’on dispose d’un tel $y$. L’ensemble $K$ est fermé convexe par ses contraintes affines et ses demi-espaces. Il est non vide et borné par 24 et 22. La question 14 lui donne un point extrémal. Celui-ci résout $My=b$, minimise la norme $\ell^1$ et a au plus $k$ coordonnées non nulles.
 
 ![Figure 3 — Pour la contrainte x₁ + x₂ = 1, le segment orange minimise la norme ℓ¹. Ses deux extrémités ont chacune une seule coordonnée non nulle.](figures/extremaux-support.svg)
+
+En termes de colonnes, toute relation entre les $M e_i$ pour $i\in S$ se prolonge par zéro en un vecteur $h$ comme en 25. Ces colonnes sont donc indépendantes. Par exemple, dans le dessin, les minimiseurs intérieurs du segment ont deux coordonnées strictement positives pour une seule équation. Ce sont les deux extrémités qui atteignent la borne de support.

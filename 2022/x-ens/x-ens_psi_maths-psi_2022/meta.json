@@ -4,14 +4,16 @@
     "concours": "X-ENS",
     "filiere": "PSI",
     "matiere": "Maths PSI",
-    "annee": 2022
+    "annee": 2022,
+    "modalite": "écrit"
   },
   "questions": 32,
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
     "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2022_Sujet_Ecrit_PSI_Math%C3%A9matiques.pdf",
     "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2022_Rapport_Ecrit_PSI_Maths.pdf",
-    "sha256_sujet": "bd6258cc2580cba543693e5ea7c102c93226fe5af125335624625b93b19589e0"
+    "sha256_sujet": "bd6258cc2580cba543693e5ea7c102c93226fe5af125335624625b93b19589e0",
+    "sha256_rapport": "3dfe137a4aae070755358253bab1780d408922980ace54d7378165cf8c6120f1"
   },
   "figures": [
     {
@@ -28,6 +30,12 @@
       "fichier": "figures/extremaux-support.svg",
       "question": "26",
       "legende": "Pour la contrainte x₁ + x₂ = 1, le segment orange minimise la norme ℓ¹. Ses deux extrémités ont chacune une seule coordonnée non nulle."
+    },
+    {
+      "fichier": "figures/contraintes-actives.svg",
+      "question": "20c",
+      "legende": "Au minimum de x₁ + 3x₂, la droite de coût rencontre le domaine admissible en (2, 0).",
+      "provenance": "Figure originale pour le contrôle de cette question."
     }
   ],
   "contributions": [
@@ -41,6 +49,329 @@
       "perimetre": "Rédaction intégrale des 32 réponses et des indications de résolution. Vérification des preuves de séparation en dimension affine, de fermeture du cône engendré, de dualité et de parcimonie sur l’énoncé original et le rapport. Trois figures originales dont les quatre projections sur une même planche.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Reprise des 32 réponses sur la projection, la séparation en dimension relative, les points extrémaux, la fermeture des cônes et les solutions parcimonieuses. Vérification des quatre projections et des cas dégénérés."
     }
-  ]
+  ],
+  "duree_heures": 4,
+  "date_revision": "2026-11-26",
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2022_Sujet_Ecrit_PSI_Math%C3%A9matiques.pdf",
+      "sha256": "bd6258cc2580cba543693e5ea7c102c93226fe5af125335624625b93b19589e0",
+      "pages": 8,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "864ee5b1bae0c510562588faad5383f076bc19b9fa24e1324bdb1ebe6facb79d"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "0180e38be48d6814cf4ab387f07802d4d5601ebf1838aa2eb0e0c9326df3635a"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "281a3370164364928684551bc01716d46378c438113b25804b3194c81f7e9238"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "8fa6d749a791cda66b6ebfe6703ca4d24c2daf0d97ff3229b3a73cf42968dab4"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "d140ed75d9db60383087097c90c48b3d6930f4d8b1a92716a4f29830791d150c"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "90666e50e85141cb96a40082f2ee05633c501bcaa5177b29a257e3e3d99a0b02"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "e69d0a402e788d3b0460173348d95705af4028aa82b126b0e66149f6b0f98ed8"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "f13621a117b35562ff36f744690ea2897bed46775b9a50b7d9fac7e1abd75e60"
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2022_Rapport_Ecrit_PSI_Maths.pdf",
+      "sha256": "3dfe137a4aae070755358253bab1780d408922980ace54d7378165cf8c6120f1",
+      "pages": 4,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "c009b499a94d6cb2a0d6b8cea7cf8623726f7fcabd4a4b2f5bc329dd039a898d"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "6aa6c77bfe8c0eb0fb90c108812e7f5c0a927cf17954cf7f30be3c5f629ecdbf"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "fb7f1809df496ec3c3e2ba34af54e6c60a0a1a5f45b8a6eb7e2eada0c5127a1a"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "8ecee54567d7cde3ee6a659fb11d8f666ad6dc7b4f1bc631d5791b4c6a6be09a"
+        }
+      ]
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4i",
+      "4ii",
+      "4iii",
+      "4iv",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9a",
+      "9b",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20a",
+      "20b",
+      "20c",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "1",
+        "page_pdf": 3,
+        "objet": "Existence, unicité et points fixes du projeté",
+        "page_rapport": 1
+      },
+      {
+        "question": "2",
+        "page_pdf": 3,
+        "objet": "Caractérisation variationnelle",
+        "page_rapport": 1
+      },
+      {
+        "question": "3",
+        "page_pdf": 3,
+        "objet": "Contraction au sens large",
+        "page_rapport": 1
+      },
+      {
+        "question": "4i",
+        "page_pdf": 3,
+        "objet": "Orthant positif",
+        "page_rapport": 1
+      },
+      {
+        "question": "4ii",
+        "page_pdf": 3,
+        "objet": "Boule euclidienne",
+        "page_rapport": 1
+      },
+      {
+        "question": "4iii",
+        "page_pdf": 3,
+        "objet": "Demi-espace de normale diagonale",
+        "page_rapport": 1
+      },
+      {
+        "question": "4iv",
+        "page_pdf": 3,
+        "objet": "Hypercube",
+        "page_rapport": 1
+      },
+      {
+        "question": "5",
+        "page_pdf": 3,
+        "objet": "Compacité de la partie soustraite",
+        "page_rapport": 1
+      },
+      {
+        "question": "6",
+        "page_pdf": 3,
+        "objet": "Marge de séparation stricte",
+        "page_rapport": 2
+      },
+      {
+        "question": "7",
+        "page_pdf": 4,
+        "objet": "Fonction d’appui et demi-espaces",
+        "page_rapport": 2
+      },
+      {
+        "question": "8",
+        "page_pdf": 4,
+        "objet": "Séparation faible sans fermeture",
+        "page_rapport": 2
+      },
+      {
+        "question": "9a",
+        "page_pdf": 4,
+        "objet": "Barycentre fini",
+        "page_rapport": 2
+      },
+      {
+        "question": "9b",
+        "page_pdf": 4,
+        "objet": "Support d’un barycentre extrémal",
+        "page_rapport": 2
+      },
+      {
+        "question": "10",
+        "page_pdf": 4,
+        "objet": "Caractérisation de l’enveloppe convexe",
+        "page_rapport": 2
+      },
+      {
+        "question": "11",
+        "page_pdf": 5,
+        "objet": "Points extrémaux non fermés",
+        "page_rapport": 2
+      },
+      {
+        "question": "12",
+        "page_pdf": 5,
+        "objet": "Normales actives, rang et cardinal",
+        "page_rapport": 2,
+        "suite_rapport": 3
+      },
+      {
+        "question": "13",
+        "page_pdf": 5,
+        "objet": "Face d’appui et extrémalité",
+        "page_rapport": 3
+      },
+      {
+        "question": "14",
+        "page_pdf": 5,
+        "objet": "Existence d’un point extrémal",
+        "page_rapport": 3
+      },
+      {
+        "question": "15",
+        "page_pdf": 5,
+        "objet": "Décomposition en points extrémaux",
+        "page_rapport": 3
+      },
+      {
+        "question": "16",
+        "page_pdf": 6,
+        "objet": "Polaire et bipolaire positifs",
+        "page_rapport": 3
+      },
+      {
+        "question": "17",
+        "page_pdf": 6,
+        "objet": "Théorème bipolaire",
+        "page_rapport": 3
+      },
+      {
+        "question": "18",
+        "page_pdf": 6,
+        "objet": "Fermeture du cône finiment engendré et alternative",
+        "page_rapport": 3,
+        "suite_rapport": 4
+      },
+      {
+        "question": "19",
+        "page_pdf": 6,
+        "objet": "Dualité faible",
+        "page_rapport": 4
+      },
+      {
+        "question": "20a",
+        "page_pdf": 7,
+        "objet": "Directions admissibles au premier ordre",
+        "page_rapport": 4
+      },
+      {
+        "question": "20b",
+        "page_pdf": 7,
+        "objet": "Multiplicateurs actifs et complémentarité",
+        "page_rapport": 4
+      },
+      {
+        "question": "20c",
+        "page_pdf": 7,
+        "objet": "Atteinte du dual et valeur",
+        "page_rapport": 4
+      },
+      {
+        "question": "21",
+        "page_pdf": 7,
+        "objet": "Dualité des normes",
+        "page_rapport": 4
+      },
+      {
+        "question": "22",
+        "page_pdf": 7,
+        "objet": "Existence et compacité des minimiseurs",
+        "page_rapport": 4
+      },
+      {
+        "question": "23",
+        "page_pdf": 8,
+        "objet": "Séparateur orthogonal au noyau",
+        "page_rapport": 4,
+        "rubrique_jury": "Questions 23 à 26 groupées."
+      },
+      {
+        "question": "24",
+        "page_pdf": 8,
+        "objet": "Face contenue dans les minimiseurs",
+        "page_rapport": 4,
+        "rubrique_jury": "Questions 23 à 26 groupées."
+      },
+      {
+        "question": "25",
+        "page_pdf": 8,
+        "objet": "Perturbations compatibles avec le support",
+        "page_rapport": 4,
+        "rubrique_jury": "Questions 23 à 26 groupées."
+      },
+      {
+        "question": "26",
+        "page_pdf": 8,
+        "objet": "Nombre de coordonnées non nulles",
+        "page_rapport": 4,
+        "rubrique_jury": "Questions 23 à 26 groupées."
+      }
+    ],
+    "annexes_imposees": []
+  }
 }
