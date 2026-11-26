@@ -1,0 +1,86 @@
+{
+  "slug": "bel_al_espagnol-theme-lyon_2023",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Espagnol (thème Lyon)",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "duree_heures": 4,
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2023-09/Epreuve-de-specialite.pdf#page=13",
+    "sujet_sha256": "d646a518fbe4febf8a67e582f0310174ed455fa1f7d2c93d37f450a6420673a2",
+    "page_pdf_sujet": 13,
+    "pages_fascicule": 20,
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2023-11/Espagnol-2023.pdf#page=13",
+    "sha256_rapport_jury": "ea554ec747301e53e8166905cad450900faddb17bd68c6a5a581c0c808c9b5e9",
+    "pages_rapport_verifiees": [
+      13,
+      14,
+      15,
+      16
+    ],
+    "ouvrage": "Guy de Maupassant, « Le Testament », Contes de la Bécasse (1883)",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2023"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/filiation.svg",
+      "question": "Thème intégral",
+      "legende": "Les indices de filiation dans les deux portraits"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Thème intégral en espagnol"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes_par_paragraphe": [
+      "La mère, son mariage, la peur et la couleur des cheveux.",
+      "Bourneval, le patronyme, Rousseau et le réquisitoire final."
+    ]
+  },
+  "contributions": [
+    {
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "phase": "redaction",
+      "perimetre": "Traduction complète du passage, indications, commentaire des variantes et schéma de lecture."
+    },
+    {
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "perimetre": "Précision apportée à la valeur du conditionnel passé sur la paternité, au sens d’épouses pour les fermières et à la fonction des présents du narrateur. Relecture de la portée des deux portraits."
+    }
+  ]
+}
