@@ -96,14 +96,12 @@ Au centre transversal $u=0$, les colonnes de $Dg$ sont $\cos v_0\,E$ et $4H$. La
 
 ### Question 13.a
 
-Pour $v_0\ne\pm\pi/2$, le déterminant précédent est non nul. Les expressions trigonométriques définissent $g$ sur un ouvert de $\mathbb R^2$ contenant $(0,v_0)$. Le théorème d’inversion locale fournit alors une restriction injective et une application réciproque $h$ de classe $C^1$ (même $C^\infty$). Aux bords $v_0=\pm\pi$, on utilise ce prolongement puis on restreint au rectangle si nécessaire. Le scan exclut les deux signes. À chacun des angles exclus, toute la génératrice se projette en un point.
+Pour $v_0\ne\pm\pi/2$, $J\ne0$. Les formules trigonométriques prolongent $g$ en une application lisse sur $\mathbb R^2$. L’inversion locale donne l’injectivité et une réciproque $h$ lisse sur des ouverts, que l’on restreint au rectangle si $v_0=\pm\pi$. Le scan exclut bien les deux angles où la génératrice se projette en un point.
 
 ### Question 13.b
 
-Écrivons $q=F_3\circ h$. La relation $q\circ g=F_3$ donne $\nabla q\cdot(\cos v_0\,E)=\sin v_0$ et $\nabla q\cdot(4H)=0$. Ainsi la pente est radiale et
-$$\partial_x q=\tan v_0\cos(2v_0),\qquad \partial_y q=\tan v_0\sin(2v_0)$$
-au point $g(0,v_0)=(2\cos2v_0,2\sin2v_0)$.
+Pour $q=F_3\circ h$, différentier $q\circ g=F_3$ donne $\nabla q\cdot E=\tan v_0$ et $\nabla q\cdot H=0$. Ainsi, en $g(0,v_0)=2E$, on a $(\partial_x q,\partial_y q)=\tan v_0(\cos2v_0,\sin2v_0)$.
 
 ### Question 14
 
-En $F(0,0)=(2,0,0)$, $N(0)=K$ et le plan tangent est $z=0$. Au voisinage, $F_3=\sin u\sin v$ a le signe de $uv$. La surface passe donc des deux côtés du plan, avec deux secteurs positifs et deux négatifs. L’intersection avec le plan est localement formée du segment radial $v=0$ et de l’arc de cercle $u=0$, dont les tangentes sont transverses. Plus précisément, si $X=x-2$ et $Y=y$, le différentiel de $g$ en $(0,0)$ donne $u=X+O(X^2+Y^2)$ et $v=Y/4+O(X^2+Y^2)$. La hauteur commence par $XY/4$, de forme quadratique indéfinie. Le point est un point selle.
+En $F(0,0)=(2,0,0)$, la normale $K$ donne le plan tangent $z=0$. La hauteur $\sin u\sin v$ a localement le signe de $uv$. Les deux secteurs positifs et les deux secteurs négatifs alternent de part et d’autre de l’arc de cercle $u=0$ et du segment radial $v=0$. Ces deux courbes se coupent à angle droit. Avec $X=x-2$ et $Y=y$, l’inversion de $Dg(0,0)$ donne $u=X+O(X^2+Y^2)$ et $v=Y/4+O(X^2+Y^2)$. Le terme quadratique de $z$ est $XY/4$, celui d’un point selle.
