@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Sujet et document réponse](https://www.banquept.fr/documents/2017/ph_b_th_2017_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2017/rapport_phys_b_ecrit_2017.pdf) · [Coefficients de la session](https://www.banquept.fr/documents/livret/2017/Livret_PT_2017.pdf#page=12)
 
 **Chauffage d’une habitation par une pompe à chaleur au R407C.** Les puissances et transferts sont orientés explicitement dans les bilans. Les valeurs relevées graphiquement sont arrondies à la précision des diagrammes du sujet.
@@ -24,7 +26,7 @@ Il s’agit de l’effet de serre, que renforce une augmentation de la teneur at
 
 ### Question 4 · Pente dans le domaine diphasé
 
-Sur une isobare, la vaporisation augmente le volume massique et la température du mélange. À volume fixé, une élévation de pression relève aussi la température d’équilibre. Pour augmenter le volume à température constante, il faut donc abaisser la pression. La pente $(\partial P/\partial v)_T$ est négative entre les branches de saturation.
+Sur une isobare, la vaporisation augmente le volume massique et la température du mélange. À volume fixé, une élévation de pression relève aussi la température d’équilibre. Pour augmenter le volume à température constante, il faut donc abaisser la pression. La pente $(\partial P/\partial v)_T$ est négative entre les branches de saturation. C’est le glissement à pression fixée qui renseigne ici sur la pente dans la zone diphasée.
 
 ## Cycle et diagrammes
 
@@ -89,7 +91,7 @@ En régime permanent, par kilogramme de fluide, $w_i+q=\Delta h+\Delta e_c+\Delt
 
 ### Question 16 · Travail et entropie de compression
 
-**a)** Le compresseur fournit au fluide $318-275=43$ kJ/kg, soit environ 43,0 kJ/kg avec les valeurs centrales. **b)** L’entropie augmente de $1{,}05-1{,}02=0{,}03$ kJ/(kg·K), soit environ 30 J/(kg·K). La dernière décimale est limitée par la précision des deux lectures.
+**a)** Le compresseur fournit au fluide $318-275=43$ kJ/kg, à la précision de la différence d’enthalpies tabulées. **b)** L’entropie augmente de $1{,}05-1{,}02=0{,}03$ kJ/(kg·K), soit environ 30 J/(kg·K). La dernière décimale est limitée par la précision des deux lectures.
 
 ## Condenseur
 
@@ -103,7 +105,7 @@ Le sous-refroidissement isobare refroidit le liquide de D à E de 5,0 K sous la 
 
 ### Question 19 · Enthalpie de vaporisation et transfert au logement
 
-**a)** L’enthalpie massique de vaporisation à 18,0 bar vaut $h_C-h_D=280-120=160$ kJ/kg. **b)** Sur B→E, l’échangeur fixe ne reçoit aucun travail indiqué. Le fluide reçoit $q_{\rm cond}=h_E-h_B=113-318=-205$ kJ/kg. Le logement reçoit 205 kJ/kg de fluide.
+**a)** L’enthalpie massique de vaporisation à 18,0 bar vaut $h_C-h_D=280-120=160$ kJ/kg. **b)** Sur B→E, l’échangeur fixe ne reçoit aucun travail indiqué. Le fluide reçoit $q_{\rm cond}=h_E-h_B=113-318=-205$ kJ/kg. Le logement reçoit 205 kJ/kg de fluide, dont 38 kJ/kg pendant la désurchauffe, 160 pendant la condensation et 7 pendant le sous-refroidissement.
 
 ## Détendeur
 
