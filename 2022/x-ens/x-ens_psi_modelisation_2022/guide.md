@@ -6,6 +6,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Repères de résolution
 
 En biomécanique, identifier la grandeur imposée avant de déduire le signe des variations de contrainte. En hydraulique, fixer le sens positif du débit et utiliser le rayon donné. Dans la partie numérique, le pas est exprimé en secondes, les échantillons antérieurs au début du signal sont nuls et les sorties se calculent dans l’ordre des flèches de la figure 23.
@@ -341,7 +343,9 @@ La constante de temps est $\tau_a=R_aC_a$. Lorsque le clapet se ferme, on prend 
 
 Pour un plateau de durée $T_h$ dans une période $T$, $Q_{\rm moy}=Q_{\max}T_h/T$. En régime périodique, $\langle p^*\rangle=p_s+R_aQ_{\rm moy}$. Durant le plateau, la pression tend exponentiellement vers $p_s+R_aQ_{\max}$ et, pendant la diastole, vers $p_s$, toujours avec la constante $\tau_a$.
 
-À $\omega_1=10/\tau_a$, la période est $0,628\tau_a$ et la pression ondule autour de sa moyenne sans suivre entièrement les créneaux. À $\omega_2=1/(10\tau_a)$, la période est $62,8\tau_a$ et les deux plateaux deviennent presque accessibles si la fraction de systole est du même ordre que celle de la figure. Le tracé ci-dessous fixe $T_h/T=0,4$ pour illustrer les deux allures sur une phase normalisée.
+À $\omega_1=10/\tau_a$, la période est $0,628\tau_a$ et la pression ondule autour de sa moyenne sans suivre entièrement les créneaux. À $\omega_2=1/(10\tau_a)$, la période est $62,8\tau_a$ et les deux plateaux deviennent presque accessibles si la fraction de systole est du même ordre que celle de la figure. On peut vérifier graphiquement les niveaux en résolvant le raccord aux deux commutations. Posons $a=e^{-T_h/\tau_a}$, $b=e^{-(T-T_h)/\tau_a}$ et $z=(p^*-p_s)/(R_aQ_{\max})$. Le plateau haut mène de $z_{\min}$ à $z_{\max}=1-a+az_{\min}$, puis le plateau bas ramène à $z_{\min}=bz_{\max}$. On obtient $z_{\max}=(1-a)/(1-ab)$ et $z_{\min}=b(1-a)/(1-ab)$. L’ordonnée moyenne vaut toujours $T_h/T$ par intégration du bilan sur une période.
+
+Le tracé ci-dessous fixe $T_h/T=0,4$ pour illustrer les deux allures sur une phase normalisée.
 
 ![Réponses périodiques du Windkessel. Le débit est rapporté à son maximum et la surpression à Ra Qmax. Chaque fenêtre contient deux périodes.](figures/q31-reponses-creneau.svg)
 
