@@ -770,6 +770,7 @@
 | 2024 | BEL | BL | Économie (oral commun) — 14 juin, dossier 1 | [md](2024/bel/bel_bl_economie-oral-commun-14-juin-dossier-1_2024/brut.md) | [md](2024/bel/bel_bl_economie-oral-commun-14-juin-dossier-1_2024/guide.md) |
 | 2024 | BEL | BL | Économie (oral commun) — 20 juin | [md](2024/bel/bel_bl_economie-oral-commun-20-juin_2024/brut.md) | [md](2024/bel/bel_bl_economie-oral-commun-20-juin_2024/guide.md) |
 | 2024 | BEL | BL | Histoire contemporaine | [md](2024/bel/bel_bl_histoire-contemporaine_2024/brut.md) | [md](2024/bel/bel_bl_histoire-contemporaine_2024/guide.md) |
+| 2024 | BEL | BL | Histoire contemporaine (oral tronc commun, 10 juin) | [md](2024/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-10-juin_2024/brut.md) | [md](2024/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-10-juin_2024/guide.md) |
 | 2025 | BEL | BL | Histoire contemporaine | [md](2025/bel/bel_bl_histoire-contemporaine_2025/brut.md) | [md](2025/bel/bel_bl_histoire-contemporaine_2025/guide.md) |
 | 2026 | BEL | BL | Histoire contemporaine | [md](2026/bel/bel_bl_histoire-contemporaine_2026/brut.md) | [md](2026/bel/bel_bl_histoire-contemporaine_2026/guide.md) |
 | 2026 | BEL | BL | Italien | [md](2026/bel/bel_bl_italien_2026/brut.md) | [md](2026/bel/bel_bl_italien_2026/guide.md) |
