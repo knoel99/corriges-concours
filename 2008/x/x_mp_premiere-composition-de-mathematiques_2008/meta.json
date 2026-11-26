@@ -9,9 +9,10 @@
   "questions": 24,
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
-    "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-1_mp_2008.pdf",
+    "sujet": "https://fichiers.wikiprepa.fr/data/x_maths-1_mp_2008.pdf",
     "rapport_jury": "https://www.wikiprepa.fr/concours/data/x_maths-1_mp_2008_rapport_jury.pdf",
-    "sha256_sujet": "ed1a1c777596df616142c592d4e054d88e447241bb06a4bf52ba6ee3d7b8e27d"
+    "sha256_sujet": "ed1a1c777596df616142c592d4e054d88e447241bb06a4bf52ba6ee3d7b8e27d",
+    "sha256_rapport_jury": "09413042ab5feffd0f7da4161ad9b89c89c023c1cd15d40f19c0b42ba178d2c1"
   },
   "figures": [
     {
@@ -31,6 +32,79 @@
       "perimetre": "Rédaction intégrale des deux éditions sur les quatre pages du sujet et les trois pages du rapport officiel. Noyaux et facteurs intégrants, théorème de comparaison, perturbation des zéros simples, traversée du bord et énumération complète des valeurs propres. Figure de la traversée du premier zéro pour le potentiel nul.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Séparation et comparaison de Sturm, cas entier dans la borne inférieure, saut au bord de Dirichlet, contrôle sur potentiel nul et décompte des zéros intérieurs.",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "agent": "rennes_oraux_economie",
+      "session": "rennes_oraux_economie"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.a",
+      "1.b",
+      "2.a",
+      "2.b",
+      "3.a",
+      "3.b",
+      "4.a",
+      "4.b",
+      "5.a",
+      "5.b",
+      "6.a",
+      "6.b",
+      "7.a",
+      "7.b",
+      "7.c",
+      "8.a",
+      "8.b",
+      "8.c",
+      "9",
+      "10.a",
+      "10.b",
+      "11",
+      "12",
+      "13"
+    ],
+    "pages_du_sujet": 4,
+    "pages_pdf_des_questions": {
+      "1.a": 1,
+      "1.b": 1,
+      "2.a": 1,
+      "2.b": 1,
+      "3.a": 2,
+      "3.b": 2,
+      "4.a": 2,
+      "4.b": 2,
+      "5.a": 2,
+      "5.b": 2,
+      "6.a": 2,
+      "6.b": 2,
+      "7.a": 3,
+      "7.b": 3,
+      "7.c": 3,
+      "8.a": 3,
+      "8.b": 3,
+      "8.c": 3,
+      "9": 3,
+      "10.a": 4,
+      "10.b": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4
+    },
+    "precision": "Sous-questions relevées sur le fac-similé. Le numéro de page désigne le début de chaque demande dans le PDF original."
+  }
 }
