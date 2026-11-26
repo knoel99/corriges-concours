@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le poste Axelle saisit deux cubes, les identifie puis les dépose. Le mouvement plan du plateau provient de deux bras motorisés. Un troisième moteur oriente le préhenseur autour de la verticale. Les numéros de page des renvois comptent depuis la garde du PDF officiel.
 
 [Sujet et cahier officiels](https://www.banquept.fr/documents/2023/si_a_2023_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2023/rapport_si_a_ecrit_2023.pdf)
@@ -19,7 +21,7 @@ Le jury signale trois difficultés précises. Pour un codeur, la grandeur mesur�
 
 #### Solution
 
-La figure remplit les cases du cahier. E désigne une puissance transmise, I un ordre, un compte rendu ou une mesure. Sont en E le secteur, les alimentations de puissance des variateurs, les sorties vers les moteurs, les transmissions des mécanismes jusqu’au plateau, l’air et la dépression. Sont en I Ethernet, les mesures de la caméra et des codeurs, les échanges de commande avec les variateurs et la commande du distributeur.
+La figure remplit les cases du cahier. E désigne une puissance transmise, I un ordre, un compte rendu ou une mesure. Sont en E le secteur, les alimentations de puissance des variateurs, les sorties vers les moteurs, les transmissions des mécanismes jusqu’au plateau, l’air et la dépression. Sont en I Ethernet, les mesures de la caméra et des codeurs, les échanges de commande avec les variateurs et la commande du distributeur. Une liaison d’un arbre à un codeur représente ici l’angle à mesurer. En revanche, celle du même arbre à la transmission transporte le couple.
 
 ![Puissance et information dans les cases du document réponse](figures/flux.svg)
 
@@ -54,7 +56,7 @@ Relier 1 à l’arrivée, 2 à l’entrée du Venturi et 3 à l’échappement. 
 
 #### Solution
 
-Pour les trois dessins, 1 et 2 finissent vides. Dans l’ordre des départs du cahier, les cases 3 et 4 contiennent respectivement (A, B), (A, B) et (A, A). Les deux cubes déposés ont dans chaque cas leur inscription vers l’avant, flèche sud-ouest sur le cahier. La caméra placée à l’arrière reconnaît la face après zéro ou plusieurs quarts de tour. Le demi-tour suivant impose donc la même orientation finale.
+Pour les trois dessins, 1 et 2 finissent vides. Dans l’ordre des départs du cahier, les cases 3 et 4 contiennent respectivement (A, B), (A, B) et (A, A). Les deux cubes déposés ont dans chaque cas leur inscription vers l’avant, flèche sud-ouest sur le cahier. La caméra placée à l’arrière reconnaît la face après zéro ou plusieurs quarts de tour. Le demi-tour suivant impose donc la même orientation finale. A cherche d’abord 3 et se reporte sur 4 si 3 est occupé. B cherche d’abord 4 et se reporte sur 3 si nécessaire. Les drapeaux sont posés à la sortie des déplacements de dépose.
 
 ![Cases retenues après traitement des deux cubes](figures/cycle.svg)
 
@@ -80,7 +82,7 @@ Deux translations selon les axes du plan et une rotation suivant sa normale sont
 
 #### Solution
 
-Six pivots imposent $6\\times5=30$ contraintes scalaires. Les cinq solides mobiles portent $6\\times5=30$ coordonnées et la mobilité totale vaut 3. Le rang des contraintes est donc 27 et $h=30-27=3$. Ce décompte utilise les torseurs spatiaux.
+Six pivots imposent $6\times5=30$ contraintes scalaires. Les cinq solides mobiles portent $6\times5=30$ coordonnées et la mobilité totale vaut 3. Le rang des contraintes est donc 27 et $h=30-27=3$. Ce décompte utilise les torseurs spatiaux.
 
 ### Question 7 — Décrire la mobilité du plateau complet
 
@@ -98,7 +100,7 @@ Le parallélogramme avec 8 conserve l’orientation du triangle 7, puis celui qu
 
 #### Solution
 
-Dix solides mobiles, onze pivots et quatre rotules donnent $N_s=11\\times5+4\\times3=67$. Les deux mouvements commandés et les rotations de 6 et 8 chacune autour de l’axe de ses rotules donnent $m=4$. Ainsi $h=N_s-60+m=11$.
+Dix solides mobiles, onze pivots et quatre rotules donnent $N_s=11\times5+4\times3=67$. Les deux mouvements commandés et les rotations de 6 et 8 chacune autour de l’axe de ses rotules donnent $m=4$. Ainsi $h=N_s-60+m=11$.
 
 ### Question 9 — Assouplir les liaisons du bras gauche
 
@@ -118,7 +120,7 @@ Une solution consiste à garder les pivots en $B_2$ sur 4a et 4b et à remplacer
 
 #### Solution
 
-On a $OD=OA_1+A_1B_1+B_1C_1+C_1D$ en vecteurs. Les composantes valent $x=a-d+b\\cos\\theta_{10}+c\\cos\\theta_{30}$ et $y=b\\sin\\theta_{10}+c\\sin\\theta_{30}$. Le signe du décalage vient de $DC_1=d x_0$.
+On a $OD=OA_1+A_1B_1+B_1C_1+C_1D$ en vecteurs. Les composantes valent $x=a-d+b\cos\theta_{10}+c\cos\theta_{30}$ et $y=b\sin\theta_{10}+c\sin\theta_{30}$. Le signe du décalage vient de $DC_1=d x_0$.
 
 [Sujet p. 7](https://www.banquept.fr/documents/2023/si_a_2023_pt.pdf#page=7) · [Cahier p. 38 du PDF](https://www.banquept.fr/documents/2023/si_a_2023_pt.pdf#page=38)
 
@@ -129,7 +131,7 @@ On a $OD=OA_1+A_1B_1+B_1C_1+C_1D$ en vecteurs. Les composantes valent $x=a-d+b\\
 
 #### Solution
 
-À $x=0$, $\\cos\\theta_{ref}=(d-a)/(b+c)$. Comme $-\\pi<\\theta_{ref}<0$, $\\theta_{ref}=-\\arccos((d-a)/(b+c))$. On obtient $h_0=-(b+c)\\sin\\theta_{ref}=\\sqrt{(b+c)^2-(a-d)^2}$, soit environ 657 mm et un angle de $-95,2^\\circ$.
+À $x=0$, $\cos\theta_{ref}=(d-a)/(b+c)$. Comme $-\pi<\theta_{ref}<0$, $\theta_{ref}=-\arccos((d-a)/(b+c))$. On obtient $h_0=-(b+c)\sin\theta_{ref}=\sqrt{(b+c)^2-(a-d)^2}$, soit environ 657 mm et un angle de $-95,2^\circ$.
 
 ### Question 12 — Éliminer l’angle passif
 
@@ -138,7 +140,7 @@ On a $OD=OA_1+A_1B_1+B_1C_1+C_1D$ en vecteurs. Les composantes valent $x=a-d+b\\
 
 #### Solution
 
-La distance de $B_1$ à $C_1$ impose $(x-a+d-b\\cos\\theta_{10})^2+(y-b\\sin\\theta_{10})^2=c^2$. Le signe de $a-d$ s’inverse dans la fermeture du bras gauche donnée par B.1.
+La distance de $B_1$ à $C_1$ impose $(x-a+d-b\cos\theta_{10})^2+(y-b\sin\theta_{10})^2=c^2$. Le signe de $a-d$ s’inverse dans la fermeture du bras gauche donnée par B.1.
 
 ### Question 13 — Échantillonner le mouvement de prise et de dépose
 
@@ -147,7 +149,7 @@ La distance de $B_1$ à $C_1$ impose $(x-a+d-b\\cos\\theta_{10})^2+(y-b\\sin\\th
 
 #### Solution
 
-Posons $u=-h_0+e$. Pour $0\\le k\\le n$, $(x_k,y_k)=(-r_p,u+\\Delta y\\, k/n)$. Entre $n$ et $2n$, avec $v=\\pi(k-n)/n$, $(x_k,y_k)=(-r_p\\cos v,u+\\Delta y+r_p\\sin v)$. Entre $2n$ et $3n$, $(x_k,y_k)=(r_p,u+\\Delta y(3n-k)/n)$.
+Posons $u=-h_0+e$. Pour $0\le k\le n$, $(x_k,y_k)=(-r_p,u+\Delta y\, k/n)$. Entre $n$ et $2n$, avec $v=\pi(k-n)/n$, $(x_k,y_k)=(-r_p\cos v,u+\Delta y+r_p\sin v)$. Entre $2n$ et $3n$, $(x_k,y_k)=(r_p,u+\Delta y(3n-k)/n)$. À la jonction, ne mémoriser chaque extrémité qu’une fois. Le milieu de l’arc est au-dessus des deux extrémités, et il y a $3n+1$ points.
 
 ### Question 14 — Programmer la dichotomie
 
@@ -192,7 +194,7 @@ def dichotomie(f, xg, xd, eps=10**-8):
 
 #### Solution
 
-Le plan $(A_i,x_i,z_0)$ peut être un plan de symétrie de la distribution de masse. À tout élément $(x,y,z)$ correspond alors un élément de même masse $(x,-y,z)$. Leurs contributions à $\\int xy\\,dm$ et à $\\int yz\\,dm$ se compensent. Le terme en $xz$ peut subsister.
+Le plan $(A_i,x_i,z_0)$ peut être un plan de symétrie de la distribution de masse. À tout élément $(x,y,z)$ correspond alors un élément de même masse $(x,-y,z)$. Leurs contributions à $\int xy\,dm$ et à $\int yz\,dm$ se compensent. Le terme en $xz$ peut subsister.
 
 [Sujet p. 9](https://www.banquept.fr/documents/2023/si_a_2023_pt.pdf#page=9) · [Cahier p. 42 du PDF](https://www.banquept.fr/documents/2023/si_a_2023_pt.pdf#page=42)
 
@@ -203,7 +205,7 @@ Le plan $(A_i,x_i,z_0)$ peut être un plan de symétrie de la distribution de ma
 
 #### Solution
 
-La résultante est $m_5(\\ddot x x_0+\\ddot y y_0)$. Le moment dynamique au centre d’inertie est nul car le plateau garde son orientation. Au point D, le produit vectoriel de $DG_5$ par la résultante donne $m_5(x_g\\ddot y-y_g\\ddot x)z_0$.
+La résultante est $m_5(\ddot x x_0+\ddot y y_0)$. Le moment dynamique au centre d’inertie est nul car le plateau garde son orientation. Au point D, le produit vectoriel de $DG_5$ par la résultante donne $m_5(x_g\ddot y-y_g\ddot x)z_0$.
 
 ### Question 17 — Identifier la ligne d’action de la bielle 6
 
@@ -230,7 +232,7 @@ Isoler 4, dont le poids et l’inertie sont négligés. Les pivots parfaits en $
 
 #### Solution
 
-Isoler 5 seul dans les trois lignes. Posons $S=m_5[\\ddot x x_0+(\\ddot y+g)y_0]$. Ligne 1, résultante sur $y_3$ : $F_{45}(x_4\\cdot y_3)=S\\cdot y_3$. Ligne 2, résultante sur $y_4$ : $(F_{35}+F_{65})(x_3\\cdot y_4)=S\\cdot y_4$. Ligne 3, moment au point $C_2$ sur $z_0$ : $[C_2C_1\\times F_{35}x_3+C_2E\\times F_{65}x_3]\\cdot z_0=(C_2G_5\\times S)\\cdot z_0$.
+Isoler 5 seul dans les trois lignes. Posons $S=m_5[\ddot x x_0+(\ddot y+g)y_0]$. Ligne 1, résultante sur $y_3$ : $F_{45}(x_4\cdot y_3)=S\cdot y_3$. Ligne 2, résultante sur $y_4$ : $(F_{35}+F_{65})(x_3\cdot y_4)=S\cdot y_4$. Ligne 3, moment au point $C_2$ sur $z_0$ : $[C_2C_1\times F_{35}x_3+C_2E\times F_{65}x_3]\cdot z_0=(C_2G_5\times S)\cdot z_0$. Les deux dernières équations éliminent réellement $F_{45}$. Les lignes d’action distinctes de $F_{35}$ et $F_{65}$ donnent deux bras de levier différents dans les configurations ordinaires.
 
 ### Question 20 — Projeter le moment dynamique du bras 2
 
@@ -239,7 +241,7 @@ Isoler 5 seul dans les trois lignes. Posons $S=m_5[\\ddot x x_0+(\\ddot y+g)y_0]
 
 #### Solution
 
-La composante du moment cinétique sur l’axe fixe vaut $C_p\\dot\\theta_{20}$. En dérivant dans le référentiel galiléen on trouve $\\delta(A_2,2/0)\\cdot z_0=C_p\\ddot\\theta_{20}$. Le terme transversal en $E_p$ ne contribue pas à cette projection.
+La composante du moment cinétique sur l’axe fixe vaut $C_p\dot\theta_{20}$. En dérivant dans le référentiel galiléen on trouve $\delta(A_2,2/0)\cdot z_0=C_p\ddot\theta_{20}$. Le terme transversal en $E_p$ ne contribue pas à cette projection.
 
 ### Question 21 — Dimensionner le couple en sortie du réducteur
 
@@ -248,7 +250,7 @@ La composante du moment cinétique sur l’axe fixe vaut $C_p\\dot\\theta_{20}$.
 
 #### Solution
 
-En $B_2$, 4 exerce sur 2 la force $-F_{45}x_4$. Le poids s’applique à $a_g x_2$ de $A_2$. Les moments suivant $z_0$ donnent $C_{r2}-b F_{45}\\sin(\\theta_{40}-\\theta_{20})-m_p g a_g\\cos\\theta_{20}=C_p\\ddot\\theta_{20}$. Le couple demandé est donc la somme du terme inertiel et des deux termes de compensation.
+En $B_2$, 4 exerce sur 2 la force $-F_{45}x_4$. Le poids s’applique à $a_g x_2$ de $A_2$. Les moments suivant $z_0$ donnent $C_{r2}-b F_{45}\sin(\theta_{40}-\theta_{20})-m_p g a_g\cos\theta_{20}=C_p\ddot\theta_{20}$. Le couple demandé est donc la somme du terme inertiel et des deux termes de compensation.
 
 ## C.1 — Modèle du moteur
 
@@ -259,7 +261,7 @@ En $B_2$, 4 exerce sur 2 la force $-F_{45}x_4$. Le poids s’applique à $a_g x_
 
 #### Solution
 
-La vitesse du bras vaut $\\omega_m/r$ et celle des masses ponctuelles $b\\omega_m/r$. En sommant les quatre énergies, $J_{eq}=J_{bmot}+J_r+[C_p+(m_c+m_5)b^2]/r^2$. Le réducteur est déjà ramené à l’entrée.
+La vitesse du bras vaut $\omega_m/r$ et celle des masses ponctuelles $b\omega_m/r$. En sommant les quatre énergies, $J_{eq}=J_{bmot}+J_r+[C_p+(m_c+m_5)b^2]/r^2$. Le réducteur est déjà ramené à l’entrée.
 
 [Sujet p. 11](https://www.banquept.fr/documents/2023/si_a_2023_pt.pdf#page=11) · [Cahier p. 47 du PDF](https://www.banquept.fr/documents/2023/si_a_2023_pt.pdf#page=47)
 
@@ -270,7 +272,7 @@ La vitesse du bras vaut $\\omega_m/r$ et celle des masses ponctuelles $b\\omega_
 
 #### Solution
 
-Pour le diamètre de 30 mm, le fabricant donne 26,2 N sous 0,7 bar de dépression. À l’équilibre vertical $m_c g\\le26,2$, soit $m_c\\le2,67$ kg pour $g=9,81$ m/s². La donnée intègre la géométrie réelle du soufflet.
+Pour le diamètre de 30 mm, le fabricant donne 26,2 N sous 0,7 bar de dépression. À l’équilibre vertical $m_c g\le26,2$, soit $m_c\le2,67$ kg pour $g=9,81$ m/s². La donnée intègre la géométrie réelle du soufflet.
 
 ### Question 24 — Évaluer l’inertie équivalente
 
@@ -279,7 +281,7 @@ Pour le diamètre de 30 mm, le fabricant donne 26,2 N sous 0,7 bar de dépressio
 
 #### Solution
 
-$J_{bmot}=1,49\\times10^{-4}$ kg·m². Avec $b=0,220$ m, $m_c+m_5=3$ kg et $r=5$, on trouve $J_{eq}=0,000149+0,000050+(0,2+3\\times0,22^2)/25=0,014007$ kg·m². À un chiffre significatif, $0,01$ kg·m². La suite impose $0,02$ kg·m².
+$J_{bmot}=1,49\times10^{-4}$ kg·m². Avec $b=0,220$ m, $m_c+m_5=3$ kg et $r=5$, on trouve $J_{eq}=0,000149+0,000050+(0,2+3\times0,22^2)/25=0,014007$ kg·m². À un chiffre significatif, $0,01$ kg·m². La suite impose $0,02$ kg·m².
 
 ### Question 25 — Exprimer les tensions de Park
 
@@ -288,7 +290,7 @@ $J_{bmot}=1,49\\times10^{-4}$ kg·m². Avec $b=0,220$ m, $m_c+m_5=3$ kg et $r=5$
 
 #### Solution
 
-Les équations deviennent $v_d=Ri_d+L\\dot i_d-n_p\\omega_m L i_q$ et $v_q=Ri_q+L\\dot i_q+n_p\\omega_m(L i_d+\\phi_f)$. La rotation couple les deux axes même pour des inductances égales.
+Les équations deviennent $v_d=Ri_d+L\dot i_d-n_p\omega_m L i_q$ et $v_q=Ri_q+L\dot i_q+n_p\omega_m(L i_d+\phi_f)$. La rotation couple les deux axes même pour des inductances égales.
 
 ### Question 26 — Compléter le modèle de Laplace
 
@@ -297,7 +299,7 @@ Les équations deviennent $v_d=Ri_d+L\\dot i_d-n_p\\omega_m L i_q$ et $v_q=Ri_q+
 
 #### Solution
 
-Au repos initial, $V_d=(R+Lp)I_d-n_pL\\Pi[\\omega_m,i_q]$, $V_q=(R+Lp)I_q+n_pL\\Pi[\\omega_m,i_d]+n_p\\phi_f\\Omega_m$. Les deux autres relations sont $C_m=n_p\\phi_f I_q$ et $J_{eq}p\\Omega_m=C_m-C_r$ pour $f_v=0$.
+Au repos initial, $V_d=(R+Lp)I_d-n_pL\Pi[\omega_m,i_q]$, $V_q=(R+Lp)I_q+n_pL\Pi[\omega_m,i_d]+n_p\phi_f\Omega_m$. Les deux autres relations sont $C_m=n_p\phi_f I_q$ et $J_{eq}p\Omega_m=C_m-C_r$ pour $f_v=0$. Les deux cases de courant portent $1/(R+Lp)$, le bloc de couple $n_p\phi_f$, la mécanique $1/(J_{eq}p)$ et le retour inférieur $\phi_f$, en aval du gain $n_p$. Les multiplicateurs de la grille représentent l’opérateur temporel défini par le sujet.
 
 ![Cinq blocs à reporter dans la grille du moteur synchrone](figures/moteur.svg)
 
@@ -310,7 +312,7 @@ Au repos initial, $V_d=(R+Lp)I_d-n_pL\\Pi[\\omega_m,i_q]$, $V_q=(R+Lp)I_q+n_pL\\
 
 #### Solution
 
-Avec $k_t=n_p\\phi_f=0,780$ N·m/A et $f_v=0$, $i_{q\\infty}=C_{r\\max}/k_t=2,2/0,780=2,82$ A.
+Avec $k_t=n_p\phi_f=0,780$ N·m/A et $f_v=0$, $i_{q\infty}=C_{r\max}/k_t=2,2/0,780=2,82$ A.
 
 ### Question 28 — Déduire les tensions permanentes
 
@@ -319,7 +321,7 @@ Avec $k_t=n_p\\phi_f=0,780$ N·m/A et $f_v=0$, $i_{q\\infty}=C_{r\\max}/k_t=2,2/
 
 #### Solution
 
-En posant $i_d=0$ dans les deux tensions de Q25, $v_{d\\infty}=-n_p\\omega_{m\\max}Li_{q\\infty}$ et $v_{q\\infty}=Ri_{q\\infty}+n_p\\omega_{m\\max}\\phi_f$. Le premier terme compense le couplage de quadrature.
+En posant $i_d=0$ dans les deux tensions de Q25, $v_{d\infty}=-n_p\omega_{m\max}Li_{q\infty}$ et $v_{q\infty}=Ri_{q\infty}+n_p\omega_{m\max}\phi_f$. Le premier terme compense le couplage de quadrature.
 
 ### Question 29 — Vérifier le point de fonctionnement électrique
 
@@ -328,7 +330,7 @@ En posant $i_d=0$ dans les deux tensions de Q25, $v_{d\\infty}=-n_p\\omega_{m\\m
 
 #### Solution
 
-On trouve $v_{d\\infty}=-6,95$ V, $v_{q\\infty}=36,73$ V et $|V_{\\infty}|=37,38$ V. Le couple de 2,2 N·m reste inférieur aux 2,9 N·m à l’arrêt de la fiche, le courant inférieur aux 12,9 A de crête. La fiche donne 2,15 A en continu sans ventilation et 3 A en ventilation forcée.
+On trouve $v_{d\infty}=-6,95$ V, $v_{q\infty}=36,73$ V et $|V_{\infty}|=37,38$ V. Le couple de 2,2 N·m reste inférieur aux 2,9 N·m à l’arrêt de la fiche, le courant inférieur aux 12,9 A de crête. La fiche donne 2,15 A en continu sans ventilation et 3 A en ventilation forcée. La comparaison des valeurs électriques exige de respecter la convention de courant de Park et le service du moteur. Ces valeurs établissent un point de fonctionnement cohérent, dont la simulation vérifie ensuite les quatre sorties.
 
 ### Question 30 — Lire les quatre sorties de la simulation
 
@@ -352,7 +354,7 @@ Sur le cahier, la vitesse se stabilise vers 22,5 rad/s, le couple vers 2,2 N·m,
 
 #### Solution
 
-Le terme croisé de chaque axe s’annule par compensation : $v'_d=Ri_d+L\\dot i_d$ et $v'_q=Ri_q+L\\dot i_q$. Chaque tension corrigée n’agit alors que sur le courant de son axe dans le modèle.
+Le terme croisé de chaque axe s’annule par compensation : $v'_d=Ri_d+L\dot i_d$ et $v'_q=Ri_q+L\dot i_q$. Chaque tension corrigée n’agit alors que sur le courant de son axe dans le modèle.
 
 [Sujet p. 13](https://www.banquept.fr/documents/2023/si_a_2023_pt.pdf#page=13) · [Cahier p. 51 du PDF](https://www.banquept.fr/documents/2023/si_a_2023_pt.pdf#page=51)
 
@@ -381,7 +383,7 @@ Pour une consigne $I_0$, l’erreur statique est $I_0/(1+K_pK)$. Tout gain propo
 
 #### Solution
 
-Choisir $T_i=T=0,005$ s. La boucle ouverte vaut $K_pK/(Tp)$ et la constante fermée $T/(KK_p)$. L’exigence impose $K_p\\ge T\\ln(20)/(0,005K)=19,97$ V/A. On retient $K_p=20$ V/A, qui donne un temps à 5 % de 4,99 ms.
+Choisir $T_i=T=0,005$ s. La boucle ouverte vaut $K_pK/(Tp)$ et la constante fermée $T/(KK_p)$. L’exigence impose $K_p\ge T\ln(20)/(0,005K)=19,97$ V/A. On retient $K_p=20$ V/A, qui donne un temps à 5 % de 4,99 ms.
 
 ### Question 35 — Vérifier le courant sur la grille
 
@@ -403,7 +405,7 @@ Le plateau est à 1 A, l’erreur finale vaut 0 A. La courbe croît sans dépass
 
 #### Solution
 
-La boucle de courant suit avec un gain continu égal à 1 et se stabilise en 5 ms, contre 0,6 s autorisée pour la vitesse. À l’échelle des variations de vitesse son déphasage et son atténuation sont faibles. On peut donc écrire $B_c(p)\\simeq1$ dans cette bande, hors saturation.
+La boucle de courant suit avec un gain continu égal à 1 et se stabilise en 5 ms, contre 0,6 s autorisée pour la vitesse. À l’échelle des variations de vitesse son déphasage et son atténuation sont faibles. On peut donc écrire $B_c(p)\simeq1$ dans cette bande, hors saturation.
 
 ### Question 37 — Rejeter la perturbation de couple
 
@@ -430,7 +432,7 @@ Avec $C_v=K_v/p$, le dénominateur est $Jp^2+f_v p+k_tK_v$. Si $f_v=0$, les pôl
 
 #### Solution
 
-Le module est $k_tK_v/[\\omega\\sqrt{f_v^2+(J\\omega)^2}]$. La marge vaut $90^\\circ-\\arctan(J\\omega_c/f_v)$. Au seuil de $45^\\circ$, $\\omega_c=f_v/J$, puis $K_v=\\sqrt2 f_v^2/(Jk_t)=9,07\\times10^{-7}$. Les gains positifs inférieurs conviennent aussi. La phase n’atteint −180° qu’à l’infini, où le gain s’annule.
+Le module est $k_tK_v/[\omega\sqrt{f_v^2+(J\omega)^2}]$. La marge vaut $90^\circ-\arctan(J\omega_c/f_v)$. Au seuil de $45^\circ$, $\omega_c=f_v/J$, puis $K_v=\sqrt2 f_v^2/(Jk_t)=9,07\times10^{-7}$. Les gains positifs inférieurs conviennent aussi. La phase n’atteint −180° qu’à l’infini, où le gain s’annule.
 
 ### Question 40 — Régler le régime critique
 
@@ -439,7 +441,7 @@ Le module est $k_tK_v/[\\omega\\sqrt{f_v^2+(J\\omega)^2}]$. La marge vaut $90^\\
 
 #### Solution
 
-Le régime critique le plus rapide sans dépassement exige $f_v^2=4Jk_tK_v$, soit $K_v=1,60\\times10^{-7}$. Le pôle double vaut $-f_v/(2J)$, la constante $2J/f_v=400$ s. En résolvant $(1+u)e^{-u}=0,05$, $u\\simeq4,744$, donc $t_{5\\%}\\simeq1,90\\times10^3$ s. La limite de 0,6 s est largement dépassée.
+Le régime critique le plus rapide sans dépassement exige $f_v^2=4Jk_tK_v$, soit $K_v=1,60\times10^{-7}$. Le pôle double vaut $-f_v/(2J)$, la constante $2J/f_v=400$ s. En résolvant $(1+u)e^{-u}=0,05$, $u\simeq4,744$, donc $t_{5\%}\simeq1,90\times10^3$ s. La limite de 0,6 s est largement dépassée.
 
 ### Question 41 — Établir les conditions de stabilité du PI
 
@@ -457,7 +459,7 @@ Avec $J=J_{eq}$, le polynôme est $Jp^2+k_tK_v p+k_tK_v/T_v$. Le critère du deu
 
 #### Solution
 
-La boucle ouverte est $k_tK_v(1+jT_v\\omega)/[JT_v(j\\omega)^2]$. À $\\omega=1/T_v=10$ rad/s, la phase est −135°. Pour $K_v=1$, le module vaut $5,52$, soit environ +14,8 dB sur la grille. La coupure doit se situer à 10 rad/s ou au-dessus. Ainsi $20\\log_{10}K_v\\ge-14,8$ dB, soit $K_v\\ge0,181$ dans les unités du sujet.
+La boucle ouverte est $k_tK_v(1+jT_v\omega)/[JT_v(j\omega)^2]$. À $\omega=1/T_v=10$ rad/s, la phase est −135°. Pour $K_v=1$, le module vaut $5,52$, soit environ +14,8 dB sur la grille. La coupure doit se situer à 10 rad/s ou au-dessus. Ainsi $20\log_{10}K_v\ge-14,8$ dB, soit $K_v\ge0,181$ dans les unités du sujet. La phase part de −180° à fréquence nulle puis augmente vers −90°. Elle ne franchit pas −180° à fréquence finie, la marge de gain est infinie et dépasse 10 dB.
 
 ![Phase et gain à la pulsation minimale de coupure](figures/bode.svg)
 
@@ -470,7 +472,7 @@ La boucle ouverte est $k_tK_v(1+jT_v\\omega)/[JT_v(j\\omega)^2]$. À $\\omega=1/
 
 #### Solution
 
-Les gains 0,08 et 0,1 sont sous le seuil de marge de phase et oscillent longtemps. Les deux réglages 0,2 et 0,3 satisfont aux marges. Pour réduire le pic, retenir $K_v=0,2$ : la vitesse entre durablement entre 21,375 et 23,625 rad/s vers 0,55 s et converge vers 22,5 rad/s. Le léger creux suivant reste dans la bande. Le pic de courant est voisin de 6 A, contre 7 A à 0,3.
+Les gains 0,08 et 0,1 sont sous le seuil de marge de phase et oscillent longtemps. Les deux réglages 0,2 et 0,3 satisfont aux marges. Pour réduire le pic, retenir $K_v=0,2$ : la vitesse entre durablement entre 21,375 et 23,625 rad/s vers 0,55 s et converge vers 22,5 rad/s. Le léger creux suivant reste dans la bande. Le pic de courant est voisin de 6 A, contre 7 A à 0,3. Un premier franchissement de la valeur finale peut se produire bien avant le temps de réponse à 5 %.
 
 ![Dernier franchissement de la bande et pic de courant pour le gain 0,2](figures/choix-gain.svg)
 
@@ -483,7 +485,7 @@ Les gains 0,08 et 0,1 sont sous le seuil de marge de phase et oscillent longtemp
 
 #### Solution
 
-La pente vaut $(k_tI_{max}-C_{r\\max})/J$. Partant du repos, $t_{95}=0,95J\\omega_{m\\max}/(k_tI_{max}-C_{r\\max})$. Exiger $t_{95}\\le0,6$ s donne $I_{max}\\ge[2,2+0,95\\times0,02\\times22,5/0,6]/0,78=3,73$ A.
+La pente vaut $(k_tI_{max}-C_{r\max})/J$. Partant du repos, $t_{95}=0,95J\omega_{m\max}/(k_tI_{max}-C_{r\max})$. Exiger $t_{95}\le0,6$ s donne $I_{max}\ge[2,2+0,95\times0,02\times22,5/0,6]/0,78=3,73$ A. Il s’agit du premier accès à 95 % sous courant constant. Le retour durable dans la bande après désaturation s’examine sur la réponse complète.
 
 ### Question 45 — Conclure avec saturation et anti-emballement
 
@@ -492,7 +494,7 @@ La pente vaut $(k_tI_{max}-C_{r\\max})/J$. Partant du repos, $t_{95}=0,95J\\omeg
 
 #### Solution
 
-Le courant plafonne à 5 A et finit vers 2,8 A. La vitesse atteint environ 23,6 rad/s puis revient vers 22,5 rad/s, l’erreur tend vers zéro sous le couple résistant. Le passage à 95 % est vers 0,25 s et la vitesse reste ensuite au voisinage de la limite haute et se trouve durablement dans la bande au plus tard vers 0,35 s, sous 0,6 s. Le léger dépassement de vitesse est permis au tableau 3.
+Le courant plafonne à 5 A et finit vers 2,8 A. La vitesse atteint environ 23,6 rad/s puis revient vers 22,5 rad/s, l’erreur tend vers zéro sous le couple résistant. Le passage à 95 % est vers 0,25 s et la vitesse reste ensuite au voisinage de la limite haute et se trouve durablement dans la bande au plus tard vers 0,35 s, sous 0,6 s. Le léger dépassement de vitesse est permis au tableau 3. Autour de l’équilibre désaturé, le PI à $K_v=1,3$, $T_v=0,1$ s dépasse le seuil de Q42, donc les marges locales satisfont 45° et 10 dB. Les marges de Bode caractérisent la linéarisation, la simulation vérifie séparément la manœuvre saturée.
 
 ![Courant limité et bande admissible sur la vitesse de la figure 14](figures/saturation.svg)
 
