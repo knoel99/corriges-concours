@@ -1,0 +1,60 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_etudes-politiques-bustamante-et-les-politiques-culturelles-oral_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Études politiques — Bustamante et les politiques culturelles (oral)",
+    "annee": 2018,
+    "modalite": "oral"
+  },
+  "intitule": "Études politiques — Bustamante et les politiques culturelles (oral)",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/ORAL-Et.politiquesSIL%202018-2.pdf",
+    "sha256_sujet": "2bd97734b7c55935c3f1bc90158c4d1b4dba764e9137fcb6b332d65979adbd72",
+    "pages_sujet": 2,
+    "bornes_extrait": "P. 1 : « On peut construire une typologie » ; p. 2 : rôle des modèles cherchant à faire reconnaître la culture comme « domaine d’action légitime de l’État ».",
+    "contenu_document": "Une seule consigne de commentaire. Référence et début de l’extrait en page 1. La page 2 traite de la démocratisation, des controverses de la guerre froide, de l’Unesco et de la place de la France et du Royaume-Uni. Pas d’annexe distincte, de tableau ou de question supplémentaire.",
+    "article": "Mauricio Bustamante, « Les politiques culturelles dans le monde. Comparaisons et circulations de modèles nationaux d’action culturelle dans les années 1980 », Actes de la recherche en sciences sociales, n° 206–207, 2015, p. 156–173 (pagination de l’article).",
+    "index_officiel": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2018-lettres",
+    "etat_rapport": "La rubrique orale de la session 2018 renvoie aux sujets 1 et 2 d’études politiques. L’index propose par ailleurs une note générale sur la sélection, sans rapport propre à ces deux sujets."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire de l’extrait de Bustamante sur les modèles d’action culturelle, leur confrontation et leur circulation."
+    ],
+    "elements_verifies": [
+      "P. 1 : caractère idéal-typique, diversité des critères de comparaison et analyse des quatre tendances ; différenciation du contrôle et du développement, y compris après la décolonisation.",
+      "P. 2 : démocratisation entendue comme accès à une culture savante légitimée, exemples de pays cités ; critique libérale et portée des controverses en guerre froide.",
+      "P. 2 : reconnaissance internationale du problème par l’Unesco, expertise, institutions des années 1970 et comparaison dans les années 1980 ; France et Royaume-Uni en modèles, appropriation à éprouver."
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/logiques-et-moyens.svg",
+      "question": "Commentaire",
+      "legende": "Quatre conceptions de l’intervention culturelle"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "classiques_2017",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Collation des deux pages de la consigne et de l’extrait. Rédaction de deux commentaires autonomes, d’une figure comparative originale et des relances. Vérification de l’écart entre ressources et justifications, de la chronologie et des pays effectivement cités."
+    }
+  ]
+}
