@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Chariot élévateur à bateaux.** Les 40 questions conservent leur numérotation dans le cahier CX2614. La figure 25 et la dernière feuille-réponse donnent des temps de parcours incompatibles. Les deux lectures sont détaillées aux questions III.8 à III.11.
 
 ## Repères
@@ -58,6 +60,8 @@ Une ouverture symétrique imposerait $\theta_2=-\theta_1$. À $30^\circ$ à droi
 #### Solution
 
 T9, de masse négligeable, est soumis aux efforts des deux articulations. Ses efforts sont opposés et dirigés suivant $ED$. De même, l’ensemble T10–T11 transmet une force suivant $AB$. Isoler T7 et écrire le moment statique sur l’axe du pivot en F. Le poids et sa géométrie sont connus, la réaction de pivot est éliminée et le module de l’effort en E est déterminé. Le transmettre en D par T9. Isoler ensuite T8 et écrire le moment sur l’axe du pivot en C. Le poids et l’effort en D y sont connus. Il reste le module de l’effort en B suivant $AB$. Le moment de l’action du vérin en B est nul dans le modèle articulé.
+
+En écrivant le bilan en $C$, la contribution de la force du vérin est bien $(\overrightarrow{CB}\times\mathbf F_B)\cdot\mathbf x_6$. C’est le moment propre au point $B$ de cette liaison articulée qui est nul. Le calcul de $F_B$ exige un bras de levier non nul autour de l’axe passant par $C$.
 
 ### Question I.6 · Effort de dimensionnement
 
@@ -413,3 +417,5 @@ Le dispositif intervient pendant les trois freinages. Colorier $[t_1,t_2]$, $[t_
 #### Solution
 
 Seize bateaux par heure laissent $3600/16=225$ s par bateau. En reprenant le temps final du DR4, le cycle aller-retour et manutention dure $2\times47,15+80=174,3$ s, soit environ $20,7$ bateaux/h. Avec les cotes de la figure 25, il représente environ $2\times37,48+80=154,96$ s, soit $23,2$ bateaux/h. **La cadence demandée est respectée avec les deux lectures.**
+
+La durée maximale admissible par trajet simple se déduit aussi directement de $2t+80\le225$, soit $t\le72{,}5$ s. Même la durée de $47{,}15$ s préimprimée sur DR4 laisse $25{,}35$ s de réserve sur un trajet.
