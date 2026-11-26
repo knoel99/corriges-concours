@@ -10,6 +10,12 @@ Jean-Marc Roberts, *Affaires étrangères* (1979). Thème de quatre heures, sans
 
 [Sujet officiel de spécialité, p. 16](https://www.ens-lyon.fr/sites/default/files/2025-09/251113.pdf#page=16) · [Rapport du jury sur le thème, p. 13–14](https://www.ens-lyon.fr/sites/default/files/2025-11/Polonais%202025%20OK%20Lyon%20RELU.pdf#page=13)
 
+## Note de traduction
+
+Les scènes répétées appellent surtout l’imperfectif. À table, *uznała* fait entendre la décision soudaine de Yette et prépare sa toute dernière réplique.
+
+![Figure 1 — Trois positions successives du petit-fils. La forme masculine renvoie au petit garçon chargé de surveiller Jeannot, puis au salarié dont Yette vante les avantages.](figures/lecture.svg)
+
 ## Proposition de thème
 
 Zawsze podejrzewałem, że Yette jest wariatką. Nie że jej się po prostu trochę pomieszało w głowie, jak to się zdarza babciom, kiedy zaczyna im brakować słów. Prawdziwą wariatką. Kiedy dziadek jeszcze żył i schodził na dół, żeby coś kupić w okolicy, Yette kazała mi go śledzić. „Jak cię zobaczy, udawaj głupiego, zmyśl jakąś bajeczkę. Tylko mu nie mów, że to ja cię posłałam, zabiłby mnie!”
@@ -31,9 +37,3 @@ Do tego jeszcze nie doszło. Kiedy już wszyscy zebraliśmy się przy stole, grz
 A Yette uznała, że koniecznie musi oznajmić naszym przyjaciołom, że za te dwa fotele w salonie nie zapłaciła nic albo prawie nic.
 
 – To prezent od mojego wnuka. Dają mu nawet osiemdziesiąt procent zniżki!
-
-## Note de traduction
-
-Les scènes répétées appellent surtout l’imperfectif. À table, *uznała* fait entendre la décision soudaine de Yette et prépare sa toute dernière réplique.
-
-![Figure 1 — Trois positions successives du petit-fils. La forme masculine renvoie au petit garçon chargé de surveiller Jeannot, puis au salarié dont Yette vante les avantages.](figures/lecture.svg)
