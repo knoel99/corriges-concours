@@ -1,0 +1,98 @@
+{
+  "slug": "bel_al_espagnol-commentaire-et-traduction_2023",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Espagnol (commentaire et traduction)",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "duree_heures": 6,
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2023-09/Commentaire-d-un-texte-en-LVE.pdf#page=10",
+    "sujet_sha256": "465bc18f65e3127c7bcf5720f6042d95180133384f245e34fd7b38acd0ffb760",
+    "pages_pdf_sujet": [
+      10,
+      11
+    ],
+    "pages_fascicule": 24,
+    "lignes_version": [
+      47,
+      68
+    ],
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2023-11/Espagnol-2023.pdf#page=2",
+    "sha256_rapport_jury": "ea554ec747301e53e8166905cad450900faddb17bd68c6a5a581c0c808c9b5e9",
+    "pages_rapport_verifiees": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "ouvrage": "Wendy Guerra, Nunca fui Primera Dama (2008)",
+    "etablissements_figurant_sur_la_garde": "ENS de Lyon / ENS (Paris)",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2023"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/images-et-memoire.svg",
+      "question": "Commentaire",
+      "legende": "Les trois usages de l’image chez Nadia"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire intégral en espagnol",
+      "Version en français des lignes 47–68"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ]
+  },
+  "contributions": [
+    {
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "phase": "redaction",
+      "perimetre": "Commentaire composé en espagnol, version française du passage désigné, préparation et schéma de lecture."
+    },
+    {
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "perimetre": "Correction du mouvement de traer, de la distinction entre les enveloppes de fortune et les couvertures d’origine, du possessif ajouté devant liberté. Dans le commentaire, précision du rôle de la photographie et de la limite politique du geste de Nadia."
+    }
+  ]
+}
