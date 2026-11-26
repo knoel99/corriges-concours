@@ -10,6 +10,8 @@
 
 **Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
 « Les transferts intergénérationnels de capitaux : des accélérateurs des inégalités ? » L’écrit commun à Ulm, Lyon, Paris-Saclay et ENSAE/INSEE/ENSAI dure six heures. Le candidat dispose d’un dossier de sept documents. Aucun document personnel n’est autorisé. La composition n’impose pas de nombre de mots. Il faut soutenir une réponse qui articule économie et sociologie, en utilisant aussi bien les données statistiques que l’enquête de terrain.
@@ -136,3 +138,9 @@ En définitive, une aide qui finance une dépense immédiate peut lisser les res
 Avant de conclure à un accroissement des inégalités, nommer le groupe comparé, le moment observé et la ressource mesurée. Suivre ensuite le trajet de l’avantage initial. Le dossier permet de montrer, sur un même sujet, le lissage du revenu courant, la formation d’un patrimoine et la répartition inégale du pouvoir de décider de son usage.
 
 [Sujet officiel](https://www.ens.psl.eu/sites/default/files/2024_blses_sujet_composition_sciences_sociales.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_ecrit_sciences_economiques_et_sociales.pdf)
+
+## Vérification sur le sujet
+
+Les sept documents et le rapport du jury ont été confrontés à la dissertation et au parcours guidé. Le tableau de l’entrée dans la propriété distingue deux modèles de durée. Les deux tableaux du document 7 distinguent le classement par âge du classement par milieu social.
+
+Le document 2 permet de vérifier de quelle inégalité il est question. Parmi les héritages de montant connu reçus par les professions libérales, 27,3 % atteignent 100 000 euros, contre 6,7 % chez les employés. L’écart vaut 20,6 points et le rapport environ 4,1. Ces proportions portent sur les héritages déclarés. Pour mesurer l’inégalité devant la réception elle-même, il faudrait aussi compter les personnes qui n’ont rien reçu. Le document 3 apporte une autre comparaison, entre patrimoines des parents et des enfants. C’est elle qui permet d’interroger la persistance entre générations.
