@@ -4,11 +4,15 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le fascicule daté du 23 juin comporte trois extraits de Sénèque, chacun suivi du vocabulaire fourni par le jury. Le candidat tire l’un de deux sujets cachés, prépare pendant 1 h 30, puis dispose de 15 minutes pour présenter, lire, traduire et commenter le passage et de 15 minutes pour répondre au jury. Les pages 1–2, 3–4 et 5–6 correspondent respectivement aux trois explications. [Fascicule du 23 juin](https://www.ens.psl.eu/sites/default/files/latin_23_juin.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_latin_oral_option.pdf)
 
 ## Préparer l’explication
 
 Pendant la préparation, annoter les groupes de sens sur la feuille du sujet, identifier les trois difficultés syntaxiques qui modifieraient le sens du passage et retenir deux observations de langue pour le commentaire. Le temps de reprise de la traduction avec le jury appartient aux quinze minutes de questions.
+
+Le jury demande de situer les mouvements par leurs lignes et invite à distinguer les voix du texte. En parcourant les schémas, repérez qui parle à chaque étape. Dans la lettre 44, Sénèque cite Platon. Dans la lettre 47, il rapporte un proverbe qu’il retourne. Dans la lettre 24, il rappelle à Lucilius ses propres écrits. Quand une ligne figure dans deux mouvements, recherchez le mot où le raisonnement change de direction. [Rapport du jury, p. 3 et 6](https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_latin_oral_option.pdf#page=3)
 
 ## Philosophie pour tous !
 
@@ -19,7 +23,7 @@ Dans la lettre 44 (livre V, §§ 2–5), Sénèque répond à Lucilius, que la p
 ### Traduction par groupes de sens
 
 > [!INDICATION]
-> **Construire la première phrase.** Donner à *philosophia* les deux verbes dont elle est sujet. Après les deux négations, quel mot très court restitue l’ensemble des destinataires ? *Omnibus* est le datif de ceux pour qui la lumière brille.
+> **Construire la première phrase.** Donner à *philosophia* les deux verbes dont elle est sujet. Après les deux négations, quel pronom restitue l’ensemble des destinataires ? *Omnibus* est le datif de ceux pour qui la lumière brille.
 
 **Lignes 1–3.** La philosophie ne repousse personne et ne choisit personne. Elle brille pour tous. Socrate ne fut pas patricien. Cléanthe puisa de l’eau et loua ses bras pour arroser un jardin. Quant à Platon, la philosophie ne le reçut pas noble, elle le fit tel.
 
@@ -36,7 +40,9 @@ Dans la lettre 44 (livre V, §§ 2–5), Sénèque répond à Lucilius, que la p
 
 Le statut social a ses procédures d’admission, ses exclusions et ses preuves visibles. Comment la lettre donne-t-elle à Lucilius des ancêtres qu’il n’a jamais eus au sens civil ? Les deux verbes initiaux, *reicit* et *eligit*, supposent une instance qui trierait les candidats. Leur double négation laisse place à un phénomène que chacun peut éprouver, la lumière. Tout le monde peut recevoir son éclat, mais il reste à vivre en accord avec elle. Les exemples donnent une histoire à cette image. Le mot romain *patricius* appliqué à Socrate traduit le prestige grec dans les catégories de Lucilius. Les mains de Cléanthe évoquent un véritable travail salarié. Avec Platon, le verbe *fecit* attribue à la philosophie le pouvoir de produire la noblesse dont la naissance était censée être la condition.
 
-Le second mouvement repose sur une proposition adressée à la deuxième personne. Ces philosophes sont déjà *tui*, « les tiens », pourvu que Lucilius s’en rende digne. La lettre ne lui fabrique pas un arbre généalogique. Elle lui donne des auteurs dont la conduite peut prolonger la sienne. Les deux emplois de *gerere* relient l’appartenance à une action future. Puis le passage de *tui* à *nobis* déplace la preuve. Si chacun remonte dans le temps, la mémoire manque à tous également. La formule empruntée à Platon inverse la place de *regem* et de *seruis*, puis de *seruum* et de *regibus*. La symétrie fait perdre à chaque rang la prétention à s’être transmis sans mélange.
+![De la lumière offerte à tous à la noblesse que les portraits ne confèrent pas.](figures/noblesse.svg)
+
+Le second mouvement repose sur une proposition adressée à la deuxième personne. Ces philosophes sont déjà *tui*, « les tiens », pourvu que Lucilius s’en rende digne. La lettre ne lui fabrique pas un arbre généalogique. Elle lui donne des devanciers dont il peut, à son tour, prolonger la conduite. Le présent *geris* pose la condition, puis le futur *geres* engage Lucilius à la remplir. Puis le passage de *tui* à *nobis* déplace la preuve. Si chacun remonte dans le temps, la mémoire manque à tous également. La formule empruntée à Platon inverse la place de *regem* et de *seruis*, puis de *seruum* et de *regibus*. La symétrie fait perdre à chaque rang la prétention à s’être transmis sans mélange.
 
 La question *Quis est generosus ?* reprend un adjectif qui évoque précisément la naissance. La réponse déplace son sens vers une disposition à la *uirtus*. Une disposition se vérifie dans l’exercice, comme le montrait déjà la condition *si te illis geris dignum*. Le développement se termine dans l’atrium d’une demeure romaine. Les images familiales, supports visibles de mémoire et de prestige, portent les traces du temps. La phrase leur refuse le pouvoir de « faire » quelqu’un noble. Ce verbe fait entendre à nouveau le *fecit* réservé à la philosophie au début. La lettre elle-même propose à son lecteur une autre galerie de portraits. Ce sont cette fois des figures que l’on rejoint en agissant.
 
@@ -72,6 +78,8 @@ La lettre 47 (livre V, §§ 2–5) part d’un repas romain. Sénèque y examine
 
 Qu’apprend-on de la relation entre maître et esclave en observant les bruits d’un dîner ? Le *rideo* initial annonce le ridicule d’un jugement de bonne société. Ceux qui estiment le repas partagé *turpe* se croient juges de la dignité. Sénèque les fait comparaître à leur tour. Le maître attablé est un seul homme, mais son confort requiert une foule qui reste debout. La disproportion se retrouve à l’intérieur de son corps. Le couple *egerat / ingessit* fait durer en sens inverse l’acte de manger. La charge satirique vise précisément la personne qui pensait pouvoir fixer les bonnes manières.
 
+![Deux usages de la parole au banquet mettent le proverbe à l’épreuve.](figures/parole-au-banquet.svg)
+
 Chez les esclaves, le pouvoir va jusqu’à réglementer des bruits que le corps produit malgré lui. L’accumulation *tussis, sternumenta, singultus* fait entendre ce qu’on voudrait supprimer. Les passifs effacent celui qui frappe ou fait punir. Le retour à *ieiuni mutique* rassemble pourtant les conséquences de ce système dans la même image, des hommes privés du repas aussi bien que de la parole. L’ordre de la salle ne manifeste aucune harmonie entre ses occupants. Pour le maintenir, il faut continuellement punir.
 
 Le retournement décisif tient à trois prépositions. Parler *de domino*, c’est faire du maître absent l’objet du discours. Parler *coram domino*, c’est prendre la parole en sa présence. Parler *cum ipsis*, c’est parler ensemble. Le récit de la fidélité ancienne va jusqu’à prêter aux esclaves le courage de garder le silence quand le maître court un danger. Le même silence, imposé d’abord au banquet, devient alors le signe d’un choix. Ce tableau dessine un idéal de réciprocité depuis la position de l’homme libre. Sénèque enjoint d’humaniser une relation dont il conserve ici l’existence. La dernière opposition entre *habemus* et *facimus* a donc une portée précise. Le proverbe se donnait pour une observation du monde. Le changement de verbe et le « nous » final en rendent les maîtres responsables.
@@ -97,7 +105,7 @@ La lettre 24 (livre III, §§ 18–20) est un exercice sur la peur. Sénèque, p
 
 **Lignes 5–6.** La mort ou bien nous anéantit ou bien nous délivre. Si nous sommes libérés, des choses meilleures nous attendent une fois le fardeau enlevé. Si nous sommes anéantis, il ne reste rien, les biens comme les maux sont pareillement écartés.
 
-**Lignes 6–10.** Permets-moi de citer à cet endroit un de tes vers, à condition de te rappeler d’abord que, selon toi-même, tu as écrit ces mots non seulement pour les autres mais aussi pour toi. Il est honteux de dire une chose et d’en penser une autre. Combien il est plus honteux encore d’écrire une chose et d’en penser une autre ! Je me souviens que tu as un jour traité cette idée, que nous ne tombons pas soudain dans la mort mais que nous y avançons petit à petit.
+**Lignes 6–10.** Permets-moi de citer à cet endroit un de tes vers, si je puis d’abord t’engager à reconnaître que tu as écrit ces mots non seulement pour les autres, mais aussi pour toi. Il est honteux de dire une chose et d’en penser une autre. Combien il est plus honteux encore d’écrire une chose et d’en penser une autre ! Je me souviens que tu as un jour traité cette idée, que nous ne tombons pas soudain dans la mort mais que nous y avançons petit à petit.
 
 **Lignes 10–13.** Chaque jour nous mourons. Chaque jour, en effet, une partie de notre vie nous est retirée, et même au temps où nous grandissons, notre vie diminue. Nous avons perdu la petite enfance, puis l’enfance, puis l’adolescence. Jusqu’à la journée d’hier, tout ce qui s’est écoulé de notre temps est perdu […]
 
@@ -107,6 +115,8 @@ La lettre 24 (livre III, §§ 18–20) est un exercice sur la peur. Sénèque, p
 > **Rétablir les pronoms de la ligne 5.** La note invite à comprendre *nobis emissis*, puis *nobis consumptis*. Traduire successivement les deux hypothèses avant de rechercher leur conséquence commune. *Onere detracto* ajoute, dans la première hypothèse, la précision du fardeau ôté.
 
 Pourquoi Sénèque réduit-il au rang de *cantilena* un argument qu’il prend pourtant le temps de développer ? Il prête à son lecteur la maturité de quelqu’un qui n’aurait plus peur des histoires infernales. En faisant défiler Ixion, Sisyphe, la figure au supplice perpétuel et Cerbère, il affaiblit leur pouvoir d’effrayer, puis il écarte une réponse qui serait trop facile pour ce destinataire. Le texte garde anonyme celui dont les entrailles se renouvellent. L’essentiel, pour l’argument, est la répétition inconcevable du supplice. Le stoïcien peut tirer parti d’une critique épicurienne des peurs sans souscrire à chacune des propositions de cette école.
+
+![Du dilemme sur le sort de l’âme à l’expérience du temps écoulé.](figures/temps-de-la-vie.svg)
 
 Le dilemme *consumit / exuit* dispense précisément de trancher le sort de l’âme. Dans une hypothèse, la mort ôte un fardeau. Dans l’autre, aucun sujet ne subsiste qui puisse éprouver un mal. La construction conserve les conséquences affectives des deux hypothèses. Puis le ton change avec *Permitte mihi*. Sénèque demande la permission de rappeler à Lucilius ses propres paroles. La citation annoncée devient l’occasion de lui demander ce que vaut un écrit pour celui qui l’a composé. La reprise d’*aliud* et le passage de *loqui* à *scribere* soulignent la force de cet engagement. Une phrase fixée par l’écriture revient maintenant demander des comptes à son auteur.
 
