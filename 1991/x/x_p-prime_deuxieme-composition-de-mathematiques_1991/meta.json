@@ -1,0 +1,196 @@
+{
+  "slug": "x_p-prime_deuxieme-composition-de-mathematiques_1991",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "P prime",
+    "annee": 1991,
+    "matiere": "Deuxième composition de mathématiques",
+    "modalite": "écrit"
+  },
+  "intitule": "Deuxième composition de mathématiques · option P′",
+  "duree_heures": 4,
+  "questions": 16,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-ccfef9f790dfb8a358e4",
+    "sujet_sha256": "a34a790e7ac64cbb3af154a71d753438ce05ffc1d1dd08e1c6c0c82b4495fd6e",
+    "second_exemplaire": "https://www.sujetsetcorriges.fr/dl/X/Maths/PC/sec-x-1991-maths2-PC.pdf",
+    "second_exemplaire_sha256": "5ff55f470e806427845d695a0544ac8a2ec6f8ab63c611360af698f43ccf6247",
+    "notice_ups": "m91xp2",
+    "instruction_officielle": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000353010",
+    "precisions": "Empreintes différentes des fichiers, rendus identiques page par page à 72 points par pouce. La reproduction distingue les feuillets et le rang de chaque composition."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-ccfef9f790dfb8a358e4",
+      "sha256": "a34a790e7ac64cbb3af154a71d753438ce05ffc1d1dd08e1c6c0c82b4495fd6e",
+      "pages": 3,
+      "rendu_page_sha256": [
+        "99d623a633490f19df926954c109ec28804778ce3ae3ff29455237ead87359bb",
+        "becd9e72948e3ed2e77bd363124260457014d46d5c33708c22992819465cd84d",
+        "150c5399d8f41e7f9d168ce06eb047e0ed0758021227cc75c116e12a3686be3d"
+      ]
+    },
+    "second": {
+      "url": "https://www.sujetsetcorriges.fr/dl/X/Maths/PC/sec-x-1991-maths2-PC.pdf",
+      "sha256": "5ff55f470e806427845d695a0544ac8a2ec6f8ab63c611360af698f43ccf6247",
+      "pages": 3,
+      "rendu_page_sha256": [
+        "99d623a633490f19df926954c109ec28804778ce3ae3ff29455237ead87359bb",
+        "becd9e72948e3ed2e77bd363124260457014d46d5c33708c22992819465cd84d",
+        "150c5399d8f41e7f9d168ce06eb047e0ed0758021227cc75c116e12a3686be3d"
+      ]
+    }
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "III.8",
+      "fichier": "figures/conditions-et-modes.svg",
+      "legende": "Les conditions d’annulation retiennent un seul sinus par valeur propre. En périodique, sinus et cosinus de même fréquence donnent deux solutions indépendantes."
+    },
+    {
+      "numero": 2,
+      "question": "IV.2",
+      "fichier": "figures/resonance-fourier.svg",
+      "legende": "À la première résonance périodique, les coefficients d’indices opposés sont libres dans le noyau. Le mode constant conserve le multiplicateur 1."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "x_maths_b_anciennes",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Rédaction de la totalité des 16 réponses, des indications et des deux figures propres à cette composition."
+    },
+    {
+      "phase": "revision",
+      "session": "x_maths_b_anciennes",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Contrôle des moments et des deux traces indépendantes, de la coercivité pour λ négatif, du cas d’égalité, des conditions de résonance complexes et des quatre dérivations de la série par Bessel et Cauchy-Schwarz."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "II.1",
+      "II.2",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7",
+      "III.8",
+      "IV.1",
+      "IV.2",
+      "IV.3"
+    ],
+    "repere_par_question": [
+      {
+        "question": "I.1",
+        "page_pdf": 1,
+        "page_imprimee": 132
+      },
+      {
+        "question": "I.2",
+        "page_pdf": 1,
+        "page_imprimee": 132
+      },
+      {
+        "question": "I.3",
+        "page_pdf": 1,
+        "page_imprimee": 132
+      },
+      {
+        "question": "II.1",
+        "page_pdf": 2,
+        "page_imprimee": 133
+      },
+      {
+        "question": "II.2",
+        "page_pdf": 2,
+        "page_imprimee": 133
+      },
+      {
+        "question": "III.1",
+        "page_pdf": 2,
+        "page_imprimee": 133
+      },
+      {
+        "question": "III.2",
+        "page_pdf": 2,
+        "page_imprimee": 133
+      },
+      {
+        "question": "III.3",
+        "page_pdf": 2,
+        "page_imprimee": 133
+      },
+      {
+        "question": "III.4",
+        "page_pdf": 2,
+        "page_imprimee": 133
+      },
+      {
+        "question": "III.5",
+        "page_pdf": 3,
+        "page_imprimee": 134
+      },
+      {
+        "question": "III.6",
+        "page_pdf": 3,
+        "page_imprimee": 134
+      },
+      {
+        "question": "III.7",
+        "page_pdf": 3,
+        "page_imprimee": 134
+      },
+      {
+        "question": "III.8",
+        "page_pdf": 3,
+        "page_imprimee": 134
+      },
+      {
+        "question": "IV.1",
+        "page_pdf": 3,
+        "page_imprimee": 134
+      },
+      {
+        "question": "IV.2",
+        "page_pdf": 3,
+        "page_imprimee": 134
+      },
+      {
+        "question": "IV.3",
+        "page_pdf": 3,
+        "page_imprimee": 134
+      }
+    ]
+  }
+}
