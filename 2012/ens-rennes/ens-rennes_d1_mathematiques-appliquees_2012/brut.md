@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Les quatre exercices portent sur le dénombrement des conseils, les lois de retard, les salaires et la famille de fonctions $x^n(\ln x-1)$. Les valeurs demandées sous forme irréductible et les arrondis annuels sont distingués.
 
 ## Exercice 1. Conseils de quatre pays
@@ -76,6 +78,8 @@ Pour les deux périodes, écrivons $J\sim\mathcal P(1)$ pour DND et $K\sim\mathc
 $$P(J+K=2)=e^{-1}\left(\frac{24}{81}+\frac{32}{81}+\frac12\frac{16}{81}\right)=\frac{64}{81e}\simeq0{,}2907.$$
 Les trois termes entre parenthèses proviennent successivement des probabilités binomiales en 2, 1 et 0 et des coefficients de Poisson en 0, 1 et 2.
 
+Ici, le produit des probabilités suppose l’indépendance des retards des deux transporteurs entre les deux périodes. L’indépendance des livraisons successives de Norbert est écrite dans le sujet. Le lien avec les retards de DND est une hypothèse supplémentaire du modèle de calcul. Sans loi conjointe ou hypothèse d’indépendance, les deux seules lois marginales ne déterminent pas ce total.
+
 ## Exercice 3. Âge et salaires
 
 ### Question 3.1.a
@@ -117,6 +121,11 @@ Les deux facteurs y sont dérivables. On obtient $f_1'(x)=\ln x-1+x(1/x)=\ln x$.
 ### Question 4.I.3
 
 La fonction décroît strictement sur $]0,1]$, de sa limite 0 à $f_1(1)=-1$, puis croît strictement sur $[1,+\infty[$ vers $+\infty$. La dérivée s’annule en 1.
+
+| Abscisse | $0^+$ | $1$ | $+\infty$ |
+|---|:---:|:---:|:---:|
+| Signe de $f_1'$ | $-$ sur $]0,1[$ | $0$ | $+$ sur $]1,+\infty[$ |
+| Valeur de $f_1$ | $0$ (limite) | $-1$ (minimum) | $+\infty$ (limite) |
 
 ### Question 4.I.4
 
@@ -182,3 +191,5 @@ $$\int_1^e f_n(t)\,dt=\frac{n+2-e^{n+1}}{(n+1)^2}.$$
 ### Question 4.III.3
 
 Sur $[1,e]$, $f_2\le0$. L’aire hachurée sur la figure de 4.II.7 vaut donc $-\int_1^e f_2(t)\,dt=(e^3-4)/9\simeq1{,}7873$ unité d’aire. Sur le papier millimétré, une unité d’aire représente $4\times2=8$ cm².
+
+La surface sur le papier vaut donc $8(e^3-4)/9\simeq14{,}30$ cm². Les deux valeurs répondent à des unités différentes : l’intégrale mesure d’abord une aire dans le repère de la fonction.

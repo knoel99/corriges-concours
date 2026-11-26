@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Les cinq exercices portent sur une agence de voyage, deux protocoles d’urnes, une courbe à asymptote oblique et un modèle normal. Les 372 voyages détaillés sont distingués des 425 annoncés dans le premier tableau.
 
 ## Exercice 1. L’agence de voyage
@@ -59,6 +61,8 @@ La moyenne du tableau est $(86\times620+23\times560+95\times730+62\times680+81\t
 ### Question 1.2.c
 
 Le tableau ne livre que des moyennes par destination. La médiane, les quartiles, le mode et la variance des prix individuels ne sont donc pas déterminés. On peut décrire la dispersion **entre** destinations : les moyennes s’échelonnent de 560 à 730 euros et leur variance pondérée vaut environ $2622{,}83$ euros². La variance totale ajoute à ce nombre la moyenne pondérée des variances internes, inconnues.
+
+Par exemple, deux ventes à 620 euros ont le même prix moyen qu’une vente à 600 euros et une autre à 640 euros. La variance de ces deux prix vaut respectivement 0 et 400 euros². Appliquer ce remplacement à deux des 86 voyages à destination du Maroc laisse intacte la moyenne du groupe et peut donc changer la dispersion individuelle sans modifier le tableau fourni.
 
 ### Question 1.3.a
 
@@ -173,6 +177,8 @@ Une primitive de $f$ est $F(x)=x^2/2+x+H(x)$ sur $]0,+\infty[$.
 ### Question 4.B.6.c
 
 On a $H(e)=1-1/e$ et $H(1)=0$, donc $I=\int_1^e f(x)\,dx=e^2/2+e-1/2-1/e\simeq5{,}54493$. La fonction est positive sur cet intervalle, puisque $f(1)=2$ et qu’elle croît. Une unité valant 2 cm sur les deux axes, l’aire est $4I\simeq22{,}18$ cm².
+
+On peut vérifier la surface en la partageant par l’asymptote $y=x+1$. Entre 1 et $e$, l’aire sous cette droite vaut $\int_1^e(x+1)\,dx=e^2/2+e-3/2$. L’aire comprise entre la droite et la courbe vaut $H(e)-H(1)=1-1/e$. Leur somme vaut bien $I$. Le seul écart à l’asymptote ne donnerait donc qu’une partie du domaine demandé.
 
 ## Exercice 5. Distribution normale dans une population
 
