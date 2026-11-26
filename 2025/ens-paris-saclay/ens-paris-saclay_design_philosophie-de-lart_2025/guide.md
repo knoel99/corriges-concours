@@ -2,17 +2,21 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Lecture du rapport du jury** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Lecture du rapport du jury** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
-**Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
-Le sujet propose de commenter une affirmation de Terry Winograd et Fernando Flores sur la conception des outils et des manières d’être, reprise par Arturo Escobar. Le verbe imprimé sur la feuille est « designant ».
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+Le sujet demande de commenter la proposition de Terry Winograd et Fernando Flores, citée par Arturo Escobar, selon laquelle « en designant des outils, nous designons des manières d’être ».
 
 ## Suivre l’outil au-delà de la première action
 
-La feuille écrit « en designant ». Le verbe porte sur l’acte de concevoir des outils et de contribuer par eux à des manières d’être. La citation est de Winograd et Flores en 1986. Escobar la reprend dans l’ouvrage indiqué en 2020. Cette chaîne d’attribution permet d’articuler conception informatique et autonomie sans fondre les trois auteurs en un seul.
+La citation est de Winograd et Flores en 1986. Escobar la reprend dans l’ouvrage indiqué en 2020. Cette chaîne d’attribution permet d’articuler conception informatique et autonomie sans fondre les trois auteurs en un seul.
+
+**Pourquoi conserver le verbe du feuillet ?** À la page 3 du sujet, les deux formes du verbe *designer* sont imprimées sans accent. La page 1 du rapport écrit « désignant » et « désignons ». Revenez au geste de conception des outils pour savoir si une pratique sociale est projetée, accompagnée ou imposée.
 
 **Comment prouver le changement d’échelle ?** Décrivez d’abord une forme constatable du manche de l’éplucheur. Nommez ensuite le geste qu’elle rend moins coûteux, puis la relation d’entraide qui peut changer. Le dernier effet demeure soumis à des conditions. Cette précision donne sa portée exacte à l’exemple.
 
@@ -28,6 +32,8 @@ Un éplucheur épuise ma main. Je demande à quelqu’un de finir le repas et pe
 
 L’éplucheur Good Grips de Smart Design, conçu en 1989, est issu de la difficulté que rencontrait Betsey Farber avec un éplucheur ordinaire en raison de son arthrite. Le manche plus ample et adhérent modifie la prise requise. L’effet ne consiste pas à ajouter une information morale à un ustensile demeuré identique. Le corps que l’objet suppose n’est plus tout à fait le même. Une main qui ne correspondait pas à l’effort exigé par l’ancien manche peut reprendre une activité. Une observation singulière conduit ici à un outil proposé à des personnes aux capacités différentes.
 
+Les auteurs situent là une « racine profonde ». Ils avancent donc davantage qu’une conséquence occasionnelle, telle l’invention fortuite d’un emploi secondaire. Dès que le concepteur décide ce qui doit compter comme une opération réussie, il inscrit une certaine figure de l’usager dans le projet. Si l’éplucheur n’était essayé que par des mains sans raideur, une partie des cuisiniers apparaîtrait difficile à satisfaire alors que c’est la définition de l’essai qui les exclut. La manière d’être tient ici à une expérience durable de compétence ou de dépendance, éprouvée de repas en repas.
+
 Les « techniques du corps » étudiées par Marcel Mauss aident à comprendre le passage. Nos façons de porter, de marcher ou de manier un objet s’acquièrent dans des milieux où l’on apprend aussi ce qui passe pour droit, habile ou maladroit. Une difficulté souvent répétée peut être imputée au corps de l’usager jusqu’à ce qu’une autre forme rende visible la part qu’y prenait le premier outil. Mais il resterait excessif de déduire l’autonomie d’une personne de la largeur d’un manche. Encore faut-il pouvoir accéder à une cuisine et avoir le droit de s’y installer. Le design offre une prise qui peut modifier une relation. Il n’en possède pas à lui seul toutes les conditions.
 
 L’intuition des auteurs trouve un autre terrain dans les outils de communication. Imaginons qu’un agenda partagé propose uniquement « libre » ou « occupé ». Une collègue absorbée par un travail long peut être affichée comme libre parce qu’elle n’a pas de réunion. Un autre collègue lui réserve alors un créneau. La seconde action est raisonnable dans le monde décrit par l’outil et abusive dans la situation effectivement vécue. La conception d’une simple distinction a rendu certains rapports professionnels plus probables. Une manière d’être disponible s’est construite dans l’usage répété de la catégorie. Le logiciel n’a pourtant pas décrété ce que signifie être disponible dans toute vie de travail.
@@ -36,7 +42,7 @@ L’intuition des auteurs trouve un autre terrain dans les outils de communicati
 
 Le même outil peut déplacer une contrainte au lieu de la lever. Si la collègue doit créer chaque jour de fausses réunions pour pouvoir travailler sans interruption, une compétence nouvelle, savoir protéger son temps dans l’agenda, s’ajoute subrepticement à celles que demande son métier. L’environnement équipé sélectionne ceux qui connaissent cette règle implicite. Le coût du dispositif était invisible tant qu’on le jugeait seulement sur sa capacité à enregistrer un rendez-vous.
 
-![Ce que le calendrier rend visible ou négociable](figures/agenda.svg)
+![Figure 1 — L’interface de l’agenda et la règle du groupe déterminent ensemble qui doit répondre à une invitation.](figures/agenda.svg)
 
 Ce passage du possible au normal éclaire le caractère éthique de la citation. Un choix formel rend une action plus facile qu’une autre. Cela se vérifie dans le champ où une donnée peut être saisie, dans le choix des destinataires d’une notification ou dans la demande de justifier un refus. Quand ces possibilités se répètent et que plusieurs personnes dépendent du même dispositif, une préférence de conception devient une attente collective. Une personne seule peut théoriquement choisir de ne pas utiliser l’agenda. Elle risque alors de ne plus être avertie des décisions du groupe. Une manière de vivre ensemble a pris corps sans correspondre au dessein explicite d’un auteur unique. Designer ne signifie donc pas fabriquer à volonté les identités d’autrui. Cela signifie aussi répondre de conditions dont les effets peuvent dépasser les intentions du projet.
 
@@ -46,8 +52,10 @@ Une objection surgit ici. Les usagers ont des histoires, des désirs et des habi
 
 Considérons une seconde version de l’agenda. Une personne peut réserver du temps sans publier le motif de son indisponibilité et vérifier qui voit l’information. Une demande de réunion reste possible et ne devient effective qu’après acceptation. Les réglages et les choix collectifs conservent bien sûr un coût. Demander à tout le monde de paramétrer une vingtaine d’options pourrait favoriser de nouveau les employés les plus familiers du dispositif. Concevoir pour plusieurs manières d’être demande donc autre chose que multiplier les menus. Il faut choisir quels usages ordinaires seront possibles d’emblée, si une personne peut refuser sans se raconter et comment le groupe réexaminera ses règles.
 
+Dans un logiciel de coordination, formuler une demande, accepter et proposer un autre moment sont trois actions distinctes. Si la seule action affichée au destinataire est d’accepter, le silence de la personne invitée pourra être traité comme une faute. Si une contre-proposition reste possible et identifiable comme telle, la même personne devient partenaire de la fixation du rendez-vous. L’outil rend techniquement praticable un rapport différent aux engagements. Il n’en garantit pas l’exercice, car un supérieur peut continuer à décourager toute contre-proposition. Cette dernière possibilité indique où commence le travail collectif sur une manière d’être.
+
 La reprise de Winograd et Flores par Escobar rend ici sensible une question politique. Qui est en situation de définir le problème et de réviser le projet une fois ses effets constatés ? Dans l’agenda, les salariés qui remplissent les créneaux, les responsables qui les consultent et les personnes chargées de la maintenance peuvent poursuivre des fins divergentes. Faire participer les personnes concernées ne garantit pas leur accord. Cela leur donne cependant la possibilité de dire quelles catégories font violence à leur expérience, lesquelles soutiennent leur autonomie et quelles conséquences elles sont prêtes à assumer ensemble. Le design porte alors sur le processus par lequel les choix pourront être repris autant que sur le premier état de l’interface.
 
 La phrase proposée est donc juste si « designer des manières d’être » signifie rendre certaines relations praticables, durables et révisables. Elle devient trompeuse si elle fait de l’usager la matière passive d’un programme défini à sa place. La responsabilité du designer ne tient pas à une maîtrise illimitée des vies futures. Elle tient au fait, plus exigeant, que l’on peut souvent savoir par avance qui une forme risque d’exclure, et découvrir ensuite, avec ceux qui en font l’expérience, ce qu’il convient d’y changer.
 
-[Sujet officiel](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2025/Sujets/BAT-Philosophie_Art2.pdf) · [Rapport du jury](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2025/Rapports/2025_Design_Rapport_Philosophie_ecrit.pdf) · [MoMA, Good Grips Peeler de Smart Design](https://www.moma.org/collection/works/3758) · [Cooper Hewitt, enquête sur le design de la prise](https://www.cooperhewitt.org/2015/12/17/getting-a-grip-on-user-inspired-design/)
+[Sujet officiel, p. 3](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2025/Sujets/BAT-Philosophie_Art2.pdf#page=3) · [Rapport du jury, p. 1–3](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2025/Rapports/2025_Design_Rapport_Philosophie_ecrit.pdf#page=1) · [MoMA, Good Grips Peeler de Smart Design](https://www.moma.org/collection/works/3758) · [Cooper Hewitt, enquête sur le design de la prise](https://www.cooperhewitt.org/2015/12/17/getting-a-grip-on-user-inspired-design/)
