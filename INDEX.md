@@ -748,6 +748,7 @@
 | 2025 | BEL | BL | Sociologie (oral à option) — Hiérarchie et discours et actes | [md](2025/bel/bel_bl_sociologie-oral-a-option-hierarchie-et-discours-et-actes_2025/brut.md) | [md](2025/bel/bel_bl_sociologie-oral-a-option-hierarchie-et-discours-et-actes_2025/guide.md) |
 | 2025 | BEL | BL | Sociologie (oral commun) — Délinquance juvénile | [md](2025/bel/bel_bl_sociologie-oral-commun-delinquance-juvenile_2025/brut.md) | [md](2025/bel/bel_bl_sociologie-oral-commun-delinquance-juvenile_2025/guide.md) |
 | 2025 | BEL | BL | Sociologie (oral commun) — Accidentés du travail | [md](2025/bel/bel_bl_sociologie-oral-commun-accidentes-du-travail_2025/brut.md) | [md](2025/bel/bel_bl_sociologie-oral-commun-accidentes-du-travail_2025/guide.md) |
+| 2025 | BEL | BL | Sociologie (oral commun) — Religion en France entre sécularisation et recomposition | [md](2025/bel/bel_bl_sociologie-oral-commun-religion-en-france-entre-secularisation-et-recomposition_2025/brut.md) | [md](2025/bel/bel_bl_sociologie-oral-commun-religion-en-france-entre-secularisation-et-recomposition_2025/guide.md) |
 | 2025 | BEL | BL | Version grecque | [md](2025/bel/bel_bl_version-grecque_2025/brut.md) | [md](2025/bel/bel_bl_version-grecque_2025/guide.md) |
 | 2025 | BEL | BL | Version latine | [md](2025/bel/bel_bl_version-latine_2025/brut.md) | [md](2025/bel/bel_bl_version-latine_2025/guide.md) |
 | 2026 | BEL | BL | Sciences sociales | [md](2026/bel/bel_bl_sciences-sociales_2026/brut.md) | [md](2026/bel/bel_bl_sciences-sociales_2026/guide.md) |
