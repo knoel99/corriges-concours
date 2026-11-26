@@ -437,3 +437,5 @@ Pour chaque couple $(\tau_c,\sigma_c)$ de l'arbre complet, les deux entrées aya
 ## Bilan
 
 Le critère est à sens unique. Une caractéristique réduite non nulle certifie que tout arbre devra lire tous les bits sur au moins une entrée. La preuve part, en sens inverse, d’un arbre qui économise un test sur chaque branche, puis construit un couplage parfait qui annule les contributions à la caractéristique.
+
+**Remarque finale du sujet.** Le théorème donne aussi sa contraposée. Une caractéristique d’Euler réduite non nulle impose l’évasivité. La dernière page pose ensuite comme question ouverte l’évasivité de toute fonction positive, faiblement symétrique et non triviale. La question 17 établit le critère sur la caractéristique d’Euler. Pour conclure dans le cadre plus général de la remarque, il faudrait un argument supplémentaire.
