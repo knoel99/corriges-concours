@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## 1 · Contexte et présentation
 
 ### Question 1.1 · Système volant
@@ -198,6 +200,8 @@ Son gain statique est 1 pour $I>0$.
 ### Question 3.16 · Contraintes de dépassement et de rapidité
 
 $\omega_n=\sqrt{0{,}265I/0{,}4}$ et $\zeta=(200+0{,}265K)/(2\sqrt{0{,}4\cdot0{,}265I})$. Imposer $I>0$, $200+0{,}265K>0$. Quand le zéro $-I/K$ est très au-delà de la bande, la figure 19 permet d'imposer $\zeta>0{,}690$ (dépassement inférieur à 5 %) et $f_5(\zeta)/\omega_n<0{,}009$ s, où $f_5=\omega_nt_{5\%}$ est lu sur l'abaque. Ces deux inégalités portent directement sur $K,I$ après substitution. Un choix voisin de $\zeta=0{,}7$ exige une pulsation propre de l'ordre de $3/0{,}009=333$ rad/s ou plus. Si le zéro n'est pas négligeable, il faut contrôler les deux inégalités sur la réponse complète de Q3.15.
+
+Pour contrôler directement le modèle avec son zéro, posons $b=(200+0{,}265K)/0{,}4$, $c=0{,}265I/0{,}4$. Pour un échelon unité, la transformée de l’erreur $1-C_s(t)$ est $(p+500)/(p^2+bp+c)$. Si $c>b^2/4$, elle vaut donc dans le temps $e(t)=e^{-bt/2}[\cos(\omega_d t)+(500-b/2)\sin(\omega_d t)/\omega_d]$, avec $\omega_d=\sqrt{c-b^2/4}$. On contrôle le dépassement en cherchant le minimum de $e$ et le temps de réponse par le dernier passage de $|e|$ à $0{,}05$.
 
 ### Question 3.17 · Vérification numérique du réglage
 
