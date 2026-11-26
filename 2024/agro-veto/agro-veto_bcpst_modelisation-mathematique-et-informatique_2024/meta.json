@@ -46,6 +46,68 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Rédaction intégrale des 38 questions et sous-questions sur le sujet officiel. Confrontation au rapport et au corrigé du jury. Tracé de trois figures, contrôle des itérations, preuves d’extinction et incertitude à horizon fini. Lecture directe du graphe de la page 8."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture du sujet, de son annexe Python, du corrigé et du rapport du jury. Vérification des 38 rubriques dans les deux éditions, du tableau de variations et des limites du modèle linéarisé. Recoupement des fréquences empiriques sur le tracé officiel et du biais dû à l’arrêt à la génération 60 par itérations de la fonction génératrice et bornes sur son plus petit point fixe. Vérification du code de simulation et des figures."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "5",
+      "6",
+      "7",
+      "8.1",
+      "8.2",
+      "8.3",
+      "8.4",
+      "8.5",
+      "8.6",
+      "8.7",
+      "9.1",
+      "9.2",
+      "9.3",
+      "10.1",
+      "10.2",
+      "10.3",
+      "11.1",
+      "11.2",
+      "12.1",
+      "12.2",
+      "13.1",
+      "13.2",
+      "13.3",
+      "13.4"
+    ],
+    "precision": "Les 38 réponses du fascicule A BCPST 0224 vont de Q1 à Q13.4. Les graphiques et l’annexe Python en page 9 ont été recoupés sur le sujet, le corrigé et le rapport du jury.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "0be6219147708635e2d9c67fab9feaab9501d9d7fa95a5a7e593aa0b55ab95bd",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Relecture du sujet, de son annexe Python, du corrigé et du rapport du jury. Vérification des 38 rubriques dans les deux éditions, du tableau de variations et des limites du modèle linéarisé. Recoupement des fréquences empiriques sur le tracé officiel et du biais dû à l’arrêt à la génération 60 par itérations de la fonction génératrice et bornes sur son plus petit point fixe. Vérification du code de simulation et des figures.",
+      "commit_redaction_anterieure": "13ebe53f82dee21626b4efa94b3509d3cd24fe6d"
+    }
+  }
 }
