@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Les mêmes arêtes servent successivement à écrire une matrice, à faire tomber des grains et à choisir les branches d'un arbre. Les exemples utilisent le graphe $G_0$ du sujet et le puits 5. Un sommet ordinaire peut jouer dès que sa hauteur atteint son degré. La hauteur du puits est libre.
 
 ## Partie 1 · Matrices du graphe
@@ -84,6 +86,8 @@ Lorsqu'un sommet cède un grain à chacun de ses voisins, sa hauteur baisse de s
 
 **c)** Pour la suite, la récurrence emploie un témoin qui atteint chaque composante dans ce sens. Un témoin que $u$ absorbe peut lui être ajouté autant de fois que voulu en répétant la même avalanche. Par (b) et (a), assez de copies fournissent au moins $d_i$ grains sur tout sommet $i<n$. L'état intermédiaire est donc $\delta+u'$ avec $u'$ positive ; il se stabilise à $u$ puisqu'il est sur une branche d'une avalanche de fin unique. Dans l'autre sens, la différence entre $\delta+u'$ et l'état stable $u$ dépasse zéro en toute coordonnée hors puits. C'est le témoin recherché.
 
+Voici pourquoi la précision sur le témoin de récurrence importe aussi en (c). Prenons le chemin $a-s-b-c$ de puits $s$ et la pile $u=0$. Ajouter un grain en $a$ et en retrancher un au puits donne un témoin admis par la définition imprimée. Un seul éboulement de $a$ ramène à $u$. Pourtant, en partant de $\delta+u'$ avec $u'$ positive, la composante $\{b,c\}$ ne peut jamais se vider. Elle contient des grains au départ et tout éboulement en $b$ ou $c$ laisse au moins un grain à l’autre sommet. Donc (c) est faux avec ce témoin limité à une composante. La condition de support utilisée en (b) rétablit les deux sens.
+
 ### Question 3.4 · Ancêtre commun sans contrainte de hauteur
 
 Éliminez $\Delta_n$ grâce à la relation entre lignes. Séparez les coefficients positifs et négatifs de $u-v$. En déplaçant les deux sommes de part et d'autre, chaque côté devient une configuration augmentée d'une combinaison positive de lignes. La valeur commune peut donc atteindre les deux par soustractions, les hauteurs étant libres dans cette question.
@@ -95,6 +99,8 @@ Stabilisez deux copies de $\delta$. Le résultat $t$ tient au-dessous du seuil e
 ### Question 3.6 · Test avec la configuration universelle
 
 Partez d'un antécédent de $u$ contenant $\delta$. Si l'on ajoute $\varepsilon$ avant de stabiliser, on peut d'abord le faire absorber par $\delta$ selon 3.5. On peut aussi garder $\varepsilon$ en réserve jusqu'à atteindre $u+\varepsilon$. Les deux ordres ont la même fin stable, donc $u$ absorbe $\varepsilon$. Réciproquement, pour un état stable, cette absorption fournit le témoin demandé en 3.3.
+
+La stabilité de $u$ doit être testée avant cette équivalence. Sur une seule arête reliant le sommet ordinaire au puits, on a $\varepsilon=(2,-2)$ dans l’ordre (sommet, puits). La pile $u=(1,0)$ est instable. Deux éboulements légaux ramènent pourtant $u+\varepsilon$ à $u$.
 
 ### Question 3.7 · Représentant récurrent
 
@@ -133,6 +139,8 @@ Dans la borne $\ell np$, remplacez $p$ par le stock de départ. Une pile stable 
 Imaginez que le puits joue une seule fois. Chaque voisin reçoit son grain et le puits perd son degré. Cette variation $\beta$ est la somme des lignes ordinaires. Si l'on revient à $u$, c'est un témoin de récurrence présent dans chaque composante. Inversement, un récurrent plus $\beta$ se stabilise sur un récurrent : l'absorption de $\varepsilon$ par $u$ se transporte après ajout et stabilisation, grâce à l'unicité de la fin. La classe modulo les lignes reste identique ; 3.7 force le retour à $u$. L'indépendance des lignes montre alors qu'on a joué exactement une fois partout.
 
 Pour tester, utilisez une file et ajoutez chaque sommet lorsqu'il franchit son seuil. Un premier sommet jouant une seconde fois aurait eu besoin de plus de grains qu'il n'a de voisins avant ce deuxième coup, y compris le don du puits. La file traite donc au plus $n-1$ sommets et examine chaque arête au plus deux fois. Le verdict est positif si tous les sommets ordinaires ont joué.
+
+La même réserve qu’en 3.6 vaut pour le test thermique. Sur l’arête unique, $\beta=(1,-1)$ et la pile instable $(1,0)$ retrouve sa valeur après l’ajout de $\beta$ et un éboulement légal. Le test commence donc par vérifier $0\le u_i<d_i$ pour tout $i<n$, en temps $O(n)$.
 
 ### Question 4.6 · Vagues et rang de sélection
 
