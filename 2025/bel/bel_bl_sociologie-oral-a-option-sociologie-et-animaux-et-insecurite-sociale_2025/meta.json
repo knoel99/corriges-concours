@@ -1,0 +1,61 @@
+{
+  "slug": "bel_bl_sociologie-oral-a-option-sociologie-et-animaux-et-insecurite-sociale_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Sociologie (oral à option) — Sociologie et animaux et insécurité sociale",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "La sociologie et les animaux / L’insécurité sociale",
+  "questions": 0,
+  "sujets_au_choix": [
+    "La sociologie et les animaux",
+    "L’insécurité sociale"
+  ],
+  "date_revision": "2026-11-26",
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oraux_sociologie_option_bl.pdf#page=50",
+    "sujet_sha256": "a6cfd0e1d317596c64fdd7f85e2770ef806175c8b278483fe266bc97bed6e3d9",
+    "pages_sujet": "50 sur 54, billet à deux sujets secs",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_sociologie_option.pdf",
+    "rapport_sha256": "514cddfb2a08ef98d7d1375ef107103a12e496e5c827f26b9640024be445eb8b",
+    "pages_rapport": "1 à 4, commentaire sur le premier sujet p. 3, les deux titres p. 4"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "agent": "fui_physique_un",
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Deux exposés autonomes, comparaison des observations et des concepts, préparation aux questions, construction et vérification de deux figures originales."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Sujet 1",
+      "fichier": "figures/observer-la-traite.svg",
+      "legende": "Une séquence de traite peut être décrite par le dispositif, les conduites successives et les ajustements observés. Schéma de méthode proposé pour l’exposé."
+    },
+    {
+      "numero": 2,
+      "question": "Sujet 2",
+      "fichier": "figures/non-recours-au-rsa.svg",
+      "legende": "Lecture sur cent foyers éligibles, en logement ordinaire en France métropolitaine, pour un trimestre moyen de 2018. Chaque point représente un point de pourcentage (DREES, 2022)."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "sujets_entierement_traites": [
+      "La sociologie et les animaux",
+      "L’insécurité sociale"
+    ],
+    "precision": "Les deux alternatives du billet sont traitées séparément en brut et en guidé. Une seule est présentée au jury. Aucun document statistique ni question numérotée dans le billet."
+  }
+}
