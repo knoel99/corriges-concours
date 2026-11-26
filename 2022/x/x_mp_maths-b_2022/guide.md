@@ -2,7 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 L’épreuve du 26 avril 2022, en quatre heures, relie deux calculs. La cotangente donne les valeurs de la fonction zêta aux premiers entiers pairs. Les lois des PGCD de tirages uniformes font ensuite apparaître les inverses de ces mêmes valeurs. Les 41 questions et sous-questions sont traitées dans l’ordre du sujet. [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20MP%20SUJET%20ECRIT%20DE%20MATHS%20B%20%28X%29.pdf) · [Rapport du jury](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20MP%20RAPPORT%20ECRIT%20MATHS%20B%20%28X%29.pdf)
 
@@ -212,6 +214,13 @@ Dès le rang de 10a, le premier terme est majoré par la somme des écarts sur $
 
 La question 9 donne la nécessité. Si $\mu$ est une probabilité et si les masses ponctuelles convergent vers les siennes, 10b donne $\|\mu_n-\mu\|\le4\varepsilon$ pour $n\ge N_\varepsilon$. Puisque $\varepsilon>0$ est arbitraire, la norme tend vers zéro.
 
+On peut identifier exactement cette norme sur les probabilités du sujet. Pour $d(x)=\mu_n(\{x\})-\mu(\{x\})$, la somme des $d(x)$ est nulle et la somme de leurs modules est au plus deux. La partie $A_+=\{x:d(x)>0\}$ recueille toute la masse positive ; son complément recueille l’opposée. Il vient
+$$
+\sup_{A\subset E}|\mu_n(A)-\mu(A)|
+=\tfrac12\sum_{x\in E}|d(x)|.
+$$
+Le facteur $1/2$ correspond à la convention de norme choisie dans l’énoncé.
+
 ### Question 11
 
 > [!INDICATION]
@@ -326,7 +335,7 @@ Les événements $\{L\ge n\}$ décroissent vers l’ensemble vide puisque $L$ es
 
 Chaque entier $m\ge1$ a un nombre fini de facteurs premiers. Dès que tous figurent parmi $p_1,\ldots,p_n$, $\psi_n(m)=m$, aussi pour $m=1$ par produit vide. Pour chaque issue, la suite $\psi_n(X)$ est donc stationnaire de limite $X$, le rang pouvant dépendre de l’issue. La question 15c donne la convergence des lois en norme et la question 9 donne la convergence en chaque singleton $\{x\}$ demandée.
 
-![Figure 3 — Dans 924 = 2² × 3 × 7 × 11, le premier 5 ne change aucun facteur. Après 11, la troncature égale définitivement 924. L’axe vertical est logarithmique.](figures/troncature-premiere.svg)
+![Figure 3 — Dans 924 = 2² × 3 × 7 × 11, le nombre premier 5 a une valuation nulle. Dès 11, la troncature vaut 924. L’axe vertical est logarithmique.](figures/troncature-premiere.svg)
 
 ## IV. Divisibilité et loi limite du PGCD
 
@@ -411,5 +420,11 @@ $$P_n(s)\longrightarrow\mu_s(\{1\})=\frac1{\zeta(s)}.$$
 Si « tirer $s$ nombres » se comprend sans remise, la conclusion reste la même pour $s$ fixé. La loi ordonnée sans remise est celle des tirages indépendants conditionnellement à l’événement $C$ que leurs valeurs sont toutes distinctes. Pour tout événement $A$, la formule des probabilités totales donne $|\mathbb P(A)-\mathbb P(A\mid C)|\le\mathbb P(C^c)$. Chaque paire de tirages coïncide avec probabilité $1/n$, donc $\mathbb P(C^c)\le\binom{s}{2}/n\to0$. Un choix uniforme d’un sous-ensemble donne le même PGCD que le tirage ordonné sans remise.
 
 Par 7c, les limites demandées pour $s=2,4,6$ sont respectivement $6/\pi^2$, $90/\pi^4$ et $945/\pi^6$.
+
+Les points de la figure peuvent se retrouver par un calcul entier. Pour deux tirages, notons $C(k)$ le nombre de couples ordonnés d’entiers entre 1 et $k$ dont le PGCD vaut un. Le partage suivant le PGCD donne $n^2=\sum_{d=1}^n C(\lfloor n/d\rfloor)$. Ainsi $C(1)=1$ et
+$$
+C(n)=n^2-\sum_{d=2}^n C(\lfloor n/d\rfloor),\qquad P_n(2)=C(n)/n^2.
+$$
+Par exemple $C(2)=3$, $C(3)=7$ et $C(5)=19$. Les ordonnées correspondantes sont $3/4$, $7/9$ et $19/25$. La convergence établie n’impose pas une suite monotone.
 
 ![Figure 4 — Pour deux tirages indépendants, les points donnent les probabilités exactes obtenues en comptant les couples. Leur limite est voisine de 0,608.](figures/probabilite-pgcd-un.svg)
