@@ -12,6 +12,8 @@
 
 **Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Problématique** — Que faut-il ajouter à la simple représentation possible d’une chose pour dire qu’elle est réelle, y compris lorsque son existence dépend de nos pratiques ?
 
 ## Introduction
@@ -37,6 +39,8 @@ Une douleur que personne d’autre ne peut éprouver à ma place permet de disti
 Imaginons que deux médecins excluent l’un après l’autre la fracture supposée. La seconde vérification renforce le jugement sur l’état de l’os. Elle n’ajoute aucun argument pour décider si la douleur est réellement éprouvée. La question du réel demande donc aussi de déterminer sur quoi porte chaque procédure de vérification.
 
 ![Une même situation, trois affirmations à distinguer](figures/realite-et-objectivite.svg)
+
+Dans la salle d’attente d’une gare, le cadran de l’horloge s’est arrêté à midi. À midi exactement, il indique l’heure juste. L’indication vraie ne suffit pourtant pas à rendre réel le mouvement que le voyageur prête au mécanisme. Cinq minutes plus tard, un second regard le détrompera. Mais l’horloge était déjà arrêtée au premier regard. L’épreuve ultérieure permet de déterminer quel état de choses existait alors ; elle ne le fait pas advenir rétroactivement. Cet écart explique pourquoi définir le réel par ce que l’on vérifie laisserait précisément de côté ce qui donne à la vérification le pouvoir de nous corriger.
 
 Encore faut-il éviter de définir la chose réelle par la réussite actuelle de nos vérifications. Une digue rompue pendant la nuit peut avoir inondé un village abandonné. L’événement n’a pas attendu le premier témoin pour avoir lieu. Les traces par lesquelles on le reconstituera supposent précisément qu’une eau a coulé selon une histoire dont l’enquête ne choisit pas l’issue. D’autre part, une hypothèse fausse peut longtemps s’accorder avec tout ce que nous avons vérifié. Nous avons donc des raisons de distinguer la réalité et l’objectivité de nos jugements. L’objectivité qualifie un effort pour soumettre ces jugements à des épreuves communicables et susceptibles d’être corrigées. La réalité désigne ce dont il peut y avoir encore quelque chose à apprendre, même contre l’accord de tous à un instant donné. Reste une difficulté. S’il faut que la réalité puisse nous donner tort, doit-elle, pour cela, être absolument indépendante de toute activité humaine ?
 

@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 « Qu’est-ce que penser ? » Dissertation commune de six heures.
 
 ## Faire l’expérience de la distinction
@@ -19,6 +21,8 @@ Dessinez un carré et donnez-vous cinq secondes pour en doubler l’aire. Gardez
 **Une pensée a-t-elle toujours la forme d’une phrase ?** Quand une personne suit en silence les diagonales de la figure, elle peut comprendre un rapport avant de le formuler. La mise en mots ou la reprise du tracé permettront d’en discuter. Il faut distinguer le moyen de la découverte, la forme de sa justification et la possibilité de la partager.
 
 **Comment répondre à l’objection du cercle ?** Appliquez la définition à votre propre exercice. Vous avez opposé deux sens du mot, conçu un cas où ils se recouvrent et corrigé une première généralité. Cette vérification réflexive apporte un exemple supplémentaire et une raison de retenir la définition que vous proposez.
+
+**Exercice de préparation.** Un thème musical vous reste en tête. Comparez trois gestes : le fredonner machinalement, essayer deux fins, reprendre celle dont la résolution arrive au moment voulu. À partir de quel geste avez-vous une raison de parler de pensée ? Dans le troisième, peut-on entendre la différence avant de la décrire ? Revenez ensuite au carré. Une raison musicale se fait entendre dans une reprise ; une raison géométrique doit valoir pour tous les carrés de même construction. Ce contraste évite de transformer la démonstration en modèle de toute pensée.
 
 ## À quel moment ai-je commencé à penser ?
 
@@ -39,6 +43,8 @@ Dans le *Théétète*, Platon fait décrire la pensée comme une conversation de
 L’épreuve géométrique d’un carré rend cette opération visible. Je souhaite doubler l’aire d’un carré de côté un. Ma première idée est de doubler son côté. Il suffit de tracer les deux figures pour voir que j’ai construit quatre carrés de départ. Je trace maintenant la diagonale du petit carré et construis sur elle un carré nouveau. Quatre demi-carrés initiaux le remplissent, soit une aire égale à deux. L’important n’est pas ici le résultat numérique. J’ai appris à distinguer deux rapports que mon premier geste confondait, le rapport entre les longueurs et le rapport entre les aires. Une cause explique pourquoi j’ai commencé par copier et agrandir mon dessin. Une raison permet de comprendre pourquoi je corrige cette première opération. Le dialogue socratique du *Ménon* met précisément en scène cette distance entre l’assurance d’avoir une réponse et la découverte du problème.
 
 ![Du côté que l’on double à l’aire que l’on double](figures/carre.svg)
+
+Une pianiste improvise une fin que personne, elle comprise, n’avait anticipée. Pendant qu’elle cherche, elle ne formule aucune proposition sur les notes. Un accompagnateur substitue pourtant un dernier accord à celui qu’elle vient de jouer. Elle reprend la phrase et lui fait entendre pourquoi cet accord ferme trop tôt une tension qui devait durer. Le premier essai avait déjà un sens que sa reprise rend discutable. S’il fallait pouvoir dire sa raison avant de jouer, on manquerait ici le moment de l’invention. Si chaque suite de touches constituait par elle-même une pensée, rien ne distinguerait cette fin de celle que ferait entendre une main posée au hasard. Penser peut prendre cette forme intermédiaire : l’activité découvre, en s’exerçant, une différence à laquelle elle se reconnaît tenue.
 
 Cette possibilité de répondre de ses liaisons ne suppose aucune infaillibilité. Je peux hasarder une hypothèse, négliger une objection et me tromper en toute bonne foi. Elle ne suppose pas davantage une inspection verbale de chacun de mes gestes. La géomètre entraînée voit d’un coup la relation que j’ai laborieusement reconstruite. Si une difficulté surgit, sa vision peut cependant être reprise, communiquée et corrigée. Une pensée naissante et une pensée formée n’occupent pas le même temps, mais l’une peut devenir l’autre.
 
