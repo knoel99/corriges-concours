@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le tri par lettres, les chemins dans le graphe des chevauchements et les mots minimaux parmi leurs rotations répondent à une même question : comment énumérer tous les mots sans répétition ? Le dernier résultat relie les trois parties.
 
 ## Partie 1. Trier les mots
@@ -11,6 +13,16 @@ Le tri par lettres, les chemins dans le graphe des chevauchements et les mots mi
 ### Question 1.1.1 · Comparaison
 
 Comparer de gauche à droite jusqu’à la fin du plus court. Au premier désaccord, renvoyer le signe de la différence des lettres ; à défaut, celui de la différence des longueurs. Une lettre commune demande un nombre constant d’opérations. Deux mots égaux imposent une lecture complète.
+
+```text
+compare(s,t)
+i ← 1
+tant que i ≤ min(s[0],t[0]) :
+    si s[i] < t[i] : renvoyer -1
+    si s[i] > t[i] : renvoyer 1
+    i ← i+1
+renvoyer le signe de s[0]-t[0]
+```
 
 ### Question 1.1.2 · Tri par comparaisons
 
@@ -211,8 +223,14 @@ Deux sorties sont possibles à chaque état du même compteur. Pour la première
 
 ### Question 3.6.4 · Concaténation minimale
 
-Distinguer deux points. Le dénombrement de 3.3.4 fournit la bonne longueur, mais ne prouve pas à lui seul qu’aucune fenêtre ne manque. Voici comment localiser les fenêtres. Noter $b$ la lettre maximale et classer les colliers de longueur $n$ par leurs racines $p$. Si un collier $w$ a $h$ lettres finales maximales et $d=|p|$, son successeur conserve les $n-h-1$ premières lettres : le compteur de 3.6.1 augmente la lettre précédente, et compléter ce préfixe augmenté par des $b$ fournit déjà un collier. Partir de la fin de la liste. Au début d’un bloc de longueur $d<n$, les $n-d$ lettres manquantes du collier se lisent dans ce préfixe conservé du bloc suivant et de son prolongement. Un bloc de longueur $n$ se suffit. Le collier tout maximal se lit à la fin grâce à son prédécesseur $(b-1)b^{n-1}$.
+Si $k=1$, seul le mot 0 est possible. Si $n=1$, l’ordre minimal est celui des lettres de l’alphabet. Supposons désormais $k,n\ge2$. Le dénombrement de 3.3.4 fournit la bonne longueur, mais ne prouve pas à lui seul qu’aucune fenêtre ne manque. Voici comment localiser les fenêtres. Noter $b$ la lettre maximale et classer les colliers de longueur $n$ par leurs racines $p$. Si un collier $w$ a $h$ lettres finales maximales et $d=|p|$, son successeur conserve les $n-h-1$ premières lettres : le compteur de 3.6.1 augmente la lettre précédente, et compléter ce préfixe augmenté par des $b$ fournit déjà un collier. Partir de la fin de la liste. Au début d’un bloc de longueur $d<n$, les $n-d$ lettres manquantes du collier se lisent dans ce préfixe conservé du bloc suivant et de son prolongement. Un bloc de longueur $n$ se suffit. Le collier tout maximal se lit à la fin grâce à son prédécesseur $(b-1)b^{n-1}$.
 
 En déplaçant le départ dans le bloc jusqu’à la dernière lettre non maximale, on lit encore toutes les rotations correspondantes : le prolongement demande au plus $n-h-1$ caractères du voisin. Pour une rotation qui prend $r$ lettres finales maximales en tête, repérer la première frontière débutant par le reste $v$ de la rotation. Le bloc précédent finit par au moins $r$ maximales. Sinon le compléter par ces maximales en gardant son début donnerait un collier encore antérieur à la frontière, plus grand que son prédécesseur immédiat. Cette complétion est minimale dans sa classe puisque toute première augmentation d’une lettre du préprimaire donne un primaire, puis une queue faite de maximales en préserve la primarité. Le raccord voulu existe donc. Si $v$ est entièrement nul et la frontière initiale, utiliser le raccord fin-début. Chaque fenêtre de chaque classe apparaît et le compte des places rend ces occurrences uniques.
 
-Pour la comparaison entre cycles, le résultat de Moreno et Perrin sur les cycles partiels précise l’argument de frontière : la concaténation circulaire d’une fin de la liste des racines code exactement les classes de rotation de cette fin (corollaire 1). Au premier désaccord, si l’autre cycle utilise une lettre $u$ inférieure à $v$ après le même contexte $c$ de longueur $n-1$, la classe minimale de $cu$ précède strictement celle de $cv$ : appliquer à $cu$ la rotation qui minimise $cv$. Le théorème 2 de leur corrigendum applique le corollaire aux fenêtres qui franchissent les frontières des blocs et exclut cette première divergence. Ainsi l’ordre des racines fournit bien le plus petit mot cyclique, y compris parmi les choix d’origine possibles. [Argument complet pour les frontières et la minimalité](https://www-igm.univ-mlv.fr/~perrin/Recherche/Publications/Articles/debruijnRevised3.pdf)
+Pour la minimalité, utilisons la caractérisation gloutonne de la factorisation de Fredricksen, Kessler et Maiorana. Initialiser les $n-1$ dernières lettres à $b$, puis choisir toujours la plus petite lettre créant une fenêtre neuve, produit exactement la concaténation ci-dessus. Les $n-1$ lettres initiales servent de contexte et ne sont pas émises. [Factorisation et caractérisation gloutonne, §2](https://www.ece.mcmaster.ca/~schwam10/publications/MSjrnl39.pdf)
+
+Où un autre cycle pourrait-il gagner une lettre ? Il devrait commencer lui aussi par $0^n$. À sa première divergence, toute lettre plus petite recrée une fenêtre que le glouton a déjà vue. Les fenêtres entièrement contenues dans le préfixe commun sont déjà interdites au concurrent. Les seules exceptions possibles sont celles lues à travers le contexte initial du glouton. Elles s’écrivent $v_j0$, où $v_j=b^j0^{n-1-j}$ et $1\le j<n$. Le concurrent voudrait donc écrire zéro depuis $v_j$ quand la concaténation écrit une lettre positive.
+
+Regardons les sorties positives de $v_{j-1}$. Pour $a>0$, la fenêtre $v_{j-1}a$ se termine lorsqu’on a lu $0^{n-j}a$ à la première frontière portant ce préfixe : les $j-1$ lettres maximales précédentes sont fournies par le raccord démontré plus haut. Pour $j=1$, le mot entier commence à la frontière. On a déjà lu cette fenêtre à la fin du bloc $L=0^{n-j}ab^{j-1}$, qui est primaire puisque sa seule plage de zéros détermine son début. En revanche, pour une sortie positive $d$ de $v_j$, le préfixe à chercher à la frontière est $0^{n-1-j}d$, avec un zéro initial de moins. Sa première frontière vient après le bloc $L$. Cela vaut encore pour $j=n-1$ : la frontière commence alors par $d$, et $b^n$ se termine à la dernière lettre. Ainsi tout départ positif de $v_{j-1}$ précède tout départ positif de $v_j$.
+
+Suivons maintenant le concurrent qui a choisi zéro. Il arrive en $v_{j-1}$. Toutes ses sorties positives sont déjà apparues dans le préfixe commun ; il doit choisir zéro, puis recommencer en $v_{j-2}$. Arrivé en $v_0=0^{n-1}$, il a épuisé aussi la sortie zéro dans son tout premier $0^n$. Or il manque encore des fenêtres. En effet, si la divergence se produit à la lettre $i\le k^n$, le parcours commencé au contexte $0^{n-1}$ a effectué seulement $i-(n-1)+j-1<k^n$ pas lorsqu’il revient en $v_0$. Il ne peut achever le cycle. On obtient la minimalité parmi toutes les origines possibles. [Démonstration publiée par les cycles partiels, théorème 2](https://www-igm.univ-mlv.fr/~perrin/Recherche/Publications/Articles/debruijnRevised3.pdf)
