@@ -1,0 +1,79 @@
+{
+  "slug": "bel_al_espagnol-theme-lyon_2021",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Espagnol (thème Lyon)",
+    "annee": 2021
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2021-10/Epreuves-de-Specialite.pdf#page=11",
+    "sujet_sha256": "1204b3dd5ed1c85101afe6b8aaa9fbfa0b3746b5ce3fcd6fefd4add8476fe553",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2021-11/ESPAGNOL_2021.pdf#page=5",
+    "sha256_rapport_jury": "254cd0a08f2751a1fa0434a5b91821865b7766bd1d58157733d95aac22845c34",
+    "pages_rapport_verifiees": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "ouvrage": "Honoré de Balzac, Le Contrat de mariage (1835).",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2021"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Proposition de thème",
+      "legende": "La fortune vue de Bordeaux"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lyon_ses_sources",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Deux paragraphes, de « Vers le commencement du siècle » à « de la maison Évangelista ». Coupure imprimée après le départ de certaines familles bordelaises. Traduction originale, explication des difficultés et schéma « La fortune vue de Bordeaux »."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Honoré de Balzac, Le Contrat de mariage (1835)."
+    ],
+    "note": "Traduction pédagogique originale. Les droits sur le texte français appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Proposition de thème"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Proposition de thème",
+        "page_pdf": 11,
+        "page_pdf_fin": 11,
+        "perimetre": "Deux paragraphes, de « Vers le commencement du siècle » à « de la maison Évangelista ». Coupure imprimée après le départ de certaines familles bordelaises."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

@@ -559,6 +559,9 @@
 | 2017 | ENS Rennes | D1 | Espagnol | [md](2017/ens-rennes/ens-rennes_d1_espagnol_2017/brut.md) | [md](2017/ens-rennes/ens-rennes_d1_espagnol_2017/guide.md) |
 | 2017 | ENS Rennes | D1 | Italien | [md](2017/ens-rennes/ens-rennes_d1_italien_2017/brut.md) | [md](2017/ens-rennes/ens-rennes_d1_italien_2017/guide.md) |
 | 2017 | BEL | AL | Allemand (thème Lyon) | [md](2017/bel/bel_al_allemand-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_allemand-theme-lyon_2017/guide.md) |
+| 2018 | BEL | AL | Allemand (thème Lyon) | [md](2018/bel/bel_al_allemand-theme-lyon_2018/brut.md) | [md](2018/bel/bel_al_allemand-theme-lyon_2018/guide.md) |
+| 2020 | BEL | AL | Allemand (thème Lyon) | [md](2020/bel/bel_al_allemand-theme-lyon_2020/brut.md) | [md](2020/bel/bel_al_allemand-theme-lyon_2020/guide.md) |
+| 2021 | BEL | AL | Allemand (thème Lyon) | [md](2021/bel/bel_al_allemand-theme-lyon_2021/brut.md) | [md](2021/bel/bel_al_allemand-theme-lyon_2021/guide.md) |
 | 2017 | BEL | AL | Anglais (commentaire et traduction) | [md](2017/bel/bel_al_anglais-commentaire-et-traduction_2017/brut.md) | [md](2017/bel/bel_al_anglais-commentaire-et-traduction_2017/guide.md) |
 | 2017 | BEL | AL | Anglais (thème Lyon) | [md](2017/bel/bel_al_anglais-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_anglais-theme-lyon_2017/guide.md) |
 | 2017 | BEL | AL | Arabe (commentaire et traduction) | [md](2017/bel/bel_al_arabe-commentaire-et-traduction_2017/brut.md) | [md](2017/bel/bel_al_arabe-commentaire-et-traduction_2017/guide.md) |
@@ -639,6 +642,9 @@
 | 2026 | BEL | AL | Histoire ancienne (oral option 19 juin) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-19-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-19-juin_2026/guide.md) |
 | 2017 | BEL | AL | Espagnol (commentaire et traduction) | [md](2017/bel/bel_al_espagnol-commentaire-et-traduction_2017/brut.md) | [md](2017/bel/bel_al_espagnol-commentaire-et-traduction_2017/guide.md) |
 | 2017 | BEL | AL | Espagnol (thème Lyon) | [md](2017/bel/bel_al_espagnol-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_espagnol-theme-lyon_2017/guide.md) |
+| 2018 | BEL | AL | Espagnol (thème Lyon) | [md](2018/bel/bel_al_espagnol-theme-lyon_2018/brut.md) | [md](2018/bel/bel_al_espagnol-theme-lyon_2018/guide.md) |
+| 2020 | BEL | AL | Espagnol (thème Lyon) | [md](2020/bel/bel_al_espagnol-theme-lyon_2020/brut.md) | [md](2020/bel/bel_al_espagnol-theme-lyon_2020/guide.md) |
+| 2021 | BEL | AL | Espagnol (thème Lyon) | [md](2021/bel/bel_al_espagnol-theme-lyon_2021/brut.md) | [md](2021/bel/bel_al_espagnol-theme-lyon_2021/guide.md) |
 | 2017 | BEL | AL | Grec moderne (commentaire et traduction) | [md](2017/bel/bel_al_grec-moderne-commentaire-et-traduction_2017/brut.md) | [md](2017/bel/bel_al_grec-moderne-commentaire-et-traduction_2017/guide.md) |
 | 2017 | BEL | AL | Histoire et théorie des arts | [md](2017/bel/bel_al_histoire-et-theorie-des-arts_2017/brut.md) | [md](2017/bel/bel_al_histoire-et-theorie-des-arts_2017/guide.md) |
 | 2017 | BEL | AL | Italien (commentaire et traduction) | [md](2017/bel/bel_al_italien-commentaire-et-traduction_2017/brut.md) | [md](2017/bel/bel_al_italien-commentaire-et-traduction_2017/guide.md) |

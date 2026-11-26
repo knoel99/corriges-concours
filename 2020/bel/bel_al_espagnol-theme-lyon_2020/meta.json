@@ -1,0 +1,78 @@
+{
+  "slug": "bel_al_espagnol-theme-lyon_2020",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Espagnol (thème Lyon)",
+    "annee": 2020
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2020-09/2020%20Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=10",
+    "sujet_sha256": "994b2d68067654ccd48e5ab3cd93250544d1ba3909e2d3651b6b2e20aea315ac",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2020-11/ESPAGNOL_2020%20internet.pdf#page=8",
+    "sha256_rapport_jury": "c4065ed9c5291ee79b75e3afb09ff191432b161f18cf35abbf9a2a8ab7c61adf",
+    "pages_rapport_verifiees": [
+      8,
+      9,
+      10
+    ],
+    "ouvrage": "Daniel Pennac, Journal d’un corps (2012).",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2020"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Proposition de thème",
+      "legende": "À qui appartient la diatribe ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lyon_ses_sources",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Feuillet entier, de « Je vois bien » à « ma jeunesse retrouvée ». Coupure imprimée après la phrase sur le surmoi. Traduction originale, explication des difficultés et schéma « À qui appartient la diatribe ? »."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Daniel Pennac, Journal d’un corps (2012)."
+    ],
+    "note": "Traduction pédagogique originale. Les droits sur le texte français appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Proposition de thème"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Proposition de thème",
+        "page_pdf": 10,
+        "page_pdf_fin": 10,
+        "perimetre": "Feuillet entier, de « Je vois bien » à « ma jeunesse retrouvée ». Coupure imprimée après la phrase sur le surmoi."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}
