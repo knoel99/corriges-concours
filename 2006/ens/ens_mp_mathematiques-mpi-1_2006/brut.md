@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Les transvections entières servent à engendrer le groupe spécial linéaire. La trace de ses éléments d’ordre fini fournit ensuite des divisibilités sur le cardinal de ses sous-groupes et la réduction modulo un nombre premier distingue les matrices.
 
 ## I. Générateurs de SLₙ(ℤ)
@@ -144,11 +146,15 @@ Par 12.b, $g\mid8!=40320$. Par 15.b, $g\mid(80\cdot78\cdot72\cdot54)/2=12130560$
 
 Soit $H$ le groupe abstrait de cardinal $g$. La multiplication à gauche permute fidèlement les $g$ vecteurs $e_h$ de la base du réseau $\mathbb Z^H$. Le sous-réseau $L=\{(a_h):\sum_h a_h=0\}$, de rang $g-1$ et de base $e_h-e_1$ pour $h\ne1$, est stable. L’action induite $A_s$ de $s\in H$ sur $L$ est fidèle pour $g\ge2$ : si elle fixe toutes les différences, elle fixe $L\otimes\mathbb R$ point par point et elle fixe aussi le vecteur constant, donc elle fixe toute la représentation régulière. Les matrices $A_s$ sont entières inversibles avec déterminant $\pm1$. Posons $B_s=\operatorname{diag}(A_s,\det A_s)\in\mathrm{SL}_g(\mathbb Z)$. La multiplicativité du déterminant en fait un morphisme injectif. Pour $g=1$, le groupe trivial s’injecte directement.
 
+La base utilisée permet aussi d’écrire l’injection sans choisir de produit scalaire. Avec $v_h=e_h-e_1$ et $v_1=0$, on a $A_sv_h=v_{sh}-v_s$. Si $A_s$ est l’identité et $s\ne1$, l’égalité au vecteur $v_{s^{-1}}$ impose $e_1-e_s=e_{s^{-1}}-e_1$. Le coefficient de $e_1$ vaut $1$ à gauche et $-1$ à droite. Cela établit directement la fidélité, y compris quand $s=s^{-1}$. Le dernier coefficient $\det A_s$ corrige le déterminant sans exiger une décomposition du réseau en somme directe entière.
+
 ## III. Morphismes et quotients finis
 
 ### Question 17
 
-L’action de $\mathrm{SL}_2(\mathbb F_2)=\mathrm{GL}_2(\mathbb F_2)$ sur ces trois vecteurs est fidèle, car fixer les vecteurs fixe en particulier une base. Ce groupe a $(4-1)(4-2)=6$ éléments et s’identifie donc à $\mathfrak S_3$. Composer la réduction surjective modulo deux de 6.b avec cet isomorphisme puis avec la signature, à valeurs dans $\mathbb Z/2\mathbb Z$, fournit le morphisme surjectif demandé.
+L’action de $\mathrm{SL}_2(\mathbb F_2)=\mathrm{GL}_2(\mathbb F_2)$ sur les trois vecteurs non nuls de $\mathbb F_2^2$ est fidèle, car fixer les vecteurs fixe en particulier une base. Ce groupe a $(4-1)(4-2)=6$ éléments et s’identifie donc à $\mathfrak S_3$. Composer la réduction surjective modulo deux de 6.b avec cet isomorphisme puis avec la signature, à valeurs dans $\mathbb Z/2\mathbb Z$, fournit le morphisme surjectif demandé.
+
+L’image du générateur $\left(\begin{smallmatrix}1&1\\0&1\end{smallmatrix}\right)$ fixe $e_1$ et échange $e_2$ et $e_1+e_2$ modulo deux. Son image par la signature est donc la classe $1$, ce qui vérifie la surjectivité sur le quotient d’ordre deux par un élément explicite.
 
 ### Question 18.a
 

@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Les opérateurs de Dunkl associent aux dérivées des différences divisées venant des transpositions. Le sujet démontre leur commutation puis construit des fonctions propres simultanées, en contrôlant les normes des composantes homogènes.
 
 ## I. Une dérivation déformée en une variable
@@ -256,6 +258,10 @@ Dans cette algèbre, notons $r=k/(d+kN)$ et munissons les coefficients dans la b
 $$\gamma_d^{-1}=\frac{1}{d+kN}\sum_{m\ge0}r^m\phi^m.$$
 Les coefficients $c_d(w)$ existent et sont uniques par IV.1.c.
 
+Le cas de deux variables permet de contrôler l’inverse. Ici $\phi=s$ est l’échange des variables et $s^2=I$. La multiplication des deux facteurs conjugués donne
+$$\big((d+k)I-ks\big)\big((d+k)I+ks\big)=d(d+2k)I.$$
+Ainsi les coefficients de $I$ et de $s$ sont $(d+k)/(d(d+2k))$ et $k/(d(d+2k))$. Leur somme vaut $1/d$, et le second s’annule pour $k=0$.
+
 ### Question IV.3.c
 
 > [!INDICATION]
@@ -405,3 +411,7 @@ Pour tout $R>0$, $\sup_{\|x\|\le R}|e_d(x)|\le R^d\|y\|^d/d!$. Pour les dérivé
 #### Solution
 
 Pour $n=2$, posons $z=x_1-x_2$ et $u=(1/2,-1/2)$. La transposition échange $z$ et $-z$. Sur $P(x)=p(z)$, on a $D_uP=p'(z)$ et $T_uP=p'(z)+k(p(z)-p(-z))/z$, exactement l’opérateur de I. La direction $(1,1)$ n’a pas de terme de différence et annule $P$. Réciproquement, un polynôme du noyau commun en deux variables est annulé par $D_{(1,1)}$ et ne dépend donc que de $z$. Ainsi pour $n=2$ les paramètres singuliers sont précisément ceux de I.2.b. L’entrelacement multivarié se restreint à celui de I par unicité, car il conserve le noyau de la dérivée dans la direction $(1,1)$ sur ces polynômes.
+
+Le lien s’étend aux fonctions propres. Posons $t=(x_1+x_2)/2$, $\sigma=y_1+y_2$ et $\lambda=(y_1-y_2)/2$. Dans les coordonnées $(t,z)$ les deux équations selon $(1,1)$ et $(1/2,-1/2)$ deviennent $\partial_t f=\sigma f$ et $T_z f=\lambda f$, où $T_z$ désigne l’opérateur de I dans la variable $z$. Pour $k\ge0$, la solution de valeur $1$ à l’origine est donc
+$$f(t,z)=e^{\sigma t}\sum_{d\ge0}\frac{(\lambda z)^d}{a_1\cdots a_d}.$$
+En degré zéro le produit vide vaut un. L’identité $T_z(z^d)=a_dz^{d-1}$ vérifie l’équation terme à terme, et $a_d\ge d$ assure la convergence à tout rayon. Pour $k=0$ on retrouve $e^{y_1x_1+y_2x_2}$.
