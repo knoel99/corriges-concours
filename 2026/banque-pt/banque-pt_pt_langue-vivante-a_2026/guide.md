@@ -25,13 +25,13 @@ Ce corrigé traite les cinq langues, soit 5 exercices numérotés de 1 à 5.
 
 **Les cinq dossiers.**
 
-| Langue | Question | Textes | Documents non textuels |
-|---|---|---|---|
-| Allemand | *Ist eine Welt ohne Diskriminierungen immer noch ein Traum?* | loi générale sur l'égalité de traitement (AGG) ; antitsiganisme à l'école (*Tagesschau*, 2025) ; discriminations produites par l'intelligence artificielle (*Sonntagsblatt*, 2024) | infographie d'un cabinet d'avocats sur le harcèlement sexuel au travail ; photo de dés, l'un portant un pictogramme de fauteuil roulant |
-| Anglais | *To what extent can geoengineering contribute to the fight against climate change?* | *The Economist* (2023) ; *The Guardian* (2024) ; *BBC News* (2024) | schéma des techniques de géo-ingénierie (CFR Education, 2024) ; dessin satirique « Problem Inc. / Solution Inc. » (2016) |
-| Arabe | Dans quelle mesure le développement durable est-il une priorité pour l'avenir des populations du monde arabe ? | *Jadaliyya* (2024) ; *Al Jazeera* (2019) ; *BBC Arabic* (2023) | infographie de *Sky News Arabia* sur l'usage de l'eau par pays (2015) ; affiche des 17 objectifs de développement durable (2022) |
-| Espagnol | *¿De qué manera está evolucionando el modelo turístico español?* | *El País*, *eldiario.es*, *zonaestrategia.net* (2024) | deux dessins : « ¿Turismofóbicos? » (Padylla) et « 13, rue de la Turistificación » |
-| Italien | *In che misura l'Italia subisce e fa fronte al sovraffollamento turistico?* | *leomagazineofficial.it*, *ansa.it*, *italiaatavola.net* (2024) | tableau Istat des nuitées européennes par région (2022) ; photo de la foule devant la fontaine de Trevi |
+| Langue et question | Textes | Documents non textuels |
+|---|---|---|
+| **Allemand**. *Ist eine Welt ohne Diskriminierungen immer noch ein Traum?* | loi générale sur l'égalité de traitement (AGG) ; antitsiganisme à l'école (*Tagesschau*, 2025) ; discriminations produites par l'intelligence artificielle (*Sonntagsblatt*, 2024) | infographie d'un cabinet d'avocats sur le harcèlement sexuel au travail ; photo de dés, l'un portant un pictogramme de fauteuil roulant |
+| **Anglais**. *To what extent can geoengineering contribute to the fight against climate change?* | *The Economist* (2023) ; *The Guardian* (2024) ; *BBC News* (2024) | schéma des techniques de géo-ingénierie (CFR Education, 2024) ; dessin satirique « Problem Inc. / Solution Inc. » (2016) |
+| **Arabe**. Dans quelle mesure le développement durable est-il une priorité pour l'avenir des populations du monde arabe ? | *Jadaliyya* (2024) ; *Al Jazeera* (2019) ; *BBC Arabic* (2023) | infographie de *Sky News Arabia* sur l'usage de l'eau par pays (2015) ; affiche des 17 objectifs de développement durable (2022) |
+| **Espagnol**. *¿De qué manera está evolucionando el modelo turístico español?* | *El País*, *eldiario.es*, *zonaestrategia.net* (2024) | deux dessins : « ¿Turismofóbicos? » (Padylla) et « 13, rue de la Turistificación » |
+| **Italien**. *In che misura l'Italia subisce e fa fronte al sovraffollamento turistico?* | *leomagazineofficial.it*, *ansa.it*, *italiaatavola.net* (2024) | tableau Istat des nuitées européennes par région (2022) ; photo de la foule devant la fontaine de Trevi |
 
 **Ce qui est évalué.** Le rapport 2026 ne publie un barème détaillé qu'en anglais : « langue, méthodologie, compréhension/ restitution, respectivement sur 20, 15 et 15 points (total sur 50) » (p. 4). Les cinq jurys convergent sur les mêmes exigences :
 
