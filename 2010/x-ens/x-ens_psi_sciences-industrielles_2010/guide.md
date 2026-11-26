@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Transmission automobile 4Motion.** Le cahier CX0614 étudie le départ en côte enneigée, puis la pompe différentielle, la vanne et les lois de commande du coupleur Haldex. Les calculs énergétiques distinguent le cycle théorique commun des mouvements que chaque transmission peut réellement fournir.
 
 ## Repères de résolution
@@ -120,6 +122,8 @@ Avec les vitesses ramenées à l’axe des roues suivant l’annexe, $J_4=2J_{\r
 #### Solution
 
 Pour le cycle théorique commun de 10 s à 1,6 m/s², $(W_4-W_0)/W_0=(421{,}3-381{,}7)/381{,}7\simeq10{,}4\,\%$. Le critère de 15 % est respecté dans le modèle à rendement unité. Les limites d’adhérence propres aux deux voitures produiraient 452,3 et 41,7 kJ pour des distances très différentes. Leur quotient ne mesure pas la surconsommation à service égal. Une mesure sur neige au niveau de 1,6 m/s² avec la traction simple est impossible dans ce modèle.
+
+En appliquant strictement les deux accélérations maximales des questions 4 et 10, le quotient demandé est $(452{,}3-41{,}7)/41{,}7\simeq9{,}85$, soit environ $985\,\%$. En dix secondes, la première voiture parcourt alors $14{,}6$ m et la seconde $83{,}9$ m. Le dépassement apparent du seuil de $15\,\%$ dans cette comparaison provient aussi de cette différence de service.
 
 ### Question 12 · Portée du calcul de consommation
 
