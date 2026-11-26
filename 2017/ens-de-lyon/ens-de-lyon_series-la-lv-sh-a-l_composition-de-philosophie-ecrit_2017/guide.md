@@ -6,6 +6,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Lecture du sujet
 
 Accorder au verbe ses deux opérations. Tracer un contour peut servir à identifier un objet d’étude ou à séparer ceux que l’on traitera en semblables de ceux que l’on en exclura. Le programme sur les sciences humaines invite à examiner une enquête réelle avant d’attribuer à ces disciplines l’ambition de définir l’homme.
@@ -45,6 +47,8 @@ Une épreuve de comparaison consiste à regarder deux apprentis qui traversent l
 
 Ainsi, délimiter le domaine d’une enquête ethnologique ne consiste pas à décider d’avance qu’elle ne rencontrera que des faits absolument étrangers aux autres vivants. Des apprentissages par imitation existent aussi dans d’autres espèces. L’enquête peut les comparer et préciser ce que change, dans un groupe humain, la transmission explicite d’une règle par un maître ou sa discussion publique. Une ressemblance déplace alors la limite là où l’enquête pouvait à tort se satisfaire d’un caractère unique. Une différence interne aux sociétés humaines révèle en retour une dimension du comportement qu’une humanité définie sur notre propre exemple aurait rendue invisible.
 
+On peut éprouver la distinction avec une règle de parenté. Deux cousins germains sont au même degré généalogique, que leurs parents soient frère et sœur ou deux frères. Certaines sociétés distinguent pourtant ces cas lorsqu’elles déterminent les alliances autorisées. Dans *Les Structures élémentaires de la parenté*, Lévi-Strauss demande ce que devient la frontière entre nature et culture devant cette situation. À l’universalité qu’il attribue à la prohibition de l’inceste répond la diversité des catégories de parents que la règle concerne. Pour comparer ces systèmes, l’ethnologue doit délimiter ce qu’il appelle une relation d’alliance. Cette délimitation porte sur les relations qu’il étudie et laisse intacte l’appartenance humaine de ceux dont il cherche à comprendre les usages.
+
 Cette leçon éclaire l’ambition de Lévi-Strauss dans *La Pensée sauvage*. Réintégrer l’homme dans la nature revient à rendre certaines opérations de classement intelligibles en recherchant des relations, y compris là où un jugement ethnocentrique ne voyait que l’infériorité d’un esprit prétendument prélogique. Cela ne veut pas dire qu’un récit mythique et un processus biologique s’expliquent immédiatement par la même loi. Comparer présuppose des découpages, des différences entre les systèmes étudiés et parfois une révision des catégories de l’observateur. Une science humaine peut donc renoncer à isoler l’humain comme un empire sans frontières communes avec le vivant, tout en spécifiant fort exactement les relations qu’elle cherche à comprendre.
 
 ## III. La reconnaissance d’un humain ne se distribue pas à proportion de ses performances
@@ -65,3 +69,5 @@ On peut délimiter un groupe biologique, une pratique ou un domaine d’enquête
 ## Éprouver son argumentation
 
 Pour la phrase « cet être ne parle pas », écrire successivement une conclusion biologique, ethnologique et morale. Chacune est impossible sans prémisse supplémentaire. Formuler celle qui serait requise, puis montrer pourquoi l’absence momentanée de parole ne saurait fonder la privation de droits.
+
+**Appliquer le même critère à deux cas.** Dessinez deux fratries. Dans la première, deux frères ont chacun un enfant. Dans la seconde, un frère et une sœur ont chacun un enfant. Le degré généalogique entre les deux cousins est chaque fois le même. Si une règle d’alliance les classe différemment, que vient-on d’apprendre ? On a découvert comment cette société organise la parenté. Pour tirer de l’exemple une conclusion sur une différence entre espèces ou sur la dignité des personnes, il faudrait changer de question et justifier de nouvelles prémisses.
