@@ -1285,6 +1285,7 @@
 | 2025 | ENS de Lyon | Série SES (B/L) | Allemand (oral) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_allemand-oral_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_allemand-oral_2025/guide.md) |
 | 2025 | ENS de Lyon | Série SES (B/L) | Anglais (oral) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_anglais-oral_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_anglais-oral_2025/guide.md) |
 | 2025 | ENS de Lyon | Série SES (B/L) | Espagnol (oral) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_espagnol-oral_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_espagnol-oral_2025/guide.md) |
+| 2025 | ENS de Lyon | Série SES (B/L) | Histoire contemporaine (oral) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_histoire-contemporaine-oral_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_histoire-contemporaine-oral_2025/guide.md) |
 | 2025 | ENS de Lyon | Série SES (B/L) | Italien (oral) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_italien-oral_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_italien-oral_2025/guide.md) |
 | 2025 | ENS de Lyon | Série SES (B/L) | Russe (oral) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_russe-oral_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_russe-oral_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Physique | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_physique_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_physique_2026/guide.md) |
