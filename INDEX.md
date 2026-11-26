@@ -1301,6 +1301,8 @@
 | 2008 | ENS | MP-PC | Russe (LV1) | [md](2008/ens/ens_mp-pc_russe-lv1_2008/brut.md) | [md](2008/ens/ens_mp-pc_russe-lv1_2008/guide.md) |
 | 2009 | ENS | MP-PC | Russe (LV1) | [md](2009/ens/ens_mp-pc_russe-lv1_2009/brut.md) | [md](2009/ens/ens_mp-pc_russe-lv1_2009/guide.md) |
 | 2010 | ENS | MP-PC | Russe (LV1) | [md](2010/ens/ens_mp-pc_russe-lv1_2010/brut.md) | [md](2010/ens/ens_mp-pc_russe-lv1_2010/guide.md) |
+| 2021 | ENS | MP | Informatique-mathématiques | [md](2021/ens/ens_mp_informatique-mathematiques_2021/brut.md) | [md](2021/ens/ens_mp_informatique-mathematiques_2021/guide.md) |
+| 2022 | ENS | MP | Informatique-mathématiques | [md](2022/ens/ens_mp_informatique-mathematiques_2022/brut.md) | [md](2022/ens/ens_mp_informatique-mathematiques_2022/guide.md) |
 | 2000 | ENS | MP | Informatique | [md](2000/ens/ens_mp_informatique_2000/brut.md) | [md](2000/ens/ens_mp_informatique_2000/guide.md) |
 | 2001 | ENS | MP | Informatique | [md](2001/ens/ens_mp_informatique_2001/brut.md) | [md](2001/ens/ens_mp_informatique_2001/guide.md) |
 | 2009 | ENS | MP | Informatique | [md](2009/ens/ens_mp_informatique_2009/brut.md) | [md](2009/ens/ens_mp_informatique_2009/guide.md) |
