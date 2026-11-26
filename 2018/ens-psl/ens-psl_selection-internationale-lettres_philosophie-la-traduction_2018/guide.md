@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La consigne demande de développer et commenter la notion « La traduction ».
 
 ## Partir d’une décision de traduction
@@ -36,9 +38,11 @@ Imaginons que « You may sit down » soit prononcé au tribunal après l’autor
 
 Le travail sur un poème rend la situation plus délicate. Supposons un très court poème français où la répétition de « pas » évoque alternativement la négation et des pas entendus dans le couloir. Traduire chaque occurrence par le mot anglais qui convient isolément peut rendre l’action claire tout en effaçant le retour du même son. Maintenir un jeu verbal en anglais peut conduire à déplacer une image ou une pause. Une traduction bilingue destinée à l’étude peut signaler brièvement ce jeu dans une note. Une version faite pour être dite à voix haute devra chercher son effet dans les mots prononcés. La difficulté ne rend pas équivalents un contresens sur l’action et la perte explicitée d’une résonance. Elle oblige à hiérarchiser et à rendre perceptible le coût de la solution qui prévaut.
 
-![Un même énoncé, trois choix à justifier](figures/adresse.svg)
+![Figure 1 — Un même énoncé, trois choix à justifier](figures/adresse.svg)
 
-Le mot « intraduisible » désigne dans ce cas une résistance à un transfert sans reste. Il peut constituer une raison de traduire à nouveau. Une première version a rendu l’information, une seconde souhaite rendre audible une ambiguïté, une troisième dispose d’un usage nouveau dans la langue d’arrivée. Le texte source conserve sa capacité de reprendre les versions qui prétendent le représenter. Elles ne deviennent pas pour autant des approximations de plus en plus proches d’un double absolu que l’on pourrait jamais exposer.
+Essayons le jeu sur deux phrases de notre invention. « Pas un bruit. Un pas. » La version anglaise « Not a sound. A footstep. » maintient le silence, puis l’irruption du bruit qui le rompt. Elle perd le son identique par lequel le français passe de la négation à la présence de quelqu’un. « No sound. Someone steps. » reprend des sifflements, mais introduit plus explicitement une personne et un mouvement. Pour un sous-titre lu dans l’urgence, je choisirais la première. Pour une scène jouée, j’essaierais les deux à voix haute avec le rythme des pas. Même lorsqu’une perte est inévitable, on peut donner une raison de préférer une solution à une autre dans un emploi précis.
+
+Le mot « intraduisible » désigne dans ce cas une résistance à un transfert sans reste. Il peut constituer une raison de traduire à nouveau. Une première version a rendu l’information, une seconde souhaite rendre audible une ambiguïté, une troisième dispose d’un usage nouveau dans la langue d’arrivée. Le texte source continue de mettre les versions à l’épreuve. Une nouvelle traduction peut rendre perceptible ce qu’une autre avait sacrifié. La possibilité de reprendre le travail explique la coexistence de plusieurs versions jugées fidèles, chacune pour des raisons qu’il reste à comparer.
 
 ## Une traduction engage aussi une relation entre des lecteurs
 
@@ -47,5 +51,9 @@ La personne qui dépend de la traduction ne peut pas toujours la comparer à l�
 Il existe une difficulté inverse. Accumuler tous les termes originaux et toutes leurs nuances peut laisser le lecteur devant une parole qu’il ne peut ni suivre ni reprendre. Faire une place à ce qui est étranger à la langue d’arrivée suppose d’en faire effectivement entendre quelque chose. Une traduction établit ici une possibilité de discussion. Le lecteur peut comprendre assez bien un argument pour lui répondre, alors même que le traducteur indique à quel endroit une ambiguïté subsiste. La fidélité ne concerne donc pas seulement la relation de deux textes. Elle porte aussi sur ce que la seconde parole permet à un tiers de comprendre, de demander et de contester.
 
 Traduire, en définitive, c’est reconnaître qu’une parole peut être reprise autrement et qu’elle continue d’obliger celui qui la reprend. La traduction est un acte d’interprétation publiquement justifiable par l’original, par la situation du discours et par les possibilités de la langue destinataire. Plusieurs versions peuvent satisfaire cette exigence à des titres différents. Leur pluralité prend un sens dès que l’on est capable de dire ce que chacune a sauvé, ce qu’elle a déplacé, et quelle lecture le déplacement rend possible.
+
+## Vérifier une retraduction
+
+Rendez en français « Not a sound. A footstep. » sans consulter les deux phrases de départ. Vous retrouverez probablement le silence et le bruit de pas. Retrouverez-vous à coup sûr la répétition du même son ? Cet écart montre les limites de la retraduction comme épreuve de fidélité. Elle peut faire apparaître une perte, sans décider à elle seule si le premier traducteur a eu tort.
 
 [Feuille de l’écrit](https://www.ens.psl.eu/sites/default/files/ecrit-philo-SIL2018.pdf) · [Roman Jakobson, On Linguistic Aspects of Translation (1959)](https://www.degruyterbrill.com/document/doi/10.4159/harvard.9780674731615.c18/html)
