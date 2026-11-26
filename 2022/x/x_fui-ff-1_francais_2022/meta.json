@@ -16,24 +16,35 @@
     {
       "fichier": "figures/faits-et-recit.svg",
       "question": "A2b",
-      "legende": "Ce que sélectionne le récit."
+      "legende": "Ce que sélectionne le récit.",
+      "numero": 1
     },
     {
       "fichier": "figures/histoire-et-scrutin.svg",
       "question": "B",
-      "legende": "Le raisonnement de l’essai."
+      "legende": "Le raisonnement de l’essai.",
+      "numero": 2
     }
   ],
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20FUI-FF%20S1%20SUJET%20DE%20FRANCAIS.pdf",
     "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
-    "sujet_sha256": "5118d460b39449f41c2bc94526a28778980c4e075ea7479b42acd0fd067bfa9f"
+    "sujet_sha256": "5118d460b39449f41c2bc94526a28778980c4e075ea7479b42acd0fd067bfa9f",
+    "pages_sujet": 2,
+    "reperage": "PDF p. 1, garde datée. PDF p. 2 (pagination imprimée 3), extrait avec trois gloses, A1, A2a, A2b et B.",
+    "rapport": "La rubrique FUI-FF de la banque publie les sujets de français, sans lien vers un rapport pour cette session.",
+    "references_essai": [
+      {
+        "titre": "Assemblée nationale, chronologie du droit de vote et d’éligibilité des femmes",
+        "url": "https://www2.assemblee-nationale.fr/decouvrir-l-assemblee/histoire/le-suffrage-universel/la-conquete-de-la-citoyennete-politique-des-femmes/chronologie-du-droit-de-vote-et-d-eligibilite-des-femmes"
+      }
+    ]
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "revision": {
-    "date": "2026-11-24",
-    "modele": "Codex (GPT-6)",
-    "verification": "Contre-lecture indépendante sur le sujet scanné, les réponses, les exemples précis et la portée de l’essai personnel."
+    "date": "2026-11-26",
+    "modele": "GPT-6.2 Astra Ultra",
+    "verification": "Rapprochement des propos et des conduites, regard rétrospectif sur le déclin, distinction entre droit de vote, exercice du droit et éligibilité dans l’essai, repères du scrutin et schémas."
   },
   "provenance": {
     "redaction": {
@@ -83,6 +94,38 @@
       "modifications": true,
       "perimetre": "Relecture sur le scan de Rousseau, du changement de point de vue entre propos et actions aux deux formes de dépendance entre voisins. Contrôle de l’essai sur le scrutin et des aides du guidé.",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "francais_x_2022_2023",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rapprochement des propos et des conduites, regard rétrospectif sur le déclin, distinction entre droit de vote, exercice du droit et éligibilité dans l’essai, repères du scrutin et schémas."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A1 — Idée générale et regard porté sur l’histoire.",
+      "A2a — Observer les actes et les confronter aux propos, ligne 1.",
+      "A2b — Comprendre le déséquilibre du récit des faits, lignes 8–9.",
+      "B — Essai personnel bref et libre sur la place de l’histoire et l’intérêt de comprendre le passé, avec exemples précis."
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "elements_verifies": [
+      "PDF p. 1, garde datée. PDF p. 2 (pagination imprimée 3), extrait avec trois gloses, A1, A2a, A2b et B.",
+      "Épreuve n° 2 de deux heures. Dictionnaires et traducteurs électroniques interdits. Un seul essai, sans option ni limite du nombre de mots.",
+      "Rapprochement des propos et des conduites, regard rétrospectif sur le déclin, distinction entre droit de vote, exercice du droit et éligibilité dans l’essai, repères du scrutin et schémas."
+    ]
+  }
 }
