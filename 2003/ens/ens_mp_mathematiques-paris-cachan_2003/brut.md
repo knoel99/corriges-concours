@@ -4,7 +4,11 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le sujet relie la convexité aux entropies de Shannon et de Rényi. La caractérisation axiomatique et l’étude des densités conduisent à une borne sur l’entropie de leur convolution. Les logarithmes sont naturels.
+
+L’épreuve commune Paris–Cachan dure quatre heures. La notice du jury donne les coefficients 4 à Paris et 5 à Cachan. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-mp/session-2003/sujet-2003-ecrit-mp_mathematiques_cachan_paris.pdf) · [Rapport du jury](https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/rapport-de-jury-session-2003/rapport-2003-mp_ecrit_mathematiques_cachan_paris.pdf)
 
 ## I. Convexité et moyennes
 
@@ -84,6 +88,8 @@ L’égalité vaut pour $n=2$ par II.5.d. Pour $n\ge3$, choisissons par symétri
 
 La continuité sur les compacts et la bornitude de $x^2f(x)$ donnent $0\le f(x)\le C/(1+x^2)$. Fixons $1/2<\alpha<1$. Sur $[0,C]$, $|u\ln u|\le C_\alpha u^\alpha$ car $u^{1-\alpha}\ln u\to0$ en zéro. Comme $(1+x^2)^{-\alpha}$ est intégrable, $H(f)=-\int f\ln f$ converge absolument.
 
+Les hypothèses sur la classe de densités sont la continuité, la masse un, la bornitude de $x^2f(x)$ et la finitude du second moment. La décroissance utilisée ici découle déjà de la bornitude et de la continuité sur les compacts. La finitude du second moment interviendra dans la comparaison à la gaussienne.
+
 ### Question III.2
 
 Par le changement $z=(x-\mu)/\sigma$ et l’intégrale de Gauss, $g_{\mu,\sigma}$ est de masse $1$. La décroissance gaussienne domine toutes les puissances, ce qui assure continuité, bornitude de $x^2g$ et intégrabilité du second moment. Le premier moment centré est nul par imparité. En notant $\gamma(z)=e^{-z^2/2}/\sqrt{2\pi}$, une intégration par parties utilisant $\gamma'=-z\gamma$ donne $\int z^2\gamma=-[z\gamma]_{-\infty}^{\infty}+\int\gamma=1$. Les deux moments demandés valent donc $\mu$ et $\sigma^2$. Enfin $-\ln g_{\mu,\sigma}=\ln(\sigma\sqrt{2\pi})+(x-\mu)^2/(2\sigma^2)$, d’où $H(g_{\mu,\sigma})=\tfrac12\ln(2\pi e\sigma^2)$.
@@ -95,6 +101,8 @@ Le terme $f\ln f$ est intégrable d’après III.1, et $f\ln g_{\mu,\sigma}$ l�
 ### Question III.3.b
 
 Le moment d’ordre un existe puisque $|x|\le1+x^2$. La variance $s^2$ est finie et strictement positive pour une densité continue de masse un. Avec les mêmes moyenne et variance, l’intégrale de $-\ln g_{m,s}$ contre $f$ vaut $\ln(s\sqrt{2\pi})+1/2=H(g_{m,s})$. Donc $K_{m,s}(f)=H(g_{m,s})-H(f)\ge0$.
+
+En détail, si la variance était nulle, la fonction continue positive ou nulle $(x-m)^2f(x)$ serait nulle partout puisque son intégrale est nulle. Cela imposerait $f=0$ hors du point $m$, puis aussi en $m$ par continuité, en contradiction avec sa masse un.
 
 ## IV. Entropie de Rényi, convolution et puissance entropique
 
@@ -142,3 +150,5 @@ $$H(f*g)\ge\lambda H(f)+(1-\lambda)H(g)+\tfrac12H_2(\lambda,1-\lambda).$$
 Posons $A=e^{2H(f)}$, $B=e^{2H(g)}$, tous deux strictement positifs. Le double du membre droit de IV.4.b est $L(\lambda)=\lambda\ln(A/\lambda)+(1-\lambda)\ln(B/(1-\lambda))$. Sa dérivée est $\ln(A(1-\lambda)/(B\lambda))$ et sa dérivée seconde $-1/\lambda-1/(1-\lambda)<0$. L’unique maximum est atteint en $\lambda=A/(A+B)$ et vaut $\ln(A+B)$. L’exponentielle donne $e^{2H(f*g)}\ge e^{2H(f)}+e^{2H(g)}$.
 
 ![Figure 1 — Pour les puissances entropiques A = 2 et B = 1, la borne atteint son maximum en λ = 2/3, où elle vaut ln 3.](figures/optimisation-du-poids.svg)
+
+Sur le graphique, $A=2$ et $B=1$ donnent $L(2/3)=\ln3$. Les limites aux deux bords sont respectivement $\ln B=0$ et $\ln A=\ln2$ ; la stricte concavité place le maximum à l’intérieur.
