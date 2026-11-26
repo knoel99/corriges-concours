@@ -23,7 +23,8 @@
     "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_1_al_22_juin.pdf",
     "sujet_sha256": "b34148cf5b15f8c73c638f3cc449a194bed929f7e9dd3ab59def02fa7fa80f8b",
     "rapport": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf",
-    "rapport_sha256": "b7ae24985758ee21c7601a903f81ce57bdcef0cb108f8852ecd308eba32c7dca"
+    "rapport_sha256": "b7ae24985758ee21c7601a903f81ce57bdcef0cb108f8852ecd308eba32c7dca",
+    "index": "https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-al"
   },
   "figures": [
     {
@@ -37,7 +38,7 @@
       "question": "4"
     }
   ],
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -62,6 +63,73 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Confrontation de l’ordre, des choix et de chaque énoncé au feuillet et aux caractères gras de l’annexe du rapport. Vérification de la durée, des références conceptuelles, du lien entre cas concrets et thèses et de l’entraînement propre au guide."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "sociologie_psl_oraux_individuels",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rapprochement des 6 billets et des 12 intitulés avec le feuillet, les choix en gras du rapport et les développements des deux éditions. Ajout des consignes de tirage et des ouvrages autorisés, du renvoi aux sources et de 6 relances argumentées pour les alternatives dans le guidé."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "tirages_verifies": 6,
+    "sujets_choisis_verifies": 6,
+    "alternatives_verifiees": 6,
+    "intitules_par_edition": 12,
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "questions_entierement_traitees": [
+      "1. Sujet choisi — La partie et le tout",
+      "1. Alternative — La grammaire contraint-elle la pensée ?",
+      "2. Sujet choisi — Faut-il maîtriser ses émotions ?",
+      "2. Alternative — « Libres et égaux en droits »",
+      "3. Sujet choisi — L’expression des émotions",
+      "3. Alternative — Qu’est-ce qu’un travail bien fait ?",
+      "4. Sujet choisi — Qu’est-ce qu’une couleur ?",
+      "4. Alternative — La douleur",
+      "5. Sujet choisi — Histoire et géographie",
+      "5. Alternative — Peut-on être content de soi ?",
+      "6. Sujet choisi — Savoir ce qui nous détermine",
+      "6. Alternative — Peut-on s’aimer soi-même ?"
+    ],
+    "choix_dans_ordre_feuillet": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "pages_verifiees": {
+      "sujet": [
+        1
+      ],
+      "rapport": [
+        1,
+        7
+      ]
+    },
+    "rangs_annexe_rapport": [
+      59,
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "controle": "6 billets sur le feuillet et aux rangs 59–64 dans la section V du rapport. Le sujet en gras est le sujet choisi. Chaque terme reçoit son propre développement dans chacune des deux éditions."
+  }
 }
