@@ -11,7 +11,8 @@
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20PC%20SUJET%20DE%20MATHEMATIQUES%20(XEULS).pdf",
     "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20PC%20RAPPORT%20ECRIT%20MATHEMATIQUES%20(XEULS).pdf",
-    "sha256_sujet": "b0f57ab7585fbf9d9608ed9b1a3ec4432e18d6c2e9e00582f8716ebbc2aa0ee1"
+    "sha256_sujet": "b0f57ab7585fbf9d9608ed9b1a3ec4432e18d6c2e9e00582f8716ebbc2aa0ee1",
+    "sha256_rapport_jury": "0147b83d78f55d66cfeaafdd913b9b87668d61e834f3bf7aa84eb8639f487b9f"
   },
   "figures": [
     {
@@ -36,6 +37,95 @@
       "perimetre": "Rédaction des quatre parties et de chaque sous-question des deux éditions à partir de l’énoncé XEULS et de son rapport. Vérification des normalisations, du conditionnement de 15a, des indices de 20b et de la convergence presque sûre. Deux figures originales.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Contraction des lois, trajectoire numérique du graphique, matrice par classe d’âge, indépendance conditionnelle et indicatrice commune en Q15a, distinction des événements de survie et de convergence.",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "agent": "rennes_oraux_economie",
+      "session": "rennes_oraux_economie"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10a",
+      "10b",
+      "11",
+      "12a",
+      "12b",
+      "12c",
+      "13a",
+      "13b",
+      "14",
+      "15a",
+      "15b",
+      "16",
+      "17",
+      "18",
+      "19a",
+      "19b",
+      "20a",
+      "20b",
+      "21a",
+      "21b",
+      "21c",
+      "21d",
+      "22"
+    ],
+    "pages_du_sujet": 7,
+    "pages_pdf_des_questions": {
+      "1": 2,
+      "2": 3,
+      "3": 3,
+      "4": 3,
+      "5": 3,
+      "6": 3,
+      "7": 3,
+      "8": 3,
+      "9": 3,
+      "10a": 3,
+      "10b": 4,
+      "11": 4,
+      "12a": 4,
+      "12b": 4,
+      "12c": 4,
+      "13a": 5,
+      "13b": 5,
+      "14": 5,
+      "15a": 5,
+      "15b": 5,
+      "16": 6,
+      "17": 6,
+      "18": 6,
+      "19a": 6,
+      "19b": 6,
+      "20a": 6,
+      "20b": 6,
+      "21a": 7,
+      "21b": 7,
+      "21c": 7,
+      "21d": 7,
+      "22": 7
+    },
+    "precision": "Pages du fac-similé institutionnel, garde incluse. Le numéro désigne le début de la demande imprimée."
+  }
 }

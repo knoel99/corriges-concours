@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Les lois sont des vecteurs lignes. Les vecteurs propres à droite et les vecteurs utilisés pour tester les moments sont des colonnes.
 
 ## I. Contraction des lois de probabilité
@@ -37,6 +39,8 @@ La continuité de $x\mapsto xP$ donne $\mu P=\mu$ pour la limite précédente. S
 ### Question 7
 
 Puisque $\mu P^n=\mu$, l’itération donne $\|xP^n-\mu\|_1\le(1-c)^n\|x-\mu\|_1\le2(1-c)^n$ par l’inégalité triangulaire. Dans l’exemple ci-dessous la première masse vérifie $z_{n+1}=0{,}2+0{,}5z_n$.
+
+Dans le graphique, la masse stationnaire du premier état est la solution de $z=0{,}2+0{,}5z$, soit $z=0{,}4$. On a même $z_n-0{,}4=2^{-n}(z_0-0{,}4)$. Cette identité vérifie l’évolution des deux trajectoires représentées.
 
 ![Figure 1 — Deux lois initiales pour la transition dont les premières probabilités de ligne valent 0,7 et 0,2.](figures/contraction.svg)
 
@@ -102,6 +106,8 @@ Si $\mathbb P(A_y)>0$, conditionnellement à $A_y$ les tirages frais $\langle L_
 $$\mathbb E[\langle X_{n+1},u\rangle^2\mathbf1_{A_y}]=\mathbb P(A_y)\big(\langle y,Mu\rangle^2+\langle y,T(u)\rangle\big).$$
 La formule vaut également si $\mathbb P(A_y)=0$. L’indication imprimée affirme l’indépendance des variables *déjà multipliées* par la même indicatrice. Par exemple, pour deux tirages constamment égaux à $1$, ces deux produits valent tous deux $\mathbf1_{A_y}$ et sont dépendants si $0<\mathbb P(A_y)<1$. L’indépendance employée dans le calcul porte sur les tirages conditionnellement à la génération fixée.
 
+Pour voir le rôle du conditionnement, notons $Q$ la probabilité de $A_y$. Pour deux tirages frais indépendants $U,V$, conjointement indépendants de $A_y$, on a $\mathbb E[(U\mathbf1_{A_y})(V\mathbf1_{A_y})]=Q\,\mathbb E(U)\mathbb E(V)$. Le produit des espérances vaut en revanche $Q^2\mathbb E(U)\mathbb E(V)$. Évaluer le second moment sous la loi conditionnelle avant de multiplier par $Q$ donne le bon coefficient.
+
 ### Question 15b
 
 La partition $(A_y)$ et 13b donnent $\mathbb E\langle X_{n+1},u\rangle^2=\mathbb E\langle X_n,Mu\rangle^2+\langle x_0M^n,T(u)\rangle$. Les seconds moments sont finis par récurrence simultanée pour tout $u$ : les coordonnées de $X_0$ sont de carré intégrable, et celles de chaque $L_i$ le sont aussi.
@@ -161,3 +167,5 @@ Pour $\varepsilon>0$, $\mathbb P(\|W_n\|_2\ge\varepsilon)\le\varepsilon^{-2}\mat
 ### Question 22
 
 Pour $m\ge0$, $\mathbb P(\bigcup_{k\ge m}\{\|W_k\|_2\ge\varepsilon\})\le\varepsilon^{-2}\sum_{k\ge m}\mathbb E\|W_k\|_2^2\to0$. La probabilité d’une infinité de dépassements est donc nulle pour chaque seuil. En intersectant les événements de probabilité un obtenus pour $\varepsilon=1/r$, $r\ge1$, on conclut que $W_n\to0$ presque sûrement.
+
+L’extinction de la question 18 et la conclusion de la question 22 portent sur deux régimes distincts. Ici $\lambda>1$ et le résultat concerne l’écart renormalisé $W_n$. Il reste valide sur les trajectoires éteintes, où $W_n$ est finalement nul, sans division par un effectif qui pourrait s’annuler.

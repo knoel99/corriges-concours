@@ -52,7 +52,9 @@
   ],
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Maths%20PC.pdf",
-    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/PC_Maths%20OK.pdf"
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/PC_Maths%20OK.pdf",
+    "sha256_sujet": "f4fa3f10c423986bcd72523adfb898949704115b92ac710fb551fe7d69cc3513",
+    "sha256_rapport_jury": "ae7ac33a0a9f0c6512330e2498442a8e246bb734085bd58d1d3db49ab6742d5f"
   },
   "date_revision": "2026-11-24",
   "revision": {
@@ -119,6 +121,96 @@
       "tour": 3,
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Nouvelle lecture des 32 questions et du rapport, contrôle des huit figures, taille un du modèle cyclique, normalisation en champ et température nuls, encadrement intégral de la loi critique et vérification du millésime sur la garde.",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "agent": "rennes_oraux_economie",
+      "session": "rennes_oraux_economie",
+      "tour": 4
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32"
+    ],
+    "pages_du_sujet": 7,
+    "pages_pdf_des_questions": {
+      "1": 3,
+      "2": 3,
+      "3": 3,
+      "4": 3,
+      "5": 3,
+      "6": 3,
+      "7": 3,
+      "8": 3,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 4,
+      "16": 4,
+      "17": 4,
+      "18": 5,
+      "19": 5,
+      "20": 5,
+      "21": 5,
+      "22": 5,
+      "23": 6,
+      "24": 6,
+      "25": 6,
+      "26": 6,
+      "27": 6,
+      "28": 6,
+      "29": 6,
+      "30": 6,
+      "31": 6,
+      "32": 7
+    },
+    "precision": "Pages du fac-similé institutionnel, garde incluse. Le numéro désigne le début de la demande imprimée."
+  }
 }

@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le sujet compare des familles ordonnées de points à translation et rotation près. On note les rotations par R et les matrices de configurations centrées à mesure de leur introduction.
 
 ## 1 · Préliminaires
@@ -119,7 +121,9 @@ $$J(\tau,R)=\sum_i|b_i-Ra_i|^2+n|\bar y-R\bar x-\tau|^2.$$
 
 ### Question 12b
 
-Le carré du second terme de 12a est minimal et nul exactement lorsque $\tau=\bar y-R\bar x$. Le premier est indépendant de $\tau$. C’est donc l’unique translation minimisante $\tau(R)$.
+Le terme $n|\bar y-R\bar x-\tau|^2$ de 12a est minimal et nul exactement lorsque $\tau=\bar y-R\bar x$. Le premier est indépendant de $\tau$. C’est donc l’unique translation minimisante $\tau(R)$.
+
+En particulier, si l’on translate tous les $x_i$ du même vecteur $w$, les points centrés $a_i$ restent inchangés et la translation optimale devient $\tau(R)-Rw$. La rotation et le résidu centrés restent donc les mêmes, comme le montre le dessin.
 
 ![Figure 1 — Les segments joignent les mêmes points dans les deux configurations. Après centrage, seule la rotation reste à choisir.](figures/12-centrage.svg)
 
@@ -195,6 +199,8 @@ Comme $RR^T=I_d$, $R+I_d=R(I_d+R^T)$. La multiplicativité du déterminant donne
 
 Si $\det R=-1$, la question 21b donne $\det(R+I_d)=-\det(I_d+R^T)=-\det(R+I_d)$. Par conséquent $\det(R+I_d)=0$.
 
+Cette preuve ne demande pas que toutes les valeurs propres complexes de $R$ soient réelles. Elle garantit spécifiquement que $-1$ est valeur propre réelle, avec un vecteur propre réel dans le noyau de $R+I_d$. C’est précisément la direction employée en 22a.
+
 ### Question 22a
 
 Par 21c il existe $u_d$ unitaire tel que $Ru_d=-u_d$. Ainsi $R^Tu_d=-u_d$ également. Complétons-le par une base orthonormée $u_1,\ldots,u_{d-1}$ de $u_d^\perp$. Pour $x$ dans cet hyperplan $E_1$, $u_d^TRx=(R^Tu_d)^Tx=-u_d^Tx=0$.
@@ -236,5 +242,7 @@ Comme $\alpha_j\ge\alpha_d$ et $\sum_j U_{jd}^2=1$, on a $S_{dd}\ge\alpha_d$. La
 Écrivons $Z=VDU^T$, avec $D=\operatorname{Diag}(\sigma_1,\ldots,\sigma_d)$ en ordre décroissant. Comme $\det Z<0$, $\det V\det U=-1$. L’application $R\mapsto V^TRU$ envoie bijectivement $SO_d$ sur les matrices orthogonales de déterminant $-1$, avec inverse $Q\mapsto VQU^T$. Par la trace et 25b, le maximum de $\langle Z,R\rangle$ est au plus $\sum_{j<d}\sigma_j-\sigma_d$. Il est atteint pour $Q=\operatorname{Diag}(1,\ldots,1,-1)$. Finalement
 $$\delta(x,y)=\sqrt{nV_n(x)+nV_n(y)-2\left(\sum_{j<d}\sigma_j-\sigma_d\right)}.$$
 La direction retournée correspond à la plus petite valeur singulière. Si $d=1$, la somme sur $j<d$ est vide et la formule reste valable.
+
+Pour les matrices numériques de 18, les valeurs singulières sont $2$ et $1$. Le maximum de la trace vaut donc $3$ si le déterminant est positif et $1$ s’il est négatif. La différence $2$ est le double de la plus petite valeur singulière, ce qui donne une vérification indépendante de l’orientation sur la figure.
 
 ![Figure 2 — Dans les axes singuliers en dimension deux, inverser le second axe change l’orientation au coût du double de la plus petite valeur singulière dans la trace.](figures/26-orientation.svg)

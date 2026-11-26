@@ -10,6 +10,8 @@
 
 **Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Thème.** Le sujet étudie deux modèles jouets du ferromagnétisme : des « spins » $\sigma_i=\pm1$ indépendants et uniformes, pondérés par l'exponentielle d'une énergie. On veut calculer l'**énergie libre** (limite de $\frac1N\ln$ d'une espérance) et l'**aimantation** (dérivée de l'énergie libre par rapport au champ $h$).
@@ -413,6 +415,8 @@ $$\boxed{Z_N(\beta,h)=2^{-N}\operatorname{tr}(A^N)}$$
 > [!PIEGE]
 > Identifier $A$ à la matrice de transfert sans vérifier les coefficients : ici $A$ en est la transposée. Il faut le dire, la trace ne voyant pas la différence.
 
+Le cas $N=1$ vérifie l’indexation cyclique. Le terme de liaison est $\beta\sigma_1^2=\beta$ et $Z_1=e^\beta\operatorname{ch}(h)$. La matrice de transfert a pour trace $2e^\beta\operatorname{ch}(h)$, donc la formule avec le facteur $2^{-1}$ reste exacte dans ce cas.
+
 ### Question 14
 
 > [!INDICATION]
@@ -680,6 +684,8 @@ $$\frac{e^{-NJ(x)}}{N+1}\leq P[S_N=x]\leq e^{-NJ(x)}.$$
 Notons $M_N$ le maximum sur cette grille de $x\mapsto\beta x^2+hx-J(x)$. Une contribution maximisante minore la somme, et ses $N+1$ termes la majorent. Ainsi
 $$M_N-\frac{\ln(N+1)}{N}\leq G_N(\beta,h)\leq M_N+\frac{\ln(N+1)}{N}.$$
 La fonction est continue sur le segment. En approchant un maximiseur par un point de la grille à distance au plus $1/N$, on obtient $M_N\to g(\beta,h)-\ln 2$. Cela confirme la correction y compris lorsque les points utilisés tendent vers une extrémité.
+
+La normalisation se vérifie aussi à $\beta=h=0$ sans approximation. Alors $Y_N=1$ pour chaque $N$, donc $G_N=0$. En revanche $g(0,0)=\max_x[-I(x)]=\ln2$, atteint en $x=0$ puisque $I$ y est minimal. Le décalage ci-dessus est donc déjà indispensable à paramètres nuls.
 
 ### Question 23
 
@@ -1030,6 +1036,8 @@ $$\boxed{\lim_{\substack{h\to0\\h>0}}\frac{x_*(\frac12,h)}{(3h)^{1/3}}=1}$$
 > Au point critique $\beta=\frac12$, le terme linéaire de l'équation se compense exactement et l'aimantation varie comme $h^{1/3}$ (exposant critique $\frac13$). Pour $\beta<\frac12$, elle varie au contraire comme $\frac{h}{1-2\beta}$.
 
 ---
+
+Une vérification par encadrement évite le développement en série. On a $h=\int_0^{x_h} t^2/(1-t^2)\,dt$. Comme $0<x_h<1$, $x_h^3/3\le h\le x_h^3/[3(1-x_h^2)]$. Ainsi $1-x_h^2\le x_h^3/(3h)\le1$, d’où la même constante critique lorsque $x_h\to0$.
 
 ![Figure 8 — Au point critique, la courbe exacte rejoint la loi de puissance de pente un tiers en coordonnées logarithmiques.](figures/q32-loi-critique.svg)
 
