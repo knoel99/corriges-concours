@@ -10,6 +10,8 @@
 
 **Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## La valeur en droit civil
 
 Le propriétaire qui vend un tableau pour 1 000 euros peut découvrir que des collectionneurs en auraient offert dix fois plus. Ainsi rapprochés, les deux nombres désignent des réalités différentes. Le prix est la somme convenue dans la vente. La valeur exprime une estimation de ce que vaut la prestation, au regard du marché, de son usage ou d’une situation que la loi commande de prendre en considération. Elle peut être discutée et varier dans le temps. La question porte sur ses effets juridiques. Le droit civil soumet-il la volonté exprimée en prix à une mesure indépendante de la valeur ? Il laisse en principe chacun apprécier l’intérêt de l’échange, mais donne à l’évaluation une portée contraignante lorsque le consentement, un patrimoine protégé ou la restitution d’un bien le requièrent.
@@ -28,7 +30,7 @@ Le droit s’intéresse également à l’existence d’une véritable contrepar
 
 **A. L’écart à une valeur de référence peut ouvrir un recours.** La vente immobilière donne un exemple précis de l’exception réservée par l’article 1168. L’article 1674 protège le vendeur lésé de plus de sept douzièmes dans le prix de l’immeuble. L’article 1675 renvoie à l’état du bien et à sa valeur au moment de la vente. Pour un immeuble valant alors 240 000 €, sept douzièmes représentent 140 000 €. Un prix de 100 000 € se trouve exactement au seuil et ne le franchit pas. Un prix de 90 000 € laisse un écart de 150 000 € et satisfait à la condition chiffrée. C’est le vendeur qui agit, dans le délai de deux ans prévu par l’article 1676. L’acquéreur dispose, si l’action est admise, du choix organisé par l’article 1681 entre restituer l’immeuble contre remboursement du prix et le conserver en acquittant le supplément légal. Le régime ne donne donc pas à tout acheteur déçu un droit général de rééquilibrage.
 
-Le rapport pertinent est donc la perte rapportée à la valeur de l’immeuble au moment de la vente. Avec le prix de 90 000 euros, le vendeur a reçu trois huitièmes de cette valeur et perdu cinq huitièmes. Comme cinq huitièmes excèdent sept douzièmes, l’écart franchit le seuil. L’évaluation du bien devient ici une condition d’ouverture de l’action.
+Le rapport pertinent est donc la perte rapportée à la valeur de l’immeuble au moment de la vente. Avec le prix de 90 000 euros, le vendeur a reçu trois huitièmes de cette valeur et perdu cinq huitièmes. Cinq huitièmes excèdent sept douzièmes. Si l’action aboutit et que l’acquéreur conserve l’immeuble, l’article 1681 prévoit une déduction du dixième du prix total. Supposons que la valeur soit restée à 240 000 euros jusqu’au règlement. Après la déduction de 24 000 euros et imputation des 90 000 euros déjà payés, le supplément s’élève à 126 000 euros. Le seuil qui ouvre le recours et le montant dû pour conserver le bien répondent à deux calculs différents.
 
 ![Figure 1 — Quel rôle la valeur joue-t-elle ?](figures/fonctions-valeur.svg)
 
@@ -41,3 +43,5 @@ Le même souci de proportion se lit dans l’article 1352-5. Les dépenses néce
 La valeur ne fournit pas au juge un pouvoir général de réviser le prix. Son effet dépend de la raison pour laquelle le droit sollicite une mesure de l’équivalent. Tantôt la liberté d’évaluer fait partie du risque de l’échange. Tantôt une règle de protection ou de restitution désigne ce qu’il faut estimer, à quelle date et au profit de qui.
 
 [Énoncé officiel](https://www.ens-rennes.fr/medias/fichier/sujet-droit-civil-d-e-2026_1790867563170-pdf) · [Rapport du jury](https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-droit-civil-d-e-2026_1793640809565-pdf)
+
+[Code civil, art. 1681](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006442372/2026-04-14)
