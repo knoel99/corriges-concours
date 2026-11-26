@@ -1,0 +1,218 @@
+{
+  "slug": "banque-pt_pt_informatique-et-modelisation_2019",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Informatique et modélisation",
+    "annee": 2019,
+    "modalite": "écrit"
+  },
+  "duree_heures": 4,
+  "questions": 26,
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2019/info_mod_2019_pt.pdf",
+    "sujet_sha256": "e01e5ce22beecf473e8c760d6c85689efe2f756c4dba978010e016fe0c91f697",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2019/rapport_info_model_ecrit_2019.pdf",
+    "sha256_rapport_jury": "777973a9fd04d6f9b193292d936d514609b91f60dd69d6edf4e2cc26a909d60c",
+    "livret": "https://www.banquept.fr/documents/livret/2019/Livret_PT_2019.pdf#page=12",
+    "pages_fascicule": 25,
+    "pages_rapport": 4,
+    "releve": "Couverture p. PDF 1, introduction historique p. 2–3 et modèle p. 4, Q1–26 aux p. PDF 5–20. Cinq pages de rappel Python, p. PDF 21–25 (imprimées 20/24–24/24) lues, exigences sur les fonctions, les tableaux et les tirages respectées. Aucun fichier attaché au PDF."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/derive.svg",
+      "question": "Q9",
+      "legende": "Norme du vecteur d’état sur les cinq périodes du sujet, pour trois schémas."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/voisins.svg",
+      "question": "Q14",
+      "legende": "Voisins conservés et points extérieurs de valeur nulle."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/diagonale.svg",
+      "question": "Q26",
+      "legende": "Signe des deux lobes et ligne nodale de la somme des modes (1,2) et (2,1)."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": 1,
+        "premiere_page_pdf": 5
+      },
+      {
+        "question": 2,
+        "premiere_page_pdf": 5
+      },
+      {
+        "question": 3,
+        "premiere_page_pdf": 5
+      },
+      {
+        "question": 4,
+        "premiere_page_pdf": 5
+      },
+      {
+        "question": 5,
+        "premiere_page_pdf": 5
+      },
+      {
+        "question": 6,
+        "premiere_page_pdf": 5
+      },
+      {
+        "question": 7,
+        "premiere_page_pdf": 6
+      },
+      {
+        "question": 8,
+        "premiere_page_pdf": 6
+      },
+      {
+        "question": 9,
+        "premiere_page_pdf": 7
+      },
+      {
+        "question": 10,
+        "premiere_page_pdf": 8
+      },
+      {
+        "question": 11,
+        "premiere_page_pdf": 9
+      },
+      {
+        "question": 12,
+        "premiere_page_pdf": 10
+      },
+      {
+        "question": 13,
+        "premiere_page_pdf": 11
+      },
+      {
+        "question": 14,
+        "premiere_page_pdf": 12
+      },
+      {
+        "question": 15,
+        "premiere_page_pdf": 12
+      },
+      {
+        "question": 16,
+        "premiere_page_pdf": 13
+      },
+      {
+        "question": 17,
+        "premiere_page_pdf": 14
+      },
+      {
+        "question": 18,
+        "premiere_page_pdf": 14
+      },
+      {
+        "question": 19,
+        "premiere_page_pdf": 16
+      },
+      {
+        "question": 20,
+        "premiere_page_pdf": 16
+      },
+      {
+        "question": 21,
+        "premiere_page_pdf": 16
+      },
+      {
+        "question": 22,
+        "premiere_page_pdf": 18
+      },
+      {
+        "question": 23,
+        "premiere_page_pdf": 19
+      },
+      {
+        "question": 24,
+        "premiere_page_pdf": 19
+      },
+      {
+        "question": 25,
+        "premiere_page_pdf": 20
+      },
+      {
+        "question": 26,
+        "premiere_page_pdf": 20
+      }
+    ]
+  },
+  "contributions": [
+    {
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "phase": "redaction",
+      "perimetre": "Résolution de Q1–26 et de leurs sous-questions, les programmes Python demandés et trois figures pédagogiques."
+    },
+    {
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "perimetre": "Vérification du signe de l’équation d’ordre quatre et des conditions aux bords sur les feuillets scannés, contrôle de l’ellipse symplectique, du critère de la puissance itérée, des recherches par plage et des treize rapports expérimentaux. Exécution des blocs NumPy et lecture du rapport."
+    }
+  ]
+}
