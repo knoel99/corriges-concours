@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le candidat choisit un seul des deux sujets après le tirage de la planche. Le jury accorde 1 h 30 de préparation, puis 15 minutes d’exposé et 15 minutes de discussion. Les deux développements correspondent aux deux choix possibles.
 
 ## Famille et propriété
@@ -25,6 +27,10 @@ Face à la dégradation d’un service, un usager peut aller ailleurs, demander 
 **Les moyens de partir.** Changer de fournisseur est plus facile lorsque les alternatives sont proches, les tarifs connus et les contrats réversibles. Changer de domicile pour changer d’école suppose davantage de temps, de ressources et d’informations. La sortie des usagers les mieux dotés peut alerter la direction par une baisse des inscriptions. Elle peut aussi priver le public restant de personnes capables d’organiser une revendication. L’effet dépend de ce que perd l’organisation en cas de départ et de la capacité des décideurs à en comprendre le motif. Une baisse d’effectifs sans explication ne dit pas quelle réforme rétablirait la confiance.
 
 **Dire une insatisfaction est un travail.** Pour qu’une plainte individuelle devienne une prise de parole collective, il faut souvent des relais, un interlocuteur et un vocabulaire reconnu. Des parents dont les horaires de travail les empêchent de participer à une réunion peuvent partager les critiques sans être entendus. Comparer une pétition, des entretiens avec les non-signataires et les décisions du conseil d’établissement permettrait de séparer absence de désaccord et absence de canal pour l’exprimer. Une menace crédible de départ peut renforcer la parole. À l’inverse, la possibilité de partir rapidement peut décourager l’investissement dans la contestation.
+
+Deux parents restent dans la même école après la suppression d’une activité. Le premier dispose d’une autre place mais reste pour soutenir une pétition. Le second n’a aucun autre établissement accessible. Le registre des inscriptions enregistre la même conduite ; un entretien sur les solutions réellement disponibles permet de distinguer fidélité et sortie empêchée.
+
+![Figure 1 — Trois questions pour étudier la réponse à une dégradation](figures/organisation.svg)
 
 **Ce que fait la loyauté.** Un membre attaché à son association peut rester assez longtemps pour lui donner le temps de répondre, puis partir si la réponse déçoit. Un autre, également attaché, peut taire durablement sa critique de peur de nuire au collectif. Le maintien dans l’organisation ne manifeste donc pas toujours la même loyauté. Une enquête longitudinale examinerait la séquence, les options réellement ouvertes et la réponse donnée aux alertes. L’intérêt de Hirschman est de distinguer les mécanismes par lesquels une organisation apprend de son déclin et les circonstances sociales qui empêchent cet apprentissage. Il ouvre aussi une question sur les membres dont le départ ou la parole est le moins coûteux à ignorer.
 

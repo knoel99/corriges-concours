@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le candidat choisit un seul des deux sujets après le tirage de la planche. Le jury accorde 1 h 30 de préparation, puis 15 minutes d’exposé et 15 minutes de discussion. Les deux développements correspondent aux deux choix possibles.
 
 ## Violence et légitimité
@@ -23,6 +25,10 @@ Un acte de contrainte porté devant un tribunal peut être présenté comme l’
 Dire d’une élève qu’elle mérite sa réussite attribue le résultat à une qualité ou à un effort dont elle serait responsable. Le verbe suppose aussi quelqu’un qui apprécie, un objet distribué et un critère du jugement. Dans une classe, l’élève qui a le plus progressé et celle qui obtient la meilleure note ne sont pas forcément la même personne. Pourquoi des institutions produisent-elles des verdicts de mérite différents, et que font ces verdicts aux personnes qu’elles classent ?
 
 **La fabrication des critères.** Un concours règle à l’avance les épreuves, le calendrier et le classement. Des copies anonymes réduisent certaines possibilités de faveur. La maîtrise de la langue écrite, l’information sur les filières et la capacité à préparer longtemps l’épreuve dépendent en partie de la famille et de la scolarité antérieure. Bourdieu et Passeron, dans *Les Héritiers*, montrent comment la familiarité avec la culture scolaire peut être perçue comme un don. Cette analyse ne retire rien au travail d’un candidat. Elle explique pourquoi un même nombre d’heures d’effort donne accès à des ressources inégales et pourquoi la note ne mesure qu’imparfaitement l’effort qui l’a rendue possible.
+
+Imaginons deux élèves. L’une passe de 8 à 13, l’autre de 15 à 16, sur la même échelle de vingt points. Une récompense du progrès revient à la première et une récompense du niveau atteint à la seconde. Le classement change dès que l’institution modifie la qualité qu’elle entend reconnaître.
+
+![Figure 1 — Identifier les décisions qui entrent dans le verdict de mérite](figures/merite.svg)
 
 **La circulation des épreuves de valeur.** Dans une entreprise, la personne qui réalise le plus de ventes et celle qui forme ses collègues peuvent contribuer également à la réussite de l’équipe. Si les primes reposent sur la seule vente individuelle, l’entraide devient moins visible. Les observations de Michèle Lamont sur les frontières symboliques montrent l’importance accordée à des critères moraux parfois différents selon les groupes, par exemple l’honnêteté ou l’engagement familial. Ces critères peuvent restaurer une dignité lorsque les titres scolaires sont peu reconnus. Ils peuvent aussi produire de nouvelles exclusions lorsque tel demandeur d’aide est réputé responsable de sa situation.
 

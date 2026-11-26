@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le candidat choisit un seul des deux sujets après le tirage de la planche. Le jury accorde 1 h 30 de préparation, puis 15 minutes d’exposé et 15 minutes de discussion. Les deux développements correspondent aux deux choix possibles. Pour préparer l’exposé, annoncer une question précise, développer chaque mécanisme à partir d’une enquête ou d’une situation et indiquer quelles observations permettraient de départager deux explications. Chaque développement est suivi d’un exercice de préparation et d’une relance.
 
 ## « Élections, pièges à cons » ?
@@ -28,6 +30,8 @@ Comparer le nombre d’inscrits, les bulletins déposés et les voix retenues da
 La participation peut augmenter surtout dans des groupes déjà mobilisés. Il faut comparer les variations par groupe et vérifier ensuite comment leurs enjeux entrent dans les candidatures et les décisions.
 
 ![Identifier la population derrière un taux de participation](figures/participation.svg)
+
+Dans un bureau fictif de 80 inscrits, 60 votent. Parmi leurs bulletins se trouvent cinq blancs et deux nuls. La participation reste de 60 sur 80 inscrits, soit 75 %. Les 53 suffrages exprimés forment ensuite le dénominateur qui sert à mesurer le score d’une candidature.
 
 ## Avoir intérêt au désintéressement
 

@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## Voisiner
@@ -31,6 +33,8 @@ Le document 6 dissocie les visites de convivialité et les services. Dans le qua
 Le document 7 refuse une équation simple entre rencontre, mélange et dispute. Au quartier du Port, 22 % déclarent au moins un conflit depuis l’emménagement et 18 % s’être sentis jugés. Aux Batignolles, les chiffres sont de 29 % et 28 %. Le temps écoulé depuis l’installation varie entre quartiers et modifie l’occasion d’avoir un conflit. Ces résultats invitent aussi à distinguer désaccord exprimé et contrôle ressenti. L’observation initiale de Chamboredon et Lemaire éclaire le sens possible des tensions, tandis que la comparaison de 2018 empêche d’en faire une loi universelle de la mixité. Voisiner engage des relations choisies au sein d’une proximité en partie imposée, dont services, convivialité, frontières et jugements sont des dimensions distinctes.
 
 ![Voisinage au quartier du Port en 2018](figures/lecture-des-donnees.svg)
+
+Sur cent habitants du Port, 80 déclarent des échanges de services et 55 des visites. Au moins 35 doivent donc figurer dans les deux groupes, à l’arrondi près. Le tableau ne donne pas leur nombre exact.
 
 ## Questions du jury
 

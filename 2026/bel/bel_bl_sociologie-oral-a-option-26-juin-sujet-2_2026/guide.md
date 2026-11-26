@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le candidat choisit un seul des deux sujets après le tirage de la planche. Le jury accorde 1 h 30 de préparation, puis 15 minutes d’exposé et 15 minutes de discussion. Les deux développements correspondent aux deux choix possibles. Pour préparer l’exposé, annoncer une question précise, développer chaque mécanisme à partir d’une enquête ou d’une situation et indiquer quelles observations permettraient de départager deux explications. Chaque développement est suivi d’un exercice de préparation et d’une relance.
 
 ## La dette sociale
@@ -28,6 +30,8 @@ Suivre une cotisation, une prestation et un titre de dette. Identifier dans chaq
 Les cotisations actuelles financent des pensions actuelles selon des droits définis par la loi. Les engagements futurs peuvent être étudiés et projetés. Ils n’ont pas pour autant les mêmes créanciers, échéances ou modalités de cession qu’un titre financier.
 
 ![Nommer le créancier avant de parler de dette](figures/dette.svg)
+
+Pour suivre les positions de débiteur et de créancier, partez du bénéficiaire d’une prestation. Il peut en réclamer le versement lorsque les conditions légales sont réunies. S’il se dit redevable aux générations précédentes, identifiez ensuite le collectif envers lequel il exprime cette obligation et le type de retour envisageable.
 
 ## La distinction : permanences et mutations
 

@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le candidat choisit un seul des deux sujets après le tirage de la planche. Le jury accorde 1 h 30 de préparation, puis 15 minutes d’exposé et 15 minutes de discussion. Les deux développements correspondent aux deux choix possibles. Pour préparer l’exposé, annoncer une question précise, développer chaque mécanisme à partir d’une enquête ou d’une situation et indiquer quelles observations permettraient de départager deux explications. Chaque développement est suivi d’un exercice de préparation et d’une relance.
 
 ## Violence et légitimité
@@ -47,5 +49,7 @@ Pour mériter un prix et mériter une aide, la norme change. Élaborer un cas o�
 Le temps déclaré ne décrit pas le contenu de l’effort, les conditions de travail ou les connaissances déjà acquises. On peut confronter plusieurs indicateurs tout en distinguant l’objectif de récompenser le progrès de celui de certifier une compétence requise.
 
 ![Identifier les décisions qui entrent dans le verdict de mérite](figures/merite.svg)
+
+Faites varier le critère sur les mêmes résultats. Avec deux notes successives, on peut calculer à la fois la progression et le niveau atteint. Il reste à expliquer quelle récompense l’institution associe à chacun, et qui a pu se présenter aux deux évaluations.
 
 [Planche officielle](https://www.ens.psl.eu/sites/default/files/violence_meriter.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_option_sociologie.pdf)

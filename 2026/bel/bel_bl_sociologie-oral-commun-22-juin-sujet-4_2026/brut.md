@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## Voisiner
@@ -27,6 +29,10 @@ Le tableau des statuts d’occupation (doc. 5) donne, en ligne, la composition d
 ### La mixité organise des occasions, des distances et parfois des conflits
 
 Le document 6 dissocie les visites de convivialité et les services. Dans le quartier du Port, où des immeubles sociaux et privés ont été construits dans le même projet, 55 % des habitants participent à des visites et 80 % échangent des services. L’écart de 25 points montre que les pratiques n’ont pas la même fréquence. Comme elles peuvent concerner les mêmes habitants, il n’établit pas que 25 % exactement échangent des services sans jamais rendre visite. À Marolles, commune rurale périurbaine de l’enquête, les niveaux sont respectivement 84 % et 90 %. Le type d’habitat, l’ancienneté et la composition de la population peuvent participer à ces écarts.
+
+![Figure 1 — Voisinage au quartier du Port en 2018](figures/lecture-des-donnees.svg)
+
+Dans le quartier du Port, l’écart de 25 points entre les services et les visites laisse apparaître une sociabilité pratique qui dépasse l’invitation chez soi. Une personne peut toutefois rendre un service à l’un de ses voisins et entrer en conflit avec un autre. Les réponses décrivent plusieurs dimensions d’une même vie de quartier.
 
 Le document 7 refuse une équation simple entre rencontre, mélange et dispute. Au quartier du Port, 22 % déclarent au moins un conflit depuis l’emménagement et 18 % s’être sentis jugés. Aux Batignolles, les chiffres sont de 29 % et 28 %. Le temps écoulé depuis l’installation varie entre quartiers et modifie l’occasion d’avoir un conflit. Ces résultats invitent aussi à distinguer désaccord exprimé et contrôle ressenti. L’observation initiale de Chamboredon et Lemaire éclaire le sens possible des tensions, tandis que la comparaison de 2018 empêche d’en faire une loi universelle de la mixité. Voisiner engage des relations choisies au sein d’une proximité en partie imposée, dont services, convivialité, frontières et jugements sont des dimensions distinctes.
 

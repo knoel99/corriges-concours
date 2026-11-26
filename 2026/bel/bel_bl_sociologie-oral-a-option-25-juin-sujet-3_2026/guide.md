@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le candidat choisit un seul des deux sujets après le tirage de la planche. Le jury accorde 1 h 30 de préparation, puis 15 minutes d’exposé et 15 minutes de discussion. Les deux développements correspondent aux deux choix possibles. Pour préparer l’exposé, annoncer une question précise, développer chaque mécanisme à partir d’une enquête ou d’une situation et indiquer quelles observations permettraient de départager deux explications. Chaque développement est suivi d’un exercice de préparation et d’une relance.
 
 ## Obligations et société
@@ -28,6 +30,8 @@ Pour chaque exemple, identifier la personne qui peut réclamer, le comportement 
 Un manquement peut entraîner la perte de confiance, une réputation dégradée ou la suspension de futures aides. Observer les conséquences effectives d’un refus permet de mesurer la contrainte sans présumer qu’elle passe toujours par le droit.
 
 ![Trois formes de retour et leurs conditions](figures/obligations.svg)
+
+Cherchez, dans le même cas, des obligations qui se superposent. Une fille peut avoir une obligation alimentaire envers un parent et accomplir aussi des visites dont la fréquence se négocie dans la famille. Chaque forme d’obligation appelle ses propres indices.
 
 ## « Si la société est une réalité spécifique, elle n’est cependant pas un empire dans un empire ; elle fait partie de la nature, elle en est la manifestation la plus haute. Le règne social est un règne naturel, qui ne diffère des autres que par sa complexité plus grande » (Émile Durkheim, 1912)
 

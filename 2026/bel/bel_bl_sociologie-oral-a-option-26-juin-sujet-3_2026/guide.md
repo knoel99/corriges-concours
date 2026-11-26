@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le candidat choisit un seul des deux sujets après le tirage de la planche. Le jury accorde 1 h 30 de préparation, puis 15 minutes d’exposé et 15 minutes de discussion. Les deux développements correspondent aux deux choix possibles. Pour préparer l’exposé, annoncer une question précise, développer chaque mécanisme à partir d’une enquête ou d’une situation et indiquer quelles observations permettraient de départager deux explications. Chaque développement est suivi d’un exercice de préparation et d’une relance.
 
 ## Famille et propriété
@@ -47,5 +49,7 @@ Reconstituer la séquence d’une plainte suivie d’un départ. Identifier le c
 Oui. Une personne peut quitter une association en adressant une lettre publique qui explique ses raisons et soutient les membres restants. On analysera séparément le retrait de sa participation et la circulation de son message.
 
 ![Trois questions pour étudier la réponse à une dégradation](figures/organisation.svg)
+
+Ajoutez un cas où l’adhésion se poursuit faute d’alternative. La stabilité des effectifs peut alors coexister avec un mécontentement vif. Pour interpréter le maintien, il faut documenter les coûts de sortie et les démarches déjà tentées auprès de l’organisation.
 
 [Planche officielle](https://www.ens.psl.eu/sites/default/files/famille_loyalty.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_option_sociologie.pdf)
