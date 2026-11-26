@@ -1,0 +1,81 @@
+{
+  "slug": "ens-psl_cnel-lettres_sciences-sociales-crise-sanitaire-ou-interdependances_2021",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "CNEL Lettres",
+    "matiere": "Sciences sociales — crise sanitaire ou interdépendances",
+    "annee": 2021,
+    "modalite": "écrit"
+  },
+  "intitule": "Sciences sociales — crise sanitaire ou interdépendances",
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sc.sociales-ecrit-cnel2021.pdf",
+    "sha256_sujet": "85c37393914d1416f004e4cc95fee56a972bd2e319226e52ad50980da51ceae3",
+    "pages_sujet": 1,
+    "composition_document": "Rédaction d’un sujet au choix parmi deux. Le premier articule trois opérations. Le second demande de commenter Elias, La Société des individus, Press Pocket, 1991 [1987], p. 37, au regard du projet de recherche et comporte a, b, c. La citation figure au bas de la même page ; aucune annexe.",
+    "index_officiel": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-normalien-etudiant-lettres-et-concours-medecine-humanites-2021",
+    "recherche_rapport": {
+      "url_signalee_par_index": "https://www.ens.psl.eu/sites/default/files/rapport_du_jury_du_departement_de_sciences_sociales_2021.pdf",
+      "constat": "Le 26 novembre 2026, le lien Sciences sociales de la rubrique Rapports des départements renvoie HTTP 404. Une recherche du titre et du nom du fichier n’a pas retrouvé de copie vérifiable. Aucune consigne n’a été attribuée au rapport."
+    },
+    "etudes_contemporaines": [
+      "https://drees.solidarites-sante.gouv.fr/publications/etudes-et-resultats/en-mai-2020-45-de-la-population-vivant-en-france-metropolitaine",
+      "https://www.insee.fr/fr/statistiques/4801313",
+      "https://www.ined.fr/sites/default/files/imported_images/579.population.societes.juillet.2020.covid.travail.france.fr.pdf"
+    ],
+    "historique_aide_a_domicile": [
+      "https://drees.solidarites-sante.gouv.fr/publications/etudes-et-resultats/les-services-daide-domicile-dans-le-contexte-de-lallocation",
+      "https://drees.solidarites-sante.gouv.fr/sources-outils-et-enquetes/03-lenquete-aupres-des-intervenants-domicile-iad"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/travail-distance.svg",
+      "question": "1",
+      "legende": "Le recours au travail à distance parmi les personnes en activité en mai 2020"
+    },
+    {
+      "fichier": "figures/horaires.svg",
+      "question": "2 a et b",
+      "legende": "Suivre un changement d’horaire de la demande à la tournée suivante"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1. Décrire, comprendre et expliquer la crise sanitaire actuelle",
+      "2. Commentaire de la citation d’Elias appliqué à un projet construit",
+      "2 a. Interdépendances et dispositif d’enquête",
+      "2 b. Intentions individuelles, effets collectifs et mise à l’épreuve d’une hypothèse",
+      "2 c. Transformations historiques, sources et comparaison diachronique"
+    ]
+  },
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "classiques_2017",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Lecture intégrale du sujet officiel, contrôle des deux choix et des trois sous-questions. Rédaction de deux versions autonomes, recherche des publications disponibles à la session et du rapport départemental, construction d’un exemple de projet explicite sans observation inventée. Réalisation d’un graphique chiffré et d’un schéma de protocole."
+    }
+  ]
+}
