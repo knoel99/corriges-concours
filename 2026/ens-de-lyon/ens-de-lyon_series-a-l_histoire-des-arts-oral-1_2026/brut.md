@@ -2,9 +2,13 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
-Ces deux exercices portent sur « Le surréalisme, cent ans après son premier manifeste ». Le jury prévoit deux heures de préparation. Chaque exposé de vingt minutes est suivi de dix minutes d’entretien.
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+Ces deux exercices portent sur « Le surréalisme, cent ans après son premier manifeste ». Après tirage au sort d’un thème, les deux exercices se préparent ensemble pendant deux heures. Chaque exposé de vingt minutes est suivi de dix minutes d’entretien.
+
+Les reproductions de collection permettent de retrouver les cinq œuvres. La figure 2 de *The Cinematograph* montre la page de *Nadja* dans l’édition révisée. La figure 7 de la revue *Déméter* reproduit la page 73 de *La Révolution surréaliste*.
 
 ## Sujet 1 · Les femmes : muses, épouses, artistes
 
@@ -28,6 +32,8 @@ Dans *Ses yeux de fougère*, un fragment est au contraire chargé de tenir lieu 
 
 La légende de l’épreuve associe le montage à *Nadja*, paru en 1928, et donne la page 130. L’étude des éditions publiée par le CIELAM établit que *Ses yeux de fougère* a été ajouté dans l’édition remaniée de 1963. Cette différence de date change la lecture : le photomontage appartient aussi au travail rétrospectif du livre sur le souvenir de la rencontre.
 
+Regardons ce que font deux nombres. Le montage dans *Nadja* superpose quatre bandes d’yeux. La page de la revue entoure son centre de seize portraits. Dans le premier cas, répéter et recadrer défont la continuité d’un visage individuel. La page de 1929, au contraire, préserve des visages masculins entiers et rend leur réunion aussitôt lisible. Si je cache la légende de la première image, le mot « fougère » disparaît ; si je retire le cadre des portraits de la seconde, la figure centrale cesse d’être prise dans un portrait de groupe. Dans les deux cas, les gestes de l’éditeur font une part du sens de l’image. L’autoportrait de Tanning introduit alors une différence plus précise que l’opposition générale entre une muse et une artiste : la personne regardée décide elle-même du seuil qu’elle nous laisse franchir.
+
 ### Fabriquer un corps qui résiste à l’identification
 
 En 1936, Dora Maar donne à un tirage colorié le titre exact d’une adresse parisienne, *29, rue d’Astorg*. On attend un relevé documentaire. Le regard s’engage sous une suite de voûtes, dont les arcs concentriques construisent une profondeur insistante. Une figure assise vêtue de rose, au long cou et à la tête indéterminée, arrête ce mouvement au premier plan. Le siège et l’architecture obéissent à des échelles difficiles à concilier. Le rose et les ocres de ce tirage rehaussé l’éloignent encore d’une prise de vue spontanée. L’adresse est celle de l’atelier de Maar. Elle signe ici la construction d’un lieu mental à partir des moyens du laboratoire. L’analyser à travers sa seule relation à Picasso ferait disparaître précisément ce qui est sous nos yeux : un montage et des choix de coloriste.
@@ -38,7 +44,7 @@ Oppenheim, dans *Ma gouvernante*, fait naître une silhouette à partir de deux 
 
 *Birthday*, peint en 1942, se présente sous la forme verticale d’un autoportrait en pied. Tanning tourne le visage vers nous. Une main tient une porte. D’autres portes prolongent latéralement et en profondeur le même geste, sans que l’on sache où finirait la visite. Les planches du sol et la facture précise des boiseries ancrent dans l’ordinaire un costume où les replis semblent devenir végétaux, tandis qu’un petit animal ailé se tient près de ses pieds. Le buste découvert fait place à une vulnérabilité réelle. L’artiste choisit cependant la hauteur du regard, l’orientation du corps et ce que l’embrasure laisse entrevoir. Elle peut être à la fois le sujet représenté et celle qui règle notre accès. Son mariage ultérieur avec Max Ernst ne saurait expliquer un tableau où elle se présente elle-même avant ce mariage.
 
-![Figure 1 — Trois façons de construire une présence féminine. La position de celle qui définit le cadre change d’une image à l’autre.](figures/regards-et-cadres.svg)
+![Trois façons de construire une présence féminine. La position de celle qui définit le cadre change d’une image à l’autre.](figures/regards-et-cadres.svg)
 
 Ces cinq œuvres ne dessinent pas un progrès linéaire de la passivité à l’émancipation. Les artistes femmes manipulent aussi la fragmentation, la nudité et le désir. Ce qui se déplace, c’est la possibilité de faire quelque chose de ces procédés. À la femme anonyme insérée dans une phrase, répondent une photographe qui fabrique un espace, une sculptrice qui destine au regard un corps absent et une peintre qui tient elle-même le seuil de l’image. La catégorie d’artiste se démontre ici par des choix observables.
 
@@ -52,6 +58,8 @@ En 1940 et 1941, Marseille est pour des réfugiés un lieu d’attente sous la m
 
 Pourquoi choisir ce modeste objet ? On pourrait croire que le jeu détourne de la gravité des événements. Ici il maintient une pratique collective dans une situation où chacun pourrait partir du jour au lendemain. Il permet d’emporter, au moins en idées, une bibliothèque et un petit répertoire d’images. Son échelle contribue à sa signification. Il reste une œuvre de gens qui attendent, et les possibilités de partir ne sont pas les mêmes pour tous.
 
+Une carte de Marseille permet de comprendre ce que ces exilés fabriquent ensemble avant le départ. Aux enseignes familières du jeu se substituent la flamme de l’Amour, l’étoile du Rêve, la roue de la Révolution et la serrure de la Connaissance. Il faut que les joueurs reconnaissent ces signes et acceptent leurs équivalences pour que la partie commence. Un objet aisément transportable contient ainsi une petite institution que les participants peuvent recréer autour d’une autre table. L’exil atteint des personnes séparées de leurs lieux de travail ; une règle de jeu transporte une manière de travailler entre elles. Cette image ne permet toutefois pas d’attribuer à tous les voyageurs une même destination.
+
 ### Une escale change la direction de l’échange
 
 En 1941, André Breton et Wifredo Lam font partie des passagers qui quittent Marseille et passent par la Martinique. À Fort-de-France, Breton découvre *Tropiques*, revue fondée sur place et dont le premier numéro paraît en avril 1941. Aimé et Suzanne Césaire, avec notamment René Ménil, y construisent déjà une pensée de la culture antillaise. Cela compte pour la manière de raconter l’escale. Si l’on dessine seulement une ligne de Paris vers les Antilles, on oublie ceux qui écrivaient et résistaient en Martinique avant l’arrivée du bateau. La revue est un espace où l’image et la poésie permettent de penser la domination coloniale depuis l’île. L’échange tient précisément à la rencontre de projets qui ont leur propre histoire.
@@ -64,16 +72,18 @@ Suivons Lam au retour à Cuba. Dans *La Jungle* (1942–1943), des jambes, des m
 
 À Mexico, des exilées comme Remedios Varo et Leonora Carrington nouent entre elles des relations durables et travaillent au milieu de réseaux mexicains. La première a quitté l’Espagne puis la France. Dans *Création des oiseaux* de Varo, peint en 1957, un être mi-humain mi-oiseau dessine à une table des oiseaux qui acquièrent une existence propre. L’atelier y associe instrument, lumière et geste minutieux. Cette reconstruction peinte de la possibilité de créer prolonge une vie en exil sans se réduire à un témoignage biographique. Un foyer artistique peut durer, produire de nouvelles alliances entre femmes et poursuivre ses propres recherches bien après la fin des hostilités en Europe.
 
-![Figure 2 — Des lieux de passage et des foyers de création. Les flèches suivent des circulations particulières. Mexico constitue un autre foyer, avec ses propres trajectoires.](figures/foyers-exil.svg)
+![Des lieux de passage et des foyers de création. Les flèches suivent des circulations particulières. Mexico constitue un autre foyer, avec ses propres trajectoires.](figures/foyers-exil.svg)
 
 Les escales ne racontent donc pas la simple diffusion d’un style tout fait. À Marseille, un jeu conserve un collectif menacé de dispersion. En Martinique, une revue offre une rencontre entre initiatives indépendantes. À La Havane, une peinture transforme la portée historique d’une métamorphose. À New York et à Mexico changent les conditions de l’exposition et de l’atelier. En reliant ces objets, on voit ce que les personnes déplacent avec elles, mais aussi ce que les lieux et leurs habitants font en retour au surréalisme.
 
 ## Documents et reproductions
 
-Les cinq légendes et les deux consignes sont réunies dans le fascicule officiel. Les attendus de l’oral se trouvent aux pages 5 et 6 du rapport. [Sujet de l’ENS de Lyon](https://www.ens-lyon.fr/sites/default/files/2026-11/Arts%202026.pdf#page=14) · [Rapport du jury](https://www.ens-lyon.fr/sites/default/files/2026-10/Arts%20-%20Histoire%20des%20arts%202026.pdf#page=5)
+Le fascicule officiel donne les cinq légendes et les deux consignes à la page 14. Les attendus de l’oral se trouvent aux pages 5 et 6 du rapport. [Sujet de l’ENS de Lyon](https://www.ens-lyon.fr/sites/default/files/2026-11/Arts%202026.pdf#page=14) · [Rapport du jury](https://www.ens-lyon.fr/sites/default/files/2026-10/Arts%20-%20Histoire%20des%20arts%202026.pdf#page=5)
 
 - Objets et peintures du premier dossier. [Oppenheim, Moderna Museet](https://www.modernamuseet.se/en/stockholm/exhibitions/surrealism-in-the-moderna-museet-collection/works-in-the-exhibition/) · [Tanning, Philadelphia Museum of Art](https://www.philamuseum.org/objects/93232) · [Maar, Centre Pompidou](https://www.centrepompidou.fr/fr/ressources/oeuvre/c5jpBx)
 
 - Le montage de 1929 et la date des yeux de Nadja. [Sommaire du nº 12 et lien vers le périodique numérisé, PRELIA](https://prelia.fr/prelia-base/revues/revolution-surrealiste/1929-12-15-n12/) · [Étude comparée des éditions, CIELAM](https://cielam.univ-amu.fr/malice/articles/travail-negatif-nadja-photographies)
 
 - De la villa Air-Bel aux étapes américaines. [Musées de Marseille](https://musees.marseille.fr/antille) · [Tropiques, Metropolitan Museum](https://www.metmuseum.org/es/research-centers/leonard-a-lauder-research-center/research-resources/modern-art-index-project/tropiques) · [La Jungle, MoMA](https://www.moma.org/collection/works/34666) · [Remedios Varo, INBAL](https://inba.gob.mx/prensa/13117/efiartes2023)
+
+[Fac-similé de Nadja, p. 6](https://journals.library.wustl.edu/cinematograph/article/8823/galley/25638/view/#page=6) · [Montage de la revue, fig. 7](https://www.peren-revues.fr/demeter/?do=_pdfgen_get&document=2180&lang=fr#page=14) · [Jeu de Marseille, dossier des musées de Marseille](https://musees.marseille.fr/sites/default/files/2021-06/Dossier%20p%C3%A9da%20Surr%C3%A9alisme%20v2_1.pdf)
