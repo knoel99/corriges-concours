@@ -11,7 +11,10 @@
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-mp/session-2003/sujet-2003-ecrit-mp_mathematiques_lyon_paris.pdf",
     "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/rapport-de-jury-session-2003/rapport-2003-mp_ecrit_mathematiques_lyon_paris.pdf",
-    "sha256_sujet": "f7608173fba2590aaf6bcb904423fa9e2b17f91a112d41135a421dd2fa129c0b"
+    "sha256_sujet": "f7608173fba2590aaf6bcb904423fa9e2b17f91a112d41135a421dd2fa129c0b",
+    "pages_sujet": 8,
+    "sha256_rapport_jury": "4202003bbe05a76013a3d35d083aafdbcf82c5da8aace13e14a478f27ebf3657",
+    "pages_rapport_jury": 2
   },
   "figures": [
     {
@@ -31,6 +34,334 @@
       "perimetre": "Rédaction complète des quatre parties, dont les treize questions de la dernière page scannée. Contrôle sur le cahier et le rapport du jury : tangences, dérivées des racines, signe des ordonnées, duplication rationnelle, valuations, diviseurs communs et bornes de hauteur. Figure de la corde et agrandissement des deux premières intersections.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Relecture de toutes les questions, du rapport et du feuillet final en image. Vérification de la corde, de l’ordonnée signée, des points de branche, des factorisations, des sous-cas aux valuations et de la borne de hauteur. Clarification des représentants du quotient et des constantes dans les deux éditions.",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1.a",
+      "I.1.b",
+      "I.2.a",
+      "I.2.b",
+      "I.2.c",
+      "I.3.a",
+      "I.3.b",
+      "I.3.c",
+      "I.3.d",
+      "I.3.e",
+      "II.1.a",
+      "II.1.b",
+      "II.1.c",
+      "II.1.d",
+      "II.2.a",
+      "II.2.b",
+      "II.2.c",
+      "II.2.d",
+      "II.2.e",
+      "II.3.a",
+      "II.3.b",
+      "II.4.a",
+      "II.4.b",
+      "II.5.a",
+      "II.5.b",
+      "II.5.c",
+      "II.5.d",
+      "II.5.e",
+      "II.6.a",
+      "II.6.b",
+      "II.6.c",
+      "II.6.d",
+      "II.6.e",
+      "III.1.a",
+      "III.1.b",
+      "III.2.a",
+      "III.2.b",
+      "III.3",
+      "III.4",
+      "IV.A.1.a",
+      "IV.A.1.b",
+      "IV.A.2.a",
+      "IV.A.2.b",
+      "IV.A.2.c",
+      "IV.A.3.a",
+      "IV.A.3.b",
+      "IV.A.3.c",
+      "IV.A.3.d",
+      "IV.B.1",
+      "IV.B.2.a",
+      "IV.B.2.b",
+      "IV.B.2.c",
+      "IV.B.2.d",
+      "IV.B.2.e",
+      "IV.B.2.f",
+      "IV.B.3.a",
+      "IV.B.3.b",
+      "IV.B.3.c",
+      "IV.B.3.d",
+      "IV.B.3.e",
+      "IV.B.3.f"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": "I.1.a",
+        "page_sujet": 3
+      },
+      {
+        "question": "I.1.b",
+        "page_sujet": 3
+      },
+      {
+        "question": "I.2.a",
+        "page_sujet": 3
+      },
+      {
+        "question": "I.2.b",
+        "page_sujet": 3
+      },
+      {
+        "question": "I.2.c",
+        "page_sujet": 3
+      },
+      {
+        "question": "I.3.a",
+        "page_sujet": 3
+      },
+      {
+        "question": "I.3.b",
+        "page_sujet": 3
+      },
+      {
+        "question": "I.3.c",
+        "page_sujet": 3
+      },
+      {
+        "question": "I.3.d",
+        "page_sujet": 3
+      },
+      {
+        "question": "I.3.e",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.1.a",
+        "page_sujet": 4
+      },
+      {
+        "question": "II.1.b",
+        "page_sujet": 4
+      },
+      {
+        "question": "II.1.c",
+        "page_sujet": 4
+      },
+      {
+        "question": "II.1.d",
+        "page_sujet": 4
+      },
+      {
+        "question": "II.2.a",
+        "page_sujet": 4
+      },
+      {
+        "question": "II.2.b",
+        "page_sujet": 4
+      },
+      {
+        "question": "II.2.c",
+        "page_sujet": 4
+      },
+      {
+        "question": "II.2.d",
+        "page_sujet": 4
+      },
+      {
+        "question": "II.2.e",
+        "page_sujet": 4
+      },
+      {
+        "question": "II.3.a",
+        "page_sujet": 4
+      },
+      {
+        "question": "II.3.b",
+        "page_sujet": 4
+      },
+      {
+        "question": "II.4.a",
+        "page_sujet": 5
+      },
+      {
+        "question": "II.4.b",
+        "page_sujet": 5
+      },
+      {
+        "question": "II.5.a",
+        "page_sujet": 5
+      },
+      {
+        "question": "II.5.b",
+        "page_sujet": 5
+      },
+      {
+        "question": "II.5.c",
+        "page_sujet": 5
+      },
+      {
+        "question": "II.5.d",
+        "page_sujet": 5
+      },
+      {
+        "question": "II.5.e",
+        "page_sujet": 5
+      },
+      {
+        "question": "II.6.a",
+        "page_sujet": 5
+      },
+      {
+        "question": "II.6.b",
+        "page_sujet": 5
+      },
+      {
+        "question": "II.6.c",
+        "page_sujet": 5
+      },
+      {
+        "question": "II.6.d",
+        "page_sujet": 6
+      },
+      {
+        "question": "II.6.e",
+        "page_sujet": 6
+      },
+      {
+        "question": "III.1.a",
+        "page_sujet": 6
+      },
+      {
+        "question": "III.1.b",
+        "page_sujet": 6
+      },
+      {
+        "question": "III.2.a",
+        "page_sujet": 6
+      },
+      {
+        "question": "III.2.b",
+        "page_sujet": 6
+      },
+      {
+        "question": "III.3",
+        "page_sujet": 7
+      },
+      {
+        "question": "III.4",
+        "page_sujet": 7
+      },
+      {
+        "question": "IV.A.1.a",
+        "page_sujet": 7
+      },
+      {
+        "question": "IV.A.1.b",
+        "page_sujet": 7
+      },
+      {
+        "question": "IV.A.2.a",
+        "page_sujet": 7
+      },
+      {
+        "question": "IV.A.2.b",
+        "page_sujet": 7
+      },
+      {
+        "question": "IV.A.2.c",
+        "page_sujet": 7
+      },
+      {
+        "question": "IV.A.3.a",
+        "page_sujet": 7
+      },
+      {
+        "question": "IV.A.3.b",
+        "page_sujet": 7
+      },
+      {
+        "question": "IV.A.3.c",
+        "page_sujet": 7
+      },
+      {
+        "question": "IV.A.3.d",
+        "page_sujet": 7
+      },
+      {
+        "question": "IV.B.1",
+        "page_sujet": 8
+      },
+      {
+        "question": "IV.B.2.a",
+        "page_sujet": 8
+      },
+      {
+        "question": "IV.B.2.b",
+        "page_sujet": 8
+      },
+      {
+        "question": "IV.B.2.c",
+        "page_sujet": 8
+      },
+      {
+        "question": "IV.B.2.d",
+        "page_sujet": 8
+      },
+      {
+        "question": "IV.B.2.e",
+        "page_sujet": 8
+      },
+      {
+        "question": "IV.B.2.f",
+        "page_sujet": 8
+      },
+      {
+        "question": "IV.B.3.a",
+        "page_sujet": 8
+      },
+      {
+        "question": "IV.B.3.b",
+        "page_sujet": 8
+      },
+      {
+        "question": "IV.B.3.c",
+        "page_sujet": 8
+      },
+      {
+        "question": "IV.B.3.d",
+        "page_sujet": 8
+      },
+      {
+        "question": "IV.B.3.e",
+        "page_sujet": 8
+      },
+      {
+        "question": "IV.B.3.f",
+        "page_sujet": 8
+      }
+    ],
+    "precision": "Huit pages du PDF. Les treize questions IV.B du dernier feuillet ont été pointées sur l’image, cette page échappant à l’extraction textuelle. Les formules entre crochets de la partie III sont explicitement admises par l’énoncé."
+  }
 }
