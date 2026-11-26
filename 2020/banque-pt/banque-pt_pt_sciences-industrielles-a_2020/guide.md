@@ -501,7 +501,7 @@ Le courant $\underline I_u$ et la f.é.m. $\underline E_u$ ont tous deux une ava
 
 À $\omega_m=80\,\mathrm{rad\,s^{-1}}$, $M=f_v\omega_m=0{,}04\times80=3{,}2\,\mathrm{N\,m}$. Avec $M_0=1{,}3\,\mathrm{N\,m}$, l’ordonnée normalisée vaut $2{,}46$. Sur la courbe [1], on lit $I/I_0\simeq2{,}6$ à $2{,}7$. Comme $I_0=1{,}32\,\mathrm A$, $I_u$ est voisin de $3{,}5\,\mathrm A$ efficaces.
 
-![Figure 11 — Cg3. Lecture sur la caractéristique [1] du CMP50S.](figures/moteur.svg)
+![Figure 11 — Cg3. Lecture sur la caractéristique numéro 1 du CMP50S.](figures/moteur.svg)
 
 ### Q44 — Compatibilité de la tension de phase
 
