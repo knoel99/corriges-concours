@@ -29,7 +29,7 @@
     "index_organisateur": "https://www.ens.psl.eu/rapports-et-sujets-2026-bcpst",
     "sujet_sha256": "ce0653ccf99a04728fdd7d9ac0ca35ed6fc9d9c2dc329c4651d6dd86b0a4dc30"
   },
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "provenance": {
     "redaction": {
       "provider": "codex",
@@ -77,6 +77,32 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Correction de l’antécédent erroné qui assimilait les élections aux concessions fiscales dans la vignette, incidences locales et nationales des emplois et des recettes, distinction de deux fiscalités et traduction de la chute familière."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "fin_langues_x_interens",
+      "agent": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Page 13 du PDF officiel, trois exercices, notés sur 8, 8 et 4. Dans les deux éditions, la synthèse des documents 1 à 3 compte 263 mots, la réponse personnelle 249 mots, par espaces. La traduction française couvre le passage demandé en entier. La presse locale, le manifeste sur les réacteurs d’Almaraz et la vignette électorale éclairent les intérêts en présence. La position personnelle examine les conditions d’une transition. La version conserve la prédiction du prestataire Fernando Muñoz et les emplois directs et indirects.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I",
+      "II",
+      "III"
+    ],
+    "precision": "Page 13 du PDF officiel, trois exercices, notés sur 8, 8 et 4. Dans les deux éditions, la synthèse des documents 1 à 3 compte 263 mots, la réponse personnelle 249 mots, par espaces. La traduction française couvre le passage demandé en entier. La presse locale, le manifeste sur les réacteurs d’Almaraz et la vignette électorale éclairent les intérêts en présence. La position personnelle examine les conditions d’une transition. La version conserve la prédiction du prestataire Fernando Muñoz et les emplois directs et indirects."
+  }
 }
