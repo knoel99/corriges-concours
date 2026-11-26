@@ -1827,7 +1827,14 @@
 | 2021 | X-ENS | PSI | Physique PSI | [md](2021/x-ens/x-ens_psi_physique-psi_2021/brut.md) | [md](2021/x-ens/x-ens_psi_physique-psi_2021/guide.md) |
 | 2022 | X-ENS | PSI | Physique PSI | [md](2022/x-ens/x-ens_psi_physique-psi_2022/brut.md) | [md](2022/x-ens/x-ens_psi_physique-psi_2022/guide.md) |
 | 2020 | X | FUI FF 1 | Mathématiques | [md](2020/x/x_fui-ff-1_mathematiques_2020/brut.md) | [md](2020/x/x_fui-ff-1_mathematiques_2020/guide.md) |
+| 2021 | X | FUI FF 1 | Mathématiques | [md](2021/x/x_fui-ff-1_mathematiques_2021/brut.md) | [md](2021/x/x_fui-ff-1_mathematiques_2021/guide.md) |
 | 2022 | X | FUI FF 1 | Mathématiques | [md](2022/x/x_fui-ff-1_mathematiques_2022/brut.md) | [md](2022/x/x_fui-ff-1_mathematiques_2022/guide.md) |
+| 2023 | X | FUI FF 1 | Mathématiques | [md](2023/x/x_fui-ff-1_mathematiques_2023/brut.md) | [md](2023/x/x_fui-ff-1_mathematiques_2023/guide.md) |
+| 2024 | X | FUI-FF 1 | Mathématiques | [md](2024/x/x_fui-ff-1_mathematiques_2024/brut.md) | [md](2024/x/x_fui-ff-1_mathematiques_2024/guide.md) |
+| 2020 | X | FUI FF 2 | Mathématiques | [md](2020/x/x_fui-ff-2_mathematiques_2020/brut.md) | [md](2020/x/x_fui-ff-2_mathematiques_2020/guide.md) |
+| 2021 | X | FUI FF 2 | Mathématiques | [md](2021/x/x_fui-ff-2_mathematiques_2021/brut.md) | [md](2021/x/x_fui-ff-2_mathematiques_2021/guide.md) |
+| 2022 | X | FUI FF 2 | Mathématiques | [md](2022/x/x_fui-ff-2_mathematiques_2022/brut.md) | [md](2022/x/x_fui-ff-2_mathematiques_2022/guide.md) |
+| 2023 | X | FUI FF 2 | Mathématiques | [md](2023/x/x_fui-ff-2_mathematiques_2023/brut.md) | [md](2023/x/x_fui-ff-2_mathematiques_2023/guide.md) |
 | 2005 | X | MP-PC | Allemand | [md](2005/x/x_mp-pc_allemand_2005/brut.md) | [md](2005/x/x_mp-pc_allemand_2005/guide.md) |
 | 2006 | X | MP-PC | Allemand | [md](2006/x/x_mp-pc_allemand_2006/brut.md) | [md](2006/x/x_mp-pc_allemand_2006/guide.md) |
 | 2007 | X | MP-PC | Allemand | [md](2007/x/x_mp-pc_allemand_2007/brut.md) | [md](2007/x/x_mp-pc_allemand_2007/guide.md) |
