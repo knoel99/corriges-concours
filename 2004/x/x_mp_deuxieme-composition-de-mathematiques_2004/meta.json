@@ -31,6 +31,163 @@
       "perimetre": "Rédaction sur le sujet original de toutes les questions. Orientation des cofacteurs, convention de signe des courbures, rayon et pente prescrits du caténoïde et similitude transposée sous reparamétrage. Schéma de la méridienne et du col.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "x_mp_deuxieme_composition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Pointage physique des 25 consignes sur 4 pages. Recalcul des signes avec l’orientation W de l’énoncé, du rayon du col et des deux courbures du caténoïde. Ajout d’une intégrale première, de la détermination du profil par l’EDO et d’un changement de paramètres effectif pour contrôler la transformation de A, H et K."
     }
-  ]
+  ],
+  "intitule": "Courbures des surfaces dans l’espace euclidien de dimension trois",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.a",
+      "1.b",
+      "1.c",
+      "2.a",
+      "2.b",
+      "3.a",
+      "3.b",
+      "4.a",
+      "4.b",
+      "4.c",
+      "4.d",
+      "5",
+      "6.a",
+      "6.b",
+      "7.a",
+      "7.b",
+      "7.c",
+      "7.d",
+      "7.e",
+      "8",
+      "9",
+      "10.a",
+      "10.b",
+      "10.c",
+      "10.d"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1.a",
+        "page_pdf": "1"
+      },
+      {
+        "question": "1.b",
+        "page_pdf": "1"
+      },
+      {
+        "question": "1.c",
+        "page_pdf": "1"
+      },
+      {
+        "question": "2.a",
+        "page_pdf": "1"
+      },
+      {
+        "question": "2.b",
+        "page_pdf": "2"
+      },
+      {
+        "question": "3.a",
+        "page_pdf": "2"
+      },
+      {
+        "question": "3.b",
+        "page_pdf": "2"
+      },
+      {
+        "question": "4.a",
+        "page_pdf": "2"
+      },
+      {
+        "question": "4.b",
+        "page_pdf": "2"
+      },
+      {
+        "question": "4.c",
+        "page_pdf": "2"
+      },
+      {
+        "question": "4.d",
+        "page_pdf": "2"
+      },
+      {
+        "question": "5",
+        "page_pdf": "2"
+      },
+      {
+        "question": "6.a",
+        "page_pdf": "3"
+      },
+      {
+        "question": "6.b",
+        "page_pdf": "3"
+      },
+      {
+        "question": "7.a",
+        "page_pdf": "3"
+      },
+      {
+        "question": "7.b",
+        "page_pdf": "3"
+      },
+      {
+        "question": "7.c",
+        "page_pdf": "3"
+      },
+      {
+        "question": "7.d",
+        "page_pdf": "3"
+      },
+      {
+        "question": "7.e",
+        "page_pdf": "3"
+      },
+      {
+        "question": "8",
+        "page_pdf": "3"
+      },
+      {
+        "question": "9",
+        "page_pdf": "4"
+      },
+      {
+        "question": "10.a",
+        "page_pdf": "4"
+      },
+      {
+        "question": "10.b",
+        "page_pdf": "4"
+      },
+      {
+        "question": "10.c",
+        "page_pdf": "4"
+      },
+      {
+        "question": "10.d",
+        "page_pdf": "4"
+      }
+    ],
+    "controle": [
+      "p. 1, mineurs alternés, rang, déterminant positif et unicité de la normale",
+      "p. 2, rotations, Gram, coordonnées en ligne, dérivée de la normale, invariance par rotation de l’espace",
+      "p. 3, graphe horizontal, cylindre, surface de révolution, courbure nulle, conditions initiales et courbure totale du caténoïde",
+      "p. 4, colonnes jacobiennes, signe de l’orientation et transport par similitude",
+      "Recalcul des signes avec l’orientation W de l’énoncé, du rayon du col et des deux courbures du caténoïde. Ajout d’une intégrale première, de la détermination du profil par l’EDO et d’un changement de paramètres effectif pour contrôler la transformation de A, H et K."
+    ]
+  }
 }

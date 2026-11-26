@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Des commutants des rotations à l’action d’un groupe unipotent, le problème relie irréductibilité et forme triangulaire. La dernière partie démontre sur l’espace des colonnes le théorème d’algèbre utilisé dans la troisième.
 
 ## I. Commutants des groupes de rotations
@@ -32,7 +34,7 @@ Pour $n\ge2$, étant donnés deux vecteurs de même norme non nulle, on peut com
 
 ### Question 5
 
-Si $Ax=\lambda x$ et $AB=BA$, alors $A(Bx)=B(Ax)=\lambda Bx$. Ainsi $\ker(A-\lambda I)$ est stable par $B$. L’assertion réciproque s’obtient en échangeant les rôles.
+Si $Ax=\lambda x$ et $AB=BA$, alors $A(Bx)=B(Ax)=\lambda Bx$. Ainsi $\ker(A-\lambda I)$ est stable par $B$. En échangeant les rôles de $A$ et $B$, chaque espace propre de $B$ est de même stable par $A$.
 
 ### Question 6
 
@@ -64,6 +66,8 @@ Comme $g-I$ est nilpotent, $\operatorname{tr}(g-I)=0$ et $\operatorname{tr}g=n$.
 
 Les espaces stables par $W$ sont exactement ceux stables par $G$. Si $G$ est irréductible, le résultat admis donne $W=\mathcal L(E)$. Par 11 et linéarité, $\operatorname{tr}((g-I)B)=0$ pour toute matrice $B$. Prendre $B=E_{ji}$ fait apparaître précisément l’entrée $(i,j)$ de $g-I$. Elles sont toutes nulles donc $G=\{I\}$. Chaque sous-espace est alors stable, et l’irréductibilité impose $n=1$.
 
+Pour préciser le test de trace, si $M=(m_{ij})$, le produit $ME_{ji}$ a pour seule colonne potentiellement non nulle sa colonne $i$, égale à la colonne $j$ de $M$. Sa trace est donc $m_{ij}$. La nullité pour tous les couples entraîne bien $g-I=0$ sans hypothèse d’auto-adjonction.
+
 ### Question 13
 
 Choisissons un sous-espace $F\ne0$ stable par tout $G$, de dimension minimale. Les restrictions à $F$ forment un groupe, car $g^{-1}$ laisse également $F$ stable. Leur différence à l’identité est la restriction d’un nilpotent, donc elles sont unipotentes. Ce groupe agit irréductiblement sur $F$ par minimalité. D’après 12, il agit trivialement et $\dim F=1$. Tout vecteur non nul de $F$ est alors fixé par tous les éléments du groupe.
@@ -92,9 +96,16 @@ Comme $W$ est une algèbre, il est stable par $\Phi(A)$ pour $A\in W$. Il en est
 
 Posons $S=W$. Il est stable par $\Phi(A)$ pour $A\in W$. Pour $i=1,\ldots,n$, $S\cap V_i$ est nul ou égal à $V_i$ par le même raisonnement qu’en 15.c. Dans le premier cas, remplaçons $S$ par $S\oplus V_i$ et retenons l’indice $i$ ; dans le second gardons $S$. La stabilité par $W$ est conservée et, à la fin, toutes les colonnes $V_i$ sont dans $S$, donc $S=\mathcal L(E)$. La somme directe des $V_i$ retenus fournit le supplémentaire $W'$. Chacun est stable par $\Phi(A)$ pour tout $A\in\mathcal L(E)$, ce qui établit la stabilité demandée de $W'$.
 
+À l’étape $i$, l’intersection à tester est celle de $V_i$ avec la somme déjà construite, et pas seulement $W\cap V_i$. Cela garantit que la somme demeure directe après chaque adjonction. Plus précisément, si $S=W\oplus\bigoplus_{j\in J}V_j$ et $S\cap V_i=0$, alors l’unique décomposition dans $S\oplus V_i$ donne l’unicité de toutes les composantes dans la nouvelle décomposition. Le supplémentaire final est donc disjoint de $W$.
+
 ### Question 17
 
 Pour $B\in W$, $W$ et $W'$ sont stables par $\Phi(B)$, donc $\pi\Phi(B)=\Phi(B)\pi$. Les relations de 15.a–b permettent maintenant de déplacer $B$ successivement à travers $L_i,\pi,P_j,L_j^{-1}$ : on obtient $A_{i,j}B=BA_{i,j}$. Ainsi $A_{i,j}$ est dans le commutant de $W$. Par 6, $A_{i,j}=a_{i,j}I$ puisque $W$ est irréductible sur $\mathbb C$.
+
+Pour $x\in E$ et $B\in W$, on a successivement
+$$L_j A_{i,j} Bx=P_j\pi L_i Bx=P_j\pi\Phi(B)L_i x
+=\Phi(B)P_j\pi L_i x=L_j B A_{i,j}x.$$
+Le deuxième signe d’égalité emploie 15.a ; le troisième utilise la stabilité de l’image et du noyau de $\pi$ ainsi que 15.b. L’injectivité de $L_j$ établit la commutation cherchée pour tout $B\in W$.
 
 ### Question 18.a
 

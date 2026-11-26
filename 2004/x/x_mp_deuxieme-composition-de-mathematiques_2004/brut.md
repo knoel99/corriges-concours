@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le choix d’une normale orientée permet de mesurer sa variation dans les directions tangentes. Le problème en déduit les courbures, calcule celles des surfaces de révolution et suit le signe de la courbure moyenne lors d’un changement de paramètres.
 
 ## I. Normale orientée et variation des vecteurs tangents
@@ -85,9 +87,13 @@ Pour $c>0$, $f(z)=c\cosh(z/c+b)$ vérifie encore $ff''=1+f'^2$. Prenons $b=\oper
 
 ![Figure 1 — La rotation de la chaînette autour de l’axe vertical engendre le caténoïde. Au col, le rayon est minimal et la tangente de la méridienne est verticale dans ce dessin.](figures/meridienne-du-catenoide.svg)
 
+L’équation obtenue donne aussi une première intégrale. En dérivant $f/\sqrt{1+f'^2}$, on trouve $f'(1+f'^2-ff'')/(1+f'^2)^{3/2}=0$. Sa valeur constante est $c=\alpha/\sqrt{1+\beta^2}$. On a donc $f''=f/c^2$, avec les deux données à l’origine. L’unique solution de cette équation linéaire est $\alpha\cosh(z/c)+c\beta\sinh(z/c)$, ce qui redonne la chaînette indiquée, sans division par $f'$ au col.
+
 ### Question 7.e
 
 Pour une telle solution, les coefficients diagonaux de $A$ sont $1/(fh)$ et $-1/(fh)$. Ainsi $K=-1/[f^2(1+f'^2)]<0$. Pour le profil explicite $h=\cosh(z/c+b)=f/c$, donc $K=-c^2/f^4=-1/[c^2\cosh^4(z/c+b)]$.
+
+Au col, $f=c$ et $f'=0$, de sorte que les deux courbures principales valent $1/c$ et $-1/c$ dans l’orientation calculée. Leur somme s’annule tandis que leur produit est $-1/c^2$, conformément à l’expression obtenue.
 
 ### Question 8
 
@@ -114,3 +120,5 @@ La règle de chaîne et 9 donnent $D\widetilde W=\varepsilon(DF)A^tJ$. Par aille
 ### Question 10.d
 
 On obtient $\widetilde H(\widetilde u)=\varepsilon H(u)$ et $\widetilde K(\widetilde u)=\varepsilon^2K(u)=K(u)$. La courbure totale est intrinsèquement indépendante de l’orientation du paramétrage. La courbure moyenne signée change de signe si le reparamétrage renverse l’orientation.
+
+Pour tester les signes, échangeons les deux paramètres. Le jacobien de l’inverse est alors la matrice de permutation $J$, de déterminant $-1$. Si $A=\operatorname{diag}(k_1,k_2)$ dans les directions initiales, la formule de 10.c donne $\widetilde A=\operatorname{diag}(-k_2,-k_1)$. La demi-somme change de signe et le produit vaut toujours $k_1k_2$.

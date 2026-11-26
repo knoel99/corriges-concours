@@ -11,7 +11,8 @@
   "sources": {
     "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-2_mp_2003.pdf",
     "rapport_jury": "https://www.wikiprepa.fr/concours/data/x_maths-2_mp_2003_rapport_jury.pdf",
-    "sha256_sujet": "98e00d54adb330873035466ccc7b1274c5c2e35b3c1ea4e60877ab532b332380"
+    "sha256_sujet": "98e00d54adb330873035466ccc7b1274c5c2e35b3c1ea4e60877ab532b332380",
+    "sha256_rapport_jury": "551aa9d6e0269467d967e53cfa9e481f9bfc5e1db4dd4564a8af6c5ba14225d9"
   },
   "figures": [
     {
@@ -31,6 +32,162 @@
       "perimetre": "Rédaction complète sur original et rapport du jury. Contre-exemple réel, trace séparant les coefficients, action sur quotient et drapeau, choix itératif d’un supplémentaire de colonnes et calcul du projecteur. Schéma du drapeau invariant.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "x_mp_deuxieme_composition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Pointage physique des 25 consignes sur 3 pages. Lecture des trois pages au rendu du scan et des commentaires individualisés du jury. Vérification du cas réel de 9 et du groupe induit sur le quotient en 14. Détail de la sélection successive des colonnes en 16 et de la chaîne d’entrelacement du projecteur en 17."
     }
-  ]
+  ],
+  "intitule": "Trigonalisation simultanée d’endomorphismes unipotents",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3.a",
+      "3.b",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15.a",
+      "15.b",
+      "15.c",
+      "16",
+      "17",
+      "18.a",
+      "18.b",
+      "18.c",
+      "19",
+      "20"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1",
+        "page_pdf": "1"
+      },
+      {
+        "question": "2",
+        "page_pdf": "1"
+      },
+      {
+        "question": "3.a",
+        "page_pdf": "1"
+      },
+      {
+        "question": "3.b",
+        "page_pdf": "1"
+      },
+      {
+        "question": "4",
+        "page_pdf": "1"
+      },
+      {
+        "question": "5",
+        "page_pdf": "2"
+      },
+      {
+        "question": "6",
+        "page_pdf": "2"
+      },
+      {
+        "question": "7",
+        "page_pdf": "2"
+      },
+      {
+        "question": "8",
+        "page_pdf": "2"
+      },
+      {
+        "question": "9",
+        "page_pdf": "2"
+      },
+      {
+        "question": "10",
+        "page_pdf": "2"
+      },
+      {
+        "question": "11",
+        "page_pdf": "2"
+      },
+      {
+        "question": "12",
+        "page_pdf": "2"
+      },
+      {
+        "question": "13",
+        "page_pdf": "2"
+      },
+      {
+        "question": "14",
+        "page_pdf": "2"
+      },
+      {
+        "question": "15.a",
+        "page_pdf": "3"
+      },
+      {
+        "question": "15.b",
+        "page_pdf": "3"
+      },
+      {
+        "question": "15.c",
+        "page_pdf": "3"
+      },
+      {
+        "question": "16",
+        "page_pdf": "3"
+      },
+      {
+        "question": "17",
+        "page_pdf": "3"
+      },
+      {
+        "question": "18.a",
+        "page_pdf": "3"
+      },
+      {
+        "question": "18.b",
+        "page_pdf": "3"
+      },
+      {
+        "question": "18.c",
+        "page_pdf": "3"
+      },
+      {
+        "question": "19",
+        "page_pdf": "3"
+      },
+      {
+        "question": "20",
+        "page_pdf": "3"
+      }
+    ],
+    "controle": [
+      "p. 1, commutants réels des rotations planes et de dimension supérieure, irréductibilité de l’action sur les sphères",
+      "p. 2, espaces propres stables, rôle du corps, inverse, trace, droite fixe commune et passage au quotient",
+      "p. 3, multiplication sur les colonnes, supplémentaire stable, projecteur, coefficients scalaires et conclusion",
+      "Lecture des trois pages au rendu du scan et des commentaires individualisés du jury. Vérification du cas réel de 9 et du groupe induit sur le quotient en 14. Détail de la sélection successive des colonnes en 16 et de la chaîne d’entrelacement du projecteur en 17."
+    ]
+  }
 }
