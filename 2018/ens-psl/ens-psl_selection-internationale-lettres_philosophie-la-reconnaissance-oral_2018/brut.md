@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Exposé
 
 Une musicienne entre dans une salle. On la reconnaît sur une photographie, on reconnaît qu’elle a composé l’air que le programme attribue à un autre, on lui exprime sa reconnaissance pour la soirée. Dans les trois cas quelque chose est rendu à quelqu’un. Pourtant identifier un visage, attribuer à une personne ce qui lui revient et remercier d’un don ne sont pas trois degrés d’une même formalité. Une musicienne célèbre pourrait demeurer privée de ses droits, et le nom correctement inscrit sur un programme ne contraindrait personne à la gratitude. Qu’advient-il de la connaissance lorsque, sous le nom de reconnaissance, elle engage aussi une relation à celui que l’on connaît ?
@@ -11,6 +13,8 @@ Une musicienne entre dans une salle. On la reconnaît sur une photographie, on r
 ### Reconnaître le même à travers une différence
 
 À première vue, la reconnaissance suppose une connaissance antérieure. Une personne reconnue a vieilli et le lieu dans lequel je la rencontre a changé. La répétition qui suffirait à un appareil de comparaison, juxtaposer deux images strictement identiques, rendrait la reconnaissance humaine presque impossible. Il faut pouvoir retrouver un geste ou une inflexion dans une nouvelle situation. Ce travail a ses risques. Un acteur maquillé peut être immédiatement reconnaissable à sa voix, tandis qu’un faux air de famille conduit à aborder un inconnu comme un ami. La reconnaissance comporte donc une prétention susceptible d’être corrigée. Je peux examiner d’autres indices ou écouter l’intéressé.
+
+Reste le cas où je me reconnais moi-même. Devant un ancien programme, la musicienne peut reconnaître son écriture et juger aujourd’hui sa pièce méconnaissable. Elle peut aussi se souvenir qu’elle en avait promis la première exécution à un ami. Son changement de goût la dispense-t-il de tenir parole ? La promesse engage quelqu’un qui change, mais auquel un autre peut encore demander des comptes. Me reconnaître comme l’auteur d’un acte ajoute ainsi quelque chose à l’identification d’une trace. Cela peut m’obliger à répondre de cet acte devant quelqu’un, jusque dans le désaccord avec ce que je pensais autrefois.
 
 Le signe reconnu peut aussi avoir été méconnu de tous. Reconnaître un droit jusque-là refusé n’implique pas nécessairement qu’un groupe ait d’abord joui de ce droit puis l’ait perdu. Ce que l’on reconnaît existait peut-être comme raison légitime de prétendre à une certaine considération sans avoir jamais eu d’expression institutionnelle. Une signature portée pour la première fois sur une partition peut ainsi faire apparaître ce qui était vrai du travail accompli depuis le début. De l’identification perceptive à l’attribution de droit, la continuité tient au fait qu’une apparence initiale doit être reprise à la lumière de ce qui se manifestait déjà, mais imparfaitement.
 
