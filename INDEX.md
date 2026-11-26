@@ -761,6 +761,9 @@
 | 2024 | BEL | BL | Économie (oral option) — 17 juin, billet 1 | [md](2024/bel/bel_bl_economie-oral-option-17-juin-billet-1_2024/brut.md) | [md](2024/bel/bel_bl_economie-oral-option-17-juin-billet-1_2024/guide.md) |
 | 2024 | BEL | BL | Économie (oral option) — 17 juin, billet 2 | [md](2024/bel/bel_bl_economie-oral-option-17-juin-billet-2_2024/brut.md) | [md](2024/bel/bel_bl_economie-oral-option-17-juin-billet-2_2024/guide.md) |
 | 2024 | BEL | BL | Économie (oral option) — 17 juin, billet 3 | [md](2024/bel/bel_bl_economie-oral-option-17-juin-billet-3_2024/brut.md) | [md](2024/bel/bel_bl_economie-oral-option-17-juin-billet-3_2024/guide.md) |
+| 2024 | BEL | BL | Économie (oral option) — 18 juin | [md](2024/bel/bel_bl_economie-oral-option-18-juin_2024/brut.md) | [md](2024/bel/bel_bl_economie-oral-option-18-juin_2024/guide.md) |
+| 2024 | BEL | BL | Économie (oral option) — 20 juin, billet 1 | [md](2024/bel/bel_bl_economie-oral-option-20-juin-billet-1_2024/brut.md) | [md](2024/bel/bel_bl_economie-oral-option-20-juin-billet-1_2024/guide.md) |
+| 2024 | BEL | BL | Économie (oral option) — 20 juin, billet 2 | [md](2024/bel/bel_bl_economie-oral-option-20-juin-billet-2_2024/brut.md) | [md](2024/bel/bel_bl_economie-oral-option-20-juin-billet-2_2024/guide.md) |
 | 2024 | BEL | BL | Histoire contemporaine | [md](2024/bel/bel_bl_histoire-contemporaine_2024/brut.md) | [md](2024/bel/bel_bl_histoire-contemporaine_2024/guide.md) |
 | 2025 | BEL | BL | Histoire contemporaine | [md](2025/bel/bel_bl_histoire-contemporaine_2025/brut.md) | [md](2025/bel/bel_bl_histoire-contemporaine_2025/guide.md) |
 | 2026 | BEL | BL | Histoire contemporaine | [md](2026/bel/bel_bl_histoire-contemporaine_2026/brut.md) | [md](2026/bel/bel_bl_histoire-contemporaine_2026/guide.md) |
