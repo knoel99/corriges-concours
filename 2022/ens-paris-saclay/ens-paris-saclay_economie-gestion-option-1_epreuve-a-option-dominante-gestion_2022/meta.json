@@ -1,0 +1,72 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_epreuve-a-option-dominante-gestion_2022",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Épreuve à option — dominante gestion",
+    "annee": 2022,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "Julien de Sachs : rentabilité, responsabilité de la marque et choix d’un site industriel",
+  "gabarit": "questions",
+  "questions": 11,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2022_Sujet_Ecrit_Economie_Gestion_Option1_Option.pdf#page=3",
+    "sujet_sha256": "04b4b73dc4e46c236010816960f151d4b729ae9deb2561a463659cc1ffb4e647",
+    "index": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=289&field_year_target_id%5B%5D=572",
+    "pages_sujet": "3–8 du PDF institutionnel (pages imprimées 2 à 7). Documents 1 à 7.",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2022_Sujet_Ecrit_Economie_Gestion_Option1_Option.pdf",
+        "pages": 8,
+        "sha256": "04b4b73dc4e46c236010816960f151d4b729ae9deb2561a463659cc1ffb4e647"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/cout-du-choix-industriel.svg",
+      "question": "1",
+      "legende": "Passer de Jakarta à Chalon exige 5 M€ de plus au début de 2023 et apporte des flux supplémentaires concentrés sur les dernières années. À 5 %, leur valeur actuelle excède de 103 k€ la dépense additionnelle."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "gestion_2022_2023",
+      "agent": "gestion_2022_2023",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Onze questions résolues sur les sept documents : rentabilités, effet de levier, passifs, VAN et TRI des deux usines, financement, rétention du personnel et coordination Paris–Nevers ; guide, schéma et contrôles chiffrés."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "limites": "Les taux de dette du document 3 et les soldes de fin d’année du document 1 ne se raccordent pas directement aux intérêts du compte de résultat. Les deux conventions sont explicitées ; les résultats propres à la nouvelle gamme ne sont pas isolables."
+  }
+}
