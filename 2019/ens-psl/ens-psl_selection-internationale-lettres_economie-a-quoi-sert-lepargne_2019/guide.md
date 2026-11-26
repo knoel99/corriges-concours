@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Partir d’un relevé de compte
 
 Un ménage débute le mois avec 700 euros de dépôts, reçoit 2 000 euros de revenu disponible et consomme 1 850 euros. Son épargne du mois vaut 150 euros. S’il emploie ces 150 euros à rembourser le principal d’une dette, le solde de son compte revient à 700 euros alors que son patrimoine net a progressé de 150 euros. Un compte bancaire, un patrimoine et une épargne répondent donc à trois questions différentes. Pour introduire le devoir, demander ce que permet la disposition future de ces 150 euros et à quelles conditions leur usage produit un effet chez d’autres agents.
@@ -31,3 +33,9 @@ Changer maintenant une hypothèse. Si des ressources sont déjà entièrement em
 ### Refermer la question
 
 Une conclusion peut repartir des 150 euros du premier ménage. Ils ont amélioré sa capacité à faire face à l’avenir, ici par un désendettement. Pour affirmer qu’ils ont permis à une entreprise de produire davantage, il faudrait encore identifier son financement et ses débouchés. La finalité individuelle est intelligible à partir du budget du ménage. L’effet collectif demande de suivre les paiements, la production et les revenus.
+
+## Vérification sur le sujet
+
+Les deux éditions distinguent flux d’épargne, stock de patrimoine, placement sur un marché secondaire et financement d’un projet. Le modèle fermé à investissement fixé à 20 donne bien un revenu de 100 puis de 80 lorsque la propension à consommer passe de 0,8 à 0,75.
+
+L’ouverture extérieure précise l’emploi des fonds. Dans une économie simplifiée dont le revenu national disponible est 120, la consommation finale 85 et la formation de capital 30, l’épargne nationale vaut 35. Les cinq unités restantes constituent, en l’absence de transferts en capital, une capacité de financement vis-à-vis du reste du monde. L’excédent peut financer l’acquisition d’actifs extérieurs ou réduire des engagements antérieurs. Il ne décrit pas à lui seul la destination de l’épargne d’un ménage particulier.
