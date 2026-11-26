@@ -139,6 +139,7 @@
 | 2007 | Banque PT | PT | Français A | [md](2007/banque-pt/banque-pt_pt_francais-a_2007/brut.md) | [md](2007/banque-pt/banque-pt_pt_francais-a_2007/guide.md) |
 | 2006 | Banque PT | PT | Français A | [md](2006/banque-pt/banque-pt_pt_francais-a_2006/brut.md) | [md](2006/banque-pt/banque-pt_pt_francais-a_2006/guide.md) |
 | 2005 | Banque PT | PT | Français A | [md](2005/banque-pt/banque-pt_pt_francais-a_2005/brut.md) | [md](2005/banque-pt/banque-pt_pt_francais-a_2005/guide.md) |
+| 2004 | Banque PT | PT | Français I | [md](2004/banque-pt/banque-pt_pt_francais-i_2004/brut.md) | [md](2004/banque-pt/banque-pt_pt_francais-i_2004/guide.md) |
 | 2026 | Banque PT | PT | Français A | [md](2026/banque-pt/banque-pt_pt_francais-a_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_francais-a_2026/guide.md) |
 | 2017 | Banque PT | PT | Français B | [md](2017/banque-pt/banque-pt_pt_francais-b_2017/brut.md) | [md](2017/banque-pt/banque-pt_pt_francais-b_2017/guide.md) |
 | 2018 | Banque PT | PT | Français B | [md](2018/banque-pt/banque-pt_pt_francais-b_2018/brut.md) | [md](2018/banque-pt/banque-pt_pt_francais-b_2018/guide.md) |
