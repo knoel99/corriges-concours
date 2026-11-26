@@ -10,7 +10,9 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Cette épreuve de la filière universitaire internationale de formation francophone dure deux heures. L’extrait vient des Deux Sources de la morale et de la religion (1932). La compréhension comporte trois demandes. L’essai consacré au progrès est libre, sans limite de mots.
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Concours 2021, session de printemps. La garde indique une durée de deux heures, sans préciser le jour ni l’horaire. L’essai est bref, libre et sans limitation du nombre de mots. Le texte est tiré des *Deux Sources de la morale et de la religion* d’Henri Bergson (1932). [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2021%20FUI-FF%20Session%202%20SUJET%20DE%20FRANCAIS_0.pdf)
 
 ## A1 · Invention et connaissance scientifique
 
@@ -22,7 +24,7 @@ Parler de « don naturel » revient à reconnaître une capacité humaine à ima
 
 ## A3 · Le Rhône et le lac
 
-Le Rhône représente l’esprit d’invention. Son lit d’abord étroit évoque les possibilités limitées d’une technique livrée à ses seules ressources. La rencontre avec le lac de Genève figure l’élargissement que permet la science. À l’intérieur du lac, le fleuve semble avoir perdu son identité ; à sa sortie il poursuit pourtant son cours. L’image sert à comprendre qu’une collaboration très étroite peut donner l’impression d’une fusion sans abolir la distinction entre les deux activités.
+Le Rhône représente l’esprit d’invention. Son lit d’abord étroit évoque les possibilités limitées d’une technique livrée à ses seules ressources. La rencontre avec le lac de Genève figure l’élargissement que permet la science. À l’intérieur du lac, le fleuve semble avoir perdu son identité ; à sa sortie il poursuit pourtant son cours. L’image sert à comprendre qu’une collaboration très étroite peut donner l’impression d’une fusion sans abolir la distinction entre les deux activités. Le conditionnel « pourrait » et la réserve « à la rigueur » comptent : la sortie du fleuve rend imaginable une indépendance de l’invention. Bergson ne prédit aucune rupture prochaine entre la technique et la science.
 
 ![Les trois moments de la comparaison.](figures/rhone-et-lac.svg)
 

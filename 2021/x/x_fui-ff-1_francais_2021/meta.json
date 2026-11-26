@@ -16,21 +16,33 @@
   "figures": [
     {
       "fichier": "figures/reussite-et-preuve.svg",
-      "question": "A2",
+      "question": "2",
       "legende": "Un résultat juste peut être mal justifié."
     },
     {
       "fichier": "figures/cour-et-mesure.svg",
-      "question": "B",
+      "question": "Question d’analyse",
       "legende": "Le raisonnement de l’essai sur une cour d’école."
     }
   ],
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2021%20FUI-FF%20S1%20SUJET%20ECRIT%20DE%20FRANCAIS.pdf",
     "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
-    "sujet_sha256": "b717e559f382a538bdcb462837232624219ea687ac8a3ae09f56dc9b06a19dbf"
+    "sujet_sha256": "b717e559f382a538bdcb462837232624219ea687ac8a3ae09f56dc9b06a19dbf",
+    "numero_pages_sujet": 3,
+    "reperage": "P. 1 garde et horaires, p. 2 sans texte, p. 3 (numérotée 1) texte de Bachelard, trois questions et question d’analyse.",
+    "modalites_verifiees": {
+      "date_imprimee": "2020-10-19",
+      "horaire_imprime": "13 h 30–15 h 30",
+      "saison": "automne",
+      "duree": "2 heures",
+      "instructions_materiel": "L’utilisation de dictionnaires et traducteurs électroniques n’est pas autorisée pour cette épreuve.",
+      "bareme": "Compréhension : 10 points ; question d’analyse : 10 points.",
+      "longueur": "Q1 : quelques phrases. Essai de forme libre ; aucun nombre de mots imprimé.",
+      "notes_du_texte": 0
+    }
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "revision": {
     "date": "2026-11-24",
     "modele": null,
@@ -85,6 +97,23 @@
       "modifications": true,
       "perimetre": "Relecture des trois questions de Bachelard et de l’essai, différence entre coïncidence factuelle et justification, chronologie de la session et formation du problème scientifique.",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "classiques_2017",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Révision de l’explication de « en droit », de l’indication de longueur du résumé et de la portée des limites de la science dans l’essai. Date et horaires vérifiés, deux figures confrontées au texte."
     }
   ],
   "provenance": {
@@ -101,5 +130,14 @@
       "effort": "ultra",
       "service_tier": null
     }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Compréhension 1. Résumé de la thèse en quelques phrases et choix d’une phrase exacte du texte.",
+      "Compréhension 2. Sens précis de « en droit » et différence entre résultat exact et justification.",
+      "Compréhension 3. Détruire l’obstacle de l’opinion, construire un problème clairement formulé.",
+      "Question d’analyse. Définition personnelle de la science, formation de l’esprit scientifique, enjeux sociaux, limites et exemples concrets."
+    ]
   }
 }
