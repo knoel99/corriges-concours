@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve dure trois heures. Chaque candidat compose dans la langue choisie à l’inscription. Ce fascicule présente les cinq synthèses de 450 à 500 mots. Les feuillets demandent un titre et le nombre de mots à la fin de la copie. Les deux décomptes indiqués, avec et sans titre, respectent la fourchette.
 
 [Sujet et supports](https://www.banquept.fr/documents/2015/lv_a_2015_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2015/rapport_lv_a_ecrit_2015.pdf) · [Grille du livret](https://www.banquept.fr/documents/livret/2015/Livret_PT_2015.pdf#page=12)
@@ -114,13 +116,13 @@ Comparer les garanties et la capacité de les exercer. Rapprocher la libération
 
 أما في مصر فتخشى منظمات حقوقية أن تؤدي الإجراءات المتخذة باسم حماية المنشآت العامة إلى تضييق مجال الاحتجاج. وقد طالبت خمس عشرة منظمة الرئيس بسحب القانون المعني، معتبرة أن آثاره تمس وضع المدنيين وضمانات المحاكمة. وهكذا يصبح الخلاف على حدود السلطة في حالة الاحتجاج خلافا على حرية جماعية وعلى مصير الفرد الذي يشارك فيه في آن واحد. فوجود مؤسسات تحمل اسم القانون لا يحسم مسألة ما إذا كان المعترض يستطيع أن يعلن موقفه وأن يدافع عن نفسه أمام القضاء الذي يختص عادة بشؤون المدنيين.
 
-وتظهر تجربة الناشط البحريني نبيل رجب حدود الاستنتاج من خبر واحد. فالإفراج عنه يتيح له العودة إلى الحديث عن نشاطه السلمي، لكنه لا يوفر في حد ذاته ضمانة دائمة لمن ينتقد الحكومة. وينطبق التمييز نفسه على الأرقام المتعلقة بحرية الصحافة. فقد تقدمت البحرين مرتبتين في تصنيف مراسلون بلا حدود، لكنها بقيت في المرتبة الثالثة والستين بعد المئة عالميا. وتباين مراتب البلدان العربية لا يلغي ضعف موقع كثير منها في المقارنة الدولية. وتحسن ترتيب نسبي لا يخبرنا وحده إن كان الصحفي أقل عرضة للملاحقة مما كان عليه من قبل.
+وتظهر تجربة الناشط البحريني نبيل رجب حدود الاستنتاج من خبر واحد. فالإفراج عنه يتيح له العودة إلى الحديث عن نشاطه السلمي، لكنه لا يوفر في حد ذاته ضمانة دائمة لمن ينتقد الحكومة. وينطبق التمييز نفسه على الأرقام المتعلقة بحرية الصحافة. فقد تقدمت البحرين مرتبتين في تصنيف منظمة «مراسلون بلا حدود»، لكنها بقيت في المرتبة الثالثة والستين بعد المئة عالميا. وتباين مراتب البلدان العربية لا يلغي ضعف موقع كثير منها في المقارنة الدولية. وتحسن ترتيب نسبي لا يخبرنا وحده إن كان الصحفي أقل عرضة للملاحقة مما كان عليه من قبل.
 
 ويجمع الرسم الساخر عناصر هذا التناقض في مشهد واحد. فالرجل الذي يرتدي تاجا وحذاء عسكريا يبدو كأنه يهب الطائر حريته حين يفتح له قفصا صغيرا. لكن اتجاه الطيران يقوده إلى قفص أكبر، ويبقى صاحب التاج ممسكا بشروط الخروج. وبهذا تتغير مساحة الحركة في الصورة من دون أن يملك الطائر اختيار وجهته. ويعطي الرسم لعبارة إطلاق الحريات معنى يختبره القارئ على ضوء خبر الإفراج عن الناشط أو الإعلان عن تقدم في ترتيب دولي.
 
 وتظل الفوارق بين البلدان أساسية لفهم ما جرى. فالتفاوض والتداول في تونس، وتقييد الاحتجاج في مصر، والتباعد في البحرين بين بعض المؤشرات ووضع المنتقدين، لا تمثل مراحل متعاقبة من قصة واحدة. والمعيار الذي يصل بينها هو قدرة الأفراد والجماعات على استعمال حقوقهم ومساءلة من يقيدها، حتى عندما يكون صوتهم مخالفا لصوت السلطة القائمة.
 
-**(459 كلمة، بما فيها العنوان · 453 دون العنوان)**
+**(460 كلمة، بما فيها العنوان · 454 دون العنوان)**
 
 ## Espagnol
 
@@ -130,7 +132,7 @@ Comparer les garanties et la capacité de les exercer. Rapprocher la libération
 
 Partir de la valeur touristique du littoral. Distinguer les recettes immédiates des effets durables de l’artificialisation et comparer projets nationaux, mesures régionales et critique associative.
 
-**Document 1** · El País, « Más chiringuitos, menos playa ». La réglementation distingue les plages urbaines et naturelles. La superficie autorisée peut atteindre 300 m² dans le premier cas, contre 150 dans le second.
+**Document 1** · El País, « Más chiringuitos, menos playa ». La réglementation distingue les plages urbaines et naturelles. La superficie totale peut atteindre 300 m² en plage urbaine, contre 150 auparavant. En plage naturelle, le plafond est de 70 m², avec installations démontables.
 
 **Document 2** · El País relaie les relevés de Greenpeace pour la bande côtière de 500 mètres. La surface urbanisée passe d’environ 58 000 à 72 000 hectares entre 1987 et 2005.
 
@@ -150,13 +152,13 @@ Una fotografía aérea de Magaluf muestra lo que una estadística sobre urbaniza
 
 El proceso lleva décadas. Según el informe de Greenpeace recogido por El País, en los primeros quinientos metros de costa la superficie construida pasó de unas cincuenta y ocho mil hectáreas en 1987 a unas setenta y dos mil en 2005. La comparación procede de imágenes de satélite y revela diferencias considerables entre regiones. En la Comunidad Valenciana estaba urbanizada más de la mitad de esa franja, frente a menos de una décima parte en Asturias. La foto mallorquina permite imaginar cómo se experimenta esa concentración desde la playa. Por sí sola no autoriza a suponer que toda España presenta el mismo paisaje.
 
-La revisión de las reglas sobre los chiringuitos vuelve tangible el conflicto. En las playas urbanas los establecimientos podrán ocupar hasta trescientos metros cuadrados, el doble que antes, y situarse más cerca unos de otros. De este modo es posible servir a más clientes y ampliar una actividad de la que viven empresarios y trabajadores. También aumenta el espacio destinado a quien paga por una consumición. En las playas naturales se prevén locales desmontables de dimensiones más reducidas. Los manifestantes de Greenpeace, con sus tumbonas frente al ministerio, convierten esa discusión sobre superficies en una pregunta sobre quién puede disponer de un bien público.
+La revisión de las reglas sobre los chiringuitos vuelve tangible el conflicto. En las playas urbanas los establecimientos podrán ocupar hasta trescientos metros cuadrados, el doble que antes, y situarse más cerca unos de otros. De este modo es posible servir a más clientes y ampliar una actividad de la que viven empresarios y trabajadores. También aumenta el espacio destinado a quien paga por una consumición. En las playas naturales se prevén locales desmontables de hasta setenta metros cuadrados. Los manifestantes de Greenpeace, con sus tumbonas frente al ministerio, convierten esa discusión sobre superficies en una pregunta sobre quién puede disponer de un bien público.
 
 Desde Andalucía, el responsable de urbanismo propone considerar el paisaje como parte del capital económico del destino. Los hoteles y los servicios pueden reproducirse en otro lugar. La combinación de naturaleza, cultura y entorno costero difícilmente puede trasladarse. Una estación con demasiadas construcciones corre así el riesgo de desanimar al visitante del que depende. Tampoco bastaría conservar un paraje excepcional sin ofrecer ningún servicio. El plan andaluz para los primeros quinientos metros pretende graduar la protección, preservando íntegramente los tramos más valiosos y permitiendo actividades compatibles en otros.
 
 El dilema no se reduce por tanto a escoger entre puestos de trabajo y naturaleza. La ampliación de un negocio puede producir ingresos pronto, mientras que el deterioro de una costa se acumula y resulta difícil de deshacer. Las diferencias regionales aconsejan mirar qué queda por proteger y qué tipo de desarrollo admite cada tramo. De esa decisión depende tanto el acceso de los ciudadanos a la playa como la capacidad del turismo de seguir generando actividad en el futuro.
 
-**(472 palabras, incluido el título · 461 sin el título)**
+**(473 palabras, incluido el título · 462 sin el título)**
 
 ## Italien
 

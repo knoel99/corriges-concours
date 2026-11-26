@@ -53,6 +53,16 @@
       "modifications": true,
       "agent": "lva_pt_2325",
       "perimetre": "Rédaction des cinq synthèses par langue et du commentaire des vingt-cinq documents du fascicule 2015, contrôle des figures et des décomptes dans les deux éditions."
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "agent": "lva_pt_2325",
+      "perimetre": "Relecture des cinq copies sur les feuillets et le jury, contrôle de la fidélité des chiffres et des images, recomptage du titre et du corps, contrôle des cinq schémas et du rendu de la langue arabe."
     }
   ],
   "date_revision": "2026-11-26",
@@ -208,8 +218,8 @@
             7,
             8
           ],
-          "mots_titre_inclus": 459,
-          "mots_hors_titre": 453,
+          "mots_titre_inclus": 460,
+          "mots_hors_titre": 454,
           "documents": [
             {
               "numero": 1,
@@ -264,15 +274,15 @@
             9,
             10
           ],
-          "mots_titre_inclus": 472,
-          "mots_hors_titre": 461,
+          "mots_titre_inclus": 473,
+          "mots_hors_titre": 462,
           "documents": [
             {
               "numero": 1,
               "pages": [
                 20
               ],
-              "controle": "El País, « Más chiringuitos, menos playa ». La réglementation distingue les plages urbaines et naturelles. La superficie autorisée peut atteindre 300 m² dans le premier cas, contre 150 dans le second."
+              "controle": "El País, « Más chiringuitos, menos playa ». La réglementation distingue les plages urbaines et naturelles. La superficie totale peut atteindre 300 m² en plage urbaine, contre 150 auparavant. En plage naturelle, le plafond est de 70 m², avec installations démontables."
             },
             {
               "numero": 2,
