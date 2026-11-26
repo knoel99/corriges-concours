@@ -79,11 +79,321 @@
       "perimetre": "Relecture des cinq dossiers dans les deux éditions, de leurs vingt-cinq documents et des cinq sections du rapport. Correction des unités, des périmètres statistiques, des attributions et des lectures iconographiques, contrôle des cinq décomptes, ajout de cinq schémas.",
       "agent": "astra_langues",
       "tour": 2
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "agent": "x_maths_b_recentes",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Vérification du sujet, du rapport et des deux éditions pour Allemand, Anglais, Arabe, Espagnol, Italien. Contrôle du contenu des figures et des réponses rédigées."
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "sources": {
     "sujet": "https://www.banquept.fr/documents/2026/lv_a_2026_pt.pdf",
-    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2026/rapport_lv_a_ecrit_2026.pdf"
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2026/rapport_lv_a_ecrit_2026.pdf",
+    "sujet_sha256": "5bf7d815ee743761a5a94d7a719c50b4008099f4e207b332058d63d9cd07c05d",
+    "rapport_sha256": "9f39a6a5902639c38599cde1fd8269cf3731a08688d18649040a66e3126545de"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Allemand",
+      "Anglais",
+      "Arabe",
+      "Espagnol",
+      "Italien"
+    ],
+    "origine_attestation": {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "5bf7d815ee743761a5a94d7a719c50b4008099f4e207b332058d63d9cd07c05d",
+      "perimetre": "Vérification du sujet, du rapport et des deux éditions pour Allemand, Anglais, Arabe, Espagnol, Italien. Contrôle du contenu des figures et des réponses rédigées.",
+      "controles": [
+        {
+          "nom": "Allemand",
+          "titre": "Gleich vor dem Gesetz, ungleich im Alltag",
+          "pages_sujet": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "pages_rapport": [
+            1,
+            2
+          ],
+          "mots_titre_inclus": 489,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                3,
+                4
+              ],
+              "controle": "Rightmart distingue droit constitutionnel, AGG et discrimination directe ou indirecte. Le tiers et les 48,9 % correspondent à deux questions distinctes."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                5
+              ],
+              "controle": "Tagesschau décrit les discriminations scolaires touchant les Sintis et les Roms. Les 484 signalements sont circonscrits au domaine éducatif depuis 2023."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                6,
+                7
+              ],
+              "controle": "Sonntagsblatt montre comment les données et les choix de conception reproduisent des inégalités."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                7
+              ],
+              "controle": "Les quatre étapes du schéma vont du jugement de la personne à l’appel à un conseil. Le deuxième choix est facultatif."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                8
+              ],
+              "controle": "Une main suspend un cube marqué d’un fauteuil roulant au-dessus de cubes représentant différents groupes sociaux. La disposition met en question les conditions d’inclusion."
+            }
+          ]
+        },
+        {
+          "nom": "Anglais",
+          "titre": "Cooling the Planet: Shortcut or Short Circuit?",
+          "pages_sujet": [
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "pages_rapport": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "mots_titre_inclus": 492,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                10
+              ],
+              "controle": "The Economist distingue le coût envisagé de certaines interventions solaires et celui de la décarbonation, ainsi que leur action sur la température ou le stock de carbone."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                11
+              ],
+              "controle": "The Guardian présente l’appel à la recherche de Richard Spinrad et les enjeux du financement public."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                12
+              ],
+              "controle": "BBC analyse l’incertitude des effets régionaux, les capacités limitées de captage au moment du texte et les théories complotistes."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                13
+              ],
+              "controle": "L’infographie distingue réflexion du rayonnement et absorption de dioxyde de carbone."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                13
+              ],
+              "controle": "Le dessin de 2016 relie deux usines par une canalisation. Le dessinateur met en question la continuité entre le problème et sa prétendue solution."
+            }
+          ]
+        },
+        {
+          "nom": "Arabe",
+          "titre": "التنمية المستدامة في العالم العربي: ضرورة لا ترف",
+          "pages_sujet": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "pages_rapport": [
+            9,
+            10,
+            11,
+            12
+          ],
+          "mots_titre_inclus": 495,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                15
+              ],
+              "controle": "L’article de Jadaliyya associe développement, équité, institutions et préservation du milieu."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                16
+              ],
+              "controle": "Le texte sur le journalisme environnemental demande de croiser les dimensions sociale, économique et écologique et d’examiner les causes."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                17
+              ],
+              "controle": "BBC Arabic distingue populations vivant dans des États en pénurie, données nationales et réponses publiques."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                18
+              ],
+              "controle": "Les gouttes comparent les quantités utilisées et disponibles. Les pourcentages ne mesurent pas la fraction des habitants touchés."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                19
+              ],
+              "controle": "Le visuel de Syrian Climate Pioneers énumère les 17 objectifs du développement durable, dont l’eau et la lutte contre la pauvreté."
+            }
+          ]
+        },
+        {
+          "nom": "Espagnol",
+          "titre": "Turismo en España: del récord al límite",
+          "pages_sujet": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "pages_rapport": [
+            13,
+            14,
+            15
+          ],
+          "mots_titre_inclus": 486,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                21
+              ],
+              "controle": "La tribune de collectifs d’habitants examine logement, services et droit de rester en ville."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                22
+              ],
+              "controle": "Exceltur, citée par eldiario.es, prévoyait en 2024 une croissance de 8,6 %. Des acteurs de la profession relèvent eux-mêmes la saturation."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                23
+              ],
+              "controle": "Le texte sur les mobilisations interroge la croissance du secteur, les restrictions et le risque de réserver les voyages aux plus riches."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                24
+              ],
+              "controle": "Chez Padylla les manifestants répondent « canarias-fílicos » à un visiteur qui les croit hostiles aux touristes. Les pancartes portent sur le modèle économique."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                25
+              ],
+              "controle": "Le dessin détourne une bande dessinée de voisinage en immeuble rempli de marques touristiques. Une mansarde de 20 m² est affichée à 700 euros."
+            }
+          ]
+        },
+        {
+          "nom": "Italien",
+          "titre": "Sovraturismo: il prezzo del successo italiano",
+          "pages_sujet": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "pages_rapport": [
+            16
+          ],
+          "mots_titre_inclus": 491,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                27
+              ],
+              "controle": "Le premier texte décrit les réponses locales à la concentration des visiteurs et les limites de la fiscalité."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                28
+              ],
+              "controle": "Le deuxième distingue les 49 % favorables au contrôle des flux et les 38,4 % défavorables dans le sondage cité."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                29
+              ],
+              "controle": "Le troisième fait dialoguer les enjeux économiques et environnementaux, des Cinque Terre aux destinations moins fréquentées."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                30
+              ],
+              "controle": "Le tableau est exprimé en milliers de nuitées hôtelières en 2022. La ligne Allemagne concerne le pays d’origine, la colonne Trentin-Haut-Adige la région de destination."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                31
+              ],
+              "controle": "La foule devant la fontaine de Trevi illustre une concentration locale. Le cliché ne fournit aucune série de fréquentation."
+            }
+          ]
+        }
+      ]
+    }
   }
 }
