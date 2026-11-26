@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Polynômes hyperboliques.** On note $\lambda_1(x;a)\le\cdots\le\lambda_d(x;a)$ les racines comptées avec leurs multiplicités, et $C(p;a)$ la région où elles sont toutes positives. Les parties V et VI nécessitent la normalisation du signe de $p$ expliquée en 20.b.
 
 ## Préliminaires et I. Exemples
@@ -149,6 +151,9 @@ La positivité de $q$ sur les arguments est assurée par la même estimation, et
 
 Sur $\mathbb R\times\mathbb R^m$, $p(t,x)=t^2-q(x)$ est hyperbolique vers $e=(1,0)$, avec racines $t\pm\sqrt{q(x)}$ pour le vecteur $(t,x)$. Sa polaire vaut $M((t,x),(s,y))=ts-B(x,y)$. Les deux vecteurs donnés sont dans le cône car leur première racine est positive. La Q22 au degré deux donne directement l’inégalité cherchée.
 
+Avec les notations du feuillet, $\lambda_1(\alpha,u)=\alpha-\sqrt{q(u)}>0$ et $\lambda_1(\beta,v)=\beta-\sqrt{q(v)}>0$. L’évaluation de la forme polaire et des deux facteurs de Q22 s’écrit donc
+$$\boxed{\alpha\beta-B(u,v)\ \ge\ \sqrt{\bigl(\alpha^2-q(u)\bigr)\bigl(\beta^2-q(v)\bigr)}.}$$
+
 ### Question 23.b
 
 Prenons $p(x)=x_1\cdots x_d$ et comme direction le vecteur de uns. Le cône est l’orthant strictement positif. La forme polaire évaluée sur les lignes $v_1,\ldots,v_d$ est $M(v_1,\ldots,v_d)=\operatorname{per}(A)/d!$, en symétrisant le produit des coordonnées. Par Q22, cette expression est au moins $\prod_i p(v_i)^{1/d}=(\prod_{ij}a_{ij})^{1/d}$. Si « positifs » autorise des zéros, appliquer d’abord aux coefficients $a_{ij}+\varepsilon$, puis passer à la limite par continuité.
@@ -180,6 +185,18 @@ Si $y=ca$, on aurait $\lambda_k(x+y)=\lambda_k(x)+c\ge\lambda_i(x)+\lambda_j(y)$
 Écrivons $h_r(t)=\phi_r(t)-\lambda_*$. En $0$, $h_r>0$ pour $r\ge i$. En $1$, $h_r<0$ pour $r\le k$. À $+\infty$ le signe est celui de $\lambda_r(v)$, donc positif pour $r\ge j$ et négatif sinon. À $-\infty$, le signe est l’opposé de celui de $\lambda_{d+1-r}(v)$, donc négatif pour $r\le d+1-j$ et positif sinon.
 
 Il y a au moins un zéro si les signes aux deux infinis sont opposés. Lorsque ces signes sont tous deux négatifs, un signe positif en 0 impose deux zéros. Lorsqu’ils sont tous deux positifs, un signe négatif en 1 en impose deux. Enfin, dans le cas des signes négatif puis positif aux infinis et pour $i\le r\le k$, le parcours des signes est $-,+,-,+$, ce qui donne trois zéros distincts. Tous ces minorants suivent du théorème des valeurs intermédiaires sur des intervalles disjoints.
+
+Le tableau récapitule les contributions qui seront additionnées en 29.a. Les signes aux infinis désignent les signes de $h_r$ pour $|t|$ suffisamment grand.
+
+| Signe à gauche | Signe à droite | Information intérieure | Nombre garanti |
+|---|---|---|---|
+| $-$ | $+$ | aucune | $1$ |
+| $-$ | $+$ | $h_r(0)>0$ et $h_r(1)<0$ | $3$ |
+| $+$ | $-$ | aucune | $1$ |
+| $-$ | $-$ | $h_r(0)>0$ | $2$ |
+| $+$ | $+$ | $h_r(1)<0$ | $2$ |
+
+La deuxième ligne affine la première pour les branches concernées. Elle apporte deux zéros de plus dans la somme.
 
 ### Question 29.a
 
