@@ -1159,6 +1159,10 @@
 | 2006 | ENS | MP-PC | Français | [md](2006/ens/ens_mp-pc_francais_2006/brut.md) | [md](2006/ens/ens_mp-pc_francais_2006/guide.md) |
 | 2007 | ENS | MP-PC | Français | [md](2007/ens/ens_mp-pc_francais_2007/brut.md) | [md](2007/ens/ens_mp-pc_francais_2007/guide.md) |
 | 2008 | ENS | MP-PC | Français | [md](2008/ens/ens_mp-pc_francais_2008/brut.md) | [md](2008/ens/ens_mp-pc_francais_2008/guide.md) |
+| 2005 | ENS | MP-PC | Grec ancien (LE2) | [md](2005/ens/ens_mp-pc_grec-ancien-le2_2005/brut.md) | [md](2005/ens/ens_mp-pc_grec-ancien-le2_2005/guide.md) |
+| 2006 | ENS | MP-PC | Grec ancien (LE2) | [md](2006/ens/ens_mp-pc_grec-ancien-le2_2006/brut.md) | [md](2006/ens/ens_mp-pc_grec-ancien-le2_2006/guide.md) |
+| 2007 | ENS | MP-PC | Grec ancien (LE2) | [md](2007/ens/ens_mp-pc_grec-ancien-le2_2007/brut.md) | [md](2007/ens/ens_mp-pc_grec-ancien-le2_2007/guide.md) |
+| 2008 | ENS | MP-PC | Grec ancien (LE2) | [md](2008/ens/ens_mp-pc_grec-ancien-le2_2008/brut.md) | [md](2008/ens/ens_mp-pc_grec-ancien-le2_2008/guide.md) |
 | 2009 | ENS | MP-PC | Grec ancien (LE2) | [md](2009/ens/ens_mp-pc_grec-ancien-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_grec-ancien-le2_2009/guide.md) |
 | 2010 | ENS | MP-PC | Grec ancien (LE2) | [md](2010/ens/ens_mp-pc_grec-ancien-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_grec-ancien-le2_2010/guide.md) |
 | 2011 | ENS | MP-PC | Grec (langue étrangère B) | [md](2011/ens/ens_mp-pc_grec-langue-etrangere-b_2011/brut.md) | [md](2011/ens/ens_mp-pc_grec-langue-etrangere-b_2011/guide.md) |
@@ -1179,6 +1183,10 @@
 | 2008 | ENS | MP-PC | Japonais (LE2) | [md](2008/ens/ens_mp-pc_japonais-le2_2008/brut.md) | [md](2008/ens/ens_mp-pc_japonais-le2_2008/guide.md) |
 | 2009 | ENS | MP-PC | Japonais (LE2) | [md](2009/ens/ens_mp-pc_japonais-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_japonais-le2_2009/guide.md) |
 | 2011 | ENS | MP-PC | Latin (langue étrangère B) | [md](2011/ens/ens_mp-pc_latin-langue-etrangere-b_2011/brut.md) | [md](2011/ens/ens_mp-pc_latin-langue-etrangere-b_2011/guide.md) |
+| 2005 | ENS | MP-PC | Latin (LE2) | [md](2005/ens/ens_mp-pc_latin-le2_2005/brut.md) | [md](2005/ens/ens_mp-pc_latin-le2_2005/guide.md) |
+| 2006 | ENS | MP-PC | Latin (LE2) | [md](2006/ens/ens_mp-pc_latin-le2_2006/brut.md) | [md](2006/ens/ens_mp-pc_latin-le2_2006/guide.md) |
+| 2007 | ENS | MP-PC | Latin (LE2) | [md](2007/ens/ens_mp-pc_latin-le2_2007/brut.md) | [md](2007/ens/ens_mp-pc_latin-le2_2007/guide.md) |
+| 2008 | ENS | MP-PC | Latin (LE2) | [md](2008/ens/ens_mp-pc_latin-le2_2008/brut.md) | [md](2008/ens/ens_mp-pc_latin-le2_2008/guide.md) |
 | 2009 | ENS | MP-PC | Latin (LE2) | [md](2009/ens/ens_mp-pc_latin-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_latin-le2_2009/guide.md) |
 | 2002 | ENS | MP-PC | Mathématiques-informatique | [md](2002/ens/ens_mp-pc_mathematiques-informatique_2002/brut.md) | [md](2002/ens/ens_mp-pc_mathematiques-informatique_2002/guide.md) |
 | 2003 | ENS | MP-PC | Mathématiques-informatique | [md](2003/ens/ens_mp-pc_mathematiques-informatique_2003/brut.md) | [md](2003/ens/ens_mp-pc_mathematiques-informatique_2003/guide.md) |
