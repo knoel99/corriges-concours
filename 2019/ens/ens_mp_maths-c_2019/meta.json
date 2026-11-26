@@ -11,7 +11,14 @@
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/19_mpi_mathc_sujet.pdf",
     "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/19_MP_rap_eMathC.pdf",
-    "sha256_sujet": "03f7c80d9e84ac7e220f1ec7161e6bf84053b9ff5121d12aeb3ef8e3c7dc4d6d"
+    "sha256_sujet": "03f7c80d9e84ac7e220f1ec7161e6bf84053b9ff5121d12aeb3ef8e3c7dc4d6d",
+    "index_banque": "https://www.ens.psl.eu/rapports-et-sujets-2019-mpi",
+    "index_banque_sha256": "1923edf3a447ae630dc60d28b0c0385f4b08b507be7e1445afc37a087d8b89f1",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/19_MP_rap_eMathC.pdf",
+    "sujet_sha256": "03f7c80d9e84ac7e220f1ec7161e6bf84053b9ff5121d12aeb3ef8e3c7dc4d6d",
+    "sujet_pages": 8,
+    "rapport_sha256": "768f2df750dc98ea9dd74017ee59802dc65376af87f1b0b2b68c58daac070307",
+    "rapport_pages": 4
   },
   "figures": [
     {
@@ -31,6 +38,70 @@
       "perimetre": "Rédaction complète des cinq parties, vérification des résultats sur l’espace de Schwartz et la transformation de Fourier, preuve des estimations de fréquences et du passage à la limite div-rot. Schéma des deux directions fréquentielles.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Vérification des 37 subdivisions du sujet et du rapport sur les suites faiblement convergentes, l’espace de Schwartz et le lemme divergence–rotationnel. Vérification des exemples distinguant convergence faible et bornitude, des signes des commutateurs et de la constante de Plancherel pour la convention imprimée.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6a",
+      "I.6b",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "III.1a",
+      "III.1b",
+      "III.1c",
+      "III.1d",
+      "III.1e",
+      "III.2a",
+      "III.2b",
+      "III.2c",
+      "III.2d",
+      "IV.1a",
+      "IV.1b",
+      "IV.1c",
+      "IV.2",
+      "IV.3",
+      "IV.4",
+      "IV.5",
+      "IV.6a",
+      "IV.6b",
+      "IV.7",
+      "V.1a",
+      "V.1b",
+      "V.1c",
+      "V.2",
+      "V.3"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "precision": "Vérification des 37 subdivisions du sujet et du rapport sur les suites faiblement convergentes, l’espace de Schwartz et le lemme divergence–rotationnel. Vérification des exemples distinguant convergence faible et bornitude, des signes des commutateurs et de la constante de Plancherel pour la convention imprimée.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "relecture_corrige",
+      "perimetre": "Vérification des 37 subdivisions du sujet et du rapport sur les suites faiblement convergentes, l’espace de Schwartz et le lemme divergence–rotationnel. Vérification des exemples distinguant convergence faible et bornitude, des signes des commutateurs et de la constante de Plancherel pour la convention imprimée.",
+      "sha256_sujet_controle": "03f7c80d9e84ac7e220f1ec7161e6bf84053b9ff5121d12aeb3ef8e3c7dc4d6d",
+      "sha256_rapport_controle": "768f2df750dc98ea9dd74017ee59802dc65376af87f1b0b2b68c58daac070307"
+    }
+  }
 }

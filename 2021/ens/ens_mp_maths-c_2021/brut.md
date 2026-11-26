@@ -6,11 +6,15 @@
 
 **Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Question préliminaire
 
 ### Question 1
 
 Choisissons $n$ zéros distincts $t_1<\cdots<t_n$ de $g$. Sur chacun des $n-1$ segments $[t_i,t_{i+1}]$, la fonction est continue, dérivable à l'intérieur et prend la même valeur aux extrémités. Le théorème de Rolle fournit un zéro de $g'$ dans chaque intervalle ouvert $]t_i,t_{i+1}[$. Ces zéros sont distincts. Si $g^{(k)}$ possède au moins $n-k$ zéros pour $k<n-1$, le même raisonnement appliqué à ces zéros ordonnés en donne au moins $n-k-1$ pour $g^{(k+1)}$. La récurrence donne toutes les inégalités demandées.
+
+![Figure 1 — Les zéros successifs des dérivées d’un polynôme quartique se placent entre les zéros de la ligne précédente.](figures/rolle-zeros.svg)
 
 ## I. Fractions rationnelles et rationalité
 
@@ -68,6 +72,8 @@ Puisque $w=F(\zeta_{n_j})$ est une racine de l'unité, il s'écrit $e^{2\pi i m/
 
 La suite $n_j$ tend vers l'infini, donc $\zeta_{n_j}\to1$. La fraction $F$ est continue en $1$, où sa valeur est $1$. Tout point d'accumulation $q$ de $(q_j)$ dans le compact $[-1/2,1/2]$ vérifie donc $e^{2\pi i q}=1$. Le seul entier de ce segment est $0$. La suite étant bornée, cette unicité de la valeur d'adhérence donne $q_j\to0$.
 
+![Figure 3 — Les trois racines primitives choisies ont un argument de plus en plus petit et s’approchent de 1.](figures/racines-approchent-un.svg)
+
 ### Question 8a
 
 On a $\zeta_n-1=2\pi i/n+O(n^{-2})$ et $P(z)=P'(1)(z-1)+O(|z-1|^2)$ au voisinage de $1$. Ainsi $nP(\zeta_n)\to2\pi i P'(1)$.
@@ -77,6 +83,8 @@ On a $\zeta_n-1=2\pi i/n+O(n^{-2})$ et $P(z)=P'(1)(z-1)+O(|z-1|^2)$ au voisinage
 Écrivons $F=P/Q$ avec $Q(1)\ne0$. Comme $(P-Q)(1)=0$, la question 8a appliquée à $P-Q$ donne
 $$n_j\bigl(F(\zeta_{n_j})-1\bigr)\longrightarrow2\pi i\,\frac{P'(1)-Q'(1)}{Q(1)}=2\pi i F'(1).$$
 La fonction $h(t)=(e^{2\pi i t}-1)/(2\pi i t)$ se prolonge par $h(0)=1$. D'après 7, $h(q_j)\to1$. En écrivant $F(\zeta_{n_j})-1=2\pi i q_j h(q_j)$, on obtient $n_jq_j\to F'(1)$, y compris si certains $q_j$ s'annulent. Cette limite est réelle.
+
+Avec $F(X)=X^{-2}$, le représentant de l’argument de $F(\zeta_n)$ est $q=-2/n$ pour $n\ge5$. Le produit $nq=-2$ donne exactement $F'(1)$. Dans le plan complexe, $n(F(\zeta_n)-1)=n(e^{-4\pi i/n}-1)$ tend vers $-4\pi i$, ce qui vérifie également le facteur $2\pi i$.
 
 ### Question 9
 
@@ -113,6 +121,8 @@ Le rayon de convergence de la série entière est infini puisqu'elle converge en
 ### Question 15a
 
 Posons $a=\alpha_n$ et $N=\deg P_n$. On divise $f(x)$ par $x^N e^{a x}$ pour $x>0$. Le dernier terme tend vers le coefficient dominant de $P_n$, qui est non nul. Pour $i<n$, le facteur $e^{-(\alpha_n-\alpha_i)x}$ l'emporte sur toute puissance de $x$, donc le terme correspondant tend vers zéro. La limite étant non nulle, $f$ ne peut être identiquement nulle.
+
+![Figure 4 — Pour f(x) = x exp(2x) + x² exp(x), le quotient par x exp(2x) tend vers le coefficient dominant, égal à 1.](figures/terme-dominant.svg)
 
 ### Question 15b
 
@@ -162,6 +172,8 @@ Soit $L$ le polynôme de Lagrange interpolant $f$ aux $n-1$ premiers points. Ave
 $$f(x_n)-\sum_{i<n}f(x_i)L_i(x_n)=\frac{\beta}{(n-1)!}f^{(n-1)}(y)$$
 pour un $y\in I$. En remplaçant $L_i(x_n)$ par son produit, on retrouve la formule demandée.
 
+![Figure 6 — L’interpolateur affine passe par les deux premières valeurs de l’exponentielle. La hauteur du trait vertical donne l’erreur au troisième point.](figures/reste-interpolation.svg)
+
 ### Question 23
 
 Dans le déterminant de $A$, remplaçons la dernière colonne par $C_n-\sum_{i<n}L_i(x_n)C_i$. Cette opération préserve le déterminant. La question 22b appliquée à chaque fonction $f_j$ donne pour l'entrée de ligne $j$ de cette colonne $\beta f_j^{(n-1)}(y_j)/(n-1)!$, pour un point $y_j\in I$ pouvant dépendre de la ligne. En extrayant le facteur commun $\beta/(n-1)!$ de la dernière colonne on obtient l'identité demandée.
@@ -203,3 +215,5 @@ Il n'y a qu'un nombre fini de points considérés, puisque leurs abscisses figur
 Posons $\delta=c^{-1}n^{-2/(d+1)}$ et $m=\lfloor\ell(I)/\delta\rfloor+1$. Les $m$ segments égaux qui couvrent $I$ ont chacun une longueur strictement inférieure à $\delta$. D'après 28, les points du réseau sur le graphe dans chaque segment appartiennent à une $d$-courbe. Le théorème 2 borne leur nombre par $c_1$, uniformément en cette courbe. Les recouvrements aux extrémités ne gênent pas une majoration. Par suite
 $$\left|\Gamma(f)\cap n^{-1}\mathbb Z^2\right|\le c_1m\le c_1\bigl(1+c\ell(I)n^{2/(d+1)}\bigr)\le c_1(1+c\ell(I))n^\varepsilon.$$
 Le dernier passage utilise $n\ge1$ et le choix initial $2/(d+1)<\varepsilon$. Les constantes $c,c_1$ dépendent de $I,f,d$, et $d$ dépend de $\varepsilon$, mais aucune ne dépend de $n$.
+
+![Figure 8 — Chaque segment du recouvrement admet sa propre courbe auxiliaire. La même borne sur le nombre d’intersections s’applique à tous les segments.](figures/recouvrement.svg)

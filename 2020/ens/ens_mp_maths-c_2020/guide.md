@@ -10,6 +10,8 @@
 
 **Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Épreuve commune à Ulm, Lyon, Paris-Saclay et Rennes, durée 4 h. Les contraintes sont écrites $g_i(x)\le0$ et les multiplicateurs sont positifs ou nuls.
 
 Les deux premières parties expliquent comment projeter et comment approcher un minimiseur admissible par des minimisations sur l’espace entier. La partie III construit les multiplicateurs à partir des directions admissibles. La partie IV en fait les inconnues de l’algorithme d’Uzawa.
@@ -291,6 +293,8 @@ Par II.4, tous les $x_k$ sont dans le sous-niveau $\{f\le f(x^\star)\}$, fermé 
 #### Solution
 
 Les inégalités $f(x_k)\le f_k(x_k)\le f(x^\star)$ de II.4 et la convergence $f(x_k)\to f(x^\star)$ donnent $f_k(x_k)\to f(x^\star)$. On en tire aussi $k\beta(x_k)\to0$ par différence. La valeur minimale monte vers cette limite : $f_{k+1}\ge f_k$ point par point entraîne $\min f_{k+1}\ge\min f_k$. La violation $\beta(x_k)$ décroît. En effet, ajoutons $f_k(x_k)\le f_k(x_{k+1})$ et $f_{k+1}(x_{k+1})\le f_{k+1}(x_k)$ et simplifions. Il reste $\beta(x_{k+1})\le\beta(x_k)$.
+
+Dans l’exemple de la figure, $x^\star=0$, $f(x)=(x-3/2)^2$ et $\beta(x)=\max(0,x)^2$. Sur $x\ge0$, la dérivée du critère pénalisé s’annule en $x_k=3/[2(k+1)]$. Sur $x\le0$, son minimum est atteint en zéro. Ainsi $f_k(x_k)=\frac94\frac{k}{k+1}$ monte vers $9/4$ et $\beta(x_k)=\frac{9}{4(k+1)^2}$ donne bien $k\beta(x_k)\to0$.
 
 ## III. Théorème de Karush–Kuhn–Tucker
 

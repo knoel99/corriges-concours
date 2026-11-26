@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le problème part de la convergence faible pour démontrer le théorème de Rellich puis le lemme div-rot sur le plan. [Sujet officiel](https://www.ens.psl.eu/sites/default/files/19_mpi_mathc_sujet.pdf) · [Rapport du jury](https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/19_MP_rap_eMathC.pdf)
 
 ## I. Convergence faible dans un espace préhilbertien réel
@@ -305,6 +307,8 @@ Notons $Sg=g^\star$ et $B(f,g)=\int fg$ sans conjugaison. La question 6a donne $
 On a $\overline{\widehat g}=\mathcal F(R\bar g)$ par changement $x\mapsto-x$ dans l’intégrale. Avec 6b et 5,
 $$\int\widehat f\,\overline{\widehat g}=\int f\,\mathcal F^2(R\bar g)=\alpha\int f\bar g.$$
 Pour $f=g=\gamma\otimes\gamma$, l’intégrale $\int|f|^2$ est strictement positive et $\widehat f(0)=\int f>0$. La continuité de $\widehat f$ implique $\int|\widehat f|^2>0$. Le quotient de ces deux réels strictement positifs est donc $\alpha>0$.
+
+On peut calculer cette constante avec $f(x)=e^{-|x|^2/2}$. En dimension un, la transformée $h$ de $e^{-s^2/2}$ vérifie $h'(t)=-t h(t)$ par dérivation puis intégration par parties. Comme $h(0)=\sqrt{2\pi}$, on obtient $h(t)=\sqrt{2\pi}e^{-t^2/2}$. Par produit en dimension deux, $\widehat f=2\pi f$. Le rapport des intégrales des carrés donne donc $\alpha=4\pi^2$ avec la convention du sujet.
 
 ## V. Compacité par compensation
 

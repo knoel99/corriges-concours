@@ -12,10 +12,17 @@
     "model": "GPT-6"
   },
   "redaction": "Rédaction originale par IA à partir des documents officiels de la session 2021.",
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/2021_mp_sujet_mathc.pdf",
-    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/21_mp_rap_emathc.pdf"
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/21_mp_rap_emathc.pdf",
+    "index_banque": "https://www.ens.psl.eu/rapports-et-sujets-2021-mpi",
+    "index_banque_sha256": "53fc1679dd26746c4f664b98e461f43e52dd8bde8513cd75f9877254403f8a3d",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/21_mp_rap_emathc.pdf",
+    "sujet_sha256": "15d6cdac46a0d3a89b979340b83e0a42329a270a598a3c9bc78e521944c0c790",
+    "sujet_pages": 8,
+    "rapport_sha256": "fe58866cccfb397086bdc0b0d4070438caee7979e28c68892cb6e7a58cffcd3a",
+    "rapport_pages": 5
   },
   "figures": [
     {
@@ -91,6 +98,71 @@
       "perimetre": "Confrontation des 39 réponses et huit figures aux pages imprimées 1 à 7 et au rapport. Un facteur de Blaschke sur le cercle donne un contre-exemple explicite pour les racines de l’unité. Vérifications du facteur deux cyclotomique et du numérateur entier minimal en dimension quatre.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Relecture des 39 alinéas sur les intersections atypiques, du théorème 1 admis et des preuves des théorèmes 2 à 4 et du rapport. Vérification des domaines sans pôle et du cas constant, du passage aux arguments réduits, des dénominateurs et de l’exposant final. Rétablissement de cinq figures absentes de l’édition brute, avec contrôle des huit figures dans les deux éditions.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2a",
+      "2b",
+      "2c",
+      "3a",
+      "3b",
+      "4",
+      "5a",
+      "5b",
+      "5c",
+      "6",
+      "7",
+      "8a",
+      "8b",
+      "9",
+      "10",
+      "11a",
+      "11b",
+      "12",
+      "13",
+      "14",
+      "15a",
+      "15b",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22a",
+      "22b",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27a",
+      "27b",
+      "28",
+      "29"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "precision": "Relecture des 39 alinéas sur les intersections atypiques, du théorème 1 admis et des preuves des théorèmes 2 à 4 et du rapport. Vérification des domaines sans pôle et du cas constant, du passage aux arguments réduits, des dénominateurs et de l’exposant final. Rétablissement de cinq figures absentes de l’édition brute, avec contrôle des huit figures dans les deux éditions.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "relecture_corrige",
+      "perimetre": "Relecture des 39 alinéas sur les intersections atypiques, du théorème 1 admis et des preuves des théorèmes 2 à 4 et du rapport. Vérification des domaines sans pôle et du cas constant, du passage aux arguments réduits, des dénominateurs et de l’exposant final. Rétablissement de cinq figures absentes de l’édition brute, avec contrôle des huit figures dans les deux éditions.",
+      "sha256_sujet_controle": "15d6cdac46a0d3a89b979340b83e0a42329a270a598a3c9bc78e521944c0c790",
+      "sha256_rapport_controle": "fe58866cccfb397086bdc0b0d4070438caee7979e28c68892cb6e7a58cffcd3a"
+    }
+  }
 }
