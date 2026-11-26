@@ -5,7 +5,12 @@
     "filiere": "Cycle master mathématiques",
     "matiere": "Français et culture générale",
     "annee": 2018,
-    "modalite": "écrit"
+    "modalite": "écrit",
+    "etablissements_sur_garde": [
+      "École Normale Supérieure Paris-Saclay",
+      "École Normale Supérieure de Rennes"
+    ],
+    "code_garde": "2C8123"
   },
   "intitule": "Français et culture générale",
   "questions": 2,
@@ -26,9 +31,15 @@
       "fichier": "figures/bihouix.svg",
       "question": "1",
       "legende": "Les deux limites du progrès technique selon Bihouix"
+    },
+    {
+      "fichier": "figures/usage-et-volume.svg",
+      "question": "2a",
+      "legende": "Dans cet exemple fictif, la baisse par trajet et la hausse du nombre de trajets se combinent.",
+      "provenance": "Schéma original pour cette révision."
     }
   ],
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -53,6 +64,100 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Confrontation au texte et aux deux questions du sujet, double recomptage du résumé et vérification des exemples et du raisonnement."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Vérification du mécanisme de rebond dans le résumé et du caractère exclusif de la promesse dans le choix a. Développement du « sel de la vie » pour le choix b et contrôle de chaque calcul. Collation des feuillets et double décompte du résumé."
     }
-  ]
+  ],
+  "duree_heures": 3,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2018_SE_2C_Maths_Francais.pdf",
+      "sha256": "1eeb5c46e0ae94d100cf90dad314742588beb258db325a417a4e5380c10b3670",
+      "pages": 5,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "69718302c36afc3197d514af155fec2f67e288bd0b037fde996df800f0799a74"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "ad6214f9ecace8ab6e87a7921517549be10374658b48c100f51853b84e496477"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "b7bad49c8b001f52aab5636909ef95c4cd7f1147f108bb62d0358ebb68ddc43f"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "0bfc668bf0a09900e8f77207a6fb608fa4156a0ee52de5e0eb5b30cfa8979ccf"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "c24f70a0b025b47a1ee06befdcb3f72c32126929e38a32380ab157df579e2d08"
+        }
+      ]
+    },
+    "catalogue": {
+      "url": "https://ens-paris-saclay.fr/admission/voie-eleve-concours/concours-cycle-master/annales-2nd-concours?field_orientation_2c_target_id%5B%5D=313&field_year_target_id%5B%5D=277&field_test_2c_target_id%5B%5D=419",
+      "sha256": "c8f74d78b85dd40fec8a6ece679f0ac6a2401753318afbdf6baebb7d2d7296f0",
+      "constat": "Le filtre de la session, de la filière et de la matière ne donne que le sujet de français."
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2a",
+      "2b"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1",
+        "page_pdf": 5,
+        "consigne": "Résumer le texte en 360 mots (avec une marge de tolérance de + ou – 10%). Le nombre exact de mots utilisés sera indiqué en fin de résumé.",
+        "points": 10,
+        "cible_mots": 360,
+        "intervalle": [
+          324,
+          396
+        ],
+        "texte": "Philippe Bihouix, « Le mythe de la technologie salvatrice », Esprit, mars-avril 2017, n° 3, p. 98–106.",
+        "pages_texte": [
+          2,
+          5
+        ]
+      },
+      {
+        "question": "2a",
+        "page_pdf": 5,
+        "consigne": "Sous forme d’un développement construit, commenter, au choix, l’une des deux réflexions suivantes de l’auteur :",
+        "citation": "Pourtant, plus que jamais, nous vivons dans la religion exclusive du « techno-solutionnisme »."
+      },
+      {
+        "question": "2b",
+        "page_pdf": 5,
+        "consigne": "Sous forme d’un développement construit, commenter, au choix, l’une des deux réflexions suivantes de l’auteur :",
+        "citation": "La sobriété …..un exercice délicat, face à des « besoins » humains nourris par la rivalité mimétique et une frontière floue entre « fondamentaux » et superflu, qui fait aussi le sel de la vie."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "choix": "Deux commentaires proposés pour les deux possibilités de la question 2, dont un seul était demandé, sur 10 points.",
+    "annexes_imposees": []
+  }
 }
