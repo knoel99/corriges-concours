@@ -17,7 +17,11 @@
   "sources": {
     "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/17-bel-commentaire-et-traduction-lve_1506586192589_0.pdf#page=4",
     "sujet_sha256": "be2dd53df269e5a7bc4f9f5f2a1836d36ab45404db77ca6cb4d21f19dee44d53",
-    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/ANGLAIS_2017%20.pdf#page=1"
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/ANGLAIS_2017%20.pdf#page=1",
+    "archive_session": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2017",
+    "archive_session_sha256": "37ae6dfd8a95e567381508a1a44e3ef598562ac42aa2c58581a04145ee23460e",
+    "rapport_sha256": "0d5da36ca9d03752344a6069d4d990c72c33b322c685b9111b147d3e385d810c",
+    "rubrique": "Série Lettres et arts, Langues vivantes et Sciences humaines, écrit commun"
   },
   "figures": [
     {
@@ -26,7 +30,7 @@
       "legende": "De la trace visible à la question politique"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -37,6 +41,22 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Commentaire anglais de tout le passage de Sybil de Disraeli et version du début jusqu’à « with a rank vegetation », explication de l’hospitalité monastique, du glissement des voix et du retour des incendies, figure."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Précision de la clivée et des plus-que-parfaits dans la version. Relecture de l’if du cloître, du vent fatigué et de la prise de parole à la fin du commentaire. Contrôle de la rubrique A/L, des pages anglaises du cahier commun, des vingt segments du rapport et des deux éditions."
     }
   ],
   "droits_sources": {
@@ -44,5 +64,37 @@
       "Le passage de Sybil, or The Two Nations (1845), de Benjamin Disraeli, se déroule en 1837. La notice rappelle les incendies de meules et l’origine des biens de la famille Marney. La version porte sur les vestiges de l’abbaye jusqu’à la phrase sur la végétation qui recouvre la nef."
     ],
     "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire",
+      "Version française"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Commentaire",
+        "page_pdf": 4,
+        "page_pdf_fin": 5,
+        "perimetre": "l. 1–57, des vestiges de l’abbaye aux deux hommes dans le cimetière.",
+        "rapport_pages": [
+          1,
+          5
+        ]
+      },
+      {
+        "question": "Version française",
+        "page_pdf": 4,
+        "page_pdf_fin": 4,
+        "perimetre": "l. 1–18, du début « Over a space » à « with a rank vegetation. ». La coupure imprimée après les fenêtres appartient au sujet. Le bétail entre dans la phrase suivante.",
+        "rapport_pages": [
+          5,
+          11
+        ],
+        "segments_du_rapport": 20
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
   }
 }
