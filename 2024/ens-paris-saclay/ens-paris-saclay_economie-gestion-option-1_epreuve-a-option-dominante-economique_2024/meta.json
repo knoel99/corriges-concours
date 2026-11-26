@@ -1,0 +1,70 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_epreuve-a-option-dominante-economique_2024",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Épreuve à option — dominante économique",
+    "annee": 2024,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "L’indépendance stratégique est-elle un levier de croissance économique ou une contrainte ?",
+  "gabarit": "dissertation",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2024_Epreuve_a_option_EcoG1.pdf#page=2",
+    "index": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=289&field_year_target_id%5B%5D=589&page=1",
+    "pages_sujet": "2",
+    "sujet_sha256": "1c6c65743399beb3787a4331f1a2429596cea389fe3997a2e697822dca33efbb",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2024_Epreuve_a_option_EcoG1.pdf",
+        "pages": 9,
+        "sha256": "1c6c65743399beb3787a4331f1a2429596cea389fe3997a2e697822dca33efbb"
+      },
+      {
+        "role": "rapport-eco",
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2024_Rapport_Eco_Gestion1_Option_economie_ECRIT.pdf",
+        "pages": 3,
+        "sha256": "7def015a146653360f13f4fbf19c4419a721ddff37c9ab5e2711b0ca837c3347"
+      }
+    ],
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2024_Rapport_Eco_Gestion1_Option_economie_ECRIT.pdf",
+    "rapport_sha256": "7def015a146653360f13f4fbf19c4419a721ddff37c9ab5e2711b0ca837c3347"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/comparaison.svg",
+      "question": "Dissertation",
+      "legende": "Une perte de 100 est pondérée par son risque. Avec deux sources, les 6 unités comprennent 4 de coût certain et 2 de perte attendue."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "inventaire_livraisons_26",
+      "agent": "inventaire_livraisons_26",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Dissertation d’histoire économique sur les coûts de souveraineté, l’exposition aux ruptures, les économies d’échelle et la sécurité d’approvisionnement ; illustration chiffrée d’assurance."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "limites": "La page 2 contient la dissertation. Les annexes de la Confiturerie du Ventoux appartiennent à la gestion. Le rapport du jury demande de considérer la sécurité des États, l’intégration impériale, les alliances et les dépendances énergétiques. Les probabilités et les montants du calcul sont fictifs."
+  }
+}
