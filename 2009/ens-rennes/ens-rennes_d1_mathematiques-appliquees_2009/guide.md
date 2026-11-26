@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Trois exercices traitent du conditionnement, d’un ajustement exponentiel et de calculs d’analyse et d’algèbre. Les deux questions imprimées « d » de la régression sont distinguées par leur objet.
 
 ## Exercice 1. Probabilités
@@ -47,7 +49,17 @@ $V(X)=5(1/3)(2/3)=10/9$, donc $\sigma_X=\sqrt{10}/3\simeq1{,}054$ réponse.
 ### Question 1.II
 
 > [!INDICATION]
-> Reconstituer la probabilité de maladie avant de changer de groupe.
+> Essayer de remplir un tableau de 48 personnes. Le quart est vacciné, puis un douzième des vaccinés est malade. Utiliser pour finir le rapport entre malades vaccinés et non vaccinés.
+
+Une population fictive de 48 personnes permet de lire les deux conditionnements sans changer implicitement de dénominateur.
+
+| État | Vaccinées | Non vaccinées | Total |
+|---|---:|---:|---:|
+| Malades | 1 | 4 | 5 |
+| Non malades | 11 | 32 | 43 |
+| Total | 12 | 36 | 48 |
+
+Parmi les cinq malades, une personne est vaccinée. Parmi les 36 personnes non vaccinées, quatre sont malades, ce qui redonne $4/36$.
 
 #### Solution
 
@@ -79,6 +91,11 @@ Pour $x\to+\infty$, $f(x)=13e^{-0{,}225x}\to0$. La demi-droite $y=0$ est asympto
 
 > [!INDICATION]
 > Vérifier le signe de la dérivée sur le domaine du modèle.
+
+| $x$ | $0$ | $0<x<+\infty$ | $+\infty$ |
+|---|---:|:---:|---:|
+| Signe de $f'(x)$ | $-$ | $-$ | |
+| $f(x)$ | $13$ | $\searrow$ | $0$ (limite) |
 
 #### Solution
 
@@ -327,6 +344,8 @@ Par exemple, le premier coefficient de $AB$ vaut $1\cdot3+0\cdot0+2(-1)=1$.
 
 > [!INDICATION]
 > Résoudre le système linéaire de second membre quelconque.
+
+Pour contrôler le dernier coefficient, la troisième colonne de l’inverse est $(-1/6,1/3,-7/6)^\top$. Multipliée à gauche par $M$, elle donne $(0,0,1)^\top$ : les trois produits sont $-4/6+2/3$, $-3/6+5/3-7/6$ et $-2/6+4/3$.
 
 #### Solution
 

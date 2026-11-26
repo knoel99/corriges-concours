@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Trois exercices traitent du conditionnement, d’un ajustement exponentiel et de calculs d’analyse et d’algèbre. Les deux questions imprimées « d » de la régression sont distinguées par leur objet.
 
 ## Exercice 1. Probabilités
@@ -28,6 +30,16 @@ $V(X)=5(1/3)(2/3)=10/9$, donc $\sigma_X=\sqrt{10}/3\simeq1{,}054$ réponse.
 
 Notons $V$ le statut vacciné et $M$ la maladie. Le texte donne $P(V)=1/4$, $P(V\mid M)=1/5$ et $P(M\mid V)=1/12$. Ainsi $P(M\cap V)=1/48$ et $P(M)=5/48$. La probabilité cherchée est $P(M\mid V^c)=(5/48-1/48)/(3/4)=1/9$.
 
+Une population fictive de 48 personnes permet de lire les deux conditionnements sans changer implicitement de dénominateur.
+
+| État | Vaccinées | Non vaccinées | Total |
+|---|---:|---:|---:|
+| Malades | 1 | 4 | 5 |
+| Non malades | 11 | 32 | 43 |
+| Total | 12 | 36 | 48 |
+
+Parmi les cinq malades, une personne est vaccinée. Parmi les 36 personnes non vaccinées, quatre sont malades, ce qui redonne $4/36$.
+
 ### Question 1.III
 
 En supposant les sexes des deux enfants indépendants et équiprobables, les configurations ordonnées $FF,FG,GF,GG$ ont chacune probabilité $1/4$. Si l’enfant accompagnant est choisi uniformément entre les deux, la probabilité d’observer une fille dans ces configurations vaut successivement $1,1/2,1/2,0$. L’événement $A$ de la rencontre a donc probabilité $1/2$. Se tromper revient à être dans $FF$, d’où $P(FF\mid A)=(1/4)/(1/2)=1/2$.
@@ -43,6 +55,11 @@ Pour $x\to+\infty$, $f(x)=13e^{-0{,}225x}\to0$. La demi-droite $y=0$ est asympto
 ### Question 2.I.2
 
 $f'(x)=-2{,}925e^{-0{,}225x}<0$. Sur $[0,+\infty[$, $f$ décroît strictement de $f(0)=13$ vers sa limite 0.
+
+| $x$ | $0$ | $0<x<+\infty$ | $+\infty$ |
+|---|---:|:---:|---:|
+| Signe de $f'(x)$ | $-$ | $-$ | |
+| $f(x)$ | $13$ | $\searrow$ | $0$ (limite) |
 
 ### Question 2.I.3
 
@@ -162,3 +179,5 @@ Par exemple, le premier coefficient de $AB$ vaut $1\cdot3+0\cdot0+2(-1)=1$.
 
 En notant $M$ la matrice donnée, résolvons $M(x,y,z)^\top=(u,v,w)^\top$. La première et la troisième lignes donnent $x=u/3-w/6$, $y=-u/6+w/3$. En les substituant dans la deuxième, $z=-u/6+v-7w/6$. La solution est unique pour tout second membre, donc
 $$M^{-1}=\begin{pmatrix}1/3&0&-1/6\\-1/6&0&1/3\\-1/6&1&-7/6\end{pmatrix}.$$
+
+Pour contrôler le dernier coefficient, la troisième colonne de l’inverse est $(-1/6,1/3,-7/6)^\top$. Multipliée à gauche par $M$, elle donne $(0,0,1)^\top$ : les trois produits sont $-4/6+2/3$, $-3/6+5/3-7/6$ et $-2/6+4/3$.
