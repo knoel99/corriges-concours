@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Les trois exercices portent sur les statistiques judiciaires, les aires sous une famille de courbes et les probabilités dans la fabrication de savons. Le dernier calcul distingue les moments de la durée de ceux de son logarithme.
 
 ## Exercice 1. Condamnations et victimes déclarées
@@ -78,9 +80,14 @@ Les polynômes sont dérivables et $1+n^2x^2>0$. Ainsi $f_n'(x)=n(1-n^2x^2)/(1+n
 
 La fonction décroît de sa limite $0$ à la valeur $-1/2$ en $-1/n$, croît ensuite jusqu’à $1/2$ en $1/n$, puis décroît vers $0$. Ces variations sont strictes entre les points critiques.
 
+| Position | $-\infty$ | $-1/n$ | $1/n$ | $+\infty$ |
+|---|:---:|:---:|:---:|:---:|
+| $f_n$ | $0$ par valeurs négatives | $-1/2$ | $1/2$ | $0$ par valeurs positives |
+| Variation vers la colonne suivante | décroît | croît | décroît | |
+
 ### Question 2.I.4
 
-Le maximum global vaut $f_n(1/n)=1/2$ et n’est atteint qu’en $x=1/n$ sur le domaine réel de définition.
+Le maximum global vaut $f_n(1/n)=1/2$ et n’est atteint qu’en $x=1/n$ sur le domaine réel de définition. Le cahier désigne ce domaine par $E_n$ à cette question. Le dénominateur $1+n^2x^2$ est strictement positif en tout réel, donc $E_n=\mathbb R$ pour la fonction étudiée. On peut aussi vérifier directement la borne par $(nx-1)^2\ge0$, d’où $2nx\le1+n^2x^2$ avec égalité seulement pour $nx=1$.
 
 ### Question 2.I.5
 
@@ -164,6 +171,8 @@ Avec $G=40-70\mathbf1_{\{Y\ge3\}}$, l’espérance vaut $40-70p\simeq-0{,}3767$ 
 
 Le gain moyen par carton est négatif. Sur le seul critère financier donné, l’usine a intérêt à renégocier les conditions ou à ne pas poursuivre ce contrat en l’état.
 
+Le seuil de rentabilité correspond à $40-70p=0$, soit $p=4/7\simeq0{,}5714$. La valeur obtenue, $p\simeq0{,}5768$, dépasse ce seuil de près de 0,54 point de pourcentage. Le signe de l’espérance dépend donc d’un écart assez faible et se calcule avec la probabilité avant arrondi.
+
 ### Question 3.III.1
 
 Les données donnent $P(D)=0{,}0100$, $P(R\mid D)=0{,}8000$ et $P(R\mid\overline D)=0{,}0300$.
@@ -197,3 +206,5 @@ La conformité a probabilité $P(-1\le Z\le1)=2\Phi(1)-1\simeq0{,}6827$.
 L’énoncé donne $\mathbb E(T)=4$ et $V(T)=4$. Pour $\ln T\sim\mathcal N(\mu,\sigma^2)$, on en déduit $\sigma^2=\ln(1+4/4^2)=\ln(5/4)$ et $\mu=\ln4-\sigma^2/2$. Ainsi
 $$P(T<20)=\Phi\!\left(\frac{\ln20-\mu}{\sigma}\right)\simeq0{,}9999.$$
 Si les nombres $4$ et $2$ désignaient les paramètres de la normale $\ln T$, on trouverait $\Phi((\ln20-4)/2)\simeq0{,}3078$. Cette convention décrit une durée dont les moments diffèrent de ceux attribués à $T$ dans le texte.
+
+Pour retrouver les paramètres, écrire $\mathbb E(T)=\exp(\mu+\sigma^2/2)$ et $\mathbb E(T^2)=\exp(2\mu+2\sigma^2)$. Leur rapport $\mathbb E(T^2)/\mathbb E(T)^2=1+V(T)/\mathbb E(T)^2$ vaut $5/4=e^{\sigma^2}$. Avec les moments indiqués, $\sigma\simeq0{,}4724$, $\mu\simeq1{,}2747$ et le seuil centré réduit est environ $3{,}64$.
