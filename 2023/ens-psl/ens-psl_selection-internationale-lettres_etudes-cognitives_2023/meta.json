@@ -1,0 +1,83 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_etudes-cognitives_2023",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Études cognitives",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "intitule": "Inférences illusoires et alternatives dans des circuits de vannes",
+  "gabarit": "questions",
+  "questions": 7,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/cogsci-ecrit-sil2023.pdf",
+    "sujet_sha256": "4eb210bcf2afcdbac6072d7c1744d7e6e624733a451641ad2c3a146eede53fe9",
+    "pages": 2,
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_sil_dec_2022-2023.pdf",
+    "rapport_sha256": "59772278d46b92f6fc87c8e7ec7177b79bde8b669ad2d14d3443b289fee3ef62",
+    "annexes": [
+      {
+        "titre": "Chung, Bade, Blanc-Cuenca et Mascarenhas (2022)",
+        "url": "https://escholarship.org/content/qt9711612q/qt9711612q.pdf",
+        "sha256": "7cf96787a0deb0bb590d46e7d34790ac46aadb4ce23ce5e477b556e73b96c930",
+        "pages": 8
+      }
+    ]
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1. Une erreur de déduction peut-elle être induite visuellement ?",
+      "2. Les hypothèses et les prédictions",
+      "3. Le protocole",
+      "4. L’intérêt du paradigme visuel",
+      "5. Les contrôles et leur objet",
+      "6. Les résultats et leur portée",
+      "7. Les limites"
+    ],
+    "precision": "Les sept questions figurent au feuillet écrit. Les deux montages, les contrôles et les comparaisons statistiques sont confrontés à l’article."
+  },
+  "figures": [
+    {
+      "fichier": "figures/vannes-et-contre-exemple.svg",
+      "legende": "Deux agencements de vannes pour un même contre-exemple logique",
+      "question": "Questions 1 à 5"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "cognition_selection_2023",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": false,
+      "perimetre": "Rapport DEC 2022–2023 p. 1. Vérification de la durée, du support, des attentes et du périmètre personnel de l’entretien de motivation."
+    },
+    {
+      "phase": "redaction",
+      "session": "cognition_selection_2023",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Collation du feuillet bilingue et de l’article distribué. Rédaction et contrôle des deux éditions et du schéma. Les sept questions figurent au feuillet écrit. Les deux montages, les contrôles et les comparaisons statistiques sont confrontés à l’article."
+    }
+  ]
+}
