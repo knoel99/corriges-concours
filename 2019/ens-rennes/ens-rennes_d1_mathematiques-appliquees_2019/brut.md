@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Épreuve de quatre heures, pages physiques 3 à 9 du fascicule d’options. Le rapport de jury souligne l’intérêt de justifier les encadrements, les régressions et les probabilités conditionnelles. Les numéros suivent les trois exercices imprimés.
 
 ## Exercice 1. Âges en France et indice des ventes
@@ -101,6 +103,20 @@ Pour $f_n=e^{nx}/[n(e^x-1)]$, la règle du quotient donne $f_n'(x)=e^{nx}[n(e^x-
 
 La dérivée a le signe de 2.I.2. Sur $(0,+\infty)$, $f_1$ décroît strictement de $+\infty$ vers $1$. Pour $n\ge2$, $f_n$ décroît de $+\infty$ à $f_n(a_n)$ sur $(0,a_n]$, puis croît de cette valeur vers $+\infty$ sur $[a_n,+\infty)$.
 
+Pour $n=1$,
+
+| $x$ | $0^+$ | $(0,+\infty)$ | $+\infty$ |
+|---|---|---|---|
+| $f'_1(x)$ | | $-$ | |
+| $f_1(x)$ | $+\infty$ | $\searrow$ | $1$ |
+
+Pour $n\ge2$,
+
+| $x$ | $0^+$ | $(0,a_n)$ | $a_n$ | $(a_n,+\infty)$ | $+\infty$ |
+|---|---|---|---|---|---|
+| $f'_n(x)$ | | $-$ | $0$ | $+$ | |
+| $f_n(x)$ | $+\infty$ | $\searrow$ | $f_n(a_n)$ | $\nearrow$ | $+\infty$ |
+
 ### Question 2.I.5
 
 Pour $n\ge2$, $f_n$ admet son unique minimum global en $x=a_n$, point où sa dérivée passe du signe négatif au signe positif.
@@ -120,6 +136,10 @@ $f_n(a_{n+1})=f_{n+1}(a_{n+1})=((n+1)/n)^n$ par 2.I.6–7.
 ### Question 2.I.9
 
 $f_n'/f_n=n-e^x/(e^x-1)$. En $a_{n+1}$, $e^x=(n+1)/n$, donc le quotient vaut $n-(n+1)=-1$. Ainsi $f_n'(a_{n+1})=-((n+1)/n)^n$. Le facteur supplémentaire $1/n$ figurant dans la question n’est pas compatible avec la dérivée de 2.I.3. Pour $n=2$ la pente est $-9/4$.
+
+On peut tester l’égalité directement à partir de $f_2(x)=e^{2x}/[2(e^x-1)]$. En $x=\ln(3/2)$, la formule du quotient donne
+$$f'_2(x)=\frac{(3/2)^2[(3/2)-2]}{2[(3/2)-1]^2}=-\frac94.$$
+La formule imprimée donnerait $-9/8$ en ce point. La tangente à $C_2$ de la question suivante utilise donc la pente $-9/4$.
 
 ### Question 2.I.10
 
@@ -180,6 +200,8 @@ $P(B\mid G)=P(B\cap G)/P(G)=(1/12)/(1/6)=1/2$.
 ### Question 3.I.7
 
 Les deux espèces sont équiprobables parmi les ventes : le tarif antérieur moyen est $(7+1)/2=4$ euros par gros poisson. Trois euros représentent une perte moyenne de un euro par vente, soit $1/6$ euro par journée de pêche. Le marché diminue la recette espérée ; il supprime toutefois l’incertitude sur le tarif d’une prise vendable.
+
+Pour comparer les recettes sur une même base, l’ancien tarif rapportait par jour $7P(B\cap G)+P(A\cap G)=8/12$ euro. Avec le prix unique, l’espérance quotidienne tombe à $3P(G)=1/2$ euro. Leur différence est bien $1/6$ euro par jour.
 
 ### Question 3.I.8
 
