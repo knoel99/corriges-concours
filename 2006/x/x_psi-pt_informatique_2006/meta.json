@@ -42,5 +42,49 @@
       "modifications": true,
       "perimetre": "Rédaction des onze questions, avec invariant du solde, traitement des paramètres modifiables, preuve des sauts de masques et des complexités. Vérification exhaustive des sorties pour les tableaux triés de taille 1 à 7 à valeurs entre 1 et 5, et l’ensemble de leurs objectifs atteignables. Trois illustrations originales."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "pages_des_questions": {
+      "1": 1,
+      "2": 1,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 2,
+      "7": 2,
+      "8": 2,
+      "9": 3,
+      "10": 3,
+      "11": 3
+    },
+    "precision": "Les 11 rubriques de chaque édition concordent avec les questions du fac-similé. Les deux séries de réponses ont été retrouvées au commit du journal indiqué.",
+    "origine_attestation": {
+      "commit_du_journal": "dfd1e594160134c484b1ff2c7a764f33a7882847",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction des onze questions, avec invariant du solde, traitement des paramètres modifiables, preuve des sauts de masques et des complexités. Vérification exhaustive des sorties pour les tableaux triés de taille 1 à 7 à valeurs entre 1 et 5, et l’ensemble de leurs objectifs atteignables. Trois illustrations originales.",
+      "sha256_sujet_controle": "e3cc917e2dd192f76dbad70adcc894d964ba3c9d4668e87d5eb57e39e4a72e39"
+    },
+    "controle_fonctions": {
+      "fonctions": [
+        "somme",
+        "estReussie"
+      ],
+      "cas_par_edition": 127
+    }
+  }
 }

@@ -42,5 +42,50 @@
       "modifications": true,
       "perimetre": "Rédaction des douze questions. Lecture du fac-similé paginé et de ses figures. Contrôle de 2 186 combinaisons paysage/marge, test des liaisons dans les deux sens et confrontation de la programmation dynamique et de la reconstruction à l’énumération des placements. Trois figures originales."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "pages_des_questions": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 3,
+      "6": 4,
+      "7": 4,
+      "8": 5,
+      "9": 5,
+      "10": 5,
+      "11": 5,
+      "12": 5
+    },
+    "precision": "Les 12 rubriques de chaque édition concordent avec les questions du fac-similé. Les deux séries de réponses ont été retrouvées au commit du journal indiqué. La numérotation et les pages ont été relevées par reconnaissance des caractères sur le fac-similé.",
+    "origine_attestation": {
+      "commit_du_journal": "f0a46ce470990c2a8de03002efc67d2f6baba4e6",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction des douze questions. Lecture du fac-similé paginé et de ses figures. Contrôle de 2 186 combinaisons paysage/marge, test des liaisons dans les deux sens et confrontation de la programmation dynamique et de la reconstruction à l’énumération des placements. Trois figures originales.",
+      "sha256_sujet_controle": "2b6057b5bda1eacd9dd7426977b71d2def654f830b02ef2d7989b3f47d5ee2f2"
+    },
+    "controle_fonctions": {
+      "fonctions": [
+        "calculHauteurs"
+      ],
+      "cas_par_edition": 364
+    }
+  }
 }

@@ -44,5 +44,46 @@
       "modifications": true,
       "perimetre": "Rédaction des neuf questions, après lecture du sujet p. 1 à 4 et du rapport de Marc Pouzet p. 5 à 8. Division polynomiale, version à registre circulaire, vérification sur tous les petits mots et générateurs de degré au plus sept. Vérification de la discordance entre les quatre zéros du texte et les cinq nécessaires pour le circuit dessiné. Trois illustrations originales."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "pages_des_questions": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 3,
+      "6": 3,
+      "7": 4,
+      "8": 4,
+      "9": 4
+    },
+    "precision": "Les 9 rubriques de chaque édition concordent avec les questions du fac-similé. Les deux séries de réponses ont été retrouvées au commit du journal indiqué. Le sujet occupe les pages 1 à 4. Le rapport qui suit a été distingué de la numérotation du sujet.",
+    "origine_attestation": {
+      "commit_du_journal": "6fce569ca0deae7b95ff1ec0d1857f5850fad8a2",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction des neuf questions, après lecture du sujet p. 1 à 4 et du rapport de Marc Pouzet p. 5 à 8. Division polynomiale, version à registre circulaire, vérification sur tous les petits mots et générateurs de degré au plus sept. Vérification de la discordance entre les quatre zéros du texte et les cinq nécessaires pour le circuit dessiné. Trois illustrations originales.",
+      "sha256_sujet_controle": "14d4de0bac00798034a8ad8b4ce22704750ae0015416cfafd567cd3a3ba94fdb"
+    },
+    "controle_fonctions": {
+      "fonctions": [
+        "ou_exclusif",
+        "bit_parite",
+        "degre"
+      ],
+      "cas_par_edition": 127
+    }
+  }
 }

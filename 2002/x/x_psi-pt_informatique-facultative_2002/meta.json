@@ -44,5 +44,38 @@
       "modifications": true,
       "perimetre": "Rédaction des six questions avec lecture du sujet scanné p. 1–2 et du rapport de Marc Pouzet p. 3–6. Vérification exhaustive sur 9 840 séries à trois énergies et de longueur 1 à 8, contrôle des cas constants, des ex æquo et de la conservation des dates. Trois illustrations originales."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "pages_des_questions": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 2,
+      "5": 2,
+      "6": 2
+    },
+    "precision": "Les 6 rubriques de chaque édition concordent avec les questions du fac-similé. Les deux séries de réponses ont été retrouvées au commit du journal indiqué. Le sujet occupe les pages 1 à 2. Le rapport qui suit a été distingué de la numérotation du sujet. La numérotation et les pages ont été relevées par reconnaissance des caractères sur le fac-similé.",
+    "origine_attestation": {
+      "commit_du_journal": "5d4025352a8bbe8c022e43472992f6f6715c7d4c",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction des six questions avec lecture du sujet scanné p. 1–2 et du rapport de Marc Pouzet p. 3–6. Vérification exhaustive sur 9 840 séries à trois énergies et de longueur 1 à 8, contrôle des cas constants, des ex æquo et de la conservation des dates. Trois illustrations originales.",
+      "sha256_sujet_controle": "fb1334305ceae6099114206ac48672e738d52d6da4af9fab229b4bba16524552"
+    },
+    "controle_fonctions": {
+      "fonctions": [
+        "compte"
+      ],
+      "cas_par_edition": 127
+    }
+  }
 }

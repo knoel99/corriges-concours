@@ -42,5 +42,52 @@
       "modifications": true,
       "perimetre": "Rédaction des treize questions, y compris la construction du tournoi de la question 8, le contrôle de tous les 1 024 oracles à cinq joueurs contre une énumération exhaustive des tableaux et l’énumération indépendante des 32 scénarios probabilistes des cinq matchs imprimés. Trois illustrations originales."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "pages_des_questions": {
+      "1": 3,
+      "2": 3,
+      "3": 3,
+      "4": 3,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 4,
+      "9": 5,
+      "10": 5,
+      "11": 5,
+      "12": 5,
+      "13": 6
+    },
+    "precision": "Les 13 rubriques de chaque édition concordent avec les questions du fac-similé. Les deux séries de réponses ont été retrouvées au commit du journal indiqué. La numérotation et les pages ont été relevées par reconnaissance des caractères sur le fac-similé.",
+    "origine_attestation": {
+      "commit_du_journal": "5c3694a337e1ad3fe67aef769521ec7c3df61955",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction des treize questions, y compris la construction du tournoi de la question 8, le contrôle de tous les 1 024 oracles à cinq joueurs contre une énumération exhaustive des tableaux et l’énumération indépendante des 32 scénarios probabilistes des cinq matchs imprimés. Trois illustrations originales.",
+      "sha256_sujet_controle": "a10d4f098ed6bc55787f65678702515daf2b6ccc770bc3c0655f86c6eda93b0e"
+    },
+    "controle_fonctions": {
+      "fonctions": [
+        "EstUnTournoi"
+      ],
+      "cas_par_edition": 4
+    }
+  }
 }
