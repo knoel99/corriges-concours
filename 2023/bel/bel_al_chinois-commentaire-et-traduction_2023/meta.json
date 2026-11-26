@@ -1,0 +1,157 @@
+{
+  "slug": "bel_al_chinois-commentaire-et-traduction_2023",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Chinois (commentaire et traduction)",
+    "annee": 2023,
+    "modalite": "écrit commun"
+  },
+  "questions": 2,
+  "duree_heures": 6,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2023-09/Commentaire-d-un-texte-en-LVE.pdf#page=8",
+    "sujet_sha256": "465bc18f65e3127c7bcf5720f6042d95180133384f245e34fd7b38acd0ffb760",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2023-11/Chinois-2023.pdf#page=2",
+    "rapport_jury_sha256": "4fc13b722a5e3c52a25ec87d2aa98e0d19d46ecc4122c8ee3658a89d012042e2",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2023",
+    "ouvrage": "Ding Ling 丁玲, « Nuit » (夜, 1941).",
+    "provenance": "",
+    "rubriques_rapport": {
+      "commentaire": [
+        2,
+        3,
+        4
+      ],
+      "version": [
+        2,
+        3
+      ]
+    }
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2023-09/Commentaire-d-un-texte-en-LVE.pdf#page=8",
+      "sha256": "465bc18f65e3127c7bcf5720f6042d95180133384f245e34fd7b38acd0ffb760",
+      "pages": 24,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "2d00da9d0f1f2cdf2b38a83f2d4c6e4c708adc481caee234bd08becf5b5b22e7"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "07bf7c7ea1e09c9e01b35c439fb384e78325e16ca6969efdf51845f93bfb66ff"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "889416c03c1f775bbc8ff88f7b0a489a9fab51dac0452f1cbe27841047deee3c"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "61cb22a2c7f4683312594ae9eba95ccbefea9f70709a0b966d69d9f4c6b2242f"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2023-11/Chinois-2023.pdf#page=2",
+      "sha256": "4fc13b722a5e3c52a25ec87d2aa98e0d19d46ecc4122c8ee3658a89d012042e2",
+      "pages": 8,
+      "pages_verifiees": [
+        {
+          "numero": 2,
+          "rendu_sha256": "eb6de431f93eafb444c6204905954211ca4f9f3ad5de5889414decea35f69370"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "ed6c27adb4480e4741ed820d08e888004d00efe1bffced8f21f35c353ace0cc0"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "b6cdd2c6ab99a2cc5556d033d4ddbb6e84fbcd9f2b668cd3be792d2761f4ada7"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "Commentaire",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "Le regard de la jeune femme passe à He Huaming. Sa voix publique et celle qu’il entend en privé répondent à des attentes différentes."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire composé en chinois sur l’extrait intégral, version française originale aux bornes imprimées, indications et schéma."
+    },
+    {
+      "phase": "revision",
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture de la chronologie de 1941 et de la focalisation. Relecture de la version avec les emplois de 同, les directionnels 拉开去 et 拉出来, la montée vers les champs et l’appel du bœuf."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Ding Ling 丁玲, « Nuit » (夜, 1941)."
+    ],
+    "note": "Le commentaire et la version pédagogique sont originaux. Les droits sur les œuvres étudiées appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire",
+      "Version"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Commentaire",
+        "pages_pdf": [
+          8,
+          9
+        ],
+        "page_pdf": 8,
+        "ligne_debut": 1,
+        "ligne_fin": 25
+      },
+      {
+        "question": "Version",
+        "page_pdf": 9,
+        "pages_pdf": [
+          9
+        ],
+        "ligne_debut": 18,
+        "ligne_fin": 25,
+        "debut": "其实每当他看见",
+        "fin": "同他的生命不能分离开来的"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}
