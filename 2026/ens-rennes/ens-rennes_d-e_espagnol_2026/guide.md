@@ -4,11 +4,15 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 Les pages imprimées 7 à 9 réunissent deux traductions et une expression écrite sur un troisième texte. Chaque réponse d’expression doit compter de 225 à 275 mots. Le nombre indiqué après chaque réponse exclut son titre.
 
-[Fascicule officiel, pages imprimées 7 à 9](https://www.ens-rennes.fr/medias/fichier/sujet-lve-d-e-2026_1790867583165-pdf#page=8) · [Rapport écrit de espagnol](https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-espagnol-e-crit-2026_1793640885461-pdf)
+[Fascicule officiel, pages imprimées 7 à 9](https://www.ens-rennes.fr/medias/fichier/sujet-lve-d-e-2026_1790867583165-pdf#page=8) · [Rapport écrit d’espagnol](https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-espagnol-e-crit-2026_1793640885461-pdf)
+
+**Repère du fascicule.** Dans l’article de Solozábal, distinguer le niveau où se déploie la coofficialité, celui de la communauté autonome, de l’attitude respectueuse que les autorités centrales peuvent adopter envers ses langues. Cette distinction commande le dernier paragraphe de l’auteur.
 
 ## I. Version française
 

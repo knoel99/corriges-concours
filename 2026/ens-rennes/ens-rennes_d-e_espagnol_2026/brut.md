@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## I. Version française
 
 *Daniel Domínguez, El País, 16 juillet 2025.*
@@ -46,4 +48,4 @@ Finalmente, el debate cambia de significado según el lugar donde se produzca. E
 
 ![Figure 1 — La coofficialité selon Solozábal](figures/lecture.svg)
 
-[Fascicule officiel, pages imprimées 7 à 9](https://www.ens-rennes.fr/medias/fichier/sujet-lve-d-e-2026_1790867583165-pdf#page=8) · [Rapport écrit de espagnol](https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-espagnol-e-crit-2026_1793640885461-pdf)
+[Fascicule officiel, pages imprimées 7 à 9](https://www.ens-rennes.fr/medias/fichier/sujet-lve-d-e-2026_1790867583165-pdf#page=8) · [Rapport écrit d’espagnol](https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-espagnol-e-crit-2026_1793640885461-pdf)
