@@ -31,6 +31,51 @@
       "perimetre": "Rédaction intégrale des deux éditions après lecture des quatre pages scannées. Contrôle des facteurs et des signes de la formule matricielle, construction pour tout couple de normes, sauts dénombrables et exemple dense. Figure des intervalles de saut disjoints.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "x_maths_b_anciennes",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Confrontation des 21 rubriques des deux éditions aux 4 pages du sujet. Surjectivité précisée en petite dimension, signe du commutateur contrôlé par un exemple nilpotent, hauteur exacte des sauts et figure vérifiées."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4.a",
+      "1.4.b",
+      "1.4.c",
+      "1.5",
+      "1.6",
+      "1.7",
+      "1.8",
+      "1.9",
+      "1.10",
+      "1.11",
+      "1.12",
+      "1.13",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6"
+    ],
+    "precision": "Confrontation des 21 rubriques des deux éditions aux 4 pages du sujet. Surjectivité précisée en petite dimension, signe du commutateur contrôlé par un exemple nilpotent, hauteur exacte des sauts et figure vérifiées.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "e4d73739ab97aa69058956277b7d6923a09522c87ea530096f68409230e5cb90",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Confrontation des 21 rubriques des deux éditions aux 4 pages du sujet. Surjectivité précisée en petite dimension, signe du commutateur contrôlé par un exemple nilpotent, hauteur exacte des sauts et figure vérifiées.",
+      "commit_redaction_anterieure": "63e43de0ac55c6ca633216276f66814db99622d1"
+    }
+  }
 }

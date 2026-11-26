@@ -2,7 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 Le cahier de trois heures comporte deux exercices indépendants. Le premier établit une formule exacte pour l’exponentielle de deux matrices dont le commutateur commute avec chacune. Le second caractérise les ensembles de sauts des fonctions croissantes.
 
@@ -31,6 +33,8 @@ Pour $A,B$ symétriques on a $(AB)^T=BA$. L’invariance de la norme par transpo
 ### Question 1.4.c
 
 Fixons $(u,v)\in\mathbb R_+^2$. Dans la base canonique prenons $A=E_{12}$ et $B=\operatorname{diag}(v,u,0,\dots,0)$. Alors $AB=uE_{12}$ et $BA=vE_{12}$. Or $\|E_{12}\|=1$ puisque $E_{12}x=x_2e_1$, l’égalité étant atteinte en $e_2$. Le couple de normes vaut exactement $(u,v)$, même si l’une de ces valeurs est nulle.
+
+La construction utilise seulement deux coordonnées. En dimension un, l’image se réduit à la diagonale $\{(s,s):s\ge0\}$ puisque les matrices scalaires commutent.
 
 ## Exercice 1. Exponentielle et formule de Baker–Campbell–Hausdorff
 
@@ -70,6 +74,8 @@ Posons $D=[A,B]$. La dérivée de $e^{-t^2D/2}W(t)$ est nulle par 1.11 et la val
 
 Dans $M_3(\mathbb R)$, $A=E_{12}$ et $B=E_{23}$ vérifient $AB=E_{13}$ et $BA=0$. Or $E_{13}$ a un produit nul à gauche et à droite avec chacune de ces deux matrices. Le commutateur $E_{13}\ne0$ commute donc avec les deux.
 
+Cet exemple permet aussi de vérifier le signe de 1.12. Ici $(A+B)^2=E_{13}$ et $(A+B)^3=0$, donc $e^{A+B}=I+A+B+E_{13}/2$. Le produit $e^Ae^B=I+A+B+E_{13}$ doit bien être corrigé par le facteur $e^{[B,A]/2}=I-E_{13}/2$.
+
 ## Exercice 2. Discontinuités des fonctions croissantes
 
 ### Question 2.1
@@ -97,3 +103,6 @@ Pour une liste $x_1,\ldots,x_m$, prenons $f(x)=\sum_{j=1}^m\mathbf1_{[x_j,+\inft
 ### Question 2.6
 
 La série prescrite $f(x)=\sum_{n\ge0}2^{-n}\mathbf1_{[x_n,+\infty)}(x)$ converge uniformément par comparaison à $\sum_{n\ge0}2^{-n}=2$. Sa somme est croissante. Si $x=x_j$, alors pour tout $y<x$ on a $f(x)-f(y)\ge2^{-j}$ puisque chaque terme contribue positivement à la différence. Le saut à gauche est donc strict. Si $x$ diffère de tous les $x_n$, chaque somme partielle est continue en $x$ car elle y est localement constante. Leur limite uniforme est continue en $x$. Ces deux arguments valent aussi pour les répétitions et pour les suites denses dans $I$.
+
+Plus précisément, la convergence uniforme autorise le passage aux limites unilatérales terme à terme et donne $f(x+)-f(x-)=\sum_{\{n:x_n=x\}}2^{-n}$. La série compte donc exactement tous les indices qui désignent le même point.
+
