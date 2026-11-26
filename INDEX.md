@@ -2,6 +2,9 @@
 
 | Année | Concours | Filière | Épreuve | Brut | Guidé |
 |---|---|---|---|---|---|
+| 2018 | Banque PT | PT | Informatique et modélisation | [md](2018/banque-pt/banque-pt_pt_informatique-et-modelisation_2018/brut.md) | [md](2018/banque-pt/banque-pt_pt_informatique-et-modelisation_2018/guide.md) |
+| 2021 | Banque PT | PT | Informatique et modélisation | [md](2021/banque-pt/banque-pt_pt_informatique-et-modelisation_2021/brut.md) | [md](2021/banque-pt/banque-pt_pt_informatique-et-modelisation_2021/guide.md) |
+| 2024 | Banque PT | PT | Informatique et modélisation | [md](2024/banque-pt/banque-pt_pt_informatique-et-modelisation_2024/brut.md) | [md](2024/banque-pt/banque-pt_pt_informatique-et-modelisation_2024/guide.md) |
 | 2020 | Banque PT | PT | Langue vivante A | [md](2020/banque-pt/banque-pt_pt_langue-vivante-a_2020/brut.md) | [md](2020/banque-pt/banque-pt_pt_langue-vivante-a_2020/guide.md) |
 | 2021 | Banque PT | PT | Langue vivante A | [md](2021/banque-pt/banque-pt_pt_langue-vivante-a_2021/brut.md) | [md](2021/banque-pt/banque-pt_pt_langue-vivante-a_2021/guide.md) |
 | 2022 | Banque PT | PT | Langue vivante A | [md](2022/banque-pt/banque-pt_pt_langue-vivante-a_2022/brut.md) | [md](2022/banque-pt/banque-pt_pt_langue-vivante-a_2022/guide.md) |
@@ -314,6 +317,7 @@
 | 2021 | ENS Paris-Saclay | Design | Histoire de l’art | [md](2021/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2021/brut.md) | [md](2021/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2021/guide.md) |
 | 2022 | ENS Paris-Saclay | Design | Histoire de l’art | [md](2022/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2022/brut.md) | [md](2022/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2022/guide.md) |
 | 2023 | ENS Paris-Saclay | Design | Histoire de l’art | [md](2023/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2023/brut.md) | [md](2023/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2023/guide.md) |
+| 2023 | ENS Paris-Saclay | Design | Philosophie de l’art | [md](2023/ens-paris-saclay/ens-paris-saclay_design_philosophie-de-lart_2023/brut.md) | [md](2023/ens-paris-saclay/ens-paris-saclay_design_philosophie-de-lart_2023/guide.md) |
 | 2016 | ENS Paris-Saclay | Design | Techno-design | [md](2016/ens-paris-saclay/ens-paris-saclay_design_techno-design_2016/brut.md) | [md](2016/ens-paris-saclay/ens-paris-saclay_design_techno-design_2016/guide.md) |
 | 2017 | ENS Paris-Saclay | Design | Techno-design | [md](2017/ens-paris-saclay/ens-paris-saclay_design_techno-design_2017/brut.md) | [md](2017/ens-paris-saclay/ens-paris-saclay_design_techno-design_2017/guide.md) |
 | 2021 | ENS Paris-Saclay | Design | Techno-design | [md](2021/ens-paris-saclay/ens-paris-saclay_design_techno-design_2021/brut.md) | [md](2021/ens-paris-saclay/ens-paris-saclay_design_techno-design_2021/guide.md) |
