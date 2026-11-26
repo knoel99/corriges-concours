@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le concours proposait deux sujets au choix. Les réponses P traitent la marche persistante, les réponses N les schémas pour les équations de Hamilton–Jacobi. Les numéros de partie et de question suivent chaque sujet.
 
 ## Sujet 1. Simulation de la marche persistante
@@ -151,6 +153,10 @@ Notons $\Delta_j=H(\delta x_\delta+(j+1)\delta v)-H(\delta x_\delta+j\delta v)$.
 ### Question P.IV.3
 
 Pour $k=\lfloor t/\delta\rfloor$, chaque incrément division faite par $\delta$ diffère de $vH'(\delta x_\delta+j\delta v)$ d’au plus $\delta\|H''\|_\infty/2$. La partie positive est 1-lipschitzienne. Pour $t$ fixé la somme tend donc vers $D_{x,v}(t)$, car $\delta x_\delta\to x$. La fonction de répartition limite est nulle pour $t<0$ et vaut $F_{x,v}(t)=1-e^{-D_{x,v}(t)}$ pour $t\ge0$. Continue, de limite un par IV.1, elle caractérise la convergence en loi de $\delta T_1^\delta$.
+
+Pour $H(y)=y^2/2$, $x=x_\delta=0$ et $v=1$, chaque incrément est positif. La somme télescope et donne $\mathbb P(T_1^\delta>k)=e^{-(k\delta)^2/2}$. En posant $k=\lfloor t/\delta\rfloor$, on retrouve directement la survie $e^{-t^2/2}$ du premier temps de collision limite, pour $t\ge0$.
+
+![Survie du premier temps de collision pour le potentiel quadratique, au départ de zéro. Les valeurs discrètes coïncident avec la courbe limite aux multiples de la maille.](figures/premiere-collision.svg)
 
 ### Question P.IV.4
 
@@ -335,6 +341,8 @@ Il vient $t_{n_0}\le\Delta t/2+K\varepsilon^2/(2A)$. Avec IV.16.d et IV.20.a, $\
 ### Question N.IV.21
 
 L’ordre de consistance est un en temps et en espace sur les tests réguliers. Le théorème de convergence garantit un ordre $1/2$ à rapport des pas fixé pour des données seulement lipschitziennes et une solution de viscosité qui peut avoir des angles. Les deux estimations portent sur des objets et des régularités différents, et une solution plus régulière peut avoir une erreur moindre.
+
+La démonstration sur le maximum de $u-U$ fournit une borne dans un sens. Pour l’autre sens, poser $w=-u$, $W=-U$, $\widetilde H(p)=-H(-p)$ et $\widetilde g(a_1,\ldots,a_d)=-g(-a_1,\ldots,-a_d)$. La négation échange les tests de sous-solution et de sursolution. Le pas $\widetilde G(W)=-G(-W)$ reste croissant puisque les deux changements de signe renversent l’ordre. La consistance et les constantes de Lipschitz sont conservées. La même estimation sur $w-W=U-u$ complète la borne en valeur absolue.
 
 ## Sujet 2. Choix du Hamiltonien numérique
 
