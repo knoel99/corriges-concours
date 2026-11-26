@@ -191,6 +191,7 @@
 | 2026 | BCE | ECT | Synthèse de textes (ESCP-HEC) | [md](2026/bce/bce_ect_synthese-de-textes-escp-hec_2026/brut.md) | [md](2026/bce/bce_ect_synthese-de-textes-escp-hec_2026/guide.md) |
 | 2023 | BEL | AL | Allemand (commentaire et traduction) | [md](2023/bel/bel_al_allemand-commentaire-et-traduction_2023/brut.md) | [md](2023/bel/bel_al_allemand-commentaire-et-traduction_2023/guide.md) |
 | 2024 | BEL | AL | Allemand (commentaire et traduction) | [md](2024/bel/bel_al_allemand-commentaire-et-traduction_2024/brut.md) | [md](2024/bel/bel_al_allemand-commentaire-et-traduction_2024/guide.md) |
+| 2025 | BEL | AL | Allemand (commentaire et traduction) | [md](2025/bel/bel_al_allemand-commentaire-et-traduction_2025/brut.md) | [md](2025/bel/bel_al_allemand-commentaire-et-traduction_2025/guide.md) |
 | 2026 | BEL | AL | Allemand (commentaire et traduction) | [md](2026/bel/bel_al_allemand-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_allemand-commentaire-et-traduction_2026/guide.md) |
 | 2023 | BEL | AL | Allemand (thème Lyon) | [md](2023/bel/bel_al_allemand-theme-lyon_2023/brut.md) | [md](2023/bel/bel_al_allemand-theme-lyon_2023/guide.md) |
 | 2024 | BEL | AL | Allemand (thème Lyon) | [md](2024/bel/bel_al_allemand-theme-lyon_2024/brut.md) | [md](2024/bel/bel_al_allemand-theme-lyon_2024/guide.md) |
