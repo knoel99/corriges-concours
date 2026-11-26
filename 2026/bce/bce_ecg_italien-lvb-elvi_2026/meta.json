@@ -16,7 +16,9 @@
   },
   "sources": {
     "sujet": "https://www.concours-bce.com/sites/default/files/2026-04/76%20AR%20-%20LANGUE_VIVANTE_B_ELVI_ARABE_ITALIEN_PORTUGAIS_RUSSE.pdf#page=8",
-    "sujet_sha256": "030bebbf0b7c6cf80e2d621a3d70fa9bbb4babbc1006d90e67823ca6f5e5bcfc"
+    "sujet_sha256": "030bebbf0b7c6cf80e2d621a3d70fa9bbb4babbc1006d90e67823ca6f5e5bcfc",
+    "rapport_jury": "https://www.concours-bce.com/sites/default/files/2026-11/76%20-%20Italien%20LVB%20Elvi%202026.pdf",
+    "rapport_sha256": "a46961f7bb8c55e7b7142ce7d7237e227acf8968a0d3a94cf40880ebdf026cbe"
   },
   "figures": [
     {
@@ -25,7 +27,7 @@
       "legende": "Le prix d’une réputation"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -36,6 +38,44 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Résumé comparatif sur le poids économique du made in Italy, essai sur la transmission et les conditions de travail, traduction bornée du reportage d’Olivier Bonnel et schéma des niveaux d’analyse."
+    },
+    {
+      "phase": "lecture_rapport_jury",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "fui_physique_deux",
+      "modifications": false,
+      "perimetre": "Rapprochement du rapport BCE de la langue et du niveau correspondants avec le sujet et les trois exercices."
+    },
+    {
+      "phase": "revision",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "fui_physique_deux",
+      "modifications": true,
+      "perimetre": "Fascicule 76-AR, section italien-lvb p. 8–11 et garde p. 1. Quatre documents numérotés, dont le double document 4 (classement culturel et photographie légendée, Prato). Valeurs directes et effets indirects de la filière, conditions du renouvellement des artisans. Thème de la mention du gouvernement à la qualité de Picchioni à la CGIL, sans les paragraphes sur le débat législatif. Résumé 249 mots ; essai 354 mots. Contrôles dans les deux éditions."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I. Résumé analytique comparatif",
+      "II. Essai argumenté",
+      "III. Thème"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "origine_attestation": {
+      "phase": "revision",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "030bebbf0b7c6cf80e2d621a3d70fa9bbb4babbc1006d90e67823ca6f5e5bcfc",
+      "perimetre": "Fascicule 76-AR, section italien-lvb p. 8–11 et garde p. 1. Quatre documents numérotés, dont le double document 4 (classement culturel et photographie légendée, Prato). Valeurs directes et effets indirects de la filière, conditions du renouvellement des artisans. Thème de la mention du gouvernement à la qualité de Picchioni à la CGIL, sans les paragraphes sur le débat législatif. Résumé 249 mots ; essai 354 mots. Contrôles dans les deux éditions."
+    }
+  }
 }
