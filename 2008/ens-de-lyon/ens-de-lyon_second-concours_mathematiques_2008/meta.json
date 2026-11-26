@@ -31,6 +31,50 @@
       "perimetre": "Rédaction intégrale des deux éditions à partir des cinq pages scannées. Variation d’une fonction oscillante, matrice de Sylvester avec signe exact, factorisation du noyau, contre-exemple à l’indépendance en 2.2.f, rang et signature après retrait du pgcd. Schéma des subdivisions alternées.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "x_maths_b_anciennes",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Confrontation des 20 rubriques des deux éditions aux 5 pages du sujet. Vérification de la subdivision harmonique et de la figure, de la convention de signe du résultant et de la factorisation hermitienne. Formes dépendantes de 2.2.f calculées explicitement."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3.a",
+      "1.3.b",
+      "1.3.c",
+      "1.4",
+      "1.5",
+      "2.1.a",
+      "2.1.b",
+      "2.1.c",
+      "2.1.d",
+      "2.2.a",
+      "2.2.b",
+      "2.2.c",
+      "2.2.d",
+      "2.2.e",
+      "2.2.f",
+      "2.2.g",
+      "2.2.h",
+      "2.2.i"
+    ],
+    "precision": "Confrontation des 20 rubriques des deux éditions aux 5 pages du sujet. Vérification de la subdivision harmonique et de la figure, de la convention de signe du résultant et de la factorisation hermitienne. Formes dépendantes de 2.2.f calculées explicitement.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "bfd49698bd611798c1a7baeb8d7f8c630b82d8b971f47b714bcadff84b09708d",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Confrontation des 20 rubriques des deux éditions aux 5 pages du sujet. Vérification de la subdivision harmonique et de la figure, de la convention de signe du résultant et de la factorisation hermitienne. Formes dépendantes de 2.2.f calculées explicitement.",
+      "commit_redaction_anterieure": "f6bfc7fc91688fdd91fa8e09ab27be444971fbee"
+    }
+  }
 }
