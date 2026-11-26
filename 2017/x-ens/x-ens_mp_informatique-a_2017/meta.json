@@ -39,5 +39,43 @@
       "modifications": true,
       "perimetre": "Rédaction des 18 questions sur la recherche optimale et le taquin. Lecture du sujet intégral et du rapport de jury. Deux figures originales. Compilation Caml Light des programmes des deux éditions, vérification indépendante par BFS, contrôle des profondeurs, de la restauration du plateau et du calcul incrémental de la distance de Manhattan."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18"
+    ],
+    "precision": "Les 18 questions numérotées ont été retrouvées dans le sujet institutionnel et les deux éditions. Chaque réponse correspond au texte signé à la révision citée dans le journal.",
+    "origine_attestation": {
+      "commit_du_journal": "3a0859be0084c4b0ef136588e0a79dc896e3a1b7",
+      "phase": "redaction",
+      "date": "2026-11-24",
+      "perimetre": "Rédaction des 18 questions sur la recherche optimale et le taquin. Lecture du sujet intégral et du rapport de jury. Deux figures originales. Compilation Caml Light des programmes des deux éditions, vérification indépendante par BFS, contrôle des profondeurs, de la restauration du plateau et du calcul incrémental de la distance de Manhattan.",
+      "sha256_sujet_controle": "6a98cb8ac882b6094aa81fc440286d76219e670467bed621d049f4392c533b90",
+      "sha256_rapport_controle": "a7cc454297772190e2a875cf19327a27bfff32f0bfaeb5deab0d06b5f3296e32"
+    },
+    "subdivisions_du_sujet": {
+      "9": [
+        "1",
+        "2"
+      ]
+    }
+  }
 }

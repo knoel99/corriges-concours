@@ -10,8 +10,10 @@
   "questions": 16,
   "redaction": "GPT-6.2 Astra · effort Ultra",
   "sources": {
-    "sujet": "https://groupe-reussite.fr/ressources/wp-content/uploads/Annales/x-ens/info/mpinfo/x-ens-mp-info-2019-sujet.pdf",
-    "sujet_sha256": "8eee9980418513001f44785af049e6540e1a0cf91b170a1ca7b586c27bb513b6"
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/2019_MP_sujet_InfoA.pdf",
+    "sujet_sha256": "8eee9980418513001f44785af049e6540e1a0cf91b170a1ca7b586c27bb513b6",
+    "sujet_miroir": "https://groupe-reussite.fr/ressources/wp-content/uploads/Annales/x-ens/info/mpinfo/x-ens-mp-info-2019-sujet.pdf",
+    "page_banque": "https://banques-ecoles.fr/cms/filiere-mp/annales-de-la-banque-i/session-2019-10/"
   },
   "figures": [
     {
@@ -42,5 +44,85 @@
       "modifications": true,
       "perimetre": "Rédaction des 16 questions et sous-questions, lecture du fac-similé du sujet X-ENS, trois figures originales. Validation des programmes OCaml des deux éditions, recoupement des plongements et du plus court sur-mot sur des mots courts, vérification indépendante des résidus et des facteurs par automates non déterministes, démonstration de croissance exponentielle pour la procédure de résidus."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16"
+    ],
+    "precision": "Les 16 questions numérotées ont été retrouvées dans le sujet institutionnel et les deux éditions. Chaque réponse correspond au texte signé à la révision citée dans le journal.",
+    "origine_attestation": {
+      "commit_du_journal": "6e519c83e0f1679d922b99b4b934f49375807803",
+      "phase": "redaction",
+      "date": "2026-11-24",
+      "perimetre": "Rédaction des 16 questions et sous-questions, lecture du fac-similé du sujet X-ENS, trois figures originales. Validation des programmes OCaml des deux éditions, recoupement des plongements et du plus court sur-mot sur des mots courts, vérification indépendante des résidus et des facteurs par automates non déterministes, démonstration de croissance exponentielle pour la procédure de résidus.",
+      "sha256_sujet_controle": "8eee9980418513001f44785af049e6540e1a0cf91b170a1ca7b586c27bb513b6"
+    },
+    "subdivisions_du_sujet": {
+      "1": [
+        "a",
+        "b"
+      ],
+      "2": [
+        "a",
+        "b",
+        "c"
+      ],
+      "3": [
+        "a",
+        "b"
+      ],
+      "4": [
+        "a",
+        "b",
+        "c"
+      ],
+      "6": [
+        "a",
+        "b"
+      ],
+      "7": [
+        "a",
+        "b"
+      ],
+      "8": [
+        "a",
+        "b",
+        "c"
+      ],
+      "12": [
+        "a",
+        "b"
+      ],
+      "13": [
+        "a",
+        "b"
+      ],
+      "14": [
+        "a",
+        "b"
+      ],
+      "11": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    }
+  }
 }

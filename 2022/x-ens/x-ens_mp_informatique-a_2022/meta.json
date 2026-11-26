@@ -43,5 +43,47 @@
       "fournisseur": "codex",
       "perimetre": "Rédaction intégrale des 28 questions des cinq parties et de leurs indices. Confrontation au PDF du sujet et au rapport. Vérifications des coûts de parenthésage, de l’ordre des jacobiennes, des tangentes et des triangulations avec angles plats. Trois schémas originaux."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7",
+      "IV.1",
+      "IV.2",
+      "IV.3",
+      "IV.4",
+      "V.1",
+      "V.2",
+      "V.3",
+      "V.4",
+      "V.5",
+      "V.6",
+      "V.7"
+    ],
+    "precision": "Les 28 questions numérotées ont été retrouvées dans le sujet institutionnel et les deux éditions. Chaque réponse correspond au texte signé à la révision citée dans le journal.",
+    "origine_attestation": {
+      "commit_du_journal": "3c0d7b38955caaba59d7149fad2fad888edb4bd2",
+      "phase": "redaction",
+      "date": "2026-11-24",
+      "perimetre": "Rédaction intégrale des 28 questions des cinq parties et de leurs indices. Confrontation au PDF du sujet et au rapport. Vérifications des coûts de parenthésage, de l’ordre des jacobiennes, des tangentes et des triangulations avec angles plats. Trois schémas originaux.",
+      "sha256_sujet_controle": "67c1d1351e06e0926c63624b24746f901f5364fee238603d02914d5340a57628",
+      "sha256_rapport_controle": "c79e4cd85d814fa267357216007cac637a3c67927b6f9347de9d5e91bf4b21a9"
+    }
+  }
 }

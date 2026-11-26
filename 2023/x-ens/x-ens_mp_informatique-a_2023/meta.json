@@ -43,5 +43,55 @@
       "fournisseur": "codex",
       "perimetre": "Rédaction intégrale des 20 questions I.1 à VII.3 dans les deux éditions, indications, trois figures et solutions OCaml. Confrontation aux PDF institutionnels du sujet MP-MPI XULSR et du rapport. Vérification des arbres, des entrées invalides, des profondeurs et des longueurs optimales, du décodage et de la renormalisation rANS."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "III.1",
+      "III.2",
+      "IV.1",
+      "IV.2",
+      "IV.3",
+      "IV.4",
+      "IV.5",
+      "IV.6",
+      "V.1",
+      "VI.1",
+      "VI.2",
+      "VII.1",
+      "VII.2",
+      "VII.3"
+    ],
+    "precision": "Les 20 questions numérotées ont été retrouvées dans le sujet institutionnel et les deux éditions. Chaque réponse correspond au texte signé à la révision citée dans le journal.",
+    "origine_attestation": {
+      "commit_du_journal": "90c1887e51b12136ce72f08bf1d04b45cd82b3c0",
+      "phase": "redaction",
+      "date": "2026-11-24",
+      "perimetre": "Rédaction intégrale des 20 questions I.1 à VII.3 dans les deux éditions, indications, trois figures et solutions OCaml. Confrontation aux PDF institutionnels du sujet MP-MPI XULSR et du rapport. Vérification des arbres, des entrées invalides, des profondeurs et des longueurs optimales, du décodage et de la renormalisation rANS.",
+      "sha256_sujet_controle": "30227cd4ac294f3e13a81849435bbbd1ba228d9ae9cc521bafda26da094d99f1",
+      "sha256_rapport_controle": "858d91a8b8df1ec0c61eed8c76676a21c313f2c18b11d7a1e54c772b0c7c1c9c"
+    },
+    "subdivisions_du_sujet": {
+      "IV.3": [
+        "1",
+        "2"
+      ],
+      "IV.4": [
+        "1",
+        "2",
+        "3"
+      ],
+      "VII.1": [
+        "1",
+        "2",
+        "3"
+      ]
+    }
+  }
 }

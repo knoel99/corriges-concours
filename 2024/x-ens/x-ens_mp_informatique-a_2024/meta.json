@@ -58,5 +58,41 @@
     "modele": "GPT-6.2 Astra (effort Ultra)",
     "verification": "Lecture des 22 questions MP-MPI XULSR et du rapport. Contrôle des invariants de jointure AVL, des suppressions, du choix de tranche aux bornes et des réponses sur une face concave. Schéma et exemple du contre-exemple du jury, étiquetage des faces incidentes à partir des contours orientés."
   },
-  "date_revision": "2026-11-24"
+  "date_revision": "2026-11-24",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22"
+    ],
+    "precision": "Les 22 questions numérotées ont été retrouvées dans le sujet institutionnel et les deux éditions. Chaque réponse correspond au texte signé à la révision citée dans le journal.",
+    "origine_attestation": {
+      "commit_du_journal": "2c3bedbdf3010ee7288e7c28baa84524dc5b278d",
+      "phase": "relecture_corrige",
+      "date": "2026-11-24",
+      "perimetre": "Lecture des 22 questions MP-MPI XULSR et du rapport. Contrôle des invariants de jointure AVL, des suppressions, du choix de tranche aux bornes et des réponses sur une face concave. Schéma et exemple du contre-exemple du jury, étiquetage des faces incidentes à partir des contours orientés.",
+      "sha256_sujet_controle": "27ec99d7f1aebd1a6eec6a0600a2dd01ae5da69a4419bfe5e9f6528b171f01c2",
+      "sha256_rapport_controle": "53f55c3bddf18aa9aac76b6a05f496877e4aedcadc986f1652d6ab041ba438f2"
+    }
+  }
 }

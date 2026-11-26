@@ -44,5 +44,38 @@
       "modifications": true,
       "perimetre": "Rédaction des 19 questions d’après les PDF X-ENS et du jury. Démonstrations de la hauteur, du coût amorti, du maximum exact pour l’insertion et de sa dépendance en la parité. Vérification des programmes en Caml sur 47 583 tableaux, dont les 46 234 permutations de taille au plus huit. Trois figures originales."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19"
+    ],
+    "precision": "Les 19 questions numérotées ont été retrouvées dans le sujet institutionnel et les deux éditions. Chaque réponse correspond au texte signé à la révision citée dans le journal.",
+    "origine_attestation": {
+      "commit_du_journal": "c22601f99286b89e74c9eaca46a9e367cd208cdb",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction des 19 questions d’après les PDF X-ENS et du jury. Démonstrations de la hauteur, du coût amorti, du maximum exact pour l’insertion et de sa dépendance en la parité. Vérification des programmes en Caml sur 47 583 tableaux, dont les 46 234 permutations de taille au plus huit. Trois figures originales.",
+      "sha256_sujet_controle": "46e51c05cf13d7524cb29f07f27117977e8ead72ecee47f6066217b5914d5dc6",
+      "sha256_rapport_controle": "d97df0e1c53bb089aaa11b5b1d67178b7f7fd214d35e5decfe84a0ecac53b2ea"
+    }
+  }
 }
