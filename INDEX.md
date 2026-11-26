@@ -285,7 +285,10 @@
 | 2020 | ENS Paris-Saclay | Économie-gestion option 1 | Mathématiques et statistiques | [md](2020/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2020/brut.md) | [md](2020/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2020/guide.md) |
 | 2021 | ENS Paris-Saclay | Économie-gestion option 1 | Mathématiques et statistiques | [md](2021/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2021/brut.md) | [md](2021/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2021/guide.md) |
 | 2022 | ENS Paris-Saclay | Économie-gestion option 1 | Mathématiques et statistiques | [md](2022/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2022/brut.md) | [md](2022/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2022/guide.md) |
+| 2023 | ENS Paris-Saclay | Économie-gestion option 1 | Mathématiques et statistiques | [md](2023/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2023/brut.md) | [md](2023/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2023/guide.md) |
 | 2024 | ENS Paris-Saclay | Économie-gestion option 1 | Mathématiques et statistiques | [md](2024/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2024/brut.md) | [md](2024/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2024/guide.md) |
+| 2025 | ENS Paris-Saclay | Économie-gestion option 1 | Mathématiques et statistiques | [md](2025/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2025/brut.md) | [md](2025/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2025/guide.md) |
+| 2026 | ENS Paris-Saclay | Économie-gestion option 1 | Mathématiques et statistiques | [md](2026/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2026/brut.md) | [md](2026/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2026/guide.md) |
 | 2021 | ENS-PSL | CNEL Lettres | Sciences sociales — crise sanitaire ou interdépendances | [md](2021/ens-psl/ens-psl_cnel-lettres_sciences-sociales-crise-sanitaire-ou-interdependances_2021/brut.md) | [md](2021/ens-psl/ens-psl_cnel-lettres_sciences-sociales-crise-sanitaire-ou-interdependances_2021/guide.md) |
 | 2019 | ENS-PSL | Médecine-Humanités | Autisme | [md](2019/ens-psl/ens-psl_medecine-humanites_autisme_2019/brut.md) | [md](2019/ens-psl/ens-psl_medecine-humanites_autisme_2019/guide.md) |
 | 2025 | ENS-PSL | Médecine-Humanités | Contraindre pour soigner ? | [md](2025/ens-psl/ens-psl_medecine-humanites_contraindre-pour-soigner_2025/brut.md) | [md](2025/ens-psl/ens-psl_medecine-humanites_contraindre-pour-soigner_2025/guide.md) |
@@ -1323,7 +1326,16 @@
 | 2026 | ENS Rennes | D-E | Espagnol | [md](2026/ens-rennes/ens-rennes_d-e_espagnol_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_espagnol_2026/guide.md) |
 | 2026 | ENS Rennes | D-E | Espagnol (oral) | [md](2026/ens-rennes/ens-rennes_d-e_espagnol-oral_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_espagnol-oral_2026/guide.md) |
 | 2026 | ENS Rennes | D-E | Italien | [md](2026/ens-rennes/ens-rennes_d-e_italien_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_italien_2026/guide.md) |
+| 2017 | ENS | Cycle master mathématiques | Mathématiques 1 | [md](2017/ens/ens_cycle-master-mathematiques_mathematiques-1_2017/brut.md) | [md](2017/ens/ens_cycle-master-mathematiques_mathematiques-1_2017/guide.md) |
+| 2018 | ENS | Cycle master mathématiques | Mathématiques 1 | [md](2018/ens/ens_cycle-master-mathematiques_mathematiques-1_2018/brut.md) | [md](2018/ens/ens_cycle-master-mathematiques_mathematiques-1_2018/guide.md) |
 | 2019 | ENS | Cycle master mathématiques | Mathématiques 1 | [md](2019/ens/ens_cycle-master-mathematiques_mathematiques-1_2019/brut.md) | [md](2019/ens/ens_cycle-master-mathematiques_mathematiques-1_2019/guide.md) |
+| 2017 | ENS | Cycle master mathématiques | Mathématiques 2 | [md](2017/ens/ens_cycle-master-mathematiques_mathematiques-2_2017/brut.md) | [md](2017/ens/ens_cycle-master-mathematiques_mathematiques-2_2017/guide.md) |
+| 2018 | ENS | Cycle master mathématiques | Mathématiques 2 | [md](2018/ens/ens_cycle-master-mathematiques_mathematiques-2_2018/brut.md) | [md](2018/ens/ens_cycle-master-mathematiques_mathematiques-2_2018/guide.md) |
+| 2019 | ENS | Cycle master mathématiques | Mathématiques 2 | [md](2019/ens/ens_cycle-master-mathematiques_mathematiques-2_2019/brut.md) | [md](2019/ens/ens_cycle-master-mathematiques_mathematiques-2_2019/guide.md) |
+| 2020 | ENS | Cycle master mathématiques | Mathématiques | [md](2020/ens/ens_cycle-master-mathematiques_mathematiques_2020/brut.md) | [md](2020/ens/ens_cycle-master-mathematiques_mathematiques_2020/guide.md) |
+| 2021 | ENS | Cycle master mathématiques | Mathématiques | [md](2021/ens/ens_cycle-master-mathematiques_mathematiques_2021/brut.md) | [md](2021/ens/ens_cycle-master-mathematiques_mathematiques_2021/guide.md) |
+| 2023 | ENS | Cycle master mathématiques | Mathématiques | [md](2023/ens/ens_cycle-master-mathematiques_mathematiques_2023/brut.md) | [md](2023/ens/ens_cycle-master-mathematiques_mathematiques_2023/guide.md) |
+| 2024 | ENS | Cycle master mathématiques | Mathématiques | [md](2024/ens/ens_cycle-master-mathematiques_mathematiques_2024/brut.md) | [md](2024/ens/ens_cycle-master-mathematiques_mathematiques_2024/guide.md) |
 | 1997 | ENS | Groupes C/S, M et I | Informatique | [md](1997/ens/ens_groupes-c-s-m-et-i_informatique_1997/brut.md) | [md](1997/ens/ens_groupes-c-s-m-et-i_informatique_1997/guide.md) |
 | 1998 | ENS | Groupes C/S, M et I | Informatique | [md](1998/ens/ens_groupes-c-s-m-et-i_informatique_1998/brut.md) | [md](1998/ens/ens_groupes-c-s-m-et-i_informatique_1998/guide.md) |
 | 2026 | ENS | BCPST | Allemand | [md](2026/ens/ens_bcpst_allemand_2026/brut.md) | [md](2026/ens/ens_bcpst_allemand_2026/guide.md) |
@@ -1492,6 +1504,12 @@
 | 2019 | ENS | MP | Informatique-mathématiques | [md](2019/ens/ens_mp_informatique-mathematiques_2019/brut.md) | [md](2019/ens/ens_mp_informatique-mathematiques_2019/guide.md) |
 | 2020 | ENS | Cycle master mathématiques | Français et culture générale | [md](2020/ens/ens_cycle-master-mathematiques_francais-et-culture-generale_2020/brut.md) | [md](2020/ens/ens_cycle-master-mathematiques_francais-et-culture-generale_2020/guide.md) |
 | 2020 | ENS | MP | Informatique-mathématiques | [md](2020/ens/ens_mp_informatique-mathematiques_2020/brut.md) | [md](2020/ens/ens_mp_informatique-mathematiques_2020/guide.md) |
+| 2005 | ENS | MP | Mathématiques MPI 1 | [md](2005/ens/ens_mp_mathematiques-mpi-1_2005/brut.md) | [md](2005/ens/ens_mp_mathematiques-mpi-1_2005/guide.md) |
+| 2006 | ENS | MP | Mathématiques MPI 1 | [md](2006/ens/ens_mp_mathematiques-mpi-1_2006/brut.md) | [md](2006/ens/ens_mp_mathematiques-mpi-1_2006/guide.md) |
+| 2007 | ENS | MP | Mathématiques MPI 1 | [md](2007/ens/ens_mp_mathematiques-mpi-1_2007/brut.md) | [md](2007/ens/ens_mp_mathematiques-mpi-1_2007/guide.md) |
+| 2008 | ENS | MP | Mathématiques MPI 1 | [md](2008/ens/ens_mp_mathematiques-mpi-1_2008/brut.md) | [md](2008/ens/ens_mp_mathematiques-mpi-1_2008/guide.md) |
+| 2009 | ENS | MP | Mathématiques MPI 1 | [md](2009/ens/ens_mp_mathematiques-mpi-1_2009/brut.md) | [md](2009/ens/ens_mp_mathematiques-mpi-1_2009/guide.md) |
+| 2010 | ENS | MP | Mathématiques MPI 1 | [md](2010/ens/ens_mp_mathematiques-mpi-1_2010/brut.md) | [md](2010/ens/ens_mp_mathematiques-mpi-1_2010/guide.md) |
 | 2011 | ENS | MP | Maths C | [md](2011/ens/ens_mp_maths-c_2011/brut.md) | [md](2011/ens/ens_mp_maths-c_2011/guide.md) |
 | 2012 | ENS | MP | Maths C | [md](2012/ens/ens_mp_maths-c_2012/brut.md) | [md](2012/ens/ens_mp_maths-c_2012/guide.md) |
 | 2013 | ENS | MP | Maths C | [md](2013/ens/ens_mp_maths-c_2013/brut.md) | [md](2013/ens/ens_mp_maths-c_2013/guide.md) |
