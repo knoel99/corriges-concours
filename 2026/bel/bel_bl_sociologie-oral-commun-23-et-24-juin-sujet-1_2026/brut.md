@@ -8,6 +8,8 @@
 
 **Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## L’abstention
@@ -35,3 +37,9 @@ La consultation citoyenne de 2021 (doc. 6) compare des répondants déclarant n�
 Le document 7 territorialise le problème. Il représente les comportements en pourcentage des inscrits et réunit dans une même catégorie les abstentions et les bulletins blancs ou nuls. La barre correspondante apparaît plus longue dans les quartiers prioritaires que dans l’ensemble du pays. Une partie de l’écart peut tenir aux âges, aux lieux d’inscription et à l’offre électorale. Déduire de la barre qu’un habitant particulier se désintéresse de la politique confondrait son territoire et sa conduite. L’abstention peut signaler un retrait, un obstacle ou une forme de refus. Pour les distinguer, il faudrait relier émargements à plusieurs tours, conditions de participation et récits individuels.
 
 [Dossier officiel](https://www.ens.psl.eu/sites/default/files/dossier_abstention.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_tronc_commun_sociologie.pdf)
+
+## Vérification sur le dossier
+
+Le dossier relie les conditions sociales de la prise de parole et du vote aux différences de scrutin, de profession, de motivation déclarée et de territoire. Les pourcentages de participation, les écarts en points et les groupes de non-votants ont été vérifiés séparément.
+
+Le tableau du document 4 donne un écart d’abstention entre les 25–29 ans et les 65–69 ans de 8,9 points au premier tour présidentiel de 2007 et de 18,2 points en 2017. L’écart s’est donc accru de 9,3 points, sur ce scrutin et entre ces classes d’âge. Il s’agit de deux comparaisons transversales. L’information nécessaire pour séparer l’effet de l’âge de celui du remplacement des générations serait un suivi de plusieurs cohortes.
