@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Sujet officiel](https://www.banquept.fr/documents/2022/ph_a_2022_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2022/rapport_phys_a_ecrit_2022.pdf) · [Livret de la session](https://www.banquept.fr/documents/livret/2022/Livret_PT_2022.pdf#page=13)
 
 **Le lac de Joux.** Les questions 1 à 26 portent sur la température et la profondeur du lac. Les questions 27 à 38 étudient un toboggan puis un pédalo. Les questions 39 à 50 portent sur le gel du lac. Les graphes de cette édition sont recalculés à partir des modèles et des valeurs du sujet.
@@ -16,7 +18,7 @@
 
 Examiner d’abord la variation de l’exposant pour une température absolue croissante. Placer le point de référence puis vérifier le sens de variation dans la plage du lac.
 
-Pour $T>0$, $R(T)=R_0\exp[B(1/T-1/T_0)]$ est positive. Sa dérivée est $R'=-BR/T^2<0$ et sa dérivée seconde $R''=R(B^2/T^4+2B/T^3)>0$. La courbe est donc décroissante et convexe, et passe par $(294\ {\rm K},8\ {\rm k}\Omega)$. Dans le modèle prolongé mathématiquement, elle diverge quand $T\to0^+$ et tend vers $R_0e^{-B/T_0}$ quand $T\to+\infty$. Le tracé se limite à la plage estivale demandée.
+Pour $T>0$, $R(T)=R_0\exp[B(1/T-1/T_0)]$ est positive. Sa dérivée est $R'=-BR/T^2<0$ et sa dérivée seconde $R''=R(B^2/T^4+2B/T^3)>0$. La courbe est donc décroissante et convexe, et passe par $(294\ {\rm K},8\ {\rm k}\Omega)$. Dans le modèle prolongé mathématiquement, elle diverge quand $T\to0^+$ et tend vers $R_0e^{-B/T_0}$ quand $T\to+\infty$. Sur la plage estivale, le calcul donne environ 9,04 kΩ à 291 K et 7,09 kΩ à 297 K, ce qui borne le tracé.
 
 ![Figure — Résistance calculée sur la plage de 18 à 24 °C](figures/thermistance.svg)
 
@@ -26,7 +28,7 @@ Pour $T>0$, $R(T)=R_0\exp[B(1/T-1/T_0)]$ est positive. Sa dérivée est $R'=-BR/
 
 Prendre le logarithme avant de choisir les axes. Identifier le coefficient de la variable en abscisse et l’ordonnée lue pour la température de référence.
 
-En prenant le logarithme de la valeur numérique de $R$ en ohms et en posant $X=1/T$, on obtient $\ln R=BX+b$, avec $b=\ln R_0-B/T_0$. Des points alignés valident la forme proposée sur le domaine mesuré. La pente de la droite donne $B$, en kelvins. La valeur lue à $X=1/T_0$ donne $\ln R_0$, ou encore $R_0=\exp(b+B/T_0)$ en ohms. Les valeurs retenues par le sujet sont $B=3500$ K et $R_0=8000$ Ω.
+En prenant le logarithme de la valeur numérique de $R$ en ohms et en posant $X=1/T$, on obtient $\ln R=BX+b$, avec $b=\ln R_0-B/T_0$. Des points alignés valident la forme proposée sur le domaine mesuré. La pente de la droite donne $B$, en kelvins. La valeur lue à $X=1/T_0$ donne $\ln R_0$, ou encore $R_0=\exp(b+B/T_0)$ en ohms. Par exemple, une lecture approchée de la figure donne une hausse d’environ 7 unités de logarithme pour une variation de $1/T$ de $2{,}0\times10^{-3}$ K$^{-1}$. La pente vaut donc environ $3{,}5\times10^3$ K. Les valeurs retenues par le sujet sont $B=3500$ K et $R_0=8000$ Ω.
 
 ### Question 3 · Sensibilité au voisinage de la référence
 
@@ -100,7 +102,7 @@ AL2 est inverseur avec une résistance d’entrée $4R$ et une résistance de re
 
 Lire la température en degrés Celsius qui correspond à la référence de 294 K. Vérifier ensuite si la plage de sortie ainsi demandée tient entre les rails.
 
-Numériquement $v=(T-294)$ V pour $T$ exprimée en kelvins. En régime linéaire, viser $w=(T-273)$ V impose donc **$E'=21$ V**. Cette loi réclame 18 à 24 V sur la plage étudiée. Or AL3 est alimenté comme AL1 et sature à $+15$ V. Le montage annoncé ne peut pas donner effectivement une lecture de 18 à 24 V avec ces rails. Dans le modèle à écrêtage, la sortie réelle est au plafond sur toute la plage.
+Numériquement $v=(T-294)$ V pour $T$ exprimée en kelvins. En régime linéaire, viser $w=(T-273)$ V impose donc **$E'=21$ V**. Cette loi réclame 18 à 24 V sur la plage étudiée. Or AL3 est alimenté comme AL1 et sature à $+15$ V. À la température de référence, AL2 sort 0 V et le dernier étage devrait sortir 21 V, déjà au-dessus du rail positif. Le montage annoncé ne peut pas donner effectivement une lecture de 18 à 24 V avec ces rails. Dans le modèle à écrêtage, la sortie réelle est au plafond sur toute la plage.
 
 ![Figure — Tensions de sortie et saturation du dernier étage](figures/calibrage.svg)
 
@@ -283,7 +285,7 @@ L’enfant part du repos et perd une hauteur $3h$. La conservation de l’énerg
 
 Dériver l’énergie, puis examiner les conditions initiales. Résoudre jusqu’à la hauteur atteinte après les trois tours.
 
-La dérivée de l’énergie conservée donne $\dot z(A\ddot z-B)=0$. Sur la descente, puis par continuité au départ, $\ddot z=B/A$. On peut aussi obtenir cette équation en projetant la dynamique sur la tangente pour éliminer la réaction. Avec $z(0)=\dot z(0)=0$, il vient $z(t)=Bt^2/(2A)$. La sortie à $z(T)=3h$ donne $T=\sqrt{6Ah/B}$.
+La dérivée de l’énergie conservée donne $\dot z(A\ddot z-B)=0$. Sur la descente, puis par continuité au départ, $\ddot z=B/A$. On peut aussi obtenir cette équation en projetant la dynamique sur la tangente pour éliminer la réaction. Avec $z(0)=\dot z(0)=0$, il vient $z(t)=Bt^2/(2A)$. La solution est une parabole en temps puisque l’accélération axiale est constante. La sortie à $z(T)=3h$ donne $T=\sqrt{6Ah/B}$.
 
 ### Question 32 · Énergie dissipée par un frottement constant
 
@@ -345,7 +347,7 @@ Dans la barre, le courant circule du centre vers C. Sur un élément à distance
 
 À vitesse identique, écrire le bilan de puissance utile. Choisir la puissance du vacancier sans assistance comme référence du pourcentage.
 
-À même vitesse, la puissance à fournir au pédalier reste 50 W. Le moteur en apporte 15. Il reste donc 35 W à fournir humainement. La réduction relative de puissance, et de couple à vitesse fixée, vaut $15/50=30\,\%$.
+À même vitesse, la puissance à fournir au pédalier reste 50 W. Le moteur en apporte 15. Il reste donc 35 W à fournir humainement. On vérifie également le bilan électrique de l’assistance, $Ei=69$ W et $Ri^2=54$ W, d’où 15 W convertis en puissance mécanique. La réduction relative de puissance, et de couple à vitesse fixée, vaut $15/50=30\,\%$.
 
 ## Partie C · Gel du lac
 
@@ -435,7 +437,7 @@ Parmi les deux racines du second degré, choisir celle compatible avec le signe 
 
 La racine positive, continue à partir d’une épaisseur nulle, est
 $$\ell(t)=\ell_0\left(\sqrt{1+\frac{2v_0t}{\ell_0}}-1\right),\qquad 0\le\ell(t)\le H.$$
-La racine avec le signe moins devant le radical est négative. Pour les temps courts, $\ell\simeq v_0t$. Lorsque $\ell\gg\ell_0$, la croissance devient proportionnelle à $\sqrt{t}$. La formule s’applique jusqu’à $t_H=(H+H^2/(2\ell_0))/v_0$ dans ce modèle.
+Au bout de 24 h, les données numériques conduisent à environ 6,59 cm de glace. La racine avec le signe moins devant le radical est négative. Pour les temps courts, $\ell\simeq v_0t$. Lorsque $\ell\gg\ell_0$, la croissance devient proportionnelle à $\sqrt{t}$. La formule s’applique jusqu’à $t_H=(H+H^2/(2\ell_0))/v_0$ dans ce modèle.
 
 ![Figure — Épaisseur prédite par le modèle et approximation initiale](figures/gel.svg)
 
