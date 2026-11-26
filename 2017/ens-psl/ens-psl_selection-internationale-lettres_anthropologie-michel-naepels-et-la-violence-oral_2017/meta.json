@@ -1,0 +1,61 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_anthropologie-michel-naepels-et-la-violence-oral_2017",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Anthropologie — Michel Naepels et la violence (oral)",
+    "annee": 2017,
+    "modalite": "oral"
+  },
+  "intitule": "Commenter les extraits de Michel Naepels, « Quatre questions sur la violence », *L’Homme*, 2006. L’auteur discute l’anthologie de Nancy Scheper-Hughes et Philippe Bourgois, *Violence in War and Peace* (2004).",
+  "gabarit": "oral",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://web.archive.org/web/20201230063148id_/https://www.ens.psl.eu/sites/default/files/anthropologie-oral-si2017.pdf",
+    "sujet_sha256": "6762eda91141bb1591d683ca7a3da2936954828d04b57b90f7e348d4ac377bf3",
+    "index": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2017-lettres-0",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://web.archive.org/web/20201230063148id_/https://www.ens.psl.eu/sites/default/files/anthropologie-oral-si2017.pdf",
+        "url_ens": "https://www.ens.psl.eu/sites/default/files/anthropologie-oral-si2017.pdf",
+        "sha256": "6762eda91141bb1591d683ca7a3da2936954828d04b57b90f7e348d4ac377bf3",
+        "pages": 2
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "Trois opérations par lesquelles l’enquête de terrain lie établissement des faits et responsabilité."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire suivi des extraits sur la qualification, l’observation, la médiation des récits et l’écriture ethnographique."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire"
+    ],
+    "limites": "Commentaire d’extraits de « Quatre questions sur la violence » de Michel Naepels."
+  }
+}
