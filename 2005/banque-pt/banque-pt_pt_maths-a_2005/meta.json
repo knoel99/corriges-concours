@@ -1,0 +1,270 @@
+{
+  "slug": "banque-pt_pt_maths-a_2005",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths A",
+    "annee": 2005
+  },
+  "questions": 38,
+  "redaction": "Corrigés non officiels rédigés et vérifiés par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/IMG/pdf/math_a_2005.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2005/rapport_math_a_ecrit_2005.pdf",
+    "index_sujets": "https://www.banquept.fr/article51.html",
+    "index_rapports": "https://www.banquept.fr/article55.html",
+    "livret": "https://www.banquept.fr/documents/livret/2005/Livret_Rose_2005_1_2.pdf#page=12",
+    "sha256_sujet": "e4e7a5c5340ff170ba95e6fc65529a7f81f3ed544e789e0c936ad1141bf1f48c",
+    "pages_sujet": 4,
+    "sha256_rapport_jury": "a069cc67ffdf91c93a618f25eb41c65296b00ac64588c8fa4fd3d14d1a7f2132",
+    "pages_rapport_jury": 2,
+    "sha256_livret": "6cd807006fd8f343e68c410bc382b6f648b5d46fb18d2140680176d4eb4efc8b",
+    "pages_livret": 20,
+    "coefficients_admissibilite": {
+      "École polytechnique": 6,
+      "ENS Cachan": 3
+    }
+  },
+  "figures": [
+    {
+      "question": "I.1.d",
+      "fichier": "figures/parabole.svg",
+      "legende": "Parabole, développée et équidistantes. Les pointillés du détail indiquent les tangentes aux deux rebroussements de l’équidistante de rayon un."
+    },
+    {
+      "question": "III.1.b",
+      "fichier": "figures/segment.svg",
+      "legende": "Le voisinage du segment a deux côtés droits et deux extrémités circulaires."
+    },
+    {
+      "question": "III.8",
+      "fichier": "figures/inclusion.svg",
+      "legende": "Le cercle intérieur de rayon un demi appartient à l’équidistante et se trouve à l’intérieur du tube."
+    },
+    {
+      "question": "IV.1",
+      "fichier": "figures/orientation.svg",
+      "legende": "Au point de droite du cercle orienté dans le sens horaire, la normale gauche pointe vers l’extérieur."
+    },
+    {
+      "question": "IV.4",
+      "fichier": "figures/etranglement.svg",
+      "legende": "Au centre du passage étroit, le disque tangent en haut englobe le point inférieur du bord. Unité de longueur égale au rayon du tube."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1.a",
+      "I.1.b",
+      "I.1.c",
+      "I.1.d",
+      "I.2.a",
+      "I.2.b",
+      "I.2.c",
+      "I.2.d",
+      "II.1",
+      "II.2",
+      "II.3.a",
+      "II.3.b",
+      "II.3.c",
+      "II.4",
+      "II.5.a",
+      "II.5.b",
+      "II.5.c",
+      "II.5.d",
+      "II.6",
+      "III.1.a",
+      "III.1.b",
+      "III.2",
+      "III.3",
+      "III.4.a",
+      "III.4.b",
+      "III.4.c",
+      "III.5",
+      "III.6",
+      "III.7",
+      "III.8",
+      "IV.1",
+      "IV.2.a",
+      "IV.2.b",
+      "IV.2.c",
+      "IV.2.d",
+      "IV.2.e",
+      "IV.3",
+      "IV.4"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": "I.1.a",
+        "page_sujet": 1
+      },
+      {
+        "question": "I.1.b",
+        "page_sujet": 1
+      },
+      {
+        "question": "I.1.c",
+        "page_sujet": 1
+      },
+      {
+        "question": "I.1.d",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.2.a",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.2.b",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.2.c",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.2.d",
+        "page_sujet": 2
+      },
+      {
+        "question": "II.1",
+        "page_sujet": 2
+      },
+      {
+        "question": "II.2",
+        "page_sujet": 2
+      },
+      {
+        "question": "II.3.a",
+        "page_sujet": 2
+      },
+      {
+        "question": "II.3.b",
+        "page_sujet": 2
+      },
+      {
+        "question": "II.3.c",
+        "page_sujet": 2
+      },
+      {
+        "question": "II.4",
+        "page_sujet": 2
+      },
+      {
+        "question": "II.5.a",
+        "page_sujet": 2
+      },
+      {
+        "question": "II.5.b",
+        "page_sujet": 2
+      },
+      {
+        "question": "II.5.c",
+        "page_sujet": 2
+      },
+      {
+        "question": "II.5.d",
+        "page_sujet": 2
+      },
+      {
+        "question": "II.6",
+        "page_sujet": 2
+      },
+      {
+        "question": "III.1.a",
+        "page_sujet": 3
+      },
+      {
+        "question": "III.1.b",
+        "page_sujet": 3
+      },
+      {
+        "question": "III.2",
+        "page_sujet": 3
+      },
+      {
+        "question": "III.3",
+        "page_sujet": 3
+      },
+      {
+        "question": "III.4.a",
+        "page_sujet": 3
+      },
+      {
+        "question": "III.4.b",
+        "page_sujet": 3
+      },
+      {
+        "question": "III.4.c",
+        "page_sujet": 3
+      },
+      {
+        "question": "III.5",
+        "page_sujet": 3
+      },
+      {
+        "question": "III.6",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.7",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.8",
+        "page_sujet": 4
+      },
+      {
+        "question": "IV.1",
+        "page_sujet": 4
+      },
+      {
+        "question": "IV.2.a",
+        "page_sujet": 4
+      },
+      {
+        "question": "IV.2.b",
+        "page_sujet": 4
+      },
+      {
+        "question": "IV.2.c",
+        "page_sujet": 4
+      },
+      {
+        "question": "IV.2.d",
+        "page_sujet": 4
+      },
+      {
+        "question": "IV.2.e",
+        "page_sujet": 4
+      },
+      {
+        "question": "IV.3",
+        "page_sujet": 4
+      },
+      {
+        "question": "IV.4",
+        "page_sujet": 4
+      }
+    ],
+    "precision": "Quatre parties aux pages 1 à 4, subdivisions et tracés demandés. La dernière construction donne une courbe fermée de classe C², avec contrôle de la courbure et de l’obstruction au disque intérieur."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modifications": true,
+      "perimetre": "Lecture du fac-similé et du rapport, calcul des équidistantes et des singularités, démonstrations du bord du tube et du critère nécessaire, construction et vérification d’un contre-exemple explicite, rédaction des deux éditions."
+    }
+  ]
+}
