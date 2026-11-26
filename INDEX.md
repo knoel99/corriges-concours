@@ -2189,6 +2189,7 @@
 | 1985 | X | M′ | Première composition de mathématiques | [md](1985/x/x_m-prime_premiere-composition-de-mathematiques_1985/brut.md) | [md](1985/x/x_m-prime_premiere-composition-de-mathematiques_1985/guide.md) |
 | 1985 | X | P′ | Deuxième composition de mathématiques | [md](1985/x/x_p-prime_deuxieme-composition-de-mathematiques_1985/brut.md) | [md](1985/x/x_p-prime_deuxieme-composition-de-mathematiques_1985/guide.md) |
 | 1988 | X | P′ | Première composition de mathématiques | [md](1988/x/x_p-prime_premiere-composition-de-mathematiques_1988/brut.md) | [md](1988/x/x_p-prime_premiere-composition-de-mathematiques_1988/guide.md) |
+| 1989 | X | T.A. | Deuxième épreuve de mathématiques | [md](1989/x/x_ta_deuxieme-epreuve-de-mathematiques_1989/brut.md) | [md](1989/x/x_ta_deuxieme-epreuve-de-mathematiques_1989/guide.md) |
 | 1996 | X | M′ | Première composition de mathématiques | [md](1996/x/x_m-prime_premiere-composition-de-mathematiques_1996/brut.md) | [md](1996/x/x_m-prime_premiere-composition-de-mathematiques_1996/guide.md) |
 | 1996 | X | M′ | Deuxième composition de mathématiques | [md](1996/x/x_m-prime_deuxieme-composition-de-mathematiques_1996/brut.md) | [md](1996/x/x_m-prime_deuxieme-composition-de-mathematiques_1996/guide.md) |
 | 1992 | X | M′ | Première composition de mathématiques | [md](1992/x/x_m-prime_premiere-composition-de-mathematiques_1992/brut.md) | [md](1992/x/x_m-prime_premiere-composition-de-mathematiques_1992/guide.md) |
