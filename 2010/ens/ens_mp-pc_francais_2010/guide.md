@@ -4,6 +4,16 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+## Sujet de la composition
+
+*Français, filières MP et PC. Épreuve commune aux ENS de Paris, Lyon et Cachan, quatre heures.*
+
+> « L’on ne refuse rien à qui lie et délie les cordons du sac. Je suis assez riche pour acheter les consciences de ceux qui font mouvoir les ministres, depuis leurs garçons de bureau jusqu’à leurs maîtresses : n’est-ce pas le Pouvoir ? Je puis avoir les plus belles femmes et leurs plus tendres caresses, n’est-ce pas le Plaisir ? Le Pouvoir et le Plaisir ne résument-ils pas tout votre ordre social ? (…) La vie n’est-elle pas une machine à laquelle l’argent imprime le mouvement ? »
+
+Vous direz en quoi ces propos d’un personnage de Balzac éclairent votre lecture des œuvres au programme : *L’Avare* de Molière, *L’Argent* d’Émile Zola, *Philosophie de l’argent* (chapitre 3) de Georg Simmel.
+
 ## Préparer la composition de quatre heures
 
 **Rendre la parole à son locuteur.** L’extrait n’est pas un aphorisme que Balzac énoncerait en son nom. Le rapport identifie celui qui parle à Derville, Gobseck, un prêteur. Distinguez la maxime de l’ouverture, le plaidoyer à la première personne, les questions sur le Pouvoir et le Plaisir, le jugement porté sur « votre » ordre social et l’image finale de la vie. Demandez à chaque étape ce qui donne au locuteur le droit de franchir la suivante.
@@ -13,6 +23,8 @@
 **Examiner les verbes avant les majuscules.** Remplacez « je puis » par « j’ai fait ». Que perd la phrase ? Harpagon tient au possible qu’il conserve. Saccard éprouve une puissance dans l’opération elle-même. Le chapitre III de Simmel fournit la distinction entre fin et moyen qui permet de passer du premier cas au second. Une bonne objection doit ici porter sur la possibilité de confondre l’accès à un bien et la possession de ce qui en fait le prix.
 
 **Employer chaque œuvre dans son histoire.** Le pouvoir patrimonial d’un père dans la comédie de 1668 et le mécanisme d’une société par actions sous le Second Empire ne produisent pas les mêmes dépendances. En comparant les scènes, nommez l’intermédiaire dans chaque contexte. Le rapport de 2010 appelle particulièrement l’attention sur cet écart historique et sur l’examen de la « machine » dans la dernière phrase.
+
+**Exercice de lecture comparée.** Reconstituez en deux temps la rencontre entre Harpagon et Cléante à l’acte II. Avant qu’ils se reconnaissent, qui connaît les conditions du prêt et qui ignore l’identité de son partenaire ? Après la reconnaissance, quelles conditions économiques ont changé ? La réponse permet de montrer comment l’intermédiaire rendait le marché possible, puis de discuter la portée de la « machine » de Gobseck. Respectez la différence entre le crédit privé du père et le financement d’une entreprise chez Zola.
 
 ## Introduction
 
@@ -27,6 +39,8 @@ Gobseck sait qu’il serait bien encombrant de devoir aller en personne acheter 
 Le chapitre III de Simmel donne un contenu précis à cette intuition. Pour parvenir à une fin, nous pouvons avoir besoin d’un outil, lequel suppose une opération préalable et le concours d’autres personnes. Plus ces chaînes de moyens s’allongent, plus il devient précieux de disposer d’un moyen accepté dans les entreprises les plus diverses et que l’on puisse convertir au moment choisi. L’argent que je n’ai pas encore dépensé laisse ouverte l’alternative entre plusieurs actions. Sa valeur pour moi comprend donc davantage que la jouissance anticipée du bien que j’achèterai en définitive. « Je puis », dans la formule de l’usurier, a sa valeur propre. Dépenser, ce serait choisir une seule possibilité et abandonner, pour cette somme du moins, les autres.
 
 Harpagon vérifie ce pouvoir de la réserve jusque dans son projet de marier Élise à Anselme. La grande qualité du prétendant est de la prendre « sans dot ». Les objections que Valère tente de formuler se heurtent à la formule répétée par le père. Sans qu’un écu ait changé de main, l’hypothèse d’une somme conservée règle déjà la discussion et menace d’orienter toute une vie. La force économique s’appuie ici sur une autorité familiale qui lui préexiste. Dans la société du dix-septième siècle représentée par Molière, un père dispose de prérogatives qui donnent un poids considérable à son calcul. La Bourse du Second Empire, chez Zola, suppose au contraire le crédit impersonnel d’actionnaires qui ne se rencontrent pas. Il y a, entre les œuvres, continuité d’un problème et différence d’institutions.
+
+Une scène de *L’Avare* montre avec quelle facilité on peut ignorer la personne dont on tient déjà la conduite entre ses mains. Au deuxième acte, maître Simon sert d’intermédiaire entre un prêteur anonyme et le jeune homme qui veut emprunter. Cléante consent à examiner de lourdes conditions, dont une partie du prêt doit lui être livrée en objets. Lorsqu’il découvre qu’Harpagon est le prêteur, le fils voit une usure scandaleuse là où le père dénonce une prodigalité. Le face-à-face ne crée pas la relation financière. Il rend visibles deux jugements incompatibles sur la même opération. Chez Gobseck, la chaîne remonte des intermédiaires aux ministres et l’or semble traverser tous les rangs. Chez Molière, il suffit que deux personnes se reconnaissent pour que la transaction s’interrompe. Ce qui mettait la machine en mouvement dépendait donc aussi de ce que ses rouages ignoraient les uns des autres.
 
 Saccard, dans *L’Argent*, peut donner une suite aux projets de l’ingénieur Hamelin en intéressant de multiples porteurs d’actions à l’entreprise de la Banque Universelle. Le dessin d’une voie de communication ou d’une exploitation minière ne suffit pas à rassembler les ressources nécessaires à sa réalisation. La société financière met en relation des épargnes dispersées, un savoir technique et la perspective d’un revenu futur. La presse peut ensuite faire circuler dans un public encore plus large la représentation de cette richesse à venir. Là encore, il suffit que des personnes croient à une possibilité pour que de l’argent et des hommes commencent effectivement à se déplacer. Gobseck reconnaîtrait à juste titre sa puissance indirecte dans ce résultat. Il reste à savoir si la même personne dispose à tout instant des effets qu’elle a déclenchés.
 

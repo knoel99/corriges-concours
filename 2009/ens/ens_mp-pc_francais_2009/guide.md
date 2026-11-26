@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Préparer la dissertation
 
 **Faire jouer ensemble les deux affirmations d’Hadrien.** Sur deux lignes, écrivez « mes actes me ressemblent » puis « j’éprouve le besoin de les expliquer ». Leur coexistence fait problème. Si un acte m’était entièrement étranger, je n’aurais guère à en répondre. S’il me définissait sans reste, je n’aurais rien à en expliquer. La « pression des circonstances » oblige à préciser ce que j’ai voulu dans une situation où tout ne dépendait pas de moi.
@@ -13,6 +15,8 @@
 **S’en tenir au livre X.** Pour parler d’Augustin, prenez le conflit entre le chant du psaume et le plaisir d’écouter, les images du rêve ou l’adresse aux lecteurs. À partir d’un seul exemple, montrez la différence entre constater ce qui se passe en soi et apprécier le consentement qu’on y donne. Le cadre du sujet appelle le présent de l’examen au livre X ; raconter à la place une conversion puisée dans les livres précédents déplacerait l’analyse.
 
 **Relire la consigne dans le bon sens.** Après chaque partie demandez-vous quel détail d’Augustin, de Musset ou de Leiris les mots d’Hadrien ont permis de mieux lire, puis quel détail résiste à la formule. Le rapport 2009, signé H. Baty-Delalande et J.-L. Jeannelle et placé sous les noms des trois ENS, insiste sur cette direction de la comparaison, sur l’enjeu éthique du « hiatus » et sur la confrontation régulière des œuvres. Ses observations sur les copies de français ne sont pas ventilées par filière.
+
+**Exercice de lecture comparée.** Relisez le chapitre XVI du livre X des *Confessions*. Distinguez se rappeler un événement et se rappeler que l’on a oublié quelque chose. Qu’est-ce qui est présent dans le second cas ? Reportez cette difficulté sur les deux verbes employés par Hadrien, « peser » et « expliquer ». Une personne peut-elle être tenue d’examiner son passé quand il n’est plus en son pouvoir d’en retrouver chaque circonstance ?
 
 ## Sujet et consigne
 
@@ -49,6 +53,8 @@ Ce discernement découvre une tentation propre à Leiris. Dans *L’Âge d’hom
 ## III. Rendre compte de sa vie est encore un acte, accompli devant quelqu’un
 
 Pourquoi revenir sur ce qu’on a fait si aucun examen ne rétablit l’unité transparente de la personne ? Hadrien nomme un besoin continuel ; les trois œuvres en déplacent le destinataire. Au début du livre X, Augustin se demande pourquoi tant de lecteurs souhaitent connaître sa vie, quand ils ne peuvent vérifier par eux-mêmes la vérité de son aveu. Dieu, lui, connaît déjà celui qui s’adresse à lui. Quel sens donner alors à cette parole ? Parler devant Dieu, c’est reconnaître la mesure selon laquelle on se juge et demander de devenir capable de ce qu’on sait devoir accomplir. Parler devant des frères, c’est leur donner occasion de rendre grâce ou de prier avec celui qui parle. Pour Augustin, se rendre compte à soi-même n’épuiserait pas le sens de la confession. Un tel examen, livré à ses seules forces, pourrait fort bien tourner à la complaisance.
+
+Au chapitre XVI du livre X, Augustin donne à la distance entre celui qui agit et celui qui se connaît une forme paradoxale. Je comprends le mot « oubli ». Il faut donc que ma mémoire me permette de reconnaître ce que ce mot désigne. Mais si ce que j’ai oublié m’était rendu tout entier en même temps, en quel sens dirais-je encore que je l’ai oublié ? L’objet de la réflexion devient ici une lacune reconnue comme telle, et non un épisode que je pourrais retrouver à volonté. Hadrien peut de même percevoir une forme personnelle sans parvenir à en arrêter tous les traits. L’effort d’examen engage sa responsabilité d’une manière précise. Il serait trompeur de combler, pour obtenir un récit plus net, ce qui continue de lui manquer. Rendre compte peut aller jusqu’à dire avec exactitude de quoi l’on ne peut plus rendre compte.
 
 Lorenzo aussi a besoin d’un interlocuteur. C’est à Philippe qu’il peut raconter la formation de son dessein et le changement qu’a subi son caractère. Une délibération intime devient une scène dramatique. Philippe écoute avec ses propres espérances républicaines, qui ne coïncident plus exactement avec celles de son visiteur. Le spectateur, à son tour, entend leur entretien puis voit comment d’autres Florentins accueillent la nouvelle du meurtre. Il dispose ainsi de plusieurs perspectives qu’aucune conscience dans la pièce ne peut réunir. L’écart entre un homme et son acte y acquiert une dimension publique irréductible à la seule analyse de ses intentions. Il y a bien des explications que Lorenzo se doit à lui-même ; il en est d’autres que la cité doit chercher en elle-même, par exemple si elle veut comprendre pourquoi l’élimination d’un tyran a si peu changé l’exercice du pouvoir.
 

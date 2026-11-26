@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Sujet et consigne
 
 Épreuve commune aux ENS de Paris, Lyon et Cachan, filières MP et PC, session 2009. Durée de quatre heures. L’usage de toute calculatrice est interdit.
@@ -39,6 +41,8 @@ Ce discernement découvre une tentation propre à Leiris. Dans *L’Âge d’hom
 ## III. Rendre compte de sa vie est encore un acte, accompli devant quelqu’un
 
 Pourquoi revenir sur ce qu’on a fait si aucun examen ne rétablit l’unité transparente de la personne ? Hadrien nomme un besoin continuel ; les trois œuvres en déplacent le destinataire. Au début du livre X, Augustin se demande pourquoi tant de lecteurs souhaitent connaître sa vie, quand ils ne peuvent vérifier par eux-mêmes la vérité de son aveu. Dieu, lui, connaît déjà celui qui s’adresse à lui. Quel sens donner alors à cette parole ? Parler devant Dieu, c’est reconnaître la mesure selon laquelle on se juge et demander de devenir capable de ce qu’on sait devoir accomplir. Parler devant des frères, c’est leur donner occasion de rendre grâce ou de prier avec celui qui parle. Pour Augustin, se rendre compte à soi-même n’épuiserait pas le sens de la confession. Un tel examen, livré à ses seules forces, pourrait fort bien tourner à la complaisance.
+
+Au chapitre XVI du livre X, Augustin donne à la distance entre celui qui agit et celui qui se connaît une forme paradoxale. Je comprends le mot « oubli ». Il faut donc que ma mémoire me permette de reconnaître ce que ce mot désigne. Mais si ce que j’ai oublié m’était rendu tout entier en même temps, en quel sens dirais-je encore que je l’ai oublié ? L’objet de la réflexion devient ici une lacune reconnue comme telle, et non un épisode que je pourrais retrouver à volonté. Hadrien peut de même percevoir une forme personnelle sans parvenir à en arrêter tous les traits. L’effort d’examen engage sa responsabilité d’une manière précise. Il serait trompeur de combler, pour obtenir un récit plus net, ce qui continue de lui manquer. Rendre compte peut aller jusqu’à dire avec exactitude de quoi l’on ne peut plus rendre compte.
 
 Lorenzo aussi a besoin d’un interlocuteur. C’est à Philippe qu’il peut raconter la formation de son dessein et le changement qu’a subi son caractère. Une délibération intime devient une scène dramatique. Philippe écoute avec ses propres espérances républicaines, qui ne coïncident plus exactement avec celles de son visiteur. Le spectateur, à son tour, entend leur entretien puis voit comment d’autres Florentins accueillent la nouvelle du meurtre. Il dispose ainsi de plusieurs perspectives qu’aucune conscience dans la pièce ne peut réunir. L’écart entre un homme et son acte y acquiert une dimension publique irréductible à la seule analyse de ses intentions. Il y a bien des explications que Lorenzo se doit à lui-même ; il en est d’autres que la cité doit chercher en elle-même, par exemple si elle veut comprendre pourquoi l’élimination d’un tyran a si peu changé l’exercice du pouvoir.
 

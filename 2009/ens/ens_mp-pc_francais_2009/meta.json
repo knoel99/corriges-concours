@@ -35,6 +35,34 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Lecture complète de la garde MP et PC et du rapport commun aux trois ENS, paru dans l’archive PC. Dissertation comparée sur le livre X des Confessions, Lorenzaccio et L’Âge d’homme, préparation guidée et schéma sur la responsabilité."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Augustin, Confessions, X, XVI. La connaissance de l’oubli rend sensible une limite de ce dont le moi peut rendre compte. Comparaison au sujet original et au rapport. Relecture des trois mouvements et de la conclusion dans les deux éditions."
     }
-  ]
+  ],
+  "gabarit": "dissertation",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Hadrien, la personne et ses actes"
+    ],
+    "pages_du_sujet": 1,
+    "pages_pdf_des_questions": {
+      "Hadrien, la personne et ses actes": 1
+    },
+    "precision": "Dissertation unique de quatre heures sur la citation de Yourcenar, au regard des trois œuvres prescrites. Le repère est un intitulé éditorial. La consigne imprimée se trouve page 1. Rapport du jury, pages 1 à 2."
+  }
 }

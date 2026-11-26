@@ -4,6 +4,16 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+## Sujet de la composition
+
+*Français, filières MP et PC. Épreuve commune aux ENS de Paris, Lyon et Cachan, quatre heures.*
+
+> « L’on ne refuse rien à qui lie et délie les cordons du sac. Je suis assez riche pour acheter les consciences de ceux qui font mouvoir les ministres, depuis leurs garçons de bureau jusqu’à leurs maîtresses : n’est-ce pas le Pouvoir ? Je puis avoir les plus belles femmes et leurs plus tendres caresses, n’est-ce pas le Plaisir ? Le Pouvoir et le Plaisir ne résument-ils pas tout votre ordre social ? (…) La vie n’est-elle pas une machine à laquelle l’argent imprime le mouvement ? »
+
+Vous direz en quoi ces propos d’un personnage de Balzac éclairent votre lecture des œuvres au programme : *L’Avare* de Molière, *L’Argent* d’Émile Zola, *Philosophie de l’argent* (chapitre 3) de Georg Simmel.
+
 ## Introduction
 
 Harpagon vient de perdre sa cassette. Ce qui l’effraie ne ressemble guère à la liste de dépenses auxquelles il va devoir renoncer. Il appelle à l’aide comme si on l’avait privé de la vie elle-même. Ce personnage de Molière donnerait volontiers raison à l’usurier Gobseck lorsque celui-ci, dans le récit de Balzac, demande à Derville si l’argent est ce qui imprime à la machine de la vie son mouvement. Pourtant Harpagon ne projetait nullement de dépenser ses écus. Comment une somme immobile et cachée peut-elle tenir une telle place dans une existence ?
@@ -17,6 +27,8 @@ Gobseck sait qu’il serait bien encombrant de devoir aller en personne acheter 
 Le chapitre III de Simmel donne un contenu précis à cette intuition. Pour parvenir à une fin, nous pouvons avoir besoin d’un outil, lequel suppose une opération préalable et le concours d’autres personnes. Plus ces chaînes de moyens s’allongent, plus il devient précieux de disposer d’un moyen accepté dans les entreprises les plus diverses et que l’on puisse convertir au moment choisi. L’argent que je n’ai pas encore dépensé laisse ouverte l’alternative entre plusieurs actions. Sa valeur pour moi comprend donc davantage que la jouissance anticipée du bien que j’achèterai en définitive. « Je puis », dans la formule de l’usurier, a sa valeur propre. Dépenser, ce serait choisir une seule possibilité et abandonner, pour cette somme du moins, les autres.
 
 Harpagon vérifie ce pouvoir de la réserve jusque dans son projet de marier Élise à Anselme. La grande qualité du prétendant est de la prendre « sans dot ». Les objections que Valère tente de formuler se heurtent à la formule répétée par le père. Sans qu’un écu ait changé de main, l’hypothèse d’une somme conservée règle déjà la discussion et menace d’orienter toute une vie. La force économique s’appuie ici sur une autorité familiale qui lui préexiste. Dans la société du dix-septième siècle représentée par Molière, un père dispose de prérogatives qui donnent un poids considérable à son calcul. La Bourse du Second Empire, chez Zola, suppose au contraire le crédit impersonnel d’actionnaires qui ne se rencontrent pas. Il y a, entre les œuvres, continuité d’un problème et différence d’institutions.
+
+Une scène de *L’Avare* montre avec quelle facilité on peut ignorer la personne dont on tient déjà la conduite entre ses mains. Au deuxième acte, maître Simon sert d’intermédiaire entre un prêteur anonyme et le jeune homme qui veut emprunter. Cléante consent à examiner de lourdes conditions, dont une partie du prêt doit lui être livrée en objets. Lorsqu’il découvre qu’Harpagon est le prêteur, le fils voit une usure scandaleuse là où le père dénonce une prodigalité. Le face-à-face ne crée pas la relation financière. Il rend visibles deux jugements incompatibles sur la même opération. Chez Gobseck, la chaîne remonte des intermédiaires aux ministres et l’or semble traverser tous les rangs. Chez Molière, il suffit que deux personnes se reconnaissent pour que la transaction s’interrompe. Ce qui mettait la machine en mouvement dépendait donc aussi de ce que ses rouages ignoraient les uns des autres.
 
 Saccard, dans *L’Argent*, peut donner une suite aux projets de l’ingénieur Hamelin en intéressant de multiples porteurs d’actions à l’entreprise de la Banque Universelle. Le dessin d’une voie de communication ou d’une exploitation minière ne suffit pas à rassembler les ressources nécessaires à sa réalisation. La société financière met en relation des épargnes dispersées, un savoir technique et la perspective d’un revenu futur. La presse peut ensuite faire circuler dans un public encore plus large la représentation de cette richesse à venir. Là encore, il suffit que des personnes croient à une possibilité pour que de l’argent et des hommes commencent effectivement à se déplacer. Gobseck reconnaîtrait à juste titre sa puissance indirecte dans ce résultat. Il reste à savoir si la même personne dispose à tout instant des effets qu’elle a déclenchés.
 

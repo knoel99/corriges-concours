@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Sujet de la composition
 
 *Filières MP et PC · XEULC · quatre heures.*
@@ -39,6 +41,8 @@ Toutefois, le vicaire résisterait à l’idée que ce contraste explique tout l
 ## Qui se cabre en découvrant cet attrait ?
 
 Que devient alors la vérité devant laquelle on « se cabre » ? Dans une salle de spectacle, ce mouvement pourrait être celui du spectateur au moment où il se reconnaît dans ce qu’il juge. Au banquet, Macbeth aperçoit Banquo à la place qu’il voudrait occuper. Les invités voient leur roi se lever et parler à une présence qui leur échappe. Nous possédons les éléments qui leur manquent. Le même regard qui a suivi les calculs de Macbeth constate leur échec devant la place occupée par le mort. À quoi tenait donc notre hâte de voir la scène suivante ? Nous voulions savoir ce qu’un homme capable de reconnaître son crime peut encore faire pour lui échapper. C’est une attention à sa conscience, qui peut devenir complaisance envers son adresse et qui peut aussi nous rendre enfin sensibles à l’absence de celui qu’il a fait disparaître. La mise en scène change la direction de notre regard sans lui accorder d’emblée l’innocence.
+
+Lorsque le portier de Macbeth vient ouvrir à ceux qui frappent, au début de la troisième scène du deuxième acte, il imagine un moment qu’il garde la porte de l’enfer. Son jeu prête à rire. Pour le public, cette comparaison improvisée tombe pourtant d’une singulière justesse. Le personnage ignore ce que les scènes précédentes ont montré. Si l’on prêtait au portier le même savoir qu’aux spectateurs, on perdrait la rencontre entre une plaisanterie et une vérité qu’il n’entendait pas énoncer. L’attrait du passage tient à cet écart de savoir. Le rire n’est pas une approbation de ce qui s’est passé dans la demeure. Il laisse même aux spectateurs la possibilité de s’interroger sur leur plaisir, au moment où un personnage comique nomme sans le savoir ce dont ils éprouvent la gravité. La formule de Bataille s’éclaire ainsi par l’expérience du public autant que par les désirs de Macbeth.
 
 La parole du vicaire et les voix de la veillée confient cette responsabilité à deux auditeurs bien différents. Le vicaire ne demande pas au jeune homme de s’en remettre à son autorité. Il lui soumet l’expérience d’une conscience à reconnaître ou à contester en lui-même. Se cabrer peut donc avoir un sens moral positif. Qui s’arrête lorsqu’on prétend l’intéresser à une cruauté se réserve la liberté de juger ce qu’on attend de lui. Mais la protestation peut aussi servir d’alibi à celui qui doute de la pureté de sa curiosité. Giono lui retire justement cet alibi. Il ne lui donne aucun narrateur supérieur vers qui se tourner pour apprendre, au matin, quelle femme méritait son admiration et laquelle méritait son mépris. Revenir sur l’assurance avec laquelle on a cru l’une, puis l’autre, est une tâche plus exigeante que de proclamer que le mal fait horreur. Il faut pouvoir nommer ce qui a emporté notre adhésion, l’affection généreuse, la force d’un personnage, ou tout simplement le talent de celle qui raconte.
 
