@@ -32,5 +32,41 @@
       "fournisseur": "codex",
       "agent": "astra_maths"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3a",
+      "3b",
+      "3c",
+      "4",
+      "5a",
+      "5b",
+      "6",
+      "7",
+      "8a",
+      "8b",
+      "8c",
+      "9",
+      "10",
+      "11a",
+      "11b",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17"
+    ],
+    "precision": "Les 23 repères de questions et sous-questions ont été rapprochés dans l’ordre du sujet officiel et dans chacune des deux éditions. La portée de la rédaction ou de la révision est conservée dans le journal cité.",
+    "origine_attestation": {
+      "commit_du_journal": "2568baabcb7eedddf1f0e5d11aa23abac23167ba",
+      "sha256_sujet_controle": "f5e94c0e31aacf97fc2db0ca0373a1d11c72f8f3596ab62bf3a17649260efd89",
+      "phase": "redaction",
+      "date": "2026-11-24",
+      "perimetre": "Rédaction intégrale des 23 questions et sous-questions, contrôle de la monotonie imprimée en 1 et des raccords du pendule, figure calculée par la moyenne arithmético-géométrique."
+    }
+  }
 }
