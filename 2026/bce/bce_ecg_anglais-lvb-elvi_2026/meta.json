@@ -16,16 +16,24 @@
   },
   "sources": {
     "sujet": "https://www.concours-bce.com/sites/default/files/2026-04/76%20GB%20-%20LANGUE_VIVANTE_B_ELVI_ALLEMAND_ANGLAIS_ESPAGNOL.pdf#page=7",
-    "sujet_sha256": "3c3b5c1c8df940530b89438e51c458c92a8cbdf6e7752a643ca18057eb6ac1a0"
+    "sujet_sha256": "3c3b5c1c8df940530b89438e51c458c92a8cbdf6e7752a643ca18057eb6ac1a0",
+    "rapport_jury": "https://www.concours-bce.com/sites/default/files/2026-10/76%20-%20Anglais%20LVB%20Elvi%202026.pdf",
+    "rapport_sha256": "6489641fb898bf9d8fe2bee9d95ccf29628013385fd93d0b588180b046669ef7"
   },
   "figures": [
     {
       "fichier": "figures/dossier.svg",
       "question": "Dossier",
       "legende": "From an available pitch to a lasting opportunity"
+    },
+    {
+      "fichier": "figures/revenus.svg",
+      "question": "Essai, document 5",
+      "legende": "Earnings of the 15 highest-paid athletes in each group, 2024",
+      "description": "Aggregate earnings in millions of US dollars. Women: 157 from endorsements, 64 from salaries or winnings. Men: 534 from endorsements, 1,360 from salaries or winnings. Shared linear scale, from zero."
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -36,6 +44,44 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Trois exercices de LVB anglaise, résumé comparé sur l’accès des filles aux activités sportives, essai personnel documenté, traduction du passage circonscrit sur le Tour de France femmes et schéma."
+    },
+    {
+      "phase": "lecture_rapport_jury",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": false,
+      "agent": "fui_physique_deux",
+      "perimetre": "Rapport BCE ELVi anglais 2026 du niveau correspondant, critères et remarques sur les trois exercices confrontés au dossier original."
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux",
+      "perimetre": "Sujet de langue anglaise 76 GB, p. 7–11 : cinq documents et bornes du thème. Accès aux terrains, témoignage de Jill Scott, Austen dans la caricature de Matt, quatre montants agrégés du graphique et unités, distinction entre gains et parrainages. Traduction limitée aux quatre paragraphes entre crochets. Résumé et essai recomptés dans les deux éditions : 263 mots, 375 mots."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I. Résumé analytique comparatif",
+      "II. Essai argumenté",
+      "III. Thème anglais"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "origine_attestation": {
+      "phase": "revision",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "3c3b5c1c8df940530b89438e51c458c92a8cbdf6e7752a643ca18057eb6ac1a0",
+      "perimetre": "Sujet de langue anglaise 76 GB, p. 7–11 : cinq documents et bornes du thème. Accès aux terrains, témoignage de Jill Scott, Austen dans la caricature de Matt, quatre montants agrégés du graphique et unités, distinction entre gains et parrainages. Traduction limitée aux quatre paragraphes entre crochets. Résumé et essai recomptés dans les deux éditions : 263 mots, 375 mots."
+    }
+  }
 }
