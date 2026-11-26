@@ -101,5 +101,99 @@
       "fournisseur": "codex",
       "agent": "astra_maths"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "IV.1",
+      "IV.2",
+      "IV.3",
+      "IV.4",
+      "V.1",
+      "V.2",
+      "V.3"
+    ],
+    "subdivisions_du_sujet": {
+      "I.2": [
+        "a",
+        "b",
+        "c"
+      ],
+      "I.5": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "II.3": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "i",
+        "ii",
+        "iii"
+      ],
+      "II.4": [
+        "a",
+        "b",
+        "i",
+        "ii"
+      ],
+      "III.1": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "III.2": [
+        "a",
+        "b",
+        "c"
+      ],
+      "IV.1": [
+        "a",
+        "b",
+        "i",
+        "ii",
+        "iii",
+        "iv",
+        "c",
+        "d"
+      ],
+      "V.2": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ]
+    },
+    "precision": "Les 22 questions des parties I à V et les subdivisions en lettres et en chiffres romains correspondent aux réponses des deux éditions. Le feuillet imprimé 4 a été relu par reconnaissance optique sur la page 5 du PDF officiel.",
+    "origine_attestation": {
+      "commit_du_journal": "4f8657796d47e7ae5f4fde0e941dd3391e5c47c5",
+      "sha256_sujet_controle": "6a57775d07f73529d504eb006219e212e91308346b7211a728585398b221716d",
+      "phase": "relecture_corrige",
+      "date": "2026-11-24",
+      "perimetre": "Relecture des 22 questions, de leurs subdivisions, des indications et des sept figures sur le sujet officiel, y compris sa page 4 numérisée. La ligne Mathématiques des annales ENS ne donne aucun lien vers un rapport. Encadrement du risque de sous-estimer le nombre d’espèces en II.6, justification de l’équiprobabilité en V.2(c), ajout des quatre schémas qui figuraient seulement dans le guidé au corrigé brut."
+    }
+  }
 }
