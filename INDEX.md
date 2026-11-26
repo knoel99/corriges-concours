@@ -2081,6 +2081,8 @@
 | 2008 | X | MP | Deuxième composition de mathématiques | [md](2008/x/x_mp_deuxieme-composition-de-mathematiques_2008/brut.md) | [md](2008/x/x_mp_deuxieme-composition-de-mathematiques_2008/guide.md) |
 | 2009 | X | MP | Deuxième composition de mathématiques | [md](2009/x/x_mp_deuxieme-composition-de-mathematiques_2009/brut.md) | [md](2009/x/x_mp_deuxieme-composition-de-mathematiques_2009/guide.md) |
 | 2010 | X | MP | Deuxième composition de mathématiques | [md](2010/x/x_mp_deuxieme-composition-de-mathematiques_2010/brut.md) | [md](2010/x/x_mp_deuxieme-composition-de-mathematiques_2010/guide.md) |
+| 1997 | X | MP | Première composition de mathématiques | [md](1997/x/x_mp_premiere-composition-de-mathematiques_1997/brut.md) | [md](1997/x/x_mp_premiere-composition-de-mathematiques_1997/guide.md) |
+| 1997 | X | MP | Deuxième composition de mathématiques | [md](1997/x/x_mp_deuxieme-composition-de-mathematiques_1997/brut.md) | [md](1997/x/x_mp_deuxieme-composition-de-mathematiques_1997/guide.md) |
 | 1997 | X | MP | Informatique (option) | [md](1997/x/x_mp_informatique-option_1997/brut.md) | [md](1997/x/x_mp_informatique-option_1997/guide.md) |
 | 1999 | X | MP | Informatique (option) | [md](1999/x/x_mp_informatique-option_1999/brut.md) | [md](1999/x/x_mp_informatique-option_1999/guide.md) |
 | 2000 | X | MP | Informatique (option) | [md](2000/x/x_mp_informatique-option_2000/brut.md) | [md](2000/x/x_mp_informatique-option_2000/guide.md) |
