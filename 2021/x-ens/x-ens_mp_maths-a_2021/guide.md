@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
 L’épreuve du 12 avril 2021 dure quatre heures. Elle étudie les sous-groupes finis de matrices entières inversibles sur les entiers. Elle aboutit à une borne sur leur cardinal qui dépend de la dimension et à une meilleure borne pour les groupes de cardinal une puissance première. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/uploads/2021/07/2021_MP_sujet_MathA.pdf)
@@ -53,7 +55,7 @@ L’égalité $g^d=I_n$ fait de $X^d-1$ un polynôme annulateur. Ses racines com
 
 #### Solution
 
-Les multiples positifs de $q$ au plus égaux à $m$ sont $q,2q,\ldots,\lfloor m/q\rfloor q$. Il y en a $\lfloor m/q\rfloor$, y compris zéro si $m<q$.
+Les multiples positifs de $q$ au plus égaux à $m$ sont $q,2q,\ldots,\lfloor m/q\rfloor q$. Il y en a $\lfloor m/q\rfloor$, et ce nombre vaut zéro si $m<q$.
 
 ### Question P.3b
 
@@ -349,7 +351,7 @@ Les traces entières de $g$ et $g^\ell$ ont chacune pour module au plus $n$ par 
 
 #### Solution
 
-Soit $q\le2n$ un nombre premier. Si $q$ ne divise pas $k$, il figure dans le produit définissant $m$ et $m\equiv k\not\equiv0\pmod q$. Si $q\mid k$, alors $q\ne p$ puisque $p\nmid k$ et $q$ ne figure pas dans ce produit. L’additif $p^r\prod\ell$ est donc premier à $q$, ce qui interdit encore $q\mid m$. Ainsi tous les facteurs premiers de $m$ dépassent $2n$. Par exemple, pour $n=2$, $p=3$, $r=2$ et $k=2$, les petits premiers sont $2,3$ et seul $3$ intervient dans le produit. On obtient $m=2+9\cdot3=29$. On a bien $g^{29}=g^2$ dans un groupe d’ordre neuf, puisque les deux exposants diffèrent de $27$.
+Soit $q\le2n$ un nombre premier. Si $q$ ne divise pas $k$, il figure dans le produit définissant $m$ et $m\equiv k\not\equiv0\pmod q$. Si $q\mid k$, alors $q\ne p$ puisque $p\nmid k$ et $q$ ne figure pas dans ce produit. L’additif $p^r\prod\ell$ est donc premier à $q$, ce qui interdit encore $q\mid m$. Ainsi tous les facteurs premiers de $m$ dépassent $2n$. Par exemple, pour $n=2$, prenons le groupe d’ordre $3$ engendré par la matrice de trace $-1$ construite en I.4. Avec $p=3$, $r=1$ et $k=2$, les petits premiers sont $2,3$ et seul $3$ intervient dans le produit. On obtient $m=2+3\cdot3=11>2n$. Dans ce groupe, $g^{11}=g^2$ car $g^3=I_2$ et les exposants diffèrent de $9$.
 
 ### Question III.7b
 

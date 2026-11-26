@@ -10,9 +10,11 @@
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/07/2021_MP_sujet_MathA.pdf",
-    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/10/21_MP_rap_eMathA.pdf"
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/10/21_MP_rap_eMathA.pdf",
+    "sha256_sujet": "2f545db91055742f232d685d0a1aeb1cf33865a973d21dfc0bde357af41947ba",
+    "sha256_rapport_jury": "7730698eafa6bfd07d53faef69346a77ac79ab402fc9fced98d467bf36956b84"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "figures": [
     {
       "fichier": "figures/valuation-factorielle.svg",
@@ -106,6 +108,76 @@
       "perimetre": "Relecture intégrale des 44 réponses et des six illustrations existantes dans les deux éditions face aux originaux. Exemple au module deux, distinction des deux types de facteurs premiers en III.7, noyau tensoriel et réalisation explicite de la borne 3⁴ en dimension sept. Ajout du schéma des trois blocs.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_maths_b_recentes",
+      "modifications": true,
+      "perimetre": "Comparaison des 44 repères et des sept figures au sujet et au rapport. Clarification du compte des multiples en P.3a et remplacement de l’exemple arithmétique de III.7a par un groupe effectivement réalisable en dimension deux. Vérification des congruences, de la multiplicité des fibres et de la réalisation du cardinal 81."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "P.1",
+      "P.2",
+      "P.3a",
+      "P.3b",
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7",
+      "II.1a",
+      "II.1b",
+      "II.1c",
+      "II.2a",
+      "II.2b",
+      "III.1a",
+      "III.1b",
+      "III.2",
+      "III.3",
+      "III.4a",
+      "III.4b",
+      "III.4c",
+      "III.5",
+      "III.6",
+      "III.7a",
+      "III.7b",
+      "III.8a",
+      "III.8b",
+      "III.9",
+      "III.10",
+      "IV.1a",
+      "IV.1b",
+      "IV.2i",
+      "IV.2ii",
+      "IV.2iii",
+      "IV.3a",
+      "IV.3b",
+      "IV.4a",
+      "IV.4b",
+      "IV.5a",
+      "IV.5b",
+      "IV.6a",
+      "IV.6b"
+    ],
+    "precision": "Énoncé de 6 pages PDF et rapport de 5 pages PDF. Comparaison des 44 repères et des sept figures au sujet et au rapport. Clarification du compte des multiples en P.3a et remplacement de l’exemple arithmétique de III.7a par un groupe effectivement réalisable en dimension deux. Vérification des congruences, de la multiplicité des fibres et de la réalisation du cardinal 81.",
+    "origine_attestation": {
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "2f545db91055742f232d685d0a1aeb1cf33865a973d21dfc0bde357af41947ba",
+      "sha256_rapport_jury_controle": "7730698eafa6bfd07d53faef69346a77ac79ab402fc9fced98d467bf36956b84",
+      "perimetre": "Comparaison des 44 repères et des sept figures au sujet et au rapport. Clarification du compte des multiples en P.3a et remplacement de l’exemple arithmétique de III.7a par un groupe effectivement réalisable en dimension deux. Vérification des congruences, de la multiplicité des fibres et de la réalisation du cardinal 81.",
+      "commit_edition_anterieure": "50e5144aecfbaaa2ce18542971629cfc047c2764"
+    }
+  }
 }

@@ -10,9 +10,11 @@
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20MP%20SUJET%20ECRIT%20MATHEMATIQUES%20A%20%28XLCR%29.pdf",
-    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20MP%20RAPPORT%20ECRIT%20MATHEMATIQUES%20A%20%28XLCR%29.pdf"
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20MP%20RAPPORT%20ECRIT%20MATHEMATIQUES%20A%20%28XLCR%29.pdf",
+    "sha256_sujet": "65a0efd5f848fd0604b7b22b5b77ecbecac9f361e573f66bcc98174cdc33d081",
+    "sha256_rapport_jury": "6a836b1af6f87b703eb0b0743f0a39a178ae34485c4548839e0a8ed49bd0fc71"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "figures": [
     {
       "fichier": "figures/sommes-de-carres-modulo-trois.svg",
@@ -101,6 +103,62 @@
       "perimetre": "Relecture des 30 réponses et des six figures face au sujet et au rapport. Une réalisation minimale de racine de trois en dimension trois précise l’obstruction modulo trois. Vérification de la positivité et du polynôme caractéristique de la construction finale.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_maths_b_recentes",
+      "modifications": true,
+      "perimetre": "Comparaison des 30 repères et des six figures au sujet et au rapport. Contrôle de la construction par blocs, du signe de la dérivée logarithmique, des identités de Newton, de la positivité sur les deux corps et des dernières colonnes de la matrice compagnon. Précision des dimensions du vecteur propre et de l’orientation des colonnes dans les indications."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2a",
+      "2b",
+      "2c",
+      "2d",
+      "3a",
+      "3b",
+      "3c",
+      "4a",
+      "4b",
+      "5",
+      "6",
+      "7",
+      "8a",
+      "8b",
+      "8c",
+      "9",
+      "10",
+      "11a",
+      "11b",
+      "12",
+      "13a",
+      "13b",
+      "14",
+      "15a",
+      "15b",
+      "16",
+      "17a",
+      "17b",
+      "18"
+    ],
+    "precision": "Énoncé de 6 pages PDF et rapport de 6 pages PDF. Comparaison des 30 repères et des six figures au sujet et au rapport. Contrôle de la construction par blocs, du signe de la dérivée logarithmique, des identités de Newton, de la positivité sur les deux corps et des dernières colonnes de la matrice compagnon. Précision des dimensions du vecteur propre et de l’orientation des colonnes dans les indications.",
+    "origine_attestation": {
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "65a0efd5f848fd0604b7b22b5b77ecbecac9f361e573f66bcc98174cdc33d081",
+      "sha256_rapport_jury_controle": "6a836b1af6f87b703eb0b0743f0a39a178ae34485c4548839e0a8ed49bd0fc71",
+      "perimetre": "Comparaison des 30 repères et des six figures au sujet et au rapport. Contrôle de la construction par blocs, du signe de la dérivée logarithmique, des identités de Newton, de la positivité sur les deux corps et des dernières colonnes de la matrice compagnon. Précision des dimensions du vecteur propre et de l’orientation des colonnes dans les indications.",
+      "commit_edition_anterieure": "58b6cdd40a7173ee681ea9940b32a8f906d6253a"
+    }
+  }
 }
