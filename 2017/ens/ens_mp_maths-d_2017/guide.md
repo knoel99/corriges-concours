@@ -21,7 +21,7 @@ Soient $g,h$ monotones par morceaux avec des ensembles finis de découpe. Sur ch
 
 L’illustration de la page 2 peut être contrôlée sans compter à vue. Pour $f(x)=x^2-5/4$, les zéros des dérivées successives viennent de $(f^k)'(x)=2^k\prod_{j=0}^{k-1}f^j(x)$. Pour $k=3$, ce sont $0$, les deux racines de $x^2=5/4$, puis les quatre racines de $x^2=5/4\pm\sqrt{5/4}$. Elles sont distinctes et simples. On obtient ainsi deux, quatre, puis huit intervalles de stricte monotonie. Le dessin utilise l’intervalle stable $[-\beta,\beta]$, où $\beta=(1+\sqrt6)/2$.
 
-![Figure 2 — Les zéros successifs du produit des dérivées divisent les trois graphes en deux, quatre et huit plis.](figures/trois-iteres-quadratiques.svg)
+![Figure 1 — Les zéros successifs du produit des dérivées divisent les trois graphes en deux, quatre et huit plis.](figures/trois-iteres-quadratiques.svg)
 
 ## I. Orbites bornées des polynômes quadratiques
 
@@ -274,7 +274,7 @@ Les images sont $J_2\cup J_3$, $J_1\cup J_2\cup J_3$, $J_1\cup J_2$, dans cet or
 $$M=\begin{pmatrix}0&1&1\\1&1&1\\1&1&0\end{pmatrix}.$$
 Le vecteur $(1,0,-1)$ est propre de valeur $-1$. Sur les vecteurs $(x,y,x)$, la transformation des deux coordonnées est $(x+y,2x+y)$, de valeurs propres $1+\sqrt2$ et $1-\sqrt2$. Ces trois valeurs épuisent le spectre.
 
-![Figure 1 — Les extrema du cubique et les images des deux bords déterminent les intervalles accessibles depuis chacun des trois plis.](figures/cubique-transitions.svg)
+![Figure 2 — Les extrema du cubique et les images des deux bords déterminent les intervalles accessibles depuis chacun des trois plis.](figures/cubique-transitions.svg)
 
 ### Question III.2e
 
