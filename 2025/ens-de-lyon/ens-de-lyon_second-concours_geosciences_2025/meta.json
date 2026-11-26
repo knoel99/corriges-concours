@@ -12,7 +12,9 @@
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_sujet_ST.pdf",
     "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/09/25_2cc_rap_eST.pdf",
     "sujet_sha256": "81a8c1ff9f25ff043b54a412b583d9e437e398929ecc554ecd5be3ae8646096b",
-    "rapport_sha256": "df1417efbf28d9a0760a48d25714d1a4180ba0539f0c713398555ee3da32ee10"
+    "rapport_sha256": "df1417efbf28d9a0760a48d25714d1a4180ba0539f0c713398555ee3da32ee10",
+    "pages_sujet": 7,
+    "pages_rapport": 2
   },
   "figures": [
     {
@@ -46,7 +48,7 @@
       "legende": "La limite sismogène est superficielle au centre. Les deux anomalies de vitesse sont interprétées comme des régions magmatiques, avec une connexion schématique."
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "provenance": {
     "redaction": {
       "provider": "codex",
@@ -79,6 +81,102 @@
       "perimetre": "Relecture des éditions brute et guidée. Contrôle des quatorze réponses, des cartes et des coupes avec le sujet et le rapport de jury. Recalcul de la migration apparente, des gradients thermiques, de la datation rubidium-strontium et de la dispersion des retombées de Lava Creek.",
       "agent": "astra_physique",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Relecture des quatorze questions et des deux éditions. Comparaison des échelles et des signes en tomographie, des référentiels de migration, de la rupture de Lost River et des calculs de datation et de retombées. Rétablissement des deux parties du sujet."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": 1,
+        "page_pdf": 2,
+        "documents_controles": "Figure 1, annexe A.3"
+      },
+      {
+        "question": 2,
+        "page_pdf": 2,
+        "documents_controles": "Figure 1, annexe A.3"
+      },
+      {
+        "question": 3,
+        "page_pdf": 2,
+        "documents_controles": "Figure 2, enveloppe, histogramme et coupe"
+      },
+      {
+        "question": 4,
+        "page_pdf": 3,
+        "documents_controles": "Figure 1, annexes A.2 et A.3"
+      },
+      {
+        "question": 5,
+        "page_pdf": 3,
+        "documents_controles": "Figure 1, annexes A.1 et A.2"
+      },
+      {
+        "question": 6,
+        "page_pdf": 3,
+        "documents_controles": "Annexe A.4, carte du Moho et anomalie P à 35 km"
+      },
+      {
+        "question": 7,
+        "page_pdf": 3,
+        "documents_controles": "Figure 2 et annexe A.5, vitesse S à 5 km"
+      },
+      {
+        "question": 8,
+        "page_pdf": 4,
+        "documents_controles": "Tableau Rb-Sr et figure 1"
+      },
+      {
+        "question": 9,
+        "page_pdf": 4,
+        "documents_controles": "Figure 3, solidus et liquidus"
+      },
+      {
+        "question": 10,
+        "page_pdf": 4,
+        "documents_controles": "Tableau Rb-Sr et figure 3"
+      },
+      {
+        "question": 11,
+        "page_pdf": 4,
+        "documents_controles": "Croquis des textures de rhyolite et granite"
+      },
+      {
+        "question": 12,
+        "page_pdf": 4,
+        "documents_controles": "Figure 2, annexes A.2, A.4 et A.5"
+      },
+      {
+        "question": 13,
+        "page_pdf": 4,
+        "documents_controles": "Annexe A.6 et épaisseurs du sujet"
+      },
+      {
+        "question": 14,
+        "page_pdf": 4,
+        "documents_controles": "Annexe A.6 et conséquences atmosphériques"
+      }
+    ],
+    "annexes": "A.1–A.6, pages 5 à 7"
+  }
 }

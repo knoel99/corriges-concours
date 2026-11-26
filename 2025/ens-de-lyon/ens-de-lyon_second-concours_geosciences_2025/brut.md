@@ -6,7 +6,11 @@
 
 **Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-## I — Trace volcanique et déformation régionale
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Formation et évolution d’un super-volcan, le cas de Yellowstone. Épreuve écrite de trois heures. [Sujet et annexes](https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_sujet_ST.pdf) · [Rapport du jury](https://banques-ecoles.fr/cms/wp-content/uploads/2025/09/25_2cc_rap_eST.pdf)
+
+## A — Structure et évolution du centre éruptif dans son contexte géodynamique régional
 
 ### Question 1
 
@@ -32,6 +36,8 @@ Le modèle d’un **point chaud** suppose une source mantellique durable et peu 
 
 L’alignement Hawaii–Empereur fournit un exemple océanique, et la trace Réunion–Chagos–Laccadives prolonge un épisode ancien associé aux trapps du Deccan. Un manteau chaud remontant peut franchir son solidus par décompression et fournir des liquides basaltiques. Sous un continent, ces apports chauffent la croûte et peuvent alimenter des magmas plus siliceux par différenciation et fusion crustale. L’alignement daté soutient le modèle ; il ne mesure pas directement la profondeur d’origine du panache.
 
+Un contrôle cartographique part du centre de McDermitt vers Yellowstone. La longitude devient moins occidentale et la latitude augmente. Les composantes est et nord sont donc toutes deux positives dans le sens ancien–récent, et le vecteur inverse diffère exactement de 180°.
+
 ### Question 3
 
 Sur la coupe de la figure 2, les séismes restent pour l’essentiel dans la croûte superficielle. À l’ouest, la base de la concentration d’hypocentres atteint environ 15 à 18 km. Elle remonte sous la caldera : le maximum de résistance de l’enveloppe fournie se place vers 5 km et l’histogramme situe environ 80 % des foyers dans les six premiers kilomètres. Quelques foyers plus profonds existent. À l’est de la caldera, la distribution s’élargit de nouveau localement.
@@ -53,15 +59,19 @@ $$M_0=\mu LWD\simeq(3\times10^{10})(5\times10^4)(1{,}7\times10^4)(2)\simeq5{,}1\
 $$M_w=\tfrac23\log_{10}M_0-6{,}06\simeq7{,}1.$$
 La magnitude d’une rupture majeure plausible est donc **de l’ordre de 7**. Avec 30–60 km de rupture, 15–20 km de largeur et 1–3 m de glissement, on obtient environ 6,7–7,3. Un rejet local en surface et un glissement moyen sur le plan sont deux mesures différentes. La segmentation et la longueur de rupture simultanée empêchent d’en déduire une borne maximale stricte.
 
-## II — Structure sous la caldera et histoire du magma
+L’annexe A.2 montre la rupture de 1983 à Lost River. Pour estimer la magnitude maximale plausible, on prend la largeur sismogène sur le flanc ouest de la figure 2, où se situe la faille. À longueur et glissement égaux, choisir 5 km de profondeur cassante, valeur propre au centre chaud, diviserait le moment par trois et réduirait la magnitude d’environ 0,32.
 
 ### Question 6
 
 Dans l’annexe A.4, le Moho avoisine **40 km**, avec des variations régionales de plusieurs kilomètres. À 35 km, on échantillonne par conséquent la croûte inférieure ou le voisinage de sa base. Une anomalie **négative** de vitesse P apparaît sous le contour de la caldera, surtout dans sa partie centrale et méridionale. Les couleurs chaudes correspondent ici à des ondes plus lentes que dans le modèle de référence. Une croûte inférieure chaude, alimentée par du magma et contenant localement du liquide, explique cette anomalie et l’apport de chaleur au système superficiel. Une tomographie de vitesse seule ne détermine pas une fraction de liquide unique.
 
+Les deux légendes de l’annexe A.4 se lisent séparément. Sur la carte régionale, la couleur code la profondeur du Moho en kilomètres (échelle de 20 à 50 km). Sur la coupe horizontale à 35 km, elle code une variation relative de vitesse en pourcentage. Le noyau rouge, dans le contour noir de Yellowstone, est de l’ordre de −10 %, avec une échelle qui descend jusqu’à −20 %. Une telle mesure localise une région lente à cette profondeur.
+
 ### Question 7
 
 À 5 km, l’annexe A.5 montre un noyau allongé dans la caldera où $V_S$ descend vers $2{,}2$–$2{,}8\ \mathrm{km/s}$. Les terrains environnants présentent souvent $3{,}2$–$3{,}8\ \mathrm{km/s}$. Comme $V_S=\sqrt{\mu/\rho}$, un matériau porté à haute température, fracturé ou partiellement fondu devient moins rigide et ralentit les ondes S. La coïncidence avec l’anomalie profonde et la remontée de la transition cassant–ductile soutient un **réservoir magmatique superficiel partiellement cristallisé**. Les séismes se concentrent préférentiellement dans les parties solides et sur les bordures. Des vitesses S finies sont compatibles avec une charpente solide traversée de liquide.
+
+## B — Processus magmatiques et conséquences volcaniques
 
 ### Question 8
 
@@ -75,6 +85,8 @@ C’est l’âge fourni par **les trois valeurs du tableau**, arrondies à cinq 
 
 Peut-on expliquer la discordance par l’arrondi du tableau ? Si chacun des deux rapports de strontium extrêmes est arrondi à $5\times10^{-6}$ près, leur différence est comprise entre $0{,}000240$ et $0{,}000260$. Diviser par l’écart $51{,}2-11{,}7=39{,}5$ des rapports de rubidium puis appliquer $t=\ln(1+m)/\lambda$ donne $0{,}428$ à $0{,}463\ \mathrm{Ma}$. Même en tenant compte du dernier chiffre de rubidium, la valeur cartographique de $0{,}630\ \mathrm{Ma}$ est extérieure à cette plage. Il faudrait des incertitudes analytiques, des données ou des hypothèses géologiques supplémentaires pour rapprocher les deux estimations.
 
+Le maintien de la même signature initiale est testable avec la roche totale. Avec la droite ainsi obtenue, son rapport attendu à $x=30{,}1$ est proche de 0,710317, à quelques millionièmes du 0,71032 imprimé. L’alignement interne des trois analyses explique pourquoi la discordance avec le repère cartographique mérite d’être indiquée séparément.
+
 ### Question 9
 
 Le trajet de la figure 3 représente un magma granitique hydraté (5 % d’eau dans le modèle) d’abord entièrement liquide. Pendant la remontée, la pression diminue et le magma échange de la chaleur avec l’encaissant plus froid. Il franchit le **liquidus**, cristallise progressivement dans l’intervalle liquide + cristaux, puis franchit le **solidus** vers 1,5 kbar, soit environ **5 km** sur l’axe de profondeur. La température de fin de cristallisation lue est de l’ordre de $750$–$770\ ^\circ\mathrm C$. Le niveau est cohérent avec l’anomalie S superficielle ; dans un réservoir naturel, des zones déjà cristallisées peuvent voisiner avec du magma encore mobile.
@@ -86,8 +98,6 @@ Le trajet de la figure 3 représente un magma granitique hydraté (5 % d’eau d
 Les apports basaltiques profonds fournissent chaleur et matière. La cristallisation de minéraux précoces riches en Fe, Mg et Ca, puis leur séparation, laisse un liquide résiduel enrichi en silice, en éléments incompatibles et en volatils. La fusion partielle de croûte continentale et/ou son assimilation peuvent y ajouter une composante felsique. Le rapport initial $^{87}\mathrm{Sr}/^{86}\mathrm{Sr}\simeq0{,}71013$ dépasse nettement le repère mafique 0,702 du sujet. Une simple cristallisation fractionnée en système fermé changerait fortement Rb/Sr mais très peu le rapport isotopique initial de Sr. Cette observation appuie donc une contribution de matériau crustal radiogénique.
 
 Lors de la décompression, les volatils exsolvent et le magma rhyolitique visqueux se fragmente. Les colonnes éruptives peuvent s’effondrer en courants pyroclastiques de densité. Leurs dépôts de cendres, ponces et fragments, parfois soudés à chaud, forment les ignimbrites. Les cendres fines peuvent aussi être transportées loin par le vent.
-
-## III — Roches, coupe régionale et effets d’une éruption
 
 ### Question 11
 
