@@ -10,6 +10,8 @@
 
 **Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** Le sujet s'intitule *Étude des ondes mécaniques dans une plaque élastique*. Il construit, par une démarche **entièrement énergétique**, la physique des ondes de flexion d'une plaque mince, puis l'applique à des situations concrètes (verre qui chante, séismes, lac gelé). Il se termine par une méthode optique de mesure de ces vibrations, la vibrométrie laser. L'épreuve dure 4 heures, la calculatrice est **interdite**, et le sujet compte **56 questions** en six parties, dont certaines sont indépendantes.
@@ -822,7 +824,7 @@ $$\boxed{\epsilon=\frac{\lambda_l}{8}+p\frac{\lambda_l}{4},\ p\in\mathbb{Z}}$$
 
 Par exemple $\epsilon=\lambda_l/8\approx39$ nm.
 
-Le réglage doit être fait à une petite fraction de $\lambda_l/8$ près, soit **quelques nanomètres**, et rester stable à ce niveau malgré les dérives thermiques. Un écart $\delta\epsilon$ réduit la pente d'un facteur $\cos(4\pi\delta\epsilon/\lambda_l)$.
+À une erreur de réglage $\delta\epsilon$ près, la sensibilité relative à sa valeur de quadrature vaut $|\cos(4\pi\delta\epsilon/\lambda_l)|$. Par exemple, conserver au moins 99 % de la pente maximale impose à proximité de ce point $|\delta\epsilon|\le\lambda_l\arccos(0{,}99)/(4\pi)\simeq3{,}5\ \mathrm{nm}$ pour $\lambda_l=315\ \mathrm{nm}$. La précision requise dépend donc de la perte de sensibilité admise.
 
 > [!JURY]
 > Le rapport 2026 accepte une réponse qualitative bien orientée : « Les réponses qualitatives étaient recevables lorsqu'elles identifiaient correctement le réglage maximisant la pente de la réponse en phase. » (p. 5)

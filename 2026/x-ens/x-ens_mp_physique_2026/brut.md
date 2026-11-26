@@ -10,6 +10,8 @@
 
 **Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Épreuve n° 5, durée 4 h, calculatrice interdite. Sujet : *Étude des ondes mécaniques dans une plaque élastique*.
 
 ## I. Préambule : onde de compression unidimensionnelle
@@ -470,7 +472,7 @@ $$\boxed{\epsilon=\frac{\lambda_l}{8}+p\,\frac{\lambda_l}{4},\ p\in\mathbb{Z}}$$
 
 Par exemple $\epsilon=\lambda_l/8\approx39$ nm.
 
-On tourne la vis micrométrique pour déplacer $M_1$ d'un huitième de longueur d'onde à partir du contact optique. Le réglage doit être fait à une petite fraction de $\lambda_l/8$ près, soit à quelques nanomètres. Un écart $\delta\epsilon$ réduit la pente d'un facteur $\cos(4\pi\delta\epsilon/\lambda_l)$ et fait réapparaître un terme quadratique. Le réglage doit aussi rester stable, à mieux que quelques nanomètres, vis-à-vis des dilatations thermiques et des vibrations parasites.
+On tourne la vis micrométrique pour déplacer $M_1$ d'un huitième de longueur d'onde à partir du contact optique. À une erreur de réglage $\delta\epsilon$ près, la sensibilité relative à sa valeur de quadrature vaut $|\cos(4\pi\delta\epsilon/\lambda_l)|$. Par exemple, conserver au moins 99 % de la pente maximale impose à proximité de ce point $|\delta\epsilon|\le\lambda_l\arccos(0{,}99)/(4\pi)\simeq3{,}5\ \mathrm{nm}$ pour $\lambda_l=315\ \mathrm{nm}$. La précision requise dépend donc de la perte de sensibilité admise.
 
 ### Question 38
 
