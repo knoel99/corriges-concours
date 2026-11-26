@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve dure trois heures. Chaque candidat traite la langue choisie à l’inscription. La version française vaut 10 points. La question a demande 80 à 100 mots pour 4 points. La question b demande 200 à 250 mots pour 6 points.
 
 [Sujet](https://www.banquept.fr/documents/2009/lv_a_2009.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2009/rapport_lv_a_ecrit_2009.pdf) · [Grille du livret](https://www.banquept.fr/documents/livret/2009/Livret_PT_2009.pdf#page=12)
@@ -126,7 +128,7 @@ En revanche, l’OPEP, qui produit actuellement 40 % du pétrole mondial, est mi
 
 De « Creo que es beneficioso para la cultura » à « el motor del avance tecnológico ».
 
-Carl Goodman. Je crois qu’il est bon pour la culture d’accorder aux jeux vidéo la même latitude qu’au cinéma pour explorer la réalité, et pas seulement l’univers du fantastique. Nous aimons tous passer dans un autre univers. Mais, intellectuellement, il est beaucoup plus intéressant de pouvoir transposer dans un jeu vidéo ce qui se passe autour de nous. Dans nombre de ces jeux, le degré de violence est très élevé. L’un d’eux, par exemple, met en scène un adolescent qui essaie d’échapper à d’autres jeunes qui le maltraitent. Ces jeux prêtent à controverse, car de telles situations existent dans le monde réel, et c’est un défi que d’adapter un jeu vidéo à cette réalité. D’ailleurs, les univers imaginaires sont, eux aussi, des lieux où l’on discute de questions bien réelles. Lorsqu’on incarne un personnage virtuel, c’est comme si un voile se levait et que, paradoxalement, on pouvait s’exprimer plus sincèrement qu’en se présentant sous sa véritable identité. Il y a quelque ironie à penser qu’une personne peut être plus authentique dans cet univers qu’à une soirée.
+Carl Goodman. Je crois qu’il est bon pour la culture d’accorder aux jeux vidéo la même latitude qu’au cinéma pour explorer la réalité, et pas seulement l’univers du fantastique. Nous aimons tous passer dans un autre univers. Mais, intellectuellement, il est beaucoup plus intéressant de pouvoir transposer dans un jeu vidéo ce qui se passe autour de nous. Dans nombre de ces jeux, le degré de violence est très élevé. L’un d’eux, par exemple, met en scène un adolescent qui essaie d’échapper à d’autres jeunes qui le torturent. Ces jeux prêtent à controverse, car de telles situations existent dans le monde réel, et c’est un défi que d’adapter un jeu vidéo à cette réalité. D’ailleurs, les univers imaginaires sont, eux aussi, des lieux où l’on discute de questions bien réelles. Lorsqu’on incarne un personnage virtuel, c’est comme si un voile se levait et que, paradoxalement, on pouvait s’exprimer plus sincèrement qu’en se présentant sous sa véritable identité. Il y a quelque ironie à penser qu’une personne peut être plus authentique dans cet univers qu’à une soirée.
 
 El País. Dans les jeux vidéo, technologie, art et marché se rencontrent. Quelles relations entretiennent-ils ?
 
