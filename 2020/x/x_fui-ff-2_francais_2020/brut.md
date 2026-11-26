@@ -10,11 +10,13 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Cette épreuve de la filière universitaire internationale de formation francophone dure deux heures. Montesquieu examine les effets du commerce dans De l’Esprit des lois (1748, livre XX, chapitre II). L’essai personnel est libre, sans limite de mots.
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Concours 2020, session de printemps. Le samedi 14 mars 2020, de 13 h 30 à 15 h 30 (deux heures). L’essai est bref, libre et sans limitation du nombre de mots. Montesquieu examine le commerce dans *De l’esprit des lois* (1748, livre XX, chapitre II). [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20FUI-FF%20S2%20SUJET%20FRANCAIS.pdf)
 
 ## A1 · La thèse et ses étapes
 
-Montesquieu déplace l’analyse du commerce d’une échelle à une autre. Entre deux nations, l’intérêt de vendre rencontre l’intérêt d’acheter ; la paix permet de poursuivre l’échange. Entre particuliers, en revanche, l’habitude de fixer le prix de chaque service peut étouffer les gestes de générosité. Le raisonnement se nuance encore : le commerce favorise le respect exact de ce qui est dû, tandis que les peuples qu’il qualifie de brigands peuvent, selon lui, pratiquer admirablement l’hospitalité. Aucune de ces deux organisations ne réunit donc à elle seule toutes les vertus.
+Montesquieu déplace l’analyse du commerce d’une échelle à une autre. Entre deux nations, l’intérêt de vendre rencontre l’intérêt d’acheter ; la paix permet de poursuivre l’échange. Entre particuliers, en revanche, l’habitude de fixer le prix de chaque service peut étouffer les gestes de générosité. Le raisonnement se nuance encore : le commerce favorise le respect exact de ce qui est dû, tandis que les peuples qu’il qualifie de brigands peuvent, selon lui, pratiquer admirablement l’hospitalité. La référence à Aristote intervient à un endroit précis : il classe le brigandage parmi les manières d’acquérir. C’est Montesquieu qui oppose ensuite la violence d’une acquisition et la gratuité possible de l’accueil chez un même peuple. Cette coexistence empêche d’ordonner toutes les sociétés sur une échelle unique de perfection morale.
 
 ![Deux effets de l’esprit de commerce.](figures/deux-echelles.svg)
 

@@ -28,9 +28,21 @@
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20FUI-FF%20S2%20SUJET%20FRANCAIS.pdf",
     "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
-    "sujet_sha256": "50a9bf4b1937c5f5b6ee4a1ee25d7e73f2013d467cfc126b03c0659691709019"
+    "sujet_sha256": "50a9bf4b1937c5f5b6ee4a1ee25d7e73f2013d467cfc126b03c0659691709019",
+    "numero_pages_sujet": 3,
+    "reperage": "P. 1 garde et horaires, p. 2 feuillet de séparation paginé, p. 3 texte de Montesquieu (1748, livre XX, chapitre II), quatre notes, A1 à A3 et B.",
+    "modalites_verifiees": {
+      "date_imprimee": "2020-03-14",
+      "horaire_imprime": "13 h 30–15 h 30",
+      "saison": "printemps",
+      "duree": "2 heures",
+      "instructions_materiel": "L’utilisation de dictionnaires et traducteurs électroniques n’est pas autorisée pour cette épreuve.",
+      "bareme": "Aucun barème chiffré sur ce feuillet.",
+      "longueur": "B : bref essai de forme libre, sans limitation du nombre de mots.",
+      "notes_du_texte": 4
+    }
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "revision": {
     "date": "2026-11-24",
     "modele": null,
@@ -85,6 +97,23 @@
       "modifications": true,
       "perimetre": "Relecture des deux échelles du commerce chez Montesquieu, de la formule de justice et de la variante « nations » dans la question. Précision de l’exemple et de l’attribution de l’hospitalité.",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "classiques_2017",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Réintégration du passage sur Aristote et distinction des différents jugements sur le brigandage, ajout du jour et des horaires. Contrôle de la divergence « unions » / « nations », de l’essai et des deux figures."
     }
   ],
   "provenance": {
@@ -101,5 +130,15 @@
       "effort": "ultra",
       "service_tier": null
     }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A1. Thèse et construction à deux échelles ; justice exacte et exemple de l’hospitalité.",
+      "A2 a. Explication de l’effet pacificateur du commerce entre nations.",
+      "A2 b. Explication de la justice exacte et de sa limite morale.",
+      "A3. Prise de position sur les besoins mutuels en respectant « nations » dans la question et « unions » dans l’extrait.",
+      "B. Jugement argumenté sur les échanges entre les peuples, commerciaux ou non, leurs effets moraux et la valeur de l’hospitalité."
+    ]
   }
 }
