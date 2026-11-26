@@ -207,6 +207,7 @@
 | 2025 | ENS de Lyon | Second concours | Mathématiques | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2025/guide.md) |
 | 2017 | ENS de Lyon | Série SES (B/L) | Allemand (oral) | [md](2017/ens-de-lyon/ens-de-lyon_serie-ses-b-l_allemand-oral_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_serie-ses-b-l_allemand-oral_2017/guide.md) |
 | 2017 | ENS de Lyon | Série SES (B/L) | Anglais (oral) | [md](2017/ens-de-lyon/ens-de-lyon_serie-ses-b-l_anglais-oral_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_serie-ses-b-l_anglais-oral_2017/guide.md) |
+| 2017 | ENS de Lyon | Série SES (B/L) | Histoire contemporaine (oral) | [md](2017/ens-de-lyon/ens-de-lyon_serie-ses-b-l_histoire-contemporaine-oral_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_serie-ses-b-l_histoire-contemporaine-oral_2017/guide.md) |
 | 2026 | ENS de Lyon | Série SES (B/L) | Histoire contemporaine (oral) | [md](2026/ens-de-lyon/ens-de-lyon_serie-ses-b-l_histoire-contemporaine-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_serie-ses-b-l_histoire-contemporaine-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Grec (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_grec-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_grec-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Latin (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_latin-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_latin-oral_2026/guide.md) |

@@ -1,0 +1,517 @@
+{
+  "slug": "ens-de-lyon_serie-ses-b-l_histoire-contemporaine-oral_2017",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Série SES (B/L)",
+    "matiere": "Histoire contemporaine (oral)",
+    "annee": 2017,
+    "modalite": "oral"
+  },
+  "intitule": "Histoire",
+  "questions": 48,
+  "sujets": 48,
+  "billets": 24,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/sujet-ses-oral-2017_1506590888219.pdf#page=12",
+    "sujet_sha256": "ea173fbbf1362185f61249f8d412b99a1037d2a9b7b20bdb859f8b374c7fbfca",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/SES_2017.pdf#page=7",
+    "rapport_sha256": "683dcf453b3dd03378fe818b5180c3323430f82164ade00cb47b73bd8f925dda",
+    "precision_sujet": "La rubrique « Histoire » occupe le bas de la page 12 puis toute la page 13. Le fascicule s’arrête après le dernier billet. Vingt-quatre billets comportent chacun deux propositions dont une en italique. À la page 7, le rapport rend compte de vingt-quatre candidats et ne donne aucun autre billet.",
+    "repere_programme": "https://saint-sernin.mon-ent-occitanie.fr/classes-preparatoires-bl-lss/disciplines/histoire/l-histoire-en-cpge-b-l-17468.htm"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/pouvoir-et-petrole.svg",
+      "legende": "Qui décide de l’usage du pétrole ?",
+      "question": "Pétrole et relations internationales (1919-1973)"
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/crises-1956.svg",
+      "legende": "Trois scènes politiques de 1956",
+      "question": "L’année 1956 dans le monde"
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/mondes-1968.svg",
+      "legende": "Trois scènes de contestation en 1968",
+      "question": "L’année 1968 dans le monde"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "histoire_lyon_2017",
+      "perimetre": "Rédaction historique des deux propositions de chaque billet.",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    },
+    {
+      "phase": "revision",
+      "session": "x_maths_b_anciennes",
+      "perimetre": "Confrontation des exposés aux pièces, contrôle des repères, relecture des réponses, rédaction des activités du guidé et des trois figures.",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Staline et le stalinisme",
+      "La question coloniale dans la société française, des années 1880 aux années 1960",
+      "Ouvriers et industries en France de la fin du XIXe siècle aux années 1970",
+      "Guerre et paix en Europe (1914-1945)",
+      "La puissance américaine dans le monde depuis la Première Guerre mondiale",
+      "Les nouveaux médias en France, de la TSF à l’apparition d’internet",
+      "La Chine et le monde depuis 1919",
+      "La France dans les flux migratoires internationaux de l’entre-deux-guerres aux années 1980",
+      "Pétrole et relations internationales (1919-1973)",
+      "La France sous l’Occupation",
+      "Réfugiés, déplacés, exilés dans le monde de la fin de la Première Guerre mondiale au début des années 1970",
+      "Les communistes dans la société française des années 1930 aux années 1980",
+      "Le dollar au XXe siècle",
+      "Le chômage en France depuis les années 1960",
+      "L’année 1956 dans le monde",
+      "Habiter en ville en France, de la fin du XIXe siècle aux années 1970",
+      "Les États du Proche-Orient, acteurs et enjeux des relations internationales des lendemains de la Première Guerre mondiale au début des années 1990",
+      "La consommation de masse en France",
+      "L’établissement d’un nouvel ordre mondial américain (1941-1948) ?",
+      "L’armée française (1914-1997)",
+      "Les Balkans de 1919 aux années 1990",
+      "Manifester en France des années 1930 aux années 1980",
+      "Le nucléaire dans le monde, de 1945 à 1995",
+      "Administrer la France de la fin de la Seconde Guerre mondiale au début des années 1990",
+      "L’Afrique dans les relations internationales de 1919 à 1994",
+      "La modernisation de la France (1945-1981)",
+      "L’enjeu énergétique et les sociétés occidentales depuis 1945",
+      "Les années 1960 en France",
+      "L’Allemagne, puissance européenne (1919-1990)",
+      "La guerre d’Algérie et sa mémoire",
+      "Les frontières dans le monde du lendemain de la Première Guerre mondiale au début des années 1990",
+      "L’Etat et l’économie en France des années 1930 aux années 1990",
+      "L’impérialisme japonais (1918-1945)",
+      "L’éducation en France (1881-1989)",
+      "Science et Guerre froide",
+      "Les campagnes françaises au XXe siècle",
+      "Les enjeux géopolitiques en Extrême-Orient depuis 1919",
+      "Les politiques démographiques en France depuis la fin du XIXe siècle",
+      "L’année 1968 dans le monde",
+      "L’antisémitisme en France de l’Affaire Dreyfus à la loi Gayssot",
+      "Le commerce des matières premières depuis la fin de la Première Guerre mondiale",
+      "Le travail des femmes en France des années 1910 aux années 1980",
+      "Les décolonisations en Afrique",
+      "Le syndicalisme en France depuis le début du XXe siècle",
+      "Tiers monde et tiers-mondisme des années 1950 aux années 1980",
+      "Socialismes et socialistes en France depuis 1905",
+      "L’Europe de Hitler",
+      "Les féminismes dans la société française des années 1890 aux années 1970"
+    ],
+    "detail": "La rubrique « Histoire » occupe le bas de la page 12 puis toute la page 13. Le fascicule s’arrête après le dernier billet. Vingt-quatre billets comportent chacun deux propositions dont une en italique. À la page 7, le rapport rend compte de vingt-quatre candidats et ne donne aucun autre billet."
+  },
+  "journal_billets": [
+    {
+      "titre": "Staline et le stalinisme",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 12,
+      "billet": 1,
+      "option": "A"
+    },
+    {
+      "titre": "La question coloniale dans la société française, des années 1880 aux années 1960",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 12,
+      "billet": 1,
+      "option": "B"
+    },
+    {
+      "titre": "Ouvriers et industries en France de la fin du XIXe siècle aux années 1970",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 12,
+      "billet": 2,
+      "option": "A"
+    },
+    {
+      "titre": "Guerre et paix en Europe (1914-1945)",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 12,
+      "billet": 2,
+      "option": "B"
+    },
+    {
+      "titre": "La puissance américaine dans le monde depuis la Première Guerre mondiale",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 12,
+      "billet": 3,
+      "option": "A"
+    },
+    {
+      "titre": "Les nouveaux médias en France, de la TSF à l’apparition d’internet",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 12,
+      "billet": 3,
+      "option": "B"
+    },
+    {
+      "titre": "La Chine et le monde depuis 1919",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 12,
+      "billet": 4,
+      "option": "A"
+    },
+    {
+      "titre": "La France dans les flux migratoires internationaux de l’entre-deux-guerres aux années 1980",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 12,
+      "billet": 4,
+      "option": "B"
+    },
+    {
+      "titre": "Pétrole et relations internationales (1919-1973)",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 12,
+      "billet": 5,
+      "option": "A"
+    },
+    {
+      "titre": "La France sous l’Occupation",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 12,
+      "billet": 5,
+      "option": "B"
+    },
+    {
+      "titre": "Réfugiés, déplacés, exilés dans le monde de la fin de la Première Guerre mondiale au début des années 1970",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 12,
+      "billet": 6,
+      "option": "A"
+    },
+    {
+      "titre": "Les communistes dans la société française des années 1930 aux années 1980",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 12,
+      "billet": 6,
+      "option": "B"
+    },
+    {
+      "titre": "Le dollar au XXe siècle",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 7,
+      "option": "A"
+    },
+    {
+      "titre": "Le chômage en France depuis les années 1960",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 7,
+      "option": "B"
+    },
+    {
+      "titre": "L’année 1956 dans le monde",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 8,
+      "option": "A"
+    },
+    {
+      "titre": "Habiter en ville en France, de la fin du XIXe siècle aux années 1970",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 8,
+      "option": "B"
+    },
+    {
+      "titre": "Les États du Proche-Orient, acteurs et enjeux des relations internationales des lendemains de la Première Guerre mondiale au début des années 1990",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 9,
+      "option": "A"
+    },
+    {
+      "titre": "La consommation de masse en France",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 9,
+      "option": "B"
+    },
+    {
+      "titre": "L’établissement d’un nouvel ordre mondial américain (1941-1948) ?",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 10,
+      "option": "A"
+    },
+    {
+      "titre": "L’armée française (1914-1997)",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 10,
+      "option": "B"
+    },
+    {
+      "titre": "Les Balkans de 1919 aux années 1990",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 11,
+      "option": "A"
+    },
+    {
+      "titre": "Manifester en France des années 1930 aux années 1980",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 11,
+      "option": "B"
+    },
+    {
+      "titre": "Le nucléaire dans le monde, de 1945 à 1995",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 12,
+      "option": "A"
+    },
+    {
+      "titre": "Administrer la France de la fin de la Seconde Guerre mondiale au début des années 1990",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 12,
+      "option": "B"
+    },
+    {
+      "titre": "L’Afrique dans les relations internationales de 1919 à 1994",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 13,
+      "option": "A"
+    },
+    {
+      "titre": "La modernisation de la France (1945-1981)",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 13,
+      "option": "B"
+    },
+    {
+      "titre": "L’enjeu énergétique et les sociétés occidentales depuis 1945",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 14,
+      "option": "A"
+    },
+    {
+      "titre": "Les années 1960 en France",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 14,
+      "option": "B"
+    },
+    {
+      "titre": "L’Allemagne, puissance européenne (1919-1990)",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 15,
+      "option": "A"
+    },
+    {
+      "titre": "La guerre d’Algérie et sa mémoire",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 15,
+      "option": "B"
+    },
+    {
+      "titre": "Les frontières dans le monde du lendemain de la Première Guerre mondiale au début des années 1990",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 16,
+      "option": "A"
+    },
+    {
+      "titre": "L’Etat et l’économie en France des années 1930 aux années 1990",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 16,
+      "option": "B"
+    },
+    {
+      "titre": "L’impérialisme japonais (1918-1945)",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 17,
+      "option": "A"
+    },
+    {
+      "titre": "L’éducation en France (1881-1989)",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 17,
+      "option": "B"
+    },
+    {
+      "titre": "Science et Guerre froide",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 18,
+      "option": "A"
+    },
+    {
+      "titre": "Les campagnes françaises au XXe siècle",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 18,
+      "option": "B"
+    },
+    {
+      "titre": "Les enjeux géopolitiques en Extrême-Orient depuis 1919",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 19,
+      "option": "A"
+    },
+    {
+      "titre": "Les politiques démographiques en France depuis la fin du XIXe siècle",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 19,
+      "option": "B"
+    },
+    {
+      "titre": "L’année 1968 dans le monde",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 20,
+      "option": "A"
+    },
+    {
+      "titre": "L’antisémitisme en France de l’Affaire Dreyfus à la loi Gayssot",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 20,
+      "option": "B"
+    },
+    {
+      "titre": "Le commerce des matières premières depuis la fin de la Première Guerre mondiale",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 21,
+      "option": "A"
+    },
+    {
+      "titre": "Le travail des femmes en France des années 1910 aux années 1980",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 21,
+      "option": "B"
+    },
+    {
+      "titre": "Les décolonisations en Afrique",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 22,
+      "option": "A"
+    },
+    {
+      "titre": "Le syndicalisme en France depuis le début du XXe siècle",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 22,
+      "option": "B"
+    },
+    {
+      "titre": "Tiers monde et tiers-mondisme des années 1950 aux années 1980",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 23,
+      "option": "A"
+    },
+    {
+      "titre": "Socialismes et socialistes en France depuis 1905",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 23,
+      "option": "B"
+    },
+    {
+      "titre": "L’Europe de Hitler",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 24,
+      "option": "A"
+    },
+    {
+      "titre": "Les féminismes dans la société française des années 1890 aux années 1970",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 13,
+      "billet": 24,
+      "option": "B"
+    }
+  ]
+}
