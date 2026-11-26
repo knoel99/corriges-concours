@@ -1,0 +1,68 @@
+{
+  "slug": "bel_bl_economie-oral-commun-marche-europeen-de-lelectricite_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Économie (oral commun) — Marché européen de l’électricité",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "Le marché européen de l’électricité : efficacité de court terme, défis de long terme",
+  "questions": 0,
+  "documents": 5,
+  "date_revision": "2026-11-26",
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_dossiers_24_juin_economie.pdf#page=20",
+    "sujet_sha256": "7fcdd31dc80d2dd536d34312f0e416cbf4d177be4b4c326f1646eead3e52cd11",
+    "pages_sujet": "20 à 27 sur 27",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_economie_tronc_commun.pdf",
+    "rapport_sha256": "b0b1a696afc5d758d40283be9361a3fe50abd56041e7cad3533c62eabb4c5dd7",
+    "pages_rapport": "1–2, titre confirmé p. 2"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "agent": "fui_physique_un",
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Étude des cinq documents, lecture des axes et projections, exemples chiffrés sur le prix marginal et le contrat pour différence, deux figures originales."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Document 1",
+      "fichier": "figures/prix-marginal.svg",
+      "legende": "Marché horaire stylisé avec trois paliers de coût et deux demandes. Capacités et coûts illustratifs, distincts des données observées."
+    },
+    {
+      "numero": 2,
+      "question": "Documents 1 et 2",
+      "fichier": "figures/contrat-pour-difference.svg",
+      "legende": "Contrat bidirectionnel simplifié pour un MWh au prix d’exercice de 70 euros. Le transfert signé est positif lorsque le producteur reçoit un complément, négatif lorsqu’il reverse la différence."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "precision": "Une question générale sur dossier, sans questions numérotées. Les deux éditions proposent un exposé complet qui traite chaque document.",
+    "documents_entierement_traites": [
+      "Document 1",
+      "Document 2",
+      "Document 3",
+      "Document 4",
+      "Document 5"
+    ],
+    "controle_des_documents": [
+      "Document 1, pages PDF 21–22. Marchés européens, couplage, coût marginal, rente, PPA et contrats pour différence.",
+      "Document 2, pages PDF 23–23. Fonction du marché et importations de l’hiver 2022, débat daté sur les contrats de long terme.",
+      "Document 3, pages PDF 24–25. Prix négatifs et au-dessus de 100 €/MWh, écrêtement, flexibilité et risque d’investissement.",
+      "Document 4, pages PDF 26–26. Fret à batterie, complémentarités dans les bornes, part des transports dans les émissions totales UE-27 et distinction projection/observation.",
+      "Document 5, pages PDF 27–27. 460 TWh en 2022 pour un périmètre agrégé, hausse projetée de 160 à 590 TWh en 2026, périmètre plus étroit des serveurs en 2027, rebond."
+    ]
+  }
+}

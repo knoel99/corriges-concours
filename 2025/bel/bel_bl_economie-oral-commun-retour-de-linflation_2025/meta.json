@@ -1,0 +1,66 @@
+{
+  "slug": "bel_bl_economie-oral-commun-retour-de-linflation_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Économie (oral commun) — Retour de l’inflation",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "Le retour de l’inflation ?",
+  "questions": 0,
+  "documents": 4,
+  "date_revision": "2026-11-26",
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_dossiers_24_juin_economie.pdf#page=1",
+    "sujet_sha256": "7fcdd31dc80d2dd536d34312f0e416cbf4d177be4b4c326f1646eead3e52cd11",
+    "pages_sujet": "1 à 10 sur 27",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_economie_tronc_commun.pdf",
+    "rapport_sha256": "b0b1a696afc5d758d40283be9361a3fe50abd56041e7cad3533c62eabb4c5dd7",
+    "pages_rapport": "1–2, titre confirmé p. 2"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "agent": "fui_physique_un",
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Explication des quatre documents et des graphiques, mise en relation des dates et horizons, calcul illustratif et deux figures originales."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Document 1",
+      "fichier": "figures/inflation-et-niveau-des-prix.svg",
+      "legende": "À gauche, variations annuelles de l’IPCH français. À droite, indice pédagogique construit à partir de ces variations, base 100 en 2020. Banque de France, document 1."
+    },
+    {
+      "numero": 2,
+      "question": "Documents 1, 2 et 4",
+      "fichier": "figures/choc-ponctuel.svg",
+      "legende": "Exemple fictif sur trois années. Un choc unique de 10 % maintient le niveau des prix plus haut après que son effet direct sur le taux de variation a disparu."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "precision": "Une question générale sur dossier, sans questions numérotées. Les deux éditions proposent un exposé complet qui traite chaque document.",
+    "documents_entierement_traites": [
+      "Document 1",
+      "Document 2",
+      "Document 3",
+      "Document 4"
+    ],
+    "controle_des_documents": [
+      "Document 1, pages PDF 2–4. Distinction entre contributions comptables et chocs estimés. IPCH 2,1 %, 5,9 %, 5,7 %.",
+      "Document 2, pages PDF 5–6. Anticipations à douze mois, scénarios de politique commerciale et monétaire.",
+      "Document 3, pages PDF 7–7. Anticipations américaines à cinq ans de 3,5 %, plus haut depuis avril 1995.",
+      "Document 4, pages PDF 8–10. Taux réel et neutre, baril réel et nominal, inflation totale et sous-jacente, dispersion sectorielle. Janvier et février pour les données de 2022."
+    ]
+  }
+}
