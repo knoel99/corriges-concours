@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Dans la grande salle Pierre Boulez de la Philharmonie de Paris, le parterre et les modules de scène changent de hauteur pour adapter la salle aux concerts. Les onze rangs du parterre, le module d’orchestre et la plateforme à double motorisation font ici l’objet de modèles distincts. Les renvois indiquent la page du PDF officiel, garde comprise.
 
 [Sujet et cahier officiels](https://www.banquept.fr/documents/2024/si_a_2024_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2024/rapport_si_a_ecrit_2024.pdf)
@@ -24,7 +26,7 @@ La différence est de dix intervalles de 200 mm, soit $H_{11}^{fin}=2000$ mm. Un
 
 ### Question 3 — Chronométrer l’ouverture rang par rang
 
-Avec $v=1$ m/min, $T_{mep}=1,8$ min, $H_6^{fin}=1,0$ m et $T_6=(1,8-1,0)/v=0,8$ min. Ajouter 15 s de rotation par rang. L’hypothèse $T_{moy}=T_6$ donne $11(1,8+0,25+0,8)=31,35$ min. À un chiffre significatif : 2 min, 0,8 min et environ 30 min. Le plafond de 10 min est dépassé.
+Avec $v=1$ m/min, $T_{mep}=1,8$ min, $H_6^{fin}=1,0$ m et $T_6=(1,8-1,0)/v=0,8$ min. Ajouter 15 s de rotation par rang. L’hypothèse $T_{moy}=T_6$ donne $11(1,8+0,25+0,8)=31,35$ min. À un chiffre significatif : 2 min, 0,8 min et environ 30 min. Le plafond de 10 min est dépassé. L’approximation du sujet pour la moyenne tient lieu de calcul rang par rang, y compris pour le dernier qui dépasse 1,8 m.
 
 ### Question 4 — Construire les listes de positionnement
 
@@ -39,7 +41,7 @@ Rtot = list(range(1, 12))
 
 ### Question 5 — Identifier les contacts articulés
 
-En E, chacune des deux articulations 0–$P_1$ présente deux surfaces sphériques complémentaires de même centre. Les bagues sont maintenues axialement. Chaque contact se modélise par une liaison sphérique à trois rotations. Le détail D donne le même montage double entre $P_2$ et 3. En C, les deux groupes d’articulation entre $P_1$ et $P_2$ portent chacun deux rotules, soit quatre contacts sphère/sphère et quatre liaisons sphériques.
+En E, chacune des deux articulations 0–$P_1$ présente deux surfaces sphériques complémentaires de même centre. Les bagues sont maintenues axialement. Chaque contact se modélise par une liaison sphérique à trois rotations. Le détail D donne le même montage double entre $P_2$ et 3. En C, les deux groupes d’articulation entre $P_1$ et $P_2$ portent chacun deux rotules, soit quatre contacts sphère/sphère et quatre liaisons sphériques. Les détails montrent également des portées cylindriques de montage. Le mouvement relatif des bagues articulées se fait sur les portées sphériques.
 
 [Sujet p. 13](https://www.banquept.fr/documents/2024/si_a_2024_pt.pdf#page=13) · [Cahier p. 40 du PDF](https://www.banquept.fr/documents/2024/si_a_2024_pt.pdf#page=40)
 
@@ -137,7 +139,7 @@ En posant $\alpha=\theta_{P1}$, $L=L_P$, la vitesse de $G_1$ vaut $(L/2)\dot\alp
 
 ### Question 24 — Calculer le torseur cinétique et l’énergie du caisson supérieur
 
-Notons $\beta=\theta_{P2}$ et $s=\dot\alpha+\dot\beta$. Comme B se déplace, $v_{G2}=L\dot\alpha y_{P1}+(L/2)s y_{P2}$. Le torseur cinétique réduit en $G_2$ a pour résultante $m_Pv_{G2}$ et pour moment $I_Ps z_0$. D’où $E_{c2}=m_PL^2[\dot\alpha^2+s^2/4+\dot\alpha s\cos\beta]/2+I_Ps^2/2$.
+Notons $\beta=\theta_{P2}$ et $s=\dot\alpha+\dot\beta$. Comme B se déplace, $v_{G2}=L\dot\alpha y_{P1}+(L/2)s y_{P2}$. Le torseur cinétique réduit en $G_2$ a pour résultante $m_Pv_{G2}$ et pour moment $I_Ps z_0$. D’où $E_{c2}=m_PL^2[\dot\alpha^2+s^2/4+\dot\alpha s\cos\beta]/2+I_Ps^2/2$. La projection croisée est indispensable car les deux vitesses ne sont généralement pas orthogonales.
 
 ### Question 25 — Calculer la puissance motrice
 
@@ -145,7 +147,7 @@ Le glisseur du vérin 1 produit $P_{T_1\to3}=F_v\dot\delta$. La puissance intér
 
 ### Question 26 — Calculer la puissance du poids
 
-Pour une penture incluse dans $\Sigma$, $y_{G1}=L\sin\alpha/2$ et $y_{G2}=L\sin\alpha+(L/2)\sin(\alpha+\beta)$. La plateforme s’élève de $\delta$. Ainsi $P_g=-m_3g\dot\delta-m_Pg L[3\dot\alpha\cos\alpha+(\dot\alpha+\dot\beta)\cos(\alpha+\beta)]/2$. Les galets et barres n’apportent aucun terme dans l’approximation donnée.
+Pour une penture incluse dans $\Sigma$, $y_{G1}=L\sin\alpha/2$ et $y_{G2}=L\sin\alpha+(L/2)\sin(\alpha+\beta)$. La plateforme s’élève de $\delta$. Ainsi $P_g=-m_3g\dot\delta-m_Pg L[3\dot\alpha\cos\alpha+(\dot\alpha+\dot\beta)\cos(\alpha+\beta)]/2$. Les galets et barres n’apportent aucun terme dans l’approximation donnée. En montée le poids global absorbe de la puissance.
 
 ### Question 27 — Exprimer la géométrie en fonction de la levée
 
@@ -181,7 +183,7 @@ Avec les valeurs exactes, $\tau=25\times0,001/(25\times0,01+3^2)=2,70$ ms et $t_
 
 ### Question 34 — Déterminer la vitesse sous chargement maximal
 
-$\Omega_\infty=(3\times540+25\times(-10))/(25\times0,01+9)=148,1$ rad/s, environ 1 415 tr/min, au-dessus de $0,8\times1400=1120$ tr/min.
+$\Omega_\infty=(3\times540+25\times(-10))/(25\times0,01+9)=148,1$ rad/s, environ 1 415 tr/min, au-dessus de $0,8\times1400=1120$ tr/min. Avec les valeurs grossièrement arrondies autorisées dans l’énoncé, on trouve $0,3\times540-3\times10=132$ rad/s, soit 1 261 tr/min. Les deux calculs satisfont le critère. La différence provient des deux gains arrondis avant soustraction.
 
 ### Question 35 — Adapter la consigne de position
 
@@ -217,7 +219,7 @@ La courbe réelle a pour module $30/[\omega\sqrt{1+(0,003\omega)^2}]$ et pour ph
 
 ### Question 42 — Valider la réponse saturée
 
-La saturation à 540 V limite la vitesse de montée, d’où une longue rampe avant l’approche finale. La figure 34 donne une hauteur stabilisée vers 1 999,5 mm sans dépassement en environ 25,5 s, sous 60 s. L’erreur due à la charge de −10 N·m vaut 0,5 mm, sous 1 mm, et l’erreur de consigne seule est nulle.
+La saturation à 540 V limite la vitesse de montée, d’où une longue rampe avant l’approche finale. La figure 34 donne une hauteur stabilisée vers 1 999,5 mm sans dépassement en environ 25,5 s, sous 60 s. L’erreur due à la charge de −10 N·m vaut 0,5 mm, sous 1 mm, et l’erreur de consigne seule est nulle. Les marges désaturées satisfont le cahier, la vitesse est supérieure à 1 120 tr/min et son transitoire monotone dure environ 8 ms. Les 250 daN/m² correspondent à la charge de calcul, le constructeur annonce 15 kN par vérin au maximum. Le déroulement par groupes des onze rangs satisfait également la durée distincte de dix minutes.
 
 ![Approche et stabilisation de la plateforme chargée](figures/montee.svg)
 
