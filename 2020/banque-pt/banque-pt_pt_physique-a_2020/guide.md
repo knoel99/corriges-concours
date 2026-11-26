@@ -4,11 +4,13 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Épreuve de quatre heures sans calculatrice. Le fascicule attribue 30 % à la dynamique du système binaire, 45 % à l’interféromètre et 25 % à l’absorption dans le miroir. Les numéros recommencent à chaque partie. Les quelques décimales intermédiaires servent à vérifier les arrondis demandés à un chiffre significatif.
 
 [Sujet et données officiels](https://www.banquept.fr/documents/2020/ph_a_2020_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2020/rapport_phys_a_ecrit_2020.pdf)
 
-Le sujet illustre l’étude par Virgo et ses bras de 3 km près de Pise. La première observation directe citée, GW150914, a été enregistrée le 14 septembre 2015 à Livingston et Hanford par les deux détecteurs LIGO. L’annonce date du 11 février 2016. L’onde de 1 kHz dans la partie II est le signal hypothétique d’une supernova de l’amas de la Vierge.
+Le sujet illustre l’étude par Virgo et ses bras de 3 km près de Pise. La première observation directe citée, GW150914, a été enregistrée le 14 septembre 2015 à Livingston et Hanford par les deux détecteurs LIGO. Le signal venait de la fusion de deux trous noirs. L’annonce date du 11 février 2016. L’onde de 1 kHz dans la partie II est le signal hypothétique d’une supernova de l’amas de la Vierge.
 
 [Communiqué officiel de LIGO sur GW150914](https://www.ligo.caltech.edu/page/press-release-gw150914)
 
@@ -86,7 +88,7 @@ La norme croît linéairement de zéro à $Gm/R^2$ pour $r$ de zéro à $R$. Ell
 ### I.8 — Positions relatives
 
 > [!INDICATION]
-> Secouer toute ambiguïté sur le sens du vecteur de séparation en écrivant sa définition comme différence de deux positions.
+> Lever l’ambiguïté sur le sens du vecteur de séparation en écrivant sa définition comme différence de deux positions.
 
 Les masses étant égales, $m\vec R_1+m\vec R_2=\vec0$, soit $\vec R_2=-\vec R_1$. Par définition, $\vec r=\overrightarrow{C_1C_2}=\vec R_2-\vec R_1$ ; il vient $\vec R_1=-\vec r/2$ et $\vec R_2=\vec r/2$. La distance de chaque corps à C vaut donc $r/2$.
 
@@ -176,7 +178,7 @@ La loi fournie donne $P\propto r^{-5}\propto f^{10/3}$, avec un coefficient posi
 $$
 -P=\dot E_m=-\frac{2\alpha}{3} f^{-1/3}\dot f .
 $$
-Il faut multiplier la puissance par $f^{1/3}$ pour isoler $\dot f$. Il vient $\dot f=Kf^{11/3}$, $K>0$, soit $\beta=11/3$. La fréquence et son taux d'augmentation croissent tous deux.
+Il faut multiplier la puissance par $f^{1/3}$ pour isoler $\dot f$. Il vient $\dot f=Kf^{11/3}$, $K>0$, soit $\beta=11/3$. La fréquence et son taux d'augmentation croissent tous deux. La puissance radiative employée ici est la correction admise par le feuillet ; la mécanique newtonienne de la partie précédente ne la produit pas à elle seule.
 
 ### I.19 — Intégration
 
@@ -224,7 +226,7 @@ Dans la représentation repliée, deux rayons qui illuminent un point M de l'éc
 $$
 \delta_{\rm géom}=2e\cos i .
 $$
-À la sortie étudiée, les réflexions sur les deux faces de la séparatrice ajoutent une différence de phase constante $\pi$, équivalente à $\lambda/2$ de marche modulo $\lambda$. Les deux miroirs terminaux apportent chacun la même phase. Dans le plan focal, $\rho=f'\tan i$. Les directions de même $i$ donnent le même éclairement, donc des cercles concentriques accessibles pour $i\leq\alpha$.
+À la sortie étudiée, les réflexions sur les deux faces de la séparatrice ajoutent une différence de phase constante $\pi$, équivalente à $\lambda/2$ de marche modulo $\lambda$. Dans le schéma, le plan normal au premier miroir sert de référence. L’angle $i$ est mesuré entre le rayon incident et la normale au miroir. Les deux miroirs terminaux apportent chacun la même phase. Dans le plan focal, $\rho=f'\tan i$. Les directions de même $i$ donnent le même éclairement, donc des cercles concentriques accessibles pour $i\leq\alpha$.
 
 ![Figure 4 — Marche de deux rayons parallèles dans le système replié et convergence au même point du plan focal image.](figures/rayons.svg)
 
@@ -445,7 +447,7 @@ Le terme de fond reste celui de l'interféromètre réglé en l'absence de pertu
 > [!INDICATION]
 > Séparer le gain sur la pente et le bruit en watts. Contrôler le rapport avant d’arrondir le seuil à un chiffre significatif.
 
-À $\varphi_0=\pi/2$, le gain sur la pente est $F=1{,}995/0{,}005=399\simeq4\times10^2$. Le bruit étant supposé inchangé, chaque seuil de II.14 est divisé par 399. Le seuil imprimé devient $1{,}03\times10^{-21}$, du même ordre que le signal et légèrement supérieur avant arrondi. Le seuil déduit de la pente devient $5{,}1\times10^{-22}$. Avec cette pente, le signal de crête est $2{,}5\times10^{-7}\,\mathrm W$ pour un bruit de $1{,}3\times10^{-7}\,\mathrm W$, soit un rapport voisin de 2. Les cavités rendent la détection de cette amplitude envisageable dans le modèle idéal, au voisinage du seuil.
+À $\varphi_0=\pi/2$, le gain sur la pente est $F=1{,}995/0{,}005=399\simeq4\times10^2$. Le bruit étant supposé inchangé, chaque seuil de II.14 est divisé par 399. Le coefficient intervient sur la réponse de phase, donc sur le signal à la photodiode. Le seuil imprimé devient $1{,}03\times10^{-21}$, du même ordre que le signal et légèrement supérieur avant arrondi. Le seuil déduit de la pente devient $5{,}1\times10^{-22}$. Avec cette pente, le signal de crête est $2{,}5\times10^{-7}\,\mathrm W$ pour un bruit de $1{,}3\times10^{-7}\,\mathrm W$, soit un rapport voisin de 2. Les cavités rendent la détection de cette amplitude envisageable dans le modèle idéal, au voisinage du seuil.
 
 ## III — Onde et pénétration dans le miroir
 
@@ -625,4 +627,4 @@ t_{\rm diff}(L)\sim\frac{L^2}{D_{\rm th}}
 =\frac{(10^{-3})^2(8\times10^3)(400)}{400}
 \simeq8\times10^{-3}\,\mathrm s .
 $$
-Répartir la chaleur dans toute l'épaisseur demande des millisecondes, bien davantage que la durée de III.12b. La diffusion commence toutefois près de la surface bien avant d'atteindre la face arrière. La durée de III.12b est donc celle du modèle local imposé.
+Répartir la chaleur dans toute l'épaisseur demande des millisecondes, bien davantage que la durée de III.12b. La diffusion commence toutefois près de la surface bien avant d'atteindre la face arrière. À l’échelle de la peau, le même modèle donne $\delta^2/D_{\rm th}\sim4\times10^{-13}\,\mathrm s$ ; le dépôt ne reste donc pas durablement confiné à cette épaisseur. La durée de III.12b est donc celle du modèle local imposé.
