@@ -96,5 +96,35 @@
       "fournisseur": "codex",
       "agent": "astra_maths"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17"
+    ],
+    "precision": "Les questions 1 à 17 sont repérées dans le sujet officiel et dans chacune des deux éditions. La portée de la rédaction ou de la révision est conservée dans le journal cité.",
+    "origine_attestation": {
+      "commit_du_journal": "2fa66842d5931a2d555714fe2da0025b7eb72a66",
+      "sha256_sujet_controle": "ee972742ca81117a8eb909d49d7c0c5a6dfb7ec32939d8bfea62e554c0256da9",
+      "phase": "relecture_corrige",
+      "date": "2026-11-24",
+      "perimetre": "Relecture des 17 questions et de toutes leurs subdivisions dans les deux éditions sur le sujet XUSR, ainsi que des indications et des six figures. La ligne Mathématiques des annales ENS ne fournit aucun lien de rapport. Remplacement de l’exemple de 4(c) pour que g soit de classe C², précision de l’indication sur les espaces propres en 8 et insertion des six figures dans le brut."
+    }
+  }
 }
