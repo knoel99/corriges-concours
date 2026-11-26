@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="155mm" height="88.8mm" viewBox="0 0 730 418" font-family="DejaVu Sans, sans-serif"><defs><pattern id="hatch" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(28)"><rect width="7" height="7" fill="#f5f7f8"/><path d="M0 0V7" stroke="#78919c" stroke-width="1"/></pattern>
+<marker id="ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#202c36"/></marker>
+<marker id="green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#007451"/></marker>
+<marker id="blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#145879"/></marker>
+</defs>
+<g transform="translate(7 4)">
+<text x="2" y="20" fill="#202c36" font-size="15" font-weight="bold">10 · Alésage et épaulement intérieur</text>
+<path d="M9 141H318" fill="none" stroke="#202c36" stroke-width="0.8" stroke-linejoin="round" stroke-dasharray="12 3 2 3"/>
+<text x="281" y="157" fill="#202c36" font-size="12">axe Z</text>
+<path d="M62 52H135V72H105V93H62Z" fill="url(#hatch)" stroke="#202c36" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M245 91H130L110 81L106 86L124 105H245Z" fill="#dcebf1" stroke="#145879" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M106 86L106 77L117 82Z" fill="#145879" stroke="#145879" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M182 77H106V92" fill="none" stroke="#007451" stroke-width="2" stroke-linejoin="round" marker-end="url(#green)"/>
+<text x="9" y="177" fill="#202c36" font-size="14">Barre d’alésage à plaquette</text>
+<text x="9" y="198" fill="#202c36" font-size="13">Pièce en rotation · avance Z puis X</text>
+</g>
+<g transform="translate(373 4)">
+<text x="2" y="20" fill="#202c36" font-size="15" font-weight="bold">10 · Perçage axial Ø5</text>
+<path d="M9 141H318" fill="none" stroke="#202c36" stroke-width="0.8" stroke-linejoin="round" stroke-dasharray="12 3 2 3"/>
+<text x="281" y="157" fill="#202c36" font-size="12">axe Z</text>
+<path d="M63 57H124V103H63Z" fill="url(#hatch)" stroke="#202c36" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M140 79L153 71H237V87H153Z" fill="#dcebf1" stroke="#145879" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M158 86l15 -14m0 14l15 -14m0 14l15 -14" fill="none" stroke="#145879" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M139 79H104" fill="none" stroke="#007451" stroke-width="2" stroke-linejoin="round" marker-end="url(#green)"/>
+<text x="9" y="177" fill="#202c36" font-size="14">Foret hélicoïdal axial Ø5</text>
+<text x="9" y="198" fill="#202c36" font-size="13">Foret tournant · avance −Z · broche indexée</text>
+</g>
+<g transform="translate(7 213)">
+<text x="2" y="20" fill="#202c36" font-size="15" font-weight="bold">10 · Perçage radial et taraudage M3</text>
+<path d="M9 141H318" fill="none" stroke="#202c36" stroke-width="0.8" stroke-linejoin="round" stroke-dasharray="12 3 2 3"/>
+<text x="281" y="157" fill="#202c36" font-size="12">axe Z</text>
+<path d="M63 105H151V130H63Z" fill="url(#hatch)" stroke="#202c36" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M97 42H111V83L104 91L97 83Z" fill="#dcebf1" stroke="#145879" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M98 48l12 12m-12 0l12 12m-12 0l12 12" fill="none" stroke="#145879" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M130 47V104" fill="none" stroke="#007451" stroke-width="2" stroke-linejoin="round" marker-end="url(#green)"/>
+<path d="M215 42H228V68L226 85L221 91L217 85L215 68Z" fill="#dcebf1" stroke="#145879" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M216 62h12m-12 5h11m-10 5h10m-9 5h9m-9 5h8" fill="none" stroke="#145879" stroke-width="1.2" stroke-linejoin="round"/>
+<text x="158" y="107" fill="#145879" font-size="13">Taraud M3</text>
+<text x="9" y="176" fill="#202c36" font-size="14">Foret Ø2,5 puis taraud tournant</text>
+<text x="9" y="197" fill="#202c36" font-size="13">Broche indexée · avance −X puis retour</text>
+</g>
+<g transform="translate(373 213)">
+<text x="2" y="20" fill="#202c36" font-size="15" font-weight="bold">20 · Portée et face du roulement</text>
+<path d="M9 141H318" fill="none" stroke="#202c36" stroke-width="0.8" stroke-linejoin="round" stroke-dasharray="12 3 2 3"/>
+<text x="281" y="157" fill="#202c36" font-size="12">axe Z</text>
+<path d="M62 60H95V88H140V114H62Z" fill="url(#hatch)" stroke="#202c36" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M154 39L199 44L128 78L118 76Z" fill="#dcebf1" stroke="#145879" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M119 76L127 77L111 86L104 85Z" fill="#145879" stroke="#145879" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M139 87H97V65" fill="none" stroke="#007451" stroke-width="2" stroke-linejoin="round" marker-end="url(#green)"/>
+<text x="9" y="177" fill="#202c36" font-size="14">Outil extérieur à charioter-dresser</text>
+<text x="9" y="198" fill="#202c36" font-size="13">Pièce en rotation · avance Z puis X</text>
+</g>
+<path d="M365 2V410M5 210H724" fill="none" stroke="#b4bfc3" stroke-width="1" stroke-linejoin="round"/>
+</svg>
