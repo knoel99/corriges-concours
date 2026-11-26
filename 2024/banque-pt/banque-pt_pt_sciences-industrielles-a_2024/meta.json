@@ -561,6 +561,22 @@
       "phase": "relecture_corrige",
       "tour": 1,
       "perimetre": "Contrôle du tracé de collision, des huit rotules sur les coupes, du comptage des contraintes spatiales et planes, des vitesses des deux centres de masse et des puissances. Vérification analytique et numérique des seuils du gain, de la réponse chargée et des marges sur les grilles du cahier. Contrôle des pages et des figures des deux éditions."
+    },
+    {
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "session": "banque_pt_si_a_2024",
+      "modifications": true,
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "perimetre": "Contrôle du tableau de la Q3 sur le cahier p. 38 et report explicite dans ses unités en secondes, avant et après arrondi."
     }
   ],
   "date_revision": "2026-11-26"

@@ -6,6 +6,8 @@
 
 **Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Dans la grande salle Pierre Boulez de la Philharmonie de Paris, le parterre et les modules de scène changent de hauteur pour adapter la salle aux concerts. Les onze rangs du parterre, le module d’orchestre et la plateforme à double motorisation font ici l’objet de modèles distincts. Les renvois indiquent la page du PDF officiel, garde comprise.
 
 [Sujet et cahier officiels](https://www.banquept.fr/documents/2024/si_a_2024_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2024/rapport_si_a_ecrit_2024.pdf)
@@ -26,7 +28,7 @@ La différence est de dix intervalles de 200 mm, soit $H_{11}^{fin}=2000$ mm. Un
 
 ### Question 3 — Chronométrer l’ouverture rang par rang
 
-Avec $v=1$ m/min, $T_{mep}=1,8$ min, $H_6^{fin}=1,0$ m et $T_6=(1,8-1,0)/v=0,8$ min. Ajouter 15 s de rotation par rang. L’hypothèse $T_{moy}=T_6$ donne $11(1,8+0,25+0,8)=31,35$ min. À un chiffre significatif : 2 min, 0,8 min et environ 30 min. Le plafond de 10 min est dépassé. L’approximation du sujet pour la moyenne tient lieu de calcul rang par rang, y compris pour le dernier qui dépasse 1,8 m.
+Avec $v=1$ m/min, $T_{mep}=1,8$ min, $H_6^{fin}=1,0$ m et $T_6=(1,8-1,0)/v=0,8$ min. Ajouter 15 s de rotation par rang. L’hypothèse $T_{moy}=T_6$ donne $11(1,8+0,25+0,8)=31,35$ min. À un chiffre significatif : 2 min, 0,8 min et environ 30 min. Dans les cases en secondes du cahier, ces valeurs sont respectivement 108 s, 15 s, 48 s et 1 881 s avant arrondi, soit environ 100 s, 15 s (donnée), 50 s et 2 000 s. Le plafond de 600 s est dépassé. L’approximation du sujet pour la moyenne tient lieu de calcul rang par rang, y compris pour le dernier qui dépasse 1,8 m.
 
 ### Question 4 — Construire les listes de positionnement
 
