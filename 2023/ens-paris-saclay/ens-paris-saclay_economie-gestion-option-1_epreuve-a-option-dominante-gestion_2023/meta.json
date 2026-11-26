@@ -1,0 +1,75 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_epreuve-a-option-dominante-gestion_2023",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Épreuve à option — dominante gestion",
+    "annee": 2023,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "Roller-Coaster : moderniser les parcs, évaluer une action et organiser la transition écologique",
+  "gabarit": "questions",
+  "questions": 14,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2023_sujet_ecrit_ecoG_option_mercredi_2023_V2.pdf#page=3",
+    "sujet_sha256": "c0323ca9b95b217d13756ab8746e48543d0dbd1fd0a27987488a9a78cae43722",
+    "index": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=289&field_year_target_id%5B%5D=583&page=1",
+    "pages_sujet": "3–10 du PDF institutionnel, pages imprimées 2 à 9, documents 1 à 10.",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2023_sujet_ecrit_ecoG_option_mercredi_2023_V2.pdf",
+        "pages": 10,
+        "sha256": "c0323ca9b95b217d13756ab8746e48543d0dbd1fd0a27987488a9a78cae43722"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/risque-de-frequentation.svg",
+      "question": "1",
+      "legende": "Avec une recette de 10 € par visite, l’attraction neuve et l’attraction rénovée dégagent des résultats différents. La rénovation supporte une baisse de fréquentation d’un tiers avant d’atteindre son seuil."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "gestion_2022_2023",
+      "agent": "gestion_2022_2023",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Quatorze réponses résolues sur les dix documents : comptes différentiels, risque, rémunération, immobilisation, modèles actuariel et patrimonial, contrat de crédit-bail, note à l’actionnaire et management de la ferme solaire."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
+    "limites": "Coûts administratifs liés ou non au chantier et option sur les frais d’acte distingués. Valeur du bien en crédit-bail estimée par sa valeur nette reconstituée ; valorisation patrimoniale explicitement avant et après affectation du dividende."
+  }
+}
