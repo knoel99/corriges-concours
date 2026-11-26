@@ -90,7 +90,7 @@ Sur le premier intervalle construit, $2\le u\le3$, l’intégrande est encore $1
 $$u\omega(u)=1+\int_1^{u-1}\frac{dt}{t}=1+\ln(u-1).$$
 Cela donne $\omega(2)=1/2$ et $\omega(3)=(1+\ln2)/3$. La dérivée à droite en 2 vaut $1/4$ et celle à gauche vaut $-1/4$. La continuité en ce point est bien la régularité appropriée.
 
-![Figure 2 — Deux expressions exactes de la fonction de Buchstab se raccordent en 2 avec des dérivées latérales opposées.](figures/buchstab-premiers-intervalles.svg)
+![Figure 1 — Deux expressions exactes de la fonction de Buchstab se raccordent en 2 avec des dérivées latérales opposées.](figures/buchstab-premiers-intervalles.svg)
 
 ### Question III.1b
 
@@ -249,4 +249,4 @@ La page 8 imprime $q^\beta/(\lambda\varphi(q)\ln(q^\beta))$. Pour un même $\lam
 
 Pour la **disjonction littérale**, le théorème de Maier sur les intervalles de longueur $(\ln x)^u$, $u>1$, établit indépendamment que le rapport de la première branche a une limite supérieure strictement supérieure à un. Prendre un $u>\max(1,\alpha_0)$ et $\lambda$ strictement entre un et cette limite supérieure donne la première branche imprimée. Passer d’un réel $x$ à sa partie entière n’altère le compte que d’un nombre borné de premiers, négligeable devant $(\ln x)^{u-1}$. Ce recours au théorème publié est supplémentaire aux résultats admis dans l’épreuve. [Helmut Maier, *Primes in short intervals*, Michigan Math. J. 32 (1985), 221–225](https://doi.org/10.1307/mmj/1029003189).
 
-![Figure 1 — Chaque colonne contient un intervalle court. Chaque ligne garde une classe modulo q et les lignes admissibles portent tous les nombres premiers.](figures/lignes-et-colonnes-de-maier.svg)
+![Figure 2 — Chaque colonne contient un intervalle court. Chaque ligne garde une classe modulo q et les lignes admissibles portent tous les nombres premiers.](figures/lignes-et-colonnes-de-maier.svg)
