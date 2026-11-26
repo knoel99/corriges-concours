@@ -1,0 +1,28 @@
+question	controle	valeur	reference	unite	resultat
+3	Dérivée logarithmique calculée par différence centrée	-0.0404923874306	-0.0404923874312	K^-1	réussi
+8	Sortie AL1 à 291 K	12	12	V	réussi
+11	Sortie AL3 demandée à 291 K	18	18	V	réussi
+11	Sortie AL3 bornée à 291 K	15	15	V	réussi
+8	Sortie AL1 à 294 K	0	0	V	réussi
+11	Sortie AL3 demandée à 294 K	21	21	V	réussi
+11	Sortie AL3 bornée à 294 K	15	15	V	réussi
+8	Sortie AL1 à 297 K	-12	-12	V	réussi
+11	Sortie AL3 demandée à 297 K	24	24	V	réussi
+11	Sortie AL3 bornée à 297 K	15	15	V	réussi
+12	Fréquence par deux périodes sur dix divisions	40000	40000	Hz	réussi
+13	Demi-distance par temps de vol	30	30	m	réussi
+19	Puissance par quadrature sur l’anneau et moyenne sur une période	5.19860369144e-08	5.1986038542e-08	W	réussi
+24	Tension différentielle à 70 rad/s, f.é.m. unité	1.38777878078e-17	0	V	réussi
+24	Tension différentielle à 17000 rad/s, f.é.m. unité	1.11022302463e-16	0	V	réussi
+26	Pression reconstituée	4	4	bar	réussi
+30	Vitesse de sortie par ses composantes	16.2448078752	16.2448078752	m/s	réussi
+32	Distance sur l’hélice déroulée	95.1669258861	95.1669258861	m	réussi
+38	Gain mécanique par bilan électrique	30	30	%	réussi
+47	Courbe de croissance à 4 h	0.0182360922659	0.0182360922659	m	réussi
+45	Égalité des deux densités de flux à 4 h	319.371440577	319.371440577	W/m²	réussi
+47	Courbe de croissance à 12 h	0.0547082767978	0.0547082767978	m	réussi
+45	Égalité des deux densités de flux à 12 h	235.216392313	235.216392313	W/m²	réussi
+47	Courbe de croissance à 24 h	0.109416553596	0.109416553596	m	réussi
+45	Égalité des deux densités de flux à 24 h	181.13105502	181.13105502	W/m²	réussi
+49	Temps caractéristique de croissance	19741.0714286	19741.0714286	s	réussi
+50	Temps de diffusion sur cinq centimètres	2475	2475	s	réussi
