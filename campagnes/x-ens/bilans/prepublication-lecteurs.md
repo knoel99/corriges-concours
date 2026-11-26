@@ -1,8 +1,8 @@
 # Essai local de publication des corrigés
 
-Le 26/11/2026 à 19 h 37 UTC, les 2102 paires signées de la révision `e427e356` ont fourni les deux textes attendus et leurs signatures dans le service de lecture du site. Le journal de chaque fiche renvoie au bon dossier GitHub, reprend les interventions qualifiantes et indique le caractère partiel quand il est déclaré. [Résultats par épreuve](prepublication-lecteurs.tsv) · [Version des corrigés](https://github.com/knoel99/corriges-concours/tree/e427e35672d02455eae18f12834d7449756eec8e) · [Version du site](https://github.com/knoel99/prepa/tree/52c39a62adea9212cd1a38d155e247634f9a2256)
+Le 26/11/2026 à 19 h 41 UTC, les 2109 paires signées de la révision `0cbf1020` ont fourni les deux textes attendus et leurs signatures dans le service de lecture du site. Le journal de chaque fiche renvoie au bon dossier GitHub, reprend les interventions qualifiantes et indique le caractère partiel quand il est déclaré. [Résultats par épreuve](prepublication-lecteurs.tsv) · [Version des corrigés](https://github.com/knoel99/corriges-concours/tree/0cbf102071d71e8c54277b81072c921a05b5f15f) · [Version du site](https://github.com/knoel99/prepa/tree/52c39a62adea9212cd1a38d155e247634f9a2256)
 
-Le contrôle couvre 2576 fiches de filière pour 2102 épreuves signées. Les épreuves communes sont aussi vérifiées sous chaque filière de leur notice éditoriale. [Contrôles des 474 fiches supplémentaires](prepublication-lecteurs-autres-filieres.tsv)
+Le contrôle couvre 2583 fiches de filière pour 2109 épreuves signées. Les épreuves communes sont aussi vérifiées sous chaque filière de leur notice éditoriale. [Contrôles des 474 fiches supplémentaires](prepublication-lecteurs-autres-filieres.tsv)
 
 L’essai utilise une base SQLite temporaire et les fichiers locaux des révisions Git. La conversion du dépôt public et le plan de publication du site produisent les clés du stockage. La synchronisation charge d’abord le contenu de `54fe93cd`, puis celui de la branche de travail. Pour chaque édition, le service qui alimente le lecteur doit restituer exactement le Markdown attendu après la réécriture des chemins d’illustrations. Le contrôle vérifie aussi la présence de chaque SVG référencé. Si une édition ne référence aucun SVG, la colonne de disponibilité est positive et le classeur des épreuves indique zéro illustration pour cette édition.
 
@@ -21,6 +21,8 @@ Pour les 28 compositions de français, d’anglais et d’arabe de 2005 à 2008,
 En Banque PT, les 102 fiches des sessions 2017 à 2025 ont été ouvertes dans l’API locale. Les 306 liens de sujets, de rapports et de coefficients correspondent aux références institutionnelles. [Sources par épreuve](sources-fiches-banque-pt-2017-2025.tsv)
 
 Pour les mathématiques C de Banque PT 2017 à 2019, les éditions brute et guidée traitent chacune les 100 questions et sous-questions. Les six PDF signés totalisent 47 pages et 323 signets. [Résultats par édition et empreintes des sources](pdf-banque-pt-maths-c-2017-2019.tsv)
+
+En Banque PT, les deux éditions de mathématiques A de 2017 à 2019 traitent chacune les 103 questions et sous-questions. Les six PDF totalisent 41 pages et 341 signets. En français A et B de 2017 et 2018, les huit PDF totalisent 19 pages. Les deux résumés comptent 190 mots pour Camus et 180 pour Chalier. [Mathématiques A](pdf-banque-pt-maths-a-2017-2019.tsv) · [Français A et B](pdf-banque-pt-francais-2017-2018.tsv)
 
 Pour les 21 dossiers de Médecine-Humanités de 2018 à 2026, l’API locale affiche les sources attendues sur chaque fiche, dont 18 avec un rapport et cinq liens complémentaires. [Vérifications des 21 fiches](sources-fiches-medecine-humanites-2018-2026.tsv)
 
@@ -56,7 +58,7 @@ Les huit options de langues vivantes B/L de 2025 ont été confrontées à leurs
 
 Les deux épreuves de mathématiques approfondies BCE 2026 et les mathématiques D ENS 2023 totalisent 137 questions et sous-questions. Les six PDF ont été vérifiés sur leurs 100 pages. [Révisions, pagination et empreintes](pdf-bce-approfondies-2026-et-maths-d-2023.tsv)
 
-Les 830 PDF rassemblés dans ce relevé totalisent 6009 pages. Les empreintes des PDF et de leurs archives correspondent aux éditions signées. Pour chaque édition, le nombre d’objets graphiques effectivement affichés dans le PDF couvre le nombre de schémas SVG distincts référencés par le texte. Le relevé donne leurs pages et distingue objets vectoriels et images matricielles. [Preuves par épreuve et par édition](pdf-maths-physique-et-sociologie-2026-11-26.tsv)
+Les 844 PDF rassemblés dans ce relevé totalisent 6069 pages. Les empreintes des PDF et de leurs archives correspondent aux éditions signées. Pour chaque édition, le nombre d’objets graphiques effectivement affichés dans le PDF couvre le nombre de schémas SVG distincts référencés par le texte. Le relevé donne leurs pages et distingue objets vectoriels et images matricielles. [Preuves par épreuve et par édition](pdf-maths-physique-et-sociologie-2026-11-26.tsv)
 
 Les 166 questions des quinze épreuves d’informatique PSI–PT de 2002 à 2016 ont été repérées à la fois dans le sujet et dans chacune des deux éditions. Les trente PDF comptent 168 pages, 332 signets de question vérifiés sur leur page et 90 insertions de schémas. [Révisions et empreintes](pdf-informatique-psi-pt-166-questions.tsv)
 
