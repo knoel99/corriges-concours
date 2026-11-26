@@ -1,0 +1,195 @@
+{
+  "slug": "banque-pt_pt_maths-a_2008",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths A",
+    "annee": 2008
+  },
+  "questions": 25,
+  "redaction": "Corrigés non officiels rédigés et vérifiés par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2008/math_a_2008.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2008/rapport_math_a_ecrit_2008.pdf",
+    "index_sujets": "https://www.banquept.fr/article51.html",
+    "index_rapports": "https://www.banquept.fr/article55.html",
+    "livret": "https://www.banquept.fr/documents/livret/2008/Livret_PT_2008.pdf#page=12",
+    "sha256_sujet": "9d3fd43bc5cbf21916229520796348545818deec4454508252d3774e998b5a4c",
+    "pages_sujet": 4,
+    "sha256_rapport_jury": "d90313a32e5bcf9f1d005ad976111d0f349620952a15300fc6d258b5f77b5099",
+    "pages_rapport_jury": 3,
+    "sha256_livret": "ad57611750cbdcf6c4e1ba7444c3a7625cceaacff27f2a89763ffca957d67ca8",
+    "pages_livret": 71,
+    "coefficients_admissibilite": {
+      "ENS Cachan": 3,
+      "École polytechnique": 6
+    }
+  },
+  "figures": [
+    {
+      "question": "B.2",
+      "fichier": "figures/branche-et-asymptotes.svg",
+      "legende": "Branche droite de l’hyperbole et ses deux asymptotes. La tangente au sommet est verticale."
+    },
+    {
+      "question": "B.9",
+      "fichier": "figures/hyperbole-et-developpee.svg",
+      "legende": "Branche droite de l’hyperbole et sa développée, avec le point de rebroussement à l’abscisse 6,5."
+    },
+    {
+      "question": "C.9",
+      "fichier": "figures/cercle-et-triangle.svg",
+      "legende": "Les trois intersections autres que Q forment un triangle équilatéral de centre P. Les deux axes ont la même échelle."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A.1",
+      "A.2",
+      "A.3",
+      "A.4",
+      "A.5",
+      "B.1",
+      "B.2",
+      "B.3",
+      "B.4",
+      "B.5",
+      "B.6",
+      "B.7",
+      "B.8",
+      "B.9",
+      "B.10.a",
+      "B.10.b",
+      "C.1",
+      "C.2",
+      "C.3",
+      "C.4",
+      "C.5",
+      "C.6",
+      "C.7",
+      "C.8",
+      "C.9"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": "A.1",
+        "page_sujet": 2
+      },
+      {
+        "question": "A.2",
+        "page_sujet": 2
+      },
+      {
+        "question": "A.3",
+        "page_sujet": 2
+      },
+      {
+        "question": "A.4",
+        "page_sujet": 2
+      },
+      {
+        "question": "A.5",
+        "page_sujet": 2
+      },
+      {
+        "question": "B.1",
+        "page_sujet": 2
+      },
+      {
+        "question": "B.2",
+        "page_sujet": 2
+      },
+      {
+        "question": "B.3",
+        "page_sujet": 2
+      },
+      {
+        "question": "B.4",
+        "page_sujet": 2
+      },
+      {
+        "question": "B.5",
+        "page_sujet": 2
+      },
+      {
+        "question": "B.6",
+        "page_sujet": 2
+      },
+      {
+        "question": "B.7",
+        "page_sujet": 2
+      },
+      {
+        "question": "B.8",
+        "page_sujet": 3
+      },
+      {
+        "question": "B.9",
+        "page_sujet": 3
+      },
+      {
+        "question": "B.10.a",
+        "page_sujet": 3
+      },
+      {
+        "question": "B.10.b",
+        "page_sujet": 3
+      },
+      {
+        "question": "C.1",
+        "page_sujet": 3
+      },
+      {
+        "question": "C.2",
+        "page_sujet": 3
+      },
+      {
+        "question": "C.3",
+        "page_sujet": 3
+      },
+      {
+        "question": "C.4",
+        "page_sujet": 3
+      },
+      {
+        "question": "C.5",
+        "page_sujet": 3
+      },
+      {
+        "question": "C.6",
+        "page_sujet": 3
+      },
+      {
+        "question": "C.7",
+        "page_sujet": 3
+      },
+      {
+        "question": "C.8",
+        "page_sujet": 3
+      },
+      {
+        "question": "C.9",
+        "page_sujet": 3
+      }
+    ],
+    "precision": "Toutes les demandes des parties A, B et C des pages imprimées 2 et 3. La quatrième page du fac-similé est blanche. B.10.a contient un facteur 2 manquant, identifié dans les deux éditions."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modifications": true,
+      "perimetre": "Lecture des quatre feuillets et du rapport. Résolution complète des trois parties, calcul du centre de courbure avec les deux conventions de Frenet, quadrature indépendante de l’arc et vérification des points d’intersection, du triangle et des tracés."
+    }
+  ]
+}
