@@ -1,0 +1,188 @@
+{
+  "slug": "x_m-prime_premiere-composition-de-mathematiques_1993",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "M prime",
+    "filiere_historique": "M′",
+    "matiere": "Première composition de mathématiques",
+    "annee": 1993
+  },
+  "questions": 16,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-0419366e10379316f12e",
+    "sujet_sha256": "118339d07483e4c3ca093eab039f35de097a34237ac4f8f6ed1fad9f76f0fd1b",
+    "notice_ups": "m93xm1",
+    "reproduction": "https://www.sujetsetcorriges.fr/dl/X/Maths/MP/sec-x-1993-maths1-MP.pdf",
+    "reproduction_sha256": "117b57926312fce286e4ddb4c18649cb54cb313446ceb983730241efee477e8c",
+    "pages": 3,
+    "calendrier": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000345466",
+    "rapport_jury": "",
+    "observation_rapport": "Les deux exemplaires du sujet et la notice UPS sont les sources consultées ; aucun rapport de jury n’y est joint.",
+    "provenance": "Le fac-similé de l’UPS porte l’option M′ et le rang de la composition. Les expressions et les conditions initiales ont été relues sur les pages originales."
+  },
+  "figures": [
+    {
+      "question": "6",
+      "fichier": "figures/raccord-normal.svg",
+      "legende": "Figure 1 — Exemple sur un cercle orienté. Du point extérieur, le premier trajet suit la normale puis la courbe décalée jusqu’au point marqué."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.a",
+      "1.b",
+      "1.c",
+      "2",
+      "3.a",
+      "3.b",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9.a",
+      "9.b",
+      "10",
+      "11.a",
+      "11.b"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1.a",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ]
+      },
+      {
+        "question": "1.b",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ]
+      },
+      {
+        "question": "1.c",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ]
+      },
+      {
+        "question": "2",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ]
+      },
+      {
+        "question": "3.a",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ]
+      },
+      {
+        "question": "3.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ]
+      },
+      {
+        "question": "4",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ]
+      },
+      {
+        "question": "5",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ]
+      },
+      {
+        "question": "6",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ]
+      },
+      {
+        "question": "7",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ]
+      },
+      {
+        "question": "8",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2,
+          3
+        ]
+      },
+      {
+        "question": "9.a",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ]
+      },
+      {
+        "question": "9.b",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ]
+      },
+      {
+        "question": "10",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ]
+      },
+      {
+        "question": "11.a",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ]
+      },
+      {
+        "question": "11.b",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ]
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "16 rubriques selon la numérotation originale. Les deux estimations de 3, les trois intégrales de 8 et les deux limites de 9.a sont établies."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "histoire_lyon_2017",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "16 rubriques selon la numérotation originale. Les deux estimations de 3, les trois intégrales de 8 et les deux limites de 9.a sont établies. Rédaction et vérification des solutions, des indications et de la figure."
+    }
+  ]
+}
