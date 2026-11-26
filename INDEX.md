@@ -1670,6 +1670,8 @@
 | 2024 | X-ENS | MP | Informatique A | [md](2024/x-ens/x-ens_mp_informatique-a_2024/brut.md) | [md](2024/x-ens/x-ens_mp_informatique-a_2024/guide.md) |
 | 2025 | X-ENS | MP | Informatique A | [md](2025/x-ens/x-ens_mp_informatique-a_2025/brut.md) | [md](2025/x-ens/x-ens_mp_informatique-a_2025/guide.md) |
 | 2026 | X-ENS | MP | Informatique A | [md](2026/x-ens/x-ens_mp_informatique-a_2026/brut.md) | [md](2026/x-ens/x-ens_mp_informatique-a_2026/guide.md) |
+| 2012 | X-ENS | MP | Maths A | [md](2012/x-ens/x-ens_mp_maths-a_2012/brut.md) | [md](2012/x-ens/x-ens_mp_maths-a_2012/guide.md) |
+| 2013 | X-ENS | MP | Maths A | [md](2013/x-ens/x-ens_mp_maths-a_2013/brut.md) | [md](2013/x-ens/x-ens_mp_maths-a_2013/guide.md) |
 | 2015 | X-ENS | MP | Maths A | [md](2015/x-ens/x-ens_mp_maths-a_2015/brut.md) | [md](2015/x-ens/x-ens_mp_maths-a_2015/guide.md) |
 | 2016 | X-ENS | MP | Maths A | [md](2016/x-ens/x-ens_mp_maths-a_2016/brut.md) | [md](2016/x-ens/x-ens_mp_maths-a_2016/guide.md) |
 | 2017 | X-ENS | MP | Maths A | [md](2017/x-ens/x-ens_mp_maths-a_2017/brut.md) | [md](2017/x-ens/x-ens_mp_maths-a_2017/guide.md) |
@@ -1728,6 +1730,7 @@
 | 2025 | X-ENS | MP-MPI-PC-PSI | Français | [md](2025/x-ens/x-ens_mp-mpi-pc-psi_francais_2025/brut.md) | [md](2025/x-ens/x-ens_mp-mpi-pc-psi_francais_2025/guide.md) |
 | 2025 | X-ENS | PC | Chimie A | [md](2025/x-ens/x-ens_pc_chimie-a_2025/brut.md) | [md](2025/x-ens/x-ens_pc_chimie-a_2025/guide.md) |
 | 2026 | X-ENS | PC | Chimie A | [md](2026/x-ens/x-ens_pc_chimie-a_2026/brut.md) | [md](2026/x-ens/x-ens_pc_chimie-a_2026/guide.md) |
+| 2025 | X-ENS | PC | Maths PC | [md](2025/x-ens/x-ens_pc_maths-pc_2025/brut.md) | [md](2025/x-ens/x-ens_pc_maths-pc_2025/guide.md) |
 | 2026 | X-ENS | PC | Maths PC | [md](2026/x-ens/x-ens_pc_maths-pc_2026/brut.md) | [md](2026/x-ens/x-ens_pc_maths-pc_2026/guide.md) |
 | 2011 | X-ENS | PC | Physique B | [md](2011/x-ens/x-ens_pc_physique-b_2011/brut.md) | [md](2011/x-ens/x-ens_pc_physique-b_2011/guide.md) |
 | 2012 | X-ENS | PC | Physique B | [md](2012/x-ens/x-ens_pc_physique-b_2012/brut.md) | [md](2012/x-ens/x-ens_pc_physique-b_2012/guide.md) |
@@ -1750,6 +1753,7 @@
 | 2020 | X-ENS | PSI | Physique PSI | [md](2020/x-ens/x-ens_psi_physique-psi_2020/brut.md) | [md](2020/x-ens/x-ens_psi_physique-psi_2020/guide.md) |
 | 2021 | X-ENS | PSI | Physique PSI | [md](2021/x-ens/x-ens_psi_physique-psi_2021/brut.md) | [md](2021/x-ens/x-ens_psi_physique-psi_2021/guide.md) |
 | 2022 | X-ENS | PSI | Physique PSI | [md](2022/x-ens/x-ens_psi_physique-psi_2022/brut.md) | [md](2022/x-ens/x-ens_psi_physique-psi_2022/guide.md) |
+| 2020 | X | FUI FF 1 | Mathématiques | [md](2020/x/x_fui-ff-1_mathematiques_2020/brut.md) | [md](2020/x/x_fui-ff-1_mathematiques_2020/guide.md) |
 | 2005 | X | MP-PC | Allemand | [md](2005/x/x_mp-pc_allemand_2005/brut.md) | [md](2005/x/x_mp-pc_allemand_2005/guide.md) |
 | 2006 | X | MP-PC | Allemand | [md](2006/x/x_mp-pc_allemand_2006/brut.md) | [md](2006/x/x_mp-pc_allemand_2006/guide.md) |
 | 2007 | X | MP-PC | Allemand | [md](2007/x/x_mp-pc_allemand_2007/brut.md) | [md](2007/x/x_mp-pc_allemand_2007/guide.md) |
@@ -1810,6 +1814,7 @@
 | 2007 | X | MP | Informatique (option) | [md](2007/x/x_mp_informatique-option_2007/brut.md) | [md](2007/x/x_mp_informatique-option_2007/guide.md) |
 | 2008 | X | MP | Informatique (option) | [md](2008/x/x_mp_informatique-option_2008/brut.md) | [md](2008/x/x_mp_informatique-option_2008/guide.md) |
 | 2009 | X | MP | Informatique (option) | [md](2009/x/x_mp_informatique-option_2009/brut.md) | [md](2009/x/x_mp_informatique-option_2009/guide.md) |
+| 2018 | X | MP | Maths B | [md](2018/x/x_mp_maths-b_2018/brut.md) | [md](2018/x/x_mp_maths-b_2018/guide.md) |
 | 2011 | X | PC | Physique A | [md](2011/x/x_pc_physique-a_2011/brut.md) | [md](2011/x/x_pc_physique-a_2011/guide.md) |
 | 2012 | X | PC | Physique A | [md](2012/x/x_pc_physique-a_2012/brut.md) | [md](2012/x/x_pc_physique-a_2012/guide.md) |
 | 2013 | X | PC | Physique A | [md](2013/x/x_pc_physique-a_2013/brut.md) | [md](2013/x/x_pc_physique-a_2013/guide.md) |
