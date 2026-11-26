@@ -6,7 +6,11 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Le jury publie 12 billets pour le 26 juin, commission 2. Pour chacun, le premier intitulé est celui qui a été choisi. Le second était proposé au choix. Les deux reçoivent ici des réponses distinctes. Les exemples et arguments proposés servent à préparer une leçon personnelle.
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Le [feuillet du 26 juin, commission 2](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_2_al.pdf) contient 12 billets de deux sujets. Les développements suivent leur ordre. Le premier sujet a été choisi sur chacun des 12 billets. Le [rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf#page=8) permet de vérifier les choix. Dans l’[index officiel](https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-al), les liens du 29 reprennent les fichiers datés du 26.
+
+Lisez à haute voix les deux sujets du billet, choisissez pendant les 90 minutes de préparation et annoncez votre choix au début des 20 minutes d’exposé. L’entretien dure ensuite 10 minutes. Le coefficient est de 3. Seul un dictionnaire de langue française est autorisé, à l’exclusion des dictionnaires de noms propres.
 
 ## 1. Les cérémonies
 
@@ -131,5 +135,3 @@ Ce monde propre ne signifie pourtant pas que l’on connaisse par une analogie s
 ### Le passé est-il objet de science ?
 
 L’historien ne peut recommencer une élection ancienne pour observer ses variantes à volonté. Pourtant, il peut authentifier des listes, comparer leurs chiffres et corriger une assertion sur le nombre de votants. La possibilité de contrôle public et de réfutation ne suppose pas partout la répétition expérimentale du phénomène. Il y a aussi des sciences de traces, qui élaborent des hypothèses à partir de données présentes sur des configurations disparues. Le passé comme totalité ne se livre pas d’un coup et toute question ne reçoit pas une réponse avec les sources conservées. Mais certains énoncés sur le passé peuvent être établis, discutés ou abandonnés selon des méthodes explicites. La scientificité de l’enquête tient à ce rapport réglé aux preuves et à leurs lacunes, y compris lorsqu’elle propose un récit.
-
-[Feuille officielle du 26c2 juin](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_2_al.pdf) · [Rapport du jury, modalités et annexe des sujets](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf)
