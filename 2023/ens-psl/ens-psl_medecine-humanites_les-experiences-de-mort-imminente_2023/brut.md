@@ -4,7 +4,9 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Le jury de 2023 a donné deux dossiers à des dates différentes. Cette composition de trois heures porte sur les trois documents du sujet « Les expériences de mort imminente ». Le rapport explicite les difficultés propres à chacun.
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Écrit de 2023, trois heures. Le rapport commente en détail les trois pièces du dossier. [Sujet](https://web.archive.org/web/20240329005700id_/https://medecine-humanites.ens.fr/wp-content/uploads/2023/06/Sujet-1-EMI-MH2023.pdf) · [Rapport](https://web.archive.org/web/20240331041515id_/https://medecine-humanites.ens.fr/wp-content/uploads/2023/06/Rapport-Jury-MH2023.pdf)
 
 ## Qui peut raconter le seuil de la mort ?
 
@@ -14,7 +16,7 @@ Le fils d’Ivan Ilitch baise la main de son père. Pour l’enfant, le geste ac
 
 La dernière expérience d’Ivan Ilitch débouche sur sa mort. Il ne reviendra pas sur ce moment pour le raconter. Tolstoï peut pourtant faire alterner les bruits entendus par les proches et la parole intérieure du personnage. La phrase « C’est fini ! », prononcée derrière le lit, change même de sens en changeant de lieu. Quelqu’un annonce la fin de l’agonie, Ivan comprend que c’en est fini de la mort. Le point lumineux prend son sens dans une scène morale précise. Ivan aperçoit son fils puis sa femme, reconnaît leur peine et voudrait les en délivrer. La lumière succède à l’effort pour demander pardon. La ramener à un symptôme commun à tous les mourants effacerait la construction de cette vie fictive. Le dénouement permet au lecteur de penser une expérience dont aucune personne morte ne pourrait livrer ensuite le récit.
 
-Matthieu Blanchin, lui, dessine après avoir survécu au coma. La première personne désigne tantôt la silhouette recroquevillée, tantôt celui qui la regarde d’en haut. Les cadres changent d’échelle. Un corps que l’on voyait assez distinctement devient minuscule au pied de formes massives. Au milieu de la planche, le commentaire se demande comment la pensée tient encore au corps. Pendant ce temps, lettres étirées et cris déformés font percevoir l’effort de produire des sons. Le lecteur peut saisir simultanément la pensée articulée du récitatif et la difficulté de l’appel. Les dernières vignettes noires et blanches changent les proportions de la silhouette et des vagues ou flammes qui l’entourent. Sous elles, le trait des mots finit par s’épaissir jusqu’à menacer leur lisibilité. Le dessin rend communicable une expérience de dissociation sans fournir pour autant l’enregistrement de ce qu’un témoin aurait pu filmer. Entre le coma et la page, il y a eu la survie, le souvenir et le travail du dessinateur.
+Matthieu Blanchin, lui, dessine après avoir survécu au coma. La première personne désigne tantôt la silhouette recroquevillée, tantôt celui qui la regarde d’en haut. Les cadres changent d’échelle. Un corps que l’on voyait assez distinctement devient minuscule au pied de formes massives. Au milieu de la planche, le commentaire se demande comment la pensée tient encore au corps. Pendant ce temps, lettres étirées et cris déformés font percevoir l’effort de produire des sons. Le lecteur peut saisir simultanément la pensée articulée du récitatif et la difficulté de l’appel. Dans la dernière bande, une case très étroite sépare deux larges images de la silhouette aux prises avec ce que le narrateur nomme un « océan de feu ». Cette case ne contient plus qu’un fragment de cri au-dessus des flammes. L’œil du lecteur doit franchir la coupure pour retrouver le corps dont il vient de perdre la trace. Sous elles, le trait des mots finit par s’épaissir jusqu’à menacer leur lisibilité. Le dessin rend communicable une expérience de dissociation sans fournir pour autant l’enregistrement de ce qu’un témoin aurait pu filmer. Entre le coma et la page, il y a eu la survie, le souvenir et le travail du dessinateur.
 
 ## Deux interprétations au même chevet
 
@@ -31,5 +33,3 @@ Les trois documents empêchent finalement de faire du visible un arbitre unique.
 ## Conclusion
 
 Le récit de fiction accueille une dernière pensée, l’autobiographie graphique reconstruit un vécu de survivant et la clinique rapporte une expérience attribuée par un tiers. Chacun éclaire une relation humaine à la mort, avec des possibilités de preuve différentes. Au chevet de quelqu’un, respecter cette différence peut commencer par une question simple : ce que je viens de vous montrer, qu’avez-vous compris qu’il arrivait à votre proche ?
-
-[Sujet](https://web.archive.org/web/20240329005700id_/https://medecine-humanites.ens.fr/wp-content/uploads/2023/06/Sujet-1-EMI-MH2023.pdf) · [Rapport](https://web.archive.org/web/20240331041515id_/https://medecine-humanites.ens.fr/wp-content/uploads/2023/06/Rapport-Jury-MH2023.pdf)

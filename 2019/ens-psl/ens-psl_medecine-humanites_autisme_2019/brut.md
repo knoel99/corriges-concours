@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le 14 juin 2019, les candidats disposaient de trois heures pour proposer une lecture croisée de cinq documents. La composition prend pour point de départ la différence entre un geste observé et l’expérience que la personne en rapporte.
 
 ## Ce que dit un geste
@@ -20,7 +22,7 @@ Le tableau de Soutine soumet le spectateur à une épreuve analogue. Le titre, *
 
 Le clinicien Martin Joubert expose lui-même les limites d’une déduction. Une difficulté précoce d’imitation peut faire l’objet d’hypothèses neurophysiologiques. Il observe cependant que certains enfants apprennent à reproduire avec soin les conduites d’autrui afin d’être acceptés. Une personne peut réussir le geste attendu au prix d’un effort considérable. Le fait de l’avoir reproduit ne prouve ni la facilité de la rencontre ni la compréhension de ses sous-entendus. À propos de son jeune patient Laurent, Joubert propose de voir dans la nomination minutieuse des aspects concrets du monde une manière de rendre la rencontre supportable. Le passage présente une interprétation clinique située, avec ses questions et son vocabulaire propres.
 
-Grandin modifie la place d’où une telle interprétation peut être discutée. Elle raconte à la fois le désir de contact, le sursaut devant un effleurement imprévu et l’idée enfantine d’une machine dont elle pourrait disposer elle-même. Ce que l’observateur saisit comme un refus global se décompose alors en sensations selon le type de contact et la possibilité de le prévoir. Une mesure sur une échelle de défense tactile figure bien dans le récit. Elle indique un résultat à dix ans, sans pouvoir dire à la place de l’enfant si celle-ci voulait être aimée. Réciproquement, le témoignage de Grandin n’explique pas à lui seul l’expérience de Laurent. Il donne une bonne raison de lui ménager, à lui aussi, des moyens de faire connaître les différences qui comptent pour lui.
+Grandin modifie la place d’où une telle interprétation peut être discutée. Elle raconte à la fois le désir de contact, le sursaut devant un effleurement imprévu et l’idée enfantine d’une machine dont elle pourrait disposer elle-même. Ce que l’observateur saisit comme un refus global se décompose alors en sensations selon le type de contact et la possibilité de le prévoir. Grandin place côte à côte deux manières de décrire ce qui la séparait des autres. Le score de neuf sur quinze, obtenu à dix ans sur l’échelle de défense tactile, situe une réaction sur une graduation. La comparaison avec une porte coulissante en verre dit autre chose. L’enfant pouvait voir et désirer la proximité des autres tout en éprouvant une séparation qu’un témoin aurait eu peine à percevoir. Réciproquement, le témoignage de Grandin n’explique pas à lui seul l’expérience de Laurent. Il donne une bonne raison de lui ménager, à lui aussi, des moyens de faire connaître les différences qui comptent pour lui.
 
 ![Figure 1 — Comment réexaminer le sens donné à un comportement](figures/lecture-croisee.svg)
 

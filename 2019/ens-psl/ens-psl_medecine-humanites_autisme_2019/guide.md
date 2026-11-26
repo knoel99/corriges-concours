@@ -4,15 +4,17 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le 14 juin 2019, les candidats disposaient de trois heures pour proposer une lecture croisée de cinq documents. La composition prend pour point de départ la différence entre un geste observé et l’expérience que la personne en rapporte.
 
 ## Lire le dossier
 
-- Martin Joubert, *À quoi pensent les autistes ?*, 2018. Le clinicien met en regard une hypothèse sur l’imitation et les stratégies d’un jeune patient.
-- Chaïm Soutine, *L’Idiot de village*, 1919. Le portrait à l’huile mesure 92 × 65 cm. Observer comment le col blanc, les mains et le fond rouge organisent le regard.
-- Itard, *Mémoire sur les premiers développements de Victor de l’Aveyron*, 1801. Itard rapporte l’examen initial de Pinel. La note signale qu’une proposition diagnostique ultérieure a été contestée.
-- Temple Grandin, *Ma vie d’autiste*, traduction française de 2000. Une adulte raconte son expérience tactile d’enfant et ce qu’un témoin pouvait en méconnaître.
-- Brigitte Chamak, *Quaderni*, hiver 2008-2009. L’enquête distingue classifications, associations de parents et associations d’autoreprésentation.
+- Document 1, p. 2 · Martin Joubert, *À quoi pensent les autistes ?*, 2018. Le clinicien met en regard une hypothèse sur l’imitation et les stratégies d’un jeune patient.
+- Document 2, p. 3 · Chaïm Soutine, *L’Idiot de village*, 1919. Le portrait à l’huile mesure 92 × 65 cm. Observer comment le col blanc, les mains et le fond rouge organisent le regard.
+- Document 3, p. 4 · Itard, *Mémoire sur les premiers développements de Victor de l’Aveyron*, 1801. Itard rapporte l’examen initial de Pinel. La note signale qu’une proposition diagnostique ultérieure a été contestée.
+- Document 4, p. 5 · Temple Grandin, *Ma vie d’autiste*, traduction française de 2000. Une adulte raconte son expérience tactile d’enfant et ce qu’un témoin pouvait en méconnaître.
+- Document 5, p. 6 · Brigitte Chamak, *Quaderni*, hiver 2008-2009. L’enquête distingue classifications, associations de parents et associations d’autoreprésentation.
 
 ## Ce que dit un geste
 
@@ -34,7 +36,7 @@ Le tableau de Soutine soumet le spectateur à une épreuve analogue. Le titre, *
 
 Le clinicien Martin Joubert expose lui-même les limites d’une déduction. Une difficulté précoce d’imitation peut faire l’objet d’hypothèses neurophysiologiques. Il observe cependant que certains enfants apprennent à reproduire avec soin les conduites d’autrui afin d’être acceptés. Une personne peut réussir le geste attendu au prix d’un effort considérable. Le fait de l’avoir reproduit ne prouve ni la facilité de la rencontre ni la compréhension de ses sous-entendus. À propos de son jeune patient Laurent, Joubert propose de voir dans la nomination minutieuse des aspects concrets du monde une manière de rendre la rencontre supportable. Le passage présente une interprétation clinique située, avec ses questions et son vocabulaire propres.
 
-Grandin modifie la place d’où une telle interprétation peut être discutée. Elle raconte à la fois le désir de contact, le sursaut devant un effleurement imprévu et l’idée enfantine d’une machine dont elle pourrait disposer elle-même. Ce que l’observateur saisit comme un refus global se décompose alors en sensations selon le type de contact et la possibilité de le prévoir. Une mesure sur une échelle de défense tactile figure bien dans le récit. Elle indique un résultat à dix ans, sans pouvoir dire à la place de l’enfant si celle-ci voulait être aimée. Réciproquement, le témoignage de Grandin n’explique pas à lui seul l’expérience de Laurent. Il donne une bonne raison de lui ménager, à lui aussi, des moyens de faire connaître les différences qui comptent pour lui.
+Grandin modifie la place d’où une telle interprétation peut être discutée. Elle raconte à la fois le désir de contact, le sursaut devant un effleurement imprévu et l’idée enfantine d’une machine dont elle pourrait disposer elle-même. Ce que l’observateur saisit comme un refus global se décompose alors en sensations selon le type de contact et la possibilité de le prévoir. Grandin place côte à côte deux manières de décrire ce qui la séparait des autres. Le score de neuf sur quinze, obtenu à dix ans sur l’échelle de défense tactile, situe une réaction sur une graduation. La comparaison avec une porte coulissante en verre dit autre chose. L’enfant pouvait voir et désirer la proximité des autres tout en éprouvant une séparation qu’un témoin aurait eu peine à percevoir. Réciproquement, le témoignage de Grandin n’explique pas à lui seul l’expérience de Laurent. Il donne une bonne raison de lui ménager, à lui aussi, des moyens de faire connaître les différences qui comptent pour lui.
 
 ![Figure 1 — Comment réexaminer le sens donné à un comportement](figures/lecture-croisee.svg)
 

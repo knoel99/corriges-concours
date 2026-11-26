@@ -4,15 +4,17 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Le 13 juin 2019, les candidats disposaient de trois heures pour proposer une lecture croisée de cinq documents. Le commentaire examine comment une institution passe de l’observation d’une différence à une décision concernant la personne.
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Écrit du 13 juin 2019. Cinq documents à commenter en trois heures. [Sujet](https://web.archive.org/web/20210214092031id_/http://medecine-humanites.ens.fr/wp-content/uploads/2019/10/Sujet-1-e%CC%81crit-MH2019-ENS.tiff)
 
 ## Lire le dossier
 
-- Ilana Löwy, *Cahiers du Genre*, 2003. Identifier l’origine sociale de l’urgence dont elle analyse les effets médicaux.
-- *Hermaphrodite endormi*, Louvre. La photographie montre un corps au repos sur un matelas sculpté. La notice distingue copie romaine, original grec et intervention du Bernin.
-- Virginia Woolf, *Orlando*, 1928. Les questions successives du narrateur mettent en jeu des attentes liées aux vêtements et aux conduites.
-- Flora Yacine, *Sciences humaines*, 2012. Le parcours de Laxmi et la reconnaissance administrative au Tamil Nadu permettent d’interroger la portée sociale d’un statut.
-- *Le Monde* et AFP, 29 mai 2019. Caster Semenya et son avocat s’expriment après la décision du Tribunal arbitral du sport.
+- Document 1, p. 2 · Ilana Löwy, *Cahiers du Genre*, 2003. Identifier l’origine sociale de l’urgence dont elle analyse les effets médicaux.
+- Document 2, p. 3 · *Hermaphrodite endormi*, Louvre. La photographie montre un corps au repos sur un matelas sculpté. La notice distingue copie romaine, original grec et intervention du Bernin.
+- Document 3, p. 4 · Virginia Woolf, *Orlando*, 1928. Les questions successives du narrateur mettent en jeu des attentes liées aux vêtements et aux conduites.
+- Document 4, p. 5 · Flora Yacine, *Sciences humaines*, 2012. Le parcours de Laxmi et la reconnaissance administrative au Tamil Nadu permettent d’interroger la portée sociale d’un statut.
+- Document 5, p. 6 · *Le Monde* et AFP, 29 mai 2019. Caster Semenya et son avocat s’expriment après la décision du Tribunal arbitral du sport.
 
 ## Qui doit s’adapter à la catégorie ?
 
@@ -24,7 +26,7 @@ Le 13 juin 2019, les candidats disposaient de trois heures pour proposer une lec
 
 **Piste de lecture** · Décrire l’angle de la photographie et distinguer le récit de la légende de ce qui est visible. Chez Woolf, relever comment le texte transforme le temps d’habillage et l’équitation en tests absurdes. L’interprétation porte sur le regard qui classe.
 
-Dans la photographie de l’*Hermaphrodite endormi*, le quadrillage sombre et clair du sol rend sensible le volume horizontal du matelas. Le corps repose sur le côté, le visage tourné vers le support, une jambe repliée. Le cadrage donne au spectateur un point de vue déterminé sur une statue qu’il pourrait, au musée, contourner. On peut donc décrire la posture avec assurance sans pouvoir en déduire la connaissance que cette figure aurait d’elle-même. La légende ajoute encore plusieurs temps au regard. Le matelas est l’œuvre du Bernin, au XVIIᵉ siècle, et le corps une copie romaine d’un original grec. Quant au récit de Salmacis, il attribue à un vœu de la nymphe, exaucé par Zeus malgré le refus initial d’Hermaphrodite, la réunion durable des deux corps. Ce récit impose à la question de l’union une seconde question, celle de savoir qui la demande.
+Dans la photographie de l’*Hermaphrodite endormi*, le quadrillage sombre et clair du sol rend sensible le volume horizontal du matelas. Le corps repose sur le côté, le visage tourné vers le support, une jambe repliée. Le photographe se place en surplomb du côté du dos. Le quadrillage du sol file en diagonale derrière le support rectangulaire, tandis que le drapé suit le pli des jambes. La page fixe ainsi un angle sur une statue qu’un visiteur du Louvre pourrait contourner. Cette vue permet de décrire une posture. Elle laisse entière la question du regard de la figure sur elle-même. La légende ajoute encore plusieurs temps au regard. Le matelas est l’œuvre du Bernin, au XVIIᵉ siècle, et le corps une copie romaine d’un original grec. Dans la légende, Zeus réunit les deux corps à la demande de Salmacis malgré le refus d’Hermaphrodite. Ce récit impose à la question de l’union une seconde question, celle de savoir qui la demande.
 
 Les « esprits curieux » auxquels Virginia Woolf prête leurs interrogations cherchent eux aussi à trancher. La durée de la toilette d’Orlando, son adresse à cheval ou sa tendresse envers les animaux deviennent autant d’indices supposés. Or une habileté s’acquiert, un habit se change, et le refus de la cruauté n’a rien d’une mesure du sexe. La liste s’allonge précisément parce qu’aucun indice n’emporte la conclusion. La fiction d’une vie qui se prolonge après une métamorphose permet ainsi une expérience hors de portée de la seule image. Le lecteur suit une personne dans le temps, tandis que les observateurs croient pouvoir la classer en un instant. Le mythe, le roman et les variations corporelles étudiées par la médecine sont ici des objets distincts. Ce qu’ils permettent de comparer est l’attente du spectateur devant un corps qu’il voudrait identifier.
 
@@ -48,6 +50,4 @@ Le reportage de Flora Yacine empêche de conclure trop vite qu’une case suppl�
 
 **Piste de lecture** · Proposer un critère utilisable dans les deux cas contemporains de la naissance et de la compétition. La liberté de contestation et le bénéfice attendu pour la personne en donnent deux dimensions.
 
-Le dossier propose ainsi un critère pour juger des catégories. Leur valeur dépend à la fois de la question à laquelle elles répondent, de la possibilité de les contester et de leurs conséquences pour la personne. Décrire une variation, ouvrir un droit et décider d’un soin engagent trois responsabilités différentes. L’écoute devient décisive là où le classement menace de transformer celui qui pourrait parler en objet d’une décision prise pour lui.
-
-[Sujet](https://web.archive.org/web/20210214092031id_/http://medecine-humanites.ens.fr/wp-content/uploads/2019/10/Sujet-1-e%CC%81crit-MH2019-ENS.tiff)
+Une catégorie se juge à sa finalité, à ses conséquences pour la personne et à la possibilité de la contester. Décrire une variation, ouvrir un droit et décider d’un soin engagent trois responsabilités différentes. L’écoute devient décisive là où le classement menace de transformer celui qui pourrait parler en objet d’une décision prise pour lui.
