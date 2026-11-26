@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Langage choisi.** Python, autorisé par le sujet. Les exemples exécutables utilisent le groupe multiplicatif à seize éléments pour $p=17$. Les preuves combinatoires et les coûts utilisent le premier fixé $p$ du sujet, avec un produit de résidus compté pour une opération.
 
 ## Repères
@@ -290,6 +292,8 @@ $$
 $$
 
 On retrouve l’intégrale de l’énoncé avec le même décalage si l’on additionne 1 aux deux membres. Pour $N=2$, par exemple, les deux probabilités de queue valent 1 et $1/2$, d’où une moyenne exacte de $3/2$.
+
+Pour $p=5$, le modèle uniforme porte sur $N=4$ états. Les probabilités de dépasser les rangs 0, 1, 2 et 3 sont $1$, $3/4$, $3/8$ et $3/32$. En ramenant au dénominateur 32, la moyenne vaut $71/32$. La première observation $x_0$ fait déjà partie des états visités lorsque la première image est tirée.
 
 Pour $s=\lfloor x\sqrt N\rfloor$ et $x$ fixé, développer $\log(1-j/N)$ donne $\log P_s=-s(s+1)/(2N)+O(s^3/N^2)\to-x^2/2$. En outre $P_s\leq\exp[-s(s+1)/(2N)]$ par $1-u\leq e^{-u}$. Ainsi les sommes de Riemann de pas $1/\sqrt N$ convergent sur chaque intervalle borné, et leurs queues sont majorées par les queues d’une intégrale gaussienne (à un pas de grille près). Il vient
 

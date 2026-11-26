@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Repères
 
 Les listes sont rangées suivant les degrés décroissants et la liste vide représente le polynôme nul. Une réduction choisit un coefficient non nul. Une jonction utilise deux chemins orientés vers un descendant commun, tandis qu’une conversion autorise de parcourir un chemin en sens inverse. Dans les programmes, un générateur normalisé est supposé non nul et son coefficient dominant vaut un.
@@ -216,6 +218,8 @@ u=h+g-(a+b)R=h+g'-bR.
 $$
 
 Si $a+b\ne0$, une réduction de $h+g$ donne $u$. Si $a+b=0$, ce sommet est déjà $u$. De même, si $b\ne0$, une réduction de $h+g'$ donne $u$, sinon il est déjà égal à $u$. Dans tous les cas les deux sommets atteignent $u$ en zéro ou une étape. La propriété établie est la jonction, même quand aucune arête directe ne relie les deux sommes.
+
+Prenons $f=X-1$, $g=X$, $g^{\prime}=1$ et $h=-X$. Alors $h+g=0$ est déjà une feuille, tandis que $h+g^{\prime}=1-X$ se réduit à zéro en utilisant le coefficient $-1$ du monôme de degré 1. Cet exemple réalise précisément le cas où l’un des deux chemins a longueur zéro.
 
 ![Pour f = X − 1, la réduction 2X → 2 est translatée par deux polynômes h. Dans le second cas, le sommet de gauche est déjà le descendant commun.](figures/q17-jonction-translation.svg)
 

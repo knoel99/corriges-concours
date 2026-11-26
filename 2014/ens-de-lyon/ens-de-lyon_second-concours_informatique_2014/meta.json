@@ -13,7 +13,9 @@
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2014/10/14_2clyon_suj_info.pdf",
     "sujet_sha256": "543cbd0c38db7fabca61020af1376d9aab098a9a7578965723eb7e9f2ae048cb",
     "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2014/10/14_2clyon_rap_einfo.pdf",
-    "rapport_sha256": "96fd3d5ad37116ea845d3907871d232c8ccb03629f463ffd6784945dff226fa1"
+    "rapport_sha256": "96fd3d5ad37116ea845d3907871d232c8ccb03629f463ffd6784945dff226fa1",
+    "index_banque": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/",
+    "index_banque_sha256": "36243e7203175ea8fc3f1b47cf04cfaeff13de5e6fe10463bd7d894a9fca4bfe"
   },
   "figures": [
     {
@@ -43,6 +45,54 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Rédaction originale des 19 questions du second concours sur le sujet et le rapport institutionnels. Exemples exécutables dans le groupe à 16 éléments, suites finies et bornes générales. Contrôle de 3 264 exponentiations, 6 400 états, 1 225 intersections de tableaux et du codage de 50 069 fonctions finies. Vérification du terme constant de l’espérance et de l’intégrale gaussienne signalée par le jury. Trois figures originales."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Contrôle des 19 questions sur le sujet et le rapport. Vérification des coûts de multiplication et du traitement des cas 0 et 1, des bornes temps-espace dans le modèle de groupe fini du sujet, des conventions de premier retour et du décalage dans la somme des probabilités. Vérification indépendante sur les 256 fonctions d’un ensemble à quatre éléments et de la correction de l’intégrale indiquée par le jury.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
-  ]
+  ],
+  "questions_principales": 19,
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "subdivisions_du_sujet": {},
+    "precision": "19 rubriques principales et 19 consignes terminales repérées dans le fascicule officiel. Contrôle des 19 questions sur le sujet et le rapport. Vérification des coûts de multiplication et du traitement des cas 0 et 1, des bornes temps-espace dans le modèle de groupe fini du sujet, des conventions de premier retour et du décalage dans la somme des probabilités. Vérification indépendante sur les 256 fonctions d’un ensemble à quatre éléments et de la correction de l’intégrale indiquée par le jury.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "relecture_corrige",
+      "perimetre": "Contrôle des 19 questions sur le sujet et le rapport. Vérification des coûts de multiplication et du traitement des cas 0 et 1, des bornes temps-espace dans le modèle de groupe fini du sujet, des conventions de premier retour et du décalage dans la somme des probabilités. Vérification indépendante sur les 256 fonctions d’un ensemble à quatre éléments et de la correction de l’intégrale indiquée par le jury.",
+      "sha256_sujet_controle": "543cbd0c38db7fabca61020af1376d9aab098a9a7578965723eb7e9f2ae048cb",
+      "sha256_rapport_controle": "96fd3d5ad37116ea845d3907871d232c8ccb03629f463ffd6784945dff226fa1"
+    }
+  }
 }
