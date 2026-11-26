@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 L’ordre est décidé dès la première part qui diffère. Pour trouver un successeur, on peut donc chercher le préfixe le plus long qu’il est possible de conserver. Dans un tableau de Young, l’argument analogue consiste à déterminer quelles cases peuvent changer sans modifier l’ordre des voisines.
 
 ## Partie 1. Compositions
@@ -126,3 +128,5 @@ retirer la ligne si elle est devenue vide
 **2.** Échanger deux $x_i$ permute les termes de la somme définissant $g$ et en change le signe par le déterminant. Ainsi $g$ s’annule dès que deux $x_i$ coïncident. Les facteurs linéaires distincts $x_i-x_j$ divisent donc tous $g$, et leur produit aussi. Diviser par $\Delta$ donne un polynôme symétrique en $x$, de degré total 1 car $\Delta$ est homogène de degré $D=\binom{k}{2}$. Il ne reste à identifier que deux coefficients. En $y=0$, le quotient vaut $\sum x_i$. En dérivant en $y$ puis en posant $y=0$, on obtient $\sum x_i\partial_i\Delta=D\Delta$, identité qui se vérifie sur chaque monôme de degré $D$. D’où $g=(\sum x_i+Dy)\Delta$.
 
 **3.** Ajouter $k-j$ à la $j$-ième part transforme la décroissance large en décroissance stricte pour $x_j=p_j+k-j$. Une suppression interdite de case correspond alors à une collision entre deux $x_j$ ou à la tentative de décrémenter zéro. Tester la formule candidate $F=n!\Delta(x)/(x_1!\cdots x_k!)$ dans la récurrence. À chaque retrait autorisé, la factorielle manquante apporte le facteur $x_j$. La somme des numérateurs, après mise en facteur de $(n-1)!/\prod_jx_j!$, devient $g(x,-1)$. Les retraits interdits y valent zéro pour les raisons précédentes. Or $\sum x_j=n+D$, donc $g(x,-1)=n\Delta(x)$ et la récurrence redonne $F$. Au départ, le tableau vide, éventuellement complété de lignes de longueur zéro, donne $x=(k-1,\ldots,0)$ et le produit des écarts vaut $\prod_{t=0}^{k-1}t!$. La valeur initiale est 1. La récurrence établit la formule à toute taille.
+
+Pour la forme $(3,2)$, les coordonnées décalées sont $(4,2)$ et le déterminant vaut $4-2=2$. La formule donne $5!\,2/(4!\,2!)=5$. La récurrence donne aussi $f(2,2)+f(3,1)=2+3=5$. Ce contrôle explique le rôle du décalage avant de prendre le déterminant.

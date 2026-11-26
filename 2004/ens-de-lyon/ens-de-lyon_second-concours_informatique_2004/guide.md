@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Comment inverser trois signaux avec deux négations ? Le programme construit d’abord un signal pour chaque nombre possible de bits vrais. Lorsqu’on connaît ce nombre, les portes ET et OU suffisent à compléter chaque bit. Les fragments Python 3 se lisent dans l’ordre. Ils impriment les équations du circuit. Les entrées, les sorties et le préfixe auxiliaire aux occupent des noms distincts.
 
 ## Partie III. Cellules élémentaires
@@ -228,6 +230,8 @@ Pour retrouver les coûts exacts, compter les quatre groupes de portes ci-dessou
 | Sélection des réponses | $N(N+1)$ | $N^2$ |
 
 Additionner les colonnes pour obtenir les comptes demandés. La deuxième ligne part d’un ET en taille 2. En taille $2h\ge4$, chaque signal $F,G$ consomme $h$ ET et $h-1$ OU. Le petit décodeur ajoute un ET, et les $2h$ sorties consomment chacune un ET. Sommer ces incréments sur les tailles dyadiques donne la ligne du tableau. Les seuls NON sont les $p$ négations du décodeur. Sur la ligne de sélection, une sortie relie $N+1$ branches par $N+1$ ET et $N$ OU.
+
+Pour deux entrées, $p=2$ et $L=4$. Les quatre sorties du décodeur correspondent aux poids 0, 1, 2 et à une position de remplissage toujours inactive. Le choix de $L$ tient donc au nombre de poids possibles, et le seuil ajouté est bien la constante fausse.
 
 ### Question 15 · Trois entrées
 

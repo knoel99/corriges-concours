@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Les sections I et II du sujet commun à Ulm et Lyon fixent la syntaxe. Les programmes Python 3 ci-dessous, à réunir dans l’ordre, impriment des équations booléennes. Les paramètres de signaux sont des chaînes. Le préfixe aux est réservé aux fils internes, les noms d’entrée et de sortie sont disjoints et les sorties demandées sont distinctes.
 
 ## Partie III. Cellules élémentaires
@@ -226,6 +228,8 @@ $$
 $$
 
 Les copies et les constantes ne sont pas des portes.
+
+Pour deux entrées, $p=2$ et $L=4$. Les quatre sorties du décodeur correspondent aux poids 0, 1, 2 et à une position de remplissage toujours inactive. Le choix de $L$ tient donc au nombre de poids possibles, et le seuil ajouté est bien la constante fausse.
 
 ### Question 15 · Trois entrées
 

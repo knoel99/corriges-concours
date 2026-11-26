@@ -7,10 +7,14 @@
     "annee": 2023
   },
   "redaction": "IA (OpenAI Codex, gpt-6.2-astra, effort ultra)",
-  "questions": 9,
+  "questions": 22,
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2023/10/2c2023_info.pdf",
-    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2023/10/23_2CC_rap_eInfo.pdf"
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2023/10/23_2CC_rap_eInfo.pdf",
+    "sujet_sha256": "1e8f44aab975b636c939b0ba0b3ecc8badcd71c23cf097d237758a6722e7b24a",
+    "rapport_sha256": "6f20c4dd49ea21965e52dd4b8c515afe14ffa13a6718bd2e5d51070b40f521bf",
+    "index_banque": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/",
+    "index_banque_sha256": "36243e7203175ea8fc3f1b47cf04cfaeff13de5e6fe10463bd7d894a9fca4bfe"
   },
   "figures": [
     {
@@ -39,7 +43,7 @@
       "legende": "À partir de la même partition de 8, la position à diminuer dépend de la longueur autorisée."
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "provenance": {
     "redaction": {
       "provider": "codex",
@@ -68,6 +72,85 @@
       "modifications": false,
       "perimetre": "Contre-lecture indépendante des 22 réponses dont le cas limite de II.2 et le successeur en III.2.",
       "agent": "redaction_astra/relecture"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Lecture des quatre pages numérotées et de la garde, ainsi que du rapport d’Yves Robert. Les 9 rubriques comportent 10 consignes terminales en I, 3 en II et 9 en III. Contrôle de 28 628 partitions, 53 358 modifications de tableaux ordonnés et 12 960 recherches par quadrants. Les bornes de la définition de l’ordre et le cas de la partition vide ont été vérifiés ; contrôle des cinq figures et des complexités.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
-  ]
+  ],
+  "questions_principales": 9,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2.1",
+      "I.2.2",
+      "I.3.1",
+      "I.3.2",
+      "I.3.3",
+      "I.3.4",
+      "I.3.5",
+      "I.4.1",
+      "I.4.2",
+      "II.1",
+      "II.2",
+      "II.3",
+      "III.1.1",
+      "III.1.2",
+      "III.1.3",
+      "III.1.4",
+      "III.2.1",
+      "III.2.2",
+      "III.2.3",
+      "III.2.4",
+      "III.2.5"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "subdivisions_du_sujet": {
+      "I.2": [
+        "1",
+        "2"
+      ],
+      "I.3": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "I.4": [
+        "1",
+        "2"
+      ],
+      "III.1": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "III.2": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    "precision": "9 rubriques principales et 22 consignes terminales repérées dans le fascicule officiel. Lecture des quatre pages numérotées et de la garde, ainsi que du rapport d’Yves Robert. Les 9 rubriques comportent 10 consignes terminales en I, 3 en II et 9 en III. Contrôle de 28 628 partitions, 53 358 modifications de tableaux ordonnés et 12 960 recherches par quadrants. Les bornes de la définition de l’ordre et le cas de la partition vide ont été vérifiés ; contrôle des cinq figures et des complexités.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "relecture_corrige",
+      "perimetre": "Lecture des quatre pages numérotées et de la garde, ainsi que du rapport d’Yves Robert. Les 9 rubriques comportent 10 consignes terminales en I, 3 en II et 9 en III. Contrôle de 28 628 partitions, 53 358 modifications de tableaux ordonnés et 12 960 recherches par quadrants. Les bornes de la définition de l’ordre et le cas de la partition vide ont été vérifiés ; contrôle des cinq figures et des complexités.",
+      "sha256_sujet_controle": "1e8f44aab975b636c939b0ba0b3ecc8badcd71c23cf097d237758a6722e7b24a",
+      "sha256_rapport_controle": "6f20c4dd49ea21965e52dd4b8c515afe14ffa13a6718bd2e5d51070b40f521bf"
+    }
+  }
 }

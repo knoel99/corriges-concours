@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Comment calculer le dernier terme d’une récurrence sans en produire tous les termes intermédiaires ? Les questions 1 à 5 construisent une matrice qui avance de plusieurs pas. Les questions 6 à 8 expliquent comment l’utiliser à plusieurs dates.
 
 ## Partie 1. Premiers algorithmes
@@ -47,6 +49,8 @@ Comment calculer le dernier terme d’une récurrence sans en produire tous les 
 ![Figure 1 — Les deux facteurs couvrent quatre indices consécutifs. Le bloc de droite agit en premier sur le vecteur.](figures/quatre-pas.svg)
 
 Le second groupe est une copie translatée du premier. Pour $i=2s$, construire récursivement $B=N_s$ en s’arrêtant à $N_1=A$, puis renvoyer $B(x+s)B(x)$. On ne demande qu’un enfant à la récursion. Attention au coefficient de degré $s$. Pour la translation, traiter les $s$ termes bas par 5.1 et ajouter le terme haut via les $s+1$ coefficients du binôme $(x+s)^s$, obtenus par quotients successifs en $O(s)$. Pour le produit, reprendre la séparation de 4.4. Ainsi les coûts arithmétiques sont majorés, à constante près, par $m^3[M(i/2)+M(i/4)+\cdots+M(1)]$. L’hypothèse de division par deux majore cette somme par $m^3M(i)$.
+
+Au premier dédoublement, on obtient $N_2(x)=A(x+1)A(x)$. Par exemple $A(x)=\bigl(\begin{smallmatrix}1&x\\1&0\end{smallmatrix}\bigr)$ donne $A(1)A(0)=\bigl(\begin{smallmatrix}2&0\\1&0\end{smallmatrix}\bigr)$, alors que $A(0)A(1)=\bigl(\begin{smallmatrix}1&1\\1&1\end{smallmatrix}\bigr)$. L’ordre des blocs est donc nécessaire même à deux pas.
 
 ### Question 6 · Appliquer les blocs
 

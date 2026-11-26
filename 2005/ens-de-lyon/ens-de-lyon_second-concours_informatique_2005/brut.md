@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 On compte les opérations dans le corps des complexes. Les entiers de boucle sont des indices. Ici n est une puissance de quatre et le logarithme est en base deux.
 
 ## Partie 1. Premiers algorithmes
@@ -49,6 +51,8 @@ On compte les opérations dans le corps des complexes. Les entiers de boucle son
 **1.** Extraire, pour chacune des $m^2$ positions, son polynôme scalaire. Le translater par 1.3 puis replacer les coefficients. Coût $m^2(M(n)+5n)=O(m^2M(n))$.
 
 **2.** Calculer une seule fois $B=N_s$ pour $i=2s$, puis former $N_{2s}(x)=B(x+s)B(x)$. La première matrice regroupe les indices $s$ à $2s-1$, la seconde les indices 0 à $s-1$. Le cas initial est $N_1=A$. La translation d’un polynôme de degré $s$ se ramène à la translation de sa partie basse et à l’ajout de $b_s(x+s)^s$, dont les coefficients se forment en $O(s)$ par le binôme. Avec 4.4, l’étape coûte $O(m^3M(s))$. Sur la branche récursive unique, $\sum_{h=1}^{\log_2 i} M(i/2^h)\le M(i)$. Le coût est $O(m^3M(i))$.
+
+Au premier dédoublement, on obtient $N_2(x)=A(x+1)A(x)$. Par exemple $A(x)=\bigl(\begin{smallmatrix}1&x\\1&0\end{smallmatrix}\bigr)$ donne $A(1)A(0)=\bigl(\begin{smallmatrix}2&0\\1&0\end{smallmatrix}\bigr)$, alors que $A(0)A(1)=\bigl(\begin{smallmatrix}1&1\\1&1\end{smallmatrix}\bigr)$. L’ordre des blocs est donc nécessaire même à deux pas.
 
 ![Figure 1 — Les deux facteurs couvrent quatre indices consécutifs. Le bloc de droite agit en premier sur le vecteur.](figures/quatre-pas.svg)
 

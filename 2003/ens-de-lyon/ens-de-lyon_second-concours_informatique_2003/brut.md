@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Une composition est une suite d’entiers strictement positifs de somme n. Une partition impose en plus que ses parts soient décroissantes au sens large. Toutes les listes de cette correction vont de la plus grande à la plus petite pour l’ordre lexicographique.
 
 ## Partie 1. Compositions
@@ -114,3 +116,5 @@ si la ligne est vide : retirer cette dernière ligne
 **2.** Poser $D=k(k-1)/2$, degré de $\Delta$. Le polynôme $g=\sum_j x_j\Delta(x+ye_j)$ est alterné en $x$. Il est donc divisible par chacun des facteurs $x_i-x_j$ et par leur produit $\Delta$. Le quotient est homogène de degré 1 et symétrique en $x$, de la forme $a\sum x_j+b y$. À $y=0$ on trouve $a=1$. Le coefficient de $y$ dans $g$ vaut $\sum_j x_j\partial_j\Delta=D\Delta$ par homogénéité, d’où $b=D$.
 
 **3.** Écrire $x_j=p_j+k-j$. L’expression proposée est $F(p)=n!\Delta(x)/\prod_j x_j!$. Pour la forme vide, $x=(k-1,\ldots,0)$ et $\Delta(x)=\prod_{j=0}^{k-1}j!$, donc $F=1$. Dans la somme des prédécesseurs, mettre en facteur $(n-1)!/\prod_jx_j!$. Il reste $\sum_j x_j\Delta(x-e_j)=(\sum x_j-D)\Delta(x)=n\Delta(x)$ par 3.4.2 à $y=-1$. Les retraits interdits produisent soit deux $x_j$ égaux après décrément, soit le facteur zéro $x_k=0$. L’expression vérifie ainsi la même récurrence et la même valeur initiale que $f$. Cela démontre la formule.
+
+Pour la forme $(3,2)$, les coordonnées décalées sont $(4,2)$ et le déterminant vaut $4-2=2$. La formule donne $5!\,2/(4!\,2!)=5$. La récurrence donne aussi $f(2,2)+f(3,1)=2+3=5$. Ce contrôle explique le rôle du décalage avant de prendre le déterminant.
