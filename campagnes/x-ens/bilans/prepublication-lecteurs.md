@@ -1,6 +1,6 @@
 # Essai local de publication des corrigés
 
-Le 26/11/2026 à 18 h 06 UTC, les 2051 paires signées de la révision `49e836f4` ont fourni les deux textes attendus et leurs signatures dans le service de lecture du site. Le journal de chaque fiche renvoie au bon dossier GitHub, reprend les interventions qualifiantes et indique le caractère partiel quand il est déclaré. [Résultats par épreuve](pdf-informatique-option-mp-1998-2010.tsv) · [Version des corrigés](https://github.com/knoel99/corriges-concours/tree/49e836f440898d5f7305b41f5cf0c5b39ebd0739) · [Version du site](https://github.com/knoel99/prepa/tree/be0762387a6a476eca2cd00fcdd8461b36f77949)
+Le 26/11/2026 à 18 h 06 UTC, les 2051 paires signées de la révision `49e836f4` ont fourni les deux textes attendus et leurs signatures dans le service de lecture du site. Le journal de chaque fiche renvoie au bon dossier GitHub, reprend les interventions qualifiantes et indique le caractère partiel quand il est déclaré. [Résultats par épreuve](prepublication-lecteurs.tsv) · [Version des corrigés](https://github.com/knoel99/corriges-concours/tree/49e836f440898d5f7305b41f5cf0c5b39ebd0739) · [Version du site](https://github.com/knoel99/prepa/tree/be0762387a6a476eca2cd00fcdd8461b36f77949)
 
 Le contrôle couvre 2524 fiches de filière pour 2051 épreuves signées. Les épreuves communes sont aussi vérifiées sous chaque filière de leur notice éditoriale. [Contrôles des 473 fiches supplémentaires](prepublication-lecteurs-autres-filieres.tsv)
 
