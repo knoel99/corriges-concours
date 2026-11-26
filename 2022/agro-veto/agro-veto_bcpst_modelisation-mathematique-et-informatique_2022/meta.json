@@ -16,6 +16,11 @@
   },
   "figures": [
     {
+      "fichier": "figures/croissance-exponentielle.svg",
+      "question": "1b",
+      "legende": "Croissance libre des lièvres. Avec les axes réduits, la courbe part de (0, 1) et la tangente initiale a pour pente 1."
+    },
+    {
       "fichier": "figures/croissance-logistique.svg",
       "question": "2h",
       "legende": "Deux trajectoires logistiques partant de part et d’autre de la capacité K. Le petit effectif présente une phase d’accélération avant de ralentir."
@@ -53,6 +58,80 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Vérification sur le sujet original des cinq parties et du prédicteur de Heun, contrôle numérique indépendant des 1 999 pas, précisions de la question 16c et terminologie de la question 10a."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture des deux éditions, du sujet, de ses trois graphiques et des annexes sur les portraits de phases et Python. Ajout du tracé exponentiel de 1b et du tableau de signes de 2b. Justification du critère global de 10e, vérification des deux gradients et des cas de valeurs propres doubles. Exécution des programmes des deux éditions, contrôle des 1 999 pas, de la dérive d’Euler et de la correction du signe du prédicteur en (9). Le choix numérique a = 2 est explicité.",
+      "tour": 2
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1a",
+      "1b",
+      "1c",
+      "2a",
+      "2b",
+      "2c",
+      "2d",
+      "2e",
+      "2f",
+      "2g",
+      "2h",
+      "2i",
+      "3a",
+      "3b",
+      "4",
+      "5a",
+      "5b",
+      "5c",
+      "6a",
+      "6b",
+      "6c",
+      "7a",
+      "7b",
+      "7c",
+      "8",
+      "9",
+      "10a",
+      "10b",
+      "10c",
+      "10d",
+      "10e",
+      "11",
+      "12a",
+      "12b",
+      "13",
+      "14a",
+      "14b",
+      "14c",
+      "15a",
+      "15b",
+      "15c",
+      "15d",
+      "15e",
+      "15f",
+      "16a",
+      "16b",
+      "16c",
+      "17",
+      "18"
+    ],
+    "precision": "Le fascicule A BCPST 0222 porte 18 numéros regroupés en 49 rubriques. Les items 7a.i–iii, 7c.i–iii et 15a.i–iv sont traités à l’intérieur de ces rubriques, soit 56 réponses élémentaires. Les trois graphes imprimés sont en page 7, les deux annexes en pages 8–9. L’archive officielle de l’épreuve référence le sujet pour 2022.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "945254b1ed0b43577fa57872a518796b59aadfef17e7e925a6acffa504fb4a28",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Relecture des deux éditions, du sujet, de ses trois graphiques et des annexes sur les portraits de phases et Python. Ajout du tracé exponentiel de 1b et du tableau de signes de 2b. Justification du critère global de 10e, vérification des deux gradients et des cas de valeurs propres doubles. Exécution des programmes des deux éditions, contrôle des 1 999 pas, de la dérive d’Euler et de la correction du signe du prédicteur en (9). Le choix numérique a = 2 est explicité.",
+      "commit_redaction_anterieure": "ddc1579709d0e59f84c0978c222e59fe060e1ed3"
+    }
+  }
 }
