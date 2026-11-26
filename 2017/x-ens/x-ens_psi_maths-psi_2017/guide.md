@@ -4,7 +4,13 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La composition CX7611 relie une décomposition euclidienne et un problème spectral aux polynômes de Legendre. La question 14 confond deux espaces orthogonaux de dimensions différentes. On garde la formulation exacte dans l’espace image pour poursuivre les parties II et III.
+
+[Sujet officiel](https://www.ens.psl.eu/sites/default/files/2017_PSI_sujet_math.pdf)
+
+Posons $V_k=\operatorname{Im}T^k$. L’espace $E$ a dimension $2m+1$. L’application $T$ est nilpotente d’indice $2m+1$ et $M$ est une involution symétrique qui anticommute avec $T$. La vérification suit les questions du sujet officiel. Le rapport écrit de mathématiques de cette session reste introuvable dans les archives consultées.
 
 ## I. Nilpotence, involution et orthogonalité
 
@@ -70,6 +76,8 @@ Puisque $T^{2m+1}=0$, $V_k\subset\ker T^{2m+1-k}$. Les deux espaces ont dimensio
 #### Solution
 
 La droite $D_k=V_{k-1}\cap V_k^\perp$ est de dimension un par 3 et $V_{k-1}=V_k\oplus^\perp D_k$. Si $0\ne z\in D_k$, alors $z\notin V_k=\ker T^{2m+1-k}$ par 4. Ainsi $T^{2m+1-k}z\ne0$, aussi pour le dernier rang où la puissance vaut zéro comme exposant.
+
+Au dernier rang $k=2m+1$, on a $D_k=V_{2m}$ et l’endomorphisme qu’on applique au vecteur est $T^0=I$. Au premier rang, le vecteur peut être choisi sur la droite orthogonale à $V_1$ dans $E$.
 
 ### Question 6
 
@@ -188,6 +196,10 @@ Les vecteurs $Tw_1,Tw_2$ sont non nuls et ont des signes opposés sous $M$. Ils 
 
 Sous (H5), l’orthogonal de $G$ dans $E$ a dimension $(2m+1)-(2m-2)=3$. Deux vecteurs n’en forment donc pas une base. Le résultat utilisé dans la suite est que $Tw_1,Tw_2$ forment une base de $W=V_1\cap G^\perp$, l’orthogonal dans $V_1$. En effet $W$ a dimension deux et ces vecteurs y sont indépendants par 13. Dans $E$, on a $G^\perp=W\oplus^\perp V_1^\perp$, ce qui donne la direction manquante.
 
+Dans l’exemple polynomial de la partie III, on peut nommer la direction supplémentaire. Le polynôme $L_{2m}$ est orthogonal à tous les polynômes de degré au plus $2m-1$ et forme donc une base de $V_1^\perp$. Sa présence rend explicite la différence de dimension.
+
+![Décomposition orthogonale pour m égal à deux. L’image de T a dimension quatre. Dans cette image, W complète G par deux directions. Dans E, l’orthogonal de G contient une troisième direction.](figures/decomposition-orthogonale.svg)
+
 ## II. Problème spectral sur G
 
 ### Question 15a
@@ -207,6 +219,8 @@ Pour $0\ne u\in G$ solution, $\|u\|^2=\lambda\|Tu\|^2$. Le dénominateur est non
 #### Solution
 
 Si $v\in G$, $S(v,Tu)=0$ donne $\langle Tv,Tu\rangle=-\langle v,T^2u\rangle$. Ainsi $(P_\lambda)$ équivaut pour $u\in G$ à $(I+\lambda T^2)u\perp G$. Cette image appartient déjà à $V_1$ puisque $u\in V_1$. Elle est donc dans $W$ de 14, et vaut $\alpha Tw_1+\beta Tw_2$. L’inversion de 6 donne la formule de l’énoncé.
+
+Réciproquement, si $u\in G$ et $(I+\lambda T^2)u$ est orthogonal à $G$, son produit scalaire avec tout $v\in G$ est nul. Remplacer $\langle T^2u,v\rangle$ par $-\langle Tu,Tv\rangle$ redonne exactement l’équation de $(P_\lambda)$. L’appartenance à $V_1$ est ce qui permet ensuite de choisir deux coefficients seulement.
 
 ### Question 15c
 
@@ -290,6 +304,8 @@ Dans la base de 16d, $A$ est réelle symétrique définie positive. Le théorèm
 Les $Q_i$ sont non nuls car $Q_i(0)=\|Tw_i\|^2>0$ et de degrés au plus $m-1$. D’après 15c–d et 16e, chaque racine simple de $\psi$ appartient à exactement un $Q_i$ et chaque racine double aux deux. La somme des nombres de racines réelles distinctes des deux $Q_i$, comptées une fois pour chacun, vaut donc $2m-2$. Comme chaque degré est au plus $m-1$, chacun atteint cette borne et possède $m-1$ racines réelles simples. Leurs coefficients dominants sont $(-1)^{m-1}S(w_i,T^{2m-1}w_i)$ par 15e, donc ces deux valeurs sont non nulles. Les racines avec multiplicités et le caractère unitaire de $\psi$ imposent
 $$\psi(X)=\frac{Q_1(X)Q_2(X)}{S(w_1,T^{2m-1}w_1)S(w_2,T^{2m-1}w_2)}.$$
 
+Si $s$ désigne le nombre de racines simples de $\psi$ et $d$ celui de ses racines doubles, on a $s+2d=2m-2$. Le comptage répartit $s$ occurrences dans un seul des deux facteurs et $2d$ dans les deux facteurs réunis. Il épuise la somme de leurs degrés possibles. Il ne subsiste aucune place pour une racine multiple dans un facteur ni pour une racine complexe non réelle.
+
 ## III. Application aux polynômes de Legendre
 
 ### Question 17
@@ -355,6 +371,8 @@ Comme $R_n$ a des zéros d’ordre $n$ aux deux bords, ses dérivées d’ordres
 
 En posant $X=1+s$, on a $R_n(1+s)=s^n(2+s)^n$. Le coefficient de $s^{n+k}$ est $\binom nk 2^{n-k}$. En multipliant par $(n+k)!/(2^n n!)$, on trouve $L_n^{(k)}(1)=(n+k)!/((n-k)!k!2^k)$ pour $0\le k\le n$. En particulier $L_n(1)=1$.
 
+Pour $k=0$, la formule redonne $L_n(1)=1$ pour tout $n$, y compris $n=0$. Au rang $k=n$, le résultat est la factorielle $n!$ fois le coefficient dominant obtenu en 21a.
+
 ### Question 21d
 
 > [!INDICATION]
@@ -413,4 +431,6 @@ Or $L_n'(1)=n(n+1)/2$. Pour les deux dérivées d’ordre $2m-1$, les numérateu
 $$\boxed{\frac{\det A}{\det B}=\frac{m^2(4m^2-1)\big((2m-1)!\,2^{2m-1}\big)^2}{(4m-2)!(4m-1)!}}.$$
 Par exemple $m=2$ donne $4/105$.
 
-![Figure 1 — Le premier cas autorisé, m égal à deux, fait intervenir les deux polynômes de degrés quatre et trois.](figures/paire-legendre.svg)
+![Le premier cas autorisé, m égal à deux, fait intervenir les deux polynômes de degrés quatre et trois.](figures/paire-legendre.svg)
+
+Une vérification indépendante est possible dès $m=2$. La base $(1-X^2,\,X(1-X^2))$ sépare les parités. En intégrant directement les produits, on trouve les diagonales $(16/15,16/105)$ pour $A$ et $(8/3,8/5)$ pour $B$, avec tous les termes croisés nuls. Les deux valeurs propres généralisées sont $2/5$ et $2/21$. Leur produit redonne $4/105$.

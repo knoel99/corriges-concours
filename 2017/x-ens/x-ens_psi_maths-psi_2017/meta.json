@@ -11,9 +11,17 @@
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/2017_PSI_sujet_math.pdf",
     "rapport_jury": "",
-    "sha256_sujet": "58d63b2f5064b2b26ea8061e98e912a55e15868604c46ce088eb4ab4a0319424"
+    "sha256_sujet": "58d63b2f5064b2b26ea8061e98e912a55e15868604c46ce088eb4ab4a0319424",
+    "pages_sujet": 8,
+    "etat_rapport_jury": "Rapport de l’épreuve écrite de mathématiques non retrouvé lors de cette révision.",
+    "index_institutionnel": "https://www.ens.psl.eu/rapports-et-sujets-2017-psi"
   },
   "figures": [
+    {
+      "fichier": "figures/decomposition-orthogonale.svg",
+      "question": "14",
+      "legende": "Décomposition orthogonale pour m égal à deux. L’image de T a dimension quatre. Dans cette image, W complète G par deux directions. Dans E, l’orthogonal de G contient une troisième direction."
+    },
     {
       "fichier": "figures/paire-legendre.svg",
       "question": "26",
@@ -31,6 +39,256 @@
       "perimetre": "Rédaction des deux éditions contre les huit pages natives de CX7611. Contrôle de l’orthogonal ambiant en 14, des espaces de solutions en 15–16, des valeurs aux bords et du rapport explicite des déterminants. Illustration des deux polynômes du premier cas.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Lecture des 44 rubriques des huit pages. Recalcul des rangs et orthogonaux, contrôle du sens de l’équivalence en Q15b et des multiplicités en Q16. Calcul rationnel des matrices de Gram dans une base indépendante pour les Q23 à Q26 et vérification de la formule factorielle."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1a",
+      "1b",
+      "1c",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9a",
+      "9b",
+      "10",
+      "11a",
+      "11b",
+      "11c",
+      "11d",
+      "12",
+      "13",
+      "14",
+      "15a",
+      "15b",
+      "15c",
+      "15d",
+      "15e",
+      "16a",
+      "16b",
+      "16c",
+      "16d",
+      "16e",
+      "16f",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21a",
+      "21b",
+      "21c",
+      "21d",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26"
+    ],
+    "numeros_principaux": 26,
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": "1a",
+        "page_pdf": 3
+      },
+      {
+        "question": "1b",
+        "page_pdf": 3
+      },
+      {
+        "question": "1c",
+        "page_pdf": 3
+      },
+      {
+        "question": "2",
+        "page_pdf": 3
+      },
+      {
+        "question": "3",
+        "page_pdf": 3
+      },
+      {
+        "question": "4",
+        "page_pdf": 3
+      },
+      {
+        "question": "5",
+        "page_pdf": 3
+      },
+      {
+        "question": "6",
+        "page_pdf": 4
+      },
+      {
+        "question": "7",
+        "page_pdf": 4
+      },
+      {
+        "question": "8",
+        "page_pdf": 4
+      },
+      {
+        "question": "9a",
+        "page_pdf": 4
+      },
+      {
+        "question": "9b",
+        "page_pdf": 4
+      },
+      {
+        "question": "10",
+        "page_pdf": 4
+      },
+      {
+        "question": "11a",
+        "page_pdf": 4
+      },
+      {
+        "question": "11b",
+        "page_pdf": 4
+      },
+      {
+        "question": "11c",
+        "page_pdf": 4
+      },
+      {
+        "question": "11d",
+        "page_pdf": 4
+      },
+      {
+        "question": "12",
+        "page_pdf": 4
+      },
+      {
+        "question": "13",
+        "page_pdf": 4
+      },
+      {
+        "question": "14",
+        "page_pdf": 4
+      },
+      {
+        "question": "15a",
+        "page_pdf": 5
+      },
+      {
+        "question": "15b",
+        "page_pdf": 5
+      },
+      {
+        "question": "15c",
+        "page_pdf": 5
+      },
+      {
+        "question": "15d",
+        "page_pdf": 5
+      },
+      {
+        "question": "15e",
+        "page_pdf": 5
+      },
+      {
+        "question": "16a",
+        "page_pdf": 6
+      },
+      {
+        "question": "16b",
+        "page_pdf": 6
+      },
+      {
+        "question": "16c",
+        "page_pdf": 6
+      },
+      {
+        "question": "16d",
+        "page_pdf": 6
+      },
+      {
+        "question": "16e",
+        "page_pdf": 6
+      },
+      {
+        "question": "16f",
+        "page_pdf": 6
+      },
+      {
+        "question": "17",
+        "page_pdf": 7
+      },
+      {
+        "question": "18",
+        "page_pdf": 7
+      },
+      {
+        "question": "19",
+        "page_pdf": 7
+      },
+      {
+        "question": "20",
+        "page_pdf": 7
+      },
+      {
+        "question": "21a",
+        "page_pdf": 7
+      },
+      {
+        "question": "21b",
+        "page_pdf": 7
+      },
+      {
+        "question": "21c",
+        "page_pdf": 7
+      },
+      {
+        "question": "21d",
+        "page_pdf": 8
+      },
+      {
+        "question": "22",
+        "page_pdf": 8
+      },
+      {
+        "question": "23",
+        "page_pdf": 8
+      },
+      {
+        "question": "24",
+        "page_pdf": 8
+      },
+      {
+        "question": "25",
+        "page_pdf": 8
+      },
+      {
+        "question": "26",
+        "page_pdf": 8
+      }
+    ],
+    "precision": "Q14 est impossible dans l’espace E indiqué par le sujet. La réponse réfute cet énoncé par la dimension, démontre le résultat dans Im T et vérifie que celui-ci suffit à Q15. Les pages 1 et 2 contiennent la garde et les notations."
+  },
+  "date_revision": "2026-11-26"
 }
