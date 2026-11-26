@@ -11,7 +11,12 @@
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/10/2018_2CC_sujet_Math.pdf",
     "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/10/18_2CC_rap_eMath.pdf",
-    "sha256_sujet": "cb7ad454a949cfba6fe4718c6585ee3e8ba5c2d9fad54b7d8c2194542c186336"
+    "sha256_sujet": "cb7ad454a949cfba6fe4718c6585ee3e8ba5c2d9fad54b7d8c2194542c186336",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/10/18_2CC_rap_eMath.pdf",
+    "sujet_sha256": "cb7ad454a949cfba6fe4718c6585ee3e8ba5c2d9fad54b7d8c2194542c186336",
+    "rapport_sha256": "5ac63e10d7af182e72ff674207ace7c5f0d41fc5091ee7661e0a0326c4343039",
+    "index_banque": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/",
+    "index_banque_sha256": "36243e7203175ea8fc3f1b47cf04cfaeff13de5e6fe10463bd7d894a9fca4bfe"
   },
   "figures": [
     {
@@ -31,6 +36,60 @@
       "perimetre": "Rédaction complète des deux problèmes et des 26 items. Vérification des bornes sur les racines, des parités aux premiers rangs, des signes du wronskien et des estimations de la solution forcée. Schéma des deux modes de Floquet.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Vérification du sujet en quatre pages et du rapport : dix questions sur les puissances algébriques, seize subdivisions en analyse. Contrôle de la parité au rang zéro, du caractère uniforme de la borne L², du wronskien, de son signe dans la variation des constantes et des deux extrémités des intégrales de Green.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
-  ]
+  ],
+  "questions_principales": 17,
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "1.8",
+      "1.9",
+      "1.10",
+      "2.1a",
+      "2.1b",
+      "2.1c",
+      "2.1d",
+      "2.1e",
+      "2.1f",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7a",
+      "2.7b",
+      "2.7c",
+      "2.7d",
+      "2.7e"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "precision": "Vérification du sujet en quatre pages et du rapport : dix questions sur les puissances algébriques, seize subdivisions en analyse. Contrôle de la parité au rang zéro, du caractère uniforme de la borne L², du wronskien, de son signe dans la variation des constantes et des deux extrémités des intégrales de Green.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "relecture_corrige",
+      "perimetre": "Vérification du sujet en quatre pages et du rapport : dix questions sur les puissances algébriques, seize subdivisions en analyse. Contrôle de la parité au rang zéro, du caractère uniforme de la borne L², du wronskien, de son signe dans la variation des constantes et des deux extrémités des intégrales de Green.",
+      "sha256_sujet_controle": "cb7ad454a949cfba6fe4718c6585ee3e8ba5c2d9fad54b7d8c2194542c186336",
+      "sha256_rapport_controle": "5ac63e10d7af182e72ff674207ace7c5f0d41fc5091ee7661e0a0326c4343039"
+    }
+  }
 }

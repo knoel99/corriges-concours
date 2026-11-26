@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le premier problème détermine la parité des parties entières de deux suites de puissances. Le second construit une solution de carré intégrable pour une équation différentielle à coefficient périodique. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/uploads/2018/10/2018_2CC_sujet_Math.pdf) · [Rapport du jury](https://banques-ecoles.fr/cms/wp-content/uploads/2018/10/18_2CC_rap_eMath.pdf)
 
 ## 1. Algèbre. Parties entières de puissances algébriques
@@ -127,3 +129,5 @@ $$w(x)=u_+(x)\int_x^\infty u_-(t)f(t)\,dt+u_-(x)\int_{-\infty}^x u_+(t)f(t)\,dt.
 Les intégrales convergent absolument par Cauchy–Schwarz sur les demi-droites, car le mode présent sous chaque intégrale y décroît exponentiellement. Leurs dérivées ont les signes de 2.7d, donc $w''+qw=f$. Posons $C=\|v_+\|_\infty\|v_-\|_\infty$. On a
 $$|w(x)|\le C\!\left(\int_x^\infty e^{-\alpha(t-x)}|f(t)|dt+\int_{-\infty}^x e^{-\alpha(x-t)}|f(t)|dt\right).$$
 Par 2.1f, le premier terme entre parenthèses a norme $L^2$ au plus $\|f\|_2/\alpha$. Le second a la même borne par réflexion $x\mapsto-x$. Ainsi $\|w\|_2\le2C\|f\|_2/\alpha$. La différence de deux solutions de carré intégrable serait homogène et de carré intégrable, donc nulle par 2.7c.
+
+Le cas $q=-\alpha^2$ contrôle le signe. Les choix $u_+(x)=e^{\alpha x}$ et $u_-(x)=-e^{-\alpha x}/(2\alpha)$ donnent un wronskien égal à 1. La formule précédente a alors pour noyau $G(x,t)=-e^{-\alpha|x-t|}/(2\alpha)$. Sa dérivée en $x$ saute de $-1/2$ à $1/2$ en $x=t$, ce qui produit bien le terme source avec le signe demandé.
