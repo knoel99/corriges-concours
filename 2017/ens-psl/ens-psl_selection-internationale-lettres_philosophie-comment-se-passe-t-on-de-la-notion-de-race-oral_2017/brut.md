@@ -1,12 +1,14 @@
-# Philosophie — Comment se passe-t-on de la notion de race · Oral PSL 2017 · Corrigé brut
+# Philosophie — Comment se passe-t-on de la notion de race ? · Oral PSL 2017 · Corrigé brut
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Exposé
 
-Dans une enquête sur le logement, on peut établir que deux dossiers identiques reçoivent des réponses différentes selon le nom qu’on leur associe. La différence de traitement ne prouve aucune différence naturelle entre les candidats. Elle ne disparaîtrait pas pour autant si le chercheur se contentait de déclarer que les races humaines n’existent pas. La forme de la question, « comment se passe-t-on », nous conduit à distinguer plusieurs opérations. Il faut se défaire d’un principe d’explication du genre humain, décrire les pratiques de classement qui lui ont donné une force sociale, puis déterminer avec quels instruments une société peut juger des différences de traitement. Comment retirer son autorité à la notion tout en gardant les moyens de comprendre ce qu’on a fait en son nom ?
+Dans une enquête sur le logement, on peut établir que deux dossiers présentant les mêmes ressources, le même garant et la même demande peuvent recevoir des réponses différentes quand le nom affiché change. La différence de traitement ne prouve aucune différence naturelle entre les candidats. Elle ne disparaîtrait pas pour autant si le chercheur se contentait de déclarer que les races humaines n’existent pas. La forme de la question, « comment se passe-t-on », nous conduit à distinguer plusieurs opérations. Il faut se défaire d’un principe d’explication du genre humain, décrire les pratiques de classement qui lui ont donné une force sociale, puis déterminer avec quels instruments une société peut juger des différences de traitement. Comment retirer son autorité à la notion tout en gardant les moyens de comprendre ce qu’on a fait en son nom ?
 
 ### Changer d’unité d’explication
 
@@ -28,16 +30,20 @@ Il serait insuffisant de situer cette opération exclusivement dans la tête de 
 
 Faut-il alors faire disparaître tout mot de la famille de « race » ? Il y a un motif de le souhaiter. Nommer régulièrement des groupes peut donner à croire que les divisions de l’enquête sont naturelles et fixes. Un questionnaire qui forcerait une personne à choisir une identité dont elle ne se reconnaît pas détentrice contribuerait à fabriquer ce qu’il prétendait simplement relever. Il faut donc se demander, pour chaque usage, qui formule la catégorie et ce que l’on sera tenté d’inférer de la réponse.
 
+La préposition « de » cache ainsi une difficulté. On peut vouloir se passer de la notion pour expliquer ce qu’est une personne et continuer d’en avoir besoin comme objet d’étude. Ainsi un historien qui lit une règle ancienne doit dire qui le texte classait et quelles conséquences cette règle entraînait. S’il remplace tous les termes du document par « personnes », la rédaction paraît plus respectueuse, mais il devient impossible de comprendre pourquoi des droits étaient refusés à certains habitants. Dire qui classait qui et dans quel but permet de rendre intelligible la règle ancienne et d’en contester le principe.
+
 Mais l’interdiction des mots peut aussi faire perdre un savoir. Revenons à l’enquête sur le logement. On peut comparer des réponses à des dossiers fictifs dont on a fait varier un signe perçu comme marquant une origine, en s’attachant précisément à l’assignation par l’interlocuteur. Une telle comparaison mesure un effet de traitement, sous les conditions que l’enquête a construites. Elle ne fournit aucun renseignement sur une supposée nature des personnes. La différence méthodologique est vérifiable dans la question posée et dans le type de conclusion que le résultat autorise. Les catégories employées doivent demeurer discutables et délimitées par ce but.
 
 Se passer de la notion de race n’est donc pas une opération unique que l’on achèverait dans un dictionnaire. Il s’agit de soustraire l’enquête aux inférences essentialistes, de conserver l’intelligibilité historique des classements et de rendre contestables leurs effets présents. La réussite se juge à ce qu’un individu cesse de voir ses capacités et ses droits décidés par une identité que d’autres lui assignent, tout en restant capable de nommer cette assignation lorsqu’elle a lieu.
 
 ![Figure 1 — De quoi entend-on se passer ?](figures/experiences.svg)
 
-## Pour l’entretien
+## Questions d’entraînement pour l’entretien
 
 **La variation entre populations humaines justifie-t-elle un classement racial ?** Une variation se décrit à propos de caractères déterminés et d’une histoire précise. Elle ne justifie pas de rassembler des personnes en types fixes dont on pourrait déduire des aptitudes ou une culture.
 
 **Pourquoi conserver dans un travail d’histoire des termes dont on critique la validité ?** Ce sont des objets d’enquête qui pouvaient organiser des institutions et des parcours. Les citer en les attribuant et en décrivant leurs usages évite de les reprendre comme catégories naturelles du chercheur.
+
+**Un seul refus de location permet-il d’établir une discrimination ?** Une différence inexpliquée mérite qu’on l’examine. Elle ne suffit pas à isoler sa cause. Une enquête compare des demandes équivalentes, répétées dans des conditions explicites, puis décrit ce qu’elle a observé. Le résultat porte sur le traitement d’un signe perçu. Il ne révèle rien d’une prétendue essence de la personne.
 
 [Énoncé](https://www.ens.psl.eu/sites/default/files/philo-oral-sil17-sujet1.pdf)
