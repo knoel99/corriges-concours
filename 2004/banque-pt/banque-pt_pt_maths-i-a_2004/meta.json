@@ -1,0 +1,235 @@
+{
+  "slug": "banque-pt_pt_maths-i-a_2004",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths I-A",
+    "annee": 2004
+  },
+  "questions": 34,
+  "redaction": "Corrigés non officiels rédigés et vérifiés par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/IMG/pdf/math_1_a_2004.pdf",
+    "rapport_jury": "https://www.banquept.fr/IMG/pdf/rapport_mathematiques_1A_2004.pdf",
+    "index_sujets": "https://www.banquept.fr/article51.html",
+    "index_rapports": "https://www.banquept.fr/article55.html",
+    "livret": "https://www.banquept.fr/documents/livret/2004/Livret_PT_2004.pdf#page=13",
+    "sha256_sujet": "2587aeb0ac63584c27d4852bcea5c2eef0125746f1203355ce6c8fa0ec39f08c",
+    "pages_sujet": 4,
+    "sha256_rapport_jury": "cad8a89e409e81fe2c48262f8d49685d0c82d24d14aff77ecf13c47227092609",
+    "pages_rapport_jury": 2,
+    "sha256_livret": "c8a0ee21667397eb6314cd96223199431e7435b4e73cc997c474bbe22a788548",
+    "pages_livret": 82,
+    "coefficients_admissibilite": {
+      "École polytechnique": 6,
+      "ENS Cachan": 3
+    }
+  },
+  "figures": [
+    {
+      "question": "I.6",
+      "fichier": "figures/equilibres.svg",
+      "legende": "Minima et maximum de l’énergie potentielle du pendule amorti."
+    },
+    {
+      "question": "III.5.c",
+      "fichier": "figures/enveloppe.svg",
+      "legende": "Au temps initial, solution et enveloppe exponentielle coïncident."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "II.1",
+      "II.2.a",
+      "II.2.b",
+      "II.2.c",
+      "II.3",
+      "II.4",
+      "II.5.a",
+      "II.5.b",
+      "II.6.a",
+      "II.6.b",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5.a",
+      "III.5.b",
+      "III.5.c",
+      "III.5.d",
+      "III.6",
+      "III.7",
+      "IV.1",
+      "IV.2",
+      "IV.3",
+      "IV.4",
+      "IV.5",
+      "IV.6.a",
+      "IV.6.b",
+      "IV.7"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": "I.1",
+        "page_sujet": 1
+      },
+      {
+        "question": "I.2",
+        "page_sujet": 1
+      },
+      {
+        "question": "I.3",
+        "page_sujet": 1
+      },
+      {
+        "question": "I.4",
+        "page_sujet": 1
+      },
+      {
+        "question": "I.5",
+        "page_sujet": 1
+      },
+      {
+        "question": "I.6",
+        "page_sujet": 1
+      },
+      {
+        "question": "II.1",
+        "page_sujet": 2
+      },
+      {
+        "question": "II.2.a",
+        "page_sujet": 2
+      },
+      {
+        "question": "II.2.b",
+        "page_sujet": 2
+      },
+      {
+        "question": "II.2.c",
+        "page_sujet": 2
+      },
+      {
+        "question": "II.3",
+        "page_sujet": 2
+      },
+      {
+        "question": "II.4",
+        "page_sujet": 2
+      },
+      {
+        "question": "II.5.a",
+        "page_sujet": 2
+      },
+      {
+        "question": "II.5.b",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.6.a",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.6.b",
+        "page_sujet": 3
+      },
+      {
+        "question": "III.1",
+        "page_sujet": 3
+      },
+      {
+        "question": "III.2",
+        "page_sujet": 3
+      },
+      {
+        "question": "III.3",
+        "page_sujet": 3
+      },
+      {
+        "question": "III.4",
+        "page_sujet": 3
+      },
+      {
+        "question": "III.5.a",
+        "page_sujet": 3
+      },
+      {
+        "question": "III.5.b",
+        "page_sujet": 3
+      },
+      {
+        "question": "III.5.c",
+        "page_sujet": 3
+      },
+      {
+        "question": "III.5.d",
+        "page_sujet": 3
+      },
+      {
+        "question": "III.6",
+        "page_sujet": 3
+      },
+      {
+        "question": "III.7",
+        "page_sujet": 3
+      },
+      {
+        "question": "IV.1",
+        "page_sujet": 4
+      },
+      {
+        "question": "IV.2",
+        "page_sujet": 4
+      },
+      {
+        "question": "IV.3",
+        "page_sujet": 4
+      },
+      {
+        "question": "IV.4",
+        "page_sujet": 4
+      },
+      {
+        "question": "IV.5",
+        "page_sujet": 4
+      },
+      {
+        "question": "IV.6.a",
+        "page_sujet": 4
+      },
+      {
+        "question": "IV.6.b",
+        "page_sujet": 4
+      },
+      {
+        "question": "IV.7",
+        "page_sujet": 4
+      }
+    ],
+    "precision": "Quatre parties et tous leurs repères. III.5.c : égalité au temps initial. IV.6.b : distinction entre la formule locale imprimée, l’inégalité globale corrigée et le contre-exemple au sens global. Le résultat IV.7 est établi avec les hypothèses données."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modifications": true,
+      "perimetre": "Lecture du sujet I-A et du rapport correspondant, recalcul du pendule, des solutions exponentielles-polynomiales, des estimations de stabilité et du défaut global de changement de coordonnées ; rédaction des deux éditions et contrôle des figures."
+    }
+  ]
+}
