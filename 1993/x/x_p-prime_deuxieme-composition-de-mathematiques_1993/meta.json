@@ -1,0 +1,170 @@
+{
+  "slug": "x_p-prime_deuxieme-composition-de-mathematiques_1993",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "P prime",
+    "annee": 1993,
+    "matiere": "Deuxième composition de mathématiques",
+    "modalite": "écrit"
+  },
+  "intitule": "Deuxième composition de mathématiques · option P′",
+  "duree_heures": 4,
+  "questions": 12,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-616087cdef9af4971a77",
+    "sujet_sha256": "6853463172961e012d0a1c60e1b6aac3c2b49a84e4f4e01039726b31b8f8bebc",
+    "second_exemplaire": "https://www.sujetsetcorriges.fr/dl/X/Maths/PC/sec-x-1993-maths2-PC.pdf",
+    "second_exemplaire_sha256": "7def7c818d15460e9a52681e9051c6b27bd8c32dc4d9d1f7c7fe4d21fe53ff7d",
+    "notice_ups": "m93xp2",
+    "instruction_officielle": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000345466",
+    "precisions": "Empreintes différentes des fichiers, rendus identiques page par page à 72 points par pouce. La reproduction distingue les feuillets et le rang de chaque composition."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-616087cdef9af4971a77",
+      "sha256": "6853463172961e012d0a1c60e1b6aac3c2b49a84e4f4e01039726b31b8f8bebc",
+      "pages": 2,
+      "rendu_page_sha256": [
+        "4581a00bc878787690398854abfff0a9f5863e9b7cd830bc28791e1be1ceff9f",
+        "1438df58ee46b434f28048bd9d34290d846426aa92bb74254af35d293e0f05a4"
+      ]
+    },
+    "second": {
+      "url": "https://www.sujetsetcorriges.fr/dl/X/Maths/PC/sec-x-1993-maths2-PC.pdf",
+      "sha256": "7def7c818d15460e9a52681e9051c6b27bd8c32dc4d9d1f7c7fe4d21fe53ff7d",
+      "pages": 2,
+      "rendu_page_sha256": [
+        "4581a00bc878787690398854abfff0a9f5863e9b7cd830bc28791e1be1ceff9f",
+        "1438df58ee46b434f28048bd9d34290d846426aa92bb74254af35d293e0f05a4"
+      ]
+    }
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "2",
+      "fichier": "figures/cercle-projecteurs.svg",
+      "legende": "La droite de première coordonnée 1 coupe le cercle de rayon r en zéro, un ou deux points. Chaque point donne deux bases ordonnées dans le plan."
+    },
+    {
+      "numero": 2,
+      "question": "9.a",
+      "fichier": "figures/rang-excedentaire.svg",
+      "legende": "En dimension trois, une seule direction dans le noyau autorise au plus une valeur propre strictement supérieure à 1. Les deux spectres présentent pourtant le même rang."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "x_maths_b_anciennes",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Rédaction de la totalité des 12 réponses, des indications et des deux figures propres à cette composition."
+    },
+    {
+      "phase": "revision",
+      "session": "x_maths_b_anciennes",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Vérification du comptage 0/2/4 en dimension deux, de l’orientation du facteur orthogonal, de la restriction de la racine carrée à son image et de l’exhaustivité des deux paramètres, y compris les valeurs propres 0 et 1."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4.a",
+      "4.b",
+      "5.a",
+      "5.b",
+      "6",
+      "7",
+      "8",
+      "9.a",
+      "9.b"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1",
+        "page_pdf": 1,
+        "page_imprimee": 126
+      },
+      {
+        "question": "2",
+        "page_pdf": 1,
+        "page_imprimee": 126
+      },
+      {
+        "question": "3",
+        "page_pdf": 1,
+        "page_imprimee": 126
+      },
+      {
+        "question": "4.a",
+        "page_pdf": 1,
+        "page_imprimee": 126
+      },
+      {
+        "question": "4.b",
+        "page_pdf": 1,
+        "page_imprimee": 126
+      },
+      {
+        "question": "5.a",
+        "page_pdf": 2,
+        "page_imprimee": 127
+      },
+      {
+        "question": "5.b",
+        "page_pdf": 2,
+        "page_imprimee": 127
+      },
+      {
+        "question": "6",
+        "page_pdf": 2,
+        "page_imprimee": 127
+      },
+      {
+        "question": "7",
+        "page_pdf": 2,
+        "page_imprimee": 127
+      },
+      {
+        "question": "8",
+        "page_pdf": 2,
+        "page_imprimee": 127
+      },
+      {
+        "question": "9.a",
+        "page_pdf": 2,
+        "page_imprimee": 127
+      },
+      {
+        "question": "9.b",
+        "page_pdf": 2,
+        "page_imprimee": 127
+      }
+    ]
+  }
+}
