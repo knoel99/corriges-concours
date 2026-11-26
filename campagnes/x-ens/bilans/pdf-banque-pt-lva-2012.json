@@ -1,0 +1,787 @@
+{
+  "banque-pt_pt_langue-vivante-a_2012": {
+    "commit": "6283982af4f9cb814c8592268db27acbb7eee0c0",
+    "arbre_git": "9912e7d8683966aeab632a7cd031e6e58b0d69c0",
+    "questions": 15,
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2012/lv_a_pt_2012.pdf",
+      "sha256": "77224e5eb12888b3886fb3bf40fb0f064a962b177e17e96a3257a940ffbc7fa8",
+      "pages": 12,
+      "rendus_sha256": [
+        "8d783b8701ae4bfb845007da26d719e57a1336205fe0ef0d5e09547939c56a53",
+        "851ac06bdafbbe897687234768048e9153ff4ebd5b98f16234c452063b30d9af",
+        "f3f427861bdf7970cf053f3369529e2e522087e88f0480fa317c773db0151afe",
+        "964762e0637eced8e1c6bf97836878c6b4eaca63f50461f565b499ed1962551e",
+        "c0d9f6e59443cfa66272d842877311ea2842669cd7091e0ef18737ebc21206d7",
+        "04f690e973a37f87b54e269c4c828a75aa4bc453d8334a56900e9529e2d22805",
+        "9ed2fb3dbe75e4d7cf7fea4ab20c10df4782351efdb80d934a4ee8cff995f3bf",
+        "1f7afbe8e009af4c360fc90f7efc0ae1ebf689ecac921be578b95a3413d64d0d",
+        "d287861d6a0da5c97fd9185348e313fb1499aab7338af53a794d4c8173ecd251",
+        "1b10a1a05e78d36794ace007c2efcd230caf455a114545b61c947d7beb2f0f83",
+        "124696ea87b98906e1c5f93d4f05760162202b88f9424f2d26ea74e566ccd4ab",
+        "f6b9cda042b0eaa4e2b337563b106017c56f6941754f79157eeb5cba299bd7dd"
+      ],
+      "index": "https://www.banquept.fr/article152.html",
+      "sha256_index": "17cdf08d3d07da44b1d575a7149c96840d25bcd4eaa49fd210234f6fd544625b"
+    },
+    "livret": {
+      "url": "https://www.banquept.fr/documents/livret/2012/Livret_PT_2012.pdf#page=12",
+      "sha256": "778c796c26e1a3f2558523fa548e8d4fe4c92c6e0265a53fc4b63bd98a8c5c62",
+      "pages": 72,
+      "rendus_sha256": [
+        "8e1bff676deafe081c47c9ec0e2ff6d49465c537ec99ae9642eb8edeaa08761d",
+        "905b8ec08fdd532ba18c8c9775e125196b1cfe697999f2becb2a8778914facbb",
+        "83379bcb4b4fd794dbf20dfe7f4130c6b2da1332d5db5dbab768e5cfefd54b39",
+        "f93936db620e162d10bde33e9b1495e76d0f705c88d28273ce8c96f43366865a",
+        "b00a19ca1232b242d16c4839ba7fd18870cfc29b49c1350f2ba32c751f55fe86",
+        "a448cb3e22da2eb2f8934e912988c76ff4e2b9607f7b0129fa06bbaff2cc8f61",
+        "afc625688684ae673e82ba2ad91920a40d9f739f55ef10c207647f27a7f8ef25",
+        "2f166122fd657b2cec3c50a3aa053606d6f2efbcdb3d5e0e3021bb623b15e9bb",
+        "bf9d000963a25a55cc10652f5ea1416f842ce247d4cf31bab7bc4018d935884f",
+        "0915e714697a9aff8254f732dc9d7b40c1a5185618011ece615d7fcf1ad83288",
+        "dc706e067591fb1b1cf360235fe4fc6a25682b4e9b404902078e85e380ca21de",
+        "9d7215a88a2a8aa96252fca5694c2af427179d3bbc5402346013eaa233e27568",
+        "435139ee215cf0030803d4f7b1ae38727f8aa435c5c867b80354cb610069f562",
+        "ba502964fbba49876a6d8a5b475c2f9f9d1dfb3671e1bbd0f9ac61749e93ca0d",
+        "a8b36505d0aff9103c2f3c3b235edf658254e9711775b2e14774498c7d8511c1",
+        "d8ce9ff5fe8b29f8ee0fdf46d2e6d99b966f67ed45131ab80a9aac3522072b0a",
+        "f3d6125391bc5bf491c5a9a9582e944248d4782118a628b208cc91e2e8878a0c",
+        "45d6d40f026685e9db6a50c6e39451fedbdc2aec776518a1ea02ec5e56c5b689",
+        "44c10a97b5314d44b0436441fe1f88174ead66faa8922ff96c1ef89d128691e4",
+        "ba761ea9d543cca13e9370c34a6578295657a5407c2d8569e4c3ead0eb8bad25",
+        "77330f435b5d85023300e8267055010c28be62bc2219caaee5818da1274fd05d",
+        "722f245a6f3f1f8ae94b4df82f4005d39f823688151f5f8822ccb304c383ee50",
+        "0c3e907e4af5b81aa96b8c2fe80b25f16e353b8584e30dccbe6fb0e8b7bd30f8",
+        "de8f1bcc17ce1a08027935b49644c193444a2f0a689b616eaf1e5ab40f4d8e2f",
+        "f2b4092e108daeb7ec8e4a410a6dc1e67164b28a159bc1a66c555ed6f25a436e",
+        "e58bd84ddcd41b8827e17a46d82b861124ef65de8f7fd9364ca8f46794936d5a",
+        "a82cb6da64188a7a5b8f5de194f8bfa87e91ecf66fd9b05126e2a82acee2d702",
+        "5d89e2662ccddfa15f942fb00d7399e8c8cd8fa54f986bb382f4e86b72b6d89d",
+        "9fbdefd3c7b3a39af8ff566a6314d5c7f6c920f96e81425b74f7949e74567c41",
+        "c6bd2ede31826de1bd9dac56724f254bcab6be3c887871dd9ee250eb4b4cff98",
+        "d7e42f7cc69bcb292fd56080b8bc009e18ab77a505c8077a083264e862edc713",
+        "6f89fca86d38d8a12c6c094cb6bd5ca1fc39a7b57937a98a191f887e7c901fa9",
+        "f0913ca7caebdb474c3ce554a4a14bc40e84faf38b6c77fd524c135c50f5fb20",
+        "273a4ce222db200992820f2590fcd846662362b190690cb40d8ff719118738f5",
+        "785d6e97807519cabfe24f25c5003c7660b9cb239b306331201caa2d03064fb4",
+        "71d32e02ea73da5344f312b275943de6c2fe1970adc4ef489ffedb5de81fb8f5",
+        "4aa39a9cbb23478c255953ce91dbf52b5ee8166928ad50d92bd495748d6c03fc",
+        "68dff2d9a3b68e34118517ec10b5f7d1f8d9ef0f92ad8cc401bc78d4f73faafe",
+        "526e613e2f17b6a39eb048bdfa4e0e41566c1162d2217113a59fe5bf348d4b43",
+        "5c48d955fa8618e335fdf08a32892a265e8971e7986cc58d3d907831abb25332",
+        "e6f10e5bb11c82e94127474d4cdf5371dd32ce840583d8afc7ea1e3acdee4493",
+        "561f4891a518627b0285105a54a8c46701670e25e2772f278a44a813db997eab",
+        "6f3209b4be9abf32be7061219973309ee2d33ca7cd507641b63bc589c461a67f",
+        "38a81b76ffe35477389650d42558838cb467adf875d86c03820f938ba48f307d",
+        "b051db93f6a79f3f88e3b8fa9a99bbd470ab863aeb6ec91bacb1786bbeb84bab",
+        "8cd079bdd52bccb28c5496828be22403e8539dd6357814087c4a4a986ae21a32",
+        "aa99408963a96ec6428e788c1415243ee5485cbbc11b18311579761bd806ba64",
+        "d6d581552984d01e1e0e0e9bc0d253ba413e14ffd5660a2544e43a9a324bf490",
+        "435a945d3fda02f6d7335885bf733aaed36666c5709b1b7c062e323f93b11a71",
+        "f5f7fb5f19779d717547c9a1d5cef3944e6609d64053359a6629408dd80a573a",
+        "76c5351507e2bea86ee2606a0942805375ff6627f832f7280639ce544c15d6a8",
+        "f391e3bb130397f93a3661e0cdae8bab6c8a080ab86aa83147f10e60d5d95860",
+        "aebcfbfe825a8961106531f01c5673c329f89067634abd4bc3815bafe308d9f3",
+        "6b1c5a1fb4a6d56a59d4a377001929c1204d95e449fbb670c56d50158e9d5400",
+        "d4c487993ce8ab4b89c6a5a7d5d918d00a231717abd7f63ee99ffe4363214ca4",
+        "92cd9682e88ebf78979569bc50bbd0853052be6321c61979c008de61aff1c192",
+        "ca8a7e990852e55a0ce85ca9509d89b0ccfcb6d5628f5756d4e5f5e36ea7c308",
+        "2170488045ad91705aa72d03879bf60679029d3d743d4bc58956862a44fdf19f",
+        "95746dba0e69ee611ddc71845bd9a29a4cbb235eb365d3a80314c40462f7e789",
+        "324126b2925c3a6aea8f90f381def4670b9257d3a5bcea0c9111b2d08303fe4d",
+        "bad265b66e62aaafab8e7e2a5f85bbe96c6b33ce547c1396e84f620e7943c1b2",
+        "d463857fd0948081c50a261210814aed9668fe4187b3910d018da07093eb5f25",
+        "e03c9ec3cb65f3833bd128d59241aebfb111952bb52910013576e03a74632771",
+        "2a9b34b2b1b1845ce9f809fef6f5dde9c40bf56674e413b1b6e462601c71ac3c",
+        "7156e56b0c4f3ba50b3d8cd132aebcc7f1f6010fbee7a4e831b9c4c842a07042",
+        "518cbb453ff809b074a984fe54da9e1c74360b8e364e610df350d6c8138fc3a8",
+        "2027dd8851fac24c0d8832100aaff1c6acb8615bbbe804e12eeaebbb105216f5",
+        "c4df4c09a48ffad3fd76e0008b3a08c624cd1fbfd8634c659199a9102a55dae0",
+        "7ae12753b828232617d76082aa31411b492da25ca4b7197b35692d0a5a29ee3e",
+        "1033442cd9c3e9e3d13475e021aa4db80eb3a9ca1fb9bd00b34289547e2d864f",
+        "732414985d7523a3539616112b1659a4fa51a0d34924d90246c4c783f973090f",
+        "87c4425526b918119b764a3f392efb51f71e9b764a0fa86d84696c88f9867889"
+      ],
+      "page_grille": 12,
+      "coefficients_admission": {
+        "ENS Cachan": 1,
+        "École polytechnique": 6
+      }
+    },
+    "rapport": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2012/rapport_lv_a_ecrit_2012.pdf",
+      "sha256": "e43e73f06a42928d377896a8d7412d4dd398ed072c8463141f27d05b99a833b8",
+      "pages": 7,
+      "rendus_sha256": [
+        "b2459a94b6ad675cf537be2ec5b0f7efaafb16ba39c2345823fe6781746896fc",
+        "a34f1d59b12051347bd8f1a00d00e3067ffd0a03f9e039c891b62767e52fb455",
+        "0df6b32aadfcd169cb9e708ba041d4ce4d1b82938a1d2c55fe2441cd0012023b",
+        "6e9970d9dcaef23a136489f18aa3771c33d9fadfbdda8266736139beaaef4480",
+        "af88deea3de4ca5d0ab9da85be26c7434c4ea4f7b016fad893909d9a48267a35",
+        "86939dad0e9f2a10e54eb099ff22b85810f01bb838fb5fda6ab0f5d3716ba4e4",
+        "6fb43fc54b3619835fa04fbc4bbfddafb91eaf15281d4fdd910519ccefe47991"
+      ],
+      "index": "https://www.banquept.fr/article153.html",
+      "sha256_index": "12a4a0b5710f8cb8cf7b71a6b75822f8e6036e5a84a391e6b3c003c170846638"
+    },
+    "editions": {
+      "brut": {
+        "pages": 8,
+        "signets": [
+          [
+            1,
+            "Allemand",
+            1
+          ],
+          [
+            2,
+            "Version française",
+            1
+          ],
+          [
+            2,
+            "Question a",
+            1
+          ],
+          [
+            2,
+            "Question b",
+            2
+          ],
+          [
+            1,
+            "Anglais",
+            2
+          ],
+          [
+            2,
+            "Version française",
+            2
+          ],
+          [
+            2,
+            "Question a",
+            3
+          ],
+          [
+            2,
+            "Question b",
+            3
+          ],
+          [
+            1,
+            "Arabe",
+            4
+          ],
+          [
+            2,
+            "Version française",
+            4
+          ],
+          [
+            2,
+            "Question a",
+            4
+          ],
+          [
+            2,
+            "Question b",
+            5
+          ],
+          [
+            1,
+            "Espagnol",
+            5
+          ],
+          [
+            2,
+            "Version française",
+            5
+          ],
+          [
+            2,
+            "Question a",
+            6
+          ],
+          [
+            2,
+            "Question b",
+            6
+          ],
+          [
+            1,
+            "Italien",
+            7
+          ],
+          [
+            2,
+            "Version française",
+            7
+          ],
+          [
+            2,
+            "Question a",
+            7
+          ],
+          [
+            2,
+            "Question b",
+            8
+          ]
+        ],
+        "questions": [
+          {
+            "nom": "Allemand",
+            "pages_rapport": [
+              1,
+              2
+            ],
+            "pages_sujet": [
+              2,
+              3
+            ],
+            "exercices": [
+              {
+                "exercice": "Version française",
+                "pages_pdf": [
+                  1
+                ]
+              },
+              {
+                "exercice": "Question a",
+                "mots_verifies": 92,
+                "pages_pdf": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "exercice": "Question b",
+                "mots_verifies": 223,
+                "pages_pdf": [
+                  2
+                ]
+              }
+            ],
+            "bornes_version": "De « Eine prächtige Grünlilie im Wohnzimmer » à « zum Beispiel durch Schadstoffe in der Luft »."
+          },
+          {
+            "nom": "Anglais",
+            "pages_rapport": [
+              3,
+              4
+            ],
+            "pages_sujet": [
+              4,
+              5
+            ],
+            "exercices": [
+              {
+                "exercice": "Version française",
+                "pages_pdf": [
+                  2,
+                  3
+                ]
+              },
+              {
+                "exercice": "Question a",
+                "mots_verifies": 87,
+                "pages_pdf": [
+                  3
+                ]
+              },
+              {
+                "exercice": "Question b",
+                "mots_verifies": 228,
+                "pages_pdf": [
+                  3
+                ]
+              }
+            ],
+            "bornes_version": "De « Viewed this way » à « was of adventure and exploration »."
+          },
+          {
+            "nom": "Arabe",
+            "pages_rapport": [
+              5
+            ],
+            "pages_sujet": [
+              6,
+              7
+            ],
+            "exercices": [
+              {
+                "exercice": "Version française",
+                "pages_pdf": [
+                  4
+                ]
+              },
+              {
+                "exercice": "Question a",
+                "mots_verifies": 84,
+                "lettres_arabes_contigues": 398,
+                "pages_pdf": [
+                  4,
+                  5
+                ]
+              },
+              {
+                "exercice": "Question b",
+                "mots_verifies": 212,
+                "lettres_arabes_contigues": 993,
+                "pages_pdf": [
+                  5
+                ]
+              }
+            ],
+            "bornes_version": "Du début « دبلوماسية تغير المناخ » à « بالدعم العلمي والمادي »."
+          },
+          {
+            "nom": "Espagnol",
+            "pages_rapport": [
+              6
+            ],
+            "pages_sujet": [
+              8,
+              9
+            ],
+            "exercices": [
+              {
+                "exercice": "Version française",
+                "pages_pdf": [
+                  5,
+                  6
+                ]
+              },
+              {
+                "exercice": "Question a",
+                "mots_verifies": 87,
+                "pages_pdf": [
+                  6
+                ]
+              },
+              {
+                "exercice": "Question b",
+                "mots_verifies": 213,
+                "pages_pdf": [
+                  6
+                ]
+              }
+            ],
+            "bornes_version": "De « Cuando se habla de revolución neurocientífica » à « la demencia de los implicados »."
+          },
+          {
+            "nom": "Italien",
+            "pages_rapport": [
+              7
+            ],
+            "pages_sujet": [
+              10,
+              11
+            ],
+            "exercices": [
+              {
+                "exercice": "Version française",
+                "pages_pdf": [
+                  7
+                ]
+              },
+              {
+                "exercice": "Question a",
+                "mots_verifies": 85,
+                "pages_pdf": [
+                  7
+                ]
+              },
+              {
+                "exercice": "Question b",
+                "mots_verifies": 209,
+                "pages_pdf": [
+                  8
+                ]
+              }
+            ],
+            "bornes_version": "De « Nello studio » à « chi è monolingue »."
+          }
+        ],
+        "figures": [
+          {
+            "fichier": "figures/lecture-de.svg",
+            "question": "Allemand",
+            "legende": "De la feuille à la ville",
+            "page_pdf": 2,
+            "sha256_svg": "072946286f426c2e09927546c800892c9b5a40a79679c6f0bc7b3bd4721afd1e",
+            "sha256_forme_pdf": "b757301aa14df60c4c4f34c9cdb5597a1193cc91b6f91755b452b8f4c6891e1c"
+          },
+          {
+            "fichier": "figures/lecture-en.svg",
+            "question": "Anglais",
+            "legende": "Deux sens du succès spatial",
+            "page_pdf": 4,
+            "sha256_svg": "a78fd70be64b9cb206d4fad071bcac318a72b5b0378e857d493f7408fb62eea3",
+            "sha256_forme_pdf": "695bb49a61df022a7b825bb0e624eb9660c4cf073df1db4d380b7fe3b50f3664"
+          },
+          {
+            "fichier": "figures/lecture-ar.svg",
+            "question": "Arabe",
+            "legende": "De l’alerte à l’accord",
+            "page_pdf": 5,
+            "sha256_svg": "a367b15a82a36ee6f4c190cccf77c1760366a904fd37b22288ff34d02f73c5a9",
+            "sha256_forme_pdf": "e03615ee10f6706bab7d0688f53208424ddf0a9969e2f4b7d6d4a3be5a65088b"
+          },
+          {
+            "fichier": "figures/lecture-es.svg",
+            "question": "Espagnol",
+            "legende": "Que change l’imagerie cérébrale ?",
+            "page_pdf": 7,
+            "sha256_svg": "1463c05f9377c716c7e8bd8d829a088da2d690f8cdecf43b51908e60f08bdef0",
+            "sha256_forme_pdf": "9ec64bc877dbbad9998e4755fbdb99f2253e3f819cbdd048f60e36ccf9dc3c29"
+          },
+          {
+            "fichier": "figures/lecture-it.svg",
+            "question": "Italien",
+            "legende": "Du constat à la proposition",
+            "page_pdf": 8,
+            "sha256_svg": "3f62909dc69cac89be9b8651c39fa81a31b28e2cf0f89a3f71efb8c62c3a4603",
+            "sha256_forme_pdf": "022aa265bc04624c9f113a6e24aa19e63dcb930b42443a8a9c2b2388a360b81a"
+          }
+        ],
+        "signatures_premiere_page": [
+          "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+          "**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+        ],
+        "sha256_pdf": "85c6416420ad86d88f9d85ad5b64bfb5c6dc4a121bbe364e0364be7c57572b13",
+        "sha256_markdown": "5b67c42cb21f5b5d9d1b5a997404c076c0f1fa27cfb03ae81b57d9dc8ab85302",
+        "diagnostic_latex_propre": true
+      },
+      "guide": {
+        "pages": 8,
+        "signets": [
+          [
+            1,
+            "Allemand",
+            1
+          ],
+          [
+            2,
+            "Version française",
+            1
+          ],
+          [
+            2,
+            "Question a",
+            2
+          ],
+          [
+            2,
+            "Question b",
+            2
+          ],
+          [
+            1,
+            "Anglais",
+            2
+          ],
+          [
+            2,
+            "Version française",
+            3
+          ],
+          [
+            2,
+            "Question a",
+            3
+          ],
+          [
+            2,
+            "Question b",
+            4
+          ],
+          [
+            1,
+            "Arabe",
+            4
+          ],
+          [
+            2,
+            "Version française",
+            4
+          ],
+          [
+            2,
+            "Question a",
+            5
+          ],
+          [
+            2,
+            "Question b",
+            5
+          ],
+          [
+            1,
+            "Espagnol",
+            6
+          ],
+          [
+            2,
+            "Version française",
+            6
+          ],
+          [
+            2,
+            "Question a",
+            6
+          ],
+          [
+            2,
+            "Question b",
+            7
+          ],
+          [
+            1,
+            "Italien",
+            7
+          ],
+          [
+            2,
+            "Version française",
+            7
+          ],
+          [
+            2,
+            "Question a",
+            8
+          ],
+          [
+            2,
+            "Question b",
+            8
+          ]
+        ],
+        "questions": [
+          {
+            "nom": "Allemand",
+            "pages_rapport": [
+              1,
+              2
+            ],
+            "pages_sujet": [
+              2,
+              3
+            ],
+            "exercices": [
+              {
+                "exercice": "Version française",
+                "pages_pdf": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "exercice": "Question a",
+                "mots_verifies": 92,
+                "pages_pdf": [
+                  2
+                ]
+              },
+              {
+                "exercice": "Question b",
+                "mots_verifies": 223,
+                "pages_pdf": [
+                  2
+                ]
+              }
+            ],
+            "bornes_version": "De « Eine prächtige Grünlilie im Wohnzimmer » à « zum Beispiel durch Schadstoffe in der Luft »."
+          },
+          {
+            "nom": "Anglais",
+            "pages_rapport": [
+              3,
+              4
+            ],
+            "pages_sujet": [
+              4,
+              5
+            ],
+            "exercices": [
+              {
+                "exercice": "Version française",
+                "pages_pdf": [
+                  3
+                ]
+              },
+              {
+                "exercice": "Question a",
+                "mots_verifies": 87,
+                "pages_pdf": [
+                  3
+                ]
+              },
+              {
+                "exercice": "Question b",
+                "mots_verifies": 228,
+                "pages_pdf": [
+                  4
+                ]
+              }
+            ],
+            "bornes_version": "De « Viewed this way » à « was of adventure and exploration »."
+          },
+          {
+            "nom": "Arabe",
+            "pages_rapport": [
+              5
+            ],
+            "pages_sujet": [
+              6,
+              7
+            ],
+            "exercices": [
+              {
+                "exercice": "Version française",
+                "pages_pdf": [
+                  4,
+                  5
+                ]
+              },
+              {
+                "exercice": "Question a",
+                "mots_verifies": 84,
+                "lettres_arabes_contigues": 398,
+                "pages_pdf": [
+                  5
+                ]
+              },
+              {
+                "exercice": "Question b",
+                "mots_verifies": 212,
+                "lettres_arabes_contigues": 993,
+                "pages_pdf": [
+                  5
+                ]
+              }
+            ],
+            "bornes_version": "Du début « دبلوماسية تغير المناخ » à « بالدعم العلمي والمادي »."
+          },
+          {
+            "nom": "Espagnol",
+            "pages_rapport": [
+              6
+            ],
+            "pages_sujet": [
+              8,
+              9
+            ],
+            "exercices": [
+              {
+                "exercice": "Version française",
+                "pages_pdf": [
+                  6
+                ]
+              },
+              {
+                "exercice": "Question a",
+                "mots_verifies": 87,
+                "pages_pdf": [
+                  6
+                ]
+              },
+              {
+                "exercice": "Question b",
+                "mots_verifies": 213,
+                "pages_pdf": [
+                  7
+                ]
+              }
+            ],
+            "bornes_version": "De « Cuando se habla de revolución neurocientífica » à « la demencia de los implicados »."
+          },
+          {
+            "nom": "Italien",
+            "pages_rapport": [
+              7
+            ],
+            "pages_sujet": [
+              10,
+              11
+            ],
+            "exercices": [
+              {
+                "exercice": "Version française",
+                "pages_pdf": [
+                  8
+                ]
+              },
+              {
+                "exercice": "Question a",
+                "mots_verifies": 85,
+                "pages_pdf": [
+                  8
+                ]
+              },
+              {
+                "exercice": "Question b",
+                "mots_verifies": 209,
+                "pages_pdf": [
+                  8
+                ]
+              }
+            ],
+            "bornes_version": "De « Nello studio » à « chi è monolingue »."
+          }
+        ],
+        "figures": [
+          {
+            "fichier": "figures/lecture-de.svg",
+            "question": "Allemand",
+            "legende": "De la feuille à la ville",
+            "page_pdf": 1,
+            "sha256_svg": "072946286f426c2e09927546c800892c9b5a40a79679c6f0bc7b3bd4721afd1e",
+            "sha256_forme_pdf": "b757301aa14df60c4c4f34c9cdb5597a1193cc91b6f91755b452b8f4c6891e1c"
+          },
+          {
+            "fichier": "figures/lecture-en.svg",
+            "question": "Anglais",
+            "legende": "Deux sens du succès spatial",
+            "page_pdf": 3,
+            "sha256_svg": "a78fd70be64b9cb206d4fad071bcac318a72b5b0378e857d493f7408fb62eea3",
+            "sha256_forme_pdf": "695bb49a61df022a7b825bb0e624eb9660c4cf073df1db4d380b7fe3b50f3664"
+          },
+          {
+            "fichier": "figures/lecture-ar.svg",
+            "question": "Arabe",
+            "legende": "De l’alerte à l’accord",
+            "page_pdf": 4,
+            "sha256_svg": "a367b15a82a36ee6f4c190cccf77c1760366a904fd37b22288ff34d02f73c5a9",
+            "sha256_forme_pdf": "e03615ee10f6706bab7d0688f53208424ddf0a9969e2f4b7d6d4a3be5a65088b"
+          },
+          {
+            "fichier": "figures/lecture-es.svg",
+            "question": "Espagnol",
+            "legende": "Que change l’imagerie cérébrale ?",
+            "page_pdf": 6,
+            "sha256_svg": "1463c05f9377c716c7e8bd8d829a088da2d690f8cdecf43b51908e60f08bdef0",
+            "sha256_forme_pdf": "9ec64bc877dbbad9998e4755fbdb99f2253e3f819cbdd048f60e36ccf9dc3c29"
+          },
+          {
+            "fichier": "figures/lecture-it.svg",
+            "question": "Italien",
+            "legende": "Du constat à la proposition",
+            "page_pdf": 7,
+            "sha256_svg": "3f62909dc69cac89be9b8651c39fa81a31b28e2cf0f89a3f71efb8c62c3a4603",
+            "sha256_forme_pdf": "022aa265bc04624c9f113a6e24aa19e63dcb930b42443a8a9c2b2388a360b81a"
+          }
+        ],
+        "signatures_premiere_page": [
+          "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+          "**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+        ],
+        "sha256_pdf": "4477dac68c0c26aecd70ba7dd3533d5d67648ba8bd2c4c7bef1d419b4b77291c",
+        "sha256_markdown": "6a48c63b573ed27abc4deffa4c4427eae5a1a849675bd66dd4e2bd3bb819f213",
+        "diagnostic_latex_propre": true
+      }
+    },
+    "sha256_journal": "2bcd85f501503d4beedbffd4382b7941f42aee23083375de5058e9bda0f94027"
+  }
+}
