@@ -1,0 +1,105 @@
+{
+  "slug": "bel_bl_anglais-oral-13-juin_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Anglais (oral) — 13 juin",
+    "annee": 2024
+  },
+  "type_epreuve": "oral",
+  "questions": 4,
+  "redaction": "IA, corrigé non officiel",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/bl_sujets_oraux_anglais_13062024.pdf",
+    "sha256_sujet": "decf3a5a577a4eb1359bf5ffe49efc5c8f8e9d9c416e7ff9d4b05cad494afeba",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_oral_anglais_epreuve_commune.pdf",
+    "sha256_rapport_jury": "dd11c4519d2d3c9e7e39d9b9856c91626ac0a68e14e0395c4f84562905be2fa4",
+    "calendrier": "https://www.ens.psl.eu/sujets-des-epreuves-orales-du-concours-bl-session-2024"
+  },
+  "figures": [
+    {
+      "fichier": "figures/reading-the-evidence.svg",
+      "question": "2. Ruth Bader Ginsburg",
+      "legende": "Ginsburg separates widening access to legal training, entry into professional work, and appointment to a federal bench."
+    }
+  ],
+  "documents_du_fascicule": [
+    {
+      "auteur": "Franklin D. Roosevelt",
+      "titre": "State of the Union Address",
+      "date": "1935",
+      "pages": [
+        1
+      ]
+    },
+    {
+      "auteur": "Ruth Bader Ginsburg",
+      "titre": "U.S. Supreme Court Justice Nomination Acceptance Address",
+      "date": "14 June 1993",
+      "pages": [
+        2
+      ]
+    },
+    {
+      "auteur": "Nicola Sturgeon",
+      "titre": "Address to the Scottish Parliament following her election as First Minister",
+      "date": "19 November 2014",
+      "pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "auteur": "Thomas Babington Macaulay",
+      "titre": "Speech on the Reform Bill of 1832",
+      "date": "2 March 1831",
+      "pages": [
+        5
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1. Franklin D. Roosevelt",
+      "2. Ruth Bader Ginsburg",
+      "3. Nicola Sturgeon",
+      "4. Thomas Babington Macaulay"
+    ],
+    "pages_du_sujet": 5,
+    "pages_pdf_des_documents": {
+      "1. Franklin D. Roosevelt": [
+        1
+      ],
+      "2. Ruth Bader Ginsburg": [
+        2
+      ],
+      "3. Nicola Sturgeon": [
+        3,
+        4
+      ],
+      "4. Thomas Babington Macaulay": [
+        5
+      ]
+    },
+    "precision": "Tous les extraits sont traités séparément en anglais. Les pages de continuation sont rattachées au document dont elles prolongent le texte."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Attributions et pages pointées sur le sujet et sur l’annexe du rapport. Commentaires en anglais, lectures rapprochées, préparation guidée et échanges de reprise pour chaque extrait, figure interprétative.",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "agent": "rennes_oraux_economie",
+      "session": "rennes_oraux_economie"
+    }
+  ]
+}
