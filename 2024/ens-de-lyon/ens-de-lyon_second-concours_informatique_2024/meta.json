@@ -93,5 +93,38 @@
     "date": "2026-11-24",
     "modele": "GPT-6.2 Astra (effort Ultra)",
     "verification": "Les 19 questions des deux corrigés, avec le sujet, la figure pondérée et le rapport du jury. Vérification des sept améliorations de distance, de la détection globale des cycles négatifs et des preuves de confluence et de terminaison. Ajout de la routine de Q13 et d’un exemple où la source est isolée."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19"
+    ],
+    "precision": "Les 19 questions numérotées du sujet institutionnel ont été rapprochées dans leur ordre des solutions signées. Le texte de chacune des solutions du brut figure aussi dans le guidé.",
+    "origine_attestation": {
+      "commit_du_journal": "94792154ec69f6b16a15fe6cde29e030e9bed7d1",
+      "phase": "relecture_corrige",
+      "date": "2026-11-24",
+      "perimetre": "Les 19 questions des deux corrigés, avec le sujet, la figure pondérée et le rapport du jury. Vérification des sept améliorations de distance, de la détection globale des cycles négatifs et des preuves de confluence et de terminaison. Ajout de la routine de Q13 et d’un exemple où la source est isolée.",
+      "sha256_sujet_controle": "bca7dfcb34778d20ca0deb8ab3016c4e76591102ee596194c4f0e527ee1c9684",
+      "sha256_rapport_controle": "2bcfefe88f0d6c46a86f2d73edfe63d3f6f13304616bb517073fde60f163b51e"
+    }
   }
 }

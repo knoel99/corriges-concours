@@ -43,5 +43,61 @@
       "modifications": true,
       "perimetre": "Rédaction des 14 questions et de leurs sous-questions sur le PPAC, le minimum en intervalle et les arbres cartésiens. Lecture du sujet et du rapport, reproduction indépendante de l’arbre de la question 11 et trois figures. Contrôle des cas d’égalité, de l’orientation des requêtes, des complexités en moyenne et au pire et des codes des deux éditions sur des familles exhaustives de tableaux."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
+    "precision": "Les 14 questions numérotées du sujet institutionnel ont été rapprochées dans leur ordre des solutions signées. Le texte de chacune des solutions du brut figure aussi dans le guidé.",
+    "origine_attestation": {
+      "commit_du_journal": "07fcb2573e03e0d8b8506b88c150f08f497b480c",
+      "phase": "redaction",
+      "date": "2026-11-24",
+      "perimetre": "Rédaction des 14 questions et de leurs sous-questions sur le PPAC, le minimum en intervalle et les arbres cartésiens. Lecture du sujet et du rapport, reproduction indépendante de l’arbre de la question 11 et trois figures. Contrôle des cas d’égalité, de l’orientation des requêtes, des complexités en moyenne et au pire et des codes des deux éditions sur des familles exhaustives de tableaux.",
+      "sha256_sujet_controle": "7f495ed485fcdb4696a3dd4a4e07f52fc515667c71e454a74c6d3726b3495e28",
+      "sha256_rapport_controle": "6d0853b28ddf8547f3540299474672c07f9451f405793f27718c727e00ed8f41"
+    },
+    "subdivisions_du_sujet": {
+      "1": [
+        "a",
+        "b"
+      ],
+      "3": [
+        "a",
+        "b"
+      ],
+      "7": [
+        "a",
+        "b"
+      ],
+      "8": [
+        "a",
+        "b",
+        "c"
+      ],
+      "9": [
+        "a",
+        "b",
+        "c"
+      ],
+      "10": [
+        "a",
+        "b"
+      ]
+    }
+  }
 }
