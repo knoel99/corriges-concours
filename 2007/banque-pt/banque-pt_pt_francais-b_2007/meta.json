@@ -1,0 +1,96 @@
+{
+  "slug": "banque-pt_pt_francais-b_2007",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français B",
+    "annee": 2007
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2007/francais_b_2007.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2007/rapport_fra_b_ecrit_2007.pdf",
+    "programme_officiel": "https://www.education.gouv.fr/bo/2006/27/MENS0601476A.htm",
+    "notice": "https://www.banquept.fr/documents/livret/2007/Livret_Rose_2007_1_2.pdf#page=12",
+    "sujet_sha256": "f271bb018333959283d7e94b5edcbe4488b0fe0a44ab254507a39b2fe8b5c82c",
+    "rapport_jury_sha256": "78271a1e6a726cadebe9be9f4daa648651faf345c6a6d4510ac5f93b0c27dc34",
+    "programme_officiel_sha256": "657b29f18b75d1e77c73f72f7e646869e261994c5035c3189c1991360017de16",
+    "notice_sha256": "92b0f9429df696ee5c62424af4ce682b8ad1b2aafa7d90e2e50e620b545274d0",
+    "oeuvres_au_programme": [
+      "Miguel de Cervantès, Don Quichotte, volume I, chapitres 1 à 32 (traduction d’Aline Schulman)",
+      "Marcel Proust, Un amour de Swann",
+      "Nicolas Malebranche, De la recherche de la vérité, livre II, parties II et III"
+    ],
+    "theme": "Puissances de l’imagination",
+    "admissibilite_admission": "ENS Cachan, écrit d’admission, coefficient 4.",
+    "pages_rapport": "Rapport PDF p. 1 et 2 pour l’argument de Grimaldi, la valeur restrictive d’« essentiellement » et la comparaison des trois temps. Le rapport attribue par erreur à cette session un autre premier thème. Le programme ministériel confirme les œuvres du second thème réellement interrogé."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "Quel temps l’imagination rend-elle présent ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture intégrale des quatre pages de Grimaldi et rédaction d’un résumé de 200 mots. Dissertation consacrée aux directions temporelles de l’imagination chez Cervantès, Proust et Malebranche."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Résumé",
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Résumé",
+        "page_pdf": 1,
+        "page_pdf_fin": 4,
+        "page_consigne": 4,
+        "perimetre": "Le texte occupe les pages 1 à 4, de « Reine des facultés » à « ne peut pas être un objet ? ». La page 4 porte également les deux questions et leurs barèmes.",
+        "mots_demandes": 200,
+        "mots_admis": [
+          180,
+          220
+        ],
+        "mots_par_paragraphe": [
+          81,
+          47,
+          72
+        ],
+        "mots_rediges": 200,
+        "points": 8
+      },
+      {
+        "question": "Dissertation",
+        "page_pdf": 4,
+        "perimetre": "Cervantes, Malebranche et Proust, dans les œuvres au programme, considèrent-ils l’imagination comme une faculté essentiellement tournée vers l’avenir ?",
+        "points": 12
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}
