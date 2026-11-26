@@ -1,0 +1,372 @@
+{
+  "slug": "x_m-prime-p-prime_deuxieme-composition-de-mathematiques_1987",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "M prime P prime",
+    "filiere_historique": "M′ et P′",
+    "annee": 1987,
+    "matiere": "Deuxième composition de mathématiques",
+    "modalite": "écrit"
+  },
+  "questions": 37,
+  "duree_heures": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-552210a87f999bf46b1e",
+    "sujet_sha256": "6ff4bcd5c23bfb34a1a20cd13da8e2236fdea7457232d148b577ae5514d1a23b",
+    "notice_ups": "m87xm2",
+    "calendrier": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000516456",
+    "provenance": "UN fac-similé commun, recueil 70–72, six feuillets. Les parties I et IV, II.1–2 ainsi que III.1 et III.2.a sont communes. En II.3, matrices explicites pour P′, matrices en blocs pour M′. III.2.b–d constituent la suite propre à P′. III.2.b–f, III.3.a–b et III.4.a–c sont la suite propre à M′. Les annotations manuscrites des feuillets 2–5 identifient les parcours. La transcription m87xm2ea, au pied « m87xp2ea.tex », reprend le parcours P′ et omet les développements M′.",
+    "rapport_jury": "",
+    "observation_rapport": "La notice UPS consultée ne fournit pas de rapport de jury."
+  },
+  "pieces_verifiees": {
+    "fac-simile": {
+      "reference": "m87xm2eb",
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-552210a87f999bf46b1e",
+      "sha256": "6ff4bcd5c23bfb34a1a20cd13da8e2236fdea7457232d148b577ae5514d1a23b",
+      "pages": 3,
+      "rendu_page_sha256": [
+        "3b260b5486c6fd3d8fd89caf36a9574e1c61eed64e13304a091efe2f6fd87fb8",
+        "57448a5c8ab8a04fccd27f528dd70fde4bc0ada02b547270a6dd5fe8b6b1b336",
+        "652311b8e815c9fec9a13e4bc97fba027850aa2b25de7ff9012a53f9f839cefa"
+      ]
+    },
+    "m87xm2ea": {
+      "reference": "m87xm2ea",
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-cec458a13fd64729f0f8",
+      "sha256": "573adb9653608a76cd6705a25d5da20c879ff76ac138cf16a093c49838a2be5d",
+      "pages": 2,
+      "rendu_page_sha256": [
+        "e132393a40a412dd6db236a12badd15596ff7bf8a1f598c3945594eff0f58288",
+        "3ccc00933e0fbe31689c6528c200435b6fe667d76d83c0cedf03adb34cb9d56c"
+      ]
+    },
+    "m87xm2ca": {
+      "reference": "m87xm2ca",
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-ae2d6b065eeec095421c",
+      "sha256": "e7ef6e8717660b6facfbec06753f47790e486e4121861bf075fc839129b62a06",
+      "pages": 2,
+      "rendu_page_sha256": [
+        "8f85ca058ec465803ac02a97bc60aeaeea473c369c671e1a66420c2366b412a3",
+        "a11745f77a5bc1cabff29f4e6c3cf04358287413f41293e77dc4e11360614ba7"
+      ]
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "x_hist_1987",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction des 37 rubriques des deux éditions, de leurs indications et de 2 figures."
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "x_hist_1987",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Confrontation des deux énoncés II.3 et des suites propres à chaque option en III au fac-similé. Vérification des signes de la conjugaison complexe, de la trace des opérateurs et de la rotation dans la partie IV."
+    }
+  ],
+  "figures": [
+    {
+      "question": "I.3.d",
+      "numero": 1,
+      "fichier": "figures/plans-propres.svg",
+      "legende": "L’involution β échange les deux plans propres de α. Son carré est l’identité."
+    },
+    {
+      "question": "III.3.b (M′)",
+      "numero": 2,
+      "fichier": "figures/decomposition-sigma.svg",
+      "legende": "La somme directe du noyau et de la droite des matrices d’entrelacement décrit les deux espaces propres de σ."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1.a",
+      "I.1.b",
+      "I.2.a",
+      "I.2.b",
+      "I.2.c",
+      "I.3.a",
+      "I.3.b",
+      "I.3.c",
+      "I.3.d",
+      "II.1.a",
+      "II.1.b",
+      "II.1.c",
+      "II.2.a",
+      "II.2.b",
+      "II.2.c",
+      "II.3 (P′)",
+      "II.3 (M′)",
+      "III.1.a",
+      "III.1.b",
+      "III.2.a",
+      "III.2.b (P′)",
+      "III.2.c (P′)",
+      "III.2.d (P′)",
+      "III.2.b (M′)",
+      "III.2.c (M′)",
+      "III.2.d (M′)",
+      "III.2.e (M′)",
+      "III.2.f (M′)",
+      "III.3.a (M′)",
+      "III.3.b (M′)",
+      "III.4.a (M′)",
+      "III.4.b (M′)",
+      "III.4.c (M′)",
+      "IV.1.a",
+      "IV.1.b",
+      "IV.2",
+      "IV.3"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "I.1.a",
+        "feuillet_imprime": 1,
+        "page_pdf": 1,
+        "page_recueil": 70
+      },
+      {
+        "question": "I.1.b",
+        "feuillet_imprime": 1,
+        "page_pdf": 1,
+        "page_recueil": 70
+      },
+      {
+        "question": "I.2.a",
+        "feuillet_imprime": 1,
+        "page_pdf": 1,
+        "page_recueil": 70
+      },
+      {
+        "question": "I.2.b",
+        "feuillet_imprime": 1,
+        "page_pdf": 1,
+        "page_recueil": 70
+      },
+      {
+        "question": "I.2.c",
+        "feuillet_imprime": 1,
+        "page_pdf": 1,
+        "page_recueil": 70
+      },
+      {
+        "question": "I.3.a",
+        "feuillet_imprime": 2,
+        "page_pdf": 1,
+        "page_recueil": 70
+      },
+      {
+        "question": "I.3.b",
+        "feuillet_imprime": 2,
+        "page_pdf": 1,
+        "page_recueil": 70
+      },
+      {
+        "question": "I.3.c",
+        "feuillet_imprime": 2,
+        "page_pdf": 1,
+        "page_recueil": 70
+      },
+      {
+        "question": "I.3.d",
+        "feuillet_imprime": 2,
+        "page_pdf": 1,
+        "page_recueil": 70
+      },
+      {
+        "question": "II.1.a",
+        "feuillet_imprime": 2,
+        "page_pdf": 1,
+        "page_recueil": 70
+      },
+      {
+        "question": "II.1.b",
+        "feuillet_imprime": 2,
+        "page_pdf": 1,
+        "page_recueil": 70
+      },
+      {
+        "question": "II.1.c",
+        "feuillet_imprime": 2,
+        "page_pdf": 1,
+        "page_recueil": 70
+      },
+      {
+        "question": "II.2.a",
+        "feuillet_imprime": 2,
+        "page_pdf": 1,
+        "page_recueil": 70
+      },
+      {
+        "question": "II.2.b",
+        "feuillet_imprime": 2,
+        "page_pdf": 1,
+        "page_recueil": 70
+      },
+      {
+        "question": "II.2.c",
+        "feuillet_imprime": 2,
+        "page_pdf": 1,
+        "page_recueil": 70
+      },
+      {
+        "question": "II.3 (P′)",
+        "feuillet_imprime": 2,
+        "page_pdf": 1,
+        "page_recueil": 70
+      },
+      {
+        "question": "II.3 (M′)",
+        "feuillet_imprime": 3,
+        "page_pdf": 2,
+        "page_recueil": 71
+      },
+      {
+        "question": "III.1.a",
+        "feuillet_imprime": 3,
+        "page_pdf": 2,
+        "page_recueil": 71
+      },
+      {
+        "question": "III.1.b",
+        "feuillet_imprime": 3,
+        "page_pdf": 2,
+        "page_recueil": 71
+      },
+      {
+        "question": "III.2.a",
+        "feuillet_imprime": 3,
+        "page_pdf": 2,
+        "page_recueil": 71
+      },
+      {
+        "question": "III.2.b (P′)",
+        "feuillet_imprime": 4,
+        "page_pdf": 2,
+        "page_recueil": 71
+      },
+      {
+        "question": "III.2.c (P′)",
+        "feuillet_imprime": 4,
+        "page_pdf": 2,
+        "page_recueil": 71
+      },
+      {
+        "question": "III.2.d (P′)",
+        "feuillet_imprime": 4,
+        "page_pdf": 2,
+        "page_recueil": 71
+      },
+      {
+        "question": "III.2.b (M′)",
+        "feuillet_imprime": 4,
+        "page_pdf": 2,
+        "page_recueil": 71
+      },
+      {
+        "question": "III.2.c (M′)",
+        "feuillet_imprime": 4,
+        "page_pdf": 2,
+        "page_recueil": 71
+      },
+      {
+        "question": "III.2.d (M′)",
+        "feuillet_imprime": 4,
+        "page_pdf": 2,
+        "page_recueil": 71
+      },
+      {
+        "question": "III.2.e (M′)",
+        "feuillet_imprime": 4,
+        "page_pdf": 2,
+        "page_recueil": 71
+      },
+      {
+        "question": "III.2.f (M′)",
+        "feuillet_imprime": 4,
+        "page_pdf": 2,
+        "page_recueil": 71
+      },
+      {
+        "question": "III.3.a (M′)",
+        "feuillet_imprime": 5,
+        "page_pdf": 3,
+        "page_recueil": 72
+      },
+      {
+        "question": "III.3.b (M′)",
+        "feuillet_imprime": 5,
+        "page_pdf": 3,
+        "page_recueil": 72
+      },
+      {
+        "question": "III.4.a (M′)",
+        "feuillet_imprime": 5,
+        "page_pdf": 3,
+        "page_recueil": 72
+      },
+      {
+        "question": "III.4.b (M′)",
+        "feuillet_imprime": 5,
+        "page_pdf": 3,
+        "page_recueil": 72
+      },
+      {
+        "question": "III.4.c (M′)",
+        "feuillet_imprime": 5,
+        "page_pdf": 3,
+        "page_recueil": 72
+      },
+      {
+        "question": "IV.1.a",
+        "feuillet_imprime": 6,
+        "page_pdf": 3,
+        "page_recueil": 72
+      },
+      {
+        "question": "IV.1.b",
+        "feuillet_imprime": 6,
+        "page_pdf": 3,
+        "page_recueil": 72
+      },
+      {
+        "question": "IV.2",
+        "feuillet_imprime": 6,
+        "page_pdf": 3,
+        "page_recueil": 72
+      },
+      {
+        "question": "IV.3",
+        "feuillet_imprime": 6,
+        "page_pdf": 3,
+        "page_recueil": 72
+      }
+    ]
+  }
+}
