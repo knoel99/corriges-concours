@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Marches aléatoires et applications.** La numérotation reprend les sections du sujet. Les questions 13 à 15 sur le contrat précèdent la reprise du numéro 1 de la partie 2. Le cours du blé et les règles du contrat sont ceux de cet exercice.
 
 ## Repères
@@ -142,7 +144,7 @@ Par continuité du produit en dimension finie, la limite est $v_1v_1^T$. Les coo
 
 Chaque composante de $M^kp^{(0)}$ tend vers $n^{-1}\sum_j p_j^{(0)}=1/n$. Le vecteur limite est la loi uniforme sur les $n$ cases.
 
-![À partir de la première case, les trois distributions successives se rapprochent de la droite horizontale de hauteur 1/6.](figures/uniformisation-dans-la-boite.svg)
+![En partant de la première case, les distributions aux instants 2, 8 et 40 se rapprochent de la distribution uniforme, de probabilité 1/6 par case.](figures/uniformisation-dans-la-boite.svg)
 
 ### Question I.12 · Interprétation physique
 
@@ -310,20 +312,34 @@ Les boucles sont vides pour $j=0$. Le calcul demande $O(j+1)$ opérations.
 
 La liste de longueur $n+1$ contient à l’indice $k$ le versement $\max(s_0u^{2k-n}-s^*,0)$ du scénario à $k$ montées. Les zéros répétés sont conservés. La liste décrit les montants avant prise en compte des probabilités.
 
+```python
+def Feuilles(n, u, s0, setoile):
+    return [max(s0 * u**(2*k - n) - setoile, 0) for k in range(n+1)]
+```
+
 ### Question II.6 · Prix par somme pondérée
 
 **Indication.** Associer le poids binomial à l’indice de la feuille, y compris pour l’indice zéro.
 
 #### Solution
 
+Notons $w_k=\binom nk p^k(1-p)^{n-k}$. La formule (15) pondère la feuille d’indice $k$ par $w_k$. Le quotient $w_{k+1}/w_k=(n-k)p/((k+1)(1-p))$ dépasse 1 avant le mode et devient inférieur ou égal à 1 après. On peut donc partir d’un mode $j=\lfloor(n+1)p\rfloor$, calculer les poids relatifs $w_k/w_j$ vers les deux bords, puis les normaliser. Leur somme vaut $1/w_j$.
+
 ```python
 def call(n, u, s0, setoile, p):
     gains = Feuilles(n, u, s0, setoile)
-    return sum(gains[k] * Copt(n, k) * p**k * (1-p)**(n-k)
-               for k in range(n+1))
+    j = min(n, int((n + 1) * p))
+    poids = [0.0] * (n + 1)
+    poids[j] = 1.0
+    for k in range(j, n):
+        poids[k+1] = poids[k] * ((n-k)*p / ((k+1)*(1-p)))
+    for k in range(j, 0, -1):
+        poids[k-1] = poids[k] * (k*(1-p) / ((n-k+1)*p))
+    total = sum(poids)
+    return sum((w / total) * g for w, g in zip(poids, gains))
 ```
 
-Cette somme est l’espérance par valeurs de $k$, identique à la formule (15) car toutes les feuilles antérieures à $a$ ont un gain nul.
+Les deux boucles effectuent $n$ passages en tout. Pour $n=1100$ et $p=1/2$, le coefficient central dépasse la capacité d’un flottant, alors que la probabilité correspondante est voisine de $0{,}024$. Les poids relatifs utilisés ici sont au plus égaux à 1. Le calcul reste soumis à la précision flottante des cours calculés par `Feuilles`.
 
 ## III. Volatilité historique
 
@@ -504,12 +520,29 @@ Ce résultat dépend de conditions que le programme imprimé ne garantit pas. Il
 
 #### Solution
 
-Pour une estimation admissible $u>1$, $\sqrt{\sigma^2}=\sigma=\ln u$. Sous les conditions de réussite de la fonction de la question précédente,
+Pour $u>1$, la volatilité est $\sigma=\ln u$. Quand la fonction imprimée `mystere` aboutit, l’instruction `m.log(mystere(F, Fprime, s0, setoile, epsilon))` donne donc l’estimation demandée. Pour traiter également une solution à une jonction ou dans la dernière tranche, on peut inverser directement le prix continu par dichotomie. Le programme prend le terme $n$ et la prime observée en arguments.
 
 ```python
-def Volatilite(F, Fprime, s0, setoile, epsilon):
-    u = mystere(F, Fprime, s0, setoile, epsilon)
-    return m.log(u)
+import math as m
+
+def Volatilite(n, s0, setoile, prime, epsilon):
+    if prime < 0 or epsilon <= 0:
+        raise ValueError("Prime négative ou tolérance non positive")
+    if prime == 0:
+        raise ValueError("Une prime nulle donne plusieurs volatilités")
+    gauche = (setoile / s0)**(1 / n)
+    droite = gauche + max(gauche - 1, 1 / n)
+    while call(n, droite, s0, setoile, 0.5) < prime:
+        droite += droite - gauche
+    while droite - gauche > epsilon:
+        milieu = gauche + (droite - gauche) / 2
+        if milieu == gauche or milieu == droite:
+            raise ArithmeticError("Tolérance inférieure à la précision disponible")
+        if call(n, milieu, s0, setoile, 0.5) < prime:
+            gauche = milieu
+        else:
+            droite = milieu
+    return m.log(gauche + (droite - gauche) / 2)
 ```
 
-Le même logarithme s’applique au facteur calculé avec l’encadrement de la question 13. Cette estimation provient du prix observé du contrat.
+Pour $c^*>0$, la stricte croissance au-delà de $u_{\min}$ assure l’unicité. Le premier parcours termine puisque le prix tend vers l’infini. En arithmétique exacte, le dernier milieu est à $\varepsilon/2$ près du facteur recherché. Sur $u\ge1$, la dérivée de $\ln u$ vaut au plus 1, d’où la même borne sur l’erreur de volatilité. Quand $c^*=0$, l’ensemble des solutions est $0<\sigma\le\ln(s^*/s_0)/n$. Une prime nulle ne fixe donc aucune volatilité unique.
