@@ -1,0 +1,321 @@
+{
+  "slug": "x_m-prime_deuxieme-composition-de-mathematiques_1986",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "M prime",
+    "filiere_historique": "M′",
+    "matiere": "Deuxième composition de mathématiques",
+    "annee": 1986
+  },
+  "questions": 29,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-84c739e5f38cdc44f9c0",
+    "sujet_sha256": "4d302c5cb0d13f84ca87f8129caaed5795e121ffc4c7b6db8a2e5435216db14b",
+    "notice_ups": "m86xm2",
+    "reproduction": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-4389d85e48b2a2c7452b",
+    "reproduction_sha256": "ab289804c887a7869e5305fd5832af5c131083e32e9be3c9d3bfcfbe461fef35",
+    "pages": 2,
+    "calendrier": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000330227",
+    "rapport_jury": "",
+    "observation_rapport": "Les deux exemplaires du sujet et la notice UPS sont les sources consultées ; aucun rapport de jury n’y est joint.",
+    "provenance": "Le fac-similé UPS m86xm2eb porte École polytechnique, concours 1986, option M′, deuxième composition de mathématiques, quatre heures. Les doubles vues des pages du recueil 66 et 67 reproduisent les quatre feuillets. La transcription secondaire m86xm2ea compte trois pages et emploie i+1 au lieu de k+1 dans le Bézout de II.3.b. La solution suit le fac-similé.",
+    "pages_reproduction": 3
+  },
+  "figures": [
+    {
+      "question": "II.2.c",
+      "fichier": "figures/decomposition-stabilisee.svg",
+      "legende": "Décomposition de l’espace de départ. Sur l’image stabilisée, l’action de A est inversible. Sur le noyau stabilisé, elle est nilpotente. La dernière ligne indique l’action de son inverse généralisé."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2.a",
+      "I.2.b",
+      "I.2.c",
+      "I.3.a",
+      "I.3.b",
+      "I.3.c",
+      "I.3.d",
+      "I.3.e",
+      "I.4.a",
+      "I.4.b",
+      "II.1.a",
+      "II.1.b",
+      "II.1.c",
+      "II.1.d",
+      "II.2.a",
+      "II.2.b",
+      "II.2.c",
+      "II.2.d",
+      "II.3.a",
+      "II.3.b",
+      "II.3.c",
+      "III.1.a",
+      "III.1.b",
+      "III.1.c",
+      "III.1.d",
+      "III.2",
+      "III.3.a",
+      "III.3.b"
+    ],
+    "repere_par_question": [
+      {
+        "question": "I.1",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 1
+      },
+      {
+        "question": "I.2.a",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 1
+      },
+      {
+        "question": "I.2.b",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 1
+      },
+      {
+        "question": "I.2.c",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 1
+      },
+      {
+        "question": "I.3.a",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 2
+      },
+      {
+        "question": "I.3.b",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 2
+      },
+      {
+        "question": "I.3.c",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 2
+      },
+      {
+        "question": "I.3.d",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 2
+      },
+      {
+        "question": "I.3.e",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 2
+      },
+      {
+        "question": "I.4.a",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 2
+      },
+      {
+        "question": "I.4.b",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 2
+      },
+      {
+        "question": "II.1.a",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 2
+      },
+      {
+        "question": "II.1.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      },
+      {
+        "question": "II.1.c",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      },
+      {
+        "question": "II.1.d",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      },
+      {
+        "question": "II.2.a",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      },
+      {
+        "question": "II.2.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      },
+      {
+        "question": "II.2.c",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      },
+      {
+        "question": "II.2.d",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      },
+      {
+        "question": "II.3.a",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      },
+      {
+        "question": "II.3.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      },
+      {
+        "question": "II.3.c",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      },
+      {
+        "question": "III.1.a",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 4
+      },
+      {
+        "question": "III.1.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 4
+      },
+      {
+        "question": "III.1.c",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 4
+      },
+      {
+        "question": "III.1.d",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 4
+      },
+      {
+        "question": "III.2",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 4
+      },
+      {
+        "question": "III.3.a",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 4
+      },
+      {
+        "question": "III.3.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 4
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Les 29 rubriques des trois parties sont traitées. Les deux vues du PDF regroupent quatre feuillets numérotés de 1 à 4. Les deux exemples matriciels sont calculés et les conditions de compatibilité des données initiales sont démontrées."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "histoire_lyon_2017",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Les 29 rubriques des trois parties sont traitées. Les deux vues du PDF regroupent quatre feuillets numérotés de 1 à 4. Les deux exemples matriciels sont calculés et les conditions de compatibilité des données initiales sont démontrées. Rédaction et vérification des solutions, des indications et de la figure."
+    }
+  ]
+}

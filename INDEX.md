@@ -2148,6 +2148,7 @@
 | 1990 | X | P′ | Première composition de mathématiques | [md](1990/x/x_p-prime_premiere-composition-de-mathematiques_1990/brut.md) | [md](1990/x/x_p-prime_premiere-composition-de-mathematiques_1990/guide.md) |
 | 1991 | X | M′ | Première composition de mathématiques | [md](1991/x/x_m-prime_premiere-composition-de-mathematiques_1991/brut.md) | [md](1991/x/x_m-prime_premiere-composition-de-mathematiques_1991/guide.md) |
 | 1991 | X | M′ | Deuxième composition de mathématiques | [md](1991/x/x_m-prime_deuxieme-composition-de-mathematiques_1991/brut.md) | [md](1991/x/x_m-prime_deuxieme-composition-de-mathematiques_1991/guide.md) |
+| 1986 | X | M′ | Deuxième composition de mathématiques | [md](1986/x/x_m-prime_deuxieme-composition-de-mathematiques_1986/brut.md) | [md](1986/x/x_m-prime_deuxieme-composition-de-mathematiques_1986/guide.md) |
 | 1997 | X | MP | Première composition de mathématiques | [md](1997/x/x_mp_premiere-composition-de-mathematiques_1997/brut.md) | [md](1997/x/x_mp_premiere-composition-de-mathematiques_1997/guide.md) |
 | 1997 | X-ENS | PSI | Maths PSI | [md](1997/x-ens/x-ens_psi_maths-psi_1997/brut.md) | [md](1997/x-ens/x-ens_psi_maths-psi_1997/guide.md) |
 | 1992 | X | P′ | Deuxième composition de mathématiques | [md](1992/x/x_p-prime_deuxieme-composition-de-mathematiques_1992/brut.md) | [md](1992/x/x_p-prime_deuxieme-composition-de-mathematiques_1992/guide.md) |
