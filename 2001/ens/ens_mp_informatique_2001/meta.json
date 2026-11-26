@@ -1,0 +1,87 @@
+{
+  "slug": "ens_mp_informatique_2001",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Informatique",
+    "annee": 2001
+  },
+  "intitule": "Morphismes, hiérarchie des L-systèmes et répétitions",
+  "questions": 38,
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "reprise_physique_ulm",
+      "session": "reprise_physique_ulm",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Résolution des 38 questions énumérées et réalisation de 2 figures."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/ens_info_mp_2001.pdf",
+    "sujet_sha256": "490e6362ee434f394604299cf0ace1b85e98e63561629949fb909249fc6341aa",
+    "garde": "La garde nomme les ENS de Paris, Lyon et Cachan pour la filière MP. Le sujet de quatre heures étudie les morphismes de mots et les L-systèmes. Fac-similé publié par WikiPrépa."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1.3 et 2.15",
+      "fichier": "figures/thue.svg",
+      "legende": "Préfixes de Thue–Morse. Les cases claires portent a et les cases foncées b. Chaque rang juxtapose le rang précédent et son complément."
+    },
+    {
+      "numero": 2,
+      "question": "4.10",
+      "fichier": "figures/cercle.svg",
+      "legende": "Deux tours du mot circulaire, privés du b final, donnent un mot bloqué. Sur le cercle, les trois lettres vertes sont le suffixe et les trois bleues sont le préfixe."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7",
+      "2.8",
+      "2.9",
+      "2.10",
+      "2.11",
+      "2.12",
+      "2.13",
+      "2.14",
+      "2.15",
+      "2.16",
+      "2.17",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.6",
+      "4.7",
+      "4.8",
+      "4.9",
+      "4.10",
+      "4.11"
+    ]
+  }
+}
