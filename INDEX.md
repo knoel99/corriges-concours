@@ -112,6 +112,8 @@
 | 2024 | Banque PT | PT | Français B | [md](2024/banque-pt/banque-pt_pt_francais-b_2024/brut.md) | [md](2024/banque-pt/banque-pt_pt_francais-b_2024/guide.md) |
 | 2025 | Banque PT | PT | Français B | [md](2025/banque-pt/banque-pt_pt_francais-b_2025/brut.md) | [md](2025/banque-pt/banque-pt_pt_francais-b_2025/guide.md) |
 | 2025 | Banque PT | PT | Informatique et modélisation | [md](2025/banque-pt/banque-pt_pt_informatique-et-modelisation_2025/brut.md) | [md](2025/banque-pt/banque-pt_pt_informatique-et-modelisation_2025/guide.md) |
+| 2017 | Banque PT | PT | Physique A | [md](2017/banque-pt/banque-pt_pt_physique-a_2017/brut.md) | [md](2017/banque-pt/banque-pt_pt_physique-a_2017/guide.md) |
+| 2019 | Banque PT | PT | Physique A | [md](2019/banque-pt/banque-pt_pt_physique-a_2019/brut.md) | [md](2019/banque-pt/banque-pt_pt_physique-a_2019/guide.md) |
 | 2020 | Banque PT | PT | Physique A | [md](2020/banque-pt/banque-pt_pt_physique-a_2020/brut.md) | [md](2020/banque-pt/banque-pt_pt_physique-a_2020/guide.md) |
 | 2021 | Banque PT | PT | Physique A | [md](2021/banque-pt/banque-pt_pt_physique-a_2021/brut.md) | [md](2021/banque-pt/banque-pt_pt_physique-a_2021/guide.md) |
 | 2025 | Banque PT | PT | Physique A | [md](2025/banque-pt/banque-pt_pt_physique-a_2025/brut.md) | [md](2025/banque-pt/banque-pt_pt_physique-a_2025/guide.md) |
@@ -319,6 +321,7 @@
 | 2022 | ENS de Lyon | Séries LA/LV/SH (A/L) | Italien (oral) | [md](2022/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_italien-oral_2022/brut.md) | [md](2022/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_italien-oral_2022/guide.md) |
 | 2017 | ENS de Lyon | Séries LA/LV/SH (A/L) | Latin (oral) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_latin-oral_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_latin-oral_2017/guide.md) |
 | 2017 | ENS de Lyon | Séries LA/LV/SH (A/L) | Polonais (oral) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_polonais-oral_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_polonais-oral_2017/guide.md) |
+| 2022 | ENS Paris-Saclay | Cycle master mathématiques | Français et culture générale | [md](2022/ens-paris-saclay/ens-paris-saclay_cycle-master-mathematiques_francais-et-culture-generale_2022/brut.md) | [md](2022/ens-paris-saclay/ens-paris-saclay_cycle-master-mathematiques_francais-et-culture-generale_2022/guide.md) |
 | 2015 | ENS Paris-Saclay | Design | Expression graphique, chromatique ou volumique | [md](2015/ens-paris-saclay/ens-paris-saclay_design_expression-graphique-chromatique-ou-volumique_2015/brut.md) | [md](2015/ens-paris-saclay/ens-paris-saclay_design_expression-graphique-chromatique-ou-volumique_2015/guide.md) |
 | 2021 | ENS Paris-Saclay | Design | Histoire de l’art | [md](2021/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2021/brut.md) | [md](2021/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2021/guide.md) |
 | 2022 | ENS Paris-Saclay | Design | Histoire de l’art | [md](2022/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2022/brut.md) | [md](2022/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2022/guide.md) |
@@ -1458,6 +1461,7 @@
 | 2026 | ENS Rennes | D-E | Espagnol | [md](2026/ens-rennes/ens-rennes_d-e_espagnol_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_espagnol_2026/guide.md) |
 | 2026 | ENS Rennes | D-E | Espagnol (oral) | [md](2026/ens-rennes/ens-rennes_d-e_espagnol-oral_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_espagnol-oral_2026/guide.md) |
 | 2026 | ENS Rennes | D-E | Italien | [md](2026/ens-rennes/ens-rennes_d-e_italien_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_italien_2026/guide.md) |
+| 2021 | ENS | Cycle master mathématiques | Français et culture générale | [md](2021/ens/ens_cycle-master-mathematiques_francais-et-culture-generale_2021/brut.md) | [md](2021/ens/ens_cycle-master-mathematiques_francais-et-culture-generale_2021/guide.md) |
 | 2017 | ENS | Cycle master mathématiques | Mathématiques 1 | [md](2017/ens/ens_cycle-master-mathematiques_mathematiques-1_2017/brut.md) | [md](2017/ens/ens_cycle-master-mathematiques_mathematiques-1_2017/guide.md) |
 | 2018 | ENS | Cycle master mathématiques | Mathématiques 1 | [md](2018/ens/ens_cycle-master-mathematiques_mathematiques-1_2018/brut.md) | [md](2018/ens/ens_cycle-master-mathematiques_mathematiques-1_2018/guide.md) |
 | 2019 | ENS | Cycle master mathématiques | Mathématiques 1 | [md](2019/ens/ens_cycle-master-mathematiques_mathematiques-1_2019/brut.md) | [md](2019/ens/ens_cycle-master-mathematiques_mathematiques-1_2019/guide.md) |
@@ -1466,6 +1470,7 @@
 | 2019 | ENS | Cycle master mathématiques | Mathématiques 2 | [md](2019/ens/ens_cycle-master-mathematiques_mathematiques-2_2019/brut.md) | [md](2019/ens/ens_cycle-master-mathematiques_mathematiques-2_2019/guide.md) |
 | 2020 | ENS | Cycle master mathématiques | Mathématiques | [md](2020/ens/ens_cycle-master-mathematiques_mathematiques_2020/brut.md) | [md](2020/ens/ens_cycle-master-mathematiques_mathematiques_2020/guide.md) |
 | 2021 | ENS | Cycle master mathématiques | Mathématiques | [md](2021/ens/ens_cycle-master-mathematiques_mathematiques_2021/brut.md) | [md](2021/ens/ens_cycle-master-mathematiques_mathematiques_2021/guide.md) |
+| 2022 | ENS | Cycle master mathématiques | Mathématiques | [md](2022/ens/ens_cycle-master-mathematiques_mathematiques_2022/brut.md) | [md](2022/ens/ens_cycle-master-mathematiques_mathematiques_2022/guide.md) |
 | 2023 | ENS | Cycle master mathématiques | Mathématiques | [md](2023/ens/ens_cycle-master-mathematiques_mathematiques_2023/brut.md) | [md](2023/ens/ens_cycle-master-mathematiques_mathematiques_2023/guide.md) |
 | 2024 | ENS | Cycle master mathématiques | Mathématiques | [md](2024/ens/ens_cycle-master-mathematiques_mathematiques_2024/brut.md) | [md](2024/ens/ens_cycle-master-mathematiques_mathematiques_2024/guide.md) |
 | 1997 | ENS | Groupes C/S, M et I | Informatique | [md](1997/ens/ens_groupes-c-s-m-et-i_informatique_1997/brut.md) | [md](1997/ens/ens_groupes-c-s-m-et-i_informatique_1997/guide.md) |
