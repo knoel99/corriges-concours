@@ -18,7 +18,7 @@
     {
       "fichier": "figures/arcs-majeurs.svg",
       "question": "V.11.b",
-      "legende": "Premières familles d’arcs pour d = 2, B = 8, Δ = 1. La ligne q = 1 montre l’arc autour de zéro partagé entre les deux extrémités de [0,1)."
+      "legende": "Premières familles d’arcs pour d = 2, B = 8, Δ = 1. La ligne q = 1 montre l’arc autour de zéro partagé entre les deux extrémités de l’intervalle unité."
     }
   ],
   "contributions": [
@@ -40,7 +40,7 @@
       "vitesse": null,
       "date": "2026-11-26",
       "modifications": true,
-      "perimetre": "Lecture de la descente des quatre carrés et de la méthode du cercle, y compris les sous-questions en chiffres romains. Exemple de descente vérifié dans l’algèbre des quaternions, contrôle des bornes des arcs figurés, des exposants des arcs mineurs et du caractère conditionnel de la dernière conclusion.",
+      "perimetre": "Lecture de la descente des quatre carrés et de la méthode du cercle, y compris les sous-questions en chiffres romains. Exemple de descente vérifié dans l’algèbre des quaternions, contrôle des bornes des arcs figurés, des exposants des arcs mineurs et du caractère conditionnel de la dernière conclusion. La légende a été corrigée après le premier rendu pour que les arcs soient effectivement dessinés dans chaque PDF.",
       "editions": [
         "brut",
         "guide"

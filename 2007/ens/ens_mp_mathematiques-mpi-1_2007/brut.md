@@ -282,7 +282,7 @@ Les dénominateurs $1\le q\le B^\Delta$ et les numérateurs $1\le a\le q$ formen
 
 Dans la figure, le rayon autour de $a/q$ est $1/(8q)$. Pour $q=2$ l’unique numérateur réduit donne l’intervalle $(7/16,9/16)$. Pour $q=3$ les bornes autour de $1/3$ sont $7/24$ et $3/8$. Ces arcs peuvent être dessinés séparément même lorsque leurs unions, pour plusieurs dénominateurs, se recouvrent.
 
-![Figure 1 — Premières familles d’arcs pour d = 2, B = 8, Δ = 1. La ligne q = 1 montre l’arc autour de zéro partagé entre les deux extrémités de [0,1).](figures/arcs-majeurs.svg)
+![Figure 1 — Premières familles d’arcs pour d = 2, B = 8, Δ = 1. La ligne q = 1 montre l’arc autour de zéro partagé entre les deux extrémités de l’intervalle unité.](figures/arcs-majeurs.svg)
 
 ### Question V.12.a
 
