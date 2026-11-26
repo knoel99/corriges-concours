@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Sujet : *La méthode des moindres carrés* (4 heures, calculatrice autorisée). Notations de l'énoncé : $\langle\cdot,\cdot\rangle$ et $\|\cdot\|_2$ désignent les produits scalaires et normes canoniques.
 
 Pour un sous-espace $F$ de dimension finie, $p_F$ désigne la projection orthogonale sur $F$.
@@ -504,6 +506,10 @@ Par exemple, prenons $A=\operatorname{Diag}(1,0)$ et $y=(1,2)^T$. Le résidu ort
 
 *Remarque sur l'énoncé.* L'unicité de $u$ lui-même n'a lieu que si $\ker A=\{0\}$ : sinon $(u+h,d)$ convient pour tout $h\in\ker A$. C'est cohérent avec Q30, et seules l'existence et l'unicité de $d$ servent dans la suite.
 
+Le choix supplémentaire $u\in(\ker A)^\perp$ fixe un représentant unique. Ici, $\|(1,t)\|_2^2=1+t^2$ est minimale pour $t=0$. La question 43 établira cette caractérisation pour toute matrice.
+
+![Figure 4 — Une droite d’antécédents pour un projeté et un résidu uniques](figures/q29-antecedents-et-residu.svg)
+
 ### Question 30
 
 On écrit $Ax-y=A(x-u)-d$, avec $A(x-u)\in\operatorname{Col}(A)$ et $d\in\operatorname{Col}(A)^\perp$. Par Pythagore,
@@ -648,7 +654,7 @@ $(v_j)$ étant orthonormée, $\operatorname{Vect}(v_1,\dots,v_r)\subset(\ker A)^
 $$\boxed{b=\tilde Ay\in\operatorname{Im}\tilde A=\operatorname{Vect}(v_1,\dots,v_r)\subset\ker(A)^\perp.}$$
 (Les dimensions étant égales à $r$, il y a même égalité.)
 
-![Figure 4 — les quatre sous-espaces de la SVD : A envoie ker(A) sur 0 et ker(A)^⊥ bijectivement sur Im(A), Ã fait l'inverse et annule Im(A)^⊥, donc b = Ãy est dans ker(A)^⊥](figures/q42-quatre-sous-espaces.svg)
+![Figure 5 — les quatre sous-espaces de la SVD : A envoie ker(A) sur 0 et ker(A)^⊥ bijectivement sur Im(A), Ã fait l'inverse et annule Im(A)^⊥, donc b = Ãy est dans ker(A)^⊥](figures/q42-quatre-sous-espaces.svg)
 
 ### Question 43
 
@@ -744,7 +750,7 @@ $$\boxed{f(x_{k+1})-f(\ell)=\big(f(x_k)-f(\ell)\big)\left(1-\frac{\|d_k\|_2^4}{\
 
 L’orthogonalité visible sur la figure découle aussi du choix du pas. En effet $d_{k+1}=d_k-t_k S d_k$, donc $\langle d_{k+1},d_k\rangle=\|d_k\|_2^2-t_k\langle S d_k,d_k\rangle=0$. Si $d_{k+1}=0$, l’itéré atteint exactement $\ell$.
 
-![Figure 5 — gradient à pas optimal pour AᵀA = Diag(1, 4) : lignes de niveau de f elliptiques centrées en ℓ, pas consécutifs orthogonaux, trajectoire en zigzag vers ℓ](figures/q50-gradient-zigzag.svg)
+![Figure 6 — gradient à pas optimal pour AᵀA = Diag(1, 4) : lignes de niveau de f elliptiques centrées en ℓ, pas consécutifs orthogonaux, trajectoire en zigzag vers ℓ](figures/q50-gradient-zigzag.svg)
 
 ### Question 51
 
@@ -766,6 +772,8 @@ Notons $q=\left(\frac{c(A)-1}{c(A)+1}\right)^2$. Comme $f(x_k)-f(\ell)\geqslant0
 $$f(x_{k+1})-f(\ell)\leqslant q\,(f(x_k)-f(\ell)).$$
 Une récurrence immédiate donne $f(x_k)-f(\ell)\leqslant q^k(f(x_0)-f(\ell))$.
 $$\boxed{\lambda_1\|x_k-\ell\|_2^2\leqslant f(x_k)-f(\ell)\leqslant\big(f(x_0)-f(\ell)\big)\left(\frac{c(A)-1}{c(A)+1}\right)^{2k}.}$$
+
+Si $c(A)=1$, toutes les valeurs propres sont égales à $\lambda_1$, et $S=\lambda_1 I_p$. Pour $x_0\ne\ell$, le premier pas vaut $1/\lambda_1$ et $x_1=\ell$. Plus généralement, si un $d_k$ s’annule, on peut prolonger la suite en posant $x_j=\ell$ pour $j\geq k$. La borne de Q51 reste vraie après cet arrêt.
 
 ### Question 52
 
