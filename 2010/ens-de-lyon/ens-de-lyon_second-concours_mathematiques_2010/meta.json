@@ -31,6 +31,49 @@
       "perimetre": "Rédaction et vérification sur les quatre pages numérisées du sujet. Caractérisation minimax, passage à la limite semi-définie, bornes par intersections, existence et unicité du polynôme optimal. Figure du décalage optimal de la corde avec trois contacts. Aucun rapport de jury indexé pour cet écrit.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "x_maths_b_anciennes",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Confrontation des 19 rubriques des deux éditions aux 4 pages du sujet. Vérification du min-max et du cas singulier avec conservation des multiplicités. Existence et unicité en norme uniforme, alternance et données numériques de la droite représentée contrôlées."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3.a",
+      "1.3.b",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "1.8",
+      "1.9",
+      "2.1",
+      "2.2",
+      "2.3.a",
+      "2.3.b",
+      "2.3.c",
+      "2.3.d",
+      "2.4",
+      "2.5",
+      "2.6"
+    ],
+    "precision": "Confrontation des 19 rubriques des deux éditions aux 4 pages du sujet. Vérification du min-max et du cas singulier avec conservation des multiplicités. Existence et unicité en norme uniforme, alternance et données numériques de la droite représentée contrôlées.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "68592d636c506a0cd32838476776b5906eb01cf49c62ea257cd61667dfcd5ab4",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Confrontation des 19 rubriques des deux éditions aux 4 pages du sujet. Vérification du min-max et du cas singulier avec conservation des multiplicités. Existence et unicité en norme uniforme, alternance et données numériques de la droite représentée contrôlées.",
+      "commit_redaction_anterieure": "7bebeba2582f24e80d3f1efd1eccc92a61a41d16"
+    }
+  }
 }

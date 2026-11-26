@@ -2,7 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 **Valeurs propres d’un produit et approximation uniforme.** Les valeurs propres sont numérotées dans l’ordre croissant. Les polynômes du second exercice sont de degré au plus $n$.
 
@@ -51,6 +53,8 @@ Prenons les maxima sur chaque $i$-plan $F$, puis les minima sur ces plans. L’a
 ### Question 1.8
 
 Oui. Posons $A_\varepsilon=A+\varepsilon I$ et $B_\varepsilon=B+\varepsilon I$ avec $\varepsilon>0$. Elles sont définies positives et $S_\varepsilon=B_\varepsilon^{1/2}A_\varepsilon B_\varepsilon^{1/2}$ converge vers $S=B^{1/2}AB^{1/2}$ ; pour la racine, cela se lit dans une base propre fixe de $B$. Les matrices sont symétriques. Par 3.b, $|\lambda_i(S_\varepsilon)-\lambda_i(S)|\le\|S_\varepsilon-S\|_{\mathrm{op}}\to0$. Les polynômes caractéristiques de $A_\varepsilon B_\varepsilon$ et $S_\varepsilon$ sont égaux par 6. Leurs coefficients étant continus en les entrées, $AB$ et $S$ ont encore le même polynôme caractéristique, même si $B$ est singulière. Les valeurs propres de $AB$ sont donc réelles positives ou nulles. Le passage à la limite dans 7 donne les mêmes inégalités, y compris aux valeurs propres nulles.
+
+Une vérification directe de l’identité des polynômes caractéristiques utilise $\det(I-UV)=\det(I-VU)$ avec $U=AB^{1/2}$ et $V=B^{1/2}$. En remplaçant $U$ par $U/t$, on obtient $\det(tI-AB)=\det(tI-S)$ pour $t\ne0$, puis pour tout $t$ par identité polynomiale. On conserve ainsi toutes les multiplicités, même si $B$ a un noyau.
 
 ### Question 1.9
 
@@ -101,5 +105,7 @@ Si $m=\min f$ et $L=\max f$, toute constante $c$ a pour erreur $\max(|m-c|,|L-c|
 ### Question 2.6
 
 La droite cherchée se déduit de la corde $L(x)=f(a)+(x-a)(f(b)-f(a))/(b-a)$. Par convexité, $0\le L-f\le h$, où $h=\max_{[a,b]}(L-f)$. La droite $q_1=L-h/2$ réalise une erreur uniforme $h/2$. Si $h=0$, $f=L$ et la formule convient. Si $h>0$, le maximum est atteint en $c\in]a,b[$. L’erreur $f-q_1$ vaut $+h/2$ aux extrémités et $-h/2$ en $c$. Si une droite $p$ faisait strictement mieux, $p-q_1$ serait strictement positive en $a,b$ et strictement négative en $c$, ce qui est impossible pour une fonction affine. L’unicité résulte de 2.4.
+
+Pour vérifier les trois contacts de la figure, $f(x)=x^2$ a pour corde $L(x)=x$. Le maximum de $x(1-x)$ est $1/4$ en $1/2$. On obtient donc $q_1(x)=x-1/8$, et les erreurs en $0,1/2,1$ valent respectivement $1/8,-1/8,1/8$.
 
 ![Figure 1 — Pour f(x) égal à x² sur le segment de 0 à 1, la corde y = x est descendue de 1/8. L’erreur prend successivement les valeurs +1/8, −1/8 et +1/8.](figures/meilleure-droite-convexe.svg)
