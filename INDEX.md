@@ -203,6 +203,7 @@
 | 2016 | ENS de Lyon | Second concours | Mathématiques | [md](2016/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2016/brut.md) | [md](2016/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2016/guide.md) |
 | 2017 | ENS de Lyon | Second concours | Mathématiques | [md](2017/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2017/guide.md) |
 | 2018 | ENS de Lyon | Second concours | Mathématiques | [md](2018/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2018/brut.md) | [md](2018/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2018/guide.md) |
+| 2019 | Banque PT | PT | Mathématiques C | [md](2019/banque-pt/banque-pt_pt_maths-c_2019/brut.md) | [md](2019/banque-pt/banque-pt_pt_maths-c_2019/guide.md) |
 | 2019 | ENS de Lyon | Second concours | Mathématiques | [md](2019/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2019/brut.md) | [md](2019/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2019/guide.md) |
 | 2020 | ENS de Lyon | Second concours | Mathématiques | [md](2020/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2020/brut.md) | [md](2020/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2020/guide.md) |
 | 2021 | ENS de Lyon | Second concours | Mathématiques | [md](2021/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2021/brut.md) | [md](2021/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2021/guide.md) |
