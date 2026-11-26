@@ -16,7 +16,7 @@
 
 **Les documents.**
 
-| Doc. | Source, date | Nature | Idée directrice | Données utiles |
+| N° | Source, date | Nature | Idée directrice | Données utiles |
 |---|---|---|---|---|
 | 1 | *The Times*, août 2023 | article d'opinion | l'université est devenue une décision financière, à la rentabilité incertaine, surtout pour les femmes et les plus modestes | plus de 60 000 £ de dette (90 000 £ en médecine) ; 28 800 £ pour un diplômé à cinq ans, contre 25 896 £ en moyenne chez les 22-29 ans ; plus de 20 ans pour amortir ; femmes : 3 600 £ (11,8 %) de moins ; anciens boursiers de cantine : 10 % de moins ; effacement de la dette repoussé de 30 à 40 ans ; 52 % rembourseront tout ; frais de 1 000 £ (1998) à 9 000 £ |
 | 2 | Higher Education Policy Institute, février 2025 | témoignage d'un diplômé | malgré le coût, l'université vaut la peine pour les expériences qu'elle offre | 14,5 heures de travail salarié par semaine ; 27 % rembourseront leur prêt, 65 % selon la réforme ; record d'étudiants défavorisés ; autonomie, diversité, stages, compétences relationnelles |
@@ -64,7 +64,7 @@ Grille de confrontation :
 | Dette à régler | effacement à 40 ans au lieu de 30 ; 52 % rembourseront tout | 27 % aujourd'hui, 65 % avec la réforme | conditions mal comprises | — |
 | Effets sur la vie | — | étudiants pressés par le temps | promotions refusées, logement, santé mentale, famille, sentiment d'être piégé | — |
 | Accès | risque d'une université réservée aux riches | record d'étudiants défavorisés | une médecin conseille aux plus jeunes de s'en passer | — |
-| Valeur de l'expérience | — | autonomie, résilience, diversité, stages | médecins et juristes ont besoin du diplôme | 81 % pour l'ensemble, 84 % savoir, 78 % expérience ; 8 % ne retourneraient pas à l'université, 39 % changeraient de filière |
+| Vécu | — | autonomie, résilience, diversité, stages | médecins et juristes ont besoin du diplôme | 81 % pour l'ensemble, 84 % savoir, 78 % expérience ; 8 % ne retourneraient pas à l'université, 39 % changeraient de filière |
 
 > [!METHODE]
 > Une ligne remplie dans au moins deux colonnes donne un paragraphe croisé. Une case qui contredit sa voisine (52 % contre 65 %, « réservée aux riches » contre « record d'étudiants défavorisés ») est une tension à signaler : c'est ce que le jury appelle « mise en tension ».
