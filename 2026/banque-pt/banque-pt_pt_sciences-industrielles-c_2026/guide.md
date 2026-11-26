@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** Le sujet étudie PATHFINDER, un robot d'inspection des réseaux d'eau potable conçu par ACWA Robotics. Le robot se compose de deux modules identiques (MASTER et SLAVE) reliés par une VERTEBRE qui porte quatre vérins électriques. Il avance en rampant : un module s'ancre sur la paroi en déployant trois bras en pantographe, tandis que la vertèbre pousse ou tire l'autre module.
@@ -140,7 +142,7 @@ $$\boxed{U_H = \frac{I\,B}{n\,q\,e}}$$
 
 À courant constant, la tension de Hall est **proportionnelle au champ**. Le capteur mesure le champ sans contact, même à vitesse nulle.
 
-**Détection d'un aimant.** Le rotor porte des aimants dont les pôles Nord et Sud alternent devant le capteur fixe. À chaque changement de pôle, le champ, et donc $U_H$, change de signe. Un comparateur à hystérésis (trigger de Schmitt) intégré au capteur transforme cette tension en signal logique : niveau haut devant un pôle, niveau bas devant l'autre. L'hystérésis supprime les rebonds dus au bruit au voisinage du seuil. Deux capteurs décalés d'un quart de pas polaire fournissent $A$ et $B$ en quadrature. Un troisième capteur, en regard d'un repère unique, fournit l'index.
+**Détection d'un aimant.** Le rotor porte des aimants dont les pôles Nord et Sud alternent devant le capteur fixe. À chaque changement de pôle, le champ, et donc $U_H$, change de signe. Un comparateur à hystérésis (trigger de Schmitt) intégré au capteur transforme cette tension en signal logique : niveau haut devant un pôle, niveau bas devant l'autre. L'hystérésis supprime les rebonds dus au bruit au voisinage du seuil. Deux capteurs décalés d’un quart de période spatiale du signal (un demi-pas entre pôles successifs) fournissent $A$ et $B$ en quadrature. Un troisième capteur, en regard d'un repère unique, fournit l'index.
 
 > [!PIEGE]
 > Ne confondez pas effet Hall et induction. Un capteur inductif ne voit que les variations du champ et ne fournit plus de signal à l'arrêt. Le capteur à effet Hall, lui, mesure le champ lui-même, même à l'arrêt.
@@ -379,6 +381,9 @@ Vérification : $I_c = 4 + 4 + 1 = 9$, le rang de la fermeture vaut 6, donc $h =
 
 #### Solution
 
+![Figure 4 — Coupes A–A et B–B du guidage. Les portées et les butées de mise en position sont tracées en rouge.](figures/q1-11-coupes-appuis.svg)
+
+
 Le guidage du coulisseau est réalisé par deux rails vissés sur la platine et deux patins vissés sur le coulisseau. Pour limiter l'hyperstatisme, on restreint et on hiérarchise les surfaces de mise en position. Les surfaces surlignées en rouge sont les suivantes.
 
 **Coupe A-A** (perpendiculaire aux rails) :
@@ -548,7 +553,7 @@ La cylindricité limite en même temps l'ovalisation, le défaut de rectitude de
 | Contraintes | les cylindres de mesure sont coaxiaux à C et les cercles limites perpendiculaires à C (orientation et position par rapport à C). La position axiale de la zone est libre. |
 | Conformité | la pièce tournant autour de C, un comparateur palpant la face (déplacement parallèle à l'axe) ne varie pas de plus de 0,02 mm, pour chaque rayon de palpage |
 
-![Figure 4 — battement axial 0,02 / C : contrôle au comparateur et zone de tolérance sur un cylindre de mesure](figures/q2-1-battement-axial.svg)
+![Figure 5 — battement axial 0,02 / C : contrôle au comparateur et zone de tolérance sur un cylindre de mesure](figures/q2-1-battement-axial.svg)
 
 Cette spécification garantit que l'appui axial du roulement est perpendiculaire à l'axe de la portée.
 
@@ -725,7 +730,7 @@ $$\boxed{m = \underbrace{\frac{\rho}{\sigma_{\max}^{2/3}}}_{f_1}\cdot\underbrace
 
 **Choix : un alliage de titane (Ti-6Al-4V) pour les métaux, et le PEEK pour les polymères.**
 
-- Le titane : meilleur indice parmi les matériaux admissibles, excellente tenue à la corrosion, compatibilité sanitaire, mise en œuvre par fusion laser sur lit de poudre.
+- Le titane : meilleur indice parmi les matériaux admissibles, tenue à la corrosion et mise en œuvre par fusion laser sur lit de poudre. La compatibilité sanitaire reste à établir pour la nuance et la pièce finie.
 - Le PEEK : indice proche de celui de l'aluminium pour une masse volumique environ deux fois plus faible, qualité contact alimentaire, mise en œuvre par dépôt de fil fondu.
 
 > [!PIEGE]
@@ -807,7 +812,7 @@ Restent l'**usinage dans la masse** et la **fabrication additive**, qui n'exigen
 
 **Dépôt de fil fondu (FDM).** Un fil thermoplastique est entraîné par des galets dans une buse chauffée. La matière extrudée est déposée en cordons (contour, puis remplissage), qui se soudent aux cordons voisins et à la couche inférieure. La buse remonte ensuite d'une couche (0,1 à 0,3 mm). Une seconde buse peut déposer un matériau de support, parfois soluble.
 
-![Figure 5 — principe de la fusion laser sur lit de poudre (a) et du dépôt de fil fondu (b)](figures/q2-10-lpbf-fdm.svg)
+![Figure 6 — principe de la fusion laser sur lit de poudre (a) et du dépôt de fil fondu (b)](figures/q2-10-lpbf-fdm.svg)
 
 Ces deux procédés ne sont pas des procédés d'assemblage : ils construisent une pièce unique, couche par couche, à partir d'une matière première non mise en forme (poudre ou fil). La fusion n'y soude pas deux pièces existantes, elle lie chaque couche à la précédente.
 
@@ -872,10 +877,10 @@ La hauteur est l'autre critère propre au lit de poudre, puisque le temps d'éta
 ### Question 2.14
 
 > [!INDICATION]
-> Vérifiez d'abord que les quatre couronnes tiennent sur le plateau pour chaque orientation : emprise totale et hauteur.
+> Comparez les emprises et les hauteurs du DR XII, puis vérifiez sur le DR X les dimensions en plan de la disposition retenue.
 
 > [!INDICATION]
-> Repérez une orientation dominée par une autre, puis arbitrez entre les deux qui restent, en restant cohérent avec le critère retenu en Q2.13.
+> Chiffrez le compromis entre le nombre de couches, le volume des supports et leur retrait.
 
 #### Solution
 
@@ -887,15 +892,11 @@ Bilan pour quatre couronnes :
 | Orientation 2 | **23,7** | 290 | 96,4 | 88,4 |
 | Orientation 3 | 88,0 | 159,2 | **1,2** | **3,6** |
 
-Le plateau offre 400 cm² et 200 mm de hauteur : les trois orientations sont admissibles. L'orientation 2 occupe toutefois 73 % du plateau.
+Les trois sommes d’emprises restent inférieures à 400 cm² et les trois hauteurs à 200 mm. Pour disposer effectivement quatre pièces, il faut aussi vérifier leurs largeurs dans les deux directions du plateau.
 
-- L'orientation 1 est **dominée** par la 3 : même hauteur, mais 27 fois plus de support.
-- L'orientation 2 donne la hauteur minimale (environ 790 couches de 30 µm, contre environ 2 930), au prix de 88 cm³ de supports en titane.
-- L'orientation 3 est presque autoportante (0,9 cm³ de support et 0,3 cm² supportés par pièce).
+**Une disposition réalisable est l’orientation 2, à plat.** Sur la vue de face du DR X, la distance de 40,4 mm entre le centre de la couronne et l’axe d’un trou sert d’étalon. En alignant une oreille sur l’axe vertical, on lit, oreilles comprises, environ 87 mm de largeur et 88 mm de hauteur dans cette vue. On place une couronne au centre de chacun des quatre carrés de 100 × 100 mm du plateau. L’espace disponible autour des contours est de l’ordre de 6 mm par côté. Les supports situés sous la couronne doivent rester dans ce carré. La hauteur de fabrication n’est que de 23,7 mm, environ 790 couches de 30 µm. Les surfaces fonctionnelles seront reprises en finition.
 
-**Orientation retenue : l'orientation 3**, les quatre couronnes disposées en carré (2 × 2) sur le plateau. Elle est cohérente avec le critère de Q2.13 : volume de support divisé par environ 25, presque aucun parachèvement, aucune surface dégradée. Pour une seule fabrication par an, le temps machine supplémentaire est un coût unique et prévisible. Réserve : avec si peu d'appui, l'ancrage contre les contraintes résiduelles est à vérifier, et quelques supports d'ancrage peuvent être nécessaires.
-
-L'orientation 2 se défend si l'on a retenu la hauteur en Q2.13 : les surfaces fonctionnelles étant reprises en usinage, la dégradation des faces supportées pèse moins.
+Ce choix demande 88,4 cm³ de support pour le lot. L’orientation 3 réduit ce volume à 3,6 cm³ et l’aire supportée à 1,2 cm², au prix d’environ 2 930 couches. Pour retenir cette variante sur un critère de consommation de titane, on vérifierait sur la projection inclinée l’implantation des quatre contours et de leurs ancrages. Le DR XII en donne les aires, sans coter les deux dimensions de ces contours.
 
 > [!JURY]
 > Dans une question d'arbitrage, la note dépend surtout de trois éléments : un critère explicite, une comparaison chiffrée et une conclusion cohérente avec ce qu'on a écrit à la question précédente.
@@ -923,7 +924,7 @@ L'orientation 2 se défend si l'on a retenu la hauteur en Q2.13 : les surfaces f
 - Les surfaces internes, les surfaces de guidage des biellettes et les interfaces du roulement sont **de révolution** : elles se tournent selon X et Z, en **travail d'enveloppe**. La pointe de l'outil décrit le profil de la surface dans le plan (X, Z) pendant que la pièce tourne, et la forme de l'outil n'est pas recopiée.
 - Les **trous axiaux Ø5** et les **trous radiaux taraudés M3** des oreilles, répartis à 120°, se réalisent avec des outils tournants et une indexation en C.
 
-Tout se fait sur une seule machine, en deux prises de pièce. Les entités liées par une spécification sont usinées dans la même mise en position, ce qui supprime les dispersions dues aux reprises. La denture intérieure n'appartient pas à ces deux phases : elle relève d'une opération spécifique (mortaisage par outil-pignon, brochage).
+Tout se fait sur une seule machine, en deux prises de pièce. La portée C et sa face d’appui sont usinées ensemble en phase 20. La localisation de C par rapport à A et B dépend également du positionnement de la pièce lors de la reprise. La denture intérieure n'appartient pas à ces deux phases : elle relève d'une opération spécifique (mortaisage par outil-pignon, brochage).
 
 > [!PIEGE]
 > Sur un tour, le troisième axe est l'axe C de la broche, pas un axe linéaire Y.
@@ -940,6 +941,9 @@ Tout se fait sur une seule machine, en deux prises de pièce. Les entités liée
 > Pour chaque outil tournant, l'axe de rotation est imposé par la direction du trou à percer.
 
 #### Solution
+
+![Figure 7 — Axes du mandrin, de la machine et des outils tournants dans les deux prises successives.](figures/q2-16-axes-deux-prises.svg)
+
 
 Sur chaque schéma du cahier réponse, on trace :
 
@@ -964,13 +968,16 @@ Entre les deux phases, la couronne est retournée. Les axes de la machine resten
 
 #### Solution
 
+![Figure 8 — Silhouettes des outils en position d’usinage et avances en vert pour les quatre opérations.](figures/q2-17-outils-trajectoires.svg)
+
+
 **Phase 10 : surfaces internes.** Outil à charioter-dresser intérieur (barre d'alésage), dessiné à l'intérieur de l'alésage, la plaquette tournée vers la paroi. Mouvement de coupe : rotation de la pièce. Avance : translation de l'outil suivant Z puis X. Trajectoire : entrée suivant $-Z$, chariotage intérieur, dressage des épaulements suivant X, dégagement radial, sortie suivant $+Z$.
 
 **Phase 10 : trous axiaux Ø5.** Foret à centrer puis foret Ø5, montés sur un outil tournant axial. Mouvement de coupe : rotation du foret, broche bloquée. Avance : translation de l'outil suivant $-Z$. Trajectoire : positionnement en X au rayon de 40,4 mm, perçage avec débourrage, retour, indexation de C de 120°, puis deux répétitions.
 
 **Phase 10 : trous radiaux M3.** Foret Ø2,5 puis taraud M3, montés sur un outil tournant radial. Mouvement de coupe : rotation de l'outil, broche bloquée. Avance suivant $-X$, synchronisée sur le pas de 0,5 mm par tour pour le taraudage, avec sortie en inversant la rotation. Indexation de C de 120° entre deux trous.
 
-**Phase 20 : interfaces du roulement.** Outil à charioter-dresser extérieur de finition (plaquette en losange à 35° ou 55°, petit rayon de bec), placé à l'extérieur de la pièce. Son angle de pointe et son angle de direction d'arête (supérieur à 90°) lui permettent de remonter l'épaulement sans que l'arête secondaire talonne. Mouvement de coupe : rotation de la pièce à vitesse de coupe constante. Avance : translation de l'outil suivant Z, puis X. Trajectoire : chariotage de la portée Ø63,5, congé, dressage de l'épaulement, en une seule passe continue. La cylindricité, la position et le battement sont ainsi obtenus dans la même mise en position.
+**Phase 20 : interfaces du roulement.** Outil à charioter-dresser extérieur de finition (plaquette en losange à 35° ou 55°, petit rayon de bec), placé à l'extérieur de la pièce. Son angle de pointe et son angle de direction d'arête (supérieur à 90°) lui permettent de remonter l'épaulement sans que l'arête secondaire talonne. Mouvement de coupe : rotation de la pièce à vitesse de coupe constante. Avance : translation de l'outil suivant Z, puis X. Trajectoire : chariotage de la portée Ø63,5, congé, dressage de l'épaulement, en une seule passe continue. La portée et sa face d’appui sont produites dans la même prise, ce qui favorise le respect du battement par rapport à C. La localisation de C par rapport à A et B dépend aussi de la reprise.
 
 > [!METHODE]
 > En tournage, le mouvement de coupe est porté par la pièce. Avec un outil tournant, il est porté par l'outil et la broche est bloquée. Il faut toujours préciser quel élément tourne.
@@ -997,15 +1004,21 @@ Une seule question, qui vaut à elle seule environ 40 % du temps. Le rapport 202
 
 **Architecture.** Le réducteur entraîne le manchon, guidé en rotation dans la pièce de jonction par un roulement. Le manchon est encastré sur la vis IGUS. L'écrou, encastré dans la tige, ne peut pas tourner, parce que la tige est arrêtée en rotation dans le fourreau. Il se translate donc de 12 mm par tour de vis. La tige porte la chape de liaison. L'effort axial suit le trajet chape, tige, écrou, vis, manchon, roulement, pièce de jonction. **Il ne doit pas traverser le réducteur.**
 
-![Figure 6 — coupe longitudinale de principe de la vertèbre, repères de la nomenclature (échelle non respectée)](figures/q3-1-coupe-principe-vertebre.svg)
+![Figure 9 — coupe longitudinale de principe de la vertèbre, repères de la nomenclature (échelle non respectée)](figures/q3-1-coupe-principe-vertebre.svg)
+
+![Figure 10 — Coupe d’assemblage de la vertèbre en position rentrée et coupes transversales de la clavette et du doigt. Original A3 à l’échelle 2:1.](figures/q3-1-assemblage-vertebre-a3.svg)
+
+La planche reprend l’axe et les interfaces du dessin réponse. Les repères entourés 1 à 6 désignent les fonctions de l’énoncé. Pour exploiter les cotes, imprimer l’original sur A3 paysage à 100 %. Le segment témoin de 25 mm réels mesure alors 50 mm sur le papier. [Ouvrir la planche A3 à sa taille d’origine](figures/q3-1-assemblage-vertebre-a3.svg)
+
+**Lecture de la coupe.** L’origine axiale $x=0$ est l’épaulement de l’arbre du réducteur. Les mesures sur la feuille donnent environ Ø6 pour l’arbre, 5,5 mm d’épaisseur dans la pièce de jonction avant création du bossage, et Ø17 pour l’alésage de chape. La longueur omise à la rupture, 60 mm, est un choix de conception. Les abscisses ci-dessous la rétablissent. La vis représentée mesure environ 190 mm et correspond à une longueur « 1XX » du DR III.
 
 **Nomenclature proposée.**
 
 | Repère | Désignation | Remarque |
 |---|---|---|
 | 1 | Arbre de sortie du réducteur Ø6, clavette parallèle 2 × 2 | fournis (dessin réponse) |
-| 2 | Manchon | inox, tourné, rainure mortaisée |
-| 3 | Roulement rigide à billes inox W 6001 (12 × 28 × 8) | W 61902 (15 × 28 × 7) acceptable |
+| 2 | Manchon | inox, tourné, fente fraisée |
+| 3 | Roulement rigide à billes inox W 6001 (12 × 28 × 8) | DR XIV, dimensions du roulement dessiné |
 | 4 | Anneau élastique pour arbre | arrêt de la bague intérieure |
 | 5 | Anneau élastique pour alésage, ou flasque vissé | arrêt de la bague extérieure |
 | 6 | Pièce de jonction | bâti, bossage pour loger le roulement |
@@ -1017,26 +1030,26 @@ Une seule question, qui vaut à elle seule environ 40 % du temps. Le rapport 202
 | 12 | Palier lisse polymère solidaire de la tige | emmanché |
 | 13 | Doigt d'arrêt en rotation (vis épaulée) | coulisse dans la lumière du fourreau |
 | 14 | Fourreau | lumière longitudinale fraisée |
-| 15 | Goupille élastique Ø3 | liaison tige-chape |
+| 15 | Goupille élastique Ø2 | liaison tige-chape |
 | 16 | Chape de liaison | fournie, alésage repris |
 
 **Fonction 1 : accouplement du manchon avec l'arbre du réducteur.**
 
 - **Centrage** : alésage **court** Ø6 H7 dans le manchon, sur l'arbre Ø6 g6, sur une longueur d'environ 0,8 d. On obtient une linéaire annulaire. Avec la rotule du roulement (fonction 2), elle forme un **pivot isostatique** du manchon : le réducteur n'est pas contraint, même si son arbre et l'alésage de la pièce de jonction sont légèrement désalignés.
-- **Transmission par obstacle** : l'arbre du réducteur porte déjà une **clavette parallèle**, visible sur le dessin réponse. On réalise dans le moyeu du manchon la **rainure de clavette correspondante par mortaisage**, un procédé autorisé par l'énoncé. La rainure débouche du côté du réducteur pour permettre le montage par coulissement, avec un jeu au fond de la rainure.
+- **Transmission par obstacle.** La clavette parallèle de l’arbre porte sur les deux flancs d’une fente de largeur 2 dans le manchon. Elle est ouverte radialement et débouche du côté réducteur. Le fraisage est accessible de l’extérieur. La coupe A–A montre la portion de la portée Ø6 qui assure le centrage.
 - **Pas d'arrêt axial** entre l'arbre et le manchon : la clavette parallèle laisse coulisser. C'est le roulement qui positionne le manchon axialement, si bien qu'aucun effort axial ne passe dans les roulements du réducteur.
-- **Tracé** : chanfrein d'entrée, dégagement en fond d'alésage ; la longueur de la rainure couvre celle de la clavette.
+- La fente couvre la longueur de la clavette. Au-delà de la portée courte, l’alésage est dégagé et laisse un jeu axial devant le bout de l’arbre.
 - **Pas de centrage sur le nez du motoréducteur** : le manchon tourne, la face avant et l'épaulement du réducteur sont fixes. Seul l'arbre de sortie centre le manchon.
 
 > [!PIEGE]
 > Percer l'arbre d'un réducteur du commerce pour y loger une goupille est une mauvaise idée : on modifie un composant acheté alors qu'une clavette est déjà prévue. Un centrage long assorti d'un arrêt axial rendrait de plus la liaison quasi encastrée, et le montage hyperstatique avec la rotule. L'effort axial de la vis passerait alors dans le réducteur.
 
 > [!JURY]
-> Rapport 2026 (p. 3), fonction 1 : parmi les erreurs, « de nombreuses solutions non usinables, ainsi que l'utilisation des surfaces à l'avant du moteur réducteur pour centrer le manchon ». Bilan : 14 % de bonnes réponses. Une rainure de clavette débouchante, réalisable en mortaisage, et un centrage sur l'arbre seul répondent à ces deux reproches.
+> Rapport 2026 (p. 3), fonction 1 : parmi les erreurs, « de nombreuses solutions non usinables, ainsi que l'utilisation des surfaces à l'avant du moteur réducteur pour centrer le manchon ». Bilan : 14 % de bonnes réponses. Dans la solution dessinée, la fente est ouverte et le centrage utilise l’arbre seul.
 
 **Fonction 2 : liaison rotule entre le manchon et la pièce de jonction.**
 
-- **Un seul roulement** rigide à billes en inox, arrêté axialement dans les deux sens, se modélise par une rotule. Choix : **W 6001 (12 × 28 × 8)**. La portée Ø12 laisse une paroi suffisante autour de l'alésage Ø6 et du taraudage de la vis. La série 60, à billes plus grosses que la série 619, reprend mieux la poussée axiale. Le **W 61902 (15 × 28 × 7)** convient aussi, avec un manchon plus gros. Le W 608 et le W 626 laisseraient une paroi trop mince autour du Ø6. Le W 61900 (Ø10) en laisserait une juste suffisante.
+- **Guidage.** On retient le roulement inox **W 6001, 12 × 28 × 8**, proposé au DR XIV. Dans le modèle cinématique, ce roulement unique immobilisé axialement constitue la rotule. Le bossage loge les 8 mm de la bague extérieure et le manchon conserve une paroi entre sa portée Ø12 et son alésage intérieur.
 - **Ajustements** : la bague intérieure tourne par rapport à la charge, donc elle est **serrée** sur le manchon (Ø12 k5). La bague extérieure est fixe par rapport à la charge, donc **glissante** dans la pièce de jonction (Ø28 H7).
 - **Arrêts axiaux** : il en faut quatre, car la vis pousse lorsque le vérin sort et tire lorsqu'il rentre. Avec moins d'arrêts, l'effort axial ne serait repris que dans un sens et la liaison ne serait plus une rotule.
   - bague intérieure : épaulement du manchon d'un côté, anneau élastique pour arbre de l'autre ;
@@ -1056,7 +1069,7 @@ Une seule question, qui vaut à elle seule environ 40 % du temps. Le rapport 202
 - **Mise en position axiale** : appui plan de l'épaulement de la vis contre la face frontale du manchon.
 - **Immobilisation par vissage** : le filetage M5 se visse dans un taraudage du manchon, et le serrage plaque l'épaulement. Comme le couple change de sens selon le sens de déplacement, on freine par un frein-filet, ou on ajoute une goupille de sécurité.
 - **Tracé** : gorge de dégagement entre la portée et le filet, chanfreins, fond de taraudage dégagé.
-- **Montage** : aucune vis rapportée. La vis se visse directement dans le manchon avant l'engagement sur l'arbre du réducteur, le manchon étant tenu par deux méplats. L'ensemble reste compact et démontable.
+- La vis se serre directement dans le manchon, accessible avant le montage de l’arbre du réducteur. Le taraudage M5 et le dégagement de fin de filet laissent l’épaulement venir en appui.
 
 > [!PIEGE]
 > Le diamètre nominal d'une vis filetée est celui des crêtes du filet. Une portée de centrage s'usine toujours à un diamètre inférieur au noyau.
@@ -1071,7 +1084,7 @@ Une seule question, qui vaut à elle seule environ 40 % du temps. Le rapport 202
 - **Appui** : la face de la collerette vient en appui plan sur la face d'extrémité de la tige.
 - **Immobilisation** : **trois vis CHC M3** à 120°, passant dans les trous de la collerette et vissées dans des taraudages de la tige. Le couple et l'effort axial sont transmis par l'appui plan, par l'adhérence sous serrage et par les vis.
 - L'écrou est une pièce d'usure : l'assemblage doit rester démontable, ce qui exclut le collage et le frettage.
-- **Montabilité et usinage** : l'écrou est fixé à la tige avant l'introduction de la vis et avant l'engagement de la tige dans le fourreau. Les têtes de vis restent alors accessibles par l'extrémité de la tige. L'alésage, la face d'appui et les taraudages débouchent tous sur cette extrémité et se réalisent en tournage et perçage, sans rainure ni forme non débouchante. La collerette est reprise au diamètre de la tige, pour une géométrie compacte.
+- **Montabilité et usinage** : l'écrou est fixé à la tige avant l'introduction de la vis et avant l'engagement de la tige dans le fourreau. Les têtes de vis restent alors accessibles par l'extrémité de la tige. L'alésage, la face d'appui et les taraudages débouchent tous sur cette extrémité et se réalisent en tournage et perçage, sans rainure ni forme non débouchante. La collerette est reprise à Ø26, son centrage sur la tête de tige est réalisé à Ø15 et les vis M3 sont réparties sur un cercle Ø20.
 
 > [!PIEGE]
 > Une rainure de clavette non débouchante dans un alésage ne se réalise ni en mortaisage ni en brochage. Avant de dessiner une forme, demandez-vous avec quel outil et par quel côté elle sera usinée, et dans quel ordre les pièces seront montées.
@@ -1082,35 +1095,42 @@ Une seule question, qui vaut à elle seule environ 40 % du temps. Le rapport 202
 **Fonction 5 : glissière entre la tige et le fourreau.**
 
 - **Guidage** par une **paire de paliers lisses** en polymère autolubrifiant, sans graisse et compatibles avec l'eau potable :
-  - le premier palier est **solidaire du fourreau**, emmanché à son extrémité, et guide le diamètre extérieur de la tige ;
+  - le palier fixe, emmanché dans la cartouche vissée au fourreau, guide le diamètre extérieur Ø19 de la tige ;
   - le second palier est **solidaire de la tige**, emmanché à son extrémité intérieure, et glisse dans l'alésage du fourreau.
   
-  Dans ce montage télescopique, la distance entre les deux paliers reste grande pendant toute la course, ce qui évite l'arc-boutement (longueur guidée supérieure à 1,5 fois le diamètre). Ajustements : paliers emmanchés serrés dans leurs logements, jeu de glissement H8/f7, surfaces de glissement rectifiées.
-- **Arrêt en rotation par obstacle** : un **doigt** (vis épaulée) fixé sur la tige coulisse dans une **lumière longitudinale fraisée** dans le fourreau. La longueur de la lumière vaut la course plus la largeur du doigt. Variante : rainure intérieure mortaisée et clavette vissée sur la tige. Cet arrêt reprend le couple que la vis transmet à l'écrou.
+  Le palier mobile glisse dans le fourreau Ø30. Le palier fixe guide la tige Ø19. Les portées de montage des paliers sont serrées et leurs surfaces de guidage conservent un jeu de glissement.
+- **Arrêt en rotation.** Le doigt à épaulement Ø4, vissé radialement dans la tête de tige, s’engage dans la lumière fraisée de largeur 4,2. Le couple se transmet par le flanc de la lumière. La coupe B–B montre l’engagement du doigt et son accès de l’extérieur.
 
 > [!METHODE]
 > Une glissière de grande course se réalise en général par deux paliers éloignés, dont l'un se déplace avec la pièce mobile, et un arrêt en rotation séparé. Les deux fonctions sont bien distinctes.
 
 **Fonction 6 : encastrement de la tige et de la chape de liaison.**
 
-- **Mise en position** : appui plan prépondérant (épaulement de la tige contre la face de la chape) et centrage court (Ø H7/g6). L'appui plan impose l'orientation de la chape, et le centrage court sa position radiale, sans hyperstatisme. **Un seul appui axial** : le fond de l'alésage de la chape est dégagé, avec du jeu devant l'extrémité de la tige.
-- **Immobilisation par goupille** : une **goupille élastique Ø3** traverse la chape et la tige perpendiculairement à l'axe, dans un perçage réalisé au montage. Elle supprime la rotation restante et transmet l'effort de traction en double cisaillement. En compression, l'effort passe par l'appui plan.
+- **Mise en position** : appui plan prépondérant (épaulement de la tige contre la face de la chape) et centrage court (Ø17 H7/g6). L'appui plan impose l'orientation de la chape, et le centrage court sa position radiale, sans hyperstatisme. **Un seul appui axial** : le fond de l'alésage de la chape est dégagé, avec du jeu devant l'extrémité de la tige.
+- **Immobilisation par goupille** : une **goupille élastique Ø2** traverse la chape et la tige perpendiculairement à l'axe, dans un perçage réalisé au montage. Elle supprime la rotation restante et transmet l'effort de traction en double cisaillement. En compression, l'effort passe par l'appui plan.
 - **Position de la goupille** : la vis pénètre dans la tige sur toute la course. La goupille est donc placée **au-delà de l'extrémité de la vis en position rentrée**, avec une marge de sécurité, pour ne jamais croiser la vis.
 - **Tracé** : distance suffisante entre le perçage et l'extrémité de la tige pour éviter l'arrachement, chanfreins d'entrée.
 
 > [!PIEGE]
 > Rapport 2026 (p. 4), fonction 6 : « Les goupilles ont souvent traversé la vis et les mises en position axiale comportaient trop d'appuis. » Tracez la vis dans sa position la plus engagée avant de placer la goupille, et ne gardez qu'une surface d'appui axial.
 
+**Montage et contrôle aux deux fins de course.** On engage le roulement sur le manchon jusqu’à son épaulement et on pose son anneau d’arbre. On introduit ce sous-ensemble dans la pièce de jonction jusqu’à la butée de la bague extérieure, puis on pose l’anneau d’alésage. La vis est accessible du côté opposé au réducteur. Le manchon peut être tenu par sa fente et la vis par deux écrous temporaires bloqués l’un contre l’autre.
+
+La collerette de l’écrou et le palier mobile sont fixés sur la tige hors du fourreau. On introduit cette tige par l’extrémité de chape et on engage l’écrou sur la vis. Le palier fixe, emmanché dans sa cartouche M32 × 1, est posé après le passage de la tête de tige. La lumière donne alors accès au doigt. La chape et sa goupille se montent en dernier.
+
+- À la rentrée, le bout de la vis est à $x=216{,}65$ et le centre de la goupille Ø2 à $x=219{,}4$. Le jeu axial minimal vaut $219{,}4-1-216{,}65=1{,}75$ mm. Le bout de tige est à $x=221{,}95$, pour un fond d’alésage de chape à $x=222{,}2$. L’épaulement constitue l’appui axial unique.
+- Après 100 mm de sortie, le palier mobile se termine à $x=162$ et le palier fixe commence à $x=193{,}2$. Ils restent séparés de 31,2 mm. L’écrou occupe alors $x=144{,}9$ à $156{,}15$, entièrement sur le filet utile. Le doigt Ø4 parcourt la lumière de largeur 4,2 mm dont les centres des bouts arrondis sont séparés de 100,2 mm.
+
 **Récapitulatif.**
 
 | Fonction | Mise en position | Maintien en position |
 |---|---|---|
-| Arbre du réducteur et manchon | centrage court Ø6 H7/g6 | clavette fournie, rainure mortaisée dans le manchon |
+| Arbre du réducteur et manchon | centrage court Ø6 H7/g6 | clavette fournie, fente ouverte fraisée dans le manchon |
 | Manchon et pièce de jonction | 1 roulement W 6001, Ø12 k5 et Ø28 H7 | 4 arrêts axiaux |
 | Manchon et vis | centrage Ø6 H7/h6 et appui plan | filetage M5 et frein-filet |
 | Écrou et tige | centrage H7 et appui plan sur la collerette | 3 vis CHC M3 |
 | Tige et fourreau | 2 paliers lisses (fourreau, tige) | doigt dans une lumière |
-| Tige et chape | appui plan (seul appui axial) et centrage court | goupille élastique Ø3, hors de la course de la vis |
+| Tige et chape | appui plan (seul appui axial) et centrage court | goupille élastique Ø2, hors de la course de la vis |
 
 > [!JURY]
 > Rapport 2026 (pp. 3-4) : chaque fonction est évaluée séparément. Taux de bonnes réponses : accouplement 14 %, rotule 19 %, encastrement manchon-vis 5 %, glissière 20 %, encastrement écrou-tige 2 %, goupille tige-chape 5 %. Les deux dernières fonctions ont été moins abordées, sans doute du fait de leur position en fin de sujet : 20 % et 25 % de copies ne les traitent pas. Il vaut mieux traiter les six fonctions, même sommairement, qu'en détailler trois, en vérifiant pour chacune l'usinage et le montage.

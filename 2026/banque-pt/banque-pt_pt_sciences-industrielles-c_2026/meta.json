@@ -25,6 +25,11 @@
       "legende": "graphe des liaisons de la fixation des vérins : une boucle 0-1-4-3-2-0 et une branche 4-5"
     },
     {
+      "fichier": "figures/q1-11-coupes-appuis.svg",
+      "question": "Q1.11",
+      "legende": "Coupes A–A et B–B du guidage. Les portées et les butées de mise en position sont tracées en rouge."
+    },
+    {
       "fichier": "figures/q2-1-battement-axial.svg",
       "question": "Q2.1",
       "legende": "battement axial 0,02 / C : contrôle au comparateur et zone de tolérance sur un cylindre de mesure"
@@ -35,9 +40,24 @@
       "legende": "principe de la fusion laser sur lit de poudre (a) et du dépôt de fil fondu (b)"
     },
     {
+      "fichier": "figures/q2-16-axes-deux-prises.svg",
+      "question": "Q2.16",
+      "legende": "Axes du mandrin, de la machine et des outils tournants dans les deux prises successives."
+    },
+    {
+      "fichier": "figures/q2-17-outils-trajectoires.svg",
+      "question": "Q2.17",
+      "legende": "Silhouettes des outils en position d’usinage et avances en vert pour les quatre opérations."
+    },
+    {
       "fichier": "figures/q3-1-coupe-principe-vertebre.svg",
       "question": "Q3.1",
       "legende": "coupe longitudinale de principe de la vertèbre, repères de la nomenclature (échelle non respectée)"
+    },
+    {
+      "fichier": "figures/q3-1-assemblage-vertebre-a3.svg",
+      "question": "Q3.1",
+      "legende": "Assemblage de la vertèbre au format A3 paysage, échelle 2:1, avec coupes transversales, arrêts axiaux et contrôle de la course."
     }
   ],
   "contributions": [
@@ -73,6 +93,18 @@
       "perimetre": "Relecture des 32 questions sur le robot de canalisation à partir du sujet, de ses dessins ressources et du rapport. Vérification de la durée des branches synchronisées du cycle, des angles de rotation relatifs et de l’incertitude du temps de déploiement. Relecture des choix d’industrialisation et de la coupe de la vertèbre.",
       "agent": "astra_info_si",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture des deux éditions, des 14 documents ressources, du cahier, des fiches GPS et du dessin A3 sur le robot civil PATHFINDER. Restitution des deux coupes et des surfaces de mise en position en rouge, des deux prises du tour et des silhouettes et trajectoires des outils. Vérification géométrique de la disposition de quatre couronnes sur le plateau. Confrontation des six fonctions de la planche d’assemblage aux contours imposés, au catalogue de roulements et au dégagement axial en bout de vis. Contrôle du papier A3, de l’étalon et des deux positions extrêmes de la course de 100 mm."
     }
   ],
   "provenance": {
@@ -97,6 +129,53 @@
   "date_revision": "2026-11-24",
   "sources": {
     "sujet": "https://www.banquept.fr/documents/2026/si_c_2026_pt.pdf",
-    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2026/rapport_si_c_ecrit_2026.pdf"
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2026/rapport_si_c_ecrit_2026.pdf",
+    "sujet_sha256": "9a1b8234e013b9d7532963673cb5ab421d5ac79d44ab803fd199fae4baa51f69",
+    "rapport_sha256": "920a9433d10ab59fe23884079661ea365beb2958ffd0e4859803ac733b6bb205"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "1.8",
+      "1.9",
+      "1.10",
+      "1.11",
+      "1.12",
+      "1.13",
+      "1.14",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7",
+      "2.8",
+      "2.9",
+      "2.10",
+      "2.11",
+      "2.12",
+      "2.13",
+      "2.14",
+      "2.15",
+      "2.16",
+      "2.17",
+      "3.1"
+    ],
+    "precision": "Le fascicule 058 pose 14 questions en partie 1, 17 en partie 2 et une question de conception à six fonctions en partie 3. Le cahier couvre les pages PDF 27–43. Le dessin-réponse est au verso de la feuille A3 (pages 44–45). La coupe de principe est complétée par une proposition originale au format physique 420 × 297 mm, imprimable à 100 % à l’échelle 2:1.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "9a1b8234e013b9d7532963673cb5ab421d5ac79d44ab803fd199fae4baa51f69",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Relecture des deux éditions, des 14 documents ressources, du cahier, des fiches GPS et du dessin A3 sur le robot civil PATHFINDER. Restitution des deux coupes et des surfaces de mise en position en rouge, des deux prises du tour et des silhouettes et trajectoires des outils. Vérification géométrique de la disposition de quatre couronnes sur le plateau. Confrontation des six fonctions de la planche d’assemblage aux contours imposés, au catalogue de roulements et au dégagement axial en bout de vis. Contrôle du papier A3, de l’étalon et des deux positions extrêmes de la course de 100 mm.",
+      "commit_redaction_anterieure": "267a791fb6662eae79394806799e59ae9b7edc53"
+    }
   }
 }
