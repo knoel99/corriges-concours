@@ -729,6 +729,7 @@
 | 2024 | BEL | BL | Anglais | [md](2024/bel/bel_bl_anglais_2024/brut.md) | [md](2024/bel/bel_bl_anglais_2024/guide.md) |
 | 2024 | BEL | BL | Anglais (oral) — 10 juin | [md](2024/bel/bel_bl_anglais-oral-10-juin_2024/brut.md) | [md](2024/bel/bel_bl_anglais-oral-10-juin_2024/guide.md) |
 | 2024 | BEL | BL | Anglais (oral) — 11 juin | [md](2024/bel/bel_bl_anglais-oral-11-juin_2024/brut.md) | [md](2024/bel/bel_bl_anglais-oral-11-juin_2024/guide.md) |
+| 2024 | BEL | BL | Anglais (oral) — 12 juin | [md](2024/bel/bel_bl_anglais-oral-12-juin_2024/brut.md) | [md](2024/bel/bel_bl_anglais-oral-12-juin_2024/guide.md) |
 | 2025 | BEL | BL | Anglais | [md](2025/bel/bel_bl_anglais_2025/brut.md) | [md](2025/bel/bel_bl_anglais_2025/guide.md) |
 | 2025 | BEL | BL | Arabe | [md](2025/bel/bel_bl_arabe_2025/brut.md) | [md](2025/bel/bel_bl_arabe_2025/guide.md) |
 | 2025 | BEL | BL | Chinois | [md](2025/bel/bel_bl_chinois_2025/brut.md) | [md](2025/bel/bel_bl_chinois_2025/guide.md) |

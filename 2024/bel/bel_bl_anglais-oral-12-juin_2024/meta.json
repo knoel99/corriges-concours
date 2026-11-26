@@ -1,0 +1,103 @@
+{
+  "slug": "bel_bl_anglais-oral-12-juin_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Anglais (oral) — 12 juin",
+    "annee": 2024
+  },
+  "type_epreuve": "oral",
+  "questions": 4,
+  "redaction": "IA, corrigé non officiel",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/bl_sujets_oraux_anglais_12062024.pdf",
+    "sha256_sujet": "27bd3bdd1d3c1d436551241b51e4f9b9a14d277ca77c120b6e1370b9b866e210",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_oral_anglais_epreuve_commune.pdf",
+    "sha256_rapport_jury": "dd11c4519d2d3c9e7e39d9b9856c91626ac0a68e14e0395c4f84562905be2fa4",
+    "calendrier": "https://www.ens.psl.eu/sujets-des-epreuves-orales-du-concours-bl-session-2024"
+  },
+  "figures": [
+    {
+      "fichier": "figures/reading-the-evidence.svg",
+      "question": "4. Gordon Brown",
+      "legende": "Brown juxtaposes survey responses framed in different terms. The percentages are claims made in the speech."
+    }
+  ],
+  "documents_du_fascicule": [
+    {
+      "auteur": "Sarah Palin",
+      "titre": "Speech at the Republican National Convention",
+      "date": "3 September 2008",
+      "pages": [
+        1
+      ]
+    },
+    {
+      "auteur": "Theodore Roosevelt",
+      "titre": "Navy Address, Naval War College, Newport, Rhode Island",
+      "date": "2 June 1897",
+      "pages": [
+        2
+      ]
+    },
+    {
+      "auteur": "Labour Party",
+      "titre": "Labour Manifesto",
+      "date": "1945",
+      "pages": [
+        3
+      ]
+    },
+    {
+      "auteur": "Gordon Brown",
+      "titre": "Speech at a seminar on Britishness, Commonwealth Club, London",
+      "date": "27 February 2007",
+      "pages": [
+        4
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1. Sarah Palin",
+      "2. Theodore Roosevelt",
+      "3. Labour Party",
+      "4. Gordon Brown"
+    ],
+    "pages_du_sujet": 4,
+    "pages_pdf_des_documents": {
+      "1. Sarah Palin": [
+        1
+      ],
+      "2. Theodore Roosevelt": [
+        2
+      ],
+      "3. Labour Party": [
+        3
+      ],
+      "4. Gordon Brown": [
+        4
+      ]
+    },
+    "precision": "Tous les extraits sont traités séparément en anglais. Les pages de continuation sont rattachées au document dont elles prolongent le texte."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Attributions et pages pointées sur le sujet et sur l’annexe du rapport. Commentaires en anglais, lectures rapprochées, préparation guidée et échanges de reprise pour chaque extrait, figure interprétative.",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "agent": "rennes_oraux_economie",
+      "session": "rennes_oraux_economie"
+    }
+  ]
+}
