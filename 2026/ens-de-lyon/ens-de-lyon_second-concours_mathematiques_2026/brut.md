@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
 L’épreuve de trois heures de la filière universitaire comporte un exercice sur des endomorphismes complexes et un problème sur les sommes signées de vecteurs. La dernière question présente une contradiction dans le choix des coefficients. Le corrigé traite la formulation imprimée et la variante cohérente avec le reste du problème. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/uploads/2026/08/26_2cc_sujet_math.pdf)
@@ -113,6 +115,8 @@ $V$ est fermé car c’est un sous-espace de dimension finie. L’ensemble $\Sig
 
 Pour $j$ dans l’ensemble $J$ des coordonnées saturées de $x$, $z_j=0$, donc ces coordonnées restent à $\pm1$. Pour chaque $j\notin J$ tel que $z_j\ne0$, le nombre $(1-|x_j|)/|z_j|$ est strictement positif. Prendre $\delta$ égal au minimum de ces nombres s’il en existe, et à $1$ sinon. Pour $|t|\le\delta$, l’inégalité triangulaire donne $|x_j+tz_j|\le1$ pour tout $j$ et $x+tz\in V$ par linéarité. Ainsi $x+tz\in\Sigma$.
 
+Dans la définition imprimée de $J$, la variable $j$ désigne un indice de coordonnée. Il faut donc lire $J=\{j\in\{1,\ldots,n\}: |x_j|=1\}$. Cette lecture donne aussi un sens au cardinal de $J$ utilisé en question 8.
+
 ### Question 7c
 
 La maximalité de $x$ donne $\langle x\pm\delta z,y\rangle\le\langle x,y\rangle$. Les deux inégalités imposent $\delta\langle z,y\rangle\le0$ et $-\delta\langle z,y\rangle\le0$. Comme $\delta>0$, il vient $\langle y,z\rangle=0$.
@@ -166,5 +170,7 @@ Avec les signes $\{-1,1\}$ des questions 11 à 13, considérons les fonctions en
 Fixons maintenant une suite de signes $(\varepsilon_k)$. Pour chaque $N$, l’un des intervalles dyadiques réalise exactement $(\varepsilon_0,\ldots,\varepsilon_N)$. Sur cet intervalle, les $N+1$ termes de la somme partielle $S_N=\sum_{k=0}^N\varepsilon_k f_k$ sont positifs. En combinant cette observation avec l’inégalité triangulaire, on obtient
 $$\|S_N\|_\infty=\sum_{k=0}^N\frac1{k+1}\longrightarrow+\infty.$$
 Toute suite uniformément convergente de fonctions bornées est bornée pour la norme uniforme. La série ne converge donc pas en norme uniforme, quel que soit le choix des signes.
+
+Par exemple, si les trois premiers signes sont $(+1,-1,+1)$, les points de $[1/4,3/8[$ portent précisément ce triplet. En ces points, la troisième somme partielle vaut $1+1/2+1/3=11/6$. À chaque rang, le point qui réalise la norme peut dépendre du choix des signes et du rang.
 
 ![Figure 6 — Sur les huit intervalles dyadiques, les trois premières fonctions réalisent les huit triplets de signes.](figures/signes-dyadiques.svg)

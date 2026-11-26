@@ -10,7 +10,10 @@
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/08/26_2cc_sujet_math.pdf",
-    "page_officielle": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/"
+    "page_officielle": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/",
+    "sujet_sha256": "7d20d833bc09092e279caa4731300e57883640694362201d4d8a353fc9fde807",
+    "index_banque": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/",
+    "index_banque_sha256": "36243e7203175ea8fc3f1b47cf04cfaeff13de5e6fe10463bd7d894a9fca4bfe"
   },
   "figures": [
     {
@@ -44,7 +47,7 @@
       "legende": "Sur les huit intervalles dyadiques, les trois premières fonctions réalisent les huit triplets de signes."
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "revision": {
     "date": "2026-11-24",
     "modele": "OpenAI Codex",
@@ -100,6 +103,62 @@
       "tour": 2,
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Vérification des cinq subdivisions de l’exercice et des vingt-cinq du problème sur le sujet officiel. Contrôle des espaces propres appariés, de la limite au seuil de concentration, de l’arrondi par le rang et des blocs de Cauchy. Les alphabets imprimé et corrigé de la question 14 sont distingués, avec un contrôle exhaustif des signes dyadiques de longueurs 1 à 9. L’index institutionnel fournit un rapport oral uniquement.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
-  ]
+  ],
+  "questions_principales": 17,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "E.1",
+      "E.2a",
+      "E.2b",
+      "E.3a",
+      "E.3b",
+      "P.1a",
+      "P.1b",
+      "P.2a",
+      "P.2b",
+      "P.3a",
+      "P.3b",
+      "P.3c",
+      "P.4a",
+      "P.4b",
+      "P.4c",
+      "P.5a",
+      "P.5b",
+      "P.6",
+      "P.7a",
+      "P.7b",
+      "P.7c",
+      "P.8a",
+      "P.8b",
+      "P.8c",
+      "P.9",
+      "P.10",
+      "P.11",
+      "P.12",
+      "P.13",
+      "P.14"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "precision": "Vérification des cinq subdivisions de l’exercice et des vingt-cinq du problème sur le sujet officiel. Contrôle des espaces propres appariés, de la limite au seuil de concentration, de l’arrondi par le rang et des blocs de Cauchy. Les alphabets imprimé et corrigé de la question 14 sont distingués, avec un contrôle exhaustif des signes dyadiques de longueurs 1 à 9. L’index institutionnel fournit un rapport oral uniquement.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "relecture_corrige",
+      "perimetre": "Vérification des cinq subdivisions de l’exercice et des vingt-cinq du problème sur le sujet officiel. Contrôle des espaces propres appariés, de la limite au seuil de concentration, de l’arrondi par le rang et des blocs de Cauchy. Les alphabets imprimé et corrigé de la question 14 sont distingués, avec un contrôle exhaustif des signes dyadiques de longueurs 1 à 9. L’index institutionnel fournit un rapport oral uniquement.",
+      "sha256_sujet_controle": "7d20d833bc09092e279caa4731300e57883640694362201d4d8a353fc9fde807"
+    }
+  }
 }
