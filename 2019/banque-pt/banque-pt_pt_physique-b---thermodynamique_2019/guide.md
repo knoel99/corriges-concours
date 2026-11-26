@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Sujet et document réponse](https://www.banquept.fr/documents/2019/ph_b_th_2019_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2019/rapport_phys_b_ecrit_2019.pdf) · [Coefficients de la session](https://www.banquept.fr/documents/livret/2019/Livret_PT_2019.pdf#page=12)
 
 **Le réfrigérateur et le combiné réfrigérateur-congélateur.** Les puissances et transferts sont orientés explicitement dans les bilans. Les valeurs relevées graphiquement sont arrondies à la précision des diagrammes du sujet.
@@ -54,7 +56,7 @@ Sur la figure 2a, situer 1 sur l’isobare d’évaporation à 10 °C, puis 2s s
 
 Relever la grandeur sur l’axe ou sur l’isocourbe qui la représente.
 
-Les valeurs centrales lues ci-dessous gardent une décimale intermédiaire lorsque c’est utile pour des différences. Les températures de surchauffe et de sous-refroidissement sont imposées. Les deux dernières colonnes seront utilisées pour le combiné.
+Les valeurs centrales lues ci-dessous gardent une décimale intermédiaire lorsque c’est utile pour des différences. Pour les bilans à deux chiffres significatifs, on arrondit après avoir formé les différences. Les températures de surchauffe et de sous-refroidissement sont imposées. Les deux dernières colonnes seront utilisées pour le combiné.
 
 | Point | Pression (bar) | Température (°C) | État du fluide | Enthalpie (kJ/kg) |
 |:--|--:|--:|:--|--:|
@@ -230,7 +232,7 @@ Les deux échangeurs sont en série et sont donc traversés par le même débit 
 
 Repérer le point 2′ déjà imprimé avant de fermer la boucle à haute pression.
 
-Sur la figure 2a, suivre 3→4 (détente à 242 kJ/kg), 4→4′ (évaporation partielle à 2,9 bar), 4′→4″ (détente à 322 kJ/kg), 4″→1′ (évaporation et surchauffe à 1,3 bar), 1′→2′ (compression), puis 2′→3 à haute pression. L’état 2′ imposé correspond à 10 bar, 80 °C et 465 kJ/kg. Le diagramme réunit les trois tracés demandés.
+Sur la figure 2a, suivre 3→4 (détente à 242 kJ/kg), 4→4′ (évaporation partielle à 2,9 bar), 4′→4″ (détente à 322 kJ/kg), 4″→1′ (évaporation et surchauffe à 1,3 bar), 1′→2′ (compression), puis 2′→3 à haute pression. L’état 2′ imposé correspond à 10 bar, 80 °C et 465 kJ/kg. Le diagramme réunit les trois tracés demandés. Les branches confondues gardent les mêmes coordonnées, et la seconde détente verticale distingue le combiné.
 
 ![Figure — Cycles de la figure 2a et trajet dans le combiné en trois couleurs](figures/combine.svg)
 
@@ -290,7 +292,7 @@ Lire l’ordonnée à l’origine, puis l’asymptote sur le premier graphique d
 
 L’argument du logarithme doit être positif au cours du réchauffement.
 
-La solution précédente donne $Y=\ln[(T-T_c)/(T_f-T_c)]=-\lambda t/C$. Le libellé placé à gauche de l’axe du sujet inverse le signe du dénominateur. La formule du texte au-dessus du graphe est correcte. La droite passe par $(0,0)$ et environ $(52{,}5\ {\rm h},-5)$. Sa pente vaut $-0{,}095$ h⁻¹, soit $-2{,}65\times10^{-5}$ s⁻¹. Avec $C=3\times10^5$ J/K, cela donne $\lambda\simeq7{,}9$ W/K et $\tau\simeq10{,}5$ h.
+La solution précédente donne $Y=\ln[(T-T_c)/(T_f-T_c)]=-\lambda t/C$. Le libellé placé à gauche de l’axe du sujet inverse le signe du dénominateur. La formule du texte au-dessus du graphe est correcte. Le rapport des deux différences négatives vaut un à l’origine. La droite passe par $(0,0)$ et environ $(52{,}5\ {\rm h},-5)$. Sa pente vaut $-0{,}095$ h⁻¹, soit $-2{,}65\times10^{-5}$ s⁻¹. Avec $C=3\times10^5$ J/K, cela donne $\lambda\simeq7{,}9$ W/K et $\tau\simeq10{,}5$ h.
 
 ![Figure — Réchauffement à l’arrêt et lecture de la pente du logarithme](figures/fuites.svg)
 
