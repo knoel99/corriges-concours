@@ -1,0 +1,107 @@
+{
+  "slug": "bel_bl_anglais-oral-11-juin_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Anglais (oral) — 11 juin",
+    "annee": 2024
+  },
+  "type_epreuve": "oral",
+  "questions": 4,
+  "redaction": "IA, corrigé non officiel",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/bl_sujets_oraux_anglais_11062024.pdf",
+    "sha256_sujet": "e6347861538588f85469aa6302553bab7aa3aa43c825fba717cdcce077edb3bf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_oral_anglais_epreuve_commune.pdf",
+    "sha256_rapport_jury": "dd11c4519d2d3c9e7e39d9b9856c91626ac0a68e14e0395c4f84562905be2fa4",
+    "calendrier": "https://www.ens.psl.eu/sujets-des-epreuves-orales-du-concours-bl-session-2024"
+  },
+  "figures": [
+    {
+      "fichier": "figures/reading-the-evidence.svg",
+      "question": "1. James Madison",
+      "legende": "Madison’s two institutional divisions and his additional social answer to majority domination."
+    }
+  ],
+  "documents_du_fascicule": [
+    {
+      "auteur": "James Madison",
+      "titre": "Federalist No. 51",
+      "date": "1788",
+      "pages": [
+        1
+      ]
+    },
+    {
+      "auteur": "George W. Bush",
+      "titre": "President Bush’s address in Atlanta, Ga.",
+      "date": "8 November 2001",
+      "pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "auteur": "George III",
+      "titre": "Letter written in the 1780s (precise year unknown)",
+      "date": "1780s",
+      "pages": [
+        4
+      ]
+    },
+    {
+      "auteur": "Harold Macmillan",
+      "titre": "Speech before the South African Parliament",
+      "date": "3 February 1960",
+      "pages": [
+        5,
+        6
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1. James Madison",
+      "2. George W. Bush",
+      "3. George III",
+      "4. Harold Macmillan"
+    ],
+    "pages_du_sujet": 6,
+    "pages_pdf_des_documents": {
+      "1. James Madison": [
+        1
+      ],
+      "2. George W. Bush": [
+        2,
+        3
+      ],
+      "3. George III": [
+        4
+      ],
+      "4. Harold Macmillan": [
+        5,
+        6
+      ]
+    },
+    "precision": "Tous les extraits sont traités séparément en anglais. Les pages de continuation sont rattachées au document dont elles prolongent le texte."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Attributions et pages pointées sur le sujet et sur l’annexe du rapport. Commentaires en anglais, lectures rapprochées, préparation guidée et échanges de reprise pour chaque extrait, figure interprétative.",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "agent": "rennes_oraux_economie",
+      "session": "rennes_oraux_economie"
+    }
+  ]
+}
