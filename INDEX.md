@@ -732,6 +732,7 @@
 | 2025 | BEL | BL | Philosophie | [md](2025/bel/bel_bl_philosophie_2025/brut.md) | [md](2025/bel/bel_bl_philosophie_2025/guide.md) |
 | 2025 | BEL | BL | Philosophie (oral tronc commun, 20 juin) | [md](2025/bel/bel_bl_philosophie-oral-tronc-commun-20-juin_2025/brut.md) | [md](2025/bel/bel_bl_philosophie-oral-tronc-commun-20-juin_2025/guide.md) |
 | 2025 | BEL | BL | Philosophie (oral tronc commun, 19 juin) | [md](2025/bel/bel_bl_philosophie-oral-tronc-commun-19-juin_2025/brut.md) | [md](2025/bel/bel_bl_philosophie-oral-tronc-commun-19-juin_2025/guide.md) |
+| 2025 | BEL | BL | Philosophie (oral tronc commun, 18 juin) | [md](2025/bel/bel_bl_philosophie-oral-tronc-commun-18-juin_2025/brut.md) | [md](2025/bel/bel_bl_philosophie-oral-tronc-commun-18-juin_2025/guide.md) |
 | 2026 | BEL | BL | Philosophie | [md](2026/bel/bel_bl_philosophie_2026/brut.md) | [md](2026/bel/bel_bl_philosophie_2026/guide.md) |
 | 2026 | BEL | BL | Philosophie (oral tronc commun, 16 juin) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-16-juin_2026/brut.md) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-16-juin_2026/guide.md) |
 | 2026 | BEL | BL | Philosophie (oral tronc commun, 17 juin) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-17-juin_2026/brut.md) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-17-juin_2026/guide.md) |

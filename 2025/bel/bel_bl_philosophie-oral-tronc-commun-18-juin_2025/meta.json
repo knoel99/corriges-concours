@@ -1,0 +1,188 @@
+{
+  "slug": "bel_bl_philosophie-oral-tronc-commun-18-juin_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Philosophie (oral tronc commun, 18 juin)",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie (oral tronc commun, 18 juin)",
+  "questions": 0,
+  "tirages": 12,
+  "sujets": 24,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/philosophie_1_18_juin_-.pdf",
+    "sha256_sujet": "04133c63a69336b1031eb85d6ca85a8ae61cb8326639d1844d8ee8bfdae220c6",
+    "pages_sujet": "Feuillet daté, page unique.",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_philosophie.pdf",
+    "sha256_rapport_jury": "f43dbd726e8d925d3dbf694566dff8fd1eab8da6e6e7a6d5b5a75f59a5470d14",
+    "pages_rapport": "1 pour les modalités, 2–5 pour les observations et 5–6 pour les 61 paires annuelles."
+  },
+  "billets": [
+    {
+      "numero": 1,
+      "sujets": [
+        "Le refoulement",
+        "Y-a-t-il de l’inexprimable ?"
+      ],
+      "option_choisie": 2,
+      "sujet_choisi": "Y-a-t-il de l’inexprimable ?"
+    },
+    {
+      "numero": 2,
+      "sujets": [
+        "La beauté des ruines",
+        "À quoi tient la force des religions ?"
+      ],
+      "option_choisie": 2,
+      "sujet_choisi": "À quoi tient la force des religions ?"
+    },
+    {
+      "numero": 3,
+      "sujets": [
+        "L’honneur",
+        "Qu’est-ce qu’un travail bien fait ?"
+      ],
+      "option_choisie": 1,
+      "sujet_choisi": "L’honneur"
+    },
+    {
+      "numero": 4,
+      "sujets": [
+        "L’art et la vie",
+        "Choisir, est-ce renoncer ?"
+      ],
+      "option_choisie": 1,
+      "sujet_choisi": "L’art et la vie"
+    },
+    {
+      "numero": 5,
+      "sujets": [
+        "Folie et société",
+        "Qu’est-ce qui est hors la loi ?"
+      ],
+      "option_choisie": 1,
+      "sujet_choisi": "Folie et société"
+    },
+    {
+      "numero": 6,
+      "sujets": [
+        "L’idée d’histoire universelle",
+        "De quoi sommes-nous prisonniers ?"
+      ],
+      "option_choisie": 1,
+      "sujet_choisi": "L’idée d’histoire universelle"
+    },
+    {
+      "numero": 7,
+      "sujets": [
+        "La résignation",
+        "Y-a-t-il un travail de la pensée ?"
+      ],
+      "option_choisie": 1,
+      "sujet_choisi": "La résignation"
+    },
+    {
+      "numero": 8,
+      "sujets": [
+        "Le besoin",
+        "À quoi servent les fictions ?"
+      ],
+      "option_choisie": 2,
+      "sujet_choisi": "À quoi servent les fictions ?"
+    },
+    {
+      "numero": 9,
+      "sujets": [
+        "Le risque",
+        "Apprend-on à voir ?"
+      ],
+      "option_choisie": 2,
+      "sujet_choisi": "Apprend-on à voir ?"
+    },
+    {
+      "numero": 10,
+      "sujets": [
+        "Discuter",
+        "Avons-nous des devoirs envers les morts ?"
+      ],
+      "option_choisie": 1,
+      "sujet_choisi": "Discuter"
+    },
+    {
+      "numero": 11,
+      "sujets": [
+        "Le mensonge",
+        "Que peut la musique ?"
+      ],
+      "option_choisie": 2,
+      "sujet_choisi": "Que peut la musique ?"
+    },
+    {
+      "numero": 12,
+      "sujets": [
+        "La solitude",
+        "À quoi bon penser la fin du monde ?"
+      ],
+      "option_choisie": 1,
+      "sujet_choisi": "La solitude"
+    }
+  ],
+  "figures": [
+    {
+      "fichier": "figures/billet-4-option-1.svg",
+      "question": "L’art et la vie",
+      "legende": "Trois repères pour examiner art et vie."
+    },
+    {
+      "fichier": "figures/billet-9-option-2.svg",
+      "question": "Apprend-on à voir ?",
+      "legende": "Trois repères pour examiner apprendre à voir."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "x_maths_b_anciennes",
+      "modifications": true,
+      "perimetre": "Rédaction des propositions argumentées et des relances individuelles pour les 24 sujets et de deux figures. Contrôle visuel des 12 paires et du gras, confrontation des intitulés à la liste du rapport 2025."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Le refoulement",
+      "Y-a-t-il de l’inexprimable ?",
+      "La beauté des ruines",
+      "À quoi tient la force des religions ?",
+      "L’honneur",
+      "Qu’est-ce qu’un travail bien fait ?",
+      "L’art et la vie",
+      "Choisir, est-ce renoncer ?",
+      "Folie et société",
+      "Qu’est-ce qui est hors la loi ?",
+      "L’idée d’histoire universelle",
+      "De quoi sommes-nous prisonniers ?",
+      "La résignation",
+      "Y-a-t-il un travail de la pensée ?",
+      "Le besoin",
+      "À quoi servent les fictions ?",
+      "Le risque",
+      "Apprend-on à voir ?",
+      "Discuter",
+      "Avons-nous des devoirs envers les morts ?",
+      "Le mensonge",
+      "Que peut la musique ?",
+      "La solitude",
+      "À quoi bon penser la fin du monde ?"
+    ],
+    "precision": "Intégralité du feuillet du 18 juin exclusivement. Les deux sujets de chacun des 12 billets y sont développés. Le rapport annuel compte 61 paires, dont 11 supplémentaires après les cinq feuillets datés."
+  }
+}
