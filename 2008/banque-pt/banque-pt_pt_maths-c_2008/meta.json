@@ -1,0 +1,291 @@
+{
+  "slug": "banque-pt_pt_maths-c_2008",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths C",
+    "intitule": "Épreuve de Mathématiques C",
+    "annee": 2008,
+    "duree": "4 h",
+    "modalite": "écrit",
+    "code_garde": "G78U"
+  },
+  "questions": 22,
+  "redaction": "Proposition pédagogique non officielle, rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2008/math_c_2008.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2008/rapport_math_c_ecrit_2008.pdf",
+    "livret": "https://www.banquept.fr/documents/livret/2008/Livret_PT_2008.pdf",
+    "sujet_sha256": "9d714813e6cac1cc1bf777bb7e3f6719be0662c539e02d1fe2d582a891a0f41a",
+    "rapport_jury_sha256": "d59e6aa9f27f98c5cc197d85f1d844d782d9ef8b12d6b963df97babd1521f1b5",
+    "observation_rapport": "Les quatre parties du sujet sont confrontées au rapport, notamment les dominations et les changements de variables."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2008/math_c_2008.pdf",
+      "sha256": "9d714813e6cac1cc1bf777bb7e3f6719be0662c539e02d1fe2d582a891a0f41a",
+      "pages": 4,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "829e6b098180a678b89ae23b2f689b3ac80ce33ac15f12e55b8dc319cf51a993"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "c5b69dc9ceec10f2ad4f33624c4dcf10760c31a01ba21d3f2496c248fa906d78"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "81e1b74143b37c2379af4fc695632cdd76eb3d68635bb68433485ceb8434d39d"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "554b9f0ae69f92fbe4d32781e785a75d699eda0271c9234573051b3a4a6b4baa"
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2008/rapport_math_c_ecrit_2008.pdf",
+      "sha256": "d59e6aa9f27f98c5cc197d85f1d844d782d9ef8b12d6b963df97babd1521f1b5",
+      "pages": 5,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "15a5a2c748aefb034d4cd9290ee560fc2cda7f87dc980dc46a1448623267900a"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "ff7357545ac216f4e0766b317de11e68129e009622f6176f9ab94f80c6df0560"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "3c8002f3f8bda16dc26468bba26ad0a4087bc804547b64110a1e819344d18d71"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "a16a7ba2b39ab61e208ac64bf88d3d8f58f475e4b60aa88e9c6f921a221bf5e0"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "c78c37410693aa58206039aacef237f3d8b1489db4effb296633931558da4047"
+        }
+      ]
+    },
+    "livret": {
+      "url": "https://www.banquept.fr/documents/livret/2008/Livret_PT_2008.pdf",
+      "sha256": "ad57611750cbdcf6c4e1ba7444c3a7625cceaacff27f2a89763ffca957d67ca8",
+      "pages": 71,
+      "pages_verifiees": [
+        {
+          "numero": 8,
+          "rendu_sha256": "5741fedea62884c57e723ade964d66a6cd2fba69074654b8e31adedd76f9c61d"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "0c26537b24bd2da3cb574775bd100d5857b821d965505bdfbf5ac2c473e48bd6"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "a854e95ade0c8fd2778ca81655643f92461aabf2c20442690a1275e63d467f5a"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "I.3",
+      "fichier": "figures/gaussienne.svg",
+      "legende": "Pour n = 4, la gaussienne est comprise entre les deux puissances sur le segment de zéro à deux.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "IV.2",
+      "fichier": "figures/disques-carre.svg",
+      "legende": "Le carré contient le disque de rayon R et ses quatre sommets sont sur le disque de rayon √2 R.",
+      "provenance": "Figure originale."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4.a",
+      "I.4.b",
+      "I.4.c",
+      "I.5",
+      "II.1",
+      "II.2.a",
+      "II.2.b",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6.a",
+      "II.6.b",
+      "III.1.a",
+      "III.1.b",
+      "III.2",
+      "III.3.a",
+      "III.3.b",
+      "IV.1",
+      "IV.2"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "annexes_imposees": [],
+    "document_reponse_mentionne": null,
+    "repere_par_question": [
+      {
+        "question": "I.1",
+        "page_pdf": 1,
+        "page_rapport": 3,
+        "objet": "Majoration du logarithme"
+      },
+      {
+        "question": "I.2",
+        "page_pdf": 1,
+        "page_rapport": 3,
+        "objet": "Deux inégalités logarithmiques"
+      },
+      {
+        "question": "I.3",
+        "page_pdf": 1,
+        "page_rapport": 3,
+        "objet": "Encadrement des intégrales"
+      },
+      {
+        "question": "I.4.a",
+        "page_pdf": 2,
+        "page_rapport": 3,
+        "objet": "Changement de variable par la cotangente"
+      },
+      {
+        "question": "I.4.b",
+        "page_pdf": 2,
+        "page_rapport": 3,
+        "objet": "Changement de variable sur le segment"
+      },
+      {
+        "question": "I.4.c",
+        "page_pdf": 2,
+        "page_rapport": 3,
+        "objet": "Bornes de Wallis"
+      },
+      {
+        "question": "I.5",
+        "page_pdf": 2,
+        "page_rapport": 3,
+        "objet": "Trois intégrales gaussiennes"
+      },
+      {
+        "question": "II.1",
+        "page_pdf": 2,
+        "page_rapport": 3,
+        "objet": "Série de l’exponentielle"
+      },
+      {
+        "question": "II.2.a",
+        "page_pdf": 2,
+        "page_rapport": 3,
+        "objet": "Composition avec un polynôme"
+      },
+      {
+        "question": "II.2.b",
+        "page_pdf": 2,
+        "page_rapport": 3,
+        "objet": "Développement de la primitive"
+      },
+      {
+        "question": "II.3",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Équation de la primitive pondérée"
+      },
+      {
+        "question": "II.4",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Identification des coefficients"
+      },
+      {
+        "question": "II.5",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Coefficients selon la parité"
+      },
+      {
+        "question": "II.6.a",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Limite de la primitive"
+      },
+      {
+        "question": "II.6.b",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Équivalent de F"
+      },
+      {
+        "question": "III.1.a",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Continuité sous le signe intégral"
+      },
+      {
+        "question": "III.1.b",
+        "page_pdf": 3,
+        "page_rapport": 4,
+        "objet": "Dérivation de g"
+      },
+      {
+        "question": "III.2",
+        "page_pdf": 3,
+        "page_rapport": 4,
+        "objet": "Invariant intégral"
+      },
+      {
+        "question": "III.3.a",
+        "page_pdf": 4,
+        "page_rapport": 4,
+        "objet": "Majoration de g"
+      },
+      {
+        "question": "III.3.b",
+        "page_pdf": 4,
+        "page_rapport": 4,
+        "objet": "Deuxième détermination de l’intégrale de Gauss"
+      },
+      {
+        "question": "IV.1",
+        "page_pdf": 4,
+        "page_rapport": 4,
+        "objet": "Intégration sur le disque"
+      },
+      {
+        "question": "IV.2",
+        "page_pdf": 4,
+        "page_rapport": 4,
+        "objet": "Encadrement du carré par deux disques"
+      }
+    ]
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_hist_1987",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture des 22 questions ou sous-questions et du rapport institutionnel, rédaction des solutions et indications, figures originales et vérifications indépendantes des calculs."
+    }
+  ]
+}
