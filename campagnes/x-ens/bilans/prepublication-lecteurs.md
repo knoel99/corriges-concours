@@ -1,6 +1,6 @@
 # Essai local de publication des corrigés
 
-Le 26/11/2026 à 19 h 29 UTC, les 2099 paires signées de la révision `7d701e1a` ont fourni les deux textes attendus et leurs signatures dans le service de lecture du site. Le journal de chaque fiche renvoie au bon dossier GitHub, reprend les interventions qualifiantes et indique le caractère partiel quand il est déclaré. [Résultats par épreuve](prepublication-lecteurs.tsv) · [Version des corrigés](https://github.com/knoel99/corriges-concours/tree/7d701e1a5c71b4402a5657e3bce701574b56f2d1) · [Version du site](https://github.com/knoel99/prepa/tree/52c39a62adea9212cd1a38d155e247634f9a2256)
+Le 26/11/2026 à 19 h 33 UTC, les 2099 paires signées de la révision `2a5bd405` ont fourni les deux textes attendus et leurs signatures dans le service de lecture du site. Le journal de chaque fiche renvoie au bon dossier GitHub, reprend les interventions qualifiantes et indique le caractère partiel quand il est déclaré. [Résultats par épreuve](prepublication-lecteurs.tsv) · [Version des corrigés](https://github.com/knoel99/corriges-concours/tree/2a5bd40589002c67df5e25c2c12563120b517294) · [Version du site](https://github.com/knoel99/prepa/tree/52c39a62adea9212cd1a38d155e247634f9a2256)
 
 Le contrôle couvre 2573 fiches de filière pour 2099 épreuves signées. Les épreuves communes sont aussi vérifiées sous chaque filière de leur notice éditoriale. [Contrôles des 474 fiches supplémentaires](prepublication-lecteurs-autres-filieres.tsv)
 
