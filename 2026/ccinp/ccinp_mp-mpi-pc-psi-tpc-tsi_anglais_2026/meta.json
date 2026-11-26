@@ -57,11 +57,106 @@
       "modifications": true,
       "perimetre": "Relecture des deux copies, des quatre sources et du rapport. Différenciation des estimations de remboursement, extension des conclusions permise par l’échantillon, accord verbal, recomptage depuis le titre et repères après chaque vingtième mot. Contrôle des largeurs du PDF guidé et ajustement de quatre cellules.",
       "agent": "astra_langues"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "agent": "x_maths_b_recentes",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Consigne unique, rédaction et copie du guide, lecture du corpus, contrôle des visuels et du total de mots."
     }
   ],
   "sources": {
     "sujet": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/Ep%20communes/2026_LVA6AN.pdf",
-    "rapport_jury": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/Ep%20communes/LV_ECRIT_2026_05.10.pdf"
+    "rapport_jury": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/Ep%20communes/LV_ECRIT_2026_05.10.pdf",
+    "sha256_sujet": "c194554e76fe8e84eb2e626315248758228dcb317ec174b531526c1fb136dcef",
+    "pages_pdf_sujet_verifiees": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "sha256_rapport_jury": "23a73e191a42c2fcd03b46b4baca6da1089739620013f3ba144814c9a261dbb0",
+    "pages_pdf_rapport_verifiees": [
+      1,
+      2,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ]
   },
-  "date_revision": "2026-11-24"
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Synthèse"
+    ],
+    "origine_attestation": {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "c194554e76fe8e84eb2e626315248758228dcb317ec174b531526c1fb136dcef",
+      "perimetre": "Consigne unique, rédaction et copie du guide, lecture du corpus, contrôle des visuels et du total de mots.",
+      "documents_verifies": [
+        {
+          "numero": 1,
+          "pages_facsimile": [
+            2
+          ],
+          "controle": "The Times traite du rendement financier du diplôme. Le passage de 30 à 40 ans et la prévision de 52 % figurent p. 2."
+        },
+        {
+          "numero": 2,
+          "pages_facsimile": [
+            2,
+            3
+          ],
+          "controle": "Le Higher Education Policy Institute cite une autre prévision, 65 %, et décrit les débouchés, l’autonomie et la vie collective."
+        },
+        {
+          "numero": 3,
+          "pages_facsimile": [
+            3,
+            4
+          ],
+          "controle": "Le Guardian présente des réponses recueillies en ligne. La majorité évoquée à propos des conditions du prêt désigne ces répondants."
+        },
+        {
+          "numero": 4,
+          "pages_facsimile": [
+            4
+          ],
+          "controle": "Le premier graphique mesure la valeur perçue du diplôme par domaine. Le second distingue le même diplôme (48 %), un autre (39 %), les indécis (5 %) et le renoncement à l’université (8 %) en 2024. Bases différentes en 2024 (849 au Royaume-Uni) et 2020 (1 222 en Grande-Bretagne)."
+        }
+      ],
+      "decompte": {
+        "question_unique": "Synthèse",
+        "langue": "anglais",
+        "minimum": 360,
+        "maximum": 440,
+        "titre": "The Cost and Value of University Education in the UK",
+        "mots": 403,
+        "blocs": [
+          10,
+          44,
+          96,
+          126,
+          103,
+          24
+        ],
+        "convention": "Titre inclus. Sources et dates de l’introduction comptées chacune pour un mot selon le rapport, p. 1. Renvois compacts à un document comptés pour un mot. Barres après chaque vingtième mot. FIN exclu.",
+        "reperes_de_vingt": 20
+      }
+    }
+  }
 }
