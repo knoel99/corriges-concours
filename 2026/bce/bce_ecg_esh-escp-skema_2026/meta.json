@@ -50,6 +50,23 @@
       "fournisseur": "codex",
       "agent": "astra_info_si",
       "perimetre": "Relecture de la copie et du guide sur la dette. Comparaison au rapport et à la première notification Insee disponible en avril, dérivation et calcul du solde stabilisant, portée de la crise des gilts, coûts et rendement des dépenses. Figure originale du solde stabilisant."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Dissertation unique sur une éventuelle limite à l’endettement public. La démonstration, le guide et la figure ont été rapprochés du sujet et du rapport. Les deux textes distinguent encours, charge d’intérêt et solde primaire, puis traitent croissance, risque de refinancement et choix institutionnels.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
   ],
   "sources": {
@@ -63,5 +80,27 @@
       "https://doi.org/10.1257/aer.109.4.1197"
     ]
   },
-  "date_revision": "2026-11-24"
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Y a-t-il une limite à l’endettement public ?"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "limites": "Composition de quatre heures. Le sujet publié tient sur une page et ne comporte aucune annexe.",
+    "verification": "Dissertation unique sur une éventuelle limite à l’endettement public. La démonstration, le guide et la figure ont été rapprochés du sujet et du rapport. Les deux textes distinguent encours, charge d’intérêt et solde primaire, puis traitent croissance, risque de refinancement et choix institutionnels.",
+    "pieces_controlees": [
+      {
+        "role": "sujet",
+        "pages": 1,
+        "sha256": "dbb0e62adebe71442d61cdea4d7d38ea06308f6e381c919468d44b62bc47ef8a"
+      },
+      {
+        "role": "rapport",
+        "pages": 3,
+        "sha256": "a4e392bc747eaddc051efafdfb774843cdb91da2a5c51f43f073dd93ce704cd9"
+      }
+    ]
+  }
 }
