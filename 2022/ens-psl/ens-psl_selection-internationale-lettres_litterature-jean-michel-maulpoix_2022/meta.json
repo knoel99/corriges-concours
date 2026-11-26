@@ -18,7 +18,9 @@
     "sujet": "https://www.ens.psl.eu/sites/default/files/litterature-sil2022-2.pdf",
     "sujet_sha256": "ca3f7b2636f2c6a06151bce2833c9cc1387957f77237c6d2d82a37639ee48d36",
     "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport-litterature-sil_2022.pdf",
-    "rapport_sha256": "6ce585f789f749c79b2b0ecd46c75a73101b99148ceed18f2d4807ad66e4d50b"
+    "rapport_sha256": "6ce585f789f749c79b2b0ecd46c75a73101b99148ceed18f2d4807ad66e4d50b",
+    "index_officiel": "https://www.ens.psl.eu/une-formation-d-exception/admission-concours/international/concours-selection-internationale-0",
+    "rapport_et_perimetre": "Rapport de littératures 2022, page 1, rubrique écrite ; les indications relatives à l’oral commencent page 2."
   },
   "figures": [
     {
@@ -37,7 +39,46 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Dissertation sur le lyrisme critique selon Jean-Michel Maulpoix, avec analyses formelles de Williams, de Ponge et d’Apollinaire, discussion du langage commun et du pouvoir d’émerveillement, schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "fournisseur": "codex",
+      "session": "francais_pt_2325",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture intégrale du ou des feuillets et comparaison aux deux éditions. Comparaison des trois quatrains de Williams avec le rythme pragmatique du billet, pour éprouver la série comparative et la portée de « notre » parole."
     }
   ],
-  "date_revision": "2026-11-24"
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "Commentaire",
+        "auteur_reference": "Jean-Michel Maulpoix, « Pour un lyrisme critique ».",
+        "debut": "Moins émerveillante et poétique que jamais",
+        "fin": "de cette parole que nous sommes.",
+        "sha256_extrait_espaces_unifies": "7478c337e898ac6f441ba65f763daec94b9e4700da5e2c6c65885903e5b782a0",
+        "consigne": "Vous analyserez et commenterez la citation ci-dessous sous la forme d’un écrit organisé. Vous pouvez éclairer ces propos par des éléments de contexte, par vos connaissances d’histoire de la littérature. Vous ferez appel à votre expérience de lectrice, sans vous limiter au corpus de votre projet de recherche.",
+        "page_pdf": 1,
+        "duree": "2 heures",
+        "exercices": 1,
+        "annexes": [],
+        "coupure_interne": "(…) imprimé sur le feuillet"
+      }
+    ]
+  }
 }
