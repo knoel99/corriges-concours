@@ -1,0 +1,365 @@
+{
+  "slug": "banque-pt_pt_langue-vivante-a_2018",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Langue vivante A",
+    "annee": 2018
+  },
+  "questions": 5,
+  "redaction": "IA (gpt-6.2-astra)",
+  "figures": [
+    {
+      "fichier": "figures/lecture-de.svg",
+      "question": "Allemand",
+      "legende": "Trois lectures de la tension au travail"
+    },
+    {
+      "fichier": "figures/lecture-en.svg",
+      "question": "Anglais",
+      "legende": "Qui maîtrise la visibilité royale ?"
+    },
+    {
+      "fichier": "figures/lecture-ar.svg",
+      "question": "Arabe",
+      "legende": "Trois formes d’écart entre norme et protection"
+    },
+    {
+      "fichier": "figures/lecture-es.svg",
+      "question": "Espagnol",
+      "legende": "Travail domestique quotidien en Espagne"
+    },
+    {
+      "fichier": "figures/lecture-it.svg",
+      "question": "Italien",
+      "legende": "Eau perdue dans la chaîne alimentaire italienne"
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "agent": "x_maths_b_recentes",
+      "perimetre": "Rédaction des cinq synthèses par langue et du commentaire des vingt-cinq documents du fascicule 2018, contrôle des figures et des décomptes dans les deux éditions."
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2018/lv_a_2018_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2018/rapport_lv_a_ecrit_2018.pdf",
+    "sujet_sha256": "5628f57daefcc5d64d7e92e460f07434940b7efce14702ea30d7985984db80ce",
+    "rapport_sha256": "ada3ee697ebe7e7d98de7277354602541ff230e3e45db3c30b2626ae61915175"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Allemand",
+      "Anglais",
+      "Arabe",
+      "Espagnol",
+      "Italien"
+    ],
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "5628f57daefcc5d64d7e92e460f07434940b7efce14702ea30d7985984db80ce",
+      "perimetre": "Rédaction des cinq synthèses par langue et du commentaire des vingt-cinq documents du fascicule 2018, contrôle des figures et des décomptes dans les deux éditions.",
+      "controles": [
+        {
+          "nom": "Allemand",
+          "titre": "Wann eine Herausforderung zur Erschöpfung wird",
+          "consigne": "Stress und Burnout überwinden: ein Ziel?",
+          "pages_sujet": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "pages_rapport": [
+            1,
+            2,
+            3
+          ],
+          "mots_titre_inclus": 458,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                3,
+                4
+              ],
+              "controle": "Die Macher associe la résilience à la maîtrise des émotions, aux objectifs réalistes et à la capacité de reprendre après un échec."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                4,
+                5
+              ],
+              "controle": "La caisse HEK distingue deux effets de la tension selon la marge de manœuvre dont dispose la personne."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                5,
+                6
+              ],
+              "controle": "La conférence rapportée par Volksstimme distingue le risque d’épuisement de la dépression et insiste sur la qualité des liens sociaux."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                7
+              ],
+              "controle": "Les courbes mesurent des jours d’incapacité pour mille assurés de 2004 à 2012. Les femmes ont la courbe la plus élevée."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                7
+              ],
+              "controle": "La spirale part du besoin de faire ses preuves, passe par le retrait et aboutit à l’épuisement et à la dépression."
+            }
+          ]
+        },
+        {
+          "nom": "Anglais",
+          "titre": "A crown that needs an audience",
+          "consigne": "To what extent does the British Royal family have a difficult relationship with the media?",
+          "pages_sujet": [
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "pages_rapport": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "mots_titre_inclus": 473,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                9
+              ],
+              "controle": "The Guardian met en regard le communiqué de Harry sur le traitement de Meghan Markle et les démarches auprès du régulateur."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                10
+              ],
+              "controle": "The Independent examine les tentatives de communication directe et le risque que le contrôle des accès fait peser sur le soutien populaire."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                11
+              ],
+              "controle": "Vogue analyse l’attrait de la fiction The Crown et de l’intimité imaginée d’une famille au statut exceptionnel."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                12
+              ],
+              "controle": "Chez Granlund, les reporters courent vers l’annonce d’un deuxième enfant en tournant le dos au panneau qui signale les crises mondiales."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                12
+              ],
+              "controle": "La photographie du Daily Mail place William et Kate sur un tapis rouge de Los Angeles ; sa légende rapproche royauté et célébrité hollywoodienne."
+            }
+          ]
+        },
+        {
+          "nom": "Arabe",
+          "titre": "حين يقف القانون عند باب الطفولة",
+          "consigne": "انطلاقاً من الوثائق الخمس التالية، ماذا يمكن استنتاجه من أهمية مسألة زواج القاصرات في المجتمعات العربية؟",
+          "pages_sujet": [
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "pages_rapport": [
+            12,
+            13,
+            14
+          ],
+          "mots_titre_inclus": 457,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                14
+              ],
+              "controle": "En Égypte, les unions coutumières de mineures exposent les filles à des pertes de droits et à l’isolement après une séparation."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                15
+              ],
+              "controle": "Le témoignage marocain d’Aïcha met en regard son vécu, la pauvreté du milieu rural et la possibilité d’une dérogation judiciaire."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                16
+              ],
+              "controle": "Au Soudan, l’article confronte les pratiques et le droit local aux risques sanitaires et aux obligations internationales."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                17
+              ],
+              "controle": "Dans le dessin égyptien, une enfant au ballon fait face à un vieil homme qui traite l’interdiction de l’exploitation comme un obstacle à leur prétendu rêve commun."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                18
+              ],
+              "controle": "L’infographie internationale compare des effectifs, cite notamment la pauvreté et les traditions et propose éducation, législation et information."
+            }
+          ]
+        },
+        {
+          "nom": "Espagnol",
+          "titre": "La igualdad se juega también fuera del despacho",
+          "consigne": "Hacia una mayor igualdad en el mundo laboral, ¿realidad o utopía?",
+          "pages_sujet": [
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "pages_rapport": [
+            15
+          ],
+          "mots_titre_inclus": 478,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                20
+              ],
+              "controle": "El País souligne le décalage entre les diplômes et la rémunération et défend une politique de parité."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                21
+              ],
+              "controle": "Expok critique les quotas comme réponse numérique à des obstacles culturels plus larges."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                22
+              ],
+              "controle": "La Nación distingue les barrières à la promotion et celles qui écartent les femmes de certains domaines de responsabilité."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                23
+              ],
+              "controle": "L’infographie espagnole compare salaires, responsabilités, pensions et temps de travail domestique."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                23
+              ],
+              "controle": "Dans le dessin de Forges, un homme porte le message du partage des tâches domestiques et des soins aux enfants."
+            }
+          ]
+        },
+        {
+          "nom": "Italien",
+          "titre": "Una riserva di cibo nascosta negli sprechi",
+          "consigne": "In che misura si potrebbe evitare la probabile crisi alimentare mondiale che si prospetta?",
+          "pages_sujet": [
+            24,
+            25,
+            26,
+            27,
+            28,
+            29
+          ],
+          "pages_rapport": [
+            16
+          ],
+          "mots_titre_inclus": 455,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                25
+              ],
+              "controle": "Focus chiffre les pertes italiennes et les gaspillages, et oppose leur perception au relevé concret dans les journaux de familles."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                26
+              ],
+              "controle": "La Repubblica expose des dispositifs distincts : cantine de Parme, conditionnement des produits frais et exemple de cuisiniers."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                27
+              ],
+              "controle": "Le Corriere distingue les pertes en amont et le gaspillage dans la transformation industrielle, la distribution et la consommation."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                28
+              ],
+              "controle": "Le schéma de la chaîne alimentaire localise les problèmes de conservation, de commercialisation et de portions."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                29
+              ],
+              "controle": "Le visuel rapporte 1 226 millions de mètres cubes d’eau à l’ensemble de la filière, dont 706 millions associés aux aliments inutilisés par les personnes."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
