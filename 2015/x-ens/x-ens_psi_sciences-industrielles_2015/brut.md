@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Un banc de laboratoire reproduit les mouvements relatifs des deux satellites d’un télescope. Les valeurs numériques lues sur les courbes sont arrondies. Les parties I et III du sujet présentent le système et la génération du code sans poser de question.
 
 ## II · Conception et modélisation
@@ -148,6 +150,7 @@ $$
 G_1=1/D_2,\qquad G_2=1/(rkD_2),\qquad G_3=1/D_3,\qquad G_4=1/(kD_3).
 $$
 
+Par élimination des angles, les transferts explicites satisfont $(D_2D_3-1)\psi_3=C_m/(rk)-D_2C_r/k$ et $(D_2D_3-1)\psi_2=D_3 C_m/(rk)-C_r/k$. Le signe moins devant la charge traduit le sens résistant du couple. À $p=0$, $D_2D_3-1=0$, comme attendu pour les deux arbres libres d’effectuer une rotation commune.
 
 ### Question II.23 · Relier les quatre blocs du DR 1
 
