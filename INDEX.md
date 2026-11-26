@@ -192,6 +192,7 @@
 | 2017 | ENS de Lyon | Séries LA/LV/SH (A/L) | Italien (oral) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_italien-oral_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_italien-oral_2017/guide.md) |
 | 2022 | ENS de Lyon | Séries LA/LV/SH (A/L) | Italien (oral) | [md](2022/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_italien-oral_2022/brut.md) | [md](2022/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_italien-oral_2022/guide.md) |
 | 2017 | ENS de Lyon | Séries LA/LV/SH (A/L) | Latin (oral) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_latin-oral_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_latin-oral_2017/guide.md) |
+| 2017 | ENS de Lyon | Séries LA/LV/SH (A/L) | Polonais (oral) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_polonais-oral_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_polonais-oral_2017/guide.md) |
 | 2015 | ENS Paris-Saclay | Design | Expression graphique, chromatique ou volumique | [md](2015/ens-paris-saclay/ens-paris-saclay_design_expression-graphique-chromatique-ou-volumique_2015/brut.md) | [md](2015/ens-paris-saclay/ens-paris-saclay_design_expression-graphique-chromatique-ou-volumique_2015/guide.md) |
 | 2021 | ENS Paris-Saclay | Design | Histoire de l’art | [md](2021/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2021/brut.md) | [md](2021/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2021/guide.md) |
 | 2022 | ENS Paris-Saclay | Design | Histoire de l’art | [md](2022/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2022/brut.md) | [md](2022/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2022/guide.md) |
@@ -1241,6 +1242,8 @@
 | 2008 | ENS | MP-PC | Russe (LV1) | [md](2008/ens/ens_mp-pc_russe-lv1_2008/brut.md) | [md](2008/ens/ens_mp-pc_russe-lv1_2008/guide.md) |
 | 2009 | ENS | MP-PC | Russe (LV1) | [md](2009/ens/ens_mp-pc_russe-lv1_2009/brut.md) | [md](2009/ens/ens_mp-pc_russe-lv1_2009/guide.md) |
 | 2010 | ENS | MP-PC | Russe (LV1) | [md](2010/ens/ens_mp-pc_russe-lv1_2010/brut.md) | [md](2010/ens/ens_mp-pc_russe-lv1_2010/guide.md) |
+| 2000 | ENS | MP | Informatique | [md](2000/ens/ens_mp_informatique_2000/brut.md) | [md](2000/ens/ens_mp_informatique_2000/guide.md) |
+| 2001 | ENS | MP | Informatique | [md](2001/ens/ens_mp_informatique_2001/brut.md) | [md](2001/ens/ens_mp_informatique_2001/guide.md) |
 | 2009 | ENS | MP | Informatique | [md](2009/ens/ens_mp_informatique_2009/brut.md) | [md](2009/ens/ens_mp_informatique_2009/guide.md) |
 | 2010 | ENS | MP | Informatique | [md](2010/ens/ens_mp_informatique_2010/brut.md) | [md](2010/ens/ens_mp_informatique_2010/guide.md) |
 | 2009 | ENS | MP | Mathématiques-informatique | [md](2009/ens/ens_mp_mathematiques-informatique_2009/brut.md) | [md](2009/ens/ens_mp_mathematiques-informatique_2009/guide.md) |
@@ -1317,6 +1320,7 @@
 | 2018 | ENS | PSI | Physique U | [md](2018/ens/ens_psi_physique-u_2018/brut.md) | [md](2018/ens/ens_psi_physique-u_2018/guide.md) |
 | 2019 | ENS | PSI | Physique U | [md](2019/ens/ens_psi_physique-u_2019/brut.md) | [md](2019/ens/ens_psi_physique-u_2019/guide.md) |
 | 2021 | ENS | PSI | Physique U | [md](2021/ens/ens_psi_physique-u_2021/brut.md) | [md](2021/ens/ens_psi_physique-u_2021/guide.md) |
+| 2023 | ENS | PSI | Physique U | [md](2023/ens/ens_psi_physique-u_2023/brut.md) | [md](2023/ens/ens_psi_physique-u_2023/guide.md) |
 | 1999 | ENS | Ulm-Lyon | Informatique | [md](1999/ens/ens_ulm-lyon_informatique_1999/brut.md) | [md](1999/ens/ens_ulm-lyon_informatique_1999/guide.md) |
 | 2019 | ENS Paris-Saclay | BEL anglais | Espagnol LV2 (oral, sujet 1) | [md](2019/ens-paris-saclay/ens-paris-saclay_bel-anglais_espagnol-lv2-oral-sujet-1_2019/brut.md) | [md](2019/ens-paris-saclay/ens-paris-saclay_bel-anglais_espagnol-lv2-oral-sujet-1_2019/guide.md) |
 | 2019 | ENS Paris-Saclay | BEL anglais | Espagnol LV2 (oral, sujet 2) | [md](2019/ens-paris-saclay/ens-paris-saclay_bel-anglais_espagnol-lv2-oral-sujet-2_2019/brut.md) | [md](2019/ens-paris-saclay/ens-paris-saclay_bel-anglais_espagnol-lv2-oral-sujet-2_2019/guide.md) |
