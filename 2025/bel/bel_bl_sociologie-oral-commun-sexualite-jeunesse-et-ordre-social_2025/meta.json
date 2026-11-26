@@ -1,0 +1,71 @@
+{
+  "slug": "bel_bl_sociologie-oral-commun-sexualite-jeunesse-et-ordre-social_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Sociologie (oral commun) — Sexualité, jeunesse et ordre social",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "Sexualité, jeunesse et ordre social",
+  "questions": 1,
+  "sujets": 1,
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oraux_sociologie_option_bl.pdf#page=18",
+    "sujet_sha256": "a6cfd0e1d317596c64fdd7f85e2770ef806175c8b278483fe266bc97bed6e3d9",
+    "sujet_pages": 54,
+    "page_pdf": 18,
+    "fin_pdf": 25,
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_sociologie_tronc_commun.pdf",
+    "rapport_sha256": "9bc988f94c13ebc880ab5860fd1c30f145a4bf52df2207b66bb6dbb78e4bd008",
+    "rapport_pages": 4
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire du dossier"
+    ],
+    "documents_entierement_traites": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "precision": "Un commentaire sur le dossier unique. Les six documents de l’enquête Envie et le texte d’Isabelle Clair ont été lus sur les pages visibles 19 à 25 du PDF. Le titre et la pagination interne proviennent de la page 18. Le rapport du tronc commun identifie le dossier page 4. Les relances sont éditoriales."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Commentaire du dossier",
+      "fichier": "figures/celibat-et-souhait.svg",
+      "legende": "Du taux de célibat au souhait de couple. Les barres se lisent sur 100 personnes du groupe initial, à partir du document 3."
+    },
+    {
+      "numero": 2,
+      "question": "Commentaire du dossier",
+      "fichier": "figures/etapes-application.svg",
+      "legende": "Trois issues pour 100 hommes de 18 à 21 ans ayant déjà utilisé une application. La part des utilisateurs ayant rencontré au moins une personne se déduit par complément dans le document 5."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture visuelle des sept documents et confrontation au rapport du tronc commun. Rédaction des deux éditions, lecture des dénominateurs conditionnels, interprétation sociologique des tableaux et du texte, tracé des deux figures et rédaction des relances."
+    }
+  ]
+}
