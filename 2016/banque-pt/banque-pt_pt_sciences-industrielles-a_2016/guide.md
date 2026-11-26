@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 EOS construit deux images radiographiques orthogonales pendant que le bras se déplace verticalement. Les trois moteurs entraînent le même bras par des réducteurs et des vis à billes. Les numéros de page des renvois comprennent la garde du PDF.
 
 [Sujet et cahier officiels](https://www.banquept.fr/documents/2016/si_a_2016_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2016/rapport_si_a_ecrit_2016.pdf)
@@ -48,7 +50,7 @@ $t=1,5/0,025=60$ s. Une minute est envisageable pour une acquisition debout si l
 
 #### Solution
 
-$v(t)=V_{\max}(1-e^{-t/\tau})$ et $t_{99}=\tau\ln100$. L’intégration donne $d=V_{\max}\tau(\ln100-0,99)$. La distance limite de 0,10 m donne $\tau=0,277$ s et $t_{5\%}=\tau\ln20=0,829$ s. La constante de ce système chargé vaut environ 35 fois les 8 ms mécaniques du moteur seul.
+$v(t)=V_{\max}(1-e^{-t/\tau})$ et $t_{99}=\tau\ln100$. L’intégration donne $d=V_{\max}\tau(\ln100-0,99)$. La distance limite de 0,10 m donne $\tau=0,277$ s et $t_{5\%}=\tau\ln20=0,829$ s. La constante de ce système chargé vaut environ 35 fois les 8 ms mécaniques du moteur seul. Il s’agit ici de l’estimation préliminaire issue de la distance autorisée. L’asservissement de la partie II possède sa propre cible de 0,75 s.
 
 ### Question 5 — Vérifier la puissance en montée
 
@@ -174,7 +176,7 @@ $\Delta i\simeq(\alpha T/\tau_e)[(U_{\rm alim}-e_m)/R-i_0]$. C’est aussi, à c
 
 #### Solution
 
-Pour $\Delta i/i_0\simeq0,01$, il faut $T/\tau_e\simeq i_0/[100\alpha(i_\infty-i_0)]$. Ce rapport est de l’ordre du centième si le facteur de courant est voisin de un.
+Pour $\Delta i/i_0\simeq0,01$, il faut $T/\tau_e\simeq i_0/[100\alpha(i_\infty-i_0)]$. Ce rapport est de l’ordre du centième si le facteur de courant est voisin de un. À titre de contrôle, avec 48 V, $e_m=36$ V à la vitesse maximale et $i_0\simeq3,47$ A, le bilan moyen donne $\alpha\simeq0,947$. On trouve $T/\tau_e\simeq0,0145$, soit environ 33 µs pour $\tau_e=2,3$ ms.
 
 ## II.1 — Dynamique des moteurs en parallèle
 
@@ -285,7 +287,7 @@ $J_3=3(800+80+600/25)10^{-7}+400[0,01/(10\pi)]^2=3,117\times10^{-4}$ kg·m². En
 
 #### Solution
 
-$\tau_1+\tau_2=b$, $\tau_1\tau_2=a$, soit $\tau_{1,2}=(b\mp\sqrt{b^2-4a})/2$. Avec les données du tableau, $a\simeq3,48\,10^{-5}$ s² et $b\simeq0,0151$ s. Le discriminant est positif. On trouve environ 2,83 et 12,3 ms. Pour la suite, adopter les valeurs imposées 2,5 et 12 ms.
+$\tau_1+\tau_2=b$, $\tau_1\tau_2=a$, soit $\tau_{1,2}=(b\mp\sqrt{b^2-4a})/2$. Avec les données du tableau, $a\simeq3,48\,10^{-5}$ s² et $b\simeq0,0151$ s. Le discriminant est positif. On trouve environ 2,83 et 12,3 ms. Pour la suite, adopter les valeurs imposées 2,5 et 12 ms. Ces constantes ont l’unité seconde malgré l’exposant imprimé. Leur rapport imposé vaut 4,8. Le pôle lent prédomine à long terme mais la séparation reste insuffisante pour négliger l’autre sur toute la bande.
 
 ## II.2 — Asservissement et validation
 
@@ -365,7 +367,7 @@ $C_{R\rm eq3}=-400\times9,81\times0,01/(2\pi\times5)=-1,249$ N·m. Cette valeur 
 
 #### Solution
 
-Figure 23, le bras rejoint 0,10 m/s, soit un écart statique nul à la précision du tracé. Il franchit 0,095 m/s vers 0,75 s et y reste, au voisinage immédiat de la limite. Les marges sont celles de Q33. La rotation finale est 3 000 tr/min, inférieure à 3 400. Le courant présente une pointe d’environ 5,6 A, sous 20 A. La tension se stabilise vers 48 V, à la limite nominale à la précision graphique.
+Figure 23, le bras rejoint 0,10 m/s, soit un écart statique nul à la précision du tracé. Il franchit 0,095 m/s vers 0,75 s et y reste, au voisinage immédiat de la limite. Les marges sont celles de Q33. La rotation finale est 3 000 tr/min, inférieure à 3 400. Le courant présente une pointe d’environ 5,6 A, sous 20 A. La tension se stabilise vers 48 V, à la limite nominale à la précision graphique. La puissance mécanique d’un moteur reste sous 255 W, même avec la borne $0,12\times5,7\times314,2\simeq215$ W. La position tend vers une rampe de pente 0,10 m/s. La figure ne donne ni réserve mesurable en tension ni précision suffisante pour certifier une marge temporelle de quelques millisecondes.
 
 ![Seuil de vitesse, pointe de courant et tension de régime sur la simulation](figures/validation.svg)
 
@@ -409,7 +411,7 @@ Une seule mobilité utile, la translation commune, impose les trois vitesses de 
 
 #### Solution
 
-Sur la chaîne dessinée, ajouter entre le bras et la vis un écrou flottant 4, portant l’hélicoïdale. Une liaison 1–4 à trois libertés autorise la translation radiale $T_y$ et les basculements $R_x,R_y$ au centre $B_k$. Elle transmet $F_x,F_z,M_z$, ce qui assure l’anti-rotation, la poussée axiale et le maintien latéral. Par exemple, un axe transversal $y$ dans un alésage sphérique coulissant, avec doigt antirotation convenablement orienté, réalise la combinaison des libertés. Le bilan pour une chaîne, colonne fusionnée au bâti, est $4+5+5+3-6\times3+1=0$.
+Sur la chaîne dessinée, ajouter entre le bras et la vis un écrou flottant 4, portant l’hélicoïdale. Une liaison 1–4 à trois libertés autorise la translation radiale $T_y$ et les basculements $R_x,R_y$ au centre $B_k$. Elle transmet $F_x,F_z,M_z$, ce qui assure l’anti-rotation, la poussée axiale et le maintien latéral. Par exemple, un axe transversal $y$ dans un alésage sphérique coulissant, avec doigt antirotation convenablement orienté, réalise la combinaison des libertés. Le bilan pour une chaîne, colonne fusionnée au bâti, est $4+5+5+3-6\times3+1=0$. Sur l’appareil complet, les trois pivots glissants déjà reliés au bras imposent à eux seuls 12 contraintes de rang 5. Leur redondance de sept subsiste même si les trois écrous deviennent flottants. Une seule pièce ajoutée avec toutes les liaisons d’origine conservées ne rend donc pas l’ensemble des trois chaînes isostatique. Une architecture globale exige également de répartir les cinq contraintes de guidage, par exemple quatre sur un guide principal et une antirotation sur un guide secondaire.
 
 ![Écrou flottant de la chaîne dessinée et directions des efforts transmis](figures/ecrou.svg)
 
@@ -498,7 +500,7 @@ La colonne s’écarte vers $-y$ et la vis vers $+y$. Ainsi $\varepsilon=V'(h)-V
 
 #### Solution
 
-Sur $[0,10;1,80]$ m avec $H=2$ m, $\alpha$ est minimale à $h_{\max}=0,10$ m, extrémité inférieure la plus proche d’un appui. La figure 31 donne environ $6,0\,10^3$ cm³, soit $0,0060$ m³. Alors $\lambda_{\max}=1/\{\alpha[1/(EI)+1/(E'I')]\}\simeq9,6\,10^6$ N/m et $R_{\max}=\lambda_{\max}\varepsilon$.
+Sur $[0,10;1,80]$ m avec $H=2$ m, $\alpha$ est minimale à $h_{\max}=0,10$ m, extrémité inférieure la plus proche d’un appui. La figure 31 donne environ $6,0\,10^3$ cm³, soit $0,0060$ m³. Alors $\lambda_{\max}=1/\{\alpha[1/(EI)+1/(E'I')]\}\simeq9,6\,10^6$ N/m et $R_{\max}=\lambda_{\max}\varepsilon$. Pour 0,10 mm, l’effort vaut environ 960 N. Le défaut impose la différence des flèches à toutes les hauteurs. Le maximum recherché porte sur l’effort nécessaire pour produire ce défaut.
 
 ![Souplesse géométrique sur la course utile et lecture au voisinage de la butée](figures/souplesse.svg)
 
@@ -511,7 +513,7 @@ Sur $[0,10;1,80]$ m avec $H=2$ m, $\alpha$ est minimale à $h_{\max}=0,10$ m, ex
 
 #### Solution
 
-Pour une hauteur donnée, le moment maximal en module vaut $R(h)h(H-h)/H$. Comme $h(H-h)/H\le H/4$, la majoration demandée vaut $\sigma_{\max}\le\lambda_{\max}\varepsilon H d'/(8I')\simeq39$ MPa. Cette valeur reste très inférieure aux 500 MPa de limite élastique.
+Pour une hauteur donnée, le moment maximal en module vaut $R(h)h(H-h)/H$. Comme $h(H-h)/H\le H/4$, la majoration demandée vaut $\sigma_{\max}\le\lambda_{\max}\varepsilon H d'/(8I')\simeq39$ MPa. Cette valeur reste très inférieure aux 500 MPa de limite élastique. Si l’on conserve la dépendance commune en $h$, le pic effectif est près de l’appui inférieur et vaut $R_{\max}\,0,10(2-0,10)d'/(2H I')\simeq7,4$ MPa. La majoration de 39 MPa combine deux maxima distincts.
 
 ### Question 50 — Relier le frottement parasite à l’image
 

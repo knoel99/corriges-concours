@@ -634,6 +634,23 @@
       "modifications": true,
       "phase": "redaction",
       "perimetre": "Résolution des 50 questions et rédaction des indications des deux éditions après lecture du sujet, du cahier et du rapport du jury."
+    },
+    {
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "session": "banque_pt_si_a_2016",
+      "modifications": true,
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "perimetre": "Recalcul des constantes à partir des caractéristiques physiques puis avec les valeurs arrondies imposées, mesure du franchissement à 95 % sur la figure 23, comptage spatial des contraintes, distinction entre compensation locale et guidage des trois colonnes, vérification des signes et des bornes de contrainte. Comparaison des graphiques aux cases du cahier."
     }
-  ]
+  ],
+  "date_revision": "2026-11-26"
 }
