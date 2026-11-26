@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Évolution d’une population abstraite.** Le problème A porte sur des récurrences et des équilibres. Le problème B compare plusieurs lois de descendance dans un arbre de Galton–Watson, puis étudie la précision d’une estimation numérique.
 
 ## Repères
@@ -26,7 +28,12 @@ Par récurrence $v_n=v_0q^n$. Pour $v_0>0$, la limite vaut zéro exactement lors
 
 #### Solution
 
-$f(x)=3x/2-x^2/(2S)$ et $f'(x)=3/2-x/S$. Sur $[0,3S/2]$, $f$ croît de 0 à $9S/8$. Sur $[3S/2,+\infty[$, elle décroît de $9S/8$ vers $-\infty$. Cette dernière limite concerne le polynôme sur tout le domaine demandé.
+$f(x)=3x/2-x^2/(2S)$ et $f'(x)=3/2-x/S$. Sur $[0,3S/2]$, $f$ croît de 0 à $9S/8$. Sur $[3S/2,+\infty[$, elle décroît de $9S/8$ vers $-\infty$. Le tableau sur tout le domaine demandé est donc
+
+| $x$ | $0$ | | $3S/2$ | | $+\infty$ |
+|---|---:|:---:|:---:|:---:|---:|
+| $f'(x)$ | | $+$ | $0$ | $-$ | |
+| $f(x)$ | $0$ | ↗ | $9S/8$ | ↘ | $-\infty$ |
 
 ### Question 2.2 · Tracer les vingt premiers termes
 
@@ -134,7 +141,7 @@ Si $y(0)=y_0$ et $c=F'(x_0)$, alors $w'=cw$ d’où $w(t)=(y_0-x_0)e^{ct}$. La s
 
 #### Solution
 
-Quand $c<0$, l’écart initial est amorti et tend vers zéro. Pour $c>0$, tout petit écart initial non nul grandit dans la solution linéarisée, tant que l’on reste assez près pour que cette approximation décrive le système. On retrouve les deux équilibres attractifs et le niveau séparateur du problème discret.
+Pour $c<0$, $y(t)\to x_0$ quelle que soit la petite perturbation initiale. Pour $c>0$, la solution de l’équation linéarisée tend vers $+\infty$ lorsque $y_0>x_0$ et vers $-\infty$ lorsque $y_0<x_0$. Si $y_0=x_0$, elle est constante. Dans le modèle non linéaire, la linéarisation décrit le départ du voisinage de l’équilibre. Comme pour la suite de Q3, une petite perturbation est amortie près de $0$ et de $S$, et amplifiée de part et d’autre de $A$.
 
 ## B.I. Processus de Galton–Watson
 
@@ -371,12 +378,14 @@ Il suffit de choisir $1/(4n\varepsilon^2)\le0,05$, soit $\varepsilon\ge\sqrt{5/n
 
 #### Solution
 
-Pour $n=5000$, $\varepsilon=\sqrt{0,001}\simeq0,0316$. En lisant la courbe du sujet à environ un centième près, on obtient les valeurs suivantes.
+Pour $n=5000$, le rayon de Q13.3 vaut $\varepsilon=\sqrt{0{,}001}\simeq0{,}03162$. À l’œil, on lit environ $0{,}90$, $0{,}83$ et $0{,}76$ sur la figure de la page 8. Une lecture des sommets du tracé vectoriel, étalonnée par les graduations, donne les fréquences ci-dessous au pas $1/5000$. Les intervalles sont arrondis vers l’extérieur.
 
-| $\lambda$ | Fréquence lue | Intervalle approximatif |
-|---:|---:|---:|
-| 1,05 | 0,90 | $[0,868\,;\,0,932]$ |
-| 1,10 | 0,83 | $[0,798\,;\,0,862]$ |
-| 1,15 | 0,76 | $[0,728\,;\,0,792]$ |
+| $\lambda$ | Fréquence $F_n$ sur la figure | Intervalle à 95 % pour $u_{60}$ | Intervalle à 95 % pour $p_\lambda$ |
+|---:|---:|---:|---:|
+| 1,05 | 0,9014 | $[0{,}8697\,;\,0{,}9331]$ | $[0{,}8697\,;\,0{,}9374]$ |
+| 1,10 | 0,8286 | $[0{,}7969\,;\,0{,}8603]$ | $[0{,}7969\,;\,0{,}8607]$ |
+| 1,15 | 0,7570 | $[0{,}7253\,;\,0{,}7887]$ | $[0{,}7253\,;\,0{,}7887]$ |
 
-Les valeurs centrales du corrigé officiel, lues plus grossièrement, sont 0,90, 0,85 et 0,75. Les bornes dépendent de cette lecture. L’interprétation à 95 % porte exactement sur l’extinction à 60 générations pour le protocole simulé. Une borne de l’écart entre $u_{60}$ et $p_\lambda$ serait nécessaire pour transférer sans approximation cette couverture à l’extinction finale.
+Le corrigé du jury arrondit les lectures centrales à $0{,}90$, $0{,}85$ et $0{,}75$. À l’épreuve, la fréquence lue et le rayon suffisent à former l’intervalle demandé. La dernière colonne tient également compte des lignées qui s’éteignent après la génération 60.
+
+Pour calculer cet élargissement, conditionnons par le nombre de descendants comme en Q9.1. La loi de Poisson donne $u_{k+1}=h(u_k)$ où $h(x)=e^{\lambda(x-1)}$ et $u_0=0$. Si $r\in[0,1]$ vérifie $h(r)\le r$, la croissance de $h$ donne $u_k\le r$ par récurrence, puis $p_\lambda\le r$. Pour les trois valeurs de $\lambda$, on vérifie cette inégalité avec, respectivement, $r=0{,}90630$, $0{,}82387$ et $0{,}75100$. En itérant 60 fois depuis zéro, avec arrondi vers le bas à huit décimales à chaque étape, on trouve respectivement $u_{60}\ge0{,}90194$, $0{,}82349$ et $0{,}75097$. Ainsi $0\le p_\lambda-u_{60}\le b$, où $b$ vaut successivement $0{,}00436$, $0{,}00038$ et $0{,}00003$. Sur l’événement de Q13.3, on a donc $F_n-\varepsilon\le p_\lambda\le F_n+\varepsilon+b$. La probabilité de couverture est d’au moins 95 % pour chaque valeur de $\lambda$.
