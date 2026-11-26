@@ -32,5 +32,14 @@
       "fournisseur": "codex",
       "agent": "astra_maths"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "partiel",
+    "questions_partiellement_traitees": [
+      "Variante Pascal, signatures et types fournis en parallèle de Caml, dont les primitives d’allocation des arbres de décision. Le sujet les distingue explicitement."
+    ],
+    "precision": "La version Caml est rédigée dans les deux éditions. La variante Pascal imprimée dans le sujet reste à traiter.",
+    "sujet_controle": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-e76368775eb14f5d4e71",
+    "sha256_sujet_controle": "19d92541ff70e1b7d2a1318adcf61f0ea36992ffbd547f9b1b1f2e4ca2581458"
+  }
 }

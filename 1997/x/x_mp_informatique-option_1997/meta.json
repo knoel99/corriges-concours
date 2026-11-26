@@ -49,5 +49,14 @@
       "fournisseur": "codex",
       "agent": "astra_maths"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "partiel",
+    "questions_partiellement_traitees": [
+      "Parties II et III, variante Pascal des pages 5 à 8 : construction du quadtree et calcul des forces avec la représentation du sujet."
+    ],
+    "precision": "La version Caml est rédigée dans les deux éditions. La variante Pascal imprimée dans le sujet reste à traiter.",
+    "sujet_controle": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-1024310950ce7e7a1a40",
+    "sha256_sujet_controle": "8c17ddd7f5d567ccba1353927ebb31a92aa0cfc3fbd46ce348e4547415736a7d"
+  }
 }
