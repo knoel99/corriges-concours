@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Groupes abéliens de torsion $p$-primaire de type cofini.** On fixe un nombre premier $p$. On note $A[m]=\{x\in A:mx=0\}$ et $U_p$ le groupe des racines complexes de l’unité dont l’ordre est une puissance de $p$.
 
 ## I. Morphismes continus du cercle et de son sous-groupe dense
@@ -49,6 +51,8 @@ La suite convergente $(x_n)$ est de Cauchy. Par uniforme continuité, $(f(x_n))$
 ### Question I.3.c
 
 Pour $x\in S^1$, choisissons $x_n\in U_p$ tel que $x_n\to x$ et posons $\bar f(x)=\lim f(x_n)$. Si $y_n\to x$ aussi, $|x_n-y_n|\to0$ et l’uniforme continuité donne $|f(x_n)-f(y_n)|\to0$. Le choix est donc indifférent. La suite constante prouve le prolongement. Pour $\varepsilon>0$, choisissons $\delta$ associé à $\varepsilon/2$ en I.3.a. Si $|x-y|<\delta/2$, des approximations $x_n,y_n$ dans $U_p$ vérifient finalement $|x_n-y_n|<\delta$. En passant à la limite, $|\bar f(x)-\bar f(y)|\le\varepsilon/2<\varepsilon$. Le prolongement est continu ; la densité en assure l’unicité. Enfin $x_ny_n\to xy$ et $f(x_ny_n)=f(x_n)f(y_n)$, donc $\bar f$ est un morphisme. Par I.1.e il existe $k\in\mathbb Z$ tel que $f(z)=z^k$ sur $U_p$ ; réciproquement toutes ces puissances conviennent.
+
+L’exposant obtenu est aussi unique. Si $z^k=z^\ell$ pour toute racine du sous-groupe, prendre $z=e^{2\pi i/p^n}$ impose $p^n\mid(k-\ell)$ pour tout $n$. Le seul entier divisible par toutes ces puissances est zéro. Cela justifie que les restrictions à $U_p$ des différentes puissances du cercle restent distinctes.
 
 ## II. Prolongement vers un groupe divisible
 
@@ -165,6 +169,8 @@ La divisibilité donne $D=p^kD\subset p^kA$ pour tout $k$. Inversement $H=\bigca
 ### Question VI.2.b
 
 Par II.2.b, $A\simeq S\times D$. Le premier facteur est fini et $p$-primaire. Le second est $p$-primaire et $p$-divisible avec $D[p]\subset A[p]$ fini, donc $D\simeq U_p^r$ par V.3.d, où $r=\dim_{\mathbb F_p}D[p]$. En posant $F=S$, on obtient $A\simeq F\times U_p^r$.
+
+La décomposition permet de lire ses deux paramètres dans $A$. Le sous-groupe $D=\bigcap_{k\ge1}p^kA$ est défini sans choisir de complément, et $F$ est isomorphe au quotient $A/D$. Si $p^sF=0$, alors pour $n\ge s$ on a $|A[p^n]|=|F|p^{nr}$ grâce à V.1. Le quotient de deux cardinaux successifs vaut dès lors $p^r$. Par exemple $A=(\mathbb Z/p^2\mathbb Z)\times U_p$ a $p^2$ éléments tués par $p$, mais ce quotient vaut $p$ dès $n=2$ : un seul facteur est divisible.
 
 ![Figure 2 — La partie divisible se décompose en groupes de Prüfer. Le complément est fini car sa torsion d’ordre p est finie et son intersection des images de p puissance k est nulle.](figures/structure-primaire.svg)
 

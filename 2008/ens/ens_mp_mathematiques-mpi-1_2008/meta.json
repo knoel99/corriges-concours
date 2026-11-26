@@ -11,7 +11,8 @@
   "sources": {
     "sujet": "https://www.ens.psl.eu/IMG/file/concours/2008/MP/mp_sujet_maths_mpi1.pdf",
     "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2008/MP/mp_ecrit_maths_mpi1.pdf",
-    "sha256_sujet": "61a5215261614023d5395041aa22b5b008f64d3bcc8bb88f8ecad61576517f66"
+    "sha256_sujet": "61a5215261614023d5395041aa22b5b008f64d3bcc8bb88f8ecad61576517f66",
+    "sha256_rapport_jury": "d9e2aaf859cf7c8bec62dd90a055d2833fb5bcafa94c480275d2c0626cc256fd"
   },
   "figures": [
     {
@@ -36,6 +37,97 @@
       "perimetre": "Rédaction des cinq parties des deux éditions à partir du sujet et du rapport du jury. Construction de l’ellipse et de ses foyers, compression aux sommets, preuve de la réciproque en dimension au plus quatre, polarisation unitaire y compris au rang singulier et maximum sur le polydisque. Deux figures géométriques.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Lecture de l’image numérique et de l’inégalité de von Neumann, contrôle de la compression aux sommets et des deux sous-questions de 4.5. Vérification directe de la paramétrisation de l’ellipse et du contre-exemple de dimension cinq, avec la marge réelle entre le disque et les côtés du triangle.",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "agent": "rennes_oraux_economie",
+      "session": "rennes_oraux_economie"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5 (1)",
+      "4.5 (2)",
+      "4.6",
+      "4.7",
+      "4.8",
+      "5.1",
+      "5.2",
+      "5.3",
+      "5.4",
+      "5.5",
+      "5.6",
+      "5.7",
+      "5.8"
+    ],
+    "pages_du_sujet": 8,
+    "pages_pdf_des_questions": {
+      "1.1": 2,
+      "1.2": 2,
+      "1.3": 2,
+      "1.4": 2,
+      "1.5": 2,
+      "1.6": 2,
+      "2.1": 2,
+      "2.2": 2,
+      "2.3": 2,
+      "2.4": 2,
+      "2.5": 2,
+      "3.1": 3,
+      "3.2": 3,
+      "3.3": 3,
+      "3.4": 3,
+      "3.5": 3,
+      "4.1": 4,
+      "4.2": 4,
+      "4.3": 4,
+      "4.4": 4,
+      "4.5 (1)": 4,
+      "4.5 (2)": 4,
+      "4.6": 5,
+      "4.7": 5,
+      "4.8": 5,
+      "5.1": 5,
+      "5.2": 5,
+      "5.3": 5,
+      "5.4": 5,
+      "5.5": 6,
+      "5.6": 6,
+      "5.7": 6,
+      "5.8": 6
+    },
+    "precision": "Page du fac-similé où commence la consigne de la sous-question, couverture comprise. Les pages 7 et 8 du PDF sont blanches. Les deux demandes de la question 4.5 sont numérotées (1) et (2) dans le sujet."
+  }
 }

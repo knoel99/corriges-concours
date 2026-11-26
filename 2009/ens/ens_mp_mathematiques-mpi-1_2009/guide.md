@@ -4,7 +4,9 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Le problème établit le théorème de Freiman–Rusza–Chang pour les parties finies des entiers. On note |A| le cardinal de A. Le rapport du jury corrige la parité, la densité et la définition de la tension. Les cas où d’autres majorations imprimées échouent sont examinés avant la preuve finale.
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Le problème établit le théorème de Freiman–Ruzsa–Chang pour les parties finies des entiers. On note $|A|$ le cardinal de $A$. Le rapport du jury corrige la parité, la densité et la définition de la tension. Les cas où d’autres majorations imprimées échouent sont examinés avant la preuve finale.
 
 ## I. Sommes de parties
 
@@ -345,6 +347,10 @@ On obtient $\widehat g(x)=\tfrac N2\sum_j(c_j\mathbf1_{x=x_j}+\bar c_j\mathbf1_{
 
 Pour $N$ impair, l’indépendance garantit que les fréquences $x_j,-x_j$ sont toutes distinctes. Parseval donne alors $\sum_a g(a)^2=(N/2)\sum_j|c_j|^2$. Le rapport du jury ajoute précisément l’hypothèse $N$ impair. Sans elle, $N=2$, $x_1=1$, $c_1=i$ donnent $g=0$ et un membre droit égal à un. En général la contribution moyenne d’un éventuel $x_j=N/2$ est $(\Re c_j)^2$ au lieu de $|c_j|^2/2$.
 
+Écrivons précisément le terme supplémentaire lorsque $N$ est pair. L’indépendance empêche que deux indices distincts représentent des fréquences égales ou opposées. Un seul indice $j_0$ peut donc vérifier $x_{j_0}=-x_{j_0}$, nécessairement $x_{j_0}=N/2$. Sa contribution à $g(a)$ est $(-1)^a\Re c_{j_0}$. L’orthogonalité des caractères donne alors
+$$\frac1N\sum_a g(a)^2=\frac12\sum_j|c_j|^2+\frac12\Re(c_{j_0}^2),$$
+le dernier terme étant omis si cet indice n’existe pas. Cette formule retrouve exactement le contre-exemple et la version corrigée du jury.
+
 ### Question III.6.c
 
 > [!INDICATION]
@@ -512,7 +518,7 @@ Vérifions que cette taille est au moins $N[128s(4/3)^{(d-1)/4}]^{-d}$. Si $1\le
 \]
 Le membre gauche est inférieur à $0.6\log k-2.45$. Par $\log k\le k/10+\log10-1$, il est au plus $0.06k-1.66$, inférieur au membre droit. Cela donne la borne imprimée dans tout le régime utile pour V.4.d. Si $\alpha\le1/2$ mais $K$ est vide, le groupe entier convient avec $d=1$.
 
-## V. Théorème de Freiman–Rusza–Chang
+## V. Théorème de Freiman–Ruzsa–Chang
 
 ### Question V.1.a
 
@@ -666,6 +672,8 @@ Avec V.5.a, $t\le\log_2(\sigma^4/\beta)$. Ces estimations suffisent pour V.6.
 La seconde borne imprimée $\log(\tau/|A|)\le c_2(d+\log(\sigma/\beta))$ ne peut valoir pour toutes les données. Prenons $A=\{1,2,4,\dots,2^{n-1}\}$ et $P=\{0\}$ représentée par une direction de longueur un, donc $d=1$, $\beta=1/n$ et $\sigma\le n$. Cette borne imposerait $\tau\le n^{O(1)}$. Or une boîte de taille $\tau$ a au plus $\log_2\tau$ directions de longueur supérieure à un. Pour $m=\lfloor n/2\rfloor$, son ensemble de $m$-sommes a au plus $\tau m^{\log_2\tau}$ éléments, en multipliant chacune des longueurs utiles par au plus $m$. Les sommes de $m$ puissances de deux distinctes sont toutes différentes par écriture binaire, donc il en faut au moins $\binom nm\ge2^n/(n+1)$. Une taille polynomiale imposerait $2^n/(n+1)\le\exp(O((\log n)^2))$, impossible. Le facteur de l’ordre de $\sigma$ intervenant dans la construction ne peut donc être simplement supprimé de la majoration générale.
 
 Même la première borne prise littéralement avec $\beta$ libre peut avoir un membre droit négatif. Par exemple avec $A=\{0,\ldots,n-1\}$ et $P=2A-2A$, $d=1$, $\beta=(4n-3)/n$ et $\log(\sigma/\beta)\to-\log2$. Alors $d+\sigma\log(\sigma/\beta)\to 1-2\log2<0$. Les estimations constructives ci-dessus traitent aussi ce cas.
+
+Dans le contre-exemple, les sommes de deux puissances distinctes ont deux chiffres non nuls en base deux. Les doubles d’une puissance ont un seul chiffre non nul. Ainsi les $n(n+1)/2$ paires non ordonnées ont toutes des sommes différentes et $\sigma=(n+1)/2$. Avec $\beta=1/n$, le logarithme de $\sigma/\beta$ est donc bien de l’ordre de $\log n$ alors que les sommes de $\lfloor n/2\rfloor$ puissances distinctes exigent le nombre de points établi ci-dessus.
 
 ### Question V.6
 
