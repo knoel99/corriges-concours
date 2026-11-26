@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Sujet et document réponse](https://www.banquept.fr/documents/2022/ph_b_th_2022_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2022/rapport_phys_b_ecrit_2022.pdf) · [Coefficients de la session](https://www.banquept.fr/documents/livret/2022/Livret_PT_2022.pdf#page=13)
 
 **Réfrigération de l’air et techniques cryogéniques.** Les puissances et transferts sont orientés explicitement dans les bilans. Les valeurs relevées graphiquement sont arrondies à la précision des diagrammes du sujet.
@@ -26,7 +28,7 @@ La turbine adiabatique reçoit de l’air en E à 10 bar et −10 °C. On descen
 
 ### Question 4 · États et cycle dans le plan pression-enthalpie
 
-Les isobares sont horizontales et les trois transformations de machine suivent des isentropes. La pression intermédiaire, obtenue à l’intersection de $h_B=h_A+126$ avec $s=s_A$, est voisine de 4 bar. Les valeurs suivantes sont des lectures arrondies. Le document 2 arrondit la température à la sortie de la turbine à −140 °C.
+Les isobares sont horizontales et les trois transformations de machine suivent des isentropes. La liaison de puissance explique pourquoi on ne peut pas choisir arbitrairement une pression identique de part et d’autre des étages. La pression intermédiaire, obtenue à l’intersection de $h_B=h_A+126$ avec $s=s_A$, est voisine de 4 bar. Les valeurs suivantes sont des lectures arrondies. Le document 2 arrondit la température à la sortie de la turbine à −140 °C.
 
 | État | Entrée de l’organe suivant | Pression (bar) | Température (°C) | Enthalpie (kJ/kg) |
 |---|---|---:|---:|---:|
@@ -104,13 +106,13 @@ La condensation du diazote à 1 bar se fait vers 77 K. Pour extraire de la chale
 
 ### Question 19 · Fraction de liquide d’hélium après la vanne
 
-Le document 5 donne une détente à enthalpie constante depuis l’isobare 3 bar vers le palier d’environ 4,2 K à 1 bar. Sur ce palier, on relève approximativement $s_l\simeq3{,}5$, $s_m\simeq5{,}9$ et $s_v\simeq8{,}3$ en kJ/(kg·K) dans les références du diagramme. Avec $s_m=x_l s_l+(1-x_l)s_v$, la fraction liquide vaut $x_l=(s_v-s_m)/(s_v-s_l)\simeq(8{,}3-5{,}9)/(8{,}3-3{,}5)\simeq0{,}5$. On obtient environ la moitié de la masse sous forme liquide. La lecture utilise l’entropie du mélange **après** la détente irréversible.
+Le document 5 donne une détente à enthalpie constante depuis l’isobare 3 bar vers le palier d’environ 4,2 K à 1 bar. Sur ce palier, on relève approximativement $s_l\simeq3{,}5$, $s_m\simeq5{,}9$ et $s_v\simeq8{,}3$ en kJ/(kg·K) dans les références du diagramme. Avec $s_m=x_l s_l+(1-x_l)s_v$, la fraction liquide vaut $x_l=(s_v-s_m)/(s_v-s_l)\simeq(8{,}3-5{,}9)/(8{,}3-3{,}5)\simeq0{,}5$. Au palier, l’écart entre entropies saturées vaut aussi approximativement $20{,}4/4{,}2\simeq4{,}9$ kJ/(kg·K), ce qui concorde avec la largeur lue. On obtient environ la moitié de la masse sous forme liquide. La lecture utilise l’entropie du mélange **après** la détente irréversible.
 
 ![Figure — Lecture du titre sur le palier de saturation de l’hélium](figures/helium.svg)
 
 ### Question 20 · Température accessible avec l’hélium liquide
 
-À 1 bar, l’évaporation d’hélium impose un bain à environ **4,2 K**. À 15 mbar, le palier du document 5 est vers **1,8 K**. Un corps qui donne de la chaleur au bain s’en approche par températures supérieures. Le transfert exige un écart non nul tant que la puissance extraite reste finie.
+À 1 bar, l’évaporation d’hélium impose un bain à environ **4,2 K**. À 15 mbar, le palier du document 5 est vers **1,8 K**. Un corps qui donne de la chaleur au bain s’en approche par températures supérieures. La lecture à 15 mbar correspond à environ 1,77 K avant arrondi. Le transfert exige un écart non nul tant que la puissance extraite reste finie.
 
 ### Question 21 · Étapes de refroidissement des aimants
 
