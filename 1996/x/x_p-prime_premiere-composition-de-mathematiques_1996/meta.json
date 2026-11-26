@@ -1,0 +1,130 @@
+{
+  "slug": "x_p-prime_premiere-composition-de-mathematiques_1996",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "P prime",
+    "matiere": "Première composition de mathématiques",
+    "annee": 1996
+  },
+  "questions": 14,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.sujetsetcorriges.fr/dl/X/Maths/PC/sec-x-1996-maths1-PC.pdf",
+    "sha256_sujet": "4ee37f0c96cf037e8da2398e4bb26eac9b9bcc6ef0b653a583a27817746f7752",
+    "rapport_jury": "",
+    "provenance": "Reproduction en deux pages diffusée par Sujets et Corrigés, rapprochée des deux pages de la notice UPS m96xp1. Les deux exemplaires donnent la même composition et les mêmes bornes.",
+    "exemplaires_ups": [
+      {
+        "notice": "m96xp1",
+        "document": "m96xp1ea",
+        "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-b0e180dcb04c964c9bd3",
+        "sha256": "71471d9521f2ad48f577814844006afe9c5b460975e5cc66c8491292b583cdba",
+        "pages": 2
+      }
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/onde-progressive.svg",
+      "question": "4",
+      "legende": "Pour v égal à quatre, l’onde de hauteur deux se déplace de quatre unités vers la gauche entre les temps zéro et un."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "maths_x_p-prime_1997_1999",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction intégrale des deux éditions sur les 2 pages du fac-similé. 14 consignes pointées. I. Constantes du mouvement pour les solutions périodiques ; II. Une onde progressive ; III. Dérivation, intégration et opérateurs différentiels. Vérification des démonstrations, des notations et des bornes."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.a",
+      "1.b",
+      "1.c",
+      "2",
+      "3.a",
+      "3.b",
+      "3.c",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1.a",
+        "page_pdf": 1
+      },
+      {
+        "question": "1.b",
+        "page_pdf": 1
+      },
+      {
+        "question": "1.c",
+        "page_pdf": 1
+      },
+      {
+        "question": "2",
+        "page_pdf": 1
+      },
+      {
+        "question": "3.a",
+        "page_pdf": 1
+      },
+      {
+        "question": "3.b",
+        "page_pdf": 1
+      },
+      {
+        "question": "3.c",
+        "page_pdf": 1
+      },
+      {
+        "question": "4",
+        "page_pdf": 1
+      },
+      {
+        "question": "5",
+        "page_pdf": 2
+      },
+      {
+        "question": "6",
+        "page_pdf": 2
+      },
+      {
+        "question": "7",
+        "page_pdf": 2
+      },
+      {
+        "question": "8",
+        "page_pdf": 2
+      },
+      {
+        "question": "9",
+        "page_pdf": 2
+      },
+      {
+        "question": "10",
+        "page_pdf": 2
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}
