@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Répondre à une question d’économie avec un dossier en anglais
 
 On peut annoncer la question ainsi à l’oral. *How does immigration affect wages and employment for earlier residents and for newcomers, and what would have happened without the inflow?* Cette formulation identifie deux populations et un contrefactuel. Elle donne aux documents une fonction argumentative. Le rapport de 2018 invite à traiter les salaires des natifs en distinguant qualifications et mécanismes, puis à ouvrir la perspective aux pays de départ ou aux migrations internes.
@@ -33,3 +35,9 @@ Supposons que les hauts salaires attirent les arrivants dans deux villes industr
 **Relance possible.** Un salaire moyen en baisse signifie-t-il que les personnes déjà présentes ont perdu du revenu ? Imaginons dix salariés à 100 et deux nouveaux salariés à 70. Si tous conservent ces montants, la moyenne devient 95. La baisse traduit ici un changement de composition. Suivre les travailleurs dans la durée, les heures travaillées et leurs changements de profession permet d’aborder la question distributive.
 
 **Ouverture.** Les pays de départ peuvent perdre du personnel qualifié et recevoir simultanément des transferts de revenu des émigrés. Les migrations internes déplacent également compétences et demandes de services. Finir en distinguant les gagnants et les perdants potentiels, sans transformer une courbe de flux ou d’emploi en preuve d’un effet universel.
+
+## Vérification sur le sujet
+
+Relecture des cinq graphiques et du rapport pour les effets sur les salaires, les migrations internes et les pays de départ. Les taux suédois concernent des hommes de la cohorte 1997–1999. Les séries des documents 1 à 3 n’ont pas le même dénominateur.
+
+Le document 5 donne, parmi les personnes résidant depuis plus de vingt ans, un écart négatif d’environ trois ans ou davantage pour plusieurs séries. Parmi celles présentes depuis un à cinq ans, les déficits représentés sont moins grands. Il s’agit de groupes d’entrées et d’origines distincts observés selon leur ancienneté. Ce contraste ne démontre aucune baisse de la durée d’études d’une personne quand son séjour se prolonge.

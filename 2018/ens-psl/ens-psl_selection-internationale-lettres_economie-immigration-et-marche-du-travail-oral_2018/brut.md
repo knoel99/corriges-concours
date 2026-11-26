@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Exposé proposé — Immigration and the labor markets
 
 Dans la zone OCDE, l’indice des flux d’immigration du document 2 passe d’une base 100 en 2000 à environ 150 vers le sommet de 2007–2008, puis recule. Ce mouvement ne dit pas comment les salaires ont évolué. Une même expansion peut attirer des travailleurs et faire monter les salaires, alors même qu’à demande donnée une offre accrue de travail exercerait une pression en sens inverse. Pour aborder la question, il faut donc distinguer les effets sur les travailleurs déjà présents, les conditions d’emploi des arrivants et la manière d’identifier un effet causal.
@@ -33,3 +35,9 @@ Comparer simplement deux villes, dont l’une reçoit plus d’arrivants, risque
 Les politiques qui autorisent l’accès rapide au travail ou facilitent la reconnaissance d’une qualification visent à améliorer l’appariement entre tâches et personnes. Leurs bénéfices dépendront des postes disponibles, de l’apprentissage linguistique et des conditions d’emploi offertes. Du côté des pays de départ, la perte de certains travailleurs qualifiés peut coexister avec des envois d’argent, des liens commerciaux ou des retours porteurs de compétences. Des migrations internes, notamment rurales vers les villes, posent à leur tour la question des institutions qui donnent ou limitent l’accès à l’emploi et aux services.
 
 Le pluriel de « labor markets » importe finalement autant que le mot immigration. Il invite à mesurer qui fait quel travail, dans quelle zone et à quelle date. Sans ces précisions, une moyenne nationale risque de masquer à la fois la progression économique des arrivants et les ajustements auxquels sont confrontés certains travailleurs déjà en place.
+
+## Vérification sur le sujet
+
+Relecture des cinq graphiques et du rapport pour les effets sur les salaires, les migrations internes et les pays de départ. Les taux suédois concernent des hommes de la cohorte 1997–1999. Les séries des documents 1 à 3 n’ont pas le même dénominateur.
+
+Le document 5 donne, parmi les personnes résidant depuis plus de vingt ans, un écart négatif d’environ trois ans ou davantage pour plusieurs séries. Parmi celles présentes depuis un à cinq ans, les déficits représentés sont moins grands. Il s’agit de groupes d’entrées et d’origines distincts observés selon leur ancienneté. Ce contraste ne démontre aucune baisse de la durée d’études d’une personne quand son séjour se prolonge.

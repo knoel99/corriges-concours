@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Redistribuer
 
 En Amérique du Nord, dans le périmètre États-Unis–Canada du *Rapport sur les inégalités mondiales 2018*, les 10 % d’adultes aux revenus les plus élevés recevaient 34 % du revenu national en 1980 et 47 % en 2016. Cette évolution d’une part de revenu avant impôt renseigne sur la distribution à laquelle s’appliquent les politiques publiques. Elle ne suffit pas à juger de leur action. Redistribuer consiste à modifier la répartition des ressources ou des risques par des règles collectives de prélèvement et d’attribution. Pour savoir si l’opération atteint son but, il faut identifier ses bénéficiaires, ses financeurs et les changements qu’elle induit.
@@ -33,3 +35,9 @@ Supposons qu’une personne gagne 100 euros supplémentaires, paie 20 euros de p
 Quand une taxe réduit des transactions mutuellement avantageuses en l’absence d’externalité, elle peut créer une perte sèche. La recette fiscale elle-même est un transfert, utilisable pour financer des prestations ou des biens collectifs. Une assurance qui permet à un travailleur de chercher un emploi mieux adapté ou à un enfant de poursuivre sa scolarité peut augmenter la production future. L’équité et l’efficacité ne s’opposent donc pas uniformément. Il faut aussi examiner le non-recours, les frais administratifs et les adaptations d’activité ou de déclaration.
 
 Un bilan sérieux suivra la pauvreté, la distribution avant et après intervention, la couverture des risques et les réactions des agents. L’écart comptable avant et après prélèvements-transferts mesure un effet immédiat à comportements donnés. Pour prédire les effets d’une réforme, il faut encore étudier les changements de prix, de travail et de recours aux droits. Redistribuer oblige ainsi à choisir un objectif explicite, un horizon et un ensemble cohérent d’instruments.
+
+## Vérification sur le sujet
+
+Les deux éditions confrontent la distribution initiale et le revenu disponible, distinguent incidence juridique et économique et refont le gain de 40 euros pour 100 euros de revenu supplémentaire. Le rapport d’écrit attend expressément prélèvements, transferts, incitations et perte sèche.
+
+Une taxe de 2 euros sur chacune des 90 transactions qui subsistent rapporte 180 euros. Si, dans un exemple linéaire d’offre et de demande, dix autres transactions mutuellement avantageuses disparaissent et que le surplus perdu décroît linéairement de 2 euros à zéro sur ces dix unités, la perte sèche est de 10 euros. La recette de 180 euros peut financer un transfert. Elle se distingue du surplus détruit par les échanges abandonnés. Cette mesure suppose l’absence d’une externalité que corrigerait la taxe.

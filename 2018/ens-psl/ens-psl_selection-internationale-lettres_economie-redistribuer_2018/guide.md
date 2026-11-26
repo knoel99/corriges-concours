@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Déterminer qui reçoit quoi et à quelle date
 
 « Redistribuer » est un verbe. Donner un sujet, un objet et un horizon à la première phrase du devoir. Un État prélève chaque année des ressources auprès de ménages pour financer des prestations monétaires. Un système d’assurance répartit entre personnes et entre dates le coût d’un risque. Une école publique donne accès à un service dont les effets se déploient sur une génération. Ces trois formulations ouvrent des comparaisons différentes. Le jury de 2018 demande des faits sur les inégalités, des institutions et une analyse de l’impôt autant que des transferts.
@@ -33,3 +35,9 @@ Prendre à présent une allocation dont le montant baisse de 40 euros lorsque le
 Une microsimulation peut appliquer les anciens et nouveaux barèmes aux mêmes ménages et mesurer l’effet mécanique sur pauvreté et inégalité. La comparer aux paiements réels permet de détecter un défaut de recours ou des retards. Pour estimer un effet sur les heures travaillées, rechercher des groupes comparables inégalement exposés à la réforme et vérifier leurs tendances avant son entrée en vigueur. Comparer seulement bénéficiaires et non-bénéficiaires confondrait l’effet de l’aide et les difficultés qui rendent éligible.
 
 La conclusion peut revenir à la perte sèche. Si le prélèvement décourage des échanges profitables et n’en corrige aucun effet externe, il engendre un coût supplémentaire à la recette transférée. S’il finance une assurance utile ou l’accès à l’éducation, des gains distincts apparaissent. On peut alors défendre ou critiquer un dispositif précis en nommant les effets, les bénéficiaires et l’horizon retenu.
+
+## Vérification sur le sujet
+
+Les deux éditions confrontent la distribution initiale et le revenu disponible, distinguent incidence juridique et économique et refont le gain de 40 euros pour 100 euros de revenu supplémentaire. Le rapport d’écrit attend expressément prélèvements, transferts, incitations et perte sèche.
+
+Une taxe de 2 euros sur chacune des 90 transactions qui subsistent rapporte 180 euros. Si, dans un exemple linéaire d’offre et de demande, dix autres transactions mutuellement avantageuses disparaissent et que le surplus perdu décroît linéairement de 2 euros à zéro sur ces dix unités, la perte sèche est de 10 euros. La recette de 180 euros peut financer un transfert. Elle se distingue du surplus détruit par les échanges abandonnés. Cette mesure suppose l’absence d’une externalité que corrigerait la taxe.
