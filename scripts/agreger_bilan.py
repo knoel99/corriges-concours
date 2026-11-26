@@ -85,6 +85,11 @@ def agreger(lignes: Iterable[dict[str, str]]) -> dict[str, list[dict]]:
                     total["a_confirmer_production"] = total.get("a_confirmer_production", 0) + 1
             if complet:
                 total["schemas"] += int(ligne["schémas SVG"] or 0)
+    if any("a_confirmer" in g for g in groupes["banques"].values()):
+        for tableau in groupes.values():
+            for total in tableau.values():
+                total.setdefault("a_confirmer", 0)
+                total.setdefault("a_confirmer_production", 0)
     return {section: [tableau[nom] for nom in sorted(tableau)] for section, tableau in groupes.items()}
 
 
