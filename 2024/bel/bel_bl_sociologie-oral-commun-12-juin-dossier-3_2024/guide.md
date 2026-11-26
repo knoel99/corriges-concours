@@ -37,7 +37,7 @@ Document 3, p. 4. Dans l’enquête Cocon, vers 1998, 28,1 % des conceptions sui
 
 ### Deux probabilités à distinguer
 
-Document 4, p. 5. La courbe pointillée, lue à gauche, descend d’environ 48 à 34 grossesses non souhaitées pour 100 grossesses entre 1975 et la fin de la série. Le trait continu, également à gauche, monte d’environ 51 à 58 IVG pour 100 grossesses non souhaitées, après des valeurs proches de 62. L’axe droit mesure le recours aux méthodes dites très efficaces et approchant 60 % à la fin. La légende du dossier annonce 1995–2007, mais l’abscisse imprimée commence en 1975. Les mouvements de sens opposés des deux probabilités éclairent le maintien du nombre d’IVG malgré l’amélioration de la maîtrise des conceptions.
+Document 4, p. 5. La courbe pointillée, lue à gauche, descend d’environ 48 à 34 grossesses non souhaitées pour 100 grossesses entre 1975 et la fin de la série. Le trait continu, également à gauche, monte d’environ 51 à 58 IVG pour 100 grossesses non souhaitées, après des valeurs proches de 62. L’axe droit mesure le recours aux méthodes dites très efficaces, qui approche 60 % à la fin. La légende du dossier annonce 1995–2007, mais l’abscisse imprimée commence en 1975. Les mouvements de sens opposés des deux probabilités éclairent le maintien du nombre d’IVG malgré l’amélioration de la maîtrise des conceptions.
 
 ### Les profils des personnes et les comptes d’actes
 

@@ -37,7 +37,7 @@ Document 3, p. 4. L’Ined compare en 2003 l’espérance de vie restante à 35 
 
 ### Lieu de vie et sélection par la santé
 
-Document 4, p. 5. Le tableau oppose 11,4 millions de personnes à domicile à 0,7 million en institution. Les maladies ou problèmes cardiovasculaires sont déclarés par 43 % du premier groupe et 37 % du second. À l’inverse, les maladies ou problèmes neurologiques concernent 2 % à domicile et 39 % en institution. L’écart femmes–hommes pour les problèmes des os et articulations est de 16 points à domicile et 9 en institution. L’entrée en établissement dépend notamment de l’autonomie et de l’entourage ; attribuer toute différence au lieu lui-même serait méconnaître ce recrutement.
+Document 4, p. 5. Le tableau oppose 11,4 millions de personnes à domicile à 0,7 million en institution. Les maladies ou problèmes cardiovasculaires sont déclarés par 43 % du premier groupe et 37 % du second. À l’inverse, les maladies ou problèmes neurologiques concernent 2 % à domicile et 39 % en institution. L’écart femmes–hommes, standardisé sur l’âge, atteint 16 points à domicile et 9 en institution pour les problèmes des os et des articulations. Cette standardisation donne aux deux sexes la même structure d’âge de référence. L’entrée en établissement dépend notamment de l’autonomie et de l’entourage ; attribuer toute différence au lieu lui-même serait méconnaître ce recrutement.
 
 ### Vote, confiance et information
 
