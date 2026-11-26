@@ -5,7 +5,9 @@
     "filiere": "Séries A/L",
     "matiere": "Histoire des arts (oral 3)",
     "annee": 2026,
-    "type": "oral"
+    "type": "oral",
+    "modalite": "oral",
+    "serie": "Lettres et arts"
   },
   "questions": 2,
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
@@ -13,7 +15,9 @@
     "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-11/Arts%202026.pdf#page=15",
     "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Arts%20-%20Histoire%20des%20arts%202026.pdf#page=5",
     "sha256_sujet": "2a7f074fb3a471a12b3b5eca1afb7535f44fdcba7416cca4f561ee10babf394e",
-    "sha256_rapport": "65d22bc892cadb2c19a427274cbe4c582f3cf2588d3e63cc1b15e00ba51d7b01"
+    "sha256_rapport": "65d22bc892cadb2c19a427274cbe4c582f3cf2588d3e63cc1b15e00ba51d7b01",
+    "index_annales": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2026",
+    "sha256_index_annales": "6a0a379a1afac9e598e4af93a5024924922934cff723ae419a1eef2b97ac5ca3"
   },
   "figures": [
     {
@@ -38,6 +42,146 @@
       "perimetre": "Rédaction des deux exposés de l’oral 3 à partir des cinq légendes et du rapport, lecture comparée des deux tracts, du portrait photographique retouché et de l’allégorie de guerre civile, problématisation du musée imaginaire, deux schémas et relances. Sujet p. 15 et rapport pp. 5–6.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "revision",
+      "agent": "x_hist_1986",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "fournisseur": "codex",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Lecture des quatre pages du tract, du portrait de Breton et des trois autres œuvres. Confrontation des positions de l’artiste en 1920 et 1930, et analyse de l’Objet de Valentine Hugo."
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "format_epreuve": {
+    "preparation_minutes": 120,
+    "exercices_successifs": 2,
+    "expose_minutes_par_exercice": 20,
+    "entretien_minutes_par_exercice": 10,
+    "attribution": "Thème tiré au sort, deux exercices successifs."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2026-11/Arts%202026.pdf#page=15",
+      "sha256": "2a7f074fb3a471a12b3b5eca1afb7535f44fdcba7416cca4f561ee10babf394e",
+      "pages": 19,
+      "pages_verifiees": [
+        {
+          "numero": 15,
+          "rendu_sha256": "c26597966d8e12765e6abbf460a404e76a5ea479d2923aba62d0d3872d2cb274"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2026-10/Arts%20-%20Histoire%20des%20arts%202026.pdf#page=5",
+      "sha256": "65d22bc892cadb2c19a427274cbe4c582f3cf2588d3e63cc1b15e00ba51d7b01",
+      "pages": 6,
+      "pages_verifiees": [
+        {
+          "numero": 5,
+          "rendu_sha256": "4ed9f446ad3d496aa78654cba20e5730be7f171d83c3497052d99c15c335f46f"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "6bb088b7f40fe115ed8156fc5eb76d9a7d2381fd1f9b44465654e823c2455c28"
+        }
+      ]
+    }
+  },
+  "corpus_verifie": [
+    {
+      "oeuvre": "Anonyme, André Breton en homme-sandwich avec une affiche de Francis Picabia",
+      "source": "https://www.melusine-surrealisme.fr/henribehar/andre-breton-chronologie-numerique-3",
+      "nature": "photographie reproduite dans la chronologie illustrée ; empreinte de l’image",
+      "statut": "Reproduction de l’œuvre identifiée",
+      "sha256_piece_consultee": "d662f095cda3067f813f0a93c6d7bc3287aeee5097070867868554e83be44f63",
+      "url_image": "https://www.melusine-surrealisme.fr/images/textes/2023-AB-Dada-0009.png"
+    },
+    {
+      "oeuvre": "Collectif, Un cadavre",
+      "source": "https://www.traces-ecrites.com/document/un-cadavre-violente-charge-contre-andre-breton/",
+      "statut": "Première page, trois autres pages et détail du portrait examinés. Exemplaire de 36,8 × 31,9 cm.",
+      "vues": [
+        {
+          "url": "https://traces-ecrites.com/wp-content/uploads/documents/01-un-cadavre-violente-charge-contre-andre-breton.jpg",
+          "sha256": "f7334253eb2bacddf2fb224a0d40d90c99168d241c79ed71b1d7ebad492b67ff"
+        },
+        {
+          "url": "https://traces-ecrites.com/wp-content/uploads/documents/02-un-cadavre-violente-charge-contre-andre-breton.jpg",
+          "sha256": "fcb7a741a098f576f87ba7348465eea139f27fa4fc323465414b03dc8a39ec20"
+        },
+        {
+          "url": "https://traces-ecrites.com/wp-content/uploads/documents/03-un-cadavre-violente-charge-contre-andre-breton.jpg",
+          "sha256": "e494dc3b36be28f00f7a463b87a1401e1a11113948cdea33c6ba3fb15bc98d7f"
+        },
+        {
+          "url": "https://traces-ecrites.com/wp-content/uploads/documents/04-un-cadavre-violente-charge-contre-andre-breton.jpg",
+          "sha256": "b91e737bcfef57c5919dc804b0e6a00e82297d142c7c063f90149d2a5c7a70e2"
+        },
+        {
+          "url": "https://traces-ecrites.com/wp-content/uploads/documents/05-un-cadavre-violente-charge-contre-andre-breton.jpg",
+          "sha256": "8026d41893583fefcf7a1fc081379add75e1583061a7a51c081531f610abe0f4"
+        }
+      ],
+      "contre_verification": {
+        "oeuvre": "Exemplaires sur différents papiers",
+        "source": "https://librairiedeselephants.be/uploads/File/CatalogueFirstPapersofSurrealism.pdf#page=39",
+        "nature": "publication contenant la reproduction",
+        "statut": "Reproduction de l’œuvre publiée et vérifiée",
+        "sha256_piece_consultee": "1f1439da06960e3baafc7f1c8eb3d58cdf1b0056ed90ad0c1dce101285aae588",
+        "page_pdf": 39
+      }
+    },
+    {
+      "oeuvre": "Max Ernst, The Punching Ball ou l’immortalité de Buonarotti",
+      "source": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/923122/2473636/restricted",
+      "nature": "aperçu de la reproduction institutionnelle ; SHA-256 de la vignette examinée",
+      "statut": "Reproduction de l’œuvre identifiée",
+      "sha256_piece_consultee": "dd947ad4d07759429459f7a3d169432e633f6f746e946692513a9e17b496a499"
+    },
+    {
+      "oeuvre": "Salvador Dalí, Construction molle avec haricot bouilli",
+      "source": "https://iiif.micr.io/zFTZJ/full/1200,/0/default.jpg",
+      "nature": "aperçu de la reproduction institutionnelle ; SHA-256 de la vignette examinée",
+      "statut": "Reproduction de l’œuvre identifiée",
+      "sha256_piece_consultee": "72484cd30900246f182ae809acf7b7d434240a1f460c6933ff5a36e2687462eb"
+    },
+    {
+      "oeuvre": "Tristan Tzara, DADA soulève tout",
+      "source": "https://www.moma.org/media/W1siZiIsIjMwMzMwMiJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDUxMng1MTJcdTAwM2UiXV0.jpg?sha=b8e9fc94b7f4f103",
+      "nature": "aperçu de la reproduction institutionnelle ; SHA-256 de la vignette examinée",
+      "statut": "Reproduction de l’œuvre identifiée",
+      "sha256_piece_consultee": "2f2d8970fe71f639c7e889f58ff73434abc471488c4443350ea9854c84c4392d"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "reperes": [
+      {
+        "question": 1,
+        "titre": "Rébellion, engagements",
+        "page_pdf": 15
+      },
+      {
+        "question": 2,
+        "titre": "Le musée imaginaire du surréalisme",
+        "page_pdf": 15
+      }
+    ],
+    "reproductions_sur_le_fascicule": [],
+    "precision": "Les œuvres et les deux consignes sont identifiées dans le fascicule. Les exemplaires documentés par les collections et les publications permettent une analyse des cinq œuvres. Le cadrage, le format matériel et l’ordre des vues sur la planche distribuée aux candidats demeurent inconnus."
+  }
 }
