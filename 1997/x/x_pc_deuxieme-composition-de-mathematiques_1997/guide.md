@@ -136,4 +136,4 @@ $$a=-\frac{2(n+4)}{n+2},\quad b=\frac{(n+3)(n+4)}{(n+1)(n+2)},\quad c=-\frac{2(n
 
 En effet les deux dernières dérivées donnent $a,b$, la première donne $c$ et la valeur en $1$ donne $d$. Les formules satisfont aussi le cas $n=0$. Ce choix réalise les trois contraintes, et $A=B/(X-1)^4$ a norme au carré $[X^{n+2}]B=b$ car il est unitaire. La famille orthonormale est $P_n^{(2)}=B/((X-1)^4\sqrt b)$.
 
-![Vérification de l’orthonormalisation pour trois degrés.](figures/figure-2.svg)
+![Trois polynômes orthonormés au second ordre.](figures/figure-2.svg)
