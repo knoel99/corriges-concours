@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Sujet officiel](https://www.banquept.fr/documents/2018/ph_a_2018_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2018/rapport_phys_a_ecrit_2018.pdf) · [Livret de la session](https://www.banquept.fr/documents/livret/2018/Livret_PT_2018.pdf#page=12)
 
 **Premiers instruments électroniques.** Comment deux oscillations inaudibles produisent-elles le la du diapason ? Les six parties suivent la tonalité et le volume du thérémine, le haut-parleur, les gestes du musicien et la conduction dans un tube à vide.
@@ -24,7 +26,7 @@ Un passe-bas placé après le multiplieur laisse passer la différence et attén
 
 ### Question I-3-a · Équation de la maille oscillante
 
-Posons $u=U_{C_0}$ et orientons le courant dans le sens de la charge de l’armature de potentiel le plus élevé. Alors $i=C_0\dot u$. Dans la maille libre, $u+L_0\,\mathrm di/\mathrm dt=0$. D’où $\ddot u+u/(L_0C_0)=0$. Les composants idéaux échangent l’énergie électrique et magnétique.
+Posons $u=U_{C_0}$ et orientons le courant entrant par la borne choisie positive pour repérer $u$. Alors $i=C_0\dot u$. Dans la maille libre, $u+L_0\,\mathrm di/\mathrm dt=0$. D’où $\ddot u+u/(L_0C_0)=0$. Les composants idéaux échangent l’énergie électrique et magnétique.
 
 ### Question I-3-b · Solution libre et conditions initiales
 
@@ -52,7 +54,7 @@ Avec $\omega=2\pi f$ et $Z_C=1/(j\omega C)$, le rapport $T=Z_C/(R+Z_C)=1/(1+j\om
 
 ### Question I-6-b · Choix d’une résistance
 
-Avec $C=0{,}01$ µF, soit 10 nF, choisir par exemple $R=3{,}3$ kΩ. On obtient $f_c=4{,}82$ kHz, entre les deux raies. Les modules calculés sont 0,996 à 440 Hz et 0,030 à 160,44 kHz. Cette valeur convient à la note du test et aux notes du tableau 1. Le choix d’une résistance dépend de la bande audio que l’on veut conserver.
+Avec $C=0{,}01$ µF, soit 10 nF, choisir par exemple $R=3{,}3$ kΩ. On obtient $f_c=4{,}82$ kHz, entre les deux raies. Les modules calculés sont 0,996 à 440 Hz et 0,030 à 160,44 kHz. La réjection de la somme atteint environ 30,4 dB. Cette valeur convient à la note du test et aux notes du tableau 1. Le choix d’une résistance dépend de la bande audio que l’on veut conserver.
 
 ### Question I-7 · Position du la et loi logarithmique
 
@@ -122,7 +124,7 @@ Le schéma équivalent comporte une coupure en série avec la source. Le condens
 
 ### Question II-B-3 · Chronogramme du détecteur de crête
 
-De zéro à $\theta_1$, les deux tensions se superposent. Ensuite $S$ décroît exponentiellement, y compris lorsque $e$ devient négatif. L’instant $\theta_2$ est la première intersection sur le front montant suivant, $T'<\theta_2<5T'/4$, telle que $E_{\max}\sin(\omega'\theta_2)=e(\theta_1)\exp[-(\theta_2-\theta_1)/(RC)]$. De $\theta_2$ à $5T'/4$, la diode recharge le condensateur et $S=e$. Le tracé prend $RC=5T'$ pour rendre l’ondulation visible.
+De zéro à $\theta_1$, les deux tensions se superposent. Ensuite $S$ décroît exponentiellement, y compris lorsque $e$ devient négatif. L’instant $\theta_2$ est la première intersection sur le front montant suivant, $T'<\theta_2<5T'/4$, telle que $E_{\max}\sin(\omega'\theta_2)=e(\theta_1)\exp[-(\theta_2-\theta_1)/(RC)]$. De $\theta_2$ à $5T'/4$, la diode recharge le condensateur et $S=e$. Le tracé prend $RC=5T'$ pour rendre l’ondulation visible. Avec ce choix, le courant s’annule à $0{,}255\,T'$ et reprend à $1{,}157\,T'$.
 
 ![Figure — Détection de la crête sur une période et un quart](figures/detecteur.svg)
 
@@ -196,7 +198,7 @@ Posons $g=2\pi Nab_0$ et $v=\dot z$. La membrane et la bobine se déplacent ense
 
 ### Question IV-4 · Source électrique équivalente de la bobine
 
-La quantité $e=g\dot z$ est la f.é.m. induite par le déplacement. En effet $(\dot z\vec e_z)\times(b_0\vec e_r)=\dot z b_0\vec e_\theta$. La série équivalente comporte la résistance $R$, l’inductance propre $L$ et une source interne qui représente une élévation de tension $e$ dans le sens du courant. Avec la convention du sujet, $s=Ri+L\,\mathrm di/\mathrm dt-e$. Le couplage échange les puissances mécaniques et électriques avec des signes opposés.
+La quantité $e=g\dot z$ est la f.é.m. induite par le déplacement. En effet $(\dot z\vec e_z)\times(b_0\vec e_r)=\dot z b_0\vec e_\theta$. La série équivalente comporte la résistance $R$, l’inductance propre $L$ et une source interne qui représente une élévation de tension $e$ dans le sens du courant. Avec la convention du sujet, $s=Ri+L\,\mathrm di/\mathrm dt-e$. Avec ces orientations, la puissance des forces de Laplace sur la membrane vaut $-giv$ et celle de la f.é.m. sur les charges vaut $ei=gvi$. Leur somme est nulle.
 
 ![Figure — Équivalent électrique orienté du haut-parleur](figures/bobine.svg)
 
@@ -230,7 +232,7 @@ La surface $s$ fait face à la main située à $x$. L’aire restante $S-s$ fait
 
 ### Question V-4 · Effet d’un petit recul
 
-Après un recul $\delta x$, $C'_{h1}=\varepsilon_0[(S-s)/d+s/(x+\delta x)]$. Pour $|\delta x|\ll x$, la variation au premier ordre est $\delta C_{h1}\simeq-\varepsilon_0s\,\delta x/x^2$. Avec $s=0{,}010$ m², $x=0{,}20$ m et $\delta x=0{,}005$ m, elle vaut $-1{,}11\times10^{-14}$ F, soit **−11 fF**. La modification est petite et de signe opposé pour une approche. La géométrie réelle de l’antenne s’écarte des plaques idéales.
+Après un recul $\delta x$, $C'_{h1}=\varepsilon_0[(S-s)/d+s/(x+\delta x)]$. Pour $|\delta x|\ll x$, la variation au premier ordre est $\delta C_{h1}\simeq-\varepsilon_0s\,\delta x/x^2$. Avec $s=0{,}010$ m², $x=0{,}20$ m et $\delta x=0{,}005$ m, elle vaut $-1{,}11\times10^{-14}$ F, soit **−11 fF**. Le calcul sans développement donne −10,8 fF pour ce recul, en accord avec l’estimation différentielle. La modification est petite et de signe opposé pour une approche. La géométrie réelle de l’antenne s’écarte des plaques idéales.
 
 ### Question V-5 · Ordre de grandeur pour une antenne cylindrique
 
@@ -312,4 +314,4 @@ En amont, $n^\pm=j^\pm/(ev)$ donc $\rho=-e(n^++n^-) =-(j^++j^-)/v=-(2I_{\max}-i)
 
 Posons $W=V+V_0$ et $a=(j/\varepsilon_0)\sqrt{m_e/(2e)}$. En aval, $j=i/S$. Avec la relation **imprimée** $W^{3/4}=(x-x_0)\sqrt a$ à $x=d$, on obtient $i=p_{\rm imp}(V_0+U_A)^{3/2}$ où $p_{\rm imp}=\varepsilon_0S\sqrt{2e/m_e}/(d-x_0)^2$. L’exposant demandé est donc trois demis.
 
-Un contrôle de l’intégration révèle un facteur numérique dans la relation fournie. L’équation imprimée juste au-dessus est $W''=aW^{-1/2}$. Multiplier par $W'$ et utiliser $W(x_0)=W'(x_0)=0$ donne $(W')^2=4a\sqrt W$. Sur la branche croissante, on en déduit $W^{3/4}=(3/2)\sqrt a\,(x-x_0)$. L’intégration directe conduit ainsi à la même puissance avec $p=(4/9)p_{\rm imp}$. Cette écriture fait apparaître la distance effective $d-x_0$ pour le régime étudié.
+Un contrôle de l’intégration révèle un facteur numérique dans la relation fournie. L’équation imprimée juste au-dessus est $W''=aW^{-1/2}$. Multiplier par $W'$ et utiliser $W(x_0)=W'(x_0)=0$ donne $(W')^2=4a\sqrt W$. Sur la branche croissante, on en déduit $W^{3/4}=(3/2)\sqrt a\,(x-x_0)$. L’intégration directe conduit ainsi à la même puissance avec $p=(4/9)p_{\rm imp}$. La dépendance en tension est donnée pour une distance effective $d-x_0$ fixée. Si le minimum de potentiel se déplace quand $U_A$ varie, le coefficient apparent varie aussi.
