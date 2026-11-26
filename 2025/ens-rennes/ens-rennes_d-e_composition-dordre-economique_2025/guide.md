@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Partir d’une décision identifiable
 
 Consommer aujourd’hui ou demain, agrandir une usine, émettre une obligation, maintenir une parité, garantir le financement à court terme : donnez un sujet et un verbe à chaque mécanisme. Une liste des places boursières ou une histoire générale de la finance répondraient mal à la question.
@@ -47,3 +49,9 @@ Les marchés internationaux élargissent le financement et les possibilités de 
 Les marchés affectent profondément les arbitrages qui engagent le présent et le futur. Leur influence passe aussi bien par la possibilité d’émettre ou de refinancer que par les mouvements de prix observés. Elle est plus directe pour l’agent qui émet des titres, plus médiate mais parfois tout aussi décisive pour celui dont le prêt, le salaire ou l’impôt dépend de ces conditions. La réciprocité entre décisions publiques et formation des prix explique que les marchés puissent tour à tour informer, contraindre ou déstabiliser ces choix.
 
 [Sujet officiel](https://www.ens-rennes.fr/medias/fichier/sujet-economie-d-e-2025_1760692386039-pdf) · [Rapport du jury](https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-economie-e-crit-d-e-2025_1768897848087-pdf) · [BCE, transmission monétaire](https://www.ecb.europa.eu/mopo/intro/transmission/html/index.en.html) · [Fed, marché du papier commercial en 2008](https://www.federalreserve.gov/newsevents/reform_cpff.htm) · [BCE, décisions de septembre 2012](https://www.ecb.europa.eu/press/govcdec/otherdec/2012/html/gc120921.en.html)
+
+## Vérification sur le sujet
+
+L’intitulé unique et le rapport de deux pages ont été rapprochés de chaque édition. Les décisions étudiées concernent les ménages, les entreprises et la puissance publique, avec finance directe ou intermédiée, prix du risque, contraintes de crédit et intégration internationale. Les réponses distinguent également marché primaire et marché secondaire.
+
+La séparation de Fisher précise dans quelles conditions un prix de marché oriente l’entreprise. Un projet coûte 100 aujourd’hui et rapporte avec certitude 108 dans un an. Sa valeur actuelle nette est de $108/1{,}05-100$, soit environ 2,86 au taux de 5 %. Au taux de 10 %, elle tombe à environ −1,82. Si actionnaires et entreprise empruntent et prêtent librement au même taux, le projet rentable accroît la richesse des actionnaires, qui choisissent ensuite leur propre profil de consommation. Si l’entreprise manque de garanties et ne peut emprunter au taux affiché, le taux pertinent et même la faisabilité du projet changent.

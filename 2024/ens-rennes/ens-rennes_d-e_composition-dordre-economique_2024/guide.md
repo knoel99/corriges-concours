@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Transformer le quart de siècle en comparaison de mécanismes
 
 En 2024, « au cours des 25 dernières années » conduit approximativement de 1999 à la session. Les années 1930 ou 1970 peuvent éclairer une notion, sans devenir des périodes du devoir. Écrivez en regard de chaque épisode le déséquilibre, l’instrument et l’indicateur qui permettrait d’évaluer son effet.
@@ -47,3 +49,9 @@ Enfin, le renforcement des instruments macroprudentiels reconnaît qu’un même
 En 2024, les autorités disposent de moyens plus nombreux pour éviter qu’un choc financier ou sanitaire ne détruise durablement l’emploi et la capacité de production. La succession des crises interdit de mesurer ce progrès par une simple comparaison de la volatilité observée avant et après 2008. L’amélioration est la plus nette dans la continuité du crédit, la protection des revenus et la coordination en récession. Elle est conditionnelle face aux chocs d’offre, au retour de l’inflation et aux engagements déjà accumulés.
 
 [Sujet officiel](https://www.ens-rennes.fr/medias/fichier/sujet-economie-d-e-2024_1729180713222-pdf) · [Rapport du jury](https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-e-conomie-e-crit-d-e-2024_1730732760028-pdf) · [Réserve fédérale, instruments monétaires](https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm) · [BCE, annonce du PEPP en mars 2020](https://www.ecb.europa.eu/press/pr/date/2020/html/ecb.pr200318_1~3949d6f266.en.html) · [BCE, décisions de septembre 2012](https://www.ecb.europa.eu/press/govcdec/otherdec/2012/html/gc120921.en.html)
+
+## Vérification sur le sujet
+
+Les deux éditions traitent la période comprise approximativement entre 1999 et la session 2024. Elles relient les politiques monétaire, budgétaire et macroprudentielle aux écarts de production, d’inflation ou de risque financier, puis comparent les effets selon la nature du choc. Le rapport de trois pages demande précisément de définir le critère d’efficacité et de relier les instruments aux mécanismes de court et moyen termes.
+
+Pour fixer les unités, supposons une économie à prix temporairement rigides, sans impôts proportionnels ni réaction de taux. Avec une propension marginale à consommer de 0,75 et une propension à importer de 0,25, un euro de dépense publique intérieure entraîne deux euros de production supplémentaire dans le modèle élémentaire, car $1/(1-0{,}75+0{,}25)=2$. Lorsque la banque centrale relève ses taux en réponse au soutien budgétaire, le crédit et l’investissement peuvent amortir cette réponse. Le calcul isole un mécanisme et ne mesure pas le multiplicateur observé d’un pays en 2024.

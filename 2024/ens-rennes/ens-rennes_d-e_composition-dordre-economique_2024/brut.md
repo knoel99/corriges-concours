@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Les métamorphoses de la politique macroéconomique au cours des 25 dernières années ont-elles rendu la régulation conjoncturelle plus efficace ?
 
 En décembre 2008, la Réserve fédérale américaine ramène sa cible de taux au jour le jour dans une fourchette de 0 à 0,25 %. Le prix auquel elle réglait habituellement la demande ne peut guère baisser davantage, au moment même où le crédit se contracte. En mars 2020, la BCE annonce en quelques jours un programme d’achats d’urgence doté initialement de 750 milliards d’euros. Entre ces dates, la politique macroéconomique a appris à agir autrement que par le réglage d’un taux court. A-t-elle pour autant mieux stabilisé l’économie ? Vers 1999-2024, la régulation conjoncturelle vise à limiter l’écart entre production effective et potentielle, les fluctuations de l’emploi et les écarts à la stabilité des prix. La stabilité financière en devient une condition lorsque les pertes bancaires alimentent la récession. L’efficacité s’apprécie relativement au choc et à la trajectoire qui se serait produite en l’absence d’intervention. Les instruments nouveaux ont accru la capacité des autorités à enrayer certains enchaînements récessifs. Ils ont moins accru leur capacité à arbitrer sans coût entre production, inflation et stabilité de la dette.
@@ -33,3 +35,9 @@ En 2024, les autorités disposent de moyens plus nombreux pour éviter qu’un c
 ![Quel résultat attendre selon le choc ?](figures/efficacite-selon-le-choc.svg)
 
 [Sujet officiel](https://www.ens-rennes.fr/medias/fichier/sujet-economie-d-e-2024_1729180713222-pdf) · [Rapport du jury](https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-e-conomie-e-crit-d-e-2024_1730732760028-pdf) · [Réserve fédérale, instruments monétaires](https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm) · [BCE, annonce du PEPP en mars 2020](https://www.ecb.europa.eu/press/pr/date/2020/html/ecb.pr200318_1~3949d6f266.en.html) · [BCE, décisions de septembre 2012](https://www.ecb.europa.eu/press/govcdec/otherdec/2012/html/gc120921.en.html)
+
+## Vérification sur le sujet
+
+Les deux éditions traitent la période comprise approximativement entre 1999 et la session 2024. Elles relient les politiques monétaire, budgétaire et macroprudentielle aux écarts de production, d’inflation ou de risque financier, puis comparent les effets selon la nature du choc. Le rapport de trois pages demande précisément de définir le critère d’efficacité et de relier les instruments aux mécanismes de court et moyen termes.
+
+Pour fixer les unités, supposons une économie à prix temporairement rigides, sans impôts proportionnels ni réaction de taux. Avec une propension marginale à consommer de 0,75 et une propension à importer de 0,25, un euro de dépense publique intérieure entraîne deux euros de production supplémentaire dans le modèle élémentaire, car $1/(1-0{,}75+0{,}25)=2$. Lorsque la banque centrale relève ses taux en réponse au soutien budgétaire, le crédit et l’investissement peuvent amortir cette réponse. Le calcul isole un mécanisme et ne mesure pas le multiplicateur observé d’un pays en 2024.
