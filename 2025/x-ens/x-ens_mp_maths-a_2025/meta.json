@@ -18,11 +18,18 @@
       "fichier": "figures/chaines-graduees.svg",
       "question": "14° c)",
       "legende": "Les deux systèmes ont les mêmes dimensions et les mêmes rangs individuels. La chaîne qui traverse les trois degrés existe uniquement lorsque la composée est non nulle."
+    },
+    {
+      "fichier": "figures/q17-chaines-alternees.svg",
+      "question": "17°",
+      "legende": "Quatre chaînes représentatives. Chaque flèche indique l’image par M. Les signes sont les valeurs propres de H et le dernier vecteur a pour image zéro."
     }
   ],
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Maths%20A%20MP-MPI%20sujet.pdf",
-    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Ecrits_MP%20et%20MPI_Maths%20A%20OK.pdf"
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Ecrits_MP%20et%20MPI_Maths%20A%20OK.pdf",
+    "sha256_sujet": "f15651687ad03ca1c31b34d4cd82d2b6e45835310ff24b29fe305d7cb9848917",
+    "sha256_rapport": "e95e1878f287b3f439450bf4f95dc00a951d78100f6b5773ddd6c2d1974c2dec"
   },
   "contributions": [
     {
@@ -36,6 +43,77 @@
       "agent": "astra_maths",
       "fournisseur": "codex",
       "tour": 2
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "agent": "mathematiques_a_mp_mpi_2023_2026",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "41 réponses comparées au sujet et au rapport. Repères officiels en titre, interprétation du nombre de chaînes isolées au degré 2 et schéma de lecture des quatre couples de blocs rectangulaires en 17."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2a",
+      "2b",
+      "2c",
+      "3a",
+      "3b",
+      "4",
+      "5",
+      "6a",
+      "6b",
+      "6c",
+      "6d",
+      "6e",
+      "6f",
+      "7",
+      "8a",
+      "8b",
+      "8c",
+      "8d",
+      "9",
+      "10",
+      "11a",
+      "11b",
+      "11c",
+      "12a",
+      "12b",
+      "12c",
+      "12d",
+      "12e",
+      "13a",
+      "13b",
+      "14a",
+      "14b",
+      "14c",
+      "15",
+      "16a",
+      "16b",
+      "16c",
+      "17",
+      "18a",
+      "18b"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "controle": [
+      "1–5 — polynôme annulateur, invariants de Jordan, projection et chaînes de polynômes de Laurent.",
+      "6a–10 — idéal, prolongement bien défini, noyau supplémentaire stable, existence et unicité des tailles.",
+      "11a–14c — graduation, projecteur moyenné, récurrence simultanée et multiplicités par les rangs.",
+      "15–18b — changements de bases, partie nilpotente, quatre formes rectangulaires et partie inversible."
+    ]
+  }
 }

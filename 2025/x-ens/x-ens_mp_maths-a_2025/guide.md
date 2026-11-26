@@ -1,4 +1,4 @@
-# X-ENS MP — Mathématiques A 2025 · Corrigé guidé
+# X-ENS MP-MPI — Mathématiques A 2025 · Corrigé guidé
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
@@ -6,9 +6,11 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
-L’épreuve commune aux filières MP et MPI dure quatre heures, sans calculatrice. Le sujet démontre la décomposition des nilpotents en chaînes de Jordan, puis étudie des couples d’applications linéaires. Les 18 numéros du sujet donnent 41 réponses élémentaires. Chaque rubrique indique le repère original.
+L’épreuve commune aux filières MP et MPI dure quatre heures, sans calculatrice. Le sujet démontre la décomposition des nilpotents en chaînes de Jordan, puis étudie des couples d’applications linéaires. Les 18 numéros du sujet donnent 41 réponses élémentaires. Les titres suivent les repères du sujet.
 
 - **I.** Utiliser la restriction à un sous-espace stable et les noyaux des puissances comme invariants.
 - **II.** Étudier le décalage des exposants sur les polynômes de Laurent.
@@ -25,8 +27,6 @@ L’invariant des noyaux sera retrouvé au moment de l’unicité.
 
 ### Question 1
 
-**Repère officiel · 1°.**
-
 > [!INDICATION]
 > Cherchez un polynôme scindé à racines simples qui annule aussi l’endomorphisme induit.
 
@@ -39,9 +39,7 @@ La stabilité de $W$ donne $P(h_W)=P(h)|_W=0$, car la restriction commute avec l
 > [!JURY]
 > Le jury cite le polynôme minimal comme voie rapide. Pour la preuve par un annulateur, la stabilité justifie la restriction des puissances.
 
-### Question 2
-
-**Repère officiel · 2° a).**
+### Question 2a
 
 > [!INDICATION]
 > Suivez les noyaux des puissances par le changement de base.
@@ -52,9 +50,7 @@ Si $M'=SMS^{-1}$, alors $M'^j=SM^jS^{-1}$ pour tout $j\geq0$. Ainsi $\ker M'^j=S
 
 Les trois dimensions qui définissent $\delta_k$ sont conservées, donc $\boxed{\delta_k(M')=\delta_k(M)}$.
 
-### Question 3
-
-**Repère officiel · 2° b).**
+### Question 2b
 
 > [!INDICATION]
 > Comptez les vecteurs de la base canonique tués par chaque puissance du décalage.
@@ -67,9 +63,7 @@ Les accroissements successifs valent $1$ jusqu’au rang $j=r$, puis $0$.
 
 Leur différence $\delta_k(J_r)$ vaut **$1$ pour $k=r$, et $0$ sinon**.
 
-### Question 4
-
-**Repère officiel · 2° c).**
+### Question 2c
 
 > [!INDICATION]
 > Écrivez la condition d’appartenance au noyau sur les deux composantes.
@@ -82,9 +76,7 @@ Le vecteur $(x_1,x_2)$ appartient à $\ker M$ si et seulement si $x_i\in\ker M_i
 
 La projection conserve uniquement les exposants négatifs. La surjectivité du décalage sera utilisée pour construire le prolongement.
 
-### Question 5
-
-**Repère officiel · 3° a).**
+### Question 3a
 
 > [!INDICATION]
 > Comparez le produit par $X$ de $F$ et celui de sa partie strictement négative.
@@ -93,9 +85,7 @@ La projection conserve uniquement les exposants négatifs. La surjectivité du d
 
 Le polynôme $F-\Pi(F)$ appartient à $\mathbb C[X]$, donc $X(F-\Pi(F))$ aussi et sa projection par $\Pi$ est nulle. Il en résulte $\widehat{\xi}(\Pi(F))=\Pi(X\Pi(F))=\Pi(XF)=\widehat{\xi}(F)$.
 
-### Question 6
-
-**Repère officiel · 3° b).**
+### Question 3b
 
 > [!INDICATION]
 > Commencez par un monôme $P=X^k$, en utilisant 3° a) pour supprimer une projection intermédiaire.
@@ -115,9 +105,7 @@ Par récurrence, cette identité vaut pour tout $k\geq0$. Une combinaison linéa
 > [!JURY]
 > Le jury demande d’écrire la récurrence sur les itérés de $\xi$ qui permet de traiter les monômes avant le polynôme entier.
 
-### Question 7
-
-**Repère officiel · 4°.**
+### Question 4
 
 > [!INDICATION]
 > Cherchez un antécédent en décalant les exposants et repérez les termes effacés par la projection.
@@ -130,9 +118,7 @@ Sur la base $(X^{-j})_{j\geq1}$, $\xi^n$ tue exactement les termes d’indices $
 
 Ainsi $\xi^n$ est surjectif et **$(X^{-1},\ldots,X^{-n})$ est une base de son noyau**, vide si $n=0$.
 
-### Question 8
-
-**Repère officiel · 5°.**
+### Question 5
 
 > [!INDICATION]
 > Appliquez successivement $\xi$ au générateur proposé, dans l’ordre du sujet.
@@ -145,9 +131,7 @@ Les itérés de $X^{-r}$ sont $X^{k-r}$ pour $0\leq k<r$, puis $0$, d’après 3
 
 Définissez une valeur au nouveau vecteur qui soit compatible avec les relations imposées par les autres vecteurs.
 
-### Question 9
-
-**Repère officiel · 6° a).**
+### Question 6a
 
 > [!INDICATION]
 > Pour la stabilité par multiplication, faites intervenir la stabilité de $W$ par les polynômes de $u$.
@@ -163,9 +147,7 @@ Ainsi $I$ est un idéal de $\mathbb C[X]$.
 > [!JURY]
 > Le jury relève des confusions dans le calcul de $(QP)(u)$. Il s’agit de composer les deux endomorphismes $Q(u)$ et $P(u)$.
 
-### Question 10
-
-**Repère officiel · 6° b).**
+### Question 6b
 
 > [!INDICATION]
 > Utilisez un exposant de nilpotence et examinez les diviseurs d’une puissance de $X$.
@@ -178,9 +160,7 @@ L’idéal non nul $I$ est engendré par un polynôme unitaire qui divise $X^n$,
 
 Comme $v\notin W$, on a $1\notin I$ et $r\geq1$. **Ainsi $I=(X^r)$.**
 
-### Question 11
-
-**Repère officiel · 6° c).**
+### Question 6c
 
 > [!INDICATION]
 > Écrivez $W'$ comme une somme et vérifiez la stabilité sur chacun de ses termes.
@@ -189,9 +169,7 @@ Comme $v\notin W$, on a $1\notin I$ et $r\geq1$. **Ainsi $I=(X^r)$.**
 
 L’ensemble $W'=W+\{P(u)v:P\in\mathbb C[X]\}$ est la somme de deux sous-espaces et contient $W$ et $v$. Le second sous-espace est stable car $u(P(u)v)=(XP)(u)v$. Il en résulte que $W'$ est stable et contient strictement $W$.
 
-### Question 12
-
-**Repère officiel · 6° d).**
+### Question 6d
 
 > [!INDICATION]
 > Appliquez le résultat sur les puissances de $\xi$ à la valeur $G_v$.
@@ -200,9 +178,7 @@ L’ensemble $W'=W+\{P(u)v:P\in\mathbb C[X]\}$ est la somme de deux sous-espaces
 
 On a $u^r(v)\in W$ par 6° b), donc $G_v=\varphi(u^r(v))\in D$. La question 4° donne la surjectivité de $\xi^r$, d’où un antécédent $F_v\in D$. On peut notamment prendre $F_v=X^{-r}G_v$.
 
-### Question 13
-
-**Repère officiel · 6° e).**
+### Question 6e
 
 > [!INDICATION]
 > Factorisez $P$ à l’aide de 6° b), puis appliquez la compatibilité à un polynôme de l’endomorphisme induit.
@@ -221,9 +197,7 @@ $$
 > [!JURY]
 > Le jury identifie l’appartenance de $P$ à l’idéal et le passage de la compatibilité à tout polynôme de l’endomorphisme comme les deux points de la preuve.
 
-### Question 14
-
-**Repère officiel · 6° f).**
+### Question 6f
 
 > [!INDICATION]
 > Soustrayez deux décompositions, puis appliquez la règle obtenue en 6° e). Pour la compatibilité, multipliez le polynôme par $X$.
@@ -241,9 +215,7 @@ $$
 $$
 Avec la linéarité admise, il s’agit bien d’un prolongement compatible.
 
-### Question 15
-
-**Repère officiel · 7°.**
+### Question 7
 
 > [!INDICATION]
 > Mesurez par un entier le chemin qui reste à parcourir entre $W$ et $V$.
@@ -258,9 +230,7 @@ Une récurrence sur $\dim V-\dim W$ donne un prolongement compatible $\psi$ sur 
 
 Cherchez une chaîne de longueur maximale, puis un supplémentaire stable sur lequel recommencer.
 
-### Question 16
-
-**Repère officiel · 8° a).**
+### Question 8a
 
 > [!INDICATION]
 > Dans une relation linéaire, repérez le premier coefficient non nul et appliquez une puissance adaptée de $u$.
@@ -271,9 +241,7 @@ Si $\sum_{i=0}^{n-1}c_i u^i(v_0)=0$ et $j$ est le plus petit indice tel que $c_j
 
 Son espace engendré $W$ contient $v_0$ et est stable, car $u^n(v_0)=0$. Dans cette base ordonnée, la matrice de $u_W$ est **$J_n$**.
 
-### Question 17
-
-**Repère officiel · 8° b).**
+### Question 8b
 
 > [!INDICATION]
 > Associez les deux chaînes qui ont la même matrice dans leurs bases ordonnées.
@@ -282,9 +250,7 @@ Son espace engendré $W$ contient $v_0$ et est stable, car $u^n(v_0)=0$. Dans ce
 
 Définissons $\varphi$ sur la base de 8° a) par $\varphi(u^j(v_0))=X^{j-n}$ pour $0\leq j<n$, puis prolongeons par linéarité. Les images forment la base de $D_n$ de 5°, donc $\varphi$ est injective. Les deux chaînes sont décalées de la même façon et leur dernier terme est envoyé sur zéro. Ainsi $\xi\varphi=\varphi u_W$.
 
-### Question 18
-
-**Repère officiel · 8° c).**
+### Question 8c
 
 > [!INDICATION]
 > Itérez la compatibilité du prolongement puis utilisez la nilpotence.
@@ -293,9 +259,7 @@ Définissons $\varphi$ sur la base de 8° a) par $\varphi(u^j(v_0))=X^{j-n}$ pou
 
 L’égalité $\xi\psi=\psi u$ donne $\xi^n\psi=\psi u^n=0$. Par conséquent $\operatorname{Im}\psi\subset\ker\xi^n$.
 
-### Question 19
-
-**Repère officiel · 8° d).**
+### Question 8d
 
 > [!INDICATION]
 > Comparez $\psi(W)$ au noyau trouvé en 4° et utilisez la compatibilité sur $\ker\psi$.
@@ -311,9 +275,7 @@ Par 8° c), tout $x\in V$ a donc la même image par $\psi$ qu’un unique $w\in 
 
 Enfin $\psi(ux)=\xi\psi(x)=0$ si $x\in\ker\psi$. **Le noyau est bien un supplémentaire stable de $W$.**
 
-### Question 20
-
-**Repère officiel · 9°.**
+### Question 9
 
 > [!INDICATION]
 > Raisonnez par récurrence sur la dimension et appliquez 8° à un vecteur de longueur maximale.
@@ -326,9 +288,7 @@ Les questions 8° a) et 8° d) donnent un bloc $J_n$ sur $W$ et un supplémentai
 
 Chaque bloc a une taille au plus $n$ puisque $u_K^n=0$. La concaténation de la base de $W$ et de la base obtenue sur $K$, avec les tailles classées dans l’ordre décroissant, donne la forme voulue.
 
-### Question 21
-
-**Repère officiel · 10°.**
+### Question 10
 
 > [!INDICATION]
 > Utilisez un invariant qui distingue la taille d’un bloc et s’additionne sur les blocs.
@@ -341,9 +301,7 @@ Par 2° b) et 2° c), $\delta_k$ de la matrice diagonale par blocs est le nombre
 
 Le supplémentaire doit maintenant respecter les deux endomorphismes. La moyenne de projecteurs fournit cette stabilité.
 
-### Question 22
-
-**Repère officiel · 11° a).**
+### Question 11a
 
 > [!INDICATION]
 > Utilisez l’ordre fini de $h$ pour trouver un polynôme annulateur adapté.
@@ -354,9 +312,7 @@ Le polynôme $X^N-1$ annule $h$.
 
 Il est scindé sur $\mathbb C$ et ses $N$ racines $\zeta^j$ pour $0\leq j<N$ sont distinctes. Donc **$h$ est diagonalisable**, avec valeurs propres parmi ces racines.
 
-### Question 23
-
-**Repère officiel · 11° b).**
+### Question 11b
 
 > [!INDICATION]
 > Appliquez la relation $hu=\zeta uh$ à un vecteur propre de $h$.
@@ -365,9 +321,7 @@ Il est scindé sur $\mathbb C$ et ses $N$ racines $\zeta^j$ pour $0\leq j<N$ son
 
 Pour $v\in V_j$, on calcule $h(uv)=\zeta u(hv)=\zeta^{j+1}uv$. Ainsi $u(V_j)\subset V_{j+1}$, où $V_N=V_0$ puisque $\zeta^N=1$.
 
-### Question 24
-
-**Repère officiel · 11° c).**
+### Question 11c
 
 > [!INDICATION]
 > Traitez les puissances négatives grâce à la conjugaison par $h^{-1}$, puis conjuguez un produit de facteurs $u$.
@@ -378,9 +332,7 @@ La relation de départ donne par récurrence $h^k u h^{-k}=\zeta^ku$ pour $k\geq
 
 La conjugaison préservant les produits et l’identité, $\boxed{hu^\ell h^{-1}=\zeta^\ell u^\ell}$ pour tout $\ell\geq0$.
 
-### Question 25
-
-**Repère officiel · 12° a).**
+### Question 12a
 
 > [!INDICATION]
 > Décomposez un vecteur sur les deux sous-espaces stables.
@@ -391,9 +343,7 @@ Pour $x=w+w'$ avec $w\in W$ et $w'\in W'$, on a $u(w)\in W$ et $u(w')\in W'$.
 
 Ainsi $pu(x)=u(w)=up(x)$, donc $pu=up$.
 
-### Question 26
-
-**Repère officiel · 12° b).**
+### Question 12b
 
 > [!INDICATION]
 > Montrez que $h^k$ et son inverse préservent $W$ avant d’examiner chaque terme de la moyenne.
@@ -408,9 +358,7 @@ Pour $w\in W$, $h^{-k}w\in W$ et $p$ l’y fixe, donc $h^kph^{-k}w=w$.
 
 La moyenne $\bar p$ a son image dans $W$ et fixe $W$ point par point.
 
-### Question 27
-
-**Repère officiel · 12° c).**
+### Question 12c
 
 > [!INDICATION]
 > Appliquez une seconde fois la moyenne à un vecteur de son image.
@@ -421,9 +369,7 @@ Par 12° b), l’image de $\bar p$ est incluse dans $W$ et contient $W$ puisque 
 
 Pour $x\in V$, $\bar p(x)\in W$, donc $\bar p^2(x)=\bar p(x)$. **C’est le projecteur d’image $W$ associé à son noyau.**
 
-### Question 28
-
-**Repère officiel · 12° d).**
+### Question 12d
 
 > [!INDICATION]
 > Pour $u$, suivez les deux facteurs scalaires de 11° c). Pour $h$, examinez un décalage des indices de sommation.
@@ -445,9 +391,7 @@ La moyenne commute donc avec $u$. En outre $hp_kh^{-1}=p_{k+1}$ et $p_N=p_0$ pui
 
 La conjugaison par $h$ permute les termes de la moyenne, donc $\bar p$ commute aussi avec $h$.
 
-### Question 29
-
-**Repère officiel · 12° e).**
+### Question 12e
 
 > [!INDICATION]
 > Utilisez la décomposition d’un projecteur et faites agir les deux endomorphismes sur son noyau.
@@ -458,9 +402,7 @@ Par 12° c), $V=W\oplus\ker\bar p$. Si $\bar p(x)=0$, alors $\bar p(ux)=u\bar p(
 
 Le supplémentaire $\ker\bar p$ est stable par $u$ et $h$.
 
-### Question 30
-
-**Repère officiel · 13° a).**
+### Question 13a
 
 > [!INDICATION]
 > Décomposez un vecteur dont l’image par $u^{n-1}$ est non nulle suivant les espaces propres de $h$.
@@ -471,9 +413,7 @@ Par 11° a), $V=\bigoplus_{j=0}^{N-1}V_j$. Choisissons $x$ tel que $u^{n-1}x\ne0
 
 Au moins un $u^{n-1}x_j$ est non nul par linéarité. Le vecteur $v=x_j$ correspondant convient.
 
-### Question 31
-
-**Repère officiel · 13° b).**
+### Question 13b
 
 > [!INDICATION]
 > Faites partir la chaîne maximale d’un vecteur propre et obtenez un supplémentaire stable pour les deux endomorphismes.
@@ -498,9 +438,7 @@ Comme $\dim K<\dim V$, la récurrence donne la forme voulue sur $K$. La réunion
 > [!JURY]
 > Le jury attend la forme des deux matrices dans la chaîne choisie, puis la justification du supplémentaire stable qui permet la récurrence.
 
-### Question 32
-
-**Repère officiel · 14° a).**
+### Question 14a
 
 > [!INDICATION]
 > Identifiez l’espace propre auquel aboutit le dernier espace de la chaîne.
@@ -509,9 +447,7 @@ Comme $\dim K<\dim V$, la récurrence donne la forme voulue sur $K$. La réunion
 
 Par 11° b), $u(V_3)\subset V_0$. Or $V_0=\ker(h-\mathrm{id}_V)=\{0\}$ par hypothèse. Donc **$u_3=0$**.
 
-### Question 33
-
-**Repère officiel · 14° b).**
+### Question 14b
 
 > [!INDICATION]
 > Listez les segments consécutifs contenus dans les degrés disponibles et réalisez chacun sur sa propre chaîne.
@@ -526,9 +462,7 @@ Pour chacun, prenons $V=\mathbb C^r$, $u=J_r$ et $h=D_{r,a}$. Les poids de $h$ s
 
 On vérifie alors $hu=\zeta uh$, y compris sur le dernier vecteur qui est tué par $u$. Ces couples réalisent les six types.
 
-### Question 34
-
-**Repère officiel · 14° c).**
+### Question 14c
 
 > [!INDICATION]
 > Comptez les contributions d’une chaîne aux dimensions et aux trois rangs, en commençant par la composition.
@@ -563,6 +497,8 @@ b_{33}&=d_3-r_2 .
 \end{aligned}
 $$
 
+On peut vérifier la formule de $b_{22}$ directement dans $V_2$. Le sous-espace des vecteurs qui s’arrêtent au degré 2 est $\ker u_2$. Ceux qui proviennent du degré 1 forment $\ker u_2\cap\operatorname{im}u_1$, de dimension $r_1-r_{21}$ par le théorème du rang appliqué à la restriction de $u_2$ à $\operatorname{im}u_1$. La dimension du quotient vaut donc $d_2-r_2-(r_1-r_{21})=b_{22}$.
+
 L’exemple suivant isole l’information portée par $r_{21}$. Prenons $(d_1,d_2,d_3)=(1,2,1)$ et $u_1(t)=(t,0)$. Si $u_2(x,y)=x$, la composée est de rang un. On a une chaîne $[1,3]$ et un vecteur isolé en degré 2. Si $u_2(x,y)=y$, la composée est nulle. On a alors les chaînes $[1,2]$ et $[2,3]$. Dans les deux exemples, $r_1=r_2=1$.
 
 ![Les deux systèmes ont les mêmes dimensions et les mêmes rangs individuels. La chaîne qui traverse les trois degrés existe uniquement lorsque la composée est non nulle.](figures/chaines-graduees.svg)
@@ -571,9 +507,7 @@ L’exemple suivant isole l’information portée par $r_{21}$. Prenons $(d_1,d_
 
 Construisez un seul couple d’endomorphismes sur la somme des deux espaces. Les deux espaces propres de l’involution retrouvent les espaces de départ.
 
-### Question 35
-
-**Repère officiel · 15°.**
+### Question 15
 
 > [!INDICATION]
 > Interprétez $P$ et $Q$ comme des changements de coordonnées, puis utilisez les deux espaces propres de $H$.
@@ -594,9 +528,7 @@ Enfin, sous (iii), $RH=HR$, donc $R$ stabilise les espaces propres de $H$ associ
 
 Puisque $R$ est inversible, ses deux restrictions sont inversibles. Ainsi $R=\operatorname{diag}(P,Q)$ et les deux blocs de l’égalité de conjugaison donnent (ii).
 
-### Question 36
-
-**Repère officiel · 16° a).**
+### Question 16a
 
 > [!INDICATION]
 > Faites le calcul matriciel sur les deux composantes puis utilisez la conjugaison d’un polynôme.
@@ -605,9 +537,7 @@ Puisque $R$ est inversible, ses deux restrictions sont inversibles. Ainsi $R=\op
 
 On a **$H^2=I_{m+n}$**. Multiplier par $H$ à droite change le signe de la seconde colonne de blocs, puis le multiplier à gauche change le signe de la seconde ligne de blocs. Seuls les blocs hors diagonale de $M$ sont éventuellement non nuls, donc $HMH^{-1}=-M$. La conjugaison préserve les puissances et les combinaisons linéaires, d’où $\boxed{HP(M)H^{-1}=P(-M)}$.
 
-### Question 37
-
-**Repère officiel · 16° b).**
+### Question 16b
 
 > [!INDICATION]
 > Comparez les polynômes caractéristiques de $M$ et de $-M$.
@@ -622,9 +552,7 @@ Un facteur $(X-\lambda)^k$ de $\chi_M(X)$ devient un facteur $(X+\lambda)^k$ de 
 
 Comme $\chi_{-M}=\chi_M$, **$\lambda$ et $-\lambda$ ont la même multiplicité algébrique.**
 
-### Question 38
-
-**Repère officiel · 16° c).**
+### Question 16c
 
 > [!INDICATION]
 > Appliquez Cayley–Hamilton aux deux facteurs premiers entre eux et examinez les facteurs non nuls par paires.
@@ -641,9 +569,7 @@ Ainsi $Q$ est un produit de facteurs $(X^2-\lambda^2)^k$ et $Q(-X)=Q(X)$, y comp
 
 Par 16° a), $HM^rH^{-1}=(-1)^r M^r$ et $HQ(M)H^{-1}=Q(M)$. Ces identités montrent que **les deux noyaux sont stables par $H$.**
 
-### Question 39
-
-**Repère officiel · 17°.**
+### Question 17
 
 > [!INDICATION]
 > Appliquez la décomposition graduée à l’involution $H$, puis rangez d’abord les vecteurs de signe positif dans chaque chaîne.
@@ -667,11 +593,11 @@ On a $A_0=(I_s\ \ 0)$ et $B_0=\binom{0}{I_s}$, puisque $e_i$ est suivi de $f_i$ 
 - Si elle commence par un signe négatif et finit par un signe positif, $r=s$. Alors $A_0=J_r$ et $B_0=I_r$.
 - Si elle commence et finit par un signe négatif, $s=r+1$. On a $A_0=\binom{0}{I_r}$ et $B_0=(I_r\ \ 0)$.
 
+![Quatre chaînes représentatives. Chaque flèche indique l’image par M. Les signes sont les valeurs propres de H et le dernier vecteur a pour image zéro.](figures/q17-chaines-alternees.svg)
+
 Les tailles nulles correspondent aux chaînes d’un seul vecteur. La réunion des bases des chaînes donne la similitude simultanée demandée.
 
-### Question 40
-
-**Repère officiel · 18° a).**
+### Question 18a
 
 > [!INDICATION]
 > Lisez séparément la condition $M(x,y)=0$ sur chacun des axes.
@@ -682,9 +608,7 @@ Puisque $M(x,0)=(0,Ax)$ et $M(0,y)=(By,0)$, l’injectivité de $M$ donne l’in
 
 Il en résulte $m\leq n$ et $n\leq m$. Donc **$m=n$ et $A,B$ sont inversibles**.
 
-### Question 41
-
-**Repère officiel · 18° b).**
+### Question 18b
 
 > [!INDICATION]
 > Étudiez la restriction de $M^2$ à l’espace propre positif de $H$, puis transportez sa base de l’autre côté par $M$.

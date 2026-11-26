@@ -1,4 +1,4 @@
-# X-ENS MP — Mathématiques A 2025 · Corrigé brut
+# X-ENS MP-MPI — Mathématiques A 2025 · Corrigé brut
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
@@ -6,27 +6,23 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Partie I — Questions préliminaires
 
 ### Question 1
-
-**Repère officiel · 1°.**
 
 Soient $\lambda_1,\ldots,\lambda_d$ les valeurs propres distinctes de $h$. Le polynôme $P=\prod_{i=1}^d(X-\lambda_i)$ annule $h$ puisque $h$ est diagonalisable.
 
 La stabilité de $W$ donne $P(h_W)=P(h)|_W=0$, car la restriction commute avec les puissances et les combinaisons linéaires. Le polynôme annulateur est scindé à racines simples. Le critère de diagonalisation s’applique à $h_W$. Le cas $W=\{0\}$ est immédiat.
 
-### Question 2
-
-**Repère officiel · 2° a).**
+### Question 2a
 
 Si $M'=SMS^{-1}$, alors $M'^j=SM^jS^{-1}$ pour tout $j\geq0$. Ainsi $\ker M'^j=S(\ker M^j)$, y compris pour $j=0$ où les deux noyaux sont nuls.
 
 Les trois dimensions qui définissent $\delta_k$ sont conservées, donc $\boxed{\delta_k(M')=\delta_k(M)}$.
 
-### Question 3
-
-**Repère officiel · 2° b).**
+### Question 2b
 
 Dans la base canonique, $J_re_i=e_{i+1}$ pour $i<r$ et $J_re_r=0$. On a donc $\dim\ker J_r^j=\min(j,r)$ pour $j\geq0$.
 
@@ -34,23 +30,17 @@ Les accroissements successifs valent $1$ jusqu’au rang $j=r$, puis $0$.
 
 Leur différence $\delta_k(J_r)$ vaut **$1$ pour $k=r$, et $0$ sinon**.
 
-### Question 4
-
-**Repère officiel · 2° c).**
+### Question 2c
 
 Le vecteur $(x_1,x_2)$ appartient à $\ker M$ si et seulement si $x_i\in\ker M_i$ pour $i=1,2$. Le noyau est donc la somme directe de ces deux noyaux placés dans leurs facteurs. Les puissances de $M$ sont diagonales par blocs de puissances correspondantes, y compris pour la puissance zéro. On applique l’égalité des dimensions à chacune des trois puissances de la définition et on obtient $\delta_k(M)=\delta_k(M_1)+\delta_k(M_2)$.
 
 ## Partie II — Algèbre linéaire sur les polynômes de Laurent
 
-### Question 5
-
-**Repère officiel · 3° a).**
+### Question 3a
 
 Le polynôme $F-\Pi(F)$ appartient à $\mathbb C[X]$, donc $X(F-\Pi(F))$ aussi et sa projection par $\Pi$ est nulle. Il en résulte $\widehat{\xi}(\Pi(F))=\Pi(X\Pi(F))=\Pi(XF)=\widehat{\xi}(F)$.
 
-### Question 6
-
-**Repère officiel · 3° b).**
+### Question 3b
 
 Pour $F\in D$, on a $\xi^0(F)=F=\Pi(F)$. Si $\xi^k(F)=\Pi(X^kF)$, la question 3° a) donne
 $$
@@ -62,9 +52,7 @@ $$
 $$
 Par récurrence, cette identité vaut pour tout $k\geq0$. Une combinaison linéaire en $k$ donne $\boxed{P(\xi)(F)=\Pi(PF)}$.
 
-### Question 7
-
-**Repère officiel · 4°.**
+### Question 4
 
 Par 3° b), $\xi^n(F)=\Pi(X^nF)$. Pour $G\in D$, l’élément $X^{-n}G$ de $D$ a pour image $G$.
 
@@ -72,17 +60,13 @@ Sur la base $(X^{-j})_{j\geq1}$, $\xi^n$ tue exactement les termes d’indices $
 
 Ainsi $\xi^n$ est surjectif et **$(X^{-1},\ldots,X^{-n})$ est une base de son noyau**, vide si $n=0$.
 
-### Question 8
-
-**Repère officiel · 5°.**
+### Question 5
 
 Les itérés de $X^{-r}$ sont $X^{k-r}$ pour $0\leq k<r$, puis $0$, d’après 3° b). Tout sous-espace stable contenant le générateur contient ces itérés. Leur espace engendré est stable et ces monômes distincts sont libres. Dans cette base ordonnée, chaque élément est envoyé sur le suivant et le dernier sur zéro. La matrice est **$J_r$**, avec les $1$ sous la diagonale.
 
 ## Partie III — Prolongements compatibles
 
-### Question 9
-
-**Repère officiel · 6° a).**
+### Question 6a
 
 L’application $P\mapsto P(u)v$ est linéaire, donc $I$ est un sous-espace vectoriel. Pour $P\in I$ et $Q\in\mathbb C[X]$, on a $(QP)(u)v=Q(u)(P(u)v)$.
 
@@ -90,9 +74,7 @@ Comme $W$ est stable par $u$, il l’est par $Q(u)$ et ce vecteur appartient à 
 
 Ainsi $I$ est un idéal de $\mathbb C[X]$.
 
-### Question 10
-
-**Repère officiel · 6° b).**
+### Question 6b
 
 Il existe $n$ tel que $u^n=0$, donc $X^n\in I$.
 
@@ -100,21 +82,15 @@ L’idéal non nul $I$ est engendré par un polynôme unitaire qui divise $X^n$,
 
 Comme $v\notin W$, on a $1\notin I$ et $r\geq1$. **Ainsi $I=(X^r)$.**
 
-### Question 11
-
-**Repère officiel · 6° c).**
+### Question 6c
 
 L’ensemble $W'=W+\{P(u)v:P\in\mathbb C[X]\}$ est la somme de deux sous-espaces et contient $W$ et $v$. Le second sous-espace est stable car $u(P(u)v)=(XP)(u)v$. Il en résulte que $W'$ est stable et contient strictement $W$.
 
-### Question 12
-
-**Repère officiel · 6° d).**
+### Question 6d
 
 On a $u^r(v)\in W$ par 6° b), donc $G_v=\varphi(u^r(v))\in D$. La question 4° donne la surjectivité de $\xi^r$, d’où un antécédent $F_v\in D$. On peut notamment prendre $F_v=X^{-r}G_v$.
 
-### Question 13
-
-**Repère officiel · 6° e).**
+### Question 6e
 
 Si $P(u)v=w\in W$, on a $P\in I$, donc $P=X^rQ$ par 6° b). L’identité $\xi\varphi=\varphi u_W$ s’itère et donne $Q(\xi)\varphi=\varphi Q(u_W)$ par linéarité. Par 6° d),
 $$
@@ -125,9 +101,7 @@ P(\xi)F_v&=Q(\xi)\varphi(u^r(v))\\
 \end{aligned}
 $$
 
-### Question 14
-
-**Repère officiel · 6° f).**
+### Question 6f
 
 Si $P(u)v+w=P_1(u)v+w_1$, alors $(P-P_1)(u)v=w_1-w$. La question 6° e) donne $(P-P_1)(\xi)F_v=\varphi(w_1)-\varphi(w)$. La définition de $\varphi'$ est donc indépendante du choix.
 
@@ -137,9 +111,7 @@ $$
 $$
 Avec la linéarité admise, il s’agit bien d’un prolongement compatible.
 
-### Question 15
-
-**Repère officiel · 7°.**
+### Question 7
 
 Si $W=V$, il n’y a rien à prolonger. Sinon, en choisissant $v\notin W$, les questions 6° c) et 6° f) donnent un prolongement compatible sur un espace $W'$ de dimension strictement plus grande. L’endomorphisme de $V$ reste nilpotent et les hypothèses sont conservées.
 
@@ -147,29 +119,21 @@ Une récurrence sur $\dim V-\dim W$ donne un prolongement compatible $\psi$ sur 
 
 ## Partie IV — Théorème de décomposition pour les endomorphismes nilpotents
 
-### Question 16
-
-**Repère officiel · 8° a).**
+### Question 8a
 
 Si $\sum_{i=0}^{n-1}c_i u^i(v_0)=0$ et $j$ est le plus petit indice tel que $c_j\ne0$, l’application de $u^{n-1-j}$ donne $c_j u^{n-1}(v_0)=0$, contradiction. La chaîne est libre.
 
 Son espace engendré $W$ contient $v_0$ et est stable, car $u^n(v_0)=0$. Dans cette base ordonnée, la matrice de $u_W$ est **$J_n$**.
 
-### Question 17
-
-**Repère officiel · 8° b).**
+### Question 8b
 
 Définissons $\varphi$ sur la base de 8° a) par $\varphi(u^j(v_0))=X^{j-n}$ pour $0\leq j<n$, puis prolongeons par linéarité. Les images forment la base de $D_n$ de 5°, donc $\varphi$ est injective. Les deux chaînes sont décalées de la même façon et leur dernier terme est envoyé sur zéro. Ainsi $\xi\varphi=\varphi u_W$.
 
-### Question 18
-
-**Repère officiel · 8° c).**
+### Question 8c
 
 L’égalité $\xi\psi=\psi u$ donne $\xi^n\psi=\psi u^n=0$. Par conséquent $\operatorname{Im}\psi\subset\ker\xi^n$.
 
-### Question 19
-
-**Repère officiel · 8° d).**
+### Question 8d
 
 Par 8° b), $\psi|_W=\varphi$ est un isomorphisme de $W$ sur $D_n=\ker\xi^n$ d’après 4°.
 
@@ -177,9 +141,7 @@ Par 8° c), tout $x\in V$ a donc la même image par $\psi$ qu’un unique $w\in 
 
 Enfin $\psi(ux)=\xi\psi(x)=0$ si $x\in\ker\psi$. **Le noyau est bien un supplémentaire stable de $W$.**
 
-### Question 20
-
-**Repère officiel · 9°.**
+### Question 9
 
 Par récurrence forte sur $\dim V$, la dimension nulle donne la base vide et aucun bloc. En dimension positive, soit $n$ l’indice de nilpotence et choisissons $v_0$ comme en 8°.
 
@@ -187,47 +149,35 @@ Les questions 8° a) et 8° d) donnent un bloc $J_n$ sur $W$ et un supplémentai
 
 Chaque bloc a une taille au plus $n$ puisque $u_K^n=0$. La concaténation de la base de $W$ et de la base obtenue sur $K$, avec les tailles classées dans l’ordre décroissant, donne la forme voulue.
 
-### Question 21
-
-**Repère officiel · 10°.**
+### Question 10
 
 Par 2° b) et 2° c), $\delta_k$ de la matrice diagonale par blocs est le nombre de blocs de taille $k$. Par 2° a), cette quantité est indépendante de la base. Les tailles avec multiplicité et leur nombre total $s=\sum_{k\geq1}\delta_k$ sont donc déterminés par $u$.
 
 ## Partie V — Version « graduée » du théorème de décomposition
 
-### Question 22
-
-**Repère officiel · 11° a).**
+### Question 11a
 
 Le polynôme $X^N-1$ annule $h$.
 
 Il est scindé sur $\mathbb C$ et ses $N$ racines $\zeta^j$ pour $0\leq j<N$ sont distinctes. Donc **$h$ est diagonalisable**, avec valeurs propres parmi ces racines.
 
-### Question 23
-
-**Repère officiel · 11° b).**
+### Question 11b
 
 Pour $v\in V_j$, on calcule $h(uv)=\zeta u(hv)=\zeta^{j+1}uv$. Ainsi $u(V_j)\subset V_{j+1}$, où $V_N=V_0$ puisque $\zeta^N=1$.
 
-### Question 24
-
-**Repère officiel · 11° c).**
+### Question 11c
 
 La relation de départ donne par récurrence $h^k u h^{-k}=\zeta^ku$ pour $k\geq0$. On a $h^{-1}uh=\zeta^{-1}u$ en conjuguant la relation par $h^{-1}$ et le même raisonnement vaut pour $k<0$.
 
 La conjugaison préservant les produits et l’identité, $\boxed{hu^\ell h^{-1}=\zeta^\ell u^\ell}$ pour tout $\ell\geq0$.
 
-### Question 25
-
-**Repère officiel · 12° a).**
+### Question 12a
 
 Pour $x=w+w'$ avec $w\in W$ et $w'\in W'$, on a $u(w)\in W$ et $u(w')\in W'$.
 
 Ainsi $pu(x)=u(w)=up(x)$, donc $pu=up$.
 
-### Question 26
-
-**Repère officiel · 12° b).**
+### Question 12b
 
 Comme $W$ est stable par $h$ et $h^{-1}=h^{N-1}$, il est stable par toutes les puissances entières de $h$.
 
@@ -237,17 +187,13 @@ Pour $w\in W$, $h^{-k}w\in W$ et $p$ l’y fixe, donc $h^kph^{-k}w=w$.
 
 La moyenne $\bar p$ a son image dans $W$ et fixe $W$ point par point.
 
-### Question 27
-
-**Repère officiel · 12° c).**
+### Question 12c
 
 Par 12° b), l’image de $\bar p$ est incluse dans $W$ et contient $W$ puisque chaque $w$ est sa propre image.
 
 Pour $x\in V$, $\bar p(x)\in W$, donc $\bar p^2(x)=\bar p(x)$. **C’est le projecteur d’image $W$ associé à son noyau.**
 
-### Question 28
-
-**Repère officiel · 12° d).**
+### Question 12d
 
 Pour $p_k=h^kph^{-k}$, les questions 11° c) et 12° a) donnent
 $$
@@ -261,25 +207,19 @@ La moyenne commute donc avec $u$. En outre $hp_kh^{-1}=p_{k+1}$ et $p_N=p_0$ pui
 
 La conjugaison par $h$ permute les termes de la moyenne, donc $\bar p$ commute aussi avec $h$.
 
-### Question 29
-
-**Repère officiel · 12° e).**
+### Question 12e
 
 Par 12° c), $V=W\oplus\ker\bar p$. Si $\bar p(x)=0$, alors $\bar p(ux)=u\bar p(x)=0$ et $\bar p(hx)=h\bar p(x)=0$, par 12° d).
 
 Le supplémentaire $\ker\bar p$ est stable par $u$ et $h$.
 
-### Question 30
-
-**Repère officiel · 13° a).**
+### Question 13a
 
 Par 11° a), $V=\bigoplus_{j=0}^{N-1}V_j$. Choisissons $x$ tel que $u^{n-1}x\ne0$, puis écrivons $x=\sum_j x_j$ avec $x_j\in V_j$.
 
 Au moins un $u^{n-1}x_j$ est non nul par linéarité. Le vecteur $v=x_j$ correspondant convient.
 
-### Question 31
-
-**Repère officiel · 13° b).**
+### Question 13b
 
 On raisonne par récurrence forte sur $\dim V$, avec la base vide en dimension nulle. Soit $n$ l’indice de nilpotence en dimension positive et $v\in V_a$ comme en 13° a).
 
@@ -293,15 +233,11 @@ Sur $K$, on a encore $h_K^N=\mathrm{id}_K$, $u_K$ nilpotent et $h_Ku_Kh_K^{-1}=\
 
 Comme $\dim K<\dim V$, la récurrence donne la forme voulue sur $K$. La réunion des deux bases donne simultanément les blocs $(J_r,D_{r,a})$.
 
-### Question 32
-
-**Repère officiel · 14° a).**
+### Question 14a
 
 Par 11° b), $u(V_3)\subset V_0$. Or $V_0=\ker(h-\mathrm{id}_V)=\{0\}$ par hypothèse. Donc **$u_3=0$**.
 
-### Question 33
-
-**Repère officiel · 14° b).**
+### Question 14b
 
 Comme $V_0=0$, un bloc commence dans un degré $a\in\{1,2,3\}$ et doit satisfaire $a+r-1\leq3$. Sinon un des vecteurs de sa base serait de degré $0$. Les six types sont
 $$
@@ -311,9 +247,7 @@ Pour chacun, prenons $V=\mathbb C^r$, $u=J_r$ et $h=D_{r,a}$. Les poids de $h$ s
 
 On vérifie alors $hu=\zeta uh$, y compris sur le dernier vecteur qui est tué par $u$. Ces couples réalisent les six types.
 
-### Question 34
-
-**Repère officiel · 14° c).**
+### Question 14c
 
 Soit $b_{ij}$ le nombre de blocs dont les degrés vont de $i$ à $j$, pour $1\leq i\leq j\leq3$. Un bloc compte une dimension dans chaque degré qu’il traverse.
 
@@ -340,15 +274,15 @@ b_{33}&=d_3-r_2 .
 \end{aligned}
 $$
 
+On peut vérifier la formule de $b_{22}$ directement dans $V_2$. Le sous-espace des vecteurs qui s’arrêtent au degré 2 est $\ker u_2$. Ceux qui proviennent du degré 1 forment $\ker u_2\cap\operatorname{im}u_1$, de dimension $r_1-r_{21}$ par le théorème du rang appliqué à la restriction de $u_2$ à $\operatorname{im}u_1$. La dimension du quotient vaut donc $d_2-r_2-(r_1-r_{21})=b_{22}$.
+
 L’exemple suivant isole l’information portée par $r_{21}$. Prenons $(d_1,d_2,d_3)=(1,2,1)$ et $u_1(t)=(t,0)$. Si $u_2(x,y)=x$, la composée est de rang un. On a une chaîne $[1,3]$ et un vecteur isolé en degré 2. Si $u_2(x,y)=y$, la composée est nulle. On a alors les chaînes $[1,2]$ et $[2,3]$. Dans les deux exemples, $r_1=r_2=1$.
 
 ![Les deux systèmes ont les mêmes dimensions et les mêmes rangs individuels. La chaîne qui traverse les trois degrés existe uniquement lorsque la composée est non nulle.](figures/chaines-graduees.svg)
 
 ## Partie VI — Classification des couples de matrices rectangulaires
 
-### Question 35
-
-**Repère officiel · 15°.**
+### Question 15
 
 Si (i) est vérifiée, prenons $P$ et $Q$ envoyant les anciennes coordonnées sur les nouvelles dans $\mathbb C^m$ et $\mathbb C^n$.
 
@@ -364,15 +298,11 @@ Enfin, sous (iii), $RH=HR$, donc $R$ stabilise les espaces propres de $H$ associ
 
 Puisque $R$ est inversible, ses deux restrictions sont inversibles. Ainsi $R=\operatorname{diag}(P,Q)$ et les deux blocs de l’égalité de conjugaison donnent (ii).
 
-### Question 36
-
-**Repère officiel · 16° a).**
+### Question 16a
 
 On a **$H^2=I_{m+n}$**. Multiplier par $H$ à droite change le signe de la seconde colonne de blocs, puis le multiplier à gauche change le signe de la seconde ligne de blocs. Seuls les blocs hors diagonale de $M$ sont éventuellement non nuls, donc $HMH^{-1}=-M$. La conjugaison préserve les puissances et les combinaisons linéaires, d’où $\boxed{HP(M)H^{-1}=P(-M)}$.
 
-### Question 37
-
-**Repère officiel · 16° b).**
+### Question 16b
 
 Par 16° a), $M$ et $-M$ sont semblables. Avec $p=m+n$, on a
 $$
@@ -382,9 +312,7 @@ Un facteur $(X-\lambda)^k$ de $\chi_M(X)$ devient un facteur $(X+\lambda)^k$ de 
 
 Comme $\chi_{-M}=\chi_M$, **$\lambda$ et $-\lambda$ ont la même multiplicité algébrique.**
 
-### Question 38
-
-**Repère officiel · 16° c).**
+### Question 16c
 
 Les polynômes $X^r$ et $Q$ sont premiers entre eux car $Q(0)\ne0$. Leur produit annule $M$ par Cayley–Hamilton. Le lemme de décomposition des noyaux donne $\mathbb C^{m+n}=\ker M^r\oplus\ker Q(M)$.
 
@@ -396,9 +324,7 @@ Ainsi $Q$ est un produit de facteurs $(X^2-\lambda^2)^k$ et $Q(-X)=Q(X)$, y comp
 
 Par 16° a), $HM^rH^{-1}=(-1)^r M^r$ et $HQ(M)H^{-1}=Q(M)$. Ces identités montrent que **les deux noyaux sont stables par $H$.**
 
-### Question 39
-
-**Repère officiel · 17°.**
+### Question 17
 
 Sous l’hypothèse de nilpotence de $M$, les deux identités de 16° a) montrent que le couple $(M,H)$ satisfait les hypothèses de 13° b) avec $N=2$ et $\zeta=-1$. Chaque chaîne de Jordan alterne donc les signes de $H$.
 
@@ -417,19 +343,17 @@ On a $A_0=(I_s\ \ 0)$ et $B_0=\binom{0}{I_s}$, puisque $e_i$ est suivi de $f_i$ 
 - Si elle commence par un signe négatif et finit par un signe positif, $r=s$. Alors $A_0=J_r$ et $B_0=I_r$.
 - Si elle commence et finit par un signe négatif, $s=r+1$. On a $A_0=\binom{0}{I_r}$ et $B_0=(I_r\ \ 0)$.
 
+![Quatre chaînes représentatives. Chaque flèche indique l’image par M. Les signes sont les valeurs propres de H et le dernier vecteur a pour image zéro.](figures/q17-chaines-alternees.svg)
+
 Les tailles nulles correspondent aux chaînes d’un seul vecteur. La réunion des bases des chaînes donne la similitude simultanée demandée.
 
-### Question 40
-
-**Repère officiel · 18° a).**
+### Question 18a
 
 Puisque $M(x,0)=(0,Ax)$ et $M(0,y)=(By,0)$, l’injectivité de $M$ donne l’injectivité de $A$ et de $B$.
 
 Il en résulte $m\leq n$ et $n\leq m$. Donc **$m=n$ et $A,B$ sont inversibles**.
 
-### Question 41
-
-**Repère officiel · 18° b).**
+### Question 18b
 
 Soient $E_+$ et $E_-$ les espaces propres de $H$ pour $1$ et $-1$.
 
