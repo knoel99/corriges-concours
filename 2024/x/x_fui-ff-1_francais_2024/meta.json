@@ -27,7 +27,10 @@
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20FUI-FF%20Session%201%20SUJET%20DE%20FRANCAIS.pdf",
     "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
-    "sujet_sha256": "e0dd957f8b38cd0e2c5c87807da929996f04e44cad85dd55249e04271d0aae68"
+    "sujet_sha256": "e0dd957f8b38cd0e2c5c87807da929996f04e44cad85dd55249e04271d0aae68",
+    "pages_sujet": 3,
+    "reperage": "P. 1, garde. P. 2, entretien de Jacqueline de Romilly avec Liliane Delwasse du 25 janvier 2007 et note définissant « helléniste ». P. 3, questions A1–A3 et essai B.",
+    "consignes_verifiees": "Session 1 d’automne, épreuve n° 2, deux heures. Trois questions de compréhension et un essai personnel de forme libre sur l’étude du passé. Le sujet précise que cet essai bref est sans limitation du nombre de mots. Aucune option alternative ni répartition chiffrée des points. La garde interdit les dictionnaires et traducteurs électroniques."
   },
   "date_revision": "2026-11-24",
   "revision": {
@@ -83,6 +86,36 @@
       "modifications": true,
       "perimetre": "Relecture des trois réponses et de l’essai sur l’entretien de Jacqueline de Romilly, diagnostic conditionnel, objection de l’intervieweuse et portée des exemples de Sophocle et Lange.",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "oraux_lyon_et_anciens_corriges",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle intégral du feuillet, des contraintes et des réponses A et B. Précisions dans la compréhension et les exemples, mise en regard des deux schémas dans chaque édition et exercice guidé. P. 1, garde. P. 2, entretien de Jacqueline de Romilly avec Liliane Delwasse du 25 janvier 2007 et note définissant « helléniste ». P. 3, questions A1–A3 et essai B."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A1 · L’idée principale et le jugement de Jacqueline de Romilly sur la société moderne.",
+      "A2 · L’unique remède selon l’helléniste et le rôle qu’elle prête aux études grecques.",
+      "A3 · Les deux termes de la métaphore de la parole comme rempart.",
+      "B · Avis personnel sur la connaissance du présent par les œuvres du passé, à partir de la tragédie de Sophocle et de la photographie de Dorothea Lange."
+    ],
+    "elements_verifies": [
+      "P. 1, garde. P. 2, entretien de Jacqueline de Romilly avec Liliane Delwasse du 25 janvier 2007 et note définissant « helléniste ». P. 3, questions A1–A3 et essai B.",
+      "Session 1 d’automne, épreuve n° 2, deux heures. Trois questions de compréhension et un essai personnel de forme libre sur l’étude du passé. Le sujet précise que cet essai bref est sans limitation du nombre de mots. Aucune option alternative ni répartition chiffrée des points.",
+      "Dans chaque édition, confrontation des réponses et de l’essai à la feuille, contrôle des deux schémas et de leurs renvois."
+    ]
+  }
 }
