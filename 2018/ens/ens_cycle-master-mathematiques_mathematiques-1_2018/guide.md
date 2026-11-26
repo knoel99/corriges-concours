@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le problème relie le comptage des points entiers et primitifs au calcul de la série thêta d’un réseau. On note $V$ le covolume du réseau et on utilise la transformée de Fourier de noyau $e^{-2\pi i\langle x,y\rangle}$.
 
 ## I. Produits infinis et fonction zêta
@@ -203,6 +205,10 @@ Si $A$ a pour colonnes les $e_i$, alors $\Lambda=A\mathbb Z^d$. La condition dua
 
 Le réseau $\mathbb Z\times2\mathbb Z$ est engendré par les colonnes de $\operatorname{diag}(1,2)$, inversible. Son dual est $\mathbb Z\times\tfrac12\mathbb Z$, de base $(1,0),(0,1/2)$ par III.4.
 
+Le rectangle fondamental du réseau a une aire de $2$, contre $1/2$ pour son dual. En effet, si $y=(u,v)$, les deux générateurs imposent $u\in\mathbb Z$ et $2v\in\mathbb Z$. Ces conditions suffisent puisque tout vecteur du réseau est une combinaison entière des deux générateurs.
+
+![Le réseau de base (1, 0), (0, 2) et son dual de base (1, 0), (0, ½). Les points superposés ont une seconde coordonnée entière paire.](figures/reseau-et-dual.svg)
+
 ### Question III.5.b
 
 > [!INDICATION]
@@ -277,4 +283,4 @@ Le dénominateur $c\tau+d$ ne s’annule pas dans $\mathbb H$ : pour $c\ne0$ son
 
 Pour un réseau pair autodual de dimension $d$ multiple de huit, $V=1$ et $i^{-d/2}=1$. IV.1 et IV.3 donnent donc les lois voulues pour $T$ et $S$, de poids $d/2$. Elles se composent car $j(M,\tau)=c\tau+d$ vérifie $j(MN,\tau)=j(M,N\tau)j(N,\tau)$. IV.4 conclut. En regroupant les vecteurs de norme carrée $2n$, on obtient la série en $e^{2\pi i n\tau}$ dont le coefficient est leur nombre, fini par discrétion. Pour $\Lambda_8$ de III.5.b, si $m\in D$, $\|m\|^2\equiv\sum m_i\equiv0\bmod2$ ; pour $m+e$, on ajoute $\sum m_i+2$, encore pair. Sa thêta est donc modulaire de poids quatre.
 
-Ces conditions se retrouvent si la thêta est modulaire au sens de l’énoncé. À $\tau=it$, la périodicité en $1$ impose l’égalité réelle entre une somme de masses strictement positives et la somme de ces masses multipliées par $e^{i\pi\|x\|^2}$. Chacune de ces phases vaut un, car les pertes en partie réelle sont positives ou nulles. Le réseau est pair, donc entier par polarisation et $\Lambda\subset\Lambda'$. Si le poids est $w=2k$, appliquer IV.2 au réseau dual pour écrire $\Theta_\Lambda(i/t)=t^{d/2}V^{-1}\Theta_{\Lambda'}(it)$ et comparer à $(it)^w\Theta_\Lambda(it)$. Quand $t\to\infty$, les deux thêtas de droite tendent vers un par domination. D’où $w=d/2$ puis $V^{-1}=i^w$, donc $V=1$ et $w$ est divisible par quatre. L’inclusion dans le dual est alors une égalité, car leurs covolumes coïncident.
+Ces conditions se retrouvent si la thêta est modulaire au sens de l’énoncé. À $\tau=it$, la périodicité en $1$ impose l’égalité réelle entre une somme de masses strictement positives et la somme de ces masses multipliées par $e^{i\pi\|x\|^2}$. Chacune de ces phases vaut un, car les pertes en partie réelle sont positives ou nulles. Le réseau est pair, donc entier par polarisation et $\Lambda\subset\Lambda'$. Si le poids est $w=2k$, appliquer IV.2 au paramètre $1/t$ pour écrire $\Theta_\Lambda(i/t)=t^{d/2}V^{-1}\Theta_{\Lambda'}(it)$ et comparer à $(it)^w\Theta_\Lambda(it)$. Quand $t\to\infty$, les deux thêtas de droite tendent vers un par domination. D’où $w=d/2$ puis $V^{-1}=i^w$, donc $V=1$ et $w$ est divisible par quatre. L’inclusion dans le dual est alors une égalité, car leurs covolumes coïncident.

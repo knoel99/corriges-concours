@@ -11,13 +11,26 @@
   "sources": {
     "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2017_SE_2C_Math1.pdf",
     "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2017_RO_2C_Maths1.pdf",
-    "sha256_sujet": "2850dc34af39f59f66246eeb8b3edca64c7e2bae7a9f6378dd92b206837b2f22"
+    "sha256_sujet": "2850dc34af39f59f66246eeb8b3edca64c7e2bae7a9f6378dd92b206837b2f22",
+    "rapports_controles": [
+      {
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2017_RO_2C_Maths1.pdf",
+        "sha256": "ba53fa534c0a96fcce9561d0a68770ce780e96b22ee3f935d55936402817679e",
+        "pages": 2
+      }
+    ],
+    "sha256_rapport_jury": "ba53fa534c0a96fcce9561d0a68770ce780e96b22ee3f935d55936402817679e"
   },
   "figures": [
     {
       "fichier": "figures/preimages-puissance.svg",
       "question": "10",
       "legende": "Préimages successives de 2 par le carré. Leur rayon décroît vers un tandis que les angles deviennent denses sur le cercle."
+    },
+    {
+      "fichier": "figures/joukowski-ellipses.svg",
+      "question": "14",
+      "legende": "Images des cercles de rayon r par la fonction de Joukowski. Quand r tend vers 1, les ellipses se resserrent sur le segment de −1 à 1."
     }
   ],
   "contributions": [
@@ -31,6 +44,70 @@
       "perimetre": "Rédaction intégrale des deux éditions après lecture du cahier 2C7121. Produits de Blaschke, puissances, Tchebychev, ensembles de Julia et géométrie du bassin. Justification de l’incompatibilité entre le coefficient unitaire de la question 18 et la normalisation de Tchebychev. Schéma des préimages du carré.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Relecture des 39 consignes des trois parties avec le sujet commun et le rapport sur l’écrit. Vérification du prolongement, des multiplicités et des préimages, de la normalisation de Tchebychev et des arguments de connexité. Calcul des demi-axes de l’image d’un cercle et justification du passage à zéro de la branche inverse. Deux figures contrôlées.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.a",
+      "1.b",
+      "1.c",
+      "1.d",
+      "2.a",
+      "2.b",
+      "3",
+      "4",
+      "5",
+      "6.a",
+      "6.b",
+      "6.c",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11.a",
+      "11.b",
+      "11.c",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18.a",
+      "18.b",
+      "18.c",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23.a",
+      "23.b",
+      "23.c",
+      "24",
+      "25",
+      "26",
+      "27"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "revision",
+      "sha256_sujet_controle": "2850dc34af39f59f66246eeb8b3edca64c7e2bae7a9f6378dd92b206837b2f22",
+      "perimetre": "Relecture des 39 consignes des trois parties avec le sujet commun et le rapport sur l’écrit. Vérification du prolongement, des multiplicités et des préimages, de la normalisation de Tchebychev et des arguments de connexité. Calcul des demi-axes de l’image d’un cercle et justification du passage à zéro de la branche inverse. Deux figures contrôlées."
+    }
+  },
+  "date_revision": "2026-11-26"
 }

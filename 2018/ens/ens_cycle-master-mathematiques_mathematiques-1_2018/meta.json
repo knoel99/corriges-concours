@@ -18,6 +18,11 @@
       "fichier": "figures/carres-du-cercle.svg",
       "question": "II.1",
       "legende": "Les carrés unitaires centrés aux points comptés couvrent le disque intérieur et restent dans le disque extérieur. Leur aire totale compte les points."
+    },
+    {
+      "fichier": "figures/reseau-et-dual.svg",
+      "question": "III.5.a",
+      "legende": "Le réseau de base (1, 0), (0, 2) et son dual de base (1, 0), (0, ½). Les points superposés ont une seconde coordonnée entière paire."
     }
   ],
   "contributions": [
@@ -31,6 +36,60 @@
       "perimetre": "Rédaction intégrale des deux éditions, avec contrôle du cahier 2C8121. Produits et série zêta, estimation du disque, inversion de Möbius, sommation de Poisson et critère de modularité avec exemple du réseau de dimension huit. Illustration géométrique du comptage.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Relecture des 29 consignes des quatre parties sur le cahier 2C8121. Vérification de la normalisation de Parseval, du terme de bord du disque, du dual de E8, du covolume dans la transformation et de la nécessité des conditions de modularité. Ajout du calcul des deux aires fondamentales et de leur illustration.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2.a",
+      "I.2.b",
+      "I.3",
+      "I.4.a",
+      "I.4.b",
+      "I.4.c",
+      "I.5",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "III.1",
+      "III.2",
+      "III.3.a",
+      "III.3.b",
+      "III.3.c",
+      "III.4",
+      "III.5.a",
+      "III.5.b",
+      "III.6",
+      "IV.1",
+      "IV.2",
+      "IV.3",
+      "IV.4",
+      "IV.5",
+      "IV.6"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "revision",
+      "sha256_sujet_controle": "3ef940527b21808c435e2de2d1c7db7d15e06e958b29c8044aa4749e5d2b73f1",
+      "perimetre": "Relecture des 29 consignes des quatre parties sur le cahier 2C8121. Vérification de la normalisation de Parseval, du terme de bord du disque, du dual de E8, du covolume dans la transformation et de la nécessité des conditions de modularité. Ajout du calcul des deux aires fondamentales et de leur illustration."
+    }
+  },
+  "date_revision": "2026-11-26"
 }
