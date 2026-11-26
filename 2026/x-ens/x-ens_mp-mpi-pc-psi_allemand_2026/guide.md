@@ -8,6 +8,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le 15 avril 2026, les quatre filières disposaient de quatre heures pour rédiger les deux compositions en allemand, sans dictionnaire ni traducteur. La première met en relation trois articles et une infographie. La seconde répond à un cinquième document. Les plans et les exemples ci-dessous proposent une manière de traiter chaque exercice.
 
 ## Partie A · Synthèse de documents
