@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Une matrice réelle est dite s-positive lorsque sa forme quadratique est positive ou nulle. L’épreuve étudie sa résolvante, reconstruit la matrice à partir des identités de la résolvante, puis fait le lien avec le semi-groupe exponentiel.
 
 ## Première partie. Partie symétrique
@@ -58,6 +60,8 @@ Si $x\in\ker A$, $(\lambda I+A)x=\lambda x$ donne $\lambda R_\lambda x=x$. Si $x
 
 Écrivons $x=x_0+x_1$ avec $x_0\in\ker A$, $x_1\in\operatorname{Im}A$. Alors $\lambda R_\lambda x\to x_0=Px$ pour le projecteur demandé. L’égalité sur une base orthonormée $e_j$ donne aussi la convergence en norme d’opérateur : $\|\lambda R_\lambda-P\|\le(\sum_j\|(\lambda R_\lambda-P)e_j\|^2)^{1/2}\to0$.
 
+Dans ce cas le projecteur est même orthogonal. Pour $x\in\ker A$, $(A_sx|x)=0$ et $A_s$ est symétrique positive. En base propre cela impose $A_sx=0$, puis $A_ax=0$ et $A^Tx=(A_s-A_a)x=0$. Ainsi $\ker A\subset\ker A^T=(\operatorname{Im}A)^\perp$. Les dimensions sont égales par le théorème du rang, d’où l’égalité.
+
 ### Question 8
 
 L’identité 5.b et la borne 6 donnent la continuité locale de $\Phi$. Puis $(R_{\lambda+h}-R_\lambda)/h=-R_{\lambda+h}R_\lambda\to-R_\lambda^2$. Ainsi $\Phi'=-\Phi^2$. Le produit de matrices est lisse, donc cette équation montre par récurrence que $\Phi$ est $C^\infty$. Comme $\Phi'$ commute avec $\Phi$, on obtient $\Phi^{(p)}=(-1)^pp!\Phi^{p+1}$ pour tout $p\ge0$.
@@ -86,6 +90,8 @@ L’identité $AF(\lambda)=I-\lambda F(\lambda)$ et $\|\lambda F(\lambda)\|\le1$
 
 Si (i) vaut, pour $0\le s\le t$, la loi du semi-groupe donne $\|e^{-tA}x\|=\|e^{-(t-s)A}e^{-sA}x\|\le\|e^{-sA}x\|$, d’où (ii). La dérivée de la norme carrée vaut $-2(Ae^{-tA}x|e^{-tA}x)$. Si (ii) vaut, sa dérivée à droite en zéro est négative ou nulle, donc $(Ax|x)\ge0$ et (iii) suit. Si (iii) vaut, la même dérivée est partout négative ou nulle pour $t\ge0$, donc $\|e^{-tA}x\|\le\|x\|$ et (i) suit.
 
+La loi utilisée pour passer d’un temps à l’autre découle des séries admises. Les séries de $e^{-sA}$ et de $e^{-hA}$ convergent absolument, et les puissances de la même matrice commutent. Au rang total $k$, leur produit de Cauchy a pour terme $(-A)^k\sum_{j=0}^k s^jh^{k-j}/(j!(k-j)!)=(-A)^k(s+h)^k/k!$. Ceci donne $e^{-sA}e^{-hA}=e^{-(s+h)A}$, sans décomposer $A$ en deux matrices qui devraient commuter.
+
 ### Question 13
 
 L’exponentielle est continue en $t$. Par 12, $|(e^{-tA})_{ij}|=|(e_i|e^{-tA}e_j)|\le1$. Le facteur $e^{-\lambda t}$ est intégrable sur $[0,\infty)$, ce qui donne la convergence absolue de chaque intégrale de coefficient.
@@ -93,6 +99,8 @@ L’exponentielle est continue en $t$. Par 12, $|(e^{-tA})_{ij}|=|(e_i|e^{-tA}e_
 ### Question 14
 
 Posons $G(t)=e^{-\lambda t}e^{-tA}$. Alors $G'=-(\lambda I+A)G$. Sur $[0,T]$, $(\lambda I+A)\int_0^T G(t)dt=I-G(T)$. Comme $\|G(T)\|\le e^{-\lambda T}\to0$, on obtient $(\lambda I+A)\rho(\lambda)=I$, donc $\rho(\lambda)=R_\lambda(A)$.
+
+L’intégrale sur $[0,T]$ approche la résolvante en norme avec une erreur contrôlée : la norme de la queue est au plus $\int_T^\infty e^{-\lambda t}\,dt=e^{-\lambda T}/\lambda$. Ce calcul justifie aussi le passage de l’identité matricielle tronquée à sa limite.
 
 ### Question 15
 

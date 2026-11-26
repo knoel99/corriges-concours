@@ -11,7 +11,8 @@
   "sources": {
     "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-2_mp_2007.pdf",
     "rapport_jury": "https://www.wikiprepa.fr/concours/data/x_maths-2_mp_2007_rapport_jury.pdf",
-    "sha256_sujet": "c433b7ca422799cf871a306b9f24f55acd0ab2a33f7ceb470bcb066b3739e313"
+    "sha256_sujet": "c433b7ca422799cf871a306b9f24f55acd0ab2a33f7ceb470bcb066b3739e313",
+    "sha256_rapport_jury": "9381762263c1a398bad8fc89e120a1f8579304440f9fb3315b822f2c68f947c6"
   },
   "figures": [
     {
@@ -31,6 +32,158 @@
       "perimetre": "Rédaction des deux éditions à partir du sujet et du rapport du jury. Classification des espaces stables du bloc de Jordan, contre-exemple à la réciproque de Schur, calcul du commutateur avec une puissance et preuve de la classification à un signe près. Schéma de la chaîne des poids.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "x_mp_deuxieme_composition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Pointage physique des 24 consignes sur 4 pages. Contrôle de la formule du commutateur avec l’ordre des facteurs imprimé et de tous les dénominateurs. Vérification des deux cas extrêmes du modèle et de la réalisation effective des deux classes finales, pour lesquelles K au carré diffère bien de l’identité."
     }
-  ]
+  ],
+  "intitule": "Relations de commutation",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2.a",
+      "2.b",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12.a",
+      "12.b",
+      "12.c",
+      "12.d",
+      "13",
+      "14",
+      "15",
+      "16.a",
+      "16.b",
+      "16.c",
+      "16.d",
+      "17"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1",
+        "page_pdf": "1"
+      },
+      {
+        "question": "2.a",
+        "page_pdf": "1"
+      },
+      {
+        "question": "2.b",
+        "page_pdf": "1"
+      },
+      {
+        "question": "3",
+        "page_pdf": "2"
+      },
+      {
+        "question": "4",
+        "page_pdf": "2"
+      },
+      {
+        "question": "5",
+        "page_pdf": "2"
+      },
+      {
+        "question": "6",
+        "page_pdf": "2"
+      },
+      {
+        "question": "7",
+        "page_pdf": "2"
+      },
+      {
+        "question": "8",
+        "page_pdf": "2"
+      },
+      {
+        "question": "9",
+        "page_pdf": "2"
+      },
+      {
+        "question": "10",
+        "page_pdf": "2"
+      },
+      {
+        "question": "11",
+        "page_pdf": "2"
+      },
+      {
+        "question": "12.a",
+        "page_pdf": "3"
+      },
+      {
+        "question": "12.b",
+        "page_pdf": "3"
+      },
+      {
+        "question": "12.c",
+        "page_pdf": "3"
+      },
+      {
+        "question": "12.d",
+        "page_pdf": "3"
+      },
+      {
+        "question": "13",
+        "page_pdf": "3"
+      },
+      {
+        "question": "14",
+        "page_pdf": "3"
+      },
+      {
+        "question": "15",
+        "page_pdf": "3"
+      },
+      {
+        "question": "16.a",
+        "page_pdf": "4"
+      },
+      {
+        "question": "16.b",
+        "page_pdf": "4"
+      },
+      {
+        "question": "16.c",
+        "page_pdf": "4"
+      },
+      {
+        "question": "16.d",
+        "page_pdf": "4"
+      },
+      {
+        "question": "17",
+        "page_pdf": "4"
+      }
+    ],
+    "controle": [
+      "p. 1, endomorphismes du commutant, irréductibilité sur les complexes, contre-exemple à la réciproque",
+      "p. 2, opérateurs modèles, classification des espaces stables par le décalage, relation du commutateur aux deux extrémités, nilpotence et vecteur de plus haut poids",
+      "p. 3, construction de la base en dimension deux, commutateur d’une puissance et action sur la chaîne",
+      "p. 4, indépendance des poids, premier zéro, poids initial et classification à changement de base simultané près",
+      "Contrôle de la formule du commutateur avec l’ordre des facteurs imprimé et de tous les dénominateurs. Vérification des deux cas extrêmes du modèle et de la réalisation effective des deux classes finales, pour lesquelles K au carré diffère bien de l’identité."
+    ]
+  }
 }

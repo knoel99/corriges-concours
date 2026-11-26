@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 On fixe un complexe non nul $q$ qui n’est pas racine de l’unité. La relation de commutation transporte les espaces propres entre eux. C’est en suivant ces déplacements que l’on retrouve les trois matrices dans une même base.
 
 ## Première partie. Commutation et sous-espaces stables
@@ -39,6 +41,8 @@ Notons $[r]=(q^r-q^{-r})/(q-q^{-1})$ et $c_p=[p-1][n+1-p]$, de sorte que $E_0x_p
 Posons $c_1=c_{n+1}=0$. Sur $x_p$, le commutateur $E_0F_0-F_0E_0$ agit par $c_{p+1}-c_p$, y compris aux deux extrémités. Or
 $$c_{p+1}-c_p=[p][n-p]-[p-1][n+1-p]=[n+1-2p].$$
 En effet, avec $D=q-q^{-1}$, les termes en $q^n$ et $q^{-n}$ s’annulent dans $D^2(c_{p+1}-c_p)$ ; il reste $(q-q^{-1})(q^{n+1-2p}-q^{-n-1+2p})$. Puisque $k_p=q^{n+1-2p}$, on reconnaît $(k_p-k_p^{-1})/D$, ce qui prouve l’égalité d’endomorphismes.
+
+En particulier, sur $x_1$ le coefficient obtenu est $c_2=[n-1]$, et sur $x_n$ il est $-c_n=-[n-1]$. Ces deux valeurs correspondent aux poids $q^{n-1}$ et $q^{1-n}$ de $K_0$ et tiennent compte des bouts de chaîne où l’un des deux produits est nul.
 
 ### Question 7
 
@@ -89,6 +93,8 @@ $$[E,F^m]=\sum_{j=0}^{m-1}F^j[E,F]F^{m-1-j}
 =D^{-1}F^{m-1}\sum_{k=0}^{m-1}(q^{-2k}K-q^{2k}K^{-1}).$$
 Les deux progressions ont pour sommes $q^{1-m}[m]$ et $q^{m-1}[m]$. On obtient $D^{-2}(q^m-q^{-m})F^{m-1}(q^{1-m}K-q^{m-1}K^{-1})$ comme demandé. L’hypothèse $K^2\ne I$ et la relation du commutateur imposent par ailleurs $E\ne0$ ; on peut donc appliquer 11 pour choisir $\nu_1$.
 
+Le déplacement de $K^{-1}$ se fait dans le sens opposé à celui de $K$ : $KF^k=q^{-2k}F^kK$, tandis que $K^{-1}F^k=q^{2k}F^kK^{-1}$. Par exemple pour $m=2$, la formule se lit $D[E,F^2]=F[(1+q^{-2})K-(1+q^2)K^{-1}]$. Ce cas vérifie à la fois l’ordre des facteurs et les deux exposants avant la sommation générale.
+
 ### Question 14
 
 De $KF=q^{-2}FK$, on tire $K\nu_m=q^{-2(m-1)}F^{m-1}K\nu_1=q^{2-2m}\lambda\nu_m$ pour tout $m\ge1$.
@@ -117,3 +123,5 @@ En prenant $m=n+1$ dans 15, on a $0=E\nu_{n+1}=D^{-2}(q^n-q^{-n})(q^{1-n}\lambda
 ### Question 17
 
 Dans la base $(\nu_1,\ldots,\nu_n)$, l’opérateur $F$ a exactement la matrice de $F_0$. L’égalité de 14 donne pour $K$ celle de $\varepsilon K_0$. Dans 15, en remplaçant $\lambda$ par $\varepsilon q^{n-1}$, le facteur de descente devient $\varepsilon[m-1][n+1-m]$, donc $E$ a la matrice de $\varepsilon E_0$. Les triplets sont donc, à changement de base simultané près, $(K_0,E_0,F_0)$ ou $(-K_0,-E_0,F_0)$. Les deux vérifient les relations par la partie II et sont irréductibles. Leurs spectres de $K$ sont disjoints : $q^{2j}=-1$ impliquerait que $q$ est racine de l’unité (et $j=0$ est impossible).
+
+Pour vérifier l’existence dans les deux cas, le remplacement $(K_0,E_0,F_0)\mapsto(-K_0,-E_0,F_0)$ multiplie par $-1$ les deux membres de la relation du commutateur. Il conserve aussi les deux autres relations et les mêmes sous-espaces stables. Enfin $K_0^2x_1=q^{2(n-1)}x_1\ne x_1$ pour $n\ge2$ ; la dernière vérification vaut également pour $-K_0$.
