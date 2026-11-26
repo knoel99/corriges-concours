@@ -1,0 +1,82 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_epreuve-a-option-dominante-gestion_2024",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Épreuve à option — dominante gestion",
+    "annee": 2024,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "Confiturerie du Ventoux : coûts des gammes, pilotage d’un atelier artisanal et exportation",
+  "gabarit": "questions",
+  "questions": 13,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2024_Epreuve_a_option_EcoG1.pdf#page=3",
+    "sujet_sha256": "1c6c65743399beb3787a4331f1a2429596cea389fe3997a2e697822dca33efbb",
+    "index": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=289&field_year_target_id%5B%5D=589&page=1",
+    "pages_sujet": "3–9 du PDF, soit les pages imprimées 1–7 du cas, documents 1 à 7.",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2024_Epreuve_a_option_EcoG1.pdf",
+        "pages": 9,
+        "sha256": "1c6c65743399beb3787a4331f1a2429596cea389fe3997a2e697822dca33efbb"
+      },
+      {
+        "role": "rapport-gestion",
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2024_Rapport_Eco-Gestion%201_Option_Gestion_ECRIT.pdf",
+        "pages": 4,
+        "sha256": "cb9a2b08f856b963f3ca1c6048611bd4439b689df4cefc503a7f06c34b5ed3e4"
+      }
+    ],
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2024_Rapport_Eco-Gestion%201_Option_Gestion_ECRIT.pdf",
+    "rapport_sha256": "cb9a2b08f856b963f3ca1c6048611bd4439b689df4cefc503a7f06c34b5ed3e4"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/deux-gammes-quatre-inducteurs.svg",
+      "question": "1",
+      "legende": "La gamme Prestige représente 16 % des pots fabriqués mais suscite une part plus élevée des commandes et des lots. L’imputation à l’unité produite masquait ce surcroît d’activité."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "gestion_2022_2023",
+      "agent": "gestion_2022_2023",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Résolution des 13 questions, répartition secondaire, fiches de stocks au CUMP, compte de résultat et contrôle de concordance, calcul ABC et prolongements ABM et coûts cibles, conduite du changement, systèmes d’information et stratégie export."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "limites": "Coûts directs ABC de 2,60 et 3,55 € imposés par la question 7, distincts des coûts directs calculés à la question 2. Les imputations en fractions de commandes sont les pondérations estimées du document 5. Le coût ABC de la gamme produite est distingué du coût des ventes après variation de stock."
+  }
+}
