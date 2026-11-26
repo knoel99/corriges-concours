@@ -1,0 +1,86 @@
+{
+  "slug": "bel_bl_sociologie-oral-a-option-desheriter-et-depolitisation_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Sociologie (oral à option) — Déshériter et dépolitisation",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "Déshériter / La dépolitisation",
+  "questions": 0,
+  "sujets": 2,
+  "tirages": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oraux_sociologie_option_bl.pdf#page=1",
+    "sujet_sha256": "a6cfd0e1d317596c64fdd7f85e2770ef806175c8b278483fe266bc97bed6e3d9",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_sociologie_option.pdf",
+    "rapport_sha256": "514cddfb2a08ef98d7d1375ef107103a12e496e5c827f26b9640024be445eb8b",
+    "pages_sujet": "Feuillet à choix entre deux sujets secs, p. 1 du PDF."
+  },
+  "figures": [
+    {
+      "fichier": "figures/deux-enfants.svg",
+      "question": "Déshériter",
+      "legende": "Réserve et part disponible dans l’exemple de deux enfants"
+    },
+    {
+      "fichier": "figures/deux-scrutins.svg",
+      "question": "La dépolitisation",
+      "legende": "Deux trajectoires compatibles avec le même total de votants"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "sociologie_bel_bl_2025_desheriter_depolitisation",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Rédaction des deux exposés, pistes de préparation et réponses aux relances. Création des figures sur deux réserves successorales et les effectifs des trajectoires électorales."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "sociologie_bel_bl_2025_desheriter_depolitisation",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": false,
+      "perimetre": "Vérification des deux intitulés et de la consigne de choix sur le billet, des attentes de l’option et des deux exemples numériques avec leurs hypothèses."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Déshériter",
+      "La dépolitisation"
+    ],
+    "controle": [
+      "Déshériter. Droit de réserve et quotité disponible, transmission économique et symbolique, enquête et biais de sélection.",
+      "La dépolitisation. Participation individuelle, règles de prise de parole et effets des décisions institutionnelles. Limites des taux agrégés et conditions de la repolitisation."
+    ]
+  }
+}
