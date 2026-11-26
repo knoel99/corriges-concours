@@ -10,6 +10,8 @@
 
 **Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Sujet officiel** · « L’alimentation : à quels prix ? »
 
 **Problématique** : comment des prix capables d’organiser les échanges peuvent-ils simultanément compromettre l’accès à la nourriture ou masquer certains de ses coûts ?
@@ -67,3 +69,9 @@ Enfin, la sécurité alimentaire ne suppose ni l'abandon de tout échange ni la 
 Les prix de l'alimentation expriment des coûts de production et des conditions d'échange, mais aussi des rapports sociaux et des choix institutionnels. Les ménages les affrontent avec des ressources inégales ; les politiques agricoles et les marchés répartissent les revenus et les risques ; certains dommages sanitaires ou écologiques demeurent hors de la transaction. Ni le prix le plus bas ni le prix le plus élevé ne garantit donc une bonne alimentation pour tous. **L'enjeu est d'organiser des prix rémunérateurs et des pratiques soutenables sans faire de l'accès à la nourriture la variable d'ajustement.** Cela suppose de distinguer les objectifs et leurs instruments, puis de rendre explicite qui supporte chaque coût, aujourd'hui et à l'avenir.
 
 [Sujet officiel](https://www.ens.psl.eu/sites/default/files/2025_blses_sujet_composition_sciences_sociales.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_ecrit_sciences_economiques_et_sociales.pdf)
+
+## Vérification sur le sujet
+
+Les huit documents du sujet imprimé ont été comparés aux deux éditions, y compris les suites des extraits de Perrin Heredia, Pinaud, Tordjman et Stanziani. Les notes sur les quintiles, les cotes, les taux de mortalité et les soldes commerciaux ont été vérifiées sur les pages 2, 4, 5 et 10. L’introduction du rapport du jury compte sept documents. Sa page 15 présente le huitième, consacré aux marchés financiers, qui figure aux pages 10 et 11 du sujet.
+
+Le document 7 permet de faire dialoguer le prix payé par les ménages et la spécialisation productive sans les confondre. De juillet 2020 à juin 2021, le solde « vins et spiritueux » est de +12 707 millions d’euros et celui des fruits et légumes de −6 541 millions. Leur somme algébrique vaut +6 166 millions pour ces deux secteurs réunis. Cette somme laisse invisibles les autres filières et la répartition de la valeur ajoutée. Pour expliquer le prix des fruits en magasin, il faudrait aussi observer les coûts et les marges le long de la chaîne, comme le suggère, pour le lait, l’analyse de la PAC au document 5.
