@@ -1015,6 +1015,7 @@
 | 2025 | BEL | AL | Espagnol (thème Lyon) | [md](2025/bel/bel_al_espagnol-theme-lyon_2025/brut.md) | [md](2025/bel/bel_al_espagnol-theme-lyon_2025/guide.md) |
 | 2025 | BEL | AL | Espagnol (commentaire et traduction) | [md](2025/bel/bel_al_espagnol-commentaire-et-traduction_2025/brut.md) | [md](2025/bel/bel_al_espagnol-commentaire-et-traduction_2025/guide.md) |
 | 2025 | BEL | AL | Portugais (commentaire et traduction) | [md](2025/bel/bel_al_portugais-commentaire-et-traduction_2025/brut.md) | [md](2025/bel/bel_al_portugais-commentaire-et-traduction_2025/guide.md) |
+| 2025 | BEL | AL | Explication de documents historiques (Lyon) | [md](2025/bel/bel_al_explication-de-documents-historiques-lyon_2025/brut.md) | [md](2025/bel/bel_al_explication-de-documents-historiques-lyon_2025/guide.md) |
 | 2026 | BEL | BL | Sociologie (oral commun) — 22 juin, sujet 1 | [md](2026/bel/bel_bl_sociologie-oral-commun-22-juin-sujet-1_2026/brut.md) | [md](2026/bel/bel_bl_sociologie-oral-commun-22-juin-sujet-1_2026/guide.md) |
 | 2026 | BEL | BL | Sociologie (oral commun) — 22 juin, sujet 2 | [md](2026/bel/bel_bl_sociologie-oral-commun-22-juin-sujet-2_2026/brut.md) | [md](2026/bel/bel_bl_sociologie-oral-commun-22-juin-sujet-2_2026/guide.md) |
 | 2026 | BEL | BL | Sociologie (oral commun) — 22 juin, sujet 3 | [md](2026/bel/bel_bl_sociologie-oral-commun-22-juin-sujet-3_2026/brut.md) | [md](2026/bel/bel_bl_sociologie-oral-commun-22-juin-sujet-3_2026/guide.md) |
