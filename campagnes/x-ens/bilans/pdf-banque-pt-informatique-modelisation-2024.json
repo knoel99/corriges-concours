@@ -1,0 +1,1196 @@
+{
+  "slug": "banque-pt_pt_informatique-et-modelisation_2024",
+  "commit_export": "66746e05e8b2c92317a02cba11753c515ab357fa",
+  "gabarit": "scripts/exporter de la même révision",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Résolution des 53 questions, rédaction de deux éditions, programmes Python, indications et trois schémas originaux."
+    },
+    {
+      "phase": "revision",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture avec le fascicule et les trois pages du jury, lecture du diagramme vérifiée sur R404A, traitement des bornes, vérification numérique et révision de la présentation des algorithmes."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21",
+      "Q22",
+      "Q23",
+      "Q24",
+      "Q25",
+      "Q26",
+      "Q27",
+      "Q28",
+      "Q29",
+      "Q30",
+      "Q31",
+      "Q32",
+      "Q33",
+      "Q34",
+      "Q35",
+      "Q36",
+      "Q37",
+      "Q38",
+      "Q39",
+      "Q40",
+      "Q41",
+      "Q42",
+      "Q43",
+      "Q44",
+      "Q45",
+      "Q46",
+      "Q47",
+      "Q48",
+      "Q49",
+      "Q50",
+      "Q51",
+      "Q52",
+      "Q53"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Q1",
+        "page_pdf": 2,
+        "titre": "Énergie et entropie sur un cycle"
+      },
+      {
+        "question": "Q2",
+        "page_pdf": 2,
+        "titre": "Signes des échanges"
+      },
+      {
+        "question": "Q3",
+        "page_pdf": 2,
+        "titre": "Possibilité d'un climatiseur monotherme"
+      },
+      {
+        "question": "Q4",
+        "page_pdf": 2,
+        "titre": "Deux thermostats"
+      },
+      {
+        "question": "Q5",
+        "page_pdf": 2,
+        "titre": "Chaleur prélevée dans la pièce"
+      },
+      {
+        "question": "Q6",
+        "page_pdf": 2,
+        "titre": "Travail du compresseur"
+      },
+      {
+        "question": "Q7",
+        "page_pdf": 2,
+        "titre": "Efficacité d'un cycle réversible"
+      },
+      {
+        "question": "Q8",
+        "page_pdf": 2,
+        "titre": "Effet de la température extérieure"
+      },
+      {
+        "question": "Q9",
+        "page_pdf": 4,
+        "titre": "Sortie de l'évaporateur"
+      },
+      {
+        "question": "Q10",
+        "page_pdf": 4,
+        "titre": "Compression réversible et adiabatique"
+      },
+      {
+        "question": "Q11",
+        "page_pdf": 4,
+        "titre": "Travail mécanique massique"
+      },
+      {
+        "question": "Q12",
+        "page_pdf": 4,
+        "titre": "Sortie du condenseur"
+      },
+      {
+        "question": "Q13",
+        "page_pdf": 4,
+        "titre": "Détente"
+      },
+      {
+        "question": "Q14",
+        "page_pdf": 4,
+        "titre": "Sortie du détendeur"
+      },
+      {
+        "question": "Q15",
+        "page_pdf": 4,
+        "titre": "Chaleur massique reçue à l'évaporateur"
+      },
+      {
+        "question": "Q16",
+        "page_pdf": 4,
+        "titre": "Efficacité réelle"
+      },
+      {
+        "question": "Q17",
+        "page_pdf": 4,
+        "titre": "Comparaison à la borne réversible"
+      },
+      {
+        "question": "Q18",
+        "page_pdf": 4,
+        "titre": "Bilan d'une tranche d'ailette"
+      },
+      {
+        "question": "Q19",
+        "page_pdf": 4,
+        "titre": "Longueur caractéristique"
+      },
+      {
+        "question": "Q20",
+        "page_pdf": 5,
+        "titre": "Solution générale et ailette longue"
+      },
+      {
+        "question": "Q21",
+        "page_pdf": 5,
+        "titre": "Profil de température"
+      },
+      {
+        "question": "Q22",
+        "page_pdf": 5,
+        "titre": "Puissance évacuée"
+      },
+      {
+        "question": "Q23",
+        "page_pdf": 8,
+        "titre": "Volume de la salle"
+      },
+      {
+        "question": "Q24",
+        "page_pdf": 8,
+        "titre": "Nombre nécessaire de groupes"
+      },
+      {
+        "question": "Q25",
+        "page_pdf": 8,
+        "titre": "Bilan des largeurs et des intervalles"
+      },
+      {
+        "question": "Q26",
+        "page_pdf": 9,
+        "titre": "Initialisation sur une seule ligne"
+      },
+      {
+        "question": "Q27",
+        "page_pdf": 9,
+        "titre": "Boucle de répartition"
+      },
+      {
+        "question": "Q28",
+        "page_pdf": 11,
+        "titre": "Convertir les virgules décimales"
+      },
+      {
+        "question": "Q29",
+        "page_pdf": 13,
+        "titre": "Lire les quatre colonnes"
+      },
+      {
+        "question": "Q30",
+        "page_pdf": 13,
+        "titre": "Rendre les séries accessibles par leur nom"
+      },
+      {
+        "question": "Q31",
+        "page_pdf": 13,
+        "titre": "Accéder à l'essai 1"
+      },
+      {
+        "question": "Q32",
+        "page_pdf": 13,
+        "titre": "Tracer la vitesse mesurée"
+      },
+      {
+        "question": "Q33",
+        "page_pdf": 14,
+        "titre": "Moyenne sur un intervalle d'indices"
+      },
+      {
+        "question": "Q34",
+        "page_pdf": 14,
+        "titre": "Point de fonctionnement d'un essai"
+      },
+      {
+        "question": "Q35",
+        "page_pdf": 14,
+        "titre": "Parcourir les dix-huit essais"
+      },
+      {
+        "question": "Q36",
+        "page_pdf": 15,
+        "titre": "Apprentissage supervisé"
+      },
+      {
+        "question": "Q37",
+        "page_pdf": 15,
+        "titre": "Régression linéaire multiple"
+      },
+      {
+        "question": "Q38",
+        "page_pdf": 16,
+        "titre": "Matrice de régression"
+      },
+      {
+        "question": "Q39",
+        "page_pdf": 16,
+        "titre": "Prédictions"
+      },
+      {
+        "question": "Q40",
+        "page_pdf": 16,
+        "titre": "Coût scalaire"
+      },
+      {
+        "question": "Q41",
+        "page_pdf": 16,
+        "titre": "Écriture matricielle"
+      },
+      {
+        "question": "Q42",
+        "page_pdf": 16,
+        "titre": "Fonction de coût"
+      },
+      {
+        "question": "Q43",
+        "page_pdf": 16,
+        "titre": "Dérivées partielles"
+      },
+      {
+        "question": "Q44",
+        "page_pdf": 17,
+        "titre": "Vecteur gradient"
+      },
+      {
+        "question": "Q45",
+        "page_pdf": 17,
+        "titre": "Calcul du gradient"
+      },
+      {
+        "question": "Q46",
+        "page_pdf": 17,
+        "titre": "Itérations de descente"
+      },
+      {
+        "question": "Q47",
+        "page_pdf": 18,
+        "titre": "Courbe du couple résistant"
+      },
+      {
+        "question": "Q48",
+        "page_pdf": 19,
+        "titre": "Équilibre par dichotomie"
+      },
+      {
+        "question": "Q49",
+        "page_pdf": 19,
+        "titre": "Équation dynamique"
+      },
+      {
+        "question": "Q50",
+        "page_pdf": 19,
+        "titre": "Différence avant"
+      },
+      {
+        "question": "Q51",
+        "page_pdf": 19,
+        "titre": "Mise à jour explicite"
+      },
+      {
+        "question": "Q52",
+        "page_pdf": 20,
+        "titre": "Intégrateur d'Euler"
+      },
+      {
+        "question": "Q53",
+        "page_pdf": 20,
+        "titre": "Temps de réponse et régime permanent"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  },
+  "pieces": {
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2024/info_mod_2024_pt.pdf",
+      "sha256": "4f2ad86f960b997334cfae90e57b8bd73f49d6496e8fb4fd70e08889645a4fad",
+      "pages": 24,
+      "pieces_jointes": [],
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "ec76394e3b9043cdce92683e5b16e66f4615824b0721ddc7ff887694af340348"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "0f9dc20303f4ebaf482e6d8b3c93c31bde1638228a298d676a94718b2ea7aeeb"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "630b65f770f151850f09dfbc29195b6184352223a2070b089fdf08834504eee8"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "42587f316b3d2660257cc39d83fcb2d5badc1dd08e93c913648c920b0ddb5fca"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "233473fca2aef45a0be1b1ab34fbfcbac64d37bcfaccccd736331a4c5c73a873"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "ae363a6c6ef496937f010a766167cdeb686111ddc81bece51cce8f8732373528"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "e0aacb32758a9f40f110dda39120e6186b4c939ecb2bb64af7412d845cc6dded"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "3e67a9067257505c99a030c323d80895e2a57eb359660bac92b41ed942d1a62d"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "a09bd3c5f78562a599a150fbecb552317de9457ad44c430a04e97d66d576323b"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "f5316f6cd19086ba396c5fcb365fcc4b4f8ec4284b85b786e1e09834be08934d"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "4c796a72293fe754c27b8bf52ba9d67b2b46e29f7889083db36f9d9b4ca8760e"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "25317ae3faf7abd1a25b0980839c9b0c246a8371d99d7a0df937af266951f42c"
+        },
+        {
+          "numero": 13,
+          "rendu_sha256": "52bc548753f5aa2bb86d427df12339be93b78cba5713d23af4ee505ec357ed17"
+        },
+        {
+          "numero": 14,
+          "rendu_sha256": "f3bfe4f3f33baee5eb8ce596945d05ebb21127a3d7a4e9aa139a8eabbb282508"
+        },
+        {
+          "numero": 15,
+          "rendu_sha256": "f148ca34ae1f3a45106abb6e66443ebc28ec8df8f75e290feef0ad423ef08486"
+        },
+        {
+          "numero": 16,
+          "rendu_sha256": "1fac2923a5cd80f1d10b89adc2f71b25c49c8d2fee546cde697b53c3266dd935"
+        },
+        {
+          "numero": 17,
+          "rendu_sha256": "e7757ef30c747774e66848148814e275f74faa0a553b2a806943a8a3b7a91e8a"
+        },
+        {
+          "numero": 18,
+          "rendu_sha256": "fcbd513f96676fdfee3eba65d8772d22421b05fbe944f1c49953997eff6f60ca"
+        },
+        {
+          "numero": 19,
+          "rendu_sha256": "5e67889630f5a369eafc5809d87bb802cd1ba0e7d107d49d019f3f31d48efb55"
+        },
+        {
+          "numero": 20,
+          "rendu_sha256": "7d7f05f9922ce355bde07036a4f32a55ea78d57e884abba68509b7d8a368f71e"
+        },
+        {
+          "numero": 21,
+          "rendu_sha256": "f27497b8e1f84edd0f0f1e938bb96ec484eb29ca5083dea0df86b3f1d77bc2b2"
+        },
+        {
+          "numero": 22,
+          "rendu_sha256": "f27497b8e1f84edd0f0f1e938bb96ec484eb29ca5083dea0df86b3f1d77bc2b2"
+        },
+        {
+          "numero": 23,
+          "rendu_sha256": "f27497b8e1f84edd0f0f1e938bb96ec484eb29ca5083dea0df86b3f1d77bc2b2"
+        },
+        {
+          "numero": 24,
+          "rendu_sha256": "ab76f4c6db8f88d910396dd94e4c3b9a9c71d071a8c5f7d58d0a4c4700cb5d48"
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2024/rapport_info_model_ecrit_2024.pdf",
+      "sha256": "53a89360a22065c585966648e72008d14782c47d3365bb812f25786a0fd01b28",
+      "pages": 3,
+      "pieces_jointes": [],
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "551cb973a8fa14e5aa35a17968ee9abfe9b14c79be6fb29cb249bb72f1f90edf"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "712d4deba24f0d2d50ca982fae518fd196461eb43b54537150e9922485f9b019"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "559944eb0610ecd81ba423ef6438a2bb95b1a82687ca0240f7706e5746ea7a7a"
+        }
+      ]
+    }
+  },
+  "controles": {
+    "portee": "Q29 à Q35 prescrivent des arguments, fonctions ou scripts. Q35 demande la mise en listes des 18 couples par un script. Les consignes ne demandent pas de retranscrire les 18 couples expérimentaux. Q46 fournit les coefficients ajustés après 300 itérations.",
+    "disponibilite": "Le sujet ne contient ni TXT joints ni annexe séparée sur sa cellule dans l’index Banque PT. Les pages 11–12 reproduisent un extrait et les pages 13–17 des courbes.",
+    "executions": "Six lignes de mesures officielles et 18 fichiers synthétiques distincts, bornes incluses 500 et 700, matrices de régression, gradient aux différences finies, racines positives, Euler et dernier franchissement de la bande à 5 %.",
+    "thermodynamique": "Lecture graphique du R404A confrontée à CoolProp 8.1.0. Voir reçu-tests.txt.",
+    "fonctions_du_module_identiques_aux_deux_markdown": [
+      "Euler_Explicite",
+      "affichage",
+      "affichage_couple",
+      "analyse_essais",
+      "caracteristiques",
+      "cout",
+      "descente_gradient",
+      "dichotomie",
+      "extraction_resultats_essai",
+      "f",
+      "gradient",
+      "lire_colonnes",
+      "matrice_explicative",
+      "modele",
+      "moyenne_sur_intervalle",
+      "nbre_ffu",
+      "point_de_fonctionnement",
+      "remplace_virgule_par_point",
+      "repartition",
+      "volume"
+    ]
+  },
+  "pdf": {
+    "brut": {
+      "pages": 12,
+      "nombre_signets": 60,
+      "signets": [
+        [
+          1,
+          "Bilans du climatiseur",
+          1
+        ],
+        [
+          2,
+          "Q1 — Énergie et entropie sur un cycle",
+          1
+        ],
+        [
+          2,
+          "Q2 — Signes des échanges",
+          1
+        ],
+        [
+          2,
+          "Q3 — Possibilité d'un climatiseur monotherme",
+          1
+        ],
+        [
+          2,
+          "Q4 — Deux thermostats",
+          1
+        ],
+        [
+          2,
+          "Q5 — Chaleur prélevée dans la pièce",
+          1
+        ],
+        [
+          2,
+          "Q6 — Travail du compresseur",
+          2
+        ],
+        [
+          2,
+          "Q7 — Efficacité d'un cycle réversible",
+          2
+        ],
+        [
+          2,
+          "Q8 — Effet de la température extérieure",
+          2
+        ],
+        [
+          1,
+          "Cycle du R404A",
+          2
+        ],
+        [
+          2,
+          "Q9 — Sortie de l'évaporateur",
+          2
+        ],
+        [
+          2,
+          "Q10 — Compression réversible et adiabatique",
+          2
+        ],
+        [
+          2,
+          "Q11 — Travail mécanique massique",
+          2
+        ],
+        [
+          2,
+          "Q12 — Sortie du condenseur",
+          2
+        ],
+        [
+          2,
+          "Q13 — Détente",
+          2
+        ],
+        [
+          2,
+          "Q14 — Sortie du détendeur",
+          3
+        ],
+        [
+          2,
+          "Q15 — Chaleur massique reçue à l'évaporateur",
+          3
+        ],
+        [
+          2,
+          "Q16 — Efficacité réelle",
+          3
+        ],
+        [
+          2,
+          "Q17 — Comparaison à la borne réversible",
+          3
+        ],
+        [
+          1,
+          "Conduction dans une ailette",
+          3
+        ],
+        [
+          2,
+          "Q18 — Bilan d'une tranche d'ailette",
+          3
+        ],
+        [
+          2,
+          "Q19 — Longueur caractéristique",
+          4
+        ],
+        [
+          2,
+          "Q20 — Solution générale et ailette longue",
+          4
+        ],
+        [
+          2,
+          "Q21 — Profil de température",
+          4
+        ],
+        [
+          2,
+          "Q22 — Puissance évacuée",
+          4
+        ],
+        [
+          1,
+          "Implantation des groupes de ventilation",
+          5
+        ],
+        [
+          2,
+          "Q23 — Volume de la salle",
+          5
+        ],
+        [
+          2,
+          "Q24 — Nombre nécessaire de groupes",
+          5
+        ],
+        [
+          2,
+          "Q25 — Bilan des largeurs et des intervalles",
+          5
+        ],
+        [
+          2,
+          "Q26 — Initialisation sur une seule ligne",
+          5
+        ],
+        [
+          2,
+          "Q27 — Boucle de répartition",
+          5
+        ],
+        [
+          1,
+          "Exploitation des mesures",
+          6
+        ],
+        [
+          2,
+          "Q28 — Convertir les virgules décimales",
+          6
+        ],
+        [
+          2,
+          "Q29 — Lire les quatre colonnes",
+          6
+        ],
+        [
+          2,
+          "Q30 — Rendre les séries accessibles par leur nom",
+          7
+        ],
+        [
+          2,
+          "Q31 — Accéder à l'essai 1",
+          7
+        ],
+        [
+          2,
+          "Q32 — Tracer la vitesse mesurée",
+          7
+        ],
+        [
+          2,
+          "Q33 — Moyenne sur un intervalle d'indices",
+          7
+        ],
+        [
+          2,
+          "Q34 — Point de fonctionnement d'un essai",
+          7
+        ],
+        [
+          2,
+          "Q35 — Parcourir les dix-huit essais",
+          8
+        ],
+        [
+          1,
+          "Régression sur le couple résistant",
+          8
+        ],
+        [
+          2,
+          "Q36 — Apprentissage supervisé",
+          8
+        ],
+        [
+          2,
+          "Q37 — Régression linéaire multiple",
+          8
+        ],
+        [
+          2,
+          "Q38 — Matrice de régression",
+          8
+        ],
+        [
+          2,
+          "Q39 — Prédictions",
+          9
+        ],
+        [
+          2,
+          "Q40 — Coût scalaire",
+          9
+        ],
+        [
+          2,
+          "Q41 — Écriture matricielle",
+          9
+        ],
+        [
+          2,
+          "Q42 — Fonction de coût",
+          9
+        ],
+        [
+          2,
+          "Q43 — Dérivées partielles",
+          9
+        ],
+        [
+          2,
+          "Q44 — Vecteur gradient",
+          9
+        ],
+        [
+          2,
+          "Q45 — Calcul du gradient",
+          10
+        ],
+        [
+          2,
+          "Q46 — Itérations de descente",
+          10
+        ],
+        [
+          1,
+          "Régimes établi et transitoire du moteur",
+          10
+        ],
+        [
+          2,
+          "Q47 — Courbe du couple résistant",
+          10
+        ],
+        [
+          2,
+          "Q48 — Équilibre par dichotomie",
+          10
+        ],
+        [
+          2,
+          "Q49 — Équation dynamique",
+          11
+        ],
+        [
+          2,
+          "Q50 — Différence avant",
+          11
+        ],
+        [
+          2,
+          "Q51 — Mise à jour explicite",
+          11
+        ],
+        [
+          2,
+          "Q52 — Intégrateur d'Euler",
+          11
+        ],
+        [
+          2,
+          "Q53 — Temps de réponse et régime permanent",
+          12
+        ]
+      ],
+      "pages_figures": [
+        3,
+        4,
+        6
+      ],
+      "sha256": "d16a52d24f3799770837a5ef7cc3a62f610562c60e5d0d51b020b5a805a45436",
+      "rendus_sha256": [
+        "4e499b44fe326bccaf832cc2fb403f5e33676025b8fdfa11e7a3b2ab3c7aefe6",
+        "ea1a0e03c148a0ff9235205f91ba1169ba6875316e15a990ac3f76456ef90984",
+        "58f846611f8fc7394eac723f5c72d43bf50c82a8b0fa0670c3b683d4e209b924",
+        "e2b02ca74689790476c8eec3a3506dfc0b0d63ebc1644b90f5b386cba587f4f5",
+        "8d9fedce0a93621953b09179479c53e272ebbfe8bc47e24ea9df1985b68b801a",
+        "f11c3275ce6923986e205dccdb32d8794db874b5f063bad650f3bd9300141c69",
+        "cd5087c2be70f4ea118bc8181c01c450c035a7afc76cd22b4f59453cfb3d9b62",
+        "243b31eb8ac27c0bb9b6f8ed54b8b669a816c3d76d5265fa3a50d3435b613b92",
+        "96e3d33424e33894689a82771c9d60070e17c0e7a45ab2a4b46c11423efdb66a",
+        "79ccebb21e0fa2e9d0fccdf345f58e3da4893726a0a2fb3f709f42c8a6112697",
+        "57d71ccbb989859fde48725e5c46d292dcb6b0ba91c2b4f256f6e59bc9fbf980",
+        "5ea4ed813e184ab375f2597db6dc32ff6e404d0e9e3cc5d3b3e0460505a85ed0"
+      ]
+    },
+    "guide": {
+      "pages": 17,
+      "nombre_signets": 60,
+      "signets": [
+        [
+          1,
+          "Bilans du climatiseur",
+          1
+        ],
+        [
+          2,
+          "Q1 — Énergie et entropie sur un cycle",
+          1
+        ],
+        [
+          2,
+          "Q2 — Signes des échanges",
+          1
+        ],
+        [
+          2,
+          "Q3 — Possibilité d'un climatiseur monotherme",
+          1
+        ],
+        [
+          2,
+          "Q4 — Deux thermostats",
+          2
+        ],
+        [
+          2,
+          "Q5 — Chaleur prélevée dans la pièce",
+          2
+        ],
+        [
+          2,
+          "Q6 — Travail du compresseur",
+          2
+        ],
+        [
+          2,
+          "Q7 — Efficacité d'un cycle réversible",
+          2
+        ],
+        [
+          2,
+          "Q8 — Effet de la température extérieure",
+          2
+        ],
+        [
+          1,
+          "Cycle du R404A",
+          3
+        ],
+        [
+          2,
+          "Q9 — Sortie de l'évaporateur",
+          3
+        ],
+        [
+          2,
+          "Q10 — Compression réversible et adiabatique",
+          3
+        ],
+        [
+          2,
+          "Q11 — Travail mécanique massique",
+          3
+        ],
+        [
+          2,
+          "Q12 — Sortie du condenseur",
+          3
+        ],
+        [
+          2,
+          "Q13 — Détente",
+          4
+        ],
+        [
+          2,
+          "Q14 — Sortie du détendeur",
+          4
+        ],
+        [
+          2,
+          "Q15 — Chaleur massique reçue à l'évaporateur",
+          4
+        ],
+        [
+          2,
+          "Q16 — Efficacité réelle",
+          5
+        ],
+        [
+          2,
+          "Q17 — Comparaison à la borne réversible",
+          5
+        ],
+        [
+          1,
+          "Conduction dans une ailette",
+          5
+        ],
+        [
+          2,
+          "Q18 — Bilan d'une tranche d'ailette",
+          5
+        ],
+        [
+          2,
+          "Q19 — Longueur caractéristique",
+          5
+        ],
+        [
+          2,
+          "Q20 — Solution générale et ailette longue",
+          6
+        ],
+        [
+          2,
+          "Q21 — Profil de température",
+          6
+        ],
+        [
+          2,
+          "Q22 — Puissance évacuée",
+          6
+        ],
+        [
+          1,
+          "Implantation des groupes de ventilation",
+          7
+        ],
+        [
+          2,
+          "Q23 — Volume de la salle",
+          7
+        ],
+        [
+          2,
+          "Q24 — Nombre nécessaire de groupes",
+          7
+        ],
+        [
+          2,
+          "Q25 — Bilan des largeurs et des intervalles",
+          7
+        ],
+        [
+          2,
+          "Q26 — Initialisation sur une seule ligne",
+          7
+        ],
+        [
+          2,
+          "Q27 — Boucle de répartition",
+          8
+        ],
+        [
+          1,
+          "Exploitation des mesures",
+          9
+        ],
+        [
+          2,
+          "Q28 — Convertir les virgules décimales",
+          9
+        ],
+        [
+          2,
+          "Q29 — Lire les quatre colonnes",
+          9
+        ],
+        [
+          2,
+          "Q30 — Rendre les séries accessibles par leur nom",
+          9
+        ],
+        [
+          2,
+          "Q31 — Accéder à l'essai 1",
+          10
+        ],
+        [
+          2,
+          "Q32 — Tracer la vitesse mesurée",
+          10
+        ],
+        [
+          2,
+          "Q33 — Moyenne sur un intervalle d'indices",
+          10
+        ],
+        [
+          2,
+          "Q34 — Point de fonctionnement d'un essai",
+          10
+        ],
+        [
+          2,
+          "Q35 — Parcourir les dix-huit essais",
+          11
+        ],
+        [
+          1,
+          "Régression sur le couple résistant",
+          11
+        ],
+        [
+          2,
+          "Q36 — Apprentissage supervisé",
+          11
+        ],
+        [
+          2,
+          "Q37 — Régression linéaire multiple",
+          12
+        ],
+        [
+          2,
+          "Q38 — Matrice de régression",
+          12
+        ],
+        [
+          2,
+          "Q39 — Prédictions",
+          12
+        ],
+        [
+          2,
+          "Q40 — Coût scalaire",
+          12
+        ],
+        [
+          2,
+          "Q41 — Écriture matricielle",
+          13
+        ],
+        [
+          2,
+          "Q42 — Fonction de coût",
+          13
+        ],
+        [
+          2,
+          "Q43 — Dérivées partielles",
+          13
+        ],
+        [
+          2,
+          "Q44 — Vecteur gradient",
+          13
+        ],
+        [
+          2,
+          "Q45 — Calcul du gradient",
+          13
+        ],
+        [
+          2,
+          "Q46 — Itérations de descente",
+          14
+        ],
+        [
+          1,
+          "Régimes établi et transitoire du moteur",
+          14
+        ],
+        [
+          2,
+          "Q47 — Courbe du couple résistant",
+          14
+        ],
+        [
+          2,
+          "Q48 — Équilibre par dichotomie",
+          15
+        ],
+        [
+          2,
+          "Q49 — Équation dynamique",
+          15
+        ],
+        [
+          2,
+          "Q50 — Différence avant",
+          16
+        ],
+        [
+          2,
+          "Q51 — Mise à jour explicite",
+          16
+        ],
+        [
+          2,
+          "Q52 — Intégrateur d'Euler",
+          16
+        ],
+        [
+          2,
+          "Q53 — Temps de réponse et régime permanent",
+          17
+        ]
+      ],
+      "pages_figures": [
+        4,
+        6,
+        8
+      ],
+      "sha256": "fe50665b0739b2b99f1e053091e734d6d2592ff78c7a1abf3109fdb442d470d3",
+      "rendus_sha256": [
+        "8b1d19bab45b1cd20dff918ec243a8ee176424d9ebb3a1c30084aac9b972198c",
+        "898aea5fcf016c759a0111e9e65d9410544dad522f30fcc47ffe2f4e83deaba5",
+        "510b926ce0bb31014c75bc98b60d1607c6524dbdfc11a0884273cbef63426c8b",
+        "d83b8a21e0989d00931253246347711e0d9c1204597d8f2086843df96510c8d9",
+        "eca1c2c0f029d706b2036cd2e97e16d0e5259a61fb90907c38e4030b9cd97c5c",
+        "9bc6edccc3137f5ce2f09bb1cb486d448b839770dc77dfe61dbba667bd7a1e69",
+        "759860e33ed377e806d280cf7bbc60d544049e3e6cd665ef28998447ddaff5e5",
+        "d2e348f29cef8e15420fb8e41b3a1ab89d858daebb122df83e4c3e4c295cb2bb",
+        "c66d563618ec2a49d23abc53e178c358f27e8959207691b7ee0e6257a1432d83",
+        "0a7e1d0c13306172489cc5607071979a87c4995b2c3b810339252302321e5281",
+        "04892c1b7c76bfb23b8fb9381d5996f2bd01bda4a446d33b014eb81c74397689",
+        "c99751794c546560be37b908bec8234d271b8ef44d35041be758550b3dad0eb9",
+        "076ab80eda2d4ad7c26c2446bf23e93735303872e763d1ea3cb94ba177924aed",
+        "fb30d7da7e4d16af0444d0d3ef3e5784fb83b207de0b14ab1c1ac4063d5aae45",
+        "565bca5aed5fcf49327e9f2147a00eccf217d6edb4a05f278b3d676f8aae8dab",
+        "6642d2fcc8211410c9dc1ce6153429b935e8f4a32426c93bdd6580bb6c05c498",
+        "84faf6c0783bd286a77d0fbb37b51644cf2092a54cc5a22a0001d3a1f638e7fa"
+      ]
+    }
+  },
+  "empreintes": {
+    "meta.json": "2b21d5883fbfce653596fac1cf5d3c9f09e311f9551ab1493988cd8f5f2b65c9",
+    "brut.md": "24acaadb5eeff700935c725591eba6c4f3286d2e28789bab61e9c95a5ab8a2bd",
+    "guide.md": "97884579d5b9a0c27c36ff408cbfade2f7efc293804a7909951a8ce1ac9b417f",
+    "programmes.py": "b9030bd07574b9d96c445443cd2799badd65eb023a8c39f4b82545fecb581360",
+    "verifier_calculs.py": "06f88e7b5c695bbc2e18efa90e02d9373ff342eae144fe00d6d016291b674f4c",
+    "figures/cycle.svg": "0720735d0a672ada6e1017fcfb054e2f766224fec576372fd80d9cb6cba21ddc",
+    "figures/ailette.svg": "ca670a87d82047066bbe23318f949057fccedca71f22ec9667c2ce31e5703472",
+    "figures/implantation.svg": "c1fd90d88c517826442752513bd8808938a87cc3e05645a7a0efab7d76cd515d",
+    "bilan-compilation.md": "e60b2c72f00747d9b6efa82e630816e839483b5d6209398507c320e6d37f04e3",
+    "recu-tests.txt": "795980a1b4ab43a9aeaca4de3d9d74a20597beb520dfef0dbe355e41bbae1907",
+    "brut.pdf": "d16a52d24f3799770837a5ef7cc3a62f610562c60e5d0d51b020b5a805a45436",
+    "guide.pdf": "fe50665b0739b2b99f1e053091e734d6d2592ff78c7a1abf3109fdb442d470d3",
+    "apercu.jpg": "1ed5c97cb5305a415acd2befcc771175a459ba562eeb59bd66a9aada2251f77e"
+  },
+  "archive": "Banque-PT-informatique-modelisation-2024.zip",
+  "sha256": "b14660f65bcff87380adde1ac468fb4be10c6859292634c44cfcfe40a97b2fae"
+}
