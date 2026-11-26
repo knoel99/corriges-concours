@@ -10,6 +10,8 @@
 
 **Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Épreuve de 4 heures, calculatrice interdite. Deux parties indépendantes : physique (satellites d'étude du Soleil, Q1 à Q17) et sciences de l'ingénieur (déploiement et orientation des panneaux solaires, Q18 à Q37).
 
 ## Partie Physique, 1 — Communications entre le satellite et la Terre
@@ -28,7 +30,7 @@ Pour des particules non relativistes, la force magnétique est négligeable et
 
 $$\boxed{m\,\frac{\mathrm d\vec v}{\mathrm dt}=q\,\vec E(\vec r,t)}$$
 
-De plus, l'amplitude du déplacement des particules, $qE_0/(m\omega^2)$, est très petite devant la longueur d'onde : on peut évaluer $\vec E$ à la position moyenne de la particule.
+De plus, l'amplitude du déplacement des particules, $|q|E_0/(m\omega^2)$, est très petite devant la longueur d'onde : on peut évaluer $\vec E$ à la position moyenne de la particule.
 
 ### Question 2
 
@@ -117,7 +119,7 @@ $$\boxed{f_p=\frac{\omega_p}{2\pi}\sim1\times10^{7}\ \mathrm{Hz}\ (\approx 9\ \m
 
 **c.** Si l'on déplace en bloc les électrons d'une tranche de plasma par rapport aux ions, la séparation de charges crée un champ électrique de rappel proportionnel au déplacement ($E=n_e e x/\varepsilon_0$). Chaque électron obéit alors à $m_e\ddot x=-\dfrac{n_e e^2}{\varepsilon_0}x$ : il oscille à $\omega_p$.
 
-**La fréquence plasma est la fréquence propre des oscillations collectives des électrons autour des ions**, c'est-à-dire le temps de réponse du plasma à une perturbation électrique.
+**La fréquence plasma est la fréquence propre des oscillations collectives des électrons autour des ions.** Leur période vaut $1/f_p$ et le temps caractéristique de rappel vaut $1/\omega_p$.
 
 **d.**
 
@@ -134,7 +136,7 @@ $$\boxed{v_\varphi=\frac{c}{\sqrt{1-\omega_p^2/\omega^2}}>c}$$
 
 $$\boxed{v_g=c\sqrt{1-\frac{\omega_p^2}{\omega^2}}<c}$$
 
-On a $v_\varphi v_g=c^2$. La vitesse de phase dépasse $c$ sans contradiction avec la relativité, car elle ne transporte ni énergie ni information. C'est la vitesse de groupe, inférieure à $c$, qui donne la vitesse de propagation d'un signal.
+On a $v_\varphi v_g=c^2$. La vitesse de phase dépasse $c$ sans contradiction avec la relativité, car elle ne transporte ni énergie ni information. Pour un paquet d’ondes de faible largeur spectrale, son enveloppe se déplace à la vitesse de groupe.
 
 Quand $\omega\to\omega_p^+$, $v_g\to0$ et $v_\varphi\to+\infty$. Quand $\omega\gg\omega_p$, $v_\varphi\simeq v_g\simeq c$ : le plasma se comporte comme le vide.
 
@@ -390,7 +392,7 @@ En $\mathrm L_4$, $E_p$ est maximale : sans autre force, un satellite écarté d
 
 Mais dès qu'il prend une vitesse $\vec v$ dans $\mathcal R_\Omega$, la force de Coriolis $-2m\vec\Omega\wedge\vec v$ intervient. Perpendiculaire à la vitesse et d'intensité proportionnelle à $v$, elle courbe la trajectoire sans modifier l'énergie. Pour $\vec\Omega$ selon $+\vec e_z$, elle dévie le mouvement vers la droite.
 
-La chute vers l'extérieur est ainsi convertie en un mouvement de rotation autour de $\mathrm L_4$, à la manière d'un cyclone qui tourne autour d'une dépression au lieu de la combler. Si la force de Coriolis est assez grande devant la force « répulsive » due au potentiel, la trajectoire reste confinée au voisinage de $\mathrm L_4$ : c'est une **stabilité dynamique**, assurée par le mouvement et non par un minimum d'énergie potentielle.
+La chute vers l'extérieur est ainsi convertie en un mouvement de rotation autour de $\mathrm L_4$. Si la force de Coriolis est assez grande devant la force « répulsive » due au potentiel, la trajectoire reste confinée au voisinage de $\mathrm L_4$ : c'est une **stabilité dynamique**, assurée par le mouvement et non par un minimum d'énergie potentielle.
 
 ### Question 15
 
@@ -531,11 +533,11 @@ Deux sphériques en parallèle de centres distincts sont équivalentes à une **
 
 ### Question 20
 
-$\mathcal R_0$ est lié au satellite, qui est en orbite (au voisinage de $\mathrm L_1$) et peut tourner sur lui-même. Il est accéléré par rapport au référentiel héliocentrique : **il n'est pas galiléen**. On peut l'assimiler à un référentiel galiléen pour le déploiement car :
+$\mathcal R_0$ est lié au satellite SMILE en orbite autour de la Terre (voir Q12.b). Le corps du satellite peut également tourner sur lui-même. Il est accéléré par rapport au référentiel héliocentrique : **il n'est pas galiléen**. On peut l'assimiler à un référentiel galiléen pour le déploiement car :
 
 - **translation** : le satellite est en chute libre. La force d'inertie d'entraînement de translation $-m\vec a(O_0)$ compense la gravitation, quasi uniforme à l'échelle du mécanisme (quelques mètres). Les termes de marée sont négligeables. Négliger la gravité, comme le fait l'énoncé, n'est cohérent qu'avec cet argument ;
-- **rotation** : la rotation de $\mathcal R_0$ (orbitale, $\Omega_{\text{orb}}\approx2\times10^{-7}\ \mathrm{rad\,s^{-1}}$, ou d'attitude, lente et contrôlée) est négligeable à l'échelle des 8 s du déploiement : les forces centrifuge et de Coriolis sont infimes devant les actions des ressorts ;
-- **recul du satellite** : la masse du satellite (de l'ordre de la tonne) est très grande devant celle du bras et des panneaux (quelques kilogrammes). Le mouvement du corps 0 induit par le déploiement est négligeable.
+- **rotation**. On suppose l’attitude pratiquement fixe pendant les 8 s du déploiement. La vitesse angulaire du corps 0 et ses variations doivent être assez faibles pour négliger les effets centrifuge, de Coriolis et d’Euler à l’échelle du mécanisme.
+- **recul du satellite**. On suppose la masse et l’inertie du corps 0 grandes devant celles des éléments mobiles. Dans cette approximation, leur déploiement perturbe peu le mouvement du bâti.
 
 ### Question 21
 
@@ -726,7 +728,7 @@ D'après l'allure de la figure 6, la simulation conserve $\dot\alpha_3$ continue
 
 - **Durée** : $\alpha_2$ s'annule à 6,75 s, et $\alpha_3$ vers $t\approx7{,}7$ s (le cadre du graphe s'arrête à 8 s, pas la courbe). Le déploiement s'achève en moins de 8 s. **Critère respecté**, avec une marge faible (environ 0,3 s, soit 4 %).
 - **Encombrement selon $\vec y_0$** : le point le plus éloigné de $O_2$ est l'extrémité $M_3$ du panneau. Sur la figure 7, son ordonnée minimale vaut environ $-0{,}92$ m. Elle est atteinte vers $x\approx1{,}3$ m, juste avant le point anguleux de la courbe, qui marque le blocage de $\alpha_2$ à 6,75 s.
-- L'ordonnée de $O_3$ ne dépasse pas $0{,}6$ m, et l'épaisseur du panneau ($e/2=1$ cm) ne change rien. On a donc $|y|\le0{,}92\ \mathrm m<1{,}0$ m : **critère respecté**, avec une marge d'environ 8 cm.
+- L’ordonnée de $O_3$ reste inférieure ou égale à $0{,}60$ m. Sur chaque segment, les ordonnées intermédiaires sont comprises entre celles des extrémités. Le calcul de (54) donne $y_{M_3,\min}\simeq-0{,}921$ m à $t\simeq6{,}52$ s. L’épaisseur du panneau ajoute au plus $e/2=0{,}010$ m à la distance à l’axe. Même avec cette majoration, on reste sous $0{,}94$ m, avec une marge d’au moins 6 cm sur l’exigence de 1,0 m.
 
 **Les deux exigences du cahier des charges sont satisfaites par le modèle, avec des marges faibles.**
 
@@ -744,7 +746,7 @@ On peut tester l’effet du choc sur le modèle. En intégrant (54) avec les deu
 
 Pour une butée instantanée parfaitement inélastique du bras, sans couple impulsionnel dans la charnière libre du panneau, on intègre la seconde équation (54) pendant le choc. Les angles restent continus et les termes bornés donnent une intégrale nulle à la limite. Il reste $F\Delta\dot\alpha_3+G\Delta\dot\alpha_2=0$. Or $\dot\alpha_2^+=0$ et $G/F\simeq1{,}49$, d’où $\dot\alpha_3^+=\dot\alpha_3^-+(G/F)\dot\alpha_2^-\simeq0{,}197\,\mathrm{rad/s}$. Après la butée, $\alpha_3$ vérifie $F\ddot\alpha_3+K_3\alpha_3=0$. Son premier passage à zéro a lieu à $7{,}72\,\mathrm s$ dans le tracé continu et à $10{,}66\,\mathrm s$ dans ce modèle de choc. La durée avec un amortisseur réel dépendrait de son couple et de sa course.
 
-![Figure 6 — Évolution de l’angle du panneau calculée par les équations (54), avec deux lois de passage au verrouillage du bras. Les temps de déploiement obtenus sont de 7,72 s et 10,66 s.](figures/q30-verrouillage.svg)
+![Figure 4 — Évolution de l’angle du panneau calculée par les équations (54), avec deux lois de passage au verrouillage du bras. Les temps de déploiement obtenus sont de 7,72 s et 10,66 s.](figures/q30-verrouillage.svg)
 
 ## Partie SI, 3 — Orientation des panneaux solaires
 
@@ -764,7 +766,7 @@ Les blocs du schéma de la figure 9, de gauche à droite :
 
 La boucle externe est à **retour unitaire** (capteur angulaire de gain 1), sans bloc. L'entrée du premier comparateur est $\Theta_c-\Theta_r$ ; celle du second, $U-K_C\Omega_m$.
 
-![Figure 4 — schéma de commande complété : boucle de vitesse interne (codeur K_C) et boucle de position à retour unitaire](figures/q31-schema-bloc.svg)
+![Figure 5 — schéma de commande complété : boucle de vitesse interne (codeur K_C) et boucle de position à retour unitaire](figures/q31-schema-bloc.svg)
 
 ### Question 32
 
@@ -799,13 +801,13 @@ La condition $\varepsilon_s<0{,}05\,\dfrac{U_0}{K_C}$ impose $1+K_CK_vK_aK_m>20$
 
 $$\boxed{K_v>\frac{19}{K_CK_aK_m}=\frac{19}{1\times1{,}3\times1{,}8}\approx8{,}1}$$
 
-($K_v$ est sans dimension.)
+Le seuil non arrondi vaut $8{,}1197\ldots$. Avec un chiffre après la virgule, $K_v=8{,}2$ convient et donne une erreur relative de $1/(1+2{,}34\times8{,}2)\simeq4{,}95\,\%$. Ce gain est sans dimension.
 
 ### Question 34
 
 Le correcteur $C(p)$ agit sur l'écart de position. On l'insère dans la chaîne directe de la boucle de position, **entre le gain $K_G$ du comparateur (sortie : écart en volts) et le comparateur de la boucle de vitesse** :
 
-![Figure 5 — schéma de commande avec le correcteur C(p) inséré entre K_G et la boucle de vitesse](figures/q34-schema-bloc-correcteur.svg)
+![Figure 6 — schéma de commande avec le correcteur C(p) inséré entre K_G et la boucle de vitesse](figures/q34-schema-bloc-correcteur.svg)
 
 Le correcteur se trouve ainsi en amont de la boucle de vitesse et hors de celle-ci.
 
