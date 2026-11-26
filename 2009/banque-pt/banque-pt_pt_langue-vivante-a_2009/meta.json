@@ -1,0 +1,232 @@
+{
+  "slug": "banque-pt_pt_langue-vivante-a_2009",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Langue vivante A",
+    "annee": 2009
+  },
+  "questions": 15,
+  "redaction": "IA (gpt-6.2-astra)",
+  "figures": [
+    {
+      "fichier": "figures/lecture-de.svg",
+      "question": "Allemand",
+      "legende": "Chercher au-delà du premier résultat"
+    },
+    {
+      "fichier": "figures/lecture-en.svg",
+      "question": "Anglais",
+      "legende": "Pourquoi une technologie revient-elle ?"
+    },
+    {
+      "fichier": "figures/lecture-ar.svg",
+      "question": "Arabe",
+      "legende": "Réserves et capacité de produire"
+    },
+    {
+      "fichier": "figures/lecture-es.svg",
+      "question": "Espagnol",
+      "legende": "Où passe la frontière du jeu ?"
+    },
+    {
+      "fichier": "figures/lecture-it.svg",
+      "question": "Italien",
+      "legende": "Pourquoi le contrôle est-il difficile ?"
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "agent": "lva_pt_2325",
+      "perimetre": "Cinq versions françaises et dix réponses dans les langues des sujets, sources, commentaires et schémas par langue."
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2009/lv_a_2009.pdf",
+    "sujet_sha256": "14586bcba2a547c38f46da66f5b550990e5035a673a35c4ab90701171292ca6f",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2009/rapport_lv_a_ecrit_2009.pdf",
+    "rapport_sha256": "7101caf8a5882b65d6f6c1d85982c57fb50bf48f942a5e4e26abe96a7fce645d",
+    "livret": "https://www.banquept.fr/documents/livret/2009/Livret_PT_2009.pdf#page=12",
+    "livret_sha256": "a3c1cf502cc1a8772e9b488ffec97dba9f6ce8298fb91e23dd0cf6ea2d5e75b9",
+    "index_sujets": "https://www.banquept.fr/article152.html",
+    "index_rapports": "https://www.banquept.fr/article153.html"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Allemand · version",
+      "Allemand · question a",
+      "Allemand · question b",
+      "Anglais · version",
+      "Anglais · question a",
+      "Anglais · question b",
+      "Arabe · version",
+      "Arabe · question a",
+      "Arabe · question b",
+      "Espagnol · version",
+      "Espagnol · question a",
+      "Espagnol · question b",
+      "Italien · version",
+      "Italien · question a",
+      "Italien · question b"
+    ],
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "14586bcba2a547c38f46da66f5b550990e5035a673a35c4ab90701171292ca6f",
+      "perimetre": "Cinq versions françaises et dix réponses dans les langues des sujets, sources, commentaires et schémas par langue.",
+      "controles": [
+        {
+          "nom": "Allemand",
+          "titre": "Internet-Suchmaschinen: Mehr finden im Netz",
+          "pages_sujet": [
+            2,
+            3
+          ],
+          "pages_rapport": [
+            1,
+            2
+          ],
+          "origine": "Article adapté de Stern, 28 décembre 2008, page 2. Questions page 3. Rapport allemand, pages 1–2 du PDF.",
+          "bornes_version": "De « Internet-Suchmaschinen: Mehr finden im Netz » à « spezialisiert haben », titre compris.",
+          "consignes": [
+            "Erklären Sie, wie eine Suchmaschine genutzt werden soll, um die besten Ergebnisse zu finden.",
+            "Können Sie sich ein Leben ohne Internet vorstellen? Warum?"
+          ],
+          "compte_mots": [
+            89,
+            213
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-de.svg"
+        },
+        {
+          "nom": "Anglais",
+          "titre": "Not dead, just resting",
+          "pages_sujet": [
+            4,
+            5
+          ],
+          "pages_rapport": [
+            3,
+            4
+          ],
+          "origine": "The Economist, 9 octobre 2008, texte pages 4–5. Les deux extraits de la version sont page 4. Le rapport anglais est aux pages 3–4 du PDF.",
+          "bornes_version": "Deux passages, de « It became a classic example » à « accounts departments », puis de « A third way » à « all-electric ones ».",
+          "consignes": [
+            "In what ways can technologies make a comeback? Give examples to prove your point.",
+            "To what extent can it be said that technological changes and social changes are linked?"
+          ],
+          "compte_mots": [
+            89,
+            228
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-en.svg"
+        },
+        {
+          "nom": "Arabe",
+          "titre": "احتياطيات النفط العالمية",
+          "pages_sujet": [
+            6,
+            7
+          ],
+          "pages_rapport": [
+            5
+          ],
+          "origine": "Article d’Al-Majalla, 29 novembre 2008, texte page 6, consignes page 7. Le rapport d’arabe page 5 relève le nom de Fatih Birol, les sigles et le respect des bornes.",
+          "bornes_version": "De « سعى التقرير » à « بشكل عام ». La traduction couvre les deux premiers paragraphes et s’arrête avant l’examen des réserves futures.",
+          "consignes": [
+            "بينوا الفكرة الأساسية للنص.",
+            "كيف ترون مستقبل العالم دون نفط؟"
+          ],
+          "compte_mots": [
+            82,
+            206
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-ar.svg"
+        },
+        {
+          "nom": "Espagnol",
+          "titre": "Lo interesante del videojuego es su conexión con el mundo real",
+          "pages_sujet": [
+            8,
+            9
+          ],
+          "pages_rapport": [
+            6
+          ],
+          "origine": "El País, 5 avril 2007, entretien avec Carl Goodman, responsable des médias numériques au Museum of the Moving Image à New York. Texte page 8, questions page 9. Rapport d’espagnol page 6 du PDF.",
+          "bornes_version": "De « Creo que es beneficioso para la cultura » à « el motor del avance tecnológico ».",
+          "consignes": [
+            "¿Qué relación establece este científico entre el mundo virtual y el mundo real?",
+            "Analice Usted lo que implica esta afirmación final del texto: «Las nuevas generaciones especialmente… tienen consecuencias en el mundo real también»."
+          ],
+          "compte_mots": [
+            88,
+            220
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-es.svg"
+        },
+        {
+          "nom": "Italien",
+          "titre": "Quando la vita non vale un casco",
+          "pages_sujet": [
+            10,
+            11
+          ],
+          "pages_rapport": [],
+          "origine": "Antonio Fraschilla, La Repubblica, juin 2008, pages 10–11. La version débute page 10 et s’achève page 11. Le rapport complet compte six pages, la dernière consacrée à l’espagnol. L’article 153 ne donne aucun lien de rapport écrit italien pour 2009.",
+          "bornes_version": "De « Un settore anche a rischio » à « ci lavorano anche da un anno ».",
+          "consignes": [
+            "Come mai le condizioni di lavoro sono così diverse in Sicilia che nelle altre regioni italiane?",
+            "« Sicilia, terzo mondo del lavoro », che cosa si potrebbe fare per rimediare a questa pessima situazione del lavoro e del rispetto delle leggi nella regione?"
+          ],
+          "compte_mots": [
+            85,
+            222
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-it.svg"
+        }
+      ]
+    }
+  }
+}
