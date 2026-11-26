@@ -35,7 +35,7 @@
       "legende": "Deux possibilités de réduction, un prix de 50 euros"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "lecture_rapport_jury",
@@ -72,6 +72,32 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Vérification de la consigne et de la modalité sur la feuille officielle, de la portée du rapport et des raisonnements et exemples des deux éditions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "gestion_2022_2023",
+      "agent": "gestion_2022_2023",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "La dissertation et son guide examinent la taxe, les quotas, les normes, l’innovation, l’adaptation et la redistribution. Le coût réel de réduction est distingué des paiements de taxe et de quotas. L’estimation de Bayer et Aklin a été contrôlée en précisant le contrefactuel, la période et le caractère cumulé des tonnes évitées."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Les instruments de la politique climatique"
+    ],
+    "precision": "Écrit, sujet individuel 2 de la feuille officielle. Le rapport rattache le projet sur la transition entre énergies fossiles et renouvelables à cette épreuve et à l’oral « Décroissance ou croissance verte ? ». L’intitulé appelle un développement en économie et permet une mise en perspective par d’autres sciences sociales. Le fascicule ne comporte ni document annexe ni sous-question.",
+    "controle": "La dissertation et son guide examinent la taxe, les quotas, les normes, l’innovation, l’adaptation et la redistribution. Le coût réel de réduction est distingué des paiements de taxe et de quotas. L’estimation de Bayer et Aklin a été contrôlée en précisant le contrefactuel, la période et le caractère cumulé des tonnes évitées."
+  }
 }
