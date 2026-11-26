@@ -1782,6 +1782,7 @@
 | 2026 | X-ENS | MP | Informatique A | [md](2026/x-ens/x-ens_mp_informatique-a_2026/brut.md) | [md](2026/x-ens/x-ens_mp_informatique-a_2026/guide.md) |
 | 2012 | X-ENS | MP | Maths A | [md](2012/x-ens/x-ens_mp_maths-a_2012/brut.md) | [md](2012/x-ens/x-ens_mp_maths-a_2012/guide.md) |
 | 2013 | X-ENS | MP | Maths A | [md](2013/x-ens/x-ens_mp_maths-a_2013/brut.md) | [md](2013/x-ens/x-ens_mp_maths-a_2013/guide.md) |
+| 2014 | X-ENS | MP | Maths A | [md](2014/x-ens/x-ens_mp_maths-a_2014/brut.md) | [md](2014/x-ens/x-ens_mp_maths-a_2014/guide.md) |
 | 2015 | X-ENS | MP | Maths A | [md](2015/x-ens/x-ens_mp_maths-a_2015/brut.md) | [md](2015/x-ens/x-ens_mp_maths-a_2015/guide.md) |
 | 2016 | X-ENS | MP | Maths A | [md](2016/x-ens/x-ens_mp_maths-a_2016/brut.md) | [md](2016/x-ens/x-ens_mp_maths-a_2016/guide.md) |
 | 2017 | X-ENS | MP | Maths A | [md](2017/x-ens/x-ens_mp_maths-a_2017/brut.md) | [md](2017/x-ens/x-ens_mp_maths-a_2017/guide.md) |
