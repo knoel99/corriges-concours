@@ -1,0 +1,124 @@
+{
+  "slug": "bel_bl_economie-oral-commun-service-de-la-petite-enfance_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Économie (oral commun) — Service de la petite enfance",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "Un service de la petite enfance : pourquoi et comment ?",
+  "questions": 0,
+  "documents": 5,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/economie_20_juin.pdf#page=7",
+    "sha256_sujet": "61947fd9b8c2378b00faa8909519ce591eebc44d2a21887bf1d39ad2381c43b9",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_economie_tronc_commun.pdf",
+    "sha256_rapport_jury": "b0b1a696afc5d758d40283be9361a3fe50abd56041e7cad3533c62eabb4c5dd7",
+    "pages_sujet_dans_pdf": [
+      7,
+      14
+    ],
+    "pages_dossier": [
+      1,
+      8
+    ],
+    "bareme_familial_2025": "https://www.caf.fr/sites/default/files/medias/661/Espace-Partenaires/Documents-Partenaires/Ressources/Baremes-Participations-Familiales-Eaje-2025.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/heures-et-personnels.svg",
+      "question": "Exposé sur le dossier",
+      "legende": "Évolution des professionnels et des heures d’accueil, indices base 100 en 2014. Calcul à partir des séries en milliers de personnes et en millions d’heures du document 2, hors préscolarisation."
+    },
+    {
+      "fichier": "figures/taux-facturation.svg",
+      "question": "Exposé sur le dossier",
+      "legende": "Taux de facturation pour 100 heures facturées selon les heures réalisées. Calcul et seuils historiques tirés du document 3, rapport IGAS de mars 2023."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "agent": "x_maths_b_recentes",
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions après lecture visuelle des cinq documents et du rapport commun. Contrôle des deux cartes, axes et unités des séries de personnels, décomposition des revenus, couleur de significativité et rapports de cotes PISA. Vérification du barème historique des familles auprès de la Caf. Deux figures et cinq questions guidées."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Un service de la petite enfance : pourquoi et comment ?"
+    ],
+    "annexes_verifiees": [
+      {
+        "document": 1,
+        "intitule": "La pénurie de personnels du secteur de la petite enfance",
+        "pages": [
+          2
+        ],
+        "pages_pdf": [
+          8
+        ]
+      },
+      {
+        "document": 2,
+        "intitule": "Les déterminants de l’offre d’accueil",
+        "pages": [
+          3,
+          4
+        ],
+        "pages_pdf": [
+          9,
+          10
+        ]
+      },
+      {
+        "document": 3,
+        "intitule": "Le rôle des modalités de financement",
+        "pages": [
+          5,
+          6
+        ],
+        "pages_pdf": [
+          11,
+          12
+        ]
+      },
+      {
+        "document": 4,
+        "intitule": "L’impact de l’arrivée des enfants sur les différences de revenus entre femmes et hommes",
+        "pages": [
+          7
+        ],
+        "pages_pdf": [
+          13
+        ]
+      },
+      {
+        "document": 5,
+        "intitule": "Lien entre éducation de la petite enfance et réussite scolaire",
+        "pages": [
+          8
+        ],
+        "pages_pdf": [
+          14
+        ]
+      }
+    ],
+    "precision": "Un seul sujet d’exposé. La couverture du dossier précise que le dessin satirique ne fait pas partie du commentaire. Les questions d’entretien du guidé sont des exercices.",
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "61947fd9b8c2378b00faa8909519ce591eebc44d2a21887bf1d39ad2381c43b9",
+      "sha256_rapport_jury_controle": "b0b1a696afc5d758d40283be9361a3fe50abd56041e7cad3533c62eabb4c5dd7",
+      "perimetre": "Rédaction des deux éditions après lecture visuelle des cinq documents et du rapport commun. Contrôle des deux cartes, axes et unités des séries de personnels, décomposition des revenus, couleur de significativité et rapports de cotes PISA. Vérification du barème historique des familles auprès de la Caf. Deux figures et cinq questions guidées."
+    }
+  }
+}
