@@ -6,7 +6,11 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-La seconde commission du 22 juin a distribué douze billets de deux sujets. Les réponses suivent l’ordre de la feuille. Le rapport, page 7, permet de reconnaître par ses caractères gras le sujet choisi, qui est signalé à chaque billet. La rédaction et les relances du guide sont des propositions d’entraînement.
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Le [feuillet du 22 juin, commission 2](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philo_tc_22_juinal.pdf) contient 12 billets de deux sujets. Les développements suivent leur ordre. Le jury a mis en gras le premier sujet sur 4 billets et le second sur 8. Le choix est indiqué à chaque billet. Le [rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf#page=7) permet de vérifier les choix. Au billet 7, le premier intitulé suit la formulation du feuillet.
+
+Lisez à haute voix les deux sujets du billet puis annoncez votre choix au début de l’exposé. Seul un dictionnaire de langue française est autorisé, à l’exclusion des dictionnaires de noms propres. Pour essayer l’autre sujet, utilisez la question d’entretien et la piste de réponse placées après son développement.
 
 ## Vérifier les choix et préparer le dialogue
 
@@ -31,6 +35,8 @@ Selon le rapport (p. 7), quatre candidats ont retenu le premier intitulé et hui
 
 Un résultat mathématique acquis peut servir ensuite sans qu’il soit nécessaire de rouvrir toute sa démonstration. En philosophie, on retourne à Platon parce que la distinction qu’il propose peut encore modifier la façon dont un problème se présente. Faut-il conclure que rien n’y est jamais nouveau ? Une discussion sur la responsabilité d’une décision confiée à un système automatisé reprend des questions anciennes d’imputation, mais oblige à distinguer des rôles que leur formulation classique pouvait laisser ensemble, concevoir, entraîner, employer et contester un dispositif. Une nouveauté philosophique peut ainsi résider dans un problème devenu visible, dans une distinction ou dans l’argument qui défait une alternative reçue. La nouveauté d’un objet ou d’un vocabulaire n’en est pas la preuve. Il faut montrer ce que l’on ne pouvait pas discerner aussi précisément avant le travail des concepts.
 
+**À l’entretien. Une nouvelle manière de poser une vieille question est-elle déjà une découverte ?** Comparer deux formulations dont l’une présuppose ce que l’autre met en doute. Il y a nouveauté philosophique si la reformulation modifie ce qu’il faut démontrer ou les objections auxquelles une réponse doit résister.
+
 ### La pluralité des mondes
 
 Deux mondes peuvent-ils être plusieurs si « le monde » désigne par définition la totalité de ce qui existe ? L’objection oblige à préciser le principe d’unité. Les *Entretiens sur la pluralité des mondes* de Fontenelle ouvrent par l’astronomie la possibilité d’autres terres et d’autres habitants. Plusieurs mondes au sens de systèmes ou de lieux habitables peuvent appartenir au même univers physique. Leur possibilité ne démontre pas qu’ils sont habités.
@@ -45,6 +51,8 @@ Leibniz parle aussi de mondes possibles. Ce qui les distingue n’est plus une d
 
 Dans une bibliothèque, deux volumes voisins peuvent avoir été écrits à mille ans d’intervalle. Le classement leur permet d’entrer dans une même recherche et un renvoi peut faire de l’un le commentaire de l’autre. Le « monde des livres » est ainsi plus qu’un tas d’objets, car des institutions, des supports et des pratiques de lecture organisent leurs relations. Un livre épuisé, interdit de prêt ou jamais traduit n’occupe pas la même place pour tous les publics. Les livres ouvrent aussi des mondes par la fiction, la mémoire ou l’argument. Ce pouvoir suppose pourtant une activité de lecture et des conditions matérielles de circulation. Opposer un monde livresque irréel à un monde extérieur véritable méconnaît les effets réels des textes. Prendre l’imprimé pour toute l’expérience ferait l’erreur inverse, en oubliant ce que l’enquête hors des livres peut corriger.
 
+**À l’entretien. Une bibliothèque fermée constitue-t-elle encore un monde de livres ?** Les volumes existent matériellement. L’accès, les lecteurs et les renvois entre ouvrages rendent possible un espace de discussion. Préciser lequel de ces sens du mot « monde » répond à la question.
+
 ### La politesse est-elle nécessaire ?
 
 Deux inconnus qui doivent se partager un espace étroit peuvent traverser la rencontre grâce à une demande et à un signe de reconnaissance. La politesse rend le rapport prévisible sans qu’ils aient à se connaître ni à éprouver de l’affection. Elle est ainsi particulièrement importante là où la sympathie n’est pas acquise. Faudrait-il en conclure que chacune des règles de bienséance en vigueur est nécessaire ?
@@ -57,6 +65,8 @@ Il existe des codes qui transforment une différence d’éducation en motif d�
 
 Une frise sur une façade paraît s’ajouter à un mur qui tiendrait très bien sans elle. On la définit volontiers par son caractère accessoire. Pourtant elle donne l’échelle, relie des ouvertures et signale l’importance d’une entrée. Sa suppression laisse debout le bâtiment mais peut transformer la manière de le comprendre ou de s’y orienter. L’ornement n’est donc superflu que selon une définition préalable de la fin. Une décoration peut également masquer un défaut ou imposer une richesse de signes qui rend l’usage confus. Il faut examiner quels rapports elle fait voir, à quelle pratique elle contribue et ce que coûte sa présence. Cela permet de juger un ornement sobre ou abondant sans présupposer que la qualité de la forme exige toujours le dénuement ou toujours la profusion.
 
+**À l’entretien. Ôter l’ornement laisse-t-il toujours l’objet intact ?** Enlever un motif d’une façade ne fait pas nécessairement tomber le bâtiment. Mais ce motif pouvait signaler une entrée ou faire apparaître une proportion. Séparer la stabilité matérielle des conditions de perception et d’usage.
+
 ### Crime et Châtiment ?
 
 Un dommage et un malheur survenant ensuite à son auteur ne forment pas encore un crime et son châtiment. Le crime suppose une qualification, puis le châtiment l’attribution publique d’une responsabilité et une réponse justifiable. D’où vient le droit de répondre à un tort par une peine ? La vengeance du plaignant peut attester une souffrance réelle, mais elle donne à une partie le pouvoir de fixer seule la mesure du dommage et de la réponse.
@@ -68,6 +78,8 @@ Une peine justifiée demande au contraire une règle antérieure, des preuves, u
 *Sujet choisi sur ce billet — Écrire et penser*
 
 Une sécheresse fait dépérir une récolte alors que le travail a été mené avec soin. La cruauté désigne ordinairement une manière d’être sensible à la souffrance d’autrui tout en la voulant ou en l’acceptant avec indifférence coupable. Or un épisode météorologique ne connaît ni les cultivateurs ni leur peine. Lui appliquer le mot donne expression à la douleur et au sentiment d’injustice que l’événement suscite, sans établir une intention dans la nature. Des phénomènes du vivant comportent aussi comportements, apprentissages et sensibilité, qu’il faut examiner espèce par espèce. On ne saurait leur prêter sans enquête une culpabilité morale humaine. La distinction rend plus précise notre responsabilité. La sécheresse n’est pas un agent cruel, tandis que l’organisation humaine de l’accès à l’eau peut être justement jugée au regard des souffrances évitables.
+
+**À l’entretien. Dire d’un orage qu’il est cruel nous apprend-il quelque chose sur lui ?** La formule peut exprimer la souffrance des habitants. Pour imputer une cruauté, il faut encore demander si l’événement procède d’une intention ou d’une indifférence susceptible de reproche.
 
 ### Écrire et penser
 
@@ -87,6 +99,8 @@ Dans le *Discours sur l’origine et les fondements de l’inégalité*, Roussea
 
 Une photographie d’identité permet d’attester que la personne présente correspond au document. Un portrait peint peut rendre quelqu’un reconnaissable à une posture ou à une relation avec son milieu, quitte à déformer des proportions. La ressemblance n’est donc pas une grandeur unique. Un portrait vise quelqu’un en particulier et construit sous certains traits la manière de le faire apparaître à autrui. L’absence de son nom n’abolit pas nécessairement cette visée, tandis qu’une silhouette générique ne devient pas portrait du seul fait qu’elle ressemble à un passant. Reste une tension éthique et esthétique. Le modèle peut se découvrir dans cette image ou contester le rôle où elle l’enferme. Le portrait est une proposition de reconnaissance, portée par des moyens précis, qui reste ouverte au désaccord.
 
+**À l’entretien. Une caricature déformante peut-elle être un portrait fidèle ?** Elle accentue certains traits au point de les rendre reconnaissables. Vérifier si ces choix donnent accès à un aspect de la personne ou reconduisent simplement un stéréotype déjà disponible.
+
 ## 6. La réussite sociale
 
 *Sujet choisi sur ce billet — La réussite sociale*
@@ -99,11 +113,15 @@ Il faut examiner qui détermine les biens valorisés et comment les chances d’
 
 Au début d’un récit, une clé est posée sur une table. Après la dernière page, le lecteur se souvient de ce geste comme d’une promesse manquée. Les histoires donnent au temps une forme qui permet d’attendre, de s’étonner et de reconsidérer un détail. Dans *Temps et récit*, Ricœur étudie la mise en intrigue qui rassemble des événements hétérogènes sans les réduire à une simple liste. Le plaisir tient aussi aux voix, aux rencontres et parfois à la possibilité de vivre un détour sans en subir les conséquences réelles. Pourtant, une histoire trop cohérente peut donner à une suite contingente l’apparence d’un destin ou nous faire oublier ce qu’elle a laissé de côté. Aimer les histoires n’impose pas de les croire toutes. Ce goût peut devenir une attention aux diverses manières de composer et de partager une expérience.
 
+**À l’entretien. Peut-on aimer une histoire précisément parce qu’elle déçoit notre attente ?** Un récit peut faire comprendre rétrospectivement une action qui paraissait absurde. La surprise vaut alors par la réorganisation de ce qu’on a entendu, sans se réduire au plaisir de deviner l’issue.
+
 ## 7. La société ne peut-elle être qu’humaine ?
 
 *Sujet choisi sur ce billet — L’objet de la métaphysique*
 
 Une colonie d’abeilles présente une coordination des tâches et des communications. L’observation fournit des raisons de parler de société animale si le terme désigne une organisation relativement durable d’interactions entre êtres vivants. Réserver le mot à l’humanité par définition fermerait l’enquête. À l’inverse, assimiler une cité à une ruche ferait disparaître un trait déterminant de nombreuses sociétés humaines. Leurs membres instituent des règles, peuvent demander publiquement pourquoi elles obligent et les contester en leur nom propre. Même ces capacités se développent avec des héritages matériels et des relations au vivant que la seule introspection ne révèle pas. La réponse dépend du niveau de comparaison pertinent. Des sociétés peuvent exister hors de l’humanité, tandis que le droit, l’histoire des institutions et le débat sur leur justice appellent des concepts supplémentaires pour décrire certaines formes humaines d’association.
+
+**À l’entretien. Une colonie animale suffit-elle à réfuter une définition humaine de la société ?** Examiner ce que l’exemple établit, comme la coopération durable et la répartition des tâches. Demander ensuite si la définition retenait aussi la possibilité de contester les règles. La conclusion dépend du critère avancé.
 
 ### L’objet de la métaphysique
 
@@ -123,11 +141,15 @@ Une élue possède des parts dans une entreprise susceptible de recevoir une com
 
 La photographie d’une file d’attente montre des personnes effectivement présentes devant un bâtiment. Une légende erronée peut pourtant la faire passer pour l’image d’une autre ville ou d’une autre année. La confiance doit donc distinguer ce qui a laissé une trace, le cadre qui sélectionne cette trace et l’interprétation proposée. Mais se méfier de toute image au point de lui refuser toute valeur de preuve priverait justement de la possibilité de repérer la fausse légende par comparaison avec d’autres vues, dates et témoignages. Une image construite peut encore transmettre une vérité, comme un schéma dont la convention est explicitée. La bonne attitude consiste à proportionner la confiance à la question posée, à la provenance, aux conditions de production et aux moyens de vérification.
 
+**À l’entretien. Une image peut-elle être trompeuse tout en étant authentique ?** Une photo sans retouche, recadrée pour exclure la moitié d’une assemblée, peut induire une conclusion fausse. Examiner les conditions de prise de vue et la proposition que sa présentation invite à accepter.
+
 ## 9. L’existence du mal
 
 *Sujet choisi sur ce billet — Qu’est-ce qu’un bâtiment réussi ?*
 
 Une injustice reconnue suffit à établir que des torts ont lieu. Affirmer que « le mal existe » peut cependant ajouter l’idée que toutes les mauvaises actions participent d’une même réalité autonome. Comment passer du jugement sur une situation à une thèse sur ce qui existe ? Une promesse non tenue met quelqu’un en difficulté. Le manque est réel par ses effets alors même que l’obligation trahie n’était pas une chose matérielle. La théorie de la privation d’Augustin rend intelligible ce type de réalité dépendante d’un bien dont l’accomplissement était attendu. En outre, la maladie d’un proche et le refus délibéré de le secourir ne mettent pas en jeu la même responsabilité. Il faut donc prendre au sérieux souffrances et injustices sans convertir leur nom commun en explication de leurs causes. La question « quel mal ? » prépare celle de ce qu’on peut reconnaître, réparer ou prévenir.
+
+**À l’entretien. Expliquer un acte mauvais fait-il disparaître le mal ?** Connaître les pressions qui ont pesé sur une décision peut nuancer l’attribution de responsabilité. Il reste à décrire le tort subi et la norme transgressée. L’explication causale ne remplit pas ces deux tâches.
 
 ### Qu’est-ce qu’un bâtiment réussi ?
 
@@ -142,6 +164,8 @@ Mais il serait trompeur de réduire la beauté à un supplément que l’on ajou
 *Sujet choisi sur ce billet — Faut-il revenir à la nature ?*
 
 Un dossier instruit selon des règles écrites et conservé dans des archives peut être repris par une autre personne lorsque le premier agent quitte son poste. Le traitement d’une demande n’a plus à dépendre d’une faveur personnelle. Weber étudie cette continuité à travers la compétence des fonctions, la hiérarchie et les dossiers propres à la bureaucratie moderne. Le même dispositif peut toutefois imposer à un usager une preuve impossible à produire parce que sa situation n’entre dans aucune case. La régularité formelle n’est alors plus le moyen de garantir ses droits, elle menace de s’y substituer. La difficulté n’est pas de choisir entre toute règle et la libre décision du guichetier. On peut apprécier une organisation en demandant comment elle justifie ses critères, traite les exceptions prévues et rend accessible un recours sans restaurer l’arbitraire de la faveur.
+
+**À l’entretien. Un formulaire protège-t-il contre l’arbitraire ?** Il rend comparables les demandes et oblige à produire des motifs. S’il empêche d’examiner un cas pertinent qu’aucune case ne prévoit, la même règle devient source d’injustice. Examiner la possibilité d’un recours.
 
 ### Faut-il revenir à la nature ?
 
@@ -161,16 +185,18 @@ Dans la *Phénoménologie de l’esprit*, Hegel examine le rapport où une consc
 
 L’enfant qui sait dire « éclipse » a déjà appris à isoler un phénomène et à en parler avec quelqu’un. Mais il peut encore croire qu’une éclipse est un nuage faisant de l’ombre au Soleil. Le nom facilite l’identification, la recherche de témoignages et la comparaison de cas. Comprendre réclame au moins une relation explicative ou un usage suffisamment déterminé pour répondre à une question nouvelle, par exemple pourquoi l’événement n’est visible que depuis certaines régions. Inversement, on peut saisir pratiquement qu’une pièce bloque le mouvement d’une horloge avant de connaître son nom de métier. Nommer et comprendre se soutiennent quand le vocabulaire permet de formuler et de tester des différences. Le mot devient un obstacle si le fait de le répéter donne l’illusion que le mécanisme a été expliqué.
 
+**À l’entretien. Savoir le nom d’une maladie donne-t-il déjà une explication ?** Le nom peut réunir des symptômes et guider l’enquête. Si l’on répond que le patient tousse parce qu’il a « la maladie qui fait tousser », on a simplement renommé le fait à expliquer.
+
 ## 12. Fiction et liberté
 
 *Sujet choisi sur ce billet — La liberté s’éprouve-t-elle ?*
 
 En lisant une fable narrée par un animal, je peux suspendre les contraintes ordinaires qui empêchent un tel narrateur de parler. La fiction ouvre des possibles et peut mettre à distance une habitude que l’on prenait pour une nécessité. Mais l’imagination d’un lecteur n’est pas libre de faire signifier n’importe quoi à chaque phrase. La cohérence du récit, les conventions du genre et les indices laissés sur la page rendent certaines interprétations plus défendables que d’autres. Une fiction peut aussi enfermer en répétant des stéréotypes ou en proposant le même destin comme seul dénouement vraisemblable. La liberté qu’elle offre tient donc à une activité réglée d’exploration et de reprise. On peut y éprouver d’autres points de vue puis retourner au monde commun avec une question qu’on n’avait pas songé à poser.
 
+**À l’entretien. En quoi suivre une histoire inventée peut-il exercer la liberté du lecteur ?** On peut envisager les raisons d’un personnage puis refuser sa décision. L’imagination ouvre des possibles, mais une fiction peut aussi reconduire des attentes convenues. Examiner ce qu’elle permet réellement de remettre en question.
+
 ### La liberté s’éprouve-t-elle ?
 
 Devant deux chemins également praticables, je peux éprouver une hésitation réelle avant de prendre celui de gauche. En quoi cette expérience témoigne-t-elle de ma liberté ? Le sentiment d’avoir pu faire autrement paraît immédiat. Il ne suffit pas à établir que ma décision serait absolument sans causes. Des raisons jusque-là ignorées pourraient avoir rendu l’un des chemins plus attirant à mes yeux. Inversement, savoir que j’ai des raisons de préférer un chemin ne démontre pas que j’ai été forcé.
 
 L’épreuve devient plus précise lorsqu’on compare l’hésitation ordinaire à la découverte d’une barrière. Une option que je croyais ouverte ne l’était pas. Je découvre aussi une liberté en contestant l’interdiction et en obtenant une voie de recours effective. La liberté se connaît donc par l’expérience vécue de se déterminer et par des épreuves pratiques où l’on vérifie ce que l’on peut effectivement faire ou modifier. Aucune sensation isolée n’épuise sa signification. La réflexion sur les raisons et l’examen des conditions sociales donnent à cette expérience une portée qu’une simple impression de spontanéité ne garantit pas.
-
-[Feuille officielle du 22c2 juin](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philo_tc_22_juinal.pdf) · [Rapport du jury, modalités et annexe des sujets](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf)
