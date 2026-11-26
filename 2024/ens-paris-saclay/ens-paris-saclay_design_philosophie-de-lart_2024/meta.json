@@ -7,8 +7,8 @@
     "annee": 2024,
     "modalite": "écrit"
   },
-  "intitule": "Philosophie de l’art",
-  "questions": 0,
+  "intitule": "Discuter, pour le design, la formule de Sohn-Rethel sur le cassé",
+  "questions": 1,
   "redaction": "Proposition non officielle rédigée par IA.",
   "modele": {
     "provider": "codex",
@@ -24,7 +24,14 @@
       "https://journals.sagepub.com/doi/10.1177/13675494251336604",
       "https://plato.stanford.edu/archives/spr2022/entries/heidegger/",
       "https://www.fairphone.com/resources/pdf/Fairphone-factsheet_EN.pdf"
-    ]
+    ],
+    "consigne_imprimee": "Vous discuterez de la validité de cette affirmation pour la pratique du design.",
+    "page_pdf_sujet": 2,
+    "numero_epreuve": 3,
+    "index_annales": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=589",
+    "index_annales_sha256": "89713aa92fe1a6d7ebb51d07d9720363f4274baeba13a1fd87ffc94c33a9ebe6",
+    "citation_repere": "« ce qui est cassé fonctionne »",
+    "rapport_jury_verification": "L’index consulté pour cette session ne répertorie pas de rapport de philosophie de l’art."
   },
   "figures": [
     {
@@ -33,7 +40,7 @@
       "legende": "Quand une partie a cédé, qu’est-ce qui continue ?"
     }
   ],
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -58,6 +65,58 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Vérification de la situation napolitaine, de l’écart entre révélation, réparation et changement de fin, et des possibilités effectivement offertes par le projet du Fairphone 2. Contrôle des deux éditions et du schéma."
+    },
+    {
+      "phase": "revision",
+      "agent": "x_hist_1986",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Confrontation au feuillet de Sohn-Rethel, distinction entre nécessité et valeur de la panne et entre ses destinataires, cas de réparation et de déplacement de fonction."
     }
-  ]
+  ],
+  "duree_heures": 4,
+  "intitule_editorial": true,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2024_Philosophie%20de%20l%27Art_Design1A.pdf",
+      "sha256": "aaf46c4502215650303b688b0d31316f3a22ab7604578f9cf22e1b57870c7d33",
+      "pages": 2,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "105286b8cf3480f8586c3c6ae9a89266ce7b74c7ca9069be5888c4b0a5da5436"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "61b229f0d7d6fa3956a527ea740b96f5cc5765fab99f904e063c131f8da63565"
+        }
+      ]
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 2,
+        "consigne": "Vous discuterez de la validité de cette affirmation pour la pratique du design."
+      }
+    ],
+    "annexes_sujet": [],
+    "pages_blanches": [],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
 }
