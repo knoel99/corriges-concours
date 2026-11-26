@@ -10,6 +10,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Sujet officiel](https://www.ens.psl.eu/sites/default/files/261243_bcpst_lve_2026.pdf#page=6)
 
 L’épreuve d’anglais dure trois heures. La synthèse de trois documents et l’expression personnelle valent chacune 8 points ; la version en vaut 4. Les deux productions anglaises demandent de 225 à 275 mots.
