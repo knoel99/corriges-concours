@@ -109,5 +109,57 @@
       "fournisseur": "codex",
       "agent": "astra_maths"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7",
+      "I.8",
+      "I.9",
+      "I.10a",
+      "I.10b",
+      "I.10c",
+      "II.1a",
+      "II.1b",
+      "II.1c",
+      "II.1d",
+      "II.1e",
+      "II.2",
+      "II.3",
+      "II.4a",
+      "II.4b",
+      "II.5a",
+      "II.5b",
+      "II.5c",
+      "II.5d",
+      "II.5e",
+      "II.5f",
+      "II.5g",
+      "II.5h",
+      "II.5i",
+      "II.5j",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5a",
+      "III.5b",
+      "III.6",
+      "III.7"
+    ],
+    "precision": "Les 39 réponses des deux éditions correspondent aux 22 questions numérotées et à leurs subdivisions sur le fac-similé officiel. Le journal antérieur documente la portée du travail sur les solutions.",
+    "origine_attestation": {
+      "commit_du_journal": "01c7c2b0ecdd1beea4793128563e7dae032117d3",
+      "sha256_sujet_controle": "8edc04cba71beb6062f64def99fcb5206f198d9228d21f014b257c1c3f4b234b",
+      "phase": "revision",
+      "date": "2026-11-24",
+      "perimetre": "Relecture des 39 réponses et des indications sur les trois parties avec le sujet et le rapport. Vérification des deux normalisations des moyennes, des limites successives de Hardy et de la preuve taubérienne continue. Figure des multiplicités du produit de Cauchy en I.6 et précision sur la géométrie du secteur d’Abel."
+    }
+  }
 }

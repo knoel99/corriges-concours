@@ -37,5 +37,48 @@
       "fournisseur": "codex",
       "agent": "astra_maths"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1a",
+      "1.1b",
+      "1.1c",
+      "1.2a",
+      "1.2b",
+      "1.2c",
+      "1.3a",
+      "1.3b",
+      "1.3c",
+      "1.4a",
+      "1.4b",
+      "2.1a",
+      "2.1b",
+      "2.1c",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7",
+      "3.1a",
+      "3.1b",
+      "3.1c",
+      "3.2a",
+      "3.2b",
+      "3.3a",
+      "3.3b",
+      "3.3c",
+      "3.4a",
+      "3.4b"
+    ],
+    "precision": "Les 30 réponses des deux éditions correspondent aux 15 questions numérotées et à leurs subdivisions sur le fac-similé officiel. Le journal antérieur documente la portée du travail sur les solutions.",
+    "origine_attestation": {
+      "commit_du_journal": "e15e44a47e33bcbb7a2d01bcb91d9e8a5bcab620",
+      "sha256_sujet_controle": "652adfc5724bec72d0ddc6a4ba4d30521ad4099b98f7824d2552dab3da15040d",
+      "phase": "redaction",
+      "date": "2026-11-24",
+      "perimetre": "Rédaction et vérification des 30 questions et sous-questions au regard de l’énoncé original et des trois pages de rapport. Indications distinctes, distribution du maximum, graphe de la cotangente, limites aux bords et cas d’égalité dans l’inégalité de Poincaré."
+    }
+  }
 }

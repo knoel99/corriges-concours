@@ -92,5 +92,49 @@
       "fournisseur": "codex",
       "agent": "astra_maths"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1a",
+      "I.1b",
+      "I.1c",
+      "I.2",
+      "I.3a",
+      "I.3b",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5a",
+      "II.5b",
+      "II.6a",
+      "II.6b",
+      "II.7a",
+      "II.7b",
+      "II.7c",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7",
+      "IV.1",
+      "IV.2a",
+      "IV.2b",
+      "IV.2c",
+      "IV.3a",
+      "IV.3b",
+      "IV.3c"
+    ],
+    "precision": "Les 31 réponses des deux éditions correspondent aux 20 questions numérotées et à leurs subdivisions sur le fac-similé officiel. Le journal antérieur documente la portée du travail sur les solutions.",
+    "origine_attestation": {
+      "commit_du_journal": "b1bdb316aba53d381832e9e29190e59f7e7f6af4",
+      "sha256_sujet_controle": "ba1bce4bb8fad9d3969df84d1b667b120df312e7993797fa4ebfa0b544be49dc",
+      "phase": "revision",
+      "date": "2026-11-24",
+      "perimetre": "Relecture des 31 solutions et indications avec les quatre parties du sujet et le rapport. Contrôle des deux erreurs d’énoncé, contre-exemple au passage de II.6a à II.6b même pour un rationnel présent, estimation uniforme du défaut intégral du schéma d’Euler en III.5, vérification des deux interprétations des trajectoires en IV.3. Sept figures contrôlées."
+    }
+  }
 }
