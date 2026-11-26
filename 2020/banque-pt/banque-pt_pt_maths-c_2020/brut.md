@@ -124,6 +124,8 @@ Pour le produit $P_N$ tronqué au rang $N$, les facteurs appartiennent à $[0,1]
 
 Pour calculer les facteurs avec I, réduire d’abord $v=\pi/k$ à $v/2^m$, prendre $\phi(v/2^m)$ puis appliquer $m$ fois la formule $z\mapsto2z^2-1$ du cosinus double. Comme $0\le v\le\pi/3$, les valeurs initiales appartiennent à $[-1,1]$, intervalle stable pour cette transformation. Elle y est $4$-lipschitzienne. D’après I.6, l’erreur initiale est $O((v/2^m)^6)$, donc l’erreur finale est $O(v^6/16^m)$. Les erreurs du produit fini sont au plus la somme des erreurs des facteurs puisque leurs modules sont au plus un. Pour $N$ fixé elles tendent vers zéro avec $m$. Cette méthode permet donc d’approcher $R$ aussi précisément que voulu.
 
+Par exemple, pour $|s|§§le1$, le reste géométrique après le degré quatre de $§§phi$ est majoré par $|s|^6/288$ et celui du cosinus par $|s|^6/720$ (Taylor avec reste de Lagrange au degré cinq). Ainsi $|§§phi(s)-§§cos s|§§le |s|^6/200$. Comme $§§sum_{k§§ge3}k^{-6}§§le§§int_2^§§infty t^{-6}dt=1/160$, la substitution rationnelle donne une erreur sur le produit fini au plus $§§pi^6/(32000§§cdot16^m)$. Avec $N=100§§,000$ et $m=4$, le calcul du produit fini donne environ $0{,}114948$. Les deux bornes d’erreur totalisent moins de $0{,}000050$. On obtient notamment $R§§simeq0{,}115$ au millième.
+
 ![Les produits partiels sont comparés à la valeur obtenue avec des facteurs rationnels et trois étapes de doublement.](figures/produit-de-cosinus.svg)
 
 ### Question III.3.a
