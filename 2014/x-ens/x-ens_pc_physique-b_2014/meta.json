@@ -1,0 +1,116 @@
+{
+  "slug": "x-ens_pc_physique-b_2014",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Physique B",
+    "annee": 2014
+  },
+  "intitule": "Quelques propriétés des instruments de musique à lame et à corde",
+  "questions": 40,
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "reprise_physique_ulm",
+      "session": "reprise_physique_ulm",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": false,
+      "perimetre": "Vérification des conditions aux appuis, des signes du moment et du cisaillement et de la condition de contact."
+    },
+    {
+      "phase": "redaction",
+      "agent": "reprise_physique_ulm",
+      "session": "reprise_physique_ulm",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Résolution des 40 questions énumérées et réalisation de 4 figures."
+    }
+  ],
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2014/10/14_pc_suj_phy_b.pdf",
+    "sujet_sha256": "0abe954336ac71ca8bb43d48a0ca53138c041724dfae59c500918e044c381e8c",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/01/14_pc_rap_ecrit_physique_b.pdf",
+    "rapport_sha256": "13e70f4ec217aef7670b9ca880899de1854e3bc18060a4c379306c9f82639b79",
+    "garde": "XEULC · École polytechnique, ESPCI, ENS de Paris, de Lyon et de Cachan · 4 heures",
+    "lecture_garde": "La garde du sujet porte XEULC, celle du rapport XELC. Le rapport traite des mêmes quarante questions sur les instruments de musique."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1 et 2",
+      "fichier": "figures/melde.svg",
+      "legende": "Montage de Melde et profils signés normalisés hors résonance et au voisinage de la deuxième résonance."
+    },
+    {
+      "numero": 2,
+      "question": "13",
+      "fichier": "figures/modes.svg",
+      "legende": "Premiers modes d’une même lame simplement appuyée. L’échelle horizontale est identique."
+    },
+    {
+      "numero": 3,
+      "question": "18 à 20",
+      "fichier": "figures/efforts.svg",
+      "legende": "Effort tranchant et moment fléchissant pour une charge ponctuelle centrale."
+    },
+    {
+      "numero": 4,
+      "question": "34",
+      "fichier": "figures/pivots.svg",
+      "legende": "Deux articulations d’axe perpendiculaire au dessin transmettent la tension sans imposer de couple."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ]
+  }
+}
