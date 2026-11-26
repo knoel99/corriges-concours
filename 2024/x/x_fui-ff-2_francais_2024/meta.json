@@ -27,7 +27,10 @@
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20FUI-FF%20Session%202%20FRANCAIS.pdf",
     "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
-    "sujet_sha256": "1d0b91de9d300037ab7f43b0f2eb2d674061fe3ada6f00223a98d3dcd644f90b"
+    "sujet_sha256": "1d0b91de9d300037ab7f43b0f2eb2d674061fe3ada6f00223a98d3dcd644f90b",
+    "pages_sujet": 3,
+    "reperage": "P. 1, garde. La page 2 ne contient que son numéro. P. 3, présentation du Nobel, extrait du discours d’Annie Ernaux du 7 décembre 2022 et totalité des cinq questions.",
+    "consignes_verifiees": "Session 2, épreuve n° 2, deux heures. A contient quatre questions de compréhension et vaut 10 points. B impose un bref essai libre illustré d’exemples précis pour 10 points. La feuille ne fixe aucun nombre de mots. Aucune option alternative. La garde interdit les dictionnaires et traducteurs électroniques."
   },
   "date_revision": "2026-11-24",
   "revision": {
@@ -83,6 +86,37 @@
       "modifications": true,
       "perimetre": "Relecture des quatre questions sur Ernaux et de l’essai, rôle et gestes de la mère, caractère fortuit des lectures, distinction entre la jeune écrivaine et le jugement rétrospectif.",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "oraux_lyon_et_anciens_corriges",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle intégral du feuillet, des contraintes et des réponses A et B. Précisions dans la compréhension et les exemples, mise en regard des deux schémas dans chaque édition et exercice guidé. P. 1, garde. La page 2 ne contient que son numéro. P. 3, présentation du Nobel, extrait du discours d’Annie Ernaux du 7 décembre 2022 et totalité des cinq questions."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A1 · La place de la littérature de l’enfance à l’écriture.",
+      "A2 · Le rapport personnel aux œuvres, lectures de hasard, projection et distance sociale.",
+      "A3 · Le sens de « mode de vie » dans la phrase de l’extrait.",
+      "A4 · La recherche formelle dans le premier roman et le jugement rétrospectif.",
+      "B · Essai personnel sur la lecture et la littérature, illustré de deux exemples précis, La Fontaine et Flaubert."
+    ],
+    "elements_verifies": [
+      "P. 1, garde. La page 2 ne contient que son numéro. P. 3, présentation du Nobel, extrait du discours d’Annie Ernaux du 7 décembre 2022 et totalité des cinq questions.",
+      "Session 2, épreuve n° 2, deux heures. A contient quatre questions de compréhension et vaut 10 points. B impose un bref essai libre illustré d’exemples précis pour 10 points. La feuille ne fixe aucun nombre de mots. Aucune option alternative.",
+      "Dans chaque édition, confrontation des réponses et de l’essai à la feuille, contrôle des deux schémas et de leurs renvois."
+    ]
+  }
 }
