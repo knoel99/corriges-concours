@@ -1441,7 +1441,13 @@
 | 2011 | ENS | MP | Maths D | [md](2011/ens/ens_mp_maths-d_2011/brut.md) | [md](2011/ens/ens_mp_maths-d_2011/guide.md) |
 | 2012 | ENS | MP | Maths D | [md](2012/ens/ens_mp_maths-d_2012/brut.md) | [md](2012/ens/ens_mp_maths-d_2012/guide.md) |
 | 2013 | ENS | MP | Maths D | [md](2013/ens/ens_mp_maths-d_2013/brut.md) | [md](2013/ens/ens_mp_maths-d_2013/guide.md) |
+| 2014 | ENS | MP | Maths D | [md](2014/ens/ens_mp_maths-d_2014/brut.md) | [md](2014/ens/ens_mp_maths-d_2014/guide.md) |
+| 2015 | ENS | MP | Maths D | [md](2015/ens/ens_mp_maths-d_2015/brut.md) | [md](2015/ens/ens_mp_maths-d_2015/guide.md) |
+| 2016 | ENS | MP | Maths D | [md](2016/ens/ens_mp_maths-d_2016/brut.md) | [md](2016/ens/ens_mp_maths-d_2016/guide.md) |
+| 2017 | ENS | MP | Maths D | [md](2017/ens/ens_mp_maths-d_2017/brut.md) | [md](2017/ens/ens_mp_maths-d_2017/guide.md) |
 | 2018 | ENS | MP | Maths D | [md](2018/ens/ens_mp_maths-d_2018/brut.md) | [md](2018/ens/ens_mp_maths-d_2018/guide.md) |
+| 2019 | ENS | MP | Maths D | [md](2019/ens/ens_mp_maths-d_2019/brut.md) | [md](2019/ens/ens_mp_maths-d_2019/guide.md) |
+| 2020 | ENS | MP | Maths D | [md](2020/ens/ens_mp_maths-d_2020/brut.md) | [md](2020/ens/ens_mp_maths-d_2020/guide.md) |
 | 2021 | ENS | MP | Maths D | [md](2021/ens/ens_mp_maths-d_2021/brut.md) | [md](2021/ens/ens_mp_maths-d_2021/guide.md) |
 | 2022 | ENS | MP | Maths D | [md](2022/ens/ens_mp_maths-d_2022/brut.md) | [md](2022/ens/ens_mp_maths-d_2022/guide.md) |
 | 2023 | ENS | MP | Maths D | [md](2023/ens/ens_mp_maths-d_2023/brut.md) | [md](2023/ens/ens_mp_maths-d_2023/guide.md) |
