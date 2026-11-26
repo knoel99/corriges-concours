@@ -1,0 +1,1616 @@
+[
+  {
+    "archive": "BEL-AL-arabe-commentaire-version-2023.zip",
+    "sha256": "9ba2e87725a84a6a4e4d0ec6e1f1f6c7c34e165bcd7ab076732f8e9b7862c954",
+    "slug": "bel_al_arabe-commentaire-et-traduction_2023",
+    "commit": "3ebfca28cd4326bffdd77d4efa0c19b271f80db6",
+    "export": {
+      "commit_contenu": "3ebfca28cd4326bffdd77d4efa0c19b271f80db6",
+      "arbre_git_scripts_exporter": "d9e214e2cd7f30647cde097408a1703e45ed4610",
+      "origine_gabarit_commun": "25542aa1c2017bde9cd57c0f22e31d048088b536",
+      "commande": "python scripts/exporter/exporter.py --pdf bel_al_arabe-commentaire-et-traduction_2023",
+      "moteur": "LuaLaTeX, Babel, HarfBuzz, Noto Naskh Arabic",
+      "fichiers_necessaires": [
+        "brut.md",
+        "guide.md",
+        "meta.json",
+        "figures/lecture.svg"
+      ],
+      "gabarit_specifique": false
+    },
+    "contributions": [
+      {
+        "phase": "redaction",
+        "agent": "lva_pt_2325",
+        "fournisseur": "codex",
+        "modele": "gpt-6.2-astra",
+        "famille_modele": "GPT-6",
+        "effort": "ultra",
+        "vitesse": null,
+        "date": "2026-11-26",
+        "modifications": true,
+        "editions": [
+          "brut",
+          "guide"
+        ],
+        "perimetre": "Rédaction originale des deux éditions, étude du feuillet, consultation du jury, élaboration du guide et du schéma."
+      },
+      {
+        "phase": "revision",
+        "agent": "lva_pt_2325",
+        "fournisseur": "codex",
+        "modele": "gpt-6.2-astra",
+        "famille_modele": "GPT-6",
+        "effort": "ultra",
+        "vitesse": null,
+        "date": "2026-11-26",
+        "modifications": true,
+        "editions": [
+          "brut",
+          "guide"
+        ],
+        "perimetre": "Relecture des 39 lignes, des deux mouvements de la version et des trois prépositions sur la surveillance de soi. Contrôle de la comparaison avec l’oiseau et de la dernière image du soleil."
+      }
+    ],
+    "couverture": {
+      "statut": "complet",
+      "questions_entierement_traitees": [
+        "Commentaire",
+        "Version"
+      ],
+      "repere_par_question": [
+        {
+          "question": "Commentaire",
+          "page_pdf": 6,
+          "pages_pdf": [
+            6,
+            7
+          ],
+          "ligne_debut": 1,
+          "ligne_fin": 39
+        },
+        {
+          "question": "Version",
+          "page_pdf": 7,
+          "pages_pdf": [
+            7
+          ],
+          "ligne_debut": 21,
+          "ligne_fin": 28,
+          "debut": "صنع الإنسان",
+          "fin": "دمعة واحدة عليها"
+        }
+      ],
+      "questions_partiellement_traitees": [],
+      "questions_non_traitees": []
+    },
+    "pieces": {
+      "sujet": {
+        "url": "https://www.ens-lyon.fr/sites/default/files/2023-09/Commentaire-d-un-texte-en-LVE.pdf#page=6",
+        "sha256": "465bc18f65e3127c7bcf5720f6042d95180133384f245e34fd7b38acd0ffb760",
+        "pages": 24,
+        "pages_verifiees": [
+          {
+            "numero": 1,
+            "rendu_sha256": "2d00da9d0f1f2cdf2b38a83f2d4c6e4c708adc481caee234bd08becf5b5b22e7"
+          },
+          {
+            "numero": 2,
+            "rendu_sha256": "07bf7c7ea1e09c9e01b35c439fb384e78325e16ca6969efdf51845f93bfb66ff"
+          },
+          {
+            "numero": 6,
+            "rendu_sha256": "09190a920f17744df5a90238141118f23b58ef67d477732ede3c988174783448"
+          },
+          {
+            "numero": 7,
+            "rendu_sha256": "93f5ac79de7f037018030f34b8b6f683529235961c85988fe4d1c4fd1abbbe43"
+          }
+        ]
+      },
+      "rapport_jury": {
+        "url": "https://www.ens-lyon.fr/sites/default/files/2023-12/Arabe-2023.pdf#page=2",
+        "sha256": "0da95285695bb5751218471468f518f4fb0e933f80195f47e4f5ff5877db6ff3",
+        "pages": 2,
+        "pages_verifiees": [
+          {
+            "numero": 2,
+            "rendu_sha256": "11a8c212083785ec7bf97e8c3df08dbd63dda5929d62c0c4edde9ff32f24a279"
+          }
+        ]
+      }
+    },
+    "arabe_sha256": "f0733cb70992c3c02ab7ec9dc8c321827299419ed98f64017a4e1bb4e7542f3a",
+    "version_sha256": "e125d5d23decfe0e53fd17044a2963257d12a2b4c643cac53e7fb6547e4dd87b",
+    "pdf": {
+      "brut": {
+        "pages": 2,
+        "signets": [
+          [
+            1,
+            "Commentaire",
+            1
+          ],
+          [
+            1,
+            "Version",
+            2
+          ]
+        ],
+        "nombre_signets": 2,
+        "figures": [
+          2
+        ],
+        "sha256": "3a8780a6da629ec166d603b0d3eab42ce91701cd58b6979bc4f0d2d9b2556815",
+        "controle_arabe": {
+          "lettres_arabes_contigues": 1916,
+          "paragraphes": 5,
+          "correspondance_integrale": true,
+          "signes_diacritiques_preserves": true,
+          "caracteres_lettres_et_signes": 1984,
+          "nombre_signes_vocaliques_et_de_lecture": 68,
+          "types_de_signes": {
+            "ARABIC SHADDA": 54,
+            "ARABIC FATHATAN": 10,
+            "ARABIC DAMMA": 3,
+            "ARABIC FATHA": 1
+          },
+          "polices_incorporees": [
+            "GRRCAX+NotoNaskhArabic-Regular"
+          ],
+          "glyphes_contextuels": {
+            "أ": [
+              7,
+              8,
+              9
+            ],
+            "إ": [
+              10,
+              11,
+              12
+            ],
+            "ئ": [
+              578,
+              581
+            ],
+            "ا": [
+              3,
+              4,
+              6,
+              1565
+            ],
+            "ب": [
+              35,
+              36,
+              37,
+              38
+            ],
+            "ة": [
+              532,
+              533
+            ]
+          },
+          "lecture_geometrique": [
+            {
+              "page": 1,
+              "lignes_lues_droite_gauche": 23,
+              "pas_decroissants_min": 1.0,
+              "premiere_ligne": {
+                "debut_droite": 529.17,
+                "fin_gauche": 62.36,
+                "lettres_initiales": "يوقظمواءهرةصاحب"
+              },
+              "derniere_ligne": {
+                "debut_droite": 527.37,
+                "fin_gauche": 116.64,
+                "lettres_finales": "رةهوصاحبالمفتاح"
+              }
+            }
+          ]
+        },
+        "rendus_sha256": [
+          "eecf4e4d58524565a6d060638ffe0251ffc11195143415f6cd42f113080326c5",
+          "d3fb4419553ba3f1472a835cd65f5ab91d1c56cbfab82e44203686086934555a"
+        ]
+      },
+      "guide": {
+        "pages": 2,
+        "signets": [
+          [
+            1,
+            "Écouter la chatte avant d'expliquer la loi",
+            1
+          ],
+          [
+            2,
+            "Entendre le changement de sujet dans la version",
+            1
+          ],
+          [
+            1,
+            "Commentaire",
+            2
+          ],
+          [
+            1,
+            "Version",
+            2
+          ]
+        ],
+        "nombre_signets": 4,
+        "figures": [
+          1
+        ],
+        "sha256": "f78d011e720a82f4e1ef8dc456a0e72c39c841b9197f64d1044637fccbc2d0ae",
+        "controle_arabe": {
+          "lettres_arabes_contigues": 1916,
+          "paragraphes": 5,
+          "correspondance_integrale": true,
+          "signes_diacritiques_preserves": true,
+          "caracteres_lettres_et_signes": 1984,
+          "nombre_signes_vocaliques_et_de_lecture": 68,
+          "types_de_signes": {
+            "ARABIC SHADDA": 54,
+            "ARABIC FATHATAN": 10,
+            "ARABIC DAMMA": 3,
+            "ARABIC FATHA": 1
+          },
+          "polices_incorporees": [
+            "GRRCAX+NotoNaskhArabic-Regular"
+          ],
+          "glyphes_contextuels": {
+            "أ": [
+              7,
+              8,
+              9
+            ],
+            "إ": [
+              10,
+              11,
+              12
+            ],
+            "ئ": [
+              578,
+              581
+            ],
+            "ا": [
+              3,
+              4,
+              6,
+              1565
+            ],
+            "ب": [
+              35,
+              36,
+              37,
+              38
+            ],
+            "ة": [
+              532,
+              533
+            ]
+          },
+          "lecture_geometrique": [
+            {
+              "page": 2,
+              "lignes_lues_droite_gauche": 23,
+              "pas_decroissants_min": 1.0,
+              "premiere_ligne": {
+                "debut_droite": 529.17,
+                "fin_gauche": 62.36,
+                "lettres_initiales": "يوقظمواءهرةصاحب"
+              },
+              "derniere_ligne": {
+                "debut_droite": 527.37,
+                "fin_gauche": 116.64,
+                "lettres_finales": "رةهوصاحبالمفتاح"
+              }
+            }
+          ]
+        },
+        "rendus_sha256": [
+          "9fa32a241acac4cd802ce2cde6b7b04d396fe409ea9b72679586aa1d727c0d89",
+          "a9bab140d15b906ca0268674e82c56584e406f015881bf3b0b97d51cdefae17b"
+        ]
+      }
+    },
+    "empreintes": {
+      "meta.json": "f477ef23ffef45364e12f7e44c5208d0aa295928aa313a61a3c5b88349f268a1",
+      "figures/lecture.svg": "036117ab82d80b87bd11b3fe31f1936acad5bf046fdd077bff343437f6b2aec1",
+      "bilan-compilation.md": "e9e922e4231cec269ce3909e124a388dff46a021f011b7d165d223b613130668",
+      "brut.md": "56a149bf03f78cf93eb91967754b1672c9e5423b8f163501f53e2d6c602cf040",
+      "brut.pdf": "3a8780a6da629ec166d603b0d3eab42ce91701cd58b6979bc4f0d2d9b2556815",
+      "guide.md": "4e1b3b03f5e5fb12d459590352fd09705cd01a117a13a8fa271c607b20a6fdda",
+      "guide.pdf": "f78d011e720a82f4e1ef8dc456a0e72c39c841b9197f64d1044637fccbc2d0ae",
+      "apercu.jpg": "7d92eaac4d8d6865fc84c711b7eed9a4f004c9a3160e91810e7e424730719f0d",
+      "extrait-lecture-arabe.png": "9b64e4c5d32f75a84cae14ff222520c6eaa623a0e0addb005e6777106b9063c7"
+    }
+  },
+  {
+    "archive": "BEL-AL-arabe-commentaire-version-2024.zip",
+    "sha256": "e7dec692d013e53fbd8d33d4664e7a7fbc41a1ce55cc2c37975761303e9263a8",
+    "slug": "bel_al_arabe-commentaire-et-traduction_2024",
+    "commit": "ebc76855e9267d87f4a5cbaaf70583e1aa499285",
+    "export": {
+      "commit_contenu": "ebc76855e9267d87f4a5cbaaf70583e1aa499285",
+      "arbre_git_scripts_exporter": "d9e214e2cd7f30647cde097408a1703e45ed4610",
+      "origine_gabarit_commun": "25542aa1c2017bde9cd57c0f22e31d048088b536",
+      "commande": "python scripts/exporter/exporter.py --pdf bel_al_arabe-commentaire-et-traduction_2024",
+      "moteur": "LuaLaTeX, Babel, HarfBuzz, Noto Naskh Arabic",
+      "fichiers_necessaires": [
+        "brut.md",
+        "guide.md",
+        "meta.json",
+        "figures/lecture.svg"
+      ],
+      "gabarit_specifique": false
+    },
+    "contributions": [
+      {
+        "phase": "redaction",
+        "agent": "lva_pt_2325",
+        "fournisseur": "codex",
+        "modele": "gpt-6.2-astra",
+        "famille_modele": "GPT-6",
+        "effort": "ultra",
+        "vitesse": null,
+        "date": "2026-11-26",
+        "modifications": true,
+        "editions": [
+          "brut",
+          "guide"
+        ],
+        "perimetre": "Rédaction originale des deux éditions, étude du feuillet, consultation du jury, élaboration du guide et du schéma."
+      },
+      {
+        "phase": "revision",
+        "agent": "lva_pt_2325",
+        "fournisseur": "codex",
+        "modele": "gpt-6.2-astra",
+        "famille_modele": "GPT-6",
+        "effort": "ultra",
+        "vitesse": null,
+        "date": "2026-11-26",
+        "modifications": true,
+        "editions": [
+          "brut",
+          "guide"
+        ],
+        "perimetre": "Collation sur le scan aux lignes 18–36, y compris la jonction entre les pages. Révision de l’attribution des thèses et de la paraphrase du propos d’al-Māwardī."
+      }
+    ],
+    "couverture": {
+      "statut": "complet",
+      "questions_entierement_traitees": [
+        "Commentaire",
+        "Version"
+      ],
+      "repere_par_question": [
+        {
+          "question": "Commentaire",
+          "page_pdf": 6,
+          "pages_pdf": [
+            6,
+            7
+          ],
+          "ligne_debut": 1,
+          "ligne_fin": 36
+        },
+        {
+          "question": "Version",
+          "page_pdf": 6,
+          "pages_pdf": [
+            6,
+            7
+          ],
+          "ligne_debut": 18,
+          "ligne_fin": 36,
+          "debut": "إنّ هذا المأزق هو النواة",
+          "fin": "القائد، المعلّم"
+        }
+      ],
+      "questions_partiellement_traitees": [],
+      "questions_non_traitees": []
+    },
+    "pieces": {
+      "sujet": {
+        "url": "https://www.ens-lyon.fr/sites/default/files/2024-11/Commentaire%20d%27un%20texte%20en%20LVE%20et%20traduction.pdf#page=6",
+        "sha256": "80d15efa86786e91577675fd10623264c98f1e5e2424288248f1a684c15c9f6f",
+        "pages": 24,
+        "pages_verifiees": [
+          {
+            "numero": 1,
+            "rendu_sha256": "1f33d62d2f2871fbd373843ba5fed681f83b35c59a9ab1b31a272b421148df99"
+          },
+          {
+            "numero": 2,
+            "rendu_sha256": "3ea33261456a99b4e412cefc548d9cbb5b7a5a907bf3904edbcad2bb93d9a265"
+          },
+          {
+            "numero": 6,
+            "rendu_sha256": "8ca07252882527d4547395c60bbd8aa3bbfbfe45b779670544acc205809b35f6"
+          },
+          {
+            "numero": 7,
+            "rendu_sha256": "0ff5ee23af73a1e2408d2c7bfa6ec067422a38a182c45f28574929c4f985d114"
+          }
+        ]
+      },
+      "rapport_jury": {
+        "url": "https://www.ens-lyon.fr/sites/default/files/2024-11/Arabe%202024%20OK.pdf#page=2",
+        "sha256": "adaa8939239aa19942fb636ae14d1d4f45fb675b7692d4228e59bdb0c95bb70f",
+        "pages": 5,
+        "pages_verifiees": [
+          {
+            "numero": 2,
+            "rendu_sha256": "5b2438f1c8015245b8a2256cc5379ec324bee40c0bba964fd8a11f74cef4e737"
+          },
+          {
+            "numero": 3,
+            "rendu_sha256": "d0ec14f747946d8a60715fa4a5a2ccdd5d087f33869738aae2f2ebbe9dca4983"
+          }
+        ]
+      }
+    },
+    "arabe_sha256": "79233638d000ac7b31dd8eb2ab5589f9c0dfd6cf77a242e4ecabfc6c6a89a36d",
+    "version_sha256": "11f47a6180dc19a0ab7349b89be260df05cf13ea74885b13d53e6651afb792d8",
+    "pdf": {
+      "brut": {
+        "pages": 2,
+        "signets": [
+          [
+            1,
+            "Commentaire",
+            1
+          ],
+          [
+            1,
+            "Version",
+            2
+          ]
+        ],
+        "nombre_signets": 2,
+        "figures": [
+          2
+        ],
+        "sha256": "2b9bd468ab0b0f5efa7c789ae7f844f6995b18f396b616ee877e5c70b67b1810",
+        "controle_arabe": {
+          "lettres_arabes_contigues": 2034,
+          "paragraphes": 5,
+          "correspondance_integrale": true,
+          "signes_diacritiques_preserves": true,
+          "caracteres_lettres_et_signes": 2093,
+          "nombre_signes_vocaliques_et_de_lecture": 59,
+          "types_de_signes": {
+            "ARABIC SHADDA": 43,
+            "ARABIC FATHATAN": 12,
+            "ARABIC DAMMA": 3,
+            "ARABIC KASRA": 1
+          },
+          "polices_incorporees": [
+            "HMTWXI+NotoNaskhArabic-Regular"
+          ],
+          "glyphes_contextuels": {
+            "أ": [
+              7,
+              8,
+              9,
+              1571
+            ],
+            "إ": [
+              10,
+              12
+            ],
+            "ئ": [
+              578,
+              579,
+              581
+            ],
+            "ا": [
+              3,
+              4,
+              6,
+              1565
+            ],
+            "ب": [
+              35,
+              36,
+              37,
+              38
+            ],
+            "ة": [
+              532,
+              533
+            ]
+          },
+          "lecture_geometrique": [
+            {
+              "page": 1,
+              "lignes_lues_droite_gauche": 28,
+              "pas_decroissants_min": 1.0,
+              "premiere_ligne": {
+                "debut_droite": 527.26,
+                "fin_gauche": 62.36,
+                "lettres_initiales": "لايفتتحأدونيسحد"
+              },
+              "derniere_ligne": {
+                "debut_droite": 439.8,
+                "fin_gauche": 150.36,
+                "lettres_finales": "عةمنقبلفيمرجعها"
+              }
+            }
+          ]
+        },
+        "rendus_sha256": [
+          "0fb63088db8e5ac3e3da711aaa75de9e5742116fdd8260a0e711fd162dfc6209",
+          "8f57f9398eeb38a8e6b5d5510daba3c267b9f54020463059b0926df5d880d3ee"
+        ]
+      },
+      "guide": {
+        "pages": 3,
+        "signets": [
+          [
+            1,
+            "Attribuer les jugements à la bonne voix",
+            1
+          ],
+          [
+            2,
+            "Suivre le raisonnement jusqu'au dernier point d'interrogation",
+            1
+          ],
+          [
+            1,
+            "Commentaire",
+            2
+          ],
+          [
+            1,
+            "Version",
+            2
+          ]
+        ],
+        "nombre_signets": 4,
+        "figures": [
+          1
+        ],
+        "sha256": "58557a8f0f15fb6598970075b08c8489ab3d2b54606b7d7e7b6559945fe82262",
+        "controle_arabe": {
+          "lettres_arabes_contigues": 2034,
+          "paragraphes": 5,
+          "correspondance_integrale": true,
+          "signes_diacritiques_preserves": true,
+          "caracteres_lettres_et_signes": 2093,
+          "nombre_signes_vocaliques_et_de_lecture": 59,
+          "types_de_signes": {
+            "ARABIC SHADDA": 43,
+            "ARABIC FATHATAN": 12,
+            "ARABIC DAMMA": 3,
+            "ARABIC KASRA": 1
+          },
+          "polices_incorporees": [
+            "HMTWXI+NotoNaskhArabic-Regular"
+          ],
+          "glyphes_contextuels": {
+            "أ": [
+              7,
+              8,
+              9,
+              1571
+            ],
+            "إ": [
+              10,
+              12
+            ],
+            "ئ": [
+              578,
+              579,
+              581
+            ],
+            "ا": [
+              3,
+              4,
+              6,
+              1565
+            ],
+            "ب": [
+              35,
+              36,
+              37,
+              38
+            ],
+            "ة": [
+              532,
+              533
+            ]
+          },
+          "lecture_geometrique": [
+            {
+              "page": 2,
+              "lignes_lues_droite_gauche": 28,
+              "pas_decroissants_min": 1.0,
+              "premiere_ligne": {
+                "debut_droite": 527.26,
+                "fin_gauche": 62.36,
+                "lettres_initiales": "لايفتتحأدونيسحد"
+              },
+              "derniere_ligne": {
+                "debut_droite": 439.8,
+                "fin_gauche": 150.36,
+                "lettres_finales": "عةمنقبلفيمرجعها"
+              }
+            }
+          ]
+        },
+        "rendus_sha256": [
+          "98967ed15343bdf1ef0320c75be504675258bf075f60328dba82f05fcf6eb624",
+          "02c7832a372281a30714253234763dc6814d9e3c16ae85df9806baa329dbc504",
+          "3973b97a1305e1ba316fb93f7122fccaaebf6a4cd5efd93f72fee6efb0059781"
+        ]
+      }
+    },
+    "empreintes": {
+      "meta.json": "dc725da59b04ee2420eff3bc57492b7a6e1f77071618d113e243d66b292c3346",
+      "figures/lecture.svg": "a1e407867c1bc86de2bfeac04456f7d4adad74bf7444c712cc7611573c0ca04e",
+      "bilan-compilation.md": "4e87f034995e7e90bdada2293efa9bbbb4ab0cb2c2f1279472521c014d0c7243",
+      "brut.md": "849abecf1a8180c944d86c89f84e709697ca2882cd6e77543021eeba74da8d62",
+      "brut.pdf": "2b9bd468ab0b0f5efa7c789ae7f844f6995b18f396b616ee877e5c70b67b1810",
+      "guide.md": "382038f241c118a5c14d27aef8923e4a16d9e19129d114c55b86464b867a6e6b",
+      "guide.pdf": "58557a8f0f15fb6598970075b08c8489ab3d2b54606b7d7e7b6559945fe82262",
+      "apercu.jpg": "186550f13320c85680f7c0397b8576ebcafecabb717d554747e7375051d749fa",
+      "extrait-lecture-arabe.png": "4ff30cbe97659caa2a63adffc87164a9baa9a76c4a281cbb3b1033561e8d802b"
+    }
+  },
+  {
+    "archive": "BEL-AL-arabe-commentaire-version-2025.zip",
+    "sha256": "1ae591d65847b7e6bd73db101ed7d446b6e2ccb2ad6214c0f5c6bba7db8e9fb1",
+    "slug": "bel_al_arabe-commentaire-et-traduction_2025",
+    "commit": "3ebfca28cd4326bffdd77d4efa0c19b271f80db6",
+    "export": {
+      "commit_contenu": "3ebfca28cd4326bffdd77d4efa0c19b271f80db6",
+      "arbre_git_scripts_exporter": "d9e214e2cd7f30647cde097408a1703e45ed4610",
+      "origine_gabarit_commun": "25542aa1c2017bde9cd57c0f22e31d048088b536",
+      "commande": "python scripts/exporter/exporter.py --pdf bel_al_arabe-commentaire-et-traduction_2025",
+      "moteur": "LuaLaTeX, Babel, HarfBuzz, Noto Naskh Arabic",
+      "fichiers_necessaires": [
+        "brut.md",
+        "guide.md",
+        "meta.json",
+        "figures/lecture.svg"
+      ],
+      "gabarit_specifique": false
+    },
+    "contributions": [
+      {
+        "phase": "redaction",
+        "agent": "lva_pt_2325",
+        "fournisseur": "codex",
+        "modele": "gpt-6.2-astra",
+        "famille_modele": "GPT-6",
+        "effort": "ultra",
+        "vitesse": null,
+        "date": "2026-11-26",
+        "modifications": true,
+        "editions": [
+          "brut",
+          "guide"
+        ],
+        "perimetre": "Rédaction originale des deux éditions, étude du feuillet, consultation du jury, élaboration du guide et du schéma."
+      },
+      {
+        "phase": "revision",
+        "agent": "lva_pt_2325",
+        "fournisseur": "codex",
+        "modele": "gpt-6.2-astra",
+        "famille_modele": "GPT-6",
+        "effort": "ultra",
+        "vitesse": null,
+        "date": "2026-11-26",
+        "modifications": true,
+        "editions": [
+          "brut",
+          "guide"
+        ],
+        "perimetre": "Confrontation des noms, de la clientèle et de la fonction de secrétaire à la notice sur Yūnus. Vérification du second titre perdu et des controverses postérieures, traitées dans le commentaire."
+      }
+    ],
+    "couverture": {
+      "statut": "complet",
+      "questions_entierement_traitees": [
+        "Commentaire",
+        "Version"
+      ],
+      "repere_par_question": [
+        {
+          "question": "Commentaire",
+          "page_pdf": 6,
+          "pages_pdf": [
+            6,
+            7
+          ],
+          "ligne_debut": 1,
+          "ligne_fin": 37
+        },
+        {
+          "question": "Version",
+          "page_pdf": 6,
+          "pages_pdf": [
+            6
+          ],
+          "ligne_debut": 13,
+          "ligne_fin": 22,
+          "debut": "ولما اشتغل",
+          "fin": "وقد ضاع هذا أيضًا"
+        }
+      ],
+      "questions_partiellement_traitees": [],
+      "questions_non_traitees": []
+    },
+    "pieces": {
+      "sujet": {
+        "url": "https://www.ens-lyon.fr/sites/default/files/2025-07/Commentaire%20et%20traduction.pdf#page=6",
+        "sha256": "ea1e2d243c18761ad6c43ed4f301fdebb92b05def7502a7357659f787a15ae35",
+        "pages": 24,
+        "pages_verifiees": [
+          {
+            "numero": 1,
+            "rendu_sha256": "d10fc4d68158b2c87292528c0faa5bf3de66f9759bfb6b0292536515d81036d3"
+          },
+          {
+            "numero": 2,
+            "rendu_sha256": "1e7bff601e229489b20e9530d41c12b6a405a88fd4acd1634098b88de711e417"
+          },
+          {
+            "numero": 6,
+            "rendu_sha256": "d3ec45d38d520af023b0515c06484715792a61aa898aafa970f63a13c4186b19"
+          },
+          {
+            "numero": 7,
+            "rendu_sha256": "1ea0d71c9e3bc45bb63be292df2fed3f724c5317dbd0a6c848e1559d1138ed4f"
+          }
+        ]
+      },
+      "rapport_jury": {
+        "url": "https://www.ens-lyon.fr/sites/default/files/2025-11/Arabe%202025%20OK%20Lyon%20RELU.pdf#page=2",
+        "sha256": "f091d06086baee7ada7cb3d37b66028a1a8b2dbe8d4b9df6ede56f11af219b60",
+        "pages": 8,
+        "pages_verifiees": [
+          {
+            "numero": 2,
+            "rendu_sha256": "0ac66aae312e2fe33c3cd4e6771fd1217666aedd0010a335e5520eadf7f53ea0"
+          },
+          {
+            "numero": 3,
+            "rendu_sha256": "e0307b42bad071be0656e2ac2430e7337fbbb31daa5cc6b5a8a3b2e341da3c37"
+          }
+        ]
+      }
+    },
+    "arabe_sha256": "044bb8593eb7d4701b337ea7b750e42d076db6a2c0b3b2c2de556fa3867471e3",
+    "version_sha256": "df25a57cbe51646ce40388ce21c6afbef5ecb614e63f9a898e83742a0a0378b5",
+    "pdf": {
+      "brut": {
+        "pages": 2,
+        "signets": [
+          [
+            1,
+            "Commentaire",
+            1
+          ],
+          [
+            1,
+            "Version",
+            2
+          ]
+        ],
+        "nombre_signets": 2,
+        "figures": [
+          2
+        ],
+        "sha256": "144b094a5de4b588812107e650d01dfe7489af059fc17341122d1eb0411bed00",
+        "controle_arabe": {
+          "lettres_arabes_contigues": 2069,
+          "paragraphes": 5,
+          "correspondance_integrale": true,
+          "signes_diacritiques_preserves": true,
+          "caracteres_lettres_et_signes": 2134,
+          "nombre_signes_vocaliques_et_de_lecture": 65,
+          "types_de_signes": {
+            "ARABIC FATHATAN": 8,
+            "ARABIC SHADDA": 50,
+            "ARABIC DAMMA": 3,
+            "ARABIC FATHA": 3,
+            "ARABIC KASRA": 1
+          },
+          "polices_incorporees": [
+            "DBHADK+NotoNaskhArabic-Regular"
+          ],
+          "glyphes_contextuels": {
+            "آ": [
+              19,
+              21
+            ],
+            "أ": [
+              7,
+              8,
+              9,
+              1571
+            ],
+            "إ": [
+              10,
+              11,
+              12
+            ],
+            "ئ": [
+              578,
+              581
+            ],
+            "ا": [
+              3,
+              4,
+              6,
+              1565
+            ],
+            "ب": [
+              35,
+              36,
+              37,
+              38
+            ]
+          },
+          "lecture_geometrique": [
+            {
+              "page": 1,
+              "lignes_lues_droite_gauche": 26,
+              "pas_decroissants_min": 0.9778,
+              "premiere_ligne": {
+                "debut_droite": 529.17,
+                "fin_gauche": 63.05,
+                "lettres_initiales": "يضعجرجيزيدانالم"
+              },
+              "derniere_ligne": {
+                "debut_droite": 530.32,
+                "fin_gauche": 376.65,
+                "lettres_finales": "لماابتكرهأصحابه"
+              }
+            }
+          ]
+        },
+        "rendus_sha256": [
+          "11d32e7383a493fdb2a405c2d9ebf1ef59d3c1824895665e74b47ad3089c21c5",
+          "d62f66f31c1b2cea80f11a9070b16837573c3aebeed1ec40276e78a0ffee701b"
+        ]
+      },
+      "guide": {
+        "pages": 2,
+        "signets": [
+          [
+            1,
+            "Distinguer le voyage des airs et celui des livres",
+            1
+          ],
+          [
+            2,
+            "Garder distincts les hommes, les métiers et les ouvrages",
+            1
+          ],
+          [
+            1,
+            "Commentaire",
+            1
+          ],
+          [
+            1,
+            "Version",
+            2
+          ]
+        ],
+        "nombre_signets": 4,
+        "figures": [
+          1
+        ],
+        "sha256": "a396e84accf1c259984fc983d16f37870ac0f7f513c22edf42785dc58c19309f",
+        "controle_arabe": {
+          "lettres_arabes_contigues": 2069,
+          "paragraphes": 5,
+          "correspondance_integrale": true,
+          "signes_diacritiques_preserves": true,
+          "caracteres_lettres_et_signes": 2134,
+          "nombre_signes_vocaliques_et_de_lecture": 65,
+          "types_de_signes": {
+            "ARABIC FATHATAN": 8,
+            "ARABIC SHADDA": 50,
+            "ARABIC DAMMA": 3,
+            "ARABIC FATHA": 3,
+            "ARABIC KASRA": 1
+          },
+          "polices_incorporees": [
+            "DBHADK+NotoNaskhArabic-Regular"
+          ],
+          "glyphes_contextuels": {
+            "آ": [
+              19,
+              21
+            ],
+            "أ": [
+              7,
+              8,
+              9,
+              1571
+            ],
+            "إ": [
+              10,
+              11,
+              12
+            ],
+            "ئ": [
+              578,
+              581
+            ],
+            "ا": [
+              3,
+              4,
+              6,
+              1565
+            ],
+            "ب": [
+              35,
+              36,
+              37,
+              38
+            ]
+          },
+          "lecture_geometrique": [
+            {
+              "page": 1,
+              "lignes_lues_droite_gauche": 3,
+              "pas_decroissants_min": 1.0,
+              "premiere_ligne": {
+                "debut_droite": 529.17,
+                "fin_gauche": 63.05,
+                "lettres_initiales": "يضعجرجيزيدانالم"
+              },
+              "derniere_ligne": {
+                "debut_droite": 527.37,
+                "fin_gauche": 67.56,
+                "lettres_finales": "ثيرامماكتبلميبق"
+              }
+            },
+            {
+              "page": 2,
+              "lignes_lues_droite_gauche": 23,
+              "pas_decroissants_min": 0.9778,
+              "premiere_ligne": {
+                "debut_droite": 529.17,
+                "fin_gauche": 62.37,
+                "lettres_initiales": "ينسبزيدانإلىالع"
+              },
+              "derniere_ligne": {
+                "debut_droite": 530.32,
+                "fin_gauche": 376.65,
+                "lettres_finales": "لماابتكرهأصحابه"
+              }
+            }
+          ]
+        },
+        "rendus_sha256": [
+          "e9f50e187254e9ed1d507086b161580ed9bab3100ab8a266c96825cf8d5c2a0d",
+          "39049a16b90fcab152a6d7dd2f2e06c0e8bd6771fb39e007b1ae44da1ef7a5e3"
+        ]
+      }
+    },
+    "empreintes": {
+      "meta.json": "759ea297fd88e330bbbd1a67e85496d2a2252f111791ddb9fe4d1b9907780a37",
+      "figures/lecture.svg": "b309b1aea5f64a258b77f31b598c1a8c00e257a10d9506183a1fae603b0dbde8",
+      "bilan-compilation.md": "861ecddf055e30c988b309a9d7109ff964ffac588f8fbe80b65f89de5ecc0b1c",
+      "brut.md": "c3e145f01371797fcae2660377622a4f9010c939fdc3f193b47adc67f9350aac",
+      "brut.pdf": "144b094a5de4b588812107e650d01dfe7489af059fc17341122d1eb0411bed00",
+      "guide.md": "de66d611ab1a80adbc6dbecf8dd1701c5a6be004a2e880c3ea04f1bd9600313b",
+      "guide.pdf": "a396e84accf1c259984fc983d16f37870ac0f7f513c22edf42785dc58c19309f",
+      "apercu.jpg": "717e1af1675eeb30cd1c3685be36c504fe98e2343bcf5e2ae1cf11487531416f",
+      "extrait-lecture-arabe.png": "76f09005bae5312082781e2a04c870a7497ad79cccf0abac191d829da5f02ddf"
+    }
+  },
+  {
+    "archive": "BEL-AL-Lyon-theme-arabe-2024.zip",
+    "sha256": "e829b5d9034627732255aa292c6b63d96eccc6e05dde1246af4fedd764f8a063",
+    "slug": "bel_al_arabe-theme-lyon_2024",
+    "commit": "ebc76855e9267d87f4a5cbaaf70583e1aa499285",
+    "export": {
+      "commit_contenu": "ebc76855e9267d87f4a5cbaaf70583e1aa499285",
+      "arbre_git_scripts_exporter": "d9e214e2cd7f30647cde097408a1703e45ed4610",
+      "origine_gabarit_commun": "25542aa1c2017bde9cd57c0f22e31d048088b536",
+      "commande": "python scripts/exporter/exporter.py --pdf bel_al_arabe-theme-lyon_2024",
+      "moteur": "LuaLaTeX, Babel, HarfBuzz, Noto Naskh Arabic",
+      "fichiers_necessaires": [
+        "brut.md",
+        "guide.md",
+        "meta.json",
+        "figures/lecture.svg"
+      ],
+      "gabarit_specifique": false
+    },
+    "contributions": [
+      {
+        "phase": "redaction",
+        "agent": "lva_pt_2325",
+        "fournisseur": "codex",
+        "modele": "gpt-6.2-astra",
+        "famille_modele": "GPT-6",
+        "effort": "ultra",
+        "vitesse": null,
+        "date": "2026-11-26",
+        "modifications": true,
+        "editions": [
+          "brut",
+          "guide"
+        ],
+        "perimetre": "Rédaction originale des deux éditions, étude du feuillet, consultation du jury, élaboration du guide et du schéma."
+      },
+      {
+        "phase": "revision",
+        "agent": "lva_pt_2325",
+        "fournisseur": "codex",
+        "modele": "gpt-6.2-astra",
+        "famille_modele": "GPT-6",
+        "effort": "ultra",
+        "vitesse": null,
+        "date": "2026-11-26",
+        "modifications": true,
+        "editions": [
+          "brut",
+          "guide"
+        ],
+        "perimetre": "Contrôle sur le fac-similé du titre, de la coupure, du jeu sur les Anciens, de la valeur polémique de la pointe contre Raoul Rochette et de la restriction finale."
+      }
+    ],
+    "couverture": {
+      "statut": "complet",
+      "questions_entierement_traitees": [
+        "Proposition de thème"
+      ],
+      "repere_par_question": [
+        {
+          "question": "Proposition de thème",
+          "page_pdf": 12,
+          "pages_pdf": [
+            12
+          ],
+          "perimetre": "Titre, question sur le drapeau, coupure imprimée, série des définitions récusées et conclusion sur la manière de sentir."
+        }
+      ],
+      "questions_partiellement_traitees": [],
+      "questions_non_traitees": []
+    },
+    "pieces": {
+      "sujet": {
+        "url": "https://www.ens-lyon.fr/sites/default/files/2024-11/Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=12",
+        "sha256": "cbf76039969ec8cec685a228168381915bdc7b64ae30b2cbee576b3a4f1eeb56",
+        "pages": 20,
+        "pages_verifiees": [
+          {
+            "numero": 1,
+            "rendu_sha256": "467f29e0ec3180170f83906b396898332e097600bd045b203d322734b30ba14a"
+          },
+          {
+            "numero": 2,
+            "rendu_sha256": "8792f553de5cddb862b1610114caf646f31cce12b7629be38076e505305ad7a8"
+          },
+          {
+            "numero": 12,
+            "rendu_sha256": "7cd9c374f5efcfa0693a56c2b0ad22857ed32eca221c11d950c8f4cef2c15b92"
+          }
+        ]
+      },
+      "rapport_jury": {
+        "url": "https://www.ens-lyon.fr/sites/default/files/2024-11/Arabe%202024%20OK.pdf#page=4",
+        "sha256": "adaa8939239aa19942fb636ae14d1d4f45fb675b7692d4228e59bdb0c95bb70f",
+        "pages": 5,
+        "pages_verifiees": [
+          {
+            "numero": 4,
+            "rendu_sha256": "34cfaadcc1aabcc1ef25380af964b8f1e9b61e88cd7eaa4891455d95842f0ef9"
+          },
+          {
+            "numero": 5,
+            "rendu_sha256": "214e0d75e0ee13ecb0ac1e0908bd92e9b7b52df864d43efda6335bf4efd4ecde"
+          }
+        ]
+      }
+    },
+    "arabe_sha256": "3b5058193275e460af57a64d79b3ba9bf44ff49707a88048382bb984197d6afc",
+    "version_sha256": null,
+    "pdf": {
+      "brut": {
+        "pages": 1,
+        "signets": [
+          [
+            1,
+            "Proposition de thème",
+            1
+          ]
+        ],
+        "nombre_signets": 1,
+        "figures": [
+          1
+        ],
+        "sha256": "1624c5c766aab7a13a7f9e317e9685989b9cde972111f67ccb1a1130ebfb508f",
+        "controle_arabe": {
+          "lettres_arabes_contigues": 751,
+          "paragraphes": 4,
+          "correspondance_integrale": true,
+          "signes_diacritiques_preserves": true,
+          "caracteres_lettres_et_signes": 787,
+          "nombre_signes_vocaliques_et_de_lecture": 36,
+          "types_de_signes": {
+            "ARABIC SHADDA": 24,
+            "ARABIC FATHATAN": 10,
+            "ARABIC DAMMA": 1,
+            "ARABIC FATHA": 1
+          },
+          "polices_incorporees": [
+            "HECCLI+NotoNaskhArabic-Regular"
+          ],
+          "glyphes_contextuels": {
+            "أ": [
+              7,
+              8,
+              9
+            ],
+            "ؤ": [
+              544,
+              545
+            ],
+            "إ": [
+              10,
+              12
+            ],
+            "ا": [
+              3,
+              4,
+              6,
+              1565
+            ],
+            "ب": [
+              36,
+              37,
+              38
+            ],
+            "ة": [
+              532,
+              533
+            ]
+          },
+          "lecture_geometrique": [
+            {
+              "page": 1,
+              "lignes_lues_droite_gauche": 9,
+              "pas_decroissants_min": 1.0,
+              "premiere_ligne": {
+                "debut_droite": 528.33,
+                "fin_gauche": 62.37,
+                "lettres_initiales": "قلمنالناساليومم"
+              },
+              "derniere_ligne": {
+                "debut_droite": 528.33,
+                "fin_gauche": 62.37,
+                "lettres_finales": "الواقعبلفيطريقة"
+              }
+            }
+          ]
+        },
+        "rendus_sha256": [
+          "4fff1e0020e992fc9adc0ed515303ec9926c5ff93bf3398be6364466b1a09116"
+        ]
+      },
+      "guide": {
+        "pages": 2,
+        "signets": [
+          [
+            1,
+            "Conduire la réfutation jusqu'au mot « sentir »",
+            1
+          ],
+          [
+            2,
+            "Faire entendre l'enchaînement des objections",
+            1
+          ],
+          [
+            1,
+            "Proposition de thème",
+            2
+          ]
+        ],
+        "nombre_signets": 3,
+        "figures": [
+          1
+        ],
+        "sha256": "8dd8276717f22d445add666f4282b9f1b26ebf0e1283de000f89aa7d4d313cdd",
+        "controle_arabe": {
+          "lettres_arabes_contigues": 751,
+          "paragraphes": 4,
+          "correspondance_integrale": true,
+          "signes_diacritiques_preserves": true,
+          "caracteres_lettres_et_signes": 787,
+          "nombre_signes_vocaliques_et_de_lecture": 36,
+          "types_de_signes": {
+            "ARABIC SHADDA": 24,
+            "ARABIC FATHATAN": 10,
+            "ARABIC DAMMA": 1,
+            "ARABIC FATHA": 1
+          },
+          "polices_incorporees": [
+            "HECCLI+NotoNaskhArabic-Regular"
+          ],
+          "glyphes_contextuels": {
+            "أ": [
+              7,
+              8,
+              9
+            ],
+            "ؤ": [
+              544,
+              545
+            ],
+            "إ": [
+              10,
+              12
+            ],
+            "ا": [
+              3,
+              4,
+              6,
+              1565
+            ],
+            "ب": [
+              36,
+              37,
+              38
+            ],
+            "ة": [
+              532,
+              533
+            ]
+          },
+          "lecture_geometrique": [
+            {
+              "page": 2,
+              "lignes_lues_droite_gauche": 9,
+              "pas_decroissants_min": 1.0,
+              "premiere_ligne": {
+                "debut_droite": 528.33,
+                "fin_gauche": 62.37,
+                "lettres_initiales": "قلمنالناساليومم"
+              },
+              "derniere_ligne": {
+                "debut_droite": 528.33,
+                "fin_gauche": 62.37,
+                "lettres_finales": "الواقعبلفيطريقة"
+              }
+            }
+          ]
+        },
+        "rendus_sha256": [
+          "ed1320c1810e2ea312bb48d76cab4e1dcb4dace918d53783227eab02f580ce69",
+          "566cc1e457f4b0b5c19827d723336af353af3582b6391fc9fbd81ebe47962da5"
+        ]
+      }
+    },
+    "empreintes": {
+      "meta.json": "8d9acf95ba338e2ece9fa886025b078b49855359203b1a0631df1380d0d5e4b2",
+      "figures/lecture.svg": "bb72c688501f451e55fa61e9cc1c99102e2dba79b3f76d624e497ec2676f997a",
+      "bilan-compilation.md": "554b9d3fea397a3732e80f288e033ed6a5dc112c59a031508db928543254239e",
+      "brut.md": "6f518d96944bfbcb8994fda705a3674d378d31d5a820e2ff6e37db27293469fb",
+      "brut.pdf": "1624c5c766aab7a13a7f9e317e9685989b9cde972111f67ccb1a1130ebfb508f",
+      "guide.md": "2ac77f907e10f6593126a78752a7dd8396f11a5a25df68b4c47c9b2bb09ca085",
+      "guide.pdf": "8dd8276717f22d445add666f4282b9f1b26ebf0e1283de000f89aa7d4d313cdd",
+      "apercu.jpg": "2143e8e4524894f6542ebf3b083b14b1ba3de2f63d074fbb7b6bf0af44a1e750",
+      "extrait-lecture-arabe.png": "4dd0653fb8848b2c4e76fe04e0cb26160bc431467d0898aaf7d3f93c79d16bd5"
+    }
+  },
+  {
+    "archive": "BEL-AL-Lyon-theme-arabe-2025.zip",
+    "sha256": "da246cd764ceaf6f4cf7a58c488c3f12ff2091f46499b1fe069c466994737440",
+    "slug": "bel_al_arabe-theme-lyon_2025",
+    "commit": "2d6de5a68c0a68f8dfc2e15c022c6e4f40d5ccfa",
+    "export": {
+      "commit_contenu": "2d6de5a68c0a68f8dfc2e15c022c6e4f40d5ccfa",
+      "arbre_git_scripts_exporter": "d9e214e2cd7f30647cde097408a1703e45ed4610",
+      "origine_gabarit_commun": "25542aa1c2017bde9cd57c0f22e31d048088b536",
+      "commande": "python scripts/exporter/exporter.py --pdf bel_al_arabe-theme-lyon_2025",
+      "moteur": "LuaLaTeX, Babel, HarfBuzz, Noto Naskh Arabic",
+      "fichiers_necessaires": [
+        "brut.md",
+        "guide.md",
+        "meta.json",
+        "figures/lecture.svg"
+      ],
+      "gabarit_specifique": false
+    },
+    "contributions": [
+      {
+        "phase": "redaction",
+        "agent": "lva_pt_2325",
+        "fournisseur": "codex",
+        "modele": "gpt-6.2-astra",
+        "famille_modele": "GPT-6",
+        "effort": "ultra",
+        "vitesse": null,
+        "date": "2026-11-26",
+        "modifications": true,
+        "editions": [
+          "brut",
+          "guide"
+        ],
+        "perimetre": "Rédaction originale des deux éditions, étude du feuillet, consultation du jury, élaboration du guide et du schéma."
+      },
+      {
+        "phase": "revision",
+        "agent": "lva_pt_2325",
+        "fournisseur": "codex",
+        "modele": "gpt-6.2-astra",
+        "famille_modele": "GPT-6",
+        "effort": "ultra",
+        "vitesse": null,
+        "date": "2026-11-26",
+        "modifications": true,
+        "editions": [
+          "brut",
+          "guide"
+        ],
+        "perimetre": "Vérification du titre de vicomte, de la couleur des yeux, des deux figures féminines et de la dernière phrase, où la profondeur de pensée relève d’une impression."
+      }
+    ],
+    "couverture": {
+      "statut": "complet",
+      "questions_entierement_traitees": [
+        "Proposition de thème"
+      ],
+      "repere_par_question": [
+        {
+          "question": "Proposition de thème",
+          "page_pdf": 12,
+          "pages_pdf": [
+            12
+          ],
+          "perimetre": "De la révérence du vicomte à la dernière observation sur ses moindres paroles. Portrait et deux scènes sociales conservés."
+        }
+      ],
+      "questions_partiellement_traitees": [],
+      "questions_non_traitees": []
+    },
+    "pieces": {
+      "sujet": {
+        "url": "https://www.ens-lyon.fr/sites/default/files/2025-09/251113.pdf#page=12",
+        "sha256": "b7d09bb818f637ec169e3e81e4912858b211e06941981935364478be20cd6766",
+        "pages": 20,
+        "pages_verifiees": [
+          {
+            "numero": 1,
+            "rendu_sha256": "8ec0333bc615d21e75fd6bd8739b8ac1ac8f7527ec5d1bc38afbba95f28f63b7"
+          },
+          {
+            "numero": 2,
+            "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+          },
+          {
+            "numero": 12,
+            "rendu_sha256": "a876db7b03a0cd5191d89888025ea4b6935a3b54c672b88ddb1c8c3c21bf78bc"
+          }
+        ]
+      },
+      "rapport_jury": {
+        "url": "https://www.ens-lyon.fr/sites/default/files/2025-11/Arabe%202025%20OK%20Lyon%20RELU.pdf#page=4",
+        "sha256": "f091d06086baee7ada7cb3d37b66028a1a8b2dbe8d4b9df6ede56f11af219b60",
+        "pages": 8,
+        "pages_verifiees": [
+          {
+            "numero": 4,
+            "rendu_sha256": "2fcccc51fc3e45b7f41589568d52e7c48e150815f95836b196b8435d8cc98b7f"
+          }
+        ]
+      }
+    },
+    "arabe_sha256": "30cb05452ef0d664eac454db6f64cea142e34288374db6897c192eded0616d3e",
+    "version_sha256": null,
+    "pdf": {
+      "brut": {
+        "pages": 1,
+        "signets": [
+          [
+            1,
+            "Proposition de thème",
+            1
+          ]
+        ],
+        "nombre_signets": 1,
+        "figures": [
+          1
+        ],
+        "sha256": "403891d99a0fe4a843d8ec6cfecc39c207d75f1a1cff65c83b749e48bf723c4a",
+        "controle_arabe": {
+          "lettres_arabes_contigues": 531,
+          "paragraphes": 3,
+          "correspondance_integrale": true,
+          "signes_diacritiques_preserves": true,
+          "caracteres_lettres_et_signes": 550,
+          "nombre_signes_vocaliques_et_de_lecture": 19,
+          "types_de_signes": {
+            "ARABIC SHADDA": 8,
+            "ARABIC DAMMA": 4,
+            "ARABIC FATHA": 1,
+            "ARABIC KASRA": 1,
+            "ARABIC FATHATAN": 5
+          },
+          "polices_incorporees": [
+            "KDEOTX+NotoNaskhArabic-Regular"
+          ],
+          "glyphes_contextuels": {
+            "أ": [
+              7,
+              8,
+              9
+            ],
+            "ا": [
+              3,
+              4,
+              1565
+            ],
+            "ب": [
+              35,
+              36,
+              37,
+              38
+            ],
+            "ة": [
+              532,
+              533
+            ],
+            "ت": [
+              53,
+              54,
+              55,
+              56
+            ],
+            "ث": [
+              65,
+              66,
+              67,
+              68
+            ]
+          },
+          "lecture_geometrique": [
+            {
+              "page": 1,
+              "lignes_lues_droite_gauche": 7,
+              "pas_decroissants_min": 1.0,
+              "premiere_ligne": {
+                "debut_droite": 530.32,
+                "fin_gauche": 62.36,
+                "lettres_initiales": "انحنىالفيكونتوأ"
+              },
+              "derniere_ligne": {
+                "debut_droite": 527.81,
+                "fin_gauche": 187.66,
+                "lettres_finales": "ىأبسطكلماتهشأنا"
+              }
+            }
+          ]
+        },
+        "rendus_sha256": [
+          "727bef84233da962fa2a1a487835ef318d600c837fbd421c4cafae8ca9ddc4fa"
+        ]
+      },
+      "guide": {
+        "pages": 2,
+        "signets": [
+          [
+            1,
+            "Distinguer ce qui se voit de ce que le regard suggère",
+            1
+          ],
+          [
+            2,
+            "Garder les contrastes sociaux et l'ironie du portrait",
+            1
+          ],
+          [
+            1,
+            "Proposition de thème",
+            2
+          ]
+        ],
+        "nombre_signets": 3,
+        "figures": [
+          1
+        ],
+        "sha256": "157dcca0a429e3ff06c80e630327b4c0caad7bb55cf843cc1c7438bb46274b52",
+        "controle_arabe": {
+          "lettres_arabes_contigues": 531,
+          "paragraphes": 3,
+          "correspondance_integrale": true,
+          "signes_diacritiques_preserves": true,
+          "caracteres_lettres_et_signes": 550,
+          "nombre_signes_vocaliques_et_de_lecture": 19,
+          "types_de_signes": {
+            "ARABIC SHADDA": 8,
+            "ARABIC DAMMA": 4,
+            "ARABIC FATHA": 1,
+            "ARABIC KASRA": 1,
+            "ARABIC FATHATAN": 5
+          },
+          "polices_incorporees": [
+            "KDEOTX+NotoNaskhArabic-Regular"
+          ],
+          "glyphes_contextuels": {
+            "أ": [
+              7,
+              8,
+              9
+            ],
+            "ا": [
+              3,
+              4,
+              1565
+            ],
+            "ب": [
+              35,
+              36,
+              37,
+              38
+            ],
+            "ة": [
+              532,
+              533
+            ],
+            "ت": [
+              53,
+              54,
+              55,
+              56
+            ],
+            "ث": [
+              65,
+              66,
+              67,
+              68
+            ]
+          },
+          "lecture_geometrique": [
+            {
+              "page": 2,
+              "lignes_lues_droite_gauche": 7,
+              "pas_decroissants_min": 1.0,
+              "premiere_ligne": {
+                "debut_droite": 530.32,
+                "fin_gauche": 62.36,
+                "lettres_initiales": "انحنىالفيكونتوأ"
+              },
+              "derniere_ligne": {
+                "debut_droite": 527.81,
+                "fin_gauche": 187.66,
+                "lettres_finales": "ىأبسطكلماتهشأنا"
+              }
+            }
+          ]
+        },
+        "rendus_sha256": [
+          "6d8fa2abb2f701c84701b75867936aa49c2c72968050233733539538a7b76f21",
+          "60fa1a20db56fb5c8803a26b364d6acb97473e251fb8a239f763cdde0c5bf992"
+        ]
+      }
+    },
+    "empreintes": {
+      "meta.json": "9b5bc7460bfb64147b11c761ab07c3cddb22fd7d1272bcec3db5664d46ea1f42",
+      "figures/lecture.svg": "0867e695bf6904acfadd7b8ccdfa09e22969c7d501927facb62473e2a93160e8",
+      "bilan-compilation.md": "89b1d2928839ebb78064e6d058f9a136459638aa8487234eb3f2103f30120475",
+      "brut.md": "485209254da5a27cb3b5137c73d8f004a7a9176f19f600948c785fe67391eec6",
+      "brut.pdf": "403891d99a0fe4a843d8ec6cfecc39c207d75f1a1cff65c83b749e48bf723c4a",
+      "guide.md": "95a01e50b8010800e80f3ca72772bea8d2c13914c2a2c10f653fdacfef93c421",
+      "guide.pdf": "157dcca0a429e3ff06c80e630327b4c0caad7bb55cf843cc1c7438bb46274b52",
+      "apercu.jpg": "78d990f15ad5656ff713fb9d0819a6e71b7d1a01ddd2ee8a2edd9c3c7f7227bd",
+      "extrait-lecture-arabe.png": "c2e2e2715438df9dcd1c05544aeb6e2257bf9a2095e29a1367672f064f916414"
+    }
+  }
+]
