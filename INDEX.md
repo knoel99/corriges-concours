@@ -180,11 +180,24 @@
 | 2017 | BEL | B/L | Russe | [md](2017/bel/bel_bl_russe_2017/brut.md) | [md](2017/bel/bel_bl_russe_2017/guide.md) |
 | 2017 | BEL | BL | Sciences sociales | [md](2017/bel/bel_bl_sciences-sociales_2017/brut.md) | [md](2017/bel/bel_bl_sciences-sociales_2017/guide.md) |
 | 2011 | ENS de Lyon | PC | Physique-chimie | [md](2011/ens-de-lyon/ens-de-lyon_pc_physique-chimie_2011/brut.md) | [md](2011/ens-de-lyon/ens-de-lyon_pc_physique-chimie_2011/guide.md) |
+| 2003 | ENS de Lyon | Second concours | Mathématiques | [md](2003/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2003/brut.md) | [md](2003/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2003/guide.md) |
+| 2004 | ENS de Lyon | Second concours | Mathématiques | [md](2004/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2004/brut.md) | [md](2004/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2004/guide.md) |
 | 2005 | ENS de Lyon | Second concours | Mathématiques | [md](2005/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2005/brut.md) | [md](2005/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2005/guide.md) |
+| 2006 | ENS de Lyon | Second concours | Mathématiques | [md](2006/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2006/brut.md) | [md](2006/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2006/guide.md) |
+| 2007 | ENS de Lyon | Second concours | Mathématiques | [md](2007/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2007/brut.md) | [md](2007/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2007/guide.md) |
 | 2013 | ENS de Lyon | Second concours | Mathématiques | [md](2013/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2013/brut.md) | [md](2013/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2013/guide.md) |
 | 2014 | ENS de Lyon | Second concours | Mathématiques | [md](2014/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2014/brut.md) | [md](2014/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2014/guide.md) |
+| 2015 | ENS de Lyon | Second concours | Mathématiques | [md](2015/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2015/brut.md) | [md](2015/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2015/guide.md) |
 | 2016 | ENS de Lyon | Second concours | Mathématiques | [md](2016/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2016/brut.md) | [md](2016/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2016/guide.md) |
+| 2017 | ENS de Lyon | Second concours | Mathématiques | [md](2017/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2017/guide.md) |
+| 2018 | ENS de Lyon | Second concours | Mathématiques | [md](2018/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2018/brut.md) | [md](2018/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2018/guide.md) |
+| 2019 | ENS de Lyon | Second concours | Mathématiques | [md](2019/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2019/brut.md) | [md](2019/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2019/guide.md) |
+| 2020 | ENS de Lyon | Second concours | Mathématiques | [md](2020/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2020/brut.md) | [md](2020/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2020/guide.md) |
+| 2021 | ENS de Lyon | Second concours | Mathématiques | [md](2021/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2021/brut.md) | [md](2021/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2021/guide.md) |
 | 2022 | ENS de Lyon | Second concours | Mathématiques | [md](2022/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2022/brut.md) | [md](2022/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2022/guide.md) |
+| 2023 | ENS de Lyon | Second concours | Mathématiques | [md](2023/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2023/brut.md) | [md](2023/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2023/guide.md) |
+| 2024 | ENS de Lyon | Second concours | Mathématiques | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2024/guide.md) |
+| 2025 | ENS de Lyon | Second concours | Mathématiques | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2025/guide.md) |
 | 2017 | ENS de Lyon | Série SES (B/L) | Allemand (oral) | [md](2017/ens-de-lyon/ens-de-lyon_serie-ses-b-l_allemand-oral_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_serie-ses-b-l_allemand-oral_2017/guide.md) |
 | 2017 | ENS de Lyon | Série SES (B/L) | Anglais (oral) | [md](2017/ens-de-lyon/ens-de-lyon_serie-ses-b-l_anglais-oral_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_serie-ses-b-l_anglais-oral_2017/guide.md) |
 | 2026 | ENS de Lyon | Série SES (B/L) | Histoire contemporaine (oral) | [md](2026/ens-de-lyon/ens-de-lyon_serie-ses-b-l_histoire-contemporaine-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_serie-ses-b-l_histoire-contemporaine-oral_2026/guide.md) |
@@ -542,6 +555,16 @@
 | 2007 | ENS Rennes | D1 | Mathématiques appliquées | [md](2007/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2007/brut.md) | [md](2007/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2007/guide.md) |
 | 2008 | ENS Rennes | D1 | Mathématiques appliquées | [md](2008/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2008/brut.md) | [md](2008/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2008/guide.md) |
 | 2009 | ENS Rennes | D1 | Mathématiques appliquées | [md](2009/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2009/brut.md) | [md](2009/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2009/guide.md) |
+| 2010 | ENS Rennes | D1 | Mathématiques appliquées | [md](2010/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2010/brut.md) | [md](2010/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2010/guide.md) |
+| 2011 | ENS Rennes | D1 | Mathématiques appliquées | [md](2011/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2011/brut.md) | [md](2011/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2011/guide.md) |
+| 2012 | ENS Rennes | D1 | Mathématiques appliquées | [md](2012/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2012/brut.md) | [md](2012/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2012/guide.md) |
+| 2013 | ENS Rennes | D1 | Mathématiques appliquées | [md](2013/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2013/brut.md) | [md](2013/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2013/guide.md) |
+| 2014 | ENS Rennes | D1 | Mathématiques appliquées | [md](2014/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2014/brut.md) | [md](2014/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2014/guide.md) |
+| 2015 | ENS Rennes | D1 | Mathématiques appliquées | [md](2015/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2015/brut.md) | [md](2015/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2015/guide.md) |
+| 2016 | ENS Rennes | D1 | Mathématiques appliquées | [md](2016/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2016/brut.md) | [md](2016/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2016/guide.md) |
+| 2017 | ENS Rennes | D1 | Mathématiques appliquées | [md](2017/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2017/brut.md) | [md](2017/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2017/guide.md) |
+| 2018 | ENS Rennes | D1 | Mathématiques appliquées | [md](2018/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2018/brut.md) | [md](2018/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2018/guide.md) |
+| 2019 | ENS Rennes | D1 | Mathématiques appliquées | [md](2019/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2019/brut.md) | [md](2019/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2019/guide.md) |
 | 2019 | ENS Rennes | D1 | Russe | [md](2019/ens-rennes/ens-rennes_d1_russe_2019/brut.md) | [md](2019/ens-rennes/ens-rennes_d1_russe_2019/guide.md) |
 | 2019 | ENS de Lyon | Séries LA/LV/SH (A/L) | Épreuve de spécialité version grecque (écrit) | [md](2019/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_epreuve-de-specialite-version-grecque-ecrit_2019/brut.md) | [md](2019/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_epreuve-de-specialite-version-grecque-ecrit_2019/guide.md) |
 | 2019 | BEL | AL | Allemand (thème Lyon) | [md](2019/bel/bel_al_allemand-theme-lyon_2019/brut.md) | [md](2019/bel/bel_al_allemand-theme-lyon_2019/guide.md) |
@@ -1792,6 +1815,7 @@
 | 2024 | X-ENS | MP | Informatique A | [md](2024/x-ens/x-ens_mp_informatique-a_2024/brut.md) | [md](2024/x-ens/x-ens_mp_informatique-a_2024/guide.md) |
 | 2025 | X-ENS | MP | Informatique A | [md](2025/x-ens/x-ens_mp_informatique-a_2025/brut.md) | [md](2025/x-ens/x-ens_mp_informatique-a_2025/guide.md) |
 | 2026 | X-ENS | MP | Informatique A | [md](2026/x-ens/x-ens_mp_informatique-a_2026/brut.md) | [md](2026/x-ens/x-ens_mp_informatique-a_2026/guide.md) |
+| 2011 | X-ENS | MP | Maths A | [md](2011/x-ens/x-ens_mp_maths-a_2011/brut.md) | [md](2011/x-ens/x-ens_mp_maths-a_2011/guide.md) |
 | 2012 | X-ENS | MP | Maths A | [md](2012/x-ens/x-ens_mp_maths-a_2012/brut.md) | [md](2012/x-ens/x-ens_mp_maths-a_2012/guide.md) |
 | 2013 | X-ENS | MP | Maths A | [md](2013/x-ens/x-ens_mp_maths-a_2013/brut.md) | [md](2013/x-ens/x-ens_mp_maths-a_2013/guide.md) |
 | 2014 | X-ENS | MP | Maths A | [md](2014/x-ens/x-ens_mp_maths-a_2014/brut.md) | [md](2014/x-ens/x-ens_mp_maths-a_2014/guide.md) |
