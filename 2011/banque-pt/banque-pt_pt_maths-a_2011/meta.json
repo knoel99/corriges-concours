@@ -1,0 +1,168 @@
+{
+  "slug": "banque-pt_pt_maths-a_2011",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths A",
+    "annee": 2011
+  },
+  "questions": 21,
+  "redaction": "Corrigés non officiels rédigés et vérifiés par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2011/math_a_pt_2011.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2011/rapport_math_a_ecrit_2011.pdf",
+    "livret": "https://www.banquept.fr/documents/livret/2011/Livret_PT_2011.pdf#page=13",
+    "sha256_sujet": "d303187558bd6e59479cae4c3fbbb79bfe4a242aecb4e8d881d16c017e340af4",
+    "pages_sujet": 3,
+    "sha256_rapport_jury": "284841bbdd2a9cf83c94d72de99bfeda81882d97353627ab35fe6fe22fc07c3d",
+    "pages_rapport_jury": 2,
+    "sha256_livret": "f9cd26395e9749f34a6ba265a7ac7f313e4550c3ab2d4fca547d3d492498f219",
+    "pages_livret": 73,
+    "coefficients_admissibilite": {
+      "ENS Cachan": 3,
+      "École polytechnique": 6
+    }
+  },
+  "figures": [
+    {
+      "question": "B.9",
+      "fichier": "figures/racines-de-l-unite.svg",
+      "legende": "Racines de l’unité apparaissant dans les six polynômes possibles. L’ordre d’une matrice diagonalisable est le PPCM des ordres de ses racines."
+    },
+    {
+      "question": "C.3.d",
+      "fichier": "figures/polynomes-orthonormaux.svg",
+      "legende": "Les quatre polynômes orthonormaux sur l’intervalle de référence. Chacun atteint son maximum en 1."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A.1",
+      "A.2",
+      "A.3",
+      "A.4",
+      "B.1",
+      "B.2",
+      "B.3",
+      "B.4",
+      "B.5",
+      "B.6",
+      "B.7",
+      "B.8",
+      "B.9",
+      "B.10",
+      "C.1",
+      "C.2",
+      "C.3.a",
+      "C.3.b",
+      "C.3.c.i",
+      "C.3.c.ii",
+      "C.3.d"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": "A.1",
+        "page_sujet": 1
+      },
+      {
+        "question": "A.2",
+        "page_sujet": 1
+      },
+      {
+        "question": "A.3",
+        "page_sujet": 1
+      },
+      {
+        "question": "A.4",
+        "page_sujet": 2
+      },
+      {
+        "question": "B.1",
+        "page_sujet": 2
+      },
+      {
+        "question": "B.2",
+        "page_sujet": 2
+      },
+      {
+        "question": "B.3",
+        "page_sujet": 2
+      },
+      {
+        "question": "B.4",
+        "page_sujet": 2
+      },
+      {
+        "question": "B.5",
+        "page_sujet": 2
+      },
+      {
+        "question": "B.6",
+        "page_sujet": 2
+      },
+      {
+        "question": "B.7",
+        "page_sujet": 2
+      },
+      {
+        "question": "B.8",
+        "page_sujet": 2
+      },
+      {
+        "question": "B.9",
+        "page_sujet": 2
+      },
+      {
+        "question": "B.10",
+        "page_sujet": 2
+      },
+      {
+        "question": "C.1",
+        "page_sujet": 3
+      },
+      {
+        "question": "C.2",
+        "page_sujet": 3
+      },
+      {
+        "question": "C.3.a",
+        "page_sujet": 3
+      },
+      {
+        "question": "C.3.b",
+        "page_sujet": 3
+      },
+      {
+        "question": "C.3.c.i",
+        "page_sujet": 3
+      },
+      {
+        "question": "C.3.c.ii",
+        "page_sujet": 3
+      },
+      {
+        "question": "C.3.d",
+        "page_sujet": 3
+      }
+    ],
+    "precision": "Toutes les questions des parties A, B et C sur les trois pages du fac-similé, y compris les deux demandes de C.2 et les deux étapes de C.3.c."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modifications": true,
+      "perimetre": "Résolution depuis les trois feuillets imprimés et relecture suivant le rapport. Vérification des dix polynômes caractéristiques, des six cas permis et de l’exposant minimal. Calcul exact de la matrice de Gram, des extrema des polynômes et du cas d’égalité."
+    }
+  ]
+}
