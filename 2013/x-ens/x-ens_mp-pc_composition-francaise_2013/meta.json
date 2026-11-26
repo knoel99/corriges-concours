@@ -59,6 +59,34 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Rédaction de la dissertation sur le passage de Valère Novarina, confrontation des trois œuvres, vérification de la garde, du programme prescrit, du rapport commun MP-PC et des passages cités. Ajout d’une préparation guidée et d’un schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Verlaine, « Spleen », Romances sans paroles, mouvement de l’adresse et lien sonore entre « rouges » et « bouges ». Distinction entre transmettre une information et faire jouer les mots. Comparaison au sujet original et au rapport. Relecture des trois mouvements et de la conclusion dans les deux éditions."
     }
-  ]
+  ],
+  "gabarit": "dissertation",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "La parole, la respiration et le jeu"
+    ],
+    "pages_du_sujet": 1,
+    "pages_pdf_des_questions": {
+      "La parole, la respiration et le jeu": 1
+    },
+    "precision": "Dissertation unique de quatre heures sur la citation de Novarina, au regard des trois œuvres prescrites. Le repère est un intitulé éditorial. La consigne imprimée se trouve page 1. Rapport du jury, pages 1 à 6."
+  }
 }

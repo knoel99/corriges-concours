@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Sujet de la composition
 
 *Filières MP et PC · XEULCR · quatre heures.*
@@ -31,6 +33,8 @@ Bergson lui-même permet d’accorder une part de vérité à la discontinuité.
 ![Figure 1 — Que reste-t-il entre deux battements ?](figures/experiences.svg)
 
 Imaginons avec Bergson que je veuille compter les oscillations du pendule. Si je garde seulement sous les yeux la position actuelle, chaque oscillation est la première. Si je les représente toutes à la fois sous la forme d’une rangée de marques, je dispose d’un total, mais je regarde des marques simultanées. Pour que je puisse dire « encore une », il faut que je sois modifié par les oscillations déjà perçues. Le chapitre II nomme durée cette manière de conserver les états antérieurs dans l’état qui se forme. L’exemple de la mélodie permet de l’entendre. Une note prolongée au-delà de ce que j’attendais change le caractère de toute la phrase musicale. Le son physiquement passé s’est tu. Il agit cependant dans ma façon de recevoir ce qui vient. Bachelard pouvait retrancher au passé sa présence actuelle. Le mot de « néant » va plus loin en lui retirant jusqu’à cette efficacité.
+
+Au début de *Mrs Dalloway*, Big Ben donne à Londres une heure commune. La première résonance et les coups qui lui succèdent n’occupent pourtant pas le même instant. Pour reconnaître une sonnerie, il faut entendre le son actuel comme la suite d’un autre qui s’est déjà tu. La remarque de Bergson sur les notes de musique permet de préciser ce que le récit de Woolf fait éprouver : le passé peut avoir cessé de résonner dans la rue tout en entrant dans la qualité de ce que Clarissa entend à présent. Il serait donc insuffisant d’objecter simplement à Bachelard que la cloche sonne longtemps. Une succession de points juxtaposés peut aussi s’étendre sur plusieurs secondes. La véritable difficulté est que l’instant de la reconnaissance contient une relation avec ce qui n’est déjà plus donné comme son. Peut-on encore nommer « néant » cette absence qui contribue à la présence actuelle ?
 
 L’ouverture de *Mrs Dalloway* demande au lecteur une expérience analogue. Un matin de juin, Clarissa sort acheter des fleurs. Dans le plaisir de s’élancer au-dehors se retrouve le mouvement qui la faisait ouvrir les portes-fenêtres à Bourton. Woolf ne commence pas par établir deux fiches datées pour souligner ensuite leur ressemblance. Le mouvement de la phrase nous a déjà portés de l’air londonien à la fraîcheur de la campagne lorsque nous comprenons que les lieux et les âges ont changé. Le matin d’autrefois n’est ni une scène disponible tout entière ni un écran qui cacherait Londres. Il donne à l’impulsion présente sa qualité singulière. Un autre passant peut trouver l’air aussi vif sur ses joues. Il ne vit pas la même sortie, parce qu’il n’arrive pas à ce seuil avec la même histoire.
 

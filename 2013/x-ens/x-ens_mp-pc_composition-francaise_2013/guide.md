@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Sujet de la composition
 
 *Filières MP et PC · XEULC · quatre heures.*
@@ -26,6 +28,8 @@ Vous commenterez ces propos du dramaturge Valère Novarina (né en 1947) en vous
 
 **Relire les transitions.** Vérifiez que vous êtes passé du plaisir de varier au pouvoir de conduire quelqu’un, puis à la possibilité de lui rendre l’initiative. Un paragraphe sur l’animal ou sur l’histoire générale du langage risque de briser cette progression. Le rapport commun aux deux filières demande de suivre les deux images finales et de faire travailler les trois œuvres sans réserver artificiellement la solution au seul texte de Platon.
 
+**Exercice de lecture comparée.** Dans « Spleen », relevez ce qui se répond dans « rouges » et « bouges ». Le premier mot permet de décrire une scène ; de qui le mouvement devient-il possible dans le second ? Remplacez le quatrain par la simple annonce d’une inquiétude amoureuse. En précisant ce que la paraphrase transmet encore et ce qu’elle efface, vous pourrez donner au mot « jeu » chez Novarina une portée distincte du divertissement.
+
 ## Introduction
 
 Il y a tout ce qu’il faut sur la table pour écrire le billet qu’Araminte dicte à Dorante. Il manque pourtant à cet excellent secrétaire la faculté de voir le papier qu’il a sous les yeux. À l’annonce du mariage de sa maîtresse, sa main se met à trembler. Les mots de la dictée arriveront peut-être intacts au destinataire. Mais la scène des *Fausses Confidences* se joue entre celle qui parle et celui qui écrit. Or que passe-t-il entre eux, si l’essentiel tient dans ce qui trouble la transmission ? Valère Novarina, dans *Le Théâtre des paroles*, s’autorise de l’efficacité même de la communication animale pour retirer à la parole sa définition la plus familière. On admet volontiers qu’elle fasse passer l’idée du locuteur dans l’esprit de l’auditeur. Le dramaturge entend dans cette image la prétention de disposer de ce que l’on dit comme d’un liquide qu’il suffirait de verser. Il lui oppose deux activités, respirer et jouer. On respire pour vivre, on joue pour le plaisir et au risque de ce qui peut arriver. Cependant, qui prend la parole s’adresse à quelqu’un et peut se voir demander compte de ce qu’il a dit. Comment le mouvement propre de la parole peut-il atteindre autrui sans que le sens ait été tout formé avant l’échange ? Le *Phèdre* de Platon, la comédie de Marivaux et les *Romances sans paroles* de Verlaine permettront de prendre au sérieux cette dépense vivante, d’en éprouver le pouvoir parfois inquiétant et de chercher à quelles conditions quelqu’un peut y répondre.
@@ -33,6 +37,8 @@ Il y a tout ce qu’il faut sur la table pour écrire le billet qu’Araminte di
 ## Ce qui se produit quand une voix s’élève
 
 Dans la troisième des « Ariettes oubliées », le changement d’un son fait surgir un événement dont on chercherait en vain la cause dans le récit. « Il pleure dans mon cœur / Comme il pleut sur la ville ». Le lecteur entend la pluie avant de pouvoir décider qui pleure. Le premier « il » emprunte au second l’allure impersonnelle du bulletin météorologique. Le cœur a un possesseur, « mon », mais celui-ci paraît aussi surpris que quiconque de ce qui l’habite. Un énoncé traduisible par « je suis triste parce que… » fournirait une information sur une personne. La voix de l’ariette se découvre au contraire en reprenant, en déplaçant et en questionnant les sons qu’elle vient de prononcer. Respirer désigne ici un rapport du sujet à sa propre parole. Il se donne du temps pour éprouver ce qu’un jugement immédiat sur son humeur lui aurait caché.
+
+Dans « Spleen », un des poèmes des *Romances sans paroles*, une description de couleurs se transforme en adresse. Après le rouge des roses et le noir du lierre, le mot « Chère » fait surgir quelqu’un à qui le poème parle. La reprise sonore de « rouges » par « bouges » relie une couleur au plus léger mouvement de cette personne. Nous pourrions apprendre par une notice que celui qui parle craint de voir partir celle qu’il aime. Le poème nous fait éprouver cette crainte d’une autre façon. Le déplacement presque imperceptible de la destinataire suffit à faire basculer le paysage entier, alors même qu’aucune de ses couleurs n’a changé. Le jeu sonore fait ainsi davantage que rendre plaisante une information déjà prête. Il laisse apparaître la relation qui donnait à ces perceptions leur importance et qui permet enfin de comprendre pour qui elles comptent.
 
 Ce temps s’inscrit sur le corps. Dans la dictée de Marivaux, Araminte distingue très bien deux usages d’une même phrase. « Votre mariage est sûr » ferait une excellente nouvelle pour le comte. À celui qui doit lui écrire, elle coupe presque le souffle. L’actrice peut lancer la proposition, laisser au silence de Dorante le temps de s’installer, puis reprendre les mots d’un ton presque professionnel. C’est cette différence de rythme qui permet d’entendre son impatience à elle. En aparté, elle constate que son cœur bat. On croyait observer un secrétaire pris en défaut. Le spectateur découvre qu’ordonner, attendre et relancer exposent aussi la personne qui mène l’épreuve. Si deux interprètes débitaient les seules informations du billet, ils escamoteraient ce que la scène nous apprend d’eux.
 

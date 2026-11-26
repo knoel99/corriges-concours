@@ -58,6 +58,34 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Rédaction de la dissertation sur le passage de Gaston Bachelard, confrontation des trois œuvres, vérification de la garde, du programme prescrit, du rapport commun MP-PC et des passages cités. Ajout d’une préparation guidée et d’un schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Woolf, Mrs Dalloway, première sonnerie de Big Ben, confrontée à la rétention de la phrase mélodique chez Bergson et au néant entre les instants chez Bachelard. Comparaison au sujet original et au rapport. Relecture des trois mouvements et de la conclusion dans les deux éditions."
     }
-  ]
+  ],
+  "gabarit": "dissertation",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "L’instant, la durée et les deux néants"
+    ],
+    "pages_du_sujet": 1,
+    "pages_pdf_des_questions": {
+      "L’instant, la durée et les deux néants": 1
+    },
+    "precision": "Dissertation unique de quatre heures sur la citation de Bachelard, au regard des trois œuvres prescrites. Le repère est un intitulé éditorial. La consigne imprimée se trouve page 1. Rapport du jury, pages 1 à 10."
+  }
 }

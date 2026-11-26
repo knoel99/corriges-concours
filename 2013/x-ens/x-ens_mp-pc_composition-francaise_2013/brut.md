@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Sujet de la composition
 
 *Filières MP et PC · XEULC · quatre heures.*
@@ -21,6 +23,8 @@ Il y a tout ce qu’il faut sur la table pour écrire le billet qu’Araminte di
 ## Ce qui se produit quand une voix s’élève
 
 Dans la troisième des « Ariettes oubliées », le changement d’un son fait surgir un événement dont on chercherait en vain la cause dans le récit. « Il pleure dans mon cœur / Comme il pleut sur la ville ». Le lecteur entend la pluie avant de pouvoir décider qui pleure. Le premier « il » emprunte au second l’allure impersonnelle du bulletin météorologique. Le cœur a un possesseur, « mon », mais celui-ci paraît aussi surpris que quiconque de ce qui l’habite. Un énoncé traduisible par « je suis triste parce que… » fournirait une information sur une personne. La voix de l’ariette se découvre au contraire en reprenant, en déplaçant et en questionnant les sons qu’elle vient de prononcer. Respirer désigne ici un rapport du sujet à sa propre parole. Il se donne du temps pour éprouver ce qu’un jugement immédiat sur son humeur lui aurait caché.
+
+Dans « Spleen », un des poèmes des *Romances sans paroles*, une description de couleurs se transforme en adresse. Après le rouge des roses et le noir du lierre, le mot « Chère » fait surgir quelqu’un à qui le poème parle. La reprise sonore de « rouges » par « bouges » relie une couleur au plus léger mouvement de cette personne. Nous pourrions apprendre par une notice que celui qui parle craint de voir partir celle qu’il aime. Le poème nous fait éprouver cette crainte d’une autre façon. Le déplacement presque imperceptible de la destinataire suffit à faire basculer le paysage entier, alors même qu’aucune de ses couleurs n’a changé. Le jeu sonore fait ainsi davantage que rendre plaisante une information déjà prête. Il laisse apparaître la relation qui donnait à ces perceptions leur importance et qui permet enfin de comprendre pour qui elles comptent.
 
 Ce temps s’inscrit sur le corps. Dans la dictée de Marivaux, Araminte distingue très bien deux usages d’une même phrase. « Votre mariage est sûr » ferait une excellente nouvelle pour le comte. À celui qui doit lui écrire, elle coupe presque le souffle. L’actrice peut lancer la proposition, laisser au silence de Dorante le temps de s’installer, puis reprendre les mots d’un ton presque professionnel. C’est cette différence de rythme qui permet d’entendre son impatience à elle. En aparté, elle constate que son cœur bat. On croyait observer un secrétaire pris en défaut. Le spectateur découvre qu’ordonner, attendre et relancer exposent aussi la personne qui mène l’épreuve. Si deux interprètes débitaient les seules informations du billet, ils escamoteraient ce que la scène nous apprend d’eux.
 

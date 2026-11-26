@@ -62,6 +62,34 @@
       "modifications": true,
       "perimetre": "Rédaction de la dissertation sur le passage de Paul Ricœur, confrontation des trois œuvres, vérification de la garde, du programme prescrit, du rapport commun MP-PC et des passages cités. Ajout d’une préparation guidée et d’un schéma. Rédaction initiale de la copie et du guidage par oraux_lyon, vérification et mise en forme par lettres_dissertations_suite.",
       "collaboration": "oraux_lyon"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Pascal, premier Discours sur la condition des Grands, le naufragé et la reconnaissance du roi. Comparaison entre l’émotion devant l’injustice et ce que la connaissance de l’origine d’un rang permet de discerner. Comparaison au sujet original et au rapport. Relecture des trois mouvements et de la conclusion dans les deux éditions."
     }
-  ]
+  ],
+  "gabarit": "dissertation",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Le sens de l’injustice et le sens de la justice"
+    ],
+    "pages_du_sujet": 1,
+    "pages_pdf_des_questions": {
+      "Le sens de l’injustice et le sens de la justice": 1
+    },
+    "precision": "Dissertation unique de quatre heures sur la citation de Ricœur, au regard des trois œuvres prescrites. Le repère est un intitulé éditorial. La consigne imprimée se trouve page 1. Rapport du jury, pages 1 à 6."
+  }
 }
