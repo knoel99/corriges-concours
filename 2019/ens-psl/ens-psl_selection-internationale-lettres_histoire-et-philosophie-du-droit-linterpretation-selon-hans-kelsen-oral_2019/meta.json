@@ -1,0 +1,61 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire-et-philosophie-du-droit-linterpretation-selon-hans-kelsen-oral_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire et philosophie du droit — l’interprétation selon Hans Kelsen (oral)",
+    "annee": 2019,
+    "modalite": "oral"
+  },
+  "intitule": "Commenter le passage de Hans Kelsen, *Théorie pure du droit*, deuxième édition allemande de 1960, traduction française de Charles Eisenmann (1962), sur l’interprétation par la science juridique et par les organes de l’ordre juridique.",
+  "gabarit": "oral",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://web.archive.org/web/20240802144158id_/https://www.ens.psl.eu/sites/default/files/droit.pdf",
+    "sujet_sha256": "72fcfa5d57d231c53361e75cb03bb427a8e6b74b3fdf566a2583badd790a3c99",
+    "index": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2019-lettres",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://web.archive.org/web/20240802144158id_/https://www.ens.psl.eu/sites/default/files/droit.pdf",
+        "url_ens": "https://www.ens.psl.eu/sites/default/files/droit.pdf",
+        "sha256": "72fcfa5d57d231c53361e75cb03bb427a8e6b74b3fdf566a2583badd790a3c99",
+        "pages": 1
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "Trois fonctions à distinguer chez Kelsen pour analyser une même controverse d’interprétation."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire de tous les mouvements du feuillet, dont les lacunes, l’avocat, la fiction d’univocité et la sécurité juridique."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire"
+    ],
+    "limites": "Commentaire d’un passage de la Théorie pure du droit distinguant l’interprétation par les organes juridiques et par la science juridique."
+  }
+}
