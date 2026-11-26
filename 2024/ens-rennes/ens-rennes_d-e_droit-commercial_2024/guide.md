@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Préparer le commentaire
 
 Tracez deux lignes parallèles. Sur la première, placez le vendeur, l’acheteur et les 8 000 euros de la cession. Sur la seconde, placez le dirigeant, la société et les deux votes de rémunération. Qui peut devoir le prix ? L’acquéreur. Qui peut devoir la prime ? La société. Cette séparation permet de comprendre pourquoi la société et le nouveau dirigeant se retrouvent tous deux auteurs du pourvoi, alors que le demandeur initial sollicitait le paiement de la société.
@@ -45,6 +47,10 @@ Pour la société et le cessionnaire, la rupture d’égalité aurait dû s’ap
 
 **B. Les remèdes éventuels dépendent du droit lésé et de ses preuves.** Si la société établissait une faute de gestion imputable à un dirigeant, un préjudice propre et leur lien, la réparation répondrait à une autre question que l’effacement d’une résolution pour abus de majorité. Si un associé alléguait avoir subi une contrainte, la preuve devrait porter sur la formation de son vote. Rien dans les constatations reproduites ne permet de tenir ces hypothèses pour acquises. Le cessionnaire, quant à lui, a reçu des titres après les assemblées. L’acte définitif mentionnait la prime de 83 000 euros, ce qui éclaire sa position contractuelle sans transformer son information en motif du rejet. La dette de rémunération est celle de la société et le prix de cession lie les parties à la vente. Cette différence de débiteur explique à la fois l’importance économique du procès pour l’acquéreur et la difficulté de le gagner par la seule technique de l’abus de majorité.
 
+La confrontation des paragraphes 6 à 8 indique ce que contrôle la Cour de cassation. La thèse d’une rupture d’égalité appréciée indépendamment du vote est formulée au paragraphe 6 par la société et le cessionnaire. Le paragraphe 7 énonce la règle contraire, puis le paragraphe 8 en déduit le rejet du moyen. La Cour peut ainsi conclure sans évaluer elle-même les services rendus au regard du montant des primes.
+
 La brièveté du paragraphe 7 donne ainsi une limite nette à une construction prétorienne. Le consentement de tous ferme la voie reposant sur l’emploi de la majorité contre une minorité. Le risque que tous s’entendent aux dépens du patrimoine commun appelle, s’il est établi, une qualification et une action propres.
 
-[Sujet officiel](https://www.ens-rennes.fr/medias/fichier/sujet-epr-a-options-droit-com-droit-public-maths-d-e-2024_1729180742250-pdf#page=2) · [Rapport du jury](https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-droit-commercial-d-e-2024_1742461518426-pdf) · [Arrêt du 8 novembre 2023](https://www.courdecassation.fr/decision/654b34fd56298f8318387897) · [Premier arrêt du 13 janvier 2021](https://www.legifrance.gouv.fr/juri/id/JURITEXT000043045907)
+[Sujet officiel](https://www.ens-rennes.fr/medias/fichier/sujet-epr-a-options-droit-com-droit-public-maths-d-e-2024_1729180742250-pdf#page=2) · [Rapport du jury](https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-droit-commercial-d-e-2024_1742461518426-pdf) · [Premier arrêt du 13 janvier 2021](https://www.legifrance.gouv.fr/juri/id/JURITEXT000043045907)
+
+[Cour de cassation, 8 novembre 2023](https://www.legifrance.gouv.fr/juri/id/JURITEXT000048389667)

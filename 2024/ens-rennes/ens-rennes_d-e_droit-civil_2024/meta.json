@@ -23,12 +23,18 @@
     "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-droit-civil-2024_1742461531899-pdf",
     "rapport_sha256": "b2b6edf63fab73e0de4f6eb43f4ac5f02589ace0415701ea71835a26fa040ccb",
     "references": [
-      "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032041283/2024-05-15",
+      "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032041283/2024-04-16",
       "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000019017155/",
       "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006441437",
       "https://www.legifrance.gouv.fr/juri/id/JURITEXT000028098845",
-      "https://www.legifrance.gouv.fr/juri/id/JURITEXT000024549720"
-    ]
+      "https://www.legifrance.gouv.fr/juri/id/JURITEXT000024549720",
+      "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000019017404/2024-04-16",
+      "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000019017412/2024-04-16"
+    ],
+    "notice_interens": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/CONCOURS_2024/Notice_interENS_2024_Version_site_internet_06032024.pdf",
+    "notice_sha256": "848def29e5374305aff7a6bbd75152a37756988a49f45b1b8f8a69b0c32a223e",
+    "sujet_exemplaire_lu_sha256": "c4fc176fd4745385a1e36053e926ecfceb0643b061283c84316ea1540dec01c7",
+    "rapport_exemplaire_lu_sha256": "503f1a65b5091e81bc988acaf4ec52c6cb13321fd72c69a04f40d512f8489395"
   },
   "figures": [
     {
@@ -37,7 +43,7 @@
       "legende": "De quoi l’acheteur tient-il son droit ?"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "lecture_rapport_jury",
@@ -74,6 +80,41 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Confrontation des qualifications et exemples au feuillet, au rapport et aux textes ou décisions cités. Contrôle croisé des empreintes d’aperçu et du registre des originaux."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "fui_physique_un",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Consigne unique et quatre axes : Vente de la chose d’autrui et qualité pour invoquer la nullité, Deux acquéreurs successifs et article 1198, Dépossession volontaire, vol ou perte et revendication mobilière, Possession immobilière, juste titre et apparence. Confrontation au sujet, aux sources de droit et au rapport institutionnel de l’écrit."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "precision": "La garde donne une composition unique de quatre heures. Les deux éditions traitent la totalité de cette consigne. Les axes de lecture décrivent la rédaction pédagogique.",
+    "questions_entierement_traitees": [
+      "Composition"
+    ],
+    "intitule_officiel": "L’acquisition d’un bien vendu par un non-propriétaire",
+    "pages_pdf_sujet": [
+      1
+    ],
+    "date_epreuve": "2024-04-16",
+    "items_verifies": [
+      "Vente de la chose d’autrui et qualité pour invoquer la nullité",
+      "Deux acquéreurs successifs et article 1198",
+      "Dépossession volontaire, vol ou perte et revendication mobilière",
+      "Possession immobilière, juste titre et apparence"
+    ]
+  }
 }

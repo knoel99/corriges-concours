@@ -24,8 +24,13 @@
     "rapport_sha256": "1ac2e8a58c634e0da423f28dc02b0a1e423a422e22331bb4a2ee07aa768aa38c",
     "references": [
       "https://www.courdecassation.fr/decision/654b34fd56298f8318387897",
-      "https://www.legifrance.gouv.fr/juri/id/JURITEXT000043045907"
-    ]
+      "https://www.legifrance.gouv.fr/juri/id/JURITEXT000043045907",
+      "https://www.legifrance.gouv.fr/juri/id/JURITEXT000048389667"
+    ],
+    "notice_interens": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/CONCOURS_2024/Notice_interENS_2024_Version_site_internet_06032024.pdf",
+    "notice_sha256": "848def29e5374305aff7a6bbd75152a37756988a49f45b1b8f8a69b0c32a223e",
+    "sujet_exemplaire_lu_sha256": "495f4a777b2fdaa40d66684ab2f96d0a98cd519a81704dfd24d73d9321f5f7b8",
+    "rapport_exemplaire_lu_sha256": "765b6db4faa843cbc05f5c27d111db509ae1b79fda79b8dbe02ba7798e34adee"
   },
   "figures": [
     {
@@ -34,7 +39,7 @@
       "legende": "Qui a voté, qui doit payer ?"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "lecture_rapport_jury",
@@ -71,6 +76,43 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Confrontation des deux éditions aux pages du sujet, au rapport du jury et aux références primaires. Empreintes des aperçus vérifiées séparément des empreintes des originaux institutionnels."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "fui_physique_un",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Consigne unique et quatre axes : Deux primes avant la vente des titres, créancier et débiteur, Première cassation et arrêt de renvoi, Proposition du moyen (§ 6), règle et rejet (§§ 7–8), Distinction entre l’abus de majorité, le consentement et une faute de gestion. Confrontation au sujet, aux sources de droit et au rapport institutionnel de l’écrit."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "precision": "La garde donne une composition unique de quatre heures. Les deux éditions traitent la totalité de cette consigne. Les axes de lecture décrivent la rédaction pédagogique.",
+    "questions_entierement_traitees": [
+      "Composition"
+    ],
+    "intitule_officiel": "Commentez la décision suivante — Cass. com., 8 nov. 2023, n° 22-13.851",
+    "pages_pdf_sujet": [
+      2,
+      3,
+      4
+    ],
+    "date_epreuve": "2024-04-17",
+    "items_verifies": [
+      "Deux primes avant la vente des titres, créancier et débiteur",
+      "Première cassation et arrêt de renvoi",
+      "Proposition du moyen (§ 6), règle et rejet (§§ 7–8)",
+      "Distinction entre l’abus de majorité, le consentement et une faute de gestion"
+    ]
+  }
 }
