@@ -1,0 +1,61 @@
+{
+  "slug": "ens-de-lyon_series-la-lv-sh-a-l_polonais-oral_2017",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries LA/LV/SH (A/L)",
+    "matiere": "Polonais (oral)",
+    "annee": 2017,
+    "modalite": "oral"
+  },
+  "intitule": "Sofonisba Anguissola dans la chronique d’Aleksandra Zbroja",
+  "questions": 1,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Analyse LV2"
+    ],
+    "precision": "La liste et le rapport identifient un seul texte effectivement distribué en polonais, dans la série Langues vivantes, en LV2. Le feuillet conservé reproduit les deux colonnes, les cinq intertitres, la reproduction du tableau et la dernière phrase de la chronique ainsi que la date du périodique. Les deux éditions traitent l’ensemble de ce support. Les relances du guidé sont proposées pour l’entraînement."
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/polonais-hors-programme2017_1506589002124.pdf",
+    "sujet_sha256": "e1120f1d3cdb0f4d6c6afdd3c112b6c92d525efb2f2d3cf9cb2a48470a69d5aa",
+    "liste_officielle": "https://www.ens-lyon.fr/sites/default/files/2017-11/polonais-2017_1506588363924.pdf",
+    "liste_sha256": "4d68eab785b9cd48fccf5e56e0258cb5e33fd20110362cd677cece707ceba38a",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/POLONAIS_2017.pdf",
+    "rapport_sha256": "16e6f870aa64f2a5cbd3b141b75e27e904f88845b35b767e1788ac25c7a55423",
+    "pages_sujet": "PDF d’une page, page 6 du périodique",
+    "precision": "Analyse LV2 d’un texte hors programme. Aleksandra Zbroja, Wysokie Obcasy, 23 juillet 2016. Les séries Lettres et arts et Sciences humaines n’ont présenté aucun candidat."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Analyse LV2",
+      "fichier": "figures/nauka.svg",
+      "legende": "Les apprentissages circulent dans la famille avant que le revenu de cour ne lui revienne en partie."
+    },
+    {
+      "numero": 2,
+      "question": "Analyse LV2",
+      "fichier": "figures/portret.svg",
+      "legende": "L’auteur du tableau, le peintre représenté et la personne peinte occupent trois places distinctes."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "fin_langues_x_interens",
+      "session": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Lecture du fac-similé complet, exposé en polonais, analyse de la mise en page, du damier, des autoportraits et de la chute sur l’exposition de Varsovie, relances et deux figures explicatives.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}
