@@ -1,0 +1,76 @@
+{
+  "slug": "ens_groupes-c-s-m-et-i_informatique_1997",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "Groupes C/S, M et I",
+    "matiere": "Informatique",
+    "annee": 1997
+  },
+  "intitule": "Formes arborescentes, registres et mots",
+  "questions": 25,
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "reprise_physique_ulm",
+      "session": "reprise_physique_ulm",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Résolution des 25 questions énumérées et réalisation de 2 figures."
+    }
+  ],
+  "sources": {
+    "sujet": "https://info.faidherbe.org/~informatique/Oldies/pdf/option/ds1%2B_mp1_sujet.pdf",
+    "sujet_sha256": "3cf87338d67f64792469fb65a6ab8add66b189b2f3ebd193b1cc327e31bcdd0b",
+    "garde": "Le cahier de dix pages nomme les groupes C/S, M et I. L’ENS de Paris et l’ENS de Lyon partagent cette épreuve de quatre heures sur les formes arborescentes. Le fac-similé est conservé au lycée Faidherbe.",
+    "controle_pedagogique_Genoud": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-fc0455f7c01a5912a892",
+    "controle_pedagogique_Éric Détrez": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-65d0b025bfd3720614c2"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "15 à 17",
+      "fichier": "figures/expression.svg",
+      "legende": "Arbre syntaxique de W et sa forme retournée. Les nombres sur la forme sont les épaisseurs calculées depuis les feuilles."
+    },
+    {
+      "numero": 2,
+      "question": "21 et 23",
+      "fichier": "figures/automates.svg",
+      "legende": "Automates des axes marqués et des peignes. Un double cercle désigne l’acceptation. Les transitions absentes rejettent."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25"
+    ]
+  }
+}
