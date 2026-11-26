@@ -1,0 +1,37 @@
+question	controle	valeur	reference	unite	resultat
+I-1-b	Fréquence de raie par analyse de Fourier	440	440	Hz	réussi
+I-1-b	Amplitude de la raie du produit normalisé	0.5	0.5	1	réussi
+I-1-b	Fréquence de raie par analyse de Fourier	160440	160440	Hz	réussi
+I-1-b	Amplitude de la raie du produit normalisé	0.5	0.5	1	réussi
+I-6-b	Coupure pour 3,3 kΩ et 10 nF	4822.87706339	4822.88	Hz	réussi
+I-6-b	Gain du diviseur à 440 Hz	0.995864174513	0.99586	1	réussi
+I-6-b	Gain du diviseur à 160440 Hz	0.0300467433852	0.03005	1	réussi
+I-8	Étendue entre 40 Hz et 1760 Hz	5.45943161864	5.45943	octave	réussi
+II-A-4-b	Largeur à mi-puissance pour Q=0.5	2	2	1	réussi
+II-A-4-b	Produit des coupures réduites pour Q=0.5	1	1	1	réussi
+II-A-4-b	Largeur à mi-puissance pour Q=9.5	0.105263157895	0.105263157895	1	réussi
+II-A-4-b	Produit des coupures réduites pour Q=9.5	1	1	1	réussi
+II-A-5	Écart entre réponses complexes pour ωRC=0.25	2.77555756156e-17	0	1	réussi
+II-A-5	Écart entre réponses complexes pour ωRC=1	0	0	1	réussi
+II-A-5	Écart entre réponses complexes pour ωRC=2	5.55111512313e-17	0	1	réussi
+II-A-5	Écart entre réponses complexes pour ωRC=5	2.77555756156e-17	0	1	réussi
+II-A-6	Sélectivité au milieu arithmétique	9.5	9.5	1	réussi
+II-A-6	Sélectivité au centre géométrique	9.48683298051	9.48683298051	1	réussi
+II-B-1-c	Premier zéro du courant pour RC/T = 5	0.255064349224	0.255064349224	T′	réussi
+II-B-3	Reprise du courant face au détecteur discrétisé	1.15712278088	1.1572	T′	réussi
+II-B-3	Continuité de la tension lors de la recharge	0.834503755348	0.834503755348	1	réussi
+III-A-1-a	Charge lue avec une anode à 130 V	58.6206896552	58.62	kΩ	réussi
+III-A-1-b	Charge correspondant au second couple	51.724137931	51.724	kΩ	réussi
+III-A-2-b	Somme des petites variations de tension	1	1	V	réussi
+IV-1	Plus petite longueur d’onde guidée	15	15	km	réussi
+IV-1	Temps de transit pour 10 m	33.3333333333	33.33333333	ns	réussi
+IV-5	Couplage mécanique et maille à 70 Hz	1.38777878078e-17	0	m/s/V	réussi
+IV-5	Couplage mécanique et maille à 440 Hz	3.47114060446e-18	0	m/s/V	réussi
+IV-5	Couplage mécanique et maille à 1000 Hz	8.94056015336e-19	0	m/s/V	réussi
+V-4	Variation différentielle	-11.0625	-11.0625	fF	réussi
+V-4	Variation finie	-10.7926829268	-10.79268293	fF	réussi
+V-5	Variation relative de capacité cylindrique	6.24196350582	6.242	%	réussi
+VI-6-a	Conservation des deux flux en amont	6.25	6.25	A/m²	réussi
+VI-6-d	Somme des deux densités électroniques	-1.375e-05	-1.375e-05	C/m³	réussi
+VI-7	Résidu relatif après deux intégrations à x=0.02	1	1	1	réussi
+VI-7	Résidu relatif après deux intégrations à x=0.35	1	1	1	réussi
