@@ -1,0 +1,95 @@
+{
+  "slug": "banque-pt_pt_francais-b_2019",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français B",
+    "annee": 2019
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2019/fr_b_2019_pt.pdf",
+    "sujet_sha256": "dc3026ba5149fe129b1565f77bfc47987ccca8de272dff4a12bf2204a7036dd6",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2019/rapport_fra_b_ecrit_2019.pdf",
+    "rapport_sha256": "e4fdfd0548b9d88e6c1eca29a49d2ef0f3cc254586c7120fbd5779bdeb60d038",
+    "programme_officiel": "https://www.education.gouv.fr/bo/18/Hebdo24/ESRS1800091A.htm",
+    "theme": "L’amour",
+    "oeuvres_au_programme": [
+      "Platon, Le Banquet (traduction Luc Brisson)",
+      "Shakespeare, Le Songe d’une nuit d’été (traduction Jean-Michel Déprats)",
+      "Stendhal, La Chartreuse de Parme"
+    ],
+    "source_coefficients": "https://www.banquept.fr/documents/livret/2019/Livret_PT_2019.pdf#page=12",
+    "admissibilite_admission": "ENS Paris-Saclay et ENS Rennes, admission seule, coefficient 4"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "De la valeur reconnue à l’obligation"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lyon_ses_sources",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture des quatre pages de Larroque. Reprise des articulations entre préférence exclusive, jugement spontané, devoir et valeur spirituelle. Rapprochement du sacrifice et de la promotion d’une valeur dans les trois œuvres. Rédaction des deux éditions, vérification du programme et réalisation du schéma."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Résumé",
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Résumé",
+        "page_pdf": 2,
+        "page_pdf_fin": 5,
+        "page_consigne": 5,
+        "perimetre": "Du début de la page 2, « L’exigence totalisante de la passion », à la dernière phrase du texte page 5, « une expérience spirituelle ». Les deux questions suivent sur cette même page.",
+        "mots_demandes": 190,
+        "mots_admis": [
+          171,
+          209
+        ],
+        "mots_par_paragraphe": [
+          57,
+          72,
+          61
+        ],
+        "mots_rediges": 190,
+        "points": 8
+      },
+      {
+        "question": "Dissertation",
+        "page_pdf": 5,
+        "page_pdf_fin": 5,
+        "perimetre": "Les œuvres illustrent-elles le rapprochement de Larroque entre amour et devoir, quand une personne reconnaît une valeur à défendre ou à promouvoir et peut accepter pour elle un sacrifice ?",
+        "points": 12
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

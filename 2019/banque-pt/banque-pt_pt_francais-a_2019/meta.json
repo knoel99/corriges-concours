@@ -1,0 +1,75 @@
+{
+  "slug": "banque-pt_pt_francais-a_2019",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français A",
+    "annee": 2019
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2019/fr_a_2019_pt.pdf",
+    "sujet_sha256": "414d75a23fe988427745cc1e681df56ab9344946b78557f70310d919c1f0d4b4",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2019/rapport_fra_a_ecrit_2019.pdf",
+    "rapport_sha256": "940254c6cdee1286e6091fc11fc3184673d5cf0c68f4f49198e2843d3ee76753",
+    "programme_officiel": "https://www.education.gouv.fr/bo/18/Hebdo24/ESRS1800091A.htm",
+    "theme": "L’amour",
+    "oeuvres_au_programme": [
+      "Platon, Le Banquet (traduction Luc Brisson)",
+      "Shakespeare, Le Songe d’une nuit d’été (traduction Jean-Michel Déprats)",
+      "Stendhal, La Chartreuse de Parme"
+    ],
+    "source_coefficients": "https://www.banquept.fr/documents/livret/2019/Livret_PT_2019.pdf#page=12",
+    "admissibilite_admission": "École polytechnique, admissibilité, coefficient 4",
+    "precision_coefficients": "Français facultatif pour les candidats étrangers à l’École polytechnique."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "Qui porte le coût de la préférence ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lyon_ses_sources",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture des deux assertions de La Rochefoucauld et du rapport sur le sens du repos. Comparaison des coûts du désir chez Héléna, Alcibiade, Fabrice et Clélia. Rédaction des deux éditions, vérification du programme et réalisation du schéma."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 1,
+        "page_pdf_fin": 1,
+        "perimetre": "Les trois œuvres donnent-elles raison à La Rochefoucauld quand il affirme que l’amour renforce l’amour de soi et que l’on sacrifie plus volontiers la tranquillité de la personne aimée que la sienne ?"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}
