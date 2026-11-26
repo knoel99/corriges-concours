@@ -1,0 +1,75 @@
+{
+  "slug": "banque-pt_pt_francais-a_2021",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français A",
+    "annee": 2021
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2021/fr_a_2021_pt.pdf",
+    "sujet_sha256": "35b80e04df48095a0197bb308281ca88cfa9124299485d7ed7525c9cc5a00b60",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2021/rapport_fra_a_ecrit_2021.pdf",
+    "rapport_sha256": "fd9bac9c0898b09a09ba46fc3d9681efc4056edd25e8b43c732526de643b5992",
+    "programme_officiel": "https://www.education.gouv.fr/bo/20/Hebdo32/ESRS2014851A.htm",
+    "theme": "La force de vivre",
+    "oeuvres_au_programme": [
+      "Hugo, Les Contemplations, livres IV et V",
+      "Nietzsche, Le Gai Savoir, préface à la seconde édition et livre IV (traduction Patrick Wotling)",
+      "Alexievitch, La Supplication (traduction Galia Ackerman et Pierre Lorrain)"
+    ],
+    "source_coefficients": "https://www.banquept.fr/documents/livret/2021/Livret_PT_2021.pdf#page=13",
+    "admissibilite_admission": "École polytechnique, admissibilité, coefficient 4",
+    "precision_coefficients": "Français facultatif pour les candidats étrangers à l’École polytechnique."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "Trois façons de vivre avec ce qui échappe"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lyon_ses_sources",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture de la restriction de Cioran. Vérification du rôle des deux facultés chez Hugo, de l’invisibilité du risque chez Alexievitch et de l’hypothèse du paragraphe 341 de Nietzsche. Rédaction des deux éditions, vérification du programme et réalisation du schéma."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 2,
+        "page_pdf_fin": 2,
+        "perimetre": "Les œuvres permettent-elles d’admettre avec Cioran que les déficiences de notre imagination et de notre mémoire sont indispensables à la vie ?"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

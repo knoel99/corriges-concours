@@ -1,0 +1,75 @@
+{
+  "slug": "banque-pt_pt_francais-a_2022",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français A",
+    "annee": 2022
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2022/fr_a_2022_pt.pdf",
+    "sujet_sha256": "2b9587571ed6e3f9af20be994a161c37a712d4a918df41c295239c2f73d59624",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2022/rapport_fra_a_ecrit_2022.pdf",
+    "rapport_sha256": "9f6eefcdc67c5fc31a31176b99e9e9f4bd3bbfffb5f6817ee35c359f5a8fe89e",
+    "programme_officiel": "https://www.education.gouv.fr/bo/21/Hebdo28/ESRS2119554A.htm",
+    "theme": "L’enfance",
+    "oeuvres_au_programme": [
+      "Soyinka, Aké, les années d’enfance (traduction Étienne Galle)",
+      "Rousseau, Émile ou De l’éducation, livres I et II",
+      "Andersen, Contes (traduction Marc Auchet)"
+    ],
+    "source_coefficients": "https://www.banquept.fr/documents/livret/2022/Livret_PT_2022.pdf#page=13",
+    "admissibilite_admission": "École polytechnique, admissibilité, coefficient 4",
+    "precision_coefficients": "Français facultatif pour les candidats étrangers à l’École polytechnique."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "Ce qu’une explication fait à l’étonnement"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lyon_ses_sources",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture de la chaîne établie par Green entre étrangeté, étonnement, explication et familiarité. Rapprochement des scènes de la fanfare, des fleurs d’Ida, des fèves et de la lecture des fables. Rédaction des deux éditions, vérification du programme et réalisation du schéma."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 2,
+        "page_pdf_fin": 2,
+        "perimetre": "Dans quelle mesure les œuvres confirment-elles le jugement de Julien Green selon lequel le regard presque poétique de l’enfant disparaît à mesure que l’éducation lui rend le monde familier ?"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}
