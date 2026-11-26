@@ -2,7 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 L’épreuve de printemps du concours 2021 dure trois heures. Le premier problème calcule les multiplicités des valeurs propres de la transformée discrète pour une taille impaire. Les deux suivants établissent une inversion de Fourier puis une limite gaussienne pour des variables de Bernoulli. [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2021%20FUI-FF%20Session%202%20SUJET%20DE%20MATHS_0.pdf)
 
@@ -64,6 +66,13 @@ Dans les paires non ordonnées de deux indices distincts, chaque entier de $0$ �
 Posons $K=N(N-1)/2$. Vandermonde donne $\det U=N^{-N/2}\prod_{l<k}(\zeta^k-\zeta^l)$. Or
 $$\zeta^k-\zeta^l=(-i)e^{-\pi i(k+l)/N}\,2\sin\frac{\pi(k-l)}N.$$
 En multipliant, le facteur exponentiel vaut $e^{-\pi i(N-1)^2/2}=1$, car $N$ est impair. On obtient le facteur $(-i)^K=i^K(-1)^K$ et le produit de sinus du sujet. Tous les sinus sont strictement positifs. Le module du déterminant valant un par 3, sa valeur exacte est déjà $(-i)^K$.
+
+En particulier, avec $K=N(N-1)/2$, l’expression complète de l’énoncé et la normalisation du produit sont
+$$
+\det U=N^{-N/2}i^K(-1)^K\prod_{0\le l<k<N}2\sin\frac{\pi(k-l)}{N},
+\qquad \prod_{0\le l<k<N}2\sin\frac{\pi(k-l)}{N}=N^{N/2}.
+$$
+Pour $N=1$, le produit vide vaut un.
 
 ### Question 6
 
@@ -217,6 +226,9 @@ Chaque Bernoulli de paramètre $p$ a espérance $p$ et variance $p(1-p)$. Par li
 #### Solution
 
 Pour $n>2|z|$, la série du logarithme au voisinage de un donne $\log(1+z/n)=z/n+O_z(n^{-2})$. Ainsi $n\log(1+z/n)\to z$, et en prenant l’exponentielle $(1+z/n)^n\to e^z$. Le logarithme utilisé est celui donné par sa série pour $|z/n|<1$, donc son exponentielle restitue bien $1+z/n$.
+
+L’indication de l’énoncé donne aussi une preuve qui évite le logarithme complexe. Pour $k\le n$, le coefficient de $z^k$ dans $(1+z/n)^n$ vaut $\frac1{k!}\prod_{j=0}^{k-1}(1-j/n)\le1/k!$. Il est nul pour $k>n$. Les coefficients de la différence avec $e^z$ sont donc positifs ou nuls, d’où
+$$ |e^z-(1+z/n)^n|\le e^{|z|}-(1+|z|/n)^n\longrightarrow0. $$
 
 ### Question 22
 

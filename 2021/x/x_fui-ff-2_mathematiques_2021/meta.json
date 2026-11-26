@@ -31,6 +31,54 @@
       "perimetre": "Rédaction des 24 réponses, de leurs indications et du schéma des sommes de Gauss à partir du sujet original de la session 2. Vérification des phases de Vandermonde, des multiplicités, de l’inversion et de la normalisation de De Moivre–Laplace. Aucun rapport associé au registre.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Les questions 1–23 forment 24 rubriques, dont les deux subdivisions de Q5. Vérification de la phase du déterminant de Fourier et du produit de sinus, des sommes de Gauss tracées et des multiplicités, de l’inversion sur Schwartz et de la limite gaussienne. L’indication de Q21 est démontrée par comparaison des coefficients binomiaux."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5a",
+      "5b",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23"
+    ],
+    "precision": "Les 24 rubriques des deux éditions ont été rapprochées du fascicule institutionnel de 4 pages de l’École polytechnique. Les questions 1–23 forment 24 rubriques, dont les deux subdivisions de Q5. Vérification de la phase du déterminant de Fourier et du produit de sinus, des sommes de Gauss tracées et des multiplicités, de l’inversion sur Schwartz et de la limite gaussienne. L’indication de Q21 est démontrée par comparaison des coefficients binomiaux.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "32aa99ce5460ccb5f5f687ab0bcb0d2744aa162429f94ac2163a0eb1e8f8046a",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Les questions 1–23 forment 24 rubriques, dont les deux subdivisions de Q5. Vérification de la phase du déterminant de Fourier et du produit de sinus, des sommes de Gauss tracées et des multiplicités, de l’inversion sur Schwartz et de la limite gaussienne. L’indication de Q21 est démontrée par comparaison des coefficients binomiaux.",
+      "commit_redaction_anterieure": "bc97abbe5bf5ba9d0b0ee107c3ea2ac9b468a652"
+    }
+  }
 }
