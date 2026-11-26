@@ -2,16 +2,20 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
-**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
-À propos de l’Exposition internationale des arts décoratifs et industriels modernes de Paris, Waldemar-George écrit dans L’Amour de l’art en août 1925. Le sujet demande de discuter son propos dans le programme « Design et modernité(s) (1890–1939) ».
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+École normale supérieure Paris-Saclay · écrit de quatre heures · C17104.
+
+Dans *L’Amour de l’art* d’août 1925, n° 8, Waldemar-George examine les tendances générales de l’exposition parisienne. Le sujet demande de discuter le reproche qu’il adresse aux « recherches purement morphologiques » à partir du programme « Design et modernité(s) », 1890–1939. [Sujet officiel, p. 1](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2017_Sujet_1A_Design_Histoire_art.pdf) · [Rapport du jury, p. 3–7](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2017_RE_1A_Design.pdf#page=3)
 
 ## Introduction
 
 > [!INDICATION]
-> Identifier dans la citation la définition qu’attribue le critique à ses adversaires et le jugement qu’il porte.
+> Identifier dans la citation la définition qu’attribue le critique à ses adversaires et le jugement qu’il porte. Le rapport du jury (p. 4–7) recommande de juger la force de la « preuve » alléguée. Quelles observations un visiteur peut-il faire à Paris en août 1925 ? Guimard peut servir de précédent. La cuisine de Francfort date de 1926. Elle sert à l’historien qui discute aujourd’hui le diagnostic. Elle ne pouvait fournir un exemple au critique en 1925.
 
 #### Proposition de réponse
 
@@ -30,12 +34,14 @@ L’Hôtel du Collectionneur, édifié à Paris en 1925 par Pierre Patout pour l
 
 Le reproche de Waldemar-George touche ici un mécanisme réel. Concentrer la concurrence sur le renouvellement visible des styles peut laisser inchangée la relation entre commanditaire, métiers hautement qualifiés et prix élevé. Toutefois la morphologie de l’ensemble n’est déjà pas « pure ». La coordination entre les ateliers et la conception d’une présentation unifiée sont des opérations techniques et commerciales. L’exposition parisienne cherche à rendre à la production décorative française une autorité internationale. La cohérence formelle manifeste ainsi une division du travail et une politique économique.
 
-![Deux dispositifs de l’exposition de 1925, le salon d’un collectionneur et la cellule proposée pour un habitat reproductible.](figures/analyse-du-design.svg)
+![À Paris en 1925, deux manières d’inviter le visiteur à se représenter un logement.](figures/analyse-du-design.svg)
 
 Le schéma juxtapose deux adresses au visiteur. Au premier pavillon, il faut imaginer posséder l’ensemble commandé par un collectionneur. Au second, il faut imaginer une cellule voisine et l’édifice qui résulterait de leur répétition. Une exposition éphémère permet les deux expériences. Waldemar-George vise d’abord le critère employé par certains journalistes. Si l’on se contente de relever deux lignes ou silhouettes différentes, on reconduit précisément le jugement qu’il leur reproche.
 
 > [!INDICATION]
 > Lire le premier membre de la citation à voix haute. Qui assimile « moderne » à « nouveau » ? Attribuer ce jugement aux journalistes cités, puis distinguer ce que le critique leur objecte. Relire les deux pavillons à partir de cette distinction.
+
+Le mot « preuve » engage aussi la manière de voir. Un visiteur compare aisément deux façades en marchant. En quelques minutes, il peut constater ce qui distingue leurs silhouettes. Pour comparer les coûts de fabrication, la distribution du travail ou l’usage quotidien, il lui faudrait d’autres documents et un temps dont la visite le prive. L’exposition donne ainsi au critique des observations justes, tout en privilégiant par son dispositif le critère visuel dont il récuse la suffisance. Généraliser du spectacle des pavillons à « tout l’effort » d’une génération demande cette réserve.
 
 ## II. Dans la même manifestation, la forme peut proposer une autre organisation de l’habitat
 
@@ -54,6 +60,8 @@ La différence avec l’Hôtel du Collectionneur n’oppose pas simplement une c
 > Suivre l’exemple d’un objet postérieur à l’exposition et mesurer ses limites.
 
 #### Proposition de réponse
+
+Un détour antérieur à 1925 permet de contrôler la généralité du jugement. Vers 1900, aux entrées du Métropolitain parisien conçues par Hector Guimard, les supports sinueux des luminaires évoquent des tiges végétales. Un photographe peut isoler cette silhouette et y chercher la signature d’un style. À l’échelle de la ville, pourtant, la répétition de pièces de fonte standardisées facilite la fabrication et l’assemblage. Le voyageur reconnaît dans des rues différentes l’entrée du même réseau. Un même dessin agit comme motif nouveau, système de production et signal urbain. Ce précédent était disponible en 1925. La cuisine de Francfort, au contraire, ne pourra servir que de mise à l’épreuve rétrospective du jugement. [Entrée du Métropolitain, MoMA](https://www.moma.org/collection/works/2393)
 
 La cuisine de Francfort dessinée par Margarete Schütte-Lihotzky en 1926, dans le programme municipal de logements d’Ernst May, fait du mobilier une partie de l’architecture. Rangement, plan de travail et équipements sont disposés dans un espace réduit en fonction d’un enchaînement de gestes. La forme est calculée pour permettre une économie de déplacements et une fabrication répétée dans le logement social. Elle modifie donc une organisation spatiale et productive, ce qui suffit à contredire une histoire de la période ramenée à la succession des motifs décoratifs.
 
