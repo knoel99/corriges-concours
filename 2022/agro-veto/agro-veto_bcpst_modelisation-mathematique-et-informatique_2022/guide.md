@@ -6,6 +6,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Lièvres et lynx.** Le sujet compare la croissance isolée des lièvres, le modèle de Lotka–Volterra et une variante à ressources limitées. La partie numérique suit les effectifs et la quantité conservée du modèle sans limitation.
 
 ## Repères
@@ -30,6 +32,8 @@ La dérivée de $e^{-rt}x(t)$ est $e^{-rt}(x'-rx)=0$. Avec $x(0)=x_0$, on obtien
 
 La courbe passe par $(0,x_0)$, croît avec une pente initiale $rx_0$ et est strictement convexe, car $x''=r^2x>0$. Elle monte sans borne.
 
+![Croissance libre des lièvres. Avec les axes réduits, la courbe part de (0, 1) et la tangente initiale a pour pente 1.](figures/croissance-exponentielle.svg)
+
 ### Question 1c · Portée du premier modèle
 
 **Indication.** Comparer une approximation de court terme et le comportement à long terme.
@@ -53,6 +57,10 @@ Pour $x\ll K$, le facteur $1-x/K$ est proche de 1 et $x'\simeq rx$. La croissanc
 #### Solution
 
 La dérivée s’annule pour $x=0$ et $x=K$. Elle est strictement positive pour $0<x<K$ et strictement négative pour $x>K$.
+
+| $x$ | $0$ | $]0,K[$ | $K$ | $]K,+\infty[$ |
+|---|:---:|:---:|:---:|:---:|
+| Signe de $x'$ | $0$ | $+$ | $0$ | $-$ |
 
 ### Question 2c · Positivité de la solution
 
@@ -305,6 +313,10 @@ Pour $J_3$, si $K<a$, le déterminant est négatif et le point hors du quadrant 
 
 Près de $(K,0)$, le taux de croissance par lynx vaut environ $K-a$. Pour $K<a$, ce taux est négatif et l’équilibre sans lynx est attractif. Pour $K>a$, il est positif et il existe un équilibre de coexistence attractif. Le critère de maintien des lynx dans ce modèle est donc $K>a$, lorsque les deux espèces sont initialement présentes. Le cas $K=a$ est écarté dans l’énoncé. Une population de lynx déjà nulle reste nulle.
 
+On peut aussi justifier ce critère pour tout départ strictement positif. Pour $K>a$, posons $b=1-a/K$ et $L=x-a\ln x+y-b\ln y$. Le long d’une solution, les termes croisés s’annulent et $L'=-(x-a)^2/K$. Ses sous-niveaux sont compacts dans le quadrant ouvert. L’ensemble des points d’accumulation est invariant et $L$ y est constant, puisqu’il tend vers une limite le long de la trajectoire. Cet ensemble est donc contenu dans $x=a$. Pour y rester, il faut aussi $x'=a(b-y)=0$, donc $y=b$. La solution converge vers $(a,b)$.
+
+Si $K<a$, prenons $L=x-K-K\ln(x/K)+y$. On trouve $L'=-(x-K)^2/K+(K-a)y\le 0$. Les sous-niveaux bornent $y$, ainsi que $x$ par deux bornes strictement positives. Le seul point du demi-plan $y\ge0$ où $L'=0$ est $(K,0)$. Le même argument donne la convergence vers $(K,0)$.
+
 ## 4. Méthode d’Euler
 
 ### Question 11 · Variation d’une étape d’Euler
@@ -426,7 +438,7 @@ Au bout de $k$ pas, les trois listes ont $k+1$ éléments et partagent les même
 
 La première ligne de la fonction appelle le solveur avec $x_0=1$, $y_0=0{,}5$, $T=20$ et $h=0{,}01$. `L[0]` contient les temps $t_k$, `L[1]` les valeurs $x_k$, `L[2]` les $y_k$. Le premier appel à `plot` trace les $x_k$ contre les temps, le second superpose les $y_k$ et `show` affiche le graphique.
 
-### Question 15e · Identifier les deux espèces sur la figure 1
+### Question 15e · Identifier les deux espèces sur la figure 1 du sujet
 
 **Indication.** Observer les ordonnées des tout premiers points puis l’ordre des maxima.
 
@@ -490,7 +502,7 @@ Dans une copie appelée `trace_V_2`, remplacer `resol_1(x0, y0, T, h)` par `reso
 
 #### Solution
 
-La valeur exacte est $V_0=1{,}5+\ln 2\simeq2{,}19315$. Sur la gauche de la figure 2, Euler passe d’environ 2,19 à 2,45. À droite, Heun varie sur une échelle de quelques millièmes autour de 2,193. Il préserve donc beaucoup mieux l’invariant pour ce pas et cette durée. Avec le prédicteur corrigé en 16a, les 1 999 pas effectivement exécutés en Python donnent $V_{\rm final}\simeq 2{,}459862$ pour Euler. Pour Heun, les valeurs restent entre $2{,}193145$ et $2{,}193245$. La variation sur cette dernière trajectoire est d’environ $10^{-4}$.
+La valeur exacte est $V_0=1{,}5+\ln 2\simeq2{,}19315$. Sur la gauche de la figure 2 du sujet, Euler passe d’environ 2,19 à 2,45. À droite, Heun varie sur une échelle de quelques millièmes autour de 2,193. Il préserve donc beaucoup mieux l’invariant pour ce pas et cette durée. Pour reproduire numériquement la comparaison, choisissons $a=2$. Le sujet laisse cette constante globale sans valeur chiffrée. Avec le prédicteur corrigé en 16a et le pas imprimé, les 1 999 pas exécutés en Python donnent $V_{\rm final}\simeq 2{,}459862$ pour Euler. Pour Heun, les valeurs restent entre $2{,}193145$ et $2{,}193245$. La variation sur cette dernière trajectoire est d’environ $10^{-4}$.
 
 ![Calcul indépendant avec a = 2 et h = 0,01, sur les mêmes axes. La dérive d’Euler est visible alors que la courbe de Heun reste à proximité de zéro.](figures/derive-de-l-invariant.svg)
 
