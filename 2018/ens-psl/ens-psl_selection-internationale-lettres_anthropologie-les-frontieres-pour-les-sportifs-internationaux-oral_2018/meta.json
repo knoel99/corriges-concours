@@ -1,0 +1,61 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_anthropologie-les-frontieres-pour-les-sportifs-internationaux-oral_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Anthropologie — les frontières pour les sportifs internationaux (oral)",
+    "annee": 2018,
+    "modalite": "oral"
+  },
+  "intitule": "Commenter les extraits de Niko Besnier sur les frontières pour un sportif international, tirés de *Dessiner les frontières* (2018). Le feuillet traite des aspirations migratoires, du football au Ghana et de l’économie des intermédiaires.",
+  "gabarit": "oral",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://web.archive.org/web/20250601020554id_/https://www.ens.psl.eu/sites/default/files/SujetOral-Anthropo-SI2018.pdf",
+    "sujet_sha256": "d72dd6f5e99f211071a378fcab85105aecfee3f7bebb8a320e5c2d47acdcddec",
+    "index": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2018-lettres",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://web.archive.org/web/20250601020554id_/https://www.ens.psl.eu/sites/default/files/SujetOral-Anthropo-SI2018.pdf",
+        "url_ens": "https://www.ens.psl.eu/sites/default/files/SujetOral-Anthropo-SI2018.pdf",
+        "sha256": "d72dd6f5e99f211071a378fcab85105aecfee3f7bebb8a320e5c2d47acdcddec",
+        "pages": 2
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "Les frontières de la carrière sportive apparaissent avant, pendant et après le passage entre États."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire ethnographique du Ghana, de l’analogie togolaise et des trajectoires de recrutement à l’étranger."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire"
+    ],
+    "limites": "Extraits de Niko Besnier sur les circulations des sportifs, leur corps et la migration sportive."
+  }
+}
