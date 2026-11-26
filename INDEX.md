@@ -757,6 +757,7 @@
 | 2025 | BEL | BL | Économie (oral commun) — Lutte contre la pauvreté | [md](2025/bel/bel_bl_economie-oral-commun-lutte-contre-la-pauvrete_2025/brut.md) | [md](2025/bel/bel_bl_economie-oral-commun-lutte-contre-la-pauvrete_2025/guide.md) |
 | 2025 | BEL | BL | Économie (oral commun) — Politique de concurrence européenne | [md](2025/bel/bel_bl_economie-oral-commun-politique-de-concurrence-europeenne_2025/brut.md) | [md](2025/bel/bel_bl_economie-oral-commun-politique-de-concurrence-europeenne_2025/guide.md) |
 | 2025 | BEL | BL | Économie (oral commun) — Réformes de l’apprentissage | [md](2025/bel/bel_bl_economie-oral-commun-reformes-de-lapprentissage_2025/brut.md) | [md](2025/bel/bel_bl_economie-oral-commun-reformes-de-lapprentissage_2025/guide.md) |
+| 2025 | BEL | BL | Économie (oral commun) — Équilibre budgétaire | [md](2025/bel/bel_bl_economie-oral-commun-equilibre-budgetaire_2025/brut.md) | [md](2025/bel/bel_bl_economie-oral-commun-equilibre-budgetaire_2025/guide.md) |
 | 2025 | BEL | BL | Version grecque | [md](2025/bel/bel_bl_version-grecque_2025/brut.md) | [md](2025/bel/bel_bl_version-grecque_2025/guide.md) |
 | 2025 | BEL | BL | Version latine | [md](2025/bel/bel_bl_version-latine_2025/brut.md) | [md](2025/bel/bel_bl_version-latine_2025/guide.md) |
 | 2026 | BEL | BL | Sciences sociales | [md](2026/bel/bel_bl_sciences-sociales_2026/brut.md) | [md](2026/bel/bel_bl_sciences-sociales_2026/guide.md) |

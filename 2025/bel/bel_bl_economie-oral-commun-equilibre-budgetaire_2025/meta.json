@@ -1,0 +1,60 @@
+{
+  "slug": "bel_bl_economie-oral-commun-equilibre-budgetaire_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Économie (oral commun) — Équilibre budgétaire",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "L’équilibre budgétaire : une priorité ?",
+  "questions": 0,
+  "documents": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/economie_sujets_25_juin.pdf#page=1",
+    "sha256_sujet": "8433a5d540dda2553aca70d2c8e1d995b73ad82dfacc31923b3df37432846a7a",
+    "pages_sujet": "1–10 du recueil de 27 pages, pages 1–10 du dossier.",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_economie_tronc_commun.pdf",
+    "sha256_rapport_jury": "b0b1a696afc5d758d40283be9361a3fe50abd56041e7cad3533c62eabb4c5dd7",
+    "pages_rapport": "1 pour les modalités et 2 pour la liste des sujets."
+  },
+  "figures": [
+    {
+      "fichier": "figures/solde-stabilisant.svg",
+      "question": "Documents 2 et 4",
+      "legende": "Solde primaire requis pour stabiliser le ratio selon deux hypothèses illustratives de taux et de croissance."
+    },
+    {
+      "fichier": "figures/transferts-deux-generations.svg",
+      "question": "Document 3",
+      "legende": "Flux monétaires dans le scénario de redistribution étudié par Xavier Ragot."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_maths_b_anciennes",
+      "modifications": true,
+      "perimetre": "Rédaction du brut et du guidé, lecture du sujet et du rapport, production de deux figures et des relances. Vérification du solde primaire et du solde total, distinction des millésimes 2023 du CAE et du Trésor, calcul de la dynamique exacte du ratio de dette et lecture des mécanismes de redistribution."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "L’équilibre budgétaire : une priorité ?"
+    ],
+    "documents_entierement_traites": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "precision": "Les deux éditions répondent à la question-titre et exploitent les 4 documents du dossier."
+  }
+}
