@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Sujet et document réponse](https://www.banquept.fr/documents/2018/ph_b_th_2018_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2018/rapport_phys_b_ecrit_2018.pdf) · [Coefficients de la session](https://www.banquept.fr/documents/livret/2018/Livret_PT_2018.pdf#page=12)
 
 **Isolation de l’habitat, géothermie et pompe à chaleur.** Les puissances et transferts sont orientés explicitement dans les bilans. Les valeurs relevées graphiquement sont arrondies à la précision des diagrammes du sujet.
@@ -125,7 +127,7 @@ Multiplier une puissance en kW par les 4 000 heures de chauffage.
 
 Le même courant traverse le mur et l’isolant. Additionner leurs résistances.
 
-**a et b)** Pour le mur plein de 1 m², $\Phi=2\times10=20$ W, d’où 80 kWh et 12 euros. **c)** Pour les couches en série, $U_{\rm eq}=(1/U_m+1/U_i)^{-1}=(1/2+1/0{,}5)^{-1}=0{,}40$ W/(m²·K). Pour un prix $p$ par kWh, l’économie vaut $p(U_m-U_{\rm eq})A\Delta T\,\Delta t/1000$ avec $\Delta t$ en heures, soit 9,60 euros par m² et par an. Les pertes de ce mur baissent de 80 % dans le modèle du sujet.
+**a et b)** Pour le mur plein de 1 m², $\Phi=2\times10=20$ W, d’où 80 kWh et 12 euros. **c)** Pour les couches en série, $U_{\rm eq}=(1/U_m+1/U_i)^{-1}=(1/2+1/0{,}5)^{-1}=0{,}40$ W/(m²·K). Pour un prix $p$ par kWh, l’économie vaut $p(U_m-U_{\rm eq})A\Delta T\,\Delta t/1000$ avec $\Delta t$ en heures, soit 9,60 euros par m² et par an. Les pertes de ce mur baissent de 80 % dans le modèle du sujet. La colonne du tableau mural est libellée en kW, celle du tableau des fenêtres en W.
 
 | Paroi de 1 m² | Flux (kW) | Énergie annuelle (kWh) | Coût annuel (€) |
 |:--|--:|--:|--:|
@@ -192,7 +194,7 @@ Distinguer le volume du cylindre balayé et le volume d’eau contenu dans les p
 
 **a et b)** Dans le modèle cylindrique simplifié suggéré par les variables demandées, $dV=2\pi rH\,dr=D_V\,dt$. Avec $r(0)=0$, $r(t)=\sqrt{D_Vt/(\pi H)}$. **c)** Pour un écart de puits $H'=1000$ m, $t=\pi H(H')^2/D_V\simeq3{,}14\times10^6$ h, soit environ 360 ans avec l’aide numérique. Si l’on suit le front d’eau dans les **seuls pores**, il faut multiplier le volume par la porosité $\varepsilon=0{,}15$. Alors $r=\sqrt{D_Vt/(\pi\varepsilon H)}$ et le temps est de 54 ans. Ces deux estimations traduisent deux conventions de volume. L’échange thermique avec la roche, la structure des écoulements et la recharge modifient le temps réel de percée.
 
-**d)** Un mètre carré de nappe correspond à $\varepsilon H=15$ m³ d’eau. Le refroidissement de 70 à 10 °C fournit $15\times1000\times1\times60=9{,}0\times10^5$ kcal par m², soit 60 000 kcal par m³ d’eau. Cela égale les **60 Mcal/m³ donnés pour le pétrole dans l’énoncé**. **e)** L’énergie est locale et le débit disponible représente environ $100\times1000\times4{,}18\times60/3600\simeq7$ MW thermiques en continu. L’intérêt énergétique est réel. Pour conclure sur la rentabilité financière, il faut aussi le coût des deux forages, du pompage, de la distribution, l’usage effectif de la chaleur et la durée d’exploitation.
+**d)** Un mètre carré de nappe correspond à $\varepsilon H=15$ m³ d’eau. Le refroidissement de 70 à 10 °C fournit $15\times1000\times1\times60=9{,}0\times10^5$ kcal par m², soit 60 000 kcal par m³ d’eau. Cela égale les **60 Mcal/m³ donnés pour le pétrole dans l’énoncé**, puisque 1 Mcal vaut 1 000 kcal. Cette comparaison utilise strictement la valeur imprimée. **e)** L’énergie est locale et le débit disponible représente environ $100\times1000\times4{,}18\times60/3600\simeq7$ MW thermiques en continu. L’intérêt énergétique est réel. Pour conclure sur la rentabilité financière, il faut aussi le coût des deux forages, du pompage, de la distribution, l’usage effectif de la chaleur et la durée d’exploitation.
 
 ### Question 21 · Pompe à chaleur réversible
 
@@ -210,7 +212,7 @@ Adopter le point de vue du fluide et fermer son bilan sur un cycle.
 
 Repérer la rupture d’échelle à 380 kJ/kg, puis suivre l’isentrope 1900 J/(kg·K) de 5 à 20 bar.
 
-**a et b)** Sur le diagramme du document réponse, la branche vapeur à 5 bar donne $h_2\simeq417$ kJ/kg. L’isentrope passant par 3 et 4 donne environ 433 et 476 kJ/kg. La branche liquide à 20 bar donne $h_5\simeq252$ kJ/kg. Les états 1 et 6 ont même abscisse. Le schéma ci-dessous réexprime les abscisses avec une échelle uniforme. Orienter le cycle dans le sens 1→2→3→4→5→6→1.
+**a et b)** Sur le diagramme du document réponse, la branche vapeur à 5 bar donne $h_2\simeq417$ kJ/kg. L’isentrope passant par 3 et 4 donne environ 433 et 476 kJ/kg. La branche liquide à 20 bar donne $h_5\simeq252$ kJ/kg. Les états 1 et 6 ont même abscisse. La légende de l’abaque exprime l’entropie en J/(kg·K). La valeur 1900 du tableau correspond donc à 1,900 kJ/(kg·K). Le schéma ci-dessous réexprime les abscisses avec une échelle uniforme. Orienter le cycle dans le sens 1→2→3→4→5→6→1.
 
 | État | 1 | 2 | 3 | 4 | 5 | 6 |
 |:--|--:|--:|--:|--:|--:|--:|
