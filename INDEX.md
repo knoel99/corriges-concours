@@ -782,6 +782,8 @@
 | 2024 | BEL | BL | Mathématiques (oral tronc commun) — 15 juin, planche 2 | [md](2024/bel/bel_bl_mathematiques-oral-tronc-commun-15-juin-planche-2_2024/brut.md) | [md](2024/bel/bel_bl_mathematiques-oral-tronc-commun-15-juin-planche-2_2024/guide.md) |
 | 2024 | BEL | BL | Mathématiques (oral tronc commun) — 18 juin, planche 1 | [md](2024/bel/bel_bl_mathematiques-oral-tronc-commun-18-juin-planche-1_2024/brut.md) | [md](2024/bel/bel_bl_mathematiques-oral-tronc-commun-18-juin-planche-1_2024/guide.md) |
 | 2024 | BEL | BL | Mathématiques (oral tronc commun) — 18 juin, planche 2 | [md](2024/bel/bel_bl_mathematiques-oral-tronc-commun-18-juin-planche-2_2024/brut.md) | [md](2024/bel/bel_bl_mathematiques-oral-tronc-commun-18-juin-planche-2_2024/guide.md) |
+| 2024 | BEL | BL | Mathématiques (oral tronc commun) — 19 juin, planche 1 | [md](2024/bel/bel_bl_mathematiques-oral-tronc-commun-19-juin-planche-1_2024/brut.md) | [md](2024/bel/bel_bl_mathematiques-oral-tronc-commun-19-juin-planche-1_2024/guide.md) |
+| 2024 | BEL | BL | Mathématiques (oral tronc commun) — 19 juin, planche 2 | [md](2024/bel/bel_bl_mathematiques-oral-tronc-commun-19-juin-planche-2_2024/brut.md) | [md](2024/bel/bel_bl_mathematiques-oral-tronc-commun-19-juin-planche-2_2024/guide.md) |
 | 2026 | BEL | BL | Mathématiques | [md](2026/bel/bel_bl_mathematiques_2026/brut.md) | [md](2026/bel/bel_bl_mathematiques_2026/guide.md) |
 | 2024 | BEL | BL | Philosophie | [md](2024/bel/bel_bl_philosophie_2024/brut.md) | [md](2024/bel/bel_bl_philosophie_2024/guide.md) |
 | 2025 | BEL | BL | Philosophie | [md](2025/bel/bel_bl_philosophie_2025/brut.md) | [md](2025/bel/bel_bl_philosophie_2025/guide.md) |
