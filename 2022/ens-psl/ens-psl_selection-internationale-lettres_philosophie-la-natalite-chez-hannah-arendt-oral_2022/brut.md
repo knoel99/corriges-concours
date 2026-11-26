@@ -1,8 +1,12 @@
-# Philosophie — la natalité chez Hannah Arendt · Oral PSL 2022 · Corrigé brut
+# Philosophie — La natalité chez Hannah Arendt. Sens, enjeux, limites · Oral PSL 2022 · Corrigé brut
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Le 8 février 2022, le jury attribue cet exposé au candidat 4. Le rapport indique une heure de préparation, puis quinze minutes de présentation et quinze minutes d’entretien.
 
 ## Exposé
 
@@ -22,7 +26,9 @@ La liberté risque d’être comprise exclusivement comme la souveraineté d’u
 
 L’imprévisibilité de l’action n’est donc pas simplement notre ignorance provisoire de causes que des calculs parfaits révéleraient un jour. Celui à qui je m’adresse est lui-même capable de commencer quelque chose. Il peut répondre autrement que je ne l’attendais, et la chaîne des réponses déplace la portée du premier geste. La natalité permet ainsi de penser une liberté inséparable de la pluralité humaine. Un monde où la nouveauté ne serait admise qu’à condition de se conformer à un programme connu d’avance ne lui laisserait guère de place.
 
-La faculté de commencer porte cependant aussi le risque d’effets irréversibles. Agir engage les autres, parfois contre leur volonté. Arendt prête au pardon et à la promesse une valeur particulière. Le pardon peut délier les acteurs de la répétition indéfinie des conséquences d’un acte. La promesse ménage une relative stabilité entre plusieurs personnes sans supprimer toute initiative future. Reprenons la discussion sur la rivière. Si personne ne consent à respecter une décision ou à revenir sur un tort, la multiplication des initiatives peut tourner à l’impuissance. La natalité ouvre une faculté politique, elle ne dispense nullement des pratiques qui la rendent habitable.
+Deux nouveautés peuvent apparaître le même jour dans la ville. Une horloge neuve se met à sonner selon son programme et une habitante propose pour la première fois de déplacer l’assemblée au bord de la rivière. Toutes deux interrompent une habitude. Pourtant seule la seconde s’adresse à des personnes susceptibles de répondre et d’infléchir ce qu’elle inaugure. Le critère politique de la nouveauté ne tient donc ni à sa date ni à son succès assuré. Une proposition rejetée peut révéler qui l’a portée et appeler des réponses auxquelles son auteure n’avait pas pensé. La natalité désigne une ouverture de cette sorte dans un monde partagé.
+
+La faculté de commencer porte cependant aussi le risque d’effets irréversibles. Agir engage les autres, parfois contre leur volonté. Arendt prête au pardon et à la promesse une valeur particulière. Le pardon peut libérer les personnes de l’enchaînement des réactions à un acte. Les faits accomplis demeurent, mais une autre relation peut commencer. La promesse ménage une relative stabilité entre plusieurs personnes sans supprimer toute initiative future. Reprenons la discussion sur la rivière. Si personne ne consent à respecter une décision ou à revenir sur un tort, la multiplication des initiatives peut tourner à l’impuissance. La natalité ouvre une faculté politique, elle ne dispense nullement des pratiques qui la rendent habitable.
 
 ### Les limites d’une politique du commencement
 
@@ -34,10 +40,12 @@ On peut enfin demander ce que la distinction entre entretien de la vie et action
 
 ![Figure 1 — De la naissance à l’action](figures/experiences.svg)
 
-## Pour l’entretien
+## Questions d’entraînement pour l’entretien
 
 **Qu’advient-il si personne ne répond à une initiative ?** L’action ne peut s’accomplir sur le modèle d’un objet fabriqué à soi seul. Son isolement peut révéler la défaillance d’un espace commun, et non une disparition de la capacité de commencer chez la personne qui agit.
 
 **Pourquoi conserver un monde si l’on valorise les commencements ?** Sans durabilité, une initiative n’aurait rien à reprendre ou à transformer et personne avec qui la partager. La difficulté éducative consiste à transmettre ce monde assez solidement pour que l’on puisse aussi le modifier.
+
+**Pourquoi la natalité peut-elle concerner une personne qui n’aura pas d’enfants ?** Chez Arendt, la naissance désigne la condition de tout nouvel arrivant. Celui-ci peut ensuite paraître par sa parole et son action dans un monde plus ancien que lui. Cette capacité tient à sa venue et aux relations où il peut agir, indépendamment de toute décision de devenir parent.
 
 [Énoncé](https://www.ens.psl.eu/sites/default/files/philo-oraux-sil2022.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/rapport-philo-sil2022.pdf)
