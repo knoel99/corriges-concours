@@ -43,6 +43,86 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Rédaction originale des 13 questions et subdivisions sur le sujet et le rapport institutionnels. Critère de disparition contrôlé sur 50 978 graphes admissibles, 30 puissances exactes pour les deux exemples, 49 coupures et 408 jeux de coefficients et de rapports pour la classification finale. Examen du pseudo-code imprimé et de ses piles. Trois figures originales."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "archives_2016_2022",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture des quatre parties, du rapport et des trois figures. Vérification du sens des marches dans le graphe, du contre-exemple au pseudo-code de Tarjan, des vecteurs propres, du classement des seuils et du cas de la valeur propre nulle. Contrôle sur 600 signes par multiplication matricielle en rationnels. Ajout du pseudo-code complet de la question 3.b dans les deux éditions."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "subdivisions_du_sujet": {
+      "2": [
+        "a",
+        "b",
+        "c"
+      ],
+      "3": [
+        "a",
+        "b",
+        "c"
+      ],
+      "4": [
+        "a",
+        "b",
+        "c"
+      ],
+      "5": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "6": [
+        "a",
+        "b"
+      ],
+      "10": [
+        "a",
+        "b",
+        "c"
+      ],
+      "11": [
+        "a",
+        "b"
+      ],
+      "12": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ]
+    },
+    "precision": "Les treize questions du sujet imprimé et leurs demandes a à d sont traitées dans les deux éditions. La question 8, dont le numéro est déplacé dans l’extraction texte, figure sur la page 6 du sujet.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "5e7dcce5f2ce5cba9dbe9a4c93462854e4d197cf787d3679d38b188f310a5e73",
+      "sha256_rapport_controle": "e28bf287cb99d28cf5b8fe5223fbe4feef5f71b28674972f33d52402d16e212c",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Relecture des quatre parties, du rapport et des trois figures. Vérification du sens des marches dans le graphe, du contre-exemple au pseudo-code de Tarjan, des vecteurs propres, du classement des seuils et du cas de la valeur propre nulle. Contrôle sur 600 signes par multiplication matricielle en rationnels. Ajout du pseudo-code complet de la question 3.b dans les deux éditions.",
+      "commit_redaction_anterieure": "7c37c9590d0826a17590cc66f7cb691eb4fd4150"
+    }
+  }
 }

@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Les distributions sont des vecteurs colonnes. Au rang $k$, la lettre est $A$ si la première coordonnée de $M^kX$ atteint ou dépasse le seuil, et $B$ si elle lui est strictement inférieure. La notation $A^\omega$ désigne une suite infinie de lettres $A$.
 
 ## Repères
@@ -61,6 +63,21 @@ renvoyer résultat
 L’accessibilité mutuelle est une relation d’équivalence. À chaque passage dans la boucle intérieure, on énumère exactement la classe de $v$, puis on la retire des sommets libres. Chaque classe est donc émise une seule fois. La construction de $R$ et les balayages coûtent $O(N^2)$ en temps et la matrice occupe $O(N^2)$ places.
 
 **b.** Calculer chaque $L_v$ par un parcours en profondeur depuis $v$ avec un tableau des sommets déjà vus réinitialisé. Marquer les composantes cycliques selon la question 2. Pour chaque $i$, regarder dans la ligne $R[i,\cdot]$ si un sommet d’une composante marquée est accessible. Inscrire $i$ dans $I$ exactement quand la réponse est négative. Avec des listes d’adjacence et $m=|E|$, le coût est $O(N(N+m)+N^2)=O(m^2)$ puisque $N\leq m$. On peut donc prendre $k=2$.
+
+```text
+pour chaque v :
+    R[v,·] ← marques du parcours en profondeur depuis v, v inclus
+classes ← composantes obtenues en a avec R
+cyclique ← tableau faux
+pour chaque classe C :
+    si taille(C) > 1 ou si son unique sommet a une boucle :
+        marquer dans cyclique tous les sommets de C
+I ← liste vide
+pour chaque i :
+    si aucun j ne vérifie R[i,j] et cyclique[j] :
+        ajouter i à I
+renvoyer I
+```
 
 **c.** Avec un algorithme correct de Tarjan, calculer les composantes coûte $O(N+m)$. Repérer ensuite les composantes cycliques en parcourant leurs listes de sommets et les boucles. Amorcer un parcours sur le **graphe transposé** avec tous les sommets de ces composantes. Il marque exactement leurs prédécesseurs accessibles, dont le complément est $I$. On examine chaque sommet et chaque arc un nombre borné de fois. Le coût total est $O(N+m)=O(m)$, donc $k'=1$.
 
