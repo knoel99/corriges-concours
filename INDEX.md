@@ -401,6 +401,8 @@
 | 2019 | ENS-PSL | Sélection internationale Lettres | Économie — les défis du vieillissement (oral) | [md](2019/ens-psl/ens-psl_selection-internationale-lettres_economie-les-defis-du-vieillissement-oral_2019/brut.md) | [md](2019/ens-psl/ens-psl_selection-internationale-lettres_economie-les-defis-du-vieillissement-oral_2019/guide.md) |
 | 2023 | ENS-PSL | Sélection internationale Lettres | Études classiques | [md](2023/ens-psl/ens-psl_selection-internationale-lettres_etudes-classiques_2023/brut.md) | [md](2023/ens-psl/ens-psl_selection-internationale-lettres_etudes-classiques_2023/guide.md) |
 | 2024 | BEL | B/L | Allemand | [md](2024/bel/bel_bl_allemand_2024/brut.md) | [md](2024/bel/bel_bl_allemand_2024/guide.md) |
+| 2024 | BEL | B/L | Arabe | [md](2024/bel/bel_bl_arabe_2024/brut.md) | [md](2024/bel/bel_bl_arabe_2024/guide.md) |
+| 2024 | BEL | B/L | Chinois | [md](2024/bel/bel_bl_chinois_2024/brut.md) | [md](2024/bel/bel_bl_chinois_2024/guide.md) |
 | 2024 | BEL | AL | Composition française | [md](2024/bel/bel_al_composition-francaise_2024/brut.md) | [md](2024/bel/bel_al_composition-francaise_2024/guide.md) |
 | 2025 | BEL | AL | Composition française | [md](2025/bel/bel_al_composition-francaise_2025/brut.md) | [md](2025/bel/bel_al_composition-francaise_2025/guide.md) |
 | 2026 | BEL | AL | Composition française | [md](2026/bel/bel_al_composition-francaise_2026/brut.md) | [md](2026/bel/bel_al_composition-francaise_2026/guide.md) |

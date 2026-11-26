@@ -1,0 +1,61 @@
+{
+  "slug": "bel_bl_chinois_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Chinois",
+    "intitule": "Analyse et commentaire de textes ou documents en chinois",
+    "annee": 2024,
+    "modalite": "écrit",
+    "duree": "6 heures"
+  },
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2024_blses_sujet_analyse_commentaire_chinois.pdf",
+    "sha256_sujet": "429c15f46ed1dbf777b9a6aa6765dcd379a5b92490cebf242606320144f4e7ce",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_ecrit_chinois.pdf",
+    "sha256_rapport": "6df4eccae38fe5a5c9414bff76354c8d70e0de3ddc073104a6e2052b956064db"
+  },
+  "figures": [
+    {
+      "question": "Analyse et commentaire de textes ou documents en chinois",
+      "fichier": "figures/lecture.svg",
+      "legende": "把行为自述、负面感受和未满足的需要区分开来，有助于避免把问卷结果误读成诊断。"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Analyse et commentaire de textes ou documents en chinois"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Commentaire en chinois simplifié des deux articles du Quotidien de la jeunesse de Chine, comprenant leur méthode, les pourcentages et les entretiens. Les quatre pages PDF et le rapport ont été contrôlés.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "passages_ou_documents": [
+        "越刷越心累",
+        "游戏成瘾背后，看到青少年的真实需求"
+      ],
+      "pages_pdf_par_passage_ou_document": {
+        "越刷越心累": "1–2",
+        "游戏成瘾背后，看到青少年的真实需求": "3–4"
+      }
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "agent": "fui_physique_un",
+      "fournisseur": "codex",
+      "date": "2026-11-26",
+      "perimetre": "Commentaire en chinois simplifié des deux articles du Quotidien de la jeunesse de Chine, comprenant leur méthode, les pourcentages et les entretiens. Les quatre pages PDF et le rapport ont été contrôlés."
+    }
+  ]
+}
