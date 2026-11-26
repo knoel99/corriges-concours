@@ -1,0 +1,326 @@
+{
+  "slug": "banque-pt_pt_physique-a_2023",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique A",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "duree_heures": 4,
+  "questions": 44,
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2023/ph_a_2023_pt.pdf",
+    "sujet_sha256": "e9e28adf572d713df5599c10400d2585719496b3d789a76de146039cd3c8da4a",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2023/rapport_phys_a_ecrit_2023.pdf",
+    "sha256_rapport_jury": "b8d4d9d908a6912c04a7e6f52b5187d5901889f14bd9e04b297aba3a486146c0",
+    "livret": "https://www.banquept.fr/documents/livret/2023/Livret_PT_2023.pdf#page=13",
+    "pages_fascicule": 13,
+    "pages_rapport": 3,
+    "releve": "Données générales en page 2, questions 1 à 44 dans quatre parties pages 3–13, figures 1–10 et illustrations 1, 2, 4, 5. Aucune annexe distincte ni fichier joint au sujet."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/saturation.svg",
+      "question": "Q3",
+      "legende": "Infiltration puis chauffage à 150 m sur le diagramme de saturation du modèle empirique."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/profil-radial.svg",
+      "question": "Q12",
+      "legende": "Profil de l'eau vers l'air à l'entrée en été. Les deux sauts représentent les échanges aux surfaces."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/resistances.svg",
+      "question": "Q14",
+      "legende": "Trois résistances en série entre l'eau et l'air. Chaque nœud porte une température."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/volume-controle.svg",
+      "question": "Q16",
+      "legende": "Construction du système matériel avec une section d'entrée et une section de sortie, à débit massique constant."
+    },
+    {
+      "numero": 5,
+      "fichier": "figures/retour-critique.svg",
+      "question": "Q40",
+      "legende": "Déplacement critique normalisé, à vitesse initiale nulle."
+    },
+    {
+      "numero": 6,
+      "fichier": "figures/bode.svg",
+      "question": "Q43",
+      "legende": "Gain du déplacement relatif pour les trois facteurs de qualité du sujet et asymptotes."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": 1,
+        "premiere_page_pdf": 3
+      },
+      {
+        "question": 2,
+        "premiere_page_pdf": 3
+      },
+      {
+        "question": 3,
+        "premiere_page_pdf": 3
+      },
+      {
+        "question": 4,
+        "premiere_page_pdf": 4
+      },
+      {
+        "question": 5,
+        "premiere_page_pdf": 4
+      },
+      {
+        "question": 6,
+        "premiere_page_pdf": 4
+      },
+      {
+        "question": 7,
+        "premiere_page_pdf": 5
+      },
+      {
+        "question": 8,
+        "premiere_page_pdf": 5
+      },
+      {
+        "question": 9,
+        "premiere_page_pdf": 5
+      },
+      {
+        "question": 10,
+        "premiere_page_pdf": 6
+      },
+      {
+        "question": 11,
+        "premiere_page_pdf": 6
+      },
+      {
+        "question": 12,
+        "premiere_page_pdf": 7
+      },
+      {
+        "question": 13,
+        "premiere_page_pdf": 7
+      },
+      {
+        "question": 14,
+        "premiere_page_pdf": 7
+      },
+      {
+        "question": 15,
+        "premiere_page_pdf": 7
+      },
+      {
+        "question": 16,
+        "premiere_page_pdf": 7
+      },
+      {
+        "question": 17,
+        "premiere_page_pdf": 7
+      },
+      {
+        "question": 18,
+        "premiere_page_pdf": 7
+      },
+      {
+        "question": 19,
+        "premiere_page_pdf": 7
+      },
+      {
+        "question": 20,
+        "premiere_page_pdf": 7
+      },
+      {
+        "question": 21,
+        "premiere_page_pdf": 7
+      },
+      {
+        "question": 22,
+        "premiere_page_pdf": 7
+      },
+      {
+        "question": 23,
+        "premiere_page_pdf": 8
+      },
+      {
+        "question": 24,
+        "premiere_page_pdf": 8
+      },
+      {
+        "question": 25,
+        "premiere_page_pdf": 9
+      },
+      {
+        "question": 26,
+        "premiere_page_pdf": 9
+      },
+      {
+        "question": 27,
+        "premiere_page_pdf": 9
+      },
+      {
+        "question": 28,
+        "premiere_page_pdf": 9
+      },
+      {
+        "question": 29,
+        "premiere_page_pdf": 9
+      },
+      {
+        "question": 30,
+        "premiere_page_pdf": 10
+      },
+      {
+        "question": 31,
+        "premiere_page_pdf": 10
+      },
+      {
+        "question": 32,
+        "premiere_page_pdf": 10
+      },
+      {
+        "question": 33,
+        "premiere_page_pdf": 10
+      },
+      {
+        "question": 34,
+        "premiere_page_pdf": 10
+      },
+      {
+        "question": 35,
+        "premiere_page_pdf": 10
+      },
+      {
+        "question": 36,
+        "premiere_page_pdf": 11
+      },
+      {
+        "question": 37,
+        "premiere_page_pdf": 12
+      },
+      {
+        "question": 38,
+        "premiere_page_pdf": 12
+      },
+      {
+        "question": 39,
+        "premiere_page_pdf": 12
+      },
+      {
+        "question": 40,
+        "premiere_page_pdf": 12
+      },
+      {
+        "question": 41,
+        "premiere_page_pdf": 13
+      },
+      {
+        "question": 42,
+        "premiere_page_pdf": 13
+      },
+      {
+        "question": 43,
+        "premiere_page_pdf": 13
+      },
+      {
+        "question": 44,
+        "premiere_page_pdf": 13
+      }
+    ]
+  },
+  "contributions": [
+    {
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "phase": "redaction",
+      "perimetre": "Résolution des 44 questions, rédaction des pistes et réalisation de six figures pour les geysers, les transferts thermiques et le sismographe."
+    },
+    {
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "perimetre": "Relecture du sujet et du rapport, vérification du sens des flux et de la chute de tension, du rôle de la résistance parallèle, du seuil de résonance et des trois courbes de la figure 10. Recalcul numérique et contrôle des deux éditions."
+    }
+  ]
+}
