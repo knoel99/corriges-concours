@@ -1,0 +1,97 @@
+{
+  "slug": "banque-pt_pt_francais-b_2023",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français B",
+    "annee": 2023
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2023/fr_b_2023_pt.pdf",
+    "sujet_sha256": "54c86f3b3aa3e988ba55c96775edd8ecc0556acb33450bede9a3903a3ea9e022",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2023/rapport_fra_b_ecrit_2023.pdf",
+    "rapport_sha256": "1163c91c1736452e47dac929d4ecadea4135b9ae0741f8ce495051963ebc4ac3",
+    "programme_officiel": "https://www.education.gouv.fr/bo/22/Hebdo20/ESRS2213517A.htm",
+    "theme": "Le travail",
+    "oeuvres_au_programme": [
+      "Virgile, Géorgiques (traduction de Maurice Rat)",
+      "Simone Weil, La Condition ouvrière (extraits prescrits, hors Journal d’usine)",
+      "Michel Vinaver, Par-dessus bord (version hyper-brève)"
+    ],
+    "source_coefficients": "https://www.banquept.fr/documents/livret/2023/Livret_PT_2023.pdf#page=13",
+    "admissibilite_admission": "ENS Paris-Saclay et ENS Rennes, admission seule, coefficient 4",
+    "programme_sha256": "c89156c26e9d5a7429de38447d3b4a8db3cf60dea04a2a9370364705f39d4ec6",
+    "mots_du_texte_selon_le_sujet": 1431
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "Le travail relie-t-il ceux qui le rendent possible ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture du texte de Grimaldi jusqu’à la première personne finale, vérification des deux pathologies du salariat, de la formation du sujet et des deux propositions de dissertation. Rédaction des deux éditions, vérification du programme et réalisation du schéma."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Résumé",
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Résumé",
+        "page_pdf": 2,
+        "page_pdf_fin": 4,
+        "page_consigne": 4,
+        "perimetre": "Le passage va de la comparaison du vivant avec sa lignée (p. 2) à l’appropriation libre de sa vie (p. 4). Les deux questions suivent p. 4.",
+        "mots_demandes": 200,
+        "mots_admis": [
+          180,
+          220
+        ],
+        "mots_par_paragraphe": [
+          49,
+          67,
+          84
+        ],
+        "mots_rediges": 200,
+        "points": 8
+      },
+      {
+        "question": "Dissertation",
+        "page_pdf": 4,
+        "page_pdf_fin": 4,
+        "perimetre": "Les œuvres illustrent-elles la double affirmation de Grimaldi sur l’impossibilité de travailler seul et sur la fonction sociale de tout travail ?",
+        "points": 12
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

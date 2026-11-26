@@ -1,0 +1,76 @@
+{
+  "slug": "banque-pt_pt_francais-a_2023",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français A",
+    "annee": 2023
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2023/fr_a_2023_pt.pdf",
+    "sujet_sha256": "767f8ad5ee9d2d6e1e529524d58a75afcded43a9cb0d2c3af8f8ce25d8ab7f76",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2023/rapport_fra_a_ecrit_2023.pdf",
+    "rapport_sha256": "23d4205a5adc06845f0fdfc0f231c319088b2dc084bbaebb584a537aa08decd2",
+    "programme_officiel": "https://www.education.gouv.fr/bo/22/Hebdo20/ESRS2213517A.htm",
+    "theme": "Le travail",
+    "oeuvres_au_programme": [
+      "Virgile, Géorgiques (traduction de Maurice Rat)",
+      "Simone Weil, La Condition ouvrière (extraits prescrits, hors Journal d’usine)",
+      "Michel Vinaver, Par-dessus bord (version hyper-brève)"
+    ],
+    "source_coefficients": "https://www.banquept.fr/documents/livret/2023/Livret_PT_2023.pdf#page=13",
+    "admissibilite_admission": "École polytechnique, admissibilité, coefficient 4",
+    "precision_coefficients": "Français facultatif pour les candidats étrangers à l’École polytechnique.",
+    "programme_sha256": "c89156c26e9d5a7429de38447d3b4a8db3cf60dea04a2a9370364705f39d4ec6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "Que doit-on à celui qui a fait le travail ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Analyse des deux sens de la reconnaissance dans la proposition de Supiot, de la portée de la justice sociale et du statut des exemples de poésie, de théâtre et de témoignage. Rédaction des deux éditions, vérification du programme et réalisation du schéma."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 2,
+        "page_pdf_fin": 2,
+        "perimetre": "Dans quelle mesure les œuvres justifient-elles, avec Supiot, une justice sociale attentive à l’agir, à la qualité du travail accompli et à la personne envers qui il oblige ?"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}
