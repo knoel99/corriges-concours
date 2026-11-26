@@ -1184,6 +1184,7 @@
 | 2005 | ENS | MP-PC | Portugais (LE2) | [md](2005/ens/ens_mp-pc_portugais-le2_2005/brut.md) | [md](2005/ens/ens_mp-pc_portugais-le2_2005/guide.md) |
 | 2006 | ENS | MP-PC | Portugais (LE2) | [md](2006/ens/ens_mp-pc_portugais-le2_2006/brut.md) | [md](2006/ens/ens_mp-pc_portugais-le2_2006/guide.md) |
 | 2007 | ENS | MP-PC | Portugais (LE2) | [md](2007/ens/ens_mp-pc_portugais-le2_2007/brut.md) | [md](2007/ens/ens_mp-pc_portugais-le2_2007/guide.md) |
+| 2008 | ENS | MP-PC | Portugais (LE2) | [md](2008/ens/ens_mp-pc_portugais-le2_2008/brut.md) | [md](2008/ens/ens_mp-pc_portugais-le2_2008/guide.md) |
 | 2009 | ENS | MP-PC | Portugais (LE2) | [md](2009/ens/ens_mp-pc_portugais-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_portugais-le2_2009/guide.md) |
 | 2010 | ENS | MP-PC | Portugais (LE2) | [md](2010/ens/ens_mp-pc_portugais-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_portugais-le2_2010/guide.md) |
 | 2011 | ENS | MP-PC | Russe (langue étrangère B) | [md](2011/ens/ens_mp-pc_russe-langue-etrangere-b_2011/brut.md) | [md](2011/ens/ens_mp-pc_russe-langue-etrangere-b_2011/guide.md) |
@@ -1196,6 +1197,7 @@
 | 2005 | ENS | MP-PC | Russe (LV1) | [md](2005/ens/ens_mp-pc_russe-lv1_2005/brut.md) | [md](2005/ens/ens_mp-pc_russe-lv1_2005/guide.md) |
 | 2006 | ENS | MP-PC | Russe (LV1) | [md](2006/ens/ens_mp-pc_russe-lv1_2006/brut.md) | [md](2006/ens/ens_mp-pc_russe-lv1_2006/guide.md) |
 | 2007 | ENS | MP-PC | Russe (LV1) | [md](2007/ens/ens_mp-pc_russe-lv1_2007/brut.md) | [md](2007/ens/ens_mp-pc_russe-lv1_2007/guide.md) |
+| 2008 | ENS | MP-PC | Russe (LV1) | [md](2008/ens/ens_mp-pc_russe-lv1_2008/brut.md) | [md](2008/ens/ens_mp-pc_russe-lv1_2008/guide.md) |
 | 2009 | ENS | MP-PC | Russe (LV1) | [md](2009/ens/ens_mp-pc_russe-lv1_2009/brut.md) | [md](2009/ens/ens_mp-pc_russe-lv1_2009/guide.md) |
 | 2010 | ENS | MP-PC | Russe (LV1) | [md](2010/ens/ens_mp-pc_russe-lv1_2010/brut.md) | [md](2010/ens/ens_mp-pc_russe-lv1_2010/guide.md) |
 | 2009 | ENS | MP | Informatique | [md](2009/ens/ens_mp_informatique_2009/brut.md) | [md](2009/ens/ens_mp_informatique_2009/guide.md) |
@@ -1734,11 +1736,15 @@
 | 2005 | X | MP-PC | Portugais | [md](2005/x/x_mp-pc_portugais_2005/brut.md) | [md](2005/x/x_mp-pc_portugais_2005/guide.md) |
 | 2006 | X | MP-PC | Portugais | [md](2006/x/x_mp-pc_portugais_2006/brut.md) | [md](2006/x/x_mp-pc_portugais_2006/guide.md) |
 | 2007 | X | MP-PC | Portugais | [md](2007/x/x_mp-pc_portugais_2007/brut.md) | [md](2007/x/x_mp-pc_portugais_2007/guide.md) |
+| 2008 | X | MP-PC | Portugais | [md](2008/x/x_mp-pc_portugais_2008/brut.md) | [md](2008/x/x_mp-pc_portugais_2008/guide.md) |
+| 2009 | X | MP-PC | Portugais | [md](2009/x/x_mp-pc_portugais_2009/brut.md) | [md](2009/x/x_mp-pc_portugais_2009/guide.md) |
+| 2010 | X | MP-PC | Portugais | [md](2010/x/x_mp-pc_portugais_2010/brut.md) | [md](2010/x/x_mp-pc_portugais_2010/guide.md) |
 | 2005 | X | MP-PC | Russe | [md](2005/x/x_mp-pc_russe_2005/brut.md) | [md](2005/x/x_mp-pc_russe_2005/guide.md) |
 | 2006 | X | MP-PC | Russe | [md](2006/x/x_mp-pc_russe_2006/brut.md) | [md](2006/x/x_mp-pc_russe_2006/guide.md) |
 | 2007 | X | MP-PC | Russe | [md](2007/x/x_mp-pc_russe_2007/brut.md) | [md](2007/x/x_mp-pc_russe_2007/guide.md) |
 | 2008 | X | MP-PC | Russe | [md](2008/x/x_mp-pc_russe_2008/brut.md) | [md](2008/x/x_mp-pc_russe_2008/guide.md) |
 | 2009 | X | MP-PC | Russe | [md](2009/x/x_mp-pc_russe_2009/brut.md) | [md](2009/x/x_mp-pc_russe_2009/guide.md) |
+| 2010 | X | MP-PC | Russe | [md](2010/x/x_mp-pc_russe_2010/brut.md) | [md](2010/x/x_mp-pc_russe_2010/guide.md) |
 | 2010 | X | MP | Composition de physique et sciences de l’ingénieur | [md](2010/x/x_mp_composition-de-physique-et-sciences-de-lingenieur_2010/brut.md) | [md](2010/x/x_mp_composition-de-physique-et-sciences-de-lingenieur_2010/guide.md) |
 | 2010 | X | MP | Composition de physique | [md](2010/x/x_mp_composition-de-physique_2010/brut.md) | [md](2010/x/x_mp_composition-de-physique_2010/guide.md) |
 | 2000 | X | MP | Informatique (option) | [md](2000/x/x_mp_informatique-option_2000/brut.md) | [md](2000/x/x_mp_informatique-option_2000/guide.md) |
