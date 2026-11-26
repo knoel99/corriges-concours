@@ -47,7 +47,7 @@
         "guide"
       ],
       "modifications": true,
-      "perimetre": "Pointage physique des 19 consignes sur 4 pages. Contrôle des branches tracées en 13 et du pas nul en une itération pour le facteur de contraction nul. Explicitation du projecteur des coefficients en 10, du contrôle par le résidu en 15 et de la preuve par série sur un espace complet en 16.b."
+      "perimetre": "Pointage physique des 19 consignes sur 4 pages. Contrôle des branches tracées en 13 et de la convergence en une itération lorsque le facteur de contraction est nul. Explicitation du projecteur des coefficients en 10, du contrôle par le résidu en 15 et de la preuve par série sur un espace complet en 16.b."
     }
   ],
   "intitule": "Familles redondantes de vecteurs et reconstruction itérative",
@@ -157,7 +157,7 @@
       "p. 2, calcul du triplet plan, spectre et meilleures bornes, adjonction, vecteur de coefficients de norme minimale et spécialisations",
       "p. 3, extrémités du spectre, pas minimax et cas scalaire, contraction, erreur géométrique, coercivité sans symétrie",
       "p. 4, complétude, point fixe pour chaque second membre, injectivité et surjectivité",
-      "Contrôle des branches tracées en 13 et du pas nul en une itération pour le facteur de contraction nul. Explicitation du projecteur des coefficients en 10, du contrôle par le résidu en 15 et de la preuve par série sur un espace complet en 16.b."
+      "Contrôle des branches tracées en 13 et de la convergence en une itération lorsque le facteur de contraction est nul. Explicitation du projecteur des coefficients en 10, du contrôle par le résidu en 15 et de la preuve par série sur un espace complet en 16.b."
     ]
   }
 }
