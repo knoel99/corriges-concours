@@ -144,8 +144,11 @@
 | 2018 | Banque PT | PT | Physique B - Thermodynamique | [md](2018/banque-pt/banque-pt_pt_physique-b---thermodynamique_2018/brut.md) | [md](2018/banque-pt/banque-pt_pt_physique-b---thermodynamique_2018/guide.md) |
 | 2019 | Banque PT | PT | Physique B - Thermodynamique | [md](2019/banque-pt/banque-pt_pt_physique-b---thermodynamique_2019/brut.md) | [md](2019/banque-pt/banque-pt_pt_physique-b---thermodynamique_2019/guide.md) |
 | 2026 | Banque PT | PT | Physique B - thermodynamique | [md](2026/banque-pt/banque-pt_pt_physique-b---thermodynamique_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_physique-b---thermodynamique_2026/guide.md) |
+| 2017 | Banque PT | PT | Sciences industrielles A | [md](2017/banque-pt/banque-pt_pt_sciences-industrielles-a_2017/brut.md) | [md](2017/banque-pt/banque-pt_pt_sciences-industrielles-a_2017/guide.md) |
+| 2020 | Banque PT | PT | Sciences industrielles A | [md](2020/banque-pt/banque-pt_pt_sciences-industrielles-a_2020/brut.md) | [md](2020/banque-pt/banque-pt_pt_sciences-industrielles-a_2020/guide.md) |
 | 2026 | Banque PT | PT | Sciences industrielles A | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-a_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-a_2026/guide.md) |
 | 2026 | Banque PT | PT | Sciences industrielles B | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-b_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-b_2026/guide.md) |
+| 2025 | Banque PT | PT | Sciences industrielles C | [md](2025/banque-pt/banque-pt_pt_sciences-industrielles-c_2025/brut.md) | [md](2025/banque-pt/banque-pt_pt_sciences-industrielles-c_2025/guide.md) |
 | 2026 | Banque PT | PT | Sciences industrielles C | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-c_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-c_2026/guide.md) |
 | 2025 | BCE | ECG | Culture générale (EDHEC-ESSEC) | [md](2025/bce/bce_ecg_culture-generale-edhec-essec_2025/brut.md) | [md](2025/bce/bce_ecg_culture-generale-edhec-essec_2025/guide.md) |
 | 2026 | BCE | ECG | Allemand LVA (ELVi) | [md](2026/bce/bce_ecg_allemand-lva-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_allemand-lva-elvi_2026/guide.md) |
@@ -2179,8 +2182,16 @@
 | 2021 | X-ENS | PC | Physique B | [md](2021/x-ens/x-ens_pc_physique-b_2021/brut.md) | [md](2021/x-ens/x-ens_pc_physique-b_2021/guide.md) |
 | 2022 | X-ENS | PC | Physique B | [md](2022/x-ens/x-ens_pc_physique-b_2022/brut.md) | [md](2022/x-ens/x-ens_pc_physique-b_2022/guide.md) |
 | 2026 | X-ENS | PC | Physique B | [md](2026/x-ens/x-ens_pc_physique-b_2026/brut.md) | [md](2026/x-ens/x-ens_pc_physique-b_2026/guide.md) |
+| 2015 | X-ENS | PSI | Maths PSI | [md](2015/x-ens/x-ens_psi_maths-psi_2015/brut.md) | [md](2015/x-ens/x-ens_psi_maths-psi_2015/guide.md) |
+| 2016 | X-ENS | PSI | Maths PSI | [md](2016/x-ens/x-ens_psi_maths-psi_2016/brut.md) | [md](2016/x-ens/x-ens_psi_maths-psi_2016/guide.md) |
+| 2017 | X-ENS | PSI | Maths PSI | [md](2017/x-ens/x-ens_psi_maths-psi_2017/brut.md) | [md](2017/x-ens/x-ens_psi_maths-psi_2017/guide.md) |
+| 2018 | X-ENS | PSI | Maths PSI | [md](2018/x-ens/x-ens_psi_maths-psi_2018/brut.md) | [md](2018/x-ens/x-ens_psi_maths-psi_2018/guide.md) |
+| 2019 | X-ENS | PSI | Maths PSI | [md](2019/x-ens/x-ens_psi_maths-psi_2019/brut.md) | [md](2019/x-ens/x-ens_psi_maths-psi_2019/guide.md) |
 | 2020 | X-ENS | PSI | Maths PSI | [md](2020/x-ens/x-ens_psi_maths-psi_2020/brut.md) | [md](2020/x-ens/x-ens_psi_maths-psi_2020/guide.md) |
+| 2021 | X-ENS | PSI | Maths PSI | [md](2021/x-ens/x-ens_psi_maths-psi_2021/brut.md) | [md](2021/x-ens/x-ens_psi_maths-psi_2021/guide.md) |
+| 2022 | X-ENS | PSI | Maths PSI | [md](2022/x-ens/x-ens_psi_maths-psi_2022/brut.md) | [md](2022/x-ens/x-ens_psi_maths-psi_2022/guide.md) |
 | 2023 | X-ENS | PSI | Maths PSI | [md](2023/x-ens/x-ens_psi_maths-psi_2023/brut.md) | [md](2023/x-ens/x-ens_psi_maths-psi_2023/guide.md) |
+| 2024 | X-ENS | PSI | Maths PSI | [md](2024/x-ens/x-ens_psi_maths-psi_2024/brut.md) | [md](2024/x-ens/x-ens_psi_maths-psi_2024/guide.md) |
 | 2025 | X-ENS | PSI | Maths PSI | [md](2025/x-ens/x-ens_psi_maths-psi_2025/brut.md) | [md](2025/x-ens/x-ens_psi_maths-psi_2025/guide.md) |
 | 2026 | X-ENS | PSI | Maths PSI | [md](2026/x-ens/x-ens_psi_maths-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_maths-psi_2026/guide.md) |
 | 2015 | X-ENS | PSI | Physique PSI | [md](2015/x-ens/x-ens_psi_physique-psi_2015/brut.md) | [md](2015/x-ens/x-ens_psi_physique-psi_2015/guide.md) |
