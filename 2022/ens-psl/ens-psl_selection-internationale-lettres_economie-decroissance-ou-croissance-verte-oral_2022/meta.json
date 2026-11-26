@@ -34,7 +34,7 @@
       "legende": "Deux trajectoires pour une même hausse du PIB"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "lecture_rapport_jury",
@@ -71,6 +71,32 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Vérification de la consigne et de la modalité sur la feuille officielle, de la portée du rapport et des raisonnements et exemples des deux éditions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "gestion_2022_2023",
+      "agent": "gestion_2022_2023",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Les deux exposés distinguent l’évolution du PIB, de l’intensité et du volume des émissions. Les deux trajectoires de la figure et l’observation du GIEC concernant dix-huit pays ont été vérifiées. Un bilan en térawattheures illustre ce qu’il faudrait observer pour conclure à une substitution des renouvelables aux fossiles."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Décroissance ou croissance verte ?"
+    ],
+    "precision": "Oral, sujet individuel 2 de la feuille officielle. Le rapport rattache le projet sur la transition entre énergies fossiles et renouvelables à cette épreuve et à l’écrit « Les instruments de la politique climatique ». L’intitulé appelle un développement en économie et permet une mise en perspective par d’autres sciences sociales. Le fascicule ne comporte ni document annexe ni sous-question.",
+    "controle": "Les deux exposés distinguent l’évolution du PIB, de l’intensité et du volume des émissions. Les deux trajectoires de la figure et l’observation du GIEC concernant dix-huit pays ont été vérifiées. Un bilan en térawattheures illustre ce qu’il faudrait observer pour conclure à une substitution des renouvelables aux fossiles."
+  }
 }
