@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Sujet officiel](https://www.banquept.fr/documents/2024/ph_a_2024_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2024/rapport_phys_a_ecrit_2024.pdf) · [Livret de la session](https://www.banquept.fr/documents/livret/2024/Livret_PT_2024.pdf#page=13)
 
 **Le cycle de l’eau de pluie.** De la chute d’une goutte jusqu’à l’énergie récupérée au barrage, le sujet relie la mécanique, l’optique, l’électronique et les écoulements. Les applications numériques utilisent les constantes et la précision demandées dans le feuillet.
@@ -66,7 +68,7 @@ Le modèle prévoit $v_\infty=g\tau=2\rho_e gR^2/(9\eta_a)$ vers le bas. Avec la
 
 Choisir le diamètre comme longueur caractéristique et la viscosité de l’air comme viscosité du fluide ambiant.
 
-Le nombre de Reynolds instantané est $\mathrm{Re}(t)=\rho_a(2R)v(t)/\eta_a$. Il part de zéro et atteint, avec la vitesse limite du modèle, environ 89, soit **90**. La loi de Stokes suppose un écoulement rampant, $\mathrm{Re}\ll1$, bien plus restrictif que la simple absence de turbulence. L’estimation obtenue invalide donc l’usage de cette loi sur l’ensemble de la chute.
+Le nombre de Reynolds instantané est $\mathrm{Re}(t)=\rho_a(2R)v(t)/\eta_a$. Il part de zéro et atteint, avec la vitesse limite du modèle, environ 89, soit **90**. La loi de Stokes suppose un écoulement rampant, $\mathrm{Re}\ll1$, bien plus restrictif que la simple absence de turbulence. Le seuil indicatif $\mathrm{Re}=1$ est déjà atteint pour $v=\eta_a/(2\rho_aR)=0{,}05$ m/s. L’estimation obtenue invalide donc l’usage de la loi de Stokes sur l’ensemble de la chute.
 
 ## I.2 · Chute dans une atmosphère humide
 
@@ -84,7 +86,7 @@ L’hypothèse de croissance s’écrit $\dot V=k\,4\pi r^2$ où $k$ est constan
 
 La densité du liquide demeure constante pendant la croissance.
 
-La masse vaut $m(t)=4\pi\rho_e(r_0+kt)^3/3$. En dérivant, $\mathrm dm/\mathrm dt=4\pi\rho_e k(r_0+kt)^2$. Le débit de masse est positif lorsque de l’eau rejoint la goutte et se mesure en kilogrammes par seconde.
+La masse vaut $m(t)=4\pi\rho_e(r_0+kt)^3/3$. En dérivant, $\mathrm dm/\mathrm dt=4\pi\rho_e k(r_0+kt)^2$. Le débit de masse est positif lorsque de l’eau rejoint la goutte et se mesure en kilogrammes par seconde. Le rayon croît linéairement, mais le débit de masse captée augmente comme le carré du rayon.
 
 ### Question 10 · Équation pour une goutte en croissance
 
@@ -118,7 +120,7 @@ La tension superficielle de l’interface eau-air, $\gamma$, est aussi son éner
 
 Suivre les flèches de la figure 3. À la réflexion, le prolongement du rayon incident et sa demi-droite de retour diffèrent d’un angle plat.
 
-Les déviations comptées positivement dans le sens trigonométrique sont $D_1=i_2-i_1$, $D_2=i_2+i_3-\pi$ et $D_3=i_4+i_3$. À la sortie, le rayon intérieur est repéré par l’angle $-i_3$ à la normale. À la réflexion, le changement de sens par rapport à la demi-droite incidente explique le terme $-\pi$. Le rayon tourne dans le sens horaire à chacune des trois étapes du dessin.
+Les déviations comptées positivement dans le sens trigonométrique sont $D_1=i_2-i_1$, $D_2=i_2+i_3-\pi$ et $D_3=i_4+i_3$. À la sortie, le rayon intérieur est repéré par l’angle $-i_3$ à la normale. À la réflexion, le changement de sens par rapport à la demi-droite incidente explique le terme $-\pi$. Par exemple, pour une incidence de 60° et $n=1{,}33$, les deux réfractions produisent chacune environ −19° et la réflexion interne environ −99°. Ces trois déviations sont bien horaires.
 
 ![Figure — Réfractions et réflexion du rayon dans la goutte](figures/rayon.svg)
 
@@ -346,7 +348,7 @@ La sortie $u_2$ est un créneau, positif entre $0$ et $t_1$ et négatif entre $t
 
 Vérifier que les deux sorties et le sens d’évolution ont retrouvé leur état de départ.
 
-Les deux signaux recommencent le même cycle après $t_2$, donc $T=4R_1C(h)$. Le rapport cyclique du créneau vaut un demi et la fréquence est $1/[4R_1C(h)]$. L’humidité captée augmente la capacité et donc la période mesurée.
+Les deux signaux recommencent le même cycle après $t_2$, donc $T=4R_1C(h)$. Le rapport cyclique du créneau vaut un demi et la fréquence est $1/[4R_1C(h)]$. L’eau de pluie recueillie augmente la capacité et donc la période mesurée.
 
 ## III.3 · Mesure des précipitations
 
@@ -372,7 +374,7 @@ L’astable donne $C/C_0=T/(4R_1C_0)$. En inversant la relation affine de la que
 
 Calculer d’abord la période à vide à partir de la capacité fournie parmi les données numériques.
 
-Avec $R_1=10^3$ Ω et $C_0=10$ nF, $T_0=4R_1C_0=40$ µs. Le rapport $T/T_0=44/40=1{,}1$ donne $h_s=(0{,}10\ \mathrm m)\times0{,}1/80=1{,}25\times10^{-4}$ m. Au chiffre significatif demandé, cela représente **0,1 mm de pluie**. La hauteur rapportée au disque complet vaut $8/9$ de cette valeur, soit environ 0,11 mm avant l’arrondi. L’application utilise la valeur de $C_0$ fournie pour le capteur.
+Avec $R_1=10^3$ Ω et $C_0=10$ nF, $T_0=4R_1C_0=40$ µs. Le rapport $T/T_0=44/40=1{,}1$ donne $h_s=(0{,}10\ \mathrm m)\times0{,}1/80=1{,}25\times10^{-4}$ m. Au chiffre significatif demandé, cela représente **0,1 mm de pluie**. La hauteur rapportée au disque complet vaut $8/9$ de cette valeur, soit environ 0,11 mm avant l’arrondi. L’application utilise la valeur de $C_0$ donnée explicitement pour le capteur. La formule du coaxial idéal de la question 25, appliquée aux rayons et à la hauteur fournis, donnerait seulement environ 5 pF. Les deux jeux de données ne coïncident donc pas.
 
 ## IV · Remplissage d’une nappe phréatique
 
@@ -424,7 +426,7 @@ On obtient $\bar v=D_v/(\pi a^2)=\rho_e g a^2/(8\eta_e)=v_{\max}/2$. La moyenne 
 
 Diviser le volume liquide contenu dans le capillaire par le volume qui en sort par seconde.
 
-Le temps de séjour moyen du flux entrant vaut $\Delta t_{\rm moy}=\pi a^2H/D_v=H/\bar v=8\eta_eH/(\rho_e g a^2)=2\Delta t_{\min}$. Numériquement, **$8\times10^8$ s**, environ 25 ans. Cette moyenne pondère chaque temps de parcours $H/v(r)$ par le débit local $v(r)\,\mathrm dS$.
+Le temps de séjour moyen du flux entrant vaut $\Delta t_{\rm moy}=\pi a^2H/D_v=H/\bar v=8\eta_eH/(\rho_e g a^2)=2\Delta t_{\min}$. Numériquement, **$8\times10^8$ s**, environ 25 ans. Cette moyenne pondère chaque temps de parcours $H/v(r)$ par le débit local $v(r)\,\mathrm dS$. Ainsi les lignes de courant proches de la paroi sont lentes et transportent très peu d’eau.
 
 ### Question 50 · Minéralisation pendant l’infiltration
 
