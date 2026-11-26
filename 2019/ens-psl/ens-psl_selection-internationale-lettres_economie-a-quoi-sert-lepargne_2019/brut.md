@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## À quoi sert l’épargne ?
 
 Deux ménages reçoivent la même prime. Le premier en conserve la moitié pour pouvoir réparer sa voiture. Le second achète des actions à un épargnant qui veut précisément payer une réparation. Les deux premiers ménages ont différé une dépense, mais le second achat n’a apporté aucun financement nouveau à l’entreprise dont les actions ont changé de mains. Pour mesurer la portée de l’épargne, il faut d’abord la définir comme un flux, la part du revenu disponible qui n’est pas consommée au cours d’une période. Le patrimoine désigne le stock d’actifs détenus à une date, net des dettes si l’on parle de patrimoine net. Une plus-value peut enrichir le détenteur d’un actif sans qu’il ait épargné davantage. Que rend donc possible le renoncement à consommer un revenu présent, pour celui qui le perçoit et pour la collectivité ?
@@ -31,3 +33,9 @@ Au voisinage du plein emploi, consacrer davantage de ressources à la constructi
 En sous-emploi, si tous réduisent simultanément leur consommation, les commerçants perdent des recettes, les producteurs ajustent leur activité et les revenus diminuent. Supposons que l’investissement prévu reste de 20 et que la consommation représente quatre cinquièmes du revenu. Dans l’équilibre fermé précédent, $Y=0{,}8Y+20$ donne 100, dont 20 épargnés. Avec une propension à consommer de trois quarts, le nouvel équilibre est 80, dont 20 épargnés encore. La volonté d’épargner davantage à revenu donné a contracté la production. Cet exemple keynésien suppose des prix fixes et un investissement insensible à court terme à cette contraction. Une baisse des taux, des dépenses publiques ou des débouchés extérieurs peuvent en modifier l’issue.
 
 L’épargne donne ainsi un pouvoir sur le temps, mais un pouvoir inégalement distribué. Elle protège, transmet et peut soutenir la production future. Son utilité collective se juge à la destination des fonds, à la capacité de l’économie à mobiliser des ressources réelles et à l’effet de la dépense différée sur les revenus d’autrui.
+
+## Vérification sur le sujet
+
+Les deux éditions distinguent flux d’épargne, stock de patrimoine, placement sur un marché secondaire et financement d’un projet. Le modèle fermé à investissement fixé à 20 donne bien un revenu de 100 puis de 80 lorsque la propension à consommer passe de 0,8 à 0,75.
+
+L’ouverture extérieure précise l’emploi des fonds. Dans une économie simplifiée dont le revenu national disponible est 120, la consommation finale 85 et la formation de capital 30, l’épargne nationale vaut 35. Les cinq unités restantes constituent, en l’absence de transferts en capital, une capacité de financement vis-à-vis du reste du monde. L’excédent peut financer l’acquisition d’actifs extérieurs ou réduire des engagements antérieurs. Il ne décrit pas à lui seul la destination de l’épargne d’un ménage particulier.
