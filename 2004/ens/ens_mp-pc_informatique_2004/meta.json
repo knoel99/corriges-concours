@@ -40,6 +40,48 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Les treize questions et leurs sous-questions. Vérification des deux égalités de compatibilité sur le fac-similé, contre-exemples et correction du cas des puits ET. Arbres de calcul, complément, élimination de l’alternance et construction quadratique du singleton unaire."
+    },
+    {
+      "phase": "relecture",
+      "fournisseur": "codex",
+      "agent": "reprise_physique_ulm",
+      "session": "reprise_physique_ulm",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Précision de l’initialisation et de la taille de l’automate 13.2 dans le brut, compléments de complexité et de résultat dans le guide. Contrôle et attestation de la couverture."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5",
+      "5.1",
+      "5.2",
+      "5.3",
+      "5.4",
+      "6",
+      "7.1",
+      "7.2",
+      "7.3",
+      "7.4",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13.1",
+      "13.2"
+    ],
+    "verification": "Recoupement du fac-similé conservé à l’empreinte des sources avec les énoncés, subdivisions, figures et résultats des deux éditions. Précision de l’initialisation et de la taille de l’automate 13.2 dans le brut, compléments de complexité et de résultat dans le guide."
+  }
 }
