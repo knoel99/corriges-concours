@@ -10,6 +10,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## A — Synthèse des documents 1 à 4
 
 **الذكاء الاصطناعي في البلدان العربية بين تطوير الخدمات والقدرة على صنع التقنية**
