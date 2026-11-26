@@ -1,0 +1,276 @@
+{
+  "slug": "x_ta_deuxieme-epreuve-de-mathematiques_1988",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "TA",
+    "filiere_historique": "T.A.",
+    "matiere": "Deuxième épreuve de mathématiques",
+    "annee": 1988,
+    "modalite": "écrit"
+  },
+  "questions": 20,
+  "duree_heures": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-6fccddfad97b36d3d569",
+    "sujet_sha256": "5411ff3405e0b15e25bdcf26c604c823ccef2577d77501f8992c88f8da485ca7",
+    "notice_ups": "m88mi2",
+    "calendrier": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000697782",
+    "provenance": "Les pages 134 et 135 du recueil portent la deuxième épreuve, réservée à l’option T.A. Les trois subdivisions de II.2 se lisent sur la deuxième vue après la définition des intégrales à la fin de la première."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "document": "m88mi2ea",
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-6fccddfad97b36d3d569",
+      "sha256": "5411ff3405e0b15e25bdcf26c604c823ccef2577d77501f8992c88f8da485ca7",
+      "pages": 2,
+      "rendu_page_sha256": [
+        "20a10eb8b06083a424d3408aea717c01f5f2edbf66f1202d33ba7fff2a94735d",
+        "150742c1d4d1406057cf08751c9bfa3fcf617f5847646e7eb09c5029d5b65b1d"
+      ]
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "x_hist_1986",
+      "session": "x_hist_1986",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction originale des 20 rubriques, des indications et des deux figures. Les pages 134 et 135 du recueil portent la deuxième épreuve, réservée à l’option T.A. Les trois subdivisions de II.2 se lisent sur la deuxième vue après la définition des intégrales à la fin de la première."
+    }
+  ],
+  "figures": [
+    {
+      "question": "I.1.b",
+      "numero": 1,
+      "fichier": "figures/cosinus-prolonge.svg",
+      "legende": "Le prolongement pair du cosinus pour x égal à deux tiers est continu aux raccords."
+    },
+    {
+      "question": "I.1.b",
+      "numero": 2,
+      "fichier": "figures/sinus-prolonge.svg",
+      "legende": "Pour le prolongement impair, les cercles ouverts indiquent les limites latérales et les points pleins la valeur zéro aux raccords."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1.a",
+      "I.1.b",
+      "I.1.c",
+      "I.1.d",
+      "I.2.a",
+      "I.2.b",
+      "I.3",
+      "II.1.a",
+      "II.1.b",
+      "II.2.a",
+      "II.2.b",
+      "II.2.c",
+      "II.3.a",
+      "II.3.b",
+      "II.4.a",
+      "II.4.b",
+      "II.5",
+      "III.1",
+      "III.2",
+      "III.3"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "I.1.a",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 1,
+        "page_recueil": 134
+      },
+      {
+        "question": "I.1.b",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 1,
+        "page_recueil": 134
+      },
+      {
+        "question": "I.1.c",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 1,
+        "page_recueil": 134
+      },
+      {
+        "question": "I.1.d",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 1,
+        "page_recueil": 134
+      },
+      {
+        "question": "I.2.a",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 1,
+        "page_recueil": 134
+      },
+      {
+        "question": "I.2.b",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 1,
+        "page_recueil": 134
+      },
+      {
+        "question": "I.3",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 1,
+        "page_recueil": 134
+      },
+      {
+        "question": "II.1.a",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 1,
+        "page_recueil": 134
+      },
+      {
+        "question": "II.1.b",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 1,
+        "page_recueil": 134
+      },
+      {
+        "question": "II.2.a",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 135
+      },
+      {
+        "question": "II.2.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 135
+      },
+      {
+        "question": "II.2.c",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 135
+      },
+      {
+        "question": "II.3.a",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 135
+      },
+      {
+        "question": "II.3.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 135
+      },
+      {
+        "question": "II.4.a",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 135
+      },
+      {
+        "question": "II.4.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 135
+      },
+      {
+        "question": "II.5",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 135
+      },
+      {
+        "question": "III.1",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 135
+      },
+      {
+        "question": "III.2",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 135
+      },
+      {
+        "question": "III.3",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 135
+      }
+    ],
+    "precision": "Les pages 134 et 135 du recueil portent la deuxième épreuve, réservée à l’option T.A. Les trois subdivisions de II.2 se lisent sur la deuxième vue après la définition des intégrales à la fin de la première."
+  }
+}
