@@ -35,7 +35,7 @@
     "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
     "sujet_sha256": "18c017c092cab21b998b299991b400b0630fabc2a3332e81a5f3481db28d5dc2"
   },
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "revision": {
     "date": "2026-11-24",
     "modele": null,
@@ -112,6 +112,23 @@
       "fournisseur": "codex",
       "session": "astra_langues",
       "perimetre": "Précision de l’exemple d’étiquetage à composition identique, des trois mécanismes de biais et de deux résultats éducatifs que distingue Robson."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "session": "fin_langues_x_interens",
+      "agent": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Fascicule officiel, consignes de compréhension et d’essai en fin de sujet (PDF de 6 pages). Les quatre réponses comptent respectivement 72, 62, 63, 77 mots hors références. L’essai compte 433 mots pour une cible de 450 à 10 % près, avec un séparateur tous les 50 mots. Les cinq réponses sont présentes dans les deux éditions. Les réponses rendent compte des biais cités par Robson, de la portée des tests, des compétences complémentaires et de l’effet Flynn. L’essai discute le rapport entre résultats individuels aux tests et décisions collectives.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
   ],
   "provenance": {
@@ -128,5 +145,16 @@
       "effort": "ultra",
       "service_tier": null
     }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "Essai"
+    ],
+    "precision": "Fascicule officiel, consignes de compréhension et d’essai en fin de sujet (PDF de 6 pages). Les quatre réponses comptent respectivement 72, 62, 63, 77 mots hors références. L’essai compte 433 mots pour une cible de 450 à 10 % près, avec un séparateur tous les 50 mots. Les cinq réponses sont présentes dans les deux éditions. Les réponses rendent compte des biais cités par Robson, de la portée des tests, des compétences complémentaires et de l’effet Flynn. L’essai discute le rapport entre résultats individuels aux tests et décisions collectives."
   }
 }
