@@ -1,0 +1,173 @@
+{
+  "slug": "x_ta_premiere-epreuve-de-mathematiques_1985",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "TA",
+    "annee": 1985,
+    "matiere": "Première épreuve de mathématiques",
+    "modalite": "écrit"
+  },
+  "intitule": "Première épreuve de mathématiques · concours commun Mines-Ponts · X option T.A.",
+  "questions": 14,
+  "duree_heures": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-8a883db834074792fefa",
+    "sujet_sha256": "9ce94a6a150b02b80d90bd172271e41bcec507fecc9351502ae1cc8293e2c58a",
+    "notice_ups": "m85mi1",
+    "notice_officielle": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000697778",
+    "precisions": "Le bandeau des écoles donne « École polytechnique (option T.A.) ». L’épreuve est commune aux options M, P′ et T.A. du concours commun. Pour l’X, seul le recrutement T.A. est mentionné dans la liste des écoles."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-8a883db834074792fefa",
+      "sha256": "9ce94a6a150b02b80d90bd172271e41bcec507fecc9351502ae1cc8293e2c58a",
+      "pages": 3,
+      "rendu_page_sha256": [
+        "6a03f6ebbd43e6d7b906144c3f6b026bcc1599cde82cbd79577775e99e06bbf4",
+        "083b3448416c47ab34928f6f6fd3bdc7a847e57a60af8cd31d269e83e005cb00",
+        "e677b509ed1fa36dada767666a42c8b828c978540bc73c547515107e3aa44598"
+      ]
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "x_ta_mathematiques_1_1985_1987",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Deux éditions complètes, 14 questions et sous-questions, indications et deux figures."
+    },
+    {
+      "phase": "revision",
+      "session": "x_ta_mathematiques_1_1985_1987",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Recalcul des six sommes, des signes de dérivées et des limites singulières à partir des trois feuillets."
+    }
+  ],
+  "figures": [
+    {
+      "question": "V.1",
+      "numero": 1,
+      "fichier": "figures/branche-gauche.svg",
+      "legende": "Figure 1 — Entre −2 et 0, la branche descend vers le point (0, 1) en restant au-dessus de sa tangente."
+    },
+    {
+      "question": "V.3",
+      "numero": 2,
+      "fichier": "figures/branche-droite.svg",
+      "legende": "Figure 2 — Sur la demi-droite positive, la branche décroît vers son asymptote horizontale."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "III.1",
+      "III.2",
+      "IV.1",
+      "IV.2",
+      "IV.3",
+      "V.1",
+      "V.2",
+      "V.3"
+    ],
+    "repere_par_question": [
+      {
+        "question": "I.1",
+        "page_pdf": 2,
+        "page_imprimee": 52
+      },
+      {
+        "question": "I.2",
+        "page_pdf": 2,
+        "page_imprimee": 52
+      },
+      {
+        "question": "II.1",
+        "page_pdf": 2,
+        "page_imprimee": 52
+      },
+      {
+        "question": "II.2",
+        "page_pdf": 2,
+        "page_imprimee": 52
+      },
+      {
+        "question": "II.3",
+        "page_pdf": 2,
+        "page_imprimee": 52
+      },
+      {
+        "question": "II.4",
+        "page_pdf": 2,
+        "page_imprimee": 52
+      },
+      {
+        "question": "III.1",
+        "page_pdf": 2,
+        "page_imprimee": 52,
+        "suite_page_imprimee": 53
+      },
+      {
+        "question": "III.2",
+        "page_pdf": 3,
+        "page_imprimee": 53
+      },
+      {
+        "question": "IV.1",
+        "page_pdf": 3,
+        "page_imprimee": 53
+      },
+      {
+        "question": "IV.2",
+        "page_pdf": 3,
+        "page_imprimee": 53
+      },
+      {
+        "question": "IV.3",
+        "page_pdf": 3,
+        "page_imprimee": 53
+      },
+      {
+        "question": "V.1",
+        "page_pdf": 3,
+        "page_imprimee": 53
+      },
+      {
+        "question": "V.2",
+        "page_pdf": 3,
+        "page_imprimee": 53
+      },
+      {
+        "question": "V.3",
+        "page_pdf": 3,
+        "page_imprimee": 53
+      }
+    ]
+  }
+}
