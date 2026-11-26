@@ -1,0 +1,168 @@
+{
+  "slug": "bel_al_latin-oral-option-19-juin_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Latin (oral option 19 juin)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Option latin d’Ulm du 19 juin 2026, cinq études de préparation à partir du rapport annuel",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [],
+    "precision": "L’index de l’ENS rattache au 19 juin 2026 un feuillet qui énumère sept œuvres. Le jury n’y reproduit ni les passages ni leurs limites. Son rapport concerne les dix-sept optionnaires de l’année. Il donne des indices sur cinq œuvres de cette liste. Le présent corrigé propose cinq études dont les bornes sont choisies dans les éditions latines. Le texte de chaque billet du 19 juin reste inconnu.",
+    "oeuvres_repertoriees_le_19_juin": 7,
+    "etudes_de_preparation": 5,
+    "autres_titres": "Pour la Guerre de Jugurtha, le rapport signale qu’un portrait mettait en valeur les qualités militaires de Jugurtha. Plusieurs scènes pourraient répondre à ce signalement. Pour les Lettres de Sénèque, il évoque l’attitude du sage devant une catastrophe, sans numéro de lettre, lieu ni citation. Le feuillet du jour donne les deux titres et les indices annuels ne suffisent pas à faire une version du texte tiré."
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oraux_option_latin_al.pdf",
+    "sujet_sha256": "8ab37592c8bedd60162cd2d85682830b8885776bc1662e84396d990449bc7792",
+    "index_date": "https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-al",
+    "ancre_index": "19 juin",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_latin_option.pdf",
+    "rapport_jury_sha256": "535771e03de1c55b3db9d119f00c6959541fed6d0346f16891ac19cad7b046cd",
+    "pages_rapport": "p. 1–3, rapport annuel de l’option",
+    "passages_de_preparation": {
+      "ovide": {
+        "reference": "Ovide, Métamorphoses XIII, 123–139",
+        "oeuvre_du_repertoire": "Ovide, Métamorphoses",
+        "indice_et_limite": "Le rapport annuel, page 3, nomme la dispute pour les armes d’Achille et l’habileté d’Ulysse face à Ajax dans les Métamorphoses. Les vers 123–139 sont retenus pour étudier le passage d’un orateur à l’autre et le début de la réponse.",
+        "debut": "Finierat Telamone satus vulgique secutum",
+        "fin": "invidia careat, bona nec sua quisque recuset.”",
+        "edition_latine": "https://raw.githubusercontent.com/tesserae/tesserae/master/texts/la/ovid.metamorphoses.tess",
+        "sha256_edition": "e5893f7844e40d04c24ad413f86cea8f3031b2d26c252d2a53a4f1002fa05744",
+        "unites_lues": [
+          "13.123",
+          "13.124",
+          "13.125",
+          "13.126",
+          "13.127",
+          "13.128",
+          "13.129",
+          "13.130",
+          "13.131",
+          "13.132",
+          "13.133",
+          "13.134",
+          "13.135",
+          "13.136",
+          "13.137",
+          "13.138",
+          "13.139"
+        ]
+      },
+      "salluste": {
+        "reference": "Salluste, Conjuration de Catilina 51, 4–8",
+        "oeuvre_du_repertoire": "Salluste, Catilina",
+        "indice_et_limite": "Le rapport annuel, page 3, décrit César à la tribune du Sénat et son emploi des précédents historiques. Le chapitre 51 contient le discours. La séquence choisie, § 4–8, donne les deux précédents, puis leur application aux conjurés. Au § 9, César passe aux orateurs venus avant lui.",
+        "debut": "«magna mihi copia est memorandi, patres conscripti,",
+        "fin": "his utendum censeo, quae legibus conparata sunt.»",
+        "edition_latine": "https://raw.githubusercontent.com/tesserae/tesserae/master/texts/la/sallust.catilina.tess",
+        "sha256_edition": "d00f3945a9a41d3fb025a215677a9e7e80bfb339bb1d25bb0a64d14ae186323d",
+        "unites_lues": [
+          "51.4",
+          "51.5",
+          "51.6",
+          "51.7",
+          "51.8"
+        ]
+      },
+      "silius": {
+        "reference": "Silius Italicus, Punica I, 99–119, jusqu’à tuos",
+        "oeuvre_du_repertoire": "Silius Italicus, Punica",
+        "indice_et_limite": "Le rapport annuel, page 3, évoque l’atmosphère effrayante du serment d’Hannibal. Le passage de préparation commence par l’entrée de l’enfant dans le sanctuaire. Le serment proprement dit occupe les v. 114–119 et cesse après tuos. Le récit du rite recommence au milieu de ce dernier vers.",
+        "debut": "Hannibal haec patrio iussu ad penetralia fertur,",
+        "fin": "per manes, regina, tuos.»",
+        "edition_latine": "https://raw.githubusercontent.com/tesserae/tesserae/master/texts/la/silius_italicus.punica.tess",
+        "sha256_edition": "e00585eed3917abf46d52e402a97375e4be9a26494c31f4f5da7ec3f45ed0072",
+        "unites_lues": [
+          "1.99",
+          "1.100",
+          "1.101",
+          "1.102",
+          "1.103",
+          "1.104",
+          "1.105",
+          "1.106",
+          "1.107",
+          "1.108",
+          "1.109",
+          "1.110",
+          "1.111",
+          "1.112",
+          "1.113",
+          "1.114",
+          "1.115",
+          "1.116",
+          "1.117",
+          "1.118",
+          "1.119"
+        ]
+      },
+      "tacite": {
+        "reference": "Tacite, Annales IV, 62–63",
+        "oeuvre_du_repertoire": "Tacite, Annales",
+        "indice_et_limite": "Le rapport annuel cite le promoteur Atilius et l’amphithéâtre de Fidènes, page 1, puis les suites pathétiques de l’effondrement, page 3. Les deux chapitres qui racontent l’événement sont ici étudiés ensemble. Le rapport évoque également, chez Tacite, une rumeur menaçant la stabilité de l’Empire. Rien n’autorise à identifier cette seconde remarque avec la catastrophe de Fidènes.",
+        "debut": "M. Licinio L. Calpurnio consulibus ingentium bellorum",
+        "fin": "post proelia saucios largitione et cura sustentabant.",
+        "edition_latine": "https://raw.githubusercontent.com/tesserae/tesserae/master/texts/la/tacitus.annales.tess",
+        "sha256_edition": "aebe1856d50fba72b241ec21712ffbdc9b2f96c4def5ee42968c51c83cbf7f00",
+        "unites_lues": [
+          "4.62",
+          "4.63"
+        ]
+      },
+      "quintilien": {
+        "reference": "Quintilien, Institution oratoire I, 1, 4–7",
+        "oeuvre_du_repertoire": "Quintilien, Institution oratoire",
+        "indice_et_limite": "Le rapport annuel reproduit deux groupes de mots à la page 2, « Laelia, C. filia » et « Hortensiae Q. filiae oratio ». Les deux figurent au § 6 du même chapitre. Les § 4–5 et 7, sur les nourrices et l’éducation familiale, forment le contexte de lecture retenu ici.",
+        "debut": "ante omnia ne sit vitiosus sermo nutricibus,",
+        "fin": "propter hoc ipsum ad cetera magis diligentes.",
+        "edition_latine": "https://raw.githubusercontent.com/tesserae/tesserae/master/texts/la/quintilian.institutio_oratoria.tess",
+        "sha256_edition": "5afa3ba654efc8fd12882cc8fa8e002b4fdf6ba6d80c19ad0862e076133a6ad0",
+        "unites_lues": [
+          "1.1.4",
+          "1.1.5",
+          "1.1.6",
+          "1.1.7"
+        ]
+      }
+    }
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/paroles.svg",
+      "question": "Ovide et Silius",
+      "legende": "Du regard à la prise de parole, l’enchaînement des gestes indique qui maîtrise le discours."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/quintilien.svg",
+      "question": "Quintilien I, 1, 6",
+      "legende": "Trois exemples déplacent successivement la preuve de la transmission familiale vers l’éloquence publique."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "latin26_lyon",
+      "session": "latin_option_ulm_19_juin_2026",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Collation du sommaire daté par l’index et du rapport annuel. Choix déclaré de cinq passages dans les éditions latines, textes, traductions, commentaires, indications grammaticales et deux schémas. Aucun billet individuel du jour n’est déclaré intégralement restitué."
+    }
+  ]
+}
