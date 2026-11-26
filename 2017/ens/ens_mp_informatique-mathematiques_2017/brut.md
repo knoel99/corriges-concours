@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Un carré est la juxtaposition de deux copies d’un même mot non vide. Les indices des lettres commencent à 0. La notation $m[a:b]$ représente les lettres d’indices $a$ à $b-1$. Les fonctions Caml s’appuient sur les primitives de tableaux données par le sujet.
 
 ## I · Existence d’un carré
@@ -18,20 +20,15 @@ La fonction renvoie le plus grand $j\in\{0,\ldots,p\}$ tel que, pour tout $0\le 
 
 ### Question 3 · Chercher une période donnée
 
-À chaque position admissible, le test fourni par le sujet est `carre_pe_pos m p i = p`. On peut ainsi interrompre chaque comparaison de blocs au premier désaccord. Voici la variante qui compare systématiquement les $p$ paires d’une position et qui s’arrête au premier carré trouvé. Ce choix donne un décompte exact du pire cas en 5.
+Un carré de période $p$ occupe $2p$ lettres. On essaie chaque début possible de 0 à $n-2p$. D’après la question 2, le premier appel renvoyant $p$ fournit un carré. Si $n<2p$, la boucle est vide.
 
 ```ocaml
 let carre_pe m p =
-  let n = vect_length m and i = ref 0 and trouve = ref false in
-  while !i <= n - 2*p && not !trouve do
-    let egal = ref true in
-    for j = 0 to p-1 do
-      if m.(!i+j) <> m.(!i+p+j) then egal := false
-    done;
-    trouve := !egal;
+  let dernier = vect_length m - 2*p and i = ref 0 in
+  while !i <= dernier && carre_pe_pos m p !i <> p do
     incr i
   done;
-  !trouve;;
+  !i <= dernier;;
 ```
 
 ### Question 4 · Essayer toutes les périodes
@@ -47,7 +44,11 @@ let carre_naif m =
 
 ### Question 5 · Pire cas de la recherche naïve
 
-Avec le code de 3, une période $p$ coûte au plus $p(n-2p+1)$ comparaisons de lettres. Le coût cumulé est $O(n^3)$. Pour un mot sans carré de longueur $n$, dont l’énoncé suppose l’existence, toutes ces comparaisons ont lieu. Les périodes comprises entre $n/8$ et $n/4$ sont en nombre $\Theta(n)$ et chacune coûte $\Theta(n^2)$. Le pire cas de la variante écrite est donc $\Theta(n^3)$. Si l’on utilise directement le programme de 1 qui s’arrête au premier désaccord entre lettres, le même calcul établit la majoration cubique, sans supposer que toutes ses comparaisons individuelles sont faites.
+Pour la période $p$, on essaie au plus $n-2p+1$ positions, avec au plus $p$ comparaisons de lettres par position. En sommant sur les périodes admissibles, le nombre de comparaisons est donc majoré par
+$$
+\sum_{p=1}^{\lfloor n/2\rfloor}p(n-2p+1)=O(n^3).
+$$
+Les contrôles de boucle ajoutent au plus $O(n^2)$ opérations. La complexité dans le pire cas est donc en $O(n^3)$, la borne demandée par le jury. Sur un mot sans carré, tous les débuts et toutes les périodes sont essayés, mais une comparaison de blocs peut finir au premier désaccord. Si la variante compare systématiquement les $p$ lettres de chaque bloc, la somme ci-dessus est atteinte sur ce mot et son pire cas est $\Theta(n^3)$.
 
 ### Question 6 · Cas de l’alphabet binaire
 
@@ -183,13 +184,13 @@ let rec carre m =
 
 ### Question 21 · Compléter la table de préfixes
 
-Pour $v=\mathtt{aabaabaaab}$ on obtient
+Pour $v=\mathtt{aabaabaaab}$, voici $g$ et tous les choix de $f$ avant le traitement de chaque indice $i$.
 
-| Indice $i$ | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+| $i$ | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | $\mathrm{pref}_i$ | 10 | 1 | 0 | 5 | 1 | 0 | 2 | 3 | 1 | 0 |
-| $g$ avant de traiter $i$ | — | — | 2 | 2 | 8 | 8 | 8 | 8 | 10 | 10 |
-| $f$ possibles | — | — | 1 | 1, 2 | 3 | 3 | 3 | 3, 6 | 7 | 7 |
+| $g$ | — | — | 2 | 2 | 8 | 8 | 8 | 8 | 10 | 10 |
+| $f$ | — | — | 1 | 1, 2 | 3 | 3 | 3 | 3, 6 | 7 | 7 |
 
 Par exemple, avant $i=7$, les intervalles commençant en 3 et en 6 finissent tous deux à la frontière exclusive 8. L’indice 0 ne participe pas à la définition du maximum.
 
@@ -207,7 +208,7 @@ Posons $k=\mathrm{pref}_{i-f}$ et $h=g-i>0$. Sur les $h$ premières positions, $
 - Si $k>h$, il y a accord sur $h$ lettres. La relation en position miroir dit alors $v_h=v_{i-f+h}=v_{g-f}$. Si $g<|v|$, la maximalité de la fenêtre donne $v_g\ne v_{g-f}$ et bloque l’extension à $h$. Si $g=|v|$, le mot est déjà épuisé. Ainsi $\mathrm{pref}_i=h$.
 - Si $k=h$, l’accord de longueur $h$ est acquis, et le désaccord vu depuis $i-f$ ne décide pas si $v_g=v_h$. Comparer directement $v[g:]$ et $v[h:]$. Leur plus longue longueur commune $\ell$ donne $\mathrm{pref}_i=h+\ell$, y compris $\ell=0$ au bord droit.
 
-![La fenêtre connue [3,8) est une copie du préfixe de longueur 5. Les comparaisons reprises directement au bord droit amortissent le coût de calcul de toute la table.](figures/fenetre-de-prefixe.svg)
+![La fenêtre connue, des indices 3 à 7 inclus, est une copie du préfixe de longueur 5. Les comparaisons reprises directement au bord droit amortissent le coût de calcul de toute la table.](figures/fenetre-de-prefixe.svg)
 
 ### Question 24 · Correction, terminaison et coût de la figure 1
 

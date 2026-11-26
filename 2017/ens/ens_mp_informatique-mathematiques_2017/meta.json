@@ -24,7 +24,7 @@
     {
       "fichier": "figures/fenetre-de-prefixe.svg",
       "question": "23",
-      "legende": "La fenêtre connue [3,8) est une copie du préfixe de longueur 5. Les comparaisons reprises directement au bord droit amortissent le coût de calcul de toute la table."
+      "legende": "La fenêtre connue, des indices 3 à 7 inclus, est une copie du préfixe de longueur 5. Les comparaisons reprises directement au bord droit amortissent le coût de calcul de toute la table."
     }
   ],
   "contributions": [
@@ -38,6 +38,68 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Rédaction originale des 27 questions après lecture du sujet et du rapport officiels. Calcul des deux tableaux d’exemple, des carrés de période sept, des trois configurations de centre et de la fenêtre des préfixes. Exécution des routines Caml et comparaison avec une énumération indépendante sur 4698 couples. Deux schémas originaux."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "archives_2016_2022",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture des quatre parties, du rapport et des deux figures. La fonction de la question 3 utilise maintenant carre_pe_pos, avec le décompte de la borne cubique en 5. Ajustement des libellés du tableau de la question 21 pour le PDF. Contrôle des tables et des trois carrés de période sept. Exécution des routines Caml sur 4 095 mots binaires et comparaison des longueurs de suffixes et de préfixes sur 3 969 couples de mots."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ],
+    "subdivisions_du_sujet": {
+      "22": [
+        "a",
+        "b"
+      ],
+      "24": [
+        "a",
+        "b"
+      ]
+    },
+    "precision": "Les vingt-sept questions des quatre parties, les demandes a et b des questions 22 et 24 et les trois conditions de la question 15 sont traitées dans les deux éditions.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "7ab41fef3333fd28963405c5e88b9793ea62daa3f22a0a40ff67612997778de8",
+      "sha256_rapport_controle": "bd2fde96a22b6fd3d67565a1d7b09d502532d4c8d0d95a2515f1cd781200b934",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Relecture des quatre parties, du rapport et des deux figures. La fonction de la question 3 utilise maintenant carre_pe_pos, avec le décompte de la borne cubique en 5. Ajustement des libellés du tableau de la question 21 pour le PDF. Contrôle des tables et des trois carrés de période sept. Exécution des routines Caml sur 4 095 mots binaires et comparaison des longueurs de suffixes et de préfixes sur 3 969 couples de mots.",
+      "commit_redaction_anterieure": "b082e64e5fc0cf163e30dd12148be32deeda47d9"
+    }
+  }
 }
