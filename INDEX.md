@@ -814,6 +814,7 @@
 | 2026 | BEL | AL | Russe (commentaire et traduction) | [md](2026/bel/bel_al_russe-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_russe-commentaire-et-traduction_2026/guide.md) |
 | 2023 | BEL | AL | Russe (thème Lyon) | [md](2023/bel/bel_al_russe-theme-lyon_2023/brut.md) | [md](2023/bel/bel_al_russe-theme-lyon_2023/guide.md) |
 | 2024 | BEL | AL | Russe (thème Lyon) | [md](2024/bel/bel_al_russe-theme-lyon_2024/brut.md) | [md](2024/bel/bel_al_russe-theme-lyon_2024/guide.md) |
+| 2025 | BEL | AL | Russe (thème Lyon) | [md](2025/bel/bel_al_russe-theme-lyon_2025/brut.md) | [md](2025/bel/bel_al_russe-theme-lyon_2025/guide.md) |
 | 2026 | BEL | AL | Russe (thème Lyon) | [md](2026/bel/bel_al_russe-theme-lyon_2026/brut.md) | [md](2026/bel/bel_al_russe-theme-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Russe (version et thème Ulm) | [md](2026/bel/bel_al_russe-version-et-theme-ulm_2026/brut.md) | [md](2026/bel/bel_al_russe-version-et-theme-ulm_2026/guide.md) |
 | 2026 | BEL | AL | Textes antiques grecs (Ulm) | [md](2026/bel/bel_al_textes-antiques-grecs-ulm_2026/brut.md) | [md](2026/bel/bel_al_textes-antiques-grecs-ulm_2026/guide.md) |
