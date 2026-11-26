@@ -1,0 +1,71 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_etudes-classiques-quest-ce-que-la-technique-oral_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Études classiques — qu’est-ce que la technique (oral)",
+    "annee": 2018,
+    "modalite": "oral"
+  },
+  "intitule": "Qu’est-ce que la technique ?",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2018_et.classiques-oral.pdf",
+    "sujet_sha256": "0381659366fd881670ec3152ef68ebbeb4e3d844a8892ff22387773fd3917e2b",
+    "index": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2018-lettres",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.ens.psl.eu/sites/default/files/2018_et.classiques-oral.pdf",
+        "sha256": "0381659366fd881670ec3152ef68ebbeb4e3d844a8892ff22387773fd3917e2b",
+        "pages": 3
+      },
+      {
+        "role": "rapport",
+        "url": "https://www.ens.psl.eu/sites/default/files/rapport-sil18-etudes-classiques.pdf",
+        "sha256": "29cdf60826d7f2cd40b4b9026a59f4411a57a111a41598f7de725e6c823ca2b9",
+        "pages": 3
+      }
+    ],
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport-sil18-etudes-classiques.pdf"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/du-faire-au-jugement.svg",
+      "question": "Exposé de spécialité",
+      "legende": "Trois épreuves du savoir technique"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "oraux_lyon_et_anciens_corriges",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture des trois pages bilingues et du rapport de trois pages, puis rédaction des deux éditions, du schéma comparatif et des réponses d’entretien."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Consigne unique de l’exposé"
+    ],
+    "detail": [
+      "Sophocle, Antigone, v. 334–375, du passage maritime au jugement de la cité.",
+      "Platon, Phèdre, 274e–275b, objections du roi à Theuth.",
+      "Heidegger, La question de la technique, de la poièsis au dévoilement de ce qui peut être autrement.",
+      "Définition personnelle éprouvée sur le bateau et l’écriture, avec pistes de discussion pour l’entretien."
+    ]
+  }
+}
