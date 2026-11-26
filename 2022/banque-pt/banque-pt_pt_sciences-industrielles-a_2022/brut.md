@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Moteur Open Rotor.** Épreuve de cinq heures en quatre parties et 45 questions. Le dossier réunit la présentation, le travail demandé, les annexes et le cahier de réponses.
 
 [Sujet et cahier officiels](https://www.banquept.fr/documents/2022/si_a_2022_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2022/rapport_si_a_ecrit_2022.pdf)
@@ -200,7 +202,7 @@ $\omega_c\simeq0{,}48K_C\simeq0{,}0038$ rad/s et $t_{5\%}\simeq7{,}9\times10^2$ 
 
 ### Question 41 — Équilibrage des inerties
 
-Imposer $C_{O2}=B_{O2}$ supprime dans $K_{eq}$ le terme dépendant de $\dot\theta^2$. Les masselottes déportées sur la partie tournante au pied de la pale, entourées sur la vue, servent à ajuster les moments suivant les deux directions transverses. Une masse sur l’axe du calage contribue de façon identique aux deux moments ; c’est son déport transverse qui permet d’en régler la différence.
+Imposer $C_{O2}=B_{O2}$ supprime dans $K_{eq}$ le terme dépendant de $\dot\theta^2$. Les masselottes déportées sur la partie tournante au pied de la pale, entourées sur la vue, servent à ajuster les moments suivant les deux directions transverses. Une masse sur l’axe du calage contribue de façon identique aux deux moments ; c’est son déport transverse qui permet d’en régler la différence. La formule abrégée imprimée p. 20 ne fait apparaître que la raideur mécanique. En conservant la compressibilité de Q34, la pulsation hydraulique demeure non nulle même quand $K_{eq}=0$.
 
 ![Masses d’équilibrage proposées près du pied de pale](figures/masses.svg)
 
@@ -208,7 +210,7 @@ Imposer $C_{O2}=B_{O2}$ supprime dans $K_{eq}$ le terme dépendant de $\dot\thet
 
 ### Question 42 — Identification de la dynamique du vérin
 
-La vitesse finale vaut environ 0,050 m/s et le premier maximum 0,072 m/s, soit $D_1\simeq0{,}44$. L’annexe A donne $\xi\simeq0{,}25$ ; on retrouve $\xi=-\ln D_1/\sqrt{\pi^2+(\ln D_1)^2}$. La pseudo-période d’environ 0,26 s conduit à $\omega_v=2\pi/(T_p\sqrt{1-\xi^2})\simeq25$ rad/s. Le numérateur du filtre doit reproduire ces deux paramètres du mode mesuré.
+La vitesse finale vaut environ 0,050 m/s et le premier maximum 0,072 m/s, soit $D_1\simeq0{,}44$. L’annexe A donne $\xi\simeq0{,}25$ ; on retrouve $\xi=-\ln D_1/\sqrt{\pi^2+(\ln D_1)^2}$. La pseudo-période d’environ 0,26 s conduit à $\omega_v=2\pi/(T_p\sqrt{1-\xi^2})\simeq25$ rad/s. Le numérateur du filtre doit reproduire ces deux paramètres du mode mesuré. Un ajustement indépendant sur les points numérisés du feuillet donne 25,3 rad/s et 0,250.
 
 ![Mesure de la pseudo-période et lecture de l’amortissement](figures/identification.svg)
 
@@ -228,4 +230,4 @@ Les pentes du gain sont −40 dB/décade jusqu’à $10^3$ rad/s puis −80. La 
 
 ### Question 45 — Réglage de l’avance de phase
 
-La marge visée vaut 60°. Avec la phase de Q44 il faut $\varphi_m\simeq63{,}44^\circ$. Pour $H_a=K_a(1+\tau_ap)/(1+a_a\tau_ap)$, $\sin\varphi_m=(1-a_a)/(1+a_a)$, donc $a_a=(1-\sin\varphi_m)/(1+\sin\varphi_m)\simeq0{,}0557$. Le maximum est à $1/(\tau_a\sqrt{a_a})=30$, soit $\tau_a\simeq0{,}141$ s. Le module y est $K_a/\sqrt{a_a}$ et la coupure est donc conservée pour $K_a=\sqrt{a_a}\simeq0{,}236$. Si l’on lit une phase initiale arrondie à −180°, l’abaque donne environ 0,072, 0,124 s et 0,268.
+La marge visée vaut 60°. Avec la phase de Q44 il faut $\varphi_m\simeq63{,}44^\circ$. Pour $H_a=K_a(1+\tau_ap)/(1+a_a\tau_ap)$, $\sin\varphi_m=(1-a_a)/(1+a_a)$, donc $a_a=(1-\sin\varphi_m)/(1+\sin\varphi_m)\simeq0{,}0557$. Le maximum est à $1/(\tau_a\sqrt{a_a})=30$, soit $\tau_a\simeq0{,}141$ s. Le module y est $K_a/\sqrt{a_a}$ et la coupure est donc conservée pour $K_a=\sqrt{a_a}\simeq0{,}236$. Si l’on lit une phase initiale arrondie à −180°, l’abaque donne environ 0,072, 0,124 s et 0,268. Le réglage calculé avec les pôles rapides donne une marge de gain de 24,9 dB, supérieure aux 15 dB demandés.
