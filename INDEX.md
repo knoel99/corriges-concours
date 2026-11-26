@@ -2397,5 +2397,6 @@
 | 2010 | ENS | MP-PC | Français | [md](2010/ens/ens_mp-pc_francais_2010/brut.md) | [md](2010/ens/ens_mp-pc_francais_2010/guide.md) |
 | 2024 | BEL | BL | Français (oral 10 juin) | [md](2024/bel/bel_bl_francais-oral-10-juin_2024/brut.md) | [md](2024/bel/bel_bl_francais-oral-10-juin_2024/guide.md) |
 | 2024 | BEL | AL | Espagnol (thème Lyon) | [md](2024/bel/bel_al_espagnol-theme-lyon_2024/brut.md) | [md](2024/bel/bel_al_espagnol-theme-lyon_2024/guide.md) |
+| 2024 | BEL | AL | Espagnol (commentaire et traduction) | [md](2024/bel/bel_al_espagnol-commentaire-et-traduction_2024/brut.md) | [md](2024/bel/bel_al_espagnol-commentaire-et-traduction_2024/guide.md) |
 | 2023 | BEL | AL | Espagnol (thème Lyon) | [md](2023/bel/bel_al_espagnol-theme-lyon_2023/brut.md) | [md](2023/bel/bel_al_espagnol-theme-lyon_2023/guide.md) |
 | 2023 | BEL | AL | Espagnol (commentaire et traduction) | [md](2023/bel/bel_al_espagnol-commentaire-et-traduction_2023/brut.md) | [md](2023/bel/bel_al_espagnol-commentaire-et-traduction_2023/guide.md) |

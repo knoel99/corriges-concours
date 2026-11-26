@@ -1,0 +1,100 @@
+{
+  "slug": "bel_al_espagnol-commentaire-et-traduction_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Espagnol (commentaire et traduction)",
+    "annee": 2024,
+    "modalite": "écrit"
+  },
+  "duree_heures": 6,
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2024-11/Commentaire%20d%27un%20texte%20en%20LVE%20et%20traduction.pdf#page=10",
+    "sujet_sha256": "80d15efa86786e91577675fd10623264c98f1e5e2424288248f1a684c15c9f6f",
+    "pages_pdf_sujet": [
+      10,
+      11
+    ],
+    "pages_fascicule": 24,
+    "lignes_version": [
+      56,
+      74
+    ],
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2024-11/Espagnol%202024%20OK.pdf#page=2",
+    "sha256_rapport_jury": "c7d4dfffc2955120ddad7196ba1a370536beb91563edccbd9460379d3ad082fb",
+    "pages_rapport_verifiees": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "ouvrage": "Juan Gabriel Vásquez, Volver la vista atrás (2021)",
+    "etablissements_figurant_sur_la_garde": "ENS de Lyon / ENS (Paris)",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2024"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/place-de-fausto.svg",
+      "question": "Commentaire",
+      "legende": "Qui décide de la place de Fausto ?"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire intégral en espagnol",
+      "Version en français des lignes 56–74"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ]
+  },
+  "contributions": [
+    {
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "phase": "redaction",
+      "perimetre": "Commentaire composé en espagnol, version française du passage désigné, préparation et schéma de lecture."
+    },
+    {
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "perimetre": "Contrôle du temps du récit et du passage au présent de la photographie, rétablissement de la valeur de por la razón que fuera et de la chaîne des relatives finales. Commentaire revu pour distinguer le lieu de la prise de vue du métier du photographe."
+    }
+  ]
+}
