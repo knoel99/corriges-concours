@@ -45,6 +45,56 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Rédaction des 26 questions des quatre parties sur les pages scannées et contrôle avec le rapport du jury. Mesure de terminaison avec ex æquo, exécution des 25 coupures de Transf, preuve du rayon couvrant par classes et cellules, optimisation de la borne finale. Trois figures originales."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture du sujet 10.05M et du rapport-corrigé. Contrôle des 26 questions principales, des subdivisions de 1.1 et 3.3 et des trois figures. Rejeu des 25 coupures et des 26 feuilles de la matrice de 2.8, ajout de la trace explicite de la première coupure dans les deux éditions. Vérification du rayon couvrant par les classes de résidus, des volumes par tranches et de l’optimisation finale, y compris le cas d’une pièce de valeur un."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7",
+      "2.8",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "3.7",
+      "3.8",
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.6"
+    ],
+    "precision": "Les 26 questions principales sont traitées dans les deux éditions, y compris les deux demandes de 1.1 et les quatre de 3.3. Les pages de cahier contenant les questions sont les pages numérisées 2 à 5. La cinquième page porte la mention « Fin de l’épreuve ». Les pages 6 à 8 ne comportent aucune question.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "5af66e01d6328b67358ce38cf493a5b6b3acf2d8efcfd925c753907dc300754d",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Relecture du sujet 10.05M et du rapport-corrigé. Contrôle des 26 questions principales, des subdivisions de 1.1 et 3.3 et des trois figures. Rejeu des 25 coupures et des 26 feuilles de la matrice de 2.8, ajout de la trace explicite de la première coupure dans les deux éditions. Vérification du rayon couvrant par les classes de résidus, des volumes par tranches et de l’optimisation finale, y compris le cas d’une pièce de valeur un.",
+      "commit_redaction_anterieure": "07bc91c14618a437a60093809fdf56ceb5822fae"
+    }
+  }
 }

@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le graphe est fini et non orienté. On note $x_i$ le vecteur canonique du sommet $i$. Une configuration positive, au sens du sujet, a des hauteurs entières non négatives hors du puits. Le puits peut avoir une hauteur négative. Les précisions nécessaires aux questions 3.3, 3.8 et 4.3 sont explicitées à leur place.
 
 ## Partie 1 · Matrices du graphe
@@ -17,10 +19,10 @@ La colonne de $L$ correspondant à $\{i,j\}$, $i<j$, est $x_i-x_j$. Son produit 
 ### Question 1.2 · Quotient de Rayleigh
 
 Si $Av=\lambda v$, on multiplie à gauche par $v^*$. Pour $v\ne0$,
-\[
+$$
 \lambda=\frac{\|L^{\mathsf T}v\|^2}{\|v\|^2}
 =\frac{\sum_{\{i,j\}\in E}|v_i-v_j|^2}{\sum_i|v_i|^2}.
-\]
+$$
 Ceci prouve que toute valeur propre, même cherchée sur $\mathbb C$, est réelle et positive au sens large. Sur $\mathbb R$ les carrés ordinaires suffisent. Le vecteur constant montre que zéro est toujours atteint.
 
 ### Question 1.3 · Composantes connexes
@@ -30,9 +32,9 @@ L'énergie s'annule si et seulement si les extrémités de chaque arête portent
 ### Question 1.4 · Matrice enracinée
 
 Posons $z_k=0$ et $z_i=v_i$ ailleurs. La nouvelle ligne $k$ est perpendiculaire aux autres et de norme $1$ ; leur bloc de produits scalaires est conservé. Ainsi $A_{G,k}=L_{G,k}L_{G,k}^{\mathsf T}$. Le quotient pour une valeur propre devient
-\[
+$$
 \lambda=\frac{|v_k|^2+\sum_{\{i,j\}\in E}|z_i-z_j|^2}{\sum_i|v_i|^2}.
-\]
+$$
 Si le numérateur est nul, $v_k=0$ et $z$ est constant sur le graphe connexe, donc $z=0$ et $v=0$. La matrice est de rang $n$.
 
 ### Question 1.5 · Liberté des générateurs
@@ -93,6 +95,8 @@ Deux sommets distincts légalement éboulables le restent après l'éboulement d
 
 **c)** Utilisons comme témoin de récurrence une configuration dont le support rencontre chaque composante hors puits, ou supposons ce sous-graphe connexe et le témoin non nul hors puits. Si $u+v\to^*u$, on a $u+tv\to^*u$ pour tout $t$. Par (b), $kv\to^*w$ avec $w_i\ge1$ pour $i<n$. Pour $D=\max d_i$, $u+Dkv$ atteint $u+Dw=\delta+u'$ avec $u'$ positive. Sa stabilisation est $u$, par unicité. Réciproquement, si $\delta+u'\to^*u$, alors $v=\delta+u'-u$ est strictement positive hors puits car $u_i<d_i$, et $u+v\to^*u$.
 
+Voici pourquoi la précision sur le témoin de récurrence importe aussi en (c). Prenons le chemin $a-s-b-c$ de puits $s$ et la pile $u=0$. Ajouter un grain en $a$ et en retrancher un au puits donne un témoin admis par la définition imprimée. Un seul éboulement de $a$ ramène à $u$. Pourtant, en partant de $\delta+u'$ avec $u'$ positive, la composante $\{b,c\}$ ne peut jamais se vider. Elle contient des grains au départ et tout éboulement en $b$ ou $c$ laisse au moins un grain à l’autre sommet. Donc (c) est faux avec ce témoin limité à une composante. La condition de support utilisée en (b) rétablit les deux sens.
+
 ### Question 3.4 · Ancêtre commun sans contrainte de hauteur
 
 Écrire $u-v=\sum_{i<n}(a_i-b_i)\Delta_i$, les $a_i,b_i$ étant entiers non négatifs, à l'aide de 2.2. Alors $w=u+\sum b_i\Delta_i=v+\sum a_i\Delta_i$. Les deux listes de soustractions formelles conduisent de $w$ à $u$ et à $v$.
@@ -104,6 +108,8 @@ Posons $t=s(2\delta)$ et $\varepsilon=2\delta-t$. Hors puits, $t_i\le d_i-1$, do
 ### Question 3.6 · Test avec la configuration universelle
 
 Pour $u$ stable, $u+\varepsilon\to^*u$ suffit puisque $\varepsilon$ est un témoin strictement positif hors puits. Inversement, si $u$ est récurrent, écrire $u=s(\delta+u')$ par 3.3(c). De $\delta+u'+\varepsilon$ on atteint d'une part $\delta+u'$ puis $u$, d'autre part $u+\varepsilon$. L'unicité de la stabilisation donne $s(u+\varepsilon)=u$.
+
+La stabilité de $u$ doit être testée avant cette équivalence. Sur une seule arête reliant le sommet ordinaire au puits, on a $\varepsilon=(2,-2)$ dans l’ordre (sommet, puits). La pile $u=(1,0)$ est instable. Deux éboulements légaux ramènent pourtant $u+\varepsilon$ à $u$.
 
 ### Question 3.7 · Représentant récurrent
 
@@ -128,10 +134,10 @@ Si $a_i$ compte les éboulements de $i$, alors $u-v=\sum_{i<n}a_i\Delta_i$. L'in
 La borne imprimée $\mu_{\ge i}|S_{>i}|$ pour **tous** les coups de la phase omet ceux de $S_i$. Un graphe réduit à une arête, avec un grain au sommet ordinaire, impose un coup pour $i=\ell=1$ alors que $S_{>1}$ est vide.
 
 Durant la phase $i$, aucun sommet plus proche que $i$ ne joue. Chaque coup en $S_i$ envoie au moins un grain vers $S_{i-1}$. Il y a donc au plus $\mu_{\ge i}(u)$ tels coups et au plus autant de passages en (a) : aucune phase antérieure n'a importé de grain depuis les couches plus proches. Au début d'un passage, $S_{>i}$ est stable. Un premier sommet lointain jouant deux fois aurait reçu au moins $d_v+1$ grains puisqu'il avait au plus $d_v-1$ avant (a). Or chaque voisin a joué au plus une fois jusque-là, ceux en $S_i$ compris. Au plus $|S_{>i}|$ coups lointains ont donc lieu par passage. La borne corrigée est
-\[
+$$
 N_i\le\mu_{\ge i}(u)(1+|S_{>i}|)\le np,\qquad
 \sum_i N_i\le\ell np.
-\]
+$$
 La borne globale attendue subsiste.
 
 ### Question 4.4 · Coût des opérations
@@ -143,6 +149,8 @@ La masse hors puits de $\delta$ est au plus $2m$. Celle de $\varepsilon=2\delta-
 $\beta=-\Delta_n=\sum_{i<n}\Delta_i$ touche chaque composante de $G-\{n\}$, chacune étant reliée au puits. Ainsi $u+\beta\to^*u$ suffit à la récurrence d'un $u$ stable. Pour la réciproque, si $u$ absorbe $\varepsilon$, alors $s(u+\beta)$ l'absorbe aussi, par les deux ordres d'addition de 3.8. C'est donc un récurrent de même classe modulo $M$ et de même masse que $u$, d'où $s(u+\beta)=u$ par 3.7. Les nombres de coups sont les coefficients de $\beta$ dans la famille libre, tous égaux à un.
 
 Mettre en file les sommets devenus instables après l'ajout de $\beta$. Sortir chaque sommet prêt, distribuer ses grains, et mettre ses voisins en file au franchissement du seuil. Même pour un état stable non récurrent, aucun premier double éboulement n'est possible : en comptant le don initial du puits comme un coup, chaque voisin n'a donné qu'une fois et $u_i\le d_i-1$. Accepter si les $n-1$ sommets ordinaires ont joué. Chaque liste de voisins est parcourue au plus une fois, en temps $O(n+m)$ et en espace auxiliaire $O(n)$.
+
+La même réserve qu’en 3.6 vaut pour le test thermique. Sur l’arête unique, $\beta=(1,-1)$ et la pile instable $(1,0)$ retrouve sa valeur après l’ajout de $\beta$ et un éboulement légal. Le test commence donc par vérifier $0\le u_i<d_i$ pour tout $i<n$, en temps $O(n)$.
 
 ### Question 4.6 · Vagues et rang de sélection
 

@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 On écrit les vecteurs en colonnes et les inégalités composante par composante. Le rapport corrige la borne de 2.11. La symétrie centrale nécessaire aux estimations de la dernière partie est explicitée en 4.2.
 
 ## Partie 1 · Cônes et programmation linéaire
@@ -93,7 +95,7 @@ $$
 
 ### Question 2.11 · Approximation simultanée
 
-Les demi-largeurs $c_i$ doivent être strictement positives, leur seul produit $1$ ne suffit pas. La matrice $\operatorname{diag}(1/c_i)A$ a déterminant de valeur absolue $1$. Appliquer 2.10 donne $|(Ay)_i|\le c_i$. En dimension $n+1$, appliquer le résultat à la transformation entière de paramètres $(p,q)\mapsto(qa_1-p_1,\ldots,qa_n-p_n,q)$, c’est-à-dire une application linéaire réelle de déterminant $\pm1$ évaluée sur des paramètres entiers. Choisir les demi-largeurs $N^{-1/n},\ldots,N^{-1/n},N$, avec $N>1$. Si $q=0$, tous les $p_i$ seraient nuls. Changer le signe au besoin donne $1\le q\le N$ et
+La première assertion imprimée suppose seulement $\prod c_i=1$. Avec $A=I_2$ et $c_1=c_2=-1$, même le vecteur nul échoue aux deux inégalités. Prenons donc des demi-largeurs $c_i>0$ de produit $1$. La matrice $\operatorname{diag}(1/c_i)A$ a déterminant de valeur absolue $1$. Appliquer 2.10 donne $|(Ay)_i|\le c_i$. En dimension $n+1$, appliquer le résultat à la transformation entière de paramètres $(p,q)\mapsto(qa_1-p_1,\ldots,qa_n-p_n,q)$, c’est-à-dire une application linéaire réelle de déterminant $\pm1$ évaluée sur des paramètres entiers. Choisir les demi-largeurs $N^{-1/n},\ldots,N^{-1/n},N$, avec $N>1$. Si $q=0$, tous les $p_i$ seraient nuls. Changer le signe au besoin donne $1\le q\le N$ et
 $$
 |a_i-p_i/q|\le 1/(qN^{1/n})\le q^{-1-1/n}.
 $$

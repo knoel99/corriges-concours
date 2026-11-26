@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Équations diophantiennes, bases minimales et nombre de Frobenius.** Les combinaisons positives du sujet ont des coefficients entiers positifs ou nuls. Le nombre de Frobenius désigne le plus grand entier manquant lorsque les valeurs des pièces sont globalement premières entre elles.
 
 ## Repères
@@ -124,6 +126,8 @@ $$
 
 Voici comment appliquer 2.7 en stockant seulement les colonnes actives de la matrice empilée $(A;M)$. Au départ, les premières coordonnées de contrôle sont $(0,-1,0,1)$ et $M=I_4$. La première coupure additionne les colonnes 2 et 4, remplaçant l’une puis l’autre dans les deux branches. Dans chaque branche, de la même façon, choisir une paire active de produit négatif minimal, départager par ordre croissant de l’indice positif puis de l’indice négatif. Lors de la suppression d’une ligne, écarter les colonnes dont le coefficient était non nul, puis enlever la ligne de contrôle restante en tête des autres colonnes lorsque son tour arrive. Ce parcours donne 25 coupures binaires et 26 feuilles, et leurs colonnes génératrices distinctes sont les quatre vecteurs affichés.
 
+La première coupure se lit sans construire les 26 feuilles. La colonne fusionnée de $M$ devient $e_2+e_4$, dont l’image par $A$ vaut $(0,-3)$. Dans la branche qui remplace la colonne 4, la première ligne a pour seul coefficient non nul $-1$ en colonne 2. Dans l’autre branche, le seul coefficient non nul est $1$ en colonne 4. La règle de suppression écarte donc l’ancienne colonne 2 ou 4 respectivement. Dans les deux cas, la seconde ligne travaille sur $e_1,e_3,e_2+e_4$, de coefficients respectifs $1,1,-3$. Les feuilles distribuent ainsi les trois unités entre $e_1$ et $e_3$.
+
 Une vérification indépendante tient dans les équations. Écrire $x_1$ comme somme de $d$ entiers compris entre 0 et 3 est possible puisque $0\le x_1\le3d$. En complétant chacun de ces entiers $j$ par $3-j$, on décompose la solution en $d$ vecteurs de la liste. Pour $d=1$, une solution non nulle plus petite devrait aussi avoir $d=1$, donc la même somme $x_1+x_3=3$, ce qui force l’égalité. Les quatre générateurs sont minimaux.
 
 ![Les quatre colonnes minimales ont les mêmes deuxième et quatrième coordonnées et se répartissent trois unités entre la première et la troisième.](figures/quatre-generateurs.svg)
@@ -234,7 +238,7 @@ Pour $x\in P(m)$, poser $b_i=\lfloor x_i/a_i\rfloor$. Alors $b_i a_i\le x_i<(b_i
 
 #### Solution
 
-Il existe exactement $d'(m)$ boîtes considérées, de volume commun $p_n=\prod_i a_i$. Leur union contient $P(m)$. Elle est à son tour incluse dans $P(m+s_n)$ où $s_n=\sum_i a_i$, puisque $\sum_i x_i<\sum_i(b_i+1)a_i\le m+s_n$. Le simplexe positif de rayon $r$ a volume $r^n/n!$ (intégration par tranches ou dilatation du simplexe unité). En prenant les volumes,
+Il existe exactement $d'(m)$ boîtes considérées, de volume commun $p_n=\prod_i a_i$. Leur union contient $P(m)$. Elle est à son tour incluse dans $P(m+s_n)$ où $s_n=\sum_i a_i$, puisque $\sum_i x_i<\sum_i(b_i+1)a_i\le m+s_n$. Le simplexe positif de rayon $r$ a volume $r^n/n!$ (intégration par tranches ou dilatation du simplexe unité). Les boîtes semi-ouvertes sont disjointes. Pour calculer le volume du simplexe, intégrer sa section de dernière coordonnée $t$ de $0$ à $r$. Si le volume en dimension $n-1$ vaut $(r-t)^{n-1}/(n-1)!$, l’intégrale vaut $r^n/n!$. La récurrence part du segment de longueur $r$. Il vient donc
 
 $$
 \frac{m^n}{n!p_n}\le d'(m)\le\frac{(m+s_n)^n}{n!p_n}.

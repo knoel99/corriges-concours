@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Comment passer d’inégalités sur un continu à l’existence d’un point entier ? Le certificat de Farkas sépare un point d’un cône. Le volume donne ensuite des points du réseau et les projections permettent d’estimer leurs longueurs.
 
 ## Partie 1 · Cônes et programmation linéaire
@@ -80,7 +82,7 @@ Le cube traite d’un seul coup la plus grande coordonnée. En multipliant les $
 
 ### Question 2.11 · Approximation simultanée
 
-Ramener un pavé de demi-largeurs positives et de produit un au cube unité en divisant chaque coordonnée par sa demi-largeur. Pour approcher les réels, faire entrer les erreurs $qa_i-p_i$ et le dénominateur $q$ dans un même pavé de dimension $n+1$. Le changement de variables a une matrice triangulaire par blocs de déterminant $\pm1$. Une largeur $N$ dans la dernière direction autorise une largeur $N^{-1/n}$ dans chacune des autres. Un vecteur non nul du pavé ne peut avoir $q=0$, car alors les $p_i$ entiers auraient valeur absolue strictement inférieure à un. Choisir $q$ positif puis diviser les erreurs par $q$. On obtient $1/(qN^{1/n})$, selon le rectificatif du rapport. Par exemple $a=1/6$, $N=3$ exclut la borne imprimée $1/9$.
+Pour interpréter les $c_i$ comme des demi-largeurs, prendre $c_i>0$. Le produit égal à un ne suffit pas à le garantir. Ainsi $A=I_2$ et $c_1=c_2=-1$ rendent les contraintes impossibles. Diviser ensuite chaque coordonnée par sa demi-largeur. Pour approcher les réels, faire entrer les erreurs $qa_i-p_i$ et le dénominateur $q$ dans un même pavé de dimension $n+1$. Le changement de variables a une matrice triangulaire par blocs de déterminant $\pm1$. Une largeur $N$ dans la dernière direction autorise une largeur $N^{-1/n}$ dans chacune des autres. Un vecteur non nul du pavé ne peut avoir $q=0$, car alors les $p_i$ entiers auraient valeur absolue strictement inférieure à un. Choisir $q$ positif puis diviser les erreurs par $q$. On obtient $1/(qN^{1/n})$, selon le rectificatif du rapport. Par exemple $a=1/6$, $N=3$ exclut la borne imprimée $1/9$.
 
 ## Partie 3 · Minima successifs et réseaux admissibles
 
