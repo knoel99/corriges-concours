@@ -1,0 +1,349 @@
+{
+  "slug": "banque-pt_pt_maths-ii-b_2004",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths II-B",
+    "intitule": "Épreuve de Mathématiques II-B",
+    "annee": 2004,
+    "duree": "4 h",
+    "modalite": "écrit",
+    "code_garde": "RS80"
+  },
+  "questions": 32,
+  "redaction": "Proposition pédagogique non officielle, rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/IMG/pdf/math_2_b_2004.pdf",
+    "rapport_jury": "https://www.banquept.fr/IMG/pdf/rapport_mathematiques_2B_2004.pdf",
+    "livret": "https://www.banquept.fr/documents/livret/2004/Livret_PT_2004.pdf",
+    "sujet_sha256": "f965f60c3ee8cf985304bc27ad2928e91375be07371ad72f88b727cc96c7d6b2",
+    "rapport_jury_sha256": "49bd046c63cc2ba22635960ff556c94b40a1e24a34a09a93ebbf3bb190db9779",
+    "observation_rapport": "La garde, le calendrier et le tableau des coefficients distinguent Mathématiques II-B des autres épreuves de 2004. Le rapport de deux pages est indexé à la rubrique « Ancienne épreuve II-B »."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.banquept.fr/IMG/pdf/math_2_b_2004.pdf",
+      "sha256": "f965f60c3ee8cf985304bc27ad2928e91375be07371ad72f88b727cc96c7d6b2",
+      "pages": 4,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "b6b33745b651c8ce72b1ca9a6767caba33d29c2b2cc53376350f52ae97a0f2ab"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "3dfd3757c3293863a78acd08a6222fffa3806f648d7be2fe752185f33bc3f45d"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "7b8cc68cad26ab294217a079bcf7d8f0c31cc883120bb2bbbb73db4206183c8c"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "dd01a073aeb8f40f63c57c4268be608072089527d8f3442c4619eba534ca6300"
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://www.banquept.fr/IMG/pdf/rapport_mathematiques_2B_2004.pdf",
+      "sha256": "49bd046c63cc2ba22635960ff556c94b40a1e24a34a09a93ebbf3bb190db9779",
+      "pages": 2,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "cba4bc01c66cfcf364739bea998e348d4f8344668842ff50b811036a11a6e045"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "643f35d355d24fe5e08baa1a518375b5f918bd04855dfd4ef0d4160204c6ef9a"
+        }
+      ]
+    },
+    "livret": {
+      "url": "https://www.banquept.fr/documents/livret/2004/Livret_PT_2004.pdf",
+      "sha256": "c8a0ee21667397eb6314cd96223199431e7435b4e73cc997c474bbe22a788548",
+      "pages": 82,
+      "pages_verifiees": [
+        {
+          "numero": 8,
+          "rendu_sha256": "15fc11913be1be365bdeb69eb47c77345760b536abe00fdd4d19f7f444253482"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "3a2640873bb2b578cda9ae93ef40f8d6572452996a9ab4b1d8bbd353b9a383af"
+        },
+        {
+          "numero": 13,
+          "rendu_sha256": "47ba812719abe743ad6ee4ca70f59832d75b92cb9974ac8aa89b0d6275f29de8"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "I.1.f",
+      "fichier": "figures/ecart-exponentielle.svg",
+      "legende": "Exemple pour n = 5. Le maximum est intérieur et l’ordonnée à droite vaut exp(−5), strictement positive.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "III.2.b",
+      "fichier": "figures/bessel-demi.svg",
+      "legende": "Deux solutions indépendantes d’ordre un demi, de même enveloppe. Le choix des deux constantes fixe la phase et l’amplitude.",
+      "provenance": "Figure originale."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1.a",
+      "I.1.b",
+      "I.1.c",
+      "I.1.d",
+      "I.1.e",
+      "I.1.f",
+      "I.2.a",
+      "I.2.b",
+      "I.2.c",
+      "I.3.a",
+      "I.3.b",
+      "II.1",
+      "II.2.a",
+      "II.2.b",
+      "II.2.c",
+      "II.2.d",
+      "II.3",
+      "II.4.a",
+      "II.4.b",
+      "II.4.c",
+      "II.4.d",
+      "II.4.e",
+      "III.1.a",
+      "III.1.b",
+      "III.1.c",
+      "III.1.d",
+      "III.1.e",
+      "III.1.f",
+      "III.1.g",
+      "III.1.h",
+      "III.2.a",
+      "III.2.b"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "annexes_imposees": [],
+    "document_reponse_mentionne": null,
+    "repere_par_question": [
+      {
+        "question": "I.1.a",
+        "page_pdf": 1,
+        "page_rapport": 1,
+        "objet": "Limite de la puissance"
+      },
+      {
+        "question": "I.1.b",
+        "page_pdf": 1,
+        "page_rapport": 1,
+        "objet": "Variations de l’écart"
+      },
+      {
+        "question": "I.1.c",
+        "page_pdf": 1,
+        "page_rapport": 1,
+        "objet": "Unicité du maximum"
+      },
+      {
+        "question": "I.1.d",
+        "page_pdf": 1,
+        "page_rapport": 1,
+        "objet": "Valeur au point critique"
+      },
+      {
+        "question": "I.1.e",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Majoration uniforme en n"
+      },
+      {
+        "question": "I.1.f",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Graphe de la fonction écart"
+      },
+      {
+        "question": "I.2.a",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Écriture de bêta sur le segment unité"
+      },
+      {
+        "question": "I.2.b",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Symétrie de bêta"
+      },
+      {
+        "question": "I.2.c",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Récurrence de bêta"
+      },
+      {
+        "question": "I.3.a",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Expression de l’intégrale approchée"
+      },
+      {
+        "question": "I.3.b",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Forme produit de l’approximation"
+      },
+      {
+        "question": "II.1",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Convergence de l’intégrale de Gamma"
+      },
+      {
+        "question": "II.2.a",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Continuité des intégrales tronquées"
+      },
+      {
+        "question": "II.2.b",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Convergence des troncatures"
+      },
+      {
+        "question": "II.2.c",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Valeur de Gamma en un"
+      },
+      {
+        "question": "II.2.d",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Valeurs aux entiers positifs"
+      },
+      {
+        "question": "II.3",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Prolongement aux réels négatifs non entiers"
+      },
+      {
+        "question": "II.4.a",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Contrôle de la queue de Gamma"
+      },
+      {
+        "question": "II.4.b",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Contrôle du segment fixe"
+      },
+      {
+        "question": "II.4.c",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Précision arbitraire sur le segment"
+      },
+      {
+        "question": "II.4.d",
+        "page_pdf": 3,
+        "page_rapport": 1,
+        "objet": "Limite de l’approximation de Gamma"
+      },
+      {
+        "question": "II.4.e",
+        "page_pdf": 3,
+        "page_rapport": 1,
+        "objet": "Formule limite d’Euler"
+      },
+      {
+        "question": "III.1.a",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Équation pour la série auxiliaire"
+      },
+      {
+        "question": "III.1.b",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Coefficient de rang un"
+      },
+      {
+        "question": "III.1.c",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Choix du premier coefficient et parité"
+      },
+      {
+        "question": "III.1.d",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Rayon infini et prolongement de la solution"
+      },
+      {
+        "question": "III.1.e",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Normalisation par Gamma"
+      },
+      {
+        "question": "III.1.f",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Solution d’ordre opposé"
+      },
+      {
+        "question": "III.1.g",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Série de Bessel"
+      },
+      {
+        "question": "III.1.h",
+        "page_pdf": 4,
+        "page_rapport": 2,
+        "objet": "Famille générale de solutions"
+      },
+      {
+        "question": "III.2.a",
+        "page_pdf": 4,
+        "page_rapport": 2,
+        "objet": "Suppression de la dérivée première"
+      },
+      {
+        "question": "III.2.b",
+        "page_pdf": 4,
+        "page_rapport": 2,
+        "objet": "Graphe et solution d’ordre un demi"
+      }
+    ]
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_hist_1987",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture des 32 questions ou sous-questions et du rapport institutionnel, rédaction des solutions et indications, figures originales et vérifications indépendantes des calculs."
+    }
+  ]
+}
