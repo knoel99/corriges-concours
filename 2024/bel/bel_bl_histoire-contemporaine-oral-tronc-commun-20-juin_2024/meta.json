@@ -1,0 +1,365 @@
+{
+  "slug": "bel_bl_histoire-contemporaine-oral-tronc-commun-20-juin_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Histoire contemporaine (oral tronc commun, 20 juin)",
+    "annee": 2024,
+    "modalite": "oral"
+  },
+  "intitule": "Histoire — Sujets du 20 juin 2024",
+  "questions": 0,
+  "tirages": 8,
+  "sujets": 16,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/bl_sujets_oraux_histoire_20062024.pdf",
+    "sha256_sujet": "a33659453c439882035302d3f9e548dfb8bf0155a87be38a5f4af786c8d18176",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_oral_histoire.pdf",
+    "sha256_rapport_jury": "888e6723a8d4525e1f385ba55d1d7881d0ce80c84ad63f0acca3a47c35813058",
+    "pages_sujet": 1,
+    "pages_rapport_jury": 3
+  },
+  "billets": [
+    {
+      "numero": 1,
+      "sujets": [
+        "Les gauches en France",
+        "Les ressources naturelles dans les relations internationales"
+      ],
+      "intitule_en_gras": "Les gauches en France",
+      "page": 1
+    },
+    {
+      "numero": 2,
+      "sujets": [
+        "Gaullisme et gaullistes en France",
+        "Le système monétaire international"
+      ],
+      "intitule_en_gras": "Gaullisme et gaullistes en France",
+      "page": 1
+    },
+    {
+      "numero": 3,
+      "sujets": [
+        "Le vote ouvrier en France de la fin du 19e s. aux années 1980",
+        "Les Européens et leurs colonies de 1918 aux années 1960"
+      ],
+      "intitule_en_gras": "Les Européens et leurs colonies de 1918 aux années 1960",
+      "page": 1
+    },
+    {
+      "numero": 4,
+      "sujets": [
+        "Clemenceau",
+        "Sport et société en Europe occidentale 1945-1990"
+      ],
+      "intitule_en_gras": "Sport et société en Europe occidentale 1945-1990",
+      "page": 1
+    },
+    {
+      "numero": 5,
+      "sujets": [
+        "Travailler à la campagne en France 1870-années 1990",
+        "Pèlerins et pèlerinages dans le monde 1918-1990"
+      ],
+      "intitule_en_gras": "Travailler à la campagne en France 1870-années 1990",
+      "page": 1
+    },
+    {
+      "numero": 6,
+      "sujets": [
+        "Faire grève en France 1936-1990",
+        "Le panarabisme 1919-1990"
+      ],
+      "intitule_en_gras": "Faire grève en France 1936-1990",
+      "page": 1
+    },
+    {
+      "numero": 7,
+      "sujets": [
+        "Banlieues rouges et terres communistes en France au 20e s.",
+        "L’Europe et l’American way of life"
+      ],
+      "intitule_en_gras": "L’Europe et l’American way of life",
+      "page": 1
+    },
+    {
+      "numero": 8,
+      "sujets": [
+        "L’Eglise catholique et la République en France 1870-1990",
+        "Consommer en Europe au 20e siècle"
+      ],
+      "intitule_en_gras": "L’Eglise catholique et la République en France 1870-1990",
+      "page": 1
+    }
+  ],
+  "figures": [
+    {
+      "fichier": "figures/figure-1.svg",
+      "question": "Le système monétaire international",
+      "legende": "Deux changements de règle monétaire"
+    },
+    {
+      "fichier": "figures/figure-2.svg",
+      "question": "Faire grève en France 1936-1990",
+      "legende": "Ce que produit une grève"
+    }
+  ],
+  "reprises_du_corpus": [
+    {
+      "sujet": "Les ressources naturelles dans les relations internationales",
+      "fichier": "2025/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-28-juin_2025/brut.md",
+      "titre": "Les matières premières dans le monde de la fin de la Première Guerre mondiale aux années 1980",
+      "paragraphes": [
+        1,
+        2
+      ],
+      "sha256_blocs": "638f35a008ae6c4a98478850888ae1662febe3262413cf2d90271301e62ffaf0",
+      "attributions": [
+        {
+          "phase": "redaction",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "agent": "fui_physique_un",
+          "date": "2026-11-26"
+        }
+      ]
+    },
+    {
+      "sujet": "Le système monétaire international",
+      "fichier": "2025/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-17-juin_2025/brut.md",
+      "titre": "Le système monétaire international au 20e s.",
+      "paragraphes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sha256_blocs": "e44af135cc58f3227e6ae409b6451672406aa361c5cea479e450c67359e49b7b",
+      "attributions": [
+        {
+          "phase": "redaction",
+          "session": "rennes_oraux_economie",
+          "agent": "rennes_oraux_economie",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-26"
+        }
+      ]
+    },
+    {
+      "sujet": "Les Européens et leurs colonies de 1918 aux années 1960",
+      "fichier": "2025/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-19-juin_2025/brut.md",
+      "titre": "Les Européens et leurs colonies de 1918 aux années 1970",
+      "paragraphes": [
+        2,
+        3
+      ],
+      "sha256_blocs": "50b40f605fe39d1feeb15d0a68a60d18223f95fa44c73e1101044effd5a54d88",
+      "attributions": [
+        {
+          "phase": "redaction",
+          "session": "rennes_oraux_economie",
+          "agent": "rennes_oraux_economie",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-26"
+        }
+      ]
+    },
+    {
+      "sujet": "Clemenceau",
+      "fichier": "2026/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-16-juin_2026/brut.md",
+      "titre": "Georges Clemenceau (1841–1929)",
+      "paragraphes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sha256_blocs": "7c634d2dbf4d3733f3987178bff99b52095ac29936aab1652795c37ff1b95e03",
+      "attributions": [
+        {
+          "phase": "redaction",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "autocontrole",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "relecture_corrige",
+          "session": "illustrations_double_edition",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-25"
+        }
+      ]
+    },
+    {
+      "sujet": "Travailler à la campagne en France 1870-années 1990",
+      "fichier": "2025/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-17-juin_2025/brut.md",
+      "titre": "Travailler à la campagne en France 1870-années 1980",
+      "paragraphes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sha256_blocs": "2ac9cac8a9316c2ac77c20df24f5a303e6bda42bfca6e9b71ca560107131adc9",
+      "attributions": [
+        {
+          "phase": "redaction",
+          "session": "rennes_oraux_economie",
+          "agent": "rennes_oraux_economie",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-26"
+        }
+      ]
+    },
+    {
+      "sujet": "Faire grève en France 1936-1990",
+      "fichier": "2026/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-16-juin_2026/brut.md",
+      "titre": "Faire grève en France (1870–début des années 1990)",
+      "paragraphes": [
+        3
+      ],
+      "sha256_blocs": "515c63d38dd2898a57b279135e5e8d844ea658f3dd9441084e0c8ea740b8e1a5",
+      "attributions": [
+        {
+          "phase": "redaction",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "autocontrole",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "relecture_corrige",
+          "session": "illustrations_double_edition",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-25"
+        }
+      ]
+    },
+    {
+      "sujet": "Banlieues rouges et terres communistes en France au 20e s.",
+      "fichier": "2025/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-19-juin_2025/brut.md",
+      "titre": "Banlieues rouges et terres communistes en France au 20e s.",
+      "paragraphes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sha256_blocs": "85fd7f83e4f00ce67a973ea369ee6a321d95c1e3ac23a6c5585a7456960dd275",
+      "attributions": [
+        {
+          "phase": "redaction",
+          "session": "rennes_oraux_economie",
+          "agent": "rennes_oraux_economie",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-26"
+        }
+      ]
+    },
+    {
+      "sujet": "L’Eglise catholique et la République en France 1870-1990",
+      "fichier": "2026/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-autres-tirages-du-jury_2026/brut.md",
+      "titre": "L’Église et la République, 1870-années 1980",
+      "paragraphes": [
+        1,
+        2
+      ],
+      "sha256_blocs": "cbf8287aba5c2034821342e838119ab230f9b821b159f0c46c2a022b82ef8324",
+      "attributions": [
+        {
+          "phase": "lecture_rapport_jury",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "redaction",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "autocontrole",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "relecture_corrige",
+          "session": "illustrations_double_edition",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-25"
+        }
+      ]
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "x_maths_b_recentes",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Comparaison du fac-similé du 20 juin et du rapport officiel ; vérification des 8 paires et du gras, rédaction et adaptation de 16 exposés, une relance avec réponse par sujet et deux figures originales. Les paragraphes adaptés du corpus antérieur sont rattachés à leurs auteurs dans les emprunts documentés."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Les gauches en France",
+      "Les ressources naturelles dans les relations internationales",
+      "Gaullisme et gaullistes en France",
+      "Le système monétaire international",
+      "Le vote ouvrier en France de la fin du 19e s. aux années 1980",
+      "Les Européens et leurs colonies de 1918 aux années 1960",
+      "Clemenceau",
+      "Sport et société en Europe occidentale 1945-1990",
+      "Travailler à la campagne en France 1870-années 1990",
+      "Pèlerins et pèlerinages dans le monde 1918-1990",
+      "Faire grève en France 1936-1990",
+      "Le panarabisme 1919-1990",
+      "Banlieues rouges et terres communistes en France au 20e s.",
+      "L’Europe et l’American way of life",
+      "L’Eglise catholique et la République en France 1870-1990",
+      "Consommer en Europe au 20e siècle"
+    ],
+    "precision": "Comparaison du fac-similé du 20 juin et du rapport officiel ; vérification des 8 paires et du gras, rédaction et adaptation de 16 exposés, une relance avec réponse par sujet et deux figures originales. Les paragraphes adaptés du corpus antérieur sont rattachés à leurs auteurs dans les emprunts documentés.",
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "perimetre": "Comparaison du fac-similé du 20 juin et du rapport officiel ; vérification des 8 paires et du gras, rédaction et adaptation de 16 exposés, une relance avec réponse par sujet et deux figures originales. Les paragraphes adaptés du corpus antérieur sont rattachés à leurs auteurs dans les emprunts documentés.",
+      "sha256_sujet_controle": "a33659453c439882035302d3f9e548dfb8bf0155a87be38a5f4af786c8d18176",
+      "sha256_rapport_jury_controle": "888e6723a8d4525e1f385ba55d1d7881d0ce80c84ad63f0acca3a47c35813058"
+    }
+  }
+}
