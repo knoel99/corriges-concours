@@ -4,7 +4,11 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Une action de groupe conduit à des classes de cocycles. La construction d’une matrice inversible permet de les calculer pour le groupe linéaire. Le dernier exemple montre pourquoi un noyau trivial ne suffit pas à assurer l’injectivité d’une application d’ensembles pointés.
+
+Le rapport du jury fournit des éléments de solution et précise la dimension de la carte locale de la partie II. On note $G^\Gamma$ le sous-groupe des éléments fixes sous toutes les actions de $\Gamma$. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-mp/session-2004/sujet-2004-ecrit-mp_mathematiques_lyon_paris.pdf) · [Rapport du jury](https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/rapport-de-jury-session-2004/rapport-2004-mp_ecrit_mathematiques_lyon_paris.pdf)
 
 ## I. Actions de groupes et points fixes
 
@@ -80,7 +84,7 @@ Soit $a=\varphi(I_n)$. La multiplication transportée $f$ vérifie $f(x,a)=x$ et
 
 #### Solution
 
-Pour $n\ge2$ prenons $A\subset\mathrm{SL}_n(\mathbb R)$ où le cofacteur de l’entrée $(n,n)$ est non nul. Il contient $I_n$ et est ouvert. En oubliant cette entrée, on obtient un homéomorphisme sur l’ouvert des $n^2-1$ entrées restantes où le même mineur est non nul. En effet l’équation $\det M=1$ est affine en l’entrée oubliée et son unique solution est rationnelle à dénominateur non nul. La continuité du produit permet de choisir un voisinage ouvert $U$ de l’identité avec $UU\subset A$. La multiplication transportée est lisse par ces formules. Cela donne (L). Pour $n=1$, le groupe est un point, avec carte dans $\mathbb R^0$.
+Pour $n\ge2$ prenons $A\subset\mathrm{SL}_n(\mathbb R)$ où le cofacteur de l’entrée $(n,n)$ est non nul. Il contient $I_n$ et est ouvert. En oubliant cette entrée, on obtient un homéomorphisme sur l’ouvert des $n^2-1$ entrées restantes où le même mineur est non nul. En effet l’équation $\det M=1$ est affine en l’entrée oubliée et son unique solution est rationnelle à dénominateur non nul. La continuité du produit permet de choisir un voisinage ouvert $U$ de l’identité avec $UU\subset A$. La multiplication transportée est lisse par ces formules. Cela donne (L). Pour $n=1$, le groupe est le singleton $\{1\}$. Le seul voisinage de son identité dans ce groupe est ce singleton, qui ne peut être homéomorphe à un ouvert non vide de $\mathbb R^p$ pour $p\ge1$. Sous la convention imprimée en page 2 du PDF ($p,q,n$ non nuls), l’assertion vaut donc pour $n\ge2$. Si l’on autorise les cartes de dimension zéro, le singleton possède la carte dans $\mathbb R^0$ et satisfait alors (L).
 
 ### Question II.3.b
 
@@ -164,6 +168,8 @@ Pour tout $h\in L^*$ on a $0=\theta(b(hx))=\sum_{\gamma\in\Gamma}\theta(f(\gamma
 #### Solution
 
 Si les $b(x)$ étaient contenus dans un sous-espace strict, une base de celui-ci complétée en une base de $L^n$ fournirait une forme non nulle qui s’y annule. III.4.a l’interdit. Ils engendrent donc $L^n$ et l’on peut en extraire $n$ vecteurs $b(x_1),\ldots,b(x_n)$ formant une base.
+
+La preuve porte sur l’espace vectoriel engendré par les $b(x)$ sur $L$. Elle n’exige aucune linéarité sur $L$ de l’application $b$ elle-même, puisque les automorphismes du corps agissent aussi sur les scalaires.
 
 ### Question III.4.c
 
@@ -313,6 +319,8 @@ Les éléments de carré unité ont $z=\pm1$, donc $A=\{I,-I\}$. L’action par 
 
 Les points fixes dans $\mathrm{SO}_2(\mathbb C)$ sont les rotations réelles. Chacune admet comme racine carrée la rotation de demi-angle. Comme le carré est aussi surjectif sur le groupe complexe (paramètre $z\in\mathbb C^*$), IV.5.c s’applique : le noyau de $\widetilde i$ est nul. Sur les deux classes de V.2.b, la classe non triviale a donc une image différente de $0$. L’application est surjective par IV.5.b et V.1.b, puisque $\mathbb C^*$ est connexe par arcs. Son image comporte exactement deux éléments.
 
+On peut également lire directement les deux classes dans le paramètre de V.2.a. La conjugaison des entrées agit par $z\mapsto1/\bar z$. Ainsi la condition de cocycle $z/\bar z=1$ impose $z\in\mathbb R^*$, tandis qu’un changement de représentant multiplie $z$ par un réel strictement positif de la forme $1/|w|^2$. Les signes positif et négatif sont donc exactement les deux classes.
+
 ### Question V.3.a
 
 > [!INDICATION]
@@ -332,3 +340,5 @@ L’application $i(\bar n)=\sigma^n$ est bien définie car $\sigma^3=e$, c’est
 Les homomorphismes $\bar n\mapsto\bar n$ et $\bar n\mapsto-\bar n$ donnent deux classes distinctes dans $G=\mathbb Z/3$, qui est commutatif. Dans $S_3$, leurs valeurs sur $\bar1$ sont $\sigma=(123)$ et $\sigma^{-1}=(132)$, conjuguées par $(12)$. Les deux homomorphismes deviennent conjugués et donnent la même classe. Donc $\widetilde i$ n’est pas injective.
 
 ![Figure 1 — La classe triviale a un unique antécédent. Les deux homomorphismes non triviaux deviennent conjugués dans le groupe symétrique.](figures/classes-de-conjugaison.svg)
+
+Les valeurs possibles de l’image du générateur dans $S_3$ sont l’identité et les deux cycles d’ordre trois. Il y a donc deux classes dans le but et trois dans la source. La fibre de la classe de l’identité compte un élément et l’autre fibre en compte deux, comme le montre le schéma.
