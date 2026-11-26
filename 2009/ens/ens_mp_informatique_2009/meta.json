@@ -45,6 +45,50 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Les 26 questions des deux parties. Mots de Lyndon, successeur de Duval, factorisation, repliages, deux automates dessinés et géométrie des contacts de la courbe du Dragon. Écritures binaires canoniques, comparaisons et preuves de complexité."
+    },
+    {
+      "phase": "relecture",
+      "agent": "reprise_physique_ulm",
+      "session": "reprise_physique_ulm",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Attestation de couverture sur le fac-similé. Les 26 demandes du cahier de sept pages ont été rapprochées des preuves, algorithmes, deux automates, tracé et questions de contact. Équivalence des tests de Lyndon vérifiée sur les mots binaires non vides de longueur au plus dix."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "1.8",
+      "1.9",
+      "1.10",
+      "1.11",
+      "1.12",
+      "1.13",
+      "1.14",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7",
+      "2.8",
+      "2.9",
+      "2.10",
+      "2.11",
+      "2.12"
+    ],
+    "verification": "Les 26 demandes du cahier de sept pages ont été rapprochées des preuves, algorithmes, deux automates, tracé et questions de contact. Équivalence des tests de Lyndon vérifiée sur les mots binaires non vides de longueur au plus dix."
+  }
 }
