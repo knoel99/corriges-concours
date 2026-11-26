@@ -11,7 +11,8 @@
   "sources": {
     "sujet": "https://www.vmaths.fr/wp-content/uploads/XENS/MP/X_ENS_2011_MP_MB_enonce.pdf",
     "rapport_jury": "https://www.doc-solus.fr/prepa/sci/adc/pdf/rapports.pdf/2011/MP_MATHS_X_2_2011.rapport.pdf",
-    "sha256_sujet": "6d0ff877f802ddd48a29400c903e821e97cd782a24b9636a2847a7894a56ef03"
+    "sha256_sujet": "6d0ff877f802ddd48a29400c903e821e97cd782a24b9636a2847a7894a56ef03",
+    "sha256_rapport_jury": "b649d9dae696de2d15ba9e5ae25a28c367e01ace1d6af6af0be4c5facb45e9f1"
   },
   "figures": [
     {
@@ -31,6 +32,55 @@
       "perimetre": "Rédaction complète des quatre parties à partir du sujet et du rapport. Vérification de chaque convergence, de la formule binomiale pour la transformée d’Euler, des constantes de troncature et de l’équivalent oscillant avec la parité de la dernière question. Figure calculée à partir des intégrales d’erreur.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "x_maths_b_anciennes",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture des 25 réponses avec les quatre pages de l’énoncé et le rapport. Explicitation de la somme finie de 5.a et du contrôle des restes en 13 par intégration par parties. Vérification du télescopage et des contributions de parité aux deux bords."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.a",
+      "1.b",
+      "2.a",
+      "2.b",
+      "3.a",
+      "3.b",
+      "3.c",
+      "3.d",
+      "4",
+      "5.a",
+      "5.b",
+      "6.a",
+      "6.b",
+      "7.a",
+      "7.b",
+      "8.a",
+      "8.b",
+      "9.a",
+      "9.b",
+      "10",
+      "11",
+      "12.a",
+      "12.b",
+      "12.c",
+      "13"
+    ],
+    "precision": "Les 25 rubriques des deux éditions ont été rapprochées du fascicule de 4 pages et du rapport du jury de 5 pages. Relecture des 25 réponses avec les quatre pages de l’énoncé et le rapport. Explicitation de la somme finie de 5.a et du contrôle des restes en 13 par intégration par parties. Vérification du télescopage et des contributions de parité aux deux bords.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "6d0ff877f802ddd48a29400c903e821e97cd782a24b9636a2847a7894a56ef03",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Relecture des 25 réponses avec les quatre pages de l’énoncé et le rapport. Explicitation de la somme finie de 5.a et du contrôle des restes en 13 par intégration par parties. Vérification du télescopage et des contributions de parité aux deux bords.",
+      "commit_redaction_anterieure": "0bd4f70c4b41c870fa94764ba19187273b06e77b"
+    }
+  }
 }
