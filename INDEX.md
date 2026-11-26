@@ -734,6 +734,7 @@
 | 2025 | BEL | BL | Sciences sociales | [md](2025/bel/bel_bl_sciences-sociales_2025/brut.md) | [md](2025/bel/bel_bl_sciences-sociales_2025/guide.md) |
 | 2025 | BEL | BL | Sociologie (oral commun) — Ressorts sociaux de la conversion écologique des Français | [md](2025/bel/bel_bl_sociologie-oral-commun-ressorts-sociaux-de-la-conversion-ecologique-des-francais_2025/brut.md) | [md](2025/bel/bel_bl_sociologie-oral-commun-ressorts-sociaux-de-la-conversion-ecologique-des-francais_2025/guide.md) |
 | 2025 | BEL | BL | Sociologie (oral commun) — Sexualité, jeunesse et ordre social | [md](2025/bel/bel_bl_sociologie-oral-commun-sexualite-jeunesse-et-ordre-social_2025/brut.md) | [md](2025/bel/bel_bl_sociologie-oral-commun-sexualite-jeunesse-et-ordre-social_2025/guide.md) |
+| 2025 | BEL | BL | Sociologie (oral commun) — Services publics : recomposition et inégalités | [md](2025/bel/bel_bl_sociologie-oral-commun-services-publics-recomposition-et-inegalites_2025/brut.md) | [md](2025/bel/bel_bl_sociologie-oral-commun-services-publics-recomposition-et-inegalites_2025/guide.md) |
 | 2025 | BEL | BL | Version grecque | [md](2025/bel/bel_bl_version-grecque_2025/brut.md) | [md](2025/bel/bel_bl_version-grecque_2025/guide.md) |
 | 2025 | BEL | BL | Version latine | [md](2025/bel/bel_bl_version-latine_2025/brut.md) | [md](2025/bel/bel_bl_version-latine_2025/guide.md) |
 | 2026 | BEL | BL | Sciences sociales | [md](2026/bel/bel_bl_sciences-sociales_2026/brut.md) | [md](2026/bel/bel_bl_sciences-sociales_2026/guide.md) |

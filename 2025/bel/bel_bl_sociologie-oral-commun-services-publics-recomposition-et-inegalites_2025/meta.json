@@ -1,0 +1,69 @@
+{
+  "slug": "bel_bl_sociologie-oral-commun-services-publics-recomposition-et-inegalites_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Sociologie (oral commun) — Services publics : recomposition et inégalités",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "Services publics : recomposition et inégalités",
+  "questions": 0,
+  "documents": 7,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oraux_sociologie_option_bl.pdf#page=26",
+    "sujet_sha256": "a6cfd0e1d317596c64fdd7f85e2770ef806175c8b278483fe266bc97bed6e3d9",
+    "pages_pdf": "26-33",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_sociologie_tronc_commun.pdf",
+    "rapport_sha256": "9bc988f94c13ebc880ab5860fd1c30f145a4bf52df2207b66bb6dbb78e4bd008"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Documents 1 à 3",
+      "fichier": "figures/composition-des-transferts.svg",
+      "legende": "Composition des transferts moyens reçus par les deux groupes extrêmes en France en 2022, en euros par unité de consommation."
+    },
+    {
+      "numero": 2,
+      "question": "Document 5",
+      "fichier": "figures/motifs-des-avis.svg",
+      "legende": "Motifs des 639 avis déontologiques rendus en 2024 par la HATVP."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur les sept pièces du dossier (pages 26 à 33 du fascicule) et le rapport de l’oral commun. Contrôle visuel des graphiques, de leurs notes et des extraits, comparaison des dénominateurs et calcul indépendant des regroupements des transferts. Deux figures originales.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "documents_entierement_traites": [
+      "Document 1",
+      "Document 2",
+      "Document 3",
+      "Document 4",
+      "Document 5",
+      "Document 6",
+      "Document 7"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "redaction",
+      "sha256_sujet_controle": "a6cfd0e1d317596c64fdd7f85e2770ef806175c8b278483fe266bc97bed6e3d9",
+      "perimetre": "Rédaction des deux éditions sur les sept pièces du dossier (pages 26 à 33 du fascicule) et le rapport de l’oral commun. Contrôle visuel des graphiques, de leurs notes et des extraits, comparaison des dénominateurs et calcul indépendant des regroupements des transferts. Deux figures originales."
+    }
+  }
+}
