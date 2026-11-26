@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Sujet et document réponse](https://www.banquept.fr/documents/2020/ph_b_th_2020_pt.zip) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2020/rapport_phys_b_ecrit_2020.pdf) · [Coefficients de la session](https://www.banquept.fr/documents/2020/Coefficients.pdf#page=1)
 
 **Production de vapeur et réseau urbain de chaleur.** Les puissances et transferts sont orientés explicitement dans les bilans. Les valeurs relevées graphiquement sont arrondies à la précision des diagrammes du sujet.
@@ -61,7 +63,7 @@ L’économiseur, le ballon et le surchauffeur n’échangent pas de travail uti
 
 Soustraire le travail fourni à la pompe de celui délivré par la turbine et rapporter le résultat à la chaleur reçue.
 
-La turbine fournit $h_E-h_F\simeq730$ kJ/kg tandis que la pompe demande environ 3,9 kJ/kg. Le rendement mécanique est $\eta_m=[(h_E-h_F)-(h_B-h_A)]/(h_E-h_B)\simeq0{,}24$. Le travail de compression est inférieur à 1 % du travail fourni par la turbine, le négliger change peu le résultat. Le rendement est inférieur à $1-298/648\simeq0{,}54$, limite de Carnot entre les températures extrêmes.
+La turbine fournit $h_E-h_F\simeq730$ kJ/kg tandis que la pompe demande environ 3,9 kJ/kg. Le petit travail reçu par la pompe diminue le numérateur du bilan moteur. Le rendement mécanique est $\eta_m=[(h_E-h_F)-(h_B-h_A)]/(h_E-h_B)\simeq0{,}24$. Le travail de compression est inférieur à 1 % du travail fourni par la turbine, le négliger change peu le résultat. Le rendement est inférieur à $1-298/648\simeq0{,}54$, limite de Carnot entre les températures extrêmes.
 
 ### Question 6 · Rendement de production électrique
 
@@ -157,7 +159,7 @@ Pour 54 GWh/an de chaleur produite par le bois, la quantité fossile évitée au
 
 Convertir le débit volumique en débit massique avant de multiplier par la variation de température du primaire.
 
-Le débit est $15/3600=4{,}17\times10^{-3}$ m³/s, soit environ 4,2 kg/s d’eau. La puissance perdue par le primaire vaut $D_Cc_{\rm eau}(95-70)\simeq4{,}2\times4000\times25=4{,}2\times10^5$ W. Le débit annoncé convient aux **420 kW** demandés, à la précision du débit. Le relevé photographique du document 6 correspond à d’autres conditions de marche.
+Le débit est $15/3600=4{,}17\times10^{-3}$ m³/s, soit environ 4,2 kg/s d’eau. La puissance perdue par le primaire vaut $D_Cc_{\rm eau}(95-70)\simeq4{,}2\times4000\times25=4{,}2\times10^5$ W. Le bilan porte ici sur la puissance d’hiver, pour les températures de calcul du texte. Le débit annoncé convient aux **420 kW** demandés, à la précision du débit. Le relevé photographique du document 6 correspond à d’autres conditions de marche.
 
 ### Question 16 · Identification des courbes de l’échangeur
 
@@ -215,4 +217,4 @@ L’intégration de $\mathrm d\Delta/\Delta=-\alpha\,\mathrm dx$ donne $\ln[\Del
 
 Employer les écarts locaux de 20 K et 5 K, la surface $LD$ et la puissance en watts.
 
-Avec $LD=0{,}20\times70=14$ m² et $P=420\,000$ W, $h=(420\,000/14)\ln(4)/(20-5)\simeq2{,}8\times10^3$ W/(m²·K). Dans ce modèle, le coefficient obtenu témoigne d’un transfert local intense. Il dépasse d’environ 40 % le haut de la plage indicative de 100 à 2 000 W/(m²·K) donnée pour un échange liquide-liquide. La surface équivalente et les conditions d’écoulement influent sur cette comparaison.
+Avec $LD=0{,}20\times70=14$ m² et $P=420\,000$ W, $h=(420\,000/14)\ln(4)/(20-5)\simeq2{,}8\times10^3$ W/(m²·K). La différence de température logarithmique vaut environ 11 K, entre les écarts terminaux de 5 et 20 K. Dans ce modèle, le coefficient obtenu témoigne d’un transfert local intense. Il dépasse d’environ 40 % le haut de la plage indicative de 100 à 2 000 W/(m²·K) donnée pour un échange liquide-liquide. La surface équivalente et les conditions d’écoulement influent sur cette comparaison.
