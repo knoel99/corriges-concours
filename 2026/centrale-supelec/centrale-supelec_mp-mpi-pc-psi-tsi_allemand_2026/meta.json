@@ -15,7 +15,28 @@
   },
   "redaction": "Proposition non officielle rédigée par IA.",
   "sources": {
-    "sujet": "https://www.concours-centrale-supelec.fr/sites/default/files/documents/G078-LV009.pdf#page=6"
+    "sujet": "https://www.concours-centrale-supelec.fr/sites/default/files/documents/G078-LV009.pdf#page=6",
+    "sha256_sujet": "0ac49c902444dba90f60fcb80879b21238abb65262e47749bfd7c4d90e1140c0",
+    "pages_pdf_sujet_verifiees": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "rapport_jury": null,
+    "verification_rapport": {
+      "date": "2026-11-26",
+      "rubriques": [
+        "MP",
+        "MPI",
+        "PC",
+        "PSI",
+        "TSI"
+      ],
+      "dernier_millesime_affiche": 2025,
+      "sha256_page_annales": "7e564389f6b701010fa9cd31f8a0736ecca499196322778431c84b3afe7f7cb6",
+      "annales": "https://www.concours-centrale-supelec.fr/sujets-rapports"
+    }
   },
   "contributions": [
     {
@@ -28,14 +49,89 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Rédaction de la synthèse en allemand des 4 documents sur les pages physiques 6 à 9 du PDF officiel, du guidage et du schéma. Contrôle du titre et du décompte de 464 mots."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "x_maths_b_recentes",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Consigne unique, rédaction et copie du guide, lecture du corpus, contrôle des visuels et du total de mots."
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "figures": [
     {
       "fichier": "figures/lecture-croisee.svg",
       "question": "Synthèse",
       "legende": "Trois mesures de la présence des femmes dans les sciences"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Synthèse"
+    ],
+    "origine_attestation": {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "0ac49c902444dba90f60fcb80879b21238abb65262e47749bfd7c4d90e1140c0",
+      "perimetre": "Consigne unique, rédaction et copie du guide, lecture du corpus, contrôle des visuels et du total de mots.",
+      "documents_verifies": [
+        {
+          "numero": 1,
+          "pages_facsimile": [
+            6,
+            7
+          ],
+          "controle": "Kolboske distingue le travail expérimental, l’interprétation de Meitner et Frisch et la remise à Hahn du Nobel de chimie attribué pour 1944."
+        },
+        {
+          "numero": 2,
+          "pages_facsimile": [
+            7,
+            8
+          ],
+          "controle": "Eimer examine le cas Karle, les effets Matilda et Matthieu, les critères de Wikipédia et les ateliers de rédaction."
+        },
+        {
+          "numero": 3,
+          "pages_facsimile": [
+            8,
+            9
+          ],
+          "controle": "MedienFokus BW traite des métiers MINT, de la part des femmes parmi les entrants du supérieur, des stéréotypes et des stages de la plateforme #empowerGIRL."
+        },
+        {
+          "numero": 4,
+          "pages_facsimile": [
+            9
+          ],
+          "controle": "Le diagramme horizontal publié par Destatis en 2025 porte sur 2021. Les femmes représentent 29,4 % en Allemagne et 33,7 % à l’échelle de l’UE-27. La note indique l’absence de données pour le Danemark."
+        }
+      ],
+      "decompte": {
+        "question_unique": "Synthèse",
+        "langue": "allemand",
+        "minimum": 450,
+        "maximum": 550,
+        "titre": "Wer in der Wissenschaft sichtbar wird",
+        "mots": 476,
+        "blocs": [
+          6,
+          70,
+          110,
+          98,
+          97,
+          95
+        ],
+        "convention": "Titre inclus. Mots séparés par des blancs, composés et formes à apostrophe conservés.",
+        "reperes_de_vingt": null
+      }
+    }
+  }
 }
