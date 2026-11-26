@@ -1,0 +1,131 @@
+{
+  "slug": "x-ens_psi_physique-psi_2022",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Physique PSI",
+    "annee": 2022
+  },
+  "intitule": "Étude et mesure des séismes",
+  "questions": 49,
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "physique_psi_interens",
+      "session": "physique_psi_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": false,
+      "perimetre": "Rapport 2022 : signes des flux énergétiques, forces sur les faces, premières arrivées du sismogramme et choix du référentiel du géophone."
+    },
+    {
+      "phase": "redaction",
+      "agent": "physique_psi_interens",
+      "session": "physique_psi_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Résolution des 49 questions énumérées et réalisation de 5 figures."
+    }
+  ],
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2022_Sujet_Ecrit_PSI_Physique.pdf",
+    "sujet_sha256": "c516e48381b5a10a64e24a33e589622dce649ba09a8112bede3631b1a61d737f",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2022_Rapport_Ecrit_PSI_Physique.pdf",
+    "rapport_sha256": "d81b337edf6906509f0bf4ba749e3c29f8b60eb1f948746082710448c3143373",
+    "garde": "XSR · écrit commun de physique PSI · 4 heures",
+    "provenance_sujet": "PDF ouvert, garde ou texte et rattachement contrôlés chez l’organisateur"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "31–32",
+      "fichier": "figures/temps.svg",
+      "legende": "Chronochrones à deux couches. Le tracé en noir suit les premières arrivées."
+    },
+    {
+      "numero": 2,
+      "question": "33",
+      "fichier": "figures/couches.svg",
+      "legende": "Exemple à trois vitesses croissantes avec des branches de réfraction observables."
+    },
+    {
+      "numero": 3,
+      "question": "37",
+      "fichier": "figures/bodegeo.svg",
+      "legende": "Gain mécanique en déplacement pour Q = 1/√2 et ses asymptotes."
+    },
+    {
+      "numero": 4,
+      "question": "44–45",
+      "fichier": "figures/boucle.svg",
+      "legende": "Chaîne de rétroaction du géophone en convention s = jω. L’actionneur ramène une force au sommateur."
+    },
+    {
+      "numero": 5,
+      "question": "49",
+      "fichier": "figures/large-bande.svg",
+      "legende": "Exemple illustratif stable. Gain de vitesse normalisé au plateau avec ω₀₁ = 1, ω₀₂ = 5 et Q′ = 1."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49"
+    ]
+  }
+}
