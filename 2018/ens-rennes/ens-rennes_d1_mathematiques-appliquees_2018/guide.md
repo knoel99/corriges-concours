@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Épreuve de quatre heures, pages physiques 3 à 10 du fascicule d’options. Le jury relève les difficultés sur la classe de surface ouverte et sur la justification de l’indépendance. Les résultats numériques suivent les arrondis de l’énoncé.
 
 ## Exercice 1. Orge et exploitations agricoles
@@ -176,6 +178,16 @@ Par Bayes, $P(I\mid D)=0{,}01\times0{,}91/0{,}10=0{,}091$.
 
 $P(D\mid E\cup I)=[P(E)P(D\mid E)+P(I)P(D\mid I)]/[P(E)+P(I)]=(0{,}0009+0{,}0091)/0{,}10=0{,}100$.
 
+Sur 10 000 récoltes aux proportions indiquées, les contributions des trois branches sont les suivantes.
+
+| Résultat du test | Déclassées | Non déclassées | Ensemble |
+|---|---:|---:|---:|
+| N | 900 | 8 100 | 9 000 |
+| E | 9 | 891 | 900 |
+| I | 91 | 9 | 100 |
+
+Parmi les $900+100$ résultats E ou I, il y a $9+91$ déclassements. Ce décompte donne $100/1000$. Dans la seule branche I, la proportion de déclassements monte à $91/100$.
+
 ### Question 2.I.7
 
 > [!INDICATION]
@@ -286,6 +298,11 @@ Sur $x>0$, $f_n(x)=nx^{-3}e^{-n/x}$. Sa dérivée vaut $n e^{-n/x}[-3x^{-4}+nx^{
 
 La dérivée est positive avant $\alpha_n=n/3$, nulle en ce point, puis négative. Ainsi $f_n$ croît strictement de zéro à $f_n(\alpha_n)$ puis décroît strictement vers zéro, en utilisant les deux limites du sujet.
 
+| $x$ | $0^+$ |  | $n/3$ |  | $+\infty$ |
+| --- | --- | --- | --- | --- | --- |
+| $f_n'(x)$ |  | $+$ | $0$ | $-$ |  |
+| $f_n(x)$ | $0$ | $\nearrow$ | $27e^{-3}/n^2$ | $\searrow$ | $0$ |
+
 ### Question 3.I.3
 
 > [!INDICATION]
@@ -386,3 +403,5 @@ $\phi_n'=n f_n$, donc $F_n(x)=(1+n/x)e^{-n/x}/n$ est une primitive de $f_n$ sur 
 #### Solution
 
 Comme $\alpha_n=n/3$ et $\alpha_1=1/3$, l’intégrale vaut $[4e^{-3}-(1+3n)e^{-3n}]/n$. La fonction est positive et $\alpha_n\ge\alpha_1$ ; cette quantité est donc l’aire en unités d’aire (zéro si $n=1$). Avec 5 cm par unité sur les deux axes, l’aire sur papier est $25[4e^{-3}-(1+3n)e^{-3n}]/n$ cm carrés.
+
+Pour vérifier les bornes et le facteur $1/n$, faisons le changement $u=n/x$. On a $dx=-n\,du/u^2$ et $f_n(x)\,dx=-(u/n)e^{-u}du$. Les abscisses $1/3$ et $n/3$ correspondent à $3n$ et $3$. Ainsi l’aire en unités du repère est aussi $n^{-1}\int_3^{3n}ue^{-u}\,du$. L’intégrande est positive et les bornes coïncident pour $n=1$.
