@@ -536,6 +536,8 @@
 | 2011 | ENS de Cachan | D1 | Droit public | [md](2011/ens-rennes/ens-rennes_d1_droit-public_2011/brut.md) | [md](2011/ens-rennes/ens-rennes_d1_droit-public_2011/guide.md) |
 | 2019 | ENS Rennes | D1 | Espagnol | [md](2019/ens-rennes/ens-rennes_d1_espagnol_2019/brut.md) | [md](2019/ens-rennes/ens-rennes_d1_espagnol_2019/guide.md) |
 | 2019 | ENS Rennes | D1 | Italien | [md](2019/ens-rennes/ens-rennes_d1_italien_2019/brut.md) | [md](2019/ens-rennes/ens-rennes_d1_italien_2019/guide.md) |
+| 2005 | ENS Rennes | D1 | Mathématiques appliquées | [md](2005/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2005/brut.md) | [md](2005/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2005/guide.md) |
+| 2006 | ENS Rennes | D1 | Mathématiques appliquées | [md](2006/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2006/brut.md) | [md](2006/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2006/guide.md) |
 | 2007 | ENS Rennes | D1 | Mathématiques appliquées | [md](2007/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2007/brut.md) | [md](2007/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2007/guide.md) |
 | 2008 | ENS Rennes | D1 | Mathématiques appliquées | [md](2008/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2008/brut.md) | [md](2008/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2008/guide.md) |
 | 2009 | ENS Rennes | D1 | Mathématiques appliquées | [md](2009/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2009/brut.md) | [md](2009/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2009/guide.md) |
@@ -1919,6 +1921,7 @@
 | 2020 | X | MP | Maths B | [md](2020/x/x_mp_maths-b_2020/brut.md) | [md](2020/x/x_mp_maths-b_2020/guide.md) |
 | 2021 | X | MP | Maths B | [md](2021/x/x_mp_maths-b_2021/brut.md) | [md](2021/x/x_mp_maths-b_2021/guide.md) |
 | 2022 | X | MP | Maths B | [md](2022/x/x_mp_maths-b_2022/brut.md) | [md](2022/x/x_mp_maths-b_2022/guide.md) |
+| 2023 | X | MP-MPI | Maths B | [md](2023/x/x_mp_maths-b_2023/brut.md) | [md](2023/x/x_mp_maths-b_2023/guide.md) |
 | 2011 | X | PC | Physique A | [md](2011/x/x_pc_physique-a_2011/brut.md) | [md](2011/x/x_pc_physique-a_2011/guide.md) |
 | 2012 | X | PC | Physique A | [md](2012/x/x_pc_physique-a_2012/brut.md) | [md](2012/x/x_pc_physique-a_2012/guide.md) |
 | 2013 | X | PC | Physique A | [md](2013/x/x_pc_physique-a_2013/brut.md) | [md](2013/x/x_pc_physique-a_2013/guide.md) |
