@@ -20,6 +20,7 @@
 | 2025 | Agrégation | Physique | Problème de physique | [md](2025/agregation/agregation_physique_probleme-de-physique_2025/brut.md) | [md](2025/agregation/agregation_physique_probleme-de-physique_2025/guide.md) |
 | 2026 | Agrégation | Physique | Problème de physique | [md](2026/agregation/agregation_physique_probleme-de-physique_2026/brut.md) | [md](2026/agregation/agregation_physique_probleme-de-physique_2026/guide.md) |
 | 2026 | Agro-Véto | BCPST | Anglais | [md](2026/agro-veto/agro-veto_bcpst_anglais_2026/brut.md) | [md](2026/agro-veto/agro-veto_bcpst_anglais_2026/guide.md) |
+| 2022 | Banque PT | PT | Mathématiques C | [md](2022/banque-pt/banque-pt_pt_maths-c_2022/brut.md) | [md](2022/banque-pt/banque-pt_pt_maths-c_2022/guide.md) |
 | 2022 | Agro-Véto | BCPST | Biologie | [md](2022/agro-veto/agro-veto_bcpst_biologie_2022/brut.md) | [md](2022/agro-veto/agro-veto_bcpst_biologie_2022/guide.md) |
 | 2023 | Agro-Véto | BCPST | Biologie | [md](2023/agro-veto/agro-veto_bcpst_biologie_2023/brut.md) | [md](2023/agro-veto/agro-veto_bcpst_biologie_2023/guide.md) |
 | 2024 | Agro-Véto | BCPST | Biologie | [md](2024/agro-veto/agro-veto_bcpst_biologie_2024/brut.md) | [md](2024/agro-veto/agro-veto_bcpst_biologie_2024/guide.md) |
