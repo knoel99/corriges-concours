@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Énoncé officiel](https://www.banquept.fr/documents/2013/fr_a_2013_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2013/rapport_fra_a_ecrit_2013.pdf) · [Programme officiel](https://www.education.gouv.fr/bo/12/Hebdo26/ESRS1200215A.htm) · [Grille de la session](https://www.banquept.fr/documents/livret/2013/Livret_PT_2013.pdf#page=12)
 
 Épreuve de quatre heures sur « La Parole ». Platon, Phèdre (traduction de Létitia Mouze) · Pierre de Marivaux, Les Fausses Confidences · Paul Verlaine, Romances sans paroles.
@@ -46,6 +48,6 @@ Il arrive alors qu’une phrase étrangère nous apprenne ce que notre silence t
 
 De même, dans Green, le poète présente des fruits, des fleurs, des feuilles et des branches avant d’offrir son cœur. Tout cela pourrait paraître emprunté au langage convenu des cadeaux amoureux. Mais le mouvement de l’énumération, l’ajout de ce cœur après les choses que les bras peuvent porter, puis la demande de repos auprès de l’être aimé transforment le sens du don. Quelqu’un arrive, ose s’approcher, attend d’être accueilli. Cette voix n’existait pour le lecteur que comme une possibilité parmi bien d’autres. Le rythme donne à entendre une façon particulière de courir le risque d’une réponse. Il nous rend sensible à la fragilité que la formule amoureuse ordinaire aurait pu recouvrir.
 
-Le mot de Ponge dit vrai chaque fois que la présence d’une voix est confondue avec la disponibilité de ses formules. Mais la sincérité de Dorante ne deviendrait jamais une vérité partagée sans une déclaration qui l’expose au jugement d’Araminte. Et Socrate comme Verlaine rendent audible ce qui se modifie en se disant. Chercher la voix humaine dans les paroles ne consiste donc pas à en extraire un son préservé par le silence. On écoute plutôt ce qu’il en coûte à quelqu’un de prendre ces paroles à son compte et de nous les adresser. Jusque dans la chute de Ponge, on entend encore un homme assez déçu par ses propres mots pour leur imprimer l’accent de sa déception.
+Le mot de Ponge dit vrai chaque fois que la présence d’une voix est confondue avec la disponibilité de ses formules. Mais la sincérité de Dorante ne deviendrait jamais une vérité partagée sans l’aveu final qui l’expose au jugement d’Araminte. En dévoilant la conduite de Dubois, il lui donne les moyens de distinguer dans le stratagème ce dont il répond personnellement, son amour. Et Socrate comme Verlaine rendent audible ce qui se modifie en se disant. Chercher la voix humaine dans les paroles ne consiste donc pas à en extraire un son préservé par le silence. On écoute plutôt ce qu’il en coûte à quelqu’un de prendre ces paroles à son compte et de nous les adresser. Jusque dans la chute de Ponge, on entend encore un homme assez déçu par ses propres mots pour leur imprimer l’accent de sa déception.
 
 ![Figure 1 — Qui peut répondre de ce que l’on entend ?](figures/lecture.svg)
