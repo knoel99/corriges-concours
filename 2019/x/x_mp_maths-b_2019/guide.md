@@ -2,7 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 L’épreuve construit la solution de viscosité d’une équation de Hamilton-Jacobi sur un segment à l’aide de fonctions test et d’un principe de comparaison. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/2019_MPI_sujet_MathB.pdf) · [Rapport du jury](https://banques-ecoles.fr/cms/wp-content/uploads/2019/11/19_MP_rap_eMathB.pdf)
 
@@ -330,5 +332,12 @@ Soient $u,v$ deux solutions. Si $w=u-v$ est positif quelque part, son maximum es
 Quand $\varepsilon\downarrow0$, $a=2/(1+\sqrt{1+4\varepsilon})\to1$ et $b\to-\infty$. Posons $r=a/(-b)\to0$. En divisant par $b$, la formule devient
 $$F(s)=-\frac{e^{as}+r e^{bs}}{e^a+r e^b},\qquad 0\le s\le1.$$
 La couche exponentielle rapide a pour amplitude au plus $r$, car $0<e^{bs}\le1$. De plus $e^{as}\to e^s$ uniformément sur $[0,1]$ par les accroissements finis, et le dénominateur tend vers $e>0$. Ainsi $F(|x|)\to-e^{|x|-1}=u_0(x)$ uniformément, en particulier pour toute suite $\varepsilon_n\to0$.
+
+Une borne uniforme donne aussi la vitesse de cette convergence. L’équation caractéristique donne $1-a=\varepsilon a^2$ et $ab=-1/\varepsilon$, donc $r=1-a=\varepsilon a^2\le\varepsilon$. Écrivons $G=e^{a(s-1)}$, avec $0<G\le1$. En divisant numérateur et dénominateur par $e^a$, on obtient
+$$
+\bigl|F(s)+G\bigr|
+=\frac{r\,|e^{bs-a}-G e^{b-a}|}{1+r e^{b-a}}\le r.
+$$
+Les deux termes dans la valeur absolue sont dans $[0,1]$. Sur $0\le s\le1$, le théorème des accroissements finis en $a$ donne aussi $|G-e^{s-1}|\le1-a$. La norme uniforme de $u_\varepsilon-u_0$ est donc au plus $2\varepsilon a^2\le2\varepsilon$, même au centre où les deux dérivées unilatérales du profil limite sont différentes.
 
 ![Figure 1 — Les solutions régulières ont une tangente horizontale au centre, le profil limite présente une pointe.](figures/limite-viscosite.svg)
