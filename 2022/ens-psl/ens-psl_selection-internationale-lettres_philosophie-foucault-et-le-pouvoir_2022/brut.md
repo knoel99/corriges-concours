@@ -6,6 +6,10 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Écrit du 7 février 2022, de 14 h à 16 h. Michel Foucault, *Histoire de la sexualité*, tome I, *La Volonté de savoir*, p. 121–122.
+
 ## 1. Foucault et son œuvre
 
 Michel Foucault (1926–1984), philosophe français et professeur au Collège de France à la chaire d’Histoire des systèmes de pensée, examine la formation historique des objets de connaissance et des manières dont les êtres humains sont constitués, puis se constituent eux-mêmes, comme sujets. Une question de méthode traverse des enquêtes aussi différentes que l’*Histoire de la folie*, *Naissance de la clinique* et *Surveiller et punir*. À quelles conditions certaines façons de parler, de voir et d’intervenir ont-elles pu acquérir, dans un domaine donné, valeur de vérité ? Une personne est conduite à se reconnaître, par exemple, dans les catégories avec lesquelles une institution la décrit.
@@ -18,15 +22,15 @@ Dans *Surveiller et punir* (1975), la sanction pénale moderne conduit Foucault 
 
 La souveraineté désigne, dans le vocabulaire juridico-politique classique, la puissance suprême reconnue à l’État sur son territoire. Elle se manifeste notamment dans la compétence de poser la loi et de la faire appliquer. Elle comporte également une indépendance de principe à l’égard des autres États. Un raisonnement centré sur la souveraineté demandera qui est habilité à commander, d’où lui vient ce droit et jusqu’où s’étend l’obligation d’obéir. Une loi qui prohibe une conduite peut parfaitement faire l’objet d’une telle analyse.
 
-Foucault interroge toutefois le privilège accordé à ce modèle lorsqu’on cherche à comprendre *comment* un pouvoir s’exerce. Prenons un examen scolaire. Le droit peut préciser qui délivre le diplôme. Il faut observer autre chose pour comprendre comment les places sont distribuées dans une salle, les performances écrites, les moyennes calculées et les élèves amenés à se classer eux-mêmes. Ces mécanismes ont des effets sur la conduite, y compris lorsque nul ordre souverain ne prescrit dans le détail ce qu’un élève doit désirer. S’en tenir à l’autorité qui valide le diplôme ferait perdre toute cette dimension du phénomène.
+Foucault interroge toutefois le privilège accordé à ce modèle lorsqu’on cherche à comprendre *comment* un pouvoir s’exerce. Prenons un examen scolaire. Le droit peut préciser qui délivre le diplôme. Pour comprendre comment cet examen oriente les conduites, observons le travail quotidien. Un professeur conserve les notes, des élèves les comparent et chacun finit par se situer lui-même dans un classement. Ces mécanismes ont des effets sur la conduite, y compris lorsque nul ordre souverain ne prescrit dans le détail ce qu’un élève doit désirer. S’en tenir à l’autorité qui valide le diplôme ferait perdre toute cette dimension du phénomène.
 
 ### b. Le sens de « formes terminales »
 
-Le passage propose de partir de rapports de forces multiples, immanents aux domaines où ils s’exercent. Dans l’exemple de l’examen, l’observation régulière du professeur, l’intérêt des familles pour les résultats et la possibilité de comparer des dossiers peuvent se renforcer. Ils peuvent aussi se contrarier. Ainsi un élève dont le classement ferme une voie peut se servir de ses résultats dans un autre domaine pour remettre ce jugement en question. Une stratégie est intelligible à partir de ces relations, des appuis qu’elles trouvent les unes dans les autres et des résistances qu’elles rencontrent. Son unité éventuelle demande à être expliquée.
+Le passage propose de partir de rapports de forces multiples, immanents aux domaines où ils s’exercent. Dans l’exemple de l’examen, l’observation régulière du professeur, l’intérêt des familles pour les résultats et la possibilité de comparer des dossiers peuvent se renforcer. Ils peuvent aussi se contrarier. Ainsi un élève dont le classement ferme une voie peut se servir de ses résultats dans un autre domaine pour remettre ce jugement en question. Une stratégie d’ensemble peut ainsi devenir intelligible sans qu’un acteur unique en ait conçu le plan. Dans le texte, les relations de pouvoir se renforcent, se contrarient et peuvent aller jusqu’à s’inverser. Son unité éventuelle demande à être expliquée.
 
-Les appareils d’État, les règles de droit et les dominations durables donnent à de telles relations une forme institutionnelle relativement stable. « Terminales » marque ce changement dans l’ordre de l’analyse. Si l’on pose d’emblée l’unité de l’État ou d’une domination générale, on aura présupposé précisément ce dont il s’agissait d’expliquer la formation et l’efficacité. Le terme n’annonce ni la fin historique du pouvoir ni un État désormais impuissant. Sitôt instituée, une règle peut agir en retour sur les pratiques locales, étendre certaines évaluations à tout un territoire et rendre d’autres modes d’évaluation plus difficiles. Il faut pouvoir expliquer à la fois cette stabilisation et la possibilité de la transformer.
+Les appareils d’État, les règles de droit et les dominations durables donnent à de telles relations une forme institutionnelle relativement stable. « Terminales » marque ce changement dans l’ordre de l’analyse. Si l’on pose d’emblée l’unité de l’État ou d’une domination générale, on aura présupposé précisément ce dont il s’agissait d’expliquer la formation et l’efficacité. Le terme n’annonce ni la fin historique du pouvoir ni un État désormais impuissant. Supposons qu’un établissement généralise une moyenne chiffrée déjà employée par quelques professeurs. Une fois commune, la règle les incite en retour à multiplier les exercices qui se prêtent à la notation. Une institution peut donc être le résultat d’ajustements antérieurs et devenir à son tour une cause dans les rapports qu’elle organise. Il faut pouvoir expliquer à la fois cette stabilisation et la possibilité de la transformer.
 
-![Figure 1 — Comment une évaluation produit-elle des effets de pouvoir ?](figures/experiences.svg)
+![Figure 1 — De la pratique de notation à la règle commune](figures/experiences.svg)
 
 ## 3. La place de l’*Histoire de la sexualité*
 
@@ -42,7 +46,7 @@ Inspirée notamment de Nietzsche, la généalogie enquête sur la provenance et 
 
 ### b. Archéologie
 
-L’archéologie décrit les règles historiques de formation d’un ensemble d’énoncés. Qu’est-ce qui, à telle époque, peut devenir objet d’un discours médical ? Qui peut l’énoncer avec autorité et en employant quels concepts ? *L’Archéologie du savoir* (1969) formule cette méthode. Retrouver l’intention personnelle du premier médecin à avoir employé un mot ne permettrait pas encore d’expliquer le système de relations qui rend son énoncé recevable. L’archéologie s’applique à ces régularités et à leurs transformations. La généalogie peut s’appuyer sur cette description pour étudier les forces et les pratiques qui lui sont liées.
+L’archéologie décrit les règles historiques de formation d’un ensemble d’énoncés. Qu’est-ce qui, à telle époque, peut devenir objet d’un discours médical ? Qui peut l’énoncer avec autorité et en employant quels concepts ? *L’Archéologie du savoir* (1969) formule cette méthode. Retrouver l’intention personnelle du premier médecin à avoir employé un mot ne permettrait pas encore d’expliquer le système de relations qui rend son énoncé recevable. Dans le cas d’un bulletin scolaire, une enquête archéologique demanderait à quelle époque un professeur a pu consigner une « aptitude » comme objet comparable d’un élève à l’autre. Une généalogie suivrait les pratiques d’examen, les décisions d’orientation et les contestations qui ont donné prise à cette manière de classer. Un même dossier d’archives peut ainsi nourrir deux questions différentes.
 
 ### c. Discours
 

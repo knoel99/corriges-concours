@@ -4,6 +4,10 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Écrit du 7 février 2022, de 14 h à 16 h. Emmanuel Levinas, *Le Temps et l’Autre*, conférences de 1946–1947, édition PUF de 1983, p. 27.
+
 ## Préparation aux quatre questions
 
 **Situer le passage.** Une chronologie de trois étapes suffit pour commencer. Relevez d’abord l’analyse de l’exister dans les textes de l’après-guerre, puis le visage dans *Totalité et Infini*, enfin la responsabilité dans *Autrement qu’être*. Cette succession prépare déjà la dernière réponse.
@@ -24,15 +28,18 @@ Emmanuel Levinas (1906–1995), né à Kaunas, formé à Strasbourg puis à Frib
 
 ### a. Expliquer la phrase
 
+> [!INDICATION]
+> Dans la phrase sur le souvenir, imaginez que l’insomniaque puisse déjà dire « cette heure-là ». Qu’aurait-il regagné ? Comparez ensuite le volet qui claque, simple repère extérieur, et une note qui modifie le sens de la mélodie entière chez Bergson.
+
 Dans la vie ordinaire, un moment devient passé. Je peux revenir sur ce que j’ai fait hier, le raconter ou le laisser s’estomper en m’occupant à autre chose. Il reste mien tout en étant à distance. Le présent inaugure une perspective depuis laquelle je le reconnais comme passé. L’insomnie décrite par Levinas atteint cette articulation elle-même. Ce qui vient de se passer pèse sur l’instant actuel sans pouvoir être regardé depuis un commencement nouveau. À peine ai-je éprouvé que je veille que cette même vigilance occupe encore tout le champ. Le présent hérite de ce qui précède, mais l’héritier ne peut prendre congé de l’héritage.
 
-L’image de la soudure précise cette expérience. Les deux moments qu’un observateur distinguerait sur une horloge tendent à n’en former qu’un dans l’épreuve de la veille. La pensée que la nuit ne finira pas décrit la manière dont elle est vécue au présent. Il se peut fort bien que le dormeur finisse par s’endormir. Ce savoir extérieur ne lui donne pas, au moment où il veille malgré lui, le pouvoir de commencer autrement. Un souvenir serait déjà une libération parce qu’il supposerait cette petite distance grâce à laquelle on peut dire « cela a eu lieu ». Un bruit dans la rue peut introduire un repère, un avant et un après. Le texte attribue précisément à de tels événements extérieurs ce que cette veille n’arrive plus à produire par elle-même.
+L’image de la soudure précise cette expérience. Les deux moments qu’un observateur distinguerait sur une horloge tendent à n’en former qu’un dans l’épreuve de la veille. La pensée que la nuit ne finira pas décrit la manière dont elle est vécue au présent. Au matin, la personne pourra dater le moment où la nuit s’est achevée. Au milieu de la nuit, savoir que l’horloge avance ne l’aide pourtant pas à se soustraire à la veille. Levinas distingue ainsi la durée mesurable d’une nuit et le sentiment présent d’être incapable d’en sortir. Un souvenir serait déjà une libération parce qu’il supposerait cette petite distance grâce à laquelle on peut dire « cela a eu lieu ». Un volet claque dans la rue. Il y a désormais un avant et un après ce bruit, même si la veille reprend aussitôt. Le texte attribue précisément à de tels événements extérieurs ce que cette veille n’arrive plus à produire par elle-même.
 
 ### b. Le rapprochement avec Bergson
 
 Bergson, en particulier dans l’*Essai sur les données immédiates de la conscience*, s’oppose à une représentation du temps vécu comme une série d’instants séparés et interchangeables. Une note de mélodie garde présentes celles qui l’ont précédée. Si l’on entendait chaque note toute seule, on n’entendrait plus la phrase musicale. Les deux auteurs permettent donc de comprendre comment le passé peut agir dans le présent sans que nous ayons à en invoquer délibérément le souvenir. Le temps vécu ne se reconstitue pas par la simple addition des positions de l’aiguille d’une horloge.
 
-La comparaison devient instructive au point où elle cesse de valoir. Pour Bergson, l’interpénétration des moments fait que chacun modifie la qualité de la durée entière. Deux passages de la même phrase musicale peuvent avoir une coloration différente parce que l’écoute a déjà une histoire. Même ce qui paraît se répéter se transforme en durant. La soudure décrite par Levinas signifie au contraire que l’héritage du passé enlève à celui qui veille la possibilité d’un renouvellement. La nuit est éprouvée comme une persistance sans issue. Attribuer à Levinas la simple thèse bergsonienne de la continuité ferait disparaître ce qui intéresse ici sa description, une adhérence que le sujet subit et dont il voudrait pouvoir se dégager.
+La comparaison devient instructive au point où elle cesse de valoir. Pour Bergson, l’interpénétration des moments fait que chacun modifie la qualité de la durée entière. Deux passages de la même phrase musicale peuvent avoir une coloration différente parce que l’écoute a déjà une histoire. Si la dernière note d’une mélodie change, les premières prennent après coup une autre couleur. Le passé se conserve assez pour que cette nouveauté soit sensible. La soudure décrite par Levinas signifie au contraire que l’héritage du passé enlève à celui qui veille la possibilité d’un renouvellement. La nuit est éprouvée comme une persistance sans issue. Attribuer à Levinas la simple thèse bergsonienne de la continuité ferait disparaître ce qui intéresse ici sa description, une adhérence que le sujet subit et dont il voudrait pouvoir se dégager.
 
 ## 3. L’« il y a »
 
@@ -46,8 +53,8 @@ Dans la première description, l’insomniaque se découvre tenu à la veille sa
 
 *Autrement qu’être* approfondit cette dimension de passivité. Mes connaissances et mes décisions supposent un sujet qui en prend l’initiative. Ma responsabilité peut au contraire être engagée par le besoin d’autrui avant que j’aie décidé de m’en charger. Une personne m’appelle au moment où je m’apprête à rentrer chez moi. Je peux ensuite délibérer sur la réponse appropriée ou même refuser de répondre. Pourtant, dès que l’appel m’a concerné, la situation n’est plus celle d’un moi qui n’aurait encore aucun compte à rendre. La vigilance désigne alors une exposition au prochain que le retour réflexif sur ma bonne conscience ne suffit pas à clore.
 
-Levinas reprend explicitement le thème dans « De la conscience à la veille », repris dans *De Dieu qui vient à l’idée* (1982). Une conscience peut se satisfaire d’avoir identifié la situation et de savoir ce qu’elle a fait. La veille éthique est susceptible d’inquiéter jusqu’à cette satisfaction. Ai-je prêté assez d’attention à celui qui m’appelait ? Ai-je tenu compte des autres qui ont aussi besoin de justice ? Le maintien de l’éveil reçoit ici un sens presque opposé à l’étouffante uniformité du premier passage. La veille anonyme privait le sujet de toute issue en le rivant au même. La veille pour autrui l’arrache à sa propre suffisance parce qu’un autre compte pour lui. Ce déplacement explique comment le même mot peut soutenir, d’une œuvre à l’autre, une question nouvelle.
+L’essai « De la conscience à la veille », recueilli dans *De Dieu qui vient à l’idée* (1982), permet de formuler la différence avec précision. Dans la première expérience, je voudrais pouvoir me retirer. Dans la seconde, ce que j’ai déjà compris et fait pour l’autre demeure susceptible d’être remis en question par lui. Une conscience peut se satisfaire d’avoir identifié la situation et de savoir ce qu’elle a fait. La veille éthique est susceptible d’inquiéter jusqu’à cette satisfaction. Ai-je prêté assez d’attention à celui qui m’appelait ? Ai-je tenu compte des autres qui ont aussi besoin de justice ? Le maintien de l’éveil reçoit ici un sens presque opposé à l’étouffante uniformité du premier passage. La veille anonyme privait le sujet de toute issue en le rivant au même. La veille pour autrui l’arrache à sa propre suffisance parce qu’un autre compte pour lui. Ce déplacement explique comment le même mot peut soutenir, d’une œuvre à l’autre, une question nouvelle.
 
-![Figure 1 — D’une veille sans issue à une veille pour autrui](figures/experiences.svg)
+![Figure 1 — Deux formes de veille chez Levinas](figures/experiences.svg)
 
 [Énoncé](https://www.ens.psl.eu/sites/default/files/philo-ecrit-sil2022-1.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/rapport-philo-sil2022.pdf)
