@@ -104,6 +104,7 @@
 | 2024 | Banque PT | PT | Français A | [md](2024/banque-pt/banque-pt_pt_francais-a_2024/brut.md) | [md](2024/banque-pt/banque-pt_pt_francais-a_2024/guide.md) |
 | 2025 | Banque PT | PT | Français A | [md](2025/banque-pt/banque-pt_pt_francais-a_2025/brut.md) | [md](2025/banque-pt/banque-pt_pt_francais-a_2025/guide.md) |
 | 2015 | Banque PT | PT | Français A | [md](2015/banque-pt/banque-pt_pt_francais-a_2015/brut.md) | [md](2015/banque-pt/banque-pt_pt_francais-a_2015/guide.md) |
+| 2016 | Banque PT | PT | Français A | [md](2016/banque-pt/banque-pt_pt_francais-a_2016/brut.md) | [md](2016/banque-pt/banque-pt_pt_francais-a_2016/guide.md) |
 | 2026 | Banque PT | PT | Français A | [md](2026/banque-pt/banque-pt_pt_francais-a_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_francais-a_2026/guide.md) |
 | 2017 | Banque PT | PT | Français B | [md](2017/banque-pt/banque-pt_pt_francais-b_2017/brut.md) | [md](2017/banque-pt/banque-pt_pt_francais-b_2017/guide.md) |
 | 2018 | Banque PT | PT | Français B | [md](2018/banque-pt/banque-pt_pt_francais-b_2018/brut.md) | [md](2018/banque-pt/banque-pt_pt_francais-b_2018/guide.md) |
