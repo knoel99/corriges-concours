@@ -112,6 +112,7 @@
 | 2026 | Banque PT | PT | Français B | [md](2026/banque-pt/banque-pt_pt_francais-b_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_francais-b_2026/guide.md) |
 | 2023 | Banque PT | PT | Informatique et modélisation | [md](2023/banque-pt/banque-pt_pt_informatique-et-modelisation_2023/brut.md) | [md](2023/banque-pt/banque-pt_pt_informatique-et-modelisation_2023/guide.md) |
 | 2020 | Banque PT | PT | Informatique et modélisation | [md](2020/banque-pt/banque-pt_pt_informatique-et-modelisation_2020/brut.md) | [md](2020/banque-pt/banque-pt_pt_informatique-et-modelisation_2020/guide.md) |
+| 2017 | Banque PT | PT | Informatique et modélisation | [md](2017/banque-pt/banque-pt_pt_informatique-et-modelisation_2017/brut.md) | [md](2017/banque-pt/banque-pt_pt_informatique-et-modelisation_2017/guide.md) |
 | 2026 | Banque PT | PT | Informatique et modélisation | [md](2026/banque-pt/banque-pt_pt_informatique-et-modelisation_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_informatique-et-modelisation_2026/guide.md) |
 | 2026 | Banque PT | PT | Langue vivante A | [md](2026/banque-pt/banque-pt_pt_langue-vivante-a_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_langue-vivante-a_2026/guide.md) |
 | 2026 | Banque PT | PT | Langue vivante B | [md](2026/banque-pt/banque-pt_pt_langue-vivante-b_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_langue-vivante-b_2026/guide.md) |
