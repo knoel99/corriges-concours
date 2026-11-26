@@ -1,0 +1,74 @@
+{
+  "slug": "ens_mp-pc_japonais-le2_2007",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Japonais (LE2)",
+    "annee": 2007,
+    "modalite": "écrit"
+  },
+  "intitule": "Second Life, une monnaie d’échange entre deux mondes",
+  "questions": 2,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I",
+      "II"
+    ]
+  },
+  "sources": {
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2007",
+    "etablissements": "ENS de Paris et de Cachan",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2007/sujet-ecrit-2007-mp-pc_langue_etrangere_2.pdf#page=8",
+    "sujet_sha256": "5309bb7be121409229b9d682b83dc64317cd1725af428d833510660019c75b2c",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2007/sujet-ecrit-2007-mp-pc_langue_etrangere_2.pdf#page=8",
+        "sha256": "5309bb7be121409229b9d682b83dc64317cd1725af428d833510660019c75b2c",
+        "pages": "8"
+      }
+    ],
+    "references_complementaires": [
+      "https://www.ens.psl.eu/rapports-et-sujets-2007-mpi",
+      "https://www.ens.psl.eu/rapports-et-sujets-2007-pc",
+      "https://banques-ecoles.fr/cms/filiere-mp/annales-de-la-banque-mmpmpi/session-2007"
+    ]
+  },
+  "mots_expression": {
+    "II": 197
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I",
+      "fichier": "figures/lecture-1.svg",
+      "legende": "La convertibilité relie directement la monnaie virtuelle à un revenu réel."
+    },
+    {
+      "numero": 2,
+      "question": "II",
+      "fichier": "figures/lecture-2.svg",
+      "legende": "L’entretien sur l’inflation et la fin du reportage éclairent des risques de nature différente."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "fin_langues_x_interens",
+      "session": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Version complète, expression en japonais, accompagnement pédagogique et deux schémas. Second Life, une monnaie d’échange entre deux mondes.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "segmentation_expression": "Segments lexicaux japonais comptés avec Intl.Segmenter (ja), ponctuation exclue."
+}
