@@ -4,11 +4,15 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Préparer l’exposé
 
 Dessinez la trajectoire d’un chiffre depuis sa production jusqu’à un titre de presse. Identifiez le point où une observation limitée devient un jugement général. Puis formulez une objection vérifiable à l’enquête elle-même et une objection différente à son emploi politique.
 
 Pour l’entretien, sachez distinguer une hypothèse erronée mais réfutable d’une affirmation rendue invulnérable à toute critique. C’est plus précis qu’une opposition entre savants désintéressés et acteurs partisans.
+
+**Répondre à un titre de presse.** Dans l’exemple des 100 entrants, le titre « 95 % des entrants obtiennent le diplôme » confond les 80 présents et les 100 inscrits au départ. Corrigez-le en indiquant que 76 des 80 présents ont réussi. Pour comparer les parcours de deux promotions, cherchez ensuite où sont allés les absents. Enfin, avant de parler d’idéologie, demandez si cette présentation persiste après correction et à quelle représentation de la réussite elle profite.
 
 ## Exposé
 
@@ -31,6 +35,8 @@ Bachelard, dans *La Formation de l’esprit scientifique*, fait de la connaissan
 ### L’objectivité comme exigence publiquement vérifiable
 
 Comment apprécier de l’intérieur une prétention à la connaissance ? Revenons aux résultats scolaires. Si le chiffre mesure l’obtention d’un diplôme dans un groupe d’élèves arrivés en dernière année, nous pouvons demander ce qu’il advient de ceux qui ont quitté l’établissement auparavant. Modifier le dénominateur, comparer les recrutements et expliciter les limites d’une enquête sont des opérations concrètes. Elles produisent des raisons que peut reprendre un lecteur en désaccord avec les finalités politiques du rapport. Un autre indicateur n’est pas automatiquement plus vrai parce qu’il produit un classement différent. Il doit à son tour rendre compte du phénomène qu’il prétend mieux saisir.
+
+Prenons des effectifs fictifs. Dans un lycée, 100 élèves entrent dans une même cohorte. Au terme de la période, 80 se présentent à un examen et 76 de ces élèves le réussissent. Le taux de réussite parmi les présents est de 95 %. La proportion des entrants qui ont obtenu le diplôme observé est de 76 %. Les deux calculs sont exacts et répondent à deux questions différentes. Assimiler la première proportion aux chances de réussite de tout entrant efface les vingt absents. Les qualifier tous d’élèves en échec commettrait une autre erreur, car certains pourraient avoir changé de filière. Pour passer d’une erreur de lecture à un diagnostic d’idéologie, il faudrait encore expliquer pourquoi une institution a intérêt à faire circuler une seule interprétation et comment celle-ci se maintient face aux objections.
 
 L’idéologie peut se reconnaître à sa capacité de transformer les objections en simples signes de l’hostilité de l’objecteur. Si toute observation contraire au classement se trouve rejetée d’avance comme un manque de confiance dans l’école, aucun travail sur le classement n’est plus possible. Mais la démarche scientifique demande davantage qu’une déclaration abstraite d’ouverture. Il faut que les échantillons et les opérations soient décrits, que plusieurs interprétations puissent être discutées et que les institutions laissent effectivement place à la correction. L’objectivité s’appuie donc sur des conditions sociales de critique, sans que le vrai se ramène au résultat d’un vote.
 

@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Exposé
 
 Dans l’*Apologie de Socrate*, un accusé parle devant ses juges. Le lecteur peut examiner sa thèse sur l’obligation de philosopher. Il peut aussi entendre l’ironie d’un homme qui propose pour récompense d’être nourri aux frais de la cité. Retranchons le procès, son public, le risque que court l’orateur. La proposition sur le devoir d’examen reste intelligible, mais savons-nous encore à quelle épreuve elle engage celui qui l’énonce ? La philosophie semble avoir besoin du récit pour donner chair à une idée. Pourtant un beau discours peut emporter l’adhésion quand le raisonnement est mauvais. Que peuvent donc littérature et philosophie l’une pour l’autre si chacune doit répondre de ce qu’elle avance à sa manière ?
@@ -24,9 +26,11 @@ Il y a ici plus qu’une illustration. Pour illustrer une proposition, on la pos
 
 Aristote soutient dans la *Poétique* que la poésie a une portée philosophique parce qu’elle agence ce qui pourrait arriver selon la vraisemblance ou la nécessité. L’enchaînement des actions d’Œdipe intéresse un spectateur au-delà des circonstances particulières de Thèbes. Ses efforts pour savoir qui a causé le malheur de la cité transforment le sens de ses propres actes. On saisit une possibilité générale de la conduite par la seule précision de l’intrigue. Cette lecture rend raison d’un effet du théâtre sans décréter qu’une tragédie se résume à une leçon.
 
+Le renversement du procès de Socrate donne une seconde épreuve de cette idée. Déclaré coupable, il lui revient de proposer une peine. En suggérant d’être nourri au Prytanée, comme un bienfaiteur, il force les juges à entendre une réponse qui respecte la forme de leur question tout en contestant leur appréciation de ce qu’il fait (*Apologie*, 36d–e). La réplique prête à rire et peut irriter. Elle contient pourtant un argument que les juges peuvent examiner. Si la cité honore celui qui lui fait du bien et si l’examen des vies lui est bénéfique, elle a une raison d’honorer le philosophe. La seconde prémisse reste à défendre. Isoler cet argument permet de le discuter, tandis que retrouver la scène permet de comprendre pourquoi le dire à cet instant expose Socrate à la colère de ceux dont dépend sa peine.
+
 La philosophie se tromperait pourtant de tâche si elle prétendait livrer le concept enfin exact dont la littérature n’aurait su proposer qu’une esquisse. Un personnage comique peut porter une objection parfaitement sérieuse à la thèse qui semble dominer une scène. Une interprétation gagne en rigueur lorsqu’elle reconnaît un détail qui lui résiste et accepte de se réviser. La lecture littéraire travaille ici au profit de l’examen philosophique. Réciproquement, cet examen permet de comparer des lectures rivales, de distinguer une hypothèse compatible avec les mots du texte d’une impression que contredit son déroulement.
 
-Le lien entre les deux pratiques tient ainsi à un échange de questions. Devant un récit, la philosophie peut demander quelles possibilités de l’action ou de la pensée il découvre. Devant un argument, la littérature nous invite à demander qui peut en prendre la parole, dans quelle situation et à quel prix. Revenons à Socrate. La scène du procès ne prouve pas à elle seule qu’il faut examiner sa vie. Elle fait entendre ce que serait une telle preuve si personne n’était prêt à en soutenir les conséquences devant ses juges.
+Le lien entre les deux pratiques tient ainsi à un échange de questions. Devant un récit, la philosophie peut demander quelles possibilités de l’action ou de la pensée il découvre. Devant un argument, la littérature nous invite à demander qui peut en prendre la parole, dans quelle situation et à quel prix. Revenons à Socrate. La scène du procès ne prouve pas à elle seule qu’il faut examiner sa vie. Elle montre ce que coûte au personnage, à cet instant du procès, le choix de vivre conformément aux raisons qu’il donne. Le lecteur peut juger ces raisons et mesurer le prix de les soutenir, sans confondre les deux épreuves.
 
 ![Figure 1 — Trois questions adressées à un même passage](figures/experiences.svg)
 
