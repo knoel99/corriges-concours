@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Les trois problèmes portent sur les matrices idempotentes, la moyenne géométrique et les effets de la dispersion des notes sur la sélection. [Sujet officiel](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2019_Sujets_Ecrits_D2_Math_et_statistiques.pdf) · [Rapport du jury](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2019_Rapport_Ecrits_D2_Maths.pdf)
 
 ## Problème 1. Projecteurs du plan
@@ -121,7 +123,7 @@ Alice et Aria ont chacune la probabilité $22/225$ d’être l’unique gagnante
 
 ### Question III.3e
 
-Si $B=8$ ou 9, Béa ne gagne pas. Pour $B=10,11,12$, les probabilités conditionnelles d’être seule première sont respectivement $(1/3)^2(2/5)$, $(2/3)^2(3/5)$ et $4/5$. En moyennant les cinq cas, on obtient $(2+12+36)/225=50/225$. Bénédicte a même probabilité et les victoires sont disjointes. Ainsi $P(\text{Béa ou Bénédicte sélectionnée})=100/225=4/9$. Les égalités en tête représentent les $81/225$ restants.
+Si $B=8$ ou 9, Béa ne gagne pas. Pour $B=10,11,12$, les probabilités conditionnelles d’être seule première sont respectivement $(1/3)^2(2/5)$, $(2/3)^2(3/5)$ et $4/5$. En moyennant les cinq cas, on obtient $(2+12+36)/225=50/225$. Bénédicte a même probabilité et les victoires sont disjointes. Ainsi $P(\text{Béa ou Bénédicte sélectionnée})=100/225=4/9$. On peut vérifier la somme par dénombrement direct. Les $3\cdot3\cdot5\cdot5=225$ quadruplets $(A,A^\prime,B,B^\prime)$ sont équiprobables. Parmi eux, 44 ont une gagnante unique du premier type, 100 une gagnante unique du second type et les $225-44-100=81$ autres présentent une égalité en tête.
 
 ### Question III.4a
 
@@ -145,7 +147,7 @@ L’écart carré moyen autour de 10 vaut $(1-p)(2/3)+2p$. Comme $E[X_1]=10$, c�
 
 ### Question III.4f
 
-On lit $n=100$ dans $V=100^{-1}\sum_{i=1}^{100}(X_i-10)^2$. Par linéarité, $E[V]=(2+4p)/3$. Ce calcul reste exact pour des types fixés en proportion $p$ puisque la moyenne des 100 espérances conditionnelles de ces carrés a cette même valeur. L’indépendance n’est pas nécessaire pour cette espérance.
+On lit $n=100$ dans $V=100^{-1}\sum_{i=1}^{100}(X_i-10)^2$. Par linéarité, $E[V]=(2+4p)/3$. Pour une composition fixée de $100p$ candidates du type B et $100(1-p)$ du type A, la même espérance vaut explicitement $[100p\cdot2+100(1-p)\cdot(2/3)]/100$. Ce calcul dispense de supposer identiques les lois individuelles des 100 observations. L’indépendance n’est pas nécessaire pour cette espérance.
 
 ### Question III.4g
 

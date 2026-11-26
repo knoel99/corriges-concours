@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Trois problèmes indépendants, en quatre heures et sans calculatrice. Le rapport du jury insiste sur trois justifications reprises ci-dessous : traiter l’équation fonctionnelle sans présupposer sa solution, préciser l’indépendance dans la loi du maximum et construire la bijection entre deux commutants.
 
 ## Problème 1 · De la tangente hyperbolique à l’équation fonctionnelle
@@ -86,7 +88,7 @@ Pour $y\ge x$, la différence $f(y)-f(x)$ a le signe de $f(y-x)$, car $1-f(x)^2$
 
 #### Solution
 
-Notons $u=f(x)$ et $v=f(a)$. Les deux expressions sont $(1+u)(1+v)/(1+uv)$ et $(1-u)(1-v)/(1+uv)$. Le quotient donne $g(x+a)=g(x)g(a)$. Tous les facteurs $1\pm f$ sont strictement positifs. Ainsi $g(x+a)/g(x)=g(a)$, indépendant de $x$.
+Notons $u=f(x)$ et $v=f(a)$. En appliquant la loi d’addition, $1+f(x+a)=(1+u)(1+v)/(1+uv)$ et $1-f(x+a)=(1-u)(1-v)/(1+uv)$. Le quotient donne $g(x+a)=g(x)g(a)$. Tous les facteurs $1\pm f$ sont strictement positifs. Ainsi $g(x+a)/g(x)=g(a)$, indépendant de $x$.
 
 ### Question 9
 
@@ -206,7 +208,7 @@ La matrice nulle et $I$ commutent avec $A$, puisque leurs produits avec $A$ vale
 
 #### Solution
 
-Sur $\mathcal M_3(\mathbb R)$ cette application est linéaire par bilinéarité du produit matriciel. Son noyau est $C(A)$, qui est donc un sous-espace vectoriel de $\mathcal M_3(\mathbb R)$.
+Définissons $\Phi_A:\mathcal M_3(\mathbb R)\to\mathcal M_3(\mathbb R)$ par $\Phi_A(M)=AM-MA$. Pour tous scalaires $s,t$, la distributivité donne $\Phi_A(sM+tN)=s\Phi_A(M)+t\Phi_A(N)$. Son noyau est $C(A)$, qui est donc un sous-espace vectoriel de $\mathcal M_3(\mathbb R)$.
 
 ### Question 1.c
 

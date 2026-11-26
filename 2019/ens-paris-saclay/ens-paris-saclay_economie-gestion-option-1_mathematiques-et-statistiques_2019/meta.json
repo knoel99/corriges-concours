@@ -11,7 +11,9 @@
   "sources": {
     "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2019_Sujets_Ecrits_D2_Math_et_statistiques.pdf",
     "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2019_Rapport_Ecrits_D2_Maths.pdf",
-    "sha256_sujet": "644027d6af6b7058935611a851f352f6406eb97aa2db0001a887efa288d663b8"
+    "sha256_sujet": "644027d6af6b7058935611a851f352f6406eb97aa2db0001a887efa288d663b8",
+    "provenance": "Épreuve C1992, session 2019, banque ENS Paris-Saclay–ENSAI D2, économie et gestion option I. Trois pages. Rapport officiel des écrits, notamment le dénombrement des victoires uniques.",
+    "sha256_rapport_jury": "d8eb7cc249aa838d28e0c09765d43391f978f784e748c5d3459ca1917ee212f6"
   },
   "figures": [
     {
@@ -31,6 +33,274 @@
       "perimetre": "Rédaction complète des trois problèmes et de toutes leurs sous-questions. Vérification des dénombrements à deux et quatre candidates, de la probabilité des ex æquo et des interprétations de la proportion p. Représentation du simplexe demandée au problème 2.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "agent": "maths_statistiques_saclay",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture des 34 consignes des deux éditions sur le fascicule. Recoupement avec le rapport des produits sur les 225 issues de sélection, des cas d’égalité et du modèle de mélange des notes. Classification exhaustive des projecteurs et cas d’égalité des deux inégalités de moyennes."
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1a",
+      "I.1b",
+      "I.2a",
+      "I.2b",
+      "I.3",
+      "I.4",
+      "II.1a",
+      "II.1b",
+      "II.1c",
+      "II.2a",
+      "II.2b",
+      "II.2c",
+      "II.2d",
+      "II.2e",
+      "II.2f",
+      "II.3",
+      "III.1a",
+      "III.1b",
+      "III.2a",
+      "III.2b",
+      "III.2c",
+      "III.2d",
+      "III.3a",
+      "III.3b",
+      "III.3c",
+      "III.3d",
+      "III.3e",
+      "III.4a",
+      "III.4b",
+      "III.4c",
+      "III.4d",
+      "III.4e",
+      "III.4f",
+      "III.4g"
+    ],
+    "repere_par_question": [
+      {
+        "question": "I.1a",
+        "titre": "I.1a",
+        "partie": "Problème 1. Projecteurs du plan",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.1b",
+        "titre": "I.1b",
+        "partie": "Problème 1. Projecteurs du plan",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.2a",
+        "titre": "I.2a",
+        "partie": "Problème 1. Projecteurs du plan",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.2b",
+        "titre": "I.2b",
+        "partie": "Problème 1. Projecteurs du plan",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.3",
+        "titre": "I.3",
+        "partie": "Problème 1. Projecteurs du plan",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.4",
+        "titre": "I.4",
+        "partie": "Problème 1. Projecteurs du plan",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.1a",
+        "titre": "II.1a",
+        "partie": "Problème 2. Moyennes arithmétique et géométrique",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.1b",
+        "titre": "II.1b",
+        "partie": "Problème 2. Moyennes arithmétique et géométrique",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.1c",
+        "titre": "II.1c",
+        "partie": "Problème 2. Moyennes arithmétique et géométrique",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.2a",
+        "titre": "II.2a",
+        "partie": "Problème 2. Moyennes arithmétique et géométrique",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.2b",
+        "titre": "II.2b",
+        "partie": "Problème 2. Moyennes arithmétique et géométrique",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.2c",
+        "titre": "II.2c",
+        "partie": "Problème 2. Moyennes arithmétique et géométrique",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.2d",
+        "titre": "II.2d",
+        "partie": "Problème 2. Moyennes arithmétique et géométrique",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.2e",
+        "titre": "II.2e",
+        "partie": "Problème 2. Moyennes arithmétique et géométrique",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.2f",
+        "titre": "II.2f",
+        "partie": "Problème 2. Moyennes arithmétique et géométrique",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.3",
+        "titre": "II.3",
+        "partie": "Problème 2. Moyennes arithmétique et géométrique",
+        "page_pdf": 2
+      },
+      {
+        "question": "III.1a",
+        "titre": "III.1a",
+        "partie": "Problème 3. Sélection sur les notes et estimation",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.1b",
+        "titre": "III.1b",
+        "partie": "Problème 3. Sélection sur les notes et estimation",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.2a",
+        "titre": "III.2a",
+        "partie": "Problème 3. Sélection sur les notes et estimation",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.2b",
+        "titre": "III.2b",
+        "partie": "Problème 3. Sélection sur les notes et estimation",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.2c",
+        "titre": "III.2c",
+        "partie": "Problème 3. Sélection sur les notes et estimation",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.2d",
+        "titre": "III.2d",
+        "partie": "Problème 3. Sélection sur les notes et estimation",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.3a",
+        "titre": "III.3a",
+        "partie": "Problème 3. Sélection sur les notes et estimation",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.3b",
+        "titre": "III.3b",
+        "partie": "Problème 3. Sélection sur les notes et estimation",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.3c",
+        "titre": "III.3c",
+        "partie": "Problème 3. Sélection sur les notes et estimation",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.3d",
+        "titre": "III.3d",
+        "partie": "Problème 3. Sélection sur les notes et estimation",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.3e",
+        "titre": "III.3e",
+        "partie": "Problème 3. Sélection sur les notes et estimation",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.4a",
+        "titre": "III.4a",
+        "partie": "Problème 3. Sélection sur les notes et estimation",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.4b",
+        "titre": "III.4b",
+        "partie": "Problème 3. Sélection sur les notes et estimation",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.4c",
+        "titre": "III.4c",
+        "partie": "Problème 3. Sélection sur les notes et estimation",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.4d",
+        "titre": "III.4d",
+        "partie": "Problème 3. Sélection sur les notes et estimation",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.4e",
+        "titre": "III.4e",
+        "partie": "Problème 3. Sélection sur les notes et estimation",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.4f",
+        "titre": "III.4f",
+        "partie": "Problème 3. Sélection sur les notes et estimation",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.4g",
+        "titre": "III.4g",
+        "partie": "Problème 3. Sélection sur les notes et estimation",
+        "page_pdf": 3
+      }
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "controle": [
+      "Recoupement avec le rapport des produits sur les 225 issues de sélection, des cas d’égalité et du modèle de mélange des notes. Classification exhaustive des projecteurs et cas d’égalité des deux inégalités de moyennes."
+    ]
+  }
 }

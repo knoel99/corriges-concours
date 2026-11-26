@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La composition de quatre heures associe une minimisation sous contrainte, la classification des endomorphismes nilpotents de dimension trois et une comparaison d’estimateurs pour la loi de Poisson. Les trois bonus sont traités. [Sujet officiel](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2020/2020_Sujet_1A_D2-1_Maths.pdf) · [Rapport du jury](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2020/2020_RAPPORT_ECRIT_D2_Maths.pdf)
 
 ## Problème 1. Minimisation avec un terme entropique
@@ -58,7 +60,7 @@ Sur $0<x<1$, la restriction $G(x)=J(x,1-x)$ vérifie $G''(x)=\varepsilon(1/x+1/(
 
 ### Question 1.II.2e
 
-Si $a<b$, le rapport $e^{-b/\varepsilon}/e^{-a/\varepsilon}=e^{-(b-a)/\varepsilon}$ tend vers zéro et $(x^*_\varepsilon,y^*_\varepsilon)\to(1,0)$. Si $b<a$, la limite est $(0,1)$. Si $a=b$, les deux poids sont identiques pour tout $\varepsilon$, donc la limite est $(1/2,1/2)$. Les deux premières limites sont des points du bord du domaine.
+Si $a<b$, le rapport $e^{-b/\varepsilon}/e^{-a/\varepsilon}=e^{-(b-a)/\varepsilon}$ tend vers zéro et $(x^*_\varepsilon,y^*_\varepsilon)\to(1,0)$. Si $b<a$, la limite est $(0,1)$. Si $a=b$, les deux poids sont identiques pour tout $\varepsilon$, donc la limite est $(1/2,1/2)$. Les deux premières limites sont des points du bord du domaine. Lorsque $a=b$, le coût linéaire $ax+by$ vaut $a$ sur toute la contrainte : c’est le terme strictement convexe $\varepsilon(h(x)+h(y))$ qui sélectionne le milieu pour tout $\varepsilon>0$.
 
 ## Problème 2. Endomorphismes nilpotents en dimension trois
 
@@ -143,4 +145,4 @@ Le calcul de 3c donne un estimateur $\varphi(S_n)$ dont l’expression ne contie
 
 Par 3a, $\operatorname{Var}(N/n)=e^{-2\lambda}(e^\lambda-1)/n$. Le calcul de 3d appliqué à $q^2$ donne $\mathbb E[q^{2S_n}]=e^{n\lambda(q^2-1)}=e^{-2\lambda+\lambda/n}$. D’où
 $$\operatorname{Var}(\varphi(S_n))=e^{-2\lambda}(e^{\lambda/n}-1).$$
-Par convexité de l’exponentielle sur le segment $[0,\lambda]$, $e^{\lambda/n}\le1+(e^\lambda-1)/n$. La variance du second estimateur est donc au plus celle de $N/n$. Pour $n>1$ et $\lambda>0$, la stricte convexité rend l’amélioration stricte. Pour $n=1$, les deux estimateurs sont exactement la même indicatrice.
+Par convexité de l’exponentielle sur le segment $[0,\lambda]$, $e^{\lambda/n}\le1+(e^\lambda-1)/n$. La variance du second estimateur est donc au plus celle de $N/n$. Pour $n>1$ et $\lambda>0$, la stricte convexité rend l’amélioration stricte. Pour $n=1$, les deux estimateurs sont exactement la même indicatrice. Une vérification structurelle est donnée par l’échangeabilité : pour tout $j$, $\mathbb E[N/n\mid S_n=j]=n^{-1}\sum_i\mathbb P(X_i=0\mid S_n=j)=\varphi(j)$. La formule de variance totale montre également que la différence des variances est $\mathbb E[\operatorname{Var}(N/n\mid S_n)]\ge0$.
