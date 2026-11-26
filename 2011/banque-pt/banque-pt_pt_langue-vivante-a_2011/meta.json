@@ -1,0 +1,235 @@
+{
+  "slug": "banque-pt_pt_langue-vivante-a_2011",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Langue vivante A",
+    "annee": 2011
+  },
+  "questions": 15,
+  "redaction": "IA (gpt-6.2-astra)",
+  "figures": [
+    {
+      "fichier": "figures/lecture-de.svg",
+      "question": "Allemand",
+      "legende": "Bien distinguer les délais"
+    },
+    {
+      "fichier": "figures/lecture-en.svg",
+      "question": "Anglais",
+      "legende": "Une image, puis une information"
+    },
+    {
+      "fichier": "figures/lecture-ar.svg",
+      "question": "Arabe",
+      "legende": "Comprendre l’intrusion saline"
+    },
+    {
+      "fichier": "figures/lecture-es.svg",
+      "question": "Espagnol",
+      "legende": "De la découverte à ses effets"
+    },
+    {
+      "fichier": "figures/lecture-it.svg",
+      "question": "Italien",
+      "legende": "Interpréter un résultat de groupe"
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "agent": "lva_pt_2325",
+      "perimetre": "Cinq versions françaises et dix réponses dans les langues des sujets, sources, commentaires et schémas par langue."
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2011/lv_a_pt_2011.pdf",
+    "sujet_sha256": "cf9c1dc3c42c04f680317aae0ca302dd704731cb79ca4eb4eb78aa70f306320a",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2011/rapport_lv_a_ecrit_2011.pdf",
+    "rapport_sha256": "2b7985c0291ec6ae1ac0d10dd042f0077d5c6588d4a420334a888de7222c7354",
+    "livret": "https://www.banquept.fr/documents/livret/2011/Livret_PT_2011.pdf#page=13",
+    "livret_sha256": "f9cd26395e9749f34a6ba265a7ac7f313e4550c3ab2d4fca547d3d492498f219",
+    "index_sujets": "https://www.banquept.fr/article152.html",
+    "index_rapports": "https://www.banquept.fr/article153.html"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Allemand · version",
+      "Allemand · question a",
+      "Allemand · question b",
+      "Anglais · version",
+      "Anglais · question a",
+      "Anglais · question b",
+      "Arabe · version",
+      "Arabe · question a",
+      "Arabe · question b",
+      "Espagnol · version",
+      "Espagnol · question a",
+      "Espagnol · question b",
+      "Italien · version",
+      "Italien · question a",
+      "Italien · question b"
+    ],
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "cf9c1dc3c42c04f680317aae0ca302dd704731cb79ca4eb4eb78aa70f306320a",
+      "perimetre": "Cinq versions françaises et dix réponses dans les langues des sujets, sources, commentaires et schémas par langue.",
+      "controles": [
+        {
+          "nom": "Allemand",
+          "titre": "Geophysik: Vorboten von Erdbeben verzweifelt gesucht",
+          "pages_sujet": [
+            2,
+            3
+          ],
+          "pages_rapport": [
+            1,
+            2
+          ],
+          "origine": "Holger Kroker, Die Welt, 20 février 2011. Article, pages 2–3. Le texte traduit se trouve page 2 et les questions page 3. Rapport allemand, pages 1–2 du PDF.",
+          "bornes_version": "De « Die Forscher interessierten sich » à « nicht gebrochen ist ».",
+          "consignes": [
+            "Was würde eine Vorwarnzeit von 20 Minuten in Erdbebengebieten genau ändern?",
+            "Das Klima verändert sich. Es gibt immer mehr Umweltkatastrophen (Überschwemmungen, Tornados, Erdbeben, usw.). Warum? Was kann man daraus lernen?"
+          ],
+          "compte_mots": [
+            90,
+            219
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-de.svg"
+        },
+        {
+          "nom": "Anglais",
+          "titre": "Computers That See You and Keep Watch Over You",
+          "pages_sujet": [
+            4,
+            5
+          ],
+          "pages_rapport": [
+            3,
+            4,
+            5
+          ],
+          "origine": "The New York Times, 1er janvier 2011. Texte et questions, pages 4–5. La version est page 4. Le rapport d’anglais, pages 3–5 du PDF, distingue expressément les deux sujets de rédaction.",
+          "bornes_version": "De « Five cameras » à « or alarming ».",
+          "consignes": [
+            "What is computer vision and to what extent can it be useful?",
+            "In what ways can new communication technologies be a threat to privacy?"
+          ],
+          "compte_mots": [
+            87,
+            228
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-en.svg"
+        },
+        {
+          "nom": "Arabe",
+          "titre": "هل يضطر لبنان إلى تحلية مياه البحر؟",
+          "pages_sujet": [
+            6,
+            7
+          ],
+          "pages_rapport": [
+            6
+          ],
+          "origine": "Marc Saadé, Al-Hayat, 5 janvier 2011. Texte et questions, pages 6–7. Le sens des deux bornes est confirmé par la page 6 malgré la disposition bidirectionnelle de leur rappel page 7. Rapport d’arabe, page 6 du PDF.",
+          "bornes_version": "Du début sur l’infiltration de l’eau de mer, « تتسرب مياه البحر », à « خصائص الطبقة المائية الجوفية » à la fin du premier paragraphe.",
+          "consignes": [
+            "ما هو معنى النص العام؟",
+            "ما هي في رأيكم أنجع السبل للمحافظة على الماء؟"
+          ],
+          "compte_mots": [
+            84,
+            207
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-ar.svg"
+        },
+        {
+          "nom": "Espagnol",
+          "titre": "Los nuevos dioses",
+          "pages_sujet": [
+            8,
+            9
+          ],
+          "pages_rapport": [
+            7
+          ],
+          "origine": "Magazine, 16 mai 2010. Texte page 8, consignes page 9. Rapport d’espagnol page 7 du PDF. La version s’arrête à l’intérieur de l’intervention de la chercheuse.",
+          "bornes_version": "Du début du texte à « ni se preocupa del bienestar humano ni de ningún animal ».",
+          "consignes": [
+            "Analice Usted el panorama de la investigación científica que nos presenta este texto.",
+            "¿Es Usted optimista frente a esta investigación científica y sus consecuencias para la sociedad?"
+          ],
+          "compte_mots": [
+            86,
+            220
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-es.svg"
+        },
+        {
+          "nom": "Italien",
+          "titre": "Sei in ufficio? Tieni il muso",
+          "pages_sujet": [
+            10,
+            11
+          ],
+          "pages_rapport": [
+            8
+          ],
+          "origine": "Sara Ficocelli, La Repubblica, 2 mars 2011. Texte page 10, consignes page 11. Le rapport italien figure page 8 du PDF.",
+          "bornes_version": "De « La ricerca condotta » à « così via ».",
+          "consignes": [
+            "« Il sorriso di circostanza (…) è deprimente. » Cosa implica nelle relazioni di lavoro l’obbligo del sorriso? Perché il sorriso è deprimente quando è forzato?",
+            "Come si spiega il fatto che l’uomo e la donna non sono uguali sul fatto di falsificare l’umore?"
+          ],
+          "compte_mots": [
+            84,
+            210
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-it.svg"
+        }
+      ]
+    }
+  }
+}
