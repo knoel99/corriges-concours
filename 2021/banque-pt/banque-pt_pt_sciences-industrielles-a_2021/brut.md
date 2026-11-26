@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 L’épreuve de cinq heures étudie le bras gauche du robot collaboratif Baxter. Les 50 réponses renvoient aux feuillets numérotés de l’énoncé et au cahier de 24 pages. Les extraits graphiques de la Banque PT sont complétés pour montrer les repères, les courbes et les constructions demandées. Le rapport du jury souligne notamment la validation géométrique, l’oscillation de l’articulation et la construction de Fresnel.
 
 [Sujet, annexes et cahier de réponse](https://www.banquept.fr/documents/2021/si_a_2021_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2021/rapport_si_a_ecrit_2021.pdf)
@@ -143,7 +145,7 @@ En N et mm, $G=220000/[2(1+0{,}3)]=84615$ MPa et la contrainte admissible vaut $
 
 *Énoncé, feuillet 16 · cahier, page 10.*
 
-On assimile la croix à deux voiles minces identiques en parallèle, en négligeant leur petite zone commune et les effets locaux de jonction. La contrainte maximale dans chacun obéit à la même loi en $t,G,\theta,L$ donc $L_{\rm cross,min}=L=63{,}46$ mm. La raideur totale est $2h_{\rm cross}t^3G/(3L)$, d’où $h_{\rm cross}=h/2=83{,}33$ mm et $h_{\rm cross}/t\simeq56$. On divise par deux la largeur maximale de la section en conservant la longueur et la raideur. La nouvelle section occupe aussi de la place dans la seconde direction transverse.
+On assimile la croix à deux voiles minces identiques en parallèle, en négligeant leur petite zone commune et les effets locaux de jonction. La contrainte maximale dans chacun obéit à la même loi en $t,G,\theta,L$ donc $L_{\rm cross,min}=L=63{,}46$ mm. La raideur totale est $2h_{\rm cross}t^3G/(3L)$, d’où $h_{\rm cross}=h/2=83{,}33$ mm et $h_{\rm cross}/t\simeq56$. Le couple de chaque voile est de 7,5 N·m à la torsion maximale. On divise par deux la largeur maximale de la section en conservant la longueur et la raideur. La nouvelle section occupe aussi de la place dans la seconde direction transverse.
 
 ![Figure 4 — Feuillet 16. Dimensions du ressort à section en croix.](figures/croix.svg)
 
@@ -314,7 +316,7 @@ Avec $T_i=\tau=L/R$, la boucle ouverte est $K_p/(Lp)$ et la boucle fermée $1/(1
 
 *Énoncé, feuillet 24 · cahier, page 20.*
 
-Les deux courbes finissent à 1 A et restent sous cette valeur. Le premier dépassement est nul et aucun écart statique n’est visible. Le saut a lieu à 2 ms. À 0,95 A les intersections se lisent vers 6,8 à 7,0 ms pour le premier cas et 7,2 à 7,5 ms pour le second. Les durées correspondantes sont donc environ 4,9 et 5,4 ms. Les deux appartiennent à l’intervalle exigé de 4 à 6 ms.
+Les deux courbes finissent à 1 A et restent sous cette valeur. Le premier dépassement est nul et aucun écart statique n’est visible. Le saut a lieu à 2 ms. À 0,95 A les intersections se lisent vers 6,5 à 6,7 ms pour la courbe bleue et 7,0 à 7,2 ms pour la courbe rouge. Les durées correspondantes sont donc environ 4,6 et 5,1 ms. Les deux appartiennent à l’intervalle exigé de 4 à 6 ms.
 
 ![Figure 9 — Feuillet 24. Seuil de 0,95 A sur les deux réponses simulées.](figures/courant.svg)
 
