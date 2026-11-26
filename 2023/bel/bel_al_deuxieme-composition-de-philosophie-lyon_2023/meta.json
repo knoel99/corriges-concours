@@ -1,0 +1,153 @@
+{
+  "slug": "bel_al_deuxieme-composition-de-philosophie-lyon_2023",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "serie": "Sciences humaines",
+    "ecole": "ENS de Lyon",
+    "matiere": "Deuxième composition de philosophie (Lyon)",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "duree_heures": 6,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2023-09/Epreuve-de-specialite.pdf#page=3",
+    "sujet_sha256": "d646a518fbe4febf8a67e582f0310174ed455fa1f7d2c93d37f450a6420673a2",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2023-11/Philosophie-2023.pdf#page=9",
+    "rapport_jury_sha256": "7465f32552373deb6044e925ad48e3d32507e031b9f456e80c2d1b8054050ada",
+    "pages_rapport_verifiees": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2023",
+    "intitule": "Y a-t-il plusieurs mondes ?",
+    "provenance": "Fascicule des épreuves de spécialité, feuillet de philosophie. Le rapport identifie la deuxième composition, série Sciences humaines."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2023-09/Epreuve-de-specialite.pdf#page=3",
+      "sha256": "d646a518fbe4febf8a67e582f0310174ed455fa1f7d2c93d37f450a6420673a2",
+      "pages": 20,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "d637c9f152c00d67d0ac53df6ca1a8afc6acd94775b42bc8aa249b7f1b2e0dc5"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "4f8bfd69ac0825672bba2271718e7d9c9a501a55ecc7a1a8d82d876e6b014dbe"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2023-11/Philosophie-2023.pdf#page=9",
+      "sha256": "7465f32552373deb6044e925ad48e3d32507e031b9f456e80c2d1b8054050ada",
+      "pages": 27,
+      "pages_verifiees": [
+        {
+          "numero": 9,
+          "rendu_sha256": "dc76f842bc02cb3003041488c63f6c954ad583f279e620c38bab321f9d303fd9"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "2398a1f88e651bb499b96c7f89c0464060a007eaa4d10029ba8aa2950327af1b"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "47c97d6c86960e792a23eadd7370bd3786910420261771c4d0860dd1c855c0db"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "bc365bb4024e81d4c65c41fe3cb16a4203180d5e17787a3160002bb795caf533"
+        },
+        {
+          "numero": 13,
+          "rendu_sha256": "d33f8b7ae843c31975fe6292d92ef88c799e277aa0cb95b492986394e693e658"
+        },
+        {
+          "numero": 14,
+          "rendu_sha256": "3792514e4377128979ad7f10a9f5ffd403cf68a6e30a9304132daac1c17ab54d"
+        },
+        {
+          "numero": 15,
+          "rendu_sha256": "9f46bc16be76831d870f3c966b16b9737058b33096d687c267964e1d343f9ebc"
+        },
+        {
+          "numero": 16,
+          "rendu_sha256": "d6c2e69feadbf6dda0974cafe9b4089f421c0abe907dca5971e767b76782100d"
+        },
+        {
+          "numero": 17,
+          "rendu_sha256": "bd80fe501f575bf59e663d0020ab6842c2d695490aecda4f57317bc9bffcad17"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "Dissertation",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "Le tout absolu, l’ordre constitué et le monde possible répondent à trois critères. Seul un critère d’individuation permet de savoir ce que l’on compte."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "x_hist_1986",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Dissertation originale entièrement rédigée, guidage sur le raisonnement et schéma conceptuel."
+    },
+    {
+      "phase": "revision",
+      "agent": "x_hist_1986",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle de la distinction entre le tout et les mondes chez Épicure, des mondes possibles chez Leibniz, de la portée du milieu chez Uexküll et du rôle du monde public chez Arendt."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 3,
+        "feuillet_imprime": 3,
+        "intitule": "Y a-t-il plusieurs mondes ?"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}
