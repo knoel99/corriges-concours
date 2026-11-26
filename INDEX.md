@@ -741,6 +741,7 @@
 | 2025 | BEL | BL | Sociologie (oral commun) — Dirigeants et professionnels de haut niveau | [md](2025/bel/bel_bl_sociologie-oral-commun-dirigeants-et-professionnels-de-haut-niveau_2025/brut.md) | [md](2025/bel/bel_bl_sociologie-oral-commun-dirigeants-et-professionnels-de-haut-niveau_2025/guide.md) |
 | 2025 | BEL | BL | Sociologie (oral commun) — Socialisation domestique primaire | [md](2025/bel/bel_bl_sociologie-oral-commun-socialisation-domestique-primaire_2025/brut.md) | [md](2025/bel/bel_bl_sociologie-oral-commun-socialisation-domestique-primaire_2025/guide.md) |
 | 2025 | BEL | BL | Sociologie (oral à option) — Esprit sociologique des lois et sale boulot | [md](2025/bel/bel_bl_sociologie-oral-a-option-esprit-sociologique-des-lois-et-sale-boulot_2025/brut.md) | [md](2025/bel/bel_bl_sociologie-oral-a-option-esprit-sociologique-des-lois-et-sale-boulot_2025/guide.md) |
+| 2025 | BEL | BL | Sociologie (oral à option) — Imitation et prédiction | [md](2025/bel/bel_bl_sociologie-oral-a-option-imitation-et-prediction_2025/brut.md) | [md](2025/bel/bel_bl_sociologie-oral-a-option-imitation-et-prediction_2025/guide.md) |
 | 2025 | BEL | BL | Version grecque | [md](2025/bel/bel_bl_version-grecque_2025/brut.md) | [md](2025/bel/bel_bl_version-grecque_2025/guide.md) |
 | 2025 | BEL | BL | Version latine | [md](2025/bel/bel_bl_version-latine_2025/brut.md) | [md](2025/bel/bel_bl_version-latine_2025/guide.md) |
 | 2026 | BEL | BL | Sciences sociales | [md](2026/bel/bel_bl_sciences-sociales_2026/brut.md) | [md](2026/bel/bel_bl_sciences-sociales_2026/guide.md) |
