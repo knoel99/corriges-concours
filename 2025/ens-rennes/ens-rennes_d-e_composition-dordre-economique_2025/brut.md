@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Dans quelle mesure les marchés financiers affectent-ils les décisions économiques ?
 
 En octobre 2008, la Réserve fédérale américaine crée une facilité pour soutenir le marché du papier commercial. Des entreprises qui, la veille, pouvaient renouveler leurs titres à court terme risquent de ne plus financer leurs opérations courantes. Un marché financier affecte donc les décisions par le prix du financement et par la possibilité même de l’obtenir. Sur le marché primaire, un agent à besoin de financement émet un titre souscrit par un détenteur d’épargne. Sur le marché secondaire s’échangent des titres existants. La vente n’apporte alors aucun fonds nouveau à l’émetteur, mais le prix et la liquidité de ces titres influencent les conditions de sa prochaine émission. Cette finance directe se distingue du crédit qu’une banque porte à son bilan, bien que marchés et banques se financent et se renseignent réciproquement. Comment les prix financiers rendent-ils possibles des arbitrages entre présent et avenir, et quand cessent-ils d’être un guide fiable pour les ménages, les entreprises et les pouvoirs publics ?
@@ -33,3 +35,9 @@ Les marchés affectent profondément les arbitrages qui engagent le présent et 
 ![Par quel canal le prix d’un titre change-t-il un choix ?](figures/signaux-et-decisions.svg)
 
 [Sujet officiel](https://www.ens-rennes.fr/medias/fichier/sujet-economie-d-e-2025_1760692386039-pdf) · [Rapport du jury](https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-economie-e-crit-d-e-2025_1768897848087-pdf) · [BCE, transmission monétaire](https://www.ecb.europa.eu/mopo/intro/transmission/html/index.en.html) · [Fed, marché du papier commercial en 2008](https://www.federalreserve.gov/newsevents/reform_cpff.htm) · [BCE, décisions de septembre 2012](https://www.ecb.europa.eu/press/govcdec/otherdec/2012/html/gc120921.en.html)
+
+## Vérification sur le sujet
+
+L’intitulé unique et le rapport de deux pages ont été rapprochés de chaque édition. Les décisions étudiées concernent les ménages, les entreprises et la puissance publique, avec finance directe ou intermédiée, prix du risque, contraintes de crédit et intégration internationale. Les réponses distinguent également marché primaire et marché secondaire.
+
+La séparation de Fisher précise dans quelles conditions un prix de marché oriente l’entreprise. Un projet coûte 100 aujourd’hui et rapporte avec certitude 108 dans un an. Sa valeur actuelle nette est de $108/1{,}05-100$, soit environ 2,86 au taux de 5 %. Au taux de 10 %, elle tombe à environ −1,82. Si actionnaires et entreprise empruntent et prêtent librement au même taux, le projet rentable accroît la richesse des actionnaires, qui choisissent ensuite leur propre profil de consommation. Si l’entreprise manque de garanties et ne peut emprunter au taux affiché, le taux pertinent et même la faisabilité du projet changent.
