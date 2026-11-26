@@ -1,0 +1,137 @@
+{
+  "slug": "x_ta_deuxieme-epreuve-de-mathematiques_1986",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "TA",
+    "filiere_historique": "T.A.",
+    "matiere": "Deuxième épreuve de mathématiques",
+    "annee": 1986,
+    "modalite": "écrit"
+  },
+  "intitule": "Deuxième épreuve de mathématiques · T.A.",
+  "duree_heures": 4,
+  "questions": 13,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-36a623bbf4a4e3d7c85c",
+    "sujet_sha256": "5f092ff731da055b4a06959fd0d1de47bc361e36d09c51f09459ff18fd51fd7d",
+    "notice_ups": "m86mi2",
+    "pages": 2,
+    "notice_officielle": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000330227",
+    "precisions": "Le bandeau des écoles donne « École polytechnique (option T.A.) ». Le libellé de la deuxième épreuve indique expressément « option T.A. ».",
+    "attribution": "Concours commun Mines-Ponts-Télécom, École polytechnique (option T.A.), deuxième épreuve de mathématiques de l’option T.A."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I.2.b",
+      "fichier": "figures/noyaux-symetriques.svg",
+      "legende": "Les noyaux symétriques des restes pour les ordres deux et quatre, tracés sur une même échelle."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1.a",
+      "I.1.b",
+      "I.1.c",
+      "I.1.d",
+      "I.2.a",
+      "I.2.b",
+      "I.2.c",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5.a",
+      "II.5.b"
+    ],
+    "repere_par_question": [
+      {
+        "question": "I.1.a",
+        "page_pdf": 1,
+        "page_imprimee": 79
+      },
+      {
+        "question": "I.1.b",
+        "page_pdf": 1,
+        "page_imprimee": 79
+      },
+      {
+        "question": "I.1.c",
+        "page_pdf": 1,
+        "page_imprimee": 79
+      },
+      {
+        "question": "I.1.d",
+        "page_pdf": 2,
+        "page_imprimee": 80
+      },
+      {
+        "question": "I.2.a",
+        "page_pdf": 2,
+        "page_imprimee": 80
+      },
+      {
+        "question": "I.2.b",
+        "page_pdf": 2,
+        "page_imprimee": 80
+      },
+      {
+        "question": "I.2.c",
+        "page_pdf": 2,
+        "page_imprimee": 80
+      },
+      {
+        "question": "II.1",
+        "page_pdf": 2,
+        "page_imprimee": 80
+      },
+      {
+        "question": "II.2",
+        "page_pdf": 2,
+        "page_imprimee": 80
+      },
+      {
+        "question": "II.3",
+        "page_pdf": 2,
+        "page_imprimee": 80
+      },
+      {
+        "question": "II.4",
+        "page_pdf": 2,
+        "page_imprimee": 80
+      },
+      {
+        "question": "II.5.a",
+        "page_pdf": 2,
+        "page_imprimee": 80
+      },
+      {
+        "question": "II.5.b",
+        "page_pdf": 2,
+        "page_imprimee": 80
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions, vérification des restes aux ordres 2 et 4, résolution de la différence polynomiale et tracé des noyaux."
+    }
+  ]
+}
