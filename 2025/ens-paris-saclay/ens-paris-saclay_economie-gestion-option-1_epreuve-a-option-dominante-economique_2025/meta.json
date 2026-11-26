@@ -1,0 +1,70 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_epreuve-a-option-dominante-economique_2025",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Épreuve à option — dominante économique",
+    "annee": 2025,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "Les stratégies de rattrapage industriel depuis 1945 ont-elles atteint leurs objectifs ?",
+  "gabarit": "dissertation",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2025/Sujets/2025_EG1_Ep3_Ep_a_option_eco_gestion_14022025_NB.pdf#page=2",
+    "index": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=289&field_year_target_id%5B%5D=602&page=1",
+    "pages_sujet": "2",
+    "sujet_sha256": "6aab1f51212c1727c6cd6d6b889a51b2058ed8c3ce790e8f53948c6d28fdf0ba",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2025/Sujets/2025_EG1_Ep3_Ep_a_option_eco_gestion_14022025_NB.pdf",
+        "pages": 10,
+        "sha256": "6aab1f51212c1727c6cd6d6b889a51b2058ed8c3ce790e8f53948c6d28fdf0ba"
+      },
+      {
+        "role": "rapport-eco",
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2025/rapports/2025_EcoG1_Rapport_option_eco_ecrit.pdf",
+        "pages": 3,
+        "sha256": "8b1cf0aa5dbf08bad37dfd7b3a2bf3f9218e604fe6c0f364bc1118fd4a19ba03"
+      }
+    ],
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2025/rapports/2025_EcoG1_Rapport_option_eco_ecrit.pdf",
+    "rapport_sha256": "8b1cf0aa5dbf08bad37dfd7b3a2bf3f9218e604fe6c0f364bc1118fd4a19ba03"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/comparaison.svg",
+      "question": "Dissertation",
+      "legende": "Avec une croissance de 6 % contre 2 %, le ratio des productivités passe de 50 % à 51,96 %. L’axe des barres part de zéro."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "inventaire_livraisons_26",
+      "agent": "inventaire_livraisons_26",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Dissertation sur la reconstruction, l’assimilation technique et la viabilité de l’industrie moderne. Calcul du rapprochement de deux niveaux de productivité et comparaison de trajectoires européennes, asiatiques et latino-américaines."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "limites": "La page 2 énonce l’unique dissertation. Le rapport de jury, pages 1 à 3, situe la fin du programme à la crise de 2008 et invite à articuler viabilité commerciale, technologie et contrainte extérieure. Le cas de gestion qui suit possède ses propres annexes. Les niveaux de productivité de la figure sont un calcul illustratif, indépendant de toute statistique nationale."
+  }
+}
