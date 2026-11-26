@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve dure trois heures. Chaque candidat traite la langue choisie à l’inscription. La version française vaut 10 points. La question a demande 80 à 100 mots pour 4 points. La question b demande 200 à 250 mots pour 6 points.
 
 [Sujet](https://www.banquept.fr/documents/2012/lv_a_pt_2012.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2012/rapport_lv_a_ecrit_2012.pdf) · [Grille du livret](https://www.banquept.fr/documents/livret/2012/Livret_PT_2012.pdf#page=12)
@@ -22,7 +24,7 @@ Pour la version, distinguer la surface au sol de la couronne et la surface d’a
 
 De « Eine prächtige Grünlilie im Wohnzimmer » à « zum Beispiel durch Schadstoffe in der Luft ».
 
-Un magnifique chlorophytum dans le salon, quelques ficus au bureau… Les plantes vertes, nous l’avons appris à l’école, améliorent la qualité de l’air. Elles le doivent à un processus peu facile à comprendre pour le profane en chimie, la photosynthèse. Ce qui fonctionne à petite échelle avec les plantes d’intérieur remplit aussi son office à grande échelle. Les arbres améliorent l’air des villes.
+Un magnifique chlorophytum dans le salon, quelques ficus au bureau… Les plantes vertes, nous l’avons appris à l’école, améliorent la qualité de l’air. Elles le doivent à un phénomène difficile à comprendre pour qui ne connaît pas la chimie, la photosynthèse. Ce qui fonctionne à petite échelle avec les plantes d’intérieur remplit aussi son office à grande échelle. Les arbres améliorent l’air des villes.
 
 La contribution d’un arbre à la qualité de l’air dépend avant tout du diamètre de sa couronne. « Pour peu qu’elle soit assez imposante, un arbre de quinze à vingt mètres de haut couvre facilement de 100 à 150 mètres carrés au sol, même si son tronc est mince », explique Edgar Wagner, biologiste et spécialiste de physiologie végétale à Fribourg. « Si, en plus, le feuillage est dense, une surface d’absorption de 1 200 à 1 500 mètres carrés n’a rien d’exceptionnel. » Un vieux hêtre, par exemple, peut produire 1,7 kilogramme d’oxygène par heure, de quoi faire respirer cinquante personnes pendant une heure.
 
@@ -92,7 +94,7 @@ There is also a cost to abandoning exploration entirely. Questions with no immed
 
 Najib Saab, Al-Hayat, 4 novembre 2011, page 6. Les trois consignes figurent page 7. Le rapport d’arabe, page 5 du PDF, rappelle le contexte diplomatique et la portée de l’épreuve.
 
-La version s’arrête au soutien scientifique et matériel, avant la discussion sur les négociations ministérielles. Rendre le contraste entre avertissement et action. La première réponse expose la thèse. La seconde défend des solutions en distinguant les responsabilités des pays.
+Le jury a particulièrement relevé le slogan de la réunion de Bonn. Garder le parallélisme entre avertir à temps et agir à temps. La version s’arrête au soutien scientifique et matériel, avant la discussion sur les négociations ministérielles. Rendre le contraste entre avertissement et action. La première réponse expose la thèse. La seconde défend des solutions en distinguant les responsabilités des pays.
 
 ![De l’alerte à l’accord](figures/lecture-ar.svg)
 
@@ -102,7 +104,7 @@ Du début « دبلوماسية تغير المناخ » à « بالدعم ال
 
 La diplomatie du changement climatique a fait l’objet à Bonn d’une réunion de concertation accueillie par le ministère allemand des Affaires étrangères, en présence de responsables d’une trentaine de pays. L’Allemagne avait déjà pris l’initiative de mettre le climat à l’ordre du jour des questions de sécurité lorsqu’elle avait saisi le Conseil de sécurité de l’ONU à l’été 2011. La réunion de Bonn s’inscrivait dans le prolongement de cette démarche, en associant au débat sur le changement climatique des diplomates des ministères des Affaires étrangères. Car cette question menace non seulement la stabilité mondiale, mais l’existence humaine elle-même.
 
-La réunion avait pour mot d’ordre « De l’alerte précoce à l’action précoce ». Les scientifiques avaient bel et bien prévenu très tôt des conséquences du changement climatique. Mais le doute entretenu de longues années sur le bien-fondé de leurs avertissements était alimenté par des groupes qui tiraient profit de la situation et craignaient que le changement ne nuise à leurs intérêts. L’alerte donnée de bonne heure n’a donc pas rencontré de conviction tout aussi précoce quant à la réalité des faits, et les mesures sérieuses pour établir des plans d’action ont tardé. On peut dès lors comprendre que l’on craigne un retard dans le passage à l’action. Les défis du changement climatique constituant une menace mondiale, il appartient à la diplomatie de proposer des solutions.
+La réunion avait pour mot d’ordre « Alerter à temps, agir à temps ». Les scientifiques avaient bel et bien prévenu très tôt des conséquences du changement climatique. Mais le doute entretenu de longues années sur le bien-fondé de leurs avertissements était alimenté par des groupes qui tiraient profit de la situation et craignaient que le changement ne nuise à leurs intérêts. L’alerte donnée de bonne heure n’a donc pas rencontré de conviction tout aussi précoce quant à la réalité des faits, et les mesures sérieuses pour établir des plans d’action ont tardé. On peut dès lors comprendre que l’on craigne un retard dans le passage à l’action. Les défis du changement climatique constituant une menace mondiale, il appartient à la diplomatie de proposer des solutions.
 
 On ne saurait demander à la Chine, à l’Inde et aux pays en développement de laisser des centaines de millions de leurs habitants sans accès suffisant à l’énergie et aux transports dans le but de limiter les émissions. Il n’est pas davantage acceptable que les pays pauvres reproduisent les erreurs des pays industrialisés en se lançant aveuglément dans un développement débridé qui prétendrait rattraper le passé. Aux pays industrialisés avancés d’assumer leur responsabilité historique dans la pollution, de réduire fortement leurs émissions de carbone et d’apporter aux pays en développement un soutien scientifique et matériel pour les aider à passer aux technologies propres.
 
