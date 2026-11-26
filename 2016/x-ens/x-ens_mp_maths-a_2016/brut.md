@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
 Ce problème de quatre heures porte sur les matrices entières et les simplexes du réseau. Les 14 numéros donnés au concours établissent une finitude à équivalence entière près. Le PDF officiel ajoute cinq numéros hors concours démontrant les théorèmes admis. Les deux ensembles sont traités ici, soit 40 questions et sous-questions. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/uploads/2016/05/16_mp_sujet_maths_a.pdf)
@@ -192,7 +194,7 @@ Pour $i\geq2$, $t_i\geq t_n\geq A-\alpha>A/2$, et $k/N<A/4$. Pour $i=1$, le plus
 
 ### Question 18a
 
-Supposons $1>\sum_i t_i>1-\alpha(k,n)$. La question 17 fournit $p_i,q$ et nous posons $s=\sum_i p_i s_i$. Pour $j=0,\ldots,k$, le point $x_j=(jq+1)x-js$ est entier. Ses coefficients sur les $s_i$ sont $t_i+j(qt_i-p_i)$, strictement positifs en $j=0$ et $j=k$ par 17, donc tout au long de cet intervalle par affinité. Leur somme vaut $(jq+1)\sum_i t_i-jq<1$. Les points sont ainsi intérieurs par 7b. Ils sont distincts : le pas $qx-s$ ne peut être nul, car l’indépendance des $s_i$ imposerait $qt_i=p_i$ pour tous, puis $q\sum_i t_i=q$, impossible. On aurait $k+1$ points entiers intérieurs pour un simplexe qui en possède exactement $k$. D’où $\sum_i t_i\leq1-\alpha(k,n)$.
+Supposons $1>\sum_i t_i>1-\alpha(k,n)$. Pour appliquer la construction de 17, on peut réordonner les sommets non nuls et leurs coefficients ensemble, de manière à obtenir $t_1\geq\cdots\geq t_n$. Cette permutation conserve $x$ et le simplexe. La question 17 fournit $p_i,q$ et nous posons $s=\sum_i p_i s_i$. Pour $j=0,\ldots,k$, le point $x_j=(jq+1)x-js$ est entier. Ses coefficients sur les $s_i$ sont $t_i+j(qt_i-p_i)$, strictement positifs en $j=0$ et $j=k$ par 17, donc tout au long de cet intervalle par affinité. Leur somme vaut $(jq+1)\sum_i t_i-jq<1$. Les points sont ainsi intérieurs par 7b. Ils sont distincts : le pas $qx-s$ ne peut être nul, car l’indépendance des $s_i$ imposerait $qt_i=p_i$ pour tous, puis $q\sum_i t_i=q$, impossible. On aurait $k+1$ points entiers intérieurs pour un simplexe qui en possède exactement $k$. D’où $\sum_i t_i\leq1-\alpha(k,n)$.
 
 ### Question 18b
 

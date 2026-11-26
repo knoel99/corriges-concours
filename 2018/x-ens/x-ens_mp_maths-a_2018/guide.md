@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
 Les 19 numéros de cette épreuve de quatre heures comprennent 36 questions et sous-questions. À partir de la décomposition en valeurs singulières d’une matrice rectangulaire, on détermine sa meilleure approximation de rang inférieur puis les vitesses possibles d’une courbe de rang fixé. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_MPI_sujet_MathA.pdf)
@@ -220,7 +222,7 @@ On a utilisé 9a et $\lambda_{\ell+1}>0$. Le membre de droite est positif ou nul
 Prenons pour $P$ le projecteur orthogonal sur $\operatorname{Im}M^{\mathsf T}$, espace de dimension $\ell$. Ici $M=MP$, car $M$ annule $(\operatorname{Im}M^{\mathsf T})^\perp$. La même orthogonalité qu’en 8a donne
 $$\|A-M\|_F^2=\|A(I-P)\|_F^2+\|AP-M\|_F^2
 \geq \sum_{h=1}^k\lambda_h-\sum_{h=1}^{\ell}\lambda_h.$$
-En effet $\|A\|_F^2=\operatorname{tr}(A^{\mathsf T}A)=\sum_h\lambda_h$. Il y a égalité exactement si $M=AP$ et si l’on a égalité en 9b. Ainsi $P=V_*V_*^{\mathsf T}$ et $M=U_*\Sigma_*V_*^{\mathsf T}$. Cette matrice de rang $\ell$ atteint effectivement la borne. Sans l’écart spectral, la valeur minimale peut subsister avec plusieurs minimiseurs. Pour $A=I_2$ et $\ell=1$, chaque $vv^{\mathsf T}$ avec $\|v\|=1$ approche $I_2$ avec une erreur de Frobenius égale à $1$. L’égalité vient de ce que $I_2-vv^{\mathsf T}$ est un projecteur orthogonal de rang un. La décomposition précédente donne une erreur au moins égale à cette valeur pour tout $M$ de rang un.
+En effet $\|A\|_F^2=\operatorname{tr}(A^{\mathsf T}A)=\sum_h\lambda_h$. Il y a égalité exactement si $M=AP$ et si l’on a égalité en 9b. Ainsi $P=V_*V_*^{\mathsf T}$ et $M=U_*\Sigma_*V_*^{\mathsf T}$. Cette matrice de rang $\ell$ atteint effectivement la borne. Lorsque $\lambda_\ell=\lambda_{\ell+1}$, la minoration de 9b reste valable et la même troncature l’atteint. La valeur minimale est donc encore la somme des valeurs propres écartées pour l’erreur au carré. Le projecteur optimal peut alors se choisir de plusieurs façons. Pour $A=I_2$ et $\ell=1$, chaque $vv^{\mathsf T}$ avec $\|v\|=1$ approche $I_2$ avec une erreur de Frobenius égale à $1$. L’égalité vient de ce que $I_2-vv^{\mathsf T}$ est un projecteur orthogonal de rang un. La décomposition précédente donne une erreur au moins égale à cette valeur pour tout $M$ de rang un.
 
 ![Figure 3 — Pour trois valeurs singulières 4, 3 et 1, la troncature au rang deux conserve les contributions 16 et 9 et laisse une erreur quadratique égale à 1.](figures/troncature.svg)
 
@@ -420,7 +422,7 @@ La projection orthogonale $\pi_A$ sur $T_A$ vérifie $B-\pi_A(B)\in T_A^\perp=N_
 
 #### Solution
 
-Écrivons $W=\widetilde A^{\mathsf T}UU^{\mathsf T}$ et $W_0=\widetilde A^{\mathsf T}U$. Ces matrices de tailles $p\times n$ et $p\times k$ ont même image. Par (C), cette image est $\operatorname{Im}\widetilde A^{\mathsf T}$, donc $\ker W_0^{\mathsf T}=\ker\widetilde A$. L’autre moitié de (C) donne $\operatorname{rg}(\widetilde A V)=k$. Si $W_0^{\mathsf T}Va=0$, alors $\widetilde A Va=0$, puis $a=0$. Ainsi $W_0^{\mathsf T}V$ est inversible. La projection géométrique du sujet est $P_{V,W}=P_{V,W_0}$. Pour tout $x$, la différence $x-P_{V,W}x$ appartient à $\ker\widetilde A$, tandis que $P_{V,W}x$ appartient à $\operatorname{Im}V$ où $VV^{\mathsf T}$ agit comme l’identité. D’où $\widetilde A=\widetilde A VV^{\mathsf T}P_{V,W}$.
+Écrivons $W=\widetilde A^{\mathsf T}UU^{\mathsf T}$ et $W_0=\widetilde A^{\mathsf T}U$. Ces matrices de tailles $p\times n$ et $p\times k$ ont même image. Par (C), cette image est $\operatorname{Im}\widetilde A^{\mathsf T}$, donc $\ker W_0^{\mathsf T}=\ker\widetilde A$. Par l’autre égalité de (C), les images de $\widetilde A VV^{\mathsf T}$ et de $\widetilde A$ coïncident. Comme $V^{\mathsf T}$ est surjective sur $\mathbb R^k$, la première image est celle de $\widetilde A V$. L’hypothèse $\operatorname{rg}\widetilde A=k$ donne donc $\operatorname{rg}(\widetilde A V)=k$. Si $W_0^{\mathsf T}Va=0$, alors $\widetilde A Va=0$, puis $a=0$. Ainsi $W_0^{\mathsf T}V$ est inversible. La projection géométrique du sujet est $P_{V,W}=P_{V,W_0}$. Pour tout $x$, la différence $x-P_{V,W}x$ appartient à $\ker\widetilde A$, tandis que $P_{V,W}x$ appartient à $\operatorname{Im}V$ où $VV^{\mathsf T}$ agit comme l’identité. D’où $\widetilde A=\widetilde A VV^{\mathsf T}P_{V,W}$.
 
 ### Question 17
 

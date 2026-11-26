@@ -10,9 +10,14 @@
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/09/15_mp_sujet_mathsA_xlcr.pdf",
-    "rapport_jury": "https://www.bibmath.net/pbs/x/xmp_2015_1_rapport.pdf"
+    "rapport_jury": "https://www.bibmath.net/pbs/x/xmp_2015_1_rapport.pdf",
+    "sha256_sujet": "9d117b53a0dfb7e5122cb5962cd1366630ede872fee901a1acb330e15c1aafc5",
+    "sha256_rapport_jury": "4de012f775ac744c03cf697b016a1eda91b0184c18d486aaa0d98a36ac595e7a",
+    "rapport_jury_autre_miroir": "https://www.doc-solus.fr/prepa/sci/adc/pdf/rapports.pdf/2015/MP_MATHS_X_1_2015.rapport.pdf",
+    "sha256_autre_miroir": "c8ccf37602e0b22870e22220d3bda31a0b788b57d5d3924284611ed9493bde22",
+    "provenance_rapport": "Rapport du jury X–ENS diffusé par Bibm@th. Le texte des sept pages coïncide avec celui du miroir Doc-Solus après retrait de son filigrane."
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "figures": [
     {
       "fichier": "figures/enlacement.svg",
@@ -101,6 +106,65 @@
       "perimetre": "Relecture intégrale des 33 réponses et six figures sur le sujet et sur deux copies du rapport du jury. Coquille du corps des scalaires, construction numérique par bordage et longueurs alternées des côtés de l’hexagone.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_maths_b_recentes",
+      "modifications": true,
+      "perimetre": "33 subdivisions et six figures contrôlées. Vérification des multiplicités aux nœuds, de l’enlacement faible par passage à la limite à spectre ambiant simple, des sommets de la chambre et de l’hexagone. Explicitation du terme mixte lors de la rotation de Q16c."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1a",
+      "1b",
+      "2",
+      "3",
+      "4a",
+      "4b",
+      "5a",
+      "5b",
+      "5c",
+      "6",
+      "7a",
+      "7b",
+      "8",
+      "9a",
+      "9b",
+      "9c",
+      "10",
+      "11a",
+      "11b",
+      "12",
+      "13a",
+      "13b",
+      "13c",
+      "14a",
+      "14b",
+      "15a",
+      "15b",
+      "15c",
+      "16a",
+      "16b",
+      "16c",
+      "16d",
+      "16e"
+    ],
+    "precision": "Énoncé de 5 pages PDF et rapport de 7 pages PDF. 33 subdivisions et six figures contrôlées. Vérification des multiplicités aux nœuds, de l’enlacement faible par passage à la limite à spectre ambiant simple, des sommets de la chambre et de l’hexagone. Explicitation du terme mixte lors de la rotation de Q16c.",
+    "origine_attestation": {
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "9d117b53a0dfb7e5122cb5962cd1366630ede872fee901a1acb330e15c1aafc5",
+      "sha256_rapport_jury_controle": "4de012f775ac744c03cf697b016a1eda91b0184c18d486aaa0d98a36ac595e7a",
+      "perimetre": "33 subdivisions et six figures contrôlées. Vérification des multiplicités aux nœuds, de l’enlacement faible par passage à la limite à spectre ambiant simple, des sommets de la chambre et de l’hexagone. Explicitation du terme mixte lors de la rotation de Q16c.",
+      "commit_edition_anterieure": "24ada9b1781430dd8384f90d13f14f3f371e2698"
+    }
+  }
 }

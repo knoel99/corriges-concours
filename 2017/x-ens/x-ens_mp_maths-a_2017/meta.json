@@ -10,9 +10,11 @@
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/07/2017_MP_sujet_MathA.pdf",
-    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/11/17_MP_rap_eMathA.pdf"
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/11/17_MP_rap_eMathA.pdf",
+    "sha256_sujet": "f8c355f9d3a0c694b2e300d58f66e1611de4bfaeb9e7348b9bb80d2ab40d0da6",
+    "sha256_rapport_jury": "75aa1af2524aed47b6e783f66f7fd897d5f3f6ebe3fa17b517fc535bbef40b76"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "figures": [
     {
       "fichier": "figures/quart-tour-domptant.svg",
@@ -106,6 +108,67 @@
       "perimetre": "Relecture des 35 réponses et sept figures dans les deux éditions sur l’énoncé et le rapport. Dimension des blocs primaires non réels et vérification calculée de la dilatation symplectique sur un bloc non diagonalisable à valeur propre quadruple.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_maths_b_recentes",
+      "modifications": true,
+      "perimetre": "35 subdivisions et sept figures comparées au sujet et au rapport. Vérification des blocs symplectiques, du résultant, du critère spectral et de la contraction qui prolonge la conclusion de densité à chaque couple. Exemple en Q25 distinguant la condition suffisante sur la dérivée."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3a",
+      "3b",
+      "3c",
+      "3d",
+      "4",
+      "5",
+      "6",
+      "7a",
+      "7b",
+      "7c",
+      "7d",
+      "7e",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14a",
+      "14b",
+      "14c",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26"
+    ],
+    "precision": "Énoncé de 5 pages PDF et rapport de 6 pages PDF. 35 subdivisions et sept figures comparées au sujet et au rapport. Vérification des blocs symplectiques, du résultant, du critère spectral et de la contraction qui prolonge la conclusion de densité à chaque couple. Exemple en Q25 distinguant la condition suffisante sur la dérivée.",
+    "origine_attestation": {
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "f8c355f9d3a0c694b2e300d58f66e1611de4bfaeb9e7348b9bb80d2ab40d0da6",
+      "sha256_rapport_jury_controle": "75aa1af2524aed47b6e783f66f7fd897d5f3f6ebe3fa17b517fc535bbef40b76",
+      "perimetre": "35 subdivisions et sept figures comparées au sujet et au rapport. Vérification des blocs symplectiques, du résultant, du critère spectral et de la contraction qui prolonge la conclusion de densité à chaque couple. Exemple en Q25 distinguant la condition suffisante sur la dérivée.",
+      "commit_edition_anterieure": "24ada9b1781430dd8384f90d13f14f3f371e2698"
+    }
+  }
 }

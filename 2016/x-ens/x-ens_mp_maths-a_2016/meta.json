@@ -10,9 +10,11 @@
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/05/16_mp_sujet_maths_a.pdf",
-    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/03/16_MP_rap_EmathA.pdf"
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/03/16_MP_rap_EmathA.pdf",
+    "sha256_sujet": "b2b3e73d96fd0065e04f54175d94bfe4555970b4b3330cb216932394426745a0",
+    "sha256_rapport_jury": "73ce34e0e02d82ea8826de8ce6119957ffa8b4a8802763e42760e4acb656e083"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "figures": [
     {
       "fichier": "figures/maille-reseau.svg",
@@ -106,6 +108,72 @@
       "perimetre": "Relecture des 40 réponses et sept figures sur le sujet et le rapport, y compris le complément explicitement hors concours. Classes de volume non borné sans point entier intérieur, coefficient exact de symétrie du simplexe et vérification en dimension un.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_maths_b_recentes",
+      "modifications": true,
+      "perimetre": "40 subdivisions des deux éditions vérifiées, dont les douze subdivisions de Q15–19 du complément hors concours. Vérification de l’inégalité rectifiée en Q6 et du tétraèdre de Reeve, des limites dans le comptage, de l’approximation simultanée et des sept figures. Explicitation de la réindexation des coefficients en Q18a."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1a",
+      "1b",
+      "2a",
+      "2b",
+      "3",
+      "4a",
+      "4b",
+      "4c",
+      "5a",
+      "5b",
+      "5c",
+      "5d",
+      "6",
+      "7a",
+      "7b",
+      "7c",
+      "8a",
+      "8b",
+      "9a",
+      "9b",
+      "9c",
+      "10a",
+      "10b",
+      "10c",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15a",
+      "15b",
+      "15c",
+      "16a",
+      "16b",
+      "17a",
+      "17b",
+      "17c",
+      "18a",
+      "18b",
+      "18c",
+      "19"
+    ],
+    "precision": "Énoncé de 6 pages PDF et rapport de 4 pages PDF. 40 subdivisions des deux éditions vérifiées, dont les douze subdivisions de Q15–19 du complément hors concours. Vérification de l’inégalité rectifiée en Q6 et du tétraèdre de Reeve, des limites dans le comptage, de l’approximation simultanée et des sept figures. Explicitation de la réindexation des coefficients en Q18a.",
+    "origine_attestation": {
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "b2b3e73d96fd0065e04f54175d94bfe4555970b4b3330cb216932394426745a0",
+      "sha256_rapport_jury_controle": "73ce34e0e02d82ea8826de8ce6119957ffa8b4a8802763e42760e4acb656e083",
+      "perimetre": "40 subdivisions des deux éditions vérifiées, dont les douze subdivisions de Q15–19 du complément hors concours. Vérification de l’inégalité rectifiée en Q6 et du tétraèdre de Reeve, des limites dans le comptage, de l’approximation simultanée et des sept figures. Explicitation de la réindexation des coefficients en Q18a.",
+      "commit_edition_anterieure": "24ada9b1781430dd8384f90d13f14f3f371e2698"
+    }
+  }
 }
