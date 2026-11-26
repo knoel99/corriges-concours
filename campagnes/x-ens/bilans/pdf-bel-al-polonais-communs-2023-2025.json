@@ -1,0 +1,639 @@
+[
+  {
+    "slug": "bel_al_polonais-commentaire-et-traduction_2023",
+    "commit": "01b33ec3ed0336377cb9a47e5c8da9fcc778d8d6",
+    "journal": [
+      {
+        "phase": "redaction",
+        "agent": "lva_pt_2325",
+        "fournisseur": "codex",
+        "modele": "gpt-6.2-astra",
+        "famille_modele": "GPT-6",
+        "effort": "ultra",
+        "vitesse": null,
+        "date": "2026-11-26",
+        "modifications": true,
+        "editions": [
+          "brut",
+          "guide"
+        ],
+        "perimetre": "Commentaire composé en polonais sur les deux feuillets, version française originale dans les limites de la consigne, guide de lecture et schéma."
+      },
+      {
+        "phase": "revision",
+        "agent": "lva_pt_2325",
+        "fournisseur": "codex",
+        "modele": "gpt-6.2-astra",
+        "famille_modele": "GPT-6",
+        "effort": "ultra",
+        "vitesse": null,
+        "date": "2026-11-26",
+        "modifications": true,
+        "editions": [
+          "brut",
+          "guide"
+        ],
+        "perimetre": "Vérification des 78 lignes, du statut hypothétique de la destination, des amandes, des deux décomptes et du génitif przeszłości et de sa valeur temporelle. Version bornée avant le code à quatre chiffres."
+      }
+    ],
+    "couverture": {
+      "statut": "complet",
+      "questions_entierement_traitees": [
+        "Commentaire",
+        "Version"
+      ],
+      "repere_par_question": [
+        {
+          "question": "Commentaire",
+          "page_pdf": 18,
+          "pages_pdf": [
+            18,
+            19
+          ],
+          "ligne_debut": 1,
+          "ligne_fin": 78
+        },
+        {
+          "question": "Version",
+          "page_pdf": 18,
+          "pages_pdf": [
+            18
+          ],
+          "ligne_debut": 26,
+          "ligne_fin": 39,
+          "debut": "Wsuwam telefon",
+          "fin": "I w innych sytuacjach też."
+        }
+      ],
+      "questions_partiellement_traitees": [],
+      "questions_non_traitees": []
+    },
+    "pieces": {
+      "sujet": {
+        "url": "https://www.ens-lyon.fr/sites/default/files/2023-09/Commentaire-d-un-texte-en-LVE.pdf#page=18",
+        "sha256": "465bc18f65e3127c7bcf5720f6042d95180133384f245e34fd7b38acd0ffb760",
+        "pages": 24,
+        "pages_verifiees": [
+          {
+            "numero": 1,
+            "rendu_sha256": "2d00da9d0f1f2cdf2b38a83f2d4c6e4c708adc481caee234bd08becf5b5b22e7"
+          },
+          {
+            "numero": 2,
+            "rendu_sha256": "07bf7c7ea1e09c9e01b35c439fb384e78325e16ca6969efdf51845f93bfb66ff"
+          },
+          {
+            "numero": 18,
+            "rendu_sha256": "c2fb1e8af0a3476c9c4209f58ffa6bc2fe54d867f3d6006eb176dab3b68cd51c"
+          },
+          {
+            "numero": 19,
+            "rendu_sha256": "1093c45a804d9d290424746863921932623a1808f0efd608d8f094d29d61d6c2"
+          }
+        ]
+      },
+      "rapport_jury": {
+        "url": "https://www.ens-lyon.fr/sites/default/files/2023-11/Polonais-2023.pdf#page=2",
+        "sha256": "c10459e1e8fe4d615b9d6f8a298838ea412fddb4eb6ce3433f6eac2a79b12663",
+        "pages": 7,
+        "pages_verifiees": [
+          {
+            "numero": 2,
+            "rendu_sha256": "fd22315ec9bbfa0baab05700693b13ec52ba0b89555362b7b860760e030fd946"
+          },
+          {
+            "numero": 3,
+            "rendu_sha256": "5f5a0902c285d00304f4bdaa106e2a3cf0bf21df0c55186ca637ce0cd6b9e1f3"
+          },
+          {
+            "numero": 4,
+            "rendu_sha256": "c8110caefa9b03066105c4ab56623360c83853653e0e3b87c20e6bee38e0f4fc"
+          },
+          {
+            "numero": 5,
+            "rendu_sha256": "ffaeb6c1211df30963fff1f573157da81d1a05557d6246fa61f74bab28b4d678"
+          },
+          {
+            "numero": 6,
+            "rendu_sha256": "bb3bd68494b5994ee8dd7f77bc0830fb3c827ad48b24d5290eebb92364e9bec4"
+          },
+          {
+            "numero": 7,
+            "rendu_sha256": "b8ac8a1c16c0c590c9a4543dc9450b19142975ca81c5ea56ebabafec4486660f"
+          }
+        ]
+      }
+    },
+    "textes": {
+      "version_sha256": "a3813c3fec742cf61a3668d3f5b9764d77665254c5f3c56b471a437aed17d3ad",
+      "commentaire_sha256": "7f179305ace682b2d3d796688f40dffc989381446ebd86ca026a6e6d20e51aca",
+      "identiques_dans_les_deux_pdf": true,
+      "accents_polonais_et_francais_conserves": true,
+      "mots_commentaire": 482,
+      "mots_version": 212
+    },
+    "pdf": {
+      "brut": {
+        "pages": 2,
+        "signets": [
+          [
+            1,
+            "Commentaire",
+            1
+          ],
+          [
+            1,
+            "Version",
+            2
+          ]
+        ],
+        "nombre_signets": 2,
+        "pages_figures": [
+          2
+        ],
+        "sha256": "01209b33f4d8497d46af86a71792c89e4f1f12894cbb156758a402c192824642",
+        "rendu_sha256": [
+          "f0138a553b01cb1f9defe8fdf13474c1334722d252a86f3b89e94a3895e25a4e",
+          "d0f77747b56b203675b60c6d79e59d74d5f44b9871ba2a0d9eaf1fc2ef6735dd"
+        ]
+      },
+      "guide": {
+        "pages": 3,
+        "signets": [
+          [
+            1,
+            "Lire le silence à partir de la dernière ligne",
+            1
+          ],
+          [
+            2,
+            "Conserver les changements de personne",
+            1
+          ],
+          [
+            1,
+            "Commentaire",
+            2
+          ],
+          [
+            1,
+            "Version",
+            2
+          ]
+        ],
+        "nombre_signets": 4,
+        "pages_figures": [
+          1
+        ],
+        "sha256": "68a3987345d5b9865590a57ca2a1e9a43128f8e6114d886e2bc0dd80c14d7aa8",
+        "rendu_sha256": [
+          "c5bbf94c75541f9b22220e25062918426b1af32b012568d1fe96b90fb38c8c1d",
+          "283847a2fee314cfe0be76eda371e3eca87e2f77a4ed6fb3d77b3716b872d2a3",
+          "779c872a6d429e2ec28c653d68159a3896d62f989414da46215574cd7ab22f78"
+        ]
+      }
+    },
+    "empreintes": {
+      "meta.json": "8eb386fa5dafb2fbf493009d2fa896ce5b3ecee8d41dc14655f4bfec7e39fde8",
+      "bilan-compilation.md": "95e765492de14e0dbf44304724b35f303d76c4a75da9a690b5863e9a87c83ec5",
+      "figures/lecture.svg": "48f588b0533e3e90a6d9431d6158cce71fe44c717e9826a0e223c33eb44c70f3",
+      "brut.pdf": "01209b33f4d8497d46af86a71792c89e4f1f12894cbb156758a402c192824642",
+      "brut.md": "31557d9b085749598d707ad4b10c18e7058cc8284920c78384510012170ce23a",
+      "guide.pdf": "68a3987345d5b9865590a57ca2a1e9a43128f8e6114d886e2bc0dd80c14d7aa8",
+      "guide.md": "fb72830bb3c5768d194eee3b6c0b7d9f772ecba5c0815184148d2681e3f11dd4",
+      "apercu.jpg": "b409493084b24e2a2af7aeb0a571b79b6c16c5649f494e05771304d348514ca3"
+    },
+    "session": 2023,
+    "archive": "BEL-AL-polonais-commentaire-version-2023.zip",
+    "sha256": "0c90d40df12783ee121415aecf233212c1c6e7592d3e16c72234c0d7e068d714"
+  },
+  {
+    "slug": "bel_al_polonais-commentaire-et-traduction_2024",
+    "commit": "01b33ec3ed0336377cb9a47e5c8da9fcc778d8d6",
+    "journal": [
+      {
+        "phase": "redaction",
+        "agent": "lva_pt_2325",
+        "fournisseur": "codex",
+        "modele": "gpt-6.2-astra",
+        "famille_modele": "GPT-6",
+        "effort": "ultra",
+        "vitesse": null,
+        "date": "2026-11-26",
+        "modifications": true,
+        "editions": [
+          "brut",
+          "guide"
+        ],
+        "perimetre": "Commentaire composé en polonais sur les deux feuillets, version française originale dans les limites de la consigne, guide de lecture et schéma."
+      },
+      {
+        "phase": "revision",
+        "agent": "lva_pt_2325",
+        "fournisseur": "codex",
+        "modele": "gpt-6.2-astra",
+        "famille_modele": "GPT-6",
+        "effort": "ultra",
+        "vitesse": null,
+        "date": "2026-11-26",
+        "modifications": true,
+        "editions": [
+          "brut",
+          "guide"
+        ],
+        "perimetre": "Confrontation aux deux feuillets numérisés. Contrôle du prénom Władzio, de la toile, du titre de Staline, du dernier membre de la ligne 41 et des signes de hiérarchie détournés par les enfants."
+      }
+    ],
+    "couverture": {
+      "statut": "complet",
+      "questions_entierement_traitees": [
+        "Commentaire",
+        "Version"
+      ],
+      "repere_par_question": [
+        {
+          "question": "Commentaire",
+          "page_pdf": 16,
+          "pages_pdf": [
+            16,
+            17
+          ],
+          "ligne_debut": 1,
+          "ligne_fin": 74
+        },
+        {
+          "question": "Version",
+          "page_pdf": 16,
+          "pages_pdf": [
+            16,
+            17
+          ],
+          "ligne_debut": 24,
+          "ligne_fin": 41,
+          "debut": "W szkole od pierwszej lekcji",
+          "fin": "zniżają głos do szeptu."
+        }
+      ],
+      "questions_partiellement_traitees": [],
+      "questions_non_traitees": []
+    },
+    "pieces": {
+      "sujet": {
+        "url": "https://www.ens-lyon.fr/sites/default/files/2024-11/Commentaire%20d%27un%20texte%20en%20LVE%20et%20traduction.pdf#page=16",
+        "sha256": "80d15efa86786e91577675fd10623264c98f1e5e2424288248f1a684c15c9f6f",
+        "pages": 24,
+        "pages_verifiees": [
+          {
+            "numero": 1,
+            "rendu_sha256": "1f33d62d2f2871fbd373843ba5fed681f83b35c59a9ab1b31a272b421148df99"
+          },
+          {
+            "numero": 2,
+            "rendu_sha256": "3ea33261456a99b4e412cefc548d9cbb5b7a5a907bf3904edbcad2bb93d9a265"
+          },
+          {
+            "numero": 16,
+            "rendu_sha256": "39b57237977ea4903cdb4a179997130c06860a40f5ce067cb90b82877b9555f2"
+          },
+          {
+            "numero": 17,
+            "rendu_sha256": "588eafc9852a2a2ab35acd31a99f248d95ba1ed06e261f0fe8cc4c5331fb35e9"
+          }
+        ]
+      },
+      "rapport_jury": {
+        "url": "https://www.ens-lyon.fr/sites/default/files/2024-11/Polonais%202024%20OK.pdf#page=2",
+        "sha256": "92d65d1afdaae9b09e23996e440de255a65f4ae0d50854002a496020cc8365a5",
+        "pages": 7,
+        "pages_verifiees": [
+          {
+            "numero": 2,
+            "rendu_sha256": "95d13d17442384392cb483f6e77adda1cd0920bbc01a69ee0fac684d376e10cd"
+          },
+          {
+            "numero": 3,
+            "rendu_sha256": "b9c4b9851fb048d5723e25dcbd878526957c03ac968fbc78dc12bc8185197ae0"
+          },
+          {
+            "numero": 4,
+            "rendu_sha256": "d2af19e7a60d53b4915e73157b3e3efe86b47727f8aa35f6cd174614d61706b6"
+          },
+          {
+            "numero": 5,
+            "rendu_sha256": "6720929962105f8e63adaec63646bd6c52b015400108659c0fec17fba6abd722"
+          }
+        ]
+      }
+    },
+    "textes": {
+      "version_sha256": "c9d7eb8333a970b511919a5d29c54b76db57298396fe6a8ca1d1c3ffdfd0ff4b",
+      "commentaire_sha256": "3dfdab7f6200b0320e9dd8f418b8201583c46e2a9214289f110ff6cfd0b0450c",
+      "identiques_dans_les_deux_pdf": true,
+      "accents_polonais_et_francais_conserves": true,
+      "mots_commentaire": 456,
+      "mots_version": 305
+    },
+    "pdf": {
+      "brut": {
+        "pages": 2,
+        "signets": [
+          [
+            1,
+            "Commentaire",
+            1
+          ],
+          [
+            1,
+            "Version",
+            2
+          ]
+        ],
+        "nombre_signets": 2,
+        "pages_figures": [
+          2
+        ],
+        "sha256": "027123dbc51a8767d478b4c233898a8aa7c64c7e871c7442fea1880395bcb625",
+        "rendu_sha256": [
+          "2b1168a9230b401eb0effb7fcfaddb9e5b3325c1dfbda3efb360eabfd3c15a72",
+          "346d4cb740f9e89391710cf08b9debe903523ac130b7a768d314aa5bca328f84"
+        ]
+      },
+      "guide": {
+        "pages": 3,
+        "signets": [
+          [
+            1,
+            "Faire dialoguer le pont, le livre et la poche",
+            1
+          ],
+          [
+            2,
+            "Traduire une leçon qui se fait en chuchotant",
+            1
+          ],
+          [
+            1,
+            "Commentaire",
+            2
+          ],
+          [
+            1,
+            "Version",
+            2
+          ]
+        ],
+        "nombre_signets": 4,
+        "pages_figures": [
+          1
+        ],
+        "sha256": "e1137948f1f6ebc883044d6c78d731fb81a436a2d280e746c98d7a53d11a9941",
+        "rendu_sha256": [
+          "ec81458acb947f24b5d4c13e112b1949c40468948552a4fd42aeb1894b4797c5",
+          "36e87787b6f501975eba5646ea153308e27d14252749603f9f75958ebebcc3f9",
+          "4aef1a62868adf9c55175c31717858ef981b8c92cec0422a787e3f922000796f"
+        ]
+      }
+    },
+    "empreintes": {
+      "meta.json": "7ba9e5f8348972d0e4e9fbafc3f7e8e51b588101694b7490c476335d8f4e0bfe",
+      "bilan-compilation.md": "939734def3ce796c37d728c8130af495cb828fc1f588905ec6671b97aee0bac7",
+      "figures/lecture.svg": "6d1887bd78e273ea1f19f8ad7cf6efc296d20b22f7776decd7239bf5bcc0900f",
+      "brut.pdf": "027123dbc51a8767d478b4c233898a8aa7c64c7e871c7442fea1880395bcb625",
+      "brut.md": "637ffd7121fc35342e637060e7a5dc7749e3df329b1ccf699046545dee13d7a8",
+      "guide.pdf": "e1137948f1f6ebc883044d6c78d731fb81a436a2d280e746c98d7a53d11a9941",
+      "guide.md": "f720d8ae18f3fe742300e39ec9a45ed50e9deee42b7b4491b3c4ba399085aee4",
+      "apercu.jpg": "975861fa2fe8454ea84a3e4fb65ec949ff68ab821e5b79a8afebd84c087d9112"
+    },
+    "session": 2024,
+    "archive": "BEL-AL-polonais-commentaire-version-2024.zip",
+    "sha256": "44c322bd67d73264d442187d519c563ad6c6e5c590cbf5f89f66cc3dbaf0cf8e"
+  },
+  {
+    "slug": "bel_al_polonais-commentaire-et-traduction_2025",
+    "commit": "01b33ec3ed0336377cb9a47e5c8da9fcc778d8d6",
+    "journal": [
+      {
+        "phase": "redaction",
+        "agent": "lva_pt_2325",
+        "fournisseur": "codex",
+        "modele": "gpt-6.2-astra",
+        "famille_modele": "GPT-6",
+        "effort": "ultra",
+        "vitesse": null,
+        "date": "2026-11-26",
+        "modifications": true,
+        "editions": [
+          "brut",
+          "guide"
+        ],
+        "perimetre": "Commentaire composé en polonais sur les deux feuillets, version française originale dans les limites de la consigne, guide de lecture et schéma."
+      },
+      {
+        "phase": "revision",
+        "agent": "lva_pt_2325",
+        "fournisseur": "codex",
+        "modele": "gpt-6.2-astra",
+        "famille_modele": "GPT-6",
+        "effort": "ultra",
+        "vitesse": null,
+        "date": "2026-11-26",
+        "modifications": true,
+        "editions": [
+          "brut",
+          "guide"
+        ],
+        "perimetre": "Relecture de la charnière entre la voix collective et la fillette, des indices sur le père et du jeu sur la tension. Contrôle du mouvement des passants, des gestes et des temps. Arrêt de la version avant l’invocation au père."
+      }
+    ],
+    "couverture": {
+      "statut": "complet",
+      "questions_entierement_traitees": [
+        "Commentaire",
+        "Version"
+      ],
+      "repere_par_question": [
+        {
+          "question": "Commentaire",
+          "page_pdf": 16,
+          "pages_pdf": [
+            16,
+            17
+          ],
+          "ligne_debut": 1,
+          "ligne_fin": 72
+        },
+        {
+          "question": "Version",
+          "page_pdf": 17,
+          "pages_pdf": [
+            17
+          ],
+          "ligne_debut": 49,
+          "ligne_fin": 64,
+          "debut": "Osiedle",
+          "fin": "do samego nieba."
+        }
+      ],
+      "questions_partiellement_traitees": [],
+      "questions_non_traitees": []
+    },
+    "pieces": {
+      "sujet": {
+        "url": "https://www.ens-lyon.fr/sites/default/files/2025-07/Commentaire%20et%20traduction.pdf#page=16",
+        "sha256": "ea1e2d243c18761ad6c43ed4f301fdebb92b05def7502a7357659f787a15ae35",
+        "pages": 24,
+        "pages_verifiees": [
+          {
+            "numero": 1,
+            "rendu_sha256": "d10fc4d68158b2c87292528c0faa5bf3de66f9759bfb6b0292536515d81036d3"
+          },
+          {
+            "numero": 2,
+            "rendu_sha256": "1e7bff601e229489b20e9530d41c12b6a405a88fd4acd1634098b88de711e417"
+          },
+          {
+            "numero": 16,
+            "rendu_sha256": "7b595d31d9db1297dae4715f5b35bb67302fb378bbde73766f742afba4a65ad4"
+          },
+          {
+            "numero": 17,
+            "rendu_sha256": "199831380fe25fc38c391309ba9e4fa0a50cba8422569059b6b9e0a720085b8c"
+          }
+        ]
+      },
+      "rapport_jury": {
+        "url": "https://www.ens-lyon.fr/sites/default/files/2025-11/Polonais%202025%20OK%20Lyon%20RELU.pdf#page=2",
+        "sha256": "96864b3a78b7c0a1c56c6a03b86de28929b026268479be0dc8598b5b3888805f",
+        "pages": 14,
+        "pages_verifiees": [
+          {
+            "numero": 2,
+            "rendu_sha256": "374bb4e2da1ec91dfc8bf049b18332aedc9c2e5ec161cc5489a2690563e3c7a1"
+          },
+          {
+            "numero": 3,
+            "rendu_sha256": "f6a9627260f52b0ad8d8e2ff84b2439275d7216a54609c8b8e970f064aafd3d6"
+          },
+          {
+            "numero": 4,
+            "rendu_sha256": "6e45156b88ff88a118b51a2887ca60a75c75a5d6bcb09d0b07e7eb5a30af5fdf"
+          },
+          {
+            "numero": 5,
+            "rendu_sha256": "7a26d815f45a7a2172a9dd77c89126c5d7aac0755d862c3801f2c452c9332ca8"
+          },
+          {
+            "numero": 6,
+            "rendu_sha256": "bbbe867fba03c19bed481e31e38b6a4d23812dd3bc1ac1ea89b9a0c4dc815736"
+          },
+          {
+            "numero": 7,
+            "rendu_sha256": "a1c9752ab4f8db363931c37a672c39c20de05c85f85c40499fede8dd6eecc929"
+          },
+          {
+            "numero": 8,
+            "rendu_sha256": "0c79e20d5b8d5164732126641e02ead8255cac2c71b69e80e82583c4474452c6"
+          },
+          {
+            "numero": 9,
+            "rendu_sha256": "03a6af93696f1c528893b94871315ecd9a88fb172d99bb81df453f30745c2ee4"
+          },
+          {
+            "numero": 10,
+            "rendu_sha256": "73568b3e7a4458d93ed30f833c07ad94aaf6482e504a1ec9ba0c81d57939e853"
+          },
+          {
+            "numero": 11,
+            "rendu_sha256": "b90c372b75f692ce768dc3276646b59327e936e2f238f12686bc8a2308161207"
+          },
+          {
+            "numero": 12,
+            "rendu_sha256": "87ffdb3164c4d5ee4f00988b47048e46b651ad22ebe58d861b929da365afa19b"
+          }
+        ]
+      }
+    },
+    "textes": {
+      "version_sha256": "4f0c2cbcd5afa52355410fbd43aa4310f04b4ab1a560bd0bf01b46024a8a1ca1",
+      "commentaire_sha256": "2a61e5d05f7e8177c2acdd9ceca029946b334056bea885ccbf84b45fbeac074d",
+      "identiques_dans_les_deux_pdf": true,
+      "accents_polonais_et_francais_conserves": true,
+      "mots_commentaire": 503,
+      "mots_version": 291
+    },
+    "pdf": {
+      "brut": {
+        "pages": 2,
+        "signets": [
+          [
+            1,
+            "Commentaire",
+            1
+          ],
+          [
+            1,
+            "Version",
+            2
+          ]
+        ],
+        "nombre_signets": 2,
+        "pages_figures": [
+          2
+        ],
+        "sha256": "cbed8fd66e05d29d79bfa25600460a94d8730a476667fc286a78dd5ecf464eb5",
+        "rendu_sha256": [
+          "24eef7cf463c480a5c686eed7ecad6de3b2d24d0d68cf3f54b8d91925037eb21",
+          "631afcf68e0a7b93968d64507fdf6ac4a8e5758349248984de623fb49221bf6d"
+        ]
+      },
+      "guide": {
+        "pages": 3,
+        "signets": [
+          [
+            1,
+            "Reconnaître qui parle dans l'ascenseur",
+            1
+          ],
+          [
+            2,
+            "Passer du collectif au geste du père",
+            1
+          ],
+          [
+            1,
+            "Commentaire",
+            2
+          ],
+          [
+            1,
+            "Version",
+            2
+          ]
+        ],
+        "nombre_signets": 4,
+        "pages_figures": [
+          1
+        ],
+        "sha256": "53a8c1f39c3236e15d6c69f150cd297505d9c2139e0c52f3b7d41cd8d4ad44d2",
+        "rendu_sha256": [
+          "73505f60493caa9423a2d8f3ad34deab51729f7dadaa29cde8b7936c7048ca59",
+          "9268f55e90b4f87e5f7674606a4ecd8b0ef57c0d045495a29b1e7bfccf5c6e80",
+          "fb566de0c1e4ad17ec02356ac3cc441e9a6e9f041e0fc86db9cf0d8c2e340f12"
+        ]
+      }
+    },
+    "empreintes": {
+      "meta.json": "829d3d411985afd4cebcc800068135d28c2686bd815175b90ddf893b75faa4d1",
+      "bilan-compilation.md": "da63de9e207bd99bcf3a35e0ee39acec4d6a0c40237a6459e4eaca289a62af4d",
+      "figures/lecture.svg": "bf9c00a79aca4215812f596e27292a0b3d4ee628eeede7575febeafc258e2250",
+      "brut.pdf": "cbed8fd66e05d29d79bfa25600460a94d8730a476667fc286a78dd5ecf464eb5",
+      "brut.md": "1961c01711deb3847290845026b64acc9e63628f13513d61b14986d8a57b17a6",
+      "guide.pdf": "53a8c1f39c3236e15d6c69f150cd297505d9c2139e0c52f3b7d41cd8d4ad44d2",
+      "guide.md": "abcc76e294e17cca322096db54f9ae6ef7cdbb5464f14a028143a07f6a9e2eed",
+      "apercu.jpg": "66f2093796b3cf9a8fc10bb8f553f5b70ec8b148a3c2378a3b29ec0b487c53b8"
+    },
+    "session": 2025,
+    "archive": "BEL-AL-polonais-commentaire-version-2025.zip",
+    "sha256": "d53d100042190cbd2b781936fc115997eda14a8483738edec8facbffcf6500b0"
+  }
+]
