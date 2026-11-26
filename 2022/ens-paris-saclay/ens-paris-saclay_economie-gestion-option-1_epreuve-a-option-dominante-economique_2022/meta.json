@@ -1,0 +1,70 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_epreuve-a-option-dominante-economique_2022",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Épreuve à option — dominante économique",
+    "annee": 2022,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "Privatisation et libéralisation depuis les années 1970 en Europe et aux États-Unis.",
+  "gabarit": "dissertation",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2022_Sujet_Ecrit_Economie_Gestion_Option1_Option.pdf#page=2",
+    "index": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=289&field_year_target_id%5B%5D=572",
+    "pages_sujet": "2",
+    "sujet_sha256": "04b4b73dc4e46c236010816960f151d4b729ae9deb2561a463659cc1ffb4e647",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2022_Sujet_Ecrit_Economie_Gestion_Option1_Option.pdf",
+        "pages": 8,
+        "sha256": "04b4b73dc4e46c236010816960f151d4b729ae9deb2561a463659cc1ffb4e647"
+      },
+      {
+        "role": "rapport-eco",
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2022_Rapport_Ecrit_Economie_Gestion_Option1_Economique.pdf",
+        "pages": 2,
+        "sha256": "b625144d54f214935762bce09b8e625295478014d0bccb659d58d7e1202a8297"
+      }
+    ],
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2022_Rapport_Ecrit_Economie_Gestion_Option1_Economique.pdf",
+    "rapport_sha256": "b625144d54f214935762bce09b8e625295478014d0bccb659d58d7e1202a8297"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/comparaison.svg",
+      "question": "Dissertation",
+      "legende": "Avec un coût fixe de 80 et 40 unités vendues, un tarif de 2 laisse 80 à financer. Un tarif de 4 équilibre le budget à ce volume."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "inventaire_livraisons_26",
+      "agent": "inventaire_livraisons_26",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Dissertation sur la propriété et l’accès aux marchés, de la déréglementation américaine aux transitions postsocialistes. Exemple de tarification d’un réseau."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "limites": "La dissertation occupe la page 2. Les documents du cas Julien de Sachs se rapportent à la gestion. Le rapport de la dominante économique demande de distinguer propriété et concurrence, d’intégrer l’Europe anciennement socialiste et d’expliquer l’organisation des industries de réseau. Le réseau chiffré est un exemple pédagogique."
+  }
+}
