@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Les graphes sont simples, finis, non orientés, avec $n$ sommets et $m$ arêtes. On écrit $\Delta$ pour le degré maximum, $N(v)$ pour le voisinage de $v$ et $N[v]=N(v)\cup\{v\}$. Une $k$-coloration attribue à chaque sommet une couleur parmi $1,\ldots,k$, différente de celles de ses voisins. Le nombre chromatique $\chi(G)$ est le minimum de ces $k$. Dans les trois premières parties, un mouvement change la couleur d'un seul sommet en conservant une coloration valide.
 
 ## Partie I — Dégénérescence et chemins de recoloration
@@ -18,7 +20,9 @@ Dans l'ordre **$1,2,3,4,5$**, les voisinages antérieurs sont respectivement $\v
 
 ### Question I.2
 
-Chaque sommet du graphe a au moins trois voisins. Le dernier sommet de tout ordre en a donc au moins trois avant lui. Réciproquement, dans l'ordre $8,7,3,4,9,6,2,5,1$, les nombres de voisins antérieurs valent $0,1,2,2,2,2,3,2,3$. La dégénérescence est **$3$**.
+Les degrés des sommets numérotés de 1 à 9 sont $3,4,4,6,3,3,4,4,3$. Chaque sommet du graphe a donc au moins trois voisins. Le dernier sommet de tout ordre en a donc au moins trois avant lui. Réciproquement, dans l'ordre $8,7,3,4,9,6,2,5,1$, les nombres de voisins antérieurs valent $0,1,2,2,2,2,3,2,3$. La dégénérescence est **$3$**.
+
+![Figure 1 — Nombre de voisins antérieurs dans un ordre du graphe officiel. Le maximum vaut 3 et le degré minimum du graphe entier vaut également 3.](figures/i02-ordre.svg)
 
 ### Question I.3
 
@@ -33,6 +37,8 @@ Restreindre l'ordre aux sommets de $H$ préserve leurs positions relatives. Effa
 Parcourir les sommets dans l'ordre donné. Pour $v_i$, marquer dans un tableau les couleurs de ses voisins déjà traités, puis lui donner la première couleur libre dans $\{1,\ldots,d+1\}$. Au plus $d$ couleurs sont interdites. Toute arête reçoit des couleurs distinctes lorsque sa dernière extrémité est traitée.
 
 Lire les listes coûte $O(n+m)$ au total et initialiser ou parcourir les palettes coûte $O((d+1)n)$. On obtient $O(dn+m)$ pour $d\geq1$. Pour $d=0$, écrire explicitement les $n$ couleurs prend $O(n)$.
+
+On peut même éviter de réinitialiser la palette pour chaque sommet. Un tableau de marques, initialisé une seule fois sur $\min(d+1,n)$ couleurs, enregistre l’indice $i$ pour chaque couleur rencontrée chez un voisin antérieur de $v_i$. Si $r_i$ est le nombre de ces voisins, une couleur disponible apparaît parmi les $r_i+1$ premières. La recherche prend donc $O(r_i+1)$. Comme $\sum_i r_i=m$, cette variante coûte $O(n+m)$, écriture de la réponse comprise.
 
 ### Question I.6
 
@@ -108,6 +114,8 @@ Puisque $k>\chi(G)$ et que $\gamma$ n'emploie que $\chi(G)$ couleurs, une couleu
 
 Par définition, deux cliques de $N(\gamma)$ sont adjacentes dans $G_\gamma$ s'il existe une coloration dans chacune dont l'unique voisin commun est $\gamma$. Associer à chaque clique son sommet modifié donne une injection $f$. Pour $u,v$ non adjacents dans $G$, choisir arbitrairement des recolorations individuelles licites de $u,v$. On peut faire les deux simultanément, puisque ni l'une ni l'autre ne modifie le voisinage de l'autre. Cette double modification et $\gamma$ sont deux voisins communs distincts des états intermédiaires. Les cliques correspondantes ne sont donc pas adjacentes dans $G_\gamma$.
 
+![Figure 4 — À gauche, les deux recolorations commutent. À droite, donner une même couleur libre aux deux extrémités d’une arête interdit le quatrième état.](figures/ii06-carre.svg)
+
 ### Question II.7
 
 Par II.5, $f$ est bijective. Pour $uv\in E(G)$, choisir une couleur inutilisée $c$ et construire les deux états obtenus en donnant $c$ à $u$ ou à $v$. Deux états différents en exactement deux coordonnées n'ont que deux candidats comme voisins communs. Il faut prendre sur ces coordonnées l'une des deux combinaisons intermédiaires et conserver toutes les autres. L'un des candidats est $\gamma$, l'autre donne $c$ à $u$ et à $v$, donc est illicite. Cela donne l'arête voulue. II.6 traite les non-arêtes, donc **$G_\gamma\simeq G$**.
@@ -117,6 +125,8 @@ Par II.5, $f$ est bijective. Pour $uv\in E(G)$, choisir une couleur inutilisée 
 Pour chaque sommet $\gamma$ du graphe d'entrée $H$, calculer les composantes de $H[N(\gamma)]$. Pour chaque paire de composantes, tester toutes les paires de représentants et relier les composantes si une paire a $\gamma$ comme seul voisin commun. Conserver le graphe obtenu dont le couple (nombre de sommets, nombre d'arêtes) est lexicographiquement maximal.
 
 Par II.6, chaque candidat s'injecte dans $G$ en préservant les arêtes. Par II.7 l'un des candidats est isomorphe à $G$. Le maximum atteint donc les deux effectifs de $G$, et l'injection du candidat conservé devient une bijection préservant exactement les arêtes. L'algorithme restitue $G$ à isomorphisme près.
+
+Pour chiffrer cette première recherche, écrivons $h=|V(H)|$. Construire la matrice d’adjacence de $H$ coûte $O(h^2)$. Pour un centre donné, on examine au plus $h^2$ paires de voisins. Avec cette matrice, balayer les $h$ sommets dénombre leurs voisins communs en $O(h)$ par paire. En répétant pour les $h$ centres, on obtient $O(h^4)$ opérations. Cette borne peut être exponentielle en $|V(G)|$, d’où l’intérêt de la question suivante.
 
 ### Question II.9
 
@@ -191,6 +201,9 @@ $$\mathbb E Z=n(1-1/n)^t\longrightarrow\tfrac12,\qquad
 \mathbb E Z^2=\mathbb E Z+n(n-1)(1-2/n)^t\longrightarrow\tfrac34.$$
 En effet, les indicatrices de deux sommets distincts valent toutes deux $1$ lorsque les $t$ tirages ont évité ces deux sommets. Les limites résultent de $\ln(1-x)=-x+O(x^2)$. Cauchy–Schwarz appliqué à $Z\mathbf1_{\{Z>0\}}$ donne $\mathbb P(T>t)=\mathbb P(Z>0)\geq(\mathbb E Z)^2/\mathbb E Z^2$, de limite inférieure au moins $1/3$. La probabilité d'échec ne tend donc pas vers zéro au temps annoncé.
 
+Dans cet exemple, on peut même calculer la limite exacte. Pour $t_n=\lceil n\ln(2n)\rceil$, la formule d’inclusion-exclusion donne
+$$\mathbb P(T\le t_n)=\sum_{j=0}^n(-1)^j\binom nj(1-j/n)^{t_n}.$$
+Pour $j$ fixé, le terme en valeur absolue tend vers $2^{-j}/j!$. En effet, $\binom nj\sim n^j/j!$ et $t_n\ln(1-j/n)=-j\ln(2n)+o(1)$. Il est aussi majoré par $n^j e^{-jt_n/n}/j!\le 2^{-j}/j!$ pour tout $j\le n$. Le majorant étant sommable, la probabilité de couplage tend vers $e^{-1/2}$. Celle de désaccord tend donc vers $1-e^{-1/2}\simeq0{,}393$.
 
 ![Figure 5 — Probabilité exacte qu’il reste un sommet non tiré pour 32 sommets isolés. Le seuil imprimé laisse une probabilité supérieure à 1/n.](figures/iii11-couplage.svg)
 
@@ -205,6 +218,8 @@ Chaque sommet couvre au plus $\lfloor|X|/k\rfloor-1$ éléments de $X$. Pour tou
 ### Question IV.2
 
 Après $j$ itérations, $|S|=j$, $Y\subseteq\bigcap_{s\in S}N[s]$ et $|Y|\geq\lfloor|X|/k^j\rfloor$. Cette dernière inégalité s'itère car $\lfloor\lfloor a\rfloor/k\rfloor=\lfloor a/k\rfloor$. Après $t$ itérations, $|Y|\geq2t$. On pourrait alors choisir $t$ sommets dans $Y\setminus S$. Ils seraient tous adjacents aux $t$ sommets de $S$, d'où un $K_{t,t}$, interdit. L'algorithme s'arrête après au plus $t-1$ itérations.
+
+![Figure 6 — Si trois itérations laissaient six sommets dans Y, on pourrait y trouver trois sommets distincts de S et obtenir les neuf arêtes de K₃,₃.](figures/iv02-biclique.svg)
 
 ### Question IV.3
 
@@ -227,6 +242,8 @@ Soient $u,v$ hors de $X\cup D\cup D'$, avec $N(u)\cap X=N(v)\cap X$. Une chaîne
 Considérer la famille de tous les $k$-ensembles de $V\setminus\{v\}$ qui contiennent $R(A)$. Elle est non vide car $D\subseteq V\setminus\{v\}$ est de taille $k$. Tous ses membres dominent $X$, donc $G$ et $G-v$. Si $|R(A)|=k$, la famille est un singleton. Sinon elle forme une clique, car deux extensions ne peuvent différer que par le sommet ajouté.
 
 Pour $A,A'$ successifs, les différences de $R(A)$ et $R(A')$ dans les deux sens ont chacune taille au plus $1$. Si leur union a taille au plus $k$, elle a une $k$-extension commune. Sinon ces deux images ont chacune taille $k$ et diffèrent d'un sommet, ce qui donne un pas direct. Les familles successives peuvent donc être reliées, et les familles extrêmes sont $\{D\}$ et $\{D'\}$. Cela construit la chaîne dans $G-v$.
+
+![Figure 7 — Exemple pour k = 3. Remplacer v par u peut faire perdre un élément. Deux complétions de l’image sont adjacentes et conservent la domination du cœur.](figures/iv06-extensions.svg)
 
 ### Question IV.7
 
@@ -256,6 +273,8 @@ Le sous-graphe des arêtes de couleurs $a,b$ a degré au plus deux, avec au plus
 
 Les couleurs de la chaîne sont distinctes. Si $u$ et $v$ appartenaient à une même chaîne, ils en seraient extrémités car il manque $a$ en $u$ et $b$ en $v$. Le chemin de $u$ à $v$ commencerait par $b$ et finirait par $a$, d'où une longueur paire. Deux sommets adjacents d'un graphe biparti sont dans des classes opposées et tout chemin entre eux a longueur impaire. Contradiction. Si $u$ est isolé dans le sous-graphe bicolore, il ne peut de toute façon atteindre $v$.
 
+![Figure 8 — Échange sur une chaîne de quatre arêtes. La couleur disponible change à chacune des extrémités, et les sommets intérieurs conservent leurs deux couleurs présentes.](figures/v04-kempe.svg)
+
 ### Question V.5
 
 Fixer la palette de $\Delta$ couleurs et colorer par induction sur les arêtes. Après avoir coloré $G-uv$, une couleur $a$ manque en $u$ et une couleur $b$ manque en $v$, car chacun a au plus $\Delta-1$ arêtes colorées. Si $a=b$, l'utiliser pour $uv$. Sinon échanger $a$ et $b$ sur la composante contenant $u$ (rien à faire si elle est isolée). Par V.4, cette composante évite $v$. La couleur $b$ manque maintenant aux deux bouts et convient à $uv$. L'initialisation sans arêtes est immédiate.
@@ -280,6 +299,8 @@ Choisir un plus court chemin alternant des sommets libres jusqu'à $b$, et appel
 - Si la chaîne issue de $x$ contient $w$, choisir parmi les offreurs de $b$ dans $S$ un sommet $y$ sur une autre chaîne. Il en existe un puisque la première chaîne a au plus deux extrémités. Échanger sur la chaîne de $y$. Le couplage reste valide. Le préfixe jusqu'à $x$, l'offre $xb$ et l'affectation $bw$ sont intactes, donc $w$ reste atteint. Prendre un ancien chemin simple jusqu'à $y$. S'il empruntait $b$, poursuivre depuis $w$ par son suffixe, sinon garder le chemin entier. Aucun de ces tronçons n'utilise $b$ ou $c$, donc $y$ reste atteint. Il offre désormais la couleur libre $c$, ce qui augmente encore $M$.
 
 Dans les deux cas, le choix maximal est contredit. Un couplage couvrant la gauche existe après échanges, et son affectation achève la $k$-arête-coloration.
+
+![Figure 9 — Une recherche part d’un voisin libre de u, suit une couleur offerte, puis revient à son partenaire. Une offre vers une couleur libre augmente la taille du couplage.](figures/v07-couplage.svg)
 
 ### Question V.8
 

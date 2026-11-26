@@ -9,7 +9,12 @@
   "questions": 48,
   "redaction": "IA (OpenAI Codex, famille GPT-6), avec relecture indépendante sur le sujet officiel",
   "sources": {
-    "sujet": "https://www.ens.psl.eu/sites/default/files/vpubliee_mp_mpi_info_fond_ulsr_26.pdf"
+    "sujet": "https://www.ens.psl.eu/sites/default/files/vpubliee_mp_mpi_info_fond_ulsr_26.pdf",
+    "sujet_sha256": "16d5b6be9198aabce65643b01361dcf42d30fca2efc85459615382f90cb8523d",
+    "index": "https://www.ens.psl.eu/rapports-et-sujets-2026-mpi",
+    "index_sha256": "2db9681ed4a0d499f3dacdebcb3c73c1c81704fdfeccf35eede66dc7e7d25c1f",
+    "rapport": null,
+    "observation_rapport": "Le 26 novembre 2026, la ligne écrite Informatique-Fondamentale du sommaire ENS renvoie au sujet. Sa cellule « rapport » est du texte sans lien. Aucun rapport distinct de cet écrit n’a été retrouvé."
   },
   "figures": [
     {
@@ -63,7 +68,7 @@
       "legende": "Le graphe obtenu à partir de K₅ pour Δ = 3 possède sept arêtes. Chaque couleur en couvre au plus deux."
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "provenance": {
     "redaction": {
       "provider": "codex",
@@ -115,11 +120,79 @@
       "agent": "astra_info_si",
       "fournisseur": "codex",
       "tour": 2
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "tour": 3,
+      "modifications": true,
+      "perimetre": "Relecture des 48 questions et des deux éditions sur les 12 pages numérotées du sujet. Décompte des voisins sur les arêtes vectorielles de I.1–2, complexité linéaire de I.5, reconstruction en II.8, calcul exact du seuil erroné en III.11 et examen des arguments de domination et de Kempe. Vérification des dix figures dans chaque édition.",
+      "agent": "fui_physique_un",
+      "fournisseur": "codex"
     }
   ],
   "revision": {
     "date": "2026-11-24",
     "modele": "GPT-6.2 Astra (effort Ultra)",
     "verification": "48 réponses sur le sujet officiel et dix figures. Dégénérescence, mouvements de recoloration, reconstruction locale et couplage, domination et chaînes de Kempe. Vérification exhaustive sur petits graphes et calcul exact au seuil imprimé de III.11. Ajout des détails de désaccord en III.7, du contre-exemple fini et du cas vide en IV.1."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7",
+      "I.8",
+      "I.9",
+      "I.10",
+      "I.11",
+      "I.12",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "II.8",
+      "II.9",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7",
+      "III.8",
+      "III.9",
+      "III.10",
+      "III.11",
+      "IV.1",
+      "IV.2",
+      "IV.3",
+      "IV.4",
+      "IV.5",
+      "IV.6",
+      "IV.7",
+      "V.1",
+      "V.2",
+      "V.3",
+      "V.4",
+      "V.5",
+      "V.6",
+      "V.7",
+      "V.8",
+      "V.9"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "precision": "Les propositions fausses de I.12 (degré moyen) et III.11 (seuil de couplage) sont traitées par contre-exemples et versions corrigées. III.5 explicite la connexité nécessaire, III.9 l’agrégation des valeurs conditionnelles égales, IV.1 le cas du graphe vide."
   }
 }
