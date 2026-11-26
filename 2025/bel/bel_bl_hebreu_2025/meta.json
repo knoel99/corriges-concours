@@ -15,7 +15,14 @@
     "service_tier": null
   },
   "sources": {
-    "sujet": "https://www.ens.psl.eu/sites/default/files/2025_blses_epreuve_a_option_sujet_hebreu.pdf"
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2025_blses_epreuve_a_option_sujet_hebreu.pdf",
+    "sujet_sha256": "67b9c98661a41ab02dc5fa7fa7a9a44bf2089314b613a9dd396a43067456e0cb",
+    "fascicule": "https://www.ens-lyon.fr/sites/default/files/2025-10/Sujets%20BLSES%20%C3%A9preuves%20optionnelles%202025.pdf",
+    "fascicule_sha256": "ad7d4877a638d78c47207dd017be3bc1db45f86ee0ce486f5f6b255d7030285b",
+    "pages_fascicule": [
+      35,
+      39
+    ]
   },
   "figures": [
     {
@@ -24,7 +31,7 @@
       "question": "Commentaire"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -35,6 +42,30 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Commentaire composé en hébreu des 3 documents du sujet officiel de six heures, guidage et schéma comparatif. Vérification des chiffres, de la ponctuation et du texte français dans les PDF bidirectionnels."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "fin_langues_x_interens",
+      "agent": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Le feuillet officiel demande un commentaire en six heures sur 3 documents. Les pages 35 à 39 du fascicule commun ENS Ulm et Lyon reproduisent le PDF individuel, garde incluse. Le commentaire complet des deux éditions rapproche Hanin Majadla (25 avril 2023), Liza Rozovsky (8 décembre 2024) et Liron (24 septembre 2024), trois articles de Haaretz. Attribution des 12 % à l’enquête de 2021 sur l’aisance des anciens élèves en anglais.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Analyse et commentaire du dossier en hébreu"
+    ],
+    "precision": "Le feuillet officiel demande un commentaire en six heures sur 3 documents. Les pages 35 à 39 du fascicule commun ENS Ulm et Lyon reproduisent le PDF individuel, garde incluse. Le commentaire complet des deux éditions rapproche Hanin Majadla (25 avril 2023), Liza Rozovsky (8 décembre 2024) et Liron (24 septembre 2024), trois articles de Haaretz."
+  }
 }
