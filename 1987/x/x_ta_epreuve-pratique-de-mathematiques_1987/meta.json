@@ -1,0 +1,189 @@
+{
+  "slug": "x_ta_epreuve-pratique-de-mathematiques_1987",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "TA",
+    "annee": 1987,
+    "matiere": "Épreuve pratique de mathématiques",
+    "modalite": "pratique"
+  },
+  "intitule": "Épreuve pratique de mathématiques · concours commun Mines-Ponts · X option T.A.",
+  "questions": 17,
+  "duree_heures": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-ecb11c92844c565b0509",
+    "sujet_sha256": "1a8c677b09ee23311a2dfec30683663d476f3e9344fb3184b27a5e7e4e547ae8",
+    "notice_ups": "m87mip",
+    "notice_officielle": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000516456",
+    "precisions": "Le bandeau des écoles donne « École polytechnique (option T.A.) ». L’épreuve est commune aux options M, P′ et T.A. du concours commun. Pour l’X, seul le recrutement T.A. est mentionné dans la liste des écoles."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-ecb11c92844c565b0509",
+      "sha256": "1a8c677b09ee23311a2dfec30683663d476f3e9344fb3184b27a5e7e4e547ae8",
+      "pages": 2,
+      "rendu_page_sha256": [
+        "6fee82d68eec0b43244263ce5f3071eed7ee4dd96edc64061f840789850756aa",
+        "e85eacd929d8aef7c11fa68e53f518045451c29fff491b3fa78336d26c9bc29e"
+      ]
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "x_ta_pratiques_1985_1988",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Deux éditions complètes, 17 questions et sous-questions, indications et deux figures."
+    },
+    {
+      "phase": "revision",
+      "session": "x_ta_pratiques_1985_1988",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Vérification des deux méthodes itératives, des précisions sur les extrema et de l’intégrale finale."
+    }
+  ],
+  "figures": [
+    {
+      "question": "5",
+      "numero": 1,
+      "fichier": "figures/arcsinus-quotient.svg",
+      "legende": "Figure 1 — Les deux branches présentent une symétrie centrale. Les points marqués donnent les extrema intérieurs et les bornes du domaine."
+    },
+    {
+      "question": "6.a",
+      "numero": 2,
+      "fichier": "figures/fonction-newton.svg",
+      "legende": "Figure 2 — La fonction utilisée par Newton coupe l’axe en zéro et en sa seule racine strictement positive."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2.a",
+      "2.b",
+      "2.c",
+      "3.a",
+      "3.b",
+      "4.a",
+      "4.b",
+      "4.c",
+      "4.d",
+      "5",
+      "6.a",
+      "6.b",
+      "6.c",
+      "6.d",
+      "7.a",
+      "7.b"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1",
+        "page_pdf": 1,
+        "page_imprimee": 85
+      },
+      {
+        "question": "2.a",
+        "page_pdf": 1,
+        "page_imprimee": 85
+      },
+      {
+        "question": "2.b",
+        "page_pdf": 1,
+        "page_imprimee": 85
+      },
+      {
+        "question": "2.c",
+        "page_pdf": 1,
+        "page_imprimee": 85
+      },
+      {
+        "question": "3.a",
+        "page_pdf": 1,
+        "page_imprimee": 85
+      },
+      {
+        "question": "3.b",
+        "page_pdf": 1,
+        "page_imprimee": 85
+      },
+      {
+        "question": "4.a",
+        "page_pdf": 1,
+        "page_imprimee": 85
+      },
+      {
+        "question": "4.b",
+        "page_pdf": 1,
+        "page_imprimee": 85
+      },
+      {
+        "question": "4.c",
+        "page_pdf": 2,
+        "page_imprimee": 86
+      },
+      {
+        "question": "4.d",
+        "page_pdf": 2,
+        "page_imprimee": 86
+      },
+      {
+        "question": "5",
+        "page_pdf": 2,
+        "page_imprimee": 86
+      },
+      {
+        "question": "6.a",
+        "page_pdf": 2,
+        "page_imprimee": 86
+      },
+      {
+        "question": "6.b",
+        "page_pdf": 2,
+        "page_imprimee": 86
+      },
+      {
+        "question": "6.c",
+        "page_pdf": 2,
+        "page_imprimee": 86
+      },
+      {
+        "question": "6.d",
+        "page_pdf": 2,
+        "page_imprimee": 86
+      },
+      {
+        "question": "7.a",
+        "page_pdf": 2,
+        "page_imprimee": 86
+      },
+      {
+        "question": "7.b",
+        "page_pdf": 2,
+        "page_imprimee": 86
+      }
+    ]
+  }
+}
