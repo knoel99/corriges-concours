@@ -1,0 +1,361 @@
+{
+  "slug": "banque-pt_pt_maths-c_2009",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths C",
+    "intitule": "Épreuve de Mathématiques C",
+    "annee": 2009,
+    "duree": "4 h",
+    "modalite": "écrit",
+    "code_garde": "B50M"
+  },
+  "questions": 32,
+  "redaction": "Proposition pédagogique non officielle, rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2009/math_c_2009.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2009/rapport_math_c_ecrit_2009.pdf",
+    "livret": "https://www.banquept.fr/documents/livret/2009/Livret_PT_2009.pdf",
+    "sujet_sha256": "afe4aaccf31f4515906bc9118df1c13766bf3cb4063443ca9be8e4dd0c5236c3",
+    "rapport_jury_sha256": "8b217ae12e44615631958764207b13190a44c9932222360f9ca3ae07492be951",
+    "observation_rapport": "Les remarques particulières du jury détaillent les quatre parties aux pages 3 et 4."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2009/math_c_2009.pdf",
+      "sha256": "afe4aaccf31f4515906bc9118df1c13766bf3cb4063443ca9be8e4dd0c5236c3",
+      "pages": 4,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "621bd72d8df8c34f54f9d8773692c42de1fb293536050c84ae2567923122d04b"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "c555c424e0afbf970a5e4d5bdb9f2442bada98f88e4849cfe2344f44e422ec37"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "058fd9a2679eb2b849f3d192a6a5cfda10d6622170bc74b3ce2dd017a22b2a54"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "0a9b746911c89710382b79984d242d95597c9e7e74d0fbd516de7b1fb88d9fb9"
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2009/rapport_math_c_ecrit_2009.pdf",
+      "sha256": "8b217ae12e44615631958764207b13190a44c9932222360f9ca3ae07492be951",
+      "pages": 5,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "b58f11abd58e3e5221126756646070d7a865b6263841d442f735c983009e5979"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "404f21e0a4c2b5f38722f1de3e7101bee337992f1c981606d5cf349dc681a4e7"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "5d72d81fee71944df7f8adbe46525da80decfbe56112231e34f63e8e0cb51e17"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "1d405cef4164db04c97f95b6da92eb88604620f98472ba4fe98bf9d6301e9541"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "218a8b39d1ace22a16a97837fca58b417260a2a283d25c985b99d04df636db29"
+        }
+      ]
+    },
+    "livret": {
+      "url": "https://www.banquept.fr/documents/livret/2009/Livret_PT_2009.pdf",
+      "sha256": "a3c1cf502cc1a8772e9b488ffec97dba9f6ce8298fb91e23dd0cf6ea2d5e75b9",
+      "pages": 71,
+      "pages_verifiees": [
+        {
+          "numero": 8,
+          "rendu_sha256": "bced724e0f675de43165cf77f619154344d65f86dc2510818201e0b48231b074"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "370e71db48786abdfb529a830df7802f176c3882d83cdf640c5ca7baad27620c"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "25bee1ce8aa9d7ab00034314d2380895adfcba043a8c78bc3ac6d1ac7deb42c6"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "I.3.a.i",
+      "fichier": "figures/paliers.svg",
+      "legende": "Le signal alterne de signe sur des paliers de longueur un. Chaque palier apporte un terme à la transformée.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "IV",
+      "fichier": "figures/deux-pavages.svg",
+      "legende": "Les dominos qui touchent la première colonne déterminent si le reste perd une colonne ou deux.",
+      "provenance": "Figure originale."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1.a",
+      "I.1.b",
+      "I.2",
+      "I.3.a.i",
+      "I.3.a.ii",
+      "I.3.a.iii",
+      "I.3.b.i",
+      "I.3.b.ii",
+      "I.3.b.iii",
+      "I.3.b.iv",
+      "I.4.a",
+      "I.4.b",
+      "I.4.c",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5.a",
+      "II.5.b",
+      "II.5.c",
+      "II.6",
+      "II.7.a",
+      "II.7.b",
+      "II.7.c",
+      "II.8.a",
+      "II.8.b",
+      "III.1.a",
+      "III.1.b",
+      "III.2.a",
+      "III.2.b",
+      "III.2.c",
+      "IV"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "annexes_imposees": [],
+    "document_reponse_mentionne": null,
+    "repere_par_question": [
+      {
+        "question": "I.1.a",
+        "page_pdf": 1,
+        "page_rapport": 3,
+        "objet": "Intégrale du noyau exponentiel"
+      },
+      {
+        "question": "I.1.b",
+        "page_pdf": 1,
+        "page_rapport": 3,
+        "objet": "Existence de la transformée"
+      },
+      {
+        "question": "I.2",
+        "page_pdf": 1,
+        "page_rapport": 3,
+        "objet": "Transformée d’un créneau"
+      },
+      {
+        "question": "I.3.a.i",
+        "page_pdf": 2,
+        "page_rapport": 3,
+        "objet": "Découpage du signal en paliers"
+      },
+      {
+        "question": "I.3.a.ii",
+        "page_pdf": 2,
+        "page_rapport": 3,
+        "objet": "Convergence de la série pondérée"
+      },
+      {
+        "question": "I.3.a.iii",
+        "page_pdf": 2,
+        "page_rapport": 3,
+        "objet": "Formule de la transformée en série"
+      },
+      {
+        "question": "I.3.b.i",
+        "page_pdf": 2,
+        "page_rapport": 3,
+        "objet": "Alternance des variations"
+      },
+      {
+        "question": "I.3.b.ii",
+        "page_pdf": 2,
+        "page_rapport": 3,
+        "objet": "Nature de la série positive"
+      },
+      {
+        "question": "I.3.b.iii",
+        "page_pdf": 2,
+        "page_rapport": 3,
+        "objet": "Deux termes asymptotiques"
+      },
+      {
+        "question": "I.3.b.iv",
+        "page_pdf": 2,
+        "page_rapport": 3,
+        "objet": "Convergence de la série signée"
+      },
+      {
+        "question": "I.4.a",
+        "page_pdf": 2,
+        "page_rapport": 3,
+        "objet": "Mise à l’échelle du noyau"
+      },
+      {
+        "question": "I.4.b",
+        "page_pdf": 2,
+        "page_rapport": 3,
+        "objet": "Contrôle uniforme de la queue"
+      },
+      {
+        "question": "I.4.c",
+        "page_pdf": 2,
+        "page_rapport": 3,
+        "objet": "Approximation de la valeur initiale"
+      },
+      {
+        "question": "II.1",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Racines du trinôme"
+      },
+      {
+        "question": "II.2",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Régularité de la fraction"
+      },
+      {
+        "question": "II.3",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Formule de Leibniz"
+      },
+      {
+        "question": "II.4",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Relation entre trois dérivées"
+      },
+      {
+        "question": "II.5.a",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Premiers coefficients de Taylor"
+      },
+      {
+        "question": "II.5.b",
+        "page_pdf": 3,
+        "page_rapport": 4,
+        "objet": "Récurrence de Fibonacci"
+      },
+      {
+        "question": "II.5.c",
+        "page_pdf": 3,
+        "page_rapport": 4,
+        "objet": "Forme fermée des coefficients"
+      },
+      {
+        "question": "II.6",
+        "page_pdf": 3,
+        "page_rapport": 4,
+        "objet": "Développement limité en zéro"
+      },
+      {
+        "question": "II.7.a",
+        "page_pdf": 3,
+        "page_rapport": 4,
+        "objet": "Éléments simples"
+      },
+      {
+        "question": "II.7.b",
+        "page_pdf": 3,
+        "page_rapport": 4,
+        "objet": "Dérivées des éléments simples"
+      },
+      {
+        "question": "II.7.c",
+        "page_pdf": 3,
+        "page_rapport": 4,
+        "objet": "Seconde expression des coefficients"
+      },
+      {
+        "question": "II.8.a",
+        "page_pdf": 3,
+        "page_rapport": 4,
+        "objet": "Série associée au petit pôle"
+      },
+      {
+        "question": "II.8.b",
+        "page_pdf": 3,
+        "page_rapport": 4,
+        "objet": "Queue géométrique"
+      },
+      {
+        "question": "III.1.a",
+        "page_pdf": 4,
+        "page_rapport": 4,
+        "objet": "Série géométrique dérivée"
+      },
+      {
+        "question": "III.1.b",
+        "page_pdf": 4,
+        "page_rapport": 4,
+        "objet": "Substitution de l’inverse"
+      },
+      {
+        "question": "III.2.a",
+        "page_pdf": 4,
+        "page_rapport": 4,
+        "objet": "Suite de Fibonacci et rayon"
+      },
+      {
+        "question": "III.2.b",
+        "page_pdf": 4,
+        "page_rapport": 4,
+        "objet": "Fonction génératrice de Fibonacci"
+      },
+      {
+        "question": "III.2.c",
+        "page_pdf": 4,
+        "page_rapport": 4,
+        "objet": "Transformée en variable inverse"
+      },
+      {
+        "question": "IV",
+        "page_pdf": 4,
+        "page_rapport": 4,
+        "objet": "Pavages du rectangle"
+      }
+    ]
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_hist_1987",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture des 32 questions ou sous-questions et du rapport institutionnel, rédaction des solutions et indications, figures originales et vérifications indépendantes des calculs."
+    }
+  ]
+}
