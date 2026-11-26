@@ -10,6 +10,8 @@
 
 **Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Épreuve de 4 h, calculatrice interdite, une feuille de papier millimétré à rendre avec la copie.
 
 ## Préambule
@@ -89,7 +91,7 @@ Valeurs utiles pour le tracé (1 cm par unité) :
 
 ![Figure 1 — Courbe de f(t) = t/(1 − t) (t₀ = 1), tangente T : y = t en O, asymptotes t = 1 et y = −1](figures/preambule-q4-trace-f.svg)
 
-La figure est réduite ; sur la copie, on trace à 1 cm par unité, et la tangente, les deux asymptotes et la courbe figurent sur le même graphique.
+Le graphique est à l’échelle demandée de 1 cm par unité lorsque le PDF est imprimé à 100 %.
 
 La branche gauche ($t<1$) rejoint $y=-1$ par au-dessus en $-\infty$. La branche droite ($t>1$) la rejoint par en dessous, car $f(t)+1=\dfrac{1}{1-t}<0$. La droite $T$ ne rencontre la courbe qu'en l'origine.
 
