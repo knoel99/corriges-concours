@@ -1,0 +1,190 @@
+{
+  "slug": "banque-pt_pt_maths-a_2007",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths A",
+    "annee": 2007
+  },
+  "questions": 25,
+  "redaction": "Corrigés non officiels rédigés et vérifiés par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2007/math_a_2007.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2007/rapport_math_a_ecrit_2007.pdf",
+    "index_sujets": "https://www.banquept.fr/article51.html",
+    "index_rapports": "https://www.banquept.fr/article55.html",
+    "livret": "https://www.banquept.fr/documents/livret/2007/Livret_Rose_2007_1_2.pdf#page=12",
+    "sha256_sujet": "7ec76950a196532f6c7b45821b699a646eafe068a0404534f37ed1819b651cff",
+    "pages_sujet": 4,
+    "sha256_rapport_jury": "35115f0c107506c2fe206e38095cd28255f37013f40c4d4398dd32d4a4bbad07",
+    "pages_rapport_jury": 3,
+    "sha256_livret": "92b0f9429df696ee5c62424af4ce682b8ad1b2aafa7d90e2e50e620b545274d0",
+    "pages_livret": 20,
+    "coefficients_admissibilite": {
+      "École polytechnique": 6,
+      "ENS Cachan": 3
+    }
+  },
+  "figures": [
+    {
+      "question": "A.7",
+      "fichier": "figures/oscillations.svg",
+      "legende": "Le polynôme de degré quatre alterne entre ses quatre racines et ses trois points critiques intérieurs."
+    },
+    {
+      "question": "C.4",
+      "fichier": "figures/matrice.svg",
+      "legende": "Matrice pour n égal à quatre, avec les deux diagonales issues de la dérivation des monômes."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A.1",
+      "A.2",
+      "A.3",
+      "A.4",
+      "A.5",
+      "A.6.a",
+      "A.6.b",
+      "A.7",
+      "B.1",
+      "B.2",
+      "B.3",
+      "B.4",
+      "B.5",
+      "B.6",
+      "B.7",
+      "B.8",
+      "B.9",
+      "B.10",
+      "C.1",
+      "C.2",
+      "C.3",
+      "C.4",
+      "C.5",
+      "C.6",
+      "C.7"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": "A.1",
+        "page_sujet": 2
+      },
+      {
+        "question": "A.2",
+        "page_sujet": 2
+      },
+      {
+        "question": "A.3",
+        "page_sujet": 2
+      },
+      {
+        "question": "A.4",
+        "page_sujet": 2
+      },
+      {
+        "question": "A.5",
+        "page_sujet": 2
+      },
+      {
+        "question": "A.6.a",
+        "page_sujet": 2
+      },
+      {
+        "question": "A.6.b",
+        "page_sujet": 2
+      },
+      {
+        "question": "A.7",
+        "page_sujet": 2
+      },
+      {
+        "question": "B.1",
+        "page_sujet": 2
+      },
+      {
+        "question": "B.2",
+        "page_sujet": 2
+      },
+      {
+        "question": "B.3",
+        "page_sujet": 2
+      },
+      {
+        "question": "B.4",
+        "page_sujet": 2
+      },
+      {
+        "question": "B.5",
+        "page_sujet": 3
+      },
+      {
+        "question": "B.6",
+        "page_sujet": 3
+      },
+      {
+        "question": "B.7",
+        "page_sujet": 3
+      },
+      {
+        "question": "B.8",
+        "page_sujet": 3
+      },
+      {
+        "question": "B.9",
+        "page_sujet": 3
+      },
+      {
+        "question": "B.10",
+        "page_sujet": 3
+      },
+      {
+        "question": "C.1",
+        "page_sujet": 3
+      },
+      {
+        "question": "C.2",
+        "page_sujet": 3
+      },
+      {
+        "question": "C.3",
+        "page_sujet": 3
+      },
+      {
+        "question": "C.4",
+        "page_sujet": 3
+      },
+      {
+        "question": "C.5",
+        "page_sujet": 3
+      },
+      {
+        "question": "C.6",
+        "page_sujet": 3
+      },
+      {
+        "question": "C.7",
+        "page_sujet": 3
+      }
+    ],
+    "precision": "Énoncé de quatre pages, définitions en page 1, questions en pages 2 et 3, quatrième page blanche. A.6.a et A.6.b distinguées."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modifications": true,
+      "perimetre": "Lecture du sujet scanné, du rapport et de la grille de coefficients. Démonstrations par récurrence, produits scalaires et calcul spectral, rédaction des deux éditions et vérification symbolique et graphique."
+    }
+  ]
+}
