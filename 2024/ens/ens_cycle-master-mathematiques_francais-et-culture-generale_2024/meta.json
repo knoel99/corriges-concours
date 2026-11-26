@@ -5,7 +5,12 @@
     "filiere": "Cycle master mathématiques",
     "matiere": "Français et culture générale",
     "annee": 2024,
-    "modalite": "écrit"
+    "modalite": "écrit",
+    "etablissements_sur_garde": [
+      "École normale supérieure Paris Saclay",
+      "École normale supérieure Rennes"
+    ],
+    "repere_garde": "Épreuve n° 1"
   },
   "intitule": "Français et culture générale",
   "questions": 2,
@@ -28,9 +33,15 @@
       "fichier": "figures/majorite.svg",
       "question": "1",
       "legende": "Du vote majoritaire à la recherche du bien commun"
+    },
+    {
+      "fichier": "figures/lignes-de-bus.svg",
+      "question": "2b",
+      "legende": "Un vote décide du tracé. Le tableau permet ensuite de discuter la répartition des temps de trajet.",
+      "provenance": "Schéma original pour cette révision."
     }
   ],
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -55,6 +66,113 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Collation des questions et des deux barèmes avec le sujet institutionnel, lecture du rapport, recomptage séparé des mots et des unités typographiques, contrôle de la structure et des exemples dans les deux débats."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Vérification des deux fictions de Rosanvallon, des deux notes et du rapport écrit. Analyse de la liberté d’association et comparaison chiffrée de deux réseaux fictifs. Contrôle de chaque page et du décompte du résumé."
     }
-  ]
+  ],
+  "duree_heures": 3,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2024_Fran%C3%A7ais_2A%20Maths.pdf",
+      "sha256": "5662fb9dca384297e5ce639695747ac7ec89c9e00526c391335e876b3ef21f3c",
+      "pages": 5,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "6a0cfa0d8605558b5a4e18c8f44bd1b3f7ecd03ee6ddc2fa8a1831b1e4952b61"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "02b5f54531c14147a21f8d5a4ee1c224eef33fc2f96e36cf2dbc9d9ca43ecf53"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "f78311fe0d4d50beaf4ec78a20dbbd66c527523c5963654e563b99c2978bfe66"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "af23c298140c4763c82d7b07b3aa55f92151b5fcd6d8fac9067665c779df373a"
+        }
+      ],
+      "repères": "La page 2 est blanche. Le texte occupe les pages 3 à 5 du PDF. Deux notes p. 3 renvoient à Louis Blanc et à Adhémar Esmein. Questions p. 5."
+    },
+    "rapport": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2024_Rapport%20fran%C3%A7ais_2A%20Maths_ECRIT.pdf",
+      "sha256": "bfc9297c2ba73eeeb957cd774ae3a880424ec464fbbf349cef93d404734bb46f",
+      "pages": 2,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "7121cbeea43302a098e97ef5ce06117b7482f1b106fdc5c75e14e2341a7d2fd4"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "b29a621e6660dc94a88cea4e3b95bfd2c06f624a0c80b810ff2ad81b97dd2532"
+        }
+      ],
+      "rubriques": "Le rapport écrit traite p. 1 du nombre de mots, de la reformulation, du plan, de la culture mobilisée et de la langue. La p. 2 conclut ce bilan."
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2a",
+      "2b"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1",
+        "page_pdf": 5,
+        "consigne": "Résumer le texte en 250 mots (avec une marge de tolérance de + ou – 10%). Le nombre exact de mots utilisés sera indiqué en fin de résumé.",
+        "points": 10,
+        "cible_mots": 250,
+        "intervalle": [
+          225,
+          275
+        ],
+        "texte": "P. Rosanvallon, La légitimité démocratique. Impartialité, réflexivité, proximité, Points Essais, 2008.",
+        "pages_texte": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "question": "2a",
+        "page_pdf": 5,
+        "consigne": "Sous forme d’un développement construit, commenter, au choix, l’une des deux réflexions suivantes de l’auteur :",
+        "citation": "La démocratie peut-elle se défaire de « ses conditions d’établissement » ?"
+      },
+      {
+        "question": "2b",
+        "page_pdf": 5,
+        "consigne": "Sous forme d’un développement construit, commenter, au choix, l’une des deux réflexions suivantes de l’auteur :",
+        "citation": "Le fonctionnement démocratique peut-il réaliser « l’exigence de généralité » ?"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "choix": "Un développement à choisir sur dix points. Les deux options sont intégralement rédigées.",
+    "annexes_imposees": []
+  }
 }
