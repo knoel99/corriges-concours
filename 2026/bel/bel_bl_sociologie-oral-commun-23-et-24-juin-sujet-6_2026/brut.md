@@ -8,6 +8,8 @@
 
 **Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## La transition vers l’âge adulte
@@ -37,3 +39,9 @@ L’évolution du contenu du travail recueille 79 % des réponses, le souhait de
 Le passage à l’âge adulte combine ainsi différents pouvoirs, gagner une ressource, en disposer, habiter ailleurs et répondre d’autrui. Une chronologie individuelle, mise en regard des aides reçues et des possibilités de choix, explique davantage qu’un seuil d’âge unique.
 
 [Dossier officiel](https://www.ens.psl.eu/sites/default/files/dossier_transition_adulte.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_tronc_commun_sociologie.pdf)
+
+## Vérification sur le dossier
+
+Les deux enquêtes qualitatives et les cinq documents quantitatifs ont été contrôlés. Itinéraires, composition des ressources, aides aux parents ou aux jeunes et souhaits des salariés sont rapportés à leurs populations respectives.
+
+Dans le document 4, la part des pères cadres ou exerçant une profession libérale vaut 27,9 % parmi les étudiants et 9 % parmi les non-étudiants. Le premier groupe présente une part supérieure de 18,9 points, environ 3,1 fois celle du second. Les colonnes sont constituées selon la situation d’études. Pour calculer la probabilité d’être étudiant parmi les enfants de cadres, il faudrait inverser le conditionnement à partir des effectifs ou des parts pondérées de chaque groupe.
