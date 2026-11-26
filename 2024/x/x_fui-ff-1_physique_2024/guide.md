@@ -4,9 +4,11 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée · 24 novembre 2026
 
-**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 Formation francophone, session 1 (automne), trois heures sans calculatrice.
 
@@ -87,7 +89,7 @@ Pour une inductance constante $\mathcal L$, les équations couplées sont
 $$\mathcal L\dot i+2Ri=B\ell w,\qquad \dot w=2g-B\ell i/\mu.$$
 Avec un circuit initialement sans courant, $i(0)=w(0)=0$. En dérivant la première équation,
 $$\mathcal L\ddot i+2R\dot i+\frac{(B\ell)^2}{\mu}i=2gB\ell.$$
-Le courant ne s’établit plus instantanément. Le transitoire est d’ordre deux, apériodique ou oscillant amorti selon $R^2-\mathcal L(B\ell)^2/\mu$. Les valeurs asymptotiques sont les mêmes que précédemment, $i_\infty=2\mu g/(B\ell)$ et $w_\infty=2g\tau$.
+Le courant ne s’établit plus instantanément. Le transitoire est d’ordre deux. De discriminant réduit $D=R^2-\mathcal L(B\ell)^2/\mu$, l’équation donne deux exponentielles décroissantes pour $D>0$, un régime critique pour $D=0$ et des oscillations amorties pour $D<0$. Les valeurs asymptotiques sont les mêmes que précédemment, $i_\infty=2\mu g/(B\ell)$ et $w_\infty=2g\tau$.
 
 Un bilan de puissance contrôle les signes de l’induction. Multiplions les équations mécaniques par $u$ et $u'$ puis l’équation électrique par $i$. Les termes d’échange $B\ell i(u+u')$ se compensent. Il vient
 $$\frac{d}{dt}\left(\frac{mu^2+m'u'^2+\mathcal Li^2}{2}\right)=mgu+m'gu'-2Ri^2.$$
@@ -143,7 +145,7 @@ Le théorème du moment cinétique donne $mR^2\dot\omega=QB_0R^2 z\dot z/a^2$. A
 Pour chaque charge, $\mathbf v\cdot(dq\,\mathbf v\times\mathbf B)=0$. Les contraintes du cerceau rigide ne dissipent pas d’énergie. Par conséquent $m\dot z^2/2+mR^2\omega^2/2=mv_0^2/2$. En reportant la loi de rotation,
 $$\dot z^2=v_0^2\left[1-(z/z_M)^4\right],\qquad
 z_M=\sqrt{\frac{2ma^2|v_0|}{|QB_0|R}}.$$
-La vitesse prend le signe de la branche parcourue. Aux deux altitudes extrêmes $\pm z_M$, la translation s’arrête et toute l’énergie cinétique est sous forme de rotation.
+La vitesse prend le signe de la branche parcourue. Le champ étant donné au voisinage de $O$, ce résultat suppose que tout le trajet du cerceau reste dans la région décrite par le modèle. Aux deux altitudes extrêmes $\pm z_M$, la translation s’arrête et toute l’énergie cinétique est sous forme de rotation.
 
 ![Figure 3 — Aux deux points de retournement, le mouvement de rotation porte toute l’énergie cinétique.](figures/cerceau-echange-energies.svg)
 

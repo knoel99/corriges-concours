@@ -12,7 +12,7 @@
     "provider": "codex",
     "model": "GPT-6"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20FUI-FF%20Session%201%20SUJET%20DE%20PHYSIQUE.pdf",
     "rapport_jury": null,
@@ -100,6 +100,79 @@
       "perimetre": "Révision des deux éditions à partir du fac-similé du sujet. Contrôle des quatre exercices de confinement électronique, induction, mouvement du cerceau et optique. Vérifications énergétiques, transitoire RLC et loi non linéaire de période du cerceau.",
       "agent": "astra_physique",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Contrôle des conditions de contact de l’électron, du bilan d’énergie des rails et du cerceau, de la construction à l’échelle et de l’exposition. Précision des trois régimes du circuit inductif et du domaine spatial du champ du cerceau.",
+      "agent": "fui_physique_un",
+      "fournisseur": "codex",
+      "tour": 3
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "2.1",
+      "2.2",
+      "2.3",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.6",
+      "4.7",
+      "4.8",
+      "4.9",
+      "4.10"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "precision": "Fascicule FUI-FF de la session 1, 6 pages PDF. 22 rubriques repérées dans chaque édition. Contrôle des conditions de contact de l’électron, du bilan d’énergie des rails et du cerceau, de la construction à l’échelle et de l’exposition. Précision des trois régimes du circuit inductif et du domaine spatial du champ du cerceau.",
+    "origine_attestation": {
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "0eacd069aac2ff9db6df17f1e82d04b98b9801b2a6a872a6918f1b518faeeddf",
+      "index_officiel": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
+      "rapport_jury": "Aucun rapport propre à cette session identifié dans la rubrique FUI-FF de l’index.",
+      "pages_pdf_par_rubrique": {
+        "1.1": 3,
+        "1.2": 3,
+        "1.3": 3,
+        "2.1": 4,
+        "2.2": 4,
+        "2.3": 4,
+        "3.1": 4,
+        "3.2": 4,
+        "3.3": 4,
+        "3.4": 4,
+        "3.5": 4,
+        "3.6": 4,
+        "4.1": 4,
+        "4.2": 4,
+        "4.3": 5,
+        "4.4": 5,
+        "4.5": 5,
+        "4.6": 5,
+        "4.7": 5,
+        "4.8": 5,
+        "4.9": 6,
+        "4.10": 6
+      }
+    }
+  }
 }

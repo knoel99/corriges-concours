@@ -4,9 +4,11 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée · 24 novembre 2026
 
-**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 Formation francophone, session 1 (automne), trois heures sans calculatrice.
 
@@ -30,7 +32,7 @@ Soit $T$ la tension de la ficelle. À l’équilibre, le poids est compensé par
 $$|Q|=d\sqrt{4\pi\varepsilon_0mg\tan\alpha}\simeq6{,}3\times10^{-7}\,\mathrm C,\qquad |\Delta V|\sim\frac{|Q|}{4\pi\varepsilon_0 R}\simeq5{,}7\times10^4\,\mathrm V.$$
 Il s’agit du potentiel de chaque ballon par rapport à l’air suffisamment distant. Les deux ballons identiques ont le même potentiel par symétrie.
 
-![Figure 1 — Les forces exercées sur le ballon de droite sont à l’équilibre.](figures/equilibre-des-ballons.svg)
+![Figure 1 — Les flèches utilisent une même échelle de force. Les composantes de la tension compensent le poids et la répulsion électrique.](figures/equilibre-des-ballons.svg)
 
 ### Question 5
 
@@ -68,7 +70,7 @@ Le changement de signe de la charge et celui du cube se compensent aux sommets o
 
 ### Question 6
 
-Le développement multipolaire classe par puissances de $a/r$ les termes du développement de $1/|\mathbf r-\mathbf r_i|$. Le multipôle d’ordre $n$ donne un potentiel en $r^{-(n+1)}$ avec un coefficient angulaire. Ici les ordres 0, 1 et 2 disparaissent. Pour vérifier que le moment cubique produit bien un terme de potentiel, prenons l’axe $+y$. Le coefficient d’ordre 3 est proportionnel à $\sum_i q_i(5y_i^3-3a^2 y_i)/2=15qa^3/4$. Ainsi, dans une direction générique, $V\propto r^{-4}$ (exposant $4$ au dénominateur). Certaines directions de symétrie ont un coefficient nul.
+Le développement multipolaire classe par puissances de $a/r$ les termes du développement de $1/|\mathbf r-\mathbf r_i|$. Le multipôle d’ordre $n$ donne un potentiel en $r^{-(n+1)}$ avec un coefficient angulaire. Ici les ordres 0, 1 et 2 disparaissent. Pour vérifier que le moment cubique produit bien un terme de potentiel, prenons l’axe $+y$. Le coefficient d’ordre 3 est proportionnel à $\sum_i q_i(5y_i^3-3a^2 y_i)/2=15qa^3/4$. Ainsi, dans une direction générique, $V\propto r^{-4}$, soit $n=-4$ dans la notation $V\propto r^n$ du sujet. Certaines directions de symétrie ont un coefficient nul.
 
 ## Exercice 3 — Bobines de Helmholtz
 

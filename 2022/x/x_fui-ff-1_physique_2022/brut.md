@@ -4,9 +4,11 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée · 24 novembre 2026
 
-**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 Formation francophone, session 1 (automne), trois heures sans calculatrice.
 
@@ -203,7 +205,7 @@ $$r_{12}=\frac{R_2-R_1}{R_2+R_1},\qquad t_{12}=\frac{2R_2}{R_2+R_1}=1+r_{12}.$$
 
 ### Question 13
 
-Pour une onde sinusoïdale isolée, le module de la puissance moyenne est $S|p_0|^2/(2R_i)$ pour une amplitude crête. Ainsi
+L’intensité moyenne orientée est $\langle pu\rangle=\operatorname{Re}(\underline p\,\underline u^*)/2$. Elle est positive pour une onde directe et négative pour une onde réfléchie. Les coefficients de puissance comparent leurs valeurs absolues. Pour une onde sinusoïdale isolée, le module de la puissance moyenne est $S|p_0|^2/(2R_i)$ pour une amplitude crête. Ainsi
 $$\mathcal R=|r_{12}|^2=\frac{(R_2-R_1)^2}{(R_2+R_1)^2},\qquad \mathcal T=\frac{R_1}{R_2}|t_{12}|^2=\frac{4R_1R_2}{(R_1+R_2)^2}.$$
 Leur somme vaut 1, ce qui exprime la conservation de l’énergie acoustique à l’interface sans pertes.
 

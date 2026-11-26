@@ -2,7 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 Session d’automne du concours 2021, épreuve du 20 octobre 2020. Les quatre exercices sont indépendants.
 
@@ -176,7 +178,7 @@ Le préfacteur $C(z)=\pi^2|K|^2R^4/z^2$ dépend de $z$. Autour de la distance fo
 
 ### 7 · Profil en fonction de la vergence d’observation
 
-Posons $s=1/z>0$, $s_0=2q/k$ et $A=\pi R^2/(2\lambda)$. Alors $w=A(s_0-s)$. Le profil $I/s^2$, ou l’intensité à préfacteur gelé près du foyer, est un sinus cardinal au carré centré sur $s_0$. Sa valeur au centre vaut $C$ dans cette dernière approximation. Les zéros sont à $s=s_0+2n\lambda/R^2$, $n$ entier non nul, dans le domaine $s>0$. La largeur entre les deux premiers zéros est $4\lambda/R^2$. Des lobes secondaires d’amplitude décroissante les séparent, avec environ 4,7 % du maximum pour le premier.
+Posons $s=1/z>0$, $s_0=2q/k$ et $A=\pi R^2/(2\lambda)$. Alors $w=A(s_0-s)$. Le profil $I/s^2$, ou l’intensité à préfacteur gelé près du foyer, est un sinus cardinal au carré centré sur $s_0$. Sa valeur au centre vaut $C$ dans cette dernière approximation. Les zéros sont à $s=s_0+2n\lambda/R^2$, $n$ entier non nul, dans le domaine $s>0$. La largeur entre les deux premiers zéros est $4\lambda/R^2$. Au-delà du lobe central, chaque intervalle entre deux zéros contient un maximum secondaire. En variable $w$, sa position satisfait $w\cos w-\sin w=0$. Le premier, à $|w|\simeq4{,}493$, atteint $\operatorname{sinc}^2(w)\simeq0{,}0472$ fois l’intensité au centre.
 
 Avec $q=k/\alpha$, $s_0=2/\alpha$ et la demi-largeur relative est $\alpha\lambda/R^2\ll1$, ce qui justifie l’approximation sur $C$ dans le lobe central. Le profil géométriquement complet est proportionnel à $s^2\operatorname{sinc}^2[A(s-s_0)]$ et son pic est légèrement décalé vers les grands $s$. On utilise cette expression seulement dans le domaine de validité de l’approximation de Fresnel.
 
