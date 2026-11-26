@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La composition établit le théorème de Perron pour une matrice dont chaque coefficient est strictement positif. Dans la dernière partie, les symboles d’ordre portent toujours sur les coefficients. Le produit avec un vecteur propre à gauche est bilinéaire sur le corps complexe.
 
 ## Première partie · Norme subordonnée et puissances
@@ -237,6 +239,8 @@ Si $Aw>\mu w$, le minimum sur les indices $w_i>0$ des écarts $(Aw)_i/w_i-\mu$ e
 
 Posons $d=Aw-\mu w$ avec $d\ge0$ et $d_k>0$. Pour $w'=w+\varepsilon e_k$, la marge $i\ne k$ devient $d_i+\varepsilon a_{ik}>0$. En $i=k$, elle devient $d_k+\varepsilon(a_{kk}-\mu)$ qui reste strictement positive pour $\varepsilon>0$ assez petit. Alors $w'\ge0$ non nul et $Aw'>\mu w'$. La question 15b donne $\rho(A)>\mu$.
 
+On peut choisir explicitement $\varepsilon=d_k/[2(1+|a_{kk}-\mu|)]$. La marge à l’indice $k$ reste alors au moins $d_k/2$. Pour chaque autre ligne, la présence d’un coefficient $a_{ik}>0$ rend la marge strictement positive, même si elle était initialement nulle.
+
 ### Question 16a
 
 > [!INDICATION]
@@ -291,6 +295,8 @@ Si $Av=\mu v$ et $\mu\ne\rho(A)$, 14 avec $y=w_0$ donne $v^tw_0=0$, donc $v\in F
 
 Toute valeur propre de $\psi=A|_F$ est valeur propre de $A$. Si son module valait $\rho(A)$, 16a–c appliquées à son vecteur propre $x\in F$ le rendraient colinéaire à un vecteur strictement positif. Son produit avec $w_0$ serait non nul, contradiction. La décomposition stable de 17a donne alors $\chi_A(X)=(X-\rho(A))\chi_\psi(X)$ avec $\chi_\psi(\rho(A))\ne0$. La racine est simple et l’espace propre vaut $\mathbb C v_0$. En dimension un, $F=\{0\}$ et le facteur complémentaire vaut un.
 
+Dans une base de $F$ complétée par $v_0$, la matrice de $A$ est diagonale par blocs, de blocs $\psi$ et $\rho(A)$. L’absence de la valeur propre $\rho(A)$ dans $F$ exclut ainsi aussi un second facteur $X-\rho(A)$ dans le polynôme caractéristique.
+
 ### Question 18b
 
 > [!INDICATION]
@@ -308,5 +314,7 @@ Pour $F\ne\{0\}$, 18a donne $\rho(\psi/\rho(A))<1$. Par 9 dans une base de $F$, 
 #### Solution
 
 Écrivons $x=y+cv_0$ avec $y\in F$. En appliquant $\ell$, $c=x^tw_0/(v_0^tw_0)>0$ pour $x\ge0$ non nul. La première composante $A^ky/\rho(A)^k$ tend vers zéro par 18b, et la seconde vaut $cv_0$ à tous les rangs. La limite est donc $v_0(x^tw_0)/(v_0^tw_0)$. Dans l’exemple tracé, $w_0=(1,1)^t$ et $v_0=(2,1)^t$, donc les deux limites sont $(2/3,1/3)^t$.
+
+Pour la matrice $\left(\begin{smallmatrix}3&2\\1&2\end{smallmatrix}\right)$, le projecteur limite est $P=\tfrac13\left(\begin{smallmatrix}2&2\\1&1\end{smallmatrix}\right)$. Comme $A=4P+(I-P)$, on a exactement $4^{-k}A^k=P+4^{-k}(I-P)$. Le dessin montre ce facteur géométrique, en plus de la limite commune aux deux colonnes.
 
 ![Figure 1 — Pour la dernière matrice de la question 6, les itérés normalisés de deux vecteurs de base convergent vers le même point.](figures/projection-perron.svg)

@@ -11,7 +11,8 @@
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_PC_sujet_Maths.pdf",
     "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/10/18_PC_rap_eMath.pdf",
-    "sha256_sujet": "115668e98ab0591aa0f644cc790608df4047a6a29203de0279f4733169ab8137"
+    "sha256_sujet": "115668e98ab0591aa0f644cc790608df4047a6a29203de0279f4733169ab8137",
+    "sha256_rapport_jury": "0c982b4306374596314a5c416e7a6683436e5a3cd9611f17c138866a4fb140a7"
   },
   "figures": [
     {
@@ -31,6 +32,81 @@
       "perimetre": "Rédaction complète des cinq parties et des cas de parité. Contrôle des constantes en concentration, de la domination bilatérale dans Stirling et du choix des signes pour le minimum. Figure de l’intégrale centrée.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Équivalence de rang un, seuil de Hoeffding, comptage binomial pair et impair, contrôle des intégrandes de Stirling et choix des signes dans la dernière minoration.",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "agent": "rennes_oraux_economie",
+      "session": "rennes_oraux_economie"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "III.1",
+      "III.2",
+      "III.3a",
+      "III.3b",
+      "III.4a",
+      "III.4b",
+      "IV.1",
+      "IV.2",
+      "IV.3a",
+      "IV.3b",
+      "IV.4",
+      "V.1",
+      "V.2"
+    ],
+    "pages_du_sujet": 5,
+    "pages_pdf_des_questions": {
+      "I.1": 2,
+      "I.2": 2,
+      "I.3": 2,
+      "I.4": 2,
+      "I.5": 2,
+      "I.6": 2,
+      "II.1": 3,
+      "II.2": 3,
+      "II.3": 3,
+      "II.4": 3,
+      "II.5": 3,
+      "II.6": 3,
+      "III.1": 3,
+      "III.2": 4,
+      "III.3a": 4,
+      "III.3b": 4,
+      "III.4a": 4,
+      "III.4b": 4,
+      "IV.1": 4,
+      "IV.2": 4,
+      "IV.3a": 5,
+      "IV.3b": 5,
+      "IV.4": 5,
+      "V.1": 5,
+      "V.2": 5
+    },
+    "precision": "Pages du fac-similé institutionnel, garde incluse. Le numéro désigne le début de la demande imprimée."
+  }
 }

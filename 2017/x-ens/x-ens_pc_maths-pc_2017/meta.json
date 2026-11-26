@@ -11,7 +11,8 @@
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/07/2017_PC_sujet_Math.pdf",
     "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/11/17_PC_rap_eMath.pdf",
-    "sha256_sujet": "053a5e4316348a30352c219bb4a3900fcb6f4d823b4e0daaa0dd8c3a9e4d303c"
+    "sha256_sujet": "053a5e4316348a30352c219bb4a3900fcb6f4d823b4e0daaa0dd8c3a9e4d303c",
+    "sha256_rapport_jury": "90c06a06799b2ab5e46fa7f1aa58452bfcc346924fe9089696c0f188bfb3b8f3"
   },
   "figures": [
     {
@@ -31,6 +32,97 @@
       "perimetre": "Rédaction des deux éditions à partir du sujet natif de quatre pages et du rapport commun. Calcul des cinq rayons spectraux, vérification des assertions 7.i–v, preuve des multiplicités algébriques, calcul et tracé de deux orbites normalisées.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Norme subordonnée, cinq assertions de rayon spectral, perturbation explicite à l’indice strict, simplicité algébrique et projecteur limite de l’exemple tracé.",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "agent": "rennes_oraux_economie",
+      "session": "rennes_oraux_economie"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1a",
+      "1b",
+      "2",
+      "3",
+      "4",
+      "5a",
+      "5b",
+      "5c",
+      "6",
+      "7.i",
+      "7.ii",
+      "7.iii",
+      "7.iv",
+      "7.v",
+      "8",
+      "9",
+      "10a",
+      "10b",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15a",
+      "15b",
+      "15c",
+      "16a",
+      "16b",
+      "16c",
+      "17a",
+      "17b",
+      "18a",
+      "18b",
+      "18c"
+    ],
+    "pages_du_sujet": 4,
+    "pages_pdf_des_questions": {
+      "1a": 2,
+      "1b": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5a": 2,
+      "5b": 2,
+      "5c": 2,
+      "6": 2,
+      "7.i": 2,
+      "7.ii": 2,
+      "7.iii": 2,
+      "7.iv": 2,
+      "7.v": 2,
+      "8": 3,
+      "9": 3,
+      "10a": 3,
+      "10b": 3,
+      "11": 3,
+      "12": 3,
+      "13": 3,
+      "14": 4,
+      "15a": 4,
+      "15b": 4,
+      "15c": 4,
+      "16a": 4,
+      "16b": 4,
+      "16c": 4,
+      "17a": 4,
+      "17b": 4,
+      "18a": 4,
+      "18b": 4,
+      "18c": 4
+    },
+    "precision": "Pages du fac-similé institutionnel, garde incluse. Le numéro désigne le début de la demande imprimée."
+  }
 }
