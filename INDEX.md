@@ -178,6 +178,7 @@
 | 2017 | BEL | B/L | Espagnol | [md](2017/bel/bel_bl_espagnol_2017/brut.md) | [md](2017/bel/bel_bl_espagnol_2017/guide.md) |
 | 2017 | BEL | B/L | Italien | [md](2017/bel/bel_bl_italien_2017/brut.md) | [md](2017/bel/bel_bl_italien_2017/guide.md) |
 | 2017 | BEL | B/L | Russe | [md](2017/bel/bel_bl_russe_2017/brut.md) | [md](2017/bel/bel_bl_russe_2017/guide.md) |
+| 2017 | BEL | BL | Sciences sociales | [md](2017/bel/bel_bl_sciences-sociales_2017/brut.md) | [md](2017/bel/bel_bl_sciences-sociales_2017/guide.md) |
 | 2011 | ENS de Lyon | PC | Physique-chimie | [md](2011/ens-de-lyon/ens-de-lyon_pc_physique-chimie_2011/brut.md) | [md](2011/ens-de-lyon/ens-de-lyon_pc_physique-chimie_2011/guide.md) |
 | 2005 | ENS de Lyon | Second concours | Mathématiques | [md](2005/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2005/brut.md) | [md](2005/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2005/guide.md) |
 | 2013 | ENS de Lyon | Second concours | Mathématiques | [md](2013/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2013/brut.md) | [md](2013/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2013/guide.md) |
