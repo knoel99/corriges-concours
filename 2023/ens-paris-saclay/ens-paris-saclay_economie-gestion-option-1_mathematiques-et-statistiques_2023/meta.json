@@ -11,7 +11,9 @@
   "sources": {
     "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2023_sujet_ecrit_ecoG_maths_mardi_2023.pdf",
     "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2023_EcoG1_rapport_ecrit_Maths.pdf",
-    "sha256_sujet": "a88b2ccf4d710eacead460956014f1d97da164f73a19db901175181f7073f90f"
+    "sha256_sujet": "a88b2ccf4d710eacead460956014f1d97da164f73a19db901175181f7073f90f",
+    "provenance": "Garde du mardi 18 avril 2023, ENS Paris-Saclay, ENSAI civil et INSEE attaché statisticien, économie gestion option 1. Quatre pages, trois problèmes et rapport de trois pages.",
+    "sha256_rapport_jury": "cb03312b558725b123fd51ec352de5270e23cd81672fe5f849706c98893eb03f"
   },
   "figures": [
     {
@@ -36,6 +38,205 @@
       "perimetre": "Rédaction de la totalité des trois problèmes contre le sujet et le rapport. Matrices et coordonnées vérifiées par multiplication, lois conditionnelles et temps d’attente recalculés y compris pour p égal à zéro et un, normalisation du coefficient constant et inégalité de Bessel vérifiées. Deux figures originales.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "agent": "maths_statistiques_saclay",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture des 24 consignes des deux éditions sur le fascicule. Vérification des changements de base, des lois au bord p=0,1, du biais d’inspection et des constantes de la projection de Fourier. Rapprochement avec les remarques du jury sur les conditionnements et les normes."
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "2.1",
+      "2.2",
+      "2.3a",
+      "2.3b",
+      "2.4",
+      "2.5",
+      "2.6a",
+      "2.6b",
+      "2.6c",
+      "2.7",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4a",
+      "3.4b",
+      "3.5a",
+      "3.5b",
+      "3.5c",
+      "3.5d"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1.1",
+        "titre": "1",
+        "partie": "Problème 1 · Algèbre",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.2",
+        "titre": "2",
+        "partie": "Problème 1 · Algèbre",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.3",
+        "titre": "3",
+        "partie": "Problème 1 · Algèbre",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.4",
+        "titre": "4",
+        "partie": "Problème 1 · Algèbre",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.5",
+        "titre": "5",
+        "partie": "Problème 1 · Algèbre",
+        "page_pdf": 2
+      },
+      {
+        "question": "2.1",
+        "titre": "1",
+        "partie": "Problème 2 · Probabilités et statistiques",
+        "page_pdf": 2
+      },
+      {
+        "question": "2.2",
+        "titre": "2",
+        "partie": "Problème 2 · Probabilités et statistiques",
+        "page_pdf": 2
+      },
+      {
+        "question": "2.3a",
+        "titre": "3a",
+        "partie": "Problème 2 · Probabilités et statistiques",
+        "page_pdf": 2
+      },
+      {
+        "question": "2.3b",
+        "titre": "3b",
+        "partie": "Problème 2 · Probabilités et statistiques",
+        "page_pdf": 2,
+        "page_pdf_fin": 3
+      },
+      {
+        "question": "2.4",
+        "titre": "4",
+        "partie": "Problème 2 · Probabilités et statistiques",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.5",
+        "titre": "5",
+        "partie": "Problème 2 · Probabilités et statistiques",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.6a",
+        "titre": "6a",
+        "partie": "Problème 2 · Probabilités et statistiques",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.6b",
+        "titre": "6b",
+        "partie": "Problème 2 · Probabilités et statistiques",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.6c",
+        "titre": "6c",
+        "partie": "Problème 2 · Probabilités et statistiques",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.7",
+        "titre": "7",
+        "partie": "Problème 2 · Probabilités et statistiques",
+        "page_pdf": 3
+      },
+      {
+        "question": "3.1",
+        "titre": "1",
+        "partie": "Problème 3 · Analyse",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.2",
+        "titre": "2",
+        "partie": "Problème 3 · Analyse",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.3",
+        "titre": "3",
+        "partie": "Problème 3 · Analyse",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.4a",
+        "titre": "4a",
+        "partie": "Problème 3 · Analyse",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.4b",
+        "titre": "4b",
+        "partie": "Problème 3 · Analyse",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.5a",
+        "titre": "5a",
+        "partie": "Problème 3 · Analyse",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.5b",
+        "titre": "5b",
+        "partie": "Problème 3 · Analyse",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.5c",
+        "titre": "5c",
+        "partie": "Problème 3 · Analyse",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.5d",
+        "titre": "5d",
+        "partie": "Problème 3 · Analyse",
+        "page_pdf": 4
+      }
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "controle": [
+      "Vérification des changements de base, des lois au bord p=0,1, du biais d’inspection et des constantes de la projection de Fourier. Rapprochement avec les remarques du jury sur les conditionnements et les normes."
+    ]
+  }
 }

@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Les trois problèmes sont indépendants. En algèbre, cherchez les plans engendrés par un vecteur et son image. En analyse, traitez séparément le raccord en zéro. En statistique, repérez le changement de plan d’enquête entre les questions 4 et 5.
 
 ## Problème 1 — Algèbre
@@ -245,7 +247,7 @@ $$g(1/2,1/2)=\frac14\left(1-\frac14\right)\frac1{\ln 2}=\frac{3}{16\ln2}.$$
 
 Pour $t>0$, la positivité donne
 $$\mathbb E(X)\ge\int_t^{+\infty}x f(x)\,dx\ge t\int_t^{+\infty}f(x)\,dx=t\mathbb P(X\ge t).$$
-On divise par $t$ pour obtenir l’inégalité de Markov. Une variable à densité n’a pas d’atome en $t$, donc écrire $X>t$ donne la même probabilité. Le quotient suppose que le seuil est strictement positif.
+On divise par $t$ pour obtenir l’inégalité de Markov. Une variable à densité n’a pas d’atome en $t$, donc écrire $X>t$ donne la même probabilité. Le quotient suppose que le seuil est strictement positif. La forme avant division, $t\,\mathbb P(X\ge t)\le\mathbb E(X)$, reste vraie en $t=0$ et se réduit alors à $0\le\mathbb E(X)$.
 
 ### Question 1b
 
@@ -425,7 +427,7 @@ Posons $I_i=\mathbf 1_{\{R_i>S_i\}}$. Ces indicatrices ont pour espérance $p$. 
 
 #### Solution
 
-Les dix notes appariées ne contiennent aucune égalité. Sous l’hypothèse de symétrie des signes entre centres, chaque préférence stricte a une chance sur deux d’aller au centre 1. En supposant les choix des clients indépendants, le nombre $N$ de signes en faveur du centre 1, conditionnellement aux dix paires non ex æquo, suit $\mathcal B(10,1/2)$. On observe $N=1$. Dans la direction d’une préférence pour le centre 2,
+Les dix paires de notes ne contiennent aucune égalité. Pour préciser le rôle des ex æquo éventuels dans la population, posons $\tau=\mathbb P(R_i=S_i)$. L’équilibre des préférences strictes signifie $\mathbb P(R_i>S_i)=\mathbb P(R_i<S_i)=(1-\tau)/2$. Conditionnellement à des notes distinctes, la probabilité de chaque signe est alors $1/2$. Sous l’hypothèse de symétrie des signes entre centres, chaque préférence stricte a une chance sur deux d’aller au centre 1. En supposant les choix des clients indépendants, le nombre $N$ de signes en faveur du centre 1, conditionnellement aux dix paires non ex æquo, suit $\mathcal B(10,1/2)$. On observe $N=1$. Dans la direction d’une préférence pour le centre 2,
 $$\mathbb P(N\le1)=\frac{\binom{10}{0}+\binom{10}{1}}{2^{10}}=\frac{11}{1024}.$$
 Pour détecter une préférence dans l’un ou l’autre sens, la probabilité exacte d’un résultat au moins aussi déséquilibré vaut $\mathbb P(N\le1)+\mathbb P(N\ge9)=22/1024\simeq2{,}15\,\%$. Au seuil bilatéral de 5 %, les données appuient une préférence pour le centre 2 chez les clients ayant fréquenté les deux. Au seuil de 1 %, le test bilatéral ne conclut pas.
 

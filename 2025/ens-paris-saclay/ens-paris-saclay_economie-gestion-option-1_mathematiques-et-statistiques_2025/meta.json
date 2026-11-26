@@ -11,7 +11,9 @@
   "sources": {
     "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2025/Sujets/2025_EG1_Ep2_Maths_Stats_14022025_NB.pdf",
     "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2025/rapports/2025_EcoG1_Rapport_maths_stats_ecrit.pdf",
-    "sha256_sujet": "ae5783d03bf1240e24e5b3ba23764019f5a5c84f901e96883b495343ec42da4c"
+    "sha256_sujet": "ae5783d03bf1240e24e5b3ba23764019f5a5c84f901e96883b495343ec42da4c",
+    "provenance": "Garde du mardi 15 avril 2025, ENS Paris-Saclay, ENSAI civil et INSEE attaché statisticien. Épreuve 2, économie gestion option 1, cinq pages et rapport de quatre pages.",
+    "sha256_rapport_jury": "ee2968815cf5b171f5fe56657d381b61b44e6c963c34e21e463bb18154fbb0f6"
   },
   "figures": [
     {
@@ -36,6 +38,275 @@
       "perimetre": "Rédaction des 34 réponses des deux éditions et de leurs indications sur le sujet officiel. Vérification des puissances par deux méthodes, des deux programmes de Cobb–Douglas, du maximum du biais et du cas r=1. Deux figures et confrontation au rapport de jury 2025.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "agent": "maths_statistiques_saclay",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture des 34 consignes des deux éditions sur le fascicule. Vérification des puissances et des suites récurrentes, des deux optimisations de Cobb–Douglas et de tous les estimateurs du lexique, y compris le cas r=1. Limites du modèle d’écoute discutées dans le rapport."
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1a",
+      "1.1b",
+      "1.1c",
+      "1.1d",
+      "1.2a",
+      "1.2b",
+      "1.2c",
+      "1.2d",
+      "1.3a",
+      "1.3b",
+      "2.1a",
+      "2.1b",
+      "2.1c",
+      "2.2a",
+      "2.2b",
+      "2.2c",
+      "2.2d",
+      "2.2e",
+      "2.3a",
+      "2.3b",
+      "3.1a",
+      "3.1b",
+      "3.1c",
+      "3.1d",
+      "3.1e",
+      "3.2a",
+      "3.2b",
+      "3.2c",
+      "3.3a",
+      "3.3b",
+      "3.3c",
+      "3.3d",
+      "3.4a",
+      "3.4b"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1.1a",
+        "titre": "1a",
+        "partie": "Problème 1 — Puissances d’une matrice",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.1b",
+        "titre": "1b",
+        "partie": "Problème 1 — Puissances d’une matrice",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.1c",
+        "titre": "1c",
+        "partie": "Problème 1 — Puissances d’une matrice",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.1d",
+        "titre": "1d",
+        "partie": "Problème 1 — Puissances d’une matrice",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.2a",
+        "titre": "2a",
+        "partie": "Problème 1 — Puissances d’une matrice",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.2b",
+        "titre": "2b",
+        "partie": "Problème 1 — Puissances d’une matrice",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.2c",
+        "titre": "2c",
+        "partie": "Problème 1 — Puissances d’une matrice",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.2d",
+        "titre": "2d",
+        "partie": "Problème 1 — Puissances d’une matrice",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.3a",
+        "titre": "3a",
+        "partie": "Problème 1 — Puissances d’une matrice",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.3b",
+        "titre": "3b",
+        "partie": "Problème 1 — Puissances d’une matrice",
+        "page_pdf": 2
+      },
+      {
+        "question": "2.1a",
+        "titre": "1a",
+        "partie": "Problème 2 — Production de Cobb–Douglas",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.1b",
+        "titre": "1b",
+        "partie": "Problème 2 — Production de Cobb–Douglas",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.1c",
+        "titre": "1c",
+        "partie": "Problème 2 — Production de Cobb–Douglas",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.2a",
+        "titre": "2a",
+        "partie": "Problème 2 — Production de Cobb–Douglas",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.2b",
+        "titre": "2b",
+        "partie": "Problème 2 — Production de Cobb–Douglas",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.2c",
+        "titre": "2c",
+        "partie": "Problème 2 — Production de Cobb–Douglas",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.2d",
+        "titre": "2d",
+        "partie": "Problème 2 — Production de Cobb–Douglas",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.2e",
+        "titre": "2e",
+        "partie": "Problème 2 — Production de Cobb–Douglas",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.3a",
+        "titre": "3a",
+        "partie": "Problème 2 — Production de Cobb–Douglas",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.3b",
+        "titre": "3b",
+        "partie": "Problème 2 — Production de Cobb–Douglas",
+        "page_pdf": 3
+      },
+      {
+        "question": "3.1a",
+        "titre": "1a",
+        "partie": "Problème 3 — Fréquences des mots et estimation",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.1b",
+        "titre": "1b",
+        "partie": "Problème 3 — Fréquences des mots et estimation",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.1c",
+        "titre": "1c",
+        "partie": "Problème 3 — Fréquences des mots et estimation",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.1d",
+        "titre": "1d",
+        "partie": "Problème 3 — Fréquences des mots et estimation",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.1e",
+        "titre": "1e",
+        "partie": "Problème 3 — Fréquences des mots et estimation",
+        "page_pdf": 4,
+        "page_pdf_fin": 5
+      },
+      {
+        "question": "3.2a",
+        "titre": "2a",
+        "partie": "Problème 3 — Fréquences des mots et estimation",
+        "page_pdf": 5
+      },
+      {
+        "question": "3.2b",
+        "titre": "2b",
+        "partie": "Problème 3 — Fréquences des mots et estimation",
+        "page_pdf": 5
+      },
+      {
+        "question": "3.2c",
+        "titre": "2c",
+        "partie": "Problème 3 — Fréquences des mots et estimation",
+        "page_pdf": 5
+      },
+      {
+        "question": "3.3a",
+        "titre": "3a",
+        "partie": "Problème 3 — Fréquences des mots et estimation",
+        "page_pdf": 5
+      },
+      {
+        "question": "3.3b",
+        "titre": "3b",
+        "partie": "Problème 3 — Fréquences des mots et estimation",
+        "page_pdf": 5
+      },
+      {
+        "question": "3.3c",
+        "titre": "3c",
+        "partie": "Problème 3 — Fréquences des mots et estimation",
+        "page_pdf": 5
+      },
+      {
+        "question": "3.3d",
+        "titre": "3d",
+        "partie": "Problème 3 — Fréquences des mots et estimation",
+        "page_pdf": 5
+      },
+      {
+        "question": "3.4a",
+        "titre": "4a",
+        "partie": "Problème 3 — Fréquences des mots et estimation",
+        "page_pdf": 5
+      },
+      {
+        "question": "3.4b",
+        "titre": "4b",
+        "partie": "Problème 3 — Fréquences des mots et estimation",
+        "page_pdf": 5
+      }
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "controle": [
+      "Vérification des puissances et des suites récurrentes, des deux optimisations de Cobb–Douglas et de tous les estimateurs du lexique, y compris le cas r=1. Limites du modèle d’écoute discutées dans le rapport."
+    ]
+  }
 }

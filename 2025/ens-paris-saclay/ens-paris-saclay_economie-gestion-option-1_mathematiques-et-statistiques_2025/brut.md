@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve réunit trois problèmes indépendants. Les mêmes puissances de matrice se calculent par récurrence et par la formule du binôme. Le deuxième problème distingue coût minimal et production maximale. Le dernier compare trois façons d’estimer la probabilité d’un mot.
 
 ## Problème 1 — Puissances d’une matrice
@@ -61,7 +63,7 @@ La somme scalaire vaut $(-2+3)^n-(-2)^n=1-(-2)^n$, y compris pour $n=0$ où elle
 
 Les optimisations intérieures du sujet supposent $a,b,w,r,Q,K$ strictement positifs. Posons $s=a+b$, avec $s<1$. Pour $x,y>0$, $x^ay^b=Q$ équivaut à $y=Q^{1/b}x^{-a/b}$. Pour chaque $x>0$, cette valeur de $y$ est bien positive et fournit exactement un couple admissible. Le coût à minimiser sur $]0,+\infty[$ devient
 $$G(x)=wx+rQ^{1/b}x^{-a/b}.$$
-Si l’on autorisait $Q=0$, le niveau serait vide sur le domaine ouvert du sujet.
+Si l’on autorisait $Q=0$, le niveau serait vide sur le domaine ouvert du sujet. La lecture stricte de « positifs » importe aussi pour les exposants. Par exemple, si $a=0$, $0<b<1$ et $w,r,Q>0$, la contrainte impose $y=Q^{1/b}$. Le coût $wx+rQ^{1/b}$ tend vers son infimum en $0$ sans l’atteindre pour $x>0$.
 
 ### Question 1b
 
@@ -171,7 +173,7 @@ Sur $]0,1[$, le biais est strictement positif. La méthode B surestime donc en m
 
 Pour que la $r$-ième occurrence arrive à la position $k$, il faut $k\ge r$, exactement $r-1$ succès parmi les $k-1$ premières positions et un succès à la dernière position. L’indépendance dans le modèle d’écoute donne
 $$\mathbb P(Z_j=k)=\binom{k-1}{r-1}p^r(1-p)^{k-r}\quad(k\ge r).$$
-La probabilité vaut zéro pour $k<r$. C’est le temps d’attente du $r$-ième succès.
+La probabilité vaut zéro pour $k<r$. C’est le temps d’attente du $r$-ième succès dans une suite indépendante que l’on peut prolonger. Si l’écoute s’arrête réellement au mot $L$, la valeur exacte du temps reste inconnue dès que moins de $r$ succès ont été entendus. La probabilité de cette situation est $\mathbb P(Z_j>L)=\sum_{h=0}^{\min(r-1,L)}\binom Lh p^h(1-p)^{L-h}$, car le nombre de succès sur $L$ essais suit la loi binomiale.
 
 ### Question 4b
 
