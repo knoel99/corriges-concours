@@ -1708,6 +1708,7 @@
 | 2011 | X-ENS | PC | Physique B | [md](2011/x-ens/x-ens_pc_physique-b_2011/brut.md) | [md](2011/x-ens/x-ens_pc_physique-b_2011/guide.md) |
 | 2012 | X-ENS | PC | Physique B | [md](2012/x-ens/x-ens_pc_physique-b_2012/brut.md) | [md](2012/x-ens/x-ens_pc_physique-b_2012/guide.md) |
 | 2013 | X-ENS | PC | Physique B | [md](2013/x-ens/x-ens_pc_physique-b_2013/brut.md) | [md](2013/x-ens/x-ens_pc_physique-b_2013/guide.md) |
+| 2014 | X-ENS | PC | Physique B | [md](2014/x-ens/x-ens_pc_physique-b_2014/brut.md) | [md](2014/x-ens/x-ens_pc_physique-b_2014/guide.md) |
 | 2015 | X-ENS | PC | Physique B | [md](2015/x-ens/x-ens_pc_physique-b_2015/brut.md) | [md](2015/x-ens/x-ens_pc_physique-b_2015/guide.md) |
 | 2016 | X-ENS | PC | Physique B | [md](2016/x-ens/x-ens_pc_physique-b_2016/brut.md) | [md](2016/x-ens/x-ens_pc_physique-b_2016/guide.md) |
 | 2017 | X-ENS | PC | Physique B | [md](2017/x-ens/x-ens_pc_physique-b_2017/brut.md) | [md](2017/x-ens/x-ens_pc_physique-b_2017/guide.md) |
@@ -1718,6 +1719,7 @@
 | 2022 | X-ENS | PC | Physique B | [md](2022/x-ens/x-ens_pc_physique-b_2022/brut.md) | [md](2022/x-ens/x-ens_pc_physique-b_2022/guide.md) |
 | 2026 | X-ENS | PC | Physique B | [md](2026/x-ens/x-ens_pc_physique-b_2026/brut.md) | [md](2026/x-ens/x-ens_pc_physique-b_2026/guide.md) |
 | 2026 | X-ENS | PSI | Maths PSI | [md](2026/x-ens/x-ens_psi_maths-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_maths-psi_2026/guide.md) |
+| 2019 | X-ENS | PSI | Physique PSI | [md](2019/x-ens/x-ens_psi_physique-psi_2019/brut.md) | [md](2019/x-ens/x-ens_psi_physique-psi_2019/guide.md) |
 | 2005 | X | MP-PC | Allemand | [md](2005/x/x_mp-pc_allemand_2005/brut.md) | [md](2005/x/x_mp-pc_allemand_2005/guide.md) |
 | 2006 | X | MP-PC | Allemand | [md](2006/x/x_mp-pc_allemand_2006/brut.md) | [md](2006/x/x_mp-pc_allemand_2006/guide.md) |
 | 2007 | X | MP-PC | Allemand | [md](2007/x/x_mp-pc_allemand_2007/brut.md) | [md](2007/x/x_mp-pc_allemand_2007/guide.md) |
