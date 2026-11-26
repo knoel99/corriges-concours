@@ -45,6 +45,54 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Rédaction des 30 questions depuis les huit pages numérisées et le rapport du jury. Vérification des deux programmes à compteurs, des bornes en nombre de transitions et de configurations, du support réellement parcouru en question 26 et des cas dégénérés. Trois figures originales et exploration exhaustive sur petits vecteurs."
+    },
+    {
+      "phase": "relecture",
+      "agent": "reprise_physique_ulm",
+      "session": "reprise_physique_ulm",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Attestation de couverture sur le fac-similé. Les 30 demandes du cahier de huit pages ont été rapprochées des solutions des deux éditions, y compris le bilan de l’image de Parikh et le support de la transition en Q26. La multiplication faible a été recalculée par exploration des configurations pour les deux entrées de 0 à 3."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30"
+    ],
+    "verification": "Les 30 demandes du cahier de huit pages ont été rapprochées des solutions des deux éditions, y compris le bilan de l’image de Parikh et le support de la transition en Q26. La multiplication faible a été recalculée par exploration des configurations pour les deux entrées de 0 à 3."
+  }
 }
