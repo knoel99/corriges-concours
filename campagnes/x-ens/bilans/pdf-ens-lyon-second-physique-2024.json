@@ -1,0 +1,868 @@
+{
+  "slug": "ens-de-lyon_second-concours_physique_2024",
+  "commit_export": "15aba3a4cecf5d0243b3c4398363712b10fb4979",
+  "branche": "relecture/lyon-second-physique-2024-2026",
+  "gabarit": "scripts/exporter au commit indiqué",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "A7",
+      "A8",
+      "A9",
+      "A10",
+      "B1",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "B6",
+      "B7",
+      "B8",
+      "B9",
+      "B10",
+      "B11",
+      "B12",
+      "B13",
+      "B14",
+      "B15",
+      "B16",
+      "B17",
+      "B18",
+      "B19",
+      "B20",
+      "B21",
+      "B22",
+      "B23",
+      "B24",
+      "B25"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "correspondance": [
+      {
+        "question": "A1",
+        "page_pdf": 2
+      },
+      {
+        "question": "A2",
+        "page_pdf": 2
+      },
+      {
+        "question": "A3",
+        "page_pdf": 2
+      },
+      {
+        "question": "A4",
+        "page_pdf": 2
+      },
+      {
+        "question": "A5",
+        "page_pdf": 2
+      },
+      {
+        "question": "A6",
+        "page_pdf": 2
+      },
+      {
+        "question": "A7",
+        "page_pdf": 2
+      },
+      {
+        "question": "A8",
+        "page_pdf": 2
+      },
+      {
+        "question": "A9",
+        "page_pdf": 2
+      },
+      {
+        "question": "A10",
+        "page_pdf": 2
+      },
+      {
+        "question": "B1",
+        "page_pdf": 4
+      },
+      {
+        "question": "B2",
+        "page_pdf": 4
+      },
+      {
+        "question": "B3",
+        "page_pdf": 4
+      },
+      {
+        "question": "B4",
+        "page_pdf": 4
+      },
+      {
+        "question": "B5",
+        "page_pdf": 4
+      },
+      {
+        "question": "B6",
+        "page_pdf": 4
+      },
+      {
+        "question": "B7",
+        "page_pdf": 5
+      },
+      {
+        "question": "B8",
+        "page_pdf": 5
+      },
+      {
+        "question": "B9",
+        "page_pdf": 5
+      },
+      {
+        "question": "B10",
+        "page_pdf": 5
+      },
+      {
+        "question": "B11",
+        "page_pdf": 5
+      },
+      {
+        "question": "B12",
+        "page_pdf": 5
+      },
+      {
+        "question": "B13",
+        "page_pdf": 5
+      },
+      {
+        "question": "B14",
+        "page_pdf": 6
+      },
+      {
+        "question": "B15",
+        "page_pdf": 6
+      },
+      {
+        "question": "B16",
+        "page_pdf": 6
+      },
+      {
+        "question": "B17",
+        "page_pdf": 6
+      },
+      {
+        "question": "B18",
+        "page_pdf": 6
+      },
+      {
+        "question": "B19",
+        "page_pdf": 6
+      },
+      {
+        "question": "B20",
+        "page_pdf": 6
+      },
+      {
+        "question": "B21",
+        "page_pdf": 6
+      },
+      {
+        "question": "B22",
+        "page_pdf": 7
+      },
+      {
+        "question": "B23",
+        "page_pdf": 7
+      },
+      {
+        "question": "B24",
+        "page_pdf": 8
+      },
+      {
+        "question": "B25",
+        "page_pdf": 8
+      }
+    ],
+    "figures_du_sujet": [
+      {
+        "numero": 1,
+        "page_pdf": 3
+      },
+      {
+        "numero": 2,
+        "page_pdf": 5
+      },
+      {
+        "numero": 3,
+        "page_pdf": 7
+      },
+      {
+        "numero": 4,
+        "page_pdf": 8
+      }
+    ],
+    "fichiers_associes": "Le registre de physique sépare le sujet et le rapport écrit du rapport oral. Les pièces de l’écrit ne comportent pas de pièce jointe et toutes les figures utiles sont imprimées dans le sujet."
+  },
+  "interventions": [
+    {
+      "phase": "redaction",
+      "modele": null,
+      "vitesse": null,
+      "effort": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Corrigés brut et guidé.",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "agent": "physique_psi"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-24",
+      "modifications": null,
+      "perimetre": "Sujet et rapport lus. Contre-calcul indépendant du choix des longueurs de référence, des déformations maximales, de la pente de coexistence, de la lecture des courbes de la figure 4 et du gradient de température aux deux phases.",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "tour": 2,
+      "modifications": true,
+      "perimetre": "Relecture du brut et du guidé. Comparaison des dix réponses de cours et des vingt-cinq questions sur la solidification avec les pages et figures originales et le rapport du jury. Test du modèle quasi stationnaire par la solution autosimilaire de Stefan. Vérification numérique de la pression et de la position du front pour deux lectures de la pente de Clapeyron.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "agent": "lva_pt_2325",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "tour": 3,
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle des dix réponses de cours et des 25 questions du problème, vérification de la figure 4 sur ses deux polylignes originales, des flux aux deux faces du front et des déformations par phase. Report de la discordance de barème dans la paire."
+    }
+  ],
+  "pieces": {
+    "index": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/",
+    "sha256_index": "1cf45e0a75bfb34a6d334abc69ca5a772ab6dc9302222638e7521653102252e3",
+    "ancrages": [
+      {
+        "texte": "Écrit physique",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/07/24_2c_lyon_sujet_phy.pdf"
+      },
+      {
+        "texte": "Écrit physique",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/10/24_2cc_rap_ePhy.pdf"
+      },
+      {
+        "texte": "Oral physique",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/08/24_2cc_rap_oPhy.pdf"
+      }
+    ],
+    "sujet": {
+      "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/07/24_2c_lyon_sujet_phy.pdf",
+      "sha256": "3d705d4bf7da1720fe70633b32a87361a33cb3a05011d003f2be70479769e361",
+      "pages": 8,
+      "pieces_jointes": [],
+      "rendus": [
+        {
+          "page": 1,
+          "sha256_rendu": "c4223e7946e9d75c785c0f44cf2c7191dea1838e1625cce49e8b513f2576d8fd",
+          "liens": []
+        },
+        {
+          "page": 2,
+          "sha256_rendu": "31ff1e1347fb031715db888729990094c189242811f02d90f4775becf5ac65cd",
+          "liens": []
+        },
+        {
+          "page": 3,
+          "sha256_rendu": "f1a20265c507478116c8a092a57c3497eee6938c5fbdb3b0dc1608b04346e79b",
+          "liens": []
+        },
+        {
+          "page": 4,
+          "sha256_rendu": "274c073a3a3a677b45ed4b063f9ca96f887f4fd60cefc219638d0c9b06fde16f",
+          "liens": []
+        },
+        {
+          "page": 5,
+          "sha256_rendu": "90d5e2a469620556093631e90064023ec9da5fbf77ab56fc128d016bb17079f1",
+          "liens": []
+        },
+        {
+          "page": 6,
+          "sha256_rendu": "41a3c51788dea280e1758c156d29e3b3c55decbd0dbf0f8e744619f7fc252abf",
+          "liens": []
+        },
+        {
+          "page": 7,
+          "sha256_rendu": "a6f9e0ae8f46c377ef591eefcdb057bf2e089d5fd043563574f9bf0c38694def",
+          "liens": []
+        },
+        {
+          "page": 8,
+          "sha256_rendu": "77adb6a89ec0e66a6fbc356109a4d3d6e3b8757ae2ec10a647f005a8771e4b81",
+          "liens": []
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/10/24_2cc_rap_ePhy.pdf",
+      "sha256": "1714e7d4904da2aebd617a0dae98be224271e56764e16c5a56b92e0f266a4c79",
+      "pages": 1,
+      "pieces_jointes": [],
+      "rendus": [
+        {
+          "page": 1,
+          "sha256_rendu": "29406fc6bee7f8bed8ed21ccc923e1413a529d6108ce5be57095afd2fcc16804",
+          "liens": []
+        }
+      ]
+    }
+  },
+  "controle_reseau": {
+    "index": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/",
+    "sha256_index": "ea09d8707f4a4b4059849c735fcc2c1d4644239d13e727c05952b157792c06f9",
+    "pdf": [
+      {
+        "annee": 2024,
+        "piece": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/07/24_2c_lyon_sujet_phy.pdf",
+        "sha256": "3d705d4bf7da1720fe70633b32a87361a33cb3a05011d003f2be70479769e361",
+        "octets": 621021,
+        "identique": true
+      },
+      {
+        "annee": 2024,
+        "piece": "rapport",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/10/24_2cc_rap_ePhy.pdf",
+        "sha256": "1714e7d4904da2aebd617a0dae98be224271e56764e16c5a56b92e0f266a4c79",
+        "octets": 81014,
+        "identique": true
+      }
+    ]
+  },
+  "resultats_calcules": [
+    "Front libre en jours, temps diffusif sur temps du front, rapport de Stefan 80.82912457912458 0.12574850299401197 0.9897660364912105",
+    "Pente (MPa/K), u, surpression (MPa), température (°C), flux (W/m²) 10.0 0.37532811474929884 85.92057603023515 -8.592057603023518 8.252707835162374",
+    "Pente (MPa/K), u, surpression (MPa), température (°C), flux (W/m²) 14.061870766977853 0.4547874826406051 114.5574880329168 -8.14667478682406 8.965320341081508",
+    "Force maximale (N) et déformation maximale 808695.6521739127 0.0869565217391304",
+    "Intersection des deux polylignes du PDF : u et ΔP/Es 0.3753280927285746 0.00923878929545116"
+  ],
+  "pdf": {
+    "brut": {
+      "pages": 8,
+      "signets": [
+        [
+          1,
+          "Partie A — Questionnaire de physique",
+          1
+        ],
+        [
+          2,
+          "Question A1",
+          1
+        ],
+        [
+          2,
+          "Question A2",
+          1
+        ],
+        [
+          2,
+          "Question A3",
+          1
+        ],
+        [
+          2,
+          "Question A4",
+          1
+        ],
+        [
+          2,
+          "Question A5",
+          1
+        ],
+        [
+          2,
+          "Question A6",
+          2
+        ],
+        [
+          2,
+          "Question A7",
+          2
+        ],
+        [
+          2,
+          "Question A8",
+          2
+        ],
+        [
+          2,
+          "Question A9",
+          2
+        ],
+        [
+          2,
+          "Question A10",
+          2
+        ],
+        [
+          1,
+          "Partie B — Évolution d'un front de solidification",
+          2
+        ],
+        [
+          2,
+          "Front à pression constante",
+          2
+        ],
+        [
+          3,
+          "Question B1",
+          2
+        ],
+        [
+          3,
+          "Question B2",
+          3
+        ],
+        [
+          3,
+          "Question B3",
+          3
+        ],
+        [
+          3,
+          "Question B4",
+          3
+        ],
+        [
+          3,
+          "Question B5",
+          3
+        ],
+        [
+          3,
+          "Question B6",
+          3
+        ],
+        [
+          3,
+          "Question B7",
+          4
+        ],
+        [
+          3,
+          "Question B8",
+          4
+        ],
+        [
+          2,
+          "Validité du régime quasi stationnaire",
+          4
+        ],
+        [
+          3,
+          "Question B9",
+          4
+        ],
+        [
+          3,
+          "Question B10",
+          4
+        ],
+        [
+          3,
+          "Question B11",
+          4
+        ],
+        [
+          3,
+          "Question B12",
+          5
+        ],
+        [
+          2,
+          "Compression à volume fixé",
+          5
+        ],
+        [
+          3,
+          "Question B13",
+          5
+        ],
+        [
+          3,
+          "Question B14",
+          5
+        ],
+        [
+          3,
+          "Question B15",
+          5
+        ],
+        [
+          3,
+          "Question B16",
+          6
+        ],
+        [
+          3,
+          "Question B17",
+          6
+        ],
+        [
+          3,
+          "Question B18",
+          6
+        ],
+        [
+          3,
+          "Question B19",
+          6
+        ],
+        [
+          3,
+          "Question B20",
+          6
+        ],
+        [
+          3,
+          "Question B21",
+          7
+        ],
+        [
+          2,
+          "État stationnaire du système diphasique",
+          7
+        ],
+        [
+          3,
+          "Question B22",
+          7
+        ],
+        [
+          3,
+          "Question B23",
+          7
+        ],
+        [
+          3,
+          "Question B24",
+          7
+        ],
+        [
+          3,
+          "Question B25",
+          8
+        ]
+      ],
+      "nombre_signets": 41,
+      "signets_questions": 35,
+      "pages_figures": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        8
+      ],
+      "sha256": "1df8183d9f48625e9e5e9900e47508f03b2376f48e266103ccc8d3b130d3d578",
+      "rendus_sha256": [
+        "8896b5d1b83d56bd33d6786d52bac652501a86208a45d3f2f785f5ace614ab81",
+        "b6c1875f8bf91e34062cfd05e0e05bf423af15c69a8985758cae4aa59c0c2169",
+        "0e3b7704e226ee2d6839a855736529ac178d44ee85a1c088e1d33b7f5fd3f3f0",
+        "817121973f675b0ef89e30350350e8d576cff85d6a3a9a42a246562d02506e3f",
+        "b5a80adcee3671a5acb634c5a6d72be7cb4584adba6dba55aedaff36f22568d0",
+        "440fbeba577d5dc8189e18a2cf781ec9f8528df9bc26738894102f6f308b510a",
+        "8939e7d73cd64e7f8115a738b5c9423d59553b9936c528e24a832bdd5b1a49fb",
+        "b2e6d761a09c42c951948f541349a3ed53a4b024c07769c5c6ea0667c0306d56"
+      ]
+    },
+    "guide": {
+      "pages": 12,
+      "signets": [
+        [
+          1,
+          "Présentation du sujet",
+          1
+        ],
+        [
+          1,
+          "Partie A — Questionnaire de physique",
+          1
+        ],
+        [
+          2,
+          "Question A1",
+          1
+        ],
+        [
+          2,
+          "Question A2",
+          1
+        ],
+        [
+          2,
+          "Question A3",
+          2
+        ],
+        [
+          2,
+          "Question A4",
+          2
+        ],
+        [
+          2,
+          "Question A5",
+          2
+        ],
+        [
+          2,
+          "Question A6",
+          2
+        ],
+        [
+          2,
+          "Question A7",
+          2
+        ],
+        [
+          2,
+          "Question A8",
+          3
+        ],
+        [
+          2,
+          "Question A9",
+          3
+        ],
+        [
+          2,
+          "Question A10",
+          3
+        ],
+        [
+          1,
+          "Partie B — Évolution d'un front de solidification",
+          4
+        ],
+        [
+          2,
+          "Front à pression constante",
+          4
+        ],
+        [
+          3,
+          "Question B1",
+          4
+        ],
+        [
+          3,
+          "Question B2",
+          4
+        ],
+        [
+          3,
+          "Question B3",
+          4
+        ],
+        [
+          3,
+          "Question B4",
+          5
+        ],
+        [
+          3,
+          "Question B5",
+          5
+        ],
+        [
+          3,
+          "Question B6",
+          5
+        ],
+        [
+          3,
+          "Question B7",
+          5
+        ],
+        [
+          3,
+          "Question B8",
+          6
+        ],
+        [
+          2,
+          "Validité du régime quasi stationnaire",
+          6
+        ],
+        [
+          3,
+          "Question B9",
+          6
+        ],
+        [
+          3,
+          "Question B10",
+          6
+        ],
+        [
+          3,
+          "Question B11",
+          7
+        ],
+        [
+          3,
+          "Question B12",
+          7
+        ],
+        [
+          2,
+          "Compression à volume fixé",
+          7
+        ],
+        [
+          3,
+          "Question B13",
+          7
+        ],
+        [
+          3,
+          "Question B14",
+          7
+        ],
+        [
+          3,
+          "Question B15",
+          8
+        ],
+        [
+          3,
+          "Question B16",
+          8
+        ],
+        [
+          3,
+          "Question B17",
+          8
+        ],
+        [
+          3,
+          "Question B18",
+          9
+        ],
+        [
+          3,
+          "Question B19",
+          9
+        ],
+        [
+          3,
+          "Question B20",
+          9
+        ],
+        [
+          3,
+          "Question B21",
+          10
+        ],
+        [
+          2,
+          "État stationnaire du système diphasique",
+          10
+        ],
+        [
+          3,
+          "Question B22",
+          10
+        ],
+        [
+          3,
+          "Question B23",
+          10
+        ],
+        [
+          3,
+          "Question B24",
+          11
+        ],
+        [
+          3,
+          "Question B25",
+          11
+        ],
+        [
+          1,
+          "Bilan",
+          12
+        ]
+      ],
+      "nombre_signets": 43,
+      "signets_questions": 35,
+      "pages_figures": [
+        3,
+        4,
+        6,
+        8,
+        9,
+        11
+      ],
+      "sha256": "8949fb78deeeec468909dd8c58ddb09c2ada05e50f4f8934a70f6baa7c13638c",
+      "rendus_sha256": [
+        "fc76979aab3027dfcd2aa40c41625d7a6340c98013b14479bbd5fd6def89759a",
+        "1e3865db690a9a097f469d4e9d4ddabe770d857362eab940dc8407f7e36f509f",
+        "503cd1af95357781ac384a0472621ad04bb956fd0b5cbf2b120a82473a2db3c2",
+        "9f9faa8a83ea09d7f3c3d9f9bde620bbae99810a4551ae93999854b400a362bd",
+        "04d68846b4a7de31455a035192eb91241f39d937021ea2b8cd527dd6e9c00eaa",
+        "3d37f1c1f871e88175d1ba9012c96002c7dc5b19880c3f7ccf57041b4f360cd3",
+        "ba3293977257dba8890f872ff184f52343efa539802fb8226b416b2580059245",
+        "9de6d25d28f753bc90e0a1043a7441be46ebcd667ce36b99dc7933d04c35b2d1",
+        "3254bf8240155e898ec469a5b8b6058c887a26e779b520d877aa0cd268413872",
+        "9af6b4e6f12b452ce226c2e374d46b2f3642f85a8ecd181a2cd742a92ebdbde3",
+        "a2ccb497e9c8dde4c47a071948fa95eb4cdd8e0f022962bf354fa2d6cab21e26",
+        "099e3fd6ffe1faeb717753b8b48702e00e39b4fb28e770f18068fece7e39110a"
+      ]
+    }
+  },
+  "empreintes": {
+    "brut.md": "aa3d1a058d12b20ecf1af5e1ba9cf4ef276ea8c02d40c618c6f2e0e126e93451",
+    "guide.md": "fb7291accb01cc22eac451f3f91fe9715ea39abec16106fe4fcb753da08ecfd9",
+    "meta.json": "e08e6c8c83ae817678eea7d47c74dfdc6b91893a2c04a42ab0ae807062c89023",
+    "verifier_calculs.py": "9d889dd9eccae1e2ad2a842cd4a5ac3766912284738ad7211b5eb8db015ff257",
+    "figures/phasors-circuit-serie.svg": "e3619ed922e4edeed3577355c8839007e076f431810033a2d61aa1af09d25e52",
+    "figures/profil-glace-a-pression-constante.svg": "2d938e64d11bd75ff5dfa67ef38ea2ea4f9c099654e7aa8fc4e72aa41e344377",
+    "figures/avance-du-front.svg": "6d35e3f39560709c77722f2372f92c6e65ed3fc17f2bacf6daf1852cc07eaa88",
+    "figures/trois-etats-mecaniques.svg": "c357e037f2dee1e834d09104d79fa9a1badf16d62bae31420b0e2d027d09d4db",
+    "figures/surpression-mecanique.svg": "18dddd2177bfaef20fbcfeb99716f3904db0567a154fd767ebe7318a0a70f8d0",
+    "figures/equilibre-des-deux-branches.svg": "9c27789de21c9010d5df9abc8ea21dd126296b61150c1078d8377cb40873562c",
+    "brut.pdf": "1df8183d9f48625e9e5e9900e47508f03b2376f48e266103ccc8d3b130d3d578",
+    "guide.pdf": "8949fb78deeeec468909dd8c58ddb09c2ada05e50f4f8934a70f6baa7c13638c",
+    "controle-calculs.txt": "49888b2d5c66e4fcade546800e94ce65a23179ffdecd07f2fdf9cc7810af569b",
+    "bilan-compilation.md": "04f147432ffe3e775eebdc96883a1587126a945ebf1dceda3594b85d45688b97",
+    "apercu.jpg": "80d70417ca6f23bc566606ee80d9d3b07b0307d4f9712d0f41c5151d353216ed"
+  },
+  "archive": "ENS-Lyon-second-concours-physique-2024.zip",
+  "sha256": "8435b1f755cc19981a67f5af96c5755835b3e73998c4b0fdab5df7f9f2ef43c2"
+}
