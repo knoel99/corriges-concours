@@ -6,6 +6,10 @@
 
 **Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Voyage d’une lithosphère océanique de la ride à la fosse. Épreuve écrite de trois heures. [Sujet et annexes](https://banques-ecoles.fr/cms/wp-content/uploads/2024/08/24_2cc_sujet_ST.pdf) · [Rapport du jury](https://banques-ecoles.fr/cms/wp-content/uploads/2024/08/24_2cc_rap_eST.pdf)
+
 ## Présentation du sujet
 
 De l’Atlantique central à la côte du Chili, les cartes et les échantillons suivent une lithosphère océanique depuis sa formation jusqu’à son entrée en subduction. Les âges magnétiques, les épaisseurs et les signatures des éléments traces répondent à des questions distinctes.
@@ -68,6 +72,8 @@ Des microorganismes chimio-litho-autotrophes tirent leur énergie de couples red
 
 ![Figure 2 — L’infiltration, la circulation en profondeur et le retour du fluide vers l’océan transportent chaleur et éléments chimiques.](figures/q04-circulation-hydrothermale.svg)
 
+Dans le panneau A de l’annexe D, le claste de basalte chloritisé conserve la trace d’une transformation de la roche. Les annotations distinguent la pyrite des oxydes de fer (hématite et magnétite). Le dépôt métallique de l’évent B et l’altération du basalte A enregistrent ainsi deux étapes complémentaires de la circulation.
+
 ## C — Sédimentation, ouverture et refroidissement
 
 Une polarité acquise au dépôt fournit des jalons chronologiques. Les bandes d’âge du plancher datent séparément la formation de sa croûte.
@@ -120,6 +126,8 @@ On a mesuré **les deux flancs** ; il ne faut pas doubler de nouveau cette valeu
 
 ![Figure 4 — La distance des deux isochrones homologues comprend la création de plancher sur les deux plaques.](figures/q07-ouverture-pacifique.svg)
 
+L’échelle de l’annexe A place 40 Ma à l’Éocène, entre les repères 33,9 et 55,8 Ma de la colonne Gradstein–Ogg imprimée. La date de la paire d’isochrones fixe la durée du calcul. Utiliser l’intégralité de la durée de l’Éocène donnerait une autre vitesse.
+
 ### Question 8
 
 > [!INDICATION]
@@ -143,15 +151,15 @@ La croûte magmatique garde approximativement son épaisseur initiale ; la litho
 
 Pour 45 Ma, $t=45\times10^6\times365{,}25\times86400\simeq1{,}42\times10^{15}\ \mathrm s$. L’équation imposée donne $h=\sqrt{10^{-6}t}\simeq3{,}77\times10^4\ \mathrm m$, soit **38 km**, avec environ 36–40 km pour 40–50 Ma. Cette échelle de diffusion n’est pas une définition universelle de l’épaisseur jusqu’à une isotherme précise. Un autre seuil thermique donnerait un préfacteur différent.
 
-À 20°S, le géotherme de Nazca se place entre celui de l’axe et celui du Pacifique occidental ancien. Le plancher des Mariannes, d’ordre 150–170 Ma, a refroidi plus longtemps. Le même modèle donne environ 70–73 km pour cet âge, donc un manteau lithosphérique plus froid et une zone refroidie plus profonde.
+À 20°S, le géotherme de Nazca se place entre celui de l’axe et celui du Pacifique occidental ancien. Le plancher des Mariannes, d’ordre 150–170 Ma, a refroidi plus longtemps. Le même modèle donne environ 69–73 km pour cet âge, donc un manteau lithosphérique plus froid et une zone refroidie plus profonde.
 
 ![Figure 5 — Géothermes indicatifs d’un demi-espace qui refroidit par conduction. Les âges servent à comparer les profils, sans imposer une température exacte au fond.](figures/q09-geothermes-des-plaques.svg)
+
+Le demi-espace conducteur donne un sens précis à la profondeur calculée. Pour une plaque initialement à $T_m$ et une surface maintenue à $T_s$, $(T-T_s)/(T_m-T_s)=\mathrm{erf}[z/(2\sqrt{\kappa t})]$. À la profondeur $h=\sqrt{\kappa t}$ demandée par le sujet, ce rapport vaut $\mathrm{erf}(0{,}5)\simeq0{,}52$. L’isotherme correspondant à 90 % de l’écart thermique se trouve à $z\simeq2{,}33h$, soit près de 88 km à 45 Ma. Les 38 km calculés et une épaisseur lithosphérique définie par une isotherme élevée correspondent donc à deux conventions de profondeur.
 
 ## D — Du prisme d’accrétion à la subduction de la ride
 
 Les zircons témoignent de la provenance des sédiments. Le point triple de Taitao modifie le régime thermique et les sources du volcanisme.
-
-Le demi-espace conducteur donne un sens précis à la profondeur calculée. Pour une plaque initialement à $T_m$ et une surface maintenue à $T_s$, $(T-T_s)/(T_m-T_s)=\mathrm{erf}[z/(2\sqrt{\kappa t})]$. À la profondeur $h=\sqrt{\kappa t}$ demandée par le sujet, ce rapport vaut $\mathrm{erf}(0{,}5)\simeq0{,}52$. L’isotherme correspondant à 90 % de l’écart thermique se trouve à $z\simeq2{,}33h$, soit près de 88 km à 45 Ma. Les 38 km calculés et une épaisseur lithosphérique définie par une isotherme élevée correspondent donc à deux conventions de profondeur.
 
 ### Question 10
 
@@ -166,6 +174,8 @@ Le demi-espace conducteur donne un sens précis à la profondeur calculée. Pour
 La figure 3 est multimodale : on lit des populations paléozoïques de quelques centaines de Ma, un groupe important vers 1,0–1,2 Ga, et des grains beaucoup plus anciens allant jusque vers 3,7 Ga. Un seul centre volcanique jeune ou la seule lithosphère océanique arrivant aujourd’hui dans la fosse ne peuvent fournir toute cette diversité. Les zircons indiquent une composante **continentale**, dont du matériel cratonique ancien, éventuellement recyclé par plusieurs cycles sédimentaires. Des apports d’arcs plus jeunes peuvent s’y ajouter.
 
 Les grains détachés du continent sont transférés vers la fosse puis incorporés au prisme par raclage. Une distribution relative d’âges ne donne pas un débit massique absolu. Le résultat complète Q6 : l’ordre de grandeur pélagique est pertinent comme fond dans le nord aride, tandis que le prisme sud-chilien reçoit une alimentation détritique continentale plus importante.
+
+La légende du diagramme circulaire permet de préciser la provenance. La classe 4 (1,4–1,2 Ga) représente 29 % des zircons et la classe 1 (plus de 2,5 Ga) environ 5 %. Le sommet le plus étroit de l’histogramme se situe vers 1,1 Ga. Le pourcentage d’une large classe et la hauteur d’un pic sont donc deux lectures distinctes.
 
 ### Question 11
 
@@ -225,6 +235,8 @@ Une lecture d’ordre de grandeur place une source basaltique chaude à environ 
 Sur la figure 5, les TTG archéennes et les adakites ont des spectres globalement décroissants. En forte affinité avec le grenat, les terres rares lourdes restent préférentiellement dans le résidu, et les liquides en sont appauvris par rapport aux éléments plus incompatibles. Le profil du liquide expérimental est compatible avec ce contraste. La ressemblance appuie un modèle possible de genèse des TTG par **fusion partielle de croûte basaltique hydratée en présence d’un résidu à grenat**, comparable sur ce point aux adakites de Taitao. La figure seule ne permet pas d’imposer une géométrie tectonique unique pour toutes les TTG.
 
 Dans la Terre archéenne plus chaude, des conditions de type haute température à pression modérée ont pu être plus fréquentes. Le refroidissement séculaire favorise aujourd’hui, dans les subductions de lithosphère âgée, des gradients plus faibles et des assemblages HP–BT ; l’arc calco-alcalin est alors surtout nourri par la fusion hydratée du coin mantellique. Le point triple actuel fournit un analogue local et transitoire de conditions chaudes.
+
+La lecture de l’axe logarithmique donne pour Yb, à droite de la figure 5, environ 1 fois le manteau primitif pour la TTG et 2 fois pour l’adakite, contre environ 15 fois pour le plagiogranite océanique. Une concentration normalisée voisine de 1 reste compatible avec un fort appauvrissement relatif aux éléments de gauche, souvent à plusieurs dizaines de fois la référence.
 
 ## Bilan
 

@@ -12,7 +12,9 @@
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/08/24_2cc_sujet_ST.pdf",
     "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/08/24_2cc_rap_eST.pdf",
     "sujet_sha256": "3edff4e867f21f0ed0ee2d91726f9e1364c79d2d9ffb0cc44bedfd5c3a4ffadd",
-    "rapport_sha256": "f0a61c5872882db3006e29c87cb97819f9990e65e6219d1a480f1c1d451bb5a3"
+    "rapport_sha256": "f0a61c5872882db3006e29c87cb97819f9990e65e6219d1a480f1c1d451bb5a3",
+    "pages_sujet": 8,
+    "pages_rapport": 2
   },
   "figures": [
     {
@@ -51,7 +53,7 @@
       "legende": "Le point illustratif 690 °C vers 40 km donne un gradient apparent de 17 °C/km. La zone colorée représente un intervalle de lecture et non une frontière de faciès."
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "provenance": {
     "redaction": {
       "provider": "codex",
@@ -84,6 +86,107 @@
       "perimetre": "Relecture du brut et du guidé. Comparaison des quinze questions et des annexes cartographiques, paléomagnétiques, métamorphiques et géochimiques avec les deux éditions et le rapport. Contre-calcul des taux d’enregistrement des polarités et des profondeurs des isothermes du modèle de refroidissement.",
       "agent": "astra_physique",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Relecture des quinze questions et des deux éditions. Vérification de la carotte et des deux isochrones sur la carte, des chronologies, des faciès et des populations de zircons. Chiffrage des spectres normalisés et rattachement du modèle de demi-espace à Q9."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": 1,
+        "page_pdf": 2,
+        "documents_controles": "Figure 1, coupe Antilles–Afrique"
+      },
+      {
+        "question": 2,
+        "page_pdf": 2,
+        "documents_controles": "Figure 1, marges"
+      },
+      {
+        "question": 3,
+        "page_pdf": 2,
+        "documents_controles": "Comparaison des planchers rapide et lent"
+      },
+      {
+        "question": 4,
+        "page_pdf": 2,
+        "documents_controles": "Annexe D, photographies A à E"
+      },
+      {
+        "question": 5,
+        "page_pdf": 2,
+        "documents_controles": "Tableau 1, polarité et profondeur"
+      },
+      {
+        "question": 6,
+        "page_pdf": 3,
+        "documents_controles": "Figure 2 et tableau 1"
+      },
+      {
+        "question": 7,
+        "page_pdf": 3,
+        "documents_controles": "Figure 2, annexes A et B"
+      },
+      {
+        "question": 8,
+        "page_pdf": 3,
+        "documents_controles": "Géothermes de dorsale et de plaque ancienne"
+      },
+      {
+        "question": 9,
+        "page_pdf": 3,
+        "documents_controles": "Figure 2 et diffusivité fournie"
+      },
+      {
+        "question": 10,
+        "page_pdf": 4,
+        "documents_controles": "Figure 3, histogramme et répartitions des zircons"
+      },
+      {
+        "question": 11,
+        "page_pdf": 4,
+        "documents_controles": "Figures 2 à 4, Atacama et Patagonie"
+      },
+      {
+        "question": 12,
+        "page_pdf": 4,
+        "documents_controles": "Figure 4, positions successives de la ride"
+      },
+      {
+        "question": 13,
+        "page_pdf": 4,
+        "documents_controles": "Figure 4, fenêtre asthénosphérique"
+      },
+      {
+        "question": 14,
+        "page_pdf": 5,
+        "documents_controles": "Figures 4 et 5, annexe C"
+      },
+      {
+        "question": 15,
+        "page_pdf": 5,
+        "documents_controles": "Figure 5, spectres normalisés"
+      }
+    ],
+    "annexes": "A–D, pages 6 à 8"
+  }
 }
