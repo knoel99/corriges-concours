@@ -1,0 +1,434 @@
+{
+  "slug": "bel_bl_francais-oral-tronc-commun-19-juin_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Français (oral tronc commun 19 juin)",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "Explication d’un texte français — oral du 19 juin 2025",
+  "questions": 24,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/francais_19_juin.pdf",
+    "sujet_sha256": "a963ee72fe89e40c5385a13e2382f3e237ce5b87cf1bee5c4be8db04fa0a6136",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_francais.pdf",
+    "rapport_sha256": "65335d9a083778da894a8b6e467681b30f9cbbca0ec3f32d31bab069958a4e4e",
+    "document": "Fascicule B/L de billets manuscrits",
+    "page_pdf": "1–4",
+    "concordance_boileau": [
+      {
+        "url": "https://geidai.repo.nii.ac.jp/record/622/files/hakuon246_full.pdf",
+        "sha256": "20ce3e47280ff0eea3a70dc216b1758264c514f3f0dbb94222788fd9f861027d",
+        "repere": "note 28, p. 147 imprimée, p. 149 du PDF : Gallimard 1985, p. 230, chant I, v. 131."
+      },
+      {
+        "url": "https://blogs.ubc.ca/fren320/files/2009/09/320-boileau.pdf",
+        "sha256": "619bad0c1c8724ad8ee276391ee9a6f3d5ce72d935c98aa0db1cf8806b76340c",
+        "repere": "FREN 320, p. 1, Gallimard 1985, chant I, v. 147–154, avec excipit."
+      },
+      {
+        "url": "https://www.philo5.com/Mes%20lectures/Boileau%2C%20L%27Art%20poetique.htm",
+        "sha256": "4c5c9f4c5be183c8bc93709fc3218879a1246de1d58ef247bb805bb1fa99a75c",
+        "repere": "Gallimard 1985, section « Pensée claire », pp. 230–231 ; pas de changement de page localisé dans la transcription."
+      },
+      {
+        "url": "https://s3.eu-west-3.amazonaws.com/nova-pur-production/upload/documents_1/26524b35-65c7-4494-85a5-4c9691586c78.pdf",
+        "sha256": "e5b4e4ddf8348a9f8d32379fdf5df83a776cdb9c952f9fe7fa02f584aa4c3952",
+        "repere": "A. Houplain et M. Bally, « Les arcs-en-ciel de l’obscurité », À tâtons, PUR, 2026, n. 32, p. 11–12 imprimées, p. 5–6 du PDF. Les auteurs citent le dernier vers et situent les vers 153–154 du chant I à la page 231 de Collinet, Gallimard, 1985."
+      }
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/deux-passages-des-stances.svg",
+      "question": "Corneille, Le Cid",
+      "legende": "Les deux billets du Cid portent sur les deux moitiés de la même scène de délibération."
+    }
+  ],
+  "reperes": [
+    {
+      "page_pdf": 1,
+      "rubrique": "Billet 1, texte 1",
+      "texte": "Corneille, Le Cid",
+      "bornes": "I, 6, p. 588, subdivisions 1–3 des stances selon la fiche. L’écriture manuscrite placée devant « 1–3 » n’indique pas un numéro de vers.",
+      "choix": "désigné",
+      "statut": "traité",
+      "point_controle": "Stances 1–3, v. 291–320 dans Marty-Laveaux, de la stupeur à la seconde question au fer.",
+      "source_relecture": "https://fr.wikisource.org/wiki/Le_Cid/%C3%89dition_Marty-Laveaux/Acte_I"
+    },
+    {
+      "page_pdf": 1,
+      "rubrique": "Billet 1, texte 2",
+      "texte": "Zola, Au Bonheur des Dames",
+      "bornes": "p. 159–160, de « Tenez-vous droite » à « murmura-t-il ».",
+      "choix": "autre proposition",
+      "statut": "traité",
+      "point_controle": "Les paroles de Mme Aurélie ouvrent la scène de l’essayage. Le murmure final sur la coiffure de Denise vient de Mouret.",
+      "source_relecture": "https://fr.wikisource.org/wiki/Au_bonheur_des_dames/Texte_entier"
+    },
+    {
+      "page_pdf": 1,
+      "rubrique": "Billet 2, texte 1",
+      "texte": "Du Bellay, Les Regrets",
+      "bornes": "sonnet XLVIII entier, p. 84.",
+      "choix": "autre proposition",
+      "statut": "traité",
+      "point_controle": "L’ordinal XLVIII, l’amorce du quatrain et la douleur muette qui achève le second tercet concordent.",
+      "source_relecture": "https://fr.wikisource.org/wiki/Les_Regrets_%28du_Bellay%29"
+    },
+    {
+      "page_pdf": 1,
+      "rubrique": "Billet 2, texte 2",
+      "texte": "Claude Simon, La Route des Flandres",
+      "bornes": "p. 9–10, de l’ouverture à « reconnu le papier ».",
+      "choix": "désigné",
+      "statut": "traité",
+      "point_controle": "La transcription de l’Association des lecteurs de Claude Simon donne les deux pages de Minuit et la reconnaissance du papier.",
+      "source_relecture": "https://www.associationclaudesimon.org/Traduction-tcheque-d-un-extrait-de-La-Route-des-Flandres.html"
+    },
+    {
+      "page_pdf": 1,
+      "rubrique": "Billet 3, texte 1",
+      "texte": "Rabelais, Gargantua",
+      "bornes": "prologue, p. 7–9, de « C’est pourquoi faut ouvrir » à « et vie économique ».",
+      "choix": "désigné",
+      "statut": "traité",
+      "point_controle": "Le prologue passe du livre à ouvrir au chien occupé à son os, puis à la religion, à l’état politique et à la vie économique.",
+      "source_relecture": "https://renom.univ-tours.fr/fr/index/corpus/francois-rabelais/gargantua-1542-version-modernisee/prologue-de-l-auteur"
+    },
+    {
+      "page_pdf": 1,
+      "rubrique": "Billet 3, texte 2",
+      "texte": "Éluard, Capitale de la douleur, « Paris pendant la guerre »",
+      "bornes": "p. 108, poème entier.",
+      "choix": "autre proposition",
+      "statut": "traité",
+      "point_controle": "Le poème entier va de la statue au monde délivré. Le passage au pluriel collectif relie le portrait au dernier mouvement.",
+      "source_relecture": "https://www.unjourunpoeme.fr/poeme/paris-pendant-la-guerre"
+    },
+    {
+      "page_pdf": 2,
+      "rubrique": "Billet 4, texte 1",
+      "texte": "Molière, L’Avare",
+      "bornes": "IV, VII, p. 302, scène entière.",
+      "choix": "désigné",
+      "statut": "traité",
+      "point_controle": "Monologue après le vol de la cassette, acte IV, scène VII, depuis l’entrée d’Harpagon jusqu’à la menace finale.",
+      "source_relecture": "https://fr.wikisource.org/wiki/L%E2%80%99Avare_%28Moli%C3%A8re%29/%C3%89dition_Louandre%2C_1910/Acte_IV"
+    },
+    {
+      "page_pdf": 2,
+      "rubrique": "Billet 4, texte 2",
+      "texte": "Hugo, Quatrevingt-treize",
+      "bornes": "II, 1 selon le billet, p. 161, de « Le premier » à « des papiers ».",
+      "choix": "autre proposition",
+      "statut": "traité",
+      "point_controle": "Les trois portraits vont jusqu’aux objets disposés devant Danton, Marat et Robespierre. L’édition consultée situe le portrait dans la deuxième partie, livre deuxième, chapitre premier.",
+      "source_relecture": "https://fr.wikisource.org/wiki/Quatre-vingt-treize_-_II%2C_2"
+    },
+    {
+      "page_pdf": 2,
+      "rubrique": "Billet 5, texte 1",
+      "texte": "Diderot, sur les tableaux de Vernet",
+      "bornes": "p. 226–227, de « Quelle immense variété » à « et reprend tous ses charmes ». Le billet porte Essais sur la peinture, « Vernet ». Le passage figure dans le Salon de 1763.",
+      "choix": "autre proposition",
+      "statut": "traité",
+      "point_controle": "La notice Vernet du Salon de 1763 donne les deux expressions du billet, l’orage puis le retour de la lumière.",
+      "source_relecture": "https://fr.wikisource.org/wiki/Salon_de_1763"
+    },
+    {
+      "page_pdf": 2,
+      "rubrique": "Billet 5, texte 2",
+      "texte": "Beckett, En attendant Godot",
+      "bornes": "p. 10–12, de « Peut-on savoir » à « Qui disait ça ? ».",
+      "choix": "désigné",
+      "statut": "traité",
+      "point_controle": "Le dialogue va de la question sur la nuit d’Estragon à l’interrogation de Vladimir sur l’auteur du mot cité.",
+      "source_relecture": "https://www.kartable.fr/ressources/francais/expose-type-bac/en-attendant-godot-debut-de-la-piece/17142"
+    },
+    {
+      "page_pdf": 2,
+      "rubrique": "Billet 6, texte 1",
+      "texte": "Mérimée, Chronique du règne de Charles IX",
+      "bornes": "chapitre VIII, p. 133–134, du début du chapitre à « n° 98 ».",
+      "choix": "autre proposition",
+      "statut": "traité",
+      "point_controle": "Le début du chapitre VIII développe le dialogue auteur-lecteur. La borne finale désigne le buste du musée d’Angoulême, deuxième salle, numéro 98.",
+      "source_relecture": "https://fr.wikisource.org/wiki/Chronique_du_r%C3%A8gne_de_Charles_IX"
+    },
+    {
+      "page_pdf": 2,
+      "rubrique": "Billet 6, texte 2",
+      "texte": "Marivaux, L’Île des esclaves",
+      "bornes": "scène III, p. 525–526, de « En quoi ? » à « En voilà assez pour à présent ».",
+      "choix": "désigné",
+      "statut": "traité",
+      "point_controle": "Scène III, portrait joué par Cléanthis. Le feuillet abrège la réplique de conclusion où Trivelin suspend l’exercice.",
+      "source_relecture": "https://www.theatralement.com/textes/pierre-de-marivaux-lile-des-esclaves.html"
+    },
+    {
+      "page_pdf": 3,
+      "rubrique": "Billet 7, texte 1",
+      "texte": "Boileau, L’Art poétique",
+      "bornes": "p. 230–231, v. 131–154 du chant I. Le billet donne les pages et les numéros de vers. Les deux bornes concordent avec l’édition de Jean-Pierre Collinet, Poésie/Gallimard, 1985.",
+      "choix": "autre proposition",
+      "statut": "traité",
+      "point_controle": "Les deux bornes du chant I, v. 131–154, sont attestées séparément p. 230 et 231 de Gallimard 1985. Les 24 vers sont expliqués en trois mouvements.",
+      "source_relecture": "https://fr.wikisource.org/wiki/Boileau_-_%C5%92uvres_po%C3%A9tiques/L%E2%80%99Art_po%C3%A9tique/Chant_I"
+    },
+    {
+      "page_pdf": 3,
+      "rubrique": "Billet 7, texte 2",
+      "texte": "Zola, La Curée",
+      "bornes": "p. 219–220, de « D’habitude, les amants » à « d’une Messaline géante ».",
+      "choix": "désigné",
+      "statut": "traité",
+      "point_controle": "Chapitre IV. La phrase initiale situe les rencontres dans la serre. La comparaison de la grande mauve avec les lèvres de Messaline clôt l’extrait.",
+      "source_relecture": "https://fr.wikisource.org/wiki/La_Cur%C3%A9e/IV"
+    },
+    {
+      "page_pdf": 3,
+      "rubrique": "Billet 8, texte 1",
+      "texte": "Corneille, Le Cid",
+      "bornes": "I, VI, p. 588–589, de « Il vaut mieux courir au trépas » à la fin de la scène.",
+      "choix": "autre proposition",
+      "statut": "traité",
+      "point_controle": "Stances 4–6, v. 321–350 dans Marty-Laveaux. L’adresse à l’âme puis au bras précède la décision finale.",
+      "source_relecture": "https://fr.wikisource.org/wiki/Le_Cid/%C3%89dition_Marty-Laveaux/Acte_I"
+    },
+    {
+      "page_pdf": 3,
+      "rubrique": "Billet 8, texte 2",
+      "texte": "Céline, Voyage au bout de la nuit",
+      "bornes": "p. 15–16, de « Ça a débuté comme ça » à « les dames du café ».",
+      "choix": "désigné",
+      "statut": "traité",
+      "point_controle": "L’incipit conduit d’Arthur Ganate au public du café, dernière expression du billet.",
+      "source_relecture": "https://bibliobabil.com/2019/02/03/temperature-et-incipit-voyage-au-bout-de-la-nuit-de-louis-ferdinand-celine-42/"
+    },
+    {
+      "page_pdf": 3,
+      "rubrique": "Billet 9, texte 1",
+      "texte": "Mme de Sévigné, Correspondance",
+      "bornes": "lettre 121, p. 139–140, du début à « sujet de discourir ».",
+      "choix": "désigné",
+      "statut": "traité",
+      "point_controle": "Lettre de décembre 1670. Les titres de la Grande Mademoiselle précèdent la formule finale qui rend la nouvelle à la conversation.",
+      "source_relecture": "https://fr.wikisource.org/wiki/Lettre_121%2C_1670_%28S%C3%A9vign%C3%A9%29"
+    },
+    {
+      "page_pdf": 3,
+      "rubrique": "Billet 9, texte 2",
+      "texte": "Chateaubriand, Mémoires d’outre-tombe",
+      "bornes": "Livre 42, chapitre 18, p. 606–608, de « Grâce à » à la fin du chapitre. La numérotation varie selon les éditions.",
+      "choix": "autre proposition",
+      "statut": "traité",
+      "point_controle": "Du bilan du mémorialiste à l’image finale du crucifix. Plusieurs éditions numérotent différemment la conclusion.",
+      "source_relecture": "https://chateaubriand-lenchanteur.fr/journal/conclusion-des-memoires/"
+    },
+    {
+      "page_pdf": 4,
+      "rubrique": "Billet 10, texte 1",
+      "texte": "Racine, Phèdre",
+      "bornes": "V, VI, vers 1498–1540, p. 899–900. Le feuillet donne le début « À peine nous sortions » et le repère « flanc poudreux ». Les éditions consultées donnent « leur flanc poudreux ».",
+      "choix": "autre proposition",
+      "statut": "traité",
+      "point_controle": "Le récit de Théramène s’arrête sur les chevaux. Le feuillet paraît écrire « son flanc poudreux », la leçon de comparaison est « leur flanc poudreux ».",
+      "source_relecture": "https://fr.wikisource.org/wiki/Ph%C3%A8dre_%28Racine%29%2C_Didot%2C_1854/Acte_V"
+    },
+    {
+      "page_pdf": 4,
+      "rubrique": "Billet 10, texte 2",
+      "texte": "Ponge, Le Parti pris des choses, « L’Orange »",
+      "bornes": "p. 41–42, repère donné par le billet.",
+      "choix": "désigné",
+      "statut": "traité",
+      "point_controle": "Le poème en prose va de l’éponge au pépin. La prononciation du mot et la saveur de la chose sont mises en regard.",
+      "source_relecture": "https://tiplanet.org/modules/archives/downloads2/1461671199/15a33d470dbd731a99972dfc37199e8e_sujet_epreuve_anticipee_francais_bac_s_pondichery_2016.pdf"
+    },
+    {
+      "page_pdf": 4,
+      "rubrique": "Billet 11, texte 1",
+      "texte": "Voltaire, Dictionnaire philosophique, « Torture »",
+      "bornes": "p. 369–370, de « Les Romains n’infligèrent » à « c’est dans le XVIIIᵉ ».",
+      "choix": "autre proposition",
+      "statut": "traité",
+      "point_controle": "Le mouvement daté par le billet passe de la comparaison historique à l’exemple du chevalier de La Barre, puis au siècle présent.",
+      "source_relecture": "https://inspe.u-pec.fr/medias/fichier/corpus-l-horreur-est-humaine-sujet-bac-blanc-2016_1697641575000-pdf?ID_FICHE=197195&INLINE=FALSE"
+    },
+    {
+      "page_pdf": 4,
+      "rubrique": "Billet 11, texte 2",
+      "texte": "Rimbaud, Poésies, « Le Dormeur du val »",
+      "bornes": "p. 53, sonnet entier.",
+      "choix": "déduit de la rature",
+      "statut": "traité",
+      "point_controle": "Les deux quatrains et les deux tercets sont couverts. La dernière couleur amène à relire les signes du sommeil.",
+      "source_relecture": "https://fr.wikisource.org/wiki/%C5%92uvres_%28Rimbaud%29/Po%C3%A9sies/Le_Dormeur_du_Val"
+    },
+    {
+      "page_pdf": 4,
+      "rubrique": "Billet 12, texte 1",
+      "texte": "Hugo, La Légende des siècles, « La Rose de l’Infante »",
+      "bornes": "p. 41–42, du début à « elle dédaigne ».",
+      "choix": "désigné",
+      "statut": "traité",
+      "point_controle": "La première section passe de l’enfant à sa qualité d’infante. La coupe intervient juste après le premier « elle dédaigne ».",
+      "source_relecture": "https://fr.wikisource.org/wiki/La_Rose_de_l%E2%80%99Infante"
+    },
+    {
+      "page_pdf": 4,
+      "rubrique": "Billet 12, texte 2",
+      "texte": "Laclos, Les Liaisons dangereuses",
+      "bornes": "lettre CXLI, p. 321–322, de « Tout ce que je peux faire » à « Ce n’est pas ma faute ».",
+      "choix": "autre proposition",
+      "statut": "traité",
+      "point_controle": "Lettre CXLI. À l’intérieur de la lettre de Merteuil à Valmont, distinguer le modèle à copier et le refrain adressé à la destinataire.",
+      "source_relecture": "https://fr.wikisource.org/wiki/Les_Liaisons_dangereuses/Texte_complet"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "objet": "Références publiées sur le feuillet officiel",
+    "questions_entierement_traitees": [
+      "Billet 1, texte 1 — Corneille, Le Cid",
+      "Billet 1, texte 2 — Zola, Au Bonheur des Dames",
+      "Billet 2, texte 1 — Du Bellay, Les Regrets",
+      "Billet 2, texte 2 — Claude Simon, La Route des Flandres",
+      "Billet 3, texte 1 — Rabelais, Gargantua",
+      "Billet 3, texte 2 — Éluard, Capitale de la douleur, « Paris pendant la guerre »",
+      "Billet 4, texte 1 — Molière, L’Avare",
+      "Billet 4, texte 2 — Hugo, Quatrevingt-treize",
+      "Billet 5, texte 1 — Diderot, sur les tableaux de Vernet",
+      "Billet 5, texte 2 — Beckett, En attendant Godot",
+      "Billet 6, texte 1 — Mérimée, Chronique du règne de Charles IX",
+      "Billet 6, texte 2 — Marivaux, L’Île des esclaves",
+      "Billet 7, texte 1 — Boileau, L’Art poétique",
+      "Billet 7, texte 2 — Zola, La Curée",
+      "Billet 8, texte 1 — Corneille, Le Cid",
+      "Billet 8, texte 2 — Céline, Voyage au bout de la nuit",
+      "Billet 9, texte 1 — Mme de Sévigné, Correspondance",
+      "Billet 9, texte 2 — Chateaubriand, Mémoires d’outre-tombe",
+      "Billet 10, texte 1 — Racine, Phèdre",
+      "Billet 10, texte 2 — Ponge, Le Parti pris des choses, « L’Orange »",
+      "Billet 11, texte 1 — Voltaire, Dictionnaire philosophique, « Torture »",
+      "Billet 11, texte 2 — Rimbaud, Poésies, « Le Dormeur du val »",
+      "Billet 12, texte 1 — Hugo, La Légende des siècles, « La Rose de l’Infante »",
+      "Billet 12, texte 2 — Laclos, Les Liaisons dangereuses"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "controle": [
+      "Les douze billets manuscrits proposent chacun deux textes. Les vingt-quatre passages sont expliqués. Les deux extraits du Cid se suivent dans la même scène. Les deux limites du passage de Boileau sont attestées dans la même édition.",
+      "Le numéro « billet » suit l’ordre vertical de la page puis l’ordre des pages."
+    ]
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_bl_2025_19_juin",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "24 commentaires, repères par feuillet, 24 relances argumentées dans le guidé et réalisation du schéma."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "francais_bl_2025_19_juin",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": false,
+      "perimetre": "Collation du fac-similé et des deux éditions, vérification des ratures ou des limites du tirage, comparaison avec les références de lecture et le rapport du jury."
+    },
+    {
+      "phase": "relecture",
+      "session": "francais_bl_2025_19_juin",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Commentaire suivi des v. 131–154 du chant I, trois mouvements et deux relances. Recoupement de la bibliographie avec le feuillet."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "francais_bl_2025_19_juin",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": false,
+      "perimetre": "Vérification sur le billet p. 3, la note 28, le support de l’UBC et la transcription paginée. La double page de la transcription ne localise pas le changement de page."
+    },
+    {
+      "phase": "relecture",
+      "session": "x_maths_b_anciennes",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Relecture des vingt-quatre passages dans les deux éditions, confrontation des quatre pages de billets aux œuvres et au rapport. Correction des commentaires de Corneille, Zola et Mérimée, de références de lecture et de la localisation du dernier vers de Boileau."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "x_maths_b_anciennes",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": false,
+      "perimetre": "Vérification de la répartition en douze paires et des choix. Contrôle visuel de la note 32 des Presses universitaires de Rennes et concordance avec la note de Tokyo. Vérification de la figure, des signets et des deux PDF."
+    }
+  ],
+  "tirages": 12
+}
