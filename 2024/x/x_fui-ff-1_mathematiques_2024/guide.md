@@ -2,7 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 On note $\tau_a f(x)=f(x+a)$ et $A(f)=\{\tau_a f:a\in\mathbb R\}$. Le sujet caractérise les fonctions presque périodiques par la précompacité de cette orbite pour la norme uniforme.
 
@@ -105,7 +107,7 @@ Si $A$ est précompact, 3b donne dans toute suite de $A$ une sous-suite de Cauch
 ### Question 8
 
 > [!INDICATION]
-> Ramener simultanément deux points voisins dans un même segment de longueur deux périodes.
+> Ramener simultanément deux points voisins dans le même segment compact en leur retranchant un même multiple de la période.
 
 #### Solution
 
@@ -182,7 +184,7 @@ Tout terme d’une suite de $A(f)$ s’écrit $\tau_{a_n}f$ pour au moins un $a_
 
 Partons d’une suite réelle $(a_n)$. Par 13, il existe une sous-suite sur laquelle $\tau_{a_n}f\to F$ uniformément. Extrayons encore pour obtenir $\tau_{a_n}g\to G$ uniformément avec les mêmes indices. Sur cette dernière sous-suite, les sommes convergent vers $F+G$. Pour les produits, écrivons
 $$\|(\tau_{a_n}f)(\tau_{a_n}g)-FG\|_\infty\le\|f\|_\infty\|\tau_{a_n}g-G\|_\infty+\|G\|_\infty\|\tau_{a_n}f-F\|_\infty.$$
-La droite tend vers zéro. Comme translation commute avec somme et produit, 13 donne la presque-périodicité de $f+g$ et de $fg$.
+Le membre de droite tend vers zéro. Comme translation commute avec somme et produit, 13 donne la presque-périodicité de $f+g$ et de $fg$.
 
 ### Question 15
 
@@ -274,5 +276,9 @@ Si $T>0$ est une période de $b$ et $a=-\delta$ est constant, $t\mapsto x(t+T)$ 
 Avec $u=t-s$, la solution s’écrit $x(t)=\int_0^\infty e^{-\delta u}b(t-u)\,du$. Ainsi pour tous $\alpha,\beta\in\mathbb R$,
 $$\|\tau_\alpha x-\tau_\beta x\|_\infty\le\delta^{-1}\|\tau_\alpha b-\tau_\beta b\|_\infty.$$
 Pour toute suite de paramètres, 13 fournit une sous-suite sur laquelle les translatées de $b$ convergent uniformément, donc sont de Cauchy. L’inégalité rend les translatées de $x$ de Cauchy sur les mêmes indices. Elles convergent dans $CB$ par complétude. Le critère 13 prouve que $x$ est presque périodique.
+
+Pour lire la figure, le forçage choisi est $b(t)=\sin t+0{,}55\sin(\sqrt2\,t)$ et $\delta=1{,}2$. À chaque terme $\sin(\omega t)$ correspond la réponse bornée
+$$x_\omega(t)=\frac{\delta\sin(\omega t)-\omega\cos(\omega t)}{\delta^2+\omega^2}.$$
+En effet, $x_\omega'+\delta x_\omega=\sin(\omega t)$. La courbe de la solution représente donc $x_1+0{,}55x_{\sqrt2}$.
 
 ![Figure 2 — Avec δ = 1,2, chaque fréquence du forçage donne une oscillation atténuée et déphasée. Les deux fréquences restent présentes dans la solution bornée.](figures/q22-reponse.svg)
