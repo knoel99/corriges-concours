@@ -6,7 +6,11 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le jury publie 11 billets pour le 17 juin. Pour chacun, le premier intitulé est celui qui a été choisi. Le second était proposé au choix. Les deux reçoivent ici des réponses distinctes. Les exemples et arguments proposés servent à préparer une leçon personnelle.
+
+Le billet porte deux sujets à lire devant le jury. Vous choisissez pendant les 90 minutes de préparation et annoncez votre choix au début des 20 minutes d’exposé. L’entretien dure ensuite 10 minutes. L’épreuve est de coefficient 3. Seul un dictionnaire de langue française est autorisé, à l’exclusion des dictionnaires de noms propres.
 
 ## 1. Y a-t-il des progrès en art ?
 
@@ -122,4 +126,4 @@ Une nouvelle archive peut établir qu’un fait invoqué depuis longtemps n’a 
 
 ![Où l’utilisateur de la canne sent-il l’obstacle ?](figures/corps.svg)
 
-[Feuille officielle du 17 juin](https://www.ens.psl.eu/sites/default/files/philosophie_tronc_commun_1.pdf) · [Rapport du jury, modalités et annexe des sujets](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf)
+[Index officiel, lien du 17 juin](https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-al) · [Feuille officielle du 17 juin](https://www.ens.psl.eu/sites/default/files/philosophie_tronc_commun_1.pdf) · [Rapport du jury, modalités et annexe des sujets](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf)
