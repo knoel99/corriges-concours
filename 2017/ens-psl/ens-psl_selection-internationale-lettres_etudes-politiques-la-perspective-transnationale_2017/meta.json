@@ -1,0 +1,76 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_etudes-politiques-la-perspective-transnationale_2017",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Études politiques — la perspective transnationale",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "Commentaire de Blaise Wilfert-Portal et discussion des objets et apports d’une perspective transnationale en science politique.",
+  "gabarit": "dissertation",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/et.politique-ecrit-si17.pdf",
+    "sujet_sha256": "b9d1f375e4b75dfbd1e5e262ccbfd0a55e00285b5f2c2d3d3b3cd76a545d1f00",
+    "index": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2017-lettres-0",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.ens.psl.eu/sites/default/files/et.politique-ecrit-si17.pdf",
+        "sha256": "b9d1f375e4b75dfbd1e5e262ccbfd0a55e00285b5f2c2d3d3b3cd76a545d1f00",
+        "pages": 1
+      },
+      {
+        "role": "attentes générales du jury",
+        "url": "https://www.ens.psl.eu/sites/default/files/qqs-attentes-jury-pageweb.pdf",
+        "sha256": "85a7f1b02fb26a186a71b820afe3bb118cd2320fc5cfbf5dcf78456c4c56c049",
+        "pages": 4
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/comparer-et-relier.svg",
+      "question": "Commentaire de l’extrait",
+      "legende": "Comparaison et suivi des connexions produisent des informations complémentaires."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/circulation-et-frontiere.svg",
+      "question": "Commentaire de l’extrait",
+      "legende": "Suivre un déplacement fait apparaître des règles, des actes de classement et leurs effets durables."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "sociologie_psl_oraux_individuels",
+      "agent": "sociologie_psl_oraux_individuels",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire de Blaise Wilfert-Portal et discussion des objets et apports d’une perspective transnationale en science politique. Vérification des éléments de la consigne, des deux éditions et de leurs schémas."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire de l’extrait",
+      "Apports de la perspective transnationale",
+      "Objets et méthode en science politique"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "limites": "Les attentes générales du jury figurent sur l’index de la session. Cet index ne fournit pas de rapport particulier à ce sujet."
+  }
+}
