@@ -1,0 +1,69 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_geographie-les-changements-environnementaux-en-afrique-subsaharienne-oral_2023",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Géographie — les changements environnementaux en Afrique subsaharienne (oral)",
+    "annee": 2023,
+    "modalite": "oral"
+  },
+  "intitule": "Ce qu’un cas nigérien apporte à l’étude des changements environnementaux globaux",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://web.archive.org/web/20251028135654id_/https://www.ens.psl.eu/sites/default/files/consignes-oral-sil2023.pdf",
+    "sujet_sha256": "e0680312f672ab5fdbf5e5b3621fa8039c832ce365f12eb35b89da4cfe6e36bf",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://web.archive.org/web/20251028135654id_/https://www.ens.psl.eu/sites/default/files/consignes-oral-sil2023.pdf",
+        "url_ens": "https://www.ens.psl.eu/sites/default/files/consignes-oral-sil2023.pdf",
+        "sha256": "e0680312f672ab5fdbf5e5b3621fa8039c832ce365f12eb35b89da4cfe6e36bf",
+        "pages": 1
+      }
+    ],
+    "precision_sujet": "Une feuille, une question et une durée imposée de dix minutes. Le pays et le cas sont laissés au choix. L’exemple sur le Niger et ses trois références sont apportés par le corrigé.",
+    "references_du_corrige": [
+      "https://www.usgs.gov/publications/farmer-managed-restoration-agroforestry-parklands-niger",
+      "https://pubs.usgs.gov/publication/70249332",
+      "https://www.agrimaroc.org/index.php/Actes_IAVH2/article/view/911"
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/observer-le-reverdissement.svg",
+      "question": "Exposé de synthèse",
+      "legende": "Trois observations pour interpréter le reverdissement des champs du Niger méridional"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "classiques_2017",
+      "agent": "classiques_2017",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture du feuillet officiel et confrontation de trois études antérieures à 2023. Rédaction de l’exposé et de son guide sur le Niger, schéma méthodologique et vérification de la consigne unique."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Question unique — apports d’un cas national à l’étude des changements environnementaux globaux"
+    ],
+    "elements_verifies": [
+      "Exposé de dix minutes sur l’apport d’une étude de cas portant sur un pays d’Afrique subsaharienne.",
+      "Cas choisi du Niger, régions de Maradi et Zinder et observations dans deux terroirs de Maradi. Mécanismes, jeux d’échelles, niveaux de preuve et limites de la généralisation."
+    ]
+  }
+}
