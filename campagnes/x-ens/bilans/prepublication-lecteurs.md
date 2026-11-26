@@ -1,8 +1,8 @@
 # Essai local de publication des corrigés
 
-Le 26/11/2026 à 16 h 17 UTC, les 1958 paires signées de la révision `50aa6a9b` ont fourni les deux textes attendus et leurs signatures dans le service de lecture du site. Le journal de chaque fiche renvoie au bon dossier GitHub, reprend les interventions qualifiantes et indique le caractère partiel quand il est déclaré. [Résultats par épreuve](prepublication-lecteurs.tsv) · [Version des corrigés](https://github.com/knoel99/corriges-concours/tree/50aa6a9b8c090a55e50902135e3dbcf6b04342c3) · [Version du site](https://github.com/knoel99/prepa/tree/94f41c20439f8ea4d936ba4b0cfc74c668438694)
+Le 26/11/2026 à 16 h 36 UTC, les 1973 paires signées de la révision `41daf9bd` ont fourni les deux textes attendus et leurs signatures dans le service de lecture du site. Le journal de chaque fiche renvoie au bon dossier GitHub, reprend les interventions qualifiantes et indique le caractère partiel quand il est déclaré. [Résultats par épreuve](pdf-informatique-option-mp-1998-2010.tsv) · [Version des corrigés](https://github.com/knoel99/corriges-concours/tree/41daf9bdb830bb7bb4bef0628a60915692a75401) · [Version du site](https://github.com/knoel99/prepa/tree/94f41c20439f8ea4d936ba4b0cfc74c668438694)
 
-Le contrôle couvre 2431 fiches de filière pour 1958 épreuves signées. Les épreuves communes sont aussi vérifiées sous chaque filière de leur notice éditoriale. [Contrôles des 473 fiches supplémentaires](prepublication-lecteurs-autres-filieres.tsv)
+Le contrôle couvre 2446 fiches de filière pour 1973 épreuves signées. Les épreuves communes sont aussi vérifiées sous chaque filière de leur notice éditoriale. [Contrôles des 473 fiches supplémentaires](prepublication-lecteurs-autres-filieres.tsv)
 
 L’essai utilise une base SQLite temporaire et les fichiers locaux des révisions Git. La conversion du dépôt public et le plan de publication du site produisent les clés du stockage. La synchronisation charge d’abord le contenu de `54fe93cd`, puis celui de la branche de travail. Pour chaque édition, le service qui alimente le lecteur doit restituer exactement le Markdown attendu après la réécriture des chemins d’illustrations. Le contrôle vérifie aussi la présence de chaque SVG référencé. Si une édition ne référence aucun SVG, la colonne de disponibilité est positive et le classeur des épreuves indique zéro illustration pour cette édition.
 
@@ -52,11 +52,15 @@ Les huit options de langues vivantes B/L de 2025 ont été confrontées à leurs
 
 Les deux épreuves de mathématiques approfondies BCE 2026 et les mathématiques D ENS 2023 totalisent 137 questions et sous-questions. Les six PDF ont été vérifiés sur leurs 100 pages. [Révisions, pagination et empreintes](pdf-bce-approfondies-2026-et-maths-d-2023.tsv)
 
-Les 126 PDF de mathématiques, de physique et de sociologie rassemblés dans ce relevé totalisent 960 pages. Les empreintes des PDF et de leurs archives correspondent aux éditions signées. [Preuves par épreuve et par édition](pdf-maths-physique-et-sociologie-2026-11-26.tsv)
+Les 190 PDF rassemblés dans ce relevé totalisent 1602 pages. Les empreintes des PDF et de leurs archives correspondent aux éditions signées. [Preuves par épreuve et par édition](pdf-maths-physique-et-sociologie-2026-11-26.tsv)
 
 Les 166 questions des quinze épreuves d’informatique PSI–PT de 2002 à 2016 ont été repérées à la fois dans le sujet et dans chacune des deux éditions. Les trente PDF comptent 168 pages, 332 signets de question vérifiés sur leur page et 90 insertions de schémas. [Révisions et empreintes](pdf-informatique-psi-pt-166-questions.tsv)
 
 Pour l’informatique B MP–PC de 2011 à 2016 et l’informatique C MPI de 2023 à 2025, les 180 questions ont été rapprochées du sujet, du journal éditorial et des deux réponses. Les programmes des deux éditions ont été exécutés à nouveau. Les 18 PDF signés totalisent 140 pages et 360 signets de question contrôlés. [Informatique B](pdf-informatique-b-mp-pc-82-questions.tsv) · [Informatique C](pdf-informatique-c-mpi-98-questions.tsv)
+
+Pour les cinq épreuves d’informatique B de 2017, 2019, 2021, 2022 et 2023, les 10 PDF signés totalisent 73 pages et 164 signets de questions vérifiés à destination. [Empreintes et arbres Git](pdf-informatique-b-mp-pc-psi-82-questions.tsv)
+
+Pour les options d’informatique MP de 1998 et 2010, les 4 PDF signés totalisent 29 pages et 52 signets de questions vérifiés à destination. [Empreintes et arbres Git](pdf-informatique-option-mp-1998-2010.tsv)
 
 Le 25 novembre 2026, les deux lecteurs et les quatre téléchargements ont aussi été vérifiés sur les 134 fiches de filière de 45 épreuves communes déjà en production à la révision `54fe93cd`. [Adresses et empreintes des fichiers](production-filieres-54fe93cd.tsv)
 
