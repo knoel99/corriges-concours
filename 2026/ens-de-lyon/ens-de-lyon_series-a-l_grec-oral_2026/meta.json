@@ -1,0 +1,314 @@
+{
+  "slug": "ens-de-lyon_series-a-l_grec-oral_2026",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries A/L",
+    "matiere": "Grec (oral)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Médée, le Banquet et treize tirages hors programme sur l’amour et l’amitié",
+  "questions": 25,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Euripide, Médée, 1–23",
+      "Euripide, Médée, 235–258",
+      "Euripide, Médée, 292–315",
+      "Euripide, Médée, 475–498",
+      "Euripide, Médée, 869–893",
+      "Euripide, Médée, 1029–1052",
+      "Euripide, Médée, 1197–1221",
+      "Platon, Le Banquet, 198a–d",
+      "Platon, Le Banquet, 199b–e",
+      "Platon, Le Banquet, 200e–201c",
+      "Platon, Le Banquet, 212d–213b",
+      "Platon, Le Banquet, 213b–e",
+      "Aristophane, L’Assemblée des femmes, 952–968",
+      "Julien, Épître 41",
+      "Lucien, Dialogues des hétaïres, II, 1",
+      "Lucien, La Double Accusation, 31",
+      "Plutarque, Vie d’Alcibiade, 6, 1–2",
+      "Xénophon, Banquet, IX, 3–5",
+      "Xénophon, Cyropédie, VI, 4, 5–7",
+      "Xénophon, Mémorables, II, 4, 1–2",
+      "Julien, Épître 78",
+      "Lucien, Timon, 8",
+      "Plutarque, Vie d’Alcibiade, 8, 4–6",
+      "Xénophon, Mémorables, II, 4, 5–6",
+      "Plutarque, Vie d’Alcibiade, 7, 3–6"
+    ],
+    "precision": "Les 25 passages des pages 2–4 de la liste officielle ont été collationnés avec les éditions grecques. Le rapport indique les divisions des textes de spécialité page 8 et les premiers et derniers mots des treize hors programme pages 11–12. Les deux éditions proposent une traduction et un commentaire pour chaque billet. Le vers 246 de Médée, marqué comme suspect dans l’édition, est traité selon la consigne des pages 5–6 du rapport."
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-11/Grec%202026_0.pdf",
+    "sujet_sha256": "a282a7b15fef1d8c8e533c00f58ef7346dbd09d4456ebe83c95ebe9deeb6b0e7",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-11/Grec%202026.pdf",
+    "rapport_sha256": "ca41d85c1286b1f06d0f316a7336a601d533ecd56cc8d961a08cfaaadd41ecb2",
+    "pages_sujet": "liste, p. 2–4, rapport, p. 5–8 et 11–12",
+    "textes_grecs": [
+      {
+        "id": "med",
+        "oeuvre": "Euripide, Médée",
+        "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0006/tlg003/tlg0006.tlg003.perseus-grc2.xml",
+        "sha256": "089f052d8c683474f8a68172e204ac1bd518304616cebe4962c5674f563681ab"
+      },
+      {
+        "id": "alc",
+        "oeuvre": "Plutarque, Vie d’Alcibiade",
+        "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0007/tlg015/tlg0007.tlg015.perseus-grc2.xml",
+        "sha256": "fa22d7a25e37c15e9c1a9639b3cbc2420639b957f5fe5f43559ad0cd2adeaa21"
+      },
+      {
+        "id": "assembl",
+        "oeuvre": "Aristophane, L’Assemblée des femmes",
+        "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0019/tlg010/tlg0019.tlg010.perseus-grc2.xml",
+        "sha256": "a0e266c8ca068292193969d20f6f828c64aeee76af574d4c2ceb4e40f3fccf0e"
+      },
+      {
+        "id": "mem",
+        "oeuvre": "Xénophon, Mémorables",
+        "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0032/tlg002/tlg0032.tlg002.perseus-grc2.xml",
+        "sha256": "5d5a5e35f223b08bfc8e35b0ba6322422d73c04c30ee2072f6d12dad62dc2f96"
+      },
+      {
+        "id": "xenb",
+        "oeuvre": "Xénophon, Banquet",
+        "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0032/tlg004/tlg0032.tlg004.perseus-grc2.xml",
+        "sha256": "2d2e0c55fb42793fdf1c9013909e0017fe746eaaa82f42d12c138c9fca7085da"
+      },
+      {
+        "id": "cyr",
+        "oeuvre": "Xénophon, Cyropédie",
+        "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0032/tlg007/tlg0032.tlg007.perseus-grc2.xml",
+        "sha256": "2bb8735ec3cc3083d329d9b0c98bfbb1353cc23c5e3bdca2ce63714de080fa37"
+      },
+      {
+        "id": "ban",
+        "oeuvre": "Platon, Le Banquet",
+        "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0059/tlg011/tlg0059.tlg011.perseus-grc2.xml",
+        "sha256": "02c018b6833b6c3536851ce4c8dd2d3030246586b5abdf47ef5d9ecbdd393838"
+      },
+      {
+        "id": "tim",
+        "oeuvre": "Lucien, Timon",
+        "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0062/tlg022/tlg0062.tlg022.perseus-grc2.xml",
+        "sha256": "9806b9dd291e8fdb6f822bca9fcebf89d04b22ae7493116e98b4018b2e08298d"
+      },
+      {
+        "id": "double",
+        "oeuvre": "Lucien, La Double Accusation",
+        "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0062/tlg026/tlg0062.tlg026.perseus-grc2.xml",
+        "sha256": "9927aa1ca37f30824fa8801cfb4742dd26987145e4288f48ea6b97d11654789e"
+      },
+      {
+        "id": "cour",
+        "oeuvre": "Lucien, Dialogues des hétaïres",
+        "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0062/tlg069/tlg0062.tlg069.perseus-grc2.xml",
+        "sha256": "72054fec6bf75d999a5dc354e1a7d49459db38b58ac849aab411bd6d9027164c"
+      },
+      {
+        "id": "jul",
+        "oeuvre": "Julien, Lettres",
+        "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg2003/tlg013/tlg2003.tlg013.perseus-grc2.xml",
+        "sha256": "4dc57655b3d31083c00147d114c23373341b75604e6cb8d8689d917e0787306a"
+      }
+    ],
+    "bornes_collationnees": [
+      {
+        "passage": "Euripide, Médée, 1–23",
+        "edition": "med",
+        "incipit": "Εἴθ’ ὤφελ’ Ἀργοῦς μὴ",
+        "explicit": "ἀμοιβῆς ἐξ Ἰάσονος κυρεῖ."
+      },
+      {
+        "passage": "Euripide, Médée, 235–258",
+        "edition": "med",
+        "incipit": "κἀν τῷδ’ ἀγὼν μέγιστος,",
+        "explicit": "μεθορμίσασθαι τῆσδ’ ἔχουσα συμφορᾶς."
+      },
+      {
+        "passage": "Euripide, Médée, 292–315",
+        "edition": "med",
+        "incipit": "φεῦ φεῦ. οὐ νῦν",
+        "explicit": "ἠδικημένοι σιγησόμεσθα, κρεισσόνων νικώμενοι."
+      },
+      {
+        "passage": "Euripide, Médée, 475–498",
+        "edition": "med",
+        "incipit": "ἐκ τῶν δὲ πρώτων",
+        "explicit": "ἀνδρός, ἐλπίδων δ’ ἡμάρτομεν."
+      },
+      {
+        "passage": "Euripide, Médée, 869–893",
+        "edition": "med",
+        "incipit": "Ἰᾶσον, αἰτοῦμαί σε τῶν",
+        "explicit": "ἄμεινον νῦν βεβούλευμαι τάδε·"
+      },
+      {
+        "passage": "Euripide, Médée, 1029–1052",
+        "edition": "med",
+        "incipit": "ἄλλως ἄρ’ ὑμᾶς, ὦ",
+        "explicit": "προσέσθαι μαλθακοὺς λόγους φρενί."
+      },
+      {
+        "passage": "Euripide, Médée, 1197–1221",
+        "edition": "med",
+        "incipit": "οὔτ’ ὀμμάτων γὰρ δῆλος",
+        "explicit": "πέλας, ποθεινὴ δακρύοισι συμφορά."
+      },
+      {
+        "passage": "Platon, Le Banquet, 198a–d",
+        "edition": "ban",
+        "incipit": "εἰπόντος δὲ τοῦ Ἀγάθωνος",
+        "explicit": "ὡς ἔδει ἐγκωμιάζειν ὁτιοῦν"
+      },
+      {
+        "passage": "Platon, Le Banquet, 199b–e",
+        "edition": "ban",
+        "incipit": "τὸν οὖν Φαῖδρον ἔφη",
+        "explicit": "πάνυ μὲν οὖν ἔστιν"
+      },
+      {
+        "passage": "Platon, Le Banquet, 200e–201c",
+        "edition": "ban",
+        "incipit": "ἴθι δή, φάναι τὸν",
+        "explicit": "Σωκράτει γε οὐδὲν χαλεπόν"
+      },
+      {
+        "passage": "Platon, Le Banquet, 212d–213b",
+        "edition": "ban",
+        "incipit": "καὶ οὐ πολὺ ὕστερον",
+        "explicit": "ἵνα ἐκ τρίτων κατακέηται"
+      },
+      {
+        "passage": "Platon, Le Banquet, 213b–e",
+        "edition": "ban",
+        "incipit": "πάνυ γε, εἰπεῖν τὸν",
+        "explicit": "τὸν Σωκράτη καὶ κατακλίνεσθαι"
+      },
+      {
+        "passage": "Aristophane, L’Assemblée des femmes, 952–968",
+        "edition": "assembl",
+        "incipit": "δεῦρο δὴ δεῦρο δή,",
+        "explicit": "εὐνὴν τὴν ἐμὴν ἱκέσθαι."
+      },
+      {
+        "passage": "Julien, Épître 41",
+        "edition": "jul",
+        "incipit": "Ἡσιόδῳ μὲν δοκεῖ τῷ",
+        "explicit": "καὶ τὸν Ἐνόδιον παρακεκλήκαμεν"
+      },
+      {
+        "passage": "Lucien, Dialogues des hétaïres, II, 1",
+        "edition": "cour",
+        "incipit": "γαμεῖς, ὦ Πάμφιλε, τὴν",
+        "explicit": "τὴν ἀθλίαν αὐτοῦ μητέρα"
+      },
+      {
+        "passage": "Lucien, La Double Accusation, 31",
+        "edition": "double",
+        "incipit": "ἐγὼ γὰρ ὁρῶν ταύτην",
+        "explicit": "καὶ ἐμοιχεύετο πρὸς αὐτῶν"
+      },
+      {
+        "passage": "Plutarque, Vie d’Alcibiade, 6, 1–2",
+        "edition": "alc",
+        "incipit": "ὁ δὲ Σωκράτους ἔρως",
+        "explicit": "καὶ πρὸς ἡδονὰς ἀγώγιμος"
+      },
+      {
+        "passage": "Xénophon, Banquet, IX, 3–5",
+        "edition": "xenb",
+        "incipit": "πρῶτον μὲν ἡ Ἀριάδνη",
+        "explicit": "ἀλλήλους σχήματα παρῆν θεάσασθαι"
+      },
+      {
+        "passage": "Xénophon, Cyropédie, VI, 4, 5–7",
+        "edition": "cyr",
+        "incipit": "ἀλλʼ ὅτι μέν, ὦ",
+        "explicit": "ἐλευθέραν ἐν ἀτίμῳ ὀνόματι"
+      },
+      {
+        "passage": "Xénophon, Mémorables, II, 4, 1–2",
+        "edition": "mem",
+        "incipit": "ἤκουσα δέ ποτε αὐτοῦ",
+        "explicit": "οἱ ὄντες αὐτοῖς σῴζωνται"
+      },
+      {
+        "passage": "Julien, Épître 78",
+        "edition": "jul",
+        "incipit": "ἀπορήσει τις ἐνταῦθα, πῶς",
+        "explicit": "ἐν Καππαδόκαις καθαρῶς Ἕλληνα"
+      },
+      {
+        "passage": "Lucien, Timon, 8",
+        "edition": "tim",
+        "incipit": "οὑτωσὶ μὲν εἰπεῖν, χρηστότης",
+        "explicit": "ἐπιδιδόντες ἐν τῷ μέρει"
+      },
+      {
+        "passage": "Plutarque, Vie d’Alcibiade, 8, 4–6",
+        "edition": "alc",
+        "incipit": "εὔτακτος δʼ οὖσα καὶ",
+        "explicit": "παράνομος οὐδʼ ἀπάνθρωπος εἶναι"
+      },
+      {
+        "passage": "Xénophon, Mémorables, II, 4, 5–6",
+        "edition": "mem",
+        "incipit": "καίτοι πρὸς ποῖον κτῆμα",
+        "explicit": "σφαλλομένους δὲ πλεῖστα ἐπανορθῶν"
+      },
+      {
+        "passage": "Plutarque, Vie d’Alcibiade, 7, 3–6",
+        "edition": "alc",
+        "incipit": "ἔτι δὲ μειράκιον ὢν",
+        "explicit": "ἀλλὰ παρέπεμψε καὶ περιήμυνεν"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Médée",
+      "fichier": "figures/parole.svg",
+      "legende": "Médée présente différemment ses intérêts selon ce qu’elle attend du chœur, du roi ou de Jason."
+    },
+    {
+      "numero": 2,
+      "question": "Le Banquet de Platon",
+      "fichier": "figures/eros.svg",
+      "legende": "Les questions de Socrate font tirer à Agathon la conséquence d’une définition relationnelle du désir."
+    },
+    {
+      "numero": 3,
+      "question": "Banquet de Xénophon",
+      "fichier": "figures/spectacle.svg",
+      "legende": "Dans le Banquet de Xénophon, le passage du son aux gestes suscite une réponse collective."
+    },
+    {
+      "numero": 4,
+      "question": "Timon, Mémorables et Vie d’Alcibiade",
+      "fichier": "figures/amis.svg",
+      "legende": "La fin d’un repas, un besoin domestique et une retraite militaire mettent les amis à l’épreuve."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "fin_langues_x_interens",
+      "session": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Collation de 25 billets avec 11 textes grecs et le rapport du jury. Traductions et commentaires originaux, accompagnement syntaxique de chaque tirage, deux relances et quatre schémas.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}
