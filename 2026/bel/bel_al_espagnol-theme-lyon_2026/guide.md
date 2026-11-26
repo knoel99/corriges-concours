@@ -4,7 +4,7 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 Le sujet de spécialité de Lyon donne quatre heures, sans dictionnaire, pour traduire en espagnol les quatre paragraphes de Pierre Lemaitre à la page 14. Édouard observe Albert au retour d’un rendez-vous avant de décider de lui parler d’un projet encore inachevé.
 
