@@ -596,6 +596,23 @@
       "modifications": true,
       "phase": "redaction",
       "perimetre": "Résolution des 53 questions et rédaction des indications des deux éditions après lecture du sujet, du cahier et du rapport du jury."
+    },
+    {
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "session": "banque_pt_si_a_2018",
+      "modifications": true,
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "perimetre": "Vérification des phases de la démonstration, du frein, des couples et de la chaîne électromécanique ; comparaison des tracés et des seuils au cahier des charges."
     }
-  ]
+  ],
+  "date_revision": "2026-11-26"
 }

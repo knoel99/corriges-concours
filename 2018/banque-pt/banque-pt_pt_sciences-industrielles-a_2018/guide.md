@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Vitrine sécurisée.** Épreuve de cinq heures, calculatrice interdite. Le sujet et le rapport du jury présentent quatre parties numérotées, soit 53 questions. Les extraits de catalogues et les grilles figurent dans le sujet et son cahier de réponses.
 
 [Sujet et cahier officiels](https://www.banquept.fr/documents/2018/si_a_2018_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2018/rapport_si_a_ecrit_2018.pdf)
@@ -472,7 +474,7 @@ Pour un zéro du compteur à l’origine, $\theta[k]=k_\theta n[k]$, $k_\theta=2
 
 #### Solution
 
-La réponse est monotone à la résolution du tracé et se stabilise à 100 rad/s. L’erreur statique est donc nulle et le dépassement aussi. Le niveau 95 rad/s est atteint vers 10 ms ; le résultat est à la limite de l’exigence. Une lecture plus fine est donnée sur le tracé corrigé.
+La réponse est monotone à la résolution du tracé et se stabilise à 100 rad/s. L’erreur statique est donc nulle et le dépassement aussi. Le niveau 95 rad/s est atteint vers 10 ms ; le résultat est à la limite de l’exigence.  La lecture des graduations du PDF donne environ 10,2 ms pour le passage à 95 %. La contrainte stricte de 10 ms ne peut donc pas être déclarée acquise par cette simulation.
 
 ![Lecture de la bande à 5 % sur la réponse en vitesse](figures/vitesse.svg)
 
