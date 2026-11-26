@@ -1,0 +1,177 @@
+{
+  "slug": "x_ta_premiere-epreuve-de-mathematiques_1986",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "TA",
+    "annee": 1986,
+    "matiere": "Première épreuve de mathématiques",
+    "modalite": "écrit"
+  },
+  "intitule": "Première épreuve de mathématiques · concours commun Mines-Ponts · X option T.A.",
+  "questions": 15,
+  "duree_heures": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-699d5241caba6508188d",
+    "sujet_sha256": "893c395ac0f9bfe070be30a720c3e0855996866a535a38a96d8d2b0ec536417e",
+    "notice_ups": "m86mi1",
+    "notice_officielle": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000330227",
+    "precisions": "Le bandeau des écoles donne « École polytechnique (option T.A.) ». L’épreuve est commune aux options M, P′ et T.A. du concours commun. Pour l’X, seul le recrutement T.A. est mentionné dans la liste des écoles."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-699d5241caba6508188d",
+      "sha256": "893c395ac0f9bfe070be30a720c3e0855996866a535a38a96d8d2b0ec536417e",
+      "pages": 2,
+      "rendu_page_sha256": [
+        "ddffa9e54ce9a455eddf56fdb24b1f72e28e69c6e1a9278d552d7c90fe8ad6b0",
+        "07cb9a32b8880e9f6e3518fa5a5c8c5db3b70c4e3afe8badbcf69e0e695d1d8e"
+      ]
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "x_ta_mathematiques_1_1985_1987",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Deux éditions complètes, 15 questions et sous-questions, indications et deux figures."
+    },
+    {
+      "phase": "revision",
+      "session": "x_ta_mathematiques_1_1985_1987",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Contrôle des cas de prolongement, de la division euclidienne, des moments, des limites et des cinq graphes."
+    }
+  ],
+  "figures": [
+    {
+      "question": "4.c",
+      "numero": 1,
+      "fichier": "figures/singularite-amovible.svg",
+      "legende": "Figure 1 — Pour n égal à 2 et x égal à la racine carrée de 2, le point évidé possède une limite finie. Son ordonnée est −2."
+    },
+    {
+      "question": "5.d",
+      "numero": 2,
+      "fichier": "figures/cinq-integrales.svg",
+      "legende": "Figure 2 — Les cinq courbes sont tracées dans le même repère. Les indices pairs donnent des courbes symétriques par rapport à l’axe vertical."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.a",
+      "1.b",
+      "2.a",
+      "2.b",
+      "2.c",
+      "3.a",
+      "3.b",
+      "3.c",
+      "4.a",
+      "4.b",
+      "4.c",
+      "5.a",
+      "5.b",
+      "5.c",
+      "5.d"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1.a",
+        "page_pdf": 1,
+        "page_imprimee": 71
+      },
+      {
+        "question": "1.b",
+        "page_pdf": 1,
+        "page_imprimee": 71
+      },
+      {
+        "question": "2.a",
+        "page_pdf": 1,
+        "page_imprimee": 71
+      },
+      {
+        "question": "2.b",
+        "page_pdf": 1,
+        "page_imprimee": 71
+      },
+      {
+        "question": "2.c",
+        "page_pdf": 1,
+        "page_imprimee": 71
+      },
+      {
+        "question": "3.a",
+        "page_pdf": 1,
+        "page_imprimee": 71
+      },
+      {
+        "question": "3.b",
+        "page_pdf": 1,
+        "page_imprimee": 71
+      },
+      {
+        "question": "3.c",
+        "page_pdf": 1,
+        "page_imprimee": 71
+      },
+      {
+        "question": "4.a",
+        "page_pdf": 2,
+        "page_imprimee": 72
+      },
+      {
+        "question": "4.b",
+        "page_pdf": 2,
+        "page_imprimee": 72
+      },
+      {
+        "question": "4.c",
+        "page_pdf": 2,
+        "page_imprimee": 72
+      },
+      {
+        "question": "5.a",
+        "page_pdf": 2,
+        "page_imprimee": 72
+      },
+      {
+        "question": "5.b",
+        "page_pdf": 2,
+        "page_imprimee": 72
+      },
+      {
+        "question": "5.c",
+        "page_pdf": 2,
+        "page_imprimee": 72
+      },
+      {
+        "question": "5.d",
+        "page_pdf": 2,
+        "page_imprimee": 72
+      }
+    ]
+  }
+}
