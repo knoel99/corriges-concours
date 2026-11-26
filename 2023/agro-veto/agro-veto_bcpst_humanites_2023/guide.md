@@ -8,7 +8,21 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La dissertation de trois heures porte sur cinq vers de Joseph Ponthus dans À la ligne et les trois œuvres du programme sur le travail.
+
+## Sujet
+
+« La servitude est volontaire  
+Presque heureuse  
+L’usine m’a eu  
+Je n’en parle plus qu’en disant  
+Mon usine »
+
+Joseph Ponthus, *À la ligne*, Paris, 2019.
+
+Dans quelle mesure ces vers vous conduisent-ils à approfondir votre réflexion sur l’expérience du travail, telle que les trois œuvres au programme, Les Géorgiques de Virgile, La Condition ouvrière de Simone Weil et Par-dessus bord de Michel Vinaver, permettent de la penser ?
 
 ## Construire un problème à partir des cinq vers
 
@@ -17,6 +31,8 @@ Commencez par tracer deux flèches. Dans « l’usine m’a eu », l’usine occ
 **Mettre à l’épreuve une première lecture.** Reprenez la scène de la retraite de Madame Bachevski. Les remerciements ne suffisent ni à garantir que ce départ était son choix ni à démontrer que son attachement a toujours été feint. Il faut lire ensemble la situation, les mots et leur enchaînement. Demandez ensuite si le paysan de Virgile dépend de sa terre comme l’ouvrière de Weil dépend de sa cadence. La comparaison reçoit une réponse seulement quand sont distinguées la nécessité naturelle, la coopération de plusieurs personnes et une organisation sociale susceptible de changer.
 
 **Préparer la transition décisive.** Si le possessif oral peut signaler une dépendance intériorisée, que change le fait d’écrire et de rendre public ce trouble ? Une parole n’abolit pas à elle seule l’assujettissement. Elle permet déjà de rendre visibles des différences, et peut devenir collective. Les scènes d’occupation chez Weil et le choix des voix au théâtre donnent à cette distinction des formes littéraires précises.
+
+**Que devient le possessif au portail ?** Comparez deux moments décrits par Weil. Devant l’entrée, qui dispose du temps de qui ? Pendant l’occupation, qui peut converser dans les ateliers et modifier leur usage ? Les grévistes se sont arrêtés de travailler. Ce contraste donne une portée précise à leur joie sans la projeter sur la journée ordinaire.
 
 ## Dissertation
 
@@ -27,6 +43,8 @@ La volonté se déploie d’abord dans des tâches dont elle n’a choisi ni le 
 Ce qui devient « mien » peut aussi être le travail commun. Dans le quatrième livre des *Géorgiques*, l’organisation de la ruche s’offre au regard du lecteur sous les traits d’une cité. Les tâches multiples font un ouvrage qu’aucune abeille n’accomplirait seule. Il serait hasardeux d’attribuer aux insectes une décision politique. Ce qui importe est le langage que le poème emploie pour rendre sensible la puissance d’une coopération. Dans la pièce de Vinaver, les employés échangent des idées, connaissent le produit et partagent la satisfaction que peut donner une trouvaille collective. Les discours de l’entreprise parlent donc une langue crédible lorsqu’ils font appel à la fierté d’en être. Sans le désir réel d’apporter quelque chose, la possibilité de mobiliser ainsi les salariés resterait incompréhensible. Le « presque » de Ponthus interdit de balayer cette joie comme une pure fiction.
 
 Mais où passe l’initiative quand le travailleur ne possède ni les conditions de sa tâche ni le droit de les discuter ? La formule familière par laquelle l’usine a « eu » le locuteur fait entendre la réussite d’un piège autant que la soumission à une règle. Dans ses lettres à Albertine Thévenon, Weil analyse la surprise d’avoir pu se croire faite pour recevoir des ordres. La succession des consignes, la peur de manquer le rendement et le besoin de garder son salaire finissent par peser sur la représentation de soi. Que l’ouvrière trouve en elle la disposition à obéir ne prouve donc pas qu’elle ait librement institué son obéissance. L’organisation a travaillé jusque dans la volonté au moyen de laquelle elle est servie. Le pronom « mon » peut alors désigner un lieu devenu familier simplement parce qu’on y a laissé l’essentiel de son temps et de ses forces.
+
+Dans une lettre à Victor Bernard, Weil évoque des ouvrières qui attendent sous la pluie devant le grand portail, tandis que des chefs entrent par une autre porte. Cet intervalle avant le travail appartient déjà à leur expérience de l’usine. On ne peut même pas y entrer au moment où on le souhaite. Si une ouvrière dit alors « mon usine », le possessif désigne une appartenance dont le pouvoir de franchir le seuil révèle immédiatement les limites. Quand les occupations de 1936 changeront qui peut demeurer dans les locaux et dans quelles conditions, ce même petit mot pourra recevoir une force nouvelle.
 
 Le théâtre permet de saisir le trouble de ce possessif sans décider à la place du personnage. Au départ imposé de Madame Bachevski, les mots de gratitude se mêlent, dans le mouvement de sa réplique, à la sensation d’un vide. Ses années de service sont bien à elle, mais la direction peut décider de leur terme. Dans le projet commercial de Ravoire et Dehaze, l’enthousiasme de personnes qui connaissent l’ancien produit n’est pas davantage un titre à décider de l’avenir de l’entreprise. Cette différence entre appartenance vécue et propriété effective empêche de conclure à la liberté des salariés parce qu’ils disent « nous ». La terre de Virgile elle-même échappe parfois à celui qui la cultive. La fin du premier livre montre la guerre vider les campagnes de leurs travailleurs et interrompre le travail agricole. Le savoir et l’attachement du paysan ne lui donnent aucun pouvoir souverain sur les usages politiques du territoire. Le plaisir local d’un geste ne justifie donc pas toutes les dépendances dans lesquelles il s’inscrit.
 
