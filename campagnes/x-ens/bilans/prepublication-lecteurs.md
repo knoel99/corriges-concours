@@ -1,6 +1,6 @@
 # Essai local de publication des corrigés
 
-Le 26/11/2026 à 12 h 33 UTC, les 1900 paires signées de la révision `e1e9bbd9` ont fourni les deux textes attendus et leurs signatures dans le service de lecture du site. Le journal de chaque fiche renvoie au bon dossier GitHub, reprend les interventions qualifiantes et indique le caractère partiel quand il est déclaré. [Résultats par épreuve](prepublication-lecteurs.tsv) · [Version des corrigés](https://github.com/knoel99/corriges-concours/tree/e1e9bbd97f672adbb9735ff32782dbde5ad517fb) · [Version du site](https://github.com/knoel99/prepa/tree/857bcd7ebbcd4b5c185db8ac28b66179ac8c9985)
+Le 26/11/2026 à 12 h 38 UTC, les 1900 paires signées de la révision `9ee05935` ont fourni les deux textes attendus et leurs signatures dans le service de lecture du site. Le journal de chaque fiche renvoie au bon dossier GitHub, reprend les interventions qualifiantes et indique le caractère partiel quand il est déclaré. [Résultats par épreuve](prepublication-lecteurs.tsv) · [Version des corrigés](https://github.com/knoel99/corriges-concours/tree/9ee059359e7f0695841ef9b3fb94350068b7b5f5) · [Version du site](https://github.com/knoel99/prepa/tree/857bcd7ebbcd4b5c185db8ac28b66179ac8c9985)
 
 Le contrôle couvre 2373 fiches de filière pour 1900 épreuves signées. Les épreuves communes sont aussi vérifiées sous chaque filière de leur notice éditoriale. [Contrôles des 473 fiches supplémentaires](prepublication-lecteurs-autres-filieres.tsv)
 
@@ -45,6 +45,8 @@ Les sept épreuves mixtes de mathématiques-informatique de 2002, 2004, 2005, 20
 Les trois compositions françaises et les trois compositions de philosophie de Lyon (2017, 2019 et 2022), ainsi que les cinq oraux de philosophie de la Sélection internationale Lettres de 2018, ont été revus dans les deux éditions. Les 22 PDF totalisent 79 pages et 128 signets contrôlés. [Révisions et empreintes](pdf-signets-philosophie-et-francais-lyon-psl-2026-11-26.tsv)
 
 Les six oraux d’histoire et de littérature ENS-PSL 2018, sur Monteil, Ginzburg, Renan, Cendrars, Djebar et Rolin, comptent douze PDF de 35 pages et 69 signets vérifiés. [Feuillets officiels, commits et empreintes](pdf-signets-oraux-histoire-litterature-psl-2018-2026-11-26.tsv)
+
+Pour sept sessions de sciences industrielles PSI de 2009 à 2017, les 14 PDF signés totalisent 179 pages. La relecture couvre 332 questions et 22 documents-réponses. Pour 2016, les trois feuilles absentes du livret institutionnel ont été vérifiées sur la reproduction renseignée de l’UPSTI. [Révisions, figures et empreintes](pdf-sciences-industrielles-psi-2009-2017.tsv)
 
 Le 25 novembre 2026, les deux lecteurs et les quatre téléchargements ont aussi été vérifiés sur les 134 fiches de filière de 45 épreuves communes déjà en production à la révision `54fe93cd`. [Adresses et empreintes des fichiers](production-filieres-54fe93cd.tsv)
 
