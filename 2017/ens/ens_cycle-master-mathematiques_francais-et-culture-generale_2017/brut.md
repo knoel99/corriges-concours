@@ -6,11 +6,26 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Les deux ENS donnent trois heures pour un résumé de 380 mots, avec une tolérance de 342 à 418 mots, et un commentaire à choisir entre deux propositions. Chaque exercice vaut dix points. Les deux choix sont développés ici.
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+## Sujet et consignes
+
+La garde 2C7123 porte les noms de l’École normale supérieure Paris-Saclay et de l’École normale supérieure de Rennes. Durée de l’épreuve, trois heures.
+
+Antoine Houlou, « Du chiffrage de la politique à la politique du chiffre », Le Débat, 2015/2, n° 184, p. 118–123.
+
+Résumer le texte en 380 mots (avec une marge de tolérance de + ou – 10%). Le nombre exact de mots utilisés sera indiqué en fin de résumé. Le résumé vaut dix points. La marge autorisée va de 342 à 418 mots.
+
+La question 2 vaut dix points. Les deux réflexions sont reproduites et traitées sous leurs lettres respectives.
+
+Sous forme d’un développement construit, commenter, au choix, l’une des deux réflexions suivantes de l’auteur :
+
+- Option a — « Car le travail n’est plus une fin en soi ni un accomplissement personnel, mais un moyen de profiter du temps de non-travail. »
+- Option b — « Si la pensée continue de se dissoudre dans le chiffre, la folie du court terme achèvera de tuer la construction sereine de l’avenir. »
 
 ## 1. Résumé
 
-Sous la monarchie, les savants évaluaient les décisions du gouvernement. Associé aux réformes de Turgot, Condorcet voulut ensuite mettre les mathématiques au service du bien public. Son projet de science sociale annonçait la statistique moderne. Désormais, le mouvement se renverse. Les responsables publics attendent de leurs services statistiques une représentation exacte du pays qui les guide et les légitime. Le débat électoral en vient à opposer des résultats chiffrés au lieu de discuter des fins poursuivies. La communication serait pourtant le moindre mal. Une prétention autrement grave fait passer la mesure pour une pensée capable de gouverner.
+Sous la monarchie, les savants évaluaient les décisions du gouvernement. Associé aux réformes de Turgot, Condorcet voulut ensuite mettre les mathématiques au service du bien public. Son projet de science sociale annonçait la statistique moderne. Désormais, le mouvement se renverse. Les responsables publics attendent de leurs services statistiques une image chiffrée du pays qui les guide et les légitime. Le débat électoral en vient à opposer des résultats chiffrés au lieu de discuter des fins poursuivies. La communication serait pourtant le moindre mal. Une prétention autrement grave fait passer la mesure pour une pensée capable de gouverner.
 
 Le problème dépasse le choix intéressé des résultats ou leur manipulation. Tout modèle mathématique dérive de présupposés intellectuels et moraux. La proportion géométrique répond à un idéal grec de mesure et de conservation des rapports. Préserver des propriétés rend possible le progrès théorique. Transportée sans examen dans la société, cette disposition conduit à prendre pour immuable le cadre où se produisent les phénomènes mesurés. Relever une température ne suggère encore aucun remède.
 
@@ -24,19 +39,29 @@ Tenir le plein emploi et la croissance pour des normes éternelles revient à pr
 
 ## 2a. Le travail comme moyen de profiter du temps de non-travail
 
+« Car le travail n’est plus une fin en soi ni un accomplissement personnel, mais un moyen de profiter du temps de non-travail. »
+
 Le salarié qui choisit de travailler quatre jours par semaine pour conserver le mercredi auprès de ses enfants sacrifie une part de revenu à un usage du temps auquel il tient. Pour lui, un calcul qui ne compterait que les heures rémunérées manquerait une partie de la richesse vécue. Houlou prête à cette préférence une valeur historique et collective. Le travail aurait cessé d’être une fin pour devenir le moyen de poursuivre des fins placées ailleurs. Houlou écrit « le travail n’est plus une fin en soi ni un accomplissement personnel ». La liberté de choisir son temps suffit-elle à rendre compte de ce que nous attendons encore d’un travail ? La conquête du temps libre éclaire cette formule, mais l’examen d’un métier aidera à préciser les conditions de cette liberté.
 
 Le salariat sépare assez nettement ce que l’on fait pendant des heures réglées par un employeur de ce qu’on décide soi-même du salaire reçu. Économiser pour partir en vacances peut ainsi donner au travail une finalité qui lui est extérieure. Les congés payés illustrent la portée politique de cette aspiration. Leur conquête confère à la fois des jours disponibles et le maintien des ressources nécessaires pour en disposer. Encore faut-il distinguer le temps soustrait au contrat et la faculté réelle de s’en servir. Deux personnes libérées à la même heure n’ont pas le même loisir si une seule assure les courses, les soins et la garde des enfants. Une réduction du temps de travail qui abandonnerait cette répartition à elle-même laisserait subsister une inégalité majeure.
 
 Pourtant, la rémunération ne suffit pas à épuiser la valeur d’un métier. Une aide-soignante peut tenir au travail bien fait et au lien avec les personnes qu’elle accompagne, tout en demandant davantage de temps entre deux interventions et un salaire supérieur. Prendre son engagement pour une raison de moins la payer reviendrait à retourner contre elle le sens qu’elle donne à ses gestes. L’exemple permet aussi de préciser ce que signifie la perte d’un emploi. Une personne qui dispose désormais de journées entières peut souffrir de l’isolement, de la disparition des collègues et du sentiment de ne plus compter. La possession du temps ne remplace pas mécaniquement la reconnaissance sociale.
 
+La note 3 du feuillet éclaire la portée du « plus » chez Houlou. Parmi les étudiants interrogés, 63 % disent qu’un emploi permet de gagner sa vie et moins d’un quart y voient une source d’épanouissement. La préférence déclarée pour un motif ne prouve ni que le second soit absent, ni que tous les travailleurs jugent leur activité comme ces étudiants. L’argument saisit une aspiration à disposer de son temps. Pour en faire un renversement historique, il faudrait aussi comparer des générations et des situations de travail.
+
 On peut alors déplacer la question vers la capacité de participer aux règles qui organisent les deux temps. La proposition de Houlou de partager sa semaine entre deux activités donnerait à certains la possibilité de transmettre ailleurs un savoir acquis dans un premier métier. Elle rendrait à d’autres leurs horaires plus difficiles à coordonner. Sa valeur dépend de la liberté d’y entrer, des revenus, des transports et de la possibilité d’en sortir. Le travail devient plus libre lorsqu’il laisse choisir ce qu’on fait hors de lui et lorsque son organisation permet aussi d’adhérer à ce qu’on y accomplit. La distinction des temps est un gain politique. Leur opposition absolue rendrait invisibles des sources très différentes d’autonomie.
 
 ## 2b. La pensée peut-elle se dissoudre dans le chiffre ?
 
+« Si la pensée continue de se dissoudre dans le chiffre, la folie du court terme achèvera de tuer la construction sereine de l’avenir. »
+
 Un service hospitalier qui réduit le délai moyen d’attente a mesuré quelque chose qui compte pour ses patients. Il pourrait pourtant mieux classer son service en faisant d’abord passer les cas les plus rapides, sans améliorer la prise en charge de ceux qui ont le plus besoin de lui. Le chiffre n’a changé ni de définition ni de vérité arithmétique. C’est le but poursuivi à travers lui qui a changé. Houlou redoute que « la folie du court terme » finisse par « tuer la construction sereine de l’avenir ». Comment porter un jugement de long terme quand les effets visibles à brève échéance sont aussi les plus aisément récompensés ? L’examen des effets d’un indicateur permettra de préciser à quelles conditions la mesure peut aussi éclairer une décision durable.
 
 La mesure favorise ce qui peut être observé plusieurs fois selon une règle identique. À l’école, les résultats d’une épreuve donnent rapidement une information sur des compétences définies. La capacité acquise par une classe à discuter une idée difficile sans exclure ceux qui hésitent sera moins immédiatement visible. Si le premier résultat détermine seul les moyens ou la réputation d’un établissement, les enseignants peuvent être encouragés à consacrer davantage de temps au format examiné. L’indicateur modifie l’activité dont il devait rendre compte. Le court terme l’emporte quand le calendrier de la récompense est plus bref que celui de la formation.
+
+Imaginons deux patients dont les attentes sont de dix et trente minutes. Le délai moyen est de vingt minutes. Si chacun attend vingt minutes, la moyenne demeure identique alors que le maximum baisse et que l’un des patients attend désormais plus longtemps. Pour savoir quelle organisation mérite d’être reconduite, il faudrait connaître la gravité des cas et ce que l’on cherche à protéger. La discussion de la fin poursuivie détermine quelle série suivre dans la durée.
+
+![À délai moyen égal, deux répartitions de l’attente.](figures/choisir-la-duree.svg)
 
 Mais un horizon long a lui aussi besoin de nombres. Un budget carbone cumule des émissions à travers les années et rend perceptible une contrainte qu’une suite de photographies instantanées masquerait. Une série de mortalité évitable portant sur plusieurs décennies permet de repérer les résultats d’une politique de prévention dont le succès, pour chacun, consiste justement en un événement qui n’a pas eu lieu. Le choix de l’unité, de la durée et du périmètre est déjà une opération intellectuelle. Que la géométrie conserve certaines relations ne suffit pas à donner aux nombres une orientation politique conservatrice. Une série cohérente peut faire découvrir une inégalité longtemps tenue pour négligeable.
 
