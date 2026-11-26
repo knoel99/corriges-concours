@@ -6,7 +6,11 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-La troisième commission du 30 juin a distribué douze billets de deux sujets. Les réponses suivent l’ordre de la feuille. Le rapport, page 9, permet de reconnaître par ses caractères gras le sujet choisi, qui est signalé à chaque billet. La rédaction et les relances du guide sont des propositions d’entraînement.
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Le [feuillet du 30 juin](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_al.pdf) contient 12 billets de deux sujets. Les développements suivent leur ordre. Le jury a mis en gras le premier sujet sur 7 billets et le second sur 5. Le choix est indiqué à chaque billet. Le [rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf#page=9) permet de vérifier les choix. L’[index de l’ENS](https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-al) date ce feuillet de la commission 3.
+
+Lisez à haute voix les deux sujets du billet puis annoncez votre choix au début de l’exposé. Seul un dictionnaire de langue française est autorisé, à l’exclusion des dictionnaires de noms propres. Pour essayer l’autre sujet, utilisez la question d’entretien et la piste de réponse placées après son développement.
 
 ## Vérifier le billet et préparer les reprises
 
@@ -31,6 +35,8 @@ La commission 3 affiche douze paires le 30 juin. La page 9 du rapport désigne c
 
 Le mot « table » n’a ni quatre pieds ni la couleur du meuble devant moi. Saussure distingue dans le signe linguistique un signifiant et un signifié. Leur relation ne reproduit pas une ressemblance naturelle entre le son du mot et la chose. Pourtant je peux te demander de poser un livre sur cette table et nous pouvons corriger un malentendu en indiquant le meuble dont il s’agit. Les mots atteignent les choses au sein d’usages, d’actions et de circonstances partagés. Leur généralité sélectionne certains traits, puisque le même nom vaut pour des tables très différentes. Elle peut masquer une singularité et soutenir des énoncés précis lorsque le contexte et les descriptions la restituent. Dire les choses ne consiste donc pas à les dupliquer en paroles, mais à pouvoir en parler de façons que leur présence, leur absence et les réponses d’autrui rendent vérifiables.
 
+**À l’entretien. Deux noms différents pour la même personne disent-ils exactement la même chose ?** Une description peut permettre d’identifier quelqu’un que son surnom ne permet pas de reconnaître. Distinguer l’objet visé et la manière de le présenter, puis demander ce que le contexte ajoute à l’énoncé.
+
 ### La répétition
 
 Un musicien répète chaque matin la même phrase. S’il reproduisait exactement les mêmes gestes sans rien modifier, on comprendrait difficilement le progrès de l’interprétation. Il y a répétition parce qu’une forme reste identifiable, différence parce que la place de chaque reprise dans le temps et dans l’apprentissage a changé. La difficulté est de préciser ce qui demeure le même. On peut répéter une formule mot à mot pour lui donner dans un contexte nouveau une force ironique que n’avait pas la première occurrence.
@@ -49,6 +55,8 @@ Sa singularité tient souvent à ce que chacun croit d’abord avoir compris et 
 
 Un emprunteur garde un livre dans son sac et peut s’en servir. Il ne peut pas légitimement le vendre comme s’il en était propriétaire. Possession de fait, usage et titre de propriété doivent donc être distingués. Posséder peut encore désigner le rapport à une compétence, lorsque quelqu’un « possède » une langue. Ce savoir ne se transmet pas par le simple transfert d’un objet et je ne le perds pas en l’enseignant. Ces contrastes interdisent de traiter la possession comme une relation naturelle toujours identique entre un sujet et sa chose. Elle dépend des pouvoirs déterminés dont dispose la personne, des droits d’autrui et des pratiques auxquelles la chose est destinée. L’enjeu devient moral et politique lorsque l’exclusivité d’un pouvoir affecte l’accès d’autres personnes à une ressource nécessaire.
 
+**À l’entretien. Qui possède un objet prêté ?** L’emprunteur l’a matériellement en main et peut s’en servir sous certaines conditions. Le prêteur conserve des droits reconnus sur l’objet. La situation oblige à distinguer détention, usage et propriété.
+
 ![Deux rendez-vous « à la gare »](figures/malentendu.svg)
 
 ## 3. Qui a un destin ?
@@ -63,6 +71,8 @@ Le mot « qui » invite aussi à regarder la distribution sociale de cette attri
 
 Un règlement qui interdit de bloquer les issues de tous les bâtiments dit quelque chose de général. Il abstrait des différences de taille, d’usage et de date pour viser un rapport jugé pertinent. La portée de la règle ne la transforme pas en description de tous les détails. L’universel logique « tous les triangles ont trois côtés » et la généralisation empirique « d’ordinaire, cette ligne de bus est ponctuelle » n’ont pas la même force. Un contre-exemple ne joue pas le même rôle pour une définition, une fréquence et une norme. La généralité rend possibles la classification, l’inférence et l’égalité de traitement. Son usage demande néanmoins de préciser les conditions d’application et les exceptions pertinentes, sous peine de substituer un énoncé commode à la diversité qu’il devait nous aider à comprendre.
 
+**À l’entretien. Une règle générale est-elle seulement la répétition de nombreux exemples ?** Un exemple contraire suffit parfois à la mettre en difficulté. Une longue série favorable ne tranche pas nécessairement le prochain cas. Examiner quelle justification fait passer de l’observation à la prétention générale.
+
 ## 4. Le manque
 
 *Sujet choisi sur ce billet — Le manque*
@@ -74,6 +84,8 @@ Dans le *Banquet*, le discours de Socrate met en rapport le désir et ce que l�
 ### Que font les machines ?
 
 Une machine à laver remue le linge selon un programme. Dire qu’elle « fait la lessive » indique une délégation effective de certaines opérations. Cela ne signifie pas que le dispositif ait déterminé quelles affaires laver, pourquoi elles importent ni comment sera réparti le temps libéré. Une machine transforme de la matière, de l’énergie ou des informations par un agencement organisé. Elle reconfigure aussi les gestes, les horaires et parfois la division sociale du travail. L’automatisation peut déplacer l’effort vers la maintenance, l’approvisionnement ou le contrôle. La question demande donc de suivre à la fois l’opération que l’appareil réalise effectivement et les responsabilités qu’une société continue d’attribuer aux personnes et aux institutions qui le conçoivent et s’en servent.
+
+**À l’entretien. La machine « décide » de freiner. Que signifie ici le verbe ?** Suivre le rôle des capteurs, de la règle de décision et des personnes qui ont déterminé le seuil. L’automatisation produit une action effective. Elle laisse ouverte l’attribution de la responsabilité pour ses conséquences.
 
 ## 5. Le désordre
 
@@ -87,11 +99,15 @@ Bergson, dans *L’Évolution créatrice*, interroge la notion de désordre en e
 
 Un État dispose d’institutions sur un territoire, tandis qu’une nation désigne une communauté politique et historique dont les membres se reconnaissent un avenir en commun. Les deux ne coïncident pas toujours. Une langue commune peut soutenir des liens sans suffire à déterminer une unique nation, et une nation peut être plurilingue. Dans sa conférence *Qu’est-ce qu’une nation ?*, Renan insiste sur un héritage de souvenirs et sur un consentement présent à poursuivre une vie commune. Ces critères ouvrent une question critique, qui a voix pour raconter cet héritage et comment s’exprime ce consentement ? Une conception défendable doit laisser place aux désaccords et aux changements d’appartenance. La nation n’est ni un simple fait biologique ni le produit d’un décret instantané qui effacerait toute histoire.
 
+**À l’entretien. Une nation suppose-t-elle toujours une langue commune ?** Comparer une communauté politique plurilingue et des populations de même langue relevant de plusieurs États. La langue peut transmettre une histoire sans fournir à elle seule le critère d’appartenance.
+
 ## 6. Le neutre
 
 *Sujet choisi sur ce billet — La paix peut-elle être perpétuelle ?*
 
 Un médiateur confie les mêmes possibilités de parole à deux parties. Un appareil enregistre une température. Les deux sont parfois qualifiés de neutres, mais la neutralité désigne dans le premier cas une exigence politique ou morale d’impartialité, dans le second un idéal de mesure indépendante des préférences. Le neutre grammatical désigne encore autre chose, une catégorie d’expression qui ne correspond pas nécessairement à une absence de distinctions dans le monde. On comprend mal le sujet si l’on efface ces usages sous une seule idée d’indifférence. Une institution peut rester impartiale entre personnes et cesser de l’être si elle traite de la même façon une preuve et une rumeur. Le neutre peut donc offrir une position de retenue ou une ressource du langage. Il devient trompeur lorsqu’une décision située dissimule ses effets sous une prétendue absence de choix.
+
+**À l’entretien. Peut-on rester neutre entre deux options quand le maintien de la règle favorise l’une ?** Examiner les effets de l’abstention et les raisons de la procédure. Une personne peut s’abstenir de prendre parti tout en contribuant au résultat. Il faut préciser de quelle neutralité on parle.
 
 ### La paix peut-elle être perpétuelle ?
 
@@ -111,11 +127,15 @@ L’enjeu est de tracer des limites à l’ingérence tout en préservant un rec
 
 La personne qui préside un concours veille à donner le même temps de parole aux candidats, y compris à celui dont elle connaît peu le sujet. Tenir son rôle réclame des conduites réglées et une capacité de jugement dans les cas où la règle laisse une marge. Un malaise ou une interruption extérieure peut justifier un ajustement accessible à chacun selon la même raison. La fonction ne demande pas de convertir toute son identité en titre institutionnel. Elle ne disculpe pas non plus automatiquement toute action accomplie en son nom. On peut juger qu’une consigne excède le rôle ou qu’elle porte atteinte à des droits qui le rendent légitime. Tenir son rôle exige donc de connaître à la fois ses obligations et leurs limites, afin que d’autres puissent compter sur nous et demander des comptes.
 
+**À l’entretien. Bien tenir un rôle exige-t-il de toujours suivre le scénario ?** Une enseignante peut interrompre son cours lorsqu’un élève a besoin d’aide. L’écart au programme peut alors répondre à la finalité du rôle. Distinguer l’obéissance au geste attendu et la responsabilité attachée à la fonction.
+
 ## 8. Qu’est-ce qui est tragique ?
 
 *Sujet choisi sur ce billet — La fin de la politique*
 
 On qualifie parfois de tragique tout événement extrêmement malheureux. Or une pièce peut faire surgir le tragique d’une décision où deux exigences également fortes semblent incompatibles. Dans l’*Antigone* de Sophocle, les devoirs envers le mort et la loi proclamée dans la cité ne s’ajustent pas sans perte. Le personnage agit, et c’est en agissant selon une raison qui compte qu’il se heurte à une autre exigence. L’effet ne tient donc pas seulement à la quantité de souffrance. Il dépend de la manière dont une situation lie action, responsabilité et limite. Toute injustice n’est pas tragique en ce sens, surtout si l’appeler fatale empêche de voir comment la corriger. La distinction évite de confondre la reconnaissance d’une perte irréductible avec une résignation générale devant ce que l’on pourrait transformer.
+
+**À l’entretien. Un événement très malheureux est-il nécessairement tragique ?** Comparer l’accident évitable et la situation où honorer une obligation impose d’en sacrifier une autre. La gravité de la perte compte dans les deux cas. Le conflit des exigences éclaire un sens propre du tragique.
 
 ### La fin de la politique
 
@@ -135,6 +155,8 @@ Dans le *Phédon*, Platon examine des arguments visant la survie de l’âme. Le
 
 Une personne quitte une mairie et son successeur peut néanmoins délivrer des actes valables. La continuité d’une compétence au-delà de son titulaire manifeste une dimension de l’institution. Il faut des règles, des rôles reconnus, des pratiques effectives et souvent des traces qui permettent aux nouveaux venus de savoir qui peut faire quoi. Le bâtiment et le texte fondateur en sont parfois des supports sans suffire à la faire vivre. Une institution peut stabiliser les attentes et instituer des droits. Elle peut aussi prolonger des exclusions alors même que chacun de ses agents pense agir selon les usages ordinaires. La comprendre demande donc d’étudier sa genèse, ses effets présents et la possibilité d’en contester les décisions. Sa durée ne dispense jamais de justifier la manière dont elle organise les relations humaines.
 
+**À l’entretien. Une règle que personne n’applique est-elle encore une institution ?** Un texte peut demeurer en vigueur sans guider aucune pratique. Examiner s’il existe une attente commune, un pouvoir de décision et un recours qui puissent lui redonner effet. Préciser le critère de persistance retenu.
+
 ## 10. La partie et le tout
 
 *Sujet choisi sur ce billet — La partie et le tout*
@@ -147,11 +169,15 @@ Ce mouvement change de portée selon les objets. Un sac contient des objets qui 
 
 Une administration peut disparaître tandis que sa langue, ses textes de droit et certains de ses usages nourrissent d’autres sociétés. « Mourir » ne s’applique donc pas à une civilisation comme à un organisme dont on daterait un seul décès. On peut étudier l’effondrement d’institutions, la rupture d’une transmission ou l’absorption de pratiques, sans présupposer que tout s’éteigne au même moment. Plusieurs processus, difficultés internes, changements du milieu ou rapports avec d’autres groupes, peuvent s’articuler. Une théorie qui annonce le même cycle fatal pour toutes les civilisations devrait encore prouver la comparabilité de ses unités. La question reçoit des réponses historiques situées dès qu’on définit ce qui avait une continuité, quelles traces permettent d’en suivre la transformation et du point de vue de qui on parle de perte ou d’héritage.
 
+**À l’entretien. Une civilisation disparaît-elle avec ses institutions politiques ?** Suivre séparément le sort d’un État, d’une langue et de pratiques transmises à d’autres groupes. Ils ne cessent pas nécessairement au même moment. L’image de la mort exige un critère explicite de continuité.
+
 ## 11. Qu’est-ce qu’un faux problème ?
 
 *Sujet choisi sur ce billet — L’égalité des chances*
 
 Demander à quelle vitesse le temps lui-même se déplace semble imiter une question physique familière. Mais une vitesse requiert un intervalle de temps auquel rapporter le trajet. Postuler un second temps pour mesurer le premier répète indéfiniment l’opération sans éclairer ce qu’on voulait comprendre. Un faux problème peut ainsi naître d’une image ou d’une règle grammaticale transportée hors de son domaine. Il faut le distinguer d’un problème véritable encore insoluble ou posé à l’aide de notions insuffisantes. Le premier se dissipe lorsqu’on montre la confusion qui l’engendrait. Le second exige une recherche dont on peut dire au moins ce qui compterait comme avancée. La critique philosophique peut rendre service en reformulant une difficulté plutôt qu’en lui donnant une réponse apparente, à condition de montrer ce qui reste de la question initiale après la clarification.
+
+**À l’entretien. Comment reconnaît-on qu’une question est mal posée plutôt que simplement difficile ?** Montrer que ses deux réponses apparentes supposent la même prémisse contestable. Si reformuler la prémisse fait apparaître une enquête précise, on explique pourquoi l’ancienne opposition était trompeuse.
 
 ### L’égalité des chances
 
@@ -167,10 +193,10 @@ Cela ne signifie pas que chacun devrait obtenir exactement le même résultat. I
 
 Un historien s’intéresse à des registres dont l’étude ne fera pas sa fortune. Dans une autre situation, un dirigeant « a intérêt » à dissimuler un mauvais résultat. Le même nom désigne une attention qui fait apparaître de nouvelles questions et un avantage rattaché à une position. Les deux peuvent se croiser mais ne doivent pas être confondus. On peut avoir un intérêt objectif à une décision sans en avoir conscience, ou se passionner pour une recherche qui coûte du temps sans porter un bénéfice mesurable. L’intérêt commun pose une difficulté supplémentaire, il ne se calcule pas toujours par l’addition des avantages privés. L’analyse devient précise si l’on demande ce qui compte, pour qui, sous quel rapport et selon quelle possibilité de juger avec d’autres du bien en jeu.
 
+**À l’entretien. Un engagement désintéressé exclut-il tout intérêt pour sa cause ?** Quelqu’un peut tenir à la sauvegarde d’un jardin sans en tirer un avantage privé. Distinguer ce qui retient l’attention ou motive l’action et ce qui procure un bénéfice personnel. Une même conduite peut combiner les deux.
+
 ### Que nous apporte l’écriture ?
 
 Une liste de provisions permet de reprendre une intention quand l’attention s’est déplacée. Une démonstration écrite permet de revenir à une prémisse en examinant simultanément plusieurs étapes. Un contrat signé rend une formulation consultable et contestable au-delà de la présence de ses auteurs. L’écriture nous apporte donc des formes de mémoire, de raisonnement et de coordination qui changent les opérations possibles, au-delà de la simple conservation d’une parole déjà constituée.
 
 Dans le *Phèdre*, Platon met en scène la crainte qu’une mémoire confiée à des signes extérieurs ne donne l’apparence du savoir et rappelle qu’un texte interrogé ne répond pas comme un interlocuteur vivant. Ce défaut est aussi lié à la possibilité de transmettre à des absents et à des lecteurs imprévus. L’écriture permet ainsi de reprendre, discuter et transformer une pensée par la stabilité de sa trace. Son apport dépend des pratiques qui la rendent lisible, de l’accès aux supports et de la disposition à vérifier, au lieu de prendre la permanence d’un énoncé pour la garantie de sa vérité.
-
-[Feuille officielle du 30 juin](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_al.pdf) · [Rapport du jury, modalités et annexe des sujets](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf)
