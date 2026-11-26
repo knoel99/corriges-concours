@@ -11,7 +11,12 @@
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/07/2c2021_math_v2.pdf",
     "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/08/21_2CC_rap_eMath.pdf",
-    "sha256_sujet": "3466cee988c3f7031e496e7905c60d864d1c957b0df50019237f8f5519293585"
+    "sha256_sujet": "3466cee988c3f7031e496e7905c60d864d1c957b0df50019237f8f5519293585",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/08/21_2CC_rap_eMath.pdf",
+    "sujet_sha256": "3466cee988c3f7031e496e7905c60d864d1c957b0df50019237f8f5519293585",
+    "rapport_sha256": "12eac8d8f7f7f0a9c58fd788c972a345592e529fa3fe413529fd3724a522ae50",
+    "index_banque": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/",
+    "index_banque_sha256": "36243e7203175ea8fc3f1b47cf04cfaeff13de5e6fe10463bd7d894a9fca4bfe"
   },
   "figures": [
     {
@@ -31,6 +36,57 @@
       "perimetre": "Rédaction intégrale des 23 réponses et de leurs indications, du contrôle uniforme des intégrales conditionnelles à la caractérisation de l’égalité pour les sous-algèbres nilpotentes. Vérification sur l’original corrigé signalant l’erratum et le rapport natif du second concours.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Vérification des huit questions de la première partie, des huit subdivisions de Borwein et des sept en algèbre. Contrôle des majorants au voisinage du paramètre zéro, de toutes les intégrations par parties, de la première rupture par calcul rationnel exact et des cas limites dans l’énoncé corrigé sur les puissances strictement positives.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
-  ]
+  ],
+  "questions_principales": 19,
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.I.1",
+      "1.I.2",
+      "1.I.3",
+      "1.I.4",
+      "1.I.5",
+      "1.I.6",
+      "1.I.7",
+      "1.I.8",
+      "1.II.1",
+      "1.II.2",
+      "1.II.3",
+      "1.II.4a",
+      "1.II.4b",
+      "1.II.5a",
+      "1.II.5b",
+      "1.II.6",
+      "2.1",
+      "2.2",
+      "2.3a",
+      "2.3b",
+      "2.3c",
+      "2.4",
+      "2.5"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "precision": "Vérification des huit questions de la première partie, des huit subdivisions de Borwein et des sept en algèbre. Contrôle des majorants au voisinage du paramètre zéro, de toutes les intégrations par parties, de la première rupture par calcul rationnel exact et des cas limites dans l’énoncé corrigé sur les puissances strictement positives.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "relecture_corrige",
+      "perimetre": "Vérification des huit questions de la première partie, des huit subdivisions de Borwein et des sept en algèbre. Contrôle des majorants au voisinage du paramètre zéro, de toutes les intégrations par parties, de la première rupture par calcul rationnel exact et des cas limites dans l’énoncé corrigé sur les puissances strictement positives.",
+      "sha256_sujet_controle": "3466cee988c3f7031e496e7905c60d864d1c957b0df50019237f8f5519293585",
+      "sha256_rapport_controle": "12eac8d8f7f7f0a9c58fd788c972a345592e529fa3fe413529fd3724a522ae50"
+    }
+  }
 }

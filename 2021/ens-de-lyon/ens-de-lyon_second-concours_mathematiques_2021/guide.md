@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 La composition du second concours, d’une durée de trois heures, comporte deux problèmes. Le premier mène de l’intégrale de Dirichlet aux intégrales de Borwein. Le second caractérise les sous-algèbres nilpotentes de dimension maximale. Les identifiants reprennent chaque problème et ses parties. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/uploads/2021/07/2c2021_math_v2.pdf) · [Rapport du jury](https://banques-ecoles.fr/cms/wp-content/uploads/2021/08/21_2CC_rap_eMath.pdf)
 
 ## Problème 1, partie I. Transformée de Laplace du sinus cardinal
@@ -169,6 +171,8 @@ $$\int_0^\infty\prod_{k=0}^n\frac{\sin(a_kt)}{a_kt}\,dt
 Prenons $a_k=1/(2k+1)$ avec $a_0=1$. La somme $S_n=\sum_{k=1}^na_k$ croît et diverge, par comparaison à la série harmonique. Le premier dépassement survient en fait à $n=7$, car
 $$S_6=43024/45045<1,\qquad S_7=46027/45045>1.$$
 Pour $n\le6$, II.4b donne exactement $\pi/2$. Au rang sept, $S_6\le1<S_7$ et $a_k\ge a_7$ pour $k\le7$, donc les hypothèses de II.5 sont satisfaites. Son terme correctif est strictement positif, ce qui donne une intégrale strictement inférieure à $\pi/2$. On peut prendre $N=6$.
+
+La différence relative au septième rang est petite mais strictement positive. Ici $\delta=S_7-1=982/45045$. D’après II.5b, la perte relative à $\pi/2$ vaut $\delta^7(3\cdot5\cdot7\cdot9\cdot11\cdot13\cdot15)/(7!\,2^6)$, soit environ $1{,}47\times10^{-11}$. Un simple arrondi à dix décimales masquerait donc le franchissement.
 
 ![Figure 1 — Le seuil est franchi lors de l’ajout de 1/15, à l’indice 7. Les valeurs de l’intégrale restent exactement égales à π/2 jusqu’à l’indice 6 inclus.](figures/seuil-borwein.svg)
 

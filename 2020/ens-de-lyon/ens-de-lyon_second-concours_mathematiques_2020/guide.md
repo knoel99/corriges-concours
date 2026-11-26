@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 L’épreuve de trois heures porte sur le polynôme cyclotomique de rang pq, puis sur l’enveloppe convexe de points tirés au hasard sur un cercle. Le problème et l’exercice ont leur propre numérotation. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/uploads/2020/11/2c2020_math.pdf) · [Rapport du jury](https://banques-ecoles.fr/cms/wp-content/uploads/2020/11/20_2CC_rap_eMath.pdf)
 
 ## Problème. Semi-groupe numérique et polynôme cyclotomique
@@ -142,6 +144,8 @@ Dans chaque rectangle, une égalité $ip+jq=i'p+j'q$ donne $q\mid i-i'$ et donc 
 La relation $4(\alpha p)(\beta q)\le(\alpha p+\beta q)^2=(pq+1)^2$ donne
 $$N=2\alpha\beta-1\le\frac{(pq+1)^2}{2pq}-1=\frac{p^2q^2+1}{2pq}.$$
 Comme $pq$ est impair et $pq>1$, cette borne est strictement inférieure à $(pq+1)/2$. L’entier $N$ est donc au plus $(pq-1)/2$.
+
+La borne réelle suggérée par le sujet est même stricte. Une égalité imposerait $\alpha p=\beta q$, donc $q\mid\alpha$ car $p$ et $q$ sont premiers distincts. Or $1\le\alpha<q$. Le cas $(3,5)$ atteint en revanche la borne entière : les sept coefficients non nuls trouvés en 4b donnent $N=(15-1)/2=7$.
 
 ## Exercice. Points aléatoires sur le cercle
 
