@@ -8,7 +8,7 @@
     "modalite": "écrit"
   },
   "intitule": "Philosophie — liberté et fers",
-  "questions": 0,
+  "questions": 1,
   "redaction": "Proposition non officielle rédigée par IA.",
   "modele": {
     "provider": "codex",
@@ -22,7 +22,10 @@
     "sujet_sha256": "28ded7bd21867ef1a2eda6c88dd026de240605f922a15ee81afd4924bca931c6",
     "references": [
       "https://fr.wikisource.org/wiki/Du_contrat_social/%C3%89dition_1762/Livre_I/Chapitre_1"
-    ]
+    ],
+    "page_officielle": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2017-lettres-0",
+    "pages_sujet": 1,
+    "reperage": "P. 1, une formule attribuée à un philosophe des Lumières et le seul impératif « Commentez ! ». Le texte est identifié comme la première phrase de Du contrat social, livre I, chapitre 1. Les phrases suivantes de Rousseau servent de contexte."
   },
   "figures": [
     {
@@ -56,6 +59,34 @@
       "date": "2026-11-25",
       "perimetre": "Vérification de l’attribution de la formule, du contexte des deux questions initiales et des distinctions entre dépendance, force, obligation et volonté générale. Contrôle des deux éditions.",
       "modifications": true
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "oraux_lyon_et_anciens_corriges",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle du feuillet et de sa portée, reprise de l’argument et du schéma, exercice guidé. Naissance et partout, dépendance de fait et titre à gouverner, réciprocité et conditions d’une loi générale."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commenter la formule « L’homme est né libre et partout il est dans les fers »."
+    ],
+    "elements_verifies": [
+      "P. 1, une formule attribuée à un philosophe des Lumières et le seul impératif « Commentez ! ». Le texte est identifié comme la première phrase de Du contrat social, livre I, chapitre 1. Les phrases suivantes de Rousseau servent de contexte.",
+      "Naissance et partout, dépendance de fait et titre à gouverner, réciprocité et conditions d’une loi générale.",
+      "L’épreuve imprimée ne propose ni sujet alternatif, ni annexe, ni recours à un dossier individuel."
+    ]
+  }
 }

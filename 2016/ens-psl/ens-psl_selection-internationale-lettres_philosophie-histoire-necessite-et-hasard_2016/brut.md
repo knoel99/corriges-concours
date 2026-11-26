@@ -6,7 +6,9 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-La feuille donne une phrase d’un « philosophe du XIXe siècle » et demande de l’expliquer et de la commenter librement. L’extrait correspond à l’Essai sur les fondements de nos connaissances de Cournot (1851).
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+La feuille donne une phrase d’un « philosophe du XIXe siècle » et demande de l’expliquer et de la commenter librement. Le début de la phrase permet de l’identifier dans l’*Essai sur les fondements de nos connaissances et sur les caractères de la critique philosophique* de Cournot, publié en 1851.
 
 ## Quand une succession fait-elle histoire ?
 
@@ -18,7 +20,7 @@ Les premiers événements du texte « dérivent » les uns des autres. Le verbe 
 
 Le cas change si l’horloge s’est arrêtée parce qu’un déménagement a interrompu son entretien. Ni les engrenages ni les lois du mouvement n’ont cessé de valoir. Mais connaître son mécanisme ne renseigne pas sur la date à laquelle une famille a quitté les lieux. Un document sur le déménagement ou une trace de l’interruption devient pertinent. Le système de l’horloge et celui des décisions familiales avaient chacun leur intelligibilité. Leur rencontre n’était pas contenue dans la théorie du premier.
 
-Ainsi, « accidentel » ne signifie pas ici dépourvu de cause. Un événement est accidentel pour une série si l’enquête sur les causes propres à cette série ne suffit pas à expliquer la rencontre. C’est une notion relative à l’objet qu’étudie la théorie. Si l’on réduit toute contingence à la seule ignorance d’une loi déjà supposée complète, on manque le rôle de cette rencontre entre séries. Inversement, il serait trop simple de faire de tout fait qu’on ignore provisoirement un événement historique. Encore faut-il montrer ce que son intervention a changé par la suite.
+Ainsi, « accidentel » ne signifie pas ici dépourvu de cause. Un événement est accidentel pour une série si l’enquête sur les causes propres à cette série ne suffit pas à expliquer la rencontre. Il faut distinguer les limites de notre information et la relation entre les causes elles-mêmes. Si le déplacement de la famille était précisément motivé par l’arrêt de l’horloge, il faudrait reconstruire une dépendance entre les deux séries. Pour parler d’une rencontre fortuite, l’enquête doit avoir des raisons de les tenir pour indépendantes avant leur rencontre. Si l’on réduit toute contingence à la seule ignorance d’une loi déjà supposée complète, on manque le rôle de cette rencontre entre séries. Inversement, il serait trop simple de faire de tout fait qu’on ignore provisoirement un événement historique. Encore faut-il montrer ce que son intervention a changé par la suite.
 
 ## La seconde limite concerne la capacité d’un événement à faire une différence
 
@@ -28,11 +30,13 @@ L’institution de ce tirage peut évidemment avoir une histoire. Une ville chan
 
 Une partie d’échecs rend plus sensible le milieu entre les deux extrêmes. Les règles définissent à chaque tour des coups autorisés, et la nouvelle position résulte de la position précédente. Pourtant, la décision d’un joueur ne se déduit pas des règles et du seul projet de l’adversaire. Un coup imprévu contraint celui-ci à réviser un plan qui, sans cette rencontre, aurait pu se poursuivre. Raconter pourquoi une position finale a été atteinte demande de restituer de telles bifurcations. La contingence n’abolit pas la liaison. Elle acquiert une portée historique parce qu’elle modifie les possibilités ultérieures.
 
-![Loi fermée, résultats indépendants et trajectoire qui bifurque](figures/liaisons.svg)
+![Figure 1 — Loi fermée, résultats indépendants et trajectoire qui bifurque](figures/liaisons.svg)
 
 ## Les cas limites éclairent l’enquête sans épuiser ses objets
 
 On pourrait objecter à Cournot qu’une éclipse exactement calculable a tout de même sa place dans une histoire. La difficulté se résout si l’on distingue deux questions. L’astronome qui explique la configuration des astres par leurs mouvements ne demande pas pourquoi telle population l’a inscrite dans une chronique ou ce qu’elle y a lu. Une date et un lieu d’observation peuvent faire de la même éclipse un événement décisif dans une autre série. La distinction entre théorie et histoire ne partage donc pas une fois pour toutes la nature et l’humanité. Une histoire de la Terre peut elle aussi expliquer une configuration particulière par des événements dont les effets demeurent inscrits dans des couches ou dans un relief.
+
+Imaginons qu’un registre municipal mentionne à la même date la chute d’un pont et le passage d’une foire sur l’autre rive. Cette coïncidence fournit une piste. Pour en faire une explication historique, il faudrait établir que la foire avait déjà son propre calendrier et que la fermeture du pont a modifié le trajet des marchands. Des délibérations ou des comptes de péage pourraient permettre de le vérifier. L’ordre du récit dépendrait alors d’un effet attesté. La valeur d’un tel récit tient aussi au fait qu’une autre pièce pourrait défaire le lien proposé.
 
 Une objection plus profonde demeure. Même un système clos régi par une loi peut avoir une trajectoire singulière que nous n’avons aucun moyen de déduire commodément. Et un historien choisit souvent de suivre une pratique régulière ou une répétition, précisément parce que leur durée demande explication. Le texte ne permet pas de nier ces usages courants du mot histoire. Il annonce expressément qu’il vise l’histoire « proprement dite ». Sa thèse est plus convaincante comme critère d’un besoin d’explication historique que comme interdiction d’user du mot ailleurs.
 

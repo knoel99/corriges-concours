@@ -6,7 +6,9 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Le sujet demande de commenter la formule d’un philosophe des Lumières selon laquelle l’homme naît libre et se trouve partout dans les fers. La phrase ouvre le premier chapitre de Du contrat social (1762).
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Le sujet demande de commenter la formule d’un philosophe des Lumières selon laquelle l’homme naît libre et se trouve partout dans les fers. La formule ouvre le livre I du *Contrat social* de Rousseau, paru en 1762.
 
 ## Distinguer un fait et un titre
 
@@ -20,7 +22,7 @@ Commencez par la dépendance évidente du nouveau-né. Que prouve-t-elle sur le 
 
 ## Comment une obligation pourrait-elle obliger un être libre ?
 
-La phrase imprimée en 2017 ouvre le premier chapitre de Du contrat social, publié par Rousseau en 1762. Elle oppose ce qui serait vrai de l’homme en naissant et ce qui paraît vrai partout où on l’observe. Une difficulté surgit aussitôt. Nul nouveau-né ne dispose seul des forces nécessaires à sa vie. Et l’organisation sociale qui rend cette vie possible nous impose des règles longtemps avant que nous ayons pu y consentir. Quel sens donner alors à cette naissance libre, et comment juger des « fers », si l’absence de tout lien s’avère à la fois impossible et peu désirable ?
+Comment lire ensemble « né » et « partout » ? Le premier terme évoque l’origine de chacun, le second embrasse l’étendue des relations sociales. Leur rapprochement oppose ce qui serait vrai de l’homme en naissant et ce qui paraît vrai partout où on l’observe. Une difficulté surgit aussitôt. Nul nouveau-né ne dispose seul des forces nécessaires à sa vie. Et l’organisation sociale qui rend cette vie possible nous impose des règles longtemps avant que nous ayons pu y consentir. Quel sens donner alors à cette naissance libre, et comment juger des « fers », si l’absence de tout lien s’avère à la fois impossible et peu désirable ?
 
 ## Être né libre ne signifie pas naître capable de tout faire seul
 
@@ -38,7 +40,7 @@ Elle concerne aussi celui qui se croit maître. Un homme qui ne pourrait mainten
 
 Pour autant, considérer tout ordre comme des fers rendrait toute association illégitime par définition. Un passage piéton réglé par un feu m’oblige à attendre, comme il oblige les autres à attendre à leur tour. La seule minute perdue ne tranche pas la question de ma liberté politique. Il faut encore examiner de qui la règle émane, à qui elle s’applique, quelle raison commune la justifie et quelle possibilité demeure de la réviser.
 
-![Force, dépendance personnelle et obligation commune](figures/liens.svg)
+![Figure 1 — Force, dépendance personnelle et obligation commune](figures/liens.svg)
 
 ## L’association doit transformer le type de dépendance
 
@@ -46,8 +48,14 @@ Le problème du pacte social consiste à penser une association dont la force co
 
 L’exemple du passage montre la difficulté. Si les règles sont fixées pour assurer les déplacements du seul dirigeant et ménagent à sa suite une dispense permanente, elles préservent sous une apparence publique la dépendance envers une personne. Si les usagers concernés sont membres égaux d’un corps qui décide à des fins communes, une limitation des mouvements peut assurer à chacun une capacité de circuler plus effective. Une loi ne réalise toutefois pas la seconde situation par le seul fait de porter ce nom. Elle doit pouvoir être discutée comme règle de tous, et son application ne doit pas installer durablement un groupe en maître de l’autre.
 
+Le passage de la contrainte à l’obligation peut se vérifier en changeant un détail. Imaginons que chacun soit tenu de faire la queue pour franchir le passage et que le dirigeant s’accorde une priorité permanente. Tous subissent encore une règle écrite. Pourtant, l’exception ne se justifie que par le nom de son bénéficiaire. Accordons maintenant la priorité à toute personne chargée d’un secours urgent. Le régime paraît de nouveau inégal au moment du passage, mais le motif est formulable pour tous et pourrait concerner chacun. La généralité d’une loi porte donc sur la raison des distinctions qu’elle autorise, autant que sur les mots dont elle se sert.
+
 Une objection surgit dès que l’on invoque la volonté générale. Une majorité réelle peut proclamer qu’elle parle pour tous et traiter le désaccord d’une minorité comme la preuve que celle-ci ignore son propre bien. La généralité de l’objet et l’égalité des membres du souverain sont donc des conditions à éprouver, et non un certificat que donnerait le simple nombre des voix. L’écart entre le principe et les sociétés effectives redonne alors à l’adverbe « partout » sa force. La formule oblige à examiner les formes ordinaires de dépendance même là où le vocabulaire officiel affirme que les citoyens sont libres.
 
 La contradiction initiale n’appelle ainsi ni la nostalgie d’une autosuffisance originelle ni la résignation à tout pouvoir établi. Être né libre oblige à demander aux autorités qui prétendent gouverner un titre différent de leur seule existence. Des liens communs peuvent donner une forme politique à cette liberté lorsqu’ils soumettent également leurs auteurs et leurs destinataires à une règle répondant d’un intérêt commun. Ils redeviennent des fers dès que la règle met certains à la discrétion durable d’une volonté étrangère.
+
+## Suivre le changement de question
+
+Imaginez deux copies. L’une cherche qui a imposé les premiers liens. L’autre demande à quelle condition un lien pourrait obliger légitimement une personne née libre. Situez la première dans l’histoire des sociétés, la seconde dans l’examen du droit. Pour revenir aux mots de la citation, montrez comment le constat d’une obéissance répandue laisse ouverte la question de son titre.
 
 [Feuille de l’écrit](https://www.ens.psl.eu/sites/default/files/philo-ecrit-sil17.pdf) · [Rousseau, Du contrat social, livre I, édition de 1762](https://fr.wikisource.org/wiki/Du_contrat_social/%C3%89dition_1762/Livre_I/Chapitre_1)

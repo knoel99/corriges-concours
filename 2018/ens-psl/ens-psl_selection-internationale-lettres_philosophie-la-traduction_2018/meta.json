@@ -8,7 +8,7 @@
     "modalite": "écrit"
   },
   "intitule": "Philosophie — la traduction",
-  "questions": 0,
+  "questions": 1,
   "redaction": "Proposition non officielle rédigée par IA.",
   "modele": {
     "provider": "codex",
@@ -22,7 +22,10 @@
     "sujet_sha256": "5e34eabcd4fb75e49410c05ce2c9bac311f5ba5b830e00610bd4b665fcd921ba",
     "references": [
       "https://www.degruyterbrill.com/document/doi/10.4159/harvard.9780674731615.c18/html"
-    ]
+    ],
+    "page_officielle": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2018-lettres",
+    "pages_sujet": 1,
+    "reperage": "P. 1, l’unique consigne « Développez et commentez » porte sur le seul intitulé « La traduction ». Aucun texte à rendre dans une autre langue. Les exemples bilingues et les lectures critiques sont choisis par le corrigé."
   },
   "figures": [
     {
@@ -56,6 +59,34 @@
       "date": "2026-11-25",
       "perimetre": "Vérification des variations d’adresse anglaise et française, des distinctions élaborées par Jakobson et du statut des exemples de dialogue et de poème inventés pour la dissertation. Contrôle des deux éditions.",
       "modifications": true
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "oraux_lyon_et_anciens_corriges",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle du feuillet et de sa portée, reprise de l’argument et du schéma, exercice guidé. Interprétation, situation d’énonciation, pluralité des versions, perte sonore explicitée, distinction entre traduction et retraduction."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Développer et commenter la notion « La traduction »."
+    ],
+    "elements_verifies": [
+      "P. 1, l’unique consigne « Développez et commentez » porte sur le seul intitulé « La traduction ». Aucun texte à rendre dans une autre langue. Les exemples bilingues et les lectures critiques sont choisis par le corrigé.",
+      "Interprétation, situation d’énonciation, pluralité des versions, perte sonore explicitée, distinction entre traduction et retraduction.",
+      "L’épreuve imprimée ne propose ni sujet alternatif, ni annexe, ni recours à un dossier individuel."
+    ]
+  }
 }
