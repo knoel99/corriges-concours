@@ -5,10 +5,10 @@
     "filiere": "BL",
     "matiere": "Composition française",
     "annee": 2017,
-    "modalite": "écrit"
+    "modalite": "écrit commun"
   },
   "intitule": "Composition française",
-  "questions": 0,
+  "questions": 1,
   "redaction": "Proposition non officielle rédigée par IA.",
   "modele": {
     "provider": "codex",
@@ -30,7 +30,7 @@
       "legende": "Accueillir et éprouver une voix littéraire"
     }
   ],
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "lecture_rapport_jury",
@@ -67,6 +67,85 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Retour aux mots de Beauvoir, au statut des voix et aux passages précis des quatre œuvres de la dissertation. Vérification du rendu des deux éditions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Collation du feuillet Ulm–Lyon p. 21 et du rapport B/L de cinq pages. Relecture des deux éditions sur le jugement du lecteur. Analyse du dialogue judiciaire de La Fontaine et de la bifurcation du geste d’Emma aux comices."
     }
-  ]
+  ],
+  "gabarit": "dissertation",
+  "duree_heures": 6,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2017-11/2017-ecrits-communs-ses_1506586985330_0.pdf#page=21",
+      "sha256": "03ec9addf43c6d602d5ba363bea12a3dce3e2f95ce20d99ad95df799ee5842d7",
+      "pages": 21,
+      "pages_verifiees": [
+        {
+          "numero": 21,
+          "rendu_sha256": "3d7f2ae66c5b45948a9ce7cc298493158824216396ed3981f742b382c346ea52"
+        }
+      ],
+      "nature": "Fac-similé du feuillet commun Ulm–Lyon."
+    },
+    "rapport_jury": {
+      "url": "https://www.ens.psl.eu/sites/default/files/17_francais_com_ecrit.pdf",
+      "sha256": "976619a5eb0c17108c1aa325e910a356011c8294eeba5c56695b2cd263a3fc44",
+      "pages": 5,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "01453a80926acefdee7dbaa004b3dfa99f69c394877d565d97c3f31c40bc1901"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "4e2ec4a94a707c33e60cfca6b728a2eb909950dce82e2be32e7d64ce0081bfc2"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "e2ea455d30acca54f7295420ff5785c84c8f8a36197b3b7fc2f0d93e5c981332"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "30af297aa33b9b6681b6fdf6d8592ce6f2cc5f7eb30356a4a05ab247e28b90da"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "d8c879ac81036203b4d63625d276323a8e190212d43eec2d06bb215124d0f230"
+        }
+      ],
+      "rubriques": "p. 1–2, conditions nécessaires et limites de la lectrice ; p. 2–4, responsabilité du jugement, résistances et possibilités critiques ; p. 4–5, discussion argumentée et précision des exemples."
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Composition française"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Composition française",
+        "page_pdf": 21,
+        "citation": "Lire l’œuvre d’un écrivain dont on récuse radicalement les options pose un problème ; pour qu’un texte prenne un sens, il faut y engager sa liberté, faire le silence en soi, et y installer une voix étrangère. Cela m’est impossible si la fausseté des valeurs admises par l’auteur est trop flagrante, si sa vision du monde me paraît puérile ou odieuse.",
+        "reference": "Simone de Beauvoir, Tout compte fait (1972), Paris, Gallimard, collection « Folio », p. 212.",
+        "consigne": "Vous direz comment ce point de vue éclaire votre propre conception du rapport à la littérature.",
+        "perimetre": "Du « il faut » au « m’est impossible », conditions de la lecture et seuil du jugement personnel."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
 }

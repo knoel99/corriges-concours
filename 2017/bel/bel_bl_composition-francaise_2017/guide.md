@@ -8,7 +8,13 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-La feuille cite Simone de Beauvoir, Tout compte fait (1972), Folio, p. 212, sur la liberté du lecteur et le seuil où les valeurs admises par un auteur empêchent la lecture. Elle demande comment ce point de vue « éclaire votre propre conception du rapport à la littérature ».
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+« Lire l’œuvre d’un écrivain dont on récuse radicalement les options pose un problème ; pour qu’un texte prenne un sens, il faut y engager sa liberté, faire le silence en soi, et y installer une voix étrangère. Cela m’est impossible si la fausseté des valeurs admises par l’auteur est trop flagrante, si sa vision du monde me paraît puérile ou odieuse. »
+
+Simone de Beauvoir, Tout compte fait (1972), Paris, Gallimard, collection « Folio », p. 212.
+
+Vous direz comment ce point de vue éclaire votre propre conception du rapport à la littérature.
 
 ## Lire les verbes avant de prendre parti
 
@@ -19,6 +25,8 @@ Sur le feuillet, relevez d’abord les trois activités du lecteur, engager sa l
 **Où chercher la valeur que l’œuvre paraît engager ?** Dans la fable de La Fontaine, distinguez le raisonnement du personnage et l’enchaînement des répliques qui le dément. Chez Flaubert, l’alternance de discours suffit à changer le sens d’une même parole. Dire qu’il existe plusieurs voix apporte peu tant qu’on ne montre pas ce qu’une seconde voix fait entendre de la première.
 
 **La consigne demande-t-elle une confidence ?** Vous pouvez soutenir une conception du rapport à la littérature à la première personne en la soumettant à des exemples que chacun peut vérifier. Nul besoin d’attribuer une réaction identique à tous les lecteurs ni de transformer votre expérience en récit biographique.
+
+Le jury rapproche, aux pages 1 et 2, une condition de compréhension formulée pour tout lecteur et l’aveu d’une impossibilité singulière. Aux pages 4 et 5, il demande que les références permettent de discuter la proposition. Pour vérifier votre dernier paragraphe, soulignez les deux explications du mouvement des doigts d’Emma et celle que Rodolphe choisit. Précisez ce que la première lecture vous avait fait perdre.
 
 ## À qui faisons-nous place en lisant ?
 
@@ -36,15 +44,19 @@ La formule de Beauvoir se durcit quand elle dit ce qui « m’est impossible ».
 
 Le témoignage autobiographique rend ce problème particulièrement aigu. Je lis un livre de mémoires à la fois comme une composition et comme la parole de quelqu’un qui se porte garant de ce qu’il donne à voir. Si le travail de la phrase fait systématiquement de l’auteur le seul être lucide parmi des silhouettes méprisables, ma difficulté ne se réduit pas à l’indignation devant une idée isolée. La distribution de la parole en produit l’effet tout au long du livre. Refuser cet effet constitue encore un exercice de ma liberté. Ce serait manquer la loyauté du témoignage de Beauvoir que de décréter qu’un bon lecteur peut toujours surmonter une telle résistance. Je peux comprendre certains procédés et rester incapable d’habiter le monde qu’ils construisent.
 
-Le danger inverse existe. Mon sentiment d’évidence peut tenir aux habitudes de mon temps ou à la hâte avec laquelle j’ai confondu l’auteur et celui qui parle. Dans « Le Loup et l’Agneau » de La Fontaine, le loup produit des raisons, les modifie à mesure que l’agneau les réfute et maintient sa décision. Prendre la force de sa voix pour l’approbation du fabuliste ferait du lecteur indigné la victime d’un contresens. Le dispositif des répliques manifeste l’écart entre raison avancée et pouvoir exercé. C’est justement en prêtant assez d’attention au discours du plus fort qu’on peut comprendre ce que la fable fait de sa prétention à la justice.
+Le danger inverse existe. Dans « Le Loup et l’Agneau » (livre I, fable X), l’agneau se tient en aval du loup et répond ainsi à l’accusation de troubler son eau. Il réfute l’accusation suivante par sa date de naissance. Quand le loup invoque un frère, l’agneau répond qu’il n’en a pas. Les motifs du procès deviennent de moins en moins personnels, jusqu’à englober les bergers et les chiens. J’aurais donc tort de tenir la première maxime, sur la « raison du plus fort », pour une profession de foi du fabuliste. La formule finale, « sans autre forme de procès », me fait mesurer l’intervalle entre les raisons successivement alléguées et l’issue acquise d’avance. J’ai dû écouter le loup jusqu’au bout pour découvrir de quel côté de son raisonnement la fable me place.
 
-![Trois décisions devant une voix qui dérange](figures/lectrice.svg)
+![Quatre lectures à l’épreuve d’une voix étrangère](figures/lectrice.svg)
 
 ## Relire la forme du désaccord
 
 Il existe dès lors plusieurs façons de poursuivre un livre auquel on ne peut plus faire le même crédit. On peut le lire comme document sur les valeurs d’un milieu ou pour comprendre comment une société a rendu certaines opinions recevables. Pareille enquête produit un sens réel. Elle n’est pas identique à l’expérience de lecture que Beauvoir décrit. Je ne peux pas opposer la seule existence d’un commentaire savant à l’aveu qu’un livre ne « prend » plus. Il reste pourtant une autre possibilité, intérieure à l’expérience littéraire elle-même. Une œuvre peut faire de la distance entre des voix le moyen par lequel elle suscite mon jugement.
 
 Aux comices agricoles de *Madame Bovary*, les propos de Rodolphe à Emma alternent avec les annonces de prix prononcées sur l’estrade. Si j’isole les mots du séducteur, je peux les approuver ou les mépriser. Si j’entre dans le rythme du montage verbal, les promesses d’exception se croisent avec le langage public de la récompense et de l’évaluation. C’est leur voisinage qui rend audible ce qu’aucune des voix ne voudrait dire d’elle-même. L’ironie ne garantit pas que je doive toujours trancher en faveur de celui qui l’organise. Elle ouvre une tâche qui demeure au lecteur, examiner à qui profite le rire, sur qui tombe le jugement, si la phrase réserve à Emma une part d’expérience que son partenaire ne comprend pas.
+
+Dans la deuxième partie, chapitre VIII, Emma remue les doigts pendant que Rodolphe lui serre la main. La phrase narrative retient deux explications du geste, une tentative de dégager sa main ou une réponse à la pression. Rodolphe en retient une seule et s’écrie « Vous ne me repoussez pas ! » Je puis partager sa certitude si je passe trop vite sur l’alternative grammaticale. Relire la phrase me rend la possibilité qu’il vient d’écarter. J’y découvre une limite dont j’ai moi-même fait l’épreuve en lisant, celle de ma disposition à croire l’interprète le plus affirmatif.
+
+## Conclusion
 
 Je retiens ainsi de Beauvoir que la littérature ne réclame pas une liberté moins exigeante que la vie commune. Elle demande le temps d’une attention dont je ne connais pas d’avance les effets. Je peux suspendre une réaction pour entendre la forme qu’une voix donne à son monde, lui opposer une autre voix, puis préciser les raisons d’un refus. Il m’arrivera de fermer le livre. Une lecture libre peut aussi avoir pour résultat de savoir mieux pourquoi je ne puis continuer, et de distinguer ce refus motivé de la simple habitude de n’entendre que moi.
 
