@@ -1,0 +1,243 @@
+{
+  "slug": "bel_al_anglais-commentaire-et-traduction_2026",
+  "commit_export": "a3e1444cc7ad8f610907a57de886b11ecca54ac1",
+  "arbre_git": "3a8eb4201a9976ec386f2f4e769a505a87526c1c",
+  "archive": "BEL-AL-anglais-commentaire-et-traduction-2026.zip",
+  "agent": "lva_pt_2325",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/al_lve_commun_commentaire_traduction_2026.pdf#page=4",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Anglais%202026.pdf#page=2",
+    "sha256_sujet": "a70699ab765553dd9ad914a5027a2cad6faac518819e96aa6f2a4d96e0be27c6",
+    "sha256_rapport_jury": "00c482cd51fd12a61ef70ee9e667ceab2da69d8656858294b8652f7d160e0a90",
+    "pages_sujet_verifiees": [
+      1,
+      4,
+      5
+    ],
+    "pages_rapport_commun": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ]
+  },
+  "exercices": [
+    {
+      "question": "Commentaire en anglais",
+      "pages_pdf": [
+        4,
+        5
+      ],
+      "lignes": [
+        1,
+        59
+      ]
+    },
+    {
+      "question": "Version française",
+      "pages_pdf": [
+        4
+      ],
+      "lignes": [
+        22,
+        36
+      ],
+      "debut": "She left me, and",
+      "fin": "I fainted."
+    }
+  ],
+  "editions": {
+    "brut": {
+      "pages": 3,
+      "blocs_compares": {
+        "commentaire_anglais": {
+          "pages": [
+            1,
+            2
+          ],
+          "lettres_chiffres": 4533,
+          "mots": 1015,
+          "paragraphes": 8,
+          "empreinte_normalisee": "acaa9114d336721ed3c7f27160eedb033f0c486f4f5402196903fd326d833d65"
+        },
+        "version_francaise": {
+          "pages": [
+            3
+          ],
+          "lettres_chiffres": 1209,
+          "mots": 266,
+          "paragraphes": 2,
+          "empreinte_normalisee": "e56caa040a44dc9200400bea4a5b08bfa170b2c15343be0baec0184333454a8f"
+        }
+      },
+      "signets": [
+        {
+          "titre": "Commentaire",
+          "page": 1,
+          "ecart_points": 6.5
+        },
+        {
+          "titre": "Version — lignes 22 à 36",
+          "page": 3,
+          "ecart_points": 9.1
+        }
+      ],
+      "figures": [
+        {
+          "fichier": "figures/deux-gestes.svg",
+          "question": "Commentaire",
+          "legende": "Le geste répété à la fenêtre",
+          "page": 3,
+          "sha256_svg": "9bc56f8147505f7dd1b67c17c9bd5e602958d5ba6f19ffc42a2d157c55703a71",
+          "sha256_forme_pdf": "03d79519dc663f6f4b77af4dcfea94b0b940d98ef07b1b0ac6d551722fd9b891"
+        }
+      ],
+      "liens_sources": [
+        "https://www.ens-lyon.fr/sites/default/files/2026-10/Anglais%202026.pdf#page=2",
+        "https://www.ens.psl.eu/sites/default/files/al_lve_commun_commentaire_traduction_2026.pdf#page=4"
+      ],
+      "signatures_sur_premiere_page": [
+        "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+        "**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+        "**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+        "**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+      ],
+      "diagnostic_latex_propre": true,
+      "sha256_markdown": "b401941e77d82d0aae2f088ff90c5defcc049a7b9069dae14c6bae98e429a6e0",
+      "sha256_pdf": "61a5c8db110f6d8e6c8d683ca505fcc073d5151d3112d845adccc08fa41c7068"
+    },
+    "guide": {
+      "pages": 5,
+      "blocs_compares": {
+        "commentaire_anglais": {
+          "pages": [
+            2,
+            3,
+            4
+          ],
+          "lettres_chiffres": 4533,
+          "mots": 1015,
+          "paragraphes": 8,
+          "empreinte_normalisee": "acaa9114d336721ed3c7f27160eedb033f0c486f4f5402196903fd326d833d65"
+        },
+        "version_francaise": {
+          "pages": [
+            4
+          ],
+          "lettres_chiffres": 1209,
+          "mots": 266,
+          "paragraphes": 2,
+          "empreinte_normalisee": "e56caa040a44dc9200400bea4a5b08bfa170b2c15343be0baec0184333454a8f"
+        }
+      },
+      "signets": [
+        {
+          "titre": "Présentation du sujet",
+          "page": 1,
+          "ecart_points": 6.8
+        },
+        {
+          "titre": "Commentaire",
+          "page": 1,
+          "ecart_points": 6.8
+        },
+        {
+          "titre": "Construire une question à partir d'un détail",
+          "page": 1,
+          "ecart_points": 4.6
+        },
+        {
+          "titre": "Solution",
+          "page": 1,
+          "ecart_points": 4.6
+        },
+        {
+          "titre": "Organiser les preuves",
+          "page": 2,
+          "ecart_points": 2.6
+        },
+        {
+          "titre": "Commentaire rédigé",
+          "page": 2,
+          "ecart_points": 3.5
+        },
+        {
+          "titre": "Solution",
+          "page": 2,
+          "ecart_points": 5.4
+        },
+        {
+          "titre": "Version — lignes 22 à 36",
+          "page": 4,
+          "ecart_points": 7.0
+        },
+        {
+          "titre": "Solution",
+          "page": 4,
+          "ecart_points": 4.6
+        },
+        {
+          "titre": "Justifier trois décisions de traduction",
+          "page": 4,
+          "ecart_points": 5.6
+        },
+        {
+          "titre": "Bilan",
+          "page": 5,
+          "ecart_points": 3.8
+        }
+      ],
+      "figures": [
+        {
+          "fichier": "figures/deux-gestes.svg",
+          "question": "Commentaire",
+          "legende": "Le geste répété à la fenêtre",
+          "page": 2,
+          "sha256_svg": "9bc56f8147505f7dd1b67c17c9bd5e602958d5ba6f19ffc42a2d157c55703a71",
+          "sha256_forme_pdf": "03d79519dc663f6f4b77af4dcfea94b0b940d98ef07b1b0ac6d551722fd9b891"
+        }
+      ],
+      "liens_sources": [
+        "https://www.ens-lyon.fr/sites/default/files/2026-10/Anglais%202026.pdf#page=2",
+        "https://www.ens.psl.eu/sites/default/files/al_lve_commun_commentaire_traduction_2026.pdf#page=4"
+      ],
+      "signatures_sur_premiere_page": [
+        "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+        "**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+        "**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+        "**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+      ],
+      "diagnostic_latex_propre": true,
+      "sha256_markdown": "5abe1d0526b0d62960d12eb96abf3187a49b75794709379093a79128dbb547ae",
+      "sha256_pdf": "af4c904b9680f22c30d4a8b50e5c31eb2b26f89548290ea5124ecbd025a53c2e"
+    }
+  },
+  "sha256_contenus": {
+    "guide.md": "5abe1d0526b0d62960d12eb96abf3187a49b75794709379093a79128dbb547ae",
+    "brut.md": "b401941e77d82d0aae2f088ff90c5defcc049a7b9069dae14c6bae98e429a6e0",
+    "meta.json": "357363e5c2a6cd432b0e1d0240dc751535a25dd942c69fe8b345551a75621379",
+    "journal-revision.json": "db3c85e92112bb5722c482cfd5e6df616e03286ce783db8fc952b30f0424d872",
+    "figures/deux-gestes.svg": "9bc56f8147505f7dd1b67c17c9bd5e602958d5ba6f19ffc42a2d157c55703a71",
+    "brut.pdf": "61a5c8db110f6d8e6c8d683ca505fcc073d5151d3112d845adccc08fa41c7068",
+    "guide.pdf": "af4c904b9680f22c30d4a8b50e5c31eb2b26f89548290ea5124ecbd025a53c2e"
+  },
+  "sha256_archive": "80518f11db297a6ee2cd48fdda9f79ea1cf2f936a71bc48dfe056a1f291da456"
+}
