@@ -4,20 +4,32 @@
     "concours": "ENS",
     "filiere": "MP-PC",
     "matiere": "Mathématiques MPI 2",
-    "annee": 2007
+    "annee": 2007,
+    "duree": "4 h",
+    "code_garde": "70.03M",
+    "modalite": "écrit"
   },
   "questions": 37,
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
     "sujet": "https://www.ens.psl.eu/IMG/file/concours/2007/MP/mp_math_mpi2.pdf",
     "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2007/MP/mp_ecrit_maths_2.pdf",
-    "sha256_sujet": "5be23ed3d8c04e2a718aa0930b616b7454d192d485df98204bdf73314cad5a40"
+    "sha256_sujet": "5be23ed3d8c04e2a718aa0930b616b7454d192d485df98204bdf73314cad5a40",
+    "index": "https://www.ens.psl.eu/rapports-et-sujets-2007-mpi",
+    "sha256_rapport_jury": "e6d3c40dfba1dce99ee8b5121e828f59fe5285c1c5b56cf14dd9738afa8a982e",
+    "index_rapport": "https://www.ens.psl.eu/rapports-et-sujets-2007-mpi"
   },
   "figures": [
     {
       "fichier": "figures/selection-frequentielle.svg",
       "question": "IV.3.b",
       "legende": "Pour b = 2, la fenêtre fréquentielle est positive entre ½ et 2. Parmi les fréquences dilatées 2ⁿ⁻ᴺ, seule la fréquence 1 contribue."
+    },
+    {
+      "question": "IV.3.b",
+      "fichier": "figures/module-extrait.svg",
+      "legende": "Pour b égal à deux, le coefficient normalisé reste égal à un au seuil a égal à un, et croît si a est plus petit.",
+      "provenance": "Figure originale de la révision."
     }
   ],
   "contributions": [
@@ -31,6 +43,400 @@
       "perimetre": "Rédaction intégrale des cinq parties des deux éditions après lecture du sujet et du rapport. Estimations höldériennes et des différences secondes, inversion de Fourier, construction de l’ondelette à deux moments nuls, non-dérivabilité y compris à l’exposant un, alternative pour les valeurs réelles et complexes. Schéma du filtrage fréquentiel.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "x_hist_1987",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Confrontation des 37 rubriques au fascicule, vérifications de fond et de la figure précédente ou des figures précédentes ; compléments aux deux éditions portant sur les points suivants : bornes des différences secondes, domination des sommes de Riemann, moments de l’ondelette, coefficient complexe exact et propagation de l’oscillation.",
+      "questions_modifiees": [
+        "I.5.b",
+        "II.1.b",
+        "III.3",
+        "IV.3.b",
+        "V.2.c"
+      ]
     }
-  ]
+  ],
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens.psl.eu/IMG/file/concours/2007/MP/mp_math_mpi2.pdf",
+      "index": "https://www.ens.psl.eu/rapports-et-sujets-2007-mpi",
+      "sha256": "5be23ed3d8c04e2a718aa0930b616b7454d192d485df98204bdf73314cad5a40",
+      "pages": 8,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "04d361c37d13245c3d213a37ab90fc7e3160b15cda3ef9d8fe01b29f89618ed8"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "7cb7702205e43dd81ae0cc8124bf2ec6dd3d21ccb1e6ba43309d6d676780bc27"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "89d0c8cd7030f45e32b7e4ad6033b4d30fcfe3c06959a19a5ad3e469c49e2057"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "0dcb764e503b79425e4c0b4732df51ad734606f530c82355326a1da1bade40d0"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "55f7abc3c299170fb9e9b83e699ed20184e3d3bda0969a6fc6f21bb903ed07d7"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "47f708ac61d38ca73d4de90287fabd8e7b16c8c2ff994d67f775de7c3b4db151"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "fbe288df57734220ccb46af455f1e10b7a3412db672f22f7b516677ed6e42c65"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "b0cde76be46d15ad0e4588fce6b4e388709da03818d3f4505f171ef0939e2151"
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://www.ens.psl.eu/IMG/file/concours/2007/MP/mp_ecrit_maths_2.pdf",
+      "index": "https://www.ens.psl.eu/rapports-et-sujets-2007-mpi",
+      "sha256": "e6d3c40dfba1dce99ee8b5121e828f59fe5285c1c5b56cf14dd9738afa8a982e",
+      "pages": 4,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "48e888849180be51151b76b098e253bf5cea153cadb057f144f63cfb6f24d6db"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "ebdedc27ca86d3cef0a57fac87404231db50e099b187f6522d9dcc80b0e15ef4"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "b9db707b53aad776ca44baab9599681372bfc7ede5c6d8afeaef813e5de02587"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "13cc151b8c6e406ded43b1bfbb6482370798b96031fdd404bf0eab794e704732"
+        }
+      ]
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3.a",
+      "I.3.b",
+      "I.4.a",
+      "I.4.b",
+      "I.5.a",
+      "I.5.b",
+      "II.1.a",
+      "II.1.b",
+      "II.1.c",
+      "II.2",
+      "II.3",
+      "II.4.a",
+      "II.4.b",
+      "II.4.c",
+      "II.5",
+      "II.6",
+      "III.1.a",
+      "III.1.b",
+      "III.2.a",
+      "III.2.b",
+      "III.2.c",
+      "III.2.d",
+      "III.3",
+      "IV.1",
+      "IV.2.a",
+      "IV.2.b",
+      "IV.3.a",
+      "IV.3.b",
+      "V.1",
+      "V.2.a",
+      "V.2.b",
+      "V.2.c",
+      "V.2.d",
+      "V.3",
+      "V.4"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "annexes_imposees": [],
+    "repere_par_question": [
+      {
+        "question": "I.1",
+        "page_pdf": 2,
+        "pages_rapport": [
+          2
+        ]
+      },
+      {
+        "question": "I.2",
+        "page_pdf": 2,
+        "pages_rapport": [
+          2
+        ]
+      },
+      {
+        "question": "I.3.a",
+        "page_pdf": 3,
+        "pages_rapport": [
+          2
+        ]
+      },
+      {
+        "question": "I.3.b",
+        "page_pdf": 3,
+        "pages_rapport": [
+          2
+        ]
+      },
+      {
+        "question": "I.4.a",
+        "page_pdf": 3,
+        "pages_rapport": [
+          2
+        ]
+      },
+      {
+        "question": "I.4.b",
+        "page_pdf": 3,
+        "pages_rapport": [
+          2
+        ]
+      },
+      {
+        "question": "I.5.a",
+        "page_pdf": 3,
+        "pages_rapport": [
+          2
+        ]
+      },
+      {
+        "question": "I.5.b",
+        "page_pdf": 3,
+        "pages_rapport": [
+          2
+        ]
+      },
+      {
+        "question": "II.1.a",
+        "page_pdf": 3,
+        "pages_rapport": [
+          2
+        ]
+      },
+      {
+        "question": "II.1.b",
+        "page_pdf": 3,
+        "pages_rapport": [
+          2
+        ]
+      },
+      {
+        "question": "II.1.c",
+        "page_pdf": 4,
+        "pages_rapport": [
+          2
+        ]
+      },
+      {
+        "question": "II.2",
+        "page_pdf": 4,
+        "pages_rapport": [
+          3
+        ]
+      },
+      {
+        "question": "II.3",
+        "page_pdf": 4,
+        "pages_rapport": [
+          3
+        ]
+      },
+      {
+        "question": "II.4.a",
+        "page_pdf": 4,
+        "pages_rapport": [
+          3
+        ]
+      },
+      {
+        "question": "II.4.b",
+        "page_pdf": 4,
+        "pages_rapport": [
+          3
+        ]
+      },
+      {
+        "question": "II.4.c",
+        "page_pdf": 4,
+        "pages_rapport": [
+          3
+        ]
+      },
+      {
+        "question": "II.5",
+        "page_pdf": 4,
+        "pages_rapport": [
+          3
+        ]
+      },
+      {
+        "question": "II.6",
+        "page_pdf": 4,
+        "pages_rapport": [
+          3
+        ]
+      },
+      {
+        "question": "III.1.a",
+        "page_pdf": 5,
+        "pages_rapport": [
+          3
+        ]
+      },
+      {
+        "question": "III.1.b",
+        "page_pdf": 5,
+        "pages_rapport": [
+          3
+        ]
+      },
+      {
+        "question": "III.2.a",
+        "page_pdf": 5,
+        "pages_rapport": [
+          3
+        ]
+      },
+      {
+        "question": "III.2.b",
+        "page_pdf": 5,
+        "pages_rapport": [
+          3
+        ]
+      },
+      {
+        "question": "III.2.c",
+        "page_pdf": 5,
+        "pages_rapport": [
+          3
+        ]
+      },
+      {
+        "question": "III.2.d",
+        "page_pdf": 5,
+        "pages_rapport": [
+          3
+        ]
+      },
+      {
+        "question": "III.3",
+        "page_pdf": 5,
+        "pages_rapport": [
+          3
+        ]
+      },
+      {
+        "question": "IV.1",
+        "page_pdf": 5,
+        "pages_rapport": [
+          3
+        ]
+      },
+      {
+        "question": "IV.2.a",
+        "page_pdf": 6,
+        "pages_rapport": [
+          3
+        ]
+      },
+      {
+        "question": "IV.2.b",
+        "page_pdf": 6,
+        "pages_rapport": [
+          4
+        ]
+      },
+      {
+        "question": "IV.3.a",
+        "page_pdf": 6,
+        "pages_rapport": [
+          4
+        ]
+      },
+      {
+        "question": "IV.3.b",
+        "page_pdf": 6,
+        "pages_rapport": [
+          4
+        ]
+      },
+      {
+        "question": "V.1",
+        "page_pdf": 6,
+        "pages_rapport": [
+          4
+        ]
+      },
+      {
+        "question": "V.2.a",
+        "page_pdf": 6,
+        "pages_rapport": [
+          4
+        ]
+      },
+      {
+        "question": "V.2.b",
+        "page_pdf": 7,
+        "pages_rapport": [
+          4
+        ]
+      },
+      {
+        "question": "V.2.c",
+        "page_pdf": 7,
+        "pages_rapport": [
+          4
+        ]
+      },
+      {
+        "question": "V.2.d",
+        "page_pdf": 7,
+        "pages_rapport": [
+          4
+        ]
+      },
+      {
+        "question": "V.3",
+        "page_pdf": 7,
+        "pages_rapport": [
+          4
+        ]
+      },
+      {
+        "question": "V.4",
+        "page_pdf": 7,
+        "pages_rapport": [
+          4
+        ]
+      }
+    ]
+  }
 }

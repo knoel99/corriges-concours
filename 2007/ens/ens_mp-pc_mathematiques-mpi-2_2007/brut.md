@@ -4,6 +4,10 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+La garde 70.03M porte une durée de quatre heures. L’épreuve est commune aux ENS de Paris, Lyon et Cachan pour les groupes MP/MPI et I de la filière MP. Pour le groupe I des filières MP et PC, elle est aussi proposée en option commune à Paris et Lyon. Une calculatrice de poche autonome, non imprimante et sans document d’accompagnement est autorisée. [Sujet officiel](https://www.ens.psl.eu/IMG/file/concours/2007/MP/mp_math_mpi2.pdf) · [Rapport du jury](https://www.ens.psl.eu/IMG/file/concours/2007/MP/mp_ecrit_maths_2.pdf).
+
 La série de Weierstrass superpose les fréquences $b^n$. Pour tester sa dérivabilité, on construit une ondelette dont la transformée de Fourier ne retient qu’une seule de ces fréquences à la fois.
 
 ## I. Équation fonctionnelle et régularité
@@ -42,6 +46,8 @@ La dérivée seconde continue périodique est bornée. Pour $h\ge0$, la différe
 
 Pour $0<d=|h|\le1$, choisir $N$ tel que $b^{-N-1}<d\le b^{-N}$. Pour $n<N$, I.5.a majore le terme de différence seconde, avec $a=1$, par $\|g''\|_\infty d^2b^n$. Leur somme est au plus $\|g''\|_\infty d/(b-1)$. La queue est au plus $4\|g\|_\infty b^{-N}/(1-b^{-1})\le4b\|g\|_\infty d/(1-b^{-1})$. En ajoutant les deux bornes on obtient un $C'$ uniforme. Pour $h=0$, la différence est nulle.
 
+Le terme d’indice $n<N$ est évalué au pas $b^n d\le1$ ; c’est ce qui autorise l’utilisation de I.5.a telle qu’énoncée. Les termes de la queue ne demandent aucune hypothèse de régularité supplémentaire. Cette estimation de différence seconde n’affirme pas que $W$ est lipschitzienne.
+
 ## II. Inversion de Fourier par périodisation
 
 ### Question II.1.a
@@ -51,6 +57,8 @@ Il existe $C$ tel que $|f(x)|\le C/(1+x^2)$, par continuité sur les compacts et
 ### Question II.1.b
 
 Pour $0<h\le1$, posons $F_h(x)=f(h\lfloor x/h\rfloor)$ sur $\mathbb R_+$. Son intégrale est $h\sum_{n\ge0}f(nh)$ et $F_h(x)\to f(x)$ par continuité. Pour $x\ge2$, $h\lfloor x/h\rfloor\ge x-1\ge x/2$, donc $|F_h(x)|\le C/(1+x^2/4)$. Sur $[0,2]$, une constante suffit. La convergence dominée donne la limite $\int_0^\infty f$.
+
+La domination s’applique à la fonction complexe grâce à son module. Elle porte simultanément sur tous les $0<h\le1$, y compris sur la queue infinie de la somme. La simple convergence des sommes de Riemann sur chaque segment, sans ce contrôle de queue, ne suffirait pas sur la demi-droite.
 
 ### Question II.1.c
 
@@ -117,6 +125,8 @@ La fonction $B(s)=\psi_0(s-a)\psi_0(b-s)$ est réelle et $C^\infty$. Ses deux fa
 
 Pour $b>1$, prenons pour $B$ la fonction précédente avec extrémités $1/b,b$. Elle est lisse à support compact, donc dans $\mathcal S$. Posons $\Psi_b=\overline{\mathcal F}B$. Par III.1.b et réflexion, elle est dans $\mathcal S$, donc $\Psi_b$ et $x\Psi_b$ sont intégrables. Par II.6 appliquée à $B$, en utilisant que réflexion et transformée commutent, $\mathcal F\Psi_b=B$. La valeur et la dérivée de $B$ à zéro sont nulles, d’où $\int\Psi_b=0$ et $\int x\Psi_b(x)\,dx=0$ par III.1.a. Si l’on prend littéralement $0<b\le1$ dans cette seule question, l’intervalle ouvert est vide et la fonction nulle convient.
 
+Avec la convention unitaire choisie, $B(0)=(2\pi)^{-1/2}\int\Psi_b$ et $B'(0)=-i(2\pi)^{-1/2}\int x\Psi_b(x)\,dx$. Les deux membres de gauche sont nuls puisque $B$ s’annule sur un voisinage de zéro. Les intégrales existent absolument par décroissance rapide, y compris celle qui comporte le facteur $x$.
+
 ## IV. La série de cosinus est partout non dérivable
 
 ### Question IV.1
@@ -143,6 +153,14 @@ Cette quantité ne tend vers zéro pour aucun $x$, en contradiction avec la cond
 
 ![Figure 1 — Pour b = 2, la fenêtre fréquentielle est positive entre ½ et 2. Parmi les fréquences dilatées 2ⁿ⁻ᴺ, seule la fréquence 1 contribue.](figures/selection-frequentielle.svg)
 
+Plus précisément, avec la fenêtre complexe $\Psi_b$ on obtient
+$$
+ c(\alpha_N,x)=\pi\sqrt{2\pi}\,B(1)b^{(1-a)N}e^{-2\pi i b^N x}.
+$$
+Le facteur de phase a toujours un module égal à un. Au seuil $a=1$ le module reste donc strictement positif, même lorsqu’il y a oscillation de phase. L’argument ne suppose à aucun moment que l’intégrale contre un cosinus soit une partie réelle de transformée.
+
+![Pour b égal à deux, le coefficient normalisé reste égal à un au seuil a égal à un, et croît si a est plus petit.](figures/module-extrait.svg)
+
 ## V. Alternative entre accroissements bornés et non-dérivabilité
 
 ### Question V.1
@@ -160,6 +178,8 @@ Par périodicité de $W$, chaque paire $x_0+k,x_0+k+h$ convient. Prenons par exe
 ### Question V.2.c
 
 Le choix de $N$ donne $l\le b^N\ell(J)<bl$. Dans $I=b^NJ$, V.2.b fournit $z,z+h$ de quotient au moins $K(1+u)$. V.1 appliquée $N$ fois donne pour $x_J=z/b^N$, $y_J=(z+h)/b^N$ dans $J$ un quotient au moins $K(1+uB^N)\ge Ku b^{N(1-a)}$. Leur distance est exactement $hb^{-N}$.
+
+Le facteur multiplicatif des excès au-dessus du seuil est $B=b^{1-a}$ à chaque étape. C’est pourquoi le produit du quotient par la distance donne à l’étape suivante la puissance $B^N b^{-N}=b^{-aN}$, qui gouverne la minoration de l’oscillation.
 
 ### Question V.2.d
 
