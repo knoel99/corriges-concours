@@ -16,11 +16,11 @@ La cinquième pièce est un graphique empilé. Lire l’épaisseur de chaque ban
 
 L’article du portail ECO compare les effets selon les secteurs et distingue les observations sur l’emploi d’une projection concernant les touristes en 2030. Pour relier les deux pays, partir ensuite du rôle de l’agriculture, tout en gardant les échelles : parcelles entretenues au Portugal, bénéfices et risques des résidus de cultures annuelles au Brésil. L’action menée avec les écoles de Guariba donne un exemple de prévention collective.
 
+![Schéma — Comparer les surfaces, les usages et les décisions](figures/lecture-croisee.svg)
+
 Pour 2030, ECO distingue les pertes de recettes associées aux arrivées de touristes résidents et étrangers. Les valeurs sont exprimées en millions d’euros par an. Le document 5 permet une comparaison de fréquences sur une période antérieure. La date de consultation est la seule date fournie pour les documents 1 et 3. La copie adopte le portugais européen.
 
 Le titre compte 16 mots. Les paragraphes en comptent respectivement 69, 102, 104 et 127, pour un total de 418. Les repères sont placés après chaque groupe de vingt, titre compris. L’indication du total, puis FIN, suivent la composition.
-
-![Schéma — Comparer les surfaces, les usages et les décisions](figures/lecture-croisee.svg)
 
 ## Incêndios em Portugal e no Brasil entre o custo dos danos e o trabalho de prevenção
 
