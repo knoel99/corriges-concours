@@ -4,7 +4,11 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le sujet part de la convexité et construit trois régularisations d’une image. Le rapport du jury demande de justifier l’existence des minima et la convergence des suites. On traite explicitement le pas nul autorisé par la partie 3.
+
+Le livret place les questions aux pages imprimées 3 à 7. Pour lire le PDF présenté en doubles pages, suivre les numéros imprimés. Le rapport relève notamment deux difficultés reprises ici, la preuve de la stricte convexité et le passage des incréments à la convergence de la suite. [Sujet officiel](https://www.ens.psl.eu/IMG/file/concours/2009/MP/2009_sujet_mp_math_mpi2.pdf) · [Rapport du jury](https://www.ens.psl.eu/IMG/file/concours/2009/MP/mp2009_ecri_mathmpi2.pdf)
 
 ## 1. Convexité
 
@@ -210,6 +214,10 @@ Pour $\tau>0$, 3.4 donne $G(u^n)\le G(u^0)$. Comme $\frac12\|u^n-f\|^2\le G(u^n)
 
 Supposons $\tau>0$. La suite est bornée en dimension finie. Si $u^{n_j}\to v$, les incréments tendent vers zéro, donc $u^{n_j+1}\to v$ aussi. L’équation de 3.3 et la continuité du gradient donnent $\tau\nabla G(v)=0$. Ainsi $v$ est l’unique minimiseur de 3.2. Une suite bornée ayant une seule valeur d’adhérence converge vers elle, car une sous-suite restant à distance positive aurait une autre valeur d’adhérence. En revanche, pour $\tau=0$ l’itération reste à $u^0$ et ne converge vers le minimiseur que si elle y débute. Par exemple, pour $f=0$ le minimiseur est zéro et $u^0=e$ reste fixe.
 
+On peut quantifier cette convergence. Notons $u_*$ le minimiseur. Le gradient de la somme des pénalités est monotone par 1.5.a. Le terme quadratique donne donc
+$$\langle\nabla G(x)-\nabla G(u_*),x-u_*\rangle\ge\|x-u_*\|^2.$$
+Appliquons cette inégalité à $x=u^{n+1}$ et utilisons $u^n=x+\tau\nabla G(x)$ et $\nabla G(u_*)=0$. Il vient $(1+\tau)\|x-u_*\|^2\le \langle u^n-u_*,x-u_*\rangle$. Cauchy–Schwarz donne $\|u^n-u_*\|\le(1+\tau)^{-n}\|u^0-u_*\|$. Le facteur vaut exactement un lorsque le pas est nul.
+
 ### Question 3.7
 
 > [!INDICATION]
@@ -258,6 +266,8 @@ Pour deux nombres $a,b>0$, $a-b+(b^2-a^2)/(2a)=(b-a)^2/(2a)\ge0$. Les $a_i,b_i$ 
 Posons $s=(Au)_i$, $r=(Av)_i$. L’identité de 4.3.a appliquée à $a=p(s)$ et $b=p(r)$, soit aux carrés des racines notées $a_i,b_i$ dans l’énoncé, donne $p(r)\le p(s)+(r^2-s^2)/(2p(s))$. Développons $r^2-s^2=2s(r-s)+(r-s)^2$. En sommant et en ajoutant le développement exact de $\tfrac12\|v-f\|^2$ autour de $u$, on trouve $G(v)\le G(u)+\langle v-u,\nabla G(u)\rangle+\tfrac12\langle v-u,\mathcal A(u)(v-u)\rangle=\mathcal G(v,u)$. Il y a égalité pour $v=u$.
 
 ![Figure 1 — Chaque pénalité scalaire admet une majorante quadratique tangente au point courant. Ici le point courant vaut 1 et le paramètre de lissage vaut 0,4.](figures/penalite-majorante.svg)
+
+Pour lire la figure, la différence entre la majorante et la pénalité vaut exactement $[p(r)-p(s)]^2/(2p(s))$. Avec $s=1$ et $\varepsilon=0{,}4$, elle s’annule en $r=1$ et en $r=-1$. Aux deux contacts, les dérivées coïncident puisque la différence est un carré différentiable qui s’annule.
 
 ### Question 4.4
 
@@ -314,3 +324,5 @@ Pour $v$ fixé, l’infimum en $u$ vaut $d(v)=(\|f\|^2-\|f-Av\|^2)/2$ et il est 
 #### Solution
 
 Posons $u_*=f-w$ et choisissons $v_*$ comme ci-dessus. Pour chaque $v$ du cube, $Av\in K$ et $\langle f-w,Av-w\rangle\le0$. Par symétrie, $L(u_*,v)-L(u_*,v_*)=\langle u_*,Av-w\rangle\le0$. D’autre part $u_*=f-Av_*$ minimise $L(\cdot,v_*)$. Ainsi $L(u_*,v)\le L(u_*,v_*)\le L(u,v_*)$ pour tout $u,v$ admissible. En prenant les bornes et en utilisant l’inégalité générale $\sup_v\inf_u L\le\inf_u\sup_v L$, on obtient l’égalité (5), les deux côtés valant $L(u_*,v_*)$.
+
+Vérifions le point selle sur un exemple à deux composantes. Prenons $A=\left(\begin{smallmatrix}1&-1\\-1&1\end{smallmatrix}\right)$ et $f=(5,0)$. Alors $K=\{(s,-s): |s|\le2\}$ et la distance au carré vaut $(5-s)^2+s^2$. Le minimum sur le segment est atteint en $s=2$, donc $w=(2,-2)$ et $u_*=(3,2)$. Ici $v_*=(1,-1)$ convient. Le coût primal vaut $4+2=6$ et la valeur duale vaut $(25-13)/2=6$.
