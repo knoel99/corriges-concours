@@ -11,7 +11,14 @@
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-i/session-2011/2011%20Math_MP_C.pdf",
     "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/session-2011/rap_ecrit_maths_c_ulc_mp2011.pdf",
-    "sha256_sujet": "58184230245ae19d6c94e4733a74cd593d6b15890f22d5f3bce3d9dd136861db"
+    "sha256_sujet": "58184230245ae19d6c94e4733a74cd593d6b15890f22d5f3bce3d9dd136861db",
+    "index_banque": "https://banques-ecoles.fr/cms/filiere-mp/les-annales-et-rapports-des-jurys/",
+    "index_banque_sha256": "67fa50ead9db4fee6c25d3833790662acbedb7f5b4a4b56699f7bcf5d659bbf5",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/session-2011/rap_ecrit_maths_c_ulc_mp2011.pdf",
+    "sujet_sha256": "58184230245ae19d6c94e4733a74cd593d6b15890f22d5f3bce3d9dd136861db",
+    "sujet_pages": 7,
+    "rapport_sha256": "ee9a7a00e0d0612e63aa08e8dbf1eeaa21c878ec5b94667f1335bcbd27f1cfa5",
+    "rapport_pages": 2
   },
   "figures": [
     {
@@ -31,6 +38,62 @@
       "perimetre": "Rédaction des deux éditions à partir du sujet de sept pages et du rapport commun de Cachan, Lyon et Paris. Simplicité de la valeur propre, compacité dans le sous-espace de moyenne nulle, développement de l’entropie, positivité du semi-groupe, variation totale, transformée sur l’hypercube et comparaison des deux temps suffisants. Figure calculée avec les deux expressions démontrées.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Vérification des 29 alinéas du sujet de diffusion et des remarques du jury. Contrôle de toutes les normalisations, de la stricte positivité pour une donnée concentrée, du trou spectral par les caractères du cube et de la comparaison des deux temps suffisants jusque dans le cas d’un bit.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1.a",
+      "1.1.b",
+      "1.1.c",
+      "1.2.a",
+      "1.2.b",
+      "1.3.a",
+      "1.3.b",
+      "1.3.c",
+      "2.1",
+      "2.2.a",
+      "2.2.b",
+      "2.3.a",
+      "2.3.b",
+      "2.3.c",
+      "2.4.a",
+      "2.4.b",
+      "2.4.c",
+      "2.4.d",
+      "2.5.a",
+      "2.5.b",
+      "3.1.a",
+      "3.1.b",
+      "3.1.c",
+      "3.2",
+      "3.3.a",
+      "3.3.b",
+      "3.3.c",
+      "3.4.a",
+      "3.4.b"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "precision": "Vérification des 29 alinéas du sujet de diffusion et des remarques du jury. Contrôle de toutes les normalisations, de la stricte positivité pour une donnée concentrée, du trou spectral par les caractères du cube et de la comparaison des deux temps suffisants jusque dans le cas d’un bit.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "relecture_corrige",
+      "perimetre": "Vérification des 29 alinéas du sujet de diffusion et des remarques du jury. Contrôle de toutes les normalisations, de la stricte positivité pour une donnée concentrée, du trou spectral par les caractères du cube et de la comparaison des deux temps suffisants jusque dans le cas d’un bit.",
+      "sha256_sujet_controle": "58184230245ae19d6c94e4733a74cd593d6b15890f22d5f3bce3d9dd136861db",
+      "sha256_rapport_controle": "ee9a7a00e0d0612e63aa08e8dbf1eeaa21c878ec5b94667f1335bcbd27f1cfa5"
+    }
+  }
 }

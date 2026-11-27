@@ -1,0 +1,75 @@
+{
+  "slug": "bel_bl_allemand_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Allemand",
+    "intitule": "Analyse et commentaire de textes ou documents en allemand",
+    "annee": 2024,
+    "modalite": "écrit",
+    "duree": "6 heures"
+  },
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2024_blses_sujet_analyse_commentaire_allemand.pdf",
+    "sha256_sujet": "58a021b441ba9cf664072b02f82cd7ba6549b85dfa37847636d6152164d36748",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_ecrit_allemand.pdf",
+    "sha256_rapport": "9de6f9e58c8cf598cd30ba4326dbaa058e329ca8477b5d291b5319a2d2c4ce67"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "date": "2026-11-26",
+      "agent": "fui_physique_un",
+      "fournisseur": "codex",
+      "perimetre": "Analyse et commentaire rédigés en allemand des cinq documents des six pages PDF, y compris le graphique gradué, sa note de périmètre et les positions discordantes du document 4. Lecture visuelle des fac-similés et consultation du rapport 2024 propre à la discipline."
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Analyse et commentaire de textes ou documents en allemand"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Analyse et commentaire rédigés en allemand des cinq documents des six pages PDF, y compris le graphique gradué, sa note de périmètre et les positions discordantes du document 4.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "auteur_ou_titre": "Universitätsmodelle in Deutschland, von Wilhelm von Humboldt bis zur Debatte über Drittmittel",
+      "passages_ou_documents": [
+        "Dokument 1",
+        "Dokument 2",
+        "Dokument 3",
+        "Dokument 4",
+        "Dokument 5"
+      ],
+      "pages_pdf_par_passage_ou_document": {
+        "Dokument 1": "1",
+        "Dokument 2": "2",
+        "Dokument 3": "3–4",
+        "Dokument 4": "4–5",
+        "Dokument 5": "6"
+      },
+      "repères_imprimés": [
+        "Dokument 1",
+        "Dokument 2",
+        "Dokument 3",
+        "Dokument 4",
+        "Dokument 5"
+      ]
+    }
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Analyse et commentaire de textes ou documents en allemand",
+      "legende": "Drei verschiedene Fragen an die Autonomie der Universität, jeweils mit dem Dokument, das sie am deutlichsten stellt."
+    }
+  ]
+}

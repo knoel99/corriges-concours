@@ -1,0 +1,347 @@
+{
+  "slug": "banque-pt_pt_maths-c_2013",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths C",
+    "intitule": "Épreuve de Mathématiques C",
+    "annee": 2013,
+    "duree": "4 h",
+    "modalite": "écrit",
+    "code_garde": null
+  },
+  "questions": 30,
+  "redaction": "Proposition pédagogique non officielle, rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2013/math_c_2013_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2013/rapport_math_c_ecrit_2013.pdf",
+    "livret": "https://www.banquept.fr/documents/livret/2013/Livret_PT_2013.pdf",
+    "sujet_sha256": "3df0e2b3832746ca66f4e81b0b97b9242d5f022b63700327dfbdde52f65bdfa8",
+    "rapport_jury_sha256": "8bc7221827bad9af835f70ef586f0a16ef63db08e3696d53dc181b856758be50",
+    "observation_rapport": "Le jury commente I.2.g à la page 3 et passe à II sans rubrique I.2.h. La dernière étape I.2.h est présente sur le sujet et traitée."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2013/math_c_2013_pt.pdf",
+      "sha256": "3df0e2b3832746ca66f4e81b0b97b9242d5f022b63700327dfbdde52f65bdfa8",
+      "pages": 5,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "a0e07bae3e7df9a6a391a345e1af2e765642161593480947177847e4d2b8115f"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "ca619115a63c8746b63d89ebb6dc1077f65dcf1cf8c91b0946d5de074a82f879"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "61589522090685e246427a2b72e84d627f4cabe05036b5d4f385e035f5569850"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "64d2746da4da6ade4193c44f244a3f032121bbb1b240d76353891f8905ffc5cb"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2013/rapport_math_c_ecrit_2013.pdf",
+      "sha256": "8bc7221827bad9af835f70ef586f0a16ef63db08e3696d53dc181b856758be50",
+      "pages": 4,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "ea7af0e61186f2e7b681cabbf9af449f1153f7c1c2deebefdcbbc9caed06f7fd"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "7594a9c2c91029114604846bad204e7b08b4b6a320ad6b2678f459453eb30e68"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "7d4260a08894183a379ed160d66e16e6f77e3b24b28167e8396f2d19b824d49d"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "b5b784355acfbe9182ed5475bfb69a0a30890d7408a22305ae2901dc76eb9c44"
+        }
+      ]
+    },
+    "livret": {
+      "url": "https://www.banquept.fr/documents/livret/2013/Livret_PT_2013.pdf",
+      "sha256": "a5ec06950020d6468198946219e761ae339b23d5e278f19d09876bacabb64a0e",
+      "pages": 73,
+      "pages_verifiees": [
+        {
+          "numero": 8,
+          "rendu_sha256": "a31d23eb3bca3736bb134af793e6d08fb3f628e54d184b5c52e524c1f262f420"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "525d1476ae195bc990fb71948e6d4d96e0000dbd2baecf8badad33446bf8380d"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "ecd5a754a31ce01664a74d6279ba805b19320c0cb12da5d872bdde729071de93"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "I.1.c",
+      "fichier": "figures/fourier-sauts.svg",
+      "legende": "Aux sauts, la valeur indiquée par le point plein est la moyenne des deux limites latérales.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "II.7",
+      "fichier": "figures/amortissement.svg",
+      "legende": "L’intégrale amortie part de sa limite π/2 en zéro et tend vers zéro sous le majorant 1/x.",
+      "provenance": "Figure originale."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1.a",
+      "I.1.b",
+      "I.1.c",
+      "I.1.d",
+      "I.1.e",
+      "I.2.a",
+      "I.2.b",
+      "I.2.c",
+      "I.2.d",
+      "I.2.e",
+      "I.2.f",
+      "I.2.g",
+      "I.2.h",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "II.8",
+      "III.1",
+      "III.2.a",
+      "III.2.b",
+      "III.2.c",
+      "III.2.d",
+      "III.2.e.i",
+      "III.2.e.ii",
+      "III.2.e.iii",
+      "III.3"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "annexes_imposees": [],
+    "document_reponse_mentionne": null,
+    "repere_par_question": [
+      {
+        "question": "I.1.a",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Coefficients de la dent de scie"
+      },
+      {
+        "question": "I.1.b",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Théorème de Dirichlet"
+      },
+      {
+        "question": "I.1.c",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Limite en tout réel"
+      },
+      {
+        "question": "I.1.d",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Somme sur la demi-période"
+      },
+      {
+        "question": "I.1.e",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Série de Leibniz"
+      },
+      {
+        "question": "I.2.a",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Échange du sinus et du cosinus"
+      },
+      {
+        "question": "I.2.b",
+        "page_pdf": 2,
+        "page_rapport": 3,
+        "objet": "Partage de Wallis"
+      },
+      {
+        "question": "I.2.c",
+        "page_pdf": 2,
+        "page_rapport": 3,
+        "objet": "Formules d’Euler"
+      },
+      {
+        "question": "I.2.d",
+        "page_pdf": 2,
+        "page_rapport": 3,
+        "objet": "Binôme de Newton"
+      },
+      {
+        "question": "I.2.e",
+        "page_pdf": 2,
+        "page_rapport": 3,
+        "objet": "Modes exponentiels"
+      },
+      {
+        "question": "I.2.f",
+        "page_pdf": 2,
+        "page_rapport": 3,
+        "objet": "Linéarisation"
+      },
+      {
+        "question": "I.2.g",
+        "page_pdf": 2,
+        "page_rapport": 3,
+        "objet": "Intégration du mode constant"
+      },
+      {
+        "question": "I.2.h",
+        "page_pdf": 2,
+        "page_rapport": null,
+        "objet": "Produit de Wallis"
+      },
+      {
+        "question": "II.1",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Majoration du sinus cardinal"
+      },
+      {
+        "question": "II.2",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Existence des deux intégrales"
+      },
+      {
+        "question": "II.3",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Continuité et dérivation sous l’intégrale"
+      },
+      {
+        "question": "II.4",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Relation entre les deux fonctions"
+      },
+      {
+        "question": "II.5",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Valeur de la dérivée"
+      },
+      {
+        "question": "II.6",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Limite en l’infini"
+      },
+      {
+        "question": "II.7",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Expression de l’intégrale amortie"
+      },
+      {
+        "question": "II.8",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Intégrale de Dirichlet"
+      },
+      {
+        "question": "III.1",
+        "page_pdf": 3,
+        "page_rapport": 4,
+        "objet": "Existence de l’intégrale elliptique"
+      },
+      {
+        "question": "III.2.a",
+        "page_pdf": 3,
+        "page_rapport": 4,
+        "objet": "Domaine réel"
+      },
+      {
+        "question": "III.2.b",
+        "page_pdf": 3,
+        "page_rapport": 4,
+        "objet": "Dérivée"
+      },
+      {
+        "question": "III.2.c",
+        "page_pdf": 4,
+        "page_rapport": 4,
+        "objet": "Existence d’un développement entier"
+      },
+      {
+        "question": "III.2.d",
+        "page_pdf": 4,
+        "page_rapport": 4,
+        "objet": "Équation différentielle"
+      },
+      {
+        "question": "III.2.e.i",
+        "page_pdf": 4,
+        "page_rapport": 4,
+        "objet": "Récurrence des coefficients"
+      },
+      {
+        "question": "III.2.e.ii",
+        "page_pdf": 4,
+        "page_rapport": 4,
+        "objet": "Coefficients pairs et impairs"
+      },
+      {
+        "question": "III.2.e.iii",
+        "page_pdf": 4,
+        "page_rapport": 4,
+        "objet": "Série entière de f"
+      },
+      {
+        "question": "III.3",
+        "page_pdf": 4,
+        "page_rapport": 4,
+        "objet": "Série sans intégrales"
+      }
+    ]
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_hist_1987",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture des 30 questions ou sous-questions et du rapport institutionnel, rédaction des solutions et indications, figures originales et vérifications indépendantes des calculs."
+    }
+  ]
+}

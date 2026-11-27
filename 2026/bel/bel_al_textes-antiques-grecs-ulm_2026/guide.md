@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Séparer les deux exercices de l’épreuve de six heures
 
 Aux pages 2 et 3, le sujet fournit le grec d’Euripide avec une traduction pour le commentaire. À la page 4, il donne dix lignes de Plutarque à traduire. Les références du commentaire ci-dessous suivent les numéros imprimés dans la marge de l’extrait, dont le premier vers correspond au vers 136 de la pièce.
@@ -17,6 +19,8 @@ Aux pages 2 et 3, le sujet fournit le grec d’Euripide avec une traduction pour
 Tracer la frontière du visible. Dans le théâtre où se trouve le spectateur, une servante arrive et parle au chœur. Dans son récit, la reine et toute la maisonnée sont présentes. Les deux petits discours à la première personne font entendre Alceste par la voix de cette servante. On peut vérifier l’intérêt de ce dispositif sur un détail. Le chœur voit la servante en larmes dès le vers 2. Le public ne découvrira qu’au vers 41 le lieu où Alceste elle-même a pleuré.
 
 ![Figure 1 — Qui voit, qui parle et à qui ?](figures/paroles-alceste.svg)
+
+Pour chaque apostrophe, donner le nom de la personne qui en prononce matériellement les mots sur scène, puis celui du personnage auquel le récit les attribue. Cette distinction permet de commenter la voix d’Alceste avant son apparition.
 
 Pour passer du repérage au commentaire, suivre un mot d’un personnage à l’autre. Le chœur décerne au vers 16 le superlatif ἀρίστη. La servante le reprend au vers 17 pour parler avec lui. Puis elle fait entendre Alceste, pour qui la différence avec la femme à venir est celle du bonheur et de la fidélité. On a obtenu une tension à développer, entre la valeur publiquement reconnue au sacrifice et ce que peut en dire l’épouse qui l’accomplit.
 

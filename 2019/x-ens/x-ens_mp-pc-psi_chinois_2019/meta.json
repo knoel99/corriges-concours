@@ -1,0 +1,65 @@
+{
+  "slug": "x-ens_mp-pc-psi_chinois_2019",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Chinois",
+    "annee": 2019,
+    "modalite": "écrit"
+  },
+  "intitule": "Vieillissement démographique, soins de proximité et emploi des seniors",
+  "questions": 2,
+  "redaction": "Synthèse des quatre documents sur le vieillissement, avec lecture du graphique et des deux services de Fuzhou. Opinion discutant Chen Xingjie sur l’activité professionnelle des seniors. Lecture du rapport, pages 1 à 3.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/2019_MPPC_sujet_Chinois.pdf",
+    "sha256_sujet": "d66827e5bd292657d088c62021a066da6f8e0dce06f3250d72d1cc5ba6e95ea9",
+    "index": "https://banques-ecoles.fr/cms/session-2019-pc/",
+    "reference_du_texte": "A1, Tencent News, 4 juillet 2018. A2, Xinhua, 18 avril 2018. A3, 半月谈网, repris par China News, 9 juillet 2018. A4, graphique de l’ONU (UN DESA, 2013a), reproduit sur Zhihu. B5, 陈兴杰, 新京报, 28 novembre 2017.",
+    "pages_sujet": 9,
+    "precision_rapport": "Le cahier de 2019 comprend neuf pages, dont une page blanche avant A1 et une après le lexique de B5. La garde mentionne MP, PC et PSI. Le rapport écrit porte sur MP et PC.",
+    "code_garde": "XEULCR",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/01/19_MPPC_rapport_eChi.pdf",
+    "sha256_rapport_jury": "1448e45cafffe47295822b6a81b839ac05873e2d23a0b27081994313b882bf5b"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/lecture-projections.svg",
+      "legende": "Les quatre séries du graphique A4 et le passage aux projections après 2010."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des trois pages du rapport 2019, de son périmètre de filières, de son analyse des sources et de ses remarques sur le texte d’opinion et les erreurs linguistiques."
+    },
+    {
+      "phase": "redaction",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Synthèse des quatre documents sur le vieillissement, avec lecture du graphique et des deux services de Fuzhou. Opinion discutant Chen Xingjie sur l’activité professionnelle des seniors. Lecture du rapport, pages 1 à 3."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  }
+}

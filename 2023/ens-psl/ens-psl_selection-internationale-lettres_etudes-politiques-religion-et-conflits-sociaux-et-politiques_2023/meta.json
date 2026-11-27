@@ -1,0 +1,61 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_etudes-politiques-religion-et-conflits-sociaux-et-politiques_2023",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Études politiques — religion et conflits sociaux et politiques",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "intitule": "« Religion et conflits sociaux et politiques ». L’intitulé de l’écrit figure sur la fiche 5. Les extraits de Durkheim qui le suivent constituent le sujet de l’oral.",
+  "gabarit": "dissertation",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://web.archive.org/web/20251023091529id_/https://www.ens.psl.eu/sites/default/files/oral-5.pdf",
+    "sujet_sha256": "f77b3528365ef5348bebd0eae5d05cea39eb86f2f5d89578bb3c7e05497f7908",
+    "index": "https://www.ens.psl.eu/une-formation-d-exception/admission-concours/international/concours-selection-internationale-0",
+    "documents": [
+      {
+        "role": "intitulé écrit dans le feuillet d’oral",
+        "url": "https://web.archive.org/web/20251023091529id_/https://www.ens.psl.eu/sites/default/files/oral-5.pdf",
+        "url_ens": "https://www.ens.psl.eu/sites/default/files/oral-5.pdf",
+        "sha256": "f77b3528365ef5348bebd0eae5d05cea39eb86f2f5d89578bb3c7e05497f7908",
+        "pages": 1
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "question": "Composition",
+      "legende": "Trois mécanismes pour analyser l’intervention du religieux dans un conflit social ou politique."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Dissertation sur démarcation, mobilisation et médiation avec trois études de cas distinctes."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Composition"
+    ],
+    "limites": "La fiche 5, classée par l’ENS parmi les oraux de 2023, désigne explicitement cet intitulé comme le sujet d’écrit, avant le texte d’oral. Seul l’intitulé de l’écrit est reproduit."
+  }
+}

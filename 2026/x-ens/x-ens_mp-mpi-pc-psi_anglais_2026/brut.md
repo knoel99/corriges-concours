@@ -10,6 +10,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## A — Synthesis of documents 1 to 4
 
 ### The Changing Geography of Clean Power

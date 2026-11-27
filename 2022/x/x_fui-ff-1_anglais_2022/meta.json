@@ -34,7 +34,7 @@
     "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
     "sujet_sha256": "18e24fcbfcf4c2521c3939709f06b1677a384674a1cd3895035a140cb8589871"
   },
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "revision": {
     "date": "2026-11-24",
     "modele": "Codex (GPT-6)",
@@ -98,6 +98,34 @@
       "fournisseur": "codex",
       "session": "astra_langues",
       "perimetre": "Vérification sur les deux pages du scan des exemples en rugby, du financement croisé en cricket, du tournoi The Hundred et du statut de l’absence de Ben Stokes."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "session": "fin_langues_x_interens",
+      "agent": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Fascicule officiel, consignes de compréhension et d’essai en fin de sujet (PDF de 4 pages). Les quatre réponses comptent respectivement 70, 64, 65, 67 mots hors références. L’essai compte 424 mots pour une cible de 450 à 10 % près, avec un séparateur tous les 50 mots. Les cinq réponses sont présentes dans les deux éditions. Les réponses relient admission olympique, pressions commerciales sur deux sports, justification des primes et calendrier du cricket. L’essai discute les intérêts des pratiquants et la recherche de croissance à partir du dernier passage.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "Essai"
+    ],
+    "precision": "Fascicule officiel, consignes de compréhension et d’essai en fin de sujet (PDF de 4 pages). Les quatre réponses comptent respectivement 70, 64, 65, 67 mots hors références. L’essai compte 424 mots pour une cible de 450 à 10 % près, avec un séparateur tous les 50 mots. Les cinq réponses sont présentes dans les deux éditions. Les réponses relient admission olympique, pressions commerciales sur deux sports, justification des primes et calendrier du cricket. L’essai discute les intérêts des pratiquants et la recherche de croissance à partir du dernier passage."
+  }
 }

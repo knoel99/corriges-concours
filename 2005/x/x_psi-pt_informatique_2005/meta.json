@@ -42,5 +42,45 @@
       "modifications": true,
       "perimetre": "Rédaction des neuf questions du cahier natif de deux pages. Vérification exhaustive des cinq fonctions de dépouillement sur 9 841 scrutins avec trois identifiants et jusqu’à huit votes, y compris résultats ex æquo, moitié exacte et candidat résiduel. Trois illustrations originales."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "pages_des_questions": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 2,
+      "5": 2,
+      "6": 2,
+      "7": 2,
+      "8": 2,
+      "9": 2
+    },
+    "precision": "Les 9 rubriques de chaque édition concordent avec les questions du fac-similé. Les deux séries de réponses ont été retrouvées au commit du journal indiqué.",
+    "origine_attestation": {
+      "commit_du_journal": "2923e7b3edb8a6490761e8b40ded8a9a31961f31",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction des neuf questions du cahier natif de deux pages. Vérification exhaustive des cinq fonctions de dépouillement sur 9 841 scrutins avec trois identifiants et jusqu’à huit votes, y compris résultats ex æquo, moitié exacte et candidat résiduel. Trois illustrations originales.",
+      "sha256_sujet_controle": "a182edb44c0dd3d3566dac3c87b60dc74a913f879128267e9c7effb400dcd864"
+    },
+    "controle_fonctions": {
+      "fonctions": [
+        "nombreVoix",
+        "gagnant_tour1"
+      ],
+      "cas_par_edition": 127
+    }
+  }
 }

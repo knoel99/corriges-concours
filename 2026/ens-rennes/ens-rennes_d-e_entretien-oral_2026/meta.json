@@ -22,7 +22,13 @@
     "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-entretien-d-e-2026_1790958443479-pdf",
     "sujet_sha256": "7889eb1ac7665a90a4c964dfee5aebf872f7900fa31167a5adec642fd2b788f2",
     "apercu_sujet_sha256": "00f35a1076362b5b4aa75d0418d4743a532e8426de76a952f05a41dcee56cbfd",
-    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2026-1"
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2026-1",
+    "attestation": "Origine, pagination, premières lignes et SHA du document institutionnel consignés dans la collecte nationale lot-E.tsv. Les numéros, bornes et consignes ont été contrôlés sur un rendu PDF de l’URL de l’ENS dont l’empreinte distincte est conservée.",
+    "pages_sujet": 69,
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-entretien-d-e-2026_1793640904419-pdf",
+    "rapport_jury_sha256": "1a18d64b45bfc15684af0045240929024db1cd589f5cc225b7b17e2e07dd5dc3",
+    "apercu_rapport_jury_sha256": "815ade6581391cae71bed37980d2e155a2ef6f0b2bce02ed2c8de8bb02995ba6",
+    "pages_rapport": 1
   },
   "figures": [
     {
@@ -65,6 +71,287 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Comparaison au fascicule de 69 pages et contrôle des numéros, des dénominateurs, de la décision Gravier, de la distinction entre COMPAS et l’imagerie et des liens au document."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification du deuxième dossier d’entretien sur les inégalités professionnelles. Extension sur deux périodes de la distinction entre premières nominations et composition des effectifs."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "x_hist_8589",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Vérification des 69 pages, correction des renvois aux dossiers 6 à 14, prolongements critiques des 23 exposés et entraînement au dialogue sur le projet professionnel à partir du rapport 2026."
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "sujets_entierement_traites": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      25
+    ],
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      25
+    ],
+    "reperes": [
+      {
+        "numero": 1,
+        "pages_pdf": [
+          1,
+          3
+        ],
+        "notice_document": "Politique d’égalité de genre dans les carrières des hauts fonctionnaires : apports et angles morts de l’approche évaluative D’après Marion Demonteil, in : Haute fonction publique, le défi des carrières ; Action publique. Recherche et pratiques 2025/4 n° 27 (IGPDE)"
+      },
+      {
+        "numero": 2,
+        "pages_pdf": [
+          4,
+          6
+        ],
+        "notice_document": "Les effets inattendus des opérations de chiffrage des inégalités. Nommer, mesurer et agir contre les inégalités D’après Marion Demonteil, in : Haute fonction publique, le défi des carrières ; « Politique d’égalité de genre dans les carrières des hauts fonctionnaires : apports et angles morts de l’approche évaluative » ; Action publique. Recherche et pratiques 2025/4 n° 27 (IGPDE)"
+      },
+      {
+        "numero": 3,
+        "pages_pdf": [
+          7,
+          9
+        ],
+        "notice_document": "La fabrique organisationnelle des inégalités : des freins à la carrière, au quotidien D’après Marion Demonteil, in : Haute fonction publique, le défi des carrières ; « Politique d’égalité de genre dans les carrières des hauts fonctionnaires : apports et angles morts de l’approche évaluative » ; Action publique. Recherche et pratiques 2025/4 n° 27 (IGPDE)"
+      },
+      {
+        "numero": 4,
+        "pages_pdf": [
+          10,
+          12
+        ],
+        "notice_document": "Interroger les qualités« naturelles » du bon manager D’après Marion Demonteil, in : Haute fonction publique, le défi des carrières ; « Politique d’égalité de genre dans les carrières des hauts fonctionnaires : apports et angles morts de l’approche évaluative » ; Action publique. Recherche et pratiques 2025/4 n° 27 (IGPDE)"
+      },
+      {
+        "numero": 5,
+        "pages_pdf": [
+          13,
+          15
+        ],
+        "notice_document": "Digital sobriety and education professionals: a cross-analysis of their sense of competence and their declared uses D’après Sarah Descamps, Karim Boumazguida, Gaëtan Temperman et Bruno De Lièvre, in : Distances et médiations, 43/ 2023"
+      },
+      {
+        "numero": 6,
+        "pages_pdf": [
+          16,
+          19
+        ],
+        "notice_document": "« Cités », communautés et lien social D’après Sylvain Aquatias, Jeunes de banlieue, entre communauté et société. Une approche socio anthropologique du lien social Université Paris VIII, 1997 https://doi.org/10.4000/socio-anthropologie.34"
+      },
+      {
+        "numero": 7,
+        "pages_pdf": [
+          20,
+          22
+        ],
+        "notice_document": "Intelligence juridique : une nouvelle approche du droit au service des juristes D’après Simon Brenot : Village de la Justice, 8 avril 2020 https://www.village-justice.com/articles/intelligence-juridique-une-nouvelle-approche-droit-service-des- juristes,34449.html"
+      },
+      {
+        "numero": 8,
+        "pages_pdf": [
+          23,
+          25
+        ],
+        "notice_document": "Les fleuves sont-ils des personnes ? L’anti éditorial, 9 septembre 2021 - Auteur anonyme (podcast)"
+      },
+      {
+        "numero": 9,
+        "pages_pdf": [
+          26,
+          28
+        ],
+        "notice_document": "La sociologie de l’argent D’après Damien de Blic et Jeanne Lazarus Grand résumé de l’ouvrage Sociologie de l’argent, Paris, Éditions La Découverte, 2e édition, 2021"
+      },
+      {
+        "numero": 10,
+        "pages_pdf": [
+          29,
+          31
+        ],
+        "notice_document": "Science et psychanalyse D’après François Ansermet, in : Les enfants de la science ; « La Cause du Désir » 2013/2 (N° 84), pages 48 à 53."
+      },
+      {
+        "numero": 11,
+        "pages_pdf": [
+          32,
+          34
+        ],
+        "notice_document": "« Les trois types purs de la domination légitime » Max Weber, Les trois types purs de la domination légitime, in Wirtschaft und Gesellschaft (économie et société), 1917, pp 291 à 302 ; traduction d'Elisabeth Kauffmann, in : Sociologie 2014/3 Vol. 5"
+      },
+      {
+        "numero": 12,
+        "pages_pdf": [
+          35,
+          37
+        ],
+        "notice_document": "Origine sociale, diplôme et insertion : la force des liens D’après Gaëlle Dabet, Dominique Epiphane, Elsa Personnaz, in : Céreq Bref 2024/4 (N° 452), pages 1 à 4"
+      },
+      {
+        "numero": 13,
+        "pages_pdf": [
+          38,
+          40
+        ],
+        "notice_document": "Les polytechniciens et l’État. Un éloignement réciproque D’après Adrien Delespierre, François-Xavier Dudouet et Hervé Joly, in : Gouvernement et action publique 2022/2 Vol.11"
+      },
+      {
+        "numero": 14,
+        "pages_pdf": [
+          41,
+          42
+        ],
+        "notice_document": "Portail documentaire de l’INSP Les polytechniciens et l’État D’après Adrien Delespierre, François-Xavier Dudouet et Hervé Joly ; Les polytechniciens et l’État Un éloignement réciproque, in : Gouvernement et action publique 2022/2 Vol.11"
+      },
+      {
+        "numero": 15,
+        "pages_pdf": [
+          43,
+          45
+        ],
+        "notice_document": "La Commission européenne et l'enseignement supérieur La néo-libéralisation du discours comme ressort de pouvoir ? D’après Pauline Ravinet, in : Gouvernement et action publique 2014/2 Vol.3"
+      },
+      {
+        "numero": 16,
+        "pages_pdf": [
+          46,
+          48
+        ],
+        "notice_document": "Regards croisés sur le crime d’écocide : des tentatives de concrétisation du concept, entre société civile et institutions (inter)nationales D’après Camille Montavon et Marie Desaules, in : Droit et société 2°22/3 n° 112"
+      },
+      {
+        "numero": 17,
+        "pages_pdf": [
+          49,
+          51
+        ],
+        "notice_document": "Qu’est-ce que la précarité ? D’après Régis Pierret, in : SOCIO, la nouvelle revue des sciences sociales 2 /2013"
+      },
+      {
+        "numero": 18,
+        "pages_pdf": [
+          52,
+          54
+        ],
+        "notice_document": "Haute, moyenne et basse précarité, la fin de la reproduction D’après Régis Pierret, in : Qu’est-ce que la précarité ? ; SOCIO, la nouvelle revue des sciences sociales 2 /2013"
+      },
+      {
+        "numero": 19,
+        "pages_pdf": [
+          55,
+          57
+        ],
+        "notice_document": "Vers un « État-automate » ? Intelligence artificielle, transformations du travail et action publique D’après Olessia Kirtchik et Francesca Musianit, in : Le travail des algorithmes ; SOCIO, la nouvelle revue des sciences sociales 20 | 2025"
+      },
+      {
+        "numero": 20,
+        "pages_pdf": [
+          58,
+          60
+        ],
+        "notice_document": "Émergence du modèle d’université entrepreneuriale : brèves notes critiques D’après Carlos Benedito Martins, in : Le travail des algorithmes ; SOCIO, la nouvelle revue des sciences sociales 20 | 2025"
+      },
+      {
+        "numero": 21,
+        "pages_pdf": [
+          61,
+          63
+        ],
+        "notice_document": "Le cerveau, dernier refuge des droits et libertés fondamentaux D’après Roberto Andorno, in : « Des neurotechnologies au(x) neurodroit(s) », Cahiers Droit, Sciences & Technologies ; 21/2026"
+      },
+      {
+        "numero": 22,
+        "pages_pdf": [
+          64,
+          66
+        ],
+        "notice_document": "L’évolution du « neurodroit » D’après Laura Pignatel, in : « Des neurotechnologies au(x) neurodroit(s) », Cahiers Droit, Sciences & Technologies ; 21/2026"
+      },
+      {
+        "numero": 25,
+        "pages_pdf": [
+          67,
+          69
+        ],
+        "notice_document": "Conflits d’intérêts et recherche académique : entre critique et normalisation des dynamiques d’influence Les sciences sociales et les défis éthiques de la recherche 16 | 2023 Dossier Thématique Boris Hauray"
+      }
+    ],
+    "perimetre": "Les 23 exposés critiques sur document, puis le dialogue sur le projet professionnel mentionné par le rapport du jury.",
+    "numeros_absents_du_fascicule": [
+      23,
+      24
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "nombre_documents_discutes": 23,
+    "partie_projet_professionnel": true
+  }
 }

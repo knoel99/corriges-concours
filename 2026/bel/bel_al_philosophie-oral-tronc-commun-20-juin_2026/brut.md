@@ -6,7 +6,11 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Le jury publie 12 billets pour le 20 juin. Pour chacun, le premier intitulé est celui qui a été choisi. Le second était proposé au choix. Les deux reçoivent ici des réponses distinctes. Les exemples et arguments proposés servent à préparer une leçon personnelle.
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Le [feuillet du 20 juin](https://www.ens.psl.eu/sites/default/files/philosophie_20_juin_tronc_commun.pdf) contient 12 billets de deux sujets. Les développements suivent leur ordre. Le premier sujet a été choisi sur chacun des 12 billets. Le [rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf#page=7) permet de vérifier les choix.
+
+Lisez à haute voix les deux sujets du billet, choisissez pendant les 90 minutes de préparation et annoncez votre choix au début des 20 minutes d’exposé. L’entretien dure ensuite 10 minutes. Le coefficient est de 3. Seul un dictionnaire de langue française est autorisé, à l’exclusion des dictionnaires de noms propres.
 
 ## 1. La critique d’art
 
@@ -131,5 +135,3 @@ Dans les réflexions de Rancière sur le partage du sensible, la distribution de
 ### Faut-il oublier le passé pour se donner un avenir ?
 
 Une communauté accablée par une vieille querelle ne peut bâtir aucun projet si chaque incident doit rejouer toutes les offenses anciennes. Il existe une capacité de laisser au passé sa place pour agir maintenant. Elle ne se confond pas avec l’effacement volontaire des archives ou le refus de reconnaître un tort qui se prolonge. Oublier une discrimination peut condamner ses victimes à la subir de nouveau et priver la collectivité des moyens de comprendre une inégalité présente. Avec Nietzsche, on peut demander à quelle mesure le rapport à l’histoire soutient ou entrave la vie. Se donner un avenir exige de pouvoir reprendre et déplacer un héritage. Selon les cas, c’est une mémoire reconnue et discutée, plutôt qu’une injonction à l’oubli, qui rend ce déplacement possible.
-
-[Feuille officielle du 20 juin](https://www.ens.psl.eu/sites/default/files/philosophie_20_juin_tronc_commun.pdf) · [Rapport du jury, modalités et annexe des sujets](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf)

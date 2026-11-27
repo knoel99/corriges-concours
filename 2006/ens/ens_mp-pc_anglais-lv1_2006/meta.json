@@ -1,0 +1,67 @@
+{
+  "slug": "ens_mp-pc_anglais-lv1_2006",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Anglais (LV1)",
+    "annee": 2006,
+    "modalite": "écrit"
+  },
+  "intitule": "Réactions gastriques, détecteurs de mensonges et limites de la preuve scientifique",
+  "questions": 3,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "V",
+      "1",
+      "2"
+    ]
+  },
+  "sources": {
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2006",
+    "etablissements": "ENS de Paris, de Lyon et de Cachan",
+    "pages_sujet": "3",
+    "code_garde": "61.12PM",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2006/sujet-2006-ecrit-mp_pc_langue_vivante_1.pdf#page=3",
+    "sujet_sha256": "1f6e13b751aff5e2ffb432c64c2161b70c3757795ee2e70c40a1b891b7170c3d",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2006/rapport-2006-pc_ecrit_langue_vivante_1_anglais.pdf",
+    "rapport_jury_sha256": "b49b6c94cab1cb008207b92a6d8e5bbac10845402a95aa993f27b255263d8c98",
+    "precision": "Version de l’article de Stu Hutson publié dans New Scientist le 31 octobre 2005 et réponses aux deux questions du cahier. Le rapport du jury traite séparément la reformulation scientifique et la réflexion sur la vérité."
+  },
+  "mots_expression": {
+    "1": 123,
+    "2": 133
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V",
+      "fichier": "figures/indices.svg",
+      "legende": "Le résultat préliminaire et sa portée selon le psychologue cité."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "fichier": "figures/erreurs.svg",
+      "legende": "Une étude de fiabilité doit rechercher les erreurs dans les deux sens."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "anglais_sciences_2005_2008",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et réponses intégrales en anglais. Réactions gastriques, détecteurs de mensonges et limites de la preuve scientifique.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}

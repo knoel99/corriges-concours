@@ -1,0 +1,56 @@
+{
+  "slug": "ens-rennes_d1_russe_2007",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Russe",
+    "annee": 2007,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/annales-2007-concours-d1_1423059780504-pdf#page=7",
+    "sha256_sujet": "0f7a7f75322511a59614c2cd4fa6968b911a11d5b0428262b09f81ae76838ff0",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "publication": "B. S. Ilizarov, « Образ Сталина. Взгляд из XXI века », Saint-Pétersbourg, 2006",
+    "page": 7
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en russe"
+    ],
+    "precision": "Traduction française de l’intégralité du passage délimité et réponse en russe."
+  },
+  "longueur_expression": {
+    "mots": 100,
+    "regle": "Apprécier le rôle de Staline dans l’histoire du peuple russe. Répondre en russe en 100 mots."
+  },
+  "figures": [
+    {
+      "fichier": "figures/pouvoir.svg",
+      "legende": "Les trois questions du portrait politique"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Traduction française de l’intégralité du passage délimité et réponse en russe. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

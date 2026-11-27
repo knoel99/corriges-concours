@@ -1,0 +1,308 @@
+{
+  "slug": "bel_al_anglais-theme-lyon_2021",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lva_pt_2325",
+      "session": "/root/lva_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Traduction anglaise intégrale du passage français, guide en français et figure propre au thème."
+    },
+    {
+      "phase": "revision",
+      "agent": "lva_pt_2325",
+      "session": "/root/lva_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture des sujets successifs (les fils, leurs parents, puis le narrateur de la rencontre), des noms propres, des deux occurrences de démodé et de la distinction entre l’Athénée et la Halle."
+    }
+  ],
+  "pieces": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2021-10/Epreuves-de-Specialite.pdf#page=9",
+      "sha256": "1204b3dd5ed1c85101afe6b8aaa9fbfa0b3746b5ce3fcd6fefd4add8476fe553",
+      "pages": 13,
+      "rendus": [
+        {
+          "page": 1,
+          "sha256_rendu": "1477dbc651602573430c3ede47f5b9b7ee68b2c51fa5719aa8509893b259d510"
+        },
+        {
+          "page": 2,
+          "sha256_rendu": "a88474fce0e1232f315c08632e17e499fcb15a2acb51dd73908a2c67ef9bf264"
+        },
+        {
+          "page": 3,
+          "sha256_rendu": "2082561305ddfa9b05466ae35400c8d971a826905b0690c854e82b2b6053796e"
+        },
+        {
+          "page": 4,
+          "sha256_rendu": "1c1c924e293f410da507506f2cd26daac92660acca694592c9e25e10262ede10"
+        },
+        {
+          "page": 5,
+          "sha256_rendu": "f002b2d4c1b4e37e68d3a4b1e5637b6c4cb0f3a982d3ac5ca64c4835d16e7363"
+        },
+        {
+          "page": 6,
+          "sha256_rendu": "ea591c2da0e4d3a2d62e12782ddeff6af1ec36c8f3161326314a5ec689ecba5b"
+        },
+        {
+          "page": 7,
+          "sha256_rendu": "29102ba953b587283d4500330381a0958d76d7bcc0d418e311ea73b0624f9de5"
+        },
+        {
+          "page": 8,
+          "sha256_rendu": "dcf38551ae1da5db3556dd5f41c4dd3f89674e563ebb110951a368db5f5117da"
+        },
+        {
+          "page": 9,
+          "sha256_rendu": "b22ee9a1ad368724a9aea9a40ca90f00f66110954134abe8ffa5eed36cdf7b9a"
+        },
+        {
+          "page": 10,
+          "sha256_rendu": "c942c31d42f0adf3f263298a1134ca1917e0aa989d2f08d2f812ade7cf796e27"
+        },
+        {
+          "page": 11,
+          "sha256_rendu": "27fb1a89e0ab36c287c50934dcc0a693532cb5ffd0beb297e875701c7bf2f70b"
+        },
+        {
+          "page": 12,
+          "sha256_rendu": "803b8dcd4abe0df08c4498b837c6a7b482724f976e686fd37c357ec0f2b25b47"
+        },
+        {
+          "page": 13,
+          "sha256_rendu": "b9dff5250519c4a0adf523000b867ccba29bd523ca54472cefe34555ce3a2281"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2021-11/ANGLAIS_2021.pdf#page=13",
+      "sha256": "44e2a802fd0c09f6f351da333ce760fc226ce43c7209ec9d9238a9934607890b",
+      "pages": 32,
+      "rendus": [
+        {
+          "page": 1,
+          "sha256_rendu": "16fe0953a7db9a6422eda69ff91b32b937796d614cc62a9b2d42089e205be167"
+        },
+        {
+          "page": 2,
+          "sha256_rendu": "820ecb69d2666e3778e2643d6aa1d6ddd5ccc58a09cee298f4e61c1792c9926b"
+        },
+        {
+          "page": 3,
+          "sha256_rendu": "583f6ed006eece87707afe80f5dae3734c618d32cd569fac4c53f2e0ce4acdf7"
+        },
+        {
+          "page": 4,
+          "sha256_rendu": "5bedca8b4529199d21abfb9a16853a401fe51fa8e75ada221a271ce6ebc22a1f"
+        },
+        {
+          "page": 5,
+          "sha256_rendu": "91054f3e0e15555ea333210022d4fb7bab34ef1e9bf37436fd8c31b15ce280ec"
+        },
+        {
+          "page": 6,
+          "sha256_rendu": "d9800e7cdbb2f2f6c123441525c5746b74c88de6770b8d1577ee496017883bc0"
+        },
+        {
+          "page": 7,
+          "sha256_rendu": "cbd513e9875c09bcdcb1b0eb063681d7d9cd18bb8fb2dd38b2b529e88e048ddc"
+        },
+        {
+          "page": 8,
+          "sha256_rendu": "e0c631af9d1479e9e0e3b53817c47b90c9d943a4d7a81f0725904908c8a469c1"
+        },
+        {
+          "page": 9,
+          "sha256_rendu": "bff0104e82318ef2f2a968f95bf016d12f16dea88e873004c69156e3807c3ee9"
+        },
+        {
+          "page": 10,
+          "sha256_rendu": "e3098989c3ce28aa29221108b25821c29596260d2d19187d8d3354b2d992f67c"
+        },
+        {
+          "page": 11,
+          "sha256_rendu": "a680fd29e70f414c1decd2afbc3eb34a7107e1485b978e266412171c9888b9f4"
+        },
+        {
+          "page": 12,
+          "sha256_rendu": "c0a152a348e87be3aaca50dc0f316c7054cf9245d4f5b185469f5c6214b60877"
+        },
+        {
+          "page": 13,
+          "sha256_rendu": "f6284ed1acf5a35524d7c4a7c8c8493ea5ccd8931f063f1c3202cb9e6b900fe1"
+        },
+        {
+          "page": 14,
+          "sha256_rendu": "9cd3f17ac9e22a746e16d1b26b87391cb8e3c5ac2b3dd31f94d5443f0f90c0bd"
+        },
+        {
+          "page": 15,
+          "sha256_rendu": "bd3a1847f9bc0c27cd3ee55e1989c08c52ecf1d4bf4d2b918506276dde8ff6e5"
+        },
+        {
+          "page": 16,
+          "sha256_rendu": "66a94b903b4d202f4d97a3cd4522cddf84f689a1d56235bd1a35b4232664650e"
+        },
+        {
+          "page": 17,
+          "sha256_rendu": "f68b16d6ee6e8d234146b3fe8ec8620f3f06bc0a05c16c76b0a76a4f00bc3e1f"
+        },
+        {
+          "page": 18,
+          "sha256_rendu": "81ad61f5e272de39e6a144907b84b80e9aae7700026bb4a0fcfa44de8a1dea7d"
+        },
+        {
+          "page": 19,
+          "sha256_rendu": "f061d03666062cb9a24c4fd63842cd9d2ac08eed30a0f618cef74e7574badd29"
+        },
+        {
+          "page": 20,
+          "sha256_rendu": "a9e1b9470d2d53d46f6cf330a1fd20c7ad1eede1f78f201c1d765f01fa291631"
+        },
+        {
+          "page": 21,
+          "sha256_rendu": "3c70bea6f63deeefa586b5f0f24d671c9c88b4cc95cb29c7c670ec8d85f9c93d"
+        },
+        {
+          "page": 22,
+          "sha256_rendu": "ffd2573163a441864ce1f9be70a5f95f8cd6cec6eeaaa5d756fba1fd9a4007d5"
+        },
+        {
+          "page": 23,
+          "sha256_rendu": "59f88676853e4541e7ba141636433cf17c8cd36a9e137b491bed66c536c3b34f"
+        },
+        {
+          "page": 24,
+          "sha256_rendu": "902343f4238e6886cc2a2ab69876d56de48875d9ef9bb7ff5203b4604074b844"
+        },
+        {
+          "page": 25,
+          "sha256_rendu": "8ec4afd45cacf7516ebe6571ed66cddf03094eff1a5baf58cb84247d123a6c5b"
+        },
+        {
+          "page": 26,
+          "sha256_rendu": "53bc487b20122a0e8b871070d39d254d7b147c0e4c3519bae0c3548f8157feb4"
+        },
+        {
+          "page": 27,
+          "sha256_rendu": "4f211efa97adb1c5c0999443bf91587db9923b58cbeed86c92ae3d75606cb87c"
+        },
+        {
+          "page": 28,
+          "sha256_rendu": "c6fb469b36ed6a35e4b6cb0a66ae63115e95b8bcb4aaf8485ed7bba7fdb52cc8"
+        },
+        {
+          "page": 29,
+          "sha256_rendu": "dc741a2878588c8562fe43f89c72fbb4182e3190583022c73d3f59cd65bea3c4"
+        },
+        {
+          "page": 30,
+          "sha256_rendu": "674387bf92befbcb90af3cd8fb04cfcf01eff396f11ca3dcd4ac4658918443e6"
+        },
+        {
+          "page": 31,
+          "sha256_rendu": "863c00954a95a975eec9fac21cccdc2e5a04e4dc7f82fc95352427d43b94b2dc"
+        },
+        {
+          "page": 32,
+          "sha256_rendu": "7e712e9cbc6d89772121d17eafa1cf3ac4df3d71ca26a544e40f7304c2aded12"
+        }
+      ]
+    },
+    "index": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2021",
+    "sha256_index": "ba612152df2aacc55321069716c2bfc35a654a08c6b5b9995b7dc4eba976a516"
+  },
+  "plage_jury": [
+    13,
+    21
+  ],
+  "section_jury": "Thème. Proposition, remarques et analyse des segments.",
+  "reference": {
+    "auteur": "J. M. G. Le Clézio",
+    "oeuvre": "Ourania",
+    "annee_imprimee": 2006
+  },
+  "consigne": {
+    "duree_heures": 4,
+    "langue": "anglais",
+    "dictionnaire": "Tout dictionnaire interdit.",
+    "fascicule": "Épreuve de spécialité. La garde cite l’ENS de Lyon et l’ENS Paris-Saclay (langue anglaise).",
+    "annexe": "Texte entier sur une page, sans annexe ou note de bas de page pour ce thème.",
+    "debut": "À la fin de la saison des pluies",
+    "fin": "le nom modeste d’Emporio, c’est-à-dire la Halle.",
+    "page": 9
+  },
+  "controle_paragraphe": [
+    {
+      "numero": 1,
+      "contenu": "Retour des fils au centre-ville, véhicules, cinq provenances et huit familles.",
+      "incipit_anglais": "At the end of the rainy",
+      "explicit_anglais": "Olguins, the Olids, the Olmoses …"
+    },
+    {
+      "numero": 2,
+      "contenu": "Échange ancien des demeures de pierre rose contre les villas et les châteaux, toitures, colonnes, jacuzzis et trois formes des piscines.",
+      "incipit_anglais": "Long ago their parents had traded",
+      "explicit_anglais": "shaped like hearts, guitars and strawberries."
+    },
+    {
+      "numero": 3,
+      "contenu": "Maintien des droits et transformation commerciale des maisons.",
+      "incipit_anglais": "But they had never relinquished their",
+      "explicit_anglais": "or restaurants serving steaks grilled gaucho-style."
+    },
+    {
+      "numero": 4,
+      "contenu": "Fondation de l’Emporio dans une ville dégradée.",
+      "incipit_anglais": "In the midst of this ruined",
+      "explicit_anglais": "humanities and the pursuit of knowledge."
+    },
+    {
+      "numero": 5,
+      "contenu": "Origines familiales de Thomas et trois métiers, distance envers le pouvoir, Quitupan et le fleuve.",
+      "incipit_anglais": "Thomas Moises did not come from",
+      "explicit_anglais": "the headwaters of the Tepalcatepec River."
+    },
+    {
+      "numero": 6,
+      "contenu": "Rencontre personnelle, traits du visage et détails du costume, fondation à cinquante ans, tradition et mémoire, de l’Athénée à la Halle.",
+      "incipit_anglais": "The first time I met him,",
+      "explicit_anglais": "of Emporio, meaning the Market Hall."
+    }
+  ],
+  "figure": [
+    [
+      "La ville",
+      "The strawberry empire",
+      "Parents et héritiers"
+    ],
+    [
+      "L’Emporio",
+      "Research and teaching",
+      "Une autre institution"
+    ],
+    [
+      "La rencontre",
+      "The Market Hall",
+      "Le fondateur et le nom"
+    ]
+  ]
+}

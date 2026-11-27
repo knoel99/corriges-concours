@@ -1,0 +1,126 @@
+{
+  "slug": "bel_al_chinois-theme-lyon_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Chinois (thème Lyon)",
+    "annee": 2024,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "duree_heures": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2024-11/Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=13",
+    "sujet_sha256": "cbf76039969ec8cec685a228168381915bdc7b64ae30b2cbee576b3a4f1eeb56",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2024-11/Chinois%202024%20OK.pdf#page=5",
+    "rapport_jury_sha256": "3258153f8bfbfb8ce7168c2bb1d5d40fcc7b88070ac29ca4cdf664ec95b21605",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2024",
+    "ouvrage": "Henry Bauchau, *Diotime et les lions* (1991).",
+    "provenance": "",
+    "pages_rapport_verifiees": [
+      5,
+      6
+    ]
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2024-11/Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=13",
+      "sha256": "cbf76039969ec8cec685a228168381915bdc7b64ae30b2cbee576b3a4f1eeb56",
+      "pages": 20,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "467f29e0ec3180170f83906b396898332e097600bd045b203d322734b30ba14a"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "8792f553de5cddb862b1610114caf646f31cce12b7629be38076e505305ad7a8"
+        },
+        {
+          "numero": 13,
+          "rendu_sha256": "41dfe6f033db864a13d8eebf233f9d74afaa131c28259e69deec671b6d7a0ffd"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2024-11/Chinois%202024%20OK.pdf#page=5",
+      "sha256": "3258153f8bfbfb8ce7168c2bb1d5d40fcc7b88070ac29ca4cdf664ec95b21605",
+      "pages": 6,
+      "pages_verifiees": [
+        {
+          "numero": 5,
+          "rendu_sha256": "0f7fc621eff8c12d3a8a0b757c56c6b4016bd5ce017285f56fb1cbebe6ac44d7"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "2f6f1821d188fdc160b082e91156f91c642e73b9042bbbe2c9e32d6f0eed88fe"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "Proposition de thème",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "L’enfant vit au même moment entre la maison et les chevauchées. Le désert est une étape ultérieure."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Traduction originale complète, schéma et guide consacré aux difficultés de syntaxe, d’aspect, de lexique et de voix du passage."
+    },
+    {
+      "phase": "revision",
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture sur le fac-similé et le rapport. Contrôle du double complément des parents, des actions habituelles, des deux éducations parallèles et de l’agent de la chasse finale."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Henry Bauchau, *Diotime et les lions* (1991)."
+    ],
+    "note": "Traduction pédagogique originale. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Proposition de thème"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Proposition de thème",
+        "page_pdf": 13,
+        "feuillet_imprime": 13,
+        "perimetre": "De la surprise des parents à la chasse de Cambyse aux confins du désert."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

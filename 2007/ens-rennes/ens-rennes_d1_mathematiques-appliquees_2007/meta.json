@@ -1,0 +1,88 @@
+{
+  "slug": "ens-rennes_d1_mathematiques-appliquees_2007",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Mathématiques appliquées",
+    "annee": 2007
+  },
+  "questions": 10,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/annales-2007-concours-d1_1423059780504-pdf#page=11",
+    "rapport_jury": null,
+    "sha256_sujet": "0f7a7f75322511a59614c2cd4fa6968b911a11d5b0428262b09f81ae76838ff0"
+  },
+  "figures": [
+    {
+      "fichier": "figures/branches-et-point-isole.svg",
+      "question": "1.2",
+      "legende": "Les points blancs sont exclus. À l’abscisse 1, seule l’ordonnée 3 appartient à la courbe. Les extrema des branches extérieures sont aux abscisses −2 et 2."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des quatre exercices à partir des pages 11 à 13 du cahier. Contrôle de la valeur isolée en 1, des deux branches, de la table normale et de la nécessité de la conjugaison des exposants. Figure originale des six branches de variation.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Feuillets 1 et 2 du cahier C1783, suivis de la table de Laplace-Gauss. Calculs de l’exercice 3 vérifiés par la table, normalisation des unités explicitée. Le contre-exemple de 4.2 et la nécessité de la conjugaison ont été vérifiés sur le texte imprimé.",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "agent": "rennes_oraux_economie",
+      "session": "rennes_oraux_economie"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "2.2",
+      "3.a",
+      "3.b",
+      "3.c",
+      "3.d",
+      "4.1",
+      "4.2"
+    ],
+    "origine_attestation": {
+      "commit_du_journal": "33fa029486f62ac6c9baf84a24b1e916428fe7e5",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction intégrale des quatre exercices à partir des pages 11 à 13 du cahier. Contrôle de la valeur isolée en 1, des deux branches, de la table normale et de la nécessité de la conjugaison des exposants. Figure originale des six branches de variation.",
+      "sha256_sujet_controle": "0f7a7f75322511a59614c2cd4fa6968b911a11d5b0428262b09f81ae76838ff0"
+    },
+    "pages_pdf_des_questions": {
+      "1.1": 11,
+      "1.2": 11,
+      "2.1": 11,
+      "2.2": 11,
+      "3.a": 12,
+      "3.b": 12,
+      "3.c": 12,
+      "3.d": 12,
+      "4.1": 12,
+      "4.2": 12
+    },
+    "precision": "Feuillets 1 et 2 du cahier C1783, suivis de la table de Laplace-Gauss. Calculs de l’exercice 3 vérifiés par la table, normalisation des unités explicitée. Le contre-exemple de 4.2 et la nécessité de la conjugaison ont été vérifiés sur le texte imprimé.",
+    "annexe": "Table de Laplace-Gauss, page 13 du PDF, pour les questions 3.a à 3.d."
+  }
+}

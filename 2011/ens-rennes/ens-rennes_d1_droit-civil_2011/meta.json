@@ -1,0 +1,91 @@
+{
+  "slug": "ens-rennes_d1_droit-civil_2011",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Droit civil",
+    "annee": 2011,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "intitule": "Le « bon père de famille »",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/se1a_11d1_droit_civil_1304088246685.pdf",
+    "sujet_sha256": "8ca89ac3eaab53b2af7d381d81691d631aa83fe9850d8b05ecabc672051cd437",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/re-11d1-droit-civil_1421751212036-pdf",
+    "rapport_sha256": "5809780730fb390ef753639c4fd0e0b1d17db599aef3fc22b3232e28c0b91f1e",
+    "references_complementaires": {
+      "Code civil en avril 2011": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006070721/2011-04-01/"
+    },
+    "articles_session": {
+      "408": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000022357512/2011-04-01",
+      "496": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006428219/2011-04-01",
+      "578": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006429233/2011-04-01",
+      "601": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006429459/2011-04-01",
+      "627": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006429712/2011-04-01",
+      "692": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006430389/2011-04-01",
+      "1134": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006436298/2011-04-01",
+      "1137": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006436312/2011-04-01",
+      "1147": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006436401/2011-04-01",
+      "1315": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006437767/2011-04-01",
+      "1374": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006438738/2011-04-01",
+      "1382": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006438819/2011-04-01",
+      "1383": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006438829/2011-04-01",
+      "1728": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006442853/2011-04-01",
+      "1880": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006444712/2011-04-01",
+      "1927": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006445080/2011-04-01",
+      "1928": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006445087/2011-04-01",
+      "1962": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006445197/2011-04-01"
+    },
+    "etablissement_imprime": "École normale supérieure de Cachan"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "section": "B1",
+      "fichier": "figures/trois-modeles.svg",
+      "legende": "La formulation applicable au jour du concours dépend de la situation juridique."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "section": "A2",
+      "fichier": "figures/faits-et-diligence.svg",
+      "legende": "Un dommage matériel ne désigne pas à lui seul la conduite qui aurait été exigible."
+    }
+  ],
+  "redaction": "Rédaction effective des éditions brute et guidée de « Le « bon père de famille » » à partir des pièces distribuées ou conservées par l’ENS Rennes. Standard de conduite et gestion pour autrui, tutelle issue de la réforme, circonstances de la faute et distinction entre obligations de moyens et de résultat.",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du rapport de 2011 sur la distinction avec la bonne foi, la destination du père de famille et l’appréciation abstraite. Vérification des rédactions de 408 et 496."
+    },
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction effective des éditions brute et guidée de « Le « bon père de famille » » à partir des pièces distribuées ou conservées par l’ENS Rennes. Standard de conduite et gestion pour autrui, tutelle issue de la réforme, circonstances de la faute et distinction entre obligations de moyens et de résultat."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}

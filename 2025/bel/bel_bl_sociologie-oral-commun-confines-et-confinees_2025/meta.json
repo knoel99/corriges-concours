@@ -1,0 +1,115 @@
+{
+  "slug": "bel_bl_sociologie-oral-commun-confines-et-confinees_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Sociologie (oral commun) — Confinés et confinées",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "Confinés et confinées",
+  "questions": 0,
+  "documents": 7,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujets_socio_17_juin.pdf#page=9",
+    "sha256_sujet": "85cc47a53b07ba86c6b1d18e9821517bc9802a7365e87997d5b9c709d8e4b5b0",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_sociologie_tronc_commun.pdf",
+    "sha256_rapport_jury": "9bc988f94c13ebc880ab5860fd1c30f145a4bf52df2207b66bb6dbb78e4bd008",
+    "pages_sujet_dans_pdf": [
+      9,
+      16
+    ],
+    "pages_dossier": [
+      1,
+      8
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/piece-dediee.svg",
+      "question": "Lecture du dossier",
+      "legende": "Accès à une pièce dédiée permettant de s’isoler, en pourcentage des personnes du groupe en télétravail à la huitième semaine du confinement. Données du document 3, Ined, Coconel 2020."
+    },
+    {
+      "fichier": "figures/solitude-nouvelle.svg",
+      "question": "Lecture du dossier",
+      "legende": "Sentiment nouveau de solitude selon la présence d’enfants, en pourcentage de chaque groupe de personnes en couple. Données du document 5, Ined, Coconel 2020."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "agent": "x_maths_b_recentes",
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions après vérification visuelle des sept pièces, dont les tableaux 6a et 6b. Contrôle des champs et écarts en points, des comparaisons graphiques entre mai et novembre, et des trois extraits datés du journal. Deux graphiques originaux et cinq questions préparatoires dans le guidé."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Confinés et confinées"
+    ],
+    "annexes_verifiees": [
+      {
+        "document": 1,
+        "page": 2,
+        "page_pdf": 10,
+        "intitule": "Situation professionnelle des hommes et des femmes avant et pendant les périodes de confinement du printemps et de l’automne 2020"
+      },
+      {
+        "document": 2,
+        "page": 3,
+        "page_pdf": 11,
+        "intitule": "Nombre de mètres carrés (m²) disponibles par personne dans le logement de confinement"
+      },
+      {
+        "document": 3,
+        "page": 4,
+        "page_pdf": 12,
+        "intitule": "Espace de travail au domicile selon la classe sociale et le sexe"
+      },
+      {
+        "document": 4,
+        "page": 5,
+        "page_pdf": 13,
+        "intitule": "Temps domestique des femmes et des hommes (en heures) selon les variables de revenu (déciles), de niveau d’instruction et de catégorie socioprofessionnelle ; et selon la période de confinement"
+      },
+      {
+        "document": 5,
+        "page": 6,
+        "page_pdf": 14,
+        "intitule": "Le sentiment d’isolement selon le sexe et la composition familiale (en % de ligne)"
+      },
+      {
+        "document": 6,
+        "page": 7,
+        "page_pdf": 15,
+        "intitule": "Fréquence et motifs des sorties du domicile de confinement",
+        "sous_documents": {
+          "6a": "Sorties selon le sexe et la composition familiale (en %)",
+          "6b": "Motifs des sorties selon le sexe et la composition familiale"
+        }
+      },
+      {
+        "document": 7,
+        "page": 8,
+        "page_pdf": 16,
+        "intitule": "Le journal de confinement de Delphine"
+      }
+    ],
+    "precision": "Le sujet officiel donne un dossier à commenter. Les questions dans le corrigé guidé préparent à la discussion avec le jury.",
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "85cc47a53b07ba86c6b1d18e9821517bc9802a7365e87997d5b9c709d8e4b5b0",
+      "sha256_rapport_jury_controle": "9bc988f94c13ebc880ab5860fd1c30f145a4bf52df2207b66bb6dbb78e4bd008",
+      "perimetre": "Rédaction des deux éditions après vérification visuelle des sept pièces, dont les tableaux 6a et 6b. Contrôle des champs et écarts en points, des comparaisons graphiques entre mai et novembre, et des trois extraits datés du journal. Deux graphiques originaux et cinq questions préparatoires dans le guidé."
+    }
+  }
+}

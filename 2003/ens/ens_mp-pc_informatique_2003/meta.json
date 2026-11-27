@@ -1,0 +1,96 @@
+{
+  "slug": "ens_mp-pc_informatique_2003",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Informatique",
+    "annee": 2003,
+    "duree_heures": 4
+  },
+  "questions": 28,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-mp/session-2003/sujet-2003-ecrit-mp_informatique.pdf",
+    "index_banque": "https://banques-ecoles.fr/cms/filiere-mp/les-annales-et-rapports-des-jurys/",
+    "identification": "Cahier ULC 314 J. MP groupes MPI/MI pour Paris et Cachan, groupe I pour Paris, Lyon et Cachan. PC groupe I pour Paris et Lyon. Durée de quatre heures. Rapport signé H. Comon et A. Darte.",
+    "sujet_sha256": "7720a279d14ed48626be20d70bfe7dccc4839ca09d6e91d05d8c65d4a281908b",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/rapport-de-jury-session-2003/rapport-2003-mp_ecrit_informatique.pdf",
+    "rapport_sha256": "1bed5db97f71b216c2410270c3277fec4fd98e4e97bf0630ff6ee755b3a3c522"
+  },
+  "figures": [
+    {
+      "fichier": "figures/fenetre-prefixe.svg",
+      "question": "II.3.a",
+      "legende": "Figure 1 — Un facteur démarrant en k dans la fenêtre déjà copiée correspond à la position k − g + 1 dans le préfixe du mot."
+    },
+    {
+      "fichier": "figures/arbre-mississipi.svg",
+      "question": "III.1",
+      "legende": "Figure 2 — Arbre compact du mot mississipi avant ajout d’un terminateur. Les étiquettes des boîtes se lisent le long des arêtes depuis la racine."
+    },
+    {
+      "fichier": "figures/paire-de-contextes.svg",
+      "question": "IV.4",
+      "legende": "Figure 3 — Prendre deux enfants distincts impose deux contextes droits distincts. Leurs feuilles offrent les contextes gauches à comparer."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Quatre parties, comparaison, motifs et facteurs communs, fonction Z, construction implicite et linéaire par liens suffixes, répétitions maximales et arbres généralisés. Lecture de la garde, du texte et du rapport du jury."
+    },
+    {
+      "phase": "relecture",
+      "fournisseur": "codex",
+      "agent": "reprise_physique_ulm",
+      "session": "reprise_physique_ulm",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Ajout du tableau de fenêtres et des résultats de comparaison, de complexité et de parcours dans le guide. Contrôle et attestation de la couverture."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "II.1",
+      "II.2",
+      "II.3.a",
+      "II.3.b",
+      "II.3.c",
+      "II.4",
+      "II.5",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7",
+      "III.8",
+      "III.9",
+      "III.10",
+      "III.11",
+      "IV.1",
+      "IV.2",
+      "IV.3",
+      "IV.4",
+      "IV.5"
+    ],
+    "verification": "Recoupement du fac-similé conservé à l’empreinte des sources avec les énoncés, subdivisions, figures et résultats des deux éditions. Ajout du tableau de fenêtres et des résultats de comparaison, de complexité et de parcours dans le guide."
+  }
+}

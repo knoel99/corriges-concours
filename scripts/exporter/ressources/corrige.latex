@@ -38,6 +38,11 @@ $if(hebreu)$
 \babelfont[hebrew]{rm}[Renderer=HarfBuzz,RawFeature={fallback=repliTexte}]{Noto Serif Hebrew}
 \babelfont[hebrew]{sf}[Renderer=HarfBuzz,RawFeature={fallback=repliTexte}]{Noto Sans Hebrew}
 $endif$
+$if(russe_balise)$
+% Si les motifs russes manquent, une langue distincte préserve la ponctuation russe.
+\babelprovide[import,hyphenrules=russian +]{russian}
+\babelfont[russian]{rm}{DejaVu Serif}
+$endif$
 $if(chinois)$
 % Identifie les caractères han et autorise les coupures entre idéogrammes, y compris
 % dans une phrase bilingue. Les groupes de chiffres et la ponctuation restent liés.
@@ -92,6 +97,8 @@ $endif$
 \usepackage[most]{tcolorbox}
 \usepackage{enumitem}
 \setlist{nosep,leftmargin=*,topsep=2pt}
+% Hyperref installe les ancres des titres non numérotés si titlesec est déjà chargé.
+\usepackage{titlesec}
 \usepackage[hidelinks,unicode]{hyperref}
 \usepackage{bookmark}
 \hypersetup{pdftitle={$titre$},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={$nature$}}
@@ -185,7 +192,6 @@ $endif$
 \newtcolorbox{encadrenote}{encadre,colframe=gris40}
 
 % --- Titres de section ---------------------------------------------------------
-\usepackage{titlesec}
 \titleformat{\section}{\Large\bfseries}{}{0pt}{}
 \titleformat{\subsection}{\large\bfseries}{}{0pt}{}
 \titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
@@ -198,6 +204,23 @@ $endif$
 \fancyhf{}
 \fancyhead[L]{\small\textsc{$nature$} · $concours$ $filiere$}
 \fancyhead[R]{\small $matiere$ $annee$}
+$if(mesurerentete)$
+% Garder les deux extrémités sur une ligne si leur largeur réelle le permet.
+% Sinon chaque libellé dispose de toute la largeur et peut revenir à la ligne.
+\newsavebox{\boiteentete}
+\AddToHook{begindocument/before}{%
+  \sbox{\boiteentete}{\small\textsc{$nature$} · $concours$ $filiere$\quad $matiere$ $annee$}%
+  \ifdim\wd\boiteentete>\textwidth
+    \sbox{\boiteentete}{\parbox[b]{\textwidth}{\small\setlength{\parskip}{0pt}%
+      \raggedright\strut\textsc{$nature$} · $concours$ $filiere$\strut\par
+      \raggedleft\strut $matiere$ $annee$\strut\par}}%
+    \addtolength{\textheight}{\headheight}%
+    \setlength{\headheight}{\dimexpr\ht\boiteentete+\dp\boiteentete+3pt\relax}%
+    \addtolength{\textheight}{-\headheight}%
+    \fancyhead{}%
+    \fancyhead[C]{\usebox{\boiteentete}}%
+  \fi}
+$endif$
 \fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
 \fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
 \renewcommand{\headrulewidth}{0.4pt}

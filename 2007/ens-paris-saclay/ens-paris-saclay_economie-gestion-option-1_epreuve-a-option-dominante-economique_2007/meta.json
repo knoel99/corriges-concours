@@ -1,0 +1,78 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_epreuve-a-option-dominante-economique_2007",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Épreuve à option — dominante économique",
+    "annee": 2007,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "La politique économique : relent d’une époque révolue ou recours nécessaire dans le monde contemporain ?",
+  "gabarit": "dissertation",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/annales-2007-concours-d1_1423059780504-pdf#page=21",
+    "sujet_sha256": "0f7a7f75322511a59614c2cd4fa6968b911a11d5b0428262b09f81ae76838ff0",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-d1-2007",
+    "pages_sujet": "20–21 du recueil, dominante économique p. 21",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.ens-rennes.fr/medias/fichier/annales-2007-concours-d1_1423059780504-pdf",
+        "pages": 25,
+        "sha256": "0f7a7f75322511a59614c2cd4fa6968b911a11d5b0428262b09f81ae76838ff0"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/choc-instrument-et-echelle.svg",
+      "question": "Composition",
+      "legende": "Le jugement sur l’efficacité d’une politique change avec la nature du problème. Le soutien à la demande, l’ajustement à un choc d’offre et la gestion d’un risque commun appellent des instruments différents."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "option_info_2006_2009",
+      "agent": "option_info_2006_2009",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Dissertation historique et économique située en 2007, articulation des politiques conjoncturelles et structurelles, contre-exemples historiques, guide et figure pédagogique."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Vérification du sujet et de la chronologie, restitution du titre et exemple chiffré du multiplicateur en économie ouverte dans le guidé."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Composition"
+    ],
+    "limites": "Une proposition de dissertation, replacée dans la période demandée."
+  }
+}

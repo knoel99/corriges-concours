@@ -31,6 +31,133 @@
       "perimetre": "Rédaction des quatre parties sur le cahier de quatre pages. Calcul du triplet plan, minimum de norme et famille duale, borne spectrale optimale, convergence géométrique, coercivité et complétude dans la dernière partie. Graphique des deux branches au pas optimal.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "x_mp_deuxieme_composition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Pointage physique des 19 consignes sur 4 pages. Contrôle des branches tracées en 13 et de la convergence en une itération lorsque le facteur de contraction est nul. Explicitation du projecteur des coefficients en 10, du contrôle par le résidu en 15 et de la preuve par série sur un espace complet en 16.b."
     }
-  ]
+  ],
+  "intitule": "Familles redondantes de vecteurs et reconstruction itérative",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11.a",
+      "11.b",
+      "11.c",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16.a",
+      "16.b"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1",
+        "page_pdf": "1"
+      },
+      {
+        "question": "2",
+        "page_pdf": "1"
+      },
+      {
+        "question": "3",
+        "page_pdf": "2"
+      },
+      {
+        "question": "4",
+        "page_pdf": "2"
+      },
+      {
+        "question": "5",
+        "page_pdf": "2"
+      },
+      {
+        "question": "6",
+        "page_pdf": "2"
+      },
+      {
+        "question": "7",
+        "page_pdf": "2"
+      },
+      {
+        "question": "8",
+        "page_pdf": "2"
+      },
+      {
+        "question": "9",
+        "page_pdf": "2"
+      },
+      {
+        "question": "10",
+        "page_pdf": "2"
+      },
+      {
+        "question": "11.a",
+        "page_pdf": "2"
+      },
+      {
+        "question": "11.b",
+        "page_pdf": "2"
+      },
+      {
+        "question": "11.c",
+        "page_pdf": "2"
+      },
+      {
+        "question": "12",
+        "page_pdf": "3"
+      },
+      {
+        "question": "13",
+        "page_pdf": "3"
+      },
+      {
+        "question": "14",
+        "page_pdf": "3"
+      },
+      {
+        "question": "15",
+        "page_pdf": "3"
+      },
+      {
+        "question": "16.a",
+        "page_pdf": "3"
+      },
+      {
+        "question": "16.b",
+        "page_pdf": "4"
+      }
+    ],
+    "controle": [
+      "p. 1, exemple pour tout couple de dimensions autorisées, orthogonal du sous-espace engendré",
+      "p. 2, calcul du triplet plan, spectre et meilleures bornes, adjonction, vecteur de coefficients de norme minimale et spécialisations",
+      "p. 3, extrémités du spectre, pas minimax et cas scalaire, contraction, erreur géométrique, coercivité sans symétrie",
+      "p. 4, complétude, point fixe pour chaque second membre, injectivité et surjectivité",
+      "Contrôle des branches tracées en 13 et de la convergence en une itération lorsque le facteur de contraction est nul. Explicitation du projecteur des coefficients en 10, du contrôle par le résidu en 15 et de la preuve par série sur un espace complet en 16.b."
+    ]
+  }
 }

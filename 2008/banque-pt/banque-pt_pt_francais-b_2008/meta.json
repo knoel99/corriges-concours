@@ -1,0 +1,112 @@
+{
+  "slug": "banque-pt_pt_francais-b_2008",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français B",
+    "annee": 2008
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2008/francais_b_2008.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2008/rapport_fra_b_ecrit_2008.pdf",
+    "programme_officiel": "https://www.education.gouv.fr/bo/2007/18/MENS0700809A.htm",
+    "notice": "https://www.banquept.fr/documents/livret/2008/Livret_PT_2008.pdf#page=12",
+    "sujet_sha256": "543d6c9609e4df5d768753dfb573e2248609fa80742c30c8c2894830221afbce",
+    "rapport_jury_sha256": "2b1842bf875acd3a740b8970f074e7ad80b80e65717ed6d602edbd62280d79bb",
+    "programme_officiel_sha256": "585130d997cdba19af79c8b2ee29fe2750ac352cb38aea5dd49b5d9c6ec45bba",
+    "notice_sha256": "ad57611750cbdcf6c4e1ba7444c3a7625cceaacff27f2a89763ffca957d67ca8",
+    "oeuvres_au_programme": [
+      "François-René de Chateaubriand, Mémoires d’outre-tombe, livres IX à XII",
+      "Karl Marx, Le 18 Brumaire de Louis Bonaparte (traduction de Maximilien Rubel)",
+      "Pierre Corneille, Horace"
+    ],
+    "theme": "Penser l’histoire",
+    "admissibilite_admission": "ENS Cachan, écrit d’admission, coefficient 4.",
+    "pages_rapport": "Rapport PDF p. 1 et 2 pour l’analyse de la genèse de Cinq-Mars, de la fable et de la vérité artistique. Les pages suivantes examinent le comparatif des trois démarches de restitution."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "À quoi sert le fait rendu à la mémoire ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture du texte de Vigny et du rapport et rédaction d’un résumé de 180 mots. Dissertation sur le sens moral du fait historique et les autres fins du drame, des mémoires et de l’analyse politique."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle de l’énonciation de Vigny, de l’unité du paragraphe final et du nombre de mots. Révision du rôle de Camille dans l’expérience morale du spectateur.",
+      "tour": 1
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Résumé",
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Résumé",
+        "page_pdf": 1,
+        "page_pdf_fin": 3,
+        "page_consigne": 4,
+        "perimetre": "L’extrait commence page 1 par « L’étude du destin général des sociétés » et se termine page 3 par « grands et complets ». Une note identifie la préface, puis la page 4 énonce les deux exercices.",
+        "mots_demandes": 180,
+        "mots_admis": [
+          162,
+          198
+        ],
+        "mots_par_paragraphe": [
+          55,
+          62,
+          63
+        ],
+        "mots_rediges": 180,
+        "points": 8
+      },
+      {
+        "question": "Dissertation",
+        "page_pdf": 4,
+        "perimetre": "Alfred de Vigny déclare : « Mais à quoi bon la mémoire des faits véritables, si ce n’est à servir d’exemple de bien ou de mal ? ». Pensez-vous que Corneille, Chateaubriand et Marx, dans les œuvres au programme partagent cette conception de la restitution des événements historiques ?",
+        "points": 12
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

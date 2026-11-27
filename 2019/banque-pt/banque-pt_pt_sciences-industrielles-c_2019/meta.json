@@ -1,0 +1,625 @@
+{
+  "slug": "banque-pt_pt_sciences-industrielles-c_2019",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Sciences industrielles C",
+    "annee": 2019
+  },
+  "questions": 47,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2019/si_c_2019_pt.pdf",
+    "sujet_sha256": "cb0c94eda81a8fe92002db2c01cb8836383b2cc4a59d81809e974f93017f04f9",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2019/rapport_si_c_ecrit_2019.pdf",
+    "rapport_sha256": "80e1882b6713cc58ce8cc5842bfc83445984af20952849de418e56a3689fbd1c",
+    "lecture_rapport": "Rapport du jury p. 1–4, vérifié sur la même session. P. 2, couples, chemins de courant, vis, coin et Hertz. P. 3, angles, Bode, estampage et tolérancement. P. 4, puissance de coupe et montage des roulements."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2019/si_c_2019_pt.pdf",
+      "sha256": "cb0c94eda81a8fe92002db2c01cb8836383b2cc4a59d81809e974f93017f04f9",
+      "nombre_pages": 55,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "c0992e2b3951396246bff29e38110afd5711395402a62623ff28641b44020d66"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "61863ae7956c57cbd3c2ffed782dcd2860f59513b5c332edd54f167da7866910"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "d179defc18789e6b3d117e327a21da529cf8cad6f24538e3f7051c428ad9c26d"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "dd0b8fb57db28cde7b17064f43bcd056f4f7ec8fd4865056b4d6c4320564ac1a"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "e5c7a10f03215825ff78e0ceccd3b035c3bca5ef4794d8f50de15bbe0639706f"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "25ea65e4166568a2a8691e944d3220908f4e57120d9d302a7fbc5bea9b18503f"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "3be104d2d23f83228b3fdb06ae9c44d842bd607498c24d92628b055cb9427831"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "d7a670ee7538c3a9f1258fc6d038ece4e06782c7fde1081712ec7a2f9fb14baf"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "dc5449b715d64263624ccc46b809afb3e1298530d6db682993b521f8608c8e7e"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "5a6136802527df33975b868a5b7d8d19cfb371176d86915586a17ad81081fcad"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "31a7742b367ee39e5f97196d0b6bf47a9139f6adb5230a2774f5adefa799ac55"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "8045507a767c83aac5b850eebfff3ca2c49312233cc5fbfaba6fb237f1f0358f"
+        },
+        {
+          "numero": 13,
+          "rendu_sha256": "344dd77809df7ed333c9295937de5f4c98187ded3897c1afad256508a1010772"
+        },
+        {
+          "numero": 14,
+          "rendu_sha256": "344dd77809df7ed333c9295937de5f4c98187ded3897c1afad256508a1010772"
+        },
+        {
+          "numero": 15,
+          "rendu_sha256": "344dd77809df7ed333c9295937de5f4c98187ded3897c1afad256508a1010772"
+        },
+        {
+          "numero": 16,
+          "rendu_sha256": "8e9aa3e23a732d9bc20bf30826417c05194308d8f4b56815e8b1f9b31ca18018"
+        },
+        {
+          "numero": 17,
+          "rendu_sha256": "09925d30be0a31d0ab4a04b37e34dd4dd60f648d62ed72b148fb3bbb55308983"
+        },
+        {
+          "numero": 18,
+          "rendu_sha256": "2ce9926db57f245b868e132bf867594c5a8b45aac36788cefaf38721ead24225"
+        },
+        {
+          "numero": 19,
+          "rendu_sha256": "ebd62f5c847a215b2b98c0129e5950609e9f0be1e0068f66fcf9734d53ab246d"
+        },
+        {
+          "numero": 20,
+          "rendu_sha256": "3a4a2d9bee11da85a0fb42ab50bf8ae9a9ddcac8a3f997fecb6f127452540eb7"
+        },
+        {
+          "numero": 21,
+          "rendu_sha256": "cd5084a50e1096a63133cf5623c40d81f7061672288f86643dff9975c1073acf"
+        },
+        {
+          "numero": 22,
+          "rendu_sha256": "25763ffec52bf0d65d37a4cc66becf08bc1efdc30eba11992535369ca4f3abe1"
+        },
+        {
+          "numero": 23,
+          "rendu_sha256": "c975ceb7b197722d53cd43112866dd98361709d2476df89a59b27d2b12bf7c92"
+        },
+        {
+          "numero": 24,
+          "rendu_sha256": "30e85b17a6b3d6cd13afd17b98001da5e3ca2aeca9cddeeb61b7f0254002b312"
+        },
+        {
+          "numero": 25,
+          "rendu_sha256": "84a852912bee4187391105904a32e8312b51d0ec973989aa931cdbebd1a909d5"
+        },
+        {
+          "numero": 26,
+          "rendu_sha256": "57b0319ad4b794a9c5a8857e135ea441a7e267f5c3e1de9c6a75d6d994e4a29a"
+        },
+        {
+          "numero": 27,
+          "rendu_sha256": "34d63cbd2621566b68698c3245e1c3230203b99422913bfbaa140a8836698e58"
+        },
+        {
+          "numero": 28,
+          "rendu_sha256": "889706cf18622c4a9f23dc3299c01dfe0b9f43a377d451ec30256687d070e653"
+        },
+        {
+          "numero": 29,
+          "rendu_sha256": "8d75f813cec4a51940ff3c2ffff0ae1f856e0a42d65d4c121c2fc5b5e7fe0db5"
+        },
+        {
+          "numero": 30,
+          "rendu_sha256": "54dc8018d6c266f7dbe04111336091216fb1eadabb07e4dcccc108be6e7afa68"
+        },
+        {
+          "numero": 31,
+          "rendu_sha256": "e065e3225bcd396b3fd8a1a93277a4b7efe02a5d29ecd9d8dbeed2e0f22836ab"
+        },
+        {
+          "numero": 32,
+          "rendu_sha256": "a0f081c75791066445338c90c34c3d4ffecd2f9c060155e4f34ca1d8d184a068"
+        },
+        {
+          "numero": 33,
+          "rendu_sha256": "bfdff71ccfe02bd07e2f8d2e5d63695da4753b73474de9ce074ff8a465184b40"
+        },
+        {
+          "numero": 34,
+          "rendu_sha256": "a1ba6437056ed3520d9f6d83eda3dfaf8b09f6868ff101a6d1af70faa89d5f2d"
+        },
+        {
+          "numero": 35,
+          "rendu_sha256": "9542d62ad827b814fb71adca6f638eef3c80a533c133c8f4022dccce05f162ab"
+        },
+        {
+          "numero": 36,
+          "rendu_sha256": "e6e376dbe3308a66bb793138349720bbd470d4d8fe3a594e0c6e214b5c191ca2"
+        },
+        {
+          "numero": 37,
+          "rendu_sha256": "088b6c19baa24c785c3743ab5b15977bdc7405937f635eefabdcc58c8053a2cb"
+        },
+        {
+          "numero": 38,
+          "rendu_sha256": "20a9f30a1fc957781f8b820ee61e3be9adf0df595e29428fcfcec00b57512928"
+        },
+        {
+          "numero": 39,
+          "rendu_sha256": "8cd9bb03a94df20ce66ed5685981e6e30dac06d95d5838af52ec36480e505af0"
+        },
+        {
+          "numero": 40,
+          "rendu_sha256": "69bfde2db5619a2ad8be808a509fa45c5ca2f2fcb6ad953cbfe62e1b56becc23"
+        },
+        {
+          "numero": 41,
+          "rendu_sha256": "7a90e733f23c7b76c2a98e5a3cbe149a86ca44d251c89791417d1b573b52a4f2"
+        },
+        {
+          "numero": 42,
+          "rendu_sha256": "d6fa926420280fa1f32e93df505244c1a5dfdff2900abdd59a695c939fcf9908"
+        },
+        {
+          "numero": 43,
+          "rendu_sha256": "7aae807073ceafa8cabe281d24b6e0dc37f77d5e3f55ed83cb66ce73a0abaca6"
+        },
+        {
+          "numero": 44,
+          "rendu_sha256": "49a0a05e7118712a6d4060adfc0b19b787ec71b76e4dc16e4fe0d08d1c0d4496"
+        },
+        {
+          "numero": 45,
+          "rendu_sha256": "20a183aab6dac587de2b083bc242b3900d56c79c4e4d347d96ca01893728de18"
+        },
+        {
+          "numero": 46,
+          "rendu_sha256": "f2e29aaf1fd33c50fbddd902d7e880ec1ff78cb6e7bca7427ef51d4534c1ec05"
+        },
+        {
+          "numero": 47,
+          "rendu_sha256": "eac3632e2da758490d7cc46ab976f6d5fceada5aff2ec2e7151d60781464abbf"
+        },
+        {
+          "numero": 48,
+          "rendu_sha256": "8de47af007d549e4982079108ac40cfd8daa5350ee40984fc0ad78f698d25694"
+        },
+        {
+          "numero": 49,
+          "rendu_sha256": "1b3dabda5f91c887c44c8e2698f479f7a6b15d713b2c14854203106d4062be2c"
+        },
+        {
+          "numero": 50,
+          "rendu_sha256": "00c76cde01dec13ac51e800e0c8eb51ff06ceebcfb9625d4671295c93a9fb8d3"
+        },
+        {
+          "numero": 51,
+          "rendu_sha256": "d05d40c96745d37be37aae30e67f5863a2d970d5b05eb6ad7a1cebac7ad0be40"
+        },
+        {
+          "numero": 52,
+          "rendu_sha256": "82335098b9431552a8a67fae757fabcb055bbb2212801a5b8b43baf19dfd3e85"
+        },
+        {
+          "numero": 53,
+          "rendu_sha256": "1c8c264ff32345fe003a31ce8065e98eac41eda611966814c8ea9bf030b1ad83"
+        },
+        {
+          "numero": 54,
+          "rendu_sha256": "fc3484701cee421f73ab7091a1e6aaa17cfb560f01ff455c07f4bc92d466d836"
+        },
+        {
+          "numero": 55,
+          "rendu_sha256": "a510acdf70f92d2c900f20cc03c843f82bbb069773948f2bdedd1921a56350e5"
+        }
+      ],
+      "echelle_rendu": 0.6
+    },
+    "rapport_jury": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2019/rapport_si_c_ecrit_2019.pdf",
+      "sha256": "80e1882b6713cc58ce8cc5842bfc83445984af20952849de418e56a3689fbd1c",
+      "nombre_pages": 4,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "f5a861b3275c259d1c5170cbfdfa705aaf6077866b32f597b39e3512257275a8"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "ce105ca4e179901677714d1a2a2d2121a6e50387480fc6da64d70324725e3f68"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "6ad897edd1e77be42c26f0a1b8ba6fb9cf9e4c5769d95b6046c65d7e20c83e50"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "97072babef64064384dc51afc253da65e240fab260003f03f15e649b8342ba7e"
+        }
+      ],
+      "echelle_rendu": 0.6
+    }
+  },
+  "date_revision": "2026-11-26",
+  "figures": [
+    {
+      "fichier": "figures/commutation.svg",
+      "question": "Q8",
+      "legende": "Pont triphasé et impulsions de position sur un demi-tour mécanique"
+    },
+    {
+      "fichier": "figures/suspension.svg",
+      "question": "Q30",
+      "legende": "Réponses à un échelon et comparaison des deux charges sur l’abaque"
+    },
+    {
+      "fichier": "figures/perpendicularite.svg",
+      "question": "Q39",
+      "legende": "Zone de perpendicularité admissible en fonction du diamètre de l’alésage"
+    },
+    {
+      "fichier": "figures/moyeu.svg",
+      "question": "Q47",
+      "legende": "Coupe du pivot de roue et sens de montage des deux roulements coniques"
+    }
+  ],
+  "contributions": [
+    {
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "session": "banque_pt_si_c_ecorner_formup_percage_2019",
+      "phase": "redaction",
+      "perimetre": "47 questions, ressources 1 à 13, schémas de courant et de tolérancement, surfaces et pivot sur calque original."
+    },
+    {
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "session": "banque_pt_si_c_ecorner_formup_percage_2019",
+      "phase": "relecture_corrige",
+      "perimetre": "Vérification des chemins conducteurs et des angles à 30°, des torseurs, des 7 rouleaux et des 2 plaquettes, des deux Bode, du maximum matière sur Ø56 H8 et des paliers coniques sur le calque à l’échelle.",
+      "tour": 1
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21",
+      "Q22",
+      "Q23",
+      "Q24",
+      "Q25",
+      "Q26",
+      "Q27",
+      "Q28",
+      "Q29",
+      "Q30",
+      "Q31",
+      "Q32",
+      "Q33",
+      "Q34",
+      "Q35",
+      "Q36",
+      "Q37",
+      "Q38",
+      "Q39",
+      "Q40",
+      "Q41",
+      "Q42",
+      "Q43",
+      "Q44",
+      "Q45",
+      "Q46",
+      "Q47"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "Q1",
+        "page_pdf": 4,
+        "traitement": "Vitesse limite par bilan de puissance"
+      },
+      {
+        "question": "Q2",
+        "page_pdf": 4,
+        "traitement": "Écart à l’exigence de vitesse"
+      },
+      {
+        "question": "Q3",
+        "page_pdf": 4,
+        "traitement": "Accélérations de translation et de rotation"
+      },
+      {
+        "question": "Q4",
+        "page_pdf": 4,
+        "traitement": "Couple nécessaire sur chaque roue motrice"
+      },
+      {
+        "question": "Q5",
+        "page_pdf": 4,
+        "traitement": "Énergie récupérable au freinage"
+      },
+      {
+        "question": "Q6",
+        "page_pdf": 4,
+        "traitement": "Choix du moteur-roue"
+      },
+      {
+        "question": "Q7",
+        "page_pdf": 5,
+        "traitement": "Principe de l’effet Hall"
+      },
+      {
+        "question": "Q8",
+        "page_pdf": 5,
+        "traitement": "Chemins conducteurs sur les trois positions"
+      },
+      {
+        "question": "Q9",
+        "page_pdf": 5,
+        "traitement": "Chronogramme des capteurs"
+      },
+      {
+        "question": "Q10",
+        "page_pdf": 5,
+        "traitement": "Commande des mémoires de transistors"
+      },
+      {
+        "question": "Q11",
+        "page_pdf": 7,
+        "traitement": "Torseurs du mécanisme vis–écrou"
+      },
+      {
+        "question": "Q12",
+        "page_pdf": 7,
+        "traitement": "Rotation de la vis et translation du coin"
+      },
+      {
+        "question": "Q13",
+        "page_pdf": 7,
+        "traitement": "Torseurs du plateau et du rouleau"
+      },
+      {
+        "question": "Q14",
+        "page_pdf": 7,
+        "traitement": "Fermer la chaîne au contact B"
+      },
+      {
+        "question": "Q15",
+        "page_pdf": 7,
+        "traitement": "Loi entrée–sortie du frein"
+      },
+      {
+        "question": "Q16",
+        "page_pdf": 7,
+        "traitement": "Régime moyen pendant l’approche"
+      },
+      {
+        "question": "Q17",
+        "page_pdf": 8,
+        "traitement": "Précision et rapidité du frein"
+      },
+      {
+        "question": "Q18",
+        "page_pdf": 8,
+        "traitement": "Interpréter les trois phases"
+      },
+      {
+        "question": "Q19",
+        "page_pdf": 8,
+        "traitement": "Charge linéique sur un rouleau"
+      },
+      {
+        "question": "Q20",
+        "page_pdf": 8,
+        "traitement": "Pression maximale de Hertz"
+      },
+      {
+        "question": "Q21",
+        "page_pdf": 9,
+        "traitement": "Vitesse en ligne droite"
+      },
+      {
+        "question": "Q22",
+        "page_pdf": 9,
+        "traitement": "Corriger le patinage"
+      },
+      {
+        "question": "Q23",
+        "page_pdf": 9,
+        "traitement": "Angles de la roue intérieure et de la roue extérieure"
+      },
+      {
+        "question": "Q24",
+        "page_pdf": 9,
+        "traitement": "Différence de vitesse en virage"
+      },
+      {
+        "question": "Q25",
+        "page_pdf": 9,
+        "traitement": "Tester le roulement sans glissement"
+      },
+      {
+        "question": "Q26",
+        "page_pdf": 9,
+        "traitement": "Calculer les angles de braquage"
+      },
+      {
+        "question": "Q27",
+        "page_pdf": 9,
+        "traitement": "Résolution du codeur"
+      },
+      {
+        "question": "Q28",
+        "page_pdf": 9,
+        "traitement": "Passer du code Gray à l’angle"
+      },
+      {
+        "question": "Q29",
+        "page_pdf": 10,
+        "traitement": "Identifier les paramètres du deuxième ordre"
+      },
+      {
+        "question": "Q30",
+        "page_pdf": 10,
+        "traitement": "Réponse indicielle dans la plage demandée"
+      },
+      {
+        "question": "Q31",
+        "page_pdf": 11,
+        "traitement": "Valeurs théoriques aux deux charges"
+      },
+      {
+        "question": "Q32",
+        "page_pdf": 11,
+        "traitement": "Temps de réponse à 5 %"
+      },
+      {
+        "question": "Q33",
+        "page_pdf": 11,
+        "traitement": "Vérifier l’ordre sur le diagramme de Bode"
+      },
+      {
+        "question": "Q34",
+        "page_pdf": 11,
+        "traitement": "Identifier expérimentalement le gain et la pulsation"
+      },
+      {
+        "question": "Q35",
+        "page_pdf": 11,
+        "traitement": "Propriétés recherchées"
+      },
+      {
+        "question": "Q36",
+        "page_pdf": 11,
+        "traitement": "Obtenir le brut en grande série"
+      },
+      {
+        "question": "Q37",
+        "page_pdf": 11,
+        "traitement": "Lire la cote 336 ± 0,3 mm"
+      },
+      {
+        "question": "Q38",
+        "page_pdf": 11,
+        "traitement": "Interpréter les trois cadres de spécification"
+      },
+      {
+        "question": "Q39",
+        "page_pdf": 11,
+        "traitement": "Diagramme de tolérance dynamique"
+      },
+      {
+        "question": "Q40",
+        "page_pdf": 11,
+        "traitement": "Associer chaque surface à son usinage"
+      },
+      {
+        "question": "Q41",
+        "page_pdf": 12,
+        "traitement": "Régler l’ébauche du plan C"
+      },
+      {
+        "question": "Q42",
+        "page_pdf": 12,
+        "traitement": "Partager les 4 mm et contrôler la puissance"
+      },
+      {
+        "question": "Q43",
+        "page_pdf": 12,
+        "traitement": "Diagnostiquer la coupe du montage initial"
+      },
+      {
+        "question": "Q44",
+        "page_pdf": 12,
+        "traitement": "Justifier le type et l’opposition des roulements"
+      },
+      {
+        "question": "Q45",
+        "page_pdf": 12,
+        "traitement": "Ajustements et montage des bagues"
+      },
+      {
+        "question": "Q46",
+        "page_pdf": 12,
+        "traitement": "Garantir le fonctionnement"
+      },
+      {
+        "question": "Q47",
+        "page_pdf": 12,
+        "traitement": "Concevoir le pivot sur le calque pré-imprimé"
+      }
+    ]
+  }
+}

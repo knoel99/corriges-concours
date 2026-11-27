@@ -1,0 +1,55 @@
+{
+  "slug": "ens_mp-pc_russe-lv1_2006",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Russe (LV1)",
+    "annee": 2006,
+    "modalite": "écrit"
+  },
+  "intitule": "Le déficit de naissances en Russie selon le Centre Levada",
+  "questions": 3,
+  "redaction": "Traduction intégrale en français et traitement des questions en russe. Le déficit de naissances en Russie selon le Centre Levada.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2006/sujet-2006-ecrit-mp_pc_langue_vivante_1.pdf#page=6",
+    "sha256_sujet": "1f6e13b751aff5e2ffb432c64c2161b70c3757795ee2e70c40a1b891b7170c3d",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2006",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2006/sujet-2006-ecrit-mp_pc_langue_vivante_1.pdf#page=6",
+        "sha256": "1f6e13b751aff5e2ffb432c64c2161b70c3757795ee2e70c40a1b891b7170c3d"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I",
+      "fichier": "figures/lecture-de-la-version.svg",
+      "legende": "Les quatre mesures ne portent pas sur le même objet"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "arabe_mp_pc_2011_2014",
+      "session": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Traduction intégrale en français et traitement des questions en russe. Le déficit de naissances en Russie selon le Centre Levada."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I",
+      "II.1",
+      "II.2"
+    ]
+  }
+}

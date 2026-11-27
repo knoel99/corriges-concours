@@ -39,5 +39,58 @@
       "modifications": true,
       "perimetre": "Rédaction des 15 réponses sur les profils de grottes, lecture du sujet et du rapport officiels. Deux figures originales. Exécution du code extrait de chaque édition, décompositions comparées à un calcul sur les colonnes, vérification des capacités, des deux ordres de remplissage et des dates de la figure 6."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15"
+    ],
+    "pages_des_questions": {
+      "1": 5,
+      "2": 5,
+      "3": 5,
+      "4": 5,
+      "5": 5,
+      "6": 5,
+      "7": 6,
+      "8": 6,
+      "9": 6,
+      "10": 10,
+      "11": 11,
+      "12": 11,
+      "13": 11,
+      "14": 11,
+      "15": 11
+    },
+    "origine_attestation": {
+      "commit_du_journal": "a8f4c695836cf39f236d00899b4090ed08111197",
+      "phase": "redaction",
+      "date": "2026-11-24",
+      "perimetre": "Rédaction des 15 réponses sur les profils de grottes, lecture du sujet et du rapport officiels. Deux figures originales. Exécution du code extrait de chaque édition, décompositions comparées à un calcul sur les colonnes, vérification des capacités, des deux ordres de remplissage et des dates de la figure 6.",
+      "sha256_sujet_controle": "dabd2010f7ed4c1654a8aadd7d306dcc4752b99e543f6398ced10e9e8154d7fc",
+      "sha256_rapport_controle": "4f874ed5b941758866de6e4b62c0495756c851143df84414bc2adaba86088e6d"
+    },
+    "controle_programmes": {
+      "resultats_par_edition": {
+        "brut": "brut 4368 profils 363 grottes 166 vallées 6470 budgets 24 dates officielles",
+        "guide": "guide 4368 profils 363 grottes 166 vallées 6470 budgets 24 dates officielles"
+      },
+      "controle_sur": "Programmes extraits de chaque édition et vérifiés à nouveau. Les tests portent aussi sur les requêtes SQL lorsqu’elles sont proposées."
+    },
+    "precision": "Les numéros et pages ont été relevés dans le fac-similé du concours. Les réponses des deux éditions sont présentes au commit éditorial indiqué."
+  }
 }

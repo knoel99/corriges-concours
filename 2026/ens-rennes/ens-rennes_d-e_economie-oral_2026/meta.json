@@ -65,6 +65,77 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Comparaison aux vingt-trois intitulés sur la page de l’ENS, contrôle des équations, des hypothèses, de la date des comptes français et des références institutionnelles."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification du vingt-deuxième billet d’économie. Exemple de comptabilité nationale chiffrant le déficit courant, puis comparaison de deux voies de retour à l’équilibre."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Les vingt-trois intitulés ont été confrontés dans leur ordre à la feuille officielle et aux vingt-trois réponses de chaque édition. Les illustrations et les calculs de la coopération répétée (billet 7), de la dette (8), du taux réel (10), de l’épargne (16) et du compte courant (22) ont été revus avec leurs hypothèses. Le jury publie une liste de sujets, sans questions complémentaires ni annexes individuelles.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Doit-on encore lutter contre l’inflation ?",
+      "Les biens publics devraient-ils toujours être produits par la puissance publique ?",
+      "L’explication du chômage involontaire",
+      "Choix économiques et arbitrage intertemporel",
+      "Oligopole et concurrence sont-ils incompatibles ?",
+      "Les déséquilibres macroéconomiques externes",
+      "Dilemme du prisonnier et coopération",
+      "La dette publique est-elle soutenable aujourd’hui en France ?",
+      "Le rôle de l’innovation dans la croissance",
+      "Le taux d’intérêt est-il une variable nominale ?",
+      "Externalités et politiques publiques",
+      "La politique budgétaire dans le cadre de l’Union économique et monétaire",
+      "Les anticipations individuelles sont-elles source de stabilité ou d’instabilité ?",
+      "Optimum de Pareto et bien-être",
+      "La banque centrale doit-elle agir en prêteur en dernier ressort ?",
+      "L’égalité épargne-investissement",
+      "La concurrence suffit-elle à discipliner les entreprises dominantes ?",
+      "Le taux d’intérêt naturel",
+      "Quels sont les remèdes à l’anti-sélection ou sélection adverse ?",
+      "Les cycles économiques",
+      "L’indépendance de la Banque centrale",
+      "Les déterminants du solde du compte courant de la balance des paiements",
+      "La crédibilité d’une banque centrale est-elle son principal instrument ?"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "verification": "Les vingt-trois intitulés ont été confrontés dans leur ordre à la feuille officielle et aux vingt-trois réponses de chaque édition. Les illustrations et les calculs de la coopération répétée (billet 7), de la dette (8), du taux réel (10), de l’épargne (16) et du compte courant (22) ont été revus avec leurs hypothèses. Le jury publie une liste de sujets, sans questions complémentaires ni annexes individuelles.",
+    "limites": "Vingt-trois billets sur la feuille d’une page. Les relances du guide sont des propositions pédagogiques.",
+    "pieces_controlees": [
+      {
+        "role": "sujet",
+        "pages": 1,
+        "sha256_apercu": "b876924dd4c5b99dbb65b2940948ae39ebf3ffdda8eab5f863a374f9168c56c5",
+        "sha256_original": "73d321233c65fe54fbb740719055f1e69a122092f02d442b17a9880bbef534b8"
+      }
+    ]
+  }
 }

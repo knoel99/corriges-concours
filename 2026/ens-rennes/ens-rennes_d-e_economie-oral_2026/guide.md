@@ -6,6 +6,10 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 L’ENS Rennes publie vingt-trois sujets d’économie pour les oraux du concours D–E 2026. Chaque numéro ci-dessous reprend un intitulé, dans l’ordre du document.
 
 Le guide propose, pour chaque exposé, une question de relance suivie d’une réponse. Avant de consulter cette dernière, préciser la population étudiée, l’horizon temporel ou la condition du modèle qui changerait la conclusion.
@@ -253,6 +257,8 @@ La démographie, le cycle budgétaire et privé, les investissements en infrastr
 
 ![Deux lectures du même solde courant](figures/compte-courant.svg)
 
+Faites varier une grandeur à la fois. Si l’investissement passe de 25 à 22 tandis que l’épargne reste à 22, le compte courant s’équilibre. Le même solde nul serait obtenu avec un investissement inchangé de 25 et une épargne portée à 25. La comptabilité ne tranche pas entre ces ajustements.
+
 > [!INDICATION]
 > Une dépréciation suffit-elle à améliorer le solde commercial ?
 
@@ -270,3 +276,9 @@ Cette confiance découle d’instruments disponibles, de la cohérence des déci
 Si des données nouvelles modifient le diagnostic et que la décision respecte le mandat annoncé, l’absence de réaction pourrait être plus dommageable que la surprise.
 
 [Liste officielle des sujets](https://www.ens-rennes.fr/medias/fichier/sujets-oraux-d-e-conomie-d-e-2026_1790958162018-pdf)
+
+## Vérification sur le sujet
+
+Les vingt-trois intitulés ont été confrontés dans leur ordre à la feuille officielle et aux vingt-trois réponses de chaque édition. Les illustrations et les calculs de la coopération répétée (billet 7), de la dette (8), du taux réel (10), de l’épargne (16) et du compte courant (22) ont été revus avec leurs hypothèses. Le jury publie une liste de sujets, sans questions complémentaires ni annexes individuelles.
+
+Pour rapprocher les billets 10 et 18, prenons un taux nominal de 5 % et une inflation attendue de 3 %. Le taux réel anticipé exact est $1{,}05/1{,}03-1$, soit environ 1,94 %. Si l’inflation réalisée atteint ensuite 6 %, le rendement réel constaté est proche de −0,94 %. Aucun de ces deux résultats ne fournit directement le taux naturel du billet 18. Celui-ci dépend des déterminants réels et du modèle utilisé pour l’estimer.

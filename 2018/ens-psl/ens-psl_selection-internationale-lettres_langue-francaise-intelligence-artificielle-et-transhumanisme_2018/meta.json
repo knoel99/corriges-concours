@@ -1,0 +1,55 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_langue-francaise-intelligence-artificielle-et-transhumanisme_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Langue française — intelligence artificielle et transhumanisme",
+    "annee": 2018,
+    "modalite": "écrit"
+  },
+  "questions": 6,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/SIL%202018%20-%20Sujet%20Langue%20francaise.pdf",
+    "sujet_sha256": "2132647f1f9c3523a70a93576a094eae2ad5e4ca4fe8657fd72da1cf71726b8b",
+    "source_imprimee": "Irénée Régnauld, « On peut être contre l’intelligence artificielle par principe », Usbek & Rica, janvier 2017."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Compréhension · quatre expressions",
+      "Résumé",
+      "Rédaction"
+    ]
+  },
+  "longueurs": {
+    "resume": 240,
+    "redaction": 362,
+    "methode": "groupes séparés par un espace"
+  },
+  "figures": [
+    {
+      "fichier": "figures/raisonnement.svg",
+      "legende": "À qui attribuer chaque prise de position ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet officiel et du texte entier. Quatre réponses de compréhension contextualisées, résumé sous contrainte, rédaction argumentée, explication et schéma dans les deux éditions."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

@@ -1,0 +1,788 @@
+{
+  "banque-pt_pt_langue-vivante-a_2008": {
+    "commit": "e8c59980ca7204307a2c1e14360e7975a4adc7ed",
+    "arbre_git": "b6c47bc15f1c34742f6cd36e553d79f3d85418fd",
+    "questions": 15,
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2008/lv_a_2008.pdf",
+      "sha256": "855225ef182fef47a85bc85ba9d20f8183a4d19d0942598874bcb618046a265a",
+      "pages": 12,
+      "rendus_sha256": [
+        "eb37ab7a9d2ae2d723fa6e7a525b492fc6a1d8ad236fe27f2faf0415d5e74a36",
+        "18e6dc630b62c134da5382d236bd253a93fc89ee11406a8bfc8203b1bbb84a1a",
+        "81c3d800d2114fd6ff9305ff2c7b29e114bb124a58770a6da39c06d7aa21e986",
+        "2097db8eb0f18c5400c0d5b459f4165c61da81d2de6c0b28ffc7abc815ced594",
+        "24db84934a2d495241c71b5c8b4d23f8a5a6a23ae5d83cd02bd06b9165f5814a",
+        "f2080289004908ae6c2a0202485bfec06c570c8b5334399b40b5f8dcaa2fc8c4",
+        "5eb58c16e40524a9a8d652b42ba608448c0cfa611bb05f8076321eb586d7c2c5",
+        "52d5ee6313d4f8caa61e85e072c96357ca91f02430f845b776254646c3fbc510",
+        "bdc37dfef31a41c729485d369d1e977366e5adca5e9ab2c183cb3c1923568cb0",
+        "8a1eddb2ffe925a1876b712628a9315f678d57b93cc9326b023d233ad6bd42b4",
+        "66e5129ca1fe7dcdbae4d08a41d32bc1f8472b3b0f25f24dec44fa94f7302448",
+        "7bbb16474dc15205b5d25b25cf4133e60359ed3888f923a200093880408562f7"
+      ],
+      "index": "https://www.banquept.fr/article152.html",
+      "sha256_index": "17cdf08d3d07da44b1d575a7149c96840d25bcd4eaa49fd210234f6fd544625b"
+    },
+    "livret": {
+      "url": "https://www.banquept.fr/documents/livret/2008/Livret_PT_2008.pdf#page=12",
+      "sha256": "ad57611750cbdcf6c4e1ba7444c3a7625cceaacff27f2a89763ffca957d67ca8",
+      "pages": 71,
+      "rendus_sha256": [
+        "4c6063e44e8883fd77d4d1ceefb683538005b6f90b8680dc9ff580359b2835ca",
+        "b36ab537385498b1814b45e4e77fbf6186efc27850314c8ace97785c179cfab5",
+        "b1238e8e0c8bec4638199b7f685b4ec66b62e3010921ca062536c265082a5ecf",
+        "b509db646fbbdeceeb45285822ad84681d4bed0dcbf5c00486527a77b763e209",
+        "8200e50d88f40cacc22f3f870ab550ab80554ce79f44de71617d956dedd8e490",
+        "8b79784a8a8d192215b22c6eeb06c6ec5450629f1801645fb321e32a7caa5cf1",
+        "68515766ea213b9a52e224fbab5978baafd317c64bbcfeb505a873ae35a14a43",
+        "988636d3c08f2824f86fd5f81d75b5a02b8088007a3f4622dc6eaa93ffad6177",
+        "7b274a774dfb058c814005d52d7b0454a9e941cfc1e5c0095cf6c0320114263f",
+        "61bfe7e9fcc26674f156635d69db1354cb37cab22df535b6fc17cfbb69195682",
+        "04f61318cf5635f037d1d0d1e5a89add7dae686130671d845999650a99fc9bc8",
+        "15cfccf4cd5c737f6fe8535da950c6541329d8121fe7a61f4e613dfe7098d59e",
+        "241f28831f9a4da9c9211a8707c86bfba89969b3004cd04b2e2bf65299baeb90",
+        "a9d63772a4ea4909f5c31114f7cb1a3f595b7a7a61af15cd1953ddbf5206bdf1",
+        "db1863de69ce95f48247fdd60a18d093300f40a9cb9b4c2b80026b7b6d628992",
+        "deaf405a43f604222420e02b856b1aef4ba751367f4d3c5b6e5adfa48a842c3c",
+        "c51a7c407c94581971fe32efabca403cd662afe660d0f3ce0c967c160d544a30",
+        "54e613bd209aab77bdecf95d9834357fb87bd70e2a11880068100a73e63c1714",
+        "97579686c0db7c618c7ea956668f9d9f1b9f9971605c37a1bef1dabf076bd1ff",
+        "b37ff5bb3091754f163068696152dbb2fabcb40b980181e05c86f819cbe51a53",
+        "50e567d9ea641899187cf0aa83d61df90f9b614d077d098655714eba91991852",
+        "1e912eb5401197dabcac02b11ab40c94403cca1155cdbe78e481ae02fee48953",
+        "5cddf1a33c2faf0c563ffe40eddac6e0bfc679859db0f2f15270b7536b6d36af",
+        "d96a410a6ac9c1973c72d6409d8ebcad5924a8b68302cedc795216fded4323ef",
+        "64f3604460bf84b15b351381968f3aa3add8cd906a4adea04510cc9376874024",
+        "113efc39b64b803a1a8421a1c96a08978d88140a94f1e04290799a814e487bec",
+        "33c4f14d93f2a4d35e9f9623c76d43e2a39804df96b14359fba396cbd75fd8ca",
+        "066a98c4ab6656a233756dd95b9b708954ee7970a6b3cd5798cb04e3d4874e3b",
+        "8d9d701518fb112066e9f312369821b2ea3efef784adf516bde3bc802be8f34b",
+        "97e1a2044c033ed7fdca410cc9bc7fe84da616842bfed442fb0f7f7fa16c5717",
+        "bad6f174a2a8e63d0856fb551ab2270773f22c399fdad7b6246f15fa178d08fd",
+        "e4cc007b767e9ef28a595734a2c7469b5800482be2589c48b1adea4d0739f2aa",
+        "ac6efbf0c3463532137310fb04493b1e992a352c1777e3f5104a10061ed4f9e6",
+        "4d4019d684e5fd4f873b8c242ea523f7280e196bd45f3d287c43f965c20a9bc6",
+        "8738dead7d2c67fc1eb8e2bd412a5ba13ebfb0147df6e26604ee9eaabf7e6406",
+        "3501f1b3093f4c496557c0d843aa567e1d5599d252986bc45a521ff54f3be448",
+        "4005e3f3b39611fbee2ae911cce807e5bddda3c5eb98ebb9ae794e0a16d9e979",
+        "c2451a8e42ebdba4f70e417544171ff2f1c29d338ae4ead8d6e0e09ffd425e92",
+        "03c8f15164d9ce17e1caa43e625bc1598d3d3c58168edce3dfe6a62e8826dbe5",
+        "93e41681d7ab8660e2611276619f1301919ac4d47b91f2b2e96e973422de0a71",
+        "75a09a93931eaa783b231cf4151cc6fee92fc96618892297140b2b1d05aaab1e",
+        "510d54b4ccbfbcae2cd3d685b18401203e329476b6cf58fbeeef02c18ee12ab5",
+        "c1ca90a4498461b779b2d93af241f6b50bf33de9b669cbf38fedb91e2ce07edf",
+        "421f9cec9e37a7ebddcc92a48e597987718d019f5bdb7dbf6443bf0a373cee72",
+        "1509698fdd4801a42102922b0d5b4f679e14a8637e7f8365f3523d57ab6cba2e",
+        "b9b14be1afc07c0ad4ac35857da73099c5a4a94dd73afd0f3caa5b42683ea2e0",
+        "a28456bebccc3bb55881ab508e6b57980b6d8019d1473d647417eefed842aa99",
+        "cf558ff769311b6c055f80bc50c185b5fca6aaea7b467a6c4c252f0e0667ad58",
+        "82702e86b9e5d9f443620ddf045e0a124f6567900745accbab91418516e6c67c",
+        "b307e3a75fd1316c1a8aec9070e8cf7269502f075c74ea2fe23fa3b1a7ed2d46",
+        "0b0960cd652108897cb565231a5fe939334b1cf5820c2ed2c21cd7353be10eaf",
+        "d4c21084b91ea2f52dc5012a16de7927479b88e665cc8ba6aa451f9367d9b0a5",
+        "8e14bfb2b88a509861f4d8e164654419a496c367bd286ef2548abac733430aa3",
+        "3a06c4daa044c319d4ebe2576b4fe395b3b228967091b0a549073942b924289f",
+        "ff7d9ef20fdca49f8d12f1a03c7ee6b098cafae67c413af4929161a3246639ee",
+        "f51514c4354943d7d3df9e919169380d832dbc5a8a2b17ed974fde797fcafc12",
+        "6930502101e19d3945606c9b0130b7a64812b70c73379bd24b003bdfd8e1115c",
+        "fe1c47cf2df3bc531989fbffaff66389ddda562bd9cdce93e78e3ed81f2f37a4",
+        "ba127d1515ae12ea3b1da268206dafa7dbd201b0d8755651fe3529cfbf036ec1",
+        "dc75af8c75519a51acf7d90649c08a58a2eec1b47f159f7424ec3e45a179e6e3",
+        "d0abec108667e2990a145847ef5132fca11807a1de6266102544273aa92fbe04",
+        "5caa699b159a9d0fe595b13025da9a4012aa3c106a5764f2747daa6d1b116c47",
+        "59b566ea6a97a8ac02d5b6733b77773ea6dfc35e7c109b29d3a7b8ecf62be40b",
+        "1cc579bdcee7e88e3c783bc909436ee249d66c081870357a39ae76820f4c749d",
+        "16aa9ce5480177d887d9473b9fd40a1abf19e9731abb854ad588f8774c48d456",
+        "b7a7a03f08efc65783f208229b1600350d130173b7fae99df1d0f495ed7daa12",
+        "279022a24481da09e8a2b84251a923885b607106fc089fa130d9ea7c135ce911",
+        "54ce44350493628c206648057384ed8ab1df780c10ca7fba13bfd348e3d1a1a8",
+        "a9c8cc4112e0cdb507bf34a9fda08ac4af19af261ef15ece0c070b63ac4ad675",
+        "176de48132b2334daf72f3f24ad90a58dce89c60ba2237fe77f896db9f550753",
+        "738a30070a5e059c676dc252fb12bd99cb44035156b9ee7c830ebbfc15d95567"
+      ],
+      "page_grille": 12,
+      "coefficients_admission": {
+        "ENS Cachan": 1,
+        "École polytechnique": 6
+      }
+    },
+    "rapport": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2008/rapport_lv_a_ecrit_2008.pdf",
+      "sha256": "2d38f8a5e20fa489558b6c07e8631b6081ea50822cf5afd2cfd9103b6cb34fc9",
+      "pages": 8,
+      "rendus_sha256": [
+        "415febb38d07299d8b52b9eb390cb77927afcb435d9b8ac22e6419b6b5c8e70f",
+        "263729040313c13e495823b19ff5a2597ca128ec326cd235fe18a489c3366475",
+        "12ab6aec656ed0542e65eda53793eebb177bfa236b5e866be83ecbb84ae107f1",
+        "f007ab3be83dd1f1beccf45f2881a05a90302ddbe83a7d9087d98e5b5dbfe1ff",
+        "c379ea499d0987f7d2f7bad6c0f468f88aa73ad68dae7238641084f3413aeb89",
+        "417aaad421478652e372c9a9a8c89690092efad509bae4260d91f65628da5b93",
+        "43b559c10dd271d256224cf56dc0e82e66055c078b49c156631407fc515d2fc8",
+        "35a3406c3a2db073fb572ab5f09ae1fea1b965360c0e34ee162aab639a9a4ca9"
+      ],
+      "index": "https://www.banquept.fr/article153.html",
+      "sha256_index": "12a4a0b5710f8cb8cf7b71a6b75822f8e6036e5a84a391e6b3c003c170846638"
+    },
+    "editions": {
+      "brut": {
+        "pages": 8,
+        "signets": [
+          [
+            1,
+            "Allemand",
+            1
+          ],
+          [
+            2,
+            "Version française",
+            1
+          ],
+          [
+            2,
+            "Question a",
+            1
+          ],
+          [
+            2,
+            "Question b",
+            2
+          ],
+          [
+            1,
+            "Anglais",
+            2
+          ],
+          [
+            2,
+            "Version française",
+            3
+          ],
+          [
+            2,
+            "Question a",
+            3
+          ],
+          [
+            2,
+            "Question b",
+            3
+          ],
+          [
+            1,
+            "Arabe",
+            4
+          ],
+          [
+            2,
+            "Version française",
+            4
+          ],
+          [
+            2,
+            "Question a",
+            5
+          ],
+          [
+            2,
+            "Question b",
+            5
+          ],
+          [
+            1,
+            "Espagnol",
+            5
+          ],
+          [
+            2,
+            "Version française",
+            5
+          ],
+          [
+            2,
+            "Question a",
+            6
+          ],
+          [
+            2,
+            "Question b",
+            6
+          ],
+          [
+            1,
+            "Italien",
+            7
+          ],
+          [
+            2,
+            "Version française",
+            7
+          ],
+          [
+            2,
+            "Question a",
+            7
+          ],
+          [
+            2,
+            "Question b",
+            8
+          ]
+        ],
+        "questions": [
+          {
+            "nom": "Allemand",
+            "pages_rapport": [
+              1,
+              2
+            ],
+            "pages_sujet": [
+              2,
+              3
+            ],
+            "exercices": [
+              {
+                "exercice": "Version française",
+                "pages_pdf": [
+                  1
+                ]
+              },
+              {
+                "exercice": "Question a",
+                "mots_verifies": 91,
+                "pages_pdf": [
+                  2
+                ]
+              },
+              {
+                "exercice": "Question b",
+                "mots_verifies": 208,
+                "pages_pdf": [
+                  2
+                ]
+              }
+            ],
+            "bornes_version": "De « Am Steuer sitzt künftig » à « jederzeit eingreifen können ». Reprendre aussi l’intertitre et la coupure signalée."
+          },
+          {
+            "nom": "Anglais",
+            "pages_rapport": [
+              3,
+              4
+            ],
+            "pages_sujet": [
+              4,
+              5
+            ],
+            "exercices": [
+              {
+                "exercice": "Version française",
+                "pages_pdf": [
+                  3
+                ]
+              },
+              {
+                "exercice": "Question a",
+                "mots_verifies": 95,
+                "pages_pdf": [
+                  3
+                ]
+              },
+              {
+                "exercice": "Question b",
+                "mots_verifies": 212,
+                "pages_pdf": [
+                  3,
+                  4
+                ]
+              }
+            ],
+            "bornes_version": "Deux extraits. Du passage « The robot is one of hundreds of cutting-edge devices » à « humans who invented them », puis de « Tocco-chan, for example » à « nothing more sinister than technical glitches »."
+          },
+          {
+            "nom": "Arabe",
+            "pages_rapport": [
+              5,
+              6
+            ],
+            "pages_sujet": [
+              6,
+              7
+            ],
+            "exercices": [
+              {
+                "exercice": "Version française",
+                "pages_pdf": [
+                  4
+                ]
+              },
+              {
+                "exercice": "Question a",
+                "mots_verifies": 82,
+                "lettres_arabes_contigues": 381,
+                "pages_pdf": [
+                  5
+                ]
+              },
+              {
+                "exercice": "Question b",
+                "mots_verifies": 212,
+                "lettres_arabes_contigues": 920,
+                "pages_pdf": [
+                  5
+                ]
+              }
+            ],
+            "bornes_version": "Les deux premiers paragraphes de la page 6, depuis « لا يزال إلغاء عقوبة » dans le corps du texte jusqu’à « إلى تحقق نتيجة معينة ». Au début du renvoi, la page 7 imprime « لا تزال » et, à la fin, emploie le pluriel « نتائج » là où le texte porte le singulier « نتيجة ». Le passage se termine avant le paragraphe historique."
+          },
+          {
+            "nom": "Espagnol",
+            "pages_rapport": [
+              7
+            ],
+            "pages_sujet": [
+              8,
+              9
+            ],
+            "exercices": [
+              {
+                "exercice": "Version française",
+                "pages_pdf": [
+                  5,
+                  6
+                ]
+              },
+              {
+                "exercice": "Question a",
+                "mots_verifies": 92,
+                "pages_pdf": [
+                  6
+                ]
+              },
+              {
+                "exercice": "Question b",
+                "mots_verifies": 219,
+                "pages_pdf": [
+                  6
+                ]
+              }
+            ],
+            "bornes_version": "De « Pobres de aquellos que odian los ordenadores » à « que lo descubriéramos »."
+          },
+          {
+            "nom": "Italien",
+            "pages_rapport": [
+              8
+            ],
+            "pages_sujet": [
+              10,
+              11
+            ],
+            "exercices": [
+              {
+                "exercice": "Version française",
+                "pages_pdf": [
+                  7
+                ]
+              },
+              {
+                "exercice": "Question a",
+                "mots_verifies": 89,
+                "pages_pdf": [
+                  7
+                ]
+              },
+              {
+                "exercice": "Question b",
+                "mots_verifies": 213,
+                "pages_pdf": [
+                  8
+                ]
+              }
+            ],
+            "bornes_version": "De « Meglio i giornalisti » à « per sostenere l’uso della lingua nel mondo ». Les deux intertitres compris dans ces bornes appartiennent à la version."
+          }
+        ],
+        "figures": [
+          {
+            "fichier": "figures/lecture-de.svg",
+            "question": "Allemand",
+            "legende": "À qui revient chaque action ?",
+            "page_pdf": 2,
+            "sha256_svg": "d54e43654505942e4866373b9eb1a859966d285bb60627081508867169408141",
+            "sha256_forme_pdf": "d6e520909bac2f8d190b5c27e801e6c478c79d5e8bdfa5f3910bf5f20131bc1f"
+          },
+          {
+            "fichier": "figures/lecture-en.svg",
+            "question": "Anglais",
+            "legende": "Quels rôles pour les robots ?",
+            "page_pdf": 4,
+            "sha256_svg": "4d99774993a1c790a01854a22f9e18ddbf6bde045eb5bf035e586bdc9c8bc0e0",
+            "sha256_forme_pdf": "53fb1d4295b144c33076ca9b843bb20818c02c769396e61b6e05f87862b49886"
+          },
+          {
+            "fichier": "figures/lecture-ar.svg",
+            "question": "Arabe",
+            "legende": "Trois niveaux du débat de 2007",
+            "page_pdf": 5,
+            "sha256_svg": "a052f62a89fcac8833af7694fad9b048091771acf22f74ffe077b35a5a3291a6",
+            "sha256_forme_pdf": "6021dccb7abde27b374b6726af9e6e73466c7b733712c502f37082c5e3ff5db1"
+          },
+          {
+            "fichier": "figures/lecture-es.svg",
+            "question": "Espagnol",
+            "legende": "Du vivant à l’hypothèse de simulation",
+            "page_pdf": 7,
+            "sha256_svg": "1df53a646870bffc65ff055c0ea6969a99f483832e0262714d58f31f99d1ae41",
+            "sha256_forme_pdf": "628f017c6993c1cc16b761126fa296f3d8f1e338b3a384aa399e52479faccea8"
+          },
+          {
+            "fichier": "figures/lecture-it.svg",
+            "question": "Italien",
+            "legende": "Que mesurent les sondages ?",
+            "page_pdf": 8,
+            "sha256_svg": "9a744e29a8035656cb9bd64e1357accc65645fad84f0bfd6c8656351a7516165",
+            "sha256_forme_pdf": "f8c62233338aa332524804f1d3e3ba0a2621bd0f0f0c4a2f2ee58fa1024983fd"
+          }
+        ],
+        "signatures_premiere_page": [
+          "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+          "**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+        ],
+        "sha256_pdf": "60ba1d7a134abf245fd3236ef02200456465f434d42187f6b83bfced96d500e6",
+        "sha256_markdown": "6b560c8a711dde2f75fb894d87cf6f0b94b89c24f68471350b470f5892c834ab",
+        "diagnostic_latex_propre": true
+      },
+      "guide": {
+        "pages": 9,
+        "signets": [
+          [
+            1,
+            "Allemand",
+            1
+          ],
+          [
+            2,
+            "Version française",
+            1
+          ],
+          [
+            2,
+            "Question a",
+            2
+          ],
+          [
+            2,
+            "Question b",
+            2
+          ],
+          [
+            1,
+            "Anglais",
+            3
+          ],
+          [
+            2,
+            "Version française",
+            3
+          ],
+          [
+            2,
+            "Question a",
+            4
+          ],
+          [
+            2,
+            "Question b",
+            4
+          ],
+          [
+            1,
+            "Arabe",
+            4
+          ],
+          [
+            2,
+            "Version française",
+            5
+          ],
+          [
+            2,
+            "Question a",
+            5
+          ],
+          [
+            2,
+            "Question b",
+            6
+          ],
+          [
+            1,
+            "Espagnol",
+            6
+          ],
+          [
+            2,
+            "Version française",
+            6
+          ],
+          [
+            2,
+            "Question a",
+            7
+          ],
+          [
+            2,
+            "Question b",
+            7
+          ],
+          [
+            1,
+            "Italien",
+            7
+          ],
+          [
+            2,
+            "Version française",
+            8
+          ],
+          [
+            2,
+            "Question a",
+            8
+          ],
+          [
+            2,
+            "Question b",
+            9
+          ]
+        ],
+        "questions": [
+          {
+            "nom": "Allemand",
+            "pages_rapport": [
+              1,
+              2
+            ],
+            "pages_sujet": [
+              2,
+              3
+            ],
+            "exercices": [
+              {
+                "exercice": "Version française",
+                "pages_pdf": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "exercice": "Question a",
+                "mots_verifies": 91,
+                "pages_pdf": [
+                  2
+                ]
+              },
+              {
+                "exercice": "Question b",
+                "mots_verifies": 208,
+                "pages_pdf": [
+                  2
+                ]
+              }
+            ],
+            "bornes_version": "De « Am Steuer sitzt künftig » à « jederzeit eingreifen können ». Reprendre aussi l’intertitre et la coupure signalée."
+          },
+          {
+            "nom": "Anglais",
+            "pages_rapport": [
+              3,
+              4
+            ],
+            "pages_sujet": [
+              4,
+              5
+            ],
+            "exercices": [
+              {
+                "exercice": "Version française",
+                "pages_pdf": [
+                  3
+                ]
+              },
+              {
+                "exercice": "Question a",
+                "mots_verifies": 95,
+                "pages_pdf": [
+                  4
+                ]
+              },
+              {
+                "exercice": "Question b",
+                "mots_verifies": 212,
+                "pages_pdf": [
+                  4
+                ]
+              }
+            ],
+            "bornes_version": "Deux extraits. Du passage « The robot is one of hundreds of cutting-edge devices » à « humans who invented them », puis de « Tocco-chan, for example » à « nothing more sinister than technical glitches »."
+          },
+          {
+            "nom": "Arabe",
+            "pages_rapport": [
+              5,
+              6
+            ],
+            "pages_sujet": [
+              6,
+              7
+            ],
+            "exercices": [
+              {
+                "exercice": "Version française",
+                "pages_pdf": [
+                  5
+                ]
+              },
+              {
+                "exercice": "Question a",
+                "mots_verifies": 82,
+                "lettres_arabes_contigues": 381,
+                "pages_pdf": [
+                  5
+                ]
+              },
+              {
+                "exercice": "Question b",
+                "mots_verifies": 212,
+                "lettres_arabes_contigues": 920,
+                "pages_pdf": [
+                  6
+                ]
+              }
+            ],
+            "bornes_version": "Les deux premiers paragraphes de la page 6, depuis « لا يزال إلغاء عقوبة » dans le corps du texte jusqu’à « إلى تحقق نتيجة معينة ». Au début du renvoi, la page 7 imprime « لا تزال » et, à la fin, emploie le pluriel « نتائج » là où le texte porte le singulier « نتيجة ». Le passage se termine avant le paragraphe historique."
+          },
+          {
+            "nom": "Espagnol",
+            "pages_rapport": [
+              7
+            ],
+            "pages_sujet": [
+              8,
+              9
+            ],
+            "exercices": [
+              {
+                "exercice": "Version française",
+                "pages_pdf": [
+                  6,
+                  7
+                ]
+              },
+              {
+                "exercice": "Question a",
+                "mots_verifies": 92,
+                "pages_pdf": [
+                  7
+                ]
+              },
+              {
+                "exercice": "Question b",
+                "mots_verifies": 219,
+                "pages_pdf": [
+                  7
+                ]
+              }
+            ],
+            "bornes_version": "De « Pobres de aquellos que odian los ordenadores » à « que lo descubriéramos »."
+          },
+          {
+            "nom": "Italien",
+            "pages_rapport": [
+              8
+            ],
+            "pages_sujet": [
+              10,
+              11
+            ],
+            "exercices": [
+              {
+                "exercice": "Version française",
+                "pages_pdf": [
+                  8
+                ]
+              },
+              {
+                "exercice": "Question a",
+                "mots_verifies": 89,
+                "pages_pdf": [
+                  8,
+                  9
+                ]
+              },
+              {
+                "exercice": "Question b",
+                "mots_verifies": 213,
+                "pages_pdf": [
+                  9
+                ]
+              }
+            ],
+            "bornes_version": "De « Meglio i giornalisti » à « per sostenere l’uso della lingua nel mondo ». Les deux intertitres compris dans ces bornes appartiennent à la version."
+          }
+        ],
+        "figures": [
+          {
+            "fichier": "figures/lecture-de.svg",
+            "question": "Allemand",
+            "legende": "À qui revient chaque action ?",
+            "page_pdf": 1,
+            "sha256_svg": "d54e43654505942e4866373b9eb1a859966d285bb60627081508867169408141",
+            "sha256_forme_pdf": "d6e520909bac2f8d190b5c27e801e6c478c79d5e8bdfa5f3910bf5f20131bc1f"
+          },
+          {
+            "fichier": "figures/lecture-en.svg",
+            "question": "Anglais",
+            "legende": "Quels rôles pour les robots ?",
+            "page_pdf": 3,
+            "sha256_svg": "4d99774993a1c790a01854a22f9e18ddbf6bde045eb5bf035e586bdc9c8bc0e0",
+            "sha256_forme_pdf": "53fb1d4295b144c33076ca9b843bb20818c02c769396e61b6e05f87862b49886"
+          },
+          {
+            "fichier": "figures/lecture-ar.svg",
+            "question": "Arabe",
+            "legende": "Trois niveaux du débat de 2007",
+            "page_pdf": 5,
+            "sha256_svg": "a052f62a89fcac8833af7694fad9b048091771acf22f74ffe077b35a5a3291a6",
+            "sha256_forme_pdf": "6021dccb7abde27b374b6726af9e6e73466c7b733712c502f37082c5e3ff5db1"
+          },
+          {
+            "fichier": "figures/lecture-es.svg",
+            "question": "Espagnol",
+            "legende": "Du vivant à l’hypothèse de simulation",
+            "page_pdf": 6,
+            "sha256_svg": "1df53a646870bffc65ff055c0ea6969a99f483832e0262714d58f31f99d1ae41",
+            "sha256_forme_pdf": "628f017c6993c1cc16b761126fa296f3d8f1e338b3a384aa399e52479faccea8"
+          },
+          {
+            "fichier": "figures/lecture-it.svg",
+            "question": "Italien",
+            "legende": "Que mesurent les sondages ?",
+            "page_pdf": 8,
+            "sha256_svg": "9a744e29a8035656cb9bd64e1357accc65645fad84f0bfd6c8656351a7516165",
+            "sha256_forme_pdf": "f8c62233338aa332524804f1d3e3ba0a2621bd0f0f0c4a2f2ee58fa1024983fd"
+          }
+        ],
+        "signatures_premiere_page": [
+          "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+          "**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+        ],
+        "sha256_pdf": "b8e221beb87547815bab2f0a925537ff2b66c7ff39e74f86e980b8fe48e21bef",
+        "sha256_markdown": "f63879c9fbbacd07507deaaa50c3a13171438752fe57fae3e7f25759a2890924",
+        "diagnostic_latex_propre": true
+      }
+    },
+    "sha256_journal": "235fb557f2a8db036011a86a1312db8bf441790a18b5edef66691182acbdbb02"
+  }
+}

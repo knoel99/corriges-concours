@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
 **Format.** Épreuve de 5 heures, **calculatrice interdite**, aucun document. Les réponses se rédigent uniquement dans le cahier réponses. Le sujet compte **48 questions** et six annexes : diagramme d'états du compresseur, diagrammes d'exigences, paramétrages, catalogue des muscles FESTO DMSP, abaques du second ordre, catalogue des manodétendeurs VEAB.
@@ -497,7 +499,7 @@ Avec les valeurs numériques de l'énoncé et $\beta_0=0{,}4$ rad, on obtient $\
 On écrit $\lambda_2^2=g(\beta)+h(\beta)\cos\alpha$, avec $h(\beta)=2L_b(L_g\cos\beta+R_v\sin\beta)$.
 
 - Le cosinus est pair : les courbes $\alpha$ et $-\alpha$ sont superposées.
-- On a $h(\beta)>0$ pour $-73{,}3^\circ<\beta<106{,}7^\circ$, donc au voisinage du maximum.
+- En posant $\varphi=\arctan(R_v/L_g)\simeq16{,}7^\circ$, on obtient $h(\beta)=2L_b\sqrt{L_g^2+R_v^2}\cos(\beta-\varphi)$. Son signe est positif entre $-73{,}3^\circ$ et $106{,}7^\circ$, modulo $360^\circ$. Cette plage contient la position du maximum, où $\alpha=0$.
 - À $\beta$ fixé, $\lambda_2$ est alors maximal quand $\cos\alpha$ est maximal, c'est-à-dire pour $\alpha=0$.
 
 Toutes les courbes se croisent là où $h$ s'annule ($\beta\approx-73^\circ$ et $\approx107^\circ$), et l'ordre s'inverse au-delà, comme sur la Figure 12.
@@ -1053,6 +1055,8 @@ Gain statique : $20\log K_{BO}=-20$ dB. Cassures à $\omega_m=6{,}5$ rad/s (seco
 | $6{,}5<\omega<40$ | $-40$ dB/déc | $\approx-52$ dB à 40 rad/s |
 | $\omega>40$ | $-20$ dB/déc | $\approx-80$ dB à $10^3$ rad/s |
 
+À $\omega_m$, la courbe réelle dépasse l’asymptote de $20\log_{10}\bigl(\sqrt{1+(\omega_m\tau_{ma})^2}/(2\xi_m)\bigr)\simeq1{,}0$ dB.
+
 > [!PIEGE]
 > Partir de 0 dB alors que $K_{BO}=0{,}1$.
 
@@ -1108,12 +1112,14 @@ Avec $K_{i2}$ doublé, $\omega_{0dB}\approx1{,}6\times10^2$ rad/s.
 |---|---|---|
 | 1.4.1 stabilité | réponse convergente | oui |
 | 1.4.1.1 $M_\varphi\ge45^\circ$ | phase $\approx-129^\circ$, $M_\varphi\approx51^\circ$ | oui |
-| 1.4.1.2 $M_G\ge6$ dB | phase à $-180^\circ$ vers 8 et 17 rad/s, gain de $+30$ à $+50$ dB à ces pulsations | oui |
+| 1.4.1.2 $M_G\ge6$ dB | marge en augmentation infinie sur le modèle représenté | oui |
 | 1.4.1.3 dépassement $\le20\,\%$ | pic $\approx12{,}8$ N·m pour 10 N·m : $\approx28\,\%$ | **non** |
 | 1.4.2.1 erreur nulle (couteau) | valeur finale 10 N·m | oui |
 | 1.4.2.2 erreur nulle (rampe) | écart transitoire $\approx0{,}25$ N·m, puis retour à 10 N·m | oui |
 | 1.4.3.1 $\omega_{0dB}\ge90$ rad/s | $\approx160$ rad/s | oui |
 | 1.4.3.2 $T_{r5\%}<100$ ms | $\approx50$ ms | oui |
+
+Aux deux passages par $-180^\circ$ (vers 8 et 17 rad/s), le gain est déjà supérieur à $+30$ dB. Augmenter le gain éloigne donc ces deux points de 0 dB. La limite supérieure de gain est infinie dans ce modèle. Une diminution peut en revanche amener un de ces points à 0 dB. Le premier seuil en diminution se lit au plus petit des deux gains positifs, soit plus de 30 dB de baisse.
 
 Seule l'exigence Id 1.4.1.3 n'est pas satisfaite.
 

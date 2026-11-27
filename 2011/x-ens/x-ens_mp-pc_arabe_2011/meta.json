@@ -1,0 +1,60 @@
+{
+  "slug": "x-ens_mp-pc_arabe_2011",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC",
+    "matiere": "Arabe",
+    "annee": 2011,
+    "modalite": "écrit"
+  },
+  "intitule": "Chez le lecteur de manuscrits et dans la bibliothèque de demain",
+  "questions": 3,
+  "redaction": "Version intégrale d’Alaa El Aswany et deux réponses originales en arabe sur le texte de Darnton, avec analyse du dialogue et de la médiation documentaire.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2011/2011%20Version_LVA2.pdf#page=4",
+    "sha256_sujet": "e3dfde1f9c7849e973df61d8bbb5f477390588df751e0d71a58df5fbe07b1ae1",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2011",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2011/2011%20Version_LVA2.pdf#page=4",
+        "sha256": "e3dfde1f9c7849e973df61d8bbb5f477390588df751e0d71a58df5fbe07b1ae1"
+      },
+      {
+        "role": "sujet complémentaire",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2011/2011%20MP-PC%20SUJET%20EXPRESSION%20ECRITE_LVA1.pdf",
+        "sha256": "b4f0b94bd49cfc0bc2707f8f351d07b353230dc049539355b8080371de2781af"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Version",
+      "fichier": "figures/voix.svg",
+      "legende": "Trois voix pour comprendre le désaccord sur le roman."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "arabe_mp_pc_2011_2014",
+      "session": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale d’Alaa El Aswany et deux réponses originales en arabe sur le texte de Darnton, avec analyse du dialogue et de la médiation documentaire."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version",
+      "Expression 1",
+      "Expression 2"
+    ]
+  }
+}

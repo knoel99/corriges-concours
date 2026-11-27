@@ -1,0 +1,65 @@
+{
+  "slug": "ens-rennes_d1_droit-civil_2006",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Droit civil",
+    "annee": 2006,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "intitule": "L’enfant et la responsabilité civile",
+  "sources": {
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/2006-rapport-d1_1423060025947-pdf#page=11",
+    "rapport_sha256": "5a4b10141b45d4b82443f4cf8eca29a9ad5869c4afb32faaee00b961ea7cd1f8",
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/2006-annales-d1_1423060020336-pdf",
+    "sujet_sha256": "4b67e1f37e613e3ed5ac38bcebfbf0133e96e763f6d150b1663ac23df319af93",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "references_complementaires": {
+      "Code civil en avril 2006": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006070721/2006-04-01/",
+      "Loi du 5 juillet 1985 en avril 2006": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000693454/2006-04-01/"
+    }
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "section": "I",
+      "fichier": "figures/fait-du-mineur.svg",
+      "legende": "Un même accident peut faire naître des actions aux conditions distinctes."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions sur la faute et la garde de l’enfant, sa faute comme victime, l’indemnisation routière, les responsabilités de plein droit des parents et des organismes chargés du mode de vie du mineur.",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture de la page 11 du rapport 2006, qui distingue l’enfant auteur ou victime des responsables du fait de l’enfant et cite notamment les associations."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur la faute et la garde de l’enfant, sa faute comme victime, l’indemnisation routière, les responsabilités de plein droit des parents et des organismes chargés du mode de vie du mineur."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}

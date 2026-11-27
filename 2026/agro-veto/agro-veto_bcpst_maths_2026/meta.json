@@ -95,5 +95,55 @@
   "sources": {
     "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2026-04/bcpst_0426_sp.pdf",
     "rapport": "https://concours-agro-veto.fr/sites/default/files/media/2026-09/rapport-mcr-cpge-bcpst-2026.pdf"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7.a",
+      "7.b",
+      "7.c",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17.a",
+      "17.b",
+      "17.c",
+      "17.d",
+      "18",
+      "19",
+      "20.a",
+      "20.b",
+      "20.c",
+      "21.a",
+      "21.b",
+      "21.c",
+      "22.a",
+      "22.b",
+      "22.c",
+      "23.a",
+      "23.b",
+      "23.c",
+      "24"
+    ],
+    "precision": "Les 24 questions principales donnent 37 réponses en distinguant les subdivisions de 7, 17, 20, 21, 22 et 23. Ces 37 repères figurent dans les deux éditions.",
+    "origine_attestation": {
+      "commit_du_journal": "d48df23ae4ef6bf653bbe82e6ed589096a57309d",
+      "sha256_sujet_controle": "4682a1be5e22a3d764f912b03e2d3cb9e88a9e381f159682284cedde379fa106",
+      "phase": "relecture_corrige",
+      "date": "2026-11-24",
+      "perimetre": "Vérification des 37 questions et sous-questions des éditions brute et guidée au regard du sujet et du rapport de méthodes de calcul et raisonnement. Contrôle des moments, du commutant et des bornes de concentration. En Q7.c, distinction entre la fenêtre où Markov donne le meilleur majorant et le régime asymptotique. En Q8, les deux seuils et le sens des inégalités sont précisés dans les légendes."
+    }
   }
 }

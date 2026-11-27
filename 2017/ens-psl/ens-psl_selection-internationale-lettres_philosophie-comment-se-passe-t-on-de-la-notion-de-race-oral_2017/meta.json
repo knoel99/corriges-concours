@@ -1,0 +1,70 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_philosophie-comment-se-passe-t-on-de-la-notion-de-race-oral_2017",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Philosophie — Comment se passe-t-on de la notion de race (oral)",
+    "annee": 2017,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie — Comment se passe-t-on de la notion de race (oral)",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/philo-oral-sil17-sujet1.pdf",
+    "sha256_sujet": "8afb802933cba261f4093a308d76b9d8af9c69e54e2d4d1beb26d82eca3cf2ee",
+    "reperage": "Feuillet oral distinct n° 1 dans les liens de philosophie de 2017. Le document d’une page présente exclusivement la question « Comment se passe-t-on de la notion de race ? ».",
+    "page_officielle": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2017-lettres-0",
+    "pages_sujet": 1,
+    "note_generale_jury": "https://www.ens.psl.eu/sites/default/files/qqs-attentes-jury-pageweb.pdf",
+    "sha256_note_generale": "85a7f1b02fb26a186a71b820afe3bb118cd2320fc5cfbf5dcf78456c4c56c049"
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Exposé oral",
+      "legende": "De quoi entend-on se passer ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet original. Exposé argumenté sur le sujet attribué, exemples et objections, préparation guidée de l’entretien et schéma des distinctions conceptuelles."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "oraux_lyon_et_anciens_corriges",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture du feuillet autonome, contrôle des bornes et travail sur l’exposé, les relances et le schéma. Distinctions entre caractère, assignation et inégalité de traitement. Usage historique des termes, conditions d’une comparaison et limite d’un refus isolé."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Comment se passe-t-on de la notion de race ?"
+    ],
+    "elements_verifies": [
+      "Feuillet oral distinct n° 1 dans les liens de philosophie de 2017. Le document d’une page présente exclusivement la question « Comment se passe-t-on de la notion de race ? ».",
+      "Aucun texte à commenter, renvoi au dossier individuel, sujet alternatif ou sous-question sur ce feuillet. Les relances d’entraînement sont éditoriales.",
+      "Distinctions entre caractère, assignation et inégalité de traitement. Usage historique des termes, conditions d’une comparaison et limite d’un refus isolé."
+    ]
+  }
+}

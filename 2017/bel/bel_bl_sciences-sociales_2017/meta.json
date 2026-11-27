@@ -1,0 +1,77 @@
+{
+  "slug": "bel_bl_sciences-sociales_2017",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Sciences sociales",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "Vers la fin du salariat ?",
+  "gabarit": "dissertation",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2017/BL/2017_BL_sujet_sciences%20sociales.pdf",
+    "sujet_sha256": "f7185769b49be8fbe9fbed8d1fc0cf39ca6fbdba37debcbc6056145b338a6172",
+    "pages": 12,
+    "precision": "Pages numérotées 1 à 11. Le dernier feuillet du PDF ne porte que la marque d’imprimerie.",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/17_sciences_sociales_com_ecrit.pdf",
+    "rapport_sha256": "a222dcc3cc5cf439b8a16a6ce51983ca70cbdf2b8d9b515c7fb584bab12fbb61",
+    "fascicule_commun": "https://www.ens-lyon.fr/sites/default/files/2017-11/2017-ecrits-communs-ses_1506586985330_0.pdf#page=10",
+    "fascicule_sha256": "03ec9addf43c6d602d5ba363bea12a3dce3e2f95ce20d99ad95df799ee5842d7"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation — Vers la fin du salariat ?"
+    ],
+    "precision": "Sujet unique de six heures. Analyse des documents 1 à 7, dont les tableaux 4a, 4b, 7a et 7b. Relevé des champs, modalités et unités directement sur les images du sujet."
+  },
+  "figures": [
+    {
+      "fichier": "figures/statut-et-contrat.svg",
+      "question": "Document 1",
+      "legende": "Salariat dans l’emploi et CDI dans le salariat privé en France métropolitaine"
+    },
+    {
+      "fichier": "figures/activite-et-ressources.svg",
+      "question": "Document 4b",
+      "legende": "Ressources et cumuls des auto-entrepreneurs inscrits en 2010"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "bel_bl_sciences_sociales_2017",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": false,
+      "perimetre": "Lecture du rapport de neuf pages et des conseils sur la définition du salariat, la comparaison des flux et des stocks, le caractère disciplinaire de l’argumentation et la mobilisation des sept documents."
+    },
+    {
+      "phase": "redaction",
+      "session": "bel_bl_sciences_sociales_2017",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Deux propositions entièrement rédigées, une méthode guidée et deux graphiques originaux. Collation page à page du feuillet individuel et du fascicule lyonnais, lecture des données, des textes de Cohen et Coase, et des deux enquêtes américaines."
+    }
+  ]
+}

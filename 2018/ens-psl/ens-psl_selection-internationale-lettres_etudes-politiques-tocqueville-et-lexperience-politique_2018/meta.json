@@ -1,0 +1,63 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_etudes-politiques-tocqueville-et-lexperience-politique_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Études politiques — Tocqueville et l’expérience politique",
+    "annee": 2018,
+    "modalite": "écrit"
+  },
+  "intitule": "Tocqueville et l’expérience politique",
+  "questions": 1,
+  "gabarit": "dissertation",
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/Ecrit-SIL%202018%20etudes%20politiques.pdf",
+    "sha256_sujet": "9e5b69cb366b8c6b23a993a0fd16b744cb1bae0fe3350737159c854752f90366",
+    "pages_sujet": 1,
+    "index_officiel": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2018-lettres",
+    "description": "Feuillet unique. Expliquer le passage dans son contexte de 1835 et interroger les rapports entre éducation, citoyenneté et démocratie en donnant des exemples et des références précis.",
+    "references_complementaires": [
+      "https://www2.assemblee-nationale.fr/sycomore/fiche?num_dept=11091",
+      "https://www.gutenberg.org/files/30514/30514-h/30514-h.htm",
+      "https://www.archives.gov/milestone-documents/15th-amendment",
+      "https://www.archives.gov/milestone-documents/19th-amendment"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/experience.svg",
+      "question": "Composition",
+      "legende": "De la pratique d’une institution à l’habitude citoyenne."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Tocqueville et l’expérience politique"
+    ],
+    "elements_verifies": [
+      "Feuillet unique. Expliquer le passage dans son contexte de 1835 et interroger les rapports entre éducation, citoyenneté et démocratie en donnant des exemples et des références précis.",
+      "Lecture suivie du changement de sujet de la conversation, des moyens d’exercer un droit, de la symétrie inversée Europe–États-Unis et des deux scènes finales du jeu et du banquet.",
+      "Le jury civil et la commune éclairent le mécanisme de socialisation civique. Les exclusions du corps politique permettent de discuter sa portée historique sans les attribuer au passage."
+    ]
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "oraux_lyon_et_anciens_corriges",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture du feuillet intégral, rédaction des deux éditions, vérification des exemples et des références, création du schéma et des exercices guidés. Lecture suivie du changement de sujet de la conversation, des moyens d’exercer un droit, de la symétrie inversée Europe–États-Unis et des deux scènes finales du jeu et du banquet."
+    }
+  ]
+}

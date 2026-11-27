@@ -6,7 +6,11 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Le jury publie 6 billets pour le 22 juin, commission 1. Pour chacun, le premier intitulé est celui qui a été choisi. Le second était proposé au choix. Les deux reçoivent ici des réponses distinctes. Les exemples et arguments proposés servent à préparer une leçon personnelle.
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Le [feuillet du 22 juin, commission 1](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_1_al_22_juin.pdf) contient 6 billets de deux sujets. Les développements suivent leur ordre. Le premier sujet a été choisi sur chacun des 6 billets. Le [rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf#page=7) permet de vérifier les choix.
+
+Lisez à haute voix les deux sujets du billet puis annoncez votre choix au début de l’exposé. Seul un dictionnaire de langue française est autorisé, à l’exclusion des dictionnaires de noms propres. Pour essayer l’autre sujet, utilisez la question d’entretien et la piste de réponse placées après son développement.
 
 ## Six reprises pour préparer l’entretien
 
@@ -29,6 +33,8 @@ Faut-il alors faire du tout un principe souverain qui suffirait à expliquer tou
 
 Pour dire en français « il pleut », il faut un sujet grammatical auquel il serait vain de chercher un personnage responsable de la pluie. Nietzsche a souvent attiré l’attention sur la tentation de projeter les habitudes de la grammaire dans la structure de la réalité. La contrainte existe au niveau de la formulation, puisque je dois choisir des formes déterminées pour parler intelligiblement. Elle ne rend pas pour autant inévitable une croyance métaphysique au sujet caché derrière tout phénomène. Je peux analyser la différence entre le pronom impersonnel et le nom d’un agent, précisément en me servant du langage. La grammaire offre donc des habitudes de découpage qui facilitent certaines pensées et en obscurcissent d’autres. La comparaison entre langues et la réflexion sur les usages permettent de reprendre ces habitudes.
 
+**À l’entretien. Une langue sans équivalent exact d’un mot empêche-t-elle de penser la chose ?** Essayer une périphrase puis regarder ce qu’elle permet d’expliquer. Une structure grammaticale rend certaines distinctions habituelles. Le travail de reformulation montre aussi comment on peut en acquérir de nouvelles.
+
 ![Une montre et les pièces dans la boîte](figures/montre.svg)
 
 ## 2. Faut-il maîtriser ses émotions ?
@@ -41,6 +47,8 @@ Reste que la colère ne garantit ni l’innocence de l’élève ni la culpabili
 
 La formule de l’article premier de la Déclaration de 1789 appartient à une proposition selon laquelle les hommes naissent et demeurent libres et égaux en droits. Elle ne décrit pas des fortunes ou des capacités identiques à la naissance. Elle pose une norme susceptible de rendre les différences de statut injustifiables, notamment lorsqu’un rang hérité prétend donner un privilège de droit. Que vaut cependant la formule pour la personne qui possède formellement un recours sans pouvoir matériellement l’exercer ? L’égalité des titres réclame des procédures qui les rendent effectifs. Le défi est de corriger des obstacles inégaux sans recréer des privilèges arbitraires. La liberté de chacun et l’égalité des droits s’éclairent alors mutuellement, parce que personne ne devrait dépendre du bon vouloir d’un autre pour faire reconnaître la sienne.
 
+**À l’entretien. Comment des droits égaux peuvent-ils appartenir à des personnes dont les moyens diffèrent ?** Distinguer le statut de titulaire d’un droit et les conditions effectives de son exercice. Deux justiciables peuvent avoir le même droit de recours et des possibilités très différentes de s’en saisir.
+
 ## 3. L’expression des émotions
 
 Le visage d’une amie se défait en pleine conversation. Je ne déduis pas nécessairement sa tristesse comme on déduirait une fuite d’eau d’une tache au plafond. Le chagrin semble déjà présent dans la façon dont elle pâlit, se détourne et suspend sa parole. L’expression n’est donc pas seulement un code ajouté après coup à un état intérieur entièrement achevé. Elle donne un corps et une forme partageable à ce qui est éprouvé.
@@ -51,6 +59,8 @@ Cette continuité n’annule pas la possibilité du malentendu. Un sourire peut 
 
 Une étagère satisfait au plan et supporte le poids prévu, mais ses fixations sont impossibles à inspecter et les livres du dernier rayon inaccessibles aux utilisateurs. La conformité à la consigne est une condition et parfois une protection pour le travailleur. Elle ne règle pas seule la qualité de la destination réelle du travail. Le jugement doit associer règles du métier, finalité de l’ouvrage et possibilité pour d’autres de s’en servir ou de le reprendre après nous. Il reste un conflit possible entre rapidité mesurée et soin durable. Le trancher exige que la personne qui réalise l’objet puisse faire entendre les difficultés du matériau et l’expérience des usagers. Un travail bien fait comporte ainsi une responsabilité sur l’usage et une part de jugement que l’exécution littérale peut manquer.
 
+**À l’entretien. Peut-on bien faire un travail tout en respectant mal le cahier des charges ?** Un artisan reporte la livraison après avoir constaté un défaut du matériau. Comparer ponctualité, solidité et information due au client. Il faut pouvoir justifier la priorité donnée à une dimension de la qualité.
+
 ## 4. Qu’est-ce qu’une couleur ?
 
 Une feuille de papier blanc demeure pour nous blanche à l’ombre, alors même que la lumière qu’elle nous renvoie a changé. La couleur n’est donc ni la simple quantité de lumière atteignant l’œil ni une étiquette collée à l’objet sans rapport avec la vision. Le physicien étudie notamment le spectre de la lumière et les propriétés de réflexion d’une surface. Le physiologiste étudie les systèmes sensibles qui répondent aux stimulations. Le peintre peut, lui, faire paraître une même plage de gris plus claire ou plus sombre en modifiant son entourage.
@@ -60,6 +70,8 @@ Ces explications ne s’excluent pas. Elles ne mesurent pas exactement la même 
 ### La douleur
 
 Une infirmière observe un visage contracté et demande à la patiente si elle a mal. Même une grande expérience professionnelle ne lui donne pas la sensation de l’autre. Pour autant, conclure à l’incommunicabilité absolue de la douleur rendrait l’échange et le soin incompréhensibles. Les mots, les gestes, la localisation et l’histoire de la sensation permettent d’en faire comprendre quelque chose. La première personne garde une autorité particulière sur le fait qu’elle souffre. Cette autorité n’est pas la connaissance infaillible de la cause, qu’une enquête médicale peut préciser. La douleur révèle ainsi la double condition du corps, immédiatement éprouvé par quelqu’un et ouvert à une relation où d’autres peuvent croire son témoignage, répondre et agir.
+
+**À l’entretien. Peut-on contester qu’une personne ait mal quand l’examen ne montre rien ?** L’examen peut remettre en question une hypothèse sur la cause. Le témoignage renseigne sur ce que la personne éprouve. Distinguer la réalité de la sensation et les difficultés de son interprétation.
 
 ![Une feuille blanche passe du soleil à l’ombre](figures/couleur.svg)
 
@@ -73,6 +85,8 @@ Braudel, dans *La Méditerranée et le monde méditerranéen à l’époque de P
 
 Une élève qui respecte son engagement au prix d’un effort a des raisons d’éprouver une satisfaction. Lui interdire ce sentiment en toutes circonstances risquerait de faire de la morale une dépréciation permanente de soi. Mais se réjouir d’un acte précis et s’accorder un jugement définitif d’excellence sont deux choses distinctes. La seconde attitude peut empêcher d’entendre la personne que l’acte a concernée et qui en juge autrement. L’enjeu est de préciser de quoi l’on est content, sous quel critère et en restant ouvert à quelle correction. Une satisfaction mesurée peut soutenir l’action future en reconnaissant un effort réel. La complaisance commence lorsque l’approbation de soi se dispense des raisons et des réponses qu’elle aurait dû accueillir.
 
+**À l’entretien. Comment distinguer satisfaction justifiée et complaisance ?** Choisir un travail réussi puis formuler une objection précise à son résultat. La satisfaction demeure justifiée si elle s’appuie sur des raisons susceptibles d’examen et laisse encore place à la correction.
+
 ## 6. Savoir ce qui nous détermine
 
 Une personne achète chaque semaine le même produit en se croyant entièrement guidée par son goût. Une enquête lui révèle la place du prix, de la mise en rayon et de l’habitude familiale. Cette connaissance invalide-t-elle son choix ou lui rend-elle quelque pouvoir sur lui ? Si un motif n’exerçait aucune influence, savoir qu’il existe ne changerait presque rien. Si l’influence était un destin irrévocable, comment le savoir pourrait-il transformer la conduite ?
@@ -83,4 +97,4 @@ Chez Spinoza, penser la liberté demande de comprendre les causes dont nous nous
 
 Se préserver, se juger digne d’attention et ne supporter aucune comparaison défavorable ne décrivent pas le même rapport à soi. Dans le *Discours sur l’inégalité*, Rousseau distingue l’amour de soi qui porte un être vivant à sa conservation et l’amour-propre qui fait dépendre sa valeur du regard comparatif des autres. L’exemple de quelqu’un qui accepte du repos en dépit d’une compétition de prestige montre que les deux peuvent même s’opposer. On peut s’aimer au sens de prendre soin de son existence et reconnaître sa dignité sans se préférer en toute chose. Cette bienveillance envers soi rencontre une limite lorsqu’elle refuse toute responsabilité et toute place à autrui. Un amour de soi réfléchi peut également accueillir la correction d’un ami sans la prendre pour une humiliation.
 
-[Feuille officielle du 22c1 juin](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_1_al_22_juin.pdf) · [Rapport du jury, modalités et annexe des sujets](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf)
+**À l’entretien. Prendre soin de soi est-il incompatible avec la générosité ?** Une personne qui se repose pour tenir un engagement se traite elle-même comme digne de soin. Examiner quand cette attention soutient une relation et quand elle devient le critère exclusif de toute décision.

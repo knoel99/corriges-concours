@@ -4,7 +4,11 @@
     "concours": "X-ENS",
     "filiere": "MP",
     "matiere": "Maths A",
-    "annee": 2024
+    "annee": 2024,
+    "filiere_commune": [
+      "MP",
+      "MPI"
+    ]
   },
   "questions": 44,
   "redaction": "IA (GPT-6.2 Sol), relue et révisée par IA",
@@ -23,7 +27,8 @@
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20MP-MPI%20SUJET%20MATHS%20A%20%28XLSR%29.pdf",
     "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20MP-MPI%20RAPPORT%20ECRIT%20MATHEMATIQUES%20A%20%28XLSR%29.pdf",
-    "sha256_sujet": "5ad912ddec85dbf029db9e9d7d23777c6cde0eea83c1fb927402eb358f115d0f"
+    "sha256_sujet": "5ad912ddec85dbf029db9e9d7d23777c6cde0eea83c1fb927402eb358f115d0f",
+    "sha256_rapport": "b0fa8b56d504b64084bc6feea6a0c202b2db014e194020a44a816633c7107edb"
   },
   "contributions": [
     {
@@ -37,6 +42,80 @@
       "perimetre": "Contrôle des 44 réponses, indications et commentaires contre le sujet MP-MPI et le rapport. Vérification des deux moments et du seuil de Markov, dénombrement illustré des cycles dans S4, matérialisation des couples ordonnés et explicitation du coût des parties entières en 22c. Deux figures nouvelles. Le libellé de matière du catalogue est rétabli.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "agent": "mathematiques_a_mp_mpi_2023_2026",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "44 réponses et repères comparés au sujet et au rapport. Numérotation officielle dans les titres des deux éditions et majoration directe de l’erreur de partie entière en 22c par unicité de la factorisation."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1a",
+      "1b",
+      "2",
+      "3",
+      "4",
+      "5a",
+      "5b",
+      "5c",
+      "5d",
+      "6",
+      "7a",
+      "7b",
+      "8a",
+      "8b",
+      "8c",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13a",
+      "13b",
+      "14a",
+      "14b",
+      "15",
+      "16",
+      "17a",
+      "17b",
+      "17c",
+      "17d",
+      "18",
+      "19a",
+      "19b",
+      "19c",
+      "19d",
+      "20a",
+      "20b",
+      "20c",
+      "21a",
+      "21b",
+      "22a",
+      "22b",
+      "22c",
+      "22d",
+      "23"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "controle": [
+      "1a–8c — déterminant, dérangements, inversion binomiale, lois et moments de la permutation uniforme.",
+      "9–15 — cycles, récurrence, polynôme générateur, moments et concentration.",
+      "16–20c — sommation par parties, produit des premiers, valuations et séries avec termes d’erreur.",
+      "21a–23 — moments de ω, couples diagonaux et distincts, déplacement du centre et densité nulle."
+    ]
+  }
 }

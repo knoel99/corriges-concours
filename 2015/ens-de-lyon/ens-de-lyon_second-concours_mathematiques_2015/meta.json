@@ -11,7 +11,12 @@
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/06/15_2clyon_sujet_math.pdf",
     "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/10/15_2clyon_rap_emath.pdf",
-    "sha256_sujet": "d359d171ebbfce9ecb9c567276942fc64d6e3648c65879bd844ccb229911bef5"
+    "sha256_sujet": "d359d171ebbfce9ecb9c567276942fc64d6e3648c65879bd844ccb229911bef5",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/10/15_2clyon_rap_emath.pdf",
+    "sujet_sha256": "d359d171ebbfce9ecb9c567276942fc64d6e3648c65879bd844ccb229911bef5",
+    "rapport_sha256": "4ba2db78d02c8afdd2504e7a5c5c89108d74cafae94b95d5af4a984fba12c8ba",
+    "index_banque": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/",
+    "index_banque_sha256": "36243e7203175ea8fc3f1b47cf04cfaeff13de5e6fe10463bd7d894a9fca4bfe"
   },
   "figures": [
     {
@@ -31,6 +36,53 @@
       "perimetre": "Rédaction des deux exercices en regard du sujet et du rapport. Unicité de la paire de dés à permutation près, domaine rectifié de 2.4, convergence uniforme et valeurs aux pôles de la différence. Graphe de la cotangente exigé en 2.1.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Confrontation des huit questions de probabilités et des onze questions sur la cotangente au sujet et au rapport de Denis Serre. Recalcul des factorisations, de la loi complète de la somme des deux dés, des indices de duplication et du majorant uniforme hors des pôles entiers. Contrôle du graphe demandé. L’indication correspondante de l’édition guidée a été précisée.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
-  ]
+  ],
+  "questions_principales": 19,
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "1.8",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7",
+      "2.8",
+      "2.9",
+      "2.10",
+      "2.11"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "precision": "Confrontation des huit questions de probabilités et des onze questions sur la cotangente au sujet et au rapport de Denis Serre. Recalcul des factorisations, de la loi complète de la somme des deux dés, des indices de duplication et du majorant uniforme hors des pôles entiers. Contrôle du graphe demandé.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "relecture_corrige",
+      "perimetre": "Confrontation des huit questions de probabilités et des onze questions sur la cotangente au sujet et au rapport de Denis Serre. Recalcul des factorisations, de la loi complète de la somme des deux dés, des indices de duplication et du majorant uniforme hors des pôles entiers. Contrôle du graphe demandé.",
+      "sha256_sujet_controle": "d359d171ebbfce9ecb9c567276942fc64d6e3648c65879bd844ccb229911bef5",
+      "sha256_rapport_controle": "4ba2db78d02c8afdd2504e7a5c5c89108d74cafae94b95d5af4a984fba12c8ba"
+    }
+  }
 }

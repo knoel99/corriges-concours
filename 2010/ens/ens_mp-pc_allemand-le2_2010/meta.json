@@ -1,0 +1,73 @@
+{
+  "slug": "ens_mp-pc_allemand-le2_2010",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Allemand (LE2)",
+    "annee": 2010,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "intitule": "Kann Handystrahlung Alzheimer verhindern?",
+  "bareme": {
+    "version": 15,
+    "expression": 5
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2010/MPI/mp-sujet-le2.pdf#page=2",
+    "sujet_sha256": "abc85dfcdb7fda6150491a22303fe0eab40a3ce1dab5961ead0b135ae8653512",
+    "page_pdf": 2,
+    "index": "https://www.ens.psl.eu/rapports-et-sujets-2010-mpi",
+    "etablissements_imprimes": "ENS de Paris et de Cachan",
+    "texte_support": "ZEIT ONLINE, dpa, janvier 2010. L’article rapporte des résultats expérimentaux chez la souris.",
+    "rapport": "https://www.ens.psl.eu/IMG/file/concours/2010/MPI/mp-ecrit-allemand-le2.pdf",
+    "rapport_sha256": "2cc8e6d88e835d5a5a707fd38d08e21a5da676d94124e0d0010f4b00dc9cc905",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2010/MPI/mp-ecrit-allemand-le2.pdf"
+  },
+  "redaction": "Version française intégrale du texte de janvier 2010 et réponse argumentée en allemand de plus de 100 mots. Distinction des observations, des conjectures des chercheurs et de leur transposition éventuelle à l’humain.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I",
+      "fichier": "figures/souris-et-portee.svg",
+      "legende": "L’article passe d’une observation chez la souris à une piste thérapeutique dont la portée humaine reste à vérifier."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du rapport de G. Bourcy sur le statut de l’expérimentation animale, la question de confiance accordée à l’étude et le minimum de 100 mots."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version française intégrale du texte de janvier 2010 et réponse argumentée en allemand de plus de 100 mots. Distinction des observations, des conjectures des chercheurs et de leur transposition éventuelle à l’humain.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I",
+      "II"
+    ]
+  }
+}

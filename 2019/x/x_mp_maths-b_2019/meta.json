@@ -11,7 +11,8 @@
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/2019_MPI_sujet_MathB.pdf",
     "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/11/19_MP_rap_eMathB.pdf",
-    "sha256_sujet": "a32a80ba69621ad4a2f5b410370f91a69397435e8ef5d188c84e11ee297dcbca"
+    "sha256_sujet": "a32a80ba69621ad4a2f5b410370f91a69397435e8ef5d188c84e11ee297dcbca",
+    "sha256_rapport_jury": "9c9b5c21dc5dee4a0f60b6b48cd39b2f8761ab3c24b9097fd8ca8be953583b30"
   },
   "figures": [
     {
@@ -31,6 +32,65 @@
       "perimetre": "Rédaction et vérification de toutes les sous-questions, continuité du maximum courant, comparaison par doublement des variables et convergence uniforme de la régularisation elliptique, figure des profils exacts.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Les questions 1 à 18b comprennent 35 rubriques. Vérification des fonctions test, des deux pentes du profil anguleux, de l’argument de comparaison et des équations régularisées. L’estimation uniforme explicite de la dernière question contrôle l’écart même au centre et relie le calcul aux profils de la figure. Le point exact en x=0 a été ajouté aux trois courbes du graphique."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1a",
+      "1b",
+      "2",
+      "3",
+      "4",
+      "5a",
+      "5b",
+      "6a",
+      "6b",
+      "7a",
+      "7b",
+      "7c",
+      "7d",
+      "7e",
+      "8",
+      "9",
+      "10a",
+      "10b",
+      "10c",
+      "11a",
+      "11b",
+      "12",
+      "13",
+      "14a",
+      "14b",
+      "14c",
+      "15",
+      "16a",
+      "16b",
+      "16c",
+      "16d",
+      "16e",
+      "17",
+      "18a",
+      "18b"
+    ],
+    "precision": "Les 35 rubriques des deux éditions ont été rapprochées du fascicule de 7 pages et du rapport du jury de 7 pages. Les questions 1 à 18b comprennent 35 rubriques. Vérification des fonctions test, des deux pentes du profil anguleux, de l’argument de comparaison et des équations régularisées. L’estimation uniforme explicite de la dernière question contrôle l’écart même au centre et relie le calcul aux profils de la figure. Le point exact en x=0 a été ajouté aux trois courbes du graphique.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "a32a80ba69621ad4a2f5b410370f91a69397435e8ef5d188c84e11ee297dcbca",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Les questions 1 à 18b comprennent 35 rubriques. Vérification des fonctions test, des deux pentes du profil anguleux, de l’argument de comparaison et des équations régularisées. L’estimation uniforme explicite de la dernière question contrôle l’écart même au centre et relie le calcul aux profils de la figure. Le point exact en x=0 a été ajouté aux trois courbes du graphique.",
+      "commit_redaction_anterieure": "9f44f54c043ae5062fb6ba59c5ce06b9a83aad5c"
+    }
+  }
 }

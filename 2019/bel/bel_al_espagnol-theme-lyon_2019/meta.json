@@ -17,7 +17,14 @@
   "sources": {
     "sujet": "https://www.ens-lyon.fr/sites/default/files/2019-10/2019%20Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=11",
     "sujet_sha256": "584c45c92277aefe34fd083279dd477990f7568de569a3f8d169bd44313931e2",
-    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2019-10/ESPAGNOL_2019_0.pdf#page=6"
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2019-10/ESPAGNOL_2019_0.pdf#page=6",
+    "sha256_rapport_jury": "3f815d06b3b60777fbd6f58e7ec230b396282ae566d39d166e840561f2e97193",
+    "pages_rapport_verifiees": [
+      6,
+      7,
+      8
+    ],
+    "ouvrage": "Raymond Radiguet, Le Diable au corps (1923)."
   },
   "figures": [
     {
@@ -26,7 +33,7 @@
       "legende": "Temps du récit et voix rapportées"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -37,6 +44,23 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Traduction espagnole complète de l’extrait du Diable au corps de Radiguet, y compris le discours direct de Jacques, la métonymie de l’olivier et la coupure, avec guide des temps et schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "lyon_ses_sources",
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture des deux éditions sur le feuillet et le rapport du jury. Irréel du passé, concession des fiançailles, supplication de Jacques, contraste entre sa lettre et les paroles de Marthe, antécédent de la dernière ellipse."
     }
   ],
   "droits_sources": {
@@ -44,5 +68,21 @@
       "Le thème espagnol de quatre heures, sans dictionnaire, est tiré du Diable au corps de Raymond Radiguet (1923). Marthe raconte ses fiançailles et le narrateur revient sur sa propre timidité."
     ],
     "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Proposition de thème"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Proposition de thème",
+        "page_pdf": 11,
+        "page_pdf_fin": 11,
+        "perimetre": "Quatre paragraphes complets, de « Marthe, qui souvent maintenant » à « qu’elle ne le fût ». Coupure du troisième paragraphe et paroles de la lettre de Jacques préservées."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
   }
 }

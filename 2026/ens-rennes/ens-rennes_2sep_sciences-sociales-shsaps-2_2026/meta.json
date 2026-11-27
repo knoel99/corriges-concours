@@ -36,9 +36,13 @@
     "index_banque": "https://www.ens-rennes.fr/admission/concours1a/2sep/concours-2sep-2026",
     "apercu_sujet_sha256": "ed25a361bd523072e127d7ef747dda4d2d0c174f759d9edbb65c3fe813825464",
     "apercu_rapport_sha256": "f5286d6e674e5f9cc607b173e352a11f1e704e6853c0e41f6a1bc8204a8bd1e7",
-    "verification_apercu": "Comparaison avec les pages rendues du PDF ENS Rennes. Les empreintes d’aperçu désignent les fichiers rendus par la visionneuse."
+    "verification_apercu": "Comparaison avec les pages rendues du PDF ENS Rennes. Les empreintes d’aperçu désignent les fichiers rendus par la visionneuse.",
+    "sha256_sujet": "83c1007d58ea67b387e074b1fd8da1ae5b430548416a78e87fb7179f80e06024",
+    "sha256_rapport_jury": "f4bdb090a3302f99c751153f1b4dcff578bb52eb02f777b4ae32f0179618fc9b",
+    "verification_originaux": "PDF des liens ENS Rennes repérés sur l’index 2026 et récupérés par le miroir d’octets AllOrigins. Garde, pagination et texte relus sur ces fichiers.",
+    "etude_parkrun_2019": "https://doi.org/10.1101/19004143"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "revision": {
     "date": "2026-11-24",
     "modele": "Codex (GPT-6)",
@@ -106,6 +110,47 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Contrôle de la consigne sur le document officiel et des deux éditions. Ajout du ski-ballet à Calgary et Albertville pour éprouver la relation entre reconnaissance institutionnelle et diffusion."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Libellé R 26-328 et rapport de sciences sociales sur l’innovation depuis les années 1970. Le trail sert dans les deux éditions à distinguer pratique, organisation et reprise territoriale."
+    },
+    {
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "modifications": true,
+      "perimetre": "Garde R 26-328, 2 heures, sans document, calculatrice ni dictionnaire. Page unique comprenant garde et consigne, sans annexe. Le repère éditorial désigne l’unique composition. Rapport de jury, pages 1 à 3. Comparaison du jogging, des courses, de la gymnastique télévisée et du skateboard avec les deux demandes du sujet. Étude territoriale de parkrun en Angleterre, portée de l’association statistique, rôle des horaires, du coût et des relais de proximité. Vérification et insertion des trois illustrations dans les deux éditions."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Caractériser et expliquer les innovations dans les pratiques et les usages du sport depuis les années 1970"
+    ],
+    "pages_du_sujet": 1,
+    "pages_pdf_des_questions": {
+      "Caractériser et expliquer les innovations dans les pratiques et les usages du sport depuis les années 1970": 1
+    },
+    "precision": "Garde R 26-328, 2 heures, sans document, calculatrice ni dictionnaire. Page unique comprenant garde et consigne, sans annexe. Le repère éditorial désigne l’unique composition. Rapport de jury, pages 1 à 3."
+  }
 }

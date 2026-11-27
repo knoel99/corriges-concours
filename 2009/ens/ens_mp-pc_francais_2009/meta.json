@@ -1,0 +1,68 @@
+{
+  "slug": "ens_mp-pc_francais_2009",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Français",
+    "annee": 2009,
+    "modalite": "écrit"
+  },
+  "intitule": "Hadrien, la personne et les actes dont elle est faite",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2009/MP/2009_sujet_mp_pc_francais.pdf",
+    "sha256_sujet": "dbdcc89f3f997d7f02ac54b7904f0f226fd6f8cc3f708dad67bc7b81b8f453ec",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2009/PC/pc2009_ecri_francais.pdf",
+    "sha256_rapport_jury": "c2c884a439f4b63d04b8bbc14a16e7da89d5da4e56332596ada4dacd38909999",
+    "reperage": "Garde 91.08M-P, 1 page, français MP et PC, épreuve commune aux ENS de Paris, Lyon et Cachan. Rapport « Épreuve écrite de français », 2 pages, jury H. Baty-Delalande et J.-L. Jeannelle, en-tête Paris–Lyon–Cachan, déposé dans l’archive PC, sans ventilation des observations par filière."
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Dissertation",
+      "legende": "De la circonstance à la responsabilité"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture complète de la garde MP et PC et du rapport commun aux trois ENS, paru dans l’archive PC. Dissertation comparée sur le livre X des Confessions, Lorenzaccio et L’Âge d’homme, préparation guidée et schéma sur la responsabilité."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Augustin, Confessions, X, XVI. La connaissance de l’oubli rend sensible une limite de ce dont le moi peut rendre compte. Comparaison au sujet original et au rapport. Relecture des trois mouvements et de la conclusion dans les deux éditions."
+    }
+  ],
+  "gabarit": "dissertation",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Hadrien, la personne et ses actes"
+    ],
+    "pages_du_sujet": 1,
+    "pages_pdf_des_questions": {
+      "Hadrien, la personne et ses actes": 1
+    },
+    "precision": "Dissertation unique de quatre heures sur la citation de Yourcenar, au regard des trois œuvres prescrites. Le repère est un intitulé éditorial. La consigne imprimée se trouve page 1. Rapport du jury, pages 1 à 2."
+  }
+}

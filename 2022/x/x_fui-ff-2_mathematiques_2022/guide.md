@@ -2,7 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 Le sujet de printemps porte sur l’interpolation de Lagrange. Les polynômes des deux dernières parties utilisent respectivement des nœuds fixes successifs et une nouvelle grille équidistante à chaque degré.
 
@@ -162,6 +164,14 @@ $H=(X^2+1)p_n-1$ s’annule à tous les nœuds, donc $H=q\pi_n$ pour $\deg q\le1
 
 En $i$, $-1=c\,i^2\prod_{k=1}^n(-1-a^2k^2/n^2)$, d’où $c=(-1)^n/\prod_{k=1}^n(1+a^2k^2/n^2)$. Pour $x$ réel, prenons les modules dans $p_n(x)-f(x)=c\,x^2\prod_{k=1}^n(x^2-a^2k^2/n^2)/(1+x^2)$. Hors des nœuds, remplacer les produits par l’exponentielle des deux sommes logarithmiques donne (1). Aux nœuds, l’erreur vaut zéro ; l’écriture exponentielle s’y lit par continuité ou avec $\log0=-\infty$.
 
+En dehors des nœuds, la formule (1) s’écrit explicitement
+$$
+\left|p_n(x)-\frac{1}{1+x^2}\right|=
+\frac{x^2}{1+x^2}\exp\!\left[
+\sum_{k=1}^n\log\left|x^2-\frac{a^2 k^2}{n^2}\right|
+-\sum_{k=1}^n\log\left(1+\frac{a^2 k^2}{n^2}\right)\right].
+$$
+
 ### Question 13
 
 > [!INDICATION]
@@ -197,6 +207,13 @@ Comme $a$ est entier et $x$ irrationnel, $0<x<a$. La primitive $u\log u-u$ a pou
 #### Solution
 
 Écrivons $h=a/n$, $m=k_x$. Sur $[0,mh]$, $F(t)=\log(x-t)$ décroît. L’intégrale est donc entre $h\sum_{k=1}^m F(kh)$ et $h\sum_{k=0}^{m-1}F(kh)$. En retirant la somme intérieure $h\sum_{k=1}^{m-1}F(kh)$, les deux extrémités sont $hF(mh)$ et $hF(0)$. Le maximum des deux modules fournit la borne imprimée. Si $m=0$, l’intervalle et la somme intérieure sont vides et la borne est immédiate.
+
+On peut contrôler directement la partie droite utilisée en 15c. Si $h=a/n$, $m=k_x$ et $F(t)=\log(t-x)$ pour $t>x$, la croissance de $F$ donne
+$$
+0\le \int_{(m+1)h}^{a}F(t)\,dt-h\sum_{k=m+1}^{n-1}F(kh)
+\le h\bigl[\log(a-x)-\log((m+1)h-x)\bigr].
+$$
+Les deux termes de la borne viennent des extrémités de cet intervalle. Elle reste valable si $m+1=n$, auquel cas l’intégrale et la somme sont vides.
 
 ### Question 15c
 

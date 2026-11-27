@@ -1,0 +1,65 @@
+{
+  "slug": "ens_mp-pc_portugais-le2_2007",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Portugais (LE2)",
+    "annee": 2007,
+    "modalite": "écrit"
+  },
+  "intitule": "Miguel Chaia, qui finance la vie culturelle des grandes villes ?",
+  "questions": 2,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "V",
+      "1"
+    ]
+  },
+  "sources": {
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2007",
+    "etablissements": "ENS de Paris et de Cachan",
+    "pages_sujet": "9",
+    "code_garde": "71.10PM",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2007/sujet-ecrit-2007-mp-pc_langue_etrangere_2.pdf#page=9",
+    "sujet_sha256": "5309bb7be121409229b9d682b83dc64317cd1725af428d833510660019c75b2c",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2007/rapport-2007-pc_ecrit_langue_etrangere_2_portugais.pdf",
+    "rapport_jury_sha256": "cdadbd02d7372ee0e5badb70bc3dd6cca5c9964b373a4424252ed873658eaa58",
+    "precision": "Miguel Chaia intervient au colloque São Paulo–Paris de 2004. Les actes paraissent au Brésil en 2005. Le rapport d’I. Mendes dos Santos souligne le lien entre financement, éducation et intérêts économiques. Il attend une lecture synthétique, des exemples et une prise de position ferme. La réponse est en portugais brésilien."
+  },
+  "mots_expression": {
+    "1": 189
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V",
+      "fichier": "figures/financement.svg",
+      "legende": "L’intervention distingue deux politiques publiques puis interroge les intérêts qui les traversent."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "fichier": "figures/ville.svg",
+      "legende": "L’exemple d’une bibliothèque et celui d’un festival donnent deux critères de décision."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "portugais_sciences_2005_2010",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et réponses intégrales en portugais. Miguel Chaia, qui finance la vie culturelle des grandes villes ?.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}

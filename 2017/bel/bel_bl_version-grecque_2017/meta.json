@@ -16,7 +16,22 @@
   },
   "sources": {
     "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/ecrits-communs-optionnels-ses-2017_1506587060551.pdf#page=5",
-    "sujet_sha256": "bdc658b34f2b80b696b7a912173f1ab822dae1d52727d0732ab0305166620e41"
+    "sujet_sha256": "bdc658b34f2b80b696b7a912173f1ab822dae1d52727d0732ab0305166620e41",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.ens-lyon.fr/sites/default/files/2017-11/ecrits-communs-optionnels-ses-2017_1506587060551.pdf#page=3",
+        "sha256": "bdc658b34f2b80b696b7a912173f1ab822dae1d52727d0732ab0305166620e41",
+        "pages": "3 et 5 du PDF (garde UH 756/1 et page 3 imprimée)"
+      },
+      {
+        "role": "édition de repérage",
+        "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0032/tlg010/tlg0032.tlg010.perseus-grc2.xml",
+        "sha256": "b4dd7878617a6b9f2f3db70b398c446a2120f928dcddeaa6d30b1621b4e8d5ca",
+        "precision": "Xénophon, République des Lacédémoniens, II, 1 (deuxième phrase) à la fin de II, 4. L’édition Marchant (Oxford, 1920) situe les sections. Au § 3, le feuillet passe directement de θᾶττον à Καὶ ἀντί γε ; les mots que le XML place sous une balise de suppression à cet endroit ne figurent pas au concours."
+      }
+    ],
+    "precision": "Xénophon, République des Lacédémoniens, II, 1 (deuxième phrase) à la fin de II, 4. L’édition Marchant (Oxford, 1920) situe les sections. Au § 3, le feuillet passe directement de θᾶττον à Καὶ ἀντί γε ; les mots que le XML place sous une balise de suppression à cet endroit ne figurent pas au concours."
   },
   "figures": [
     {
@@ -25,7 +40,7 @@
       "legende": "Qui a autorité sur les enfants ?"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -36,6 +51,31 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Version française intégrale de Xénophon d'après la page grecque du fascicule numérisé, avec analyse des sujets des verbes, des deux autorités et du style indirect."
+    },
+    {
+      "phase": "revision",
+      "tour": 1,
+      "session": "fin_langues_x_interens/latin26_lyon",
+      "agent": "latin26_lyon",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Une version, intégralement traduite en quatre paragraphes dans les deux éditions. Garde PDF p. 3, grec p. 5. Confrontation de l’incipit Τῶν μὲν τοίνυν ἄλλων Ἑλλήνων à l’explicit ἄμεινον ἂν παρεσκευάσθαι. Contrôle des sujets et du but de μαθησομένους, de la surveillance du pédonome et des auxiliaires, des trois comparatifs et de l’usage d’un seul manteau toute l’année. Schéma des autorités revu sur le feuillet."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version"
+    ],
+    "verification": "Une version, intégralement traduite en quatre paragraphes dans les deux éditions. Garde PDF p. 3, grec p. 5. Confrontation de l’incipit Τῶν μὲν τοίνυν ἄλλων Ἑλλήνων à l’explicit ἄμεινον ἂν παρεσκευάσθαι. Contrôle des sujets et du but de μαθησομένους, de la surveillance du pédonome et des auxiliaires, des trois comparatifs et de l’usage d’un seul manteau toute l’année. Schéma des autorités revu sur le feuillet."
+  },
+  "intitule": "L’éducation spartiate"
 }

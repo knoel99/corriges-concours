@@ -11,7 +11,8 @@
   "sources": {
     "sujet": "https://www.vmaths.fr/wp-content/uploads/XENS/MP/X_ENS_2010_MP_M2_enonce.pdf",
     "rapport_jury": "https://www.doc-solus.fr/prepa/sci/adc/pdf/rapports.pdf/2010/MP_MATHS_X_2_2010.rapport.pdf",
-    "sha256_sujet": "b9f8022e1673e2149f7a16785880173e2eef4f2850e4c97aa6828081d0e38db5"
+    "sha256_sujet": "b9f8022e1673e2149f7a16785880173e2eef4f2850e4c97aa6828081d0e38db5",
+    "sha256_rapport_jury": "c9ae24b1a5f7d498708d6ffa00ac36efc1ed99b9be22b61d7e739420b4120c9d"
   },
   "figures": [
     {
@@ -36,6 +37,208 @@
       "perimetre": "Rédaction des deux éditions, toutes les questions 1 à 18 et sous-questions vérifiées avec l’original et le rapport. Détails du changement de base du triangle, des projecteurs et de la divisibilité du degré, normalisateur, classification et réciproques. Deux figures.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "x_mp_deuxieme_composition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Pointage physique des 34 consignes sur 4 pages. Contrôle des 34 rubriques sur le fac-similé VMaths portant l’empreinte des métadonnées et le rapport du jury. Vérification des deux croquis, du rôle de chaque fibre de la conjugaison en 8 et du bon polynôme unitaire en 10. Vérification explicite des produits qui caractérisent le groupe diédral en 15b."
     }
-  ]
+  ],
+  "intitule": "Sur les sous-groupes finis de GL₂(C)",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2a",
+      "2b",
+      "2c",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7a",
+      "7b",
+      "8",
+      "9a",
+      "9b",
+      "10a",
+      "10b",
+      "10c",
+      "10d",
+      "11a",
+      "11b",
+      "12a",
+      "12b",
+      "13a",
+      "13b",
+      "13c",
+      "14a",
+      "14b",
+      "14c",
+      "15a",
+      "15b",
+      "16a",
+      "16b",
+      "16c",
+      "17",
+      "18"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1",
+        "page_pdf": "1"
+      },
+      {
+        "question": "2a",
+        "page_pdf": "2"
+      },
+      {
+        "question": "2b",
+        "page_pdf": "2"
+      },
+      {
+        "question": "2c",
+        "page_pdf": "2"
+      },
+      {
+        "question": "3",
+        "page_pdf": "2"
+      },
+      {
+        "question": "4",
+        "page_pdf": "2"
+      },
+      {
+        "question": "5",
+        "page_pdf": "2"
+      },
+      {
+        "question": "6",
+        "page_pdf": "2"
+      },
+      {
+        "question": "7a",
+        "page_pdf": "2"
+      },
+      {
+        "question": "7b",
+        "page_pdf": "2"
+      },
+      {
+        "question": "8",
+        "page_pdf": "2"
+      },
+      {
+        "question": "9a",
+        "page_pdf": "3"
+      },
+      {
+        "question": "9b",
+        "page_pdf": "3"
+      },
+      {
+        "question": "10a",
+        "page_pdf": "3"
+      },
+      {
+        "question": "10b",
+        "page_pdf": "3"
+      },
+      {
+        "question": "10c",
+        "page_pdf": "3"
+      },
+      {
+        "question": "10d",
+        "page_pdf": "3"
+      },
+      {
+        "question": "11a",
+        "page_pdf": "3"
+      },
+      {
+        "question": "11b",
+        "page_pdf": "3"
+      },
+      {
+        "question": "12a",
+        "page_pdf": "3"
+      },
+      {
+        "question": "12b",
+        "page_pdf": "3"
+      },
+      {
+        "question": "13a",
+        "page_pdf": "3"
+      },
+      {
+        "question": "13b",
+        "page_pdf": "4"
+      },
+      {
+        "question": "13c",
+        "page_pdf": "4"
+      },
+      {
+        "question": "14a",
+        "page_pdf": "4"
+      },
+      {
+        "question": "14b",
+        "page_pdf": "4"
+      },
+      {
+        "question": "14c",
+        "page_pdf": "4"
+      },
+      {
+        "question": "15a",
+        "page_pdf": "4"
+      },
+      {
+        "question": "15b",
+        "page_pdf": "4"
+      },
+      {
+        "question": "16a",
+        "page_pdf": "4"
+      },
+      {
+        "question": "16b",
+        "page_pdf": "4"
+      },
+      {
+        "question": "16c",
+        "page_pdf": "4"
+      },
+      {
+        "question": "17",
+        "page_pdf": "4"
+      },
+      {
+        "question": "18",
+        "page_pdf": "4"
+      }
+    ],
+    "controle": [
+      "p. 1, diagonalisation individuelle puis simultanée pour un groupe fini commutatif",
+      "p. 2, triangle, six isométries, conjugaison et lemme de Schur, trace sur les matrices et moyenne des invariants",
+      "p. 3, matrice scalaire Y, coefficients cyclotomiques, divisibilité, produit hermitien invariant et diagonalisation du noyau du déterminant",
+      "p. 4, noyau cyclique impair, matrices qui permutent les axes, conjugaison exacte, caractères et classification finale, impossibilité du plongement du groupe d’exposant deux et d’ordre huit",
+      "Contrôle des 34 rubriques sur le fac-similé VMaths portant l’empreinte des métadonnées et le rapport du jury. Vérification des deux croquis, du rôle de chaque fibre de la conjugaison en 8 et du bon polynôme unitaire en 10. Vérification explicite des produits qui caractérisent le groupe diédral en 15b."
+    ]
+  }
 }

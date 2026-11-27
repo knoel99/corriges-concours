@@ -1,0 +1,72 @@
+{
+  "slug": "ens_mp-pc_japonais-le2_2005",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Japonais (LE2)",
+    "annee": 2005,
+    "modalite": "écrit"
+  },
+  "intitule": "Comment les moteurs de recherche trouvent une page en quelques secondes",
+  "questions": 2,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I",
+      "II"
+    ]
+  },
+  "sources": {
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2005",
+    "etablissements": "ENS de Paris et de Cachan",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2005/sujet-2005-ecrit-mp_pc_langue_etrangere_2.pdf#page=8",
+    "sujet_sha256": "3591b865ff600e9a1da38a819b3d68405c9a905cb43f3fc1b5ef6183ff6011c6",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2005/sujet-2005-ecrit-mp_pc_langue_etrangere_2.pdf#page=8",
+        "sha256": "3591b865ff600e9a1da38a819b3d68405c9a905cb43f3fc1b5ef6183ff6011c6",
+        "pages": "8"
+      }
+    ],
+    "references_complementaires": [
+      "https://banques-ecoles.fr/cms/filiere-mp/annales-de-la-banque-mmpmpi/session-2005"
+    ]
+  },
+  "mots_expression": {
+    "II": 183
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I",
+      "fichier": "figures/lecture-1.svg",
+      "legende": "La collecte préalable explique la brièveté du délai après la saisie."
+    },
+    {
+      "numero": 2,
+      "question": "II",
+      "fichier": "figures/lecture-2.svg",
+      "legende": "Deux modes de préparation différents débouchent sur la même exigence de pertinence."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "fin_langues_x_interens",
+      "session": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Version complète, expression en japonais, accompagnement pédagogique et deux schémas. Comment les moteurs de recherche trouvent une page en quelques secondes.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "segmentation_expression": "Segments lexicaux japonais comptés avec Intl.Segmenter (ja), ponctuation exclue."
+}

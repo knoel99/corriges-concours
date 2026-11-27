@@ -1,0 +1,82 @@
+{
+  "slug": "x_mp-pc_allemand_2009",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Allemand",
+    "annee": 2009,
+    "modalite": "écrit"
+  },
+  "intitule": "Une rencontre à la bibliothèque et la place de la compassion en politique",
+  "questions": 3,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "V",
+      "1",
+      "2"
+    ]
+  },
+  "sources": {
+    "index": "https://www.alloschool.com/element/33547",
+    "etablissements": "École polytechnique et École supérieure de physique et de chimie industrielles",
+    "sujet": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2009-langues-vivantes.pdf#page=4",
+    "sujet_sha256": "9dae5bdb8cb0d190d4c6022a6d1c9b848f78d280b42eae2ba39f224688fc85cf",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2009-langues-vivantes.pdf#page=4",
+        "sha256": "9dae5bdb8cb0d190d4c6022a6d1c9b848f78d280b42eae2ba39f224688fc85cf",
+        "pages": "4"
+      },
+      {
+        "role": "sujet complémentaire",
+        "url": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2009-langues-vivantes.pdf#page=1",
+        "sha256": "9dae5bdb8cb0d190d4c6022a6d1c9b848f78d280b42eae2ba39f224688fc85cf",
+        "pages": "1–2"
+      }
+    ],
+    "references_complementaires": [
+      "https://web.archive.org/web/20090606210402/http://www.polytechnique.fr:80/concours/sujets/sujet09.htm",
+      "https://www.education.gouv.fr/bo/2009/08/esrs0900049x.htm",
+      "https://upls.fr/wp-content/uploads/2010/07/f2009514212140.pdf",
+      "https://upls.fr/wp-content/uploads/2010/07/f2009514212750.pdf"
+    ]
+  },
+  "mots_expression": {
+    "1": 126,
+    "2": 187
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V",
+      "fichier": "figures/lecture-1.svg",
+      "legende": "Les deux personnages attribuent après coup un sens à la chute du livre."
+    },
+    {
+      "numero": 2,
+      "question": "2",
+      "fichier": "figures/lecture-2.svg",
+      "legende": "Une situation individuelle peut éclairer une règle équitable pour tous les sinistrés."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "fin_langues_x_interens",
+      "session": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Version complète, expression en allemand, accompagnement pédagogique et deux schémas. Une rencontre à la bibliothèque et la place de la compassion en politique.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}

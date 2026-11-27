@@ -36,9 +36,13 @@
     "index_banque": "https://www.ens-rennes.fr/admission/concours1a/2sep/concours-2sep-2026",
     "apercu_sujet_sha256": "9bdcaf630f245066a1c419c47c20666b5f328cc07da315dc910155be218f43cd",
     "apercu_rapport_sha256": "131718954ca23267f1025ec454caa08b631b8daf4e9edfb39209818bc41586d1",
-    "verification_apercu": "Comparaison avec les pages rendues du PDF ENS Rennes. Les empreintes d’aperçu désignent les fichiers rendus par la visionneuse."
+    "verification_apercu": "Comparaison avec les pages rendues du PDF ENS Rennes. Les empreintes d’aperçu désignent les fichiers rendus par la visionneuse.",
+    "sha256_sujet": "44002ff83ba32fdf1fad279780f32c63e8839ec6eeee71299012ced128f50597",
+    "sha256_rapport_jury": "aed7d564d697715a9c6231bd3124815172dc7817ea038837b016494939fc972b",
+    "verification_originaux": "PDF des liens ENS Rennes repérés sur l’index 2026 et récupérés par le miroir d’octets AllOrigins. Garde, pagination et texte relus sur ces fichiers.",
+    "article_bertron_vitores": "https://doi.org/10.3917/gen.115.0003"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "revision": {
     "date": "2026-11-24",
     "modele": "Codex (GPT-6)",
@@ -106,6 +110,47 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Comparaison des éditions au texte de Bertron et Vitores sur l’image de la page 2. Application de la règle internationale du basket en fauteuil à deux compositions de cinq joueurs."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Confrontation au texte de Bertron et Vitores et au rapport de CGAPS. Exemple de la natation articulant accès à la pratique, chronométrage et possibilités ultérieures d’entraînement."
+    },
+    {
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "modifications": true,
+      "perimetre": "Garde R 26-345, 4 heures, sans document, calculatrice ni dictionnaire. Consigne et extrait sur la page 2, sans annexe distincte. Le repère éditorial désigne l’unique composition. Rapport de jury, pages 1 à 3. Lecture de la construction du passage de Bertron et Vitores, du risque de légitimation à la production de la naturalité. Justification des observations requises pour interpréter une sélection de sportifs. Vérification bibliographique de l’article et révision du passage sur la classification en basket fauteuil. Vérification et insertion des trois illustrations dans les deux éditions."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Naturalisation des corps dans les activités physiques, sportives et artistiques"
+    ],
+    "pages_du_sujet": 2,
+    "pages_pdf_des_questions": {
+      "Naturalisation des corps dans les activités physiques, sportives et artistiques": 2
+    },
+    "precision": "Garde R 26-345, 4 heures, sans document, calculatrice ni dictionnaire. Consigne et extrait sur la page 2, sans annexe distincte. Le repère éditorial désigne l’unique composition. Rapport de jury, pages 1 à 3."
+  }
 }

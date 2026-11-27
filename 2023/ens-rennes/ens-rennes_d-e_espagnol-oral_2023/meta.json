@@ -1,0 +1,131 @@
+{
+  "slug": "ens-rennes_d-e_espagnol-oral_2023",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Espagnol (oral)",
+    "annee": 2023,
+    "modalite": "oral"
+  },
+  "questions": 6,
+  "sujets": 6,
+  "intitules": {
+    "1": "Perú: volvieron las protestas",
+    "2": "Moneda regional, integración y Venezuela: los ejes de la cumbre sudamericana en Brasilia",
+    "3": "Cuáles han sido los principales obstáculos para que América Latina tenga una moneda única",
+    "4": "Borrell defiende en Cuba la presencia activa de la Unión Europea y su agenda de los derechos humanos",
+    "5": "Los presidentes de Brasil y Argentina defienden el Mercosur y la integración regional",
+    "6": "UE y Mercosur apuran acuerdo comercial para meterse en pulseada entre EEUU y China"
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/annales-oral-espagnol-d-e-2023_1698768975803-pdf",
+    "sujet_sha256": "2d3f06a1eefcd6508ced7f2d31a01d96525ed74b546d84c06d09af5fefcddcd1",
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2023-1",
+    "documents": [
+      {
+        "numero": 1,
+        "titre": "Perú: volvieron las protestas",
+        "publication": "Carlos Noriega, Página/12, 31 de mayo de 2023",
+        "page": 1,
+        "reference": "https://www.ens-rennes.fr/medias/fichier/annales-oral-espagnol-d-e-2023_1698768975803-pdf#page=1"
+      },
+      {
+        "numero": 2,
+        "titre": "Moneda regional, integración y Venezuela: los ejes de la cumbre sudamericana en Brasilia",
+        "publication": "France 24, con EFE y medios locales, 30 de mayo de 2023",
+        "page": 2,
+        "reference": "https://www.ens-rennes.fr/medias/fichier/annales-oral-espagnol-d-e-2023_1698768975803-pdf#page=2"
+      },
+      {
+        "numero": 3,
+        "titre": "Cuáles han sido los principales obstáculos para que América Latina tenga una moneda única",
+        "publication": "Cristina J. Orgaz, BBC Mundo, 13 de febrero de 2023",
+        "page": 3,
+        "reference": "https://www.ens-rennes.fr/medias/fichier/annales-oral-espagnol-d-e-2023_1698768975803-pdf#page=3"
+      },
+      {
+        "numero": 4,
+        "titre": "Borrell defiende en Cuba la presencia activa de la Unión Europea y su agenda de los derechos humanos",
+        "publication": "Mauricio Vicent, El País, 27 de mayo de 2023",
+        "page": 4,
+        "reference": "https://www.ens-rennes.fr/medias/fichier/annales-oral-espagnol-d-e-2023_1698768975803-pdf#page=4"
+      },
+      {
+        "numero": 5,
+        "titre": "Los presidentes de Brasil y Argentina defienden el Mercosur y la integración regional",
+        "publication": "Reuters, en La República, 22 de enero de 2023",
+        "page": 5,
+        "reference": "https://www.ens-rennes.fr/medias/fichier/annales-oral-espagnol-d-e-2023_1698768975803-pdf#page=5"
+      },
+      {
+        "numero": 6,
+        "titre": "UE y Mercosur apuran acuerdo comercial para meterse en pulseada entre EEUU y China",
+        "publication": "AFP desde Montevideo, en France 24, 6 de febrero de 2023",
+        "page": 6,
+        "reference": "https://www.ens-rennes.fr/medias/fichier/annales-oral-espagnol-d-e-2023_1698768975803-pdf#page=6"
+      }
+    ],
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-oral-espagnol-d-e-2023_1698421409828-pdf",
+    "rapport_sha256": "5c85db58a4414936065b49561fa215479f0ce0d706b1eb5ffad776e1600621d3",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-oral-espagnol-d-e-2023_1698421409828-pdf",
+    "rapport_jury_sha256": "5c85db58a4414936065b49561fa215479f0ce0d706b1eb5ffad776e1600621d3",
+    "millesime_imprime": 2022,
+    "identification_session": "Le fascicule classé par l’ENS Rennes en 2023 porte l’en-tête 2022. Les six articles datent de 2023, comme le confirme le rapport du jury 2023."
+  },
+  "redaction": "Rédaction en espagnol des deux éditions pour les 6 billets du fascicule distribué, avec synthèses, commentaires, relances résolues et indications linguistiques contextualisées.",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des trois pages du rapport, notamment restitution du document, contextualisation, analyse, entretien spontané et possibilité de traduction à vue."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction en espagnol des deux éditions pour les 6 billets du fascicule distribué, avec synthèses, commentaires, relances résolues et indications linguistiques contextualisées.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "3",
+      "fichier": "figures/instrumentos-monetarios.svg",
+      "legende": "Coordinar pagos, crear una unidad comercial y compartir una única moneda plantean grados distintos de delegación."
+    },
+    {
+      "numero": 2,
+      "question": "6",
+      "fichier": "figures/cuotas-y-contrapartidas.svg",
+      "legende": "Tres sectores convierten el interés diplomático en una negociación sobre condiciones concretas de acceso."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ]
+  }
+}

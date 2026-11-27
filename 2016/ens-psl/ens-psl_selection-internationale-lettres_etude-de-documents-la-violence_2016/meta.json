@@ -1,0 +1,67 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_etude-de-documents-la-violence_2016",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Étude de documents — la violence",
+    "annee": 2016,
+    "modalite": "écrit"
+  },
+  "intitule": "La violence. Commentaire synthétique du dossier.",
+  "questions": 1,
+  "gabarit": "dissertation",
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/CO.DOC.pdf",
+    "sha256_sujet": "b10a437e787bdafb352525f2e5492125c60d3cbf644e1ba999ee5e4b120a1bea",
+    "pages_sujet": 10,
+    "rapport": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/Rapport-etude-documents.pdf",
+    "sha256_rapport": "070cae82b43c0f650ccacb2f92be7ce4f0ff21fdb1a0997927ed1389682d5236",
+    "pages_rapport": 2,
+    "page_officielle": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2016-lettres",
+    "reference_complementaire": "https://www.insee.fr/fr/statistiques/1280920",
+    "reperage": "Consigne p. 1, sept documents p. 2–9, dont un tableau et trois reproductions, puis une page 10 seulement numérotée. Lecture du sujet et du rapport propres à la session.",
+    "precision_reference": "La tranche « 18 à 25 ans » du texte retapé p. 7 doit se lire « 18 à 75 ans », comme l’indiquent le tableau reproduit et la publication de l’Insee n° 1473, novembre 2013."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/proximite.svg",
+      "question": "Commentaire synthétique",
+      "legende": "Conjoint ou ancien conjoint et personne inconnue, selon le sexe des victimes. Source : Insee–ONDRP, enquêtes Cadre de vie et sécurité 2008 à 2012, tableau 3 du document 6."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "oraux_lyon_et_anciens_corriges",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction des deux éditions après examen du sujet de dix pages et du rapport de deux pages, lecture des sept documents et des trois reproductions, comparaison des dénominateurs, vérification de la tranche d’âge et graphique original."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire synthétique unique des sept documents sur « La violence »."
+    ],
+    "elements_verifies": [
+      "Doc. 1, p. 2. Graves, signes d’hospitalité, impuissance de Cassandre, rivalité familiale, oracle, retour et résolution d’Oreste dans les bornes de l’extrait.",
+      "Doc. 2, p. 2–3. Girard, durée de la disposition, déplacement vers une victime, comparaison animale, hypothèse sur le sacrifice et la valeur accordée aux vies.",
+      "Doc. 3, p. 3–5. Corneille, V, 3, confrontation de Félix et Polyeucte, fonction de Pauline, partage du vers, sentence et responsabilité.",
+      "Doc. 4, p. 5. Fanon, lieux du pouvoir colonial, substitution politique, portée des formules absolues et premier moment retenu.",
+      "Doc. 5, p. 6. Bourdieu, extension de la formule de Weber, concentration des capitaux, intériorisation des catégories, extérieur et intérieur, retour à Oreste.",
+      "Doc. 6, p. 6–7. Morin, Jaluzot et Picard, enquête de victimation, types de violences, sexes et liens déclarés, dénominateurs, champ, périodes, auteurs multiples et coquille d’âge vérifiée.",
+      "Doc. 7, p. 8–9. Annette Messager, Les Chimères (1982), Daily (2016), Pole Dance A (2015), motifs visuels, rôle du titre, organisation des trois œuvres, rapport au regard et au quotidien."
+    ]
+  }
+}

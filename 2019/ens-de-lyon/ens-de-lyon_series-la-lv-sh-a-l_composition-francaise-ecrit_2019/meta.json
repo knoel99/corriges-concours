@@ -1,0 +1,72 @@
+{
+  "slug": "ens-de-lyon_series-la-lv-sh-a-l_composition-francaise-ecrit_2019",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries LA/LV/SH (A/L)",
+    "matiere": "Composition française (écrit)",
+    "annee": 2019,
+    "modalite": "écrit"
+  },
+  "intitule": "Le roman et la mémoire des disparitions",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2019-10/2019%20composition%20fran%C3%A7aise.pdf",
+    "sha256_sujet": "aa9fbbfe4a2e29468df893a9017fc4dafdc17d0ed4388bd2d956a4783f2fb337",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2019-11/FRANCAIS_EXPLIC_TXT_LIT_2019.pdf",
+    "sha256_rapport_jury": "399091e669054b2849daa0b31c199f351a4353ca8cc16f94153c6cce345614c0",
+    "reperage": "Cahier BEL de tronc commun (LCU 971, J. 19 1063), une page, Paris-Saclay, Lyon et Paris. Rapport de Lyon, section de composition écrite p. 1 à 6.",
+    "precision_controle": "Sujet J. 19 1063, une page sans annexe. Confrontation visuelle du fac-similé à la citation et à la consigne en tête du rapport, puis lecture de la section écrite jusqu’à la fin p. 6. Une seule dissertation, six heures, sans calculatrice.",
+    "pages_sujet": 1,
+    "pages_rapport_composition": "1–6 sur 13"
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Dissertation",
+      "legende": "Comment rendre sensible une disparition ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de la composition commune BEL 2019 à partir de la garde et du rapport de Lyon. Confrontation de Daunais à Lafayette, Hugo, Aragon et Michon. Ajout d’une préparation guidée et d’une figure comparant les trois temporalités. Concordance du cahier commun BEL LCU 971, J. 19 1063, porté pour les ENS Paris-Saclay, de Lyon et de Paris ; maintien de la fiche historique ENS de Lyon, séries LA/LV/SH (A/L)."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "classiques_2017",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Relecture intégrale des deux éditions, de la garde LCU 971 et du rapport sur l’écrit. Réintégration du roman réaliste et du présent commun divisé à travers Le Colonel Chabert, précision sur l’inscription dans le poème d’Aragon et nouvel exercice de changement de perspective dans le guide. Contrôle des quatre œuvres et de la figure conservée."
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Composition française — dissertation unique"
+    ],
+    "elements_verifies": [
+      "I : perte de puissance des règles et des croyances ; l’expérience de la lettre, des cloches et du nom du colonel Chabert montre ce que la mémoire conserve.",
+      "I–II : rapport causal entre regard en arrière et liberté des héros ; deux présents contemporains chez Balzac, ouverture et refus du remariage, libération puis jugement de Gauvain.",
+      "II–III : discussion du superlatif parmi les arts par le travail du vers et de la voix chez Aragon, puis du passage des héros à la communauté présente, entre lecteur, témoin et narrateur.",
+      "Consigne de discussion appuyée sur les quatre œuvres : Lafayette, Hugo, Aragon, Michon. Référence hors programme au réalisme de Balzac ; figure de synthèse, conclusion et préparation spécifique dans l’édition guidée."
+    ]
+  }
+}

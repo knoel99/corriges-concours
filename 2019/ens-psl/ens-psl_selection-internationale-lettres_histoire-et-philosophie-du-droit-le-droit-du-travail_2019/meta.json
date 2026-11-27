@@ -1,0 +1,64 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire-et-philosophie-du-droit-le-droit-du-travail_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire et philosophie du droit — le droit du travail",
+    "annee": 2019,
+    "modalite": "écrit"
+  },
+  "intitule": "Quatre questions de même poids (5 points chacune) portent sur la longue durée, la philosophie, la réversibilité et la portée internationale du droit du travail. Les sous-questions du feuillet orientent ces quatre réponses. Les exemples sont situés dans le droit et les débats connus en février 2019.",
+  "gabarit": "dissertation",
+  "questions": 4,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://web.archive.org/web/20240802190933id_/https://www.ens.psl.eu/sites/default/files/droit-ecrit-sil2019.pdf",
+    "sujet_sha256": "900feea30a71f7e55b454b08e75adb946dfcb9bfb2f2a4cfe19de250d52bdffb",
+    "index": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2019-lettres",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://web.archive.org/web/20240802190933id_/https://www.ens.psl.eu/sites/default/files/droit-ecrit-sil2019.pdf",
+        "url_ens": "https://www.ens.psl.eu/sites/default/files/droit-ecrit-sil2019.pdf",
+        "sha256": "900feea30a71f7e55b454b08e75adb946dfcb9bfb2f2a4cfe19de250d52bdffb",
+        "pages": 1
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "question": "1. Longue durée",
+      "legende": "Trois opérations permettant de comparer les fonctions et l’effectivité des normes du travail."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Réponses distinctes aux quatre questions et à chaque sous-question du feuillet de février 2019, avec exemples historiques et juridiques datés."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1. Longue durée",
+      "2. Philosophie du droit du travail",
+      "3. Technique réversible",
+      "4. Droit international du travail"
+    ],
+    "limites": "Quatre questions sur l’histoire, la philosophie et la réversibilité du droit du travail et sur le droit international du travail."
+  }
+}

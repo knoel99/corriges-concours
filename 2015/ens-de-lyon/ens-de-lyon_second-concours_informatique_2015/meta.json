@@ -39,5 +39,37 @@
       "modifications": true,
       "perimetre": "Rédaction des 18 questions avec lecture du sujet et du rapport officiels, deux figures et validations numériques et combinatoires. Mise en évidence de la limite de complexité de la question 4 en présence de colonnes vides, du rôle des répartitions en question 6 et des conditions d’ascendance stricte. Vérification des arbres symboliques sur toutes les structures symétriques de taille un à six. Rectification du balisage de 3 formules hors texte par édition, suivie d’un contrôle de leur composition dans le PDF."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18"
+    ],
+    "precision": "Les 18 questions numérotées du sujet institutionnel ont été rapprochées dans leur ordre des solutions signées. Le texte de chacune des solutions du brut figure aussi dans le guidé.",
+    "origine_attestation": {
+      "commit_du_journal": "290e0bb69f9871790fd102dc5bfe81b3b3c6c7f2",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction des 18 questions avec lecture du sujet et du rapport officiels, deux figures et validations numériques et combinatoires. Mise en évidence de la limite de complexité de la question 4 en présence de colonnes vides, du rôle des répartitions en question 6 et des conditions d’ascendance stricte. Vérification des arbres symboliques sur toutes les structures symétriques de taille un à six. Rectification du balisage de 3 formules hors texte par édition, suivie d’un contrôle de leur composition dans le PDF.",
+      "sha256_sujet_controle": "f4ed726e83d9475883df12c8b2747b69052c494957b01d5c0b14ea1d2b7689b4",
+      "sha256_rapport_controle": "b9df624a42b3661acea1b2d9506ca2a3145726e5182e454fd4d261b9c45c1299"
+    }
+  }
 }

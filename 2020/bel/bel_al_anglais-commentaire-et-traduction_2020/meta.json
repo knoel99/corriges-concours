@@ -1,0 +1,79 @@
+{
+  "slug": "bel_al_anglais-commentaire-et-traduction_2020",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Anglais (commentaire et traduction)",
+    "annee": 2020
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2020-09/2020%20Commentaire%20d%27un%20texte%20en%20LVE%20et%20traduction.pdf#page=4",
+    "sha256_sujet": "38b8795aae8773ed81ebd843f2436a126f190f44a6a853ee15d561be36f8c269",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2020-10/Anglais_2020%20internet.pdf#page=1",
+    "sha256_rapport_jury": "b8bbc003adc848e012b206ce76457ac29fccb03c3ab4103aca214eeac91580df",
+    "index_banque": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2020"
+  },
+  "figures": [
+    {
+      "fichier": "figures/preuves-et-conjectures.svg",
+      "question": "Commentaire",
+      "legende": "Le document public, le souvenir d’enfance et la reconstruction du couple n’ont pas la même valeur de preuve."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire en anglais de l’ensemble du texte",
+      "Version française du passage désigné"
+    ],
+    "pages_du_sujet": 19,
+    "pages_pdf_des_questions": {
+      "Commentaire en anglais de l’ensemble du texte": 4,
+      "Version française du passage désigné": 5
+    },
+    "precision": "Le sujet anglais est imprimé aux pages 4 et 5. La version commence à la ligne 34 et se termine à la ligne 51. Le rapport décrit les deux consignes aux pages 1 à 14 avant de passer au thème de spécialité."
+  },
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "phase": "lecture_rapport_jury",
+      "modifications": false,
+      "perimetre": "Rubriques du commentaire et de la version, pages 1 à 14. Vérification du rôle des voix narratives et des points de traduction signalés."
+    },
+    {
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "phase": "redaction",
+      "modifications": true,
+      "perimetre": "Commentaire intégral en anglais de Atwood, traduction française originale des lignes 34–51, exercices de méthode et figure sur la lecture du texte. Le document public, le souvenir d’enfance et la reconstruction du couple n’ont pas la même valeur de preuve."
+    }
+  ]
+}

@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Les logarithmes sont naturels. Le plan indépendant de marges $\alpha,\beta$ est noté $p$.
 
 ## I. Convexité et points selles
@@ -141,11 +143,11 @@ S’il y a deux éléments ou plus dans $\mathcal X_a$, un suffixe vide serait p
 ### Question 5c
 
 > [!INDICATION]
-> Compter les prolongements possibles de chaque mot à profondeur commune.
+> Regrouper les mots par première lettre et utiliser 5b sur les suffixes. Traiter séparément une branche vide ou réduite à un mot.
 
 #### Solution
 
-Posons $L=\max_x|c(x)|$. Parmi les $2^L$ mots binaires de longueur $L$, exactement $2^{L-|c(x)|}$ commencent par $c(x)$. Ces ensembles sont disjoints pour des symboles distincts, car deux préfixes d’un même mot sont comparables. On a donc $\sum_x2^{L-|c(x)|}\le2^L$, soit $\sum_x2^{-|c(x)|}\le1$. Dans la figure les poids des feuilles valent $1/2,1/4,1/8,1/8$.
+Raisonnons par récurrence sur la longueur maximale $L$. Pour $L=1$, il y a au plus deux mots distincts, chacun de poids $1/2$. Pour $L>1$, partageons les mots suivant leur première lettre $a$. Si $\mathcal X_a$ est vide, sa contribution est nulle. Si c’est un singleton, son unique mot a longueur au moins un et pèse au plus $1/2$. Si $\mathcal X_a$ a au moins deux éléments, 5b donne un code préfixe de suffixes de longueur maximale au plus $L-1$. Par récurrence, la somme de leurs poids est au plus $1$. Rétablir la lettre initiale divise chaque poids par deux. Chacune des deux branches contribue donc au plus $1/2$, d’où $\sum_x2^{-|c(x)|}\le1$. Dans la figure les poids des feuilles valent $1/2,1/4,1/8,1/8$.
 
 ![Figure 1 — Le code des feuilles 0, 10, 110, 111 remplit tout l’arbre binaire et atteint l’égalité de Kraft.](figures/arbre-prefixe.svg)
 
@@ -252,7 +254,7 @@ Soit $I=J=\{1,2\}$ et $\alpha=\beta=(1/2,1/2)$. Si $C=0$ et $\epsilon=0$, tout p
 
 Écrivons $q=q(\epsilon)$ et $q_t=(1-t)q+tp$. Par 7, le segment est admissible. Le quotient $(J_\epsilon(q_t)-J_\epsilon(q))/t$ a une contribution finie du coût linéaire, et une limite finie pour chaque cellule où $q_{ij}>0$. Dans une cellule nulle, sa contribution entropique est
 $$\epsilon p_{ij}\,\frac{\varphi(t)-\varphi(0)}{t}=\epsilon p_{ij}(\ln t-1)\longrightarrow-\infty.$$
-Si une seule cellule était nulle, le quotient total tendrait vers $-\infty$ et $J_\epsilon(q_t)$ serait plus petit que le minimum pour $t>0$ assez petit. Chaque $q_{ij}(\epsilon)$ est donc strictement positif.
+Dès qu’au moins une cellule est nulle, le quotient total tend vers $-\infty$ et $J_\epsilon(q_t)$ devient plus petit que le minimum pour $t>0$ assez petit. Chaque $q_{ij}(\epsilon)$ est donc strictement positif.
 
 ### Question 11b
 
@@ -338,7 +340,7 @@ Le même calcul sur les colonnes donne $g_*(f)_j=-\epsilon\ln\sum_i\alpha_i e^{(
 
 #### Solution
 
-Les sommes exponentielles sont strictement positives, donc $f_*$ et $g_*$ sont continues. Sous l’hypothèse de convergence de la question, $g^\infty=g_*(f^\infty)$ et $f^\infty=f_*(g^\infty)$. La question 14 annule alors toutes les dérivées de $G$. Par concavité, $G(f^\infty,g^\infty)$ est son maximum global $G_*$ sur l’espace des potentiels $\mathbb R^I\times\mathbb R^J$.
+Le domaine imprimé dans la définition de $G_*$ est une coquille. Le produit $I\times J$ indexe les cellules. Le supremum porte sur les couples de potentiels de $\mathbb R^I\times\mathbb R^J$, domaine de $G$ en 13c. Les sommes exponentielles sont strictement positives, donc $f_*$ et $g_*$ sont continues. Sous l’hypothèse de convergence de la question, $g^\infty=g_*(f^\infty)$ et $f^\infty=f_*(g^\infty)$. La question 14 annule alors toutes les dérivées de $G$. Par concavité, $G(f^\infty,g^\infty)$ est son maximum global $G_*$ sur l’espace des potentiels $\mathbb R^I\times\mathbb R^J$.
 
 ### Question 16b
 
@@ -358,7 +360,7 @@ Pour tout $(f,g)$, $G(f,g)=\min_{q>0}\mathcal L(q,(f,g))\le\mathcal L(q(\epsilon
 
 Pour chaque maximiseur dual, le majorant de 16b est atteint. Le plan $q(\epsilon)$ réalise alors le minimum en $q$ du lagrangien correspondant, donc, par l’unicité en 13a, $q(f^\infty,g^\infty)=q(f(\epsilon),g(\epsilon))=q(\epsilon)$. Le logarithme de la formule de 13a donne pour tous $i,j$
 $$f_i(\epsilon)-f_i^\infty=-\big(g_j(\epsilon)-g_j^\infty\big).$$
-En fixant $j$, toutes les différences de gauche sont la même constante $a$. Puis pour tout $j$, la différence de droite avant changement de signe vaut $-a$.
+Fixons $j_0$ et posons $a=g_{j_0}^\infty-g_{j_0}(\epsilon)$. Alors $f_i(\epsilon)=f_i^\infty+a$ pour tout $i$. En reportant cette identité dans la relation précédente, on obtient $g_j(\epsilon)=g_j^\infty-a$ pour tout $j$.
 
 ### Question 16d
 
@@ -367,6 +369,6 @@ En fixant $j$, toutes les différences de gauche sont la même constante $a$. Pu
 
 #### Solution
 
-Pour chaque cellule, la convergence supposée des potentiels et la formule de 13a donnent $q(f^k,g^k)_{ij}\to q(f^\infty,g^\infty)_{ij}=q(\epsilon)_{ij}$ par 16c. Le nombre de cellules étant fini, c’est aussi la convergence du plan dans toute norme. La figure illustre les marges $(0{,}40,0{,}60)$ et $(0{,}72,0{,}28)$, le coût $0$ sur la diagonale et $1$ ailleurs, et $\epsilon=0{,}35$.
+Pour chaque cellule, la convergence supposée des potentiels et la formule de 13a donnent $q(f^k,g^k)_{ij}\to q(f^\infty,g^\infty)_{ij}=q(\epsilon)_{ij}$ par 16c. Le nombre de cellules étant fini, c’est aussi la convergence du plan dans toute norme. La figure illustre les marges $(0{,}40,0{,}60)$ et $(0{,}72,0{,}28)$, le coût $0$ sur la diagonale et $1$ ailleurs, et $\epsilon=0{,}35$. On part de $f^0=g^0=0$. Après quinze cycles colonnes puis lignes, l’écart maximal entre une somme de colonne et sa marge vaut environ $3{,}02\times10^{-9}$.
 
 ![Figure 2 — Normalisations alternées des deux marges sur un exemple à deux sites. Le tableau montre les masses après quinze cycles.](figures/iterations-transport.svg)

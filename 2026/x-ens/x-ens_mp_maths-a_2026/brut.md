@@ -10,6 +10,8 @@
 
 **Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Épreuve de 4 heures, calculatrice interdite. Notations du sujet :
 
 - $\langle x|y\rangle=\sum_i x_i\overline{y_i}$, linéaire à gauche et semi-linéaire à droite, et $\|x\|=\sqrt{\langle x|x\rangle}$ ;
@@ -508,6 +510,8 @@ Donc $4\vert\!\vert\!\vert A\vert\!\vert\!\vert \le8\,r(A)$.
 
 $$\boxed{\tfrac12\vert\!\vert\!\vert A\vert\!\vert\!\vert \le r(A)\le\vert\!\vert\!\vert A\vert\!\vert\!\vert }$$
 
+Les deux constantes sont atteintes. Pour la matrice $N$ de la question 21, $N(x_1,x_2)=(x_2,0)$ donne $\|N\|_{\mathrm{op}}=1$ (prendre $x=e_2$), tandis que son disque numérique a pour rayon $1/2$. Pour $A=I_n$, chaque vecteur unitaire donne $\langle Ax|x\rangle=1$ et $r(A)=\|A\|_{\mathrm{op}}=1$. Ici $\|\cdot\|_{\mathrm{op}}$ désigne la norme subordonnée du sujet.
+
 ### Question 24
 
 $r$ est à valeurs dans $\mathbb R_+$ (question 22).
@@ -544,21 +548,13 @@ Les polynômes $\prod_\ell(1-\omega_k^\ell X)$ et $1-X^k$ coïncident sur l'ense
 
 $$\boxed{1-X^k=\prod_{\ell=1}^k(1-\omega_k^\ell X)}$$
 
-*Seconde identité.* Posons $Q_j=\prod_{\ell\neq j}(1-\omega_k^\ell X)$ et $S=\sum_{j=1}^kQ_j$, de degré $\le k-1$. Soit $j_0\in\{1,\dots,k\}$.
-
-Pour $j\neq j_0$, $Q_j$ contient le facteur $1-\omega_k^{j_0}X$, nul en $\omega_k^{-j_0}$. Donc
-
-$$\begin{aligned}S(\omega_k^{-j_0})&=Q_{j_0}(\omega_k^{-j_0})\\ &=\prod_{\ell\neq j_0}\big(1-\omega_k^{\ell-j_0}\big)\\ &=\prod_{m=1}^{k-1}(1-\omega_k^m),\end{aligned}$$
-
-car $\ell-j_0$ parcourt modulo $k$ les classes non nulles. Or
-
-$$\begin{aligned}\prod_{m=1}^{k-1}(X-\omega_k^m)&=\frac{X^k-1}{X-1}\\ &=1+X+\dots+X^{k-1},\end{aligned}$$
-
-qui vaut $k$ en $X=1$.
-
-Donc $S-k$, de degré $\le k-1$, s'annule aux $k$ points distincts $\omega_k^{-1},\dots,\omega_k^{-k}$. Ainsi $S-k=0$ :
-
-$$\boxed{1=\frac1k\sum_{j=1}^k\prod_{\substack{\ell=1\\ \ell\neq j}}^k(1-\omega_k^\ell X)}$$
+*Seconde identité.* Posons $Q_j=\prod_{\ell\ne j}(1-\omega_k^\ell X)$. Par la première identité et la formule de la somme géométrique, les deux polynômes $Q_j$ et $\sum_{m=0}^{k-1}\omega_k^{jm}X^m$ donnent $1-X^k$ après multiplication par $1-\omega_k^jX$. Ce facteur étant un polynôme non nul, on peut le simplifier dans $\mathbb C[X]$. Ainsi
+$$
+\frac1k\sum_{j=1}^k Q_j
+=\sum_{m=0}^{k-1}\left(\frac1k\sum_{j=1}^k\omega_k^{jm}\right)X^m.
+$$
+Pour $m=0$, le coefficient vaut $1$. Pour $1\le m<k$, le rapport $\omega_k^m$ est différent de $1$ et sa puissance $k$-ième vaut $1$. La somme géométrique des $k$ termes vaut donc zéro. D’où
+$$\boxed{\frac1k\sum_{j=1}^k\prod_{\ell\ne j}(1-\omega_k^\ell X)=1.}$$
 
 Pour $k=1$, le produit vide vaut $1$ et l'identité est triviale.
 

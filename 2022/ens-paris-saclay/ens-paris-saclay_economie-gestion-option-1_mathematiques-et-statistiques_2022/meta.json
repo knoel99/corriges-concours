@@ -12,7 +12,9 @@
     "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2022_Sujet_Ecrit_Economie_Gestion_Option1_Maths.pdf",
     "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2022_Rapport_Ecrit_Economie_Gestion_Option1_Math%C3%A9matiques.pdf",
     "sha256_sujet": "0251cf5fc87dfd6ba6d2a458af8f8c358cf653064635bd632e1f65e6812e347e",
-    "sha256_rapport": "a20479519bd933fbf8bb8e842a4e456e03df7999ee94ba67b118cb53969f8575"
+    "sha256_rapport": "a20479519bd933fbf8bb8e842a4e456e03df7999ee94ba67b118cb53969f8575",
+    "provenance": "Garde ENS Paris-Saclay–ENSAI D2, concours 2022, filière écogestion option 1. Quatre pages et trois problèmes, rapport de trois pages.",
+    "sha256_rapport_jury": "a20479519bd933fbf8bb8e842a4e456e03df7999ee94ba67b118cb53969f8575"
   },
   "figures": [
     {
@@ -32,6 +34,246 @@
       "perimetre": "Rédaction des 30 réponses et des indications associées dans les deux éditions à partir du sujet officiel et du rapport du jury. Classification des solutions, cas limites des temps de détection, généralisation du nombre de relecteurs, isomorphisme de commutants et tracé de la tangente hyperbolique.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "agent": "maths_statistiques_saclay",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture des 30 consignes des deux éditions sur le fascicule. Équation fonctionnelle avec vérification réciproque, répartition du maximum d’attentes géométriques, indépendance des détections, application commutateur et dimensions des commutants confrontées au rapport."
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "1.8",
+      "1.9",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7",
+      "2.8",
+      "2.9",
+      "3.1.a",
+      "3.1.b",
+      "3.1.c",
+      "3.1.d",
+      "3.2.a",
+      "3.2.b",
+      "3.2.c",
+      "3.2.d",
+      "3.3.a",
+      "3.3.b",
+      "3.3.c",
+      "3.3.d"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1.1",
+        "titre": "1",
+        "partie": "Problème 1 · De la tangente hyperbolique à l’équation fonctionnelle",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.2",
+        "titre": "2",
+        "partie": "Problème 1 · De la tangente hyperbolique à l’équation fonctionnelle",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.3",
+        "titre": "3",
+        "partie": "Problème 1 · De la tangente hyperbolique à l’équation fonctionnelle",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.4",
+        "titre": "4",
+        "partie": "Problème 1 · De la tangente hyperbolique à l’équation fonctionnelle",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.5",
+        "titre": "5",
+        "partie": "Problème 1 · De la tangente hyperbolique à l’équation fonctionnelle",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.6",
+        "titre": "6",
+        "partie": "Problème 1 · De la tangente hyperbolique à l’équation fonctionnelle",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.7",
+        "titre": "7",
+        "partie": "Problème 1 · De la tangente hyperbolique à l’équation fonctionnelle",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.8",
+        "titre": "8",
+        "partie": "Problème 1 · De la tangente hyperbolique à l’équation fonctionnelle",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.9",
+        "titre": "9",
+        "partie": "Problème 1 · De la tangente hyperbolique à l’équation fonctionnelle",
+        "page_pdf": 2
+      },
+      {
+        "question": "2.1",
+        "titre": "1",
+        "partie": "Problème 2 · Estimation et détection de la dernière erreur",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.2",
+        "titre": "2",
+        "partie": "Problème 2 · Estimation et détection de la dernière erreur",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.3",
+        "titre": "3",
+        "partie": "Problème 2 · Estimation et détection de la dernière erreur",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.4",
+        "titre": "4",
+        "partie": "Problème 2 · Estimation et détection de la dernière erreur",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.5",
+        "titre": "5",
+        "partie": "Problème 2 · Estimation et détection de la dernière erreur",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.6",
+        "titre": "6",
+        "partie": "Problème 2 · Estimation et détection de la dernière erreur",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.7",
+        "titre": "7",
+        "partie": "Problème 2 · Estimation et détection de la dernière erreur",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.8",
+        "titre": "8",
+        "partie": "Problème 2 · Estimation et détection de la dernière erreur",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.9",
+        "titre": "9",
+        "partie": "Problème 2 · Estimation et détection de la dernière erreur",
+        "page_pdf": 3
+      },
+      {
+        "question": "3.1.a",
+        "titre": "1.a",
+        "partie": "Problème 3 · Matrices qui commutent",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.1.b",
+        "titre": "1.b",
+        "partie": "Problème 3 · Matrices qui commutent",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.1.c",
+        "titre": "1.c",
+        "partie": "Problème 3 · Matrices qui commutent",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.1.d",
+        "titre": "1.d",
+        "partie": "Problème 3 · Matrices qui commutent",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.2.a",
+        "titre": "2.a",
+        "partie": "Problème 3 · Matrices qui commutent",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.2.b",
+        "titre": "2.b",
+        "partie": "Problème 3 · Matrices qui commutent",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.2.c",
+        "titre": "2.c",
+        "partie": "Problème 3 · Matrices qui commutent",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.2.d",
+        "titre": "2.d",
+        "partie": "Problème 3 · Matrices qui commutent",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.3.a",
+        "titre": "3.a",
+        "partie": "Problème 3 · Matrices qui commutent",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.3.b",
+        "titre": "3.b",
+        "partie": "Problème 3 · Matrices qui commutent",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.3.c",
+        "titre": "3.c",
+        "partie": "Problème 3 · Matrices qui commutent",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.3.d",
+        "titre": "3.d",
+        "partie": "Problème 3 · Matrices qui commutent",
+        "page_pdf": 4
+      }
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "controle": [
+      "Équation fonctionnelle avec vérification réciproque, répartition du maximum d’attentes géométriques, indépendance des détections, application commutateur et dimensions des commutants confrontées au rapport."
+    ]
+  }
 }

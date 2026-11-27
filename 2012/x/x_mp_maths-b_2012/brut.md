@@ -2,7 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 **Valeurs d’adhérence sur le cercle de convergence.** Les moyennes de Cesàro identifient un centre. Le théorème de Kronecker décrit ensuite les phases accessibles aux sommes partielles et détermine la forme de leur ensemble d’adhérence.
 
@@ -110,7 +112,7 @@ Par 10.a et 11.a, les points $x_m$ sortent de tout compact, donc $|x_m|\to\infty
 
 ### Question 12
 
-Les nombres $\lambda_1,\ldots,\lambda_n,2\pi$ sont indépendants sur $\mathbb Q$ puisque les mêmes avec $\pi$ le sont. Appliquons 10.c avec les phases $-\alpha_j$ pour obtenir des entiers $a_m$ de signes quelconques avec $e^{i\lambda_j a_m}\to e^{i\alpha_j}$. Par 11.b il existe des entiers $b_k=2|N'_k|\to+\infty$ tels que $e^{i\lambda_j b_k}\to1$ pour tous $j$ (la conjugaison conserve la limite 1). Choisissons des $k_m$ strictement croissants tels que $a_m+b_{k_m}\ge m$. Les entiers naturels $N_m=a_m+b_{k_m}$ tendent vers $+\infty$ et leurs phases, produits des deux phases précédentes, donnent exactement les cibles.
+Les nombres $\lambda_1,\ldots,\lambda_n,2\pi$ sont indépendants sur $\mathbb Q$ puisque les mêmes avec $\pi$ le sont. Appliquons 10.c avec les phases $-\alpha_j$ pour obtenir des entiers $a_m$ de signes quelconques avec $e^{i\lambda_j a_m}\to e^{i\alpha_j}$. Par 11.b il existe des entiers $b_k=2|N'_k|\to+\infty$ tels que $e^{i\lambda_j b_k}\to1$ pour tous $j$ (la conjugaison conserve la limite 1). Prenons $k_0$ tel que $N_0=a_0+b_{k_0}\ge0$. Une fois $N_{m-1}$ fixé, choisissons $k_m>k_{m-1}$ assez grand pour que $N_m=a_m+b_{k_m}>N_{m-1}$. Ces entiers naturels forment une suite strictement croissante, donc tendent vers $+\infty$. Pour chaque $j$, le produit $e^{i\lambda_j a_m}e^{i\lambda_j b_{k_m}}$ tend vers $e^{i\alpha_j}$.
 
 ## III. Valeurs d’adhérence des sommes partielles
 
@@ -122,7 +124,9 @@ Pour $z=e^{ix}\ne1$, $S_n=(1-z^{n+1})/(1-z)$. Si $x/\pi$ est rationnel, $z$ est 
 
 Avec $A=\alpha+\beta/2$, $B=-\beta/2$ et $z=e^{ix}$, posons $C=A/(1-z)$, $D=B/(1+z)$, donc $\sigma=C+D$. La formule des deux séries géométriques donne
 $$S_n=\sigma-z^{n+1}\big(C+(-1)^{n+1}D\big).$$
-Les puissances de $z$ de chaque parité ont pour ensemble d’adhérence le cercle unité, par 12 appliquée à $2x$ puis par rotation. Le premier cercle de centre $\sigma$ a donc rayon $|C+D|$. Le second cercle a pour rayon $|C-D|$. Leur réunion est tout l’ensemble d’adhérence, car d’une sous-suite convergente on peut extraire des indices de même parité.
+Les puissances de $z$ de chaque parité ont pour ensemble d’adhérence le cercle unité, par 12 appliquée à $2x$ puis par rotation. Les indices impairs donnent le rayon $|C+D|$, les indices pairs le rayon $|C-D|$. En fonction des coefficients du sujet, ces rayons autour de $\sigma$ valent respectivement
+$$r_{\rm impair}=\frac{|\alpha+(\alpha+\beta)z|}{|1-z^2|},\qquad
+r_{\rm pair}=\frac{|\alpha+\beta+\alpha z|}{|1-z^2|}.$$ Leur réunion est tout l’ensemble d’adhérence, car d’une sous-suite convergente on peut extraire des indices de même parité.
 
 Les deux rayons sont distincts. En effet, leur différence de carrés vaut $4\operatorname{Re}(C\overline D)$ et $(1-z)(1+\overline z)=\overline z-z$ est imaginaire pur non nul. Or $A\overline B=-\alpha\overline\beta/2-|\beta|^2/4$ a une partie imaginaire non nulle car $\beta/\alpha\notin\mathbb R$. L’énoncé autorise un cercle réduit à un point. Par exemple, $\alpha=1$, $\beta=-1-z$ donne $C-D=0$ et respecte les hypothèses.
 
@@ -134,4 +138,6 @@ La distance de la somme au centre parcourt $[\,||C|-|D||,|C|+|D|\,]$ en faisant 
 $$0<\alpha<\min\left(1,\frac{|1-v|}{|1-z|}\right),$$
 on a $|D|<|C|$, et les rayons de la couronne sont $r_1=1/|1-z|-\alpha/|1-v|>0$ et $r_2=1/|1-z|+\alpha/|1-v|>r_1$.
 
-![Figure 1 — La distance au centre varie entre la différence et la somme des deux rayons. Le déphasage permet toutes les distances intermédiaires.](figures/couronne-de-kronecker.svg)
+Pour tracer la figure, prenons $x=\pi\sqrt2/4$, $\lambda=\pi\sqrt3/6$ et $\alpha=1/4$. La liberté de $1,\sqrt2,\sqrt3$ sur $\mathbb Q$ donne celle de $x,\lambda,\pi$. Le calcul fournit $|C|\simeq0{,}9483$ et $|D|\simeq0{,}1477$. Les points représentés sont les valeurs $S_n-\sigma$ pour $0\le n<900$.
+
+![Figure 1 — Les 900 premières sommes partielles, après soustraction du centre, restent entre les cercles de rayons 0,801 et 1,096 environ.](figures/couronne-de-kronecker.svg)

@@ -12,10 +12,17 @@
     "provider": "codex",
     "model": "GPT-6"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/20_mp_mathc_sujet.pdf",
-    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/20_mp_rap_emathc.pdf"
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/20_mp_rap_emathc.pdf",
+    "index_banque": "https://www.ens.psl.eu/rapports-et-sujets-2020-mpi",
+    "index_banque_sha256": "47f63d61dea05c4d59ead48674e448705e9a03daff54cc32a79ec036751c6d93",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/20_mp_rap_emathc.pdf",
+    "sujet_sha256": "207a472fe82f7ff276a051c2a046f5cf45ac9d52077c6dba815550470d37909d",
+    "sujet_pages": 12,
+    "rapport_sha256": "1d8f92eb455b28cf18231926e8fd550d6c8c9e10a5857592dce0120b0cd4055d",
+    "rapport_pages": 4
   },
   "figures": [
     {
@@ -31,7 +38,7 @@
     {
       "fichier": "figures/minimiseurs-penalises.svg",
       "question": "II.6",
-      "legende": "Pour f(x) = (x − 1,5)² et K = ]−∞, 0], la pénalité k max(0,x)² déplace le minimiseur 1,5/(k + 1) vers le bord."
+      "legende": "Pour f(x) = (x − 1,5)² et K égal à l’ensemble des réels négatifs ou nuls, la pénalité k max(0,x)² déplace le minimiseur 1,5/(k + 1) vers le bord."
     },
     {
       "fichier": "figures/farkas-separation.svg",
@@ -104,6 +111,90 @@
       "perimetre": "Relecture des 46 réponses et des sept schémas face au sujet et au rapport. Monotonie du minimum pénalisé et de la violation, contre-exemple à la qualification, estimation quantitative d’Uzawa et calcul du cas scalaire illustré.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "perimetre": "Question II.6. Vérification de l’exemple de pénalisation quadratique et correction de la légende du graphique dans les deux éditions pour le rendu Markdown et PDF."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Contrôle des 46 alinéas du sujet d’optimisation sous contraintes et des remarques du jury. Vérification des séparations convexes, de la coercivité de la pénalisation, de la qualification des contraintes, du signe du gradient dual et des constantes de convergence dans le théorème d’Uzawa. Contrôle numérique et algébrique du schéma de pénalisation.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1a",
+      "I.1b",
+      "I.1c",
+      "I.1d",
+      "I.2",
+      "I.3a",
+      "I.3b",
+      "I.4",
+      "I.5",
+      "I.6a",
+      "I.6b",
+      "I.6c",
+      "I.7",
+      "I.8",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5a",
+      "II.5b",
+      "II.6",
+      "II.7",
+      "III.1a",
+      "III.1b",
+      "III.1c",
+      "III.2a",
+      "III.2b",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7",
+      "III.8",
+      "IV.1",
+      "IV.2",
+      "IV.3a",
+      "IV.3b",
+      "IV.3c",
+      "IV.4",
+      "IV.5a",
+      "IV.5b",
+      "IV.6a",
+      "IV.6b",
+      "IV.6c",
+      "IV.6d",
+      "IV.6e"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "precision": "Contrôle des 46 alinéas du sujet d’optimisation sous contraintes et des remarques du jury. Vérification des séparations convexes, de la coercivité de la pénalisation, de la qualification des contraintes, du signe du gradient dual et des constantes de convergence dans le théorème d’Uzawa. Contrôle numérique et algébrique du schéma de pénalisation.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "relecture_corrige",
+      "perimetre": "Contrôle des 46 alinéas du sujet d’optimisation sous contraintes et des remarques du jury. Vérification des séparations convexes, de la coercivité de la pénalisation, de la qualification des contraintes, du signe du gradient dual et des constantes de convergence dans le théorème d’Uzawa. Contrôle numérique et algébrique du schéma de pénalisation.",
+      "sha256_sujet_controle": "207a472fe82f7ff276a051c2a046f5cf45ac9d52077c6dba815550470d37909d",
+      "sha256_rapport_controle": "1d8f92eb455b28cf18231926e8fd550d6c8c9e10a5857592dce0120b0cd4055d"
+    }
+  }
 }

@@ -1,0 +1,390 @@
+{
+  "slug": "banque-pt_pt_informatique-et-modelisation_2020",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Informatique et modélisation",
+    "annee": 2020
+  },
+  "questions": 49,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2020/info_mod_2020_pt.pdf",
+    "sujet_sha256": "98945f872788bbe7f287118624ef2fd3a26d1c96aae17a84020075f6935f9ba5",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2020/rapport_info_model_ecrit_2020.pdf",
+    "rapport_sha256": "d4881ce613c812f67d6f1cb301f633e6741be656b56f3a16445d377ddb40bdeb",
+    "notice": "https://www.banquept.fr/documents/2020/Coefficients.pdf#page=1",
+    "notice_sha256": "99f9f38058da96520bff50e823cf189f307e2129dbb0091faded2da6a315c1b1"
+  },
+  "figures": [
+    {
+      "fichier": "figures/champ.svg",
+      "question": "M1",
+      "legende": "Champ des plaques infinies idéalisées, vu en coupe"
+    },
+    {
+      "fichier": "figures/potentiel.svg",
+      "question": "M2",
+      "legende": "Potentiel normalisé en fonction de la position"
+    },
+    {
+      "fichier": "figures/dipole.svg",
+      "question": "M18",
+      "legende": "Trois branches parallèles pour l’impédance motionnelle"
+    },
+    {
+      "fichier": "figures/signaux.svg",
+      "question": "I5",
+      "legende": "Signaux d’essai sur les 1 001 instants demandés"
+    },
+    {
+      "fichier": "figures/repliement.svg",
+      "question": "I29",
+      "legende": "Effet du choix de la taille de FFT sur deux entrées de trois échantillons"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Réponses M1–M19 et I1–I30. Calculs électromécaniques, schémas, signaux, transformées de Fourier et implémentation stéréo WAVE éprouvée sur données synthétiques."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture du feuillet et du rapport, des 49 numéros et des annexes. Correction des bornes verticales du tracé I5, contrôle du signe de couplage et des pentes, ajout de résultats numériques vérifiés pour les rectangles, les longueurs de FFT et le repliement. Tests sur WAVE stéréo synthétiques."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "M1",
+      "M2",
+      "M3",
+      "M4",
+      "M5",
+      "M6",
+      "M7",
+      "M8",
+      "M9",
+      "M10",
+      "M11",
+      "M12",
+      "M13",
+      "M14",
+      "M15",
+      "M16",
+      "M17",
+      "M18",
+      "M19",
+      "I1",
+      "I2",
+      "I3",
+      "I4",
+      "I5",
+      "I6",
+      "I7",
+      "I8",
+      "I9",
+      "I10",
+      "I11",
+      "I12",
+      "I13",
+      "I14",
+      "I15",
+      "I16",
+      "I17",
+      "I18",
+      "I19",
+      "I20",
+      "I21",
+      "I22",
+      "I23",
+      "I24",
+      "I25",
+      "I26",
+      "I27",
+      "I28",
+      "I29",
+      "I30"
+    ],
+    "repere_par_question": [
+      {
+        "question": "M1",
+        "page_pdf": 4,
+        "intitule": "Champ électrostatique des armatures"
+      },
+      {
+        "question": "M2",
+        "page_pdf": 4,
+        "intitule": "Profil du potentiel"
+      },
+      {
+        "question": "M3",
+        "page_pdf": 5,
+        "intitule": "Tension entre les armatures"
+      },
+      {
+        "question": "M4",
+        "page_pdf": 5,
+        "intitule": "Capacité du condensateur"
+      },
+      {
+        "question": "M5",
+        "page_pdf": 5,
+        "intitule": "Ordre de grandeur"
+      },
+      {
+        "question": "M6",
+        "page_pdf": 5,
+        "intitule": "Densité et énergie électriques"
+      },
+      {
+        "question": "M7",
+        "page_pdf": 5,
+        "intitule": "Variation à charge constante"
+      },
+      {
+        "question": "M8",
+        "page_pdf": 5,
+        "intitule": "Effort extérieur d’écartement"
+      },
+      {
+        "question": "M9",
+        "page_pdf": 5,
+        "intitule": "Attraction électrique"
+      },
+      {
+        "question": "M10",
+        "page_pdf": 5,
+        "intitule": "Linéarisation de la force"
+      },
+      {
+        "question": "M11",
+        "page_pdf": 6,
+        "intitule": "Tension d’une capacité mobile"
+      },
+      {
+        "question": "M12",
+        "page_pdf": 6,
+        "intitule": "Loi des mailles"
+      },
+      {
+        "question": "M13",
+        "page_pdf": 6,
+        "intitule": "Forces de pression"
+      },
+      {
+        "question": "M14",
+        "page_pdf": 6,
+        "intitule": "Équation mécanique"
+      },
+      {
+        "question": "M15",
+        "page_pdf": 6,
+        "intitule": "Intérêt du régime harmonique"
+      },
+      {
+        "question": "M16",
+        "page_pdf": 6,
+        "intitule": "Équations en amplitudes complexes"
+      },
+      {
+        "question": "M17",
+        "page_pdf": 6,
+        "intitule": "Élimination du déplacement"
+      },
+      {
+        "question": "M18",
+        "page_pdf": 6,
+        "intitule": "Équivalent motionnel en parallèle"
+      },
+      {
+        "question": "M19",
+        "page_pdf": 6,
+        "intitule": "Mesure du courant à l’oscilloscope"
+      },
+      {
+        "question": "I1",
+        "page_pdf": 7,
+        "intitule": "Durée et nombre d’intervalles"
+      },
+      {
+        "question": "I2",
+        "page_pdf": 7,
+        "intitule": "Construction de la base de temps"
+      },
+      {
+        "question": "I3",
+        "page_pdf": 8,
+        "intitule": "Réponse impulsionnelle d’essai"
+      },
+      {
+        "question": "I4",
+        "page_pdf": 8,
+        "intitule": "Signal à quatre composantes"
+      },
+      {
+        "question": "I5",
+        "page_pdf": 8,
+        "intitule": "Tracé des signaux tests"
+      },
+      {
+        "question": "I6",
+        "page_pdf": 9,
+        "intitule": "Convolution par rectangles gauches"
+      },
+      {
+        "question": "I7",
+        "page_pdf": 9,
+        "intitule": "Coût de la méthode directe"
+      },
+      {
+        "question": "I8",
+        "page_pdf": 10,
+        "intitule": "Lecture du spectre"
+      },
+      {
+        "question": "I9",
+        "page_pdf": 11,
+        "intitule": "Des rectangles à la transformée discrète"
+      },
+      {
+        "question": "I10",
+        "page_pdf": 11,
+        "intitule": "Transformée de Fourier directe"
+      },
+      {
+        "question": "I11",
+        "page_pdf": 11,
+        "intitule": "Complexité de la TFD"
+      },
+      {
+        "question": "I12",
+        "page_pdf": 11,
+        "intitule": "Transformée inverse et normalisation"
+      },
+      {
+        "question": "I13",
+        "page_pdf": 11,
+        "intitule": "Produit de deux spectres"
+      },
+      {
+        "question": "I14",
+        "page_pdf": 12,
+        "intitule": "Convolution par produit spectral"
+      },
+      {
+        "question": "I15",
+        "page_pdf": 12,
+        "intitule": "Coût des trois transformées"
+      },
+      {
+        "question": "I16",
+        "page_pdf": 12,
+        "intitule": "Terminaison des appels récursifs"
+      },
+      {
+        "question": "I17",
+        "page_pdf": 13,
+        "intitule": "Puissance de deux inférieure ou égale"
+      },
+      {
+        "question": "I18",
+        "page_pdf": 13,
+        "intitule": "Multiplications de la FFT imprimée"
+      },
+      {
+        "question": "I19",
+        "page_pdf": 13,
+        "intitule": "Pentes du graphe des temps"
+      },
+      {
+        "question": "I20",
+        "page_pdf": 14,
+        "intitule": "Fréquence d’échantillonnage du CD"
+      },
+      {
+        "question": "I21",
+        "page_pdf": 14,
+        "intitule": "Intérêt du complément à deux"
+      },
+      {
+        "question": "I22",
+        "page_pdf": 14,
+        "intitule": "Bornes d’un mot de 16 bits"
+      },
+      {
+        "question": "I23",
+        "page_pdf": 15,
+        "intitule": "Encodage du minimum signé"
+      },
+      {
+        "question": "I24",
+        "page_pdf": 15,
+        "intitule": "Décodage des deux octets"
+      },
+      {
+        "question": "I25",
+        "page_pdf": 16,
+        "intitule": "Opération sur les séquences d’octets"
+      },
+      {
+        "question": "I26",
+        "page_pdf": 16,
+        "intitule": "Codage et normalisation des deux voies"
+      },
+      {
+        "question": "I27",
+        "page_pdf": 16,
+        "intitule": "Entrelacement et écriture du WAVE"
+      },
+      {
+        "question": "I28",
+        "page_pdf": 17,
+        "intitule": "Compléter une liste par des zéros"
+      },
+      {
+        "question": "I29",
+        "page_pdf": 18,
+        "intitule": "Réverbération stéréo de deux fichiers"
+      },
+      {
+        "question": "I30",
+        "page_pdf": 18,
+        "intitule": "Reconnaître la réverbération"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "annexes": "Documentation Matplotlib, pages 19 et 20. Pages 21 à 23 blanches et mention d’imprimerie page 24."
+  }
+}

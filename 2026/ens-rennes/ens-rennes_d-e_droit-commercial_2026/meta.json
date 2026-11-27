@@ -23,8 +23,13 @@
     "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-option-droit-commercial-d-e-2026_1793640829288-pdf",
     "rapport_sha256": "3c38502bd641cc2435eb64c643e2171f52206010baa7aad9892ccbecdec3b2f6",
     "references": [
-      "https://www.legifrance.gouv.fr/juri/id/JURITEXT000007027659"
-    ]
+      "https://www.legifrance.gouv.fr/juri/id/JURITEXT000007027659",
+      "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006444153/2026-04-15"
+    ],
+    "notice_interens": "https://www.ens.psl.eu/sites/default/files/notice_interens_2026_mise_en_ligne_vf260212-1.pdf",
+    "notice_sha256": "760362eac89bd8b7cf6f17221aa2860bb445fd922564eee6645fe6d5aab7a885",
+    "sujet_exemplaire_lu_sha256": "aa25ebb12b64e08dc4f52ab76284773819fce3019de58684346445203445d465",
+    "rapport_exemplaire_lu_sha256": "890983c00012133eae28aadeb7c37f9b438c37272eeaee1344a103195ddf3949"
   },
   "figures": [
     {
@@ -33,7 +38,7 @@
       "legende": "Les deux transmissions de jouissance"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "lecture_rapport_jury",
@@ -70,6 +75,54 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Vérification visuelle de la page 2 et de la note, confrontation à la décision officielle, au visa et au renvoi à Caen."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture de la décision du 3 décembre 1991, du sujet commercial p. 2 et du rapport. Distinction entre la circulation de la jouissance et le sens de la garantie invoquée pour obtenir restitution."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "fui_physique_un",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Consigne unique et quatre axes : Apport de 1970, cession de jouissance de 1982, demandes des parties, Contrepartie et qualification, garantie du bailleur, Censure du raisonnement de Rouen, renvoi à Caen, Exception concernant les biens renouvelables et limites de la cassation. Confrontation au sujet, aux sources de droit et au rapport institutionnel de l’écrit."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "precision": "La garde donne une composition unique de quatre heures. Les deux éditions traitent la totalité de cette consigne. Les axes de lecture décrivent la rédaction pédagogique.",
+    "questions_entierement_traitees": [
+      "Composition"
+    ],
+    "intitule_officiel": "Commentez la décision suivante — Cass. com., 3 déc. 1991, n° 88-16.695",
+    "pages_pdf_sujet": [
+      2
+    ],
+    "date_epreuve": "2026-04-15",
+    "items_verifies": [
+      "Apport de 1970, cession de jouissance de 1982, demandes des parties",
+      "Contrepartie et qualification, garantie du bailleur",
+      "Censure du raisonnement de Rouen, renvoi à Caen",
+      "Exception concernant les biens renouvelables et limites de la cassation"
+    ]
+  }
 }

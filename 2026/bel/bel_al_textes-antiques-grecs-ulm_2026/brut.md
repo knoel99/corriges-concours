@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Alceste chez Euripide et les guerriers de Plutarque
 
 ### I. Commentaire d’Euripide · La mort vue depuis le palais
@@ -25,6 +27,12 @@ La tournée des autels se déroule ἄκλαυτος ἀστένακτος (v. 3
 **À qui revient la douleur ?** Après les paroles adressées au lit, la servante en montre les effets sur le corps. La « crue » des larmes (πλημμυρίδι, v. 50) mesure l’écart avec les yeux secs de la scène des autels. Un récit de départ devrait mener d’un lieu au suivant. Ici, quitter la couche provoque un retour, puis d’autres, que soulignent πολλά et πάλιν (v. 53-54). L’acte qui rend Alceste exemplaire n’abolit ni l’attachement au lieu ni le désir de s’y retenir. Sa seconde entrée dans la parole de la servante a changé le rythme du spectacle. Le temps semble recommencer à chacun des retours.
 
 Les enfants, puis les serviteurs, deviennent à leur tour sujets du verbe « pleurer ». Alceste répond à chacun. Aux enfants suspendus à son vêtement, elle donne des étreintes à tour de rôle. Aux gens de la maison, elle tend la main. Ἑκάστῳ (v. 60) donne à chaque serviteur une présence distincte au sein de l’unanimité des lamentations. L’échange de salutations compte jusque dans les voix les plus humbles. La servante qui rapporte ce détail a elle-même une place dans cette communauté du deuil. Quand elle conclut par la maison d’Admète, la survie du roi acquiert son véritable coût. Mort, il aurait péri. Ayant échappé à la mort, il possède désormais un chagrin qu’il n’oubliera jamais. La vérité du paradoxe initial n’apparaît pleinement qu’à cet instant. Mourante, Alceste anime chacun des liens qui font vivre le palais. Admète vivant devra en éprouver la perte.
+
+**Repère de lecture**
+
+Le chœur recueille un témoignage à l’entrée du palais. Lorsque l’adresse passe du foyer au lit, c’est la servante qui, devant lui, prête sa voix à Alceste. Les spectateurs perçoivent ainsi une parole intime en même temps que la douleur de celle qui la transmet.
+
+![Figure 1 — Qui voit, qui parle et à qui ?](figures/paroles-alceste.svg)
 
 ### II. Traduction de Plutarque · Le souvenir de Chéronée
 

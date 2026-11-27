@@ -1,0 +1,228 @@
+{
+  "slug": "banque-pt_pt_physique-b---thermodynamique_2020",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique B - Thermodynamique",
+    "annee": 2020
+  },
+  "questions": 22,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2020/ph_b_th_2020_pt.zip",
+    "sujet_sha256": "9c92b9bb4d915eb3233d69d57526bc25ac240c048cf8fe67414ac995dcde1298",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2020/rapport_phys_b_ecrit_2020.pdf",
+    "rapport_sha256": "8c76071ee96aee945eb7567bdffad6ba5cfdc4ea06ba06bc9e9979b141e5d5b3",
+    "notice": "https://www.banquept.fr/documents/2020/Coefficients.pdf#page=1",
+    "notice_sha256": "99f9f38058da96520bff50e823cf189f307e2129dbb0091faded2da6a315c1b1",
+    "membres_sujet": [
+      {
+        "fichier": "ph_b_th_2020_pt.pdf",
+        "sha256": "521191a4cd3839d96630ef00d4ba3d86c88dba48eec68d9cd7b6cd1f67b0a3a7"
+      },
+      {
+        "fichier": "ph_b_th_2020_pt_annexes.pdf",
+        "sha256": "73b9a2998c1c4d2c4305f24983236f961ffbc1d59f89b95ab9e276042445ccbb"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/vapeur.svg",
+      "question": "Q2",
+      "legende": "Cycle de vapeur de base et courbe de saturation"
+    },
+    {
+      "fichier": "figures/rechauffe.svg",
+      "question": "Q9",
+      "legende": "Cycle avec réchauffe intermédiaire"
+    },
+    {
+      "fichier": "figures/echangeur.svg",
+      "question": "Q17",
+      "legende": "Températures à contre-courant, repérées selon le sens du fluide chaud"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "22 questions, figures et tableaux des annexes sur le thème « Production de vapeur et réseau urbain de chaleur »."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Vérifications des états de vapeur, du rendement des deux cycles, de la réchauffe, des unités des puissances et des bilans du lycée aux deux extrémités de l’échangeur. Relecture visuelle et fermeture de la courbe de saturation au point critique sur les deux graphes de vapeur."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21",
+      "Q22"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Q1",
+        "page_pdf": 3,
+        "intitule": "Compression isentropique d’une phase incompressible"
+      },
+      {
+        "question": "Q2",
+        "page_pdf": 3,
+        "intitule": "États du cycle vapeur surchauffé"
+      },
+      {
+        "question": "Q3",
+        "page_pdf": 3,
+        "intitule": "Travail de compression du liquide"
+      },
+      {
+        "question": "Q4",
+        "page_pdf": 3,
+        "intitule": "Chaleur totale reçue dans la chaudière"
+      },
+      {
+        "question": "Q5",
+        "page_pdf": 3,
+        "intitule": "Rendement mécanique du cycle simple"
+      },
+      {
+        "question": "Q6",
+        "page_pdf": 3,
+        "intitule": "Rendement de production électrique"
+      },
+      {
+        "question": "Q7",
+        "page_pdf": 3,
+        "intitule": "Titre de vapeur à l’entrée du condenseur"
+      },
+      {
+        "question": "Q8",
+        "page_pdf": 3,
+        "intitule": "Entropie créée en un cycle"
+      },
+      {
+        "question": "Q9",
+        "page_pdf": 4,
+        "intitule": "États du cycle avec réchauffe"
+      },
+      {
+        "question": "Q10",
+        "page_pdf": 4,
+        "intitule": "Rendement du cycle réchauffé"
+      },
+      {
+        "question": "Q11",
+        "page_pdf": 4,
+        "intitule": "Intérêt de la réchauffe pour la turbine"
+      },
+      {
+        "question": "Q12",
+        "page_pdf": 4,
+        "intitule": "Puissance thermique transportée par la vapeur"
+      },
+      {
+        "question": "Q13",
+        "page_pdf": 5,
+        "intitule": "Chaleur annuelle livrée par habitant"
+      },
+      {
+        "question": "Q14",
+        "page_pdf": 5,
+        "intitule": "Substitution de chaleur fossile par le bois"
+      },
+      {
+        "question": "Q15",
+        "page_pdf": 7,
+        "intitule": "Puissance apportée au lycée"
+      },
+      {
+        "question": "Q16",
+        "page_pdf": 7,
+        "intitule": "Identification des courbes de l’échangeur"
+      },
+      {
+        "question": "Q17",
+        "page_pdf": 7,
+        "intitule": "Choix du contre-courant"
+      },
+      {
+        "question": "Q18",
+        "page_pdf": 8,
+        "intitule": "Bilans locaux à contre-courant"
+      },
+      {
+        "question": "Q19",
+        "page_pdf": 8,
+        "intitule": "Bilans des deux fluides sur toute la longueur"
+      },
+      {
+        "question": "Q20",
+        "page_pdf": 8,
+        "intitule": "Signe de la différence des températures et débits"
+      },
+      {
+        "question": "Q21",
+        "page_pdf": 8,
+        "intitule": "Coefficient d’échange et écart logarithmique"
+      },
+      {
+        "question": "Q22",
+        "page_pdf": 8,
+        "intitule": "Valeur du transfert surfacique"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "annexes": "Le ZIP officiel contient ph_b_th_2020_pt.pdf (12 pages) et ph_b_th_2020_pt_annexes.pdf (4 pages). Le tableau et les diagrammes des documents réponses sont pris en compte."
+  }
+}

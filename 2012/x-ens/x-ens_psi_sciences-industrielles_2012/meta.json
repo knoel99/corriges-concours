@@ -54,6 +54,70 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Rédaction des 40 questions à partir du cahier CX2614, figures, annexes et quatre feuilles-réponses vérifiées. Reconstitution des quatre phases de DR3 par les efforts de traction, contrôle des huit combinaisons de la boîte, des conditions de basculement, des signes et du bilan de puissance. Vérification indépendante des distances et des aires sous DR4, mise en évidence et résolution distincte des temps incompatibles avec la figure 25. Cinq dessins originaux et comparaison avec la proposition enseignante UPSTI."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture du chariot à bateaux sur le cahier de 40 pages, les deux éditions et DR1–DR4. Vérification des fermetures, du bilan de moment en C, du mouflage, du signe de la décélération, des rapports de boîte et du raccord de DR3. Intégration segment par segment du parcours et vérification des deux chronologies de DR4, de leurs freinages et de la réserve sur la cadence. Cinq figures vérifiées."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7",
+      "I.8",
+      "I.9",
+      "I.10",
+      "I.11",
+      "I.12",
+      "I.13",
+      "I.14",
+      "I.15",
+      "I.16",
+      "I.17",
+      "I.18",
+      "I.19",
+      "I.20",
+      "I.21",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "II.8",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7",
+      "III.8",
+      "III.9",
+      "III.10",
+      "III.11"
+    ],
+    "precision": "Les 21 questions I.1–I.21, les huit II.1–II.8 et les onze III.1–III.11 correspondent au cahier CX2614. Les quatre feuilles de réponses aux pages 37–40 et les neuf annexes sont identifiées.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "7e3d8741fb1f7c1ecf900ce40463cf57ac57e4125ca5bd704f1f6f820d0c5532",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Relecture du chariot à bateaux sur le cahier de 40 pages, les deux éditions et DR1–DR4. Vérification des fermetures, du bilan de moment en C, du mouflage, du signe de la décélération, des rapports de boîte et du raccord de DR3. Intégration segment par segment du parcours et vérification des deux chronologies de DR4, de leurs freinages et de la réserve sur la cadence. Cinq figures vérifiées.",
+      "commit_redaction_anterieure": "de84906145086df3bf082209acac24d38a9156da"
+    }
+  }
 }

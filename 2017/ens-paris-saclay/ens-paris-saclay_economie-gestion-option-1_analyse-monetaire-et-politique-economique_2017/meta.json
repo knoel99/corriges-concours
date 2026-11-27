@@ -1,0 +1,61 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_analyse-monetaire-et-politique-economique_2017",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Analyse monétaire et politique économique",
+    "annee": 2017,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "La politique budgétaire face aux déséquilibres économiques actuels.",
+  "gabarit": "dissertation",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2017_SE_D2-1_Analyse_Monetaire.pdf",
+    "sujet_sha256": "956cd788b627098c82d75da49ec65c1b73fff43be7991e179412f522876f3ea8",
+    "index": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=289&field_year_target_id%5B%5D=279",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2017_SE_D2-1_Analyse_Monetaire.pdf",
+        "sha256": "956cd788b627098c82d75da49ec65c1b73fff43be7991e179412f522876f3ea8",
+        "pages": 1
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/relance-et-importations.svg",
+      "question": "Composition",
+      "legende": "Dans un modèle à prix fixes, une dépense intérieure supplémentaire de 10 produit un effet moindre si une plus grande part du revenu supplémentaire se porte sur les importations. Propension marginale à consommer de 0,6, intérêts et exportations constants."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Dissertation située en 2017 : multiplicateur en économie ouverte, politique monétaire à taux bas, dettes publiques, déséquilibres extérieurs et coordination internationale."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Composition"
+    ],
+    "limites": "Composition proposée dans le contexte de la session ; les données des figures illustrent un mécanisme."
+  }
+}

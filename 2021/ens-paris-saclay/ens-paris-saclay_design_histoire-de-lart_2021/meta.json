@@ -1,0 +1,136 @@
+{
+  "slug": "ens-paris-saclay_design_histoire-de-lart_2021",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Histoire de l’art",
+    "annee": 2021,
+    "modalite": "écrit"
+  },
+  "intitule": "De la promesse machiniste à la morale de l’environnement",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "index_annales": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=545",
+    "reperes_documentaires": [
+      "Le Corbusier, Ville contemporaine pour trois millions d’habitants, Salon d’automne, 1922.",
+      "Margarete Schütte-Lihotzky, cuisine de Francfort, 1926.",
+      "Global Tools, réseau italien d’expérimentation pédagogique, 1973–1975."
+    ],
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2021_Sujet_1A_Design_histoire_de_l_art.pdf",
+    "sha256_sujet": "e52cbf43c98570249b2e1f022c90f6d914279f692cfe0ee02505224b4b429533",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2021_rapport_ecrit_DESIGN_histoire_de_l_art.pdf",
+    "sha256_rapport_jury": "a8b9c3800127a8085abc737a7ab08de7927d10686a4a813a221b3492344ebe33",
+    "programme": "Design : de l’objet à l’environnement (1900–1980)",
+    "consigne_imprimee": "Vous analyserez et discuterez cet extrait de Claude Schnaidt en vous appuyant sur votre connaissance du programme et selon un propos argumenté.",
+    "reference_imprimee": "Claude Schnaidt, « La morale de l’environnement », conférence prononcée à l’Union Rationaliste, Paris, 8 février 1972.",
+    "page_pdf_sujet": 2,
+    "index_annales_sha256": "7b13714fcd99db6edf8a398c3439366ff7ddfa149ce7af8ecebb07d70897052d",
+    "notices_verifiees_revision": [
+      {
+        "url": "https://collection.sciencemuseumgroup.org.uk/objects/co25251",
+        "statut": 200,
+        "sha256": "d2f0b1f24af025b8228c2b1f239a73f2db65eb529d81103e44aef43521cd6e73"
+      }
+    ],
+    "pages_rapport_histoire_de_lart": [
+      1,
+      2,
+      3
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/du-projet-au-milieu.svg",
+      "question": "Dissertation",
+      "legende": "Dans la cuisine, les postes se rapprochent. Dans la ville, des fonctions éloignées appellent des déplacements.",
+      "provenance": "Dessin analytique original de la campagne, session astra_maths, repris pour cette composition."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_design",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions après confrontation du sujet au rapport de la session. Mise en relation du dessin analytique conservé, des exemples datés et de l’argumentation historique."
+    },
+    {
+      "phase": "revision",
+      "agent": "x_hist_1986",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Étude de la Mini en coupe de 1959 et des trois échelles de l’objet, du ménage et du territoire. Discussion des choses devenues indispensables et des régions délaissées. Relecture des trois pages du rapport."
+    }
+  ],
+  "gabarit": "dissertation",
+  "duree_heures": 4,
+  "date_revision": "2026-11-26",
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2021_Sujet_1A_Design_histoire_de_l_art.pdf",
+      "sha256": "e52cbf43c98570249b2e1f022c90f6d914279f692cfe0ee02505224b4b429533",
+      "pages": 2,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "6592f64933b3a7cb1a12845faf1cc416f37d9d4a3c5b1aadf6d4bcc1bd9f26d2"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "19860418e38aec0c4f929d44b8ef98a62ff50477c23683a8095cf7ef165540a9"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2021_rapport_ecrit_DESIGN_histoire_de_l_art.pdf",
+      "sha256": "a8b9c3800127a8085abc737a7ab08de7927d10686a4a813a221b3492344ebe33",
+      "pages": 3,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "15a1d6bce32428d7472a61398f6f5af1663d9694110adbdf9e43b5fb35578316"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "986726d563e451c58e3ac8d8cde7822b661c926303207e563b28af15a67e7fae"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "e695971336f33adbac546fa14a5349d420eddb20d5bc8c3b730d48b3c1f32579"
+        }
+      ]
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "consigne": "Vous analyserez et discuterez cet extrait de Claude Schnaidt en vous appuyant sur votre connaissance du programme et selon un propos argumenté.",
+        "page_pdf": 2
+      }
+    ],
+    "annexes_sujet": [],
+    "reproductions_sujet": [],
+    "pages_blanches_sujet": [],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

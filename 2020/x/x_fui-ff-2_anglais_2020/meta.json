@@ -35,7 +35,7 @@
     "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
     "sujet_sha256": "e1ca4c05c7f18c8add4d83561b4518c5c91066328ad0095e4dc2c76c610c895a"
   },
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "revision": {
     "date": "2026-11-24",
     "modele": null,
@@ -112,6 +112,23 @@
       "fournisseur": "codex",
       "session": "astra_langues",
       "perimetre": "Ajout de preuves propres aux trois objections de Yong, distinction entre 48 propositions de candidature et personnes récompensées, articulation aux effets de notoriété et aux exemples historiques."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "session": "fin_langues_x_interens",
+      "agent": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Fascicule officiel, consignes de compréhension et d’essai en fin de sujet (PDF de 5 pages). Les quatre réponses comptent respectivement 61, 66, 64, 69 mots hors références. L’essai compte 436 mots pour une cible de 450 à 10 % près, avec un séparateur tous les 50 mots. Les cinq réponses sont présentes dans les deux éditions. Les réponses distinguent le récit du savant solitaire, la limitation à trois lauréats, trois critiques des prix Nobel et leur valeur publique selon Yong. L’essai examine la place d’une cérémonie dans la reconnaissance des progrès scientifiques.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
   ],
   "provenance": {
@@ -128,5 +145,16 @@
       "effort": "ultra",
       "service_tier": null
     }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "Essai"
+    ],
+    "precision": "Fascicule officiel, consignes de compréhension et d’essai en fin de sujet (PDF de 5 pages). Les quatre réponses comptent respectivement 61, 66, 64, 69 mots hors références. L’essai compte 436 mots pour une cible de 450 à 10 % près, avec un séparateur tous les 50 mots. Les cinq réponses sont présentes dans les deux éditions. Les réponses distinguent le récit du savant solitaire, la limitation à trois lauréats, trois critiques des prix Nobel et leur valeur publique selon Yong. L’essai examine la place d’une cérémonie dans la reconnaissance des progrès scientifiques."
   }
 }

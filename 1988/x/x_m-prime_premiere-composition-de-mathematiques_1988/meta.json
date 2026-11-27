@@ -1,0 +1,255 @@
+{
+  "slug": "x_m-prime_premiere-composition-de-mathematiques_1988",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "M prime",
+    "annee": 1988,
+    "matiere": "Première composition de mathématiques",
+    "modalite": "écrit"
+  },
+  "intitule": "Première composition de mathématiques · option M′",
+  "questions": 26,
+  "duree_heures": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-341d2014318fa1ad217e",
+    "sujet_sha256": "144254e3af14432f30775eb7a9b3d51a1d1b612ebe7eb33c4b2aa725fddd899b",
+    "notice_ups": "m88xm1",
+    "notice_officielle": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000697782",
+    "precisions": "Pages imprimées 114 à 116. La numérotation continue atteint 12.c, sur les matrices hermitiennes. Le sujet P′ développe le même thème avec d’autres subdivisions."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-341d2014318fa1ad217e",
+      "sha256": "144254e3af14432f30775eb7a9b3d51a1d1b612ebe7eb33c4b2aa725fddd899b",
+      "pages": 3,
+      "rendu_page_sha256": [
+        "c8210de948d634a49111534699a571de3b2d3aeb5735dbce0c0aa5c9aeaee2d2",
+        "52d2fd26808323b248451d4323937e6aaf7f9239036a1578ff6d5921899257ad",
+        "4c60fbc657e7344e27b372b48b3338a826cc2e2bafe4b09de311430aa20f7813"
+      ]
+    },
+    "transcription": {
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-5cf3745bf713b03303c6",
+      "sha256": "0c1dfc396c9abf27a9dfbf78ffd52ca1f41f932de7b5b5014fbf0d0452d018fe",
+      "pages": 3,
+      "rendu_page_sha256": [
+        "e65533a5f70579db1b2a5de8b96c7513f0a7c3991e229150086cc6aff3cb63ed",
+        "f911ccd715307955e54a7be8af226c5f11a7561214f275c56e37ad23d34e39a1",
+        "c671e7363203952d4cc1ba53b78d32832fe3a1cd80a8b438ed64f9dda9f0981e"
+      ]
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "x_maths_b_anciennes",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Rédaction des 26 réponses à partir des trois pages imprimées, des indications et des deux figures."
+    },
+    {
+      "phase": "revision",
+      "session": "x_maths_b_anciennes",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Contrôle du contre-exemple de Jordan, des deux familles de rang un, des rangs en 9.e et de la condition unitaire de 12.c présente seulement dans le fac-similé."
+    }
+  ],
+  "figures": [
+    {
+      "question": "I.3.b",
+      "numero": 1,
+      "fichier": "figures/multiplicites.svg",
+      "legende": "Pour le spectre de l’exemple, la différence des rangs vaut la dimension du noyau de X moins celle de son espace propre en 1."
+    },
+    {
+      "question": "II.7",
+      "numero": 2,
+      "fichier": "figures/familles-rang-un.svg",
+      "legende": "À gauche, toutes les colonnes sont des multiples du premier vecteur de base. À droite, les lignes sont toutes proportionnelles à la première ligne de l’identité."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3.a",
+      "I.3.b",
+      "I.4",
+      "II.5.a",
+      "II.5.b",
+      "II.6.a",
+      "II.6.b",
+      "II.6.c",
+      "II.7",
+      "II.8.a",
+      "II.8.b",
+      "II.9.a",
+      "II.9.b",
+      "II.9.c",
+      "II.9.d",
+      "II.9.e",
+      "II.10.a",
+      "II.10.b",
+      "III.11.a",
+      "III.11.b",
+      "III.11.c",
+      "III.12.a",
+      "III.12.b",
+      "III.12.c"
+    ],
+    "repere_par_question": [
+      {
+        "question": "I.1",
+        "page_pdf": 1,
+        "page_imprimee": 114
+      },
+      {
+        "question": "I.2",
+        "page_pdf": 1,
+        "page_imprimee": 114
+      },
+      {
+        "question": "I.3.a",
+        "page_pdf": 1,
+        "page_imprimee": 114
+      },
+      {
+        "question": "I.3.b",
+        "page_pdf": 1,
+        "page_imprimee": 114
+      },
+      {
+        "question": "I.4",
+        "page_pdf": 1,
+        "page_imprimee": 114
+      },
+      {
+        "question": "II.5.a",
+        "page_pdf": 1,
+        "page_imprimee": 114
+      },
+      {
+        "question": "II.5.b",
+        "page_pdf": 1,
+        "page_imprimee": 114
+      },
+      {
+        "question": "II.6.a",
+        "page_pdf": 2,
+        "page_imprimee": 115
+      },
+      {
+        "question": "II.6.b",
+        "page_pdf": 2,
+        "page_imprimee": 115
+      },
+      {
+        "question": "II.6.c",
+        "page_pdf": 2,
+        "page_imprimee": 115
+      },
+      {
+        "question": "II.7",
+        "page_pdf": 2,
+        "page_imprimee": 115
+      },
+      {
+        "question": "II.8.a",
+        "page_pdf": 2,
+        "page_imprimee": 115
+      },
+      {
+        "question": "II.8.b",
+        "page_pdf": 2,
+        "page_imprimee": 115
+      },
+      {
+        "question": "II.9.a",
+        "page_pdf": 2,
+        "page_imprimee": 115
+      },
+      {
+        "question": "II.9.b",
+        "page_pdf": 2,
+        "page_imprimee": 115
+      },
+      {
+        "question": "II.9.c",
+        "page_pdf": 2,
+        "page_imprimee": 115
+      },
+      {
+        "question": "II.9.d",
+        "page_pdf": 2,
+        "page_imprimee": 115
+      },
+      {
+        "question": "II.9.e",
+        "page_pdf": 2,
+        "page_imprimee": 115,
+        "suite_page_imprimee": 116
+      },
+      {
+        "question": "II.10.a",
+        "page_pdf": 3,
+        "page_imprimee": 116
+      },
+      {
+        "question": "II.10.b",
+        "page_pdf": 3,
+        "page_imprimee": 116
+      },
+      {
+        "question": "III.11.a",
+        "page_pdf": 3,
+        "page_imprimee": 116
+      },
+      {
+        "question": "III.11.b",
+        "page_pdf": 3,
+        "page_imprimee": 116
+      },
+      {
+        "question": "III.11.c",
+        "page_pdf": 3,
+        "page_imprimee": 116
+      },
+      {
+        "question": "III.12.a",
+        "page_pdf": 3,
+        "page_imprimee": 116
+      },
+      {
+        "question": "III.12.b",
+        "page_pdf": 3,
+        "page_imprimee": 116
+      },
+      {
+        "question": "III.12.c",
+        "page_pdf": 3,
+        "page_imprimee": 116
+      }
+    ]
+  }
+}

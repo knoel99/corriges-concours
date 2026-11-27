@@ -6,17 +6,27 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+**Couverture vérifiée.** Les 44 questions terminales des pages 1/4 à 4/4 ont été vérifiées dans les deux éditions. Le contrôle porte sur les cinq structures de marché, les surplus et l’indice de Lerner, l’entrée avec coût fixe et engagement préalable, puis les profits avec et sans information sur les coûts. Un équilibre numérique à production nulle vérifie la portée des formules de la troisième partie.
+
 ## Passer d’un jeu de concurrence à l’autre
 
 Dessiner la demande inverse décroissante et le coût marginal horizontal. L’écart entre monopole et concurrence parfaite se lit en unités de la quantité concurrentielle. Entre ces deux repères, le duopole simultané puis le leadership augmentent l’offre de façon mesurable.
 
 ![Figure 1 — Quantités offertes selon la forme de concurrence](figures/quantites-equilibre.svg)
 
+Pour retrouver les écarts de prix à partir du dessin, multipliez une différence de quantités par la pente $-b$ de la demande inverse. Entre Cournot et Stackelberg, $3/4-2/3=1/12$ de la quantité concurrentielle, d’où une variation de prix de $-(a-c)/12$.
+
 **Trois calculs qui contrôlent la première partie.** Pour toute quantité totale, le surplus des consommateurs est le triangle $bQ^2/2$. À Cournot intérieur, $p-c=bq_i$ procure immédiatement le profit $bq_i^2$. Au point de concurrence parfaite, le surplus total doit être le plus grand car la dernière unité échangée y vaut exactement son coût.
 
 **À l’entrée.** Déduire la quantité rentable avant d’en retrancher le coût fixe. Le coût fixe ne se dérive pas. Pour des producteurs à coûts différents, vérifier les trois positivités. Essayer par exemple $a=10$, $c=8$ et $c_3=2$. La formule intérieure donnerait des quantités négatives aux producteurs installés. Le prix de monopole de l’entrant serait 6, inférieur à leur coût de 8.
 
 **Avec deux types.** Le leader choisit avant de connaître le coût, donc une seule quantité est permise en information asymétrique. Pour comparer à l’information complète, autoriser au contraire deux choix. Vérification numérique intérieure avec $a=20$, $c=6$, $c_B=5$, $c_H=7$, $\delta=1/2$ et $b=1$. Le leader choisit 7, les suiveurs bas et haut vendent respectivement 4 et 3, les prix sont 9 et 10. L’information complète ferait choisir 6,5 et 7,5 au leader. La méthode par intervalles du corrigé permet aussi de traiter les paramètres pour lesquels la production d’un type est nulle.
+
+Dans l’exemple de coin, comparez chaque prix au coût du suiveur haut de 9. La quantité optimale de ce type est nulle avec ou sans révélation. Pour vérifier la perte conditionnelle du leader lorsqu’il rencontre le type bas, multipliez sa quantité de 5/3 par sa marge unitaire de −1/3.
 
 ## Résolution dans l’ordre du fascicule
 
@@ -103,5 +113,16 @@ $$Y=\frac{2A-\delta t_B}{2(2-\delta)}$$
 sur $[t_H,t_B]$. Projeter enfin $A/2$ sur $[t_B,+\infty[$. Projeter signifie ramener une valeur à l’extrémité la plus proche lorsqu’elle sort de l’intervalle. Évaluer l’espérance de 3.2 en chacun des trois candidats et prendre le meilleur $x$. Chaque candidat maximise la parabole de son intervalle. Les fonctions se rejoignent et la pente baisse aux raccords, donc l’optimum est unique. Les réactions de 3.1, $p_{/k}=a-x-bq_2^k$, $\pi_{1/k}=x(p_{/k}-c)/b$ et $\pi_2^k=b(q_2^k)^2$ donnent alors toutes les grandeurs. En information complète, appliquer le même calcul en mettant successivement la probabilité du type bas à 1 puis à 0 et comparer les profits avec les probabilités initiales.
 
 À l’intérieur de la branche où seul le type bas produit, $dY/d\delta=(c_B-c)/(2-\delta)^2<0$. Les prix conditionnels augmentent, le suiveur haut continue de gagner zéro et le bas gagne davantage. Le profit conditionnel du leader diminue face au type haut et augmente face au type bas. Au raccord ou à $x=0$, un optimum fixé sur place donne des effets nuls sur les résultats conditionnels tant qu’il y reste. Les égalités en moyenne et les différences de variance précédentes supposent donc bien les régimes intérieurs indiqués. Même avec des solutions de coin, le leader informé peut reproduire son ancien choix et gagne faiblement à connaître le coût réalisé.
+
+**Vérification de 3.2 à 3.4 avec un suiveur inactif.** Prenons $a=10$, $b=1$, $c_B=2$, $c_H=9$, $\delta=1/2$ et $c=\bar c=11/2$. Le seuil d’activité du type haut est $t_H=1$. Le candidat intérieur $X=9/4$ dépasse ce seuil. Sur l’intervalle où seul le type bas produit, le maximum se trouve en $Y=5/3$. Ce point appartient à $[1,8]$ et la concavité assure son optimalité globale. Le leader choisit donc $5/3$ avant de connaître le type.
+
+| Information du leader | Coût réalisé du suiveur | $q_1$ | $q_2$ | Prix | Profit du leader | Profit du suiveur |
+|---|---|---:|---:|---:|---:|---:|
+| Type inconnu | Bas | $5/3$ | $19/6$ | $31/6$ | $-5/9$ | $361/36$ |
+| Type inconnu | Haut | $5/3$ | $0$ | $25/3$ | $85/18$ | $0$ |
+| Type révélé | Bas | $1/2$ | $15/4$ | $23/4$ | $1/8$ | $225/16$ |
+| Type révélé | Haut | $9/4$ | $0$ | $31/4$ | $81/16$ | $0$ |
+
+Le leader peut perdre dans l’état bas tout en maximisant un profit espéré positif de $25/12$. La révélation porte cette espérance à $83/32$. Le suiveur de coût haut conserve un profit nul dans les deux jeux. Cet exemple explique pourquoi il faut tester la participation avant de comparer les profits par les formules de variance.
 
 [Énoncé officiel](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2026/2026_EG1_Analyse_Microeconomique.pdf)

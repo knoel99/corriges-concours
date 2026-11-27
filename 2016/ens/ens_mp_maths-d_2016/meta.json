@@ -11,7 +11,8 @@
   "sources": {
     "sujet": "https://www.ens.psl.eu/IMG/file/concours/2016/sujets/MPI/16_sujet_mpi_mathd.pdf",
     "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2016/rapports/mpi-i/16_mp_rap_emath_d.pdf",
-    "sha256_sujet": "e5bbdfe998c37dc5dbf4900fba993897205c0877eb2c0a8bab7dc047b4854a23"
+    "sha256_sujet": "e5bbdfe998c37dc5dbf4900fba993897205c0877eb2c0a8bab7dc047b4854a23",
+    "sha256_rapport_jury": "5d66a9a6325c5a41d59cd76df3903e5b159617e85d37db38fb53c9b4532b5ebc"
   },
   "figures": [
     {
@@ -31,6 +32,75 @@
       "perimetre": "Rédaction sur le sujet et le rapport originaux des quatre parties. Détails sur les représentations de A5, les coupes par niveaux, les aires de calottes, le tore de taille deux et les comparaisons modulaires des quatre cisaillements. Figure de coupe par niveaux.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "ens_mp_mathematiques_d",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Pointage des 40 repères sur le sujet, les deux éditions et le rapport. p. 2–4, principe du minimax, bipartition et graphe de Cayley du groupe alterné. p. 4–6, matrice de la représentation sur la somme nulle, calcul spectral dans deux sous-espaces invariants, constante de Cheeger et calottes sphériques. p. 7–8, transformée de Fourier sur le tore, cas n=2 pour un graphe simple et majoration de la forme quadratique des cisaillements."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2a",
+      "I.2b",
+      "I.2c",
+      "I.3a",
+      "I.3b",
+      "I.4a",
+      "I.4b",
+      "I.4c",
+      "I.5a",
+      "I.5b",
+      "II.1a",
+      "II.1b",
+      "II.1c",
+      "II.2a",
+      "II.2b",
+      "II.2c",
+      "II.3a",
+      "II.3b",
+      "II.3c",
+      "III.0",
+      "III.1a",
+      "III.1b",
+      "III.2a",
+      "III.2b",
+      "III.3a",
+      "III.3b",
+      "III.3c",
+      "III.4a",
+      "III.4b",
+      "III.4c",
+      "IV.1a",
+      "IV.1b",
+      "IV.1c",
+      "IV.2a",
+      "IV.2b",
+      "IV.2c",
+      "IV.2d",
+      "IV.2e",
+      "IV.2f"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "controle": [
+      "p. 2–4, principe du minimax, bipartition et graphe de Cayley du groupe alterné",
+      "p. 4–6, matrice de la représentation sur la somme nulle, calcul spectral dans deux sous-espaces invariants, constante de Cheeger et calottes sphériques",
+      "p. 7–8, transformée de Fourier sur le tore, cas n=2 pour un graphe simple et majoration de la forme quadratique des cisaillements"
+    ]
+  }
 }

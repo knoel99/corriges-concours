@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La feuille du 17 juin réunit 11 tickets de deux sujets. Le candidat dispose de 1 h 30 de préparation et indique au jury son choix au moment du passage. Il présente un seul sujet pendant 20 minutes, puis répond aux questions durant 10 minutes. Les deux possibilités de chaque ticket sont traitées ici. Chaque relance met à l’épreuve une distinction précise. Pour développer oralement les propositions, reprendre l’exemple, en faire varier une condition, puis expliquer comment cette variation modifie la réponse.
 
 ## Ticket 1
@@ -32,6 +34,8 @@ Cette dépendance rend possible sa correction. Le changement de perspective ne d
 L’apparence joue enfin un rôle constitutif. Un sourire ou un geste d’accueil n’est pas seulement l’enveloppe extérieure d’une intention cachée. Dans certaines relations, c’est par le geste public que l’accueil a lieu. L’opposer systématiquement à une vérité située derrière lui effacerait ce pouvoir de manifestation. Il faut donc demander dans chaque cas si une apparence est l’aspect à expliquer, un indice à recouper ou une mise en scène calculée pour faire croire. La critique des apparences a besoin de leur diversité.
 
 ![Une tour ronde de loin, polygonale de près](figures/apparence.svg)
+
+Distinguer les deux phrases « je vois un contour arrondi d’ici » et « la tour est ronde ». Une autre perspective peut conduire à réviser la seconde tout en confirmant les conditions dans lesquelles la première est exacte.
 
 > [!INDICATION]
 > Une illusion disparaît-elle dès qu’on la comprend ?

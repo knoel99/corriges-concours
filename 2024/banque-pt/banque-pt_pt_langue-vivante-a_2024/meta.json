@@ -1,0 +1,364 @@
+{
+  "slug": "banque-pt_pt_langue-vivante-a_2024",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Langue vivante A",
+    "annee": 2024
+  },
+  "questions": 5,
+  "redaction": "IA (gpt-6.2-astra)",
+  "figures": [
+    {
+      "fichier": "figures/lecture-de.svg",
+      "question": "Allemand",
+      "legende": "Du texte plausible à la décision vérifiable"
+    },
+    {
+      "fichier": "figures/lecture-en.svg",
+      "question": "Anglais",
+      "legende": "Une donnée, plusieurs destinataires"
+    },
+    {
+      "fichier": "figures/lecture-ar.svg",
+      "question": "Arabe",
+      "legende": "Comment un livre trouve ses lecteurs"
+    },
+    {
+      "fichier": "figures/lecture-es.svg",
+      "question": "Espagnol",
+      "legende": "Trois critères pour examiner un emprunt"
+    },
+    {
+      "fichier": "figures/lecture-it.svg",
+      "question": "Italien",
+      "legende": "Principales mesures du plan italien de 2022"
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "agent": "lva_pt_2325",
+      "perimetre": "Rédaction des cinq synthèses par langue et du commentaire des vingt-cinq documents du fascicule 2024, contrôle des figures et des décomptes dans les deux éditions."
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2024/lv_a_2024_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2024/rapport_lv_a_ecrit_2024.pdf",
+    "sujet_sha256": "af5c23cf2173c217f8278feb664624e3bf4e90bb05aae48e90ae60d66fc1ea48",
+    "rapport_sha256": "cbac265df89201a5453805bc03600b45882fa3f74192e24d0cd9d32330c54560",
+    "livret": "https://www.banquept.fr/documents/livret/2024/Livret_PT_2024.pdf#page=13",
+    "livret_sha256": "5762dc1390998cc1f814a84cc9c95cd0ff752605e6d06d734fab8bf1544424e8"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Allemand",
+      "Anglais",
+      "Arabe",
+      "Espagnol",
+      "Italien"
+    ],
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "af5c23cf2173c217f8278feb664624e3bf4e90bb05aae48e90ae60d66fc1ea48",
+      "perimetre": "Rédaction des cinq synthèses par langue et du commentaire des vingt-cinq documents du fascicule 2024, contrôle des figures et des décomptes dans les deux éditions.",
+      "controles": [
+        {
+          "nom": "Allemand",
+          "titre": "Wie gefährlich ist eine überzeugende Antwort?",
+          "consigne": "ChatGPT, eine Gefahr für die Menschheit?",
+          "pages_sujet": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "pages_rapport": [
+            1,
+            2
+          ],
+          "mots_titre_inclus": 464,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                3
+              ],
+              "controle": "Une spécialiste explique au Deutsches Schulportal la production probabiliste du texte et l’absence de garantie sur les informations données."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                4
+              ],
+              "controle": "Der Standard confronte des scénarios hypothétiques formulés par le logiciel à sa capacité d’inventer un phénomène scientifique et ses références."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                5
+              ],
+              "controle": "Les experts cités par Manager Magazin s’inquiètent des usages politiques de la génération massive de textes par des groupes d’intérêt."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                6
+              ],
+              "controle": "Statista compare les temps pour franchir différents seuils d’un million. Les notes distinguent notamment utilisateurs, nuitées, soutiens et téléchargements."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                7
+              ],
+              "controle": "Midjourney figure le chatbot sous la forme d’une tête gigantesque devant un humain minuscule. L’image est elle-même produite par une IA."
+            }
+          ]
+        },
+        {
+          "nom": "Anglais",
+          "titre": "When does a helpful sensor become an unwelcome witness?",
+          "consigne": "To what extent can it be said that wearable technologies are the future of sports and healthcare?",
+          "pages_sujet": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "pages_rapport": [
+            3,
+            4,
+            5
+          ],
+          "mots_titre_inclus": 473,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                9
+              ],
+              "controle": "Stanford Medicine distingue les dispositifs déjà disponibles des applications en développement. Le suivi du glucose illustre une mesure personnelle continue."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                10
+              ],
+              "controle": "CNN décrit les capteurs d’un ballon de rugby qui renseignent arbitres et entraîneurs. Le ballon est un objet instrumenté distinct d’un appareil porté."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                11
+              ],
+              "controle": "Dans The Guardian, Brian Bulcke interroge la limite entre le suivi professionnel du joueur et l’observation de sa vie privée."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                12
+              ],
+              "controle": "L’infographie de Raconteur rassemble des parts de marché par région et des projections établies en 2015. Les volumes d’expédition ne mesurent pas le bénéfice médical."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                13
+              ],
+              "controle": "Le dessin du New Yorker fait annoncer la lecture des pensées par un enfant qui explique un dispositif toujours à l’écoute. Son interlocutrice paraît alarmée."
+            }
+          ]
+        },
+        {
+          "nom": "Arabe",
+          "titre": "من باب دار النشر إلى يد القارئ",
+          "consigne": "على ضوء الوثائق الخمس المقدمة أدناه، بين إلى أي حد يمكن للبلدان العربية أن تساهم في حل أزمة القراءة والترويج للأدب العربي في العالم؟",
+          "pages_sujet": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "pages_rapport": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "mots_titre_inclus": 457,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                15
+              ],
+              "controle": "La traduction de Marilyn Booth a ouvert au roman de Jokha Alharthi un public international après un accueil initial discret dans le monde arabe."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                16
+              ],
+              "controle": "Les témoignages de jeunes auteurs décrivent l’attente, le refus et les conditions financières de l’accès à l’édition."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                17
+              ],
+              "controle": "Al Jazeera examine la possibilité de reconquérir le lecteur par la qualité de l’objet et du contenu proposés."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                18
+              ],
+              "controle": "Le schéma du Défi de la lecture ordonne inscription, lectures, résumés et sélections à plusieurs échelons pendant l’année scolaire."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                19
+              ],
+              "controle": "Le lecteur regarde son téléphone pendant qu’un vendeur lui tend un livre. La concurrence pour son attention se voit dans la direction du regard."
+            }
+          ]
+        },
+        {
+          "nom": "Espagnol",
+          "titre": "¿Quién firma la tradición y quién cobra por ella?",
+          "consigne": "Apoderarse de la cultura de un colectivo: ¿robo u homenaje?",
+          "pages_sujet": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "pages_rapport": [
+            11,
+            12,
+            13
+          ],
+          "mots_titre_inclus": 489,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                21
+              ],
+              "controle": "L’exemple d’Angela Davis distingue une image politique de son réemploi commercial comme signe d’une mode."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                22
+              ],
+              "controle": "Original présente au Mexique des textiles créés par des artisans identifiés de communautés différentes. Le défilé accueille aussi des invités étrangers."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                23
+              ],
+              "controle": "La polémique sur Avatar oppose un récit de résistance à la place réelle des acteurs et des populations dont il s’inspire."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                24
+              ],
+              "controle": "Le schéma d’El Heraldo montre les traces matérielles du travail manuel, la singularité de chaque pièce, la durée de fabrication et ses conséquences sur le prix."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                25
+              ],
+              "controle": "Susana Harp rapproche un modèle Isabel Marant et un gabán de Santa Clara del Cobre en reliant leurs motifs. Le tweet formule une accusation."
+            }
+          ]
+        },
+        {
+          "nom": "Italien",
+          "titre": "Quando il prezzo del gas entra nel carrello della spesa",
+          "consigne": "In che misura l’Italia subisce la crisi energetica di oggi?",
+          "pages_sujet": [
+            26,
+            27,
+            28,
+            29,
+            30
+          ],
+          "pages_rapport": [
+            14,
+            15
+          ],
+          "mots_titre_inclus": 468,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                27
+              ],
+              "controle": "Paolo Maddalena défend la nationalisation à partir d’une critique des privatisations et de la spéculation."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                28
+              ],
+              "controle": "Il Giorno suit la transmission des hausses d’énergie et d’intrants de l’exploitation agricole aux rayons du supermarché."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                29
+              ],
+              "controle": "Le rapport CDP relie les importations de gaz et sa place dans la production d’électricité à la vulnérabilité particulière de l’Italie."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                30
+              ],
+              "controle": "Le diagramme de Confindustria détaille un plan de 54,4 milliards d’euros en 2022, dont 18,4 milliards de crédits d’impôt."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                30
+              ],
+              "controle": "La caricature d’Altan transforme la difficulté de se chauffer en occasion de spéculer sur les écharpes et les couettes."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "slug": "x-ens_psi_physique-psi_2018",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Physique PSI",
+    "annee": 2018
+  },
+  "intitule": "Problèmes liés à la distribution filaire de l’énergie électrique",
+  "questions": 50,
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "physique_psi_interens",
+      "session": "physique_psi_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": false,
+      "perimetre": "Rapport X–InterENS PSI 2018 sur les chronogrammes du redresseur, les échelles de commutation et l’erreur de signe de la puissance mécanique en question 44."
+    },
+    {
+      "phase": "redaction",
+      "agent": "physique_psi_interens",
+      "session": "physique_psi_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Résolution des 50 questions énumérées et réalisation de 4 figures."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.doc-solus.fr/prepa/sci/adc/pdf/enonces.pdf/2018/PSI_PHYSIQUE_X_1_2018.enonce.pdf",
+    "sujet_sha256": "2a3e3ca3f4d9fc67b02af6c0281fb3119eee686707aec163a5f7b27c071151cd",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2018_Rapports_Ecrits_PSI_Physique_0.pdf",
+    "rapport_sha256": "69c964ad3facd4c4bf01aa3150b9dbb0fa71db3e44d6a90808c2cc33654dd63f",
+    "garde": "Banque commune X–InterENS · écrit commun de physique PSI · 4 heures",
+    "provenance_sujet": "PDF ouvert, Sujet reproduit par Doc-Solus"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "13–15",
+      "fichier": "figures/fresnel.svg",
+      "legende": "Diagramme de Fresnel à pertes nulles. Les segments de tension vérifient la loi des mailles."
+    },
+    {
+      "numero": 2,
+      "question": "22 et 24",
+      "fichier": "figures/chronos.svg",
+      "legende": "Sur une période, les phases de roue libre et de transfert fixent la tension de l’interrupteur et celle de l’inductance."
+    },
+    {
+      "numero": 3,
+      "question": "23",
+      "fichier": "figures/caracteristique.svg",
+      "legende": "Lieux des états bloqués et passants, avec sens du courant choisi dans le sujet."
+    },
+    {
+      "numero": 4,
+      "question": "28–29",
+      "fichier": "figures/hacheur.svg",
+      "legende": "Connexions équivalentes des deux phases et tensions aux bornes des inductances. Les valeurs sont normalisées à la tension d’entrée."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50"
+    ]
+  }
+}

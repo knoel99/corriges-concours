@@ -14,6 +14,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Texte étudié** — Jean Giono, *Un roi sans divertissement*, visite chez la brodeuse.
 
 La chose la plus facile à obtenir, chez la brodeuse d’*Un roi sans divertissement*, est encore ce qui paraissait exiger toute une négociation. Une pelisse sera faite pour un enfant. Reste à comprendre ce que Langlois est venu faire chez la mère, ce qu’il a vu chez elle et ce que Saucisse, qui raconte la visite, a deviné de son ami. La « femme grise » est la veuve de M. V. Le portrait chez elle peut se lire comme celui de l’homme que Langlois a exécuté. Cette connaissance donne un poids singulier à chaque détail de la scène, jusqu’au tissu que les visiteuses tournent entre leurs mains. Elle laisse toutefois entière une difficulté de lecture. Comment raconter la reconnaissance possible d’un homme par un autre quand la personne qui parle a soin d’expliquer tout ce qui les dérobe à ses yeux ? Giono fait d’une commande bien réelle le moyen de deux enquêtes distinctes. À mesure que le lecteur s’approche du tableau à la suite de Saucisse, il découvre ce que peut lui faire éprouver une image qui ne se laisse pas décrire jusqu’au bout.
@@ -35,6 +37,10 @@ Le dispositif promet une révélation progressive. Son premier résultat est pou
 Giono fait travailler cette place. L’immobilité de Langlois est d’abord le seul fait assuré. Saucisse parvient ensuite à reconnaître sa tempe, une surface sombre contre l’ombre. La peau en est lisse. Ce détail minuscule lui suffit pour conclure à la contemplation. La proposition courte et affirmative qui tire cette conséquence a quelque chose de saisissant. Elle expose une interprétation intime comme si le relief d’une tempe la rendait immédiatement lisible. Or il manque encore à cette certitude son objet. La narration marque un délai, s’occupe de la pelisse, puis place enfin sur une ligne bien à lui le fait que Langlois regarde un portrait. L’assurance avec laquelle on croit connaître un visage familier et l’ignorance de ce qui l’attire peuvent tenir dans le même regard.
 
 Que donne à voir ce portrait ? Son cadre fournit une première réponse étonnante. Les « berges d’or » suggèrent une matière arrêtée sur un bord et font pressentir une étendue dans laquelle le regard pourrait entrer. Avant que le personnage représenté ait un sexe certain, le rectangle lui-même paraît debout. La posture sort du cadre et gagne la figure encore indéterminée. Un reflet de fenêtre sur une table, des formes qui pourraient être des mains, une masse de couleur sombre permettent ensuite un raisonnement sur l’ensemble. Giono introduit ainsi une description de tableau dont l’objet varie avec le degré de confiance de celle qui la mène. Une reconnaissance n’en garantit pas une autre. Saucisse est certaine d’une présence humaine, beaucoup moins des traits qui permettraient de dire de quel homme il s’agit. Le lecteur peut nommer M. V. grâce à l’histoire qu’il connaît. Il serait fort en peine de dessiner ce visage.
+
+Le cadre étroit peut suggérer une figure debout avant qu’aucun trait du visage soit reconnu. Le lecteur prend donc connaissance d’une attente de reconnaissance en même temps que du portrait. Giono utilise cette différence pour faire durer le regard sans lever entièrement le doute de la visite.
+
+![Trois degrés de connaissance du portrait](figures/portrait-degres.svg)
 
 * * *
 

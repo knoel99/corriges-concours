@@ -1,0 +1,109 @@
+{
+  "slug": "ens-de-lyon_second-concours_informatique_2009",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Informatique",
+    "annee": 2009,
+    "duree_heures": 3
+  },
+  "questions": 18,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours-de-lens-lyon/session-2009/sujet-ecrit-2009-second-concours_informatique.pdf",
+    "sujet_sha256": "9c0c8ea3525537ec15cc09f6b70f7180d3f1b8ac400a900674a302ef87031dfe",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/rapports-des-jurys-du-second-concours-de-lens-lyon/session-2009/rapport-2009-second-concours_ecrit_informatique_l.pdf",
+    "rapport_sha256": "ba2d85e19abc71176d06831de247a67874f8c53b27c62f5d2eb7a9c76443aa82",
+    "index_banque": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/"
+  },
+  "figures": [
+    {
+      "fichier": "figures/temoins-du-minimum.svg",
+      "question": "2.1",
+      "legende": "Figure 1 — Quatre témoins imposent quatre relais. Le sommet 17 nécessite un cinquième relais, au choix parmi 6 et 7."
+    },
+    {
+      "fichier": "figures/temoin-du-milieu.svg",
+      "question": "3.2",
+      "legende": "Figure 2 — La cellule du milieu d’un segment fournit un voisin ancien à la fois proche du sommet examiné et de son voisin."
+    },
+    {
+      "fichier": "figures/decalage-en-branche.svg",
+      "question": "4.5",
+      "legende": "Figure 3 — Les phases de décalage et de remplacement sur une branche expliquent le changement de couleur de G au deuxième passage."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "info_suite",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Solution des 18 questions sur la distance, les relais, les ensembles dominants et la coloration. Lecture des figures du sujet, contrôle des témoins, des cinq tours de coloration et de la convention de racine. Trois schémas originaux."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7",
+      "2.8",
+      "3.1",
+      "3.2",
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.6"
+    ],
+    "reperes_par_page_du_pdf": {
+      "3": [
+        "1.1",
+        "1.2",
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5"
+      ],
+      "4": [
+        "2.6",
+        "2.7",
+        "2.8",
+        "3.1",
+        "3.2"
+      ],
+      "5": [
+        "4.1",
+        "4.2",
+        "4.3"
+      ],
+      "7": [
+        "4.4",
+        "4.5",
+        "4.6"
+      ]
+    },
+    "precision": "Les 18 numéros du fac-similé institutionnel ont été rapprochés dans leur ordre des solutions de la rédaction signée. Chaque édition présente une solution pour chaque numéro. Les formulations vérifiées sont celles de la contribution archivée.",
+    "origine_attestation": {
+      "commit_du_journal": "3fd8b6949145f05b3205a19c50d26f9b04b857f3",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Solution des 18 questions sur la distance, les relais, les ensembles dominants et la coloration. Lecture des figures du sujet, contrôle des témoins, des cinq tours de coloration et de la convention de racine. Trois schémas originaux.",
+      "sha256_sujet_controle": "9c0c8ea3525537ec15cc09f6b70f7180d3f1b8ac400a900674a302ef87031dfe",
+      "sha256_rapport_controle": "ba2d85e19abc71176d06831de247a67874f8c53b27c62f5d2eb7a9c76443aa82"
+    }
+  }
+}

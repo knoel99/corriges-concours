@@ -1,0 +1,51 @@
+{
+  "slug": "ens-rennes_d1_droit-public_2008",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Droit public",
+    "annee": 2008,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "intitule": "Le Président de la République et le Parlement en France depuis 1875",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet08d1options_1421752181536-pdf#page=3",
+    "sujet_sha256": "d88721a3e2c6a4f1919fdf6d535c20de126517ee747d0d3bfbee0eb77ed1329b",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "references_complementaires": {
+      "Lois constitutionnelles de 1875": "https://www.elysee.fr/la-presidence/les-lois-constitutionnelles-de-1875",
+      "Constitution du 4 octobre 1958 au printemps 2008": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000571356/2008-04-01/"
+    }
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "section": "II.B",
+      "fichier": "figures/mecanismes-de-dissolution.svg",
+      "legende": "Une même issue électorale relève de trois mécanismes constitutionnels successifs."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions sur l’élection présidentielle, la responsabilité ministérielle, la dissolution et les effets de majorité, des lois de 1875 au printemps 2008.",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur l’élection présidentielle, la responsabilité ministérielle, la dissolution et les effets de majorité, des lois de 1875 au printemps 2008."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}

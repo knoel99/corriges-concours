@@ -10,6 +10,8 @@
 
 **Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Problématique** : comment un transfert qui rapproche les ressources de parents et d’enfants à un moment de leur vie peut-il, sur une génération, creuser durablement les écarts entre bénéficiaires et non-bénéficiaires d’une même cohorte ?
 
 En 1992, lorsque la boulangère Marcelle Pilon passe la main, sa famille va jusqu’à compter les pains que son fils devra fournir à deux de ses sœurs en compensation de l’entreprise reçue. Pourtant, un fonds de pâtisserie acquis des années auparavant pour le garçon ne figure pas dans les comptes du partage. Un même arrangement assure la continuité d’un commerce et prépare des avenirs différents aux membres d’une fratrie. L’enquête de Céline Bessière et Sibylle Gollac invite à déplacer le regard de l’instant de la succession vers ce qui s’est constitué bien avant et pourra fructifier après elle.
@@ -53,3 +55,9 @@ Enfin, le montant dont l’héritier dispose effectivement dépend de la manièr
 Les transferts entre générations jouent un rôle accélérateur lorsqu’un apport inégal donne une avance durable dans l’accès au logement, à un outil de travail ou à une qualification, puis permet d’accumuler sur cette avance. La transmission peut aussi sécuriser une phase du cycle de vie, maintenir une position, ou se disperser au partage. Un même versement peut rapprocher un jeune ménage de ses parents en revenu courant tout en creusant l’écart patrimonial avec ses pairs. Pour juger de son effet, il faut donc suivre les bénéficiaires dans le temps, identifier la ressource transmise et observer les règles qui déterminent qui peut la faire fructifier. C’est à cette condition que la persistance d’une hiérarchie peut être distinguée de son aggravation.
 
 [Sujet officiel](https://www.ens.psl.eu/sites/default/files/2024_blses_sujet_composition_sciences_sociales.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_ecrit_sciences_economiques_et_sociales.pdf)
+
+## Vérification sur le sujet
+
+Les sept documents et le rapport du jury ont été confrontés à la dissertation et au parcours guidé. Le tableau de l’entrée dans la propriété distingue deux modèles de durée. Les deux tableaux du document 7 distinguent le classement par âge du classement par milieu social.
+
+Le document 2 permet de vérifier de quelle inégalité il est question. Parmi les héritages de montant connu reçus par les professions libérales, 27,3 % atteignent 100 000 euros, contre 6,7 % chez les employés. L’écart vaut 20,6 points et le rapport environ 4,1. Ces proportions portent sur les héritages déclarés. Pour mesurer l’inégalité devant la réception elle-même, il faudrait aussi compter les personnes qui n’ont rien reçu. Le document 3 apporte une autre comparaison, entre patrimoines des parents et des enfants. C’est elle qui permet d’interroger la persistance entre générations.

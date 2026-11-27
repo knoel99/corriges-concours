@@ -21,7 +21,7 @@
     "rapport_jury": "https://www.concours-bce.com/sites/default/files/2026-09/252%20-%20Diss%20culture%20g%C3%A9n%C3%A9rale%20EDHEC%20BS%20.ESSEC%20BS%202026.pdf",
     "rapport_sha256": "2f1dd9c5569f62aa8943aa55b82d4e5c9d6f7f813ba07738576bf65c5a045002"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -65,6 +65,45 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Correction de la portée du jugement réfléchissant et du rôle des raisons et du contradictoire. Révision des cas Zola, Kant et Arendt dans les deux éditions. Ajout d’un schéma pédagogique."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification du sujet 252 et du rapport. Cas du juré distinguant l’indépendance de la décision, la révision des motifs et la responsabilité du jugement dans les deux éditions."
+    },
+    {
+      "phase": "revision",
+      "tour": 4,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux",
+      "perimetre": "Garde 252 et rapport EDHEC–ESSEC vérifiés. Examen du droit de décider, de l’indifférence et de la liberté éclairée, puis de la responsabilité en situation incertaine. Le dossier secret de 1894 éprouve la distinction entre vote indépendant et connaissance contradictoire des pièces. Copie rédigée sans intertitres internes."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "sujets_entierement_traites": [
+      "Juger en toute liberté"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "origine_attestation": {
+      "phase": "revision",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "d2d6cd9e98606d3d4817fd54f7fce44815b30d4d9ca289d37286dd2d14609eab",
+      "perimetre": "Garde 252 et rapport EDHEC–ESSEC vérifiés. Examen du droit de décider, de l’indifférence et de la liberté éclairée, puis de la responsabilité en situation incertaine. Le dossier secret de 1894 éprouve la distinction entre vote indépendant et connaissance contradictoire des pièces. Copie rédigée sans intertitres internes."
+    }
+  }
 }

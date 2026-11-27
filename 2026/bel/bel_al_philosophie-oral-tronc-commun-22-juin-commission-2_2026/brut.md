@@ -6,7 +6,11 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-La seconde commission du 22 juin a distribué douze billets de deux sujets. Les réponses suivent l’ordre de la feuille. Le rapport, page 7, permet de reconnaître par ses caractères gras le sujet choisi, qui est signalé à chaque billet. La rédaction et les relances du guide sont des propositions d’entraînement.
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Le [feuillet du 22 juin, commission 2](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philo_tc_22_juinal.pdf) contient 12 billets de deux sujets. Les développements suivent leur ordre. Le jury a mis en gras le premier sujet sur 4 billets et le second sur 8. Le choix est indiqué à chaque billet. Le [rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf#page=7) permet de vérifier les choix. Au billet 7, le premier intitulé suit la formulation du feuillet.
+
+Lisez à haute voix les deux sujets du billet, choisissez pendant les 90 minutes de préparation et annoncez votre choix au début des 20 minutes d’exposé. L’entretien dure ensuite 10 minutes. Le coefficient est de 3. Seul un dictionnaire de langue française est autorisé, à l’exclusion des dictionnaires de noms propres.
 
 ## 1. Y a-t-il de la nouveauté en philosophie ?
 
@@ -155,5 +159,3 @@ En lisant une fable narrée par un animal, je peux suspendre les contraintes ord
 Devant deux chemins également praticables, je peux éprouver une hésitation réelle avant de prendre celui de gauche. En quoi cette expérience témoigne-t-elle de ma liberté ? Le sentiment d’avoir pu faire autrement paraît immédiat. Il ne suffit pas à établir que ma décision serait absolument sans causes. Des raisons jusque-là ignorées pourraient avoir rendu l’un des chemins plus attirant à mes yeux. Inversement, savoir que j’ai des raisons de préférer un chemin ne démontre pas que j’ai été forcé.
 
 L’épreuve devient plus précise lorsqu’on compare l’hésitation ordinaire à la découverte d’une barrière. Une option que je croyais ouverte ne l’était pas. Je découvre aussi une liberté en contestant l’interdiction et en obtenant une voie de recours effective. La liberté se connaît donc par l’expérience vécue de se déterminer et par des épreuves pratiques où l’on vérifie ce que l’on peut effectivement faire ou modifier. Aucune sensation isolée n’épuise sa signification. La réflexion sur les raisons et l’examen des conditions sociales donnent à cette expérience une portée qu’une simple impression de spontanéité ne garantit pas.
-
-[Feuille officielle du 22c2 juin](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philo_tc_22_juinal.pdf) · [Rapport du jury, modalités et annexe des sujets](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf)

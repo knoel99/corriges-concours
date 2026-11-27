@@ -9,7 +9,7 @@
   "questions": 22,
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
-    "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-1_mp_2001.pdf",
+    "sujet": "https://fichiers.wikiprepa.fr/data/x_maths-1_mp_2001.pdf",
     "rapport_jury": "",
     "sha256_sujet": "d568164753402d33a0b4a4a237d2b4d21f91fda227a4986fa9613aae0a07e78d"
   },
@@ -31,6 +31,75 @@
       "perimetre": "Rédaction complète sur les quatre pages de l’original. Vérification de la récurrence et du wronskien complexe, de la couverture par les cercles, du jacobien orienté et des changements de variable de la moyenne angulaire. Graphique de trois orbites.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Récurrence complexe, wronskien, sens de rotation du disque, paramètre explicite des orbites, domination et symétrie des intégrales.",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "agent": "rennes_oraux_economie",
+      "session": "rennes_oraux_economie"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5.a",
+      "5.b",
+      "6.a",
+      "6.b",
+      "6.c",
+      "6.d",
+      "7.a",
+      "7.b",
+      "8.a",
+      "8.b",
+      "9",
+      "10.a",
+      "10.b",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15"
+    ],
+    "pages_du_sujet": 4,
+    "pages_pdf_des_questions": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5.a": 2,
+      "5.b": 2,
+      "6.a": 2,
+      "6.b": 2,
+      "6.c": 2,
+      "6.d": 2,
+      "7.a": 2,
+      "7.b": 2,
+      "8.a": 2,
+      "8.b": 2,
+      "9": 3,
+      "10.a": 3,
+      "10.b": 3,
+      "11": 3,
+      "12": 3,
+      "13": 3,
+      "14": 4,
+      "15": 4
+    },
+    "precision": "Sous-questions relevées sur le fac-similé. Le numéro de page désigne le début de chaque demande dans le PDF original."
+  }
 }

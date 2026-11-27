@@ -1,0 +1,103 @@
+{
+  "slug": "x_pc_physique-a_2013",
+  "epreuve": {
+    "concours": "X",
+    "ecoles_historiques": "École polytechnique et ESPCI",
+    "filiere": "PC",
+    "matiere": "Physique A",
+    "annee": 2013
+  },
+  "questions": 32,
+  "intitule": "Le rayonnement solaire pour la navigation spatiale",
+  "redaction": "Les 32 questions des trois parties sont résolues dans les deux éditions. Bilan d’impulsion, coniques attractives et répulsives, optimisation et domaine spatial du statite sont établis et illustrés.",
+  "sources": {
+    "garde": "XE · École polytechnique et ESPCI · 4 heures",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/04/13_pc_phy_a_xe.pdf",
+    "sujet_sha256": "430bba2c6e2a98410aeabc532b9faeb9028960eb87b3fdd1bb9cfd028da3b80f",
+    "rapport_jury": "https://www.doc-solus.fr/prepa/sci/adc/pdf/rapports.pdf/2013/PC_PHYSIQUE_X_1_2013.rapport.pdf",
+    "rapport_sha256": "eb273d6848766bb179846bd353606f8c8dac4b076e39b086d45ea0e3b28124d2"
+  },
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "physique_a_pc_x",
+      "session": "physique_a_pc_x",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Rapport de Bernard Andrieu, Emmanuel Levêque et Stéphane Nonnenmacher. Lecture des remarques sur la couche de peau, les deux cosinus, les coniques après déploiement et la sphère de rayon d."
+    },
+    {
+      "phase": "redaction",
+      "agent": "physique_a_pc_x",
+      "session": "physique_a_pc_x",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Les 32 questions des trois parties sont résolues dans les deux éditions. Bilan d’impulsion, coniques attractives et répulsives, optimisation et domaine spatial du statite sont établis et illustrés."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "II.6",
+      "fichier": "figures/orbites.svg",
+      "legende": "Depuis le même point de déploiement, la vitesse est tangentielle vers le haut. Le Soleil est le point central de la force. Les tracés sont les solutions de Binet."
+    },
+    {
+      "numero": 2,
+      "question": "II.9",
+      "fichier": "figures/spirale.svg",
+      "legende": "Une faible inclinaison prograde de la normale donne une spirale sortante serrée. Les distances sont rapportées au rayon initial."
+    },
+    {
+      "numero": 3,
+      "question": "III.4 et III.7",
+      "fichier": "figures/zones.svg",
+      "legende": "Les zones teintées admettent une poussée dirigée vers l’aval. Le cône hachuré, à largeur exagérée, retranche les points privés de lumière."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7",
+      "I.8",
+      "I.9",
+      "I.10",
+      "I.11",
+      "I.12",
+      "I.13",
+      "I.14",
+      "I.15",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "II.8",
+      "II.9",
+      "II.10",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7"
+    ]
+  }
+}

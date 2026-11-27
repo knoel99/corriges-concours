@@ -1,0 +1,65 @@
+{
+  "slug": "x_mp-pc_arabe_2006",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Arabe",
+    "annee": 2006,
+    "modalite": "écrit"
+  },
+  "intitule": "L’armoire magique et les règles collectives face aux risques technologiques",
+  "questions": 3,
+  "redaction": "Traduction intégrale en français du cahier de version, analyse et réflexion personnelle en arabe du cahier d’expression. L’armoire magique et les règles collectives face aux risques technologiques.",
+  "sources": {
+    "sujet": "https://web.archive.org/web/20090320042100id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/06_Version.pdf#page=3",
+    "sha256_sujet": "3c0241e84f54feccff75ccc446adc3977fde1b0af7c98b6bd9a5f0aa93a6ae7d",
+    "index": "https://web.archive.org/web/20090501013104/http://www.polytechnique.fr:80/concours/sujets/sujet06/sujet06.htm",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://web.archive.org/web/20090320042100id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/06_Version.pdf#page=3",
+        "sha256": "3c0241e84f54feccff75ccc446adc3977fde1b0af7c98b6bd9a5f0aa93a6ae7d"
+      },
+      {
+        "role": "sujet complémentaire",
+        "url": "https://web.archive.org/web/20090320034643id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/06_ExprEcrit.pdf",
+        "sha256": "ad80c0da654053218712dac3cf40e8b5a0dc914d0adc391ff04bf02b5cdad42d"
+      },
+      {
+        "role": "rapport",
+        "url": "https://web.archive.org/web/20070312141925id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/06_Version_ExprEcrit_AR.pdf",
+        "sha256": "958c8fdeca4f8c09a19fd3007e18af19321535514842bbd4ed10d87ec54a9715"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Version",
+      "fichier": "figures/lecture-de-la-version.svg",
+      "legende": "À chaque ouverture de la porte, l’enfant formule une nouvelle hypothèse."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "arabe_mp_pc_2011_2014",
+      "session": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Traduction intégrale en français du cahier de version, analyse et réflexion personnelle en arabe du cahier d’expression. L’armoire magique et les règles collectives face aux risques technologiques."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version",
+      "Expression 1",
+      "Expression 2"
+    ]
+  }
+}

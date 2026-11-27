@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La feuille associe douze tirages à deux sujets. Avant la préparation de 1 h 30, le candidat choisit entre le sujet sur la France et celui sur le monde. Le rapport prévoit 20 minutes d’exposé et 10 minutes d’entretien. Cette proposition traite les deux possibilités de chaque tirage.
 
 ## Tirage 1
@@ -135,6 +137,10 @@ Après 1945, les destructions, les difficultés d’approvisionnement et le manq
 Les pays participants coordonnent leurs besoins au sein de l’Organisation européenne de coopération économique créée en 1948. Les livraisons et financements permettent des achats que les devises disponibles limitaient. Dans le mécanisme de contre-valeur, la vente intérieure de biens importés peut alimenter des fonds en monnaie nationale utilisables pour la reconstruction selon des règles convenues. Les gouvernements conservent une marge dans la destination des ressources. Les missions de productivité font aussi circuler des techniques d’organisation et un modèle de consommation dont l’appropriation varie.
 
 Le plan ne suffit pas à expliquer toute la croissance européenne, déjà engagée avant 1948 et liée également aux politiques nationales et aux capacités industrielles existantes. Il est néanmoins un accélérateur financier et un apprentissage institutionnel de la coopération occidentale. Il faut enfin le distinguer de l’OTAN, alliance de défense de 1949, et de la CECA, initiative d’intégration sectorielle lancée ultérieurement.
+
+Prenons un importateur qui achète en francs une marchandise financée par l’aide. Ses francs peuvent alimenter le fonds de contre-valeur. La même opération a permis l’entrée d’un bien malgré la pénurie de dollars et dégagé une ressource intérieure. Compter deux dons américains conduirait à doubler l’aide.
+
+![Figure 1 — Trois décisions distinctes dans l’aide américaine à l’Europe](figures/marshall.svg)
 
 ## Tirage 7
 

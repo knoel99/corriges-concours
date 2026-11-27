@@ -17,7 +17,17 @@
   "sources": {
     "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/17-bel-epreuves-de-specailite-lyon_1506586608686_0.pdf#page=8",
     "sujet_sha256": "1a30a10cec55934dcd4ad525695c8636e3a256cd27d5ad2162bade0120aca88f",
-    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/ALLEMAND_2017.pdf#page=8"
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/ALLEMAND_2017.pdf#page=8",
+    "sha256_rapport_jury": "b30d9743eb0c27cd7a37b72835aa24d8cb908b8b218bb18663eb0d32a2ff762c",
+    "pages_rapport_verifiees": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "ouvrage": "Catherine Lépront, Des gens du monde (2003)."
   },
   "figures": [
     {
@@ -26,7 +36,7 @@
       "legende": "Voir une maison, perdre un quartier de vue"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -37,6 +47,23 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Traduction allemande intégrale de l’extrait de Des gens du monde de Catherine Lépront, avec guide pour l’ouverture sans sujet répété, la continuité urbaine et le dernier regard touristique, schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture phrase par phrase sur le fascicule de l’ENS de Lyon et rapprochement avec le rapport du jury. Temps verbaux du récit, relative locative, nostalgie des chantiers, paradoxes topographiques et comparaison finale.",
+      "agent": "lyon_ses_sources"
     }
   ],
   "droits_sources": {
@@ -44,5 +71,21 @@
       "L’original du thème allemand de quatre heures, sans dictionnaire, donne un passage de Des gens du monde de Catherine Lépront (2003). Le narrateur situe la maison des Diez au nord de La Rochelle."
     ],
     "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Proposition de thème"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Proposition de thème",
+        "page_pdf": 8,
+        "page_pdf_fin": 8,
+        "perimetre": "Deux paragraphes complets, de « C’était une maison » à « la rocade qui, désormais, le surplombait ». Temps de l’ouverture, discours des retraités, géographie urbaine, légende finale."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
   }
 }

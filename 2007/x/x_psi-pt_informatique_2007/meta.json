@@ -42,5 +42,44 @@
       "modifications": true,
       "perimetre": "Rédaction des neuf questions sur la découpe de tissu avec et sans répétition. Vérification des deux exemples chiffrés, de 1 716 instances par énumération exhaustive et des listes de découpes optimales. Trois illustrations originales."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "pages_des_questions": {
+      "1": 1,
+      "2": 1,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 2,
+      "7": 2,
+      "8": 2,
+      "9": 2
+    },
+    "precision": "Les 9 rubriques de chaque édition concordent avec les questions du fac-similé. Les deux séries de réponses ont été retrouvées au commit du journal indiqué.",
+    "origine_attestation": {
+      "commit_du_journal": "96695115ceecab40f54711aef98bb063701dca73",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction des neuf questions sur la découpe de tissu avec et sans répétition. Vérification des deux exemples chiffrés, de 1 716 instances par énumération exhaustive et des listes de découpes optimales. Trois illustrations originales.",
+      "sha256_sujet_controle": "39a25cac97ba820e09b2b93a2572ac9fa7d0e6bac0fbcf0d8f28ba07a093768e"
+    },
+    "controle_fonctions": {
+      "fonctions": [
+        "coutRuban"
+      ],
+      "cas_par_edition": 20
+    }
+  }
 }

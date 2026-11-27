@@ -27,7 +27,10 @@
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/FUI-FF%202%202025%20Fran%C3%A7ais.pdf",
     "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
-    "sujet_sha256": "e5dcd2bcd60f38864b5cfadaad81e881de5444d58bbeb372e39c1298a8c1e408"
+    "sujet_sha256": "e5dcd2bcd60f38864b5cfadaad81e881de5444d58bbeb372e39c1298a8c1e408",
+    "pages_sujet": 2,
+    "reperage": "P. 1, garde. P. 2, « Éloge de la lecture », extrait de la conférence de Jean-Michel Maulpoix à l’Alliance française d’Aoste (6 novembre 2020), sous-titre sur la compagnie des livres, questions A1–A3 et B.",
+    "consignes_verifiees": "Session 2, épreuve n° 2, deux heures. Trois questions de compréhension du texte de Maulpoix et un bref essai personnel de forme libre, explicitement sans limitation du nombre de mots. A2 demande au candidat de choisir et justifier une phrase. Aucune question alternative ni répartition chiffrée des points. La garde interdit les dictionnaires et traducteurs électroniques."
   },
   "date_revision": "2026-11-24",
   "revision": {
@@ -83,6 +86,36 @@
       "modifications": true,
       "perimetre": "Relecture des quatre réponses contre la conférence de Maulpoix, articulation du portrait et des écrits, attribution de la formule de Hugo, rôle du désir, vérification de l’essai et de ses deux schémas.",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "oraux_lyon_et_anciens_corriges",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle intégral du feuillet, des contraintes et des réponses A et B. Précisions dans la compréhension et les exemples, mise en regard des deux schémas dans chaque édition et exercice guidé. P. 1, garde. P. 2, « Éloge de la lecture », extrait de la conférence de Jean-Michel Maulpoix à l’Alliance française d’Aoste (6 novembre 2020), sous-titre sur la compagnie des livres, questions A1–A3 et B."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A1 · La thèse de la lecture comme compagnie dans le contexte des transformations médiatiques.",
+      "A2 · Une phrase précisément citée et sa justification à partir des deux moments de l’extrait.",
+      "A3 · La métaphore de la fidélité du livre et la condition du désir.",
+      "B · Avis personnel construit sur la lecture dans la société contemporaine, relecture d’un poème de Hugo et partage d’expériences de lecture."
+    ],
+    "elements_verifies": [
+      "P. 1, garde. P. 2, « Éloge de la lecture », extrait de la conférence de Jean-Michel Maulpoix à l’Alliance française d’Aoste (6 novembre 2020), sous-titre sur la compagnie des livres, questions A1–A3 et B.",
+      "Session 2, épreuve n° 2, deux heures. Trois questions de compréhension du texte de Maulpoix et un bref essai personnel de forme libre, explicitement sans limitation du nombre de mots. A2 demande au candidat de choisir et justifier une phrase. Aucune question alternative ni répartition chiffrée des points.",
+      "Dans chaque édition, confrontation des réponses et de l’essai à la feuille, contrôle des deux schémas et de leurs renvois."
+    ]
+  }
 }

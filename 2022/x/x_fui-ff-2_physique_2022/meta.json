@@ -12,7 +12,7 @@
     "provider": "codex",
     "model": "GPT-6"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20FUI-FF%20Session%20Printemps%20SUJET%20PHYSIQUE.pdf",
     "rapport_jury": null,
@@ -100,6 +100,56 @@
       "perimetre": "Révision des deux éditions à partir du fac-similé officiel. 25 questions sur le plasma, la sismologie et le moment électromagnétique. Comparaison quantitative des deux amortissements usuels et conservation instantanée du moment cinétique.",
       "agent": "astra_physique",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Lecture des trois exercices numérisés et contrôle des 25 réponses, des conventions des modes circulaires, des cinq courbes de gain et des moments axiaux. Vérification quantitative des deux pics et explication de la réponse inertielle.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux",
+      "tour": 3
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "1.8",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7",
+      "2.8",
+      "2.9",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "3.7",
+      "3.8"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "relecture_corrige",
+      "sha256_sujet_controle": "cac5e39f37b15ad5331f257bb3af44a4cc53063ecc75891679565221f377d54d",
+      "perimetre": "Lecture des trois exercices numérisés et contrôle des 25 réponses, des conventions des modes circulaires, des cinq courbes de gain et des moments axiaux. Vérification quantitative des deux pics et explication de la réponse inertielle."
+    }
+  }
 }

@@ -1,0 +1,68 @@
+{
+  "slug": "ens_mp-pc_chinois-le2_2008",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Chinois (LE2)",
+    "annee": 2008,
+    "modalite": "écrit"
+  },
+  "intitule": "Le nanomètre et les nanotechnologies",
+  "questions": 2,
+  "redaction": "Version du passage entier et réponse argumentée en chinois à la question de la page 5.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2008/sujet-ecrit-2008_mp-pc_sujet_langue_etrangere_2.pdf#page=5",
+    "sha256_sujet": "9b7aa31d65f4d9a11653560330e033bd5d37f5c14a60dab16297ed778620f613",
+    "code_garde": "80.10PM",
+    "ecoles": "ENS de Paris et de Cachan",
+    "page_garde": 1,
+    "page": 5,
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2008",
+    "index_mp": "https://www.ens.psl.eu/rapports-et-sujets-2008-mpi | https://www.ens.psl.eu/rapports-et-sujets-2008-pc | https://banques-ecoles.fr/cms/filiere-mp/annales-de-la-banque-mmpmpi/session-2008",
+    "reference_du_passage": "Aucun auteur ni ouvrage indiqué sur la page de chinois.",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2008/MP/mp_ecrit_chinois_le2.pdf",
+    "sha256_rapport_jury": "1460e3889d13882e2b0564cf37f0b934026215a9effef17f8040413402b5f22a",
+    "page_rapport": 1
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I",
+      "fichier": "figures/unite-et-domaine.svg",
+      "legende": "L’unité de longueur et le domaine étudié dans le passage."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Shao Baoqing rend compte de douze copies de MP et signale l’absence de candidats en PC et en BCPST. Une copie a omis la question sur cinq points. La garde du sujet couvre bien MP et PC."
+    },
+    {
+      "phase": "redaction",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français, réponse en chinois, indications de traduction et schéma spécifique au passage."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I",
+      "II"
+    ]
+  }
+}

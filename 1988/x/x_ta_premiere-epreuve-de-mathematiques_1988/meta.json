@@ -1,0 +1,308 @@
+{
+  "slug": "x_ta_premiere-epreuve-de-mathematiques_1988",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "TA",
+    "filiere_historique": "T.A.",
+    "matiere": "Première épreuve de mathématiques",
+    "annee": 1988,
+    "modalite": "écrit"
+  },
+  "questions": 22,
+  "duree_heures": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-91f9804387ca4cabfa8f",
+    "sujet_sha256": "7f087182959b21a58639af973722c069f37d2fb7435224204643d4b0ec923d04",
+    "notice_ups": "m88mi1",
+    "calendrier": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000697782",
+    "provenance": "Les trois vues sont les pages 125 à 127 du recueil. La garde attribue la première épreuve aux options M, P′ et T.A. du concours commun, avec recrutement de l’École polytechnique en option T.A. La question II.2 comprend deux équations sous un même numéro."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "document": "m88mi1ea",
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-91f9804387ca4cabfa8f",
+      "sha256": "7f087182959b21a58639af973722c069f37d2fb7435224204643d4b0ec923d04",
+      "pages": 3,
+      "rendu_page_sha256": [
+        "4190fbedc239e8b99d15052061689a0242e3db059eef4f45271f0717bdeb80d1",
+        "3ac809322dc22e846aed766b462f6b7450783028281c2ec71bf19f1d1a17a4fc",
+        "6065c364c29b9433abe1955dd56e7303c82c53d735289741682e6dd074846967"
+      ]
+    },
+    "transcription": {
+      "document": "m88mi1eb",
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-4f4158bf36f33f579350",
+      "sha256": "316cd05ef96be604d998889ab0086ab7917409bedf88bf3a996bd1f502af476a",
+      "pages": 3,
+      "rendu_page_sha256": [
+        "90a0aa544ec157d1430dfc06b9481268f796e723ceda813da2f0e75cf97a8293",
+        "5280133b96c66a6df2e7c464c3e1e34fb81526e85521605d07e2df6980d4ec76",
+        "851a9b65ac651703b55b9a8ef3f0f8dc5651079c196c800a30edc55a7139e3c7"
+      ]
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "x_hist_1986",
+      "session": "x_hist_1986",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction originale des 22 rubriques, des indications et des deux figures. Les trois vues sont les pages 125 à 127 du recueil. La garde attribue la première épreuve aux options M, P′ et T.A. du concours commun, avec recrutement de l’École polytechnique en option T.A. La question II.2 comprend deux équations sous un même numéro."
+    }
+  ],
+  "figures": [
+    {
+      "question": "I.1.b",
+      "numero": 1,
+      "fichier": "figures/coordonnees-radiales.svg",
+      "legende": "Les demi-droites bleues fixent le rapport des coordonnées. Les arcs en tirets fixent la distance à l’origine."
+    },
+    {
+      "question": "III.3",
+      "numero": 2,
+      "fichier": "figures/modes-radiaux.svg",
+      "legende": "À pente fixée, ces trois fonctions appartiennent au noyau du cube de T. Une application de T fait passer du mode quadratique au logarithme puis à la constante."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1.a",
+      "I.1.b",
+      "I.1.c",
+      "I.2.a",
+      "I.2.b",
+      "I.2.c",
+      "I.3.a",
+      "I.3.b",
+      "I.3.c",
+      "I.4.a",
+      "I.4.b",
+      "II.1.a",
+      "II.1.b",
+      "II.2",
+      "II.3.a",
+      "II.3.b",
+      "III.1",
+      "III.2",
+      "III.3",
+      "IV.1",
+      "IV.2",
+      "IV.3"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "I.1.a",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 126
+      },
+      {
+        "question": "I.1.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 126
+      },
+      {
+        "question": "I.1.c",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 126
+      },
+      {
+        "question": "I.2.a",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 126
+      },
+      {
+        "question": "I.2.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 126
+      },
+      {
+        "question": "I.2.c",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 126
+      },
+      {
+        "question": "I.3.a",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 126
+      },
+      {
+        "question": "I.3.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 126
+      },
+      {
+        "question": "I.3.c",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 126
+      },
+      {
+        "question": "I.4.a",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 126
+      },
+      {
+        "question": "I.4.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 126
+      },
+      {
+        "question": "II.1.a",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 126
+      },
+      {
+        "question": "II.1.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 126
+      },
+      {
+        "question": "II.2",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 126
+      },
+      {
+        "question": "II.3.a",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ],
+        "feuillet_imprime": 3,
+        "page_recueil": 127
+      },
+      {
+        "question": "II.3.b",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ],
+        "feuillet_imprime": 3,
+        "page_recueil": 127
+      },
+      {
+        "question": "III.1",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ],
+        "feuillet_imprime": 3,
+        "page_recueil": 127
+      },
+      {
+        "question": "III.2",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ],
+        "feuillet_imprime": 3,
+        "page_recueil": 127
+      },
+      {
+        "question": "III.3",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ],
+        "feuillet_imprime": 3,
+        "page_recueil": 127
+      },
+      {
+        "question": "IV.1",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ],
+        "feuillet_imprime": 3,
+        "page_recueil": 127
+      },
+      {
+        "question": "IV.2",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ],
+        "feuillet_imprime": 3,
+        "page_recueil": 127
+      },
+      {
+        "question": "IV.3",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ],
+        "feuillet_imprime": 3,
+        "page_recueil": 127
+      }
+    ],
+    "precision": "Les trois vues sont les pages 125 à 127 du recueil. La garde attribue la première épreuve aux options M, P′ et T.A. du concours commun, avec recrutement de l’École polytechnique en option T.A. La question II.2 comprend deux équations sous un même numéro."
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "slug": "banque-pt_pt_maths-a_2022",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths A",
+    "intitule": "Épreuve de Mathématiques A",
+    "annee": 2022,
+    "duree": "4 h"
+  },
+  "questions": 44,
+  "redaction": "Proposition pédagogique non officielle, rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2022/math_a_2022_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2022/rapport_math_a_ecrit_2022.pdf",
+    "sujet_sha256": "a044b2412490a91b031704dd3150c01a12c53d6ccd6632f00fa5768775f808cb",
+    "rapport_jury_sha256": "8af0ef5ccf388673329913e660ae05bede60b469e2da85f9000f6e744d929212",
+    "observation_rapport": "Le rapport p. 2 demande de montrer les calculs intermédiaires de la puissance matricielle. Aux p. 3–4, il distingue les deux normes dans la construction d’une base orthonormée. Les p. 5–6 précisent la quantité à afficher en Python et le rôle des probabilités conditionnelles dans le dernier exercice."
+  },
+  "figures": [
+    {
+      "question": "III.4.h",
+      "fichier": "figures/evolution.svg",
+      "legende": "En partant d’un par certain, les probabilités d’être au-dessus et au-dessous coïncident. Les trois probabilités tendent vers un tiers."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "II.1.a",
+      "II.1.b",
+      "II.1.c",
+      "II.1.d",
+      "II.2.a",
+      "II.2.b",
+      "II.3",
+      "II.4.a",
+      "II.4.b",
+      "II.4.c",
+      "II.5.a",
+      "II.5.b",
+      "II.6.a",
+      "II.6.b",
+      "III.1.a",
+      "III.1.b",
+      "III.2.a",
+      "III.2.b",
+      "III.3.a",
+      "III.3.b",
+      "III.3.c",
+      "III.4.a",
+      "III.4.b",
+      "III.4.c",
+      "III.4.d",
+      "III.4.e",
+      "III.4.f",
+      "III.4.g",
+      "III.4.h",
+      "III.4.i",
+      "III.5.a",
+      "III.5.b",
+      "III.5.c",
+      "III.5.d",
+      "III.5.e",
+      "III.5.f.i",
+      "III.5.f.ii",
+      "III.5.g"
+    ],
+    "repere_par_question": [
+      {
+        "question": "I.1",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.2",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.3",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.4",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.5",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.6",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.1.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.1.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.1.c",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.1.d",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.2.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.2.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.3",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.4.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.4.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.4.c",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.5.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.5.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.6.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.6.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.1.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.1.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.2.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.2.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.3.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.3.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.3.c",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.4.a",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.4.b",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.4.c",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.4.d",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.4.e",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.4.f",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.4.g",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.4.h",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.4.i",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.5.a",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.5.b",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.5.c",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.5.d",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.5.e",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.5.f.i",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.5.f.ii",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.5.g",
+        "page_pdf": 5
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "44 consignes ou sous-consignes numérotées traitées dans chaque édition. Les deux normes et les deux bases sont distinguées. Les deux éditions contiennent les commandes Python demandées en III.4.f et leur sortie exacte."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "fui_physique_un",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture du sujet et du rapport annuels, rédaction et vérification des deux éditions illustrées et du décompte par page. Les deux normes et les deux bases sont distinguées. Les deux éditions contiennent les commandes Python demandées en III.4.f et leur sortie exacte."
+    }
+  ]
+}

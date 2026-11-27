@@ -9,7 +9,7 @@
   "questions": 19,
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
-    "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-1_mp_2000.pdf",
+    "sujet": "https://fichiers.wikiprepa.fr/data/x_maths-1_mp_2000.pdf",
     "rapport_jury": "",
     "sha256_sujet": "40cf1b2c1c19b1b292c1cb825b2936a2f1890ee701adebdbb8bd8fd39f5616c2"
   },
@@ -31,6 +31,69 @@
       "perimetre": "Rédaction complète de l’original de quatre pages. Contrôle des constantes du majorant convolutif, des rayons de convergence, des prolongements lisses aux exposants entiers et des solutions limites. Graphique calculé des coefficients normalisés.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Récurrence triangulaire, cinq contraintes du majorant, calcul des premiers coefficients et raccord de la solution singulière.",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "agent": "rennes_oraux_economie",
+      "session": "rennes_oraux_economie"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.a",
+      "1.b",
+      "2",
+      "3",
+      "4",
+      "5.a",
+      "5.b",
+      "6.a",
+      "6.b",
+      "6.c",
+      "6.d",
+      "7.a",
+      "7.b",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12.a",
+      "12.b"
+    ],
+    "pages_du_sujet": 4,
+    "pages_pdf_des_questions": {
+      "1.a": 1,
+      "1.b": 1,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5.a": 2,
+      "5.b": 2,
+      "6.a": 2,
+      "6.b": 2,
+      "6.c": 3,
+      "6.d": 3,
+      "7.a": 3,
+      "7.b": 3,
+      "8": 3,
+      "9": 3,
+      "10": 3,
+      "11": 3,
+      "12.a": 4,
+      "12.b": 4
+    },
+    "precision": "Sous-questions relevées sur le fac-similé. Le numéro de page désigne le début de chaque demande dans le PDF original."
+  }
 }

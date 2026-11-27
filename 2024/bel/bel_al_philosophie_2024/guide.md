@@ -8,9 +8,15 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 L’épreuve commune dure six heures. La question « Qu’est-ce que la réalité ? » appartient au domaine de la métaphysique. Elle demande de préciser le sens de la réalité en le mettant à l’épreuve de situations choisies. Le rapport recommande de distinguer cette enquête des questions voisines sur l’existence d’un monde extérieur, la vérité ou les moyens d’acquérir un savoir objectif. [Sujet officiel](https://www.ens-lyon.fr/sites/default/files/2024-11/Composition%20de%20philosophie.pdf) · [Rapport du jury](https://www.ens-lyon.fr/sites/default/files/2024-11/Philosophie%202024%20OK.pdf) · [Programme 2024](https://www.ens-lyon.fr/sites/default/files/2024-11/bulletin-officiel-n-30-du-27-juillet-2023-Pg-litteraire-session-2024_0.pdf)
+
+**Exercice de préparation.** À midi, une horloge arrêtée depuis la veille indique l’heure juste. Notez séparément trois propositions : le cadran porte telle indication ; il est midi ; l’horloge fonctionne. Lesquelles sont vraies ? Laquelle peut être fausse alors que les deux autres sont vraies ? L’expérience suivante nous apprend que le mécanisme était arrêté : distinguez le moment où nous le découvrons de celui où cet état existait. Vous disposez ainsi d’un argument pour passer de la question du savoir à celle de l’être.
 
 ## Analyse du sujet
 
@@ -24,6 +30,8 @@ Le singulier « la réalité » peut aussi désigner la totalité de ce qui est.
 La première affirmation porte sur l’événement mental. La seconde porte sur la rencontre qu’il représentait. Distinguer le vécu, le contenu de ce vécu et l’état de choses auquel le contenu prétend correspondre évite d’opposer en bloc réalité et apparence. De même, la possibilité d’un objet décrit de manière cohérente laisse ouverte la question de son existence effective. Enfin, une croyance fausse peut être réellement entretenue : qualifier une assertion de vraie et dire que quelqu’un l’a formulée sont deux actes différents.
 
 ![Une même situation, trois affirmations à distinguer](figures/realite-et-objectivite.svg)
+
+Séparer dans l’exemple le témoignage, l’hypothèse causale et l’examen. Indiquer à quelle affirmation l’examen apporte une contradiction oblige à préciser la portée de l’objectivité.
 
 **Varier une condition.** Si l’examen écarte une fracture, que peut-on nier ? Une lésion osseuse particulière. Que reste-t-il possible d’affirmer ? Le fait que la personne souffre, indépendamment de son hypothèse sur l’origine de la douleur. Une preuve objective peut donc corriger le diagnostic sans abolir le vécu dont il essayait de rendre compte.
 
@@ -108,6 +116,10 @@ Il serait tentant d’accorder la réalité à ce que la main rencontre et de la
 On comprend dès lors en quel sens une apparence a elle-même une réalité. Le reflet peint, le point de vue du visiteur, son geste et son erreur composent un événement qu’il est possible de décrire. L’impossibilité d’ouvrir la porte n’en rend aucun élément fictif. Ce qu’elle retire est plus précis : le rapport présumé entre la couleur observée et une poignée accessible. Il y a bien une peinture et une méprise, et il n’y a pas de passage. Distinguer ces affirmations revient à reconnaître qu’un phénomène peut être déterminé de plusieurs façons, et que toutes ces façons n’ont pas des suites également compatibles avec la situation. C’est en ce sens que la réalité résiste. La résistance n’a pas besoin de prendre la forme d’un obstacle matériel. Elle peut consister dans l’échec d’une conséquence que nous étions pourtant autorisés à attendre de notre hypothèse.
 
 Une douleur que personne d’autre ne peut éprouver à ma place permet de distinguer la réalité et l’objectivité. Si je souffre du bras alors que l’examen écarte la fracture que je soupçonnais, l’inexistence de cette fracture n’annule pas la réalité de la douleur. Un tiers peut en examiner les manifestations et m’en demander une description, sans que son propre accès du dehors devienne une condition d’existence de ce que je vis. Inversement, l’unanimité de plusieurs témoins placés devant le même décor ne rendrait pas la porte praticable. La possibilité d’accord entre observateurs constitue une norme de certaines enquêtes. Elle ne définit pas, à elle seule, l’effectivité de tout ce dont on parle.
+
+Imaginons que deux médecins excluent l’un après l’autre la fracture supposée. La seconde vérification renforce le jugement sur l’état de l’os. Elle n’ajoute aucun argument pour décider si la douleur est réellement éprouvée. La question du réel demande donc aussi de déterminer sur quoi porte chaque procédure de vérification.
+
+Dans la salle d’attente d’une gare, le cadran de l’horloge s’est arrêté à midi. À midi exactement, il indique l’heure juste. L’indication vraie ne suffit pourtant pas à rendre réel le mouvement que le voyageur prête au mécanisme. Cinq minutes plus tard, un second regard le détrompera. Mais l’horloge était déjà arrêtée au premier regard. L’épreuve ultérieure permet de déterminer quel état de choses existait alors ; elle ne le fait pas advenir rétroactivement. Cet écart explique pourquoi définir le réel par ce que l’on vérifie laisserait précisément de côté ce qui donne à la vérification le pouvoir de nous corriger.
 
 Encore faut-il éviter de définir la chose réelle par la réussite actuelle de nos vérifications. Une digue rompue pendant la nuit peut avoir inondé un village abandonné. L’événement n’a pas attendu le premier témoin pour avoir lieu. Les traces par lesquelles on le reconstituera supposent précisément qu’une eau a coulé selon une histoire dont l’enquête ne choisit pas l’issue. D’autre part, une hypothèse fausse peut longtemps s’accorder avec tout ce que nous avons vérifié. Nous avons donc des raisons de distinguer la réalité et l’objectivité de nos jugements. L’objectivité qualifie un effort pour soumettre ces jugements à des épreuves communicables et susceptibles d’être corrigées. La réalité désigne ce dont il peut y avoir encore quelque chose à apprendre, même contre l’accord de tous à un instant donné. Reste une difficulté. S’il faut que la réalité puisse nous donner tort, doit-elle, pour cela, être absolument indépendante de toute activité humaine ?
 

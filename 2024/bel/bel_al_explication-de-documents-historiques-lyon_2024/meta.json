@@ -1,0 +1,100 @@
+{
+  "slug": "bel_al_explication-de-documents-historiques-lyon_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Explication de documents historiques (Lyon)",
+    "annee": 2024,
+    "modalite": "écrit"
+  },
+  "duree_heures": 3,
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2024-11/Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=8",
+    "sujet_sha256": "cbf76039969ec8cec685a228168381915bdc7b64ae30b2cbee576b3a4f1eeb56",
+    "pages_pdf_sujet": [
+      8,
+      9
+    ],
+    "pages_fascicule": 20,
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2024-11/Histoire%202024%20OK.pdf#page=22",
+    "sha256_rapport_jury": "227c734baeedd6a643a6e6009b3f2b0a746d51b7d8fcb57de33f122aeab909db",
+    "pages_rapport_verifiees": [
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "documents": [
+      "Édit royal donné à Saint-Germain-en-Laye en août 1669, imprimé chez Frédéric Léonard, BnF F-12195."
+    ],
+    "ecole": "ENS de Lyon",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2024"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/garantie-et-detail.svg",
+      "question": "Explication historique",
+      "legende": "Le champ de la garantie accordée en 1669"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Explication historique du dossier complet"
+    ],
+    "documents_traites": [
+      "Édit royal donné à Saint-Germain-en-Laye en août 1669, imprimé chez Frédéric Léonard, BnF F-12195."
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ]
+  },
+  "contributions": [
+    {
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "phase": "redaction",
+      "perimetre": "Présentation et explication de chaque pièce dans une démonstration rédigée, aide à la lecture et schéma."
+    },
+    {
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "perimetre": "Vérification du destinataire et du protocole sur le feuillet imprimé, distinction entre condition noble et jouissance des privilèges, contrôle de la portée du dispositif et des précédents de 1664."
+    }
+  ]
+}

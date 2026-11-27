@@ -1,0 +1,1329 @@
+{
+  "banque-pt_pt_langue-vivante-a_2020": {
+    "commit": "cb64a928c2544ae2ceffef0714eabb186e093d63",
+    "arbre_git": "631c9adb8596ad03ef0d4f89fb6d3f89bb1d6d57",
+    "questions": 5,
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2020/lv_a_2020_pt.pdf",
+      "sha256": "1356a5b1cbd8e7e95830b0ea50e83a6d76fb9cbb8846becb0c2f71f83ba75adb",
+      "pages": 28
+    },
+    "rapport": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2020/rapport_lv_a_ecrit_2020.pdf",
+      "sha256": "b1884f6dfad8fb88b4668b364f7fc7fc021e9882d97c31cd32c391ac481c9d73",
+      "pages": 19
+    },
+    "editions": {
+      "brut": {
+        "pages": 6,
+        "signets": [
+          [
+            1,
+            "Allemand",
+            1
+          ],
+          [
+            1,
+            "Anglais",
+            2
+          ],
+          [
+            1,
+            "Arabe",
+            3
+          ],
+          [
+            1,
+            "Espagnol",
+            4
+          ],
+          [
+            1,
+            "Italien",
+            5
+          ]
+        ],
+        "questions": [
+          {
+            "nom": "Allemand",
+            "pages_rapport": [
+              1,
+              2
+            ],
+            "pages_sujet": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "pages_copie": [
+              1,
+              2
+            ],
+            "mots_verifies": 458,
+            "documents": 5
+          },
+          {
+            "nom": "Anglais",
+            "pages_rapport": [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "pages_sujet": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "pages_copie": [
+              2,
+              3
+            ],
+            "mots_verifies": 477,
+            "documents": 5
+          },
+          {
+            "nom": "Arabe",
+            "pages_rapport": [
+              14,
+              15
+            ],
+            "pages_sujet": [
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "pages_copie": [
+              3,
+              4
+            ],
+            "mots_verifies": 458,
+            "documents": 5
+          },
+          {
+            "nom": "Espagnol",
+            "pages_rapport": [
+              16,
+              17
+            ],
+            "pages_sujet": [
+              18,
+              19,
+              20,
+              21,
+              22
+            ],
+            "pages_copie": [
+              4,
+              5
+            ],
+            "mots_verifies": 472,
+            "documents": 5
+          },
+          {
+            "nom": "Italien",
+            "pages_rapport": [
+              18,
+              19
+            ],
+            "pages_sujet": [
+              23,
+              24,
+              25,
+              26,
+              27
+            ],
+            "pages_copie": [
+              5,
+              6
+            ],
+            "mots_verifies": 456,
+            "documents": 5
+          }
+        ],
+        "figures": [
+          {
+            "fichier": "figures/lecture-de.svg",
+            "question": "Allemand",
+            "legende": "Emballages plastiques jetés en 2015",
+            "page_pdf": 2,
+            "sha256_svg": "1d173adfb7fcf9443c540948e00904126d03fda7f87d3678604d3681552ec24f",
+            "sha256_forme_pdf": "972d4029a2c56d4c4e4a3f8ecffcfe34c3384b3096903d8160f3ccb81d704e8e"
+          },
+          {
+            "fichier": "figures/lecture-en.svg",
+            "question": "Anglais",
+            "legende": "Comment un tournoi rassemble et rémunère",
+            "page_pdf": 3,
+            "sha256_svg": "d3640d1beeb2c307a81d2efb4a5e4514ec46da6d1818c30ec9bb5f26a96385e8",
+            "sha256_forme_pdf": "3b1001802979d270ac1cb0e68097c4ec216b602a3e70d2f9b5ad1cee2e0bfd89"
+          },
+          {
+            "fichier": "figures/lecture-ar.svg",
+            "question": "Arabe",
+            "legende": "La modernité dans les cinq documents",
+            "page_pdf": 4,
+            "sha256_svg": "bf4041e5a37dc23464592117f10e3d8030b0e77b8c182c878c4a06b4b5447244",
+            "sha256_forme_pdf": "f752c3886c4bc899b16d0ac91fb492346b348fdd998578c437452d1d5ae1f81a"
+          },
+          {
+            "fichier": "figures/lecture-es.svg",
+            "question": "Espagnol",
+            "legende": "Lire sur écran ou préférer un support",
+            "page_pdf": 5,
+            "sha256_svg": "b9371a4ea3ac291e5dd890ee809ec9101d34f14959ba5339e2ece78fa3231e2b",
+            "sha256_forme_pdf": "e8084586698003a4a3e1bf1553449a5f2a46238a4f07aca348dd8d402edd6066"
+          },
+          {
+            "fichier": "figures/lecture-it.svg",
+            "question": "Italien",
+            "legende": "Trois sens du mot réseau",
+            "page_pdf": 6,
+            "sha256_svg": "d1cb29306b567966ca92a1108d101b543bb7c282a255fcda1ba30595f00fbe17",
+            "sha256_forme_pdf": "37c2c4064c94a7aa2bc940875d2706cbe0dd4b790ddd822658be46c6d56428a9"
+          }
+        ],
+        "signatures_premiere_page": [
+          "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+        ],
+        "sha256_pdf": "0c467a9b31425075a81d48d6489000a95c86479db02de25e5205e4322d8f7a58",
+        "sha256_markdown": "bf9423c2035eb222503774944bed3a4184ad14d50c3aa59ab3148fb97a3d5470",
+        "diagnostic_latex_propre": true
+      },
+      "guide": {
+        "pages": 8,
+        "signets": [
+          [
+            1,
+            "Allemand",
+            1
+          ],
+          [
+            2,
+            "Construire la synthèse",
+            1
+          ],
+          [
+            2,
+            "Proposition rédigée",
+            1
+          ],
+          [
+            1,
+            "Anglais",
+            2
+          ],
+          [
+            2,
+            "Construire la synthèse",
+            2
+          ],
+          [
+            2,
+            "Proposition rédigée",
+            3
+          ],
+          [
+            1,
+            "Arabe",
+            4
+          ],
+          [
+            2,
+            "Construire la synthèse",
+            4
+          ],
+          [
+            2,
+            "Proposition rédigée",
+            4
+          ],
+          [
+            1,
+            "Espagnol",
+            5
+          ],
+          [
+            2,
+            "Construire la synthèse",
+            5
+          ],
+          [
+            2,
+            "Proposition rédigée",
+            6
+          ],
+          [
+            1,
+            "Italien",
+            7
+          ],
+          [
+            2,
+            "Construire la synthèse",
+            7
+          ],
+          [
+            2,
+            "Proposition rédigée",
+            7
+          ]
+        ],
+        "questions": [
+          {
+            "nom": "Allemand",
+            "pages_rapport": [
+              1,
+              2
+            ],
+            "pages_sujet": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "pages_copie": [
+              1,
+              2
+            ],
+            "mots_verifies": 458,
+            "documents": 5
+          },
+          {
+            "nom": "Anglais",
+            "pages_rapport": [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "pages_sujet": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "pages_copie": [
+              3,
+              4
+            ],
+            "mots_verifies": 477,
+            "documents": 5
+          },
+          {
+            "nom": "Arabe",
+            "pages_rapport": [
+              14,
+              15
+            ],
+            "pages_sujet": [
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "pages_copie": [
+              4,
+              5
+            ],
+            "mots_verifies": 458,
+            "documents": 5
+          },
+          {
+            "nom": "Espagnol",
+            "pages_rapport": [
+              16,
+              17
+            ],
+            "pages_sujet": [
+              18,
+              19,
+              20,
+              21,
+              22
+            ],
+            "pages_copie": [
+              6
+            ],
+            "mots_verifies": 472,
+            "documents": 5
+          },
+          {
+            "nom": "Italien",
+            "pages_rapport": [
+              18,
+              19
+            ],
+            "pages_sujet": [
+              23,
+              24,
+              25,
+              26,
+              27
+            ],
+            "pages_copie": [
+              7,
+              8
+            ],
+            "mots_verifies": 456,
+            "documents": 5
+          }
+        ],
+        "figures": [
+          {
+            "fichier": "figures/lecture-de.svg",
+            "question": "Allemand",
+            "legende": "Emballages plastiques jetés en 2015",
+            "page_pdf": 1,
+            "sha256_svg": "1d173adfb7fcf9443c540948e00904126d03fda7f87d3678604d3681552ec24f",
+            "sha256_forme_pdf": "972d4029a2c56d4c4e4a3f8ecffcfe34c3384b3096903d8160f3ccb81d704e8e"
+          },
+          {
+            "fichier": "figures/lecture-en.svg",
+            "question": "Anglais",
+            "legende": "Comment un tournoi rassemble et rémunère",
+            "page_pdf": 3,
+            "sha256_svg": "d3640d1beeb2c307a81d2efb4a5e4514ec46da6d1818c30ec9bb5f26a96385e8",
+            "sha256_forme_pdf": "3b1001802979d270ac1cb0e68097c4ec216b602a3e70d2f9b5ad1cee2e0bfd89"
+          },
+          {
+            "fichier": "figures/lecture-ar.svg",
+            "question": "Arabe",
+            "legende": "La modernité dans les cinq documents",
+            "page_pdf": 4,
+            "sha256_svg": "bf4041e5a37dc23464592117f10e3d8030b0e77b8c182c878c4a06b4b5447244",
+            "sha256_forme_pdf": "f752c3886c4bc899b16d0ac91fb492346b348fdd998578c437452d1d5ae1f81a"
+          },
+          {
+            "fichier": "figures/lecture-es.svg",
+            "question": "Espagnol",
+            "legende": "Lire sur écran ou préférer un support",
+            "page_pdf": 6,
+            "sha256_svg": "b9371a4ea3ac291e5dd890ee809ec9101d34f14959ba5339e2ece78fa3231e2b",
+            "sha256_forme_pdf": "e8084586698003a4a3e1bf1553449a5f2a46238a4f07aca348dd8d402edd6066"
+          },
+          {
+            "fichier": "figures/lecture-it.svg",
+            "question": "Italien",
+            "legende": "Trois sens du mot réseau",
+            "page_pdf": 7,
+            "sha256_svg": "d1cb29306b567966ca92a1108d101b543bb7c282a255fcda1ba30595f00fbe17",
+            "sha256_forme_pdf": "37c2c4064c94a7aa2bc940875d2706cbe0dd4b790ddd822658be46c6d56428a9"
+          }
+        ],
+        "signatures_premiere_page": [
+          "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+        ],
+        "sha256_pdf": "0e0e6499fa8ea8fd2c6cc8594f2c27a6027a01674f1e6af4e1774e253a04e384",
+        "sha256_markdown": "5ca8f372654628c97e0a5d08079221c85c0853692dd1f63e4242bd23b6420e83",
+        "diagnostic_latex_propre": true
+      }
+    }
+  },
+  "banque-pt_pt_langue-vivante-a_2021": {
+    "commit": "d11e96239699338ee5d2f19d4b370be540e51a4d",
+    "arbre_git": "ef2383ce208d67241857961d76e859a5eaf2e426",
+    "questions": 5,
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2021/lv_a_2021_pt.pdf",
+      "sha256": "03561d8b3766b0e3899bc7a8fb5244ea5bbb5aee8d48cbc4d07775a22ba55ecb",
+      "pages": 32
+    },
+    "rapport": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2021/rapport_lv_a_ecrit_2021.pdf",
+      "sha256": "150ad0a1a7e8728dc81c9137f6e0d1aa0d174618f98cf7e6c44ab540977fb564",
+      "pages": 17
+    },
+    "editions": {
+      "brut": {
+        "pages": 6,
+        "signets": [
+          [
+            1,
+            "Allemand",
+            1
+          ],
+          [
+            1,
+            "Anglais",
+            2
+          ],
+          [
+            1,
+            "Arabe",
+            3
+          ],
+          [
+            1,
+            "Espagnol",
+            4
+          ],
+          [
+            1,
+            "Italien",
+            5
+          ]
+        ],
+        "questions": [
+          {
+            "nom": "Allemand",
+            "pages_rapport": [
+              1,
+              2
+            ],
+            "pages_sujet": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "pages_copie": [
+              1,
+              2
+            ],
+            "mots_verifies": 459,
+            "documents": 5
+          },
+          {
+            "nom": "Anglais",
+            "pages_rapport": [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "pages_sujet": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "pages_copie": [
+              2,
+              3
+            ],
+            "mots_verifies": 479,
+            "documents": 5
+          },
+          {
+            "nom": "Arabe",
+            "pages_rapport": [
+              11,
+              12,
+              13
+            ],
+            "pages_sujet": [
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "pages_copie": [
+              3,
+              4
+            ],
+            "mots_verifies": 455,
+            "documents": 5
+          },
+          {
+            "nom": "Espagnol",
+            "pages_rapport": [
+              14,
+              15,
+              16
+            ],
+            "pages_sujet": [
+              18,
+              19,
+              20,
+              21,
+              22,
+              23
+            ],
+            "pages_copie": [
+              4,
+              5
+            ],
+            "mots_verifies": 460,
+            "documents": 5
+          },
+          {
+            "nom": "Italien",
+            "pages_rapport": [
+              17
+            ],
+            "pages_sujet": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ],
+            "pages_copie": [
+              5,
+              6
+            ],
+            "mots_verifies": 456,
+            "documents": 5
+          }
+        ],
+        "figures": [
+          {
+            "fichier": "figures/lecture-de.svg",
+            "question": "Allemand",
+            "legende": "Trois questions sur une mobilité moins polluante",
+            "page_pdf": 2,
+            "sha256_svg": "537873a2c52a0079d3eb99b65dc1a0555cebb2522fb7948c37ab1abfd05cdf73",
+            "sha256_forme_pdf": "51993faef15425ab6caa42ccfc58d7f657a5058ba6870c5eea9d5afff7e53ec4"
+          },
+          {
+            "fichier": "figures/lecture-en.svg",
+            "question": "Anglais",
+            "legende": "Une mission spatiale en 2020",
+            "page_pdf": 3,
+            "sha256_svg": "343f492765e1ad95258b0ca9e440b3eef4c9405fb8061d9e4a6685db86b3d3f2",
+            "sha256_forme_pdf": "3022a1cb40fff50e9f082b878b7ebbd146e69314659b23225767a3f4fc47af26"
+          },
+          {
+            "fichier": "figures/lecture-ar.svg",
+            "question": "Arabe",
+            "legende": "Comment une œuvre atteint son public",
+            "page_pdf": 4,
+            "sha256_svg": "5b18d056b7f683cd6590485a0e66960095268955e15c8bb8b8a31bf9b4f9735e",
+            "sha256_forme_pdf": "f0943d33a6cc9fc8cfd3458cb7f59a18e600fcd55dc43284c61eef5997aedd37"
+          },
+          {
+            "fichier": "figures/lecture-es.svg",
+            "question": "Espagnol",
+            "legende": "Trois lieux où se joue l’usage d’une langue",
+            "page_pdf": 5,
+            "sha256_svg": "2a84af4bbcd3642976c2a0b40b42d9a1696a222a6f94ec93230c4a22ae859a7c",
+            "sha256_forme_pdf": "650ebc9063e829d211b7da28b571540384cab570e8dcb4c8b9944d33237afa49"
+          },
+          {
+            "fichier": "figures/lecture-it.svg",
+            "question": "Italien",
+            "legende": "Trois interventions sur le patrimoine",
+            "page_pdf": 6,
+            "sha256_svg": "6b534938a20d15d9c2844083bf016e7d7523ef691a114ad5413489dc2fc16116",
+            "sha256_forme_pdf": "0492ad51fca094e518e3f8a8437237a7dfcbbdc9cadb68a62cc28300fd67e9ad"
+          }
+        ],
+        "signatures_premiere_page": [
+          "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+        ],
+        "sha256_pdf": "5c06c970731ba782e493c5f160e78f4173ff95f11c3f7d2a931f8c70eddb8c28",
+        "sha256_markdown": "a9af7ef2c5e8147ae0faf4c0e4514fbe9ef4a9a8ea8af9553b016114345be35c",
+        "diagnostic_latex_propre": true
+      },
+      "guide": {
+        "pages": 8,
+        "signets": [
+          [
+            1,
+            "Allemand",
+            1
+          ],
+          [
+            2,
+            "Construire la synthèse",
+            1
+          ],
+          [
+            2,
+            "Proposition rédigée",
+            1
+          ],
+          [
+            1,
+            "Anglais",
+            2
+          ],
+          [
+            2,
+            "Construire la synthèse",
+            2
+          ],
+          [
+            2,
+            "Proposition rédigée",
+            3
+          ],
+          [
+            1,
+            "Arabe",
+            4
+          ],
+          [
+            2,
+            "Construire la synthèse",
+            4
+          ],
+          [
+            2,
+            "Proposition rédigée",
+            5
+          ],
+          [
+            1,
+            "Espagnol",
+            5
+          ],
+          [
+            2,
+            "Construire la synthèse",
+            5
+          ],
+          [
+            2,
+            "Proposition rédigée",
+            6
+          ],
+          [
+            1,
+            "Italien",
+            7
+          ],
+          [
+            2,
+            "Construire la synthèse",
+            7
+          ],
+          [
+            2,
+            "Proposition rédigée",
+            7
+          ]
+        ],
+        "questions": [
+          {
+            "nom": "Allemand",
+            "pages_rapport": [
+              1,
+              2
+            ],
+            "pages_sujet": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "pages_copie": [
+              1,
+              2
+            ],
+            "mots_verifies": 459,
+            "documents": 5
+          },
+          {
+            "nom": "Anglais",
+            "pages_rapport": [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "pages_sujet": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "pages_copie": [
+              3,
+              4
+            ],
+            "mots_verifies": 479,
+            "documents": 5
+          },
+          {
+            "nom": "Arabe",
+            "pages_rapport": [
+              11,
+              12,
+              13
+            ],
+            "pages_sujet": [
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "pages_copie": [
+              5
+            ],
+            "mots_verifies": 455,
+            "documents": 5
+          },
+          {
+            "nom": "Espagnol",
+            "pages_rapport": [
+              14,
+              15,
+              16
+            ],
+            "pages_sujet": [
+              18,
+              19,
+              20,
+              21,
+              22,
+              23
+            ],
+            "pages_copie": [
+              6
+            ],
+            "mots_verifies": 460,
+            "documents": 5
+          },
+          {
+            "nom": "Italien",
+            "pages_rapport": [
+              17
+            ],
+            "pages_sujet": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ],
+            "pages_copie": [
+              7,
+              8
+            ],
+            "mots_verifies": 456,
+            "documents": 5
+          }
+        ],
+        "figures": [
+          {
+            "fichier": "figures/lecture-de.svg",
+            "question": "Allemand",
+            "legende": "Trois questions sur une mobilité moins polluante",
+            "page_pdf": 1,
+            "sha256_svg": "537873a2c52a0079d3eb99b65dc1a0555cebb2522fb7948c37ab1abfd05cdf73",
+            "sha256_forme_pdf": "51993faef15425ab6caa42ccfc58d7f657a5058ba6870c5eea9d5afff7e53ec4"
+          },
+          {
+            "fichier": "figures/lecture-en.svg",
+            "question": "Anglais",
+            "legende": "Une mission spatiale en 2020",
+            "page_pdf": 3,
+            "sha256_svg": "343f492765e1ad95258b0ca9e440b3eef4c9405fb8061d9e4a6685db86b3d3f2",
+            "sha256_forme_pdf": "3022a1cb40fff50e9f082b878b7ebbd146e69314659b23225767a3f4fc47af26"
+          },
+          {
+            "fichier": "figures/lecture-ar.svg",
+            "question": "Arabe",
+            "legende": "Comment une œuvre atteint son public",
+            "page_pdf": 4,
+            "sha256_svg": "5b18d056b7f683cd6590485a0e66960095268955e15c8bb8b8a31bf9b4f9735e",
+            "sha256_forme_pdf": "f0943d33a6cc9fc8cfd3458cb7f59a18e600fcd55dc43284c61eef5997aedd37"
+          },
+          {
+            "fichier": "figures/lecture-es.svg",
+            "question": "Espagnol",
+            "legende": "Trois lieux où se joue l’usage d’une langue",
+            "page_pdf": 6,
+            "sha256_svg": "2a84af4bbcd3642976c2a0b40b42d9a1696a222a6f94ec93230c4a22ae859a7c",
+            "sha256_forme_pdf": "650ebc9063e829d211b7da28b571540384cab570e8dcb4c8b9944d33237afa49"
+          },
+          {
+            "fichier": "figures/lecture-it.svg",
+            "question": "Italien",
+            "legende": "Trois interventions sur le patrimoine",
+            "page_pdf": 7,
+            "sha256_svg": "6b534938a20d15d9c2844083bf016e7d7523ef691a114ad5413489dc2fc16116",
+            "sha256_forme_pdf": "0492ad51fca094e518e3f8a8437237a7dfcbbdc9cadb68a62cc28300fd67e9ad"
+          }
+        ],
+        "signatures_premiere_page": [
+          "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+        ],
+        "sha256_pdf": "4d522927443ba0a634bdb733377e64f4bf1e5131eb50288973a801add13bf7db",
+        "sha256_markdown": "ab0a6f76563659163a75680db6d749ef60407a7169d5e19c7afe4563597cb6ef",
+        "diagnostic_latex_propre": true
+      }
+    }
+  },
+  "banque-pt_pt_langue-vivante-a_2022": {
+    "commit": "cb64a928c2544ae2ceffef0714eabb186e093d63",
+    "arbre_git": "b4b9e39b6ea45b74591c5d839521148352852542",
+    "questions": 5,
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2022/lv_a_2022_pt.pdf",
+      "sha256": "1dc6403aab598b010e77df8f5e0d56e6891d799087f252a33c906b7e5540b789",
+      "pages": 28
+    },
+    "rapport": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2022/rapport_lv_a_ecrit_2022.pdf",
+      "sha256": "395455c67e3b82b3af504880a23131db7e7b2af4e7cc67d83463c26b28f155d0",
+      "pages": 14
+    },
+    "editions": {
+      "brut": {
+        "pages": 6,
+        "signets": [
+          [
+            1,
+            "Allemand",
+            1
+          ],
+          [
+            1,
+            "Anglais",
+            2
+          ],
+          [
+            1,
+            "Arabe",
+            3
+          ],
+          [
+            1,
+            "Espagnol",
+            4
+          ],
+          [
+            1,
+            "Italien",
+            5
+          ]
+        ],
+        "questions": [
+          {
+            "nom": "Allemand",
+            "pages_rapport": [
+              1
+            ],
+            "pages_sujet": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "pages_copie": [
+              1,
+              2
+            ],
+            "mots_verifies": 457,
+            "documents": 5
+          },
+          {
+            "nom": "Anglais",
+            "pages_rapport": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "pages_sujet": [
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "pages_copie": [
+              2,
+              3
+            ],
+            "mots_verifies": 464,
+            "documents": 5
+          },
+          {
+            "nom": "Arabe",
+            "pages_rapport": [
+              9,
+              10
+            ],
+            "pages_sujet": [
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "pages_copie": [
+              3,
+              4
+            ],
+            "mots_verifies": 452,
+            "documents": 5
+          },
+          {
+            "nom": "Espagnol",
+            "pages_rapport": [
+              11,
+              12,
+              13
+            ],
+            "pages_sujet": [
+              18,
+              19,
+              20,
+              21,
+              22
+            ],
+            "pages_copie": [
+              4,
+              5
+            ],
+            "mots_verifies": 483,
+            "documents": 5
+          },
+          {
+            "nom": "Italien",
+            "pages_rapport": [
+              14
+            ],
+            "pages_sujet": [
+              23,
+              24,
+              25,
+              26,
+              27
+            ],
+            "pages_copie": [
+              5,
+              6
+            ],
+            "mots_verifies": 455,
+            "documents": 5
+          }
+        ],
+        "figures": [
+          {
+            "fichier": "figures/lecture-de.svg",
+            "question": "Allemand",
+            "legende": "Caméras de surveillance pour 1 000 habitants",
+            "page_pdf": 2,
+            "sha256_svg": "af9b3a631e902501fb0125ccf1e86ae67e9bbdb4caddb378bf91c567c51e0e96",
+            "sha256_forme_pdf": "2186d984200e0b0c1f155beb59a5882da96ec9088056ac22f4b0a8a424335eba"
+          },
+          {
+            "fichier": "figures/lecture-en.svg",
+            "question": "Anglais",
+            "legende": "Adultes déclarant peu ou pas de contrôle",
+            "page_pdf": 3,
+            "sha256_svg": "6a0d84b3fd1e807974361af786365f2af910921047b9044fd0a7e0f6c3f76f90",
+            "sha256_forme_pdf": "22d64c649d9bf4207ac758f457574d18347edcb12b7c1e65b6316a781252676d"
+          },
+          {
+            "fichier": "figures/lecture-ar.svg",
+            "question": "Arabe",
+            "legende": "Trois conditions du travail journalistique",
+            "page_pdf": 4,
+            "sha256_svg": "b307daaf76aa78831fe513cb3f3c5acf89062b98f74e556dde6891bd81058ded",
+            "sha256_forme_pdf": "53aa5e616257dee8ac086064f415ee0a13b75017b6a9ba1551984dfde6447295"
+          },
+          {
+            "fichier": "figures/lecture-es.svg",
+            "question": "Espagnol",
+            "legende": "Que mesure l’enquête chilienne ?",
+            "page_pdf": 5,
+            "sha256_svg": "a55c1faa9c30cc172bd15f0bab7da254471b72f28933d4f148865daf40a7720b",
+            "sha256_forme_pdf": "9fda1f08b59b48c3dd3ce0247097ac633b53ba8940c30e9e08a851724335b63c"
+          },
+          {
+            "fichier": "figures/lecture-it.svg",
+            "question": "Italien",
+            "legende": "Interactions moyennes par publication en mai 2020",
+            "page_pdf": 6,
+            "sha256_svg": "88b79ba972141299773be0455c26400cd4e7ca82e3a18b2dde75d8420088a0e7",
+            "sha256_forme_pdf": "7c07dbb2b06ec9656463ec7ff0475fc046ae64177b6db36cdca0f232b764a1b1"
+          }
+        ],
+        "signatures_premiere_page": [
+          "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+        ],
+        "sha256_pdf": "7c8546d4300bdf3cdec1e14b561a80f61c7cf493252dbe9e5b6084315e8f282f",
+        "sha256_markdown": "5f2d1bd67db4cdc27cb2fe45f03d5dc0e637220b516cd6e62c94312421cb01a6",
+        "diagnostic_latex_propre": true
+      },
+      "guide": {
+        "pages": 8,
+        "signets": [
+          [
+            1,
+            "Allemand",
+            1
+          ],
+          [
+            2,
+            "Construire la synthèse",
+            1
+          ],
+          [
+            2,
+            "Proposition rédigée",
+            1
+          ],
+          [
+            1,
+            "Anglais",
+            2
+          ],
+          [
+            2,
+            "Construire la synthèse",
+            2
+          ],
+          [
+            2,
+            "Proposition rédigée",
+            3
+          ],
+          [
+            1,
+            "Arabe",
+            4
+          ],
+          [
+            2,
+            "Construire la synthèse",
+            4
+          ],
+          [
+            2,
+            "Proposition rédigée",
+            4
+          ],
+          [
+            1,
+            "Espagnol",
+            5
+          ],
+          [
+            2,
+            "Construire la synthèse",
+            5
+          ],
+          [
+            2,
+            "Proposition rédigée",
+            6
+          ],
+          [
+            1,
+            "Italien",
+            7
+          ],
+          [
+            2,
+            "Construire la synthèse",
+            7
+          ],
+          [
+            2,
+            "Proposition rédigée",
+            7
+          ]
+        ],
+        "questions": [
+          {
+            "nom": "Allemand",
+            "pages_rapport": [
+              1
+            ],
+            "pages_sujet": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "pages_copie": [
+              1,
+              2
+            ],
+            "mots_verifies": 457,
+            "documents": 5
+          },
+          {
+            "nom": "Anglais",
+            "pages_rapport": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "pages_sujet": [
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "pages_copie": [
+              3,
+              4
+            ],
+            "mots_verifies": 464,
+            "documents": 5
+          },
+          {
+            "nom": "Arabe",
+            "pages_rapport": [
+              9,
+              10
+            ],
+            "pages_sujet": [
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "pages_copie": [
+              4,
+              5
+            ],
+            "mots_verifies": 452,
+            "documents": 5
+          },
+          {
+            "nom": "Espagnol",
+            "pages_rapport": [
+              11,
+              12,
+              13
+            ],
+            "pages_sujet": [
+              18,
+              19,
+              20,
+              21,
+              22
+            ],
+            "pages_copie": [
+              6
+            ],
+            "mots_verifies": 483,
+            "documents": 5
+          },
+          {
+            "nom": "Italien",
+            "pages_rapport": [
+              14
+            ],
+            "pages_sujet": [
+              23,
+              24,
+              25,
+              26,
+              27
+            ],
+            "pages_copie": [
+              7,
+              8
+            ],
+            "mots_verifies": 455,
+            "documents": 5
+          }
+        ],
+        "figures": [
+          {
+            "fichier": "figures/lecture-de.svg",
+            "question": "Allemand",
+            "legende": "Caméras de surveillance pour 1 000 habitants",
+            "page_pdf": 1,
+            "sha256_svg": "af9b3a631e902501fb0125ccf1e86ae67e9bbdb4caddb378bf91c567c51e0e96",
+            "sha256_forme_pdf": "2186d984200e0b0c1f155beb59a5882da96ec9088056ac22f4b0a8a424335eba"
+          },
+          {
+            "fichier": "figures/lecture-en.svg",
+            "question": "Anglais",
+            "legende": "Adultes déclarant peu ou pas de contrôle",
+            "page_pdf": 3,
+            "sha256_svg": "6a0d84b3fd1e807974361af786365f2af910921047b9044fd0a7e0f6c3f76f90",
+            "sha256_forme_pdf": "22d64c649d9bf4207ac758f457574d18347edcb12b7c1e65b6316a781252676d"
+          },
+          {
+            "fichier": "figures/lecture-ar.svg",
+            "question": "Arabe",
+            "legende": "Trois conditions du travail journalistique",
+            "page_pdf": 4,
+            "sha256_svg": "b307daaf76aa78831fe513cb3f3c5acf89062b98f74e556dde6891bd81058ded",
+            "sha256_forme_pdf": "53aa5e616257dee8ac086064f415ee0a13b75017b6a9ba1551984dfde6447295"
+          },
+          {
+            "fichier": "figures/lecture-es.svg",
+            "question": "Espagnol",
+            "legende": "Que mesure l’enquête chilienne ?",
+            "page_pdf": 6,
+            "sha256_svg": "a55c1faa9c30cc172bd15f0bab7da254471b72f28933d4f148865daf40a7720b",
+            "sha256_forme_pdf": "9fda1f08b59b48c3dd3ce0247097ac633b53ba8940c30e9e08a851724335b63c"
+          },
+          {
+            "fichier": "figures/lecture-it.svg",
+            "question": "Italien",
+            "legende": "Interactions moyennes par publication en mai 2020",
+            "page_pdf": 7,
+            "sha256_svg": "88b79ba972141299773be0455c26400cd4e7ca82e3a18b2dde75d8420088a0e7",
+            "sha256_forme_pdf": "7c07dbb2b06ec9656463ec7ff0475fc046ae64177b6db36cdca0f232b764a1b1"
+          }
+        ],
+        "signatures_premiere_page": [
+          "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+        ],
+        "sha256_pdf": "136988630e91f5c6c00cc0259af7ffb177a4f912bf7fc8b0af97219754938b50",
+        "sha256_markdown": "3493731276a9c57e03ece4ba8a4a17f00d03ada727132f1dde2b2a8ff5c53587",
+        "diagnostic_latex_propre": true
+      }
+    }
+  }
+}

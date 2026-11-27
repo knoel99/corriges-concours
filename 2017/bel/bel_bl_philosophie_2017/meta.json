@@ -21,7 +21,9 @@
     "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/2017-ecrits-communs-ses_1506586985330_0.pdf#page=1",
     "sujet_sha256": "03ec9addf43c6d602d5ba363bea12a3dce3e2f95ce20d99ad95df799ee5842d7",
     "rapport_jury": "https://www.ens.psl.eu/sites/default/files/17_BL_philosophie_com_ecrit.pdf",
-    "rapport_sha256": "d09c0e315a02311ccbf5b7bf22353f7301c5b2879a5bf054eca72befb3dc78d0"
+    "rapport_sha256": "d09c0e315a02311ccbf5b7bf22353f7301c5b2879a5bf054eca72befb3dc78d0",
+    "sha256_sujet": "03ec9addf43c6d602d5ba363bea12a3dce3e2f95ce20d99ad95df799ee5842d7",
+    "sha256_rapport_jury": "d09c0e315a02311ccbf5b7bf22353f7301c5b2879a5bf054eca72befb3dc78d0"
   },
   "figures": [
     {
@@ -67,6 +69,35 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Vérification des deux rapports d’aires, de l’attribution des dialogues platoniciens et de la distinction entre existence et vérité de l’acte. Vérification du rendu des deux éditions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Comparer une pensée en train de se chercher à une réponse déjà formulée. L’improvisation éprouve la définition de la pensée par le jugement ; la dissertation et l’exercice guidé confrontent la reprise musicale à la démonstration géométrique."
     }
-  ]
+  ],
+  "gabarit": "dissertation",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Qu’est-ce que penser ?"
+    ],
+    "pages_du_sujet": 21,
+    "pages_pdf_des_questions": {
+      "Qu’est-ce que penser ?": 1
+    },
+    "precision": "Dissertation unique de 6 heures. Libellé lu sur la page 1 du fascicule officiel. Rapport du jury, pages 1 à 9. Les mouvements du plan sont proposés par le corrigé."
+  }
 }

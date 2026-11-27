@@ -1,0 +1,102 @@
+{
+  "slug": "bel_al_anglais-theme-lyon_2020",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Anglais (thème Lyon)",
+    "annee": 2020,
+    "modalite": "écrit de spécialité"
+  },
+  "questions": 1,
+  "duree_heures": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "provenance": [
+    "ENS de Lyon",
+    "ENS Paris-Saclay (langue anglaise)"
+  ],
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2020-09/2020%20Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=8",
+    "sha256_sujet": "994b2d68067654ccd48e5ab3cd93250544d1ba3909e2d3651b6b2e20aea315ac",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2020-10/Anglais_2020%20internet.pdf#page=14",
+    "sha256_rapport_jury": "b8bbc003adc848e012b206ce76457ac29fccb03c3ab4103aca214eeac91580df",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2020",
+    "pages_sujet_verifiees": [
+      1,
+      8
+    ],
+    "pages_rapport_theme": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ]
+  },
+  "figures": [
+    {
+      "question": "Traduction en anglais",
+      "fichier": "figures/traduction.svg",
+      "legende": "La promenade de Frink entre perception et souvenir"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lva_pt_2325",
+      "session": "/root/lva_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Traduction anglaise intégrale du passage français, guide en français et figure propre au thème."
+    },
+    {
+      "phase": "revision",
+      "agent": "lva_pt_2325",
+      "session": "/root/lva_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture de l’antériorité dans la rectification du premier son, des temps de l’habitude et de la scène, de l’orthographe Mac Sorley du feuillet et du sens de la copie à la dernière phrase."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Traduction en anglais"
+    ],
+    "origine_attestation": {
+      "phase": "revision",
+      "date": "2026-11-27",
+      "sha256_sujet_controle": "994b2d68067654ccd48e5ab3cd93250544d1ba3909e2d3651b6b2e20aea315ac",
+      "perimetre": "Relecture de l’antériorité dans la rectification du premier son, des temps de l’habitude et de la scène, de l’orthographe Mac Sorley du feuillet et du sens de la copie à la dernière phrase."
+    },
+    "repere_par_question": [
+      {
+        "question": "Traduction en anglais",
+        "pages": [
+          8
+        ],
+        "debut": "Le cri d’une bête qu’on égorge",
+        "fin": "décalqués de ses propres rêves.",
+        "paragraphes": 3
+      }
+    ]
+  }
+}

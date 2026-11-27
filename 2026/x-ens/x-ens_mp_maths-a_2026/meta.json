@@ -4,7 +4,11 @@
     "concours": "X-ENS",
     "filiere": "MP",
     "matiere": "Maths A",
-    "annee": 2026
+    "annee": 2026,
+    "filiere_commune": [
+      "MP",
+      "MPI"
+    ]
   },
   "questions": 34,
   "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
@@ -47,7 +51,9 @@
   ],
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Maths%20A_0.pdf",
-    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/MP%2C%20MPI_Maths%20A%20OK.pdf"
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/MP%2C%20MPI_Maths%20A%20OK.pdf",
+    "sha256_sujet": "cb90a488f30167da22937e503e01cd55e9078bcbaa6e1a62123c46bc56b5b665",
+    "sha256_rapport": "41e25c9b6561c3749a5498949f29e525f7f19f4e5aa91f0d68f8809ae1b51ab4"
   },
   "date_revision": "2026-11-24",
   "revision": {
@@ -119,6 +125,70 @@
       "tour": 3,
       "fournisseur": "codex",
       "agent": "relecture_astra_maths_2026"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "agent": "mathematiques_a_mp_mpi_2023_2026",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "34 réponses comparées au sujet et au rapport. Cas d’égalité des deux bornes du rayon numérique et preuve de la seconde identité polynomiale de 26-a par les sommes géométriques des racines de l’unité."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26-a",
+      "26-b",
+      "26-c",
+      "26-d",
+      "27",
+      "28",
+      "29",
+      "30-a",
+      "30-b"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "controle": [
+      "1–10 — compacité, norme subordonnée, compression unitaire et principe du maximum.",
+      "11–17 — contractions, défauts hermitiens, interpolation commune, dilatation finie et changement d’échelle.",
+      "18–25 — spectre, enveloppe convexe, disque de la nilpotente, polarisation et sous-multiplicativité en défaut.",
+      "26-a–30-b — identités polynomiales, moyenne, phase, puissances et cas de la conjecture de Crouzeix."
+    ]
+  }
 }

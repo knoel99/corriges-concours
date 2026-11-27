@@ -1,0 +1,64 @@
+{
+  "slug": "bel_bl_economie-oral-a-option-18-et-19-juin-billet-4_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Économie (oral à option) — 18 et 19 juin, billet 4",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "Comment expliquer l’évolution récente des inégalités économiques dans les pays riches ? / Le PIB et ses critiques",
+  "questions": 0,
+  "sujets": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/economie_18_et_19_juin.pdf#page=4",
+    "sujet_sha256": "7df76ce34689903b9c3212293ead03299ecdbb5abb7299bb9ad77f1b04d367d5",
+    "pages_pdf": "4",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_economie_option.pdf",
+    "rapport_sha256": "08b4440d451c1929edecc0a6e938636121c9e7d63af5b51a18887a8226f0bf6c"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Comment expliquer l’évolution récente des inégalités économiques dans les pays riches ?",
+      "fichier": "figures/part-du-centieme-superieur.svg",
+      "legende": "Part du revenu national perçue par le centième supérieur, ordres de grandeur du World Inequality Report 2018."
+    },
+    {
+      "numero": 2,
+      "question": "Le PIB et ses critiques",
+      "fichier": "figures/moyenne-et-mediane.svg",
+      "legende": "L’augmentation du seul revenu supérieur relève la moyenne et laisse la médiane à 30."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Deux exposés distincts confrontés au billet imprimé et à la liste du jury. Contrôle des mécanismes, des hypothèses et des grandeurs de chaque démonstration. Part du revenu national perçue par le centième supérieur, ordres de grandeur du World Inequality Report 2018. L’augmentation du seul revenu supérieur relève la moyenne et laisse la médiane à 30.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "sujets_entierement_traites": [
+      "Comment expliquer l’évolution récente des inégalités économiques dans les pays riches ?",
+      "Le PIB et ses critiques"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "redaction",
+      "sha256_sujet_controle": "7df76ce34689903b9c3212293ead03299ecdbb5abb7299bb9ad77f1b04d367d5",
+      "perimetre": "Deux exposés distincts confrontés au billet imprimé et à la liste du jury. Contrôle des mécanismes, des hypothèses et des grandeurs de chaque démonstration. Part du revenu national perçue par le centième supérieur, ordres de grandeur du World Inequality Report 2018. L’augmentation du seul revenu supérieur relève la moyenne et laisse la médiane à 30."
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "ens-de-lyon_series-la-lv-sh-a-l_composition-d-histoire-ecrit_2019",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries LA/LV/SH (A/L)",
+    "matiere": "Composition d'histoire (écrit)",
+    "annee": 2019
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2019-10/2019%20composition%20d%27histoire.pdf",
+    "sha256_sujet": "6e33b03bae18ae691ed066e9ce4656a698d25e2f7590bce8eb0b7f36971b04e2",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2019-10/HISTOIRE_2019.pdf#page=1",
+    "sha256_rapport_jury": "a99945d501a506bfc57061f26942bdcc452147247448517fb8b6e0ce09914949"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture-du-document.svg",
+      "question": "I. De 1870 à 1918, rendre la conduite de guerre compatible avec le gouvernement parlementaire",
+      "legende": "Trois configurations des rapports entre guerre, commandement et légitimité politique."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Composition intégrale sur l’énoncé original d’une page et le rapport institutionnel, pages 1 à 5 (jusqu’au changement d’épreuve). Deux éditions et chronologie raisonnée.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

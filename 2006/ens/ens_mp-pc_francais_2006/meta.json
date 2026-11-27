@@ -1,0 +1,78 @@
+{
+  "slug": "ens_mp-pc_francais_2006",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Français",
+    "annee": 2006,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "Fromentin, l’examen des actes et le moment du bonheur",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2006/sujet-2006-ecrit-mp-pc_francais.pdf",
+    "sha256_sujet": "6fffe2f6bd6c58522df00e0bcd25ad7b89a3d3183e57dd4d065ac167bd7b1918",
+    "index_sujet": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2006",
+    "code_garde": "61.11PM",
+    "oeuvres_au_programme": [
+      "Sénèque, La Vie heureuse et De la brièveté de la vie",
+      "Anton Tchékhov, Oncle Vania",
+      "J. M. G. Le Clézio, Le Chercheur d’or"
+    ],
+    "portee_rapport": "Le cahier 61.11PM émane des ENS de Paris, Lyon et Cachan. Il donne « une affaire de temps » ; le rapport du jury reformule « une question de temps ». À la p. 2, le rapport présente deux lectures de l’antécédent de « c’est » et indique les avoir admises. La copie adopte d’abord l’examen rétrospectif et éprouve ensuite la lecture pratique.",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2006/sujet-2006-ecrit-mp-pc_francais.pdf",
+        "sha256": "6fffe2f6bd6c58522df00e0bcd25ad7b89a3d3183e57dd4d065ac167bd7b1918",
+        "pages": 1,
+        "ecoles": "ENS de Paris, de Lyon et de Cachan",
+        "url_originale": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2006/sujet-2006-ecrit-mp-pc_francais.pdf",
+        "date_capture_utc": "sans capture",
+        "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2006"
+      },
+      {
+        "role": "rapport",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2006/rapport-2006-pc_ecrit_francais.pdf",
+        "sha256": "f4e5c28dffd551c525a02a216f2858d54e8ddeb40450b5ab31add3d5b1316d8f",
+        "pages": 3,
+        "ecoles": "ENS de Paris, de Lyon et de Cachan",
+        "url_originale": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2006/rapport-2006-pc_ecrit_francais.pdf",
+        "date_capture_utc": "sans capture",
+        "index": "https://banques-ecoles.fr/cms/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2006"
+      }
+    ],
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2006/rapport-2006-pc_ecrit_francais.pdf",
+    "sha256_rapport_jury": "f4e5c28dffd551c525a02a216f2858d54e8ddeb40450b5ab31add3d5b1316d8f"
+  },
+  "figures": [
+    {
+      "fichier": "figures/temps-et-occasion.svg",
+      "question": "Dissertation",
+      "legende": "Trois manières de rapporter le bonheur au temps. Les années consacrées à une fin ne suffisent jamais à prouver qu’elle était bonne."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "option_info_2006_2009",
+      "agent": "option_info_2006_2009",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Dissertation sur le temps du jugement et l’opportunité dans les deux traités de Sénèque, Oncle Vania et Le Chercheur d’or. Lecture distincte des deux interprétations de l’anaphore, des temporalités et du mot à-propos. Guide argumenté et figure."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "limites": "Une interprétation argumentée du sujet. Les exemples des œuvres sont paraphrasés sauf indication explicite."
+  }
+}

@@ -10,6 +10,8 @@
 
 **Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 *De la topologie dans les ondes : de la matière condensée à El Niño.* Durée 4 h, calculatrice interdite. 45 questions (numérotation du sujet, sous-questions comprises).
 
 ## Partie I — Chaînes masse-ressort
@@ -619,8 +621,12 @@ $$\boxed{\lambda_c=\frac{2\pi}{\sqrt A}=2\pi\sqrt{\frac{c}{\beta(2n+1)}}}$$
 
 ![Figure 10 — Les crêtes de Rossby se déplacent vers l’ouest. Le sens de propagation d’un paquet dépend de sa longueur d’onde.](figures/q35-vitesses-rossby.svg)
 
+Au seuil $|k_x|=\sqrt A$, la vitesse de groupe s’annule. En posant $L_{\rm eq}=\sqrt{c/\beta}$, on trouve pour le premier mode de Rossby ($n=1$) $\lambda_c=(2\pi/\sqrt3)L_{\rm eq}\simeq3{,}63L_{\rm eq}$. La profondeur $H$ qui fixe $c=\sqrt{gH}$ n’est pas chiffrée dans l’énoncé.
+
 #### Question 36
 
 Les alizés entretiennent normalement une accumulation d’eau chaude dans l’ouest du Pacifique tropical. Lorsqu’ils faiblissent ou que survient un coup de vent d’ouest, une perturbation de hauteur peut exciter une **onde équatoriale de Kelvin d’enfoncement**. Sa loi $\omega=ck_x$ donne $v_g=c>0$ : elle transmet le long de l’équateur, vers la côte sud-américaine, une élévation du niveau de la mer et un approfondissement de la thermocline.
 
 Au large du Pérou, la couche d’eau chaude s’épaissit. Une remontée d’eau côtière peut subsister, mais elle puise alors dans des eaux plus chaudes, ce qui favorise le réchauffement de surface. C’est la **perturbation** qui traverse le bassin à la célérité $c$ : les particules d’eau ne parcourent pas toutes cette distance avec l’onde.
+
+On peut aussi vérifier le guidage équatorial avec les équations de Q32. Sur la branche de Kelvin, $v=0$ et $\omega=ck_x$ donnent $u=g\eta/c$ pour $k_x\ne0$. L’équilibre méridien impose alors $g\,\mathrm d\eta/\mathrm dy=-\beta yu$, soit $\eta(y)=\eta(0)\exp[-\beta y^2/(2c)]$. La perturbation qui se déplace vers l’est reste ainsi concentrée de part et d’autre de l’équateur sur une largeur caractéristique $\sqrt{c/\beta}$.

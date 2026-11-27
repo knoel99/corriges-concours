@@ -10,6 +10,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Sujet** — Jerzy Grotowski, le don de soi et la discipline formelle
 
 ## Introduction
@@ -43,6 +45,10 @@ Si cette lecture donne sa force à l’exigence de Grotowski, le vocabulaire de 
 Les deux dernières phrases de Grotowski changent de sujet grammatical. Après les verbes qui engagent celui qui joue, c’est « cet acte » qui atteint un sommet et qui apporte l’apaisement. Le bénéficiaire de cet apaisement reste sans nom. En faire d’emblée la catharsis du spectateur importerait une théorie de la réception dans une proposition qui vient de décrire le travail de l’interprète. Une représentation peut ainsi mener l’acteur au terme exact de son action tout en laissant la salle dans l’inquiétude.
 
 Un autre spectacle permet de saisir l’importance active des limites. Dans *Café Müller* (Pina Bausch, 1978), une interprète avance les yeux fermés au milieu des chaises. Un partenaire dégage précipitamment le passage. Le risque que perçoit le spectateur n’aurait pas la même qualité si l’espace était vide, ni si la personne pouvait contrôler du regard le déplacement de chaque obstacle. L’abandon apparent se compose de deux travaux au moins : confier le trajet à l’autre et dégager le trajet à temps. Le bruit des chaises heurtées ou déplacées rend audible la responsabilité de celui qui veille. La confiance annoncée par Grotowski trouve là une condition objective. Elle a lieu dans une relation réglée qui rend possible un risque partagé. Rechercher l’accident réel pour prouver que l’interprète s’est « donné totalement » détruirait la forme de coopération grâce à laquelle le danger devient perceptible sur scène.
+
+Dans *Café Müller*, l’interprète qui ne voit pas les obstacles et le partenaire qui les déplace engagent leur attention de façon différente. Si le second intervenait après le passage de la première, la même dépense de mouvement perdrait toute sa portée. La confiance dont parle Grotowski prend ici une forme que le spectateur peut vérifier : elle se joue dans la coordination temporelle de deux actions.
+
+![Figure 1 — Responsabilités distinctes des partenaires dans un déplacement.](figures/cafe-muller.svg)
 
 Enfin le spectateur peut avoir à juger ce que l’interprète lui présente. Chez Brecht, dans *Mère Courage et ses enfants*, la réserve de Courage face au corps de Schweizerkas appartient à une conduite sociale déterminée. Reconnaître publiquement le mort exposerait les survivants. Quand Weigel donne à ce deuil la forme d’un cri sans son, le geste est à la fois un mouvement de douleur et une action située dans une économie de la guerre. La précision de sa forme ouvre une différence entre éprouver avec Courage et examiner les conditions dans lesquelles il lui faut agir. L’actrice offre au public la possibilité de ne pas se confondre avec elle. Ce qui se donne peut donc être aussi un intervalle laissé libre pour le jugement d’autrui.
 

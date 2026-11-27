@@ -1,0 +1,69 @@
+{
+  "slug": "x-ens_mp-pc-psi_allemand_2016",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Allemand",
+    "annee": 2016,
+    "modalite": "écrit"
+  },
+  "intitule": "Le scandale Volkswagen et le crédit de la marque allemande",
+  "questions": 2,
+  "redaction": "Synthèse allemande titrée des quatre pièces et réponse en allemand aux arguments de l’éditorial. Le scandale Volkswagen et le crédit de la marque allemande.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/06/16_mp_pc__LV_Allemand_XEULC.pdf",
+    "sha256_sujet": "75512776e154f97a896f25199e0f01ea8e2da4d86a18bab4ba0ca21658f76e81",
+    "code_garde": "XEULCR",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2016/",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/03/16_MP-PC_rap_Eall.pdf",
+    "sha256_rapport_jury": "7e8af56c6c7a1f2f0d43d9459d9a99f3534ccd3aadddf205baab1c61a308ef30",
+    "pages_sujet": 10,
+    "perimetre_sujet": "caricature p. 2, A1–A3 p. 3–8, B p. 9–10",
+    "precision_rapport": "Le rapport porte sur MP et PC. La garde du sujet inclut également PSI.",
+    "autre_publication_sujet": "https://www.ens.psl.eu/IMG/file/concours/2016/sujets/MPI/16_mppc_sujet_lve_all.pdf",
+    "sha256_autre_publication_sujet": "4b2d87150a68bfd23598e3e7b7b419ba04a136a0881f80b56bcdb3595d738d81",
+    "autre_publication_rapport": "https://www.ens.psl.eu/IMG/file/concours/2016/rapports/16_mppc_rap_eall.pdf",
+    "sha256_autre_publication_rapport": "18dccf93a26da46f029850df32e9b00e01284c002665e6d8d3da7e9efa70fa16"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/marque-publics.svg",
+      "legende": "Trois lectures de la confiance après le scandale Volkswagen, dans les pièces de la partie A."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des 3 pages du rapport sur les deux productions, la langue et la lecture du dossier."
+    },
+    {
+      "phase": "redaction",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Synthèse allemande titrée des quatre pièces et réponse en allemand aux arguments de l’éditorial. Le scandale Volkswagen et le crédit de la marque allemande."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  }
+}

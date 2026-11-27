@@ -77,6 +77,61 @@
       "perimetre": "Les 30 réponses et indications ont été vérifiées sur le PDF officiel FUI-FF du printemps. En E.6, identité intégrale de seconde différence pour la dérivée au bord alterné. En P.15, comparaison explicite des colonnes pour rendre le facteur droit indépendant du facteur gauche. Vérification des cinq figures. Aucun rapport individuel dans le registre de la banque.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Vérification sur le fac-similé des sept questions de l’exercice et des 23 rubriques du problème. La dérivée à droite au bord en E6 est établie pour tout a strictement positif, y compris a=1. Vérification des dimensions en P11, de la branche transposée en P16 et des quatre images du tracé de rang un en P2.",
+      "tour": 2
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "E.1",
+      "E.2",
+      "E.3",
+      "E.4",
+      "E.5",
+      "E.6",
+      "E.7",
+      "P.1",
+      "P.2",
+      "P.3a",
+      "P.3b",
+      "P.3c",
+      "P.4",
+      "P.5a",
+      "P.5b",
+      "P.6a",
+      "P.6b",
+      "P.6c",
+      "P.7",
+      "P.8",
+      "P.9",
+      "P.10",
+      "P.11",
+      "P.12a",
+      "P.12b",
+      "P.13",
+      "P.14a",
+      "P.14b",
+      "P.15",
+      "P.16"
+    ],
+    "precision": "Les 30 rubriques des deux éditions ont été rapprochées du fascicule institutionnel de 4 pages de l’École polytechnique. Vérification sur le fac-similé des sept questions de l’exercice et des 23 rubriques du problème. La dérivée à droite au bord en E6 est établie pour tout a strictement positif, y compris a=1. Vérification des dimensions en P11, de la branche transposée en P16 et des quatre images du tracé de rang un en P2.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "53fc7e29eb944459f7becd1821159f1bb57cbadf8b46580b40f203a5b28a0d43",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Vérification sur le fac-similé des sept questions de l’exercice et des 23 rubriques du problème. La dérivée à droite au bord en E6 est établie pour tout a strictement positif, y compris a=1. Vérification des dimensions en P11, de la branche transposée en P16 et des quatre images du tracé de rang un en P2.",
+      "commit_redaction_anterieure": "37173e90127549a995e0551d6f87ccc44920d85f"
+    }
+  }
 }

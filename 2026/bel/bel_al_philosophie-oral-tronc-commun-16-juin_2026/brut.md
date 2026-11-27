@@ -6,7 +6,9 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Le jury publie 12 billets pour le 16 juin. Pour chacun, le premier intitulé est celui qui a été choisi. Le second était proposé au choix. Les deux reçoivent ici des réponses distinctes. Les exemples et arguments proposés servent à préparer une leçon personnelle.
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Les 12 billets du [16 juin](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_tc_1al.pdf) figurent ici dans l’ordre du feuillet. Le premier sujet de chaque paire a été choisi. Les deux sont traités. Le [rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf) précise les modalités. Lisez les deux sujets devant le jury, puis annoncez votre choix après 1 h 30 de préparation. L’oral, de coefficient 3, comprend 20 minutes d’exposé et 10 minutes d’entretien. Seul le dictionnaire de langue française est autorisé, à l’exclusion des dictionnaires de noms propres.
 
 ## 1. Peut-on faire le bien d’autrui ?
 
@@ -131,5 +133,3 @@ Reste à savoir si l’on doit rechercher le troisième. L’élève qui imite l
 ### Traiter autrui comme on veut qu’il nous traite
 
 La réciprocité décentre mon jugement. Avant de répandre une information sur un ami, je peux me demander ce que j’éprouverais si l’on disposait de mes confidences. La règle perd cependant sa force si j’impose à autrui le détail de mes goûts. J’aime recevoir des visites sans prévenir, mon voisin a besoin de solitude. Lui rendre exactement ce que je souhaite pour moi peut le gêner. Ce que la permutation des places permet de dégager est une exigence valable pour chacun, par exemple pouvoir décider qui entre chez soi. L’application morale demande ensuite de s’informer des raisons et des circonstances de la personne réelle. Le passage par soi est ainsi une occasion de sortir de sa place, à condition d’accepter que l’autre nous apprenne en quoi la sienne diffère.
-
-[Feuille officielle du 16 juin](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_tc_1al.pdf) · [Rapport du jury, modalités et annexe des sujets](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf)

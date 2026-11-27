@@ -2,7 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 Le sujet relie l’entropie relative, la variance et la concentration d’une mesure sur la droite. Le rapport insiste sur les justifications d’intégrabilité et sur la constante exacte dans 7c. Les arguments de domination ci-dessous précisent pour quelle mesure ils sont valables.
 
@@ -35,7 +37,7 @@ Pour $s\ge e$, $s\le s\ln s=h(s)$. Pour $0\le s<e$, on a $s\le e$. D’où $0\le
 
 Pour $a>0$, $h'(a)=1+\ln a$. Pour $s>0$ l’écart à la tangente est $s\ln(s/a)-s+a$, de dérivée $\ln(s/a)$. Son unique minimum est zéro, atteint en $a$. Au point $s=0$, l’écart vaut $a>0$. Cela établit la stricte inégalité en tout point différent de $a$.
 
-![Figure 1 — La tangente en un donne la minoration de la fonction entropique. En zéro, l’écart vaut un.](figures/tangente-entropie.svg)
+![Figure 1 — La courbe de h part de (0, 0), atteint son minimum en s = 1/e puis touche la tangente en (1, 0). À gauche, les ordonnées diffèrent de un.](figures/tangente-entropie.svg)
 
 ### Question 2c
 
@@ -158,6 +160,12 @@ Notons $U=\Phi_f$. On a $\delta\le U\le\|f\|_\infty$, donc $h'$ et ses deux dér
 
 Pour $0\le t<\pi/2$, en combinant 7a, 5b et 7b, $-J'(t)\le(\sin t\cos t/2)E_\mu\Phi_g=(\sin t\cos t/2)E_\mu g$. La dernière égalité suit de 5d pour $g$ continue bornée. On intègre jusqu’à $\pi/2$ par continuité en l’extrémité. L’intégrale de $\sin t\cos t/2$ vaut $1/4$. La différence $J(0)-J(\pi/2)$ de 6 donne l’inégalité voulue.
 
+Pour préciser le passage à l’extrémité, intégrons d’abord jusqu’à $b<\pi/2$. Alors
+$$
+J(0)-J(b)\le\tfrac14\sin^2(b)\,E_\mu g.
+$$
+La continuité de $J$ établie en Q6 autorise ensuite $b\uparrow\pi/2$ et donne le coefficient $1/4$.
+
 ### Question 8
 
 > [!INDICATION]
@@ -240,6 +248,8 @@ Pour $a\ge M$ et $\lambda\ge0$, $\mathbf 1_{[a,\infty)}(x)\le e^{\lambda(x-a)}$.
 #### Solution
 
 Pour $\alpha\le0$ le résultat est immédiat. Supposons $0<\alpha<1/C$. La réflexion $x\mapsto -x$ conserve l’hypothèse (1) en remplaçant $m(x)$ par $m(-x)$ et $f(x)$ par $f(-x)$. En appliquant 13a aux deux densités, pour $r\ge|M|$ on a $\mathbb P_m(|X|\ge r)\le2e^{-(r-|M|)^2/C}$, où $X$ désigne la variable de densité $m$. Par intégration de $2\alpha r e^{\alpha r^2}$ entre $0$ et $|X|$, puis Tonelli, $E_m e^{\alpha X^2}=1+\int_0^\infty2\alpha r e^{\alpha r^2}\mathbb P_m(|X|>r)dr$. À l’infini, le coefficient de $r^2$ dans l’exposant majorant est $\alpha-1/C<0$, donc l’intégrale converge. Sur un segment borné elle est finie.
+
+La convergence de la queue se lit aussi sans développement asymptotique. Posons $d=1/C-\alpha>0$. En utilisant $2|M|r/C\le dr^2/2+2M^2/(dC^2)$, l’intégrande majorant est au plus une constante fois $r e^{-dr^2/2}$ pour $r\ge|M|$. Son intégrale est finie.
 
 ## IV. Transport croissant et élargissement des ensembles
 

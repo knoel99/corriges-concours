@@ -32,5 +32,71 @@
       "fournisseur": "codex",
       "agent": "astra_maths"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2.a",
+      "2.b",
+      "3.a",
+      "3.b",
+      "4",
+      "5.a",
+      "5.b",
+      "6.a",
+      "6.b",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12.a",
+      "12.b",
+      "12.c",
+      "13",
+      "14.a",
+      "14.b",
+      "15.a",
+      "15.b",
+      "15.c",
+      "16"
+    ],
+    "pages_des_questions": {
+      "1": 2,
+      "2.a": 2,
+      "2.b": 2,
+      "3.a": 2,
+      "3.b": 2,
+      "4": 2,
+      "5.a": 2,
+      "5.b": 2,
+      "6.a": 2,
+      "6.b": 2,
+      "7": 2,
+      "8": 2,
+      "9": 3,
+      "10": 3,
+      "11": 3,
+      "12.a": 3,
+      "12.b": 3,
+      "12.c": 3,
+      "13": 3,
+      "14.a": 4,
+      "14.b": 4,
+      "15.a": 4,
+      "15.b": 4,
+      "15.c": 4,
+      "16": 4
+    },
+    "origine_attestation": {
+      "commit_du_journal": "c0008dde9eed64f0fc541fc30d1b816ceb6b41d7",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction complète du sujet XLC et confrontation au rapport. Vérification des récurrences sur les matrices normales, de l’unicité de la racine positive, de la terminaison du transfert sur une matrice doublement stochastique, puis de la conjugaison optimale. Figure dédiée aux quatre coefficients modifiés dans la question 14.b.",
+      "sha256_sujet_controle": "3ab5b44855518dac48832488d3a095b9df2cbde65b9fc5bfe6f6a2739a1d00b1",
+      "sha256_rapport_controle": "ecc1413ff98451e1169cd0eb144957531d981e65f11359c5f9e2224bc6b444d4"
+    },
+    "precision": "Les 25 rubriques des deux éditions ont été rapprochées des pages 2 à 4 du sujet et de la rédaction signée. Les arguments sur les multiplicités, les valeurs propres nulles, l’unicité de la racine positive, le maximum en 12.c et le transfert fini en 14.b ont été pointés sur le rapport du jury. Le transfert a également été testé en arithmétique rationnelle, et la distance de Frobenius sur 125 couples hermitiens."
+  }
 }

@@ -1,0 +1,170 @@
+{
+  "slug": "bel_al_allemand-commentaire-et-traduction_2018",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Allemand (commentaire et traduction)",
+    "annee": 2018,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "duree_heures": 6,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2018-10/2018%20commentaire%20et%20traduction%20en%20LVE.pdf#page=2",
+    "sujet_sha256": "7fc20aeb691b830e55ba968bf8ddffeea75d8b969364dfe82fb2483888cfae3e",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-11/Fascicule%20ALLEMAND_2018.pdf#page=1",
+    "rapport_jury_sha256": "ce5e56e95856b9436b9623cd0fa513b8bf61349c07f67319f7ef63fd5e4050ca",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2018",
+    "ouvrage": "Heinrich Mann, *Der Untertan*, 1919 (date indiquée par le feuillet).",
+    "pages_rapport_verifiees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "section_rapport": "Écrit, toutes séries, commentaire et traduction."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2018-10/2018%20commentaire%20et%20traduction%20en%20LVE.pdf#page=2",
+      "sha256": "7fc20aeb691b830e55ba968bf8ddffeea75d8b969364dfe82fb2483888cfae3e",
+      "pages": 22,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "a9a09feebfbb36d1f404a22eea05e1d0743377d81e7235c6b744455834e6c70c"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "581ca6e68ef16632e18c24c5a57851c8cd6f26dc105510cf8878491b40747133"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "c73a19fbf4c5f21f4844c9357ea9011e4fbe88a7d32eb32277d4a1a5eb9dcd3f"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2018-11/Fascicule%20ALLEMAND_2018.pdf#page=1",
+      "sha256": "ce5e56e95856b9436b9623cd0fa513b8bf61349c07f67319f7ef63fd5e4050ca",
+      "pages": 20,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "28016c5eb814f5ffba8d9c7bb7c000896ce0def21db60577b4b7b9a6a6e54047"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "8af35badf415759d5ad0357480093ed71839fd7f8cc47aff4e32052d17f1dc3c"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "f25645dd2adaec77411f985afbda692a8ffd5c47971c34090cb02d23d0da53d2"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "6984711af7065c0a20698c54e298b5bc92c48ff8add3b9550b71c5233470e17b"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "1913c67ba5c72ecd2614147251764bfcac74d3d3334aa21594ccd1ddcf7ed177"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "c09127c38318fabc77f98b068f4dbc12104577d7977b03f5a39f735d50087d5d"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "84677d6d6dedeab2d1ccd9b6390f07b2eb2371a9f0e58bf9bb20b8e1eb367d2b"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "2754b76d06beb8385ca7a8b840b31749a00151622528414516f199e273200960"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "Commentaire en allemand",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "Le geste qui autorise la prise de parole et celui qui déclenche l’applaudissement encadrent le discours."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire allemand de l’extrait entier, version française de toutes les phrases prescrites, indications et schéma."
+    },
+    {
+      "phase": "revision",
+      "agent": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Examen des relais hiérarchiques et du regard en arrière repris par le narrateur. Vérification des deux empereurs, de la forme passive du don, du jeu sur Geschäft et de la phrase finale du passage français."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire en allemand",
+      "Version française"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "Commentaire en allemand",
+        "pages_pdf": [
+          2,
+          3
+        ],
+        "lignes": [
+          1,
+          56
+        ],
+        "langue": "allemand"
+      },
+      {
+        "question": "Version française",
+        "pages_pdf": [
+          2
+        ],
+        "lignes": [
+          12,
+          27
+        ],
+        "premiers_mots": "Nach einigem Schnaufen",
+        "derniers_mots": "ein beispielloser zu nennen.",
+        "langue": "français"
+      }
+    ]
+  }
+}

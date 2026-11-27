@@ -1,0 +1,128 @@
+{
+  "slug": "ens-paris-saclay_design_histoire-de-lart_2015",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Histoire de l’art",
+    "annee": 2015,
+    "modalite": "écrit",
+    "etablissement_imprime": "École normale supérieure de Cachan"
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2015_Sujet_1A_Design_Histoire_art.pdf",
+    "sha256_sujet": "1add37a8463d3fc3eb64219e60a4e6cd80c6a6addc3399996c588e7a8a049934",
+    "rapport_jury": null,
+    "notices_documentaires": [
+      {
+        "titre": "Premier showroom d’Älmhult, IKEA Museum",
+        "url": "https://www.ikeamuseum.com/en/explore/the-story-of-ikea/maybe-furniture/"
+      },
+      {
+        "titre": "Carlton, Metropolitan Museum of Art",
+        "url": "https://www.metmuseum.org/art/collection/search/486989"
+      },
+      {
+        "titre": "Tejo Remy, commode de 1991, MoMA",
+        "url": "https://www.moma.org/collection/works/3578"
+      },
+      {
+        "titre": "Total Furnishing Unit, TU Delft",
+        "url": "https://journals.open.tudelft.nl/dash/article/view/4975"
+      }
+    ],
+    "index_annales": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=283",
+    "code_sujet": "C15104",
+    "page_pdf_sujet": 1,
+    "citation_repere": "un circuit sans fin de production et de consommation",
+    "consigne_imprimee": "Vous analysez et discuterez cette citation de Hal Foster en relation avec le programme.",
+    "programme": "Graphisme et design, de la crise moderne aux diktats du marché (1953–2000)",
+    "reference_imprimee": "Hal Foster, Design and Crime (And Other Diatribes), Verso Books, 2002.",
+    "index_annales_sha256": "aaa155faeda44569168b47523def7c3e904ad9265e0580e0026ef76ee1135682",
+    "rapport_jury_verification": "Aucun rapport d’histoire de l’art pour cette session n’est proposé sur l’index institutionnel examiné."
+  },
+  "figures": [
+    {
+      "fichier": "figures/analyse-du-design.svg",
+      "question": "I. Dans le commerce de masse, exposer résout un problème de confiance et ouvre un répertoire de gestes",
+      "legende": "De la salle d’exposition au catalogue, la scène d’intérieur suggère un achat complémentaire."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des deux compositions après lecture de la page 1 du sujet. Problématisation et datation des exemples, vérification des notices documentaires et du dessin analytique original.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "lettres_design",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Qualification du retour entre catalogue et logement dans le circuit de Foster, avec exercice de lecture du dispositif."
+    },
+    {
+      "phase": "revision",
+      "tour": 2,
+      "agent": "x_hist_1986",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture de la place du display dans le circuit post-fordiste, de la datation du texte et du contre-exemple des meubles de récupération. Précision sur la Total Furnishing Unit."
+    }
+  ],
+  "duree_heures": 4,
+  "date_revision": "2026-11-26",
+  "intitule_editorial": true,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2015_Sujet_1A_Design_Histoire_art.pdf",
+      "sha256": "1add37a8463d3fc3eb64219e60a4e6cd80c6a6addc3399996c588e7a8a049934",
+      "pages": 1,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "369e2662c39dc1be21eb8ac88a3cda7608b752d8bf5ed2f8c811b4df42ec1835"
+        }
+      ]
+    }
+  },
+  "intitule": "L’exposition dans le circuit du design selon Hal Foster",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "consigne": "Vous analysez et discuterez cette citation de Hal Foster en relation avec le programme.",
+        "page_pdf": 1,
+        "code": "C15104"
+      }
+    ],
+    "annexes_sujet": [],
+    "reproductions_sujet": [],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

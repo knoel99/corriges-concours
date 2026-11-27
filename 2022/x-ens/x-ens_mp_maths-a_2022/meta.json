@@ -17,7 +17,7 @@
     {
       "fichier": "figures/q4-angle-principal.svg",
       "question": "Q4a",
-      "legende": "Sur deux droites, le maximum du produit scalaire des vecteurs unitaires est le cosinus de leur angle aigu ou droit."
+      "legende": "Le maximum du produit scalaire de deux vecteurs unitaires portés par les droites vaut le cosinus de leur angle principal, compris entre zéro et un angle droit."
     },
     {
       "fichier": "figures/q8-volume-hauteur.svg",
@@ -42,9 +42,11 @@
   ],
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20MP%20SUJET%20DE%20MATHS%20A%20%28XLSR%29.pdf",
-    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20MP%20RAPPORT%20ECRIT%20MATHS%20A%20%28XLSR%29.pdf"
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20MP%20RAPPORT%20ECRIT%20MATHS%20A%20%28XLSR%29.pdf",
+    "sha256_sujet": "e12468b203f48eb2defe16d9933e7e05bfd576a8cf43cd3207fddad2a8d507c7",
+    "sha256_rapport_jury": "244d3bd8d2620ea921110489b985114f82737101a5c6cc22cadcc6ab91976725"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "revision": {
     "date": "2026-11-24",
     "modele": "OpenAI Codex",
@@ -101,6 +103,65 @@
       "perimetre": "Relecture intégrale des 33 réponses dans les deux éditions à partir du sujet et du rapport officiels. Formule de hauteur, égalité pour le déterminant mixte, développement par mineurs et chemin orienté explicite suivant l’indication de la question 15. Contrôle des six figures.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_maths_b_recentes",
+      "modifications": true,
+      "perimetre": "Comparaison des 33 repères et des six figures au sujet et au rapport, dont les conditions (i) et (ii) incluses en 1b. Vérification des cas d’égalité, des deux arguments de Gram, de la détermination du sous-espace et du chemin orienté. Précision du cas d’angle nul dans la légende et des deux points isolés en dimension pleine."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1a",
+      "1b",
+      "2",
+      "3a",
+      "3b",
+      "3c",
+      "3d",
+      "4a",
+      "4b",
+      "4c",
+      "5a",
+      "5b",
+      "6a",
+      "6b",
+      "6c",
+      "7a",
+      "7b",
+      "7c",
+      "8a",
+      "8b",
+      "8c",
+      "9a",
+      "9b",
+      "10a",
+      "10b",
+      "10c",
+      "11",
+      "12",
+      "13a",
+      "13b",
+      "14a",
+      "14b",
+      "15"
+    ],
+    "precision": "Énoncé de 7 pages PDF et rapport de 5 pages PDF. Comparaison des 33 repères et des six figures au sujet et au rapport, dont les conditions (i) et (ii) incluses en 1b. Vérification des cas d’égalité, des deux arguments de Gram, de la détermination du sous-espace et du chemin orienté. Précision du cas d’angle nul dans la légende et des deux points isolés en dimension pleine.",
+    "origine_attestation": {
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "e12468b203f48eb2defe16d9933e7e05bfd576a8cf43cd3207fddad2a8d507c7",
+      "sha256_rapport_jury_controle": "244d3bd8d2620ea921110489b985114f82737101a5c6cc22cadcc6ab91976725",
+      "perimetre": "Comparaison des 33 repères et des six figures au sujet et au rapport, dont les conditions (i) et (ii) incluses en 1b. Vérification des cas d’égalité, des deux arguments de Gram, de la détermination du sous-espace et du chemin orienté. Précision du cas d’angle nul dans la légende et des deux points isolés en dimension pleine.",
+      "commit_edition_anterieure": "23d921c99261732f9f57e0a73e95a734900aafec"
+    }
+  }
 }

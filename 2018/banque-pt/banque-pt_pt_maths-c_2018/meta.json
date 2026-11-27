@@ -1,0 +1,267 @@
+{
+  "slug": "banque-pt_pt_maths-c_2018",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths C",
+    "intitule_officiel": "Épreuve de Mathématiques C",
+    "annee": 2018
+  },
+  "questions": 32,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2018/math_c_2018_pt.pdf",
+    "sujet_sha256": "cc736571276b20bbbff0d63477b973f04093800c8330bf965497b7745723726b",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2018/rapport_math_c_ecrit_2018.pdf",
+    "rapport_jury_sha256": "8f7409851271846b957ae224d12176358335e4b7d88af5dba8cd6b03e2169c6a",
+    "pages_rapport": 7,
+    "grille_ecoles": "https://www.banquept.fr/documents/livret/2018/Livret_PT_2018.pdf#page=12",
+    "grille_sha256": "074f6cb1f105a67da4afcbc0b1f0746fb294077f31f1f0f23d60a14f24a26457",
+    "page_grille": 12,
+    "coefficients_admissibilite": {
+      "X": 6,
+      "ENS Paris-Saclay": 3,
+      "ENS Rennes": 3
+    }
+  },
+  "figures": [
+    {
+      "question": "I.5.c",
+      "fichier": "figures/oscillations-dirichlet.svg",
+      "legende": "Les intégrales tronquées oscillent autour de π/2. Les valeurs aux multiples de π sont les Jn."
+    },
+    {
+      "question": "II.3.f.iv",
+      "fichier": "figures/coupure-exponentielle.svg",
+      "legende": "Pour trois valeurs de a, la coupure indiquée sépare la partie où l’exponentielle est uniformément petite de l’extrémité dont la longueur diminue."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "P.1",
+      "P.2",
+      "P.3",
+      "I.1.a.i",
+      "I.1.a.ii",
+      "I.1.a.iii",
+      "I.1.b",
+      "I.1.c",
+      "I.1.d",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5.a",
+      "I.5.b",
+      "I.5.c",
+      "II.1.a",
+      "II.1.b",
+      "II.2.a",
+      "II.2.b",
+      "II.2.c",
+      "II.3.a",
+      "II.3.b",
+      "II.3.c",
+      "II.3.d",
+      "II.3.e",
+      "II.3.f.i",
+      "II.3.f.ii",
+      "II.3.f.iii",
+      "II.3.f.iv",
+      "II.3.g",
+      "II.3.h",
+      "II.3.i"
+    ],
+    "pages_du_sujet": 5,
+    "pages_pdf_des_questions": {
+      "P.1": 2,
+      "P.2": 2,
+      "P.3": 2,
+      "I.1.a.i": 2,
+      "I.1.a.ii": 2,
+      "I.1.a.iii": 2,
+      "I.1.b": 2,
+      "I.1.c": 2,
+      "I.1.d": 2,
+      "I.2": 3,
+      "I.3": 3,
+      "I.4": 3,
+      "I.5.a": 3,
+      "I.5.b": 3,
+      "I.5.c": 3,
+      "II.1.a": 3,
+      "II.1.b": 3,
+      "II.2.a": 3,
+      "II.2.b": 4,
+      "II.2.c": 4,
+      "II.3.a": 4,
+      "II.3.b": 4,
+      "II.3.c": 4,
+      "II.3.d": 4,
+      "II.3.e": 4,
+      "II.3.f.i": 4,
+      "II.3.f.ii": 4,
+      "II.3.f.iii": 5,
+      "II.3.f.iv": 5,
+      "II.3.g": 5,
+      "II.3.h": 5,
+      "II.3.i": 5
+    },
+    "repere_par_question": [
+      {
+        "question": "P.1",
+        "page_pdf": 2
+      },
+      {
+        "question": "P.2",
+        "page_pdf": 2
+      },
+      {
+        "question": "P.3",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.1.a.i",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.1.a.ii",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.1.a.iii",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.1.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.1.c",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.1.d",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.2",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.3",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.4",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.5.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.5.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.5.c",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.1.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.1.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.2.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.2.b",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.2.c",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.3.a",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.3.b",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.3.c",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.3.d",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.3.e",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.3.f.i",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.3.f.ii",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.3.f.iii",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.3.f.iv",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.3.g",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.3.h",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.3.i",
+        "page_pdf": 5
+      }
+    ],
+    "precision": "Les bornes en π/2 − 1/√a de II.3.f.iii et II.3.h appellent une restriction pour a suffisamment grand. Les deux éditions démontrent les inégalités pour a ≥ 4/π² et donnent le même petit paramètre comme contre-exemple aux formulations universelles. La limite à l’infini reste celle demandée."
+  },
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Lecture des cinq pages du sujet, du rapport spécifique de 7 pages et de la grille d’admissibilité page 12. Rédaction des 32 réponses et des indications, vérification des figures. Les bornes en π/2 − 1/√a de II.3.f.iii et II.3.h appellent une restriction pour a suffisamment grand. Les deux éditions démontrent les inégalités pour a ≥ 4/π² et donnent le même petit paramètre comme contre-exemple aux formulations universelles. La limite à l’infini reste celle demandée. Le rapport, pages 4–7, insiste sur le prolongement de classe C¹, la distinction entre convergence d’intégrales tronquées et convergence impropre, et les modules dans les majorations."
+    }
+  ]
+}

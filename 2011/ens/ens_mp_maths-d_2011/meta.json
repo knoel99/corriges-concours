@@ -11,13 +11,19 @@
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-mp/session-2011/sujet_math_d_mp2011.pdf",
     "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/session-2011/rap_ecrit_math_d_u_mp2011.pdf",
-    "sha256_sujet": "d16f69e3e7c321c75ba8cce7e88b7e567be303253dfced5b9c27db1d283cb3ad"
+    "sha256_sujet": "d16f69e3e7c321c75ba8cce7e88b7e567be303253dfced5b9c27db1d283cb3ad",
+    "sha256_rapport_jury": "358029312bd95f69fcdb7b5a5190542aa7f5f8d06525bb8641d204d2b9001e0d"
   },
   "figures": [
     {
       "fichier": "figures/coupe-du-cone-nilpotent.svg",
       "question": "I.9",
       "legende": "La coupe par u = 0 montre les régions intérieure supérieure et inférieure. Les deux secteurs extérieurs visibles se rejoignent en tournant autour de l’axe v."
+    },
+    {
+      "fichier": "figures/multiplications-commutantes.svg",
+      "question": "C.8",
+      "legende": "Les deux chemins qui partent de 1 donnent le même monôme XY. Les autres produits par X ou Y se lisent en annulant les carrés."
     },
     {
       "fichier": "figures/degenerescence-de-deux-chaines.svg",
@@ -36,6 +42,74 @@
       "perimetre": "Rédaction des deux éditions confrontées au sujet complet et au corrigé commenté du jury. Géométrie tangentielle, supplémentaire stable, commutant, perturbations régulières, ordre sur les partitions et dégénérescence entre deux blocs de tailles arbitraires. Figures de la coupe du cône et de la flèche de perturbation.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "ens_mp_mathematiques_d",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Pointage des 39 repères sur le sujet, les deux éditions et le rapport. p. 1–2, réduction en dimension deux, cône réel, plans tangents et composantes du complément. p. 3–5, blocs de Jordan, dimension du commutant, demi-continuité du rang et exemple explicite de deux nilpotents commutants. p. 5–6, dominance, conjugaison des partitions, dégénérescences et vérification des deux chaînes du transfert élémentaire."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Préliminaire",
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7",
+      "I.8",
+      "I.9",
+      "A.1",
+      "A.2",
+      "A.3",
+      "A.4",
+      "A.5",
+      "A.6",
+      "B.1",
+      "B.2",
+      "B.3",
+      "B.4",
+      "B.5",
+      "C.1",
+      "C.2",
+      "C.3",
+      "C.4",
+      "C.5",
+      "C.6",
+      "C.7",
+      "C.8",
+      "D.1",
+      "D.2",
+      "D.3",
+      "D.4",
+      "D.5",
+      "E.1",
+      "E.2",
+      "E.3",
+      "E.4",
+      "E.5"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "controle": [
+      "p. 1–2, réduction en dimension deux, cône réel, plans tangents et composantes du complément",
+      "p. 3–5, blocs de Jordan, dimension du commutant, demi-continuité du rang et exemple explicite de deux nilpotents commutants",
+      "p. 5–6, dominance, conjugaison des partitions, dégénérescences et vérification des deux chaînes du transfert élémentaire"
+    ]
+  }
 }

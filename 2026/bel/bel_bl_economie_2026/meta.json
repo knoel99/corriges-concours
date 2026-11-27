@@ -20,9 +20,11 @@
       "https://www.ecb.europa.eu/press/pr/date/2021/html/ecb.pr210708~dc78cc4b0d.fr.html",
       "https://www.ecb.europa.eu/press/pr/date/2012/html/pr120906_1.en.html",
       "https://www.federalreserve.gov/aboutthefed/section2a.htm",
-      "https://www.banque-france.fr/fr/publications-et-statistiques/publications/le-mandat-de-la-bce-vu-travers-le-prisme-de-la-nouvelle-strategie-monetaire"
+      "https://www.banque-france.fr/fr/publications-et-statistiques/publications/le-mandat-de-la-bce-vu-travers-le-prisme-de-la-nouvelle-strategie-monetaire",
+      "https://www.ecb.europa.eu/press/pr/date/2025/html/ecb.pr250630~aabf988af8.fr.html"
     ],
-    "sujet_sha256": "e933258e9b0a3bbc2f6ad9f7e03f9c34b887f4b96c745c9ecf8b2ad2d986c1f1"
+    "sujet_sha256": "e933258e9b0a3bbc2f6ad9f7e03f9c34b887f4b96c745c9ecf8b2ad2d986c1f1",
+    "page_archives": "https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-bl"
   },
   "figures": [
     {
@@ -41,7 +43,7 @@
       "legende": "Distinguer un manque de liquidité et un déficit de fonds propres"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "revision": {
     "date": "2026-11-24",
     "modele": "Codex (GPT-6)",
@@ -97,6 +99,45 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Vérification du libellé, des deux éditions et des sources de la BCE et de la Réserve fédérale sur les mandats et les OMT. Explicitation chiffrée du taux réel anticipé lorsque baissent simultanément taux nominal et inflation attendue."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Dissertation sur la banque centrale, libellé contrôlé dans les annales enseignantes 2026 de Paris-Saclay. Illustration du virement dans la copie et vérification des variations de bilan des deux banques dans le guidé."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "session": "gestion_2022_2023",
+      "agent": "gestion_2022_2023",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "La dissertation et le guide répondent à l’intitulé « Que peut-on attendre d’une banque centrale ? », reproduit sous la rubrique ENS Paris-Saclay des annales enseignantes. Le règlement des paiements, les chocs d’offre et de demande, la liquidité et la solvabilité ont été contrôlés dans les deux éditions. Le mandat de stabilité des prix est replacé dans la stratégie de la BCE en vigueur au concours."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Que peut-on attendre d’une banque centrale ?"
+    ],
+    "precision": "Dissertation complète sur l’intitulé attesté par les annales enseignantes. L’archive écrite Paris-Saclay 2026 renvoie au sommaire ENS-PSL B/L, qui publie pour l’économie les ressources d’oral. La feuille originale de la composition et un rapport propre à cet écrit n’ont pas été retrouvés.",
+    "controle": "La dissertation et le guide répondent à l’intitulé « Que peut-on attendre d’une banque centrale ? », reproduit sous la rubrique ENS Paris-Saclay des annales enseignantes. Le règlement des paiements, les chocs d’offre et de demande, la liquidité et la solvabilité ont été contrôlés dans les deux éditions. Le mandat de stabilité des prix est replacé dans la stratégie de la BCE en vigueur au concours."
+  }
 }

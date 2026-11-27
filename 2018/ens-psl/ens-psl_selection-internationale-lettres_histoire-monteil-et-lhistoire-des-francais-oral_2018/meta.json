@@ -1,0 +1,69 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire-monteil-et-lhistoire-des-francais-oral_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire — Monteil et l’Histoire des Français (oral)",
+    "annee": 2018,
+    "modalite": "oral"
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/Sujet%20oral%20SIL2018-1.pdf",
+    "sha256_sujet": "904f6f14cdd4cb68be46774451e9dc7178b95b7c7b7bddc037fb77ec127a1f76",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_2018_histoire.pdf",
+    "sha256_rapport_jury": "19972089324eb727a8d7cf01ec3532c7bab36bde9919bcb68ea8da6ab0949696",
+    "page_officielle": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2018-lettres",
+    "precision_controle": "Sujet oral n° 1, deux pages. Tome IV, édition de Paris, 1853, p. 266–267. Ouverture sur les visites de Monfranc à Paris, fin sur les sanctions. La note 1 au bas de la première page identifie l’académicien fictif et la composition de l’ouvrage entre 1827 et 1844. Rapport du jury, p. 2, section sur l’oral.",
+    "reference_complementaire": "https://blogs.aphp.fr/wp-content/blogs.dir/113/files/2021/03/20200907_HD-comptes.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture-du-document.svg",
+      "question": "Un bienfaiteur, plusieurs pouvoirs",
+      "legende": "La voix qui célèbre la fondation décrit également ses moyens de contrainte."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions après lecture des deux pages et du rapport. Distinction des temporalités, des catégories d’admission, du travail et des contraintes. Figure vérifiée.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "oraux_lyon_et_anciens_corriges",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Correction de la portée du jugement de Monfranc sur les mendiants. Confrontation de sa liste des sept divisions aux cinq maisons d’origine et exercice de critique d’un registre de transferts postérieur."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire du passage de Monteil sur l’Hôpital général de Paris."
+    ],
+    "detail": [
+      "Note 1 et début du document, date d’écriture, temporalité du voyageur fictif, éloge du fondateur, soupçon et retraite imposée aux mendiants.",
+      "Inventaire des sept établissements et des parcours selon l’âge et le sexe. Fin de la p. 1 et p. 2, recrutement, placements, destinations des filles, subsistance, discipline et punitions. Les deux éditions discutent les limites du témoignage."
+    ]
+  },
+  "date_revision": "2026-11-26"
+}

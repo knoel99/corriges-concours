@@ -1,0 +1,64 @@
+{
+  "slug": "bel_bl_russe-oral-tronc-commun-26-juin_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Russe (oral, tronc commun, 26 juin)",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "Толстой, «Севастопольские рассказы»",
+  "questions": 0,
+  "sujets": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/russe_26_juin.pdf",
+    "sujet_sha256": "ad9fc7ba3c742db59fc74ae04c7baac687b19e7d7010add1d462a4f14b1a418b",
+    "pages_pdf": "1–2",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_russe_oral_tc.pdf",
+    "rapport_sha256": "e9f75baae6a62028c7366ee3ab4d20b8cc289d01b6727deaea5d653182dd57b1",
+    "index_oraux": "https://www.ens.psl.eu/sujets-des-epreuves-orales-du-concours-bl-session-2025-0",
+    "index_oraux_sha256": "391af10509e2aaed3272651aa1c8107a143ea6f36de76d7ca95a916357380ce1",
+    "index_session": "https://www.ens.psl.eu/rapports-et-sujets-du-concours-2025-section-des-lettres-groupe-bl",
+    "index_session_sha256": "5c8c1e2d1a4820a38b0514443293fe832e3f5611808955e98dff4c6860b5e500",
+    "edition_de_reference": "https://tolstoy.ru/online/90/04/",
+    "partie_reference": "Севастополь в мае, 12",
+    "indication_imprimee": "XI."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Толстой, «Севастопольские рассказы»",
+      "fichier": "figures/deux-mesures-du-temps.svg",
+      "legende": "Le billet mesure deux secondes avant le choc et développe les représentations qui les remplissent. La dernière phrase reprend le temps de l’événement."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Traduction et commentaire oral en russe sur toutes les lignes visibles des deux pages. Concordance entre l’index daté, l’index des épreuves, le rapport et le sujet ; vérification des deux coupes, de la note, des citations et du changement de point de vue. Le numéro XI imprimé diffère du § 12 dans le tome IV des Œuvres complètes en 90 volumes.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "sujets_entierement_traites": [
+      "Толстой, «Севастопольские рассказы»"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "redaction",
+      "sha256_sujet_controle": "ad9fc7ba3c742db59fc74ae04c7baac687b19e7d7010add1d462a4f14b1a418b",
+      "perimetre": "Traduction et commentaire oral en russe sur toutes les lignes visibles des deux pages. Concordance entre l’index daté, l’index des épreuves, le rapport et le sujet ; vérification des deux coupes, de la note, des citations et du changement de point de vue. Le numéro XI imprimé diffère du § 12 dans le tome IV des Œuvres complètes en 90 volumes."
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "slug": "ens_mp-pc_anglais-lv1_2009",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Anglais (LV1)",
+    "annee": 2009,
+    "modalite": "écrit"
+  },
+  "questions": 3,
+  "intitule": "Put Green Cars On the Highway",
+  "bareme": {
+    "version": 12,
+    "expression": 8
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2009/MP/2009_sujet_mp_pc_lv1.pdf#page=3",
+    "sujet_sha256": "4d43a82b835716843169d99f0696b76085c2d34aae975b3aae524ac7e33fd7f2",
+    "page_pdf": 3,
+    "index": "https://www.ens.psl.eu/rapports-et-sujets-2009-pc",
+    "etablissements_imprimes": "Paris, Lyon et Cachan",
+    "texte_support": "Jennifer M. Granholm, « Put Green Cars On the Highway », Newsweek, 31 décembre 2008, texte adapté.",
+    "rapport": "https://www.ens.psl.eu/IMG/file/concours/2009/MP/mppc_ecritlv1_anglais.pdf",
+    "rapport_sha256": "15395989753073615ad10d70123132d8a032212808132c503131ff91a61b565d",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2009/MP/mppc_ecritlv1_anglais.pdf"
+  },
+  "redaction": "Version française, conversion en unités françaises et deux essais en anglais, sur l’argument du Michigan puis le partage des responsabilités environnementales.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Questions 1",
+      "fichier": "figures/charge-trajet-industrie.svg",
+      "legende": "Les trois échelles de l’appel de la gouverneure du Michigan, de la prise du garage au projet fédéral."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du rapport d’anglais LV1 sur le titre exhortatif, les conversions d’unités, les faux amis et les attentes distinctes des deux questions."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version française, conversion en unités françaises et deux essais en anglais, sur l’argument du Michigan puis le partage des responsabilités environnementales.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version",
+      "Questions 1",
+      "Questions 2"
+    ]
+  }
+}

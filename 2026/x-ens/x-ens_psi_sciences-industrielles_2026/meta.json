@@ -10,7 +10,8 @@
   "redaction": "Proposition non officielle de plusieurs agents IA (OpenAI Codex).",
   "sources": {
     "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2026/2026_PSI_SI_XSR.pdf",
-    "page_officielle": "https://sti.eduscol.education.fr/concours_examens/concours-cpge-2026-x-ens-epreuve-de-sciences-industrielles-filiere-psi-systemes"
+    "page_officielle": "https://sti.eduscol.education.fr/concours_examens/concours-cpge-2026-x-ens-epreuve-de-sciences-industrielles-filiere-psi-systemes",
+    "sujet_eduscol": "https://sti.eduscol.education.fr/sites/eduscol.education.fr.sti/files/concours-examens/19517/19517-x-ens-psi-2026-si-robots-polyarticules.pdf"
   },
   "figures": [
     {
@@ -77,9 +78,14 @@
       "fichier": "figures/frein-contact-sectoriel.svg",
       "question": "Q6.3",
       "legende": "Le contact d’une couronne se décompose en éléments de surface. Chacun produit un couple proportionnel au carré du rayon par unité de rayon et d’angle."
+    },
+    {
+      "fichier": "figures/q65-frein-seuil.svg",
+      "question": "Q6.5",
+      "legende": "Lecture des seuils à 5 % et des 40 ms sur la courbe d’effort de freinage"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "revision": {
     "date": "2026-11-24",
     "modele": "OpenAI Codex",
@@ -141,6 +147,423 @@
       "perimetre": "Q1.1 à Q6.5 des deux éditions, sujet officiel, annexes et documents réponse. Calculs du réducteur, des commandes et du frein, comparaison des cycles au raccord et au seuil, quantification des contraintes scalaires du réseau. Correction de l’algorithme de Q3.5 en espace auxiliaire constant.",
       "agent": "astra_info_si",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "perimetre": "Pointage des 63 questions et des six annexes. Contrôle physique des 44 pages institutionnelles identiques, identification des documents réponse DR1 et DR2 manquants. Relecture directe des exposants de Q4.10 et annotation de la courbe temporelle du frein. Vérification du programme de cycle dans les deux éditions.",
+      "agent": "/root/ta_maths_8587"
     }
-  ]
+  ],
+  "annexes_verifiees": {
+    "A": [
+      37
+    ],
+    "B": [
+      38,
+      39
+    ],
+    "C": [
+      40
+    ],
+    "D": [
+      41
+    ],
+    "E": [
+      42
+    ],
+    "F": [
+      43
+    ],
+    "DR1 et DR2 annoncés, absents des deux exemplaires institutionnels": []
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2026/2026_PSI_SI_XSR.pdf",
+      "pages": 44,
+      "sha256": "0a030be76802e6e2bc66496022838e68147025ef7f161465b5dca52ee6fefb32",
+      "rendus_sha256": [
+        "78e953c95dabde55eb5c20cc0c8190d1addf9085aa986c02f3971cf13f2c47b2",
+        "5903f6e24ccd7a4dee40eb740ba95f3e40f9a8f511c0f74f546a0481276147aa",
+        "7e1cd3a94ca55884783cebf9d58606c89df85af26c25d14db449e4adbf6b8edb",
+        "77a0a1fc826d49e73cdadba53d3f525097d0ff1f7db0a8a6b4f39bc0548eee4c",
+        "2d2c0c66210266cf34d8ac917d550ada874bb97d263399043d5c472de68dadc7",
+        "84a34ffb3e4eca9c5d8c082b882505f1a542f601c09319376ef250abc49d816b",
+        "f051cac868429a61d30117c88d2a7bd73334e6c9162eecf2ae480ec3d24aa267",
+        "b8d2c3c58a0d2aba32bae7a602809fcaa6226b27b0171eba30c127015efaaa95",
+        "3e21b4be011a83a681ef3b56c80b56bedbec12772ce2359aa15d3cb38e405f6a",
+        "a1866044af1d4a7d8d8111c4dab1da6d37c434472153b0cdda65d6c695234822",
+        "56f8aef02823660ce8733432b8a49db2834369e2e4498ee2830d0db3a57da8cf",
+        "e871bc1279445b0240576799d40e5a301b1de0a6d620eb18dd9bc34703d37f88",
+        "104951a2060e121d0d37dd25c07507e0e05ca5bce4ee9382f02b6aedf215adb5",
+        "ae105f4397f1f48bcacfd2bc94012ebd371c57ac64b5e4436866631d6fc86cf9",
+        "b4752fa35bf0b85865b33150e714ac683cb71479c92d5ef3c4f9b685d60e0b10",
+        "3a77c7ba1fb149bedc548106e88614bc4de06ea765eb8d4ac94bf5099ae71183",
+        "15b6cf8d563d99a4bc1e4bade802b9cf34500b5eda51857700c74f5aefc6ab05",
+        "9ce2304afe56c664f0b46e5b4cd57dd42ef09b3b2948343a9ae9248302fdb34e",
+        "828b10e57f1984e92086e1e76cca7ff167c67f4a2b4407f03add240b73524296",
+        "6497f43b0defcef48faba81b6fbd0e17f810def9f35305925a35d72fb0608ab2",
+        "e2e63db26b23fabdaa64d492a6294274914560ddab3529dbef8c903443db0f54",
+        "fd4284b2bd0ff26fb770e0837bd7afec9560855af2e51ba6513074448c65ce42",
+        "7e01f820dd7a84d0a2364fb3dbca17edd7d292c63510d4abe92141dbfe19a1da",
+        "c28e6791b565c49059e032e51cb9e006287f169aaecbc70e94d19f9ab3da3fdd",
+        "b1c00bbca98bcea7da687b6c330db61199c88220ec88c66240a919af4d03a96e",
+        "4a1a58a72910a2f31bbf7f6fdb824c0dd13166545d1146d72199ab8f48cabbab",
+        "33a95c1c6f597764e8136a62596ced510e6f4d8982b2f5246d1f772065037b23",
+        "6887e406c0bce03e27fd84f51fdc4484663a8fa48b1d33c20e48e2987fc067a6",
+        "ffc08ccb3948f59fb9f8877eabd78293b6bcb54781bdc5c5ad064cda5411f00e",
+        "7f2bd17644e7692fae06caba2e4a8326c6724612374ba98c83ef88ac579ccd5c",
+        "d8f9dd0899d74fb21116963ca8ee37491ad0c556f5d49c1f998ea5db107eb238",
+        "c154918485740ff1c10049a1c8eedd2d89f8adb4eb698ff749e78abefbe929ac",
+        "3bdaa4a0845aa774185b8506a50611c605e0fe8c0d616f62e5f9968865894bc9",
+        "2067a6d761e5e7923edd4cb603569a15ae2812b55f68836a3b55ab532277205f",
+        "2cdb48a8595efd7af478a514597f5900810e325df86c6634d1f79b71ea727b96",
+        "e62e4cd761134211e1129ca7374752fc0fe9ff399ac8d986e2f125938ab2c32a",
+        "af587b54d6d2e4b3c817c8c38ea6aa7a03f89f845a28b55ca12cb70bddaa62e6",
+        "351877f95e19324e9a80bd47cae6494404dba7d3421de8b53b444f7ddc872d36",
+        "8bcb66770e1daacef522d19d2fffc438773435e68be0141dbb082536ebe69e34",
+        "a54928881846c1f057e4832b0eb8ea57080a3535b9592b2c0a207eb8e005062a",
+        "44c6f4cb8e98a31985bb7f25fa4e6973f62a9f08e869846f180514830398feab",
+        "d87ea2781f2aefcb6e4a6b7b7f3a48ae0b638ae81826c2b5d742e20d60261cb2",
+        "4e037f57169d543f7f90909859d3be97cd7b2e5d82e4642c7809547952edf000",
+        "344dd77809df7ed333c9295937de5f4c98187ded3897c1afad256508a1010772"
+      ]
+    }
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "1.8",
+      "1.9",
+      "1.10",
+      "1.11",
+      "1.12",
+      "1.13",
+      "1.14",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7",
+      "2.8",
+      "2.9",
+      "2.10",
+      "2.11",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "3.7",
+      "3.8",
+      "3.9",
+      "3.10",
+      "3.11",
+      "4.1",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.6",
+      "4.7",
+      "4.8",
+      "4.9",
+      "4.11",
+      "4.12",
+      "4.13",
+      "4.14",
+      "5.1",
+      "5.2",
+      "5.3",
+      "5.4",
+      "5.5",
+      "5.6",
+      "5.7",
+      "5.8",
+      "6.1",
+      "6.2",
+      "6.3",
+      "6.4",
+      "6.5"
+    ],
+    "questions_partiellement_traitees": [
+      "4.2",
+      "4.10"
+    ],
+    "questions_non_traitees": [],
+    "reperes": [
+      {
+        "question": "1.1",
+        "page_pdf": 6
+      },
+      {
+        "question": "1.2",
+        "page_pdf": 6
+      },
+      {
+        "question": "1.3",
+        "page_pdf": 6
+      },
+      {
+        "question": "1.4",
+        "page_pdf": 6
+      },
+      {
+        "question": "1.5",
+        "page_pdf": 8
+      },
+      {
+        "question": "1.6",
+        "page_pdf": 8
+      },
+      {
+        "question": "1.7",
+        "page_pdf": 8
+      },
+      {
+        "question": "1.8",
+        "page_pdf": 8
+      },
+      {
+        "question": "1.9",
+        "page_pdf": 9
+      },
+      {
+        "question": "1.10",
+        "page_pdf": 10
+      },
+      {
+        "question": "1.11",
+        "page_pdf": 10
+      },
+      {
+        "question": "1.12",
+        "page_pdf": 10
+      },
+      {
+        "question": "1.13",
+        "page_pdf": 10
+      },
+      {
+        "question": "1.14",
+        "page_pdf": 11
+      },
+      {
+        "question": "2.1",
+        "page_pdf": 12
+      },
+      {
+        "question": "2.2",
+        "page_pdf": 12
+      },
+      {
+        "question": "2.3",
+        "page_pdf": 13
+      },
+      {
+        "question": "2.4",
+        "page_pdf": 13
+      },
+      {
+        "question": "2.5",
+        "page_pdf": 13
+      },
+      {
+        "question": "2.6",
+        "page_pdf": 13
+      },
+      {
+        "question": "2.7",
+        "page_pdf": 15
+      },
+      {
+        "question": "2.8",
+        "page_pdf": 16
+      },
+      {
+        "question": "2.9",
+        "page_pdf": 16
+      },
+      {
+        "question": "2.10",
+        "page_pdf": 16
+      },
+      {
+        "question": "2.11",
+        "page_pdf": 16
+      },
+      {
+        "question": "3.1",
+        "page_pdf": 17
+      },
+      {
+        "question": "3.2",
+        "page_pdf": 17
+      },
+      {
+        "question": "3.3",
+        "page_pdf": 18
+      },
+      {
+        "question": "3.4",
+        "page_pdf": 18
+      },
+      {
+        "question": "3.5",
+        "page_pdf": 19
+      },
+      {
+        "question": "3.6",
+        "page_pdf": 19
+      },
+      {
+        "question": "3.7",
+        "page_pdf": 20
+      },
+      {
+        "question": "3.8",
+        "page_pdf": 20
+      },
+      {
+        "question": "3.9",
+        "page_pdf": 21
+      },
+      {
+        "question": "3.10",
+        "page_pdf": 22
+      },
+      {
+        "question": "3.11",
+        "page_pdf": 22
+      },
+      {
+        "question": "4.1",
+        "page_pdf": 25
+      },
+      {
+        "question": "4.2",
+        "page_pdf": 25
+      },
+      {
+        "question": "4.3",
+        "page_pdf": 25
+      },
+      {
+        "question": "4.4",
+        "page_pdf": 26
+      },
+      {
+        "question": "4.5",
+        "page_pdf": 27
+      },
+      {
+        "question": "4.6",
+        "page_pdf": 27
+      },
+      {
+        "question": "4.7",
+        "page_pdf": 28
+      },
+      {
+        "question": "4.8",
+        "page_pdf": 28
+      },
+      {
+        "question": "4.9",
+        "page_pdf": 28
+      },
+      {
+        "question": "4.10",
+        "page_pdf": 28
+      },
+      {
+        "question": "4.11",
+        "page_pdf": 28
+      },
+      {
+        "question": "4.12",
+        "page_pdf": 29
+      },
+      {
+        "question": "4.13",
+        "page_pdf": 29
+      },
+      {
+        "question": "4.14",
+        "page_pdf": 29
+      },
+      {
+        "question": "5.1",
+        "page_pdf": 30
+      },
+      {
+        "question": "5.2",
+        "page_pdf": 30
+      },
+      {
+        "question": "5.3",
+        "page_pdf": 31
+      },
+      {
+        "question": "5.4",
+        "page_pdf": 31
+      },
+      {
+        "question": "5.5",
+        "page_pdf": 32
+      },
+      {
+        "question": "5.6",
+        "page_pdf": 32
+      },
+      {
+        "question": "5.7",
+        "page_pdf": 32
+      },
+      {
+        "question": "5.8",
+        "page_pdf": 32
+      },
+      {
+        "question": "6.1",
+        "page_pdf": 34
+      },
+      {
+        "question": "6.2",
+        "page_pdf": 34
+      },
+      {
+        "question": "6.3",
+        "page_pdf": 34
+      },
+      {
+        "question": "6.4",
+        "page_pdf": 36
+      },
+      {
+        "question": "6.5",
+        "page_pdf": 36
+      }
+    ],
+    "limite": "Les 63 questions du livret ont une réponse. Deux supports graphiques annoncés en p. 2 sont absents de la diffusion authentifiée et de ses pièces jointes. Les figures de Q4.2 et Q4.10 sont des reconstitutions sans pointage possible sur leurs grilles originales."
+  }
 }

@@ -8,9 +8,11 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
-L’épreuve commune aux ENS Ulm, Lyon, Paris-Saclay et Rennes du 18 avril 2025 dure quatre heures. Ses 40 questions et sous-questions passent d’un dénombrement des moments à une inégalité de concentration pour les fonctions convexes sur un cube. [Fac-similé du sujet — archive CPGE Paradise](https://cpge-paradise.com/Concours2025/XENS/MP/MathC2025.pdf)
+L’épreuve commune aux ENS Ulm, Lyon, Paris-Saclay et Rennes du 18 avril 2025 dure quatre heures. La garde porte « Filières MP et MPI » et le numéro d’épreuve 9. Ses 40 questions et sous-questions passent d’un dénombrement des moments à une inégalité de concentration pour les fonctions convexes sur un cube. [Fac-similé du sujet — archive CPGE Paradise](https://cpge-paradise.com/Concours2025/XENS/MP/MathC2025.pdf)
 
 > [!JURY]
 > Le jury demande de préciser le rôle du centrage et de la variance dans les moments I.5b–c, puis celui de la parité avant l’inégalité de Markov en I.5h. Il insiste aussi sur les représentations des trois enveloppes convexes en II.2f. [Rapport officiel](https://banques-ecoles.fr/cms/wp-content/uploads/2025/11/Rapport_ECRIT_Maths_C_2025.pdf)
@@ -413,7 +415,11 @@ Tout sommet du cube unité a norme au plus $\sqrt N$, donc $q(x,A)\le\sqrt N$ d�
 
 #### Solution
 
-Comme $R_A(x)\subset P_A(x)$, le minimum sur $\Gamma(P_A(x))$ est au plus celui sur $\Gamma(R_A(x))$. Pour l’autre sens, en écrivant $v=\sum_j\theta_jz_j$ avec $z_j\in P_A(x)$, choisissons selon II.2a un $r_j\in R_A(x)$ vérifiant $r_j\le z_j$. Alors $w=\sum_j\theta_jr_j$ appartient à $\Gamma(R_A(x))$ et $0\le w\le v$ coordonnée par coordonnée. D’où $|w|\le|v|$. En prenant les infimums on obtient (51), avec $|z|$ sous l’infimum. La lettre est importante. Par exemple, pour $x=e_1$ et $A=\{e_1\}$, le masque exact est zéro, donc $q(x,A)=0$. En gardant littéralement $|x|$ comme dans la formule imprimée, l’infimum vaudrait toujours $|e_1|=1$.
+Comme $R_A(x)\subset P_A(x)$, le minimum sur $\Gamma(P_A(x))$ est au plus celui sur $\Gamma(R_A(x))$. Pour l’autre sens, en écrivant $v=\sum_j\theta_jz_j$ avec $z_j\in P_A(x)$, choisissons selon II.2a un $r_j\in R_A(x)$ vérifiant $r_j\le z_j$. Alors $w=\sum_j\theta_jr_j$ appartient à $\Gamma(R_A(x))$ et $0\le w\le v$ coordonnée par coordonnée. D’où $|w|\le|v|$. On obtient donc la formule (51) du fac-similé, page imprimée 6,
+$$
+q(x,A)=\inf_{z\in\Gamma(R_A(x))}|z|.
+$$
+Ici $x$ fixe les coordonnées auxquelles les masques sont comparés, tandis que $z$ parcourt leur enveloppe convexe. Par exemple, lorsque $x=e_1$ et $A=\{e_1\}$, l’unique masque exact est nul et donne bien $q(x,A)=0$.
 
 ![Figure 6 — Pour les masques exacts (1,0) et (0,1), le triangle est l’enveloppe des masques autorisés. Son point le plus proche de l’origine est le milieu du segment des masques exacts.](figures/ii2-distance.svg)
 
@@ -439,7 +445,7 @@ Si $A$ est vide, les conventions donnent $d(x,A)=4NK=2Kq(x,A)$. Sinon, par II.2i
 
 #### Solution
 
-Pour $\gamma>0$, II.2j donne $e^{\gamma d(X,A)^2/(4K^2)}\le e^{\gamma q(X,A)^2}$. Ainsi (53) implique (40), et II.1b donne (37) avec $\alpha=\gamma/4$, $\beta=2$. Le cas $\gamma=0$ seul ne donne aucune décroissance par cet argument. La partie suivante établit (53) pour la constante strictement positive $1/4$.
+Pour $\gamma>0$, II.2j donne $e^{\gamma d(X,A)^2/(4K^2)}\le e^{\gamma q(X,A)^2}$. Ainsi (53) implique (40), et II.1b donne (37) avec $\alpha=\gamma/4$, $\beta=2$. Pour $\gamma=0$, (53) se réduit à $\mathbb P(X\in A)\le1$ et la substitution donnerait $\alpha=0$. Le théorème demande $\alpha>0$. Dans ce cas limite, la partie II.3 établit indépendamment (53) avec $\gamma_0=1/4$, ce qui donne les constantes numériques $\alpha=1/16$ et $\beta=2$.
 
 ## II.3 — Récurrence sur la dimension
 
@@ -572,7 +578,7 @@ Si $p=0$, l’inclusion $\{X\in A\}\subset\{X'\in B\}$ donne $a=0$, tandis que l
 
 #### Solution
 
-Le membre droit de (69) décroît en $\gamma$, il suffit donc de prendre $\gamma=1/4$. Si $r=0$, $\lambda=0$ donne $e^{-1/4}\ge 1/2$. Si $r>0$, écrivons $r=e^{-t}$ avec $t\ge0$. Le logarithme à maximiser est $-t\lambda-(1-\lambda)^2/4$. Son maximum vaut $-t+t^2$ en $\lambda=1-2t$ pour $0\le t\le1/2$, puis $-1/4$ en $\lambda=0$ pour $t\ge1/2$.
+Le membre droit de (69) décroît en $\gamma$, il suffit donc de prendre $\gamma=1/4$. L’intervalle imprimé en (69) est $r\in]0,1]$. On écrit donc $r=e^{-t}$ avec $t\ge0$. Le cas de masse nulle $r=0$ requis pour (70) a déjà été réglé en II.3f par (63). Le logarithme à maximiser est $-t\lambda-(1-\lambda)^2/4$. Son maximum vaut $-t+t^2$ en $\lambda=1-2t$ pour $0\le t\le1/2$, puis $-1/4$ en $\lambda=0$ pour $t\ge1/2$.
 
 Sur $[0,1/2]$, posons $g(t)=\log(2-e^{-t})-t+t^2$. On a $g(0)=0$ et
 $$

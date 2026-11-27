@@ -1,0 +1,54 @@
+{
+  "slug": "ens_mp-pc_russe-le2_2005",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Russe (LE2)",
+    "annee": 2005,
+    "modalite": "écrit"
+  },
+  "intitule": "Les Russes interrogés sur 2004 et sur Staline",
+  "questions": 2,
+  "redaction": "Traduction intégrale en français et réponse argumentée en russe. Les Russes interrogés sur 2004 et sur Staline.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2005/sujet-2005-ecrit-mp_pc_langue_etrangere_2.pdf#page=10",
+    "sha256_sujet": "3591b865ff600e9a1da38a819b3d68405c9a905cb43f3fc1b5ef6183ff6011c6",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2005",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2005/sujet-2005-ecrit-mp_pc_langue_etrangere_2.pdf#page=10",
+        "sha256": "3591b865ff600e9a1da38a819b3d68405c9a905cb43f3fc1b5ef6183ff6011c6"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I",
+      "fichier": "figures/lecture-de-la-version.svg",
+      "legende": "Deux sondages et plusieurs objets de jugement"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "arabe_mp_pc_2011_2014",
+      "session": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Traduction intégrale en français et réponse argumentée en russe. Les Russes interrogés sur 2004 et sur Staline."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I",
+      "II"
+    ]
+  }
+}

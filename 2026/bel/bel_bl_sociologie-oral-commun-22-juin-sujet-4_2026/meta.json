@@ -55,6 +55,54 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Confrontation au dossier original et au rapport du jury. Contrôle des valeurs reportées, des champs, des dénominateurs et des limites de l’interprétation."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture croisée du dossier et du rapport de l’oral commun de sociologie 2026. Documents 6 et 7, voisinage au quartier du Port, coexistence des pratiques et borne sur leur recouvrement. Figure interprétée dans la copie et calcul ou question de méthode développé dans le guidé."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "gestion_2022_2023",
+      "agent": "gestion_2022_2023",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Les sept documents du dossier sont traités dans les deux éditions. Les axes du nuage, les bases des tableaux par âge, statut et quartier, et les deux panneaux sur les conflits et les jugements ont été contrôlés. Le panneau 7a omet Auteuil, présent sur le panneau 7b."
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Voisiner"
+    ],
+    "precision": "Les sept documents du dossier sont traités dans les deux éditions. Les axes du nuage, les bases des tableaux par âge, statut et quartier, et les deux panneaux sur les conflits et les jugements ont été contrôlés. Le panneau 7a omet Auteuil, présent sur le panneau 7b.",
+    "controle": [
+      "Document 1. Grands ensembles de Creil et Antony et conditions sociales des jugements de proximité.",
+      "Document 2. Contacts, 5 900 ménages ordinaires, et Mon quartier, mes voisins, quatorze terrains dans deux régions, enquête de 2018.",
+      "Document 3. Contacts, intensité maximale par classe et âge, 48,9 + 34,0 + 17,0 = 99,9 pour les jeunes agriculteurs.",
+      "Document 4. Le nuage compte les ménages voisins partenaires, respectivement services rendus (abscisse) et reçus (ordonnée).",
+      "Document 5. Composition en ligne du réseau par statut d’occupation, 89 % de locataires HLM dans les réseaux des locataires HLM.",
+      "Document 6. Visites et services au Port 55 % et 80 %, à Marolles 84 % et 90 %, groupes susceptibles de recouvrement.",
+      "Document 7. Conflits et sentiment d’être jugé au Port (22 % et 18 %) et aux Batignolles (29 % et 28 %) ; Auteuil absent du seul panneau 7a."
+    ]
+  }
 }

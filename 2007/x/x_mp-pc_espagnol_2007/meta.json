@@ -1,0 +1,90 @@
+{
+  "slug": "x_mp-pc_espagnol_2007",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Espagnol",
+    "annee": 2007,
+    "modalite": "écrit",
+    "duree_heures": 3
+  },
+  "intitule": "Une photo brûlée",
+  "questions": 3,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://web.archive.org/web/20090424050957id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/07_Version.pdf#page=4",
+    "sha256_sujet": "b999f49ba6232ccaf44de763c2cb3752fbb87ded11728669268265262b0e3a03",
+    "etablissements_imprimes": "École polytechnique et École supérieure de physique et de chimie industrielles",
+    "page_version": "4",
+    "texte_support": "Carlos Ruiz Zafón, La sombra del viento, 2001.",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://web.archive.org/web/20090424050957id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/07_Version.pdf#page=4",
+        "sha256": "b999f49ba6232ccaf44de763c2cb3752fbb87ded11728669268265262b0e3a03",
+        "pages": "4",
+        "pages_document": 7,
+        "index": "https://web.archive.org/web/20090415204525/http://www.polytechnique.fr:80/concours/sujets/sujet07/sujet07.htm",
+        "url_originale": "http://www.imprimerie.polytechnique.fr/EnLignes/Files/07_Version.pdf",
+        "date_capture_utc": "2009-04-24T05:09:57Z"
+      },
+      {
+        "role": "sujet complémentaire",
+        "url": "https://web.archive.org/web/20090424045418id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/07_ExprEcrit.pdf",
+        "sha256": "3480b2ca508e8df2f8d98d5325aef0f68faafb32776b69e2174e40304d224573",
+        "pages": "1–2",
+        "pages_document": 2,
+        "index": "https://web.archive.org/web/20090415204525/http://www.polytechnique.fr:80/concours/sujets/sujet07/sujet07.htm",
+        "url_originale": "http://www.imprimerie.polytechnique.fr/EnLignes/Files/07_ExprEcrit.pdf",
+        "date_capture_utc": "2009-04-24T04:54:18Z"
+      },
+      {
+        "role": "rapport",
+        "url": "https://web.archive.org/web/20090424084537id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/07_Compos_Espagnol_MP_PC_Rap.pdf",
+        "sha256": "29e0e2ef20c5e626bb4b45d74ca236f3cad04456041bb4039cce6fa71383ffb5",
+        "pages": "1–3",
+        "pages_document": 3,
+        "index": "https://web.archive.org/web/20090415204525/http://www.polytechnique.fr:80/concours/sujets/sujet07/sujet07.htm",
+        "url_originale": "http://www.imprimerie.polytechnique.fr/EnLignes/Files/07_Compos_Espagnol_MP_PC_Rap.pdf",
+        "date_capture_utc": "2009-04-24T08:45:37Z"
+      }
+    ],
+    "rapport_jury": "https://web.archive.org/web/20090424084537id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/07_Compos_Espagnol_MP_PC_Rap.pdf",
+    "sha256_rapport_jury": "29e0e2ef20c5e626bb4b45d74ca236f3cad04456041bb4039cce6fa71383ffb5"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/la-photo-et-le-temoin.svg",
+      "question": "1",
+      "legende": "Le témoignage distingue une reconnaissance assurée de la photo, une datation approximative et une hypothèse sur les raisons du départ de Julián."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "option_info_2006_2009",
+      "agent": "option_info_2006_2009",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Version personnelle intégrale de « Une photo brûlée », deux réponses personnelles en espagnol, indications de traduction et de rédaction, schéma sur Le témoignage distingue une reconnaissance assurée de la photo, une datation approximative et une hypothèse sur les raisons du départ de Julián."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2.1",
+      "2.2"
+    ],
+    "limites": "Le rapport de la version et de l’expression souligne le registre oral des échanges, le repérage temporel et la nécessité de construire les réponses autour des questions effectivement posées."
+  }
+}

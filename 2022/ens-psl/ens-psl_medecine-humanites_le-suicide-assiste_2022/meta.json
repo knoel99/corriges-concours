@@ -1,0 +1,69 @@
+{
+  "slug": "ens-psl_medecine-humanites_le-suicide-assiste_2022",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Médecine-Humanités",
+    "matiere": "Le suicide assisté",
+    "annee": 2022,
+    "modalite": "écrit"
+  },
+  "intitule": "Le suicide assisté",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet-a-mh2022.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport-jury-mh2022docx.pdf",
+    "index": "https://medecine-humanites.ens.psl.eu/sujets-et-rapports-du-concours-2018/",
+    "sha256_sujet": "2788f5cf3b7f3dfbe16755d6c0b87e1af195d14d3e88a416cd406397e23504d3",
+    "sha256_rapport_jury": "60c5f0d2b6c2bdb1547f3fe7b893e1fd52dfde73f376a213a522f7addd06db6a",
+    "documents": [
+      {
+        "role": "sujet",
+        "url_officielle": "https://www.ens.psl.eu/sites/default/files/sujet-a-mh2022.pdf",
+        "url": "https://www.ens.psl.eu/sites/default/files/sujet-a-mh2022.pdf",
+        "pages": 4,
+        "sha256": "2788f5cf3b7f3dfbe16755d6c0b87e1af195d14d3e88a416cd406397e23504d3"
+      },
+      {
+        "role": "rapport",
+        "url_officielle": "https://www.ens.psl.eu/sites/default/files/rapport-jury-mh2022docx.pdf",
+        "url": "https://www.ens.psl.eu/sites/default/files/rapport-jury-mh2022docx.pdf",
+        "pages": 3,
+        "sha256": "60c5f0d2b6c2bdb1547f3fe7b893e1fd52dfde73f376a213a522f7addd06db6a"
+      }
+    ],
+    "corpus": "Le dossier de quatre pages rapproche Alexandre Lunel sur l’histoire du droit (2017), *Tout s’est bien passé* d’Emmanuèle Bernheim (2013), une caricature attribuée à Amy Asbrouk et publiée avec un texte de Mike Ervin (2016), un sondage Ifop pour l’ADMD (avril 2021) et une tribune d’Élisabeth Angellier, Carole Bouleuc et Sylvie Dolbeault (mai 2022). Les propos juridiques et les résultats d’opinion sont étudiés dans leur contexte de publication."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/lecture-croisee.svg",
+      "question": "Commentaire",
+      "legende": "Le dossier met en regard les mots d’une demande, les conditions sociales du choix et ses effets sur d’autres personnes."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "sciences_humaines_medecine",
+      "agent": "sciences_humaines_medecine",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture du sujet et du rapport authentifiés, étude des textes et de la reproduction, composition du commentaire, accompagnement pédagogique et schéma original."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire"
+    ]
+  }
+}

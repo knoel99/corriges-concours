@@ -1,0 +1,79 @@
+{
+  "slug": "agro-veto_bcpst_maths_2023",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "Maths",
+    "annee": 2023
+  },
+  "questions": 24,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/abcpst_sp_0423_mcr.pdf",
+    "rapport_jury": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/rapport2023_mullaert_le.pdf",
+    "sha256_sujet": "dd136bcf479e31cdae3e567e725c0c481a3bf9175488bcabe23b8376fdab5720",
+    "sha256_rapport_jury": "4391d5fced667ad6cd29689594197ee9c989747657bc39157f0a4751f9cb9e35"
+  },
+  "figures": [
+    {
+      "fichier": "figures/iteration-points-fixes.svg",
+      "question": "15",
+      "legende": "Les marches partent de zéro et tendent vers le premier point fixe, qui vaut 1 seulement dans le panneau de gauche."
+    },
+    {
+      "fichier": "figures/champ-de-variations.svg",
+      "question": "24",
+      "legende": "Le signe de la dérivée pousse les solutions intérieures vers 3/4, sans franchir les équilibres."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction et vérification de toutes les questions 1–24 sur les cinq pages du sujet et les cinq pages du rapport. Convergence vers le petit point fixe, preuve des inclusions, quatre équilibres, diagonalisation, invariance de l’intervalle et primitives. Deux figures originales.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24"
+    ],
+    "precision": "Les 24 questions numérotées du sujet officiel correspondent aux 24 solutions numérotées de chaque édition.",
+    "origine_attestation": {
+      "commit_du_journal": "70645986145a4d1e32610745845cd0a495596d12",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction et vérification de toutes les questions 1–24 sur les cinq pages du sujet et les cinq pages du rapport. Convergence vers le petit point fixe, preuve des inclusions, quatre équilibres, diagonalisation, invariance de l’intervalle et primitives. Deux figures originales.",
+      "sha256_sujet_controle": "dd136bcf479e31cdae3e567e725c0c481a3bf9175488bcabe23b8376fdab5720"
+    }
+  }
+}

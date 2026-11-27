@@ -2,7 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 L’écrit d’automne établit la formule du rayon spectral puis les théorèmes de Perron et de Frobenius. Les questions 4c–d et 13 demandent de préciser les arguments pour les hypothèses imprimées.
 
@@ -30,7 +32,7 @@ La question 1 donne $N(A^n)\le N(A)^n\to0$ si $N(A)<1$. C’est la convergence d
 
 ### Question 4c
 
-L’assertion imprimée est fausse pour la norme arbitrairement fixée au début de la partie. Sur $\mathbb C^2$, prenons $\|(x,y)\|=\max(|x+3y|,|y|)$ (la norme infinie après un changement de coordonnées inversible) et $A=T=D=\operatorname{Diag}(1/2,-1/2)$. Le vecteur $v=(-3,1)$ a norme un, mais $Dv=(-3/2,-1/2)$ a norme trois. Donc $N(D)\ge3$ bien que $\rho(A)=1/2$.
+L’assertion imprimée est fausse pour la norme arbitrairement fixée au début de la partie. Sur $\mathbb C^2$, prenons $\|(x,y)\|=\max(|x+3y|,|y|)$ (la norme infinie après un changement de coordonnées inversible) et $A=T=D=\operatorname{Diag}(1/2,-1/2)$. Le vecteur $v=(-3,1)$ a norme un, mais $Dv=(-3/2,-1/2)$ a norme trois. On a même $N(D)=7/2$. Dans les coordonnées $(u,v)=(x+3y,y)$, $D$ envoie $(u,v)$ sur $(u/2-3v,-v/2)$. Sur $\max(|u|,|v|)\le1$, le premier module est au plus $7/2$, valeur atteinte pour $(u,v)=(-1,1)$. Or $\rho(A)=1/2$.
 
 Pour achever la preuve de l’équivalence, on peut choisir **une norme auxiliaire**. Avec la norme vectorielle $\|X\|_\infty=\max_i|X_i|$, sa norme subordonnée $N_\infty$ vérifie $N_\infty(D)=\max_i|D_{ii}|=\rho(A)<1$. La convergence des puissances est indépendante de ce choix en dimension finie.
 
@@ -111,6 +113,8 @@ Par 12 une sous-suite $Y_{k_j}$ converge vers $X\in Q$. À la limite dans l’é
 ### Question 14
 
 Pour $\ell\ge1$, $(A^\ell)_{ij}$ est la somme des produits $a_{i s_1}a_{s_1 s_2}\cdots a_{s_{\ell-1}j}$ sur les sommets intermédiaires. Ces termes sont tous positifs ou nuls. Un produit est strictement positif exactement lorsque toutes les arêtes correspondantes existent, donc lorsque cette liste décrit un chemin de longueur $\ell$. Pour $\ell=0$, $A^0=I_d$ et l’unique possibilité est $i=j$, en accord avec la convention.
+
+Dans la matrice à quatre sommets dessinée dans le sujet, la troisième ligne est nulle, donc aucun chemin de longueur positive ne part de 3. Pour aller de 2 à 3 en deux pas, l’unique possibilité est $2\to1\to3$. Son poids est $a_{21}a_{13}=\tfrac12$, qui vaut bien $(A^2)_{23}$.
 
 ### Question 15
 

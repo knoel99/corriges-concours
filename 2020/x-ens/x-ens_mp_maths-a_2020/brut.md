@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
 L’épreuve de quatre heures caractérise les valeurs propres possibles des matrices symétriques à coefficients rationnels. En dimension arbitraire, ce sont exactement les nombres totalement réels. Les 18 numéros du sujet comprennent 30 questions et sous-questions. [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20MP%20SUJET%20ECRIT%20MATHEMATIQUES%20A%20%28XLCR%29.pdf)
@@ -163,6 +165,6 @@ On a $S=R^{\mathsf T}R$, où $R=\operatorname{diag}(\sqrt{q_i})P$ est réelle in
 
 Pour obtenir des coefficients **rationnels**, la question 3c fournit des matrices symétriques rationnelles $H_i$ de même taille $N$ avec $H_i^2=q_i I_N$. Elles sont inversibles puisque $q_i>0$. Pour une matrice rationnelle $K=(k_{ij})$, notons $K\otimes I_N$ la matrice des blocs $k_{ij}I_N$. Posons
 $$\widehat M=M\otimes I_N,\quad D=\operatorname{diag}(H_1,\ldots,H_d),\quad T=D(P\otimes I_N).$$
-Le produit par blocs donne $T^{\mathsf T}T=S\otimes I_N$. D’après 17a, $(T^{\mathsf T}T)\widehat M=(SM)\otimes I_N$ est symétrique. Le calcul de 17b appliqué à $T$ et $\widehat M$ montre que $A=T\widehat M T^{-1}$ est symétrique. Toutes ses matrices constitutives, y compris les inverses utilisés, sont rationnelles. Enfin $M$ admet $z$ pour valeur propre par 16 ; si $Mv=zv$ et $w\ne0$, le vecteur de blocs $v_iw$ est un vecteur propre de $\widehat M$ de valeur $z$. Par similitude, $z$ est valeur propre de $A$. On peut contrôler tout le spectre de cette construction. Pour chacun des $N$ vecteurs $w$ de la base canonique, les blocs $v_iw$ décrivent une copie stable de l’espace de départ sur laquelle $\widehat M$ agit par $M$. Ces copies sont en somme directe et épuisent la dimension $dN$. Ainsi $\chi_A=\chi_{\widehat M}=Z^N$ et chaque racine de $Z$ est conservée avec sa multiplicité multipliée par $N$. Le cas $z=0$, écarté en début de partie, se réalise par la matrice nulle de taille un.
+Le produit par blocs donne $T^{\mathsf T}T=S\otimes I_N$. D’après 17a, $(T^{\mathsf T}T)\widehat M=(SM)\otimes I_N$ est symétrique. Le calcul de 17b appliqué à $T$ et $\widehat M$ montre que $A=T\widehat M T^{-1}$ est symétrique. Toutes ses matrices constitutives, y compris les inverses utilisés, sont rationnelles. Enfin $M$ admet $z$ pour valeur propre par 16 ; pour $v\in\mathbb R^d\setminus\{0\}$ vérifiant $Mv=zv$ et $w\in\mathbb Q^N\setminus\{0\}$, le vecteur non nul de blocs $v_iw$ est un vecteur propre de $\widehat M$ de valeur $z$. Par similitude, $z$ est valeur propre de $A$. On peut contrôler tout le spectre de cette construction. Pour chacun des $N$ vecteurs $w$ de la base canonique, les blocs $v_iw$ décrivent une copie stable de l’espace de départ sur laquelle $\widehat M$ agit par $M$. Ces copies sont en somme directe et épuisent la dimension $dN$. Ainsi $\chi_A=\chi_{\widehat M}=Z^N$ et chaque racine de $Z$ est conservée avec sa multiplicité multipliée par $N$. Le cas $z=0$, écarté en début de partie, se réalise par la matrice nulle de taille un.
 
 ![Figure 6 — L’agrandissement préserve la valeur propre et fournit le changement de base rationnel qui rend la matrice symétrique.](figures/construction-par-blocs.svg)

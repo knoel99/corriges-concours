@@ -1,0 +1,87 @@
+{
+  "slug": "x-ens_pc_mathematiques_2013",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Mathématiques",
+    "annee": 2013,
+    "duree_heures": 4
+  },
+  "questions": 28,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "identification": "Composition de mathématiques XEULC, filière PC, quatre pages, quatre heures. École polytechnique, ESPCI et ENS. Rapport officiel de mathématiques PC lu.",
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2013/PC/13_pc_math_xeulc.pdf",
+    "sujet_sha256": "ca5424ae50dc3b5c032c99b74f9747daee549c1cc275e8f76c2d8f776fbe13fa",
+    "index_sujet": "https://www.ens.psl.eu/rapports-et-sujets-pc-2013",
+    "rapport": "https://www.ens.psl.eu/IMG/file/concours/2013/PC/13_pc_rap_emath.pdf",
+    "rapport_sha256": "fd0c96d91ebed321d47ea7e73e9fb80082a5c2edf60640081632b7bddafc4da5",
+    "index_rapport": "https://www.ens.psl.eu/rapports-et-sujets-pc-2013"
+  },
+  "figures": [
+    {
+      "fichier": "figures/dispersion.svg",
+      "question": "5",
+      "legende": "Figure 1 — Avec a, b, c, d égaux à 0, 1, 2, 3, la différence des quatre distances forme un trapèze non négatif."
+    },
+    {
+      "fichier": "figures/convergence-jacobi.svg",
+      "question": "19",
+      "legende": "Figure 2 — Norme hors diagonale relative, mesurée sur une matrice symétrique de taille trois et comparée à la borne géométrique. Les traits relient les valeurs aux rangs entiers."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Les 22 questions, soit 28 items et sous-questions, cinq parties. Rotations, cas limite du pivot à diagonales égales, preuve de variation finie, convergence géométrique et vérification de l’algorithme à pivot maximal."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8a",
+      "8b",
+      "8c",
+      "8d",
+      "8e",
+      "9",
+      "10a",
+      "10b",
+      "11",
+      "12a",
+      "12b",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22"
+    ],
+    "precision": "Les 28 repères de questions et sous-questions ont été rapprochés dans l’ordre du sujet officiel et dans chacune des deux éditions. La portée de la rédaction ou de la révision est conservée dans le journal cité.",
+    "origine_attestation": {
+      "commit_du_journal": "0f0416e2caeddb2b364248160c90fa529c601d74",
+      "sha256_sujet_controle": "ca5424ae50dc3b5c032c99b74f9747daee549c1cc275e8f76c2d8f776fbe13fa",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Les 22 questions, soit 28 items et sous-questions, cinq parties. Rotations, cas limite du pivot à diagonales égales, preuve de variation finie, convergence géométrique et vérification de l’algorithme à pivot maximal."
+    }
+  }
+}

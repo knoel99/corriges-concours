@@ -435,7 +435,7 @@ def variables_gabarit(meta: dict, nature: str, titre: str) -> dict[str, str]:
     # La nature est déjà affichée au-dessus du titre : « … · Corrigé guidé » ferait doublon.
     titre = re.sub(r"\s*·\s*Corrigé(?:\s+(?:brut|guidé))?\s*$", "", titre, flags=re.I)
     titre = titre or f"{ep.get('concours', '')} {ep.get('filiere', '')} — {ep.get('matiere', '')}"
-    return {
+    variables = {
         "nature": libelle,
         "titre": echapper_latex(titre),
         "concours": echapper_latex(str(ep.get("concours", ""))),
@@ -443,6 +443,17 @@ def variables_gabarit(meta: dict, nature: str, titre: str) -> dict[str, str]:
         "matiere": echapper_latex(str(ep.get("matiere", ""))),
         "annee": echapper_latex(str(ep.get("annee", ""))),
     }
+
+    # Trente caractères latins, même aussi larges que W, laissent la place
+    # au mode, à l’année et aux blancs dans les 16,6 cm du gabarit.
+    # Garder le même .tex permet de réutiliser les PDF courts déjà compilés.
+    libelles = "".join(str(ep.get(cle, "")) for cle in ("concours", "filiere", "matiere"))
+    if not (
+        re.fullmatch(r"[A-Za-zÀ-ÖØ-öø-ÿ0-9 .’'()/+-]{0,30}", libelles)
+        and re.fullmatch(r"[0-9]{4}", variables["annee"])
+    ):
+        variables["mesurerentete"] = "true"
+    return variables
 
 
 _OVERFULL = re.compile(r"^Overfull \\[hv]box \(([\d.]+)pt too (?:wide|high)\)(.*)$", re.M)

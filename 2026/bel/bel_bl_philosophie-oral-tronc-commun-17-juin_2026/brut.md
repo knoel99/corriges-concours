@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La feuille du 17 juin réunit 11 tickets de deux sujets. Le candidat dispose de 1 h 30 de préparation et indique au jury son choix au moment du passage. Il présente un seul sujet pendant 20 minutes, puis répond aux questions durant 10 minutes. Les deux possibilités de chaque ticket sont traitées ici.
 
 ## Ticket 1
@@ -23,6 +25,10 @@ Il faut enfin examiner celui qui donne ce nom à la situation. Déclarer une cri
 De loin, la tour paraît ronde et je découvre en m’approchant qu’elle a plusieurs faces. Faut-il qualifier l’apparence de mensonge ? La tour m’est effectivement apparue ronde à cette distance. L’erreur commence si je conclus trop vite que sa forme doit correspondre, sous tous les points de vue, à ce premier aspect. Une apparence est d’abord la manière dont quelque chose se présente dans des conditions déterminées.
 
 Cette dépendance rend possible sa correction. Le changement de perspective ne donne pas accès à une tour débarrassée de tout aspect sensible. Il permet de comprendre pourquoi un autre aspect se produisait et de rendre compatibles plusieurs observations. Dans le domaine social, cependant, un agent peut produire une apparence à dessein. Un bilan présenté en ne retenant que quelques mois favorables peut être composé de chiffres exacts et suggérer une tendance trompeuse. L’examen porte alors sur le dispositif de présentation autant que sur l’information isolée.
+
+Revenir au premier point d’observation est un test décisif. Si la silhouette paraît de nouveau arrondie, l’apparence se reproduit selon une règle. L’enquête peut alors expliquer à la fois la forme de la tour et l’expérience véridique d’avoir vu un contour arrondi.
+
+![Figure 1 — Une tour ronde de loin, polygonale de près](figures/apparence.svg)
 
 L’apparence joue enfin un rôle constitutif. Un sourire ou un geste d’accueil n’est pas seulement l’enveloppe extérieure d’une intention cachée. Dans certaines relations, c’est par le geste public que l’accueil a lieu. L’opposer systématiquement à une vérité située derrière lui effacerait ce pouvoir de manifestation. Il faut donc demander dans chaque cas si une apparence est l’aspect à expliquer, un indice à recouper ou une mise en scène calculée pour faire croire. La critique des apparences a besoin de leur diversité.
 

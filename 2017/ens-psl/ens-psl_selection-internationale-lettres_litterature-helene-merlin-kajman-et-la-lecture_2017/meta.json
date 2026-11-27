@@ -1,0 +1,129 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_litterature-helene-merlin-kajman-et-la-lecture_2017",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Littérature — Hélène Merlin-Kajman et la lecture",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "Littérature — Hélène Merlin-Kajman et la lecture",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/litterature-ecrit.pdf",
+    "sujet_sha256": "3a0080b56ab6111eb8d5aa63207e389b1e2cc9465d84d7da21d7e92e45821b5b",
+    "references": [
+      "https://fr.wikisource.org/wiki/Les_Contemplations/%C2%AB_Demain%2C_d%C3%A8s_l%E2%80%99aube%2C_%C3%A0_l%E2%80%99heure_o%C3%B9_blanchit_la_campagne_%C2%BB",
+      "https://www.cercle-enseignement.com/Ouvrages/Gallimard/Tel/Pour-une-esthetique-de-la-reception"
+    ],
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/ens_rapport_sil_litterature_2017.pdf",
+    "rapport_sha256": "9058fff717f3846beb5d505d56ade42b4ef87f88c66eb78fc30f626cbd3c8497",
+    "archive_annuelle": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2017-lettres-0"
+  },
+  "figures": [
+    {
+      "fichier": "figures/partager.svg",
+      "question": "Dissertation",
+      "legende": "Quelles conditions de lecture pour un même poème ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Lecture du rapport sur les fonctions mémorielles, les conditions de lecture et la différence entre engagement d’une œuvre et instrumentalisation de sa lecture.",
+      "modifications": false
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Rédaction de la dissertation littéraire, de son accompagnement et de sa figure dans les deux éditions.",
+      "modifications": true
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Vérification du mouvement de la citation, du dénouement du poème de Hugo et de la différence entre dispositif littéraire, usage pédagogique et effet affectif. Contrôle des deux éditions.",
+      "modifications": true
+    },
+    {
+      "phase": "relecture",
+      "session": "x_maths_b_anciennes",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "perimetre": "Vérification du passage de la possibilité à la prescription dans la citation, de l’adresse au futur chez Hugo, du rôle du partage et des attentes de lecture relevées dans le rapport du jury.",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    },
+    {
+      "phase": "autocontrole",
+      "session": "x_maths_b_anciennes",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "perimetre": "Contrôle de la consigne unique et de ses attendus, des exemples, de la figure, des signatures et des signets des deux PDF.",
+      "modifications": false,
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Analyser et commenter la proposition d’Hélène Merlin-Kajman sur les usages de la lecture et sur sa fonction réparatrice, en la confrontant à des œuvres, à la critique et à des expériences de lecture."
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Feuillet de l’écrit, p. 1 sur 1 ; une seule consigne. Le rapport traite les conditions du partage et la porosité entre conviction et émotion."
+  },
+  "controle_enonce": {
+    "question": "Analyser et commenter la proposition d’Hélène Merlin-Kajman sur les usages de la lecture et sur sa fonction réparatrice, en la confrontant à des œuvres, à la critique et à des expériences de lecture.",
+    "attendus": [
+      "Le texte comme réserve de plusieurs usages",
+      "Les buts rhétoriques, la réparation et l’aggravation du réel traumatique",
+      "Le choix de partage et le risque d’instrumentalisation",
+      "Lectures françaises et étrangères, références critiques et expérience de lecture"
+    ],
+    "repere": "Feuillet de l’écrit, p. 1 sur 1 ; une seule consigne. Le rapport traite les conditions du partage et la porosité entre conviction et émotion.",
+    "figure": "Quelles conditions de lecture pour un même poème ?"
+  }
+}

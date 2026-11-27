@@ -11,13 +11,14 @@
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20MP%20SUJET%20ECRIT%20MATHEMATIQUES%20B%20%28X%29.pdf",
     "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20MP%20RAPPORT%20ECRIT%20MATHEMATIQUES%20B%20%28X%29.pdf",
-    "sha256_sujet": "12ff6602cce05262f2f30aebef0d51605b04fa4f886fc8e9219134511b8fe90e"
+    "sha256_sujet": "12ff6602cce05262f2f30aebef0d51605b04fa4f886fc8e9219134511b8fe90e",
+    "sha256_rapport_jury": "f8648e741f8e9e9343ca33495674d3f8c7313e13c2dc38dadd83c6724461d3a2"
   },
   "figures": [
     {
       "fichier": "figures/zone-stationnaire.svg",
       "question": "19",
-      "legende": "Pour la phase quadratique, la zone centrale où les oscillations se compensent peu a une largeur proportionnelle à la racine inverse du paramètre."
+      "legende": "Le tracé représente cos(32x²). La zone entre −1/√32 et 1/√32 correspond à une variation de phase d’au plus un radian ; sa largeur est 2/√32."
     }
   ],
   "contributions": [
@@ -31,6 +32,55 @@
       "perimetre": "Rédaction intégrale des questions 1 à 20 et de leurs subdivisions. Contrôle des petits indices en 8a, des deux queues pour Stirling et de la condition de bord en 17 avec un contre-exemple explicite, schéma de phase stationnaire.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Les questions 1 à 20 comprennent 25 rubriques. Recoupement du changement de probabilité, de la valeur du taux aux deux extrémités, des deux queues dans la preuve de Stirling et des coefficients de Fresnel. Vérification de l’hypothèse manquante au bord droit en Q17, de son contre-exemple et de la largeur cotée du profil quadratique en Q19."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5a",
+      "5b",
+      "6",
+      "7",
+      "8a",
+      "8b",
+      "8c",
+      "9",
+      "10",
+      "11",
+      "12a",
+      "12b",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18a",
+      "18b",
+      "19",
+      "20"
+    ],
+    "precision": "Les 25 rubriques des deux éditions ont été rapprochées du fascicule de 6 pages et du rapport du jury de 8 pages. Les questions 1 à 20 comprennent 25 rubriques. Recoupement du changement de probabilité, de la valeur du taux aux deux extrémités, des deux queues dans la preuve de Stirling et des coefficients de Fresnel. Vérification de l’hypothèse manquante au bord droit en Q17, de son contre-exemple et de la largeur cotée du profil quadratique en Q19.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "12ff6602cce05262f2f30aebef0d51605b04fa4f886fc8e9219134511b8fe90e",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Les questions 1 à 20 comprennent 25 rubriques. Recoupement du changement de probabilité, de la valeur du taux aux deux extrémités, des deux queues dans la preuve de Stirling et des coefficients de Fresnel. Vérification de l’hypothèse manquante au bord droit en Q17, de son contre-exemple et de la largeur cotée du profil quadratique en Q19.",
+      "commit_redaction_anterieure": "0c84e6fef34e0c440aa8475fa8e72b7f9b66066c"
+    }
+  }
 }

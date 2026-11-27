@@ -8,6 +8,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Sujet.** Le court terme est-il l’ennemi du long terme ?
 
 **Problématique** : si le court terme est la seule échelle de temps où les agents décident, l'opposition entre court et long terme tient-elle à la nature de l'économie, ou à la myopie des horizons de décision que des institutions peuvent corriger ?
@@ -61,6 +63,12 @@ La troisième réponse consiste à donner un prix au long terme dans les calculs
 * * *
 
 Le court terme n'est pas, par nature, l'ennemi du long terme. Il en est la matière, puisque toute décision est prise dans le présent ; il en est souvent la condition, quand une stabilisation rapide évite que les récessions ne détruisent le capital humain et productif ; il en est parfois le prix, quand une destruction créatrice ou une désinflation imposent des sacrifices immédiats. Il devient un ennemi lorsque les horizons de décision se raccourcissent : préférence excessive pour le présent des ménages, gouvernance financière tournée vers les résultats trimestriels, calendrier électoral et exploitation des ressources communes. L'opposition est donc moins économique qu'institutionnelle. Elle se corrige par des institutions qui allongent les horizons, comme l'indépendance monétaire, des règles budgétaires intelligentes, une gouvernance ouverte aux parties prenantes et un prix du carbone, à condition qu'elles tiennent compte de l'acceptabilité immédiate de leurs coûts. La transition écologique est le test décisif de cette réconciliation. Elle exige des investissements dont les bénéfices se mesurent en décennies, financés par des sociétés qui jugent leurs dirigeants à l'échelle d'un mandat.
+
+## Vérification sur le sujet
+
+Dissertation unique confrontée au feuillet officiel et au rapport. Les deux éditions traitent les arbitrages privés et publics, la possible persistance des chocs conjoncturels et les institutions capables de modifier les horizons de décision. Les effets d’une politique de soutien et ceux d’un retard d’investissement sont explicités.
+
+À coût immédiat de 100, un projet dont le seul bénéfice certain est de 150 dans vingt ans a une valeur actuelle d’environ 123 au taux d’actualisation réel de 1 %, et de 68 au taux de 4 %. La valeur nette est donc approximativement +23 ou −32. Pour une intervention climatique, le choix du taux social, la répartition des coûts entre générations et l’irréversibilité des dommages doivent être discutés séparément. L’horizon du projet est identique dans les deux calculs. C’est le poids donné à ses effets futurs qui change la décision.
 
 ## Sources
 

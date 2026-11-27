@@ -1,0 +1,69 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_philosophie-quelle-est-la-place-de-la-parole-en-democratie-oral_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Philosophie — Quelle est la place de la parole en démocratie (oral)",
+    "annee": 2019,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie — Quelle est la place de la parole en démocratie (oral)",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/philo.pdf",
+    "sha256_sujet": "e4d2e0b125bc27ca5c2d671e569ffb36314a5aab9fc5c2b9eaf08567862179a1",
+    "reperage": "Une page réunit quatre lignes attribuées chacune à un candidat sous la consigne « Développez et commentez ». La troisième est celle de ce corrigé. Les lignes 1, 2 et 4 sont attribuées à d’autres candidats. Le troisième énoncé ne demande ni texte d’appui, ni projet personnel.",
+    "page_officielle": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2019-lettres",
+    "pages_sujet": 1,
+    "note_generale_jury": "https://www.ens.psl.eu/IMG/file/internationale/2008/Lettres/Lettres.pdf",
+    "sha256_note_generale": "3a360c4a7769d5dbf001d43040fcd150dcf10e4ee661a0264586d3fb340a24f4"
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Exposé oral",
+      "legende": "Parler avant et après la décision"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet original. Exposé argumenté sur le sujet attribué, exemples et objections, préparation guidée de l’entretien et schéma des distinctions conceptuelles."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "oraux_lyon_et_anciens_corriges",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle du feuillet commun et de la seule question attribuée au candidat 3, distinction entre pouvoir de proposer, procédure d’écoute, scrutin et responsabilité, objection sur la représentation."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Exposé du candidat 3 : « Quelle est la place de la parole en démocratie ? »."
+    ],
+    "elements_verifies": [
+      "Une page réunit quatre lignes attribuées chacune à un candidat sous la consigne « Développez et commentez ». La troisième est celle de ce corrigé. Les lignes 1, 2 et 4 sont attribuées à d’autres candidats. Le troisième énoncé ne demande ni texte d’appui, ni projet personnel.",
+      "Contrôle du feuillet commun et de la seule question attribuée au candidat 3, distinction entre pouvoir de proposer, procédure d’écoute, scrutin et responsabilité, objection sur la représentation."
+    ]
+  }
+}

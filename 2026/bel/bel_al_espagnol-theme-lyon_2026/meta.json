@@ -17,7 +17,21 @@
   },
   "sources": {
     "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-04/Epreuve%20de%20sp%C3%A9cialit%C3%A9%202026.pdf#page=14",
-    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Espagnol%202026.pdf#page=19"
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Espagnol%202026.pdf#page=19",
+    "sujet_sha256": "62fa5ca9c1b2caf4de4b131c5e8e4432d72544a0e0a01930f1ffed7d6e59acc2",
+    "rapport_jury_sha256": "4d7aad3e9416c16268a6a20e2b3944d0977db759c4a175cbd3d84d93d7da70cb",
+    "fascicule": "LC 663, J. 26 1066-P, Banque d’épreuves littéraires, épreuve de spécialité",
+    "page_sujet": 14,
+    "pages_rapport_jury": "19–25",
+    "epreuve": "Thème en quatre heures, sans dictionnaire",
+    "passage": {
+      "auteur": "Pierre Lemaitre",
+      "titre": "Au revoir là-haut",
+      "annee": 2013,
+      "premiers_mots": "Édouard vit immédiatement qu’Albert était déçu.",
+      "derniers_mots": "il grillait d’impatience.",
+      "paragraphes": 4
+    }
   },
   "figures": [
     {
@@ -26,7 +40,7 @@
       "question": "Thème"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -38,6 +52,24 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Traduction en espagnol des quatre paragraphes de Pierre Lemaitre, guide sur les voix et les temps, schéma sur les regards et la décision."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "verification_themes_lyon_2026",
+      "agent": "latin26_lyon",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle des quatre paragraphes sur le texte de Pierre Lemaitre et le rapport de spécialité. Révision du pronostic d’Édouard, du regard habituel et du rattachement d’abatido à Albert vu de dos dans les deux éditions."
     }
   ],
   "droits_sources": {
@@ -45,5 +77,22 @@
       "Pierre Lemaitre, Au revoir là-haut, 2013."
     ],
     "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires. La licence du corrigé ne vaut pas autorisation de leur part."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Thème intégral en espagnol"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "precision": "Les 4 paragraphes de la page 14 du fascicule LC 663 ont été comparés, dans leur ordre, à la traduction complète de chacune des deux éditions.",
+    "reperes_par_paragraphe": [
+      "Le retour du rendez-vous et le jugement d’Édouard sur les souliers.",
+      "Le regard évité, le masque, le reproche intérieur et l’abattement vu de dos.",
+      "La décision de parler avant que le projet ne soit achevé.",
+      "La tristesse avancée comme motif, puis l’impatience née du dessin de l’enfant de profil."
+    ]
   }
 }

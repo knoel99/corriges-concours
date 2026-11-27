@@ -1,0 +1,82 @@
+{
+  "slug": "ens-psl_medecine-humanites_maladies-damour-maladies-de-la-jeunesse_2021",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Médecine-Humanités",
+    "matiere": "Maladies d’amour, maladies de la jeunesse",
+    "annee": 2021,
+    "modalite": "écrit"
+  },
+  "intitule": "Maladies d’amour, maladies de la jeunesse",
+  "questions": 1,
+  "redaction": "Commentaire rédigé en lecture croisée sur « Maladies d’amour, maladies de la jeunesse », guide d’analyse de chaque document, composition développée et schéma.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet-mh-2021.pdf",
+    "index": "https://medecine-humanites.ens.psl.eu/sujets-et-rapports-du-concours-2018/",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.ens.psl.eu/sites/default/files/sujet-mh-2021.pdf",
+        "fac_simile": "https://web.archive.org/web/20251114081746id_/https://www.ens.psl.eu/sites/default/files/sujet-mh-2021.pdf",
+        "sha256": "9f0007d211f8da91e20bc7d07584381d311e180c0b91bb031818ab5919c9062c",
+        "nature": "PDF",
+        "pages": 5
+      },
+      {
+        "role": "consignes",
+        "url": "https://www.ens.psl.eu/sites/default/files/consignes-mh-2021.pdf",
+        "fac_simile": "https://www.ens.psl.eu/sites/default/files/consignes-mh-2021.pdf",
+        "sha256": "f757c18dbe8316485334ef079a248f2045262376fc6ee7d09b0e8e6aae0fb47d",
+        "nature": "PDF",
+        "pages": 1
+      }
+    ]
+  },
+  "documents_commentes": [
+    "Jean Héroard, entrée du 25 janvier 1619. Distinguer le relevé médical quotidien, la pression de la cour et le refus de Louis XIII.",
+    "Samuel Auguste Tissot, *L’Onanisme*, 1769. Interroger la valeur probante d’un cas présenté en exemple et le vocabulaire de la faute.",
+    "Guy de Maupassant, « Rosalie Prudent », 1886. La syntaxe orale, les reprises et les questions donnent forme au témoignage du personnage.",
+    "Nan Goldin, autoportrait de 1984 présenté dans un diaporama en 1986. Le titre et le cadrage rendent visibles la durée des effets des coups et la position de l’autrice.",
+    "Tribune associative dans *Le Monde*, 23 juin 2001. Les signataires interviennent dans un débat de prévention et revendiquent le droit de vivre."
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Commentaire",
+      "fichier": "figures/lecture-croisee.svg",
+      "legende": "Trois questions pour lire un récit de souffrance"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "arabe_mp_pc_2011_2014",
+      "session": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Commentaire rédigé en lecture croisée sur « Maladies d’amour, maladies de la jeunesse », guide d’analyse de chaque document, composition développée et schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "agent": "reprise_medecine_humanites",
+      "session": "reprise_medecine_humanites",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Relecture des cinq pièces et du feuillet de consignes. Distinction entre observation et propos rapporté dans le journal de Héroard. Repérage des pages dans le guidé et contrôle des deux éditions."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire de documents"
+    ]
+  }
+}

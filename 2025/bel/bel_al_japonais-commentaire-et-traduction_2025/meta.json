@@ -1,0 +1,98 @@
+{
+  "slug": "bel_al_japonais-commentaire-et-traduction_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Japonais (commentaire et traduction)",
+    "annee": 2025
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2025-07/Commentaire%20et%20traduction.pdf#page=14",
+    "sujet_sha256": "ea1e2d243c18761ad6c43ed4f301fdebb92b05def7502a7357659f787a15ae35",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2025-11/Japonais%202025%20OK%20Lyon%20RELU.pdf#page=2",
+    "rapport_sha256": "0bddc4c084f04d57c0cdfe8c82e1e520e487048c82a6928d043241607999d376",
+    "archive_session": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2025",
+    "archive_session_sha256": "ad4b2d5508e5132af04c07c96bb278eb4e9eb062899548832904af2ccfc2e890",
+    "auteur_oeuvre": "堀辰雄, 聖家族 (Hori Tatsuo, La Sainte Famille, 1930)."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "Les regards changent de place"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire intégral en japonais, version française du passage indiqué, schéma et accompagnement."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture de la vitre embuée et de l’image du corps à la dérive. Distinction entre la parenté supposée par le lecteur et le seul geste visible. Vérification du nom Saïki sur les furigana et du tiret suspendu de la dernière ligne."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire",
+      "Version française"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Commentaire",
+        "page_pdf": 14,
+        "page_pdf_fin": 15,
+        "perimetre": "Lignes 1 à 23, de la mort qui ouvre une saison au geste du jeune homme et au tiret final.",
+        "pages_rapport": [
+          2,
+          2
+        ]
+      },
+      {
+        "question": "Version française",
+        "page_pdf": 14,
+        "page_pdf_fin": 15,
+        "perimetre": "Lignes 1 à 23, totalité du texte, de « 死があたかも » à « 彼女の腕をつかまえたのを―― ».",
+        "pages_rapport": [
+          2,
+          2
+        ]
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

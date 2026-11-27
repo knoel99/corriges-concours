@@ -1,0 +1,56 @@
+{
+  "slug": "ens-rennes_d1_espagnol_2005",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Espagnol",
+    "annee": 2005,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/2005-sujets-d1_1423060647728-pdf#page=9",
+    "sha256_sujet": "6e722c986780682109dc35cd612f69dd9f54c1674c5c472c52b1da9d33b0e220",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "publication": "Carmen Molinero, « Memoria y democracia », El País, 7 novembre 2004",
+    "page": 9
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en espagnol"
+    ],
+    "precision": "Version du seul passage de « Por fin la situación ha cambiado » à « en la División Leclerc ». La citation à discuter est tirée du premier paragraphe de contexte."
+  },
+  "longueur_expression": {
+    "mots": 100,
+    "regle": "Commenter en espagnol, en 100 mots, la sélection des faits qui construit la mémoire publique et les buts assignés à cette sélection."
+  },
+  "figures": [
+    {
+      "fichier": "figures/memoire.svg",
+      "legende": "Trois supports d’une mémoire publique"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Version du seul passage de « Por fin la situación ha cambiado » à « en la División Leclerc ». La citation à discuter est tirée du premier paragraphe de contexte. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

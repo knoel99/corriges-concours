@@ -1,0 +1,85 @@
+{
+  "slug": "x_pc_physique-a_2017",
+  "epreuve": {
+    "concours": "X",
+    "ecoles_historiques": "École polytechnique et ESPCI",
+    "filiere": "PC",
+    "matiere": "Physique A",
+    "annee": 2017
+  },
+  "questions": 23,
+  "intitule": "Catapultes — Coalescence de gouttes d’eau",
+  "redaction": "Rédaction des questions 1 à 6 sur des gouttes d’eau. Comparaison aux mesures de la figure 2. Les questions 7 à 23 sont hors du traitement appliqué, seules les notions générales sont rappelées.",
+  "sources": {
+    "garde": "XE · École polytechnique et ESPCI · 4 heures",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/07/2017_PC_sujet_PhyA.pdf",
+    "sujet_sha256": "2f9967c6657161424f49d1b99d82a96e9838855ea00e21ebda8145fedaa4f2ef",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/11/17_PC_rap_ePhyA.pdf",
+    "rapport_sha256": "4c14515a7eda6eab15f16a4a8482ed29918265415ae1bb5c14c5a0116c619ff1"
+  },
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "physique_a_pc_x",
+      "session": "physique_a_pc_x",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Rapport du jury, notamment sur le rayon après coalescence, les bilans d’énergie et la valeur du maximum de vitesse dans la première partie."
+    },
+    {
+      "phase": "redaction",
+      "agent": "physique_a_pc_x",
+      "session": "physique_a_pc_x",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des questions 1 à 6 sur des gouttes d’eau. Comparaison aux mesures de la figure 2. Les questions 7 à 23 sont hors du traitement appliqué, seules les notions générales sont rappelées."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "6",
+      "fichier": "figures/gouttes.svg",
+      "legende": "Saut de gouttes d’eau après coalescence. La courbe est le modèle de la question 6, les points sont des lectures approximatives de la figure 2 du sujet."
+    }
+  ],
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "questions_non_traitees": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23"
+    ],
+    "limites": "Pas de calculs appliqués à la dissémination de spores ni de dimensionnement de lanceur électromagnétique."
+  }
+}

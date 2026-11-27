@@ -18,8 +18,10 @@
     "references": [
       "https://doi.org/10.1257/jep.31.2.87",
       "https://doi.org/10.1111/ectj.12097",
-      "https://doi.org/10.1073/pnas.1510489113"
-    ]
+      "https://doi.org/10.1073/pnas.1510489113",
+      "https://doi.org/10.1038/s41586-022-04484-9"
+    ],
+    "rapport_sha256": "de2de7badfe0c93897c67d74c736111ab7182145ccedc81aad6b505ae000b150"
   },
   "figures": [
     {
@@ -39,6 +41,33 @@
       "agent": "astra_info_si",
       "fournisseur": "codex",
       "perimetre": "Rédaction de la dissertation et de son guide à partir du sujet individuel écrit du candidat 2 reproduit page 2 du rapport du jury. Vérification des références académiques et institutionnelles, des raisonnements et de la figure originale sur le thème méthodes de machine learning."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "gestion_2022_2023",
+      "agent": "gestion_2022_2023",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Les deux copies vérifient la différence entre prédire un résultat et identifier un effet causal. Elles explicitent la formule du modèle partiellement linéaire, l’hypothèse de recouvrement et les limites du partage d’échantillon. Le ciblage de l’aide au Togo fournit un résultat empirique dont la population et la règle de comparaison sont précisées."
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Le recours aux méthodes de machine learning améliore-t-il nécessairement la crédibilité des résultats en économie empirique ?"
+    ],
+    "precision": "Le rapport du jury donne page 2 l’écrit individuel du candidat 2. Son oral distinct a pour intitulé « Apports de la révolution de la crédibilité à l’évaluation des politiques publiques ». La dissertation répond à une consigne unique, reproduite sans document annexe ni sous-question.",
+    "controle": "Les deux copies vérifient la différence entre prédire un résultat et identifier un effet causal. Elles explicitent la formule du modèle partiellement linéaire, l’hypothèse de recouvrement et les limites du partage d’échantillon. Le ciblage de l’aide au Togo fournit un résultat empirique dont la population et la règle de comparaison sont précisées."
+  }
 }

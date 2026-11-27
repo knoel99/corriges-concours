@@ -4,11 +4,15 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Fascicule officiel](https://www.ens-rennes.fr/medias/fichier/sujets-oraux-allemand-d-e-2026_1793377249028-pdf) · [Rapport du jury](https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-allemand-oral-2026_1793640932357-pdf)
 
 ## Préparer le passage
 
 Le rapport donne vingt minutes pour préparer un résumé et un commentaire. Sur les quinze minutes de passage, le jury souhaite six à huit minutes de parole autonome, puis un échange de durée comparable. Les critères de compréhension, d'analyse et d'interaction valent huit points, ceux de langue douze. En préparant l'exposé, garder deux détails en réserve pour l'entretien. Les relances proposées dans cette correction servent à s'entraîner. Le second feuillet du fascicule porte l'en-tête « 2025 ». L'article date du 30 avril 2026 et figure comme sujet 2 dans le rapport officiel de la session 2026.
+
+**Repère du fascicule.** Le deuxième feuillet porte la mention « 2025 » dans son en-tête. Le débat de MDR sur la taxe sur les boissons sucrées est daté du 30 avril 2026. Le rapport 2026 le donne comme texte numéro 2.
 
 ## Sujet 1 — Wie weit trägt die Partnerschaft mit Indien?
 

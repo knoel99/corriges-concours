@@ -1,0 +1,73 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_droit-la-justice-administrative_2016",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Droit — la justice administrative",
+    "annee": 2016,
+    "modalite": "écrit"
+  },
+  "intitule": "Droit — la justice administrative",
+  "gabarit": "dissertation",
+  "questions": 4,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/DROIT-Ecrit.pdf",
+    "sujet_sha256": "d3523b360130cbb08540130b9500c0a5c05bcc27199e51a5f662567a0f41dcaa",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/Rapport-Hist.Philo.DROIT.pdf",
+    "rapport_sha256": "5d71d913833021497a028d9618fec049100cdc8c8d961751c17e0a671ac1a7e6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/justice-administrative.svg",
+      "question": "Explication",
+      "legende": "Comparer les voies de recours à partir d’un même accident"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "sil_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du rapport disciplinaire de la session, avec distinction entre ses indications sur l’écrit et sur l’oral."
+    },
+    {
+      "phase": "redaction",
+      "session": "sil_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Réponses distinctes aux quatre questions et comparaison historique des droits français et britannique."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "sil_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification des consignes, des raisonnements et des légendes dans les deux éditions."
+    }
+  ]
+}

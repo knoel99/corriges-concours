@@ -55,6 +55,54 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Confrontation au dossier original et au rapport du jury. Contrôle des valeurs reportées, des champs, des dénominateurs et des limites de l’interprétation."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture croisée du dossier et du rapport de l’oral commun de sociologie 2026. Document 5, correction de l’unité statistique dans la figure commune et comparaison des parts de séjours chez des proches. Figure interprétée dans la copie et calcul ou question de méthode développé dans le guidé."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "gestion_2022_2023",
+      "agent": "gestion_2022_2023",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Les sept documents du dossier sont traités dans les deux éditions. Les dénominateurs des départs et de l’hébergement, les quatre pyramides de nuitées, les intentions et les deux tableaux de loisirs ont été contrôlés. Les deux terrains de village de vacances et les trois groupes de l’ethnographie de la plage sont distingués."
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Les pratiques touristiques"
+    ],
+    "precision": "Les sept documents du dossier sont traités dans les deux éditions. Les dénominateurs des départs et de l’hébergement, les quatre pyramides de nuitées, les intentions et les deux tableaux de loisirs ont été contrôlés. Les deux terrains de village de vacances et les trois groupes de l’ethnographie de la plage sont distingués.",
+    "controle": [
+      "Document 1. La transmission familiale de l’aisance internationale et les 15 voyages à l’étranger sur 22 au lycée en 2004–2005.",
+      "Document 2. L’ethnographie de Capritour, ses deux groupes sur la plage privée et le troisième sur des plages publiques.",
+      "Document 3. Taux de départ des moins de 14 ans de 70 %, mer 39 %, plusieurs environnements 29 % ; définition de quatre nuits.",
+      "Document 4. Intentions des non-partants selon le motif, 62 % en cas d’empêchement financier.",
+      "Document 5. Hébergement en 1989, parts des séjours par catégorie de la personne de référence, et contrôle de chaque barre reproduite.",
+      "Document 6. Quatre pyramides de nuitées agrégées, par âge et sexe ; comparaison à 20 ans en 1979 et 2004.",
+      "Document 7. Deux tableaux concernant des ménages avec enfant(s), pratiques pendant et hors séjour en Sicile et sur la Côte d’Azur."
+    ]
+  }
 }

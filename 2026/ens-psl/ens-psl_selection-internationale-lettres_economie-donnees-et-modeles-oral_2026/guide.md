@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Sujet.** Données et modèles en prévision économique.
 
 Le rapport du jury attend un plan clairement annoncé, un cadrage empirique et des liens entre théorie et politique publique. Les pistes de préparation proposent un déroulé d’exposé et d’entretien.
@@ -34,6 +36,13 @@ Le jeu d’information disponible à la date $t$ peut comporter des mois manquan
 À court terme, une persistance ou une moyenne historique donne un point de référence peu coûteux. Une équation-pont relie le PIB trimestriel à des indicateurs mensuels agrégés. Un modèle à facteurs extrait un petit nombre de composantes communes à de nombreuses séries, puis les relie à l’activité, en tenant compte du calendrier incomplet. Les travaux de Giannone, Reichlin et Small distinguent le contenu d’une publication de sa précocité. Une statistique très corrélée à la croissance peut apporter peu de nouvelles si d’autres informations l’avaient rendue largement prévisible.
 
 Dans un exemple fictif, le suivi du trimestre donne +0,4 %. Une publication de production dépasse **sa propre prévision** d’un point. Si la sensibilité locale du modèle est de 0,2 point de croissance par point de surprise, la nouvelle estimation est +0,6 %, toutes choses égales par ailleurs. La révision ne vaut pas la variation brute de la série entre deux mois : la partie attendue était déjà incorporée. Une autre publication simultanée corrélée ne s’ajoute pas mécaniquement. GDPNow, suivi public de la Réserve fédérale d’Atlanta, illustre l’actualisation régulière d’une estimation du PIB américain à mesure des publications. Il constitue une prévision de modèle distincte d’une prise de position de ses responsables.
+
+Fixons maintenant la prévision à +0,6 % et définissons l’erreur signée comme la prévision moins la croissance publiée. Si la première publication vaut +0,5 %, le modèle surestime la croissance de 0,1 point. Si la série est ensuite révisée à +0,8 %, la même prévision la sous-estime de 0,2 point. La décision du prévisionniste est identique dans les deux évaluations. C’est la mesure à laquelle on la compare qui a changé.
+
+![Figure 1 — L’évaluation d’une prévision dépend de la version du PIB retenue comme cible.](figures/publications-et-revisions.svg)
+
+> [!INDICATION]
+> Sur la figure, cacher les deux points de droite pour reconstituer ce que savait le prévisionniste fin avril. Puis choisir la première publication ou la valeur révisée pour calculer son erreur.
 
 À horizon plus long, les relations comptables, la démographie, les comportements des ménages ou la transmission des taux peuvent structurer une projection. Une relation prédictive stable suffit parfois pour anticiper à politique inchangée. Simuler une hausse de taxe requiert en revanche des hypothèses de comportement et d’identification causale. Un modèle régularisé ou d’apprentissage peut capter des non-linéarités, mais l’échantillon de trimestres reste petit, les paramètres peuvent dériver et une validation chronologique demeure nécessaire. Combiner des modèles est intéressant lorsque leurs erreurs diffèrent suffisamment. Le gain doit être vérifié.
 

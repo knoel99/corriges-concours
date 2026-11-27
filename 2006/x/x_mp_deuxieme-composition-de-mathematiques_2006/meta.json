@@ -11,7 +11,8 @@
   "sources": {
     "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-2_mp_2006.pdf",
     "rapport_jury": "https://www.wikiprepa.fr/concours/data/x_maths-2_mp_2006_rapport_jury.pdf",
-    "sha256_sujet": "703933fd8229736b9f03fcb5c13a08ac0c7cd63951e320e91a29e499f5eb1628"
+    "sha256_sujet": "703933fd8229736b9f03fcb5c13a08ac0c7cd63951e320e91a29e499f5eb1628",
+    "sha256_rapport_jury": "63c35459bc079a23bca770909ab3749c30a7797d910ba72b2c07fa3ced5494bf"
   },
   "figures": [
     {
@@ -31,6 +32,138 @@
       "perimetre": "Rédaction intégrale d’après le sujet et le rapport. Cas d’égalité de la norme, convergence en norme vers le projecteur, reconstruction et positivité de la matrice, identité de Laplace. Schéma d’une rotation pondérée.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "x_mp_deuxieme_composition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Pointage physique des 20 consignes sur 3 pages. Vérification des entrées et des signes des deux résolvantes, du cas d’égalité et du passage de la convergence sur les vecteurs à celle en norme. Preuve de l’orthogonalité de la décomposition noyau-image, justification de la loi exponentielle utilisée en 12 et estimation d’erreur pour l’intégrale tronquée."
     }
-  ]
+  ],
+  "intitule": "Matrices réelles de partie symétrique positive",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4.a",
+      "4.b",
+      "5.a",
+      "5.b",
+      "6",
+      "7.a",
+      "7.b",
+      "7.c",
+      "8",
+      "9",
+      "10.a",
+      "10.b",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1",
+        "page_pdf": "1"
+      },
+      {
+        "question": "2",
+        "page_pdf": "1"
+      },
+      {
+        "question": "3",
+        "page_pdf": "1"
+      },
+      {
+        "question": "4.a",
+        "page_pdf": "1–2"
+      },
+      {
+        "question": "4.b",
+        "page_pdf": "2"
+      },
+      {
+        "question": "5.a",
+        "page_pdf": "2"
+      },
+      {
+        "question": "5.b",
+        "page_pdf": "2"
+      },
+      {
+        "question": "6",
+        "page_pdf": "2"
+      },
+      {
+        "question": "7.a",
+        "page_pdf": "2"
+      },
+      {
+        "question": "7.b",
+        "page_pdf": "2"
+      },
+      {
+        "question": "7.c",
+        "page_pdf": "2"
+      },
+      {
+        "question": "8",
+        "page_pdf": "2"
+      },
+      {
+        "question": "9",
+        "page_pdf": "2"
+      },
+      {
+        "question": "10.a",
+        "page_pdf": "2"
+      },
+      {
+        "question": "10.b",
+        "page_pdf": "2"
+      },
+      {
+        "question": "11",
+        "page_pdf": "2"
+      },
+      {
+        "question": "12",
+        "page_pdf": "3"
+      },
+      {
+        "question": "13",
+        "page_pdf": "3"
+      },
+      {
+        "question": "14",
+        "page_pdf": "3"
+      },
+      {
+        "question": "15",
+        "page_pdf": "3"
+      }
+    ],
+    "controle": [
+      "p. 1, décomposition, critère spectral et inversibilité du décalage positif",
+      "p. 1–2, matrice de taille deux p. 1 et consignes communes aux deux exemples p. 2",
+      "p. 2, résolvantes des exemples, critère d’égalité pour la norme, projecteur limite, dérivation et reconstruction de A",
+      "p. 3, équivalence des trois conditions de décroissance, intégrales de Laplace, identification de l’inverse et rotation plane",
+      "Vérification des entrées et des signes des deux résolvantes, du cas d’égalité et du passage de la convergence sur les vecteurs à celle en norme. Preuve de l’orthogonalité de la décomposition noyau-image, justification de la loi exponentielle utilisée en 12 et estimation d’erreur pour l’intégrale tronquée."
+    ]
+  }
 }

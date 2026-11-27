@@ -1,0 +1,69 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire-ginzburg-et-les-preuves-de-lhistorien-oral_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire — Ginzburg et les preuves de l’historien (oral)",
+    "annee": 2018,
+    "modalite": "oral"
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/Sujet%20oral%20SIL2018-2.pdf",
+    "sha256_sujet": "392d3486a9d7f2d114e88442740c9c44e54ef9cf4c56a2f976a851eb7cd6d4ca",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_2018_histoire.pdf",
+    "sha256_rapport_jury": "19972089324eb727a8d7cf01ec3532c7bab36bde9919bcb68ea8da6ab0949696",
+    "page_officielle": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2018-lettres",
+    "precision_controle": "Sujet oral n° 2, deux pages. Traduction publiée chez Verdier en 1997, p. 19–23 de l’ouvrage. L’extrait commence par les deux effets du modèle judiciaire sur le choix des objets et se termine par la formule sur l’action attribuable à un protagoniste. Une coupe est signalée en première page, après Henri Griffet. Rapport du jury, p. 2, section sur l’oral.",
+    "reference_complementaire": "https://editions-verdier.fr/livre/le-juge-et-lhistorien/"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture-du-document.svg",
+      "question": "Le modèle judiciaire a orienté le choix des objets",
+      "legende": "La Grande Peur distingue l’existence des agresseurs de l’efficacité historique de la croyance."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale à partir de l’extrait de Ginzburg, pages 19–23 de la traduction indiquée. Lecture de Bloch, Lefebvre, Griffet, des deux sens de la preuve et de la critique du scepticisme. Rapport d’oral et schéma contrôlés.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "oraux_lyon_et_anciens_corriges",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire du raccord autour de la coupe et du caractère historique du lien entre preuve et vérité. Précision sur la portée du non-lieu et exercice de recoupement de lettres dépendantes."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire de l’extrait de Carlo Ginzburg sur les usages de la preuve."
+    ],
+    "detail": [
+      "Première page, effets du modèle judiciaire, comparaison de Mathiez avec Bloch et Lefebvre, efficacité des croyances et retour à Griffet.",
+      "De la coupe à la seconde page, portée du mot représentation, codage de la source, limites du scepticisme, statut des faux et enquête sur la peur. La fin est commentée jusqu’à la distinction des métiers et au schéma de l’action attribuable."
+    ]
+  },
+  "date_revision": "2026-11-26"
+}

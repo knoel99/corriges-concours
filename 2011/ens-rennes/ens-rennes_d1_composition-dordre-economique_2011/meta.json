@@ -1,0 +1,55 @@
+{
+  "slug": "ens-rennes_d1_composition-dordre-economique_2011",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Composition d’ordre économique",
+    "annee": 2011,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "intitule": "Prix et équilibre économique",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/se1a_11a_d1_dissertation_1304088307217.pdf",
+    "sujet_sha256": "0d6beafd4af80fef2656f929f9ba523852f90bd7ae56545abb1fcd7cc9166f1d",
+    "references_complementaires": {},
+    "etablissement_imprime": "École normale supérieure de Cachan"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "section": "B2",
+      "fichier": "figures/changement-dechelle.svg",
+      "legende": "Le prix relatif d’un produit et le niveau de tous les prix n’ont pas les mêmes effets."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "section": "A1",
+      "fichier": "figures/prix-et-quantite.svg",
+      "legende": "Le nouvel équilibre porte la quantité de 40 à 44 et le prix de 30 à 34 dans le modèle chiffré du devoir."
+    }
+  ],
+  "redaction": "Rédaction effective des éditions brute et guidée de « Prix et équilibre économique » à partir des pièces distribuées ou conservées par l’ENS Rennes. Équilibre partiel calculé, équilibre général, loi de Walras, crédit rationné et dette-déflation. Le sujet publié ne dispose pas de rapport associé.",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction effective des éditions brute et guidée de « Prix et équilibre économique » à partir des pièces distribuées ou conservées par l’ENS Rennes. Équilibre partiel calculé, équilibre général, loi de Walras, crédit rationné et dette-déflation. Le sujet publié ne dispose pas de rapport associé."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}

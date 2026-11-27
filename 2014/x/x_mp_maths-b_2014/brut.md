@@ -2,7 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 **Groupe de Heisenberg et chemins de Carnot.** Les coordonnées $(p,q,r)$ sont celles de la matrice dans l’exponentielle. Le coefficient supérieur droit de son exponentielle est $r+pq/2$.
 
@@ -121,7 +123,9 @@ Le rayon $\rho=\sqrt{p^2+q^2}$ vérifie $\rho^2=f(|\phi|)$ et $r=\operatorname{s
 
 Pour les tangentes, paramétrons par $s=|\phi|$, $\rho=2\sin(s/2)/s$. À $s=2\pi$, $\rho'=-1/(2\pi)$ et $g'=-1/(4\pi^2)$, donc la pente au rayon zéro vaut $1/(2\pi)$ depuis la hauteur $1/(4\pi)$. À $s=0$, $\rho=1-s^2/24+O(s^4)$ et $g=s/12+O(s^3)$, donc la tangente en $(1,0)$ est verticale.
 
-![Figure 1 — Coupe méridienne de la sphère. La hauteur maximale de la nappe supérieure est atteinte au rayon 2/π.](figures/profil-sphere-de-carnot.svg)
+Les deux tangentes figurées ont donc pour équations $r=1/(4\pi)+\rho/(2\pi)$ à l’axe et $\rho=1$ à l’équateur. Au point le plus haut, $s=\pi$ donne $(\rho,r)=(2/\pi,1/(2\pi))$ et la tangente est horizontale.
+
+![Figure 1 — Coupe méridienne. Les pointillés courts donnent les tangentes au pôle et à l’équateur. Le maximum de hauteur est atteint au rayon 2/π.](figures/profil-sphere-de-carnot.svg)
 
 ### Question 15
 

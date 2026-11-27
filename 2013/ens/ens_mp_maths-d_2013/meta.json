@@ -11,7 +11,8 @@
   "sources": {
     "sujet": "https://www.ens.psl.eu/IMG/file/concours/2013/MPI/13_mp_math_d_u.pdf",
     "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2013/MPI/13_mpi_rap_emathd.pdf",
-    "sha256_sujet": "524444d100226f42c0623d665550a0ecb9286f966d0bbabf957e2b5e91e9fcb0"
+    "sha256_sujet": "524444d100226f42c0623d665550a0ecb9286f966d0bbabf957e2b5e91e9fcb0",
+    "sha256_rapport_jury": "aadf7d278f591e6f156645d78c80c7a427b6278dccd49fa3d55d26ad984a15c7"
   },
   "figures": [
     {
@@ -31,6 +32,77 @@
       "perimetre": "Rédaction intégrale des deux éditions de l’épreuve d’Ulm de six heures, avec lecture du sujet et du rapport. Contrôle des multiplicités, du polygone de Newton, de la normalisation de signe, du dénombrement de Weyl et de l’approximation par hyperbolicité stricte. Schéma original de la face de poids minimal.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "ens_mp_mathematiques_d",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Pointage des 42 repères sur le sujet, les deux éditions et le rapport. p. 1–3, racines ordonnées, changement de direction, continuité et étoilement du cône. p. 4–6, polygone de Newton, multiplicités, polarisation et hypothèse de positivité pour les puissances réelles. p. 7–8, décompte explicite des changements de signe pour Weyl et approximation en hyperbolicité simple."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9.a",
+      "9.b",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17.a",
+      "17.b",
+      "17.c",
+      "18.a",
+      "18.b",
+      "18.c",
+      "18.d",
+      "19.a",
+      "19.b",
+      "20.a",
+      "20.b",
+      "21",
+      "22",
+      "23.a",
+      "23.b",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29.a",
+      "29.b",
+      "30",
+      "31",
+      "32"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "controle": [
+      "p. 1–3, racines ordonnées, changement de direction, continuité et étoilement du cône",
+      "p. 4–6, polygone de Newton, multiplicités, polarisation et hypothèse de positivité pour les puissances réelles",
+      "p. 7–8, décompte explicite des changements de signe pour Weyl et approximation en hyperbolicité simple"
+    ]
+  }
 }

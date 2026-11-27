@@ -1,0 +1,103 @@
+{
+  "slug": "x-ens_mp_physique_2012",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Physique",
+    "annee": 2012
+  },
+  "questions": 34,
+  "intitule": "Effet du champ gravitationnel terrestre sur le mouvement d’un gyroscope en orbite",
+  "redaction": "Rédaction complète de I.1 à IV.8, calcul des deux précessions dans le modèle post-newtonien proposé et de la sensibilité en flux. Représentations du sens de rotation, du champ dipolaire et des deux axes de précession.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2012/MP%20I/mp2012_sujet_physique%5B1%5D.pdf",
+    "sujet_sha256": "008da6cb4df03e79f6dac568632b1decc8904d8b6d1de35045111b83538f1ad5",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2012/MP%20I/rap_mp2012_e_phy%5B1%5D.pdf",
+    "rapport_sha256": "8c8d0323ba42cf8fd370c8508b6ce5813964ae4a98da25e13b3330ed73e5cd32"
+  },
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "physique_mp_suite",
+      "session": "physique_mp_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du cahier et du rapport commun XULC. Contrôle des signes de la perméabilité gravitationnelle, des deux orientations de précession, de la moyenne sur une orbite polaire et de la comparaison aux mesures du satellite."
+    },
+    {
+      "phase": "redaction",
+      "agent": "physique_mp_suite",
+      "session": "physique_mp_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction complète de I.1 à IV.8, calcul des deux précessions dans le modèle post-newtonien proposé et de la sensibilité en flux. Représentations du sens de rotation, du champ dipolaire et des deux axes de précession."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "II.4",
+      "fichier": "figures/precession-orbitale.svg",
+      "legende": "Vue dans le sens opposé à la normale orbitale. L’orbite et le moment du gyroscope tournent dans le sens direct autour de la normale sortante."
+    },
+    {
+      "numero": 2,
+      "question": "III.2",
+      "fichier": "figures/champ-terrestre.svg",
+      "legende": "Dans ce modèle la perméabilité gravitationnelle est négative. Les lignes de champ entrent dans l’hémisphère vers lequel pointe la rotation terrestre."
+    },
+    {
+      "numero": 3,
+      "question": "III.8",
+      "fichier": "figures/plans-de-precession.svg",
+      "legende": "Le moment initial est parallèle à y. Les axes des précessions sont respectivement la normale au plan orbital et l’axe de rotation terrestre, orthogonaux sur une orbite polaire."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7",
+      "I.8",
+      "I.9",
+      "I.10",
+      "I.11",
+      "I.12",
+      "I.13",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7",
+      "III.8",
+      "IV.1",
+      "IV.2",
+      "IV.3",
+      "IV.4",
+      "IV.5",
+      "IV.6",
+      "IV.7",
+      "IV.8"
+    ]
+  }
+}

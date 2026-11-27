@@ -11,13 +11,14 @@
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2014/10/14_mp_suj_math_b.pdf",
     "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/01/14_mp_rap_ecrit_maths_b.pdf",
-    "sha256_sujet": "9ec9fbb1865f2e60a8cd0bb3395a912cafdb68699b80f4fbac7a10f48c5c0dd2"
+    "sha256_sujet": "9ec9fbb1865f2e60a8cd0bb3395a912cafdb68699b80f4fbac7a10f48c5c0dd2",
+    "sha256_rapport_jury": "e362668ca52f9dffa90dddc5adb31d16239b1d1f4d0851e8a5a8eedb01d2dbdc"
   },
   "figures": [
     {
       "fichier": "figures/profil-sphere-de-carnot.svg",
       "question": "14",
-      "legende": "Coupe méridienne de la sphère. La hauteur maximale de la nappe supérieure est atteinte au rayon 2/π."
+      "legende": "Coupe méridienne. Les pointillés courts donnent les tangentes au pôle et à l’équateur. Le maximum de hauteur est atteint au rayon 2/π."
     }
   ],
   "contributions": [
@@ -31,6 +32,57 @@
       "perimetre": "Rédaction intégrale des deux éditions, vérification des identités non commutatives, du produit limite et des temps de parcours contre le sujet et le rapport. Schéma original de la sphère de Carnot, tangentes et réciproque pour tous les rayons.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Groupe de Heisenberg, formule du produit d’exponentielles et chemins de Carnot. Vérification des deux tangentes, du sommet et des extrémités de la coupe méridienne."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2.a",
+      "2.b",
+      "3",
+      "4",
+      "5",
+      "6.a",
+      "6.b",
+      "6.c",
+      "7.a",
+      "7.b",
+      "8.a",
+      "8.b",
+      "8.c",
+      "9.a",
+      "9.b",
+      "10",
+      "11.a",
+      "11.b",
+      "12.a",
+      "12.b",
+      "13",
+      "14",
+      "15",
+      "16.a",
+      "16.b",
+      "16.c"
+    ],
+    "precision": "Les 27 rubriques des deux éditions ont été rapprochées du fascicule de 4 pages et du rapport du jury de 7 pages. Groupe de Heisenberg, formule du produit d’exponentielles et chemins de Carnot. Vérification des deux tangentes, du sommet et des extrémités de la coupe méridienne.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "9ec9fbb1865f2e60a8cd0bb3395a912cafdb68699b80f4fbac7a10f48c5c0dd2",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Groupe de Heisenberg, formule du produit d’exponentielles et chemins de Carnot. Vérification des deux tangentes, du sommet et des extrémités de la coupe méridienne.",
+      "commit_redaction_anterieure": "abce188b2fb13722deaae7158a75563de967a906"
+    }
+  }
 }

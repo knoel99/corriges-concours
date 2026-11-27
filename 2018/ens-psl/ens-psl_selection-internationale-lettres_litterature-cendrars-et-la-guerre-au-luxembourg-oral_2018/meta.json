@@ -1,0 +1,70 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_litterature-cendrars-et-la-guerre-au-luxembourg-oral_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Littérature — Cendrars et La Guerre au Luxembourg (oral)",
+    "annee": 2018,
+    "modalite": "oral"
+  },
+  "intitule": "Littérature — Cendrars et La Guerre au Luxembourg (oral)",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/oral-SIL2018-litt.2.pdf",
+    "sha256_sujet": "bd5068fb91ec18a548fa88e7579d1d5e1de683b298fb0908544bcaa54bf9c16b",
+    "reperage": "Commenter le poème de Blaise Cendrars.",
+    "pages_sujet": 3,
+    "bornes_texte": "P. 1, « Une deux une deux », à p. 3, « Femme de France », suivis de la date « Paris, octobre 1916 ».",
+    "composition_document": "P. 1 : consigne commune, notice de Cendrars et début du poème. P. 2 : suite du texte et mots en marge. P. 3 : fin des jeux, séquence « A PARIS », date. Aucune annexe distincte."
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Commentaire",
+      "legende": "De quel monde viennent les images du jeu ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet original. Commentaire intégral, analyse de la progression et de la forme, préparation guidée de l’entretien, réponses argumentées et schéma de lecture."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "classiques_2017",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Lecture visuelle des trois pages du feuillet, notice et colonnes comprises. Correction de la place du blessé et de la référence à Guignol, analyse des mots en marge et du dialogue entre les deux futurs. Préparation orale de la lecture à deux dimensions dans le guide, figure et signature de rédaction conservées."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire de spécialité — commentaire unique de l’intégralité du texte donné, suivi d’un entretien."
+    ],
+    "elements_verifies": [
+      "P. 1 : notice du poète blessé en 1915, cadence initiale, apparition du blessé au quatrième vers et trois appels de la colonne de droite.",
+      "P. 2 : jeux de soin et de rôles, images et presse, couleurs décalées, mot RÊVEURS vertical au moment où le groupe sort du jardin, puis deuxième journée et transformation du sable.",
+      "P. 3 : circulation du vocabulaire dans les jeux, chambre d’échos de la presse, fête parisienne au futur et retour de la blessure, dernière date.",
+      "Consigne de commentaire de vingt minutes environ, parcours du genre, de la forme visuelle, de la syntaxe, du contexte, du ton et de la thématique ; deux relances corrigées pour l’entretien."
+    ]
+  },
+  "date_revision": "2026-11-26"
+}

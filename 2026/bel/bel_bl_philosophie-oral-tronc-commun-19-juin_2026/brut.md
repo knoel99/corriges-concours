@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La feuille du 19 juin réunit 12 tickets de deux sujets. Le candidat dispose de 1 h 30 de préparation et indique au jury son choix au moment du passage. Il présente un seul sujet pendant 20 minutes, puis répond aux questions durant 10 minutes. Les deux possibilités de chaque ticket sont traitées ici.
 
 ## Ticket 1
@@ -23,6 +25,10 @@ Notre pouvoir s’exerce donc indirectement. Tenir un journal ou écouter des r�
 Une salariée peut ne recevoir aucune menace explicite et dépendre néanmoins de la faveur de son supérieur pour conserver un horaire compatible avec la garde de son enfant. Faut-il une contrainte actuellement exercée pour qu’il y ait domination ? Le terme désigne une asymétrie durable dans la capacité de fixer les conditions d’action d’autrui.
 
 La simple différence de compétence ne suffit pas. Le jugement du médecin sur un traitement peut être discuté, un deuxième avis est possible et la personne conserve des droits. L’asymétrie devient domination lorsque les moyens de contester, de refuser ou de partir sont absents ou excessivement coûteux. Dans la tradition républicaine contemporaine, Philip Pettit oppose la liberté comme non-domination à l’idée que l’absence d’interférence actuelle suffirait. Un maître bienveillant demeure maître tant qu’il conserve la capacité incontrôlée d’intervenir. La dépendance transforme déjà les anticipations et peut conduire à l’autocensure.
+
+Un recours inscrit au règlement peut rester inaccessible si la personne chargée de l’instruire dépend elle-même de l’auteur de la décision. L’existence d’une procédure doit donc se vérifier à travers le coût du recours et l’indépendance de son examen.
+
+![Figure 1 — Une dépendance est-elle une domination ?](figures/domination.svg)
 
 La domination peut aussi se répartir entre des institutions sans qu’une personne ait conçu l’ensemble. Une procédure écrite, des ressources inégalement accessibles et des sanctions difficiles à contester peuvent se renforcer mutuellement. Dénoncer toute influence comme domination empêcherait cependant de comprendre les relations d’apprentissage ou d’entraide dont chacun peut discuter les termes. Il faut montrer qui dispose de quel pouvoir, quelles possibilités de recours existent réellement et à quel prix. La domination devient visible lorsque l’on suit la distribution du pouvoir de dire non autant que les interventions observées.
 

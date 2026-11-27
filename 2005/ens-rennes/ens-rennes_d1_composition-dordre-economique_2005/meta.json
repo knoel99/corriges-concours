@@ -1,0 +1,59 @@
+{
+  "slug": "ens-rennes_d1_composition-dordre-economique_2005",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Composition d’ordre économique",
+    "annee": 2005,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "intitule": "La mise en place de l’Union économique et monétaire a-t-elle conduit à la disparition des politiques économiques nationales ?",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/2005-sujets-d1_1423060647728-pdf#page=5",
+    "sujet_sha256": "6e722c986780682109dc35cd612f69dd9f54c1674c5c472c52b1da9d33b0e220",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "references_complementaires": {
+      "Traité instituant la Communauté européenne, version consolidée de 2002": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX%3A12002E%2FTXT",
+      "Recommandation du Conseil à l’Irlande, 12 février 2001": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX%3A32001H0191",
+      "Conclusions du Conseil européen des 22 et 23 mars 2005": "https://www.consilium.europa.eu/uedocs/cms_data/docs/pressdata/fr/ec/84331.pdf"
+    }
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "section": "I-A",
+      "fichier": "figures/taux-reels.svg",
+      "legende": "Pour un taux nominal illustratif de 3 %, une inflation anticipée plus faible entraîne un taux réel plus élevé."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "section": "II-A",
+      "fichier": "figures/multiplicateur-ouvert.svg",
+      "legende": "Dans l’exemple, 40 centimes sur un euro de revenu supplémentaire alimentent une nouvelle demande de production intérieure."
+    }
+  ],
+  "redaction": "Rédaction des éditions brute et guidée sur le transfert monétaire, le Pacte de stabilité au printemps 2005, les stabilisateurs budgétaires et les choix structurels nationaux. Calcul d’un multiplicateur ouvert sous hypothèses explicites et étude du cas irlandais de 2001.",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite/commercial",
+      "session": "rennes_droit_suite/commercial",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des éditions brute et guidée sur le transfert monétaire, le Pacte de stabilité au printemps 2005, les stabilisateurs budgétaires et les choix structurels nationaux. Calcul d’un multiplicateur ouvert sous hypothèses explicites et étude du cas irlandais de 2001."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}

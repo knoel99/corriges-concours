@@ -7,8 +7,8 @@
     "annee": 2025,
     "modalite": "écrit"
   },
-  "intitule": "Philosophie de l’art",
-  "questions": 0,
+  "intitule": "Concevoir des outils et des manières d’être",
+  "questions": 1,
   "redaction": "Proposition non officielle rédigée par IA.",
   "modele": {
     "provider": "codex",
@@ -25,16 +25,28 @@
       "https://www.cooperhewitt.org/2015/12/17/getting-a-grip-on-user-inspired-design/"
     ],
     "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2025/Rapports/2025_Design_Rapport_Philosophie_ecrit.pdf",
-    "rapport_sha256": "91fd229114fe04b8606658b2b366ef441b697175d177e13c44eaea86f725e962"
+    "rapport_sha256": "91fd229114fe04b8606658b2b366ef441b697175d177e13c44eaea86f725e962",
+    "consigne_imprimee": "Vous commenterez cette affirmation.",
+    "page_pdf_sujet": 3,
+    "numero_epreuve": 3,
+    "index_annales": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=602",
+    "index_annales_sha256": "d8a579b4db81f624b7155493df320d0e0ddf827ef6af87154774f1684e73d7fd",
+    "citation_repere": "« en designant des outils, nous designons des manières d’être »",
+    "pages_rapport_philosophie": [
+      1,
+      2,
+      3
+    ],
+    "precision_citation": "Sujet p. 3 : designant, designons ; rapport p. 1 : désignant, désignons."
   },
   "figures": [
     {
       "fichier": "figures/agenda.svg",
       "question": "Dissertation",
-      "legende": "Que veut dire « libre » dans un agenda partagé ?"
+      "legende": "L’interface de l’agenda et la règle du groupe déterminent ensemble qui doit répondre à une invitation."
     }
   ],
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "lecture_rapport_jury",
@@ -71,6 +83,83 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Vérification de la double attribution et de l’orthographe du sujet, du cas de l’éplucheur conservé au MoMA et de la portée de l’expérience fictive des deux calendriers. Contrôle des deux éditions et du schéma."
+    },
+    {
+      "phase": "revision",
+      "agent": "x_hist_1986",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Vérification des deux graphies, de l’attribution de 1986 et de sa reprise en 2020, commentaire de la prétention de fondation et examen des décisions possibles dans un outil de coordination."
     }
-  ]
+  ],
+  "duree_heures": 4,
+  "intitule_editorial": true,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2025/Sujets/BAT-Philosophie_Art2.pdf",
+      "sha256": "0a510281eb844bc8d73a81982c33393b3964cd4011ac761330461aea31221539",
+      "pages": 3,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "d1b1869a5c8c7165c1090eb4f8d28ddfb47746f0fd77a1ea0dbca9054a1f672c"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "3e1f571adeae29e25df2e3027696448c593d108e4c4842ab89c0ab2ee731045c"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2025/Rapports/2025_Design_Rapport_Philosophie_ecrit.pdf",
+      "sha256": "91fd229114fe04b8606658b2b366ef441b697175d177e13c44eaea86f725e962",
+      "pages": 3,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "5dfb9f808a11cc63f70f7c8977760f784b471daf8f8af39d26448c6ae12c255f"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "e0c84c4ea0d8c3a19b9551b65e38ab5a7bf4f86a04a3000cda0223a4f8655bf6"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "7c6e31de410ad6989d84cb94d9875c29dca3556bf80541c6a8da80f359eeacf2"
+        }
+      ]
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 3,
+        "consigne": "Vous commenterez cette affirmation."
+      }
+    ],
+    "annexes_sujet": [],
+    "pages_blanches": [
+      2
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
 }

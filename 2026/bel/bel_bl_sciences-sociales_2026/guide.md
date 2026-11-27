@@ -8,6 +8,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **L’emploi contre la pauvreté ?**
 
 ## Lire le dossier avant de rédiger
@@ -105,3 +107,9 @@ Une évaluation adaptée suivrait au moins la durée de l’emploi, les heures r
 ## Conclusion
 
 L’emploi protège fréquemment de la pauvreté parce qu’il apporte des ressources et peut ouvrir des droits utilisables bien au-delà du mois travaillé. La comparaison des salariés, des indépendants et des chômeurs confirme l’importance de cette protection tout en montrant ses conditions. Elle dépend de la continuité des revenus, du statut, des solidarités du ménage et des institutions qui permettent de faire face aux interruptions. Une politique qui fait de l’emploi une simple contrepartie risque de fragiliser les ressources nécessaires pour y accéder. Son succès se mesure à la diminution durable des privations des ménages, ce qui oblige à regarder comment et combien les personnes travaillent après leur retour à l’emploi.
+
+## Vérification sur le sujet
+
+Les sept documents du fac-similé et leur analyse par le jury ont été vérifiés dans les deux copies. Les données du tableau d’activité distinguent taux par statut, effectifs en milliers et revenu du ménage par unité de consommation.
+
+Dans le document 2, parmi les 2,264 millions de personnes pauvres en emploi, 1,574 million sont salariées et 0,690 million indépendantes. Les indépendants constituent environ 30,5 % des personnes pauvres en emploi, alors que le taux de pauvreté au sein des indépendants est de 19,2 %. Le premier calcul renseigne sur la composition de la population à protéger. Le second renseigne sur le risque au sein d’un statut. Leur distinction permet de soutenir simultanément deux politiques, l’une visant un groupe vulnérable, l’autre tenant compte du nombre de personnes concernées.

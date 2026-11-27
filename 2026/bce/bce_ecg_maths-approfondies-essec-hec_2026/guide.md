@@ -10,6 +10,8 @@
 
 **Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Cadre.** Épreuve de 4 heures, conception ESSEC BS – HEC Paris, sans document ni calculatrice. Trente questions numérotées (46 en comptant les sous-questions), en quatre parties qui s'enchaînent. Le rapport 2026 indique 2448 copies et une note péréquée moyenne de 10,84.
@@ -489,7 +491,7 @@ Si $f$ est symétrique, $\hat f=f_{|H_n}$ convient : $f(x)=f(x_\alpha)=\hat f(\h
 - $f_3$ est symétrique : $(i,j)\mapsto(\sigma(i),\sigma(j))$ est une bijection de $[\![1;n]\!]^2$, le maximum porte sur le même ensemble de valeurs.
 
 > [!PIEGE]
-> Un contre-exemple doit être numérique et vérifié. Avec $x=e_1$, $f_2(e_1)=1=f_2(e_2)$ : ce n'est pas un contre-exemple.
+> Pour $x=te_1$, l’échange donne $f_2(te_1)=t^2$ et $f_2(te_2)=t$. Choisir $t$ hors de $\{0,1\}$ distingue les deux valeurs.
 
 ### Question 15(a)
 
@@ -946,7 +948,7 @@ $$\boxed{\langle\hat U,\hat V\rangle\leqslant\langle\hat\lambda(A),\hat\lambda(B
 - Une matrice de permutation se lit par colonnes : $P_\sigma e_j=e_{\sigma(j)}$, et donc $P_\sigma X=X_{\sigma^{-1}}$. Retenir le $\sigma^{-1}$.
 - Montrer qu'une définition ne dépend pas d'un choix (Q5) : comparer deux choix, ici par un argument de comptage.
 - Inégalité de Jensen : récurrence en isolant le dernier point, avec renormalisation des poids.
-- Obtenir une inégalité sur des dérivées partielles : construire un chemin $t\mapsto x+th$ le long duquel la fonction décroît, puis passer à la limite dans le taux d'accroissement.
+- Obtenir une inégalité sur des dérivées partielles : construire un chemin $t\mapsto x+th$ sur lequel $f(x+th)\le f(x)$ pour $0<t\le1$, puis prendre la limite du taux d’accroissement à droite en $0$.
 - Pour une matrice symétrique, la diagonalisation orthogonale **ordonnée** s'obtient en composant le théorème spectral avec une matrice de permutation.
 - Convexité d'une fonction positivement homogène : sous-additivité + homogénéité.
 - Transformation d'Abel pour écrire une combinaison à coefficients décroissants comme combinaison positive de sommes partielles.

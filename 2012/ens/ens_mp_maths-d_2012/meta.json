@@ -11,7 +11,8 @@
   "sources": {
     "sujet": "https://www.ens.psl.eu/IMG/file/concours/2012/MP%20I/mp2012_sujet_math_d_6h_u%5B1%5D.pdf",
     "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2012/MP%20I/rap_ecrit_mathD_u_mpi2012.pdf",
-    "sha256_sujet": "f7199caa9cc4177d0b1b7b9eb10fe92b4bd75cb000b8d64bd449baa99fdde5e8"
+    "sha256_sujet": "f7199caa9cc4177d0b1b7b9eb10fe92b4bd75cb000b8d64bd449baa99fdde5e8",
+    "sha256_rapport_jury": "fdd3ac453bb5c64a0c5c19b3068f1601a3d6735146892a3f03cb1677783b09f8"
   },
   "figures": [
     {
@@ -36,6 +37,80 @@
       "perimetre": "Rédaction complète des cinq parties sur le sujet de six heures et lecture du rapport. Vérification des opérations sur les poids, de la covariance à gauche et à droite, de la projection normalisée et de sa compatibilité avec les invariants inhomogènes. Rectification du domaine de Θ en V.2.c. Figures des multiples de deux monômes et de la projection de V.5–6.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "ens_mp_mathematiques_d",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Pointage des 45 repères sur le sujet, les deux éditions et le rapport. p. 2–3, dimensions homogènes et classification par congruence des matrices symétriques complexes. p. 4–6, division lexicographique, idéaux de monômes, degrés et poids des deux dérivations. p. 7–8, covariance de l’opérateur oméga, projection linéaire sur les invariants et démonstration de sa compatibilité avec le produit par un invariant."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4.a",
+      "I.4.b",
+      "II.1.a",
+      "II.1.b",
+      "II.2.a",
+      "II.2.b",
+      "II.3",
+      "II.4",
+      "II.5",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6.a",
+      "III.6.b",
+      "III.6.c",
+      "III.7",
+      "III.8",
+      "IV.1.a",
+      "IV.1.b",
+      "IV.2",
+      "IV.3",
+      "IV.4.a",
+      "IV.4.b",
+      "IV.4.c",
+      "IV.4.d",
+      "IV.5.a",
+      "IV.5.b",
+      "IV.5.c",
+      "IV.6.a",
+      "IV.6.b",
+      "IV.7.a",
+      "IV.7.b",
+      "V.1",
+      "V.2.a",
+      "V.2.b",
+      "V.2.c",
+      "V.3",
+      "V.4",
+      "V.5",
+      "V.6"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "controle": [
+      "p. 2–3, dimensions homogènes et classification par congruence des matrices symétriques complexes",
+      "p. 4–6, division lexicographique, idéaux de monômes, degrés et poids des deux dérivations",
+      "p. 7–8, covariance de l’opérateur oméga, projection linéaire sur les invariants et démonstration de sa compatibilité avec le produit par un invariant"
+    ]
+  }
 }

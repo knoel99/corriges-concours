@@ -32,5 +32,43 @@
       "fournisseur": "codex",
       "agent": "astra_maths"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4a",
+      "I.4b",
+      "I.4c",
+      "I.5a",
+      "I.5b",
+      "II.1",
+      "II.2",
+      "II.3a",
+      "II.3b",
+      "II.3c",
+      "II.4a",
+      "II.4b",
+      "III.1a",
+      "III.1b",
+      "III.2a",
+      "III.2b",
+      "III.2c",
+      "III.2d",
+      "III.2e",
+      "III.3a",
+      "III.3b",
+      "III.3c"
+    ],
+    "precision": "Les 25 réponses des deux éditions correspondent aux 12 questions numérotées et à leurs subdivisions sur le fac-similé officiel. Le journal antérieur documente la portée du travail sur les solutions.",
+    "origine_attestation": {
+      "commit_du_journal": "9bea9d86f007b6efe84a7874b835596b611bbe3f",
+      "sha256_sujet_controle": "96cb0fd01f6fede50bd7b7d4c6d500a5044464258aaecc8f37b37e70f6b813b1",
+      "phase": "redaction",
+      "date": "2026-11-24",
+      "perimetre": "Rédaction et contrôle des 25 questions et sous-questions dans les deux éditions, d’après les pages 2 à 5 du sujet et le rapport. Vérification des différences de normes, du signe dans la transformée, des conditions d’égalité et des constantes de concentration. Figure originale sur les supports de Fourier."
+    }
+  }
 }

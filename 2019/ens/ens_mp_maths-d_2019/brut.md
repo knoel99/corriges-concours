@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le problème étudie les séries de Dirichlet pondérées par le nombre de décompositions multiplicatives. Les valeurs en un se ramènent à des sommes de cotangentes et au déterminant d’une matrice. [Sujet officiel](https://www.ens.psl.eu/sites/default/files/19_mpi_mathd_sujet.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/19_mp_rap_emathd_u.pdf)
 
 ## I. Séries de Dirichlet et formules de sommation
@@ -150,6 +152,11 @@ Par III.14a, $\sum_{m=1}^{p-1}\chi(m)\sigma_p(m)=\tau(\chi)\sum_{a=1}^{p-1}\bar\
 $$L(1,\chi)=\frac{\pi}{2p}\sum_{m=1}^{p-1}\chi(m)\cot(\pi m/p).$$
 L’extrémité $m=p$ de la somme imprimée se supprime avant toute évaluation de la cotangente, indéfinie en $\pi$.
 
+Pour vérifier le facteur $1/2$ et le signe, prenons $p=3$ et le caractère non principal $\chi(1)=1$, $\chi(2)=-1$. On obtient
+$$L(1,\chi)=\frac{\pi}{6}\big(\cot(\pi/3)-\cot(2\pi/3)\big)
+=\frac{\pi}{3\sqrt3}.$$
+Cette valeur est aussi la somme de $\sum_{n\ge0}[(3n+1)^{-1}-(3n+2)^{-1}]$. En intégrant $\sum_{n\ge0}t^{3n}(1-t)=1/(1+t+t^2)$ de 0 à 1, on trouve la même valeur. L’échange somme-intégrale est permis par positivité des termes.
+
 ### Question III.16
 
 En multipliant les $k$ sommes finies, on obtient
@@ -167,6 +174,8 @@ Pour $s>1$ les séries sont absolument convergentes, par II.9a avec $\varepsilon
 Notons $b=f(0)$, $A=(p-1)^{-1}\sum_{r=1}^{p-1}f(r)$ et $c_\chi(f)=\sum_{r=1}^pf(r)\bar\chi(r)$. Par II.8c sur les unités et III.17 sur les multiples de $p$, pour $s>1$,
 $$D_k(s,f)=\zeta(s)^k H(s)+\frac1{p-1}\sum_{\chi\ne\chi_0}c_\chi(f)L(s,\chi)^k,\qquad H(s)=b+(A-b)(1-p^{-s})^k.$$
 La somme finie converge en $1$ par II.10. Puisque $\zeta(s)\sim(s-1)^{-1}$, une limite finie impose $H(s)=O((s-1)^k)$. Pour $k\ge2$, cela impose $H(1)=H'(1)=0$. Or $H'(1)=(A-b)k(1-1/p)^{k-1}(\log p)/p$. D’où $A=b$ puis $b=0$, ce qui équivaut à $f(0)=\mu_p(f)=0$. Réciproquement ces deux conditions annulent $H$ identiquement et la limite est $(p-1)^{-1}\sum_{\chi\ne\chi_0}c_\chi(f)L(1,\chi)^k$.
+
+Le rôle de $k\ge2$ se voit sur la fonction qui vaut $1$ en zéro modulo $p$ et $-1/(p-1)$ sur les autres classes. Alors $b=1$ et $A=-1/(p-1)$. Pour $k=1$, $H(1)=0$ mais $H'(1)=-\ln(p)/(p-1)\ne0$. Le produit $\zeta(s)H(s)$ a tout de même une limite finie. C’est la présence d’un pôle d’ordre au moins deux qui contraint la dérivée à s’annuler dans le sujet.
 
 ## IV. Automorphismes cyclotomiques et déterminant
 

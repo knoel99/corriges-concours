@@ -1,0 +1,63 @@
+{
+  "slug": "ens-rennes_d-e_anglais_2023",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Anglais",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "intitule": "Anglais",
+  "questions": 4,
+  "redaction": "Deux traductions intégrales et deux réponses en anglais de 247 et 253 mots. Découplage entre production et émissions, pédagogie en école d’ingénieurs, réactions conservatrices aux élections américaines et conflit entre intérêt et principe.",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-e-crit-anglais-d-e-2023_1682689417872-pdf",
+    "sujet_sha256": "ecbe82a3812c9f91c7b533f2ce1d5e67cb84eface1f1ab8e5761059a6c2042ba",
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2023-1",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-e-crit-anglais-d-e-2023_1698422078589-pdf",
+    "rapport_sha256": "4c136a15b2599ca654be3dd1dc5719a5e8dcb4a9fcd4f7b9687ca670fe0cb23c"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "III.1",
+      "fichier": "figures/electoral-incentives.svg",
+      "legende": "Changing electoral expectations help explain why some Republicans changed their position."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du rapport 2023 sur les chiffres, la portée de « America », la syntaxe interrogative et le registre du discours direct."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Deux traductions intégrales et deux réponses en anglais de 247 et 253 mots. Découplage entre production et émissions, pédagogie en école d’ingénieurs, réactions conservatrices aux élections américaines et conflit entre intérêt et principe."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I. Version",
+      "II. Thème",
+      "III.1. Explain and discuss the fluctuations of conservatives over Donald Trump.",
+      "III.2. Should we always oppose self-interests and principles in politics?"
+    ]
+  }
+}

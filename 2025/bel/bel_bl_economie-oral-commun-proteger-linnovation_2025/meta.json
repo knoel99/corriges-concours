@@ -1,0 +1,61 @@
+{
+  "slug": "bel_bl_economie-oral-commun-proteger-linnovation_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Économie (oral commun) — Protéger l’innovation",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "Faut-il protéger l’innovation ?",
+  "questions": 0,
+  "documents": 5,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/economie_sujets_25_juin.pdf#page=11",
+    "sha256_sujet": "8433a5d540dda2553aca70d2c8e1d995b73ad82dfacc31923b3df37432846a7a",
+    "pages_sujet": "11–18 du recueil de 27 pages, pages 1–8 du dossier.",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_economie_tronc_commun.pdf",
+    "sha256_rapport_jury": "b0b1a696afc5d758d40283be9361a3fe50abd56041e7cad3533c62eabb4c5dd7",
+    "pages_rapport": "1 pour les modalités et 2 pour la liste des sujets."
+  },
+  "figures": [
+    {
+      "fichier": "figures/demandes-office-europeen.svg",
+      "question": "Document 1",
+      "legende": "Cinq premières origines des demandes adressées à l’OEB en 2021."
+    },
+    {
+      "fichier": "figures/perte-seche.svg",
+      "question": "Documents 3 et 4",
+      "legende": "Illustration théorique de la perte sèche d’un monopole à prix unique après invention."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_maths_b_anciennes",
+      "modifications": true,
+      "perimetre": "Rédaction du brut et du guidé, lecture du sujet et du rapport, production de deux figures et des relances. Contrôle des champs OMPI et OEB et du graphique CIS4, construction du modèle de tarification, comparaison des arguments de l’audition de l’OCDE et du débat cité."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Faut-il protéger l’innovation ?"
+    ],
+    "documents_entierement_traites": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "precision": "Les deux éditions répondent à la question-titre et exploitent les 5 documents du dossier."
+  }
+}

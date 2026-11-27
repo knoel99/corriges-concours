@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
 Cette épreuve MP–MPI de quatre heures suit la construction d’arbres d’identification à partir d’observations. Le code est en OCaml. La partie V ne dépend que de la partie I et peut être abordée séparément.
@@ -25,7 +27,7 @@ La loi des observations est un mélange sur les espèces. Une observation met à
 
 #### Solution
 
-La probabilité d’observer une fleur blanche vaut **$0{,}56$**. Sachant que la fleur est blanche, les probabilités des espèces gaillet, myosotis et lin sont respectivement **$25/28$, $3/28$ et $0$**.
+Les masses des fleurs blanches provenant du gaillet, du myosotis et du lin valent respectivement $0{,}5\times1$, $0{,}3\times0{,}2$ et $0{,}2\times0$. Leur somme donne **$0{,}56$**. On divise chacune de ces masses par $0{,}56$. Sachant que la fleur est blanche, les probabilités des espèces gaillet, myosotis et lin sont respectivement **$25/28$, $3/28$ et $0$**.
 
 ### Question 2
 
@@ -182,7 +184,7 @@ Si la racine teste la couleur, les deux branches restent mixtes. Dans la branche
 
 Si la racine teste le nombre de pétales, il faut tester la couleur dans la branche cinq. Elle donne bleu avec probabilité $22/25$, avec les poids $5/11$ et $6/11$ pour le lin et le myosotis, puis blanc avec probabilité $3/25$, donnant le myosotis seul.
 
-Dans la branche quatre, on peut s’arrêter au gaillet. On peut aussi tester la couleur, auquel cas blanc mène au même gaillet avec probabilité 1 et bleu est impossible. La condition sur les nœuds s’applique aussi aux états de Dirac. Les hauteurs des deux arbres de racine nombre de pétales valent donc respectivement **$3/2$ et $2$**. Le premier est l’unique optimum.
+Dans la branche quatre, on peut s’arrêter au gaillet. On peut aussi tester la couleur, auquel cas blanc mène au même gaillet avec probabilité 1 et bleu est impossible. La définition autorise à la fois la feuille et ce nœud au gaillet. L’autre branche et toutes ses feuilles sont imposées, car le dernier caractère y est consommé. Les hauteurs des deux arbres de racine nombre de pétales valent donc respectivement **$3/2$ et $2$**. Le premier est l’unique optimum.
 
 > [!PIEGE]
 > Une feuille de hauteur zéro est autorisée en état certain, mais les contraintes des nœuds ne l’imposent pas. Une question supplémentaire a un coût strictement positif.
@@ -399,37 +401,13 @@ let glouton sigma0 =
 
 #### Solution
 
-Voici les deux arbres qui s’arrêtent dès qu’une espèce est certaine. Les probabilités indiquées sur chaque branche sont conditionnelles au nœud de départ. Les lettres désignent les Dirac correspondants.
+Les arbres A et B s’arrêtent dès qu’une espèce est certaine. Les probabilités indiquées sur chaque branche sont conditionnelles au nœud de départ. Les lettres désignent les Dirac correspondants.
 
-```text
-caractère 0
-├─ oui (1/5) → a
-└─ non (4/5) → caractère 1
-   ├─ oui (1/2) → b
-   └─ non (1/2) → c
+![Arbres A, B et C de la question 15. Les probabilités sont conditionnelles au nœud de départ.](figures/q15-trois-arbres.svg)
 
-caractère 1
-├─ oui (1/2) → caractère 0
-│  ├─ oui (1/5) → a
-│  └─ non (4/5) → b
-└─ non (1/2) → caractère 0
-   ├─ oui (1/5) → a
-   └─ non (4/5) → c
-```
+Les hauteurs moyennes de A et B valent $1+4/5=9/5$ et $1+1=2$. Au sens littéral de la définition, il existe aussi un troisième arbre, C. À partir de A, la branche oui peut tester le caractère 1 avant de rendre $a$ dans ses deux enfants, avec deux probabilités $1/2$.
 
-Leurs hauteurs moyennes valent $9/5$ et $2$. Au sens littéral de la définition, il existe aussi un troisième arbre. Dans le premier, la branche oui peut tester le caractère 1 avant de rendre $a$ dans ses deux enfants, avec deux probabilités $1/2$.
-
-```text
-caractère 0
-├─ oui (1/5) → caractère 1
-│  ├─ oui (1/2) → a
-│  └─ non (1/2) → a
-└─ non (4/5) → caractère 1
-   ├─ oui (1/2) → b
-   └─ non (1/2) → c
-```
-
-Ce troisième arbre a également une hauteur moyenne de 2. **Le premier arbre, de hauteur $9/5$, est optimal.**
+Ce troisième arbre a également une hauteur moyenne de 2. **L’arbre A, de hauteur $9/5$, est optimal.**
 
 ### Question 16
 
@@ -524,7 +502,7 @@ Si le test initial est vrai, la hauteur zéro est minimale. Sinon, les appels à
 
 On considère un seuil inclusif. Pour une racine, le score courant part de 1 et les contributions restantes sont non négatives. Un prédicat d’admissibilité indique si un score tient dans le seuil. On combine ce prédicat avec le meilleur score déjà obtenu parmi les autres racines.
 
-Pour un enfant de poids strictement positif, on teste l’admissibilité de la somme pondérée incluant sa hauteur. Cette opération conserve la monotonie du prédicat. Si aucun sous-arbre admissible n’existe, même la contribution minimale de cet enfant ne permet pas de poursuivre cette racine.
+Pour un enfant de poids strictement positif, on teste l’admissibilité de la somme pondérée incluant sa hauteur. L’ensemble des hauteurs admises est fermé vers le bas. Si une hauteur $h$ est admise, toute hauteur comprise entre 0 et $h$ l’est aussi. Cette propriété se conserve en ajoutant au coût courant la hauteur de l’enfant multipliée par son poids positif. Si aucun sous-arbre admissible n’existe, même la contribution minimale de cet enfant ne permet pas de poursuivre cette racine.
 
 ```ocaml
 let arbre_optimal_opt sigma cs limite =
@@ -657,7 +635,7 @@ Dans le dernier cas, un modèle vérifie la conjonction si et seulement s’il v
 
 #### Solution
 
-On calcule la liste de clauses de Q25. Si elle est vide, la probabilité cherchée est zéro. Sinon, on applique la formule d’inclusion-exclusion à leurs événements de satisfaction. Pour chaque sous-famille non vide, on fusionne ses clauses par Q24 puis on évalue cette clause par Q23. On ajoute le résultat si la cardinalité de la sous-famille est impaire et on le soustrait sinon.
+On calcule la liste de clauses de Q25. Si elle est vide, la probabilité cherchée est zéro. Les autres clauses peuvent se recouvrir. Par exemple, les deux occurrences de $A$ dans $A\lor A$ décrivent le même événement de probabilité $p$. La somme simple donnerait $2p$, tandis que la soustraction de leur intersection redonne $p$. Sinon, on applique la formule d’inclusion-exclusion à leurs événements de satisfaction. Pour chaque sous-famille non vide, on fusionne ses clauses par Q24 puis on évalue cette clause par Q23. On ajoute le résultat si la cardinalité de la sous-famille est impaire et on le soustrait sinon.
 
 Soit $L=|\phi|$. Les listes de clauses se construisent par sommes et produits de nombres de choix et contiennent au plus $2^L$ clauses. Cette borne suit par récurrence en utilisant $1+\sum_j|\phi_j|\le L$ pour chaque nœud composé. Chaque clause intermédiaire porte sur des caractères déjà mentionnés dans $\phi$ et ses ensembles sont formés à partir des listes initiales ou de leurs intersections.
 

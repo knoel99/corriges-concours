@@ -2,7 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 La composition démontre un théorème de renouvellement hors réseau pour des accroissements strictement positifs. À partir de 15, le sujet restreint leur loi à un nombre fini d’atomes. L’unicité utilisée dans la partie IV est celle de 7c, parmi les solutions bornées nulles sur la demi-droite négative.
 
@@ -190,6 +192,8 @@ Prenons $h=\mathbf1_{[0,\infty[}$. Pour $x\ge0$, $\sum_i p_i h(x-x_i)=\mathbb P(
 
 Par 16a, $L g_0(t_k)=1$ pour $k$ assez grand. Par (P), 15b et l’intégrale admise, $1=\mu(0)\int_0^\infty g_0(t)dt=\mu(0)m$. Donc $\mu(t)=1/m$ sur toute la demi-droite.
 
+Sous l’hypothèse de support fini adoptée depuis Q15, l’identité admise pour $g_0$ se vérifie directement. Si $J=\{i:p_i>0\}$, on a $g_0(t)=\sum_{i\in J}p_i\mathbf1_{[0,x_i[}(t)$ pour tout $t$. L’intégrale est donc $\sum_{i\in J}p_ix_i=m$. Les valeurs exactes aux points de saut préservent aussi l’identité ponctuelle de Q16a.
+
 ### Question 17
 
 Pour $g\in F$ continue par morceaux, toute suite $x_n\to\infty$ admet par l’hypothèse une sous-suite satisfaisant (P). Par 16b, $Lg$ y tend vers $m^{-1}\int_0^\infty g$, indépendamment du choix de la suite. Si la limite sur la demi-droite échouait, on trouverait une suite restant à distance positive de ce réel, contradiction. Comme $Lg(x)=\sum_{k\ge0}\mathbb E g(x-S_k)$ et que $g$ est nulle sur les négatifs, la formule suit avec l’intégrale sur $\mathbb R$.
@@ -198,4 +202,6 @@ Pour $g\in F$ continue par morceaux, toute suite $x_n\to\infty$ admet par l’hy
 
 Prenons $g=\mathbf1_{[0,\ell]}$ et utilisons 4b puis 17 à l’abscisse $x+\ell$. On obtient $\mathbb E N(x,x+\ell)\to\ell/m$. Cela correspond, loin de l’origine, à une intensité moyenne de renouvellement $1/m$ par unité de longueur. En présence d’un réseau le résultat échoue en général. Si $X=1$ presque sûrement et $\ell=1/2$, les temps sont les entiers. Pour $x=n+1/4$ la fenêtre ne contient aucun entier, pour $x=n+3/4$ elle en contient un. Les deux sous-suites ont des limites différentes.
 
-![Figure 1 — Accroissement déterministe égal à un et fenêtre de longueur un demi. Le comptage oscille selon la position de la fenêtre.](figures/renouvellement-sur-reseau.svg)
+Plus précisément, si $x=n+u$ avec $n\in\mathbb N$ et $0\le u<1$, on compte un entier pour $u=0$ ou $1/2\le u<1$, et zéro pour $0<u<1/2$. Le choix d’un intervalle fermé fixe les valeurs aux demi-entiers et aux entiers.
+
+![Figure 1 — Visites des entiers dans la fenêtre fermée de longueur ½. Aux extrémités de chaque palier, le point plein indique la valeur prise et le point évidé la valeur exclue.](figures/renouvellement-sur-reseau.svg)

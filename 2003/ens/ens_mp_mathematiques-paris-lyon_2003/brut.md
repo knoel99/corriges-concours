@@ -4,7 +4,11 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 On travaille sur la branche réelle d’abscisse positive de la courbe $y^2=x^3-D^2x$, complétée par le point à l’infini. Une intégrale paramètre le groupe réel. Des valuations et une hauteur explicite établissent ensuite la finitude de la torsion et la génération finie du sous-groupe rationnel.
+
+L’épreuve commune dure six heures, avec les coefficients 6 à Paris et 4 à Lyon. On conserve l’équation du sujet et l’hypothèse que $D$ est le produit de premiers impairs distincts (éventuellement le produit vide, égal à un). [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-mp/session-2003/sujet-2003-ecrit-mp_mathematiques_lyon_paris.pdf) · [Rapport du jury](https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/rapport-de-jury-session-2003/rapport-2003-mp_ecrit_mathematiques_lyon_paris.pdf)
 
 ## I. Hauteurs sur un groupe abélien
 
@@ -152,6 +156,8 @@ La droite joignant les deux points a pour pente $m=(y_2-y_1)/(x_2-x_1)$. Si les 
 
 ![Figure 1 — Pour D = 1, la droite y = 3(x − 1) rencontre la branche en trois points. La somme des deux premiers est le reflet du troisième. Le détail agrandit les deux intersections proches.](figures/corde-et-somme.svg)
 
+Pour contrôler le dessin, $D=1$ et $y=3(x-1)$ donnent $P(x)=(x-1)(x^2-8x+9)$. Les trois abscisses sont $1,4-\sqrt7,4+\sqrt7$, toutes au moins égales à $1$. La troisième intersection est sur la droite, et la somme des deux premiers points a pour ordonnée l’opposé de la sienne.
+
 ### Question III.1.b
 
 Pour $b=y_1-mx_1$, le polynôme est $P=\prod_i(X-x_i)$. Comme $(-D)^3-D^2(-D)=0$, l’évaluation en $-D$ donne $\prod_i(x_i+D)=(b-mD)^2$. Or $b-mD=((x_2+D)y_1-(x_1+D)y_2)/(x_2-x_1)$, d’où l’identité au carré. L’évaluation en zéro donne aussi la formule entre crochets, $x_1x_2x_3=b^2$.
@@ -212,7 +218,7 @@ Le morphisme à valeurs de caractéristique deux annule $2\overline C(\mathbb Q)
 
 ### Question IV.A.3.d
 
-Le groupe cible a $2^{2s+2}$ éléments. Pour chaque valeur atteinte, choisissons un point rationnel $z$ de cette image. Pour tout $P$ ayant la même image, $P-z$ est dans le noyau et vaut $2Q$ avec $Q$ rationnel. Les représentants ainsi choisis forment un système fini modulo $2$.
+Le groupe cible a $2^{2s+2}$ éléments. Pour chaque valeur atteinte, choisissons un point rationnel $z$ ayant cette image. Pour tout $P$ ayant la même image, $P-z$ est dans le noyau et vaut $2Q$ avec $Q$ rationnel. Les représentants ainsi choisis forment un système fini modulo $2$.
 
 ## IV.B. Hauteur explicite et finitude
 
@@ -221,6 +227,8 @@ Le groupe cible a $2^{2s+2}$ éléments. Pour chaque valeur atteinte, choisisson
 Pour $P=(x,y)$, posons $x=a/c$ et $b=c^{3/2}y\in\mathbb Z$ comme en IV.A.2.b. Si $y\ne0$, III.2.b donne
 $$x(2P)+D=\frac{(a^2+2Dac-D^2c^2)^2}{4b^2c}.$$
 Le dénominateur est un carré entier et rend donc aussi $x(2P)$ entier après multiplication. Le plus petit tel carré est au plus ce dénominateur. Comme $a\ge Dc$, le numérateur est au plus $(a+Dc)^4$. En prenant les logarithmes, $h(2P)\le4h(P)$. Les points $\infty$ et $(D,0)$ doublent en $\infty$ et vérifient aussi la borne.
+
+La hauteur employée dans cette dernière partie est $h(\infty)=0$ et $h(P)=\ln(a+Dc)=\ln(c(x+D))$. Le facteur $c$ est le plus petit carré entier positif qui rende $cx$ entier. Quand $2P$ est fini, $x(2P)+D>0$ : la comparaison des dénominateurs carrés conserve donc le sens de l’inégalité avant le logarithme.
 
 ### Question IV.B.2.a
 
@@ -248,6 +256,8 @@ $$h(P_3)+h(P_4)=\ln(c_3c_4d'/e)\ge\ln d'-\ln\delta.$$
 Avec les notations imprimées, III.4 donne $d=T^2$, $d'=U^2$, $e=V^2$, et $\delta=\gcd(T,U,V)^2\le(2D)^6$. En outre $U=(a_1+Dc_1)(a_2+Dc_2)-2D^2c_1c_2$. Le produit est au moins $4D^2c_1c_2$ puisque $a_i\ge Dc_i$. Donc $U\ge(a_1+Dc_1)(a_2+Dc_2)/2$. IV.B.2.e donne
 $$h(P_1+P_2)+h(P_1-P_2)\ge2h(P_1)+2h(P_2)-2\ln\big(2(2D)^3\big).$$
 Les hypothèses $P_1\pm P_2\ne\infty$ équivalent ici à la distinction des abscisses.
+
+Si l’un des points est le point à l’infini, la somme et la différence ont la même hauteur que l’autre point et la minoration reste vraie. Pour deux points finis, $P_1\pm P_2\ne\infty$ exclut précisément le cas d’abscisses égales. L’écriture de IV.B.2.e admet bien ici $e=V^2>0$.
 
 ### Question IV.B.3.a
 

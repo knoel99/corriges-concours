@@ -1,0 +1,63 @@
+{
+  "slug": "ens_mp-pc_italien-le2_2005",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Italien (LE2)",
+    "annee": 2005,
+    "modalite": "écrit"
+  },
+  "intitule": "Identité politique et intérêts personnels dans l’Italie de Berlusconi",
+  "questions": 2,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "V",
+      "1"
+    ]
+  },
+  "sources": {
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2005",
+    "etablissements": "ENS de Paris et de Cachan",
+    "pages_sujet": "7",
+    "code_garde": "UC 528",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2005/sujet-2005-ecrit-mp_pc_langue_etrangere_2.pdf#page=7",
+    "sujet_sha256": "3591b865ff600e9a1da38a819b3d68405c9a905cb43f3fc1b5ef6183ff6011c6",
+    "precision": "L’extrait est tiré de L’abc del mondo contemporaneo (2004), pages 75–76. La page d’épreuve imprime « Alfonso Beradinelli » pour Alfonso Berardinelli. La coupe après le deuxième paragraphe est conservée. Le rapport spécifique d’italien LE2 n’a pas été retrouvé."
+  },
+  "mots_expression": {
+    "1": 238
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V",
+      "fichier": "figures/masque.svg",
+      "legende": "Le passage oppose une mise en scène impersonnelle et un intérêt identifiable."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "fichier": "figures/controle.svg",
+      "legende": "Un contrôle démocratique vise la décision et préserve aussi la vie privée."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "italien_sciences_2005_2010",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et réponses intégrales en italien. Identité politique et intérêts personnels dans l’Italie de Berlusconi.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "slug": "x_pc_deuxieme-composition-de-mathematiques_1997",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "PC",
+    "annee": 1997,
+    "matiere": "Deuxième composition de mathématiques",
+    "modalite": "écrit"
+  },
+  "intitule": "Deuxième composition de mathématiques",
+  "theme": "Étude de quelques espaces de fonctions munis de produits scalaires.",
+  "organisateurs": "École polytechnique et École supérieure de physique et de chimie industrielles",
+  "identification": "Bandeau École polytechnique et E.S.P.C.I., option PC. Deuxième composition de mathématiques.",
+  "questions": 17,
+  "sources": {
+    "sujet": "https://www.sujetsetcorriges.fr/dl/X/Maths/PC/sec-x-1997-maths2-PC.pdf",
+    "sha256_sujet": "211a0b0c59e1481d6439e94c1baa00395ed4292dcad3b5ba0cd90d82a6afe10e",
+    "pages_sujet": 3,
+    "collection": "https://www.sujetsetcorriges.fr/cpge-spe/x/x-mathematiques/x-espci-maths-pc/",
+    "notice_ups": "m97xp2",
+    "pieces_ups": [
+      {
+        "id": "m97xp2",
+        "type": "énoncé",
+        "auteur": "UPS",
+        "source": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-f801597a39be0d288206",
+        "sha256": "b48bea98e3e65f869aefab449a6b12a9b11d819c6778c5e8f1eeff07786e0a61"
+      },
+      {
+        "id": "m97xp2",
+        "type": "énoncé",
+        "auteur": "UPS",
+        "source": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-d51736c0f99479e54791",
+        "sha256": "7dc16d1e05dccdbe4e97b995eb24f94430ecfbce33891df8367e9be18403e0e6"
+      }
+    ],
+    "recoupement": null,
+    "rapport_jury": null,
+    "precision_rapport": "Aucun rapport de jury identifié dans les deux collections consultées."
+  },
+  "figures": [
+    {
+      "fichier": "figures/figure-1.svg",
+      "question": "9.b",
+      "legende": "Les trois premières matrices de Gram des monômes"
+    },
+    {
+      "fichier": "figures/figure-2.svg",
+      "question": "10.c",
+      "legende": "Trois polynômes orthonormés au second ordre"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "x_maths_b_recentes",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Contrôle de la garde et des parties du fac-similé, résolution de chaque consigne dans les deux éditions, indications par subdivision, figures mathématiques originales et rapprochement avec la notice UPS."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.a",
+      "1.b",
+      "2",
+      "3.a",
+      "3.b",
+      "3.c",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9.a",
+      "9.b",
+      "9.c",
+      "10.a",
+      "10.b",
+      "10.c"
+    ],
+    "precision": "Contrôle de la garde et des parties du fac-similé, résolution de chaque consigne dans les deux éditions, indications par subdivision, figures mathématiques originales et rapprochement avec la notice UPS.",
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "perimetre": "Contrôle de la garde et des parties du fac-similé, résolution de chaque consigne dans les deux éditions, indications par subdivision, figures mathématiques originales et rapprochement avec la notice UPS.",
+      "sha256_sujet_controle": "211a0b0c59e1481d6439e94c1baa00395ed4292dcad3b5ba0cd90d82a6afe10e"
+    }
+  }
+}

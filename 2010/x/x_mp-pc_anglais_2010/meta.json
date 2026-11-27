@@ -1,0 +1,78 @@
+{
+  "slug": "x_mp-pc_anglais_2010",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Anglais",
+    "annee": 2010,
+    "modalite": "écrit"
+  },
+  "intitule": "Paul Auster, A two-faced man, et Catherine Bréchignac, Du bon usage du temps",
+  "questions": 3,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "V",
+      "1",
+      "2"
+    ]
+  },
+  "sources": {
+    "index": "https://www.alloschool.com/element/33548",
+    "etablissements": "École polytechnique et École supérieure de physique et de chimie industrielles",
+    "pages_sujet": "5",
+    "sujet": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2010-langues-vivantes.pdf#page=5",
+    "sujet_sha256": "44be9353a9797be2ce331618ae2b484ddd60056a2b192059d7aa698def3e54eb",
+    "sujet_complementaire": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2010-langues-vivantes.pdf#page=1",
+    "sujet_complementaire_sha256": "44be9353a9797be2ce331618ae2b484ddd60056a2b192059d7aa698def3e54eb",
+    "references_complementaires": [
+      "https://web.archive.org/web/20110519221507/http://www.admission.polytechnique.edu:80/accueil/concours-cycle-polytechnicien/sujets-rapports-et-statistiques/sujets-rapports-et-statistiques-5071.kjsp",
+      "https://www2.espci.fr/enseignement/brochure_concours_2010_polytechnique.pdf#page=20",
+      "https://groupe-reussite.fr/ressources/wp-content/uploads/Annales/x-ens/anglais/x-ens-anglais-2010-sujet.pdf#page=3",
+      "https://groupe-reussite.fr/ressources/wp-content/uploads/Annales/x-ens/anglais/x-ens-anglais-2010-sujet.pdf#page=9"
+    ],
+    "precision": "Le fac-similé des deux cahiers place Catherine Bréchignac, N’ayons pas peur de la science (2009), aux pages 1 et 2 du PDF et Paul Auster, Invisible (2009), à la page 5. La notice de l’ESPCI et un second fac-similé corroborent cette identification. Les rapports d’anglais de ces écrits restent à retrouver."
+  },
+  "mots_expression": {
+    "1": 132,
+    "2": 197
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V",
+      "fichier": "figures/born.svg",
+      "legende": "Les détails vus dans le bar précèdent un examen du jugement moral du narrateur."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "fichier": "figures/temps.svg",
+      "legende": "L’argument de Bréchignac porte sur les conditions de la pensée."
+    },
+    {
+      "numero": 3,
+      "question": "2",
+      "fichier": "figures/incertitude.svg",
+      "legende": "Le texte d’opinion distingue compréhension d’un risque et décision collective."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "anglais_x_espci_2009_2010",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et réponses intégrales en anglais. Paul Auster, A two-faced man, et Catherine Bréchignac, Du bon usage du temps.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "ens-rennes_d1_droit-commercial_2005",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Droit commercial",
+    "annee": 2005,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "intitule": "Peut-on parler de « crise existentielle du droit commercial » ?",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/2005-sujets-d1_1423060647728-pdf#page=2",
+    "sujet_sha256": "6e722c986780682109dc35cd612f69dd9f54c1674c5c472c52b1da9d33b0e220",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "references_complementaires": {
+      "Code de commerce en avril 2005": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000005634379/2005-04-01/",
+      "Code civil en avril 2005": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006070721/2005-04-01/",
+      "Ordonnance de recodification du 18 septembre 2000": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000219662"
+    }
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "section": "I-A",
+      "fichier": "figures/champs-du-commerce.svg",
+      "legende": "L’achat pour revendre, l’activité économique et la forme sociale répondent à trois questions de qualification."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "section": "II-A",
+      "fichier": "figures/acte-mixte.svg",
+      "legende": "La qualité de celui à qui la preuve est opposée explique l’asymétrie du régime de l’acte mixte."
+    }
+  ],
+  "redaction": "Rédaction d’une dissertation et d’un guidage interrogatif confrontant la commercialité aux droits de l’entreprise et du marché, avec application de la preuve des actes mixtes et des procédures collectives en vigueur au printemps 2005.",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite/commercial",
+      "session": "rennes_droit_suite/commercial",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction d’une dissertation et d’un guidage interrogatif confrontant la commercialité aux droits de l’entreprise et du marché, avec application de la preuve des actes mixtes et des procédures collectives en vigueur au printemps 2005."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}

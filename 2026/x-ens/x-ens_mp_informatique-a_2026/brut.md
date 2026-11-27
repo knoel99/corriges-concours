@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 
 *Bases de données de vecteurs.* Durée 4 h, calculatrice interdite, langage OCaml. On note $[n]=\{0,\dots,n-1\}$ et $\log$ le logarithme en base 2.
 
@@ -179,7 +181,7 @@ Si $P$ est le nombre de couples qui satisfont la borne temporelle, les enfilemen
 
 ### Question I.9
 
-**La musique $A$ correspond le mieux à l’extrait.** Les trois écarts temporels de la figure 2 sont concentrés près d’une même valeur pour $A$. Pour $B$, ils se répartissent autour de 3, 8 et 11. Une translation de l’extrait dans la musique produit un décalage constant, quelle que soit son amplitude. L’histogramme de $A$ est donc le plus compatible avec cette hypothèse.
+**La musique $A$ correspond le mieux à l’extrait.** La figure 2 place les trois écarts de $A$ dans une seule classe de l’histogramme, autour de 1. Pour $B$, ils se répartissent autour de 3, 8 et 11. Une translation de l’extrait dans la musique produit un décalage constant, quelle que soit son amplitude. L’histogramme de $A$ est donc le plus compatible avec cette hypothèse.
 
 Le texte annonce des écarts en valeur absolue. Des amplitudes égales constituent un indice de cohérence. Pour confirmer la translation, on vérifierait que les trois écarts signés sont égaux. Les trois correspondances dans chaque musique donnent le numérateur de Jaccard. Les tailles des unions seraient nécessaires pour comparer les deux indices.
 
@@ -205,12 +207,14 @@ $$\boxed{\begin{aligned}
 &=J(A,B).
 \end{aligned}}$$
 
+La définition du minimum suppose une signature non vide. Une musique sans couple aux temps autorisés a une signature vide. Pour inclure ce cas, on réserve une valeur spéciale $\bot$ au hachage du vide. Si un seul ensemble est vide, la probabilité de collision et l’indice de Jaccard valent 0. Si tous deux sont vides, les hachages coïncident toujours. On pose alors $J(\varnothing,\varnothing)=1$ par convention.
+
 **(b)** Méthode.
 
-1. *Prétraitement de la base.* Pour chaque musique $X$, on calcule sa représentation concise (I.2), puis sa signature $S_\Delta(X)$ (I.7). On tire $r$ fonctions de hachage indépendantes $h_1,\dots,h_r$, et on stocke seulement le vecteur $\sigma(X)=\big(\mathsf{minHash}(h_1)(S_\Delta(X)),\dots,\mathsf{minHash}(h_r)(S_\Delta(X))\big)\in[N]^r$. Sa taille est fixe, quelle que soit la taille de $S_\Delta(X)$, ce qui fait gagner de la mémoire.
+1. *Prétraitement de la base.* Pour chaque musique $X$, on calcule sa représentation concise (I.2), puis sa signature $S_\Delta(X)$ (I.7). On tire une seule fois pour toute la base et les requêtes $r$ permutations uniformes indépendantes $h_1,\dots,h_r$, et on stocke seulement le vecteur $\sigma(X)=\big(\mathsf{minHash}(h_1)(S_\Delta(X)),\dots,\mathsf{minHash}(h_r)(S_\Delta(X))\big)\in([N]\cup\{\bot\})^r$. Sa taille est fixe, quelle que soit la taille de $S_\Delta(X)$, ce qui fait gagner de la mémoire.
 2. *Requête.* On calcule de même $\sigma(M)$ pour l'extrait $M$. Pour chaque musique $X$, on mesure la proportion de coordonnées où $\sigma(M)$ et $\sigma(X)$ coïncident.
    D'après (a), c'est une moyenne de $r$ variables de Bernoulli indépendantes, de paramètre $J(S_\Delta(M),S_\Delta(X))$. C'est donc un estimateur sans biais de l'indice de Jaccard, de variance au plus $1/(4r)$.
-3. On renvoie les musiques qui ont la plus grande similarité estimée. On peut ensuite départager les meilleures candidates par le critère de cohérence temporelle de I.9 : on garde celle dont les écarts $t'-t$ des triplets communs sont concentrés sur une seule valeur.
+3. On renvoie les musiques qui ont la plus grande similarité estimée. On peut ensuite départager les meilleures candidates par le critère de cohérence temporelle de I.9 : on garde celle dont les écarts $t'-t$ des triplets communs sont concentrés sur une seule valeur. Pour ce départage, on relit les enregistrements retenus ou leurs dictionnaires d’occurrences afin de retrouver les dates des triplets.
 
 Pour éviter de comparer l'extrait à toute la base, on peut ranger les musiques dans des tables indexées par des blocs de coordonnées de $\sigma$. On ne compare alors l'extrait qu'aux musiques qui partagent au moins un bloc avec lui.
 
@@ -261,9 +265,9 @@ let search (skl : skip_list) (v : int) : skip_node option =
 
 Si $v\le0$, toutes les clés réelles sont strictement positives. Le programme descend jusqu’à l’étage 0 puis rend `None`. Supposons désormais $v>0$.
 
-**(b)** *Invariant* de chaque appel `descend node level` : `node.value` $<v$ (le nœud factice vaut $0<v$), et `node` est présent à l'étage `level`. Le premier point vient de ce qu'on n'avance que vers des valeurs $<v$.
+**(b)** *Invariant* de chaque appel `descend node level` : `node.value` $<v$ (le nœud factice vaut $0<v$), et `node` est le nœud factice ou un nœud présent à l’étage `level`. Le premier point vient de ce qu'on n'avance que vers des valeurs $<v$.
 
-*Terminaison.* Le couple (`level`, nombre de nœuds de l'étage 0 situés après `node`) décroît strictement pour l'ordre lexicographique à chaque appel. Quand on avance, le niveau reste le même et le nœud recule d'au moins un rang. Quand on descend, le niveau diminue.
+*Terminaison.* Le couple (`level`, nombre de nœuds de l'étage 0 situés après `node`) décroît strictement pour l'ordre lexicographique à chaque appel. Quand on avance, le niveau reste le même et le nombre de nœuds restants diminue d’au moins une unité. Quand on descend, le niveau diminue.
 
 *Correction.* Si la fonction renvoie `Some nx`, alors `nx.value` $=v$. Si elle renvoie `None`, c'est qu'on est à l'étage 0 et que le successeur de `node` est absent ou porte une valeur $>v$. L'étage 0 est la liste triée de toutes les valeurs et `node.value` $<v$, donc aucune valeur égale à $v$ n'existe : $v$ est absente.
 
@@ -282,7 +286,7 @@ En effet, si $x$ est présent à l'étage $i+1$, la recherche directe l'y a atte
 
 Sachant que $x$ est présent à l'étage $i$, il l'est aussi à l'étage supérieur avec probabilité $p$ : `random_level` fait un tirage indépendant de plus. Ce tirage est indépendant de la partie du chemin déjà remontée.
 
-![Figure 2 — Chemin de recherche de 28 dans la skip list de la figure 3 du sujet, lu à l'envers : montée avec probabilité p, recul au même étage avec probabilité 1 − p](figures/ii4-chemin-inverse-skip-list.svg)
+![Figure 2 — Chemin de recherche de 28 dans la liste à sauts de la figure 3, lu à l’envers. La montée au nœud 15 illustre une promotion de probabilité p. À la sentinelle 0, la montée est certaine.](figures/ii4-chemin-inverse-skip-list.svg)
 
 On note $C_\ell$ le nombre moyen de pas pour monter de $\ell$ étages. Un pas coûte 1. Avec probabilité $p$, il reste $\ell-1$ étages à monter ; avec probabilité $1-p$, il en reste toujours $\ell$. D'où
 
@@ -304,7 +308,7 @@ Cette égalité décrit le modèle où tout essai de promotion est une Bernoulli
 
 ### Question II.5
 
-On pose $\ell^\star=\lceil\log_{1/p}n\rceil$, de sorte que $n\,p^{\ell^\star}\le1$. On note $N_\ell$ le nombre de valeurs présentes à l'étage $\ell$. On découpe le chemin de recherche en deux morceaux.
+On pose $\ell^\star=\lceil\log_{1/p}n\rceil$, de sorte que $n\,p^{\ell^\star}\le1$. On note $N_\ell$ le nombre de valeurs présentes à l'étage $\ell$. Si le plus haut étage occupé est sous $\ell^\star$, on prolonge le chemin inversé à la sentinelle jusqu’au seuil. Ces montées fictives majorent le nombre de pas réellement parcourus. On découpe le chemin de recherche en deux morceaux.
 
 - **Morceau entre l'étage 0 et l'étage $\ell^\star$.** À l'envers, c'est une montée de $\ell^\star$ étages. D'après II.4, elle prend en moyenne au plus $C_{\ell^\star}=\ell^\star/p=O(\log n)$ pas.
 - **Morceau au-dessus de l'étage $\ell^\star$.**
@@ -485,7 +489,7 @@ Pour le paquet $\ell$, `c.(i)` $=c_\ell(p_i)$ et `t.(a).(b)` $=d_\ell(a,b)$. Le 
 ![Figure 4 — Quantification de produit avec m = 3 paquets et k = 4 : la distance approchée D′ij est la somme des lectures d1(2, 1), d2(0, 0) et d3(3, 2) dans les tables des paquets](figures/iii7-quantification-produit.svg)
 
 Coût :
-- les $m$ appels aux $k$-moyennes sur des vecteurs de dimension $d/m$ : $O(n_{\text{iter}}\,n\,k\,d)$ ;
+- les $m$ appels aux $k$-moyennes sur des vecteurs de dimension $d/m$ : $O((n_{\text{iter}}+1)\,n\,k\,d)$ ;
 - les tables : $O(k^2 d)$ ;
 - le remplissage de la matrice : $O(n^2 m)$.
 

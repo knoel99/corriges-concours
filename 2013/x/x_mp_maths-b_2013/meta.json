@@ -11,13 +11,19 @@
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/04/13_mp_math_b_x.pdf",
     "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/07/13_mpi_rap_emathb.pdf",
-    "sha256_sujet": "9d0d6d705ad84fd2a8dba620d7958035ae82158c58b9e11ef51b6325be4001f6"
+    "sha256_sujet": "9d0d6d705ad84fd2a8dba620d7958035ae82158c58b9e11ef51b6325be4001f6",
+    "sha256_rapport_jury": "330bddb77dfddfdf3c8f99e14005d07c85ea896697c60a1b1856af04801a78f8"
   },
   "figures": [
     {
       "fichier": "figures/tentes-dyadiques.svg",
       "question": "5.b",
       "legende": "Une tente atteint 1 au milieu de son intervalle et s’annule aux autres nœuds de la grille immédiatement plus fine."
+    },
+    {
+      "fichier": "figures/interpolation-aux-milieux.svg",
+      "question": "9.b",
+      "legende": "Pour f(x) = 4x(1 − x), les flèches figurent les deux corrections de hauteur 1/4 aux nouveaux nœuds."
     }
   ],
   "contributions": [
@@ -31,6 +37,65 @@
       "perimetre": "Rédaction de toutes les réponses à partir des cinq pages du sujet et des huit pages du rapport. Contrôle de la norme de l’interpolant, des exposants, des constantes et des franchissements dyadiques. Traitement explicite de l’indice hors domaine en 1 à partir de Q13. Figure des tentes aux deux premiers niveaux.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "x_maths_b_anciennes",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Contrôle des 35 rubriques sur les trois parties, de la norme du projecteur, des indices de bord et des constantes des dernières majorations. Initialisation de 9.b explicitée et illustrée, correction du vocabulaire en 7.a et de la majoration en 18.a."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.a",
+      "1.b",
+      "1.c",
+      "2",
+      "3.a",
+      "3.b",
+      "3.c",
+      "4.a",
+      "4.b",
+      "5.a",
+      "5.b",
+      "5.c",
+      "5.d",
+      "6",
+      "7.a",
+      "7.b",
+      "8.a",
+      "8.b",
+      "9.a",
+      "9.b",
+      "9.c",
+      "10.a",
+      "10.b",
+      "11.a",
+      "11.b",
+      "12",
+      "13",
+      "14.a",
+      "14.b",
+      "15",
+      "16",
+      "17",
+      "18.a",
+      "18.b",
+      "19"
+    ],
+    "precision": "Les 35 rubriques des deux éditions ont été rapprochées du fascicule de 5 pages et du rapport du jury de 8 pages. Contrôle des 35 rubriques sur les trois parties, de la norme du projecteur, des indices de bord et des constantes des dernières majorations. Initialisation de 9.b explicitée et illustrée, correction du vocabulaire en 7.a et de la majoration en 18.a.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "9d0d6d705ad84fd2a8dba620d7958035ae82158c58b9e11ef51b6325be4001f6",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Contrôle des 35 rubriques sur les trois parties, de la norme du projecteur, des indices de bord et des constantes des dernières majorations. Initialisation de 9.b explicitée et illustrée, correction du vocabulaire en 7.a et de la majoration en 18.a.",
+      "commit_redaction_anterieure": "7f818d732191ef23d644caa9e6b33a4505f13bcd"
+    }
+  }
 }

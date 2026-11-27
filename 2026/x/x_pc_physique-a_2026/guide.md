@@ -10,6 +10,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** *Techniques modernes de spectrométrie de masse de molécules complexes.* Le sujet suit les deux étapes d'une mesure de masse moléculaire. On produit d'abord des ions multichargés par électronébulisation (ESI). On mesure ensuite leur rapport $m/z$ par résonance cyclotronique ionique à transformée de Fourier (FT-ICR). L'épreuve dure 4 heures, **sans calculatrice**, et compte **43 questions**. L'énoncé prévient que la plupart se traitent de façon concise, et c'est vrai : beaucoup tiennent en trois lignes.
@@ -138,7 +140,7 @@ Une goutte qui s'évapore à charge constante voit $Q_{\lim}\propto R^{3/2}$ dim
 > Le rapport 2026 note des erreurs de calcul dans l'expression finale de la charge limite, alors que le raisonnement était bien posé. Vérifiez la dimension : $\varepsilon_0\gamma R^3$ doit être le carré d'une charge.
 
 > [!METHODE]
-> Origine du facteur $\sqrt2$ de la note de bas de page : pour une sphère, la surpression de Laplace due à la tension superficielle vaut $2\gamma/R$, pas $\gamma/R$. En remplaçant $\gamma/R$ par $2\gamma/R$, on retrouve exactement la limite de Rayleigh $Q_R=8\pi\sqrt{\varepsilon_0\gamma R^3}=\sqrt2\,Q_{\lim}$. L'énoncé simplifie volontairement le modèle. On répond avec ses données.
+> Le sujet adopte $\gamma/R$ comme force de cohésion par unité de surface. Sa note précise que le seuil de Rayleigh issu de l’analyse de stabilité d’une goutte déformable est $Q_R=8\pi\sqrt{\varepsilon_0\gamma R^3}=\sqrt2\,Q_{\lim}$. Remplacer formellement $\gamma/R$ par $2\gamma/R$ dans le bilan redonne cette valeur. La comparaison de deux pressions sur une sphère ne démontre pas la stabilité vis-à-vis des déformations.
 
 ### Question 6
 
@@ -463,7 +465,7 @@ Le décalage du maximum est donc bien plus petit que la largeur du pic quand le 
 
 On a
 
-$$\frac{\delta(m/z)}{m/z}=\frac{\delta\omega_0}{\omega_0}.$$
+$$\frac{|\delta(m/z)|}{m/z}\simeq\frac{|\delta\omega_0|}{\omega_0}.$$
 
 Deux espèces sont séparées si $\delta\omega_0\gtrsim\Delta\omega\sim1/\tau$. La résolution relative vaut donc
 
@@ -576,7 +578,7 @@ C'est une **spirale d'Archimède** issue de l'origine. L'ion part selon $+\vec e
 
 ![Figure 4 — Trajectoire à la résonance : spirale d'Archimède issue de O, parcourue dans le sens horaire, de pas constant 2πA/ω0 (B sortant, q > 0)](figures/q26-spirale-archimede.svg)
 
-**Rôles des champs.** Le champ magnétique ne travaille pas : il impose la rotation à $\omega_0$. Le champ électrique résonant reste en phase avec la vitesse. Il fournit continûment de l'énergie, ce qui fait croître la vitesse et donc le rayon.
+**Rôles des champs.** Le champ magnétique courbe la trajectoire sans travailler. Pour la solution de Q25, la vitesse a pour affixe $A(\omega_0t+i)e^{-i\omega_0t}$. Sa projection sur la direction de la force électrique résonante vaut $A\omega_0t$. La puissance reçue vaut donc $(qE/2)A\omega_0t$, positive pour $t>0$ et nulle au départ. Ainsi l’énergie cinétique et le rayon augmentent. La vitesse ne s’aligne sur la force qu’asymptotiquement.
 
 > [!PIEGE]
 > Le rapport 2026 signale que le sens de rotation de la spirale n'a pas toujours été le bon. Pour $q>0$ et $B>0$, $\theta$ décroît : sens horaire, comme en Q16. Indiquez-le sur le dessin.
@@ -871,9 +873,9 @@ f_{\max}&\simeq\frac{7\times10^8}{2\pi\times900}\\
 
 Le critère de Shannon donne
 
-$$\boxed{f_{e,\min}=2f_{\max}\simeq2{,}5\times10^5\ \mathrm{Hz}}$$
+$$\boxed{f_{e,\mathrm{seuil}}=2f_{\max}\simeq2{,}5\times10^5\ \mathrm{Hz}}$$
 
-Cette estimation prend le premier grand pic annoté, vers $m/z=898$. Pour acquérir aussi tout le bord gauche du graphe, qui commence vers $830$, le même calcul conduit à $2f_{\max}\simeq2{,}7\times10^5\,\mathrm{Hz}$.
+Cette estimation concerne le premier grand pic annoté, vers $m/z=898$. Pour couvrir toute la fenêtre de la figure 2, qui commence vers $830$, il faut dépasser le seuil de $2{,}7\times10^5\,\mathrm{Hz}$ environ. Une acquisition à $280$ kHz convient dans ce modèle.
 
 > [!PIEGE]
 > Les erreurs classiques consistent à prendre le plus grand $m/z$, qui correspond à la fréquence la plus basse, à confondre $\omega$ et $f$ (facteur $2\pi$), ou à oublier le facteur 2 de Shannon.

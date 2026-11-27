@@ -1,0 +1,162 @@
+{
+  "slug": "ens-paris-saclay_design_histoire-de-lart_2017",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Histoire de l’art",
+    "annee": 2017,
+    "modalite": "écrit",
+    "etablissement_imprime": "École normale supérieure Paris-Saclay"
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2017_Sujet_1A_Design_Histoire_art.pdf",
+    "sha256_sujet": "94116bea96c8c58306837deb31ce8673dc27c672e37df18fcba4e64739c3ae46",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2017_RE_1A_Design.pdf",
+    "notices_documentaires": [
+      {
+        "titre": "Pavillon de l’Esprit Nouveau, Fondation Le Corbusier",
+        "url": "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/"
+      },
+      {
+        "titre": "Hector Guimard, entrée du Métropolitain, MoMA",
+        "url": "https://www.moma.org/collection/works/2393"
+      },
+      {
+        "titre": "Vue de l’Hôtel du Collectionneur et des pavillons, musée des Arts décoratifs",
+        "url": "https://madparis.fr/L-Art-nouveau-et-l-Art-deco"
+      }
+    ],
+    "index_annales": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=279",
+    "sha256_rapport_jury": "0e260994d26a4a9edfae7ff149923a46e3e0a79e20520cd5f6614946dd90b2c7",
+    "code_sujet": "C17104",
+    "page_pdf_sujet": 1,
+    "citation_repere": "des recherches purement morphologiques",
+    "consigne_imprimee": "Vous analyserez et discuterez ce propos tenu par le critique d’art Waldemar-George à l’occasion de l’Exposition internationale des arts décoratifs et industriels modernes de Paris en 1925. En vous appuyant sur votre connaissance du programme, vous développerez l’analyse.",
+    "programme": "Design et modernité(s) (1890–1939)",
+    "reference_imprimee": "Waldemar-George, « L’Exposition des Arts Décoratifs et Industriels de 1925 : les tendances générales », L’Amour de l’art, n° 8, août 1925.",
+    "index_annales_sha256": "9a1a65285afa119e00dbc84ca52596174e747308f94f1ecdefda7ad571ff7565",
+    "pages_rapport_histoire_de_lart": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/analyse-du-design.svg",
+      "question": "I. L’exposition peut privilégier la nouveauté sensible et maintenir les hiérarchies de la commande",
+      "legende": "À Paris en 1925, deux manières d’inviter le visiteur à se représenter un logement."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des deux compositions après lecture de la page 1 du sujet. Problématisation et datation des exemples, vérification des notices documentaires et du dessin analytique original.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "lettres_design",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Précision sur les voix dans la citation de Waldemar-George et sur le rôle du visiteur face aux pavillons de 1925. Consultation du rapport écrit."
+    },
+    {
+      "phase": "revision",
+      "tour": 2,
+      "agent": "x_hist_1986",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Confrontation aux pages 3–7 du rapport. Distinction du visiteur et de l’historien, élargissement chronologique par Guimard et analyse de la force probante prêtée à l’exposition."
+    }
+  ],
+  "duree_heures": 4,
+  "date_revision": "2026-11-26",
+  "intitule_editorial": true,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2017_Sujet_1A_Design_Histoire_art.pdf",
+      "sha256": "94116bea96c8c58306837deb31ce8673dc27c672e37df18fcba4e64739c3ae46",
+      "pages": 1,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "9fb90a817b7827fc6d2a2fe694ecb5b16741b3d11033c80d45832e585e333574"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2017_RE_1A_Design.pdf",
+      "sha256": "0e260994d26a4a9edfae7ff149923a46e3e0a79e20520cd5f6614946dd90b2c7",
+      "pages": 23,
+      "pages_verifiees": [
+        {
+          "numero": 2,
+          "rendu_sha256": "62574d12f1155702a8d7d12269d7a81e34a3e62ff637b02bd1fa4357211d8da2"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "43b6502051aa8930d98c4329b895c8ec475379f178bd0d01c93e545c0e6a6df7"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "0ff7e84cf149a7176e8fca63fb19f12bdb048d9bae7cc607823dcd9c3f202aa4"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "026a35bec3877d9c55ec3b667e26928e52d79afd8484cb84341462ac3bcf45ce"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "71a2ca2508c7c747775d65b2cdf927030217f4434a94d5934761f10fc2dc8b33"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "1eb7a801b21fc361d66de7a6228f0dc98b5209ea5e837f25ff32d7427c0bc3a0"
+        }
+      ]
+    }
+  },
+  "intitule": "Waldemar-George et les « recherches purement morphologiques »",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "consigne": "Vous analyserez et discuterez ce propos tenu par le critique d’art Waldemar-George à l’occasion de l’Exposition internationale des arts décoratifs et industriels modernes de Paris en 1925. En vous appuyant sur votre connaissance du programme, vous développerez l’analyse.",
+        "page_pdf": 1,
+        "code": "C17104"
+      }
+    ],
+    "annexes_sujet": [],
+    "reproductions_sujet": [],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

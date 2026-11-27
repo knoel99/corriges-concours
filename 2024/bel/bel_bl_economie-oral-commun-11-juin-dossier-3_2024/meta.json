@@ -1,0 +1,76 @@
+{
+  "slug": "bel_bl_economie-oral-commun-11-juin-dossier-3_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Économie (oral commun) — 11 juin, dossier 3",
+    "annee": 2024,
+    "modalite": "oral"
+  },
+  "intitule": "La souveraineté alimentaire européenne",
+  "questions": 0,
+  "sujets": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/bl_sujets_oraux_economie_tc_3_11062024.pdf",
+    "sujet_sha256": "fd0aa879d65ffee14e483201fc46ac54d9b85b3f70180c84b966f1035710f50a",
+    "sujet_pages": 8,
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_oral_economie_epreuve_commune.pdf",
+    "rapport_sha256": "fe5cc6dcbe4008c26a4690c9b5f2e24e5772986d17abc64298dc8717224afffe",
+    "calendrier": "https://www.ens.psl.eu/sujets-des-epreuves-orales-du-concours-bl-session-2024"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Lecture du fascicule de 8 pages avec contrôle des 4 documents et de leurs figures. Vérification des champs, unités et conclusions du commentaire.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Conception et vérification du schéma du document 2. Calcul sur les valeurs arrondies du graphique 2b, p. 4 du fascicule. Pour les engrais, la conversion de l’azote en équivalent protéines mesure une dépendance aux intrants. Légende descriptive et alternative textuelle intégrées aux deux éditions.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
+    }
+  ],
+  "figures": [
+    {
+      "fichier": "figures/soldes-cereales-et-azote.svg",
+      "question": "Document 2",
+      "legende": "Figure 1 — Deux soldes extérieurs de la France en 2021. Les céréales représentent 2,9 Mt exportées et 0,4 Mt importée en équivalent protéines, soit un solde de +2,5 Mt. Les engrais azotés représentent 0,9 Mt exportée et 6 Mt importées après conversion, soit −5,1 Mt.",
+      "description": "Les céréales représentent 2,9 Mt exportées et 0,4 Mt importée en équivalent protéines, soit un solde de +2,5 Mt. Les engrais azotés représentent 0,9 Mt exportée et 6 Mt importées après conversion, soit −5,1 Mt.",
+      "source": "Calcul sur les valeurs arrondies du graphique 2b, p. 4 du fascicule. Pour les engrais, la conversion de l’azote en équivalent protéines mesure une dépendance aux intrants."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "sujets_entierement_traites": [
+      "La souveraineté alimentaire européenne"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "redaction",
+      "sha256_sujet_controle": "fd0aa879d65ffee14e483201fc46ac54d9b85b3f70180c84b966f1035710f50a",
+      "perimetre": "Lecture du fascicule de 8 pages avec contrôle des 4 documents et de leurs figures. Vérification des champs, unités et conclusions du commentaire."
+    },
+    "documents_entierement_traites": [
+      "Document 1 — Des scénarios agricoles soumis à des hypothèses",
+      "Document 2 — Deux graphiques révèlent deux types de dépendance",
+      "Document 3 — Les règles miroir exigent des preuves et des contrôles",
+      "Document 4 — Modifier la demande change la contrainte de production"
+    ]
+  }
+}

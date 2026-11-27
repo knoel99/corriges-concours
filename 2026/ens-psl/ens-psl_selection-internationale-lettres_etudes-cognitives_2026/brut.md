@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## De l’intention à l’expérience d’agir chez Élisabeth Pacherie
 
 ### 1. Le but de l’article
@@ -19,6 +21,10 @@
 Une intention distale (D) engage l’agent dans un projet et en organise rationnellement le cours. Je décide d’expédier demain un livre à une amie. Cette intention peut demeurer stable alors que le lieu exact du dépôt ou le moment de ma sortie restent ouverts. Une intention proximale (P) ancre un projet dans une situation perçue. Me voici devant deux boîtes. Je vais placer *ce* colis dans *celle-ci*, maintenant. Une intention motrice (M) spécifie de manière sensori-motrice ce qu’il faut faire, compte tenu de ma position, de l’ouverture et du poids du colis. Elle règle le geste, sa force et ses corrections en cours d’exécution.
 
 Le modèle est dynamique en deux sens. Dans la cascade habituelle, un but se précise, du projet représenté de façon relativement abstraite à sa réalisation corporelle. Mais les intentions déjà formées continuent de contrôler l’action à leur échelle. Si l’ouverture est condamnée, je peux sélectionner une autre boîte ou revoir l’organisation de l’envoi. Le niveau D n’a pas disparu au premier geste. Inversement, toute action n’exige pas que les trois niveaux aient été explicitement formés. Une action peut être improvisée, et un geste déjà commencé peut être repris ou interrompu lorsqu’on en prend conscience.
+
+Le colis est trop large pour l’ouverture de la boîte. L’agent peut changer la prise de ses mains, choisir un guichet ou remettre l’envoi au lendemain. Ces trois réponses portent respectivement sur l’exécution motrice, le but situé et l’organisation du projet. L’obstacle ne prescrit pas à lui seul le niveau à réviser.
+
+![Figure 1 — Trois niveaux de contrôle pendant l’envoi d’un colis](figures/intentions-d-p-m.svg)
 
 ### 3. Intention proximale et intention motrice
 

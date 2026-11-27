@@ -1,0 +1,85 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire-de-lart-art-et-fin-de-lhistoire-oral_2016",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire de l’art — art et fin de l’histoire (oral)",
+    "annee": 2016,
+    "modalite": "oral"
+  },
+  "intitule": "Art et fin de l’histoire",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/DHTA-ORAL.pdf",
+    "sujet_sha256": "0073fd3b64d854debf604695d61210abac8752f0f39ea3b7ee751ef772fac003",
+    "index_officiel": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2016-lettres",
+    "note": "L’ENS classe l’épreuve avec la session 2016. Le feuillet conserve un en-tête 2014. Le rapport de 2016 confirme le titre et les quatre premières œuvres. Le PDF comporte également une installation de Kiefer datée de 2015. Sa présence dans le fichier est certaine ; sa distribution aux candidats n’est pas confirmée par le rapport.",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/RApport%20jury%20HA%202016.pdf",
+    "rapport_sha256": "b967c3bf39ac6a99b850ab72f4aa37b70c918b38578a4c561690b0fd958ee4a9"
+  },
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/analyse.svg",
+      "question": "Commentaire",
+      "legende": "Seuil, parcours latéral et bord géométrique dans trois œuvres du dossier."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "arts_selection_six",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Confrontation des listes de pièces, de leur datation et des attentes du jury."
+    },
+    {
+      "phase": "redaction",
+      "session": "arts_selection_six",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions, construction des exemples et du schéma pour « Art et fin de l’histoire ». "
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "arts_selection_six",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Contrôle du libellé, des données documentaires, des distinctions analytiques et de leur lisibilité dans les deux éditions."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Histoire de l’art — art et fin de l’histoire (oral)"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "L’ENS classe l’épreuve avec la session 2016. Le feuillet conserve un en-tête 2014. Le rapport de 2016 confirme le titre et les quatre premières œuvres. Le PDF comporte également une installation de Kiefer datée de 2015. Sa présence dans le fichier est certaine ; sa distribution aux candidats n’est pas confirmée par le rapport."
+  }
+}

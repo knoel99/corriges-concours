@@ -1,0 +1,63 @@
+{
+  "slug": "ens_mp-pc_portugais-le2_2006",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Portugais (LE2)",
+    "annee": 2006,
+    "modalite": "écrit"
+  },
+  "intitule": "Lino Rodrigues, Agência para Pobres, et l’accès aux services bancaires",
+  "questions": 2,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "V",
+      "1"
+    ]
+  },
+  "sources": {
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2006",
+    "etablissements": "ENS de Paris et de Cachan",
+    "pages_sujet": "9",
+    "code_garde": "61.10PM",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2006/sujet-2006-ecrit-mp_pc_langue_etrangere_2.pdf#page=9",
+    "sujet_sha256": "1567a166fd67c04e3d5615d14281c97e16050c7425544c7210420bab2e1d8982",
+    "precision": "L’article de Lino Rodrigues a paru à São Paulo dans IstoÉ le 13 mai 2005. Les chiffres et les conditions décrites sont ceux de l’article. La réponse emploie le portugais du Brésil. Le rapport spécifique de la session n’a pas été retrouvé."
+  },
+  "mots_expression": {
+    "1": 180
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V",
+      "fichier": "figures/agence.svg",
+      "legende": "La boutique sert de point de contact à une filiale de la Banco do Brasil."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "fichier": "figures/acces.svg",
+      "legende": "L’accès matériel, le coût et la protection du client posent trois questions différentes."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "portugais_sciences_2005_2010",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et réponses intégrales en portugais. Lino Rodrigues, Agência para Pobres, et l’accès aux services bancaires.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}

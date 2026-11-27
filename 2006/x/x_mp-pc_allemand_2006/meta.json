@@ -1,0 +1,82 @@
+{
+  "slug": "x_mp-pc_allemand_2006",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Allemand",
+    "annee": 2006,
+    "modalite": "écrit"
+  },
+  "intitule": "Un flâneur et les inquiétudes du XXIᵉ siècle",
+  "questions": 3,
+  "redaction": "Version intégrale en français et traitement de toutes les questions en allemand, avec lecture guidée du passage.",
+  "sources": {
+    "sujet": "https://web.archive.org/web/20090320042100id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/06_Version.pdf#page=1",
+    "sha256_sujet": "3c0241e84f54feccff75ccc446adc3977fde1b0af7c98b6bd9a5f0aa93a6ae7d",
+    "index": "https://web.archive.org/web/20090501013104/http://www.polytechnique.fr:80/concours/sujets/sujet06/sujet06.htm",
+    "ecoles": "École polytechnique et École supérieure de physique et de chimie industrielles",
+    "reference_des_textes": "Wilhelm Genazino, Ein Regenschirm für diesen Tag (2001). Thérèse Delpech, L’ensauvagement (Grasset, 2005).",
+    "page_version": "1",
+    "precision_garde": "Garde identifiée par les noms des écoles, la session et les filières, sans code alphanumérique imprimé.",
+    "pages_sujet": "1",
+    "capture_sujet": "2009-03-20T04:21:00Z",
+    "url_originale_sujet": "http://www.imprimerie.polytechnique.fr/EnLignes/Files/06_Version.pdf",
+    "sujet_expression": "https://web.archive.org/web/20090320034643id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/06_ExprEcrit.pdf",
+    "sha256_sujet_expression": "ad80c0da654053218712dac3cf40e8b5a0dc914d0adc391ff04bf02b5cdad42d",
+    "pages_sujet_expression": "1–2",
+    "capture_sujet_expression": "2009-03-20T03:46:43Z",
+    "url_originale_sujet_expression": "http://www.imprimerie.polytechnique.fr/EnLignes/Files/06_ExprEcrit.pdf",
+    "rapport_jury": "https://web.archive.org/web/20090320042917id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/06_Version_AL.pdf",
+    "sha256_rapport_jury": "a9c9a995fe757578a94f88fb2fa46b4c04ab3b19a28f605c087682358f7a060e",
+    "pages_rapport_jury": "1–5",
+    "capture_rapport_jury": "2009-03-20T04:29:17Z",
+    "url_originale_rapport_jury": "http://www.imprimerie.polytechnique.fr/EnLignes/Files/06_Version_AL.pdf",
+    "rapport_complementaire": "https://web.archive.org/web/20090320034646id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/06_ExprEcrit_AL.pdf",
+    "sha256_rapport_complementaire": "9ac41990b7a6820255285e336896dca84c08ac6271468a85e4f575d48c658816",
+    "pages_rapport_complementaire": "1–2",
+    "capture_rapport_complementaire": "2009-03-20T03:46:46Z",
+    "url_originale_rapport_complementaire": "http://www.imprimerie.polytechnique.fr/EnLignes/Files/06_ExprEcrit_AL.pdf"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Version",
+      "fichier": "figures/regard-du-flaneur.svg",
+      "legende": "Ce que le flâneur voit et ce qu’il en déduit."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "La version et l’expression écrite font l’objet de deux rapports distincts pour les filières MP et PC."
+    },
+    {
+      "phase": "redaction",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et traitement de toutes les questions en allemand, avec lecture guidée du passage."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version",
+      "Q1",
+      "Q2"
+    ]
+  }
+}

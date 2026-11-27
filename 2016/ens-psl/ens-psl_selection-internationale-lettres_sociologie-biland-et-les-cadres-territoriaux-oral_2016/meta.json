@@ -1,0 +1,88 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_sociologie-biland-et-les-cadres-territoriaux-oral_2016",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Sociologie — Biland et les cadres territoriaux (oral)",
+    "annee": 2016,
+    "modalite": "oral"
+  },
+  "intitule": "Commenter l’extrait d’Émilie Biland sur les générations de cadres et la politisation dans un service municipal.",
+  "gabarit": "oral",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/ORAUX-SOCIO-SIL2016.pdf",
+    "sujet_sha256": "6e54af78e61d6d33745598ad7410843694bb396af07bd501ea9eac80b17bbb35",
+    "index": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2016-lettres",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/ORAUX-SOCIO-SIL2016.pdf",
+        "sha256": "6e54af78e61d6d33745598ad7410843694bb396af07bd501ea9eac80b17bbb35",
+        "pages": 11,
+        "pages_du_feuillet": [
+          1,
+          2
+        ]
+      },
+      {
+        "role": "autre exemplaire du même sujet",
+        "url": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/ORAL1.pdf",
+        "sha256": "6d4fba487b0036f9b93ed3f24f4e967e28589c98140e776b11d5138fc847241b",
+        "pages": 2
+      },
+      {
+        "role": "attentes générales du jury",
+        "url": "https://www.ens.psl.eu/IMG/file/internationale/2008/Lettres/Lettres.pdf",
+        "sha256": "3a360c4a7769d5dbf001d43040fcd150dcf10e4ee661a0264586d3fb340a24f4",
+        "pages": 4,
+        "pages_utiles": [
+          3,
+          4
+        ]
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/carrieres-municipales.svg",
+      "question": "Commentaire",
+      "legende": "Le calendrier d’accès aux titres et aux postes donne des sens différents au même travail municipal."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/comite-de-quartier.svg",
+      "question": "Commentaire",
+      "legende": "Une même réunion prend une signification différente selon les relations construites avant et pendant la carrière."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "sociologie_psl_oraux_individuels",
+      "agent": "sociologie_psl_oraux_individuels",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Les deux générations de la DVQ, les concours et mobilités, les scènes de travail et les définitions concurrentes de la démocratie participative."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "limites": "Feuillet de sociologie, pages 1 à 2 du recueil. Le document général sur les attentes du jury est reproduit sur l’index de la session. Aucun rapport propre à ce passage n’y est proposé."
+  }
+}

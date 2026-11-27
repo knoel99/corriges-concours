@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Partitions, matrices monomiales et groupes de Heisenberg.** Le raffinement des partitions est ordonné du bloc unique vers les singletons. Une conjugaison intérieure oublie les facteurs scalaires, distinction qui intervient dans la partie V.
 
 ## I. Ordre sur les partitions
@@ -156,6 +158,11 @@ De $X^n=I$, $X$ est diagonalisable et ses valeurs propres sont des racines $n$-i
 
 Pour un automorphisme $\psi$, $X=\psi(A)$ et $Y=\psi(B)$ vérifient les relations de IV.5, car $\psi$ est complexe linéaire et unitaire. Après une conjugaison, l’automorphisme fixe $A,B$. Chaque $E_{ii}$ est un polynôme en $A$ par interpolation sur ses $n$ valeurs propres distinctes. Et $B^{i-j}E_{jj}=E_{ij}$ avec les indices cycliques. L’automorphisme fixe donc toute la base et est l’identité. En annulant la conjugaison ajoutée, on voit que $\psi$ est intérieur.
 
+L’interpolation citée donne concrètement les $n$ projecteurs et leur transport :
+$$P_j=\prod_{k\ne j}\frac{A-\omega^k I}{\omega^j-\omega^k}=E_{jj},
+\qquad B^{i-j}P_j=E_{ij}.$$
+En effet $P_j e_k=\delta_{jk}e_k$ et $B^{i-j} e_j=e_i$. Comme une application d’algèbres qui fixe $A,B$ fixe ces produits, elle fixe séparément les $n^2$ coefficients matriciels.
+
 ## V. Produits d’algèbres de matrices
 
 ### Question V.1.a
@@ -245,6 +252,8 @@ $w_p(H)$ est abélien car $w_p$ annule les scalaires et donc les commutateurs, e
 Après conjugaison par une matrice de permutation, supposer que $w_p(H)$ est engendré par le cycle de $B$. Prenons $U\in H$ relevant ce cycle. On a $Ue_j=c_j e_{j+1}$ avec $c_j\ne0$. Choisir $\gamma$ tel que $\gamma^p=\prod_j c_j$. Il existe un changement de base diagonal ramenant $U$ à $\gamma B$ : les facteurs d’échelle successifs sont imposés par $c_j$ et la condition de fermeture est exactement l’équation sur $\gamma$. Ces deux conjugaisons sont dans $G_p$.
 
 Dans le groupe ainsi normalisé, le noyau $K$ de $w_p|_H$ est diagonal. Pour $L=\operatorname{diag}(a_j)\in K$, la commutation de $L$ et $B$ à un scalaire près impose $a_{j+1}/a_j=\eta$ indépendant de $j$, avec $\eta^p=1$. Donc $L$ est un multiple scalaire d’une puissance de $A$. Le groupe est engendré par $U$ et $K$ puisque leur image couvre le quotient. Si tout $K$ était scalaire, les droites propres de $B$ constitueraient une décomposition stable, contraire à l’anisotropie. Il existe donc dans $K$ un multiple de $A^h$ avec $h\not\equiv0\pmod p$. Comme $p$ est premier, sa classe projective engendre celle de $A$. Les classes projectives de $H$ engendrent donc exactement celles de $A,B$. Par IV.1 cela donne l’égalité des groupes intérieurs, et en inversant la conjugaison monomiale initiale on obtient le $C$ de l’énoncé.
+
+Pour écrire la conjugaison diagonale, posons $d_1=1$ et $d_{j+1}=c_jd_j/\gamma$. Le produit des rapports donne $d_{p+1}=d_1$. Dans la base $d_1e_1,\ldots,d_pe_p$, on a $U(d_je_j)=\gamma d_{j+1}e_{j+1}$, y compris au dernier indice. Le résidu scalaire $\gamma$ disparaît dans $\operatorname{Int}(U)$.
 
 ### Question VI.5
 

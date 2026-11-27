@@ -1,0 +1,42 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_etudes-classiques-les-philosophes-rois_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Études classiques — les philosophes rois",
+    "annee": 2018
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/LettresClassiquesEcrit-SIL2018.pdf",
+    "sujet_sha256": "b26488ab0cb6f135316e92d9d7ee387ec6e34d8daf69fc92799cfe996522048d",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport-sil18-etudes-classiques.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Exposé",
+      "legende": "Ce que la philosophie exige du pouvoir"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "al_langues_suite",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Études classiques — les philosophes rois. Le sujet d’écrit invite à commenter la condition posée par Socrate dans la *République*, V, 473d. Le rapport de 2018 précise la forme argumentative attendue. Sa discussion détaillée des documents sur la technique concerne l’oral de la même session."
+    }
+  ]
+}

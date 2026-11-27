@@ -1,0 +1,84 @@
+{
+  "slug": "bel_bl_sociologie-oral-commun-dirigeants-et-professionnels-de-haut-niveau_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Sociologie (oral commun) — Dirigeants et professionnels de haut niveau",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "La catégorie socioprofessionnelle des « Dirigeants et professionnels de haut niveau »",
+  "questions": 0,
+  "documents": 7,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oraux_sociologie_option_bl.pdf#page=2",
+    "sujet_sha256": "a6cfd0e1d317596c64fdd7f85e2770ef806175c8b278483fe266bc97bed6e3d9",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_sociologie_tronc_commun.pdf",
+    "rapport_sha256": "9bc988f94c13ebc880ab5860fd1c30f145a4bf52df2207b66bb6dbb78e4bd008",
+    "pages_sujet": "PDF p. 2 à 9, dossier p. 1 à 8. Garde du tronc commun dans le recueil également diffusé au lien de l’option."
+  },
+  "figures": [
+    {
+      "fichier": "figures/origines-et-destinees.svg",
+      "question": "Document 6",
+      "legende": "Origines et destinées des dirigeants et professionnels de haut niveau"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "sociologie_bel_bl_2025_dirigeants",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Rédaction de l’exposé et du parcours guidé sur les sept documents. Construction du graphique des deux lectures de la table de mobilité."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "sociologie_bel_bl_2025_dirigeants",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": false,
+      "perimetre": "Lecture des tableaux et de la garde dans le fascicule, vérification de la pagination et du rapport. Contrôle des effectifs, des médianes, du champ à temps plein et des pourcentages en ligne et en colonne."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "La catégorie socioprofessionnelle des « Dirigeants et professionnels de haut niveau »"
+    ],
+    "controle": [
+      "Document 1. Libellés et compléments, effectifs de validation non pondérés.",
+      "Document 2. Médianes par libellé et secteur, exception au seuil pour des indépendants.",
+      "Document 3. Effectif national, composition des professions, diplômes et statuts en 2023.",
+      "Document 4. Comparaison avec les autres emplois supérieurs, par âge, sexe et diplôme en 2021.",
+      "Document 5. Répartition des revenus mensuels nets des personnes à temps plein.",
+      "Document 6. Calcul des destinées et des origines sur la table visible, avec changement de dénominateur.",
+      "Document 7. Apports et limites de l’approche positionnelle des élites."
+    ]
+  }
+}

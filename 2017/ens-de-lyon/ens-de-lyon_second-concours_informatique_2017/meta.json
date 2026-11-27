@@ -39,5 +39,69 @@
       "modifications": true,
       "perimetre": "Rédaction des 24 questions numérotées de 2.1 à 4.3 sur les forêts disjointes et la complexité amortie. Lecture du sujet intégral et du rapport officiel ; le PDF original se termine en partie 3 par la question 3.12. Contrôles des programmes des deux éditions, des partitions de référence, des rangs et du potentiel sur les chemins comprimés. Deux figures originales."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7",
+      "2.8",
+      "2.9",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "3.7",
+      "3.8",
+      "3.9",
+      "3.10",
+      "3.11",
+      "3.12",
+      "4.1",
+      "4.2",
+      "4.3"
+    ],
+    "precision": "Les 24 questions numérotées du sujet institutionnel ont été rapprochées dans leur ordre des solutions signées. Le texte de chacune des solutions du brut figure aussi dans le guidé.",
+    "origine_attestation": {
+      "commit_du_journal": "1d9cde426734ff424605b4313455c6825f3039d2",
+      "phase": "redaction",
+      "date": "2026-11-24",
+      "perimetre": "Rédaction des 24 questions numérotées de 2.1 à 4.3 sur les forêts disjointes et la complexité amortie. Lecture du sujet intégral et du rapport officiel ; le PDF original se termine en partie 3 par la question 3.12. Contrôles des programmes des deux éditions, des partitions de référence, des rangs et du potentiel sur les chemins comprimés. Deux figures originales.",
+      "sha256_sujet_controle": "bd7abf88e384ee02ca6bda371a8a832a73e1d06e7b2cfe86380a309f9bf17ef0",
+      "sha256_rapport_controle": "82dfee2f357a695bda3a6cb2b9259bc967504842bc603308793470c6fa4f4c4e"
+    },
+    "subdivisions_du_sujet": {
+      "3.2": [
+        "i",
+        "ii",
+        "iii"
+      ],
+      "3.3": [
+        "i",
+        "ii",
+        "iii"
+      ],
+      "3.6": [
+        "i",
+        "ii",
+        "iii",
+        "iv",
+        "v",
+        "vi"
+      ],
+      "3.11": [
+        "i",
+        "ii",
+        "iii",
+        "iv"
+      ]
+    }
+  }
 }

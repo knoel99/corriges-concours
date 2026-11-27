@@ -1,0 +1,43 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire-le-bernin-a-paris-oral_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire — le Bernin à Paris (oral)",
+    "annee": 2019
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/histoire-oral-sil2019-1.pdf",
+    "sha256_sujet": "7853633ad98384dbad104d0ab720630f7ad5594d667be1c0a8db6123e9b22768",
+    "rapport_jury": null,
+    "pieces_complementaires": [
+      {
+        "role": "attentes générales du jury, index 2019, page 3",
+        "url": "https://www.ens.psl.eu/IMG/file/internationale/2008/Lettres/Lettres.pdf",
+        "sha256": "3a360c4a7769d5dbf001d43040fcd150dcf10e4ee661a0264586d3fb340a24f4"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture-du-document.svg",
+      "question": "Un interprète revendique sa place dans le récit",
+      "legende": "Trois scènes font varier les conditions d’expression du jugement artistique."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture et commentaire des trois pages. Source éditée, réception du Bernin, visites du 13 juin et circulation des jugements. Attentes générales de la sélection consultées. Deux éditions et schéma.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

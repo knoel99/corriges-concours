@@ -12,6 +12,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Sujet** — Jean Epstein et la première vision d’un univers qui peut se mouvoir à rebours
 
 ## Introduction
@@ -41,6 +43,10 @@ Ce pouvoir reçoit une autre portée dans *Kino-Glaz* ou *Ciné-Œil* (Dziga Ver
 Un récit de fiction peut à son tour faire jouer la différence entre renversement du mouvement et remontée de l’enquête. Dans l’ouverture de *Memento* (Christopher Nolan, 2000), une photographie instantanée déjà formée pâlit au lieu de se révéler. Le geste familier qui consiste à agiter le cliché perd sa raison d’être devant une image qui s’efface. Ce prologue inverse matériellement le mouvement. Ensuite, lorsque la narration nous présente certaines séquences dans un ordre chronologique décroissant, les personnages continuent généralement de s’y mouvoir dans le sens ordinaire. L’un des effets nous fait voir une transformation impossible ; l’autre redistribue ce que nous savons des actes au moment où nous les voyons.
 
 L’inversion a donc des usages qui excèdent le plaisir de l’attraction. Chez Lumière, le même mur se prête à deux événements contradictoires ; chez Vertov, la remontée visible d’une chaîne de transformations fait rechercher les conditions de production de l’image première. Des formes distinctes peuvent être bâties avec une même propriété de l’appareil. Faut-il alors réserver le mot « univers » aux seuls mondes fabriqués par un cinéaste ?
+
+On peut éprouver la différence sur trois plans A, B et C. Si l’on remonte C avant B et B avant A, le geste filmé dans chacun d’eux conserve sa direction. Si l’on inverse la bande, la dernière image de C arrive avant la première image de C : une poussière qui se dispersait rejoint alors visiblement le mur. La nouveauté qu’Epstein attribue au cinématographe se joue jusque dans cet intervalle entre deux images d’un même geste.
+
+![Figure 1 — Trois ordres distincts pour des suites d’images.](figures/inversion-montage.svg)
 
 ## III. Le temps sensible du film met à l’épreuve la place que le spectateur se donne dans le monde
 

@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Deux exercices en cinq heures
 
 La page 2 du fascicule demande de traduire en français un passage de Tite-Live sur le roi Numa, puis en latin un paragraphe de Racine sur le choix dramatique d’Euripide. Pour la version, conserver le jeu entre la Rome des origines et l’époque du narrateur. Pour le thème, distinguer ce que Racine affirme de ce qu’Euripide fait arriver à ses personnages.
@@ -25,6 +27,8 @@ La page 2 du fascicule demande de traduire en français un passage de Tite-Live 
 ## II. Construire le thème
 
 ![Figure 1 — Le passage au discours indirect dans le thème](figures/racine-infinitives.svg)
+
+Refaire la phrase en distinguant le moment où Racine juge le poète, l’entrée supposée à Troie et la scène de la rencontre. Indiquer à chaque étape le sujet de l’infinitif permet aussi de contrôler les accusatifs.
 
 *Quanto*, à l’ablatif de différence, porte sur le comparatif *audacior*. L’exclamation est indépendante, d’où l’indicatif *fuit*. Le titre grec francisé « Hélène » redevient le nominatif latin *Helena*. Le substantif *opinioni* est au datif après *repugnat*. La relative précise que cette opinion est partagée dans toute la Grèce.
 

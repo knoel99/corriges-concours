@@ -1,0 +1,77 @@
+{
+  "slug": "agro-veto_bcpst_composition-de-francais_2022",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "Composition de français",
+    "annee": 2022,
+    "modalite": "écrit"
+  },
+  "intitule": "Éduquer et préserver une part d’innocence",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://egpc.fr/pdf/9463/agro-veto-2022-composition-de-francais-enonce-9463.pdf",
+    "sha256_sujet": "a804751870fe4e539fe883781ffa879527d65b48c1b8d72bb3b8beab19998c92",
+    "rapport_jury": "https://www.concours-agro-veto.net/IMG/pdf/rapport_a-bcpst_composition_de_francais_2022.pdf",
+    "sujet_sha256": "a804751870fe4e539fe883781ffa879527d65b48c1b8d72bb3b8beab19998c92",
+    "remarque_rapport": "Rapport officiel archivé, rubriques « Analyse du sujet » et développement sur les moyens de l’éducation ; le texte archivé a été comparé à la publication indexée du Service des concours.",
+    "rapport_texte_archive_sha256": "3e543d183b9f3b483f8cec41f17c530476ad3f8c748afc31fbc4ffe1f1dbdd1e"
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Dissertation",
+      "legende": "Que devient la première expérience de l’enfant ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Mise au point de la dissertation sur les trois œuvres du programme à partir du brouillon, lecture du rapport de 2022, développement sur l’imitation, édition guidée et schéma comparatif."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Confrontation du feuillet unique, du rapport et des deux éditions. Distinguer le succès du renard et la leçon morale au livre II de Rousseau, puis confronter le lecteur enfant au rôle de l’enfant chez Andersen."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 1,
+        "page_pdf_fin": 1,
+        "consigne": "En quoi cette affirmation vous permet-elle d’approfondir votre réflexion sur l’enfance et votre lecture des œuvres au programme, Émile ou De l’éducation (livres I et II) de Jean-Jacques Rousseau, les Contes d’Hans Christian Andersen et Aké, les années d’enfance de Wole Soyinka ?",
+        "options": [],
+        "documents_annexes": [],
+        "duree": "3 heures"
+      }
+    ]
+  },
+  "date_revision": "2026-11-26"
+}

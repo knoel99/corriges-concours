@@ -8,11 +8,17 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Question directrice** — Comment l’activité du vivant introduit-elle des préférences dans une nature indifférente, et jusqu’où ces préférences peuvent-elles justifier nos actes ?
 
 ## Introduction
 
 À Ceylan, un pêcheur de perles plonge en retenant son souffle pendant qu’Aronnax, équipé d’un scaphandre, observe les fonds marins. Lorsque surgit un requin, le même milieu paraît soudain bien différent à l’homme qui risque sa vie, à l’animal qui poursuit sa proie et aux témoins qui peuvent lui porter secours. À laquelle de ces perspectives faudrait-il se conformer pour vivre selon la nature ? Dans le premier chapitre de *Par-delà le bien et le mal* (§ 9), Nietzsche interroge la prétention des stoïciens à prendre la nature pour règle. Elle produit et détruit sans avoir à rendre raison de ses actes ; elle ne réserve aucune priorité à l’être qu’il faudrait sauver. Vivre, à l’inverse, ce serait déjà préférer, distinguer ce qui importe et se donner une direction. Mais où le vivant pourrait-il trouver les moyens de vouloir « être autre chose » que cette nature, s’il en fait partie jusque dans son aptitude à choisir ? *Vingt mille lieues sous les mers* de Jules Verne, *Le Mur invisible* de Marlen Haushofer et les textes de *La Connaissance de la vie* de Georges Canguilhem permettent de mettre la question à l’épreuve. Nous rencontrons d’abord une nature qui ne garantit rien à ce qui vit. Nous verrons ensuite pourquoi la différence avec son indifférence se forme au sein même de la vie. Il restera à déterminer comment répondre à d’autres vivants dont les préférences contredisent les nôtres.
+
+Une même étendue d’eau vaut pour le pêcheur comme lieu de travail et de danger. L’intervention de Nemo y introduit une relation supplémentaire, la possibilité de secourir un inconnu. Cette variation montre comment des préférences se forment dans un milieu qui, pris comme totalité, ne désigne de lui-même aucun bénéficiaire.
+
+![Qui fait l’expérience du même milieu ?](figures/trois-perspectives.svg)
 
 ## I. L’expérience d’une nature sans égards commence là où nos attentes se brisent
 

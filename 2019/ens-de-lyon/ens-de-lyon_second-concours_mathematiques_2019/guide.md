@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 L’exercice compare deux compositions de fonctions impaires. Le problème établit la formule du binôme pour deux éléments qui commutent à un facteur scalaire près. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/uploads/2019/06/19_2c_sujet_math.pdf) · [Rapport du jury](https://banques-ecoles.fr/cms/wp-content/uploads/2019/11/19_2CC_rap_eMath.pdf)
 
 ## Exercice. Commutation de deux fonctions au voisinage de zéro
@@ -50,7 +52,7 @@ Posons plus précisément $f=x+ax^3+cx^5+O(x^7)$ et $g=x+bx^3+dx^5+O(x^7)$. On a
 ### Question E.5
 
 > [!INDICATION]
-> Soustraire la formule donnée à celle où f et g sont échangées.
+> Écrire la formule donnée pour les deux compositions, puis retrancher la dérivée de $g\circ f$ de celle de $f\circ g$.
 
 #### Solution
 
@@ -76,6 +78,8 @@ Pour $|x|<1$, $(1+x^2)^{-1}=\sum_{j\ge0}(-1)^j x^{2j}$. En intégrant terme à t
 
 Pour $f=\sin$, $F=-1$ et $C=1$. Pour $g=\arctan$, $G=-2$ et $D=24$. La formule de 5 donne $H^{(7)}(0)=14(-2+24)+70(2)(-1)=168$. Le premier écart apparaît donc au degré sept :
 $$\sin(\arctan x)-\arctan(\sin x)\sim x^7/30.$$
+
+On peut vérifier le signe sans la formule de dérivation admise. Puisque $\sin(\arctan x)=x/\sqrt{1+x^2}$, ses coefficients en degrés $1,3,5,7$ sont $1,-1/2,3/8,-5/16$. En remplaçant $u$ par $\sin x$ dans $u-u^3/3+u^5/5-u^7/7$, on obtient les trois mêmes premiers coefficients, puis $-83/240$. Leur différence au degré sept vaut $-5/16+83/240=1/30$.
 
 ## Problème. Préliminaires et cas matriciel
 

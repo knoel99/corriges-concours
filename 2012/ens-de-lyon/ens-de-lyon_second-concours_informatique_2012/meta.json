@@ -44,5 +44,48 @@
       "modifications": true,
       "perimetre": "Rédaction des 29 questions du sujet et confrontation au rapport officiel. Lecture des flèches de la figure 2 et de la formulation imprimée en III.7, corrigeant la borne, le produit et les restes. Exécution de 1601 conversions et successeurs, de 40 401 additions et différences sur des entrées avec zéros non significatifs, et contrôle des automates. Trois figures originales."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "II.8",
+      "II.9",
+      "II.10",
+      "II.11",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7",
+      "III.8",
+      "IV.1",
+      "IV.2",
+      "IV.3",
+      "IV.4",
+      "IV.5",
+      "IV.6"
+    ],
+    "precision": "Les 29 questions de la composition et les solutions signées des deux éditions ont été rapprochées partie par partie.",
+    "origine_attestation": {
+      "commit_du_journal": "2c78d559c17cf82f900f738781c3b4632ee87255",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction des 29 questions du sujet et confrontation au rapport officiel. Lecture des flèches de la figure 2 et de la formulation imprimée en III.7, corrigeant la borne, le produit et les restes. Exécution de 1601 conversions et successeurs, de 40 401 additions et différences sur des entrées avec zéros non significatifs, et contrôle des automates. Trois figures originales.",
+      "sha256_sujet_controle": "f328916bb33b13e77193c2a9ca90f5ed1c1abf8ac3f09cbccb6a0373986ff95c",
+      "sha256_rapport_controle": "3316aead710dd4f148ef596264e98a6fe0f9e9a4b3d32582afbdab755f4205fc"
+    }
+  }
 }

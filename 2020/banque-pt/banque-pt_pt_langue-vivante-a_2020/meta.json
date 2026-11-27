@@ -1,0 +1,364 @@
+{
+  "slug": "banque-pt_pt_langue-vivante-a_2020",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Langue vivante A",
+    "annee": 2020
+  },
+  "questions": 5,
+  "redaction": "IA (gpt-6.2-astra)",
+  "figures": [
+    {
+      "fichier": "figures/lecture-de.svg",
+      "question": "Allemand",
+      "legende": "Emballages plastiques jetés en 2015"
+    },
+    {
+      "fichier": "figures/lecture-en.svg",
+      "question": "Anglais",
+      "legende": "Comment un tournoi rassemble et rémunère"
+    },
+    {
+      "fichier": "figures/lecture-ar.svg",
+      "question": "Arabe",
+      "legende": "La modernité dans les cinq documents"
+    },
+    {
+      "fichier": "figures/lecture-es.svg",
+      "question": "Espagnol",
+      "legende": "Lire sur écran ou préférer un support"
+    },
+    {
+      "fichier": "figures/lecture-it.svg",
+      "question": "Italien",
+      "legende": "Trois sens du mot réseau"
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "agent": "x_maths_b_recentes",
+      "perimetre": "Rédaction des cinq synthèses par langue et du commentaire des vingt-cinq documents du fascicule 2020, contrôle des figures et des décomptes dans les deux éditions."
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2020/lv_a_2020_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2020/rapport_lv_a_ecrit_2020.pdf",
+    "sujet_sha256": "1356a5b1cbd8e7e95830b0ea50e83a6d76fb9cbb8846becb0c2f71f83ba75adb",
+    "rapport_sha256": "b1884f6dfad8fb88b4668b364f7fc7fc021e9882d97c31cd32c391ac481c9d73"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Allemand",
+      "Anglais",
+      "Arabe",
+      "Espagnol",
+      "Italien"
+    ],
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "1356a5b1cbd8e7e95830b0ea50e83a6d76fb9cbb8846becb0c2f71f83ba75adb",
+      "perimetre": "Rédaction des cinq synthèses par langue et du commentaire des vingt-cinq documents du fascicule 2020, contrôle des figures et des décomptes dans les deux éditions.",
+      "controles": [
+        {
+          "nom": "Allemand",
+          "titre": "Was im Jahr 2050 vom Kunststoff übrig bleibt",
+          "consigne": "2050: Eine Erde aus Plastikmüll?",
+          "pages_sujet": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "pages_rapport": [
+            1,
+            2
+          ],
+          "mots_titre_inclus": 458,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                3
+              ],
+              "controle": "L’étude pilote de Vienne trouve des microplastiques chez ses huit participants ; leur présence ne démontre ni un effet clinique ni une voie d’exposition précise."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                4
+              ],
+              "controle": "Der Standard décrit les économies de poids possibles et le rôle du comportement, de la politique et de la conception des produits."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                5,
+                6
+              ],
+              "controle": "Lead Innovation illustre la recherche d’emballages de substitution avec des champignons, de la canne à sucre et des composants du lait."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                6
+              ],
+              "controle": "Le graphique compare les emballages en plastique jetés par habitant et le taux de recyclage en Allemagne et dans l’UE à 28 en 2015."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                6
+              ],
+              "controle": "La campagne du WWF montre un dauphin à la bouche pleine de déchets et détourne une expression de lassitude."
+            }
+          ]
+        },
+        {
+          "nom": "Anglais",
+          "titre": "Who gets to play when a game becomes a sport?",
+          "consigne": "What is at stake with the development of esports?",
+          "pages_sujet": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "pages_rapport": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "mots_titre_inclus": 477,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                8
+              ],
+              "controle": "La défense des jeux en réseau souligne les liens sociaux et les bourses universitaires tout en reconnaissant les risques d’un usage excessif."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                9
+              ],
+              "controle": "L’article sur les femmes distingue leur présence dans le public américain des obstacles à leur pleine participation."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                10
+              ],
+              "controle": "Le texte consacré à la télévision analyse les choix de format et les partenariats susceptibles de toucher un nouveau public."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                11
+              ],
+              "controle": "L’écosystème met en relation éditeurs, joueurs, équipes, organisateurs, sponsors, plateformes et spectateurs, avec des flux de droits et de revenus distincts."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                12
+              ],
+              "controle": "Le cliché du tournoi parisien de League of Legends montre à la fois le joueur devant son écran et le public dans une grande salle."
+            }
+          ]
+        },
+        {
+          "nom": "Arabe",
+          "titre": "بين امتلاك أدوات العصر وصنع الحداثة",
+          "consigne": "كيف تبدو ملابسات الحداثة وآفاقها في العالم العربي في ضوء الوثائق الخمس؟",
+          "pages_sujet": [
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "pages_rapport": [
+            14,
+            15
+          ],
+          "mots_titre_inclus": 458,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                14
+              ],
+              "controle": "Le premier article distingue modernisation matérielle et transformation profonde des manières de penser."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                15
+              ],
+              "controle": "Le deuxième examine l’évolution littéraire au contact d’autres cultures et le précédent des réactions au naturalisme espagnol."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                16
+              ],
+              "controle": "Le troisième associe modernité et démocratie à une culture vécue et une capacité de création, au-delà des slogans."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                17
+              ],
+              "controle": "Deux profils se font face parmi des symboles intellectuels et culturels, avec points d’interrogation et d’exclamation."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                17
+              ],
+              "controle": "Un cavalier à dos de chameau passe devant des grues et des pylônes, donnant à voir la coexistence d’infrastructures et de pratiques d’âges différents."
+            }
+          ]
+        },
+        {
+          "nom": "Espagnol",
+          "titre": "El lector entre la pantalla y la librería",
+          "consigne": "Al cambiar tan rápido la sociedad, ¿en qué medida la lectura, desde la producción de los textos hasta su recepción, debe adaptarse y su práctica evolucionar?",
+          "pages_sujet": [
+            18,
+            19,
+            20,
+            21,
+            22
+          ],
+          "pages_rapport": [
+            16,
+            17
+          ],
+          "mots_titre_inclus": 472,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                19
+              ],
+              "controle": "Les librairies opposent à la puissance d’Amazon leur sélection, leurs rencontres et leurs liens avec les lecteurs."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                20
+              ],
+              "controle": "La comparaison entre manuels et tablettes met l’accent sur les apprentissages, la complémentarité et l’accompagnement par les adultes."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                21
+              ],
+              "controle": "L’autrice qui rencontre ses abonnés en vendant en personne ses livres imprimés illustre les circuits hybrides."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                22
+              ],
+              "controle": "Le baromètre espagnol porte sur les 14 ans et plus : la lecture numérique atteint 76,3 % en 2017."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                22
+              ],
+              "controle": "L’enquête mexicaine porte sur les internautes et leurs préférences par activité ; pour les livres, le support traditionnel précède internet."
+            }
+          ]
+        },
+        {
+          "nom": "Italien",
+          "titre": "Essere connessi e avere una rete su cui contare",
+          "consigne": "In che misura in Italia le reti sociali influiscono e contano per i giovani?",
+          "pages_sujet": [
+            23,
+            24,
+            25,
+            26,
+            27
+          ],
+          "pages_rapport": [
+            18,
+            19
+          ],
+          "mots_titre_inclus": 456,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                24
+              ],
+              "controle": "L’enquête ludique auprès de soixante adolescents distingue leur connaissance des faux profils et celle du modèle économique des plateformes."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                25
+              ],
+              "controle": "La recherche archéologique ligure déduit d’objets et d’échanges l’importance d’anciens réseaux de coopération."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                26
+              ],
+              "controle": "L’article sur les hikikomori distingue retrait social et usage du réseau, qui peut encore servir de contact et de soutien."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                27
+              ],
+              "controle": "La campagne du Garante place un point d’interrogation parmi des profils connectés et attire l’attention sur les effets indésirables."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                27
+              ],
+              "controle": "Le graphique compare l’activité des plateformes parmi les internautes de 16 à 64 ans, au-delà des seuls adolescents."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

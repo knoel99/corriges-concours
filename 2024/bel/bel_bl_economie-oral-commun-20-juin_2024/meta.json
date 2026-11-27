@@ -1,0 +1,77 @@
+{
+  "slug": "bel_bl_economie-oral-commun-20-juin_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Économie (oral commun) — 20 juin",
+    "annee": 2024,
+    "modalite": "oral"
+  },
+  "intitule": "Logement, bâtiment et changement climatique",
+  "questions": 0,
+  "sujets": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/bl_sujets_oraux_economie_tc_20062024.pdf",
+    "sujet_sha256": "798c83370940ffe56ffbb08475d5cdbf1a806650580b9b643bfc8d323bbf6c91",
+    "sujet_pages": 6,
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_oral_economie_epreuve_commune.pdf",
+    "rapport_sha256": "fe5cc6dcbe4008c26a4690c9b5f2e24e5772986d17abc64298dc8717224afffe",
+    "calendrier": "https://www.ens.psl.eu/sujets-des-epreuves-orales-du-concours-bl-session-2024"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Lecture du fascicule de 6 pages avec contrôle des 5 documents et de leurs figures. Vérification des champs, unités et conclusions du commentaire.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Conception et vérification du schéma du document 2. Exemple chiffré construit pour expliquer le mécanisme du document 2, p. 3 du fascicule. La consommation initiale est fixée à 100 unités. Légende descriptive et alternative textuelle intégrées aux deux éditions.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
+    }
+  ],
+  "figures": [
+    {
+      "fichier": "figures/rebond-apres-isolation.svg",
+      "question": "Document 2",
+      "legende": "Figure 1 — Calcul de l’effet rebond après isolation. Dans cet exemple, l’énergie consommée vaut 100 avant rénovation, 60 après rénovation à confort constant et 75 après adaptation des usages. Sur les 40 unités d’économie technique, 15 sont reprises et 25 économisées. Le taux de rebond est de 37,5 %.",
+      "description": "Dans cet exemple, l’énergie consommée vaut 100 avant rénovation, 60 après rénovation à confort constant et 75 après adaptation des usages. Sur les 40 unités d’économie technique, 15 sont reprises et 25 économisées. Le taux de rebond est de 37,5 %.",
+      "source": "Exemple chiffré construit pour expliquer le mécanisme du document 2, p. 3 du fascicule. La consommation initiale est fixée à 100 unités."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "sujets_entierement_traites": [
+      "Logement, bâtiment et changement climatique"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "redaction",
+      "sha256_sujet_controle": "798c83370940ffe56ffbb08475d5cdbf1a806650580b9b643bfc8d323bbf6c91",
+      "perimetre": "Lecture du fascicule de 6 pages avec contrôle des 5 documents et de leurs figures. Vérification des champs, unités et conclusions du commentaire."
+    },
+    "documents_entierement_traites": [
+      "Document 1 — Un investissement supplémentaire se mesure par rapport à un scénario",
+      "Document 2 — L’usage peut absorber une partie de l’économie d’énergie",
+      "Document 3 — Cibler les situations énergétiques et locatives",
+      "Document 4 — Mobiliser le parc au-delà de la construction neuve",
+      "Document 5 — Le financement rencontre une contrainte de compétences"
+    ]
+  }
+}

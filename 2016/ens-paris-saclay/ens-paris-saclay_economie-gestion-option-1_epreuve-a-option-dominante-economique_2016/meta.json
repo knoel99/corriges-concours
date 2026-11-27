@@ -1,0 +1,62 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_epreuve-a-option-dominante-economique_2016",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Épreuve à option — dominante économique",
+    "annee": 2016,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "Les inégalités de revenus ont-elles constitué un frein à la croissance économique, en Europe et aux États-Unis au vingtième siècle ?",
+  "gabarit": "dissertation",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2016_Sujet_1A_D2-1_Options.pdf#page=2",
+    "sujet_sha256": "890c42dfc1c2ebf40a65c0066549b8a451b9b03b12d66b95c27de5da36855ba8",
+    "index": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=289&field_year_target_id%5B%5D=281",
+    "pages_sujet": "2 du fascicule C1693",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2016_Sujet_1A_D2-1_Options.pdf",
+        "pages": 16,
+        "sha256": "890c42dfc1c2ebf40a65c0066549b8a451b9b03b12d66b95c27de5da36855ba8"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/repartition-et-croissance.svg",
+      "question": "Composition",
+      "legende": "À production initiale identique, trois mécanismes relient une modification de la répartition à la production future. Leur importance dépend du crédit, des capacités disponibles et des institutions scolaires."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Dissertation comparative sur l’Europe et les États-Unis au XXe siècle, mécanismes de demande, formation et investissement, guide de causalité et figure."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Composition"
+    ],
+    "limites": "Une proposition de dissertation, replacée dans la période demandée."
+  }
+}

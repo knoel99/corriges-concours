@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Triathlon, étude de fonctions et probabilités.** Le premier exercice emploie les séries fictives du sujet. Les deux suivants étudient une famille de courbes et plusieurs modèles indépendants de participation et d’entraînement.
 
 ## 1. Statistiques du triathlon
@@ -85,6 +87,8 @@ La tangente est $y=f_0(0)+f_0'(0)x=x$.
 ### Question 2.II.4.d
 
 La fonction $f_0'$ est continue sur les deux demi-droites et ses limites en 0 valent $1=f_0'(0)$. Elle est donc continue sur $\mathbb R$. À droite sa dérivée est $(x-2)e^{-x}$ et à gauche $(x+2)e^x$. Les dérivées latérales en 0 valent respectivement $-2$ et $2$ (par prolongement lisse des expressions). Ainsi $f_0'$ est dérivable hors de 0 seulement.
+
+On peut lire les deux pentes directement dans le taux d’accroissement de $f_0'$. À droite, $((1-h)e^{-h}-1)/h\to-1-1=-2$. À gauche, $((1+h)e^h-1)/h\to1+1=2$. Le rapport entre la continuité de $f_0'$ et la rupture de pente en zéro apparaît ainsi dans deux limites distinctes.
 
 ### Question 2.II.5.a
 
@@ -224,6 +228,8 @@ Pour $k\in\{0,\ldots,500\}$, $P(B=32500-30k)=\binom{500}{k}(3/4)^k(1/4)^{500-k}$
 
 Il faut $X\le360$ **et** $500-X\le140$, soit $X=360$. L’événement de refus est donc $A=\{X\ne360\}$.
 
+Par exemple, avec 359 demandes olympiques, il y a 141 demandes pour les 140 places de l’autre format. Avec 361 demandes olympiques, la capacité olympique est dépassée d’une place. Les 500 demandes et les 500 places ne s’équilibrent format par format que pour la répartition $(360,140)$.
+
 ### Question 3.II.3.b
 
 $P(A)=1-\binom{500}{360}(3/4)^{360}(1/4)^{140}\simeq0{,}987677$, soit environ $98{,}77\%$.
@@ -283,3 +289,5 @@ $P(25<T<45)=\Phi(3)-\Phi(-1)=\Phi(3)+\Phi(1)-1\simeq0{,}8400$ à quatre décimal
 ### Question 3.IV.5
 
 Les intervalles $[30,45]$ et $[15,30]$ sont images l’un de l’autre par $t\mapsto60-t$. La densité normale est symétrique autour de 30, donc les deux probabilités sont égales.
+
+En lisant la table, la probabilité commune vaut $\Phi(3)-\Phi(0)\simeq0{,}9987-0{,}5000=0{,}4987$. La probabilité complémentaire dans chacune des deux demi-droites est celle d’une queue au-delà de trois écarts-types.

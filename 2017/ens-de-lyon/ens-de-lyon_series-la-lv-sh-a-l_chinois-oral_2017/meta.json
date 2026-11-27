@@ -1,0 +1,90 @@
+{
+  "slug": "ens-de-lyon_series-la-lv-sh-a-l_chinois-oral_2017",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries LA/LV/SH (A/L)",
+    "matiere": "Chinois (oral)",
+    "annee": 2017,
+    "modalite": "oral"
+  },
+  "intitule": "Chinois — épreuves orales A/L, session 2017",
+  "questions": 5,
+  "redaction": "Cinq explications originales en chinois, traductions françaises des expressions citées, réponses aux relances et édition critique des références, comparaison de trois originaux/reprises de presse et d’une édition traditionnelle du roman de Liu Xinwu. Rapprochement des trois feuillets officiels et analyse de leur mouvement propre.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/chinois-2017_1506588142976.pdf",
+    "sha256_sujet": "d317cdb31fd66a53b5f35244897ded6ef72cbddf8e736c0a439567def91c584b",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/CHINOIS_2017.pdf",
+    "sha256_rapport_jury": "b0cf6c37b98b78fc63613da8c743a2ed1022117510a6becab4f69d5f739651f8",
+    "archives_complementaires": [
+      {
+        "type": "cahier officiel des textes hors programme distribués",
+        "url": "https://www.ens-lyon.fr/sites/default/files/2017-11/chinois-hors-programme2017_1506588773401.pdf",
+        "sha256": "b564f7e555c441e832b98607e38e50cd03e6a74b82661525d54d5cb83e7c2479",
+        "pages": 6
+      },
+      "https://www.haodoo.net/?L=book&M=u&P=H1444%3A7",
+      "https://book.douban.com/subject/2015357/blockquotes?sort=score&start=120",
+      "https://finance.sina.cn/sa/2012-10-19/detail-ikftpnnx7396380.d.html",
+      "https://blog.wenxuecity.com/myblog/58437/201603/712206.html",
+      "https://blog.sina.com.cn/s/blog_48b0d37b0100mbty.html"
+    ],
+    "cahier_hors_programme": {
+      "type": "cahier officiel des textes hors programme distribués",
+      "url": "https://www.ens-lyon.fr/sites/default/files/2017-11/chinois-hors-programme2017_1506588773401.pdf",
+      "sha256": "b564f7e555c441e832b98607e38e50cd03e6a74b82661525d54d5cb83e7c2479",
+      "pages": 6
+    }
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Langues vivantes · Explication d’un texte d’auteur (LV1)",
+      "fichier": "figures/regards-et-paroles.svg",
+      "legende": "Trois dispositifs narratifs font réviser un premier jugement."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du fac-similé, des cinq notices et du rapport chinois 2017 : le jury indique expressément que le faible nombre de candidats ne permet pas d’établir un bilan oral significatif."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Cinq explications originales en chinois, traductions françaises des expressions citées, réponses aux relances et édition critique des références, comparaison de trois originaux/reprises de presse et d’une édition traditionnelle du roman de Liu Xinwu."
+    },
+    {
+      "phase": "revision",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Cinq explications originales en chinois, traductions françaises des expressions citées, réponses aux relances et édition critique des références, comparaison de trois originaux/reprises de presse et d’une édition traditionnelle du roman de Liu Xinwu."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "perimetre": "Cinq billets sont recensés dans les séries Langues vivantes et Sciences humaines. Les deux passages littéraires sont bornés dans la liste. Le cahier complémentaire de six pages reproduit les trois textes hors programme et leur glossaire. L’ordre des deux textes de LV1 est inversé dans ce cahier.",
+    "limites": "Les cinq supports sont identifiés. Les deux pages du texte de Mao Jian comportent un glossaire plus long que les termes effectivement présents dans la coupe. Les dates de la liste et des publications antérieures sont distinguées.",
+    "billets_recenses": 5
+  }
+}

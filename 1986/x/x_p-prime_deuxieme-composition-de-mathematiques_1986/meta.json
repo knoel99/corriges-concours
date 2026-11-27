@@ -1,0 +1,268 @@
+{
+  "slug": "x_p-prime_deuxieme-composition-de-mathematiques_1986",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "P prime",
+    "filiere_historique": "P′",
+    "matiere": "Deuxième composition de mathématiques",
+    "annee": 1986,
+    "modalite": "écrit"
+  },
+  "questions": 20,
+  "duree_heures": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-df264bd99fb65d03d220",
+    "sujet_sha256": "65380cce68b41b90c823efa8888e09200816a3fb0aaf6365b8d289bfa6939e3e",
+    "notice_ups": "m86xp2",
+    "calendrier": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000330227",
+    "provenance": "Le fac-similé m86xp2ea reproduit les trois feuillets sur deux vues, pages 69 et 70 du recueil. La comparaison de III.3 applique la borne de I.4 avec n tendant vers l’infini et un ordre de dérivation k fixé."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "document": "m86xp2ea",
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-df264bd99fb65d03d220",
+      "sha256": "65380cce68b41b90c823efa8888e09200816a3fb0aaf6365b8d289bfa6939e3e",
+      "pages": 2,
+      "rendu_page_sha256": [
+        "16a51917d06722e1f9aceb945a5b5bc6f2e3c7933f474c92c5f1abf7cf12ddb3",
+        "7fad1df264f33bcf01608060dd89effe864117546918d96f7dacd29141b413ed"
+      ]
+    },
+    "corrige_archive": {
+      "document": "m86xp2ca",
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-5c7ceb3ea13ea8a6eb36",
+      "sha256": "020d0f14a61f0fc52402b64f1dedfb4f6534d177b62876f8a404dfba4516fc80",
+      "pages": 4,
+      "rendu_page_sha256": [
+        "a526c7b94823b79f862a646207e0f6c3f2ca952ac49a0739379b05e2066206c7",
+        "804be652ed9f490c18a66a4a3834a94b42e22c8427fb421cf5fb0744e74938b9",
+        "a7af9b14753bf1440604f42f2951897ae42f3adc4113b0f80b2309412eb67fce",
+        "33cdd9c7ff8af12e4d0df28b70056820e5686430d93ffc47bfc6c44145aa59f1"
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "II.2.a",
+      "numero": 1,
+      "fichier": "figures/racines-tchebychev.svg",
+      "legende": "Les quatre racines de C₄ sont numérotées de la droite vers la gauche. La zone ombrée est le segment entre les deux racines extrêmes."
+    },
+    {
+      "question": "II.3.b",
+      "numero": 2,
+      "fichier": "figures/norme-ponderee.svg",
+      "legende": "Pour Q égal à la dérivée de C₄ divisée par quatre, la norme uniforme vaut quatre et la norme pondérée vaut un. La borne démontrée est atteinte."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3.a",
+      "I.3.b",
+      "I.3.c",
+      "I.3.d",
+      "I.4",
+      "II.1.a",
+      "II.1.b",
+      "II.2.a",
+      "II.2.b",
+      "II.3.a",
+      "II.3.b",
+      "II.4.a",
+      "II.4.b",
+      "II.4.c",
+      "III.1.a",
+      "III.1.b",
+      "III.2",
+      "III.3"
+    ],
+    "repere_par_question": [
+      {
+        "question": "I.1",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 1
+      },
+      {
+        "question": "I.2",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 1
+      },
+      {
+        "question": "I.3.a",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 1
+      },
+      {
+        "question": "I.3.b",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 1
+      },
+      {
+        "question": "I.3.c",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 1
+      },
+      {
+        "question": "I.3.d",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 1
+      },
+      {
+        "question": "I.4",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2
+      },
+      {
+        "question": "II.1.a",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2
+      },
+      {
+        "question": "II.1.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2
+      },
+      {
+        "question": "II.2.a",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2
+      },
+      {
+        "question": "II.2.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2
+      },
+      {
+        "question": "II.3.a",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2
+      },
+      {
+        "question": "II.3.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2
+      },
+      {
+        "question": "II.4.a",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 2
+      },
+      {
+        "question": "II.4.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      },
+      {
+        "question": "II.4.c",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      },
+      {
+        "question": "III.1.a",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      },
+      {
+        "question": "III.1.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      },
+      {
+        "question": "III.2",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      },
+      {
+        "question": "III.3",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Le fac-similé m86xp2ea reproduit les trois feuillets sur deux vues, pages 69 et 70 du recueil. La comparaison de III.3 applique la borne de I.4 avec n tendant vers l’infini et un ordre de dérivation k fixé."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "x_hist_1986",
+      "session": "x_hist_1986",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction originale des 20 réponses, des indications et de deux figures, à partir du fac-similé. Le fac-similé m86xp2ea reproduit les trois feuillets sur deux vues, pages 69 et 70 du recueil. La comparaison de III.3 applique la borne de I.4 avec n tendant vers l’infini et un ordre de dérivation k fixé."
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "slug": "x_m-prime_premiere-composition-de-mathematiques_1996",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "M prime",
+    "filiere_historique": "M′",
+    "matiere": "Première composition de mathématiques",
+    "annee": 1996
+  },
+  "questions": 17,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-e0bd0c591c1684a2788d",
+    "sujet_sha256": "522e863267477dbc3fe3edb97e9b1eee4ee94e246a9099962d7c4954a1ab94cd",
+    "notice_ups": "m96xm1",
+    "reproduction": "https://www.sujetsetcorriges.fr/dl/X/Maths/MP/sec-x-1996-maths1-MP.pdf",
+    "reproduction_sha256": "cbf375f2a01686692fa9a42525a9be3d30522cfd9e0f8851853d0ce2f70f1a5f",
+    "calendrier": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000191386",
+    "rapport_jury": "",
+    "observation_rapport": "Aucun rapport de jury identifié dans les deux collections consultées.",
+    "provenance": "Le fac-similé UPS donne explicitement M′, le rang de la composition et la durée de quatre heures. Sa numérotation continue fait foi."
+  },
+  "figures": [
+    {
+      "question": "7",
+      "fichier": "figures/decoupage-par-translations.svg",
+      "legende": "Les quatre triangles de l’image de la case unité se recollent par translation dans le carré de droite. Les couleurs et lettres identifient chaque morceau."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.a",
+      "1.b",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1.a",
+        "page_pdf": 1
+      },
+      {
+        "question": "1.b",
+        "page_pdf": 1
+      },
+      {
+        "question": "2",
+        "page_pdf": 1
+      },
+      {
+        "question": "3",
+        "page_pdf": 1
+      },
+      {
+        "question": "4",
+        "page_pdf": 1
+      },
+      {
+        "question": "5",
+        "page_pdf": 1
+      },
+      {
+        "question": "6",
+        "page_pdf": 1
+      },
+      {
+        "question": "7",
+        "page_pdf": 2
+      },
+      {
+        "question": "8",
+        "page_pdf": 2
+      },
+      {
+        "question": "9",
+        "page_pdf": 2
+      },
+      {
+        "question": "10",
+        "page_pdf": 2
+      },
+      {
+        "question": "11",
+        "page_pdf": 2
+      },
+      {
+        "question": "12",
+        "page_pdf": 2
+      },
+      {
+        "question": "13",
+        "page_pdf": 3
+      },
+      {
+        "question": "14",
+        "page_pdf": 3
+      },
+      {
+        "question": "15",
+        "page_pdf": 3
+      },
+      {
+        "question": "16",
+        "page_pdf": 3
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "17 consignes repérées sur trois pages. Le fac-similé UPS donne explicitement M′, le rang de la composition et la durée de quatre heures. Sa numérotation continue fait foi."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "fui_physique_un",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture des trois pages, rédaction de 17 solutions et de leurs indications, vérification des démonstrations et des diagrammes."
+    }
+  ]
+}

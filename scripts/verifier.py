@@ -81,6 +81,11 @@ def verifier(dossier: Path) -> list[str]:
         err += [f"{nom} : construction non rendue : {m}" for m in INTERDITS if re.search(m, corps)]
         if HTML.search(corps):
             err.append(f"{nom} : HTML <svg>/<img> interdit, utilisez ![…](figures/<nom>.svg)")
+        # Un crochet non échappé peut laisser une figure visible dans le source
+        # alors que la conversion de ses chemins pour le site ne la reconnaît pas.
+        sans_images = IMAGE.sub("", corps)
+        for cible in re.findall(r"!\[[^\n]*?\]\((figures/[^)\s]+\.svg)", sans_images):
+            err.append(f"{nom} : image non reconnue par le lecteur, vérifier la légende : {cible}")
         for cible in IMAGE.findall(corps):
             if not FIGURE.fullmatch(cible):
                 err.append(f"{nom} : image hors du motif figures/<nom>.svg : {cible}")

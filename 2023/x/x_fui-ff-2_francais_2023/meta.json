@@ -16,24 +16,35 @@
     {
       "fichier": "figures/deux-effets-de-intelligence.svg",
       "question": "A1",
-      "legende": "Les deux difficultés de l’intelligence chez Bergson."
+      "legende": "Les deux difficultés de l’intelligence chez Bergson.",
+      "numero": 1
     },
     {
       "fichier": "figures/irrigation-et-lac.svg",
       "question": "B",
-      "legende": "Changer d’échelle pour apprécier une maîtrise technique."
+      "legende": "Changer d’échelle pour apprécier une maîtrise technique.",
+      "numero": 2
     }
   ],
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20FUI-FF%20Session%20Printemps%20SUJET%20FRANCAIS.pdf",
     "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
-    "sujet_sha256": "4efa7d741c42948f136484fc4d8cf6dbea42b189a0d0a27c07ecb41a868093e9"
+    "sujet_sha256": "4efa7d741c42948f136484fc4d8cf6dbea42b189a0d0a27c07ecb41a868093e9",
+    "pages_sujet": 2,
+    "reperage": "PDF p. 1, garde de la deuxième session. P. 2, extrait de 1932, deux notes, A1 à A3 et B.",
+    "rapport": "La rubrique FUI-FF de la banque publie les sujets de français, sans lien vers un rapport pour cette session.",
+    "references_essai": [
+      {
+        "titre": "Banque mondiale, restauration de la partie nord de la mer d’Aral",
+        "url": "https://documents1.worldbank.org/curated/en/888771468089960580/pdf/462360BRI0Box31e0no0FS231Kazakhstan.pdf"
+      }
+    ]
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "revision": {
-    "date": "2026-11-24",
-    "modele": "Codex (GPT-6)",
-    "verification": "Contre-lecture indépendante sur le sujet officiel : thèse, questions et sous-questions, références littéraires et argument de l’essai vérifiés."
+    "date": "2026-11-26",
+    "modele": "GPT-6.2 Astra Ultra",
+    "verification": "Progression du raisonnement sur le prix de l’intelligence, deux différences avec l’animal, navigation pour éclairer l’hésitation, portée et limites de la restauration du bassin nord de l’Aral, deux schémas et aides de lecture."
   },
   "provenance": {
     "redaction": {
@@ -83,6 +94,38 @@
       "modifications": true,
       "perimetre": "Relecture de Bergson et de l’essai sur les milieux, statut de l’instinct dans le raisonnement final, crainte et espérance, distinction entre les deux difficultés de l’intelligence.",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "francais_x_2022_2023",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Progression du raisonnement sur le prix de l’intelligence, deux différences avec l’animal, navigation pour éclairer l’hésitation, portée et limites de la restauration du bassin nord de l’Aral, deux schémas et aides de lecture."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A1 — Idée générale, double contrepartie de l’intelligence et thèse sur le rétablissement de l’ordre naturel.",
+      "A2 — Expliquer « mal assurée » à la première ligne.",
+      "A3 — Comparer l’homme et les animaux, au regard de l’avenir et dans la vie sociale, selon Bergson.",
+      "B — Avis personnel et exemples variés sur les liens entre l’homme et la nature au XXIe siècle, maîtrise et mise en danger."
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "elements_verifies": [
+      "PDF p. 1, garde de la deuxième session. P. 2, extrait de 1932, deux notes, A1 à A3 et B.",
+      "Épreuve n° 2 de deux heures. Dictionnaires et traducteurs électroniques interdits. Un seul essai, sans option ni limite du nombre de mots.",
+      "Progression du raisonnement sur le prix de l’intelligence, deux différences avec l’animal, navigation pour éclairer l’hésitation, portée et limites de la restauration du bassin nord de l’Aral, deux schémas et aides de lecture."
+    ]
+  }
 }

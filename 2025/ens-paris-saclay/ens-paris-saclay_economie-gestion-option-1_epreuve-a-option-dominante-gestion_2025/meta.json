@@ -1,0 +1,85 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_epreuve-a-option-dominante-gestion_2025",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Épreuve à option — dominante gestion",
+    "annee": 2025,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "Essenciel : diagnostic financier, implantation aux États-Unis et diversification vers les spas",
+  "gabarit": "questions",
+  "questions": 16,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2025/Sujets/2025_EG1_Ep3_Ep_a_option_eco_gestion_14022025_NB.pdf#page=3",
+    "sujet_sha256": "6aab1f51212c1727c6cd6d6b889a51b2058ed8c3ce790e8f53948c6d28fdf0ba",
+    "index": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=289&field_year_target_id%5B%5D=602&page=1",
+    "pages_sujet": "3–10 du fascicule, cas Essenciel et annexes 1 à 7",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2025/Sujets/2025_EG1_Ep3_Ep_a_option_eco_gestion_14022025_NB.pdf",
+        "pages": 10,
+        "sha256": "6aab1f51212c1727c6cd6d6b889a51b2058ed8c3ce790e8f53948c6d28fdf0ba"
+      },
+      {
+        "role": "rapport-gestion",
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2025/rapports/2025_EcoG1_Rapport_option_gestion_ecrit.pdf",
+        "pages": 5,
+        "sha256": "902f3f2fc842c0c85bb747d754307e667d5de936a4a4702fae22bd69864407ab"
+      }
+    ],
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2025/rapports/2025_EcoG1_Rapport_option_gestion_ecrit.pdf",
+    "rapport_sha256": "902f3f2fc842c0c85bb747d754307e667d5de936a4a4702fae22bd69864407ab"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/bfr-projet-usa.svg",
+      "question": "1",
+      "legende": "Au lancement, le projet américain doit financer les équipements et trente jours de chiffre d’affaires. Le budget de 680 000 € de capitaux ne couvre pas ce besoin initial."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Seize questions imprimées résolues : EBE retraité, ratios, bilan fonctionnel et incohérence d’addition de l’annexe, cinq années de flux, VAN, TRI, journal d’emprunt et trois réponses de management."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18"
+    ],
+    "limites": "L’écart de conversion de 1 120 euros est isolé ; les totaux par lignes et par sous-total ne concordent pas. Hypothèses de BFR avancé et d’utilisation immédiate du déficit fiscal explicites."
+  }
+}

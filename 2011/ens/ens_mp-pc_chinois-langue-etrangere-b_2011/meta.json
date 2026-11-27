@@ -1,0 +1,53 @@
+{
+  "slug": "ens_mp-pc_chinois-langue-etrangere-b_2011",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Chinois (langue étrangère B)",
+    "annee": 2011,
+    "modalite": "écrit"
+  },
+  "intitule": "Deux sacs sur la balance et les usages de la science",
+  "questions": 2,
+  "redaction": "Version complète des deux sacs, rédaction chinoise sur les usages de la science et lecture des effets de l’air dans le modèle du sujet.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2011/2011%20Langue%20E-B.pdf#page=5",
+    "sha256_sujet": "5890947752edcbb46be37dc05ed0a9e872c93ca0f7859b7d07cba7b9ffd7be6b",
+    "code_garde": "UC",
+    "reference_du_texte": "Version et rédaction sur la science. Le fascicule ne donne pas de référence bibliographique au passage sur les sacs.",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2011",
+    "page": 5,
+    "rapport_jury": null,
+    "index_ens": "https://www.ens.psl.eu/rapports-et-sujets-2011-pc",
+    "precision_rapport": "L’index des écrits mentionne un rapport de chinois sans lien vers le document. Aucun rapport propre à cette épreuve n’a été retrouvé."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "fichier": "figures/poids-apparent.svg",
+      "legende": "Comment l’air agit sur le poids apparent des deux sacs."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version complète des deux sacs, rédaction chinoise sur les usages de la science et lecture des effets de l’air dans le modèle du sujet."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2"
+    ]
+  }
+}

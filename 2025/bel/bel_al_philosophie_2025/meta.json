@@ -39,7 +39,9 @@
     "sujet": "https://www.ens.psl.eu/sites/default/files/2025_al_tronc_commun_philosophie.pdf",
     "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2025-11/Philosophie%202025%20OK%20Lyon%20RELU.pdf",
     "sujet_sha256": "f8f5d5d0bc0b86998141630591f023e34d9a9fdb938bdf55f4c1d518d88f0a62",
-    "rapport_jury_sha256": "609faef752ae27903edc94ff1cd67781e17f465944d426e043cbd4a8ed108cdc"
+    "rapport_jury_sha256": "609faef752ae27903edc94ff1cd67781e17f465944d426e043cbd4a8ed108cdc",
+    "sha256_sujet": "f8f5d5d0bc0b86998141630591f023e34d9a9fdb938bdf55f4c1d518d88f0a62",
+    "sha256_rapport_jury": "609faef752ae27903edc94ff1cd67781e17f465944d426e043cbd4a8ed108cdc"
   },
   "revision": {
     "date": "2026-11-24",
@@ -98,7 +100,48 @@
       "modifications": true,
       "perimetre": "Vérification du libellé entre guillemets, du rapport et de l’analyse de Kant. Comparaison raisonnée des formes impersonnelle, deuxième et première personnes sur un même cas ; schéma et exercice corrigé.",
       "tour": 2
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Obligation, attribution à un agent et différence entre alerter et rectifier."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture du verbe à l’indicatif, des guillemets et de la seconde personne. Variation sur la promesse pour distinguer qui témoigne, qui peut rappeler l’obligation, qui a qualité pour modifier son terme et quels tiers sont engagés."
     }
   ],
-  "date_revision": "2026-11-24"
+  "date_revision": "2026-11-25",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "« Tu dois »"
+    ],
+    "pages_du_sujet": 1,
+    "pages_pdf_des_questions": {
+      "« Tu dois »": 1
+    },
+    "precision": "Dissertation unique de 6 heures. Libellé lu sur la page 1 du fascicule officiel. Rapport du jury, pages 2 à 10. Les mouvements du plan sont proposés par le corrigé."
+  }
 }

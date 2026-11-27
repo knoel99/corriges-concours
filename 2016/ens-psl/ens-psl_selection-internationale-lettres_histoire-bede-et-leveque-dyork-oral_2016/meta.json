@@ -1,0 +1,37 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire-bede-et-leveque-dyork-oral_2016",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire — Bède et l’évêque d’York (oral)",
+    "annee": 2016
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/ORAL-HIST3.pdf",
+    "sha256_sujet": "43646189f18942fa7ffb0904afe3de3dac9185a3fa91d93aab2a64a4531ae3e9",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/Rapport%20S.I.%20Histoire%202016.pdf",
+    "sha256_rapport_jury": "578b8096cbd9e452afff066ccf17a3b2a0e3531dcab79c980deabe2af1ff8317"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture-du-document.svg",
+      "question": "Une parole surveillée pour une Église enseignante",
+      "legende": "Le programme de Bède s’élargit de la personne de l’évêque au territoire de son Église."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Deux feuillets numérisés et rapport du jury lus. Explication de la pastorale, des traductions, du programme de douze évêques et du projet foncier. Deux éditions et schéma.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

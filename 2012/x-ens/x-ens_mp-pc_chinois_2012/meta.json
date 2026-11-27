@@ -1,0 +1,56 @@
+{
+  "slug": "x-ens_mp-pc_chinois_2012",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC",
+    "matiere": "Chinois",
+    "annee": 2012,
+    "modalite": "écrit"
+  },
+  "intitule": "Entrer dans une langue, construire son identité",
+  "questions": 3,
+  "redaction": "Version complète de François Cheng et deux réponses chinoises sur les appartenances chez Mona Ozouf et la cohésion sociale.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2012/pc2012_sujet_langue_vivante_version.pdf#page=5",
+    "sha256_sujet": "9f216e5704f726063a29e0313bae0348ecc1c975d6a4bce8b1d80f98fe8f33ab",
+    "code_garde": "XEULC",
+    "reference_du_texte": "François Cheng, Le dialogue, 2011. Mona Ozouf, Composition française. Retour sur une enfance bretonne, 2009.",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2012",
+    "page": 5,
+    "sujet_expression": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2012/pc2012_sujet_langue_vivante_expression.pdf",
+    "sha256_sujet_expression": "b41b3ba045e401759179732cb405779b4019b0d60d9163f3ebff111d22a09312",
+    "rapport_jury": null,
+    "index_ens": "https://www.ens.psl.eu/rapports-et-sujets-2012-pc",
+    "precision_rapport": "L’index des écrits mentionne un rapport de chinois sans lien vers le document. Aucun rapport propre à cette épreuve n’a été retrouvé."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "E1",
+      "fichier": "figures/appartenances.svg",
+      "legende": "Comment la pluralité des appartenances ouvre un espace de choix chez Mona Ozouf."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version complète de François Cheng et deux réponses chinoises sur les appartenances chez Mona Ozouf et la cohésion sociale."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version",
+      "E1",
+      "E2"
+    ]
+  }
+}

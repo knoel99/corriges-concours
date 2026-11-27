@@ -1,0 +1,113 @@
+{
+  "slug": "agro-veto_bcpst_modelisation-mathematique-et-informatique_2024",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "Modélisation mathématique et informatique",
+    "annee": 2024,
+    "duree_heures": 3
+  },
+  "questions": 38,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "corrige_du_jury": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/corrigemmi2024.pdf",
+    "corrige_du_jury_sha256": "0f4a3ce1e7bbb4e316bdf6faa1a2ff644c604441f7c276259fd4bdb01082428d",
+    "page_organisateur": "https://www.concours-agro-veto.fr/archives-bilans-statistiques/archives-sujets-rapports/sujets-rapports-concours-cpge-bcpst/epreuves-ecrites-concours-cpge-bcpst",
+    "rapport": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/rapportmmi2024_relu_le.pdf",
+    "rapport_sha256": "b4678f1caee75cd223557f6ee15b71f6607a98d8e490424349b7cf2d6dc94211",
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/bcpst_0224_sp.pdf",
+    "sujet_sha256": "0be6219147708635e2d9c67fab9feaab9501d9d7fa95a5a7e593aa0b55ab95bd"
+  },
+  "figures": [
+    {
+      "fichier": "figures/seuil-et-iterations.svg",
+      "question": "3.1",
+      "legende": "À gauche, les trois points fixes. À droite, cinq suites dont les départs de part et d’autre de 9 séparent les deux limites 0 et 30."
+    },
+    {
+      "fichier": "figures/extinction-en-fonction-de-la-moyenne.svg",
+      "question": "8.7",
+      "legende": "Loi à zéro ou deux descendants. La probabilité vaut un jusqu’à la moyenne critique 1 et décroît ensuite jusqu’à zéro."
+    },
+    {
+      "fichier": "figures/horizon-d-observation.svg",
+      "question": "12.2",
+      "legende": "Calcul des probabilités d’extinction avant un horizon fixé pour trois arbres de loi de Poisson. L’augmentation avec l’horizon illustre la limite de la simulation à 60 générations."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des 38 questions et sous-questions sur le sujet officiel. Confrontation au rapport et au corrigé du jury. Tracé de trois figures, contrôle des itérations, preuves d’extinction et incertitude à horizon fini. Lecture directe du graphe de la page 8."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture du sujet, de son annexe Python, du corrigé et du rapport du jury. Vérification des 38 rubriques dans les deux éditions, du tableau de variations et des limites du modèle linéarisé. Recoupement des fréquences empiriques sur le tracé officiel et du biais dû à l’arrêt à la génération 60 par itérations de la fonction génératrice et bornes sur son plus petit point fixe. Vérification du code de simulation et des figures."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "5",
+      "6",
+      "7",
+      "8.1",
+      "8.2",
+      "8.3",
+      "8.4",
+      "8.5",
+      "8.6",
+      "8.7",
+      "9.1",
+      "9.2",
+      "9.3",
+      "10.1",
+      "10.2",
+      "10.3",
+      "11.1",
+      "11.2",
+      "12.1",
+      "12.2",
+      "13.1",
+      "13.2",
+      "13.3",
+      "13.4"
+    ],
+    "precision": "Les 38 réponses du fascicule A BCPST 0224 vont de Q1 à Q13.4. Les graphiques et l’annexe Python en page 9 ont été recoupés sur le sujet, le corrigé et le rapport du jury.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "0be6219147708635e2d9c67fab9feaab9501d9d7fa95a5a7e593aa0b55ab95bd",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Relecture du sujet, de son annexe Python, du corrigé et du rapport du jury. Vérification des 38 rubriques dans les deux éditions, du tableau de variations et des limites du modèle linéarisé. Recoupement des fréquences empiriques sur le tracé officiel et du biais dû à l’arrêt à la génération 60 par itérations de la fonction génératrice et bornes sur son plus petit point fixe. Vérification du code de simulation et des figures.",
+      "commit_redaction_anterieure": "13ebe53f82dee21626b4efa94b3509d3cd24fe6d"
+    }
+  }
+}

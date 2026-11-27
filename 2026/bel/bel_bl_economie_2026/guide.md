@@ -8,6 +8,12 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+**Couverture vérifiée.** La dissertation et le guide répondent à l’intitulé « Que peut-on attendre d’une banque centrale ? », reproduit sous la rubrique ENS Paris-Saclay des annales enseignantes. Le règlement des paiements, les chocs d’offre et de demande, la liquidité et la solvabilité ont été contrôlés dans les deux éditions. Le mandat de stabilité des prix est replacé dans la stratégie de la BCE en vigueur au concours.
+
 **Sujet** — Que peut-on attendre d’une banque centrale ?
 
 ## Entrer dans le sujet
@@ -20,19 +26,19 @@
 
 ### 1. Commencer par une opération concrète
 
-Suivez un paiement d’un client de la banque A à un client de B. Identifiez le passif qu’est chaque dépôt pour la banque commerciale et l’actif que sont pour elle les réserves. Le virement du schéma ne modifie pas le total des réserves des deux banques. Une fois établie cette infrastructure commune, développez le passage des taux de politique monétaire à la demande de crédit puis aux prix. Un relèvement du taux directeur n’a pas pour conséquence mécanique un mouvement immédiat de même amplitude dans chaque taux facturé aux ménages.
+Suivez un paiement d’un client de la banque A à un client de B. Identifiez le passif qu’est chaque dépôt pour la banque commerciale et l’actif que sont pour elle les réserves. Reconstituez les deux bilans après le virement de 100 euros. Chez A, la baisse du dépôt dû à l’employeur correspond à une baisse égale des réserves. Chez B, réserves et dette envers le salarié augmentent ensemble. On vérifie ainsi que chaque bilan reste équilibré et que le montant total des réserves est conservé. Une fois établie cette infrastructure commune, développez le passage des taux de politique monétaire à la demande de crédit puis aux prix. Un relèvement du taux directeur n’a pas pour conséquence mécanique un mouvement immédiat de même amplitude dans chaque taux facturé aux ménages.
 
-![Un virement entre clients de deux banques](figures/reglement-virement.svg)
+![Figure 1 — Un virement entre clients de deux banques](figures/reglement-virement.svg)
 
 ### 2. Faire varier les circonstances
 
 Gardez les mêmes instruments et changez la perturbation initiale. Face à une chute de la demande, la baisse de l’activité et celle de l’inflation peuvent appeler la même réponse. Une hausse importée du coût de l’énergie combine hausse des prix et perte de revenu réel. La banque centrale peut agir sur la persistance de l’inflation et les anticipations ; elle ne fournit pas l’énergie devenue rare.
 
-![Demande en recul et offre renchérie](figures/deux-chocs.svg)
+![Figure 2 — Demande en recul et offre renchérie](figures/deux-chocs.svg)
 
 La gestion d’une panique bancaire pose un autre problème. Supposez que les déposants des deux banques ci-dessous veuillent retirer 25 unités. Chaque banque n’en détient que 10 en liquide. Demandez-vous ensuite si chacune pourra rembourser ses créanciers lorsque les actifs longs seront réalisés à leur valeur estimée. L’avance de trésorerie et la recapitalisation répondent à deux questions différentes.
 
-![Distinguer un manque de liquidité et un déficit de fonds propres](figures/liquidite-fonds-propres.svg)
+![Figure 3 — Distinguer un manque de liquidité et un déficit de fonds propres](figures/liquidite-fonds-propres.svg)
 
 ### 3. Montrer à qui le résultat peut être imputé
 
@@ -59,6 +65,8 @@ Une banque centrale émet la monnaie dans laquelle les banques règlent leurs de
 Lorsqu’une entreprise verse un salaire depuis une banque et que le salarié détient son compte dans une autre, le paiement crée une dette entre les deux établissements. Le règlement en monnaie centrale permet de solder cette dette. La possibilité d’échanger à parité les dépôts en euros de deux banques ne tient donc pas seulement à l’inscription du même signe monétaire sur deux relevés. Elle suppose que les paiements aboutissent et que les avoirs destinés à les régler circulent entre banques. La banque centrale fournit l’actif de règlement ultime et des infrastructures communes. La solidité des établissements et la garantie des dépôts concourent, sous des responsabilités institutionnelles distinctes, à la confiance dans la monnaie bancaire. Une première attente concerne donc la possibilité d’être payé aujourd’hui, y compris lorsque la banque du débiteur diffère de celle du créancier.
 
 Une seconde concerne ce qu’un paiement futur permettra d’acheter. Pour négocier un contrat sur trois ans, une entreprise et ses salariés doivent pouvoir raisonner en pouvoir d’achat. Des variations fortes et imprévisibles du niveau général des prix redistribuent entre débiteurs et créanciers et raccourcissent l’horizon des contrats. En zone euro, l’article 127 du traité sur le fonctionnement de l’Union européenne fait de la stabilité des prix l’objectif principal du Système européen de banques centrales. La BCE a défini en 2021 une cible d’inflation symétrique de 2 % à moyen terme. Une cible d’inflation porte sur le rythme d’augmentation du niveau général des prix. Après une flambée, la retrouver ne ramène donc pas automatiquement le coût du panier de la ménagère à son niveau antérieur. Le choix du moyen terme prend au sérieux le délai nécessaire pour qu’une intervention infléchisse les dépenses et les prix.
+
+Le 30 juin 2025, la BCE confirme la cible symétrique de 2 % à moyen terme. Prenons un indice de prix qui passe de 100 à 110 pendant un choc, puis progresse de 2 %. Il atteint 112,2. Revenir au taux visé stabilise le rythme de hausse et laisse subsister la perte de pouvoir d’achat d’un revenu nominal resté fixe. Une promesse de ramener l’indice à 100 serait une politique différente. [Déclaration stratégique de la BCE du 30 juin 2025](https://www.ecb.europa.eu/press/pr/date/2025/html/ecb.pr250630~aabf988af8.fr.html)
 
 Comment un taux administré peut-il modifier le prix d’un service produit par une entreprise privée ? Un relèvement des taux directeurs tend à augmenter le coût de financement des banques et les rendements auxquels les investisseurs comparent leurs placements. Toutes choses égales par ailleurs, il relève les taux proposés pour certains nouveaux crédits. Des ménages reportent un achat immobilier, des entreprises abandonnent des investissements dont la rentabilité attendue ne couvre plus leur coût. Une demande moins dynamique réduit la possibilité de relever les prix et peut ralentir les embauches. L’effet dépend du taux réel anticipé, donc de l’écart entre le taux nominal et l’inflation attendue. Il dépend aussi du contrat déjà signé. Le ménage endetté à taux fixe de longue durée est protégé du renchérissement immédiat de ses échéances, alors que le nouvel emprunteur y est exposé. Une décision unique exerce ainsi des effets différents selon les bilans et les échéances.
 

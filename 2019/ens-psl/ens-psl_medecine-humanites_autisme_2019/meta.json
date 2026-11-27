@@ -1,0 +1,74 @@
+{
+  "slug": "ens-psl_medecine-humanites_autisme_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Médecine-Humanités",
+    "matiere": "Autisme",
+    "annee": 2019,
+    "modalite": "écrit"
+  },
+  "intitule": "Autisme",
+  "questions": 1,
+  "redaction": "Commentaire rédigé en lecture croisée sur « Autisme », guide d’analyse de chaque document, composition développée et schéma.",
+  "sources": {
+    "sujet": "https://medecine-humanites.ens.fr/wp-content/uploads/2019/10/Sujet-2-e%CC%81crit-MH2019-ENS.tiff",
+    "index": "https://medecine-humanites.ens.psl.eu/sujets-et-rapports-du-concours-2018/",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://medecine-humanites.ens.fr/wp-content/uploads/2019/10/Sujet-2-e%CC%81crit-MH2019-ENS.tiff",
+        "fac_simile": "https://docs.google.com/viewerng/viewer?embedded=true&url=https://medecine-humanites.ens.fr/wp-content/uploads/2019/10/Sujet-2-e%CC%81crit-MH2019-ENS.tiff",
+        "sha256": "0caabf34cbd7420d79735da187db176537ce37b9d7c3f0cfc9a491043e833eef",
+        "nature": "PDF issu du TIFF",
+        "pages": 6
+      }
+    ]
+  },
+  "documents_commentes": [
+    "Martin Joubert, *À quoi pensent les autistes ?*, 2018. Le clinicien met en regard une hypothèse sur l’imitation et les stratégies d’un jeune patient.",
+    "Chaïm Soutine, *L’Idiot de village*, 1919. Le portrait à l’huile mesure 92 × 65 cm. Observer comment le col blanc, les mains et le fond rouge organisent le regard.",
+    "Itard, *Mémoire sur les premiers développements de Victor de l’Aveyron*, 1801. Itard rapporte l’examen initial de Pinel. La note signale qu’une proposition diagnostique ultérieure a été contestée.",
+    "Temple Grandin, *Ma vie d’autiste*, traduction française de 2000. Une adulte raconte son expérience tactile d’enfant et ce qu’un témoin pouvait en méconnaître.",
+    "Brigitte Chamak, *Quaderni*, hiver 2008-2009. L’enquête distingue classifications, associations de parents et associations d’autoreprésentation."
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Commentaire",
+      "fichier": "figures/lecture-croisee.svg",
+      "legende": "Comment réexaminer le sens donné à un comportement"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "arabe_mp_pc_2011_2014",
+      "session": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Commentaire rédigé en lecture croisée sur « Autisme », guide d’analyse de chaque document, composition développée et schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "agent": "reprise_medecine_humanites",
+      "session": "reprise_medecine_humanites",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Relecture des cinq pièces du scan du 14 juin. Analyse du score rapporté par Grandin et de sa comparaison avec la porte vitrée. Repérage des pages dans le guidé et contrôle des deux éditions."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire de documents"
+    ]
+  }
+}

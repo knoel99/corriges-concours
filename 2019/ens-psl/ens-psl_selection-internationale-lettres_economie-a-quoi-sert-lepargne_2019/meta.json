@@ -1,0 +1,87 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_economie-a-quoi-sert-lepargne_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Économie — à quoi sert l’épargne",
+    "annee": 2019,
+    "modalite": "écrit"
+  },
+  "intitule": "Économie — à quoi sert l’épargne",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/economie-ecrit-sil2019.pdf",
+    "sujet_sha256": "ede2058188cc110bc8e56ca0b5e0713984e5dfbf438cd66c0e67c5bd6f9da8d1"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lepargne.svg",
+      "question": "Explication",
+      "legende": "Qui épargne, qui finance, et à quel moment ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "sil_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Dissertation économique sur le lissage de la consommation, la circulation des financements, l’investissement et le paradoxe de l’épargne."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "sil_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification des consignes, des raisonnements et des légendes dans les deux éditions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Les deux éditions distinguent flux d’épargne, stock de patrimoine, placement sur un marché secondaire et financement d’un projet. Le modèle fermé à investissement fixé à 20 donne bien un revenu de 100 puis de 80 lorsque la propension à consommer passe de 0,8 à 0,75.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation unique « À quoi sert l’épargne ? ». Fonctions individuelles, choix de placement, intermédiation, financement de l’investissement et effets macroéconomiques."
+    ],
+    "annexes_verifiees": [],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "limites": "Le feuillet bilingue d’une page contient un sujet unique. Il permet un éclairage par d’autres sciences sociales et ne comporte aucune annexe.",
+    "verification": "Les deux éditions distinguent flux d’épargne, stock de patrimoine, placement sur un marché secondaire et financement d’un projet. Le modèle fermé à investissement fixé à 20 donne bien un revenu de 100 puis de 80 lorsque la propension à consommer passe de 0,8 à 0,75."
+  }
+}

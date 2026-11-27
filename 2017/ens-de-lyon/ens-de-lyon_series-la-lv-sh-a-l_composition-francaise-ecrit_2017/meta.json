@@ -1,0 +1,70 @@
+{
+  "slug": "ens-de-lyon_series-la-lv-sh-a-l_composition-francaise-ecrit_2017",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries LA/LV/SH (A/L)",
+    "matiere": "Composition française (écrit)",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "Lire en compagnie de l’auteur selon Julien Gracq",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/17-bel-composition-francaise_1506585817855_0.pdf",
+    "sha256_sujet": "4cad56279f6622ba237f8ec174245c79ecd141473b1cb2ab7cd55f6126cf3f36",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/FRANCAIS_EXPLIC_TXT_LIT_2017.pdf#page=1",
+    "sha256_rapport_jury": "4b3620dedea7cb7d53ecff35fc56b9c172c7e45e710d9812001617df25e86cf3",
+    "precision_controle": "Feuillet BEL LCU 771, J. 17 1112. Une seule consigne de discussion des propos de Gracq, avec appui privilégié sur les œuvres au programme. Aucun autre feuillet ni annexe indiqué.",
+    "pages_sujet": 1,
+    "pages_rapport_composition": "1–9 (jusqu’à la rubrique orale, p. 9)"
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Dissertation",
+      "legende": "Trois lectures d’un même vers de Racine"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet et du rapport commun. Dissertation sur les trois conceptions de la lecture chez Gracq, confrontation des quatre œuvres du programme et de Marelle, démarche guidée et schéma intertextuel."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "classiques_2017",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Contrôle des deux éditions sur le feuillet BEL et la section de composition du rapport. Ajout du contraste entre concepteur et constructeur à partir des Incipit d’Aragon, précision des deux parcours de Marelle et correction du renvoi à l’exclamation d’Antiochus."
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Composition française — dissertation unique"
+    ],
+    "elements_verifies": [
+      "Discussion du transvasement, du travail des signes et de l’accueil du lecteur ; portée de « aussi », de l’itinéraire et de la nue-propriété.",
+      "Mise à l’épreuve de la linéarité, du projet de l’auteur et des parcours du lecteur.",
+      "Lectures de Bérénice, des Tragiques, des Complaintes et d’Aurélien ; recours complémentaire à Barthes et Cortázar."
+    ]
+  }
+}

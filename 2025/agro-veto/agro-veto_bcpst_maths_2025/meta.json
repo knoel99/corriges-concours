@@ -1,0 +1,253 @@
+{
+  "slug": "agro-veto_bcpst_maths_2025",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "Maths",
+    "annee": 2025
+  },
+  "questions": 29,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/bcpst_0425_sp.pdf",
+    "rapport_jury": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/rapport_bcpst_methodes_de_calcul_et_raisonnement_2025.pdf",
+    "sha256_sujet": "2e7b1f3426549e94f6b03b2406da7318cfa888eaa2d3ea642ed4328b89b80f63",
+    "sha256_rapport_jury": "01cf31149e7f608fbf40077c924d9572b2e00ff10ad2caf2cb6dad486b432b1d",
+    "pages_sujet": 4,
+    "pages_rapport": 3
+  },
+  "figures": [
+    {
+      "fichier": "figures/deux-integrandes.svg",
+      "question": "1",
+      "legende": "Les courbes se rejoignent aux extrémités. Les petits segments marquent les tangentes horizontales."
+    },
+    {
+      "fichier": "figures/compter-les-rangs.svg",
+      "question": "13.b",
+      "legende": "Compter séparément les observations au plus égales à x et celles de l’intervalle suivant."
+    },
+    {
+      "fichier": "figures/covariance-par-blocs.svg",
+      "question": "23",
+      "legende": "Les nombres représentent V puis sa matrice dans les coordonnées du sujet. Les zéros hors des deux blocs séparent le calcul du spectre en deux problèmes de taille deux."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions et contrôle des 29 réponses numérotées et sous-numérotées des quatre pages au regard des trois pages du rapport. Tracés des deux fonctions et de leurs tangentes, interprétation du passage au rang k, calcul des moments et contrôle des quatre valeurs propres.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Vérification des 29 rubriques du sujet de quatre pages et correspondance question par question avec le rapport de trois pages. Recalcul des intégrales, de l’équivalent de Stirling et des densités de rang par dénombrement. Contrôle du changement de base et du spectre par deux polynômes caractéristiques. Relecture des figures et ajout des deux matrices numériques."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "9.a",
+      "9.b",
+      "9.c",
+      "9.d",
+      "10",
+      "11",
+      "12",
+      "13.a",
+      "13.b",
+      "13.c",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23"
+    ],
+    "numeros_principaux": 23,
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": "1",
+        "page_pdf": 1,
+        "question_du_rapport": "1"
+      },
+      {
+        "question": "2",
+        "page_pdf": 1,
+        "question_du_rapport": "2"
+      },
+      {
+        "question": "3",
+        "page_pdf": 1,
+        "question_du_rapport": "3"
+      },
+      {
+        "question": "4",
+        "page_pdf": 1,
+        "question_du_rapport": "4"
+      },
+      {
+        "question": "5",
+        "page_pdf": 1,
+        "question_du_rapport": "5"
+      },
+      {
+        "question": "6",
+        "page_pdf": 1,
+        "question_du_rapport": "6"
+      },
+      {
+        "question": "7",
+        "page_pdf": 1,
+        "question_du_rapport": "7"
+      },
+      {
+        "question": "8",
+        "page_pdf": 1,
+        "question_du_rapport": "8"
+      },
+      {
+        "question": "9",
+        "page_pdf": 1,
+        "question_du_rapport": "9"
+      },
+      {
+        "question": "9.a",
+        "page_pdf": 1,
+        "question_du_rapport": "10.a"
+      },
+      {
+        "question": "9.b",
+        "page_pdf": 2,
+        "question_du_rapport": "10.b"
+      },
+      {
+        "question": "9.c",
+        "page_pdf": 2,
+        "question_du_rapport": "10.c"
+      },
+      {
+        "question": "9.d",
+        "page_pdf": 2,
+        "question_du_rapport": "10.d"
+      },
+      {
+        "question": "10",
+        "page_pdf": 2,
+        "question_du_rapport": "11"
+      },
+      {
+        "question": "11",
+        "page_pdf": 2,
+        "question_du_rapport": "12"
+      },
+      {
+        "question": "12",
+        "page_pdf": 2,
+        "question_du_rapport": "13"
+      },
+      {
+        "question": "13.a",
+        "page_pdf": 2,
+        "question_du_rapport": "14.a"
+      },
+      {
+        "question": "13.b",
+        "page_pdf": 2,
+        "question_du_rapport": "14.b"
+      },
+      {
+        "question": "13.c",
+        "page_pdf": 2,
+        "question_du_rapport": "14.c"
+      },
+      {
+        "question": "14",
+        "page_pdf": 2,
+        "question_du_rapport": "15"
+      },
+      {
+        "question": "15",
+        "page_pdf": 3,
+        "question_du_rapport": "16"
+      },
+      {
+        "question": "16",
+        "page_pdf": 3,
+        "question_du_rapport": "17"
+      },
+      {
+        "question": "17",
+        "page_pdf": 3,
+        "question_du_rapport": "18"
+      },
+      {
+        "question": "18",
+        "page_pdf": 3,
+        "question_du_rapport": "19"
+      },
+      {
+        "question": "19",
+        "page_pdf": 3,
+        "question_du_rapport": "20"
+      },
+      {
+        "question": "20",
+        "page_pdf": 3,
+        "question_du_rapport": "21"
+      },
+      {
+        "question": "21",
+        "page_pdf": 3,
+        "question_du_rapport": "22"
+      },
+      {
+        "question": "22",
+        "page_pdf": 4,
+        "question_du_rapport": "23"
+      },
+      {
+        "question": "23",
+        "page_pdf": 4,
+        "question_du_rapport": "24"
+      }
+    ],
+    "precision": "Le sujet donne la question 9 puis les rubriques 9.a à 9.d. Le jury les désigne par 10.a à 10.d et décale ensuite les numéros du sujet d’une unité. Les 29 réponses sont individualisées."
+  },
+  "date_revision": "2026-11-26"
+}

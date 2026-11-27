@@ -1,0 +1,212 @@
+{
+  "slug": "banque-pt_pt_physique-b---thermodynamique_2022",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique B - Thermodynamique",
+    "annee": 2022
+  },
+  "questions": 21,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2022/ph_b_th_2022_pt.pdf",
+    "sujet_sha256": "db41b0ead38701e4b097d92e44dbf3dadd46204e2624b24e6e0d6cf8e455262c",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2022/rapport_phys_b_ecrit_2022.pdf",
+    "rapport_sha256": "d1204ae1c8aef67bea25ebe9e2c99d04ce94535537502ab859904a255485f867",
+    "notice": "https://www.banquept.fr/documents/livret/2022/Livret_PT_2022.pdf#page=13",
+    "notice_sha256": "a3e4b9bf97bbd0bc5e1bb35ca0e750bee426010a41a256e1dd1dd43f8e88bf2f"
+  },
+  "figures": [
+    {
+      "fichier": "figures/organes.svg",
+      "question": "Q2",
+      "legende": "Repérage des sept états autour de la boucle de réfrigération"
+    },
+    {
+      "fichier": "figures/brayton.svg",
+      "question": "Q4",
+      "legende": "Cycle de l’air dans le plan pression-enthalpie"
+    },
+    {
+      "fichier": "figures/helium.svg",
+      "question": "Q19",
+      "legende": "Lecture du titre sur le palier de saturation de l’hélium"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "21 questions, figures et tableaux des annexes sur le thème « Réfrigération de l’air et techniques cryogéniques »."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle des états du cycle de Brayton, de l’égalité des travaux sur un même arbre et des transferts avec le R134a. Relecture du titre et des températures de saturation de l’hélium."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Q1",
+        "page_pdf": 3,
+        "intitule": "Premier principe pour une machine en écoulement"
+      },
+      {
+        "question": "Q2",
+        "page_pdf": 3,
+        "intitule": "Position des états sur le schéma de l’annexe"
+      },
+      {
+        "question": "Q3",
+        "page_pdf": 3,
+        "intitule": "Travail du turbo-détendeur et contrepartie sur l’arbre"
+      },
+      {
+        "question": "Q4",
+        "page_pdf": 3,
+        "intitule": "États et cycle dans le plan pression-enthalpie"
+      },
+      {
+        "question": "Q5",
+        "page_pdf": 3,
+        "intitule": "Chaleur utile reçue par l’air"
+      },
+      {
+        "question": "Q6",
+        "page_pdf": 3,
+        "intitule": "Efficacité frigorifique réversible"
+      },
+      {
+        "question": "Q7",
+        "page_pdf": 3,
+        "intitule": "Première estimation du coefficient de performance"
+      },
+      {
+        "question": "Q8",
+        "page_pdf": 3,
+        "intitule": "Dépense auxiliaire à inclure"
+      },
+      {
+        "question": "Q9",
+        "page_pdf": 3,
+        "intitule": "Bilan des trois échangeurs au R134a"
+      },
+      {
+        "question": "Q10",
+        "page_pdf": 3,
+        "intitule": "Efficacité globale avec la machine auxiliaire"
+      },
+      {
+        "question": "Q11",
+        "page_pdf": 6,
+        "intitule": "Détente de Joule-Thomson et gaz parfait"
+      },
+      {
+        "question": "Q12",
+        "page_pdf": 6,
+        "intitule": "Signe du coefficient de Joule-Thomson"
+      },
+      {
+        "question": "Q13",
+        "page_pdf": 6,
+        "intitule": "Température après turbinage idéal"
+      },
+      {
+        "question": "Q14",
+        "page_pdf": 6,
+        "intitule": "Turbinage réel à même pression de sortie"
+      },
+      {
+        "question": "Q15",
+        "page_pdf": 6,
+        "intitule": "Justification à partir de l’identité thermodynamique"
+      },
+      {
+        "question": "Q16",
+        "page_pdf": 6,
+        "intitule": "Turbinage près du domaine diphasé"
+      },
+      {
+        "question": "Q17",
+        "page_pdf": 6,
+        "intitule": "Intérêt et limite de la détente en vanne"
+      },
+      {
+        "question": "Q18",
+        "page_pdf": 6,
+        "intitule": "Évaporation d’un cryogène pour liquéfier le diazote"
+      },
+      {
+        "question": "Q19",
+        "page_pdf": 6,
+        "intitule": "Fraction de liquide d’hélium après la vanne"
+      },
+      {
+        "question": "Q20",
+        "page_pdf": 6,
+        "intitule": "Température accessible avec l’hélium liquide"
+      },
+      {
+        "question": "Q21",
+        "page_pdf": 6,
+        "intitule": "Étapes de refroidissement des aimants"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "annexes": "Sujet pages 1 à 6, dont les documents 3 à 6, et document réponse pages 9 à 12. Les pages 10 et 11 portent respectivement le schéma avec le tableau et le diagramme pression-enthalpie de l’air."
+  }
+}

@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Sur quelques questions de calcul différentiel.** Les extrémums sont cherchés successivement sur la sphère et sur le groupe spécial linéaire. Le dernier calcul utilise la conjugaison pour exprimer la différentielle de l’exponentielle matricielle.
 
 ## Préliminaires. Formes linéaires
@@ -123,6 +125,8 @@ $$df_M(H)=\sum_{ij}\widetilde M_{ij}h_{ij}=\mathrm{Tr}(\widetilde M^{t}H).$$
 
 La préimage de $\{1\}$ par le déterminant continu est fermée. Comme $q(I)=n$, considérons $K=\{M\in\mathrm{SL}_n(\mathbb R):q(M)\le n\}$. Cet ensemble est fermé, borné pour la norme de Frobenius et non vide. Il est compact en dimension finie et $q$ y atteint un minimum $m\le n$. Hors de $K$, $q(M)>n$, donc ce point minimise bien sur tout $\mathrm{SL}_n(\mathbb R)$.
 
+Pour $n\ge2$, les diagonales $(s,s^{-1},1,\ldots,1)$, $s>0$, donnent des matrices de déterminant $1$ avec $q=s^2+s^{-2}+n-2\to+\infty$ lorsque $s\to+\infty$. Le sous-niveau utilisé dans la preuve est donc indispensable à cet argument de compacité. Pour $n=1$, le groupe est le singleton $\{1\}$.
+
 ### Question 9
 
 > [!INDICATION]
@@ -158,6 +162,8 @@ Si $M$ minimise $g$ et $df_M(H)=0$, la courbe de 10 reste dans $\mathrm{SL}_n(\m
 #### Solution
 
 Par 11.a et 1.a, $dq_M=\lambda\,df_M$. Les formules de 6.c et 7 et la non-dégénérescence du produit de Frobenius donnent $2M=\lambda\widetilde M=\lambda M^{-t}$. Ainsi $M^tM=(\lambda/2)I$, avec $\lambda/2>0$ car $M^tM$ est définie positive. Son déterminant vaut 1, donc $(\lambda/2)^n=1$ et $\lambda/2=1$. La matrice est orthogonale. Le minimum vaut alors $\mathrm{Tr}(I)=n$, et chaque orthogonale de déterminant 1 l’atteint.
+
+La coupe diagonale de la figure correspond à $n=2$. Avec des entrées $s$ et $s^{-1}$ positives, $q-2=(s-s^{-1})^2$ est nul exactement en $s=1$. Les autres matrices minimisantes en dimension deux sont les rotations, comme le donne la caractérisation par orthogonalité et déterminant un.
 
 ![Figure 1 — Pour deux coefficients diagonaux positifs, la contrainte est l’hyperbole de produit 1. Son point le plus proche de l’origine est (1,1).](figures/minimum-sur-les-diagonales.svg)
 
@@ -303,3 +309,5 @@ $$A(s,0)=\sum_{k=0}^\infty\frac{(-1)^k s^{k+1}}{(k+1)!}\,\varphi(X)^k(Y).$$
 En prenant $s=1$ dans 16.c puis en appliquant 16.a, on obtient
 $$\boxed{\displaystyle d\exp_X(Y)=e^X\sum_{k=0}^{\infty}\frac{(-1)^k}{(k+1)!}\,\varphi(X)^k(Y).}$$
 Ici $\varphi(X)^0(Y)=Y$ et les termes suivants sont les commutateurs itérés avec $X$. Si $XY=YX$, tous les termes avec $k\ge1$ sont nuls et la formule redonne $e^X Y$.
+
+La formule intégrale équivalente est $d\exp_X(Y)=\int_0^1e^{(1-s)X}Ye^{sX}\,ds$. Pour $X=\operatorname{diag}(0,1)$ et $Y=E_{12}$, l’intégrande vaut $e^sE_{12}$ et on trouve $(e-1)E_{12}$. Cet exemple contrôle l’ordre des facteurs dans un cas où ils ne commutent pas.

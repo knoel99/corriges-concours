@@ -1,0 +1,244 @@
+{
+  "slug": "banque-pt_pt_langue-vivante-a_2012",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Langue vivante A",
+    "annee": 2012
+  },
+  "questions": 15,
+  "redaction": "IA (gpt-6.2-astra)",
+  "figures": [
+    {
+      "fichier": "figures/lecture-de.svg",
+      "question": "Allemand",
+      "legende": "De la feuille à la ville"
+    },
+    {
+      "fichier": "figures/lecture-en.svg",
+      "question": "Anglais",
+      "legende": "Deux sens du succès spatial"
+    },
+    {
+      "fichier": "figures/lecture-ar.svg",
+      "question": "Arabe",
+      "legende": "De l’alerte à l’accord"
+    },
+    {
+      "fichier": "figures/lecture-es.svg",
+      "question": "Espagnol",
+      "legende": "Que change l’imagerie cérébrale ?"
+    },
+    {
+      "fichier": "figures/lecture-it.svg",
+      "question": "Italien",
+      "legende": "Du constat à la proposition"
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "agent": "lva_pt_2325",
+      "perimetre": "Cinq versions françaises et dix réponses dans les langues des sujets, sources, commentaires et schémas par langue."
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "agent": "lva_pt_2325",
+      "perimetre": "Comparaison des bornes et du contenu des versions sur le fac-similé, relecture des réponses avec le jury, recomptage et examen des schémas et de l’arabe."
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2012/lv_a_pt_2012.pdf",
+    "sujet_sha256": "77224e5eb12888b3886fb3bf40fb0f064a962b177e17e96a3257a940ffbc7fa8",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2012/rapport_lv_a_ecrit_2012.pdf",
+    "rapport_sha256": "e43e73f06a42928d377896a8d7412d4dd398ed072c8463141f27d05b99a833b8",
+    "livret": "https://www.banquept.fr/documents/livret/2012/Livret_PT_2012.pdf#page=12",
+    "livret_sha256": "778c796c26e1a3f2558523fa548e8d4fe4c92c6e0265a53fc4b63bd98a8c5c62",
+    "index_sujets": "https://www.banquept.fr/article152.html",
+    "index_rapports": "https://www.banquept.fr/article153.html"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Allemand · version",
+      "Allemand · question a",
+      "Allemand · question b",
+      "Anglais · version",
+      "Anglais · question a",
+      "Anglais · question b",
+      "Arabe · version",
+      "Arabe · question a",
+      "Arabe · question b",
+      "Espagnol · version",
+      "Espagnol · question a",
+      "Espagnol · question b",
+      "Italien · version",
+      "Italien · question a",
+      "Italien · question b"
+    ],
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "77224e5eb12888b3886fb3bf40fb0f064a962b177e17e96a3257a940ffbc7fa8",
+      "perimetre": "Cinq versions françaises et dix réponses dans les langues des sujets, sources, commentaires et schémas par langue.",
+      "controles": [
+        {
+          "nom": "Allemand",
+          "titre": "Warum das Atmen der Bäume so wichtig ist",
+          "pages_sujet": [
+            2,
+            3
+          ],
+          "pages_rapport": [
+            1,
+            2
+          ],
+          "origine": "Claudia Füßler, Die Zeit, 27 novembre 2011. Article et questions, pages 2–3. Le rapport allemand, pages 1–2 du PDF, porte sur la traduction du vocabulaire botanique et la construction des réponses.",
+          "bornes_version": "De « Eine prächtige Grünlilie im Wohnzimmer » à « zum Beispiel durch Schadstoffe in der Luft ».",
+          "consignes": [
+            "Was bringen die Bäume der Welt und der Menschheit?",
+            "Die Natur ist in unserer industriellen Gesellschaft immer mehr gefährdet. Erfinden Sie eine ideale Welt, in der die Natur geschützt wäre."
+          ],
+          "compte_mots": [
+            92,
+            223
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-de.svg"
+        },
+        {
+          "nom": "Anglais",
+          "titre": "The end of the Space Age",
+          "pages_sujet": [
+            4,
+            5
+          ],
+          "pages_rapport": [
+            3,
+            4
+          ],
+          "origine": "The Economist, 30 juin 2011. Texte et questions, pages 4–5. Le jury d’anglais, pages 3–4, distingue la comparaison précise demandée en a et la prise de position personnelle en b.",
+          "bornes_version": "De « Viewed this way » à « was of adventure and exploration ».",
+          "consignes": [
+            "In what ways are today’s exploitations of space different to the dreams of those involved in the early days of space exploration?",
+            "To what extent do you consider it important to continue to explore space?"
+          ],
+          "compte_mots": [
+            87,
+            228
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-en.svg"
+        },
+        {
+          "nom": "Arabe",
+          "titre": "دبلوماسية تغير المناخ",
+          "pages_sujet": [
+            6,
+            7
+          ],
+          "pages_rapport": [
+            5
+          ],
+          "origine": "Najib Saab, Al-Hayat, 4 novembre 2011, page 6. Les trois consignes figurent page 7. Le rapport d’arabe, page 5 du PDF, rappelle le contexte diplomatique et la portée de l’épreuve.",
+          "bornes_version": "Du début « دبلوماسية تغير المناخ » à « بالدعم العلمي والمادي ».",
+          "consignes": [
+            "تحدثوا عن معنى النص العام",
+            "ما هي في رأيكم الحلول لمعالجة تحديات تغير المناخ عالميا؟"
+          ],
+          "compte_mots": [
+            84,
+            212
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-ar.svg"
+        },
+        {
+          "nom": "Espagnol",
+          "titre": "La revolución neurocientífica",
+          "pages_sujet": [
+            8,
+            9
+          ],
+          "pages_rapport": [
+            6
+          ],
+          "origine": "Megatendencias, 15 septembre 2011, pages 8–9. La traduction est entièrement page 8. Le rapport d’espagnol, page 6, porte sur la compréhension et l’expression.",
+          "bornes_version": "De « Cuando se habla de revolución neurocientífica » à « la demencia de los implicados ».",
+          "consignes": [
+            "Analice Usted el panorama nuevo que abre la « revolución neurocientífica » según el autor de este texto.",
+            "¿Qué cambios, positivos y negativos, se pueden esperar de las diferentes aplicaciones de la neurociencia en nuestras sociedades?"
+          ],
+          "compte_mots": [
+            87,
+            213
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-es.svg"
+        },
+        {
+          "nom": "Italien",
+          "titre": "Bilingui, più rapidi ed efficienti nel prendere decisioni critiche",
+          "pages_sujet": [
+            10,
+            11
+          ],
+          "pages_rapport": [
+            7
+          ],
+          "origine": "Alessia Manfredi, La Repubblica, 13 novembre 2011, pages 10–11. La version est page 10. Le rapport italien est page 7 du PDF.",
+          "bornes_version": "De « Nello studio » à « chi è monolingue ».",
+          "consignes": [
+            "In quale misura il bilinguismo dovrebbe essere imposto in tutte le scuole elementari?",
+            "Oltre all’aspetto tecnico e neurologico, quali possono essere i vantaggi di praticare il bilinguismo o il plurilinguismo?"
+          ],
+          "compte_mots": [
+            85,
+            209
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-it.svg"
+        }
+      ]
+    }
+  }
+}

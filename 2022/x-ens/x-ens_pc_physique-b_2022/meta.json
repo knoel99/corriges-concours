@@ -1,0 +1,113 @@
+{
+  "slug": "x-ens_pc_physique-b_2022",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Physique B",
+    "annee": 2022
+  },
+  "questions": 32,
+  "intitule": "Étude de l’hélium superfluide métastable",
+  "redaction": "Rédaction des 32 questions et des subdivisions 20a–b et 21a–c. Vérification sur les figures et les équations imprimées. Q7 précise le sens de l’effet des impuretés. Q28 établit la forme de la résonance, montre l’incompatibilité des signes imprimés et retrouve le gain avec le terme de force issu d’Euler. Q29 à Q32 utilisent le gain demandé dans (11).",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20PC%20SUJET%20ECRIT%20DE%20PHYSIQUE%20B%20(XEULS).pdf",
+    "sujet_sha256": "6911609567f188e0b84cc349e69302e0d150d903197a376d35172e8de251970c",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20PC%20RAPPORT%20ECRIT%20PHYSIQUE%20B%20(XEULS).pdf",
+    "rapport_sha256": "8b3b9258c43918a23db15084c0d34cdc88387d2c64d3ba6fbe194a09c2392e5b"
+  },
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des quatre pages du rapport, incluant les commentaires sur les questions 1 à 32, confrontation aux données de la figure 1, aux dessins des lames et du foyer, et aux équations (7) à (11) du sujet."
+    },
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions brute et guidée. Rédaction des 32 questions et des subdivisions 20a–b et 21a–c. Vérification sur les figures et les équations imprimées. Q7 précise le sens de l’effet des impuretés. Q28 établit la forme de la résonance, montre l’incompatibilité des signes imprimés et retrouve le gain avec le terme de force issu d’Euler. Q29 à Q32 utilisent le gain demandé dans (11)."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "fichier": "figures/refroidissement.svg",
+      "legende": "Allure qualitative obtenue en intégrant un profil schématique de capacité thermique. Le temps est normalisé."
+    },
+    {
+      "numero": 2,
+      "question": "2",
+      "fichier": "figures/coexistences.svg",
+      "legende": "Schémas de phase sans échelle. La courbe de saturation de l’hélium rencontre la ligne λ avant d’atteindre les très basses températures."
+    },
+    {
+      "numero": 3,
+      "question": "5",
+      "fichier": "figures/barriere.svg",
+      "legende": "Barrière de nucléation de la première bulle. Le maximum est atteint au rayon critique et le bilan énergétique change de signe à 1,5 fois ce rayon."
+    },
+    {
+      "numero": 4,
+      "question": "13",
+      "fichier": "figures/onde-acoustique.svg",
+      "legende": "Les zones colorées sont les alternances où le liquide reste métastable. La droite horizontale marque la pression de saturation."
+    },
+    {
+      "numero": 5,
+      "question": "29",
+      "fichier": "figures/gain.svg",
+      "legende": "Gain logarithmique du faisceau sonde. Les deux points à mi-hauteur sont séparés de ΓB en pulsation."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32"
+    ]
+  }
+}

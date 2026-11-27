@@ -1,0 +1,64 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_etudes-classiques-thucydide-et-la-puissance-oral_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Études classiques — Thucydide et la puissance (oral)",
+    "annee": 2019,
+    "modalite": "oral"
+  },
+  "intitule": "Le principe de puissance chez Thucydide",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/lettres-classiques-oral-sil2019-1.pdf",
+    "sujet_sha256": "0b0a697dfbaa7fcce81990ca5cf4c2022e25b5533560fc177326c5348d9bd5b3",
+    "index": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2019-lettres",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.ens.psl.eu/sites/default/files/lettres-classiques-oral-sil2019-1.pdf",
+        "sha256": "0b0a697dfbaa7fcce81990ca5cf4c2022e25b5533560fc177326c5348d9bd5b3",
+        "pages": 4
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/trois-scenes-de-parole.svg",
+      "question": "Exposé de spécialité",
+      "legende": "Trois usages d’une même idée de la puissance"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "oraux_lyon_et_anciens_corriges",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture des quatre pages bilingues, rédaction de l’exposé et de la méthode, vérification des locuteurs, des cinq demandes de la consigne et des trois scènes."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Consigne unique de l’exposé"
+    ],
+    "detail": [
+      "I, 75–76, origine du commandement, croissance de l’empire et plaidoyer à Sparte.",
+      "IV, 61–62, raisonnement d’Hermocrate sur l’intérêt athénien, l’accord sicilien et l’incertitude.",
+      "V, 105, 1–2, supposition sur les dieux et loi de domination prêtée aux hommes.",
+      "Conception thucydidéenne de l’histoire humaine, examinée par la comparaison des orateurs et l’issue des événements."
+    ]
+  }
+}

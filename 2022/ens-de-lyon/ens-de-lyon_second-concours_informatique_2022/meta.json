@@ -6,11 +6,15 @@
     "matiere": "Informatique",
     "annee": 2022
   },
-  "questions": 16,
+  "questions": 17,
   "redaction": "GPT-6.2 Astra · effort Ultra",
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2022/08/2c2022_info.pdf",
-    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2022/11/22_2cc_rap_eInfo.pdf"
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2022/11/22_2cc_rap_eInfo.pdf",
+    "sujet_sha256": "93baf1357d5b3dd7a1b8b847fc51b7930fcdd312c5e6ac136833b95bd78e5d90",
+    "rapport_sha256": "8e398b8b13fb42020bc57cc247e49d84d852c1b41df89c770d3df04aae9f91a0",
+    "index_banque": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/",
+    "index_banque_sha256": "36243e7203175ea8fc3f1b47cf04cfaeff13de5e6fe10463bd7d894a9fca4bfe"
   },
   "figures": [
     {
@@ -35,6 +39,57 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Rédaction intégrale des Q1 à Q16 dans les deux éditions, indications, deux schémas et simulations. Vérification sur les sept pages du PDF du sujet et le rapport du jury. Contrôle des traces FIFO/LRU/OPT, des cas limites de la chaîne, de la borne compétitive et du nombre de transferts avec un tampon réservé en sortie."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Vérification des 16 questions, dont les alinéas 8(a) et 8(b), de la trace complète de 12 demandes et des nombres de chargements FIFO/LRU/OPT 9, 7 et 6. Test des deux structures LRU sur 2 916 suites par édition. Contrôle de la borne compétitive, des cas de départ différents, du nombre de comparaisons et des volumes de lectures et d’écritures Q15–16 sur la pièce corrigée du jury.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
-  ]
+  ],
+  "questions_principales": 16,
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8(a)",
+      "8(b)",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "subdivisions_du_sujet": {
+      "8": [
+        "a",
+        "b"
+      ]
+    },
+    "precision": "16 rubriques principales et 17 consignes terminales repérées dans le fascicule officiel. Vérification des 16 questions, dont les alinéas 8(a) et 8(b), de la trace complète de 12 demandes et des nombres de chargements FIFO/LRU/OPT 9, 7 et 6. Test des deux structures LRU sur 2 916 suites par édition. Contrôle de la borne compétitive, des cas de départ différents, du nombre de comparaisons et des volumes de lectures et d’écritures Q15–16 sur la pièce corrigée du jury.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "relecture_corrige",
+      "perimetre": "Vérification des 16 questions, dont les alinéas 8(a) et 8(b), de la trace complète de 12 demandes et des nombres de chargements FIFO/LRU/OPT 9, 7 et 6. Test des deux structures LRU sur 2 916 suites par édition. Contrôle de la borne compétitive, des cas de départ différents, du nombre de comparaisons et des volumes de lectures et d’écritures Q15–16 sur la pièce corrigée du jury.",
+      "sha256_sujet_controle": "93baf1357d5b3dd7a1b8b847fc51b7930fcdd312c5e6ac136833b95bd78e5d90",
+      "sha256_rapport_controle": "8e398b8b13fb42020bc57cc247e49d84d852c1b41df89c770d3df04aae9f91a0"
+    }
+  }
 }

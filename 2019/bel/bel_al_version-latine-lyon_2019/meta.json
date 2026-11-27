@@ -1,0 +1,50 @@
+{
+  "slug": "bel_al_version-latine-lyon_2019",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Version latine (Lyon)",
+    "annee": 2019,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2019-10/2019%20Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=3",
+    "sujet_sha256": "584c45c92277aefe34fd083279dd477990f7568de569a3f8d169bd44313931e2",
+    "source_imprimee": "Quinte-Curce, « La destruction de Persépolis »",
+    "page_physique": 3
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française intégrale"
+    ],
+    "precision": "Lecture de la page physique 3 du fascicule officiel. Traduction intégrale du passage de Quinte-Curce, explication des constructions et du mouvement du texte, et figure."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "legende": "Comment le secours devient-il incendie ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture de la page physique 3 du fascicule officiel. Traduction intégrale du passage de Quinte-Curce, explication des constructions et du mouvement du texte, et figure."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

@@ -1,0 +1,68 @@
+{
+  "slug": "bel_bl_italien_2017",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Italien",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "Analyse et commentaire de textes ou documents en italien",
+  "questions": 1,
+  "redaction": "Le dossier demande d’analyser en italien les six documents sur la natalité, dont une campagne du ministère de la Santé et la réponse de Roberto Saviano.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/ecrits-communs-optionnels-ses-2017_1506587060551.pdf#page=30",
+    "pages": "30–35",
+    "sha256_sujet": "bdc658b34f2b80b696b7a912173f1ab822dae1d52727d0732ab0305166620e41",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/17_BL_italien_opt_ecrit.pdf",
+    "sha256_rapport_jury": "a965f12f5b6a3909b65e2f30f1812c6244ae88acee3e4b9e86df2f83b049140d",
+    "documents": [
+      "Matilde Serao, Il ventre di Napoli, daté 1884 dans le cahier",
+      "Anna Treves, Le nascite e la politica nell’Italia del Novecento, LED, 2001, p. 495–500",
+      "Eleonora Mazzoni, Le difettose, Einaudi, 2012, p. 3–8",
+      "Istat, Natalità e fecondità della popolazione residente, 28 novembre 2016",
+      "Campagna di comunicazione per il Fertility Day, 2016, logo et affiche à la clessidra",
+      "Roberto Saviano, page Facebook, 22 septembre 2016"
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Composition",
+      "fichier": "figures/fecondita-e-scelta.svg",
+      "legende": "Trois mesures de 2015 et les questions différentes auxquelles elles répondent."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du rapport de Céline Frigau Manning et Pierre Musitelli, contrôle des statistiques et examen visuel des deux éléments de la campagne."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Composition italienne sur les six pièces, lecture du cadre historique, des dénominateurs, de l’écriture du roman et du dispositif de communication. Indications distinctes sur l’interprétation des chiffres et de l’image."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Analyse et commentaire de la totalité du dossier en italien"
+    ]
+  }
+}

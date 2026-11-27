@@ -1,0 +1,64 @@
+{
+  "slug": "x-ens_mp-pc-psi_espagnol_2020",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Espagnol",
+    "annee": 2020,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "intitule": "Le modèle économique chilien à l’épreuve des mobilisations de 2019",
+  "sources": {
+    "code_garde": "XEULCR",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/11/2020_MPPC_sujet_Esp.pdf",
+    "sujet_sha256": "967ebe2f44f169420a911ec7ec9aba10d161f0ebbe1b240a866916d5d1992c2d",
+    "sujet_pages": "1–13",
+    "sujet_index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2020/",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/11/20_MP_PC_rap_eEsp-1.pdf",
+    "rapport_sha256": "eded966fcd02db2f8bc7a4770e5479e90f046c7777acafe944ecef8143f6e474",
+    "rapport_pages": "1–5",
+    "rapport_index": "https://banques-ecoles.fr/cms/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2020/",
+    "calendrier_rectificatif_psi": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/05/Coeffs_ENS_BqSc_2020_PSI.pdf",
+    "calendrier_rectificatif_psi_sha256": "3f777ee3561564cb9e84e6e9f5b59e491143ccd77495d592cf5731b97bc7ed49",
+    "calendrier_rectificatif_mp_pc": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000041939780"
+  },
+  "redaction": "Synthèse espagnole des quatre documents avec titre, lecture de l’iconographie, texte d’opinion sur le cinquième document, accompagnement pour les deux compositions et contrôle des longueurs.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/deux-cadrages-santiago.svg",
+      "legende": "Les deux photographies de Reuters précèdent la marche du vendredi relatée par Rocío Montes."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "espagnol_mp_pc_2011_2014",
+      "session": "espagnol_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Synthèse espagnole des quatre documents avec titre, lecture de l’iconographie, texte d’opinion sur le cinquième document, accompagnement pour les deux compositions et contrôle des longueurs.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  },
+  "longueurs_hors_titre": {
+    "synthese_mots": 621,
+    "opinion_mots": 520
+  }
+}

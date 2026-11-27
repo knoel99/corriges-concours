@@ -1,0 +1,59 @@
+{
+  "slug": "ens_mp-pc_espagnol-lv1_2010",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Espagnol (LV1)",
+    "annee": 2010,
+    "modalite": "écrit"
+  },
+  "questions": 3,
+  "intitule": "La crisis económica consolida la democracia en América Latina",
+  "bareme": {
+    "version": 12,
+    "expression": 8
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2010/MPI/mp-sujet-lv1.pdf#page=4",
+    "sujet_sha256": "05dc37885caedddf4858adb064ff462aa7a3a1748ac0b98339edfada8569615a",
+    "page_pdf": 4,
+    "index": "https://www.ens.psl.eu/rapports-et-sujets-2010-mpi",
+    "etablissements_imprimes": "ENS de Paris, Lyon et Cachan",
+    "texte_support": "Adaptation de elpais.com, 11 décembre 2009, résultats de Latinobarómetro 2009."
+  },
+  "redaction": "Version complète en français et deux réponses en espagnol de plus de 100 mots chacune. Distinction des indicateurs démocratiques, économiques et présidentiels, des prévisions, des points de pourcentage et des interprétations.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "2.2",
+      "fichier": "figures/objets-du-sondage.svg",
+      "legende": "Trois réponses politiques différentes dans l’enquête de 2009. Seul le soutien à l’économie de marché est chiffré ici pour les deux années."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version complète en français et deux réponses en espagnol de plus de 100 mots chacune. Distinction des indicateurs démocratiques, économiques et présidentiels, des prévisions, des points de pourcentage et des interprétations.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2.1",
+      "2.2"
+    ]
+  }
+}

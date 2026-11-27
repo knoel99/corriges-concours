@@ -10,6 +10,10 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Construire la dissertation
 
 Le libellé du 24 avril se termine par un point. Une conséquence est attendue par la construction « à trop… » mais n’est jamais fournie. La copie peut donc examiner successivement ce que l’excès fait à l’objet jugé, au sujet qui juge et à la portée même de la conclusion. Le jury demande un plan intégré à la prose. Les questions de ce guide servent à préparer les transitions.
@@ -27,6 +31,10 @@ Javert exerce une fonction de police et cherche à faire exécuter une décision
 
 ![Où commence l’excès du jugement ?](figures/lecture-du-sujet.svg)
 
+Mettez en regard deux propositions : « il a commis cet acte » et « il agira toujours ainsi ». Seule la seconde engage une prédiction illimitée. Dans la scène avec Javert, demandez quel geste devrait suffire à rouvrir cette prédiction.
+
+Mettez à l’épreuve le sens de « trop » avec deux variations. Un seul verdict peut empiéter sur ce que le juge ignore. Une seconde lecture peut au contraire limiter l’emprise du premier verdict. La dissertation doit ensuite établir ce qui se perd dans cet empiètement.
+
 ## Dissertation rédigée
 
 Au sortir des égouts de Paris, Javert tient de nouveau Jean Valjean à sa merci. Or cet homme lui a épargné la vie aux barricades. L’inspecteur accomplit d’abord plusieurs gestes de son métier puis laisse à Valjean la possibilité de lui échapper. Le chapitre « Javert déraillé », dans la cinquième partie des *Misérables*, donne à lire son trouble. Un classement qui conserve sa pertinence administrative, puisque Valjean est bien recherché, est devenu intenable comme verdict sur la personne. Javert n’est pas magistrat. C’est précisément l’intérêt du cas : on peut se mettre à juger toute une existence dans l’exercice d’un pouvoir qui ne vous charge pas de prononcer pareil jugement.
@@ -36,6 +44,8 @@ Le sujet a la forme d'une sentence inachevée. « À trop juger » rappelle les 
 On se demandera donc ce que l'on perd à trop juger, et si ce danger appelle à juger moins ou à juger autrement. On verra d'abord qu'à trop juger, on manque ce que l'on juge, parce que le général écrase le singulier ; ensuite qu'à trop juger, on se perd soi-même, parce que le juge s'expose au jugement et que l'excès naît d'une disproportion propre à l'homme ; enfin que le remède n'est pas de renoncer à juger, car l'abstention est une autre démesure, mais d'apprendre au jugement à se mesurer lui-même.
 
 À trop juger, on manque d’abord l’objet du jugement. Une qualification peut être exacte dans ses limites. Si je la convertis en réponse à toute question nouvelle sur la personne qualifiée, j’étends son ressort au-delà de ce qu’elle établit. Chez Hugo, l’erreur judiciaire qui menace Champmathieu rappelle d’ailleurs que la reconnaissance policière elle-même peut faillir. L’embarras final de Javert ne se réduit pourtant pas à une confusion d’identité : il sait précisément qui l’a délivré. Aristote, au livre V de l’*Éthique à Nicomaque*, montre que l’universalité de la loi peut la rendre défectueuse dans un cas qu’elle ne pouvait prévoir exactement. L’équité rétablit ce que le législateur aurait décidé devant ce cas. La règle de plomb des bâtisseurs de Lesbos épouse la pierre pour bien la mesurer. C’est la généralisation indue du verdict, même correctement formulé dans son domaine, qui constitue ici la démesure.
+
+La faute dont Javert connaît le dossier appartient au passé. Le geste par lequel Valjean lui laisse la vie sauve introduit un fait nouveau dont son jugement devrait pouvoir répondre. L’excès commence lorsque le prédicat de forçat détermine à l’avance le sens de tout geste ultérieur. Plus aucun fait ne pourrait alors compter comme une objection : en ce sens, la répétition du verdict finit par rendre le jugement impossible.
 
 Ce défaut ne concerne pas que les tribunaux ; il menace tout jugement qui prend sa propre mesure pour la mesure de toutes choses. Montaigne, dans « Des cannibales », raconte ce qu'on sait des Indiens du Brésil et retourne contre ses lecteurs leur indignation : « chacun appelle barbarie ce qui n'est pas de son usage ». Les Européens qui jugent les cannibales barbares jugent trop, parce qu'ils jugent selon la seule règle de leur coutume, et Montaigne n'a pas de peine à montrer que les guerres de religion de son temps sont plus cruelles que les festins qu'ils condamnent. Pascal en tire une leçon plus amère dans les *Pensées* : « Plaisante justice qu'une rivière borne ! Vérité au deçà des Pyrénées, erreur au-delà. » Le jugement qui se croit universel n'est souvent que local. À trop juger, on ne connaît plus l'autre : on ne connaît que sa propre règle, appliquée hors de son domaine.
 
@@ -54,6 +64,8 @@ D'où vient cette pente à trop juger ? Descartes en donne la raison dans la qua
 Faut-il conclure qu'il faudrait cesser de juger ? Ce serait oublier que l'abstention est une décision, et qu'elle a ses propres victimes.
 
 L’abstention elle-même appelle donc un examen. Dans *Eichmann à Jérusalem*, Arendt interroge l’usage par l’accusé de formules d’obéissance et de devoir. La conformité aux ordres ne décharge pas de la responsabilité de juger ce que l’on fait. Ce cas n’autorise pourtant ni à réduire un acteur du génocide à un automate ni à effacer l’engagement des responsables. Il indique comment deux erreurs en apparence opposées peuvent procéder d’une même démission. L’une absout l’acte au seul motif qu’il est ordonné ; l’autre condamne toute une personne en déduisant son être d’une seule catégorie. Dans les deux cas, on prête à une règle une portée qu’il aurait fallu juger.
+
+Une copie de concours fournit une épreuve simple de cette mesure. Elle contient une erreur démontrable. Le correcteur peut légitimement la signaler et diminuer la note. En concluant que son auteur est incapable de raisonner, il excéderait sa preuve dès la première appréciation. Supposons maintenant qu’un second lecteur, alerté par une solution inattendue, reprenne le raisonnement ligne à ligne. Il porte davantage de jugements, mais peut rendre la note plus juste. Ce que fait perdre le « trop » apparaît ainsi avec précision. Le premier correcteur substituait au travail présent une identité arrêtée qui devait valoir pour tous les travaux à venir. Le second laisse au détail singulier le pouvoir de déplacer le critère dont il était parti.
 
 Comment se régler, dès lors ? La prudence chez Aristote suppose une expérience des situations particulières ; l’équité corrige la généralité légale là où celle-ci manquerait sa fin. Kant distingue, dans l’introduction de la *Critique de la faculté de juger*, l’opération qui rapporte le particulier à un universel donné de celle qui cherche l’universel quand le particulier seul est donné. Il ne suffit donc pas de conseiller une indulgence automatique ni de privilégier le cas singulier par principe. Le jugement de mon acte peut demeurer ferme tout en laissant ouverte la possibilité que je me transforme. La question utile est de savoir ce que je suis autorisé à conclure de ce que je viens d’établir.
 

@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le sujet étudie le spectre des graphes finis, depuis le minimax jusqu’aux cisaillements de Gabber–Galil. Sauf mention contraire, une somme sur les arêtes non orientées compte chaque paire voisine une seule fois. Le rapport du jury précise deux coquilles de notation dans les définitions.
 
 ## I. Spectre du laplacien d’un graphe
@@ -188,6 +190,8 @@ Les permutations préservent la somme des coordonnées, donc stabilisent $F=\mat
 
 Notons $f_M(g)=\operatorname{Tr}(\widetilde\rho(g)M)$. Si $f_M=0$, la question précédente donne $\operatorname{Tr}(BM)=0$ pour tout $B\in\operatorname{End}(F)$. Prendre $B=M^t$ donne $M=0$. En écrivant les trois voisins à droite, on obtient $T_G f_M=f_{A_F M}$, où $A_F=3I-\widetilde\rho(a)-\widetilde\rho(a^{-1})-\widetilde\rho(b)$ est la restriction à $F$ de la matrice $A$ affichée. Ainsi il faut et il suffit que $M\ne0$ et $(A_F-\lambda I)M=0$, autrement dit que $\lambda$ soit valeur propre de $A_F$. En effet on peut choisir n’importe quelle application non nulle vers l’espace propre. La droite des constantes est dans le noyau de $A$ et le facteur $x$ du polynôme fourni est simple. Les valeurs sur $F$ sont donc $2,5,(7-\sqrt{17})/2,(7+\sqrt{17})/2$.
 
+On peut vérifier le facteur quadratique admis sur la matrice du feuillet. Le renversement qui échange $1$ avec $4$ et $2$ avec $3$, en fixant $5$, commute avec $A$. Sur les vecteurs $(a,b,-b,-a,0)$, la matrice réduite est $\left(\begin{smallmatrix}3&-2\\-2&4\end{smallmatrix}\right)$, de polynôme caractéristique $X^2-7X+8$. Sur les vecteurs symétriques de $F$, écrits $(a,b,b,a,-2a-2b)$, elle devient $\left(\begin{smallmatrix}5&0\\-2&2\end{smallmatrix}\right)$. Ces deux plans sont en somme directe dans $F$. On retrouve les quatre valeurs propres et le cinquième mode, constant, est annulé par $A$.
+
 ### Question II.3c
 
 > [!INDICATION]
@@ -338,6 +342,8 @@ Comme $\det A=\pm1$, son inverse a des coefficients entiers et induit l’invers
 #### Solution
 
 Les pas unitaires engendrent $H_n$, donc le graphe est connexe. Il est invariant par translation, de degré quatre pour $n\ge3$, mais de degré deux pour $n=2$ car les pas opposés y coïncident. Les $n^2$ caractères $\chi_{(r,s)}$ sont orthogonaux et forment une base complexe d’après les sommes géométriques de IV.1a. Pour $n\ge3$, la valeur propre associée est $4-2\cos(2\pi r/n)-2\cos(2\pi s/n)$. La plus petite non nulle est $2-2\cos(2\pi/n)$, atteinte par $(1,0)$. Pour $n=2$, le graphe est un cycle de longueur quatre et la formule adaptée est $2-(-1)^r-(-1)^s$, d’où $\lambda_2=2$. La matrice étant réelle symétrique, sa complexification conserve le spectre et ses multiplicités.
+
+Dans le cas $n=2$, les quatre caractères indexés par $(0,0),(1,0),(0,1),(1,1)$ ont respectivement les valeurs propres $0,2,2,4$. Leur somme vaut $8$, la trace du laplacien de quatre sommets de degré deux. Cela contrôle la convention du graphe simple lorsque deux pas coïncident.
 
 ### Question IV.2a
 

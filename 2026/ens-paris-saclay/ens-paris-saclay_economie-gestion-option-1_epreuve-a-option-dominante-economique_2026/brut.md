@@ -6,6 +6,12 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+**Couverture vérifiée.** La composition de la page 2 est traitée dans les deux éditions. La relecture a porté sur les revendications antérieures aux indépendances, les nationalisations, les politiques industrielles et les contraintes monétaires de la fin du siècle. Le changement de parité du franc CFA en 1994 est vérifié dans la chronologie de la BEAC et appliqué aux achats comme aux recettes d’exportation.
+
 ## Dans quelle mesure peut-on parler de décolonisation économique au vingtième siècle ?
 
 L’Inde accède à l’indépendance en 1947. Quatre ans plus tard s’ouvre le premier plan quinquennal indien. L’écart entre ces deux dates est révélateur. La souveraineté politique donne à un gouvernement le pouvoir de définir des priorités économiques, mais la capacité de les financer, de les mettre en œuvre et d’en distribuer les bénéfices se construit dans la durée. L’économie coloniale avait organisé le prélèvement fiscal, les circuits de crédit, les infrastructures et l’accès aux marchés selon des rapports de pouvoir qui survivent parfois au départ de l’administrateur. On entendra par décolonisation économique le transfert effectif du pouvoir de décider de l’usage des ressources, de l’accumulation et des relations extérieures. Comment apprécier l’ampleur de ce transfert au vingtième siècle, sans confondre une dépendance économique ordinaire avec la persistance d’une domination coloniale ?
@@ -26,9 +32,15 @@ D’autres pays cherchent d’abord à maîtriser leurs produits d’exportation
 
 Ces stratégies ont une dimension collective. La conférence de Bandung en 1955 exprime une volonté d’action politique commune. La création de la CNUCED en 1964, puis l’appel de l’Assemblée générale de l’ONU à un nouvel ordre économique international en 1974, portent sur les règles du commerce, les matières premières, les transferts techniques et le financement. La critique de Prebisch met l’accent sur la vulnérabilité des économies spécialisées dans certains produits primaires et sur la distribution inégale des gains du progrès technique. La détérioration des termes de l’échange n’est toutefois ni universelle pour tous les produits, ni continue d’une année à l’autre. Un programme revendiqué dans une résolution ne garantit pas davantage sa mise en œuvre. Il atteste que les nouveaux États se présentent collectivement comme auteurs des règles.
 
+La nationalisation d’une ressource permet de distinguer trois transformations. La propriété peut être transférée par un acte juridique. Les recettes disponibles dépendent ensuite du prix mondial, des volumes exportés et des contrats. Leur conversion en capacités productives exige encore des compétences, des équipements et des débouchés. La date d’un transfert de propriété donne ainsi un repère précis pour étudier un processus dont les autres rythmes restent à établir.
+
+![Figure 1 — Trois degrés de maîtrise économique](figures/degres-maitrise.svg)
+
 ### III. La fin du siècle dissocie souveraineté, autonomie financière et transformation productive
 
 La continuité de certaines monnaies et de certains réseaux d’entreprise donne du contenu à la critique du néocolonialisme. Plusieurs États africains indépendants conservent le franc CFA avec une parité garantie par la France. Leur appartenance à une union monétaire facilite certains paiements tout en limitant leur capacité individuelle de modifier le change. La dévaluation de 1994 révèle le rôle des négociations entre États africains, France et institutions financières. On ne peut déduire le degré d’autonomie de la seule présence de partenaires étrangers. Il faut examiner les droits de décision, les coûts de sortie, les possibilités de financer une autre politique et les intérêts des acteurs nationaux.
+
+Au 12 janvier 1994, un franc français s’échange contre 100 francs CFA, contre 50 auparavant. Une pièce de machine vendue 20 francs français revient donc à 2 000 francs CFA au lieu de 1 000, si le fournisseur garde son prix. À l’inverse, une vente de cacao réglée 20 francs français rapporte désormais 2 000 francs CFA à l’exportateur. La part de ce gain qui atteint le cultivateur dépend du prix payé à la production et des prélèvements. La même négociation monétaire modifie ainsi de façon différente la capacité d’investissement de l’importateur et le revenu des producteurs. [Chronologie monétaire de la BEAC](https://www.beac.int/billets-pieces/histoire-franc-cfa/)
 
 Les difficultés d’endettement des années 1980 font apparaître un autre type de contrainte. La remontée des taux internationaux, la dégradation de recettes d’exportation ou des investissements peu productifs rendent le refinancement difficile. L’accès à de nouveaux concours peut être assorti de programmes d’ajustement, qui limitent les marges budgétaires et reconfigurent les entreprises publiques. La dépendance envers des créanciers multilatéraux ou privés ne reproduit pas institutionnellement l’empire. Elle peut cependant réduire le choix des priorités dans un État juridiquement souverain. Les coalitions au pouvoir y participent aussi, et les coûts d’une politique peuvent être très inégalement distribués entre producteurs agricoles, salariés des villes et détenteurs de capitaux.
 

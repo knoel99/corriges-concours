@@ -1,0 +1,138 @@
+{
+  "slug": "ens-de-lyon_second-concours_informatique_2005",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Informatique",
+    "annee": 2005,
+    "duree_heures": 3
+  },
+  "questions": 25,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours/session-2005/sujet-ecrit-2005-second-concours_informatique.pdf",
+    "index_banque": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/",
+    "sujet_sha256": "3c41ef669eafd2c8308fad1180cdc20019aac724e96dd09b3262ac94949ee3cd",
+    "index_banque_sha256": "36243e7203175ea8fc3f1b47cf04cfaeff13de5e6fe10463bd7d894a9fca4bfe"
+  },
+  "figures": [
+    {
+      "fichier": "figures/quatre-pas.svg",
+      "question": "5.2",
+      "legende": "Figure 1 — Les deux facteurs couvrent quatre indices consécutifs. Le bloc de droite agit en premier sur le vecteur."
+    },
+    {
+      "fichier": "figures/restes-a-quatre-points.svg",
+      "question": "8.3",
+      "legende": "Figure 2 — Aux points 0, 1, 2 et 3, les restes successifs de x³ + 1 donnent quatre valeurs scalaires."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Huit questions et leurs 25 sous-questions sur le fac-similé. Comptes exacts, produits ordonnés, arbre de sous-produits et descente des restes, vérifications de translation et de blocs non commutatifs."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Confrontation des six pages, des 25 subdivisions et des deux diagrammes. Vérification des coûts par produit scalaire, du cas imprimé n=2 puissance 14, du sens non commutatif des produits, des sommes de coûts dyadiques et du traitement des coefficients de degré maximal. L’index officiel ne fournit pas de rapport écrit d’informatique pour la session.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
+    }
+  ],
+  "questions_principales": 8,
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "2.1",
+      "2.2",
+      "2.3",
+      "3.1",
+      "3.2",
+      "3.3",
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "5.1",
+      "5.2",
+      "6.1",
+      "6.2",
+      "6.3",
+      "6.4",
+      "7.1",
+      "7.2",
+      "8.1",
+      "8.2",
+      "8.3",
+      "8.4"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "subdivisions_du_sujet": {
+      "1": [
+        "1",
+        "2",
+        "3"
+      ],
+      "2": [
+        "1",
+        "2",
+        "3"
+      ],
+      "3": [
+        "1",
+        "2",
+        "3"
+      ],
+      "4": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "5": [
+        "1",
+        "2"
+      ],
+      "6": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "7": [
+        "1",
+        "2"
+      ],
+      "8": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    "precision": "8 rubriques principales et 25 consignes terminales repérées dans le fascicule officiel. Confrontation des six pages, des 25 subdivisions et des deux diagrammes. Vérification des coûts par produit scalaire, du cas imprimé n=2 puissance 14, du sens non commutatif des produits, des sommes de coûts dyadiques et du traitement des coefficients de degré maximal. L’index officiel ne fournit pas de rapport écrit d’informatique pour la session.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "relecture_corrige",
+      "perimetre": "Confrontation des six pages, des 25 subdivisions et des deux diagrammes. Vérification des coûts par produit scalaire, du cas imprimé n=2 puissance 14, du sens non commutatif des produits, des sommes de coûts dyadiques et du traitement des coefficients de degré maximal. L’index officiel ne fournit pas de rapport écrit d’informatique pour la session.",
+      "sha256_sujet_controle": "3c41ef669eafd2c8308fad1180cdc20019aac724e96dd09b3262ac94949ee3cd"
+    }
+  }
+}

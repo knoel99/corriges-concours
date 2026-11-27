@@ -1,0 +1,141 @@
+{
+  "slug": "ens_pc_physique-pc2_2010",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "PC",
+    "matiere": "Physique PC2",
+    "annee": 2010
+  },
+  "questions": 44,
+  "intitule": "Diffraction, fluorescence et microscopies STED et PALM",
+  "redaction": "Rédaction des 44 questions et sous-questions des quatre parties. Calcul de diffraction à forte ouverture, développement des échanges énergétiques, étude du signal STED et séparation statistique des molécules en PALM. Contrôle de la numérotation sur le cahier et des applications numériques.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2010/PC/pc-sujet-physique2.pdf",
+    "sujet_sha256": "dbbcf8b4ffa6fd56ad76229ddef977628f435361a77ffdde88ec7fe8b6cca0be",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2010/PC/pc-ecrit-physique2.pdf",
+    "rapport_sha256": "67f7de5fe172ddbdd5c23185522b93ec4368393df17a69baaa38f6c82eb2932d",
+    "ecoles_indiquees_sur_le_sujet": [
+      "ENS de Lyon",
+      "ENS de Cachan"
+    ]
+  },
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "physique_mp_suite",
+      "session": "physique_mp_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du cahier scanné de douze pages et du rapport du jury rédigé par Marc Ménétrier. Vérification des figures originales et des exposants des données numériques. Les questions de géométrie respectent le stigmatisme à large ouverture, et la comparaison des profils STED comporte les largeurs et les hauteurs caractéristiques."
+    },
+    {
+      "phase": "redaction",
+      "agent": "physique_mp_suite",
+      "session": "physique_mp_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des 44 questions et sous-questions des quatre parties. Calcul de diffraction à forte ouverture, développement des échanges énergétiques, étude du signal STED et séparation statistique des molécules en PALM. Contrôle de la numérotation sur le cahier et des applications numériques."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A.1.2.a",
+      "fichier": "figures/projections-de-malus.svg",
+      "legende": "À gauche, OQ est la projection du rayon de la pupille sur la direction incidente. À droite, F′N est la projection du déplacement image sur le rayon marginal. Les variations de phase se compensent."
+    },
+    {
+      "numero": 2,
+      "question": "A.2.1.b",
+      "fichier": "figures/deux-points-objets.svg",
+      "legende": "Chaque point objet donne une tache centrée sur son image géométrique. Le cercle représente le premier minimum de diffraction."
+    },
+    {
+      "numero": 3,
+      "question": "B.1.5",
+      "fichier": "figures/echanges-matiere-champ.svg",
+      "legende": "Modèles d’allures de l’oscillation réelle. Le train appliqué se termine au temps réduit 1 dans les deux premiers cas. Les tirets indiquent l’enveloppe."
+    },
+    {
+      "numero": 4,
+      "question": "C.1.1.b",
+      "fichier": "figures/demi-fentes-en-opposition.svg",
+      "legende": "La demi-lame fait disparaître le maximum axial. Les premiers maxima sont à environ 0,74 unité de part et d’autre du centre."
+    },
+    {
+      "numero": 5,
+      "question": "C.1.2.c",
+      "fichier": "figures/pompage-et-depletion.svg",
+      "legende": "Le maximum de pompage est sur l’axe. La déplétion, nulle au centre, atteint son maximum à un rayon w."
+    },
+    {
+      "numero": 6,
+      "question": "C.2.1",
+      "fichier": "figures/fluorescence-centrale.svg",
+      "legende": "Illustration en pompage faible et à saturation de déplétion localement constante, pour I₁ / Iₛ = 100. Les tirets verticaux repèrent l’estimation du rayon central à 0,2 w."
+    },
+    {
+      "numero": 7,
+      "question": "D.3.1",
+      "fichier": "figures/profil-de-localisation.svg",
+      "legende": "La position du centre peut être estimée à partir d’un ensemble de détections distribuées sur toute la tache."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A.1.1.a",
+      "A.1.1.b",
+      "A.1.1.c",
+      "A.1.1.d",
+      "A.1.2.a",
+      "A.1.2.b",
+      "A.1.2.c",
+      "A.2.1.a",
+      "A.2.1.b",
+      "A.2.1.c",
+      "A.2.1.d",
+      "A.2.2",
+      "A.2.3",
+      "B.1.1",
+      "B.1.2.a",
+      "B.1.2.b",
+      "B.1.3",
+      "B.1.4",
+      "B.1.5",
+      "B.2.1",
+      "B.2.2.a",
+      "B.2.2.b",
+      "C.1.1.a",
+      "C.1.1.b",
+      "C.1.1.c",
+      "C.1.2.a",
+      "C.1.2.b",
+      "C.1.2.c",
+      "C.1.2.d",
+      "C.2.1",
+      "C.2.2",
+      "C.2.3",
+      "D.1",
+      "D.2.1",
+      "D.2.2",
+      "D.2.3",
+      "D.2.4",
+      "D.3.1",
+      "D.3.2",
+      "D.3.3",
+      "D.4",
+      "D.5",
+      "D.6",
+      "D.7"
+    ]
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "slug": "x-ens_psi_maths-psi_1997",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "annee": 1997,
+    "matiere": "Maths PSI",
+    "modalite": "écrit"
+  },
+  "intitule": "Composition de mathématiques",
+  "theme": "Systèmes différentiels autonomes. Solutions approchées. Ensembles invariants.",
+  "organisateurs": "École polytechnique et École normale supérieure de Cachan",
+  "identification": "Bandeau des annales « Cachan et Polytechnique », logo ENS, 1997 ; filière recoupée par la notice UPS et le livre de la session.",
+  "questions": 29,
+  "sources": {
+    "sujet": "https://www.sujetsetcorriges.fr/dl/X/Maths/PSI/sec-x-1997-maths-PSI.pdf",
+    "sha256_sujet": "585d278223b87747c72bbd66aa5b98cd3d68b40e8871f67f5b9d12abbc34800c",
+    "pages_sujet": 5,
+    "collection": "https://www.sujetsetcorriges.fr/cpge-spe/x/x-mathematiques/x-ens-maths-psi/",
+    "notice_ups": "m97hsu",
+    "pieces_ups": [
+      {
+        "id": "m97hsu",
+        "type": "énoncé",
+        "auteur": "UPS",
+        "source": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-667cd872d5bb1662ff04",
+        "sha256": "90c93edf46dd036ff3dded90268201118361c2e237d72e871bcf8c3a8bd0b90a"
+      },
+      {
+        "id": "m97hsu",
+        "type": "corrigé",
+        "auteur": "Michel Quercia",
+        "source": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-e3d9db9ef98ce705184f",
+        "sha256": "97db4f3dcbfc08bcd8ba391d53570d9d79eb78a09dd973659ba76c7046f1ba1a"
+      }
+    ],
+    "recoupement": "https://link.springer.com/book/9783540639152",
+    "rapport_jury": null,
+    "precision_rapport": "Aucun rapport de jury identifié dans les deux collections consultées."
+  },
+  "figures": [
+    {
+      "fichier": "figures/figure-1.svg",
+      "question": "I-3.b",
+      "legende": "Euler explicite et implicite pour la solution exponentielle"
+    },
+    {
+      "fichier": "figures/figure-2.svg",
+      "question": "III-3",
+      "legende": "Projection sur un disque et normale extérieure"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "x_maths_b_recentes",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Contrôle de la garde et des parties du fac-similé, résolution de chaque consigne dans les deux éditions, indications par subdivision, figures mathématiques originales et rapprochement avec la notice UPS."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I-1.a",
+      "I-1.b",
+      "I-1.c",
+      "I-1.d",
+      "I-2.a",
+      "I-2.b",
+      "I-2.c",
+      "I-2.d",
+      "I-3.a",
+      "I-3.b",
+      "II-1",
+      "II-2",
+      "II-3",
+      "II-4",
+      "II-5",
+      "II-6",
+      "II-7.a",
+      "II-7.b",
+      "II-7.c",
+      "II-8",
+      "III-1",
+      "III-2",
+      "III-3",
+      "III-4",
+      "III-5",
+      "III-6",
+      "III-7",
+      "III-8.a",
+      "III-8.b"
+    ],
+    "precision": "Contrôle de la garde et des parties du fac-similé, résolution de chaque consigne dans les deux éditions, indications par subdivision, figures mathématiques originales et rapprochement avec la notice UPS.",
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "perimetre": "Contrôle de la garde et des parties du fac-similé, résolution de chaque consigne dans les deux éditions, indications par subdivision, figures mathématiques originales et rapprochement avec la notice UPS.",
+      "sha256_sujet_controle": "585d278223b87747c72bbd66aa5b98cd3d68b40e8871f67f5b9d12abbc34800c"
+    }
+  }
+}

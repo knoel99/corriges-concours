@@ -11,7 +11,14 @@
   "sources": {
     "sujet": "https://www.ens.psl.eu/IMG/file/concours/2014/MPI/14_sujet_mathC_MP.pdf",
     "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2014/MPI/14_mp_rap_ecrit_mathC.pdf",
-    "sha256_sujet": "86951f16a1578e0dc9eb318aae12a76440434019186839e72f8ad91d725c4edc"
+    "sha256_sujet": "86951f16a1578e0dc9eb318aae12a76440434019186839e72f8ad91d725c4edc",
+    "index_banque": "https://www.ens.psl.eu/rapports-et-sujets-mpi-2014",
+    "index_banque_sha256": "e3415bb4542ba01e540c302112b1bc9bc7923fbea15d45b25e2c9de51b523e9e",
+    "rapport": "https://www.ens.psl.eu/IMG/file/concours/2014/MPI/14_mp_rap_ecrit_mathC.pdf",
+    "sujet_sha256": "86951f16a1578e0dc9eb318aae12a76440434019186839e72f8ad91d725c4edc",
+    "sujet_pages": 7,
+    "rapport_sha256": "35d0236fcbe873040837deea40f39aeceb821f7eec4c1afcb5c0931c2d28aa72",
+    "rapport_pages": 3
   },
   "figures": [
     {
@@ -31,6 +38,80 @@
       "perimetre": "Rédaction intégrale à partir du sujet ULCR et du rapport du jury. Vérification des minima atteints, des inclusions fermées, du seuil angulaire et des constantes de la moyenne. Courbes originales issues de la réduction du réseau.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Vérification des 47 alinéas, des ensembles de candidats entiers aux minima, de la comparaison des aires et du calcul de l’intégrale angulaire tronquée. Contrôle des constantes du conditionnement et des deux minima de la figure du sujet pour un angle intérieur et pour les orientations axiales.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A.I.1",
+      "A.I.2",
+      "A.I.3",
+      "A.I.4",
+      "A.I.5",
+      "A.II.1",
+      "A.II.2",
+      "A.II.3",
+      "A.II.4",
+      "A.II.5",
+      "B.I.1.a",
+      "B.I.1.b",
+      "B.I.2",
+      "B.II.1",
+      "B.II.2.a",
+      "B.II.2.b",
+      "B.II.2.c",
+      "B.III.1",
+      "B.III.2",
+      "B.III.3",
+      "B.III.4.a",
+      "B.III.4.b",
+      "B.III.4.c",
+      "B.III.4.d",
+      "C.I.1",
+      "C.I.2",
+      "C.I.3",
+      "C.I.4",
+      "C.I.5",
+      "C.I.6",
+      "C.II.1",
+      "C.II.2",
+      "C.II.3",
+      "C.II.4",
+      "C.III.1",
+      "C.III.2",
+      "C.III.3.a",
+      "C.III.3.b",
+      "C.III.3.c",
+      "C.III.3.d",
+      "C.III.4",
+      "C.III.5",
+      "C.III.6",
+      "D.I.1",
+      "D.I.2.a",
+      "D.I.2.b",
+      "D.II"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "precision": "Vérification des 47 alinéas, des ensembles de candidats entiers aux minima, de la comparaison des aires et du calcul de l’intégrale angulaire tronquée. Contrôle des constantes du conditionnement et des deux minima de la figure du sujet pour un angle intérieur et pour les orientations axiales.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "relecture_corrige",
+      "perimetre": "Vérification des 47 alinéas, des ensembles de candidats entiers aux minima, de la comparaison des aires et du calcul de l’intégrale angulaire tronquée. Contrôle des constantes du conditionnement et des deux minima de la figure du sujet pour un angle intérieur et pour les orientations axiales.",
+      "sha256_sujet_controle": "86951f16a1578e0dc9eb318aae12a76440434019186839e72f8ad91d725c4edc",
+      "sha256_rapport_controle": "35d0236fcbe873040837deea40f39aeceb821f7eec4c1afcb5c0931c2d28aa72"
+    }
+  }
 }

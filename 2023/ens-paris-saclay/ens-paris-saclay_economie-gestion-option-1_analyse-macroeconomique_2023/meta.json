@@ -1,0 +1,64 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_analyse-macroeconomique_2023",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Analyse macroéconomique",
+    "annee": 2023,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "L’innovation est-elle nécessaire pour résoudre la crise écologique ?",
+  "gabarit": "dissertation",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2023_sujet_ecrit_ecoG_macro_jeudi_2023.pdf",
+    "sujet_sha256": "f093e4a2778918e980e8488ec64340cb5c11a3a595b2eef3d4f35d4a7586d198",
+    "pages_sujet": "2 du PDF officiel",
+    "index": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=289&field_year_target_id%5B%5D=583&page=1",
+    "documents": [
+      {
+        "annee": 2023,
+        "role": "sujet",
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2023_sujet_ecrit_ecoG_macro_jeudi_2023.pdf",
+        "index": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=289&field_year_target_id%5B%5D=583&page=1",
+        "pages": 2,
+        "sha256": "f093e4a2778918e980e8488ec64340cb5c11a3a595b2eef3d4f35d4a7586d198"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/efficacite-et-echelle.svg",
+      "question": "Composition",
+      "legende": "Avec des émissions unitaires réduites de 30 %, l’effet sur les émissions totales dépend du nombre d’unités produites. Le seuil de compensation est 142,86 unités pour 100 au départ."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "gestion_2022_2023",
+      "agent": "gestion_2022_2023",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Dissertation complète, guide méthodologique et comparaison quantitative illustrée : émissions totales pour une même innovation technique."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Composition"
+    ],
+    "limites": "Une proposition argumentée, située à la date du concours ; les exemples chiffrés illustratifs sont explicités."
+  }
+}

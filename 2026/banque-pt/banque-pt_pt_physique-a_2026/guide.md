@@ -10,6 +10,10 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+Le feuillet à rendre occupe les pages 14 à 17 du PDF. La courbe de décantation se trouve page 16, entre deux pages barrées. [Feuillet officiel, p. 16](https://www.banquept.fr/documents/2026/ph_a_2026_pt.pdf#page=16) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2026/rapport_phys_a_ecrit_2026.pdf#page=1)
+
 ## Présentation du sujet
 
 **Format.** Épreuve de 4 heures, **calculatrice interdite**, 12 pages d'énoncé et **50 questions**, plus une annexe à rendre obligatoirement (la reproduction de la figure 3, à compléter à la question 6). Les résultats numériques sans unité ou avec une unité fausse ne sont pas comptés, et les résultats non justifiés non plus.
@@ -199,6 +203,8 @@ Contrôle : $e^{-x}=1-x+x^2/2+o(x^2)$ donne $f(x)\simeq x^2/2$ pour $x\ll1$, d'o
 > [!JURY]
 > La question demande d'expliciter toutes les étapes et de compléter l'annexe : une valeur lue sans tracé ni démarche ne suffit pas. Le rapport 2026 note que « plusieurs erreurs de lecture sur la figure 3 ont été constatées : il convient de manipuler les axes logarithmiques avec soin ».
 
+La lecture peut être encadrée directement : $f(0{,}33)\simeq0{,}0489$ et $f(0{,}34)\simeq0{,}0518$. Comme $f'(x)=1-e^{-x}>0$ pour $x>0$, l'intersection est unique et $0{,}297<\tau_s<0{,}306$ s. Le dixième de seconde est une précision adaptée au tracé.
+
 ### Question 7
 
 > [!INDICATION]
@@ -216,9 +222,9 @@ $$\boxed{f(x)\simeq x}$$
 En log-log, cela s'écrit $\log f\simeq\log x$ : une droite de pente 1 passant par les points $(10^k,10^k)$. Voir une droite ne suffit pas, car toute loi $f\simeq Kx^n$ en donne une. On vérifie donc deux choses sur la figure 3 :
 
 - la pente : pour $x\gtrsim10$, la courbe monte d'une décade par décade, donc $n=1$ ;
-- le coefficient : elle passe par $(10^2,10^2)$ et $(10^4,10^4)$, donc $K=1$.
+- le coefficient : la courbe se rapproche de la diagonale $f=x$. Les rapports $f(100)/100$ et $f(1\,000)/1\,000$ valent environ 0,99 et 0,999, ce qui fixe le coefficient asymptotique à 1.
 
-L'approximation est confirmée pour $x\gtrsim10^2$. L'écart relatif vaut $1/x$, soit 10 % en $x=10$.
+L'approximation est confirmée pour $x\gtrsim10^2$. L'écart relatif rapporté à $x$ vaut $(1-e^{-x})/x\simeq1/x$, soit 10 % en $x=10$.
 
 > [!JURY]
 > Rapport 2026 : « Les réponses aux questions 6 et 7 font apparaître chez de trop nombreux candidats un manque de maîtrise de l'échelle logarithmique. En particulier, observer une droite en échelle log-log ne permet pas de confirmer l'approximation f(x)=x à x grand. »
@@ -792,6 +798,8 @@ D'après la valeur calculée, $Re\ll2\times10^3$ : **écoulement laminaire**, do
 > [!JURY]
 > Rapport 2026 : « Le jury déplore par ailleurs des affirmations infondées du type « l'écoulement est laminaire » sans calcul préalable du nombre de Reynolds : cette absence d'honnêteté scientifique est sanctionnée. »
 
+La vitesse de croissance d'une goutte visible dépend de sa section. Elle ne mesure pas directement la vitesse moyenne dans le pore. Le profil de Q38 donne après intégration $\bar v=\Delta P R^2/(8\eta e)=0{,}625\ \mathrm{m\,s^{-1}}$. Il conduit à $Re=12{,}5$, ce qui confirme le régime laminaire. La qualification d'écoulement rampant dépend donc de la vitesse choisie en première estimation.
+
 ### Question 34
 
 > [!INDICATION]
@@ -1168,6 +1176,8 @@ La marche de la pompe dure 15 secondes de moins que le maximum prescrit. Deux al
 
 > [!JURY]
 > Rapport 2026 : « la dernière question invitait à une vérification chiffrée des préconisations du constructeur : se contenter d'affirmer « les préconisations sont respectées » sans calcul dessert le candidat ».
+
+Sur un cycle, le bilan de volume offre une vérification indépendante. La pompe fournit $1\,000\times3{,}75=3\,750$ L et le réseau distribue $600\times(3{,}75+2{,}50)=3\,750$ L. Le vase retrouve son volume initial. La pompe fonctionne pendant $3{,}75/6{,}25=60\,\%$ du temps.
 
 ## Bilan
 

@@ -6,17 +6,27 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+**Couverture vérifiée.** L’intitulé de la page 2 appelle une dissertation unique. Les deux éditions traitent les chocs subis par l’Union, les protections qu’elle adopte et la coordination des réponses. Les effets sur le revenu et sur le solde commercial sont recalculés dans un modèle d’économie ouverte. Les exemples européens sont situés avant le 16 avril 2026.
+
 ## Construire le raisonnement
 
 Une hausse des droits américains et une hausse des droits européens n’ont pas le même point d’entrée dans le circuit économique. Partir d’une commande passée à un équipementier français par un constructeur allemand qui exporte aux États-Unis. La baisse finale des ventes peut affecter les deux pays. Partir ensuite d’une tôle importée achetée par le constructeur. Le droit prélevé en Europe peut dégrader la compétitivité du même exportateur. Préciser dans chaque exemple qui remet la taxe à la douane et qui, après négociation des prix, en supporte le coût.
 
 ![Figure 1 — Trois canaux du choc commercial](figures/canaux-commerciaux.svg)
 
+Suivez le trajet d’une seule machine. Qui acquitte le droit à la frontière et qui peut en supporter le coût après ajustement du prix ? Reprenez le raisonnement pour un composant importé dans l’Union. Le sens du flux commercial permet de situer le choc initial.
+
 **Un calcul au brouillon.** Un bien vendu 100 hors taxe coûte 110 à l’acheteur après un droit de 10 % si l’exportateur garde son prix. Si l’exportateur baisse son prix à 95, le prix à l’entrée devient 104,50. Le droit atteint alors 9,50. L’acheteur et le vendeur se partagent la perte selon les possibilités de substitution. À ce stade, aucune hypothèse ne permet de chiffrer les volumes.
 
 **Le passage du micro au macro.** Il faut passer du prix d’un bien au revenu réel, à la demande totale, à l’investissement et à la production potentielle. Préciser quand intervient la monnaie unique et pourquoi une mesure de diversification peut améliorer la résilience sans augmenter immédiatement le PIB. Une baisse des importations provoquée par la chute de l’activité n’est pas, en elle-même, un succès.
 
 **Les dates utiles pour cette copie d’avril 2026.** Le règlement européen de 2023 a institué le mécanisme carbone, dont la période transitoire s’est terminée en 2025. L’enquête sur les véhicules électriques chinois a conduit à des droits compensateurs définitifs en octobre 2024. Ces deux décisions répondent à des mécanismes distincts. Comparer leurs objets constitue un meilleur argument qu’une liste de mesures.
+
+Au brouillon, affectez un signe à la variation de chaque poste. Avec une perte de 10 milliards d’exportations et une baisse induite de 5 milliards d’importations, le commerce extérieur retire 5 milliards au PIB. La consommation diminue de 15 milliards, ce qui reconstitue la baisse totale de 20 milliards.
 
 ## Proposition de dissertation
 
@@ -29,6 +39,8 @@ L’Europe n’est pas une économie nationale unique. Nous prendrons l’Union 
 Une taxe américaine à l’entrée renchérit le prix relatif d’un bien européen aux États-Unis si l’importateur la répercute. Les volumes vendus diminuent d’autant plus que les clients disposent de substituts. Si l’exportateur absorbe la taxe dans sa marge, les ventes résistent mieux à court terme, mais la capacité de financer l’investissement se réduit. Dans les deux cas, un constructeur perdant des commandes transmet une partie du choc à des équipementiers situés dans d’autres pays européens. Le commerce de composants fait circuler la perte de valeur ajoutée à travers le marché unique. Compter la valeur brute de chaque passage de frontière surestimerait la production effectivement exposée.
 
 Dans l’identité de dépense, une baisse des exportations, toutes choses égales par ailleurs, réduit le PIB. La baisse initiale des revenus peut entraîner celle de la consommation puis de l’emploi. Le multiplicateur dépend de l’épargne, des importations induites et de la réaction des politiques économiques. Une baisse des importations concomitante peut même améliorer le solde commercial au milieu d’une récession. À plus long terme, des ventes moindres sur de grands marchés réduisent les économies d’échelle. Même sans changement définitif des droits, l’incertitude rend l’attente plus attractive pour une entreprise sur le point d’installer une usine irréversible. Le détournement de commerce crée aussi des gagnants. Un fournisseur européen peut remplacer dans un pays tiers un concurrent davantage taxé, tandis que des marchandises écartées du marché américain accentuent la concurrence en Europe.
+
+On peut mesurer cette transmission sur un exemple à prix fixes. Supposons que les ménages consomment 0,75 euro par euro de revenu supplémentaire et que les importations augmentent de 0,25 euro par euro de revenu. À investissement, dépenses publiques et impôts inchangés, la variation du PIB vérifie $\Delta Y=0{,}75\Delta Y+\Delta X-0{,}25\Delta Y$. Une perte de 10 milliards d’euros d’exportations réduit le PIB de 20 milliards et les importations de 5 milliards. Le solde extérieur se dégrade alors de 5 milliards. Cet exemple isole le choc de demande. Une hausse du coût des composants importés modifierait aussi les prix et les capacités de production.
 
 Un choc sur les exportations déprime généralement la demande et les prix intérieurs. Une hausse européenne du prix des intrants importés élève au contraire les coûts et peut faire coexister ralentissement et inflation. L’automobile exportatrice, la distribution importatrice et les services de proximité ne subissent donc pas le même choc. Une politique monétaire commune peut agir sur la dépense globale, sans pouvoir rétablir un débouché sectoriel. Une dépréciation de l’euro faciliterait certaines ventes en renchérissant en même temps les achats en devises. Sa direction et son effet net restent conditionnels aux réactions financières et commerciales.
 

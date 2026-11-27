@@ -1,0 +1,65 @@
+{
+  "slug": "x-ens_mp-pc_chinois_2014",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC",
+    "matiere": "Chinois",
+    "annee": 2014,
+    "modalite": "écrit"
+  },
+  "intitule": "Qui peut faire sa vie en Chine ?",
+  "questions": 2,
+  "redaction": "Synthèse chinoise des documents 1 à 4 avec titre et opinion chinoise répondant au document 5. Lecture de la série statistique, des témoignages et des observations du rapport de Michel Liu.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2014/10/14_mppc_suj_lv_chi.pdf",
+    "sha256_sujet": "6c0239ed01e49cc9d3807bd2b05349fe2478b3ae275e80c7deff8dfd400d0532",
+    "code_garde": "XEULCR",
+    "reference_du_texte": "Trois articles, une infographie attribuée au Bureau national des statistiques et un éditorial adapté du Global Times et du New York Times.",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2014/",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/01/14_mp_pc_rap_ecrit_lv_chinois.pdf",
+    "sha256_rapport_jury": "a13d98c6952b3fc6d3fcf0e9f5e75431991240e4b33de95c1488a66b1f9aa104",
+    "autre_publication_rapport": "https://www.ens.psl.eu/IMG/file/concours/2014/MPI/14_mppc_rap_elv_chi.pdf",
+    "sha256_autre_publication_rapport": "7a7162204b475fdd64e34620cd67806134414976b6fce9447c5833990ab7e53b"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/residents-enregistres.svg",
+      "legende": "Les trois premiers pays du classement des résidents étrangers enregistrés en Chine, en 2011."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des deux pages du rapport de Michel Liu, y compris les exemples de sinogrammes, la structure de la synthèse et l’argumentation personnelle."
+    },
+    {
+      "phase": "redaction",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Synthèse chinoise des documents 1 à 4 avec titre et opinion chinoise répondant au document 5. Lecture de la série statistique, des témoignages et des observations du rapport de Michel Liu."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  }
+}

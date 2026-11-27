@@ -1,0 +1,72 @@
+{
+  "slug": "x-ens_mp-pc_anglais_2012",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC",
+    "matiere": "Anglais",
+    "annee": 2012,
+    "modalite": "écrit"
+  },
+  "intitule": "Shoplifting et les appartenances multiples selon Mona Ozouf",
+  "questions": 3,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I",
+      "II.1",
+      "II.2"
+    ]
+  },
+  "sources": {
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2012",
+    "code_garde": "XEULC",
+    "etablissements_imprimes": "École polytechnique, ESPCI et ENS de Paris, Lyon et Cachan",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2012/pc2012_sujet_langue_vivante_version.pdf#page=3",
+    "sujet_sha256": "9f216e5704f726063a29e0313bae0348ecc1c975d6a4bce8b1d80f98fe8f33ab",
+    "sujet_complementaire": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2012/pc2012_sujet_langue_vivante_expression.pdf",
+    "sujet_complementaire_sha256": "b41b3ba045e401759179732cb405779b4019b0d60d9163f3ebff111d22a09312",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2012/PC/2012MP_PCrapport_LVAnglais_XEULC.pdf",
+    "rapport_sha256": "f0a2c68644dc3c07b705dd0ccec05ea646f8a4de313ab16339ccb8cd1576a39a",
+    "rapport_complementaire": "https://www.ens.psl.eu/IMG/file/concours/2012/PC/2012MP_PCrapport_expressionecriteLVAnglais_XEULC.pdf",
+    "rapport_complementaire_sha256": "1f8e95431864f09bb7307d6fd3d146408f437322c346eb29d17d758c974ea02d"
+  },
+  "redaction": "Traduction intégrale du récit de Brom, synthèse de la thèse d’Ozouf et discussion de la cohésion sociale. Explication des niveaux de langue et des points relevés dans les deux rapports.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I",
+      "fichier": "figures/regard.svg",
+      "legende": "Le récit limite notre information au regard de Nick avant de montrer ce que voit le commerçant."
+    },
+    {
+      "numero": 2,
+      "question": "II.1",
+      "fichier": "figures/attaches.svg",
+      "legende": "Le passage des affiliations reçues aux fidélités choisies chez Mona Ozouf."
+    },
+    {
+      "numero": 3,
+      "question": "II.2",
+      "fichier": "figures/participer.svg",
+      "legende": "Un même exemple permet de préciser à quelles conditions le groupe facilite la participation."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "anglais_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Traduction intégrale du récit de Brom, synthèse de la thèse d’Ozouf et discussion de la cohésion sociale. Explication des niveaux de langue et des points relevés dans les deux rapports.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}

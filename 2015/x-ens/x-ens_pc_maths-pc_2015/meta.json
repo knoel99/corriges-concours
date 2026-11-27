@@ -11,7 +11,8 @@
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/09/15_pc_sujet_maths_xeulc.pdf",
     "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/01/15_pc_rap_emath.pdf",
-    "sha256_sujet": "9ca499a9de29c09d00305ccaf1596b6d0dd520039b75f797ed041f26c1543f8c"
+    "sha256_sujet": "9ca499a9de29c09d00305ccaf1596b6d0dd520039b75f797ed041f26c1543f8c",
+    "sha256_rapport_jury": "4bec1f079a6189cf405711bae1c2ef6b1f9be047282bdaf56eb2dcb28452069b"
   },
   "figures": [
     {
@@ -31,6 +32,91 @@
       "perimetre": "Rédaction des 30 réponses sur le sujet et les observations du jury. Traitement du cas de dimension un, des bornes effectivement atteintes, de la triple intersection et du segment des spectres avec extrémités réalisables. Graphique du segment en dimension deux.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Minimax sur des sous-espaces, indices de Weyl, longueur du segment spectral et vérification de son paramétrage sur la figure.",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "agent": "rennes_oraux_economie",
+      "session": "rennes_oraux_economie"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1a",
+      "1b",
+      "1c",
+      "1d",
+      "2a",
+      "2b",
+      "2c",
+      "3a",
+      "3b",
+      "3c",
+      "4a",
+      "4b",
+      "4c",
+      "4d",
+      "5a",
+      "5b",
+      "6a",
+      "6b",
+      "6c",
+      "7a",
+      "7b",
+      "8a",
+      "8b",
+      "8c",
+      "8d",
+      "8e",
+      "9",
+      "10a",
+      "10b",
+      "10c"
+    ],
+    "pages_du_sujet": 4,
+    "pages_pdf_des_questions": {
+      "1a": 1,
+      "1b": 1,
+      "1c": 1,
+      "1d": 2,
+      "2a": 2,
+      "2b": 2,
+      "2c": 2,
+      "3a": 2,
+      "3b": 2,
+      "3c": 2,
+      "4a": 2,
+      "4b": 2,
+      "4c": 2,
+      "4d": 3,
+      "5a": 3,
+      "5b": 3,
+      "6a": 3,
+      "6b": 3,
+      "6c": 3,
+      "7a": 3,
+      "7b": 3,
+      "8a": 3,
+      "8b": 3,
+      "8c": 4,
+      "8d": 4,
+      "8e": 4,
+      "9": 4,
+      "10a": 4,
+      "10b": 4,
+      "10c": 4
+    },
+    "precision": "Pages du fac-similé institutionnel, garde incluse. Le numéro désigne le début de la demande imprimée."
+  }
 }

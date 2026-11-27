@@ -1,0 +1,41 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_etudes-classiques_2023",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Études classiques",
+    "annee": 2023
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/et.classiques-archeologie-ecrit-sil2023.pdf",
+    "sujet_sha256": "1f1f365eb93e33d9e0af2897f7ec7f2350d79312d2eb58daf4ac0765372f1a4b"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Exposé",
+      "legende": "Ce que fait un spécialiste des langues anciennes"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "al_langues_suite",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Études classiques. L’écrit de trois heures demande en français ce que signifie être helléniste ou latiniste aujourd’hui. Le vers d’Ovide, *Fastes*, I, 225, sert de point de départ. La copie proposée suit les deux à quatre parties prescrites."
+    }
+  ]
+}

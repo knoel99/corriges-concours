@@ -1,0 +1,58 @@
+{
+  "slug": "ens-rennes_d1_allemand_2019",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Allemand",
+    "annee": 2019,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-e-preuve-e-crite-langues-vivantes-d1-2019_1574761210232-pdf#page=2",
+    "sha256_sujet": "c1e6db357f43f7758cd0c4fb4340f3b7d3daa99c71c1be4b5ba821613ed4da25",
+    "etablissement_imprime": "École normale supérieure de Rennes",
+    "publication": "D’après la 17e étude Shell sur la jeunesse, octobre 2015",
+    "page": 2,
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-allemand-e-crit-d1-2019_1571846241605-pdf#page=1",
+    "sha256_rapport_jury": "3834c443c3f22866c72bf73e0608e3f324c03b53ab04bd801c07037c8c871a88"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en allemand"
+    ],
+    "precision": "Traduction française de l’intégralité du passage délimité et réponse en allemand."
+  },
+  "longueur_expression": {
+    "mots": 102,
+    "regle": "Caractériser sa propre attitude à l’égard de la politique et des questions de société. 100 mots à 10 % près."
+  },
+  "figures": [
+    {
+      "fichier": "figures/interet.svg",
+      "legende": "Deux comparaisons dans le temps"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Traduction française de l’intégralité du passage délimité et réponse en allemand. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

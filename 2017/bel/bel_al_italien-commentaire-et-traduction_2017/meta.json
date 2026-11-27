@@ -1,0 +1,42 @@
+{
+  "slug": "bel_al_italien-commentaire-et-traduction_2017",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Italien (commentaire et traduction)",
+    "annee": 2017
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/17-bel-commentaire-et-traduction-lve_1506586192589_0.pdf#page=14",
+    "sujet_sha256": "be2dd53df269e5a7bc4f9f5f2a1836d36ab45404db77ca6cb4d21f19dee44d53",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/ITALIEN_2017.pdf#page=1"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "Les destins possibles du bourgeon"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "al_langues_suite",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Gavino Ledda, *Padre padrone. L’educazione di un pastore* (1975). Le commentaire suit l’extrait entier, de la comparaison avec le lièvre à l’attente de l’hiver. La version correspond aux lignes 7 à 24 du sujet. Commentaire, version française, guide et schéma."
+    }
+  ]
+}

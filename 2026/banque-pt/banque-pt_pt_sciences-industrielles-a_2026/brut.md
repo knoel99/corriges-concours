@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Épreuve de 5 h, calculatrice interdite. Support : exosquelette d'assistance du poignet.
 
 Notations de l'énoncé (annexe C) : $\alpha=(\vec x_0,\vec x_1)$ autour de $\vec z_0=\vec z_1$ (flexion-extension). L'angle $\beta=(\vec z_1,\vec z_2)=(\vec x_1,\vec x_2)$ est pris autour de $\vec y_1=\vec y_2$ (déviation radio-ulnaire).
@@ -365,7 +367,7 @@ h(\beta)&=2L_b\,(L_g\cos\beta+R_v\sin\beta)
 \end{aligned}$$
 
 - **Courbes superposées.** $\alpha$ n'intervient que par $\cos\alpha$, fonction paire. Donc $\lambda_2(-\alpha,\beta)=\lambda_2(\alpha,\beta)$ : les courbes $\pm\alpha$ sont superposées.
-- **Maximum en $\alpha=0$.** On a $h(\beta)>0$ pour $-73{,}3^\circ<\beta<106{,}7^\circ$, là où $\tan\beta>-L_g/R_v$. C'est le cas autour du maximum ($\beta\approx25^\circ$).
+- En posant $\varphi=\arctan(R_v/L_g)\simeq16{,}7^\circ$, on obtient $h(\beta)=2L_b\sqrt{L_g^2+R_v^2}\cos(\beta-\varphi)$. Son signe est positif entre $-73{,}3^\circ$ et $106{,}7^\circ$, modulo $360^\circ$. Cette plage contient la position du maximum, où $\alpha=0$.
 - À $\beta$ fixé dans cet intervalle, $\lambda_2^2$ est donc maximal quand $\cos\alpha$ l'est, c'est-à-dire pour $\alpha=0$.
 - Hors de cet intervalle, l'ordre des courbes s'inverse. Toutes se croisent en $\beta\approx-73^\circ$ et $\beta\approx107^\circ$, où $h=0$, comme on le voit sur la Figure 12.
 
@@ -775,7 +777,7 @@ Données : $20\log K_{BO}=-20$ dB, $\omega_m=6{,}5$ rad/s et $1/\tau_{ma}=40$ ra
 | $6{,}5<\omega<40$ rad/s | $-40$ dB/déc | $\approx-52$ dB à 40 rad/s |
 | $\omega>40$ rad/s | $-20$ dB/déc | $\approx-80$ dB à $10^3$ rad/s |
 
-À 40 rad/s : $-20-40\log(40/6{,}5)\approx-52$ dB. La courbe réelle passe $0{,}9$ dB au-dessus de l'asymptote en $\omega_m$, puisque $\xi_m=0{,}45$.
+À 40 rad/s : $-20-40\log(40/6{,}5)\approx-52$ dB. À $\omega_m$, la courbe réelle dépasse l’asymptote de $20\log_{10}\bigl(\sqrt{1+(\omega_m\tau_{ma})^2}/(2\xi_m)\bigr)\simeq1{,}0$ dB.
 
 ### Question 42
 
@@ -805,12 +807,14 @@ Avec $K_{i2}$ doublé, le gain est relevé de 6 dB : $\omega_{0dB}\approx1{,}6\t
 |---|---|---|---|
 | 1.4.1 | stabilité | réponse de la Figure 25 convergente | satisfaite |
 | 1.4.1.1 | $M_\varphi\ge45^\circ$ | $M_\varphi\approx51^\circ$ | satisfaite |
-| 1.4.1.2 | $M_G\ge6$ dB | la phase passe par $-180^\circ$ vers 8 et 17 rad/s, où le gain vaut environ $+30$ à $+50$ dB : il faut diviser le gain par plus de 30 dB pour déstabiliser | satisfaite |
+| 1.4.1.2 | $M_G\ge6$ dB | marge en augmentation infinie sur le modèle représenté | satisfaite |
 | 1.4.1.3 | dépassement $\le20\,\%$ | pic $\approx12{,}8$ N·m pour 10 N·m, $D_1\approx28\,\%$ | **non satisfaite** |
 | 1.4.2.1 | erreur nulle, échelon de découpe | valeur finale 10 N·m | satisfaite |
 | 1.4.2.2 | erreur nulle, rampe de la main | écart transitoire de $0{,}25$ N·m à $t=1$ s, puis retour à 10 N·m pendant la rampe | satisfaite |
 | 1.4.3.1 | $\omega_{0dB}\ge90$ rad/s | $\approx1{,}6\times10^2$ rad/s | satisfaite |
 | 1.4.3.2 | $T_{r5\%}<100$ ms | entrée dans $[9{,}5\,;\,10{,}5]$ N·m vers $t\approx0{,}55$ s, $T_{r5\%}\approx50$ ms | satisfaite |
+
+Aux deux passages par $-180^\circ$ (vers 8 et 17 rad/s), le gain est déjà supérieur à $+30$ dB. Augmenter le gain éloigne donc ces deux points de 0 dB. La limite supérieure de gain est infinie dans ce modèle. Une diminution peut en revanche amener un de ces points à 0 dB. Le premier seuil en diminution se lit au plus petit des deux gains positifs, soit plus de 30 dB de baisse.
 
 **Toutes les exigences de performance sont satisfaites sauf Id 1.4.1.3 (dépassement d'environ 28 %).**
 

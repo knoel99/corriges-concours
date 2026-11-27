@@ -1,0 +1,379 @@
+{
+  "slug": "banque-pt_pt_informatique-et-modelisation_2017",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Informatique et modélisation",
+    "annee": 2017
+  },
+  "questions": 48,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2017/info_mod_2017_pt.pdf",
+    "sujet_sha256": "7beb795bb3f8fc2e0680ccb67a1f44a7258af7b3b794d236535cddb12f9cedac",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2017/rapport_info_model_ecrit_2017.pdf",
+    "rapport_sha256": "f3ed71e6a6ff1b81abf45ca3dee79dd5036fcb6c85593126a5d5758696a86097",
+    "notice": "https://www.banquept.fr/documents/livret/2017/Livret_PT_2017.pdf#page=12",
+    "notice_sha256": "1394eaaed446366dd92559cf578f8d521cdd65d6dd125906febc0cbdc627e5a3"
+  },
+  "figures": [
+    {
+      "fichier": "figures/cycle.svg",
+      "question": "M1",
+      "legende": "Cycle de Beau de Rochas dans le plan pression–volume, exemple normalisé"
+    },
+    {
+      "fichier": "figures/profil.svg",
+      "question": "M22",
+      "legende": "Préchauffage et zone de source dans le repère du front"
+    },
+    {
+      "fichier": "figures/interpolation.svg",
+      "question": "I14",
+      "legende": "Interpolation au milieu d’une cellule de la cartographie officielle, durées en millisecondes"
+    },
+    {
+      "fichier": "figures/richesse.svg",
+      "question": "I23",
+      "legende": "Richesse calculée par la simulation, sur cent cycles"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Réponses M1–M23 et I1–I25. Thermodynamique du moteur à allumage commandé, profil de température, capteur, calculateur, interpolation, régulation et requêtes SQL."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle du tableau officiel et des 48 repères sur le feuillet, raccords thermiques, signe du quatrième coefficient, injection et temps de bascule des six lectures de sonde. Insertion des deux requêtes dans chacune des éditions et exécution SQL sur un jeu avec ex æquo."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "M1",
+      "M2",
+      "M3",
+      "M4",
+      "M5",
+      "M6",
+      "M7",
+      "M8",
+      "M9",
+      "M10",
+      "M11",
+      "M12",
+      "M13",
+      "M14",
+      "M15",
+      "M16",
+      "M17",
+      "M18",
+      "M19",
+      "M20",
+      "M21",
+      "M22",
+      "M23",
+      "I1",
+      "I2",
+      "I3",
+      "I4",
+      "I5",
+      "I6",
+      "I7",
+      "I8",
+      "I9",
+      "I10",
+      "I11",
+      "I12",
+      "I13",
+      "I14",
+      "I15",
+      "I16",
+      "I17",
+      "I18",
+      "I19",
+      "I20",
+      "I21",
+      "I22",
+      "I23",
+      "I24",
+      "I25"
+    ],
+    "repere_par_question": [
+      {
+        "question": "M1",
+        "page_pdf": 3,
+        "intitule": "Échanges thermiques sur le cycle"
+      },
+      {
+        "question": "M2",
+        "page_pdf": 3,
+        "intitule": "Chaleur reçue de la source chaude"
+      },
+      {
+        "question": "M3",
+        "page_pdf": 3,
+        "intitule": "Chaleur échangée avec la source froide"
+      },
+      {
+        "question": "M4",
+        "page_pdf": 3,
+        "intitule": "Rendement en fonction des températures"
+      },
+      {
+        "question": "M5",
+        "page_pdf": 3,
+        "intitule": "Loi de Laplace et rapport volumétrique"
+      },
+      {
+        "question": "M6",
+        "page_pdf": 3,
+        "intitule": "Gain et limite de la compression"
+      },
+      {
+        "question": "M7",
+        "page_pdf": 3,
+        "intitule": "Bilan atomique de l’isooctane"
+      },
+      {
+        "question": "M8",
+        "page_pdf": 3,
+        "intitule": "Quantité de matière gazeuse"
+      },
+      {
+        "question": "M9",
+        "page_pdf": 4,
+        "intitule": "Bilan thermique unidimensionnel"
+      },
+      {
+        "question": "M10",
+        "page_pdf": 4,
+        "intitule": "Puissances par unité de volume"
+      },
+      {
+        "question": "M11",
+        "page_pdf": 4,
+        "intitule": "Puissance chimique volumique"
+      },
+      {
+        "question": "M12",
+        "page_pdf": 4,
+        "intitule": "Flux thermique diffusif"
+      },
+      {
+        "question": "M13",
+        "page_pdf": 4,
+        "intitule": "Flux thermique convectif"
+      },
+      {
+        "question": "M14",
+        "page_pdf": 4,
+        "intitule": "Profil thermique stationnaire"
+      },
+      {
+        "question": "M15",
+        "page_pdf": 5,
+        "intitule": "Dimension du coefficient de diffusion"
+      },
+      {
+        "question": "M16",
+        "page_pdf": 5,
+        "intitule": "Bornes de la température réduite"
+      },
+      {
+        "question": "M17",
+        "page_pdf": 5,
+        "intitule": "Sens de la concentration réduite"
+      },
+      {
+        "question": "M18",
+        "page_pdf": 5,
+        "intitule": "Équation par morceaux"
+      },
+      {
+        "question": "M19",
+        "page_pdf": 6,
+        "intitule": "Raccordement du profil"
+      },
+      {
+        "question": "M20",
+        "page_pdf": 6,
+        "intitule": "Équations de raccordement en zéro"
+      },
+      {
+        "question": "M21",
+        "page_pdf": 6,
+        "intitule": "Approximation pour une zone mince"
+      },
+      {
+        "question": "M22",
+        "page_pdf": 6,
+        "intitule": "Interprétation de la longueur caractéristique"
+      },
+      {
+        "question": "M23",
+        "page_pdf": 6,
+        "intitule": "Ordres de grandeur du modèle"
+      },
+      {
+        "question": "I1",
+        "page_pdf": 8,
+        "intitule": "Cadence des fronts"
+      },
+      {
+        "question": "I2",
+        "page_pdf": 8,
+        "intitule": "Vitesse de rotation"
+      },
+      {
+        "question": "I3",
+        "page_pdf": 9,
+        "intitule": "Mémoires du calculateur"
+      },
+      {
+        "question": "I4",
+        "page_pdf": 9,
+        "intitule": "Capacités en bits"
+      },
+      {
+        "question": "I5",
+        "page_pdf": 9,
+        "intitule": "Espace adressable"
+      },
+      {
+        "question": "I6",
+        "page_pdf": 9,
+        "intitule": "Conversion de l’adresse 320"
+      },
+      {
+        "question": "I7",
+        "page_pdf": 9,
+        "intitule": "Écriture hexadécimale"
+      },
+      {
+        "question": "I8",
+        "page_pdf": 10,
+        "intitule": "Recherche de la cellule de grille"
+      },
+      {
+        "question": "I9",
+        "page_pdf": 10,
+        "intitule": "Extraction des quatre mesures"
+      },
+      {
+        "question": "I10",
+        "page_pdf": 10,
+        "intitule": "Enchaînement de la recherche et de l’extraction"
+      },
+      {
+        "question": "I11",
+        "page_pdf": 11,
+        "intitule": "Élimination de Gauss et remontée"
+      },
+      {
+        "question": "I12",
+        "page_pdf": 11,
+        "intitule": "Coût du pivot de Gauss"
+      },
+      {
+        "question": "I13",
+        "page_pdf": 11,
+        "intitule": "Coût d’une substitution"
+      },
+      {
+        "question": "I14",
+        "page_pdf": 11,
+        "intitule": "Interpolation bilinéaire"
+      },
+      {
+        "question": "I15",
+        "page_pdf": 12,
+        "intitule": "Réponse de la sonde"
+      },
+      {
+        "question": "I16",
+        "page_pdf": 13,
+        "intitule": "Commande d’injection et réinitialisation"
+      },
+      {
+        "question": "I17",
+        "page_pdf": 13,
+        "intitule": "Récurrence d’Euler explicite"
+      },
+      {
+        "question": "I18",
+        "page_pdf": 13,
+        "intitule": "Un pas de premier ordre"
+      },
+      {
+        "question": "I19",
+        "page_pdf": 14,
+        "intitule": "Deux retards successifs"
+      },
+      {
+        "question": "I20",
+        "page_pdf": 14,
+        "intitule": "Durée entre cycles du calculateur"
+      },
+      {
+        "question": "I21",
+        "page_pdf": 14,
+        "intitule": "Liste des instants"
+      },
+      {
+        "question": "I22",
+        "page_pdf": 15,
+        "intitule": "Simulation de la boucle échantillonnée"
+      },
+      {
+        "question": "I23",
+        "page_pdf": 15,
+        "intitule": "Tracé de la richesse"
+      },
+      {
+        "question": "I24",
+        "page_pdf": 16,
+        "intitule": "Conserver les enregistrements de qualité supérieure à 95 %"
+      },
+      {
+        "question": "I25",
+        "page_pdf": 16,
+        "intitule": "Sélectionner les mesures optimales dans la plage"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "annexes": "Aucune annexe distincte. Fin des questions et de l’épreuve page 16. Pages 17 à 19 blanches et mention d’imprimerie page 20."
+  }
+}

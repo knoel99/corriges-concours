@@ -1,0 +1,68 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_philosophie-quest-ce-quune-analyse-oral_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Philosophie — Qu’est-ce qu’une analyse (oral)",
+    "annee": 2018,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie — Qu’est-ce qu’une analyse ? (oral)",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/Philo-oral-5.pdf",
+    "sha256_sujet": "dff844bd0197ac94a5ab0901a760557209a40a06c4020501568d4bd9b39c9e8a",
+    "reperage": "Développer et commenter le sujet « Qu’est-ce qu’une analyse ? ».",
+    "page_officielle": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2018-lettres",
+    "precision_controle": "Feuillet individuel 5, une page. Consigne « Développez et commentez » suivie du seul sujet « Qu’est-ce qu’une analyse ? »."
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Exposé oral",
+      "legende": "Du tout à une distinction que l’on peut contrôler"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet original. Exposé argumenté sur le sujet attribué, exemples et objections, préparation guidée de l’entretien et schéma des distinctions conceptuelles."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "oraux_lyon_et_anciens_corriges",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Correction de l’inférence sur le témoin. Démonstration complète de la construction par médiatrice et cercle avec ses cas d’existence et d’unicité. Rétablissement de l’interrogation du sujet dans les titres des éditions."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Qu’est-ce qu’une analyse ?"
+    ],
+    "detail": [
+      "Choix des unités selon le problème, décomposition cartésienne et explicitation des prémisses d’un raisonnement sur le témoignage.",
+      "La construction du point équidistant distingue analyse et synthèse ainsi que nécessité et suffisance. La montre et la mélodie éprouvent la portée et les limites de la décomposition."
+    ]
+  },
+  "date_revision": "2026-11-26"
+}

@@ -1,0 +1,61 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_linguistique-la-telicite-oral_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Linguistique — la télicité (oral)",
+    "annee": 2019,
+    "modalite": "oral"
+  },
+  "questions": 8,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sil_linguistique_2019_oral_fr.pdf",
+    "sujet_sha256": "febded67f72966214a55ec763c6d336505d68a01aef85ef225e7a90ee10f363d",
+    "pages": 9,
+    "article": "https://doi.org/10.1073/pnas.1423080112"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Partie I · Télicité et structure de l’événement, question 1",
+      "Partie I · Télicité et structure de l’événement, question 2",
+      "Partie I · Télicité et structure de l’événement, question 3",
+      "Partie I · Télicité et structure de l’événement, question 4",
+      "Partie II · Signes et frontières gestuelles, question 1",
+      "Partie II · Signes et frontières gestuelles, question 2",
+      "Partie II · Signes et frontières gestuelles, question 3",
+      "Partie II · Signes et frontières gestuelles, question 4"
+    ],
+    "precision": "Pages 1–3, les quatre questions de chacune des deux parties. L’article original de Strickland et al. est joint aux pages 4–9 ; les onze expériences sont distinguées."
+  },
+  "figures": [
+    {
+      "fichier": "figures/partie-a.svg",
+      "legende": "Quel élément donne son terme à l’événement ?"
+    },
+    {
+      "fichier": "figures/partie-b.svg",
+      "legende": "Trois contrôles qui isolent la structure temporelle"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Pages 1–3, les quatre questions de chacune des deux parties. L’article original de Strickland et al. est joint aux pages 4–9 ; les onze expériences sont distinguées. Rédaction des deux éditions et de deux schémas."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

@@ -4,11 +4,13 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Comparer et modéliser les battements
 
 ### Question 1 · Comparer les prototypes
 
-Les fréquences et dimensions des prototypes atteignent les mêmes ordres de grandeur que celles des colibris. À longueur d’aile comparable, les robots sont généralement plus lourds. La réduction de la masse embarquée, moteur et batterie compris, est donc prioritaire. Comparer des points à masse ou longueur comparable évite de conclure à partir des seules valeurs extrêmes du nuage.
+Les fréquences et dimensions des prototypes atteignent les mêmes ordres de grandeur que celles des colibris. À longueur d’aile comparable, les robots sont généralement plus lourds. La figure 2 place par exemple Colibri vers 20 à 25 g pour une aile voisine de 90 mm. Nano Hummingbird et KU-Beetle ont des ailes un peu plus courtes, autour de 65 à 70 mm, et l’AVFL dépasse 100 mm. Dans le second nuage, les quatre prototypes prolongent assez bien la décroissance de la fréquence avec la longueur d’aile. La réduction de la masse embarquée, moteur et batterie compris, est donc prioritaire. Comparer des points à masse ou longueur comparable évite de conclure à partir des seules valeurs extrêmes du nuage.
 
 ### Question 2 · Deux positions de la manivelle
 
@@ -132,9 +134,9 @@ $\partial P_m/\partial\omega_m=(k/R)(u_m-Ri_0-2k\omega_m)$. La dérivée seconde
 
 ### Question 18 · Domaine du plan tension-vitesse
 
-Pour une tension $u_m\le6$ V, la branche utile à vitesse élevée est comprise entre $\omega=(u_m-Ri_0)/(2k)$ et $\omega=(u_m-Ri_0)/k$. Dans le plan demandé, elle vérifie $\omega\ge0$ et $k\omega+Ri_0\le u_m\le\min(6,2k\omega+Ri_0)$. Les points plus lents peuvent aussi tourner en moteur, mais sur la branche de fort courant située en deçà du maximum de puissance. Le sujet retient la branche rapide pour son étude thermique.
+En fonctionnement moteur, $C_m\ge0$ à vitesse positive exige $u_m\ge k\omega_m+Ri_0$. Avec la limite de la batterie, le domaine complet satisfait $0\le\omega_m\le(6-Ri_0)/k$ et $k\omega_m+Ri_0\le u_m\le6$ V. L’axe de vitesse nulle en forme la frontière au démarrage. Pour une tension $u_m\le6$ V, la branche utile à vitesse élevée est comprise entre $\omega=(u_m-Ri_0)/(2k)$ et $\omega=(u_m-Ri_0)/k$. Dans le plan demandé, elle vérifie $\omega\ge0$ et $k\omega+Ri_0\le u_m\le\min(6,2k\omega+Ri_0)$. Les points plus lents peuvent aussi tourner en moteur, mais sur la branche de fort courant située en deçà du maximum de puissance. La droite de puissance maximale sépare ainsi deux branches à tension donnée. À puissance utile égale, la branche rapide demande le courant le plus faible.
 
-![Points de fonctionnement du moteur et intersections retenues pour une puissance utile de 4 W.](figures/q18-domaine-moteur.svg)
+![Domaine moteur, repéré par les deux zones colorées. La branche rapide entre la droite de puissance maximale et la droite à vide sert aux questions 19 à 25.](figures/q18-domaine-moteur.svg)
 
 ### Question 19 · Ligne de puissance imposée
 
@@ -236,7 +238,7 @@ $$
 \epsilon_{k+1}=MA_e\epsilon_k+(A_f-MA_e)\widehat X_k+(B_f-MB_e)i_k-M\Phi_k+K\Psi_{k+1}.
 $$
 
-Les deux bruits courants sont centrés et indépendants du passé. Dans l’espérance conditionnelle aux données antérieures les coefficients $\widehat X_k,i_k$ sont connus et les termes de bruit s’annulent. Pour une espérance non conditionnelle, on remplace également ces variables par leurs espérances.
+Avec les hypothèses usuelles de bruits blancs du filtre, les deux bruits courants sont centrés et indépendants du passé. La seule stationnarité indiquée dans le texte ne suffirait pas à assurer cette indépendance. Dans l’espérance conditionnelle aux données antérieures les coefficients $\widehat X_k,i_k$ sont connus et les termes de bruit s’annulent. Pour une espérance non conditionnelle, on remplace également ces variables par leurs espérances.
 
 ### Question 32 · Éliminer le biais systématique
 
@@ -371,7 +373,7 @@ Le PI est $K_i(1+1/(T_i p))$. La plante a un gain statique non nul. La boucle ou
 
 ### Question 50 · Marge de phase
 
-Pour une marge de $60^\circ$, placer le croisement à $0$ dB à la pulsation où $\arg L=-180^\circ+60^\circ=-120^\circ$. Sur les courbes imprimées pour $K_i=1$, on lit environ $10$ à $11\ \mathrm{rad\,s^{-1}}$, avec un gain proche de $75$ à $77$ dB. Un ordre de grandeur du réglage est $K_i=10^{-G/20}\simeq(1{,}4\text{ à }1{,}8)\,10^{-4}$ dans les unités du correcteur. La pente très raide et la lecture sur la figure limitent le nombre de chiffres significatifs.
+Pour une marge de $60^\circ$, placer le croisement à $0$ dB à la pulsation où $\arg L=-180^\circ+60^\circ=-120^\circ$. Sur les courbes imprimées pour $K_i=1$, on lit environ $10$ à $11\ \mathrm{rad\,s^{-1}}$, avec un gain proche de $75$ à $77$ dB. Un ordre de grandeur du réglage est $K_i=10^{-G/20}\simeq(1{,}4\text{ à }1{,}8)\,10^{-4}$ dans les unités du correcteur. Le diagramme de gain se décale verticalement de $20\log_{10}K_i$ et sa phase reste inchangée pour $K_i>0$. Le choix indiqué correspond à la marge limite. La figure 13 se lit comme une donnée expérimentale du sujet. Son plateau de gain à basse fréquence ne prolonge pas l’asymptote à $-20$ dB/décade du PI idéal de Q49.
 
 ## Dynamique en tangage
 

@@ -17,7 +17,25 @@
   },
   "sources": {
     "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-04/Epreuve%20de%20sp%C3%A9cialit%C3%A9%202026.pdf#page=11",
-    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Anglais%202026.pdf#page=24"
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Anglais%202026.pdf#page=24",
+    "sujet_sha256": "62fa5ca9c1b2caf4de4b131c5e8e4432d72544a0e0a01930f1ffed7d6e59acc2",
+    "rapport_jury_sha256": "00c482cd51fd12a61ef70ee9e667ceab2da69d8656858294b8652f7d160e0a90",
+    "fascicule": "LC 663, J. 26 1066-P, Banque d’épreuves littéraires, épreuve de spécialité",
+    "page_sujet": 11,
+    "pages_rapport_jury": "24–31",
+    "epreuve": "Thème en quatre heures, sans dictionnaire",
+    "passage": {
+      "auteur": "Marc Dugain",
+      "titre": "Ils vont tuer Robert Kennedy",
+      "annee": 2017,
+      "premiers_mots": "Le 22 novembre 1963, j'avais neuf ans",
+      "derniers_mots": "de l'odeur de ses cheveux et de sa peau.",
+      "paragraphes": 2
+    },
+    "ecoles_sur_la_garde": [
+      "ENS de Lyon",
+      "ENS Paris-Saclay (langue anglaise)"
+    ]
   },
   "figures": [
     {
@@ -26,7 +44,7 @@
       "legende": "La soirée comme point de repère"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -60,6 +78,37 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Comparaison des deux paragraphes de Dugain avec le livret de Lyon et Paris-Saclay (p. 11) et les observations du jury (p. 24 à 31). Vérification de la consigne, des deux rendus et de la chronologie. Révision du rattachement de la clinique, des sujets féminins et de la crainte de perdre l’enfant."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Thème de Dugain, valeur de depuis et point de référence du past perfect progressif."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "verification_themes_lyon_2026",
+      "agent": "latin26_lyon",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle des deux scènes du premier au dernier syntagme sur le livret LC 663 et le rapport. Révision du reproche intérieur, du soulagement de Maine et de la continuité des petites gorgées. Vérification du retour du père et de la chronologie graphique conservée des revues précédentes."
     }
   ],
   "droits_sources": {
@@ -67,5 +116,20 @@
       "Marc Dugain, Ils vont tuer Robert Kennedy, 2017."
     ],
     "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires. La licence du corrigé ne vaut pas autorisation de leur part."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Thème intégral en anglais"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "precision": "Les 2 paragraphes de la page 11 du fascicule LC 663 ont été comparés, dans leur ordre, à la traduction complète de chacune des deux éditions.",
+    "reperes_par_paragraphe": [
+      "Dans le jardin de Vancouver, l’appel à la clinique, les interprétations des deux femmes, l’annonce différée de la mort et le soulagement de Maine.",
+      "Le retour du père, les commentaires des présentateurs commencés l’après-midi, la menace ressentie, le geste de la mère et la sensation finale de l’enfant."
+    ]
   }
 }

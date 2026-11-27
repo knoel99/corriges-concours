@@ -1,0 +1,98 @@
+{
+  "slug": "ens_mp-mpi_informatique-fondamentale_2023",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-MPI",
+    "matiere": "Informatique fondamentale",
+    "annee": 2023,
+    "duree_heures": 4
+  },
+  "questions": 34,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2023/12/23_mp_sujet_InfoFond.pdf",
+    "sujet_sha256": "fa3f21bd676189e2926ee63f46e9f00a75d677ed801b8ca2c52137ec931b94dd",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2023/11/23_mp_rap_eInfoFond.pdf",
+    "rapport_sha256": "51ce2aee85a340ee2188fe0d07469731be0bc656572643951a09786ee80dc3ec",
+    "page_organisateur": "https://banques-ecoles.fr/cms/filiere-mp/les-annales-et-rapports-des-jurys/",
+    "identification": "Épreuve écrite commune ULSR d’informatique fondamentale, garde et neuf pages numérotées, rapport du jury de la session 2023."
+  },
+  "figures": [
+    {
+      "fichier": "figures/choix-de-l-occurrence.svg",
+      "question": "1.3",
+      "legende": "Sur le mot babb, A₁ a trois calculs acceptants. Chaque rang portant b peut être l’unique passage de l’état 1 à l’état 2."
+    },
+    {
+      "fichier": "figures/automate-du-troisieme-rang.svg",
+      "question": "3.1",
+      "legende": "Le calcul quitte la boucle sur un b puis doit lire exactement deux lettres. Le seul chemin qui finit en 3 a choisi le troisième symbole depuis la fin."
+    },
+    {
+      "fichier": "figures/blocs-de-la-matrice.svg",
+      "question": "4.5",
+      "legende": "Pour trois lettres, une case verte représente une intersection non vide. Les lignes de séparation mettent en évidence les trois copies de M₂ et le bloc plein."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale et confrontation des 34 questions au sujet et au rapport de l’écrit. Table complète des cinq états accessibles du produit, automate par comptage saturé pour les seuils, preuve de rang par la matrice de disjonction et justification des deux états extrêmes. Tests de langues, comptages et rangs, trois figures originales."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "1.8",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7",
+      "2.8",
+      "2.9",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.6",
+      "4.7",
+      "4.8",
+      "4.9",
+      "4.10",
+      "4.11"
+    ],
+    "precision": "Les 34 questions du fac-similé ont été rapprochées dans leur ordre des deux éditions signées. Les solutions de chaque édition ont été retrouvées à la révision de rédaction citée.",
+    "origine_attestation": {
+      "commit_du_journal": "d3b09e6330de95c9231badd319f48afbb1aea0ba",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction intégrale et confrontation des 34 questions au sujet et au rapport de l’écrit. Table complète des cinq états accessibles du produit, automate par comptage saturé pour les seuils, preuve de rang par la matrice de disjonction et justification des deux états extrêmes. Tests de langues, comptages et rangs, trois figures originales.",
+      "sha256_sujet_controle": "fa3f21bd676189e2926ee63f46e9f00a75d677ed801b8ca2c52137ec931b94dd",
+      "sha256_rapport_controle": "51ce2aee85a340ee2188fe0d07469731be0bc656572643951a09786ee80dc3ec"
+    }
+  }
+}

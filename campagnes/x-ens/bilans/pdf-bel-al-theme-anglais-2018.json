@@ -1,0 +1,162 @@
+{
+  "slug": "bel_al_anglais-theme-lyon_2018",
+  "commit_export": "cb7de4b5d184ff7939ac89ce0f6ed6a35fb922c8",
+  "arbre_git": "e723e6a8aa671e8725ee5bf4af583dd73c921b86",
+  "archive": "BEL-AL-theme-anglais-2018.zip",
+  "agent": "lva_pt_2325",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2018-10/2018%20%C3%A9preuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=9",
+    "sha256_sujet": "36548d14a5bc4863106fd5bfe41b30654f210f6968be40d6374c992c20da793a",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-11/Fascicule%20Anglais_2018.pdf#page=14",
+    "sha256_rapport_jury": "e0e127862dc56f5aa8e9d9f5935c23fe1207fb6fcc5c5126d087eb415be43c8d",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2018",
+    "pages_sujet_verifiees": [
+      1,
+      9
+    ],
+    "pages_rapport_theme": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ]
+  },
+  "consigne": {
+    "duree_heures": 4,
+    "langue": "anglais",
+    "dictionnaire": "Tout dictionnaire interdit.",
+    "fascicule": "Épreuve de spécialité. La garde cite l’ENS de Lyon et l’ENS Paris-Saclay (langue anglaise).",
+    "annexe": "Note unique sur les gommeuses, au bas de la page du thème.",
+    "debut": "Je donnais mon paletot",
+    "fin": "se fixait en une calme harmonie.",
+    "page": 9
+  },
+  "controle_paragraphe": [
+    {
+      "numero": 1,
+      "contenu": "Le paletot, la marche jouée par les musiciens, le contraste entre l’enthousiasme et le maintien glacé, les chanteuses de café-concert.",
+      "incipit_anglais": "I would hand over my overcoat.",
+      "explicit_anglais": "bawdy verse to a warlike tune."
+    },
+    {
+      "numero": 2,
+      "contenu": "Le lien avec la grand-mère suspendu jusqu’à la sortie et la fraternité passagère avec les garçons.",
+      "incipit_anglais": "From that moment on I was",
+      "explicit_anglais": "who were about to serve us."
+    },
+    {
+      "numero": 3,
+      "contenu": "Balbec et la quantité bue, le porto, le pourboire de deux louis, la course des serveurs et les plats, le serveur comparé à un ara, le changement dans la perception du spectacle.",
+      "incipit_anglais": "As much beer, let alone champagne,",
+      "explicit_anglais": "activity settled into a calm harmony."
+    }
+  ],
+  "editions": {
+    "brut": {
+      "pages": 2,
+      "blocs_compares": {
+        "traduction_anglaise": {
+          "pages": [
+            1
+          ],
+          "lettres_chiffres": 1926,
+          "mots": 451,
+          "paragraphes": 3,
+          "empreinte_normalisee": "5bb6d9514c1ad3adbaad0b2d4eeb3f292ac83536e64d77d2d261a07f211187dd"
+        }
+      },
+      "signets": [
+        {
+          "titre": "Traduction en anglais",
+          "page": 1,
+          "ecart_points": 6.8
+        }
+      ],
+      "figures": [
+        {
+          "question": "Traduction en anglais",
+          "fichier": "figures/traduction.svg",
+          "legende": "Le rythme de la salle et le regard du narrateur",
+          "page": 2,
+          "sha256_svg": "5f021b05dcb0bb005c3b01c662520cede4842b493e5b1d3b2191264393031e67",
+          "sha256_forme_pdf": "2fdc8df0b7d054469ff68a9a4e53ca8807db9e39fe54d866d580cf4ee8e34251"
+        }
+      ],
+      "liens_sources": [
+        "https://www.ens-lyon.fr/sites/default/files/2018-10/2018%20%C3%A9preuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=9",
+        "https://www.ens-lyon.fr/sites/default/files/2018-11/Fascicule%20Anglais_2018.pdf#page=14"
+      ],
+      "signatures_sur_premiere_page": [
+        "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+        "**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+      ],
+      "diagnostic_latex_propre": true,
+      "sha256_markdown": "c3e9fab15407292b4ae076287bb0a516dd9956324df2e6896dec133be007ecc6",
+      "sha256_pdf": "462c45cc762ca37a5dfc3b08b1ed29cb5d4b4c323d2cc88a4678f6da34800839"
+    },
+    "guide": {
+      "pages": 2,
+      "blocs_compares": {
+        "traduction_anglaise": {
+          "pages": [
+            1,
+            2
+          ],
+          "lettres_chiffres": 1926,
+          "mots": 451,
+          "paragraphes": 3,
+          "empreinte_normalisee": "5bb6d9514c1ad3adbaad0b2d4eeb3f292ac83536e64d77d2d261a07f211187dd"
+        }
+      },
+      "signets": [
+        {
+          "titre": "Préparer le thème",
+          "page": 1,
+          "ecart_points": 6.8
+        },
+        {
+          "titre": "Traduction en anglais",
+          "page": 1,
+          "ecart_points": 9.1
+        }
+      ],
+      "figures": [
+        {
+          "question": "Traduction en anglais",
+          "fichier": "figures/traduction.svg",
+          "legende": "Le rythme de la salle et le regard du narrateur",
+          "page": 1,
+          "sha256_svg": "5f021b05dcb0bb005c3b01c662520cede4842b493e5b1d3b2191264393031e67",
+          "sha256_forme_pdf": "2fdc8df0b7d054469ff68a9a4e53ca8807db9e39fe54d866d580cf4ee8e34251"
+        }
+      ],
+      "liens_sources": [
+        "https://www.ens-lyon.fr/sites/default/files/2018-10/2018%20%C3%A9preuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=9",
+        "https://www.ens-lyon.fr/sites/default/files/2018-11/Fascicule%20Anglais_2018.pdf#page=14"
+      ],
+      "signatures_sur_premiere_page": [
+        "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+        "**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+      ],
+      "diagnostic_latex_propre": true,
+      "sha256_markdown": "04249e33b4220ffe685670eb8d5ae57a8142e14ebd3249f9fb1769d7d35211d7",
+      "sha256_pdf": "c6acdfe45c88dc6fa1e4e5113b82d988cf6ad43c8cf9c16b915490bff67653d5"
+    }
+  },
+  "sha256_contenus": {
+    "guide.md": "04249e33b4220ffe685670eb8d5ae57a8142e14ebd3249f9fb1769d7d35211d7",
+    "brut.md": "c3e9fab15407292b4ae076287bb0a516dd9956324df2e6896dec133be007ecc6",
+    "meta.json": "6a0fad138a9bb8b3ebd82e79ed72526fd4bc393cec37f8fdb18b9e562a4330fb",
+    "journal-revision.json": "64d77a7a6852ed77a7d516a1c0a81d4d93684d54c0d344c9de8ce2225b140b16",
+    "figures/traduction.svg": "5f021b05dcb0bb005c3b01c662520cede4842b493e5b1d3b2191264393031e67",
+    "brut.pdf": "462c45cc762ca37a5dfc3b08b1ed29cb5d4b4c323d2cc88a4678f6da34800839",
+    "guide.pdf": "c6acdfe45c88dc6fa1e4e5113b82d988cf6ad43c8cf9c16b915490bff67653d5"
+  },
+  "sha256_archive": "9375a9e6c8a05b3f567c6132c3b85356e961dc4ae8cf507def83f3e301b060e0"
+}

@@ -1,0 +1,108 @@
+{
+  "slug": "ens-rennes_d-e_allemand-oral_2021",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Allemand (oral)",
+    "annee": 2021,
+    "modalite": "oral"
+  },
+  "intitule": "Épreuve orale d’allemand",
+  "questions": 4,
+  "redaction": "Quatre synthèses et commentaires originaux en allemand à partir des quatre pages du fascicule, deux relances résolues par sujet, deux schémas et indications de préparation.",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/annales-oraux-allemand-d-e-2021_1652428589168-pdf",
+    "sujet_sha256": "97063a0990e89d99b0baa9488600c0b85303ecae9942bdd534eb25c5a3c034e4",
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2021",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-oral-allemand-d-e-2021_1634310558037-pdf",
+    "rapport_sha256": "92f3c9e71fdefa982a2320a0e38d6f194da26f1fdb14b761f27a3362e374d452"
+  },
+  "billets": [
+    {
+      "numero": 1,
+      "intitule": "Pandemie unterbricht günstige Arbeitsmarktentwicklung für Menschen mit Migrationshintergrund",
+      "pages": [
+        1
+      ],
+      "support": "fascicule distribué",
+      "url": "https://www.ens-rennes.fr/medias/fichier/annales-oraux-allemand-d-e-2021_1652428589168-pdf#page=1"
+    },
+    {
+      "numero": 2,
+      "intitule": "Wirtschaftshilfen : Pandemie vergrößert Ost-West-Lücke",
+      "pages": [
+        2
+      ],
+      "support": "fascicule distribué",
+      "url": "https://www.ens-rennes.fr/medias/fichier/annales-oraux-allemand-d-e-2021_1652428589168-pdf#page=2"
+    },
+    {
+      "numero": 3,
+      "intitule": "Danke, liebe Reiche!",
+      "pages": [
+        3
+      ],
+      "support": "fascicule distribué",
+      "url": "https://www.ens-rennes.fr/medias/fichier/annales-oraux-allemand-d-e-2021_1652428589168-pdf#page=3"
+    },
+    {
+      "numero": 4,
+      "intitule": "Braucht es ein Recht auf Homeoffice?",
+      "pages": [
+        4
+      ],
+      "support": "fascicule distribué",
+      "url": "https://www.ens-rennes.fr/medias/fichier/annales-oraux-allemand-d-e-2021_1652428589168-pdf#page=4"
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "fichier": "figures/hilfe-und-zugang.svg",
+      "legende": "Wie Beschäftigungsrisiko und Zugang zur Hilfe zusammenwirken."
+    },
+    {
+      "numero": 2,
+      "question": "2",
+      "fichier": "figures/regionale-hilfen.svg",
+      "legende": "Drei bundesweite Hilfen mit regional unterschiedlichen Wirkungen."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Le rapport insiste sur six à huit minutes de parole autonome, la hiérarchisation des idées et la distinction entre recherche et revendication. Les exemples sont reliés à des prises de position identifiées."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Quatre synthèses et commentaires originaux en allemand à partir des quatre pages du fascicule, deux relances résolues par sujet, deux schémas et indications de préparation."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "precision": "Les quatre sujets imprimés sont traités dans leur ordre. Le rapport prévoit vingt minutes de préparation, puis six à huit minutes d’exposé au sein d’un oral de quinze minutes. Les exposés se développent à partir des exemples et des réponses proposées pour l’entretien."
+  }
+}

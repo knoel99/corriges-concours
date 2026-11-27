@@ -1,0 +1,67 @@
+{
+  "slug": "ens_mp-pc_anglais-lv1_2005",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Anglais (LV1)",
+    "annee": 2005,
+    "modalite": "écrit"
+  },
+  "intitule": "Détection des tsunamis et transmission de l’alerte après le séisme d’Aceh",
+  "questions": 3,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "V",
+      "1",
+      "2"
+    ]
+  },
+  "sources": {
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2005",
+    "etablissements": "ENS de Paris, de Lyon et de Cachan",
+    "pages_sujet": "3",
+    "code_garde": "ULC 527",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2005/sujet-2005-ecrit-mp_pc_langue_vivante_1.pdf#page=3",
+    "sujet_sha256": "a7214e3b3ce73c3c9c3bfa7b6f9b4314d76e219f9a58a8f2f510bd3dc15cd6cb",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2005/rapport-2005-pc_ecrit_langue_vivante_1_anglais.pdf",
+    "rapport_jury_sha256": "dd2101ede38f2534e799f7713d0f502fd59106158e8b5b8bc92aaaa4d449a54e",
+    "precision": "Version de l’article de The Economist du 1er janvier 2005, avec ses deux coupes conservées, et réponses aux deux questions de la page 3. Le rapport de Paris, Lyon et Cachan a été consulté."
+  },
+  "mots_expression": {
+    "1": 118,
+    "2": 132
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V",
+      "fichier": "figures/alertes.svg",
+      "legende": "L’article distingue l’observation du séisme et l’évacuation concrète."
+    },
+    {
+      "numero": 2,
+      "question": "2",
+      "fichier": "figures/scenario.svg",
+      "legende": "Le risque humain dépend successivement de l’exposition et de l’alerte."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "anglais_sciences_2005_2008",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et réponses intégrales en anglais. Détection des tsunamis et transmission de l’alerte après le séisme d’Aceh.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}

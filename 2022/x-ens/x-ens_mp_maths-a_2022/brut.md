@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Notations
 
 Dans l’espace euclidien réel $E$ de dimension $d$, pour deux familles $a,b$ de $p$ vecteurs, on écrit $\operatorname{Gram}(a,b)_{ij}=\langle a_i,b_j\rangle$ et $\Omega_p(a)(b)=\det\operatorname{Gram}(a,b)$. Le volume est $\operatorname{vol}_p(a)=\sqrt{\Omega_p(a)(a)}$. L’espace $\mathcal A_p(E,\mathbb R)$ est celui des formes réelles $p$-linéaires alternées. Les familles orthonormées de la partie I sont notées $u$ et $u'$.
@@ -46,7 +48,7 @@ Pour $i<j$, on a $\langle u_i,u_j\rangle=\langle u'_i,u'_j\rangle=0$ et Q3b donn
 
 Notons $c_k=\langle u_k,u'_k\rangle$. Cauchy–Schwarz donne $c_k\leq1$ et le maximum est positif ou nul puisque les deux signes de tout vecteur admissible restent possibles. Les contraintes s’accumulent d’un rang au suivant, si bien que $c_1\geq\cdots\geq c_p\geq0$. Poser $\theta_k=\arccos c_k$ donne les angles demandés, car l’arccosinus décroît de $[0,1]$ vers $[0,\pi/2]$.
 
-![Figure 2 — Sur deux droites, le maximum du produit scalaire des vecteurs unitaires est le cosinus de leur angle aigu ou droit.](figures/q4-angle-principal.svg)
+![Figure 2 — Le maximum du produit scalaire de deux vecteurs unitaires portés par les droites vaut le cosinus de leur angle principal, compris entre zéro et un angle droit.](figures/q4-angle-principal.svg)
 
 ### Question 4b
 
@@ -164,7 +166,7 @@ L’ensemble $\mathcal F$ des familles orthonormées de $p$ vecteurs est compact
 
 ### Question 15
 
-Si $p=d$, le seul sous-espace est $E$. Ses deux orientations donnent deux points opposés distincts sur la sphère des formes, donc une partie non connexe par arcs.
+Si $p=d$, le seul sous-espace est $E$. Ses deux orientations donnent deux points opposés distincts sur la sphère des formes, à distance $2$ par Q14a. Chacun est donc isolé dans cette image à deux points. Une application continue de l’intervalle connexe $[0,1]$ à valeurs dans ces deux points est constante, ce qui exclut un chemin de l’un à l’autre.
 
 Supposons $p<d$. Pour relier $(V,C)$ à $(V',C')$, prenons les bases principales $(u_i)$ et $(u'_i)$ de Q3. En changeant simultanément le signe des deux premiers vecteurs $u_1,u'_1$ au besoin, on place $(u_i)$ dans $C$ tout en conservant les produits scalaires. Dans chaque $W_i=\operatorname{Vect}(u_i,u'_i)$, construisons un arc $b_i(t)$, pour $0\leq t\leq1$. Si $\theta_i=0$, les deux vecteurs sont égaux et l’arc est constant. Sinon, posons
 $$n_i=\frac{u'_i-\cos(\theta_i)u_i}{\sin(\theta_i)},\qquad

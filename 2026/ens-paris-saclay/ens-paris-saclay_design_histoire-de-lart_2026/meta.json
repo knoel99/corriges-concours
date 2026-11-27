@@ -4,11 +4,12 @@
     "concours": "ENS Paris-Saclay",
     "filiere": "Design",
     "matiere": "Histoire de l’art",
-    "annee": 2026
+    "annee": 2026,
+    "modalite": "écrit"
   },
   "intitule": "Le matériau fixe peut-il remplacer le matériau naturel ?",
   "gabarit": "dissertation",
-  "questions": 0,
+  "questions": 1,
   "redaction": "Proposition non officielle rédigée par IA.",
   "modele": {
     "provider": "codex",
@@ -24,16 +25,40 @@
       "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-cite-fruges-pessac-france-1924-1926/",
       "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-les-maisons-jaoul-neuilly-sur-seine-france-1951-1955/",
       "https://www.boisbuchet.org/exhibitions/learning-from-vernacular/"
+    ],
+    "sha256_sujet": "fe6cc1837aef5c85a9ca0af06f89261b18407b71ac79eadbe5daba57d6fa178c",
+    "index_annales": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293",
+    "programme": "Critique, rejet et réhabilitation des techniques traditionnelles de fabrication : de Vers une architecture à Learning from Vernacular",
+    "consigne_imprimee": "Vous analyserez et discuterez cet extrait de Le Corbusier en vous appuyant sur votre connaissance du programme et selon un propos argumenté.",
+    "reference_imprimee": "Le Corbusier, Vers une architecture, Paris : Flammarion, 1923.",
+    "page_pdf_sujet": 2,
+    "index_annales_sha256": "b0a20e03f7c29f179124178a2801d693ab60c4d40e1a6c9586dd6f0cdefd2e7c",
+    "numero_epreuve": 2,
+    "date_epreuve": "2026-04-02",
+    "horaire": "08 h 30–12 h 30",
+    "rapport_jury_verification": "Aucun rapport écrit d’histoire de l’art 2026 répertorié sur l’index Design vérifié le 26 novembre 2026.",
+    "precision_bibliographique": "Le sujet imprime Flammarion, 1923. La Fondation Le Corbusier identifie l’édition originale de 1923 à Paris, aux Éditions Crès.",
+    "notices_verifiees_revision": [
+      {
+        "url": "https://villefontaine.fr/wp-content/uploads/2019/04/plaquette-village-terre-final.pdf",
+        "statut": 200,
+        "sha256": "aee2c143ef91eac656a9697a923c9a17aa76bbae3bdae2990e895f5b458d881b"
+      },
+      {
+        "url": "https://www.fondationlecorbusier.fr/oeuvre-livre/vers-une-architecture-le-corbusier-1923/",
+        "statut": 200,
+        "sha256": "834b3ea2eb1837ed32482c169966c26452d025df64cc97d139d92808bb5e1588"
+      }
     ]
   },
   "figures": [
     {
       "fichier": "figures/matiere-chantier-maquette.svg",
       "question": "Composition",
-      "legende": "Trois façons d’éprouver une technique de construction"
+      "legende": "À Pessac, une dimension se répète. Aux maisons Jaoul, un assemblage se répète. À Boisbuchet, une échelle commune permet la comparaison."
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -58,6 +83,72 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Confrontation de l’extrait à la consigne ; vérification du module, du chantier et des techniques des maisons Jaoul sur les notices de la Fondation. Précision des dates et du nombre de maquettes de Boisbuchet."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Analyse de l’extrait de Vers une architecture. Comparaison argumentée entre la répétition d’un module, celle d’un assemblage et l’échelle des maquettes du vernaculaire."
+    },
+    {
+      "phase": "revision",
+      "agent": "x_hist_1986",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Confrontation du manifeste avec les méthodes de terre crue de Villefontaine et vérification de la référence imprimée Flammarion au regard de l’édition originale Crès. Relevé du feuillet et de l’index de la session.",
+      "tour": 2
     }
-  ]
+  ],
+  "duree_heures": 4,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2026/2026_SUJET_1A_Design_Histoire_de_l_art.pdf",
+      "sha256": "fe6cc1837aef5c85a9ca0af06f89261b18407b71ac79eadbe5daba57d6fa178c",
+      "pages": 2,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "9f86340c8054d37ba3567391c2b21fa915c7e828ca7a8ab8f2e7410f8ec9b45a"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "eebb6f96d725bb355cf2fa73913522056e2986aaebaf22821b603525163e71fb"
+        }
+      ]
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "consigne": "Vous analyserez et discuterez cet extrait de Le Corbusier en vous appuyant sur votre connaissance du programme et selon un propos argumenté.",
+        "page_pdf": 2
+      }
+    ],
+    "annexes_sujet": [],
+    "reproductions_sujet": [],
+    "pages_blanches_sujet": [],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
 }

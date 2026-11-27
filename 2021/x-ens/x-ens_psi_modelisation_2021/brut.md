@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Partie 2 · Étude de la houle
 
 ### Question 1 · Choisir un littoral
@@ -128,7 +130,11 @@ $$
 Z_{B_0}^{(E)}=\frac{S_cD(-D/2)+S_ph_p(-d+h_p/2)}{V_0},\qquad Z_G^{(E)}=-c.
 $$
 
-Si l'on reconstitue $Z_G^{(E)}$ par les masses de fabrication, la colonne complète de hauteur $h_{Ec}+h_p$ et le plateau annulaire ont leurs centres aux cotes $-d+(h_{Ec}+h_p)/2$ et $-d+h_p/2$. Leur barycentre, pondéré par leurs masses respectives, donne aussi $-c$. L'égalité des densités des deux pièces n'est pas nécessaire.
+Pour retrouver la cote de $O=G_E$ par un barycentre matériel, décomposons l’embase en une colonne pleine de hauteur $h_{Ec}+h_p$ et un plateau annulaire de hauteur $h_p$. Soient $m_c$ et $m_p$ leurs masses. En mesurant depuis le fond, puis en retranchant le tirant d’eau, on obtient
+
+$$Z_G^{(E)}=-d+\frac{m_c(h_{Ec}+h_p)+m_p h_p}{2(m_c+m_p)}=-c.$$
+
+Pour des matériaux de masses volumiques $\rho_c$ et $\rho_p$, les masses sont $m_c=\rho_c\pi r^2(h_{Ec}+h_p)$ et $m_p=\rho_p\pi(R_p^2-r^2)h_p$. Pour une même masse volumique, celle-ci se simplifie dans le quotient.
 
 ![Pour calculer le centre de carène, couper à la face supérieure du plateau. Les points indiquent les centres des deux volumes d’eau déplacés.](figures/q25-volume-carene.svg)
 
@@ -221,11 +227,11 @@ m_F(\ddot z_e+\ddot z)+\rho g S_F(z_e+z)&=F_{2z}+F_{4z}+F_u.
 \end{aligned}
 $$
 
-Si l'on utilise des moments de poussée calculés en $G_F$ pour le flotteur, il faut d'abord les transporter en $G_E$. Le transport de la poussée statique est alors compensé par celui du poids à l'équilibre. On doit employer le même point de réduction des deux côtés.
+Il existe une ambiguïté de point de réduction à la page 10. Le coefficient du flotteur y est écrit avec $Z_{B_0}^{(F)}-Z_G^{(F)}$, bras mesuré depuis $G_F$, mais le moment est étiqueté en $G_E$. Notons $C_F^{(G_F)}=\rho g[(Z_{B_0}^{(F)}-Z_G^{(F)})V_F^0+\pi(R^4-r^4)/4]$ le coefficient calculé au centre du flotteur. Le transport en $G_E$ ajoute $(\overrightarrow{G_EG_F}\times\mathbf F_{hs\to F})_y=-c\theta\rho gV_F^0$. Ainsi $C_F=C_F^{(G_F)}+c\rho gV_F^0$ en $G_E$. En eau calme sans précharge, le poids du flotteur compense le terme transporté et la raideur cohérente vaut $k_{55}=C_E+C_F^{(G_F)}$.
 
 ### Question 37 · Découplage du pilonnement
 
-Les lignes 2 et 4 ne contiennent que $\widehat Z_e,\widehat Z$ et les efforts verticaux. Les lignes 1 et 3 ne contiennent que $\widehat X_e,\widehat\Theta$ avec forces horizontales et moments. Une permutation des lignes et des colonnes donne deux blocs indépendants de taille deux. Le pilonnement des deux corps reste couplé à l'intérieur de son propre bloc.
+Les lignes 2 et 4 ne contiennent que $\widehat Z_e,\widehat Z$ et les efforts verticaux. Les lignes 1 et 3 ne contiennent que $\widehat X_e,\widehat\Theta$ avec forces horizontales et moments. Une permutation des lignes et des colonnes donne deux blocs indépendants de taille deux. Le pilonnement des deux corps reste couplé à l'intérieur de son propre bloc. La ligne donnant $\widehat F_{4z}$ en bas de la page 11 imprime $\widehat X_e$ devant $a_{41}\omega-b_{41}$. Le système donné page 12 utilise $\widehat Z_e$ dans cette composante verticale, conformément au découplage demandé.
 
 ### Question 38 · Impédance en vitesse
 
@@ -240,7 +246,7 @@ Le changement entre variables absolues suit $z=z_f-z_e$ d'après Q18. La ligne q
 
 ### Question 39 · Lire la réponse en fréquence
 
-Près de zéro, les deux amplitudes de position rapportées à la houle tendent vers 1. Les deux corps suivent lentement la surface, leurs vitesses tendent vers zéro, et la récupération est faible. L'embase présente une résonance étroite à basse pulsation (environ $0{,}25\,\mathrm{rad\,s^{-1}}$), puis bouge très peu. Le flotteur présente un pic de vitesse d'environ $2{,}3\,\mathrm{s^{-1}}$ par mètre de houle vers $\omega\simeq1{,}7\,\mathrm{rad\,s^{-1}}$. À ce pic, la vitesse de l'embase est négligeable et la vitesse relative est grande. La fréquence favorable est donc $f\simeq1{,}7/(2\pi)\simeq0{,}27\,\mathrm{Hz}$, soit une période proche de $3{,}7\,\mathrm s$. Aux hautes fréquences les deux réponses s'éteignent. Le maximum exact de puissance sous charge dépend aussi de la commande et des phases.
+Près de zéro, les deux amplitudes de position rapportées à la houle tendent vers 1. Les deux corps suivent lentement la surface, leurs vitesses tendent vers zéro, et la récupération est faible. L'embase présente une résonance étroite à basse pulsation (environ $0{,}25\,\mathrm{rad\,s^{-1}}$), puis bouge très peu. Le flotteur présente un pic de vitesse d'environ $2{,}3\,\mathrm{(m/s)/m}$ d’amplitude de houle vers $\omega\simeq1{,}7\,\mathrm{rad\,s^{-1}}$. À ce pic, la vitesse de l'embase est négligeable et la vitesse relative est grande. La fréquence favorable est donc $f\simeq1{,}7/(2\pi)\simeq0{,}27\,\mathrm{Hz}$, soit une période proche de $3{,}7\,\mathrm s$. Aux hautes fréquences les deux réponses s'éteignent. Le maximum exact de puissance sous charge dépend aussi de la commande et des phases.
 
 ## Partie 4 · Récupération optimale de l’énergie
 
@@ -320,7 +326,9 @@ $$
 
 Pour $K_i>0$, le gain en dB est $20\log_{10}K_i-10\log_{10}[1+(\omega T_i)^2]$, la phase $-\arctan(\omega T_i)$. Le gain a un plateau puis une pente de $-20$ dB/décade, et la phase passe de $0$ à $-90^\circ$. À $\omega_c=1/T_i$, perte de $3{,}01$ dB, phase de $-45^\circ$. Pour reproduire le courant à un facteur d'échelle constant avec un faible déphasage, employer $\omega T_i\ll1$. Ici $\omega_c=5\times10^5\,\mathrm{rad\,s^{-1}}$.
 
-![Gain relatif au plateau et phase du capteur de courant. La cassure à ω Ti = 1 sépare le plateau de la décroissance à vingt décibels par décade.](figures/q51-bode.svg)
+Avec $K_i=4\times10^{-4}$, le plateau est à $20\log_{10}K_i\simeq-67{,}96$ dB et le point de coupure à $-70{,}97$ dB. La fréquence associée est $f_c=\omega_c/(2\pi)\simeq79{,}6$ kHz.
+
+![Diagramme de Bode du rapport de courants. La verticale indique la coupure à 500 000 rad/s. Le gain absolu au plateau vaut −67,96 dB.](figures/q51-bode.svg)
 
 ### Question 52 · Tension pour cent ampères
 
@@ -346,6 +354,8 @@ $$
 $$
 
 En régime statique, $dK_i/K_i=[R_\Sigma/(R_\Sigma+N_s A)]dK_3/K_3$. Une variation de $\pm10\%$ de $K_3$ produit donc une variation de gain atténuée mais non nulle. Le pôle varie également puisque $T_i=L_s/(R_\Sigma+N_sA)$.
+
+Pour une variation finie $\delta=\Delta K_3/K_3$, remplaçons $A$ par $(1+\delta)A$ dans le gain statique, puis retranchons le gain initial. On trouve exactement $\Delta K_i/K_i=\delta R_\Sigma/[R_\Sigma+(1+\delta)N_sA]$. Les écarts associés à $\delta=+0{,}10$ et à $\delta=-0{,}10$ sont donc de signes opposés et de modules légèrement différents.
 
 ### Question 55 · Correcteur électronique
 

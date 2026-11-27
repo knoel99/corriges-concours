@@ -1,0 +1,119 @@
+{
+  "slug": "ens_mp-pc_informatique_2007",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Informatique",
+    "annee": 2007,
+    "duree_heures": 4
+  },
+  "questions": 35,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-mp/session-2007/sujet-2007-ecrit-mp-informatique.pdf",
+    "index_banque": "https://banques-ecoles.fr/cms/filiere-mp/les-annales-et-rapports-des-jurys/",
+    "identification": "Cahier 70.04M. MP (groupes MPI et I), Paris, Lyon et Cachan. PC (groupe I), Paris et Lyon. Durée de quatre heures. Aucun rapport d’écrit associé à cette composition sur la page de la banque.",
+    "sujet_sha256": "9b451d7768c14aeb36058972e79d59e52d3fe8220f01a016e2f269705877b3e5"
+  },
+  "figures": [
+    {
+      "fichier": "figures/passage-par-pivot.svg",
+      "question": "1.7",
+      "legende": "Figure 1 — Un trajet passant par le nouveau sommet autorisé u se décompose en deux trajets à sommets intermédiaires antérieurs."
+    },
+    {
+      "fichier": "figures/fenetre-euclide.svg",
+      "question": "2.8",
+      "legende": "Figure 2 — La bande des rapports perdants est comprise entre les deux seuils du nombre d’or. Les extrémités irrationnelles ne sont jamais atteintes."
+    },
+    {
+      "fichier": "figures/arene-parite.svg",
+      "question": "2.14",
+      "legende": "Figure 3 — Les choix gagnants isolent le cycle A–D–E de maximum 8 et la région B, C, F, G dont les cycles permis ont pour maximum 3."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Résolution des 35 items de la composition 70.04M. Calcul min-plus, attracteurs, jeu d’Euclide, accessibilité répétée et détermination positionnelle des jeux de parité. Lecture de la garde, des trois graphes et des huit pages."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "physique_psi_interens",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture des deux éditions et des trois illustrations contre le fac-similé de la banque. 35 sous-questions contrôlées. Pseudo-programme de doublement dans le guide et passage du plancher aux deux seuils dans les deux éditions."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "1.8",
+      "1.9",
+      "1.10",
+      "2.1.1",
+      "2.1.2",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6.1",
+      "2.6.2",
+      "2.7",
+      "2.8.1",
+      "2.8.2",
+      "2.8.3",
+      "2.9",
+      "2.10",
+      "2.11.1",
+      "2.11.2",
+      "2.12",
+      "2.13",
+      "2.14",
+      "2.15",
+      "2.16",
+      "2.17",
+      "2.18",
+      "2.19",
+      "2.20"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "recoupement_facsimile": [
+      {
+        "pages_pdf": "3–4",
+        "questions": "1.1–1.10",
+        "controle": "Flèches et poids de la figure 1, distances, doublement, Floyd–Warshall et cycle négatif."
+      },
+      {
+        "pages_pdf": "4–6",
+        "questions": "2.1–2.8",
+        "controle": "Arène à trois sommets, attracteurs, valeurs de gamma et règle du jeu d’Euclide."
+      },
+      {
+        "pages_pdf": "6–8",
+        "questions": "2.9–2.20",
+        "controle": "Accessibilité répétée, couleurs et propriétaires du graphe de 2.14, stratégies et terminaison de la récurrence."
+      }
+    ]
+  }
+}

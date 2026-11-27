@@ -1,0 +1,70 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_litterature-olivier-rolin-et-tigre-en-papier-oral_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Littérature — Olivier Rolin et Tigre en papier (oral)",
+    "annee": 2018,
+    "modalite": "oral"
+  },
+  "intitule": "Littérature — Olivier Rolin et Tigre en papier (oral)",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/oral-SIL2018-litt.1.pdf",
+    "sha256_sujet": "b5d80fe91eddb50d2e6a0679b4e27850eb2d566eac184e59518a756718aa3158",
+    "reperage": "Commenter le passage du roman Tigre en papier.",
+    "pages_sujet": 2,
+    "bornes_texte": "P. 1, « Je pensais à ça aussi » à p. 2, « qu’ils sont arrêtés. ». Deux coupures imprimées entre crochets, l’une dans la première phrase, l’autre après la réponse sur l’inaction.",
+    "composition_document": "Deux pages. Consigne de commentaire, chapeau sur Olivier Rolin et son narrateur, passage de Tigre en papier (2002) et sept notes imprimées : quatre p. 1, trois p. 2. Aucune pièce distincte. Les deux coupures signalées dans le passage ont été respectées."
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Commentaire",
+      "legende": "Quel passé le narrateur transmet-il ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet original. Commentaire intégral, analyse de la progression et de la forme, préparation guidée de l’entretien, réponses argumentées et schéma de lecture."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "classiques_2017",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Lecture des deux pages, du chapeau, des sept notes et des limites des deux coupures imprimées. Révision de l’attribution du « tu », de l’alternance des temps, de l’apport des notes et du nombre des marins concernés par la fin. Entraînement guidé à l’attribution des voix et figure conservée."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire de spécialité — commentaire unique de l’intégralité du texte donné, suivi d’un entretien."
+    ],
+    "elements_verifies": [
+      "P. 1 : chapeau biographique distingué du dispositif romanesque ; récit de lecteur, printemps 1919 et récit de Valtin, changement d’âge et de registre, première interruption du dialogue.",
+      "P. 1–2 : première série des notes 1–4, articulation entre Komintern et mémoire orale, analogie des deux îles ; au bar de Port-Royal, second récit de jeunesse.",
+      "P. 2 : échelle de quatre journées, alternance du conditionnel passé, de l’imparfait et du conditionnel présent ; plaisanterie des rôles, réflexivité du « te », réponse de la fille et double sens du titre.",
+      "P. 2 : notes 5–7 et effets de registre, reprise de la traversée, débarquement d’une moitié seulement et arrestation. Le commentaire et deux relances couvrent la totalité des deux pages sans combler les coupes."
+    ]
+  },
+  "date_revision": "2026-11-26"
+}

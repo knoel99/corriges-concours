@@ -1,0 +1,93 @@
+{
+  "slug": "x-ens_mp-pc_composition-francaise_2011",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC",
+    "matiere": "Composition française",
+    "annee": 2011,
+    "modalite": "écrit"
+  },
+  "intitule": "Le bien donne-t-il au mal son attrait ?",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2011/2011%20MP-PC%20SUJET%20ECRIT%20FRANCAIS.pdf",
+    "sha256_sujet": "778aa2068b1a1b6ae9c0196102c2dcea244ab3dfb9d562b878890557b354da0b",
+    "index_sujet": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2011",
+    "sujet_pages": 1,
+    "sujet_miroir": "https://www.ens.psl.eu/IMG/file/concours/2011/PC/2011%20MP-PC%20SUJET%20ECRIT%20FRANCAIS.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2011/rap_ecrit_francais_xeulc_mppc2011.pdf",
+    "sha256_rapport_jury": "7319b3b75f3adfc4cb7e09f34ef199a355118fdd579ca5a401a4268a67f44c27",
+    "index_rapport_jury": "https://banques-ecoles.fr/cms/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2011",
+    "rapport_jury_pages": 7,
+    "rapport_jury_miroir": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2011/copy_of_rap_ecrit_francais_xeulc_mppc2011.pdf",
+    "code_garde": "XEULC",
+    "duree": "4 heures",
+    "attribution": "Composition de quatre heures, commune aux filières MP et PC. La garde porte XEULC pour l’X, l’ESPCI et les ENS de Paris, Lyon et Cachan.",
+    "programme": "https://www.enseignementsup-recherche.gouv.fr/fr/bo/2010/17/esrs1000116a.htm",
+    "reference_programme": "Arrêté du 25 mars 2010, BO n° 17 du 29 avril 2010, NOR ESRS1000116A, article 1, deuxième thème « Le mal ».",
+    "oeuvres_au_programme": [
+      "William Shakespeare, Macbeth, traduction Pierre-Jean Jouve, préface G. Wilson Knight, Garnier-Flammarion.",
+      "Rousseau, Émile, livre IV, Profession de foi du vicaire savoyard. Seulement de « Mon enfant, n’attendez de moi ni des discours savants ni de profonds raisonnements » à « C’est à elle à s’approcher ».",
+      "Jean Giono, Les Âmes fortes."
+    ],
+    "passages_verifies": [
+      "Macbeth, I, 6 : Duncan et Banquo devant le château, martinets. I, 7 : les devoirs du parent, du sujet et de l’hôte, ambition, renoncement de Macbeth puis persuasion par son épouse. III, 1 : crainte de voir régner la descendance de Banquo. III, 4 : spectre au banquet. V, 1 : Lady Macbeth garde une lumière.",
+      "Profession de foi : le vicaire parle à un jeune homme, distingue le fait de connaître le bien et celui de l’aimer, et tire du remords une conscience de la liberté.",
+      "Les Âmes fortes : veillée et récits concurrents de la relation Thérèse–Mme Numance. Les mobiles supposés sont rapportés à la version qui les donne, et séparés du jugement du lecteur."
+    ],
+    "portee_rapport": "Rapport commun MP et PC XEULC, sept pages ; p. 1 : 1 849 copies MP, 1 577 PC. P. 4 : analyser les termes, organiser une question principale, confronter les œuvres. P. 5-6 : articuler saisie intellectuelle, Bien/Mal et attrait ; la clé ne signifie pas que le Bien cause le Mal ; penser le mouvement de « se cabrer ». P. 6-7 : prendre en compte théâtre, polyphonie et situation du vicaire, ne pas traiter le roman comme preuve d’une loi psychologique.",
+    "lecture_macbeth": "https://www.folger.edu/explore/shakespeares-works/macbeth/read/",
+    "lecture_rousseau": "https://books.google.com/books/about/La_Profession_de_foi_du_vicaire_savoyard.html?id=_IoNAAAAIAAJ",
+    "lecture_giono": "https://thalim.cnrs.fr/publications-et-productions/ouvrages/lectures-de-jean-giono-les-ames-fortes/"
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Dissertation",
+      "legende": "D’un même geste à trois questions"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de la dissertation sur le passage de Georges Bataille, confrontation des trois œuvres, vérification de la garde, du programme prescrit, du rapport commun MP-PC et des passages cités. Ajout d’une préparation guidée et d’un schéma. Rédaction initiale de la copie et du guidage par oraux_lyon, vérification et mise en forme par lettres_dissertations_suite.",
+      "collaboration": "oraux_lyon"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Shakespeare, Macbeth, II, 3, la plaisanterie du portier et le savoir du spectateur. Distinction entre l’attrait de la représentation et le désir du personnage. Comparaison au sujet original et au rapport. Relecture des trois mouvements et de la conclusion dans les deux éditions."
+    }
+  ],
+  "gabarit": "dissertation",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Le Bien, le Mal et l’attrait"
+    ],
+    "pages_du_sujet": 1,
+    "pages_pdf_des_questions": {
+      "Le Bien, le Mal et l’attrait": 1
+    },
+    "precision": "Dissertation unique de quatre heures sur la citation de Bataille, au regard des trois œuvres prescrites. Le repère est un intitulé éditorial. La consigne imprimée se trouve page 1. Rapport du jury, pages 1 à 7."
+  }
+}

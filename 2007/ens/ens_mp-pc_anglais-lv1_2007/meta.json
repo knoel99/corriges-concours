@@ -1,0 +1,65 @@
+{
+  "slug": "ens_mp-pc_anglais-lv1_2007",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Anglais (LV1)",
+    "annee": 2007,
+    "modalite": "écrit"
+  },
+  "intitule": "Les débris spatiaux et le risque d’une cascade de collisions",
+  "questions": 3,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "V",
+      "1",
+      "2"
+    ]
+  },
+  "sources": {
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2007",
+    "etablissements": "ENS de Paris, de Lyon et de Cachan",
+    "pages_sujet": "3",
+    "code_garde": "71.12PM",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2007/sujet-ecrit-2007-mp-pc_langue_vivante_1.pdf#page=3",
+    "sujet_sha256": "15f4c97a9eb06e463e4a884fa769e62b3ea7db6a925e0c92fce4dfe70e89da5b",
+    "precision": "Version de William J. Broad, International Herald Tribune, 7 février 2007. Les deux questions sont reproduites à la page 3 du cahier officiel. Le rapport spécifique à l’anglais LV1 2007 n’a pas été retrouvé."
+  },
+  "mots_expression": {
+    "1": 124,
+    "2": 144
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V",
+      "fichier": "figures/cascade.svg",
+      "legende": "Le mécanisme redouté par les spécialistes est formulé comme une prévision."
+    },
+    {
+      "numero": 2,
+      "question": "2",
+      "fichier": "figures/responsabilites.svg",
+      "legende": "Les mesures proposées portent sur les opérateurs et les accords internationaux."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "anglais_sciences_2005_2008",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et réponses intégrales en anglais. Les débris spatiaux et le risque d’une cascade de collisions.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}

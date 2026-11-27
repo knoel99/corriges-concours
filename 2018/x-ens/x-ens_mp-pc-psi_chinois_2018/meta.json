@@ -1,0 +1,105 @@
+{
+  "slug": "x-ens_mp-pc-psi_chinois_2018",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Chinois",
+    "annee": 2018,
+    "modalite": "écrit"
+  },
+  "intitule": "La généralisation des paiements mobiles en Chine",
+  "questions": 2,
+  "redaction": "Synthèse des quatre documents chinois sur le paiement mobile et texte d’opinion répondant à Dong Yunfeng sur les usages des données. Consignes communes établies par la notice 2018 et l’arrêté du 5 janvier, garde chinoise particulière absente.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_MPPC_sujet_Chinois.pdf",
+    "sha256_sujet": "749ae28895bf6b9d935ef4d9b4246e69e8bb49fdac18cc18d5658fcbae04b2c3",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2018/",
+    "reference_du_texte": "A1, 速汇宝, 手机支付的好处, 27 novembre 2017. A2, 人民日报, 21 juillet 2017. A3, récit publié sur jiemi.baike.com. A4, CNNIC, enquête de juin 2017. B5, 董云峰, compte 阿尔法工场, repris sur 36氪, 11 août 2017.",
+    "pages_sujet": 6,
+    "precision_rapport": "Aucun rapport de l’écrit chinois retrouvé pour cette session.",
+    "autre_publication_sujet": "https://www.ens.psl.eu/sites/default/files/2018_mppc_sujet_chinois.pdf",
+    "sha256_autre_publication_sujet": "749ae28895bf6b9d935ef4d9b4246e69e8bb49fdac18cc18d5658fcbae04b2c3",
+    "garde": null,
+    "code_index": "XEULCR",
+    "index_mpi": "https://www.ens.psl.eu/rapports-et-sujets-2018-mpi",
+    "index_pc": "https://www.ens.psl.eu/rapports-et-sujets-2018-pc",
+    "index_psi": "https://www.ens.psl.eu/rapports-et-sujets-2018-psi",
+    "rapport_jury": null,
+    "notice_session": "https://www.ens.psl.eu/sites/default/files/notice_ENS_2018.pdf",
+    "sha256_notice_session": "a30b66a549dc4ee381b23862f73a0a3c98fd17bb4c79ce3a34f343b5bb285e5b",
+    "pages_notice_session": "p. imprimées 14 et 18, pages 16 et 20 du PDF",
+    "arrete_session": "https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000036484682",
+    "reference_arrete": "5 janvier 2018, annexe, III.1, Programme non scientifique commun aux deux filières, A, 2, § 2.1 « À l’écrit ».",
+    "limite_garde": "Garde particulière absente des deux fac-similés chinois. Les gardes parallèles établissent les deux consignes communes. Les indications matérielles éventuellement propres au chinois restent inconnues.",
+    "gardes_concordantes_2018": [
+      {
+        "langue": "Allemand",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_MPPC_sujet_All.pdf#page=1",
+        "sha256": "93b9d66c5cbf86fc2740fc17d085dd9f1083a8d818ac24880a1ba33bf077a624"
+      },
+      {
+        "langue": "Anglais",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_MPPC_sujet_Angl.pdf#page=1",
+        "sha256": "b9517f87c5c991eebc6fe9e0e77013c20d6091f2b8e986c8470439894fce86d2"
+      },
+      {
+        "langue": "Arabe",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_MPPC_sujet_Arabe.pdf#page=1",
+        "sha256": "0f988ef91985cd05ec8d14bf2935d53594177f4841b5d90d3414e8758f8fc90e"
+      },
+      {
+        "langue": "Espagnol",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_MPPC_sujet_Esp.pdf#page=1",
+        "sha256": "8e55b28254db5e99f17bc3144747811fe95a5b7d6dfeffa7187b82381d7bebee"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/utilisateurs-paiements.svg",
+      "legende": "Utilisateurs du paiement en ligne et du paiement sur mobile, en millions de personnes, selon le CNNIC."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Synthèse des quatre documents chinois sur le paiement mobile et texte d’opinion répondant à Dong Yunfeng sur les usages des données. Consignes communes établies par la notice 2018 et l’arrêté du 5 janvier, garde chinoise particulière absente."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "fin_langues_x_interens",
+      "agent": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Collation des consignes A et B des quatre gardes XEULCR 2018 avec la notice, vérification des cinq documents chinois, du titre et des deux textes (616 et 548 mots par segmentation lexicale).",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ],
+    "precision": "Le cahier chinois commence au document A1. Les quatre gardes conservées pour la même épreuve XEULCR 2018 donnent mot pour mot les mêmes consignes de rédaction, explicitement communes aux langues proposées. Elles demandent une synthèse titrée des documents 1 à 4, puis une prise de position sur le document 5. La notice de la session confirme ces deux travaux en MP et PC et étend leurs modalités à PSI. Les cinq documents chinois et les deux réponses sont complets. La garde propre au chinois reste introuvable."
+  },
+  "date_revision": "2026-11-26"
+}

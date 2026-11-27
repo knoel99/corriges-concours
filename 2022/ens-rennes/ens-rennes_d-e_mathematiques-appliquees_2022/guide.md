@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Ajustement d’une demande, transmission binaire et lois à densité.** Les grandeurs monétaires du premier exercice sont d’abord exprimées en centaines d’euros. Dans le deuxième, une erreur inverse le message binaire.
 
 ## 1.I. Prix de vente et nombre d’acheteurs
@@ -114,6 +116,11 @@ Avec la demande modélisée $y=e^{-0{,}29x+6{,}5}$, la marge nette prévisionnel
 #### Solution
 
 $f'(x)=e^{-0{,}29x+6{,}5}[1-0{,}29(x-3)]$. La fonction croît de $f(0)=-3e^{6{,}5}\simeq-1995{,}42$ à son maximum en $x_*=3+1/0{,}29=187/29$, puis décroît strictement. À l’infini sa limite est 0 par croissances comparées. Sa limite à droite de 0 vaut $f(0)$ par continuité.
+
+| Prix, en centaines d’euros | $0$ | $187/29$ | $+\infty$ |
+|---|---:|---:|---:|
+| Valeur ou limite du bénéfice | $-3e^{6{,}5}$ | $e^{4{,}63}/0{,}29$ | $0$ |
+| Variation vers la colonne suivante | Croît | Décroît | |
 
 ### Question 1.II.4
 
@@ -275,11 +282,13 @@ Avec $v_n=u_n-1/2$, la récurrence devient $v_{n+1}=(2p-1)v_n$. La raison est $2
 ### Question 2.II.3.b
 
 > [!INDICATION]
-> L’indice initial est 1 et non 0.
+> Exprimer le terme initial en fonction de 2p−1 avant de regrouper les puissances. Pour contrôler la réponse, remarquer que deux erreurs successives rétablissent le message.
 
 #### Solution
 
 $v_n=(1/2-2p(1-p))(2p-1)^{n-1}$. Ainsi $u_n=1/2+(1/2-2p(1-p))(2p-1)^{n-1}=[1+(2p-1)^{n+1}]/2$. La dernière expression couvre aussi $p=1/2$.
+
+On peut vérifier la formule sans récurrence. Le destinataire reçoit le message initial quand le nombre $J$ d’erreurs est pair. Comme $J$ suit la loi binomiale de paramètres $n+1$ et $1-p$, l’identité $\mathbf{1}_{\{J\text{ pair}\}}=(1+(-1)^J)/2$ donne $u_n=[1+(p-(1-p))^{n+1}]/2$ par le binôme.
 
 ### Question 2.II.3.c
 
@@ -497,3 +506,5 @@ $P(X_n>e)=1-G_n(e)=n/e^{n-1}$.
 #### Solution
 
 Le support étant dans $[1,\infty[$, l’espérance est finie si et seulement si $\int_1^\infty xg_n(x)dx=(n-1)^2\int_1^\infty f_{n-1}(x)dx$ converge. Pour $n=2$ elle diverge par 1.c. Pour tout $n\ge3$ elle converge par 2.c et vaut $\mathbb E X_n=((n-1)/(n-2))^2$.
+
+Au premier rang admissible, $n=3$, la formule donne $\mathbb E X_3=4$. Au rang précédent, l’intégrale tronquée de $xg_2(x)$ vaut $(\ln A)^2/2$, qui croît sans borne. Le seuil de convergence est ainsi sensible au facteur $x$ du premier moment.

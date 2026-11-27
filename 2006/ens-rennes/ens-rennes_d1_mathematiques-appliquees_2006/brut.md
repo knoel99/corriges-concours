@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le cahier C1683V2 associe une courbe rationnelle par morceaux, un télescopage, une chaîne de transmission et deux applications du théorème des valeurs intermédiaires.
 
 ## Exercice 1. Valeur absolue et asymptote oblique
@@ -35,6 +37,10 @@ Les termes consécutifs s’annulent deux à deux dans la somme. Il reste $2/2!-
 ### Question 3.a
 
 Dans le modèle où chaque nouvel intermédiaire inverse le message avec probabilité $p$ indépendamment de ce qu’il reçoit, une sortie vraie provient d’une entrée vraie transmise fidèlement ou d’une entrée fausse inversée. Ainsi $p_{k+1}=(1-p)p_k+p(1-p_k)=p+(1-2p)p_k$.
+
+Cette formule suppose que la probabilité de mentir reste $p$ quelle que soit la véracité du message reçu. Pour voir le rôle de cette hypothèse, imaginons que tous les habitants suivent un même tirage initial. Avec probabilité $p$, tous inversent le message, sinon tous le conservent. Chacun a encore une probabilité individuelle $p$ de mentir. Après deux transmissions le message est toujours vrai, puisque deux inversions se compensent. En revanche, avec des décisions indépendantes, $p_2=(1-p)^2+p^2<1$.
+
+![Figure 2 — Avec une probabilité d’inversion de 0,2 à chaque étape, les chemins qui restituent le message vrai après deux transmissions ont pour probabilités 0,64 et 0,04.](figures/deux-transmissions.svg)
 
 ### Question 3.b
 

@@ -62,7 +62,7 @@ def registre() -> dict[str, str]:
         for r in lignes
     ):
         raise ValueError(
-            "Chaque épreuve requiert une modalité et un lien HTTPS vers son sujet."
+            "Chaque épreuve requiert une modalité et un lien HTTPS vers sa source."
         )
     return sujets
 
@@ -148,7 +148,27 @@ def editions_retirees() -> dict[str, list[tuple[str, str]]]:
     return editions
 
 
-def verifier_paire(dossier: Path) -> tuple[str, set[str]]:
+def segment_adresse(libelle: str) -> str:
+    ascii_libelle = unicodedata.normalize("NFKD", libelle).encode("ascii", "ignore").decode()
+    return re.sub(r"[^\w.-]+", "-", ascii_libelle.lower()).strip("-")
+
+
+def statut_couverture(couverture: object) -> str:
+    """Lire les deux formats historiques et tenir compte des omissions explicites."""
+    if isinstance(couverture, dict):
+        if couverture.get("questions_non_traitees") or couverture.get("questions_partiellement_traitees"):
+            return "partiel"
+        couverture = couverture.get("statut")
+    if isinstance(couverture, str):
+        statut = couverture.strip().casefold()
+        if statut in {"partiel", "partielle"}:
+            return "partiel"
+        if statut in {"complet", "complète", "intégral", "intégrale"}:
+            return "complet"
+    return "à confirmer"
+
+
+def verifier_paire(dossier: Path, *, integralite: bool = False) -> tuple[str, set[str]]:
     fichiers = [dossier / f for f in ("meta.json", "brut.md", "guide.md")]
     if not all(f.is_file() for f in fichiers):
         return "paire absente ou incomplète", set()
@@ -168,25 +188,31 @@ def verifier_paire(dossier: Path) -> tuple[str, set[str]]:
         if not est_astra_ultra(entree) and entree.get("modifications") is not False:
             return "édition modifiée depuis la dernière rédaction ou révision Astra Ultra", set()
     if SLUG.fullmatch(dossier.name):
-        # La publication du site construit la clé des textes et PDF à partir de la matière.
-        matiere = str(meta.get("epreuve", {}).get("matiere", ""))
-        ascii_matiere = (
-            unicodedata.normalize("NFKD", matiere).encode("ascii", "ignore").decode()
-        )
-        segment = re.sub(r"[^\w.-]+", "-", ascii_matiere.lower()).strip("-")
-        if segment != dossier.name.split("_")[2]:
+        # Les deux lecteurs retrouvent les textes et leur journal par cette adresse.
+        banque, _, matiere, annee = dossier.name.split("_")
+        epreuve = meta.get("epreuve", {})
+        if segment_adresse(str(epreuve.get("matiere", ""))) != matiere:
             return "identité de matière à corriger pour publier sur la fiche", set()
+        if filiere := epreuve.get("filiere"):
+            adresse = f"{banque}_{segment_adresse(filiere)}_{matiere}_{annee}"
+            if not set(fiches_site(dossier.name)) <= set(fiches_site(adresse)):
+                return "identité de filière à corriger pour publier sur la fiche", set()
     for md in fichiers[1:]:
         if not signatures <= entete(md.read_text(encoding="utf-8")):
             return "signature à vérifier dans les deux éditions", set()
-    couverture = meta.get("couverture")
-    if isinstance(couverture, dict) and couverture.get("statut") == "partiel":
+    couverture = statut_couverture(meta.get("couverture"))
+    if couverture == "partiel":
         return "signature présente, corrigé partiel", signatures
+    if integralite and couverture != "complet":
+        return "signature présente, couverture à confirmer", signatures
     return "signature présente", signatures
 
 
-def fiche_site(slug: str) -> str:
+def fiches_site(slug: str) -> tuple[str, ...]:
+    """Adresses publiques de chacune des voies d’une épreuve commune."""
     banque, voie, epreuve = slug.split("_", 2)
+    if voie == "m-prime-p-prime":
+        return tuple(f"{banque}_{filiere}_{epreuve}" for filiere in ("m-prime", "p-prime"))
     filieres = voie.split("-")
     if len(filieres) > 1 and set(filieres) <= {
         "mp",
@@ -202,8 +228,12 @@ def fiche_site(slug: str) -> str:
         "ect",
         "ecg",
     }:
-        voie = filieres[0]
-    return f"{banque}_{voie}_{epreuve}"
+        return tuple(f"{banque}_{filiere}_{epreuve}" for filiere in dict.fromkeys(filieres))
+    return (slug,)
+
+
+def fiche_site(slug: str) -> str:
+    return fiches_site(slug)[0]
 
 
 class SourceHTML(HTMLParser):
@@ -406,11 +436,15 @@ def main() -> int:
     parser.add_argument(
         "--site",
         action="store_true",
-        help="vérifier les deux HTML et PDF en production",
+        help="vérifier les deux lecteurs et PDF en production pour chaque filière",
     )
     parser.add_argument("--tsv", type=Path, help="écrire le rapport par épreuve")
     parser.add_argument(
         "--exiger", action="store_true", help="échouer si une épreuve reste à couvrir"
+    )
+    parser.add_argument(
+        "--integral", action="store_true",
+        help="exiger une paire Astra signée et une couverture intégrale documentée pour chaque épreuve",
     )
     args = parser.parse_args()
     perimetre = registre()
@@ -435,18 +469,24 @@ def main() -> int:
     def ligne(slug):
         banque = slug.split("_", 1)[0]
         dossier = RACINE / slug[-4:] / banque / slug
-        local, signatures = verifier_paire(dossier)
+        local, signatures = verifier_paire(dossier, integralite=args.integral)
         if args.depuis and signatures and not edition_attribuee_depuis(dossier, base):
             local, signatures = "modification du corrigé sans nouvelle attribution Astra Ultra", set()
         fiche = fiche_site(slug)
         site = "non vérifié"
         if signatures and args.site:
             try:
-                site = (
-                    "vérifié"
-                    if site_verifie(dossier, fiche, signatures)
-                    else "trace à vérifier"
-                )
+                meta = json.loads((dossier / "meta.json").read_text(encoding="utf-8"))
+                voie = meta.get("epreuve", {}).get("filiere")
+                adresse = slug
+                if voie:
+                    concours, _, epreuve, annee = slug.split("_")
+                    adresse = f"{concours}_{segment_adresse(voie)}_{epreuve}_{annee}"
+                lacunes = [
+                    cible for cible in fiches_site(adresse)
+                    if not site_verifie(dossier, cible, signatures)
+                ]
+                site = "trace à vérifier (" + ", ".join(lacunes) + ")" if lacunes else "vérifié"
             except (OSError, IncompleteRead, ValueError, subprocess.SubprocessError) as exc:
                 site = f"contrôle impossible ({exc})"
         return (
@@ -469,7 +509,7 @@ def main() -> int:
             tab.writerow(("slug", "modalite", "github", "site", "fiche"))
             tab.writerows(bilan)
     acceptes = {"signature présente"}
-    if args.depuis:
+    if args.depuis and not args.integral:
         # Une PR peut publier les parties effectivement traitées, signalées dans le bilan global.
         acceptes.add("signature présente, corrigé partiel")
     incompletes = [
@@ -482,7 +522,7 @@ def main() -> int:
     if args.depuis or args.slugs:
         for slug, modalite, local, site, _ in incompletes:
             print(f"{slug} ({modalite}) : {local} — site {site}")
-    return int(bool(incompletes) and args.exiger)
+    return int(bool(incompletes) and (args.exiger or args.integral))
 
 
 if __name__ == "__main__":

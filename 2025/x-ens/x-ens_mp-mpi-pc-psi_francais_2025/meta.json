@@ -20,7 +20,21 @@
     "sujet_psi": "https://www.ens.psl.eu/sites/default/files/2025_psi_ep2_francais_14022025_nb.pdf",
     "sujet_psi_sha256": "809b938849bed61fbf06675ee7e745ed3111e2af9a4e3a9c75f38a406839a2e1",
     "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Ecrits_MP%2C%20MPI%20et%20PC_fran%C3%A7ais%20OK.pdf",
-    "rapport_sha256": "6be81b7625dd77d88e8a20d0cafc9cf52c4d615590ea67b5bb26f21ea4416ccb"
+    "rapport_sha256": "6be81b7625dd77d88e8a20d0cafc9cf52c4d615590ea67b5bb26f21ea4416ccb",
+    "programme": "https://www.education.gouv.fr/bo/2024/Hebdo29/ESRS2418417A",
+    "programme_sha256": "5e329586a757853b0b1eff03cc2b63acc89b80a4fb972e0607ca23f08bddbb19",
+    "textes_de_reference": [
+      {
+        "libelle": "Wharton, chapitre XXXIII, texte anglais",
+        "url": "https://en.wikisource.org/wiki/The_Age_of_Innocence/Chapter_33"
+      },
+      {
+        "libelle": "Wharton, chapitre XXXIV, texte anglais",
+        "url": "https://en.wikisource.org/wiki/The_Age_of_Innocence/Chapter_34"
+      }
+    ],
+    "perimetre_du_rapport": "MP, MPI et PC, conformément à son en-tête. Le fascicule PSI de même date reproduit la même dissertation et le tableau de l’ENS ne joint aucun rapport français propre à la PSI.",
+    "index_psi": "https://www.ens.psl.eu/rapports-et-sujets-2025-psi"
   },
   "figures": [
     {
@@ -39,7 +53,42 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Rédaction des deux éditions sur les deux fascicules officiels concordants et le rapport du jury. Dissertation sur Rousseau à partir des deux tragédies d’Eschyle, des chapitres XVI à XX de Spinoza et du roman de Wharton, avec préparation guidée et schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "fui_physique_un",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Contrôle du feuillet, du bulletin officiel et du rapport p. 3–7. Le rapport invite à distinguer la loi politique, les institutions sociales et les mœurs, puis à discuter qui juge de la bonté d’une institution. Vérification des trois axes, des références aux œuvres et des schémas."
     }
   ],
-  "date_revision": "2026-11-24"
+  "date_revision": "2026-11-26",
+  "intitule": "Jean-Jacques Rousseau, Émile ou De l’éducation, I (1762) — La communauté et l’individu",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "precision": "La page 2 du sujet contient une seule consigne de commentaire et de discussion de la citation au moyen des œuvres du programme. Les trois axes identifient les étapes de la proposition pédagogique.",
+    "pages_pdf_sujet": [
+      2
+    ],
+    "programme": "Eschyle, Les Suppliantes et Les Sept contre Thèbes. Spinoza, Traité théologico-politique, préface et chapitres XVI à XX. Wharton, Le Temps de l’innocence, traduction de Madeleine Taillandier.",
+    "items_verifies": [
+      "Dénaturation, existence relative et puissance collective",
+      "Restriction de la sensibilité au tout et coût de la conformité",
+      "Liberté de juger et reconnaissance du particulier"
+    ],
+    "lecture_du_rapport": "Le rapport invite à distinguer la loi politique, les institutions sociales et les mœurs, puis à discuter qui juge de la bonté d’une institution."
+  }
 }

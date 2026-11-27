@@ -1,0 +1,61 @@
+{
+  "slug": "bel_bl_economie-oral-commun-agriculture-durable_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Économie (oral commun) — Agriculture durable",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "Vers une agriculture durable ?",
+  "questions": 0,
+  "documents": 5,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/economie_sujets_25_juin.pdf#page=19",
+    "sha256_sujet": "8433a5d540dda2553aca70d2c8e1d995b73ad82dfacc31923b3df37432846a7a",
+    "pages_sujet": "19–27 du recueil de 27 pages, pages 1–9 du dossier.",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_economie_tronc_commun.pdf",
+    "sha256_rapport_jury": "b0b1a696afc5d758d40283be9361a3fe50abd56041e7cad3533c62eabb4c5dd7",
+    "pages_rapport": "1 pour les modalités et 2 pour la liste des sujets."
+  },
+  "figures": [
+    {
+      "fichier": "figures/resultat-et-aides.svg",
+      "question": "Document 2",
+      "legende": "Part d’élevages à résultat négatif avec aides et dans le calcul hors aides pour 2019."
+    },
+    {
+      "fichier": "figures/leviers-transition.svg",
+      "question": "Document 4",
+      "legende": "Effets de trois leviers complémentaires sur les quantités, les coûts et les territoires."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_maths_b_anciennes",
+      "modifications": true,
+      "perimetre": "Rédaction du brut et du guidé, lecture du sujet et du rapport, production de deux figures et des relances. Contrôle des graphiques d’émissions, d’achats et de dispersion de l’EBE, distinction du RCAI et des unités par exploitation ou par ETP, analyse de l’incidence des soutiens et des fuites de carbone."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Vers une agriculture durable ?"
+    ],
+    "documents_entierement_traites": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "precision": "Les deux éditions répondent à la question-titre et exploitent les 5 documents du dossier."
+  }
+}

@@ -29,7 +29,7 @@
     "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
     "sujet_sha256": "30ff3b8fea4fc36a7402bc96566935890527251e3a906a55f1e53f5ee27f90e0"
   },
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "provenance": {
     "redaction": {
       "provider": "codex",
@@ -77,6 +77,34 @@
       "fournisseur": "codex",
       "session": "astra_langues",
       "perimetre": "Correction de deux extrapolations sur le début de carrière et attribution des observations à Forslev, distincte d’Edwards-Dashti. Vérification de l’échantillon et de la métrique de la comparaison internationale."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "fin_langues_x_interens",
+      "agent": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Fascicule officiel, consignes de compréhension et d’essai en fin de sujet (PDF de 3 pages). Les quatre réponses comptent respectivement 66, 64, 71, 82 mots hors références. L’essai compte 388 mots pour une cible de 400 à 10 % près, avec un séparateur tous les 50 mots. Les cinq réponses sont présentes dans les deux éditions. Les réponses distinguent les difficultés économiques des jeunes actifs, le point de vue des recruteurs, la critique des pratiques managériales et l’hypothèse d’une nouvelle vague de départs. L’essai discute l’analogie entre salarié et consommateur dans le choix d’un employeur.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "Essai"
+    ],
+    "precision": "Fascicule officiel, consignes de compréhension et d’essai en fin de sujet (PDF de 3 pages). Les quatre réponses comptent respectivement 66, 64, 71, 82 mots hors références. L’essai compte 388 mots pour une cible de 400 à 10 % près, avec un séparateur tous les 50 mots. Les cinq réponses sont présentes dans les deux éditions. Les réponses distinguent les difficultés économiques des jeunes actifs, le point de vue des recruteurs, la critique des pratiques managériales et l’hypothèse d’une nouvelle vague de départs. L’essai discute l’analogie entre salarié et consommateur dans le choix d’un employeur."
+  }
 }

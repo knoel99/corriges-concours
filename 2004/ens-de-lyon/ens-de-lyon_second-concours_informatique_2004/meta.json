@@ -1,0 +1,87 @@
+{
+  "slug": "ens-de-lyon_second-concours_informatique_2004",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Informatique",
+    "annee": 2004,
+    "duree_heures": 3
+  },
+  "questions": 16,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours/session-2004/sujet-ecrit-2004-second-concours_informatique.pdf",
+    "index_banque": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/",
+    "sujet_sha256": "f3ea654738ae1ad115c5cc17fed1e140d810a432c1a7320f89ea98e469ec2569",
+    "index_banque_sha256": "36243e7203175ea8fc3f1b47cf04cfaeff13de5e6fe10463bd7d894a9fca4bfe"
+  },
+  "figures": [
+    {
+      "fichier": "figures/seuil-et-frontiere.svg",
+      "question": "6",
+      "legende": "Figure 1 — Pour trois bits vrais parmi cinq, le dernier seuil vrai a l’indice 3. C’est la seule sortie active du code exact."
+    },
+    {
+      "fichier": "figures/selection-du-couple.svg",
+      "question": "8",
+      "legende": "Figure 2 — Avec huit seuils et cinq bits vrais, le couple numéro 2 contient les seuils 4 et 5. Tous deux sont vrais, ce qui sélectionne la seconde sortie du couple."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Seize questions du sujet commun Ulm–Lyon, générateurs en Python, preuve de la borne inférieure sur les négations et dénombrement exact des portes. Contrôle par évaluation des équations produites."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Contrôle sur les cinq pages de la syntaxe des équations, des 16 consignes, de la construction récursive et de la borne de minimalité. Exécution du code de chacune des éditions sur les 254 entrées binaires de tailles 1 à 7, avec indices décroissants et compte exact de 30 ET, 18 OU et 2 NON pour trois entrées. L’index officiel ne fournit pas de rapport écrit d’informatique pour la session.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
+    }
+  ],
+  "questions_principales": 16,
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "subdivisions_du_sujet": {},
+    "precision": "16 rubriques principales et 16 consignes terminales repérées dans le fascicule officiel. Contrôle sur les cinq pages de la syntaxe des équations, des 16 consignes, de la construction récursive et de la borne de minimalité. Exécution du code de chacune des éditions sur les 254 entrées binaires de tailles 1 à 7, avec indices décroissants et compte exact de 30 ET, 18 OU et 2 NON pour trois entrées. L’index officiel ne fournit pas de rapport écrit d’informatique pour la session.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "relecture_corrige",
+      "perimetre": "Contrôle sur les cinq pages de la syntaxe des équations, des 16 consignes, de la construction récursive et de la borne de minimalité. Exécution du code de chacune des éditions sur les 254 entrées binaires de tailles 1 à 7, avec indices décroissants et compte exact de 30 ET, 18 OU et 2 NON pour trois entrées. L’index officiel ne fournit pas de rapport écrit d’informatique pour la session.",
+      "sha256_sujet_controle": "f3ea654738ae1ad115c5cc17fed1e140d810a432c1a7320f89ea98e469ec2569"
+    }
+  }
+}

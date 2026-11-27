@@ -1,0 +1,114 @@
+{
+  "slug": "bel_al_arabe-theme-lyon_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Arabe (thème Lyon)",
+    "annee": 2025,
+    "modalite": "écrit de spécialité"
+  },
+  "questions": 1,
+  "duree_heures": 4,
+  "redaction": "Corrigé original proposé par IA, non officiel.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2025-09/251113.pdf#page=12",
+    "sujet_sha256": "b7d09bb818f637ec169e3e81e4912858b211e06941981935364478be20cd6766",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2025-11/Arabe%202025%20OK%20Lyon%20RELU.pdf#page=4",
+    "rapport_jury_sha256": "f091d06086baee7ada7cb3d37b66028a1a8b2dbe8d4b9df6ede56f11af219b60",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2025",
+    "ouvrage": "Guy de Maupassant, *Une vie* (1883).",
+    "ecoles": "ENS de Lyon"
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2025-09/251113.pdf#page=12",
+      "sha256": "b7d09bb818f637ec169e3e81e4912858b211e06941981935364478be20cd6766",
+      "pages": 20,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "8ec0333bc615d21e75fd6bd8739b8ac1ac8f7527ec5d1bc38afbba95f28f63b7"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "a876db7b03a0cd5191d89888025ea4b6935a3b54c672b88ddb1c8c3c21bf78bc"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2025-11/Arabe%202025%20OK%20Lyon%20RELU.pdf#page=4",
+      "sha256": "f091d06086baee7ada7cb3d37b66028a1a8b2dbe8d4b9df6ede56f11af219b60",
+      "pages": 8,
+      "pages_verifiees": [
+        {
+          "numero": 4,
+          "rendu_sha256": "2fcccc51fc3e45b7f41589568d52e7c48e150815f95836b196b8435d8cc98b7f"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "Proposition de thème",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "Le portrait glisse d’un détail observable à l’idée que les autres se font du vicomte. La dernière étape attribue un effet à son regard."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction originale des deux éditions, étude du feuillet, consultation du jury, élaboration du guide et du schéma."
+    },
+    {
+      "phase": "revision",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Vérification du titre de vicomte, de la couleur des yeux, des deux figures féminines et de la dernière phrase, où la profondeur de pensée relève d’une impression."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Proposition de thème"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Proposition de thème",
+        "page_pdf": 12,
+        "pages_pdf": [
+          12
+        ],
+        "perimetre": "De la révérence du vicomte à la dernière observation sur ses moindres paroles. Portrait et deux scènes sociales conservés."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

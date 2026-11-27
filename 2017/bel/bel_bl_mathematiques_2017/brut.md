@@ -4,6 +4,10 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Écrit de quatre heures, sans calculatrice. La composition comporte un exercice et deux problèmes indépendants. Le jury note chaque réponse sur quatre avant pondération. Les coefficients des 50 rubriques totalisent 62,5, soit 250 points pour les réponses. Le jury annonce une note brute sur 258 et décrit séparément son appréciation de la rédaction et de l’honnêteté. [Sujet de la session](https://www.ens-lyon.fr/sites/default/files/2017-11/2017-ecrits-communs-ses_1506586985330_0.pdf#page=3) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/17_maths_com_ecrit.pdf).
+
 Le fascicule commun aux ENS Ulm, Lyon, Paris-Saclay, à l’ENSAE et à l’ENSAI donne la couverture en page 3 et les six pages de questions en pages 4 à 9.
 
 ## Exercice · Répartition de balles dans des urnes
@@ -19,6 +23,9 @@ Quand $x=e^{-t}\to0^+$, $f(x)=-(t+1)e^{-t}\to0$. Quand $x\to+\infty$, les deux f
 ### Question E.1c
 
 Pour $x>0$, $f'(x)=\ln x$. La fonction décroît strictement sur $]0,1]$ de la limite $0$ au minimum $-1$, puis croît strictement sur $[1,+\infty[$ de $-1$ vers $+\infty$. La tangente au minimum est horizontale.
+
+Le domaine exclut son extrémité gauche. La valeur inscrite en $0^+$ est la limite calculée en E.1b.
+$$\begin{array}{c|ccccc}x&0^+&&1&&+\infty\\ \hline f'(x)&&-&0&+&\\f(x)&0&\searrow&-1&\nearrow&+\infty\end{array}$$
 
 ### Question E.1d
 
@@ -74,6 +81,8 @@ Les urnes ont même loi. Pour $k\ge j\ge3$, E.4b donne $\mathbb P(X_i=k)\le\bino
 
 Posons $j=\lceil c\ln n/\ln\ln n\rceil$, qui appartient à $[3,n]$ pour $n$ assez grand. L’événement demandé est l’union des $\{X_i\ge j\}$. Sa probabilité est donc au plus $n(e/j)^j/(1-e/j)$. Or $j\sim c\ln n/\ln\ln n$ et $\ln j\sim\ln\ln n$. Le logarithme du majorant est $\ln n+j-j\ln j-\ln(1-e/j)=(1-c+o(1))\ln n\to-\infty$. La probabilité tend vers zéro.
 
+L’hypothèse $c>1$ intervient à la toute dernière étape. En effet, si $L=\ln n$ et $\ell=\ln L$, l’arrondi modifie $cL/\ell$ de moins d’une unité et $\ln j=\ell-\ln\ell+\ln c+o(1)$. Ainsi $j\ln j/L\to c$ tandis que $j/L\to0$. Comme $X_i$ est entier, dépasser ou atteindre le seuil réel au sens de l’énoncé équivaut exactement à $X_i\ge j$.
+
 ## Problème A · Itérations d’une fonction génératrice
 
 ### Question A.1
@@ -128,6 +137,10 @@ Comme $1-rs>0$, l’équation $f(s)=s$ devient $rs^2-s+1-r=(s-1)(rs+r-1)=0$. Un 
 
 La fonction $f$ est strictement croissante et continue, et $f(s)-s=r(s-1)(s-a)/(1-rs)$. Si $r\le1/2$, cet écart est positif pour $s<1$. Les itérés croissent, sont majorés par un et leur limite est un point fixe, donc $1$. Si $r>1/2$, on a $a<1$. Pour $u_0<a$, les itérés croissent sans dépasser $a$ car $f(a)=a$. Pour $a<u_0<1$, ils décroissent en restant au-dessus de $a$, et leur limite est au plus $u_0<1$. Dans les deux cas le seul point fixe possible est $a$. Enfin $u_0=a$ et $u_0=1$ donnent des suites constantes.
 
+Au seuil $r=1/2$, la convergence est particulièrement lente. Si $u_0<1$, posons $d_n=1-u_n$. Comme $f(s)=1/(2-s)$, on obtient $d_{n+1}=d_n/(1+d_n)$. L’inversion donne $1/d_{n+1}=1+1/d_n$, donc $1-u_n=1/(n+1/(1-u_0))$. Pour $r>1/2$, le point fixe $1$ demeure accessible à la seule suite initialisée en $1$, car toute autre valeur initiale est attirée par $a$.
+
+![Figure 2 — Depuis zéro, les itérés tendent vers un pour les deux premiers paramètres et vers un demi pour le troisième. Au paramètre critique, la distance à un vaut l’inverse de n + 1.](figures/iteres-geometriques.svg)
+
 ### Question A.9
 
 Si $0\le s\le t\le1$, on a $p_ks^k\le p_kt^k$ pour tout $k\ge1$. En sommant et en ajoutant $p_0$, on obtient $f(s)\le f(t)$.
@@ -135,6 +148,8 @@ Si $0\le s\le t\le1$, on a $p_ks^k\le p_kt^k$ pour tout $k\ge1$. En sommant et e
 ### Question A.10
 
 Pour tout $K\ge1$, $\sup_{0\le s\le1}\sum_{k\ge K}p_ks^k\le\sum_{k\ge K}p_k\to0$. Les polynômes formés des sommes partielles convergent uniformément vers $f$ sur $[0,1]$. La limite uniforme de fonctions continues est continue sur tout le segment.
+
+On peut détailler l’argument au point $s_0$, y compris aux extrémités. Étant donné $\varepsilon>0$, choisissons $K$ de sorte que $\sum_{k\ge K}p_k<\varepsilon/3$, indépendamment de $s$. Le polynôme $P_{K-1}(s)=\sum_{k<K}p_ks^k$ est continu en $s_0$. Pour $s$ assez proche de $s_0$, sa variation est inférieure à $\varepsilon/3$. Les deux queues, l’une en $s$, l’autre en $s_0$, ont chacune un module inférieur à $\varepsilon/3$. Il en résulte $|f(s)-f(s_0)|<\varepsilon$.
 
 ## Problème B · Matrices compagnes
 
@@ -189,6 +204,8 @@ On a $C_P^nE_1=C_PE_n=-\sum_{j=0}^{n-1}a_jE_{j+1}=-\sum_{j=0}^{n-1}a_j C_P^jE_1$
 ### Question B.4e
 
 Pour $1\le k\le n$, $M_PE_k=M_PC_P^{k-1}E_1=C_P^{k-1}M_PE_1=0$. Toutes les colonnes de $M_P$ sont donc nulles.
+
+La commutation utilisée ici résulte de l’écriture $M_P=\sum_{j=0}^n a_j C_P^j$, avec $a_n=1$. Chaque puissance commute avec $C_P$ et donc avec $C_P^{k-1}$. C’est ce qui permet de transporter l’annulation sur le premier vecteur à toute la base.
 
 ### Question B.5a
 

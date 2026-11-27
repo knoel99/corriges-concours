@@ -1,0 +1,542 @@
+[
+  {
+    "session": 2023,
+    "archive": "BEL-AL-Lyon-theme-polonais-2023.zip",
+    "sha256": "de46347793b6aa359bf96461ea0f5175770682014dadd41f5f02549813f6cf49",
+    "slug": "bel_al_polonais-theme-lyon_2023",
+    "commit": "77fb3bc1fd18645e0326dde0e1a318ddb4589d93",
+    "journal": [
+      {
+        "phase": "redaction",
+        "agent": "lva_pt_2325",
+        "fournisseur": "codex",
+        "modele": "gpt-6.2-astra",
+        "famille_modele": "GPT-6",
+        "effort": "ultra",
+        "vitesse": null,
+        "date": "2026-11-26",
+        "modifications": true,
+        "editions": [
+          "brut",
+          "guide"
+        ],
+        "perimetre": "Traduction polonaise originale et commentaire des voix, du lexique et de la syntaxe, schéma de lecture et vérification des sources."
+      },
+      {
+        "phase": "revision",
+        "agent": "lva_pt_2325",
+        "fournisseur": "codex",
+        "modele": "gpt-6.2-astra",
+        "famille_modele": "GPT-6",
+        "effort": "ultra",
+        "vitesse": null,
+        "date": "2026-11-26",
+        "modifications": true,
+        "editions": [
+          "brut",
+          "guide"
+        ],
+        "perimetre": "Relecture du feuillet et de ses deux coupures. Reprise du rang des voix, de la relative sur le réflexe et de la question que l’hôte s’adresse. Contrôle du redoublement de cosie et de l’enchaînement des participes."
+      }
+    ],
+    "couverture": {
+      "statut": "complet",
+      "questions_entierement_traitees": [
+        "Proposition de thème"
+      ],
+      "repere_par_question": [
+        {
+          "question": "Proposition de thème",
+          "page_pdf": 15,
+          "feuillet_imprime": 15,
+          "perimetre": "De l’invitation à visiter l’appartement à la série domestique finale. Les deux coupures du fascicule sont conservées."
+        }
+      ],
+      "questions_partiellement_traitees": [],
+      "questions_non_traitees": []
+    },
+    "pieces": {
+      "sujet": {
+        "url": "https://www.ens-lyon.fr/sites/default/files/2023-09/Epreuve-de-specialite.pdf#page=15",
+        "sha256": "d646a518fbe4febf8a67e582f0310174ed455fa1f7d2c93d37f450a6420673a2",
+        "pages": 20,
+        "perimetre": "Thème en français à traduire en polonais, sujet ENS de Lyon.",
+        "pages_verifiees": [
+          {
+            "numero": 1,
+            "rendu_sha256": "d637c9f152c00d67d0ac53df6ca1a8afc6acd94775b42bc8aa249b7f1b2e0dc5"
+          },
+          {
+            "numero": 2,
+            "rendu_sha256": "23197e3feb5af29cc10d3ecdefd9d1216be3f6253cf9bb7010d639a60bd3b7bd"
+          },
+          {
+            "numero": 15,
+            "rendu_sha256": "970dc171aa217c631edba13639b5ac6d8f952b82bf361e9dfa3135a95a0b6e3b"
+          }
+        ]
+      },
+      "rapport_de_langue_complementaire": {
+        "url": "https://www.ens-lyon.fr/sites/default/files/2023-11/Polonais-2023.pdf",
+        "sha256": "c10459e1e8fe4d615b9d6f8a298838ea412fddb4eb6ce3433f6eac2a79b12663",
+        "pages": 7,
+        "perimetre": "Rapport sur le commentaire et la version de polonais, épreuve distincte du thème.",
+        "pages_verifiees": [
+          {
+            "numero": 2,
+            "rendu_sha256": "fd22315ec9bbfa0baab05700693b13ec52ba0b89555362b7b860760e030fd946"
+          },
+          {
+            "numero": 3,
+            "rendu_sha256": "5f5a0902c285d00304f4bdaa106e2a3cf0bf21df0c55186ca637ce0cd6b9e1f3"
+          },
+          {
+            "numero": 4,
+            "rendu_sha256": "c8110caefa9b03066105c4ab56623360c83853653e0e3b87c20e6bee38e0f4fc"
+          },
+          {
+            "numero": 5,
+            "rendu_sha256": "ffaeb6c1211df30963fff1f573157da81d1a05557d6246fa61f74bab28b4d678"
+          },
+          {
+            "numero": 6,
+            "rendu_sha256": "bb3bd68494b5994ee8dd7f77bc0830fb3c827ad48b24d5290eebb92364e9bec4"
+          },
+          {
+            "numero": 7,
+            "rendu_sha256": "b8ac8a1c16c0c590c9a4543dc9450b19142975ca81c5ea56ebabafec4486660f"
+          }
+        ]
+      }
+    },
+    "texte_polonais": {
+      "paragraphes": 1,
+      "sha256": "6a781cfec0824eb511d58f14d4d33b328acac96c9e2235dffb16e8c36be4213d",
+      "identique_dans_les_deux_pdf": true
+    },
+    "pdf": {
+      "brut": {
+        "pages": 1,
+        "signets": [
+          [
+            1,
+            "Proposition de thème",
+            1
+          ],
+          [
+            1,
+            "Note de traduction",
+            1
+          ]
+        ],
+        "nombre_signets": 2,
+        "pages_figures": [
+          1
+        ],
+        "sha256": "07bc9236f40ebc25a9ba749104021baea57ee1bab8b89d1b1d331ced3655f5bc",
+        "rendu_sha256": [
+          "52f2ee0b55f5030571d5bdc8b350700c848d2ac989f8e31384d96f9054fa61b4"
+        ]
+      },
+      "guide": {
+        "pages": 2,
+        "signets": [
+          [
+            1,
+            "Entendre deux voix dans un seul paragraphe",
+            1
+          ],
+          [
+            2,
+            "La souveraine et l'armoire à linge",
+            1
+          ],
+          [
+            2,
+            "Retarder l'explication du malaise",
+            1
+          ],
+          [
+            2,
+            "Laisser la dernière phrase en suspens",
+            2
+          ],
+          [
+            1,
+            "Proposition de thème",
+            2
+          ]
+        ],
+        "nombre_signets": 5,
+        "pages_figures": [
+          2
+        ],
+        "sha256": "85357da5890647fc1087ca1fe51a1fda610dfff602b021d7ce846c2e2ae91e6a",
+        "rendu_sha256": [
+          "374e771f7e23d87a41efec2ed6625a6cbe9b106f5ce94f1099acc6eb532e0d0b",
+          "35085772db04732e942e0d86911eadb838a95c3a64968a66e7103bfea26124c8"
+        ]
+      }
+    },
+    "empreintes": {
+      "meta.json": "ccc52d68cc02ac7df0fc030b9a069aeb5b855cf74e1bcd4af44494ace2a9e791",
+      "bilan-compilation.md": "f607600fd275c386cb96bd2239e56b51e998ec3ff7ce596af89ab54bdaffdce6",
+      "figures/lecture.svg": "5a78e42d20df7cd70caea769f3d02ebf24e60dfdc05f6c832567ff6c06ef132d",
+      "brut.pdf": "07bc9236f40ebc25a9ba749104021baea57ee1bab8b89d1b1d331ced3655f5bc",
+      "brut.md": "ac7adc9e21afd69d54a261790fd99259b1d70b771eb8aaeb6a8c3bfdc8a43307",
+      "guide.pdf": "85357da5890647fc1087ca1fe51a1fda610dfff602b021d7ce846c2e2ae91e6a",
+      "guide.md": "7491d36f02a4791e3b3900b0a9d25eee4bc3221d11aecce199e4e77833623472",
+      "apercu.jpg": "a82ba0cdc267ba015ba11a5162dfe2ee06063206bc8e85e548ece50a244690bb"
+    }
+  },
+  {
+    "session": 2024,
+    "archive": "BEL-AL-Lyon-theme-polonais-2024.zip",
+    "sha256": "9b02e1967c35c3c1b453288c3a39d154a227ace1768d8b263baf1d40d936caeb",
+    "slug": "bel_al_polonais-theme-lyon_2024",
+    "commit": "3084b486ca08c5e4c0c3ac5a879b3ba16a245abd",
+    "journal": [
+      {
+        "phase": "redaction",
+        "agent": "lva_pt_2325",
+        "fournisseur": "codex",
+        "modele": "gpt-6.2-astra",
+        "famille_modele": "GPT-6",
+        "effort": "ultra",
+        "vitesse": null,
+        "date": "2026-11-26",
+        "modifications": true,
+        "editions": [
+          "brut",
+          "guide"
+        ],
+        "perimetre": "Traduction polonaise originale et commentaire des voix, du lexique et de la syntaxe, schéma de lecture et vérification des sources."
+      },
+      {
+        "phase": "revision",
+        "agent": "lva_pt_2325",
+        "fournisseur": "codex",
+        "modele": "gpt-6.2-astra",
+        "famille_modele": "GPT-6",
+        "effort": "ultra",
+        "vitesse": null,
+        "date": "2026-11-26",
+        "modifications": true,
+        "editions": [
+          "brut",
+          "guide"
+        ],
+        "perimetre": "Collation du scan. Rétablissement du dernier paragraphe continu, de la marque Axa, de la dynamique de l’escalier et du caractère exemplaire de la mission selon Erwann. Relecture des trois horaires, des sommes, des cas et du registre."
+      }
+    ],
+    "couverture": {
+      "statut": "complet",
+      "questions_entierement_traitees": [
+        "Proposition de thème"
+      ],
+      "repere_par_question": [
+        {
+          "question": "Proposition de thème",
+          "page_pdf": 16,
+          "feuillet_imprime": 16,
+          "perimetre": "De la perte que Philippe associe au déménagement à la dernière remarque sur les chefs de service. Dialogues et trois horaires professionnels inclus."
+        }
+      ],
+      "questions_partiellement_traitees": [],
+      "questions_non_traitees": []
+    },
+    "pieces": {
+      "sujet": {
+        "url": "https://www.ens-lyon.fr/sites/default/files/2024-11/Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=16",
+        "sha256": "cbf76039969ec8cec685a228168381915bdc7b64ae30b2cbee576b3a4f1eeb56",
+        "pages": 20,
+        "perimetre": "Thème en français à traduire en polonais, sujet ENS de Lyon.",
+        "pages_verifiees": [
+          {
+            "numero": 1,
+            "rendu_sha256": "467f29e0ec3180170f83906b396898332e097600bd045b203d322734b30ba14a"
+          },
+          {
+            "numero": 2,
+            "rendu_sha256": "8792f553de5cddb862b1610114caf646f31cce12b7629be38076e505305ad7a8"
+          },
+          {
+            "numero": 16,
+            "rendu_sha256": "d2dbf492af9fd76141ff9b46492515612eb3b42eae3891175abeb66b89b4a623"
+          }
+        ]
+      },
+      "rapport_jury": {
+        "url": "https://www.ens-lyon.fr/sites/default/files/2024-11/Polonais%202024%20OK.pdf#page=6",
+        "sha256": "92d65d1afdaae9b09e23996e440de255a65f4ae0d50854002a496020cc8365a5",
+        "pages": 7,
+        "perimetre": "Section du rapport de polonais consacrée au thème.",
+        "pages_verifiees": [
+          {
+            "numero": 6,
+            "rendu_sha256": "0b32a35555ee61cb3f59a85821a9e18819d8c70cac21ff133a40b64652af999e"
+          },
+          {
+            "numero": 7,
+            "rendu_sha256": "077d73d93275b7dade124ab2a9d88dc3504fa42988d871185796ccb8a15037af"
+          }
+        ]
+      }
+    },
+    "texte_polonais": {
+      "paragraphes": 8,
+      "sha256": "7e73004bffff75412aea03c1f82cff43e177620d51a9347734bd0f8696d35f4f",
+      "identique_dans_les_deux_pdf": true
+    },
+    "pdf": {
+      "brut": {
+        "pages": 2,
+        "signets": [
+          [
+            1,
+            "Note de traduction",
+            1
+          ],
+          [
+            1,
+            "Proposition de thème",
+            1
+          ]
+        ],
+        "nombre_signets": 2,
+        "pages_figures": [
+          1
+        ],
+        "sha256": "92c8549f30060290735c1e09beb0ec7862f9057bed012803af8d81e503069a6e",
+        "rendu_sha256": [
+          "2bdc5fa0450f35e0fc9304a11c3e0d4212d59479c7464f1678a01efd79ea72e5",
+          "0afa0aa24ffe6eea608d573898a374433bfd91857291c74f3d31d52cd31c66d3"
+        ]
+      },
+      "guide": {
+        "pages": 2,
+        "signets": [
+          [
+            1,
+            "Passer de la voix de Philippe à l'agenda d'Hélène",
+            1
+          ],
+          [
+            2,
+            "Rendre la province et la langue de la maison",
+            1
+          ],
+          [
+            2,
+            "Faire tenir les chiffres dans la phrase",
+            1
+          ],
+          [
+            2,
+            "Garder le mordant du dernier rendez-vous",
+            1
+          ],
+          [
+            1,
+            "Proposition de thème",
+            2
+          ]
+        ],
+        "nombre_signets": 5,
+        "pages_figures": [
+          2
+        ],
+        "sha256": "4d957f7068fee3a1048a049d609b381c9f0415dcc1c0b1529d2b06e9e71da527",
+        "rendu_sha256": [
+          "acdcf4ee38d26dbb6f957f2b8cd0d99f985b45ed33ce48e495dec06187c0d6f7",
+          "ba0854438aa19b7ef3237049c457a5fe598b2cafb6dbca732b15481add832cf8"
+        ]
+      }
+    },
+    "empreintes": {
+      "meta.json": "28390eb06eb781c9923332b7a06b6d086b432b50c4b0b991511d4e307db869fb",
+      "bilan-compilation.md": "19a8ce10fe5c9e1dc94de8f0f1fae0f6193e69f11958745e3f33283f8487b723",
+      "figures/lecture.svg": "d22ab0469da704f333fcde2ea1d4e524cb7caa88cd9f77d9e0954db107700eb0",
+      "brut.pdf": "92c8549f30060290735c1e09beb0ec7862f9057bed012803af8d81e503069a6e",
+      "brut.md": "4d5fdf9a4c2da37d0c52d1f07d78c08ce36bee9956e8cd5051969b5fc6e2408f",
+      "guide.pdf": "4d957f7068fee3a1048a049d609b381c9f0415dcc1c0b1529d2b06e9e71da527",
+      "guide.md": "cc2a742b360d4070f99640ca9df21434b142c53011e5e99eb11f9f7163ef962c",
+      "apercu.jpg": "6ded72f22dd4b14e1cd9f7a91e4c65f1cabc390e87cd5010b648ab14e5f15799"
+    }
+  },
+  {
+    "session": 2025,
+    "archive": "BEL-AL-Lyon-theme-polonais-2025.zip",
+    "sha256": "5c9440d945f615aeb40f092a0a64dc065e2f2cdf4f0bab1f230345e1a583dd6e",
+    "slug": "bel_al_polonais-theme-lyon_2025",
+    "commit": "3084b486ca08c5e4c0c3ac5a879b3ba16a245abd",
+    "journal": [
+      {
+        "phase": "redaction",
+        "agent": "lva_pt_2325",
+        "fournisseur": "codex",
+        "modele": "gpt-6.2-astra",
+        "famille_modele": "GPT-6",
+        "effort": "ultra",
+        "vitesse": null,
+        "date": "2026-11-26",
+        "modifications": true,
+        "editions": [
+          "brut",
+          "guide"
+        ],
+        "perimetre": "Traduction polonaise originale et commentaire des voix, du lexique et de la syntaxe, schéma de lecture et vérification des sources."
+      },
+      {
+        "phase": "revision",
+        "agent": "lva_pt_2325",
+        "fournisseur": "codex",
+        "modele": "gpt-6.2-astra",
+        "famille_modele": "GPT-6",
+        "effort": "ultra",
+        "vitesse": null,
+        "date": "2026-11-26",
+        "modifications": true,
+        "editions": [
+          "brut",
+          "guide"
+        ],
+        "perimetre": "Texte collationné avec le feuillet et dialogues relus pour vérifier l’âge approximatif de Jeannot, soupçon masculin du narrateur, rythme des épisodes récurrents, cumul de sens de la fausse morte et dernière remise."
+      }
+    ],
+    "couverture": {
+      "statut": "complet",
+      "questions_entierement_traitees": [
+        "Proposition de thème"
+      ],
+      "repere_par_question": [
+        {
+          "question": "Proposition de thème",
+          "page_pdf": 16,
+          "feuillet_imprime": 16,
+          "perimetre": "Du soupçon initial du petit-fils au dernier mot de Yette sur les fauteuils et la remise de quatre-vingts pour cent."
+        }
+      ],
+      "questions_partiellement_traitees": [],
+      "questions_non_traitees": []
+    },
+    "pieces": {
+      "sujet": {
+        "url": "https://www.ens-lyon.fr/sites/default/files/2025-09/251113.pdf#page=16",
+        "sha256": "b7d09bb818f637ec169e3e81e4912858b211e06941981935364478be20cd6766",
+        "pages": 20,
+        "perimetre": "Thème en français à traduire en polonais, sujet ENS de Lyon.",
+        "pages_verifiees": [
+          {
+            "numero": 1,
+            "rendu_sha256": "8ec0333bc615d21e75fd6bd8739b8ac1ac8f7527ec5d1bc38afbba95f28f63b7"
+          },
+          {
+            "numero": 2,
+            "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+          },
+          {
+            "numero": 16,
+            "rendu_sha256": "ca11fcbd46397c8b355eb35d215ada79b368aa85f9cc6ac7c94eaf51b6e580a3"
+          }
+        ]
+      },
+      "rapport_jury": {
+        "url": "https://www.ens-lyon.fr/sites/default/files/2025-11/Polonais%202025%20OK%20Lyon%20RELU.pdf#page=13",
+        "sha256": "96864b3a78b7c0a1c56c6a03b86de28929b026268479be0dc8598b5b3888805f",
+        "pages": 14,
+        "perimetre": "Section du rapport de polonais consacrée au thème.",
+        "pages_verifiees": [
+          {
+            "numero": 13,
+            "rendu_sha256": "bef146d3f4d6f5b6fba1e7199f90123b2140f852e25e08737184c1b5208bd917"
+          },
+          {
+            "numero": 14,
+            "rendu_sha256": "271a5f291225ae948b9247a23b534bd08ef5677ccdc39e76c0e4d2d831e61e3a"
+          }
+        ]
+      }
+    },
+    "texte_polonais": {
+      "paragraphes": 10,
+      "sha256": "f7a86e2bb5fb486b8d6a5aaddeef63537171a40c53c1bea73ddcd019043403bf",
+      "identique_dans_les_deux_pdf": true
+    },
+    "pdf": {
+      "brut": {
+        "pages": 2,
+        "signets": [
+          [
+            1,
+            "Note de traduction",
+            1
+          ],
+          [
+            1,
+            "Proposition de thème",
+            1
+          ]
+        ],
+        "nombre_signets": 2,
+        "pages_figures": [
+          1
+        ],
+        "sha256": "037b19d6cd74fee3a12db6d8238bca0eed5450d2ed036e403214a5d06e2e8c1e",
+        "rendu_sha256": [
+          "b4dc5b3d9673f10951534c3966166a34601de315c28eb7f14a698b1774416a62",
+          "62605993eb48538268b780bda140e4a873a76339151b973941f34e9566c0f5ec"
+        ]
+      },
+      "guide": {
+        "pages": 2,
+        "signets": [
+          [
+            1,
+            "Retrouver le petit-fils derrière les voix de la famille",
+            1
+          ],
+          [
+            2,
+            "Distribuer les aspects entre l'habitude et l'ordre",
+            1
+          ],
+          [
+            2,
+            "Suivre la mise en scène de Yette",
+            1
+          ],
+          [
+            2,
+            "Raccorder la menace à la scène de table",
+            1
+          ],
+          [
+            1,
+            "Proposition de thème",
+            2
+          ]
+        ],
+        "nombre_signets": 5,
+        "pages_figures": [
+          2
+        ],
+        "sha256": "663c5196248ad5eaf89fa4c8ad55da68fd87367688fbaf6021bc2d45525eb5ab",
+        "rendu_sha256": [
+          "5d645588cdec27278f60fcb87d163f759b57b9bceaaf1b388749c5a5865bdde8",
+          "d99faf6f6e64319662ff24c146fcf0ef0d643c9bfeb3378d263f553230d91e2d"
+        ]
+      }
+    },
+    "empreintes": {
+      "meta.json": "56599086a1fdd971dc401c0927bc7cda48ecc99c1997d790e93a82695ecb11e0",
+      "bilan-compilation.md": "eb106ceebf32a10980c5e61e72d06c6d8aa07284b16a858a20da7ead8ea9d8bd",
+      "figures/lecture.svg": "aae1a74531bb63ce5c96ca7920b087d5975099f96087cc23fea7fd06aa38fb5a",
+      "brut.pdf": "037b19d6cd74fee3a12db6d8238bca0eed5450d2ed036e403214a5d06e2e8c1e",
+      "brut.md": "1766dbb9b4d0a975b43fd1089962c4a4cee33306b07e57ad5b288f513ce79260",
+      "guide.pdf": "663c5196248ad5eaf89fa4c8ad55da68fd87367688fbaf6021bc2d45525eb5ab",
+      "guide.md": "c24def5f75ea1594aca7cf5ea518ef08f8037a46cdfb7896487511317cb9fbb4",
+      "apercu.jpg": "2b7bbc529fc4a22598830955531fb4c206e256e43d9896a0bf66d3dde3a2d62c"
+    }
+  }
+]

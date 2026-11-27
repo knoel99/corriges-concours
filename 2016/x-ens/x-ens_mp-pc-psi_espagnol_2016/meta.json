@@ -1,0 +1,59 @@
+{
+  "slug": "x-ens_mp-pc-psi_espagnol_2016",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Espagnol",
+    "annee": 2016,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "intitule": "Le souvenir du franquisme quarante ans après la mort de Franco",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/06/16_mp_pc_LV_Espagnol_XEULCR.pdf",
+    "sujet_sha256": "659aec1d74c5ec749f25bd6224549d2fa775ca403387706c0f2c0d088cd6222b",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2016/",
+    "code_garde": "XEULCR",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/03/16_MP-PC_rap_Eesp.pdf",
+    "rapport_sha256": "aa68f63add70693523427c63c00cdb971ea1d7c248436abce5a5bd35303ffc2a",
+    "index_rapport": "https://banques-ecoles.fr/cms/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2016/"
+  },
+  "redaction": "Synthèse espagnole des quatre documents avec titre, lecture de l’iconographie, texte d’opinion sur le cinquième document, accompagnement pour les deux compositions et contrôle des longueurs.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/statue-et-trace.svg",
+      "legende": "Retirer un hommage officiel, étudier sa signification et réparer un préjudice sont trois décisions distinctes."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "espagnol_mp_pc_2011_2014",
+      "session": "espagnol_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Synthèse espagnole des quatre documents avec titre, lecture de l’iconographie, texte d’opinion sur le cinquième document, accompagnement pour les deux compositions et contrôle des longueurs.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  },
+  "longueurs_hors_titre": {
+    "synthese_mots": 634,
+    "opinion_mots": 522
+  }
+}

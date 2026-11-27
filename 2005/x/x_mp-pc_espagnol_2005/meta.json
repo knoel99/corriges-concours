@@ -1,0 +1,78 @@
+{
+  "slug": "x_mp-pc_espagnol_2005",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Espagnol",
+    "annee": 2005,
+    "modalite": "écrit",
+    "duree_heures": 3
+  },
+  "intitule": "Dispute en famille",
+  "questions": 3,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://web.archive.org/web/20061125010640id_/http://www.imprimerie.polytechnique.fr/EnLignes/Files/05_Version.pdf#page=4",
+    "sha256_sujet": "3a933648d4d48401c55bec0ecbfebd57bfa094dab07e6aa6a281281588442249",
+    "etablissements_imprimes": "École polytechnique et École supérieure de physique et de chimie industrielles",
+    "page_version": "4",
+    "texte_support": "Josefina R. Aldecoa, Porque éramos jóvenes, Anagrama, 2000.",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://web.archive.org/web/20061125010640id_/http://www.imprimerie.polytechnique.fr/EnLignes/Files/05_Version.pdf#page=4",
+        "sha256": "3a933648d4d48401c55bec0ecbfebd57bfa094dab07e6aa6a281281588442249",
+        "pages": "4",
+        "pages_document": 7,
+        "index": "https://web.archive.org/web/20090415070752/http://www.polytechnique.fr:80/concours/sujets/sujet05/sujet05.htm",
+        "url_originale": "http://www.imprimerie.polytechnique.fr/EnLignes/Files/05_Version.pdf",
+        "date_capture_utc": "2006-11-25T01:06:40Z"
+      },
+      {
+        "role": "sujet complémentaire",
+        "url": "https://web.archive.org/web/20061125010606id_/http://www.imprimerie.polytechnique.fr/EnLignes/Files/05_ExprEcrit.pdf",
+        "sha256": "0315993b329ac8a956c2b507bb40ddd56bd2ad4cc1c1a1abaf175d4f1588491f",
+        "pages": "1–2",
+        "pages_document": 2,
+        "index": "https://web.archive.org/web/20090415070752/http://www.polytechnique.fr:80/concours/sujets/sujet05/sujet05.htm",
+        "url_originale": "http://www.imprimerie.polytechnique.fr/EnLignes/Files/05_ExprEcrit.pdf",
+        "date_capture_utc": "2006-11-25T01:06:06Z"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/david-a-table.svg",
+      "question": "1",
+      "legende": "La façon de rester à table ou de la quitter rend visible le désaccord que les trois personnages expriment à peine."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "option_info_2006_2009",
+      "agent": "option_info_2006_2009",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Version personnelle intégrale de « Dispute en famille », deux réponses personnelles en espagnol, indications de traduction et de rédaction, schéma sur La façon de rester à table ou de la quitter rend visible le désaccord que les trois personnages expriment à peine."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2.1",
+      "2.2"
+    ],
+    "limites": "Le rapport écrit de cette option reste à retrouver."
+  }
+}

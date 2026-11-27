@@ -1,0 +1,158 @@
+{
+  "slug": "bel_al_chinois-commentaire-et-traduction_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Chinois (commentaire et traduction)",
+    "annee": 2025,
+    "modalite": "écrit commun"
+  },
+  "questions": 2,
+  "duree_heures": 6,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2025-07/Commentaire%20et%20traduction.pdf#page=8",
+    "sujet_sha256": "ea1e2d243c18761ad6c43ed4f301fdebb92b05def7502a7357659f787a15ae35",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2025-11/Chinois%202025%20OK%20Lyon%20RELU.pdf#page=2",
+    "rapport_jury_sha256": "8bfee92576f2353959f6d3cec051ecd38de244408586d2c8d80715a9e7f31323",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2025",
+    "ouvrage": "Li Juan 李娟, « Le Bal au village » (乡村舞会), *Mon Altaï* (我的阿勒泰, 2010).",
+    "provenance": "",
+    "rubriques_rapport": {
+      "commentaire": [
+        2,
+        4
+      ],
+      "version": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2025-07/Commentaire%20et%20traduction.pdf#page=8",
+      "sha256": "ea1e2d243c18761ad6c43ed4f301fdebb92b05def7502a7357659f787a15ae35",
+      "pages": 24,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "d10fc4d68158b2c87292528c0faa5bf3de66f9759bfb6b0292536515d81036d3"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "1e7bff601e229489b20e9530d41c12b6a405a88fd4acd1634098b88de711e417"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "98d1fa5b5cc2960f4c07e9cdefcd4168ef6c56d49f70b07a21c19fffaccadb3c"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "d09772f099bf92606c8781c815e955a406f61722aabdb6fff61f94c9341ff9bd"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2025-11/Chinois%202025%20OK%20Lyon%20RELU.pdf#page=2",
+      "sha256": "8bfee92576f2353959f6d3cec051ecd38de244408586d2c8d80715a9e7f31323",
+      "pages": 7,
+      "pages_verifiees": [
+        {
+          "numero": 2,
+          "rendu_sha256": "4d377b32a646a60fba6007f1af29e590662ffb24585d031c675ac9963dd721c3"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "89f7ac365bfa8cea2d315360e67f52dd62bc899054571aa3d6b0f543ff7fb2e1"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "047e34050168fdfeae918c074556310c8eae509f7647626fde86ba04fc3ce4bc"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "Commentaire",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "L’attente se mesure en heures, le souvenir en nuits et la danse du vieil homme au rythme de sa propre voix."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire composé en chinois sur l’extrait intégral, version française originale aux bornes imprimées, indications et schéma."
+    },
+    {
+      "phase": "revision",
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture de la voix autobiographique et du déplacement du regard vers le danseur. Contrôle des locatifs, des deux temporalités, de la mimique, des deux instruments et de la fin de la ligne 25."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Li Juan 李娟, « Le Bal au village » (乡村舞会), *Mon Altaï* (我的阿勒泰, 2010)."
+    ],
+    "note": "Le commentaire et la version pédagogique sont originaux. Les droits sur les œuvres étudiées appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire",
+      "Version"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Commentaire",
+        "pages_pdf": [
+          8,
+          9
+        ],
+        "page_pdf": 8,
+        "ligne_debut": 1,
+        "ligne_fin": 31
+      },
+      {
+        "question": "Version",
+        "page_pdf": 8,
+        "pages_pdf": [
+          8,
+          9
+        ],
+        "ligne_debut": 16,
+        "ligne_fin": 25,
+        "debut": "以往这种时候",
+        "fin": "也影响不到他"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

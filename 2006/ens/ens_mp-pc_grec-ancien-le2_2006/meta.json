@@ -1,0 +1,68 @@
+{
+  "slug": "ens_mp-pc_grec-ancien-le2_2006",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Grec ancien (LE2)",
+    "annee": 2006,
+    "modalite": "écrit"
+  },
+  "intitule": "Démosthène répond aux attaques d’Eschine",
+  "questions": 1,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version"
+    ]
+  },
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2006/sujet-2006-ecrit-mp_pc_langue_etrangere_2.pdf#page=11",
+    "sujet_sha256": "1567a166fd67c04e3d5615d14281c97e16050c7425544c7210420bab2e1d8982",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2006",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2006/sujet-2006-ecrit-mp_pc_langue_etrangere_2.pdf#page=11",
+        "sha256": "1567a166fd67c04e3d5615d14281c97e16050c7425544c7210420bab2e1d8982",
+        "pages": "11",
+        "filieres": "MP-PC"
+      },
+      {
+        "role": "rapport",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/rapport-de-jury-session-2006/rapport-2006-mp_ecrit_langue_etrangere_2_grec_ancien.pdf",
+        "sha256": "2cc97b8726d1881b6449cf8012c219b8830d0451adaaf8a4622cedb855088992",
+        "pages": "1",
+        "filieres": "MP-PC"
+      }
+    ],
+    "precision": "Démosthène, Sur la couronne, §§ 196–197.",
+    "etablissements": "ENS de Paris et de Cachan",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/rapport-de-jury-session-2006/rapport-2006-mp_ecrit_langue_etrangere_2_grec_ancien.pdf"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Version",
+      "fichier": "figures/lecture.svg",
+      "legende": "Les deux hypothèses mettent en difficulté le reproche fait après les événements."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "fin_langues_x_interens",
+      "session": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Traduction française intégrale, explication des constructions et schéma du passage. Démosthène, Sur la couronne, §§ 196–197.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}

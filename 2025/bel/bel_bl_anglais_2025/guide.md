@@ -4,9 +4,13 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Sujet officiel](https://www.ens.psl.eu/sites/default/files/2025_blses_epreuve_a_option_sujet_anglais.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_ecrit_anglais_option.pdf)
 
 ## Construire le commentaire
+
+Relire la dernière phrase de King après la comparaison de Menzies entre deux impérialismes. À quel jugement sur les moyens de défense chacun aboutit-il ?
 
 Le dossier comporte cinq documents à analyser en anglais en six heures. Repérer l’auditoire avant de rapprocher deux professions de foi. Chamberlain s’adresse à une institution coloniale en 1897 ; Roosevelt est gouverneur, lorsqu’en 1899 il s’adresse à un club masculin ; King prend la parole dans une église en 1967. Les verbes d’attribution empêchent de transformer leurs justifications en verdicts historiques.
 
@@ -28,6 +32,6 @@ Roosevelt speaks two years later to a men's club in Chicago. As governor of New 
 
 Porter's historical comparison complicates any easy succession from possession to free association. Commercial access, loans and bases can extend power without requiring governors everywhere. Conversely, the acquisition of a colony did not make British officials omnipotent: their dependence on local collaborators constrained what they could do. Nor does Porter give administrators and investors interchangeable motives. Paternalist officials sometimes frustrated the capitalist interests that had helped bring annexation about. The historian can recognise discontinuity in the Commonwealth while asking who dominated the less visible economic relationships that survived the formal empire.
 
-**What would count as giving up an empire?** King's address at Riverside Church makes that question moral and material. Vietnam becomes a symptom. Referring to Guatemala and other countries prevents his American listeners from dismissing one intervention as an exceptional mistake. Where Roosevelt treats withdrawal as a refusal to do one's share of global work, King asks who receives the profits for which stability is maintained. His account of the Good Samaritan draws a further distinction: relieving the injured traveller changes one life; altering the road that keeps producing victims changes a social arrangement. Addressed to a congregation, the biblical figure turns a familiar duty of individual charity into an exacting public duty. The costs of militarism appear in foreign lives and in the domestic programmes that lose resources.
+**What would count as giving up an empire?** King's address at Riverside Church makes that question moral and material. Vietnam becomes a symptom. Referring to Guatemala and other countries prevents his American listeners from dismissing one intervention as an exceptional mistake. Where Roosevelt treats withdrawal as a refusal to do one's share of global work, King asks who receives the profits for which stability is maintained. His account of the Good Samaritan draws a further distinction: relieving the injured traveller changes one life; altering the road that keeps producing victims changes a social arrangement. Addressed to a congregation, the biblical figure turns a familiar duty of individual charity into an exacting public duty. The costs of militarism appear in foreign lives and in the domestic programmes that lose resources. King closes by claiming that reforming those priorities would itself be the best defence against communism. That last word makes his disagreement with Menzies sharper. The two speakers can share a Cold War concern and draw opposite lessons about the use of Western power.
 
 The decisive disagreement concerns who may define service to others. Chamberlain and Roosevelt speak as if their readiness to undertake burdens established the benefit to those governed. Menzies shows how one institution can stop exercising an internal power even while a symbolic association persists. Porter gives a vocabulary for tracing power after the flags have changed, and King supplies a test for its supposed beneficiaries: can the people whose society is being transformed decide what is to change and retain the benefits? An empire may survive the loss of its good name. Equally, accepting a common name need not entail accepting a common ruler.

@@ -1,0 +1,72 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_geographie-lanthropocene-sous-les-tropiques_2023",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Géographie — l’Anthropocène sous les tropiques",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "intitule": "Résumer et discuter Magrin et Thibaud à la lumière d’un projet de recherche",
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/consignes-ecrit-sil2023.pdf",
+    "sujet_sha256": "90506da42532e79f22c29beed02d29c358ee9293bf028cddd6647a8d0e89a774",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.ens.psl.eu/sites/default/files/consignes-ecrit-sil2023.pdf",
+        "sha256": "90506da42532e79f22c29beed02d29c358ee9293bf028cddd6647a8d0e89a774",
+        "pages": 1
+      },
+      {
+        "role": "annexe",
+        "url": "https://www.ens.psl.eu/sites/default/files/geographie-ecrit-sil2023.pdf",
+        "sha256": "94256657e9d021927b22f08fbf8e35e216fcc68906b876731b74152a86eb1aa4",
+        "pages": 12,
+        "doi": "10.4000/belgeo.42708"
+      }
+    ],
+    "precision_sujet": "La consigne demande successivement un résumé critique et une discussion relative au projet propre du candidat. Le projet de recherche proposé sur les semences de mil est un exemple pédagogique à adapter."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/boucle-et-semences.svg",
+      "question": "Discussion des apports et limites",
+      "legende": "Comment une politique d’adaptation pourrait accroître la vulnérabilité qu’elle vise à réduire"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "classiques_2017",
+      "agent": "classiques_2017",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture de la consigne et de l’article distribué (douze pages, trente paragraphes, bibliographie et notes), puis rédaction d’une copie modèle et de sa préparation guidée."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1. Résumé critique de l’article",
+      "2. Apports et limites pour le projet de recherche"
+    ],
+    "elements_verifies": [
+      "Résumé critique des principales idées de l’éditorial, des deux acceptions de la tropicalité aux boucles et aux inégalités de développement.",
+      "Discussion des apports et des limites pour un projet illustratif annoncé, avec hypothèse, données, méthode et réfutation possible.",
+      "Exemple de copie conçu pour la limite d’une copie double."
+    ]
+  }
+}

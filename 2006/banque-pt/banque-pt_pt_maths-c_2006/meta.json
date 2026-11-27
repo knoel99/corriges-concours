@@ -1,0 +1,185 @@
+{
+  "slug": "banque-pt_pt_maths-c_2006",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths C",
+    "annee": 2006
+  },
+  "questions": 24,
+  "redaction": "Corrigés non officiels rédigés et vérifiés par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2006/math_c_2006.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_math_c_ecrit_2006.pdf",
+    "index_sujets": "https://www.banquept.fr/article51.html",
+    "index_rapports": "https://www.banquept.fr/article55.html",
+    "livret": "https://www.banquept.fr/documents/livret/2006/Livret_Rose_2006_1_2.pdf#page=12",
+    "sha256_sujet": "e2a7c5fb548d215adba01555995c0ac27245605e9df59bec6013a530028ff942",
+    "pages_sujet": 4,
+    "sha256_rapport_jury": "2b1fd39dfab1c1dcdba4dd11defca8c5a308f6ad2cad75da102c1917caedd6b7",
+    "pages_rapport_jury": 4,
+    "sha256_livret": "5681be4b094f21d516a26f35fbc4958f52e9de82e5f9ad4eb9d2ecb0c2709269",
+    "pages_livret": 21,
+    "coefficients_admissibilite": {
+      "École polytechnique": 6,
+      "ENS Cachan": 3
+    }
+  },
+  "figures": [
+    {
+      "question": "I.7",
+      "fichier": "figures/encadrement.svg",
+      "legende": "Les puissances successives du sinus encadrent leurs intégrales, ici aux rangs trois à cinq."
+    },
+    {
+      "question": "III.4",
+      "fichier": "figures/coefficients.svg",
+      "legende": "Le quotient du coefficient exact par son équivalent tend vers un."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7",
+      "I.8",
+      "I.9",
+      "I.10",
+      "I.11.a",
+      "I.11.b",
+      "I.11.c",
+      "II.1",
+      "II.2.a",
+      "II.2.b",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": "I.1",
+        "page_sujet": 1
+      },
+      {
+        "question": "I.2",
+        "page_sujet": 1
+      },
+      {
+        "question": "I.3",
+        "page_sujet": 1
+      },
+      {
+        "question": "I.4",
+        "page_sujet": 1
+      },
+      {
+        "question": "I.5",
+        "page_sujet": 1
+      },
+      {
+        "question": "I.6",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.7",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.8",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.9",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.10",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.11.a",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.11.b",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.11.c",
+        "page_sujet": 2
+      },
+      {
+        "question": "II.1",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.2.a",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.2.b",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.3",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.4",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.5",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.6",
+        "page_sujet": 3
+      },
+      {
+        "question": "III.1",
+        "page_sujet": 3
+      },
+      {
+        "question": "III.2",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.3",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.4",
+        "page_sujet": 4
+      }
+    ],
+    "precision": "Toutes les demandes des trois parties aux pages 1 à 4, notamment les trois subdivisions de I.11 et les deux de II.2."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modifications": true,
+      "perimetre": "Lecture du sujet et du rapport, recalcul des intégrales de Wallis, de la constante de Stirling et de la formule factorielle des coefficients, rédaction et contrôle numérique des deux éditions."
+    }
+  ]
+}

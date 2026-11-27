@@ -35,7 +35,7 @@
     "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
     "sujet_sha256": "67cd4a120e96beffacd081f0b6470261e73d62e63f0f410f958804faed7d349e"
   },
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "revision": {
     "date": "2026-11-24",
     "modele": null,
@@ -100,6 +100,23 @@
       "fournisseur": "codex",
       "session": "astra_langues",
       "perimetre": "Vérification des deux pourcentages et de leurs horizons, distinction de la prévision de mai 2020 et d’une réduction annuelle répétée, correction de la portée du parallèle sur les intérêts économiques."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "session": "fin_langues_x_interens",
+      "agent": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Fascicule officiel, consignes de compréhension et d’essai en fin de sujet (PDF de 5 pages). Les quatre réponses comptent respectivement 66, 67, 67, 70 mots hors références. L’essai compte 412 mots pour une cible de 450 à 10 % près, avec un séparateur tous les 50 mots. Les cinq réponses sont présentes dans les deux éditions. Les réponses distinguent la baisse prévue en 2020 d’un effort répété, les priorités budgétaires, le parallèle avec le scepticisme climatique et les signes de résilience. L’essai éprouve la proposition sur la solidarité après les catastrophes.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
   ],
   "provenance": {
@@ -116,5 +133,16 @@
       "effort": "ultra",
       "service_tier": null
     }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "Essai"
+    ],
+    "precision": "Fascicule officiel, consignes de compréhension et d’essai en fin de sujet (PDF de 5 pages). Les quatre réponses comptent respectivement 66, 67, 67, 70 mots hors références. L’essai compte 412 mots pour une cible de 450 à 10 % près, avec un séparateur tous les 50 mots. Les cinq réponses sont présentes dans les deux éditions. Les réponses distinguent la baisse prévue en 2020 d’un effort répété, les priorités budgétaires, le parallèle avec le scepticisme climatique et les signes de résilience. L’essai éprouve la proposition sur la solidarité après les catastrophes."
   }
 }

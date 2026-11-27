@@ -83,5 +83,35 @@
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Info%20B.pdf",
     "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/MP_Info%20B%20OK.pdf"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16"
+    ],
+    "precision": "Les 16 consignes numérotées ont été rapprochées dans l’ordre des solutions de chacune des deux éditions. Le sujet et le rapport ont été identifiés par leur empreinte et la portée du travail par le journal original.",
+    "origine_attestation": {
+      "commit_du_journal": "7eb4ffdba82c934f947644e085bf65df974c7093",
+      "phase": "relecture_corrige",
+      "date": "2026-11-24",
+      "perimetre": "Relecture des 16 questions du brut et du guidé avec le sujet MP-PC-PSI et le rapport MP. Vérification des invariants, de la mémoïsation, de la boucle d’unification et des deux requêtes SQL. Condition d’époque fraîche précisée en Q4, coût des grands entiers en Q12 et remplissage exact de la ligne 17 en Q14.",
+      "sha256_sujet_controle": "12c1b976731c37689caf87c730ade76c073b8a6dd61a8ec14df82e4f0a4b885f",
+      "sha256_rapport_controle": "bd14e337ff1165cdb5346a1cae7eb54620bb026900ba91ef501af1e960d8c353"
+    }
   }
 }

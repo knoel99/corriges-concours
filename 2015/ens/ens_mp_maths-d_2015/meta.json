@@ -11,9 +11,15 @@
   "sources": {
     "sujet": "https://www.ens.psl.eu/IMG/file/concours/2015/MPI/sujets/sujet_mpi_mathd2015.pdf",
     "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2015/MPI/rapports/15_mp_rap_emathd.pdf",
-    "sha256_sujet": "119166c7f1b445fad0be63ef99c20869ee6726be2122b9fa239b8695ec70d15c"
+    "sha256_sujet": "119166c7f1b445fad0be63ef99c20869ee6726be2122b9fa239b8695ec70d15c",
+    "sha256_rapport_jury": "5ac4b785dcab1340a26f85c80815864915ee5ad9fec6ea775be38525e7156d4a"
   },
   "figures": [
+    {
+      "fichier": "figures/buchstab-premiers-intervalles.svg",
+      "question": "III.1a",
+      "legende": "Deux expressions exactes de la fonction de Buchstab se raccordent en 2 avec des dérivées latérales opposées."
+    },
     {
       "fichier": "figures/lignes-et-colonnes-de-maier.svg",
       "question": "IV.3",
@@ -31,6 +37,78 @@
       "perimetre": "Rédaction des quatre parties des deux éditions à partir des huit pages du sujet et du rapport. Contraction uniforme de III.7c, oscillation de Buchstab, rectificatif du jury en III.5, normalisation de IV.3 comparée à la page imprimée et au théorème de Maier. Schéma des lignes et colonnes.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "ens_mp_mathematiques_d",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Pointage des 43 repères sur le sujet, les deux éditions et le rapport. p. 1–3, moyennes sur les parties, Fourier discret et progression arithmétique. p. 3–6, estimation de Roth, équation à retard de Buchstab, majorations uniformes et correction des bornes du comptage des premiers. p. 7–8, lignes et colonnes de la matrice de Maier, choix des paramètres et passage à la limite."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1a",
+      "I.1b",
+      "I.1c",
+      "I.1d",
+      "I.2a",
+      "I.2b",
+      "I.3",
+      "II.1a",
+      "II.1b",
+      "II.1c",
+      "II.2",
+      "II.3",
+      "II.4a",
+      "II.4b",
+      "II.4c",
+      "II.5a",
+      "II.5b",
+      "III.1a",
+      "III.1b",
+      "III.1c",
+      "III.1d",
+      "III.1e",
+      "III.1f",
+      "III.1g",
+      "III.2",
+      "III.3a",
+      "III.3b",
+      "III.3c",
+      "III.3d",
+      "III.3e",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7a",
+      "III.7b",
+      "III.7c",
+      "IV.1a",
+      "IV.1b",
+      "IV.1c",
+      "IV.2a",
+      "IV.2b",
+      "IV.2c",
+      "IV.3"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "controle": [
+      "p. 1–3, moyennes sur les parties, Fourier discret et progression arithmétique",
+      "p. 3–6, estimation de Roth, équation à retard de Buchstab, majorations uniformes et correction des bornes du comptage des premiers",
+      "p. 7–8, lignes et colonnes de la matrice de Maier, choix des paramètres et passage à la limite"
+    ]
+  }
 }

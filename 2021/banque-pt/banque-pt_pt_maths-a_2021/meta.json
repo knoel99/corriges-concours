@@ -1,0 +1,265 @@
+{
+  "slug": "banque-pt_pt_maths-a_2021",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths A",
+    "intitule": "Épreuve de Mathématiques A",
+    "annee": 2021,
+    "duree": "4 h"
+  },
+  "questions": 42,
+  "redaction": "Proposition pédagogique non officielle, rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2021/math_a_2021_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2021/rapport_math_a_ecrit_2021.pdf",
+    "sujet_sha256": "0129b58ed6fc935d3d6068d2ac022e7ee1814c89d7ac5ce43a2cdcc188523fdd",
+    "rapport_jury_sha256": "d008dbc9c2c70eafc98fcca4d2d6e33ab7c5afa69e748f4bc30b8ef90ce52cc1",
+    "observation_rapport": "Le jury demande p. 2 de discuter le cas où la covariance s’annule et de justifier le temps de première panne par les transitions. En algèbre, il insiste p. 4 sur les différentes composantes dominantes et p. 5–6 sur le caractère rectangulaire de Q dans la compression."
+  },
+  "figures": [
+    {
+      "question": "III.5.e",
+      "fichier": "figures/entrelacement.svg",
+      "legende": "Exemple de compression d’une matrice symétrique de taille trois sur un plan. Ses deux valeurs propres s’intercalent parmi les trois valeurs propres initiales."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "P.1.a",
+      "P.1.b",
+      "P.1.c",
+      "P.1.d",
+      "P.2.a",
+      "P.2.b",
+      "P.2.c",
+      "P.2.d",
+      "P.2.e",
+      "P.3",
+      "P.4.a",
+      "P.4.b",
+      "P.4.c",
+      "P.4.d",
+      "P.5",
+      "I.1.a",
+      "I.1.b",
+      "I.1.c",
+      "I.1.d",
+      "I.1.e",
+      "I.2.a",
+      "I.2.b",
+      "I.2.c",
+      "I.2.d",
+      "I.2.e",
+      "II.1",
+      "II.2",
+      "II.3",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4.a",
+      "III.4.b",
+      "III.4.c",
+      "III.4.d",
+      "III.5.a",
+      "III.5.b.i",
+      "III.5.b.ii",
+      "III.5.b.iii",
+      "III.5.c",
+      "III.5.d",
+      "III.5.e"
+    ],
+    "repere_par_question": [
+      {
+        "question": "P.1.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "P.1.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "P.1.c",
+        "page_pdf": 2
+      },
+      {
+        "question": "P.1.d",
+        "page_pdf": 2
+      },
+      {
+        "question": "P.2.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "P.2.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "P.2.c",
+        "page_pdf": 2
+      },
+      {
+        "question": "P.2.d",
+        "page_pdf": 2
+      },
+      {
+        "question": "P.2.e",
+        "page_pdf": 2
+      },
+      {
+        "question": "P.3",
+        "page_pdf": 2
+      },
+      {
+        "question": "P.4.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "P.4.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "P.4.c",
+        "page_pdf": 2
+      },
+      {
+        "question": "P.4.d",
+        "page_pdf": 3
+      },
+      {
+        "question": "P.5",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.1.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.1.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.1.c",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.1.d",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.1.e",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.2.a",
+        "page_pdf": 4
+      },
+      {
+        "question": "I.2.b",
+        "page_pdf": 4
+      },
+      {
+        "question": "I.2.c",
+        "page_pdf": 4
+      },
+      {
+        "question": "I.2.d",
+        "page_pdf": 4
+      },
+      {
+        "question": "I.2.e",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.1",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.2",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.3",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.1",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.2",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.3",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.4.a",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.4.b",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.4.c",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.4.d",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.5.a",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.5.b.i",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.5.b.ii",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.5.b.iii",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.5.c",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.5.d",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.5.e",
+        "page_pdf": 5
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "42 consignes ou sous-consignes numérotées traitées dans chaque édition. Le choix des paramètres donnant l’indépendance, les temps de première panne, les rapports spectraux et les deux bornes d’entrelacement sont examinés."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "fui_physique_un",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture du sujet et du rapport annuels, rédaction et vérification des deux éditions illustrées et du décompte par page. Le choix des paramètres donnant l’indépendance, les temps de première panne, les rapports spectraux et les deux bornes d’entrelacement sont examinés."
+    }
+  ]
+}

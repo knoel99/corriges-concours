@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Les trois problèmes indépendants portent sur des coordonnées matricielles, les temps d’attente entre piles et les sommes partielles de Fourier. Le deuxième problème autorise aussi les pièces déterministes.
 
 ## Problème 1 · Algèbre
@@ -155,7 +157,7 @@ Pour $p>0$, les probabilités de 6a sont exactement les produits des marginales 
 Par définition $T_{S_n+1}-T_{S_n}=U_n+V_n$. Pour $1\le k\le n$, $U_n\ge k$ signifie que les $k$ derniers lancers sont des faces. Ainsi pour $p>0$,
 $$\mathbb E[U_n]=\sum_{k=1}^{n}q^k=\frac{q(1-q^n)}p,\qquad
 \mathbb E[T_{S_n+1}-T_{S_n}]=\frac{1+q(1-q^n)}p.$$
-La différence avec $\mathbb E[T_1]=1/p$ est strictement positive pour $0<p<1$ et nulle pour $p=1$. Si $p=0$, les deux temps comparés valent $+\infty$ presque sûrement.
+La différence avec $\mathbb E[T_1]=1/p$ est strictement positive pour $0<p<1$ et nulle pour $p=1$. Si $p=0$, les deux temps comparés valent $+\infty$ presque sûrement. Pour $0<p<1$ fixé, la longueur moyenne de l’intervalle contenant l’instant $n$ tend vers $(1+q)/p=(2-p)/p$. Choisir un instant favorise les longs intervalles. Dans le calcul, le supplément est exactement la moyenne du temps déjà écoulé depuis la dernière pile.
 
 ## Problème 3 · Analyse
 
@@ -234,7 +236,7 @@ Par 4b, $f-S_n(f)$ a ses coefficients jusqu’à $n$ nuls. Il est donc orthogona
 
 #### Solution
 
-La norme carrée du reste est positive ou nulle, donc $\|S_n(f)\|^2\le\|f\|^2$. En divisant par deux et en appliquant 5a, on trouve
+La norme carrée du reste est positive ou nulle, donc $\|S_n(f)\|^2\le\|f\|^2$. À cet ordre $n$ fixé, on a égalité exactement quand $f=S_n(f)$ : si l’intégrale du carré de la différence est nulle, la continuité impose son annulation partout. En divisant par deux et en appliquant 5a, on trouve
 $$a_{0,f}^2+\tfrac12\sum_{m=1}^n(a_{m,f}^2+b_{m,f}^2)\le\frac1{2\pi}\int_{-\pi}^{\pi} f(x)^2\,dx.$$
 
 ### Question 5d

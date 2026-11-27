@@ -1,0 +1,51 @@
+{
+  "slug": "bel_bl_version-latine_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Version latine",
+    "annee": 2025,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2025_blses_epreuve_a_option_sujet_version_latine.pdf#page=2",
+    "sujet_sha256": "6e9601c8e34523918d21778095f90b1438763d78bb5be4537821052626a78f84",
+    "cahier_lyon": "https://www.ens-lyon.fr/sites/default/files/2025-10/Sujets%20BLSES%20%C3%A9preuves%20optionnelles%202025.pdf#page=52",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_ecrit_latin.pdf",
+    "rapport_jury_sha256": "034055a4222df15737267fef1c530f0cffc09e0b964d34bb8baf1c896d9a4cb0"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version latine"
+    ],
+    "precision": "Traduction complète des deux paragraphes, traitement des cinq notes et analyse des constructions de Suétone."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "legende": "Trois apparences construites par Caligula"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture de la page 2 du sujet commun et du rapport écrit. Traduction complète des deux paragraphes, traitement des cinq notes et analyse des constructions de Suétone. Rédaction du brut, du guidé et de la figure."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

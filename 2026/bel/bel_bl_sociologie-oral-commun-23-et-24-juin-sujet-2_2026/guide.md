@@ -6,6 +6,10 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## La contraception
@@ -32,6 +36,8 @@ Mesurer seulement les méthodes utilisées effacerait donc la négociation qui l
 
 ![Déclarer un seul partenaire au cours de sa vie](figures/lecture-des-donnees.svg)
 
+Formulez d’abord le changement pour un même groupe d’âge, puis identifiez qui répond à chaque date. Une personne âgée de 25 ans en 1972 en a 45 en 1992. Ces proportions n’enregistrent donc pas l’évolution d’un même groupe de personnes.
+
 ## Questions du jury
 
 > [!INDICATION]
@@ -45,3 +51,9 @@ Multiplier 222 000 par 0,724 donne environ 160 700. On applique la part au nombr
 Le premier graphique retient notamment les 20–44 ans, le second les 15–49 ans avec des définitions précisées en légende. Des classes de méthodes et des conditions d’enquête peuvent également différer. Il faudrait harmoniser champ et catégories autour de l’année commune.
 
 [Dossier officiel](https://www.ens.psl.eu/sites/default/files/dossier_contraception.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_tronc_commun_sociologie.pdf)
+
+## Vérification sur le dossier
+
+Les deux extraits sur les normes de genre et la charge de la contraception ont été relus avec les cinq documents statistiques. Chaque comparaison identifie la période, la population enquêtée et l’objet mesuré, des méthodes remboursées à la part des IVG médicamenteuses.
+
+Dans le document 7, le nombre total d’IVG et la part médicamenteuse sont représentés sur deux axes. La lecture pour 2020 donne 222 000 et 72,4 %. Leur produit est d’environ 160 700 IVG médicamenteuses. Les données initiales étant arrondies, il faut aussi arrondir ce résultat. Mesurer la fréquence dans une population demanderait de rapporter un effectif à la population correspondante, au cours de la même période.

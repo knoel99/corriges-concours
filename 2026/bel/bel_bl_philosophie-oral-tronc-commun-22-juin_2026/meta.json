@@ -66,6 +66,82 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Confrontation des intitulés, de leur groupement et des consignes aux documents du jury. Vérification de la portée des arguments, des exemples et des références philosophiques."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Euclide, portée exacte de l’inférence sur le diviseur de la construction."
     }
-  ]
+  ],
+  "date_revision": "2026-11-25",
+  "couverture": {
+    "statut": "complet",
+    "tirages_entierement_traites": [
+      [
+        "L’expérience instruit-elle ?",
+        "La dignité"
+      ],
+      [
+        "Sommes-nous libres de nos pensées ?",
+        "Avoir une idée fixe"
+      ],
+      [
+        "Avons-nous besoin de héros ?",
+        "Démontrer et argumenter"
+      ],
+      [
+        "Faut-il se cultiver ?",
+        "Le chef"
+      ],
+      [
+        "Qu’est-ce qu’un monstre ?",
+        "L’urgence"
+      ],
+      [
+        "L’histoire est-elle une science ?",
+        "La beauté du monde"
+      ],
+      [
+        "Y a-t-il un mal absolu ?",
+        "Survivre"
+      ],
+      [
+        "L’ordinaire",
+        "Avons-nous peur de la liberté ?"
+      ],
+      [
+        "Faut-il avoir peur des habitudes ?",
+        "L’esthète"
+      ],
+      [
+        "La science commence-t-elle avec la perception ?",
+        "La négociation"
+      ],
+      [
+        "À quoi servent les machines ?",
+        "Contempler"
+      ],
+      [
+        "Peut-on être trop sensible ?",
+        "Le monde du travail"
+      ]
+    ],
+    "precision": "Les deux éditions suivent les 12 billets dans l’ordre du rapport. Chaque sujet du billet a sa proposition argumentée et une question d’entretien avec réponse dans le guidé. Le feuillet du 22 juin imprime « top sensible ». Le rapport et les deux corrigés donnent « trop sensible ».",
+    "origine_attestation": {
+      "commit_du_journal": "70ff0724ecb55088905a206670f32fc0c9ea0b3d",
+      "sha256_feuillet_controle": "77d28872ce2b0fcc4cd28f334a0f4f80d268a81dfe12b4223dd0dd297e6401a1",
+      "sha256_rapport_controle": "180bf05d31da83942e012bc27ad2128aa290cd7ed2c7419574cccc52cce61f54",
+      "phase": "redaction",
+      "date": "2026-11-24",
+      "perimetre": "Rédaction des 24 propositions argumentées, de 24 questions et réponses pour l’entretien et de 3 schémas."
+    }
+  }
 }

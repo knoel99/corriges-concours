@@ -1,0 +1,396 @@
+{
+  "slug": "banque-pt_pt_physique-a_2022",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique A",
+    "annee": 2022
+  },
+  "questions": 50,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2022/ph_a_2022_pt.pdf",
+    "sujet_sha256": "78d7389a1ea3a09e37e07c4ef06e927cfbfeaa0f17e125b3c154d3375ed64a3a",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2022/rapport_phys_a_ecrit_2022.pdf",
+    "rapport_sha256": "ccfd978ec8c4301204c0db19964618de7e5c57b5ddb41bd0c84753289687052d",
+    "notice": "https://www.banquept.fr/documents/livret/2022/Livret_PT_2022.pdf#page=13",
+    "notice_sha256": "a3e4b9bf97bbd0bc5e1bb35ca0e750bee426010a41a256e1dd1dd43f8e88bf2f"
+  },
+  "figures": [
+    {
+      "fichier": "figures/thermistance.svg",
+      "question": "Q1",
+      "legende": "Résistance calculée sur la plage de 18 à 24 °C"
+    },
+    {
+      "fichier": "figures/calibrage.svg",
+      "question": "Q11",
+      "legende": "Tensions de sortie et saturation du dernier étage"
+    },
+    {
+      "fichier": "figures/coaxial.svg",
+      "question": "Q18",
+      "legende": "Champs et contour d’Ampère dans une section du câble"
+    },
+    {
+      "fichier": "figures/helice.svg",
+      "question": "Q32",
+      "legende": "Déroulement d’un tour du toboggan sur un plan"
+    },
+    {
+      "fichier": "figures/gel.svg",
+      "question": "Q48",
+      "legende": "Épaisseur prédite par le modèle et approximation initiale"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Cinquante réponses sur le lac de Joux avec calculs de capteurs, propagation guidée, mécanique et diffusion de chaleur. Cinq figures originales."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Vérification du sens des flèches, de la saturation du dernier ALI, du balayage et de la lecture graphique de la pente. Contrôles numériques de la puissance guidée, du pont, des efforts, des flux de chaleur et de l’épaisseur à 24 heures."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21",
+      "Q22",
+      "Q23",
+      "Q24",
+      "Q25",
+      "Q26",
+      "Q27",
+      "Q28",
+      "Q29",
+      "Q30",
+      "Q31",
+      "Q32",
+      "Q33",
+      "Q34",
+      "Q35",
+      "Q36",
+      "Q37",
+      "Q38",
+      "Q39",
+      "Q40",
+      "Q41",
+      "Q42",
+      "Q43",
+      "Q44",
+      "Q45",
+      "Q46",
+      "Q47",
+      "Q48",
+      "Q49",
+      "Q50"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Q1",
+        "page_pdf": 2,
+        "intitule": "Allure de la caractéristique de la thermistance"
+      },
+      {
+        "question": "Q2",
+        "page_pdf": 2,
+        "intitule": "Validation et paramètres de la loi"
+      },
+      {
+        "question": "Q3",
+        "page_pdf": 3,
+        "intitule": "Sensibilité au voisinage de la référence"
+      },
+      {
+        "question": "Q4",
+        "page_pdf": 3,
+        "intitule": "Comparaison au capteur métallique"
+      },
+      {
+        "question": "Q5",
+        "page_pdf": 3,
+        "intitule": "Effet de la mise en parallèle"
+      },
+      {
+        "question": "Q6",
+        "page_pdf": 3,
+        "intitule": "Courants d’entrée et gain d’un ALI"
+      },
+      {
+        "question": "Q7",
+        "page_pdf": 3,
+        "intitule": "Hypothèse de régime linéaire"
+      },
+      {
+        "question": "Q8",
+        "page_pdf": 3,
+        "intitule": "Tension en sortie du premier étage"
+      },
+      {
+        "question": "Q9",
+        "page_pdf": 3,
+        "intitule": "Vérification aux limites de la plage"
+      },
+      {
+        "question": "Q10",
+        "page_pdf": 3,
+        "intitule": "Gain du deuxième étage et addition de la référence"
+      },
+      {
+        "question": "Q11",
+        "page_pdf": 4,
+        "intitule": "Étalonnage en degrés Celsius et saturation"
+      },
+      {
+        "question": "Q12",
+        "page_pdf": 4,
+        "intitule": "Lecture de la base de temps de l’oscilloscope"
+      },
+      {
+        "question": "Q13",
+        "page_pdf": 5,
+        "intitule": "Profondeur par temps de vol"
+      },
+      {
+        "question": "Q14",
+        "page_pdf": 5,
+        "intitule": "Équations de Maxwell dans le diélectrique"
+      },
+      {
+        "question": "Q15",
+        "page_pdf": 5,
+        "intitule": "Variation radiale du champ électrique"
+      },
+      {
+        "question": "Q16",
+        "page_pdf": 5,
+        "intitule": "Champ magnétique de l’onde"
+      },
+      {
+        "question": "Q17",
+        "page_pdf": 6,
+        "intitule": "Relation de dispersion"
+      },
+      {
+        "question": "Q18",
+        "page_pdf": 6,
+        "intitule": "Courant dans le conducteur central"
+      },
+      {
+        "question": "Q19",
+        "page_pdf": 6,
+        "intitule": "Puissance moyenne guidée"
+      },
+      {
+        "question": "Q20",
+        "page_pdf": 6,
+        "intitule": "Pression absolue au fond"
+      },
+      {
+        "question": "Q21",
+        "page_pdf": 6,
+        "intitule": "Champ du solénoïde long"
+      },
+      {
+        "question": "Q22",
+        "page_pdf": 6,
+        "intitule": "Flux propre et inductance"
+      },
+      {
+        "question": "Q23",
+        "page_pdf": 6,
+        "intitule": "Impédances des deux dipôles du pont"
+      },
+      {
+        "question": "Q24",
+        "page_pdf": 7,
+        "intitule": "Condition d’équilibre du pont"
+      },
+      {
+        "question": "Q25",
+        "page_pdf": 7,
+        "intitule": "Identification des deux paramètres"
+      },
+      {
+        "question": "Q26",
+        "page_pdf": 7,
+        "intitule": "Résultat du pont et validation de la profondeur"
+      },
+      {
+        "question": "Q27",
+        "page_pdf": 9,
+        "intitule": "Pas de l’hélice"
+      },
+      {
+        "question": "Q28",
+        "page_pdf": 9,
+        "intitule": "Position et vitesse de l’enfant"
+      },
+      {
+        "question": "Q29",
+        "page_pdf": 9,
+        "intitule": "Énergie le long de la trajectoire"
+      },
+      {
+        "question": "Q30",
+        "page_pdf": 9,
+        "intitule": "Vitesse en sortie"
+      },
+      {
+        "question": "Q31",
+        "page_pdf": 9,
+        "intitule": "Équation horaire et durée"
+      },
+      {
+        "question": "Q32",
+        "page_pdf": 9,
+        "intitule": "Énergie dissipée par un frottement constant"
+      },
+      {
+        "question": "Q33",
+        "page_pdf": 9,
+        "intitule": "Fraction immergée des flotteurs"
+      },
+      {
+        "question": "Q34",
+        "page_pdf": 9,
+        "intitule": "Moment de la force sur le pédalier"
+      },
+      {
+        "question": "Q35",
+        "page_pdf": 9,
+        "intitule": "Puissance moyenne du pédalage"
+      },
+      {
+        "question": "Q36",
+        "page_pdf": 10,
+        "intitule": "Courant du moteur d’assistance"
+      },
+      {
+        "question": "Q37",
+        "page_pdf": 10,
+        "intitule": "Couple de Laplace et puissance"
+      },
+      {
+        "question": "Q38",
+        "page_pdf": 10,
+        "intitule": "Réduction de l’effort du vacancier"
+      },
+      {
+        "question": "Q39",
+        "page_pdf": 12,
+        "intitule": "Longueur thermique de référence"
+      },
+      {
+        "question": "Q40",
+        "page_pdf": 12,
+        "intitule": "Chaleur libérée par kilogramme"
+      },
+      {
+        "question": "Q41",
+        "page_pdf": 12,
+        "intitule": "Chaleur libérée par le gel du lac"
+      },
+      {
+        "question": "Q42",
+        "page_pdf": 12,
+        "intitule": "Profil de température dans la glace"
+      },
+      {
+        "question": "Q43",
+        "page_pdf": 12,
+        "intitule": "Chaleur libérée au front de gel"
+      },
+      {
+        "question": "Q44",
+        "page_pdf": 12,
+        "intitule": "Transfert par conduction"
+      },
+      {
+        "question": "Q45",
+        "page_pdf": 12,
+        "intitule": "Température à la surface"
+      },
+      {
+        "question": "Q46",
+        "page_pdf": 12,
+        "intitule": "Équation d’avancement du front"
+      },
+      {
+        "question": "Q47",
+        "page_pdf": 12,
+        "intitule": "Intégration de l’équation"
+      },
+      {
+        "question": "Q48",
+        "page_pdf": 12,
+        "intitule": "Épaisseur de la glace en fonction du temps"
+      },
+      {
+        "question": "Q49",
+        "page_pdf": 12,
+        "intitule": "Temps caractéristique de croissance"
+      },
+      {
+        "question": "Q50",
+        "page_pdf": 12,
+        "intitule": "Temps de diffusion et validité du régime"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "annexes": "Aucune annexe distincte. Formulaire vectoriel en coordonnées cylindriques page 5, figures et données dans les parties. Fin page 12, dernière page du PDF blanche."
+  }
+}

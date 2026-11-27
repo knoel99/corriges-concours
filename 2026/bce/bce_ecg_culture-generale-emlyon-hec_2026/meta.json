@@ -21,7 +21,7 @@
     "rapport_jury": "https://www.concours-bce.com/sites/default/files/2026-09/254%20-%20Diss%20Culture%20g%C3%A9n%C3%A9rale%20HEC%20Paris.%20EMLyon%202026.pdf",
     "rapport_sha256": "956ca3f40e2ace32fbe1d594f1dc61c8b4d46b48b1ac2a485bc0705a34f92bf4"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -65,6 +65,45 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Correction du métier et des erreurs possibles de Javert, de la situation narrative chez Kafka et Camus et des limites de l’autoévaluation. Ajout d’un schéma pédagogique."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet 254 et de l’analyse du « trop » dans le rapport. Étude du passage du constat sur un acte au verdict irrévisable dans le cas de Javert."
+    },
+    {
+      "phase": "revision",
+      "tour": 4,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux",
+      "perimetre": "Garde 254, point final et rapport emlyon–HEC vérifiés. Étude de la conséquence laissée en suspens et de l’excès à l’intérieur d’une appréciation légitime. Une expérience de correction distingue nombre des jugements, extension de la preuve et réduction de la personne à un acte. Copie rédigée sans intertitres internes."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "sujets_entierement_traites": [
+      "À trop juger."
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "origine_attestation": {
+      "phase": "revision",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "5ea397d624edfa47b849e5530cc7d4a862e11130f9fe731e4d3d9dcfd5846883",
+      "perimetre": "Garde 254, point final et rapport emlyon–HEC vérifiés. Étude de la conséquence laissée en suspens et de l’excès à l’intérieur d’une appréciation légitime. Une expérience de correction distingue nombre des jugements, extension de la preuve et réduction de la personne à un acte. Copie rédigée sans intertitres internes."
+    }
+  }
 }

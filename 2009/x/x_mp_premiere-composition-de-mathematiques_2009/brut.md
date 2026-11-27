@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le sujet traite d’abord de la dilatation d’une fonction puis des moments de produits de convolution. Le rapport de jury demande notamment de justifier les échanges de sommes en question 5 et le contrôle des queues en question 12.a.
 
 ## Première partie. Exponentielle du générateur des dilatations
@@ -52,6 +54,8 @@ Dans 7.b chaque produit d’inverses de factorielles est au plus un. Les composi
 
 Choisissons $0<r<R$ (par exemple $R/2$ si $R<\infty$, sinon $r=1$), $\alpha=r/2$ et $\eta=\log2$. Pour $|x|<\alpha$, $|t|<\eta$, on a $|x|(e^{|t|}-1)<r/2<R-|x|$. Par positivité des $\lambda_{n,k}$, la somme en $n$ des valeurs absolues vaut $|f^{(k)}(x)|[|x|(e^{|t|}-1)]^k/k!$. La somme en $k$ converge par convergence absolue à l’intérieur du rayon de la série de Taylor de (P). Ainsi la double série demandée est absolument sommable.
 
+La quantité positive sommée en $n$ à $k$ fixé se calcule en évaluant la série génératrice en $|t|$. On obtient exactement la série de Taylor absolue des dérivées en $x$, évaluée en $|x|(e^{|t|}-1)$. L’argument reste valable même si certains $f^{(k)}(x)$ changent de signe.
+
 ### Question 7.f
 
 Dans ce rectangle, 7.e permet d’intervertir et de regrouper les sommes, et (P) s’applique à $h=x(e^t-1)$. Avec 7.c et 4, la somme selon $k$ à $n$ fixé est $\sum_{k=1}^n \mu_{n,k}x^k f^{(k)}(x)=(A^n f)(x)$. En ajoutant le terme d’ordre zéro, $\sum_{n\ge0}(t^n/n!)(A^nf)(x)=f(e^tx)=(\Phi_tf)(x)$.
@@ -86,6 +90,8 @@ Posons $h_n=T_nF_n$, positive de masse un. Par 10–11, $m_2(h_n)=n^{-2}\sum_i m
 
 La masse de $h_n=T_nF_n$ vaut un. Pour $\varepsilon>0$, choisir $\alpha>0$ tel que $|h(x)-h(0)|\le\varepsilon$ sur $|x|\le\alpha$. Alors $|\int h h_n-h(0)|\le\varepsilon+2\|h\|_\infty C/(n\alpha^2)$. Prendre la limite supérieure puis $\varepsilon\downarrow0$ montre que l’intégrale tend vers $h(0)$. Cette preuve utilise la masse des queues sans supposer de majorant intégrable commun aux densités.
 
+Dans le cas gaussien du dessin, $F_n$ a pour variance $n$. La densité $T_nF_n$ a pour variance $n/n^2=1/n$. Sa hauteur en zéro est $\sqrt{n/(2\pi)}$, ce qui explique pourquoi la majoration des queues convient même si la hauteur maximale augmente.
+
 ![Figure 1 — Exemple de densités initiales normales centrées de variance un. Après convolution et changement d’échelle, la masse hors d’un voisinage de zéro diminue.](figures/concentration-convolution.svg)
 
 ### Question 13.a
@@ -99,3 +105,5 @@ Pour $f,g\in F_0$, les termes portant un premier moment s’annulent, d’où $m
 ### Question 13.c
 
 Une condition suffisante est $\sup_i m_4(f_i)\le D<\infty$. Par 13.b et l’hypothèse $m_2(f_i)\le C$, on a $m_4(F_n)\le nD+3n(n-1)C^2$. Par 11 et la majoration $1\le x^4/\alpha^4$ sur $x\ge\alpha$, $\int_\alpha^\infty T_nF_n\le[nD+3n(n-1)C^2]/(\alpha^4n^4)=O_\alpha(n^{-2})$, donc la série converge. Plus généralement, il suffit que $\sum_i m_4(f_i)/i^3<\infty$, puisque l’échange de sommes positives donne $\sum_n n^{-4}\sum_{i\le n}m_4(f_i)=\sum_i m_4(f_i)\sum_{n\ge i}n^{-4}$ et la queue est $O(i^{-3})$.
+
+La condition uniforme sur le quatrième moment peut même à elle seule fournir le contrôle des seconds moments. En effet 13.a donne $m_2(f_i)\le\sqrt D$. La contribution des paires dans $n^{-4}m_4(F_n)$ est alors au plus $3D(n-1)/n^3$, sommable.

@@ -1,0 +1,43 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire-les-domaines-de-saint-denis-au-temps-de-suger-oral_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire — les domaines de Saint-Denis au temps de Suger (oral)",
+    "annee": 2019
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/histoire-oral-sil2019-2.pdf",
+    "sha256_sujet": "a57621e8f3bd65cdc0e69762b1f31b15e8f59a46f03ae0f6e080c8439ab144c7",
+    "rapport_jury": null,
+    "pieces_complementaires": [
+      {
+        "role": "attentes générales du jury, index 2019, page 3",
+        "url": "https://www.ens.psl.eu/IMG/file/internationale/2008/Lettres/Lettres.pdf",
+        "sha256": "3a360c4a7769d5dbf001d43040fcd150dcf10e4ee661a0264586d3fb340a24f4"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture-du-document.svg",
+      "question": "Transformer le désert en lieu chrétien",
+      "legende": "Trois politiques de gestion dans les extraits de Suger."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des trois cas après lecture des deux pages. Distinction des mesures et des prélèvements, traitement des résistances et du récit abbatial. Attentes générales du jury et figure consultées et contrôlées.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

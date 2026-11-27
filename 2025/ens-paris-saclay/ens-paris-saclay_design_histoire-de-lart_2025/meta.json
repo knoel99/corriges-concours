@@ -8,7 +8,7 @@
     "modalite": "écrit"
   },
   "intitule": "Histoire de l’art",
-  "questions": 0,
+  "questions": 1,
   "redaction": "Proposition non officielle rédigée par IA.",
   "modele": {
     "provider": "codex",
@@ -28,16 +28,41 @@
       "https://www.epfl.ch/about/overview/wp-content/uploads/2022/07/EPFL-rapport-annuel-2010.pdf"
     ],
     "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2025/Rapports/2025_Design_Rapport_histoire_de_l%27art_ecrit.pdf",
-    "rapport_sha256": "308a23bafd00ced9493cfa4056743fd88ed02ceb397b810ec1ae813f02ac89f9"
+    "rapport_sha256": "308a23bafd00ced9493cfa4056743fd88ed02ceb397b810ec1ae813f02ac89f9",
+    "sha256_sujet": "586aa1674e33f564824dba6bf732947ee5e8157a45107df1b2121cb7ed003661",
+    "index_annales": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=602",
+    "programme": "Critique, rejet et réhabilitation des techniques traditionnelles de fabrication : de Vers une architecture à Learning from Vernacular",
+    "consigne_imprimee": "Vous analyserez et discuterez cet extrait de Amos Rapoport en vous appuyant sur votre connaissance du programme et selon un propos argumenté.",
+    "reference_imprimee": "Amos Rapoport, Pour une Anthropologie de la maison, Paris : Dunod, 1972, trad. de l’anglais : House form and Culture, 1969.",
+    "page_pdf_sujet": 3,
+    "index_annales_sha256": "d8a579b4db81f624b7155493df320d0e0ddf827ef6af87154774f1684e73d7fd",
+    "numero_epreuve": 2,
+    "date_epreuve": "2025-04-03",
+    "horaire": "08 h 30–12 h 30",
+    "notices_verifiees_revision": [
+      {
+        "url": "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-cite-fruges-pessac-france-1924-1926/",
+        "statut": 200,
+        "sha256": "8b970b155a7297d2d0ae6d40be387a1db02db391019f98f6b5713a6b36889951"
+      }
+    ],
+    "sha256_rapport_jury": "308a23bafd00ced9493cfa4056743fd88ed02ceb397b810ec1ae813f02ac89f9",
+    "pages_rapport_histoire_de_lart": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
   },
   "figures": [
     {
       "fichier": "figures/transmission.svg",
       "question": "Dissertation",
-      "legende": "Qui reprend la règle et à quelle fin ?"
+      "legende": "À Francfort, à la Nouvelle Gourna et à Gando, qui choisit la règle de construction et qui peut la modifier ?"
     }
   ],
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "lecture_rapport_jury",
@@ -74,6 +99,92 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Confrontation des bornes du programme, des contraintes fonctionnelles et sociales de la cuisine de Francfort, de la commande de Gourna et de la ventilation de l’école de Gando. Contrôle des deux éditions et du schéma."
+    },
+    {
+      "phase": "revision",
+      "agent": "x_hist_1986",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Examen du double « souvent », du paradoxe social du fonctionnalisme et des transformations documentées à Pessac. Distinction entre constat architectural et interprétation des raisons des habitants. Lecture des cinq pages du rapport."
     }
-  ]
+  ],
+  "gabarit": "dissertation",
+  "duree_heures": 4,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2025/Sujets/BAT_HistoiredelArt.pdf",
+      "sha256": "586aa1674e33f564824dba6bf732947ee5e8157a45107df1b2121cb7ed003661",
+      "pages": 3,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "a21ee576e4400048b8a92e764ad08f658611f9849b3d0b23f534264bd9cddf26"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "bd7f2133a3fc5c37bde6517adee5c47da947e6b03c66e0822a2f4772ad6f0ee5"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2025/Rapports/2025_Design_Rapport_histoire_de_l%27art_ecrit.pdf",
+      "sha256": "308a23bafd00ced9493cfa4056743fd88ed02ceb397b810ec1ae813f02ac89f9",
+      "pages": 5,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "ade09b59dfa8d5f959d3cf15fee748002962430ee8d19620a56122eeb4903c16"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "c1d86cc1cdf6d976e6f95789fba6837d7bdfd3d1dcc3fa5bb5051e34a97e13ac"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "b84f1f7d22d00e523aa4ad73b7210495dfd742e877a489df1c305642d86d7f1f"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "17af16e7c1914295ea67cf0938f3df04df39e37d3a58ec93d4fb89a0a30e0a01"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "4012b6fc34513f530c663f5c3d0d1a5838ee402e89a47fd9b05c46fa7359439c"
+        }
+      ]
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "consigne": "Vous analyserez et discuterez cet extrait de Amos Rapoport en vous appuyant sur votre connaissance du programme et selon un propos argumenté.",
+        "page_pdf": 3
+      }
+    ],
+    "annexes_sujet": [],
+    "reproductions_sujet": [],
+    "pages_blanches_sujet": [
+      2
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
 }

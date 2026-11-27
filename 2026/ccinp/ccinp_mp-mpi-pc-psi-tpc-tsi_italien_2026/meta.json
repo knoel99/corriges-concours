@@ -16,7 +16,23 @@
   },
   "sources": {
     "sujet": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/Ep%20communes/2026_LVA6AU.pdf#page=6",
-    "rapport_jury": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/Ep%20communes/LV_ECRIT_2026_05.10.pdf#page=23"
+    "rapport_jury": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/Ep%20communes/LV_ECRIT_2026_05.10.pdf#page=23",
+    "sha256_sujet": "f4aff4b5f57beec696fa9ae91f8dcac2d16ef0b2b1c30b80655e4be90c59a593",
+    "sha256_rapport_jury": "23a73e191a42c2fcd03b46b4baca6da1089739620013f3ba144814c9a261dbb0",
+    "pages_pdf_sujet_verifiees": [
+      1,
+      6,
+      7,
+      8,
+      9
+    ],
+    "pages_pdf_rapport_verifiees": [
+      1,
+      2,
+      23,
+      24,
+      25
+    ]
   },
   "figures": [
     {
@@ -25,7 +41,7 @@
       "question": "Synthèse"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-27",
   "contributions": [
     {
       "phase": "redaction",
@@ -36,6 +52,90 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Synthèse en italien des 5 documents du sujet officiel p. 6–9, barres tous les vingt mots, comptage titre compris, lecture du rapport de l’option, guide et schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "lva_pt_2325",
+      "session": "/root/lva_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "perimetre": "Révision des deux éditions, confrontation des documents et figures au sujet et au rapport publiés, vérification du décompte depuis le titre."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Synthèse"
+    ],
+    "origine_attestation": {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "date": "2026-11-27",
+      "sha256_sujet_controle": "f4aff4b5f57beec696fa9ae91f8dcac2d16ef0b2b1c30b80655e4be90c59a593",
+      "perimetre": "Révision des deux éditions, confrontation des documents et figures au sujet et au rapport publiés, vérification du décompte depuis le titre.",
+      "documents_verifies": [
+        {
+          "numero": 1,
+          "pages": [
+            7
+          ],
+          "observation": "Divercity, Nicole Riva interroge Alice Bigli, 07/09/2023. Attention quotidienne, rôle des adultes et couverture de Leggere piano, forte, fortissimo."
+        },
+        {
+          "numero": 2,
+          "pages": [
+            7,
+            8
+          ],
+          "observation": "Scrivere è vivere, Alessandra Perotti, 04/10/2024. La fréquence des messages, le changement des usages et les capacités argumentatives."
+        },
+        {
+          "numero": 3,
+          "pages": [
+            8
+          ],
+          "observation": "news48, Chiara Buffoni interroge Assunta Corbo, 04/10/2021. Enquête, vérification des sources et participation au débat."
+        },
+        {
+          "numero": 4,
+          "pages": [
+            9
+          ],
+          "observation": "Glicine, 02/07/2023. Enquête Istat sur la lecture de loisir, comparaison 2010 et 2022, âge et volume des publications."
+        },
+        {
+          "numero": 5,
+          "pages": [
+            9
+          ],
+          "observation": "Benbow. Scrittura e narrazione, 04/11/2023. Cours de fanfiction et échanges avec les lecteurs du Web. Une machine à écrire et des figurines illustrent le texte."
+        }
+      ],
+      "decompte": {
+        "titre": "Le pagine e gli schermi dei giovani lettori italiani",
+        "langue": "italien",
+        "minimum": 360,
+        "maximum": 440,
+        "mots": 407,
+        "titre_et_paragraphes": [
+          9,
+          54,
+          117,
+          82,
+          145
+        ],
+        "barres": 20,
+        "total_imprime": "407 parole, titolo compreso.",
+        "groupes_source_introduction": [
+          "Scrivere è vivere",
+          "Benbow. Scrittura e narrazione"
+        ],
+        "convention": "Titre inclus. Dans l’introduction, chaque source et chaque date comptent pour un mot, ainsi que le renvoi compact à un document. Unités séparées par des blancs pour le reste de la copie. Chaque vingtième mot est suivi d’une barre. Total et FIN hors compte."
+      }
+    }
+  }
 }

@@ -16,7 +16,14 @@
   },
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/2025_blses_epreuve_a_option_sujet_anglais.pdf",
-    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_ecrit_anglais_option.pdf"
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_ecrit_anglais_option.pdf",
+    "sujet_sha256": "83233d6b14da54476043b86e5d7232c5ae8a6a738b0bf505875be8e50d3f9eb7",
+    "fascicule": "https://www.ens-lyon.fr/sites/default/files/2025-10/Sujets%20BLSES%20%C3%A9preuves%20optionnelles%202025.pdf",
+    "fascicule_sha256": "ad7d4877a638d78c47207dd017be3bc1db45f86ee0ce486f5f6b255d7030285b",
+    "pages_fascicule": [
+      11,
+      17
+    ]
   },
   "figures": [
     {
@@ -25,7 +32,7 @@
       "question": "Commentaire"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -36,6 +43,30 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Commentaire composé en anglais des 5 documents du sujet officiel de six heures, guidage et schéma comparatif."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "fin_langues_x_interens",
+      "agent": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Le feuillet officiel demande un commentaire en six heures sur 5 documents. Les pages 11 à 17 du fascicule commun ENS Ulm et Lyon reproduisent le PDF individuel, garde incluse. Le commentaire complet des deux éditions rapproche Bernard Porter, Joseph Chamberlain, Robert Menzies, Theodore Roosevelt et Martin Luther King Jr.. Comparaison des usages rivaux de l’anticommunisme à la fin des interventions de Menzies et de King.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Analyse et commentaire du dossier en anglais"
+    ],
+    "precision": "Le feuillet officiel demande un commentaire en six heures sur 5 documents. Les pages 11 à 17 du fascicule commun ENS Ulm et Lyon reproduisent le PDF individuel, garde incluse. Le commentaire complet des deux éditions rapproche Bernard Porter, Joseph Chamberlain, Robert Menzies, Theodore Roosevelt et Martin Luther King Jr.."
+  }
 }

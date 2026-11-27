@@ -1,0 +1,58 @@
+{
+  "slug": "ens-rennes_d-e_italien-oral_2021",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Italien (oral)",
+    "annee": 2021,
+    "modalite": "oral"
+  },
+  "intitule": "Épreuve orale d’italien",
+  "questions": 1,
+  "redaction": "Présentation italienne du portrait générationnel, de la précarité et des enquêtes citées. Distinction des trois populations statistiques et des intentions déclarées ; trois relances résolues.",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/annales-oraux-italien-d-e-2021_1652428658992-pdf",
+    "sujet_sha256": "86e7730a028bc3c65376274dc171e1941eb1a4b49d854b8110d29acc8bb9dedd",
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2021"
+  },
+  "billets": [
+    {
+      "numero": 1,
+      "intitule": "Il Covid-19 ha davvero cancellato i sogni dei Millennials ?",
+      "pages": [
+        1
+      ],
+      "support": "fascicule distribué",
+      "url": "https://www.ens-rennes.fr/medias/fichier/annales-oraux-italien-d-e-2021_1652428658992-pdf#page=1"
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "fichier": "figures/tre-popolazioni.svg",
+      "legende": "Tre numeri, tre popolazioni e tre domande diverse."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Présentation italienne du portrait générationnel, de la précarité et des enquêtes citées. Distinction des trois populations statistiques et des intentions déclarées ; trois relances résolues."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ],
+    "precision": "L’unique billet du fascicule demande d’analyser l’article d’Alice Scaglioni. Les relances sont proposées pour l’entraînement."
+  }
+}

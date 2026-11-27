@@ -8,6 +8,10 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Distinguer la provenance et le fondement d’une croyance
 
 La page 2 du fascicule de 2017 accorde cinq heures. Le libellé est un groupe nominal. L’enjeu de l’introduction est de construire une question dont les deux termes sont nécessaires. Une histoire de l’apparition des rites traite la religion comme phénomène naturel. Une théologie naturelle examine ce que l’on peut soutenir au sujet de Dieu sans invoquer d’abord une révélation. Le sujet demande aussi comment des croyances ainsi justifiées pourraient être vécues comme une religion.
@@ -20,6 +24,10 @@ La page 2 du fascicule de 2017 accorde cinq heures. Le libellé est un groupe no
 
 ![À quelle question répond-on ?](figures/croyance-et-raison.svg)
 
+À propos d’une même croyance, poser d’abord la question de l’apprentissage puis celle de la justification. Une éducation historique n’exclut pas à elle seule la prétention à une justification rationnelle commune.
+
+**Exercice de préparation.** Reprenez le cas de deux personnes qui aident le même inconnu. L’une a appris son devoir dans une tradition religieuse, l’autre par une réflexion sur la vulnérabilité. Demandez pour chacune d’où lui vient cette idée, pourquoi elle la tient pour justifiée et si elle y reconnaît une exigence divine. Une réponse commune à la deuxième question peut coexister avec des réponses différentes aux deux autres. C’est à ce point précis que la formule « religion naturelle » doit justifier le maintien du mot « religion ».
+
 ## La religion naturelle
 
 Deux voyageurs se disent croyants. Chacun a reçu de sa famille un récit de la révélation divine, et chacun découvre que l’autre aurait pu être à sa place s’ils étaient nés dans le même village. De cette dépendance du témoignage à l’égard du lieu de naissance, ils peuvent conclure que chacun doit garder sa confession. Ils peuvent aussi chercher un moyen de juger qui soit accessible à l’un comme à l’autre. C’est à cette seconde exigence que correspond le projet d’une religion naturelle. Mais que restera-t-il de religieux dans ce que chacun pourra admettre par ses seules facultés humaines ?
@@ -29,6 +37,8 @@ Deux voyageurs se disent croyants. Chacun a reçu de sa famille un récit de la 
 ### I. Un titre commun à croire
 
 Lorsqu’une personne croit un fait historique, elle doit ordinairement se fier à des témoins. Rien là d’irrationnel. Mais si mon salut dépend absolument de l’adhésion à la révélation racontée par ces seuls témoins, celui qui n’a pu les rencontrer risque d’être tenu pour coupable d’une ignorance involontaire. La prétention d’une religion à concerner tout homme réclame donc une distinction entre la diffusion contingente d’une croyance et les raisons susceptibles d’être reconnues par chacun. Dans la *Profession de foi du vicaire savoyard*, au livre IV de l’*Émile*, Rousseau prête au vicaire l’examen de cette disproportion. La multiplication des miracles et des témoignages soumettrait la recherche du vrai à un voyage interminable à travers langues et traditions. Le vicaire cherche dans son expérience et sa conscience une règle de jugement qu’aucune institution ne puisse confisquer.
+
+Il est possible d’apprendre une proposition dans un livre et de la justifier ensuite par des raisons accessibles à ceux qui ne l’ont jamais lu. L’histoire de sa transmission et la nature de son autorité peuvent donc recevoir deux réponses différentes. C’est cette différence qui donne un sens exigeant à l’idée de religion naturelle.
 
 Une première voie est de regarder le monde visible comme l’indice d’un ordre intelligible. Si plusieurs pièces ajustées entre elles permettent à un outil de fonctionner, je reconnais une disposition qui suppose le travail d’un artisan. Le monde où des organismes se maintiennent et s’ajustent les uns aux autres semble à son tour témoigner d’une intelligence. L’intérêt du raisonnement est son point de départ. Il s’adresse à des personnes qui ne partagent encore aucune Écriture. Une conclusion établie sur un terrain commun pourrait alors tenir lieu de seuil pour toute croyance ultérieure.
 
@@ -45,6 +55,8 @@ L’échec d’une preuve ambitieuse n’oblige pourtant pas à choisir entre un
 ### III. Une religion de la raison qui accepte d’être une foi
 
 Dans la quatrième partie de *La Religion dans les limites de la simple raison*, Kant donne au contraste une portée pratique. Dans la religion naturelle, je dois pouvoir reconnaître qu’un acte est un devoir avant de le tenir pour commandé par Dieu. Dans la religion qui exige une révélation comme condition déterminante, l’ordre de reconnaissance s’inverse. Supposons qu’une prescription cultuelle m’enjoigne de mentir pour sauver le prestige d’un sanctuaire. Si le seul titre de l’obligation est l’autorité prétendue de celui qui commande, aucune critique interne du mensonge ne reste possible. Si je dois reconnaître le devoir par ma raison, la prétention religieuse d’une règle ne soustrait pas sa maxime à l’examen moral. L’adjectif « naturel » désigne alors une autonomie de jugement compatible avec l’interprétation religieuse du devoir.
+
+Supposons qu’une tradition enseigne aux enfants un devoir de secours en racontant un épisode sacré. Une personne qui ignore ce récit peut reconnaître, dans la détresse d’autrui et dans sa propre capacité de lui répondre, une raison de l’aider. Cette rencontre valide une exigence commune. Elle ne démontre encore ni que le récit ait eu lieu ni que ce devoir soit un commandement divin. L’écart est décisif. La religion naturelle ne se confond avec la morale qu’au prix de perdre ce qu’elle devait expliquer, la manière de rapporter une obligation à Dieu. Elle peut maintenir ce rapport comme interprétation pratique de l’obligation, à condition de reconnaître ce que l’accord moral, à lui seul, laisse indéterminé. Deux personnes pourront alors secourir le même inconnu sans que leur accord dans l’action décide entre la foi de l’une et la réserve de l’autre.
 
 Pourquoi conserver le mot « religion » ? Celui qui accomplit son devoir peut y reconnaître une exigence morale suffisante sans croire en Dieu. Celui qui le reconnaît en outre comme commandement divin rapporte ses engagements à une totalité de sens et à une espérance. Il ne possède pas une nouvelle preuve physique qu’un être divin surveille ses gestes. Ce qu’il fait différemment, c’est comprendre sa vie entière, ses devoirs et ses relations avec autrui dans cet horizon. La prière qui exprime cette disposition et la communauté qui l’entretient peuvent être des médiations historiques. Elles cessent de prétendre constituer la seule source de l’obligation. Une religion transmise par une tradition peut donc contenir des convictions qu’une personne est en droit d’examiner par elle-même : histoire de leur apprentissage et fondement de leur validité ne coïncident pas nécessairement.
 

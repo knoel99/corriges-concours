@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Représentation des fonctions booléennes par diagrammes de décision.** La taille compte les sommets de décision et, dans la dernière partie, les sommets de choix non déterministe. Les terminaux ne sont pas comptés. Dans les quatre diagrammes de décision, une arête pointillée vaut 0 et une arête pleine vaut 1.
 
 ## I. Fonctions et formules booléennes
@@ -398,7 +400,7 @@ Posons $m=\lceil n^2/2\rceil$. Si toutes les lignes rencontrant $Z$ étaient mé
 
 La coupure voulue est le préfixe $Z=\pi^{-1}(\{1,\ldots,\lceil n^2/2\rceil\})$, et non l’image réciproque du seul entier central. Posons $k=\lfloor n/2\rfloor$. Par V.4, il y a $k$ lignes mélangées, ou, après transposition, $k$ colonnes mélangées. Traitons les lignes, choisies distinctes. Dans la partie $Z$ de chaque ligne sélectionnée, mettons partout le bit qui code cette ligne. Dans les autres lignes, mettons 0 sur $Z$. On a construit un préfixe par vecteur de $k$ bits.
 
-Pour distinguer deux vecteurs, choisir une ligne sélectionnée $i$ où ils diffèrent. Dans le complément de $Z$, mettre 1 exactement sur la ligne $i$, et 0 ailleurs. Les autres lignes sélectionnées ont chacune au moins un zéro hors de $Z$. Toutes les lignes non sélectionnées restent nulles et, pour $n\ge2$, il en existe au moins une, qui empêche toute colonne pleine. La ligne $i$ est entièrement à 1 exactement lorsque son bit préfixe vaut 1. Les deux résiduelles sont donc distinctes. Pour $n=1$ la borne 1 est immédiate. Ainsi il y a au moins $2^k$ classes pour tout ordre. Par V.2.c même dans sa variante générale, la taille dépasse ou égale $2^k-1$, qui croît plus vite que tout polynôme en $n^2$, le nombre de variables.
+Pour distinguer deux vecteurs, choisir une ligne sélectionnée $i$ où ils diffèrent. Dans le complément de $Z$, mettre 1 exactement sur la ligne $i$, et 0 ailleurs. Les autres lignes sélectionnées ont chacune au moins un zéro hors de $Z$. Toutes les lignes non sélectionnées restent nulles et, pour $n\ge2$, il en existe au moins une, qui empêche toute colonne pleine. La ligne $i$ est entièrement à 1 exactement lorsque son bit préfixe vaut 1. Les deux résiduelles sont donc distinctes. Pour $n=1$ la borne 1 est immédiate. Ainsi il y a au moins $2^k$ classes pour tout ordre. Pour $n\ge2$, toute case $m_{ij}$ est essentielle : mettre à 1 les autres cases de la ligne $i$ et à 0 celles des autres lignes. La sortie vaut alors exactement $m_{ij}$. En particulier, la première variable après $Z$ étiquette une décision de tout diagramme représentant la fonction. La borne de V.2.c s’applique donc à cette coupure et donne au moins $2^k$ décisions, quantité qui croît plus vite que tout polynôme en $n^2$.
 
 ## VI. Lecture unique et rectangles
 

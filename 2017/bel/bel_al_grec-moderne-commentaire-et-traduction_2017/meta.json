@@ -1,0 +1,42 @@
+{
+  "slug": "bel_al_grec-moderne-commentaire-et-traduction_2017",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Grec moderne (commentaire et traduction)",
+    "annee": 2017
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/17-bel-commentaire-et-traduction-lve_1506586192589_0.pdf#page=12",
+    "sujet_sha256": "be2dd53df269e5a7bc4f9f5f2a1836d36ab45404db77ca6cb4d21f19dee44d53",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/grec_moderne%202017.pdf#page=1"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "Les deux chemins vers l’hellénisme"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "al_langues_suite",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Dimitris Pikionis, « Le problème de la forme » (1950). Le commentaire étudie le passage entier sur le rapport à l’hellénisme. La version couvre les lignes 15 à 28, depuis les controverses suscitées par les interprétations allemandes jusqu’à la connaissance de soi. Commentaire, version française, guide et schéma."
+    }
+  ]
+}

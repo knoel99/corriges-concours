@@ -6,6 +6,12 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+**Couverture vérifiée.** Les 44 questions terminales des pages 1/4 à 4/4 ont été vérifiées dans les deux éditions. Le contrôle porte sur les cinq structures de marché, les surplus et l’indice de Lerner, l’entrée avec coût fixe et engagement préalable, puis les profits avec et sans information sur les coûts. Un équilibre numérique à production nulle vérifie la portée des formules de la troisième partie.
+
 ## Concurrence, entrée et information sur les coûts
 
 On pose $A=a-c>0$ et $K=A^2/b$. Les quantités sont non négatives. Dans la première partie tous les équilibres symétriques calculés sont intérieurs. Les parties suivantes nécessitent parfois de traiter une production nulle.
@@ -37,6 +43,10 @@ L’augmentation des quantités du monopole à la concurrence réduit le prix et
 **1.5.1 à 1.5.5.** Par récurrence à rebours, le suiveur répond $R_2(q_1)=\max(0,(A-bq_1)/(2b))$. Sur la branche positive, le leader maximise $q_1(A-bq_1)/2$. D’où
 $$q_1^S=A/(2b),\quad q_2^S=A/(4b),\quad Q^S=3A/(4b),\quad p^S=c+A/4.$$
 Une production du leader assez forte pour évincer totalement le suiveur donnerait ici un profit nul ou négatif. Les profits sont $\pi_1^S=K/8>K/9$ et $\pi_2^S=K/16<K/9$. Le leader gagne deux fois le profit du suiveur. Le surplus des acheteurs vaut $9K/32$ et le surplus total $15K/32$. Ils dépassent ceux de Cournot et restent en dessous des niveaux concurrentiels. L’engagement crédible du premier producteur incite le second à réduire sa quantité. Cette contraction ne compense qu’en partie l’expansion du leader.
+
+À coûts identiques, l’engagement du meneur porte la quantité totale de $2A/(3b)$ à $3A/(4b)$, soit un gain de $A/(12b)$ par rapport au jeu simultané. Par la demande inverse, cet écart fait baisser le prix de $A/12$. L’écart à la quantité concurrentielle se réduit donc quand le meneur s’engage en premier.
+
+![Figure 1 — Quantités offertes selon la forme de concurrence](figures/quantites-equilibre.svg)
 
 **1.6.1 à 1.6.4.** L’indice $L=(p-c)/p$ mesure la fraction du prix correspondant à la marge sur coût marginal. À un optimum intérieur de prix d’une firme dont la demande propre est $Q(p)$, la condition $Q+(p-c)Q'=0$ donne $L=-1/\varepsilon$. Une demande plus élastique en valeur absolue limite la marge relative soutenable. En oligopole il faut distinguer la demande de marché de celle que perçoit chaque firme compte tenu de sa stratégie et des réactions des autres. Ici $L$ augmente avec $p$ puisque $c>0$. Les valeurs $0,0,A/(a+3c),A/(a+2c),A/(a+c)$ correspondent respectivement à la concurrence parfaite, Bertrand, Stackelberg, Cournot et au monopole. Ainsi $L^{CP}=L^B<L^S<L^C<L^M$.
 
@@ -91,5 +101,16 @@ $$Y=\frac{2A-\delta t_B}{2(2-\delta)}$$
 sur $[t_H,t_B]$. Projeter enfin $A/2$ sur $[t_B,+\infty[$. Projeter signifie ramener une valeur à l’extrémité la plus proche lorsqu’elle sort de l’intervalle. Évaluer l’espérance de 3.2 en chacun des trois candidats et prendre le meilleur $x$. Chaque candidat maximise la parabole de son intervalle. Les fonctions se rejoignent et la pente baisse aux raccords, donc l’optimum est unique. Les réactions de 3.1, $p_{/k}=a-x-bq_2^k$, $\pi_{1/k}=x(p_{/k}-c)/b$ et $\pi_2^k=b(q_2^k)^2$ donnent alors toutes les grandeurs. En information complète, appliquer le même calcul en mettant successivement la probabilité du type bas à 1 puis à 0 et comparer les profits avec les probabilités initiales.
 
 À l’intérieur de la branche où seul le type bas produit, $dY/d\delta=(c_B-c)/(2-\delta)^2<0$. Les prix conditionnels augmentent, le suiveur haut continue de gagner zéro et le bas gagne davantage. Le profit conditionnel du leader diminue face au type haut et augmente face au type bas. Au raccord ou à $x=0$, un optimum fixé sur place donne des effets nuls sur les résultats conditionnels tant qu’il y reste. Les égalités en moyenne et les différences de variance précédentes supposent donc bien les régimes intérieurs indiqués. Même avec des solutions de coin, le leader informé peut reproduire son ancien choix et gagne faiblement à connaître le coût réalisé.
+
+**Vérification de 3.2 à 3.4 avec un suiveur inactif.** Prenons $a=10$, $b=1$, $c_B=2$, $c_H=9$, $\delta=1/2$ et $c=\bar c=11/2$. Le seuil d’activité du type haut est $t_H=1$. Le candidat intérieur $X=9/4$ dépasse ce seuil. Sur l’intervalle où seul le type bas produit, le maximum se trouve en $Y=5/3$. Ce point appartient à $[1,8]$ et la concavité assure son optimalité globale. Le leader choisit donc $5/3$ avant de connaître le type.
+
+| Information du leader | Coût réalisé du suiveur | $q_1$ | $q_2$ | Prix | Profit du leader | Profit du suiveur |
+|---|---|---:|---:|---:|---:|---:|
+| Type inconnu | Bas | $5/3$ | $19/6$ | $31/6$ | $-5/9$ | $361/36$ |
+| Type inconnu | Haut | $5/3$ | $0$ | $25/3$ | $85/18$ | $0$ |
+| Type révélé | Bas | $1/2$ | $15/4$ | $23/4$ | $1/8$ | $225/16$ |
+| Type révélé | Haut | $9/4$ | $0$ | $31/4$ | $81/16$ | $0$ |
+
+Le leader peut perdre dans l’état bas tout en maximisant un profit espéré positif de $25/12$. La révélation porte cette espérance à $83/32$. Le suiveur de coût haut conserve un profit nul dans les deux jeux. Cet exemple explique pourquoi il faut tester la participation avant de comparer les profits par les formules de variance.
 
 [Énoncé officiel](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2026/2026_EG1_Analyse_Microeconomique.pdf)

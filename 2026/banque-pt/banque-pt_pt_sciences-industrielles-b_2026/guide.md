@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
 **Support.** Une centrifugeuse de précision (Exail CTR-20) sert à calibrer des accéléromètres. Un double-bras de longueur $L = 1\ \text{m}$ tourne autour d'un axe vertical. Le capteur placé en bout de bras subit une accélération centripète $\Gamma = L\Omega^2$, que l'on veut connaître à **10 ppm** près jusqu'à environ **100 g**.
@@ -343,7 +345,7 @@ Contrôle : $\Omega_\infty$ annule $\dot\Omega$, c'est l'équilibre entre couple
 Critères :
 
 - exigence 1.1.1.0 : $\Omega_\infty \geq \Omega_{max} \approx 31{,}6\ \text{rad·s}^{-1}$ ;
-- exigence 1.4.3.1 : 95 % de la vitesse maximale en moins de 50 s, soit $t_{95\%} \leq 50\ \text{s}$ ;
+- exigence 1.4.3.1 : 95 % de la vitesse maximale en moins de 50 s, soit $t_{95\%} < 50\ \text{s}$ ;
 - prise directe : le couple doit être disponible jusqu'à $302\ \text{tr·min}^{-1}$, soit $N_{lim} \geq 302\ \text{tr·min}^{-1}$ ;
 - fonctionnement prolongé (montée en vitesse, puis maintien, 10 h par jour) : couple permanent $C_{S1}$ et $N_{lim,S1}$.
 
@@ -355,15 +357,15 @@ Lecture du tableau de l'annexe D :
 | 450 | 32,22 | 50,94 | montée trop lente |
 | 475 | 33,10 | 49,58 | convient |
 
-Il faut donc $C_m \geq 475\ \text{N·m}$. Le temps $t_{95\%}$ est mesuré par rapport à $\Omega_\infty$, légèrement supérieur à $\Omega_{max}$ : le critère est un peu plus sévère que l'exigence, donc sûr.
+Le premier couple **tabulé** qui porte $\Omega$ à $0{,}95\,\Omega_\infty$ en moins de 50 s et permet de dépasser $\Omega_{max}$ vaut 475 N·m. Si la vitesse maximale désigne la consigne de service $\Omega_{max}$, le calcul de Q12 donne déjà pour 450 N·m un temps de $50{,}94\,\mathrm{s}\times\operatorname{artanh}(0{,}95\,\Omega_{max}/32{,}22)/\operatorname{artanh}(0{,}95)\simeq46{,}6\,\mathrm{s}$ jusqu’à $0{,}95\,\Omega_{max}$. Retenir 475 N·m couvre les deux lectures.
 
 ![Figure 2 — Montée en vitesse Ω(t) = α tanh(βt) pour Cm = 475 N·m : pente initiale B, asymptote Ω∞ = 33,1 rad/s au-dessus de Ωmax = 31,6 rad/s, 95 % de Ω∞ atteints à 49,6 s](figures/q12-q13-montee-en-vitesse.svg)
 
 Catalogue : tous les moteurs ont $C_{S1} \geq 510\ \text{N·m}$, le couple n'est donc pas discriminant. La vitesse limite l'est : seules les références suivantes ont $N_{lim,S1} \geq 302\ \text{tr·min}^{-1}$.
 
-$$\boxed{\text{TKH 295-150-13 (405), TKH 365-100-10 (510), TKH 365-150-15 (330), TKH 445-100-12 (405)}}$$
+Les quatre références confirmées sur leur palier de couple continu sont **TKH 295-150-13**, **TKH 365-100-10**, **TKH 365-150-15** et **TKH 445-100-12**. Leurs vitesses limites respectives sont 405, 510, 330 et 405 tr/min.
 
-Le TKH 295-150-13 ($C_{S1} = 790\ \text{N·m}$) est le moins surdimensionné.
+Le TKH 295-150-13 ($C_{S1} = 790\ \text{N·m}$) est celui des quatre retenus dont le couple nominal est le plus faible.
 
 > [!PIEGE]
 > Filtrer sur le seul couple conduit à proposer des moteurs dont le couple commence à chuter avant la vitesse de service. Pour un moteur en prise directe, la vitesse du moteur est celle de la charge.
@@ -480,18 +482,16 @@ soit environ 5 kN. Rapport signal sur charge : $0{,}65/4900 \approx 1{,}3\times1
 ### Question 19
 
 > [!INDICATION]
-> Deux exigences s'opposent : le capteur doit supporter $F_{max}$, mais une étendue de mesure trop grande dégrade la résolution relative.
+> Comparer d’abord les calibres à la charge maximale. Quelle fraction de pleine échelle représente ensuite $\Delta F$ pour chacun des calibres recevables ?
 
 #### Solution
 
-Il faut une charge maximale supérieure à 4,9 kN : FSH04169 (2235 N) et FSH04171 (4450 N) sont exclus. Parmi FSH04173 (8900 N), FSH04175 (22 250 N) et FSH04177 (44 500 N), on retient le capteur de plus petite étendue :
+Les calibres 8 900 N (FSH04173), 22 250 N (FSH04175) et 44 500 N (FSH04177) supportent les 4,9 kN de Q18. Pour le plus petit de ces calibres, l’amplitude de Q17 occupe $0{,}65/8900\simeq7{,}3\times10^{-5}$ de la pleine échelle. À résolution identique en fraction de pleine échelle, ce choix permet de distinguer la plus faible variation de force.
 
-$$\boxed{\text{FSH04173}}$$
-
-C'est celui qui donne la meilleure résolution relative sur $\Delta F$ (environ $7\times10^{-5}$ de la pleine échelle), avec un coefficient de sécurité d'environ 1,8 sur la charge statique. Il est aussi le plus raide (flèche $2{,}5\times10^{-2}\ \text{mm}$), donc il ne modifie pas la géométrie d'appui. Sa fréquence propre (6300 Hz) est sans rapport avec la rotation très lente de la procédure.
+**On retient donc FSH04173 sous cette hypothèse.** Pour établir la détection de l’oscillation, il reste à vérifier la résolution et le bruit de la chaîne de mesure. L’annexe F donne la flèche sous charge maximale. Le rapport charge/flèche vaut 356 kN/mm pour FSH04173 et 445 kN/mm pour chacun des deux autres calibres admissibles.
 
 > [!METHODE]
-> En métrologie, on choisit le plus petit calibre compatible avec la charge maximale, pas le plus grand.
+> Une fiche technique qui donne le calibre et la flèche permet de vérifier la tenue en charge. La plus petite variation mesurable dépend aussi du conditionnement et du bruit.
 
 > [!JURY]
 > Cette sous-partie est la mieux réussie de la partie II : d'après le rapport 2026, « plus de 50% des candidats vont jusqu'à un choix judicieux de capteur ». Le choix doit s'appuyer sur les deux valeurs calculées, l'effort moyen à supporter et l'oscillation à détecter.
@@ -705,7 +705,7 @@ L_h &= \frac{L_A}{N_{jour}} \approx \frac{224\times10^6}{1{,}38\times10^5}\\
 
 $$\boxed{L_h \approx 1{,}6\times10^3\ \text{jours} \approx 4{,}5\ \text{ans}}$$
 
-Commentaire : environ 4 à 5 ans d'usage quotidien (6 à 7 ans en jours ouvrés), avec 10 % de défaillances attendues à cette échéance. C'est court pour un équipement de ce coût. Il faut planifier le remplacement de A, ou réduire sa charge, ou choisir un roulement de plus forte capacité. Comme $L_A \propto F_A^{-3}$, baisser la précharge résiduelle gagne beaucoup. B est très surdimensionné.
+Cela représente environ 4 à 5 ans à raison de 12 h chaque jour. Pour des roulements identiques soumis à cette charge, $L_{10}$ correspond à 90 % de survie. Le roulement A détermine donc l’échéance de maintenance. Le modèle donne $L_A\propto F_A^{-3}$ et le cahier impose de conserver au moins $F_B^{min}$ sur B.
 
 Contrôle d'ordre de grandeur : $P_m = F_A - F_B = 15\ \text{kN}$ correspond à environ 1500 kg de masse mobile, du même ordre que $M_{tot}$, donnée pour la machine entière. Les deux données sont peu cohérentes entre elles, ce qui ne change pas la démarche.
 
@@ -883,7 +883,7 @@ L'exigence 1.1.1.0 fixe une précision de 10 ppm, soit une erreur relative de $1
 Ici $1{,}2\times10^{-5} > 10^{-5}$ : **l'exigence n'est pas respectée**, même dans ce cas idéal, et la vitesse utilisée est inférieure à $\Omega_{max}$ (on aurait environ 13 ppm à $\Omega_{max}$).
 
 > [!METHODE]
-> Regarder de quoi dépend un résultat avant de proposer une solution : $e_{\Gamma0}$ ne dépend pas de $S_b$, donc épaissir le bras ne change rien. Seuls comptent $\rho/E$ et $L^2\Omega^2 = L\,\Gamma$.
+> Dans le cas idéal de Q37, l’erreur propre au bras dépend de $\rho/E$ et de $L^2\Omega^2=L\,\Gamma$. La masse en bout de bras réintroduit une dépendance en $S_b$ dans l’erreur totale.
 
 > [!PIEGE]
 > Conclure sans convertir : « 1,2·10⁻⁵, c'est très petit, donc l'exigence est respectée » est la conclusion fausse typique. Il faut comparer à $10^{-5}$, c'est-à-dire écrire le résultat en ppm.
@@ -921,7 +921,7 @@ L'effet thermique dépasse l'effet centrifuge d'un ordre de grandeur.
 
 #### Solution
 
-**Non.** Les deux effets allongent le bras et s'additionnent. L'effet centrifuge vaut au moins 12 ppm (avec un équipage supposé sans masse, l'effet réel étant plus grand). L'effet thermique, prépondérant, atteint 100 ppm. Le total, environ 110 ppm, dépasse plus de dix fois la tolérance, et chacun des deux effets dépasse à lui seul les 10 ppm.
+À 30 rad/s et pour une hausse de 10 °C, les deux effets allongent le bras. Au premier ordre, même avec une masse négligeable en bout de bras, ils totalisent $12+100=112$ ppm pour une tolérance de 10 ppm. Une masse supplémentaire en bout de bras augmente encore cette erreur.
 
 ### Question 40
 
@@ -938,7 +938,7 @@ L'effet thermique dépasse l'effet centrifuge d'un ordre de grandeur.
 - **Modifier la structure** pour réduire les causes : isolation thermique entre étuve et bras, régulation de l'enceinte, matériau de bras à faible dilatation et à faible rapport $\rho/E$ (composite à fibres de carbone par exemple ; l'Invar ne réduit que la dilatation).
 - **Mesurer directement** la distance axe–capteur en rotation (mesure optique ou laser), ce qui couvre toutes les causes à la fois.
 
-Augmenter la section du bras ne sert à rien, puisque $e_{\Gamma0}$ ne dépend pas de $S_b$.
+À vitesse fixée, la charge en bout de bras ajoute le terme $F/(ES_b)$ à l’erreur relative de Q37. Augmenter la section réduit ce terme, tandis que la part liée à la masse propre du bras, $\rho L^2\Omega^2/(3E)$, reste à 12 ppm dans le cas chiffré. La dilatation thermique demeure également indépendante de la section.
 
 > [!JURY]
 > D'après le rapport 2026, Q38 à Q40 devaient permettre « d'ajouter les erreurs d'origine thermique, prépondérantes, puis de conclure sur le non-respect du cahier des charges et sur la nécessité d'apporter des modifications structurelles ou de compenser ces erreurs ». Le jury ajoute : « Seulement 15% des candidats répondent correctement à ces questions pourtant simples. » Une réponse attendue nomme les deux voies, compensation et modification structurelle, en commençant par le poste thermique.

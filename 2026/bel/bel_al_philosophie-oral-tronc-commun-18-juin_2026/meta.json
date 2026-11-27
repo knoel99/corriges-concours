@@ -23,7 +23,8 @@
     "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_tc_al.pdf",
     "sujet_sha256": "48b9c6ffcb2ab3e68176730d375141c63f2ab1fff5031a081264b65db1d93af1",
     "rapport": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf",
-    "rapport_sha256": "b7ae24985758ee21c7601a903f81ce57bdcef0cb108f8852ecd308eba32c7dca"
+    "rapport_sha256": "b7ae24985758ee21c7601a903f81ce57bdcef0cb108f8852ecd308eba32c7dca",
+    "index": "https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-al"
   },
   "figures": [
     {
@@ -37,7 +38,7 @@
       "question": "9"
     }
   ],
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -62,6 +63,69 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Confrontation de l’ordre, des choix et de chaque énoncé au feuillet et aux caractères gras de l’annexe du rapport. Vérification de la durée, des références conceptuelles, du lien entre cas concrets et thèses et de l’entraînement propre au guide."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "sociologie_psl_oraux_individuels",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Confrontation des 12 billets et de leurs 24 intitulés aux feuillets et au gras de l’annexe du jury. Vérification de chaque réponse dans les deux éditions, précision des modalités de tirage et des ouvrages autorisés, rédaction de 12 relances avec réponse pour les sujets proposés en alternative dans le guidé. Précision du jus ad bellum et du jus in bello au dernier billet."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "tirages_verifies": 12,
+    "sujets_choisis_verifies": 12,
+    "alternatives_verifiees": 12,
+    "intitules_par_edition": 24,
+    "questions_entierement_traitees": [
+      "1. Sujet choisi — Le bien commun",
+      "1. Alternative — Que peut-on dire sur le monde ?",
+      "2. Sujet choisi — Quand perd-on son temps ?",
+      "2. Alternative — Corps et machine",
+      "3. Sujet choisi — « Au nom du peuple »",
+      "3. Alternative — L’éducation peut-elle être sentimentale ?",
+      "4. Sujet choisi — La pluralité des langues",
+      "4. Alternative — Peut-on réparer ses fautes ?",
+      "5. Sujet choisi — Le despotisme",
+      "5. Alternative — Qu’est-ce qu’un point de vue ?",
+      "6. Sujet choisi — La sphère privée échappe-t-elle au politique ?",
+      "6. Alternative — Identité et changement",
+      "7. Sujet choisi — Que puis-je dire sur le monde ?",
+      "7. Alternative — La peur",
+      "8. Sujet choisi — La pitié est-elle un sentiment moral ?",
+      "8. Alternative — Regarder un tableau",
+      "9. Sujet choisi — Expliquer, est-ce excuser ?",
+      "9. Alternative — L’oral et l’écrit",
+      "10. Sujet choisi — L’ordre et le désordre",
+      "10. Alternative — Pourquoi faire l’histoire des femmes ?",
+      "11. Sujet choisi — Le lien politique désigne-t-il ce qui nous unit ?",
+      "11. Alternative — La classification des arts",
+      "12. Sujet choisi — Peut-on parler de culture populaire ?",
+      "12. Alternative — Le droit de la guerre"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "controle": "Billets 1 à 12 du feuillet du 18 juin, lignes 24 à 35 de la liste du rapport. L’alternative du billet 1 « Que peut-on dire sur le monde ? » et le sujet choisi du billet 7 « Que puis-je dire sur le monde ? » sont deux questions distinctes. Le premier sujet est en gras. Chaque intitulé possède son propre développement dans les deux éditions. Dans le guidé, les exercices de reprise sont des propositions pédagogiques.",
+    "pages_verifiees": {
+      "sujet": [
+        1
+      ],
+      "rapport": [
+        1,
+        6
+      ]
+    }
+  }
 }

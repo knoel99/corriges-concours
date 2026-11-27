@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Nombres de Pisot.** Les déterminants de Hankel détectent les séries rationnelles. Appliqués aux entiers les plus proches de puissances géométriques, ils relient l’arithmétique de ces puissances aux produits de cosinus.
 
 ## I. Entiers algébriques et nombres de Pisot
@@ -27,6 +29,8 @@ Les coefficients de $\Pi_\theta$ sont réels, donc $\overline\theta$ est aussi r
 ### Question I.5
 
 Soit $N_n=\theta^n+\sum_{i=0}^k\alpha_i^n\in\mathbb Z$. Pour $\rho=\max_i|\alpha_i|<1$ et $n\ge1$, $|\theta^n-N_n|\le(k+1)\rho^n$. Comme $\theta$ est réel, $|\sin(\pi\theta^n)|=|\sin(\pi(\theta^n-N_n))|\le\pi(k+1)\rho^n$. Le carré est majoré par un terme géométrique sommable. La série demandée converge.
+
+Pour le nombre d’or $\theta=(1+\sqrt5)/2$, son conjugué est $\theta^{\prime}=-1/\theta$. La trace $N_n=\theta^n+(\theta^{\prime})^n$ suit la récurrence $N_{n+2}=N_{n+1}+N_n$ avec $N_0=2$ et $N_1=1$. Ainsi $\sin^2(\pi\theta^n)\le\pi^2\theta^{-2n}$. Cet exemple fournit aussi le paramètre utilisé dans la figure de la partie IV.
 
 ## II. Fractions rationnelles et déterminants de Hankel
 

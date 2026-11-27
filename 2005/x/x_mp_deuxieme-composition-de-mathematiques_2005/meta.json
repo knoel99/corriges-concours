@@ -11,7 +11,8 @@
   "sources": {
     "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-2_mp_2005.pdf",
     "rapport_jury": "https://www.wikiprepa.fr/concours/data/x_maths-2_mp_2005_rapport_jury.pdf",
-    "sha256_sujet": "95eb9f7508990b6b96abc267e08d8681df3dd960e67b702912acb48450efee29"
+    "sha256_sujet": "95eb9f7508990b6b96abc267e08d8681df3dd960e67b702912acb48450efee29",
+    "sha256_rapport_jury": "fac76260ec464230cbf6f0dbf6e05d9ee77c84373c8750281213443d9885a3b5"
   },
   "figures": [
     {
@@ -31,6 +32,154 @@
       "perimetre": "Rédaction des quatre parties des deux éditions d’après sujet et rapport. Borne stricte et norme exacte du chemin, fréquences du cycle avec le cas particulier N=2, calcul de Fourier et simplicité par perturbation. Figure du vecteur propre principal.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "x_mp_deuxieme_composition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Pointage physique des 23 consignes sur 4 pages. Lecture des remarques du jury sur les questions 5 et 10. Seconde preuve de la majoration stricte par somme de carrés et compacité. Comparaison de normes en changeant explicitement d’espace, vérification des indices de Fourier et du cas du cycle à deux sommets."
     }
-  ]
+  ],
+  "intitule": "Étude de certaines matrices symétriques réelles",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.a",
+      "1.b",
+      "1.c",
+      "2",
+      "3.a",
+      "3.b",
+      "3.c",
+      "3.d",
+      "4",
+      "5.a",
+      "5.b",
+      "6",
+      "7.a",
+      "7.b",
+      "7.c",
+      "8.a",
+      "8.b",
+      "8.c",
+      "9",
+      "10.a",
+      "10.b",
+      "10.c",
+      "11"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1.a",
+        "page_pdf": "1"
+      },
+      {
+        "question": "1.b",
+        "page_pdf": "1"
+      },
+      {
+        "question": "1.c",
+        "page_pdf": "1"
+      },
+      {
+        "question": "2",
+        "page_pdf": "2"
+      },
+      {
+        "question": "3.a",
+        "page_pdf": "2"
+      },
+      {
+        "question": "3.b",
+        "page_pdf": "2"
+      },
+      {
+        "question": "3.c",
+        "page_pdf": "2"
+      },
+      {
+        "question": "3.d",
+        "page_pdf": "2"
+      },
+      {
+        "question": "4",
+        "page_pdf": "2"
+      },
+      {
+        "question": "5.a",
+        "page_pdf": "2"
+      },
+      {
+        "question": "5.b",
+        "page_pdf": "2"
+      },
+      {
+        "question": "6",
+        "page_pdf": "2"
+      },
+      {
+        "question": "7.a",
+        "page_pdf": "3"
+      },
+      {
+        "question": "7.b",
+        "page_pdf": "3"
+      },
+      {
+        "question": "7.c",
+        "page_pdf": "3"
+      },
+      {
+        "question": "8.a",
+        "page_pdf": "3"
+      },
+      {
+        "question": "8.b",
+        "page_pdf": "3"
+      },
+      {
+        "question": "8.c",
+        "page_pdf": "3"
+      },
+      {
+        "question": "9",
+        "page_pdf": "3"
+      },
+      {
+        "question": "10.a",
+        "page_pdf": "3"
+      },
+      {
+        "question": "10.b",
+        "page_pdf": "3–4"
+      },
+      {
+        "question": "10.c",
+        "page_pdf": "4"
+      },
+      {
+        "question": "11",
+        "page_pdf": "4"
+      }
+    ],
+    "controle": [
+      "p. 1, norme spectrale, plus grande valeur propre et caractérisation du cas d’égalité",
+      "p. 2, récurrence sur les coordonnées et déterminants, encadrement strict, comparaison entre deux tailles et vecteur positif",
+      "p. 3, base de Fourier, multiplicités dont le cas N égal à deux, conjugaison des translations, module d’un vecteur propre et chemin connexe",
+      "p. 3–4, perturbation du quotient sur la coordonnée nulle, définition p. 3 et inégalité p. 4",
+      "p. 4, contradiction avec le maximum et simplicité par élimination d’une coordonnée",
+      "Lecture des remarques du jury sur les questions 5 et 10. Seconde preuve de la majoration stricte par somme de carrés et compacité. Comparaison de normes en changeant explicitement d’espace, vérification des indices de Fourier et du cas du cycle à deux sommets."
+    ]
+  }
 }

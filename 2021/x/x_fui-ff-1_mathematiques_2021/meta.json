@@ -31,6 +31,49 @@
       "perimetre": "Rédaction des 19 réponses et de leurs indications à partir du sujet officiel de la session 1. Vérification du degré de Bernstein, de l’encadrement polynomial au saut et de la constante d’Euler dans le produit générateur. Aucun rapport associé au registre.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Les 14 numéros comprennent 19 réponses, notamment les quatre subdivisions de Q8 et les trois de Q12. Recoupement des deux majorations demandées pour les polynômes de Bernstein, du degré éventuellement inférieur à n, des 80 points du tracé et du passage du théorème taubérien à la moyenne du problème de partitions."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8a",
+      "8b",
+      "8c",
+      "8d",
+      "9",
+      "10",
+      "11",
+      "12a",
+      "12b",
+      "12c",
+      "13",
+      "14"
+    ],
+    "precision": "Les 19 rubriques des deux éditions ont été rapprochées du fascicule institutionnel de 6 pages de l’École polytechnique. Les 14 numéros comprennent 19 réponses, notamment les quatre subdivisions de Q8 et les trois de Q12. Recoupement des deux majorations demandées pour les polynômes de Bernstein, du degré éventuellement inférieur à n, des 80 points du tracé et du passage du théorème taubérien à la moyenne du problème de partitions.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "dcc02e9669ddd2fb117b51de60645952520851873cd5cf8bbea846e9ece75ae9",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Les 14 numéros comprennent 19 réponses, notamment les quatre subdivisions de Q8 et les trois de Q12. Recoupement des deux majorations demandées pour les polynômes de Bernstein, du degré éventuellement inférieur à n, des 80 points du tracé et du passage du théorème taubérien à la moyenne du problème de partitions.",
+      "commit_redaction_anterieure": "bc97abbe5bf5ba9d0b0ee107c3ea2ac9b468a652"
+    }
+  }
 }

@@ -1,0 +1,454 @@
+{
+  "slug": "banque-pt_pt_physique-a_2024",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique A",
+    "annee": 2024
+  },
+  "questions": 58,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2024/ph_a_2024_pt.pdf",
+    "sujet_sha256": "b5800f57e98d90b311b84ae799e72620634f54862c5502217e5d92545a5253c6",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2024/rapport_phys_a_ecrit_2024.pdf",
+    "rapport_sha256": "279c38778345c492f86e0b08372eee97cdcbf4bcbe9842c338cfff4c83c0d816",
+    "notice": "https://www.banquept.fr/documents/livret/2024/Livret_PT_2024.pdf#page=13",
+    "notice_sha256": "5762dc1390998cc1f814a84cc9c95cd0ff752605e6d06d734fab8bf1544424e8"
+  },
+  "figures": [
+    {
+      "fichier": "figures/chute.svg",
+      "question": "Q6",
+      "legende": "Prédiction du modèle de chute à rayon constant"
+    },
+    {
+      "fichier": "figures/rayon.svg",
+      "question": "Q13",
+      "legende": "Réfractions et réflexion du rayon dans la goutte"
+    },
+    {
+      "fichier": "figures/deviation.svg",
+      "question": "Q17",
+      "legende": "Déviation de l’arc primaire pour un indice de 1,33"
+    },
+    {
+      "fichier": "figures/pluviometre.svg",
+      "question": "Q26",
+      "legende": "Coupe du condensateur coaxial partiellement rempli"
+    },
+    {
+      "fichier": "figures/astable.svg",
+      "question": "Q39",
+      "legende": "Chronogrammes du comparateur et de l’intégrateur"
+    },
+    {
+      "fichier": "figures/capillaire.svg",
+      "question": "Q48",
+      "legende": "Profil parabolique et vitesse débitante"
+    },
+    {
+      "fichier": "figures/voute.svg",
+      "question": "Q51",
+      "legende": "Direction de la résultante horizontale dans le modèle en quart de cercle"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction des 58 solutions sur le cycle de la pluie, constructions optiques, chronogrammes et sept figures originales."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Vérification du seuil de Stokes, des quatre angles orientés de la figure 3 et de la déviation par tracé vectoriel. Contrôle de la capacité géométrique, de la période du pluviomètre et de ses conventions de collecte, du temps de séjour et des intégrales vectorielles de pression. Contrôle visuel des sept figures, allongement de la portion émergente et report de l’annotation du maximum de déviation."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21",
+      "Q22",
+      "Q23",
+      "Q24",
+      "Q25",
+      "Q26",
+      "Q27",
+      "Q28",
+      "Q29",
+      "Q30",
+      "Q31",
+      "Q32",
+      "Q33",
+      "Q34",
+      "Q35",
+      "Q36",
+      "Q37",
+      "Q38",
+      "Q39",
+      "Q40",
+      "Q41",
+      "Q42",
+      "Q43",
+      "Q44",
+      "Q45",
+      "Q46",
+      "Q47",
+      "Q48",
+      "Q49",
+      "Q50",
+      "Q51",
+      "Q52",
+      "Q53",
+      "Q54",
+      "Q55",
+      "Q56",
+      "Q57",
+      "Q58"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Q1",
+        "page_pdf": 3,
+        "intitule": "Poussée d’Archimède sur la goutte"
+      },
+      {
+        "question": "Q2",
+        "page_pdf": 3,
+        "intitule": "Comparaison avec le poids"
+      },
+      {
+        "question": "Q3",
+        "page_pdf": 3,
+        "intitule": "Équation de chute dans l’air sec"
+      },
+      {
+        "question": "Q4",
+        "page_pdf": 3,
+        "intitule": "Temps caractéristique de relaxation"
+      },
+      {
+        "question": "Q5",
+        "page_pdf": 3,
+        "intitule": "Évolution de la vitesse"
+      },
+      {
+        "question": "Q6",
+        "page_pdf": 3,
+        "intitule": "Vitesse limite dans le modèle de Stokes"
+      },
+      {
+        "question": "Q7",
+        "page_pdf": 3,
+        "intitule": "Vérification du régime de traînée"
+      },
+      {
+        "question": "Q8",
+        "page_pdf": 4,
+        "intitule": "Loi de croissance du rayon"
+      },
+      {
+        "question": "Q9",
+        "page_pdf": 4,
+        "intitule": "Débit de masse captée"
+      },
+      {
+        "question": "Q10",
+        "page_pdf": 4,
+        "intitule": "Équation pour une goutte en croissance"
+      },
+      {
+        "question": "Q11",
+        "page_pdf": 4,
+        "intitule": "Solution approchée en atmosphère humide"
+      },
+      {
+        "question": "Q12",
+        "page_pdf": 4,
+        "intitule": "Origine de la sphéricité"
+      },
+      {
+        "question": "Q13",
+        "page_pdf": 5,
+        "intitule": "Trois déviations orientées"
+      },
+      {
+        "question": "Q14",
+        "page_pdf": 5,
+        "intitule": "Réfraction et réflexion interne"
+      },
+      {
+        "question": "Q15",
+        "page_pdf": 5,
+        "intitule": "Déviation totale de l’arc primaire"
+      },
+      {
+        "question": "Q16",
+        "page_pdf": 6,
+        "intitule": "Incidence de déviation maximale"
+      },
+      {
+        "question": "Q17",
+        "page_pdf": 6,
+        "intitule": "Valeur de la déviation maximale"
+      },
+      {
+        "question": "Q18",
+        "page_pdf": 6,
+        "intitule": "Dispersion de la déviation"
+      },
+      {
+        "question": "Q19",
+        "page_pdf": 6,
+        "intitule": "Domaine du visible"
+      },
+      {
+        "question": "Q20",
+        "page_pdf": 6,
+        "intitule": "Ordre des couleurs dans l’arc primaire"
+      },
+      {
+        "question": "Q21",
+        "page_pdf": 6,
+        "intitule": "Origine des arcs supplémentaires"
+      },
+      {
+        "question": "Q22",
+        "page_pdf": 7,
+        "intitule": "Symétries du champ dans le condensateur"
+      },
+      {
+        "question": "Q23",
+        "page_pdf": 7,
+        "intitule": "Champ radial par le théorème de Gauss"
+      },
+      {
+        "question": "Q24",
+        "page_pdf": 7,
+        "intitule": "Définition de la capacité à vide"
+      },
+      {
+        "question": "Q25",
+        "page_pdf": 7,
+        "intitule": "Capacité géométrique du coaxial"
+      },
+      {
+        "question": "Q26",
+        "page_pdf": 8,
+        "intitule": "Deux diélectriques à la même tension"
+      },
+      {
+        "question": "Q27",
+        "page_pdf": 8,
+        "intitule": "Loi de mesure de la hauteur"
+      },
+      {
+        "question": "Q28",
+        "page_pdf": 8,
+        "intitule": "Caractéristiques de l’ALI idéal"
+      },
+      {
+        "question": "Q29",
+        "page_pdf": 8,
+        "intitule": "Fonctionnement du premier ALI"
+      },
+      {
+        "question": "Q30",
+        "page_pdf": 8,
+        "intitule": "Potentiel de l’entrée non-inverseuse"
+      },
+      {
+        "question": "Q31",
+        "page_pdf": 8,
+        "intitule": "Seuil inférieur du comparateur"
+      },
+      {
+        "question": "Q32",
+        "page_pdf": 8,
+        "intitule": "Seuil supérieur du comparateur"
+      },
+      {
+        "question": "Q33",
+        "page_pdf": 8,
+        "intitule": "Fonctionnement du second ALI"
+      },
+      {
+        "question": "Q34",
+        "page_pdf": 8,
+        "intitule": "Équation de l’intégrateur"
+      },
+      {
+        "question": "Q35",
+        "page_pdf": 9,
+        "intitule": "Première rampe de l’oscillateur"
+      },
+      {
+        "question": "Q36",
+        "page_pdf": 9,
+        "intitule": "Instant du premier basculement"
+      },
+      {
+        "question": "Q37",
+        "page_pdf": 9,
+        "intitule": "Seconde rampe"
+      },
+      {
+        "question": "Q38",
+        "page_pdf": 9,
+        "intitule": "Retour à la saturation positive"
+      },
+      {
+        "question": "Q39",
+        "page_pdf": 9,
+        "intitule": "Créneau et triangle sur une période"
+      },
+      {
+        "question": "Q40",
+        "page_pdf": 9,
+        "intitule": "Période de l’astable"
+      },
+      {
+        "question": "Q41",
+        "page_pdf": 9,
+        "intitule": "Hauteur de pluie et aire de collecte"
+      },
+      {
+        "question": "Q42",
+        "page_pdf": 9,
+        "intitule": "Inversion de la loi de mesure"
+      },
+      {
+        "question": "Q43",
+        "page_pdf": 9,
+        "intitule": "Hauteur après l’averse"
+      },
+      {
+        "question": "Q44",
+        "page_pdf": 10,
+        "intitule": "Condition sur la paroi du capillaire"
+      },
+      {
+        "question": "Q45",
+        "page_pdf": 10,
+        "intitule": "Profil de vitesse dans la roche"
+      },
+      {
+        "question": "Q46",
+        "page_pdf": 10,
+        "intitule": "Durée minimale de percolation"
+      },
+      {
+        "question": "Q47",
+        "page_pdf": 10,
+        "intitule": "Débit à travers une section"
+      },
+      {
+        "question": "Q48",
+        "page_pdf": 10,
+        "intitule": "Vitesse moyenne débitante"
+      },
+      {
+        "question": "Q49",
+        "page_pdf": 10,
+        "intitule": "Temps moyen de traversée"
+      },
+      {
+        "question": "Q50",
+        "page_pdf": 10,
+        "intitule": "Minéralisation pendant l’infiltration"
+      },
+      {
+        "question": "Q51",
+        "page_pdf": 11,
+        "intitule": "Direction de la poussée sur un quart de cylindre"
+      },
+      {
+        "question": "Q52",
+        "page_pdf": 11,
+        "intitule": "Force atmosphérique sur la face intérieure"
+      },
+      {
+        "question": "Q53",
+        "page_pdf": 11,
+        "intitule": "Pression hydrostatique du réservoir"
+      },
+      {
+        "question": "Q54",
+        "page_pdf": 11,
+        "intitule": "Force de l’eau sur la face extérieure"
+      },
+      {
+        "question": "Q55",
+        "page_pdf": 11,
+        "intitule": "Norme de la résultante"
+      },
+      {
+        "question": "Q56",
+        "page_pdf": 11,
+        "intitule": "Valeur de la force dans le modèle de voûte"
+      },
+      {
+        "question": "Q57",
+        "page_pdf": 11,
+        "intitule": "Puissance hydraulique moyenne"
+      },
+      {
+        "question": "Q58",
+        "page_pdf": 11,
+        "intitule": "Comparaison avec la production nucléaire"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "annexes": "Le feuillet de 12 pages intègre les données numériques page 2, neuf figures et les questions 1 à 58 pages 3 à 11. La page 12 comporte la mention d’impression. Aucune annexe autonome."
+  }
+}

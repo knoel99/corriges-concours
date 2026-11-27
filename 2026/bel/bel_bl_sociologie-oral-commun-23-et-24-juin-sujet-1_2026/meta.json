@@ -55,6 +55,84 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Confrontation au dossier original et au rapport du jury. Contrôle des valeurs reportées, des champs, des dénominateurs et des limites de l’interprétation."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture croisée du dossier et du rapport de l’oral commun de sociologie 2026. Document 3, calcul des deux taux d’abstention et distinction entre solde de participation et trajectoires individuelles. Figure interprétée dans la copie et calcul ou question de méthode développé dans le guidé."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Le dossier relie les conditions sociales de la prise de parole et du vote aux différences de scrutin, de profession, de motivation déclarée et de territoire. Les pourcentages de participation, les écarts en points et les groupes de non-votants ont été vérifiés séparément.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "L’abstention"
+    ],
+    "annexes_verifiees": [
+      {
+        "document": 1,
+        "page": 2,
+        "intitule": "Opiner"
+      },
+      {
+        "document": 2,
+        "page": 3,
+        "intitule": "Classes populaires et abstention"
+      },
+      {
+        "document": 3,
+        "page": 4,
+        "intitule": "Taux de participation pour les différentes élections entre 2012 et 2021 (en % des inscrits)"
+      },
+      {
+        "document": 4,
+        "page": 5,
+        "intitule": "Les inégalités de participation électorale (en points)"
+      },
+      {
+        "document": 5,
+        "page": 6,
+        "intitule": "Estimation de la non-participation électorale par groupe professionnel en %"
+      },
+      {
+        "document": 6,
+        "page": 7,
+        "intitule": "Raisons déclarées de l’abstention selon les types d’électeurs (%)"
+      },
+      {
+        "document": 7,
+        "page": 8,
+        "intitule": "Comportements électoraux en fonction du type de territoire (en% des inscrits)"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "verification": "Le dossier relie les conditions sociales de la prise de parole et du vote aux différences de scrutin, de profession, de motivation déclarée et de territoire. Les pourcentages de participation, les écarts en points et les groupes de non-votants ont été vérifiés séparément.",
+    "limites": "Un exposé sur les sept documents. Les relances pédagogiques proposées dans le guide ne constituent pas un verbatim du jury."
+  }
 }

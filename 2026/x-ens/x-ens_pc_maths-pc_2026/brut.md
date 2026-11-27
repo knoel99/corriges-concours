@@ -10,6 +10,8 @@
 
 **Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Épreuve n° 1 de la filière PC, durée 4 h, calculatrice interdite. Notations du sujet : $\operatorname{ch},\operatorname{sh},\operatorname{th}$, le produit scalaire usuel $x\cdot y$ de $\mathbb R^d$, et $\phi(\lambda)=\ln E[e^{\lambda\cdot X}]$.
 
 **Erratum de l'énoncé (question 21).** Avec la fonction $I$ de l'énoncé, la limite de la question 21 vaut $I(x)+\ln 2$, et non $I(x)$ : il manque un terme constant en $\ln 2$, ce que confirme le rapport du jury. De même, la convergence admise après la question 22 s'écrit en toute rigueur
@@ -229,6 +231,8 @@ $$(B^N)_{a_1,a_1}=\sum_{a_2,\dots,a_N}B_{a_1,a_2}B_{a_2,a_3}\cdots B_{a_{N-1},a_
 En sommant sur $a_1$, la somme sur les configurations vaut $\operatorname{tr}(B^N)$. Enfin $\operatorname{tr}(B^N)=\operatorname{tr}\big({}^t(A^N)\big)=\operatorname{tr}(A^N)$. Donc
 $$\boxed{Z_N(\beta,h)=2^{-N}\operatorname{tr}(A^N)}$$
 
+Le cas $N=1$ vérifie l’indexation cyclique. Le terme de liaison est $\beta\sigma_1^2=\beta$ et $Z_1=e^\beta\operatorname{ch}(h)$. La matrice de transfert a pour trace $2e^\beta\operatorname{ch}(h)$, donc la formule avec le facteur $2^{-1}$ reste exacte dans ce cas.
+
 ### Question 14
 
 Soit $\mu$ l'autre valeur propre de $A$ et $\lambda=\lambda(\beta,h)$. $A$ est diagonalisable (deux valeurs propres distinctes en dimension 2), donc $\operatorname{tr}(A^N)=\lambda^N+\mu^N$.
@@ -381,6 +385,8 @@ $$\frac{e^{-NJ(x)}}{N+1}\leq P[S_N=x]\leq e^{-NJ(x)}.$$
 Notons $M_N$ le maximum sur cette grille de $x\mapsto\beta x^2+hx-J(x)$. Une contribution maximisante minore la somme, et ses $N+1$ termes la majorent. Ainsi
 $$M_N-\frac{\ln(N+1)}{N}\leq G_N(\beta,h)\leq M_N+\frac{\ln(N+1)}{N}.$$
 La fonction est continue sur le segment. En approchant un maximiseur par un point de la grille à distance au plus $1/N$, on obtient $M_N\to g(\beta,h)-\ln 2$. Cela confirme la correction y compris lorsque les points utilisés tendent vers une extrémité.
+
+La normalisation se vérifie aussi à $\beta=h=0$ sans approximation. Alors $Y_N=1$ pour chaque $N$, donc $G_N=0$. En revanche $g(0,0)=\max_x[-I(x)]=\ln2$, atteint en $x=0$ puisque $I$ y est minimal. Le décalage ci-dessus est donc déjà indispensable à paramètres nuls.
 
 ### Question 23
 
@@ -579,5 +585,7 @@ Comme $x_h\to0$, on peut composer : $h=\Phi(x_h)\sim\frac{x_h^3}3$, soit $\frac{
 
 Par continuité de $t\mapsto t^{1/3}$ en $1$ :
 $$\boxed{\lim_{\substack{h\to0\\h>0}}\frac{x_*(\frac12,h)}{(3h)^{1/3}}=1}$$
+
+Une vérification par encadrement évite le développement en série. On a $h=\int_0^{x_h} t^2/(1-t^2)\,dt$. Comme $0<x_h<1$, $x_h^3/3\le h\le x_h^3/[3(1-x_h^2)]$. Ainsi $1-x_h^2\le x_h^3/(3h)\le1$, d’où la même constante critique lorsque $x_h\to0$.
 
 ![Figure 8 — Au point critique, la courbe exacte rejoint la loi de puissance de pente un tiers en coordonnées logarithmiques.](figures/q32-loi-critique.svg)

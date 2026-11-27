@@ -1,0 +1,88 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_etudes-cognitives-controle-et-geometrie_2017",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Études cognitives — contrôle et géométrie",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "Études cognitives — contrôle et géométrie",
+  "gabarit": "questions",
+  "questions": 14,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "index": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2017-lettres-0",
+    "sujet": "https://www.ens.psl.eu/sites/default/files/etudes-cognitives-ecrit.pdf",
+    "sujet_sha256": "184f1ee56a424328e6ac1e13f88522c271bd41c206a7c9af6745c3f1e1e4a7f5",
+    "pages": 2,
+    "annexes": [
+      {
+        "titre": "Whitson et Galinsky (2008)",
+        "url": "https://www.ens.psl.eu/sites/default/files/whitson-science-2008.pdf",
+        "sha256": "40e3b5cea9176277b2b888ecc8d53166c4982fbabae7f7a3a707445d10489e28",
+        "pages": 4
+      },
+      {
+        "titre": "Dehaene, Izard, Pica et Spelke (2006)",
+        "url": "https://www.ens.psl.eu/sites/default/files/dehaene2006.pdf",
+        "sha256": "702953ad5ac39e03b7ca25de442a66a9f6c4c6ccb9f000edc022b456e813aff0",
+        "pages": 4
+      }
+    ]
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Whitson et Galinsky · 1. Le but",
+      "Whitson et Galinsky · 2. Les hypothèses",
+      "Whitson et Galinsky · 3. Six expériences et leurs mesures",
+      "Whitson et Galinsky · 4. Départager menace et contrôle",
+      "Whitson et Galinsky · 5. La mise à l’épreuve par l’auto-affirmation",
+      "Whitson et Galinsky · 6. Une détection erronée peut-elle avoir une utilité ?",
+      "Whitson et Galinsky · 7. Les limites",
+      "Dehaene, Izard, Pica et Spelke · 1. Le but",
+      "Dehaene, Izard, Pica et Spelke · 2. L’hypothèse",
+      "Dehaene, Izard, Pica et Spelke · 3. Deux épreuves non verbales",
+      "Dehaene, Izard, Pica et Spelke · 4. L’intérêt de l’enquête auprès des Munduruku",
+      "Dehaene, Izard, Pica et Spelke · 5. Les indices et leur force respective",
+      "Dehaene, Izard, Pica et Spelke · 6. L’implication la plus notable",
+      "Dehaene, Izard, Pica et Spelke · 7. Ce que l’étude laisse ouvert"
+    ],
+    "precision": "Deux questionnaires bilingues de sept questions, même numérotation en français et en anglais. Six expériences sur le contrôle, énoncés français et anglais de la question 6, deux tâches de géométrie et résultats sans repère coloré."
+  },
+  "figures": [
+    {
+      "fichier": "figures/affirmation-et-fausses-alarmes.svg",
+      "legende": "Formes signalées dans les images sans figure, expérience 6",
+      "question": "Whitson et Galinsky, question 5"
+    },
+    {
+      "fichier": "figures/triangle-et-orientation.svg",
+      "legende": "Dans un triangle isocèle, distinguer les deux extrémités de la base",
+      "question": "Dehaene et al., questions 3 et 5"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "cognition_ecrits_2016_2017",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions et de deux illustrations après confrontation des quatorze questions et des deux articles distribués. Six expériences sur le contrôle, énoncés français et anglais de la question 6, deux tâches de géométrie et résultats sans repère coloré."
+    }
+  ]
+}

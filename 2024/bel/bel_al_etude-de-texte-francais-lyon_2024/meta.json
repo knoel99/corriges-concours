@@ -1,0 +1,160 @@
+{
+  "slug": "bel_al_etude-de-texte-francais-lyon_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Étude de texte français (Lyon)",
+    "annee": 2024,
+    "modalite": "écrit de spécialité"
+  },
+  "intitule": "César de Saint-Réal, Dom Carlos, nouvelle historique",
+  "gabarit": "commentaire",
+  "questions": 1,
+  "duree_heures": 5,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2024-11/Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=6",
+    "sujet_sha256": "cbf76039969ec8cec685a228168381915bdc7b64ae30b2cbee576b3a4f1eeb56",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2024-11/Lettres%20Modernes%202024.pdf#page=2",
+    "rapport_jury_sha256": "f8e1c8d3f485b73ff3911e30fd53375af615b164cf1c88b986a11f5702e4e07d",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2024",
+    "ouvrage": "César de Saint-Réal, *Dom Carlos, nouvelle historique*.",
+    "pages_rapport_verifiees": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2024-11/Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=6",
+      "sha256": "cbf76039969ec8cec685a228168381915bdc7b64ae30b2cbee576b3a4f1eeb56",
+      "pages": 20,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "467f29e0ec3180170f83906b396898332e097600bd045b203d322734b30ba14a"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "8792f553de5cddb862b1610114caf646f31cce12b7629be38076e505305ad7a8"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "cb22adb382db5cbf6d2778e3a8f5c7badad942d793dc04404fcb498c0fe3715a"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "efb523762fb9702fbe2599c534d278eb01ab4877a8615078ad53fe8b5207cbd9"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2024-11/Lettres%20Modernes%202024.pdf#page=2",
+      "sha256": "f8e1c8d3f485b73ff3911e30fd53375af615b164cf1c88b986a11f5702e4e07d",
+      "pages": 11,
+      "pages_verifiees": [
+        {
+          "numero": 2,
+          "rendu_sha256": "09f6c8b7f5831df4a97b369af8c1de63456d05202edad37b407c2a5953d1c964"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "a5f84d349281998e5acfcab3ea8844ce363e868a4db3206adc83f28acbb30729"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "5633a26b8d788e94a51f4c2709cbbafa061936d995f62450181de7a6f74ca41b"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "2b97b041b2473447a208ead31d86aa57a6ef70d38b89505364d784cf0b5376a3"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "898e59580ec8a3fbb7f337d6c115b6682a1bb42d4bd691221ebd0a5aedda91df"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "1d1fc692ac11a2ee8cc311b4b080d5174734ff7d32c73c1d694210f3eec00f35"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "c0a7fd6fe3862b2e1beb62c4151a5b592b26110448c12ca510b2acd8291719bf"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "Commentaire",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "Au carrosse et à Madrid, chacun interprète le regard royal à partir de ce qu’il sait et de ce qu’il ignore."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire stylistique original de la totalité du texte, guide et schéma de lecture."
+    },
+    {
+      "phase": "revision",
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Vérification visuelle du livret numérisé, des 38 lignes, du titre daté de 1674, du pronom de la ligne 33 et du jugement rapporté en fin de passage. Première publication de 1672 d’après le rapport, p. 5."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "César de Saint-Réal, *Dom Carlos, nouvelle historique*."
+    ],
+    "note": "Commentaire et schéma originaux, accompagnés de citations brèves de l’extrait."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Commentaire",
+        "page_pdf": 6,
+        "pages_pdf": [
+          6,
+          7
+        ],
+        "ligne_debut": 1,
+        "ligne_fin": 38
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

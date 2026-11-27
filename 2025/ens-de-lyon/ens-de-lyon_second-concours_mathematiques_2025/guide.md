@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 L’exercice étudie les fonctions qui réalisent l’égalité dans Poincaré. Le problème passe de la formule de Lie à une inégalité de traces, puis à la concentration de la plus grande valeur propre. Le jury souligne les difficultés de convergence aux bornes et la nécessité de justifier le télescopage sans commuter les matrices.
 
 ## Exercice — Une inégalité de Poincaré
@@ -79,6 +81,8 @@ Cette dérivée s’annule exactement pour les solutions cherchées. L’interva
 #### Solution
 
 L’égalité équivaut à $J=0$. L’intégrande est continu et positif ou nul sur l’intervalle, donc il s’annule en chaque point. La question 3 donne $f(x)=C\sin(\pi x)$ sur $]0,1[$, et la continuité prolonge cette formule aux deux extrémités. Réciproquement chacune de ces fonctions appartient à $E$ et donne $J=0$. Pour $C\ne0$, l’intégrale de $(f')^2$ est strictement positive. Ces cas d’égalité montrent aussi que la constante $1/\pi^2$ est optimale.
+
+Pour $f(x)=\sin(2\pi x)$, les deux énergies sont $\int_0^1 f^2=1/2$ et $\int_0^1(f^{\prime})^2=2\pi^2$. La différence $J$ vaut donc $3\pi^2/2$, ce qui quantifie l’écart illustré sur la figure.
 
 ![Ces deux fonctions ont la même intégrale du carré. La seconde a une énergie de dérivation quatre fois plus grande. Seule la première réalise ici l’égalité de Poincaré.](figures/poincare.svg)
 
@@ -220,6 +224,8 @@ $$\mathbb P(\lambda_{\max}(Y)\ge t)\le\mathbb P(\operatorname{tr}(e^{\theta Y})\
 \le e^{-\theta t}\operatorname{tr}(\mathbb E[e^{\theta Y}]).$$
 Le majorant vaut pour chaque $\theta>0$, donc aussi son infimum.
 
+L’hypothèse imprimée au début de la partie III est que toutes les espérances utilisées sont finies. Elle autorise, en particulier, la somme des espérances des $n$ termes diagonaux dans $\operatorname{tr}(\mathbb E[e^{\theta Y}])$. Le raisonnement vaut aussi pour $t<0$, puisque le seuil $e^{\theta t}$ de l’inégalité de Markov reste strictement positif.
+
 ### Question 2
 
 > [!INDICATION]
@@ -234,7 +240,7 @@ Les deux exponentielles sont indépendantes. En écrivant chaque coefficient du 
 ### Question 3a
 
 > [!INDICATION]
-> La différence entre le plus grand multiple scalaire de l’identité et la seconde matrice est positive.
+> Pour une matrice symétrique $D$, pourquoi $\lambda_{\max}(D)I-D$ est-elle positive ?
 
 #### Solution
 

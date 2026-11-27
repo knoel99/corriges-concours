@@ -1,0 +1,106 @@
+{
+  "slug": "x_mp_informatique-option_2010",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Informatique (option)",
+    "annee": 2010,
+    "duree_heures": 4
+  },
+  "questions": 18,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/x_option-info_mp_2010.pdf",
+    "sujet_sha256": "ea09c31097b5ce15884d9c16f72011fb3ba578766547b381637aaf0c5820edce",
+    "rapport": "https://www.doc-solus.fr/prepa/sci/adc/pdf/rapports.pdf/2010/MP_INFO_X_1_2010.rapport.pdf",
+    "rapport_sha256": "b2044edfb39eb13eb1d98c6f1bb8ce21a771bf750701af13b5b58a4b473dcd01",
+    "page_organisateur": "https://www.wikiprepa.fr/concours/ecrit/x_option-info_mp_2010",
+    "identification": "Fac-similé de la composition propre à l’École polytechnique, en MP option informatique. Le sujet et le rapport des correcteurs portent sur le plus proche ancêtre commun."
+  },
+  "figures": [
+    {
+      "fichier": "figures/ancetre-de-cinq-et-huit.svg",
+      "question": "6",
+      "legende": "Les nœuds 5 et 8 ont pour plus proche ancêtre commun le nœud 4. La portion du tour entre leurs visites passe par cette racine de sous-arbre."
+    },
+    {
+      "fichier": "figures/deux-blocs.svg",
+      "question": "9",
+      "legende": "Deux blocs dyadiques de longueur 4 couvrent ici un intervalle de longueur 7 et partagent sa position centrale."
+    },
+    {
+      "fichier": "figures/codes-de-l-arbre-complet.svg",
+      "question": "14",
+      "legende": "Les feuilles 001 et 011 divergent au bit de poids 2. Leur ancêtre commun porte le code 010."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des 18 questions depuis le fac-similé et le rapport des correcteurs. Code OCaml exécuté, requêtes par tour eulérien et par codes binaires comparées au calcul direct, construction cartésienne testée sur des tableaux comportant des égalités. Trois schémas originaux."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18"
+    ],
+    "pages_des_questions": {
+      "1": 2,
+      "2": 2,
+      "3": 3,
+      "4": 3,
+      "5": 3,
+      "6": 3,
+      "7": 3,
+      "8": 4,
+      "9": 4,
+      "10": 4,
+      "11": 5,
+      "12": 5,
+      "13": 6,
+      "14": 6,
+      "15": 6,
+      "16": 7,
+      "17": 8,
+      "18": 8
+    },
+    "origine_attestation": {
+      "commit_du_journal": "6c664a18c7758fa83b646f65d319d41d827cb31a",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction intégrale des 18 questions depuis le fac-similé et le rapport des correcteurs. Code OCaml exécuté, requêtes par tour eulérien et par codes binaires comparées au calcul direct, construction cartésienne testée sur des tableaux comportant des égalités. Trois schémas originaux.",
+      "sha256_sujet_controle": "ea09c31097b5ce15884d9c16f72011fb3ba578766547b381637aaf0c5820edce",
+      "sha256_rapport_controle": "b2044edfb39eb13eb1d98c6f1bb8ce21a771bf750701af13b5b58a4b473dcd01"
+    },
+    "controle_programmes": {
+      "brut": "3969 couples de nœuds, 9840 arbres cartésiens et 65 544 mots binaires vérifiés.",
+      "guide": "3969 couples de nœuds, 9840 arbres cartésiens et 65 544 mots binaires vérifiés."
+    },
+    "precision": "Les réponses ont été pointées sur les feuillets et retrouvées dans la rédaction signée. Les exemples exécutables de chaque édition ont été soumis à nouveau aux contrôles."
+  }
+}

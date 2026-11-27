@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **La Tour de la Terreur.** L’axe vertical est orienté vers le haut. Les valeurs lues sur les courbes des pages 8 à 11 et 17 à 18 sont approximatives. Les schémas DR1 et DR2 sont reproduits sous forme de constructions originales aux questions 25 et 34.
 
 ## A · Fonctions et guidage
@@ -300,6 +302,8 @@ Toutes les longueurs doivent être exprimées dans le même système d’unités
 ### Question 43 · Rendre la résistance et la souplesse compatibles
 
 On peut dimensionner la section porteuse pour la traction, puis placer en série un élément élastique, de raideur $k_s$, muni d’une course suffisante et d’un amortissement. La raideur équivalente devient $k_{\rm eff}=(1/k+1/k_s)^{-1}$. Elle peut ainsi être rendue inférieure à $k_{\max}$ alors que la section continue de satisfaire la limite de contrainte. Dans cette solution, le critère de décélération porte sur la raideur de la chaîne. Si le cahier impose la raideur du câble lui-même, une autre possibilité est un câble dont le rapport résistance admissible/module effectif est plus élevé, ou une longueur élastique effective plus grande. La condition d’existence d’un diamètre est $T_{\max}/\sigma_{\max}<hk_{\max}/E$.
+
+Lorsque le ressort et le câble sont en série, ils portent la même tension. Pour un câble déjà choisi de raideur $k>k_{\max}$, l’inégalité précédente donne la plage de réglage $0<k_s<kk_{\max}/(k-k_{\max})$. Il faut également que la course élastique disponible atteigne au moins $T_{\max}/k_s$ en l’absence de précharge.
 
 ### Question 44 · Hypothèse la plus sévère
 

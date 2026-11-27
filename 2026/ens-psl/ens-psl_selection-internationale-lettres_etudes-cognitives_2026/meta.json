@@ -33,7 +33,7 @@
       "legende": "Trois niveaux de contrôle pendant l’envoi d’un colis"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "contributions": [
     {
       "phase": "lecture_rapport_jury",
@@ -70,6 +70,19 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Relecture des six réponses, contrôle de la coexistence des niveaux et des limites de l’expérience. Différenciation entre déclenchement par M et intervention ultérieure de P."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Pacherie, exemple d’obstacle matériel et différence entre révision motrice, proximale et distale."
     }
   ]
 }

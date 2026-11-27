@@ -1,0 +1,118 @@
+{
+  "slug": "bel_al_polonais-theme-lyon_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Polonais (thème Lyon)",
+    "annee": 2024,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "duree_heures": 4,
+  "redaction": "Traduction originale proposée par IA, non officielle.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2024-11/Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=16",
+    "sujet_sha256": "cbf76039969ec8cec685a228168381915bdc7b64ae30b2cbee576b3a4f1eeb56",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2024-11/Polonais%202024%20OK.pdf#page=6",
+    "rapport_jury_sha256": "92d65d1afdaae9b09e23996e440de255a65f4ae0d50854002a496020cc8365a5",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2024",
+    "ouvrage": "Nicolas Mathieu, *Connemara* (2022).",
+    "ecoles": "ENS de Lyon"
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2024-11/Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=16",
+      "sha256": "cbf76039969ec8cec685a228168381915bdc7b64ae30b2cbee576b3a4f1eeb56",
+      "pages": 20,
+      "perimetre": "Thème en français à traduire en polonais, sujet ENS de Lyon.",
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "467f29e0ec3180170f83906b396898332e097600bd045b203d322734b30ba14a"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "8792f553de5cddb862b1610114caf646f31cce12b7629be38076e505305ad7a8"
+        },
+        {
+          "numero": 16,
+          "rendu_sha256": "d2dbf492af9fd76141ff9b46492515612eb3b42eae3891175abeb66b89b4a623"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2024-11/Polonais%202024%20OK.pdf#page=6",
+      "sha256": "92d65d1afdaae9b09e23996e440de255a65f4ae0d50854002a496020cc8365a5",
+      "pages": 7,
+      "perimetre": "Section du rapport de polonais consacrée au thème.",
+      "pages_verifiees": [
+        {
+          "numero": 6,
+          "rendu_sha256": "0b32a35555ee61cb3f59a85821a9e18819d8c70cac21ff133a40b64652af999e"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "077d73d93275b7dade124ab2a9d88dc3504fa42988d871185796ccb8a15037af"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "Proposition de thème",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "Do wieczora traverse trois situations. Manuel emploie les mêmes mots que les époux dans le message qui fait battre le cœur d’Hélène."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Traduction polonaise originale et commentaire des voix, du lexique et de la syntaxe, schéma de lecture et vérification des sources."
+    },
+    {
+      "phase": "revision",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Collation du scan. Rétablissement du dernier paragraphe continu, de la marque Axa, de la dynamique de l’escalier et du caractère exemplaire de la mission selon Erwann. Relecture des trois horaires, des sommes, des cas et du registre."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Proposition de thème"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Proposition de thème",
+        "page_pdf": 16,
+        "feuillet_imprime": 16,
+        "perimetre": "De la perte que Philippe associe au déménagement à la dernière remarque sur les chefs de service. Dialogues et trois horaires professionnels inclus."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

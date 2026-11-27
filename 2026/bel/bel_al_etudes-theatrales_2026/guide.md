@@ -10,6 +10,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Sujet** — Jerzy Grotowski, le don de soi et la discipline formelle
 
 [Citation et consigne officielles, p. 3](https://www.ens.psl.eu/sites/default/files/al_spe_arts.pdf#page=3) · [Rapport de la composition écrite](https://www.ens-lyon.fr/sites/default/files/2026-10/Arts%20-%20Th%C3%A9%C3%A2tre%202026.pdf)
@@ -31,6 +33,8 @@ La discipline formelle, l’excès et la transe peuvent sembler incompatibles. L
 Dans *Café Müller*, relever le détail qui rend le risque perceptible : les yeux fermés, les chaises, la vitesse avec laquelle le partenaire ouvre le passage. Qui doit veiller sur quoi ? Cette scène permet de poser la question de la confiance et de répondre à une objection. Le don engage la personne, tandis que l’acceptation du risque exige des limites partagées.
 
 ![Responsabilités distinctes des partenaires dans un déplacement.](figures/cafe-muller.svg)
+
+Décrivez séparément la trajectoire de l’interprète et le moment où le partenaire déplace une chaise. Demandez ensuite ce que le public peut observer de leur coordination et ce qui demeure inconnu de leurs sentiments privés.
 
 > [!PIEGE]
 > Rattacher le « sommet » et l’« apaisement » à l’acte dont parle Grotowski. Pour en faire une proposition sur l’effet éprouvé par tous les spectateurs, il faudrait un argument supplémentaire. Une action peut délivrer l’acteur d’une surveillance de soi et susciter du trouble dans la salle.

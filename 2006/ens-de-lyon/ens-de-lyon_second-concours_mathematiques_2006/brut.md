@@ -2,7 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 Une première construction régularise les créneaux par convolutions successives. Le second exercice localise les valeurs propres d’une matrice et compte celles que contient un groupe de disques isolé. La garde indique une épreuve commune aux ENS Ulm et Lyon.
 
@@ -11,6 +13,8 @@ Une première construction régularise les créneaux par convolutions successive
 ### Question 1.1
 
 Écrivons $K,L$ pour les supports des deux fonctions. Si $f(t)g(x-t)\ne0$, alors $x=t+(x-t)\in K+L$, compact comme image de $K\times L$ par addition. Donc $\operatorname{supp}(f*g)\subset K+L$ et, dans le cas précisé, le support est inclus dans $[0,\alpha+\beta]$. Pour les fonctions continues ou continues par morceaux bornées à support compact de l’exercice, Fubini et le changement $u=x-t$ donnent $\int(f*g)=(\int f)(\int g)$, car l’intégrale double des modules vaut $\|f\|_1\|g\|_1$. La seule finitude du nombre de discontinuités, prise littéralement sans contrôle près de ces points, ne garantit pas l’intégrabilité ; toutes les fonctions $H_a$ utilisées ensuite sont bornées.
+
+Un contre-exemple à la lecture littérale est donné par $f(t)=1/t$ sur $]0,1[$ et $f=0$ ailleurs, avec $g=\mathbf 1_{]0,1[}$. Les deux supports sont compacts et il n’y a que deux points de discontinuité par fonction. Pourtant, pour $x=1/2$, l’intégrale de convolution contient $\int_0^{1/2}dt/t$ et diverge.
 
 ### Question 1.2
 
@@ -65,6 +69,8 @@ Soient $p,q$ tels que $|x_p|\ge|x_q|\ge|x_j|$ pour $j\notin\{p,q\}$. La ligne $p
 ### Question 2.5
 
 Le candidat naturel est la réunion sur $i<j<k$ des ensembles $|(z-a_{ii})(z-a_{jj})(z-a_{kk})|\le r_i r_j r_k$. Dans la matrice imprimée, les quatre centres valent un et les rayons valent $2,1,0,0$. Tout triplet comporte un rayon nul : la réunion se réduit à $\{1\}$. Or la matrice est triangulaire par blocs avec bloc supérieur gauche $\left(\begin{smallmatrix}1&1\\1&1\end{smallmatrix}\right)$ et bloc inférieur droit $I_2$. Son spectre comprend $0$ et $2$. Le candidat à trois indices ne contient donc pas le spectre.
+
+Le polynôme caractéristique exact est $X(X-2)(X-1)^2$. Les deux valeurs échappant à la réunion des ensembles à trois indices apparaissent donc chacune avec multiplicité un.
 
 ### Question 2.6
 

@@ -1,0 +1,81 @@
+{
+  "slug": "bel_bl_sociologie-oral-commun-19-juin-dossier-3_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Sociologie (oral commun) — 19 juin dossier 3",
+    "annee": 2024,
+    "modalite": "oral"
+  },
+  "intitule": "L’enseignement privé en France",
+  "questions": 0,
+  "sujets": 1,
+  "tirages": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/bl_sujets_oraux_sociologie_tc_3_19062024.pdf",
+    "sujet_sha256": "fd0bfb30d4dfa903615a47461b54b931ff639f1966fe53b766945a19a660e6cc",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_oral_sociologie_epreuve_commune.pdf",
+    "rapport_sha256": "2b325a35f255bbe5da766d002f0b39721fbc10704cbbb324e074b164d093878b",
+    "pages_sujet": "pp. 1–8"
+  },
+  "figures": [
+    {
+      "fichier": "figures/comparaison.svg",
+      "question": "L’enseignement privé en France",
+      "legende": "Document 3, p. 4. Distribution des parts d’élèves défavorisés par collège en 2021, en pourcentage."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "bel_bl_sociologie-oral-commun-19-juin-dossier-3_2024",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Lecture des sept pièces dans leur pagination officielle, exposé, guide de lecture et trois réponses pour l’entretien. Rapprochement des pièces en trois étapes argumentées pour la présentation orale."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "bel_bl_sociologie-oral-commun-19-juin-dossier-3_2024",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": false,
+      "perimetre": "Contrôle des unités, champs et dénominateurs, lecture des graphiques au rendu et comparaison avec la figure « Seuils de concentration d’élèves défavorisés »."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "L’enseignement privé en France"
+    ],
+    "controle": [
+      "Lecture des sept pièces dans leur pagination officielle, exposé, guide de lecture et trois réponses pour l’entretien.",
+      "Contrôle des unités, champs et dénominateurs, lecture des graphiques au rendu et comparaison avec la figure « Seuils de concentration d’élèves défavorisés ».",
+      "Exposé structuré en trois rapprochements croisés, puis contrôle de chaque pièce en suivant la pagination officielle."
+    ]
+  }
+}

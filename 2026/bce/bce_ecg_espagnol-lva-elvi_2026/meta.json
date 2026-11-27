@@ -16,7 +16,9 @@
   },
   "sources": {
     "sujet": "https://www.concours-bce.com/sites/default/files/2026-04/75%20GB%20-%20LANGUE_VIVANTE_A_ELVI_ALLEMAND_ANGLAIS_ESPAGNOL.pdf#page=14",
-    "sujet_sha256": "355b32ff17b6678d50137ca33444bb91f286d5a2a31fc1b73f310269a7177179"
+    "sujet_sha256": "355b32ff17b6678d50137ca33444bb91f286d5a2a31fc1b73f310269a7177179",
+    "rapport_jury": "https://www.concours-bce.com/sites/default/files/2026-10/75%20-%20Espagnol%20LVA%20Elvi%202026.pdf",
+    "rapport_sha256": "35416813aa46a7ee5afbf1e7c6ea74386dd83236f8f5a454100679559c29698e"
   },
   "figures": [
     {
@@ -25,7 +27,7 @@
       "legende": "Una crisis, dos momentos de observación"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -36,6 +38,44 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Deux réponses originales en espagnol aux questions comparatives et personnelles du dossier sur les relations entre les États-Unis et l’Amérique latine, traduction du passage délimité de la chronique de Benoît Bréville, guidage et schéma."
+    },
+    {
+      "phase": "lecture_rapport_jury",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "fui_physique_deux",
+      "modifications": false,
+      "perimetre": "Rapprochement du rapport BCE de la langue et du niveau correspondants avec le sujet et les trois exercices."
+    },
+    {
+      "phase": "revision",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "fui_physique_deux",
+      "modifications": true,
+      "perimetre": "Fascicule 75-GB, section espagnol-lva p. 14–19 et garde p. 1. Cinq pièces des pages 14–19. Comparaison des deux articles à leurs dates de novembre/décembre 2025, distinction fait confirmé/propos attribués. Contrôle des deux caricatures (Petro, Milei) et de la traduction du seul passage satirique sur le Nobel, jusqu’à la cuvée 2026. Résumé 357 mots ; essai 501 mots. Contrôles dans les deux éditions."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I. Résumé analytique comparatif",
+      "II. Essai argumenté",
+      "III. Thème"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "origine_attestation": {
+      "phase": "revision",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "355b32ff17b6678d50137ca33444bb91f286d5a2a31fc1b73f310269a7177179",
+      "perimetre": "Fascicule 75-GB, section espagnol-lva p. 14–19 et garde p. 1. Cinq pièces des pages 14–19. Comparaison des deux articles à leurs dates de novembre/décembre 2025, distinction fait confirmé/propos attribués. Contrôle des deux caricatures (Petro, Milei) et de la traduction du seul passage satirique sur le Nobel, jusqu’à la cuvée 2026. Résumé 357 mots ; essai 501 mots. Contrôles dans les deux éditions."
+    }
+  }
 }

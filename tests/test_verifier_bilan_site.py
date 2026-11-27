@@ -29,6 +29,17 @@ def test_releve_identique():
     verifier_page(PAGE, [SUJET], DATE)
 
 
+def test_rapport_seul_sans_fiche_ni_enonce():
+    rapport = "https://www.banquept.fr/IMG/pdf/rapport_oral2_mathematiques_2003.pdf"
+    donnees = {**SUJET, "fiche du site": "", "sujet": "", "rapport": rapport}
+    page = PAGE.replace(
+        '<a href="/epreuves/exemple?doc=corrige">Mathématiques</a>', "<span>Mathématiques</span>"
+    ).replace("</td></tr>", f'<a href="{rapport}">Rapport du jury</a></td></tr>')
+    verifier_page(page, [donnees], DATE)
+    with pytest.raises(ValueError, match="lien"):
+        verifier_page(page.replace("Rapport du jury", "Sujet"), [donnees], DATE)
+
+
 def test_quatre_fichiers_du_bon_sujet_et_du_bon_releve():
     date = "2026-11-25T04:48:00Z"
     donnees = {**SUJET, "contrôle des fichiers UTC": date}

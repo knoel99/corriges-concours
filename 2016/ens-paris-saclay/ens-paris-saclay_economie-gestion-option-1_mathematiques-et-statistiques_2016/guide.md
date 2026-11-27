@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le sujet C1692 comporte trois problèmes indépendants. La notation des probabilités avec une barre oblique dans le fascicule est transcrite par une barre conditionnelle. Le graphique demandé en III.4 superpose les deux familles de paramètres admissibles.
 
 ## Problème 1 · Composition de deux applications linéaires
@@ -264,7 +266,7 @@ Elles sont égales exactement lorsqu’elles sont toutes deux nulles, soit lorsq
 
 #### Solution
 
-Les événements $X=1$ et $X=-1$ sont incompatibles. Ainsi $PM=0$ à chaque issue et la probabilité demandée vaut un.
+Les variables $P$ et $M$ sont les indicatrices des événements $X=1$ et $X=-1$, qui sont incompatibles. Ainsi $PM=0$ à chaque issue et la probabilité demandée vaut un.
 
 ### Question III.4a
 
@@ -384,4 +386,4 @@ La variance de $\widehat a_{1/2}$ vaut $a(1-2a)/(2n)$, inférieure de $a/(2n)>0$
 
 #### Solution
 
-On a $P_i+M_i=Y_i$. Par suite $\widehat a_{t^*}=(S_P+S_M)/(2n)=(2n)^{-1}\sum_{i=1}^nY_i$. Le comptage de toutes les observations non nulles explique pourquoi cet estimateur exploite les deux signes.
+On a $P_i+M_i=Y_i$. Par suite $\widehat a_{t^*}=(S_P+S_M)/(2n)=(2n)^{-1}\sum_{i=1}^nY_i$. La variable $\sum_iY_i$ compte les observations non nulles. Elle suit $\mathcal B(n,2a)$ lorsque $a=b$. Cette loi donne directement $\operatorname{Var}(\widehat a_{t^*})=n(2a)(1-2a)/(4n^2)=a(1-2a)/(2n)$, conformément au calcul par covariance.

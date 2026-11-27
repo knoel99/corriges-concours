@@ -1,0 +1,58 @@
+{
+  "slug": "bel_bl_economie-oral-option-18-juin_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Économie (oral option) — 18 juin",
+    "annee": 2024,
+    "modalite": "oral"
+  },
+  "intitule": "Flexibilité et rigidités du marché du travail / Politique monétaire en économie ouverte",
+  "questions": 0,
+  "sujets": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/bl_sujets_oraux_economie_opt_1_18062024.pdf",
+    "sujet_sha256": "0629fd7258734d859b5db21a0bf79892034c23fc54319f6882ea16514920e443",
+    "sujet_pages": 1,
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_oral_economie_option.pdf",
+    "rapport_sha256": "1188b9bfbccbf94221a7f7843295c02806da3b81dc7c98550348e0d0dc57ac89",
+    "calendrier": "https://www.ens.psl.eu/sujets-des-epreuves-orales-du-concours-bl-session-2024"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Deux leçons indépendantes, les mécanismes, calculs et questions d’entretien confrontés au billet et au rapport.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
+    }
+  ],
+  "figures": [
+    {
+      "fichier": "figures/raisonnement-au-tableau.svg",
+      "legende": "Le stock de chômage dépend conjointement des entrées et des sorties. Le graphique repose sur un modèle stationnaire à deux états.",
+      "question": "Sujet 1"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "sujets_entierement_traites": [
+      "Flexibilité et rigidités du marché du travail",
+      "Politique monétaire en économie ouverte"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "redaction",
+      "sha256_sujet_controle": "0629fd7258734d859b5db21a0bf79892034c23fc54319f6882ea16514920e443",
+      "perimetre": "Deux leçons indépendantes, les mécanismes, calculs et questions d’entretien confrontés au billet et au rapport."
+    }
+  }
+}

@@ -43,7 +43,7 @@
       "legende": "Dagenham, de la paie au reclassement"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "revision": {
     "date": "2026-11-24",
     "modele": "Codex (GPT-6)",
@@ -99,6 +99,47 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Confrontation des deux éditions au libellé reproduit et aux documents historiques sur Dagenham. Différenciation du taux salarial masculin de référence et du grade de qualification dans l’offre de reprise de 1968."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Dissertation sur la (re)production des rapports sociaux, libellé contrôlé dans les annales enseignantes de Paris-Saclay. Chronologie de Dagenham commentée dans le brut, distinction des trois objets de preuve dans la méthode du guidé."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Le titre unique reproduit dans les annales pédagogiques a été comparé aux deux copies. L’analyse porte sur la distribution du travail domestique et salarié, les règles de qualification, les rapports de classe, de genre et de racialisation, ainsi que sur leur transformation collective.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Le travail comme (re)production des rapports sociaux"
+    ],
+    "annexes_verifiees": [],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "verification": "Le titre unique reproduit dans les annales pédagogiques a été comparé aux deux copies. L’analyse porte sur la distribution du travail domestique et salarié, les règles de qualification, les rapports de classe, de genre et de racialisation, ainsi que sur leur transformation collective.",
+    "limites": "Le libellé est reproduit dans les annales pédagogiques de la filière. La notice du concours décrit le format. La vérification porte sur cette dissertation et aucune pièce supplémentaire n’est annoncée sur la page qui la reproduit."
+  }
 }

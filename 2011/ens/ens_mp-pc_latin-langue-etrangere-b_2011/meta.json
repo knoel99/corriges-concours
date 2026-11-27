@@ -1,0 +1,56 @@
+{
+  "slug": "ens_mp-pc_latin-langue-etrangere-b_2011",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Latin (langue étrangère B)",
+    "annee": 2011,
+    "modalite": "écrit"
+  },
+  "intitule": "Que vaudrait la connaissance de l’avenir ?",
+  "questions": 1,
+  "redaction": "Version intégrale du texte latin adapté, de Priam à César. Traduction des futurs vus du passé, des irréels et des deux points de vue temporels dans les interrogations.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2011/2011%20Langue%20E-B.pdf#page=12",
+    "sha256_sujet": "5890947752edcbb46be37dc05ed0a9e872c93ca0f7859b7d07cba7b9ffd7be6b",
+    "page": 12,
+    "code_garde": "UC",
+    "etablissements": "ENS de Paris et de Cachan",
+    "indexes": [
+      "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2011",
+      "https://www.ens.psl.eu/rapports-et-sujets-2011-mpi"
+    ],
+    "rapport_jury": null,
+    "precision_rapport": "La ligne de cette option à l’écrit dans l’index MPI ne comporte pas de lien vers le rapport. Aucun rapport propre à cet écrit n’a été retrouvé.",
+    "reference_du_texte": "Cicéron, De la divination, livre II, chapitre IX, §§ 22–23. La page 12 abrège et adapte le passage, notamment la question finale sur César.",
+    "edition_de_reference": "https://www.lateinlex.de/?call=Puc&permalink=Cic_philos_div_2_9"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Version",
+      "fichier": "figures/prescience-et-bonheur.svg",
+      "legende": "À quel moment la connaissance de leur fin aurait-elle atteint les quatre personnages ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale du texte latin adapté, de Priam à César. Traduction des futurs vus du passé, des irréels et des deux points de vue temporels dans les interrogations."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version"
+    ]
+  }
+}

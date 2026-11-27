@@ -1,247 +1,92 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="489.6pt" height="198pt" viewBox="0 0 489.6 198" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="patch_1">
-   <path d="M 0 198
-L 489.6 198
-L 489.6 0
-L 0 0
-z
-" style="fill: #ffffff"/>
-  </g>
-  <g id="axes_1">
-   <g id="line2d_1">
-    <path d="M 421.58016 75.192
-L 421.58016 127.5696
-L 247.1508 127.5696
-" clip-path="url(#p107fa617ef)" style="fill: none; stroke: #667881; stroke-width: 1.5; stroke-linecap: square"/>
-   </g>
-   <g id="line2d_2">
-    <path d="M 470.94696 75.192
-L 470.94696 167.448
-L 47.3328 167.448
-" clip-path="url(#p107fa617ef)" style="fill: none; stroke: #667881; stroke-width: 1.5; stroke-linecap: square"/>
-   </g>
-   <g id="text_1">
-    <g id="patch_2">
-     <path d="M 30.518152 80.921297
-L 64.147448 80.921297
-Q 66.247448 80.921297 66.247448 78.821297
-L 66.247448 71.562703
-Q 66.247448 69.462703 64.147448 69.462703
-L 30.518152 69.462703
-Q 28.418152 69.462703 28.418152 71.562703
-L 28.418152 78.821297
-Q 28.418152 80.921297 30.518152 80.921297
-z
-" style="fill: #edf3f3; stroke: #285c75; stroke-linejoin: miter"/>
-    </g>
-    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle" x="47.3328" y="77.261531" transform="rotate(-0 47.3328 77.261531)">Σ vitesse</text>
-   </g>
-   <g id="text_2">
-    <g id="patch_3">
-     <path d="M 95.3427 80.921297
-L 130.9677 80.921297
-Q 133.0677 80.921297 133.0677 78.821297
-L 133.0677 71.562703
-Q 133.0677 69.462703 130.9677 69.462703
-L 95.3427 69.462703
-Q 93.2427 69.462703 93.2427 71.562703
-L 93.2427 78.821297
-Q 93.2427 80.921297 95.3427 80.921297
-z
-" style="fill: #edf3f3; stroke: #285c75; stroke-linejoin: miter"/>
-    </g>
-    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle" x="113.1552" y="77.261531" transform="rotate(-0 113.1552 77.261531)">PI vitesse</text>
-   </g>
-   <g id="text_3">
-    <g id="patch_4">
-     <path d="M 179.095448 80.921297
-L 197.666152 80.921297
-Q 199.766152 80.921297 199.766152 78.821297
-L 199.766152 71.562703
-Q 199.766152 69.462703 197.666152 69.462703
-L 179.095448 69.462703
-Q 176.995448 69.462703 176.995448 71.562703
-L 176.995448 78.821297
-Q 176.995448 80.921297 179.095448 80.921297
-z
-" style="fill: #edf3f3; stroke: #285c75; stroke-linejoin: miter"/>
-    </g>
-    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle" x="188.3808" y="77.261531" transform="rotate(-0 188.3808 77.261531)">±5 A</text>
-   </g>
-   <g id="text_4">
-    <g id="patch_5">
-     <path d="M 229.170136 80.921297
-L 265.131464 80.921297
-Q 267.231464 80.921297 267.231464 78.821297
-L 267.231464 71.562703
-Q 267.231464 69.462703 265.131464 69.462703
-L 229.170136 69.462703
-Q 227.070136 69.462703 227.070136 71.562703
-L 227.070136 78.821297
-Q 227.070136 80.921297 229.170136 80.921297
-z
-" style="fill: #edf3f3; stroke: #285c75; stroke-linejoin: miter"/>
-    </g>
-    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle" x="247.1508" y="77.261531" transform="rotate(-0 247.1508 77.261531)">Σ courant</text>
-   </g>
-   <g id="text_5">
-    <g id="patch_6">
-     <path d="M 301.047084 80.921297
-L 339.004116 80.921297
-Q 341.104116 80.921297 341.104116 78.821297
-L 341.104116 71.562703
-Q 341.104116 69.462703 339.004116 69.462703
-L 301.047084 69.462703
-Q 298.947084 69.462703 298.947084 71.562703
-L 298.947084 78.821297
-Q 298.947084 80.921297 301.047084 80.921297
-z
-" style="fill: #edf3f3; stroke: #285c75; stroke-linejoin: miter"/>
-    </g>
-    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle" x="320.0256" y="77.261531" transform="rotate(-0 320.0256 77.261531)">PI courant</text>
-   </g>
-   <g id="text_6">
-    <g id="patch_7">
-     <path d="M 368.593917 85.120477
-L 407.803683 85.120477
-Q 409.903683 85.120477 409.903683 83.020477
-L 409.903683 67.363523
-Q 409.903683 65.263523 407.803683 65.263523
-L 368.593917 65.263523
-Q 366.493917 65.263523 366.493917 67.363523
-L 366.493917 83.020477
-Q 366.493917 85.120477 368.593917 85.120477
-z
-" style="fill: #edf3f3; stroke: #285c75; stroke-linejoin: miter"/>
-    </g>
-    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'" transform="translate(368.593917 73.062352)">Variateur /</text>
-    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'" transform="translate(377.5113 81.460711)">induit</text>
-   </g>
-   <g id="text_7">
-    <g id="patch_8">
-     <path d="M 443.769052 80.921297
-L 464.273348 80.921297
-Q 466.373348 80.921297 466.373348 78.821297
-L 466.373348 71.562703
-Q 466.373348 69.462703 464.273348 69.462703
-L 443.769052 69.462703
-Q 441.669052 69.462703 441.669052 71.562703
-L 441.669052 78.821297
-Q 441.669052 80.921297 443.769052 80.921297
-z
-" style="fill: #edf3f3; stroke: #285c75; stroke-linejoin: miter"/>
-    </g>
-    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle" x="454.0212" y="77.261531" transform="rotate(-0 454.0212 77.261531)">Arbre</text>
-   </g>
-   <g id="patch_9">
-    <path d="M 68.01984 75.192
-Q 78.36336 75.192 87.477043 75.192
-" style="fill: none; stroke: #667881; stroke-width: 1.1; stroke-linecap: round"/>
-    <path d="M 83.877043 73.392
-L 87.477043 75.192
-L 83.877043 76.992
-" style="fill: none; stroke: #667881; stroke-width: 1.1; stroke-linecap: round"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 137.13336 75.192
-Q 154.2942 75.192 170.225203 75.192
-" style="fill: none; stroke: #667881; stroke-width: 1.1; stroke-linecap: round"/>
-    <path d="M 166.625203 73.392
-L 170.225203 75.192
-L 166.625203 76.992
-" style="fill: none; stroke: #667881; stroke-width: 1.1; stroke-linecap: round"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 203.89608 75.192
-Q 214.47468 75.192 223.823443 75.192
-" style="fill: none; stroke: #667881; stroke-width: 1.1; stroke-linecap: round"/>
-    <path d="M 220.223443 73.392
-L 223.823443 75.192
-L 220.223443 76.992
-" style="fill: none; stroke: #667881; stroke-width: 1.1; stroke-linecap: round"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 271.12896 75.192
-Q 282.64788 75.192 292.936963 75.192
-" style="fill: none; stroke: #667881; stroke-width: 1.1; stroke-linecap: round"/>
-    <path d="M 289.336963 73.392
-L 292.936963 75.192
-L 289.336963 76.992
-" style="fill: none; stroke: #667881; stroke-width: 1.1; stroke-linecap: round"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 344.47392 75.192
-Q 355.2876 75.192 364.871443 75.192
-" style="fill: none; stroke: #667881; stroke-width: 1.1; stroke-linecap: round"/>
-    <path d="M 361.271443 73.392
-L 364.871443 75.192
-L 361.271443 76.992
-" style="fill: none; stroke: #667881; stroke-width: 1.1; stroke-linecap: round"/>
-   </g>
-   <g id="patch_14">
-    <path d="M 410.76648 75.192
-Q 424.16604 75.192 436.335763 75.192
-" style="fill: none; stroke: #667881; stroke-width: 1.1; stroke-linecap: round"/>
-    <path d="M 432.735763 73.392
-L 436.335763 75.192
-L 432.735763 76.992
-" style="fill: none; stroke: #667881; stroke-width: 1.1; stroke-linecap: round"/>
-   </g>
-   <g id="patch_15">
-    <path d="M 247.1508 127.5696
-Q 247.1508 109.416 247.1508 92.492237
-" style="fill: none; stroke: #667881; stroke-width: 1.1; stroke-linecap: round"/>
-    <path d="M 245.3508 96.092237
-L 247.1508 92.492237
-L 248.9508 96.092237
-" style="fill: none; stroke: #667881; stroke-width: 1.1; stroke-linecap: round"/>
-   </g>
-   <g id="text_8">
-    <text style="font-size: 7px; font-family: 'DejaVu Sans'; text-anchor: middle" x="329.4288" y="121.6176" transform="rotate(-0 329.4288 121.6176)">Mesure du courant</text>
-   </g>
-   <g id="patch_16">
-    <path d="M 47.3328 167.448
-Q 47.3328 129.3552 47.3328 92.492237
-" style="fill: none; stroke: #667881; stroke-width: 1.1; stroke-linecap: round"/>
-    <path d="M 45.5328 96.092237
-L 47.3328 92.492237
-L 49.1328 96.092237
-" style="fill: none; stroke: #667881; stroke-width: 1.1; stroke-linecap: round"/>
-   </g>
-   <g id="text_9">
-    <text style="font-size: 7px; font-family: 'DejaVu Sans'; text-anchor: middle" x="155.4696" y="159.7104" transform="rotate(-0 155.4696 159.7104)">Mesure de vitesse</text>
-   </g>
-   <g id="text_10">
-    <text style="font-size: 7px; font-family: 'DejaVu Sans'; text-anchor: start" x="47.3328" y="44.2416" transform="rotate(-0 47.3328 44.2416)">Consigne adaptée</text>
-   </g>
-   <g id="text_11">
-    <text style="font-size: 7px; font-family: 'DejaVu Sans'; text-anchor: middle" x="207.1872" y="49.5984" transform="rotate(-0 207.1872 49.5984)">Consigne de courant</text>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p107fa617ef">
-   <rect x="9.72" y="9.72" width="470.16" height="178.56"/>
-  </clipPath>
- </defs>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="750" height="336" viewBox="0 0 750 336" role="img"><title>Commande de vitesse avec boucle interne de courant</title><defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 1L9 5L0 9Z" fill="#243b4a"/></marker></defs><rect width="750" height="336" fill="white"/><g font-family="DejaVu Sans, sans-serif">
+<text x="18" y="27" fill="#182e3b" font-size="16" font-weight="bold" text-anchor="start">Commande de vitesse et de courant</text>
+<rect x="58.0" y="60" width="44" height="32" rx="3" stroke="#365768" fill="#e9f3f5"/>
+<text x="80" y="81" fill="#182e3b" font-size="13" font-weight="normal" text-anchor="middle">kₐ</text>
+<rect x="199.0" y="60" width="64" height="32" rx="3" stroke="#365768" fill="#e9f3f5"/>
+<text x="231" y="81" fill="#182e3b" font-size="13" font-weight="normal" text-anchor="middle">PI vitesse</text>
+<rect x="289.0" y="60" width="80" height="32" rx="3" stroke="#365768" fill="#e9f3f5"/>
+<text x="329" y="81" fill="#182e3b" font-size="13" font-weight="normal" text-anchor="middle">Limiteur</text>
+<rect x="504.0" y="60" width="72" height="32" rx="3" stroke="#365768" fill="#e9f3f5"/>
+<text x="540" y="81" fill="#182e3b" font-size="13" font-weight="normal" text-anchor="middle">PI courant</text>
+<rect x="613.0" y="60" width="54" height="32" rx="3" stroke="#365768" fill="#e9f3f5"/>
+<text x="640" y="81" fill="#182e3b" font-size="13" font-weight="normal" text-anchor="middle">kᵥ</text>
+<rect x="542.5" y="197" width="103" height="32" rx="3" stroke="#365768" fill="#e9f3f5"/>
+<text x="594" y="218" fill="#182e3b" font-size="13" font-weight="normal" text-anchor="middle">1/(R + L꜀ p)</text>
+<rect x="408.5" y="197" width="45" height="32" rx="3" stroke="#365768" fill="#e9f3f5"/>
+<text x="431" y="218" fill="#182e3b" font-size="13" font-weight="normal" text-anchor="middle">kₜ</text>
+<rect x="191.0" y="197" width="112" height="32" rx="3" stroke="#365768" fill="#e9f3f5"/>
+<text x="247" y="218" fill="#182e3b" font-size="13" font-weight="normal" text-anchor="middle">1/(f + Jₑq p)</text>
+<rect x="136.0" y="132" width="44" height="32" rx="3" stroke="#365768" fill="#e9f3f5"/>
+<text x="158" y="153" fill="#182e3b" font-size="13" font-weight="normal" text-anchor="middle">k꜀</text>
+<rect x="428.0" y="130" width="64" height="32" rx="3" stroke="#365768" fill="#e9f3f5"/>
+<text x="460" y="151" fill="#182e3b" font-size="13" font-weight="normal" text-anchor="middle">Mesure i</text>
+<rect x="366.0" y="274" width="44" height="32" rx="3" stroke="#365768" fill="#e9f3f5"/>
+<text x="388" y="295" fill="#182e3b" font-size="13" font-weight="normal" text-anchor="middle">kₑ</text>
+<circle cx="158" cy="76" r="13" fill="white" stroke="#365768" stroke-width="1.5"/>
+<text x="158" y="81" fill="#182e3b" font-size="15" font-weight="normal" text-anchor="middle">Σ</text>
+<circle cx="460" cy="76" r="13" fill="white" stroke="#365768" stroke-width="1.5"/>
+<text x="460" y="81" fill="#182e3b" font-size="15" font-weight="normal" text-anchor="middle">Σ</text>
+<circle cx="696" cy="213" r="13" fill="white" stroke="#365768" stroke-width="1.5"/>
+<text x="696" y="218" fill="#182e3b" font-size="15" font-weight="normal" text-anchor="middle">Σ</text>
+<circle cx="348" cy="213" r="13" fill="white" stroke="#365768" stroke-width="1.5"/>
+<text x="348" y="218" fill="#182e3b" font-size="15" font-weight="normal" text-anchor="middle">Σ</text>
+<polyline fill="none" stroke="#243b4a" stroke-width="1.6" points="20,76 56,76"/>
+<polygon fill="#243b4a" points="56,76 49,73 49,79"/>
+<polyline fill="none" stroke="#243b4a" stroke-width="1.6" points="102,76 143,76"/>
+<polygon fill="#243b4a" points="143,76 136,73 136,79"/>
+<polyline fill="none" stroke="#243b4a" stroke-width="1.6" points="171,76 197,76"/>
+<polygon fill="#243b4a" points="197,76 190,73 190,79"/>
+<polyline fill="none" stroke="#243b4a" stroke-width="1.6" points="263,76 287,76"/>
+<polygon fill="#243b4a" points="287,76 280,73 280,79"/>
+<polyline fill="none" stroke="#243b4a" stroke-width="1.6" points="369,76 445,76"/>
+<polygon fill="#243b4a" points="445,76 438,73 438,79"/>
+<polyline fill="none" stroke="#243b4a" stroke-width="1.6" points="473,76 502,76"/>
+<polygon fill="#243b4a" points="502,76 495,73 495,79"/>
+<polyline fill="none" stroke="#243b4a" stroke-width="1.6" points="576,76 612,76"/>
+<polygon fill="#243b4a" points="612,76 605,73 605,79"/>
+<polyline fill="none" stroke="#243b4a" stroke-width="1.6" points="667,76 696,76 696,198"/>
+<polygon fill="#243b4a" points="696,198 699,191 693,191"/>
+<polyline fill="none" stroke="#243b4a" stroke-width="1.6" points="682,213 648,213"/>
+<polygon fill="#243b4a" points="648,213 655,216 655,210"/>
+<polyline fill="none" stroke="#243b4a" stroke-width="1.6" points="542,213 455,213"/>
+<polygon fill="#243b4a" points="455,213 462,216 462,210"/>
+<polyline fill="none" stroke="#243b4a" stroke-width="1.6" points="408,213 363,213"/>
+<polygon fill="#243b4a" points="363,213 370,216 370,210"/>
+<polyline fill="none" stroke="#243b4a" stroke-width="1.6" points="335,213 305,213"/>
+<polygon fill="#243b4a" points="305,213 312,216 312,210"/>
+<polyline fill="none" stroke="#243b4a" stroke-width="1.6" points="191,213 26,213"/>
+<polygon fill="#243b4a" points="26,213 33,216 33,210"/>
+<polyline fill="none" stroke="#243b4a" stroke-width="1.6" points="158,213 158,166"/>
+<polygon fill="#243b4a" points="158,166 155,173 161,173"/>
+<polyline fill="none" stroke="#243b4a" stroke-width="1.6" points="158,132 158,91"/>
+<polygon fill="#243b4a" points="158,91 155,98 161,98"/>
+<polyline fill="none" stroke="#243b4a" stroke-width="1.6" points="508,213 508,146 494,146"/>
+<polygon fill="#243b4a" points="494,146 501,149 501,143"/>
+<polyline fill="none" stroke="#243b4a" stroke-width="1.6" points="428,146 414,146 414,117 460,117 460,91"/>
+<polygon fill="#243b4a" points="460,91 457,98 463,98"/>
+<polyline fill="none" stroke="#243b4a" stroke-width="1.6" points="348,157 348,198"/>
+<polygon fill="#243b4a" points="348,198 351,191 345,191"/>
+<polyline fill="none" stroke="#243b4a" stroke-width="1.6" points="158,213 158,290 364,290"/>
+<polygon fill="#243b4a" points="364,290 357,287 357,293"/>
+<polyline fill="none" stroke="#243b4a" stroke-width="1.6" points="410,290 696,290 696,228"/>
+<polygon fill="#243b4a" points="696,228 693,235 699,235"/>
+<circle cx="158" cy="213" r="3" fill="#243b4a"/>
+<circle cx="508" cy="213" r="3" fill="#243b4a"/>
+<text x="26" y="63" fill="#182e3b" font-size="13" font-weight="normal" text-anchor="middle">Ωᵣₑf</text>
+<text x="401" y="63" fill="#182e3b" font-size="13" font-weight="normal" text-anchor="middle">iᵣₑf</text>
+<text x="708" y="120" fill="#182e3b" font-size="13" font-weight="normal" text-anchor="middle">u</text>
+<text x="514" y="202" fill="#182e3b" font-size="13" font-weight="normal" text-anchor="middle">i</text>
+<text x="398" y="200" fill="#182e3b" font-size="13" font-weight="normal" text-anchor="middle">Cₘ</text>
+<text x="348" y="148" fill="#182e3b" font-size="13" font-weight="normal" text-anchor="middle">Cᵣ</text>
+<text x="58" y="200" fill="#182e3b" font-size="13" font-weight="normal" text-anchor="middle">Ω</text>
+<text x="621" y="282" fill="#182e3b" font-size="13" font-weight="normal" text-anchor="middle">kₑ Ω</text>
+<text x="144" y="60" fill="#182e3b" font-size="14" font-weight="normal" text-anchor="middle">+</text>
+<text x="171" y="104" fill="#182e3b" font-size="14" font-weight="normal" text-anchor="middle">−</text>
+<text x="444" y="60" fill="#182e3b" font-size="14" font-weight="normal" text-anchor="middle">+</text>
+<text x="472" y="105" fill="#182e3b" font-size="14" font-weight="normal" text-anchor="middle">−</text>
+<text x="711" y="188" fill="#182e3b" font-size="14" font-weight="normal" text-anchor="middle">+</text>
+<text x="711" y="239" fill="#182e3b" font-size="14" font-weight="normal" text-anchor="middle">−</text>
+<text x="372" y="231" fill="#182e3b" font-size="14" font-weight="normal" text-anchor="middle">+</text>
+<text x="363" y="184" fill="#182e3b" font-size="14" font-weight="normal" text-anchor="middle">−</text>
+<text x="18" y="326" fill="#182e3b" font-size="12" font-weight="normal" text-anchor="start">Capteur de courant étalonné en ampères. Le limiteur est réglé au-dessous de 5 A.</text>
+</g></svg>

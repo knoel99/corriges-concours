@@ -1,0 +1,61 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_analyse-monetaire-et-politique-economique_2016",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Analyse monétaire et politique économique",
+    "annee": 2016,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "Les politiques de l’emploi peuvent-elles nuire à l’attractivité des territoires ?",
+  "gabarit": "dissertation",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2016_Sujet_1A_D2-1_Analyse-Monetaire.pdf",
+    "sujet_sha256": "56a1858fa82690bba0ac3c8bd4b3b4f4b1a8fc099ba7bad5aa01228c8e78cba2",
+    "index": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=289&field_year_target_id%5B%5D=281",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2016_Sujet_1A_D2-1_Analyse-Monetaire.pdf",
+        "sha256": "56a1858fa82690bba0ac3c8bd4b3b4f4b1a8fc099ba7bad5aa01228c8e78cba2",
+        "pages": 1
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/cout-par-unite.svg",
+      "question": "Composition",
+      "legende": "À productivité donnée, une hausse du coût horaire renchérit l’unité produite. Mais à 16 unités par heure, un coût horaire de 32 € revient à 2 € par unité, contre 3 € pour 24 € et 8 unités par heure."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Dissertation sur fiscalité du travail, appariement, capital humain, attractivité des entreprises et des travailleurs, effets spatiaux et évaluation causale ; exemple graphique du coût salarial unitaire."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Composition"
+    ],
+    "limites": "Composition proposée dans le contexte de la session ; les données des figures illustrent un mécanisme."
+  }
+}

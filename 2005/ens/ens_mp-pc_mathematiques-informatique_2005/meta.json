@@ -1,0 +1,100 @@
+{
+  "slug": "ens_mp-pc_mathematiques-informatique_2005",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Mathématiques-informatique",
+    "annee": 2005,
+    "duree_heures": 4
+  },
+  "questions": 26,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-i/session-2005/sujet-ecrit-2005-i_mathematiques_informatique.pdf",
+    "index_banque": "https://banques-ecoles.fr/cms/filiere-mp/les-annales-et-rapports-des-jurys/",
+    "identification": "Cahier ULC 523, sept pages, quatre heures. MP groupe I Paris, Lyon et Cachan ; PC groupe I Paris et Lyon.",
+    "sujet_sha256": "6b5eb001605cea4d93cb1f16aa784535277977733ededf1e14e0d5f269755870",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-i/session-2005/rapport-2005-i_ecrit_mathematiques_informatique.pdf",
+    "rapport_sha256": "06744103fc808db9f49da7a1b139437e96e08518578582018bf866423b07028b"
+  },
+  "figures": [
+    {
+      "fichier": "figures/permutations.svg",
+      "question": "2.11",
+      "legende": "Figure 1 — Les six permutations du point de coordonnées un, zéro et trois délimitent la région majorisée dans le plan de somme quatre. La teinte couvre aussi son intérieur."
+    },
+    {
+      "fichier": "figures/alternance.svg",
+      "question": "3.1",
+      "legende": "Figure 2 — Sur une chaîne alternée impaire, inverser les deux couleurs échange leurs effectifs locaux. Le reste du graphe conserve sa coloration."
+    },
+    {
+      "fichier": "figures/tangentes.svg",
+      "question": "4.5",
+      "legende": "Figure 3 — Pour un rayon fixé supérieur à un, chacune des deux tangentes exclut un angle de demi-largeur alpha autour de sa normale. L’arc restant entre les normales a une ouverture égale à la partie positive de leur écart diminué de deux alpha."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Les 26 questions de majorisation, matrices stochastiques, colorations, tournois et géométrie. Construction du transfert en conservant le tri, preuve du critère des mariages, correction de Tournoi, hexagone projeté et analyse des polygones lorsque le centre est extérieur."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture des 26 questions sur le sujet ULC 523 et son rapport. Contrôle des transferts de majorisation, des sommets de l’hexagone, de la preuve par couplage, des 2 240 listes admissibles de scores de tournoi jusqu’à dix équipes et des trois illustrations. Détail de la dernière unité d’un échange de couleurs et justification de la stricte minimalité de l’aire et du moment sur un intervalle de rayons."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7",
+      "2.8",
+      "2.9",
+      "2.10",
+      "2.11",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.6"
+    ],
+    "precision": "Les 26 repères des quatre parties suivent le cahier ULC 523 dans les deux éditions.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "6b5eb001605cea4d93cb1f16aa784535277977733ededf1e14e0d5f269755870",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Relecture des 26 questions sur le sujet ULC 523 et son rapport. Contrôle des transferts de majorisation, des sommets de l’hexagone, de la preuve par couplage, des 2 240 listes admissibles de scores de tournoi jusqu’à dix équipes et des trois illustrations. Détail de la dernière unité d’un échange de couleurs et justification de la stricte minimalité de l’aire et du moment sur un intervalle de rayons.",
+      "commit_redaction_anterieure": "eb6cf94ef44eb65c09075b022ff03c21287c2add"
+    }
+  }
+}

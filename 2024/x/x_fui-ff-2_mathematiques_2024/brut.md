@@ -4,7 +4,9 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 ## Exercice · Régularité d’une série entière
 
@@ -34,7 +36,9 @@ Si $0<a\leq1$, fixons un réel $L>0$. On peut choisir $N$ tel que $\sum_{n=1}^N 
 
 Pour tout $a>0$, posons $c_n=n^{-a}$ pour $n\ge1$ et $c_0=c_{-1}=0$. Sur $]-1,1[$, le produit $h(x)=(1-x)^2 f_a(x)$ a pour coefficients $b_n=c_n-2c_{n-1}+c_{n-2}$. Pour $n\ge3$, écrivons $v(t)=t^{-a}$. Le théorème fondamental appliqué deux fois donne
 $$b_n=\int_0^1\!\int_0^1 v''(n-2+s+t)\,ds\,dt.$$
-Comme $v''(t)=a(a+1)t^{-a-2}$, on obtient $0\le b_n\le a(a+1)(n-2)^{-a-2}$. Par suite $\sum n|b_n|<\infty$. La série de $h$ et celle de sa dérivée convergent uniformément sur $[-1,1]$, et $h$ a une dérivée à droite en $-1$. Comme $(1-x)^2$ y vaut 4 et que $f_a$ y est continue d’après E.5, le quotient fournit la dérivée à droite de $f_a$. Ainsi $E'_{-1}=]0,+\infty[$. Dériver directement la série initiale au bord laisserait échapper le cas $0<a\le1$.
+Comme $v''(t)=a(a+1)t^{-a-2}$, on obtient $0\le b_n\le a(a+1)(n-2)^{-a-2}$. Par suite $\sum n|b_n|<\infty$. Les séries $H(x)=\sum_{n\ge1}b_nx^n$ et $\sum_{n\ge1}nb_nx^{n-1}$ convergent donc uniformément sur $[-1,1]$. La première prolonge $h$ et admet en $-1$ une dérivée à droite donnée par la seconde. Par E.5, $f_a(x)=H(x)/(1-x)^2$ jusqu’en $-1$ inclus. La règle du quotient donne alors
+$$f'_a(-1^+)=\frac{H'(-1^+)+H(-1)}4,\qquad E'_{-1}=]0,+\infty[.$$
+Par exemple, $f_1(x)=-\log(1-x)$ a pour dérivée à droite $1/2$ en $-1$, alors que l’insertion de $x=-1$ dans la série dérivée initiale donne la série divergente $1-1+1-\cdots$.
 
 ![Pour a = 1/2, le coefficient de la série dérivée initiale grandit. Après multiplication par (1 − x)², le coefficient de la dérivée décroît comme une constante fois n puissance −3/2.](figures/secondes-differences.svg)
 
@@ -52,7 +56,7 @@ Prendre un vecteur $y\ne0$ qui engendre l’image. Pour tout $x$, il existe un u
 
 Choisir une colonne non nulle $Y$ de $A$. Toutes les colonnes s’écrivent $\lambda_jY$. En posant $\Lambda=(\lambda_1,\ldots,\lambda_n)^T$, on obtient $A=Y\Lambda^T$. Au moins un des coefficients vaut 1 pour la colonne choisie, donc les deux facteurs sont non nuls.
 
-![Une transformation de rang un envoie chaque point sur la même droite. Le facteur de droite calcule un scalaire, le facteur de gauche fixe la direction.](figures/image-de-rang-un.svg)
+![Chaque flèche relie le point (x, y) à son image (t, 0,45t), où t = 0,72x − 0,30y. Les quatre images appartiennent à la droite de pente 0,45.](figures/image-de-rang-un.svg)
 
 ### P.3a · La trace comme condition nécessaire
 
@@ -114,7 +118,7 @@ Si $\varphi(M)=0$, la conservation du rang donne $\operatorname{rg} M=0$, donc $
 
 ### P.11 · Déterminer quel facteur reste fixe
 
-Les matrices $U_1V^T,U_2V^T$ sont indépendantes et leur somme $(U_1+U_2)V^T$ a rang un. Les images sont donc indépendantes et leur somme a rang un. Écrire ces images $Y_iW_i^T$. Par P.9, $Y_1$ et $Y_2$ sont parallèles ou $W_1$ et $W_2$ sont parallèles. Les deux parallélismes simultanés rendraient les images proportionnelles, en contradiction avec l’injectivité.
+On prend $U_1,U_2$ dans $M_{n,1}(\mathbb R)$, conformément au produit $U_iV^T$ et à la factorisation de P.2. Les matrices $U_1V^T,U_2V^T$ sont indépendantes et leur somme $(U_1+U_2)V^T$ a rang un. Les images sont donc indépendantes et leur somme a rang un. Écrire ces images $Y_iW_i^T$. Par P.9, $Y_1$ et $Y_2$ sont parallèles ou $W_1$ et $W_2$ sont parallèles. Les deux parallélismes simultanés rendraient les images proportionnelles, en contradiction avec l’injectivité.
 
 ![La conservation du rang de la somme et l’injectivité de la transformation imposent exactement une des deux possibilités.](figures/deux-parallelismes.svg)
 
@@ -144,4 +148,4 @@ Pour chaque $U\ne0$, P.14b et la linéarité dans la direction initiale $V$ perm
 
 ### P.16 · Étendre la formule à tout rang
 
-La formule s’applique notamment aux matrices élémentaires $e_ie_j^T$, qui forment une base. Par linéarité elle donne $\varphi(M)=AMB$ pour toute matrice $M$. Dans l’autre branche de P.11, composer au départ ou à l’arrivée avec la transposition échange les deux types de facteurs et mène à $AM^TB$. Ces deux formes conservent effectivement le rang pour $A,B$ inversibles. Si $n=1$, tout isomorphisme est une multiplication par un scalaire non nul et la conclusion reste vraie directement.
+La formule s’applique notamment aux matrices élémentaires $e_ie_j^T$, qui forment une base. Par linéarité elle donne $\varphi(M)=AMB$ pour toute matrice $M$. Dans l’autre branche de P.11, les deux images $Y_i W_i^T$ ont leurs premiers facteurs parallèles. Posons $\psi(M)=\varphi(M)^T$. Cette application linéaire conserve le rang et ses images $W_iY_i^T$ ont leurs seconds facteurs parallèles. La branche que nous venons de démontrer donne donc $\psi(M)=CMD$ avec $C,D$ inversibles. En transposant, on obtient $\varphi(M)=D^TM^TC^T$. Réciproquement, les multiplications à gauche et à droite par des matrices inversibles et la transposition conservent le rang. Si $n=1$, tout isomorphisme est une multiplication par un scalaire non nul et la conclusion reste vraie directement.

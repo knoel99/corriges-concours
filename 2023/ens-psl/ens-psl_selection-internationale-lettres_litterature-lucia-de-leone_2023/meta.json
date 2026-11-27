@@ -16,7 +16,9 @@
   },
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/litterature-ecrit4-sil2023.pdf",
-    "sujet_sha256": "6841128061b92a28f9b5cf1dce421a62578317f85ce6d15ead375e3289b630dc"
+    "sujet_sha256": "6841128061b92a28f9b5cf1dce421a62578317f85ce6d15ead375e3289b630dc",
+    "index_officiel": "https://www.ens.psl.eu/une-formation-d-exception/admission-concours/international/concours-selection-internationale-0",
+    "rapport_et_perimetre": "La rubrique Littérature 2023 de l’archive officielle présente cinq sujets. Elle ne lie pas de rapport d’écrit pour la discipline."
   },
   "figures": [
     {
@@ -35,7 +37,45 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Commentaire organisé du propos de Lucía De Leone à partir de Distancia de rescate, de la première Bucolique de Virgile et de La Mare au diable de George Sand, avec préparation et schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "fournisseur": "codex",
+      "session": "francais_pt_2325",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture intégrale du ou des feuillets et comparaison aux deux éditions. Distinction entre thème et traitement de l’espace ; contrôle de la répartition de l’attelage dans le chapitre de Sand et rapprochement avec la construction rétrospective de Schweblin."
     }
   ],
-  "date_revision": "2026-11-24"
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "Commentaire",
+        "auteur_reference": "Lucia Maria De Leone, « Campos que matan. Espacios, tiempos y narración en Distancia de rescate de Samanta Schweblin », 452ºF, 16, 2017. Extrait traduit de l’espagnol sur le feuillet.",
+        "debut": "De nombreuses expressions artistiques contemporaines",
+        "fin": "des traces de son passé idéologisé.",
+        "sha256_extrait_espaces_unifies": "bf4a9e8c642d4d5f9ff71dbb201c807866d5fa46449afe3db2c0c3d85344e063",
+        "consigne": "Vous analyserez et commenterez la citation ci-dessous sous la forme d’un écrit organisé. Vous pouvez éclairer ces propos par des éléments de contexte, par vos connaissances d’histoire et de théorie littéraires et poétiques. Vous ferez appel à votre expérience de lectrice, sans vous limiter au corpus de votre projet de recherche.",
+        "page_pdf": 1,
+        "duree": "2 heures",
+        "exercices": 1,
+        "annexes": []
+      }
+    ]
+  }
 }

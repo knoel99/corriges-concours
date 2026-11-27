@@ -1,0 +1,58 @@
+{
+  "slug": "ens_mp-pc_allemand-lv1_2010",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Allemand (LV1)",
+    "annee": 2010,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "intitule": "Rede-Duelle: Der schöne Streit",
+  "bareme": {
+    "version": 12,
+    "expression": 8
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2010/MPI/mp-sujet-lv1.pdf#page=2",
+    "sujet_sha256": "05dc37885caedddf4858adb064ff462aa7a3a1748ac0b98339edfada8569615a",
+    "page_pdf": 2,
+    "index": "https://www.ens.psl.eu/rapports-et-sujets-2010-mpi",
+    "etablissements_imprimes": "ENS de Paris, Lyon et Cachan",
+    "texte_support": "Simone Kaiser, Spiegel Online, 10 septembre 2009, texte adapté."
+  },
+  "redaction": "Version française intégrale de l’article sur les clubs de débat et argumentation d’environ 200 mots en allemand. Repérage du discours rapporté, des termes du tournoi et de l’objectif pédagogique.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I",
+      "fichier": "figures/debattre-sans-choisir.svg",
+      "legende": "Dans le format décrit, la position est attribuée et la qualité du raisonnement mise à l’épreuve."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version française intégrale de l’article sur les clubs de débat et argumentation d’environ 200 mots en allemand. Repérage du discours rapporté, des termes du tournoi et de l’objectif pédagogique.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I",
+      "II"
+    ]
+  }
+}

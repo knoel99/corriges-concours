@@ -6,6 +6,10 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Dans quelle mesure l’environnement économique construit au sein de l’Union européenne se conforme-t-il aux grands principes de l’analyse économique ?
 
 Un producteur établi dans un État membre peut vendre à des clients d’un autre État sans droit de douane intérieur, mais il peut aussi se voir interdire une entente sur les prix ou devoir acquitter le coût de ses émissions. L’environnement économique construit par l’Union européenne organise à la fois la liberté des échanges et leurs conditions d’exercice. Le verbe « se conformer » suppose un terme de comparaison. L’analyse économique n’offre pas un code unique de bonne conduite. Elle explique notamment les gains de la spécialisation, précise les conditions d’efficacité d’un marché et étudie les raisons et les coûts d’une intervention collective. Dans quelle mesure ces principes rendent-ils compte des institutions européennes, de leurs réussites et des tensions que leur architecture laisse subsister ?
@@ -17,6 +21,10 @@ Un échange volontaire peut être mutuellement avantageux même lorsqu’un pays
 Pourtant, une union douanière n’est pas identique au libre-échange mondial. Dans l’analyse de Viner, si une entreprise européenne moins coûteuse remplace une production nationale jusque-là protégée, il y a création de commerce. Si le tarif extérieur commun fait remplacer un producteur de pays tiers plus efficace par un fournisseur européen plus cher hors taxe, il y a détournement de commerce. Le solde de ces effets dépend des coûts et des élasticités. De plus, le gain total ne dit rien de sa répartition. Le bassin d’emploi dont le principal employeur ferme peut perdre pendant des années alors même que le revenu réel agrégé s’élève.
 
 La libre entrée et la concurrence sont aussi des constructions juridiques. Une entreprise isolée peut vouloir relever son prix en réduisant la quantité offerte. Des entreprises qui s’entendent reproduisent collectivement ce comportement. Les articles 101 et 102 du traité sur le fonctionnement de l’Union européenne permettent d’agir contre certaines ententes et les abus de position dominante affectant les échanges entre États membres. Une position dominante acquise par l’innovation n’est pas, à elle seule, une infraction. L’objectif est de préserver la contestabilité du marché. Dans un secteur à coûts fixes élevés ou à effets de réseau, le grand nombre de petits vendeurs n’est d’ailleurs pas nécessairement l’organisation productive la moins coûteuse. L’autorité doit distinguer l’avantage d’échelle du comportement d’exclusion.
+
+Supposons que le coût d’un bien soit de 80 euros hors de l’Union et de 90 euros chez un partenaire européen. Un droit extérieur de 20 euros porte le premier prix à 100 euros. Le client préfère alors le partenaire à 90, bien que sa production mobilise davantage de ressources. Abolir une frontière intérieure et maintenir une frontière extérieure peuvent ainsi déplacer le commerce au profit d’un producteur plus coûteux.
+
+![Figure 1 — De l’institution au critère économique](figures/institutions-europeennes.svg)
 
 ### II. L’économie de marché elle-même appelle des institutions communes de correction et d’assurance
 
@@ -37,3 +45,9 @@ Les règles budgétaires cherchent enfin à concilier la dette soutenable de cha
 L’environnement européen met donc en œuvre des principes économiques puissants, qui expliquent aussi certaines de ses limites. L’ouverture peut accroître le revenu tout en créant des perdants, la monnaie unique faciliter l’échange tout en rendant les ajustements nationaux plus difficiles, la subvention corriger une externalité tout en faussant la concurrence. La conformité se juge institution par institution, au regard des hypothèses, de l’échelle du problème et de l’objectif que les Européens ont choisi de poursuivre.
 
 [Énoncé officiel](https://www.ens-rennes.fr/medias/fichier/sujet-economie-d-e-2026_1790867553852-pdf)
+
+## Vérification sur le sujet
+
+La composition officielle de quatre heures tient sur une page et ne comporte pas d’annexe. Les deux copies étudient les principes de l’échange et de la concurrence, les corrections des externalités et les conditions d’une zone monétaire commune. La distinction entre intérêt privé et coût social est vérifiée sur l’exemple de détournement de commerce.
+
+Un second cas montre comment l’institution peut rapprocher une décision privée de l’intérêt collectif. Supposons une tonne de pollution évitée au coût de 30 euros sur un site et de 70 euros sur un autre. Pour une seule tonne à éviter et des dommages identiques quel que soit le site, choisir le premier économise 40 euros de ressources. Un marché de quotas peut sélectionner cette possibilité si les émissions sont mesurées, le plafond est contraignant et l’échange fonctionne. La répartition initiale des quotas et des recettes demeure une question distributive distincte.

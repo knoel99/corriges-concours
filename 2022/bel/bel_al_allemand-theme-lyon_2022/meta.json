@@ -17,7 +17,18 @@
   "sources": {
     "sujet": "https://www.ens-lyon.fr/sites/default/files/2022-11/Session-2022_BEL_Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=8",
     "sujet_sha256": "8dcbf847bd6ec9f6883a858ccf44d61aa36cd84ce4117563a1e2f9c605776353",
-    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2022-11/Allemand%202022_0.pdf#page=13"
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2022-11/Allemand%202022_0.pdf#page=13",
+    "sha256_rapport_jury": "8f72cb874f061a5392f63d009ab7ea24916972a9fbbf175efb26434914a14283",
+    "pages_rapport_verifiees": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "ouvrage": "Françoise Chandernagor, Couleur du temps (2004)."
   },
   "figures": [
     {
@@ -26,7 +37,7 @@
       "legende": "Qui juge l’apprentissage du garçon ?"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -37,6 +48,23 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Thème allemand intégral de l'extrait de Chandernagor, guidage sur la voix du père, les temps, l'atelier et le clavecin, schéma des discours."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture phrase par phrase sur le fascicule de l’ENS de Lyon et rapprochement avec le rapport du jury. Itératif de la première phrase, écho sonore du clavecin, surnom, conditionnels des noms de peintres et imparfait de la réplique de Prades.",
+      "agent": "lyon_ses_sources"
     }
   ],
   "droits_sources": {
@@ -44,5 +72,21 @@
       "Françoise Chandernagor, *Couleur du temps* (2004)."
     ],
     "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Proposition de thème"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Proposition de thème",
+        "page_pdf": 8,
+        "page_pdf_fin": 8,
+        "perimetre": "Du premier mot « Dorénavant » à « devenait-il, peu à peu, musicien… ». Scène de l’atelier, discours de Baptiste, aparté du narrateur, réplique de Louis Prades et dénouement."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
   }
 }

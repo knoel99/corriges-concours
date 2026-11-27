@@ -1,0 +1,111 @@
+{
+  "slug": "bel_bl_economie-oral-commun-partage-de-la-valeur-ajoutee_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Économie (oral commun) — Partage de la valeur ajoutée",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "Le partage de la valeur ajoutée",
+  "questions": 0,
+  "documents": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/economie_20_juin.pdf#page=1",
+    "sha256_sujet": "61947fd9b8c2378b00faa8909519ce591eebc44d2a21887bf1d39ad2381c43b9",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_economie_tronc_commun.pdf",
+    "sha256_rapport_jury": "b0b1a696afc5d758d40283be9361a3fe50abd56041e7cad3533c62eabb4c5dd7",
+    "pages_sujet_dans_pdf": [
+      1,
+      6
+    ],
+    "pages_dossier": [
+      1,
+      6
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/part-travail.svg",
+      "question": "Exposé sur le dossier",
+      "legende": "Part de la valeur ajoutée revenant au travail en 1980 et 2015, en pourcentage. Représentation des valeurs du document 1."
+    },
+    {
+      "fichier": "figures/versements-2021.svg",
+      "question": "Exposé sur le dossier",
+      "legende": "Versements de 2021 par mécanisme, en milliards d’euros. La prime exceptionnelle de pouvoir d’achat désigne ici le dispositif antérieur à la PPV. Données du document 3."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "agent": "x_maths_b_recentes",
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions après lecture des quatre documents et du rapport commun. Vérification visuelle des variations internationales, des dates et dénominateurs, des mécanismes de participation, de la substitution au salaire et de la portée des résultats microéconomiques. Deux figures et quatre questions guidées."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Le partage de la valeur ajoutée"
+    ],
+    "annexes_verifiees": [
+      {
+        "document": 1,
+        "intitule": "La baisse de la part de la valeur ajoutée en question",
+        "pages": [
+          2
+        ],
+        "pages_pdf": [
+          2
+        ]
+      },
+      {
+        "document": 2,
+        "intitule": "La part des salaires dans le PIB : spécificité française et tendances internationales",
+        "pages": [
+          3
+        ],
+        "pages_pdf": [
+          3
+        ]
+      },
+      {
+        "document": 3,
+        "intitule": "Les mécanismes de partage des profits en France",
+        "pages": [
+          4,
+          5
+        ],
+        "pages_pdf": [
+          4,
+          5
+        ]
+      },
+      {
+        "document": 4,
+        "intitule": "Effets micro- et macro-économiques des instruments de partage des profits",
+        "pages": [
+          6
+        ],
+        "pages_pdf": [
+          6
+        ]
+      }
+    ],
+    "precision": "Un seul sujet d’exposé. La couverture du dossier précise que le dessin satirique ne fait pas partie du commentaire. Les questions d’entretien du guidé sont des exercices.",
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "61947fd9b8c2378b00faa8909519ce591eebc44d2a21887bf1d39ad2381c43b9",
+      "sha256_rapport_jury_controle": "b0b1a696afc5d758d40283be9361a3fe50abd56041e7cad3533c62eabb4c5dd7",
+      "perimetre": "Rédaction des deux éditions après lecture des quatre documents et du rapport commun. Vérification visuelle des variations internationales, des dates et dénominateurs, des mécanismes de participation, de la substitution au salaire et de la portée des résultats microéconomiques. Deux figures et quatre questions guidées."
+    }
+  }
+}

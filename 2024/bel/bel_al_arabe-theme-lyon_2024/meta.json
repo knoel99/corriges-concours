@@ -1,0 +1,118 @@
+{
+  "slug": "bel_al_arabe-theme-lyon_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Arabe (thème Lyon)",
+    "annee": 2024,
+    "modalite": "écrit de spécialité"
+  },
+  "questions": 1,
+  "duree_heures": 4,
+  "redaction": "Corrigé original proposé par IA, non officiel.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2024-11/Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=12",
+    "sujet_sha256": "cbf76039969ec8cec685a228168381915bdc7b64ae30b2cbee576b3a4f1eeb56",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2024-11/Arabe%202024%20OK.pdf#page=4",
+    "rapport_jury_sha256": "adaa8939239aa19942fb636ae14d1d4f45fb675b7692d4228e59bdb0c95bb70f",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2024",
+    "ouvrage": "Charles Baudelaire, « Salon de 1846 », *Écrits sur l’art* (édition de 1999 citée par le sujet).",
+    "ecoles": "ENS de Lyon"
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2024-11/Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=12",
+      "sha256": "cbf76039969ec8cec685a228168381915bdc7b64ae30b2cbee576b3a4f1eeb56",
+      "pages": 20,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "467f29e0ec3180170f83906b396898332e097600bd045b203d322734b30ba14a"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "8792f553de5cddb862b1610114caf646f31cce12b7629be38076e505305ad7a8"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "7cd9c374f5efcfa0693a56c2b0ad22857ed32eca221c11d950c8f4cef2c15b92"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2024-11/Arabe%202024%20OK.pdf#page=4",
+      "sha256": "adaa8939239aa19942fb636ae14d1d4f45fb675b7692d4228e59bdb0c95bb70f",
+      "pages": 5,
+      "pages_verifiees": [
+        {
+          "numero": 4,
+          "rendu_sha256": "34cfaadcc1aabcc1ef25380af964b8f1e9b61e88cd7eaa4891455d95842f0ef9"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "214e0d75e0ee13ecb0ac1e0908bd92e9b7b52df864d43efda6335bf4efd4ecde"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "Proposition de thème",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "Le dernier membre de la phrase déplace le critère du romantisme, du motif représenté vers l’expérience sensible de l’artiste."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction originale des deux éditions, étude du feuillet, consultation du jury, élaboration du guide et du schéma."
+    },
+    {
+      "phase": "revision",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle sur le fac-similé du titre, de la coupure, du jeu sur les Anciens, de la valeur polémique de la pointe contre Raoul Rochette et de la restriction finale."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Proposition de thème"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Proposition de thème",
+        "page_pdf": 12,
+        "pages_pdf": [
+          12
+        ],
+        "perimetre": "Titre, question sur le drapeau, coupure imprimée, série des définitions récusées et conclusion sur la manière de sentir."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "slug": "agro-veto_bcpst_chimie_2023",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "Chimie",
+    "annee": 2023
+  },
+  "questions": 45,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "rapport": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/rapport_chimie_2023_le_1.pdf",
+    "rapport_sha256": "0e393b3608b5023eb5fb6b5397b7bde498dd88a2a447fe05d4f6156b10212c1f",
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/abcpst_sp_0323_chimie_1.pdf",
+    "sujet_sha256": "109a40601a77bd2aacc9f050a91b696ee663b5d20c47d6d408faea68645d6818"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+    ],
+    "precision": "Les questions 1 à 27 sur les carbonates, les analyses de la chaux et la mesure optique du dioxygène sont traitées. La seconde partie, questions 28 à 45, consacrée à une synthèse de toxine, est hors de la couverture de ces deux éditions."
+  },
+  "date_revision": "2026-11-25",
+  "figures": [
+    {
+      "question": "11",
+      "fichier": "figures/predominance-du-carbone.svg",
+      "legende": "Les croisements de concentrations se trouvent à pH 6 et 10. À pH 12, la forme carbonate prédomine très largement."
+    },
+    {
+      "question": "16",
+      "fichier": "figures/bilans-des-indicateurs.svg",
+      "legende": "Les deux volumes sont mesurés depuis le début du titrage. Chaque ion carbonate consomme un proton avant chaque virage."
+    },
+    {
+      "question": "18",
+      "fichier": "figures/residus-de-calcium.svg",
+      "legende": "Les deux solides initiaux conduisent à CaO. La fraction de masse perdue diffère selon la molécule volatilisée."
+    },
+    {
+      "question": "24",
+      "fichier": "figures/relaxation-et-fluorescence.svg",
+      "legende": "Diagramme énergétique simplifié. La différence entre absorption et émission correspond ici à de la relaxation non radiative."
+    },
+    {
+      "question": "26",
+      "fichier": "figures/calibration-optique.svg",
+      "legende": "Reconstitution de la droite et de deux lectures de la figure 6. La pression est exprimée en kilopascals."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction originale des questions 1–27 dans les deux éditions à partir du sujet officiel et du rapport. Lecture des courbes pH-métriques, thermogravimétriques, spectrales et de calibration à 5 °C. Cinq figures originales, bilans, analyse dimensionnelle et vérification des ordres de grandeur. Questions 28–45 délimitées hors couverture."
+    }
+  ]
+}

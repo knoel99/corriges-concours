@@ -42,5 +42,56 @@
       "modifications": true,
       "perimetre": "Rédaction des douze questions sur les nombres premiers, les puissances et les nombres de Carmichael. Original lu dans les quatre pages du PDF. Contrôle croisé des trois listes de premiers, deux factorisations et sept exposants jusqu’à 500, puis de tous les nombres de Carmichael jusqu’à 30 000 inclus. Preuve de la borne stricte du dernier crible et trois illustrations originales."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "pages_des_questions": {
+      "1": 1,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 3,
+      "6": 3,
+      "7": 3,
+      "8": 3,
+      "9": 3,
+      "10": 4,
+      "11": 4,
+      "12": 4
+    },
+    "precision": "Les 12 rubriques de chaque édition concordent avec les questions du fac-similé. Les deux séries de réponses ont été retrouvées au commit du journal indiqué.",
+    "origine_attestation": {
+      "commit_du_journal": "0ae75d2162d1b8b67d6f2a5269ab9a982a3833bd",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction des douze questions sur les nombres premiers, les puissances et les nombres de Carmichael. Original lu dans les quatre pages du PDF. Contrôle croisé des trois listes de premiers, deux factorisations et sept exposants jusqu’à 500, puis de tous les nombres de Carmichael jusqu’à 30 000 inclus. Preuve de la borne stricte du dernier crible et trois illustrations originales.",
+      "sha256_sujet_controle": "6b85a95d30aca9930af1bb93fc3febe40e9ccd5e047814db274bfedba588a774"
+    },
+    "controle_fonctions": {
+      "fonctions": [
+        "estPremier"
+      ],
+      "cas_par_edition": 399
+    },
+    "subdivisions_du_sujet": {
+      "2": [
+        "1",
+        "2"
+      ]
+    }
+  }
 }

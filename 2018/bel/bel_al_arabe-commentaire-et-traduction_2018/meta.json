@@ -1,0 +1,140 @@
+{
+  "slug": "bel_al_arabe-commentaire-et-traduction_2018",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Arabe (commentaire et traduction)",
+    "annee": 2018,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "duree_heures": 6,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2018-10/2018%20commentaire%20et%20traduction%20en%20LVE.pdf#page=6",
+    "sujet_sha256": "7fc20aeb691b830e55ba968bf8ddffeea75d8b969364dfe82fb2483888cfae3e",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-11/Fascicule%20ARABE_2018.pdf#page=1",
+    "rapport_jury_sha256": "39699d9c31b0a494d1d1285f1c4fe20158fd9949314aac5b5efd40fc0ef2619d",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2018",
+    "ouvrage": "Mahmoud Messadi, conférence sur les lettres et sur son œuvre, *Œuvres complètes*, t. II, Tunis, 2002, p. 86–87.",
+    "pages_rapport_verifiees": [
+      1,
+      2
+    ],
+    "section_rapport": "Écrit, toutes séries, commentaire et traduction."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2018-10/2018%20commentaire%20et%20traduction%20en%20LVE.pdf#page=6",
+      "sha256": "7fc20aeb691b830e55ba968bf8ddffeea75d8b969364dfe82fb2483888cfae3e",
+      "pages": 22,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "a9a09feebfbb36d1f404a22eea05e1d0743377d81e7235c6b744455834e6c70c"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "4cd5f94b52f093f26acae3af172df8cae2001c4cf0f2555ac4d1ed47912c76c0"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "2e9eab8b104f88271c56aafa7cce2b949da1a1265367cadfa47522711c0fbc40"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2018-11/Fascicule%20ARABE_2018.pdf#page=1",
+      "sha256": "39699d9c31b0a494d1d1285f1c4fe20158fd9949314aac5b5efd40fc0ef2619d",
+      "pages": 2,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "3cffe45be889ef393247119da2c054cbe42ed4a628e93aa2c151731581cd7e17"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "d13984fbfb0c6317ef09d94f9bd5cfd3792c0c115198d77564d01df02b066995"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "Commentaire en arabe",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "La parole littéraire exprime une vie intérieure, participe à la formation de la personne et permet à une communauté de se reconnaître."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire arabe de l’extrait entier, version française de toutes les phrases prescrites, indications et schéma."
+    },
+    {
+      "phase": "revision",
+      "agent": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture de la progression du sujet individuel vers le groupe, des trois propriétés et de la distinction entre les deux comparaisons avec la mort et la formule finale de la version."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire en arabe",
+      "Version française"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "Commentaire en arabe",
+        "pages_pdf": [
+          6,
+          7
+        ],
+        "lignes": [
+          1,
+          25
+        ],
+        "langue": "arabe"
+      },
+      {
+        "question": "Version française",
+        "pages_pdf": [
+          6
+        ],
+        "lignes": [
+          1,
+          12
+        ],
+        "premiers_mots": "ولعلّ أحسن تعريف",
+        "derniers_mots": "ميّتة من قبل أن تولد",
+        "langue": "français"
+      }
+    ]
+  }
+}

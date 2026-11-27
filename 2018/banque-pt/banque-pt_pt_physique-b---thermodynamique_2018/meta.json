@@ -1,0 +1,223 @@
+{
+  "slug": "banque-pt_pt_physique-b---thermodynamique_2018",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique B - Thermodynamique",
+    "annee": 2018
+  },
+  "questions": 22,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2018/ph_b_th_2018_pt.pdf",
+    "sujet_sha256": "477c437a80166566ce6bda861c96af3b39a8b829e1a57a556ecca12f52d6c9fc",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2018/rapport_phys_b_ecrit_2018.pdf",
+    "rapport_sha256": "93986601d50e90a3228ef61dee8ca37c20bb78234cc8daf7ab70edbad6405fb1",
+    "notice": "https://www.banquept.fr/documents/livret/2018/Livret_PT_2018.pdf#page=12",
+    "notice_sha256": "074f6cb1f105a67da4afcbc0b1f0746fb294077f31f1f0f23d60a14f24a26457"
+  },
+  "figures": [
+    {
+      "fichier": "figures/mur.svg",
+      "question": "Q8",
+      "legende": "Profil permanent dans un mur homogène"
+    },
+    {
+      "fichier": "figures/vitrage.svg",
+      "question": "Q11",
+      "legende": "Deux vitres séparées par une lame d’air sec"
+    },
+    {
+      "fichier": "figures/pac.svg",
+      "question": "Q21",
+      "legende": "Sens des échanges entre les thermostats et le fluide"
+    },
+    {
+      "fichier": "figures/r410a.svg",
+      "question": "Q22",
+      "legende": "Cycle du R410A sur les isobares 5 et 20 bar"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "22 questions, figures et tableaux des annexes sur le thème « Isolation de l’habitat, géothermie et pompe à chaleur »."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Vérification des chiffres sur les pages 2, 3 et 7 à 9 et de l’abaque orienté page 13. Contrôle indépendant des quatre lectures d’enthalpie, des deux interprétations du front géothermique et de l’unité du tableau des pertes."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21",
+      "Q22"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Q1",
+        "page_pdf": 4,
+        "intitule": "Thermostat"
+      },
+      {
+        "question": "Q2",
+        "page_pdf": 4,
+        "intitule": "Exemple de source"
+      },
+      {
+        "question": "Q3",
+        "page_pdf": 4,
+        "intitule": "Capacité thermique idéale"
+      },
+      {
+        "question": "Q4",
+        "page_pdf": 4,
+        "intitule": "Conduction thermique"
+      },
+      {
+        "question": "Q5",
+        "page_pdf": 4,
+        "intitule": "Équation de la chaleur"
+      },
+      {
+        "question": "Q6",
+        "page_pdf": 4,
+        "intitule": "Dimension de la diffusivité"
+      },
+      {
+        "question": "Q7",
+        "page_pdf": 4,
+        "intitule": "Temps de diffusion dans le cuivre"
+      },
+      {
+        "question": "Q8",
+        "page_pdf": 4,
+        "intitule": "Profil permanent"
+      },
+      {
+        "question": "Q9",
+        "page_pdf": 4,
+        "intitule": "Résistance et conductance"
+      },
+      {
+        "question": "Q10",
+        "page_pdf": 4,
+        "intitule": "Deux lectures de chaque document"
+      },
+      {
+        "question": "Q11",
+        "page_pdf": 5,
+        "intitule": "Double vitrage"
+      },
+      {
+        "question": "Q12",
+        "page_pdf": 5,
+        "intitule": "Bilan annuel des fenêtres"
+      },
+      {
+        "question": "Q13",
+        "page_pdf": 5,
+        "intitule": "Bilan annuel du mur"
+      },
+      {
+        "question": "Q14",
+        "page_pdf": 5,
+        "intitule": "Orientation et volets"
+      },
+      {
+        "question": "Q15",
+        "page_pdf": 6,
+        "intitule": "Volume et masse d’air du logement"
+      },
+      {
+        "question": "Q16",
+        "page_pdf": 6,
+        "intitule": "Durée idéale de chauffage"
+      },
+      {
+        "question": "Q17",
+        "page_pdf": 6,
+        "intitule": "Quatre fenêtres et puissance des convecteurs"
+      },
+      {
+        "question": "Q18",
+        "page_pdf": 6,
+        "intitule": "Surcoût d’un degré"
+      },
+      {
+        "question": "Q19",
+        "page_pdf": 7,
+        "intitule": "Profondeur de pénétration saisonnière"
+      },
+      {
+        "question": "Q20",
+        "page_pdf": 7,
+        "intitule": "Front de réinjection et chaleur disponible"
+      },
+      {
+        "question": "Q21",
+        "page_pdf": 8,
+        "intitule": "Pompe à chaleur réversible"
+      },
+      {
+        "question": "Q22",
+        "page_pdf": 8,
+        "intitule": "Cycle du R410A sur le document réponse"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "annexes": "Documents de propriétés pages 2 et 3 et questions pages 4 à 9. Diagramme pression-enthalpie du R410A sur le document réponse page 13, verso blanc page 14."
+  }
+}

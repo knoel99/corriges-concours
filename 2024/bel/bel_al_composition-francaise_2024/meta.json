@@ -4,9 +4,10 @@
     "concours": "BEL",
     "filiere": "AL",
     "matiere": "Composition française",
-    "annee": 2024
+    "annee": 2024,
+    "modalite": "écrit commun"
   },
-  "questions": 0,
+  "questions": 1,
   "gabarit": "dissertation",
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
   "modele": {
@@ -43,7 +44,7 @@
       "legende": "Qui dispose du jeu dans la dernière scène de La Dispute ?"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "provenance": {
     "redaction": {
       "provider": "codex",
@@ -76,6 +77,113 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Contrôle du fac-similé, notamment de l’italique final, du rapport et de la scène XX de La Dispute. Restitution du libellé, analyse du couple fidèle et d’Hermiane dans les deux copies, schéma du dénouement."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Citation de Biet et Triau, durée des stances de Rodrigue et jugement du spectateur."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rapprochement du feuillet et de l’écrit du jury avec la scène XX de La Dispute. Analyse du geste joué des deux bras, de la reprise de l’impératif de départ et du partage des places. Réintégration des schémas dans la composition brute."
+    }
+  ],
+  "duree_heures": 6,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2024-11/Composition%20fran%C3%A7aise.pdf",
+      "sha256": "65ec4ad7489248f7863651a63e9634a34e11bb6ec52325e680219bc7734aea03",
+      "pages": 1,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "2eab7e5986cb8b9af0b9a64baeb5deb6ac5646cace12ce7fc565e2f8114dae39"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2024-11/Composition%20fran%C3%A7aise%20et%20explication%20texte%202024%20OK.pdf",
+      "sha256": "60fb2b54dba5700e3e3cdf418fb6ff2b634200506ec747e74bef1f046bf74299",
+      "pages": 15,
+      "pages_verifiees": [
+        {
+          "numero": 2,
+          "rendu_sha256": "be62900d099d26aa3d7d7e7f733d7c67fd46c90a58201f0dcafd056fec78a995"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "d73cf0c6d6463dc160fb8925679f1613556de5cb9a3a5cb7c6b3970f58b34728"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "dab19bb96980e785543a48e2744b78e050349b72e4d66a2ab34c7b0c1818ac9b"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "aa83b02df3eb38961de5bab5ebed141a06e3096f7c85f3de949493360ce0cad5"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "5c4c5ba254fb500114896c56bb918409cb52bd33db7a506501da1dfc630d50da"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "9d950bc036098fdd42a18cc83810f59a8a9ef0ca08a26a07cdf379b5a816dd94"
+        }
+      ]
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Composition française"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Composition française",
+        "page_pdf": 1,
+        "code": "LCU 471",
+        "citation": "Jeu social, jeu esthétique, jeu critique, jeu figural, jeu d’interaction, le théâtre se situe en effet dans l’espace vide que lui laisse la cité : il est entre les pièces, entre les rouages de la machine, il en figure le jeu, et c’est en cela qu’il permet qu’elle fonctionne.",
+        "reference": "Christian Biet et Christophe Triau, Qu’est-ce que le théâtre ?, « Conclusion », Folio essais, 2006, p. 930.",
+        "consigne": "Vous discuterez cette analyse en vous référant en particulier aux œuvres au programme.",
+        "perimetre": "Discussion des cinq qualifications du jeu, du sens mécanique du dernier jeu et du rapport entre la scène et la cité."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  },
+  "verifications_textuelles": [
+    {
+      "oeuvre": "Marivaux, La Dispute",
+      "passage": "Scène XX",
+      "url": "https://fr.wikisource.org/wiki/La_Dispute",
+      "nature": "Texte de l’œuvre, transcription consultée.",
+      "empreinte_transcription_sha256": "43526e5ca3bfa41317811585e61d365369fa582ccbff4d7bcfe2b68a94b503b7",
+      "elements": [
+        "Dina jette son bras sur celui de Meslis puis le prend par-dessous le bras.",
+        "Dina propose de partir. Hermiane reprend ce geste de départ au dernier mot."
+      ]
     }
   ]
 }

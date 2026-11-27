@@ -26,7 +26,9 @@
     "references": [
       "https://fr.wikisource.org/wiki/%C3%89mile%2C_ou_De_l%E2%80%99%C3%A9ducation/%C3%89dition_1782/Livre_IV",
       "https://fr.wikisource.org/wiki/La_Religion_dans_les_limites_de_la_simple_raison/Quatri%C3%A8me_partie"
-    ]
+    ],
+    "sha256_sujet": "1a30a10cec55934dcd4ad525695c8636e3a256cd27d5ad2162bade0120aca88f",
+    "sha256_rapport_jury": "17d12a0809a391d46c37c5b0f66470e8f94eb45b624f5e3a1ec95a6aaf760e03"
   },
   "figures": [
     {
@@ -35,7 +37,7 @@
       "legende": "À quelle question répond-on ?"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "contributions": [
     {
       "phase": "lecture_rapport_jury",
@@ -72,6 +74,47 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Comparaison des deux éditions aux pages originales du sujet et au rapport, contrôle des références, des exemples et du schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Religion naturelle, origine historique d’une croyance et portée de son mode de justification."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Confrontation au sujet de cinq heures et aux pages de spécialité du rapport. Développement sur la différence entre la genèse d’une croyance, la justification d’un devoir et sa qualification de commandement divin."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "La religion naturelle."
+    ],
+    "pages_du_sujet": 14,
+    "pages_pdf_des_questions": {
+      "La religion naturelle.": 2
+    },
+    "precision": "Dissertation unique de 5 heures. Libellé lu sur la page 2 du fascicule officiel. Rapport du jury, pages 5 à 9. Les mouvements du plan sont proposés par le corrigé."
+  }
 }

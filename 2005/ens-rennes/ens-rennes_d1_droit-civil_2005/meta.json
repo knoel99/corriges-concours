@@ -1,0 +1,50 @@
+{
+  "slug": "ens-rennes_d1_droit-civil_2005",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Droit civil",
+    "annee": 2005,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "intitule": "Propriété et prescription",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/2005-sujets-d1_1423060647728-pdf",
+    "sujet_sha256": "6e722c986780682109dc35cd612f69dd9f54c1674c5c472c52b1da9d33b0e220",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "references_complementaires": {
+      "Code civil en avril 2005": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006070721/2005-04-01/"
+    }
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "section": "I",
+      "fichier": "figures/parcelle-trente-ans.svg",
+      "legende": "Trente années d’occupation peuvent conduire à trois solutions distinctes."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions dans le droit antérieur à juin 2008. Imprescriptibilité de la propriété par simple non-usage, possession utile, interversion, prescriptions immobilières trentenaire et abrégée, régime mobilier, propriété publique et droits démembrés.",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions dans le droit antérieur à juin 2008. Imprescriptibilité de la propriété par simple non-usage, possession utile, interversion, prescriptions immobilières trentenaire et abrégée, régime mobilier, propriété publique et droits démembrés."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}

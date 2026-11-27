@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Les cinq parties étudient les graphes à extrémums distincts, leur réalisation polynomiale, les permutations alternantes et la stabilité des sous-niveaux. [Sujet officiel](https://www.ens.psl.eu/sites/default/files/20_mp_mathd_sujet.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/20_mp_rap_emathd.pdf)
 
 ## I. Forme des graphes et déformations
@@ -180,6 +182,10 @@ Si $\sum_j c_j\chi_{x,j}=0$, multipliant par $t^2$ puis dérivant, on obtient $\
 #### Solution
 
 Si $DY(x)c=0$, les équations sont $x_i^2\sum_j c_j\chi_{x,j}(x_i)=0$. Les $x_i$ sont distincts et non nuls, donc le polynôme de degré $\le n-2$ a $n-1$ racines et est nul. Par 3c, $c=0$. La différentielle carrée est inversible.
+
+Pour vérifier le calcul en présence de deux paramètres, prenons $n=3$ et $0<a<b$. Alors $\pi(t)=t(a-t)(b-t)$ et les deux intégrales valent
+$$Y_1=\frac{a^3(2b-a)}{12},\qquad Y_2=\frac{b^3(2a-b)}{12}.$$
+Le déterminant de leur jacobienne vaut $-a^2b^2(b-a)^2/6$, strictement négatif sur l’ouvert du sujet. Il s’annule sur les bords $a=0$ et $a=b$, précisément ceux qu’écarte l’hypothèse des points critiques distincts et positifs.
 
 ### Question II.4a
 
@@ -521,6 +527,8 @@ La relation $M^d=cI$ donne la période $d/2$ si $c=1$ et la période $d$ si $c=-
 Pour calculer le spectre, homogénéisons en degré $p-1$, avec $F(U,V)=U^{p-1}Q(V/U)$. L’opérateur $-V\partial_U+U\partial_V$ se déshomogénéise en $L$ puisque $-(p-1)=1$ dans le corps. Sur une extension contenant $i^2=-1$, les formes $U+iV$ et $U-iV$ sont propres de valeurs $i$ et $-i$. Leurs monômes homogènes de degré $p-1$ donnent les $p$ valeurs propres distinctes $i(p-1-2j)$ pour $0\le j<p$, soit $i\mathbb F_p$. Le polynôme minimal est donc $Y(Y^{p-1}-c)$ où $c=i^{p-1}=(-1)^{(p-1)/2}$.
 
 Dès $n=1$, $E_{2n}\bmod p$ a les mêmes périodes minimales qu’en 7b. En effet une période $T$ sur cette queue donne, par parité puis par les bases cycliques ci-dessus, $N^2(N^{2T}-I)=0$. Cela équivaut à $Y^{p-1}-c$ divisant $Y^{2T}-1$, et la réciproque suit de la même identité. Le terme initial $E_0$ est exceptionnel : une période dès $n=0$ obligerait de même $N^{2T}=I$, impossible puisque zéro est valeur propre. Par exemple modulo trois, la suite commence par $1,1,2,1,2,\ldots$.
+
+Pour $p=5$, la décomposition spectrale donne $c=1$ et la période de la queue des termes pairs est $2$. Les premiers coefficients de $1/\cos x$ donnent $E_0,E_2,E_4,E_6,E_8=1,1,5,61,1385$, donc les résidus $1,1,0,1,0$. La suite à partir de $E_2$ alterne les classes $1,0$. Le terme $E_0$ empêche bien la périodicité de longueur deux dès l’origine.
 
 ## V. Composantes des sous-niveaux et stabilité du code
 

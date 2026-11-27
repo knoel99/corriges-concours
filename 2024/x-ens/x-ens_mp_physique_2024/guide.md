@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
 Cette épreuve de quatre heures sans calculatrice étudie le champ électromagnétique classique, le rayonnement du corps noir et les statistiques de photons. Les trois parties sont indépendantes. L’énoncé officiel passe directement de la question 31 à la question 33.
@@ -343,6 +345,8 @@ Même à tension nulle, des électrons quittent la cathode avec une vitesse diri
 
 Dans l’approximation d’un champ uniforme entre les électrodes, seule l’énergie cinétique de la composante normale permet de remonter la barrière, de hauteur $e|u|$. Lorsque $|u|$ croît, moins de directions initiales permettent d’atteindre l’anode. À partir de la tension appliquée **$u=-U_0$**, même les électrons les plus favorables cessent d’être collectés.
 
+![Énergie potentielle d’un électron entre cathode et anode pour une tension appliquée négative. La hauteur de la barrière fixe le seuil de collecte.](figures/q23-potentiel-retardateur.svg)
+
 ### Question 24
 
 > [!INDICATION]
@@ -447,7 +451,7 @@ $$
 
 #### Solution
 
-Chaque intervalle $\delta\tau=\tau/N$ contient zéro photon ou un photon dans l’approximation du sujet. La probabilité d’en contenir un vaut $p$, identique pour chaque intervalle puisque la puissance est constante. L’indépendance suppose des épreuves de Bernoulli indépendantes.
+Chaque intervalle $\delta\tau=\tau/N$ contient zéro photon ou un photon dans l’approximation du sujet. La probabilité d’en contenir un vaut $p$, identique pour chaque intervalle puisque la puissance est constante. L’hypothèse d’émissions indépendantes permet de multiplier les probabilités des intervalles disjoints, dans la limite où la probabilité de deux émissions par intervalle est négligeable.
 
 Pour obtenir $n$ émissions, on choisit $n$ intervalles parmi $N$. Ainsi $P_n=\binom Nn p^n(1-p)^{N-n}$. Comme la moyenne vaut $Np$, on a **$p=\bar n/N=\Phi\,\delta\tau$**.
 

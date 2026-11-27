@@ -36,6 +36,54 @@
       "perimetre": "Rédaction des 24 réponses et indications de l’exercice et du problème à partir du PDF officiel. Formule du déterminant circulant, raccord plat, croissance des dérivées, lissage par moyennes, passage aux limites et conservation de la masse. Deux figures originales. Aucun rapport individuel indiqué dans le registre.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Les trois questions de l’exercice et les 21 rubriques du problème incluent la fermeture topologique lue sur la page 3. Recoupement du déterminant, des majorations uniformes de P14 et P17, du calcul des polynômes de dérivation et de la masse des trois approximations tracées en P19."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "E.1",
+      "E.2",
+      "E.3",
+      "P.1",
+      "P.2",
+      "P.3",
+      "P.4",
+      "P.5a",
+      "P.5b",
+      "P.6",
+      "P.7",
+      "P.8",
+      "P.9",
+      "P.10",
+      "P.11",
+      "P.12",
+      "P.13",
+      "P.14",
+      "P.15",
+      "P.16",
+      "P.17",
+      "P.18",
+      "P.19",
+      "P.20"
+    ],
+    "precision": "Les 24 rubriques des deux éditions ont été rapprochées du fascicule institutionnel de 5 pages de l’École polytechnique. Les trois questions de l’exercice et les 21 rubriques du problème incluent la fermeture topologique lue sur la page 3. Recoupement du déterminant, des majorations uniformes de P14 et P17, du calcul des polynômes de dérivation et de la masse des trois approximations tracées en P19.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "a654f08102c5a57f531068313decf453050e768a48998feb0042747d611a3eda",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Les trois questions de l’exercice et les 21 rubriques du problème incluent la fermeture topologique lue sur la page 3. Recoupement du déterminant, des majorations uniformes de P14 et P17, du calcul des polynômes de dérivation et de la masse des trois approximations tracées en P19.",
+      "commit_redaction_anterieure": "5fac231ebc255cdfe012925e40c112fa1f29b076"
+    }
+  }
 }

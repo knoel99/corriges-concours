@@ -6,7 +6,11 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Le jury publie 6 billets pour le 22 juin, commission 1. Pour chacun, le premier intitulé est celui qui a été choisi. Le second était proposé au choix. Les deux reçoivent ici des réponses distinctes. Les exemples et arguments proposés servent à préparer une leçon personnelle.
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Le [feuillet du 22 juin, commission 1](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_1_al_22_juin.pdf) contient 6 billets de deux sujets. Les développements suivent leur ordre. Le premier sujet a été choisi sur chacun des 6 billets. Le [rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf#page=7) permet de vérifier les choix.
+
+Lisez à haute voix les deux sujets du billet, choisissez pendant les 90 minutes de préparation et annoncez votre choix au début des 20 minutes d’exposé. L’entretien dure ensuite 10 minutes. Le coefficient est de 3. Seul un dictionnaire de langue française est autorisé, à l’exclusion des dictionnaires de noms propres.
 
 ## 1. La partie et le tout
 
@@ -71,5 +75,3 @@ Chez Spinoza, penser la liberté demande de comprendre les causes dont nous nous
 ### Peut-on s’aimer soi-même ?
 
 Se préserver, se juger digne d’attention et ne supporter aucune comparaison défavorable ne décrivent pas le même rapport à soi. Dans le *Discours sur l’inégalité*, Rousseau distingue l’amour de soi qui porte un être vivant à sa conservation et l’amour-propre qui fait dépendre sa valeur du regard comparatif des autres. L’exemple de quelqu’un qui accepte du repos en dépit d’une compétition de prestige montre que les deux peuvent même s’opposer. On peut s’aimer au sens de prendre soin de son existence et reconnaître sa dignité sans se préférer en toute chose. Cette bienveillance envers soi rencontre une limite lorsqu’elle refuse toute responsabilité et toute place à autrui. Un amour de soi réfléchi peut également accueillir la correction d’un ami sans la prendre pour une humiliation.
-
-[Feuille officielle du 22c1 juin](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_1_al_22_juin.pdf) · [Rapport du jury, modalités et annexe des sujets](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf)

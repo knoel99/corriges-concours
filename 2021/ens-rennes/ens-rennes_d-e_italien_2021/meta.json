@@ -1,0 +1,63 @@
+{
+  "slug": "ens-rennes_d-e_italien_2021",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Italien",
+    "annee": 2021,
+    "modalite": "écrit"
+  },
+  "intitule": "Italien",
+  "questions": 4,
+  "redaction": "Deux traductions intégrales et deux réponses en italien de 239 et 241 mots. Télétravail et fatigue, nationalité italienne, lecture d’une enquête en ligne et propositions pour la reprise des études et de l’emploi.",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-e-crit-italien-2021_1631710145627-pdf",
+    "sujet_sha256": "49e8a864a8d2a7765ba732e30b0f16a6dcabeb0453e621e9cfedc58c612b46de",
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2021",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-italien-ecrit-d-e-2021-1_1634140087200-pdf",
+    "rapport_sha256": "16dcf87d40eb33ec5e720267d74ff9230a839b63cad8f3eede1b89d084dcea04"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "III.1",
+      "fichier": "figures/sondaggio-giovani.svg",
+      "legende": "Le percentuali del sondaggio rispondono a domande diverse e non vanno sommate."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture de la distinction établie par le jury entre analyse de l’enquête et propositions personnelles, ainsi que des remarques sur le lexique de la citoyenneté."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Deux traductions intégrales et deux réponses en italien de 239 et 241 mots. Télétravail et fatigue, nationalité italienne, lecture d’une enquête en ligne et propositions pour la reprise des études et de l’emploi."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I. Version",
+      "II. Thème",
+      "III.1. Quali emozioni, impressioni e opinioni esprimono i giovani Italiani a proposito dell’emergenza sanitaria causata dalla pandemia del Covid?",
+      "III.2. Quali misure dovrebbe adottare uno Stato europeo come l’Italia o la Francia per sostenere e incoraggiare i giovani dopo la pandemia?"
+    ]
+  }
+}

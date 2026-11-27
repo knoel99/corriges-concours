@@ -4,6 +4,10 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Écrit de quatre heures, sans calculatrice. Les trois problèmes sont indépendants. Le tableau des 64 coefficients totalise 65,5, maximum brut annoncé par le jury. Chaque réponse reçoit une note sur quatre avant pondération et division du total par quatre. Le jury indique également un bonus ou malus de deux points. Le rapport écrit se lit dans les annales de l’APML. [Sujet de la session](https://www.ens.psl.eu/sites/default/files/2025_blses_sujet_mathematiques.pdf) · [Rapport du jury](https://apml-maths.com/wp-content/uploads/2025/11/2025_bl_rapport_ecrit_mathematiques.pdf).
+
 Cette épreuve de quatre heures est commune aux ENS, à l’ENSAE et à l’ENSAI. Les trois problèmes portent sur les translations de polynômes, la collecte de valeurs dans une suite de tirages et l’analyse de fonctions exponentielles.
 
 ## Problème A — Translation des polynômes
@@ -134,6 +138,8 @@ Pour $1\le k\le n$, la question 4 donne $\ker(\Delta|_{\mathbb R_k[x]})=\mathbb 
 
 Les $n$ premières différences envoient $\mathbb R_n[x]$ dans les constantes, puis la suivante les annule par 5a. On a donc $\Delta^{n+1}=0$ et $(B-I_{n+1})^{n+1}$ est la matrice nulle.
 
+L’indice de nilpotence est même exactement $n+1$. La différence de $x^n$ a pour terme dominant $nx^{n-1}$. En répétant le calcul, on obtient $\Delta^n(x^n)=n!$, tandis que la différence suivante annule cette constante. Cela contrôle la puissance requise, notamment pour $n=1$.
+
 ### Question 6
 
 > [!INDICATION]
@@ -246,6 +252,8 @@ Il faut $1\le X_n\le\min(n,M)$. Pour chaque entier $k$ de cet intervalle, une r�
 
 On a $X_2=1+\mathbf1_{\{U_2\ne U_1\}}$. Pour toute première valeur, la seconde est différente avec probabilité $(M-1)/M$. Ainsi $\mathbb E(X_2)=1+(M-1)/M=2-1/M$.
 
+Plus généralement, si $I_j$ indique que la valeur $j$ a déjà été vue en $n$ tirages, alors $X_n=\sum_{j=1}^M I_j$. L’indépendance des tirages donne $\mathbb P(I_j=0)=(1-1/M)^n$. Par linéarité de l’espérance, $\mathbb E(X_n)=M[1-(1-1/M)^n]$. Au rang deux, on retrouve exactement $2-1/M$.
+
 ### Question 12a
 
 > [!INDICATION]
@@ -357,6 +365,10 @@ $$\mathbb E(T_M)=1+\sum_{k=1}^{M-1}\frac M{M-k}=M\sum_{j=1}^M\frac1j=Mh_M.$$
 Pour une géométrique de paramètre $p$, la variance vaut $1/p^2-1/p$. Les attentes sont indépendantes par hypothèse et $T_1$ est constant. En posant $j=M-k$, puis en ajoutant le terme nul $j=M$, on trouve
 $$\operatorname{Var}(T_M)=\sum_{j=1}^M\left(\frac{M^2}{j^2}-\frac Mj\right)=M^2v_M-Mh_M.$$
 
+Le terme $j=1$ correspond à la recherche du tout dernier objet. À lui seul, il contribue $M^2-M$ à la variance et $M$ à l’espérance. À l’autre extrémité, $j=M$ correspond au premier tirage, certain de réussir, dont la variance vaut zéro. Ces deux cas vérifient le sens de la réindexation.
+
+![Figure 1 — Avec dix valeurs équiprobables, attendre la dernière découverte demande dix tirages en moyenne. Le premier tirage réussit toujours.](figures/attente-collection.svg)
+
 ### Question 15d
 
 > [!INDICATION]
@@ -424,7 +436,7 @@ La dérivée seconde est $f''(x)=(x-2)e^{-x}$. Elle est négative avant 2 et pos
 
 À l’origine la tangente a pour équation $y=x$. La courbe atteint $(1,e^{-1})$, passe en $(2,2e^{-2})$, puis tend vers l’axe des abscisses par valeurs positives.
 
-![Figure 1 — La tangente de pente 1 part de l’origine. La courbe atteint son sommet en 1 et change de concavité en 2.](figures/q17-courbe-et-tangente.svg)
+![Figure 2 — La tangente de pente 1 part de l’origine. La courbe atteint son sommet en 1 et change de concavité en 2.](figures/q17-courbe-et-tangente.svg)
 
 ### Question 18a
 
@@ -545,7 +557,7 @@ Pour tout $c\in\mathbb R$, $g(x,y)=c$ équivaut à $y=c e^{|x|}$, pour tout $x\i
 
 Pour $c=1/2$, la ligne de niveau est $y=e^{-x}/2$ si $x\le0$ et $y=e^x/2$ si $x\ge0$. Elle est symétrique par rapport à l’axe des ordonnées et atteint sa hauteur minimale $1/2$ en zéro, où ses demi-tangentes ont les pentes $-1/2$ et $1/2$.
 
-![Figure 2 — À gauche, chaque section à x fixé est une droite de pente positive. À droite, le niveau 1/2 possède deux branches symétriques qui se rencontrent en (0, 1/2).](figures/q21-sections-niveau.svg)
+![Figure 3 — À gauche, chaque section à x fixé est une droite de pente positive. À droite, le niveau 1/2 possède deux branches symétriques qui se rencontrent en (0, 1/2).](figures/q21-sections-niveau.svg)
 
 ### Question 22a
 
@@ -605,4 +617,6 @@ la dernière inégalité venant de 23b puisque $k+1\ge n_0$. L’hypothèse $w_{
 
 Pour tout $j\ge0$, $w_{n_1+2j+1}\ge(n_1+2j+1)/e$, donc $w_{n_1+2j+1}\to+\infty$. On obtient même $w_{n_1+2j+1}/(n_1+2j+1)=e^{-w_{n_1+2j}}\to1$.
 
-![Figure 3 — Pour deux termes initiaux nuls, la division par n dans la première récurrence entraîne une croissance d’au moins n/e. Dans la seconde, une parité se rapproche de zéro et l’autre diverge.](figures/q23-deux-recurrences.svg)
+Les conclusions de 23c et 23d utilisent l’existence de $n_1\ge n_0$ imposée par le sujet. Sous cette hypothèse, la suite entière a pour limite inférieure zéro et pour limite supérieure $+\infty$. L’argument de 23a valait déjà pour tout terme initial, avant cette hypothèse supplémentaire.
+
+![Figure 4 — Pour deux termes initiaux nuls, la division par n dans la première récurrence entraîne une croissance d’au moins n/e. Dans la seconde, une parité se rapproche de zéro et l’autre diverge.](figures/q23-deux-recurrences.svg)

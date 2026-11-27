@@ -34,7 +34,7 @@
     "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
     "sujet_sha256": "1a724a3fe92c321d272d183c703679603fbcff30cdd46b0f5f43ed8eb61e862c"
   },
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "revision": {
     "date": "2026-11-24",
     "modele": "Codex (GPT-6)",
@@ -98,6 +98,34 @@
       "fournisseur": "codex",
       "session": "astra_langues",
       "perimetre": "Réponse sur les migrations complétée par le cas britannique, les droits des travailleurs et l’argument écologique. Comparaison datée des régimes de retraite et de la réserve explicite de Crimmins."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "session": "fin_langues_x_interens",
+      "agent": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Fascicule officiel, consignes de compréhension et d’essai en fin de sujet (PDF de 5 pages). Les quatre réponses comptent respectivement 65, 63, 70, 65 mots hors références. L’essai compte 375 mots pour une cible de 400 à 10 % près, avec un séparateur tous les 50 mots. Les cinq réponses sont présentes dans les deux éditions. Les réponses articulent mobilité des travailleurs, débats sur l’âge de la retraite en France et aux États-Unis, deux enjeux au Kerala et place des femmes. L’essai examine l’adaptation des politiques publiques au changement de structure par âge.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "Essai"
+    ],
+    "precision": "Fascicule officiel, consignes de compréhension et d’essai en fin de sujet (PDF de 5 pages). Les quatre réponses comptent respectivement 65, 63, 70, 65 mots hors références. L’essai compte 375 mots pour une cible de 400 à 10 % près, avec un séparateur tous les 50 mots. Les cinq réponses sont présentes dans les deux éditions. Les réponses articulent mobilité des travailleurs, débats sur l’âge de la retraite en France et aux États-Unis, deux enjeux au Kerala et place des femmes. L’essai examine l’adaptation des politiques publiques au changement de structure par âge."
+  }
 }

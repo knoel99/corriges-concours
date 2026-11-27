@@ -1,0 +1,423 @@
+{
+  "slug": "banque-pt_pt_maths-c_2012",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths C",
+    "intitule": "Épreuve de Mathématiques C",
+    "annee": 2012,
+    "duree": "4 h",
+    "modalite": "écrit",
+    "code_garde": null
+  },
+  "questions": 38,
+  "redaction": "Proposition pédagogique non officielle, rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2012/math_c_pt_2012.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2012/rapport_math_c_ecrit_2012.pdf",
+    "livret": "https://www.banquept.fr/documents/livret/2012/Livret_PT_2012.pdf",
+    "sujet_sha256": "6d6817ceffe8e04df3c4c31696d04e77e62e0c62abfec17f42a7d36b59480fcc",
+    "rapport_jury_sha256": "fc0f28a043673c407b4d74b6b2b9f17ff03c46b81f7c8c2c020be8334f432980",
+    "observation_rapport": "Les solutions incluent le préambule et la question III.11 qui se poursuit en page 6 du feuillet."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2012/math_c_pt_2012.pdf",
+      "sha256": "6d6817ceffe8e04df3c4c31696d04e77e62e0c62abfec17f42a7d36b59480fcc",
+      "pages": 8,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "b066877df12fad579c8317207ffc935cad55a5f093c337ee34ebe20c665befb8"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "851c1e64a2c3c70bfce171d70c086b6c320532b20f4e7e34a393209d349457ad"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "201a1bae269ed506ff226a666fdb780a345d9601b88edc3cdf52dc5851da3d83"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "f0aeea66eb4eb229730ebc2e153cabd063db483654243e4f3b2285db5d5740b8"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "42d8e14a87cd7ceafa37fd4d7badc6dbc9e3a762ed1066babb524f0ad87c01c5"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "a26e3251c7d5a337229965fb9125c9ab05d0b81af6ff5d3603b9c277970dfc33"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "eb645b3f8ae25e0872a02dd08562d0e8e70e933858ebd61c23712c236c523e02"
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2012/rapport_math_c_ecrit_2012.pdf",
+      "sha256": "fc0f28a043673c407b4d74b6b2b9f17ff03c46b81f7c8c2c020be8334f432980",
+      "pages": 6,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "2544e9a665ab2b760c97f02517e45efad1441a532db866daa1e46ef4b5271b9e"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "9bb57b82e16c0d3431a9000b7cf82c7a5fcc4c83bc38ff634afbf965d50e1a99"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "fe2b0baee4a9a440b907a6c51ceb74f600509c3e41af88a231fdf62171faeefa"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "0bff1e8b1fe22630a063eaf317e9e9107a69b46d62d8f35bfcf26269867e2cd1"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "e02089730e19dda62fc4b25c40182a304afa7be53e30702184d85a9461e865c9"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "5f1059b71afe5e0bd738737107d109a445d4cb409400fab09ab710d8f62dba58"
+        }
+      ]
+    },
+    "livret": {
+      "url": "https://www.banquept.fr/documents/livret/2012/Livret_PT_2012.pdf",
+      "sha256": "778c796c26e1a3f2558523fa548e8d4fe4c92c6e0265a53fc4b63bd98a8c5c62",
+      "pages": 72,
+      "pages_verifiees": [
+        {
+          "numero": 8,
+          "rendu_sha256": "7accd71e0e7f794bf5492c1929dc38df097400ef42cc6d5b755616e272aa9e58"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "187896b71cc8b35d6a1b038ac9924c75a870e33850f013745008ee9f21ec672a"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "a73c80f344dfda977c0689e8acb75b1bcd181a4992cc505ecd222d83d2a561c9"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "I.3.a.ii",
+      "fichier": "figures/base.svg",
+      "legende": "Les deux solutions de base ont en zéro des données initiales indépendantes.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "III.3",
+      "fichier": "figures/translates.svg",
+      "legende": "Après translation, seuls les deux intervalles de bord de même longueur subsistent. Ici a = 0 et b = 1.",
+      "provenance": "Figure originale."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "P.1",
+      "P.2",
+      "P.3",
+      "P.4",
+      "I.1.i",
+      "I.1.ii",
+      "I.2",
+      "I.3.a.i",
+      "I.3.a.ii",
+      "I.3.b.i",
+      "I.3.b.ii",
+      "I.3.b.iii",
+      "I.4.a",
+      "I.4.b",
+      "I.4.c",
+      "I.4.d",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "III.1",
+      "III.2.a",
+      "III.2.b",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7",
+      "III.8.a",
+      "III.8.b",
+      "III.8.c",
+      "III.8.d",
+      "III.9",
+      "III.10",
+      "III.11"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "annexes_imposees": [],
+    "document_reponse_mentionne": null,
+    "repere_par_question": [
+      {
+        "question": "P.1",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Réduction à l’ordre un"
+      },
+      {
+        "question": "P.2",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Dimension"
+      },
+      {
+        "question": "P.3",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Variation des constantes"
+      },
+      {
+        "question": "P.4",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Équations scalaires"
+      },
+      {
+        "question": "I.1.i",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Première série géométrique"
+      },
+      {
+        "question": "I.1.ii",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Seconde série géométrique"
+      },
+      {
+        "question": "I.2",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Fonctions de dérivée seconde nulle"
+      },
+      {
+        "question": "I.3.a.i",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Réduction de l’équation homogène"
+      },
+      {
+        "question": "I.3.a.ii",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Base des solutions"
+      },
+      {
+        "question": "I.3.b.i",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Récurrence des coefficients"
+      },
+      {
+        "question": "I.3.b.ii",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Deux parités"
+      },
+      {
+        "question": "I.3.b.iii",
+        "page_pdf": 3,
+        "page_rapport": 3,
+        "objet": "Somme de la série"
+      },
+      {
+        "question": "I.4.a",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Système pour les fonctions variables"
+      },
+      {
+        "question": "I.4.b",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Calcul de deux dérivées"
+      },
+      {
+        "question": "I.4.c",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Primitives"
+      },
+      {
+        "question": "I.4.d",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Solution générale avec second membre"
+      },
+      {
+        "question": "II.1",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Expression de la fonction intégrale"
+      },
+      {
+        "question": "II.2",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Taylor–Young"
+      },
+      {
+        "question": "II.3",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Deux développements limités"
+      },
+      {
+        "question": "II.4",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Angle complémentaire"
+      },
+      {
+        "question": "II.5",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Coefficient dominant du cosinus"
+      },
+      {
+        "question": "II.6",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Convergence du premier cosinus"
+      },
+      {
+        "question": "II.7",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Convergence du second cosinus"
+      },
+      {
+        "question": "III.1",
+        "page_pdf": 5,
+        "page_rapport": 4,
+        "objet": "Définition de la primitive"
+      },
+      {
+        "question": "III.2.a",
+        "page_pdf": 5,
+        "page_rapport": 4,
+        "objet": "Limite à droite"
+      },
+      {
+        "question": "III.2.b",
+        "page_pdf": 5,
+        "page_rapport": 4,
+        "objet": "Limite à gauche"
+      },
+      {
+        "question": "III.3",
+        "page_pdf": 5,
+        "page_rapport": 4,
+        "objet": "Annulation des contributions intérieures"
+      },
+      {
+        "question": "III.4",
+        "page_pdf": 5,
+        "page_rapport": 4,
+        "objet": "Contrôle de la queue positive"
+      },
+      {
+        "question": "III.5",
+        "page_pdf": 5,
+        "page_rapport": 4,
+        "objet": "Valeur moyenne sur un intervalle mobile"
+      },
+      {
+        "question": "III.6",
+        "page_pdf": 5,
+        "page_rapport": 4,
+        "objet": "Contrôle de la queue négative"
+      },
+      {
+        "question": "III.7",
+        "page_pdf": 5,
+        "page_rapport": 4,
+        "objet": "Intégrale sur la droite entière"
+      },
+      {
+        "question": "III.8.a",
+        "page_pdf": 5,
+        "page_rapport": 4,
+        "objet": "Différence de translatées positives"
+      },
+      {
+        "question": "III.8.b",
+        "page_pdf": 5,
+        "page_rapport": 4,
+        "objet": "Intégrale de l’arctangente"
+      },
+      {
+        "question": "III.8.c",
+        "page_pdf": 5,
+        "page_rapport": 4,
+        "objet": "Seuil positif"
+      },
+      {
+        "question": "III.8.d",
+        "page_pdf": 5,
+        "page_rapport": 4,
+        "objet": "Intégrale sur la demi-droite"
+      },
+      {
+        "question": "III.9",
+        "page_pdf": 5,
+        "page_rapport": 4,
+        "objet": "Comparaison sur une tranche unité"
+      },
+      {
+        "question": "III.10",
+        "page_pdf": 5,
+        "page_rapport": 4,
+        "objet": "Somme de tranches"
+      },
+      {
+        "question": "III.11",
+        "page_pdf": 6,
+        "page_rapport": null,
+        "objet": "Deux séries encadrantes"
+      }
+    ]
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_hist_1987",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture des 38 questions ou sous-questions et du rapport institutionnel, rédaction des solutions et indications, figures originales et vérifications indépendantes des calculs."
+    }
+  ]
+}

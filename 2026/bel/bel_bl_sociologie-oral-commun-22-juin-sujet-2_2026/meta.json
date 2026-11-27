@@ -55,6 +55,54 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Confrontation au dossier original et au rapport du jury. Contrôle des valeurs reportées, des champs, des dénominateurs et des limites de l’interprétation."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture croisée du dossier et du rapport de l’oral commun de sociologie 2026. Document 6, passage des taux de convocation à des fréquences sur cent candidatures et limite à la première étape du recrutement. Figure interprétée dans la copie et calcul ou question de méthode développé dans le guidé."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "gestion_2022_2023",
+      "agent": "gestion_2022_2023",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Les sept documents du dossier sont traités dans les deux éditions. Les taux déclarés, rapports de cotes, deux populations de victimes, taux de convocation du testing et champs de la mesure situationnelle ont été relus sur les graphiques et sur le tableau."
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Discriminations"
+    ],
+    "precision": "Les sept documents du dossier sont traités dans les deux éditions. Les taux déclarés, rapports de cotes, deux populations de victimes, taux de convocation du testing et champs de la mesure situationnelle ont été relus sur les graphiques et sur le tableau.",
+    "controle": [
+      "Document 1. Le stigmate comme relation et comme classement dans le texte de Goffman.",
+      "Document 2. Les quatre modes de mesure, leur unité et la sélection des faits portés en justice.",
+      "Document 3. TeO, 18–50 ans ; 26,2 % des immigrés, 10 % dans le groupe majoritaire ; la figure arrondit à 26 %.",
+      "Document 4. La cote des chômeurs rapportée à celle des actifs en emploi, 1,75 ; calcul hypothétique sur la probabilité.",
+      "Document 5. Motifs de la dernière discrimination et motifs des violences, selon deux populations de victimes ; réponses multiples.",
+      "Document 6. Testing, taux et effectifs par affiliation et sexe, avec écarts entre femmes et hommes.",
+      "Document 7. Déclaration globale, mesure situationnelle, motifs ethno-raciaux et nombre moyen de situations d’exposition."
+    ]
+  }
 }

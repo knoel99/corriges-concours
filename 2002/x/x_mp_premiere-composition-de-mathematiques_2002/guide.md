@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La moyenne minimise l’écart quadratique et les médianes minimisent l’écart absolu. Les quatre parties précisent la différence entre les deux critères, le rôle des masses ponctuelles et le comportement des médianes pour la convergence en moyenne.
 
 ## I. Écarts quadratiques et moyenne
@@ -122,6 +124,8 @@ Pour tout $t$, $\chi_{J_n}(t)\uparrow\chi_{\cup J_n}(t)$. Ces fonctions sont dom
 
 Si les $J_n$ décroissent, $\chi_{J_n}\downarrow\chi_{\cap J_n}$, avec encore le majorant $1$. L’intégrale du dernier terme vaut la limite décroissante des intégrales, donc $\inf_n\lambda(J_n)$. L’intersection vide a pour mesure zéro.
 
+Si les intervalles décroissants sont ouverts et se resserrent autour d’un point qu’ils excluent tous, l’intersection est vide. La même preuve s’applique avec la fonction indicatrice identiquement nulle. Ce cas intervient précisément avec $J_n=]x,x+1/n[$ en 9.b.
+
 ### Question 9.a
 
 > [!INDICATION]
@@ -186,6 +190,8 @@ La fonction $\varphi$ est croissante et continue à droite. Par 8, ses limites a
 
 Un minimum impose $\Delta'_-(x)\le0\le\Delta'_+(x)$. Inversement, par convexité, les pentes des cordes à droite sont au moins la dérivée à droite, et les pentes à gauche au plus la dérivée à gauche. Ces signes font donc de $x$ un minimum global. Les formules de 9 donnent $M=N$, non vide par 5. Si $a<x<b$, choisissons $y\in N$ avec $x<y$. Par croissance, $1/2\le\varphi(x)\le\varphi(y-0)\le1/2$. Ainsi $\varphi$ est constante égale à $1/2$ à l’intérieur de $N$.
 
+En effet, pour $y>x$ la convexité donne $(\Delta(y)-\Delta(x))/(y-x)\ge\Delta'_+(x)$. Pour $y<x$, elle donne $(\Delta(x)-\Delta(y))/(x-y)\le\Delta'_-(x)$. Ces deux inégalités fournissent séparément $\Delta(y)\ge\Delta(x)$ et traitent aussi les extrémités d’un intervalle de médianes.
+
 ## IV. Unicité pour une fonction continue et stabilité
 
 ### Question 11.a
@@ -223,3 +229,5 @@ Par minimalité, $V_f\le\Delta(0)=\int|f|$. De plus $|m_f|\le\int|m_f-f|+\int|f|
 #### Solution
 
 La convergence en moyenne donne $e_n=\int|g_n-g|\to0$ et borne les normes $\int|g_n|$. Les $m_n$ sont bornés par 11.c et ont donc au moins une valeur d’adhérence. Pour tout $x$, $|\Delta_{g_n}(x)-\Delta_g(x)|\le e_n$. La minimalité entraîne $\Delta_g(m_n)\le\Delta_g(x)+2e_n$. Si $m_{n_k}\to m$, la continuité de $\Delta_g$ donne $\Delta_g(m)\le\Delta_g(x)$ pour tout $x$. Donc $m\in M_g$.
+
+Plus précisément, la majoration par $e_n$ est uniforme en $x$. Elle donne aussi $|V_{g_n}-V_g|\le e_n$ en prenant les infimums. L’argument précédent reste valable lorsque $M_g$ est tout un intervalle, comme dans l’exemple 6.a.

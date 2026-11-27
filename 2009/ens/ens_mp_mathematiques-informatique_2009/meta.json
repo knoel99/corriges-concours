@@ -1,0 +1,100 @@
+{
+  "slug": "ens_mp_mathematiques-informatique_2009",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Mathématiques-informatique",
+    "annee": 2009,
+    "duree_heures": 4
+  },
+  "questions": 31,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-i/session-2009/sujet-ecrit-2009-i_mathematiques_informatique.pdf",
+    "index_banque": "https://banques-ecoles.fr/cms/filiere-mp/les-annales-et-rapports-des-jurys/",
+    "identification": "Cahier 90.05M, sept pages. Filière MP groupe I, épreuve commune aux ENS de Paris, Lyon et Cachan, quatre heures. Rapport officiel et corrigé du jury consultés.",
+    "sujet_sha256": "45cab12801a87d99d66e10159ce19b58fb35273f9ce5a32199232c8796ddef61",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-i/session-2009/rapport-2009-i_ecrit_mathematique_informatique.pdf",
+    "rapport_sha256": "366a85878a51e04e50d050cc68ef6b153820abd078f495cee6a688b045d4c7e2"
+  },
+  "figures": [
+    {
+      "fichier": "figures/graphe-incidence.svg",
+      "question": "1.1",
+      "legende": "Figure 1 — Le graphe du sujet porte six arêtes. Les sommets 2 et 4 sont reliés par la diagonale et le sommet 5 est la seule feuille."
+    },
+    {
+      "fichier": "figures/arbre-thermique.svg",
+      "question": "4.7",
+      "legende": "Figure 2 — Pour les hauteurs initiales 1, 2, 2, 2 aux sommets 1 à 4, les vagues se lisent de gauche à droite. Le sommet 1 choisit 4 parmi ses deux voisins de la vague précédente."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Les 31 questions, avec les sous-questions de 3.2 et 3.3. Preuve de confluence, récurrence composante par composante hors puits, normalisation de la masse totale, correction du décompte par couches de 4.3, coût du test linéaire et bijection par vagues. Vérification exhaustive de l’exemple G0."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture des 31 questions principales, des deux figures et du rapport-corrigé de 2009. Vérification sur G₀ des 54 états stables, des huit récurrents et de leurs huit arbres. Ajout d’un contre-exemple à 3.3(c) avec le témoin imprimé, et de contre-exemples sur une arête aux tests 3.6 et 4.5 sans validation préalable de la stabilité. Contrôle de la borne par couches de 4.3."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "3.7",
+      "3.8",
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.6",
+      "4.7",
+      "4.8",
+      "4.9",
+      "4.10"
+    ],
+    "precision": "Les réponses suivent les 31 questions du cahier 90.05M, y compris les parties (a) et (b) de 3.2 et (a) à (c) de 3.3. Les assertions qui ne sont pas vraies sous les seules hypothèses imprimées sont accompagnées d’un contre-exemple et d’un énoncé corrigé.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "45cab12801a87d99d66e10159ce19b58fb35273f9ce5a32199232c8796ddef61",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Relecture des 31 questions principales, des deux figures et du rapport-corrigé de 2009. Vérification sur G₀ des 54 états stables, des huit récurrents et de leurs huit arbres. Ajout d’un contre-exemple à 3.3(c) avec le témoin imprimé, et de contre-exemples sur une arête aux tests 3.6 et 4.5 sans validation préalable de la stabilité. Contrôle de la borne par couches de 4.3.",
+      "commit_redaction_anterieure": "4bd172ee1d64fbfe8924190dd43c277013352d39"
+    }
+  }
+}

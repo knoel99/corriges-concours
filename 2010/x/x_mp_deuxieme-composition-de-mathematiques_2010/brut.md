@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Sous-groupes finis de $\operatorname{GL}_2(\mathbb C)$.** On note $N=|G|$. La preuve construit d’abord les projecteurs sur les invariants, puis sépare les groupes commutatifs de ceux qui échangent deux droites propres.
 
 ## I. Sous-groupes finis et diagonalisation
@@ -59,6 +61,8 @@ Puisque $CP=P$ pour chaque $C$, $Px$ est fixe par $G$. Inversement, si $x$ est f
 L’opérateur $Q=N^{-1}\sum_{B\in G} i(B)$ vérifie $i(C)Q=Q$ par réindexation et agit comme l’identité sur les invariants. Il projette donc sur $A^{\widetilde G}$, même si $i$ possède un noyau. Par 6 et linéarité de la trace,
 $$\dim A^{\widetilde G}=N^{-1}\sum_{B\in G}\operatorname{Tr}(B)\operatorname{Tr}(B^{-1}).$$
 
+Si $h=|\ker i|$, chaque élément $T$ de $\widetilde G$ a exactement $h$ antécédents dans $G$, et $N=h|\widetilde G|$. La somme $N^{-1}\sum_{B\in G}i(B)$ est donc aussi la moyenne uniforme $|\widetilde G|^{-1}\sum_{T\in\widetilde G}T$. Cela explique directement l’usage du dénominateur $|G|$ de l’énoncé lorsque le morphisme de conjugaison possède un noyau.
+
 ### Question 9a
 
 Sous l’hypothèse d’irréductibilité, la question 5 écrit $X=\lambda I_n$. Sa trace vaut $n\lambda$, donc $X=(\operatorname{Tr}X/n)I_n$.
@@ -82,6 +86,8 @@ Définissons $J:\mathbb C^{N^2}\to M_n(\mathbb C)$ par $J(e_k)=C_k$. L’égalit
 ### Question 10d
 
 $\det(XI_{N^2}-A)$ est unitaire de degré $N^2$, à coefficients entiers. Par 10c, $N/n$ en est racine. Si une racine rationnelle d’un tel polynôme s’écrit $u/v$ sous forme irréductible, avec $v>0$, multiplier l’équation par $v^{N^2}$ donne $v\mid u^{N^2}$ ; ainsi $v=1$. Par conséquent $N/n$ est entier et $n\mid N$.
+
+Avec les lettres de l’énoncé, $0$ est valeur propre de $R=(N/n)I-A$ et $N/n$ est valeur propre de la matrice entière $A$. C’est le polynôme caractéristique de cette dernière qui fournit l’équation unitaire sur les entiers ; aucun choix d’une sous-famille indépendante des $C_k$ n’est nécessaire.
 
 ## IV. Sous-groupes finis du groupe linéaire en dimension deux
 
@@ -132,6 +138,8 @@ Prenons $Q=\operatorname{diag}(-1/b,1)$. Dans $QB_0Q^{-1}$, le coefficient supé
 ### Question 15b
 
 Toute matrice non diagonale $B\in G$ échange les axes par le raisonnement de 14a, donc $B_0^{-1}B$ est diagonale et appartient à $Z_m$ par 15a. Inversement chaque $B_0C$, $C\in Z_m$, appartient à $G$ et échange les axes. Ainsi $G=Z_m\sqcup B_0Z_m$. La conjugaison par $Q$ fixe chaque matrice de $Z_m$ et envoie $B_0$ sur $S$. Comme $S$ inverse le générateur diagonal, $SZ_m=Z_mS$ ; les matrices obtenues sont exactement les $2m$ matrices de $D_m$. La conjugaison est l’isomorphisme demandé.
+
+En posant $D=\operatorname{diag}(c,c^{-1})$, les relations dans la base finale sont $D^m=S^2=I$ et $SDS=D^{-1}$. En particulier $(D^iS)(D^jS)=D^{i-j}$ et $(D^iS)D^j=D^{i-j}S$. La première classe contient les $m$ matrices diagonales distinctes, la seconde les $m$ matrices antidiagonales distinctes. Leur disjonction vérifie à la fois l’ordre $2m$ et la loi du groupe annoncé.
 
 ### Question 16a
 

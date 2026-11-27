@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Ces cinq paires sont données à la dernière page du rapport. Aucune date individuelle ne leur est attribuée. Les six feuilles datées contiennent 63 paires. Le rapport en énumère 68 pour 69 candidats : ces cinq paires complètent la liste des intitulés attestés. Le candidat dispose de 1 h 30 de préparation et indique au jury son choix au moment du passage. Il présente un seul sujet pendant 20 minutes, puis répond aux questions durant 10 minutes. Les deux possibilités de chaque ticket sont traitées ici.
 
 ## Ticket 1
@@ -33,6 +35,10 @@ Cependant toute confidentialité doit pouvoir être rapportée à son objet et �
 Une commune envisage un aménagement dont un effet environnemental grave reste incertain. Attendre une certitude complète peut laisser un dommage irréversible se produire. Mais considérer toute possibilité imaginable comme une raison d’interdire paralyserait aussi l’action. La précaution est-elle un principe qui règle la décision, ou seulement un conseil vague de prudence ?
 
 Il faut distinguer la prévention d’un risque identifié et la précaution face à une incertitude scientifiquement pertinente sur un dommage possible. Dans le droit français, l’article 5 de la Charte de l’environnement prévoit, lorsqu’un dommage incertain pourrait affecter de manière grave et irréversible l’environnement, des procédures d’évaluation des risques et des mesures provisoires et proportionnées dans le domaine d’attributions des autorités publiques. Le principe ne consiste donc pas à exiger la preuve que toute action est sans le moindre risque. Il commande d’organiser l’enquête et de proportionner les décisions avant que la certitude soit disponible.
+
+Une restriction provisoire doit préciser ce qui déclenchera sa révision. Par exemple, annoncer une nouvelle mesure de la qualité de l’eau engage à dire quels résultats conduiront à lever, maintenir ou modifier la restriction. L’incertitude devient alors un objet d’enquête publique.
+
+![Figure 1 — Décider sous incertitude environnementale](figures/precaution.svg)
 
 On doit également examiner les effets de l’inaction, la possibilité de faire un essai réversible et les populations exposées. Une mesure temporaire qui se prolonge sans réexamen finit par transformer une incertitude en décision permanente. À l’inverse, invoquer l’absence de preuve définitive pour ne jamais enquêter vide le principe de tout effet. La précaution est un principe défendable si elle impose une manière responsable de décider sous incertitude : expliciter la gravité plausible, rechercher des connaissances, répartir les charges et prévoir une révision. Elle ne fournit pas par elle-même une réponse identique à toutes les innovations.
 

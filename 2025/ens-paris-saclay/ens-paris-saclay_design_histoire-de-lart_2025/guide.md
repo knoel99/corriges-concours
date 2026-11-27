@@ -2,11 +2,13 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Lecture du rapport du jury** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Lecture du rapport du jury** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
-**Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 Le sujet demande d’analyser la relation entre disparition des traditions, prestige de l’originalité et valeur fonctionnelle, dans la citation d’Amos Rapoport, House Form and Culture (1969), traduction française de 1972.
 
@@ -30,7 +32,12 @@ Avec *Vers une architecture* en 1923, Le Corbusier oppose la puissance d’organ
 
 La cuisine de Francfort de Margarete Schütte-Lihotzky, conçue en 1926 pour un programme de logements, le montre dans une pièce dont les habitants éprouvent quotidiennement les dispositions. Réduire les trajets, disposer rangements et surfaces de travail à portée de main, incorporer une planche rabattable produisent des avantages matériels vérifiables dans une petite surface. Ce serait forcer l’argument de Rapoport que de ramener cette substitution à un simple dédain des cuisines transmises. Pourtant, ces critères n’imposent pas à eux seuls de concevoir la pièce pour une personne occupée aux tâches domestiques. Une certaine idée de la famille et du travail féminin participe à la définition même du problème fonctionnel. Le couple fonctionnel et non fonctionnel doit donc se comprendre comme distinction de raisons discutables, jamais comme partage entre des faits techniques neutres et des valeurs qui s’y ajouteraient après coup.
 
+À la cité Frugès de Pessac, construite par Le Corbusier et Pierre Jeanneret entre 1924 et 1926, les maisons issues de modules communs ont connu des modifications de leurs châssis de fenêtres et de leurs toits-terrasses par les habitants. Le même quartier permet donc deux lectures de l’originalité. Pour les concepteurs, le renouvellement de l’habitat procède de la série et de ses combinaisons. Pour un ménage, transformer une maison en série peut être une manière d’en régler l’usage ou d’en modifier l’apparence. Le changement visible établit l’écart au dessin livré. Il ne suffit pas à prouver quel motif, pratique ou symbolique, a décidé chaque habitant. Rapoport écrit deux fois « souvent ». Cette précaution donne sa portée historique au paradoxe relevé par le jury. Le prestige d’une architecture qui se réclame de la fonction peut tenir à des valeurs non fonctionnelles, par exemple à l’image du progrès attachée à sa silhouette. Il faut encore le démontrer au cas par cas. [Cité Frugès, transformations des habitations, Fondation Le Corbusier](https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-cite-fruges-pessac-france-1924-1926/)
+
 ## Le vernaculaire change de statut en entrant dans l’histoire de l’art
+
+> [!INDICATION]
+> Dans le texte, soulignez les deux occurrences de « souvent ». À Pessac, distinguez sur deux lignes un fait observable et une hypothèse sur les préférences d’un habitant. Que faudrait-il recueillir pour transformer cette hypothèse en preuve ?
 
 Une technique traditionnelle transmet des façons de faire. Une forme vernaculaire s’inscrit dans les ressources et les usages d’un milieu. L’une et l’autre n’exigent ni un passé immobile ni l’absence d’outils capables de produire en quantité. Inversement, un architecte reconnu peut reprendre une technique locale sans reproduire le processus collectif qui lui donnait autorité. L’exemple de la Nouvelle Gourna en Égypte oblige à tenir ces distinctions ensemble.
 
@@ -38,7 +45,7 @@ Dans le village conçu par Hassan Fathy et construit en partie entre 1946 et 195
 
 Dans l’exposition *Architecture Without Architects* de Bernard Rudofsky au MoMA en 1964, le déplacement est d’une autre nature. Des formes bâties écartées des histoires centrées sur les grands noms acquièrent, par la photographie et la comparaison muséale, une dignité d’objet d’étude. Le cadre moderniste du musée peut donc servir à renverser une hiérarchie du goût moderne. Mais une image se prête plus aisément à l’admiration d’un profil de toiture qu’à la compréhension d’un apprentissage, d’une négociation foncière ou des réparations successives dont le bâtiment est issu. La transmission d’une forme visible et celle du pouvoir de la produire ne coïncident pas.
 
-![Trois situations de transmission architecturale](figures/transmission.svg)
+![À Francfort, à la Nouvelle Gourna et à Gando, qui choisit la règle de construction et qui peut la modifier ?](figures/transmission.svg)
 
 ## Une règle transmise peut rendre possible un changement qui compte
 

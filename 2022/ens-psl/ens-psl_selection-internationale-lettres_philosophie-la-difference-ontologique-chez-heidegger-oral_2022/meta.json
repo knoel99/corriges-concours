@@ -1,0 +1,73 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_philosophie-la-difference-ontologique-chez-heidegger-oral_2022",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Philosophie — la différence ontologique chez Heidegger (oral)",
+    "annee": 2022,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie — la différence ontologique chez Heidegger (oral)",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/philo-oraux-sil2022.pdf",
+    "sha256_sujet": "bf363d3aed8fb6d73c49929dcb64ccdc3a21613428268c0f486b14791f496163",
+    "reperage": "Feuillet commun du 8 février 2022, ligne du candidat 2. Texte imprimé : « La différence ontologique chez Heidegger : sens, enjeux, limites. » Sujet individuel 2. Les trois termes « sens, enjeux, limites » appartiennent à la consigne. Aucun extrait remis ni projet à présenter n’y figure.",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport-philo-sil2022.pdf",
+    "sha256_rapport_jury": "565af5ee7f8aa48fcdc8f7ae4784c6dc3ab6e90c4da0d26ed89c87c276cba7af",
+    "page_officielle": "https://www.ens.psl.eu/une-formation-d-exception/admission-concours/international/concours-selection-internationale-0",
+    "pages_sujet": 1,
+    "pages_rapport": 1,
+    "modalites": "Le rapport distingue la sélection sur dossier des épreuves. L’oral comprend une heure de préparation, quinze minutes d’exposé puis quinze minutes d’échange. Les quatre lignes sont attribuées individuellement."
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Exposé oral",
+      "legende": "Que change la question posée au marteau ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet original. Exposé argumenté sur le sujet attribué, exemples et objections, préparation guidée de l’entretien et schéma des distinctions conceptuelles."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "oraux_lyon_et_anciens_corriges",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Examen de la consigne individuelle et du rapport commun, reprise de l’exposé, du guidage, des relances et de la figure. Sens de la distinction entre être et étant, portée des modes d’être et du Dasein, limite vis-à-vis de l’enquête ontique et de la relation éthique."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Candidat 2. La différence ontologique chez Heidegger : sens, enjeux, limites."
+    ],
+    "elements_verifies": [
+      "Sujet individuel 2. Les trois termes « sens, enjeux, limites » appartiennent à la consigne. Aucun extrait remis ni projet à présenter n’y figure.",
+      "Le rapport distingue la sélection sur dossier des épreuves. L’oral comprend une heure de préparation, quinze minutes d’exposé puis quinze minutes d’échange. Les quatre lignes sont attribuées individuellement.",
+      "Sens de la distinction entre être et étant, portée des modes d’être et du Dasein, limite vis-à-vis de l’enquête ontique et de la relation éthique.",
+      "Les questions d’entraînement sont rédigées pour le corrigé."
+    ]
+  }
+}

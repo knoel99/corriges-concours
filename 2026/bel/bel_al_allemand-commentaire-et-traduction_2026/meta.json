@@ -6,7 +6,7 @@
     "matiere": "Allemand (commentaire et traduction)",
     "annee": 2026
   },
-  "questions": 0,
+  "questions": 2,
   "redaction": "Proposition non officielle rédigée par IA.",
   "modele": {
     "provider": "codex",
@@ -17,7 +17,29 @@
   },
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/al_lve_commun_commentaire_traduction_2026.pdf#page=2",
-    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Allemand%202026.pdf#page=2"
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Allemand%202026.pdf#page=2",
+    "sha256_sujet": "a70699ab765553dd9ad914a5027a2cad6faac518819e96aa6f2a4d96e0be27c6",
+    "sha256_rapport_jury": "a519faa0577c95d84e433356da9b06c510e88a23e7535ee464545b739e56f470",
+    "pages_sujet_verifiees": [
+      1,
+      2,
+      3
+    ],
+    "pages_rapport_commun": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ]
   },
   "figures": [
     {
@@ -26,7 +48,7 @@
       "question": "Commentaire"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-27",
   "contributions": [
     {
       "phase": "redaction",
@@ -38,6 +60,18 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Commentaire en allemand des lignes 1 à 57 de Böll, version française des lignes 29 à 45, guide et schéma sur le geste et sa maîtrise."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "/root/lva_pt_2325",
+      "agent": "lva_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "perimetre": "Vérification des deux lignes extrêmes, du compteur comme mesure de la distance et du dernier verbe zurückfiel. Reprise de la phrase sur les parents et les confessions."
     }
   ],
   "droits_sources": {
@@ -45,5 +79,49 @@
       "Heinrich Böll, Ansichten eines Clowns, 1963."
     ],
     "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires. La licence du corrigé ne vaut pas autorisation de leur part."
-  }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire en allemand",
+      "Version française"
+    ],
+    "origine_attestation": {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "date": "2026-11-27",
+      "sha256_sujet_controle": "a70699ab765553dd9ad914a5027a2cad6faac518819e96aa6f2a4d96e0be27c6",
+      "perimetre": "Vérification des deux lignes extrêmes, du compteur comme mesure de la distance et du dernier verbe zurückfiel. Reprise de la phrase sur les parents et les confessions."
+    },
+    "repere_par_question": [
+      {
+        "question": "Commentaire en allemand",
+        "pages_pdf": [
+          2,
+          3
+        ],
+        "lignes": [
+          1,
+          57
+        ]
+      },
+      {
+        "question": "Version française",
+        "pages_pdf": [
+          2,
+          3
+        ],
+        "lignes": [
+          29,
+          45
+        ],
+        "debut": "Was er „die Sensibilität der Künstlerseele“ nennt",
+        "fin": "helfen kaum noch."
+      }
+    ]
+  },
+  "provenance": [
+    "ENS de Lyon",
+    "ENS (Paris)"
+  ]
 }

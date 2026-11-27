@@ -40,3 +40,15 @@ def test_slug_different_du_dossier(tmp_path):
 def test_figure_avec_titre_non_declaree(tmp_path):
     erreurs = verifier.verifier(_dossier(tmp_path, figures=[]))
     assert any("absente de meta.json" in e for e in erreurs), erreurs
+
+
+def test_une_legende_ne_doit_pas_masquer_la_figure_au_lecteur(tmp_path):
+    dossier = _dossier(tmp_path)
+    brut = dossier / "brut.md"
+    brut.write_text(CORPS.replace("![Fig]", "![Entre X[2] et X[3]]"))
+    erreurs = verifier.verifier(dossier)
+    assert len(erreurs) == 1
+    assert "brut.md" in erreurs[0] and "image non reconnue" in erreurs[0]
+
+    brut.write_text(CORPS.replace("![Fig]", r"![Entre X\[2\] et X\[3\]]"))
+    assert verifier.verifier(dossier) == []

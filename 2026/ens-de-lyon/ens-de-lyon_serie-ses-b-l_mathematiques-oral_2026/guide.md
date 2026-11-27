@@ -4,9 +4,17 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Le concours prévoit une heure de préparation pour les deux exercices de chaque planche et trente minutes d’interrogation, dont quinze minutes au plus de présentation avant les questions du jury.
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+Le jury a interrogé 41 candidats et candidates. La préparation dure une heure pour les deux exercices de chaque planche. Le candidat présente les deux exercices dans l’ordre de son choix. Sur les trente minutes de l’oral, il dispose d’au plus quinze minutes pour exposer son travail avant les questions du jury. L’annexe officielle présente les quinze planches de 1 à 15. Le fascicule des épreuves orales y renvoie en page 17. Les trente exercices et leurs 214 questions sont traités.
+
+[Annexe des planches](https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf) · [Rubrique de mathématiques du jury](https://www.ens-lyon.fr/sites/default/files/2026-10/Fascicule%20SES%202026.pdf#page=13) · [Fascicule des oraux, p. 17](https://www.ens-lyon.fr/sites/default/files/2026-11/Fascicule%20SES%202026.pdf#page=17)
+
+Le jury demande de prouver la convergence d’une série ou d’une intégrale avant de la manipuler. Dans la planche 11, la convergence de la série des logarithmes détermine si le produit des probabilités conditionnelles reste positif. Dans la planche 14, le signe et l’intégrabilité du reste permettent de justifier le passage à la limite.
 
 ## Planche 1 · Exercice 1 — Deux projecteurs
+
+[Annexe 2026, p. 2](https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=2)
 
 ### Question 1a
 
@@ -91,6 +99,8 @@ Chaque $x=Ax+Bx$ et les images sont en somme directe car $A$ fixe son image et a
 
 ## Planche 1 · Exercice 2 — Une loi géométrique transformée
 
+[Annexe 2026, p. 2](https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=2)
+
 ### Question 1
 
 > [!INDICATION]
@@ -119,6 +129,8 @@ Pour $X$ pair, $Y=0$. Pour $X=2j+1$, $Y=j(-1)^j$. Ainsi $\mathbb P(Y=0)=1/(1+r)+
 On a $|Y|\le(X+1)/2$, intégrable pour une loi géométrique. Les valeurs impaires de $X$ donnent $\mathbb EY=pr\sum_{j\ge0}j(-r^2)^j=-pr^3/(1+r^2)^2$, par $\sum jz^j=z/(1-z)^2$ pour $|z|<1$.
 
 ## Planche 2 · Exercice 1 — Une suite d’intégrales
+
+[Annexe 2026, p. 3](https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=3)
 
 ### Question 1
 
@@ -194,6 +206,8 @@ Sur $0\le t\le n^{-1/4}$, $(1+t^4)^n\le(1+1/n)^n\le e$. Donc $u_n\ge e^{-1}n^{-1
 
 ## Planche 2 · Exercice 2 — Somme des matrices d’un groupe fini
 
+[Annexe 2026, p. 4](https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=4)
+
 ### Question 1a
 
 > [!INDICATION]
@@ -248,6 +262,8 @@ Juxtaposons une base du premier noyau, de dimension $m$, et une base du second. 
 
 Par invariance par similitude, $\operatorname{Tr}(S)=pm$. Le quotient par $p$ est l’entier naturel $m$.
 
+Avec $G=\{I_2,\operatorname{diag}(1,-1)\}$, on trouve $S=\operatorname{diag}(2,0)$, donc $\operatorname{Tr}(S)/2=1$. Avec $G=\{I_2,-I_2\}$, la somme est nulle et le quotient vaut zéro. L’entier naturel peut donc effectivement s’annuler.
+
 ### Question 2
 
 > [!INDICATION]
@@ -258,6 +274,8 @@ Par invariance par similitude, $\operatorname{Tr}(S)=pm$. Le quotient par $p$ es
 Si $A_k x=x$ pour tous $k$, alors $Sx=px$. Inversement si $Sx=px$, $A_kx=A_kSx/p=Sx/p=x$ par 1b, pour tout $k$.
 
 ## Planche 3 · Exercice 1 — Valeurs propres aléatoires
+
+[Annexe 2026, p. 5](https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=5)
 
 ### Question 1
 
@@ -305,6 +323,8 @@ Sur $A=2$, de probabilité $p^2>0$, on a nécessairement $B=0$. Pourtant $\mathb
 Pour $k\ge0$, $\mathbb P(B=k)=\sum_{j\ge1}p^2r^{j+k-1+j-1}=p^2r^k/(1-r^2)$. Par symétrie des variables indépendantes de même loi, pour tout entier relatif $k$ la masse est $pr^{|k|}/(2-p)$.
 
 ## Planche 3 · Exercice 2 — Série alternée et intégrale logarithmique
+
+[Annexe 2026, p. 5](https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=5)
 
 ### Question 1
 
@@ -362,6 +382,8 @@ Développons $1/(1+t^2)=\sum_{k=0}^N(-t^2)^k+(-t^2)^{N+1}/(1+t^2)$. Après multi
 
 ## Planche 4 · Exercice 1 — Matrices et transposition
 
+[Annexe 2026, p. 6](https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=6)
+
 ### Question 1
 
 > [!INDICATION]
@@ -408,6 +430,8 @@ Si $M\in E$, $2\operatorname{Tr}M=2n\operatorname{Tr}M$ et $n\ge2$, donc sa trac
 L’équation impose $(M+M^T)/2=(\operatorname{Tr}M/n)I_n$. Toute solution est donc somme d’un scalaire et d’une matrice antisymétrique. Réciproquement chaque $cI_n+K$ avec $K\in A_n$ a trace $nc$ et convient. On obtient $E'=\mathbb RI_n\oplus A_n$.
 
 ## Planche 4 · Exercice 2 — Décroissance et intégrabilité
+
+[Annexe 2026, p. 6,7](https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=6)
 
 ### Question 1a
 
@@ -493,6 +517,8 @@ Pour $a_n=n+2^{-n-1}$, $2^n(a_n-n)=1/2$, donc $f(a_n)=1/4$ et $a_n f(a_n)\to+\in
 ![Figure 1 — Pics de hauteur constante et de largeurs géométriques. Les aires sont sommables malgré la hauteur aux sommets.](figures/pics-integrables.svg)
 
 ## Planche 5 · Exercice 1 — Perturbation d’une matrice diagonale
+
+[Annexe 2026, p. 8](https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=8)
 
 ### Question 1a
 
@@ -595,6 +621,8 @@ Si $g(u)=0$, alors $d(u)=-f(u)$, ce qui imposerait l’égalité de leurs normes
 
 ## Planche 5 · Exercice 2 — Inversion d’une fonction logarithmique
 
+[Annexe 2026, p. 8](https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=8)
+
 ### Question 1a
 
 > [!INDICATION]
@@ -641,6 +669,8 @@ Puisque $h(x)=x/\ln^2h(x)$, le résultat 1c donne $h(x)\sim x/(\ln x)^2$. On app
 La fonction est positive au sens large, continue par morceaux hors de zéro et nulle hors de $(-1/e,1/e)$. Sur $(0,1/e)$, $2f(x)=1/[x(\ln x)^2]$ a pour primitive $-1/\ln x$, de limite zéro en $0^+$ et de valeur $1$ en $1/e$. Par parité l’intégrale totale de $f$ vaut $1$, donc c’est une densité.
 
 ## Planche 6 · Exercice 1 — Collection de trois jetons
+
+[Annexe 2026, p. 9](https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=9)
 
 ### Question 1
 
@@ -697,6 +727,8 @@ Pour $m\ge3$, en fixant le type découvert au rang $m$, le préfixe de longueur 
 Conditionnellement au passé au rang $Y$, les prochains tirages ont chacun probabilité $1/3$ de donner le troisième type. $Z-Y$ suit donc la loi géométrique de paramètre $1/3$, de moyenne $3$. Les deux temps sont intégrables et $\mathbb EZ=5/2+3=11/2$.
 
 ## Planche 6 · Exercice 2 — Une transformée intégrale
+
+[Annexe 2026, p. 9](https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=9)
 
 ### Question 1
 
@@ -790,6 +822,8 @@ La limite zéro ne suffit pas. Ainsi $f(t)=1/\ln(2+t)$ est continue bornée et t
 
 ## Planche 7 · Exercice 1 — Points critiques dans le plan
 
+[Annexe 2026, p. 10](https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=10)
+
 ### Question 1
 
 > [!INDICATION]
@@ -854,6 +888,8 @@ Pour tout couple réel, $f_1(x,y)=(x-y)e^{x-y}=\phi(x-y)$.
 Sur la droite critique, $x-y=-1$, donc $f_1=-1/e$. Partout ailleurs $f_1\ge-1/e$ par 3b. Chaque point critique est ainsi un minimum global.
 
 ## Planche 7 · Exercice 2 — Une forme linéaire et un vecteur
+
+[Annexe 2026, p. 10](https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=10)
 
 ### Question 1
 
@@ -937,6 +973,8 @@ Si $s\ne0$, $a\notin\ker u$. L’espace est la somme directe $\mathbb Ra\oplus\k
 Leur somme directe étant $E$, cette réunion forme une base propre. L’endomorphisme est diagonalisable.
 
 ## Planche 8 · Exercice 1 — Transformation d’une variable à densité
+
+[Annexe 2026, p. 11](https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=11)
 
 ### Question 1a
 
@@ -1030,6 +1068,8 @@ $u_1=c/2$, puis $u_2=1-c/3$. Donc $\mathbb EX=c/2$ et $\operatorname{Var}X=1-c/3
 
 ## Planche 8 · Exercice 2 — Interpolation de Lagrange
 
+[Annexe 2026, p. 11](https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=11)
+
 ### Question 1a
 
 > [!INDICATION]
@@ -1086,7 +1126,11 @@ Le polynôme $P=\ell_0+3\ell_1+\ell_2=1+2\ell_1=1+4X-2X^2$ a les valeurs $1,3,1$
 
 ![Figure 2 — L’unique polynôme de degré au plus deux passe par les trois points prescrits.](figures/interpolation-quadratique.svg)
 
+Si l’on conservait un quatrième nœud libre comme dans la lecture littérale de 4a, les trois valeurs données permettraient toute la famille $1+4X-2X^2+cX(X-1)(X-2)$ dans $\mathbb R_3[X]$. La condition de degré au plus deux de 4b impose $c=0$.
+
 ## Planche 9 · Exercice 1 — Intégrales de Wallis et somme des inverses des carrés
+
+[Annexe 2026, p. 12](https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=12)
 
 ### Question 1a
 
@@ -1171,6 +1215,8 @@ La somme de $1/k^2$ pour $1\le k\le N$ est $2(J_0/I_0-J_N/I_N)$. Par 2d le derni
 
 ## Planche 9 · Exercice 2 — Sommes et partage d’une loi de Poisson
 
+[Annexe 2026, p. 12](https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=12)
+
 ### Question 1a
 
 > [!INDICATION]
@@ -1217,6 +1263,8 @@ Conditionnellement à $Y=m$, $Z=m-X$ est binomiale de paramètres $m,1-p$. Le m�
 On a $X\le Y$ presque sûrement. Ainsi $\mathbb P(X>0\mid Y=0)=0$, tandis que $\mathbb P(Y=0)>0$ et $\mathbb P(X>0)=1-e^{-\lambda p}>0$. $X$ et $Y$ sont dépendantes.
 
 ## Planche 10 · Exercice 1 — Racines de l’unité
+
+[Annexe 2026, p. 13](https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=13)
 
 ### Question 1
 
@@ -1283,6 +1331,8 @@ Par 3a et 3b la somme majore à la fois $n|a|$ et $n|b|$. Sa division par $n$ ma
 
 ## Planche 10 · Exercice 2 — Série binomiale et reste intégral
 
+[Annexe 2026, p. 14](https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=14)
+
 ### Question 1a
 
 > [!INDICATION]
@@ -1348,6 +1398,8 @@ Par 2b et 3b, pour $0\le x<1$, $\sum_{n\ge0}\binom{2n}n x^n/4^n=\phi(x)=1/\sqrt{
 
 ## Planche 11 · Exercice 1 — Une urne à renforcement
 
+[Annexe 2026, p. 15](https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=15)
+
 ### Question 1
 
 > [!INDICATION]
@@ -1402,7 +1454,11 @@ $0\le\ln(1+2^{-k})\le2^{-k}$. Par comparaison géométrique la série converge.
 
 $\ln u_n=-\sum_{k=0}^{n-1}\ln(1+2^{-k})$ tend vers une valeur finie $-S$. La continuité de l’exponentielle donne $\mathbb P(B)=e^{-S}>0$.
 
+La précision numérique peut se contrôler sans faire un produit infini. Pour $n\ge1$, $0\le\sum_{k=n}^{\infty}\ln(1+2^{-k})\le2^{1-n}$. La probabilité cherchée est donc entre $u_ne^{-2^{1-n}}$ et $u_n$. À $n=15$, les deux bornes sont proches de $0{,}20971$ et $0{,}20973$. L’arrêt n’est donc pas presque sûr.
+
 ## Planche 11 · Exercice 2 — Formes linéaires et transvection
+
+[Annexe 2026, p. 15,16](https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=15)
 
 ### Question 1
 
@@ -1469,6 +1525,8 @@ $(I+N)(I-N)=(I-N)(I+N)=I$. Donc $f$ est bijectif et $f^{-1}(x)=x-\phi(x)u$, de l
 
 ## Planche 12 · Exercice 1 — Itération d’une fonction rationnelle en l’exponentielle
 
+[Annexe 2026, p. 17](https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=17)
+
 ### Question 1a
 
 > [!INDICATION]
@@ -1526,6 +1584,8 @@ $g(x)-x=h(x)/(1+e^x)\ge0$ sur $I$. La suite est croissante majorée par $\alpha$
 ![Figure 3 — L’itération issue de zéro se rapproche de l’intersection de la courbe et de la droite identité.](figures/point-fixe.svg)
 
 ## Planche 12 · Exercice 2 — Choix caché d’un jeton
+
+[Annexe 2026, p. 17,18](https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=17)
 
 ### Question 1a
 
@@ -1619,6 +1679,8 @@ Avec $J_2$, $T=0$. Avec $J_1$, les deux valeurs apparaissent presque sûrement, 
 
 ## Planche 13 · Exercice 1 — Contraction d’une intégrale de queue
 
+[Annexe 2026, p. 19](https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=19)
+
 ### Question 1
 
 > [!INDICATION]
@@ -1693,6 +1755,8 @@ $|S_n-(n+1)\alpha|\le |1-\alpha|\sum_{k=0}^n2^{-k}\le2|1-\alpha|$. Comme $\alpha
 
 ## Planche 13 · Exercice 2 — Noyau et image pour une valeur propre
 
+[Annexe 2026, p. 19](https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=19)
+
 ### Question 1
 
 > [!INDICATION]
@@ -1739,6 +1803,8 @@ L’image contient la somme des autres espaces propres par 2b et en a la dimensi
 Pour $f(x,y)=(y,0)$ et $\lambda=0$, le noyau et l’image sont tous deux la droite $\mathbb R(1,0)$. Leur somme n’est ni directe ni égale au plan.
 
 ## Planche 14 · Exercice 1 — Une intégrale logarithmique
+
+[Annexe 2026, p. 20](https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=20)
 
 ### Question 1a
 
@@ -1841,6 +1907,8 @@ Les questions 3 et 4c donnent $L(0)=\sum_{k\ge1}k^{-2}=\pi^2/6$, valeur admise d
 
 ## Planche 14 · Exercice 2 — Attente de deux piles consécutifs
 
+[Annexe 2026, p. 20](https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=20)
+
 ### Question 1
 
 > [!INDICATION]
@@ -1886,7 +1954,11 @@ Les racines de $r^2-r/3-2/9$ sont $2/3$ et $-1/3$. Les valeurs $a_1=0,a_2=4/9$ d
 
 $\mathbb P(X<\infty)=\sum_{n\ge1}a_n=(4/9)(3-3/4)=1$. Le jeu se termine presque sûrement.
 
+À trois lancers, seule la suite face-pile-pile donne un premier arrêt au troisième lancer, de probabilité $4/27$, conforme à la récurrence. Pour vérifier indépendamment l’arrêt presque sûr, découpons les tirages en paires disjointes. Ne jamais voir deux piles consécutifs impose qu’aucune de ces paires ne soit pile-pile. Après $m$ paires cette dernière probabilité vaut $(5/9)^m$, qui tend vers zéro.
+
 ## Planche 15 · Exercice 1 — Pièces défectueuses et premier type A
+
+[Annexe 2026, p. 21](https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=21)
 
 ### Question 1
 
@@ -1935,7 +2007,11 @@ $\mathbb P(D+1=1)=aq/s$ et $\mathbb P(D+1=k)=(ap/s^2)r^{k-2}$ pour $k\ge2$. Avec
 
 ![Figure 4 — Avec a et p égaux à un demi, compter la dernière pièce change les masses de la loi dès zéro.](figures/loi-defauts.svg)
 
+Une vérification indépendante consiste à conditionner la fonction génératrice à $X$. Avec $q=1-p$, on obtient $G_D(z)=a(q+pz)/[1-b(q+pz)]$ pour $0\le z\le1$. À $z=1$ elle vaut 1. Sa dérivée en 1 donne $p/a$ et son développement en zéro redonne $u_0=aq/(1-bq)$ puis $u_1=ap/(1-bq)^2$. Le numérateur contient le facteur de la dernière pièce, dont dépend la réponse à cette question.
+
 ## Planche 15 · Exercice 2 — Une matrice antisymétrique en dimension trois
+
+[Annexe 2026, p. 21](https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=21)
 
 ### Question 1
 

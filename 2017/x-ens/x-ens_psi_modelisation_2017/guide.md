@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Repères
 
 Suivre les conversions entre bars, litres par heure et watts. Dans la base de Park, le courant sur l’axe q détermine le couple. Le réglage du PI se lit sur le graphe mesuré du sujet. Les masses d’usinage sont comptées positivement quand on les retire.
@@ -78,7 +80,7 @@ Dans le modèle local de l'auget, avec pression de jet ambiante et poids de l'ea
 
 #### Solution
 
-Les modules relatifs sont égaux à $V_{auget}$ et les composantes axiales des jets de sortie valent $V_{auget}\cos\alpha$. Comme $Q'+Q''=Q$, la force sur l'eau suivant $X$ vaut $\rho Q V_{auget}(\cos\alpha-1)$. Par réaction, $\mathbf F_{fluide}=\rho Q V_{auget}(1-\cos\alpha)\mathbf X$ pour l'auget symétrique (composantes transverses opposées).
+Les modules relatifs sont égaux à $V_{auget}$ et les composantes axiales des jets de sortie valent $V_{auget}\cos\alpha$. Comme $Q'+Q''=Q$, la force sur l'eau suivant $X$ vaut $\rho Q V_{auget}(\cos\alpha-1)$. Par réaction, $\mathbf F_{fluide}=\rho Q V_{auget}(1-\cos\alpha)\mathbf X$ pour l'auget symétrique. Cette expression vectorielle utilise l’égalité des débits des deux veines, $Q'=Q''=Q/2$. En choisissant l’axe transversal vers la sortie de débit $Q'$, la réaction transversale vaut $\rho V_{auget}(Q''-Q')\sin\alpha$. La projection sur $X$ ne requiert que la conservation du débit total.
 
 ### Question 9 · Puissance mécanique et orientation
 
@@ -362,9 +364,11 @@ $C(p)=C_0(1+1/(T_ip))$ a un gain infini à fréquence nulle. Sous réserve de st
 
 #### Solution
 
-La figure 17 donne vers 40 rad/s un gain proche de $+4{,}5$ dB, soit $g\simeq1{,}68$, et une phase d'environ $-125°$. Pour une marge de 45°, le PI peut ajouter environ $-10°$. Or $\arg C(j\omega)=-\arctan(1/(\omega T_i))$, donc $T_i=1/[40\tan(10°)]\simeq0{,}142$ s. Le gain corrigé doit valoir un, ce qui donne $C_0=\cos(10°)/g\simeq0{,}59$ pour la boucle à retour normalisé. Si le tracé est interprété littéralement comme $\Omega/U$ avant un capteur de gain $k_c$, régler **$k_c C_0\simeq0{,}59$**. La phase exacte lue à quelques degrés près explique la dispersion possible des réglages. Pour le modèle à deux pôles indiqué et ce PI, la phase tend vers $-180°$ sans le franchir à pulsation finie, ce qui satisfait aussi la marge de gain demandée.
+Sur la figure 17, à $\omega_c=40\ \mathrm{rad/s}$, on lit $G_{\rm dB}\simeq+4{,}6$ dB et $\varphi\simeq-125°$, soit un module $g\simeq1{,}69$. Une marge de phase d’au moins $45°$ exige $\varphi+\arg C(j\omega_c)\ge-135°$. Le PI peut donc ajouter au plus $10°$ de retard. Comme $\arg C(j\omega)=-\arctan[1/(\omega T_i)]$, cette condition donne $T_i\gtrsim1/[40\tan(10°)]\simeq0{,}142$ s.
 
-![Courbes non corrigées relevées sur le graphe du sujet et effet du PI calculé. Le trait vertical repère 40 rad/s.](figures/q38-bode.svg)
+Pour un réglage à la limite, le gain de boucle doit aussi être un. Il vient $C_0=\cos(10°)/g\simeq0{,}58$ pour un retour normalisé. Si la figure est lue comme le rapport $\Omega/U$ avant le capteur de gain $k_c$, cette valeur est celle du produit $k_cC_0$. Avec un $T_i$ supérieur au minimum, la marge augmente à la même coupure à condition de réajuster le gain à $C_0=[g\sqrt{1+(\omega_c T_i)^{-2}}]^{-1}$ pour le retour normalisé. Dans le modèle réduit de Q33 à deux pôles et variateur assimilé à un gain pur, la phase corrigée atteint asymptotiquement $-180°$ sans croisement à pulsation finie : la marge de gain dépasse les $10$ dB demandés.
+
+![À 40 rad/s, le PI porte le gain à 0 dB et la phase à −135°. La flèche mesure la marge de 45° depuis −180°.](figures/q38-bode.svg)
 
 ### Question 39 · Asservissement de courant en cascade
 
@@ -372,9 +376,11 @@ La figure 17 donne vers 40 rad/s un gain proche de $+4{,}5$ dB, soit $g\simeq1{,
 
 #### Solution
 
-Le correcteur de vitesse agit sur une consigne de courant $i_{ref}$, dont le module est borné à 5 A. Une mesure du courant alimente un second comparateur. Son erreur pilote un correcteur de courant puis le variateur et l'induit. Le couple $k_ti$ entraîne la mécanique. La boucle externe compare toujours la vitesse mesurée à la consigne adaptée. Une limitation de consigne et un réglage interne sans dépassement (ou une marge sur le seuil) sont nécessaires pour tenir effectivement la borne de courant.
+Le correcteur de vitesse produit la consigne de la boucle interne. Le limiteur borne cette consigne en courant. La différence entre consigne et courant mesuré commande le PI de courant, puis le variateur. Le courant circule dans l’induit sous la tension nette $u-k_e\Omega$ et produit le couple $k_t i$. L’équation mécanique reçoit $k_t i-C_r$. Le capteur $k_c$ ramène la vitesse au comparateur externe.
 
-![Le courant mesuré ferme la boucle la plus rapide. Une seconde boucle régule la vitesse en commandant le courant admissible.](figures/q39-cascade.svg)
+Pour garantir l’exigence stricte $|i|<5$ A, prendre $I_{\rm lim}<5$ A avec une marge couvrant le dépassement maximal et l’incertitude de mesure. Le schéma suppose que le capteur de courant est étalonné dans les unités de la consigne interne.
+
+![La vitesse fixe une consigne de courant limitée. Le courant mesuré ferme la boucle interne ; la vitesse alimente le capteur externe et la force contre-électromotrice.](figures/q39-cascade.svg)
 
 ### Question 40 · Séparation des temps
 
@@ -457,6 +463,6 @@ Avec une masse positive $m_1$ retirée en $(x_1,y_1,z_1)$, l'équilibrage statiq
 
 Notons $X_j=m_jr\cos\theta_j$, $Y_j=m_jr\sin\theta_j$, où $m_j\ge0$ désigne la masse réellement retirée, $r>0$, et utilisons les cotes écrites $z_1=e\ne0$, $z_2=0$. Les quatre conditions sont $X_1+X_2=ma$, $Y_1+Y_2=0$, $eX_1=E$, $eY_1=D$. Ainsi $(X_1,Y_1)=(E/e,D/e)$ et $(X_2,Y_2)=(ma-E/e,-D/e)$. Pour chaque plan,
 $$m_j=\frac{\sqrt{X_j^2+Y_j^2}}{r},\qquad \theta_j=\operatorname{atan2}(Y_j,X_j)\pmod{2\pi}.$$
-Une masse nulle rend l'angle indifférent. Le deuxième argument de l'angle assure la bonne prise en compte du quadrant. Si les deux cotes axiales sont nommées dans l'ordre inverse sur une coupe, il faut échanger l'attribution des deux plans.
+Une masse nulle rend l'angle indifférent. Le deuxième argument de l'angle assure la bonne prise en compte du quadrant. La vue de droite de la figure 21 place au contraire $m_1$ sur l’axe de cote nulle et $m_2$ à la cote $e$. Pour utiliser cette coupe, échanger les indices 1 et 2 dans les deux couples masse–angle obtenus ci-dessus. Les deux angles sont comptés depuis $+X_S$ dans le sens direct.
 
 ![Deux plans distincts d’usinage selon les cotes textuelles. Les premiers moments de chaque correction règlent à la fois la résultante et le couple de balourd.](figures/q48-plans.svg)

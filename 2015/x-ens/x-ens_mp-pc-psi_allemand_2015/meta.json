@@ -1,0 +1,81 @@
+{
+  "slug": "x-ens_mp-pc-psi_allemand_2015",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Allemand",
+    "annee": 2015,
+    "modalite": "écrit"
+  },
+  "intitule": "Le paradoxe du marché du travail allemand",
+  "questions": 2,
+  "redaction": "Synthèse allemande titrée des quatre pièces et réponse en allemand aux arguments de l’éditorial. Le paradoxe du marché du travail allemand.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/09/15_mp-pc_sujet_allemand_xeulcr.pdf",
+    "sha256_sujet": "e8d289595a9e777781a0d38b60b20716a6c9fa2e2ba409569569f40d143ff85a",
+    "code_garde": "XEULCR",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2015/%20",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/01/15_mp_pc_rap_elvall.pdf",
+    "sha256_rapport_jury": "849d92fb49d9f7386a036f27ea0b489cf1bd9158721085e85ffe3dcabff40d92",
+    "pages_sujet": 10,
+    "perimetre_sujet": "A1–A3 p. 2–7, A4 p. 8, B5 p. 9–10",
+    "precision_rapport": "Le rapport porte sur MP et PC. La garde du sujet inclut également PSI.",
+    "autre_publication_sujet": "https://www.ens.psl.eu/IMG/file/concours/2015/PC/sujets/sujet_mppc_all2015.pdf",
+    "sha256_autre_publication_sujet": "953024f701b378206472079dde5c0f98475e91e14983e4acfe9adf15fb1e4449",
+    "autre_publication_rapport": "https://www.ens.psl.eu/IMG/file/concours/2015/MPI/rapports/15_mp_pc_rap_elvall.pdf",
+    "sha256_autre_publication_rapport": "849d92fb49d9f7386a036f27ea0b489cf1bd9158721085e85ffe3dcabff40d92"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/emplois-chomage.svg",
+      "legende": "Deux échelles pour lire le graphique désaisonnalisé de la Bundesbank (1992–2013)."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des 2 pages du rapport sur les deux productions, la langue et la lecture du dossier."
+    },
+    {
+      "phase": "redaction",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Synthèse allemande titrée des quatre pièces et réponse en allemand aux arguments de l’éditorial. Le paradoxe du marché du travail allemand."
+    },
+    {
+      "phase": "retouches",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Précision de l’attribution du sondage au cabinet Lünendonk, mandaté par Orizon, dans les deux éditions."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  }
+}

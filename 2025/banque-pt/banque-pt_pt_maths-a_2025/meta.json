@@ -1,0 +1,255 @@
+{
+  "slug": "banque-pt_pt_maths-a_2025",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths A",
+    "intitule": "Épreuve de Mathématiques A",
+    "annee": 2025,
+    "duree": "4 h"
+  },
+  "questions": 40,
+  "redaction": "Proposition pédagogique non officielle, rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2025/math_a_2025_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2025/rapport_math_a_ecrit_2025.pdf",
+    "sujet_sha256": "67f22cdb5537fd3afcca8780cafb957e65b2a8489b284a69d136d91250e3f2f5",
+    "rapport_jury_sha256": "d7583c574b0f92eafbf31f5b637f7cc6c6ef516319a4697574b8e9ded7d5e94a",
+    "observation_rapport": "Le rapport distingue la base algébrique de la famille orthonormée (exercice 1). Pour l’exercice 2, il demande de justifier l’égalité des lois individuelles, puis de traiter séparément la masse du total en zéro et la covariance des deux étapes (p. 4–5)."
+  },
+  "figures": [
+    {
+      "question": "I.13",
+      "fichier": "figures/legendre.svg",
+      "legende": "Les trois premiers polynômes normalisés ont des degrés distincts. Le polynôme de degré un est impair, tandis que celui de degré deux a une intégrale nulle sur le segment symétrique."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1.a",
+      "I.1.b",
+      "I.2",
+      "I.3",
+      "I.4.a",
+      "I.4.b",
+      "I.4.c",
+      "I.5",
+      "I.6",
+      "I.7",
+      "I.8",
+      "I.9",
+      "I.10",
+      "I.11.a",
+      "I.11.b",
+      "I.12.a",
+      "I.12.b",
+      "I.12.c",
+      "I.12.d",
+      "I.13",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6.a",
+      "II.6.b",
+      "II.7",
+      "II.8",
+      "II.9.a",
+      "II.9.b",
+      "II.9.c",
+      "II.9.d",
+      "II.10",
+      "II.11",
+      "II.12.a",
+      "II.12.b",
+      "II.12.c",
+      "II.13",
+      "II.14"
+    ],
+    "repere_par_question": [
+      {
+        "question": "I.1.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.1.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.2",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.3",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.4.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.4.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.4.c",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.5",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.6",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.7",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.8",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.9",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.10",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.11.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.11.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.12.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.12.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.12.c",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.12.d",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.13",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.1",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.2",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.3",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.4",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.5",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.6.a",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.6.b",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.7",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.8",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.9.a",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.9.b",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.9.c",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.9.d",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.10",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.11",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.12.a",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.12.b",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.12.c",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.13",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.14",
+        "page_pdf": 5
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "40 consignes ou sous-consignes numérotées traitées dans chaque édition. Les deux éditions traitent le rang zéro des polynômes ainsi que les hypothèses probabilistes nécessaires aux formules attendues. Un contre-exemple montre en II.1 la différence entre des choix indépendants et des choix équiprobables."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "fui_physique_un",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture du sujet et du rapport annuels, rédaction et vérification des deux éditions illustrées et du décompte par page. Les deux éditions traitent le rang zéro des polynômes ainsi que les hypothèses probabilistes nécessaires aux formules attendues. Un contre-exemple montre en II.1 la différence entre des choix indépendants et des choix équiprobables."
+    }
+  ]
+}

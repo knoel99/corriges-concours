@@ -10,9 +10,11 @@
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/2019_MPI_sujet_MathA.pdf",
-    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/19_MP_rap_eMathA.pdf"
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/19_MP_rap_eMathA.pdf",
+    "sha256_sujet": "e2b65b615bed5583fa8b8864d92469c28f1c069575c3512bf490c657d7d224bc",
+    "sha256_rapport_jury": "2bfc73f345cbfacc36822da3cf47a038298a4e71a0f1ec30cc69cc17b2f57edc"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "figures": [
     {
       "fichier": "figures/cercle-degre-deux.svg",
@@ -101,6 +103,75 @@
       "perimetre": "Relecture intégrale des 43 réponses et six figures dans les deux éditions. Borne commune sur les ordres, contrôle du signe du discriminant, comportement des racines de la famille et conditions d’égalité au minimum de degré quatre.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_maths_b_recentes",
+      "modifications": true,
+      "perimetre": "Comparaison des 43 repères des deux éditions au sujet et au rapport. Vérification des ordres cyclotomiques, du signe du discriminant, de la réciprocité des polynômes minimaux et du minimum de Salem. Preuve directe de l’irrationalité de sₙ et tₙ à la question 23a, puis contrôle des six figures."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3a",
+      "3b",
+      "4a",
+      "4b",
+      "5a",
+      "5b",
+      "6a",
+      "6b",
+      "7",
+      "8a",
+      "8b",
+      "9a",
+      "9b",
+      "10",
+      "11a",
+      "11b",
+      "11c",
+      "12a",
+      "12b",
+      "12c",
+      "13a",
+      "13b",
+      "13c",
+      "14a",
+      "14b",
+      "14c",
+      "15a",
+      "15b",
+      "16",
+      "17a",
+      "17b",
+      "17c",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23a",
+      "23b",
+      "23c",
+      "24"
+    ],
+    "precision": "Énoncé de 9 pages PDF et rapport de 5 pages PDF. Comparaison des 43 repères des deux éditions au sujet et au rapport. Vérification des ordres cyclotomiques, du signe du discriminant, de la réciprocité des polynômes minimaux et du minimum de Salem. Preuve directe de l’irrationalité de sₙ et tₙ à la question 23a, puis contrôle des six figures.",
+    "origine_attestation": {
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "e2b65b615bed5583fa8b8864d92469c28f1c069575c3512bf490c657d7d224bc",
+      "sha256_rapport_jury_controle": "2bfc73f345cbfacc36822da3cf47a038298a4e71a0f1ec30cc69cc17b2f57edc",
+      "perimetre": "Comparaison des 43 repères des deux éditions au sujet et au rapport. Vérification des ordres cyclotomiques, du signe du discriminant, de la réciprocité des polynômes minimaux et du minimum de Salem. Preuve directe de l’irrationalité de sₙ et tₙ à la question 23a, puis contrôle des six figures.",
+      "commit_edition_anterieure": "45646931102e9dbad9baf4f6ddf7d7aec38fa3d9"
+    }
+  }
 }

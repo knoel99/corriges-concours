@@ -1,0 +1,82 @@
+{
+  "slug": "x_mp-pc_allemand_2010",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Allemand",
+    "annee": 2010,
+    "modalite": "écrit"
+  },
+  "intitule": "Le départ de Humboldt et Bonpland et le temps de penser",
+  "questions": 3,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "V",
+      "1",
+      "2"
+    ]
+  },
+  "sources": {
+    "index": "https://www.alloschool.com/element/33548",
+    "etablissements": "École polytechnique et École supérieure de physique et de chimie industrielles",
+    "sujet": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2010-langues-vivantes.pdf#page=4",
+    "sujet_sha256": "44be9353a9797be2ce331618ae2b484ddd60056a2b192059d7aa698def3e54eb",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2010-langues-vivantes.pdf#page=4",
+        "sha256": "44be9353a9797be2ce331618ae2b484ddd60056a2b192059d7aa698def3e54eb",
+        "pages": "4"
+      },
+      {
+        "role": "sujet complémentaire",
+        "url": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2010-langues-vivantes.pdf#page=1",
+        "sha256": "44be9353a9797be2ce331618ae2b484ddd60056a2b192059d7aa698def3e54eb",
+        "pages": "1–2"
+      }
+    ],
+    "references_complementaires": [
+      "https://web.archive.org/web/20110519221507/http://www.admission.polytechnique.edu:80/accueil/concours-cycle-polytechnicien/sujets-rapports-et-statistiques/sujets-rapports-et-statistiques-5071.kjsp",
+      "https://www2.espci.fr/enseignement/brochure_concours_2010_polytechnique.pdf#page=20",
+      "https://groupe-reussite.fr/ressources/wp-content/uploads/Annales/x-ens/anglais/x-ens-anglais-2010-sujet.pdf#page=2",
+      "https://groupe-reussite.fr/ressources/wp-content/uploads/Annales/x-ens/anglais/x-ens-anglais-2010-sujet.pdf#page=9"
+    ]
+  },
+  "mots_expression": {
+    "1": 127,
+    "2": 186
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V",
+      "fichier": "figures/lecture-1.svg",
+      "legende": "Le dernier geste traduit une adhésion dont le narrateur détaille les deux motifs."
+    },
+    {
+      "numero": 2,
+      "question": "2",
+      "fichier": "figures/lecture-2.svg",
+      "legende": "Une mesure donne prise sur un problème et laisse des décisions collectives à prendre."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "fin_langues_x_interens",
+      "session": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Version complète, expression en allemand, accompagnement pédagogique et deux schémas. Le départ de Humboldt et Bonpland et le temps de penser.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}

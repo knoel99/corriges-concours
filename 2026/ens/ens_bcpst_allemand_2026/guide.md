@@ -8,6 +8,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Fast Fashion**
 
 L’épreuve dure trois heures. La synthèse et l’expression personnelle valent chacune huit points, la traduction quatre. Les deux réponses en allemand doivent chacune compter entre 225 et 275 mots.

@@ -1,0 +1,166 @@
+{
+  "slug": "x_ta_epreuve-pratique-de-mathematiques_1986",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "TA",
+    "annee": 1986,
+    "matiere": "Épreuve pratique de mathématiques",
+    "modalite": "pratique"
+  },
+  "intitule": "Épreuve pratique de mathématiques · concours commun Mines-Ponts · X option T.A.",
+  "questions": 10,
+  "duree_heures": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-a909b354df14e5dbb4a6",
+    "sujet_sha256": "6450c42a2d944519ecf4026c70ace78fdd545e4045b24207392cdf55f33ea4a0",
+    "notice_ups": "m86mip",
+    "notice_officielle": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000330227",
+    "precisions": "Le bandeau des écoles donne « École polytechnique (option T.A.) ». L’épreuve est commune aux options M, P′ et T.A. du concours commun. Pour l’X, seul le recrutement T.A. est mentionné dans la liste des écoles."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-a909b354df14e5dbb4a6",
+      "sha256": "6450c42a2d944519ecf4026c70ace78fdd545e4045b24207392cdf55f33ea4a0",
+      "pages": 1,
+      "rendu_page_sha256": [
+        "d84fe18fef7752320dbf74763192efb790b9020f6a58e3095555625bcafd5ac0"
+      ]
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "x_ta_pratiques_1985_1988",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Deux éditions complètes, 10 questions et sous-questions, indications et deux figures."
+    },
+    {
+      "phase": "revision",
+      "session": "x_ta_pratiques_1985_1988",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Lecture des deux moitiés du feuillet, recalcul du polynôme de degré neuf et contrôle de l’échelle des tracés."
+    }
+  ],
+  "figures": [
+    {
+      "question": "2",
+      "numero": 1,
+      "fichier": "figures/arc-central.svg",
+      "legende": "Figure 1 — L’arc central est décroissant. Les deux asymptotes encadrent le point d’inflexion à l’origine."
+    },
+    {
+      "question": "5",
+      "numero": 2,
+      "fichier": "figures/arc-suivant.svg",
+      "legende": "Figure 2 — La branche convexe remonte de chaque côté du minimum, entre les deux asymptotes verticales."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.a",
+      "1.b",
+      "2",
+      "3.a",
+      "3.b",
+      "3.c",
+      "4.a",
+      "4.b",
+      "4.c",
+      "5"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1.a",
+        "page_pdf": 1,
+        "page_imprimee": 81,
+        "page_interne": 1,
+        "moitie_du_scan": "gauche"
+      },
+      {
+        "question": "1.b",
+        "page_pdf": 1,
+        "page_imprimee": 81,
+        "page_interne": 1,
+        "moitie_du_scan": "gauche"
+      },
+      {
+        "question": "2",
+        "page_pdf": 1,
+        "page_imprimee": 81,
+        "page_interne": 2,
+        "moitie_du_scan": "droite"
+      },
+      {
+        "question": "3.a",
+        "page_pdf": 1,
+        "page_imprimee": 81,
+        "page_interne": 2,
+        "moitie_du_scan": "droite"
+      },
+      {
+        "question": "3.b",
+        "page_pdf": 1,
+        "page_imprimee": 81,
+        "page_interne": 2,
+        "moitie_du_scan": "droite"
+      },
+      {
+        "question": "3.c",
+        "page_pdf": 1,
+        "page_imprimee": 81,
+        "page_interne": 2,
+        "moitie_du_scan": "droite"
+      },
+      {
+        "question": "4.a",
+        "page_pdf": 1,
+        "page_imprimee": 81,
+        "page_interne": 2,
+        "moitie_du_scan": "droite"
+      },
+      {
+        "question": "4.b",
+        "page_pdf": 1,
+        "page_imprimee": 81,
+        "page_interne": 2,
+        "moitie_du_scan": "droite"
+      },
+      {
+        "question": "4.c",
+        "page_pdf": 1,
+        "page_imprimee": 81,
+        "page_interne": 2,
+        "moitie_du_scan": "droite"
+      },
+      {
+        "question": "5",
+        "page_pdf": 1,
+        "page_imprimee": 81,
+        "page_interne": 2,
+        "moitie_du_scan": "droite"
+      }
+    ]
+  }
+}

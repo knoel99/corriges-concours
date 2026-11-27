@@ -1,0 +1,78 @@
+{
+  "slug": "ens-paris-saclay_design_expression-graphique-chromatique-ou-volumique_2015",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Expression graphique, chromatique ou volumique",
+    "annee": 2015,
+    "modalite": "écrit"
+  },
+  "intitule": "Plier la nuit",
+  "redaction": "Proposition de corrigé rédigée par IA, non officielle.",
+  "questions": 2,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2015_Sujet_1A_Design_EGCV.pdf",
+    "sujet_sha256": "50aa03cf5c98bd4843c4ef09973a705f411974469985c2837d136d14541b403f",
+    "index_officiel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=283",
+    "nature": "Les quatre pages du fascicule sont disponibles. La demande et la limite de cinq lignes figurent en page 3, la durée et les supports en page 4. L’index officiel de 2015 ne présente pas de rapport pour cette épreuve."
+  },
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/01-plier-la-nuit.svg",
+      "question": "Affiche grand aigle",
+      "legende": "Plier la nuit, affiche verticale, image et lettres dessinées pour cette proposition."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/02-etude-du-pli.svg",
+      "question": "Étude du guide",
+      "legende": "Essai de la lisière et des rapports entre le pli et la lettre."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "design_saclay_six_archives",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Conception d’une affiche originale en grand aigle, lettrage et marque redessinés, rédaction d’un propos autonome en quatre lignes."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "design_saclay_six_archives",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification du sujet, des légendes, des dessins, de la distinction entre observations, hypothèses et essais, et des deux documents.",
+      "tour": 1
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Affiche d’auteur",
+      "Court propos écrit"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Les quatre pages du fascicule sont disponibles. La demande et la limite de cinq lignes figurent en page 3, la durée et les supports en page 4. L’index officiel de 2015 ne présente pas de rapport pour cette épreuve."
+  }
+}

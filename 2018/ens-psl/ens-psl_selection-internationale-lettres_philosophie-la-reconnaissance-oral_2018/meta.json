@@ -1,0 +1,68 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_philosophie-la-reconnaissance-oral_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Philosophie — La reconnaissance (oral)",
+    "annee": 2018,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie — La reconnaissance (oral)",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/Philo-oral-1.pdf",
+    "sha256_sujet": "ddc16ba862a0ddcdd994990b05cb36d797ade1229e44a070535de3f369ddf06f",
+    "reperage": "Développer et commenter le sujet « La reconnaissance ».",
+    "page_officielle": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2018-lettres",
+    "precision_controle": "Feuillet individuel 1, une page. Consigne « Développez et commentez » suivie du seul sujet « La reconnaissance »."
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Exposé oral",
+      "legende": "Que rend-on à la personne reconnue ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet original. Exposé argumenté sur le sujet attribué, exemples et objections, préparation guidée de l’entretien et schéma des distinctions conceptuelles."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "oraux_lyon_et_anciens_corriges",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Distinction de la reconnaissance de soi et de la simple identification par un engagement dans le temps. Exercice de la promesse dans le guidé."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "La reconnaissance"
+    ],
+    "detail": [
+      "Identifier la musicienne et se reconnaître comme signataire, puis examiner à quelles conditions son travail et ses droits sont reconnus.",
+      "La relation entre liberté et réciprocité est discutée à partir de Hegel. La gratitude est confrontée au remboursement et au risque d’une dette illimitée."
+    ]
+  },
+  "date_revision": "2026-11-26"
+}

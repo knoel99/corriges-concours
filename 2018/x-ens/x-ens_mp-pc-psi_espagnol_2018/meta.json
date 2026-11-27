@@ -1,0 +1,61 @@
+{
+  "slug": "x-ens_mp-pc-psi_espagnol_2018",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Espagnol",
+    "annee": 2018,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "intitule": "La crise catalane et les appartenances politiques",
+  "sources": {
+    "code_garde": "XEULCR",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_MPPC_sujet_Esp.pdf",
+    "sujet_sha256": "8e55b28254db5e99f17bc3144747811fe95a5b7d6dfeffa7187b82381d7bebee",
+    "sujet_pages": "1–8",
+    "sujet_index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2018/",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/11/18_MPPC_rapport_eEsp.pdf",
+    "rapport_sha256": "79fc507f862005200bb4bb23259f2eee1d6aae2647cfa26dfa151e56d07eb877",
+    "rapport_pages": "1–3",
+    "rapport_index": "https://banques-ecoles.fr/cms/session-2018-4/"
+  },
+  "redaction": "Synthèse espagnole des quatre documents avec titre, lecture de l’iconographie, texte d’opinion sur le cinquième document, accompagnement pour les deux compositions et contrôle des longueurs.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/drapeaux-et-identites.svg",
+      "legende": "Trois usages des couleurs dans le dossier sur la crise catalane."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "espagnol_mp_pc_2011_2014",
+      "session": "espagnol_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Synthèse espagnole des quatre documents avec titre, lecture de l’iconographie, texte d’opinion sur le cinquième document, accompagnement pour les deux compositions et contrôle des longueurs.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  },
+  "longueurs_hors_titre": {
+    "synthese_mots": 614,
+    "opinion_mots": 505
+  }
+}

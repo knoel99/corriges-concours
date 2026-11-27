@@ -1,0 +1,92 @@
+{
+  "slug": "banque-pt_pt_francais-a_2016",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français A",
+    "annee": 2016
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2016/fr_a_2016_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2016/rapport_fra_a_ecrit_2016.pdf",
+    "programme_officiel": "https://www.education.gouv.fr/bo/15/Hebdo23/MENS1501166A.htm",
+    "notice": "https://www.banquept.fr/documents/livret/2016/Livret_PT_2016.pdf#page=12",
+    "sujet_sha256": "1c846a321729ead771c606cb6a5df766bd34ef74ac2a1ac1fdbf3f26a10c4cdd",
+    "rapport_jury_sha256": "e933023870a426632b97f13c1a7ffe585e0694feb2524bc9a8183bcf9144ca72",
+    "programme_officiel_sha256": "c140879ba38df6b167411b3dcc4febaedb90af708b5c8e2ffc7edbf18febfabc",
+    "notice_sha256": "2d38e7c0962f3db4e1bbe63bb8d19e7f666c04250d51a8f0716679c39f2f5cde",
+    "oeuvres_au_programme": [
+      "Honoré de Balzac, La Cousine Bette",
+      "Jean Racine, Andromaque",
+      "David Hume, Dissertation sur les passions (traduction de Jean-Pierre Cléro)"
+    ],
+    "theme": "Le monde des passions",
+    "admissibilite_admission": "École polytechnique, admissibilité, coefficient 4",
+    "pages_rapport": "Pages PDF 2 à 7, pages imprimées 32 à 37, sur la structure du sujet, la responsabilité, les exemples et la section V de Hume."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "À quoi reconnaît-on une maîtrise morale ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction du sujet Rousseau, étude de l’exemple matrimonial, des passions calmes dans la Dissertation et des rapports entre devoir, calcul et fins dans les deux fictions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Vérification de la section V de Hume et de la différence entre calme et faiblesse. Contrôle du dilemme d’Andromaque, de l’ambassade d’Oreste, des fins poursuivies par Bette et de l’exemple de la fin d’Adeline.",
+      "tour": 1
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 1,
+        "perimetre": "Vous vous interrogerez sur la validité de ces affirmations de Jean-Jacques Rousseau (L’Emile 1762), à la lumière de vos lectures personnelles d’Andromaque de Racine, de la Dissertation sur les passions de Hume et de La cousine Bette de Balzac.",
+        "points": 20
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

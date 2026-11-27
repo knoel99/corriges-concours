@@ -1,0 +1,63 @@
+{
+  "slug": "bel_bl_sociologie-oral-commun-religion-en-france-entre-secularisation-et-recomposition_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Sociologie (oral commun) — Religion en France entre sécularisation et recomposition",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "La religion en France entre sécularisation et recomposition",
+  "questions": 0,
+  "documents": 7,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujets_socio_17_juin.pdf#page=25",
+    "sha256_sujet": "85cc47a53b07ba86c6b1d18e9821517bc9802a7365e87997d5b9c709d8e4b5b0",
+    "pages_sujet": "25–32 du recueil, pages 1–8 du sujet.",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_sociologie_tronc_commun.pdf",
+    "sha256_rapport_jury": "9bc988f94c13ebc880ab5860fd1c30f145a4bf52df2207b66bb6dbb78e4bd008",
+    "pages_rapport": "1 et 4 pour les modalités et le titre exact."
+  },
+  "figures": [
+    {
+      "fichier": "figures/affiliations-aux-deux-enquetes.svg",
+      "question": "Document 1",
+      "legende": "Évolution des parts de quatre réponses d’affiliation dans les enquêtes TeO 1 et 2."
+    },
+    {
+      "fichier": "figures/famille-et-couple.svg",
+      "question": "Documents 4 et 6",
+      "legende": "Deux populations distinctes pour étudier l’affiliation après une éducation catholique et celle du conjoint des catholiques en couple."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_maths_b_anciennes",
+      "modifications": true,
+      "perimetre": "Lecture visuelle des huit feuillets officiels. Rédaction des deux exposés, vérification des dénominateurs et périodes des six documents quantitatifs et analyse des entretiens de Julien Beaugé. Relevé de la discordance d’âge du premier feuillet statistique, réalisation des deux figures et préparation des relances."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "La religion en France entre sécularisation et recomposition"
+    ],
+    "documents_entierement_traites": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "precision": "Les deux éditions mobilisent les sept documents du dossier sans questions numérotées."
+  }
+}

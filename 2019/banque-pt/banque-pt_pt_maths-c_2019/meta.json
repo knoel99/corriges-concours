@@ -1,0 +1,297 @@
+{
+  "slug": "banque-pt_pt_maths-c_2019",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths C",
+    "intitule_officiel": "Épreuve de Mathématiques C",
+    "annee": 2019
+  },
+  "questions": 37,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2019/math_c_2019_pt.pdf",
+    "sujet_sha256": "068238f5dc44186c84a0d30a979106d9f1fa2a17153ce1cb32b0112de1464f1a",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2019/rapport_math_c_ecrit_2019.pdf",
+    "rapport_jury_sha256": "67edb8611342ba9b3dc45f3bb00cb82db79df1ca69d02bf2829a5732ac4f809d",
+    "pages_rapport": 8,
+    "grille_ecoles": "https://www.banquept.fr/documents/livret/2019/Livret_PT_2019.pdf#page=12",
+    "grille_sha256": "5e9e9802e7a767f8bf21f41392351aced28769ba62375db0bc111044780779c7",
+    "page_grille": 12,
+    "coefficients_admissibilite": {
+      "X": 6,
+      "ENS Paris-Saclay": 3,
+      "ENS Rennes": 3
+    }
+  },
+  "figures": [
+    {
+      "question": "I.2.c",
+      "fichier": "figures/moments-exponentiels.svg",
+      "legende": "Moments pairs du sinus à poids exponentiel, calculés par la récurrence exacte et représentés aux rangs 2n."
+    },
+    {
+      "question": "II.10.f",
+      "fichier": "figures/wallis-coefficients.svg",
+      "legende": "Les intégrales de Wallis de rangs pairs et impairs sont comparées à leur équivalent commun. Le panneau de droite donne le quotient par cet équivalent."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "P.1",
+      "P.2.a",
+      "P.2.b",
+      "P.2.c",
+      "I.1.a",
+      "I.1.b",
+      "I.1.c",
+      "I.1.d",
+      "I.1.e",
+      "I.2.a",
+      "I.2.b",
+      "I.2.c",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6.a",
+      "II.6.b",
+      "II.6.c",
+      "II.6.d",
+      "II.7",
+      "II.8.a",
+      "II.8.b",
+      "II.8.c",
+      "II.9.a",
+      "II.9.b",
+      "II.9.c",
+      "II.10.a",
+      "II.10.b",
+      "II.10.c",
+      "II.10.d",
+      "II.10.e",
+      "II.10.f",
+      "II.10.g",
+      "II.10.h",
+      "II.11"
+    ],
+    "pages_du_sujet": 5,
+    "pages_pdf_des_questions": {
+      "P.1": 2,
+      "P.2.a": 2,
+      "P.2.b": 2,
+      "P.2.c": 2,
+      "I.1.a": 2,
+      "I.1.b": 2,
+      "I.1.c": 2,
+      "I.1.d": 2,
+      "I.1.e": 2,
+      "I.2.a": 2,
+      "I.2.b": 2,
+      "I.2.c": 3,
+      "II.1": 3,
+      "II.2": 3,
+      "II.3": 3,
+      "II.4": 3,
+      "II.5": 3,
+      "II.6.a": 3,
+      "II.6.b": 3,
+      "II.6.c": 3,
+      "II.6.d": 3,
+      "II.7": 3,
+      "II.8.a": 4,
+      "II.8.b": 4,
+      "II.8.c": 4,
+      "II.9.a": 4,
+      "II.9.b": 4,
+      "II.9.c": 4,
+      "II.10.a": 4,
+      "II.10.b": 4,
+      "II.10.c": 4,
+      "II.10.d": 4,
+      "II.10.e": 5,
+      "II.10.f": 5,
+      "II.10.g": 5,
+      "II.10.h": 5,
+      "II.11": 5
+    },
+    "repere_par_question": [
+      {
+        "question": "P.1",
+        "page_pdf": 2
+      },
+      {
+        "question": "P.2.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "P.2.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "P.2.c",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.1.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.1.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.1.c",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.1.d",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.1.e",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.2.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.2.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.2.c",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.1",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.2",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.3",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.4",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.5",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.6.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.6.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.6.c",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.6.d",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.7",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.8.a",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.8.b",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.8.c",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.9.a",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.9.b",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.9.c",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.10.a",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.10.b",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.10.c",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.10.d",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.10.e",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.10.f",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.10.g",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.10.h",
+        "page_pdf": 5
+      },
+      {
+        "question": "II.11",
+        "page_pdf": 5
+      }
+    ],
+    "precision": "La garde visible porte « Épreuve de Mathématiques C » et le code 094. Une autre mention est masquée dans la couche texte. La page 4 du PDF est une image, lue pour les subdivisions II.8.a à II.10.d. Le dernier numéro imprimé est II.11."
+  },
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Lecture des cinq pages du sujet, du rapport spécifique de 8 pages et de la grille d’admissibilité page 12. Rédaction des 37 réponses et des indications, vérification des figures. La garde visible porte « Épreuve de Mathématiques C » et le code 094. Une autre mention est masquée dans la couche texte. La page 4 du PDF est une image, lue pour les subdivisions II.8.a à II.10.d. Le dernier numéro imprimé est II.11. Le rapport, pages 3–4 et 7–8, demande de justifier les bords des intégrations par parties, d’identifier les deux suites de coefficients et de déduire leur équivalence du quotient établi."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_philosophie-kant-et-le-jugement-de-gout-oral_2016",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Philosophie — Kant et le jugement de goût (oral)",
+    "annee": 2016,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie — Kant et le jugement de goût (oral)",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/ORAUX-PHILO-SIL2016.pdf",
+    "sha256_sujet": "354bd9d0769af73c51a4bf7873418f8b2ecdcdf13e16ec46c418fe62bcf0be8c",
+    "reperage": "Pages 3 du recueil. Expliquer et commenter le passage attribué au candidat.",
+    "controle_du_perimetre": "Page 3 du recueil. Le feuillet ne donne ni durée ni questions de jury distinctes."
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Exposé oral",
+      "legende": "Trois manières de comprendre un accord"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet original. Exposé argumenté sur le sujet attribué, exemples et objections, préparation guidée de l’entretien et schéma des distinctions conceptuelles."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Portée du § 7 sur le feuillet 3 vérifiée, avec les deux paragraphes et leurs exemples. Mise à l’épreuve des deux jugements sur le même objet. Identification des relances du corrigé comme entraînement."
+    }
+  ],
+  "date_revision": "2026-11-27",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Exposé oral"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "Exposé oral",
+        "page_pdf": 3,
+        "page_pdf_fin": 3,
+        "debut": "Pour ce qui est de l’agréable",
+        "fin": "qui puisse légitimement réclamer l’assentiment universel.",
+        "consigne": "Expliquez et commentez librement cet extrait de I. Kant, Critique du jugement, § 7 :"
+      }
+    ]
+  }
+}

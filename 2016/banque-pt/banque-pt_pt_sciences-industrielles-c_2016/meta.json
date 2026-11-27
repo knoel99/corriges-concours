@@ -1,0 +1,650 @@
+{
+  "slug": "banque-pt_pt_sciences-industrielles-c_2016",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Sciences industrielles C",
+    "annee": 2016
+  },
+  "questions": 55,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2016/si_c_2016_pt.pdf",
+    "sujet_sha256": "5199b211f83e3e02bc9f4049a38201a68ba6d0a55ac8c6dd8fcea32927ad241e",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2016/rapport_si_c_ecrit_2016.pdf",
+    "rapport_sha256": "6ae4f786350e21e1c466a3496ce321dce0cf15a8bc2f2da6a69ac878b05d72b5",
+    "lecture_rapport": "Rapport PDF p. 1–3, pagination imprimée 53–55. Bilan énergétique, angles de travail, portées des paliers et lubrification, statique, commande électrique et tolérancement."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2016/si_c_2016_pt.pdf",
+      "sha256": "5199b211f83e3e02bc9f4049a38201a68ba6d0a55ac8c6dd8fcea32927ad241e",
+      "nombre_pages": 49,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "a912e3d8ea04ed6c64c7f7f00dca7ea26751fca65854b88dff2d871f8fe2650a"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "fcc966973fb17cdff16e6303a8a4455b2a696b18efb964fdcb55ebe0b8cc4de0"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "0bfd0b3ec2df887cc2b3261762c5ada43ea8d8ebbba1a98fbcbf1757d6059253"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "798c43deac300600e893a885a1b1931b793867ea8c35f56345db017cdaed85e0"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "92eb72e523d0d75ad83f88570ebec08dba695d9291a5a3154cbe463672225ce1"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "e8e286f5745043274d223136fbb57a60cdabc5282304aae409550293b570c27b"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "ca54dacfbc071af9f3acd0b68eb7e0855e00687e791f10c99d9e14e694ca53a3"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "83e27fc01bf233b88f334f7d52352d89358af608b81608eed1c28f2be0fe3e59"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "c223fa221959123c8548e2d120484f9cd63766db7f4fa76c6e3e92a6853cb2a8"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "483c7a2e7efbe5afb0ffb1a4d9ddd711326747945f57d4a869432342aac4122f"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "edf76820b38af7d8183a8c6dbec13f96826e2da2c248f75cfd230618aade2c05"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "c04e8102a014d1498b277f9fd9b69316f9ee76a63a653e1a05a4954d9b18220e"
+        },
+        {
+          "numero": 13,
+          "rendu_sha256": "1b71f084d5c4489c9ceaa115c087887cc179ed4c56bcf03bdef6872c6a5872b7"
+        },
+        {
+          "numero": 14,
+          "rendu_sha256": "e6127386cd210f4d5523c70f5d69e101315bade90241473de5f6c66ab641035d"
+        },
+        {
+          "numero": 15,
+          "rendu_sha256": "e5d3b8f331694a52af6e0f7e878c1a8be19991f7b2d7fa9c632085dbca5f21df"
+        },
+        {
+          "numero": 16,
+          "rendu_sha256": "2c62948ed25d5b2101597213e70367b6e03ec04dadf87946f5104994b11091fb"
+        },
+        {
+          "numero": 17,
+          "rendu_sha256": "df7fd7321f7844d055de425f14ac8c2f785b42b945eb1ec73ba207b260c6ca0a"
+        },
+        {
+          "numero": 18,
+          "rendu_sha256": "38c55b7414f84c492cddc31bb5e910309a5406ba8abf32f92caf63895ec55efc"
+        },
+        {
+          "numero": 19,
+          "rendu_sha256": "27c067772cb7395d5c556cc3a9a9db4c7df21f3eb4c85de7cf7101083ba14316"
+        },
+        {
+          "numero": 20,
+          "rendu_sha256": "afa2efdde60652c80f7a96bb2dd9d332b23d9cd909182847b313e16060803c27"
+        },
+        {
+          "numero": 21,
+          "rendu_sha256": "bfbed6ba55c109b42e47f9214ae950700cf8edded85a2a0c87ae511efdf68c72"
+        },
+        {
+          "numero": 22,
+          "rendu_sha256": "f6a36a3ae3a211748901d3abc43e1df73259e347aa08e8b0e4d91bff89c7e7b9"
+        },
+        {
+          "numero": 23,
+          "rendu_sha256": "5cd2525234a2d2f57c5b0e121e2f5cf68dd4fb1258007a9a14c4103d1e17b71e"
+        },
+        {
+          "numero": 24,
+          "rendu_sha256": "78897f1af9a52690d6f7c314d37024bed3b54f0b8169db94e4189f3dac619a05"
+        },
+        {
+          "numero": 25,
+          "rendu_sha256": "fa7d9161cec3ecc7921ea17fb83e81f3617d4300573e882946cbbeae338ac349"
+        },
+        {
+          "numero": 26,
+          "rendu_sha256": "aa656ad8f9741e1b4d41d25b5e0ad71fab43c38d9e26a5714575cfe9eebe8726"
+        },
+        {
+          "numero": 27,
+          "rendu_sha256": "2eb7b8b8f3f8ad678f90c0afa4107ecb83ff586e6d217da35b8cc79ee7dec5f6"
+        },
+        {
+          "numero": 28,
+          "rendu_sha256": "c9bb1a30889be61494bdf0782b0a55dbd4fc9d1fe855a6e85b6daaba564374e1"
+        },
+        {
+          "numero": 29,
+          "rendu_sha256": "41b6d233136ae3edbcd3d7d4e3c275118b6e958c03725288322f5c18362af03b"
+        },
+        {
+          "numero": 30,
+          "rendu_sha256": "1704c0f700c1f8c7bbb97042d92d405eb055f36a92da5ed11d4f393fd3a225ef"
+        },
+        {
+          "numero": 31,
+          "rendu_sha256": "a29d56b6bd52b5616a203d3530a1d7ca467ea2cc7146158bc2884457f3d17bf1"
+        },
+        {
+          "numero": 32,
+          "rendu_sha256": "f6b13986578e9158b47d608b00d68a0a4b8bc323569bfd16d420e370b32893e6"
+        },
+        {
+          "numero": 33,
+          "rendu_sha256": "63a7a5f5ba9c0995571a22660f8f261774bfe25531773840af3be65fcf1abd66"
+        },
+        {
+          "numero": 34,
+          "rendu_sha256": "89d8949a94e993e848f14b9da15fd6e78b72b16bb11d845292e31d85ecc5dc8b"
+        },
+        {
+          "numero": 35,
+          "rendu_sha256": "5a00716edf721c1cd6cd92bae2da350149aa9efb477b3604fe194deace39d918"
+        },
+        {
+          "numero": 36,
+          "rendu_sha256": "b49d019195090426a31fed167701407210c88d458885cab0ff6d327c92cf7f33"
+        },
+        {
+          "numero": 37,
+          "rendu_sha256": "5581d7666f15c3c347a367ce157f1485a6dc5c42abb27add538023edce90a9ad"
+        },
+        {
+          "numero": 38,
+          "rendu_sha256": "ea90d8e263b8d381e21232f506f20ad5eae4b6d7622f8fdf677bb9ffe7ef0971"
+        },
+        {
+          "numero": 39,
+          "rendu_sha256": "f61205d0f337f3aa2242fbb9f29eb2e25ee8f68961ce2e4ace281814f760e22b"
+        },
+        {
+          "numero": 40,
+          "rendu_sha256": "57ec88585f717a98d16de3c035a936e546460bde87469a688660d8d4d7b039f9"
+        },
+        {
+          "numero": 41,
+          "rendu_sha256": "5a525b513a8c3fd948cd73afbc15f14753ff0d5281275046213a1ac8f2bc4ecb"
+        },
+        {
+          "numero": 42,
+          "rendu_sha256": "532dc7cfa2c7e07d90bd03dad722d4135e65893b1652351066bc780b1e6b2258"
+        },
+        {
+          "numero": 43,
+          "rendu_sha256": "703f9838476fb91f27d5cd7ccd1e6cbe48cb339dc2dc856c11008a428fb47725"
+        },
+        {
+          "numero": 44,
+          "rendu_sha256": "5e55e4e24e9e06941989069b63ff839249d0527748ee11b58d73701448b0b4b4"
+        },
+        {
+          "numero": 45,
+          "rendu_sha256": "02c5413f837c02837b1232631cf6cac3d19ec370d76f494f5453291926b6c4f4"
+        },
+        {
+          "numero": 46,
+          "rendu_sha256": "761639e25740627c19d213134720d2ac484b6855fb5f78f02aa2a053e56528d3"
+        },
+        {
+          "numero": 47,
+          "rendu_sha256": "becdd9b66fa76af9b798b081da36d6387edbf0e2e7b8421e419956f3d0748cbb"
+        },
+        {
+          "numero": 48,
+          "rendu_sha256": "ba4ca1d08d1ac45c1e8941627d5ba34f512f847dcfee101bb13cf07ce63e1ac8"
+        },
+        {
+          "numero": 49,
+          "rendu_sha256": "1e4979dc552173c03169e6c1952cebe3256d8c32bf9edca430641efb77728bdb"
+        }
+      ],
+      "echelle_rendu": 0.6
+    },
+    "rapport_jury": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2016/rapport_si_c_ecrit_2016.pdf",
+      "sha256": "6ae4f786350e21e1c466a3496ce321dce0cf15a8bc2f2da6a69ac878b05d72b5",
+      "nombre_pages": 3,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "0bb148428985ab45a990c6a5edacc2d0034268a7657b06dee04fe5418a8f4a6f"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "523e323e531d5c6509d1f78ac73e1da931c98e89a2953c4c772002ba037110c2"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "1781ba3b85200300234f7c103442d3c74f07f150e0b58fc5532a33619da02ca1"
+        }
+      ],
+      "echelle_rendu": 0.6
+    }
+  },
+  "date_revision": "2026-11-27",
+  "figures": [
+    {
+      "fichier": "figures/domaine.svg",
+      "question": "Q15",
+      "legende": "Domaine de C construit à partir du secteur de travail et de la rotation de la flèche."
+    },
+    {
+      "fichier": "figures/pivots.svg",
+      "question": "Q22",
+      "legende": "Deux pivots démontables sur le calque A3, avec paliers distincts et alimentation en graisse."
+    },
+    {
+      "fichier": "figures/moteur.svg",
+      "question": "Q36",
+      "legende": "Coupe fonctionnelle du moteur à pistons axiaux et voies du distributeur."
+    },
+    {
+      "fichier": "figures/hacheur.svg",
+      "question": "Q49",
+      "legende": "Hacheur un quadrant, diode de roue libre et tension du moteur sur deux périodes."
+    },
+    {
+      "fichier": "figures/moule.svg",
+      "question": "Q50",
+      "legende": "Coupe du moule avec empreinte de carter, noyau sur portées, attaque et masselotte."
+    }
+  ],
+  "contributions": [
+    {
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "session": "banque_pt_si_c_robot_accoroutage_agv_2016",
+      "phase": "redaction",
+      "perimetre": "Réponse aux 55 questions, lecture des 49 pages du sujet, dont les onze ressources, le calque A3 et les pages réponses, et des trois pages du jury. Tracés sur les fonds du cahier et la coupe A-A."
+    },
+    {
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "session": "banque_pt_si_c_robot_accoroutage_agv_2016",
+      "phase": "relecture_corrige",
+      "perimetre": "Vérification de la masse et de la vitesse en phase de travail, des échelles graphiques, des portées indépendantes, du signe de la vis, du ressort et des références de tolérance.",
+      "tour": 1
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21",
+      "Q22",
+      "Q23",
+      "Q24",
+      "Q25",
+      "Q26",
+      "Q27",
+      "Q28",
+      "Q29",
+      "Q30",
+      "Q31",
+      "Q32",
+      "Q33",
+      "Q34",
+      "Q35",
+      "Q36",
+      "Q37",
+      "Q38",
+      "Q39",
+      "Q40",
+      "Q41",
+      "Q42",
+      "Q43",
+      "Q44",
+      "Q45",
+      "Q46",
+      "Q47",
+      "Q48",
+      "Q49",
+      "Q50",
+      "Q51",
+      "Q52",
+      "Q53",
+      "Q54",
+      "Q55"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "Q1",
+        "page_pdf": 4,
+        "traitement": "Différentiel et blocage"
+      },
+      {
+        "question": "Q2",
+        "page_pdf": 4,
+        "traitement": "Essieu oscillant"
+      },
+      {
+        "question": "Q3",
+        "page_pdf": 4,
+        "traitement": "Implantation du moteur"
+      },
+      {
+        "question": "Q4",
+        "page_pdf": 5,
+        "traitement": "Puissance aux essieux"
+      },
+      {
+        "question": "Q5",
+        "page_pdf": 5,
+        "traitement": "Puissance du module"
+      },
+      {
+        "question": "Q6",
+        "page_pdf": 5,
+        "traitement": "Puissance du moteur thermique"
+      },
+      {
+        "question": "Q7",
+        "page_pdf": 5,
+        "traitement": "Possibilités du véhicule"
+      },
+      {
+        "question": "Q8",
+        "page_pdf": 5,
+        "traitement": "Protection du vérin"
+      },
+      {
+        "question": "Q9",
+        "page_pdf": 5,
+        "traitement": "Cheminement de l’huile"
+      },
+      {
+        "question": "Q10",
+        "page_pdf": 5,
+        "traitement": "Électrocommande"
+      },
+      {
+        "question": "Q11",
+        "page_pdf": 6,
+        "traitement": "Distributeur et choix des positions"
+      },
+      {
+        "question": "Q12",
+        "page_pdf": 6,
+        "traitement": "Rappel au centre"
+      },
+      {
+        "question": "Q13",
+        "page_pdf": 6,
+        "traitement": "Vitesse de tige"
+      },
+      {
+        "question": "Q14",
+        "page_pdf": 6,
+        "traitement": "Commande proportionnelle"
+      },
+      {
+        "question": "Q15",
+        "page_pdf": 6,
+        "traitement": "Domaine accessible"
+      },
+      {
+        "question": "Q16",
+        "page_pdf": 6,
+        "traitement": "Restrictions réelles"
+      },
+      {
+        "question": "Q17",
+        "page_pdf": 7,
+        "traitement": "Montage initial"
+      },
+      {
+        "question": "Q18",
+        "page_pdf": 7,
+        "traitement": "Montage à biellettes"
+      },
+      {
+        "question": "Q19",
+        "page_pdf": 7,
+        "traitement": "Courses comparées"
+      },
+      {
+        "question": "Q20",
+        "page_pdf": 7,
+        "traitement": "Dimensionnement des coussinets"
+      },
+      {
+        "question": "Q21",
+        "page_pdf": 7,
+        "traitement": "Choix dans le catalogue"
+      },
+      {
+        "question": "Q22",
+        "page_pdf": 8,
+        "traitement": "Coupe des guidages"
+      },
+      {
+        "question": "Q23",
+        "page_pdf": 8,
+        "traitement": "Moment quadratique"
+      },
+      {
+        "question": "Q24",
+        "page_pdf": 8,
+        "traitement": "Répartition de matière"
+      },
+      {
+        "question": "Q25",
+        "page_pdf": 8,
+        "traitement": "Section critique"
+      },
+      {
+        "question": "Q26",
+        "page_pdf": 8,
+        "traitement": "Formule de flexion"
+      },
+      {
+        "question": "Q27",
+        "page_pdf": 8,
+        "traitement": "Effet de la charge en bout"
+      },
+      {
+        "question": "Q28",
+        "page_pdf": 9,
+        "traitement": "Vérification de résistance"
+      },
+      {
+        "question": "Q29",
+        "page_pdf": 10,
+        "traitement": "Équilibre du dashpot"
+      },
+      {
+        "question": "Q30",
+        "page_pdf": 10,
+        "traitement": "Équilibre du bras"
+      },
+      {
+        "question": "Q31",
+        "page_pdf": 10,
+        "traitement": "Compression transmise"
+      },
+      {
+        "question": "Q32",
+        "page_pdf": 10,
+        "traitement": "Raideur"
+      },
+      {
+        "question": "Q33",
+        "page_pdf": 10,
+        "traitement": "Ressort de catalogue"
+      },
+      {
+        "question": "Q34",
+        "page_pdf": 10,
+        "traitement": "Marche arrière"
+      },
+      {
+        "question": "Q35",
+        "page_pdf": 10,
+        "traitement": "Temps d’escamotage"
+      },
+      {
+        "question": "Q36",
+        "page_pdf": 11,
+        "traitement": "Moteur hydraulique axial"
+      },
+      {
+        "question": "Q37",
+        "page_pdf": 11,
+        "traitement": "Courroie crantée"
+      },
+      {
+        "question": "Q38",
+        "page_pdf": 12,
+        "traitement": "Masse du rotor"
+      },
+      {
+        "question": "Q39",
+        "page_pdf": 12,
+        "traitement": "Pièce à déplacer"
+      },
+      {
+        "question": "Q40",
+        "page_pdf": 12,
+        "traitement": "Liaison équivalente"
+      },
+      {
+        "question": "Q41",
+        "page_pdf": 12,
+        "traitement": "Schéma de réglage"
+      },
+      {
+        "question": "Q42",
+        "page_pdf": 13,
+        "traitement": "Sens de rotation"
+      },
+      {
+        "question": "Q43",
+        "page_pdf": 13,
+        "traitement": "Écartement"
+      },
+      {
+        "question": "Q44",
+        "page_pdf": 13,
+        "traitement": "Allongement d’un brin"
+      },
+      {
+        "question": "Q45",
+        "page_pdf": 13,
+        "traitement": "Tension et rotation"
+      },
+      {
+        "question": "Q46",
+        "page_pdf": 13,
+        "traitement": "Nombre de tours"
+      },
+      {
+        "question": "Q47",
+        "page_pdf": 13,
+        "traitement": "Choix d’un moteur à courant continu"
+      },
+      {
+        "question": "Q48",
+        "page_pdf": 13,
+        "traitement": "Alimentation réglable"
+      },
+      {
+        "question": "Q49",
+        "page_pdf": 13,
+        "traitement": "Modulation de largeur d’impulsion"
+      },
+      {
+        "question": "Q50",
+        "page_pdf": 14,
+        "traitement": "Moulage au sable"
+      },
+      {
+        "question": "Q51",
+        "page_pdf": 14,
+        "traitement": "Impression du modèle"
+      },
+      {
+        "question": "Q52",
+        "page_pdf": 14,
+        "traitement": "Pertinence du procédé"
+      },
+      {
+        "question": "Q53",
+        "page_pdf": 14,
+        "traitement": "Localisation et orientation"
+      },
+      {
+        "question": "Q54",
+        "page_pdf": 15,
+        "traitement": "Orientation sur centre horizontal"
+      },
+      {
+        "question": "Q55",
+        "page_pdf": 15,
+        "traitement": "Opérations et outils"
+      }
+    ]
+  }
+}

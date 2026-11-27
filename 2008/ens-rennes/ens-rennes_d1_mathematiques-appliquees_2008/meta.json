@@ -1,0 +1,131 @@
+{
+  "slug": "ens-rennes_d1_mathematiques-appliquees_2008",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Mathématiques appliquées",
+    "annee": 2008
+  },
+  "questions": 24,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet08d1options_1421752181536-pdf#page=5",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/r1a_08_d1_maths_1404897167467.pdf",
+    "sha256_sujet": "d88721a3e2c6a4f1919fdf6d535c20de126517ee747d0d3bfbee0eb77ed1329b",
+    "sha256_rapport_jury": "f6e6ef5147ec1c71440f4deb10169dc08225627d155fe23cbc3e6774f1ea9d5f"
+  },
+  "figures": [
+    {
+      "fichier": "figures/histogramme-entreprise-un.svg",
+      "question": "1.I.3",
+      "legende": "Les largeurs suivent les classes observées. L’aire du rectangle témoin représente un point de pourcentage."
+    },
+    {
+      "fichier": "figures/polygones-des-frequences-cumulees.svg",
+      "question": "1.I.5",
+      "legende": "Les deux polygones sont tracés aux bornes des classes. Le niveau 50 % coupe les deux tracés entre 1600 et 2000 euros."
+    },
+    {
+      "fichier": "figures/lorenz-masse-salariale.svg",
+      "question": "1.I.7",
+      "legende": "La courbe de Lorenz compare la part du personnel à la part correspondante de la masse salariale, des plus faibles rémunérations aux plus fortes."
+    },
+    {
+      "fichier": "figures/etudes-et-salaires.svg",
+      "question": "1.II.1",
+      "legende": "La dispersion des rémunérations à diplôme donné demeure visible autour de la droite croissante."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des quatre exercices après lecture du fascicule et du rapport. Quatre figures originales, histogramme corrigé des amplitudes, courbes cumulées, Lorenz et nuage. Vérification de la masse, de l’ajustement, des domaines incluant les axes et de la loi d’arrêt.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Quatre exercices, pages 5 à 8 du cahier à options, et trois pages du rapport relues. Recalcul des moments, de la régression et des probabilités. Ajout des totaux du tableau de salaires et de la lecture économique de la productivité moyenne.",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "agent": "rennes_oraux_economie",
+      "session": "rennes_oraux_economie"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.I.1",
+      "1.I.2",
+      "1.I.3",
+      "1.I.4",
+      "1.I.5",
+      "1.I.6",
+      "1.I.7",
+      "1.II.1",
+      "1.II.2",
+      "1.II.3",
+      "1.II.4",
+      "1.II.5",
+      "1.II.6",
+      "2.I.1",
+      "2.I.2.a",
+      "2.I.2.b",
+      "2.II.1",
+      "2.II.2",
+      "2.II.3",
+      "3.1",
+      "3.2.a",
+      "3.2.b",
+      "3.3",
+      "4"
+    ],
+    "origine_attestation": {
+      "commit_du_journal": "e761fa700232f05df3ae13e641a62b875349ebe9",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction intégrale des quatre exercices après lecture du fascicule et du rapport. Quatre figures originales, histogramme corrigé des amplitudes, courbes cumulées, Lorenz et nuage. Vérification de la masse, de l’ajustement, des domaines incluant les axes et de la loi d’arrêt.",
+      "sha256_sujet_controle": "d88721a3e2c6a4f1919fdf6d535c20de126517ee747d0d3bfbee0eb77ed1329b"
+    },
+    "pages_pdf_des_questions": {
+      "1.I.1": 5,
+      "1.I.2": 5,
+      "1.I.3": 5,
+      "1.I.4": "5–6",
+      "1.I.5": 6,
+      "1.I.6": 6,
+      "1.I.7": 6,
+      "1.II.1": 6,
+      "1.II.2": 6,
+      "1.II.3": 6,
+      "1.II.4": 6,
+      "1.II.5": 6,
+      "1.II.6": 6,
+      "2.I.1": 7,
+      "2.I.2.a": 7,
+      "2.I.2.b": 7,
+      "2.II.1": 7,
+      "2.II.2": 7,
+      "2.II.3": 7,
+      "3.1": 8,
+      "3.2.a": 8,
+      "3.2.b": 8,
+      "3.3": 8,
+      "4": 8
+    },
+    "precision": "Quatre exercices, pages 5 à 8 du cahier à options, et trois pages du rapport relues. Recalcul des moments, de la régression et des probabilités. Ajout des totaux du tableau de salaires et de la lecture économique de la productivité moyenne."
+  }
+}

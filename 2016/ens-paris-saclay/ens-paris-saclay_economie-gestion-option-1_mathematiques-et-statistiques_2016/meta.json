@@ -11,7 +11,8 @@
   "sources": {
     "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2016_Sujet_1A_D2-1_Maths.pdf",
     "rapport_jury": "",
-    "sha256_sujet": "b3cc9c514eebd2bbb9813c4fe19292075fbf68dbc06959ed0a6057883e7f8e29"
+    "sha256_sujet": "b3cc9c514eebd2bbb9813c4fe19292075fbf68dbc06959ed0a6057883e7f8e29",
+    "provenance": "Garde C1692 ENS Cachan–ENSAI D2, économie-gestion option 1, session 2016. Composition de quatre heures, quatre pages et trois problèmes."
   },
   "figures": [
     {
@@ -31,6 +32,323 @@
       "perimetre": "Rédaction sur les quatre pages originales de C1692 des deux éditions. Vérification des applications, des six extrema contraints, des deux segments ouverts et de la covariance négative entre les deux estimateurs calculés sur le même échantillon.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "agent": "maths_statistiques_saclay",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture des 41 consignes des deux éditions sur le fascicule. Compositions HK et (HK)², classification des six points critiques sur le cercle, événements incompatibles, segments des deux égalités conditionnelles et covariances du comptage multinomial."
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7",
+      "I.8",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "II.8",
+      "II.9",
+      "III.1",
+      "III.2a",
+      "III.2b",
+      "III.2c",
+      "III.2d",
+      "III.2e",
+      "III.2f",
+      "III.3a",
+      "III.3b",
+      "III.3c",
+      "III.3d",
+      "III.4a",
+      "III.4b",
+      "III.4c",
+      "III.5a",
+      "III.5b",
+      "III.5c",
+      "III.6a",
+      "III.6b.i",
+      "III.6b.ii",
+      "III.6c.i",
+      "III.6c.ii",
+      "III.6d",
+      "III.6e"
+    ],
+    "repere_par_question": [
+      {
+        "question": "I.1",
+        "titre": "I.1",
+        "partie": "Problème 1 · Composition de deux applications linéaires",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.2",
+        "titre": "I.2",
+        "partie": "Problème 1 · Composition de deux applications linéaires",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.3",
+        "titre": "I.3",
+        "partie": "Problème 1 · Composition de deux applications linéaires",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.4",
+        "titre": "I.4",
+        "partie": "Problème 1 · Composition de deux applications linéaires",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.5",
+        "titre": "I.5",
+        "partie": "Problème 1 · Composition de deux applications linéaires",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.6",
+        "titre": "I.6",
+        "partie": "Problème 1 · Composition de deux applications linéaires",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.7",
+        "titre": "I.7",
+        "partie": "Problème 1 · Composition de deux applications linéaires",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.8",
+        "titre": "I.8",
+        "partie": "Problème 1 · Composition de deux applications linéaires",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.1",
+        "titre": "II.1",
+        "partie": "Problème 2 · Extrema sur le cercle unité",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.2",
+        "titre": "II.2",
+        "partie": "Problème 2 · Extrema sur le cercle unité",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.3",
+        "titre": "II.3",
+        "partie": "Problème 2 · Extrema sur le cercle unité",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.4",
+        "titre": "II.4",
+        "partie": "Problème 2 · Extrema sur le cercle unité",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.5",
+        "titre": "II.5",
+        "partie": "Problème 2 · Extrema sur le cercle unité",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.6",
+        "titre": "II.6",
+        "partie": "Problème 2 · Extrema sur le cercle unité",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.7",
+        "titre": "II.7",
+        "partie": "Problème 2 · Extrema sur le cercle unité",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.8",
+        "titre": "II.8",
+        "partie": "Problème 2 · Extrema sur le cercle unité",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.9",
+        "titre": "II.9",
+        "partie": "Problème 2 · Extrema sur le cercle unité",
+        "page_pdf": 2
+      },
+      {
+        "question": "III.1",
+        "titre": "III.1",
+        "partie": "Problème 3 · Variables indicatrices et estimateurs",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.2a",
+        "titre": "III.2a",
+        "partie": "Problème 3 · Variables indicatrices et estimateurs",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.2b",
+        "titre": "III.2b",
+        "partie": "Problème 3 · Variables indicatrices et estimateurs",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.2c",
+        "titre": "III.2c",
+        "partie": "Problème 3 · Variables indicatrices et estimateurs",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.2d",
+        "titre": "III.2d",
+        "partie": "Problème 3 · Variables indicatrices et estimateurs",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.2e",
+        "titre": "III.2e",
+        "partie": "Problème 3 · Variables indicatrices et estimateurs",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.2f",
+        "titre": "III.2f",
+        "partie": "Problème 3 · Variables indicatrices et estimateurs",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.3a",
+        "titre": "III.3a",
+        "partie": "Problème 3 · Variables indicatrices et estimateurs",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.3b",
+        "titre": "III.3b",
+        "partie": "Problème 3 · Variables indicatrices et estimateurs",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.3c",
+        "titre": "III.3c",
+        "partie": "Problème 3 · Variables indicatrices et estimateurs",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.3d",
+        "titre": "III.3d",
+        "partie": "Problème 3 · Variables indicatrices et estimateurs",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.4a",
+        "titre": "III.4a",
+        "partie": "Problème 3 · Variables indicatrices et estimateurs",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.4b",
+        "titre": "III.4b",
+        "partie": "Problème 3 · Variables indicatrices et estimateurs",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.4c",
+        "titre": "III.4c",
+        "partie": "Problème 3 · Variables indicatrices et estimateurs",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.5a",
+        "titre": "III.5a",
+        "partie": "Problème 3 · Variables indicatrices et estimateurs",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.5b",
+        "titre": "III.5b",
+        "partie": "Problème 3 · Variables indicatrices et estimateurs",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.5c",
+        "titre": "III.5c",
+        "partie": "Problème 3 · Variables indicatrices et estimateurs",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.6a",
+        "titre": "III.6a",
+        "partie": "Problème 3 · Variables indicatrices et estimateurs",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.6b.i",
+        "titre": "III.6b.i",
+        "partie": "Problème 3 · Variables indicatrices et estimateurs",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.6b.ii",
+        "titre": "III.6b.ii",
+        "partie": "Problème 3 · Variables indicatrices et estimateurs",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.6c.i",
+        "titre": "III.6c.i",
+        "partie": "Problème 3 · Variables indicatrices et estimateurs",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.6c.ii",
+        "titre": "III.6c.ii",
+        "partie": "Problème 3 · Variables indicatrices et estimateurs",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.6d",
+        "titre": "III.6d",
+        "partie": "Problème 3 · Variables indicatrices et estimateurs",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.6e",
+        "titre": "III.6e",
+        "partie": "Problème 3 · Variables indicatrices et estimateurs",
+        "page_pdf": 4
+      }
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "controle": [
+      "Compositions HK et (HK)², classification des six points critiques sur le cercle, événements incompatibles, segments des deux égalités conditionnelles et covariances du comptage multinomial."
+    ]
+  }
 }

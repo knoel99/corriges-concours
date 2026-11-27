@@ -39,5 +39,66 @@
       "modifications": true,
       "perimetre": "Rédaction des dix-neuf questions à partir du sujet et du rapport de la banque. Reconstruction de la grille de Q8 et vérification du contre-exemple Q15. Contrôles Python par un oracle de triplets, de gravité et de régions, et exécution des quatre requêtes SQL sur des scores avec ex æquo. Deux figures originales."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19"
+    ],
+    "pages_des_questions": {
+      "1": 5,
+      "2": 6,
+      "3": 7,
+      "4": 8,
+      "5": 9,
+      "6": 10,
+      "7": 11,
+      "8": 13,
+      "9": 13,
+      "10": 14,
+      "11": 14,
+      "12": 14,
+      "13": 14,
+      "14": 15,
+      "15": 15,
+      "16": 18,
+      "17": 18,
+      "18": 18,
+      "19": 18
+    },
+    "origine_attestation": {
+      "commit_du_journal": "d4e27c96b17a7c8d1ff320d429885849cdbce9be",
+      "phase": "redaction",
+      "date": "2026-11-24",
+      "perimetre": "Rédaction des dix-neuf questions à partir du sujet et du rapport de la banque. Reconstruction de la grille de Q8 et vérification du contre-exemple Q15. Contrôles Python par un oracle de triplets, de gravité et de régions, et exécution des quatre requêtes SQL sur des scores avec ex æquo. Deux figures originales.",
+      "sha256_sujet_controle": "05bdd37235a2c08d0c7346320c965be5240e35039013ccf95f1688b04f16a668",
+      "sha256_rapport_controle": "664cf05c35520e54c727ac8acd4f3dca9115b619cdc1a19d627ecca170fcfb42"
+    },
+    "controle_programmes": {
+      "resultats_par_edition": {
+        "brut": "brut 729 rangées à lecture unique, 512 grilles, chutes, score de 8 et quatre requêtes SQL",
+        "guide": "guide 729 rangées à lecture unique, 512 grilles, chutes, score de 8 et quatre requêtes SQL"
+      },
+      "controle_sur": "Programmes extraits de chaque édition et vérifiés à nouveau. Les tests portent aussi sur les requêtes SQL lorsqu’elles sont proposées."
+    },
+    "precision": "Les numéros et pages ont été relevés dans le fac-similé du concours. Les réponses des deux éditions sont présentes au commit éditorial indiqué."
+  }
 }

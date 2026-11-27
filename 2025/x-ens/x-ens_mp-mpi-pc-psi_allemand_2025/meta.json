@@ -41,7 +41,32 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Rédaction des deux éditions sur les deux fascicules officiels concordants et le rapport du jury. Synthèse des documents 1 à 4 (620 mots hors titre) et réaction personnelle au document 5 (524 mots), avec guidage et schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "fin_langues_x_interens",
+      "agent": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Collation des deux éditions avec la garde, les quatre documents de synthèse et l’éditorial. Vérification des longueurs (620 et 524 mots), du titre et du document visuel de la page 8 du PDF. Les deux enquêtes sur les jeunes distinguent classes d’âge, auto-positionnement politique et intentions de vote. Le commercial de la bande dessinée de Fishburne propose des réseaux sociaux et perd ses interlocuteurs. La réponse examine l’explication patrimoniale donnée par Posener.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
   ],
-  "date_revision": "2026-11-24"
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ],
+    "precision": "La garde du sujet fixe les deux exercices. Le brut et le guidé donnent la même synthèse titrée des documents 1 à 4 (620 mots hors titre) et la même réponse argumentée au document 5 (524 mots). Comptage par espaces dans les deux copies. Document visuel à la page 8 du PDF, texte d’opinion à partir de la page 9. Les deux enquêtes sur les jeunes distinguent classes d’âge, auto-positionnement politique et intentions de vote. Le commercial de la bande dessinée de Fishburne propose des réseaux sociaux et perd ses interlocuteurs. La réponse examine l’explication patrimoniale donnée par Posener."
+  }
 }

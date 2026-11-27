@@ -12,10 +12,13 @@
     "model": "GPT-6"
   },
   "redaction": "Rédaction originale par IA à partir du sujet officiel.",
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/08/26_2cc_sujet_info.pdf",
-    "index": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/"
+    "index": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/",
+    "sujet_sha256": "e7f0a9058a8d9b794bdb77ad6f2f2bed9e08dd423a6bf9976ca48762379a1fe4",
+    "index_banque": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/",
+    "index_banque_sha256": "36243e7203175ea8fc3f1b47cf04cfaeff13de5e6fe10463bd7d894a9fca4bfe"
   },
   "figures": [
     {
@@ -96,11 +99,55 @@
       "perimetre": "Questions 1 à 17 des deux corrigés, huit figures et complexités. Arbre complet explicité en Q5, accès par identifiants entiers en Q13.",
       "agent": "astra_info_si",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Contrôle des 17 questions et des huit figures, de la convention gauche=vrai, des huit chemins de la fonction conditionnelle, du graphe demandé en Q12, de la complexité de l’incidence et des preuves d’effondrement et d’évasivité. Exécution séparée des deux éditions sur les fonctions de 1 à 3 bits, les 168 fonctions positives de 4 bits et les deux graphes du sujet. L’index donne le rapport oral et aucune pièce de rapport écrit pour 2026. La remarque ouverte imprimée après la question 17 est distinguée du théorème démontré.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
   ],
   "revision": {
     "date": "2026-11-24",
     "modele": "GPT-6.2 Astra (effort Ultra)",
     "verification": "Questions 1 à 17 des deux corrigés, huit figures et complexités. Arbre complet explicité en Q5, accès par identifiants entiers en Q13."
+  },
+  "questions_principales": 17,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "subdivisions_du_sujet": {},
+    "precision": "17 rubriques principales et 17 consignes terminales repérées dans le fascicule officiel. Contrôle des 17 questions et des huit figures, de la convention gauche=vrai, des huit chemins de la fonction conditionnelle, du graphe demandé en Q12, de la complexité de l’incidence et des preuves d’effondrement et d’évasivité. Exécution séparée des deux éditions sur les fonctions de 1 à 3 bits, les 168 fonctions positives de 4 bits et les deux graphes du sujet. L’index donne le rapport oral et aucune pièce de rapport écrit pour 2026. La remarque ouverte imprimée après la question 17 est distinguée du théorème démontré.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "relecture_corrige",
+      "perimetre": "Contrôle des 17 questions et des huit figures, de la convention gauche=vrai, des huit chemins de la fonction conditionnelle, du graphe demandé en Q12, de la complexité de l’incidence et des preuves d’effondrement et d’évasivité. Exécution séparée des deux éditions sur les fonctions de 1 à 3 bits, les 168 fonctions positives de 4 bits et les deux graphes du sujet. L’index donne le rapport oral et aucune pièce de rapport écrit pour 2026. La remarque ouverte imprimée après la question 17 est distinguée du théorème démontré.",
+      "sha256_sujet_controle": "e7f0a9058a8d9b794bdb77ad6f2f2bed9e08dd423a6bf9976ca48762379a1fe4"
+    }
   }
 }

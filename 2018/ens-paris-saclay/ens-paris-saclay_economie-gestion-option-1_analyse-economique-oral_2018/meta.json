@@ -1,0 +1,86 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_analyse-economique-oral_2018",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Analyse économique (oral)",
+    "annee": 2018,
+    "modalite": "oral"
+  },
+  "intitule": "Plein emploi, libre-échange, taux négatifs et politique économique en France",
+  "gabarit": "oral",
+  "questions": 4,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2018_Rapports_Oraux_D2_AEG.pdf#page=1",
+    "sujet_sha256": "4cee754c270fd18b5bbe50df8f741c2e31d9c5f63554fcf47b8d3b6bea688e41",
+    "index": "https://ens-paris-saclay.fr/node/4267",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2018_Rapports_Oraux_D2_AEG.pdf",
+    "rapport_sha256": "4cee754c270fd18b5bbe50df8f741c2e31d9c5f63554fcf47b8d3b6bea688e41",
+    "notice": "https://ens-paris-saclay.fr/sites/default/files/2017-11/Notice_2018_Concours-entree.pdf#page=34",
+    "notice_sha256": "33ddbd33252dac29b971f4bcc198ef88541f25028a2e49cded6bd81cd551d1be",
+    "exemples": [
+      "1. Comment atteindre le plein emploi en France ?",
+      "2. Libre échange ou protectionnisme ?",
+      "3. Faut-il se résigner aux taux d’intérêts négatifs ?",
+      "4. La France doit-elle privilégier une politique de l’offre ou de la demande ?"
+    ],
+    "precision": "Le rapport publie quatre exemples et ne donne pas le répertoire exhaustif. Les questions complémentaires du corrigé sont des exercices de préparation."
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "Tirage 1",
+      "Tirage 2",
+      "Tirage 3",
+      "Tirage 4"
+    ],
+    "limites": [
+      "Le jury reproduit quatre exemples. Nombre total de tirages, autres intitulés et questions effectivement posées inconnus."
+    ]
+  },
+  "redaction": "Quatre canevas complets d’exposé sur les quatre intitulés cités par le jury. Mécanismes explicités, calculs, exemples disponibles en 2018, limites et questions d’entraînement corrigées. Couverture partielle de la session entière.",
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/emploi.svg",
+      "question": "Tirage 1",
+      "legende": "Une même hausse du chômage appelle des instruments différents selon les emplois vacants, les qualifications et l’état de la demande."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/commerce.svg",
+      "question": "Tirage 2",
+      "legende": "Petit pays, prix mondial donné et réaction des quantités. Les triangles sont des pertes collectives et la recette douanière est un transfert intérieur."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/taux.svg",
+      "question": "Tirage 3",
+      "legende": "Le signe d’un taux dépend du contrat, de l’inflation et de la maturité."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/offre-demande.svg",
+      "question": "Tirage 4",
+      "legende": "La réponse du court terme dépend du degré d’utilisation des capacités, et celle de long terme de l’évolution de ces capacités."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "saclay_economie_archives",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Quatre canevas complets d’exposé sur les quatre intitulés cités par le jury. Mécanismes explicités, calculs, exemples disponibles en 2018, limites et questions d’entraînement corrigées. Couverture partielle de la session entière.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}

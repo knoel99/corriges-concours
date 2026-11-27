@@ -1,0 +1,552 @@
+{
+  "slug": "banque-pt_pt_physique-a_2017",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique A",
+    "annee": 2017
+  },
+  "questions": 59,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2017/ph_a_2017_pt.pdf",
+    "sujet_sha256": "d7119b9255db728a75384271038a6e2dd66c1baab39af465ba8c2fb5616603a0",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2017/rapport_phys_a_ecrit_2017.pdf",
+    "rapport_sha256": "6858982e22e679a99fde59367fff63698c85d19ffcaf661ea0c3e2ea10fa06cb",
+    "rubriques_lues": [
+      {
+        "rubrique": "Partie A",
+        "pages_pdf": [
+          1
+        ]
+      },
+      {
+        "rubrique": "Partie B",
+        "pages_pdf": [
+          1,
+          2
+        ]
+      },
+      {
+        "rubrique": "Partie C",
+        "pages_pdf": [
+          2
+        ]
+      },
+      {
+        "rubrique": "Partie D",
+        "pages_pdf": [
+          2
+        ]
+      }
+    ],
+    "composition": "Feuillet de 12 pages. Questions pages 2 à 11, quatre parties et figures 1 à 16. Page 12 colophon."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2017/ph_a_2017_pt.pdf",
+      "sha256": "d7119b9255db728a75384271038a6e2dd66c1baab39af465ba8c2fb5616603a0",
+      "nombre_pages": 12,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "679919f718ba12550d12814ef739202539b2e8f059dace82dd73b752399f2013"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "e64c6cbba9cf21d9cd7772e71e084b35c247561e53da37c18f24884da3572ccc"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "0da928ad772a5136097c738cf9d32d5e730276fd21d283fa3497a704df51fb94"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "e2e75eea9c4a4f8a8ffffb03c6d60717aba3453ea1ae1d3b51459827496577ac"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "1cf179a0af575b8fc1fc7eb0168e8320ac6dfef0cad2e4beac5b39abb311a96c"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "b18f724a084b5bd6c897c9d217b4e34df03f35ee59469085891f1c56e5ffc2a0"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "2b2528d69ac9113d5713ee0e0ef4019be4f478740608498daef5c50e3352a653"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "a1a828dc1c3840eb328821aa29196637e225125c0a283ce210bde8e31fabbb0a"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "8a882b3b8f9ed938e0c25c6e49834d8ba74d73cfbcd3bb5597e37dbc423940eb"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "a756cc5437cabeaa6d315f205ca4a516d90a57226598b44352d04ac8772ec000"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "30c9851aa47d8040cbe81ca96031f5fbfb64a66d5ae9ebd7597fa200d9c6b921"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "0a52abb7c707984bd959e1d8c71483e863f3c57c53e165386ea913f279775e7e"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2017/rapport_phys_a_ecrit_2017.pdf",
+      "sha256": "6858982e22e679a99fde59367fff63698c85d19ffcaf661ea0c3e2ea10fa06cb",
+      "nombre_pages": 2,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "e036d18e5b5530f10e416d462f0d206f21da0e89aaa390c680487e14dd018caf"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "5676844f28ad47b651516499a812a520be10a7f7f16250239a7aa92d9427f210"
+        }
+      ]
+    }
+  },
+  "date_revision": "2026-11-26",
+  "figures": [
+    {
+      "fichier": "figures/microscope.svg",
+      "question": "A.1.3.4",
+      "legende": "Construction de l’image intermédiaire et du faisceau sortant"
+    },
+    {
+      "fichier": "figures/excitation.svg",
+      "question": "A.2.1.3",
+      "legende": "Transmission du filtre d’excitation"
+    },
+    {
+      "fichier": "figures/deflecteur.svg",
+      "question": "B.2.2.1",
+      "legende": "Trajectoire orientée de l’électron"
+    },
+    {
+      "fichier": "figures/rampes.svg",
+      "question": "C.1.8.2",
+      "legende": "Reconstruction des rampes et du signal de retour"
+    },
+    {
+      "fichier": "figures/interferences.svg",
+      "question": "D.1.2",
+      "legende": "Profils à deux fentes et à trois fentes avec et sans lame"
+    },
+    {
+      "fichier": "figures/ecran.svg",
+      "question": "D.2.2.3",
+      "legende": "Projection de phase pour un déplacement signé de l’écran"
+    }
+  ],
+  "contributions": [
+    {
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "session": "pt_physique_a_microscopie_2017",
+      "phase": "redaction",
+      "perimetre": "Résolution des 59 questions terminales A à D, lectures de la vis, des spectres et de l’oscillogramme, champs et signaux, figures originales."
+    },
+    {
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "session": "pt_physique_a_microscopie_2017",
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "perimetre": "Lecture des pages en image et du rapport complet. Contrôle des échelles, orientations des courants et des champs, régimes de la photodiode, déphasage résultant du déplacement du plan d’observation, calculs et graphes dans les deux PDF."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A.1.1",
+      "A.1.2",
+      "A.1.3.1",
+      "A.1.3.2",
+      "A.1.3.3",
+      "A.1.3.4",
+      "A.1.4",
+      "A.1.5.1",
+      "A.1.5.2",
+      "A.2.1.1",
+      "A.2.1.2",
+      "A.2.1.3",
+      "A.2.1.4",
+      "A.2.2.1",
+      "A.2.2.2",
+      "A.2.2.3",
+      "A.2.2.4",
+      "A.2.2.5",
+      "A.2.3",
+      "B.1.1",
+      "B.1.2",
+      "B.1.3",
+      "B.1.4.1",
+      "B.1.4.2",
+      "B.1.5.1",
+      "B.1.5.2",
+      "B.1.5.3",
+      "B.2.1",
+      "B.2.2.1",
+      "B.2.2.2",
+      "B.2.3",
+      "B.3.1",
+      "B.3.2",
+      "B.3.3",
+      "B.3.4",
+      "B.3.5",
+      "C.1.1",
+      "C.1.2",
+      "C.1.3",
+      "C.1.4",
+      "C.1.5",
+      "C.1.6",
+      "C.1.7",
+      "C.1.8.1",
+      "C.1.8.2",
+      "C.2.1",
+      "C.2.2",
+      "C.2.3.1",
+      "C.2.3.2",
+      "C.2.4",
+      "D.1.1",
+      "D.1.2",
+      "D.2.1.1",
+      "D.2.1.2",
+      "D.2.1.3",
+      "D.2.2.1",
+      "D.2.2.2",
+      "D.2.2.3",
+      "D.2.3"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "A.1.1",
+        "page_pdf": 2,
+        "traitement": "Conditions de Gauss"
+      },
+      {
+        "question": "A.1.2",
+        "page_pdf": 2,
+        "traitement": "Intervalle optique"
+      },
+      {
+        "question": "A.1.3.1",
+        "page_pdf": 2,
+        "traitement": "Placer l’objet"
+      },
+      {
+        "question": "A.1.3.2",
+        "page_pdf": 2,
+        "traitement": "Grandissement de l’objectif"
+      },
+      {
+        "question": "A.1.3.3",
+        "page_pdf": 3,
+        "traitement": "Observer sans accommoder"
+      },
+      {
+        "question": "A.1.3.4",
+        "page_pdf": 3,
+        "traitement": "Construction des deux images"
+      },
+      {
+        "question": "A.1.4",
+        "page_pdf": 3,
+        "traitement": "Grossissement commercial"
+      },
+      {
+        "question": "A.1.5.1",
+        "page_pdf": 3,
+        "traitement": "Lire la vis micrométrique"
+      },
+      {
+        "question": "A.1.5.2",
+        "page_pdf": 3,
+        "traitement": "Épaisseur réelle et profondeur apparente"
+      },
+      {
+        "question": "A.2.1.1",
+        "page_pdf": 4,
+        "traitement": "Domaines de la lampe"
+      },
+      {
+        "question": "A.2.1.2",
+        "page_pdf": 4,
+        "traitement": "Filtre barrière devant le détecteur"
+      },
+      {
+        "question": "A.2.1.3",
+        "page_pdf": 4,
+        "traitement": "Profil du filtre d’excitation"
+      },
+      {
+        "question": "A.2.1.4",
+        "page_pdf": 4,
+        "traitement": "Source laser"
+      },
+      {
+        "question": "A.2.2.1",
+        "page_pdf": 4,
+        "traitement": "Propagation et polarisation"
+      },
+      {
+        "question": "A.2.2.2",
+        "page_pdf": 4,
+        "traitement": "Célérité dans le vide"
+      },
+      {
+        "question": "A.2.2.3",
+        "page_pdf": 4,
+        "traitement": "Nombre d’onde et pulsation"
+      },
+      {
+        "question": "A.2.2.4",
+        "page_pdf": 4,
+        "traitement": "Champ magnétique"
+      },
+      {
+        "question": "A.2.2.5",
+        "page_pdf": 5,
+        "traitement": "Amplitude électrique du laser"
+      },
+      {
+        "question": "A.2.3",
+        "page_pdf": 5,
+        "traitement": "Résolution du microscope"
+      },
+      {
+        "question": "B.1.1",
+        "page_pdf": 5,
+        "traitement": "Choix de l’électrode d’émission"
+      },
+      {
+        "question": "B.1.2",
+        "page_pdf": 5,
+        "traitement": "Équation de Poisson"
+      },
+      {
+        "question": "B.1.3",
+        "page_pdf": 5,
+        "traitement": "Potentiel et champ entre les armatures"
+      },
+      {
+        "question": "B.1.4.1",
+        "page_pdf": 5,
+        "traitement": "Vitesse classique"
+      },
+      {
+        "question": "B.1.4.2",
+        "page_pdf": 5,
+        "traitement": "Longueur d’onde classique"
+      },
+      {
+        "question": "B.1.5.1",
+        "page_pdf": 6,
+        "traitement": "Correction relativiste"
+      },
+      {
+        "question": "B.1.5.2",
+        "page_pdf": 6,
+        "traitement": "Application relativiste"
+      },
+      {
+        "question": "B.1.5.3",
+        "page_pdf": 6,
+        "traitement": "Portée des résultats"
+      },
+      {
+        "question": "B.2.1",
+        "page_pdf": 6,
+        "traitement": "Pourquoi la norme de la vitesse est constante"
+      },
+      {
+        "question": "B.2.2.1",
+        "page_pdf": 6,
+        "traitement": "Courbure du trajet"
+      },
+      {
+        "question": "B.2.2.2",
+        "page_pdf": 6,
+        "traitement": "Rayon non relativiste"
+      },
+      {
+        "question": "B.2.3",
+        "page_pdf": 6,
+        "traitement": "Rayon relativiste"
+      },
+      {
+        "question": "B.3.1",
+        "page_pdf": 7,
+        "traitement": "Symétrie cylindrique du champ"
+      },
+      {
+        "question": "B.3.2",
+        "page_pdf": 7,
+        "traitement": "Zone de champ intense"
+      },
+      {
+        "question": "B.3.3",
+        "page_pdf": 7,
+        "traitement": "Équations cylindriques de la lentille"
+      },
+      {
+        "question": "B.3.4",
+        "page_pdf": 7,
+        "traitement": "Relation de conjugaison magnétique"
+      },
+      {
+        "question": "B.3.5",
+        "page_pdf": 7,
+        "traitement": "Réglage de la focale"
+      },
+      {
+        "question": "C.1.1",
+        "page_pdf": 8,
+        "traitement": "Modèle de l’ALI idéal"
+      },
+      {
+        "question": "C.1.2",
+        "page_pdf": 8,
+        "traitement": "Identifier le comparateur"
+      },
+      {
+        "question": "C.1.3",
+        "page_pdf": 8,
+        "traitement": "Fonctionnement de l’intégrateur"
+      },
+      {
+        "question": "C.1.4",
+        "page_pdf": 9,
+        "traitement": "Première rampe"
+      },
+      {
+        "question": "C.1.5",
+        "page_pdf": 9,
+        "traitement": "Premier basculement"
+      },
+      {
+        "question": "C.1.6",
+        "page_pdf": 9,
+        "traitement": "Continuité de la tension de sortie"
+      },
+      {
+        "question": "C.1.7",
+        "page_pdf": 9,
+        "traitement": "Rampe de remontée et second passage par zéro"
+      },
+      {
+        "question": "C.1.8.1",
+        "page_pdf": 9,
+        "traitement": "Période du balayage"
+      },
+      {
+        "question": "C.1.8.2",
+        "page_pdf": 9,
+        "traitement": "Mesurer les trois résistances"
+      },
+      {
+        "question": "C.2.1",
+        "page_pdf": 9,
+        "traitement": "Seuil de la photodiode dans le noir"
+      },
+      {
+        "question": "C.2.2",
+        "page_pdf": 9,
+        "traitement": "Fonctionnement récepteur ou générateur"
+      },
+      {
+        "question": "C.2.3.1",
+        "page_pdf": 9,
+        "traitement": "Point de fonctionnement sous éclairement"
+      },
+      {
+        "question": "C.2.3.2",
+        "page_pdf": 10,
+        "traitement": "Étalonnage en éclairement"
+      },
+      {
+        "question": "C.2.4",
+        "page_pdf": 10,
+        "traitement": "Amplifier la tension du détecteur"
+      },
+      {
+        "question": "D.1.1",
+        "page_pdf": 11,
+        "traitement": "Déphasage entre fentes"
+      },
+      {
+        "question": "D.1.2",
+        "page_pdf": 11,
+        "traitement": "Éclairement de deux fentes"
+      },
+      {
+        "question": "D.2.1.1",
+        "page_pdf": 11,
+        "traitement": "Éclairement de trois fentes"
+      },
+      {
+        "question": "D.2.1.2",
+        "page_pdf": 11,
+        "traitement": "Valeurs remarquables"
+      },
+      {
+        "question": "D.2.1.3",
+        "page_pdf": 11,
+        "traitement": "Forme du profil à trois fentes"
+      },
+      {
+        "question": "D.2.2.1",
+        "page_pdf": 11,
+        "traitement": "Introduire un retard d’un quart de tour"
+      },
+      {
+        "question": "D.2.2.2",
+        "page_pdf": 11,
+        "traitement": "Choisir la longueur d’onde"
+      },
+      {
+        "question": "D.2.2.3",
+        "page_pdf": 11,
+        "traitement": "Déplacer l’écran pour retrouver la phase centrale"
+      },
+      {
+        "question": "D.2.3",
+        "page_pdf": 11,
+        "traitement": "Âge de Frits Zernike"
+      }
+    ]
+  }
+}

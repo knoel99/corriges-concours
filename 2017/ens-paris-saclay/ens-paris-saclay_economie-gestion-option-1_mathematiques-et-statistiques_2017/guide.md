@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La composition de quatre heures comporte trois problèmes indépendants. Pour le deuxième problème, on numérote les deux multiplicateurs pour le carré de la distance et le signe de Lagrangien fixé en II.2.
 
 ## Problème 1 · Changement de base et projection
@@ -87,7 +89,7 @@ La matrice est $F=\frac1{13}\begin{pmatrix}9&-6\\-6&4\end{pmatrix}=v_1v_1^t/(v_1
 
 #### Solution
 
-On a $F^2=v_1(v_1^tv_1)v_1^t/(v_1^tv_1)^2=F$. L’application est la projection orthogonale sur la droite engendrée par $v_1$.
+On a $F^2=v_1(v_1^tv_1)v_1^t/(v_1^tv_1)^2=F$. L’application fixe $v_1$ et annule $(2,3)$, qui lui est orthogonal. Cette décomposition de $\mathbb R^2$ identifie son image et son noyau, et confirme que $F$ est la projection orthogonale sur $\mathbb Rv_1$.
 
 ## Problème 2 · Distance à une courbe du sixième degré
 
@@ -309,4 +311,4 @@ La loi conditionnelle est géométrique de paramètre $35/36$. Son espérance es
 
 #### Solution
 
-Non, $36/35\ne6/5$. Avec un dé véritablement pipé, chaque report a probabilité $1/6$. Avec deux dés équilibrés, il faut deux six simultanés pour reporter. La condition $I>0$ porte sur la nature de la décision finale et laisse un rapport géométrique de $1/36$ entre deux masses successives.
+Non, $36/35\ne6/5$. La formule des espérances conditionnelles donne d’ailleurs $\mathbb E I=\mathbb P(I>0)\mathbb E[I\mid I>0]=(2/7)(36/35)=72/245$, puisque la valeur fixée sur l’autre issue est zéro. Avec un dé véritablement pipé, chaque report a probabilité $1/6$. Avec deux dés équilibrés, il faut deux six simultanés pour reporter. La condition $I>0$ porte sur la nature de la décision finale et laisse un rapport géométrique de $1/36$ entre deux masses successives.

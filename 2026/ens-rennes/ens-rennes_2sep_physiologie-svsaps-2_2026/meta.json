@@ -105,6 +105,103 @@
       "perimetre": "Relecture des cinq questions dans les deux éditions, du sujet R26-324, du rapport SVSAPS 2 et des six figures. Précisions sur le couplage excitation–contraction, le sang veineux mêlé du bilan de Fick, les limites des mesures ventilatoires et thermiques et la concentration de sodium dans la sueur après acclimatation.",
       "tour": 2,
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture des cinq questions et contrôle des deux PDF officiels. Définition de la fatigabilité et des unités motrices, des grandeurs du bilan de Fick et de la ventilation, distinction hyperpnée/hyperventilation, évaporation effective, récupération ressentie et mesurée. Précisions sur trois des six figures, contrôle de la ventilation illustrée, conservation des signatures historiques et attestation de la couverture."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Q1",
+        "page_pdf": 2,
+        "titre": "Fatigue locale des quadriceps",
+        "attendu": "Relier la commande neuromusculaire et les voies énergétiques à la force disponible."
+      },
+      {
+        "question": "Q2",
+        "page_pdf": 2,
+        "titre": "Ajustements cardiovasculaires",
+        "attendu": "Relier fréquence, éjection, pression, transport d’oxygène et régulation."
+      },
+      {
+        "question": "Q3",
+        "page_pdf": 2,
+        "titre": "Ventilation et homéostasie",
+        "attendu": "Distinguer air ventilé, échanges alvéolaires et compensation acido-basique."
+      },
+      {
+        "question": "Q4",
+        "page_pdf": 2,
+        "titre": "Thermorégulation",
+        "attendu": "Relier chaleur, évaporation, circulation cutanée et régulations endocriniennes."
+      },
+      {
+        "question": "Q5",
+        "page_pdf": 2,
+        "titre": "Adaptations chroniques",
+        "attendu": "Expliquer les montées mieux tolérées et la récupération en reliant les systèmes étudiés."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "limites_documentaires": "Toutes les consignes du feuillet sont traitées. Aucun tracé individuel, bilan hydrique, gaz du sang, protocole de mesure de force ou comparaison chiffrée avant/après n’est fourni. Les six figures sont didactiques et les deux décompositions de 120 L/min sont hypothétiques."
+  },
+  "duree_heures": 2,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-rennes.fr/medias/fichier/sujet-svsaps-2-physio-2sep-2026_1791303263430-pdf",
+      "sha256": "76c366ceeff045832237c768af5797e6195af093baa88d73103a5f07d413726b",
+      "pages": 2,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "216907acbf12c6a403b3cb6d4f2b1f6d8b1384b9e3c71d739c57371424f6f61b"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "236a57d375a6fb68a63ecadeadacefbc4579c1b17b1250a6a2c03dc457826adc"
+        }
+      ],
+      "pieces_jointes": []
+    },
+    "rapport": {
+      "url": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-2sep-svsaps-2-physio-2026_1792574760808-pdf",
+      "sha256": "e7a152049df81181b0198c1a56082da81e7eeff44fb4732dec472b70508bf133",
+      "pages": 2,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "d432542e6d0ce65684cccf7efe3788e380dfc2f7c0b9e33adf1410bf59417178"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "3f8781235f8b043dbd512e35d713c43b57afc7e8a0ea9078be42ce39e493ecf8"
+        }
+      ],
+      "pieces_jointes": []
+    }
+  }
 }

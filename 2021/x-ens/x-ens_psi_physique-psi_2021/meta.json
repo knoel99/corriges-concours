@@ -1,0 +1,123 @@
+{
+  "slug": "x-ens_psi_physique-psi_2021",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Physique PSI",
+    "annee": 2021
+  },
+  "intitule": "Autour de la modulation acousto-optique",
+  "questions": 47,
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "physique_psi_interens",
+      "session": "physique_psi_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": false,
+      "perimetre": "Vérification des lectures expérimentales, de la zone III corrigée en question 16 et de la translation des raies acoustiques."
+    },
+    {
+      "phase": "redaction",
+      "agent": "physique_psi_interens",
+      "session": "physique_psi_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Résolution des 47 questions énumérées et réalisation de 4 figures."
+    }
+  ],
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2021_Sujet_1A_PSI_Phy_XCR.pdf",
+    "sujet_sha256": "d19894f153b821b041e4c2823642d8f5c039624fefe562ef4702377063fe57a6",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2021_rapport_ecrits_PSI_physique.pdf",
+    "rapport_sha256": "717a7dab1fa97a751a915f68a0ae31c12730644273443fd1289aeefbbbc6354d",
+    "garde": "XCR · écrit commun de physique PSI · 4 heures",
+    "provenance_sujet": "PDF ouvert, garde ou texte et rattachement contrôlés chez l’organisateur"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "11–12",
+      "fichier": "figures/dispersion.svg",
+      "legende": "Branche acoustique de la chaîne discrète et tangentes de la limite continue."
+    },
+    {
+      "numero": 2,
+      "question": "22",
+      "fichier": "figures/resonance.svg",
+      "legende": "Module du transfert en déplacement, normalisé par son gain statique, pour Q = 25."
+    },
+    {
+      "numero": 3,
+      "question": "36–38",
+      "fichier": "figures/trajets.svg",
+      "legende": "Deux rayons de pentes différentes, du cristal au plan focal image de l’objectif. Échelles arbitraires."
+    },
+    {
+      "numero": 4,
+      "question": "44",
+      "fichier": "figures/filtre.svg",
+      "legende": "Cellule RC passe-bas et tension de sortie mesurée aux bornes de la capacité."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47"
+    ]
+  }
+}

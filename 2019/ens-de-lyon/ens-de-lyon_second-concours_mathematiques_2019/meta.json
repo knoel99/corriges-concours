@@ -11,7 +11,12 @@
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/06/19_2c_sujet_math.pdf",
     "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/11/19_2CC_rap_eMath.pdf",
-    "sha256_sujet": "7f5a3d6d2348631f8e852c0e5f55ec4baf940d706f2075ea1661615fc1a807a9"
+    "sha256_sujet": "7f5a3d6d2348631f8e852c0e5f55ec4baf940d706f2075ea1661615fc1a807a9",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/11/19_2CC_rap_eMath.pdf",
+    "sujet_sha256": "7f5a3d6d2348631f8e852c0e5f55ec4baf940d706f2075ea1661615fc1a807a9",
+    "rapport_sha256": "61ee680a4730272df2dc78bd58cf4993d17178f8e02e82e6afcbd3f73c64555d",
+    "index_banque": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/",
+    "index_banque_sha256": "36243e7203175ea8fc3f1b47cf04cfaeff13de5e6fe10463bd7d894a9fca4bfe"
   },
   "figures": [
     {
@@ -31,6 +36,59 @@
       "perimetre": "Rédaction des deux éditions à partir du sujet et du rapport, vérification du coefficient 1/30, des deux factorisations par blocs et de la récurrence des coefficients du binôme déformé, figure des coefficients.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Vérification des sept calculs de l’exercice et des dix-huit subdivisions du problème sur le sujet et le rapport. Développement indépendant des compositions à l’ordre sept, multiplication des blocs dans les deux sens et vérification de la récurrence et des supports des coefficients du binôme déformé. L’indication correspondante de l’édition guidée a été précisée.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
-  ]
+  ],
+  "questions_principales": 19,
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "E.1",
+      "E.2",
+      "E.3",
+      "E.4",
+      "E.5",
+      "E.6",
+      "E.7",
+      "P.1",
+      "P.2",
+      "P.3",
+      "P.4a",
+      "P.4b",
+      "P.4c",
+      "P.5a",
+      "P.5b",
+      "P.6a",
+      "P.6b",
+      "P.7",
+      "P.8a",
+      "P.8b",
+      "P.9",
+      "P.10",
+      "P.11",
+      "P.12a",
+      "P.12b"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "precision": "Vérification des sept calculs de l’exercice et des dix-huit subdivisions du problème sur le sujet et le rapport. Développement indépendant des compositions à l’ordre sept, multiplication des blocs dans les deux sens et vérification de la récurrence et des supports des coefficients du binôme déformé.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "relecture_corrige",
+      "perimetre": "Vérification des sept calculs de l’exercice et des dix-huit subdivisions du problème sur le sujet et le rapport. Développement indépendant des compositions à l’ordre sept, multiplication des blocs dans les deux sens et vérification de la récurrence et des supports des coefficients du binôme déformé.",
+      "sha256_sujet_controle": "7f5a3d6d2348631f8e852c0e5f55ec4baf940d706f2075ea1661615fc1a807a9",
+      "sha256_rapport_controle": "61ee680a4730272df2dc78bd58cf4993d17178f8e02e82e6afcbd3f73c64555d"
+    }
+  }
 }

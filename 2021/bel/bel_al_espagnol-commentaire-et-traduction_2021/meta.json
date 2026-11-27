@@ -1,0 +1,109 @@
+{
+  "slug": "bel_al_espagnol-commentaire-et-traduction_2021",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Espagnol (commentaire et traduction)",
+    "annee": 2021,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "duree_heures": 6,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "provenance": [
+    "ENS de Lyon",
+    "ENS (Paris)"
+  ],
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2021-10/Commentaire-et-traduction-en-LVE.pdf#page=10",
+    "sha256_sujet": "3caa2cab1297b4899fabe9fd1487a5f16e5f344f3d9b28e88656b03818586053",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2021-11/ESPAGNOL_2021.pdf#page=1",
+    "sha256_rapport_jury": "254cd0a08f2751a1fa0434a5b91821865b7766bd1d58157733d95aac22845c34",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2021",
+    "pages_sujet": [
+      1,
+      10,
+      11
+    ],
+    "pages_rapport_commun": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "fin_rubrique_rapport": "La rubrique commune se termine sur la page 5 avant le thème de spécialité."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lva_pt_2325",
+      "session": "/root/lva_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Rédaction du commentaire de l’extrait entier en espagnol et de la version française du segment prescrit. Construction du schéma à trois mouvements."
+    },
+    {
+      "phase": "revision",
+      "agent": "lva_pt_2325",
+      "session": "/root/lva_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Vérification des futurs de conjecture, des deux emplois de seguir et du sujet inversé la esperanza. Lecture du dernier mouvement sur la contrainte imposée à Justino."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire en espagnol",
+      "Version française"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Commentaire en espagnol",
+        "pages_pdf": [
+          10,
+          11
+        ],
+        "lignes": [
+          1,
+          38
+        ]
+      },
+      {
+        "question": "Version française",
+        "pages_pdf": [
+          10,
+          11
+        ],
+        "lignes": [
+          12,
+          26
+        ],
+        "premiers_mots": "Y ahora estoy aquí",
+        "derniers_mots": "que alguna vez dejó en los montes la esperanza."
+      }
+    ]
+  },
+  "figures": [
+    {
+      "question": "Commentaire en espagnol",
+      "fichier": "figures/lecture.svg",
+      "legende": "Trois présences dans les derniers mots d’Ojos Azules"
+    }
+  ]
+}

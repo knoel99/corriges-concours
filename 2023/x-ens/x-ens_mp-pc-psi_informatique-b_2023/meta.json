@@ -39,5 +39,62 @@
       "modifications": true,
       "perimetre": "Rédaction des 17 réponses sur les différentiels de textes, lecture du sujet et du rapport officiels. Deux figures. Exécution des programmes extraits de chaque édition et comparaison à une énumération indépendante des sous-suites communes. Contrôle des fusions, des insertions aux bornes, du départage lexicographique et des dictionnaires de Dijkstra et A*."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17"
+    ],
+    "pages_des_questions": {
+      "1": 3,
+      "2": 4,
+      "3": 4,
+      "4": 6,
+      "5": 6,
+      "6": 6,
+      "7": 7,
+      "8": 10,
+      "9": 10,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 12,
+      "14": 12,
+      "15": 14,
+      "16": 14,
+      "17": 14
+    },
+    "origine_attestation": {
+      "commit_du_journal": "b32444b6d9501de5eafed279a9a42805f9c1fc7d",
+      "phase": "redaction",
+      "date": "2026-11-24",
+      "perimetre": "Rédaction des 17 réponses sur les différentiels de textes, lecture du sujet et du rapport officiels. Deux figures. Exécution des programmes extraits de chaque édition et comparaison à une énumération indépendante des sous-suites communes. Contrôle des fusions, des insertions aux bornes, du départage lexicographique et des dictionnaires de Dijkstra et A*.",
+      "sha256_sujet_controle": "900c9bb75b356927e4172a1181c79c8f5ec72c02180a79e952713cd8ffa425fb",
+      "sha256_rapport_controle": "448fa28775f77b33a4478930af56433142ecaa713fc09d977aa2dadb586ca64e"
+    },
+    "controle_programmes": {
+      "resultats_par_edition": {
+        "brut": "brut 961 341 3375 603",
+        "guide": "guide 961 341 3375 603"
+      },
+      "controle_sur": "Programmes extraits de chaque édition et vérifiés à nouveau. Les tests portent aussi sur les requêtes SQL lorsqu’elles sont proposées."
+    },
+    "precision": "Les numéros et pages ont été relevés dans le fac-similé du concours. Les réponses des deux éditions sont présentes au commit éditorial indiqué."
+  }
 }

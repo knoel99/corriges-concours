@@ -1,0 +1,217 @@
+{
+  "slug": "bel_al_allemand-commentaire-et-traduction_2026",
+  "commit_export": "f257a278c30534e08273370edba49605d307a917",
+  "arbre_git": "9cd81059f989eeab203023525453d5f9b3d02a4b",
+  "archive": "BEL-AL-allemand-commentaire-et-traduction-2026.zip",
+  "agent": "lva_pt_2325",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/al_lve_commun_commentaire_traduction_2026.pdf#page=2",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Allemand%202026.pdf#page=2",
+    "sha256_sujet": "a70699ab765553dd9ad914a5027a2cad6faac518819e96aa6f2a4d96e0be27c6",
+    "sha256_rapport_jury": "a519faa0577c95d84e433356da9b06c510e88a23e7535ee464545b739e56f470",
+    "pages_sujet_verifiees": [
+      1,
+      2,
+      3
+    ],
+    "pages_rapport_commun": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ]
+  },
+  "exercices": [
+    {
+      "question": "Commentaire en allemand",
+      "pages_pdf": [
+        2,
+        3
+      ],
+      "lignes": [
+        1,
+        57
+      ]
+    },
+    {
+      "question": "Version française",
+      "pages_pdf": [
+        2,
+        3
+      ],
+      "lignes": [
+        29,
+        45
+      ],
+      "debut": "Was er „die Sensibilität der Künstlerseele“ nennt",
+      "fin": "helfen kaum noch."
+    }
+  ],
+  "editions": {
+    "brut": {
+      "pages": 3,
+      "blocs_compares": {
+        "commentaire_allemand": {
+          "pages": [
+            1,
+            2
+          ],
+          "lettres_chiffres": 5106,
+          "mots": 920,
+          "paragraphes": 6,
+          "empreinte_normalisee": "8f3293aaf7c09421dfb43201bcd2f8bcc3fbb93ee066013d066200dbc5ab44cb"
+        },
+        "version_francaise": {
+          "pages": [
+            2,
+            3
+          ],
+          "lettres_chiffres": 1179,
+          "mots": 256,
+          "paragraphes": 1,
+          "empreinte_normalisee": "8214495002a3fc67aa16f3ab6a70f9a9b274feea4631ec01c233775e3e0e2e73"
+        }
+      },
+      "signets": [
+        {
+          "titre": "Kommentar zum Romanauszug",
+          "page": 1,
+          "ecart_points": 8.8
+        },
+        {
+          "titre": "Version française — lignes 29 à 45",
+          "page": 2,
+          "ecart_points": 6.8
+        }
+      ],
+      "figures": [
+        {
+          "fichier": "figures/spiel.svg",
+          "legende": "Wer führt die Bewegung aus, wer beherrscht sie?",
+          "question": "Commentaire",
+          "page": 3,
+          "sha256_svg": "bed6b6c6c17129f3a1f31a66b855f187ad88e69259eb653f1abcfc1f2d904557",
+          "sha256_forme_pdf": "9930e35f28963965e6e94dab3e939a1b966b21095e95aa64ea00f176457a6dc0"
+        }
+      ],
+      "liens_sources": [
+        "https://www.ens-lyon.fr/sites/default/files/2026-10/Allemand%202026.pdf#page=2",
+        "https://www.ens.psl.eu/sites/default/files/al_lve_commun_commentaire_traduction_2026.pdf#page=2"
+      ],
+      "signatures_sur_premiere_page": [
+        "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+        "**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+      ],
+      "diagnostic_latex_propre": true,
+      "sha256_markdown": "40fd24a581ee008d93453611a2879a9c0e28292578e05dbebd89c750424422ae",
+      "sha256_pdf": "a5d2dfa29979b8ea2d872fbb86d96c763fb3fe43fabcc138f5028f534ff829fe"
+    },
+    "guide": {
+      "pages": 4,
+      "blocs_compares": {
+        "commentaire_allemand": {
+          "pages": [
+            2,
+            3,
+            4
+          ],
+          "lettres_chiffres": 5106,
+          "mots": 920,
+          "paragraphes": 6,
+          "empreinte_normalisee": "8f3293aaf7c09421dfb43201bcd2f8bcc3fbb93ee066013d066200dbc5ab44cb"
+        },
+        "version_francaise": {
+          "pages": [
+            4
+          ],
+          "lettres_chiffres": 1179,
+          "mots": 256,
+          "paragraphes": 1,
+          "empreinte_normalisee": "8214495002a3fc67aa16f3ab6a70f9a9b274feea4631ec01c233775e3e0e2e73"
+        }
+      },
+      "signets": [
+        {
+          "titre": "Présentation du sujet",
+          "page": 1,
+          "ecart_points": 6.3
+        },
+        {
+          "titre": "Retrouver le mouvement de l'ouverture",
+          "page": 1,
+          "ecart_points": 6.8
+        },
+        {
+          "titre": "Solution",
+          "page": 1,
+          "ecart_points": 4.6
+        },
+        {
+          "titre": "Commentaire rédigé en allemand",
+          "page": 2,
+          "ecart_points": 3.7
+        },
+        {
+          "titre": "Solution",
+          "page": 2,
+          "ecart_points": 5.6
+        },
+        {
+          "titre": "Version des lignes 29 à 45",
+          "page": 4,
+          "ecart_points": 6.5
+        },
+        {
+          "titre": "Solution",
+          "page": 4,
+          "ecart_points": 8.2
+        },
+        {
+          "titre": "Bilan",
+          "page": 4,
+          "ecart_points": 6.5
+        }
+      ],
+      "figures": [
+        {
+          "fichier": "figures/spiel.svg",
+          "legende": "Wer führt die Bewegung aus, wer beherrscht sie?",
+          "question": "Commentaire",
+          "page": 2,
+          "sha256_svg": "bed6b6c6c17129f3a1f31a66b855f187ad88e69259eb653f1abcfc1f2d904557",
+          "sha256_forme_pdf": "9930e35f28963965e6e94dab3e939a1b966b21095e95aa64ea00f176457a6dc0"
+        }
+      ],
+      "liens_sources": [
+        "https://www.ens-lyon.fr/sites/default/files/2026-10/Allemand%202026.pdf#page=2",
+        "https://www.ens.psl.eu/sites/default/files/al_lve_commun_commentaire_traduction_2026.pdf#page=2"
+      ],
+      "signatures_sur_premiere_page": [
+        "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+        "**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+      ],
+      "diagnostic_latex_propre": true,
+      "sha256_markdown": "fb65f5c5ca358399f99845fc7fe5f503781644fed64b666debee76a4b78ce77d",
+      "sha256_pdf": "d5eb09bd410f7607811baba977db55faa76aa05320a4d38ba2ff3d152c90ce80"
+    }
+  },
+  "sha256_contenus": {
+    "guide.md": "fb65f5c5ca358399f99845fc7fe5f503781644fed64b666debee76a4b78ce77d",
+    "brut.md": "40fd24a581ee008d93453611a2879a9c0e28292578e05dbebd89c750424422ae",
+    "meta.json": "ef816c1e54875bb3beaf14baa5293cb825b6ca4787176e003ca70fcab7bafc8a",
+    "journal-revision.json": "6b4d3c244bcd6d79c69b202732c0af13ed006ce591fe2f9e98272e7e3143fd7e",
+    "figures/spiel.svg": "bed6b6c6c17129f3a1f31a66b855f187ad88e69259eb653f1abcfc1f2d904557",
+    "brut.pdf": "a5d2dfa29979b8ea2d872fbb86d96c763fb3fe43fabcc138f5028f534ff829fe",
+    "guide.pdf": "d5eb09bd410f7607811baba977db55faa76aa05320a4d38ba2ff3d152c90ce80"
+  },
+  "sha256_archive": "ba8cef8d4fa6c2dc531c4d173bee52bd09606834815cec3049dc8be51886fa9c"
+}

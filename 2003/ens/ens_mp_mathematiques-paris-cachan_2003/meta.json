@@ -11,7 +11,10 @@
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-mp/session-2003/sujet-2003-ecrit-mp_mathematiques_cachan_paris.pdf",
     "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/rapport-de-jury-session-2003/rapport-2003-mp_ecrit_mathematiques_cachan_paris.pdf",
-    "sha256_sujet": "cab0b09c35b7cf5b5da5b5d711c48e6477116f7d331aa5154c9a4e3b9184c89b"
+    "sha256_sujet": "cab0b09c35b7cf5b5da5b5d711c48e6477116f7d331aa5154c9a4e3b9184c89b",
+    "pages_sujet": 6,
+    "sha256_rapport_jury": "795d9e966ec5552b68ae5ebbae50dc42ed76e5591eb083352c254be6bb0a9b90",
+    "pages_rapport_jury": 1
   },
   "figures": [
     {
@@ -31,6 +34,169 @@
       "perimetre": "Rédaction complète des quatre parties sur les six pages de l’énoncé. Vérification de la notice du jury, des conventions aux masses nulles, du regroupement récursif, des intégrales gaussiennes et des constantes de Young. Figure de l’optimisation binaire.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Pointage des 28 questions sur les six pages ; contrôle des cas de masse nulle, de la récursion de Shannon, des moments et du passage de Young à la puissance entropique ; explicitation des hypothèses de densité et du dernier maximum dans les deux éditions ; contrôle du graphique.",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "II.1",
+      "II.2",
+      "II.3.a",
+      "II.3.b",
+      "II.4.a",
+      "II.4.b",
+      "II.4.c",
+      "II.5.a",
+      "II.5.b",
+      "II.5.c",
+      "II.5.d",
+      "II.5.e",
+      "III.1",
+      "III.2",
+      "III.3.a",
+      "III.3.b",
+      "IV.1.a",
+      "IV.1.b",
+      "IV.2.a",
+      "IV.2.b",
+      "IV.3.a",
+      "IV.3.b",
+      "IV.4.a",
+      "IV.4.b",
+      "IV.4.c"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": "I.1",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.2",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.3",
+        "page_sujet": 2
+      },
+      {
+        "question": "II.1",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.2",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.3.a",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.3.b",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.4.a",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.4.b",
+        "page_sujet": 4
+      },
+      {
+        "question": "II.4.c",
+        "page_sujet": 4
+      },
+      {
+        "question": "II.5.a",
+        "page_sujet": 4
+      },
+      {
+        "question": "II.5.b",
+        "page_sujet": 4
+      },
+      {
+        "question": "II.5.c",
+        "page_sujet": 4
+      },
+      {
+        "question": "II.5.d",
+        "page_sujet": 4
+      },
+      {
+        "question": "II.5.e",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.1",
+        "page_sujet": 5
+      },
+      {
+        "question": "III.2",
+        "page_sujet": 5
+      },
+      {
+        "question": "III.3.a",
+        "page_sujet": 5
+      },
+      {
+        "question": "III.3.b",
+        "page_sujet": 5
+      },
+      {
+        "question": "IV.1.a",
+        "page_sujet": 5
+      },
+      {
+        "question": "IV.1.b",
+        "page_sujet": 6
+      },
+      {
+        "question": "IV.2.a",
+        "page_sujet": 6
+      },
+      {
+        "question": "IV.2.b",
+        "page_sujet": 6
+      },
+      {
+        "question": "IV.3.a",
+        "page_sujet": 6
+      },
+      {
+        "question": "IV.3.b",
+        "page_sujet": 6
+      },
+      {
+        "question": "IV.4.a",
+        "page_sujet": 6
+      },
+      {
+        "question": "IV.4.b",
+        "page_sujet": 6
+      },
+      {
+        "question": "IV.4.c",
+        "page_sujet": 6
+      }
+    ],
+    "precision": "Le sujet de six feuillets comporte quatre parties. La pièce intitulée rapport est une notice d’une page avec durée, coefficients et membres du jury."
+  }
 }

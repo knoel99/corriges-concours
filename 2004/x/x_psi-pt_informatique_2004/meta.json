@@ -42,5 +42,44 @@
       "modifications": true,
       "perimetre": "Rédaction des huit questions, à partir de l’original natif de quatre pages. Vérification des directions admissibles, des numéros de couleur provisoires et de la diffusion définitive sur l’ensemble des 66 066 images binaires carrées de tailles 1 à 4 avec un parcours indépendant. Trois illustrations originales."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "pages_des_questions": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 3,
+      "7": 4,
+      "8": 4
+    },
+    "precision": "Les 8 rubriques de chaque édition concordent avec les questions du fac-similé. Les deux séries de réponses ont été retrouvées au commit du journal indiqué.",
+    "origine_attestation": {
+      "commit_du_journal": "c875cd1813ade5b8df794e54a9ba736767c5ba31",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction des huit questions, à partir de l’original natif de quatre pages. Vérification des directions admissibles, des numéros de couleur provisoires et de la diffusion définitive sur l’ensemble des 66 066 images binaires carrées de tailles 1 à 4 avec un parcours indépendant. Trois illustrations originales.",
+      "sha256_sujet_controle": "92628117b38bdfed7516d0319d3adabe08c9585690615f1ec1da119ab7a5541a"
+    },
+    "controle_fonctions": {
+      "fonctions": [
+        "representant",
+        "sontAmis",
+        "ajout"
+      ],
+      "cas_par_edition": 8
+    }
+  }
 }

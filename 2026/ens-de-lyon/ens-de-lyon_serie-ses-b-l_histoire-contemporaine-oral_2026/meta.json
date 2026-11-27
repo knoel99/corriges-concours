@@ -1,0 +1,105 @@
+{
+  "slug": "ens-de-lyon_serie-ses-b-l_histoire-contemporaine-oral_2026",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Série SES (B/L)",
+    "matiere": "Histoire contemporaine (oral)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Six couples de sujets d’histoire contemporaine",
+  "questions": 12,
+  "sujets": 12,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-11/Fascicule%20SES%202026.pdf#page=16",
+    "sujet_sha256": "9af9d457809faa26a8ff73a93ab94300204afcf4089d3d71f0ae109381941358",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Fascicule%20SES%202026.pdf#page=11",
+    "rapport_sha256": "cce2c8b96882ea064fcfcbc3b70755ecb825b5c38973678634991eae4dd71bd3",
+    "notice": "https://ens-lyon.fr/sites/default/files/2026-02/notice_interens_2026_mise_en_ligne_vf260212_0.pdf",
+    "programme": "https://www.enseignementsup-recherche.gouv.fr/fr/bo/22/Hebdo27/ESRS2218309A.htm",
+    "precision_sujet": "Six couples de sujets à la page 16 sur 17. Accord grammatical rétabli pour « Les classe moyennes ». Aucun document annexe annoncé pour cette section. Le rapport spécifique figure aux pages 11 et 12 sur 25. Les mathématiques annoncées page 17 forment une autre épreuve."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/annee-1968.svg",
+      "legende": "Quatre moments de 1968 et leurs enjeux politiques",
+      "question": "2. 1968 dans le monde"
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/droits-et-vieillesse.svg",
+      "legende": "Quatre étapes de la protection sociale des personnes âgées en France",
+      "question": "5. Vieillir en France"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "classiques_2017",
+      "perimetre": "Rédaction des six sujets internationaux (2, 4, 6, 8, 10 et 12) dans chaque édition.",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    },
+    {
+      "phase": "redaction",
+      "session": "oraux_lyon_et_anciens_corriges",
+      "perimetre": "Rédaction des six sujets français (1, 3, 5, 7, 9 et 11) dans chaque édition, et des deux figures.",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "oraux_lyon_et_anciens_corriges",
+      "perimetre": "Révision des douze réponses appariées au fascicule et au rapport, des bornes du programme et de la distinction entre effondrement des régimes alliés en 1989 et dissolution de l’URSS en 1991.",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1. Les classes moyennes en France (1870 – début des années 1990)",
+      "2. 1968 dans le monde",
+      "3. Paris",
+      "4. L’URSS et l’Europe",
+      "5. Vieillir en France (1870 – début des années 1990)",
+      "6. Les crises économiques au XXe siècle",
+      "7. Moderniser la France au XXe siècle",
+      "8. L’Afrique et le monde au XXe siècle",
+      "9. La IVe République",
+      "10. Les compétitions sportives dans le monde au XXe siècle",
+      "11. Habiter en ville en France (1870 – début des années 1990)",
+      "12. L’américanisation au XXe siècle"
+    ],
+    "detail": "Les douze intitulés figurent dans le même ordre dans les deux éditions. Chaque numéro correspond à un exposé indépendant. Le choix entre les deux sujets portait sur un seul couple."
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "slug": "banque-pt_pt_francais-b_2022",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français B",
+    "annee": 2022
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2022/fr_b_2022_pt.pdf",
+    "sujet_sha256": "5ccfe67d3f22493e30ddbb43de6c579900bf6dea42b266628e64c4b8bf1576e4",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2022/rapport_fra_b_ecrit_2022.pdf",
+    "rapport_sha256": "9598adfa886c79bd6310181f585591ec49913234b30d60e96d2ef436217f182e",
+    "programme_officiel": "https://www.education.gouv.fr/bo/21/Hebdo28/ESRS2119554A.htm",
+    "theme": "L’enfance",
+    "oeuvres_au_programme": [
+      "Soyinka, Aké, les années d’enfance (traduction Étienne Galle)",
+      "Rousseau, Émile ou De l’éducation, livres I et II",
+      "Andersen, Contes (traduction Marc Auchet)"
+    ],
+    "source_coefficients": "https://www.banquept.fr/documents/livret/2022/Livret_PT_2022.pdf#page=13",
+    "admissibilite_admission": "ENS Paris-Saclay et ENS Rennes, admission seule, coefficient 4",
+    "mots_du_texte_selon_le_sujet": 1631
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "Qui donne forme à la voix de l’enfant ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lyon_ses_sources",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture des pages de Christelle Robert, y compris la dernière phrase p. 5. Vérification des âges rapportés dans le texte, de la distinction entre description et explication et des différences entre les trois genres littéraires. Rédaction des deux éditions, vérification du programme et réalisation du schéma."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Résumé",
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Résumé",
+        "page_pdf": 2,
+        "page_pdf_fin": 5,
+        "page_consigne": 5,
+        "perimetre": "De « Si aujourd’hui la plupart des chercheurs » (p. 2) jusqu’à « mieux saisir sa part d’activité » (p. 5). Le fascicule signale des coupes à l’intérieur du passage. Les questions sont p. 5, la dernière page est blanche.",
+        "mots_demandes": 200,
+        "mots_admis": [
+          180,
+          220
+        ],
+        "mots_par_paragraphe": [
+          62,
+          57,
+          81
+        ],
+        "mots_rediges": 200,
+        "points": 8
+      },
+      {
+        "question": "Dissertation",
+        "page_pdf": 5,
+        "page_pdf_fin": 5,
+        "perimetre": "Les auteurs du programme prennent-ils en compte la vie intérieure de l’enfant et son point de vue tel qu’il s’exprime par sa parole ?",
+        "points": 12
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

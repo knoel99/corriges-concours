@@ -11,7 +11,9 @@
   "sources": {
     "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2020/2020_Sujet_1A_D2-1_Maths.pdf",
     "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2020/2020_RAPPORT_ECRIT_D2_Maths.pdf",
-    "sha256_sujet": "1e18eb4677af97c332b94eefc54735c1efd0cd99602f5b1198590f39082bdd32"
+    "sha256_sujet": "1e18eb4677af97c332b94eefc54735c1efd0cd99602f5b1198590f39082bdd32",
+    "provenance": "Banque ENS Paris-Saclay–ENSAI D2, éco-gestion option 1, session 2020. Quatre pages dont une garde et trois problèmes, chacun avec une question bonus. Rapport de quatre pages.",
+    "sha256_rapport_jury": "f1cfd0372bdf0e518909039846ef329102ca906e65ea2f73ed9935b149c2c185"
   },
   "figures": [
     {
@@ -31,6 +33,232 @@
       "perimetre": "Rédaction intégrale des 28 réponses et indications sur le sujet et les quatre pages du rapport. Tableau et graphe des variations, minimum contraint, deux formes nilpotentes et comparaison exacte des variances, y compris le cas n = 1.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "agent": "maths_statistiques_saclay",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture des 28 consignes des deux éditions sur le fascicule. Les trois bonus et la valeur du minimum contraint sont vérifiés. Calculs du changement de base nilpotent et du gain de variance de l’estimateur de exp(−λ), y compris n=1."
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.I.1",
+      "1.I.2",
+      "1.I.3",
+      "1.I.4",
+      "1.II.1",
+      "1.II.2a",
+      "1.II.2b",
+      "1.II.2c",
+      "1.II.2d",
+      "1.II.2e",
+      "2.1",
+      "2.2a",
+      "2.2b",
+      "2.2c",
+      "2.3a",
+      "2.3b",
+      "2.4",
+      "2.5",
+      "2.6",
+      "3.1a",
+      "3.1b",
+      "3.1c",
+      "3.2",
+      "3.3a",
+      "3.3b",
+      "3.3c",
+      "3.3d",
+      "3.3e"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1.I.1",
+        "titre": "1.I.1",
+        "partie": "Problème 1. Minimisation avec un terme entropique",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.I.2",
+        "titre": "1.I.2",
+        "partie": "Problème 1. Minimisation avec un terme entropique",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.I.3",
+        "titre": "1.I.3",
+        "partie": "Problème 1. Minimisation avec un terme entropique",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.I.4",
+        "titre": "1.I.4",
+        "partie": "Problème 1. Minimisation avec un terme entropique",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.II.1",
+        "titre": "1.II.1",
+        "partie": "Problème 1. Minimisation avec un terme entropique",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.II.2a",
+        "titre": "1.II.2a",
+        "partie": "Problème 1. Minimisation avec un terme entropique",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.II.2b",
+        "titre": "1.II.2b",
+        "partie": "Problème 1. Minimisation avec un terme entropique",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.II.2c",
+        "titre": "1.II.2c",
+        "partie": "Problème 1. Minimisation avec un terme entropique",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.II.2d",
+        "titre": "1.II.2d",
+        "partie": "Problème 1. Minimisation avec un terme entropique",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.II.2e",
+        "titre": "1.II.2e",
+        "partie": "Problème 1. Minimisation avec un terme entropique",
+        "page_pdf": 2
+      },
+      {
+        "question": "2.1",
+        "titre": "2.1",
+        "partie": "Problème 2. Endomorphismes nilpotents en dimension trois",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.2a",
+        "titre": "2.2a",
+        "partie": "Problème 2. Endomorphismes nilpotents en dimension trois",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.2b",
+        "titre": "2.2b",
+        "partie": "Problème 2. Endomorphismes nilpotents en dimension trois",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.2c",
+        "titre": "2.2c",
+        "partie": "Problème 2. Endomorphismes nilpotents en dimension trois",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.3a",
+        "titre": "2.3a",
+        "partie": "Problème 2. Endomorphismes nilpotents en dimension trois",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.3b",
+        "titre": "2.3b",
+        "partie": "Problème 2. Endomorphismes nilpotents en dimension trois",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.4",
+        "titre": "2.4",
+        "partie": "Problème 2. Endomorphismes nilpotents en dimension trois",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.5",
+        "titre": "2.5",
+        "partie": "Problème 2. Endomorphismes nilpotents en dimension trois",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.6",
+        "titre": "2.6",
+        "partie": "Problème 2. Endomorphismes nilpotents en dimension trois",
+        "page_pdf": 3
+      },
+      {
+        "question": "3.1a",
+        "titre": "3.1a",
+        "partie": "Problème 3. Loi de Poisson et comparaison de deux estimateurs",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.1b",
+        "titre": "3.1b",
+        "partie": "Problème 3. Loi de Poisson et comparaison de deux estimateurs",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.1c",
+        "titre": "3.1c",
+        "partie": "Problème 3. Loi de Poisson et comparaison de deux estimateurs",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.2",
+        "titre": "3.2",
+        "partie": "Problème 3. Loi de Poisson et comparaison de deux estimateurs",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.3a",
+        "titre": "3.3a",
+        "partie": "Problème 3. Loi de Poisson et comparaison de deux estimateurs",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.3b",
+        "titre": "3.3b",
+        "partie": "Problème 3. Loi de Poisson et comparaison de deux estimateurs",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.3c",
+        "titre": "3.3c",
+        "partie": "Problème 3. Loi de Poisson et comparaison de deux estimateurs",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.3d",
+        "titre": "3.3d",
+        "partie": "Problème 3. Loi de Poisson et comparaison de deux estimateurs",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.3e",
+        "titre": "3.3e",
+        "partie": "Problème 3. Loi de Poisson et comparaison de deux estimateurs",
+        "page_pdf": 4
+      }
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "controle": [
+      "Les trois bonus et la valeur du minimum contraint sont vérifiés. Calculs du changement de base nilpotent et du gain de variance de l’estimateur de exp(−λ), y compris n=1."
+    ]
+  }
 }

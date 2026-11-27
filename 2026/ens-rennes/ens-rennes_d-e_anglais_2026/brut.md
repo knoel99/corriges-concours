@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## I. Version française
 
 *Helen Livingstone, BBC, 3 décembre 2025.*
@@ -54,4 +56,4 @@ I would therefore put care first when dealing with people who use drugs and rese
 
 ![Figure 1 — Trois échelles pour évaluer les politiques publiques](figures/lecture.svg)
 
-[Fascicule officiel, pages imprimées 4 à 6](https://www.ens-rennes.fr/medias/fichier/sujet-lve-d-e-2026_1790867583165-pdf#page=5) · [Rapport écrit de anglais](https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-anglais-e-crit-2026_1793640873886-pdf)
+[Fascicule officiel, pages imprimées 4 à 6](https://www.ens-rennes.fr/medias/fichier/sujet-lve-d-e-2026_1790867583165-pdf#page=5) · [Rapport écrit d’anglais](https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-anglais-e-crit-2026_1793640873886-pdf)

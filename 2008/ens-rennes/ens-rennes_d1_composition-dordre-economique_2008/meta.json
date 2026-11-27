@@ -1,0 +1,65 @@
+{
+  "slug": "ens-rennes_d1_composition-dordre-economique_2008",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Composition d’ordre économique",
+    "annee": 2008,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "intitule": "Réformer le fonctionnement du marché du travail est-il suffisant pour résoudre le problème du chômage en France ?",
+  "sources": {
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/r1a_08_d1_ecosocial_1404897104294.pdf",
+    "rapport_sha256": "5e82335f577a923bc4e348dd804dce06195d7fe5c2b839391db92d4c2aa49d24",
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet08d1compo-sujet-ordre-eco-social_1421752166033-pdf",
+    "sujet_sha256": "25fde4efacf04c2f6efad6a8c4690d804cb6337debdbb37915c1816b8f4470f3",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "references_complementaires": {
+      "Insee, Note de conjoncture de mars 2008": "https://www.insee.fr/fr/statistiques/fichier/1407735/NdC_Mars_2008.pdf",
+      "Loi du 13 février 2008 relative au service public de l’emploi": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018117826"
+    }
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "section": "I.B",
+      "fichier": "figures/flux-vers-emploi.svg",
+      "legende": "Deux réformes qui accélèrent les embauches peuvent avoir des effets opposés sur le chômage si les ruptures varient aussi."
+    }
+  ],
+  "redaction": "Double rédaction sur les mécanismes du chômage français au printemps 2008. Appariement, coût du travail, effets de flux, demande effective, sécurité des parcours et complémentarité des politiques.",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des pages 1 à 3 du rapport écrit de 2008 : chômage structurel et conjoncturel, incitations, appariement, rétroaction sur la demande et faits français."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Double rédaction sur les mécanismes du chômage français au printemps 2008. Appariement, coût du travail, effets de flux, demande effective, sécurité des parcours et complémentarité des politiques."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}

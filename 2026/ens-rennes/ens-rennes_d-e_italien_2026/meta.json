@@ -17,7 +17,11 @@
   },
   "sources": {
     "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-lve-d-e-2026_1790867583165-pdf#page=11",
-    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2026-1"
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2026-1",
+    "sujet_sha256": "1fcd7f45d349ebdc34a800ac6657560e2c4af7541d7577ad4301dda9ac1fe1c7",
+    "apercu_sujet_sha256": "9ce9121b4d4735e242388eda6b9ae8b2dedac359f9e794ffe56885c452249be2",
+    "pages_sujet": "Pages 11 à 13 du PDF, pages imprimées 10 à 12.",
+    "provenance_empreintes": "L’empreinte du fichier de l’école vient du registre de collecte. Celle de l’aperçu porte sur le fac-similé intégral des treize pages utilisé pour la relecture."
   },
   "figures": [
     {
@@ -26,7 +30,7 @@
       "legende": "Lire trois pourcentages du budget scolaire italien"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -38,6 +42,23 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Rédaction complète de la version française, du thème en italien, des deux réponses de 245 et 238 mots, du guidage et du schéma à partir des pages imprimées 10 à 12 du fascicule."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "fin_langues_x_interens",
+      "agent": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Pages 11 à 13 du PDF. Les deux traductions correspondent aux extraits imprimés. Les réponses aux deux questions comportent respectivement 245 et 238 mots, pour une cible de 250 mots à 10 % près. La consigne demande expressément la traduction des deux titres. Ils figurent avec les versions sur la dénatalité et le repeuplement des communes de montagne dans les deux éditions. Les réponses italiennes expliquent le financement scolaire et défendent des investissements dans les écoles et universités publiques.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
   ],
   "droits_sources": {
@@ -47,5 +68,15 @@
       "Carlo Tecce, L’Espresso, 3 septembre 2025."
     ],
     "note": "Traductions pédagogiques originales des extraits figurant dans le sujet. Les droits sur les textes sources appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I. Version française",
+      "II. Thème",
+      "III.1. Compréhension",
+      "III.2. Expression personnelle"
+    ],
+    "precision": "Pages 11 à 13 du PDF. Les deux traductions correspondent aux extraits imprimés. Les réponses aux deux questions comportent respectivement 245 et 238 mots, pour une cible de 250 mots à 10 % près. La consigne demande expressément la traduction des deux titres. Ils figurent avec les versions sur la dénatalité et le repeuplement des communes de montagne dans les deux éditions. Les réponses italiennes expliquent le financement scolaire et défendent des investissements dans les écoles et universités publiques."
   }
 }

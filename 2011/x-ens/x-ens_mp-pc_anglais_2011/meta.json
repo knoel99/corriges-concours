@@ -1,0 +1,71 @@
+{
+  "slug": "x-ens_mp-pc_anglais_2011",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC",
+    "matiere": "Anglais",
+    "annee": 2011,
+    "modalite": "écrit"
+  },
+  "intitule": "Embracing America et L’avenir des bibliothèques",
+  "questions": 3,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I",
+      "II.1",
+      "II.2"
+    ]
+  },
+  "sources": {
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2011",
+    "code_garde": "XEULC",
+    "etablissements_imprimes": "École polytechnique, ESPCI et ENS de Paris, Lyon et Cachan",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2011/2011%20Version_LVA2.pdf#page=3",
+    "sujet_sha256": "e3dfde1f9c7849e973df61d8bbb5f477390588df751e0d71a58df5fbe07b1ae1",
+    "sujet_complementaire": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2011/2011%20MP-PC%20SUJET%20EXPRESSION%20ECRITE_LVA1.pdf",
+    "sujet_complementaire_sha256": "b4f0b94bd49cfc0bc2707f8f351d07b353230dc049539355b8080371de2781af",
+    "rapport_expression_ecrite": "https://upls.fr/wp-content/uploads/2014/03/X-ENS_2011_rapport_anglais_expression.pdf",
+    "rapport_expression_ecrite_sha256": "01c15017333771850f1117eb25e4c434aba968992fe040c3b1369d83ee3d9338",
+    "limites": "Le rapport de Kathryn English et Athéna Lavabre porte sur l’expression écrite. Le rapport distinct de version n’a pas été identifié dans les sources consultées."
+  },
+  "redaction": "Version intégrale du passage de The Kite Runner et deux réponses anglaises sur la fonction des bibliothèques. Analyse de la voix narrative, du récit de Mercier et d’un exemple de service au public.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I",
+      "fichier": "figures/parcours.svg",
+      "legende": "Les déplacements font surgir des comparaisons entre la Californie présente et l’Afghanistan de l’enfance."
+    },
+    {
+      "numero": 2,
+      "question": "II.1",
+      "fichier": "figures/selection.svg",
+      "legende": "L’élimination, l’indexation et l’interprétation répondent différemment à la surabondance."
+    },
+    {
+      "numero": 3,
+      "question": "II.2",
+      "fichier": "figures/archives.svg",
+      "legende": "La recherche en ligne, la consultation sur place et l’aide humaine servent des étapes distinctes."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "anglais_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale du passage de The Kite Runner et deux réponses anglaises sur la fonction des bibliothèques. Analyse de la voix narrative, du récit de Mercier et d’un exemple de service au public.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}

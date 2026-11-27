@@ -1,0 +1,63 @@
+{
+  "slug": "ens-rennes_d-e_allemand_2022",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Allemand",
+    "annee": 2022,
+    "modalite": "écrit"
+  },
+  "intitule": "Allemand",
+  "questions": 4,
+  "redaction": "Deux traductions intégrales et deux réponses en allemand de 240 et 232 mots. Traductions sur le lieu de mémoire berlinois et la dette publique allemande. Comparaison des groupes de référence, réflexion sur le mandat représentatif.",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-allemand-d-e-e-crit-2022_1657700558255-pdf",
+    "sujet_sha256": "48a9fa73194dff93da4adf2d029765695b3914d3f736486e61dc277da1a426c6",
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2022-1",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-du-jury-lve-allemand-ecrit-d-e-2022_1668097892794-pdf",
+    "rapport_sha256": "7b5015eecf7e752961ba4835f0c2eeaf3a21ea464fe66abc219a269b76ce4f06"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "III.1",
+      "fichier": "figures/bildung-und-mandat.svg",
+      "legende": "Die Akademikerquote vergleicht zwei Gruppen und misst nicht unmittelbar, wie ein einzelner Abgeordneter abstimmt."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Le jury attendait pour la compréhension l’expérience du travail et des faibles revenus, la crédibilité auprès des électeurs et la représentation d’intérêts minoritaires."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Deux traductions intégrales et deux réponses en allemand de 240 et 232 mots. Traductions sur le lieu de mémoire berlinois et la dette publique allemande. Comparaison des groupes de référence, réflexion sur le mandat représentatif."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I. Version",
+      "II. Thème",
+      "III.1. Mit welchen Argumenten begründen manche Politiker und Beobachter ihre Kritik an der hohen Akademikerquote im Bundestag?",
+      "III.2. Inwiefern sollte Ihrer Meinung nach das Parlament ein exaktes Spiegelbild der Gesellschaft sein?"
+    ]
+  }
+}

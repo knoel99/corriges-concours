@@ -16,7 +16,9 @@
   },
   "sources": {
     "sujet": "https://www.concours-bce.com/sites/default/files/2026-04/75%20GB%20-%20LANGUE_VIVANTE_A_ELVI_ALLEMAND_ANGLAIS_ESPAGNOL.pdf#page=2",
-    "sujet_sha256": "355b32ff17b6678d50137ca33444bb91f286d5a2a31fc1b73f310269a7177179"
+    "sujet_sha256": "355b32ff17b6678d50137ca33444bb91f286d5a2a31fc1b73f310269a7177179",
+    "rapport_jury": "https://www.concours-bce.com/sites/default/files/2026-11/75%20-%20Allemand%20LVA%20ELVi%202026.pdf",
+    "rapport_sha256": "497ae20bfeac8db1f613c7a7beb94cbef07311e4b7dc9c4f5abff0eb884eeb1a"
   },
   "figures": [
     {
@@ -25,7 +27,7 @@
       "legende": "Wie entsteht europäische Handlungsfähigkeit?"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -36,6 +38,44 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Résumé allemand des deux articles sur la souveraineté et l’emploi, essai sur les perspectives et les risques européens et allemands, thème des deux passages marqués du document 3, schéma comparatif."
+    },
+    {
+      "phase": "lecture_rapport_jury",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "fui_physique_deux",
+      "modifications": false,
+      "perimetre": "Rapprochement du rapport BCE de la langue et du niveau correspondants avec le sujet et les trois exercices."
+    },
+    {
+      "phase": "revision",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "fui_physique_deux",
+      "modifications": true,
+      "perimetre": "Fascicule 75-GB, section allemand-lva p. 2–7 et garde p. 1. Cinq pièces, dont la carte des autorisations de 2017, le dessin de Mayr sur l’école, et deux blocs discontinus à traduire dans le document 3, titre compris. Travail sur les scénarios d’emploi, le coût social des reconversions, la distinction autorisation/réalisation et la variation entre périodes. Résumé 344 mots ; essai 496 mots. Contrôles dans les deux éditions."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I. Résumé analytique comparatif",
+      "II. Essai argumenté",
+      "III. Thème"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "origine_attestation": {
+      "phase": "revision",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "355b32ff17b6678d50137ca33444bb91f286d5a2a31fc1b73f310269a7177179",
+      "perimetre": "Fascicule 75-GB, section allemand-lva p. 2–7 et garde p. 1. Cinq pièces, dont la carte des autorisations de 2017, le dessin de Mayr sur l’école, et deux blocs discontinus à traduire dans le document 3, titre compris. Travail sur les scénarios d’emploi, le coût social des reconversions, la distinction autorisation/réalisation et la variation entre périodes. Résumé 344 mots ; essai 496 mots. Contrôles dans les deux éditions."
+    }
+  }
 }

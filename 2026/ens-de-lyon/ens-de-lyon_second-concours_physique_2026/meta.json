@@ -12,12 +12,13 @@
     "provider": "codex",
     "model": "GPT-6"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/08/26_2cc_sujet_physique.pdf",
     "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/07/26_2cc_rap_ePhy.pdf",
     "sujet_sha256": "715f04c4511e299582b35cce176514d41b173ac90d3e8533a651ce13da9fa126",
-    "rapport_sha256": "ca2b1a88a83e6ee613d664654c55ed3a1fb488936d3654153ed2cbe7d6d6da89"
+    "rapport_sha256": "ca2b1a88a83e6ee613d664654c55ed3a1fb488936d3654153ed2cbe7d6d6da89",
+    "index_annuel": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/"
   },
   "revision": {
     "date": "2026-11-24",
@@ -28,52 +29,62 @@
     {
       "fichier": "figures/interferometre-michelson.svg",
       "legende": "Trajets aller-retour et recombinaison sur la séparatrice S inclinée à 45°.",
-      "numero": 1
+      "numero": 1,
+      "question": "A1"
     },
     {
       "fichier": "figures/coin-air-franges.svg",
       "legende": "Vue en coupe du coin d’air et allure des franges au voisinage du plan des miroirs.",
-      "numero": 2
+      "numero": 2,
+      "question": "A2"
     },
     {
       "fichier": "figures/element-vertical-au-repos.svg",
       "legende": "La différence entre les tensions supérieure et inférieure équilibre le poids de l’élément.",
-      "numero": 3
+      "numero": 3,
+      "question": "B3"
     },
     {
       "fichier": "figures/forces-et-tangentes.svg",
       "legende": "Les tangentes bleues sont orientées vers les z croissants. Les tensions vertes tirent aux deux extrémités.",
-      "numero": 4
+      "numero": 4,
+      "question": "B5"
     },
     {
       "fichier": "figures/trajectoires-z-et-z-reduit.svg",
       "legende": "Trajectoires reconstruites avec z initial de 0,50 m et une pente de 1,45 par seconde, voisine des lectures de la figure 2.",
-      "numero": 5
+      "numero": 5,
+      "question": "B18"
     },
     {
       "fichier": "figures/boucle-et-entrainement.svg",
       "legende": "La corde descend sur AB, passe dans l’arc BC, puis remonte sur CD.",
-      "numero": 6
+      "numero": 6,
+      "question": "B20"
     },
     {
       "fichier": "figures/tension-autour-boucle.svg",
       "legende": "Tension sur les deux brins et l’arc inférieur. Le raccord en pointillé représente la courte zone de contact avec la roue.",
-      "numero": 7
+      "numero": 7,
+      "question": "B21"
     },
     {
       "fichier": "figures/celerite-autour-boucle.svg",
       "legende": "Comparaison de la célérité relative à la corde et de la vitesse d’entraînement.",
-      "numero": 8
+      "numero": 8,
+      "question": "B22"
     },
     {
       "fichier": "figures/vitesses-signees-brin-descendant.svg",
       "legende": "Vitesses algébriques dans le laboratoire, axe vertical positif vers le haut. Les deux panneaux ont des origines verticales différentes.",
-      "numero": 9
+      "numero": 9,
+      "question": "B23"
     },
     {
       "fichier": "figures/chronophotographie-interpretation.svg",
       "legende": "Trajectoires théoriques illustratives dans les deux brins. L’origine, la durée et les altitudes sont choisies pour illustrer la lecture de la figure 4.",
-      "numero": 10
+      "numero": 10,
+      "question": "B26"
     }
   ],
   "provenance": {
@@ -128,6 +139,300 @@
       "perimetre": "Relecture des 10 questions de cours et des 26 questions du problème, du brut, du guidé et de leurs dix figures avec le sujet et le rapport. Vérification des deux approximations de l’équation de la corde, des pentes expérimentales, des vitesses signées et de la trajectoire près du bas de la boucle.",
       "agent": "astra_physique",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "agent": "lva_pt_2325",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "tour": 3,
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle des dix réponses de cours et des 26 questions du problème, ajustement séparé des branches sur les marqueurs de la figure 2 originale, confrontations des trajectoires à la figure 4 et distinction des mesures quantifiables de la chronophotographie sans cadence."
     }
-  ]
+  ],
+  "pieces_verifiees": {
+    "index": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/",
+    "sha256_index": "1cf45e0a75bfb34a6d334abc69ca5a772ab6dc9302222638e7521653102252e3",
+    "ancrages": [
+      {
+        "texte": "Écrit physique",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/08/26_2cc_sujet_physique.pdf"
+      },
+      {
+        "texte": "Écrit physique",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/07/26_2cc_rap_ePhy.pdf"
+      },
+      {
+        "texte": "Oral physique",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/07/26_2cc_rap_oPhy.pdf"
+      }
+    ],
+    "sujet": {
+      "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/08/26_2cc_sujet_physique.pdf",
+      "sha256": "715f04c4511e299582b35cce176514d41b173ac90d3e8533a651ce13da9fa126",
+      "pages": 6,
+      "pieces_jointes": [],
+      "rendus": [
+        {
+          "page": 1,
+          "sha256_rendu": "800c42521b2e24c5139b9efa61dcc9c3eba02b9af188d753d92c94e6d51f8fe3",
+          "liens": []
+        },
+        {
+          "page": 2,
+          "sha256_rendu": "72560861937f05db0dee99b6c6cc24ed738654cc064a63111ce362f3d8b3c91c",
+          "liens": []
+        },
+        {
+          "page": 3,
+          "sha256_rendu": "940d565d31ec170f1898cef9120adf9caaa48ab4562dfd42af9165622ab2d36f",
+          "liens": []
+        },
+        {
+          "page": 4,
+          "sha256_rendu": "7f76ada645553ea68b4a073cd24526881c077df2cee08c18383c8ff49f314876",
+          "liens": []
+        },
+        {
+          "page": 5,
+          "sha256_rendu": "2cc4e3be694754387692270f86bc02c4a7ae766ee98fc6c1a26c0905289ecda2",
+          "liens": []
+        },
+        {
+          "page": 6,
+          "sha256_rendu": "1ce82cbddb31ef7c22b8d4c345550e95528eba4a05377e1ff6427a9779abdc6c",
+          "liens": []
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/07/26_2cc_rap_ePhy.pdf",
+      "sha256": "ca2b1a88a83e6ee613d664654c55ed3a1fb488936d3654153ed2cbe7d6d6da89",
+      "pages": 1,
+      "pieces_jointes": [],
+      "rendus": [
+        {
+          "page": 1,
+          "sha256_rendu": "a2e34eafc73f29535916351fc93398762e9fdc31149e49a3db485b66945df9f9",
+          "liens": []
+        }
+      ]
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "A7",
+      "A8",
+      "A9",
+      "A10",
+      "B1",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "B6",
+      "B7",
+      "B8",
+      "B9",
+      "B10",
+      "B11",
+      "B12",
+      "B13",
+      "B14",
+      "B15",
+      "B16",
+      "B17",
+      "B18",
+      "B19",
+      "B20",
+      "B21",
+      "B22",
+      "B23",
+      "B24",
+      "B25",
+      "B26"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "correspondance": [
+      {
+        "question": "A1",
+        "page_pdf": 2
+      },
+      {
+        "question": "A2",
+        "page_pdf": 2
+      },
+      {
+        "question": "A3",
+        "page_pdf": 2
+      },
+      {
+        "question": "A4",
+        "page_pdf": 2
+      },
+      {
+        "question": "A5",
+        "page_pdf": 2
+      },
+      {
+        "question": "A6",
+        "page_pdf": 2
+      },
+      {
+        "question": "A7",
+        "page_pdf": 2
+      },
+      {
+        "question": "A8",
+        "page_pdf": 2
+      },
+      {
+        "question": "A9",
+        "page_pdf": 2
+      },
+      {
+        "question": "A10",
+        "page_pdf": 2
+      },
+      {
+        "question": "B1",
+        "page_pdf": 3
+      },
+      {
+        "question": "B2",
+        "page_pdf": 3
+      },
+      {
+        "question": "B3",
+        "page_pdf": 3
+      },
+      {
+        "question": "B4",
+        "page_pdf": 3
+      },
+      {
+        "question": "B5",
+        "page_pdf": 4
+      },
+      {
+        "question": "B6",
+        "page_pdf": 4
+      },
+      {
+        "question": "B7",
+        "page_pdf": 4
+      },
+      {
+        "question": "B8",
+        "page_pdf": 4
+      },
+      {
+        "question": "B9",
+        "page_pdf": 4
+      },
+      {
+        "question": "B10",
+        "page_pdf": 4
+      },
+      {
+        "question": "B11",
+        "page_pdf": 4
+      },
+      {
+        "question": "B12",
+        "page_pdf": 4
+      },
+      {
+        "question": "B13",
+        "page_pdf": 4
+      },
+      {
+        "question": "B14",
+        "page_pdf": 4
+      },
+      {
+        "question": "B15",
+        "page_pdf": 4
+      },
+      {
+        "question": "B16",
+        "page_pdf": 4
+      },
+      {
+        "question": "B17",
+        "page_pdf": 5
+      },
+      {
+        "question": "B18",
+        "page_pdf": 5
+      },
+      {
+        "question": "B19",
+        "page_pdf": 5
+      },
+      {
+        "question": "B20",
+        "page_pdf": 5
+      },
+      {
+        "question": "B21",
+        "page_pdf": 5
+      },
+      {
+        "question": "B22",
+        "page_pdf": 5
+      },
+      {
+        "question": "B23",
+        "page_pdf": 5
+      },
+      {
+        "question": "B24",
+        "page_pdf": 5
+      },
+      {
+        "question": "B25",
+        "page_pdf": 5
+      },
+      {
+        "question": "B26",
+        "page_pdf": 6
+      }
+    ],
+    "figures_du_sujet": [
+      {
+        "numero": 1,
+        "page_pdf": 3
+      },
+      {
+        "numero": 2,
+        "page_pdf": 4
+      },
+      {
+        "numero": 3,
+        "page_pdf": 5
+      },
+      {
+        "numero": 4,
+        "page_pdf": 6
+      }
+    ],
+    "fichiers_associes": "Le registre de physique sépare le sujet et le rapport écrit du rapport oral. Les pièces de l’écrit ne comportent pas de pièce jointe et toutes les figures utiles sont imprimées dans le sujet."
+  }
 }

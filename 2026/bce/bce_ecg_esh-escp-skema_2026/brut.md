@@ -8,6 +8,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Sujet.** Y a-t-il une limite à l’endettement public ?
 
 **Problématique** : la dette publique se heurte-t-elle à un seuil objectif au-delà duquel elle devient insoutenable, ou sa limite dépend-elle de conditions économiques et institutionnelles (écart entre taux d'intérêt et croissance, usage des fonds, crédibilité de l'État et de la banque centrale) qui en font une limite mobile et, en dernier ressort, politique ?
@@ -69,6 +71,12 @@ C'est aussi pour cette raison que la limite se franchit par des choix de répart
 * * *
 
 Il existe bien une limite à l'endettement public. Elle résulte de l'arithmétique de la dette, qui impose des excédents primaires lorsque le taux d'intérêt dépasse le taux de croissance, du jugement des créanciers, qui peut se retourner brutalement, et du poids de la charge d'intérêts sur les dépenses utiles à la croissance. Mais cette limite n'est pas un seuil universel : elle recule lorsque la croissance dépasse le taux d'intérêt, lorsqu'une banque centrale crédible garantit la liquidité des titres publics et lorsque la dette finance l'investissement. En dernier ressort, elle est politique : c'est le point où une société refuse l'impôt, l'austérité ou l'inflation qui garantissent sa dette. La remontée des taux d'intérêt depuis 2022 et l'ampleur des investissements qu'exige la transition écologique rendent cette question plus pressante. Elle oblige à distinguer la dette qui prépare l'avenir de celle qui le grève.
+
+## Vérification sur le sujet
+
+Dissertation unique sur une éventuelle limite à l’endettement public. La démonstration, le guide et la figure ont été rapprochés du sujet et du rapport. Les deux textes distinguent encours, charge d’intérêt et solde primaire, puis traitent croissance, risque de refinancement et choix institutionnels.
+
+Un exemple de refinancement distingue une contrainte de liquidité de la dynamique du ratio. Pour un encours de 100 dont 20 arrivent à échéance, un État à solde total nul doit, en l’absence de trésorerie disponible, émettre 20 pour rembourser les titres échus. L’encours reste de 100, mais l’accès au marché au moment du renouvellement demeure décisif. Si seule cette tranche est refinancée avec deux points d’intérêt de plus, la charge annuelle augmente d’abord de 0,4. Multiplier les deux points par la totalité de l’encours supposerait que toutes les échéances se renouvellent simultanément.
 
 ## Sources
 

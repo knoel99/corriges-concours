@@ -1,0 +1,111 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_litterature-agrippa-daubigne-et-les-tragiques-oral_2017",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Littérature — Agrippa d’Aubigné et Les Tragiques (oral)",
+    "annee": 2017,
+    "modalite": "oral"
+  },
+  "intitule": "Littérature — Agrippa d’Aubigné et Les Tragiques (oral)",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/litterature-4oraux-si17.pdf",
+    "archive_sujet": "https://web.archive.org/web/20201230063150id_/https://www.ens.psl.eu/sites/default/files/litterature-4oraux-si17.pdf",
+    "sha256_sujet": "87329feb3d7365419f4aa670fb881416860c2405db70373f89f0ce297763781c",
+    "reperage": "Recueil 2017, pages 3 et 4. Les Tragiques, livre VII, « Jugement », vers 651 à 684, numérotés de 1 à 34 sur le feuillet.",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/ens_rapport_sil_litterature_2017.pdf",
+    "rapport_sha256": "9058fff717f3846beb5d505d56ade42b4ef87f88c66eb78fc30f626cbd3c8497",
+    "reperage_rapport": "Page 2, dernier paragraphe consacré à l’oral.",
+    "controle_du_perimetre": "Recueil officiel de quatre oraux ; le sujet d’Aubigné occupe les pages 3 et 4. Le dernier paragraphe du rapport, page 2, indique la lecture initiale à haute voix, le contexte, le genre, le sujet, le commentaire et l’échange."
+  },
+  "figures": [
+    {
+      "fichier": "figures/resurrection.svg",
+      "question": "Commentaire",
+      "legende": "Qui accomplit ou perçoit la résurrection ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "reprise_oraux_litterature_sil_2017_2019",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": false,
+      "perimetre": "Lecture du paragraphe consacré au commentaire oral, à la lecture à haute voix et aux reprises demandées en entretien."
+    },
+    {
+      "phase": "redaction",
+      "session": "reprise_oraux_litterature_sil_2017_2019",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Lecture intégrale du fac-similé, commentaire de spécialité, préparation guidée et réponses pour l’entretien, rédaction et vérification du schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "fournisseur": "codex",
+      "session": "francais_pt_2325",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle visuel des deux pages de l’extrait, des 34 vers et des huit notes. Distinction entre les consignes de l’oral, la lecture à haute voix demandée dans le rapport et les questions d’entraînement ; étude du passage entre les vers 24 et 25."
+    }
+  ],
+  "date_revision": "2026-11-27",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "Commentaire",
+        "page_pdf": 3,
+        "page_pdf_fin": 4,
+        "debut": "Réjouissez-vous donc, ô vous, âmes célestes !",
+        "fin": "Riants au ciel riant d’une agréable audace.",
+        "consigne": "Vous commenterez le texte ci-dessous en 20 minutes environ. Vous pouvez choisir de le commenter en suivant l’ordre de la lecture, ou de rassembler vos remarques selon un plan qui met en valeur les principaux enjeux du texte. Votre interprétation tiendra compte, par exemple, de son genre littéraire, de son contexte historique et culturel, de sa structure, de sa forme (vocabulaire, syntaxe, effets stylistiques et poétiques), de sa thématique et de sa tonalité. Votre commentaire sera suivi d’un entretien avec le jury.",
+        "annexes": [],
+        "duree": "environ 20 minutes de commentaire puis entretien",
+        "remarque": "Recueil officiel de quatre oraux ; le sujet d’Aubigné occupe les pages 3 et 4. Le dernier paragraphe du rapport, page 2, indique la lecture initiale à haute voix, le contexte, le genre, le sujet, le commentaire et l’échange.",
+        "vers_ouvrage": [
+          651,
+          684
+        ],
+        "vers_feuillet": [
+          1,
+          34
+        ],
+        "notes": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "relances": "Questions d’entraînement rédigées pour le corrigé ; le feuillet annonce un entretien."
+      }
+    ]
+  }
+}

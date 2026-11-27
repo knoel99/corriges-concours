@@ -1,0 +1,68 @@
+{
+  "slug": "ens_mp-pc_latin-le2_2007",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Latin (LE2)",
+    "annee": 2007,
+    "modalite": "écrit"
+  },
+  "intitule": "Les Gaulois décident de défendre Avaricum",
+  "questions": 1,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version"
+    ]
+  },
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2007/sujet-ecrit-2007-mp-pc_langue_etrangere_2.pdf#page=12",
+    "sujet_sha256": "5309bb7be121409229b9d682b83dc64317cd1725af428d833510660019c75b2c",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2007",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2007/sujet-ecrit-2007-mp-pc_langue_etrangere_2.pdf#page=12",
+        "sha256": "5309bb7be121409229b9d682b83dc64317cd1725af428d833510660019c75b2c",
+        "pages": "12",
+        "filieres": "MP-PC"
+      },
+      {
+        "role": "rapport",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2007/rapport-2007-pc_ecrit_langue_etrangere_2_latin.pdf",
+        "sha256": "f1a80ad73993272a6ef8280da539e078b753b1a65b31fd4f4667e5b65d235fc2",
+        "pages": "1",
+        "filieres": "MP-PC"
+      }
+    ],
+    "precision": "César, Guerre des Gaules, livre VII, §§ 15–16.",
+    "etablissements": "ENS de Paris et de Cachan",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2007/rapport-2007-pc_ecrit_langue_etrangere_2_latin.pdf"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Version",
+      "fichier": "figures/lecture.svg",
+      "legende": "Le conseil accorde une exception à la règle qu’il vient d’adopter."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "fin_langues_x_interens",
+      "session": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Traduction française intégrale, explication des constructions et schéma du passage. César, Guerre des Gaules, livre VII, §§ 15–16.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}

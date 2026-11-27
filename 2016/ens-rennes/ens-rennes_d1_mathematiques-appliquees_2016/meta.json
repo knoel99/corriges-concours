@@ -44,6 +44,79 @@
       "perimetre": "Rédaction intégrale des deux éditions à partir des sept pages du sujet spécifique et du rapport de jury. Calcul reproductible de la régression avec décalage dans les rangs, histogramme d’aires, fonctions et tangentes, probabilités conditionnelles, coût du contrat et deux lectures de la loi log-normale. Trois figures.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "rennes_d1_mathematiques_2015_2019",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Pointage des 44 questions et sous-questions des deux éditions sur l’énoncé et le rapport. p. 2–3, deux conventions de rang de l’année et extrémités des classes d’âge ; p. 3–4, signes de la dérivée sur la droite réelle, tangentes, intégrale et encadrement ; p. 5–6, tableau croisé du contrôle, lois du coût et calcul des paramètres log-normaux."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1.a",
+      "1.1.b",
+      "1.1.c",
+      "1.1.d",
+      "1.1.e",
+      "1.1.f",
+      "1.2.a",
+      "1.2.b",
+      "1.2.c",
+      "1.2.d",
+      "1.2.e",
+      "1.2.f",
+      "2.I.1",
+      "2.I.2",
+      "2.I.3",
+      "2.I.4",
+      "2.I.5",
+      "2.I.6",
+      "2.I.7",
+      "2.II.1",
+      "2.II.2",
+      "2.II.3",
+      "2.III.1",
+      "2.III.2",
+      "2.III.3",
+      "2.III.4",
+      "3.I.1",
+      "3.I.2",
+      "3.I.3",
+      "3.I.4",
+      "3.I.5",
+      "3.I.6",
+      "3.II.1",
+      "3.II.2",
+      "3.II.3",
+      "3.II.4",
+      "3.III.1.a",
+      "3.III.1.b",
+      "3.III.2.a",
+      "3.III.2.b",
+      "3.III.2.c",
+      "3.IV.1.a",
+      "3.IV.1.b",
+      "3.IV.2"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "controle": [
+      "p. 2–3, deux conventions de rang de l’année et extrémités des classes d’âge",
+      "p. 3–4, signes de la dérivée sur la droite réelle, tangentes, intégrale et encadrement",
+      "p. 5–6, tableau croisé du contrôle, lois du coût et calcul des paramètres log-normaux"
+    ]
+  }
 }

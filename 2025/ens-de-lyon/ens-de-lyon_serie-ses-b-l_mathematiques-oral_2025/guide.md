@@ -4,9 +4,17 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Le concours prévoit une heure de préparation pour les deux exercices de chaque planche et trente minutes d’interrogation, dont quinze minutes au plus de présentation avant les questions du jury. Le fascicule reproduit les planches 2, 3 et 5 à 15. La numérotation ci-dessous suit celle des feuilles originales.
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+Le jury a interrogé 38 candidats et candidates. La préparation dure une heure pour les deux exercices de chaque planche. Le candidat présente les deux exercices dans l’ordre de son choix. Sur les trente minutes de l’oral, il dispose d’au plus quinze minutes pour exposer son travail avant les questions du jury. L’annexe officielle reproduit treize planches, numérotées 2, 3 et 5 à 15. Le fascicule des épreuves orales renvoie à cette annexe en page 19. Les deux exercices et les 197 questions publiées sont traités. Les planches 1 et 4 restent indisponibles dans les pièces officielles consultées.
+
+[Annexe des planches](https://www.ens-lyon.fr/sites/default/files/2025-10/Annexe%20Sujets%20Math%C3%A9matiques%20SES%20session%202025.pdf) · [Rubrique de mathématiques du jury](https://www.ens-lyon.fr/sites/default/files/2025-11/Fascicule%20SES%202025%20relu%20EB%2B%20SLG.pdf#page=14) · [Fascicule des oraux, p. 19](https://www.ens-lyon.fr/sites/default/files/2025-10/Fascicule%20SES%202025%20OK.pdf#page=19)
+
+Lors de la présentation, le jury demande de préciser les hypothèses des théorèmes. Pour la planche 2, on justifie ainsi l’intégrabilité avant d’utiliser la symétrie de la loi normale. Pour la planche 6, on vérifie que le dénominateur du quotient de Rayleigh ne s’annule pas sur le chemin choisi.
 
 ## Planche 2 · Exercice 1 — Partie entière d’une variable normale
+
+[Annexe 2025, p. 2](https://www.ens-lyon.fr/sites/default/files/2025-10/Annexe%20Sujets%20Math%C3%A9matiques%20SES%20session%202025.pdf#page=2)
 
 ### Question 1a
 
@@ -91,7 +99,11 @@ $0\le n[\Phi(n+1)-\Phi(n)]\le n\varphi(n)$. La série de droite converge, par ex
 
 La série positive converge par 5b. La série négative en valeur absolue est $\sum_{n\ge1}np_{n-1}=\sum_{j\ge0}(j+1)p_j<\infty$. La formule de 4 s’écrit $np_n-\Phi(n)+\Phi(0)$. Comme $np_n\to0$, $\Phi(n)\to1$ et $\Phi(0)=1/2$, on conclut $\mathbb EX=-1/2$.
 
+On peut vérifier le signe du résultat directement. Presque sûrement $T$ n’est pas entier et $\lfloor T\rfloor+\lfloor-T\rfloor=-1$. Les deux variables ont la même loi et sont intégrables puisque $|\lfloor T\rfloor|\le |T|+1$. L’espérance de cette identité redonne $2\mathbb EX=-1$.
+
 ## Planche 2 · Exercice 2 — Orthogonaux
+
+[Annexe 2025, p. 3](https://www.ens-lyon.fr/sites/default/files/2025-10/Annexe%20Sujets%20Math%C3%A9matiques%20SES%20session%202025.pdf#page=3)
 
 ### Question 1a
 
@@ -158,6 +170,8 @@ $\|x+ty\|^2-\|x\|^2=2t\langle x,y\rangle+t^2\|y\|^2$. Si le produit scalaire est
 
 ## Planche 3 · Exercice 1 — Rangs de deux endomorphismes
 
+[Annexe 2025, p. 4](https://www.ens-lyon.fr/sites/default/files/2025-10/Annexe%20Sujets%20Math%C3%A9matiques%20SES%20session%202025.pdf#page=4)
+
 ### Question 1a
 
 > [!INDICATION]
@@ -195,6 +209,8 @@ Si $(u+v)x=0$, alors $u(x)=-v(x)$ appartient à l’intersection des images, sup
 Sous (i), la chaîne de 1a impose que les images soient en somme directe. Par 2a et le rang, $\dim(\ker u\cap\ker v)=n-\operatorname{rg}u-\operatorname{rg}v$. Grassmann donne alors $\dim(\ker u+\ker v)=n$, soit (ii). Réciproquement, sous (ii), Grassmann donne la même dimension d’intersection et 2a identifie celle-ci au noyau de la somme. Le théorème du rang redonne (i).
 
 ## Planche 3 · Exercice 2 — Gains du casino et convexité
+
+[Annexe 2025, p. 4,5](https://www.ens-lyon.fr/sites/default/files/2025-10/Annexe%20Sujets%20Math%C3%A9matiques%20SES%20session%202025.pdf#page=4)
 
 ### Question A.1
 
@@ -279,6 +295,8 @@ Puisque $x\mapsto x^2$ est convexe, $(\mathbb EX)^2\le\mathbb E X^2$. On retrouv
 
 ## Planche 5 · Exercice 1 — Sommes de carrés et nombres harmoniques
 
+[Annexe 2025, p. 6](https://www.ens-lyon.fr/sites/default/files/2025-10/Annexe%20Sujets%20Math%C3%A9matiques%20SES%20session%202025.pdf#page=6)
+
 ### Question 1
 
 > [!INDICATION]
@@ -343,6 +361,8 @@ Pour $n\ge1$, $u_n=6/n+6/(n+1)-24/(2n+1)$, comme le vérifie la mise au même d�
 $\sum_{k=1}^n(2k+1)^{-1}=H_{2n+1}-H_n/2-1$. La décomposition de 4b donne $\sum_{k=1}^nu_k=18+6/(n+1)-24(H_{2n+1}-H_n)$. La somme infinie vaut donc $18-24\ln2$.
 
 ## Planche 5 · Exercice 2 — Différence de deux projections orthogonales
+
+[Annexe 2025, p. 7](https://www.ens-lyon.fr/sites/default/files/2025-10/Annexe%20Sujets%20Math%C3%A9matiques%20SES%20session%202025.pdf#page=7)
 
 ### Question 1
 
@@ -445,6 +465,8 @@ Un vecteur non nul dans $F\cap G^\perp$ réaliserait l’égalité de 3, ce qui 
 
 ## Planche 6 · Exercice 1 — Attente et service à deux guichets
 
+[Annexe 2025, p. 8](https://www.ens-lyon.fr/sites/default/files/2025-10/Annexe%20Sujets%20Math%C3%A9matiques%20SES%20session%202025.pdf#page=8)
+
 ### Question 1
 
 > [!INDICATION]
@@ -491,6 +513,8 @@ $Z=Y+X_3$, où $Y$ est indépendant de $X_3$. Pour $m\ge2$, $\mathbb P(Z=m)=\sum
 $\mathbb EZ=1/(1-q^2)+1/p$, en minutes, soit $(3-p)/[p(2-p)]$.
 
 ## Planche 6 · Exercice 2 — Quotient de Rayleigh
+
+[Annexe 2025, p. 8,9](https://www.ens-lyon.fr/sites/default/files/2025-10/Annexe%20Sujets%20Math%C3%A9matiques%20SES%20session%202025.pdf#page=8)
 
 ### Question 1
 
@@ -575,6 +599,8 @@ $r(x)=2+x_1x_2/(x_1^2+x_2^2)$ est compris entre $3/2$ et $5/2$ par 4b. Les vecte
 
 ![Figure 2 — Pour une matrice triangulaire ayant une seule valeur propre, le quotient parcourt tout un intervalle sur le cercle unité.](figures/quotient-rayleigh.svg)
 
+Pour vérifier le parcours sur la figure, prenons $x=(\cos t,\sin t)$. Alors $r(x)=2+\tfrac12\sin(2t)$. Aux angles $t=\pi/4$ et $t=3\pi/4$, le quotient prend respectivement $5/2$ et $3/2$, alors que la matrice a pour seule valeur propre $2$.
+
 ### Question 5a
 
 > [!INDICATION]
@@ -604,6 +630,8 @@ Si $r(x)=\lambda_1$, $\sum_i(\lambda_i-\lambda_1)x_i^2=0$. Pour tout indice où 
 
 ## Planche 7 · Exercice 1 — Polynômes à valeurs entières
 
+[Annexe 2025, p. 10](https://www.ens-lyon.fr/sites/default/files/2025-10/Annexe%20Sujets%20Math%C3%A9matiques%20SES%20session%202025.pdf#page=10)
+
 ### Question 1
 
 > [!INDICATION]
@@ -632,6 +660,8 @@ $H_j$ a degré $j$ et coefficient dominant $1/j!\ne0$. Une relation non triviale
 (i) implique (ii). Écrivons $P=\sum_{j=0}^n\lambda_jH_j$ dans la base de 2. Comme $H_j(k)=0$ pour $j>k$ et $H_k(k)=1$, $\lambda_k=P(k)-\sum_{j<k}\lambda_jH_j(k)$. Sous (ii), la récurrence de $k=0$ à $n$ donne tous les coefficients entiers, soit (iii). Enfin (iii) implique (i) par 1.
 
 ## Planche 7 · Exercice 2 — Partie fractionnaire d’une variable de Pareto
+
+[Annexe 2025, p. 10,11](https://www.ens-lyon.fr/sites/default/files/2025-10/Annexe%20Sujets%20Math%C3%A9matiques%20SES%20session%202025.pdf#page=10)
 
 ### Question 1
 
@@ -725,6 +755,8 @@ $Y$ est bornée, donc intégrable. Avec sa densité, $\mathbb EY=\int_0^1xS'(x)d
 
 ## Planche 8 · Exercice 1 — Une intégrale et deux polynômes tronqués
 
+[Annexe 2025, p. 12](https://www.ens-lyon.fr/sites/default/files/2025-10/Annexe%20Sujets%20Math%C3%A9matiques%20SES%20session%202025.pdf#page=12)
+
 ### Question 1
 
 > [!INDICATION]
@@ -790,6 +822,8 @@ Par 6a, $Q_n(1)\to L=\int_0^1\ln(1+t)/t\,dt$.
 
 ## Planche 8 · Exercice 2 — Une matrice dépendant d’un paramètre
 
+[Annexe 2025, p. 13](https://www.ens-lyon.fr/sites/default/files/2025-10/Annexe%20Sujets%20Math%C3%A9matiques%20SES%20session%202025.pdf#page=13)
+
 ### Question 1a
 
 > [!INDICATION]
@@ -836,6 +870,8 @@ La symétrie donne $\mathbb P(T=0)=e^{-\lambda}$ et $\mathbb P(T=\pm k)=e^{-\lam
 La seule valeur entière empêchant la diagonalisabilité est $T=-2$. Sa probabilité est $e^{-\lambda}\lambda^2/4$. La probabilité demandée vaut $1-e^{-\lambda}\lambda^2/4$.
 
 ## Planche 9 · Exercice 1 — Racines positives d’une famille de polynômes
+
+[Annexe 2025, p. 14](https://www.ens-lyon.fr/sites/default/files/2025-10/Annexe%20Sujets%20Math%C3%A9matiques%20SES%20session%202025.pdf#page=14)
 
 ### Question 1a
 
@@ -947,6 +983,8 @@ La suite $u_k$ tend vers $1/2$. Sa moyenne de Cesàro tend donc aussi vers $1/2$
 
 ## Planche 9 · Exercice 2 — Tirage simultané sans remise
 
+[Annexe 2025, p. 15](https://www.ens-lyon.fr/sites/default/files/2025-10/Annexe%20Sujets%20Math%C3%A9matiques%20SES%20session%202025.pdf#page=15)
+
 ### Question 1
 
 > [!INDICATION]
@@ -1012,6 +1050,8 @@ Pour $0\le k\le n$, $\mathbb P(Z=k)=\binom nk\binom n{n-k}/\binom{2n}n$, nulle a
 
 ## Planche 10 · Exercice 1 — Différences finies et polynômes de Bernoulli
 
+[Annexe 2025, p. 16](https://www.ens-lyon.fr/sites/default/files/2025-10/Annexe%20Sujets%20Math%C3%A9matiques%20SES%20session%202025.pdf#page=16)
+
 ### Question 1a
 
 > [!INDICATION]
@@ -1066,6 +1106,8 @@ Pour tout $Q$, par 1d on trouve $P$ tel que $\phi(P)=Q$. Le polynôme $P-P(0)$ a
 
 À partir de $P_0=1$, définissons $P_n=\psi^{-1}(P_{n-1})$ pour $n\ge1$. L’isomorphisme de 1e assure à chaque étape existence et unicité du polynôme de valeur zéro à l’origine.
 
+Les deux conditions numérotées i et ii du sujet se vérifient simultanément sur $P_n(X)=X(X-1)\cdots(X-n+1)/n!$ pour $n\ge1$, avec $P_0=1$. En soustrayant les deux produits translatés, on trouve $\phi(P_n)=P_{n-1}$ et chaque $P_n$ d’indice positif s’annule en zéro. L’unicité démontrée plus haut identifie cette famille.
+
 ### Question 2b
 
 > [!INDICATION]
@@ -1093,6 +1135,8 @@ Si $Q=\sum_j c_jP_j$, on a $\phi^nP_j=P_{j-n}$ pour $j\ge n$, et zéro pour $j<n
 
 À partir de $B_0=1$, prenons une primitive polynomiale $C$ de $nB_{n-1}$. Posons $B_n=C-\int_0^1 C(t)dt$. La dérivée est prescrite et l’intégrale nulle. Deux solutions diffèrent d’une constante d’intégrale nulle, donc sont égales.
 
+Pour contrôler la normalisation i–ii, la première primitive donne $B_1=X-1/2$. Une primitive de $2B_1$ est $X^2-X$ et sa moyenne entre 0 et 1 vaut $-1/6$, donc $B_2=X^2-X+1/6$. On vérifie par exemple $B_2(0)=B_2(1)$ et $\phi(B_2)=2X$.
+
 ### Question 4b
 
 > [!INDICATION]
@@ -1112,6 +1156,8 @@ Pour $n\ge2$, $B_n(1)-B_n(0)=n\int_0^1B_{n-1}(t)dt=0$ car $n-1\ge1$.
 $B_1=X-1/2$, donc $\phi B_1=1$. Par récurrence pour $n\ge2$, $(\phi B_n)'=n\phi B_{n-1}=n(n-1)X^{n-2}$. La différence entre $\phi B_n$ et $nX^{n-1}$ est constante, et vaut zéro à l’origine par 4b. D’où la formule pour tout $n\ge1$.
 
 ## Planche 10 · Exercice 2 — Arrondi supérieur d’une exponentielle
+
+[Annexe 2025, p. 17](https://www.ens-lyon.fr/sites/default/files/2025-10/Annexe%20Sujets%20Math%C3%A9matiques%20SES%20session%202025.pdf#page=17)
 
 ### Question 1
 
@@ -1159,6 +1205,8 @@ $0\le Z\le1$ assure l’intégrabilité. Par $\int_0^1te^t dt=[(t-1)e^t]_0^1=1$,
 La bornitude assure un second moment. Avec la primitive $(t^2-2t+2)e^t$, $\mathbb EZ^2=(e-2)/(e-1)$. Donc $\operatorname{Var}Z=(e-2)/(e-1)-1/(e-1)^2$.
 
 ## Planche 11 · Exercice 1 — Une identité entre deux matrices de même rang
+
+[Annexe 2025, p. 18](https://www.ens-lyon.fr/sites/default/files/2025-10/Annexe%20Sujets%20Math%C3%A9matiques%20SES%20session%202025.pdf#page=18)
 
 ### Question 1
 
@@ -1225,6 +1273,8 @@ En dimension deux, $A=\operatorname{diag}(1,0)$ et $B=I_2$ donnent $A^2B=A$ mais
 
 ## Planche 11 · Exercice 2 — Représentation intégrale d’une série
 
+[Annexe 2025, p. 19](https://www.ens-lyon.fr/sites/default/files/2025-10/Annexe%20Sujets%20Math%C3%A9matiques%20SES%20session%202025.pdf#page=19)
+
 ### Question 1a
 
 > [!INDICATION]
@@ -1280,6 +1330,8 @@ Pour $x>0$, $f(x-1)-f(x)=\int_0^\infty te^{-xt}(e^t-1)/(e^t-1)dt=1/x^2$ par int�
 Pour $x>-1$, $f(x)-f(x+N)=\sum_{n=1}^N(x+n)^{-2}$ par 4a. Le terme $f(x+N)$ tend vers zéro d’après 3, donc l’égalité demandée vaut à la limite.
 
 ## Planche 12 · Exercice 1 — Zéros d’une fonction logistique translatée
+
+[Annexe 2025, p. 20](https://www.ens-lyon.fr/sites/default/files/2025-10/Annexe%20Sujets%20Math%C3%A9matiques%20SES%20session%202025.pdf#page=20)
 
 ### Question 1a
 
@@ -1355,6 +1407,8 @@ Par 5, $a_k+1/(2k)=O(k^{-2})$, de série absolument convergente. Ainsi $\sum_{k=
 
 ## Planche 12 · Exercice 2 — Transformation d’une uniforme et atome en zéro
 
+[Annexe 2025, p. 20,21](https://www.ens-lyon.fr/sites/default/files/2025-10/Annexe%20Sujets%20Math%C3%A9matiques%20SES%20session%202025.pdf#page=20)
+
 ### Question 1
 
 > [!INDICATION]
@@ -1411,7 +1465,11 @@ La masse en zéro vaut $1/2$. Une loi à densité ne charge aucun point, donc $Z
 
 ![Figure 3 — La fonction de répartition saute de zéro à un demi à l’origine, puis rejoint un au seuil ln(3/2).](figures/saut-repartition.svg)
 
+Plus précisément, la partie continue de la loi est portée par $]0,\ln(3/2)[$, où sa densité vaut $2e^z/(2e^z-1)^2$. Son intégrale est $F(\ln(3/2))-F(0)=1/2$. Avec la masse $1/2$ en zéro, on retrouve la masse totale un.
+
 ## Planche 13 · Exercice 1 — Intégrales de puissances sur un segment
+
+[Annexe 2025, p. 22](https://www.ens-lyon.fr/sites/default/files/2025-10/Annexe%20Sujets%20Math%C3%A9matiques%20SES%20session%202025.pdf#page=22)
 
 ### Question 1
 
@@ -1487,6 +1545,8 @@ Pour $a\le t\le1$, la somme des $(1-t^2)^n$ vaut $1/t^2$ et la convergence est u
 
 ## Planche 13 · Exercice 2 — Produit de deux projections orthogonales
 
+[Annexe 2025, p. 23](https://www.ens-lyon.fr/sites/default/files/2025-10/Annexe%20Sujets%20Math%C3%A9matiques%20SES%20session%202025.pdf#page=23)
+
 ### Question 1a
 
 > [!INDICATION]
@@ -1552,6 +1612,8 @@ La valeur zéro appartient déjà à l’intervalle. Si $\lambda\ne0$, $px=x$ pa
 
 ## Planche 14 · Exercice 1 — Borne des racines d’un polynôme
 
+[Annexe 2025, p. 24](https://www.ens-lyon.fr/sites/default/files/2025-10/Annexe%20Sujets%20Math%C3%A9matiques%20SES%20session%202025.pdf#page=24)
+
 ### Question 1
 
 > [!INDICATION]
@@ -1607,6 +1669,8 @@ Pour $x>1$, $f(x)\le A\sum_{k=1}^n x^{-k}=A(1-x^{-n})/(x-1)$.
 Puisque $A>0$, 4a donne $f(1+A)\le1-(1+A)^{-n}<1=f(r)$. La stricte décroissance donne $r<1+A$. Alors toute racine vérifie $|\omega|<1+A$ par 3b.
 
 ## Planche 14 · Exercice 2 — Transformations de variables positives
+
+[Annexe 2025, p. 25](https://www.ens-lyon.fr/sites/default/files/2025-10/Annexe%20Sujets%20Math%C3%A9matiques%20SES%20session%202025.pdf#page=25)
 
 ### Question 1a
 
@@ -1681,6 +1745,8 @@ $\mathbb ET_n^2=24/\lambda^4$. On obtient $\operatorname{Var}T_n=(24-4)/\lambda^
 Les $T_k$ sont indépendantes et identiquement distribuées, donc $\mathbb ES_n=2/\lambda^2$ et $\operatorname{Var}S_n=20/(n\lambda^4)$. Pour $\varepsilon>0$, $\mathbb P(|S_n-2/\lambda^2|\ge\varepsilon)\le20/(n\lambda^4\varepsilon^2)$.
 
 ## Planche 15 · Exercice 1 — Asymptotique d’intégrales et série alternée
+
+[Annexe 2025, p. 26](https://www.ens-lyon.fr/sites/default/files/2025-10/Annexe%20Sujets%20Math%C3%A9matiques%20SES%20session%202025.pdf#page=26)
 
 ### Question 1
 
@@ -1765,6 +1831,8 @@ Tous les rangs étant pairs ou impairs, $S_n$ converge. La série alternée de t
 
 ## Planche 15 · Exercice 2 — Nombre de points fixes d’une permutation
 
+[Annexe 2025, p. 26](https://www.ens-lyon.fr/sites/default/files/2025-10/Annexe%20Sujets%20Math%C3%A9matiques%20SES%20session%202025.pdf#page=26)
+
 ### Question 1a
 
 > [!INDICATION]
@@ -1818,6 +1886,8 @@ $\mathbb P(X_k=1)=(n-1)!/n!=1/n$. La linéarité donne $\mathbb EN_n=n/n=1$.
 #### Solution
 
 Pour $i\ne j$, $\mathbb EX_iX_j=(n-2)!/n!=1/[n(n-1)]$. La covariance vaut donc $1/[n^2(n-1)]$ et chaque variance vaut $(1/n)(1-1/n)$. Par 1b, $\operatorname{Var}N_n=(1-1/n)+n(n-1)/[n^2(n-1)]=1$.
+
+Prendre $n=2$ donne un contrôle immédiat de la covariance. L’identité a deux points fixes et la transposition aucun. Leur moyenne vaut 1 et la variance vaut 1. Les deux indicatrices sont alors égales, ce qui illustre leur dépendance positive.
 
 ### Question 5a
 

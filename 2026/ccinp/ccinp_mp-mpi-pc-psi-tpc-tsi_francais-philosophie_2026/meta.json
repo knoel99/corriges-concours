@@ -4,7 +4,8 @@
     "concours": "CCINP",
     "filiere": "MP-MPI-PC-PSI-TPC-TSI",
     "matiere": "Français-philosophie",
-    "annee": 2026
+    "annee": 2026,
+    "modalite": "écrit"
   },
   "questions": 2,
   "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
@@ -13,6 +14,12 @@
       "fichier": "figures/lecture-du-sujet.svg",
       "question": "Dissertation",
       "legende": "Du familier au jugement vérifié"
+    },
+    {
+      "fichier": "figures/passage-de-paragraphe.svg",
+      "question": "Résumé",
+      "legende": "Extrait du résumé sur une grille pédagogique de cinq mots par ligne. La double barre précède le mot 31.",
+      "provenance": "Schéma pédagogique original pour cette révision."
     }
   ],
   "sources": {
@@ -64,7 +71,168 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Comparaison du document réponse, du barème et des deux éditions. Recompte du résumé (27, 34 et 44 mots). Distinction du familier et de l’identification savante, illustrée par Aronnax."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Dissertation CCINP, articulation entre hypothèse familière et indice de la construction métallique."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Reprise du résumé de Raine, comparaison des deux échelles de notation, étude du document-réponse, vérification de la citation et du rôle de Ned Land et d’Aronnax dans la découverte du sous-marin. Relecture des onze pages du rapport."
     }
   ],
-  "date_revision": "2026-11-24"
+  "date_revision": "2026-11-26",
+  "duree_heures": 4,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/Ep%20communes/2026_FP4.pdf",
+      "sha256": "278c5ec51223b968657565e87705bd3ab4a35dadf7dff4d5b0f1f2cf04f76e2b",
+      "pages": 4,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "223e35c3f6579fc594d7fdcee1511fb6b05c059898c331b28ee7673c60ea232c"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "cfc09b3dbb0af9cbde61096e4899fea9d82122a8161a285f784ab3a72b8c195a"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "b12935bb88ecc10426766ba1ce3de5e745791b4ad293cef32057f74557840547"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "8612cb4fe7f8e93f0e9f46d0b0059e9b6b56eec0c36eccdb1f98840e52f53413"
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/Ep%20communes/Rapport%20FP%202026.pdf",
+      "sha256": "64944e2cee511097ccece467be2acd5186e8e80aeb735dc7b1ac51021f8c87b7",
+      "pages": 11,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "c62acbf54b070c62ddb0dbe62947b471399b1a9012c127c8596a78540989abc4"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "755d8fdeaff7b0b72a3ef2ecbbb3d5bb60c1ce750aaac494d3d89afb3d2765fc"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "07665a2e3ed89430c8ffdc8ba1983e24cb987b1fd17ea6527d82b16aa00b15c6"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "d8376508f0fab03780001d4045f8801dad629e6d4303651802ff8d68554ad444"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "4a70761e10e7881f9150e98ae25a0c24fd15c9f456cc730a8a7fbaab326268e9"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "b4adbda562961dc258e2aeb46b74b97f2d46c61696c0b8038e6f248bc2e38b06"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "75d3ea2f37459d9df8b9cc61180ffdd75b3867f69072e689f8e05f41ffd1d5b1"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "d5c9ee4bf713ed24a9164ec3806f9372d1215c209e4327e7c7ad1280316828e2"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "1ba07f98dfff05b8fa4fcdf6b98ae7f80a614eae3628432cec9fa7e088d04018"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "f331fcab280c1deb86a4f89c7b17c6de4dbf8c38efada38710dee1be25738b53"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "37803c0af316664e80fceec30fc3c0193f86736f734e29ad5d29cfad329410a0"
+        }
+      ],
+      "rubriques": "p. 1–3, critères des deux épreuves et usage de la grille ; p. 4–6, étapes du résumé, concession, énonciation et objectivité ; p. 7–11, définition des termes, problématisation, exemples et confrontation."
+    },
+    "catalogue": {
+      "url": "https://www.concours-commun-inp.fr/fr/epreuves/annales/annales-epreuves-communes.html",
+      "sha256": "6529be7d7244a4e555a1b8da38776c06078ab4511c4aac7da210bd32fedead03",
+      "constat": "Le document-réponse de quatre pages annoncé en garde doit être rendu, même avec une copie vierge. Coller le QR Code en page 1, placer un mot par trait en page 2 et signaler chaque changement de paragraphe par une double barre verticale. Commencer la dissertation aux pages 3 et 4 puis poursuivre sur copie standard. Terminer par FIN. Le catalogue public associe le sujet de quatre pages au rapport. La grille ci-dessous est une illustration originale du mode de réponse."
+    },
+    "programme": {
+      "url": "https://www.enseignementsup-recherche.gouv.fr/fr/bo/2025/Hebdo23/MENS2514209A",
+      "sha256": "9ffa8558361588f4db261db1aecff045e22bc5bf3c1dd99bce476c947662ea24",
+      "reference": "BO n° 23 du 5 juin 2025, arrêté du 6 mai 2025, article 1, thème 2."
+    },
+    "verne": {
+      "url": "https://fr.wikisource.org/wiki/Vingt_mille_lieues_sous_les_mers/Texte_entier",
+      "sha256": "0079c22d4b5a2ae447ebfc827e3cb346f6df8492b44966bcf857e4a047628a29",
+      "reference": "Première partie, chapitre VII, Une baleine d’espèce inconnue."
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Résumé",
+      "Dissertation"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "Résumé",
+        "page_pdf": 4,
+        "consigne": "Vous résumerez le texte en 100 mots (± 10 %).",
+        "intervalle": [
+          90,
+          110
+        ],
+        "mots_rediges": 100,
+        "marques": [
+          30,
+          61
+        ],
+        "ponderation": "1/3"
+      },
+      {
+        "question": "Dissertation",
+        "page_pdf": 4,
+        "citation": "« Ce n’est pas l’expérience acquise par le savoir qui nous permet d’en appréhender la réalité, mais une reconnaissance totale et immédiate. » (Lignes 52-54)",
+        "consigne": "Dans quelle mesure votre lecture des œuvres du programme vous permet-elle de souscrire à ce jugement de Kathleen RAINE ?",
+        "limite_mots": null,
+        "ponderation": "2/3"
+      }
+    ],
+    "choix": "Les deux exercices sont obligatoires.",
+    "annexes_imposees": [
+      "Document Réponse séparé, 4 pages, annoncé p. 1 du sujet. L’index public consulté fournit le sujet et le rapport."
+    ]
+  }
 }

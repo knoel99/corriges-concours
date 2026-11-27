@@ -1,0 +1,371 @@
+{
+  "slug": "banque-pt_pt_langue-vivante-a_2025",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Langue vivante A",
+    "annee": 2025
+  },
+  "questions": 5,
+  "redaction": "IA (gpt-6.2-astra)",
+  "figures": [
+    {
+      "fichier": "figures/lecture-de.svg",
+      "question": "Allemand",
+      "legende": "Activation et performance au travail"
+    },
+    {
+      "fichier": "figures/lecture-en.svg",
+      "question": "Anglais",
+      "legende": "Émissions par passager-kilomètre"
+    },
+    {
+      "fichier": "figures/lecture-ar.svg",
+      "question": "Arabe",
+      "legende": "Part déclarant souhaiter émigrer"
+    },
+    {
+      "fichier": "figures/lecture-es.svg",
+      "question": "Espagnol",
+      "legende": "Un mur change la rencontre avec l’œuvre"
+    },
+    {
+      "fichier": "figures/lecture-it.svg",
+      "question": "Italien",
+      "legende": "Les échanges entre générations"
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "agent": "lva_pt_2325",
+      "perimetre": "Rédaction des cinq synthèses par langue et du commentaire des vingt-cinq documents du fascicule 2025, contrôle des figures et des décomptes dans les deux éditions."
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2025/lv_a_2025_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2025/rapport_lv_a_ecrit_2025.pdf",
+    "sujet_sha256": "bf7150be093d455cc4dd33f5e38ec15a6e96096091a37f77b25f4b1f5b81146c",
+    "rapport_sha256": "0e17ac46b7147ba50b46fea6ec15d4c5e11cc5e91c6a2888821aa866e564a53e",
+    "livret": "https://www.banquept.fr/documents/livret/2025/Livret_PT_2025.pdf#page=13",
+    "livret_sha256": "4b83162034dd73f2516707f35e52b18ea6799a215935e95005f6a24bd66664ba"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Allemand",
+      "Anglais",
+      "Arabe",
+      "Espagnol",
+      "Italien"
+    ],
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "bf7150be093d455cc4dd33f5e38ec15a6e96096091a37f77b25f4b1f5b81146c",
+      "perimetre": "Rédaction des cinq synthèses par langue et du commentaire des vingt-cinq documents du fascicule 2025, contrôle des figures et des décomptes dans les deux éditions.",
+      "controles": [
+        {
+          "nom": "Allemand",
+          "titre": "Wann spornt eine Herausforderung an?",
+          "consigne": "Stress am Arbeitsplatz: produktiv?",
+          "pages_sujet": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "pages_rapport": [
+            1,
+            2,
+            3
+          ],
+          "mots_titre_inclus": 459,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                3
+              ],
+              "controle": "Milad Safar analyse rémunération, climat entre collègues, communication et équité du management comme composantes de la satisfaction au travail."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                4,
+                5
+              ],
+              "controle": "Sarah Korba identifie les symptômes du stress prolongé et des facteurs organisationnels ou matériels sur lesquels l’employeur peut agir."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                6,
+                7
+              ],
+              "controle": "Nadine Brunner distingue le défi perçu comme accessible de la surcharge, en fonction des ressources et des conséquences anticipées."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                7
+              ],
+              "controle": "Sur la courbe en cloche de Zentor, la performance augmente puis diminue avec l’activation. Le graphique n’établit pas un seuil individuel chiffré."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                8
+              ],
+              "controle": "Les dirigeants interrogés évaluent l’impact de risques simultanés. Inflation et volatilité des prix ont un fort impact pour 58 %, la pénurie de talents pour 42 %."
+            }
+          ]
+        },
+        {
+          "nom": "Anglais",
+          "titre": "Is there room on board for a sleeper revival?",
+          "consigne": "Sleeper trains across Europe and beyond: the future of traveling?",
+          "pages_sujet": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "pages_rapport": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "mots_titre_inclus": 476,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                10
+              ],
+              "controle": "Forbes revient sur le déclin des anciens trains de nuit face aux liaisons rapides et aériennes, et sur les coûts qui freinent une relance."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                11
+              ],
+              "controle": "Le Financial Times confronte la demande et les difficultés matérielles d’European Sleeper et des opérateurs existants."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                12
+              ],
+              "controle": "Condé Nast Traveler rappelle des liaisons historiques et distingue les projets d’entreprises des initiatives portées par plusieurs pays européens."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                13
+              ],
+              "controle": "Visual Capitalist exprime les émissions en g d’équivalent CO₂ par passager-kilomètre. Le rail national, Eurostar et le vol court sont trois catégories."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                14
+              ],
+              "controle": "L’agence australienne Railbookers montre les pieds d’un voyageur devant une large fenêtre. Son appel à réserver tôt utilise aussi la rareté comme argument commercial."
+            }
+          ]
+        },
+        {
+          "nom": "Arabe",
+          "titre": "ما الذي ينتقل مع المهاجر بين القرية والمدينة؟",
+          "consigne": "اعتمادا على الوثائق الخمس المقدمة أدناه، بين انعكاسات الهجرة على القرية والمدينة على حد سواء وكذلك التحديات التي يواجهها المهاجرون والمهاجرات محليا ودوليا.",
+          "pages_sujet": [
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "pages_rapport": [
+            12,
+            13,
+            14
+          ],
+          "mots_titre_inclus": 457,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                16
+              ],
+              "controle": "Samar Othman décrit le départ des actifs ruraux, l’espoir d’un meilleur accès aux services et les besoins nouveaux des villes d’accueil."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                17
+              ],
+              "controle": "Le rapport sur le sud de la Méditerranée distingue des formes de migration et met en relation intégration, retour et réinsertion."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                18
+              ],
+              "controle": "L’article d’Al-Arab examine le mouvement inverse de citadins séduits par le calme et les possibilités d’une vie rurale."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                19
+              ],
+              "controle": "Arabi21 compare des intentions de départ. La Jordanie atteint 48 %, le Soudan 46 % et l’Égypte 13 % dans les pays figurés."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                20
+              ],
+              "controle": "Dans la caricature libyenne, un homme compte les billets tandis que des mains apparaissent autour d’un bateau en train de sombrer."
+            }
+          ]
+        },
+        {
+          "nom": "Espagnol",
+          "titre": "¿De quién es la pared que habla?",
+          "consigne": "El Street art, ¿qué papel desempeña en la ciudad?",
+          "pages_sujet": [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          "pages_rapport": [
+            15,
+            16,
+            17
+          ],
+          "mots_titre_inclus": 468,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                22
+              ],
+              "controle": "Roc BlackBlock relie un travail scolaire sur les Brigades internationales à une fresque ensuite détériorée par des inscriptions hostiles."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                23
+              ],
+              "controle": "À Mendoza, commerçants et autorités invoquent l’usage du bâtiment, le défaut d’autorisation et les règles de protection de l’espace commun."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                24
+              ],
+              "controle": "À Buenos Aires, Nandon et Perfil soulignent la rencontre imprévue avec l’œuvre, son usage contestataire et l’existence de commandes autorisées."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                25
+              ],
+              "controle": "L’infographie de La Razón présente 75 % pour l’art et 25 % pour le vandalisme. Elle mentionne le coût et les sanctions, sans expliciter l’échantillon."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                26
+              ],
+              "controle": "La fresque de Tvboy oppose le mot « Respect! » à l’image du baiser imposé par Luis Rubiales à Jenni Hermoso. La photographie a aussi circulé en ligne."
+            }
+          ]
+        },
+        {
+          "nom": "Italien",
+          "titre": "Chi sostiene chi in un’Italia che invecchia?",
+          "consigne": "In che misura l’Italia subisce e fa fronte all’invecchiamento della popolazione?",
+          "pages_sujet": [
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ],
+          "pages_rapport": [
+            18
+          ],
+          "mots_titre_inclus": 457,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                28
+              ],
+              "controle": "Geopop décrit l’allongement de la vie et le recul de la fécondité, puis les conséquences pour le travail, les retraites et les soins à domicile."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                29
+              ],
+              "controle": "Gianmarco Aprile présente la transmission de la mémoire, des repères et des expériences entre grands-parents et petits-enfants."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                30
+              ],
+              "controle": "La fondation Ca’ d’Industria envisage les outils numériques pour garder contact et accéder aux soins, tout en documentant l’inégalité des usages."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                31
+              ],
+              "controle": "Le graphique ISTAT au 1er janvier 2022 est une répartition par âge, sexe et état civil. Les très jeunes cohortes sont moins nombreuses que les classes centrales."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                32
+              ],
+              "controle": "Paparelli dessine un homme à la canne qui se présente comme le soutien de la jeunesse, car sa pension contribue au budget familial."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

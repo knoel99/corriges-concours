@@ -1,0 +1,92 @@
+{
+  "slug": "banque-pt_pt_francais-a_2012",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français A",
+    "annee": 2012
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2012/fr_a_pt_2012.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2012/rapport_fra_a_ecrit_2012.pdf",
+    "programme_officiel": "https://www.education.gouv.fr/bo/2011/24/esrs1100188a.htm",
+    "notice": "https://www.banquept.fr/documents/livret/2012/Livret_PT_2012.pdf#page=12",
+    "sujet_sha256": "454f8322b6540c5d83b5e4b317d11fe18ddcfcc9a0afd17db50d40a2c01f186a",
+    "rapport_jury_sha256": "0795bee8fb2c80f825d8958169202e343ae544927873750d1913544b1093aa4d",
+    "programme_officiel_sha256": "ac22865d9dec1091697e48d332465516707d080d9d569e4f6af9bf9be5f3c7d7",
+    "notice_sha256": "778c796c26e1a3f2558523fa548e8d4fe4c92c6e0265a53fc4b63bd98a8c5c62",
+    "oeuvres_au_programme": [
+      "Eschyle, Les Choéphores et Les Euménides (traduction de Daniel Loayza)",
+      "Blaise Pascal, Pensées (fragments prescrits, édition Lafuma) et Trois Discours sur la condition des grands",
+      "John Steinbeck, Les Raisins de la colère (traduction de Marcel Duhamel et Maurice-Edgar Coindreau)"
+    ],
+    "theme": "La justice",
+    "admissibilite_admission": "École polytechnique, admissibilité, coefficient 4",
+    "pages_rapport": "Rapport PDF p. 1 à 8, pagination imprimée 19 à 26. Analyse des deux propositions de la citation, de l’hypothèse et du sens de « se dérober à soi-même »."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "Qu’est-ce qui autorise un jugement de justice ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture du feuillet, du programme et du rapport. Rédaction interrogeant les deux propositions d’Usbek à partir des trois auteurs et de la lecture complémentaire expressément demandée."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Vérification de la portée concessive du second membre, des fonctions distinctes de l’institution et du principe de justice et de la règle qui tranche le partage des voix dans Les Euménides.",
+      "tour": 1
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 1,
+        "perimetre": "Quelles réflexions vous inspirent ces propos du persan Usbek à son ami Rhédi dans Les Lettres persanes de Montesquieu (1721) ? Vous vous appuierez sur les œuvres au programme et vos lectures personnelles liées au thème.",
+        "points": 20
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

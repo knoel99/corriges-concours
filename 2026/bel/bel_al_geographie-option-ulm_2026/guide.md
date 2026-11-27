@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Lire le pluriel du sujet
 
 Le sujet d’Ulm demande une composition de six heures sur « Les échelles de la décroissance » et exige des exemples précis. Il autorise une production graphique au choix. Le planisphère joint est facultatif. La lettre de cadrage délimite une question de géographie sur les territoires dont la population ou l’activité diminuent. La dissertation gagne à faire varier le périmètre pour un même cas avant de comparer plusieurs régions du monde.
@@ -13,6 +15,8 @@ Le sujet d’Ulm demande une composition de six heures sur « Les échelles de l
 ## Faire parler deux échelles
 
 ![Figure 1 — Deux changements d’échelle, deux types de comparaison](figures/comparer-perimetres.svg)
+
+Avant d’additionner deux variations, noter pour chaque série son périmètre, ses dates et son effectif de départ. Les taux de deux territoires voisins ou emboîtés ne s’additionnent dans aucun des deux exemples.
 
 Le calcul de variation relative se fait sur l’effectif de départ. Pour Detroit, la perte de 74 666 habitants divisée par 713 777 donne environ 10,46 %. Écrire « baisse de 10,5 % » avec la période de 2010 à 2020. Le graphique doit identifier la ville et le comté voisin, et le texte expliquer qu’aucun des deux n’est la métropole entière. Au Japon, le changement d’échelle est emboîté. Tokyo appartient au total japonais. Les deux comparaisons n’ont donc pas la même signification.
 

@@ -1,0 +1,69 @@
+{
+  "slug": "bel_bl_economie-oral-commun-lutte-contre-la-pauvrete_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Économie (oral commun) — Lutte contre la pauvreté",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "La lutte contre la pauvreté",
+  "questions": 1,
+  "sujets": 1,
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_dossiers_23_juin_economie.pdf#page=1",
+    "sujet_sha256": "e3a461318518d272cca4165a16d733c3e528cde116ca19a86b4ed561a46436b9",
+    "sujet_pages": 26,
+    "page_pdf": 1,
+    "fin_pdf": 10,
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_economie_tronc_commun.pdf",
+    "rapport_sha256": "b0b1a696afc5d758d40283be9361a3fe50abd56041e7cad3533c62eabb4c5dd7",
+    "rapport_pages": 2
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "La lutte contre la pauvreté"
+    ],
+    "documents_entierement_traites": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "precision": "Exposé sur la question de la page PDF 1, à partir des cinq documents du dossier. Le rapport commun cite le sujet page 2. Les questions de discussion sont éditoriales."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "La lutte contre la pauvreté",
+      "fichier": "figures/seuils-et-intensite.svg",
+      "legende": "Niveau de vie mensuel médian des personnes pauvres et seuils de pauvreté en France en 2022, en euros par unité de consommation. Document 2."
+    },
+    {
+      "numero": 2,
+      "question": "La lutte contre la pauvreté",
+      "fichier": "figures/superieur-et-origine.svg",
+      "legende": "Accès au supérieur et diplôme en France pour les deux centiles extrêmes de revenu parental. Ordres de grandeur de la note de lecture du document 3."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture des seuils et des champs statistiques, des graphiques de mobilité et des deux expériences de recours. Distinction entre pauvreté relative, incitations au travail et investissements contraints. Rédaction intégrale des deux éditions, figures originales et entraînement à l’entretien."
+    }
+  ]
+}

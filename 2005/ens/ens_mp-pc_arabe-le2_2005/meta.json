@@ -1,0 +1,59 @@
+{
+  "slug": "ens_mp-pc_arabe-le2_2005",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Arabe (LE2)",
+    "annee": 2005,
+    "modalite": "écrit"
+  },
+  "intitule": "Le retour de Farès à Jaffa et l’expérience de l’exil",
+  "questions": 2,
+  "redaction": "Traduction intégrale en français et réponse argumentée en arabe. Le retour de Farès à Jaffa et l’expérience de l’exil.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2005/sujet-2005-ecrit-mp_pc_langue_etrangere_2.pdf#page=4",
+    "sha256_sujet": "3591b865ff600e9a1da38a819b3d68405c9a905cb43f3fc1b5ef6183ff6011c6",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2005",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2005/sujet-2005-ecrit-mp_pc_langue_etrangere_2.pdf#page=4",
+        "sha256": "3591b865ff600e9a1da38a819b3d68405c9a905cb43f3fc1b5ef6183ff6011c6"
+      },
+      {
+        "role": "rapport",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2005/rapport-2005-pc_ecrit_langue_etrangere_2_arabe.pdf",
+        "sha256": "31fd707dce48caf93a687b17cc63f8b3bdde3124dbd63759d5f2a53e500fb5b0"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I",
+      "fichier": "figures/lecture-de-la-version.svg",
+      "legende": "Du seuil au salon, trois gestes changent le sens de la rencontre."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "arabe_mp_pc_2011_2014",
+      "session": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Traduction intégrale en français et réponse argumentée en arabe. Le retour de Farès à Jaffa et l’expérience de l’exil."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I",
+      "II"
+    ]
+  }
+}

@@ -17,7 +17,19 @@
   "sources": {
     "sujet": "https://www.ens-lyon.fr/sites/default/files/2019-10/2019%20Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=8",
     "sujet_sha256": "584c45c92277aefe34fd083279dd477990f7568de569a3f8d169bd44313931e2",
-    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2019-10/ALLEMAND_2019_0.pdf#page=11"
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2019-10/ALLEMAND_2019_0.pdf#page=11",
+    "sha256_rapport_jury": "a81346aa401c3af275f4f8a77bc2381ec9d2058b3bfa2f6daf6d2ef175ef2212",
+    "pages_rapport_verifiees": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "ouvrage": "Alain Mabanckou, Le Sanglot de l’homme noir (2012), « Chemin d’Europe »."
   },
   "figures": [
     {
@@ -26,7 +38,7 @@
       "legende": "De la côte à l’idée d’Europe"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -37,6 +49,23 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Traduction allemande intégrale du texte d’Alain Mabanckou, titre inclus, avec reprise de l’adhésion et des voix de l’enfant et de l’adulte, schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture phrase par phrase sur le fascicule de l’ENS de Lyon et rapprochement avec le rapport du jury. Habitude du père, jeu du ralliement et de l’adhésion à l’Union, souvenirs des enfants et irruption de ce qui surgit de la mer.",
+      "agent": "lyon_ses_sources"
     }
   ],
   "droits_sources": {
@@ -44,5 +73,21 @@
       "Le thème allemand de quatre heures, sans dictionnaire, est intitulé « Chemin d’Europe ». L’extrait provient du Sanglot de l’homme noir d’Alain Mabanckou (2012)."
     ],
     "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Proposition de thème"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Proposition de thème",
+        "page_pdf": 8,
+        "page_pdf_fin": 8,
+        "perimetre": "Titre « Chemin d’Europe » et passage complet, de la question initiale sur les Européens à « ne pouvait venir que d’Europe ». Sont incluses les répliques, les comparaisons et les deux reprises entre guillemets."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
   }
 }

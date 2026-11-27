@@ -10,6 +10,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 L’épreuve du 15 avril 2026 dure quatre heures, sans dictionnaire ni traducteur. Elle demande deux compositions en arabe. La première est une synthèse neutre et titrée des documents 1 à 4, entre 600 et 675 mots. La seconde est un texte d’opinion de 500 à 600 mots qui réagit au document 5. L’éditorial passe des usages économiques et administratifs de l’intelligence artificielle à l’apprentissage des jeunes. Les pistes d’argumentation changent donc au moment de passer de A à B. [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/LVE%20Arabe.pdf) · [Rapport 2026](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/All%20filieres_Arabe%20OK.pdf)

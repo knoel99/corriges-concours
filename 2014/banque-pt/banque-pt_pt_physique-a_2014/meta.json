@@ -1,0 +1,699 @@
+{
+  "slug": "banque-pt_pt_physique-a_2014",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique A",
+    "intitule": "Épreuve de Physique A",
+    "annee": 2014,
+    "duree": "4 h",
+    "modalite": "écrit",
+    "code_garde": "106"
+  },
+  "questions": 74,
+  "redaction": "Proposition pédagogique non officielle, rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2014/ph_a_2014_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2014/rapport_phys_a_ecrit_2014.pdf",
+    "livret": "https://www.banquept.fr/documents/livret/2014/Livret_PT_2014.pdf",
+    "sujet_sha256": "721996af52154ca2952d7e637a7fa07a5fc29bd4907e19e2006f0001e8e31306",
+    "rapport_jury_sha256": "8564dae29314781c692fbb582d6873d42d1a75b8cfb73ba62449c578ef5d78df",
+    "observation_rapport": "Le rapport, p. 1, détaille AI1, AII2, AV1–2, BI1, BI4 et C1. La deuxième page conclut sur l’argumentation."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2014/ph_a_2014_pt.pdf",
+      "sha256": "721996af52154ca2952d7e637a7fa07a5fc29bd4907e19e2006f0001e8e31306",
+      "pages": 12,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "d747ee06ac49e2c9f193f679d0cb768ff0a3974f6d7cbc0c9cd228beda4d9c74"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "10dab76134a1be8eede1a1b0c37bdf144a50ed78fbf812207c0888a4dccc5ccd"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "d96e6e730688f0a3ae9b3ab66939cc5f1f7caf3e15878bd0925ba19625405c26"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "f4e2e53e98e8165d2612c08f795deea89864e38472f89ee14b477232da6ce377"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "d705e8660ef396a3f4aaa7cf6c8df58ba646abe53c2700f72e4e9496671897aa"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "b590a3373fa0082ec0c6fb25337639c978ea67a257ede384fb96e1c209af2910"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "ac3d978228a6c459e23ec7b42ad0fd0d12486644e57da8efc519a738af25fe63"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "e648f499eb58db1fce157f601720d78f80c3f8396b99f7ed6e84174e445a7c16"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "0e5d349a82e3456f7efc49019b0126bed46bd7a9b92e6d83e1298b439664224e"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "47d5488f3a4b5eac11f34efb259e9c4732b8a54567811af7ae53ca2c9deef18b"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "197e75fe00c32d7d0b75b15d7a0548af70105ec5869eea335e99c8ce7bd8726d"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "5796371f4fd8f0ba838c954fc7e1480f97816b5c9d39241a0e3a15840193220d"
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2014/rapport_phys_a_ecrit_2014.pdf",
+      "sha256": "8564dae29314781c692fbb582d6873d42d1a75b8cfb73ba62449c578ef5d78df",
+      "pages": 2,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "fadd6268ce9fbb943ce05fc4207891b81c707afde9fa6aed45afa378993a63a1"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "6797dfc6bd2f4065a2d1d573a162cbe100bac86703674eeccec8f299f684926a"
+        }
+      ]
+    },
+    "livret": {
+      "url": "https://www.banquept.fr/documents/livret/2014/Livret_PT_2014.pdf",
+      "sha256": "645bd441b431dd180a74f457dcbbd9c88abb12286959e8141c44aeeb6e495f6b",
+      "pages": 77,
+      "pages_verifiees": [
+        {
+          "numero": 8,
+          "rendu_sha256": "2e87d859398267364a418bdac3cb49f5c5bb52715e0a00f0e9d8ea499d271629"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "43cf6f9ee0ef63a9d328968f2ec5fd699125f0533903224d19a2edee9f545a4e"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "d68ec9f0a33f4484bf23a17512969b12834bb91e69c7bc2c5f4307f74c809064"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "A.I.2.b",
+      "fichier": "figures/profil.svg",
+      "legende": "Le rayon du premier minimum fixe R. Le disque uniforme et le profil de diffraction diffèrent notamment au centre et au bord.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "A.II.4",
+      "fichier": "figures/franges.svg",
+      "legende": "Les franges sont des cordes parallèles dans un disque de rayon 10 mm. Les points aux deux extrémités correspondent aux ordres tangents.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "A.III",
+      "fichier": "figures/chemins.svg",
+      "legende": "Les rayons parallèles avant la lentille rejoignent le point M du plan focal. Le rayon auxiliaire en tirets passe par le centre optique.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "A.VI.1.b",
+      "fichier": "figures/gain-integrateur.svg",
+      "legende": "Le gain est voisin de 20 dB à basse fréquence. Après la pulsation de coupure à 100 rad/s il baisse de 20 dB par décade.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "B.I.4.h",
+      "fichier": "figures/trajectoires.svg",
+      "legende": "Départ sur la gauche, vitesse initiale vers le haut. La croix marque le centre du cercle ou le point limite de la spirale amortie.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "C.9",
+      "fichier": "figures/dispersion.svg",
+      "legende": "À gauche, le nombre d’onde rejoint son asymptote oblique. À droite, l’indice croît du seuil vers un, avec une pente initiale verticale.",
+      "provenance": "Figure originale."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A.I.1.a",
+      "A.I.1.b",
+      "A.I.2.a",
+      "A.I.2.b",
+      "A.I.2.c",
+      "A.II.1",
+      "A.II.2.a",
+      "A.II.2.b",
+      "A.II.2.c",
+      "A.II.3",
+      "A.II.4",
+      "A.II.5",
+      "A.III",
+      "A.IV.1",
+      "A.IV.2",
+      "A.IV.3.a",
+      "A.IV.3.b",
+      "A.IV.3.c",
+      "A.IV.3.d",
+      "A.V.1",
+      "A.V.2",
+      "A.V.3.a",
+      "A.V.3.b",
+      "A.V.3.c",
+      "A.V.4",
+      "A.V.5.a",
+      "A.V.5.b",
+      "A.V.5.c",
+      "A.V.5.d",
+      "A.VI.1.a",
+      "A.VI.1.b",
+      "A.VI.2.a",
+      "A.VI.2.b",
+      "A.VI.2.c",
+      "A.VI.3.a",
+      "A.VI.3.b",
+      "B.I.1",
+      "B.I.2",
+      "B.I.3",
+      "B.I.4.a",
+      "B.I.4.b",
+      "B.I.4.c",
+      "B.I.4.d",
+      "B.I.4.e",
+      "B.I.4.f",
+      "B.I.4.g",
+      "B.I.4.h",
+      "B.I.5",
+      "B.II.1.a",
+      "B.II.1.b",
+      "B.II.1.c",
+      "B.II.1.d",
+      "B.II.1.e",
+      "B.II.1.f",
+      "B.II.2.a",
+      "B.II.2.b",
+      "B.II.2.c",
+      "C.1",
+      "C.2",
+      "C.3",
+      "C.4.a",
+      "C.4.b",
+      "C.5.a",
+      "C.5.b",
+      "C.6",
+      "C.7",
+      "C.8",
+      "C.9",
+      "C.10.a",
+      "C.10.b",
+      "C.11.a",
+      "C.11.b",
+      "C.12",
+      "C.13"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "annexes_imposees": [],
+    "document_reponse_mentionne": null,
+    "repere_par_question": [
+      {
+        "question": "A.I.1.a",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Tache centrale et anneaux"
+      },
+      {
+        "question": "A.I.1.b",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Rayon de la tache"
+      },
+      {
+        "question": "A.I.2.a",
+        "page_pdf": 3,
+        "page_rapport": null,
+        "objet": "Ouverture du cône"
+      },
+      {
+        "question": "A.I.2.b",
+        "page_pdf": 3,
+        "page_rapport": null,
+        "objet": "Profil uniforme"
+      },
+      {
+        "question": "A.I.2.c",
+        "page_pdf": 3,
+        "page_rapport": null,
+        "objet": "Portée du modèle"
+      },
+      {
+        "question": "A.II.1",
+        "page_pdf": 3,
+        "page_rapport": 1,
+        "objet": "Synchronisme et cohérence"
+      },
+      {
+        "question": "A.II.2.a",
+        "page_pdf": 3,
+        "page_rapport": null,
+        "objet": "Distances des deux trous"
+      },
+      {
+        "question": "A.II.2.b",
+        "page_pdf": 4,
+        "page_rapport": null,
+        "objet": "Différence géométrique"
+      },
+      {
+        "question": "A.II.2.c",
+        "page_pdf": 4,
+        "page_rapport": null,
+        "objet": "Différence de chemin optique"
+      },
+      {
+        "question": "A.II.3",
+        "page_pdf": 4,
+        "page_rapport": null,
+        "objet": "Intensité d’interférence"
+      },
+      {
+        "question": "A.II.4",
+        "page_pdf": 4,
+        "page_rapport": null,
+        "objet": "Franges brillantes dans le disque"
+      },
+      {
+        "question": "A.II.5",
+        "page_pdf": 4,
+        "page_rapport": null,
+        "objet": "Nombre de franges"
+      },
+      {
+        "question": "A.III",
+        "page_pdf": 4,
+        "page_rapport": null,
+        "objet": "Lentille et différence de marche au foyer"
+      },
+      {
+        "question": "A.IV.1",
+        "page_pdf": 4,
+        "page_rapport": null,
+        "objet": "Deux cuves et différence de marche"
+      },
+      {
+        "question": "A.IV.2",
+        "page_pdf": 5,
+        "page_rapport": null,
+        "objet": "Interfrange avec les cuves"
+      },
+      {
+        "question": "A.IV.3.a",
+        "page_pdf": 5,
+        "page_rapport": null,
+        "objet": "Ordre au centre initial"
+      },
+      {
+        "question": "A.IV.3.b",
+        "page_pdf": 5,
+        "page_rapport": null,
+        "objet": "Sens du défilement"
+      },
+      {
+        "question": "A.IV.3.c",
+        "page_pdf": 5,
+        "page_rapport": null,
+        "objet": "Indice du gaz"
+      },
+      {
+        "question": "A.IV.3.d",
+        "page_pdf": 5,
+        "page_rapport": null,
+        "objet": "Chiffres significatifs"
+      },
+      {
+        "question": "A.V.1",
+        "page_pdf": 6,
+        "page_rapport": 1,
+        "objet": "Intensité du Michelson"
+      },
+      {
+        "question": "A.V.2",
+        "page_pdf": 6,
+        "page_rapport": 1,
+        "objet": "Signal du détecteur"
+      },
+      {
+        "question": "A.V.3.a",
+        "page_pdf": 6,
+        "page_rapport": null,
+        "objet": "Compteur et trajet monotone"
+      },
+      {
+        "question": "A.V.3.b",
+        "page_pdf": 6,
+        "page_rapport": null,
+        "objet": "Aller et retour"
+      },
+      {
+        "question": "A.V.3.c",
+        "page_pdf": 6,
+        "page_rapport": null,
+        "objet": "Grandeur accessible"
+      },
+      {
+        "question": "A.V.4",
+        "page_pdf": 6,
+        "page_rapport": null,
+        "objet": "Lame de retard en double passage"
+      },
+      {
+        "question": "A.V.5.a",
+        "page_pdf": 7,
+        "page_rapport": null,
+        "objet": "Câblage des multiplieurs"
+      },
+      {
+        "question": "A.V.5.b",
+        "page_pdf": 7,
+        "page_rapport": null,
+        "objet": "Sortie différentielle"
+      },
+      {
+        "question": "A.V.5.c",
+        "page_pdf": 7,
+        "page_rapport": null,
+        "objet": "Sortie intégrée"
+      },
+      {
+        "question": "A.V.5.d",
+        "page_pdf": 7,
+        "page_rapport": null,
+        "objet": "Intérêt des deux voies"
+      },
+      {
+        "question": "A.VI.1.a",
+        "page_pdf": 8,
+        "page_rapport": null,
+        "objet": "Transfert de l’intégrateur réel"
+      },
+      {
+        "question": "A.VI.1.b",
+        "page_pdf": 8,
+        "page_rapport": null,
+        "objet": "Asymptotes et gain"
+      },
+      {
+        "question": "A.VI.2.a",
+        "page_pdf": 8,
+        "page_rapport": null,
+        "objet": "Comportement à basse fréquence"
+      },
+      {
+        "question": "A.VI.2.b",
+        "page_pdf": 8,
+        "page_rapport": null,
+        "objet": "Comportement à haute fréquence"
+      },
+      {
+        "question": "A.VI.2.c",
+        "page_pdf": 8,
+        "page_rapport": null,
+        "objet": "Domaine intégrateur"
+      },
+      {
+        "question": "A.VI.3.a",
+        "page_pdf": 8,
+        "page_rapport": null,
+        "objet": "Impédance d’entrée"
+      },
+      {
+        "question": "A.VI.3.b",
+        "page_pdf": 8,
+        "page_rapport": null,
+        "objet": "Adaptation à la source"
+      },
+      {
+        "question": "B.I.1",
+        "page_pdf": 8,
+        "page_rapport": 1,
+        "objet": "Poids et force de Lorentz"
+      },
+      {
+        "question": "B.I.2",
+        "page_pdf": 8,
+        "page_rapport": null,
+        "objet": "Conservation de la vitesse"
+      },
+      {
+        "question": "B.I.3",
+        "page_pdf": 8,
+        "page_rapport": null,
+        "objet": "Vitesse initiale axiale"
+      },
+      {
+        "question": "B.I.4.a",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Système des vitesses transverses"
+      },
+      {
+        "question": "B.I.4.b",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Plan du mouvement"
+      },
+      {
+        "question": "B.I.4.c",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Vitesse complexe"
+      },
+      {
+        "question": "B.I.4.d",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Solution pour U"
+      },
+      {
+        "question": "B.I.4.e",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Position complexe"
+      },
+      {
+        "question": "B.I.4.f",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Coordonnées et rayon"
+      },
+      {
+        "question": "B.I.4.g",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Centre de la trajectoire"
+      },
+      {
+        "question": "B.I.4.h",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Orientation du cercle"
+      },
+      {
+        "question": "B.I.5",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Mouvement avec une composante axiale"
+      },
+      {
+        "question": "B.II.1.a",
+        "page_pdf": 9,
+        "page_rapport": null,
+        "objet": "Frottement linéaire"
+      },
+      {
+        "question": "B.II.1.b",
+        "page_pdf": 9,
+        "page_rapport": null,
+        "objet": "Constantes de l’exponentielle"
+      },
+      {
+        "question": "B.II.1.c",
+        "page_pdf": 9,
+        "page_rapport": null,
+        "objet": "Intégration du mouvement amorti"
+      },
+      {
+        "question": "B.II.1.d",
+        "page_pdf": 9,
+        "page_rapport": null,
+        "objet": "Limites à grand temps"
+      },
+      {
+        "question": "B.II.1.e",
+        "page_pdf": 9,
+        "page_rapport": null,
+        "objet": "Point limite de la spirale"
+      },
+      {
+        "question": "B.II.1.f",
+        "page_pdf": 9,
+        "page_rapport": null,
+        "objet": "Identification sur la photographie"
+      },
+      {
+        "question": "B.II.2.a",
+        "page_pdf": 10,
+        "page_rapport": null,
+        "objet": "Moment magnétique d’une boucle"
+      },
+      {
+        "question": "B.II.2.b",
+        "page_pdf": 10,
+        "page_rapport": null,
+        "objet": "Courant orbital moyen"
+      },
+      {
+        "question": "B.II.2.c",
+        "page_pdf": 10,
+        "page_rapport": null,
+        "objet": "Orientation du moment orbital"
+      },
+      {
+        "question": "C.1",
+        "page_pdf": 10,
+        "page_rapport": 1,
+        "objet": "Neutralité du plasma"
+      },
+      {
+        "question": "C.2",
+        "page_pdf": 10,
+        "page_rapport": null,
+        "objet": "Courant volumique"
+      },
+      {
+        "question": "C.3",
+        "page_pdf": 10,
+        "page_rapport": null,
+        "objet": "Champ magnétique de l’onde"
+      },
+      {
+        "question": "C.4.a",
+        "page_pdf": 10,
+        "page_rapport": null,
+        "objet": "Accélérations des deux espèces"
+      },
+      {
+        "question": "C.4.b",
+        "page_pdf": 11,
+        "page_rapport": null,
+        "objet": "Vitesses en régime forcé"
+      },
+      {
+        "question": "C.5.a",
+        "page_pdf": 11,
+        "page_rapport": null,
+        "objet": "Courant oscillant"
+      },
+      {
+        "question": "C.5.b",
+        "page_pdf": 11,
+        "page_rapport": null,
+        "objet": "Approximation électronique"
+      },
+      {
+        "question": "C.6",
+        "page_pdf": 11,
+        "page_rapport": null,
+        "objet": "Puissance locale"
+      },
+      {
+        "question": "C.7",
+        "page_pdf": 11,
+        "page_rapport": null,
+        "objet": "Relation de dispersion"
+      },
+      {
+        "question": "C.8",
+        "page_pdf": 11,
+        "page_rapport": null,
+        "objet": "Pulsation de coupure"
+      },
+      {
+        "question": "C.9",
+        "page_pdf": 11,
+        "page_rapport": null,
+        "objet": "Courbe de dispersion"
+      },
+      {
+        "question": "C.10.a",
+        "page_pdf": 11,
+        "page_rapport": null,
+        "objet": "Vitesse de phase"
+      },
+      {
+        "question": "C.10.b",
+        "page_pdf": 11,
+        "page_rapport": null,
+        "objet": "Qualification du milieu"
+      },
+      {
+        "question": "C.11.a",
+        "page_pdf": 11,
+        "page_rapport": null,
+        "objet": "Indice du plasma"
+      },
+      {
+        "question": "C.11.b",
+        "page_pdf": 11,
+        "page_rapport": null,
+        "objet": "Dérivée de l’indice"
+      },
+      {
+        "question": "C.12",
+        "page_pdf": 11,
+        "page_rapport": null,
+        "objet": "Mesure interférométrique de densité"
+      },
+      {
+        "question": "C.13",
+        "page_pdf": 11,
+        "page_rapport": null,
+        "objet": "Mesure de densité par réflexion"
+      }
+    ]
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_hist_1987",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture des 74 questions ou sous-questions et du rapport institutionnel, rédaction des solutions et indications, figures originales et vérifications indépendantes des calculs."
+    }
+  ]
+}

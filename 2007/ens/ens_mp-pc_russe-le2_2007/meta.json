@@ -1,0 +1,54 @@
+{
+  "slug": "ens_mp-pc_russe-le2_2007",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Russe (LE2)",
+    "annee": 2007,
+    "modalite": "écrit"
+  },
+  "intitule": "Un projet de vodka à bas prix et la prévention de l’alcoolisme",
+  "questions": 2,
+  "redaction": "Traduction intégrale en français et traitement des questions en russe. Un projet de vodka à bas prix et la prévention de l’alcoolisme.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2007/sujet-ecrit-2007-mp-pc_langue_etrangere_2.pdf#page=10",
+    "sha256_sujet": "5309bb7be121409229b9d682b83dc64317cd1725af428d833510660019c75b2c",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2007",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2007/sujet-ecrit-2007-mp-pc_langue_etrangere_2.pdf#page=10",
+        "sha256": "5309bb7be121409229b9d682b83dc64317cd1725af428d833510660019c75b2c"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I",
+      "fichier": "figures/lecture-de-la-version.svg",
+      "legende": "Du prix de vente aux effets redoutés par l’auteur"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "arabe_mp_pc_2011_2014",
+      "session": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Traduction intégrale en français et traitement des questions en russe. Un projet de vodka à bas prix et la prévention de l’alcoolisme."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I",
+      "II"
+    ]
+  }
+}

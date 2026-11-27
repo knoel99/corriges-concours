@@ -16,7 +16,14 @@
   },
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/2025_blses_epreuve_a_option_sujet_espagnol.pdf",
-    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_espagnol_ecrit_option.pdf"
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_espagnol_ecrit_option.pdf",
+    "sujet_sha256": "95c7c2903fa22fa64d2c0f628f004ea6ed99f2f2987937d826a711365c54929b",
+    "fascicule": "https://www.ens-lyon.fr/sites/default/files/2025-10/Sujets%20BLSES%20%C3%A9preuves%20optionnelles%202025.pdf",
+    "fascicule_sha256": "ad7d4877a638d78c47207dd017be3bc1db45f86ee0ce486f5f6b255d7030285b",
+    "pages_fascicule": [
+      27,
+      34
+    ]
   },
   "figures": [
     {
@@ -25,7 +32,7 @@
       "question": "Commentaire"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -36,6 +43,30 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Commentaire composé en espagnol des 4 documents du sujet officiel de six heures, guidage et schéma comparatif."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "fin_langues_x_interens",
+      "agent": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Le feuillet officiel demande un commentaire en six heures sur 4 documents. Les pages 27 à 34 du fascicule commun ENS Ulm et Lyon reproduisent le PDF individuel, garde incluse. Le commentaire complet des deux éditions rapproche le Memorial présenté par Maspons (1885), Prat de la Riba (1906), les Irmandades (1917) et le manifeste du PNV (1908). Lecture des compétences du Tribunal suprême et des juridictions régionales dans le programme galicien.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Analyse et commentaire du dossier en espagnol"
+    ],
+    "precision": "Le feuillet officiel demande un commentaire en six heures sur 4 documents. Les pages 27 à 34 du fascicule commun ENS Ulm et Lyon reproduisent le PDF individuel, garde incluse. Le commentaire complet des deux éditions rapproche le Memorial présenté par Maspons (1885), Prat de la Riba (1906), les Irmandades (1917) et le manifeste du PNV (1908)."
+  }
 }

@@ -1,0 +1,104 @@
+{
+  "slug": "ens-de-lyon_series-la-lv-sh-a-l_grec-oral_2015",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries LA/LV/SH (A/L)",
+    "matiere": "Grec (oral)",
+    "annee": 2015,
+    "modalite": "oral"
+  },
+  "intitule": "Euripide, Lysias, Homère et Plutarque : douze passages d’oral",
+  "questions": 12,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Euripide, Électre, vers 1062–1073",
+      "Lysias, Contre Ératosthène, §§ 17–20",
+      "Lysias, Contre Ératosthène, §§ 22–26",
+      "Lysias, Sur le meurtre d’Ératosthène, §§ 22–26",
+      "Lysias, Contre Ératosthène, §§ 6–12",
+      "Lysias, Contre Ératosthène, §§ 72–76",
+      "Homère, Odyssée XI, vers 541–567",
+      "Homère, Odyssée XI, vers 504–530",
+      "Homère, Odyssée XI, vers 180–205",
+      "Homère, Odyssée XI, vers 55–80",
+      "Homère, Odyssée XI, vers 404–434",
+      "Plutarque, Vie de Lycurgue, 15, 1–3"
+    ],
+    "precision": "Les douze références de la liste ont été confrontées aux éditions grecques. Le rapport oral, page 3, et le programme du concours datent et identifient le chant XI de l’Odyssée pour les cinq séries de vers que la liste imprime sans numéro de chant. Chaque passage possède une traduction et un commentaire dans les deux éditions. Les repères du § 26 de Lysias I et du vers 530 d’Homère respectent la coupe officielle."
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2024-07/grec_1442479739508.pdf",
+    "sujet_sha256": "a4f6b978f257eadd07d4bebbddcec4a4651f32c200eb85e0ff8099ed44cd0626",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2024-07/grec-2015_1446109360403.pdf",
+    "rapport_sha256": "76efd2d370a75936a35b1f7bd7371cec03c2a25bed4a025450e3cc10476a8aa2",
+    "programme": "https://www.ens-lyon.fr/sites/default/files/2024-07/programme-ens-de-lyon-session-2015_1441701018486.pdf",
+    "programme_sha256": "6038af343fc74b87a70958794a8d68a0de7843c03deb87a25a78ef0da3c23fdd",
+    "pages_sujet": "page 1 du fascicule, rapport oral, page 3 du PDF",
+    "textes_grecs": [
+      {
+        "oeuvre": "Électre",
+        "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0006/tlg012/tlg0006.tlg012.perseus-grc2.xml",
+        "sha256": "81624b4a16bf3b6555530bf84decaade62082edac17c102614438fea8cfed6d4"
+      },
+      {
+        "oeuvre": "Contre Ératosthène",
+        "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0540/tlg012/tlg0540.tlg012.perseus-grc2.xml",
+        "sha256": "fcfd84ec62ddb1ca15ac5e28fd4406f105f0c18bd50af9901a69d663a47d8067"
+      },
+      {
+        "oeuvre": "Sur le meurtre d’Ératosthène",
+        "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0540/tlg001/tlg0540.tlg001.perseus-grc2.xml",
+        "sha256": "d730eca2f85401bf962ccb38ac60bf1b1471e5452d4f115ec7abc61e6b565eb2"
+      },
+      {
+        "oeuvre": "Odyssée",
+        "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0012/tlg002/tlg0012.tlg002.perseus-grc2.xml",
+        "sha256": "7b13c553363bed18c86c5db3e350b9482b0ec5cab1ecf9f4d6de8438d6d96f6a"
+      },
+      {
+        "oeuvre": "Vie de Lycurgue",
+        "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0007/tlg004/tlg0007.tlg004.perseus-grc2.xml",
+        "sha256": "e19fa1fe43c789f14eee24f047c49e43a3ed59552b1d57e57dc05331b2ff823e"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Lysias",
+      "fichier": "figures/tribunal.svg",
+      "legende": "Dans son récit, son interrogatoire et son adresse aux juges, Lysias redistribue les places de parole."
+    },
+    {
+      "numero": 2,
+      "question": "Homère",
+      "fichier": "figures/chants.svg",
+      "legende": "Le chant XI confronte Ulysse à des demandes, à des récits et à un refus de parole."
+    },
+    {
+      "numero": 3,
+      "question": "Euripide et Plutarque",
+      "fichier": "figures/place.svg",
+      "legende": "La parole d’un personnage tragique et le récit moral d’un biographe engagent deux points de vue différents."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "fin_langues_x_interens",
+      "session": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Traduction française et commentaire des douze passages, indications grammaticales par tirage, deux relances transversales, trois schémas ; confrontation de la liste avec le rapport, le programme et les cinq œuvres grecques.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}

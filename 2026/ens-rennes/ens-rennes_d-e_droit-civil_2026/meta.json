@@ -23,8 +23,13 @@
     "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-droit-civil-d-e-2026_1793640809565-pdf",
     "rapport_sha256": "1f783994547e4cf8e0dfbc38a43dadc29575f0298c7a4f98ce955f3defad4508",
     "references": [
-      "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006070721/2026-04-14/"
-    ]
+      "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006070721/2026-04-14/",
+      "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006442372/2026-04-14"
+    ],
+    "notice_interens": "https://www.ens.psl.eu/sites/default/files/notice_interens_2026_mise_en_ligne_vf260212-1.pdf",
+    "notice_sha256": "760362eac89bd8b7cf6f17221aa2860bb445fd922564eee6645fe6d5aab7a885",
+    "sujet_exemplaire_lu_sha256": "8f53be618661f2bbdee981d2f19c91489f9296bac197eea03ca477f332b3b040",
+    "rapport_exemplaire_lu_sha256": "ff798a33c877f2c651532bc705808c660ee529dd13edcaf30e7ae2d339157c3f"
   },
   "figures": [
     {
@@ -33,7 +38,7 @@
       "legende": "Quel rôle la valeur joue-t-elle ?"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "lecture_rapport_jury",
@@ -70,6 +75,54 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Lecture visuelle de la page R 26-331, confrontation du libellé à l’énoncé et au rapport et vérification des dates d’évaluation, du seuil strict et des règles de restitution."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Confrontation au sujet et au rapport de droit civil. Calcul du seuil strict de la lésion immobilière en proportion de la valeur de référence, puis traduction algébrique dans le guidé."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "fui_physique_un",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Consigne unique et quatre axes : Évaluation du prix et liberté contractuelle, Erreur sur la valeur, qualités essentielles et contrepartie, Calcul de la lésion immobilière, délai, option et protection du majeur, Date et objet de l’évaluation dans les restitutions. Confrontation au sujet, aux sources de droit et au rapport institutionnel de l’écrit."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "precision": "La garde donne une composition unique de quatre heures. Les deux éditions traitent la totalité de cette consigne. Les axes de lecture décrivent la rédaction pédagogique.",
+    "questions_entierement_traitees": [
+      "Composition"
+    ],
+    "intitule_officiel": "La valeur en droit civil",
+    "pages_pdf_sujet": [
+      1
+    ],
+    "date_epreuve": "2026-04-14",
+    "items_verifies": [
+      "Évaluation du prix et liberté contractuelle",
+      "Erreur sur la valeur, qualités essentielles et contrepartie",
+      "Calcul de la lésion immobilière, délai, option et protection du majeur",
+      "Date et objet de l’évaluation dans les restitutions"
+    ]
+  }
 }

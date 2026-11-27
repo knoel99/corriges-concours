@@ -1,0 +1,63 @@
+{
+  "slug": "ens-rennes_d-e_italien_2020",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Italien",
+    "annee": 2020,
+    "modalite": "écrit"
+  },
+  "intitule": "Italien",
+  "questions": 4,
+  "redaction": "Deux traductions intégrales et deux réponses en italien de 232 et 239 mots. Jouets et égalité, accès à la profession d’avocat, distinctions entre les sources et les dangers pour la liberté de la presse, dilemmes d’une rédaction.",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-italien-d-e-2020_1601913639264-pdf",
+    "sujet_sha256": "786b4fad9670a9ec5fc7b50b5857d27c548aa10882af929834312771c0b628f7",
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2020-1",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lv-italien-d-e-2020_1604400164396-pdf",
+    "rapport_sha256": "f748bb660d03d318b40f07c70d5f55537a9940313fbf74365e6f160b0088411e"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "III.1",
+      "fichier": "figures/liberta-di-stampa.svg",
+      "legende": "Tre forme di pressione possono limitare le informazioni che arrivano ai lettori."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Le rapport distingue menaces physiques, harcèlement en ligne et ingérences politiques. Il recommande le conditionnel journalistique afin de situer les affirmations rapportées."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Deux traductions intégrales et deux réponses en italien de 232 et 239 mots. Jouets et égalité, accès à la profession d’avocat, distinctions entre les sources et les dangers pour la liberté de la presse, dilemmes d’une rédaction."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I. Version",
+      "II. Thème",
+      "III.1. Quali minacce peserebbero attualmente sulla libertà di stampa secondo il rapporto 2018 Demonishing The Media?",
+      "III.2. Quali sono, secondo te, i vantaggi e gli svantaggi della professione del giornalista?"
+    ]
+  }
+}

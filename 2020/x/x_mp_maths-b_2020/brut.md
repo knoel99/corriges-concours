@@ -2,7 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 Les trois parties étudient les grandes déviations des sommes de signes, la méthode de Laplace et la phase stationnaire. [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20MP%20SUJET%20ECRIT%20MATHEMATIQUES%20B%20%28X%29.pdf) · [Rapport du jury](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20MP%20RAPPORT%20ECRIT%20MATHEMATIQUES%20B%20%28X%29.pdf)
 
@@ -49,6 +51,13 @@ Pour $n>4/\varepsilon^2$, prenons $u_n=n^{-1}\log(1-4/(n\varepsilon^2))$, qui te
 ### Question 8b
 
 Pour $0<\varepsilon<1-t$, prenons $\lambda=\lambda_{t+\varepsilon}$ de 4. Alors $m(\lambda)-\varepsilon=t$. À $\varepsilon$ fixé, 8a donne pour la limite inférieure $\psi(\lambda)-\lambda(t+2\varepsilon)$. En faisant ensuite $\varepsilon\downarrow0$, la continuité de $\lambda_t$ donne le minorant $\psi(\lambda_t)-\lambda_t t$. La dérivée de $\psi(\lambda)-\lambda t$ est $\tanh\lambda-t$, négative puis positive autour de $\lambda_t$ (positive après zéro si $t=0$). Cette valeur est donc l’infimum de 3, qui majore la limite supérieure. La limite existe et vaut l’infimum annoncé.
+
+La valeur de l’infimum peut se lire directement en fonction du seuil. Avec $m(\lambda_t)=t$ et $\cosh\lambda_t=(1-t^2)^{-1/2}$, le résultat devient
+$$
+\lim_{n\to\infty}\frac1n\log\mathbb P(S_n\ge t)
+=-\frac{(1+t)\log(1+t)+(1-t)\log(1-t)}{2}.
+$$
+Cette expression vaut zéro pour $t=0$, conformément à Q2 ; sa limite pour $t\uparrow1$ est $-\log 2$.
 
 ### Question 8c
 
@@ -106,6 +115,13 @@ $$-\frac1t[A\cos(tf)]_{x_0}^1+\frac1t\int_{x_0}^1 A'\cos(tf)dx=O(1/t).$$
 
 La seule unicité imprimée sur $[0,1[$ laisse une possibilité supplémentaire. Le point terminal peut aussi être stationnaire. Prenons $x_0=0$, $f(x)=\sin^2(\pi x/2)$ et $g(x)=\sin(\pi x/2)$. L’intégrale avec $g$ devient, par $v=\cos(\pi x/2)$, $(2/\pi)\int_0^1\sin(t(1-v^2))dv$. Pour $t=2\pi n$, elle est équivalente à $-\sqrt{2\pi}/(2\pi\sqrt t)$ par la valeur de Fresnel admise. Comme $g(0)=0$, la conclusion serait fausse sous cette seule hypothèse.
 
+Le rôle du bord apparaît dans le contre-exemple pour tout grand $t$. Avec le même changement de variable, puis $w=\sqrt t\,v$, l’intégrale vaut
+$$
+\frac{2}{\pi\sqrt t}\operatorname{Im}\!\left(e^{it}\int_0^{\sqrt t}e^{-iw^2}\,dw\right)
+=\frac{\sin(t-\pi/4)}{\sqrt{\pi t}}+O(t^{-1}).
+$$
+La borne de queue de Q15 justifie le reste. Cette contribution d’ordre $t^{-1/2}$ vient du bord $x=1$, où $f'(1)=0$.
+
 ### Question 18a
 
 Par $f''(x_0)>0$, $f'(x)>0$ immédiatement à droite de $x_0$. Comme $f'$ est continue et ne s’annule pas dans $]x_0,1[$, elle y reste strictement positive. Ainsi $f$ croît strictement jusqu’à $1$ inclus. La fonction $h=\sqrt{f-f(x_0)}$ est continue, strictement croissante et a pour images extrêmes zéro et $h(1)>0$. Le théorème des valeurs intermédiaires donne la bijection.
@@ -121,7 +137,7 @@ $$\int_0^L e^{itu^2}du=\frac1{\sqrt t}\int_0^{L\sqrt t}e^{iv^2}dv
 =\frac{\sqrt\pi}{2\sqrt t}e^{i\pi/4}+O(t^{-1}).$$
 Multipliant par $e^{ita}H'(0)$ puis prenant la partie imaginaire, on trouve $\sin(ta+\pi/4)\sqrt{\pi/(2tf''(x_0))}+O(t^{-1})$.
 
-![Figure 1 — Pour la phase quadratique, la zone centrale où les oscillations se compensent peu a une largeur proportionnelle à la racine inverse du paramètre.](figures/zone-stationnaire.svg)
+![Figure 1 — Le tracé représente cos(32x²). La zone entre −1/√32 et 1/√32 correspond à une variation de phase d’au plus un radian ; sa largeur est 2/√32.](figures/zone-stationnaire.svg)
 
 ### Question 20
 

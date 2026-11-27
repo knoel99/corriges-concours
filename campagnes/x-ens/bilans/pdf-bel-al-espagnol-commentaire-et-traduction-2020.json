@@ -1,0 +1,188 @@
+{
+  "slug": "bel_al_espagnol-commentaire-et-traduction_2020",
+  "commit_export": "d4cb9e587eb8b6e58b8626f07ecf53f2bde14b04",
+  "arbre_git": "f5ad193ce63a2fe0b7130d773755b3de569ba253",
+  "archive": "BEL-AL-espagnol-commentaire-et-traduction-2020.zip",
+  "agent": "lva_pt_2325",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2020-09/2020%20Commentaire%20d%27un%20texte%20en%20LVE%20et%20traduction.pdf#page=8",
+    "sha256_sujet": "38b8795aae8773ed81ebd843f2436a126f190f44a6a853ee15d561be36f8c269",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2020-11/ESPAGNOL_2020%20internet.pdf#page=1",
+    "sha256_rapport_jury": "c4065ed9c5291ee79b75e3afb09ff191432b161f18cf35abbf9a2a8ab7c61adf",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2020",
+    "pages_sujet": [
+      1,
+      8,
+      9
+    ],
+    "pages_rapport_commun": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "fin_rubrique_rapport": "La rubrique commune se termine sur la page 8 avant le thème de spécialité."
+  },
+  "exercices": [
+    {
+      "question": "Commentaire en espagnol",
+      "pages_pdf": [
+        8,
+        9
+      ],
+      "lignes": [
+        1,
+        78
+      ]
+    },
+    {
+      "question": "Version française",
+      "pages_pdf": [
+        8,
+        9
+      ],
+      "lignes": [
+        32,
+        49
+      ],
+      "premiers_mots": "Los dos se quedaron en silencio",
+      "derniers_mots": "pudiera haber decidido morirse."
+    }
+  ],
+  "editions": {
+    "brut": {
+      "pages": 2,
+      "blocs_compares": {
+        "commentaire_espagnol": {
+          "pages": [
+            1,
+            2
+          ],
+          "lettres_chiffres": 3572,
+          "mots": 737,
+          "paragraphes": 6,
+          "empreinte_normalisee": "5c35d172d619861189a7c8e4e4fd54e8040bfe850cbb961270a7038bb53a5d55"
+        },
+        "version_francaise": {
+          "pages": [
+            2
+          ],
+          "lettres_chiffres": 1285,
+          "mots": 301,
+          "paragraphes": 6,
+          "empreinte_normalisee": "0f20dcfe3b5e01d00687836a0253fe96f49e1f280c47b8b71179430ae46baffc"
+        }
+      },
+      "signets": [
+        {
+          "titre": "Commentaire en espagnol",
+          "page": 1,
+          "ecart_points": 6.8
+        },
+        {
+          "titre": "Version française",
+          "page": 2,
+          "ecart_points": 9.1
+        }
+      ],
+      "figures": [
+        {
+          "question": "Commentaire en espagnol",
+          "fichier": "figures/lecture.svg",
+          "legende": "Ce que Villa entend et ce qu’il ne peut entendre",
+          "page": 2,
+          "sha256_svg": "67d7aa85566d694915f2246d178bbb951c9b103a7d07dd9f14d3cb36b5a9408c",
+          "sha256_forme_pdf": "4abb3ed88d200178654181ede972a04f0132ebdb80012edf741a73aa669d9ada"
+        }
+      ],
+      "liens_sources": [
+        "https://www.ens-lyon.fr/sites/default/files/2020-09/2020%20Commentaire%20d%27un%20texte%20en%20LVE%20et%20traduction.pdf#page=8",
+        "https://www.ens-lyon.fr/sites/default/files/2020-11/ESPAGNOL_2020%20internet.pdf#page=1"
+      ],
+      "signatures_sur_premiere_page": [
+        "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+        "**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+      ],
+      "diagnostic_latex_propre": true,
+      "sha256_markdown": "1aa40862351c47a9857832834c4a12660afdef51446e55740606b2bd2134871f",
+      "sha256_pdf": "87fa298eb0d587cb3ef3ed20b6785a3d87eda5ad796018af9d0ab623e1e2fda7"
+    },
+    "guide": {
+      "pages": 3,
+      "blocs_compares": {
+        "commentaire_espagnol": {
+          "pages": [
+            1,
+            2
+          ],
+          "lettres_chiffres": 3572,
+          "mots": 737,
+          "paragraphes": 6,
+          "empreinte_normalisee": "5c35d172d619861189a7c8e4e4fd54e8040bfe850cbb961270a7038bb53a5d55"
+        },
+        "version_francaise": {
+          "pages": [
+            2,
+            3
+          ],
+          "lettres_chiffres": 1285,
+          "mots": 301,
+          "paragraphes": 6,
+          "empreinte_normalisee": "0f20dcfe3b5e01d00687836a0253fe96f49e1f280c47b8b71179430ae46baffc"
+        }
+      },
+      "signets": [
+        {
+          "titre": "Préparer la lecture",
+          "page": 1,
+          "ecart_points": 6.8
+        },
+        {
+          "titre": "Commentaire en espagnol",
+          "page": 1,
+          "ecart_points": 9.1
+        },
+        {
+          "titre": "Version française",
+          "page": 2,
+          "ecart_points": 6.8
+        }
+      ],
+      "figures": [
+        {
+          "question": "Commentaire en espagnol",
+          "fichier": "figures/lecture.svg",
+          "legende": "Ce que Villa entend et ce qu’il ne peut entendre",
+          "page": 1,
+          "sha256_svg": "67d7aa85566d694915f2246d178bbb951c9b103a7d07dd9f14d3cb36b5a9408c",
+          "sha256_forme_pdf": "4abb3ed88d200178654181ede972a04f0132ebdb80012edf741a73aa669d9ada"
+        }
+      ],
+      "liens_sources": [
+        "https://www.ens-lyon.fr/sites/default/files/2020-09/2020%20Commentaire%20d%27un%20texte%20en%20LVE%20et%20traduction.pdf#page=8",
+        "https://www.ens-lyon.fr/sites/default/files/2020-11/ESPAGNOL_2020%20internet.pdf#page=1"
+      ],
+      "signatures_sur_premiere_page": [
+        "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+        "**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+      ],
+      "diagnostic_latex_propre": true,
+      "sha256_markdown": "c81a27ec4f557aab7da7dab18260c776634e464bc1278e2a219df70a78bbb899",
+      "sha256_pdf": "408f493cc1d11dbc050767f67b50dab7eb15e77a84a5b4b33aca2f13a98c235a"
+    }
+  },
+  "sha256_contenus": {
+    "guide.md": "c81a27ec4f557aab7da7dab18260c776634e464bc1278e2a219df70a78bbb899",
+    "brut.md": "1aa40862351c47a9857832834c4a12660afdef51446e55740606b2bd2134871f",
+    "meta.json": "db630360e7584127c8de427e2bc8929c8e5dc27238f33c1288eba050c367bd7e",
+    "journal-revision.json": "afc84c4514192e0ffc2713714cc460d902cd176b225ef865b43c5d22add03d05",
+    "figures/lecture.svg": "67d7aa85566d694915f2246d178bbb951c9b103a7d07dd9f14d3cb36b5a9408c",
+    "brut.pdf": "87fa298eb0d587cb3ef3ed20b6785a3d87eda5ad796018af9d0ab623e1e2fda7",
+    "guide.pdf": "408f493cc1d11dbc050767f67b50dab7eb15e77a84a5b4b33aca2f13a98c235a"
+  },
+  "sha256_archive": "2eb879dcff6d3812eb5fd89a4fc0aab940c0a7d3736fc87b206636668a984cf6"
+}

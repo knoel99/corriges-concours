@@ -1,0 +1,528 @@
+{
+  "slug": "banque-pt_pt_informatique-et-modelisation_2024",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Informatique et modélisation",
+    "annee": 2024,
+    "modalite": "écrit"
+  },
+  "questions": 53,
+  "duree_heures": 4,
+  "redaction": "Corrigé original rédigé par IA, non officiel.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2024/info_mod_2024_pt.pdf",
+    "sujet_sha256": "4f2ad86f960b997334cfae90e57b8bd73f49d6496e8fb4fd70e08889645a4fad",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2024/rapport_info_model_ecrit_2024.pdf",
+    "rapport_jury_sha256": "53a89360a22065c585966648e72008d14782c47d3365bb812f25786a0fd01b28",
+    "index_annuel": "https://www.banquept.fr/spip.php?article158",
+    "annexes": "Diagramme et extraits incorporés. Une seule pièce dans la cellule annuelle du sujet ; aucun des dix-huit TXT référencés n’y est associé."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2024/info_mod_2024_pt.pdf",
+      "sha256": "4f2ad86f960b997334cfae90e57b8bd73f49d6496e8fb4fd70e08889645a4fad",
+      "pages": 24,
+      "pieces_jointes": [],
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "ec76394e3b9043cdce92683e5b16e66f4615824b0721ddc7ff887694af340348"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "0f9dc20303f4ebaf482e6d8b3c93c31bde1638228a298d676a94718b2ea7aeeb"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "630b65f770f151850f09dfbc29195b6184352223a2070b089fdf08834504eee8"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "42587f316b3d2660257cc39d83fcb2d5badc1dd08e93c913648c920b0ddb5fca"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "233473fca2aef45a0be1b1ab34fbfcbac64d37bcfaccccd736331a4c5c73a873"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "ae363a6c6ef496937f010a766167cdeb686111ddc81bece51cce8f8732373528"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "e0aacb32758a9f40f110dda39120e6186b4c939ecb2bb64af7412d845cc6dded"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "3e67a9067257505c99a030c323d80895e2a57eb359660bac92b41ed942d1a62d"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "a09bd3c5f78562a599a150fbecb552317de9457ad44c430a04e97d66d576323b"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "f5316f6cd19086ba396c5fcb365fcc4b4f8ec4284b85b786e1e09834be08934d"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "4c796a72293fe754c27b8bf52ba9d67b2b46e29f7889083db36f9d9b4ca8760e"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "25317ae3faf7abd1a25b0980839c9b0c246a8371d99d7a0df937af266951f42c"
+        },
+        {
+          "numero": 13,
+          "rendu_sha256": "52bc548753f5aa2bb86d427df12339be93b78cba5713d23af4ee505ec357ed17"
+        },
+        {
+          "numero": 14,
+          "rendu_sha256": "f3bfe4f3f33baee5eb8ce596945d05ebb21127a3d7a4e9aa139a8eabbb282508"
+        },
+        {
+          "numero": 15,
+          "rendu_sha256": "f148ca34ae1f3a45106abb6e66443ebc28ec8df8f75e290feef0ad423ef08486"
+        },
+        {
+          "numero": 16,
+          "rendu_sha256": "1fac2923a5cd80f1d10b89adc2f71b25c49c8d2fee546cde697b53c3266dd935"
+        },
+        {
+          "numero": 17,
+          "rendu_sha256": "e7757ef30c747774e66848148814e275f74faa0a553b2a806943a8a3b7a91e8a"
+        },
+        {
+          "numero": 18,
+          "rendu_sha256": "fcbd513f96676fdfee3eba65d8772d22421b05fbe944f1c49953997eff6f60ca"
+        },
+        {
+          "numero": 19,
+          "rendu_sha256": "5e67889630f5a369eafc5809d87bb802cd1ba0e7d107d49d019f3f31d48efb55"
+        },
+        {
+          "numero": 20,
+          "rendu_sha256": "7d7f05f9922ce355bde07036a4f32a55ea78d57e884abba68509b7d8a368f71e"
+        },
+        {
+          "numero": 21,
+          "rendu_sha256": "f27497b8e1f84edd0f0f1e938bb96ec484eb29ca5083dea0df86b3f1d77bc2b2"
+        },
+        {
+          "numero": 22,
+          "rendu_sha256": "f27497b8e1f84edd0f0f1e938bb96ec484eb29ca5083dea0df86b3f1d77bc2b2"
+        },
+        {
+          "numero": 23,
+          "rendu_sha256": "f27497b8e1f84edd0f0f1e938bb96ec484eb29ca5083dea0df86b3f1d77bc2b2"
+        },
+        {
+          "numero": 24,
+          "rendu_sha256": "ab76f4c6db8f88d910396dd94e4c3b9a9c71d071a8c5f7d58d0a4c4700cb5d48"
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2024/rapport_info_model_ecrit_2024.pdf",
+      "sha256": "53a89360a22065c585966648e72008d14782c47d3365bb812f25786a0fd01b28",
+      "pages": 3,
+      "pieces_jointes": [],
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "551cb973a8fa14e5aa35a17968ee9abfe9b14c79be6fb29cb249bb72f1f90edf"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "712d4deba24f0d2d50ca982fae518fd196461eb43b54537150e9922485f9b019"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "559944eb0610ecd81ba423ef6438a2bb95b1a82687ca0240f7706e5746ea7a7a"
+        }
+      ]
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Résolution des 53 questions, rédaction de deux éditions, programmes Python, indications et trois schémas originaux."
+    },
+    {
+      "phase": "revision",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture avec le fascicule et les trois pages du jury, lecture du diagramme vérifiée sur R404A, traitement des bornes, vérification numérique et révision de la présentation des algorithmes."
+    }
+  ],
+  "figures": [
+    {
+      "question": "Q14",
+      "numero": 1,
+      "fichier": "figures/cycle.svg",
+      "legende": "Cycle du R404A reconstruit à partir des états lus. Les flèches suivent le fluide de A à B, C, D puis A."
+    },
+    {
+      "question": "Q21",
+      "numero": 2,
+      "fichier": "figures/ailette.svg",
+      "legende": "Profil réduit de l’ailette longue. À trois longueurs caractéristiques, il reste environ 5 % de l’écart au pied."
+    },
+    {
+      "question": "Q27",
+      "numero": 3,
+      "fichier": "figures/implantation.svg",
+      "legende": "Exemple de répartition dans dix mètres sur cinq. Les marges verticales changent avec le décalage des colonnes."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21",
+      "Q22",
+      "Q23",
+      "Q24",
+      "Q25",
+      "Q26",
+      "Q27",
+      "Q28",
+      "Q29",
+      "Q30",
+      "Q31",
+      "Q32",
+      "Q33",
+      "Q34",
+      "Q35",
+      "Q36",
+      "Q37",
+      "Q38",
+      "Q39",
+      "Q40",
+      "Q41",
+      "Q42",
+      "Q43",
+      "Q44",
+      "Q45",
+      "Q46",
+      "Q47",
+      "Q48",
+      "Q49",
+      "Q50",
+      "Q51",
+      "Q52",
+      "Q53"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Q1",
+        "page_pdf": 2,
+        "titre": "Énergie et entropie sur un cycle"
+      },
+      {
+        "question": "Q2",
+        "page_pdf": 2,
+        "titre": "Signes des échanges"
+      },
+      {
+        "question": "Q3",
+        "page_pdf": 2,
+        "titre": "Possibilité d'un climatiseur monotherme"
+      },
+      {
+        "question": "Q4",
+        "page_pdf": 2,
+        "titre": "Deux thermostats"
+      },
+      {
+        "question": "Q5",
+        "page_pdf": 2,
+        "titre": "Chaleur prélevée dans la pièce"
+      },
+      {
+        "question": "Q6",
+        "page_pdf": 2,
+        "titre": "Travail du compresseur"
+      },
+      {
+        "question": "Q7",
+        "page_pdf": 2,
+        "titre": "Efficacité d'un cycle réversible"
+      },
+      {
+        "question": "Q8",
+        "page_pdf": 2,
+        "titre": "Effet de la température extérieure"
+      },
+      {
+        "question": "Q9",
+        "page_pdf": 4,
+        "titre": "Sortie de l'évaporateur"
+      },
+      {
+        "question": "Q10",
+        "page_pdf": 4,
+        "titre": "Compression réversible et adiabatique"
+      },
+      {
+        "question": "Q11",
+        "page_pdf": 4,
+        "titre": "Travail mécanique massique"
+      },
+      {
+        "question": "Q12",
+        "page_pdf": 4,
+        "titre": "Sortie du condenseur"
+      },
+      {
+        "question": "Q13",
+        "page_pdf": 4,
+        "titre": "Détente"
+      },
+      {
+        "question": "Q14",
+        "page_pdf": 4,
+        "titre": "Sortie du détendeur"
+      },
+      {
+        "question": "Q15",
+        "page_pdf": 4,
+        "titre": "Chaleur massique reçue à l'évaporateur"
+      },
+      {
+        "question": "Q16",
+        "page_pdf": 4,
+        "titre": "Efficacité réelle"
+      },
+      {
+        "question": "Q17",
+        "page_pdf": 4,
+        "titre": "Comparaison à la borne réversible"
+      },
+      {
+        "question": "Q18",
+        "page_pdf": 4,
+        "titre": "Bilan d'une tranche d'ailette"
+      },
+      {
+        "question": "Q19",
+        "page_pdf": 4,
+        "titre": "Longueur caractéristique"
+      },
+      {
+        "question": "Q20",
+        "page_pdf": 5,
+        "titre": "Solution générale et ailette longue"
+      },
+      {
+        "question": "Q21",
+        "page_pdf": 5,
+        "titre": "Profil de température"
+      },
+      {
+        "question": "Q22",
+        "page_pdf": 5,
+        "titre": "Puissance évacuée"
+      },
+      {
+        "question": "Q23",
+        "page_pdf": 8,
+        "titre": "Volume de la salle"
+      },
+      {
+        "question": "Q24",
+        "page_pdf": 8,
+        "titre": "Nombre nécessaire de groupes"
+      },
+      {
+        "question": "Q25",
+        "page_pdf": 8,
+        "titre": "Bilan des largeurs et des intervalles"
+      },
+      {
+        "question": "Q26",
+        "page_pdf": 9,
+        "titre": "Initialisation sur une seule ligne"
+      },
+      {
+        "question": "Q27",
+        "page_pdf": 9,
+        "titre": "Boucle de répartition"
+      },
+      {
+        "question": "Q28",
+        "page_pdf": 11,
+        "titre": "Convertir les virgules décimales"
+      },
+      {
+        "question": "Q29",
+        "page_pdf": 13,
+        "titre": "Lire les quatre colonnes"
+      },
+      {
+        "question": "Q30",
+        "page_pdf": 13,
+        "titre": "Rendre les séries accessibles par leur nom"
+      },
+      {
+        "question": "Q31",
+        "page_pdf": 13,
+        "titre": "Accéder à l'essai 1"
+      },
+      {
+        "question": "Q32",
+        "page_pdf": 13,
+        "titre": "Tracer la vitesse mesurée"
+      },
+      {
+        "question": "Q33",
+        "page_pdf": 14,
+        "titre": "Moyenne sur un intervalle d'indices"
+      },
+      {
+        "question": "Q34",
+        "page_pdf": 14,
+        "titre": "Point de fonctionnement d'un essai"
+      },
+      {
+        "question": "Q35",
+        "page_pdf": 14,
+        "titre": "Parcourir les dix-huit essais"
+      },
+      {
+        "question": "Q36",
+        "page_pdf": 15,
+        "titre": "Apprentissage supervisé"
+      },
+      {
+        "question": "Q37",
+        "page_pdf": 15,
+        "titre": "Régression linéaire multiple"
+      },
+      {
+        "question": "Q38",
+        "page_pdf": 16,
+        "titre": "Matrice de régression"
+      },
+      {
+        "question": "Q39",
+        "page_pdf": 16,
+        "titre": "Prédictions"
+      },
+      {
+        "question": "Q40",
+        "page_pdf": 16,
+        "titre": "Coût scalaire"
+      },
+      {
+        "question": "Q41",
+        "page_pdf": 16,
+        "titre": "Écriture matricielle"
+      },
+      {
+        "question": "Q42",
+        "page_pdf": 16,
+        "titre": "Fonction de coût"
+      },
+      {
+        "question": "Q43",
+        "page_pdf": 16,
+        "titre": "Dérivées partielles"
+      },
+      {
+        "question": "Q44",
+        "page_pdf": 17,
+        "titre": "Vecteur gradient"
+      },
+      {
+        "question": "Q45",
+        "page_pdf": 17,
+        "titre": "Calcul du gradient"
+      },
+      {
+        "question": "Q46",
+        "page_pdf": 17,
+        "titre": "Itérations de descente"
+      },
+      {
+        "question": "Q47",
+        "page_pdf": 18,
+        "titre": "Courbe du couple résistant"
+      },
+      {
+        "question": "Q48",
+        "page_pdf": 19,
+        "titre": "Équilibre par dichotomie"
+      },
+      {
+        "question": "Q49",
+        "page_pdf": 19,
+        "titre": "Équation dynamique"
+      },
+      {
+        "question": "Q50",
+        "page_pdf": 19,
+        "titre": "Différence avant"
+      },
+      {
+        "question": "Q51",
+        "page_pdf": 19,
+        "titre": "Mise à jour explicite"
+      },
+      {
+        "question": "Q52",
+        "page_pdf": 20,
+        "titre": "Intégrateur d'Euler"
+      },
+      {
+        "question": "Q53",
+        "page_pdf": 20,
+        "titre": "Temps de réponse et régime permanent"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

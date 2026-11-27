@@ -1,0 +1,68 @@
+{
+  "slug": "ens_mp-pc_allemand-lv1_2005",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Allemand (LV1)",
+    "annee": 2005,
+    "modalite": "écrit"
+  },
+  "intitule": "Les promesses de l’éolien en mer du Nord",
+  "questions": 3,
+  "redaction": "Version intégrale en français et traitement de toutes les questions en allemand, avec lecture guidée du passage.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2005/sujet-2005-ecrit-mp_pc_langue_vivante_1.pdf#page=2",
+    "sha256_sujet": "a7214e3b3ce73c3c9c3bfa7b6f9b4314d76e219f9a58a8f2f510bd3dc15cd6cb",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2005",
+    "ecoles": "ENS de Paris, de Lyon et de Cachan",
+    "reference_des_textes": "D’après Die Zeit du 6 mai 2004.",
+    "page_version": "2",
+    "code_garde": "ULC 527",
+    "pages_sujet": "2",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2005/rapport-2005-pc_ecrit_langue_vivante_1_allemand.pdf",
+    "sha256_rapport_jury": "99a893d153c802339b568024e43ecf3ac89b74a0be3812d7f7de5192a9a6af3f",
+    "pages_rapport_jury": "1–2"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Version",
+      "fichier": "figures/vent-et-exploitation.svg",
+      "legende": "Ce que change le passage de la terre ferme à la haute mer."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "S. Alloyer et E. Chevrel ont corrigé 64 copies de MP et 47 de PC. Le rapport traite la version et les deux réponses."
+    },
+    {
+      "phase": "redaction",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et traitement de toutes les questions en allemand, avec lecture guidée du passage."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version",
+      "Q1",
+      "Q2"
+    ]
+  }
+}

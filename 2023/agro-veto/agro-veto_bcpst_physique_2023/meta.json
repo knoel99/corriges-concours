@@ -1,0 +1,120 @@
+{
+  "slug": "agro-veto_bcpst_physique_2023",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "Physique",
+    "annee": 2023
+  },
+  "questions": 39,
+  "intitule": "La glace dans la nature",
+  "redaction": "Les 39 questions dans leurs deux éditions. Reconstruction géométrique de la déviation, exploitation des relevés de masse et de vitesse, calcul de l'incertitude, bilans de quantité de mouvement et d'enthalpie sur des systèmes fermés. Distinction entre déviation algébrique et module dans le signe imprimé à la question 9. Coefficient X BCPST de 2 en 2023.",
+  "sources": {
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/abcpst_sp_0823_physique.pdf",
+    "sujet_sha256": "edfa75330a498848ab6f362685ade9b4210a7102ec6fd61942c03370e976b455",
+    "rapport_jury": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/rapport_de_jury_epreuve_physique_bcpst_2023_v3_le1.pdf",
+    "rapport_sha256": "b215e9b658401bb5807fc52d74c834134639bf16c26f8235d294e8b5d4e1f184"
+  },
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture de l'énoncé institutionnel de 13 pages et du rapport, avec inspection de la figure 4 pour les sens de rotation, des figures 7 et 9 pour les lectures graphiques et du programme imprimé page 9 pour la propagation des incertitudes."
+    },
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions brute et guidée. Les 39 questions dans leurs deux éditions. Reconstruction géométrique de la déviation, exploitation des relevés de masse et de vitesse, calcul de l'incertitude, bilans de quantité de mouvement et d'enthalpie sur des systèmes fermés. Distinction entre déviation algébrique et module dans le signe imprimé à la question 9. Coefficient X BCPST de 2 en 2023."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "9",
+      "fichier": "figures/trajet-dans-le-prisme.svg",
+      "legende": "Configuration symétrique. La sortie tourne dans le sens horaire. La droite grise est parallèle au rayon incident."
+    },
+    {
+      "numero": 2,
+      "question": "12",
+      "fichier": "figures/minimum-du-halo.svg",
+      "legende": "Les orientations voisines du minimum envoient leurs rayons dans une bande étroite autour de 22°. Indice de calcul 1,31."
+    },
+    {
+      "numero": 3,
+      "question": "18",
+      "fichier": "figures/glace-flottante.svg",
+      "legende": "En eau douce, le glaçon flottant déplace dès le départ exactement le volume d’eau liquide qu’il formera."
+    },
+    {
+      "numero": 4,
+      "question": "34",
+      "fichier": "figures/equilibre-des-phases.svg",
+      "legende": "Diagramme schématique de l’eau près de la glace ordinaire. Y est le point triple, C le point critique et E un équilibre glace–eau."
+    },
+    {
+      "numero": 5,
+      "question": "38",
+      "fichier": "figures/pression-dans-les-canaux.svg",
+      "legende": "À distance égale de la sortie, la pression est plus élevée dans le conduit de plus petit rayon."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39"
+    ]
+  }
+}

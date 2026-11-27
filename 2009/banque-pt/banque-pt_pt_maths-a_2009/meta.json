@@ -1,0 +1,200 @@
+{
+  "slug": "banque-pt_pt_maths-a_2009",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths A",
+    "annee": 2009
+  },
+  "questions": 27,
+  "redaction": "Corrigés non officiels rédigés et vérifiés par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2009/math_a_2009.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2009/rapport_math_a_ecrit_2009.pdf",
+    "index_sujets": "https://www.banquept.fr/article51.html",
+    "index_rapports": "https://www.banquept.fr/article55.html",
+    "livret": "https://www.banquept.fr/documents/livret/2009/Livret_PT_2009.pdf#page=12",
+    "sha256_sujet": "122c88379781dc57347ccda1cd18b66dde6d4baccb5156bdab627c4db692dd45",
+    "pages_sujet": 4,
+    "sha256_rapport_jury": "472632f90816ab1d0c9b3b04cc304d5d1ba405cca31bb4fa04f2ae371fb8272c",
+    "pages_rapport_jury": 2,
+    "sha256_livret": "a3c1cf502cc1a8772e9b488ffec97dba9f6ce8298fb91e23dd0cf6ea2d5e75b9",
+    "pages_livret": 71,
+    "coefficients_admissibilite": {
+      "ENS Cachan": 3,
+      "École polytechnique": 6
+    }
+  },
+  "figures": [
+    {
+      "question": "A.1.b",
+      "fichier": "figures/projection-oblique.svg",
+      "legende": "Dans le plan des coordonnées, l’image de u = (1,0) se trouve en projetant sur la droite image parallèlement au noyau."
+    },
+    {
+      "question": "D.3.c",
+      "fichier": "figures/ajustement-quadratique.svg",
+      "legende": "Les quatre observations du sujet, le cubique qui les interpole et la parabole des moindres carrés. Les segments verticaux représentent les résidus."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A.1.a",
+      "A.1.b",
+      "A.2",
+      "A.3",
+      "A.4",
+      "A.5.a",
+      "A.5.b",
+      "A.5.c",
+      "A.6.a",
+      "A.6.b",
+      "B.1",
+      "B.2",
+      "B.3",
+      "B.4",
+      "B.5",
+      "C.1",
+      "C.2",
+      "C.3",
+      "C.4",
+      "C.5.a",
+      "C.5.b",
+      "D.1",
+      "D.2.a",
+      "D.2.b",
+      "D.3.a",
+      "D.3.b",
+      "D.3.c"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": "A.1.a",
+        "page_sujet": 1
+      },
+      {
+        "question": "A.1.b",
+        "page_sujet": 1
+      },
+      {
+        "question": "A.2",
+        "page_sujet": 1
+      },
+      {
+        "question": "A.3",
+        "page_sujet": 2
+      },
+      {
+        "question": "A.4",
+        "page_sujet": 2
+      },
+      {
+        "question": "A.5.a",
+        "page_sujet": 2
+      },
+      {
+        "question": "A.5.b",
+        "page_sujet": 2
+      },
+      {
+        "question": "A.5.c",
+        "page_sujet": 2
+      },
+      {
+        "question": "A.6.a",
+        "page_sujet": 2
+      },
+      {
+        "question": "A.6.b",
+        "page_sujet": 2
+      },
+      {
+        "question": "B.1",
+        "page_sujet": 2
+      },
+      {
+        "question": "B.2",
+        "page_sujet": 2
+      },
+      {
+        "question": "B.3",
+        "page_sujet": 2
+      },
+      {
+        "question": "B.4",
+        "page_sujet": 2
+      },
+      {
+        "question": "B.5",
+        "page_sujet": 2
+      },
+      {
+        "question": "C.1",
+        "page_sujet": 3
+      },
+      {
+        "question": "C.2",
+        "page_sujet": 3
+      },
+      {
+        "question": "C.3",
+        "page_sujet": 3
+      },
+      {
+        "question": "C.4",
+        "page_sujet": 3
+      },
+      {
+        "question": "C.5.a",
+        "page_sujet": 3
+      },
+      {
+        "question": "C.5.b",
+        "page_sujet": 3
+      },
+      {
+        "question": "D.1",
+        "page_sujet": 3
+      },
+      {
+        "question": "D.2.a",
+        "page_sujet": 3
+      },
+      {
+        "question": "D.2.b",
+        "page_sujet": 3
+      },
+      {
+        "question": "D.3.a",
+        "page_sujet": 4
+      },
+      {
+        "question": "D.3.b",
+        "page_sujet": 4
+      },
+      {
+        "question": "D.3.c",
+        "page_sujet": 4
+      }
+    ],
+    "precision": "Questions et sous-questions des quatre parties, sur les quatre feuillets imprimés, avec les valeurs numériques de la partie D et le tracé des quatre observations."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modifications": true,
+      "perimetre": "Résolution de toutes les questions des quatre feuillets. Contrôle exact de l’idempotence, des noyaux et de l’image des projections, des six moments, de la base orthonormale, du cubique interpolateur, des résidus et du minimum des moindres carrés."
+    }
+  ]
+}

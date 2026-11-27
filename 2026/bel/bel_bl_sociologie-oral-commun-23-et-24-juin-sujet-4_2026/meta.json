@@ -55,6 +55,84 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Confrontation au dossier original et au rapport du jury. Contrôle des valeurs reportées, des champs, des dénominateurs et des limites de l’interprétation."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture croisée du dossier et du rapport de l’oral commun de sociologie 2026. Document 4a de VertPom, contraste de 32,3 points et discussion de la mesure rétrospective par questionnaire. Figure interprétée dans la copie et calcul ou question de méthode développé dans le guidé."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Les entretiens sur les usages domestiques ont été mis en relation avec les tableaux d’attention aux consommations, les achats alimentaires, les usages de la voiture et le renoncement à l’achat numérique. Les pourcentages de ligne du document automobile ont été distingués de la fréquence d’une pratique dans un groupe social.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Sobriété et classes sociales"
+    ],
+    "annexes_verifiees": [
+      {
+        "document": 1,
+        "page": 2,
+        "intitule": "Sobriété populaire traditionnelle et abondance"
+      },
+      {
+        "document": 2,
+        "page": 3,
+        "intitule": "« C’est pas Versailles » versus « J’allume toutes les lumières ! »"
+      },
+      {
+        "document": 3,
+        "page": 4,
+        "intitule": "Rémy Caveng et Sylvain Thine"
+      },
+      {
+        "document": 4,
+        "page": 5,
+        "intitule": "Faire attention"
+      },
+      {
+        "document": 5,
+        "page": 6,
+        "intitule": "més, viande bovine, volailles, charcuterie, lait et produits laitiers frais). Autre explication possible, ils utilisent moins de plats préparés. La consommation en sucre est plus élevée que dans d’autres catégories. Les graisses végétales, comme l’huile et la margarine, sont davantage consommées par les ouvriers, et les graisses animales par les professions intermédiaires."
+      },
+      {
+        "document": 6,
+        "page": 7,
+        "intitule": "Les usages de la voiture selon le niveau d’études et le lieu de résidence (en % de ligne)"
+      },
+      {
+        "document": 7,
+        "page": 8,
+        "intitule": "Réponses à la question « au cours des 12 derniers mois, avez-vous renoncé à l’achat d’un appareil numérique ? » (en % de ligne) Renoncement à l’achat d’appareils numériques pour diverses raisons"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "verification": "Les entretiens sur les usages domestiques ont été mis en relation avec les tableaux d’attention aux consommations, les achats alimentaires, les usages de la voiture et le renoncement à l’achat numérique. Les pourcentages de ligne du document automobile ont été distingués de la fréquence d’une pratique dans un groupe social.",
+    "limites": "Un exposé sur les sept documents. Les relances pédagogiques proposées dans le guide ne constituent pas un verbatim du jury."
+  }
 }

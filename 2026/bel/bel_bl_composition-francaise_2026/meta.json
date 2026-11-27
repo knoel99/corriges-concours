@@ -4,9 +4,10 @@
     "concours": "BEL",
     "filiere": "BL",
     "matiere": "Composition française",
-    "annee": 2026
+    "annee": 2026,
+    "modalite": "écrit commun"
   },
-  "questions": 0,
+  "questions": 1,
   "gabarit": "dissertation",
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
   "modele": {
@@ -36,7 +37,7 @@
       "legende": "Pourquoi deux lettres dans Incendies ?"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "revision": {
     "date": "2026-11-24",
     "modele": "Codex (GPT-6)",
@@ -104,6 +105,134 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Confrontation des éditions à la formulation de Mouawad, aux exemples de Sarraute, Perec et Hugo. Précision de lecture sur le double sens de la ligne droite et l’itinéraire chez Hugo."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Mouawad, deux destinataires dans une même personne et portée du dispositif épistolaire."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Vérification du libellé institutionnel corrigé p. 3, de l’erratum p. 1 et des quatre rubriques du rapport B/L. Analyse des vers 2 et 11–12 de Hugo, contrôle de la double adresse dans Incendies et du rôle du lecteur. Rétablissement des figures dans le brut."
     }
-  ]
+  ],
+  "duree_heures": 6,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_tronc_commun_francais.pdf#page=3",
+      "sha256": "138c111ef34e439678bd31659b711f307a4ee8a68e5ccea65024a0a6f94dfe42",
+      "pages": 14,
+      "pages_verifiees": [
+        {
+          "numero": 3,
+          "rendu_sha256": "53eea5152f23f30c4e80fdccbf268b15b6eea38561fe1aff647e8b8ed6648e1a"
+        }
+      ],
+      "nature": "Intitulé officiel corrigé reproduit par le jury, p. 3. Erratum p. 1. Le lien du feuillet séparé indiqué par l’ENS renvoyait HTTP 404 le 26 novembre 2026.",
+      "url_feuillet_separe": "https://www.ens.psl.eu/sites/default/files/bl_com_francais.pdf"
+    },
+    "rapport_jury": {
+      "url": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_tronc_commun_francais.pdf",
+      "sha256": "138c111ef34e439678bd31659b711f307a4ee8a68e5ccea65024a0a6f94dfe42",
+      "pages": 14,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "0027033d26d5cf8dec5e2dec2afe83bfa17ea29f4f20d279b91499591193ea47"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "77be435b86d3e637a3ff6925f463988850e3a7590307884682d873a780cf4137"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "53eea5152f23f30c4e80fdccbf268b15b6eea38561fe1aff647e8b8ed6648e1a"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "0b4e47b2760a5d993c6b681cb133dc9d8284abc5e67f39a31672aa97cd1eb657"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "c4d732dac4fff2cf0b53913ec9b76639cca1f213b358198cf2c06348104b1550"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "70b6e4db99591298c757b108212723304a05438528004d7bd6dbfce3ba0f6595"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "13e19d130cd773b803b105b44336e487dcbe7ffe8f58265eb88fa35c975a601b"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "3fafd04f33d748ecbd27666af9090aeaad681a7fbf912df2d3d821770b45ee83"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "a5feb22ada96b03113060ef0a68c906dec929bbc6f88db56d39d5ddd4baa06e6"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "d6b4318b002a852332008300374fcc302868b422fb936e6e15c1cc0357350cdd"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "c9033f6d04f97f62f7945b9fb6697a3a2e6d5c5aa574feeb6f3ed01d76ded4bc"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "118ade47919730979894486ed01c81f7bc4430169fe5cbfabecd9587f56bef57"
+        },
+        {
+          "numero": 13,
+          "rendu_sha256": "9e1b88d3df814bb5362e0de689d1d54006cd200b5e8c26041c9039ac2ad23cd3"
+        },
+        {
+          "numero": 14,
+          "rendu_sha256": "de47f54cdd4d0e3a2ddc751fbaf0b8bb0eb2fb9cfaa6614ec2c091486107f613"
+        }
+      ],
+      "rubriques": "Erratum, p. 1. I. L’esprit de l’épreuve. Conseils généraux, p. 1–3. II. L’intitulé du sujet, p. 3–4. III. Analyse du sujet et problématique, p. 4–8. IV. Plan et démonstration, p. 8–14."
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Composition française"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Composition française",
+        "page_pdf": 3,
+        "citation": "Jamais aucune intelligence artificielle ne saura saisir l’idée de ce que peut être ce tremblement d’où surgissent les mots dans une imperfection qui traduit le tremblement. Ce n’est pas la perfection qui est précieuse, mais la sincérité de nos imprécisions. C’est d’elles que naissent nos visions. Jamais un tremblement ne saura tracer une ligne droite et c’est cette impossibilité qui rend l’écriture si nécessaire.",
+        "reference": "Wajdi Mouawad, Jusqu’au bord de son ravin. Les verbes de l’écriture, Paris, Seuil, 2025, p. 104.",
+        "consigne": "Vous discuterez cette citation en vous fondant sur des exemples précis.",
+        "perimetre": "Examen du pronostic sur l’IA, du tremblement, du rapport entre sincérité et forme travaillée, puis de la vision offerte au lecteur."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
 }

@@ -39,5 +39,38 @@
       "modifications": true,
       "perimetre": "Rédaction des 19 questions sur la coloration. Lecture du sujet, des figures et du rapport. Deux figures originales. Exécution des programmes de chaque édition et contrôle du 2-coloriage, des deux ordres de Petersen, des sous-graphes et des garanties de Wigderson."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19"
+    ],
+    "precision": "Les 19 questions numérotées ont été retrouvées dans le sujet institutionnel et les deux éditions. Chaque réponse correspond au texte signé à la révision citée dans le journal.",
+    "origine_attestation": {
+      "commit_du_journal": "503fb5746a67603d9006bb688243ea2e5e7ac1d1",
+      "phase": "redaction",
+      "date": "2026-11-24",
+      "perimetre": "Rédaction des 19 questions sur la coloration. Lecture du sujet, des figures et du rapport. Deux figures originales. Exécution des programmes de chaque édition et contrôle du 2-coloriage, des deux ordres de Petersen, des sous-graphes et des garanties de Wigderson.",
+      "sha256_sujet_controle": "1645788707219ae1681d9b594b27543afc0648590f947e86546a1debbea63af7",
+      "sha256_rapport_controle": "82a410b1faec5e6c0778a90f9e9af4b0b61f31657eacc0d20362f325ece0f390"
+    }
+  }
 }

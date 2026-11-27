@@ -1,0 +1,78 @@
+{
+  "slug": "bel_bl_italien_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Italien",
+    "intitule": "Analyse et commentaire de textes ou documents en italien",
+    "annee": 2024,
+    "modalite": "écrit",
+    "duree": "6 heures"
+  },
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2024_blses_sujet_analyse_commentaire_italien.pdf",
+    "sha256_sujet": "dff1147b8aad20bcbae96338048f426e875182d0bbc4d108f4490262cabe4828",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_ecrit_italien.pdf",
+    "sha256_rapport": "08b7ffbfa3807f69823a8ed96fd0be1ff4c4ca9f70e97b09cb134cbc60bcc5da"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "date": "2026-11-26",
+      "agent": "fui_physique_un",
+      "fournisseur": "codex",
+      "perimetre": "Analisi e commento in italiano dei sei documenti delle cinque pagine PDF, dei cambi di medium e della cronologia interna della tavola di Zerocalcare. Lecture visuelle des fac-similés et consultation du rapport 2024 propre à la discipline."
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Analyse et commentaire de textes ou documents en italien"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Analisi e commento in italiano dei sei documenti delle cinque pagine PDF, dei cambi di medium e della cronologia interna della tavola di Zerocalcare.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "auteur_ou_titre": "Figure e responsabilità dell’intellettuale in Italia",
+      "passages_ou_documents": [
+        "Documento 1",
+        "Documento 2",
+        "Documento 3",
+        "Documento 4",
+        "Documento 5",
+        "Documento 6"
+      ],
+      "pages_pdf_par_passage_ou_document": {
+        "Documento 1": "1",
+        "Documento 2": "2",
+        "Documento 3": "3",
+        "Documento 4": "3–4",
+        "Documento 5": "4–5",
+        "Documento 6": "5"
+      },
+      "repères_imprimés": [
+        "Documento 1",
+        "Documento 2",
+        "Documento 3",
+        "Documento 4",
+        "Documento 5",
+        "Documento 6"
+      ]
+    }
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Analyse et commentaire de textes ou documents en italien",
+      "legende": "Tre modi di rendere conto al pubblico della propria presa di parola."
+    }
+  ]
+}

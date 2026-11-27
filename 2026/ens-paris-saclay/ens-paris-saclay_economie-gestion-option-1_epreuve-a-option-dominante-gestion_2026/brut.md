@@ -6,6 +6,12 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+**Couverture vérifiée.** Les quinze réponses ont été rapprochées des huit annexes. Les imputations ABC, les cinq écritures de clôture et les ratios ont été recalculés. Les deux planches du bilan ont été lues directement, y compris la ligne des concours bancaires. Les réponses de management distinguent les faits propres à Pluvier des exemples de l’article sur les autres marques.
+
 ## Maison Pluvier : coûts, inventaire, financement et transmission
 
 ### Dossier 1. Gestion financière et comptable
@@ -35,6 +41,10 @@ Le tissu, le fil et le kit représentent 41 références communes, chacune imput
 | Résultat / chiffre d’affaires HT | **−3,53 %** | **15,46 %** |
 
 **2. Résultat et profitabilité.** Le chiffre d’affaires HT est la quantité vendue multipliée par le prix TTC divisé par 1,20. Le résultat est la différence entre ce chiffre d’affaires et le coût complet. Les résultats du tableau totalisent 393 210,00 € pour les deux modèles. La Demoiselle absorbe près des neuf dixièmes du budget marketing, alors que le Pébroque dégage la totalité du bénéfice global et couvre la perte de l’autre gamme.
+
+La différence unitaire se calcule avant arrondi. Pour la Demoiselle, le résultat de −132 539,34 euros réparti sur 18 000 pièces donne une perte de 7,36 euros par pièce. Soustraire seulement les deux montants unitaires déjà arrondis, 208,33 et 215,70, ferait apparaître un centime supplémentaire de perte. Pour le Pébroque, le résultat de 525 749,34 euros sur 12 000 pièces représente 43,81 euros par pièce.
+
+![Figure 1 — Du prix de vente au résultat unitaire](figures/marges-pluvier.svg)
 
 **3. Intérêt et limites d’ABC.** Une clé fondée seulement sur les heures de couture attribuerait les dépenses de campagnes et de personnalisation dans des proportions sans rapport avec les observations. ABC rattache les consommations de ressources aux activités puis les activités aux produits. Cela suggère de réexaminer le ciblage des campagnes de la Demoiselle et de tester un tarif de broderie. Les clés du kit, de la formation et des livraisons communes demeurent conventionnelles. Supprimer la Demoiselle ne ferait pas économiser immédiatement la moitié du coût de formation. Une décision d’abandon doit être fondée sur les charges évitables, les effets sur les autres ventes et la capacité libérée.
 
@@ -72,6 +82,8 @@ La détention de longue durée sans intervention dans la gestion relève ici des
 | Capitaux propres / total du bilan | 51,38 % | 48,09 % |
 
 En 2024, 1 005 974 + 622 742 − 1 139 406 donnent 489 310 € de fonds de roulement. Le recul du besoin s’explique notamment par la baisse des créances clients et la montée des dettes fournisseurs, en dépit du stock accru de matières. La trésorerie redevient positive. L’endettement progresse plus vite que les capitaux propres et la CAF, même si une année environ de CAF égale encore la dette stable. L’affectation intégrale de la CAF au remboursement demeure une hypothèse de calcul.
+
+Un second calcul isole le besoin financier dans les postes circulants, en euros. En 2023, l’actif circulant hors disponibilités vaut 735 075 − 6 513 = 728 562. Au passif, les dettes hors emprunts valent 878 738 − 272 076 − 161 684 = 444 978. Le besoin atteint donc 283 584. En 2024, les mêmes opérations donnent 952 567 − 243 960 = 708 607 et 1 086 000 − 463 399 − 159 343 = 463 258, soit un besoin de 245 349. L’écart d’un euro avec les 245 350 obtenus par le fonds de roulement et la trésorerie provient des totaux imprimés. À l’actif 2024, 1 139 406 + 952 567 donnent 2 091 973, alors que le total général publié est de 2 091 974. Les deux calculs confirment une diminution du besoin d’environ 38 235 euros.
 
 **10. Tout financer par augmentation de capital.** Une souscription en numéraire apporte des ressources durables sans échéance d’intérêts ni remboursement contractuel, améliore la faculté d’emprunt ultérieure et partage le risque du lancement. La famille doit cependant mobiliser ses propres fonds ou accepter la dilution du contrôle et des dividendes futurs. Les délais, frais d’émission et exigences de rémunération des apporteurs doivent entrer dans la comparaison.
 

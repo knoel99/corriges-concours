@@ -1,0 +1,58 @@
+{
+  "slug": "bel_bl_economie-oral-option-20-juin-billet-2_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Économie (oral option) — 20 juin, billet 2",
+    "annee": 2024,
+    "modalite": "oral"
+  },
+  "intitule": "Gouvernance mondiale / Externalités",
+  "questions": 0,
+  "sujets": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/bl_sujets_oraux_economie_opt_2_20062024.pdf",
+    "sujet_sha256": "e6b0a4386ed042b8ca3b4d1ee66ccc5b65912bde529624cecf3e9b65b95a7cd7",
+    "sujet_pages": 1,
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_oral_economie_option.pdf",
+    "rapport_sha256": "1188b9bfbccbf94221a7f7843295c02806da3b81dc7c98550348e0d0dc57ac89",
+    "calendrier": "https://www.ens.psl.eu/sujets-des-epreuves-orales-du-concours-bl-session-2024"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Deux leçons indépendantes, les mécanismes, calculs et questions d’entretien confrontés au billet et au rapport.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
+    }
+  ],
+  "figures": [
+    {
+      "fichier": "figures/raisonnement-au-tableau.svg",
+      "legende": "Le dommage marginal de 15 ramène la quantité efficace de 60 à 50 unités.",
+      "question": "Sujet 2"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "sujets_entierement_traites": [
+      "Gouvernance mondiale",
+      "Externalités"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "redaction",
+      "sha256_sujet_controle": "e6b0a4386ed042b8ca3b4d1ee66ccc5b65912bde529624cecf3e9b65b95a7cd7",
+      "perimetre": "Deux leçons indépendantes, les mécanismes, calculs et questions d’entretien confrontés au billet et au rapport."
+    }
+  }
+}

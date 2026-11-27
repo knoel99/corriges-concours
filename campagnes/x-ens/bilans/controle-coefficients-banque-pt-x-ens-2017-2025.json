@@ -1,0 +1,1240 @@
+{
+  "titre": "Rattachement des sujets écrits de Banque PT à l’École polytechnique, à l’ENS Paris-Saclay et à l’ENS Rennes, sessions 2017 à 2025",
+  "agent": "x_maths_b_recentes",
+  "modele": "gpt-6.2-astra",
+  "effort": "ultra",
+  "date_du_controle": "2026-11-26",
+  "sommaire": {
+    "lignes": 126,
+    "retenues": 102,
+    "exclues": 24,
+    "PDF": 119,
+    "ZIP": 7,
+    "PDF_internes_aux_ZIP": 34
+  },
+  "index_officiels": {
+    "notices": "https://www.banquept.fr/rubrique1.html",
+    "sujets": "https://www.banquept.fr/article158.html",
+    "rapports": "https://www.banquept.fr/article154.html"
+  },
+  "regles": [
+    "Chaque ligne correspond à un document d’épreuve répertorié par la Banque PT pour sa session. Dans les matrices, les cellules vides sont conservées. Le total à droite a été contrôlé hors coefficients marqués d’un astérisque.",
+    "Dans les notices ordinaires, l’astérisque signifie « épreuve comptant pour l’admission ». Le français A de l’X est facultatif pour les candidats étrangers (page du livret référencée dans le TSV).",
+    "Le coefficient 2 de Physique B s’applique une seule fois dans la somme de chaque ENS. Les fichiers Chimie et Thermodynamique portent des gardes distinctes et correspondent chacun à deux heures au calendrier. La répétition du nombre dans le TSV permet d’identifier le rattachement des deux documents.",
+    "Le tableau spécial 2020 p. 1 et le livret 2020 p. 12 donnent les mêmes valeurs, sauf la case de langue vivante A de l’X : le livret y imprime un astérisque seul, le tableau spécial imprime 6*. Le livret p. 29 précise que cette épreuve de l’X intervient à l’admission. La langue et le français B interviennent dans le total des ENS en 2020. La communication du 12 juin de l’ENS Paris-Saclay précise leur prise en compte dès l’admissibilité.",
+    "Le nombre de pages concerne le sujet effectivement ouvert. Les SHA-256 des sujets portent exclusivement sur des fichiers intégraux. Les gros PDF lus par plages HTTP ont un décompte et une garde vérifiés par lecture de leur structure PDF. Pour chaque ZIP, le contrôle CRC porte sur tous ses membres et les PDF de travail ont chacun été ouverts. Les métadonnées de système de fichiers éventuellement incluses sont également nommées dans la liste des membres.",
+    "Le sujet d’informatique et modélisation 2019 est un fac-similé de 25 pages. Le titre et la durée ont été lus sur l’image de sa première page."
+  ],
+  "fichiers": {
+    "table": "coefficients-banque-pt-x-ens-2017-2025.tsv",
+    "sha256_table": "852a6e7484e796c61e15b05fe186d1cbb47175bf98a554a44cd011be2dc1155b",
+    "inventaire": "annales-ecrites-banque-pt-2017-2025.tsv",
+    "sha256_inventaire": "67a9f04bdf1c7513d2dfbc7a557f5acd64fa7576107310df6a40dfbc3f9edfbc"
+  },
+  "sessions": {
+    "2017": {
+      "lignes": 14,
+      "rattachees": 11,
+      "ecoles": {
+        "X": 7,
+        "ENS Paris-Saclay": 10,
+        "ENS Rennes": 10
+      },
+      "exclues": [
+        "banque-pt_pt_maths-b_2017",
+        "banque-pt_pt_sciences-industrielles-b_2017",
+        "banque-pt_pt_langue-vivante-b_2017"
+      ],
+      "notices": [
+        {
+          "nom": "2017.pdf",
+          "source": "https://www.banquept.fr/documents/livret/2017/Livret_PT_2017.pdf",
+          "page": 12,
+          "sha256": "1394eaaed446366dd92559cf578f8d521cdd65d6dd125906febc0cbdc627e5a3",
+          "colonnes": [
+            "Math A",
+            "Math B",
+            "Math C",
+            "Phy A",
+            "Phy B",
+            "Modélisation",
+            "Franç A",
+            "Franç B",
+            "LV A",
+            "LV B",
+            "Sc Ind A",
+            "Sc Ind B",
+            "Sc Ind C",
+            "Total"
+          ],
+          "coefficients": {
+            "Paris-Saclay": [
+              "3",
+              "",
+              "3",
+              "3",
+              "2",
+              "2",
+              "",
+              "4*",
+              "1*",
+              "",
+              "4",
+              "",
+              "6",
+              "23"
+            ],
+            "Rennes": [
+              "3",
+              "",
+              "3",
+              "3",
+              "2",
+              "2",
+              "",
+              "4*",
+              "1*",
+              "",
+              "4",
+              "",
+              "6",
+              "23"
+            ],
+            "X": [
+              "6",
+              "",
+              "6",
+              "6",
+              "",
+              "4",
+              "4",
+              "",
+              "6*",
+              "",
+              "",
+              "",
+              "10",
+              "36"
+            ]
+          },
+          "renvoi_asterisque_pages": [
+            12
+          ]
+        }
+      ]
+    },
+    "2018": {
+      "lignes": 14,
+      "rattachees": 11,
+      "ecoles": {
+        "X": 7,
+        "ENS Paris-Saclay": 10,
+        "ENS Rennes": 10
+      },
+      "exclues": [
+        "banque-pt_pt_maths-b_2018",
+        "banque-pt_pt_sciences-industrielles-b_2018",
+        "banque-pt_pt_langue-vivante-b_2018"
+      ],
+      "notices": [
+        {
+          "nom": "2018.pdf",
+          "source": "https://www.banquept.fr/documents/livret/2018/Livret_PT_2018.pdf",
+          "page": 12,
+          "sha256": "074f6cb1f105a67da4afcbc0b1f0746fb294077f31f1f0f23d60a14f24a26457",
+          "colonnes": [
+            "Math A",
+            "Math B",
+            "Math C",
+            "Phy A",
+            "Phy B",
+            "Modélisation",
+            "Franç A",
+            "Franç B",
+            "LV A",
+            "LV B",
+            "Sc Ind A",
+            "Sc Ind B",
+            "Sc Ind C",
+            "Total"
+          ],
+          "coefficients": {
+            "Paris-Saclay": [
+              "3",
+              "",
+              "3",
+              "3",
+              "2",
+              "2",
+              "",
+              "4*",
+              "1*",
+              "",
+              "4",
+              "",
+              "6",
+              "23"
+            ],
+            "Rennes": [
+              "3",
+              "",
+              "3",
+              "3",
+              "2",
+              "2",
+              "",
+              "4*",
+              "1*",
+              "",
+              "4",
+              "",
+              "6",
+              "23"
+            ],
+            "X": [
+              "6",
+              "",
+              "6",
+              "6",
+              "",
+              "4",
+              "4",
+              "",
+              "6*",
+              "",
+              "",
+              "",
+              "10",
+              "36"
+            ]
+          },
+          "renvoi_asterisque_pages": [
+            12
+          ]
+        }
+      ]
+    },
+    "2019": {
+      "lignes": 14,
+      "rattachees": 11,
+      "ecoles": {
+        "X": 7,
+        "ENS Paris-Saclay": 10,
+        "ENS Rennes": 10
+      },
+      "exclues": [
+        "banque-pt_pt_maths-b_2019",
+        "banque-pt_pt_sciences-industrielles-b_2019",
+        "banque-pt_pt_langue-vivante-b_2019"
+      ],
+      "notices": [
+        {
+          "nom": "2019.pdf",
+          "source": "https://www.banquept.fr/documents/livret/2019/Livret_PT_2019.pdf",
+          "page": 12,
+          "sha256": "5e9e9802e7a767f8bf21f41392351aced28769ba62375db0bc111044780779c7",
+          "colonnes": [
+            "Math A",
+            "Math B",
+            "Math C",
+            "Phy A",
+            "Phy B",
+            "Modélisation",
+            "Franç A",
+            "Franç B",
+            "LV A",
+            "LV B",
+            "Sc Ind A",
+            "Sc Ind B",
+            "Sc Ind C",
+            "Total"
+          ],
+          "coefficients": {
+            "Paris-Saclay": [
+              "3",
+              "",
+              "3",
+              "3",
+              "2",
+              "2",
+              "",
+              "4*",
+              "1*",
+              "",
+              "4",
+              "",
+              "6",
+              "23"
+            ],
+            "Rennes": [
+              "3",
+              "",
+              "3",
+              "3",
+              "2",
+              "2",
+              "",
+              "4*",
+              "1*",
+              "",
+              "4",
+              "",
+              "6",
+              "23"
+            ],
+            "X": [
+              "6",
+              "",
+              "6",
+              "6",
+              "",
+              "4",
+              "4",
+              "",
+              "6*",
+              "",
+              "",
+              "",
+              "10",
+              "36"
+            ]
+          },
+          "renvoi_asterisque_pages": [
+            12
+          ]
+        }
+      ]
+    },
+    "2020": {
+      "lignes": 14,
+      "rattachees": 11,
+      "ecoles": {
+        "X": 7,
+        "ENS Paris-Saclay": 10,
+        "ENS Rennes": 10
+      },
+      "exclues": [
+        "banque-pt_pt_maths-b_2020",
+        "banque-pt_pt_sciences-industrielles-b_2020",
+        "banque-pt_pt_langue-vivante-b_2020"
+      ],
+      "notices": [
+        {
+          "nom": "2020.pdf",
+          "source": "https://www.banquept.fr/documents/livret/2020/Livret_PT_2020.pdf",
+          "page": 12,
+          "sha256": "0daf92c1426246b6c90e25d3d4f59a9fe385cd7837e554f92013d004f3df3554",
+          "colonnes": [
+            "Math A",
+            "Math B",
+            "Math C",
+            "Phy A",
+            "Phy B",
+            "Modélisation",
+            "Franç A",
+            "Franç B",
+            "LV A",
+            "LV B",
+            "Sc Ind A",
+            "Sc Ind B",
+            "Sc Ind C",
+            "Total"
+          ],
+          "coefficients": {
+            "Paris-Saclay": [
+              "3",
+              "",
+              "3",
+              "3",
+              "2",
+              "2",
+              "",
+              "4",
+              "2",
+              "",
+              "4",
+              "",
+              "6",
+              "29"
+            ],
+            "Rennes": [
+              "3",
+              "",
+              "3",
+              "3",
+              "2",
+              "2",
+              "",
+              "4",
+              "1",
+              "",
+              "4",
+              "",
+              "6",
+              "28"
+            ],
+            "X": [
+              "6",
+              "",
+              "6",
+              "6",
+              "",
+              "4",
+              "4",
+              "",
+              "*",
+              "",
+              "",
+              "",
+              "10",
+              "36"
+            ]
+          },
+          "renvoi_asterisque_pages": []
+        },
+        {
+          "nom": "2020-session-speciale.pdf",
+          "source": "https://www.banquept.fr/documents/2020/Coefficients.pdf",
+          "page": 1,
+          "sha256": "99f9f38058da96520bff50e823cf189f307e2129dbb0091faded2da6a315c1b1",
+          "colonnes": [
+            "Math A",
+            "Math B",
+            "Math C",
+            "Phy A",
+            "Phy B",
+            "Modélisation",
+            "Franç A",
+            "Franç B",
+            "LV A",
+            "LV B",
+            "Sc Ind A",
+            "Sc Ind B",
+            "Sc Ind C",
+            "Total"
+          ],
+          "coefficients": {
+            "Paris-Saclay": [
+              "3",
+              "",
+              "3",
+              "3",
+              "2",
+              "2",
+              "",
+              "4",
+              "2",
+              "",
+              "4",
+              "",
+              "6",
+              "29"
+            ],
+            "Rennes": [
+              "3",
+              "",
+              "3",
+              "3",
+              "2",
+              "2",
+              "",
+              "4",
+              "1",
+              "",
+              "4",
+              "",
+              "6",
+              "28"
+            ],
+            "X": [
+              "6",
+              "",
+              "6",
+              "6",
+              "",
+              "4",
+              "4",
+              "",
+              "6*",
+              "",
+              "",
+              "",
+              "10",
+              "36"
+            ]
+          },
+          "renvoi_asterisque_pages": []
+        }
+      ]
+    },
+    "2021": {
+      "lignes": 14,
+      "rattachees": 11,
+      "ecoles": {
+        "X": 7,
+        "ENS Paris-Saclay": 10,
+        "ENS Rennes": 10
+      },
+      "exclues": [
+        "banque-pt_pt_maths-b_2021",
+        "banque-pt_pt_sciences-industrielles-b_2021",
+        "banque-pt_pt_langue-vivante-b_2021"
+      ],
+      "notices": [
+        {
+          "nom": "2021.pdf",
+          "source": "https://www.banquept.fr/documents/livret/2021/Livret_PT_2021.pdf",
+          "page": 13,
+          "sha256": "a95299a81ad019b05252f6f59dae7737025e8fa6e195ff13a8be7f950737103e",
+          "colonnes": [
+            "Math A",
+            "Math B",
+            "Math C",
+            "Phy A",
+            "Phy B",
+            "Modélisation",
+            "Franç A",
+            "Franç B",
+            "LV A",
+            "LV B",
+            "Sc Ind A",
+            "Sc Ind B",
+            "Sc Ind C",
+            "Total"
+          ],
+          "coefficients": {
+            "Paris-Saclay": [
+              "3",
+              "",
+              "3",
+              "3",
+              "2",
+              "2",
+              "",
+              "4*",
+              "1*",
+              "",
+              "4",
+              "",
+              "6",
+              "23"
+            ],
+            "Rennes": [
+              "3",
+              "",
+              "3",
+              "3",
+              "2",
+              "2",
+              "",
+              "4*",
+              "1*",
+              "",
+              "4",
+              "",
+              "6",
+              "23"
+            ],
+            "X": [
+              "6",
+              "",
+              "6",
+              "6",
+              "",
+              "4",
+              "4",
+              "",
+              "6*",
+              "",
+              "",
+              "",
+              "10",
+              "36"
+            ]
+          },
+          "renvoi_asterisque_pages": [
+            13
+          ]
+        }
+      ]
+    },
+    "2022": {
+      "lignes": 14,
+      "rattachees": 11,
+      "ecoles": {
+        "X": 7,
+        "ENS Paris-Saclay": 10,
+        "ENS Rennes": 10
+      },
+      "exclues": [
+        "banque-pt_pt_maths-b_2022",
+        "banque-pt_pt_sciences-industrielles-b_2022",
+        "banque-pt_pt_langue-vivante-b_2022"
+      ],
+      "notices": [
+        {
+          "nom": "2022.pdf",
+          "source": "https://www.banquept.fr/documents/livret/2022/Livret_PT_2022.pdf",
+          "page": 13,
+          "sha256": "a3e4b9bf97bbd0bc5e1bb35ca0e750bee426010a41a256e1dd1dd43f8e88bf2f",
+          "colonnes": [
+            "Math A",
+            "Math B",
+            "Math C",
+            "Phy A",
+            "Phy B",
+            "Modélisation",
+            "Franç A",
+            "Franç B",
+            "LV A",
+            "LV B",
+            "Sc Ind A",
+            "Sc Ind B",
+            "Sc Ind C",
+            "Total"
+          ],
+          "coefficients": {
+            "Paris-Saclay": [
+              "3",
+              "",
+              "3",
+              "3",
+              "2",
+              "2",
+              "",
+              "4*",
+              "1*",
+              "",
+              "4",
+              "",
+              "6",
+              "23"
+            ],
+            "Rennes": [
+              "3",
+              "",
+              "3",
+              "3",
+              "2",
+              "2",
+              "",
+              "4*",
+              "1*",
+              "",
+              "4",
+              "",
+              "6",
+              "23"
+            ],
+            "X": [
+              "6",
+              "",
+              "6",
+              "6",
+              "",
+              "4",
+              "4",
+              "",
+              "6*",
+              "",
+              "",
+              "",
+              "10",
+              "36"
+            ]
+          },
+          "renvoi_asterisque_pages": [
+            13
+          ]
+        }
+      ]
+    },
+    "2023": {
+      "lignes": 14,
+      "rattachees": 12,
+      "ecoles": {
+        "X": 7,
+        "ENS Paris-Saclay": 11,
+        "ENS Rennes": 11
+      },
+      "exclues": [
+        "banque-pt_pt_maths-b_2023",
+        "banque-pt_pt_langue-vivante-b_2023"
+      ],
+      "notices": [
+        {
+          "nom": "2023.pdf",
+          "source": "https://www.banquept.fr/documents/livret/2023/Livret_PT_2023.pdf",
+          "page": 13,
+          "sha256": "ef653aad65d312dfc629926cfc7be2d59352bf0cd6362274307a292c916d0233",
+          "colonnes": [
+            "Math A",
+            "Math B",
+            "Math C",
+            "Phy A",
+            "Phy B",
+            "Modélisation",
+            "Franç A",
+            "Franç B",
+            "LV A",
+            "LV B",
+            "Sc Ind A",
+            "Sc Ind B",
+            "Sc Ind C",
+            "Total"
+          ],
+          "coefficients": {
+            "Paris-Saclay": [
+              "3",
+              "",
+              "3",
+              "3",
+              "2",
+              "2",
+              "",
+              "4*",
+              "1*",
+              "",
+              "3",
+              "2",
+              "2",
+              "20"
+            ],
+            "Rennes": [
+              "3",
+              "",
+              "3",
+              "3",
+              "2",
+              "2",
+              "",
+              "4*",
+              "1*",
+              "",
+              "4",
+              "3",
+              "3",
+              "23"
+            ],
+            "X": [
+              "6",
+              "",
+              "6",
+              "6",
+              "",
+              "4",
+              "4",
+              "",
+              "6*",
+              "",
+              "10",
+              "",
+              "",
+              "36"
+            ]
+          },
+          "renvoi_asterisque_pages": [
+            13
+          ]
+        }
+      ]
+    },
+    "2024": {
+      "lignes": 14,
+      "rattachees": 12,
+      "ecoles": {
+        "X": 7,
+        "ENS Paris-Saclay": 11,
+        "ENS Rennes": 11
+      },
+      "exclues": [
+        "banque-pt_pt_maths-b_2024",
+        "banque-pt_pt_langue-vivante-b_2024"
+      ],
+      "notices": [
+        {
+          "nom": "2024.pdf",
+          "source": "https://www.banquept.fr/documents/livret/2024/Livret_PT_2024.pdf",
+          "page": 13,
+          "sha256": "5762dc1390998cc1f814a84cc9c95cd0ff752605e6d06d734fab8bf1544424e8",
+          "colonnes": [
+            "Math A",
+            "Math B",
+            "Math C",
+            "Phy A",
+            "Phy B",
+            "Modélisation",
+            "Franç A",
+            "Franç B",
+            "LV A",
+            "LV B",
+            "Sc Ind A",
+            "Sc Ind B",
+            "Sc Ind C",
+            "Total"
+          ],
+          "coefficients": {
+            "Paris-Saclay": [
+              "3",
+              "",
+              "3",
+              "3",
+              "2",
+              "2",
+              "",
+              "4*",
+              "1*",
+              "",
+              "3",
+              "2",
+              "2",
+              "20"
+            ],
+            "Rennes": [
+              "3",
+              "",
+              "3",
+              "3",
+              "2",
+              "2",
+              "",
+              "4*",
+              "1*",
+              "",
+              "4",
+              "3",
+              "3",
+              "23"
+            ],
+            "X": [
+              "6",
+              "",
+              "6",
+              "6",
+              "",
+              "4",
+              "4",
+              "",
+              "6*",
+              "",
+              "10",
+              "",
+              "",
+              "36"
+            ]
+          },
+          "renvoi_asterisque_pages": [
+            13
+          ]
+        }
+      ]
+    },
+    "2025": {
+      "lignes": 14,
+      "rattachees": 12,
+      "ecoles": {
+        "X": 7,
+        "ENS Paris-Saclay": 11,
+        "ENS Rennes": 11
+      },
+      "exclues": [
+        "banque-pt_pt_maths-b_2025",
+        "banque-pt_pt_langue-vivante-b_2025"
+      ],
+      "notices": [
+        {
+          "nom": "2025.pdf",
+          "source": "https://www.banquept.fr/documents/livret/2025/Livret_PT_2025.pdf",
+          "page": 13,
+          "sha256": "4b83162034dd73f2516707f35e52b18ea6799a215935e95005f6a24bd66664ba",
+          "colonnes": [
+            "Math A",
+            "Math B",
+            "Math C",
+            "Phy A",
+            "Phy B",
+            "Modélisation",
+            "Franç A",
+            "Franç B",
+            "LV A",
+            "LV B",
+            "Sc Ind A",
+            "Sc Ind B",
+            "Sc Ind C",
+            "Total"
+          ],
+          "coefficients": {
+            "Paris-Saclay": [
+              "3",
+              "",
+              "3",
+              "3",
+              "2",
+              "2",
+              "",
+              "4*",
+              "1*",
+              "",
+              "3",
+              "2",
+              "2",
+              "20"
+            ],
+            "Rennes": [
+              "3",
+              "",
+              "3",
+              "3",
+              "2",
+              "2",
+              "",
+              "4*",
+              "1*",
+              "",
+              "4",
+              "3",
+              "3",
+              "23"
+            ],
+            "X": [
+              "6",
+              "",
+              "6",
+              "6",
+              "",
+              "4",
+              "4",
+              "",
+              "6*",
+              "",
+              "10",
+              "",
+              "",
+              "36"
+            ]
+          },
+          "renvoi_asterisque_pages": [
+            13
+          ]
+        }
+      ]
+    }
+  },
+  "controles": {
+    "par_mode": {
+      "PDF téléchargé et ouvert": 31,
+      "PDF officiel ouvert ; page de garde et pagination consultées": 84,
+      "ZIP téléchargé ; CRC contrôlés ; PDF internes ouverts": 7,
+      "PDF ouvert par plages HTTP ; pagination et garde lues": 4
+    },
+    "lectures_par_plages": {
+      "banque-pt_pt_sciences-industrielles-a_2023": {
+        "url": "https://www.banquept.fr/documents/2023/si_a_2023_pt.pdf",
+        "pages": 64,
+        "octets_consultes": 3198454,
+        "octets_du_fichier": 9850358
+      },
+      "banque-pt_pt_sciences-industrielles-c_2023": {
+        "url": "https://www.banquept.fr/documents/2023/si_c_2023_pt.pdf",
+        "pages": 53,
+        "octets_consultes": 3049150,
+        "octets_du_fichier": 11798206
+      },
+      "banque-pt_pt_sciences-industrielles-a_2024": {
+        "url": "https://www.banquept.fr/documents/2024/si_a_2024_pt.pdf",
+        "pages": 64,
+        "octets_consultes": 3559978,
+        "octets_du_fichier": 13161002
+      },
+      "banque-pt_pt_sciences-industrielles-b_2024": {
+        "url": "https://www.banquept.fr/documents/2024/si_b_2024_pt.pdf",
+        "pages": 63,
+        "octets_consultes": 4853193,
+        "octets_du_fichier": 31788489
+      }
+    },
+    "archives": [
+      {
+        "slug": "banque-pt_pt_sciences-industrielles-b_2019",
+        "url": "https://www.banquept.fr/documents/2019/si_b_2019_pt.zip",
+        "sha256": "f4faf772eb49ce4ab308c24ffae62897a28f0ceb2adce37fa6f6494ea85b9b83",
+        "octets": 5037084,
+        "controle_crc": "valide",
+        "membres": [
+          "SIB 2019  Annexes.pdf",
+          "SIB 2019  doc réponses.pdf",
+          "SIB 2019  texte sujet Definitif.pdf",
+          "SIB 2019 Calque.pdf"
+        ],
+        "pdf": [
+          {
+            "fichier": "SIB 2019  Annexes.pdf",
+            "pages": 9,
+            "sha256": "5e214cea436d5e3f4c8e1c2e191fab43a3a9d9b49757280ace19b59565413da9"
+          },
+          {
+            "fichier": "SIB 2019  doc réponses.pdf",
+            "pages": 8,
+            "sha256": "2b048c5d368a94346cba9e00f4327ea69a0f2c7c12f2436ee6c9b20585933f5f"
+          },
+          {
+            "fichier": "SIB 2019  texte sujet Definitif.pdf",
+            "pages": 19,
+            "sha256": "8fc0bd87710e6954a4a1fa561acef8d594fa4d9f66d15ccb3d66172a4b296793"
+          },
+          {
+            "fichier": "SIB 2019 Calque.pdf",
+            "pages": 1,
+            "sha256": "aaec0749cb8d9a12e7397fc0a84879d21f6824196cebdc867349e2f454728726"
+          }
+        ]
+      },
+      {
+        "slug": "banque-pt_pt_physique-b---thermodynamique_2020",
+        "url": "https://www.banquept.fr/documents/2020/ph_b_th_2020_pt.zip",
+        "sha256": "9c92b9bb4d915eb3233d69d57526bc25ac240c048cf8fe67414ac995dcde1298",
+        "octets": 7645855,
+        "controle_crc": "valide",
+        "membres": [
+          "ph_b_th_2020_pt.pdf",
+          "ph_b_th_2020_pt_annexes.pdf"
+        ],
+        "pdf": [
+          {
+            "fichier": "ph_b_th_2020_pt.pdf",
+            "pages": 12,
+            "sha256": "521191a4cd3839d96630ef00d4ba3d86c88dba48eec68d9cd7b6cd1f67b0a3a7"
+          },
+          {
+            "fichier": "ph_b_th_2020_pt_annexes.pdf",
+            "pages": 4,
+            "sha256": "73b9a2998c1c4d2c4305f24983236f961ffbc1d59f89b95ab9e276042445ccbb"
+          }
+        ]
+      },
+      {
+        "slug": "banque-pt_pt_sciences-industrielles-a_2020",
+        "url": "https://www.banquept.fr/documents/2020/si_a_2020_pt.zip",
+        "sha256": "9931c03f975d139f09e89c6bff8706ed87c00ceb5b14126a47ea8b4ec1261929",
+        "octets": 9462518,
+        "controle_crc": "valide",
+        "membres": [
+          "si_a_2020_pt/201107 A.pdf",
+          "si_a_2020_pt/201107 B.pdf",
+          "si_a_2020_pt/201107 C.pdf",
+          "si_a_2020_pt/201107 Ca.pdf",
+          "si_a_2020_pt/201107 Cb.pdf",
+          "si_a_2020_pt/201107 Cc.pdf",
+          "si_a_2020_pt/201107 Cd.pdf",
+          "si_a_2020_pt/201107 Ce.pdf",
+          "si_a_2020_pt/201107 Cf.pdf",
+          "si_a_2020_pt/201107 Cg.pdf"
+        ],
+        "pdf": [
+          {
+            "fichier": "si_a_2020_pt/201107 A.pdf",
+            "pages": 24,
+            "sha256": "2096745bcd87916986dc15594a2d186ba8341d5bebf250d936c21634901f0e70"
+          },
+          {
+            "fichier": "si_a_2020_pt/201107 B.pdf",
+            "pages": 11,
+            "sha256": "d3e4a4e9896a45850f12ce683a5012cd690988d07405d6fb498ebdeda8341e21"
+          },
+          {
+            "fichier": "si_a_2020_pt/201107 C.pdf",
+            "pages": 4,
+            "sha256": "9bf4307603d764a3b974cabd3cb638d4f70d32e0cfde2786f48874f0378a19f3"
+          },
+          {
+            "fichier": "si_a_2020_pt/201107 Ca.pdf",
+            "pages": 4,
+            "sha256": "b3de97910aeed7e07b7252078297f039c8c8ce363ba40d7aba31b49d2a074c9f"
+          },
+          {
+            "fichier": "si_a_2020_pt/201107 Cb.pdf",
+            "pages": 4,
+            "sha256": "12ee708dec6d637f8f44665a86f8d9d405a137e92ab9bf6ecb6347890cba0c69"
+          },
+          {
+            "fichier": "si_a_2020_pt/201107 Cc.pdf",
+            "pages": 4,
+            "sha256": "f8978d9b2764770a42cb799c39a52b5373abf9119b7484b616a5a563e5c9e5cd"
+          },
+          {
+            "fichier": "si_a_2020_pt/201107 Cd.pdf",
+            "pages": 4,
+            "sha256": "c696c53ac370591a44b9d82f9eb70ad43696c7c2530edd56c7ff98374ae3fbdc"
+          },
+          {
+            "fichier": "si_a_2020_pt/201107 Ce.pdf",
+            "pages": 4,
+            "sha256": "d81464eaf767eb8b0c722b2ce183d2ca89467ec97860d1272d2ce61525985b0b"
+          },
+          {
+            "fichier": "si_a_2020_pt/201107 Cf.pdf",
+            "pages": 4,
+            "sha256": "ab9d12c485ea7bd7be664ccb0cd52539ff4885a00147d3c6512a54bc455194e8"
+          },
+          {
+            "fichier": "si_a_2020_pt/201107 Cg.pdf",
+            "pages": 4,
+            "sha256": "d2a4f1c600c1734af9b4d75fe1c0d6eb264bf77d9ee3c2882974f1aac0e478a3"
+          }
+        ]
+      },
+      {
+        "slug": "banque-pt_pt_sciences-industrielles-b_2020",
+        "url": "https://www.banquept.fr/documents/2020/si_b_2020_pt.zip",
+        "sha256": "feddf3748015b51e3b99d1e96a73a79036db76fc1410c8b9a640696bc67da158",
+        "octets": 4634613,
+        "controle_crc": "valide",
+        "membres": [
+          "si_b_2020_pt/201108 A.pdf",
+          "si_b_2020_pt/201108 B.pdf",
+          "si_b_2020_pt/201108 C.pdf",
+          "si_b_2020_pt/201108 Ca.pdf",
+          "si_b_2020_pt/201108 Cb.pdf",
+          "si_b_2020_pt/201108 Cc.pdf"
+        ],
+        "pdf": [
+          {
+            "fichier": "si_b_2020_pt/201108 A.pdf",
+            "pages": 20,
+            "sha256": "b51574fde2ea019c68e3e460c30854d032a731b240baf9b05777618b17c5cc92"
+          },
+          {
+            "fichier": "si_b_2020_pt/201108 B.pdf",
+            "pages": 22,
+            "sha256": "e0e21c003534e6f676e3e2b3bf7482f85d55fad703aa65ee4a1703521ea92272"
+          },
+          {
+            "fichier": "si_b_2020_pt/201108 C.pdf",
+            "pages": 4,
+            "sha256": "afe5c635f21aa45713dd3aa0c56c3307c79ab098c55caf827875e7bd93a21256"
+          },
+          {
+            "fichier": "si_b_2020_pt/201108 Ca.pdf",
+            "pages": 4,
+            "sha256": "aeaf73851dfa184b908d49f9cd2d4d75eaf0ce7138cdad7228b19aeabb8b0374"
+          },
+          {
+            "fichier": "si_b_2020_pt/201108 Cb.pdf",
+            "pages": 4,
+            "sha256": "9047d87b2a3ede7eccd23dd016735ac887c275b6079cb490e45e11f2d73cfaee"
+          },
+          {
+            "fichier": "si_b_2020_pt/201108 Cc.pdf",
+            "pages": 2,
+            "sha256": "72c01c5fa86b40c429540539ed4924c0ff5dddbaaa572056fe561b4ea4bf09df"
+          }
+        ]
+      },
+      {
+        "slug": "banque-pt_pt_sciences-industrielles-c_2020",
+        "url": "https://www.banquept.fr/documents/2020/si_c_2020_pt.zip",
+        "sha256": "1b019422cfef600c2150bde2e7d3945c6837e37f86383bef6c8b653a1353a721",
+        "octets": 7105532,
+        "controle_crc": "valide",
+        "membres": [
+          "si_c_2020_pt/201109 A.pdf",
+          "si_c_2020_pt/201109 B.pdf",
+          "si_c_2020_pt/201109 C.pdf",
+          "si_c_2020_pt/201109 Ca.pdf",
+          "si_c_2020_pt/201109 Cb.pdf",
+          "si_c_2020_pt/201109 Cc.pdf",
+          "si_c_2020_pt/201109 Cd.pdf",
+          "si_c_2020_pt/201109 Ce.pdf"
+        ],
+        "pdf": [
+          {
+            "fichier": "si_c_2020_pt/201109 A.pdf",
+            "pages": 16,
+            "sha256": "b439ac8be5d618637543e98861e032ca4bedd5c3d806663f2cb13f69e86202c8"
+          },
+          {
+            "fichier": "si_c_2020_pt/201109 B.pdf",
+            "pages": 12,
+            "sha256": "57ec7102f6503f4b9ec60320400f53b4f58b6ac5c0ce7a54236a8daecc92857a"
+          },
+          {
+            "fichier": "si_c_2020_pt/201109 C.pdf",
+            "pages": 4,
+            "sha256": "ccc4a9f53804161d86943f7bb74087c1c1d86e4f886d3b7b935c04aa14a726a6"
+          },
+          {
+            "fichier": "si_c_2020_pt/201109 Ca.pdf",
+            "pages": 4,
+            "sha256": "3a8cb4e30ba9698be43711097e3abeb09fc4952e342cac952348b5cc0b8dbc8a"
+          },
+          {
+            "fichier": "si_c_2020_pt/201109 Cb.pdf",
+            "pages": 4,
+            "sha256": "827b9f09980628faf76b7153374126d4182c90dac1402e04ddf2c8b7bf3e016b"
+          },
+          {
+            "fichier": "si_c_2020_pt/201109 Cc.pdf",
+            "pages": 4,
+            "sha256": "21e562ace1cd4c49ce3af1331a7307cd06a51dc3bcfd4ea9802a55130eeafa32"
+          },
+          {
+            "fichier": "si_c_2020_pt/201109 Cd.pdf",
+            "pages": 4,
+            "sha256": "37103b1d6b1cb273b3a971fb8600965642b1e8427c1026467cd4c7264799d6c5"
+          },
+          {
+            "fichier": "si_c_2020_pt/201109 Ce.pdf",
+            "pages": 2,
+            "sha256": "0dd2246f41c21ef063b77d22b2b3ea7b3cb614f42eba432d8528e59fb8ed144b"
+          }
+        ]
+      },
+      {
+        "slug": "banque-pt_pt_sciences-industrielles-b_2021",
+        "url": "https://www.banquept.fr/documents/2021/si_b_2021_pt.zip",
+        "sha256": "a0f1318f80ad0340db3f79c1cea527714b2299257dfbea39ed5c07930bc542c2",
+        "octets": 5429604,
+        "controle_crc": "valide",
+        "membres": [
+          "si_b_2021_pt.pdf",
+          "si_b_2021_pt_annexes.pdf"
+        ],
+        "pdf": [
+          {
+            "fichier": "si_b_2021_pt.pdf",
+            "pages": 21,
+            "sha256": "d95180cd4a9f05c63c836e51dcb1de8c6de48e35cd13fa343b356d948db7d30c"
+          },
+          {
+            "fichier": "si_b_2021_pt_annexes.pdf",
+            "pages": 33,
+            "sha256": "b6431d4b60cff024ccc38a209a3883d249e771915ec7c3ca91d9e6e6cf4d662f"
+          }
+        ]
+      },
+      {
+        "slug": "banque-pt_pt_sciences-industrielles-c_2021",
+        "url": "https://www.banquept.fr/documents/2021/si_c_2021_pt.zip",
+        "sha256": "e0b5422ac1e490a6054badaf218c76a0d25e54f76acd1fadc9cdb2431eed6ce3",
+        "octets": 4974968,
+        "controle_crc": "valide",
+        "membres": [
+          "si_c_2021_pt.pdf",
+          "si_c_2021_pt_annexes.pdf"
+        ],
+        "pdf": [
+          {
+            "fichier": "si_c_2021_pt.pdf",
+            "pages": 33,
+            "sha256": "eb101c0d49252e6b337c84be7cd273c008c0e52dd0831c8a572e0e4b9313eb42"
+          },
+          {
+            "fichier": "si_c_2021_pt_annexes.pdf",
+            "pages": 45,
+            "sha256": "4cb652f2b412c8002912a75a8920dd46c085c3653129d09594884757e99ebbfa"
+          }
+        ]
+      }
+    ]
+  }
+}

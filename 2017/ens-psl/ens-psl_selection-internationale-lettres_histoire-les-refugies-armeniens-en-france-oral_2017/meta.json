@@ -1,0 +1,37 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire-les-refugies-armeniens-en-france-oral_2017",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire — les réfugiés arméniens en France (oral)",
+    "annee": 2017
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/histoire-oral1.pdf",
+    "sha256_sujet": "1be91c9a04d5edf311336510bbb52a5b4046686ed8b28987c4146694f8ba324d",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_s.i._histoire_2017.pdf",
+    "sha256_rapport_jury": "254e7e5cb46d5fd9e53ac43b3cde383015b5d5b5b92dc6787595b6f6295be021"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture-du-document.svg",
+      "question": "Un raisonnement administratif qui tourne en cercle",
+      "legende": "Le récit associe le circuit de certification à la mémoire de la famille."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Commentaire des deux pages de Mayrig et lecture du rapport de jury. Distinction des documents, statuts et temporalités, vérification des précautions sur la citation finale. Deux éditions et schéma.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

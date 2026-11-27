@@ -11,9 +11,15 @@
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/2017_MP_sujet_mathD.pdf",
     "rapport_jury": "https://www.ens.psl.eu/sites/default/files/17_MP_rap_eMathD.pdf",
-    "sha256_sujet": "220e0d24cad584aebdb650082896f1f59d5ae64cf0daed915f63e8daba27a022"
+    "sha256_sujet": "220e0d24cad584aebdb650082896f1f59d5ae64cf0daed915f63e8daba27a022",
+    "sha256_rapport_jury": "1b621cd7dbe37b6bcf440b4b8d6f0378d2d84defc96ef302709a716e626bee83"
   },
   "figures": [
+    {
+      "fichier": "figures/trois-iteres-quadratiques.svg",
+      "question": "Préliminaire",
+      "legende": "Les zéros successifs du produit des dérivées divisent les trois graphes en deux, quatre et huit plis."
+    },
     {
       "fichier": "figures/cubique-transitions.svg",
       "question": "III.2d",
@@ -31,6 +37,85 @@
       "perimetre": "Rédaction et confrontation des quatre parties, du préliminaire et des deux éditions au sujet de huit pages et au rapport de sept pages. Vérification de la métrique dilatée, de la semi-conjugaison, du comptage par la matrice transposée, des séries latérales et de la formule de Fibonacci.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "ens_mp_mathematiques_d",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Pointage des 50 repères sur le sujet, les deux éditions et le rapport. p. 1–3, figure des trois premières itérées, découpe en plis et orbites bornées du polynôme quadratique. p. 3–6, conjugaison de la famille rationnelle, matrice de transition du cubique et entropie des applications tentes. p. 6–8, limites latérales des séries de signes, comptage des plis et croissance de Fibonacci."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Préliminaire",
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5a",
+      "I.5b",
+      "I.5c",
+      "II.1",
+      "II.2",
+      "II.3a",
+      "II.3b",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7a",
+      "II.7b",
+      "II.7c",
+      "II.8",
+      "III.1a",
+      "III.1b",
+      "III.1c",
+      "III.1d",
+      "III.1e",
+      "III.2a",
+      "III.2b",
+      "III.2c",
+      "III.2d",
+      "III.2e",
+      "III.3a",
+      "III.3b",
+      "III.3c",
+      "III.3d",
+      "IV.1a",
+      "IV.1b",
+      "IV.1c",
+      "IV.1d",
+      "IV.2a",
+      "IV.2b",
+      "IV.3a",
+      "IV.3b",
+      "IV.3c",
+      "IV.3d",
+      "IV.4a",
+      "IV.4b",
+      "IV.4c",
+      "IV.5a",
+      "IV.5b",
+      "IV.5c",
+      "IV.5d"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "controle": [
+      "p. 1–3, figure des trois premières itérées, découpe en plis et orbites bornées du polynôme quadratique",
+      "p. 3–6, conjugaison de la famille rationnelle, matrice de transition du cubique et entropie des applications tentes",
+      "p. 6–8, limites latérales des séries de signes, comptage des plis et croissance de Fibonacci"
+    ]
+  }
 }

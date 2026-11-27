@@ -1,0 +1,297 @@
+{
+  "slug": "banque-pt_pt_langue-vivante-a_2006",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Langue vivante A",
+    "annee": 2006
+  },
+  "questions": 15,
+  "redaction": "IA (gpt-6.2-astra)",
+  "figures": [
+    {
+      "fichier": "figures/lecture-de.svg",
+      "question": "Allemand",
+      "legende": "Qu’est-ce qui rend le choix possible ?"
+    },
+    {
+      "fichier": "figures/lecture-en.svg",
+      "question": "Anglais",
+      "legende": "Que mesure le dispositif ?"
+    },
+    {
+      "fichier": "figures/lecture-ar.svg",
+      "question": "Arabe",
+      "legende": "Comment circulent les savoirs ?"
+    },
+    {
+      "fichier": "figures/lecture-es.svg",
+      "question": "Espagnol",
+      "legende": "De l’image au concept"
+    },
+    {
+      "fichier": "figures/lecture-it.svg",
+      "question": "Italien",
+      "legende": "De l’essai à la centrale"
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "agent": "lva_pt_2325",
+      "perimetre": "Cinq versions françaises et dix réponses dans les langues des sujets, sources, commentaires et schémas par langue."
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "agent": "lva_pt_2325",
+      "perimetre": "Comparaison des bornes et du contenu des versions sur le fac-similé, relecture des réponses avec le jury, recomptage et examen des schémas et de l’arabe."
+    }
+  ],
+  "date_revision": "2026-11-27",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2006/lv_a_2006.pdf",
+    "sujet_sha256": "e281af60735623302a75f5582438a92830db894bf2f73e71dc83921704a5152e",
+    "rapport_jury": "https://www.banquept.fr/article153.html",
+    "rapports_par_piece": {
+      "de": {
+        "url": "https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_lv_a_all_ecrit_2006.pdf",
+        "sha256": "1b4c2b1fae68073977fa87b1750307658d3c3bbe9f970337b8789f713394d3a4",
+        "pages": 2,
+        "rendus_sha256": [
+          "3b19880bfa305ccdc8ff1e4088c00de546734f212deb9c105715e5181affa824",
+          "a0e6d9c741845b6d5d3cf53339e1110dc2ee88dec82ce19b2232f5261b8659dd"
+        ],
+        "index": "https://www.banquept.fr/article153.html",
+        "sha256_index": "12a4a0b5710f8cb8cf7b71a6b75822f8e6036e5a84a391e6b3c003c170846638"
+      },
+      "en": {
+        "url": "https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_lv_a_ang_ecrit_2006.pdf",
+        "sha256": "de7e1c967aebead83b3dc2ddb9f1bfdc135fdcf99b4be5cd709a6408d73bb8c3",
+        "pages": 2,
+        "rendus_sha256": [
+          "7beb9fce3fb188fcabb2ca5355ad52ff96532524f5dec4f97e97417ab59d228c",
+          "b55ad970979efd985bc8441b602adbb976b2dfb71b1639a7723f29669bd353d8"
+        ],
+        "index": "https://www.banquept.fr/article153.html",
+        "sha256_index": "12a4a0b5710f8cb8cf7b71a6b75822f8e6036e5a84a391e6b3c003c170846638"
+      },
+      "ar": {
+        "url": "https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_lv_a_ara_ecrit_2006.pdf",
+        "sha256": "20af5d8d6386629893a962c772406b797fa7fa8dab1dd0101e92e5cc39b47d69",
+        "pages": 1,
+        "rendus_sha256": [
+          "33b2402bb4ede6dea9cbd7d003190484a57ac3f20ea6a8214b372d6a218e7a66"
+        ],
+        "index": "https://www.banquept.fr/article153.html",
+        "sha256_index": "12a4a0b5710f8cb8cf7b71a6b75822f8e6036e5a84a391e6b3c003c170846638"
+      },
+      "es": {
+        "url": "https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_lv_a_aut_ecrit_2006.pdf",
+        "sha256": "94c7c51594d5f7194234adcf5ec791dfd5638247eafa44806312f1c9240fe945",
+        "pages": 1,
+        "rendus_sha256": [
+          "67941fa66366f7e4fe94cf1b697fbead0b3370ba7c2615d6ee36a90f34df40dc"
+        ],
+        "index": "https://www.banquept.fr/article153.html",
+        "sha256_index": "12a4a0b5710f8cb8cf7b71a6b75822f8e6036e5a84a391e6b3c003c170846638"
+      }
+    },
+    "livret": "https://www.banquept.fr/documents/livret/2006/Livret_Rose_2006_1_2.pdf",
+    "livret_sha256": "5681be4b094f21d516a26f35fbc4958f52e9de82e5f9ad4eb9d2ecb0c2709269",
+    "index_sujets": "https://www.banquept.fr/article152.html",
+    "index_rapports": "https://www.banquept.fr/article153.html"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Allemand · version",
+      "Allemand · question a",
+      "Allemand · question b",
+      "Anglais · version",
+      "Anglais · question a",
+      "Anglais · question b",
+      "Arabe · version",
+      "Arabe · question a",
+      "Arabe · question b",
+      "Espagnol · version",
+      "Espagnol · question a",
+      "Espagnol · question b",
+      "Italien · version",
+      "Italien · question a",
+      "Italien · question b"
+    ],
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-27",
+      "sha256_sujet_controle": "e281af60735623302a75f5582438a92830db894bf2f73e71dc83921704a5152e",
+      "perimetre": "Cinq versions françaises et dix réponses dans les langues des sujets, sources, commentaires et schémas par langue.",
+      "controles": [
+        {
+          "nom": "Allemand",
+          "titre": "Le choix de Karin Egger",
+          "pages_sujet": [
+            2,
+            3
+          ],
+          "pages_rapport": [
+            1,
+            2
+          ],
+          "rapport_url": "https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_lv_a_all_ecrit_2006.pdf",
+          "rapport_sha256": "1b4c2b1fae68073977fa87b1750307658d3c3bbe9f970337b8789f713394d3a4",
+          "origine": "Reportage publié sur reportagen.annabelle.ch, 19 juillet 2005. Texte page 2, consignes page 3. Le rapport d’allemand est publié séparément. [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_lv_a_all_ecrit_2006.pdf)",
+          "bornes_version": "De « Den ganzen Tag am Computer sitzen » à « ein lustiges Grüppchen ».",
+          "consignes": [
+            "Der Text beschreibt das Modell einer «Nur-Hausfrau». Inwiefern kann eine Frau Gefallen an diesem Status finden, der sie anscheinend glücklich macht?",
+            "Die im Text erwähnte Karin Egger verzichtet darauf, Kinder und Job zu vereinbaren. Unter welchen Bedingungen kann eine Frau dem Familienleben gerecht werden aber gleichzeitig auch Freude an einer beruflichen Arbeit, ja sogar an einer Karriere finden?"
+          ],
+          "compte_mots": [
+            83,
+            204
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-de.svg"
+        },
+        {
+          "nom": "Anglais",
+          "titre": "The doctor in your pocket",
+          "pages_sujet": [
+            4,
+            5
+          ],
+          "pages_rapport": [
+            1,
+            2
+          ],
+          "rapport_url": "https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_lv_a_ang_ecrit_2006.pdf",
+          "rapport_sha256": "de7e1c967aebead83b3dc2ddb9f1bfdc135fdcf99b4be5cd709a6408d73bb8c3",
+          "origine": "The Economist, 17 septembre 2005. Texte pages 4 et 5, questions page 5. Rapport d’anglais séparé. [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_lv_a_ang_ecrit_2006.pdf)",
+          "bornes_version": "De « Through a new service » à « whenever the cap is removed ». La dernière phrase traduite s’achève avant l’envoi éventuel d’un rappel.",
+          "consignes": [
+            "In what ways can the mobile phone and telehealth services improve health care?",
+            "Does new technology necessarily mean better health?"
+          ],
+          "compte_mots": [
+            92,
+            203
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-en.svg"
+        },
+        {
+          "nom": "Arabe",
+          "titre": "العلوم العربية في عصرها الذهبي",
+          "pages_sujet": [
+            6,
+            7
+          ],
+          "pages_rapport": [
+            1
+          ],
+          "rapport_url": "https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_lv_a_ara_ecrit_2006.pdf",
+          "rapport_sha256": "20af5d8d6386629893a962c772406b797fa7fa8dab1dd0101e92e5cc39b47d69",
+          "origine": "Al-Watan Al-Arabi, n° 1496 du vendredi 4 novembre 2005. Article page 6, consignes page 7. Le rapport d’arabe demande des exemples précis à l’appui des idées et une expression écrite soignée. [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_lv_a_ara_ecrit_2006.pdf)",
+          "bornes_version": "De « يؤكد هذا المعرض » à « للمعارف التقنية والمهارات ». Le dernier paragraphe est à traduire jusqu’à cette expression, au milieu du propos d’Ahmed Djebbar.",
+          "consignes": [
+            "تحدثوا عن معنى النص العام بلغتكم الخاصة.",
+            "أعطوا رأيكم في الأسباب التي ساعدت على انحطاط العلوم العربية."
+          ],
+          "compte_mots": [
+            83,
+            202
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-ar.svg"
+        },
+        {
+          "nom": "Espagnol",
+          "titre": "Borges visionario",
+          "pages_sujet": [
+            8,
+            9
+          ],
+          "pages_rapport": [
+            1
+          ],
+          "rapport_url": "https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_lv_a_aut_ecrit_2006.pdf",
+          "rapport_sha256": "94c7c51594d5f7194234adcf5ec791dfd5638247eafa44806312f1c9240fe945",
+          "origine": "Oscar Antonio Di Marco, présenté comme ingénieur chimiste et professeur en Argentine. Article pages 8 et 9. Le rapport d’espagnol figure dans la pièce commune à l’espagnol et à l’italien. [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_lv_a_aut_ecrit_2006.pdf)",
+          "bornes_version": "De « Más de medio siglo atrás » à « percibidor abstracto del mundo ».",
+          "consignes": [
+            "Analice Usted la relación que establece este texto entre ciencia y literatura visionaria (Julio Verne, J. L. Borges).",
+            "¿Qué opina Usted de la visión de «la realidad» que presenta el autor? ¿Le parece posible afirmar que van desapareciendo las antiguas concepciones —filosóficas, religiosas,…— del mundo?"
+          ],
+          "compte_mots": [
+            90,
+            219
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-es.svg"
+        },
+        {
+          "nom": "Italien",
+          "titre": "La centrale elettrica del futuro è un generatore di uragani",
+          "pages_sujet": [
+            10,
+            11
+          ],
+          "pages_rapport": [
+            1
+          ],
+          "rapport_url": "https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_lv_a_aut_ecrit_2006.pdf",
+          "rapport_sha256": "94c7c51594d5f7194234adcf5ec791dfd5638247eafa44806312f1c9240fe945",
+          "origine": "Alessio Balbi, La Repubblica, décembre 2005. Texte page 10, consignes page 11. La rubrique italienne à la fin du rapport commun avec l’espagnol indique une moyenne de 12,33. [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_lv_a_aut_ecrit_2006.pdf)",
+          "bornes_version": "Les trois derniers paragraphes de la page 10, de « L’idea di Michaud » à « in quelle a carbone ».",
+          "consignes": [
+            "Secondo Lei, il progetto potrebbe essere realizzato o è del tutto utopico?",
+            "Quali altre energie si potrebbero concepire per salvaguardare il pianeta e a quali costi, il cervello umano avrà limiti o meno? Come vede il mondo fra un secolo?"
+          ],
+          "compte_mots": [
+            85,
+            208
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-it.svg"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "agro-veto_bcpst_anglais_2023",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "Anglais",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "questions": 3,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/abcpst_sp_0923_anglais.pdf",
+    "sujet_sha256": "7c8a5e81f551e68c29a40c09b43a229066585f282f7a2c7e1b9f8c4870165407",
+    "rapport_jury": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/rapport_anglais_bcpst_2023_le.pdf",
+    "rapport_jury_sha256": "f7adf9522545dea82640e94999aa6fb7b4740588c77a805eeee899ac7b138006",
+    "bilan_X_BIO": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/bilan-concours-a-bcpst-session-2023.pdf#page=4"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I · Thème · 6 points",
+      "II · Compréhension · 6 points",
+      "III · Expression · 8 points"
+    ],
+    "precision": "Traduction anglaise du thème de Libération en trois paragraphes, compréhension de The Economist sur les noms zoologiques et essai sur les traces du passé en science et dans la vie publique."
+  },
+  "longueurs": {
+    "comprehension": 100,
+    "essay": 209,
+    "methode": "groupes séparés par un espace"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "legende": "Pourquoi changer le nom d’une espèce pose-t-il problème ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture des feuillets et du rapport officiel de cette session. Traduction anglaise du thème de Libération en trois paragraphes, compréhension de The Economist sur les noms zoologiques et essai sur les traces du passé en science et dans la vie publique. Rédaction du brut, du guidé et de la figure."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

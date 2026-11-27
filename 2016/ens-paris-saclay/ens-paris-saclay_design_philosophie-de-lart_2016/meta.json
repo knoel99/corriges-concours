@@ -1,0 +1,90 @@
+{
+  "slug": "ens-paris-saclay_design_philosophie-de-lart_2016",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Philosophie de l’art",
+    "annee": 2016,
+    "modalite": "écrit",
+    "etablissement_imprime": "École normale supérieure de Cachan"
+  },
+  "intitule": "Le « mal du musée » chez Maurice Blanchot",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2016_Sujet_1A_Design_Philo_art.pdf",
+    "sha256_sujet": "8d0a344d3b63ca69cb54814af9bbf184870f30e82e82fc22838979c0724b5c72",
+    "index_annales": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=281",
+    "code_sujet": "C16102",
+    "index_annales_sha256": "4a958aa4419379355bc4e78013c50477cd12562ec890e198677889d1ac7604ee",
+    "composition_du_sujet": "Feuillet unique de texte. Une citation de Blanchot et sa référence forment l’intégralité du sujet."
+  },
+  "figures": [
+    {
+      "fichier": "figures/parcours-du-regard.svg",
+      "question": "Dissertation",
+      "legende": "Un parcours continu et un arrêt avec retour changent l’expérience d’une même salle."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_design",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Composition à partir de la citation de Blanchot, comparaison critique avec le musée imaginaire de Malraux et analyse de la scénographie. Schéma original des rythmes de visite."
+    },
+    {
+      "phase": "revision",
+      "agent": "x_hist_1986",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture de la comparaison de Blanchot et de ses deux symptômes ; analyse historique située du retable d’Issenheim, du changement de rythme et des limites de la scénographie ; reprise des itinéraires du schéma."
+    }
+  ],
+  "duree_heures": 4,
+  "intitule_editorial": true,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2016_Sujet_1A_Design_Philo_art.pdf",
+      "sha256": "8d0a344d3b63ca69cb54814af9bbf184870f30e82e82fc22838979c0724b5c72",
+      "pages": 1,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "2ad1d2d579ed77c3047124e92c4536f58862cf70269b4e2488b6c9f36e62a9fe"
+        }
+      ]
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 1,
+        "intitule_ou_demande": "Composer à partir de la seule citation de Maurice Blanchot, « Le mal des musées », dans L’Amitié.",
+        "code": "C16102"
+      }
+    ],
+    "annexes_sujet": [],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

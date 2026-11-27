@@ -49,6 +49,9 @@ raisonnement dans `effort` et le mode de vitesse dans `vitesse`. Renseignez éga
 Dans `brut.md` et `guide.md`, placez la signature après l’avertissement, sur une ligne
 par intervention. L’ordre de lecture est modèle, effort, vitesse. Ainsi, la rédaction
 Mines-Ponts de chimie PC 2024 donne **Rédaction** · GPT-6.2 Sol High standard.
+Les phases `relecture_corrige` et `revision` s’affichent toutes deux sous le libellé
+**Révision**. Si le journal indique `"tour": 2`, la signature correspondante peut
+par exemple être **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée.
 Conservez la valeur de vitesse enregistrée, y compris la distinction entre `standard`,
 `priority` et `ultrafast`. Pour une nouvelle session, relevez les réglages effectifs
 au moment de l’intervention. Pour une reprise d’archive, une valeur manquante reste

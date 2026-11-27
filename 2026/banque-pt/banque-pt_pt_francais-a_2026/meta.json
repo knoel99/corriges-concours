@@ -64,7 +64,72 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Confrontation des deux éditions à Merleau-Ponty et au programme. Précision de la lecture des pieds du promeneur et du milieu du vivant ; schéma de l’observateur et de son appui."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Dissertation PT A, double fonction du terrain dans la marche et le prélèvement."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "agent": "x_maths_b_recentes",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Vérification du sujet, du rapport et des deux éditions pour Dissertation. Contrôle du contenu des figures et des réponses rédigées."
     }
   ],
-  "date_revision": "2026-11-24"
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "origine_attestation": {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "4ddc38fd01e4988ce0a9524ab6f6cf94015f870fc3b8e07e25fdba759f4a89c1",
+      "perimetre": "Vérification du sujet, du rapport et des deux éditions pour Dissertation. Contrôle du contenu des figures et des réponses rédigées.",
+      "controles": [
+        {
+          "nom": "Dissertation",
+          "pages_sujet": [
+            2
+          ],
+          "pages_rapport": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "controles": [
+            "Citation et question de validité collationnées avec la p. 2. Les deux « pas tout à fait » qualifient une même expérience.",
+            "Les trois parties confrontent l’objectivation, les conditions d’appui et leur fragilité. Les exemples de Verne, de Canguilhem et de Haushofer reviennent dans le développement.",
+            "Le prélèvement d’un échantillon et la position du marcheur expliquent les deux relations simultanées au terrain. Le schéma a été vérifié dans les deux éditions."
+          ]
+        }
+      ]
+    }
+  }
 }

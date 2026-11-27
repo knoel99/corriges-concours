@@ -11,7 +11,10 @@
   "sources": {
     "sujet": "https://www.ens.psl.eu/IMG/file/concours/2009/MP/2009_sujet_mp_math_mpi2.pdf",
     "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2009/MP/mp2009_ecri_mathmpi2.pdf",
-    "sha256_sujet": "e5f81c8746d7baa6906e85381a3a774d999c54e75ed2791d5347904558241356"
+    "sha256_sujet": "e5f81c8746d7baa6906e85381a3a774d999c54e75ed2791d5347904558241356",
+    "pages_sujet": 4,
+    "sha256_rapport_jury": "550b2dd955d5ba6ab4c2786019c76a5b3eca572d782d59d76a21df50bf051b9f",
+    "pages_rapport_jury": 2
   },
   "figures": [
     {
@@ -31,6 +34,227 @@
       "perimetre": "Rédaction intégrale des cinq parties des deux éditions après lecture des huit pages imprimées et du rapport du jury. Condition de pas strictement positif, convergence par les valeurs d’adhérence, forme exacte de la majoration quadratique, preuve par projection de l’égalité minimax. Tracé comparé de la pénalité et de sa majorante.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Confrontation des 33 questions des deux éditions aux pages imprimées 3 à 7 et au rapport. Contrôle du cas de pas nul, de l’estimation de contraction, du facteur de la majorante et du point selle. Recalcul sur chaque sommet des deux tracés et sur un problème de projection à deux pixels.",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1.a",
+      "1.1.b",
+      "1.2.a",
+      "1.2.b",
+      "1.3",
+      "1.4.a",
+      "1.4.b",
+      "1.5.a",
+      "1.5.b",
+      "1.6",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4.a",
+      "2.4.b",
+      "2.5",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "3.7",
+      "4.1",
+      "4.2",
+      "4.3.a",
+      "4.3.b",
+      "4.4",
+      "4.5",
+      "5.1.a",
+      "5.1.b",
+      "5.1.c",
+      "5.2"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": "1.1.a",
+        "page_pdf_sujet": 3,
+        "page_imprimee": 3
+      },
+      {
+        "question": "1.1.b",
+        "page_pdf_sujet": 3,
+        "page_imprimee": 3
+      },
+      {
+        "question": "1.2.a",
+        "page_pdf_sujet": 3,
+        "page_imprimee": 3
+      },
+      {
+        "question": "1.2.b",
+        "page_pdf_sujet": 3,
+        "page_imprimee": 3
+      },
+      {
+        "question": "1.3",
+        "page_pdf_sujet": 3,
+        "page_imprimee": 3
+      },
+      {
+        "question": "1.4.a",
+        "page_pdf_sujet": 3,
+        "page_imprimee": 3
+      },
+      {
+        "question": "1.4.b",
+        "page_pdf_sujet": 3,
+        "page_imprimee": 3
+      },
+      {
+        "question": "1.5.a",
+        "page_pdf_sujet": 3,
+        "page_imprimee": 3
+      },
+      {
+        "question": "1.5.b",
+        "page_pdf_sujet": 3,
+        "page_imprimee": 3
+      },
+      {
+        "question": "1.6",
+        "page_pdf_sujet": 4,
+        "page_imprimee": 4
+      },
+      {
+        "question": "2.1",
+        "page_pdf_sujet": 4,
+        "page_imprimee": 4
+      },
+      {
+        "question": "2.2",
+        "page_pdf_sujet": 4,
+        "page_imprimee": 4
+      },
+      {
+        "question": "2.3",
+        "page_pdf_sujet": 4,
+        "page_imprimee": 4
+      },
+      {
+        "question": "2.4.a",
+        "page_pdf_sujet": 4,
+        "page_imprimee": 4
+      },
+      {
+        "question": "2.4.b",
+        "page_pdf_sujet": 4,
+        "page_imprimee": 4
+      },
+      {
+        "question": "2.5",
+        "page_pdf_sujet": 4,
+        "page_imprimee": 4
+      },
+      {
+        "question": "3.1",
+        "page_pdf_sujet": 4,
+        "page_imprimee": 5
+      },
+      {
+        "question": "3.2",
+        "page_pdf_sujet": 4,
+        "page_imprimee": 5
+      },
+      {
+        "question": "3.3",
+        "page_pdf_sujet": 4,
+        "page_imprimee": 5
+      },
+      {
+        "question": "3.4",
+        "page_pdf_sujet": 4,
+        "page_imprimee": 5
+      },
+      {
+        "question": "3.5",
+        "page_pdf_sujet": 4,
+        "page_imprimee": 5
+      },
+      {
+        "question": "3.6",
+        "page_pdf_sujet": 4,
+        "page_imprimee": 5
+      },
+      {
+        "question": "3.7",
+        "page_pdf_sujet": 4,
+        "page_imprimee": 5
+      },
+      {
+        "question": "4.1",
+        "page_pdf_sujet": 3,
+        "page_imprimee": 6
+      },
+      {
+        "question": "4.2",
+        "page_pdf_sujet": 3,
+        "page_imprimee": 6
+      },
+      {
+        "question": "4.3.a",
+        "page_pdf_sujet": 3,
+        "page_imprimee": 6
+      },
+      {
+        "question": "4.3.b",
+        "page_pdf_sujet": 3,
+        "page_imprimee": 6
+      },
+      {
+        "question": "4.4",
+        "page_pdf_sujet": 3,
+        "page_imprimee": 6
+      },
+      {
+        "question": "4.5",
+        "page_pdf_sujet": 3,
+        "page_imprimee": 6
+      },
+      {
+        "question": "5.1.a",
+        "page_pdf_sujet": 2,
+        "page_imprimee": 7
+      },
+      {
+        "question": "5.1.b",
+        "page_pdf_sujet": 2,
+        "page_imprimee": 7
+      },
+      {
+        "question": "5.1.c",
+        "page_pdf_sujet": 2,
+        "page_imprimee": 7
+      },
+      {
+        "question": "5.2",
+        "page_pdf_sujet": 2,
+        "page_imprimee": 7
+      }
+    ],
+    "precision": "Les 33 questions des cinq parties sont pointées sur le livret imposé de huit pages imprimées en quatre pages PDF. La page imprimée 8 donne l’interprétation en traitement d’images. Les questions 3.3 à 3.6 distinguent τ>0 et τ=0, tous deux admis dans l’énoncé."
+  }
 }

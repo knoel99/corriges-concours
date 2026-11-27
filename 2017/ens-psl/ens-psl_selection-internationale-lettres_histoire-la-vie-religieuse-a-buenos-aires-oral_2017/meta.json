@@ -1,0 +1,37 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire-la-vie-religieuse-a-buenos-aires-oral_2017",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire — la vie religieuse à Buenos Aires (oral)",
+    "annee": 2017
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/histoire-oral2.pdf",
+    "sha256_sujet": "1bc7d75a72628bd3b275e40f5a79fd3b90d8c3ea47f8c15ca2129b106619bc41",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_s.i._histoire_2017.pdf",
+    "sha256_rapport_jury": "254e7e5cb46d5fd9e53ac43b3cde383015b5d5b5b92dc6787595b6f6295be021"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture-du-document.svg",
+      "question": "Des femmes présentes dans des institutions distinctes",
+      "legende": "Trois formes de présence du catholicisme dans le récit de voyage."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture des 48 lignes du sujet et du rapport d’histoire 2017. Explication des cadres de la ville et de la confrérie, du genre du voyage et des limites de l’observation. Deux éditions et schéma.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

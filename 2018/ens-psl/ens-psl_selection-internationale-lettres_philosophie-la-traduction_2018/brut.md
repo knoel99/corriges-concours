@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La consigne demande de développer et commenter la notion « La traduction ».
 
 ## Comment répondre du même avec d’autres mots ?
@@ -26,9 +28,11 @@ Imaginons que « You may sit down » soit prononcé au tribunal après l’autor
 
 Le travail sur un poème rend la situation plus délicate. Supposons un très court poème français où la répétition de « pas » évoque alternativement la négation et des pas entendus dans le couloir. Traduire chaque occurrence par le mot anglais qui convient isolément peut rendre l’action claire tout en effaçant le retour du même son. Maintenir un jeu verbal en anglais peut conduire à déplacer une image ou une pause. Une traduction bilingue destinée à l’étude peut signaler brièvement ce jeu dans une note. Une version faite pour être dite à voix haute devra chercher son effet dans les mots prononcés. La difficulté ne rend pas équivalents un contresens sur l’action et la perte explicitée d’une résonance. Elle oblige à hiérarchiser et à rendre perceptible le coût de la solution qui prévaut.
 
-![Un même énoncé, trois choix à justifier](figures/adresse.svg)
+![Figure 1 — Un même énoncé, trois choix à justifier](figures/adresse.svg)
 
-Le mot « intraduisible » désigne dans ce cas une résistance à un transfert sans reste. Il peut constituer une raison de traduire à nouveau. Une première version a rendu l’information, une seconde souhaite rendre audible une ambiguïté, une troisième dispose d’un usage nouveau dans la langue d’arrivée. Le texte source conserve sa capacité de reprendre les versions qui prétendent le représenter. Elles ne deviennent pas pour autant des approximations de plus en plus proches d’un double absolu que l’on pourrait jamais exposer.
+Essayons le jeu sur deux phrases de notre invention. « Pas un bruit. Un pas. » La version anglaise « Not a sound. A footstep. » maintient le silence, puis l’irruption du bruit qui le rompt. Elle perd le son identique par lequel le français passe de la négation à la présence de quelqu’un. « No sound. Someone steps. » reprend des sifflements, mais introduit plus explicitement une personne et un mouvement. Pour un sous-titre lu dans l’urgence, je choisirais la première. Pour une scène jouée, j’essaierais les deux à voix haute avec le rythme des pas. Même lorsqu’une perte est inévitable, on peut donner une raison de préférer une solution à une autre dans un emploi précis.
+
+Le mot « intraduisible » désigne dans ce cas une résistance à un transfert sans reste. Il peut constituer une raison de traduire à nouveau. Une première version a rendu l’information, une seconde souhaite rendre audible une ambiguïté, une troisième dispose d’un usage nouveau dans la langue d’arrivée. Le texte source continue de mettre les versions à l’épreuve. Une nouvelle traduction peut rendre perceptible ce qu’une autre avait sacrifié. La possibilité de reprendre le travail explique la coexistence de plusieurs versions jugées fidèles, chacune pour des raisons qu’il reste à comparer.
 
 ## Une traduction engage aussi une relation entre des lecteurs
 

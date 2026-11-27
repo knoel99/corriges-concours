@@ -1,0 +1,115 @@
+{
+  "slug": "x_pc_physique-a_2019",
+  "epreuve": {
+    "concours": "X",
+    "ecoles_historiques": "École polytechnique et ESPCI",
+    "filiere": "PC",
+    "matiere": "Physique A",
+    "annee": 2019
+  },
+  "questions": 44,
+  "intitule": "Étude de la mécanique de l’audition humaine",
+  "redaction": "Les 44 questions sont résolues dans les deux éditions, du pavillon au modèle de propagation de la membrane basilaire. Les amplitudes et retards de phase ont été lus sur la figure 5.",
+  "sources": {
+    "garde": "XE · École polytechnique et ESPCI · 4 heures",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/2019_PC_sujet_PhyA.pdf",
+    "sujet_sha256": "9470485733a86d98a37c45da071e12597776c800d1d972e8debd070da21d63df",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/11/19_PC_rap_ePhyA.pdf",
+    "rapport_sha256": "4131597b5bc1ce54199006f095cf2b461bc702d523016603d10cfa1db7a2eae9"
+  },
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "physique_a_pc_x",
+      "session": "physique_a_pc_x",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Rapport de physique A PC 2019, en particulier paroi de section variable, impédances, interprétation de TG², phase dispersive et limites de l’approximation près de la place caractéristique."
+    },
+    {
+      "phase": "redaction",
+      "agent": "physique_a_pc_x",
+      "session": "physique_a_pc_x",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Les 44 questions sont résolues dans les deux éditions, du pavillon au modèle de propagation de la membrane basilaire. Les amplitudes et retards de phase ont été lus sur la figure 5."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "15",
+      "fichier": "figures/pavillon.svg",
+      "legende": "Amplitude instantanée maximale sur la branche croissante imposée par le sujet, entre l’entrée et le tympan."
+    },
+    {
+      "numero": 2,
+      "question": "23 et 24",
+      "fichier": "figures/gain.svg",
+      "legende": "Exemple pour Q = 1. La valeur maximale est fixée par les sections des deux pistons, les pentes asymptotiques valent ±20 dB par décade."
+    },
+    {
+      "numero": 3,
+      "question": "40 et 43",
+      "fichier": "figures/membrane.svg",
+      "legende": "Phase et amplitude prédites en amont du point caractéristique x*. Les courbes illustrent ω/ωb = 1/2 dans l’approximation à variation lente."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44"
+    ]
+  }
+}

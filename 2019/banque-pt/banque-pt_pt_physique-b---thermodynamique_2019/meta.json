@@ -1,0 +1,343 @@
+{
+  "slug": "banque-pt_pt_physique-b---thermodynamique_2019",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique B - Thermodynamique",
+    "annee": 2019
+  },
+  "questions": 42,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2019/ph_b_th_2019_pt.pdf",
+    "sujet_sha256": "5a149340ffdf88f2aa5dce075225c9bedbaf0952063fddbd1d61f2c8e3faa473",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2019/rapport_phys_b_ecrit_2019.pdf",
+    "rapport_sha256": "127df965f60c19d552d6b389b8889e0c203655b34ff6344e4d613c8236a02955",
+    "notice": "https://www.banquept.fr/documents/livret/2019/Livret_PT_2019.pdf#page=12",
+    "notice_sha256": "5e9e9802e7a767f8bf21f41392351aced28769ba62375db0bc111044780779c7"
+  },
+  "figures": [
+    {
+      "fichier": "figures/circuit.svg",
+      "question": "Q3",
+      "legende": "États du circuit et sens des échanges avec la cuisine et l’armoire"
+    },
+    {
+      "fichier": "figures/cycles.svg",
+      "question": "Q4",
+      "legende": "Cycles idéal et réel dans les plans pression-enthalpie et température-entropie"
+    },
+    {
+      "fichier": "figures/combine.svg",
+      "question": "Q25",
+      "legende": "Cycles de la figure 2a et trajet dans le combiné en trois couleurs"
+    },
+    {
+      "fichier": "figures/fuites.svg",
+      "question": "Q32",
+      "legende": "Réchauffement à l’arrêt et lecture de la pente du logarithme"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "42 questions, figures et tableaux des annexes sur le thème « Le réfrigérateur et le combiné réfrigérateur-congélateur »."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Vérification des colonnes du tableau 3, des trois couleurs réclamées en figure 2a, des isothermes en 2b et de la coquille du graphe Q32. Contrôle indépendant des enthalpies du R134a, du titre après le deuxième laminage, du partage de puissance, du temps d’arrêt et des rendements."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21",
+      "Q22",
+      "Q23",
+      "Q24",
+      "Q25",
+      "Q26",
+      "Q27",
+      "Q28",
+      "Q29",
+      "Q30",
+      "Q31",
+      "Q32",
+      "Q33",
+      "Q34",
+      "Q35",
+      "Q36",
+      "Q37",
+      "Q38",
+      "Q39",
+      "Q40",
+      "Q41",
+      "Q42"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Q1",
+        "page_pdf": 2,
+        "intitule": "Sens des trois échanges"
+      },
+      {
+        "question": "Q2",
+        "page_pdf": 2,
+        "intitule": "Borne de l’efficacité"
+      },
+      {
+        "question": "Q3",
+        "page_pdf": 3,
+        "intitule": "Schéma de l’installation"
+      },
+      {
+        "question": "Q4",
+        "page_pdf": 3,
+        "intitule": "Cycle à compresseur idéal"
+      },
+      {
+        "question": "Q5",
+        "page_pdf": 3,
+        "intitule": "Colonnes du tableau 3"
+      },
+      {
+        "question": "Q6",
+        "page_pdf": 3,
+        "intitule": "Températures de changement d’état"
+      },
+      {
+        "question": "Q7",
+        "page_pdf": 3,
+        "intitule": "Approximation isobare"
+      },
+      {
+        "question": "Q8",
+        "page_pdf": 3,
+        "intitule": "Écart au comportement de gaz parfait"
+      },
+      {
+        "question": "Q9",
+        "page_pdf": 3,
+        "intitule": "Compression réelle sur le plan pression-enthalpie"
+      },
+      {
+        "question": "Q10",
+        "page_pdf": 3,
+        "intitule": "État de refoulement réel"
+      },
+      {
+        "question": "Q11",
+        "page_pdf": 3,
+        "intitule": "Cycle réel dans le plan entropique"
+      },
+      {
+        "question": "Q12",
+        "page_pdf": 3,
+        "intitule": "Entropie de compression"
+      },
+      {
+        "question": "Q13",
+        "page_pdf": 3,
+        "intitule": "Premier principe en écoulement"
+      },
+      {
+        "question": "Q14",
+        "page_pdf": 3,
+        "intitule": "Ordre de grandeur gravitationnel"
+      },
+      {
+        "question": "Q15",
+        "page_pdf": 3,
+        "intitule": "Débit massique dans une conduite"
+      },
+      {
+        "question": "Q16",
+        "page_pdf": 3,
+        "intitule": "Maximum de volume massique"
+      },
+      {
+        "question": "Q17",
+        "page_pdf": 3,
+        "intitule": "Vitesse maximale"
+      },
+      {
+        "question": "Q18",
+        "page_pdf": 3,
+        "intitule": "Ordre de grandeur cinétique"
+      },
+      {
+        "question": "Q19",
+        "page_pdf": 3,
+        "intitule": "Efficacité exprimée en enthalpies"
+      },
+      {
+        "question": "Q20",
+        "page_pdf": 3,
+        "intitule": "Valeur de l’efficacité frigorifique"
+      },
+      {
+        "question": "Q21",
+        "page_pdf": 3,
+        "intitule": "Puissances frigorifique et mécanique"
+      },
+      {
+        "question": "Q22",
+        "page_pdf": 3,
+        "intitule": "Rôle de la surchauffe"
+      },
+      {
+        "question": "Q23",
+        "page_pdf": 3,
+        "intitule": "Rôle et limite du sous-refroidissement"
+      },
+      {
+        "question": "Q24",
+        "page_pdf": 4,
+        "intitule": "Partage de la puissance des évaporateurs"
+      },
+      {
+        "question": "Q25",
+        "page_pdf": 4,
+        "intitule": "Tracé du combiné"
+      },
+      {
+        "question": "Q26",
+        "page_pdf": 4,
+        "intitule": "Titre de vapeur après la seconde détente"
+      },
+      {
+        "question": "Q27",
+        "page_pdf": 4,
+        "intitule": "Efficacité du combiné"
+      },
+      {
+        "question": "Q28",
+        "page_pdf": 4,
+        "intitule": "Signe de la conductance de fuite"
+      },
+      {
+        "question": "Q29",
+        "page_pdf": 4,
+        "intitule": "Équation de réchauffement"
+      },
+      {
+        "question": "Q30",
+        "page_pdf": 4,
+        "intitule": "Évolution à l’arrêt"
+      },
+      {
+        "question": "Q31",
+        "page_pdf": 4,
+        "intitule": "Températures de l’armoire et de la cuisine"
+      },
+      {
+        "question": "Q32",
+        "page_pdf": 5,
+        "intitule": "Pente logarithmique et fuite thermique"
+      },
+      {
+        "question": "Q33",
+        "page_pdf": 5,
+        "intitule": "Efficacité au régime régulé"
+      },
+      {
+        "question": "Q34",
+        "page_pdf": 5,
+        "intitule": "Puissance des infiltrations thermiques"
+      },
+      {
+        "question": "Q35",
+        "page_pdf": 5,
+        "intitule": "Puissance nécessaire du compresseur"
+      },
+      {
+        "question": "Q36",
+        "page_pdf": 5,
+        "intitule": "Équation de la mise en route"
+      },
+      {
+        "question": "Q37",
+        "page_pdf": 5,
+        "intitule": "Temps de refroidissement sans fuite"
+      },
+      {
+        "question": "Q38",
+        "page_pdf": 5,
+        "intitule": "Influence des fuites pendant le démarrage"
+      },
+      {
+        "question": "Q39",
+        "page_pdf": 6,
+        "intitule": "Condition de surpression"
+      },
+      {
+        "question": "Q40",
+        "page_pdf": 6,
+        "intitule": "Production frigorifique volumique"
+      },
+      {
+        "question": "Q41",
+        "page_pdf": 6,
+        "intitule": "Choix domestique face à l’ammoniac"
+      },
+      {
+        "question": "Q42",
+        "page_pdf": 6,
+        "intitule": "Pouvoir de réchauffement et inflammabilité"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "annexes": "Questions pages PDF 2 à 6, documents 1 et 2 pages 7 et 8, figure 1 et tableau 3 page 13, figures 2a et 2b pages 14 et 15. Les pages de graphes du document-réponse sont lues dans le sens paysage."
+  }
+}

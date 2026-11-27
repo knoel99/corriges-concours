@@ -1,0 +1,98 @@
+{
+  "slug": "ens_mp-pc_mathematiques-informatique_2006",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Mathématiques-informatique",
+    "annee": 2006,
+    "duree_heures": 4
+  },
+  "questions": 29,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-i/session-2006/sujet-ecrit-2006-i_mathematiques_informatique.pdf",
+    "index_banque": "https://banques-ecoles.fr/cms/filiere-mp/les-annales-et-rapports-des-jurys/",
+    "identification": "Cahier 60.24M, sept pages. Écrit de quatre heures commun aux ENS de Paris, Lyon et Cachan en MP groupe I, à Paris et Lyon en PC groupe I.",
+    "sujet_sha256": "c7df9a885036b9acb5ff50be768ad44af08fd0973347dfe3453ce458aee35728",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-i/session-2006/rapport-2006-i_ecrit_mathematiques_informatique.pdf",
+    "rapport_sha256": "f5174c59fb69cb17c73b4bb32f578f29ba709556465c1088519a7fd180b6d2f3"
+  },
+  "figures": [
+    {
+      "fichier": "figures/precision-newton.svg",
+      "question": "1.6",
+      "legende": "Figure 1 — Les premières itérations garantissent respectivement un, deux, quatre et huit coefficients exacts pour la racine de terme constant un."
+    },
+    {
+      "fichier": "figures/quotients-complets.svg",
+      "question": "3.6",
+      "legende": "Figure 2 — Pour D égal à x puissance quatre plus un, les quotients complets reviennent au même état dès le premier rang positif."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Les quatre parties sur les séries de Laurent, les convergents, la meilleure approximation et les intégrales pseudo-hyperelliptiques. Pseudo-code, coût, précision, signes et normalisation de la primitive. Le cas des dénominateurs nuls sur un corps général est explicitement distingué."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture des séries de Laurent, des convergents et de la reconnaissance des primitives, en suivant les 29 réponses du cahier 60.24M et son rapport. Borne exacte du nombre de produits en 1.1, traitement de la série nulle, distinction entre valeur réelle et quotient complet formel. Vérification des déterminants, des deux figures et de quinze normes de convergents pour trois radicandes."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1.1",
+      "1.1.2",
+      "1.1.3",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "3.1.1",
+      "3.1.2",
+      "3.1.3",
+      "3.2",
+      "3.3",
+      "3.4.1",
+      "3.4.2",
+      "3.4.3",
+      "3.4.4",
+      "3.5",
+      "3.6.1",
+      "3.6.2",
+      "3.6.3",
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4"
+    ],
+    "precision": "Les 20 questions principales du cahier se décomposent en 29 réponses lorsque les subdivisions des questions 1.1, 3.1, 3.4 et 3.6 sont dénombrées individuellement.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "c7df9a885036b9acb5ff50be768ad44af08fd0973347dfe3453ce458aee35728",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Relecture des séries de Laurent, des convergents et de la reconnaissance des primitives, en suivant les 29 réponses du cahier 60.24M et son rapport. Borne exacte du nombre de produits en 1.1, traitement de la série nulle, distinction entre valeur réelle et quotient complet formel. Vérification des déterminants, des deux figures et de quinze normes de convergents pour trois radicandes.",
+      "commit_redaction_anterieure": "2182b6ce1e4c802cdc0ed719501eebcd867d722f"
+    }
+  }
+}

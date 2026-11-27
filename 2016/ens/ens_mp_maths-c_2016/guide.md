@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le sujet construit des commandes qui annulent un état au temps T. Les deux premières parties traitent les équations différentielles ordinaires. Les trois dernières construisent un raccordement de Gevrey utilisé pour l’équation de la chaleur.
 
 ## 1. Commande d’une équation différentielle scalaire
@@ -304,6 +306,8 @@ Pour $j\ge1$, $(1-w)^{-2j}=\sum_{l\ge0}\binom{2j+l-1}{l}w^l$ sur $|w|<1$. Pour $
 
 Sur un voisinage réel de zéro, la fonction développée vaut $h(t_0-z)$, en prenant la même expression lisse sur $t>0$ si $t_0=T$. Donc $a_n=(-1)^nh^{(n)}(t_0)/n!$. La formule 4.3 avec $r=t_0/3$ identifie $a_n$ à la moyenne du quotient imprimé. En prenant les modules on obtient exactement l’égalité demandée.
 
+Plus précisément, avant le passage aux modules, le calcul donne $$\frac{(-1)^n h^{(n)}(t_0)}{n!}=\frac{1}{2\pi}\int_0^{2\pi}\frac{\exp\bigl(-1/(t_0-re^{i\theta})^2\bigr)}{(re^{i\theta})^n}\,d\theta.$$ Les barres verticales de chaque côté de la formule imprimée éliminent le signe $(-1)^n$.
+
 ### Question 4.4d
 
 > [!INDICATION]
@@ -406,3 +410,5 @@ Grâce à 5.2, $H_t=\sum_{n\ge0} f^{(n+1)}(t)x^{2n}/(2n)!$ et $H_{xx}=\sum_{n\ge
 #### Solution
 
 Écrivons $H^0(x)=\sum_{n=0}^d a_n x^{2n}$. Prenons $P(t)=\sum_{n=0}^d a_n(2n)!t^n/n!$, puis $f=P\varphi$. Par 4.6, $f\in G^{3/2}$ et l’on peut appliquer 5.1–3. En zéro, $f^{(n)}(0)=(2n)!a_n$ pour $n\le d$ et zéro au-delà par 4.7. Ainsi $H(0,x)=H^0(x)$. Au temps $T$, tous les jets de $f$ sont nuls, d’où $H(T,x)=0$. Enfin $u(t)=H_x(t,1)$ est continue par 5.2 et fournit la condition de Neumann requise à droite, tandis que celle à gauche découle de 5.3. Cette commande accomplit le transfert demandé.
+
+Par exemple $H^0(x)=1+3x^2+5x^4$ impose $P(t)=1+6t+60t^2$. La série pour la commande est $u(t)=\sum_{n\ge1}f^{(n)}(t)/(2n-1)!$. Elle donne $u(0)=6+120/6=26$, égal à $(H^0)^{\prime}(1)$, et $u(T)=0$.

@@ -1,0 +1,112 @@
+{
+  "slug": "banque-pt_pt_francais-b_2010",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français B",
+    "annee": 2010
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2010/fr_b_pt_2010.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2010/rapport_fra_b_ecrit_2010.pdf",
+    "programme_officiel": "https://www.education.gouv.fr/bo/2009/27/esrs0900270a.html",
+    "notice": "https://www.banquept.fr/documents/livret/2010/Livret_PT_2010.pdf#page=12",
+    "sujet_sha256": "4f24f668175bb0b14ada0043581598921a3e5109ce9ebe9dfce4965c5e219c30",
+    "rapport_jury_sha256": "94182dacfb752532abb8907e04da6b29aeee45cab80f43df33559ac49653ce65",
+    "programme_officiel_sha256": "a4b832b84ac007d2c6111968fe2312ef924ccdec70ca0abeac08729c3e79db15",
+    "notice_sha256": "7cc6c6ae3007f08f1ba5351e2e64af501a4e93bef5175ed9429d5fdd34f32d00",
+    "oeuvres_au_programme": [
+      "Georg Simmel, Philosophie de l’argent (partie analytique, chapitre III, sections 1 et 2, traduction de Sabine Cornille et Philippe Ivernel)",
+      "Émile Zola, L’Argent",
+      "Molière, L’Avare"
+    ],
+    "theme": "L’argent",
+    "admissibilite_admission": "ENS Cachan, écrit d’admission, coefficient 4.",
+    "pages_rapport": "Rapport PDF p. 1 à 7. Progression de l’argument d’Hénaff p. 1 et 2, analyse du mépris, de ceux qui le partagent et des formes d’écriture p. 3 et 4. Le rapport écrit Maurice à la première mention, puis Marcel dans le libellé."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "À qui attribuer le jugement sur l’argent ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture de l’extrait d’Hénaff, des cinq pages imprimées porteuses d’énoncé et du rapport, rédaction du résumé et d’une dissertation distinguant les points de vue dramatiques, romanesques et philosophiques."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle du prénom sur le feuillet, du traitement des formes abstraites de la monnaie et des 180 mots. Précision apportée à la première intervention de Frosine et à la demande qu’elle adresse à Harpagon.",
+      "tour": 1
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Résumé",
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Résumé",
+        "page_pdf": 1,
+        "page_pdf_fin": 4,
+        "page_consigne": 5,
+        "perimetre": "L’extrait commence sur la garde, page 1, par « Le soupçon qui porte sur l’argent » et s’achève page 4 par « démographiques ou épidémiologiques ». Les questions figurent page 5. Les pages 6 à 8 sont sans texte d’épreuve.",
+        "mots_demandes": 180,
+        "mots_admis": [
+          162,
+          198
+        ],
+        "mots_par_paragraphe": [
+          60,
+          40,
+          80
+        ],
+        "mots_rediges": 180,
+        "points": 8
+      },
+      {
+        "question": "Dissertation",
+        "page_pdf": 5,
+        "perimetre": "En vous référant précisément aux œuvres étudiées, vous direz si le mépris de l’argent qu’évoque Marcel Hénaff y paraît partagé ou non.",
+        "points": 12
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

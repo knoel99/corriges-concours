@@ -1,0 +1,74 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_analyse-macroeconomique_2024",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Analyse macroéconomique",
+    "annee": 2024,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "Les dettes face à l’inflation",
+  "gabarit": "dissertation",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2024_Analyse_macroeeconomique_EcoG%201.pdf",
+    "sujet_sha256": "1317169da4948119aadf98a8e848b1e677834eb9b11ded05c0b3c9e56c8ca54d",
+    "pages_sujet": "2 du PDF officiel",
+    "index": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=289&field_year_target_id%5B%5D=589&page=1",
+    "documents": [
+      {
+        "annee": 2024,
+        "role": "rapport",
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2024_Rapport_Macro%C3%A9conomie_Eco-Gestion%201_Ecrit.pdf",
+        "index": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=289&field_year_target_id%5B%5D=589",
+        "pages": 3,
+        "sha256": "bf4d26263bed68004aab7bc747c5981f0853c74bff99edad405899afba80945d"
+      },
+      {
+        "annee": 2024,
+        "role": "sujet",
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2024_Analyse_macroeeconomique_EcoG%201.pdf",
+        "index": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=289&field_year_target_id%5B%5D=589&page=1",
+        "pages": 2,
+        "sha256": "1317169da4948119aadf98a8e848b1e677834eb9b11ded05c0b3c9e56c8ca54d"
+      }
+    ],
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2024_Rapport_Macro%C3%A9conomie_Eco-Gestion%201_Ecrit.pdf",
+    "rapport_sha256": "bf4d26263bed68004aab7bc747c5981f0853c74bff99edad405899afba80945d"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/dettes-et-denomination.svg",
+      "question": "Composition",
+      "legende": "Pour un principal initial de 100, après une hausse du niveau des prix de 10 %, le principal en pouvoir d’achat initial dépend de la clause d’indexation ou de la monnaie de libellé."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "gestion_2022_2023",
+      "agent": "gestion_2022_2023",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Dissertation complète, guide méthodologique et comparaison quantitative illustrée : un même choc de prix, trois contrats de dette."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Composition"
+    ],
+    "limites": "Une proposition argumentée, située à la date du concours ; les exemples chiffrés illustratifs sont explicités."
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "slug": "ens_mp-pc_chinois-le2_2005",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Chinois (LE2)",
+    "annee": 2005,
+    "modalite": "écrit"
+  },
+  "intitule": "Le coq et les rythmes biologiques",
+  "questions": 2,
+  "redaction": "Version du passage entier et réponse argumentée en chinois à la question de la page 5.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2005/sujet-2005-ecrit-mp_pc_langue_etrangere_2.pdf#page=5",
+    "sha256_sujet": "3591b865ff600e9a1da38a819b3d68405c9a905cb43f3fc1b5ef6183ff6011c6",
+    "code_garde": "UC 528",
+    "ecoles": "ENS de Paris et de Cachan",
+    "page_garde": 1,
+    "page": 5,
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2005",
+    "index_mp": "https://banques-ecoles.fr/cms/filiere-mp/annales-de-la-banque-mmpmpi/session-2005",
+    "reference_du_passage": "Aucun auteur ni ouvrage indiqué sur la page de chinois.",
+    "rapport_jury": null,
+    "precision_rapport": "Rapport propre à l’écrit de chinois LE2 de 2005 non retrouvé."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I",
+      "fichier": "figures/experience-du-coq.svg",
+      "legende": "Du maintien du chant dans le noir à l’hypothèse d’un rythme interne."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français, réponse en chinois, indications de traduction et schéma spécifique au passage."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I",
+      "II"
+    ]
+  }
+}

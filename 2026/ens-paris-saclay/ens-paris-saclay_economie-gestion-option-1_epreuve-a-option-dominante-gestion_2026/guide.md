@@ -6,17 +6,27 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+**Couverture vérifiée.** Les quinze réponses ont été rapprochées des huit annexes. Les imputations ABC, les cinq écritures de clôture et les ratios ont été recalculés. Les deux planches du bilan ont été lues directement, y compris la ligne des concours bancaires. Les réponses de management distinguent les faits propres à Pluvier des exemples de l’article sur les autres marques.
+
 ## Lire le cas Maison Pluvier
 
 Commencer par trois feuilles de brouillon. Sur la première, séparer charges directes et activités et conserver tous les décimaux jusqu’aux coûts globaux. Sur la deuxième, disposer les cinq écritures d’inventaire du 31 décembre. Sur la troisième, reprendre les deux colonnes « net » du bilan et repérer les concours bancaires indiqués sous le passif. Le cas figure aux pages imprimées 1/10 à 10/10 après le feuillet de l’option économique.
 
 ![Figure 1 — Du prix de vente au résultat unitaire](figures/marges-pluvier.svg)
 
+Le contrôle le plus sensible porte sur la Demoiselle. Divisez le résultat global par les 18 000 unités avant d’arrondir. La différence entre les prix et coûts unitaires affichés comporte un écart d’arrondi de 0,01 euro.
+
 **Vérifications numériques.** Les coûts des sept activités totalisent 2 014 000 €. Les deux chiffres d’affaires totalisent 7 150 000 € HT. Une bobine de 200 mètres permet de convertir les 270 centimètres de fil en 2,70 mètres. Une heure de service client ne se confond pas avec une heure de couture. Le budget de la campagne mixte est partagé en neuvièmes.
 
 **Du résultat au choix.** La question 2 utilise le résultat rapporté au chiffre d’affaires. La question 4 demande une marge sur coût. Écrire les dénominateurs avant d’entrer les nombres dans la calculatrice. De même, les 360 000 € de dette nouvelle servent au calcul du projet seul et s’ajoutent aux 622 742 € existants pour le calcul concernant l’ensemble de l’entreprise.
 
 **De la théorie au cas.** Pour chaque question de management, exposer le mécanisme, identifier la ressource rare de l’atelier puis proposer un indicateur qui pourrait infirmer le diagnostic. Garder distincts les exemples externes tirés de l’article et les pratiques attestées chez Maison Pluvier. La mention d’un objectif « fin 2019 » après une reprise en 2020 est incohérente dans la présentation, mais les ventes, le bilan et les écritures disposent chacun de leur propre exercice clairement daté.
+
+Pour contrôler l’annexe 6, lisez ensemble les pages imprimées 7/10 et 8/10. Les 50 536 euros de concours bancaires de 2023 sont déjà compris dans les 272 076 euros de dettes auprès des établissements de crédit. Lorsqu’on cherche les dettes hors emprunts au passif, déduire les 272 076 euros une seule fois.
 
 ## Résolution des quinze questions
 
@@ -84,6 +94,8 @@ La détention de longue durée sans intervention dans la gestion relève ici des
 | Capitaux propres / total du bilan | 51,38 % | 48,09 % |
 
 En 2024, 1 005 974 + 622 742 − 1 139 406 donnent 489 310 € de fonds de roulement. Le recul du besoin s’explique notamment par la baisse des créances clients et la montée des dettes fournisseurs, en dépit du stock accru de matières. La trésorerie redevient positive. L’endettement progresse plus vite que les capitaux propres et la CAF, même si une année environ de CAF égale encore la dette stable. L’affectation intégrale de la CAF au remboursement demeure une hypothèse de calcul.
+
+Un second calcul isole le besoin financier dans les postes circulants, en euros. En 2023, l’actif circulant hors disponibilités vaut 735 075 − 6 513 = 728 562. Au passif, les dettes hors emprunts valent 878 738 − 272 076 − 161 684 = 444 978. Le besoin atteint donc 283 584. En 2024, les mêmes opérations donnent 952 567 − 243 960 = 708 607 et 1 086 000 − 463 399 − 159 343 = 463 258, soit un besoin de 245 349. L’écart d’un euro avec les 245 350 obtenus par le fonds de roulement et la trésorerie provient des totaux imprimés. À l’actif 2024, 1 139 406 + 952 567 donnent 2 091 973, alors que le total général publié est de 2 091 974. Les deux calculs confirment une diminution du besoin d’environ 38 235 euros.
 
 **10. Tout financer par augmentation de capital.** Une souscription en numéraire apporte des ressources durables sans échéance d’intérêts ni remboursement contractuel, améliore la faculté d’emprunt ultérieure et partage le risque du lancement. La famille doit cependant mobiliser ses propres fonds ou accepter la dilution du contrôle et des dividendes futurs. Les délais, frais d’émission et exigences de rémunération des apporteurs doivent entrer dans la comparaison.
 

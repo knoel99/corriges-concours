@@ -4,14 +4,16 @@
     "concours": "X-ENS",
     "filiere": "PSI",
     "matiere": "Maths PSI",
-    "annee": 2024
+    "annee": 2024,
+    "modalite": "écrit"
   },
   "questions": 40,
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
     "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2024_PSI_Maths_XUSR.pdf",
     "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2024_Rapport_PSI_Maths_ECRIT.pdf",
-    "sha256_sujet": "c6b0993a6256f785acabe107218ac3e81d20198860708d85d9823016199128af"
+    "sha256_sujet": "c6b0993a6256f785acabe107218ac3e81d20198860708d85d9823016199128af",
+    "sha256_rapport": "01f190d8ad215e449e3846f9a6d669ff72300275e24b71eefa9f5f47645c5f59"
   },
   "figures": [
     {
@@ -23,6 +25,12 @@
       "fichier": "figures/25-fourier.svg",
       "question": "25d",
       "legende": "Les quatre racines de X⁴ − 1 sont les nœuds d’interpolation pour la matrice de Fourier. Un nœud absent du spectre peut être conservé."
+    },
+    {
+      "fichier": "figures/surdiagonales-exponentielle.svg",
+      "question": "23b",
+      "legende": "Pour le décalage de taille quatre, les quatre coefficients de Taylor de l’exponentielle occupent chacun une surdiagonale.",
+      "provenance": "Figure originale pour le contrôle de cette question."
     }
   ],
   "contributions": [
@@ -36,6 +44,392 @@
       "perimetre": "Rédaction des quatre parties à partir du PDF officiel et des observations question par question du rapport. Preuve attendue et extension complexe de la question 7 neutralisée, interpolation avec multiplicités, projecteurs spectraux, matrices de Fourier et lois génératrices. Deux figures originales.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Reprise des 40 réponses des quatre parties sur les séries de matrices, l’interpolation d’Hermite, le calcul spectral et les lois de variables aléatoires. Vérification du rapport Saclay de 2024 et des hypothèses de la question 7 neutralisée."
     }
-  ]
+  ],
+  "duree_heures": 4,
+  "date_revision": "2026-11-26",
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2024_PSI_Maths_XUSR.pdf",
+      "sha256": "c6b0993a6256f785acabe107218ac3e81d20198860708d85d9823016199128af",
+      "pages": 9,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "decde5b959884a9718df1ab07fbe23a0b2f84de88b5a725c31b216bd8376f1ac"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "08c18d82161ab777ddc785b13f96abadacec7c8bd651924fe0b2b4c99f94193e"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "daf11bc1e6773c671a217e094a8196e3915fee449ec084354efb4ca3610b36c4"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "005f453acb11d16af482ce1eb88d407293e79c411d83874449499a304247b64d"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "5b070892bf803b41835011946e94c591a728217b819d9979a7de51382da9fde0"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "1e4bd0fd3d46ab993e38a424a57ea9e8049d110cd62f85564bdbc05c8bee1378"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "90822f23d3b660b9275d41a35e5778da4af712a4c8f59dacfd26fc8353654625"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "e786c25943e0bd62b2d4f24b3054a0dc0e5a8d4503f4a66314e1264d56326231"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "5bfbebf29029d71ee2c34fae69ecb781c3f2192b31a4ea9527e2307996685573"
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2024_Rapport_PSI_Maths_ECRIT.pdf",
+      "sha256": "01f190d8ad215e449e3846f9a6d669ff72300275e24b71eefa9f5f47645c5f59",
+      "pages": 3,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "0cf8a32a8944a25232b017e20a2ad767b363b347c3867b1c8c88775257b873ad"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "fcbffecfc71fb1984325e658317f6a7accbabb8f38b89116d57878cd75375dd2"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "952fd2849b724e377f4f24fe1f28611ab066e53219c981016ec84884660ae208"
+        }
+      ]
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17a",
+      "17b",
+      "18",
+      "19",
+      "20a",
+      "20b",
+      "20c",
+      "21",
+      "22a",
+      "22b",
+      "23a",
+      "23b",
+      "24a",
+      "24b",
+      "24c",
+      "24d",
+      "24e",
+      "24f",
+      "25a",
+      "25b",
+      "25c",
+      "25d",
+      "26a",
+      "26b"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "1",
+        "page_pdf": 5,
+        "objet": "Rayon nul et exemple",
+        "page_rapport": 1
+      },
+      {
+        "question": "2",
+        "page_pdf": 5,
+        "objet": "Exclusion du singleton nul",
+        "page_rapport": 1
+      },
+      {
+        "question": "3",
+        "page_pdf": 5,
+        "objet": "Caractérisation du rayon infini et exemple",
+        "page_rapport": 1
+      },
+      {
+        "question": "4",
+        "page_pdf": 5,
+        "objet": "Compatibilité universelle et nilpotence",
+        "page_rapport": 1
+      },
+      {
+        "question": "5",
+        "page_pdf": 5,
+        "objet": "Disques des séries dérivées",
+        "page_rapport": 2
+      },
+      {
+        "question": "6",
+        "page_pdf": 5,
+        "objet": "Compatibilité avec la somme et le produit",
+        "page_rapport": 2
+      },
+      {
+        "question": "7",
+        "page_pdf": 5,
+        "objet": "Produit de matrices commutantes, question neutralisée",
+        "page_rapport": 2,
+        "rubrique_jury": "Neutralisation explicite de la question imprimée."
+      },
+      {
+        "question": "8",
+        "page_pdf": 5,
+        "objet": "Existence d’un annulateur",
+        "page_rapport": 2
+      },
+      {
+        "question": "9",
+        "page_pdf": 5,
+        "objet": "Construction et unicité du minimal",
+        "page_rapport": 2
+      },
+      {
+        "question": "10",
+        "page_pdf": 5,
+        "objet": "Divisibilité par le minimal",
+        "page_rapport": 2
+      },
+      {
+        "question": "11",
+        "page_pdf": 5,
+        "objet": "Racines et valeurs propres, deux sens",
+        "page_rapport": 2
+      },
+      {
+        "question": "12",
+        "page_pdf": 5,
+        "objet": "Réalité des coefficients",
+        "page_rapport": 2
+      },
+      {
+        "question": "13",
+        "page_pdf": 6,
+        "objet": "Bijectivité de l’interpolation avec multiplicité",
+        "page_rapport": 2
+      },
+      {
+        "question": "14",
+        "page_pdf": 6,
+        "objet": "Caractérisation des représentants",
+        "page_rapport": 2
+      },
+      {
+        "question": "15",
+        "page_pdf": 6,
+        "objet": "Évaluation sur une matrice scalaire",
+        "page_rapport": 2
+      },
+      {
+        "question": "16",
+        "page_pdf": 6,
+        "objet": "Différence divisée sur un triangle deux par deux",
+        "page_rapport": 2
+      },
+      {
+        "question": "17a",
+        "page_pdf": 6,
+        "objet": "Représentant polynomial commun",
+        "page_rapport": 2
+      },
+      {
+        "question": "17b",
+        "page_pdf": 6,
+        "objet": "Entrelacement pour les produits",
+        "page_rapport": 2
+      },
+      {
+        "question": "18",
+        "page_pdf": 6,
+        "objet": "Règle du produit avec multiplicités",
+        "page_rapport": 2
+      },
+      {
+        "question": "19",
+        "page_pdf": 7,
+        "objet": "Minimal à racines simples",
+        "page_rapport": 2
+      },
+      {
+        "question": "20a",
+        "page_pdf": 7,
+        "objet": "Interpolation de Lagrange",
+        "page_rapport": 3
+      },
+      {
+        "question": "20b",
+        "page_pdf": 7,
+        "objet": "Image et noyau des projecteurs",
+        "page_rapport": 3
+      },
+      {
+        "question": "20c",
+        "page_pdf": 7,
+        "objet": "Résolution de l’identité",
+        "page_rapport": 3
+      },
+      {
+        "question": "21",
+        "page_pdf": 7,
+        "objet": "Invariance par similitude",
+        "page_rapport": 3
+      },
+      {
+        "question": "22a",
+        "page_pdf": 7,
+        "objet": "Évaluation diagonale",
+        "page_rapport": 3
+      },
+      {
+        "question": "22b",
+        "page_pdf": 7,
+        "objet": "Transport par la base propre",
+        "page_rapport": 3
+      },
+      {
+        "question": "23a",
+        "page_pdf": 7,
+        "objet": "Indice du décalage nilpotent",
+        "page_rapport": 3
+      },
+      {
+        "question": "23b",
+        "page_pdf": 8,
+        "objet": "Développement de Taylor et entrées de la matrice",
+        "page_rapport": 3
+      },
+      {
+        "question": "24a",
+        "page_pdf": 8,
+        "objet": "Rang et image du produit extérieur",
+        "page_rapport": 3,
+        "rubrique_jury": "Remarque d’ensemble sur les dernières questions, avec mention explicite de 26b."
+      },
+      {
+        "question": "24b",
+        "page_pdf": 8,
+        "objet": "Spectre et cas du scalaire nul",
+        "page_rapport": 3,
+        "rubrique_jury": "Remarque d’ensemble sur les dernières questions, avec mention explicite de 26b."
+      },
+      {
+        "question": "24c",
+        "page_pdf": 8,
+        "objet": "Compatibilité du produit de rang un",
+        "page_rapport": 3,
+        "rubrique_jury": "Remarque d’ensemble sur les dernières questions, avec mention explicite de 26b."
+      },
+      {
+        "question": "24d",
+        "page_pdf": 8,
+        "objet": "Minimal quand les nœuds sont distincts",
+        "page_rapport": 3,
+        "rubrique_jury": "Remarque d’ensemble sur les dernières questions, avec mention explicite de 26b."
+      },
+      {
+        "question": "24e",
+        "page_pdf": 8,
+        "objet": "Évaluation par différence divisée",
+        "page_rapport": 3,
+        "rubrique_jury": "Remarque d’ensemble sur les dernières questions, avec mention explicite de 26b."
+      },
+      {
+        "question": "24f",
+        "page_pdf": 8,
+        "objet": "Interpolation au nœud double",
+        "page_rapport": 3,
+        "rubrique_jury": "Remarque d’ensemble sur les dernières questions, avec mention explicite de 26b."
+      },
+      {
+        "question": "25a",
+        "page_pdf": 8,
+        "objet": "Inverse de la matrice de Fourier",
+        "page_rapport": 3,
+        "rubrique_jury": "Remarque d’ensemble sur les dernières questions, avec mention explicite de 26b."
+      },
+      {
+        "question": "25b",
+        "page_pdf": 8,
+        "objet": "Carré et permutation des indices",
+        "page_rapport": 3,
+        "rubrique_jury": "Remarque d’ensemble sur les dernières questions, avec mention explicite de 26b."
+      },
+      {
+        "question": "25c",
+        "page_pdf": 8,
+        "objet": "Quatrième puissance et rayon spectral",
+        "page_rapport": 3,
+        "rubrique_jury": "Remarque d’ensemble sur les dernières questions, avec mention explicite de 26b."
+      },
+      {
+        "question": "25d",
+        "page_pdf": 8,
+        "objet": "Interpolation aux quatre racines de l’unité",
+        "page_rapport": 3,
+        "rubrique_jury": "Remarque d’ensemble sur les dernières questions, avec mention explicite de 26b."
+      },
+      {
+        "question": "26a",
+        "page_pdf": 8,
+        "objet": "Loi binomiale",
+        "page_rapport": 3,
+        "rubrique_jury": "Remarque d’ensemble sur les dernières questions, avec mention explicite de 26b."
+      },
+      {
+        "question": "26b",
+        "page_pdf": 9,
+        "objet": "Loi géométrique à support strictement positif",
+        "page_rapport": 3,
+        "rubrique_jury": "Remarque d’ensemble sur les dernières questions, avec mention explicite de 26b."
+      }
+    ],
+    "annexes_imposees": []
+  }
 }

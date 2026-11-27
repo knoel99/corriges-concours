@@ -1,0 +1,91 @@
+{
+  "slug": "x_mp_informatique-option_2009",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Informatique (option)",
+    "annee": 2009,
+    "duree_heures": 4,
+    "modalite": "écrit"
+  },
+  "intitule": "Ce polynôme est-il positif ?",
+  "questions": 24,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/x_option-info_mp_2009.pdf",
+    "sujet_sha256": "afd3bd59e7589aa3ef17583758d6c2cdec5a6a7ae3db790b49d5f624ab09181e",
+    "rapport": "https://www.doc-solus.fr/prepa/sci/adc/pdf/rapports.pdf/2009/MP_INFO_X_1_2009.rapport.pdf",
+    "rapport_sha256": "578c209ab8fd519825b3fe4e171f68945a101ca4265463888fd7dd7a69962e68",
+    "identification": "École polytechnique, filière MP option informatique, composition 2009 de quatre heures. Cahier de huit pages reproduit par WikiPrépa et rapport de J.-C. Filliâtre et J.-P. Tillich reproduit par Doc-Solus.",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.wikiprepa.fr/concours/data/x_option-info_mp_2009.pdf",
+        "sha256": "afd3bd59e7589aa3ef17583758d6c2cdec5a6a7ae3db790b49d5f624ab09181e",
+        "pages": 8
+      },
+      {
+        "role": "rapport",
+        "url": "https://www.doc-solus.fr/prepa/sci/adc/pdf/rapports.pdf/2009/MP_INFO_X_1_2009.rapport.pdf",
+        "sha256": "578c209ab8fd519825b3fe4e171f68945a101ca4265463888fd7dd7a69962e68",
+        "pages": 4
+      },
+      {
+        "role": "autre exemplaire",
+        "url": "https://www.doc-solus.fr/prepa/sci/adc/pdf/enonces.pdf/2009/MP_INFO_X_1_2009.enonce.pdf",
+        "sha256": "f82360533e0522c04f5e1acc1f47d74f984d8c7dac8c29e24ae9b9d804dc122d",
+        "pages": 8
+      }
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/subdivision-bernstein.svg",
+      "question": "24",
+      "legende": "Figure 1 — La branche gauche puis droite isole le zéro intérieur en un tiers. Le polynôme réapparaît à un facteur positif près."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "option_info_2006_2009",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Questions 1 à 24. Arithmétique de précision arbitraire, normalisation dyadique, listes à deux bouts, coût amorti, certificat de Bernstein et preuve d’incomplétude."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "limites": "Le test de positivité suit la convention de semi-décision et la profondeur finie du sujet. Les fonctions de raffinement et leurs identités admises sont employées suivant l’énoncé."
+  }
+}

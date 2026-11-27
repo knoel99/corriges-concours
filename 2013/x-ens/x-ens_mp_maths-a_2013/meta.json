@@ -32,5 +32,61 @@
       "fournisseur": "codex",
       "agent": "astra_maths"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1a",
+      "1b",
+      "2",
+      "3a",
+      "3b",
+      "4",
+      "5",
+      "6a",
+      "6b",
+      "7a",
+      "7b",
+      "7c",
+      "8a",
+      "8b",
+      "8c",
+      "9",
+      "10a",
+      "10b",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15a",
+      "15b",
+      "15c",
+      "16a",
+      "16b",
+      "16c",
+      "16d",
+      "16e",
+      "17a",
+      "17b",
+      "18",
+      "19",
+      "20a",
+      "20b",
+      "21a",
+      "21b",
+      "21c",
+      "21d",
+      "22a",
+      "22b",
+      "23"
+    ],
+    "precision": "Les 43 repères de questions et sous-questions ont été rapprochés dans l’ordre du sujet officiel et dans chacune des deux éditions. La portée de la rédaction ou de la révision est conservée dans le journal cité.",
+    "origine_attestation": {
+      "commit_du_journal": "514efc6e6b1a9a299ef4ae47df97aefb9d8409da",
+      "sha256_sujet_controle": "5bdb9c3f6ef99c964fdec689c10256c64f9dabfe10786735772930d5e7c19a79",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction de toutes les questions et sous-questions du sujet XLC, confrontées au rapport des correcteurs. Vérification des relations sur les indices négatifs, de la période minimale, des vecteurs propres, de la descente au quotient et de la condition de nilpotence. Schéma des deux décalages cycliques et de leurs poids."
+    }
+  }
 }

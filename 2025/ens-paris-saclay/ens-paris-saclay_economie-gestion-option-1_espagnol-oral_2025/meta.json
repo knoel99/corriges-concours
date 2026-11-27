@@ -1,0 +1,85 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_espagnol-oral_2025",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Espagnol (oral)",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "questions": 3,
+  "intitule": "Trois reportages hispanophones à présenter et à commenter",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2025/rapports/2025_EcoG1_Rapport_Espagnol_oral.pdf#page=1",
+    "sujet_sha256": "e42f3bf4d14d651016ac702c879ec75cc0b1ff01ab6d76f9881170e3d266cde4",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2025/rapports/2025_EcoG1_Rapport_Espagnol_oral.pdf",
+    "rapport_sha256": "e42f3bf4d14d651016ac702c879ec75cc0b1ff01ab6d76f9881170e3d266cde4",
+    "index": "https://ens-paris-saclay.fr/node/10715",
+    "videos_sources": [
+      {
+        "numero_dans_le_rapport": "1",
+        "date_imprimee": "2024-11-04",
+        "titre_imprime": "DANA en Valencia. ¿Qué falló 3 razones que explican lo mortales que fueron las inundaciones",
+        "chaine_de_publication": "BBC News Mundo",
+        "date_affichee_par_la_plateforme": "2024-11-04",
+        "identifiant_video": "I3KajSdJZ14",
+        "page_video": "https://www.youtube.com/watch?v=I3KajSdJZ14"
+      },
+      {
+        "numero_dans_le_rapport": "2",
+        "date_imprimee": "2025-02-05",
+        "titre_imprime": "Javier Milei retira a Argentina de la OMS",
+        "chaine_de_publication": "CNN en Español",
+        "date_affichee_par_la_plateforme": "2025-02-05",
+        "identifiant_video": "8sWABJQmW50",
+        "page_video": "https://www.youtube.com/watch?v=8sWABJQmW50"
+      },
+      {
+        "numero_dans_le_rapport": "3",
+        "date_imprimee": "2025-01-18",
+        "titre_imprime": "Más 121.000 desaparecidos se cuentan en México, según cifras oficiales",
+        "chaine_de_publication": "DW Español",
+        "date_affichee_par_la_plateforme": "2025-01-17",
+        "identifiant_video": "3FvHL1Nd_sk",
+        "page_video": "https://www.youtube.com/watch?v=3FvHL1Nd_sk"
+      }
+    ]
+  },
+  "redaction": "Trois comptes rendus fondés sur les éléments publiés par les diffuseurs, trois commentaires et trois échanges argumentés, figure comparative, contrôle des identifiants et des dates.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "3",
+      "fichier": "figures/total-et-moyennes.svg",
+      "legende": "Le nombre cumulé de personnes disparues et la variation du nombre quotidien enregistré répondent à deux questions différentes."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "espagnol_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Trois comptes rendus fondés sur les éléments publiés par les diffuseurs, trois commentaires et trois échanges argumentés, figure comparative, contrôle des identifiants et des dates.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [],
+    "questions_partiellement_traitees": [
+      "DANA en Valencia. ¿Qué falló 3 razones que explican lo mortales que fueron las inundaciones",
+      "Javier Milei retira a Argentina de la OMS",
+      "Más 121.000 desaparecidos se cuentan en México, según cifras oficiales"
+    ],
+    "questions_non_traitees": [],
+    "precision": "Les trois publications sources sont identifiées par leur titre et leur chaîne. Le jury ne donne ni la durée ni les bornes des passages effectivement entendus. Les comptes rendus ci-dessous exposent les éléments documentés ; la restitution exacte des extraits demeure ouverte. Pour le reportage de DW sur le Mexique, le rapport imprime le 18 janvier et la plateforme affiche le 17 janvier 2025."
+  }
+}

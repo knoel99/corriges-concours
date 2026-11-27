@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La feuille du 25 juin réunit 5 tickets de deux sujets. Le candidat dispose de 1 h 30 de préparation et indique au jury son choix au moment du passage. Il présente un seul sujet pendant 20 minutes, puis répond aux questions durant 10 minutes. Les deux possibilités de chaque ticket sont traitées ici. Chaque relance met à l’épreuve une distinction précise. Pour développer oralement les propositions, reprendre l’exemple, en faire varier une condition, puis expliquer comment cette variation modifie la réponse.
 
 ## Ticket 1
@@ -75,6 +77,8 @@ Austin montre dans *Quand dire, c’est faire* que certaines paroles réalisent 
 Mais les mots ont également le pouvoir d’ouvrir une manière de voir. Nommer une expérience jusque-là traitée comme un problème privé peut permettre à plusieurs personnes de comparer ce qu’elles vivent, et de formuler une revendication commune. Inversement une étiquette répétée peut enfermer quelqu’un dans une catégorie dont on ne lui permet pas de sortir. Les effets ne sont jamais entièrement assurés : l’interlocuteur peut demander des raisons, refuser une définition ou détourner une injure. Le pouvoir des mots tient ainsi à leur signification partagée, aux institutions qui reconnaissent certains actes et à l’activité d’interprétation de ceux auxquels ils s’adressent.
 
 ![Trois questions sur le pouvoir d’une parole](figures/mots.svg)
+
+Distinguer ce que l’auditoire comprend, le pouvoir que l’institution accorde au locuteur et la réaction des présents. Une séance peut être régulièrement ouverte même si personne n’approuve l’ordre du jour.
 
 > [!INDICATION]
 > Dire une promesse suffit-il à la tenir ?

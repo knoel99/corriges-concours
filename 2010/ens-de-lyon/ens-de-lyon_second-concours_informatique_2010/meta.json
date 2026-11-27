@@ -1,0 +1,99 @@
+{
+  "slug": "ens-de-lyon_second-concours_informatique_2010",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Informatique",
+    "annee": 2010,
+    "duree_heures": 3
+  },
+  "questions": 24,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours-de-lens-lyon/session-2010/sujet-ecrit-2010-second-concours_informatique.pdf",
+    "sujet_sha256": "e36ff7a3bc0b15a4aae99f30067a3b01a72bbb9b1fe12b9fbc7356b6e8479d6d",
+    "index_banque": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/",
+    "identification": "Garde du second concours ENS Lyon 2010 et quatre pages numérotées. Recherche du premier motif, fonctions Trans et KMP."
+  },
+  "figures": [
+    {
+      "fichier": "figures/alignements-successifs.svg",
+      "question": "2.1",
+      "legende": "À chaque ligne, le vert indique une égalité et le rouge la première discordance. L’alignement en position 5 réussit."
+    },
+    {
+      "fichier": "figures/repli-sur-le-bord.svg",
+      "question": "3.10",
+      "legende": "La discordance de c contre b suit un préfixe aba de bord a. Le nouvel essai commence deux places plus loin et compare de nouveau le b du texte."
+    },
+    {
+      "fichier": "figures/progression-de-kmp.svg",
+      "question": "3.14",
+      "legende": "Sur le texte de la question 2.1, les succès font monter la position lue. Les deux replis font avancer le début du motif tout en conservant la position lue."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des 24 questions sur le sujet officiel, table à 18 transitions et construction du prétraitement, contre-exemple de fin de texte en 3.10, alphabet singleton en 2.5, invariants et bornes de KMP. Contrôle exhaustif sur des chaînes binaires et trois schémas originaux."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "3.7",
+      "3.8",
+      "3.9",
+      "3.10",
+      "3.11",
+      "3.12",
+      "3.13",
+      "3.14",
+      "3.15",
+      "3.16",
+      "3.17"
+    ],
+    "precision": "Les 24 questions numérotées du sujet institutionnel ont été rapprochées dans leur ordre des solutions signées. Le texte de chacune des solutions du brut figure aussi dans le guidé.",
+    "origine_attestation": {
+      "commit_du_journal": "0ce0ccfc0c9fc8be9096e1475be035ce28132e89",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction intégrale des 24 questions sur le sujet officiel, table à 18 transitions et construction du prétraitement, contre-exemple de fin de texte en 3.10, alphabet singleton en 2.5, invariants et bornes de KMP. Contrôle exhaustif sur des chaînes binaires et trois schémas originaux.",
+      "sha256_sujet_controle": "e36ff7a3bc0b15a4aae99f30067a3b01a72bbb9b1fe12b9fbc7356b6e8479d6d"
+    },
+    "subdivisions_du_sujet": {
+      "3.5": [
+        "i",
+        "ii"
+      ],
+      "3.10": [
+        "i",
+        "ii"
+      ],
+      "3.13": [
+        "i",
+        "ii"
+      ]
+    }
+  }
+}

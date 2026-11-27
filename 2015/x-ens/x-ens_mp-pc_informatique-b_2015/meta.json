@@ -39,5 +39,54 @@
       "modifications": true,
       "perimetre": "Rédaction des treize questions à partir du sujet MP-PC et du rapport de jury PC. Vérification des algorithmes de Jarvis et Graham–Andrew par test indépendant des demi-plans sur 2 418 entrées en position générale, y compris égalités d’abscisses et d’ordonnées. Vérification des deux listes d’indices et de la trace demandée. Deux schémas originaux."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "pages_des_questions": {
+      "1": 3,
+      "2": 3,
+      "3": 3,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 5,
+      "8": 5,
+      "9": 6,
+      "10": 7,
+      "11": 7,
+      "12": 7,
+      "13": 7
+    },
+    "origine_attestation": {
+      "commit_du_journal": "de2738509d9424fc0eb76fa2d1258fa86d0cb523",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction des treize questions à partir du sujet MP-PC et du rapport de jury PC. Vérification des algorithmes de Jarvis et Graham–Andrew par test indépendant des demi-plans sur 2 418 entrées en position générale, y compris égalités d’abscisses et d’ordonnées. Vérification des deux listes d’indices et de la trace demandée. Deux schémas originaux.",
+      "sha256_sujet_controle": "ac22a5dc78114258784c46baed80d5d4213610ab0b86f67ee5f66dadc785cd85",
+      "sha256_rapport_controle": "3c29ee6a9522c60372da7cf3b2561aabb1207df71723b67e87074b207e341f1d"
+    },
+    "controle_programmes": {
+      "resultats_par_edition": {
+        "brut": "2418 nuages admissibles avec permutations des égalités d’abscisses",
+        "guide": "2418 nuages admissibles avec permutations des égalités d’abscisses"
+      },
+      "controle_sur": "Programmes extraits de chaque édition et vérifiés à nouveau. En 2016 les requêtes SQL sont également exécutées sur une base de test."
+    },
+    "precision": "Les numéros et pages ont été relevés dans le fac-similé du concours. Les réponses des deux éditions sont présentes au commit éditorial indiqué."
+  }
 }

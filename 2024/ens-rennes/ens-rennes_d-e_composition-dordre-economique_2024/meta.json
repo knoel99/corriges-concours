@@ -35,7 +35,7 @@
       "legende": "Quel résultat attendre selon le choc ?"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "lecture_rapport_jury",
@@ -72,6 +72,47 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Confrontation des deux éditions aux pages du sujet, au rapport du jury et aux références primaires. Empreintes des aperçus vérifiées séparément des empreintes des originaux institutionnels."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Les deux éditions traitent la période comprise approximativement entre 1999 et la session 2024. Elles relient les politiques monétaire, budgétaire et macroprudentielle aux écarts de production, d’inflation ou de risque financier, puis comparent les effets selon la nature du choc. Le rapport de trois pages demande précisément de définir le critère d’efficacité et de relier les instruments aux mécanismes de court et moyen termes.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Les métamorphoses de la politique macroéconomique au cours des 25 dernières années ont-elles rendu la régulation conjoncturelle plus efficace ?"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "verification": "Les deux éditions traitent la période comprise approximativement entre 1999 et la session 2024. Elles relient les politiques monétaire, budgétaire et macroprudentielle aux écarts de production, d’inflation ou de risque financier, puis comparent les effets selon la nature du choc. Le rapport de trois pages demande précisément de définir le critère d’efficacité et de relier les instruments aux mécanismes de court et moyen termes.",
+    "limites": "Une dissertation, sans annexe, sur le feuillet officiel d’une page.",
+    "pieces_controlees": [
+      {
+        "role": "sujet",
+        "pages": 1,
+        "sha256_apercu": "562a72aaa5bfa04560c79f279ec10867cac23e899a34bb3041fcd2e7d07a238b",
+        "sha256_original": "d974c79f08a7a4ed31a04d9d629ed915b7a27d490c0aadbf612c380dc3b23fbf"
+      },
+      {
+        "role": "rapport_jury",
+        "pages": 3,
+        "sha256_apercu": "ebb46578e8978d1b4efff089dce56d741c8430aa4ac022398fe301aac8162d60",
+        "sha256_original": "11f8d3313b2082dbd5b172690d7e93cda1b15be1b9c6211159976804b2255dd4"
+      }
+    ]
+  }
 }

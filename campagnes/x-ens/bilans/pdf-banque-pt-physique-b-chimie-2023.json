@@ -1,0 +1,858 @@
+{
+  "slug": "banque-pt_pt_physique-b---chimie_2023",
+  "commit_export": "72ba84b4ae7dde7a729e9d044c203f3e10752d2a",
+  "gabarit": "scripts/exporter à la révision du commit d’export",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Résolution des 36 questions, dessin de cinq figures et lecture du document-réponse Q36."
+    },
+    {
+      "phase": "revision",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Seconde lecture du sujet et du jury, vérification des légendes, de la lecture de Q36, du coefficient stœchiométrique des pentes et des données de l’étalonnage."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21",
+      "Q22",
+      "Q23",
+      "Q24",
+      "Q25",
+      "Q26",
+      "Q27",
+      "Q28",
+      "Q29",
+      "Q30",
+      "Q31",
+      "Q32",
+      "Q33",
+      "Q34",
+      "Q35",
+      "Q36"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Q1",
+        "page_pdf": "2",
+        "titre": "Maille des anions et localisation des cavités"
+      },
+      {
+        "question": "Q2",
+        "page_pdf": "2",
+        "titre": "Population d’anions"
+      },
+      {
+        "question": "Q3",
+        "page_pdf": "2",
+        "titre": "Occupation des sites"
+      },
+      {
+        "question": "Q4",
+        "page_pdf": "2",
+        "titre": "Formule et degré d’oxydation"
+      },
+      {
+        "question": "Q5",
+        "page_pdf": "2",
+        "titre": "Rayons maximaux des sites"
+      },
+      {
+        "question": "Q6",
+        "page_pdf": "2",
+        "titre": "Limite du modèle de sphères"
+      },
+      {
+        "question": "Q7",
+        "page_pdf": "2",
+        "titre": "Masse volumique"
+      },
+      {
+        "question": "Q8",
+        "page_pdf": "3",
+        "titre": "Loi différentielle de vitesse"
+      },
+      {
+        "question": "Q9",
+        "page_pdf": "3",
+        "titre": "Première expérience et ordre apparent"
+      },
+      {
+        "question": "Q10",
+        "page_pdf": "3",
+        "titre": "Pente logarithmique et première constante"
+      },
+      {
+        "question": "Q11",
+        "page_pdf": "3",
+        "titre": "Deuxième expérience et acidité"
+      },
+      {
+        "question": "Q12",
+        "page_pdf": "3",
+        "titre": "Rapport stœchiométrique et seconde constante"
+      },
+      {
+        "question": "Q13",
+        "page_pdf": "3–4",
+        "titre": "Droite des concentrations inverses"
+      },
+      {
+        "question": "Q14",
+        "page_pdf": "3",
+        "titre": "Ordre en protons et dimension de la constante"
+      },
+      {
+        "question": "Q15",
+        "page_pdf": "4",
+        "titre": "Grandeurs standard de réaction"
+      },
+      {
+        "question": "Q16",
+        "page_pdf": "4",
+        "titre": "Déplacement de l’équilibre"
+      },
+      {
+        "question": "Q17",
+        "page_pdf": "4",
+        "titre": "Enthalpie libre et sens d’évolution"
+      },
+      {
+        "question": "Q18",
+        "page_pdf": "4",
+        "titre": "Ordre de grandeur de la constante"
+      },
+      {
+        "question": "Q19",
+        "page_pdf": "4",
+        "titre": "Quotient en pressions partielles"
+      },
+      {
+        "question": "Q20",
+        "page_pdf": "4",
+        "titre": "Tableau d’avancement"
+      },
+      {
+        "question": "Q21",
+        "page_pdf": "4",
+        "titre": "Avancement effectivement atteint"
+      },
+      {
+        "question": "Q22",
+        "page_pdf": "5",
+        "titre": "Polarité et force électromotrice"
+      },
+      {
+        "question": "Q23",
+        "page_pdf": "5",
+        "titre": "Réaction en fonctionnement"
+      },
+      {
+        "question": "Q24",
+        "page_pdf": "5",
+        "titre": "Constante de la réaction de pile"
+      },
+      {
+        "question": "Q25",
+        "page_pdf": "5",
+        "titre": "Composition de la pile usée"
+      },
+      {
+        "question": "Q26",
+        "page_pdf": "6",
+        "titre": "Choix de la longueur d’onde"
+      },
+      {
+        "question": "Q27",
+        "page_pdf": "6",
+        "titre": "Droite d’étalonnage"
+      },
+      {
+        "question": "Q28",
+        "page_pdf": "6",
+        "titre": "Coefficient d’absorption molaire"
+      },
+      {
+        "question": "Q29",
+        "page_pdf": "6",
+        "titre": "Concentration inconnue"
+      },
+      {
+        "question": "Q30",
+        "page_pdf": "6",
+        "titre": "Fractions massiques du laiton"
+      },
+      {
+        "question": "Q31",
+        "page_pdf": "7",
+        "titre": "Rapidité des systèmes électrochimiques"
+      },
+      {
+        "question": "Q32",
+        "page_pdf": "7",
+        "titre": "Courant limite"
+      },
+      {
+        "question": "Q33",
+        "page_pdf": "7",
+        "titre": "Branches sans palier visible"
+      },
+      {
+        "question": "Q34",
+        "page_pdf": "7",
+        "titre": "Bilan cuivre–argent"
+      },
+      {
+        "question": "Q35",
+        "page_pdf": "7",
+        "titre": "Prévision thermodynamique"
+      },
+      {
+        "question": "Q36",
+        "page_pdf": "7 et 10",
+        "titre": "Potentiel mixte sur l’annexe"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  },
+  "pieces": {
+    "sujet": {
+      "annee": 2023,
+      "nature": "sujet",
+      "url": "https://www.banquept.fr/documents/2023/ph_b_ch_2023_pt.pdf",
+      "sha256": "f32ff9c36c8dfc8c415bada761e16f8e012440d4bf7aa98ffd0c680cfde37204",
+      "pages": 12,
+      "pieces_jointes": [],
+      "sha256_rendus": [
+        "8a80b643e6e2729fd7c16cb8e6a7d230012273ee35d9931f3891814a66203f11",
+        "65928bf2daf0cec4643f43bee64e0e0510e1c96c0b8e0a2fb9d4430553b652a1",
+        "8e4532e6e1286d9c31bc63ee1e0f7cfbf3f5e6f36b7c94684bb09367da04e3c4",
+        "47e47e7233c863262210e6dca9aec6a1adbabe7130bc3b44e17719848b5a078d",
+        "45a0bf20b73f7b2979167b4897f950193f54b754e36a7284141a3933569bb669",
+        "e01ba6db58c8e3503af5c8de838cd77683621609d5033fcba433367e01d10b43",
+        "7f9d85ac93ca0528d8075978fd90e011b099b744513521438d98f8a67b82eadf",
+        "3749e53c73417015f724dcd67fc6f63026c495a21d341e6278e579196e996340",
+        "9fcc6bb9211ab52eb402c5bd83cad50a44ec73bf44a8ab2bd7e043df10bdf1ac",
+        "cef6713ac07d33846f194ea201f6853745cf883ae23d374d620e70e8bbfef652",
+        "3ca720067a11a937598e1fd05b731b48e42d239daab15868f9060d16bad40cbe",
+        "c189853208543326fedd4a1dfcd6b44b59726dd0a42761002cf86b441b02f085"
+      ]
+    },
+    "rapport": {
+      "annee": 2023,
+      "nature": "rapport",
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2023/rapport_phys_b_ecrit_2023.pdf",
+      "sha256": "8bbebafee340d2100718ce54730abeec782c896642a1fb6d654b89ed17c34b1d",
+      "pages": 5,
+      "pieces_jointes": [],
+      "sha256_rendus": [
+        "851aeabdc45d1a804f90d531c9659ff3cc0f5a654365960bef4230f77b2fd62f",
+        "9357f896b364cc638378759b8ed7c19f63390ebc067ce1dcbdbcda2d06e3caaa",
+        "4b4728853f935dafcd268aedab67fe7fecc47bbeb2660163ce6554dd8d62e655",
+        "90f7f8816c2364c8c19d72214fd9cb2177001cfe5b105521c9ac4873ebccc509",
+        "99aab116dd1f4f193ca9b7165698b106d727a0a55d41506c61cc9fdd0a17a9d3"
+      ]
+    },
+    "livret": {
+      "annee": 2023,
+      "nature": "livret",
+      "url": "https://www.banquept.fr/documents/livret/2023/Livret_PT_2023.pdf",
+      "sha256": "ef653aad65d312dfc629926cfc7be2d59352bf0cd6362274307a292c916d0233",
+      "pages": 76,
+      "pieces_jointes": [],
+      "sha256_rendus": [
+        "f845fe5ab5f65725c05f99bb8579a8c2aa4b3edc1f8baf1e42bcc9b9cf3f43c0"
+      ]
+    }
+  },
+  "controles": {
+    "annexe": {
+      "page_pdf": 10,
+      "page_document_reponse": "2/4",
+      "matrice": 1.7,
+      "axe_horizontal_pixels": 667,
+      "x_potentiel_mixte_pixels": 467.5,
+      "fraction_intervalle_pieds": 0.5047169811320755,
+      "hauteurs": [
+        [
+          464,
+          602.5,
+          745.5,
+          14.0
+        ],
+        [
+          465,
+          599.5,
+          743.5,
+          9.0
+        ],
+        [
+          466,
+          598.5,
+          741.5,
+          6.0
+        ],
+        [
+          467,
+          596.5,
+          739.5,
+          2.0
+        ],
+        [
+          468,
+          594.5,
+          737.5,
+          -2.0
+        ],
+        [
+          469,
+          592.5,
+          735.0,
+          -6.5
+        ]
+      ]
+    },
+    "compte": "36 questions en six parties. Cinq figures vectorielles dans chaque édition, 36 indications dans la guidée.",
+    "calculs": "Populations et géométrie, régressions des deux cinétiques, ordre en protons, équilibre thermodynamique, potentiel et charge de pile, régression du laiton et constante cuivre–argent.",
+    "rapport": "Chimie p. 1–2, thermodynamique p. 3–5. Coefficients stœchiométriques des vitesses, unités, avancement limité, charge, fractions massiques et construction du potentiel mixte contrôlés.",
+    "livret": "Page 13, coefficient 2 de Physique B pour les deux ENS Paris-Saclay et Rennes."
+  },
+  "pdf": {
+    "brut": {
+      "pages": 8,
+      "nombre_signets": 42,
+      "signets": [
+        [
+          1,
+          "A — Structure de la chromite",
+          1
+        ],
+        [
+          2,
+          "Q1 — Maille des anions et localisation des cavités",
+          1
+        ],
+        [
+          2,
+          "Q2 — Population d'anions",
+          1
+        ],
+        [
+          2,
+          "Q3 — Occupation des sites",
+          1
+        ],
+        [
+          2,
+          "Q4 — Formule et degré d'oxydation",
+          2
+        ],
+        [
+          2,
+          "Q5 — Rayons maximaux des sites",
+          2
+        ],
+        [
+          2,
+          "Q6 — Limite du modèle de sphères",
+          2
+        ],
+        [
+          2,
+          "Q7 — Masse volumique",
+          2
+        ],
+        [
+          1,
+          "B — Exploitation des mesures cinétiques",
+          2
+        ],
+        [
+          2,
+          "Q8 — Loi différentielle de vitesse",
+          2
+        ],
+        [
+          2,
+          "Q9 — Première expérience et ordre apparent",
+          2
+        ],
+        [
+          2,
+          "Q10 — Pente logarithmique et première constante",
+          2
+        ],
+        [
+          2,
+          "Q11 — Deuxième expérience et acidité",
+          2
+        ],
+        [
+          2,
+          "Q12 — Rapport stœchiométrique et seconde constante",
+          3
+        ],
+        [
+          2,
+          "Q13 — Droite des concentrations inverses",
+          3
+        ],
+        [
+          2,
+          "Q14 — Ordre en protons et dimension de la constante",
+          3
+        ],
+        [
+          1,
+          "C — Équilibre thermodynamique",
+          3
+        ],
+        [
+          2,
+          "Q15 — Grandeurs standard de réaction",
+          3
+        ],
+        [
+          2,
+          "Q16 — Déplacement de l'équilibre",
+          4
+        ],
+        [
+          2,
+          "Q17 — Enthalpie libre et sens d'évolution",
+          4
+        ],
+        [
+          2,
+          "Q18 — Ordre de grandeur de la constante",
+          4
+        ],
+        [
+          2,
+          "Q19 — Quotient en pressions partielles",
+          4
+        ],
+        [
+          2,
+          "Q20 — Tableau d'avancement",
+          4
+        ],
+        [
+          2,
+          "Q21 — Avancement effectivement atteint",
+          4
+        ],
+        [
+          1,
+          "D — Potentiels et bilan de pile",
+          4
+        ],
+        [
+          2,
+          "Q22 — Polarité et force électromotrice",
+          4
+        ],
+        [
+          2,
+          "Q23 — Réaction en fonctionnement",
+          5
+        ],
+        [
+          2,
+          "Q24 — Constante de la réaction de pile",
+          5
+        ],
+        [
+          2,
+          "Q25 — Composition de la pile usée",
+          5
+        ],
+        [
+          1,
+          "E — Composition d'un laiton",
+          5
+        ],
+        [
+          2,
+          "Q26 — Choix de la longueur d'onde",
+          5
+        ],
+        [
+          2,
+          "Q27 — Droite d'étalonnage",
+          6
+        ],
+        [
+          2,
+          "Q28 — Coefficient d'absorption molaire",
+          6
+        ],
+        [
+          2,
+          "Q29 — Concentration inconnue",
+          6
+        ],
+        [
+          2,
+          "Q30 — Fractions massiques du laiton",
+          6
+        ],
+        [
+          1,
+          "F — Courbes intensité-potentiel",
+          7
+        ],
+        [
+          2,
+          "Q31 — Rapidité des systèmes électrochimiques",
+          7
+        ],
+        [
+          2,
+          "Q32 — Courant limite",
+          7
+        ],
+        [
+          2,
+          "Q33 — Branches sans palier visible",
+          7
+        ],
+        [
+          2,
+          "Q34 — Bilan cuivre–argent",
+          7
+        ],
+        [
+          2,
+          "Q35 — Prévision thermodynamique",
+          7
+        ],
+        [
+          2,
+          "Q36 — Potentiel mixte sur l'annexe",
+          7
+        ]
+      ],
+      "pages_figures": [
+        1,
+        3,
+        5,
+        6,
+        8
+      ],
+      "sha256": "166dcaf678d39eea6fb9a4492117bf614bce02fcffa1fbb782504aaffe4bd63c",
+      "rendus_sha256": [
+        "dfe03dcda75fa48a959c8fba2f7919fc09a0fb348b156fd90f89c99964bf8d09",
+        "eee1a27c2fca5c3c15d4c7e389ee39cb2bcd30d1c226592f92fc97187628b26e",
+        "a805edf9923b13e32d0ff410d7c6c844ed8a6b1e4fc3361a3d55e00e4413ff0a",
+        "4910a66f86a613eaad903884bd1793461ca43095e98e1e88c50a3ccea197e386",
+        "85602b106ab8562f3dc92651181fa8f9f0569feeba37ec00b756474afc3229bc",
+        "4dfd616198a90037dbfbe5c807ee97cddbfcde86b0e5ca16572d128b7e102928",
+        "55fab94c8d0c1c562baf422f762fb80d122615b84ce9c217b6942946aad4ea52",
+        "a03e83e71c99287a469025727379f43bf34b610c300f2206d1ebcd1bb51c145e"
+      ]
+    },
+    "guide": {
+      "pages": 11,
+      "nombre_signets": 42,
+      "signets": [
+        [
+          1,
+          "A — Structure de la chromite",
+          1
+        ],
+        [
+          2,
+          "Q1 — Maille des anions et localisation des cavités",
+          1
+        ],
+        [
+          2,
+          "Q2 — Population d'anions",
+          2
+        ],
+        [
+          2,
+          "Q3 — Occupation des sites",
+          2
+        ],
+        [
+          2,
+          "Q4 — Formule et degré d'oxydation",
+          2
+        ],
+        [
+          2,
+          "Q5 — Rayons maximaux des sites",
+          2
+        ],
+        [
+          2,
+          "Q6 — Limite du modèle de sphères",
+          2
+        ],
+        [
+          2,
+          "Q7 — Masse volumique",
+          3
+        ],
+        [
+          1,
+          "B — Exploitation des mesures cinétiques",
+          3
+        ],
+        [
+          2,
+          "Q8 — Loi différentielle de vitesse",
+          3
+        ],
+        [
+          2,
+          "Q9 — Première expérience et ordre apparent",
+          3
+        ],
+        [
+          2,
+          "Q10 — Pente logarithmique et première constante",
+          3
+        ],
+        [
+          2,
+          "Q11 — Deuxième expérience et acidité",
+          3
+        ],
+        [
+          2,
+          "Q12 — Rapport stœchiométrique et seconde constante",
+          4
+        ],
+        [
+          2,
+          "Q13 — Droite des concentrations inverses",
+          4
+        ],
+        [
+          2,
+          "Q14 — Ordre en protons et dimension de la constante",
+          4
+        ],
+        [
+          1,
+          "C — Équilibre thermodynamique",
+          5
+        ],
+        [
+          2,
+          "Q15 — Grandeurs standard de réaction",
+          5
+        ],
+        [
+          2,
+          "Q16 — Déplacement de l'équilibre",
+          5
+        ],
+        [
+          2,
+          "Q17 — Enthalpie libre et sens d'évolution",
+          5
+        ],
+        [
+          2,
+          "Q18 — Ordre de grandeur de la constante",
+          5
+        ],
+        [
+          2,
+          "Q19 — Quotient en pressions partielles",
+          6
+        ],
+        [
+          2,
+          "Q20 — Tableau d'avancement",
+          6
+        ],
+        [
+          2,
+          "Q21 — Avancement effectivement atteint",
+          6
+        ],
+        [
+          1,
+          "D — Potentiels et bilan de pile",
+          6
+        ],
+        [
+          2,
+          "Q22 — Polarité et force électromotrice",
+          6
+        ],
+        [
+          2,
+          "Q23 — Réaction en fonctionnement",
+          7
+        ],
+        [
+          2,
+          "Q24 — Constante de la réaction de pile",
+          7
+        ],
+        [
+          2,
+          "Q25 — Composition de la pile usée",
+          7
+        ],
+        [
+          1,
+          "E — Composition d'un laiton",
+          8
+        ],
+        [
+          2,
+          "Q26 — Choix de la longueur d'onde",
+          8
+        ],
+        [
+          2,
+          "Q27 — Droite d'étalonnage",
+          8
+        ],
+        [
+          2,
+          "Q28 — Coefficient d'absorption molaire",
+          8
+        ],
+        [
+          2,
+          "Q29 — Concentration inconnue",
+          8
+        ],
+        [
+          2,
+          "Q30 — Fractions massiques du laiton",
+          9
+        ],
+        [
+          1,
+          "F — Courbes intensité-potentiel",
+          9
+        ],
+        [
+          2,
+          "Q31 — Rapidité des systèmes électrochimiques",
+          9
+        ],
+        [
+          2,
+          "Q32 — Courant limite",
+          9
+        ],
+        [
+          2,
+          "Q33 — Branches sans palier visible",
+          10
+        ],
+        [
+          2,
+          "Q34 — Bilan cuivre–argent",
+          10
+        ],
+        [
+          2,
+          "Q35 — Prévision thermodynamique",
+          10
+        ],
+        [
+          2,
+          "Q36 — Potentiel mixte sur l'annexe",
+          10
+        ]
+      ],
+      "pages_figures": [
+        1,
+        4,
+        7,
+        9,
+        11
+      ],
+      "sha256": "251440e24499b5dd43b775215d3eb8a2c8e919e356f0c426574efaffab83beef",
+      "rendus_sha256": [
+        "2ce50e5c09dc1bae50cef9656c78247e986f9b1891794851a90cc0a81713f450",
+        "1c0fe306cf9be2cf5a1df40f6164716680c14b4ccbab05839c5fda5c337344f7",
+        "7aa175aaed88a24b23f0c4dae0c56b232735a66350ba9ed115532ff951f4910d",
+        "b99e22481d1f9bbcffc4616601baa87ed49be571e5cd8ecd94e8a0693b27d224",
+        "2beebc36e44fbb23c10fae9272778bd15cec2ab0c3594ab4808e125272bf8c82",
+        "8833fa1b637924154cfc58c84e7b7420582ee86703064de7010c1afb4ac20d36",
+        "137a2f3d1aece618bcbfc549d275ac149ddb45852cb098ad2bbab78fc5002c08",
+        "c90bcce91ee2b175d85ad79cf5ed21352803125ead0fe684c6d94be8841efc70",
+        "43aafc2c59d3fb04da488f168567ae7c9f4d8fe8088659c2a363eb26fdb861d3",
+        "afbbbc51afeed3cca74e2cae7f529e373d081fdb692d578f8272f322d0a327b4",
+        "22d385dc5cc6100a106d751649b627aca5b555ee16a5d2f97586e2b7ffa62bc2"
+      ]
+    }
+  },
+  "empreintes": {
+    "meta.json": "2a4eb4f6a1022975aea1c596e13c959ac08b0a6fbf342ae2e580081a6a73c2a1",
+    "brut.md": "5d7a76a0574242a4b742cd1ea63aea30de0c5fcada7de4889ee5bbe6d018989a",
+    "guide.md": "9e254c46bf24b6ea2a9e780fcc97c906ca0ee07885d59188980e9527b4c81bff",
+    "verifier_calculs.py": "7ad4e0d01c87ad9159b96b2e49b88caaab2f9ea33d8097d6cca64eeb7ffa2cb2",
+    "figures/maille.svg": "f00f345813e2ba287e99c87e4714999a0189fcc4ba56d782a6a7b091ba076526",
+    "figures/cinetique.svg": "64bd25314162f77564a3d85d49ad8ca551e4c0c28fc38c98f490ed8fd10916b0",
+    "figures/pile.svg": "68cd5d1d4387cbf92e9f383c606b0fc89c7171f11148f37d059a4553b63a6bd5",
+    "figures/etalonnage.svg": "3fe088ddbd1639839c356140e426781d89c270590f5fa49a94f80e35cc962796",
+    "figures/potentiel-mixte.svg": "337b5000ebf839b0a54974e494f2a89e277f70499e40e7abd92d0281828c844d",
+    "recu-tests.txt": "3ccc6c46ec3e6d5585deffa2dbea089fcba05be31d8b720285eb2ec5ddb885d7",
+    "bilan-compilation.md": "5c70f787237f95345bff3a7795b580fba299109f941efaf5cce66aa17076ca5b",
+    "brut.pdf": "166dcaf678d39eea6fb9a4492117bf614bce02fcffa1fbb782504aaffe4bd63c",
+    "brut-planche.jpg": "75d2a878279d641d234325b5d76c11788a15268cf3e1524408768f806ffe4f86",
+    "guide.pdf": "251440e24499b5dd43b775215d3eb8a2c8e919e356f0c426574efaffab83beef",
+    "guide-planche.jpg": "268cd90b0383ffe229c14ccdf115c9c45dae34d9442fc83bb8c96d1ce014efd1"
+  },
+  "archive": "Banque-PT-physique-B-chimie-2023.zip",
+  "sha256": "4e8bc56054f325a71fa05c73161f20516690d9bb789773a6ca732c68425c3d5e"
+}

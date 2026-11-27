@@ -1,0 +1,121 @@
+{
+  "slug": "ens_mp-pc_informatique_2006",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Informatique",
+    "annee": 2006,
+    "duree_heures": 4
+  },
+  "questions": 37,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-mp/session-2006/sujet-2006-ecrit-mp-i_informatique.pdf",
+    "index_banque": "https://banques-ecoles.fr/cms/filiere-mp/les-annales-et-rapports-des-jurys/",
+    "identification": "Cahier 60.20M. MP (groupes MPI et I), Paris, Lyon et Cachan. PC (groupe I), Paris et Lyon. Durée de quatre heures. La banque ne liste pas de rapport écrit pour cette composition.",
+    "sujet_sha256": "bcdd85d0f3967538e4f96d002cdbebb17c448d654f8c4d48a758e55ab729cfec"
+  },
+  "figures": [
+    {
+      "fichier": "figures/fermeture-successeurs.svg",
+      "question": "1.4.2",
+      "legende": "Figure 1 — Dans l’exemple, chaque rang atteint le suivant. Les arcs qui sautent un rang n’ajoutent aucun sommet à la fermeture."
+    },
+    {
+      "fichier": "figures/poids-table.svg",
+      "question": "2.1.1",
+      "legende": "Figure 2 — Les huit tables non affines ont un poids impair. Les deux tables XOR dépendent des deux entrées et ont chacune deux uns."
+    },
+    {
+      "fichier": "figures/premiere-fusion.svg",
+      "question": "3.4.1",
+      "legende": "Figure 3 — Sans bifurcation avant s, les deux variables passent chacune par un seul signal avant de se rencontrer à la porte s."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Trois parties du cahier 60.20M. Tri topologique, fermetures transitives et chaînes, caractérisation des bases complètes, bornes de taille et profondeur, adressage, dénombrement et spécialisation à deux variables."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "physique_psi_interens",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture des deux éditions et des trois illustrations contre le fac-similé de la banque. 37 sous-questions contrôlées. Cinq fonctions rendues explicites dans le guide et justification de la spécialisation unaire et du coût par chaîne."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1.1",
+      "1.1.2",
+      "1.1.3",
+      "1.2.1",
+      "1.2.2",
+      "1.2.3",
+      "1.3",
+      "1.4.1",
+      "1.4.2",
+      "1.4.3",
+      "1.4.4",
+      "1.5.1",
+      "1.5.2.a",
+      "1.5.2.b",
+      "1.5.2.c",
+      "1.5.3",
+      "2.1.1",
+      "2.1.2",
+      "2.1.3",
+      "2.2.1",
+      "2.2.2",
+      "2.3.1",
+      "2.3.2",
+      "2.3.3",
+      "2.4.1",
+      "2.4.2.a",
+      "2.4.2.b",
+      "3.1.1",
+      "3.1.2",
+      "3.2.1",
+      "3.2.2.a",
+      "3.2.2.b",
+      "3.3",
+      "3.4.1",
+      "3.4.2",
+      "3.4.3",
+      "3.5"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "recoupement_facsimile": [
+      {
+        "pages_pdf": "2–5",
+        "questions": "1.1–1.5",
+        "controle": "Flèches des deux exemples, trace des lignes R et Q, partition en chaînes et coûts."
+      },
+      {
+        "pages_pdf": "6–7",
+        "questions": "2.1–2.4",
+        "controle": "Tables de vérité, spécialisations, circuit de majorité de la figure et conditions de complétude."
+      },
+      {
+        "pages_pdf": "8–9",
+        "questions": "3.1–3.5",
+        "controle": "Puissances booléennes, comptage des arcs, élimination de portes et comptage des circuits."
+      }
+    ]
+  }
+}

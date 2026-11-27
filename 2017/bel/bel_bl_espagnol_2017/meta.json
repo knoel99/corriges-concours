@@ -1,0 +1,65 @@
+{
+  "slug": "bel_bl_espagnol_2017",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Espagnol",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "Analyse et commentaire de textes ou documents en espagnol",
+  "questions": 1,
+  "redaction": "Le commentaire porte sur trois écritures du « mal espagnol », de l’essai de 1895 au manifeste républicain de décembre 1930.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/ecrits-communs-optionnels-ses-2017_1506587060551.pdf#page=24",
+    "pages": "24–29",
+    "sha256_sujet": "bdc658b34f2b80b696b7a912173f1ab822dae1d52727d0732ab0305166620e41",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/17_BL_espagnol_opt_ecrit.pdf",
+    "sha256_rapport_jury": "76141fbcf4f9dbac38ab405a4bb156a9e1388c0a721539ec81b409ba8709d5f7",
+    "documents": [
+      "Miguel de Unamuno, En torno al casticismo, 1895",
+      "José Ortega y Gasset, España invertebrada, 1921",
+      "Manifiesto revolucionario de diciembre de 1930, douze signataires, repris dans les mémoires de Miguel Maura, Así cayó Alfonso XIII, México, 1961 ; la référence imprimée du cahier porte XII"
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Composition",
+      "fichier": "figures/tres-diagnosticos.svg",
+      "legende": "Trois usages de l’histoire fondent trois conceptions de la régénération."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du rapport de Béatrice Perez et Catherine Sablonnière, vérification des trois extraits et de leur ordre chronologique, distinguant le manifeste collectif de sa source éditoriale postérieure."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Composition en espagnol sur les représentations du mal national, les lectures de la tradition et l’autorité rhétorique du comité républicain, tableau des rapports au passé et indications de méthode."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Analyse et commentaire de la totalité du dossier en espagnol"
+    ]
+  }
+}

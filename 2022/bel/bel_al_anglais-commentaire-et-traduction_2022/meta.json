@@ -17,7 +17,11 @@
   "sources": {
     "sujet": "https://www.ens-lyon.fr/sites/default/files/2022-11/Session-2022_BEL_Commentaire%20et%20traduction.pdf#page=4",
     "sujet_sha256": "3b5f7ae138200d4e4a49340049c68031521a44c93c0adbf783058761d9d91b6b",
-    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2022-11/Anglais%202022.pdf#page=2"
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2022-11/Anglais%202022.pdf#page=2",
+    "archive_session": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2022",
+    "archive_session_sha256": "ab4312789350f4fce3c0f736a71a7a0af6102a095e7066c35b50adf8e33832a2",
+    "rapport_sha256": "9cbf135c381722cb51ab74b11658a2afaf2b01dea539b6d36c5d20b18e604241",
+    "rubrique": "Série Lettres et arts, Langues vivantes et Sciences humaines, écrit commun"
   },
   "figures": [
     {
@@ -26,7 +30,7 @@
       "legende": "Quel âge le miroir donne-t-il à Cecilia ?"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -37,6 +41,22 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Commentaire anglais de tout l'extrait de McEwan, traduction française de la question intérieure au retour dans le couloir, guidage et schéma des miroirs."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Mesure de la penderie rendue en français, taches de vin au pluriel, sens causal de since et précision sur le collier. Commentaire du geste du visiteur et de l’alternance entre le voir et le croire. Contrôle de la rubrique A/L, des pages anglaises du cahier commun, des vingt segments du rapport et des deux éditions. Resserrement des deux exemples ajoutés afin de réunir la version du guidé sur la dernière page."
     }
   ],
   "droits_sources": {
@@ -44,5 +64,37 @@
       "Ian McEwan, *Atonement* (2001). Cecilia est revenue de Cambridge au domaine familial dans les années 1930."
     ],
     "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire",
+      "Version française"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Commentaire",
+        "page_pdf": 4,
+        "page_pdf_fin": 5,
+        "perimetre": "l. 1–61, des deux sorties de la chambre au visage et au poing levé dans l’encadrement de la porte.",
+        "rapport_pages": [
+          2,
+          8
+        ]
+      },
+      {
+        "question": "Version française",
+        "page_pdf": 4,
+        "page_pdf_fin": 4,
+        "perimetre": "l. 23–37, de « How was she to think straight? » à « in less than fifteen minutes. ». La première phrase est la dernière du paragraphe anglais. Le souvenir de Hardman, p. 5, suit la borne.",
+        "rapport_pages": [
+          8,
+          19
+        ],
+        "segments_du_rapport": 20
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
   }
 }

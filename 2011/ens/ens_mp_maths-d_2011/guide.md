@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Le cône nilpotent et les classes de similitude.** La première partie concerne les matrices réelles de taille deux. La seconde passe sur les complexes et relie les orbites nilpotentes à l’ordre de dominance sur les partitions. Les blocs de Jordan du sujet ont leur diagonale de 1 sous la diagonale principale.
 
 ## Question préliminaire
@@ -289,6 +291,10 @@ Pour $(i,j)\ne(0,0)$, la commutation donne $(u^iv^j)^n=u^{in}v^{jn}=0$, puisque 
 
 Prenons $V=\mathbb C[X,Y]/(X^2,Y^2)$ avec la base $(1,X,Y,XY)$ et $u,v$ les multiplications par $X,Y$. Ces opérations commutent, vérifient $u^2=v^2=0$, et $uv(1)=XY\ne0$. Les seules multiplications monomiales non nulles de degré positif sont $u,v,uv$. Elles sont indépendantes par évaluation sur 1, donc $\dim B=3$. Tout $T=au+bv+cuv$ satisfait $T^2=2ab\,uv$ puis $T^3=0$. En dimension 4 son polynôme minimal a degré au plus 3, donc aucun $T\in B$ n’est régulier, par C.1.
 
+Dans l’ordre $(XY,Y,X,1)$, en notant $E_{ij}$ la matrice élémentaire, les multiplications ont pour matrices $U=E_{12}+E_{34}$ et $V=E_{13}+E_{24}$. Ainsi $UV=VU=E_{14}$. Les trois supports de $U,V,UV$ sont disjoints, ce qui vérifie aussi leur indépendance directement sur les matrices.
+
+![Figure 2 — Les deux chemins qui partent de 1 donnent le même monôme XY. Les autres produits par X ou Y se lisent en annulant les carrés.](figures/multiplications-commutantes.svg)
+
 ## II.D. Partitions et dominance
 
 ### Question D.1
@@ -384,6 +390,8 @@ Donc $\lambda'\le\mu'$, ce qui équivaut à $\mu\le\lambda$ par D.5.
 
 Sur la base de deux chaînes $(e_1,\ldots,e_m)$ et $(f_1,\ldots,f_m)$, posons $T_t e_i=e_{i+1}$, $T_t f_i=f_{i+1}$ pour $i<m$, $T_t e_m=0$ et $T_t f_m=t e_m$. Alors $T_0=J_m\oplus J_m$. Pour $t\ne0$, la chaîne issue de $f_1$ a longueur $m+1$ et $T_t^{m+1}=0$. Si $m\ge2$, l’image est engendrée librement par $e_2,\ldots,e_m,f_2,\ldots,f_m$, donc le noyau a dimension 2. Il y a deux blocs dont l’un a taille $m+1$, et l’autre nécessairement $m-1$. Si $m=1$, la chaîne $(f_1,t e_1)$ a longueur 2 et occupe tout l’espace. Ainsi $T_t\in\mathcal N_\lambda$ pour $t\ne0$, et sa limite appartient à $\mathcal N_\mu$. L’invariance par conjugaison de E.1 conclut.
 
+Pour $m\ge2$, on peut exposer le second bloc au lieu de seulement en déduire la taille par le rang. Pour $t\ne0$, le vecteur $g=e_1-t^{-1}f_2$ vérifie $T_t^{m-1}g=0$ et $T_t^{m-2}g=e_{m-1}-t^{-1}f_m\ne0$. Ses $m-1$ itérés sont indépendants de la chaîne longue issue de $f_1$ : leurs composantes en $e_1,\ldots,e_{m-1}$ sont les vecteurs de cette liste, alors que la chaîne longue ne contient que des $f_j$ et $te_m$. Les deux chaînes donnent donc une base de $2m$ vecteurs.
+
 ### Question E.5
 
 > [!INDICATION]
@@ -397,4 +405,4 @@ D.4 permet de continuer en restant sous $\lambda$ jusqu’à l’atteindre, car 
 $$\overline{\mathcal N_\lambda}=\bigcup_{\mu\le\lambda}\mathcal N_\mu.$$
 La flèche supplémentaire part de la dernière case de la petite chaîne. Son point d’arrivée explique pourquoi le cas des tailles inégales fonctionne aussi.
 
-![Figure 2 — Pour a = 5 et b = 3, la flèche de poids t donne des blocs de tailles 6 et 2 si t est non nul. En l’annulant on retrouve les tailles 5 et 3.](figures/degenerescence-de-deux-chaines.svg)
+![Figure 3 — Pour a = 5 et b = 3, la flèche de poids t donne des blocs de tailles 6 et 2 si t est non nul. En l’annulant on retrouve les tailles 5 et 3.](figures/degenerescence-de-deux-chaines.svg)

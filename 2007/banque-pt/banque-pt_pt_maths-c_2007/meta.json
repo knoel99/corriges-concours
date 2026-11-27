@@ -1,0 +1,220 @@
+{
+  "slug": "banque-pt_pt_maths-c_2007",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths C",
+    "annee": 2007
+  },
+  "questions": 30,
+  "redaction": "Corrigés non officiels rédigés et vérifiés par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2007/math_c_2007.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2007/rapport_math_c_ecrit_2007.pdf",
+    "index_sujets": "https://www.banquept.fr/article51.html",
+    "index_rapports": "https://www.banquept.fr/article55.html",
+    "livret": "https://www.banquept.fr/documents/livret/2007/Livret_Rose_2007_1_2.pdf#page=12",
+    "sha256_sujet": "f9aa0c1a4ff91ba9e865aab3776b774013b845bab8e9421047c17506bd4a0aef",
+    "pages_sujet": 4,
+    "sha256_rapport_jury": "d50890a55a672d79f253c106605670bbad201e78fea688b3ff1fbaf3e5e9fdb4",
+    "pages_rapport_jury": 4,
+    "sha256_livret": "92b0f9429df696ee5c62424af4ce682b8ad1b2aafa7d90e2e50e620b545274d0",
+    "pages_livret": 20,
+    "coefficients_admissibilite": {
+      "École polytechnique": 6,
+      "ENS Cachan": 3
+    }
+  },
+  "figures": [
+    {
+      "question": "I.1.a",
+      "fichier": "figures/croissante.svg",
+      "legende": "Première exponentielle avec a égal à deux sur les deux périodes demandées."
+    },
+    {
+      "question": "I.1.b",
+      "fichier": "figures/decroissante.svg",
+      "legende": "Deuxième exponentielle avec a égal à deux, tracée séparément sur le même intervalle."
+    },
+    {
+      "question": "III.2.a",
+      "fichier": "figures/noyau.svg",
+      "legende": "Noyau pour N égal à quatre, avec valeur neuf aux multiples de pi."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1.a",
+      "I.1.b",
+      "I.2",
+      "I.3.a",
+      "I.3.b",
+      "I.3.c",
+      "I.3.d",
+      "I.4.a",
+      "I.4.b",
+      "I.5.a",
+      "I.5.b",
+      "II.1.a",
+      "II.1.b",
+      "II.2.a",
+      "II.2.b",
+      "II.2.c",
+      "II.3.a",
+      "II.3.b",
+      "II.4",
+      "II.5",
+      "III.1",
+      "III.2.a",
+      "III.2.b",
+      "III.2.c",
+      "III.3",
+      "III.4",
+      "III.5.a",
+      "III.5.b",
+      "III.5.c",
+      "III.6"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": "I.1.a",
+        "page_sujet": 1
+      },
+      {
+        "question": "I.1.b",
+        "page_sujet": 1
+      },
+      {
+        "question": "I.2",
+        "page_sujet": 1
+      },
+      {
+        "question": "I.3.a",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.3.b",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.3.c",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.3.d",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.4.a",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.4.b",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.5.a",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.5.b",
+        "page_sujet": 2
+      },
+      {
+        "question": "II.1.a",
+        "page_sujet": 2
+      },
+      {
+        "question": "II.1.b",
+        "page_sujet": 2
+      },
+      {
+        "question": "II.2.a",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.2.b",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.2.c",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.3.a",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.3.b",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.4",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.5",
+        "page_sujet": 3
+      },
+      {
+        "question": "III.1",
+        "page_sujet": 3
+      },
+      {
+        "question": "III.2.a",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.2.b",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.2.c",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.3",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.4",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.5.a",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.5.b",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.5.c",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.6",
+        "page_sujet": 4
+      }
+    ],
+    "precision": "Trois parties, deux graphes distincts sur les deux périodes demandées, quatre pages du sujet. En II.2.a, le dénominateur impose X différent de −1."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modifications": true,
+      "perimetre": "Lecture des quatre pages et du rapport, calcul des coefficients de Fourier, majoration uniforme du reste, intégration du noyau et vérification numérique indépendante, rédaction des deux éditions."
+    }
+  ]
+}

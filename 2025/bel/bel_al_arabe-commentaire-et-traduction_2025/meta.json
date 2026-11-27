@@ -1,0 +1,136 @@
+{
+  "slug": "bel_al_arabe-commentaire-et-traduction_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Arabe (commentaire et traduction)",
+    "annee": 2025,
+    "modalite": "écrit commun"
+  },
+  "questions": 2,
+  "duree_heures": 6,
+  "redaction": "Corrigé original proposé par IA, non officiel.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2025-07/Commentaire%20et%20traduction.pdf#page=6",
+    "sujet_sha256": "ea1e2d243c18761ad6c43ed4f301fdebb92b05def7502a7357659f787a15ae35",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2025-11/Arabe%202025%20OK%20Lyon%20RELU.pdf#page=2",
+    "rapport_jury_sha256": "f091d06086baee7ada7cb3d37b66028a1a8b2dbe8d4b9df6ede56f11af219b60",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2025",
+    "ouvrage": "Ǧurǧī Zaydān, *Tārīḫ ādāb al-luġa al-ʿarabiyya* (1914).",
+    "ecoles": "ENS de Lyon / ENS (Paris)"
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2025-07/Commentaire%20et%20traduction.pdf#page=6",
+      "sha256": "ea1e2d243c18761ad6c43ed4f301fdebb92b05def7502a7357659f787a15ae35",
+      "pages": 24,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "d10fc4d68158b2c87292528c0faa5bf3de66f9759bfb6b0292536515d81036d3"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "1e7bff601e229489b20e9530d41c12b6a405a88fd4acd1634098b88de711e417"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "d3ec45d38d520af023b0515c06484715792a61aa898aafa970f63a13c4186b19"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "1ea0d71c9e3bc45bb63be292df2fed3f724c5317dbd0a6c848e1559d1138ed4f"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2025-11/Arabe%202025%20OK%20Lyon%20RELU.pdf#page=2",
+      "sha256": "f091d06086baee7ada7cb3d37b66028a1a8b2dbe8d4b9df6ede56f11af219b60",
+      "pages": 8,
+      "pages_verifiees": [
+        {
+          "numero": 2,
+          "rendu_sha256": "0ac66aae312e2fe33c3cd4e6771fd1217666aedd0010a335e5520eadf7f53ea0"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "e0307b42bad071be0656e2ac2430e7337fbbb31daa5cc6b5a8a3b2e341da3c37"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "Commentaire",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "Le statut de la musique varie avec son mode de transmission. L’écoute sélectionne, les traités organisent, puis les témoignages renseignent sur les ouvrages disparus."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction originale des deux éditions, étude du feuillet, consultation du jury, élaboration du guide et du schéma."
+    },
+    {
+      "phase": "revision",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Confrontation des noms, de la clientèle et de la fonction de secrétaire à la notice sur Yūnus. Vérification du second titre perdu et des controverses postérieures, traitées dans le commentaire."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire",
+      "Version"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Commentaire",
+        "page_pdf": 6,
+        "pages_pdf": [
+          6,
+          7
+        ],
+        "ligne_debut": 1,
+        "ligne_fin": 37
+      },
+      {
+        "question": "Version",
+        "page_pdf": 6,
+        "pages_pdf": [
+          6
+        ],
+        "ligne_debut": 13,
+        "ligne_fin": 22,
+        "debut": "ولما اشتغل",
+        "fin": "وقد ضاع هذا أيضًا"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

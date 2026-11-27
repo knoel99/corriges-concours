@@ -1,0 +1,94 @@
+{
+  "slug": "ens_mp-pc_mathematiques-informatique_2002",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Mathématiques-informatique",
+    "annee": 2002,
+    "duree_heures": 4
+  },
+  "questions": 27,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/ens_maths-info_mp-pc_2002.pdf",
+    "index_banque": "https://www.wikiprepa.fr/concours/ecrit/ens_maths-info_mp-pc_2002",
+    "identification": "Sujet UL 220, J. 2035, huit pages numérisées. Quatre heures, filières MP et PC groupe I, ENS de Paris et de Lyon. La fiche de la banque ne référence pas de rapport de jury pour cette session.",
+    "sujet_sha256": "b8c62be05cad51350700d1a6a7434e4687bd2939beac7ff2659d31a146668e1f"
+  },
+  "figures": [
+    {
+      "fichier": "figures/orthogonaux.svg",
+      "question": "2.7",
+      "legende": "Figure 1 — À l’ordre quatre, chaque case d’un carré latin orthogonal apporte un chiffre au nombre magique. Les deux carrés et le résultat sont lus dans le même ordre de lignes et de colonnes."
+    },
+    {
+      "fichier": "figures/tranches.svg",
+      "question": "3.10",
+      "legende": "Figure 2 — Dans la boîte de côtés quinze, dix et six, les trente symboles apparaissent respectivement deux, trois et cinq fois dans chaque tranche selon la coordonnée fixée."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Résolution des 27 questions des trois parties. Forme d’Hermite par colonnes, classification en petits ordres, exemples de carrés orthogonaux et magiques, tailles élémentaires et justification de la construction récursive des hyper-rectangles. Aucun rapport de jury répertorié pour cette session."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Confrontation des 27 questions des deux éditions aux huit pages du sujet UL 220. Vérification des opérations sur les colonnes, des petits carrés latins et magiques, des multiplicités par tranche et de la descente sur les pivots. Ajout du pseudocode de 3.3, des cas singuliers de 1.8 et 3.8 dans le guidé et des hypothèses de signe en 3.8. Contrôle des tableaux figurés de 2.7 et de la boîte (15,10,6) en 3.10."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "1.8",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7",
+      "2.8",
+      "2.9",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "3.7",
+      "3.8",
+      "3.9",
+      "3.10"
+    ],
+    "precision": "Les questions 1.1 à 1.8, 2.1 à 2.9 et 3.1 à 3.10 sont résolues dans les deux éditions. La source numérisée porte UL 220 et J. 2035. La fiche de la banque ne donne aucun rapport pour cette épreuve.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "b8c62be05cad51350700d1a6a7434e4687bd2939beac7ff2659d31a146668e1f",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Confrontation des 27 questions des deux éditions aux huit pages du sujet UL 220. Vérification des opérations sur les colonnes, des petits carrés latins et magiques, des multiplicités par tranche et de la descente sur les pivots. Ajout du pseudocode de 3.3, des cas singuliers de 1.8 et 3.8 dans le guidé et des hypothèses de signe en 3.8. Contrôle des tableaux figurés de 2.7 et de la boîte (15,10,6) en 3.10.",
+      "commit_redaction_anterieure": "b837ec82d1e3ea7b51c155122862f5f1c6f00f22"
+    }
+  }
+}

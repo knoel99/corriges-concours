@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Une même équation différentielle apparaît sous forme de série entière puis comme équation radiale sur le demi-plan de Poincaré. Les puissances de nombres positifs utilisent le logarithme réel, même lorsque le paramètre est complexe.
 
 ## I. Série entière et équation différentielle
@@ -35,6 +37,8 @@ Comme $t>0$, les deux équations sont équivalentes par ce changement de fonctio
 
 La quantité $s(1-s)$ est inchangée sous $s\mapsto1-s$. L’hypothèse assure que $s$ et $1-s$ appartiennent à $S$. D’après 5.a, $\Phi_s$ et $\Phi_{1-s}$ sont solutions. Puis $f_s(t^2)=1+O(t^2)$, $\frac{d}{dt}f_s(t^2)=O(t)$ et de même pour $1-s$. En formant $\Phi_s\Phi_{1-s}'-\Phi_s'\Phi_{1-s}$, les puissances de $t$ se compensent et le résultat vaut $1-2s+O(t^2)$, non nul près de zéro. Sur $]0,1[$ le coefficient dominant de l’équation ne s’annule pas et l’espace des solutions est de dimension deux. Ces deux solutions en constituent une base.
 
+L’exclusion de $s=1/2$ intervient dans le wronskien. Même lorsque $\Re(s)=1/2$, son terme constant $1-2s$ reste non nul dès que $s\ne1/2$. Comparer seulement les modules des deux solutions n’aurait pas permis de traiter ce cas.
+
 ## II. Action de rotations sur le demi-plan
 
 ### Question 6.a
@@ -61,6 +65,8 @@ Par 6.b, $A_\theta(z)=A_{\theta'}(z)$ équivaut à $A_{\theta-\theta'}(z)=z$. Ap
 
 Posons $w=(z-i)/(z+i)$, bijection de $H$ sur le disque unité d’inverse $z=i(1+w)/(1-w)$. Un calcul donne $w(A_\theta z)=e^{-2i\theta}w(z)$ et $|w(z)|^2=(c(z)-1)/(c(z)+1)$. Tous les points d’un même cercle de niveau $c_0$ correspondent ainsi à tous les arguments d’un même module. Les facteurs $e^{-2i\theta}$ les parcourent tous, d’où l’égalité avec l’orbite.
 
+Pour préciser le sens de rotation, le numérateur de $w(A_\theta z)$ est proportionnel à $(\cos\theta-i\sin\theta)(z-i)$ et son dénominateur à $(\cos\theta+i\sin\theta)(z+i)$. Cela donne le facteur $e^{-2i\theta}$ utilisé ci-dessus.
+
 ### Question 8.a
 
 Écrivons $d=it\sin\theta+\cos\theta$. La dérivation de l’homographie de déterminant un donne $U_t=i/d^2$ ; la dérivation en $\theta$ donne $U_\theta=-(1+(it)^2)/d^2=(t^2-1)/d^2$. Donc $J=\operatorname{Im}(\overline{U_t}U_\theta)=(1-t^2)/|d|^4$, soit $(1-t^2)/(\cos^2\theta+t^2\sin^2\theta)^2>0$.
@@ -68,6 +74,8 @@ Posons $w=(z-i)/(z+i)$, bijection de $H$ sur le disque unité d’inverse $z=i(1
 ### Question 8.b
 
 On a $c(it)=(t+t^{-1})/2$, strictement décroissante de $+\infty$ vers $1$ pour $0<t<1$. Pour $z\ne i$ dans $H$, le nombre $c(z)>1$ détermine donc un unique $t$ de cet intervalle, et 7.b assure $z=A_\theta(it)$. Le point $i$, de niveau un, est exclu. Si $U(t,\theta)=U(t',\theta')$, l’invariance impose $t=t'$, puis 6.d impose $\theta-\theta'\in\pi\mathbb Z$. Réciproquement ces deux conditions suffisent.
+
+L’unique paramètre se lit aussi sur le dessin. Résoudre $t^2-2c(z)t+1=0$ donne $t=c(z)-\sqrt{c(z)^2-1}$ pour la racine inférieure à $1$. C’est l’ordonnée du point bas du cercle, l’autre racine étant $1/t$.
 
 ![Figure 1 — Trois orbites du demi-plan. Le point marqué sur chaque cercle est son unique intersection avec le segment imaginaire entre 0 et i.](figures/cercles-du-demi-plan.svg)
 

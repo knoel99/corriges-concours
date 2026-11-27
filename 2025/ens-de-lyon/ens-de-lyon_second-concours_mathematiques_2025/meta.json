@@ -10,7 +10,12 @@
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_sujet_math.pdf",
-    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_rap_eMath.pdf"
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_rap_eMath.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_rap_eMath.pdf",
+    "sujet_sha256": "41094781f77b4ff7c334fffcf8f5dbf466d2c419d295d675f11a23f961e666a3",
+    "rapport_sha256": "5302217ba76c578d63d81dd88c5ab9e9924f7f7c79c5a8d9d27f2c13fe48bca2",
+    "index_banque": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/",
+    "index_banque_sha256": "36243e7203175ea8fc3f1b47cf04cfaeff13de5e6fe10463bd7d894a9fca4bfe"
   },
   "figures": [
     {
@@ -40,6 +45,59 @@
       "perimetre": "Rédaction des 25 réponses en deux éditions et de trois figures sur les quatre pages du sujet et le rapport officiel. Correction de l’hypothèse manquante de normalisation en I.2 par un contre-exemple, puis preuve de la formule de Lie sous les hypothèses imprimées. Preuve dyadique de l’inégalité de traces et borne de concentration valable à tout rang.",
       "agent": "astra_maths",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Lecture visuelle des trois pages de consignes, dont le texte courant est mal encodé dans le PDF, et examen du rapport de jury. Sept alinéas pour Poincaré, cinq pour Lie, cinq pour Golden–Thompson et huit en probabilités. Contrôle de la norme au point zéro, des coefficients du commutateur, du sens de la cyclicité sous la trace et de la borne pour les matrices de Rademacher. L’indication correspondante de l’édition guidée a été précisée.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
-  ]
+  ],
+  "questions_principales": 17,
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "E.1",
+      "E.2a",
+      "E.2b",
+      "E.2c",
+      "E.2d",
+      "E.3",
+      "E.4",
+      "P.I.1",
+      "P.I.2",
+      "P.I.3",
+      "P.I.4",
+      "P.I.5",
+      "P.II.1",
+      "P.II.2",
+      "P.II.3a",
+      "P.II.3b",
+      "P.II.4",
+      "P.III.1",
+      "P.III.2",
+      "P.III.3a",
+      "P.III.3b",
+      "P.III.3c",
+      "P.III.4a",
+      "P.III.4b",
+      "P.III.4c"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "precision": "Lecture visuelle des trois pages de consignes, dont le texte courant est mal encodé dans le PDF, et examen du rapport de jury. Sept alinéas pour Poincaré, cinq pour Lie, cinq pour Golden–Thompson et huit en probabilités. Contrôle de la norme au point zéro, des coefficients du commutateur, du sens de la cyclicité sous la trace et de la borne pour les matrices de Rademacher.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "relecture_corrige",
+      "perimetre": "Lecture visuelle des trois pages de consignes, dont le texte courant est mal encodé dans le PDF, et examen du rapport de jury. Sept alinéas pour Poincaré, cinq pour Lie, cinq pour Golden–Thompson et huit en probabilités. Contrôle de la norme au point zéro, des coefficients du commutateur, du sens de la cyclicité sous la trace et de la borne pour les matrices de Rademacher.",
+      "sha256_sujet_controle": "41094781f77b4ff7c334fffcf8f5dbf466d2c419d295d675f11a23f961e666a3",
+      "sha256_rapport_controle": "5302217ba76c578d63d81dd88c5ab9e9924f7f7c79c5a8d9d27f2c13fe48bca2"
+    }
+  }
 }

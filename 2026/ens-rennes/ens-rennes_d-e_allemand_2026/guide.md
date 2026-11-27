@@ -4,11 +4,15 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 Les pages imprimées 1 à 3 réunissent deux traductions et une expression écrite sur un troisième texte. Chaque réponse d’expression doit compter de 225 à 275 mots. Le nombre indiqué après chaque réponse exclut son titre.
 
-[Fascicule officiel, pages imprimées 1 à 3](https://www.ens-rennes.fr/medias/fichier/sujet-lve-d-e-2026_1790867583165-pdf#page=2) · [Rapport écrit de allemand](https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-allemand-e-crit-2026_1793640863622-pdf)
+[Fascicule officiel, pages imprimées 1 à 3](https://www.ens-rennes.fr/medias/fichier/sujet-lve-d-e-2026_1790867583165-pdf#page=2) · [Rapport écrit d’allemand](https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-allemand-e-crit-2026_1793640863622-pdf)
+
+**Repère du fascicule.** La version distingue la formation médicale que Denis souhaite suivre du service sanitaire dans lequel il aimerait pouvoir choisir une affectation en cas de conscription. Dans le dernier témoignage, Cosmin préfère être formé dès maintenant. Ces deux futurs envisagés expliquent des attitudes différentes envers le service.
 
 ## I. Version française
 

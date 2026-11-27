@@ -1,0 +1,122 @@
+{
+  "slug": "x-ens_pc_physique-b_2015",
+  "epreuve": {
+    "concours": "X-ENS",
+    "ecoles_historiques": "École polytechnique, ESPCI et ENS",
+    "filiere": "PC",
+    "matiere": "Physique B",
+    "annee": 2015
+  },
+  "questions": 32,
+  "intitule": "Un volant de badminton et la masse du photon",
+  "redaction": "19 questions de mécanique du sport et 13 questions sur la masse du photon, mesures sur la chronophotographie et vérification des limites expérimentales.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/09/15_pc_sujet_physiqueB_xeulc.pdf",
+    "sujet_sha256": "30858dbfc74cd9a8b32fec8b75756fc218b7620d0df1a3a35b45956569de51ca",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/01/15_pc_rap_ephyb.pdf",
+    "rapport_sha256": "a2c7ebceb66d78d635af1bdf26d84fc8478a2d6606ae55db0daedb768cc20093",
+    "garde": "XEULC · École polytechnique, ESPCI et ENS · 4 heures",
+    "attribution_du_rapport": "Garde du sujet XEULC. Le rapport correspondant au même sujet porte XELC et cite X, ESPCI, ENS Lyon et Cachan."
+  },
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "physique_mp_suite",
+      "session": "physique_mp_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Rapport de physique B PC 2015, discussion des domaines de Reynolds, des temps du vol du volant et des deux bornes expérimentales."
+    },
+    {
+      "phase": "redaction",
+      "agent": "physique_mp_suite",
+      "session": "physique_mp_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "19 questions de mécanique du sport et 13 questions sur la masse du photon, mesures sur la chronophotographie et vérification des limites expérimentales."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I.1",
+      "fichier": "figures/parabole.svg",
+      "legende": "Vol du volant dans le modèle sans air, au départ et au retour à la même hauteur."
+    },
+    {
+      "numero": 2,
+      "question": "I.4",
+      "fichier": "figures/regimes-sphere.svg",
+      "legende": "Schéma des régimes d’une sphère lisse. Les deux points repèrent les Reynolds du volant sur la courbe de comparaison."
+    },
+    {
+      "numero": 3,
+      "question": "I.9",
+      "fichier": "figures/mesure-vitesse.svg",
+      "legende": "Le modèle de freinage passe près de la mesure graphique de vitesse moyenne."
+    },
+    {
+      "numero": 4,
+      "question": "I.14",
+      "fichier": "figures/deux-regimes.svg",
+      "legende": "Les deux segments idéalisés négligent le déplacement horizontal durant le raccord."
+    },
+    {
+      "numero": 5,
+      "question": "II.2",
+      "fichier": "figures/vitesse-groupe.svg",
+      "legende": "Le retard diminue quand le nombre d’onde augmente."
+    },
+    {
+      "numero": 6,
+      "question": "II.11",
+      "fichier": "figures/potentiel-cavite.svg",
+      "legende": "Le potentiel est imposé à la paroi et l’écart à cette valeur est maximal au centre."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7",
+      "I.8",
+      "I.9",
+      "I.10",
+      "I.11",
+      "I.12",
+      "I.13",
+      "I.14",
+      "I.15",
+      "I.16",
+      "I.17",
+      "I.18",
+      "I.19",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "II.8",
+      "II.9",
+      "II.10",
+      "II.11",
+      "II.12",
+      "II.13"
+    ]
+  }
+}

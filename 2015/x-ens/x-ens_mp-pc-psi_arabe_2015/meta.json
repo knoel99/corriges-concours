@@ -1,0 +1,59 @@
+{
+  "slug": "x-ens_mp-pc-psi_arabe_2015",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Arabe",
+    "annee": 2015,
+    "modalite": "écrit"
+  },
+  "intitule": "L’eau entre rareté, sécurité et choix d’usage",
+  "questions": 2,
+  "redaction": "Synthèse arabe titrée des documents 1 à 4 et texte d’opinion arabe en réaction à l’éditorial de 2010. Lecture du camion-citerne dans la ville inondée, distinction entre ressource, réserve et service rendu.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/09/15_mp-pc_sujet_arabe_xeulcr.pdf",
+    "sha256_sujet": "43e71c448273ef9cc4e10337b2e2dd5aef6ddfd70f767febeafa078129e9e9c0",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2015/%20",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/09/15_mp-pc_sujet_arabe_xeulcr.pdf",
+        "sha256": "43e71c448273ef9cc4e10337b2e2dd5aef6ddfd70f767febeafa078129e9e9c0"
+      },
+      {
+        "role": "autre publication du sujet",
+        "url": "https://www.ens.psl.eu/IMG/file/concours/2015/PC/sujets/sujet_mppc_ara2015.pdf",
+        "sha256": "0759c84b4caeded92f5ee868ffc9b66f050caef822d54a57106fc62f4e207015"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/lecture-du-dossier.svg",
+      "legende": "Les trois mesures de la disponibilité de l’eau mises en relation dans la synthèse."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "arabe_mp_pc_2011_2014",
+      "session": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Synthèse arabe titrée des documents 1 à 4 et texte d’opinion arabe en réaction à l’éditorial de 2010. Lecture du camion-citerne dans la ville inondée, distinction entre ressource, réserve et service rendu."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  }
+}

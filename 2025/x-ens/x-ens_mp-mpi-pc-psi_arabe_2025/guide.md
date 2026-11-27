@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Sujet commun](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Arabe%20sujet.pdf) · [Fascicule PSI](https://www.ens.psl.eu/sites/default/files/2025_psi_ep5_arabe_14022025_nb.pdf) · [Rapport du jury](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Ecrits_MP%2C%20MPI%2C%20PC%20et%20PSI_arabe%20OK.pdf) · [Rapport PSI](https://www.ens.psl.eu/sites/default/files/2025_psi_rapport_arabe_ecrit.pdf)
 
 ## Préparer la composition

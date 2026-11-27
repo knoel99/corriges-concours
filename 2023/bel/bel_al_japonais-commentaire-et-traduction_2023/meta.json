@@ -1,0 +1,98 @@
+{
+  "slug": "bel_al_japonais-commentaire-et-traduction_2023",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Japonais (commentaire et traduction)",
+    "annee": 2023
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2023-09/Commentaire-d-un-texte-en-LVE.pdf#page=16",
+    "sujet_sha256": "465bc18f65e3127c7bcf5720f6042d95180133384f245e34fd7b38acd0ffb760",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2023-12/Japonais-2023-V2.pdf#page=2",
+    "rapport_sha256": "56116aaf2e693b24dbc4133500b2ee120ff69a07ce26ce618b7b617c8459a403",
+    "archive_session": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2023",
+    "archive_session_sha256": "f6056d10df69cb1cd23d19cee5fd113ebee95a1de79dd9a39e5b1a150e9e01d6",
+    "auteur_oeuvre": "三島由紀夫, アポロの杯 (Mishima Yukio, La Coupe d’Apollon, 1952)."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "Comment le regard du voyageur se corrige"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire intégral en japonais, version française du passage indiqué, schéma et accompagnement."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture des trois paragraphes de version, du passage du récit passé au constat présent, du propriétaire de la voiture, du chiffre et de la dernière proposition avant la tortue. Le jugement sur l’aspect des garçons porte sur les personnes."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire",
+      "Version française"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Commentaire",
+        "page_pdf": 16,
+        "page_pdf_fin": 17,
+        "perimetre": "De l’indication « Hawaï » et de la date du 1er janvier jusqu’à la phrase sur les Nisei, ligne 33.",
+        "pages_rapport": [
+          2,
+          2
+        ]
+      },
+      {
+        "question": "Version française",
+        "page_pdf": 16,
+        "page_pdf_fin": 16,
+        "perimetre": "Lignes 3 à 14, de « ホノルルは » à « 速さを競うたりしている。 ». La phrase sur la tortue commence sur la même ligne et suit la version.",
+        "pages_rapport": [
+          2,
+          2
+        ]
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "slug": "ens-paris-saclay_design_histoire-de-lart_2023",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Histoire de l’art",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "intitule": "Après les combustibles fossiles, quelle architecture ?",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "index_annales": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=583",
+    "reperes_documentaires": [
+      "David Wright, Natural Solar Architecture: A Passive Primer, 1978, traduction française Soleil, Nature, Architecture, 1979.",
+      "Eleanor Raymond, Mária Telkes et Amelia Peabody, Dover Sun House, Massachusetts, 1948.",
+      "Peter Behrens pour AEG, bouilloires électriques, 1909.",
+      "Félix Trombe et Jacques Michel, expérimentations de murs solaires à Odeillo, années 1960."
+    ],
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2023_Sujet_ecrit_HistDeLart_Design.pdf",
+    "sha256_sujet": "7fe7f153115a73016e24b918ca357b1a76ecba63c7882ed5beb092d9a9572af5",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2023_Design_rapport_ecrit_Dissertation_Histoire.pdf",
+    "sha256_rapport_jury": "dc15da370094bf5f3a2c68386a65419dfced9cf56dba0435847369f5de08ff86"
+  },
+  "figures": [
+    {
+      "fichier": "figures/du-projet-au-milieu.svg",
+      "question": "Dissertation",
+      "legende": "À Dover, l’air transporte la chaleur vers les réserves. Dans le mur capteur, une masse maçonnée en assure le stockage.",
+      "provenance": "Dessin analytique original de la campagne, session astra_maths, repris pour cette composition."
+    },
+    {
+      "fichier": "figures/deux-vitrages-a-dover.svg",
+      "question": "Dissertation",
+      "legende": "Dans la maison de 1948, le vitrage du capteur et les fenêtres ont des fonctions distinctes.",
+      "provenance": "Schéma original de cette révision, composé d’après la référence étudiée."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_design",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions après confrontation du sujet au rapport de la session. Mise en relation du dessin analytique conservé, des exemples datés et de l’argumentation historique."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Le dispositif solaire de Dover permet de distinguer le vitrage capteur de la fenêtre. Analyse de l’oubli, de la diffusion industrielle de la critique et de la portée des deux programmes admis. Confrontation au feuillet et aux rubriques du rapport écrit de la session."
+    }
+  ],
+  "gabarit": "dissertation",
+  "date_revision": "2026-11-26",
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2023_Sujet_ecrit_HistDeLart_Design.pdf",
+      "sha256": "7fe7f153115a73016e24b918ca357b1a76ecba63c7882ed5beb092d9a9572af5",
+      "pages": 2,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "9750e30fc255d99364ba0bbf314f852f57e3aacfb0523cad9f2f5436b31844f6"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "791407d0fd90474f7f97af4777f0dfffc78f24e3c0bab250996c6a2298b095c3"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2023_Design_rapport_ecrit_Dissertation_Histoire.pdf",
+      "sha256": "dc15da370094bf5f3a2c68386a65419dfced9cf56dba0435847369f5de08ff86",
+      "pages": 4,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "e6ada299ed67c458a6bfbb70acec4367ead92cf415f5dd1b5835b27d8b68298b"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "26ebf1673f34407c67aa07f6c01c957dbc64ff12e89a40332162d9cffb063d14"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "0e6c192ff292b87bcd51defd118a354a7334598766385a52861ac092f3478fc7"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "17e10075753e90b2037728293f913ba3fc94302754f037001f5f23739aaa0823"
+        }
+      ],
+      "rubriques": "Présentation du sujet, programme, analyse du sujet, problématique, développement, rédaction."
+    },
+    "reference_etudiee": {
+      "url": "https://www.design.upenn.edu/sites/default/files/14BarberD_WSEP_GR51.pdf",
+      "sha256": "97fb734e1fdceda9f07b7ad189546fe185ce8173ff66560016036744fd98e931",
+      "nature": "D. A. Barber, The World Solar Energy Project, ca. 1954, Grey Room 51, p. 73–75, deux états du projet et coupe du système."
+    }
+  },
+  "duree_heures": 4,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 2,
+        "citation": "« Avant l’âge des combustibles fossiles et de la Révolution Industrielle, les hommes dépendaient du feu, du soleil, du vent, de l’eau, des animaux et d’eux-mêmes pour effectuer leurs travaux… et les choses se faisaient. Avec l’arrivée du pétrole et de ses dérivés, du moteur à vapeur, de l’électricité et du reste, les gens profitèrent aussitôt de ces nouveaux moyens mis à disposition. […] Ainsi, de nombreuses choses tombèrent dans l’oubli. […] Manifestement, si nous voulons survivre, nous devons quitter la route que nous avons empruntée depuis la Révolution Industrielle. Par ailleurs, retourner à l’état primitif ne paraît guère attrayant. »",
+        "reference": "David Wright, Soleil, Nature, Architecture, 1979, Roquevaire : Parenthèses. trad. de l’anglais : Natural Solar Architecture, 1978.",
+        "consigne": "Vous analyserez et discuterez cet extrait de l’architecte David Wright en vous appuyant sur votre connaissance du programme et selon un propos argumenté.",
+        "programme_imprime": "Design : de l’objet à l’environnement (1900-1980)",
+        "annexes_imposees": [],
+        "perimetre": "Le dispositif solaire de Dover permet de distinguer le vitrage capteur de la fenêtre. Analyse de l’oubli, de la diffusion industrielle de la critique et de la portée des deux programmes admis.",
+        "second_programme_accepte": "Matérialité et immatérialité des productions industrielles : du Deutscher Werkbund à l’exposition « Les Immatériaux » (1907-1985)"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

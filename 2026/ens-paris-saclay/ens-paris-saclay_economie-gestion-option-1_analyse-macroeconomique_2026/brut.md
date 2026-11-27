@@ -6,6 +6,12 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+**Couverture vérifiée.** L’intitulé de la page 2 appelle une dissertation unique. Les deux éditions traitent les chocs subis par l’Union, les protections qu’elle adopte et la coordination des réponses. Les effets sur le revenu et sur le solde commercial sont recalculés dans un modèle d’économie ouverte. Les exemples européens sont situés avant le 16 avril 2026.
+
 ## L’Europe face au retour du protectionnisme
 
 En 2024, l’Union européenne a imposé des droits compensateurs sur certaines voitures électriques produites en Chine. En 2025, les droits de douane américains ont fait peser une incertitude supplémentaire sur les entreprises européennes qui vendent aux États-Unis. La même économie peut donc protéger ses producteurs sur son marché et subir la fermeture d’un débouché extérieur. Le protectionnisme désigne les interventions qui avantagent les producteurs nationaux face à leurs concurrents étrangers. Le « retour » évoque surtout un changement de priorités. La politique agricole commune et les instruments antidumping existaient pendant les décennies de libéralisation. L’enjeu nouveau est la place centrale que prennent la sécurité des approvisionnements, les subventions industrielles et les rapports de puissance dans les choix commerciaux.
@@ -18,7 +24,13 @@ Une taxe américaine à l’entrée renchérit le prix relatif d’un bien europ
 
 Dans l’identité de dépense, une baisse des exportations, toutes choses égales par ailleurs, réduit le PIB. La baisse initiale des revenus peut entraîner celle de la consommation puis de l’emploi. Le multiplicateur dépend de l’épargne, des importations induites et de la réaction des politiques économiques. Une baisse des importations concomitante peut même améliorer le solde commercial au milieu d’une récession. À plus long terme, des ventes moindres sur de grands marchés réduisent les économies d’échelle. Même sans changement définitif des droits, l’incertitude rend l’attente plus attractive pour une entreprise sur le point d’installer une usine irréversible. Le détournement de commerce crée aussi des gagnants. Un fournisseur européen peut remplacer dans un pays tiers un concurrent davantage taxé, tandis que des marchandises écartées du marché américain accentuent la concurrence en Europe.
 
+On peut mesurer cette transmission sur un exemple à prix fixes. Supposons que les ménages consomment 0,75 euro par euro de revenu supplémentaire et que les importations augmentent de 0,25 euro par euro de revenu. À investissement, dépenses publiques et impôts inchangés, la variation du PIB vérifie $\Delta Y=0{,}75\Delta Y+\Delta X-0{,}25\Delta Y$. Une perte de 10 milliards d’euros d’exportations réduit le PIB de 20 milliards et les importations de 5 milliards. Le solde extérieur se dégrade alors de 5 milliards. Cet exemple isole le choc de demande. Une hausse du coût des composants importés modifierait aussi les prix et les capacités de production.
+
 Un choc sur les exportations déprime généralement la demande et les prix intérieurs. Une hausse européenne du prix des intrants importés élève au contraire les coûts et peut faire coexister ralentissement et inflation. L’automobile exportatrice, la distribution importatrice et les services de proximité ne subissent donc pas le même choc. Une politique monétaire commune peut agir sur la dépense globale, sans pouvoir rétablir un débouché sectoriel. Une dépréciation de l’euro faciliterait certaines ventes en renchérissant en même temps les achats en devises. Sa direction et son effet net restent conditionnels aux réactions financières et commerciales.
+
+Une entreprise européenne peut cumuler les trois effets. Imaginons qu’elle vende des machines aux États-Unis et achète un composant taxé à son entrée dans l’Union. Au moment où ses commandes américaines diminuent, sa marge sur chaque machine baisse si elle maintient son prix de vente. Si elle ignore combien de temps les droits dureront, elle peut en outre différer l’agrandissement de l’atelier. Ce dernier effet atteint l’investissement avant même l’encaissement d’une nouvelle taxe.
+
+![Figure 1 — Trois canaux du choc commercial](figures/canaux-commerciaux.svg)
 
 ### II. La protection européenne a des justifications qui en limitent aussi l’emploi
 

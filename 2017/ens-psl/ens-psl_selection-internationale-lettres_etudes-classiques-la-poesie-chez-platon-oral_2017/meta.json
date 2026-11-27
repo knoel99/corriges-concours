@@ -1,0 +1,71 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_etudes-classiques-la-poesie-chez-platon-oral_2017",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Études classiques — la poésie chez Platon (oral)",
+    "annee": 2017,
+    "modalite": "oral"
+  },
+  "intitule": "Aspects et enjeux de la poésie chez Platon",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/lettres-classiques-ecrit1.pdf",
+    "sujet_sha256": "9740dc5702769a803e480ddb8bdf2cbac7e239387bb27034307c76d60debe806",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.ens.psl.eu/sites/default/files/lettres-classiques-ecrit1.pdf",
+        "sha256": "9740dc5702769a803e480ddb8bdf2cbac7e239387bb27034307c76d60debe806",
+        "pages": 2
+      },
+      {
+        "role": "autre exemplaire",
+        "url": "https://www.ens.psl.eu/sites/default/files/et.classiques-oral1-si17.pdf",
+        "sha256": "fe561509d30d794312f0e3a75d3fd3d1f67c38178d334f4693b7f55e462b39bb",
+        "pages": 2
+      }
+    ],
+    "precision_sujet": "Les deux PDF intitulés « Épreuve orale de spécialité » prescrivent vingt minutes d’exposé, puis dix minutes de questions. Les textes sont Ion 533d–e, République III 398a–b, Banquet 215a–d, avec les coupures du sujet."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/puissance-et-jugement.svg",
+      "question": "Exposé de synthèse",
+      "legende": "Du pouvoir de transmission à la sélection des modèles et à l’interprétation des images"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "classiques_2017",
+      "agent": "classiques_2017",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture des trois extraits grecs dans les deux feuillets et de leur traduction en regard dans le feuillet bilingue. Rédaction de l’exposé, du guide et du schéma."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Exposé de synthèse"
+    ],
+    "elements_verifies": [
+      "Ion 533d-e : inspiration de la Muse, image de l’aimant et compétence du rhapsode.",
+      "République III, 398a-b : honneurs, renvoi de l’imitateur et maintien d’un autre poète pour l’éducation des gardiens.",
+      "Banquet 215a-d : éloge en images, Silènes ouvrants, Marsyas, paroles de Socrate et auditeurs.",
+      "Confrontation des trois extraits et préparation aux dix minutes de discussion."
+    ]
+  }
+}

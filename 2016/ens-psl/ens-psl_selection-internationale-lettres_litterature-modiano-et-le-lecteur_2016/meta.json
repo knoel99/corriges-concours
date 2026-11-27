@@ -1,0 +1,116 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_litterature-modiano-et-le-lecteur_2016",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Littérature — Modiano et le lecteur",
+    "annee": 2016,
+    "modalite": "écrit"
+  },
+  "intitule": "Littérature — Modiano et le lecteur",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/LITTERATURE.pdf",
+    "sujet_sha256": "aa671a0b682f85c87648ee812873e5dcdc321f2ef6e8fcf318fcc191e9e633cd",
+    "references": [
+      "https://www.nobelprize.org/prizes/literature/2014/modiano/25249-conference-nobel/",
+      "https://ctlsites.uga.edu/eberle/wp-content/uploads/sites/78/2017/08/iser_readingProcess.pdf",
+      "https://austen.unl.edu/visualizations/pride_and_prejudice/all"
+    ],
+    "archive_annuelle": "https://www.ens.psl.eu/rapports-du-concours-2016-lettres"
+  },
+  "figures": [
+    {
+      "fichier": "figures/developpement.svg",
+      "question": "Dissertation",
+      "legende": "Ce qui change au cours de la lecture"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Rédaction de la dissertation littéraire, de son accompagnement et de sa figure dans les deux éditions.",
+      "modifications": true
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Confrontation avec la conférence Nobel et les deux images du tirage photographique et de la voix chantée, contrôle du statut des perspectives chez Modiano, Austen et James. Contrôle des deux éditions.",
+      "modifications": true
+    },
+    {
+      "phase": "relecture",
+      "session": "x_maths_b_anciennes",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "perimetre": "Contrôle de la double analogie dans la conférence Nobel, du passage de la lettre de Darcy entre les chapitres 35 et 36, du rôle de la relecture chez Iser et du récit-cadre de James.",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    },
+    {
+      "phase": "autocontrole",
+      "session": "x_maths_b_anciennes",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "perimetre": "Contrôle de la consigne unique et de ses attendus, des exemples, de la figure, des signatures et des signets des deux PDF.",
+      "modifications": false,
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Analyser et commenter la réflexion de Patrick Modiano sur le roman et son lecteur, en mobilisant des lectures littéraires et critiques, françaises ou étrangères."
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Feuillet de l’écrit, p. 1 sur 1 ; une seule consigne, sans subdivision. La liste annuelle distingue cet écrit des oraux."
+  },
+  "controle_enonce": {
+    "question": "Analyser et commenter la réflexion de Patrick Modiano sur le roman et son lecteur, en mobilisant des lectures littéraires et critiques, françaises ou étrangères.",
+    "attendus": [
+      "Le savoir du lecteur et celui de l’auteur",
+      "Le développement photographique et le temps de la lecture",
+      "Le chant, la conduite du romancier et la marge d’interprétation",
+      "Discussion étayée par des lectures littéraires et critiques"
+    ],
+    "repere": "Feuillet de l’écrit, p. 1 sur 1 ; une seule consigne, sans subdivision. La liste annuelle distingue cet écrit des oraux.",
+    "figure": "Ce qui change au cours de la lecture"
+  }
+}

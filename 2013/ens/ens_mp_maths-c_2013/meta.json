@@ -11,7 +11,14 @@
   "sources": {
     "sujet": "https://www.ens.psl.eu/IMG/file/concours/2013/MPI/13_mp_math_c_ulc.pdf",
     "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2013/MPI/13_mpi_rap_emathc.pdf",
-    "sha256_sujet": "d20643871c2cbc792581ebc2b088de05ef76de6c3e2d100f5ed71039f3e793d7"
+    "sha256_sujet": "d20643871c2cbc792581ebc2b088de05ef76de6c3e2d100f5ed71039f3e793d7",
+    "index_banque": "https://www.ens.psl.eu/rapports-et-sujets-mpi-2013",
+    "index_banque_sha256": "ab0b65303fb6bd334d6eb8718d56279e6f36954cf851cc8c81067d60fbb1d199",
+    "rapport": "https://www.ens.psl.eu/IMG/file/concours/2013/MPI/13_mpi_rap_emathc.pdf",
+    "sujet_sha256": "d20643871c2cbc792581ebc2b088de05ef76de6c3e2d100f5ed71039f3e793d7",
+    "sujet_pages": 5,
+    "rapport_sha256": "463c4667d6c0f9e52a753c27d1a69d37b2b3e9ceb2d8de1b838ac3d06d4b719a",
+    "rapport_pages": 3
   },
   "figures": [
     {
@@ -31,6 +38,61 @@
       "perimetre": "Rédaction intégrale des deux éditions à partir du sujet ULC et du rapport. Vérification des 28 réponses, contre-exemples aux hypothèses de III.1 et preuve sous les hypothèses effectivement construites en partie IV. Schéma des vitesses avant et après rotation.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Contrôle des 28 alinéas des cinq parties et du rapport sur l’équation de collision. Vérification des deux hypothèses manquantes du lemme de récurrence, des majorants gaussiens, du jacobien des rotations et du signe de la dérivée d’entropie, jusque dans le cas d’égalité.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2.i",
+      "I.2.ii",
+      "I.2.iii",
+      "II.1",
+      "II.2.i",
+      "II.2.ii",
+      "II.2.iii",
+      "II.3",
+      "III.1",
+      "III.2",
+      "III.3.i",
+      "III.3.ii",
+      "IV.1.i",
+      "IV.1.ii",
+      "IV.2.i",
+      "IV.2.ii",
+      "IV.3.i",
+      "IV.3.ii",
+      "IV.3.iii",
+      "IV.4",
+      "V.1.i",
+      "V.1.ii",
+      "V.2",
+      "V.3.i",
+      "V.3.ii",
+      "V.4.i",
+      "V.4.ii"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "precision": "Contrôle des 28 alinéas des cinq parties et du rapport sur l’équation de collision. Vérification des deux hypothèses manquantes du lemme de récurrence, des majorants gaussiens, du jacobien des rotations et du signe de la dérivée d’entropie, jusque dans le cas d’égalité.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "relecture_corrige",
+      "perimetre": "Contrôle des 28 alinéas des cinq parties et du rapport sur l’équation de collision. Vérification des deux hypothèses manquantes du lemme de récurrence, des majorants gaussiens, du jacobien des rotations et du signe de la dérivée d’entropie, jusque dans le cas d’égalité.",
+      "sha256_sujet_controle": "d20643871c2cbc792581ebc2b088de05ef76de6c3e2d100f5ed71039f3e793d7",
+      "sha256_rapport_controle": "463c4667d6c0f9e52a753c27d1a69d37b2b3e9ceb2d8de1b838ac3d06d4b719a"
+    }
+  }
 }

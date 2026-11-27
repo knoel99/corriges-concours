@@ -20,7 +20,21 @@
     "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20MP%2C%20MPI%2C%20PC%20RAPPORT%20ECRIT%20DE%20FRANCAIS%20(XEULSR).pdf",
     "rapport_sha256": "5d4d0b34d36152be831595b690cadb1bd2e80b84ee1858faff5b5f2bbd8c4b66",
     "sujet_psi": "https://www.ens.psl.eu/sites/default/files/2024_psi_francais_xusr.pdf",
-    "sujet_psi_sha256": "67d3dbad90d9a1587ed5afdba5063bb9fc462ee4bd433fdb5286bdc96bba77ed"
+    "sujet_psi_sha256": "67d3dbad90d9a1587ed5afdba5063bb9fc462ee4bd433fdb5286bdc96bba77ed",
+    "programme": "https://www.education.gouv.fr/bo/2023/Hebdo28/ESRS2317934A",
+    "programme_sha256": "91350b31e7af8b6491683c5f195ce6b4cc0c0d35408c1629cc1dae904e3c750c",
+    "textes_de_reference": [
+      {
+        "libelle": "Laclos, lettre XXI",
+        "url": "https://fr.wikisource.org/wiki/Les_Liaisons_dangereuses/Lettre_21"
+      },
+      {
+        "libelle": "Laclos, lettre XXII",
+        "url": "https://fr.wikisource.org/wiki/Les_Liaisons_dangereuses/Lettre_22"
+      }
+    ],
+    "perimetre_du_rapport": "MP, MPI et PC, conformément à son en-tête. Le fascicule PSI de même date reproduit la même dissertation et le tableau de l’ENS ne joint aucun rapport français propre à la PSI.",
+    "index_psi": "https://www.ens.psl.eu/rapports-et-sujets-2024-psi"
   },
   "figures": [
     {
@@ -39,7 +53,42 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Rédaction des deux éditions sur le sujet officiel et le rapport du jury. Dissertation sur Montaigne avec les deux essais de Hannah Arendt, Lorenzaccio de Musset et Les Liaisons dangereuses de Laclos, avec préparation guidée et schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "fui_physique_un",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Contrôle du feuillet, du bulletin officiel et du rapport p. 3–5. Le rapport invite à étudier la portée morale du mot « mœurs », le symptôme que désigne « premier trait » et la restriction temporelle de la seconde phrase. Vérification des trois axes, des références aux œuvres et des schémas."
     }
   ],
-  "date_revision": "2026-11-24"
+  "date_revision": "2026-11-26",
+  "intitule": "Michel de Montaigne, « Du démentir », Essais, II (1580) — Faire croire",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "precision": "La page 2 du sujet contient une seule consigne de commentaire et de discussion de la citation au moyen des œuvres du programme. Les trois axes identifient les étapes de la proposition pédagogique.",
+    "pages_pdf_sujet": [
+      2
+    ],
+    "programme": "Arendt, Du mensonge en politique et Vérité et politique. Musset, Lorenzaccio. Laclos, Les Liaisons dangereuses.",
+    "items_verifies": [
+      "Corruption des mœurs et crédit accordé à la persuasion",
+      "Résistance des faits et limites du succès de la parole",
+      "Conditions du jugement moral et de la transmission du vrai"
+    ],
+    "lecture_du_rapport": "Le rapport invite à étudier la portée morale du mot « mœurs », le symptôme que désigne « premier trait » et la restriction temporelle de la seconde phrase."
+  }
 }

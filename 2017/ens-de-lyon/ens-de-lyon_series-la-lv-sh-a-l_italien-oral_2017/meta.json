@@ -1,0 +1,85 @@
+{
+  "slug": "ens-de-lyon_series-la-lv-sh-a-l_italien-oral_2017",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries LA/LV/SH (A/L)",
+    "matiere": "Italien (oral)",
+    "annee": 2017,
+    "modalite": "oral"
+  },
+  "intitule": "Italien — explication d’un texte d’auteur et analyse hors programme",
+  "questions": 9,
+  "redaction": "Neuf réponses en italien, dont deux explications de passages classiques bornés, et relances. Schéma sur les différents usages publics du témoignage et distinction entre sources reproduites et articles connexes. Concordance des sept coupures de presse et explication sur pièces de leurs clausules.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/italien-2017_1506588301935.pdf",
+    "sha256_sujet": "570d6747320b8f470287061aa65de3b69b369add046ca2475aa3b18abc5d115b",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/ITALIEN_2017.pdf",
+    "sha256_rapport_jury": "2dde147ce9f00bf9023be782ea64b8a348deb9136cba82dae888e27f697ebca7",
+    "archives_complementaires": [
+      {
+        "type": "cahier officiel des textes hors programme distribués",
+        "url": "https://www.ens-lyon.fr/sites/default/files/2017-11/italien-hors-programme2017pdf_1506588947702.pdf",
+        "sha256": "877b57f68b0323e1c0911a0d994e61ca658c2c68ae2a20a3b66fb66b97fa6db2",
+        "pages": 14
+      }
+    ],
+    "cahier_hors_programme": {
+      "type": "cahier officiel des textes hors programme distribués",
+      "url": "https://www.ens-lyon.fr/sites/default/files/2017-11/italien-hors-programme2017pdf_1506588947702.pdf",
+      "sha256": "877b57f68b0323e1c0911a0d994e61ca658c2c68ae2a20a3b66fb66b97fa6db2",
+      "pages": 14
+    }
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Lettere e arti · Stampa",
+      "fichier": "figures/temoignage-et-cite.svg",
+      "legende": "Tre maniere di far entrare una vita individuale nel dibattito pubblico."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Contrôle de la feuille de sujets p. 1 et des cinq rubriques orales du rapport italien, le jury ne produisant pas de commentaire spécifique en raison de l’effectif."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Neuf réponses en italien, dont deux explications de passages classiques bornés, et relances. Schéma sur les différents usages publics du témoignage et distinction entre sources reproduites et articles connexes."
+    },
+    {
+      "phase": "revision",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Neuf réponses en italien, dont deux explications de passages classiques bornés, et relances. Schéma sur les différents usages publics du témoignage et distinction entre sources reproduites et articles connexes."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "perimetre": "Neuf billets sont recensés dans les trois séries. Les deux passages littéraires sont délimités et ont été recoupés avec les œuvres. Le cahier de quatorze pages reproduit les sept articles remis au concours, deux pages par billet. Les renvois tiennent compte de leur ordre dans cette annexe.",
+    "limites": "Les neuf supports sont identifiés. Les références aux reprises de presse apportent un point de comparaison ; la pagination renvoie toujours au cahier du concours.",
+    "billets_recenses": 9
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "slug": "bel_al_version-latine-lyon_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Version latine (Lyon)",
+    "annee": 2024
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2024-11/Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=3",
+    "sujet_sha256": "cbf76039969ec8cec685a228168381915bdc7b64ae30b2cbee576b3a4f1eeb56",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2024-11/Latin%202024.pdf#page=2",
+    "rapport_sha256": "751098abf200c72fe00210b25cad5b86d57eea50f7e3a843c42a761e3046828b",
+    "archive_session": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2024",
+    "archive_session_sha256": "e50bb1f96fd06e58cc7e72442a84ec9a6beb7a51746da04d7cbc16e0003b6def",
+    "auteur_oeuvre": "Vitruve, De architectura, livre II, préface, 1–3."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Version française",
+      "legende": "Deux façons de juger le projet"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Version française originale en prose de tout le feuillet de spécialité, notes sur les lemmes de l’imprimé, schéma et guide de construction."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture ligne à ligne sur le feuillet photographié. Vérification des deux mains, des deux relatifs quae et du changement de fonction du référent de aquam. Resserrement des phrases sur le tribunal et sur le ravitaillement."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Version française",
+        "page_pdf": 3,
+        "page_pdf_fin": 3,
+        "perimetre": "Les deux paragraphes du feuillet « Un architecte plein d’audace », de Cum polliciti essent à tua opera sum usurus.",
+        "pages_rapport": [
+          2,
+          4
+        ]
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

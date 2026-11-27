@@ -1,0 +1,94 @@
+{
+  "slug": "ens-de-lyon_series-a-l_philosophie-oral_2026",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries A/L",
+    "matiere": "Philosophie (oral)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie (oral)",
+  "questions": 0,
+  "tirages": 60,
+  "sujets": 120,
+  "explications_comte": 32,
+  "explications_platon": 28,
+  "sujets_expose": 60,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-11/Philosophie%202026.pdf#page=2",
+    "sujet_sha256": "b610b2f7a74de21e8543c32525d44e1ca8aa554f9bc24177594eabe3dd4d630f",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Philosophie%202026.pdf",
+    "rapport_sha256": "a580df544e8021e74b84c97a9641bd4b0d28b557af395fcdf892d1f53cb4da18",
+    "temoins_de_lecture": [
+      "https://classiques.uqam.ca/classiques/Comte_auguste/cours_philo_positive/cours_philo_pos_1_2.pdf",
+      "https://hurlus.fr/comte1830_cours-philosophie-positive/comte1830_cours-philosophie-positive.pdf",
+      "https://fr.wikisource.org/wiki/Ph%C3%A9don_(trad._Robin)"
+    ],
+    "comte_uqam_sha256": "f69cd2ce64502906736baf7c43a47fe4d761bd92f7ad1b0343f4121eeab13a94",
+    "comte_hurlus_sha256": "c46148f9fbd04744a8c7a66b36f818450cbdaf89afdc241897d64ece3782f456"
+  },
+  "figures": [
+    {
+      "fichier": "figures/comte.svg",
+      "legende": "Comte · pourquoi une science distincte du social ?",
+      "question": "Comte · Auguste Comte, Cours de philosophie positive"
+    },
+    {
+      "fichier": "figures/platon.svg",
+      "legende": "Platon · trois conclusions à distinguer",
+      "question": "Platon · Phédon"
+    },
+    {
+      "fichier": "figures/questions.svg",
+      "legende": "Comment passer de la trace au fait historique ?",
+      "question": "Exposé sur une question de philosophie"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des sections consacrées aux deux oraux, à leurs formats, au raisonnement de Comte et de Platon et aux questions sur l’histoire et l’existence."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de 32 explications de Comte, de 28 explications de Platon et de réponses aux 60 questions exposées sur le fascicule. Création des trois figures et du guide des deux exercices."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Comparaison ligne à ligne des 120 intitulés et positions dans les deux séries de textes et celle des exposés. Contrôle des passages de Comte et des repères de Platon par les témoins de lecture, et des réponses dans les deux éditions."
+    }
+  ]
+}

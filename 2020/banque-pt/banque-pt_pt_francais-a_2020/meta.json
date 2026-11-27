@@ -1,0 +1,92 @@
+{
+  "slug": "banque-pt_pt_francais-a_2020",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français A",
+    "annee": 2020
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2020/fr_a_2020_pt.pdf",
+    "sujet_sha256": "93e6d6711f8c5d80f4656e208316aaaaf223b1c814174100756230adfd4767c0",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2020/rapport_fra_a_ecrit_2020.pdf",
+    "rapport_sha256": "983023a272417a33b91eadd42c7c0015602ea786386222d072db37a1cae8c741",
+    "programme_officiel": "https://www.education.gouv.fr/bo/19/Hebdo27/ESRS1900148A.htm",
+    "theme": "La démocratie",
+    "oeuvres_au_programme": [
+      "Tocqueville, De la démocratie en Amérique, tome II, partie IV",
+      "Aristophane, L’Assemblée des femmes et Les Cavaliers (traduction Marc-Jean Alfonsi)",
+      "Philip Roth, Le Complot contre l’Amérique (traduction Josée Kamoun)"
+    ],
+    "source_coefficients": "https://www.banquept.fr/documents/2020/Coefficients.pdf#page=1",
+    "admissibilite_admission": "École polytechnique, admissibilité, coefficient 4",
+    "rectificatif_programme": "https://www.education.gouv.fr/bo/19/Hebdo31/ESRS1900183A.htm",
+    "precision_coefficients": "Français facultatif pour les candidats étrangers à l’École polytechnique."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "Trois épreuves de la délibération"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lyon_ses_sources",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture de la double assertion de Weil. Distinction entre conflit résolu et présupposition d’une voie pour le résoudre. Vérification des références aux deux comédies, au roman et au seul tome II, partie IV, de Tocqueville. Rédaction des deux éditions, vérification du programme et réalisation du schéma."
+    },
+    {
+      "phase": "redaction",
+      "agent": "lyon_ses_sources",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Réécriture des trois relances du guidé sur Weil après lecture du premier PDF. Contrôle de la dissertation conservée dans les deux éditions."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 1,
+        "page_pdf_fin": 1,
+        "perimetre": "Discuter l’analyse d’Éric Weil qui relie la démocratie à la raison et à la vérité, et qui fait de la recherche d’une voie de résolution des conflits une condition de la coexistence des opinions et des intérêts."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

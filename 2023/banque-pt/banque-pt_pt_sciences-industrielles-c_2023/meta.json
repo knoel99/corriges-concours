@@ -1,0 +1,547 @@
+{
+  "slug": "banque-pt_pt_sciences-industrielles-c_2023",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Sciences industrielles C",
+    "annee": 2023
+  },
+  "questions": 36,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2023/si_c_2023_pt.pdf",
+    "sujet_sha256": "67ca1075576d0943a5d032beb0b6cc5ecd42abdf4126d4731a4932756f7d02c2",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2023/rapport_si_c_ecrit_2023.pdf",
+    "rapport_sha256": "c65e66303859da5b431f9516df1f023b346dae0eb7c92b12ce236a5d224dd821",
+    "lecture_rapport": "Rapport, p. 1–3. Vérification de la puissance et des batteries, du rapport de réduction et du calcul de contrainte, du double référentiel des pions, du matériau du carter, du montage des paliers, des dégagements et de l’étanchéité."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2023/si_c_2023_pt.pdf",
+      "sha256": "67ca1075576d0943a5d032beb0b6cc5ecd42abdf4126d4731a4932756f7d02c2",
+      "nombre_pages": 53,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "473b79b593a19e7ee33b18831dd4c0b773eef66429442761ec08dba3a60f1bd1"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "a15432b79662bdef6564939449d019d3f3bab4f8eff947c9ebf91c42240942ff"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "40b997ed9ed136ed1709eef1de022c5551127ed07d336f37e26c0c28d1ba359b"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "fa5a2608b7c166e3abfa15b3794815b868258be41394938161f1c4db47d3b5ca"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "46353eef5f23e01c39985395720a10b83a1cec81839fb7ee14147698007ceada"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "30899252302441207905bdc7f2b3d898dd2831a17adf25c64a362d2553dc3469"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "f8a575b2e9577bbdb7a902697774d8275aeef1d068c09e6c13180a4c76af3548"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "86f2c3b5a9680edb346e4330d3bcc9061df6d7eed67ad1ca88bfefa65f5e2015"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "1e7480316f71ebef00542c637d5b452d189bf88055b8636a5a064247a8486442"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "1dcf103e3d7985258882577b468dfa3cfadb271947346f0c2a208df1d6d17509"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "44dc7ca1020f771848737d2b4014e0c26d464d559e6aae1661fee90e151e32e9"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "ca31ef86ba4eb3f6cddac6c6d5aa5de99a7005dbc8af8a936dd619ffc0c54515"
+        },
+        {
+          "numero": 13,
+          "rendu_sha256": "d8c844109718e1d9aa88cc03117fd26e96ed56afcd413720a562768d011185d9"
+        },
+        {
+          "numero": 14,
+          "rendu_sha256": "d8c844109718e1d9aa88cc03117fd26e96ed56afcd413720a562768d011185d9"
+        },
+        {
+          "numero": 15,
+          "rendu_sha256": "d8c844109718e1d9aa88cc03117fd26e96ed56afcd413720a562768d011185d9"
+        },
+        {
+          "numero": 16,
+          "rendu_sha256": "8be8d1bf57a2783d543ae8c0582f4381415abc1cc0f86a261a4732c25ddaa720"
+        },
+        {
+          "numero": 17,
+          "rendu_sha256": "85a826ae0a473adcf301dfb8d982e6e46ab76a136697913d97b1933961813eb2"
+        },
+        {
+          "numero": 18,
+          "rendu_sha256": "cad0210643715750d4ea2aa5918f9c2f4a50c9d1bb39de8697f42ad4f495a4f6"
+        },
+        {
+          "numero": 19,
+          "rendu_sha256": "a0c4e9f604d3149f779022fbc50d8346dd4db7e79a8c404841f5a1e4a8fc93e4"
+        },
+        {
+          "numero": 20,
+          "rendu_sha256": "d8620291e21c7bbfddc664616b1e9f7735100b6e8ee6178b44c145d5a129912d"
+        },
+        {
+          "numero": 21,
+          "rendu_sha256": "18a3f2e03143f6675b6ecce6f3fb67442d322c56cd47b47740d9e5bd6c8dcb0e"
+        },
+        {
+          "numero": 22,
+          "rendu_sha256": "6673607952b6008f0ae7307d0a71911efc01bd537f3457fe887050a4c3c732d4"
+        },
+        {
+          "numero": 23,
+          "rendu_sha256": "557f7cb760d9ada9c445aa48b4953199c149a41f35b8f859b88819990cdcb83b"
+        },
+        {
+          "numero": 24,
+          "rendu_sha256": "63f6b2d817136722cb28544a91e6515c1a5c324024a649ff005b8f174cea57de"
+        },
+        {
+          "numero": 25,
+          "rendu_sha256": "29e306ed618f336647e10d0eaf00f84a96a46b2e673a4ad7438fa8ccda20780a"
+        },
+        {
+          "numero": 26,
+          "rendu_sha256": "35a875b3aaca8ce2c473351007dfa123d09970232d36fa1817b8bf9e7c0ce1cf"
+        },
+        {
+          "numero": 27,
+          "rendu_sha256": "c05eae456d6802e5c7f5055d2806fb3fc3e4456bbcfb0922161d24c3c1b16cba"
+        },
+        {
+          "numero": 28,
+          "rendu_sha256": "e61057591d66b3748a23d45b7b4e7ae139b420ab85505cf45acb4c6f144d1bb6"
+        },
+        {
+          "numero": 29,
+          "rendu_sha256": "a291b28ee7a0a19cecb02f2324e48e0703c5762678a25e01d60cb555ac586973"
+        },
+        {
+          "numero": 30,
+          "rendu_sha256": "1af8413dca5d4adbc49acb96df7ede36e6b3aa84cd97a010a70689e920251be4"
+        },
+        {
+          "numero": 31,
+          "rendu_sha256": "7a0d75b7d7461ec1ac277c6124e0d034af2cb0037472bc2c3570713176a2f92b"
+        },
+        {
+          "numero": 32,
+          "rendu_sha256": "d8c844109718e1d9aa88cc03117fd26e96ed56afcd413720a562768d011185d9"
+        },
+        {
+          "numero": 33,
+          "rendu_sha256": "d8c844109718e1d9aa88cc03117fd26e96ed56afcd413720a562768d011185d9"
+        },
+        {
+          "numero": 34,
+          "rendu_sha256": "d8c844109718e1d9aa88cc03117fd26e96ed56afcd413720a562768d011185d9"
+        },
+        {
+          "numero": 35,
+          "rendu_sha256": "022af0822072c8d95ea1c748d0bf54423ae7f569cadc8b5d067ebaa00441a70f"
+        },
+        {
+          "numero": 36,
+          "rendu_sha256": "32ef4d51853a4359d0f79167a14cee3ee3b053b814572d8610fbfb6c1c95566b"
+        },
+        {
+          "numero": 37,
+          "rendu_sha256": "6a2c858cdaa375d6f68953292826a07168a60238c099e4cef0ca50f0faf6f345"
+        },
+        {
+          "numero": 38,
+          "rendu_sha256": "b0c2eb7ed3013624f8dd90d125b237e31eac19c0c730b6dfd3b7e8524905d700"
+        },
+        {
+          "numero": 39,
+          "rendu_sha256": "8e1cc6bcefdd2cabeca92f590d82b2d0854479fba9cd25a1b5ce3c9d5eec161b"
+        },
+        {
+          "numero": 40,
+          "rendu_sha256": "ebe7f7b29d6a680cc5b88154c9f9ac869ec3676e3e5b780c08e0d505bf88ba01"
+        },
+        {
+          "numero": 41,
+          "rendu_sha256": "fc7b9eb1919862f647d64b21e095e8a7827e9382b3b55595f99109572ad8cfe4"
+        },
+        {
+          "numero": 42,
+          "rendu_sha256": "52f4ddba0dc93c28231290e92e0e576a3896bb06521cac4effa9cfe6280e13d2"
+        },
+        {
+          "numero": 43,
+          "rendu_sha256": "078053b3eee9453d7c7704118892e374d5b0e751e5eb3a9ec4d197a281434ddb"
+        },
+        {
+          "numero": 44,
+          "rendu_sha256": "ad09117587876dc5bc97fccf807253e29fe2e2fe8ade13b65494a2d01a5552e0"
+        },
+        {
+          "numero": 45,
+          "rendu_sha256": "acf0d12db86b2e73694ee8e6da1b0ef2ef7ca9ae52f1c659e144b70168de9106"
+        },
+        {
+          "numero": 46,
+          "rendu_sha256": "e2dc5ab47790572068e4b74bd806b1face7a37adc819931838fdfb622d3e383d"
+        },
+        {
+          "numero": 47,
+          "rendu_sha256": "7d0b3905fe5cb0eb05b93406fd9a4e035f642f38bf5d792ea66a0ae5aa806646"
+        },
+        {
+          "numero": 48,
+          "rendu_sha256": "ce412e5cb7ad8a1c78b3f7bb24a7dfec97c72b739b53c3f01af4bca81f921164"
+        },
+        {
+          "numero": 49,
+          "rendu_sha256": "8c7f545b8a2cd2ac26ca679a394840a5501536fc5651748adca2a86d3732d9c7"
+        },
+        {
+          "numero": 50,
+          "rendu_sha256": "e221e729cbd600f69271b28743811732931f1e5028f08620dd8c8decd45018ea"
+        },
+        {
+          "numero": 51,
+          "rendu_sha256": "86ef51ce6479ab9010e885a9b996ef52da8f63a93de39a463db40a60e9c8ae04"
+        },
+        {
+          "numero": 52,
+          "rendu_sha256": "47519bfb228bed42e0cd1e8ce73edfcc516a361087b847407a19b11fc9acbca2"
+        },
+        {
+          "numero": 53,
+          "rendu_sha256": "36b63ca7beeb38681a93db843ff21cebbb2a559d58d99e29b192760ce2b038e5"
+        }
+      ],
+      "echelle_rendu": 0.6
+    },
+    "rapport_jury": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2023/rapport_si_c_ecrit_2023.pdf",
+      "sha256": "c65e66303859da5b431f9516df1f023b346dae0eb7c92b12ce236a5d224dd821",
+      "nombre_pages": 3,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "5bdcc4b96c00b7e83188049b02918447567c556fd5eabe2f0156901130eba9f1"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "29484d50e78b2964e798e1a4f7ca640696fc0c832a67f6b83611b12eddebfb6c"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "41ffd060f227c4c716bd3f016c05ddb2fe8ec6b930603218e47f6f474bed9422"
+        }
+      ],
+      "echelle_rendu": 0.6
+    }
+  },
+  "date_revision": "2026-11-27",
+  "figures": [
+    {
+      "fichier": "figures/coquille.svg",
+      "question": "III.10",
+      "legende": "Coupe de la coquille avec attaque basse, demi-moules et alimentation"
+    },
+    {
+      "fichier": "figures/bossage.svg",
+      "question": "III.13",
+      "legende": "Surfaçage, perçage traversant et chanfreinage sur le même bossage"
+    },
+    {
+      "fichier": "figures/metrologie.svg",
+      "question": "III.17",
+      "legende": "Construction de PT5, PT6 et de la droite centrée normale à PL2"
+    },
+    {
+      "fichier": "figures/pivot.svg",
+      "question": "IV.1",
+      "legende": "Coupe du montage sur le fond du concours, avec entraînements et étanchéité"
+    }
+  ],
+  "contributions": [
+    {
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "session": "banque_pt_si_c_robot_accoroutage_agv_2023",
+      "phase": "redaction",
+      "perimetre": "36 réponses et 36 indications, dont les cinq fonctions de conception. Chaque page du sujet de 53 pages et du rapport de trois pages a été rendue. Lecture des ressources I à XIV, réponse sur les grilles, les schémas d’usinage, la métrologie et le fond de dessin."
+    },
+    {
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "session": "banque_pt_si_c_robot_accoroutage_agv_2023",
+      "phase": "relecture_corrige",
+      "perimetre": "Contrôle de la puissance nominale et de pointe, des hypothèses 13S et 14S, des diamètres primitifs, des deux alésages de référence et de la coupe du palier. Contrôle du format Lettre du PDF reproduisant le dessin A3, du bout moteur de 19 mm, des cannelures et des joints.",
+      "tour": 1
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7",
+      "I.8",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "II.8",
+      "II.9",
+      "II.10",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7",
+      "III.8",
+      "III.9",
+      "III.10",
+      "III.11",
+      "III.12",
+      "III.13",
+      "III.14",
+      "III.15",
+      "III.16",
+      "III.17",
+      "IV.1"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "I.1",
+        "page_pdf": 4,
+        "traitement": "Rotation du moteur sans balais"
+      },
+      {
+        "question": "I.2",
+        "page_pdf": 4,
+        "traitement": "Comparaison avec le moteur à collecteur"
+      },
+      {
+        "question": "I.3",
+        "page_pdf": 4,
+        "traitement": "Rôle du capteur angulaire"
+      },
+      {
+        "question": "I.4",
+        "page_pdf": 4,
+        "traitement": "Nature de la mesure du resolver"
+      },
+      {
+        "question": "I.5",
+        "page_pdf": 4,
+        "traitement": "Vérification de la puissance de traction"
+      },
+      {
+        "question": "I.6",
+        "page_pdf": 5,
+        "traitement": "Architecture des six packs"
+      },
+      {
+        "question": "I.7",
+        "page_pdf": 5,
+        "traitement": "Nombre de cellules par pack"
+      },
+      {
+        "question": "I.8",
+        "page_pdf": 5,
+        "traitement": "Autonomie au courant 2C"
+      },
+      {
+        "question": "II.1",
+        "page_pdf": 5,
+        "traitement": "Rapport des trois engrènements"
+      },
+      {
+        "question": "II.2",
+        "page_pdf": 5,
+        "traitement": "Compatibilité avec la vitesse nominale"
+      },
+      {
+        "question": "II.3",
+        "page_pdf": 6,
+        "traitement": "Choix du dernier engrènement pour le dimensionnement"
+      },
+      {
+        "question": "II.4",
+        "page_pdf": 6,
+        "traitement": "Effort tangentiel entre 3b et 4"
+      },
+      {
+        "question": "II.5",
+        "page_pdf": 6,
+        "traitement": "Contrainte de flexion au pied de dent"
+      },
+      {
+        "question": "II.6",
+        "page_pdf": 6,
+        "traitement": "Comparaison avec la limite élastique"
+      },
+      {
+        "question": "II.7",
+        "page_pdf": 6,
+        "traitement": "Fatigue"
+      },
+      {
+        "question": "II.8",
+        "page_pdf": 7,
+        "traitement": "Couple transmis par la couronne de contact"
+      },
+      {
+        "question": "II.9",
+        "page_pdf": 7,
+        "traitement": "Choix des vis M8"
+      },
+      {
+        "question": "II.10",
+        "page_pdf": 7,
+        "traitement": "Classe de résistance"
+      },
+      {
+        "question": "III.1",
+        "page_pdf": 7,
+        "traitement": "Décoder les trois spécifications"
+      },
+      {
+        "question": "III.2",
+        "page_pdf": 7,
+        "traitement": "Besoin fonctionnel des deux trous de pion"
+      },
+      {
+        "question": "III.3",
+        "page_pdf": 8,
+        "traitement": "Références correspondant au montage réel"
+      },
+      {
+        "question": "III.4",
+        "page_pdf": 8,
+        "traitement": "Ordre A puis B"
+      },
+      {
+        "question": "III.5",
+        "page_pdf": 8,
+        "traitement": "Matériau du demi-carter"
+      },
+      {
+        "question": "III.6",
+        "page_pdf": 8,
+        "traitement": "Comparer un brut coulé et un brut étiré usiné"
+      },
+      {
+        "question": "III.7",
+        "page_pdf": 8,
+        "traitement": "Principe de la fonderie"
+      },
+      {
+        "question": "III.8",
+        "page_pdf": 8,
+        "traitement": "Retrait et défauts associés"
+      },
+      {
+        "question": "III.9",
+        "page_pdf": 8,
+        "traitement": "Coquille ou sable"
+      },
+      {
+        "question": "III.10",
+        "page_pdf": 9,
+        "traitement": "Moulage par gravité sur la coupe imposée"
+      },
+      {
+        "question": "III.11",
+        "page_pdf": 9,
+        "traitement": "Machines et axes"
+      },
+      {
+        "question": "III.12",
+        "page_pdf": 9,
+        "traitement": "Position de reprise en phase 20"
+      },
+      {
+        "question": "III.13",
+        "page_pdf": 9,
+        "traitement": "Trois opérations sur le bossage percé"
+      },
+      {
+        "question": "III.14",
+        "page_pdf": 10,
+        "traitement": "Contrôle de perpendicularité par l’angle"
+      },
+      {
+        "question": "III.15",
+        "page_pdf": 10,
+        "traitement": "Construire PT5 et PT6"
+      },
+      {
+        "question": "III.16",
+        "page_pdf": 10,
+        "traitement": "Construire la droite DR7"
+      },
+      {
+        "question": "III.17",
+        "page_pdf": 10,
+        "traitement": "Critère de conformité par distances"
+      },
+      {
+        "question": "IV.1",
+        "page_pdf": 11,
+        "traitement": "Concevoir et vérifier les cinq fonctions"
+      }
+    ]
+  }
+}

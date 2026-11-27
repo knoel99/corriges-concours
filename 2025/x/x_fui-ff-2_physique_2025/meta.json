@@ -13,7 +13,7 @@
     "provider": "codex",
     "model": "GPT-6"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/FUI-%20FF%202%202025%20Phys.pdf",
     "rapport_jury": null,
@@ -45,18 +45,24 @@
     },
     {
       "numero": 4,
+      "question": "7.d",
+      "fichier": "figures/expansion-critique.svg",
+      "legende": "Solution critique dans le repère du sujet. Le point de référence correspond à t = 0 et a = 1."
+    },
+    {
+      "numero": 5,
       "question": "8",
       "fichier": "figures/trois-cosmologies-de-poussiere.svg",
       "legende": "Les trois solutions représentées ont le même K. Les temps sont comptés depuis le début de chacune."
     },
     {
-      "numero": 5,
+      "numero": 6,
       "question": "C",
       "fichier": "figures/charge-induite-densite-radiale.svg",
       "legende": "La densité est négative, maximale en valeur absolue sous la charge et tend vers zéro comme l’inverse du cube de la distance."
     },
     {
-      "numero": 6,
+      "numero": 7,
       "question": "D",
       "fichier": "figures/champ-et-plan-conducteur.svg",
       "legende": "Lignes du champ physique dans une coupe contenant la charge et la normale au plan."
@@ -113,6 +119,59 @@
       "perimetre": "Révision des deux éditions à partir du fac-similé du sujet. Recalcul des solutions ouverte, fermée et critique du modèle cosmologique, des singularités et du champ électrostatique près du plan conducteur.",
       "agent": "astra_physique",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Contrôle des 28 rubriques, des deux graphes de 5.e, des dates de 6.c et 6.d, du graphe comparatif et des quatre questions d’électrostatique. Ajout en 7.d du tracé demandé dans le repère où a(0) vaut un.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux",
+      "tour": 3
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5.a",
+      "5.b",
+      "5.c",
+      "5.d",
+      "5.e",
+      "6.a",
+      "6.b",
+      "6.c",
+      "6.d",
+      "6.e",
+      "7.a",
+      "7.b",
+      "7.c",
+      "7.d",
+      "7.e",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "relecture_corrige",
+      "sha256_sujet_controle": "2909e64ea49d9418348221c139e8594dfdf88c5df24a3dc4517d0ea6cea2f91d",
+      "perimetre": "Contrôle des 28 rubriques, des deux graphes de 5.e, des dates de 6.c et 6.d, du graphe comparatif et des quatre questions d’électrostatique. Ajout en 7.d du tracé demandé dans le repère où a(0) vaut un."
+    }
+  }
 }

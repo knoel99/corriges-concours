@@ -1,0 +1,168 @@
+{
+  "slug": "ens-psl_cnel-lettres_litterature-eric-chevillard-et-le-style_2022",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "CNEL Lettres",
+    "matiere": "Littérature — Éric Chevillard et le style",
+    "annee": 2022,
+    "modalite": "écrit"
+  },
+  "intitule": "Littérature — Éric Chevillard et le style",
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/litteratures-cnel-2022.pdf",
+    "sujet_sha256": "5bb3c6c5cbeecbd13adbf0f31402e0cf48bd0b67a24181b4a933a0dbba2ea78b",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/lila-cnel2022-rapport.pdf",
+    "rapport_sha256": "974ad6a484c5875cafd5dc6cd339d0e651701043ac12cffd621482787feb20e2"
+  },
+  "figures": [
+    {
+      "fichier": "figures/demarche.svg",
+      "legende": "À quoi reconnaît-on un style ?",
+      "question": "A et B"
+    },
+    {
+      "fichier": "figures/la-carte-et-le-choix.svg",
+      "question": "B",
+      "legende": "La carte de Borges éclaire le désaccord sur les effets de la représentation.",
+      "provenance": "Schéma original pour cette révision."
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des consignes du rapport de Littératures et langage sur la précision de l’analyse et la réflexion personnelle, sur la première personne et sur la conclusion."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de l’analyse détaillée A, de la réflexion personnelle B en plusieurs paragraphes, de son accompagnement et du schéma."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification des limites de la citation à analyser, de son insertion dans le passage, des questions distinctes et du barème 5/15 dans les deux éditions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Vérification des limites et des pronoms du passage de A, des deux notes et des attentes de la commission. Lecture de la carte de Borges et comparaison de deux dispositifs de Queneau dans la réponse B."
+    }
+  ],
+  "duree_heures": 3,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens.psl.eu/sites/default/files/litteratures-cnel-2022.pdf",
+      "sha256": "5bb3c6c5cbeecbd13adbf0f31402e0cf48bd0b67a24181b4a933a0dbba2ea78b",
+      "pages": 3,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "1a32e7bd689db96a086efd697b4697743959e85933cfe33da8dabc8ee687450a"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "217170b49e2fdeaaf0d31b8024b84e030e3cde49597458e17f0806571b60da4e"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "c010394baeb28c22591658e8034d45342cbcfab3a88b08227ecc364f0dbdc669"
+        }
+      ],
+      "notice_et_notes": "Éric Chevillard, Le Désordre Azerty (Éditions de Minuit, 2014). La notice p. 1 précise que les entrées suivent les touches du clavier. Le feuillet donne le début et la fin de « Style », p. 1–2. La note 1 identifie les cinq écrivains du passage de A. La note 2 renvoie à « De la rigueur de la science » de Borges. Les deux questions occupent la p. 3."
+    },
+    "rapport": {
+      "url": "https://www.ens.psl.eu/sites/default/files/lila-cnel2022-rapport.pdf",
+      "sha256": "974ad6a484c5875cafd5dc6cd339d0e651701043ac12cffd621482787feb20e2",
+      "pages": 2,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "24b07ccf104408afd8ddfe4492e217a2d11026fb6be37c7325a18b5205e9ee98"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "193f8667ba45347cf08cba10c3ffca982b1d77b91861a876230a66123c117e7e"
+        }
+      ],
+      "rubrique": "P. 2, épreuve écrite de la commission « Littérature française et comparée ». La p. 1 concerne notamment la sélection des dossiers."
+    },
+    "catalogue": {
+      "url": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-normalien-etudiant-lettres-et-concours-medecine-humanites-2022",
+      "sha256": "e791a04ed9537089ac1072748c697bf0a9a10e3c9877aa86b4f74a9128d694ac",
+      "constat": "À la p. 2 du rapport départemental, la commission distingue le commentaire attentif aux détails du texte et la réflexion personnelle. Pour B, elle accueille la première personne et l’expérience esthétique, demande des paragraphes et une conclusion et n’impose pas le plan d’une dissertation classique."
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "A",
+        "page_pdf": 3,
+        "points": 5,
+        "consigne": "Vous commenterez ce passage de manière approfondie :",
+        "incipit": "Nous aimons, de livre en livre, retrouver l’auteur",
+        "explicit": "et voudraient nous persuader de leur existence sociale.",
+        "consigne_analyse": "Dans une réponse concise, mais aussi exhaustive que possible, vous envisagerez cette citation dans tous ses aspects : par exemple, sa place dans le passage, son style, son contexte historique et culturel, ses références intertextuelles, etc."
+      },
+      {
+        "question": "B",
+        "page_pdf": 3,
+        "points": 15,
+        "consigne": "Quelle conception du style défend ici Éric Chevillard, et la partagez-vous ?",
+        "exigences": "Vous répondrez de manière argumentée, dans un texte organisé (c’est-à-dire divisé en paragraphes et amenant à une conclusion). Vous vous appuierez sur vos connaissances théoriques et historiques, ainsi que sur vos expériences personnelles de lectures et sur leur rôle dans votre vie."
+      }
+    ],
+    "choix": "Deux questions obligatoires à traiter dans l’ordre souhaité.",
+    "annexes_imposees": []
+  }
+}

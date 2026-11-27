@@ -1,0 +1,63 @@
+{
+  "slug": "ens_mp-pc_italien-lv1_2005",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Italien (LV1)",
+    "annee": 2005,
+    "modalite": "écrit"
+  },
+  "intitule": "Catastrofe, récit de la catastrophe et révélation de ses causes",
+  "questions": 2,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "V",
+      "1"
+    ]
+  },
+  "sources": {
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2005",
+    "etablissements": "ENS de Paris, de Lyon et de Cachan",
+    "pages_sujet": "5",
+    "code_garde": "ULC 527",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2005/sujet-2005-ecrit-mp_pc_langue_vivante_1.pdf#page=5",
+    "sujet_sha256": "a7214e3b3ce73c3c9c3bfa7b6f9b4314d76e219f9a58a8f2f510bd3dc15cd6cb",
+    "precision": "L’extrait est tiré de L’abc del mondo contemporaneo (2004), pages 34–35. Le nom d’Alfonso Berardinelli est imprimé « Beradinelli » sur la page d’épreuve. Le rapport propre à l’option italienne n’a pas été retrouvé."
+  },
+  "mots_expression": {
+    "1": 227
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V",
+      "fichier": "figures/recit.svg",
+      "legende": "Le vocabulaire de la tragédie organise l’explication."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "fichier": "figures/apprendre.svg",
+      "legende": "L’analyse rétrospective distingue cause, vulnérabilité et prévention."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "italien_sciences_2005_2010",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et réponses intégrales en italien. Catastrofe, récit de la catastrophe et révélation de ses causes.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}

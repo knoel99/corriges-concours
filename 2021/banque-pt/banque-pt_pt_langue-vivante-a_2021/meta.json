@@ -1,0 +1,365 @@
+{
+  "slug": "banque-pt_pt_langue-vivante-a_2021",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Langue vivante A",
+    "annee": 2021
+  },
+  "questions": 5,
+  "redaction": "IA (gpt-6.2-astra)",
+  "figures": [
+    {
+      "fichier": "figures/lecture-de.svg",
+      "question": "Allemand",
+      "legende": "Trois questions sur une mobilité moins polluante"
+    },
+    {
+      "fichier": "figures/lecture-en.svg",
+      "question": "Anglais",
+      "legende": "Une mission spatiale en 2020"
+    },
+    {
+      "fichier": "figures/lecture-ar.svg",
+      "question": "Arabe",
+      "legende": "Comment une œuvre atteint son public"
+    },
+    {
+      "fichier": "figures/lecture-es.svg",
+      "question": "Espagnol",
+      "legende": "Trois lieux où se joue l’usage d’une langue"
+    },
+    {
+      "fichier": "figures/lecture-it.svg",
+      "question": "Italien",
+      "legende": "Trois interventions sur le patrimoine"
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "agent": "x_maths_b_recentes",
+      "perimetre": "Rédaction des cinq synthèses par langue et du commentaire des vingt-cinq documents du fascicule 2021, contrôle des figures et des décomptes dans les deux éditions."
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2021/lv_a_2021_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2021/rapport_lv_a_ecrit_2021.pdf",
+    "sujet_sha256": "03561d8b3766b0e3899bc7a8fb5244ea5bbb5aee8d48cbc4d07775a22ba55ecb",
+    "rapport_sha256": "150ad0a1a7e8728dc81c9137f6e0d1aa0d174618f98cf7e6c44ab540977fb564"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Allemand",
+      "Anglais",
+      "Arabe",
+      "Espagnol",
+      "Italien"
+    ],
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "03561d8b3766b0e3899bc7a8fb5244ea5bbb5aee8d48cbc4d07775a22ba55ecb",
+      "perimetre": "Rédaction des cinq synthèses par langue et du commentaire des vingt-cinq documents du fascicule 2021, contrôle des figures et des décomptes dans les deux éditions.",
+      "controles": [
+        {
+          "nom": "Allemand",
+          "titre": "Weniger Verkehr oder lediglich andere Autos?",
+          "consigne": "Morgen, eine Welt ohne Autos?",
+          "pages_sujet": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "pages_rapport": [
+            1,
+            2
+          ],
+          "mots_titre_inclus": 459,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                3
+              ],
+              "controle": "Le reportage du salon de Las Vegas distingue projets de taxis aériens, prototypes et modèles électriques industrialisés."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                4,
+                5
+              ],
+              "controle": "L’étude TomTom calcule le temps de trajet supplémentaire par rapport à une circulation fluide, notamment à Hambourg."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                5,
+                6
+              ],
+              "controle": "Le troisième article élargit le bilan de la voiture électrique à la production des batteries et aux matières premières."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                6
+              ],
+              "controle": "La publicité Smart célèbre ses derniers modèles à essence par une allusion au silence et au prénom Otto."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                6
+              ],
+              "controle": "Le pictogramme place une personne hésitante entre un panier de supermarché et un vélo, tandis que la légende affirme la possibilité de faire ses achats sans voiture."
+            }
+          ]
+        },
+        {
+          "nom": "Anglais",
+          "titre": "From a race for the Moon to a market in orbit",
+          "consigne": "Sixty years on, how has space exploration evolved?",
+          "pages_sujet": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "pages_rapport": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "mots_titre_inclus": 479,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                8
+              ],
+              "controle": "L’article sur Crew Dragon rappelle que l’entreprise privée a emporté deux astronautes de la NASA vers une station internationale."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                9
+              ],
+              "controle": "Le deuxième article examine les promesses économiques et les conditions de durabilité qu’il faudrait intégrer au secteur spatial."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                10
+              ],
+              "controle": "Le troisième montre la diversification des puissances spatiales et rappelle la coopération juridique dans un contexte de rivalité."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                11
+              ],
+              "controle": "La part de la NASA dans le budget fédéral et les investissements dans les start-up sont tracés sur deux axes, en pourcentages et en milliards de dollars."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                12
+              ],
+              "controle": "Le dessin de Granlund oppose les touristes munis de billets aller-retour à Armstrong, qui s’interroge sur le prestige des astronautes."
+            }
+          ]
+        },
+        {
+          "nom": "Arabe",
+          "titre": "ثقافة تعبر الحدود وتبحث عن قرائها",
+          "consigne": "كيف يبدو حال الثقافة العربية في الوثائق الخمس المقترحة؟",
+          "pages_sujet": [
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "pages_rapport": [
+            11,
+            12,
+            13
+          ],
+          "mots_titre_inclus": 455,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                14
+              ],
+              "controle": "Le salon du livre de Genève donne un exemple de circulation, de rencontres et d’intérêt de la diaspora."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                15
+              ],
+              "controle": "La critique de l’élitisme intellectuel cite Sartre et Russell comme figures engagées et souligne les obstacles à la lecture."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                16
+              ],
+              "controle": "L’article sur les influences extérieures réclame une étude de la réception d’œuvres arabes au-delà des frontières."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                17
+              ],
+              "controle": "Les couvertures de revues accompagnent un article sur la concurrence numérique, le financement et la distribution."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                17
+              ],
+              "controle": "Le vendeur de livres illustre un titre qui avance six minutes de lecture par an. La photographie ne vérifie pas cette assertion."
+            }
+          ]
+        },
+        {
+          "nom": "Espagnol",
+          "titre": "Una lengua vive si se puede estudiar y reclamar justicia en ella",
+          "consigne": "¿En qué medida las lenguas indígenas representan un desafío en América Latina hoy en día?",
+          "pages_sujet": [
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "pages_rapport": [
+            14,
+            15,
+            16
+          ],
+          "mots_titre_inclus": 460,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                19
+              ],
+              "controle": "La soutenance de Roxana Quispe Collantes fait entrer le quechua dans une pratique universitaire prestigieuse."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                20
+              ],
+              "controle": "L’article explique les ruptures de transmission par la pression sur les territoires, l’exode rural et les décisions éducatives."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                21
+              ],
+              "controle": "L’Année internationale des langues autochtones attire l’attention sur la perte de savoirs liée à la disparition de langues."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                22
+              ],
+              "controle": "La carte représente les principaux groupes selon leurs locuteurs sans prétendre couvrir toutes les langues de la région."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                23
+              ],
+              "controle": "Les données mexicaines distinguent locuteurs dans la population et accès à un interprète parmi les personnes autochtones détenues."
+            }
+          ]
+        },
+        {
+          "nom": "Italien",
+          "titre": "Proteggere i tesori italiani prima dell’emergenza",
+          "consigne": "In che misura l’Italia fa fronte alla tutela del suo patrimonio artistico e culturale?",
+          "pages_sujet": [
+            24,
+            25,
+            26,
+            27,
+            28,
+            29
+          ],
+          "pages_rapport": [
+            17
+          ],
+          "mots_titre_inclus": 456,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                25
+              ],
+              "controle": "Le texte sur le MOSE décrit le principe des barrières contre les hautes eaux et les retards au moment du reportage."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                26
+              ],
+              "controle": "Il Giornale dell’Arte distingue l’intervention d’urgence, visible, de la planification de la maintenance."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                27
+              ],
+              "controle": "La Stampa met en regard l’importance reconnue du patrimoine italien et le financement de la culture par rapport aux données européennes."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                28
+              ],
+              "controle": "Le graphique distingue contributions nationales ordinaires et courbe des contributions volontaires italiennes."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                29
+              ],
+              "controle": "L’émission philatélique du cinquantenaire du commandement spécialisé représente des œuvres récupérées et documente son activité."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

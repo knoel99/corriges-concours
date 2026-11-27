@@ -1,0 +1,517 @@
+{
+  "slug": "banque-pt_pt_sciences-industrielles-a_2021",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Sciences industrielles A",
+    "annee": 2021,
+    "modalite": "écrit"
+  },
+  "questions": 50,
+  "reponses_reperees": 50,
+  "unite_de_decompte": "Questions Q1 à Q50 telles que numérotées dans le sujet et le cahier.",
+  "duree_heures": 5,
+  "redaction": "Corrigé original rédigé par IA, non officiel.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2021/si_a_2021_pt.pdf",
+    "sujet_sha256": "33cc5a184bc4097107c3b2e5fbc3b515c686fe8e0962717955fbbe219fbf128f",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2021/rapport_si_a_ecrit_2021.pdf",
+    "rapport_jury_sha256": "4254201db66fb63c47ebd46bd45b29543fec3f230439ffb3c8ce7196993d0cd7",
+    "registre": "campagnes/x-ens/bilans/sources-sciences-industrielles-banque-pt-2017-2025.tsv",
+    "annexes": "Feuillets 1 à 26 du sujet, pages PDF 33 à 56 pour les 24 pages du cahier-réponses. Les pages PDF intermédiaires comprennent des versos et une page de garde. Les illustrations techniques et les gabarits figurent dans cette même pièce. Aucun fichier embarqué."
+  },
+  "pieces_verifiees": [
+    {
+      "doc": "sujet",
+      "pages": 56,
+      "sha256": "33cc5a184bc4097107c3b2e5fbc3b515c686fe8e0962717955fbbe219fbf128f",
+      "rendus_sha256": [
+        "905baef803fbc6d7036cd8e85a669fc60819ef9fc3b4f08385e54406a8b3fbe2",
+        "79b55662d1d000662f5a035a5c9537deb06260949ea77c422a61bae385e7ce00",
+        "360e0e813b7216e8429fe28d1ce4948aa410d34774ca68e5eccaa6f78d1183f7",
+        "6f6fce673c68c2f516a532c39a4e8312dc77fecca68befa72f2e23169645a6a6",
+        "80f9aa03b87dff581024ed788841af69e75b6997fb31b8779f784ad290f9d308",
+        "fca4443b818692142e5ed41ff4007ec06f1b395309e3b93c3c64df2877b30481",
+        "7cb2640d095247e2a70bc747313f6a88246e828fc053e5fd46a03f2d59f116ad",
+        "c2ee967d2b0a0fe7aad048816c8045ada8a583f6a44dddfc20284071efadc3df",
+        "6e5fa7df714a7a201793c763c63396240146aa2004e3c65cd9a39c334d6aacf6",
+        "47fe8cde119eebf55377b6746de7d6c11373f0d936196aea5a04e51da77cb81e",
+        "224209c23efc1054b0fa5faf58342ba0b85c86a497e75eea29ae793848d083e3",
+        "bf935db4303c826c161af86095a8effb76a57bd36514d46a13f5e26487453eca",
+        "dbd09c8522f9abee6efd02983630fdf96d1767ef75d00d059ba80b369bb5fff8",
+        "86565970016d6b0ee4afb5ea43f92ffbbeb3036e12bb0de4ef9b892b042488a3",
+        "b04618c48cb94961af9b54134db8b8f0ad2f5be50bb99bc7e1a99b7afd5adf1b",
+        "e137caffd5d830a533860556e997cc13bd93369585a57ac2f027e1c6f7deb061",
+        "d3cc2d0b4d03242f76cfd4418976512b179aa18d64a889bfb8a32f89484993cf",
+        "1d5a34f97f437876f045c204495573a464a9cf07dbfe815ecd6a145a26c3856d",
+        "611a90d7949a20e3e0de5846d6c9e598d442286be5fee5bf87288e29b85e826a",
+        "9cec90abc22ad71a9cb195d2cf8bc8cbb0ca71b256fad530dbd81b49337c0c0d",
+        "f450fb9b487631a69d7ac5bc20b16a750f33b20b19eec40bafdf1d67b5aa3501",
+        "93a02539260c8e7de2e7921b5038335b4b4328afe3869f958d629df5f6cc03b6",
+        "cb744dc76ff0defa44812bd4d351ba83aba0ae87d55a7e6930dcf8ea689968e1",
+        "d30893aae351ad591f9b6bca68f4bba57df44017ed667e5e64d183310f719ce8",
+        "9e5661a1f4328caa853fbfea18207114dc435d3e49606e5b38f19dc53be9a4b2",
+        "cbfe9de95ed783868e587ecd5c83f8da9ef4dff23ac6b298f99be3235dcdb555",
+        "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6",
+        "debb0693fc08d68819616ef0c573106b97c79d636081bc383034337f284fdae0",
+        "e2f8731610df72c0c146f98b8463c8e5a60797060cb213cd7397ca0814d5b62d",
+        "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6",
+        "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6",
+        "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6",
+        "f01cdea3334e79ac1b84cb43527fd47c8c0aad624c6596b951866e65495003f9",
+        "727e02e0fc76614df2f23d5e8c84bbe6cb2e920a8728c4d8093215610c99a00c",
+        "ec8e54af044cbcc13fee7e8a6123df4a623bc13f9c237f35d99a5e6830f4aecb",
+        "89e7787c18a97340e85ea1546c6bce461c827278cca42335a4061942e44e3d5d",
+        "0adb41d4fe8d2c8162157acc9494764dd3cf1f5a5f25362ab7fbc75b2ff52bfc",
+        "47e09b37da327efe8b65d5fac6add2825eed607635e0c40a86fd92ca9987864e",
+        "23075b3c4939a66697dd9ba6a6240a4da4e880d7c93974dde5f89365d5c76076",
+        "27a792733f65dfa90525b8f1a85f5422f360c43c83dbb9feb9aa4bae65a128a0",
+        "053298a16ba7e8e620c548996fe5955c237121dfc32d2008c4d80ece3a7023c3",
+        "afc33476062ec247318dfcdeed7eb1685c56d1b34b438676493c7777e611e58e",
+        "5640d95ecc71a573de53ad69c3ab216a2dc084804af028c37173c0e0297d5622",
+        "5fce08a172d818d69d35195ea0b6fa498f6f9752064a4b86adbd2e4958de06a1",
+        "cdd0020b46343fb23c4b7b7f479546d3b0aa98469aaa7fb597a51447dc05acb7",
+        "135477fec4edcf97b9ff5680122652943d332b98fad5df3f38b398d7b2f5be33",
+        "ea80529b8606453f2abf153b5c09dd7cc2b5567083ef2e8199bb56c2aec7dcf1",
+        "85581e650ea2f1440234a93d3d9bf1d5c5170c87c280a6e3cae806acae285937",
+        "1159e4c82c388a2d5d69aceeff357c4638b5636655c7631e8af71b115fcd6433",
+        "5565b864897556eedc7cc2c0511e0cb92bf2e6b55cc15aa73bd4871d46ea51c2",
+        "30e98d06f8f3599916ef5526e57fd0b663355e9c7a8d92ae4cac953e256ffdde",
+        "026cd2fa4017289aefc54ace19a4612f34b010090210512fcaadc788c9c41dee",
+        "1feb40586135f5def37c568fd2df64de0cca08fa26a2ad34f17fc43ea7364cfc",
+        "ab76f339dd2f8d36de3fc4019dd68b168553d0b4bb7fbbdf2ed1eec9038783d7",
+        "0cfd05cca4bb1de2275cf8a611839d8513261d92b96aaf7c6d557cc4ebca4f1d",
+        "5e0beb0605631aab2ac2606cab740d12bc1f659303e742d702209c99d36904fe"
+      ],
+      "pieces_jointes": []
+    },
+    {
+      "doc": "rapport",
+      "pages": 3,
+      "sha256": "4254201db66fb63c47ebd46bd45b29543fec3f230439ffb3c8ce7196993d0cd7",
+      "rendus_sha256": [
+        "88edc4669721339da31b0a6409cbccbd4654d8be9f64b58884e2e92047546d02",
+        "b0d9f06b1cbb9c6b51609b1f87efdfebfc96e201906fd665d8e15217e7d57c0d",
+        "91c4f0331aadcb4b3edb2547f89f0d7b50e54cea9a2a9452d96887aec7cf0983"
+      ],
+      "pieces_jointes": []
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Résolution des 50 questions, calculs homogènes, impédance et point de fonctionnement, annotation des plans et des graphiques."
+    },
+    {
+      "phase": "revision",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture des questions sur les deux cahiers et le rapport, vérification des signes, des butées, des pentes, des résultats numériques et des figures sur PDF."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21",
+      "Q22",
+      "Q23",
+      "Q24",
+      "Q25",
+      "Q26",
+      "Q27",
+      "Q28",
+      "Q29",
+      "Q30",
+      "Q31",
+      "Q32",
+      "Q33",
+      "Q34",
+      "Q35",
+      "Q36",
+      "Q37",
+      "Q38",
+      "Q39",
+      "Q40",
+      "Q41",
+      "Q42",
+      "Q43",
+      "Q44",
+      "Q45",
+      "Q46",
+      "Q47",
+      "Q48",
+      "Q49",
+      "Q50"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Q1",
+        "feuillets": "5 à 7",
+        "titre": "Les sept pivots du bras gauche"
+      },
+      {
+        "question": "Q2",
+        "feuillets": "8",
+        "titre": "Rotation autour du troisième axe"
+      },
+      {
+        "question": "Q3",
+        "feuillets": "8",
+        "titre": "Rotation autour du premier axe"
+      },
+      {
+        "question": "Q4",
+        "feuillets": "8 à 10",
+        "titre": "Composition des rotations"
+      },
+      {
+        "question": "Q5",
+        "feuillets": "8 et 9",
+        "titre": "Translation entre deux origines"
+      },
+      {
+        "question": "Q6",
+        "feuillets": "9 et 10",
+        "titre": "Repères de l’épaule"
+      },
+      {
+        "question": "Q7",
+        "feuillets": "10",
+        "titre": "Attitude du premier corps"
+      },
+      {
+        "question": "Q8",
+        "feuillets": "10",
+        "titre": "Attitude du deuxième corps"
+      },
+      {
+        "question": "Q9",
+        "feuillets": "10",
+        "titre": "Composition des deux attitudes"
+      },
+      {
+        "question": "Q10",
+        "feuillets": "10",
+        "titre": "Deux calculs de la position du coude"
+      },
+      {
+        "question": "Q11",
+        "feuillets": "6 et 11",
+        "titre": "Butées et symétrie des bras"
+      },
+      {
+        "question": "Q12",
+        "feuillets": "5 à 7 et 11",
+        "titre": "Distance atteignable entre les deux outils"
+      },
+      {
+        "question": "Q13",
+        "feuillets": "11",
+        "titre": "Interprétation d’une matrice numérique"
+      },
+      {
+        "question": "Q14",
+        "feuillets": "12",
+        "titre": "Vitesse du centre d’outil"
+      },
+      {
+        "question": "Q15",
+        "feuillets": "12",
+        "titre": "Action d’une matrice antisymétrique"
+      },
+      {
+        "question": "Q16",
+        "feuillets": "12",
+        "titre": "Vitesse angulaire de l’outil"
+      },
+      {
+        "question": "Q17",
+        "feuillets": "6, 13 et 14",
+        "titre": "Trajectoire et limites du mouvement simulé"
+      },
+      {
+        "question": "Q18",
+        "feuillets": "15 et 16",
+        "titre": "Dimensions minimales du voile de poignet"
+      },
+      {
+        "question": "Q19",
+        "feuillets": "16",
+        "titre": "Profilé en croix"
+      },
+      {
+        "question": "Q20",
+        "feuillets": "16 et 17",
+        "titre": "Bilan des moments sur l’inertie"
+      },
+      {
+        "question": "Q21",
+        "feuillets": "17",
+        "titre": "Couple exercé sur la charge"
+      },
+      {
+        "question": "Q22",
+        "feuillets": "17",
+        "titre": "Transmittances du modèle élastique"
+      },
+      {
+        "question": "Q23",
+        "feuillets": "17",
+        "titre": "Réponse du ressort lorsque la sortie est bloquée"
+      },
+      {
+        "question": "Q24",
+        "feuillets": "17",
+        "titre": "Critère d’impédance et résonance"
+      },
+      {
+        "question": "Q25",
+        "feuillets": "18",
+        "titre": "Écart permanent avec un correcteur PD"
+      },
+      {
+        "question": "Q26",
+        "feuillets": "18",
+        "titre": "Impédance de la boucle PID"
+      },
+      {
+        "question": "Q27",
+        "feuillets": "18",
+        "titre": "Signe de la partie imaginaire"
+      },
+      {
+        "question": "Q28",
+        "feuillets": "18",
+        "titre": "Limite aux basses fréquences"
+      },
+      {
+        "question": "Q29",
+        "feuillets": "18 et 19",
+        "titre": "Choix de la constante du correcteur modifié"
+      },
+      {
+        "question": "Q30",
+        "feuillets": "19",
+        "titre": "Anticipation de consigne de couple"
+      },
+      {
+        "question": "Q31",
+        "feuillets": "18 et 20",
+        "titre": "Performances de la commande en couple"
+      },
+      {
+        "question": "Q32",
+        "feuillets": "21",
+        "titre": "Puissance instantanée triphasée"
+      },
+      {
+        "question": "Q33",
+        "feuillets": "21 et 22",
+        "titre": "Composantes sur deux axes fixes"
+      },
+      {
+        "question": "Q34",
+        "feuillets": "22",
+        "titre": "Conservation de la puissance"
+      },
+      {
+        "question": "Q35",
+        "feuillets": "22",
+        "titre": "Passage aux axes direct et en quadrature"
+      },
+      {
+        "question": "Q36",
+        "feuillets": "22",
+        "titre": "Choix d’un angle tournant"
+      },
+      {
+        "question": "Q37",
+        "feuillets": "22 et 23",
+        "titre": "Pulsations électrique et mécanique"
+      },
+      {
+        "question": "Q38",
+        "feuillets": "22 et 23",
+        "titre": "Équations des tensions statoriques"
+      },
+      {
+        "question": "Q39",
+        "feuillets": "23",
+        "titre": "Blocs du modèle découplé"
+      },
+      {
+        "question": "Q40",
+        "feuillets": "23",
+        "titre": "Effet du correcteur proportionnel de courant"
+      },
+      {
+        "question": "Q41",
+        "feuillets": "23",
+        "titre": "Gain d’anticipation de courant"
+      },
+      {
+        "question": "Q42",
+        "feuillets": "24",
+        "titre": "Réglage proportionnel-intégral"
+      },
+      {
+        "question": "Q43",
+        "feuillets": "24",
+        "titre": "Mesure des temps de réponse du courant"
+      },
+      {
+        "question": "Q44",
+        "feuillets": "25",
+        "titre": "Couple résistant au coude"
+      },
+      {
+        "question": "Q45",
+        "feuillets": "25 et 26",
+        "titre": "Pulsation au point de fonctionnement"
+      },
+      {
+        "question": "Q46",
+        "feuillets": "26",
+        "titre": "Équation complexe de tension"
+      },
+      {
+        "question": "Q47",
+        "feuillets": "26",
+        "titre": "Construction de Fresnel"
+      },
+      {
+        "question": "Q48",
+        "feuillets": "25 et 26",
+        "titre": "Courant en quadrature"
+      },
+      {
+        "question": "Q49",
+        "feuillets": "26",
+        "titre": "Tension efficace d’une phase"
+      },
+      {
+        "question": "Q50",
+        "feuillets": "25 et 26",
+        "titre": "Compatibilité avec le variateur"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  },
+  "figures": [
+    {
+      "question": "Q1",
+      "numero": 1,
+      "fichier": "figures/chaine.svg",
+      "legende": "Cahier 1. Sept pivots et huit corps en pose, vus de face."
+    },
+    {
+      "question": "Q6",
+      "numero": 2,
+      "fichier": "figures/reperes.svg",
+      "legende": "Cahier 3. Complément des trois repères sur le plan de l’épaule."
+    },
+    {
+      "question": "Q14",
+      "numero": 3,
+      "fichier": "figures/facteurs.svg",
+      "legende": "Cahier 7. Coefficients de vitesse dans la forme factorisée imposée."
+    },
+    {
+      "question": "Q17",
+      "numero": 4,
+      "fichier": "figures/butee.svg",
+      "legende": "Feuillet 13. Franchissement de la butée inférieure du coude."
+    },
+    {
+      "question": "Q19",
+      "numero": 5,
+      "fichier": "figures/croix.svg",
+      "legende": "Feuillet 16. Dimensions du ressort à section en croix."
+    },
+    {
+      "question": "Q22",
+      "numero": 6,
+      "fichier": "figures/sea.svg",
+      "legende": "Cahier 11. Gains des deux branches et signe de la voie de charge."
+    },
+    {
+      "question": "Q29",
+      "numero": 7,
+      "fichier": "figures/phase.svg",
+      "legende": "Feuillet 19. Excursion positive de la phase pour la constante de 0,2 s."
+    },
+    {
+      "question": "Q31",
+      "numero": 8,
+      "fichier": "figures/couple.svg",
+      "legende": "Feuillet 20. Bande à cinq pour cent et premier maximum du couple."
+    },
+    {
+      "question": "Q39",
+      "numero": 9,
+      "fichier": "figures/decouplage.svg",
+      "legende": "Cahier 19. Les trois blocs complétés sur le gabarit du sujet."
+    },
+    {
+      "question": "Q43",
+      "numero": 10,
+      "fichier": "figures/courant.svg",
+      "legende": "Feuillet 24. Seuil de 0,95 A sur les deux réponses simulées."
+    },
+    {
+      "question": "Q44",
+      "numero": 11,
+      "fichier": "figures/charges.svg",
+      "legende": "Feuillet 25. Forces de pesanteur aux deux centres de gravité."
+    },
+    {
+      "question": "Q47",
+      "numero": 12,
+      "fichier": "figures/fresnel.svg",
+      "legende": "Cahier 23. Addition des trois tensions dans le plan direct-quadrature."
+    }
+  ]
+}

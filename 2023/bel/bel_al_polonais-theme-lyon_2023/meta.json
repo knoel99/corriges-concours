@@ -1,0 +1,136 @@
+{
+  "slug": "bel_al_polonais-theme-lyon_2023",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Polonais (thème Lyon)",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "duree_heures": 4,
+  "redaction": "Traduction originale proposée par IA, non officielle.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2023-09/Epreuve-de-specialite.pdf#page=15",
+    "sujet_sha256": "d646a518fbe4febf8a67e582f0310174ed455fa1f7d2c93d37f450a6420673a2",
+    "rapport_jury": null,
+    "rapport_jury_sha256": null,
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2023",
+    "ouvrage": "Nathalie Sarraute, *Le Planétarium* (1959).",
+    "ecoles": "ENS de Lyon",
+    "rapport_de_langue_complementaire": "https://www.ens-lyon.fr/sites/default/files/2023-11/Polonais-2023.pdf",
+    "precision": "Le rapport de polonais publié pour 2023 porte sur le commentaire et la version. Le thème de spécialité figure à la page 15 du sujet. Aucun rapport propre à ce thème identifié."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2023-09/Epreuve-de-specialite.pdf#page=15",
+      "sha256": "d646a518fbe4febf8a67e582f0310174ed455fa1f7d2c93d37f450a6420673a2",
+      "pages": 20,
+      "perimetre": "Thème en français à traduire en polonais, sujet ENS de Lyon.",
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "d637c9f152c00d67d0ac53df6ca1a8afc6acd94775b42bc8aa249b7f1b2e0dc5"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "23197e3feb5af29cc10d3ecdefd9d1216be3f6253cf9bb7010d639a60bd3b7bd"
+        },
+        {
+          "numero": 15,
+          "rendu_sha256": "970dc171aa217c631edba13639b5ac6d8f952b82bf361e9dfa3135a95a0b6e3b"
+        }
+      ]
+    },
+    "rapport_de_langue_complementaire": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2023-11/Polonais-2023.pdf",
+      "sha256": "c10459e1e8fe4d615b9d6f8a298838ea412fddb4eb6ce3433f6eac2a79b12663",
+      "pages": 7,
+      "perimetre": "Rapport sur le commentaire et la version de polonais, épreuve distincte du thème.",
+      "pages_verifiees": [
+        {
+          "numero": 2,
+          "rendu_sha256": "fd22315ec9bbfa0baab05700693b13ec52ba0b89555362b7b860760e030fd946"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "5f5a0902c285d00304f4bdaa106e2a3cf0bf21df0c55186ca637ce0cd6b9e1f3"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "c8110caefa9b03066105c4ab56623360c83853653e0e3b87c20e6bee38e0f4fc"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "ffaeb6c1211df30963fff1f573157da81d1a05557d6246fa61f74bab28b4d678"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "bb3bd68494b5994ee8dd7f77bc0830fb3c827ad48b24d5290eebb92364e9bec4"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "b8ac8a1c16c0c590c9a4543dc9450b19142975ca81c5ea56ebabafec4486660f"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "Proposition de thème",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "Le même placard suscite trois voix. La visiteuse admire, son hôte recule, puis le langage de la grandeur lui revient."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Traduction polonaise originale et commentaire des voix, du lexique et de la syntaxe, schéma de lecture et vérification des sources."
+    },
+    {
+      "phase": "revision",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture du feuillet et de ses deux coupures. Reprise du rang des voix, de la relative sur le réflexe et de la question que l’hôte s’adresse. Contrôle du redoublement de cosie et de l’enchaînement des participes."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Proposition de thème"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Proposition de thème",
+        "page_pdf": 15,
+        "feuillet_imprime": 15,
+        "perimetre": "De l’invitation à visiter l’appartement à la série domestique finale. Les deux coupures du fascicule sont conservées."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

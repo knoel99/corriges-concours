@@ -4,9 +4,10 @@
     "concours": "BEL",
     "filiere": "BL",
     "matiere": "Composition française",
-    "annee": 2025
+    "annee": 2025,
+    "modalite": "écrit commun"
   },
-  "questions": 0,
+  "questions": 1,
   "redaction": "IA (claude-opus-4-8), relue et révisée par IA",
   "figures": [
     {
@@ -60,7 +61,115 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Relecture du fac-similé et du rapport, correction de la situation de la citation, de la confusion entre l’incipit et la madeleine, du rôle de « peut-être » et du minutage. Deux schémas et relances."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Proust, comparaison optique et contrôle textuel d’une interprétation personnelle."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Collation du feuillet B/L avec le rapport de neuf pages. Distinction de l’offre, du réglage et de la lecture effective. Vérification de la chronologie de Combray, reprise des références du guide et de la copie, réintégration de la figure de la mémoire dans le brut."
     }
   ],
-  "date_revision": "2026-11-24"
+  "date_revision": "2026-11-26",
+  "gabarit": "dissertation",
+  "duree_heures": 6,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens.psl.eu/sites/default/files/2025_blses_sujet_composition_francaise.pdf",
+      "sha256": "f872e5cf8fc65a29f1fe5d8d006f6f5f541a0a6ae60128a6ae1c156019143ec9",
+      "pages": 1,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "744e13962e18344e86bd0bf6007dde820764913665839175c6c96d18280d89a0"
+        }
+      ],
+      "nature": "Fac-similé du feuillet commun Ulm–Lyon."
+    },
+    "rapport_jury": {
+      "url": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_ecrit_francais.pdf",
+      "sha256": "70fc893ee1f15e9ddba0596f33a80f381b57030ac7c346a4fdb3ab72ba828a41",
+      "pages": 9,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "89cda7f84b7a3b9ec8d5147a9e8d8c1fb069d9a3cd9ea7d0cee97645c177fa59"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "67e221c41ef8acb8701cb89c2b4099407da78ae3aa54fd15b786615561045c30"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "6b2279c8f3d3784e730ed870205464a84a2e6d82959c4b29bfc21a794e6f6245"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "ed183e31c31decbe03553052c17a8534ea2493622bd2029d9d48e813faff0a2a"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "a6e620bf56a588c40081cd95060601085905a853d57ed7cd0fe58bc9d46e95e3"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "e4dcd5a14f15071bb342b277347c885825238c14f2e20f81bf1faf439d67758b"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "d67277398613acedc9f99b70c9a027841bba599ad67f60bfaa9de3f7ef9be42a"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "de5db62e31123dbeaa371e635afe2f61ad6a4a06b49a501f47e1e31b749a9bc7"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "fdf43b7d0563af98b28d66c3403d5c092840e6bc5283739d6043afad52de52b7"
+        }
+      ],
+      "rubriques": "I. Le sujet (intitulé, analyse et problématique, plan et démonstration), p. 1–4. II. L’esprit de l’épreuve (bilan des copies, principes méthodologiques, expression), p. 4–9."
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Composition française"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Composition française",
+        "page_pdf": 1,
+        "citation": "L’écrivain ne dit que par une habitude prise dans le langage insincère des préfaces et des dédicaces : « mon lecteur ». En réalité, chaque lecteur est quand il lit le propre lecteur de soi-même. L’ouvrage de l’écrivain n’est qu’une espèce d’instrument optique qu’il offre au lecteur afin de lui permettre de discerner ce que sans ce livre il n’eût peut-être pas vu en soi-même",
+        "reference": "Marcel Proust, Le Temps retrouvé (1927), À la Recherche du temps perdu, Paris, Gallimard, coll. « Bibl. de la Pléiade », 1989, t. IV, p. 489-490.",
+        "consigne": "En vous fondant sur des exemples précis, vous analyserez les enjeux et la pertinence d’une telle affirmation.",
+        "perimetre": "L’adresse conventionnelle, le lecteur de soi et l’instrument offert. Examen du possible contenu dans « peut-être » et des limites de l’introspection."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
 }

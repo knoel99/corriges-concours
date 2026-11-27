@@ -1,0 +1,65 @@
+{
+  "slug": "bel_bl_russe_2017",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Russe",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "25 лет после распада СССР",
+  "questions": 1,
+  "redaction": "Le dossier demande une composition en russe sur le vingt-cinquième anniversaire de la disparition de l’URSS.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/ecrits-communs-optionnels-ses-2017_1506587060551.pdf#page=36",
+    "pages": "36–39",
+    "sha256_sujet": "bdc658b34f2b80b696b7a912173f1ab822dae1d52727d0732ab0305166620e41",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/17_russe_opt_ecrit.pdf",
+    "sha256_rapport_jury": "9eac46122a926749039fcbbcdb42af3e8e3b374ddc271da2f96a94fa2f4e5c25",
+    "documents": [
+      "Олег Артюков, Четверть века без Союза: к юбилею Беловежских соглашений, Правда.Ру, 8 décembre 2016",
+      "Свидетельство о смерти Советского Союза: тайна Беловежских соглашений, entretien signé Михаил Зубов, Московский комсомолец, 24 novembre 2016",
+      "Семён Новопрудский, Зомбиленд, Газета.Ru, 8 décembre 2016"
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Composition",
+      "fichier": "figures/daty-raspada.svg",
+      "legende": "Quel moment chacun des auteurs choisit-il pour dater la fin de l’Union ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du rapport d’Olivier Azam et Hélène Henry-Safier, contrôle du raisonnement des fondateurs, des trois voix politiques et des deux métaphores médicales et funèbres sur le fac-similé."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Composition en russe, confrontation du droit de retrait et de la dissolution, analyse des voix, de la chronologie et des usages politiques de la mémoire, indications et tableau d’attribution."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Analyse et commentaire de la totalité du dossier en russe"
+    ]
+  }
+}

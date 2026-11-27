@@ -1,0 +1,96 @@
+{
+  "slug": "x_pc_physique-a_2021",
+  "epreuve": {
+    "concours": "X",
+    "ecoles_historiques": "École polytechnique et ESPCI",
+    "filiere": "PC",
+    "matiere": "Physique A",
+    "annee": 2021
+  },
+  "questions": 31,
+  "intitule": "Imagerie par tomographie photoacoustique",
+  "redaction": "Les 31 questions sont résolues dans les deux éditions. Les conventions de signe Doppler, les hypothèses de chauffage et de régime d’écoulement, et l’incompatibilité de l’irrotationnalité stricte avec Poiseuille sont explicitées.",
+  "sources": {
+    "garde": "XE · École polytechnique et ESPCI · 4 heures",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/07/2021_PC_sujet_PhyA.pdf",
+    "sujet_sha256": "0321f532038cdb5c6ac642941f6490d6419236420e8491292b4e52e8bb67bcae",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/10/21_PC_rap_ePhysA.pdf",
+    "rapport_sha256": "f3f4eae7a71ee327ac0ffa4d7ab3ad17fd898d4db435749cc7c68605cf210ae5"
+  },
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "physique_a_pc_x",
+      "session": "physique_a_pc_x",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du rapport des quatre parties, du diagramme énergétique, des deux extrema de pression et de la courbe de Moody. La définition imprimée de la friction est rétablie selon le rapport."
+    },
+    {
+      "phase": "redaction",
+      "agent": "physique_a_pc_x",
+      "session": "physique_a_pc_x",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Les 31 questions sont résolues dans les deux éditions. Les conventions de signe Doppler, les hypothèses de chauffage et de régime d’écoulement, et l’incompatibilité de l’irrotationnalité stricte avec Poiseuille sont explicitées."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "11–12",
+      "fichier": "figures/thermique.svg",
+      "legende": "À gauche, chauffage gaussien et température intégrée. À droite, profil radial à 5 ns pour un échelon de température à la surface."
+    },
+    {
+      "numero": 2,
+      "question": "18 et 23",
+      "fichier": "figures/reception.svg",
+      "legende": "Signal au capteur autour de son arrivée à 20 µs, puis retards additionnels calculés pour un réseau de largeur 1 cm."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31"
+    ]
+  }
+}

@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le quotient de Rayleigh permet de lire la valeur propre maximale. Le chemin et le cycle donnent deux modèles explicites ; pour un graphe connexe quelconque, la positivité hors diagonale suffit à caractériser le vecteur propre principal.
 
 ## Première partie. Norme et quotient de Rayleigh
@@ -100,6 +102,11 @@ Avec les conventions $x_0=x_{N+1}=0$, $x_{j+1}=\lambda x_j-x_{j-1}$. Par récurr
 
 Pour le vecteur $\mathbf1$, $A_N\mathbf1$ a pour coordonnées extrêmes un et pour les $N-2$ autres deux. On a donc $\|A_N\|^2\ge(2+4(N-2))/N=4-6/N$. D’autre part, pour $1\le j\le N$, $x_k^{(j)}=\sin(jk\pi/(N+1))$ vérifie les deux conditions aux bords et $x_{k-1}^{(j)}+x_{k+1}^{(j)}=2\cos(j\pi/(N+1))x_k^{(j)}$. Ces vecteurs sont non nuls et les $N$ valeurs propres sont distinctes. Elles épuisent le spectre, toutes de module strictement inférieur à deux. La norme carrée est donc strictement inférieure à quatre.
 
+L’indication du sujet donne une autre preuve de la borne stricte. Avec $x_0=x_{N+1}=0$, le développement des carrés fournit
+$$4\|x\|^2-\|A_Nx\|^2
+=2x_1^2+2x_N^2+\sum_{i=1}^{N}(x_{i-1}-x_{i+1})^2.$$
+Si cette somme est nulle, $x_1=0$ et $x_{i+1}=x_{i-1}$ pour tout $i$. Partant de $x_0=x_1=0$, on obtient $x=0$. La différence est donc strictement positive sur la sphère unité compacte et y atteint un minimum positif, ce qui justifie le passage à la norme d’opérateur.
+
 ### Question 5.b
 
 > [!INDICATION]
@@ -108,6 +115,8 @@ Pour le vecteur $\mathbf1$, $A_N\mathbf1$ a pour coordonnées extrêmes un et po
 #### Solution
 
 Le calcul précédent donne $\|A_N\|=2\cos(\pi/(N+1))$, car les extrêmes du spectre sont opposés et le cosinus décroît sur $[0,\pi]$. De même $\|A_{N-1}\|=2\cos(\pi/N)$, formule qui vaut aussi pour la matrice nulle de taille un. Puisque $\pi/(N+1)<\pi/N$, l’inégalité est stricte.
+
+On peut également comparer les espaces sans utiliser la formule trigonométrique. Prenons un vecteur propre unitaire $v$ de $A_{N-1}$ pour une valeur propre de module $\|A_{N-1}\|$. Sa dernière composante est non nulle par 4 (immédiat si $N=2$). Le vecteur $(v,0)$ est unitaire dans $\mathbb R^N$ et $A_N(v,0)=(A_{N-1}v,v_{N-1})$. Par conséquent $\|A_N\|^2\ge\|A_{N-1}\|^2+|v_{N-1}|^2>\|A_{N-1}\|^2$.
 
 ### Question 6
 
@@ -206,6 +215,8 @@ Comme $x$ est non nul et positif ou nul, un indice $j$ a $x_j>0$. Par (C), parto
 #### Solution
 
 On a $x_\varepsilon=x+\varepsilon e_u$, $\|x_\varepsilon\|^2=\|x\|^2+\varepsilon^2$ et $(Ax_\varepsilon|x_\varepsilon)=(Ax|x)+2\varepsilon(Ax)_u+\varepsilon^2a_{uu}$. Or $(Ax)_u=\sum_{j\ne u}a_{uj}x_j\ge a_{uv}x_v>0$. La différence entre le quotient perturbé et $\lambda$ a donc pour numérateur $2\varepsilon(Ax)_u+\varepsilon^2(a_{uu}-\lambda)$, strictement positif pour $\varepsilon>0$ assez petit, et pour dénominateur $\|x\|^2+\varepsilon^2>0$.
+
+Posons $S=\sum_{j\ne u}a_{uj}x_j>0$. Si $a_{uu}<\lambda$, tout $0<\varepsilon<2S/(\lambda-a_{uu})$ rend le numérateur strictement positif. Si $a_{uu}\ge\lambda$, tout $\varepsilon>0$ convient. Le contrôle porte sur le quotient normalisé, même si les coefficients diagonaux de $A$ ont un signe quelconque.
 
 ### Question 10.c
 

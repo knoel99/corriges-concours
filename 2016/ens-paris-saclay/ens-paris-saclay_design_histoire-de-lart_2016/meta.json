@@ -1,0 +1,132 @@
+{
+  "slug": "ens-paris-saclay_design_histoire-de-lart_2016",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Histoire de l’art",
+    "annee": 2016,
+    "modalite": "écrit",
+    "etablissement_imprime": "École normale supérieure de Cachan"
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2016_Sujet_1A_Design_Histoire_art.pdf",
+    "sha256_sujet": "02f6fe8f49e1af52dcf556058e4bdae2776d9cecebf382c6cfbd726263a9097c",
+    "rapport_jury": null,
+    "notices_documentaires": [
+      {
+        "titre": "Radio-électrophone SK 4, MoMA",
+        "url": "https://www.moma.org/collection/works/2649"
+      },
+      {
+        "titre": "Fonds Otl Aicher, HfG-Archiv Ulm",
+        "url": "https://hfg-archiv.museumulm.de/en/bequests/the-bequest-of-otl-aicher/"
+      },
+      {
+        "titre": "Campagne Think Small, People’s Graphic Design Archive",
+        "url": "https://peoplesgdarchive.org/item/16761/think-small-advertising-campaign"
+      },
+      {
+        "titre": "First Things First Manifesto 2000, Eye, automne 1999",
+        "url": "https://www.eyemagazine.com/feature/article/first-things-first-manifesto-2000"
+      },
+      {
+        "titre": "La lutte continue, musée Carnavalet",
+        "url": "https://www.parismuseescollections.paris.fr/fr/musee-carnavalet/oeuvres/la-lutte-continue-1"
+      }
+    ],
+    "index_annales": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=281",
+    "code_sujet": "C16104",
+    "page_pdf_sujet": 1,
+    "citation_repere": "une nouvelle institution de contrôle social",
+    "consigne_imprimee": "Vous analyserez et discuterez cette citation en relation avec le programme.",
+    "programme": "Graphisme et design, de la crise moderne aux diktats du marché (1953–2000)",
+    "reference_imprimee": "Gui Bonsiepe, Ulm, n° 12/13, 1965. Traduction française dans L’école d’Ulm : textes et manifestes, Centre Georges Pompidou, 1988.",
+    "index_annales_sha256": "4a958aa4419379355bc4e78013c50477cd12562ec890e198677889d1ac7604ee",
+    "rapport_jury_verification": "Aucun rapport d’histoire de l’art pour cette session n’est proposé sur l’index institutionnel examiné. Le rapport de 2017 mentionne le rapport de l’année précédente, sans en reproduire le contenu."
+  },
+  "figures": [
+    {
+      "fichier": "figures/analyse-du-design.svg",
+      "question": "II. La persuasion moderne fonctionne aussi par l’ironie et l’apparence de la retenue",
+      "legende": "Comment la taille de la voiture, le blanc, le titre et le texte organisent la lecture de Think Small."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des deux compositions après lecture de la page 1 du sujet. Problématisation et datation des exemples, vérification des notices documentaires et du dessin analytique original.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "lettres_design",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Analyse de la séquence visuelle et du contre-exemple de réception de Think Small, avec manipulation guidée."
+    },
+    {
+      "phase": "revision",
+      "tour": 2,
+      "agent": "x_hist_1986",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Distinction de la rhétorique de vente, de la commande des graphistes et de la réception. Analyse du déplacement de la critique entre 1964 et 1999. Schéma de Think Small replacé dans la partie sur l’annonce."
+    }
+  ],
+  "duree_heures": 4,
+  "date_revision": "2026-11-26",
+  "intitule_editorial": true,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2016_Sujet_1A_Design_Histoire_art.pdf",
+      "sha256": "02f6fe8f49e1af52dcf556058e4bdae2776d9cecebf382c6cfbd726263a9097c",
+      "pages": 1,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "d65def031a28cf15e4a4e107697c76b56dae59dcaebc69b90d41d75476f6529b"
+        }
+      ]
+    }
+  },
+  "intitule": "Gui Bonsiepe, publicité et contrôle social",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "consigne": "Vous analyserez et discuterez cette citation en relation avec le programme.",
+        "page_pdf": 1,
+        "code": "C16104"
+      }
+    ],
+    "annexes_sujet": [],
+    "reproductions_sujet": [],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "slug": "x-ens_mp-pc_composition-francaise_2012",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC",
+    "matiere": "Composition française",
+    "annee": 2012,
+    "modalite": "écrit"
+  },
+  "intitule": "Le sens de l’injustice voit-il plus juste ?",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2012/pc2012_sujet_francais.pdf",
+    "sha256_sujet": "98769ead4a43ecdbf10d5d78b8df756dec7008fd49cdd728ce829eadac8b1e65",
+    "index_sujet": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2012",
+    "sujet_pages": 1,
+    "sujet_miroir": "https://www.ens.psl.eu/IMG/file/concours/2012/PC/pc2012_sujet_francais%5B1%5D.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2012/PC/2012MP_PCrapportfrancXEULC.pdf",
+    "sha256_rapport_jury": "1b057098582c75d5b525c5071221848d51299812e8929dab624731797ae8ead1",
+    "index_rapport_jury": "https://www.ens.psl.eu/rapports-et-sujets-2012-pc",
+    "rapport_jury_pages": 6,
+    "code_garde": "XEULC",
+    "duree": "4 heures",
+    "attribution": "Composition de quatre heures, commune aux filières MP et PC. La garde porte XEULC pour l’X, l’ESPCI et les ENS de Paris, Lyon et Cachan.",
+    "programme": "https://www.enseignementsup-recherche.gouv.fr/fr/bo/2011/24/esrs1100188a.htm",
+    "reference_programme": "Arrêté du 24 mai 2011, BO n° 24 du 16 juin 2011, NOR ESRS1100188A, article 1, deuxième thème « La justice ».",
+    "oeuvres_au_programme": [
+      "Eschyle, Les Choéphores et Les Euménides, dans L’Orestie, traduction et présentation Daniel Loayza, GF-Flammarion.",
+      "Pascal, Trois discours sur la condition des grands ; Pensées, numérotation Lafuma. Liasses II 13–52, III 53–76, V 80–104, VI 105–118, VII 125–130, X 147–148, XIII 170–174, XV 199. Série XXIII 518, 520, 525–533, 540 ; série XXIV 597 et 617 ; série XXV 645 et 665.",
+      "John Steinbeck, Les Raisins de la colère, traduction Marcel Duhamel et Maurice-Edgar Coindreau, Folio."
+    ],
+    "passages_verifies": [
+      "Les Choéphores : hésitation d’Électre sur la formule des libations au tombeau (v. 84 sqq.), confrontation d’Oreste à sa mère et rappel de l’oracle par Pylade (v. 896–903), vision finale des Érinyes (v. 1048 sqq.).",
+      "Les Euménides : fondation du tribunal, votes et acquittement en cas d’égalité, puis négociation avec les Érinyes et procession finale.",
+      "Pascal, Pensées, Lafuma 60 (variabilité géographique du juste et coutume) et 103 (justice et force). Premier Discours, le naufragé pris pour le roi. Deuxième Discours, les grandeurs d’établissement et le droit à l’estime.",
+      "Steinbeck, Les Raisins de la colère, chap. V, conducteur du tracteur ; XXII et XXIV, comité et bal au camp ; XXV, destruction d’aliments alors que les familles souffrent de la faim."
+    ],
+    "portee_rapport": "Rapport commun MP-PC XEULC, six pages. P. 1 : 1 572 copies MP, 1 349 PC. P. 3-4 : reproduire et commenter la citation, distinguer « sens de l’injustice » d’« injustice », traiter « poignant », « perspicace » et la répétition de « manque ». P. 5-6 : le nombre de parties reste au choix ; le théâtre antique a souvent été sous-exploité ; conduire la comparaison et conserver la citation dans le raisonnement. Le rapport p. 6 donne « L’Argent » comme autre thème : l’autre thème officiel de 2011-2012 était « Le mal », selon le BO.",
+    "lecture_pascal_pensees": "https://www.penseesdepascal.fr/Raisons/Raisons20-moderne.php",
+    "lecture_pascal_discours": "https://fr.wikisource.org/wiki/Trois_discours_sur_la_condition_des_grands",
+    "lecture_eschyle_choephores": "https://chs.harvard.edu/primary-source/aeschylus-libation-bearers-sb/",
+    "lecture_eschyle_eumenides": "https://www-current.chs.harvard.edu/primary-source/aeschylus-eumenides-sb/",
+    "lecture_steinbeck": "https://www.archives.gov/files/publications/prologue/2008/winter/collins-rpt-correlations.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Dissertation",
+      "legende": "De la plainte à la règle commune"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de la dissertation sur le passage de Paul Ricœur, confrontation des trois œuvres, vérification de la garde, du programme prescrit, du rapport commun MP-PC et des passages cités. Ajout d’une préparation guidée et d’un schéma. Rédaction initiale de la copie et du guidage par oraux_lyon, vérification et mise en forme par lettres_dissertations_suite.",
+      "collaboration": "oraux_lyon"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Pascal, premier Discours sur la condition des Grands, le naufragé et la reconnaissance du roi. Comparaison entre l’émotion devant l’injustice et ce que la connaissance de l’origine d’un rang permet de discerner. Comparaison au sujet original et au rapport. Relecture des trois mouvements et de la conclusion dans les deux éditions."
+    }
+  ],
+  "gabarit": "dissertation",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Le sens de l’injustice et le sens de la justice"
+    ],
+    "pages_du_sujet": 1,
+    "pages_pdf_des_questions": {
+      "Le sens de l’injustice et le sens de la justice": 1
+    },
+    "precision": "Dissertation unique de quatre heures sur la citation de Ricœur, au regard des trois œuvres prescrites. Le repère est un intitulé éditorial. La consigne imprimée se trouve page 1. Rapport du jury, pages 1 à 6."
+  }
+}

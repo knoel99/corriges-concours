@@ -6,6 +6,10 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## Sobriété et classes sociales
@@ -17,6 +21,10 @@ La première page du fascicule énumère les sept documents sans imprimer de tit
 Dans l’enquête d’Olivier Schwartz (doc. 1), faire soi-même mobilise des savoir-faire et limite la dépense. La profusion de plantes et la présence d’objets de consommation chez Éric Rouet donnent aussi au foyer le sens d’un espace de dignité et d’abondance. La frugalité populaire n’est pas un refus homogène du confort. Dans l’enquête de Caveng et Thine (doc. 2), Sylvie et Bruno discutent l’attention à l’éclairage et aux équipements du foyer. Bruno admet surveiller certaines dépenses professionnelles qu’il ne souhaite pas suivre aussi attentivement chez lui. L’entretien de couple donne à voir une négociation et une distribution du travail de vigilance qu’une réponse unique au nom du ménage effacerait.
 
 Dans VertPom 2018–2020 (doc. 3), 48,4 % des 31 ouvriers interrogés déclarent faire attention à tout en matière d’énergie et d’eau, contre 22,5 % des 40 cadres et professions intellectuelles de la comparaison. L’écart de 25,9 points porte sur des déclarations dans de petits groupes. Il ne classe pas les consommations mesurées au compteur. Le document 4 rattache aussi cette disposition à l’enfance. Parmi les répondants ayant connu une situation économique familiale très difficile, 61,7 % disent aujourd’hui faire attention à tout, contre 29,4 % parmi ceux qui décrivent leur famille comme à l’aise. Pour isoler un effet de socialisation, il faudrait tenir compte de la situation présente. La mémoire de l’enfance peut elle-même être réinterprétée à la lumière de la trajectoire ultérieure.
+
+![Figure 1 — Faire attention à toute sa consommation d’énergie et d’eau](figures/lecture-des-donnees.svg)
+
+L’écart entre enfances décrites comme très difficiles et enfances à l’aise est de 32,3 points. Le questionnaire réunit toutefois deux déclarations actuelles, l’une sur des circonstances passées et l’autre sur des pratiques présentes. Des entretiens sur les apprentissages domestiques aideraient à comprendre comment l’habitude d’économiser se transmet et dans quels logements elle peut s’exercer.
 
 ### Les effets concrets varient selon le domaine et les infrastructures
 
@@ -31,3 +39,9 @@ En 2024, dans le panel ELIPSS de 2 305 adultes de France métropolitaine (doc. 7
 La sobriété devient donc un objet sociologique quand on sépare conditions du choix, classement moral du geste et effet matériel. Un discours public qui félicite seulement le renoncement formulé dans les termes de la protection de l’environnement risque de manquer des économies réelles imposées par le budget, et d’oublier les dépenses qu’une infrastructure rend difficiles à éviter.
 
 [Dossier officiel](https://www.ens.psl.eu/sites/default/files/dossier_sobriete.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_tronc_commun_sociologie.pdf)
+
+## Vérification sur le dossier
+
+Les entretiens sur les usages domestiques ont été mis en relation avec les tableaux d’attention aux consommations, les achats alimentaires, les usages de la voiture et le renoncement à l’achat numérique. Les pourcentages de ligne du document automobile ont été distingués de la fréquence d’une pratique dans un groupe social.
+
+Le document 4a indique que 61,7 % des personnes décrivant une situation familiale « très difficile » dans leur enfance déclarent aujourd’hui faire attention à tout pour l’énergie et l’eau, contre 29,4 % de celles qui disent leur famille « à l’aise ». La différence de 32,3 points associe un souvenir et une pratique déclarée. Le montant des factures, la qualité du logement et la contrainte de revenu actuelle éclaireraient les mécanismes de cette association.

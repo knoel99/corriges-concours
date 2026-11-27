@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Les trois exercices étudient une famille de logarithmes, les attentes aux guichets et des tirages dans trois urnes. Les effectifs sont distingués des densités horaires et le choix unique de l’urne est comparé à son renouvellement.
 
 ## Exercice 1. Fonctions auxiliaires et courbes logarithmiques
@@ -122,6 +124,13 @@ Au point $n$ inclus dans $D_n$, cette formule n’est pas définie. Pour $t\down
 #### Solution
 
 Lorsque $x$ va de $-n/\sqrt2$ à $n/\sqrt2$, $f_n$ croît strictement de sa limite $-\infty$ à $\ln(n\sqrt2)$. Elle décroît ensuite strictement jusqu’à $f_n(n)=\ln n$.
+
+| Abscisse | $(-n/\sqrt 2)^+$ | $n/\sqrt 2$ | $n$ |
+|---|:---:|:---:|:---:|
+| $f_n(x)$ | $-\infty$ (limite) | $\ln(n\sqrt2)$ | $\ln n$ |
+| Variation jusqu’à la colonne suivante | croît | décroît | |
+
+La limite au bord gauche se lit avec $n$ fixé et $x$ tendant vers $-n/\sqrt2$ par valeurs supérieures. En effet, $g_n(x)$ tend alors vers zéro en restant positif.
 
 ### Question 1.II.4
 
@@ -301,6 +310,8 @@ Les hauteurs en visites par minute sont $0{,}60$, $2{,}15$, $3{,}40$, $3{,}80$, 
 
 Si $T\sim\mathcal N(m,\sigma^2)$ et $\Phi$ désigne la fonction de répartition normale centrée réduite, $P(T>30)=1-\Phi((30-m)/\sigma)\simeq0{,}84$.
 
+Avec $m\simeq49{,}67$ et $\sigma\simeq19{,}91$, le seuil centré réduit est proche de $-0{,}988$. L’estimation de $P(T>30)$ correspond à la case proche de $0{,}99$ par symétrie. Le seuil de 30 minutes coupe la classe $[20,40[$ : le tableau seul ne fournit donc pas le nombre exact de durées supérieures à 30.
+
 ### Question 2.4.c.ii
 
 > [!INDICATION]
@@ -450,11 +461,13 @@ $P(B_1\cap B_2)=[1+9/49]/3=58/147=174/441$. Or $P(B_1)P(B_2)=100/441$. Les deux 
 ### Question 3.III.8
 
 > [!INDICATION]
-> Écrire le quotient des probabilités de deux intersections emboîtées.
+> Calculer après une première blanche les probabilités des deux urnes encore possibles. Étendre ce calcul à une série de blanches et utiliser les probabilités conditionnelles dans chaque urne.
 
 #### Solution
 
 Comme $A_k=A_{k-1}\cap B_k$ et $P(A_{k-1})>0$, pour $k\ge2$ on a $P(B_k\mid A_{k-1})=P(A_k)/P(A_{k-1})=[1+(3/7)^k]/[1+(3/7)^{k-1}]$.
+
+On peut vérifier le sens du résultat en actualisant le choix de l’urne. Après $k-1$ blanches, l’urne toute noire est exclue, et la probabilité de l’urne toute blanche vaut $1/[1+(3/7)^{k-1}]$. Les deux probabilités restantes de tirer blanc sont $1$ et $3/7$ selon l’urne. Leur moyenne pondérée redonne le quotient ci-dessus, qui tend vers 1 quand $k$ augmente.
 
 ### Question 3.IV.1
 

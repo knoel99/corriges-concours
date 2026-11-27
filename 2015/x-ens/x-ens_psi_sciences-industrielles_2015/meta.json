@@ -15,7 +15,8 @@
     "fac_simile_avec_reponses": "https://www.upsti.fr/fichiers/corrige/fichiers/5996b545-3729-4b94-815e-3c95183380dd/XENS-PSI-2015-Telescope2Satellites-Sujet.pdf",
     "document_reponse": "https://sciencesindustrielles.com/Annales/2015%20PSI%20SI%20XENS%20DR.pdf",
     "sujet_sha256": "529af2d2d10d820c08ce1adca758139267247621bb8fe7872437b81251bbc09c",
-    "rapport_sha256": "82eba409031fc9bd85a2b8b908829041706c8b387d8d842ad6e70525a23f85c8"
+    "rapport_sha256": "82eba409031fc9bd85a2b8b908829041706c8b387d8d842ad6e70525a23f85c8",
+    "document_reponse_sha256": "63492ddbe32413a3b002458113bb36ace639263c26f8aac149f31726826f5bc9"
   },
   "figures": [
     {
@@ -60,6 +61,78 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Rédaction originale des 48 questions confrontée au fac-similé, aux trois feuilles-réponses et au rapport du jury 2015. Vérification des bilans, des signes et des gains du DR 2, des deux trajectoires par numérisation des courbes et de la garde inaccessible en double défaut dans la figure 28. Six figures originales."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture du sujet et du rapport signé pour la session 2015, des deux éditions et des trois documents-réponses. Vérification des branches du bras, des bilans de force, des deux arbres par élimination algébrique et des signes de DR1–DR2. Contrôle des gardes de la figure 28 et de la branche inaccessible en double défaut, de l’impulsion du modèle orbital et des distances au segment de DR3. Six figures de corrigé vérifiées."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "II.8",
+      "II.9",
+      "II.10",
+      "II.11",
+      "II.12",
+      "II.13",
+      "II.14",
+      "II.15",
+      "II.16",
+      "II.17",
+      "II.18",
+      "II.19",
+      "II.20",
+      "II.21",
+      "II.22",
+      "II.23",
+      "II.24",
+      "II.25",
+      "II.26",
+      "II.27",
+      "II.28",
+      "II.29",
+      "II.30",
+      "II.31",
+      "II.32",
+      "II.33",
+      "II.34",
+      "II.35",
+      "II.36",
+      "II.37",
+      "IV.1",
+      "IV.2",
+      "IV.3",
+      "IV.4",
+      "IV.5",
+      "IV.6",
+      "IV.7",
+      "V.1",
+      "V.2",
+      "V.3",
+      "V.4"
+    ],
+    "precision": "Les 48 questions comprises dans les parties II, IV et V ont été contrôlées. Les parties I et III ne contiennent aucune question. DR1–DR3 figurent aux pages PDF 30–32 du sujet, ainsi que dans le jeu séparé de trois feuilles.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "529af2d2d10d820c08ce1adca758139267247621bb8fe7872437b81251bbc09c",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Relecture du sujet et du rapport signé pour la session 2015, des deux éditions et des trois documents-réponses. Vérification des branches du bras, des bilans de force, des deux arbres par élimination algébrique et des signes de DR1–DR2. Contrôle des gardes de la figure 28 et de la branche inaccessible en double défaut, de l’impulsion du modèle orbital et des distances au segment de DR3. Six figures de corrigé vérifiées.",
+      "commit_redaction_anterieure": "531fbfb2b0aafda4a3382a053531bba12bd783ea"
+    }
+  }
 }

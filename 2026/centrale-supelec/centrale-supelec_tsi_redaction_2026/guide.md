@@ -8,6 +8,28 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+## Sujet et consignes
+
+R132 · Rédaction · TSI, session 2026. Quatre heures, calculatrice et systèmes électroniques ou informatiques interdits. Le feuillet exige de rédiger une ligne sur deux et de placer le résumé avant la dissertation. Les deux exercices sont obligatoires et notés à parité.
+
+Sonia Feertchak, « Cultiver l’espoir », Philosophie Magazine, hors-série n° 65, printemps-été 2025, p. 108–110. Le passage court sur les deux pages du sujet.
+
+Résumer en 150 mots le texte suivant. Un écart de 10 % en plus ou en moins sera accepté. Indiquer par une barre nette chaque cinquantaine de mots, puis, à la fin du résumé, le total exact.
+
+Le résumé doit compter de 135 à 165 mots. La dissertation confronte les trois œuvres avec précision, en deux ou trois parties, dans la limite de 1 800 mots.
+
+Selon Sonia Feertchak, dans un jardin on découvre que « tout fait sens, l’harmonie se donne à voir, rien de vivant n’est insignifiant. »
+
+Dans quelle mesure les trois œuvres au programme permettent-elles de commenter cette formule ?
+
+La rubrique officielle des rapports TSI consultée le 26 novembre 2026 s’arrête à la session 2025. Les consignes ci-dessus proviennent du feuillet de 2026.
+
+Le thème est « Expériences de la nature ». Le programme réunit Vingt mille lieues sous les mers, Le Mur invisible et, dans La Connaissance de la vie, « La pensée et le vivant », la partie I, « Méthode », et les chapitres II à V de la partie III, « Philosophie ».
+
 ## Présentation du sujet
 
 **Cadre.** 4 heures, sans calculatrice ni appareil électronique. Deux exercices obligatoires, **notés à parité** et formant « un ensemble indissociable » : un résumé (partie A), puis une dissertation (partie B), à présenter dans cet ordre en écrivant une ligne sur deux. La présentation, l'orthographe et la netteté de l'expression entrent dans la note.
@@ -44,7 +66,7 @@ Convention de décompte suivie dans ce corrigé : une espace, un trait d'union o
 
 ## Partie A — Résumé de texte
 
-Le résumé reformule le texte dans l'ordre de son raisonnement, en un dixième environ de sa longueur, sans « je », sans « l'auteure dit que » et sans jugement personnel. Trois étapes : dégager le mouvement, choisir quoi garder, rédiger et compter.
+Le résumé reformule le texte dans l'ordre de son raisonnement, en un dixième environ de sa longueur, en respectant la voix de Feertchak et la place de son expérience personnelle. Trois étapes : dégager le mouvement, choisir quoi garder, rédiger et compter.
 
 ### Étape A.1 — Dégager le mouvement du texte
 
@@ -77,11 +99,11 @@ La **conclusion** généralise : jardiner, c'est agir humblement, car on ne s'op
 
 #### Solution
 
-- **On abandonne** les anecdotes et les énumérations (lombrics, ail et pucerons, mouron, cloportes, pissenlits, clématite, chèvrefeuille, figuier, mahonia et cassissier, perruche à collier) ; elles deviennent « chaque être œuvre », « les espèces se soutiennent », « l'imprévu, souvent heureux ».
+- **On abandonne** les anecdotes et les énumérations (lombrics, ail et pucerons, mouron, cloportes, pissenlits, clématite, chèvrefeuille, figuier, mahonia et cassissier, perruche à collier) ; le résumé garde le rôle des partenaires, le soutien entre espèces et la surprise.
 - **On garde** les articulations logiques : « malgré », « parce que », « plus… plus », « mais », « donc », « car ».
-- **On garde les deux références**, réduites à leur fonction : Serres porte l'idée de **réciprocité** (symbiose), Descartes celle de l'**admiration** devant l'imprévu. Un adjectif suffit pour la seconde (« l'admiration cartésienne »).
+- **On garde les deux références**, réduites à leur fonction : Serres porte l'idée de **réciprocité** (symbiose), Descartes celle de l'**admiration** devant l'imprévu. Le résumé restitue les idées de réciprocité et de surprise attentive, qui donnent ici leur fonction aux deux références.
 - **On garde la nuance** sur la résilience (le débat sur l'identité d'un écosystème qui change d'espèces) : la supprimer ferait passer pour un dogme une thèse que l'auteure discute elle-même.
-- **On reformule** au lieu de recopier : « mal-de-vivre » peut devenir « mal de vivre », mais « morosité, angoisse, colère, abattement » se résume en un seul terme.
+- **On reformule** au lieu de recopier : la mention des inquiétudes réunit les affects énumérés au début.
 
 > [!PIEGE]
 > « Résilience » a ici un sens écologique : la capacité d'un écosystème à absorber une perturbation. Le remplacer par « solidité », ou le prendre au sens psychologique, trahit l'argument. De même, la symbiose de Serres n'est pas une simple coexistence : c'est un échange réciproque.
@@ -101,17 +123,19 @@ La **conclusion** généralise : jardiner, c'est agir humblement, car on ne s'op
 
 Résumé proposé (une barre après le 50e et le 100e mot, et à la fin) :
 
-Cultiver un jardin soulage, malgré ses peines physiques : le jardinage guérit du mal de vivre. Pourquoi ? Parce que le jardinier y recouvre la puissance, ou du moins foi en la vie. Chaque être œuvre et tout est lié : aucun vivant n'est vain. Si l'on tient chacun pour un **|** sujet, selon la symbiose réciproque de Serres, un équilibre s'installe malgré la prédation. Plus un jardin est divers, plus il résiste, ses espèces se soutenant face aux perturbations. Qu'il reste le même quand ses espèces changent se discute, mais la diversité fonde la résilience, et ce qui semblait **|** mort revit. Surgit aussi l'imprévu, souvent heureux : il suscite l'admiration cartésienne puis oblige à s'adapter. Jardiner, c'est donc agir humblement, car nul ne lutte longtemps contre la nature. Loin des idéologies, on affronte le réel : la vie jaillit, avec et sans nous, et ce surgissement console. **|**
+Cultiver malgré la fatigue et les blessures me console. Au jardin, parfois je me sens puissante ou je reprends confiance dans la vigueur de la vie. Du sol aux feuillages, chaque être contribue aux conditions de vie des autres. Accueillir ces partenaires appelle une réciprocité qui laisse place aux prédateurs. **|** Des espèces diversement sensibles aux accidents du climat se prêtent appui. Le jardin peut reprendre vie après une épreuve, même si les plantes présentes ont changé. Reste ouverte la question de savoir en quel sens il demeure le même. Parfois une pousse que je croyais perdue manifeste une vigueur inattendue. **|** Ce qui surgit sans prévenir peut décevoir, mais le plus souvent me réjouit. La surprise me rend attentive avant de juger, puis demande une réponse. Je choisis et je plante, pourtant mes projets doivent composer avec les forces présentes. Cette vie qui se forme avec nous et nous dépasse console. **|**
 
-**Total : 150 mots.**
+**150 mots.**
 
-Le décompte suit la convention annoncée (élisions comptées) ; sans séparer les élisions, on trouverait 142 mots, toujours dans la tolérance. Le premier jet faisait 159 mots : on est revenu à 150 en resserrant les formules (« foi en la vie » plutôt que « la foi dans la force de la vie », « chacun » plutôt que « chaque vivant », « selon » plutôt que « comme le veut ») et en supprimant un adverbe, sans toucher aux articulations.
+![Le retour des pousses en février et la diversité qui amortit une perturbation éclairent deux questions distinctes.](figures/le-jardin-revient.svg)
+
+Les trois barres suivent respectivement « prédateurs », « inattendue » et « console ». Chaque segment contient cinquante mots. Le résumé évite les élisions et les mots composés, ce qui permet de reproduire le décompte par deux lectures indépendantes.
 
 > [!METHODE]
 > Recomptez **après** la recopie au propre : c'est là qu'un mot s'ajoute ou disparaît par inadvertance. Un total déclaré faux est sanctionné même si le volume est dans la tolérance.
 
 > [!PIEGE]
-> Ne réutilisez pas mot pour mot la formule que la dissertation va citer : le résumé reformule. Ici, « aucun vivant n'est vain » rend l'idée sans recopier la phrase de l'auteure.
+> Ne réutilisez pas mot pour mot la formule que la dissertation va citer : le résumé reformule. Ici, le rôle des partenaires du jardin concrétise cette idée dans le premier segment.
 
 ## Partie B — Dissertation
 
@@ -194,6 +218,8 @@ L'introduction est le premier paragraphe du devoir rédigé ci-dessous (étape B
 
 ### Étape B.5 — Rédiger le développement et la conclusion
 
+Pour chaque proposition sur la corneille, indiquez qui peut l’établir. Une conduite observée par la narratrice, une hypothèse sur l’expérience de l’oiseau et un rapprochement formé par le lecteur demandent des justifications différentes.
+
 > [!INDICATION]
 > Dans chaque partie, faites se répondre les trois œuvres à l'intérieur du même mouvement d'idées, avec une transition qui reprend le terme de la formule mis en question.
 
@@ -209,11 +235,11 @@ Devoir complet :
 
 Le jardin est un morceau de nature enclos, assez petit pour qu'un regard en fasse le tour, assez vivant pour qu'il s'y passe toujours quelque chose. C'est de ce lieu que Sonia Feertchak tire une évidence : on y découvre que « tout fait sens, l'harmonie se donne à voir, rien de vivant n'est insignifiant ». Trois affirmations s'y superposent. La première est intellectuelle : la nature est intelligible, chaque être y tient une place et une fonction. La deuxième est sensible : cet ordre n'a pas à être démontré, il s'offre de lui-même au regard. La troisième est morale : aucun vivant n'est négligeable. Or les trois œuvres au programme mettent précisément à l'épreuve l'expérience de la nature : un savant embarqué derrière la vitre du salon du Nautilus dans *Vingt mille lieues sous les mers* de Jules Verne, un philosophe qui interroge dans *La Connaissance de la vie* les conditions auxquelles le vivant peut être connu, une femme enfermée avec quelques bêtes au fond d'une vallée autrichienne dans *Le Mur invisible* de Marlen Haushofer. L'expérience de la nature livre-t-elle un ordre déjà là, que le regard n'aurait qu'à recueillir, ou le sens et la valeur qu'on lui prête sont-ils institués par le vivant qui regarde, au prix d'une violence que la formule passe sous silence ? Les trois œuvres donnent d'abord raison à Feertchak ; elles récusent ensuite l'idée d'une harmonie simplement donnée ; il apparaît alors que la troisième proposition seule résiste, à condition de l'entendre comme une exigence du regard plutôt que comme un constat.
 
-L'expérience de la nature commence bien par une révélation d'ordre. Le roman de Verne est bâti sur ce dispositif : le grand panneau vitré du salon fait de l'océan un spectacle continu, et Aronnax, professeur au Muséum, y reconnaît, nomme et classe. Conseil, son domestique, décline embranchements, classes, ordres, genres et espèces ; le « monstre » insaisissable des premiers chapitres, que son maître prenait pour un narval gigantesque, se résout lui-même en machine identifiable. La mer apparaît surtout comme un système où rien ne se perd. Nemo s'habille du byssus des pinnes marines, fume une algue riche en nicotine, ne se nourrit que de ce que l'océan produit ; au « royaume du corail », ce sont les polypes qui scellent la tombe du matelot mort, la nature achevant le travail des hommes. Tout, jusqu'au cadavre, entre dans un cycle : l'ordre est intelligible parce qu'il est intégral.
+L'expérience de la nature commence bien par une révélation d'ordre. Le roman de Verne est bâti sur ce dispositif : le grand panneau vitré du salon fait de l'océan un spectacle continu, et Aronnax, professeur au Muséum, y reconnaît, nomme et classe. Conseil, son domestique, décline embranchements, classes, ordres, genres et espèces ; le « monstre » insaisissable des premiers chapitres, que son maître prenait pour un narval gigantesque, se résout lui-même en machine identifiable. La mer apparaît surtout comme un système où rien ne se perd. Nemo s'habille du byssus de certains coquillages, fume une algue riche en nicotine, ne se nourrit que de ce que l'océan produit ; au « royaume du corail », ce sont les polypes qui scellent la tombe du matelot mort, la nature achevant le travail des hommes. Tout, jusqu'au cadavre, entre dans un cycle : l'ordre est intelligible parce qu'il est intégral.
 
-Canguilhem donne à cette intuition son fondement philosophique. Dans « Le vivant et son milieu », il rappelle, après Uexküll, qu'un vivant n'habite pas l'univers indifférent de la physique mais un milieu propre, où les excitations valent comme des signaux : pour l'animal, rien n'est neutre, tout lui est adressé. Dans « Le normal et le pathologique », il montre que la vie n'est pas indifférente à ses conditions : le vivant est normatif, il préfère certains états à d'autres et institue ses propres normes. Là où Feertchak écrit que rien de vivant n'est insignifiant, Canguilhem permet de préciser que rien n'est insignifiant pour un vivant, puisque vivre c'est déjà valoriser.
+Dans « Le vivant et son milieu », Canguilhem reprend à Uexküll l’idée de milieu propre. Un animal répond à quelques caractères qui valent pour lui comme des signaux. Beaucoup de phénomènes qui se déroulent au même endroit ne suscitent aucune conduite de sa part. Chez Feertchak, le jardinier aussi découvre des relations en apprenant ce qui compte pour des vivants différents. De là ne suit pourtant pas que chaque chose adresse un message à chaque être. On comprend que le retrait d’un abri puisse être décisif pour une espèce en demeurant inaperçu du promeneur. L’ordre rendu visible dépend déjà de la vie que l’on observe.
 
-Haushofer fait de cette découverte la matière même de son récit. La narratrice du *Mur invisible* est une citadine sans expérience de la campagne ; l'enfermement la contraint à voir. Elle apprend les saisons, la fenaison, la culture des pommes de terre, l'estivage à l'alpage avec la vache Bella ; elle nomme, soigne et protège le chien Lynx, la vieille chatte, le veau, et pleure les chatons perdus. Peu à peu, elle cesse de se penser au centre et se découvre une créature parmi les autres. Le jardin de Feertchak, la vallée de Haushofer et le salon du Nautilus sont ainsi trois enclos qui rendent l'attention possible, et où l'ordre du vivant commence à se laisser lire.
+Haushofer fait de cette découverte la matière même de son récit. La narratrice du *Mur invisible* est une citadine privée des ressources de sa vie habituelle ; l'enfermement la contraint à voir. Elle apprend les saisons, la fenaison, la culture des pommes de terre, l'estivage à l'alpage avec la vache Bella ; elle nomme, soigne et protège le chien Lynx, la vieille chatte, le veau, et pleure les chatons perdus. Peu à peu, elle cesse de se penser au centre et se découvre une créature parmi les autres. Le jardin de Feertchak, la vallée de Haushofer et le salon du Nautilus sont ainsi trois enclos qui rendent l'attention possible, et où l'ordre du vivant commence à se laisser lire.
 
 Mais la formule dit davantage : l'harmonie « se donne à voir », comme si l'ordre s'offrait indépendamment de l'œil qui le reçoit. C'est là que les œuvres résistent. Verne dispose devant la même vitre trois regards incompatibles : Conseil classe sans s'émouvoir, Ned Land juge les poissons à leur qualité comestible, Aronnax s'émerveille en savant. Le spectacle est un ; le sens qu'on y lit dépend de celui qui regarde. Canguilhem l'établit en droit : le milieu propre d'un animal, l'environnement géographique et l'univers de la science ne coïncident pas, et le décentrement scientifique ruine l'évidence d'une harmonie visible. Une harmonie « à hauteur de jardinier » reste une harmonie pour le jardinier. « L'expérimentation en biologie animale » ajoute une objection décisive : on ne connaît le vivant qu'en intervenant sur lui, en l'isolant, en le séparant de la totalité qu'il forme, c'est-à-dire en altérant ce que l'on prétend observer. La contemplation pure est un mythe : il n'y a pas de spectacle du vivant sans dispositif, et le hublot du Nautilus en est un.
 
@@ -221,9 +247,9 @@ Surtout, cet ordre a un prix, que les deux romans font payer. Nemo refuse que Ne
 
 Reste la troisième proposition, et c'est elle que les œuvres valident, mais en la déplaçant. Canguilhem lui donne un fondement dans « La monstruosité et le monstrueux » : la monstruosité, non la mort, est la contre-valeur vitale, car elle révèle que la forme normale était une réussite et non une nécessité ; et si le fantastique est un monde, la vie, elle, est pauvre en monstres. « Machine et organisme » complète l'analyse : la machine exécute un plan qui lui vient du dehors, tandis que l'organisme, polyvalent, improvise et répare. Il n'y a donc de réussite et d'échec, de normal et de monstrueux, que pour le vivant. La formule de Feertchak ne décrit pas un fait de la nature : elle énonce une propriété du vivant comme tel, être de valeur qui ne peut être compté pour rien sans que l'on manque ce qu'il est.
 
-Haushofer en donne l'image la plus juste avec la corneille blanche. Rejetée par les siennes, sans fonction dans aucune économie naturelle, elle ne sert à rien ; la narratrice la nourrit pourtant chaque jour. L'oiseau n'est pas significatif en soi : l'attention le rend tel. De même, la fin du récit, où un inconnu tue à coups de hache le taureau puis Lynx avant d'être abattu par la narratrice, est insoutenable parce que ces vies-là n'étaient pas interchangeables ; c'est le lien tissé, non l'ordre du monde, qui interdit de les tenir pour rien. Le récit lui-même, écrit pour personne, est l'acte par lequel elle arrache à l'oubli ce que nul ne viendra compter.
+Haushofer en donne l'image la plus juste avec la corneille blanche. La narratrice observe qu’elle reste à l’écart des autres corneilles et lui laisse de la nourriture. Elle peut décrire cet isolement sans prétendre connaître la fonction de l’oiseau dans tout son milieu. L'oiseau n'est pas significatif en soi : l'attention le rend tel. De même, la fin du récit, où un inconnu tue à coups de hache le taureau puis Lynx avant d'être abattu par la narratrice, est insoutenable parce que ces vies-là n'étaient pas interchangeables ; c'est le lien tissé, non l'ordre du monde, qui interdit de les tenir pour rien. Le récit lui-même, écrit pour personne, est l'acte par lequel elle arrache à l'oubli ce que nul ne viendra compter.
 
-La corneille blanche permet de rendre toute sa rigueur au « rien de vivant n’est insignifiant » de Feertchak. Le plumage qui attire l’attention de la narratrice expose l’oiseau dans le groupe de ses semblables. Pour le lecteur, cette singularité donne au récit une figure de la solitude ; pour l’oiseau, elle affecte une possibilité de vivre avec les siens. Aucun point de vue unique ne transforme ces deux sens en harmonie. Il revient à la narratrice de reconnaître une vie qui compte aussi lorsqu’elle trouble l’ordre qu’on aurait voulu célébrer.
+Un détail de l’épisode empêche de transformer la solitude de l’oiseau en symbole tout fait. La nourriture laissée par la narratrice répond à un besoin de cet individu déterminé. Un geste peut ainsi reconnaître la valeur d’une vie sans promettre sa réintégration au groupe. Le dernier membre de la formule de Feertchak acquiert une portée que les deux premiers ne garantissent pas.
 
 ![La corneille blanche de Haushofer](figures/lecture-du-sujet.svg)
 
@@ -231,7 +257,7 @@ Verne opère le même déplacement. Quand Nemo affirme que la mer est l'immense 
 
 Des trois affirmations, la première n'est donc vraie qu'en partie : la nature fait sens pour un vivant, non en soi. La deuxième ne résiste pas : l'harmonie ne se donne pas, elle se conquiert par un dispositif, une attention, et parfois une violence assumée. La troisième est vraie, mais comme exigence et non comme description. L'expérience de la nature n'est pas le spectacle d'un ordre ; elle est le travail par lequel un vivant en reconnaît d'autres et se découvre situé parmi eux. Le jardinier de Feertchak, le professeur Aronnax et la femme du *Mur invisible* font, chacun à son échelle, cette même expérience, à ceci près que le jardinier peut refermer la barrière derrière lui.
 
-**Total : environ 1 700 mots** (élisions comptées), sous le plafond de 1800.
+**Longueur de la dissertation** · 1676 mots, titre, figure et légende exclus. Ce décompte sépare les élisions et les mots composés et écarte le t de liaison.
 
 > [!METHODE]
 > Chaque partie s'ouvre sur une phrase qui reprend un terme de la citation (« révélation d'ordre », « se donne à voir », « troisième proposition ») : le correcteur suit ainsi le fil de la réponse sans annonce lourde.
@@ -249,3 +275,7 @@ Des trois affirmations, la première n'est donc vraie qu'en partie : la nature f
 - **Plan.** Le mouvement « confirmer, contester, déplacer » répond bien à « dans quelle mesure » et évite le plan qui calque la citation.
 - **Prérequis sur les œuvres.** Verne : le salon vitré, les classifications, le royaume du corail, baleines et cachalots, l'Atlantide, le Maelström. Canguilhem : milieu propre (Uexküll), normativité du vivant, conditions de l'expérimentation, machine et organisme, monstruosité comme contre-valeur vitale. Haushofer : l'apprentissage de la vallée, les bêtes nommées, la chasse, le mur inexpliqué, la corneille blanche, le dénouement.
 - **Transposable.** Toute formule qui affirme un ordre « donné » de la nature (harmonie, équilibre, sens) se discute avec les mêmes leviers : qui regarde, avec quel dispositif, et au prix de quelle violence.
+
+## Sources
+
+[Sujet officiel](https://www.concours-centrale-supelec.fr/sites/default/files/documents/R132.pdf) · [Annales de la session](https://www.concours-centrale-supelec.fr/sujets-rapports) · [Programme 2025–2026](https://www.enseignementsup-recherche.gouv.fr/fr/bo/2025/Hebdo23/MENS2514209A) · [Texte de Verne](https://fr.wikisource.org/wiki/Vingt_mille_lieues_sous_les_mers/Texte_entier)

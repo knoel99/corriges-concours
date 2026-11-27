@@ -1,0 +1,225 @@
+{
+  "slug": "banque-pt_pt_maths-c_2005",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths C",
+    "annee": 2005
+  },
+  "questions": 32,
+  "redaction": "Corrigés non officiels rédigés et vérifiés par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/IMG/pdf/math_c_2005.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2005/rapport_math_c_ecrit_2005.pdf",
+    "index_sujets": "https://www.banquept.fr/article51.html",
+    "index_rapports": "https://www.banquept.fr/article55.html",
+    "livret": "https://www.banquept.fr/documents/livret/2005/Livret_Rose_2005_1_2.pdf#page=12",
+    "sha256_sujet": "aad44b5fee12e16b6f479a003b1dde27a05effea269f0bb9e676631a9fb8eec7",
+    "pages_sujet": 4,
+    "sha256_rapport_jury": "fb9eb58830cc20c11bda5ea2bdb192d9b519c49f9f647d03cfcc94fa41284f0c",
+    "pages_rapport_jury": 2,
+    "sha256_livret": "6cd807006fd8f343e68c410bc382b6f648b5d46fb18d2140680176d4eb4efc8b",
+    "pages_livret": 20,
+    "coefficients_admissibilite": {
+      "École polytechnique": 6,
+      "ENS Cachan": 3
+    }
+  },
+  "figures": [
+    {
+      "question": "II.1.b",
+      "fichier": "figures/paraboles.svg",
+      "legende": "Deux arcs de parabole se rejoignent au point anguleux d’abscisse zéro."
+    },
+    {
+      "question": "II.2.g",
+      "fichier": "figures/sommes.svg",
+      "legende": "Sommes partielles de Fourier du polynôme périodisé de degré deux."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "P.1",
+      "P.2",
+      "I.1.a",
+      "I.1.b",
+      "I.1.c",
+      "I.2.a",
+      "I.2.b",
+      "I.2.c",
+      "I.2.d",
+      "I.3.a",
+      "I.3.b",
+      "I.4.a",
+      "I.4.b",
+      "I.4.c",
+      "I.4.d",
+      "I.5",
+      "I.6",
+      "I.7.a",
+      "I.7.b",
+      "I.7.c",
+      "II.1.a",
+      "II.1.b",
+      "II.2.a",
+      "II.2.b",
+      "II.2.c",
+      "II.2.d",
+      "II.2.e",
+      "II.2.f",
+      "II.2.g",
+      "II.3.a",
+      "II.3.b",
+      "II.3.c"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": "P.1",
+        "page_sujet": 2
+      },
+      {
+        "question": "P.2",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.1.a",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.1.b",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.1.c",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.2.a",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.2.b",
+        "page_sujet": 3
+      },
+      {
+        "question": "I.2.c",
+        "page_sujet": 3
+      },
+      {
+        "question": "I.2.d",
+        "page_sujet": 3
+      },
+      {
+        "question": "I.3.a",
+        "page_sujet": 3
+      },
+      {
+        "question": "I.3.b",
+        "page_sujet": 3
+      },
+      {
+        "question": "I.4.a",
+        "page_sujet": 3
+      },
+      {
+        "question": "I.4.b",
+        "page_sujet": 3
+      },
+      {
+        "question": "I.4.c",
+        "page_sujet": 3
+      },
+      {
+        "question": "I.4.d",
+        "page_sujet": 3
+      },
+      {
+        "question": "I.5",
+        "page_sujet": 3
+      },
+      {
+        "question": "I.6",
+        "page_sujet": 3
+      },
+      {
+        "question": "I.7.a",
+        "page_sujet": 3
+      },
+      {
+        "question": "I.7.b",
+        "page_sujet": 3
+      },
+      {
+        "question": "I.7.c",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.1.a",
+        "page_sujet": 4
+      },
+      {
+        "question": "II.1.b",
+        "page_sujet": 4
+      },
+      {
+        "question": "II.2.a",
+        "page_sujet": 4
+      },
+      {
+        "question": "II.2.b",
+        "page_sujet": 4
+      },
+      {
+        "question": "II.2.c",
+        "page_sujet": 4
+      },
+      {
+        "question": "II.2.d",
+        "page_sujet": 4
+      },
+      {
+        "question": "II.2.e",
+        "page_sujet": 4
+      },
+      {
+        "question": "II.2.f",
+        "page_sujet": 4
+      },
+      {
+        "question": "II.2.g",
+        "page_sujet": 4
+      },
+      {
+        "question": "II.3.a",
+        "page_sujet": 4
+      },
+      {
+        "question": "II.3.b",
+        "page_sujet": 4
+      },
+      {
+        "question": "II.3.c",
+        "page_sujet": 4
+      }
+    ],
+    "precision": "Préambule, parties I et II et graphique demandé, pages 1 à 4. Dans le préambule, le degré du reste est au plus n en toute généralité. Les deux facteurs sont multipliés sur leur disque commun de convergence."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modifications": true,
+      "perimetre": "Recalcul des coefficients des séries, des formules de récurrence et de Fourier ; lecture du sujet et du rapport, réalisation des figures, vérification symbolique et numérique."
+    }
+  ]
+}

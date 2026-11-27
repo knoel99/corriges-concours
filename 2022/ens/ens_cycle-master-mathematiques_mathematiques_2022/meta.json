@@ -1,0 +1,331 @@
+{
+  "slug": "ens_cycle-master-mathematiques_mathematiques_2022",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "Cycle master mathématiques",
+    "matiere": "Mathématiques",
+    "annee": 2022,
+    "modalite": "écrit d’admissibilité"
+  },
+  "duree_heures": 5,
+  "questions": 24,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2022_Sujet_Ecrit_2A_Maths_Maths.pdf",
+    "sujet_sha256": "4e7e7083605631a450fed26877795a7bf66be156e4e7e26944be8402222fe7f6",
+    "reglement": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/Reglements/2022_Modalites_d_inscription_CCM.pdf",
+    "reglement_sha256": "2e60172ead48e5a0413f5cf835957829dbcdcba7737e440f56de9cb34792987c",
+    "reglement_page": 2,
+    "annales_ens_rennes": "https://math.ens-rennes.fr/admission/integrer-le-departement/concours-cycle-master",
+    "sujet_departement_rennes": "https://math.ens-rennes.fr/medias/fichier/c2a-2022-maths_1728501193850-pdf?ID_FICHE=134464&INLINE=FALSE",
+    "rapport_jury": "",
+    "composition": "Garde ENS Paris-Saclay, suivie de cinq pages intérieures. La page 4 du PDF porte uniquement le folio 3/5. Les questions A.1 à A.12 sont aux pages 2–3 ; les questions B.1 à B.12 aux pages 5–6."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2022_Sujet_Ecrit_2A_Maths_Maths.pdf",
+      "sha256": "4e7e7083605631a450fed26877795a7bf66be156e4e7e26944be8402222fe7f6",
+      "nombre_pages": 6,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "d4216112fa82c74a3d8bf00bbd9a3b88a310c42642a385f8a7eaa411efccaf0d"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "9dc777e08e5742deafaf34376390092ba1698d87b632e2233184be800ac2c8fc"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "7ba596d9911f9e9fea50e5cf8e10f85ff564faef9417630262a68f7cf72de4b9"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "d14dcf02abb3b731ff77cc4b8a21047bd0d6e06a12e3c45403f1f098acbac6d5"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "9761ffcca7d791b85c4bb1a26e2c4622efc6f4d8af3306f2f8acefa2c5c571c5"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "ea31999f457e85b26983154b7a1f121ea00d7f3c30603c778c4515382b17febb"
+        }
+      ]
+    },
+    "reglement": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/Reglements/2022_Modalites_d_inscription_CCM.pdf",
+      "sha256": "2e60172ead48e5a0413f5cf835957829dbcdcba7737e440f56de9cb34792987c",
+      "nombre_pages": 3,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "5a870e1716268ea8ee0224ec27bc61e064b7f4fae5c3dd01e2c06e91b0ded0e2"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "3c6c26c09b58e49808d47e39581ec8de872be1633974cd143d2bfb2fc6578a81"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "db638c8d886d54a481ecebc8043e2cfbb0939f097c321ac3258828815859bcc4"
+        }
+      ]
+    }
+  },
+  "date_revision": "2026-11-26",
+  "figures": [
+    {
+      "fichier": "figures/frobenius.svg",
+      "question": "A.12",
+      "legende": "Quatre points fixes dans le produit associé au quintique"
+    },
+    {
+      "fichier": "figures/flot.svg",
+      "question": "B.9",
+      "legende": "Relèvement du segment radial contracté dans une carte inverse"
+    }
+  ],
+  "contributions": [
+    {
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "session": "ens_ccm_maths_2022",
+      "phase": "redaction",
+      "perimetre": "Démonstrations des 24 questions et sous-questions, notamment les cas de caractéristique nulle et positive en A.4, les matrices du Frobenius et le contrôle de toutes les fibres en B.12."
+    },
+    {
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "session": "ens_ccm_maths_2022",
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "perimetre": "Relecture des six pages du feuillet, du folio 3/5 et du règlement. Vérification de l’index de Rennes, des colonnes et noyaux des matrices, des restes chinois, de la contraction et du prolongement du flot. Contrôle des figures, signets et PDF."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A.1",
+      "A.2",
+      "A.3",
+      "A.4",
+      "A.5",
+      "A.6",
+      "A.7",
+      "A.8",
+      "A.9",
+      "A.10",
+      "A.11",
+      "A.12",
+      "B.1",
+      "B.2",
+      "B.3",
+      "B.4",
+      "B.5",
+      "B.6",
+      "B.7",
+      "B.8",
+      "B.9",
+      "B.10",
+      "B.11",
+      "B.12"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "A.1",
+        "page_pdf": 2,
+        "sous_questions": [],
+        "traitement": "Idéaux et corps"
+      },
+      {
+        "question": "A.2",
+        "page_pdf": 2,
+        "sous_questions": [],
+        "traitement": "Polynômes irréductibles et idéaux maximaux"
+      },
+      {
+        "question": "A.3",
+        "page_pdf": 2,
+        "sous_questions": [],
+        "traitement": "Caractéristique positive"
+      },
+      {
+        "question": "A.4",
+        "page_pdf": 2,
+        "sous_questions": [],
+        "traitement": "Image du morphisme canonique et sous-corps premier"
+      },
+      {
+        "question": "A.5",
+        "page_pdf": 2,
+        "sous_questions": [],
+        "traitement": "Cardinal d’un corps fini"
+      },
+      {
+        "question": "A.6",
+        "page_pdf": 2,
+        "sous_questions": [
+          "a",
+          "b",
+          "c"
+        ],
+        "traitement": "Construire deux corps sur le corps à deux éléments"
+      },
+      {
+        "question": "A.7",
+        "page_pdf": 3,
+        "sous_questions": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "traitement": "Morphisme de Frobenius et éléments fixes"
+      },
+      {
+        "question": "A.8",
+        "page_pdf": 3,
+        "sous_questions": [
+          "a",
+          "b"
+        ],
+        "traitement": "Dérivation et facteurs multiples"
+      },
+      {
+        "question": "A.9",
+        "page_pdf": 3,
+        "sous_questions": [],
+        "traitement": "Décomposition par les restes"
+      },
+      {
+        "question": "A.10",
+        "page_pdf": 3,
+        "sous_questions": [],
+        "traitement": "Noyau et nombre de facteurs"
+      },
+      {
+        "question": "A.11",
+        "page_pdf": 3,
+        "sous_questions": [],
+        "traitement": "Le quartique par la matrice du Frobenius moins l’identité"
+      },
+      {
+        "question": "A.12",
+        "page_pdf": 3,
+        "sous_questions": [],
+        "traitement": "Le quintique par le même test"
+      },
+      {
+        "question": "B.1",
+        "page_pdf": 5,
+        "sous_questions": [],
+        "traitement": "Deux hypothèses indépendantes"
+      },
+      {
+        "question": "B.2",
+        "page_pdf": 5,
+        "sous_questions": [],
+        "traitement": "Caractériser les applications propres"
+      },
+      {
+        "question": "B.3",
+        "page_pdf": 5,
+        "sous_questions": [],
+        "traitement": "L’image est fermée"
+      },
+      {
+        "question": "B.4",
+        "page_pdf": 5,
+        "sous_questions": [],
+        "traitement": "L’image est ouverte"
+      },
+      {
+        "question": "B.5",
+        "page_pdf": 5,
+        "sous_questions": [],
+        "traitement": "Surjectivité"
+      },
+      {
+        "question": "B.6",
+        "page_pdf": 5,
+        "sous_questions": [
+          "a",
+          "b"
+        ],
+        "traitement": "Fibres finies"
+      },
+      {
+        "question": "B.7",
+        "page_pdf": 6,
+        "sous_questions": [],
+        "traitement": "Existence du flot maximal"
+      },
+      {
+        "question": "B.8",
+        "page_pdf": 6,
+        "sous_questions": [
+          "a",
+          "b"
+        ],
+        "traitement": "Contraction dans l’image et existence globale"
+      },
+      {
+        "question": "B.9",
+        "page_pdf": 6,
+        "sous_questions": [],
+        "traitement": "Attirer les trajectoires près d’un zéro"
+      },
+      {
+        "question": "B.10",
+        "page_pdf": 6,
+        "sous_questions": [
+          "a",
+          "b",
+          "c"
+        ],
+        "traitement": "Les bassins recouvrent tout l’espace"
+      },
+      {
+        "question": "B.11",
+        "page_pdf": 6,
+        "sous_questions": [
+          "a",
+          "b",
+          "c"
+        ],
+        "traitement": "Ouverture des bassins et unicité du zéro"
+      },
+      {
+        "question": "B.12",
+        "page_pdf": 6,
+        "sous_questions": [],
+        "traitement": "De la fibre de zéro à l’inversion globale"
+      }
+    ]
+  }
+}

@@ -5,7 +5,9 @@
     "filiere": "Séries A/L",
     "matiere": "Histoire des arts (oral 1)",
     "annee": 2026,
-    "type": "oral"
+    "type": "oral",
+    "modalite": "oral",
+    "serie": "Lettres et arts"
   },
   "questions": 2,
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
@@ -13,7 +15,9 @@
     "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-11/Arts%202026.pdf#page=14",
     "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Arts%20-%20Histoire%20des%20arts%202026.pdf#page=5",
     "sha256_sujet": "2a7f074fb3a471a12b3b5eca1afb7535f44fdcba7416cca4f561ee10babf394e",
-    "sha256_rapport": "65d22bc892cadb2c19a427274cbe4c582f3cf2588d3e63cc1b15e00ba51d7b01"
+    "sha256_rapport": "65d22bc892cadb2c19a427274cbe4c582f3cf2588d3e63cc1b15e00ba51d7b01",
+    "index_annales": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2026",
+    "sha256_index_annales": "6a0a379a1afac9e598e4af93a5024924922934cff723ae419a1eef2b97ac5ca3"
   },
   "figures": [
     {
@@ -38,6 +42,119 @@
       "perimetre": "Rédaction intégrale des deux propositions de l’oral 1, mise en relation des cinq documents, précision éditoriale sur Nadja, exemples d’exil, deux schémas originaux et préparation à l’entretien. Lecture directe du sujet pp. 14 et du rapport pp. 5–6, notices et reproductions institutionnelles.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "revision",
+      "agent": "x_hist_1986",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "fournisseur": "codex",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Vérification des cinq œuvres, des quatre bandes dans Nadja et des seize portraits de 1929. Analyse de deux opérations éditoriales et des enseignes du Jeu de Marseille."
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "format_epreuve": {
+    "preparation_minutes": 120,
+    "exercices_successifs": 2,
+    "expose_minutes_par_exercice": 20,
+    "entretien_minutes_par_exercice": 10,
+    "attribution": "Thème tiré au sort, deux exercices successifs."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2026-11/Arts%202026.pdf#page=14",
+      "sha256": "2a7f074fb3a471a12b3b5eca1afb7535f44fdcba7416cca4f561ee10babf394e",
+      "pages": 19,
+      "pages_verifiees": [
+        {
+          "numero": 14,
+          "rendu_sha256": "edca26bb1626694a6a416b00c852829b8a3e1dee56c52724986e0397386a7787"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2026-10/Arts%20-%20Histoire%20des%20arts%202026.pdf#page=5",
+      "sha256": "65d22bc892cadb2c19a427274cbe4c582f3cf2588d3e63cc1b15e00ba51d7b01",
+      "pages": 6,
+      "pages_verifiees": [
+        {
+          "numero": 5,
+          "rendu_sha256": "4ed9f446ad3d496aa78654cba20e5730be7f171d83c3497052d99c15c335f46f"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "6bb088b7f40fe115ed8156fc5eb76d9a7d2381fd1f9b44465654e823c2455c28"
+        }
+      ]
+    }
+  },
+  "corpus_verifie": [
+    {
+      "oeuvre": "Meret Oppenheim, Ma gouvernante",
+      "source": "https://www.modernamuseet.se/app/uploads/stockholm/2024/09/meret-oppenheim_min-guvernant_1936-1967-f-prallan-allsten-3.jpg",
+      "nature": "reproduction de collection",
+      "statut": "Reproduction de l’œuvre identifiée",
+      "sha256_piece_consultee": "85915598d82197b7bd3e67422dfe950f1fa9dd9a945d6d8c300bcc3f26cc4eba"
+    },
+    {
+      "oeuvre": "André Breton, Ses yeux de fougère",
+      "source": "https://journals.library.wustl.edu/cinematograph/article/8823/galley/25638/view/#page=6",
+      "nature": "publication contenant la reproduction",
+      "statut": "Reproduction de l’œuvre publiée et vérifiée",
+      "sha256_piece_consultee": "4a69b8d6fddbe9786d10934d4f909571d9af925b035cfe7f5cc6b71bab7041b8",
+      "page_pdf": 6
+    },
+    {
+      "oeuvre": "Dorothea Tanning, Birthday",
+      "source": "https://iiif.micr.io/tHcJd/full/1200,/0/default.jpg",
+      "nature": "aperçu de la reproduction institutionnelle ; SHA-256 de la vignette examinée",
+      "statut": "Reproduction de l’œuvre identifiée",
+      "sha256_piece_consultee": "26c950155c4d237011650590653fcead2a52ec2705826c9e0aa6007fc20a2b1d"
+    },
+    {
+      "oeuvre": "Dora Maar, 29, rue d’Astorg",
+      "source": "https://www.centrepompidou.fr/media/picture/19/18/1918c0a334ee92805fbd8e256b69347a/thumb_large.jpg",
+      "nature": "aperçu de la reproduction institutionnelle ; SHA-256 de la vignette examinée",
+      "statut": "Reproduction de l’œuvre identifiée",
+      "sha256_piece_consultee": "258d0cf2fbb32154f8ed69f7a1267385fa2ddfb168e6f00e39cbc7d09acc156c"
+    },
+    {
+      "oeuvre": "René Magritte et Man Ray, Je ne vois pas la [femme] cachée dans la forêt",
+      "source": "https://www.peren-revues.fr/demeter/?do=_pdfgen_get&document=2180&lang=fr#page=14",
+      "nature": "publication contenant la reproduction",
+      "statut": "Reproduction de l’œuvre publiée et vérifiée",
+      "sha256_piece_consultee": "fec017f630a0a39b51350a1f583eadd254f5ed7d367fb49906ea3ebe062d7b66",
+      "page_pdf": 14
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "reperes": [
+      {
+        "question": 1,
+        "titre": "Les femmes : muses, épouses, artistes",
+        "page_pdf": 14
+      },
+      {
+        "question": 2,
+        "titre": "L’exil dans le surréalisme",
+        "page_pdf": 14
+      }
+    ],
+    "reproductions_sur_le_fascicule": [],
+    "precision": "Les œuvres et les deux consignes sont identifiées dans le fascicule. Les exemplaires documentés par les collections et les publications permettent une analyse des cinq œuvres. Le cadrage, le format matériel et l’ordre des vues sur la planche distribuée aux candidats demeurent inconnus."
+  }
 }

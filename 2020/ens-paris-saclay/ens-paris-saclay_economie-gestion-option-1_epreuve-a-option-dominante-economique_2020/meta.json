@@ -1,0 +1,62 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_epreuve-a-option-dominante-economique_2020",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Épreuve à option — dominante économique",
+    "annee": 2020,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "Dans quelle mesure la construction européenne a-t-elle bénéficié aux pays européens au vingtième siècle ?",
+  "gabarit": "dissertation",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2020/2020_Sujet_1A_D2-1_Options.pdf#page=2",
+    "index": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=289&field_year_target_id%5B%5D=541",
+    "pages_sujet": "2",
+    "sujet_sha256": "64d3be714d7a5ba8125363fa6bcd816750a082b6ebf79f05811f4ba7dd6e0569",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2020/2020_Sujet_1A_D2-1_Options.pdf",
+        "pages": 12,
+        "sha256": "64d3be714d7a5ba8125363fa6bcd816750a082b6ebf79f05811f4ba7dd6e0569"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/comparaison.svg",
+      "question": "Dissertation",
+      "legende": "Pour une consommation inchangée, substituer le producteur partenaire au producteur national économise deux unités de ressources."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "inventaire_livraisons_26",
+      "agent": "inventaire_livraisons_26",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Dissertation bornée au XXe siècle. Étude de la création et du détournement de trafic, des élargissements et des contraintes d’intégration monétaire."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "limites": "La page 2 du cahier pose la dissertation sans tableaux ni annexes économiques. Le cas hôtelier des pages suivantes correspond à la dominante gestion. Aucun rapport de jury de cette dominante n’a été identifié dans les pièces consultées pour 2020. Les coûts du schéma sont des hypothèses pédagogiques."
+  }
+}

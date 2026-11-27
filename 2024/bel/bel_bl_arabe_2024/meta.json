@@ -1,0 +1,63 @@
+{
+  "slug": "bel_bl_arabe_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Arabe",
+    "intitule": "Analyse et commentaire de textes ou documents en arabe",
+    "annee": 2024,
+    "modalite": "écrit",
+    "duree": "6 heures"
+  },
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2024_blses_sujet_analyse_commentaire_arabe.pdf",
+    "sha256_sujet": "2980fcd421df24ab9127d5756358c1269824152ba0cb77c1e294260dbbef64e5",
+    "index_officiel": "https://www.ens.psl.eu/rapports-et-sujets-du-concours-2024-section-des-lettres-groupe-bl",
+    "rapport_jury_etat": "Le mot rapport figure sans hyperlien dans la rubrique Arabe / Écrit. Aucun rapport exact retrouvé."
+  },
+  "figures": [
+    {
+      "question": "Analyse et commentaire de textes ou documents en arabe",
+      "fichier": "figures/lecture.svg",
+      "legende": "ثلاث زوايا لقراءة الصورة الغنائية: نموذج أعمال، ونظرة إلى المرأة، ونزاع على التمثيل."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Analyse et commentaire de textes ou documents en arabe"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Commentaire arabe intégral des trois documents. Le sommaire du jury donne le sujet et le mot « rapport » sans lien. Aucun rapport écrit B/L arabe de 2024 identifié.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "passages_ou_documents": [
+        "محمود الفطافطة، دنيا الوطن، ٢٠١٧",
+        "مي المهدي، القدس العربي، ٢٠٠٧",
+        "خبر الجزيرة عن بنت مكة، ٢٠٢٠"
+      ],
+      "pages_pdf_par_passage_ou_document": {
+        "محمود الفطافطة، دنيا الوطن، ٢٠١٧": "1–2",
+        "مي المهدي، القدس العربي، ٢٠٠٧": "2–3",
+        "خبر الجزيرة عن بنت مكة، ٢٠٢٠": "3"
+      }
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "agent": "fui_physique_un",
+      "fournisseur": "codex",
+      "date": "2026-11-26",
+      "perimetre": "Commentaire arabe intégral des trois documents. Le sommaire du jury donne le sujet et le mot « rapport » sans lien. Aucun rapport écrit B/L arabe de 2024 identifié."
+    }
+  ]
+}

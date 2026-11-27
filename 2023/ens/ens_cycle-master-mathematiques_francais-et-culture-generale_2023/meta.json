@@ -5,7 +5,12 @@
     "filiere": "Cycle master mathématiques",
     "matiere": "Français et culture générale",
     "annee": 2023,
-    "modalite": "écrit"
+    "modalite": "écrit",
+    "etablissements_sur_garde": [
+      "École normale supérieure Paris Saclay",
+      "École normale supérieure Rennes"
+    ],
+    "repere_garde": "2A/CCM Mathématiques"
   },
   "intitule": "Français et culture générale",
   "questions": 2,
@@ -28,9 +33,15 @@
       "fichier": "figures/travail.svg",
       "question": "1",
       "legende": "Pourquoi les deux valorisations varient en sens inverse"
+    },
+    {
+      "fichier": "figures/juger-un-geste.svg",
+      "question": "2b",
+      "legende": "Comparer les motifs qui conduisent deux artisans à corriger le même défaut.",
+      "provenance": "Schéma original pour cette révision."
     }
   ],
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -55,6 +66,104 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Collation des questions et des deux barèmes avec le sujet institutionnel, lecture du rapport, recomptage séparé des mots et des unités typographiques, contrôle de la structure et des exemples dans les deux débats."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Collation du sujet numérisé de Rensi et du rapport classé à l’oral. Précision sur le samedi anglais et la direction causale de l’analyse. Distinction du contrôle extérieur et du jugement de l’artisan. Contrôle de chaque page et du décompte du résumé."
     }
-  ]
+  ],
+  "duree_heures": 3,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2023_sujet%202A%20Maths_Francais.pdf",
+      "sha256": "4347976f34e919c0b840cdd36e0c30656ff7ac227b1bfb67df971a31359597bf",
+      "pages": 4,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "951832b85de78561aee1fbcd0d79a2543c25fa835a8723504f74662fb69ca036"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "2852822d1209ebf10d073b4f77bb31298a425e0f3175c0b35564492a85cf419a"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "fb766c59a3f772937854d06ca895d10e9b1de082fa9abd41fb2e5098a7e99302"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "3864e068fc4a582e0a9890d479334de68beb4f189e42702f02c04f15d6ccdd27"
+        }
+      ],
+      "repères": "Texte p. 2–3 du PDF. Le résumé est demandé p. 3 et les deux développements au choix figurent p. 4."
+    },
+    "rapport": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2023_rapport_oral_Francais_2A%20Maths.pdf",
+      "sha256": "52a1a6f4ecf783f5438d82d251607c5548986a3a42571052a7860b9e1264249d",
+      "pages": 1,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "6e85e3cd7f2ac2493b5657fcfba7f33b5177fc2ea7cb718b875f19808a8f81f8"
+        }
+      ],
+      "rubriques": "Le site classe le rapport de 2023 à l’oral. Son unique page identifie le texte de Rensi et commente successivement le résumé et le développement écrit."
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2a",
+      "2b"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1",
+        "page_pdf": 3,
+        "consigne": "Résumer le texte en 250 mots (avec une marge de tolérance de + ou – 10%). Le nombre exact de mots utilisés sera indiqué en fin de résumé.",
+        "points": 10,
+        "cible_mots": 250,
+        "intervalle": [
+          225,
+          275
+        ],
+        "texte": "Giuseppe Rensi, Contre le travail, « La dévalorisation morale du travail crée la survalorisation économique », publié en italien en 1923, traduction de Marie-José Tramuta (2017).",
+        "pages_texte": [
+          2,
+          3
+        ]
+      },
+      {
+        "question": "2a",
+        "page_pdf": 4,
+        "consigne": "Sous forme d’un développement construit, commenter, au choix, l’une des deux réflexions suivantes de l’auteur :",
+        "citation": "Le travail peut-il réconcilier « point de vue moral » et « point de vue social » ?"
+      },
+      {
+        "question": "2b",
+        "page_pdf": 4,
+        "consigne": "Sous forme d’un développement construit, commenter, au choix, l’une des deux réflexions suivantes de l’auteur :",
+        "citation": "En quoi le travail « constitue-t-il l’exercice d’une vertu » ?"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "choix": "Un développement à choisir sur dix points. Les deux options sont intégralement rédigées.",
+    "annexes_imposees": []
+  }
 }

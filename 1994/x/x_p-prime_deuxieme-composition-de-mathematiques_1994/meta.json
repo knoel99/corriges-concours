@@ -1,0 +1,196 @@
+{
+  "slug": "x_p-prime_deuxieme-composition-de-mathematiques_1994",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "P prime",
+    "matiere": "Deuxième composition de mathématiques",
+    "annee": 1994
+  },
+  "questions": 18,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-c07bd83ef9730e83db92",
+    "sha256_sujet": "8de2f0c871f67e081348142107603692d670ab3990c698bbda21e5d1044fa842",
+    "rapport_jury": "",
+    "provenance": "Fac-similé UPS de deux pages (pages 101 et 102 du recueil). La seconde transcription place les questions 7 et 8 sur sa première page. À la question 13.a elle perd le signe moins devant la seconde valeur exclue. Le fac-similé fait foi.",
+    "notice_ups": "m94xp2",
+    "document_ups": "m94xp2eb",
+    "second_exemplaire": "https://www.sujetsetcorriges.fr/dl/X/Maths/PC/sec-x-1994-maths2-PC.pdf",
+    "sha256_second_exemplaire": "3d37a7327d64d2b764d0e473391b6faff9106c0b5f8d135ff3f1e22d759084df",
+    "pages_fac_simile": 2,
+    "instruction_concours": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000180352",
+    "sha256_instruction": "163e49a257b8c069e672c6524a1ea2129ef6ae2bedc09a57be890241eaccf3c6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/projection-ruban.svg",
+      "question": "3",
+      "legende": "Figure 1 — Projection horizontale du ruban, avec sa région balayée et le point commun aux deux frontières"
+    },
+    {
+      "fichier": "figures/ruban-mobius.svg",
+      "question": "8.b",
+      "legende": "Figure 2 — Ruban de Möbius, génératrices et normales opposées au retour sur le cercle central"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "lyon_ses_sources",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction et vérification des 18 questions et sous-questions des deux éditions. Calcul différentiel et projection du ruban, génératrices, normale sur le cercle central, connexité, longueur et multiplicité du paramétrage, inversion locale et point selle."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5.a",
+      "5.b",
+      "6",
+      "7",
+      "8.a",
+      "8.b",
+      "9",
+      "10.a",
+      "10.b",
+      "11",
+      "12",
+      "13.a",
+      "13.b",
+      "14"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1",
+        "page_pdf": 1,
+        "page_pdf_second": 1,
+        "perimetre": "Différencier aussi les vecteurs de la base mobile lorsqu’on dérive par rapport à $v$."
+      },
+      {
+        "question": "2",
+        "page_pdf": 1,
+        "page_pdf_second": 1,
+        "perimetre": "Le rayon étant positif, l’angle polaire donne déjà $2v$ modulo $2\\pi$."
+      },
+      {
+        "question": "3",
+        "page_pdf": 1,
+        "page_pdf_second": 1,
+        "perimetre": "À angle polaire fixé, faire varier tout le segment des rayons possibles."
+      },
+      {
+        "question": "4",
+        "page_pdf": 1,
+        "page_pdf_second": 1,
+        "perimetre": "Étudier séparément la hauteur sur le rectangle des paramètres et l’effet des bords identifiés."
+      },
+      {
+        "question": "5.a",
+        "page_pdf": 1,
+        "page_pdf_second": 1,
+        "perimetre": "Fixer $v=b$ et regarder $\\sin u$ comme le véritable paramètre du segment."
+      },
+      {
+        "question": "5.b",
+        "page_pdf": 1,
+        "page_pdf_second": 1,
+        "perimetre": "Le sinus parcourt une fois tout l’intervalle $[-1,1]$."
+      },
+      {
+        "question": "6",
+        "page_pdf": 1,
+        "page_pdf_second": 1,
+        "perimetre": "Les deux dérivées sont orthogonales. Au centre du ruban, prendre leur produit vectoriel dans la base mobile."
+      },
+      {
+        "question": "7",
+        "page_pdf": 2,
+        "page_pdf_second": 1,
+        "perimetre": "Le rayon et la cote redonnent la valeur absolue de $\\sin u$."
+      },
+      {
+        "question": "8.a",
+        "page_pdf": 2,
+        "page_pdf_second": 1,
+        "perimetre": "Suivre l’angle $2v$ pendant que $v$ varie de $-\\pi$ à $\\pi$."
+      },
+      {
+        "question": "8.b",
+        "page_pdf": 2,
+        "page_pdf_second": 1,
+        "perimetre": "Suivre une normale pendant un seul tour géométrique du cercle."
+      },
+      {
+        "question": "9",
+        "page_pdf": 2,
+        "page_pdf_second": 2,
+        "perimetre": "Si un plan contient deux points, il contient leur milieu. Prendre les paramètres $v$ et $v+\\pi$ à $a$ fixé."
+      },
+      {
+        "question": "10.a",
+        "page_pdf": 2,
+        "page_pdf_second": 2,
+        "perimetre": "Choisir pour chaque point extérieur au cercle un représentant dont la première coordonnée est positive."
+      },
+      {
+        "question": "10.b",
+        "page_pdf": 2,
+        "page_pdf_second": 2,
+        "perimetre": "Exprimer $|u|$ directement à partir de $(x,y,z)$ pour séparer rigoureusement les composantes."
+      },
+      {
+        "question": "11",
+        "page_pdf": 2,
+        "page_pdf_second": 2,
+        "perimetre": "Vérifier d’abord le nombre de parcours de l’image. Il change lorsque $a$ s’annule."
+      },
+      {
+        "question": "12",
+        "page_pdf": 2,
+        "page_pdf_second": 2,
+        "perimetre": "Prendre le déterminant horizontal d’abord dans la base $(E,H)$."
+      },
+      {
+        "question": "13.a",
+        "page_pdf": 2,
+        "page_pdf_second": 2,
+        "perimetre": "Utiliser la condition sur le cosinus imprimée dans le fac-similé."
+      },
+      {
+        "question": "13.b",
+        "page_pdf": 2,
+        "page_pdf_second": 2,
+        "perimetre": "Décomposer le gradient horizontal suivant les directions radiale et angulaire."
+      },
+      {
+        "question": "14",
+        "page_pdf": 2,
+        "page_pdf_second": 2,
+        "perimetre": "La cote a un signe donné par deux facteurs ; chacun s’annule sur une courbe de la surface."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

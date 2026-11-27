@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Les tirages attestés par le rapport
 
 Le rapport du jury recense 69 paires. Les trois feuilles datées des 16, 17 et 22 juin en documentent 36 dans le même ordre. Les 33 paires qui suivent commencent à la dernière ligne de la page 5 du rapport et se poursuivent aux pages 6 et 7. Le tableau ne précise pas la date de ces tirages. Les deux branches de chaque paire reçoivent ici une proposition de réponse, indépendamment du choix fait au concours.
@@ -735,6 +737,8 @@ La compétition spatiale, de Spoutnik en 1957 à l’alunissage américain en 19
 Des lettres de spectateurs, chiffres de fréquentation ou témoignages de lecteurs complètent affiches et programmes en documentant les usages, sans les réduire aux intentions officielles.
 
 ![Dreyfus, trois effets juridiques différents](figures/dreyfus.svg)
+
+Rattacher la grâce à la présidence de la République et l’annulation à la Cour de cassation. Le passage d’une autorité à l’autre explique pourquoi la campagne pour la révision se poursuit après la remise en liberté.
 
 [Cour de cassation, réhabilitation de Dreyfus](https://www.courdecassation.fr/toutes-les-actualites/2026/07/12/journee-de-commemoration-nationale-de-la-reconnaissance-de)
 

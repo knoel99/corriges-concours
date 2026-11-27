@@ -1,0 +1,169 @@
+{
+  "slug": "ens_mp_physique-mpi_2009",
+  "epreuve": {
+    "concours": "ENS",
+    "ecoles_historiques": "ENS de Paris, Lyon et Cachan",
+    "filiere": "MP",
+    "matiere": "Physique MPI",
+    "annee": 2009
+  },
+  "questions": 68,
+  "intitule": "Physique des instabilités — Oscillateur paramétrique, filament et solidification",
+  "redaction": "Trois problèmes et questions 1 à 68 du cahier 90.02M. Diagrammes originaux de modulation, de stabilité, d’hystérésis et de croissance cristalline.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2009/MP/2009_sujet_mp_physique.pdf",
+    "sujet_sha256": "0875de076d6766a6f66580f76a360c7c4f166e9ae9cf2c932d598da62a29ff8c",
+    "garde": "90.02M · ENS de Paris, Lyon et Cachan",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2009/MP/mp2009_ecrit_phys.pdf",
+    "rapport_sha256": "d150b0246787a7e7926a3c2a110ea7479731b012e46f0e74993d71e03a8898ae"
+  },
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "physique_mp_suite",
+      "session": "physique_mp_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Rapport de physique MPI 2009. Explicitation des référentiels et des signes, projection sur les deux quadratures pour le seuil de Mathieu, séparation des échanges d’énergie et d’entropie, puis formulation de la condition de Stefan."
+    },
+    {
+      "phase": "redaction",
+      "agent": "physique_mp_suite",
+      "session": "physique_mp_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Trois problèmes et questions 1 à 68 du cahier 90.02M. Diagrammes originaux de modulation, de stabilité, d’hystérésis et de croissance cristalline."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "5",
+      "fichier": "figures/synchronisation-et-energie.svg",
+      "legende": "Chronogrammes idéalisés. Le créneau inférieur repère les changements d’écartement et les sauts au sommet modifient l’énergie totale."
+    },
+    {
+      "numero": 2,
+      "question": "19",
+      "fichier": "figures/frontiere-de-mathieu.svg",
+      "legende": "Au-dessus de chaque seuil correspondant, une petite perturbation peut croître. La dissipation relève la frontière."
+    },
+    {
+      "numero": 3,
+      "question": "25",
+      "fichier": "figures/profil-du-filament.svg",
+      "legende": "L’extrémité est au contact du thermostat. L’échauffement s’approche du plateau sur la longueur δ."
+    },
+    {
+      "numero": 4,
+      "question": "40",
+      "fichier": "figures/points-de-fonctionnement.svg",
+      "legende": "La droite passe par la température du thermostat. Une pente intermédiaire donne trois intersections avec la courbe de résistivité du filament."
+    },
+    {
+      "numero": 5,
+      "question": "44",
+      "fichier": "figures/branches-et-hysteresis.svg",
+      "legende": "Les sauts verticaux schématisent le passage entre les deux branches stables lors d’un balayage lent du courant."
+    },
+    {
+      "numero": 6,
+      "question": "57",
+      "fichier": "figures/couche-thermique-du-liquide.svg",
+      "legende": "Le dégagement de chaleur latente crée une couche chaude en avant du front mobile."
+    },
+    {
+      "numero": 7,
+      "question": "62",
+      "fichier": "figures/pointe-et-flux-thermique.svg",
+      "legende": "Les flèches de flux sont normales aux isothermes pointillées. La pointe progresse dans le liquide sous-refroidi à droite."
+    },
+    {
+      "numero": 8,
+      "question": "63",
+      "fichier": "figures/dispersion-de-mullins-sekerka.svg",
+      "legende": "La capillarité rend négatif le taux des modes courts. Le maximum est atteint avant le nombre d’onde de coupure."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "57",
+      "58",
+      "59",
+      "60",
+      "61",
+      "62",
+      "63",
+      "64",
+      "65",
+      "66",
+      "67",
+      "68"
+    ]
+  }
+}

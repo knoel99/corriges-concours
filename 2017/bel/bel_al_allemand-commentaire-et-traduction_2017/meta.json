@@ -17,7 +17,19 @@
   "sources": {
     "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/17-bel-commentaire-et-traduction-lve_1506586192589_0.pdf#page=2",
     "sujet_sha256": "be2dd53df269e5a7bc4f9f5f2a1836d36ab45404db77ca6cb4d21f19dee44d53",
-    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/ALLEMAND_2017.pdf#page=1"
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/ALLEMAND_2017.pdf#page=1",
+    "sha256_rapport_jury": "b30d9743eb0c27cd7a37b72835aa24d8cb908b8b218bb18663eb0d32a2ff762c",
+    "pages_rapport_verifiees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "ouvrage": "Lion Feuchtwanger, Erfolg. Drei Jahre Geschichte einer Provinz (1930)."
   },
   "figures": [
     {
@@ -26,7 +38,7 @@
       "legende": "Ce qui est dit, entendu et interrompu"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -37,6 +49,23 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Commentaire allemand du dialogue de Pröckl et Tüverlin chez Feuchtwanger, version française depuis la sommation de l’ingénieur jusqu’aux tas de neige du bord de la route, guide sur les voix et le dénouement interrompu, figure."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture phrase par phrase sur le fascicule de l’ENS de Lyon et rapprochement avec le rapport du jury. Station de cure hivernale, parallélisme des trois verbes au discours indirect, point de vue des interlocuteurs.",
+      "agent": "lyon_ses_sources"
     }
   ],
   "droits_sources": {
@@ -44,5 +73,28 @@
       "L’extrait d’Erfolg de Lion Feuchtwanger (1930) se déroule en Bavière au début des années 1920. Le commentaire examine le débat entier et son interruption. La version commence à la demande de Pröckl et inclut le retour du narrateur à la route enneigée."
     ],
     "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire",
+      "Version française"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Commentaire",
+        "page_pdf": 2,
+        "page_pdf_fin": 3,
+        "perimetre": "Lignes 1–57, de « Dieser Schriftsteller Jacques Tüverlin » à « auf der Stelle widerlegen ». Portrait, réquisitoire, réplique et interruption du discours projeté."
+      },
+      {
+        "question": "Version française",
+        "page_pdf": 2,
+        "page_pdf_fin": 2,
+        "perimetre": "Lignes 11–27, de « Der Ingenieur Pröckl verlangte » à « des Straßenrandes springend ». Les deux paragraphes."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
   }
 }

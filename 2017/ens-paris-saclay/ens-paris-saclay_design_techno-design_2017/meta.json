@@ -1,0 +1,110 @@
+{
+  "slug": "ens-paris-saclay_design_techno-design_2017",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Techno-design",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "Surfaces utiles",
+  "redaction": "Proposition de corrigé rédigée par IA, non officielle.",
+  "questions": 2,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2017_Sujet_1A_Design_Techno_design.pdf",
+    "sujet_sha256": "ad199fbfee6425ec8bcc63f3dae85d5c0165f0807f3ee543f3208dafe0cbf5d8",
+    "index_officiel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=279",
+    "nature": "Les sept pages du sujet contiennent les cinq notices illustrées. Le rapport global de 2017 comporte une section consacrée au techno-design à partir de la page 8.",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2017_RE_1A_Design.pdf",
+    "rapport_sha256": "0e260994d26a4a9edfae7ff149923a46e3e0a79e20520cd5f6614946dd90b2c7"
+  },
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/01-analyse.svg",
+      "question": "Analyse 1/5",
+      "legende": "Agir, réfléchir, enregistrer. La surface peut rayonner, renvoyer un éclairage ou servir de lieu de saisie."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/02-analyse.svg",
+      "question": "Analyse 2/5",
+      "legende": "Démonter sans tout effacer. La peau rapportée dépend d’un support et de ses attaches."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/03-esquisse.svg",
+      "question": "Esquisse 3/5",
+      "legende": "Suivre un trajet du doigt. Un relief continu mène de l’entrée à un service choisi."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/04-esquisse.svg",
+      "question": "Esquisse 4/5",
+      "legende": "Faire entendre un seul lieu. Une commande volontaire déclenche le nom de la destination."
+    },
+    {
+      "numero": 5,
+      "fichier": "figures/05-esquisse.svg",
+      "question": "Esquisse 5/5",
+      "legende": "Une modification locale. La destination change de salle : le bibliothécaire retire une seule pièce."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "design_saclay_six_archives",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des observations du jury et confrontation avec les planches du fascicule."
+    },
+    {
+      "phase": "redaction",
+      "session": "design_saclay_six_archives",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de deux éditions et dessin de cinq planches A3 originales. Deux analyses croisées ouvrent sur trois esquisses exploratoires, leurs contraintes et leurs essais."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "design_saclay_six_archives",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification du sujet, des légendes, des dessins, de la distinction entre observations, hypothèses et essais, et des deux documents.",
+      "tour": 1
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Analyse des productions",
+      "Esquisses et recherche expérimentale"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Les sept pages du sujet contiennent les cinq notices illustrées. Le rapport global de 2017 comporte une section consacrée au techno-design à partir de la page 8."
+  }
+}

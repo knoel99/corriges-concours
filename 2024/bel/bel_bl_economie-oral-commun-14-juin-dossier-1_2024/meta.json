@@ -1,0 +1,77 @@
+{
+  "slug": "bel_bl_economie-oral-commun-14-juin-dossier-1_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Économie (oral commun) — 14 juin, dossier 1",
+    "annee": 2024,
+    "modalite": "oral"
+  },
+  "intitule": "Inégalités d’accès aux soins",
+  "questions": 0,
+  "sujets": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/bl_sujets_oraux_economie_1_14062024.pdf",
+    "sujet_sha256": "9dfe457690665d59897ab32991b99b35a8ce7c345e7590b138ec7338af6c9e9c",
+    "sujet_pages": 8,
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_oral_economie_epreuve_commune.pdf",
+    "rapport_sha256": "fe5cc6dcbe4008c26a4690c9b5f2e24e5772986d17abc64298dc8717224afffe",
+    "calendrier": "https://www.ens.psl.eu/sujets-des-epreuves-orales-du-concours-bl-session-2024"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Lecture du fascicule de 8 pages avec contrôle des 5 documents et de leurs figures. Vérification des champs, unités et conclusions du commentaire.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Conception et vérification du schéma du document 1. Tableau de la DREES, document 1, p. 2 du fascicule. Les valeurs représentées sont arrondies. Le rapport publié repose sur les données avant arrondi. Légende descriptive et alternative textuelle intégrées aux deux éditions.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
+    }
+  ],
+  "figures": [
+    {
+      "fichier": "figures/accessibilite-generalistes.svg",
+      "question": "Document 1",
+      "legende": "Figure 1 — Accessibilité aux médecins généralistes en France hors Mayotte. Pour les 10 % d’habitants les mieux dotés, l’accessibilité passe de 5,9 consultations ou visites par an et par habitant standardisé en 2016 à 5,7 en 2019. Chez les 10 % les moins bien dotés, elle passe de 1,8 à 1,6. Le rapport publié passe de 3,2 à 3,5.",
+      "description": "Pour les 10 % d’habitants les mieux dotés, l’accessibilité passe de 5,9 consultations ou visites par an et par habitant standardisé en 2016 à 5,7 en 2019. Chez les 10 % les moins bien dotés, elle passe de 1,8 à 1,6. Le rapport publié passe de 3,2 à 3,5.",
+      "source": "Tableau de la DREES, document 1, p. 2 du fascicule. Les valeurs représentées sont arrondies. Le rapport publié repose sur les données avant arrondi."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "sujets_entierement_traites": [
+      "Inégalités d’accès aux soins"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "redaction",
+      "sha256_sujet_controle": "9dfe457690665d59897ab32991b99b35a8ce7c345e7590b138ec7338af6c9e9c",
+      "perimetre": "Lecture du fascicule de 8 pages avec contrôle des 5 documents et de leurs figures. Vérification des champs, unités et conclusions du commentaire."
+    },
+    "documents_entierement_traites": [
+      "Document 1 — Les écarts territoriaux dépendent de la profession",
+      "Document 2 — La pauvreté et la géographie dans le renoncement déclaré",
+      "Document 3 — Les décisions de formation ont des effets retardés",
+      "Document 4 — Le recrutement social compte dès la première année",
+      "Document 5 — Distinguer disponibilité immédiate et renouvellement de l’offre"
+    ]
+  }
+}

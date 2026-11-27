@@ -4,14 +4,16 @@
     "concours": "ENS",
     "filiere": "MP",
     "matiere": "Informatique-mathématiques",
-    "annee": 2021
+    "annee": 2021,
+    "duree_heures": 4
   },
   "questions": 54,
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/07/2021_MP_sujet_InfoMath.pdf",
     "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/08/21_MP_rap_eInfoMath.pdf",
-    "sha256_sujet": "1454ab3424e22bd23189909af85727af57996631cb0535dff8292a6d91684f27"
+    "sha256_sujet": "1454ab3424e22bd23189909af85727af57996631cb0535dff8292a6d91684f27",
+    "sha256_rapport_jury": "33e4c3f883679fd84b583116ade9285f18c7c6ace04cdefe2641321dac3555f8"
   },
   "figures": [
     {
@@ -51,6 +53,162 @@
       "perimetre": "Rédaction intégrale, 54 réponses dans chacune des deux éditions à partir du sujet et du rapport. Lecture des deux figures originales, construction et contrôle exhaustif des quatre diagrammes, preuves des constructions, des bornes et des exceptions. Contre-exemples aux formulations non valables et preuve indépendante de la borne exponentielle de la grille non triviale.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "archives_2016_2022",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture des six parties et du rapport, des deux figures du sujet et des cinq figures du corrigé. Vérification des quatre diagrammes SVG en suivant les arêtes pour leurs 112 assignations. Contrôle des récursions de comptage, des cas limites et de la preuve de la borne sur la grille. En V.5, justification que toutes les variables sont essentielles et application de la borne exacte sur les classes résiduelles."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1.a",
+      "I.1.b",
+      "I.2",
+      "I.3.a",
+      "I.3.b",
+      "II.1",
+      "II.2.a",
+      "II.2.b",
+      "II.2.c",
+      "II.3",
+      "II.4",
+      "II.5.a",
+      "II.5.b",
+      "II.5.c",
+      "II.5.d",
+      "III.1.a",
+      "III.1.b",
+      "III.2.a",
+      "III.2.b",
+      "III.3.a",
+      "III.3.b",
+      "III.4.a",
+      "III.4.b",
+      "III.5",
+      "IV.1.a",
+      "IV.1.b",
+      "IV.2.a",
+      "IV.2.b",
+      "IV.3",
+      "IV.4",
+      "V.1.a",
+      "V.1.b",
+      "V.1.c",
+      "V.2.a",
+      "V.2.b",
+      "V.2.c",
+      "V.3",
+      "V.4",
+      "V.5",
+      "VI.1.a",
+      "VI.1.b",
+      "VI.2.a",
+      "VI.2.b",
+      "VI.3",
+      "VI.4",
+      "VI.5",
+      "VI.6.a",
+      "VI.6.b",
+      "VI.6.c",
+      "VI.7.a",
+      "VI.7.b",
+      "VI.7.c",
+      "VI.8.a",
+      "VI.8.b"
+    ],
+    "subdivisions_du_sujet": {
+      "I.1": [
+        "a",
+        "b"
+      ],
+      "I.3": [
+        "a",
+        "b"
+      ],
+      "II.2": [
+        "a",
+        "b",
+        "c"
+      ],
+      "II.5": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "III.1": [
+        "a",
+        "b"
+      ],
+      "III.2": [
+        "a",
+        "b"
+      ],
+      "III.3": [
+        "a",
+        "b"
+      ],
+      "III.4": [
+        "a",
+        "b"
+      ],
+      "IV.1": [
+        "a",
+        "b"
+      ],
+      "IV.2": [
+        "a",
+        "b"
+      ],
+      "V.1": [
+        "a",
+        "b",
+        "c"
+      ],
+      "V.2": [
+        "a",
+        "b",
+        "c"
+      ],
+      "VI.1": [
+        "a",
+        "b"
+      ],
+      "VI.2": [
+        "a",
+        "b"
+      ],
+      "VI.6": [
+        "a",
+        "b",
+        "c"
+      ],
+      "VI.7": [
+        "a",
+        "b",
+        "c"
+      ],
+      "VI.8": [
+        "a",
+        "b"
+      ]
+    },
+    "precision": "Les trente questions principales et leurs subdivisions forment cinquante-quatre réponses par édition. Les contre-exemples aux formulations littérales et les hypothèses nécessaires sont explicités, y compris aux questions VI.6.b, VI.7.c et VI.8.b.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "1454ab3424e22bd23189909af85727af57996631cb0535dff8292a6d91684f27",
+      "sha256_rapport_controle": "33e4c3f883679fd84b583116ade9285f18c7c6ace04cdefe2641321dac3555f8",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Relecture des six parties et du rapport, des deux figures du sujet et des cinq figures du corrigé. Vérification des quatre diagrammes SVG en suivant les arêtes pour leurs 112 assignations. Contrôle des récursions de comptage, des cas limites et de la preuve de la borne sur la grille. En V.5, justification que toutes les variables sont essentielles et application de la borne exacte sur les classes résiduelles.",
+      "commit_redaction_anterieure": "cd6744a77239137f66f17f527a328cc202e1139d"
+    }
+  }
 }

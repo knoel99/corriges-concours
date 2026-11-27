@@ -1,0 +1,58 @@
+{
+  "slug": "ens-rennes_d1_anglais_2008",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Anglais",
+    "annee": 2008,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet08d1langues_1421752176045-pdf#page=4",
+    "sha256_sujet": "cb9e217b941d664b2ef7272786c8e3dfa9e5ab1fbb9e68250888aa1f3a7fa603",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "publication": "Eric Konigsberg, The New York Times, 30 décembre 2007",
+    "page": 4,
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/r1a_08_d1_lv1_1404897184762.pdf#page=2",
+    "sha256_rapport_jury": "acf840c7f56950ef7be81f926ac42973f0cb12cfb3c3b42ccc94e288a3c41a55"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en anglais"
+    ],
+    "precision": "Traduction française de l’intégralité du passage délimité et réponse en anglais."
+  },
+  "longueur_expression": {
+    "mots": 100,
+    "regle": "Is Harvard’s new policy conducive to integration or exclusion? 100 mots."
+  },
+  "figures": [
+    {
+      "fichier": "figures/harvard.svg",
+      "legende": "Which figure answers which question?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Traduction française de l’intégralité du passage délimité et réponse en anglais. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

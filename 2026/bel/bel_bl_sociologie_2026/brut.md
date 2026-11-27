@@ -8,6 +8,10 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Sujet** — Le travail comme (re)production des rapports sociaux
 
 ## Introduction
@@ -40,6 +44,10 @@ Une division du travail assigne des places, mais elle fait également dépendre 
 
 En 1968, à Dagenham, 187 mécaniciennes de couture de Ford cessent le travail. Les housses de sièges qu’elles fabriquent sont nécessaires à la poursuite de la production automobile. Leur demande de reclassement s’appuie à la fois sur une compétence, qu’elles disent sous-évaluée, et sur cette interdépendance. Elle les oblige à contester la définition industrielle de la qualification autant que la différence de rémunération entre femmes et hommes. Deux temporalités apparaissent alors. En 1968, la reprise s’effectue sur une offre qui porte le taux des mécaniciennes à 92 % du taux masculin de la catégorie B. Le choix du dénominateur importe. Obtenir davantage à l’intérieur de B laisse intacte la définition du poste qui leur ferme la catégorie C. Un même accord peut donc déplacer le rapport salarial et reconduire, pour un temps, la hiérarchie des qualifications. La loi britannique sur l’égalité de rémunération est votée en 1970 dans un contexte de mobilisations plus large. Pourtant, il faut une nouvelle grève en 1984 pour que les mécaniciennes obtiennent le classement en catégorie C qu’elles demandaient. Le vote d’une norme, la modification du salaire et la reconnaissance d’une qualification ont des effets distincts et n’obéissent pas au même calendrier.
 
+![Figure 1 — Dagenham, du relèvement de la paie en 1968 au reclassement du poste en 1984](figures/dagenham-reclassement.svg)
+
+Seize ans séparent les deux accords d’atelier. Pendant cet intervalle, le salaire de référence de la catégorie B permet de mesurer une concession obtenue par les ouvrières. La catégorie attribuée au poste permet de suivre ce que cet accord laisse en suspens.
+
 Pourquoi cet écart ? Lorsqu’une direction consent à rapprocher les rémunérations à l’intérieur d’une catégorie, elle peut conserver le pouvoir de fixer les frontières entre les catégories. Reconnaître la technicité d’un travail oblige à réexaminer ces frontières et, potentiellement, les comparaisons avec d’autres postes. Le conflit transforme donc l’enjeu lui-même. La discussion sur ce qu’une ouvrière doit toucher se prolonge en discussion sur les gestes qui comptent, les personnes autorisées à les évaluer et les procédures qui rendent leur jugement contestable. Un rapport social change lorsque ses règles s’inscrivent différemment dans des institutions, mais aussi lorsque des personnes acquièrent une capacité durable à intervenir dans la production de ces règles.
 
 Il serait néanmoins hâtif de faire de tout collectif de travail une force de transformation générale. Les liens qui donnent aux salariés stables la capacité de protéger leur métier peuvent fermer aux intérimaires l’accès aux mêmes ressources. Et une revalorisation d’emploi ne partage pas à elle seule le travail domestique au sein de chaque foyer. Pour apprécier la portée d’un changement, il faut suivre ce qui se passe de part et d’autre de la frontière déplacée. Qui peut désormais obtenir la qualification ? Qui conserve le pouvoir d’attribuer les postes ? Qui assure les tâches que le nouvel arrangement laisse à accomplir ? Ces questions rejoignent celles que posait le passage de l’aide familiale à l’aide salariée.
@@ -47,3 +55,11 @@ Il serait néanmoins hâtif de faire de tout collectif de travail une force de t
 ## Conclusion
 
 Le travail reconduit les rapports sociaux parce que sa répartition transforme des écarts de ressources et de disponibilité en différences de carrière, de reconnaissance ou de sécurité. Il les produit aussi, chaque fois qu’un objectif d’atelier, un mode de recrutement ou une classification acquiert la force d’une règle à laquelle les groupes se mesurent. Les deux processus sont donc liés. La hiérarchie ne dure qu’à travers des activités qui la rétablissent dans des conditions changeantes. Parce que les personnes qui travaillent assurent ensemble la continuité de ces activités, elles peuvent aussi en suspendre le cours et en discuter les règles. La portée de cette capacité se juge à ce qu’elle change concrètement à l’assignation des tâches, à leur valeur et au pouvoir de décider de l’une et de l’autre.
+
+## Vérification sur le sujet
+
+Le titre unique reproduit dans les annales pédagogiques a été comparé aux deux copies. L’analyse porte sur la distribution du travail domestique et salarié, les règles de qualification, les rapports de classe, de genre et de racialisation, ainsi que sur leur transformation collective.
+
+À Dagenham, une hausse du taux de rémunération dans la catégorie B et le reclassement du poste en catégorie C sont deux résultats empiriques distincts. Pour tester la reproduction d’une hiérarchie, on peut suivre, entre deux accords, les tâches attribuées, le groupe qui les exerce et le droit d’en fixer la valeur. Une hausse du salaire avec maintien du classement modifie la rémunération immédiate. Une nouvelle classification peut aussi modifier la référence applicable aux futures recrues. L’exemple rend ainsi observables à deux dates les processus visés par les parenthèses du sujet.
+
+Le libellé est reproduit dans les annales pédagogiques de la filière. La notice du concours décrit le format. La vérification porte sur cette dissertation et aucune pièce supplémentaire n’est annoncée sur la page qui la reproduit.

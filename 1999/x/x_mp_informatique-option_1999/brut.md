@@ -4,7 +4,9 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-**Arbres de décision pour les fonctions booléennes.** Les dix questions passent des tables de vérité à une affiche qui énumère des chemins acceptants. Les programmes sont écrits en OCaml et se lisent dans l’ordre des questions.
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+**Arbres de décision pour les fonctions booléennes.** Les dix questions passent des tables de vérité à une affiche qui énumère des chemins acceptants. Les programmes en Caml (syntaxe OCaml) et en Pascal se lisent dans l’ordre des questions.
 
 ## I. Fonctions booléennes
 
@@ -16,6 +18,27 @@ Les tables de la première page fixent le sens des noms. Si le premier argument 
 let et x0 x1 = if x0 then x1 else false
 let ou x0 x1 = if x0 then true else x1
 let implique x0 x1 = if x0 then x1 else true
+```
+
+#### Pascal · Connecteurs par conditionnelle
+
+Les seuls résultats écrits sont les valeurs des paramètres ou les constantes booléennes. La table fournie fixe le sens respectif des noms.
+
+```pascal
+function et(x0, x1: boolean): boolean;
+begin
+  if x0 then et := x1 else et := false
+end;
+
+function ou(x0, x1: boolean): boolean;
+begin
+  if x0 then ou := true else ou := x1
+end;
+
+function implique(x0, x1: boolean): boolean;
+begin
+  if x0 then implique := x1 else implique := true
+end;
 ```
 
 ### Question 2.a
@@ -78,6 +101,8 @@ En effet, sans peluche ou avec une petite peluche, il faut exactement que le jou
 
 Adoptons l’ordre « déjà vu », puis $P,S,V,E,B$. Si $A$ est l’arbre de $p$ donné dans le sujet, $T_{\mathrm{deja\_vu}}(1,A)$ représente la nouvelle politique. Un jouet déjà vu est admis immédiatement, alors qu’un jouet nouveau passe par les cinq règles. Les fils diffèrent, puisque $A$ refuse entre autres le train d’Oscar.
 
+![Figure 2 — Arbre de la politique avec admission immédiate des jouets déjà vus. Un jouet nouveau suit les cinq tests de la politique initiale.](figures/politique-deja-vu.svg)
+
 ### Question 6.a
 
 En notant $g_b=g_{i\leftarrow b}$, on obtient
@@ -95,13 +120,39 @@ Pour un vecteur de bit $i$ égal à $b$, le membre droit choisit $u_b$. Les troi
 
 ### Question 7.a
 
-On choisit Caml, dans la syntaxe d’OCaml. Le fils positif est toujours placé à gauche. Les indices sont ceux de l’énoncé, à partir de zéro.
+Voici la branche Caml en syntaxe OCaml. Le fils positif est toujours placé à gauche. Les indices sont ceux de l’énoncé, à partir de zéro.
 
 ```ocaml
 type variable = int
 type abd = Bool of bool | Test of variable * abd * abd
 
 let abd_proj i = Test (i, Bool true, Bool false)
+```
+
+#### Pascal · Projection et constructeurs imposés
+
+Le type discriminé est celui de la composition. L’alias `type_nature` évite une ambiguïté de Free Pascal entre le nom du type et celui du champ `nature`. Les primitives `fait_bool(val: boolean): abd` et `fait_test(testee: variable; pos, neg: abd): abd` sont fournies. Toute création de feuille ou de nœud dans les réponses Pascal passe par elles. La projection choisit vrai sur le fils positif et faux sur le fils négatif.
+
+```pascal
+type
+  variable = integer;
+  type_nature = (Test, Bool);
+  abd = ^cellule;
+  cellule = record
+    case nature: type_nature of
+      Bool: (val: boolean);
+      Test: (testee: variable; pos, neg: abd)
+  end;
+  nature = type_nature;
+```
+
+Les constructeurs fournis prennent place après le type précédent. La réponse à la question est la fonction suivante.
+
+```pascal
+function abd_proj(i: variable): abd;
+begin
+  abd_proj := fait_test(i, fait_bool(true), fait_bool(false))
+end;
 ```
 
 ### Question 7.b
@@ -116,6 +167,21 @@ let rec abd_neg = function
 
 Appliquée deux fois, cette transformation rend exactement l’arbre initial (même induction). Elle est donc injective sur les arbres structurés. Deux fils distincts restent distincts, et les indices sur chaque chemin conservent leur ordre. Le parcours termine sur les sous-arbres stricts.
 
+#### Pascal · Complément structurel
+
+Les champs lus dépendent du discriminant. L’inversion des feuilles est involutive, donc injective sur les structures. Deux branches distinctes le restent, dans le même ordre de variables.
+
+```pascal
+function abd_neg(g: abd): abd;
+begin
+  case g^.nature of
+    Bool: abd_neg := fait_bool(not g^.val);
+    Test: abd_neg := fait_test(g^.testee,
+                               abd_neg(g^.pos), abd_neg(g^.neg))
+  end
+end;
+```
+
 ### Question 8.a
 
 Les seules comparaisons primitives portent sur des booléens ou des entiers. Les deux appels récursifs descendent sous les racines. Par induction, la réponse est vraie exactement lorsque les deux représentations ont les mêmes constructeurs, étiquettes et orientations à tous les emplacements.
@@ -127,6 +193,23 @@ let rec abd_egal a b =
   | Test (i, v, f), Test (j, w, h) ->
       i = j && abd_egal v w && abd_egal f h
   | _ -> false
+```
+
+#### Pascal · Égalité de structure
+
+Deux appels indépendants à `abd_proj(0)` peuvent allouer des nœuds distincts qui représentent exactement la même structure. La comparaison ci-dessous descend dans les fils par paires.
+
+```pascal
+function abd_egal(a0, a1: abd): boolean;
+begin
+  if a0^.nature <> a1^.nature then abd_egal := false
+  else case a0^.nature of
+    Bool: abd_egal := a0^.val = a1^.val;
+    Test: abd_egal :=
+      (a0^.testee = a1^.testee) and abd_egal(a0^.pos, a1^.pos)
+                                 and abd_egal(a0^.neg, a1^.neg)
+  end
+end;
 ```
 
 ### Question 8.b
@@ -147,6 +230,29 @@ let rec abd_partiel i b a =
 ```
 
 Si $j>i$, la variable fixée est absente de tout le sous-arbre. Si $j=i$, elle ne revient dans aucun fils, il suffit donc d’en choisir un. Pour $j<i$, l’hypothèse de récurrence garantit les bonnes restrictions dans les deux fils. Un éventuel effacement par `noeud` conserve la même fonction. La procédure ajoute seulement des indices qui existaient à la même place, et chaque récursion porte sur des sous-arbres stricts.
+
+#### Pascal · Restriction et réduction
+
+Le constructeur auxiliaire compare les branches structurellement. Quand elles sont égales, il rend l’une d’elles. Les arbres sont traités comme immuables, ce qui permet de partager une branche existante sans modifier l’arbre d’entrée.
+
+```pascal
+function noeud(i: variable; v, f: abd): abd;
+begin
+  if abd_egal(v, f) then noeud := v
+                    else noeud := fait_test(i, v, f)
+end;
+
+function abd_partiel(i: variable; b: boolean; g: abd): abd;
+begin
+  if g^.nature = Bool then abd_partiel := g
+  else if g^.testee > i then abd_partiel := g
+  else if g^.testee = i then begin
+    if b then abd_partiel := g^.pos else abd_partiel := g^.neg
+  end else
+    abd_partiel := noeud(g^.testee, abd_partiel(i, b, g^.pos),
+                                    abd_partiel(i, b, g^.neg))
+end;
+```
 
 ### Question 8.c
 
@@ -172,6 +278,34 @@ let rec abd_test c v f =
 
 Tous les indices apparents sont au moins $i$. Un arbre dont la racine porte $i$ est remplacé par un fils, un arbre dont la racine est plus grande reste entier. Sur chaque appel, au moins une racine disparaît et la somme des tailles des trois arbres diminue strictement. La récursion termine. L’identité de 6.b prouve la correction en supposant les deux appels justes. Les arbres produits sous la racine n’utilisent que des indices supérieurs à $i$, et `noeud` assure la condition de fils distincts.
 
+#### Pascal · Construction du test conditionnel
+
+Choisir le plus petit indice des trois racines internes. La condition est ici interne dès que les deux cas constants ont été écartés. Au moins un des trois arguments perd sa racine dans chaque appel récursif et les autres gardent leur arbre ou perdent aussi leur racine.
+
+```pascal
+function abd_test(c, v, f: abd): abd;
+var i: variable; oui, non: abd;
+  procedure abaisser(g: abd);
+  begin
+    if g^.nature = Test then
+      if g^.testee < i then i := g^.testee
+  end;
+begin
+  if c^.nature = Bool then begin
+    if c^.val then abd_test := v else abd_test := f
+  end else begin
+    i := c^.testee;
+    abaisser(v);
+    abaisser(f);
+    oui := abd_test(abd_partiel(i, true, c), abd_partiel(i, true, v),
+                    abd_partiel(i, true, f));
+    non := abd_test(abd_partiel(i, false, c), abd_partiel(i, false, v),
+                    abd_partiel(i, false, f));
+    abd_test := noeud(i, oui, non)
+  end
+end;
+```
+
 ### Question 8.d
 
 La valeur de $f$ choisit entre $g$ et faux pour la conjonction, entre vrai et $g$ pour la disjonction, entre $g$ et vrai pour l’implication. Les appels utilisent la représentation réduite obtenue en 8.c.
@@ -180,6 +314,21 @@ La valeur de $f$ choisit entre $g$ et faux pour la conjonction, entre vrai et $g
 let abd_et f g = abd_test f g (Bool false)
 let abd_ou f g = abd_test f (Bool true) g
 let abd_implique f g = abd_test f g (Bool true)
+```
+
+#### Pascal · Connecteurs entre arbres
+
+Les trois opérations utilisent le test conditionnel et les deux feuilles que construisent les primitives du sujet.
+
+```pascal
+function abd_et(f, g: abd): abd;
+begin abd_et := abd_test(f, g, fait_bool(false)) end;
+
+function abd_ou(f, g: abd): abd;
+begin abd_ou := abd_test(f, fait_bool(true), g) end;
+
+function abd_implique(f, g: abd): abd;
+begin abd_implique := abd_test(f, g, fait_bool(true)) end;
 ```
 
 ### Question 9
@@ -202,6 +351,30 @@ let r5 = abd_implique vert (abd_et peluche electrique)
 let p = abd_et r1 (abd_et r2 (abd_et r3 (abd_et r4 r5)))
 let pa = abd_et p (abd_implique peluche vert)
 let pb = abd_ou p vert
+```
+
+#### Pascal · Assemblage des politiques
+
+Le corps de `construire_politiques` fournit les instructions demandées. Après son appel, les trois variables globales contiennent les résultats. L’ordre des indices correspond à celui du document.
+
+```pascal
+var p, pa, pb: abd;
+
+procedure construire_politiques;
+var peluche, petit, vert, electrique, piles: abd;
+    r1, r2, r3, r4, r5: abd;
+begin
+  peluche := abd_proj(0); petit := abd_proj(1); vert := abd_proj(2);
+  electrique := abd_proj(3); piles := abd_proj(4);
+  r1 := abd_ou(peluche, petit);
+  r2 := abd_ou(vert, abd_neg(petit));
+  r3 := abd_implique(electrique, piles);
+  r4 := abd_neg(abd_et(piles, peluche));
+  r5 := abd_implique(vert, abd_et(peluche, electrique));
+  p := abd_et(r1, abd_et(r2, abd_et(r3, abd_et(r4, r5))));
+  pa := abd_et(p, abd_implique(peluche, vert));
+  pb := abd_ou(p, vert)
+end;
 ```
 
 ### Question 10.a
@@ -228,6 +401,41 @@ let abd_solutions p =
 
 Chaque chemin est fini et ses indices sont strictement croissants. Chaque caractéristique y apparaît donc au plus une fois. Ses conditions décrivent précisément les entrées qui le suivent, quels que soient leurs bits non testés. Les lignes des feuilles vraies sont ainsi disjointes et, ensemble, décrivent tous les jouets admis. L’arbre constant vrai imprime une ligne même pour le chemin vide.
 
+#### Pascal · Affichage des chemins acceptants
+
+Le tableau global `nom[0..4]` est fourni par le sujet. Les tableaux locaux gardent les indices et les signes du chemin en cours. Une récursion ne modifie que les positions correspondant à sa profondeur ou aux profondeurs suivantes. Au retour, il suffit donc de changer le dernier signe pour visiter la branche négative.
+
+```pascal
+procedure abd_solutions(p: abd);
+var indices: array[0..4] of variable;
+    signes: array[0..4] of boolean;
+  procedure visite(g: abd; profondeur: integer);
+  var j: integer;
+  begin
+    case g^.nature of
+      Bool: if g^.val then begin
+        if profondeur = 0 then write('Tous les jouets');
+        for j := 0 to profondeur - 1 do begin
+          if j <> 0 then write(', ');
+          if not signes[j] then write('non ');
+          write(nom[indices[j]])
+        end;
+        writeln
+      end;
+      Test: begin
+        indices[profondeur] := g^.testee;
+        signes[profondeur] := true;
+        visite(g^.pos, profondeur + 1);
+        signes[profondeur] := false;
+        visite(g^.neg, profondeur + 1)
+      end
+    end
+  end;
+begin
+  visite(p, 0)
+end;
+```
+
 ### Question 10.b
 
 Les affiches de $p,p_a,p_b$ et de la constante vraie ont respectivement **1, 0, 4 et 1 lignes**. Pour $p$, un seul chemin est accepté. Pour $p_a$, aucune feuille n’est vraie. Pour $p_b$, la figure de 5.b donne les quatre chemins acceptés, écrits ici dans l’ordre du parcours.
@@ -240,3 +448,7 @@ Les affiches de $p,p_a,p_b$ et de la constante vraie ont respectivement **1, 0, 
 | non peluche, vert | 8 |
 
 Au total ces quatre lignes couvrent $4+4+1+8=17$ des 32 profils. La politique laxiste a une seule feuille, qui représente les 32 profils à la fois.
+
+## Vérification des programmes
+
+Les blocs publiés ont été extraits séparément des éditions brute et guidée. Les quatre vérifications de cette épreuve ont utilisé Free Pascal 3.2.2 ou OCaml 5.3.0. Pour chaque édition et chaque langage, les 4 096 triplets de fonctions de deux variables ont été évalués sur les quatre profils binaires. La négation et les restrictions des 256 fonctions de trois variables, l’ordre des indices et la réduction des branches ont également été contrôlés. Sur les 32 profils de jouets, les quatre affiches produisent 1, 0, 4 et 1 lignes. Le banc Pascal fournit les deux constructeurs de l’énoncé et le tableau des noms.

@@ -8,6 +8,10 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## De quel manque parle-t-on ?
 
 La deuxième composition de 2022 dure six heures. Le sujet porte sur « l’absence de principe ». L’expression laisse ouverte la nature de ce qui manque. Si l’on écrit dès l’introduction « l’absence du principe », on a déjà supposé un principe unique et concentré le problème sur sa disparition. Le rapport réserve un développement à ce changement d’article, ainsi qu’à la diversité des sens de l’absence.
@@ -19,6 +23,10 @@ La deuxième composition de 2022 dure six heures. Le sujet porte sur « l’abse
 **Relire le jury.** Le rapport invite à examiner aussi le domaine pratique et les situations où les principes doivent être recherchés, décidés ou institués. Sa remarque permet de construire la transition de l’absence d’une règle préalable à la responsabilité de juger. Le cas de l’équité fournit alors une difficulté véritable à résoudre, au lieu d’aligner successivement métaphysique, connaissance et morale.
 
 ![Qu’est-ce qui manque à la décision ?](figures/trois-diagnostics.svg)
+
+Avant de qualifier une décision de dépourvue de principe, dire quelle découverte serait susceptible de modifier ce diagnostic. Une archive peut lever une ignorance sans rendre juste ce qu’elle explique.
+
+**Exercice de préparation.** Un règlement demande une décision motivée sans fournir de barème. Éprouvez successivement trois diagnostics : une décision est impossible ; plusieurs décisions peuvent être justifiées ; n’importe quelle décision convient. La première proposition exige de prouver qu’un jugement sans calcul est impossible. La troisième oublierait l’exigence de motifs. En défendant la deuxième, nommez exactement ce qui manque et ce qui continue à faire principe. Vous pourrez alors examiner l’équité sans conclure trop vite à l’arbitraire.
 
 ## L’absence de principe
 
@@ -38,7 +46,11 @@ On peut toutefois objecter à Leibniz que l’exigence d’expliquer constitue p
 
 Une décision peut être causalement intelligible et manquer de principe au sens pratique. L’autorité qui favorise son ami agit pour une raison psychologique très reconnaissable. Dire que sa décision est sans principe revient à lui reprocher l’absence d’une raison qu’elle puisse soutenir devant les autres personnes placées dans les mêmes conditions. Il existe bien un ressort constant, la préférence accordée au proche. Ce ressort ne devient pas une norme légitime du seul fait qu’il produit régulièrement les mêmes effets. Le défaut est ici réel parce que l’agent est tenu de justifier publiquement sa conduite et n’offre rien qui satisfasse à cette exigence.
 
+Deux décisions identiques peuvent provenir de raisons très différentes. Si le dossier a disparu, l’enquêteur manque d’une raison documentée. S’il retrouve une règle qui exclut le demandeur à cause de son origine, la raison devient connaissable et la critique porte désormais sur sa légitimité. Le mot « absence » change donc de sens au cours même de l’enquête.
+
 À l’inverse, toute décision différente prise dans un cas particulier ne relève pas du favoritisme. Dans le livre V de l’*Éthique à Nicomaque*, Aristote explique que la loi parle en général d’une matière humaine où des exceptions surviennent. L’équitable corrige ce que la généralité de la formulation laisserait manquer à la justice dans ce cas. Supposons qu’une allocation soit attribuée sur production d’un dossier avant une date et qu’une personne ait perdu ses pièces dans une inondation qui a fermé les services chargés de les délivrer. Accorder un délai peut respecter la raison de la procédure, qui est de départager équitablement des demandes vérifiables. Le refuser au seul motif qu’aucune phrase du règlement ne mentionne l’inondation confondrait la justice de la règle et sa lettre. Le motif précis pourra valoir pour toute personne pareillement empêchée.
+
+Un jury doit départager deux réalisations recevables. Le règlement exige une appréciation motivée sans fixer le poids de chaque qualité. Une décision favorable à la première pourrait tenir à sa précision, une décision favorable à la seconde à son inventivité. Qu’aucun calcul ne détermine d’avance le classement laisse subsister des exigences précises : les motifs doivent porter sur les travaux, être appliqués avec cohérence et pouvoir être exposés aux intéressés. Introduire en secret l’ancienneté du candidat donnerait bien un principe de sélection au sens descriptif. Ce serait aussi manquer au principe qui donne au jugement sa légitimité. L’absence change de sens selon ce que l’on cherche : un procédé qui délivre mécaniquement le résultat, une régularité qui explique le choix ou une raison recevable de l’assumer.
 
 Il manque ici une disposition explicite, et ce manque ne se dissipe pas lorsque l’on comprend sa fonction. Il oblige celui qui juge à répondre de la manière dont il particularise l’exigence de justice. La solution est plus risquée qu’une application automatique, car le privilégié pourra prétendre à tort relever d’une exception. Elle est aussi plus exigeante. Le décideur doit rendre publics les faits pertinents et admettre qu’on les confronte à d’autres cas. Un principe n’est donc pas toujours disponible avant l’action sous la forme d’une instruction prête à l’emploi. Son absence sous cette forme peut rendre nécessaire l’exercice du jugement plutôt que sa suspension.
 

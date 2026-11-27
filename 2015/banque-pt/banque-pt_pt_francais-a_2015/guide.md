@@ -1,0 +1,55 @@
+# Banque PT — Français A 2015 · Corrigé guidé
+
+*Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
+
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+[Énoncé officiel](https://www.banquept.fr/documents/2015/fr_a_2015_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2015/rapport_fra_a_ecrit_2015.pdf) · [Programme officiel](https://www.education.gouv.fr/bo/14/Hebdo24/MENS1401052A.htm) · [Grille de la session](https://www.banquept.fr/documents/livret/2015/Livret_PT_2015.pdf#page=12)
+
+Épreuve de quatre heures sur « La guerre ». Eschyle, Les Perses (traduction de Danielle Sonnier) · Henri Barbusse, Le Feu · Carl von Clausewitz, De la guerre, livre I (traduction de Nicolas Waquet, pages 17 à 114).
+
+## Sujet
+
+Gaston Bouthoul, La guerre, collection « Que sais-je ? », 1973. Le sujet propose la citation suivante.
+
+« Il existe dans les guerres un aspect moral incontestable. Même les plus déterminés des pacifistes ne peuvent nier que la guerre n’exalte des vertus émouvantes et nobles : le courage, le dévouement, la fidélité, l’amitié entre combattants, la loyauté. L’humanité dans toutes ses formes de civilisation, a toujours été consciente de ces vertus éthiques de la guerre et leur a attaché un très grand prix. »
+
+Vous discuterez cette affirmation du sociologue Gaston Bouthoul (La guerre, collection « Que sais-je ? » 1973) en vous appuyant sur votre lecture des trois œuvres au programme.
+
+## Préparer la dissertation
+
+**Que signifie « exalte » ?**
+
+Le verbe peut désigner une intensification dans l’épreuve et une célébration publique. Relever dans la première phrase la prudence du mot « aspect », puis, dans la dernière, l’ambition du constat sur toutes les civilisations.
+
+**Comment faire travailler Clausewitz ?**
+
+Dans le livre I, le courage face au danger physique et celui de la responsabilité permettent de discuter la différence entre une capacité nécessaire à l’action et une vertu qui oblige envers autrui.
+
+**Comment exploiter la dernière phrase ?**
+
+Comparer au moins deux scènes de jugement public. Le chœur perse énumère les absents. Les hommes de L’Aube prennent eux-mêmes la parole pour demander à quoi leur épreuve devrait servir. Qui attribue à quel geste quel prix ?
+
+## Dissertation
+
+Dans *Les Perses*, des vieillards perses et une assemblée athénienne peuvent entendre le même récit de Salamine. Les premiers y reconnaissent les hommes qui leur manqueront désormais. Les seconds peuvent y admirer le courage de ceux qui ont défendu leur cité. Lequel de ces deux publics attribue aux vertus de la guerre leur juste prix ? Gaston Bouthoul compte sur une admiration commune, jusques et y compris chez les pacifistes, pour le courage, la fidélité et l’amitié que la guerre exalte. Son affirmation engage deux jugements distincts. Le premier porte sur ce que font les combattants les uns pour les autres. Le second porte sur la manière dont les peuples choisissent d’honorer leurs actes. Que vaut le passage du premier jugement au second ? Le livre I de *De la guerre*, la tragédie d’Eschyle et *Le Feu* donnent des raisons de reconnaître ces vertus. Ils obligent également à demander envers qui elles s’exercent et à quelle condition leur célébration reste fidèle à ceux qui en ont fait preuve.
+
+La possibilité de perdre la vie donne à un engagement ordinaire une gravité exceptionnelle. La fidélité d’un ami se lit dans le temps qu’il consent à nous donner. Lorsque ce temps peut être le dernier, tenir la même promesse coûte davantage. Le narrateur de Barbusse découvre cette valeur jusque dans une discussion sur son livre. Au chapitre XIII, *Les Gros Mots*, Barque vient trouver le narrateur en train d’écrire. Il veut savoir si le futur livre conservera la manière de parler des soldats. Corriger leurs paroles pour satisfaire un lecteur délicat reviendrait à les faire parler comme des étrangers. L’engagement envers les amis prend ici la forme très concrète d’une fidélité à leur voix. Cette scène explique aussi le pouvoir émotif dont parle Bouthoul. Le lecteur admire d’autant plus ces hommes qu’il les entend revendiquer, jusque dans le détail d’un mot, le droit de demeurer eux-mêmes.
+
+Clausewitz précise ce que coûte l’action dans une situation dont les conséquences demeurent incertaines. Dans le chapitre du livre I consacré au génie militaire, il distingue le courage devant le danger physique et celui qui consiste à prendre une responsabilité devant un jugement extérieur ou devant sa propre conscience. On peut supporter la peur et redouter de répondre d’une décision. On peut aussi s’obstiner pour sauver sa réputation. La conduite d’un homme qui accepte de rendre compte du sort des autres demande donc une fermeté supplémentaire. Cette distinction éclaire le péan rapporté par le messager d’Eschyle. En nommant la patrie, les enfants, les femmes et les tombeaux des pères, les voix grecques donnent au courage des combattants des destinataires déterminés. Le lien commun rend intelligible une résolution qu’il serait pauvre d’expliquer par le seul goût du danger.
+
+Une difficulté apparaît pourtant dès que l’on prononce le mot de vertu. Une aptitude peut aider à poursuivre avec constance une fin injuste. La persévérance d’un chef mérite alors une appréciation différente de celle du compagnon qui reste auprès d’un blessé. Le traité de Clausewitz cherche les conditions d’une action efficace. L’intelligence, la résolution et le sang-froid qu’il analyse peuvent appartenir à des adversaires dont les fins politiques s’opposent. À quel moment passent-ils au rang de qualités morales ? Lorsqu’il devient possible de montrer ce qu’un agent doit à un autre et comment il s’acquitte de cette dette. Le livre I fait de la fin politique un principe d’intelligibilité du conflit. Cette fin reste elle-même ouverte à l’examen. Le courage de ceux qui ont servi un dessein laisse entière la question de ce que le souverain leur devait en retour.
+
+Eschyle fait éprouver cette dissymétrie dans le palais perse. Le chœur est fidèle à la maison royale. Il écoute Atossa, appelle Darios et accueille Xerxès au retour. Cette continuité rend sa plainte finale plus redoutable encore pour le jeune roi. Chaque nom demandé rappelle une absence dont il devra porter le poids. Quand apparaît Darios, l’audace de l’entreprise de son fils cesse de pouvoir passer pour une valeur par sa seule ampleur. Le regard du mort mesure la démesure de celui qui a cru pouvoir imposer son empire à la mer elle-même. L’honneur dû aux disparus donne ainsi à leurs proches le droit d’interroger leur souverain. Si l’on confondait leur loyauté avec l’approbation de toutes ses actions, on effacerait une part de ce que le poète donne à entendre par leur deuil.
+
+La fidélité au groupe court un autre risque, celui de rendre insignifiants les hommes du groupe adverse. Barbusse accorde du temps aux petites distinctions qui séparent ses soldats, à leurs habitudes et à leurs façons de parler. Le nom collectif de l’ennemi dispense d’abord de lui accorder la même attention. Pourtant les hommes des deux camps connaissent la boue, l’épuisement, l’attente et la séparation. Dans *L’Aube*, la communauté possible s’étend à ceux qui ont subi la même condition en portant un autre uniforme. Une amitié qui protège le voisin immédiat est déjà précieuse. Son extension exige une décision supplémentaire, puisque l’institution qui rapproche les camarades les sépare des hommes d’en face. La guerre rend le dévouement visible et lui assigne en même temps une frontière que le jugement moral peut contester.
+
+Il faut alors revenir à la dernière phrase de Bouthoul. Comment une civilisation attache-t-elle un grand prix aux vertus des combattants ? Tout dépend du récit par lequel elle les transmet. À Athènes, Eschyle aurait pu célébrer les vainqueurs en ne faisant parler qu’eux. Il confie au messager perse le récit du courage grec et fait prononcer la dernière plainte par les vaincus. C’est ainsi que la cité victorieuse peut apprendre quelque chose de sa propre admiration. Honorer la liberté défendue à Salamine oblige à entendre ce que coûte le désir de régner sur des hommes libres. Ce déplacement de la parole transforme la mémoire collective. La victoire devient pour son public l’occasion d’un examen de soi.
+
+La dernière assemblée du *Feu* pousse cet examen plus loin. Ceux qui parlent n’ont aucun désir de voir d’autres hommes recommencer leur expérience pour avoir à leur tour l’occasion d’être courageux. Ils cherchent les conditions d’une paix fondée sur l’égalité. Leur fidélité aux morts oblige les survivants à préparer un avenir dans lequel cette sorte de sacrifice deviendra inutile. Le lecteur peut maintenant rejoindre le pacifiste convoqué par Bouthoul. Il y a une cohérence entière à admirer le caporal Bertrand et à souhaiter qu’aucun homme n’ait plus à porter sa charge. Entre le monument qui invite à l’imitation et la parole qui met en garde, deux usages du même hommage s’offrent à une civilisation.
+
+Les trois œuvres accordent donc aux vertus nommées par Bouthoul une réalité observable et des sujets concrets. Que toutes les civilisations leur aient attribué un sens identique reste une proposition bien plus difficile à soutenir. La qualité morale d’une fidélité se reconnaît à la liberté qu’elle laisse de juger le dessein servi, à l’attention qu’elle accorde aux personnes et au monde qu’elle veut laisser après elle. Il arrive alors que l’hommage le plus exact rendu au courage des combattants soit de prendre au sérieux leur désir de paix.
+
+![Figure 1 — À qui va la fidélité ?](figures/lecture.svg)

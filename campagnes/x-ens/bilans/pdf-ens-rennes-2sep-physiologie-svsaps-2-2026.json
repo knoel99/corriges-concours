@@ -1,0 +1,327 @@
+{
+  "slug": "ens-rennes_2sep_physiologie-svsaps-2_2026",
+  "revision_ancienne_source": "766ff439ee134519b8eda8efd0571a477f575c24",
+  "commit_export": "070fd6c3df805234c51205a30e2c1829bc3317cf",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": null,
+      "vitesse": null,
+      "effort": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Corrigés brut et guidé.",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-24",
+      "modifications": null,
+      "perimetre": "Vérification des cinq réponses sur le cas officiel et les attendus du jury de la session. Contrôle des unités, des valeurs observées et des distinctions entre réponses aiguës, adaptations chroniques et données hypothétiques.",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "tour": 1
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des cinq questions dans les deux éditions, du sujet R26-324, du rapport SVSAPS 2 et des six figures. Précisions sur le couplage excitation–contraction, le sang veineux mêlé du bilan de Fick, les limites des mesures ventilatoires et thermiques et la concentration de sodium dans la sueur après acclimatation.",
+      "tour": 2,
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture des cinq questions et contrôle des deux PDF officiels. Définition de la fatigabilité et des unités motrices, des grandeurs du bilan de Fick et de la ventilation, distinction hyperpnée/hyperventilation, évaporation effective, récupération ressentie et mesurée. Précisions sur trois des six figures, contrôle de la ventilation illustrée, conservation des signatures historiques et attestation de la couverture."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Q1",
+        "page_pdf": 2,
+        "titre": "Fatigue locale des quadriceps",
+        "attendu": "Relier la commande neuromusculaire et les voies énergétiques à la force disponible."
+      },
+      {
+        "question": "Q2",
+        "page_pdf": 2,
+        "titre": "Ajustements cardiovasculaires",
+        "attendu": "Relier fréquence, éjection, pression, transport d’oxygène et régulation."
+      },
+      {
+        "question": "Q3",
+        "page_pdf": 2,
+        "titre": "Ventilation et homéostasie",
+        "attendu": "Distinguer air ventilé, échanges alvéolaires et compensation acido-basique."
+      },
+      {
+        "question": "Q4",
+        "page_pdf": 2,
+        "titre": "Thermorégulation",
+        "attendu": "Relier chaleur, évaporation, circulation cutanée et régulations endocriniennes."
+      },
+      {
+        "question": "Q5",
+        "page_pdf": 2,
+        "titre": "Adaptations chroniques",
+        "attendu": "Expliquer les montées mieux tolérées et la récupération en reliant les systèmes étudiés."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "limites_documentaires": "Toutes les consignes du feuillet sont traitées. Aucun tracé individuel, bilan hydrique, gaz du sang, protocole de mesure de force ou comparaison chiffrée avant/après n’est fourni. Les six figures sont didactiques et les deux décompositions de 120 L/min sont hypothétiques."
+  },
+  "pieces": {
+    "sujet": {
+      "url": "https://www.ens-rennes.fr/medias/fichier/sujet-svsaps-2-physio-2sep-2026_1791303263430-pdf",
+      "sha256": "76c366ceeff045832237c768af5797e6195af093baa88d73103a5f07d413726b",
+      "pages": 2,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "216907acbf12c6a403b3cb6d4f2b1f6d8b1384b9e3c71d739c57371424f6f61b"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "236a57d375a6fb68a63ecadeadacefbc4579c1b17b1250a6a2c03dc457826adc"
+        }
+      ],
+      "pieces_jointes": []
+    },
+    "rapport": {
+      "url": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-2sep-svsaps-2-physio-2026_1792574760808-pdf",
+      "sha256": "e7a152049df81181b0198c1a56082da81e7eeff44fb4732dec472b70508bf133",
+      "pages": 2,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "d432542e6d0ce65684cccf7efe3788e380dfc2f7c0b9e33adf1410bf59417178"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "3f8781235f8b043dbd512e35d713c43b57afc7e8a0ea9078be42ce39e493ecf8"
+        }
+      ],
+      "pieces_jointes": []
+    }
+  },
+  "pdf": {
+    "brut": {
+      "pages": 6,
+      "nombre_signets": 6,
+      "signets": [
+        [
+          1,
+          "Situation étudiée",
+          1
+        ],
+        [
+          2,
+          "Question 1 — Fatigue locale des quadriceps",
+          1
+        ],
+        [
+          2,
+          "Question 2 — Débit cardiaque et pression artérielle",
+          2
+        ],
+        [
+          2,
+          "Question 3 — Ventilation et équilibre acido-basique",
+          3
+        ],
+        [
+          2,
+          "Question 4 — Chaleur, circulation et conservation de l'eau",
+          4
+        ],
+        [
+          2,
+          "Question 5 — Adaptations chroniques à l'entraînement",
+          5
+        ]
+      ],
+      "indications": 0,
+      "pages_figures": [
+        2,
+        3,
+        4,
+        5,
+        5,
+        6
+      ],
+      "sha256": "522260a5fb5e48beb67d0e5a44350bb8522b2183f7326ff2ecf41c396b9fe18e",
+      "rendus_sha256": [
+        "9b5281a1647bca21215e44c710b51ab276defc9121e82af4c09617b7b74d67fb",
+        "0a5eda6efcfbe46742d8eadb958279d72ecaac8256711caee55180eeda77fae0",
+        "922c5cd95fe493a8f411dcd9bc5a29eec9bbd9bb40f552dd32e51c28ca1bd537",
+        "6dc33d76aca912c1d7138fcee0540185b667116c17416c3909cdf5e233e2138c",
+        "8f2187dbce556c54d4958fb9a236ddd877c8b6fbb6040f9407cfa69fc590f8b6",
+        "dd413c81b57ff040b77f85a88e343c0939ada18ba0139ff11c475e3ad58a9813"
+      ]
+    },
+    "guide": {
+      "pages": 8,
+      "nombre_signets": 12,
+      "signets": [
+        [
+          1,
+          "Situation étudiée",
+          1
+        ],
+        [
+          2,
+          "Question 1 — Fatigue locale des quadriceps",
+          1
+        ],
+        [
+          3,
+          "Solution",
+          1
+        ],
+        [
+          2,
+          "Question 2 — Débit cardiaque et pression artérielle",
+          2
+        ],
+        [
+          3,
+          "Solution",
+          3
+        ],
+        [
+          2,
+          "Question 3 — Ventilation et équilibre acido-basique",
+          4
+        ],
+        [
+          3,
+          "Solution",
+          4
+        ],
+        [
+          2,
+          "Question 4 — Chaleur, circulation et conservation de l'eau",
+          5
+        ],
+        [
+          3,
+          "Solution",
+          5
+        ],
+        [
+          2,
+          "Question 5 — Adaptations chroniques à l'entraînement",
+          6
+        ],
+        [
+          3,
+          "Solution",
+          7
+        ],
+        [
+          1,
+          "Repères pour la relecture",
+          8
+        ]
+      ],
+      "indications": 10,
+      "pages_figures": [
+        2,
+        3,
+        5,
+        6,
+        6,
+        8
+      ],
+      "sha256": "0337d7126ca321f8fc188339360dbe50006a3a49fc220d74abe8d8d3f4791764",
+      "rendus_sha256": [
+        "0900d858201d110da0bf60670fe0dab5568eb4f7188ce7bfbb1b02179782fdd1",
+        "056ee26cce7751d59e6e86e788e0ce879719e2630b6111a05ede13aaf9cb19ec",
+        "1f72a1ad854b8391fc0e6037d28cd5f4bf534e69ae58cbffea956541cc5b4b1b",
+        "c47f90fe22fe13a8f2826a08e19e0573971dbffba12862937a45918b331aa8c0",
+        "75ec7ad34f4f11a57bd7898e75276acd24c46c9b1365183c7915e839571a5c50",
+        "e7a2be32cc2ae6b946ddf7938ff0f870a588b8463d8ade90055ab0116812c018",
+        "0142f249b87f50de0baf31af448e13439ab238f7edb46dd6d43f0986cef712a3",
+        "dfe68a19556978b17fa32418fbb15b7e1209575d2c241f92ba294fb74fedd03b"
+      ]
+    }
+  },
+  "controles": {
+    "questions": 5,
+    "figures_didactiques": 6,
+    "anciennes_signatures_et_contributions_conservees": true,
+    "empreintes_officielles_confirmees": true,
+    "rapatriement": "Visionneuse publique interrogée avec les URL de l’ENS. Les deux fichiers PDF ont exactement les SHA-256 déjà documentés.",
+    "hypotheses_numeriques": {
+      "ventilation_minute_observee_L_min": 120,
+      "espace_mort_hypothetique_L": 0.15,
+      "exemples_hypothetiques": [
+        {
+          "frequence_min": 50,
+          "volume_courant_L": 2.4,
+          "ventilation_alveolaire_L_min": 112.5
+        },
+        {
+          "frequence_min": 60,
+          "volume_courant_L": 2,
+          "ventilation_alveolaire_L_min": 111
+        }
+      ],
+      "barres_SVG_mesurees_L_min": [
+        112.50000008712483,
+        110.99999996515007,
+        7.499999912875166,
+        9.000000034849942
+      ]
+    }
+  },
+  "empreintes": {
+    "brut.md": "1133215fdd85c0c87903b895658161cc98398ae945f76dc2082c5afbc774223d",
+    "guide.md": "01910e200a0f4b52328f9513dfe266d527cca4771b1749ac58ca96a2eb588560",
+    "meta.json": "83c07821e63559c87969ac19d7824025bca6c2d60b322dfd0acc0a86a73d193a",
+    "figures/fatigue-force.svg": "f93ae555935d71487520b0497ac295734f57ff9dea68ef42740a60d09636d98b",
+    "figures/debit-et-extraction.svg": "c8f6a93c860f713e0c001e242889261fd63a67a9daf27e87bf8847a5df6bb344",
+    "figures/ventilation-minute.svg": "d1549db16e632de11263e35b58c5de2fd008953d345c50b24246dfefc272a8ee",
+    "figures/chaleur-et-evaporation.svg": "589fc35734e3dc34e797a9acdc7e262cb4cad00418f740435766984533ab69b9",
+    "figures/hormones-et-eau.svg": "f4eb561480d124aa7287617d719b3b23616d6becc45ee92d44ae5735dc3f12aa",
+    "figures/entrainement-et-acclimatation.svg": "d441978f33610794af0096b096559e01e74d1c47f33c78f44abecf27ce974102",
+    "bilan-compilation.md": "f54116caae39ca7b966d2fba863d1a788e00effd6a4d9a587dafcc3a893dc8e8",
+    "brut.pdf": "522260a5fb5e48beb67d0e5a44350bb8522b2183f7326ff2ecf41c396b9fe18e",
+    "guide.pdf": "0337d7126ca321f8fc188339360dbe50006a3a49fc220d74abe8d8d3f4791764",
+    "apercu.jpg": "246f8218f6f1fe97eb4744a2167ff081a23322daa078be430913036ce6d1c2e3"
+  },
+  "archive": "ENS-Rennes-2SEP-physiologie-SVSAPS-2-2026.zip",
+  "sha256": "edcb29abde7180e476531be8c2c9b5a1396447b1f8510cbd6a2580be49cef04c"
+}

@@ -1,0 +1,684 @@
+{
+  "slug": "banque-pt_pt_physique-a_2016",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique A",
+    "intitule": "Épreuve de Physique A",
+    "annee": 2016,
+    "duree": "4 h",
+    "modalite": "écrit",
+    "code_garde": "133"
+  },
+  "questions": 67,
+  "redaction": "Proposition pédagogique non officielle, rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2016/ph_a_2016_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2016/rapport_phys_a_ecrit_2016.pdf",
+    "livret": "https://www.banquept.fr/documents/livret/2016/Livret_PT_2016.pdf",
+    "sujet_sha256": "3741086541b738ac3d621bea095febfd7625726ff91bd1454b7c333638759609",
+    "rapport_jury_sha256": "ac6d3781a5ee87394a8a93e65161964412599ebd207f9213983388131bec7883",
+    "observation_rapport": "Le rapport, sur une page, distingue électronique, thermodynamique, électrostatique, mécanique du point et diffraction RHEED."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2016/ph_a_2016_pt.pdf",
+      "sha256": "3741086541b738ac3d621bea095febfd7625726ff91bd1454b7c333638759609",
+      "pages": 18,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "0c51a8c452ebb49f43da4425d229b255bc795e96208a34df27782feeb94bc264"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "0321b6c142ce5be79d040dd94ddd271108ef14229ae4d83e5b9def20738343b7"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "7a244f95d1aff4837d4096817d9722855653c23d7e347f9df4189db62156f7e8"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "6cfef1c219d5e386861858986846a7ed4a56a863b185ab67437ad2fce8cac556"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "7597ba30d3878f15fe0b003fe23bab8cdd97b61b951085caf44c4544de99c12f"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "2f6c5fbd00a3d7f7d9e0a8bd3449856fe90e845017347e5e286c4cadae2a9a16"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "0494587e66e0f5d00357fc2a650572869cef9dcb1787c64df0bc811a86ede781"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "bae2bbd0a3f3a6144e67ea1ea1c305f5e9aaf4ee4252bd73c65edd06f7bfa533"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "c9d465ce0d123031141136da15b18e7635f1e649dae42bf5264b25eabeb8b9a9"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "9ed746a7f88cdab7895d0e367e44151edb6475866ad7a0d4ce814c4215f61136"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "ece528bd63e6c3a39082a0442f260f79b8d2f537be9bfc5b479323e55cd65d9e"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "39ec32d9f7a3f6cd5a36bee309aba751404d8edcee0456c7ca5fd1748f9d04f9"
+        },
+        {
+          "numero": 13,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        },
+        {
+          "numero": 14,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        },
+        {
+          "numero": 15,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        },
+        {
+          "numero": 16,
+          "rendu_sha256": "f5b6697723e27252db6271daf0d64c90991f8ae1a208d616b6026c765e15bb41"
+        },
+        {
+          "numero": 17,
+          "rendu_sha256": "552a4e89683a2029414345a3f3ae09df3ca410255dca09473ea7c6ec7f9efd89"
+        },
+        {
+          "numero": 18,
+          "rendu_sha256": "52977a7e8a140b5d6ba91c94b2248cc15eabb4b3aec8b62d2fc253e8297ed613"
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2016/rapport_phys_a_ecrit_2016.pdf",
+      "sha256": "ac6d3781a5ee87394a8a93e65161964412599ebd207f9213983388131bec7883",
+      "pages": 1,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "5379fe90bb13e5e872192716734fc8e23e81e83748980817165766b720694616"
+        }
+      ]
+    },
+    "livret": {
+      "url": "https://www.banquept.fr/documents/livret/2016/Livret_PT_2016.pdf",
+      "sha256": "2d38e7c0962f3db4e1bbe63bb8d19e7f666c04250d51a8f0716679c39f2f5cde",
+      "pages": 78,
+      "pages_verifiees": [
+        {
+          "numero": 8,
+          "rendu_sha256": "1240e15c9530bb6e14feb9458dd82b4ce35968a5a3bef29f39b236fb16ded74d"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "a776dce161efb44b8bec0a09430cc906168b54de38244a70e96c2adcf0062fcf"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "0732ab77b5bd77cee882a57f071472b865a96675eca2665406efdea2bf443144"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "A.Q4",
+      "fichier": "figures/creneau-spectre.svg",
+      "legende": "À gauche, trois périodes pour une consigne de 0,62 fois la rampe maximale. À droite, le spectre du modulant de Q6.b.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "A.Q6.c",
+      "fichier": "figures/annexe-c1.svg",
+      "legende": "Document C.1 complété. Les cinq rampes sont comparées au modulant et la sortie prend les niveaux plus et moins un demi.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "A.Q10.d",
+      "fichier": "figures/hysteresis.svg",
+      "legende": "En montant le basculement a lieu au seuil positif. En descendant il a lieu au seuil négatif.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "A.Q13",
+      "fichier": "figures/annexe-c2.svg",
+      "legende": "Document C.2 complété. Le plateau haut occupe un vingtième de période et le plateau bas dix-neuf vingtièmes.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "B1.Q16",
+      "fichier": "figures/annexe-c3.svg",
+      "legende": "Document C.3 complété. Les trois frontières se rejoignent au point triple T et la courbe liquide-vapeur se termine au point critique C.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "B2.Q29.d",
+      "fichier": "figures/champ-jauge.svg",
+      "legende": "Les flèches radiales partent de la grille et aboutissent aux électrodes à zéro volt. À droite figure la base directe en un point du demi-axe radial horizontal.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "B2.Q31.d",
+      "fichier": "figures/puits.svg",
+      "legende": "Pour une émission sans vitesse, la trajectoire est permise entre les deux intersections du puits avec le niveau moins 80 eV.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "B3.Q37",
+      "fichier": "figures/rayons.svg",
+      "legende": "Deux directions émergentes parallèles sont focalisées sur le même point. Le rayon auxiliaire en tirets traverse le centre optique.",
+      "provenance": "Figure originale."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A.Q1",
+      "A.Q2",
+      "A.Q3",
+      "A.Q4",
+      "A.Q5",
+      "A.Q6.a",
+      "A.Q6.b",
+      "A.Q6.c",
+      "A.Q6.d",
+      "A.Q7",
+      "A.Q8",
+      "A.Q9.a",
+      "A.Q9.b",
+      "A.Q10.a",
+      "A.Q10.b",
+      "A.Q10.c",
+      "A.Q10.d",
+      "A.Q11.a",
+      "A.Q11.b",
+      "A.Q12.a",
+      "A.Q12.b",
+      "A.Q13",
+      "A.Q14",
+      "B1.Q15",
+      "B1.Q16",
+      "B1.Q17",
+      "B1.Q18",
+      "B1.Q19",
+      "B1.Q20",
+      "B1.Q21",
+      "B1.Q22",
+      "B1.Q23",
+      "B1.Q24",
+      "B1.Q25.a",
+      "B1.Q25.b",
+      "B1.Q25.c",
+      "B2.Q26.a",
+      "B2.Q26.b",
+      "B2.Q27.a",
+      "B2.Q27.b",
+      "B2.Q27.c",
+      "B2.Q28",
+      "B2.Q29.a",
+      "B2.Q29.b",
+      "B2.Q29.c",
+      "B2.Q29.d",
+      "B2.Q30",
+      "B2.Q31.a",
+      "B2.Q31.b",
+      "B2.Q31.c",
+      "B2.Q31.d",
+      "B2.Q31.e",
+      "B2.Q32.a",
+      "B2.Q32.b",
+      "B2.Q32.c",
+      "B2.Q33",
+      "B3.Q34",
+      "B3.Q35",
+      "B3.Q36",
+      "B3.Q37",
+      "B3.Q38",
+      "B3.Q39",
+      "B3.Q40",
+      "B3.Q41",
+      "B3.Q42",
+      "B3.Q43",
+      "B3.Q44"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "annexes_imposees": [
+      "Le document-réponse C réunit les graphiques C.1 et C.2 (p. 17 du PDF) et C.3 (p. 18). Les trois tracés complétés figurent dans le corrigé."
+    ],
+    "document_reponse_mentionne": null,
+    "repere_par_question": [
+      {
+        "question": "A.Q1",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Modèle de l’ALI"
+      },
+      {
+        "question": "A.Q2",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Comparateur"
+      },
+      {
+        "question": "A.Q3",
+        "page_pdf": 3,
+        "page_rapport": 1,
+        "objet": "Pente de la dent de scie"
+      },
+      {
+        "question": "A.Q4",
+        "page_pdf": 3,
+        "page_rapport": 1,
+        "objet": "Durées des deux plateaux"
+      },
+      {
+        "question": "A.Q5",
+        "page_pdf": 3,
+        "page_rapport": 1,
+        "objet": "Dépassement de plage"
+      },
+      {
+        "question": "A.Q6.a",
+        "page_pdf": 3,
+        "page_rapport": 1,
+        "objet": "Modulant sinusoïdal décalé"
+      },
+      {
+        "question": "A.Q6.b",
+        "page_pdf": 3,
+        "page_rapport": 1,
+        "objet": "Spectre du modulant"
+      },
+      {
+        "question": "A.Q6.c",
+        "page_pdf": 3,
+        "page_rapport": 1,
+        "objet": "Document C.1 complété"
+      },
+      {
+        "question": "A.Q6.d",
+        "page_pdf": 3,
+        "page_rapport": 1,
+        "objet": "Démodulation"
+      },
+      {
+        "question": "A.Q7",
+        "page_pdf": 4,
+        "page_rapport": 1,
+        "objet": "Impédances réelles"
+      },
+      {
+        "question": "A.Q8",
+        "page_pdf": 4,
+        "page_rapport": 1,
+        "objet": "Découplage des étages"
+      },
+      {
+        "question": "A.Q9.a",
+        "page_pdf": 4,
+        "page_rapport": 1,
+        "objet": "Intégration pour une entrée positive"
+      },
+      {
+        "question": "A.Q9.b",
+        "page_pdf": 4,
+        "page_rapport": 1,
+        "objet": "Intégration pour une entrée négative"
+      },
+      {
+        "question": "A.Q10.a",
+        "page_pdf": 4,
+        "page_rapport": 1,
+        "objet": "Réaction du deuxième étage"
+      },
+      {
+        "question": "A.Q10.b",
+        "page_pdf": 4,
+        "page_rapport": 1,
+        "objet": "Domaine de l’état haut"
+      },
+      {
+        "question": "A.Q10.c",
+        "page_pdf": 4,
+        "page_rapport": 1,
+        "objet": "Domaine de l’état bas"
+      },
+      {
+        "question": "A.Q10.d",
+        "page_pdf": 4,
+        "page_rapport": 1,
+        "objet": "Caractéristique à hystérésis"
+      },
+      {
+        "question": "A.Q11.a",
+        "page_pdf": 4,
+        "page_rapport": 1,
+        "objet": "Première rampe"
+      },
+      {
+        "question": "A.Q11.b",
+        "page_pdf": 4,
+        "page_rapport": 1,
+        "objet": "Durée haute"
+      },
+      {
+        "question": "A.Q12.a",
+        "page_pdf": 4,
+        "page_rapport": 1,
+        "objet": "Deuxième rampe"
+      },
+      {
+        "question": "A.Q12.b",
+        "page_pdf": 4,
+        "page_rapport": 1,
+        "objet": "Durée basse et période"
+      },
+      {
+        "question": "A.Q13",
+        "page_pdf": 4,
+        "page_rapport": 1,
+        "objet": "Document C.2 complété"
+      },
+      {
+        "question": "A.Q14",
+        "page_pdf": 4,
+        "page_rapport": 1,
+        "objet": "Valeurs des résistances"
+      },
+      {
+        "question": "B1.Q15",
+        "page_pdf": 6,
+        "page_rapport": 1,
+        "objet": "Analyse dimensionnelle du flux"
+      },
+      {
+        "question": "B1.Q16",
+        "page_pdf": 6,
+        "page_rapport": 1,
+        "objet": "Document C.3 complété"
+      },
+      {
+        "question": "B1.Q17",
+        "page_pdf": 6,
+        "page_rapport": 1,
+        "objet": "Points particuliers du diagramme"
+      },
+      {
+        "question": "B1.Q18",
+        "page_pdf": 6,
+        "page_rapport": 1,
+        "objet": "Nature de la phase condensée"
+      },
+      {
+        "question": "B1.Q19",
+        "page_pdf": 7,
+        "page_rapport": 1,
+        "objet": "Vitesse quadratique moyenne"
+      },
+      {
+        "question": "B1.Q20",
+        "page_pdf": 7,
+        "page_rapport": 1,
+        "objet": "Énergie cinétique thermique"
+      },
+      {
+        "question": "B1.Q21",
+        "page_pdf": 7,
+        "page_rapport": 1,
+        "objet": "Vitesse en fonction de la masse molaire"
+      },
+      {
+        "question": "B1.Q22",
+        "page_pdf": 7,
+        "page_rapport": 1,
+        "objet": "Flux d’effusion"
+      },
+      {
+        "question": "B1.Q23",
+        "page_pdf": 7,
+        "page_rapport": 1,
+        "objet": "Rôle de la température"
+      },
+      {
+        "question": "B1.Q24",
+        "page_pdf": 7,
+        "page_rapport": null,
+        "objet": "Flux intercepté"
+      },
+      {
+        "question": "B1.Q25.a",
+        "page_pdf": 7,
+        "page_rapport": null,
+        "objet": "Population d’une couche"
+      },
+      {
+        "question": "B1.Q25.b",
+        "page_pdf": 7,
+        "page_rapport": null,
+        "objet": "Durée d’une monocouche"
+      },
+      {
+        "question": "B1.Q25.c",
+        "page_pdf": 7,
+        "page_rapport": null,
+        "objet": "Échelle du temps de fabrication"
+      },
+      {
+        "question": "B2.Q26.a",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Base cylindrique directe"
+      },
+      {
+        "question": "B2.Q26.b",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Symétries du potentiel"
+      },
+      {
+        "question": "B2.Q27.a",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Équation locale"
+      },
+      {
+        "question": "B2.Q27.b",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Potentiel radial"
+      },
+      {
+        "question": "B2.Q27.c",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Conditions sur les deux cylindres"
+      },
+      {
+        "question": "B2.Q28",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Champ intérieur"
+      },
+      {
+        "question": "B2.Q29.a",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Lecture des rayons"
+      },
+      {
+        "question": "B2.Q29.b",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Potentiel extérieur à la grille"
+      },
+      {
+        "question": "B2.Q29.c",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Champ entre grille et enceinte"
+      },
+      {
+        "question": "B2.Q29.d",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Lignes de champ et électrodes"
+      },
+      {
+        "question": "B2.Q30",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Rayon du filament"
+      },
+      {
+        "question": "B2.Q31.a",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Trajectoire sans vitesse initiale"
+      },
+      {
+        "question": "B2.Q31.b",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Énergie potentielle de l’électron"
+      },
+      {
+        "question": "B2.Q31.c",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Conservation mécanique"
+      },
+      {
+        "question": "B2.Q31.d",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Puits et niveau d’énergie"
+      },
+      {
+        "question": "B2.Q31.e",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Rayons de retournement"
+      },
+      {
+        "question": "B2.Q32.a",
+        "page_pdf": 10,
+        "page_rapport": 1,
+        "objet": "Conservation du moment cinétique"
+      },
+      {
+        "question": "B2.Q32.b",
+        "page_pdf": 10,
+        "page_rapport": 1,
+        "objet": "Potentiel effectif"
+      },
+      {
+        "question": "B2.Q32.c",
+        "page_pdf": 10,
+        "page_rapport": 1,
+        "objet": "Confinement avec une faible vitesse"
+      },
+      {
+        "question": "B2.Q33",
+        "page_pdf": 10,
+        "page_rapport": 1,
+        "objet": "Mouvement axial"
+      },
+      {
+        "question": "B3.Q34",
+        "page_pdf": 11,
+        "page_rapport": 1,
+        "objet": "Dualité onde-corpuscule"
+      },
+      {
+        "question": "B3.Q35",
+        "page_pdf": 11,
+        "page_rapport": 1,
+        "objet": "Longueur d’onde des électrons"
+      },
+      {
+        "question": "B3.Q36",
+        "page_pdf": 11,
+        "page_rapport": 1,
+        "objet": "Échelle de la diffraction"
+      },
+      {
+        "question": "B3.Q37",
+        "page_pdf": 11,
+        "page_rapport": 1,
+        "objet": "Rayons diffractés à travers la lentille"
+      },
+      {
+        "question": "B3.Q38",
+        "page_pdf": 11,
+        "page_rapport": 1,
+        "objet": "Différence de marche incidente et émergente"
+      },
+      {
+        "question": "B3.Q39",
+        "page_pdf": 11,
+        "page_rapport": 1,
+        "objet": "Extension à N atomes"
+      },
+      {
+        "question": "B3.Q40",
+        "page_pdf": 11,
+        "page_rapport": 1,
+        "objet": "Coordonnées des maxima"
+      },
+      {
+        "question": "B3.Q41",
+        "page_pdf": 11,
+        "page_rapport": 1,
+        "objet": "Influence de l’énergie du faisceau"
+      },
+      {
+        "question": "B3.Q42",
+        "page_pdf": 12,
+        "page_rapport": null,
+        "objet": "Comptage des couches"
+      },
+      {
+        "question": "B3.Q43",
+        "page_pdf": 12,
+        "page_rapport": null,
+        "objet": "Vitesse de croissance observée"
+      },
+      {
+        "question": "B3.Q44",
+        "page_pdf": 12,
+        "page_rapport": null,
+        "objet": "Diminution du contraste"
+      }
+    ]
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_hist_1987",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture des 67 questions ou sous-questions et du rapport institutionnel, rédaction des solutions et indications, figures originales et vérifications indépendantes des calculs."
+    }
+  ]
+}

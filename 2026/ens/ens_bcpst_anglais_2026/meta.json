@@ -33,7 +33,7 @@
     "sujet": "https://www.ens.psl.eu/sites/default/files/261243_bcpst_lve_2026.pdf#page=6",
     "sujet_sha256": "ce0653ccf99a04728fdd7d9ac0ca35ed6fc9d9c2dc329c4651d6dd86b0a4dc30"
   },
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "revision": {
     "date": "2026-11-24",
     "modele": "Codex (GPT-6)",
@@ -97,6 +97,32 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Vérification des quatre catégories de la carte sur l’original, ajout du Minnesota et du Texas dans les deux synthèses et reconstruction du schéma. Distinction entre volume des messages et part consacrée à la vaccination de routine, portée temporelle du dossier et syntaxe de la version."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "session": "fin_langues_x_interens",
+      "agent": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Page 9 du PDF officiel, trois exercices, notés sur 8, 8 et 4. Dans les deux éditions, la synthèse des documents 1 à 3 compte 253 mots, la réponse personnelle 258 mots, par espaces. La traduction française couvre le passage demandé en entier. Les deux articles et la carte sont confrontés dans leur cadre daté, avec les catégories de dispenses scolaires selon les États. Le débat sur expertise et choix publics est traité séparément. La version restitue la comparaison avec le Danemark et le Japon et énumère les caractéristiques de leurs systèmes de santé.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I",
+      "II",
+      "III"
+    ],
+    "precision": "Page 9 du PDF officiel, trois exercices, notés sur 8, 8 et 4. Dans les deux éditions, la synthèse des documents 1 à 3 compte 253 mots, la réponse personnelle 258 mots, par espaces. La traduction française couvre le passage demandé en entier. Les deux articles et la carte sont confrontés dans leur cadre daté, avec les catégories de dispenses scolaires selon les États. Le débat sur expertise et choix publics est traité séparément. La version restitue la comparaison avec le Danemark et le Japon et énumère les caractéristiques de leurs systèmes de santé."
+  }
 }

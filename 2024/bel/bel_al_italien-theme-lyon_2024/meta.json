@@ -1,0 +1,88 @@
+{
+  "slug": "bel_al_italien-theme-lyon_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Italien (thème Lyon)",
+    "annee": 2024
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2024-11/Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=15",
+    "sujet_sha256": "cbf76039969ec8cec685a228168381915bdc7b64ae30b2cbee576b3a4f1eeb56",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2024-11/Italien%202024%20OK.pdf#page=9",
+    "rapport_sha256": "20fe5fa3ded1617af0dd57749ea4d785f1658447cba9c8ed1c936c2123ec471a",
+    "archive_session": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2024",
+    "archive_session_sha256": "e50bb1f96fd06e58cc7e72442a84ec9a6beb7a51746da04d7cbc16e0003b6def",
+    "auteur_oeuvre": "Amin Maalouf, Samarcande (1989 dans la référence imprimée du sujet)."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Proposition de thème",
+      "legende": "Du chevet imaginé au souvenir de Paris"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Traduction italienne intégrale du feuillet de spécialité, notes de variantes et schéma. Futur dans le passé, geste du chapeau, répétition des soirées, appositions et précision finale sur les dix-sept années."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture du premier passé simple, de l’imparfait du quai, de la simultanéité des gestes au chevet et du singulier distributif de la rose. Vérification visuelle des titres dans le cahier numérisé et du décompte de la chute. Ajustement du rythme des trois scènes parisiennes."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Proposition de thème"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Proposition de thème",
+        "page_pdf": 15,
+        "page_pdf_fin": 15,
+        "perimetre": "Les trois paragraphes de la page 15, de « C’est en 1895 » à « toute une nouvelle jeunesse ». Les lieux, les artistes, les trois chansons et les deux nombres de la chute font partie du passage.",
+        "paragraphes": 3,
+        "pages_rapport": [
+          9,
+          11
+        ]
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Sujet.** Apports de la révolution de la crédibilité à l’évaluation des politiques publiques.
 
 ## Introduction — La question du contrefactuel
@@ -24,13 +26,17 @@ Un seuil de ressources peut donner accès à une prestation. Comparer les ménag
 
 Quand des territoires adoptent une politique à des dates différentes, les doubles différences comparent l’évolution du groupe traité et celle d’un groupe adéquat. Leur hypothèse porte sur les **tendances en l’absence de traitement**. Les données avant réforme éclairent cette hypothèse, sans prouver l’absence d’un choc simultané. Une anticipation et les déplacements entre territoires peuvent aussi fausser la comparaison. Avec des effets hétérogènes dans le temps, employer des effets par groupe d’adoption et période, puis les agréger en explicitant les poids, comme le proposent Callaway et Sant’Anna. Des unités déjà traitées constituent un mauvais témoin pour certaines comparaisons.
 
+Dans la figure, le taux d’emploi du groupe traité passe de 50 % à 60 %. Le comparer à sa valeur initiale donnerait un gain de 10 points. Or, dans le groupe témoin, le taux passe de 40 % à 43 %. Si le premier groupe aurait également gagné 3 points sans réforme, son taux contrefactuel est de 53 %. L’effet estimé est donc de 7 points. Une implantation industrielle simultanée dans la seule zone traitée remettrait en cause cette interprétation. Ce calcul porte sur des données fictives.
+
+![Figure 1 — Les tendances parallèles permettent de construire un taux d’emploi contrefactuel de 53 %.](figures/trajectoire-contrefactuelle.svg)
+
 La crédibilité vient d’éléments concrets, par exemple le règlement du seuil, l’historique des groupes, la mesure des pertes de suivi, les erreurs types regroupées au niveau d’assignation et les résultats sensibles aux décisions de spécification. La préspécification des résultats principaux réduit la latitude d’interprétation. Un intervalle large signifie que plusieurs effets restent compatibles avec les données.
 
 ## III — Deux expériences éclairent les limites d’une décision
 
 **Assurance santé en Oregon.** En 2008, une loterie a permis à certains adultes modestes de demander une couverture Medicaid. Finkelstein et ses coauteurs exploitent cette offre. La couverture augmente, de même que le recours à plusieurs soins, tandis que l’exposition à certaines dépenses financières recule au cours de la première année. L’assignation concerne la possibilité de déposer une demande, ce qui explique la différence entre offre et couverture. Une hausse des consultations peut manifester un accès enfin possible. Elle implique aussi des dépenses et ne suffit pas à mesurer tous les gains de santé. La population qui s’était inscrite sur la liste et l’horizon court bornent l’extrapolation.
 
-**Accompagnement de jeunes demandeurs d’emploi en France.** Crépon, Duflo, Gurgand, Rathelot et Zamora mettent en œuvre une randomisation à deux niveaux. La proportion de personnes auxquelles l’accompagnement est offert varie entre marchés du travail, puis certaines personnes reçoivent l’offre à l’intérieur de ces marchés. Comparer les bénéficiaires aux non-bénéficiaires d’une même zone révèle un avantage individuel potentiel. Comparer aussi les non-bénéficiaires entre zones de différente intensité révèle une éviction possible. L’étude trouve des indices de déplacement, particulièrement dans les marchés moins dynamiques. Une place obtenue plus vite par un participant peut être perdue par un autre demandeur. Le nombre net d’emplois d’un marché ne se déduit donc pas mécaniquement de l’effet individuel.
+**Accompagnement de jeunes demandeurs d’emploi en France.** Crépon, Duflo, Gurgand, Rathelot et Zamora mettent en œuvre une randomisation à deux niveaux. La proportion de personnes auxquelles l’accompagnement est offert varie entre marchés du travail, puis certaines personnes reçoivent l’offre à l’intérieur de ces marchés. Au sein d’une zone, la comparaison entre personnes auxquelles l’accompagnement est offert par tirage au sort et personnes auxquelles il ne l’est pas mesure l’effet direct de l’offre au niveau d’intensité considéré. Entre zones, comparer les personnes sans offre selon la proportion tirée au sort pour la recevoir permet de détecter un effet indirect, dont une éviction possible. L’étude trouve des indices de déplacement, particulièrement dans les marchés moins dynamiques. Une place obtenue plus vite par un participant peut être perdue par un autre demandeur. Le nombre net d’emplois d’un marché ne se déduit donc pas mécaniquement de l’effet individuel.
 
 La première expérience aide à interpréter le contenu du traitement, la seconde à choisir le bon périmètre d’évaluation. Généraliser une petite réforme peut changer les prix, les capacités des services, la composition des participants et le comportement des entreprises.
 

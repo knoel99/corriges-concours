@@ -8,7 +8,9 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Cette épreuve de la filière universitaire internationale de formation francophone dure deux heures. Le sujet reproduit un extrait du discours de Victor Hugo au Congrès littéraire international de 1878. La compréhension comporte une question sur la thèse et deux explications de formules. L’essai est libre, sans limite de mots imposée.
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+L’épreuve n° 2 de la session d’automne dure deux heures. Le sujet reproduit un extrait du discours d’ouverture du Congrès littéraire international prononcé par Victor Hugo le 7 juin 1878. La première partie demande de dégager la thèse, de relever une phrase du texte et d’expliquer deux images. La seconde est un bref essai de forme libre sans limite de mots. Le sujet interdit les dictionnaires et traducteurs électroniques.
 
 [Sujet officiel de la session 1](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20FUI-FF%20S1%20SUJET%20DE%20FRANCAIS.pdf)
 
@@ -17,7 +19,7 @@ Cette épreuve de la filière universitaire internationale de formation francoph
 > [!INDICATION]
 > Quel rapport le discours établit-il entre la survie des œuvres et le progrès des peuples ? Choisir une seule phrase exacte.
 
-Hugo soutient que la littérature fait progresser les sociétés en mettant les intelligences en mouvement. L’Iliade reste lisible quand l’armée de deux millions d’hommes évoquée par l’orateur a disparu. Tout en faisant rayonner la langue d’un peuple, elles s’adressent à d’autres peuples et peuvent les instruire. Je retiendrais la phrase « On peut dire que littérature et civilisation sont identiques. » Elle condense l’ambition du discours, qui confère à la littérature un rôle décisif dans le développement de l’humanité.
+Hugo soutient que la littérature fait progresser les sociétés en mettant les intelligences en mouvement. À la puissance passagère d’une armée, l’orateur oppose la durée de l’*Iliade*, que des générations continuent à lire. Cervantès fait aussitôt penser à l’Espagne, Dante à l’Italie. Leurs œuvres, que reconnaît un auditoire international, franchissent pourtant les frontières. Un peuple donne au monde une façon de penser et, à son tour, apprend à se voir à travers les livres des autres. Je retiendrais la phrase « On peut dire que littérature et civilisation sont identiques. » Hugo y rassemble les deux définitions qu’il vient de proposer. La littérature met l’esprit en marche. La civilisation est ce que l’humanité découvre à mesure qu’elle avance.
 
 ## A2a · Les écoles et la lumière
 
@@ -31,9 +33,9 @@ Hugo fait de la lumière une image de la connaissance. Les écoles sont les lieu
 > [!INDICATION]
 > Repérer ce que le discours concède sur la sécurité urbaine, puis la priorité qu’il assigne à l’instruction.
 
-L’éclairage d’une rue permet de voir où l’on va et de déceler un danger. Par analogie, l’éducation permet de reconnaître un mensonge ou une superstition qui pourraient tirer profit de l’ignorance. Hugo admet qu’un responsable public doive assurer la sécurité matérielle des habitants. Il demande à ses auditeurs d’accorder une attention plus grande encore à leur formation intellectuelle.
+L’éclairage d’une rue permet de voir où l’on va et de déceler un danger. Par analogie, l’éducation permet de reconnaître un mensonge ou une superstition qui pourraient tirer profit de l’ignorance. Hugo admet qu’un responsable public doive assurer la sécurité matérielle des habitants. Le « soit » accorde au public le bien-fondé de cette dépense. Avec « surtout », Hugo retourne contre lui son propre souci de sécurité. Une rue éclairée protège le passant. Un esprit exercé peut reconnaître l’erreur qui, selon l’orateur, se dissimule comme un voleur.
 
-![Comment se construit l’image de la lumière.](figures/lumiere-et-instruction.svg)
+![Figure 1 — Comment se construit l’image de la lumière.](figures/lumiere-et-instruction.svg)
 
 ## B · Essai sur la littérature et la société contemporaine
 
@@ -46,12 +48,12 @@ Ce pouvoir a pourtant une limite. Aucun roman, même celui-là, ne permet à lui
 
 J’en ai pris conscience en lisant les premières pages de *Germinal*. En suivant Étienne qui marche de nuit vers la mine, j’ai d’abord éprouvé le froid et l’incertitude du personnage. Une photographie d’archives et un plan de mine m’ont aidé ensuite à mieux comprendre les lieux du roman. La description a donné un sens humain aux documents, tandis que les documents m’ont conduit à relire autrement la description. Aucun des deux ne remplaçait l’autre.
 
-Je suis donc Hugo lorsqu’il demande de rendre les livres largement accessibles. J’hésite lorsqu’il mesure la valeur d’un peuple à ses grands écrivains. Un lecteur peut gagner en liberté grâce à une œuvre écrite ailleurs, dans une autre langue, par quelqu’un que l’histoire littéraire a longtemps ignoré. Ce qui m’importe est la possibilité de rencontrer cette voix et d’en discuter avec d’autres.
+Je suis donc Hugo lorsqu’il demande de rendre les livres largement accessibles. J’hésite lorsqu’il mesure la valeur d’un peuple à ses grands écrivains. Dans *Les Années* (2008), Annie Ernaux décrit des photographies de famille et fait entendre, autour des repas, les mots que plusieurs générations se sont transmis. J’y découvre quelque chose que le palmarès des grands noms de chaque pays saisirait mal. La littérature conserve jusqu’aux façons de parler de ceux qui, eux-mêmes, ne publient jamais de livre. Cette voix-là mérite aussi une place dans nos bibliothèques.
 
-![Ce que fait le roman, ce que complète le document.](figures/lire-et-enqueter.svg)
+![Figure 2 — Ce que fait le roman, ce que complète le document.](figures/lire-et-enqueter.svg)
 
 > [!METHODE]
-> Vérifier que chaque exemple est suivi d’une observation personnelle sur son effet. La copie peut être défendue sans supposer que le lecteur connaît déjà toutes les œuvres mentionnées.
+> À la question A1, recopiez la phrase choisie puis demandez-vous ce que désigne chacun de ses noms abstraits. L’ouverture du discours donne directement les éléments qui permettent d’expliquer « littérature » et « civilisation ».
 
 > [!METHODE]
 > À la deuxième explication, suivre la concession « soit » puis la reprise « surtout ». L’orateur accepte l’utilité des réverbères et déplace la priorité vers l’instruction de ceux qui circulent dans ces rues.

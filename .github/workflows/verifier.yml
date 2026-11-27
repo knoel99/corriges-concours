@@ -21,6 +21,10 @@ jobs:
         if: github.event_name == 'pull_request'
         run: python3 scripts/couverture_astra.py --depuis "origin/$GITHUB_BASE_REF" --exiger
 
+      - name: Vérifier l’intégralité de la campagne X et ENS avant la fusion finale
+        if: github.event_name == 'pull_request' && github.head_ref == 'campagne/x-ens-astra-ultra' && github.base_ref == 'master'
+        run: python3 scripts/couverture_astra.py --integral
+
       - name: Identifier les changements à publier sur le site
         id: changements
         if: github.event_name == 'push'

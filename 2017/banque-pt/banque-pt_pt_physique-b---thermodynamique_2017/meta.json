@@ -1,0 +1,296 @@
+{
+  "slug": "banque-pt_pt_physique-b---thermodynamique_2017",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique B - Thermodynamique",
+    "annee": 2017
+  },
+  "questions": 35,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2017/ph_b_th_2017_pt.pdf",
+    "sujet_sha256": "429a82e44b0b995765e2fc77bf7a58afec65283ebfe2b3b14a0a87df89eba23a",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2017/rapport_phys_b_ecrit_2017.pdf",
+    "rapport_sha256": "6340b32bac0aa6690c3b9741fdb047d0e662d0a59a57c91ba324ec240bc1a1eb",
+    "notice": "https://www.banquept.fr/documents/livret/2017/Livret_PT_2017.pdf#page=12",
+    "notice_sha256": "1394eaaed446366dd92559cf578f8d521cdd65d6dd125906febc0cbdc627e5a3"
+  },
+  "figures": [
+    {
+      "fichier": "figures/installation.svg",
+      "question": "Q5",
+      "legende": "Organes et états dans la disposition de la figure f.2"
+    },
+    {
+      "fichier": "figures/diagrammes.svg",
+      "question": "Q9",
+      "legende": "Cycle sur les plans pression-enthalpie et température-entropie des figures f.4 et f.5"
+    },
+    {
+      "fichier": "figures/clapeyron.svg",
+      "question": "Q30",
+      "legende": "Diagramme de Clapeyron f.3 avec les deux cycles superposés"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "35 questions, figures et tableaux des annexes sur le thème « Chauffage d’une habitation par une pompe à chaleur au R407C »."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture des deux faces de l’annexe, vérification du repérage des organes et des axes des trois diagrammes, lecture encadrée du volume en F, correction de la précision de la compression et contrôle des trois contributions du condenseur."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21",
+      "Q22",
+      "Q23",
+      "Q24",
+      "Q25",
+      "Q26",
+      "Q27",
+      "Q28",
+      "Q29",
+      "Q30",
+      "Q31",
+      "Q32",
+      "Q33",
+      "Q34",
+      "Q35"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Q1",
+        "page_pdf": 4,
+        "intitule": "Nomenclature des fluides"
+      },
+      {
+        "question": "Q2",
+        "page_pdf": 4,
+        "intitule": "Filtration des ultraviolets"
+      },
+      {
+        "question": "Q3",
+        "page_pdf": 4,
+        "intitule": "Bilan radiatif terrestre"
+      },
+      {
+        "question": "Q4",
+        "page_pdf": 5,
+        "intitule": "Pente dans le domaine diphasé"
+      },
+      {
+        "question": "Q5",
+        "page_pdf": 5,
+        "intitule": "Repérage de la pompe à chaleur"
+      },
+      {
+        "question": "Q6",
+        "page_pdf": 5,
+        "intitule": "Travail d’un cycle récepteur"
+      },
+      {
+        "question": "Q7",
+        "page_pdf": 5,
+        "intitule": "Échangeur du logement"
+      },
+      {
+        "question": "Q8",
+        "page_pdf": 5,
+        "intitule": "Isobare d’un gaz parfait"
+      },
+      {
+        "question": "Q9",
+        "page_pdf": 5,
+        "intitule": "Trois diagrammes du cycle"
+      },
+      {
+        "question": "Q10",
+        "page_pdf": 5,
+        "intitule": "Irréversibilité dans les échangeurs"
+      },
+      {
+        "question": "Q11",
+        "page_pdf": 5,
+        "intitule": "Capacité thermique de la vapeur"
+      },
+      {
+        "question": "Q12",
+        "page_pdf": 5,
+        "intitule": "Température de compression idéale"
+      },
+      {
+        "question": "Q13",
+        "page_pdf": 5,
+        "intitule": "Production d’entropie dans le compresseur"
+      },
+      {
+        "question": "Q14",
+        "page_pdf": 5,
+        "intitule": "Variations d’enthalpie et d’entropie"
+      },
+      {
+        "question": "Q15",
+        "page_pdf": 6,
+        "intitule": "Bilan du système ouvert"
+      },
+      {
+        "question": "Q16",
+        "page_pdf": 6,
+        "intitule": "Travail et entropie de compression"
+      },
+      {
+        "question": "Q17",
+        "page_pdf": 6,
+        "intitule": "Première étape du condenseur"
+      },
+      {
+        "question": "Q18",
+        "page_pdf": 6,
+        "intitule": "Dernière étape du condenseur"
+      },
+      {
+        "question": "Q19",
+        "page_pdf": 6,
+        "intitule": "Enthalpie de vaporisation et transfert au logement"
+      },
+      {
+        "question": "Q20",
+        "page_pdf": 6,
+        "intitule": "Détente de Joule-Thomson"
+      },
+      {
+        "question": "Q21",
+        "page_pdf": 6,
+        "intitule": "Entropies du laminage"
+      },
+      {
+        "question": "Q22",
+        "page_pdf": 6,
+        "intitule": "Fraction massique de vapeur en F"
+      },
+      {
+        "question": "Q23",
+        "page_pdf": 6,
+        "intitule": "Dernière étape de l’évaporateur"
+      },
+      {
+        "question": "Q24",
+        "page_pdf": 6,
+        "intitule": "Protection du compresseur"
+      },
+      {
+        "question": "Q25",
+        "page_pdf": 6,
+        "intitule": "Chaleur fournie par l’air extérieur"
+      },
+      {
+        "question": "Q26",
+        "page_pdf": 6,
+        "intitule": "Performance électrique du chauffage"
+      },
+      {
+        "question": "Q27",
+        "page_pdf": 7,
+        "intitule": "Ordre de grandeur domestique"
+      },
+      {
+        "question": "Q28",
+        "page_pdf": 7,
+        "intitule": "Application au fonctionnement hivernal"
+      },
+      {
+        "question": "Q29",
+        "page_pdf": 7,
+        "intitule": "Avantages et contraintes d’une PAC air-air"
+      },
+      {
+        "question": "Q30",
+        "page_pdf": 7,
+        "intitule": "Cycle sans surchauffe ni sous-refroidissement"
+      },
+      {
+        "question": "Q31",
+        "page_pdf": 7,
+        "intitule": "Effet des deux prolongements"
+      },
+      {
+        "question": "Q32",
+        "page_pdf": 7,
+        "intitule": "Refroidissement de la maison"
+      },
+      {
+        "question": "Q33",
+        "page_pdf": 7,
+        "intitule": "Puissance électrique et débit de réfrigérant"
+      },
+      {
+        "question": "Q34",
+        "page_pdf": 7,
+        "intitule": "Couplage des débits dans l’échangeur intérieur"
+      },
+      {
+        "question": "Q35",
+        "page_pdf": 7,
+        "intitule": "Bilan numérique du logement"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "annexes": "Figure f.1 page 4. Feuille à rendre en deux faces, pages PDF 9 et 10, figures f.2 à f.5. La superposition de la question 30 reprend la figure f.3."
+  }
+}

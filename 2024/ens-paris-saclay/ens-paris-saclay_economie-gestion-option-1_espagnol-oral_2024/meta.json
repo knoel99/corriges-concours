@@ -1,0 +1,85 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_espagnol-oral_2024",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Espagnol (oral)",
+    "annee": 2024,
+    "modalite": "oral"
+  },
+  "questions": 3,
+  "intitule": "Trois reportages hispanophones à présenter et à commenter",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2024_Rapport%20LV%20Espagnol_EcoG1_Oral.pdf#page=1",
+    "sujet_sha256": "4c67e24821b4ce6ddb13ef1e87aeef0fd310a21c626212f86bc93bbc5a62c264",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2024_Rapport%20LV%20Espagnol_EcoG1_Oral.pdf",
+    "rapport_sha256": "4c67e24821b4ce6ddb13ef1e87aeef0fd310a21c626212f86bc93bbc5a62c264",
+    "index": "https://ens-paris-saclay.fr/node/10377",
+    "videos_sources": [
+      {
+        "numero_dans_le_rapport": "1",
+        "date_imprimee": "2024-05-04",
+        "titre_imprime": "Protestas en España contra el turismo de masas",
+        "chaine_de_publication": "DW Español",
+        "date_affichee_par_la_plateforme": "2024-05-04",
+        "identifiant_video": "ziUpMflrhes",
+        "page_video": "https://www.youtube.com/watch?v=ziUpMflrhes"
+      },
+      {
+        "numero_dans_le_rapport": "2",
+        "date_imprimee": "2024-05-15",
+        "titre_imprime": "Milei baja la inflación en Argentina a costa de una severa recesión",
+        "chaine_de_publication": "DW Español",
+        "date_affichee_par_la_plateforme": "2024-05-14",
+        "identifiant_video": "2cj4Izh0Gho",
+        "page_video": "https://www.youtube.com/watch?v=2cj4Izh0Gho"
+      },
+      {
+        "numero_dans_le_rapport": "3",
+        "date_imprimee": "2024-02-06",
+        "titre_imprime": "México se encamina a aprobar la jornada laboral de 40 horas semanales",
+        "chaine_de_publication": "DW Español",
+        "date_affichee_par_la_plateforme": "2024-02-05",
+        "identifiant_video": "iX6jsJAbIoY",
+        "page_video": "https://www.youtube.com/watch?v=iX6jsJAbIoY"
+      }
+    ]
+  },
+  "redaction": "Trois comptes rendus fondés sur les éléments publiés par les diffuseurs, trois commentaires et trois échanges argumentés, figure comparative, contrôle des identifiants et des dates.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "2",
+      "fichier": "figures/trois-mesures-des-prix.svg",
+      "legende": "Les trois taux argentins d’avril 2024 comparent le même mois à trois dates de départ différentes."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "espagnol_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Trois comptes rendus fondés sur les éléments publiés par les diffuseurs, trois commentaires et trois échanges argumentés, figure comparative, contrôle des identifiants et des dates.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [],
+    "questions_partiellement_traitees": [
+      "Protestas en España contra el turismo de masas",
+      "Milei baja la inflación en Argentina a costa de una severa recesión",
+      "México se encamina a aprobar la jornada laboral de 40 horas semanales"
+    ],
+    "questions_non_traitees": [],
+    "precision": "Les trois publications sources sont identifiées par leur titre et leur chaîne. Le jury ne donne ni la durée ni les bornes des passages effectivement entendus. Les comptes rendus ci-dessous exposent les éléments documentés ; la restitution exacte des extraits demeure ouverte. Les dates affichées par la plateforme pour l’inflation argentine et la semaine de quarante heures précèdent d’un jour celles du rapport (14 et 15 mai, 5 et 6 février)."
+  }
+}

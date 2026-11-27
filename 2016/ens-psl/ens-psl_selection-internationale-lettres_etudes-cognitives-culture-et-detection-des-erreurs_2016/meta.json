@@ -1,0 +1,88 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_etudes-cognitives-culture-et-detection-des-erreurs_2016",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Études cognitives — culture et détection des erreurs",
+    "annee": 2016,
+    "modalite": "écrit"
+  },
+  "intitule": "Études cognitives — culture et détection des erreurs",
+  "gabarit": "questions",
+  "questions": 14,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "index": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2016-lettres",
+    "sujet": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/sujet%20e%CC%81crits%20SIL%202016.pdf",
+    "sujet_sha256": "ea94d8504b502c5412458f5d4eeab050fbec8ebacc7dcc2f7741f8d5ce1db011",
+    "pages": 2,
+    "annexes": [
+      {
+        "titre": "Sperber et Hirschfeld (2004)",
+        "url": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/Sperber_Hirschfel_2004.pdf",
+        "sha256": "bc6fb78da732267b9982f19cad761ce5f3c91487d1cc8b9dcf6f11941264ed13",
+        "pages": 7
+      },
+      {
+        "titre": "Logan et Crump (2010)",
+        "url": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/CrumpLoganScience2010.pdf",
+        "sha256": "75a1ee60f52cb39e9ea37e5dcbcbc53a8a9def3ceb0b4446c989a62e7f0d41ac",
+        "pages": 5
+      }
+    ]
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Sperber et Hirschfeld · 1. Pourquoi certaines représentations durent-elles ?",
+      "Sperber et Hirschfeld · 2. L’hypothèse de dispositions spécialisées",
+      "Sperber et Hirschfeld · 3. Définir la culture et discuter la définition",
+      "Sperber et Hirschfeld · 4. Domaine propre, domaine réel",
+      "Sperber et Hirschfeld · 5. Peser les observations",
+      "Sperber et Hirschfeld · 6. Une conséquence pour la théorie de la culture",
+      "Sperber et Hirschfeld · 7. Jusqu’où s’étend l’explication ?",
+      "Logan et Crump · 1. L’objectif de l’étude",
+      "Logan et Crump · 2. Deux prédictions concurrentes",
+      "Logan et Crump · 3. Créer et mesurer le désaccord",
+      "Logan et Crump · 4. L’hypothèse retenue",
+      "Logan et Crump · 5. Comment les deux boucles peuvent-elles diverger ?",
+      "Logan et Crump · 6. L’asymétrie des attributions en expérience 3",
+      "Logan et Crump · 7. Ce que le résultat suggère pour la cognition"
+    ],
+    "precision": "Deux questionnaires bilingues de sept questions, même numérotation en français et en anglais. Domaines propre et réel, transmission culturelle, quatre conditions de frappe et asymétrie des jugements en expérience 3."
+  },
+  "figures": [
+    {
+      "fichier": "figures/domaines-visage.svg",
+      "legende": "Croiser la présence d’un visage et sa détection",
+      "question": "Sperber et Hirschfeld, question 4"
+    },
+    {
+      "fichier": "figures/frappe-et-ecran.svg",
+      "legende": "Ralentissement de la frappe et jugement binaire dans l’expérience 2",
+      "question": "Logan et Crump, questions 3 et 4"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "cognition_ecrits_2016_2017",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions et de deux illustrations après confrontation des quatorze questions et des deux articles distribués. Domaines propre et réel, transmission culturelle, quatre conditions de frappe et asymétrie des jugements en expérience 3."
+    }
+  ]
+}

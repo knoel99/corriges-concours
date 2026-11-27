@@ -1,0 +1,68 @@
+{
+  "slug": "ens_mp-pc_allemand-lv1_2007",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Allemand (LV1)",
+    "annee": 2007,
+    "modalite": "écrit"
+  },
+  "intitule": "Faire de la musique à l’école",
+  "questions": 3,
+  "redaction": "Version intégrale en français et traitement de toutes les questions en allemand, avec lecture guidée du passage.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2007/sujet-ecrit-2007-mp-pc_langue_vivante_1.pdf#page=2",
+    "sha256_sujet": "15f4c97a9eb06e463e4a884fa769e62b3ea7db6a925e0c92fce4dfe70e89da5b",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2007",
+    "ecoles": "ENS de Paris, de Lyon et de Cachan",
+    "reference_des_textes": "D’après Die Zeit, numéro 49, 30 novembre 2006.",
+    "page_version": "2",
+    "code_garde": "71.12PM",
+    "pages_sujet": "2",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2007/rapport-2007-pc_ecrit_langue_vivante_1_allemand.pdf",
+    "sha256_rapport_jury": "a7844a10d17604f13c6bf4e021b4ce86b1761f25b4d09a50dcfbaf5211a79962",
+    "pages_rapport_jury": "1–2"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Version",
+      "fichier": "figures/apprentissage-musical.svg",
+      "legende": "Le protocole évoqué dans l’article associe trois activités."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Le rapport commun aux MP et PC traite la version sur la pratique de la musique et les deux questions."
+    },
+    {
+      "phase": "redaction",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et traitement de toutes les questions en allemand, avec lecture guidée du passage."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version",
+      "Q1",
+      "Q2"
+    ]
+  }
+}

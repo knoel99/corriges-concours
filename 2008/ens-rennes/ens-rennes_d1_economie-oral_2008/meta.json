@@ -1,0 +1,107 @@
+{
+  "slug": "ens-rennes_d1_economie-oral_2008",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Économie (oral)",
+    "annee": 2008,
+    "modalite": "oral"
+  },
+  "intitules": {
+    "1": "Les canaux de transmission de la politique monétaire (sur l’économie réelle).",
+    "2": "Les enjeux de l’investissement",
+    "3": "La consommation",
+    "4": "L’inflation",
+    "5": "La déréglementation financière est-elle un facteur favorable à la croissance ?",
+    "6": "Faut-il alléger la fiscalité en France ?",
+    "7": "« Trop d’impôt tue l’impôt »"
+  },
+  "questions": 7,
+  "sources": {
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-d1-2008",
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/r1a_08_d1_ecosocial_1404897104294.pdf#page=5",
+    "sujet_sha256": "5e82335f577a923bc4e348dd804dce06195d7fe5c2b839391db92d4c2aa49d24",
+    "sujet_pages": 5,
+    "page_pdf": 5,
+    "fin_pdf": 5,
+    "source_via_rapport": true,
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/r1a_08_d1_ecosocial_1404897104294.pdf#page=4",
+    "rapport_sha256": "5e82335f577a923bc4e348dd804dce06195d7fe5c2b839391db92d4c2aa49d24",
+    "rapport_pages": 5,
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "intitules_feuille": [],
+    "exemples_rapport": [
+      "Les canaux de transmission de la politique monétaire (sur l’économie réelle).",
+      "Les enjeux de l’investissement",
+      "La consommation",
+      "L’inflation",
+      "La déréglementation financière est-elle un facteur favorable à la croissance ?",
+      "Faut-il alléger la fiscalité en France ?",
+      "« Trop d’impôt tue l’impôt »"
+    ],
+    "references_complementaires": {
+      "BCE, stratégie de 2003": "https://www.ecb.europa.eu/pub/pdf/mobu/mb200305en.pdf",
+      "BCE, rapport annuel 2007": "https://www.ecb.europa.eu/pub/pdf/annrep/ar2007en.pdf",
+      "France, loi du 21 août 2007": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000278649"
+    }
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "limite_documentaire": "Sept exemples cités page 5 du rapport commun. La feuille exhaustive des tirages de cette session reste à retrouver.",
+    "numerotation": "Numérotation éditoriale dans l’ordre des sept puces imprimées du jury."
+  },
+  "redaction": "Rédaction des exposés pour les sept exemples de tirages cités page 5 du PDF. Les deux éditions contiennent pour chacun un raisonnement économique, un exemple et une relance résolue. Les questions de relance sont proposées pour l’entraînement.",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du rapport d’oral aux pages 4 et 5 du PDF commun, conseils de méthode et inventaire des sept exemples."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des exposés pour les sept exemples de tirages cités page 5 du PDF. Les deux éditions contiennent pour chacun un raisonnement économique, un exemple et une relance résolue. Les questions de relance sont proposées pour l’entraînement.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "fichier": "figures/transmission-monetaire.svg",
+      "legende": "Après une hausse du taux directeur, trois conditions de transmission distinctes relient la décision à la dépense réelle."
+    },
+    {
+      "numero": 2,
+      "question": "7",
+      "fichier": "figures/recette-et-assiette.svg",
+      "legende": "Dans le modèle illustratif R(t) = 100 t (1 − t), un même rendement de 16 correspond à deux taux, 20 % et 80 %."
+    }
+  ]
+}

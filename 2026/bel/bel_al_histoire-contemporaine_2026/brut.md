@@ -12,6 +12,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Sujet de l’écrit commun de six heures, « Construire l’État, transformer les sociétés au Moyen-Orient 1920-2011 ».
 
 **Problématique** — Comment les pouvoirs qui ont entrepris de transformer les sociétés du Moyen-Orient ont-ils construit leurs moyens d’action, et comment les groupes concernés ont-ils infléchi à leur tour les institutions, de 1920 à 2011 ?
@@ -21,6 +23,10 @@ Sujet de l’écrit commun de six heures, « Construire l’État, transformer l
 En avril 1920, les Alliés réunis à San Remo attribuent à la France et à la Grande-Bretagne des mandats sur d’anciennes provinces arabes de l’Empire ottoman. Le même mois, une assemblée se réunit à Ankara et revendique le droit de gouverner au nom de la nation. Qui, des puissances victorieuses, du gouvernement ottoman à Istanbul ou des représentants réunis en Anatolie, pourra lever l’impôt, recruter des agents et faire appliquer la loi ? La question ne se résout pas à la table des négociations. Le projet de paix signé à Sèvres en août 1920 reste inappliqué. À Lausanne, en 1923, la délégation d’Ankara obtient une révision décisive du règlement territorial en Anatolie.
 
 Construire l’État, au sens concret, suppose de réunir des ressources, de fixer des compétences et de disposer de personnes capables de les exercer. Le renouvellement d’un régime peut modifier la distribution de ces pouvoirs tout en conservant ses administrations. Les sociétés que ces institutions engagent sont elles-mêmes diverses. Les effets d’une réforme foncière, par exemple, diffèrent selon que l’on est propriétaire, fermier ou ouvrier sans terre. Le champ s’étend de l’Égypte à l’Iran, en incluant la Turquie, le Levant, l’Irak et les pays de la péninsule Arabique. Il comprend aussi des populations, en particulier kurdes et palestiniennes, dont les aspirations nationales se heurtent au partage des territoires.
+
+L’écart entre Sèvres (1920) et Lausanne (1923) indique qui peut désormais négocier. Le gouvernement du sultan a signé le premier traité. À Lausanne, la délégation du gouvernement d’Ankara représente la Turquie après les victoires militaires nationalistes et l’abolition du sultanat en 1922. Le changement de signataire fait voir la construction de l’État dans l’acte diplomatique lui-même.
+
+![Figure 1 — En 1920–1923, la mobilisation à Ankara modifie le règlement préparé par les Alliés](figures/sevres-lausanne.svg)
 
 Les réformateurs de 1920 ont hérité des administrations ottomanes et, en Iran, des institutions qadjars déjà contestées et réformées par le mouvement constitutionnaliste du début du siècle. Quand des manifestants, en 2011, demandent des comptes à leurs dirigeants, ils s’adressent à des États qui ont étendu de façon très inégale leur présence dans la vie quotidienne. Entre ces deux moments, des groupes sociaux ont soutenu des réformes, en ont contesté le bénéfice ou ont construit eux-mêmes des institutions.
 

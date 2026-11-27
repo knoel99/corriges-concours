@@ -1,0 +1,98 @@
+{
+  "slug": "ens_mp_informatique_2010",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Informatique",
+    "annee": 2010,
+    "duree_heures": 4
+  },
+  "questions": 30,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-mp/session-2010/INFORMATIQUE%2010.04M.pdf",
+    "sujet_sha256": "e07e49d1cacefad9ff889ca8c973702a35e582d84321787f98c2b2c7ebe52be5",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/session-2010/Rapport_ecrit_%20info.pdf",
+    "rapport_sha256": "c4a16a3914890696c4cdad8b4adc324d45f5025d377656b9fd0841641fbb5a35",
+    "page_organisateur": "https://banques-ecoles.fr/cms/filiere-mp/les-annales-et-rapports-des-jurys/",
+    "identification": "Le cahier de quatre heures est commun aux ENS de Paris, Lyon et Cachan pour le groupe I de MP. Les 30 questions étudient des programmes à compteurs entiers et les systèmes à addition de vecteurs avec états."
+  },
+  "figures": [
+    {
+      "fichier": "figures/schema-du-multiplicateur.svg",
+      "question": "3",
+      "legende": "Les deux boucles transfèrent la réserve conservée. Seules les visites en B peuvent produire des unités du dernier compteur."
+    },
+    {
+      "fichier": "figures/contre-exemples-images.svg",
+      "question": "19",
+      "legende": "Les arcs a et b forment un aller-retour. L’arc c n’a de sommet commun avec aucun d’eux."
+    },
+    {
+      "fichier": "figures/franchissement-du-seuil.svg",
+      "question": "29",
+      "legende": "Vue d’une seule coordonnée protégée. Son crédit au premier franchissement lui permet de rester admissible pendant le suffixe court."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 30 questions depuis les huit pages numérisées et le rapport du jury. Vérification des deux programmes à compteurs, des bornes en nombre de transitions et de configurations, du support réellement parcouru en question 26 et des cas dégénérés. Trois figures originales et exploration exhaustive sur petits vecteurs."
+    },
+    {
+      "phase": "relecture",
+      "agent": "reprise_physique_ulm",
+      "session": "reprise_physique_ulm",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Attestation de couverture sur le fac-similé. Les 30 demandes du cahier de huit pages ont été rapprochées des solutions des deux éditions, y compris le bilan de l’image de Parikh et le support de la transition en Q26. La multiplication faible a été recalculée par exploration des configurations pour les deux entrées de 0 à 3."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30"
+    ],
+    "verification": "Les 30 demandes du cahier de huit pages ont été rapprochées des solutions des deux éditions, y compris le bilan de l’image de Parikh et le support de la transition en Q26. La multiplication faible a été recalculée par exploration des configurations pour les deux entrées de 0 à 3."
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "slug": "x-ens_mp-pc-psi_francais_2018",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Français",
+    "annee": 2018,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "Matthieu Letourneux et l’indifférence de l’aventure à la justice",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_MPPC_sujet_Fr.pdf",
+    "sha256_sujet": "d6962e1472ac784c15789850b1abb8d79e5735e8f2df9fb7447de39a2f5f479b",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/10/18_MPPC_rapport_eFran.pdf",
+    "sha256_rapport_jury": "0f887944a7a0e8cf9e42b942d69f7c6a018163564ba86d4e47bd1d2b3cc306a1",
+    "index_sujet": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2018/",
+    "code_garde": "XEULCR",
+    "oeuvres_au_programme": [
+      "Homère, L’Odyssée",
+      "Joseph Conrad, Au cœur des ténèbres",
+      "Vladimir Jankélévitch, L’Aventure, l’ennui, le sérieux, chapitre I sur l’aventure"
+    ],
+    "portee_rapport": "La page unique du sujet commun XEULCR nomme les trois filières. Le rapport de quinze pages porte MP et PC et précise le corpus. Il examine la portée d’« indifférent », les règles de l’hospitalité, la fiction civilisatrice et les transformations produites par la narration.",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_MPPC_sujet_Fr.pdf",
+        "sha256": "d6962e1472ac784c15789850b1abb8d79e5735e8f2df9fb7447de39a2f5f479b",
+        "pages": 1
+      },
+      {
+        "role": "rapport",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/10/18_MPPC_rapport_eFran.pdf",
+        "sha256": "0f887944a7a0e8cf9e42b942d69f7c6a018163564ba86d4e47bd1d2b3cc306a1",
+        "pages": 15
+      }
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/aventure-et-hospitalite.svg",
+      "question": "Dissertation",
+      "legende": "Un même épisode met en jeu trois questions différentes. Le dénouement d’un danger, le droit de l’hôte et le jugement du public ne coïncident pas."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "option_info_2006_2009",
+      "agent": "option_info_2006_2009",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Dissertation et étude guidée sur le jugement de Letourneux. Lecture rapprochée du Cyclope et des Phéaciens, des deux scènes européennes du récit de Marlow et du rapport entre jeu et sérieux chez Jankélévitch. Une figure dans les deux éditions."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "limites": "Une interprétation argumentée du sujet. Les exemples des œuvres sont paraphrasés sauf indication explicite."
+  }
+}

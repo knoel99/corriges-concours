@@ -63,6 +63,15 @@ def test_deux_editions_signees(tmp_path, phase, role, vitesse, fin):
         )
     (tmp_path / "meta.json").write_text(json.dumps(meta))
     assert couverture.verifier_paire(tmp_path) == ("signature présente", {signature})
+    assert couverture.verifier_paire(tmp_path, integralite=True)[0] == "signature présente, couverture à confirmer"
+    for valeur in ("complet", {"statut": "complet"}):
+        meta["couverture"] = valeur
+        (tmp_path / "meta.json").write_text(json.dumps(meta))
+        assert couverture.verifier_paire(tmp_path, integralite=True)[0] == "signature présente"
+    for valeur in ("partielle", {"statut": "complet", "questions_non_traitees": [3]}):
+        meta["couverture"] = valeur
+        (tmp_path / "meta.json").write_text(json.dumps(meta))
+        assert couverture.verifier_paire(tmp_path, integralite=True)[0] == "signature présente, corrigé partiel"
     meta["couverture"] = {"statut": "partiel"}
     (tmp_path / "meta.json").write_text(json.dumps(meta))
     assert (
@@ -90,6 +99,10 @@ def test_pas_de_relecture_attribuee_par_inference(modification):
 
 
 def test_lien_vers_fiche_simple_ou_filiere_administrative():
+    assert couverture.fiches_site("x_m-prime-p-prime_deuxieme-composition-de-mathematiques_1990") == (
+        "x_m-prime_deuxieme-composition-de-mathematiques_1990",
+        "x_p-prime_deuxieme-composition-de-mathematiques_1990",
+    )
     assert (
         couverture.fiche_site("ccinp_mp-mpi-pc-psi-tpc-tsi_anglais_2026")
         == "ccinp_mp_anglais_2026"
@@ -173,6 +186,35 @@ def test_libelle_de_matiere_change_l_adresse_de_publication(tmp_path):
     fichier.write_text(json.dumps(meta))
     assert couverture.verifier_paire(dossier) == ("signature présente", {signature})
 
+
+@pytest.mark.parametrize(
+    ("slug", "filiere", "reconnue"),
+    [
+        ("bel_bl_allemand_2017", "B/L", False),
+        ("bel_bl_allemand_2017", "BL", True),
+        ("x-ens_mp_allemand_2017", "MP-MPI", True),
+        ("x-ens_mp-pc_allemand_2017", "MP", False),
+    ],
+)
+def test_filiere_de_publication_du_corrige(tmp_path, slug, filiere, reconnue):
+    dossier = tmp_path / slug
+    dossier.mkdir()
+    signature = "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+    for edition in ("brut", "guide"):
+        (dossier / f"{edition}.md").write_text(f"# Allemand\n\n{signature}\n")
+    meta = {
+        "epreuve": {"matiere": "Allemand", "filiere": filiere},
+        "contributions": [{"phase": "redaction", "modele": "gpt-6.2-astra", "effort": "ultra"}],
+    }
+    (dossier / "meta.json").write_text(json.dumps(meta))
+    etat, signatures = couverture.verifier_paire(dossier)
+    if reconnue:
+        assert signatures == {signature}
+    else:
+        assert etat == "identité de filière à corriger pour publier sur la fiche"
+        assert not signatures
+
+
 def test_exemple_du_jury_rattache_sans_ajouter_une_epreuve():
     sujets = couverture.registre()
     slug = "bel_al_grec-oral-option-exemple-du-jury-ploutos_2026"
@@ -246,3 +288,24 @@ def test_modifier_une_edition_ne_reutilise_pas_une_signature_anterieure(tmp_path
     (dossier / "figures/schema.svg").write_text("<svg/>")
     commit()
     assert not couverture.edition_attribuee_depuis(dossier, base)
+
+
+def test_controle_internet_examine_chaque_voie(tmp_path, monkeypatch):
+    slug = "x-ens_mp_allemand_2017"
+    dossier = tmp_path / "2017" / "x-ens" / slug
+    dossier.mkdir(parents=True)
+    (dossier / "meta.json").write_text(json.dumps({"epreuve": {"filiere": "MP-MPI"}}))
+    visites = []
+
+    def visite(dossier, fiche, signatures):
+        visites.append(fiche)
+        return fiche == slug
+
+    monkeypatch.setattr(couverture, "RACINE", tmp_path)
+    monkeypatch.setattr(couverture, "registre", lambda: {slug: "écrit"})
+    monkeypatch.setattr(couverture, "exemples_documentes", lambda _: {})
+    monkeypatch.setattr(couverture, "verifier_paire", lambda _, *, integralite: ("signature présente", {"signature"}))
+    monkeypatch.setattr(couverture, "site_verifie", visite)
+    monkeypatch.setattr(couverture.sys, "argv", ["controle", slug, "--site", "--exiger"])
+    assert couverture.main() == 1
+    assert visites == [slug, "x-ens_mpi_allemand_2017"]

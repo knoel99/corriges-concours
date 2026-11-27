@@ -1,0 +1,65 @@
+{
+  "slug": "x-ens_mp-pc-psi_allemand_2019",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Allemand",
+    "annee": 2019,
+    "modalite": "écrit"
+  },
+  "intitule": "Le pouvoir des réseaux sur le recrutement, la presse et les conversations",
+  "questions": 2,
+  "redaction": "Synthèse allemande titrée des quatre pièces et réponse en allemand aux arguments de l’éditorial. Le pouvoir des réseaux sur le recrutement, la presse et les conversations.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/2019_MPPC_sujet_All.pdf",
+    "sha256_sujet": "7743edc4aab2cd24bd66728418f1000d246f75d07218c703ae34ad35018bac97",
+    "code_garde": "XEULCR",
+    "index": "https://banques-ecoles.fr/cms/session-2019-pc/",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/01/19_MPPC_rapport_eAll.pdf",
+    "sha256_rapport_jury": "fc0724c7abd0365bc51bb36bb226b2696c86b1899ffb8373fcf2241ad4d8d442",
+    "pages_sujet": 10,
+    "perimetre_sujet": "A1–A3 p. 3–7, dessin p. 8, B p. 9–10",
+    "precision_rapport": "Le rapport porte sur MP et PC. La garde du sujet inclut également PSI."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/decisions-des-plateformes.svg",
+      "legende": "Trois façons dont les usages des plateformes de la partie A influent sur une décision."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des 2 pages du rapport sur les deux productions, la langue et la lecture du dossier."
+    },
+    {
+      "phase": "redaction",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Synthèse allemande titrée des quatre pièces et réponse en allemand aux arguments de l’éditorial. Le pouvoir des réseaux sur le recrutement, la presse et les conversations."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  }
+}

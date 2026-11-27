@@ -44,5 +44,106 @@
       "modifications": true,
       "perimetre": "Rédaction des 34 questions et de leurs subdivisions sur le sujet original. Lecture visuelle des formules, correction de la distance en valuation zéro, distinction coefficients réels et entiers, contre-exemple à la continuité croissante implicite de 3.8 et cas du préfixe vide en 3.12. Vérification des récurrences formelles et des comptages de mots, trois figures originales."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7",
+      "2.8",
+      "2.9",
+      "2.10",
+      "2.11",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "3.7",
+      "3.8",
+      "3.9",
+      "3.10",
+      "3.11",
+      "3.12",
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4"
+    ],
+    "precision": "Les 34 questions du fac-similé ont été rapprochées dans leur ordre des deux éditions signées. Les solutions de chaque édition ont été retrouvées à la révision de rédaction citée.",
+    "origine_attestation": {
+      "commit_du_journal": "4686f3b523b6570345774dcb96609807aa8be84b",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction des 34 questions et de leurs subdivisions sur le sujet original. Lecture visuelle des formules, correction de la distance en valuation zéro, distinction coefficients réels et entiers, contre-exemple à la continuité croissante implicite de 3.8 et cas du préfixe vide en 3.12. Vérification des récurrences formelles et des comptages de mots, trois figures originales.",
+      "sha256_sujet_controle": "c11bf9d47ee4d56f304a51b379cede2f72cb19a16d3af9f42d2e328f2ef172a3"
+    },
+    "subdivisions_du_sujet": {
+      "1.3": [
+        "a",
+        "b"
+      ],
+      "1.5": [
+        "a",
+        "b",
+        "c"
+      ],
+      "2.2": [
+        "a",
+        "b",
+        "c"
+      ],
+      "2.3": [
+        "a",
+        "b",
+        "c"
+      ],
+      "2.9": [
+        "a",
+        "b",
+        "c"
+      ],
+      "2.11": [
+        "a",
+        "b"
+      ],
+      "3.5": [
+        "a",
+        "b",
+        "c"
+      ],
+      "3.6": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "3.8": [
+        "a",
+        "b",
+        "c"
+      ],
+      "3.12": [
+        "a",
+        "b"
+      ],
+      "4.3": [
+        "a",
+        "b"
+      ]
+    }
+  }
 }

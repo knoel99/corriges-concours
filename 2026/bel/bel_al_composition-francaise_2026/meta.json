@@ -4,9 +4,10 @@
     "concours": "BEL",
     "filiere": "AL",
     "matiere": "Composition française",
-    "annee": 2026
+    "annee": 2026,
+    "modalite": "écrit commun"
   },
-  "questions": 0,
+  "questions": 1,
   "redaction": "IA (gpt-6), relue et révisée par IA",
   "figures": [
     {
@@ -20,7 +21,7 @@
       "legende": "Au chapitre XVIII de Léry, trois voix interviennent dans la formation du nom par lequel le voyageur se fait reconnaître."
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "revision": {
     "date": "2026-11-22",
     "modele": "Codex (GPT-6)",
@@ -114,6 +115,143 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Vérification des deux éditions sur Viegnes et les œuvres, distinction du terme matériel et du but intérieur du voyage par une relecture du passage de l’Opéra."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 5,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Viegnes, médiation du truchement et transformation du nom de Léry dans la rencontre."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 6,
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Restitution du titre de l’article, de la source imprimée et de la consigne. Analyse de la temporalité du regret de Léry au chapitre XXI, contrôle du concours, du périmètre écrit et des quatre œuvres. Balisage des trois mouvements et de la conclusion."
+    }
+  ],
+  "duree_heures": 6,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens.psl.eu/sites/default/files/al_commun_francais.pdf",
+      "sha256": "8a862dda1f03b41684613944a986497b24863d642a969f9567e2d2b5cd0daff7",
+      "pages": 1,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "36d6d048b442565751facfb846d924db4abbaf9e27f8c9290248159541c92faa"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2026-11/Composition%20fran%C3%A7aise%20et%20explication%20texte%202026_0.pdf",
+      "sha256": "6c0bf330d4bbdbe882ccbcdcea189f9a6f3f52864db51cd2fb687fa910b387dc",
+      "pages": 20,
+      "pages_verifiees": [
+        {
+          "numero": 2,
+          "rendu_sha256": "fca7909e16c21571bedb25ec15dee0a74ad363c5c699e3d4ef765da3c4981778"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "e3a20d4edcbb1e9e0a5d1512a1cb3b2d15b374541eb5d8d5b6858a723fd2e698"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "72a858577861f2b675841a032ffbfaa9db31a5d16ebf46fe4d4699dedc27603d"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "c5055f020059c546f9b94d951d6ae8bb823787207513ebb0d8ea5673465e30de"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "058ff876824538a1022ecd44f088750c1230033b261954d62756ce5fc78616ef"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "4cffe01c793f8b13b8ecc80da92394500e027548e0e3f5fa24cec6af3cc0a4e1"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "94b55834042b2abf2c58c6c936a6f32f69ea54c78c1b3f2e309283ad73131ea5"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "89b4263aa589af5288fceda356f479a2ae741c100ea8c02ee6a5fe1e7a76e8cf"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "b7a5c38883b77cf8ba82a6387c33a14b97d8f2539b53e69a1900db0541e3d709"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "83bcd6f150e20e033d55e91d5f5f094079e92edd96066cbb5885f8ff3b19185f"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "e5544d3ce10ffd3e5ec4567c685b55b10769cbba9c4ea0d495cd8c8ac4347b36"
+        },
+        {
+          "numero": 13,
+          "rendu_sha256": "dd1f26709de0592140e3ad8d643a776372470d0fd99fba154f7718b8f2a66845"
+        },
+        {
+          "numero": 14,
+          "rendu_sha256": "e349170d85f57096237bb919356278799a21c0e374b996532b6467408d3cbd2a"
+        },
+        {
+          "numero": 15,
+          "rendu_sha256": "511fdade2a274fe428e0439e1ebe227ece4df75d86875d028ec74df4812ae3c2"
+        }
+      ]
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Composition française"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Composition française",
+        "page_pdf": 1,
+        "code": "LCU 671",
+        "citation": "Nul ne voyage impunément, et tout voyage est un pèlerinage, un parcours intérieur qui ne peut laisser l’individu identique à lui-même.",
+        "reference": "Michel Viegnes, « L’étrangeté dans le récit de voyage et le conte fantastique : l’exemple de Mérimée », dans Alain Guyot et Chantal Massol (dir.), Voyager en France au temps du romantisme. Poétique, esthétique, idéologie, Grenoble, ELLUG, 2003, p. 375.",
+        "consigne": "Vous discuterez cette analyse en vous référant en particulier aux œuvres au programme.",
+        "perimetre": "Discussion des deux universels, du risque, de l’orientation du pèlerinage et de la transformation par le récit et la lecture."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  },
+  "verifications_textuelles": [
+    {
+      "oeuvre": "Jean de Léry, Histoire d’un voyage faict en la terre du Brésil",
+      "passage": "Chapitre XXI",
+      "url": "https://www.ens-lyon.fr/sites/default/files/2026-11/Composition%20fran%C3%A7aise%20et%20explication%20texte%202026_0.pdf#page=6",
+      "nature": "Passage explicitement cité dans le rapport, p. 6.",
+      "elements": [
+        "« je regrette souvent » au présent ; retour récurrent du désir dans la voix du narrateur."
+      ]
     }
   ]
 }

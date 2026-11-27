@@ -1,0 +1,77 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_espagnol-oral_2021",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Espagnol (oral)",
+    "annee": 2021,
+    "modalite": "oral"
+  },
+  "questions": 7,
+  "intitule": "Siete temas económicos y políticos en la radio de 2021",
+  "sources": {
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2021_rapport_oral_D2_lv_espagnol.pdf",
+    "rapport_sha256": "a3ddad4581a8218219155842313908533cfddec8952b8c512af1ad3773691185",
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2021_rapport_oral_D2_lv_espagnol.pdf#page=1",
+    "index": "https://ens-paris-saclay.fr/node/7322",
+    "archives_et_contexte": [
+      {
+        "fonction": "comparaison, Eurobaromètre",
+        "url": "https://www.rtve.es/play/audios/europa-abierta/europa-abierta-eurobarometro-confirma-europeismo-espanoles-tiempos-covid/5889598/"
+      },
+      {
+        "fonction": "comparaison, débat homonyme",
+        "url": "https://www.rtve.es/play/audios/en-clave-turismo/clave-turismo-debate-online-salvemos-turismo-29-01-21/5776011/"
+      },
+      {
+        "fonction": "contexte, élections chiliennes",
+        "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/exteriores/Paginas/2021/170521-chile_elecciones.aspx"
+      },
+      {
+        "fonction": "contexte, examen du plan espagnol",
+        "url": "https://www.rtve.es/play/audios/24-horas/plan-recuperacion-cumpliria-europa/5852883/"
+      }
+    ]
+  },
+  "redaction": "7 supports ou thèmes numérotés accompagnés de commentaires argumentés en espagnol, d’un exercice d’entretien et d’indications propres au sujet. Les exemples contemporains sont datés et distincts des enregistrements non identifiés.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "7",
+      "fichier": "figures/tres-etapas-fondos.svg",
+      "legende": "Le vote d’une enveloppe, le paiement d’une tranche et l’évaluation d’un projet correspondent à trois étapes."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "espagnol_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "7 supports ou thèmes numérotés accompagnés de commentaires argumentés en espagnol, d’un exercice d’entretien et d’indications propres au sujet. Les exemples contemporains sont datés et distincts des enregistrements non identifiés.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [],
+    "questions_partiellement_traitees": [
+      "Impuestos y multinacionales",
+      "Eurobarómetro 2021",
+      "El sector turístico en tiempos de Covid",
+      "Salvemos el turismo",
+      "Elecciones chilenas",
+      "Crisis migratoria en Ceuta",
+      "La letra pequeñas de las ayudas de Bruselas"
+    ],
+    "questions_non_traitees": [],
+    "precision": "Le rapport donne les titres ou mots clés et les diffuseurs pour l’ensemble de la session. Il ne publie ni fichiers d’épreuve, ni bornes, ni questions individuelles. Les commentaires et les relances répondent aux thèmes attestés. Les archives citées comme points de comparaison ont une attribution distincte de celle des extraits."
+  }
+}

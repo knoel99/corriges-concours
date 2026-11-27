@@ -6,17 +6,27 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+**Couverture vérifiée.** La composition de la page 2 est traitée dans les deux éditions. La relecture a porté sur les revendications antérieures aux indépendances, les nationalisations, les politiques industrielles et les contraintes monétaires de la fin du siècle. Le changement de parité du franc CFA en 1994 est vérifié dans la chronologie de la BEAC et appliqué aux achats comme aux recettes d’exportation.
+
 ## Transformer « dans quelle mesure » en critères d’enquête
 
 Déterminer d’abord ce qui change de mains. En Égypte, le gouvernement prend le contrôle de la compagnie du canal en 1956. Demander ensuite quelles recettes il peut percevoir, ce qu’il peut financer et quelles contraintes restent en place. Ce passage du droit de propriété aux capacités de décision et de production fournit le fil de la dissertation.
 
 ![Figure 1 — Trois degrés de maîtrise économique](figures/degres-maitrise.svg)
 
+Pour chaque étude de cas, cherchez trois pièces de nature différente : un texte fixant les droits de propriété, une source budgétaire retraçant les recettes et un indicateur de transformation productive. Précisez à quelle date et pour quelle branche chaque pièce est probante.
+
 **Comparer deux producteurs plutôt que deux listes de dates.** L’exportateur d’hydrocarbures et l’importateur de pétrole peuvent tous deux être d’anciennes colonies. Une hausse du prix du baril n’a pourtant pas la même incidence sur leurs réserves de change. Calculer mentalement les termes de l’échange comme le rapport du prix des exportations au prix des importations évite de donner un sens unique au « Sud ».
 
 **Choisir un terme de comparaison.** Un pays endetté qui a gardé son indépendance peut aussi subir des conditionnalités. Pour parler de continuité coloniale, il faut documenter un lien précis, par exemple la structure d’un circuit de collecte, le rôle de l’ancienne métropole dans un accord monétaire ou la persistance de droits attribués à une entreprise.
 
 **Relire la copie.** Pour chaque instrument, souligner une réalisation et une limite observables. Dater Bandung, la CNUCED et le nouvel ordre économique international séparément. Couvrir la période antérieure aux indépendances et les deux dernières décennies du siècle. La question occupe la page 2 du fascicule commun d’options.
+
+Exprimez d’abord les deux cours dans le même sens. Le prix d’un franc français en francs CFA double, tandis que la valeur d’un franc CFA en francs français est divisée par deux. Pour passer du change nominal à un effet de développement, demandez qui paie l’équipement importé et qui reçoit la recette d’exportation.
 
 ## Proposition de dissertation
 
@@ -41,6 +51,8 @@ Ces stratégies ont une dimension collective. La conférence de Bandung en 1955 
 ### III. La fin du siècle dissocie souveraineté, autonomie financière et transformation productive
 
 La continuité de certaines monnaies et de certains réseaux d’entreprise donne du contenu à la critique du néocolonialisme. Plusieurs États africains indépendants conservent le franc CFA avec une parité garantie par la France. Leur appartenance à une union monétaire facilite certains paiements tout en limitant leur capacité individuelle de modifier le change. La dévaluation de 1994 révèle le rôle des négociations entre États africains, France et institutions financières. On ne peut déduire le degré d’autonomie de la seule présence de partenaires étrangers. Il faut examiner les droits de décision, les coûts de sortie, les possibilités de financer une autre politique et les intérêts des acteurs nationaux.
+
+Au 12 janvier 1994, un franc français s’échange contre 100 francs CFA, contre 50 auparavant. Une pièce de machine vendue 20 francs français revient donc à 2 000 francs CFA au lieu de 1 000, si le fournisseur garde son prix. À l’inverse, une vente de cacao réglée 20 francs français rapporte désormais 2 000 francs CFA à l’exportateur. La part de ce gain qui atteint le cultivateur dépend du prix payé à la production et des prélèvements. La même négociation monétaire modifie ainsi de façon différente la capacité d’investissement de l’importateur et le revenu des producteurs. [Chronologie monétaire de la BEAC](https://www.beac.int/billets-pieces/histoire-franc-cfa/)
 
 Les difficultés d’endettement des années 1980 font apparaître un autre type de contrainte. La remontée des taux internationaux, la dégradation de recettes d’exportation ou des investissements peu productifs rendent le refinancement difficile. L’accès à de nouveaux concours peut être assorti de programmes d’ajustement, qui limitent les marges budgétaires et reconfigurent les entreprises publiques. La dépendance envers des créanciers multilatéraux ou privés ne reproduit pas institutionnellement l’empire. Elle peut cependant réduire le choix des priorités dans un État juridiquement souverain. Les coalitions au pouvoir y participent aussi, et les coûts d’une politique peuvent être très inégalement distribués entre producteurs agricoles, salariés des villes et détenteurs de capitaux.
 

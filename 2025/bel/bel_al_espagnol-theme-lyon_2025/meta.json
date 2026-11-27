@@ -1,0 +1,95 @@
+{
+  "slug": "bel_al_espagnol-theme-lyon_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Espagnol (thème Lyon)",
+    "annee": 2025,
+    "modalite": "écrit"
+  },
+  "duree_heures": 4,
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2025-09/251113.pdf#page=14",
+    "sujet_sha256": "b7d09bb818f637ec169e3e81e4912858b211e06941981935364478be20cd6766",
+    "page_pdf_sujet": 14,
+    "pages_fascicule": 20,
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2025-11/Espagnol%202025%20OK%20Lyon%20RELU.pdf#page=12",
+    "sha256_rapport_jury": "94f783907268553b2518bda4795913e33a7e49baa49411d77d33bef13a57109f",
+    "pages_rapport_verifiees": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "ouvrage": "René Barjavel, Ravage (1943)",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2025"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/temps-du-discours.svg",
+      "question": "Thème intégral",
+      "legende": "Trois temps de la mission dans la voix de François"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Thème intégral en espagnol"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes_par_paragraphe": [
+      "Le bruit, Teste, Colette, le garde et les deux chevaux.",
+      "François distribue les rations, puis interpelle Pierre.",
+      "Départ de Pierrot et trajet des cours d’eau jusqu’au retour attendu.",
+      "La marche du groupe et les deux injonctions finales."
+    ]
+  },
+  "contributions": [
+    {
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "phase": "redaction",
+      "perimetre": "Traduction complète du passage, indications, commentaire des variantes et schéma de lecture."
+    },
+    {
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "perimetre": "Précision de la contenance de chaque boîte et du choix entre deux chevaux. Rétablissement de la reprise du verbe marcher et du ton de l’impératif final."
+    }
+  ]
+}

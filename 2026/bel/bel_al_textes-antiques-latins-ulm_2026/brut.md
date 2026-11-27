@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## L’amitié chez Ovide et le récit de Tacite
 
 ### I. Commentaire d’Ovide · L’épreuve de l’amitié dans les *Tristes*
@@ -25,6 +27,12 @@ L’originalité de la série mythologique tient aux témoins convoqués. Ovide 
 **Rendre à l’orateur le don de sa lecture.** Aux larmes qui devraient accompagner sa disgrâce, Ovide oppose un fait surprenant. L’avancement de son ami le réjouit. *Serena* (v. 40) éclaircit le ciel qui s’était obscurci au vers 6. Cette éclaircie devient possible parce que le bonheur de deux personnes ne varie pas nécessairement ensemble. L’ami s’élève et le poète exilé trouve encore dans cette réussite une raison qui lui est propre de se réjouir. Les temps du récit remontent à une parole ancienne. *Vidi* (v. 41), *dixi* (v. 47), *tuli* (v. 52) attribuent à Ovide un acte antérieur à la lettre. Il avait reconnu très tôt les dispositions de son ami, dont la parole rend bonne chaque cause, et lui avait prédit une vaste scène. Sous la métaphore de la scène, il faut entendre la publicité d’une carrière d’orateur.
 
 Comment s’autorise cette prophétie ? L’inventaire des signes divinatoires (v. 49-50) retarde la formule très courte *augurium ratio est* (v. 51). Le poète avait apprécié un caractère, une conduite et l’usage d’un talent. La raison lui suffisait pour en conjecturer le succès. Il peut donc revendiquer, en célébrant une cause rendue bonne par l’éloquence, un jugement qui appartient à sa propre parole poétique. Cette reconnaissance mutuelle devient cruelle au dernier retournement. *Ingenium* à découvert profite à l’orateur. Avec *at nostrum* (v. 55), Ovide voudrait que son talent, lui, fût demeuré dans l’obscurité. La lumière que fuyaient les amis de mauvais temps, puis celle qui faisait rayonner l’orateur, devient un danger pour le poète connu du pouvoir. Dans le dernier distique, *tibi* et *mihi*, les verbes *prosunt* et *nocuere*, disposent dans les deux vers les effets divergents des arts de chacun. Cette divergence ne détruit pas le lien. L’homme que son œuvre a desservi compose encore, pour l’ami que sert son éloquence, l’éloge capable de franchir la distance de l’exil.
+
+**Repère de lecture**
+
+Ovide fait intervenir des ennemis dans une lettre destinée à un ami. En reconnaissant eux-mêmes la fidélité des couples exemplaires, ces adversaires servent de témoins d’autant plus convaincants qu’ils n’avaient aucun intérêt à louer leurs rivaux. La lettre change ensuite d’échelle pour revenir au destinataire singulier.
+
+![Figure 1 — Les changements de relation dans la lettre d’Ovide](figures/amitie-distique.svg)
 
 ### II. Traduction de Tacite · Octavius et Pontia
 

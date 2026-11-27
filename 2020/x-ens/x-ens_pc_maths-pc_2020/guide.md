@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Les cinq parties construisent le noyau gaussien, l’espace de ses translatées et une interpolante d’énergie minimale. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/uploads/2020/11/2020_PC_sujet_Math.pdf) · [Rapport du jury](https://banques-ecoles.fr/cms/wp-content/uploads/2020/11/20_PC_rap_eMath.pdf)
 
 ## I. Produit de Schur
@@ -92,6 +94,8 @@ Pour tous $i,j$, $P_n[A]_{ij}=\sum_{k=0}^n(A_{ij})^k/k!\to e^{A_{ij}}$, la séri
 #### Solution
 
 La symétrie de $A$ donne celle de $\exp[A]$. Pour tout $u$, $u^\top\exp[A]u=\lim_n u^\top P_n[A]u$, car il s’agit d’une somme finie de coefficients convergents. Le membre de droite est une limite de nombres positifs ou nuls par 4b. D’où $\exp[A]\in\mathrm{Sym}^+(p)$.
+
+Ici l’exponentielle agit sur chaque coefficient. Par exemple, pour la matrice nulle, $\exp[0]$ est la matrice remplie de uns, positive de rang un pour $p\ge1$. Cet exemple vérifie le rôle du terme constant $A^{(0)}$ dans le passage à la limite.
 
 ### Question 5c
 
@@ -207,6 +211,8 @@ Chaque translatée appartient à $E$ par 8b. L’ensemble $G$ contient la foncti
 #### Solution
 
 On a $(y-x)^2+(y-x')^2=2(y-(x+x')/2)^2+(x-x')^2/2$. En divisant par $\lambda$ dans l’exposant et en intégrant la gaussienne translatée, on obtient $(\tau_x\gamma_\lambda\mid\tau_{x'}\gamma_\lambda)=c_\lambda\gamma_{2\lambda}(x-x')$ où $c_\lambda=\int_\mathbb R e^{-2z^2/\lambda}dz=\sqrt{\pi\lambda/2}>0$.
+
+Prendre $x=x'$ permet de contrôler la constante de normalisation. Le membre de gauche vaut $\int e^{-2(y-x)^2/\lambda}\,dy=\sqrt{\pi\lambda/2}$ et le facteur $\gamma_{2\lambda}(0)$ de droite vaut $1$.
 
 ### Question 11b
 
@@ -339,5 +345,7 @@ Par 13b les produits scalaires des translatées aux centres $x_i,x_j$ sont les $
 La solution du système est $\alpha^*=K^{-1}a$. La fonction $h_{\alpha^*}$ appartient à $S$ par 17a et à $H_0^\perp$ par 16b. La question 16a prouve qu’elle minimise l’énergie, et 14 qu’elle est l’unique minimiseur. Enfin
 $$J^*=\tfrac12(\alpha^*)^\top K\alpha^*=\tfrac12 a^\top K^{-1}a,$$
 où l’on a utilisé la symétrie de $K^{-1}$.
+
+Par exemple, avec deux centres distincts, posons $r=\exp(-(x_1-x_2)^2/(2\lambda))\in(0,1)$. La matrice $K$ a diagonale $1$ et hors-diagonale $r$. On retrouve $J^*=(a_1^2-2ra_1a_2+a_2^2)/(2(1-r^2))$. Le dénominateur est strictement positif grâce à la distinction des centres, utilisée aussi dans la preuve générale.
 
 ![Figure 1 — Les trois gaussiennes pondérées en tirets donnent par addition l’unique interpolante minimale passant par les points.](figures/interpolation-gaussienne.svg)

@@ -1,0 +1,75 @@
+{
+  "slug": "bel_bl_economie-oral-commun-politique-de-concurrence-europeenne_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Économie (oral commun) — Politique de concurrence européenne",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "La politique de concurrence européenne face aux nouveaux défis",
+  "questions": 1,
+  "sujets": 1,
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_dossiers_23_juin_economie.pdf#page=11",
+    "sujet_sha256": "e3a461318518d272cca4165a16d733c3e528cde116ca19a86b4ed561a46436b9",
+    "sujet_pages": 26,
+    "page_pdf": 11,
+    "fin_pdf": 18,
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_economie_tronc_commun.pdf",
+    "rapport_sha256": "b0b1a696afc5d758d40283be9361a3fe50abd56041e7cad3533c62eabb4c5dd7",
+    "rapport_pages": 2
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "La politique de concurrence européenne face aux nouveaux défis"
+    ],
+    "documents_entierement_traites": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "precision": "Exposé sur la question de la page PDF 11, à partir des cinq documents du dossier. Le rapport commun cite le sujet page 2. Les questions de discussion sont éditoriales."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "La politique de concurrence européenne face aux nouveaux défis",
+      "fichier": "figures/perte-seche.svg",
+      "legende": "Perte de surplus à coût marginal constant, avec une demande décroissante. Schéma théorique."
+    },
+    {
+      "numero": 2,
+      "question": "La politique de concurrence européenne face aux nouveaux défis",
+      "fichier": "figures/segments-numeriques.svg",
+      "legende": "Parts de Google pour trois segments dans l’Union européenne, en pourcentage de chaque marché, selon le tableau du document 4."
+    },
+    {
+      "numero": 3,
+      "question": "La politique de concurrence européenne face aux nouveaux défis",
+      "fichier": "figures/restrictivite-ide.svg",
+      "legende": "Restrictivité des investissements directs étrangers en 2017, de zéro pour un marché ouvert à un pour un marché fermé. Document 3."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Examen des graphiques de taux de profit et de concentration, de la restrictivité des IDE et des parts par segment. Analyse du droit antitrust, du DMA et des aides publiques. Rédaction intégrale des deux éditions, figures originales et entraînement à l’entretien."
+    }
+  ]
+}

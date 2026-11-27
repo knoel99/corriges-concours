@@ -1,0 +1,57 @@
+{
+  "slug": "x-ens_mp-pc_espagnol_2014",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC",
+    "matiere": "Espagnol",
+    "annee": 2014,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "intitule": "L’affaire Nóos et la légitimité de la Couronne",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2014/10/14_mppc_suj_lv_esp.pdf",
+    "sujet_sha256": "712951f67bae0677ee21d44628fded37e3dbeccc31a164a0346e413c8efa880f",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/01/14_mp_pc_rap_ecrit_lv_espagnol.pdf",
+    "rapport_sha256": "e2fd51d5d28eef0e748b5fd8c4ca90cfd1c56fbc3cb77c440d85c31a769b44a7",
+    "rapport_ens": "https://www.ens.psl.eu/IMG/file/concours/2014/MPI/14_mppc_rap_elv_esp.pdf",
+    "rapport_ens_sha256": "a2d4af42e68b72e3631d7e83046b0965ed44b7689942b2aa2b5d96d017b52135",
+    "page_pdf": 1,
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2014/",
+    "code_garde": "XEULCR",
+    "constitution_espagnole": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a56"
+  },
+  "redaction": "Synthèse transversale des quatre pièces du dossier et prise de position répondant à La Jornada dans le contexte de janvier 2014, avec conseils tirés du rapport d’Isabelle Mayoral.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/quatre-regards-sur-la-couronne.svg",
+      "legende": "Les documents de la partie A attribuent des sens différents aux images publiques de la monarchie."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "espagnol_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Synthèse transversale des quatre pièces du dossier et prise de position répondant à La Jornada dans le contexte de janvier 2014, avec conseils tirés du rapport d’Isabelle Mayoral.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  }
+}

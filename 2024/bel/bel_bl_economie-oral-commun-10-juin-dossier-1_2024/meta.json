@@ -1,0 +1,77 @@
+{
+  "slug": "bel_bl_economie-oral-commun-10-juin-dossier-1_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Économie (oral commun) — 10 juin, dossier 1",
+    "annee": 2024,
+    "modalite": "oral"
+  },
+  "intitule": "Les politiques commerciales face au réchauffement climatique",
+  "questions": 0,
+  "sujets": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/bl_sujets_oraux_economie_1_10062024.pdf",
+    "sujet_sha256": "f324c6658515f38aa5a54d516e06ac33a39e374ea72d886334bd78b810708076",
+    "sujet_pages": 6,
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_oral_economie_epreuve_commune.pdf",
+    "rapport_sha256": "fe5cc6dcbe4008c26a4690c9b5f2e24e5772986d17abc64298dc8717224afffe",
+    "calendrier": "https://www.ens.psl.eu/sujets-des-epreuves-orales-du-concours-bl-session-2024"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Lecture du fascicule de 6 pages avec contrôle des 5 documents et de leurs figures. Vérification des champs, unités et conclusions du commentaire.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Conception et vérification du schéma du document 2. Schéma de comptabilité construit pour la lecture du document 2, p. 3 du fascicule. Les cases décrivent des périmètres, sans représenter des volumes. Légende descriptive et alternative textuelle intégrées aux deux éditions.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
+    }
+  ],
+  "figures": [
+    {
+      "fichier": "figures/perimetres-empreinte-carbone.svg",
+      "question": "Document 2",
+      "legende": "Figure 1 — Inventaire territorial et empreinte de la consommation européenne. Les émissions européennes destinées à la consommation européenne entrent dans les deux mesures. Les émissions européennes destinées à l’étranger comptent dans l’inventaire territorial. Les émissions étrangères destinées à l’Union européenne comptent dans l’empreinte.",
+      "description": "Les émissions européennes destinées à la consommation européenne entrent dans les deux mesures. Les émissions européennes destinées à l’étranger comptent dans l’inventaire territorial. Les émissions étrangères destinées à l’Union européenne comptent dans l’empreinte.",
+      "source": "Schéma de comptabilité construit pour la lecture du document 2, p. 3 du fascicule. Les cases décrivent des périmètres, sans représenter des volumes."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "sujets_entierement_traites": [
+      "Les politiques commerciales face au réchauffement climatique"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "redaction",
+      "sha256_sujet_controle": "f324c6658515f38aa5a54d516e06ac33a39e374ea72d886334bd78b810708076",
+      "perimetre": "Lecture du fascicule de 6 pages avec contrôle des 5 documents et de leurs figures. Vérification des champs, unités et conclusions du commentaire."
+    },
+    "documents_entierement_traites": [
+      "Document 1 — Un bien public mondial dans un monde inégal",
+      "Document 2 — Lire séparément les deux axes du graphique européen",
+      "Document 3 — Deux usages différents de la frontière",
+      "Document 4 — L’exposition au commerce varie entre secteurs",
+      "Document 5 — Les bénéfices de l’atténuation sont inégalement répartis"
+    ]
+  }
+}

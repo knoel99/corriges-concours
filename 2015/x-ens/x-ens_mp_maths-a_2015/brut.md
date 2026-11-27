@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
 Les 16 numéros de l’épreuve de quatre heures comportent 33 questions et sous-questions. Le problème relie l’entrelacement des valeurs propres d’un bloc principal aux diagonales réalisables sur une orbite orthogonale et en donne une description géométrique en dimension trois. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/uploads/2015/09/15_mp_sujet_mathsA_xlcr.pdf) · [Rapport du jury reproduit par Bibmath](https://www.bibmath.net/pbs/x/xmp_2015_1_rapport.pdf)
@@ -175,7 +177,7 @@ Pour une diagonale décroissante réalisable, l’inégalité 13 pour $s=1,2$ do
 
 ### Question 16c
 
-Prenons dans l’orbite une matrice de diagonale $(m_1,m_2,m_3)$. Conjuguons-la par $\operatorname{diag}(R_\theta,1)$ avec $R_\theta$ une rotation plane. Le troisième coefficient est fixe et les deux autres sont ceux de la conjugaison du bloc principal par $R_\theta$. Leur somme est constante. Le premier varie continûment, vaut $m_1$ en $\theta=0$ et $m_2$ en $\theta=\pi/2$. Par valeurs intermédiaires, tout le segment joignant les deux diagonales est réalisable. Le même raisonnement avec $\operatorname{diag}(1,R_\theta)$ interchange les deux dernières composantes.
+Prenons dans l’orbite une matrice de diagonale $(m_1,m_2,m_3)$. Conjuguons-la par $\operatorname{diag}(R_\theta,1)$ avec $R_\theta$ une rotation plane. Le troisième coefficient est fixe et les deux autres sont ceux de la conjugaison du bloc principal par $R_\theta$. Leur somme est constante. Si $b$ est l’entrée hors diagonale du bloc, avec $c=\cos\theta$ et $s=\sin\theta$, la première ligne $(c,-s)$ de la rotation donne le premier coefficient $c^2m_1+s^2m_2-2csb$. Celui-ci varie continûment, vaut $m_1$ en $\theta=0$ et $m_2$ en $\theta=\pi/2$. Par valeurs intermédiaires, tout le segment joignant les deux diagonales est réalisable. Le même raisonnement avec $\operatorname{diag}(1,R_\theta)$ interchange les deux dernières composantes.
 
 ### Question 16d
 

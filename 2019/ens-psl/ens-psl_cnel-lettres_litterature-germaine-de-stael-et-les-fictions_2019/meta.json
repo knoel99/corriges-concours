@@ -1,0 +1,106 @@
+{
+  "slug": "ens-psl_cnel-lettres_litterature-germaine-de-stael-et-les-fictions_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "CNEL Lettres",
+    "matiere": "Littérature — Germaine de Staël et les fictions",
+    "annee": 2019,
+    "modalite": "écrit"
+  },
+  "intitule": "Littérature — Germaine de Staël et les fictions",
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/cnel_2019_lila_sujet_litterature_francaise.pdf",
+    "sujet_sha256": "6881ffcbaf37e165d9bcaf951c224d81d5c38b294476638bf049a1090776d3dc",
+    "controle_du_perimetre": "Le commentaire A vise seulement la phrase reprise page 2. La réflexion B se rapporte au passage de la page 1 et aux lectures choisies. Les cinq notes concernent le texte support."
+  },
+  "figures": [
+    {
+      "fichier": "figures/voix.svg",
+      "legende": "Comment la lecture répond à une solitude",
+      "question": "A et B"
+    }
+  ],
+  "date_revision": "2026-11-27",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de l’analyse détaillée A, de la réflexion personnelle B en plusieurs paragraphes, de son accompagnement et du schéma."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification des limites de la citation à analyser, de son insertion dans le passage, des questions distinctes et du barème 5/15 dans les deux éditions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Vérification des deux repérages de la phrase de A, des cinq notes, du barème et des consignes de B. Explication de la place de « quelques » entre la toute-puissance initiale et la condition finale du passage."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "A",
+        "page_pdf": 1,
+        "page_pdf_fin": 1,
+        "debut": "Les sentiments dont elles sont agitées sont à peine compris",
+        "fin": "quelques rayons du bonheur qui leur échappe au milieu du monde.",
+        "consigne": "Vous proposerez de cette phrase un commentaire approfondi",
+        "page_consigne": 2,
+        "points": 5
+      },
+      {
+        "question": "B",
+        "page_pdf": 1,
+        "page_pdf_fin": 1,
+        "debut": "Il y a des écrits tels que",
+        "fin": "si l’influence de son talent pouvait se perpétuer.",
+        "consigne": "Votre expérience de lecteur/lectrice vous amène-t-elle aux mêmes idées que Germaine de Staël sur la fonction des fictions dans notre vie ?",
+        "page_consigne": 2,
+        "points": 15
+      }
+    ]
+  }
+}

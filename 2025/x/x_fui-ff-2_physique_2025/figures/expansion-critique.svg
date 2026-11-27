@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="330" viewBox="0 0 600 330" role="img" aria-labelledby="title desc">
+  <title id="title">Expansion à énergie nulle</title>
+  <desc id="desc">Le facteur d’échelle croît comme le temps écoulé depuis l’origine à la puissance deux tiers. La courbe commence à H₀ t égal à moins deux tiers et passe par le point de référence (0, 1).</desc>
+  <rect width="600" height="330" fill="white"/>
+  <g stroke="#dce3e6" stroke-width="1">
+    <path d="M61 205 H555 M61 130 H555 M61 55 H555"/>
+  </g>
+  <g stroke="#344553" stroke-width="1.6" fill="none">
+    <path d="M50 280 H567 l-8 -4 m8 4 -8 4 M160 281 V28 l-4 8 m4 -8 4 8"/>
+    <path d="M73.333 276 v8 M290 276 v8 M420 276 v8 M550 276 v8"/>
+    <path d="M156 205 h8 M156 130 h8 M156 55 h8"/>
+  </g>
+  <path d="M73.333 280 C73.333 280 73.333 202.10 550 46.31" fill="none" stroke="#166c7f" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="160" cy="205" r="4.8" fill="#166c7f"/>
+  <g font-family="DejaVu Sans,sans-serif" font-size="15" fill="#202f3a" text-anchor="middle">
+    <text x="73.333" y="303">−2/3</text><text x="160" y="303">0</text>
+    <text x="290" y="303">1</text><text x="420" y="303">2</text><text x="550" y="303">3</text>
+    <text x="144" y="210">1</text><text x="144" y="135">2</text><text x="144" y="60">3</text>
+    <text x="175" y="28" font-style="italic">a</text>
+    <text x="559" y="324">H₀ t</text>
+  </g>
+</svg>

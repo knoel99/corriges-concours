@@ -23,7 +23,8 @@
     "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_24_juin_al.pdf",
     "sujet_sha256": "558e39105641d09aa8d436398b665dbbb34bd102ff1c335e280b9a6a7f070e52",
     "rapport": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf",
-    "rapport_sha256": "b7ae24985758ee21c7601a903f81ce57bdcef0cb108f8852ecd308eba32c7dca"
+    "rapport_sha256": "b7ae24985758ee21c7601a903f81ce57bdcef0cb108f8852ecd308eba32c7dca",
+    "index": "https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-al"
   },
   "figures": [
     {
@@ -37,7 +38,7 @@
       "question": "11"
     }
   ],
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -62,6 +63,98 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Confrontation de l’ordre, des choix et de chaque énoncé au feuillet et aux caractères gras de l’annexe du rapport. Vérification de la durée, des références conceptuelles, du lien entre cas concrets et thèses et de l’entraînement propre au guide."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "sociologie_psl_oraux_individuels",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rapprochement des 12 billets et des 24 intitulés avec le feuillet, les choix en gras du rapport et les développements des deux éditions. Ajout des consignes de tirage et des ouvrages autorisés, du renvoi aux sources et de 12 relances argumentées pour les alternatives dans le guidé."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "tirages_verifies": 12,
+    "sujets_choisis_verifies": 12,
+    "alternatives_verifiees": 12,
+    "intitules_par_edition": 24,
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "questions_entierement_traitees": [
+      "1. Sujet choisi — Interpréter une œuvre d’art",
+      "1. Alternative — Faut-il des héros ?",
+      "2. Sujet choisi — L’âme et le corps",
+      "2. Alternative — Pense-t-on différemment d’une langue à l’autre ?",
+      "3. Sujet choisi — Peut-on se défaire de ses préjugés ?",
+      "3. Alternative — La matière",
+      "4. Sujet choisi — Justice et vengeance",
+      "4. Alternative — Chanter",
+      "5. Sujet choisi — Avons-nous besoin de récits ?",
+      "5. Alternative — L’excuse et le pardon",
+      "6. Sujet choisi — Les personnes et les choses",
+      "6. Alternative — Peut-on dire que le temps passe ?",
+      "7. Sujet choisi — Hésiter",
+      "7. Alternative — Le document",
+      "8. Sujet choisi — Peut-on prouver l’existence ?",
+      "8. Alternative — Les mythes",
+      "9. Sujet choisi — La beauté a-t-elle une histoire ?",
+      "9. Alternative — Manger",
+      "10. Sujet choisi — Tenir sa parole",
+      "10. Alternative — À quoi servent les encyclopédies ?",
+      "11. Sujet choisi — L’honnêteté",
+      "11. Alternative — De quoi y a-t-il histoire ?",
+      "12. Sujet choisi — Avons-nous besoin des œuvres d’art ?",
+      "12. Alternative — Pacifier"
+    ],
+    "choix_dans_ordre_feuillet": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "pages_verifiees": {
+      "sujet": [
+        1
+      ],
+      "rapport": [
+        1,
+        7,
+        8
+      ]
+    },
+    "rangs_annexe_rapport": [
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99
+    ],
+    "controle": "12 billets sur le feuillet et aux rangs 88–99 dans la section V du rapport. Le sujet en gras est le sujet choisi. Chaque terme reçoit son propre développement dans chacune des deux éditions."
+  }
 }

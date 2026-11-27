@@ -11,7 +11,12 @@
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/11/2c2020_math.pdf",
     "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/11/20_2CC_rap_eMath.pdf",
-    "sha256_sujet": "5a9523104b16caa1d58b2f289aba20a6349af28f5adbfd22a57672df55bb0adb"
+    "sha256_sujet": "5a9523104b16caa1d58b2f289aba20a6349af28f5adbfd22a57672df55bb0adb",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/11/20_2CC_rap_eMath.pdf",
+    "sujet_sha256": "5a9523104b16caa1d58b2f289aba20a6349af28f5adbfd22a57672df55bb0adb",
+    "rapport_sha256": "9e6059f8930bb44dabcbd4d7e96d0d82649a3032ae791b4d691716325079d006",
+    "index_banque": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/",
+    "index_banque_sha256": "36243e7203175ea8fc3f1b47cf04cfaeff13de5e6fe10463bd7d894a9fca4bfe"
   },
   "figures": [
     {
@@ -31,6 +36,51 @@
       "perimetre": "Rédaction des 17 réponses et indications, vérifiées sur les deux pages du sujet et le rapport de la session. Normalisation des représentations, rectangles de coefficients, contrôle des collisions et justification géométrique de la probabilité du barycentre.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Contrôle des quatorze subdivisions du problème et des trois questions de l’exercice. Vérification des deux plages d’indices dans la formule de Beiter, du support des coefficients cyclotomiques sur les 91 couples de premiers impairs inférieurs à 50 et des cas de bord géométriques de l’événement de barycentre convexe.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
-  ]
+  ],
+  "questions_principales": 12,
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "P.1",
+      "P.2",
+      "P.3",
+      "P.4a",
+      "P.4b",
+      "P.5",
+      "P.6",
+      "P.7a",
+      "P.7b",
+      "P.8",
+      "P.9a",
+      "P.9b",
+      "P.9c",
+      "P.9d",
+      "E.1",
+      "E.2",
+      "E.3"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "precision": "Contrôle des quatorze subdivisions du problème et des trois questions de l’exercice. Vérification des deux plages d’indices dans la formule de Beiter, du support des coefficients cyclotomiques sur les 91 couples de premiers impairs inférieurs à 50 et des cas de bord géométriques de l’événement de barycentre convexe.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "relecture_corrige",
+      "perimetre": "Contrôle des quatorze subdivisions du problème et des trois questions de l’exercice. Vérification des deux plages d’indices dans la formule de Beiter, du support des coefficients cyclotomiques sur les 91 couples de premiers impairs inférieurs à 50 et des cas de bord géométriques de l’événement de barycentre convexe.",
+      "sha256_sujet_controle": "5a9523104b16caa1d58b2f289aba20a6349af28f5adbfd22a57672df55bb0adb",
+      "sha256_rapport_controle": "9e6059f8930bb44dabcbd4d7e96d0d82649a3032ae791b4d691716325079d006"
+    }
+  }
 }

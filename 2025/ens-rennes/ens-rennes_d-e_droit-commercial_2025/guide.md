@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Déplier l’article 14-1 des statuts
 
 Réécrivez la clause en deux phrases. Première proposition, les associés peuvent décider collectivement une exclusion. Seconde proposition, l’intéressé ne prend pas part au vote. La première met en œuvre une faculté reconnue à la SAS par l’article L. 227-16 du code de commerce. La seconde retire à un membre encore associé un attribut essentiel de la participation. Le jugement porté sur l’une ne se transmet pas mécaniquement à l’autre.
@@ -45,6 +47,10 @@ Comment préserver le droit de vote de tout associé lorsqu’une même clause a
 
 **B. La clause ainsi préservée ne valide pas rétroactivement la délibération.** La société avait effectivement privé l’association de sa voix. La conservation du principe d’une exclusion ne répond donc pas à la demande d’annulation dirigée contre la décision du 10 octobre 2016. La Cour censure le rejet de cette demande et renvoie à Lyon. Elle laisse subsister les chefs concernant la recevabilité de l’action et le rejet des dommages-intérêts demandés pour procédure abusive. Elle ne prononce pas elle-même une nouvelle exclusion ni ne donne au membre concerné un droit de veto. Dans un nouveau scrutin, sa voix devrait être admise et décomptée selon les conditions régulières de la décision. Le résultat pourrait encore lui être défavorable. Si sa voix change le rapport des forces, la société doit accepter cette conséquence de la majorité qu’elle a choisie. Si elle ne le change pas en pratique, l’impossibilité de voter n’en devient pas, par la seule arithmétique, une stipulation régulière.
 
+À la date de l’épreuve, le 16 avril 2025, la réforme des nullités en droit des sociétés avait été publiée. L’article 70 de l’ordonnance du 12 mars 2025 fixe son application de principe au 1er octobre suivant. La délibération de 2016 et la décision de cassation de 2024 s’expliquent par les textes visés dans l’arrêt. Anticiper la réforme pour apprécier la sanction reviendrait à changer le droit de référence.
+
 L’équilibre tient donc à l’objet précis du contrôle. L’ordre juridique protège l’associé au moment où sa qualité est en jeu tout en laissant vivre l’institution contractuelle de l’exclusion. La Cour maintient une exigence ancienne quant au vote et aménage la sanction qui, jusqu’alors, menaçait d’emporter tout le mécanisme.
 
 [Sujet officiel](https://www.ens-rennes.fr/medias/fichier/sujets-epreuve-a-options-d-e-2025_1760692424609-pdf#page=3) · [Rapport du jury](https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-droit-commercial-d-e-2025_1768897872505-pdf) · [Arrêt du 29 mai 2024](https://www.legifrance.gouv.fr/juri/id/JURITEXT000049640994) · [Précédent du 9 juillet 2013](https://www.legifrance.gouv.fr/juri/id/JURITEXT000027702300)
+
+[Code civil, art. 1844-10, version applicable](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038589913/2025-04-16) · [Ordonnance du 12 mars 2025, art. 70](https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000051317088)

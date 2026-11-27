@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
 En quatre heures, le sujet explore les bases symplectiques et les conditions sous lesquelles deux formes domptent une même structure complexe. Les 26 numéros correspondent à 35 questions et sous-questions. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/uploads/2017/07/2017_MP_sujet_MathA.pdf)
@@ -458,6 +460,8 @@ Son carré est $-I_4$. En multipliant les matrices des deux formes par $J$, on o
 #### Solution
 
 Dans une base de 9, soit $D$ l’espace vectoriel réel des matrices vérifiant $J_nU=U^{\mathsf T}J_n$. Alors $S$ correspond à l’ouvert $D\cap\mathrm{GL}_n(\mathbb R)$. Pour $P_U=\det(XI-U)$, la fonction $U\mapsto r(P_U')$ est polynomiale en les coordonnées de $D$, par 11 avec $d=n-1$. Si elle est non nulle, $P_U'$ a toutes ses racines simples, donc $P_U$ n’a pas de racine de multiplicité supérieure à deux.
+
+La simplicité des racines de la dérivée donne une condition suffisante. Par exemple, $P=(X^3-1)^2$ a toutes ses racines doubles, tandis que $P^{\prime}=6X^2(X^3-1)$ a une racine double en zéro. Ce phénomène se réalise dans $S$ avec $U=\operatorname{diag}(C,C^{\mathsf T})$, où $C$ est la matrice d’une permutation circulaire des trois coordonnées.
 
 Cette fonction n’est pas identiquement nulle. Pour $m=n/2$, choisissons $C=\operatorname{diag}(1,2,\ldots,m)$ et $U=\operatorname{diag}(C,C)\in S$. Ici $P_U=H^2$ avec $H=\prod_{j=1}^m(X-j)$. Les racines de $H$ sont simples et celles de $H'$ s’intercalent strictement entre elles par Rolle et le degré de $H'$. Ainsi $P_U'=2HH'$ a seulement des racines simples, y compris pour $m=1$. Comme $P_U'$ a exactement degré $n-1$, le déterminant construit en 11 est non nul. Par 12, son ensemble de non-annulation est dense dans $D$, donc sa partie contenue dans l’ouvert $S$ est dense dans $S$.
 

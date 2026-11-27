@@ -2,7 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 Le problème relie l’approximation de Laplace pour la fonction gamma, la troncature d’une série divergente, l’interpolation périodique et la moyenne d’un mouvement non résonnant sur un tore.
 
@@ -74,7 +76,9 @@ $$
 
 On a $\varphi'(s)=s/(1+s)$ et $\varphi''(s)=1/(1+s)^2>0$. La fonction décroît strictement de $+\infty$ à zéro sur $]-1,0]$, puis croît strictement de zéro à $+\infty$ sur $[0,\infty[$. Ses restrictions aux deux intervalles ouverts sont donc des bijections sur $]0,\infty[$, par continuité et stricte monotonie.
 
-![Figure 1 — La fonction présente deux branches monotones de part et d’autre de son minimum. Un niveau strictement positif rencontre chacune d’elles une fois.](figures/deux-branches-inverses.svg)
+À gauche, la droite $s=-1$ est une asymptote verticale. À droite, $\varphi(s)/s\to1$ tandis que $\varphi(s)-s=-\ln(1+s)\to-\infty$. La courbe a donc la direction de la droite de pente un et s’en éloigne indéfiniment. Sa tangente au minimum est horizontale.
+
+![Figure 1 — Branches de φ(s) = s − ln(1 + s). Le niveau 0,65 coupe chaque branche une fois. La droite verticale en s = −1 est une asymptote.](figures/deux-branches-inverses.svg)
 
 ### Question 3b
 
@@ -310,6 +314,8 @@ h(\theta)=-\sum_{k\ne0}\frac{g_k}{2\pi i k\cdot\omega}e^{2\pi i k\cdot\theta}.
 $$
 Cette somme finie est de moyenne nulle et réelle par conjugaison des coefficients opposés. La dérivation donne $dh\,\omega=\nu-g$. Si l’hypothèse de non-résonance n’était pas reconduite, un mode non constant avec $k\cdot\omega=0$ ne serait soluble que si $g_k=0$.
 
+Par exemple, si $\omega=(1,0)$ et $g(\theta)=(\cos(2\pi\theta_2),0)$, la moyenne impose $\nu=0$. Intégrer (4) en $\theta_1$ sur une période imposerait alors $\cos(2\pi\theta_2)=0$ pour tout $\theta_2$. Ainsi, si la non-résonance de Q14 est levée, l’hypothèse exacte pour un polynôme donné est l’annulation de ses coefficients aux fréquences résonnantes non nulles.
+
 ### Question 15b
 
 > [!INDICATION]
@@ -331,3 +337,9 @@ $$
 \eta(x,t)=\int_0^t\varepsilon(x,s)ds+h(\omega t)-h(\alpha(t)).
 $$
 Pour $0\le t\le T$, on a $\|\alpha(t)-\omega t\|\le |x|T\|g\|_\infty$ par l’équation initiale. Le premier terme de $\eta$ est majoré en norme par $T\sup_s\|\varepsilon(x,s)\|$ et le second par $\|dh\|_\infty |x|T\|g\|_\infty$. Les deux tendent uniformément vers zéro.
+
+En reportant la définition de $\eta$, l’égalité obtenue est
+$$
+\alpha(t)=(\omega+x\nu)t+x\big(h(0,0)-h(\omega t)\big)+x\eta(x,t).
+$$
+La majoration précédente donne même $\sup_{0\le t\le T}\|\eta(x,t)\|\le 2T|x|\|dh\|_\infty\|g\|_\infty$.

@@ -1,0 +1,55 @@
+{
+  "slug": "bel_bl_sociologie-oral-a-option-hierarchie-et-discours-et-actes_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Sociologie (oral à option) — Hiérarchie et discours et actes",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "Travailler sans hiérarchie / Les discours et les actes",
+  "questions": 0,
+  "sujets": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oraux_sociologie_option_bl.pdf#page=54",
+    "sha256_sujet": "a6cfd0e1d317596c64fdd7f85e2770ef806175c8b278483fe266bc97bed6e3d9",
+    "pages_sujet": "Feuillet 54 du recueil de 54 pages.",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_sociologie_option.pdf",
+    "sha256_rapport_jury": "514cddfb2a08ef98d7d1375ef107103a12e496e5c827f26b9640024be445eb8b",
+    "pages_rapport": "Page 1 pour les modalités, p. 4 pour les deux intitulés."
+  },
+  "figures": [
+    {
+      "fichier": "figures/decisions-et-controle.svg",
+      "question": "Travailler sans hiérarchie",
+      "legende": "Trois décisions à suivre pour situer concrètement le pouvoir dans un collectif de travail."
+    },
+    {
+      "fichier": "figures/rappels-pour-entretien.svg",
+      "question": "Les discours et les actes",
+      "legende": "Rappels pour un entretien selon le signal associé au nom sur le CV fictif, à Boston et Chicago."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_maths_b_anciennes",
+      "modifications": true,
+      "perimetre": "Rédaction de deux exposés autonomes et de leurs parcours guidés. Vérification du billet, du rapport d’option et des références empiriques, réalisation des figures sur la décision au travail et les rappels de candidatures."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Travailler sans hiérarchie",
+      "Les discours et les actes"
+    ],
+    "precision": "Les deux sujets secs alternatifs du feuillet 54 figurent avec leur problématique, leurs enquêtes, leur méthode et leur conclusion dans les deux éditions."
+  }
+}

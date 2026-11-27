@@ -4,6 +4,10 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+La garde 80.03M porte une durée de quatre heures. L’épreuve est commune aux ENS de Paris, Lyon et Cachan pour les groupes MP/MPI et I de la filière MP. Pour le groupe I des filières MP et PC, elle est aussi proposée en option commune à Paris et Lyon. Une calculatrice de poche autonome, non imprimante et sans document d’accompagnement est autorisée. [Sujet officiel](https://www.ens.psl.eu/IMG/file/concours/2008/MP/mp_sujet_maths_mpi2.pdf). La rubrique MPI 2 de l’index ENS-PSL ne fournit aucun lien vers un rapport de cet écrit. [Index de la session](https://www.ens.psl.eu/rapports-et-sujets-2008-mpi).
+
 Les trajectoires du champ homogène sont étudiées en deux temps. On note $t$ le temps physique et $s$ le temps auxiliaire. Le sens 1 autorise un nombre fini de zéros isolés, le sens 2 autorise aussi des attentes à l’origine.
 
 ## I. Deux notions de solution et changement de temps
@@ -16,6 +20,8 @@ Les trajectoires du champ homogène sont étudiées en deux temps. On note $t$ l
 #### Solution
 
 Hors des instants exceptionnels, l’équation est acquise. Si $x(t_i)\ne0$, le champ est continu près de ce point et $x'(s)=\phi(x(s))\to\phi(x(t_i))$ des deux côtés. En intégrant sur chacun des morceaux jusqu’au raccord, les quotients de différences à gauche et à droite tendent à cette même valeur. Ainsi $x$ est dérivable en tout temps où il est non nul, ce qui donne le sens 2.
+
+Pour détailler le raccord, la continuité de $x$ et la non-nullité de $x(t_i)$ donnent un voisinage où le champ reste défini et borné. En y intégrant $x'=\phi(x)$ jusqu’à $t_i$ depuis la gauche ou la droite, les deux quotients différentiels sont des moyennes de $\phi(x(s))$ qui tendent vers $\phi(x(t_i))$. Aucun quotient à travers un passage en zéro n’est requis au sens 2.
 
 ### Question I.2
 
@@ -196,6 +202,8 @@ La trajectoire d’un tour suivant est homothétique du précédent de rapport $
 
 Choisissons un passage $s_0$. Tous les autres sont exactement $s_0+jT_0$, $j\in\mathbb Z$. Leurs temps $t_j=\tau(s_0+jT_0)$ sont strictement croissants et $\rho(t_{j+1})/\rho(t_j)=\gamma$. Les durées consécutives sont aussi dans le rapport $\gamma$, en intégrant $R(s+T_0)=\gamma R(s)$. Dans le cas $\gamma>1$, elles forment vers le passé une série géométrique convergente, et $t_j\downarrow a$ quand $j\to-\infty$. Sur le domaine maximal, l’ensemble n’a pas de premier passage : l’indexation croissante de **tous** les passages est par $\mathbb Z$. Celle par $\mathbb N$ imprimée convient aux passages postérieurs à un instant de départ fixé.
 
+Si $h_0=t_1-t_0$ et $\gamma>1$, la somme des durées antérieures à $t_0$ vaut $h_0\sum_{j=1}^\infty\gamma^{-j}=h_0/(\gamma-1)$. Par conséquent $a=t_0-h_0/(\gamma-1)$ et $t_j=a+(t_0-a)\gamma^j$. Ces dates donnent les deux rapports géométriques et vérifient l’absence de premier passage sur le domaine maximal.
+
 ## III. Deux directions stationnaires
 
 ### Question III.1.a
@@ -230,6 +238,8 @@ Sur le rayon $\theta_1$, le mouvement radial de vitesse $p_1<0$ atteint zéro da
 Les hypothèses donnent des **directions asymptotiques**. Si l’on exige une distance tendant vers zéro à une droite affine, l’affirmation imprimée est trop forte. Par exemple $\chi(\theta)=\sin\theta$, $\psi(\theta)=-2\cos\theta$ donnent sur $0<\theta<\pi$ l’équation $d\log\rho/d\theta=-2\cot\theta$, donc $\rho=C/\sin^2\theta$. L’ordonnée $C/\sin\theta$ diverge aux deux bouts, alors que la direction limite est horizontale. Aucune droite affine n’est asymptote à cette branche.
 
 ![Figure 3 — Exemple χ(θ) = sin θ et ψ(θ) = −2 cos θ. Les branches vont de la direction réelle positive à la direction réelle négative. Leur distance à l’axe réel croît aux deux infinis.](figures/deux-directions.svg)
+
+La distinction peut aussi se mesurer par projection orthogonale. Dans l’exemple explicite, la distance à une horizontale de hauteur $d$ vaut $|C/\sin\theta-d|$ et tend à l’infini. Toute éventuelle droite asymptote devrait être horizontale puisque $x(t)/|x(t)|$ tend vers une direction horizontale. Le dessin rend visibles ces deux propriétés compatibles.
 
 ### Question III.3.a
 
@@ -280,6 +290,8 @@ C’est le cercle de centre $i\varepsilon K/2$ et de rayon $K/2$ parcouru entre 
 
 ![Figure 4 — Deux boucles possibles pour le champ φ(x) = (x/|x|)². Une solution maximale au sens 1 arrive par l’axe négatif, décrit un nombre fini de boucles et repart par l’axe positif.](figures/cercles-raccordes.svg)
 
+Pour vérifier le paramétrage, la vitesse complexe est $e^{2i\varepsilon a}$ puisque $a=(t-t_0)/K$ et $\cos a+i\varepsilon\sin a=e^{i\varepsilon a}$. C’est bien $\phi(x)$ sur la boucle. À ses deux extrémités la vitesse tend vers $1$, comme sur les deux demi-droites réelles. L’échelle $K$ fixe à la fois le diamètre et la durée $\pi K$ de la boucle.
+
 ### Question III.4.c
 
 > [!INDICATION]
@@ -310,6 +322,8 @@ Cette expression prolonge $f$ en une fonction lisse sur $\mathbb R$ avec $f(0)=\
 #### Solution
 
 Pour une branche non stationnaire, III.1 donne $\Theta(s)\to\theta_2$ après choix du relèvement, sans franchissement de cette valeur. D’où $u=\Theta-\theta_2$ de signe constant et de limite nulle. Avec $k=\chi'(\theta_2)<0$, on obtient $u'=ku+u^2f(u)$. Sur le rayon stationnaire $\theta_2$, $u$ est identiquement nul.
+
+Le second rayon stationnaire doit être traité séparément. Pour la solution de l’équation auxiliaire qui démarre en $\theta_1$, l’angle reste égal à $\theta_1$ et $u=\theta_1-\theta_2$ ne tend pas vers zéro. L’affirmation de la question concerne les branches attirées par $\theta_2$, comme en III.1.a. Les expansions qui suivent portent sur ces branches ; le rayon $\theta_2$ correspond à l’écart nul.
 
 ### Question IV.3
 
@@ -364,3 +378,7 @@ Puisque $\tau'=R$ et $p>0$, on obtient $\tau(s)\sim (D/p)e^{ps}$. En effet, apr�
 #### Solution
 
 Au temps physique $t=\tau(s)$, $x(t)=R(s)e^{i\Theta(s)}$ et $R(s)/\tau(s)\to p$. Ainsi $x(t)\sim pte^{i\theta_2}$. Directement, $x'(t)\to\phi(e^{i\theta_2})=pe^{i\theta_2}$ et l’intégration suivie d’une division par $t$ donne la même limite. Cet équivalent précise la direction et la vitesse asymptotiques.
+
+Les estimations précédentes donnent également la distance transverse à la droite de direction finale passant par l’origine. En écrivant $s=\tau^{-1}(t)$, sa valeur signée est $R(s)\sin(\Theta(s)-\theta_2)\sim DC_0e^{(p+k)s}$ sur une branche non stationnaire. Elle tend vers zéro si $p+k<0$, vers $DC_0$ si $p+k=0$, et son module diverge si $p+k>0$. Cela relie l’équivalent vectoriel à la réserve géométrique de III.2.
+
+![Le facteur exponentiel de la distance transverse peut décroître, rester constant ou croître, alors même que la direction du mouvement converge.](figures/ecart-transversal.svg)

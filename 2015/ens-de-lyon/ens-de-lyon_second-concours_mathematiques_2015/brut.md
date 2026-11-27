@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le premier exercice classe des dés à faces équiprobables par leur polynôme générateur. Le second établit le développement de la cotangente en fractions simples grâce à une équation de duplication et à un argument de maximum.
 
 ## Exercice 1. Dés et polynômes générateurs
@@ -39,6 +41,8 @@ En $T=1$, l’identité précédente donne $6=2^\alpha3^\beta$. La décompositio
 ### Question 1.8
 
 Les exposants du dernier facteur dans $P_1,P_2$ sont $\gamma$ et $2-\gamma$. Le choix $\gamma=1$ redonne deux dés usuels égaux, exclu par l’énoncé. Les deux autres choix échangent les dés. Pour l’un, $T(T+1)(T^2+T+1)=T+2T^2+2T^3+T^4$. Pour l’autre, la multiplication par $(T^2-T+1)^2$ donne $T+T^3+T^4+T^5+T^6+T^8$. Les faces sont donc $(1,2,2,3,3,4)$ et $(1,3,4,5,6,8)$. Ces polynômes ont bien six termes comptés avec multiplicité et leur produit est $Q_U^2$. La paire est unique à échange des dés et permutation des faces près.
+
+Pour les sommes $2,3,\ldots,12$, le décompte des 36 couples donne respectivement $1,2,3,4,5,6,5,4,3,2,1$. Par exemple la somme 7 provient des couples de valeurs $(1,6),(2,5),(3,4),(4,3)$, avec multiplicités $1,2,2,1$.
 
 ## Exercice 2. Cotangente et fractions simples
 

@@ -1,0 +1,151 @@
+{
+  "slug": "x_mp_premiere-composition-de-mathematiques_1999",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Première composition de mathématiques",
+    "annee": 1999
+  },
+  "questions": 20,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.sujetsetcorriges.fr/dl/X/Maths/MP/sec-x-1999-maths1-MP.pdf",
+    "sha256_sujet": "e0051468358d3afc55798f0e627093829f3735c116cea7e9a9cd4500390e8527",
+    "rapport_jury": "",
+    "provenance": "Reproduction du sujet du concours d’admission diffusée par Sujets et Corrigés, 3 pages. La garde, la suite des consignes et la dernière page ont été contrôlées."
+  },
+  "figures": [
+    {
+      "fichier": "figures/noyaux-de-poisson.svg",
+      "question": "1",
+      "legende": "Chaque courbe a une aire totale de 1. Quand la hauteur diminue, la masse du noyau se concentre au voisinage de zéro."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "maths_x_mp_1997_1999",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction intégrale des deux éditions sur les 3 pages du fac-similé. 20 consignes pointées. I. Le noyau du demi-plan ; II. Intégrale de Poisson et continuité au bord ; III. Modes exponentiels et coefficients de Fourier ; IV. Données s’annulant à l’infini. Vérification des démonstrations, des notations et des bornes."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5.a",
+      "5.b",
+      "6",
+      "7",
+      "8",
+      "9.a",
+      "9.b",
+      "10.a",
+      "10.b",
+      "11",
+      "12.a",
+      "12.b",
+      "13",
+      "14",
+      "15",
+      "16"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1",
+        "page_pdf": 1
+      },
+      {
+        "question": "2",
+        "page_pdf": 1
+      },
+      {
+        "question": "3",
+        "page_pdf": 1
+      },
+      {
+        "question": "4",
+        "page_pdf": 2
+      },
+      {
+        "question": "5.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "5.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "6",
+        "page_pdf": 2
+      },
+      {
+        "question": "7",
+        "page_pdf": 2
+      },
+      {
+        "question": "8",
+        "page_pdf": 2
+      },
+      {
+        "question": "9.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "9.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "10.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "10.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "11",
+        "page_pdf": 3
+      },
+      {
+        "question": "12.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "12.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "13",
+        "page_pdf": 3
+      },
+      {
+        "question": "14",
+        "page_pdf": 3
+      },
+      {
+        "question": "15",
+        "page_pdf": 3
+      },
+      {
+        "question": "16",
+        "page_pdf": 3
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "slug": "ens-paris-saclay_design_techno-design_2021",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Techno-design",
+    "annee": 2021,
+    "modalite": "écrit"
+  },
+  "intitule": "Ce qui se trame",
+  "redaction": "Proposition de corrigé rédigée par IA, non officielle.",
+  "questions": 2,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2021_Sujet_1A_Design_Techno_Design.pdf",
+    "sujet_sha256": "16be5ba1c192ce1f76ad4c7fef9f2c1e51c54ce187115d6d15cc5bf04dd3976c",
+    "index_officiel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=545",
+    "nature": "Les sept pages du fascicule contiennent les cinq ensembles iconographiques. Le rapport publié par l’ENS est également disponible.",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2021_rapport-_ecrits_DESIGN_technodesign.pdf",
+    "rapport_sha256": "d91bc3ffcae3d0d76bd31eb86d0e886818709707f1c8ca09640592004b5f3935"
+  },
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/01-analyse.svg",
+      "question": "Analyse 1/5",
+      "legende": "Un motif, trois actions. Dans l’affiche, la répétition écrit. Sur le sac, le joint rend possible un pli."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/02-analyse.svg",
+      "question": "Analyse 2/5",
+      "legende": "Une règle et ses écarts. La répétition du module produit une forme ou fait apparaître un mouvement."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/03-esquisse.svg",
+      "question": "Esquisse 3/5",
+      "legende": "Quatre temps dans une poche. Une case vaut un temps. Deux silhouettes orientées désignent deux partenaires."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/04-esquisse.svg",
+      "question": "Esquisse 4/5",
+      "legende": "Lire à l’échelle du corps. Le support est une nappe de sol antidérapante d’un seul tenant."
+    },
+    {
+      "numero": 5,
+      "fichier": "figures/05-esquisse.svg",
+      "question": "Esquisse 5/5",
+      "legende": "Composer un bal à plusieurs. Les participants remplacent un temps de la phrase puis la transmettent."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "design_saclay_six_archives",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des observations du jury et confrontation avec les planches du fascicule."
+    },
+    {
+      "phase": "redaction",
+      "session": "design_saclay_six_archives",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de deux éditions et dessin de cinq planches A3 originales. Deux analyses croisées ouvrent sur trois esquisses exploratoires, leurs contraintes et leurs essais."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "design_saclay_six_archives",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification du sujet, des légendes, des dessins, de la distinction entre observations, hypothèses et essais, et des deux documents.",
+      "tour": 1
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Analyse des productions",
+      "Esquisses et recherche expérimentale"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Les sept pages du fascicule contiennent les cinq ensembles iconographiques. Le rapport publié par l’ENS est également disponible."
+  }
+}

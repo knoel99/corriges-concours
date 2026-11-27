@@ -11,7 +11,10 @@
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-mp/session-2004/sujet-2004-ecrit-mp_mathematiques_cachan_paris.pdf",
     "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/rapport-de-jury-session-2004/rapport-2004-mp_ecrit_mathematiques_cachan_paris.pdf",
-    "sha256_sujet": "6509c1ab83431fd896ee1c2bb22218947f5673d2d27b262c2c608c69a4d445f7"
+    "sha256_sujet": "6509c1ab83431fd896ee1c2bb22218947f5673d2d27b262c2c608c69a4d445f7",
+    "pages_sujet": 7,
+    "sha256_rapport_jury": "24a4a3953eae28ab95ef0a2e6bd7f1fe145382991a9289b874bc512d951e35bd",
+    "pages_rapport_jury": 2
   },
   "figures": [
     {
@@ -31,6 +34,174 @@
       "perimetre": "Rédaction sur l’original et le rapport. Coefficients du triangle, norme exacte des translations de fréquences, contrôles des permutations de sommes et du facteur de normalisation en III.3.1, passage des données continues aux approximations elliptiques. Graphique des sommes de Fourier.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Vérification des 29 demandes et des bornes d’opérateurs sur le fac-similé. Recalcul du triangle, des translations entières, du symbole composé et de la régularité de la donnée continue. Développement des normalisations et du passage à la limite ; comparaison au rapport et au graphique.",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7",
+      "I.8.1",
+      "I.8.2",
+      "I.8.3",
+      "I.8.4",
+      "II.1.1",
+      "II.1.2",
+      "II.2",
+      "II.3",
+      "II.4.1",
+      "II.4.2",
+      "II.4.3",
+      "II.4.4",
+      "II.5",
+      "II.6",
+      "III.1",
+      "III.2",
+      "III.3.1",
+      "III.3.2",
+      "IV.1",
+      "IV.2",
+      "IV.3",
+      "IV.4"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": "I.1",
+        "page_sujet": 3
+      },
+      {
+        "question": "I.2",
+        "page_sujet": 3
+      },
+      {
+        "question": "I.3",
+        "page_sujet": 3
+      },
+      {
+        "question": "I.4",
+        "page_sujet": 3
+      },
+      {
+        "question": "I.5",
+        "page_sujet": 3
+      },
+      {
+        "question": "I.6",
+        "page_sujet": 4
+      },
+      {
+        "question": "I.7",
+        "page_sujet": 4
+      },
+      {
+        "question": "I.8.1",
+        "page_sujet": 4
+      },
+      {
+        "question": "I.8.2",
+        "page_sujet": 4
+      },
+      {
+        "question": "I.8.3",
+        "page_sujet": 4
+      },
+      {
+        "question": "I.8.4",
+        "page_sujet": 4
+      },
+      {
+        "question": "II.1.1",
+        "page_sujet": 4
+      },
+      {
+        "question": "II.1.2",
+        "page_sujet": 5
+      },
+      {
+        "question": "II.2",
+        "page_sujet": 5
+      },
+      {
+        "question": "II.3",
+        "page_sujet": 5
+      },
+      {
+        "question": "II.4.1",
+        "page_sujet": 5
+      },
+      {
+        "question": "II.4.2",
+        "page_sujet": 5
+      },
+      {
+        "question": "II.4.3",
+        "page_sujet": 5
+      },
+      {
+        "question": "II.4.4",
+        "page_sujet": 5
+      },
+      {
+        "question": "II.5",
+        "page_sujet": 5
+      },
+      {
+        "question": "II.6",
+        "page_sujet": 6
+      },
+      {
+        "question": "III.1",
+        "page_sujet": 6
+      },
+      {
+        "question": "III.2",
+        "page_sujet": 6
+      },
+      {
+        "question": "III.3.1",
+        "page_sujet": 6
+      },
+      {
+        "question": "III.3.2",
+        "page_sujet": 6
+      },
+      {
+        "question": "IV.1",
+        "page_sujet": 7
+      },
+      {
+        "question": "IV.2",
+        "page_sujet": 7
+      },
+      {
+        "question": "IV.3",
+        "page_sujet": 7
+      },
+      {
+        "question": "IV.4",
+        "page_sujet": 7
+      }
+    ],
+    "precision": "Sept pages PDF, la garde et les notations précèdent les questions. La partie Applications est repérée IV. Contrôle de l’indice corrigé par le jury en I.3, du domaine des fréquences en II.4.1 et du facteur de normalisation en III.3.1."
+  }
 }

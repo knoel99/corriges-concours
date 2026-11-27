@@ -1,0 +1,101 @@
+{
+  "slug": "bel_al_anglais-theme-lyon_2021",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Anglais (thème Lyon)",
+    "annee": 2021,
+    "modalite": "écrit de spécialité"
+  },
+  "questions": 1,
+  "duree_heures": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "provenance": [
+    "ENS de Lyon",
+    "ENS Paris-Saclay (langue anglaise)"
+  ],
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2021-10/Epreuves-de-Specialite.pdf#page=9",
+    "sha256_sujet": "1204b3dd5ed1c85101afe6b8aaa9fbfa0b3746b5ce3fcd6fefd4add8476fe553",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2021-11/ANGLAIS_2021.pdf#page=13",
+    "sha256_rapport_jury": "44e2a802fd0c09f6f351da333ce760fc226ce43c7209ec9d9238a9934607890b",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2021",
+    "pages_sujet_verifiees": [
+      1,
+      9
+    ],
+    "pages_rapport_theme": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ]
+  },
+  "figures": [
+    {
+      "question": "Traduction en anglais",
+      "fichier": "figures/traduction.svg",
+      "legende": "Du retour des héritiers à la rencontre avec Don Thomas"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lva_pt_2325",
+      "session": "/root/lva_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Traduction anglaise intégrale du passage français, guide en français et figure propre au thème."
+    },
+    {
+      "phase": "revision",
+      "agent": "lva_pt_2325",
+      "session": "/root/lva_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture des sujets successifs (les fils, leurs parents, puis le narrateur de la rencontre), des noms propres, des deux occurrences de démodé et de la distinction entre l’Athénée et la Halle."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Traduction en anglais"
+    ],
+    "origine_attestation": {
+      "phase": "revision",
+      "date": "2026-11-27",
+      "sha256_sujet_controle": "1204b3dd5ed1c85101afe6b8aaa9fbfa0b3746b5ce3fcd6fefd4add8476fe553",
+      "perimetre": "Relecture des sujets successifs (les fils, leurs parents, puis le narrateur de la rencontre), des noms propres, des deux occurrences de démodé et de la distinction entre l’Athénée et la Halle."
+    },
+    "repere_par_question": [
+      {
+        "question": "Traduction en anglais",
+        "pages": [
+          9
+        ],
+        "debut": "À la fin de la saison des pluies",
+        "fin": "le nom modeste d’Emporio, c’est-à-dire la Halle.",
+        "paragraphes": 6
+      }
+    ]
+  }
+}

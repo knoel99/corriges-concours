@@ -1,0 +1,166 @@
+{
+  "slug": "bel_bl_philosophie-oral-tronc-commun-19-juin_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Philosophie (oral tronc commun, 19 juin)",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie (oral tronc commun, 19 juin)",
+  "questions": 0,
+  "tirages": 10,
+  "sujets": 20,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/philosophie_1_19_juin_-.pdf",
+    "sha256_sujet": "23a8b20b193661149f4e31a3463f06c2e9abe4c9aceb11674560a26fddfb1b7a",
+    "pages_sujet": "Feuillet daté, page unique.",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_philosophie.pdf",
+    "sha256_rapport_jury": "f43dbd726e8d925d3dbf694566dff8fd1eab8da6e6e7a6d5b5a75f59a5470d14",
+    "pages_rapport": "1 pour les modalités, 2–5 pour les observations et 5–6 pour les 61 paires annuelles."
+  },
+  "billets": [
+    {
+      "numero": 1,
+      "sujets": [
+        "Question et problème",
+        "Peut-on se punir soi-même ?"
+      ],
+      "option_choisie": 2,
+      "sujet_choisi": "Peut-on se punir soi-même ?"
+    },
+    {
+      "numero": 2,
+      "sujets": [
+        "Le pouvoir de la science",
+        "Peut-on être amoral ?"
+      ],
+      "option_choisie": 1,
+      "sujet_choisi": "Le pouvoir de la science"
+    },
+    {
+      "numero": 3,
+      "sujets": [
+        "La transgression",
+        "Y-a-t-il une expérience du temps ?"
+      ],
+      "option_choisie": 1,
+      "sujet_choisi": "La transgression"
+    },
+    {
+      "numero": 4,
+      "sujets": [
+        "La médiocrité",
+        "Peut-on avoir raison tout seul ?"
+      ],
+      "option_choisie": 2,
+      "sujet_choisi": "Peut-on avoir raison tout seul ?"
+    },
+    {
+      "numero": 5,
+      "sujets": [
+        "Les bonnes intentions",
+        "Qu’est-ce qu’un rapport de force ?"
+      ],
+      "option_choisie": 1,
+      "sujet_choisi": "Les bonnes intentions"
+    },
+    {
+      "numero": 6,
+      "sujets": [
+        "La méchanceté",
+        "Tout peut-il s’expliquer ?"
+      ],
+      "option_choisie": 1,
+      "sujet_choisi": "La méchanceté"
+    },
+    {
+      "numero": 7,
+      "sujets": [
+        "Compatir",
+        "Qu’est-ce qu’être fidèle à soi-même ?"
+      ],
+      "option_choisie": 2,
+      "sujet_choisi": "Qu’est-ce qu’être fidèle à soi-même ?"
+    },
+    {
+      "numero": 8,
+      "sujets": [
+        "L’étonnement",
+        "L’art peut-il prétendre à la vérité ?"
+      ],
+      "option_choisie": 2,
+      "sujet_choisi": "L’art peut-il prétendre à la vérité ?"
+    },
+    {
+      "numero": 9,
+      "sujets": [
+        "La vulnérabilité",
+        "Que nous apprend le cinéma ?"
+      ],
+      "option_choisie": 2,
+      "sujet_choisi": "Que nous apprend le cinéma ?"
+    },
+    {
+      "numero": 10,
+      "sujets": [
+        "Le désoeuvrement",
+        "Qu’est-ce qu’un empire ?"
+      ],
+      "option_choisie": 1,
+      "sujet_choisi": "Le désoeuvrement"
+    }
+  ],
+  "figures": [
+    {
+      "fichier": "figures/billet-1-option-1.svg",
+      "question": "Question et problème",
+      "legende": "Trois repères pour examiner question et problème."
+    },
+    {
+      "fichier": "figures/billet-8-option-2.svg",
+      "question": "L’art peut-il prétendre à la vérité ?",
+      "legende": "Trois repères pour examiner art et vérité."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "x_maths_b_anciennes",
+      "modifications": true,
+      "perimetre": "Rédaction des propositions argumentées et des relances individuelles pour les 20 sujets et de deux figures. Contrôle visuel des 10 paires et du gras, confrontation des intitulés à la liste du rapport 2025."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Question et problème",
+      "Peut-on se punir soi-même ?",
+      "Le pouvoir de la science",
+      "Peut-on être amoral ?",
+      "La transgression",
+      "Y-a-t-il une expérience du temps ?",
+      "La médiocrité",
+      "Peut-on avoir raison tout seul ?",
+      "Les bonnes intentions",
+      "Qu’est-ce qu’un rapport de force ?",
+      "La méchanceté",
+      "Tout peut-il s’expliquer ?",
+      "Compatir",
+      "Qu’est-ce qu’être fidèle à soi-même ?",
+      "L’étonnement",
+      "L’art peut-il prétendre à la vérité ?",
+      "La vulnérabilité",
+      "Que nous apprend le cinéma ?",
+      "Le désoeuvrement",
+      "Qu’est-ce qu’un empire ?"
+    ],
+    "precision": "Intégralité du feuillet du 19 juin exclusivement. Les deux sujets de chacun des 10 billets y sont développés. Le rapport annuel compte 61 paires, dont 11 supplémentaires après les cinq feuillets datés."
+  }
+}

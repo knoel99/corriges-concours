@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="155mm" height="55.2mm" viewBox="0 0 710 253" font-family="DejaVu Sans, sans-serif"><defs><pattern id="hatch" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(28)"><rect width="7" height="7" fill="#f5f7f8"/><path d="M0 0V7" stroke="#78919c" stroke-width="1"/></pattern>
+<marker id="ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#202c36"/></marker>
+<marker id="green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#007451"/></marker>
+<marker id="blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#145879"/></marker>
+</defs>
+<g transform="translate(10 0)">
+<text x="6" y="22" fill="#202c36" font-size="18" font-weight="bold">Phase 10</text>
+<path d="M12 79h31v104h-31Z" fill="url(#hatch)" stroke="#202c36" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M43 73h50v12h-50Z" fill="#e9eff1" stroke="#202c36" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M43 177h50v12h-50Z" fill="#e9eff1" stroke="#202c36" stroke-width="1.5" stroke-linejoin="round"/>
+<g>
+<path d="M79 64H105V76H119V89H106V99H78V93H85V77H79Z" fill="url(#hatch)" stroke="#202c36" stroke-width="1.5" stroke-linejoin="round"/>
+<g transform="translate(0 262) scale(1 -1)">
+<path d="M79 64H105V76H119V89H106V99H78V93H85V77H79Z" fill="url(#hatch)" stroke="#202c36" stroke-width="1.5" stroke-linejoin="round"/>
+</g>
+</g>
+<path d="M2 131H282" fill="none" stroke="#202c36" stroke-width="1" stroke-linejoin="round" stroke-dasharray="15 3 2 3"/>
+<path d="M152 131H262" fill="none" stroke="#202c36" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#ink)"/>
+<text x="266" y="136" fill="#202c36" font-size="14">+Z</text>
+<path d="M152 131V48" fill="none" stroke="#202c36" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#ink)"/>
+<text x="159" y="50" fill="#202c36" font-size="14">+X</text>
+<text x="4" y="216" fill="#202c36" font-size="14">Mandrin</text>
+<text x="90" y="216" fill="#202c36" font-size="14">Couronne</text>
+<path d="M103 67H257" fill="none" stroke="#145879" stroke-width="1.8" stroke-linejoin="round" stroke-dasharray="10 3 2 3"/>
+<text x="194" y="62" fill="#145879" font-size="13">Foret axial</text>
+<path d="M96 34V80" fill="none" stroke="#007451" stroke-width="1.8" stroke-linejoin="round" stroke-dasharray="10 3 2 3"/>
+<text x="42" y="41" fill="#007451" font-size="13">Radial</text>
+</g>
+<g transform="translate(365 0)">
+<text x="6" y="22" fill="#202c36" font-size="18" font-weight="bold">Phase 20</text>
+<path d="M12 79h31v104h-31Z" fill="url(#hatch)" stroke="#202c36" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M43 73h50v12h-50Z" fill="#e9eff1" stroke="#202c36" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M43 177h50v12h-50Z" fill="#e9eff1" stroke="#202c36" stroke-width="1.5" stroke-linejoin="round"/>
+<g transform="translate(199 0) scale(-1 1)">
+<path d="M79 64H105V76H119V89H106V99H78V93H85V77H79Z" fill="url(#hatch)" stroke="#202c36" stroke-width="1.5" stroke-linejoin="round"/>
+<g transform="translate(0 262) scale(1 -1)">
+<path d="M79 64H105V76H119V89H106V99H78V93H85V77H79Z" fill="url(#hatch)" stroke="#202c36" stroke-width="1.5" stroke-linejoin="round"/>
+</g>
+</g>
+<path d="M2 131H282" fill="none" stroke="#202c36" stroke-width="1" stroke-linejoin="round" stroke-dasharray="15 3 2 3"/>
+<path d="M152 131H262" fill="none" stroke="#202c36" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#ink)"/>
+<text x="266" y="136" fill="#202c36" font-size="14">+Z</text>
+<path d="M152 131V48" fill="none" stroke="#202c36" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#ink)"/>
+<text x="159" y="50" fill="#202c36" font-size="14">+X</text>
+<text x="4" y="216" fill="#202c36" font-size="14">Mandrin</text>
+<text x="90" y="216" fill="#202c36" font-size="14">Couronne retournée</text>
+<text x="90" y="239" fill="#202c36" font-size="13">Broche seule en rotation</text>
+</g>
+</svg>

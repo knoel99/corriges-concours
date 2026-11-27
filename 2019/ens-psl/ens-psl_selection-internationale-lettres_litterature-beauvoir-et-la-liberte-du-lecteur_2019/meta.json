@@ -1,0 +1,117 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_litterature-beauvoir-et-la-liberte-du-lecteur_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Littérature — Beauvoir et la liberté du lecteur",
+    "annee": 2019,
+    "modalite": "écrit"
+  },
+  "intitule": "Littérature — Beauvoir et la liberté du lecteur",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/litterature-ecrit-sil2019.pdf",
+    "sujet_sha256": "688726c11b2e3b3962287f94bc56badc6f1a13eb8fffccc7442b9a31c55fd43e",
+    "references": [
+      "https://www.folger.edu/explore/shakespeares-works/the-merchant-of-venice/read/3/1/",
+      "https://www.folger.edu/explore/shakespeares-works/the-merchant-of-venice/read/",
+      "https://www.jstor.org/stable/25088813",
+      "https://en.wikisource.org/wiki/Alice%27s_Adventures_in_Wonderland_%28Rackham%29/Chapter_12"
+    ],
+    "archive_annuelle": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2019-lettres"
+  },
+  "figures": [
+    {
+      "fichier": "figures/credit.svg",
+      "question": "Dissertation",
+      "legende": "À quel niveau porte un refus de lecture ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Rédaction de la dissertation littéraire, de son accompagnement et de sa figure dans les deux éditions.",
+      "modifications": true
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Vérification de la consigne SIL, des actes III et IV du Marchand de Venise, du changement de voix chez Montesquieu et du déplacement critique qu’opère Achebe à propos de Conrad. Contrôle des deux éditions.",
+      "modifications": true
+    },
+    {
+      "phase": "relecture",
+      "session": "x_maths_b_anciennes",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "perimetre": "Contrôle des changements de personne et de la distinction entre les valeurs fausses, le puéril et l’odieux ; vérification chez Shakespeare de la différence entre parole du personnage et dénouement, et de l’objection critique d’Achebe à Conrad.",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    },
+    {
+      "phase": "autocontrole",
+      "session": "x_maths_b_anciennes",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "perimetre": "Contrôle de la consigne unique et de ses attendus, des exemples, de la figure, des signatures et des signets des deux PDF.",
+      "modifications": false,
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Analyser et commenter la réflexion de Simone de Beauvoir sur la liberté de lecture et le désaccord avec une œuvre, à partir des connaissances et de l’expérience personnelle de lecture."
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Feuillet de l’écrit, p. 1 sur 1 ; une seule consigne. Beauvoir est citée dans Tout compte fait (1972)."
+  },
+  "controle_enonce": {
+    "question": "Analyser et commenter la réflexion de Simone de Beauvoir sur la liberté de lecture et le désaccord avec une œuvre, à partir des connaissances et de l’expérience personnelle de lecture.",
+    "attendus": [
+      "Engager sa liberté et faire silence en soi",
+      "Accueillir une voix étrangère face à un désaccord radical",
+      "La portée personnelle du jugement sur des valeurs ou une vision du monde",
+      "Œuvres françaises et étrangères, critique et expérience de lecture"
+    ],
+    "repere": "Feuillet de l’écrit, p. 1 sur 1 ; une seule consigne. Beauvoir est citée dans Tout compte fait (1972).",
+    "figure": "À quel niveau porte un refus de lecture ?"
+  }
+}

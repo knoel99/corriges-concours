@@ -6,6 +6,8 @@
 
 **Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 On note $\Psi_n=M^{(n)}\cdots M^{(1)}$ et $\|\cdot\|_{\rm op}$ la norme opérateur induite par la norme euclidienne sur $\mathbb C^d$. Les tirages sont indépendants, de même loi et de support fini contenu dans les matrices inversibles. On convient que $\log0=-\infty$ lorsque des puissances ou des coefficients peuvent s’annuler.
 
 ### Question 0
@@ -155,6 +157,12 @@ La limite est nulle. Le carré porte ici sur la variable avant la prise d'espér
 $$\frac{\mathbb E H_n^2}{n}=p+2p^2\sum_{h=1}^{n-1}(1-h/n)a^{h-1}.$$
 À $p$ fixé dans $]0,1[$, les termes prolongés par zéro pour $h\ge n$ sont dominés par la série sommable $|a|^{h-1}$. La limite est donc $p+2p^2/(1-a)=p/(1-p)$. Pour $p=1/2$, seuls les indices consécutifs contribuent et la formule donne exactement $\mathbb E H_n^2=n-1/2$.
 
+On peut sommer exactement le moment d’ordre deux pour $0<p<1$. Avec $a=2p-1$,
+$$\sum_{h=1}^{n-1}(n-h)a^{h-1}=\frac{n}{1-a}-\frac{1-a^n}{(1-a)^2}.$$
+Cette identité suit en sommant les $n-1$ sommes géométriques de longueurs $1,\ldots,n-1$. La formule de III.3c donne alors
+$$\mathbb E(H_n^2)=\frac{np}{1-p}-\frac{p^2}{2(1-p)^2}(1-a^n).$$
+Le second terme est borné en $n$ pour $p$ fixé, même lorsque $a<0$. On retrouve la limite et le cas particulier $p=1/2$.
+
 ### Question III.3e
 
 Par III.3b et Cauchy–Schwarz,
@@ -212,3 +220,7 @@ Choisissons $\delta<(\ell-m)/4$. Le logarithme du membre droit divisé par $2n$ 
 ### Question IV.5c
 
 On raisonne par récurrence sur $d$. Le résultat est immédiat en dimension un. Dans une base triangulaire commune et en dimension $d$, écrivons le produit sous la forme $\begin{pmatrix}A_n&v_n\\0&b_n\end{pmatrix}$, avec $A_n$ de taille $d-1$. Les blocs supérieurs gauches des facteurs sont eux-mêmes inversibles, commutent et ont un support fini. Par IV.4 et l'hypothèse de récurrence, le taux de $\|A_n\|_{\rm op}$ converge en probabilité vers $\max_{i<d}m_i$. Celui de $|b_n|$ converge vers $m_d$ par la loi faible. La norme du bloc entier est encadrée entre le maximum des trois normes de blocs et trois fois ce maximum. Si $\ell>m=\max_{i\leq d}m_i$, le même argument de séparation qu'en IV.5a impose $n^{-1}\log\|v_n\|\to\ell$ en probabilité. Pour deux demi-produits, $v_{2n}=A_n\widetilde v_n+v_n\widetilde b_n$ en loi, où les matrices tildées viennent de l'autre demi-produit. La borne de IV.5b s'applique à la norme de cette somme et donne la même contradiction. On en déduit $\ell\leq m$, puis l'égalité avec la minoration de III.2b.
+
+Une autre démonstration éclaire le rôle de la commutation. Notons $S_1,\ldots,S_h$ les matrices du support. On décompose successivement l’espace selon les sous-espaces propres généralisés de $S_1$, puis de $S_2$ sur chacun des précédents, et ainsi de suite. Chacune de ces décompositions est préservée par les autres matrices, puisqu’elles commutent. Dans un bloc final $E$, les restrictions sont de la forme $S_j=\lambda_{j,E}(I+N_{j,E})$ avec $\lambda_{j,E}\ne0$. Dans une base triangulaire commune les $N_{j,E}$ sont strictement triangulaires, donc tout produit de $d$ d’entre eux est nul.
+
+S’il y a $n_j$ tirages de type $j$ parmi $n$, le produit sur $E$ est $\prod_j\lambda_{j,E}^{n_j}$ fois une matrice unipotente. Cette dernière a norme au moins $1$ par son rayon spectral. Sa norme est au plus $\sum_{r=0}^{d-1}\binom nr C^r$ en développant le produit, pour $C=\max_{j,E}\|N_{j,E}\|$. Le logarithme de ce facteur, divisé par $n$, tend donc uniformément vers zéro. Par la loi faible des grands nombres, $n_j/n$ tend en probabilité vers la probabilité du tirage $S_j$. Prendre le maximum sur les blocs, en nombre fini, donne exactement $\max_i\mathbb E\log|M^{(1)}_{ii}|$ dans la base triangulaire.

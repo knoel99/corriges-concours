@@ -1,0 +1,52 @@
+{
+  "slug": "bel_bl_composition-francaise_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Composition française",
+    "annee": 2024,
+    "modalite": "écrit"
+  },
+  "intitule": "La littérature, la pauvreté du sujet et la souveraineté de l’écrivain",
+  "organisateurs": "ENS Ulm et ENS de Lyon",
+  "duree": "6 heures",
+  "code_sujet": "UH 451",
+  "questions": 0,
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2024_blses_sujet_composition_francaise.pdf",
+    "sha256_sujet": "b7ac32257d08941f4c90490116fd407352961f03f4db6069fa3f2c8711d9f32b",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_ecrit_francais.pdf",
+    "sha256_rapport_jury": "fb312d5dcd3d679a865949a585f7ebe25a07898fcfbc17dd1d2ab99a7313009a"
+  },
+  "figures": [
+    {
+      "fichier": "figures/matiere-et-ecriture.svg",
+      "question": "La littérature, la pauvreté du sujet et la souveraineté de l’écrivain",
+      "legende": "Ponge, Queneau et Racine font apparaître trois rapports entre la matière et l’écriture."
+    }
+  ],
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "x_maths_b_anciennes",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Dissertation entière de six heures, introduction problématisée, trois mouvements, analyse précise des exemples, objections et conclusion. Dans l’édition guidée, analyse préalable et travail propre à chaque mouvement."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "La littérature, la pauvreté du sujet et la souveraineté de l’écrivain"
+    ],
+    "precision": "Dissertation entière de six heures, introduction problématisée, trois mouvements, analyse précise des exemples, objections et conclusion. Dans l’édition guidée, analyse préalable et travail propre à chaque mouvement."
+  },
+  "gabarit": "dissertation",
+  "citation_sujet": "« La littérature joue d’étranges tours : plus le sujet est pauvre, plus l’écrivain est roi. » Bernard Frank, Portraits et aphorismes, 2002.",
+  "consigne": "En vous appuyant sur des textes littéraires précis et variés, sans vous limiter à un genre, vous discuterez ce propos."
+}

@@ -8,6 +8,10 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Les trois problèmes sont indépendants. Le tableau de la page 2 du rapport attribue un coefficient à chacune des 55 rubriques. Leur somme vaut 60. Le texte de cette même page annonce un maximum brut de 64 et un bonus ou malus de deux points. Le rapport ne détaille pas le rapprochement de ces chiffres. [Sujet de la session](https://www.ens.psl.eu/sites/default/files/bl_22_mathematiques.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2022_bl_rapport_ecrit_mathematiques.pdf).
+
 Écrit commun aux ENS Ulm, Lyon et Paris-Saclay, à l'ENSAE et à l'ENSAI. Durée de quatre heures, sans calculatrice.
 
 ## Problème A
@@ -58,6 +62,8 @@ $$
 
 **(4e)** Depuis $100+j$, pour $0\le j\le4$, un pile arrête à $111+j$. Une face donne $90+j$, puis une seconde face arrête à $80+j$. L'unique prolongement pouvant atteindre exactement $105$ est donc $FP$, qui mène à $101+j$. Pour $j=0,1,2,3$, ce dernier capital est intérieur. Pour $j=4$, il vaut $105$. L'événement cherché est exactement la suite de cinq paires $FP$, de probabilité $\boxed{(1/4)^5=1/1024}$.
 
+La même analyse borne le temps d’arrêt. Chaque paire qui laisse continuer le jeu augmente le capital d’une unité. Après quatre paires $FP$, le capital vaut $104$. La paire suivante provoque nécessairement la sortie, au plus tard au dixième lancer. Cette borne justifie que la variable $S_T$ est définie sur toutes les suites de lancers.
+
 ![Figure 1 — Branches jusqu'au troisième lancer. Chaque branche a une probabilité de moitié. Les cases pleines correspondent aux arrêts.](figures/q04-arbre-arret.svg)
 
 ### Question 5
@@ -89,6 +95,8 @@ $$
 
 **(8b)** Pour un grand nombre fixé de lancers, je choisirais le premier jeu si je cherche une forte probabilité d'améliorer ma mise. Sans la règle d'arrêt de (4), (3b) garantit avec probabilité tendant vers un un capital d'au moins $100+n/4$. Dans le second jeu, (7b) donne au contraire un capital proche de zéro avec forte probabilité. Si l'on retient la variante arrêtée du premier jeu, il conserve au moins $80$ à l'arrêt par l'analyse de (4e), tandis que le second devient inférieur à cette somme avec probabilité tendant vers un.
 
+![Figure 2 — Dans le jeu multiplicatif, la fortune moyenne augmente. Pour un nombre pair de lancers et autant de piles que de faces, le capital vaut $100(0{,}999)^{n/2}$ et diminue.](figures/q08-capital-moyenne.svg)
+
 ## Problème B
 
 ### Question 9
@@ -107,7 +115,7 @@ $$
 
 Par l'inégalité triangulaire $AM+MB\ge AB$, avec égalité exactement quand $M\in[AB]$. L'axe des abscisses rencontre ce segment au seul point $I$ trouvé en (10b). Le minimum est atteint **uniquement en $M=I$** et vaut $AB=\sqrt{b^2+4}$.
 
-![Figure 2 — Pour $b=3$, le trajet par $M$ est plus long que le segment direct $AB$, qui coupe l'axe en $I$.](figures/q11-chemin-direct.svg)
+![Figure 3 — Pour $b=3$, le trajet par $M$ est plus long que le segment direct $AB$, qui coupe l'axe en $I$.](figures/q11-chemin-direct.svg)
 
 ### Question 12
 
@@ -127,6 +135,8 @@ $$T'(0)=-\frac b{\sqrt{1+b^2}}<0,\qquad T'(b)=\frac b{V\sqrt{1+b^2}}>0.$$
 Le théorème des valeurs intermédiaires fournit un zéro sur $]0,b[$. La stricte croissance sur $\mathbb R$ prouve son unicité sur toute la droite.
 
 **(12e)** Les signes stricts aux bornes obtenus en (12d) donnent même $\boxed{0<x_0<b}$, donc bien $x_0\in[0,b]$.
+
+L’unique zéro est aussi l’unique point de minimum du temps de trajet. En effet, $T'(x)<0$ pour $x<x_0$ et $T'(x)>0$ pour $x>x_0$. En posant $\varphi(t)=t/\sqrt{1+t^2}$, la condition du minimum s’écrit $\varphi(x_0)/V=\varphi(b-x_0)$. Ces deux termes sont les sinus des angles avec la normale à l’interface, divisés chacun par la vitesse sur le segment correspondant.
 
 ### Question 13
 
@@ -162,6 +172,10 @@ Par (13c), $s\to0$ quand $V\to0^+$. Le quotient à droite a pour limite $b/\sqrt
 
 **(14b)** Par définition de la dérivabilité à droite,
 $$\boxed{x_0(V)=\frac b{\sqrt{1+b^2}}\,V+o(V)\quad(V\to0^+).}$$
+
+La symétrie de (13d) donne aussi $b-x_0(V)=x_0(1/V)$. En injectant $1/V$ dans le développement précédent, on retrouve l’approche de l’autre bord sous la forme $b-x_0(V)=b/(V\sqrt{1+b^2})+o(1/V)$ lorsque $V\to+\infty$.
+
+![Figure 4 — Pour $b=2$, la position optimale part de zéro avec une pente $2/\sqrt{5}$ et tend vers $2$. À vitesses égales, le point optimal est le milieu.](figures/q14-position-optimale.svg)
 
 ## Problème C
 
@@ -221,6 +235,8 @@ $$
 
 **(19d)** Le calcul de (19a) avec $y=x$ donne $Ax=0$. Puisque $x_3\ne0$, le vecteur $x$ est non nul et (19c) entraîne $\ker A=\operatorname{Vect}(x)$. Par hypothèse $y$ n'appartient pas à cette droite. Donc $\boxed{z=Ay\ne0}$.
 
+Un contrôle indépendant résulte de l’identité $\|z\|^2=\|x\|^2\|y\|^2-\langle x,y\rangle^2$, obtenue en développant les trois carrés de (19a). La non-colinéarité rend stricte l’inégalité de Cauchy–Schwarz. On retrouve bien $\|z\|^2>0$.
+
 ### Question 20
 
 **(20a)** En développant,
@@ -249,4 +265,4 @@ M^TM=PL^TP^TPLP^T=P(L^TL)P^T=I_3.
 $$
 Enfin $x=\tfrac12((x+y)+(x-y))$ et $y=\tfrac12((x+y)-(x-y))$. L'application $\ell$ fixe $x+y$ et change le signe de $x-y$. Ainsi $\boxed{Mx=y,\quad My=x}$. Géométriquement, c'est la symétrie orthogonale par rapport au plan engendré par $x+y$ et $z$. En écrivant $v=(x-y)/\|x-y\|$, on a aussi $M=I_3-2vv^T$. En effet $2(x-y)^Tx=\|x-y\|^2$ puisque $x$ et $y$ ont même norme. Cette formule donne directement $Mx=x-(x-y)=y$ et $M^2=I_3$.
 
-![Figure 3 — Coupe dans le plan de $x$ et $y$. La réflexion fixe la direction de leur somme et inverse celle de leur différence. La direction de $z$, perpendiculaire à cette coupe, est également fixe.](figures/q22-reflexion.svg)
+![Figure 5 — Coupe dans le plan de $x$ et $y$. La réflexion fixe la direction de leur somme et inverse celle de leur différence. La direction de $z$, perpendiculaire à cette coupe, est également fixe.](figures/q22-reflexion.svg)

@@ -62,6 +62,7 @@ def agreger(lignes: Iterable[dict[str, str]]) -> dict[str, list[dict]]:
         identifiants.add(identifiant)
         complet = ligne["couverture GitHub"] == "Complet"
         partiel = ligne["couverture GitHub"] == "Partiel"
+        a_confirmer = ligne["couverture GitHub"] == "Couverture à confirmer"
         verifie = ligne["site"] == "Édition vérifiée"
         for section, champ in (("matieres", "matière"), ("banques", "concours ou banque")):
             nom = ligne[champ]
@@ -78,8 +79,17 @@ def agreger(lignes: Iterable[dict[str, str]]) -> dict[str, list[dict]]:
             total["production"] += complet and verifie
             total["partiels"] += partiel
             total["partiels_production"] += partiel and verifie
+            if a_confirmer:
+                total["a_confirmer"] = total.get("a_confirmer", 0) + 1
+                if verifie:
+                    total["a_confirmer_production"] = total.get("a_confirmer_production", 0) + 1
             if complet:
                 total["schemas"] += int(ligne["schémas SVG"] or 0)
+    if any("a_confirmer" in g for g in groupes["banques"].values()):
+        for tableau in groupes.values():
+            for total in tableau.values():
+                total.setdefault("a_confirmer", 0)
+                total.setdefault("a_confirmer_production", 0)
     return {section: [tableau[nom] for nom in sorted(tableau)] for section, tableau in groupes.items()}
 
 

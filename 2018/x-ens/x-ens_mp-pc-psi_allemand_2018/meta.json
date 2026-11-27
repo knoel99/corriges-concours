@@ -1,0 +1,65 @@
+{
+  "slug": "x-ens_mp-pc-psi_allemand_2018",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Allemand",
+    "annee": 2018,
+    "modalite": "écrit"
+  },
+  "intitule": "Quand le livre imprimé et le livre numérique coexistent",
+  "questions": 2,
+  "redaction": "Synthèse allemande titrée des quatre pièces et réponse en allemand aux arguments de l’éditorial. Quand le livre imprimé et le livre numérique coexistent.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_MPPC_sujet_All.pdf",
+    "sha256_sujet": "93b9d66c5cbf86fc2740fc17d085dd9f1083a8d818ac24880a1ba33bf077a624",
+    "code_garde": "XEULCR",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2018/",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/11/18_MPPC_rapport_eAll.pdf",
+    "sha256_rapport_jury": "2fc5579cc41ebe6ae0404e61b52e73cc5a1abc53ab6409bac73b438a0fca3fb1",
+    "pages_sujet": 9,
+    "perimetre_sujet": "A1–A3 p. 2–6, timbre p. 7, B p. 8–9",
+    "precision_rapport": "Le rapport porte sur MP et PC. La garde du sujet inclut également PSI."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/prix-et-support.svg",
+      "legende": "Trois prix à distinguer pour lire l’entretien sur les livres numériques en Allemagne et aux États-Unis."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des 2 pages du rapport sur les deux productions, la langue et la lecture du dossier."
+    },
+    {
+      "phase": "redaction",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Synthèse allemande titrée des quatre pièces et réponse en allemand aux arguments de l’éditorial. Quand le livre imprimé et le livre numérique coexistent."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  }
+}

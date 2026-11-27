@@ -11,7 +11,12 @@
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/10/2017_2CC_sujet_Math.pdf",
     "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/12/17_2CC_rap_emath.pdf",
-    "sha256_sujet": "ba7ab7b978295417946bfb12f9b8553fdcdbe08d9ddbf16b6694a7ff2c4c66cb"
+    "sha256_sujet": "ba7ab7b978295417946bfb12f9b8553fdcdbe08d9ddbf16b6694a7ff2c4c66cb",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/12/17_2CC_rap_emath.pdf",
+    "sujet_sha256": "ba7ab7b978295417946bfb12f9b8553fdcdbe08d9ddbf16b6694a7ff2c4c66cb",
+    "rapport_sha256": "b53cc5d161e56f39222fb491e256a949775c9dce67739229c293338b937a10b0",
+    "index_banque": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/",
+    "index_banque_sha256": "36243e7203175ea8fc3f1b47cf04cfaeff13de5e6fe10463bd7d894a9fca4bfe"
   },
   "figures": [
     {
@@ -31,6 +36,56 @@
       "perimetre": "Rédaction et contrôle des 22 items des deux problèmes sur les quatre pages du sujet et consultation du rapport de Denis Serre. Dessin obligatoire du cadre, récurrence par découpage et contre-exemple vérifié à la quarrabilité générale de II.8.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Lecture des dix subdivisions sur le déterminant et des douze sur les domaines quarrables, ainsi que du rapport écrit. Contrôle des cas d’égalité, du découpage des pavés et du contre-exemple à la quarrabilité générale de la somme par le calcul des longueurs aux stades finis. L’indication correspondante de l’édition guidée a été précisée.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
-  ]
+  ],
+  "questions_principales": 17,
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7a",
+      "1.7b",
+      "1.8",
+      "1.9",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4a",
+      "2.4b",
+      "2.5",
+      "2.6a",
+      "2.6b",
+      "2.6c",
+      "2.6d",
+      "2.7",
+      "2.8"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "precision": "Lecture des dix subdivisions sur le déterminant et des douze sur les domaines quarrables, ainsi que du rapport écrit. Contrôle des cas d’égalité, du découpage des pavés et du contre-exemple à la quarrabilité générale de la somme par le calcul des longueurs aux stades finis.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "relecture_corrige",
+      "perimetre": "Lecture des dix subdivisions sur le déterminant et des douze sur les domaines quarrables, ainsi que du rapport écrit. Contrôle des cas d’égalité, du découpage des pavés et du contre-exemple à la quarrabilité générale de la somme par le calcul des longueurs aux stades finis.",
+      "sha256_sujet_controle": "ba7ab7b978295417946bfb12f9b8553fdcdbe08d9ddbf16b6694a7ff2c4c66cb",
+      "sha256_rapport_controle": "b53cc5d161e56f39222fb491e256a949775c9dce67739229c293338b937a10b0"
+    }
+  }
 }

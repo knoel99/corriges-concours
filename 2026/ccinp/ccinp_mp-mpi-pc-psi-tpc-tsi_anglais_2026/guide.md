@@ -8,18 +8,20 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Format.** L'épreuve de langue vivante A dure 3 heures ; elle est commune aux filières MP, MPI, PC, PSI, TPC et TSI et mutualisée avec e3a-Polytech. Toute machine est interdite. Un seul exercice : une **synthèse en anglais** de quatre documents « d'égale importance », en **400 mots ± 10 %** (360 à 440), avec un **titre obligatoire**, compté dans le total. Le candidat indique le nombre total de mots et trace un trait vertical tous les vingt mots. Dans l'introduction, il ne donne que la **source et la date** de chaque document ; ensuite, il y renvoie par « Doc.1 », « Doc.2 », etc.
 
 **Les documents.**
 
-| Doc. | Source, date | Nature | Idée directrice | Données utiles |
+| N° | Source, date | Nature | Idée directrice | Données utiles |
 |---|---|---|---|---|
 | 1 | *The Times*, août 2023 | article d'opinion | l'université est devenue une décision financière, à la rentabilité incertaine, surtout pour les femmes et les plus modestes | plus de 60 000 £ de dette (90 000 £ en médecine) ; 28 800 £ pour un diplômé à cinq ans, contre 25 896 £ en moyenne chez les 22-29 ans ; plus de 20 ans pour amortir ; femmes : 3 600 £ (11,8 %) de moins ; anciens boursiers de cantine : 10 % de moins ; effacement de la dette repoussé de 30 à 40 ans ; 52 % rembourseront tout ; frais de 1 000 £ (1998) à 9 000 £ |
 | 2 | Higher Education Policy Institute, février 2025 | témoignage d'un diplômé | malgré le coût, l'université vaut la peine pour les expériences qu'elle offre | 14,5 heures de travail salarié par semaine ; 27 % rembourseront leur prêt, 65 % selon la réforme ; record d'étudiants défavorisés ; autonomie, diversité, stages, compétences relationnelles |
 | 3 | *The Guardian*, août 2024 | enquête, témoignages | la dette pèse sur la carrière, le logement, la santé mentale et les projets familiaux | prêts jusqu'à 120 000 £ ; promotions refusées ; temps partiel au salaire minimum ; diplômés « trapped » et « misled » ; conditions du prêt mal comprises ; une médecin de 43 ans doit encore 36 000 £ |
-| 4 | Policy Institute, King's College London, mai 2024 | deux graphiques d'opinion (849 diplômés en 2024, 1 222 en 2020) | les diplômés jugent encore leur diplôme utile, moins pour la carrière que pour le savoir et l'expérience | « worth it » : 81 % pour l'ensemble, 84 % pour les connaissances (87 % en 2020), 78 % pour l'expérience étudiante, 66 % pour la carrière ; s'ils recommençaient : 48 % même diplôme, 39 % autre diplôme, 8 % pas d'université |
+| 4 | Policy Institute, King's College London, mai 2024 | deux graphiques d'opinion (849 au Royaume-Uni en 2024, 1 222 en Grande-Bretagne en 2020) | les diplômés jugent encore leur diplôme utile, moins pour la carrière que pour le savoir et l'expérience | « worth it » : 81 % pour l'ensemble, 84 % pour les connaissances (87 % en 2020), 78 % pour l'expérience étudiante, 66 % pour la carrière ; s'ils recommençaient : 48 % même diplôme, 39 % autre diplôme, 8 % pas d'université |
 
 **Thème et difficulté.** Le corpus porte sur l'enseignement supérieur **au Royaume-Uni**. Il oppose un coût et une dette croissants (Doc.1, Doc.3) à une valeur personnelle et sociale qui demeure (Doc.2, Doc.4). Les documents sont accessibles ; la difficulté est de les **croiser** au lieu de les résumer l'un après l'autre, et de lire correctement le Doc.4, qui ne dit pas ce que l'on attend : les diplômés ne regrettent guère l'université, ils regrettent plutôt leur filière.
 
@@ -62,7 +64,7 @@ Grille de confrontation :
 | Dette à régler | effacement à 40 ans au lieu de 30 ; 52 % rembourseront tout | 27 % aujourd'hui, 65 % avec la réforme | conditions mal comprises | — |
 | Effets sur la vie | — | étudiants pressés par le temps | promotions refusées, logement, santé mentale, famille, sentiment d'être piégé | — |
 | Accès | risque d'une université réservée aux riches | record d'étudiants défavorisés | une médecin conseille aux plus jeunes de s'en passer | — |
-| Valeur de l'expérience | — | autonomie, résilience, diversité, stages | médecins et juristes ont besoin du diplôme | 81 % pour l'ensemble, 84 % savoir, 78 % expérience ; 8 % ne retourneraient pas à l'université, 39 % changeraient de filière |
+| Vécu | — | autonomie, résilience, diversité, stages | médecins et juristes ont besoin du diplôme | 81 % pour l'ensemble, 84 % savoir, 78 % expérience ; 8 % ne retourneraient pas à l'université, 39 % changeraient de filière |
 
 > [!METHODE]
 > Une ligne remplie dans au moins deux colonnes donne un paragraphe croisé. Une case qui contredit sa voisine (52 % contre 65 %, « réservée aux riches » contre « record d'étudiants défavorisés ») est une tension à signaler : c'est ce que le jury appelle « mise en tension ».
@@ -135,13 +137,13 @@ Une phrase de conclusion, sans opinion, reprend la tension : une expérience val
 > Trois éléments seulement : la présentation du corpus (source et date, numéros des documents), le thème, la problématique. Pas d'accroche, pas de contexte extérieur.
 
 > [!INDICATION]
-> Gardez l'ordre des documents du sujet et mettez leur numéro entre parenthèses : le lecteur saura ensuite à quoi renvoie « Doc.3 ». Ne citez pas les auteurs.
+> Indiquez la source et la date de chaque document et mettez leur numéro entre parenthèses : le lecteur saura ensuite à quoi renvoie « Doc.3 ». Ne citez pas les auteurs.
 
 #### Solution
 
-*The four documents, from thetimes.com (Doc.1, August 2023), the Higher Education Policy Institute (Doc.2, February 2025), theguardian.com (Doc.3, August 2024) and the Policy Institute at King's College London (Doc.4, May 2024), deal with higher education in the UK. They raise the question of whether a degree is still worthwhile now that it leaves most graduates heavily in debt.*
+*Four sources examine higher education in the UK. On thetimes.com (Doc.1, August 2023), rising debt prompts doubts. The Higher Education Policy Institute (Doc.2, February 2025) considers wider benefits, while theguardian.com (Doc.3, August 2024) reports borrowers’ worries and the Policy Institute at King’s College London (Doc.4, May 2024) surveys graduates. How do its costs and benefits compare?*
 
-Soit 58 mots, environ 15 % du total : avec les 10 mots du titre, il en reste près de 340 pour le développement et la conclusion.
+L’introduction compte 44 mots selon la convention du jury. Avec les 10 mots du titre, elle laisse 349 mots au développement et à la conclusion de cette copie.
 
 > [!METHODE]
 > *deal with*, *raise the question of whether*, *examine*, *highlight* : quelques verbes d'analyse neutres suffisent. Le rapport recommande *argue*, *highlight*, *point out*, *suggest*, *illustrate* (p. 14).
@@ -161,25 +163,27 @@ Soit 58 mots, environ 15 % du total : avec les 10 mots du titre, il en reste pr�
 > Reformulez au lieu de recopier : deux ou trois mots cités entre guillemets au plus (*trapped*, *misled*). Variez les connecteurs (*yet*, *while*, *nevertheless*, *accordingly*, *above all*).
 
 > [!INDICATION]
-> Comptez au brouillon, puis placez un trait vertical tous les vingt mots sur la copie, titre compris ; indiquez le total à la fin.
+> Comptez au brouillon, puis placez un trait vertical tous les vingt mots sur la copie, titre compris ; indiquez le total, puis écrivez FIN.
 
 #### Solution
 
 **The Cost and Value of University Education in the UK**
 
-The four documents, from thetimes.com (Doc.1, August 2023), the Higher | Education Policy Institute (Doc.2, February 2025), theguardian.com (Doc.3, August 2024) and the Policy Institute at King's College London (Doc.4, May | 2024), deal with higher education in the UK. They raise the question of whether a degree is still worthwhile now | that it leaves most graduates heavily in debt.
+Four sources examine higher education in the UK. On thetimes.com | (Doc.1, August 2023), rising debt prompts doubts. The Higher Education Policy Institute (Doc.2, February 2025) considers wider benefits, while theguardian.com (Doc.3, August 2024) reports borrowers’ worries | and the Policy Institute at King’s College London (Doc.4, May 2024) surveys graduates. How do its costs and benefits compare?
 
-Going to university has first become a financial decision. Since 1998, tuition | fees have risen from £1,000 to £9,000, so students are likely to graduate with over £60,000 of debt (Doc.1), sometimes | up to £120,000 once interest has been added (Doc.3). As the maintenance loan no longer covers the cost of living, | many students also work about 14.5 hours a week (Doc.2). Yet the return on this investment is uncertain: five years | after graduating, the typical graduate earns only slightly more than the average young worker, while women and students from poorer | backgrounds earn even less (Doc.1).
+For applicants, going to university is | increasingly a financial decision. Since 1998, tuition fees have risen from £1,000 to £9,000, and students can leave with over | £60,000 of debt (Doc.1), sometimes up to £120,000 once interest has been added (Doc.3). As the maintenance loan no longer | covers the cost of living, many students also work about 14.5 hours a week (Doc.2). Yet the return on this | investment is uncertain: five years after graduating, the typical graduate earns only slightly more than the average young worker, while | women and students from poorer backgrounds earn even less (Doc.1).
 
-Repayment is also lasting longer, since debts will now be written off after 40 years | instead of 30, under the reform. Doc.1 puts the expected share repaying in full at 52%, while the later Doc.2 | reports a forecast of 65%. This burden shapes graduates' lives: some turn down promotions or settle for part-time jobs to | avoid higher repayments, while debt makes it harder to buy a home and weighs on mental health and family plans | (Doc.3). Graduates in lower-paid fields feel "trapped" and "misled", and most admit they never fully understood the terms of their | loans (Doc.3). Doc.1 even fears that university may become reserved for the wealthy, although record numbers of disadvantaged students are | still enrolling (Doc.2).
+Repayment is also lasting longer, as the reform extends the | period before outstanding debt is written off from 30 to 40 years. Doc.1 puts the expected share repaying in full | at 52%, while the later Doc.2 reports a forecast of 65%. This burden shapes graduates' lives: some turn down promotions | or settle for part-time jobs to avoid higher repayments, while debt makes it harder to buy a home and weighs | on mental health and family plans (Doc.3). Some respondents in lower-paid fields feel "trapped" and "misled", and most respondents to | the newspaper’s appeal say they did not fully understand the terms of their loans (Doc.3). Doc.1 even fears that university | may become reserved for the wealthy, although record numbers of disadvantaged students are still enrolling (Doc.2).
 
-Nevertheless, graduates still value what university brings beyond money. It fosters independence, resilience and people skills, exposes | students to people from diverse backgrounds and opens doors to work placements (Doc.2). Accordingly, 81% of graduates surveyed in 2024 | consider their degree worth it overall, and 84% value the knowledge gained, whereas only 66% say so about their career | prospects (Doc.4). Above all, only 8% would choose not to go to university again, and 39% would choose a different | degree (Doc.4): regret concerns the choice of course rather than higher education itself, even if one doctor now advises her | younger relatives to skip it (Doc.3).
+Nevertheless, graduates still value | what university brings beyond money. It fosters independence, resilience and people skills, exposes students to people from diverse backgrounds and | opens doors to work placements (Doc.2). Accordingly, 81% of graduates surveyed in 2024 consider their degree worth it overall, and | 84% value the knowledge gained, whereas only 66% say so about their career prospects (Doc.4). Asked what they would choose | again, 48% would take the same degree, 39% a different one and 8% would skip university (Doc.4). Changing courses thus | attracts more graduates than abandoning university, even if one doctor now advises her younger relatives to skip it (Doc.3).
 
-Overall, a university education in the UK remains a valued experience, but its financial | benefit increasingly depends on gender, social background and career path.
+Overall, | a university education in the UK remains a valued experience, but its financial benefit increasingly depends on gender, social background | and career path.
 
-**(410 words, title included)**
+**(403 words, title included)**
 
-Le décompte compte chaque suite de caractères séparée par des espaces : *£1,000*, *14.5*, *52%*, *Doc.1* et *part-time* valent chacun un mot ; les traits verticaux ne comptent pas. Avec 410 mots, la synthèse reste dans la fourchette même si l'on compte autrement quelques expressions.
+FIN
+
+Le rapport commun, p. 1, demande de numéroter les documents dans l’introduction. Chaque source et chaque date y comptent pour un mot. Les barres partent du titre et le mot FIN clôt la composition après le total.
 
 > [!METHODE]
 > Pour présenter un chiffre sans le commenter, on l'inscrit dans une comparaison qui porte l'idée : *81% of graduates consider their degree worth it overall …, whereas only 66% say so about their career prospects*. La subordonnée en *whereas* fait le croisement à l'intérieur même du Doc.4.
@@ -198,11 +202,13 @@ Le décompte compte chaque suite de caractères séparée par des espaces : *£1
 - Problématique en question indirecte, neutre, qui situe le corpus (ici le Royaume-Uni) ; titre choisi après elle, nominal et englobant.
 - Plan progressif où chaque partie fait dialoguer au moins deux documents ; tous les documents exploités, y compris les graphiques.
 - Introduction courte (source, date, numéro, problématique), aucune accroche, aucun ajout extérieur, aucune opinion.
-- Compter, tracer un trait tous les vingt mots, indiquer le total.
+- Compter, tracer un trait tous les vingt mots, indiquer le total et écrire FIN.
 
 **Langue à revoir.** *Present perfect* avec *since* ; interrogatives indirectes sans inversion ; *worth* et *worthwhile* ; -s de la troisième personne et accords (*university is*, *many issues are*) ; prépositions (*go to university*, *in February 2025*) ; collocations (*repay a loan*, *the cost of living*, *tuition fees*).
 
 **Situations transposables.** Lire un graphique d'opinion sans lui faire dire plus qu'il ne dit (regretter sa filière n'est pas regretter ses études). Croiser une enquête chiffrée avec des témoignages. Construire un plan qui va de la cause (le coût) aux effets (la vie des diplômés) puis à la nuance (la valeur reconnue).
+
+Le premier graphique évalue plusieurs bénéfices du diplôme. Dans le second, les quatre réponses de 2024 totalisent 100 % (48, 39, 5 et 8). La comparaison avec 2020 porte sur un autre échantillon, interrogé en Grande-Bretagne, alors que celui de 2024 couvre le Royaume-Uni.
 
 ![Dette et valeur du diplôme britannique](figures/lecture-du-dossier.svg)
 

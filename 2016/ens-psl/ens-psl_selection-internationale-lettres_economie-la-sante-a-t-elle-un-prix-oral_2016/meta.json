@@ -1,0 +1,105 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_economie-la-sante-a-t-elle-un-prix-oral_2016",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Économie — la santé a-t-elle un prix (oral)",
+    "annee": 2016,
+    "modalite": "oral"
+  },
+  "intitule": "Économie — la santé a-t-elle un prix (oral)",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/ECO-oral.pdf",
+    "sujet_sha256": "8550c64793d2aef28a0ff5953d390ada1dbb11e98c6128bcf85d212dca577375",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/rapport%20SIL%20Economie%202016.pdf",
+    "rapport_sha256": "936e17e2272a45aab860ecca2d3df4078bf8a37f0c96e873c6c6663a8ccef843"
+  },
+  "figures": [
+    {
+      "fichier": "figures/la-sante.svg",
+      "question": "Explication",
+      "legende": "Trois mesures différentes dans le dossier sur la santé"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "sil_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du rapport disciplinaire de la session, avec distinction entre ses indications sur l’écrit et sur l’oral."
+    },
+    {
+      "phase": "redaction",
+      "session": "sil_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Exposé et préparation orale sur prix, coût, capital santé, assurance et calcul de la valeur statistique de la vie des trois documents."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "sil_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification des consignes, des raisonnements et des légendes dans les deux éditions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Les trois documents ont été relus dans leur version graphique. Les montants et parts de PIB du tableau, les écarts entre catégories à 35 ans et la prime de 500 dollars pour un risque de 1 sur 10 000 concordent avec l’exposé.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Exposé unique sur le prix et la valeur de la santé."
+    ],
+    "annexes_verifiees": [
+      "Document 1, dépenses de santé en 2008.",
+      "Document 2, espérance de vie restante à 35 ans.",
+      "Document 3, exemple de prime de risque et profil de valeur de la vie restante."
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "limites": "Le feuillet de trois pages comporte trois documents proposés comme appuis facultatifs. Chacun est traité et le commentaire du jury est rattaché à l’oral.",
+    "verification": "Les trois documents ont été relus dans leur version graphique. Les montants et parts de PIB du tableau, les écarts entre catégories à 35 ans et la prime de 500 dollars pour un risque de 1 sur 10 000 concordent avec l’exposé."
+  }
+}

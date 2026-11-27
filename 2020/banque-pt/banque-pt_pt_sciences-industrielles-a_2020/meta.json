@@ -1,0 +1,559 @@
+{
+  "slug": "banque-pt_pt_sciences-industrielles-a_2020",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Sciences industrielles A",
+    "annee": 2020,
+    "modalite": "écrit"
+  },
+  "questions": 44,
+  "reponses_reperees": 44,
+  "unite_de_decompte": "Questions Q1 à Q44 telles que numérotées dans le sujet et le cahier.",
+  "duree_heures": 5,
+  "redaction": "Corrigé original rédigé par IA, non officiel.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2020/si_a_2020_pt.zip",
+    "sujet_sha256": "9931c03f975d139f09e89c6bff8706ed87c00ceb5b14126a47ea8b4ec1261929",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2020/rapport_si_a_ecrit_2020.pdf",
+    "rapport_jury_sha256": "15a3e2135123af4c0ac5a95670c6cb58b0d9c2efe5070134340fd4e278a095a4",
+    "registre": "campagnes/x-ens/bilans/sources-sciences-industrielles-banque-pt-2017-2025.tsv",
+    "annexes": "A.pdf : 20 pages numérotées dans 24 pages PDF. B.pdf : annexes A à E, 11 pages. C.pdf : notice et versos. Ca à Cg : 28 pages de réponse. Aucun fichier embarqué."
+  },
+  "pieces_verifiees": [
+    {
+      "doc": "A",
+      "pages": 24,
+      "sha256": "2096745bcd87916986dc15594a2d186ba8341d5bebf250d936c21634901f0e70",
+      "rendus_sha256": [
+        "cfedcecb87b6d774870a70bd27a179db3d931a82bedd76b51b5d3000985e62b2",
+        "9788d4a91e0f4ef5c78751b9ce5da7a1288f3b0eb2e4cde32b2cef9345b8ca08",
+        "62ae71f7c593efd7929f311f83fe9c24337d5908c204066ae9ff0d514f76b69e",
+        "7bf20700b9091bdc742a19bbc71d2b6145a0f7b8b0a28f658b6938f13dbcb032",
+        "ef98ba437e575eea31fb178d4fe2cbeac484b553ed4b7b8d47d93cc850a3e74c",
+        "6afee5ca4c23134176561c5e39e159fc4666681ebd06ed5a7b9c1a61bc738790",
+        "25839f566ab20f9a1494c238a7a5b1f828c87f8ea967b0a5961106d695564179",
+        "b59951c1ba9bb4d0680fdc642e1273dd082296f0d7f6d7843488589de1521134",
+        "f427553816f8f15dd6c6ab03a407c5d1810ff6317dd0e8f3edac2176cd04f9b5",
+        "802e5aa19f0bcf2780afec41e07a23b0adca826885a0fba57d44199853dab89c",
+        "ec7721285ff04f36c2693db56b59ad676936783d1dd4aff75915563ef3871a52",
+        "f3a986cf2251e5630f3fab17bfb93bba7ba75a5fdcc80c801d615ef849a141f9",
+        "0b3321ff1b135546979c08ee1f8993f9176b9401cc201345697c28d3f0fbc493",
+        "9c597d42e91dd189ba4a1c7aaa05b3d3f3127798af2b4ead012eb18ef07a0eb9",
+        "47ff18536a7a908eb35a2185ac41d67496bc55cd34688af84376e518eb3da41d",
+        "d77c7185e97a701675a71fed43755866bb083cfa924f6e058985213445f4334a",
+        "f44bb3abfa977514b61ce4652531ee68069546fe5bd02f2cc147015d008ecafc",
+        "b9c264748d79a30e4dbbf3904fde4561a963c822fec7c0ceaf9f86df8240f246",
+        "72d06a4057cf3ba020fb39633a39fb549fca278c33c569e49a23ea37b25ca0b0",
+        "c7c8971586f31d58cc61f70aca9b48eadd4bf08dd69f03890122d48f61234487",
+        "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6",
+        "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6",
+        "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6",
+        "4fcd65146faed9389e6c143a8cb9d82d56d1d0a3a11ab4b32858bb3827666c77"
+      ],
+      "pieces_jointes": []
+    },
+    {
+      "doc": "B",
+      "pages": 11,
+      "sha256": "d3e4a4e9896a45850f12ce683a5012cd690988d07405d6fb498ebdeda8341e21",
+      "rendus_sha256": [
+        "a5104b6dbc1b4ad17ebb6ce5fd916313fb8c96ba805ef2216741d43d30e3f23f",
+        "aef956af3f1766a01a190d68269e7514007b855549c80c126b879881ae017783",
+        "f433e0f5d463930b65de7671ecf388e2c0ad25d1b35f4f7bd60c394f2814be31",
+        "d774d5792d4339ba869185c36827ba9c9df2c9f201d1a2f3a653f53a6d3b2ac6",
+        "fd814598c85623f325171b2a33a0ccdf3cd79a53fc81b731fc3390f1fd62ba66",
+        "6053f31ede04fdf2db6420abbf8fcd36ae5b1db48f9c986450bb9b2753fee3b9",
+        "a808c2b6dbf57b0edec5e7e37164f53a3d0f6e55794773c88bd3aeb5e08e6fed",
+        "d4b775b381fdf47c50dac48d5ff715a925c09fac74be9c76aac5ee7a136cdb07",
+        "6f62d34f6c101253d9019ce491a7563a01da5be97ff330ce47998308fd4d61c8",
+        "b6b22b5ab75a2da99bc6e8428acb7a845f3f9412d56c4ec623dd499e2c9bc93f",
+        "7d1a0e7d0b89fdacb8127af33a0878da76eb527b096478c82ae2dc37ecb36505"
+      ],
+      "pieces_jointes": []
+    },
+    {
+      "doc": "C",
+      "pages": 4,
+      "sha256": "9bf4307603d764a3b974cabd3cb638d4f70d32e0cfde2786f48874f0378a19f3",
+      "rendus_sha256": [
+        "de226859209d7dba8f2e2aa4350ecb7b0c6f15769147ae703d42e4bbd4bae26f",
+        "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6",
+        "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6",
+        "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+      ],
+      "pieces_jointes": []
+    },
+    {
+      "doc": "Ca",
+      "pages": 4,
+      "sha256": "b3de97910aeed7e07b7252078297f039c8c8ce363ba40d7aba31b49d2a074c9f",
+      "rendus_sha256": [
+        "2c22ab29520f94e9cc37358e2ce7f511a725f0534bd4176426b0a56f5a81f824",
+        "7e1d2e72faa90cb620b6624619adb1d70585e518e3ef4367de401376a41f650d",
+        "773bfcceaa2e207845da97e47f8a68254e9546b4c68a96daeb4c6f040e387289",
+        "ef8ad33f4cad70b5b52c37222533a8dc8d1fe4df9a1e3dc0a5f91054fb7047fc"
+      ],
+      "pieces_jointes": []
+    },
+    {
+      "doc": "Cb",
+      "pages": 4,
+      "sha256": "12ee708dec6d637f8f44665a86f8d9d405a137e92ab9bf6ecb6347890cba0c69",
+      "rendus_sha256": [
+        "522f4184083f263149e511d737cdcb3d20e65beb6bc250719a72c2b826d6d00c",
+        "afd116214b6192a817e082bdcc3673a8389e2bc96ce908fd12da65a55a3fcfb6",
+        "0fc26b5d27252d004d13beefd19893613eb7c37f9d5c2c8f0825cb2fab6987ed",
+        "c9a158b00582be48d62173253c76b5943c1ea1615422dde342424c476a1fde29"
+      ],
+      "pieces_jointes": []
+    },
+    {
+      "doc": "Cc",
+      "pages": 4,
+      "sha256": "f8978d9b2764770a42cb799c39a52b5373abf9119b7484b616a5a563e5c9e5cd",
+      "rendus_sha256": [
+        "08a8bf759f248ce74c72f1360bdbe376ff6ca53dade8e1f9165b0e0e58cc7d36",
+        "5b2961c0b6098d93d0187282377f6af42fdfae4dfd89cd9cd1ef6ed813e17417",
+        "0651771f753053670191395c12c6007383d7b4d24163cb41d43f71fba2c25007",
+        "1e44c8ed0b75a7afa0a6512a33370502ebaba6ee4880287f31e4ee13fdf0526e"
+      ],
+      "pieces_jointes": []
+    },
+    {
+      "doc": "Cd",
+      "pages": 4,
+      "sha256": "c696c53ac370591a44b9d82f9eb70ad43696c7c2530edd56c7ff98374ae3fbdc",
+      "rendus_sha256": [
+        "69c156d58eccb5930fc120eddcdf2c0ed2c5ec79be2c190c6751f1299a42e04b",
+        "5e327c6bb7d329985a2099007f3276f1febfebc239599e1ca57ada3a74133bf3",
+        "58905deacd147f4b86149e2bbe7a46dfd16120e591d7a6985cc11f643bce5530",
+        "26f4a8360a309a1b20e87459c9344d1df7993b0a7ea4d45010f5135da0264329"
+      ],
+      "pieces_jointes": []
+    },
+    {
+      "doc": "Ce",
+      "pages": 4,
+      "sha256": "d81464eaf767eb8b0c722b2ce183d2ca89467ec97860d1272d2ce61525985b0b",
+      "rendus_sha256": [
+        "45dd8fc084b359057b5a30465300378567c0b6149bbcc7bac5b820adab0ead1e",
+        "12d8ff129008dfae13a5e53cf79c840efb74c81a495fd4814a901edf95ee18b5",
+        "e69ba2dbf196a160b68e63b22e43b67f3d347fc7ac157bb3994f4ae2cd388f52",
+        "88f093b1dca8b5cc5398427cd73a83069cd7984c8b61554e0f3d21d3e0204c5a"
+      ],
+      "pieces_jointes": []
+    },
+    {
+      "doc": "Cf",
+      "pages": 4,
+      "sha256": "ab9d12c485ea7bd7be664ccb0cd52539ff4885a00147d3c6512a54bc455194e8",
+      "rendus_sha256": [
+        "404829977601b78f3225f85bef87428a93b2b38f2124db7ca8ff4f0979bebd83",
+        "a31187f20e517c649b031f1498d7d368cab9acc6313de48b8dd5144dc468bacd",
+        "4806dde4fd6ab0ed96c6f31d6bc0e3321e5d388a77eae60e429068fb38911a8b",
+        "6b4617679bb51724ac59aa2009644dc854d9492848981200cd007e504551d500"
+      ],
+      "pieces_jointes": []
+    },
+    {
+      "doc": "Cg",
+      "pages": 4,
+      "sha256": "d2a4f1c600c1734af9b4d75fe1c0d6eb264bf77d9ee3c2882974f1aac0e478a3",
+      "rendus_sha256": [
+        "145e833f6f2ddb3ab58197fe118eeb762446e895c6500a1cae198392adc3265f",
+        "b9b522bda2e117c1978110730298b4068470c9d2acb1d60873e57e41adce4d78",
+        "8aba1eb989ca4da3f25deced77f8254fb8f7b14efcb1cc74b2bc3c7fa132470c",
+        "601e34558f9b306010490ede3aa5729f18489df87ba3a48718ae0f9e17989e71"
+      ],
+      "pieces_jointes": []
+    },
+    {
+      "doc": "rapport",
+      "pages": 4,
+      "sha256": "15a3e2135123af4c0ac5a95670c6cb58b0d9c2efe5070134340fd4e278a095a4",
+      "rendus_sha256": [
+        "a79bf814924b6fc9b2cdbbb132bd9c9e1076e4dd9aadda9651d09d052f068662",
+        "8dc9166bd94f670779e185472f0c5f338f3cf648c3608fddc040f0dbe722e7bc",
+        "1c1147a61c696d7b13ff010a9f6639eef9fedb09f053835307fcde02914079c6",
+        "43f84a62f5903d6349da305cbe09b7f368b549c56638a7cf9d208ade21fe8174"
+      ],
+      "pieces_jointes": []
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Résolution des 44 questions. Compléments des plans Ca1 à Ca4, Cf4 et Cg3, schéma pneumatique et calculs des bras et des boucles."
+    },
+    {
+      "phase": "revision",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture des dix pièces du sujet et du rapport. Vérification des séquences, des signes du transport au point mobile, des domaines des gains et des valeurs de phase."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21",
+      "Q22",
+      "Q23",
+      "Q24",
+      "Q25",
+      "Q26",
+      "Q27",
+      "Q28",
+      "Q29",
+      "Q30",
+      "Q31",
+      "Q32",
+      "Q33",
+      "Q34",
+      "Q35",
+      "Q36",
+      "Q37",
+      "Q38",
+      "Q39",
+      "Q40",
+      "Q41",
+      "Q42",
+      "Q43",
+      "Q44"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Q1",
+        "feuillets": "A7, B4, Ca1",
+        "titre": "Chronogramme de la cellule"
+      },
+      {
+        "question": "Q2",
+        "feuillets": "A7, B5–7, Ca2",
+        "titre": "Ordre des douze demi-couches"
+      },
+      {
+        "question": "Q3",
+        "feuillets": "A7, B5–7, Ca2",
+        "titre": "Origine des demi-couches"
+      },
+      {
+        "question": "Q4",
+        "feuillets": "A7, Ca3",
+        "titre": "Nature des flux"
+      },
+      {
+        "question": "Q5",
+        "feuillets": "A7, Ca4",
+        "titre": "Fonctions de la chaîne de positionnement"
+      },
+      {
+        "question": "Q6",
+        "feuillets": "A5, A7, Cb1",
+        "titre": "Distributeurs à représenter"
+      },
+      {
+        "question": "Q7",
+        "feuillets": "A8, Cb2",
+        "titre": "Efforts de cohésion d’un montant"
+      },
+      {
+        "question": "Q8",
+        "feuillets": "A9, Cb2–3",
+        "titre": "Déformations axiales"
+      },
+      {
+        "question": "Q9",
+        "feuillets": "A9, Cb3",
+        "titre": "Équation de la flèche"
+      },
+      {
+        "question": "Q10",
+        "feuillets": "A9, Cb3",
+        "titre": "Vérification du socle"
+      },
+      {
+        "question": "Q11",
+        "feuillets": "A9, B9, Cb4",
+        "titre": "Moment du compensateur en A"
+      },
+      {
+        "question": "Q12",
+        "feuillets": "A10, B9, Cb4–Cc1",
+        "titre": "Fermeture du triangle du compensateur"
+      },
+      {
+        "question": "Q13",
+        "feuillets": "A10, B9, Cc1–2",
+        "titre": "Moment de pesanteur des trois masses"
+      },
+      {
+        "question": "Q14",
+        "feuillets": "A10, B9, Cc2",
+        "titre": "Contrainte de trajectoire"
+      },
+      {
+        "question": "Q15",
+        "feuillets": "A10, Cc2",
+        "titre": "Surcompensation et sens de puissance"
+      },
+      {
+        "question": "Q16",
+        "feuillets": "A11, B9, Cc2",
+        "titre": "Inertie du bras chargé"
+      },
+      {
+        "question": "Q17",
+        "feuillets": "A11, B9, Cc3",
+        "titre": "Barycentre de l’ensemble 4"
+      },
+      {
+        "question": "Q18",
+        "feuillets": "A11, Cc3",
+        "titre": "Vitesses de B et du centre de masse"
+      },
+      {
+        "question": "Q19",
+        "feuillets": "A11, Cc4",
+        "titre": "Moment cinétique au point mobile B"
+      },
+      {
+        "question": "Q20",
+        "feuillets": "A11, Cc4",
+        "titre": "Moment dynamique en B"
+      },
+      {
+        "question": "Q21",
+        "feuillets": "A11, Cd1",
+        "titre": "Couple exercé par l’axe J3"
+      },
+      {
+        "question": "Q22",
+        "feuillets": "A11, Cd2",
+        "titre": "Moment dynamique du bras 2"
+      },
+      {
+        "question": "Q23",
+        "feuillets": "A11, Cd2",
+        "titre": "Isolement pour calculer le couple J2"
+      },
+      {
+        "question": "Q24",
+        "feuillets": "A12, Cd3",
+        "titre": "Coefficients des quatre blocs"
+      },
+      {
+        "question": "Q25",
+        "feuillets": "A13–14, Cd4",
+        "titre": "Fonction propre de l’axe J2"
+      },
+      {
+        "question": "Q26",
+        "feuillets": "A14, Cd4",
+        "titre": "Pôles et stabilité"
+      },
+      {
+        "question": "Q27",
+        "feuillets": "A15, Ce1",
+        "titre": "Boucle de vitesse ouverte"
+      },
+      {
+        "question": "Q28",
+        "feuillets": "A15, Ce2",
+        "titre": "Compensation du pôle stable"
+      },
+      {
+        "question": "Q29",
+        "feuillets": "A15, Ce3",
+        "titre": "Réglage de la boucle interne"
+      },
+      {
+        "question": "Q30",
+        "feuillets": "A15, Ce4",
+        "titre": "Boucle de position"
+      },
+      {
+        "question": "Q31",
+        "feuillets": "A15, Ce4",
+        "titre": "Vérification des exigences de suivi"
+      },
+      {
+        "question": "Q32",
+        "feuillets": "A16, Cf1",
+        "titre": "Aire du profil de vitesse"
+      },
+      {
+        "question": "Q33",
+        "feuillets": "A16, Cf1",
+        "titre": "Vitesse maximale d’une rampe"
+      },
+      {
+        "question": "Q34",
+        "feuillets": "A16, Cf2",
+        "titre": "Profil triangulaire"
+      },
+      {
+        "question": "Q35",
+        "feuillets": "A17, Cf2",
+        "titre": "Inertie ramenée au moteur"
+      },
+      {
+        "question": "Q36",
+        "feuillets": "A17, Cf3",
+        "titre": "Accélération disponible"
+      },
+      {
+        "question": "Q37",
+        "feuillets": "A18, Cf4",
+        "titre": "États des six diodes et tension redressée"
+      },
+      {
+        "question": "Q38",
+        "feuillets": "A18, Cg1",
+        "titre": "Ondulation du pont"
+      },
+      {
+        "question": "Q39",
+        "feuillets": "A19, Cg1",
+        "titre": "Complémentarité des interrupteurs"
+      },
+      {
+        "question": "Q40",
+        "feuillets": "A19, B11, Cg2",
+        "titre": "Valeur moyenne de la tension modulée"
+      },
+      {
+        "question": "Q41",
+        "feuillets": "A20, Cg2",
+        "titre": "Synchronisme et quadrature"
+      },
+      {
+        "question": "Q42",
+        "feuillets": "A20, Cg2–3",
+        "titre": "Construction de Fresnel"
+      },
+      {
+        "question": "Q43",
+        "feuillets": "A17, A20, Cg3",
+        "titre": "Courant au point de fonctionnement"
+      },
+      {
+        "question": "Q44",
+        "feuillets": "A17, A20, Cg4",
+        "titre": "Compatibilité de la tension de phase"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  },
+  "figures": [
+    {
+      "question": "Q1",
+      "numero": 1,
+      "fichier": "figures/chronogramme.svg",
+      "legende": "Ca1. Sorties complétées sur le chronogramme fourni."
+    },
+    {
+      "question": "Q3",
+      "numero": 2,
+      "fichier": "figures/demi-couches.svg",
+      "legende": "Ca2. Numéros de dépose et origines des douze demi-couches."
+    },
+    {
+      "question": "Q4",
+      "numero": 3,
+      "fichier": "figures/flux.svg",
+      "legende": "Ca3. Nature des flux dans les cases du diagramme."
+    },
+    {
+      "question": "Q5",
+      "numero": 4,
+      "fichier": "figures/fonctions.svg",
+      "legende": "Ca4. Fonctions génériques sur le plan du préhenseur."
+    },
+    {
+      "question": "Q6",
+      "numero": 5,
+      "fichier": "figures/distributeurs.svg",
+      "legende": "Les positions et les liaisons à inscrire dans les deux cadres de Cb1."
+    },
+    {
+      "question": "Q9",
+      "numero": 6,
+      "fichier": "figures/flexion.svg",
+      "legende": "Déformée horizontale du montant pour les efforts de la figure 8."
+    },
+    {
+      "question": "Q15",
+      "numero": 7,
+      "fichier": "figures/couples.svg",
+      "legende": "Figure 9 du sujet. Les cercles signalent les couples opposés de même module."
+    },
+    {
+      "question": "Q34",
+      "numero": 8,
+      "fichier": "figures/triangle.svg",
+      "legende": "Vitesse d’une rampe pour le déplacement de 25 cm en une seconde."
+    },
+    {
+      "question": "Q37",
+      "numero": 9,
+      "fichier": "figures/pont.svg",
+      "legende": "Cf4. Enveloppe de tension en orange et états des six diodes en bleu."
+    },
+    {
+      "question": "Q42",
+      "numero": 10,
+      "fichier": "figures/fresnel.svg",
+      "legende": "Cg3. Construction sur les directions de flux du document-réponse."
+    },
+    {
+      "question": "Q43",
+      "numero": 11,
+      "fichier": "figures/moteur.svg",
+      "legende": "Cg3. Lecture sur la caractéristique numéro 1 du CMP50S."
+    }
+  ]
+}

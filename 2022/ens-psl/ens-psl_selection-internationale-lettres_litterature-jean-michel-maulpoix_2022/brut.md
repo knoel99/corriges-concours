@@ -4,9 +4,17 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Sujet officiel](https://www.ens.psl.eu/sites/default/files/litterature-sil2022-2.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/rapport-litterature-sil_2022.pdf)
 
 L’écrit littéraire de deux heures demande de commenter une proposition de Jean-Michel Maulpoix dans « Pour un lyrisme critique ». Le devoir suit la transformation du rapport entre la voix singulière du poème, les paroles ordinaires et le monde contemporain.
+
+## Sujet de l’écrit
+
+Vous analyserez et commenterez la citation ci-dessous sous la forme d’un écrit organisé. Vous pouvez éclairer ces propos par des éléments de contexte, par vos connaissances d’histoire de la littérature. Vous ferez appel à votre expérience de lectrice, sans vous limiter au corpus de votre projet de recherche.
+
+Jean-Michel Maulpoix, « Pour un lyrisme critique ». Le passage commence par « Moins émerveillante et poétique que jamais » et se termine par « de cette parole que nous sommes. ». La coupure entre parenthèses appartient au texte proposé.
 
 ## Quelqu’un parle encore dans le poème
 
@@ -19,6 +27,8 @@ Dans « This Is Just To Say », William Carlos Williams fait dire à un locuteur
 Que critique ce poème ? Il n’énonce aucune opinion sur la mauvaise littérature ou les mœurs domestiques. Il soumet toutefois à l’épreuve une forme ordinaire de parole, l’excuse. Demande-t-on encore franchement pardon lorsqu’on fait saliver celui qu’on a privé de son fruit ? Et quelle relation permet de lui parler de cette façon, avec une confiance qui rend possible aussi bien la tendresse que la désinvolture ? La personne à laquelle le billet est destiné ne répond pas. Cette absence donne un rôle au lecteur. À la première lecture, je peux rire de l’effronterie. À la suivante, je peux entendre le désir de partager après coup une sensation qu’on n’a pas partagé en acte. Le poème a pris pour objet un geste de parole assez modeste pour que chacun en reconnaisse les risques. Il me rend sensible à ce que je fais à un autre lorsque je prononce une excuse.
 
 Il serait donc hâtif de déduire de l’allure prosaïque du texte un simple renoncement au chant. Le froid du fruit et la douceur qu’il promet sont plus perceptibles au terme des douze vers que dans mon résumé. Le poète n’a pas besoin d’annoncer une merveille. Il produit, dans des mots ordinaires et jusque dans l’indélicatesse d’un geste, une attention nouvelle à la sensation. « Moins émerveillante » peut désigner la désaffection à l’égard d’un effet obligé. Cela laisse ouverte la question de ce qui effectivement étonne.
+
+La succession des comparatifs chez Maulpoix ne donne donc pas le programme d’une accélération uniforme. Chez Williams, douze vers très courts pourraient se lire en quelques secondes. Pourtant les blancs entre ses trois quatrains retardent successivement la découverte de la part que l’autre avait peut-être réservée et celle de la saveur dont le locuteur garde la mémoire. Il suffit de rétablir la continuité d’un billet ordinaire pour que l’aveu paraisse plus expéditif. J’éprouve ainsi personnellement ce que le passage appelle faire face à son temps : le poème emprunte la brièveté d’une parole quotidienne et m’oblige à prendre le temps d’entendre ce qu’une excuse laisse en suspens.
 
 ### Regarder le mot pendant qu’il désigne
 

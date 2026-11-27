@@ -8,7 +8,7 @@
     "modalite": "écrit"
   },
   "intitule": "Histoire de l’art",
-  "questions": 0,
+  "questions": 1,
   "redaction": "Proposition non officielle rédigée par IA.",
   "modele": {
     "provider": "codex",
@@ -32,9 +32,15 @@
       "fichier": "figures/reseaux.svg",
       "question": "Dissertation",
       "legende": "Où se distribue la fonction ?"
+    },
+    {
+      "fichier": "figures/table-et-salon.svg",
+      "question": "Dissertation",
+      "legende": "Deux lectures de la table-terminal de La Pietra, Milan, 1983.",
+      "provenance": "Schéma original de cette révision, composé d’après la référence étudiée."
     }
   ],
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -59,6 +65,86 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Vérification du statut expérimental de la Casa telematica à Milan, des désignations des pièces et de la table-terminal, ainsi que du dispositif sonore original des Immatériaux. Contrôle des deux éditions et du schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Les cinq usages du terminal sont discutés. L’analyse distincte des photographies du séjour et de la table-terminal étaye l’interprétation du maintien des rites domestiques. Rapport écrit 2024 absent du catalogue consulté. Correction du futur « restera » modalisé par « probablement »."
     }
-  ]
+  ],
+  "gabarit": "dissertation",
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2024_Histoire%20de%20l%27Art_Design1A.pdf",
+      "sha256": "6cee4a4d44d26235b3a6e4cd052eb69c441883686b2970d2ba927c5670729086",
+      "pages": 2,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "ebf696dd02d31fc773b3b6c22ab1ceb1b1a418f2cc4eca478f1db91d373adaca"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "c57c31158a3bc86f4ed2f4957fe035a28f7596213a591c823728dc743afc7bd7"
+        }
+      ]
+    },
+    "catalogue_rapports": {
+      "url": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=589&field_report_topic_target_id%5B%5D=449",
+      "sha256": "0c9fc888eda1ed960fdb494c270598d2015dccca75f56f5ee27f16b55411acc4",
+      "constat": "Aucun rapport écrit répertorié avec les filtres de la session et de la filière, vérification du 26 novembre 2026.",
+      "index_annuel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=589",
+      "sha256_index_annuel": "5fb6fdc8703378e73670392e74975a658e94b085ee4ab26aaa4c684894429b97"
+    },
+    "reference_etudiee": {
+      "url": "https://www.ugolapietra.com/anni-80/la-casa-telematica/",
+      "sha256": "35a9e240613a6e7503992db3a13f017f5a0eb96f7c5262e91b6ea581ffe44bb5",
+      "nature": "Archives du designer : Fiera di Milano, 1983, photographies légendées « soggiorno » et « tavolo/terminale ».",
+      "photographies": [
+        {
+          "legende": "soggiorno",
+          "sha256": "2d27a726ea436c9db8fd0fe7edc798708f9f5fca8236eabe3de93d0ab11d9325",
+          "url": "https://www.ugolapietra.com/wp-content/uploads/2017/10/casatelematica_soggiorno-low.jpg"
+        },
+        {
+          "legende": "tavolo/terminale",
+          "sha256": "8ea99b461665504cfa0a33ccffc2135fc5e506e62f5e7e14e9d894441a9df62d",
+          "url": "https://www.ugolapietra.com/wp-content/uploads/2017/10/casatelematica007_low.jpg"
+        }
+      ]
+    }
+  },
+  "duree_heures": 4,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 2,
+        "citation": "« Avec un ou plusieurs terminaux, […] une nouvelle typologie environnementale fait son apparition ; l’espace, dès lors, se caractérise par les fonctions qui y prennent place : information (terminal relié à plusieurs banques de données), loisirs (jeux électroniques), mémoire familiale (enregistrement d’images et d’événements se rapportant à l’histoire de la famille), travail (connexion avec les centres de traitement), activité culturelle (théâtre, film…), etc. Et le vieux salon ? Il restera probablement comme il est, à l’image d’un lieu qui n’est plus habité, mais conservé en souvenir du rituel. »",
+        "reference": "Ugo La Pietra, « Le tout-confort télématique », Architecture intérieure – Créé, n°94, 1983.",
+        "consigne": "Vous analyserez et discuterez cet extrait de Ugo La Pietra en vous appuyant sur votre connaissance du programme et selon un propos argumenté.",
+        "programme_imprime": "Matérialité et immatérialité des productions industrielles : du Deutscher Werkbund à l’exposition « Les Immatériaux » (1907-1985)",
+        "annexes_imposees": [],
+        "perimetre": "Les cinq usages du terminal sont discutés. L’analyse distincte des photographies du séjour et de la table-terminal étaye l’interprétation du maintien des rites domestiques."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
 }

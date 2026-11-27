@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import shutil
 import subprocess
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 import pytest
@@ -109,6 +110,16 @@ def test_echapper_latex():
 def test_variables_gabarit():
     v = variables_gabarit(META, "guide", "CCINP MP — Physique 2026 · Corrigé guidé")
     assert v["nature"] == "Corrigé guidé"
+    assert "mesurerentete" not in v
+    litterature = {
+        **META["epreuve"],
+        "filiere": "Sélection internationale Lettres",
+        "matiere": "Philosophie — Littérature et philosophie (oral)",
+    }
+    for nature in ("brut", "guide"):
+        variables = variables_gabarit({"epreuve": litterature}, nature, "Littérature et philosophie")
+        assert variables["mesurerentete"] == "true"
+        assert variables["matiere"] == litterature["matiere"]
     assert v["titre"] == "CCINP MP — Physique 2026"
     # Douze brut.md finissent par « · Corrigé » seul : retiré lui aussi.
     seul = variables_gabarit(META, "brut", "CCINP MP — Physique 2026 · Corrigé")
@@ -413,6 +424,37 @@ def test_export_complet_pdf(tmp_path):
     assert (dossier / "figures" / "q1.pdf").exists()
 
 
+@pytest.mark.skipif(
+    any(shutil.which(o) is None for o in ("pandoc", "latexmk", "lualatex", "rsvg-convert", "pdftohtml")),
+    reason="chaîne LaTeX ou lecteur de signets absent",
+)
+def test_signets_pdf_pointent_sur_les_titres(tmp_path):
+    dossier = _depot(tmp_path)
+    paragraphes = "\n\n".join(["Une ligne de texte."] * 55)
+    titres = ["Première partie", "Question suivante", "Dernière solution"]
+    # Espacer les titres et la figure pour distinguer leurs destinations dans le PDF.
+    corps = [
+        "# Copie", paragraphes, f"## {titres[0]}", "![Figure témoin](figures/q1.svg)",
+        paragraphes, f"### {titres[1]}", paragraphes, f"#### {titres[2]}", "Fin.",
+    ]
+    (dossier / "brut.md").write_text("\n\n".join(corps), encoding="utf-8")
+    resultat = ex.exporter_document(dossier, "brut", pdf=True)
+    assert resultat.ok, (resultat.message, resultat.diagnostic)
+
+    xml = subprocess.check_output(["pdftohtml", "-xml", "-i", "-stdout", str(resultat.pdf)])
+    document = ET.fromstring(xml)
+    pages_des_titres = {}
+    for page in document.findall("page"):
+        for ligne in page.findall("text"):
+            texte = "".join(ligne.itertext()).strip()
+            if texte in titres:
+                pages_des_titres[texte] = int(page.attrib["number"])
+    assert set(pages_des_titres) == set(titres)
+    assert len(set(pages_des_titres.values())) == len(titres)
+    signets = [(item.text, int(item.attrib["page"])) for item in document.findall(".//outline/item")]
+    assert signets == [(titre, pages_des_titres[titre]) for titre in titres]
+
+
 def test_slugs_modifies(tmp_path):
     def git(*a):
         subprocess.run(["git", *a], cwd=tmp_path, check=True, capture_output=True)
@@ -441,6 +483,23 @@ def test_export_arabe_et_francais_dans_la_meme_copie(tmp_path):
     assert tex.index(r"\end{otherlanguage}") < tex.index("La phrase")
     francais = ex.generer_tex("# Titre\n\nDu texte.\n", META, "guide", tmp_path / "fr.tex")
     assert "Noto Naskh Arabic" not in francais.read_text()
+
+
+@pandoc
+def test_export_russe_dans_les_passages_balises(tmp_path):
+    source = (
+        "# Titre\n\nEn français [*сло́во!*]{lang=ru} puis en français.\n\n"
+        "::: {lang=ru}\nОн всё видел?\n:::\n\nÀ bientôt !\n"
+    )
+    tex = ex.generer_tex(source, META, "brut", tmp_path / "ru.tex").read_text()
+    assert r"\babelfont[russian]{rm}" in tex
+    assert r"\foreignlanguage{russian}{\emph{сло́во!}} puis en français." in tex
+    assert r"\begin{otherlanguage}{russian}" in tex
+    assert tex.index(r"\end{otherlanguage}") < tex.index("À bientôt")
+
+    sans_balise = "# Titre\n\nUn mot russe, ёлка, dans une phrase française.\n"
+    temoin = ex.generer_tex(sans_balise, META, "brut", tmp_path / "fr.tex").read_text()
+    assert r"\babelfont[russian]" not in temoin
 
 
 @pandoc

@@ -11,13 +11,14 @@
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/07/2017_MP_sujet_MathB.pdf",
     "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/12/17_MP_rap_eMathB.pdf",
-    "sha256_sujet": "9116c6ff93be5d93a0f38002096d29270bc3a1166afc4d38c58efaa09849ef31"
+    "sha256_sujet": "9116c6ff93be5d93a0f38002096d29270bc3a1166afc4d38c58efaa09849ef31",
+    "sha256_rapport_jury": "e12adead85d391542ba850834f407980459d5ab0425da3814a0c030ef521316e"
   },
   "figures": [
     {
       "fichier": "figures/tangente-entropie.svg",
       "question": "2b",
-      "legende": "La tangente en un donne la minoration de la fonction entropique. En zéro, l’écart vaut un."
+      "legende": "La courbe de h part de (0, 0), atteint son minimum en s = 1/e puis touche la tangente en (1, 0). À gauche, les ordonnées diffèrent de un."
     }
   ],
   "contributions": [
@@ -31,6 +32,61 @@
       "perimetre": "Rédaction complète dans les deux éditions sur le sujet de six pages et le rapport de huit pages. Contrôle des 31 items, des limites aux deux bords, de la constante de Sobolev, du passage par Fatou et des deux queues gaussiennes. Figure analytique de la tangente utilisée en 2b.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Variance, entropie, opérateur gaussien, inégalité logarithmique, concentration et transport croissant. Intégration jusqu’à la borne, domination des deux queues et points exacts de la figure."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2a",
+      "2b",
+      "2c",
+      "2d",
+      "3a",
+      "3b",
+      "4",
+      "5a",
+      "5b",
+      "5c",
+      "5d",
+      "6",
+      "7a",
+      "7b",
+      "7c",
+      "8",
+      "9",
+      "10a",
+      "10b",
+      "11a",
+      "11b",
+      "12",
+      "13a",
+      "13b",
+      "14a",
+      "14b",
+      "15a",
+      "15b",
+      "16a",
+      "16b"
+    ],
+    "precision": "Les 31 rubriques des deux éditions ont été rapprochées du fascicule de 6 pages et du rapport du jury de 8 pages. Variance, entropie, opérateur gaussien, inégalité logarithmique, concentration et transport croissant. Intégration jusqu’à la borne, domination des deux queues et points exacts de la figure.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "9116c6ff93be5d93a0f38002096d29270bc3a1166afc4d38c58efaa09849ef31",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Variance, entropie, opérateur gaussien, inégalité logarithmique, concentration et transport croissant. Intégration jusqu’à la borne, domination des deux queues et points exacts de la figure.",
+      "commit_redaction_anterieure": "2bf506946cd3879a6427faaef30f0d08e9e23111"
+    }
+  }
 }

@@ -1,0 +1,68 @@
+{
+  "slug": "bel_bl_allemand_2017",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Allemand",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "Analyse et commentaire de textes ou documents en allemand",
+  "questions": 1,
+  "redaction": "Le fac-similé réunit cinq prises de parole et un tableau du Statistisches Bundesamt sur l’immigration, l’emploi et l’intégration.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/ecrits-communs-optionnels-ses-2017_1506587060551.pdf#page=7",
+    "pages": "7–12",
+    "sha256_sujet": "bdc658b34f2b80b696b7a912173f1ab822dae1d52727d0732ab0305166620e41",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/17_allemand_opt_ecrit.pdf",
+    "sha256_rapport_jury": "ef32e244402be277196ca766bc0113994af1c584383f942e76abdc730a03375b",
+    "documents": [
+      "Herbert Brücker im Gespräch mit Martin Steinhage, Wir brauchen ein modernes Einwanderungsrecht, Deutschlandradio Kultur, 21.3.2015",
+      "Leo von Caprivi, Reichstagsrede über Zoll- und Handelsverträge, 10.12.1891, édition Arndt, 1894, p. 177–178",
+      "Iris Alanyali, Wie ich Deutsche wurde, Die Blaue Reise und andere Geschichten aus meiner deutsch-türkischen Familie, 2006, p. 11–15",
+      "Detlef Fetchenhauer und Michael Hüther, Die Kosten der Flüchtlingsaufnahme kennt keiner, Die Welt, 9.11.2015",
+      "Karl Brenke, Das Integrationsgesetz – nur viel Rauch, DIW Wochenbericht, 16/2016, 20.4.2016",
+      "Statistisches Bundesamt, Wanderungen über die Grenzen Deutschlands 2014 nach Herkunfts- bzw. Zielgebieten, 2016, tableau 3.2"
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Composition",
+      "fichier": "figures/wanderungssaldo-2014.svg",
+      "legende": "Le décompte de 2014 distingue solde collectif, nationalité et voies d’accès au séjour."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du rapport Dubslaff–Salles et du fac-similé des six documents. Soldes 2014 relus dans la dernière ligne du tableau, chronologie de la loi et parcours d’Iris comparés aux trois diagnostics économiques."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Composition allemande sur les six documents, calcul du solde migratoire, distinction travail–asile et examen critique des mesures d’intégration avec schéma et indications."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Analyse et commentaire de la totalité du dossier en allemand"
+    ]
+  }
+}

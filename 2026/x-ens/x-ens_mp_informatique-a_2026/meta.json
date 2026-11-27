@@ -17,7 +17,7 @@
     {
       "fichier": "figures/ii4-chemin-inverse-skip-list.svg",
       "question": "II.4",
-      "legende": "Chemin de recherche de 28 dans la skip list de la figure 3 du sujet, lu à l'envers : montée avec probabilité p, recul au même étage avec probabilité 1 − p"
+      "legende": "Chemin de recherche de 28 dans la liste à sauts de la figure 3, lu à l’envers. La montée au nœud 15 illustre une promotion de probabilité p. À la sentinelle 0, la montée est certaine."
     },
     {
       "fichier": "figures/ii6-insertion-raccordement.svg",
@@ -77,16 +77,110 @@
       "perimetre": "Relecture des 25 questions MP-MPI, des deux versions et des figures avec le sujet et le rapport. En I.7–8, calcul du cardinal ensembliste en présence de réalisations répétées et comparaison avec le décompte attendu par le jury. Vérification des histogrammes de I.9, du bord gauche en II.4, des codes OCaml et des distances de produit.",
       "agent": "astra_info_si",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "agent": "archives_2016_2022",
+      "fournisseur": "codex",
+      "perimetre": "Relecture des 25 questions, de leurs subdivisions, du rapport et des quatre schémas. En I.9–10, lecture de l’histogramme, extension du minHash aux signatures vides et précision des données à relire pour départager les candidats. Correction de la probabilité de montée à la sentinelle sur la figure II.4 et du cas où la liste n’atteint pas le seuil en II.5. Mise en cohérence du coût de III.7 avec l’affectation finale de III.6. Exécution des 16 blocs OCaml dans chaque édition, comparaison des deux fonctions de signature sur 5 120 couples entrée–fenêtre et contrôle des collisions minHash par permutations exhaustives."
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "revision": {
-    "date": "2026-11-24",
+    "date": "2026-11-26",
     "modele": "GPT-6.2 Astra (effort Ultra)",
-    "verification": "Relecture des 25 questions MP-MPI, des deux versions et des figures avec le sujet et le rapport. En I.7–8, calcul du cardinal ensembliste en présence de réalisations répétées et comparaison avec le décompte attendu par le jury. Vérification des histogrammes de I.9, du bord gauche en II.4, des codes OCaml et des distances de produit."
+    "verification": "Relecture des 25 questions, de leurs subdivisions, du rapport et des quatre schémas. En I.9–10, lecture de l’histogramme, extension du minHash aux signatures vides et précision des données à relire pour départager les candidats. Correction de la probabilité de montée à la sentinelle sur la figure II.4 et du cas où la liste n’atteint pas le seuil en II.5. Mise en cohérence du coût de III.7 avec l’affectation finale de III.6. Exécution des 16 blocs OCaml dans chaque édition, comparaison des deux fonctions de signature sur 5 120 couples entrée–fenêtre et contrôle des collisions minHash par permutations exhaustives."
   },
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Info%20A_0.pdf",
     "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/MP%2C%20MPI_Info%20A_1.pdf"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7",
+      "I.8",
+      "I.9",
+      "I.10",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7",
+      "III.8"
+    ],
+    "subdivisions_du_sujet": {
+      "I.5": [
+        "a",
+        "b"
+      ],
+      "I.6": [
+        "a",
+        "b"
+      ],
+      "I.7": [
+        "a",
+        "b"
+      ],
+      "I.8": [
+        "a",
+        "b"
+      ],
+      "I.10": [
+        "a",
+        "b"
+      ],
+      "II.3": [
+        "a",
+        "b",
+        "c"
+      ],
+      "II.6": [
+        "a",
+        "b"
+      ],
+      "II.7": [
+        "a",
+        "b",
+        "c"
+      ],
+      "III.8": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ]
+    },
+    "precision": "Les 25 questions sont traitées dans l’ordre du sujet, avec les 22 demandes lettrées des neuf questions subdivisées. Le comptage par occurrences et le cardinal de l’ensemble défini dans le sujet sont identifiés séparément en I.7 et I.8.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "30d1929f28c923a38a9f379af72104820e3a88926857f9afeea5d51f21200e9f",
+      "sha256_rapport_controle": "fb2cc247c30294eda4ac529db46bd8398b5ddd4dbe7040b62e3b5788b54f2c7c",
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "date": "2026-11-26",
+      "perimetre": "Relecture des 25 questions, de leurs subdivisions, du rapport et des quatre schémas. En I.9–10, lecture de l’histogramme, extension du minHash aux signatures vides et précision des données à relire pour départager les candidats. Correction de la probabilité de montée à la sentinelle sur la figure II.4 et du cas où la liste n’atteint pas le seuil en II.5. Mise en cohérence du coût de III.7 avec l’affectation finale de III.6. Exécution des 16 blocs OCaml dans chaque édition, comparaison des deux fonctions de signature sur 5 120 couples entrée–fenêtre et contrôle des collisions minHash par permutations exhaustives.",
+      "commit_relecture_anterieure": "539bef58665ce00a1dff123d821626bb53c052d7"
+    }
   }
 }

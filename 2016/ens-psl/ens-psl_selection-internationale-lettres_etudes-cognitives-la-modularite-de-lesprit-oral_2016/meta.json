@@ -1,0 +1,79 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_etudes-cognitives-la-modularite-de-lesprit-oral_2016",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Études cognitives — la modularité de l’esprit (oral)",
+    "annee": 2016,
+    "modalite": "oral"
+  },
+  "intitule": "La modularité de l’esprit selon Dan Sperber",
+  "questions": 10,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/ORAL-SC.COG.pdf",
+    "sujet_sha256": "aec8bb4db2cff21a6aad09e1099149a5b02ae1435caf28213250da6f8ee70479",
+    "index": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2016-lettres",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/ORAL-SC.COG.pdf",
+        "sha256": "aec8bb4db2cff21a6aad09e1099149a5b02ae1435caf28213250da6f8ee70479",
+        "pages": 2
+      },
+      {
+        "role": "annexe",
+        "url": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/SperberMassivemodularity.pdf",
+        "sha256": "0e1a1ae9807240ad90654594331bf41f8f2b609622f49957f163694c61e630bc",
+        "pages": 7
+      }
+    ],
+    "annexe": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/SperberMassivemodularity.pdf"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/rue-mouillee.svg",
+      "question": "Questions 7 et 9",
+      "legende": "Deux inférences locales possibles devant une rue mouillée"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "oraux_lyon_et_anciens_corriges",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture du questionnaire bilingue et des sept pages d’In Defense of Massive Modularity. Rédaction, dans les deux éditions, des dix réponses numérotées. Vérification du désaccord sur le modus ponens et des deux mécanismes de sélection."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1. Thèse et caractère extrême.",
+      "2. Cinq niveaux d’analyse.",
+      "3. Proposition d’épreuve empirique.",
+      "4. Fodor et Sperber.",
+      "5. Perception et cognition centrale.",
+      "6. Encapsulation et accès à l’information.",
+      "7. Saillance et pertinence.",
+      "8. Exemple de mécanisme modulaire.",
+      "9. Calcul syntaxique et répartition des ressources.",
+      "10. Évaluation argumentée."
+    ],
+    "detail": [
+      "Questionnaire anglais et français sur deux pages. Les dix numéros de chaque édition répondent aux deux formulations.",
+      "Article de sept pages, dont cinq de texte et deux de références. Analyse du modus ponens, des entrées, de la base et du cas de la rue mouillée.",
+      "La question 7 juxtapose « pertinence » et « saliency ». Le corrigé distingue les deux mécanismes que l’article compare p. 5."
+    ]
+  }
+}

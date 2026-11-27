@@ -1,0 +1,261 @@
+{
+  "slug": "agro-veto_bcpst_maths_2022",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "Maths",
+    "annee": 2022
+  },
+  "questions": 29,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/sujet2022.pdf",
+    "rapport_jury": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/rapport2022_math_mullaert.pdf",
+    "sha256_sujet": "4a15be04a9cec2f089f955407fc6966ee3f6ee38924a9e0a25ee799d69e930a0",
+    "sha256_rapport_jury": "d19b5fc8697b14aa8da75413959605add8890b28cefc4545ac004c21fe2746df",
+    "pages_sujet": 5,
+    "pages_rapport": 4,
+    "observation_rapport": "Rattaché à la session 2022 dans le registre de la banque ; la garde porte « session 2021 ». Les deux exercices concordent. Le rapport s’arrête à la question 18 du deuxième exercice.",
+    "annotation_pdf_sujet": "Page 3, exercice 2 question 3. Annotation du PDF : il manque \"x0=xN= 0 et \"."
+  },
+  "figures": [
+    {
+      "fichier": "figures/arbre-trois-boules.svg",
+      "question": "Exercice 1, 2",
+      "legende": "Arbre pondéré des trajectoires pour une urne de taille trois."
+    },
+    {
+      "fichier": "figures/rectangles-integrales.svg",
+      "question": "Exercice 1, 8a",
+      "legende": "Comparaison de la fonction inverse au rectangle de hauteur 1/3."
+    },
+    {
+      "fichier": "figures/modes-du-maillage.svg",
+      "question": "Exercice 2, 8c",
+      "legende": "Échantillons des trois premiers modes propres pour N = 6."
+    },
+    {
+      "fichier": "figures/amplification-des-erreurs.svg",
+      "question": "Exercice 2, 19",
+      "legende": "Conditionnement euclidien du système pour λ = −1."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction indépendante des deux versions des exercices 1 (questions 1–10) et 2 (questions 1–19). Lecture des scans et du rapport associé, justification du facteur de normalisation avec second membre, calcul du conditionnement et quatre figures originales.",
+      "fournisseur": "codex",
+      "agent": "astra_maths_suite"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Vérification des 35 réponses terminales. Lecture de l’annotation PDF originale de la Q3 et des deux normalisations de la Q12. Calcul indépendant des probabilités conditionnelles et des moments, de la diagonale spectrale et de l’amplification ultime. Contrôle du calcul et des quatre figures."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "numeros_principaux": 29,
+    "questions_entierement_traitees": [
+      "Exercice 1, 1",
+      "Exercice 1, 2",
+      "Exercice 1, 3",
+      "Exercice 1, 4",
+      "Exercice 1, 5",
+      "Exercice 1, 6",
+      "Exercice 1, 7",
+      "Exercice 1, 8.a",
+      "Exercice 1, 8.b",
+      "Exercice 1, 8.c",
+      "Exercice 1, 9",
+      "Exercice 1, 10",
+      "Exercice 2, 1",
+      "Exercice 2, 2",
+      "Exercice 2, 3",
+      "Exercice 2, 4",
+      "Exercice 2, 5",
+      "Exercice 2, 6",
+      "Exercice 2, 7",
+      "Exercice 2, 8.a",
+      "Exercice 2, 8.b",
+      "Exercice 2, 8.c.i",
+      "Exercice 2, 8.c.ii",
+      "Exercice 2, 8.c.iii",
+      "Exercice 2, 9",
+      "Exercice 2, 10",
+      "Exercice 2, 11",
+      "Exercice 2, 12",
+      "Exercice 2, 13",
+      "Exercice 2, 14",
+      "Exercice 2, 15",
+      "Exercice 2, 16",
+      "Exercice 2, 17",
+      "Exercice 2, 18",
+      "Exercice 2, 19"
+    ],
+    "reperes": [
+      {
+        "question": "Exercice 1, 1",
+        "page_pdf": 2
+      },
+      {
+        "question": "Exercice 1, 2",
+        "page_pdf": 2
+      },
+      {
+        "question": "Exercice 1, 3",
+        "page_pdf": 2
+      },
+      {
+        "question": "Exercice 1, 4",
+        "page_pdf": 2
+      },
+      {
+        "question": "Exercice 1, 5",
+        "page_pdf": 2
+      },
+      {
+        "question": "Exercice 1, 6",
+        "page_pdf": 2
+      },
+      {
+        "question": "Exercice 1, 7",
+        "page_pdf": 2
+      },
+      {
+        "question": "Exercice 1, 8.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "Exercice 1, 8.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "Exercice 1, 8.c",
+        "page_pdf": 2
+      },
+      {
+        "question": "Exercice 1, 9",
+        "page_pdf": 2
+      },
+      {
+        "question": "Exercice 1, 10",
+        "page_pdf": 2
+      },
+      {
+        "question": "Exercice 2, 1",
+        "page_pdf": 2
+      },
+      {
+        "question": "Exercice 2, 2",
+        "page_pdf": 2
+      },
+      {
+        "question": "Exercice 2, 3",
+        "page_pdf": 3
+      },
+      {
+        "question": "Exercice 2, 4",
+        "page_pdf": 3
+      },
+      {
+        "question": "Exercice 2, 5",
+        "page_pdf": 3
+      },
+      {
+        "question": "Exercice 2, 6",
+        "page_pdf": 3
+      },
+      {
+        "question": "Exercice 2, 7",
+        "page_pdf": 3
+      },
+      {
+        "question": "Exercice 2, 8.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "Exercice 2, 8.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "Exercice 2, 8.c.i",
+        "page_pdf": 3
+      },
+      {
+        "question": "Exercice 2, 8.c.ii",
+        "page_pdf": 3
+      },
+      {
+        "question": "Exercice 2, 8.c.iii",
+        "page_pdf": 3
+      },
+      {
+        "question": "Exercice 2, 9",
+        "page_pdf": 4
+      },
+      {
+        "question": "Exercice 2, 10",
+        "page_pdf": 4
+      },
+      {
+        "question": "Exercice 2, 11",
+        "page_pdf": 4
+      },
+      {
+        "question": "Exercice 2, 12",
+        "page_pdf": 4
+      },
+      {
+        "question": "Exercice 2, 13",
+        "page_pdf": 4
+      },
+      {
+        "question": "Exercice 2, 14",
+        "page_pdf": 5
+      },
+      {
+        "question": "Exercice 2, 15",
+        "page_pdf": 5
+      },
+      {
+        "question": "Exercice 2, 16",
+        "page_pdf": 5
+      },
+      {
+        "question": "Exercice 2, 17",
+        "page_pdf": 5
+      },
+      {
+        "question": "Exercice 2, 18",
+        "page_pdf": 5
+      },
+      {
+        "question": "Exercice 2, 19",
+        "page_pdf": 5
+      }
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "precision": "Les sous-questions 8a–c du premier exercice et 8a, 8b, 8c.i–iii du second exercice possèdent leurs propres réponses. Ex. 2 Q19 vérifiée au sujet malgré l’absence de commentaire spécifique du jury."
+  },
+  "date_revision": "2026-11-26"
+}

@@ -1,0 +1,108 @@
+{
+  "slug": "agro-veto_bcpst_humanites_2025",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "Humanités",
+    "annee": 2025,
+    "modalite": "écrit"
+  },
+  "intitule": "Humanités",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/sujet-cpge-bcpst-humanites-session-2025.pdf",
+    "sujet_sha256": "5eef18a78bf560a56df6c9daf1e1a84801409bb8761f118fdab26cf939eafc0a",
+    "rapport_jury": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/humanites-bcpst-2025-vdef.pdf",
+    "rapport_sha256": "bfb388e521126c0df81d3b4dcb1411b53eb1f6c641f2bf45978868eeaca7b6be",
+    "remarque_rapport": "Rapport officiel, p. 5–9 et 21–25, modalité et destinataire du devoir, parole chorale et délibération."
+  },
+  "figures": [
+    {
+      "fichier": "figures/jugement.svg",
+      "question": "Dissertation",
+      "legende": "Quand une voix modifie-t-elle la décision commune ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du rapport 2025 sur le sujet de Rostand, la concession initiale, le service rendu à la collectivité et les exemples du programme."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de la dissertation dans les deux éditions et du guide de lecture, avec confrontation des quatre œuvres imposées et création du schéma."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification de la citation de 1959, de la durée de trois heures, du périmètre des chapitres de Spinoza et des exemples dramatiques et romanesques à partir de la feuille et du rapport."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Confrontation du feuillet unique, du rapport et des deux éditions. Distinguer dans Les Suppliantes le pouvoir attribué à Pélasgos, son refus de statuer seul et le vote rapporté par Danaos ; préciser le destinataire du devoir de résistance."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 1,
+        "page_pdf_fin": 1,
+        "consigne": "En quoi cette affirmation vous permet-elle d’approfondir votre réflexion sur Les Sept contre Thèbes et Les Suppliantes d’Eschyle, le Traité théologico-politique (préface et chapitres XVI à XX) de Spinoza et Le Temps de l’innocence d’Edith Wharton ?",
+        "options": [],
+        "documents_annexes": [],
+        "duree": "3 heures"
+      }
+    ]
+  }
+}

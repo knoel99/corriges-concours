@@ -1,0 +1,87 @@
+{
+  "slug": "ens-rennes_d1_droit-civil_2010",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Droit civil",
+    "annee": 2010,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "intitule": "L’abus",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/se1a-10d1-droit-civil-_1421752511846-pdf",
+    "sujet_sha256": "7d2e9abfacc3073ffdc3224a8de66041be0a10da5b0e5cd0b4ef727e226cd76a",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/re1a_10d1_droit_civil_1280150895411.pdf",
+    "rapport_sha256": "816c2d87c7c605cc927b9fb87c361b3bf9060f7b6d4afb2ba08c664162bb0d46",
+    "references_complementaires": {
+      "Code civil en avril 2010": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006070721/2010-04-01/"
+    },
+    "articles_session": {
+      "544": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006428859/2010-04-01",
+      "578": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006429233/2010-04-01",
+      "618": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006429618/2010-04-01",
+      "815-5": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006433219/2010-04-01",
+      "1134": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006436298/2010-04-01",
+      "1137": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006436312/2010-04-01",
+      "1147": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006436401/2010-04-01",
+      "1152": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006436388/2010-04-01",
+      "1382": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006438819/2010-04-01",
+      "1383": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006438829/2010-04-01",
+      "1384": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006438840/2010-04-01",
+      "1794": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006443583/2010-04-01",
+      "1844": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006444157/2010-04-01",
+      "1844-1": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006444158/2010-04-01"
+    },
+    "etablissement_imprime": "École normale supérieure de Cachan"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "section": "A1",
+      "fichier": "figures/propriete-et-usage.svg",
+      "legende": "La qualification dépend de la base juridique et de la preuve."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "section": "B2",
+      "fichier": "figures/effets-des-sanctions.svg",
+      "legende": "La nature de la difficulté détermine la cible du remède."
+    }
+  ],
+  "redaction": "Rédaction effective des éditions brute et guidée de « L’abus » à partir des pièces distribuées ou conservées par l’ENS Rennes. Limites de l’exercice d’un droit et de la jouissance, clauses et prix, sanctions distinguées et régime de consommation applicable en 2010.",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Les correcteurs demandent que le rôle de l’abus soit distingué des régimes de faute et de violence, et que Clément-Bayard soit confronté aux clauses et aux pouvoirs contractuels."
+    },
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction effective des éditions brute et guidée de « L’abus » à partir des pièces distribuées ou conservées par l’ENS Rennes. Limites de l’exercice d’un droit et de la jouissance, clauses et prix, sanctions distinguées et régime de consommation applicable en 2010."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}

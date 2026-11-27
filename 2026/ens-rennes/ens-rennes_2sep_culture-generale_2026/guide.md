@@ -10,6 +10,12 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Sujet R 26 – 345, page 2 · 4 heures.** Commentez cet extrait au regard de vos connaissances pluridisciplinaires dans le champ des activités physiques, sportives et artistiques. Le passage de Caroline Bertron et Julien Vitores, « Est-ce bien naturel ? », est reproduit dans le sujet. [Texte du sujet, page 2](https://www.ens-rennes.fr/medias/fichier/sujet-cgaps-2sep-2026_1791303234845-pdf#page=2)
+
 ## Présentation du sujet
 
 Le commentaire de culture générale de l’ENS Rennes dure quatre heures. Il porte sur un extrait de 2019 de Caroline Bertron et Julien Vitores, paru dans la revue *Genèses*. L’épreuve demande de le commenter à partir des activités physiques, sportives **et artistiques**. On peut mener toute la démonstration à partir de quelques exemples dont on fait varier les échelles et les points de vue. [Sujet officiel](https://www.ens-rennes.fr/medias/fichier/sujet-cgaps-2sep-2026_1791303234845-pdf) · [Rapport de jury 2026](https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-2sep-cgaps-2026_1791304664652-pdf)
@@ -24,6 +30,8 @@ Le commentaire de culture générale de l’ENS Rennes dure quatre heures. Il po
 Le texte distingue trois problèmes. Une explication **réductionniste** ramène un phénomène à une cause unique et écarte des mécanismes pourtant nécessaires pour comprendre ce qui s’est passé. Une **naturalisation** présente comme allant de soi et inscrite dans la nature une disposition ou une hiérarchie dont on peut étudier la genèse. L’**incorporation** permet ici de penser comment un apprentissage durable se manifeste dans les gestes et les capacités. Lorsque l’effet est réellement observable dans le corps, il reste à en expliquer l’histoire.
 
 Une seconde distinction porte sur les décisions. Choisir une distance de course, une classification ou une tenue autorisée revient à déterminer ce qui sera comparé. Le commentaire gagne à préciser qui opère ce choix, sur quel critère et pour quelle activité. La conclusion du passage appelle à étudier une matérialité corporelle que les pratiques transforment.
+
+**Exercice de lecture.** Repérez les verbes « identifient ou produisent » puis la phrase qui s’ouvre par « Cela n’implique pas ». Le premier verbe permet de décrire le choix d’un critère, par exemple un temps de qualification. Le second invite à suivre les possibilités d’entraînement que ce choix distribue. La réserve finale oblige à dire ce qui change effectivement dans les gestes ou dans les capacités. Réunissez les trois opérations dans un paragraphe avant de passer à un autre sport.
 
 ## Problématique
 
@@ -47,6 +55,8 @@ Le travail de Manuel Schotté sur les coureurs marocains fait comprendre ce que 
 
 ![Figure 1 — Du bassin au chronomètre. Un écart observé après l’apprentissage ne permet pas, à lui seul, d’en identifier la cause.](figures/du-bassin-au-chronometre.svg)
 
+Pour mettre cette boucle à l’épreuve, relevez les créneaux de pratique avant le test puis les heures effectivement proposées à chaque groupe après le classement. Comparez les progressions en tenant compte du niveau de départ des élèves.
+
 ### II. Choisir les différences pertinentes pour une activité
 
 > [!INDICATION]
@@ -56,7 +66,7 @@ Le travail de Manuel Schotté sur les coureurs marocains fait comprendre ce que 
 
 Le choix institutionnel d’une épreuve rend une performance officiellement visible. Étudier ensuite une classification fonctionnelle en basket fauteuil. Le mouvement du tronc intervient dans les gestes du jeu, tandis que le classement fonctionnel ne résume ni la vision du jeu ni la précision des passes. Avec Candoco, la scène fournit un autre modèle d’appréciation des gestes. Une différence d’appui peut devenir une proposition de mouvement et modifier le travail de l’ensemble.
 
-![Figure 2 — Comment deux activités apprécient un même appui. Le basket fauteuil retient des différences fonctionnelles pour composer les équipes ; la chorégraphie travaille des relations entre mouvements.](figures/classer-ou-choregraphier.svg)
+![Figure 2 — Comment deux activités apprécient un même appui. Le basket fauteuil retient des différences fonctionnelles pour composer les équipes. La chorégraphie travaille des relations entre mouvements.](figures/classer-ou-choregraphier.svg)
 
 ### III. Définir une règle de comparaison qui tienne compte des techniques
 
@@ -67,7 +77,7 @@ Le choix institutionnel d’une épreuve rend une performance officiellement vis
 
 Mener l’analyse depuis l’objet matériel jusqu’à la décision collective. Un fauteuil contribue à l’action. Son usage sollicite un apprentissage propre. En natation, le règlement de 2010 délimite les maillots admis en compétition. Il répond à des questions de comparabilité et d’accès aux innovations. Finir en revenant à l’école. Un classement distribue des places. Une évaluation formative renseigne sur les étapes suivantes d’un apprentissage. Un temps identique peut fournir des informations très différentes selon ce que l’enseignant veut savoir.
 
-![Figure 3 — Que change une règle sur les maillots de natation ?. Du matériau à l’admissibilité en course, une décision collective intervient dans la comparaison des performances.](figures/comparer-les-maillots.svg)
+![Figure 3 — Que change une règle sur les maillots de natation ? Du matériau à l’admissibilité en course, une décision collective intervient dans la comparaison des performances.](figures/comparer-les-maillots.svg)
 
 ## Références et exemples
 
@@ -80,7 +90,7 @@ Mener l’analyse depuis l’objet matériel jusqu’à la décision collective.
 | Candoco, *Set and Reset/Reset* | Reprendre une chorégraphie avec des interprètes handicapés et non handicapés conduit à travailler les variations de mouvement. |
 | Maillots de natation en bassin, règlement applicable au 1er janvier 2010 | Le matériau et la couverture admis définissent un cadre commun pour les performances. |
 
-[Enquête de Schotté chez l’éditeur](https://www.raisonsdagir-editions.org/catalogue/la-construction-du-talent/) · [Texte de Mauss](https://classiques.uqam.ca/classiques/mauss_marcel/socio_et_anthropo/6_Techniques_corps/Techniques_corps.html) · [Archives olympiques](https://www.olympics.com/ioc/news/a-long-road-to-gender-equality) · [Classification de l’IWBF](https://www.iwbf.org/our-sport/classification) · [Répertoire de Candoco](https://candoco.co.uk/about-us/our-history/) · [Règlement de natation relayé par la FFN](https://ffn.extranat.fr/html/ressources/jug/fina_nat_modifs_2009.pdf)
+[Article de Bertron et Vitores dans *Genèses*](https://doi.org/10.3917/gen.115.0003) · [Enquête de Schotté chez l’éditeur](https://www.raisonsdagir-editions.org/catalogue/la-construction-du-talent/) · [Texte de Mauss](https://classiques.uqam.ca/classiques/mauss_marcel/socio_et_anthropo/6_Techniques_corps/Techniques_corps.html) · [Archives olympiques](https://www.olympics.com/ioc/news/a-long-road-to-gender-equality) · [Classification de l’IWBF](https://www.iwbf.org/our-sport/classification) · [Répertoire de Candoco](https://candoco.co.uk/about-us/our-history/) · [Règlement de natation relayé par la FFN](https://ffn.extranat.fr/html/ressources/jug/fina_nat_modifs_2009.pdf)
 
 ## Pièges à éviter
 
@@ -113,7 +123,9 @@ L’analyse vaut aussi pour les sensations par lesquelles le sujet se connaît. 
 
 Le texte déplace ensuite la question. Avant même d’expliquer la différence de deux résultats, il faut que quelqu’un ait défini l’épreuve dans laquelle ces résultats pourront compter. Le programme olympique en fournit un exemple. Des femmes disputaient déjà des marathons avant que l’épreuve féminine figure pour la première fois aux Jeux de Los Angeles en 1984. L’absence ancienne de championne olympique du marathon disait donc quelque chose de certain sur le programme des Jeux. Elle ne permettait aucune conclusion sur la capacité des femmes à courir cette distance. Et pourtant, faute de parcours reconnus, de financements et de modèles visibles, une restriction institutionnelle peut réduire le nombre de pratiquantes qui atteignent le haut niveau. Le danger politique du raisonnement naturalisant apparaît au moment précis où l’on invoque le faible nombre de résultats disponibles pour prolonger les conditions qui en limitaient la production.
 
-Le sport de compétition doit néanmoins choisir des critères. La règle internationale du basket en fauteuil donne une forme chiffrée au problème. Dans le jeu à cinq, la somme des points de classification des joueurs sur le terrain est plafonnée à 14. Cinq joueurs classés 4,5, 3,5, 3, 2 et 1 atteignent exactement ce total. Remplacer le dernier par un joueur de 1,5 porterait la somme à 14,5. Aucun des six sportifs n’a changé de corps. Pourtant, l’admissibilité de la composition change, parce qu’une règle rapporte les possibilités fonctionnelles de chacun à un équilibre recherché entre équipes. Le score de la rencontre et les points de classification répondent ainsi à deux questions différentes. Sur un terrain de basket en fauteuil, des capacités fonctionnelles différentes peuvent avoir des conséquences sur l’équilibre du tronc, la conduite du fauteuil et la possibilité d’engager les deux bras dans une passe. Il existe des classifications propres à la discipline et une limite au total des points de classification de l’équipe en jeu. La règle organise la participation de joueurs de profils différents à une même rencontre. Elle retient pour cette fin certains aspects du fonctionnement corporel. Une étiquette diagnostique ne donne, à elle seule, ni le rôle tactique ni l’adresse au tir. Un choix de classement peut donc protéger une possibilité de jouer. Pour en apprécier la justice, il faut demander à quelle difficulté sportive il répond, quels écarts il prend en considération et comment les sportifs peuvent faire examiner les décisions. Présenter une catégorie comme entièrement dictée par la nature ferait disparaître ces questions.
+Le sport de compétition doit néanmoins choisir des critères. La règle internationale du basket en fauteuil donne une forme chiffrée au problème. Dans le jeu à cinq, la somme des points de classification des joueurs sur le terrain est plafonnée à 14. Cinq joueurs classés 4,5, 3,5, 3, 2 et 1 atteignent exactement ce total. Remplacer le dernier par un joueur de 1,5 porterait la somme à 14,5. Aucun des six sportifs n’a changé de corps. Pourtant, l’admissibilité de la composition change, parce qu’une règle rapporte les possibilités fonctionnelles de chacun à un équilibre recherché entre équipes. Le score de la rencontre et les points de classification répondent ainsi à deux questions différentes. Sur un terrain de basket en fauteuil, des capacités fonctionnelles différentes peuvent avoir des conséquences sur l’équilibre du tronc, la conduite du fauteuil et la possibilité d’engager les deux bras dans une passe. La règle organise la participation de joueurs de profils différents à une même rencontre. Elle retient pour cette fin certains aspects du fonctionnement corporel. Une étiquette diagnostique ne donne, à elle seule, ni le rôle tactique ni l’adresse au tir. Un choix de classement peut donc protéger une possibilité de jouer. Pour en apprécier la justice, il faut demander à quelle difficulté sportive il répond, quels écarts il prend en considération et comment les sportifs peuvent faire examiner les décisions. Présenter une catégorie comme entièrement dictée par la nature ferait disparaître ces questions.
+
+Le verbe « produisent » va plus loin que l’idée d’une illusion que dissiperait une meilleure information. Imaginons que l’on veuille éprouver, dans un club, l’affirmation selon laquelle les premiers résultats permettraient de repérer des aptitudes stables. Un relevé des seuls membres encore en compétition deux ans plus tard écarterait précisément les élèves que le premier classement a découragés. Il faudrait suivre aussi ceux qui ont changé de groupe ou quitté le club, connaître leur pratique antérieure et relever le temps d’entraînement réellement offert après le classement. Une progression qui varierait avec cet accès fournirait un indice sur la formation des écarts. Elle laisserait encore ouverte la question des autres conditions de la progression. La prudence du texte sur la « dimension matérielle » prend ainsi un sens précis. On peut enquêter sur ce qui a façonné une capacité tout en reconnaissant sa réalité chez celui qui l’exerce.
 
 Le caractère situé des critères saute davantage aux yeux si l’on quitte le classement pour la scène. La compagnie britannique Candoco, fondée en 1991, a réuni des interprètes handicapés et non handicapés. Dans *Set and Reset/Reset*, une pièce de Trisha Brown a été reprise et retravaillée avec des danseurs dont les possibilités de mouvement différaient. Le point de comparaison devient alors la relation entre une trajectoire, un rythme et les autres interprètes. Une variation dans l’appui peut ouvrir une solution chorégraphique là où un examen standardisé enregistrerait seulement une limitation. Le poids, les appuis et la fatigue restent sensibles aux danseurs et au public. Ce qui se transforme, c’est la question adressée à ces corps et la place accordée à leurs réponses. La comparaison du basket en fauteuil et de la danse évite de confondre reconnaissance des différences et usage d’une grille unique dans toutes les activités.
 

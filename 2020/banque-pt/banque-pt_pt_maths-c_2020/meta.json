@@ -1,0 +1,296 @@
+{
+  "slug": "banque-pt_pt_maths-c_2020",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths C",
+    "intitule_officiel": "Épreuve de Mathématiques C",
+    "annee": 2020
+  },
+  "questions": 34,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2020/math_c_2020_pt.pdf",
+    "sujet_sha256": "0633ac0388ab9214cdd10bc3227c2d7e4af76e87d61a65e084ca58ea8444a21c",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2020/rapport_math_c_ecrit_2020.pdf",
+    "rapport_jury_sha256": "b5a896213484f7c3b31db3a9399ff600a883d5642bce1f6c2a493d610585f5a6",
+    "pages_rapport": 9,
+    "grille_ecoles": "https://www.banquept.fr/documents/2020/Coefficients.pdf#page=1",
+    "grille_sha256": "99f9f38058da96520bff50e823cf189f307e2129dbb0091faded2da6a315c1b1",
+    "page_grille": 1,
+    "usage_coefficients": {
+      "X": "admissibilité",
+      "ENS Paris-Saclay": "classement exceptionnel sur écrits",
+      "ENS Rennes": "classement exceptionnel sur écrits"
+    },
+    "coefficients": {
+      "X": 6,
+      "ENS Paris-Saclay": 3,
+      "ENS Rennes": 3
+    },
+    "texte_classement_ens": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000041920583"
+  },
+  "figures": [
+    {
+      "question": "I.6",
+      "fichier": "figures/cosinus-et-approximation.svg",
+      "legende": "Cosinus et approximation rationnelle sur l’intervalle de −π à π, de même unité sur les deux axes. La planche séparée de l’archive est à imprimer à 100 %."
+    },
+    {
+      "question": "III.2.d",
+      "fichier": "figures/produit-de-cosinus.svg",
+      "legende": "Les produits partiels sont comparés à la valeur obtenue avec des facteurs rationnels et trois étapes de doublement."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "P.1",
+      "P.2",
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "III.1",
+      "III.2.a",
+      "III.2.b",
+      "III.2.c",
+      "III.2.d",
+      "III.3.a",
+      "III.3.b",
+      "III.3.c",
+      "III.3.d",
+      "III.4.a",
+      "III.4.b",
+      "III.4.c",
+      "III.5.a",
+      "III.5.b",
+      "III.5.c",
+      "III.5.d",
+      "III.5.e",
+      "III.5.f",
+      "III.5.g"
+    ],
+    "pages_du_sujet": 7,
+    "pages_pdf_des_questions": {
+      "P.1": 2,
+      "P.2": 2,
+      "I.1": 2,
+      "I.2": 2,
+      "I.3": 2,
+      "I.4": 2,
+      "I.5": 2,
+      "I.6": 2,
+      "II.1": 3,
+      "II.2": 3,
+      "II.3": 3,
+      "II.4": 3,
+      "II.5": 3,
+      "II.6": 3,
+      "II.7": 3,
+      "III.1": 3,
+      "III.2.a": 4,
+      "III.2.b": 4,
+      "III.2.c": 4,
+      "III.2.d": 4,
+      "III.3.a": 4,
+      "III.3.b": 4,
+      "III.3.c": 4,
+      "III.3.d": 4,
+      "III.4.a": 4,
+      "III.4.b": 4,
+      "III.4.c": 5,
+      "III.5.a": 5,
+      "III.5.b": 5,
+      "III.5.c": 5,
+      "III.5.d": 5,
+      "III.5.e": 5,
+      "III.5.f": 5,
+      "III.5.g": 5
+    },
+    "repere_par_question": [
+      {
+        "question": "P.1",
+        "page_pdf": 2
+      },
+      {
+        "question": "P.2",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.1",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.2",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.3",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.4",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.5",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.6",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.1",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.2",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.3",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.4",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.5",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.6",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.7",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.1",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.2.a",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.2.b",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.2.c",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.2.d",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.3.a",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.3.b",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.3.c",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.3.d",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.4.a",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.4.b",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.4.c",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.5.a",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.5.b",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.5.c",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.5.d",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.5.e",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.5.f",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.5.g",
+        "page_pdf": 5
+      }
+    ],
+    "precision": "Garde 098, feuille de papier millimétré à rendre. Questions aux pages 2–5 et notice historique en image page 6. La formule supplémentaire imprimée en fin de notice est inversée par rapport à la solution de II.7 et à la formule de réflexion. Page 7 blanche. Les épreuves écrites ont un rôle de classement exceptionnel pour les deux ENS en 2020."
+  },
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Lecture des 7 pages du sujet, du rapport spécifique de 9 pages et de la grille applicable page 1. Rédaction des 34 réponses et des indications, vérification des figures. Garde 098, feuille de papier millimétré à rendre. Questions aux pages 2–5 et notice historique en image page 6. La formule supplémentaire imprimée en fin de notice est inversée par rapport à la solution de II.7 et à la formule de réflexion. Page 7 blanche. Les épreuves écrites ont un rôle de classement exceptionnel pour les deux ENS en 2020. Le rapport, pages 5–9, insiste sur les indices du produit, les sommes finies avant passage à la limite et les bornes intégrables nécessaires pour dériver en III.5.a."
+    }
+  ],
+  "planches_impression": [
+    {
+      "fichier": "planches/trace-echelle.svg",
+      "format": "A4 paysage",
+      "echelle_cm_par_unite": 3,
+      "impression": "100 %",
+      "lien_lecteurs": "https://raw.githubusercontent.com/knoel99/corriges-concours/9ff54cac1631b8c479f3ae657dbb042bbc41edc5/2020/banque-pt/banque-pt_pt_maths-c_2020/planches/trace-echelle.svg",
+      "commit_source": "9ff54cac1631b8c479f3ae657dbb042bbc41edc5",
+      "sha256_source": "e1c85a136d6a122930d0978a2c6c7e1219e49aec9133c6ef7e1846bf43a5b761"
+    }
+  ]
+}

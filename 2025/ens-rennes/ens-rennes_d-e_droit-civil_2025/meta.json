@@ -25,20 +25,26 @@
     "references": [
       "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006136059/",
       "https://www.legifrance.gouv.fr/juri/id/JURITEXT000007046781",
-      "https://www.courdecassation.fr/decision/607959119ba5988459c493c2",
+      "https://www.legifrance.gouv.fr/juri/id/JURITEXT000022826393/",
       "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000030250342",
       "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000033019029/",
-      "https://www.legislation.govt.nz/act/public/2017/7/en/2017-03-20/sections/DLM6831461/"
-    ]
+      "https://www.legislation.govt.nz/act/public/2017/7/en/2017-03-20/sections/DLM6831461/",
+      "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038846675/2025-04-15",
+      "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033019118/2025-04-15"
+    ],
+    "notice_interens": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/12/Notice-interENS-2025_Version_finale_pour_mise_en_ligne.pdf",
+    "notice_sha256": "07fb6e5fbc3cce1da09f0b36a15f90349b018b309cf2593e90cd616105336122",
+    "sujet_exemplaire_lu_sha256": "854511c6e6f860e0d03650a0bd92ed3f9aa47e45ce486583ad6e3d24c09f93b4",
+    "rapport_exemplaire_lu_sha256": "369b772ed3f517234e38dcdb02106a542ceaeab6be2558771c30ba3fd2727456"
   },
   "figures": [
     {
       "fichier": "figures/qualification.svg",
       "question": "Composition",
-      "legende": "Trois questions pour qualifier"
+      "legende": "Cinq questions pour qualifier"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "lecture_rapport_jury",
@@ -75,6 +81,41 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Confrontation des qualifications et exemples au feuillet, au rapport et aux textes ou décisions cités. Contrôle croisé des empreintes d’aperçu et du registre des originaux."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "fui_physique_un",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Consigne unique et quatre axes : Sujet de droit, exercice des droits et représentation, Corps humain, dignité et extra-patrimonialité, Image, convention et matériel indispensable à la personne, Animal, réparation du préjudice écologique et personnalité du fleuve en droit comparé. Confrontation au sujet, aux sources de droit et au rapport institutionnel de l’écrit."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "precision": "La garde donne une composition unique de quatre heures. Les deux éditions traitent la totalité de cette consigne. Les axes de lecture décrivent la rédaction pédagogique.",
+    "questions_entierement_traitees": [
+      "Composition"
+    ],
+    "intitule_officiel": "La distinction entre les personnes et les choses",
+    "pages_pdf_sujet": [
+      1
+    ],
+    "date_epreuve": "2025-04-15",
+    "items_verifies": [
+      "Sujet de droit, exercice des droits et représentation",
+      "Corps humain, dignité et extra-patrimonialité",
+      "Image, convention et matériel indispensable à la personne",
+      "Animal, réparation du préjudice écologique et personnalité du fleuve en droit comparé"
+    ]
+  }
 }

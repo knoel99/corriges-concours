@@ -11,7 +11,8 @@
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/11/2020_PC_sujet_Math.pdf",
     "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/11/20_PC_rap_eMath.pdf",
-    "sha256_sujet": "eb1d4fc7525fc6b9e95d69e00c749a1e79cc7958955903daa4e5c49a8c410ef9"
+    "sha256_sujet": "eb1d4fc7525fc6b9e95d69e00c749a1e79cc7958955903daa4e5c49a8c410ef9",
+    "sha256_rapport_jury": "51c8230315cd036029aeb89d0dc59f989bce4e69342506fa3fa2137b5ac697b0"
   },
   "figures": [
     {
@@ -31,6 +32,101 @@
       "perimetre": "Rédaction intégrale des questions et sous-questions, contrôle de la continuité du convolué et des constantes, indépendance des gaussiennes et strict caractère défini positif de leur matrice de Gram, figure numérique d’interpolation.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Produit de Schur, exponentielle coefficient par coefficient, convolution et normalisation gaussiennes, indépendance des translatées et énergie sous deux contraintes.",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "agent": "rennes_oraux_economie",
+      "session": "rennes_oraux_economie"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3a",
+      "3b",
+      "3c",
+      "4a",
+      "4b",
+      "5a",
+      "5b",
+      "5c",
+      "6a",
+      "6b",
+      "6c",
+      "7",
+      "8a",
+      "8b",
+      "9a",
+      "9b",
+      "9c",
+      "10",
+      "11a",
+      "11b",
+      "12a",
+      "12b",
+      "12c",
+      "13a",
+      "13b",
+      "13c",
+      "14",
+      "15",
+      "16a",
+      "16b",
+      "17a",
+      "17b",
+      "18"
+    ],
+    "pages_du_sujet": 6,
+    "pages_pdf_des_questions": {
+      "1": 3,
+      "2": 3,
+      "3a": 3,
+      "3b": 3,
+      "3c": 3,
+      "4a": 3,
+      "4b": 3,
+      "5a": 4,
+      "5b": 4,
+      "5c": 4,
+      "6a": 4,
+      "6b": 4,
+      "6c": 4,
+      "7": 4,
+      "8a": 4,
+      "8b": 4,
+      "9a": 4,
+      "9b": 5,
+      "9c": 5,
+      "10": 5,
+      "11a": 5,
+      "11b": 5,
+      "12a": 5,
+      "12b": 5,
+      "12c": 5,
+      "13a": 5,
+      "13b": 5,
+      "13c": 5,
+      "14": 6,
+      "15": 6,
+      "16a": 6,
+      "16b": 6,
+      "17a": 6,
+      "17b": 6,
+      "18": 6
+    },
+    "precision": "Pages du fac-similé institutionnel, garde incluse. Le numéro désigne le début de la demande imprimée."
+  }
 }

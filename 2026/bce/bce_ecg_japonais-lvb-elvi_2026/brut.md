@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## 1. Résumé analytique comparatif
 
 不登校の増加は、子供の意欲だけでは説明できない。読売新聞によれば、学校に行くことについて、社会の側の考え方も変化した。二〇一七年に教育機会確保法が施行され、教室の外にも学びの場があるという理解が広まった。また、コロナ禍の一斉休校は、登校が当然だという意識を変えるとともに、生活のリズムにも影響したという。記事は、支援を受けられず孤立する子供を案じる一方、校内の別室で学べる仕組みが、最近の増加幅を小さくした可能性を指摘する。
@@ -27,5 +29,11 @@
 このような状況について、母親の三一・〇％が「とても心配している」、四五％が「どちらかといえば心配している」と答えた。つまり、学校に対するわが子の態度を心配している母親は四分の三を超える。子供が学校に行きたがらない理由として母親が最も多く挙げたのは「友達との関係」（三六・八％）で、次いで「学校の宿題」（三四・五％）、「心身の健康上の問題」（二八・三％）の順だった。
 
 こうした場合の母親の対応として最も多かったのは、「できるだけ学校に行くよう子供を説得しようとする」（三五・三％）で、次に多かったのは「行くかどうかは子供に決めさせる」（二三・二％）だった。「学校に行くよう強く言う」と答えた母親は六・二％と、少数にとどまった。
+
+**Repère de lecture**
+
+Le document 4 attribue 90 % à la réponse « jamais ». Les trois modalités de fréquentation totalisent donc 10 %. Parmi tous les élèves interrogés, 4,3 % déclarent une fréquentation fréquente. Ce dernier taux n’a pas pour dénominateur les seuls usagers.
+
+![Figure 1 — Fréquentation des écoles alternatives pendant une absence](figures/frequentation.svg)
 
 [Fascicule officiel commun, à partir de la page 16](https://www.concours-bce.com/sites/default/files/2026-04/76%20CH%20-%20LANGUE_VIVANTE_B_ELVI_CHINOIS_HEBREU_JAPONAIS_POLONAIS.pdf#page=16) · [Rapport 2026 de japonais LVB](https://www.concours-bce.com/sites/default/files/2026-09/76%20%20-%20Japonais%20LVB%20Elvi%202026.pdf)

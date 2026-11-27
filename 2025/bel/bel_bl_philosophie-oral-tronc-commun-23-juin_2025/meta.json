@@ -1,0 +1,177 @@
+{
+  "slug": "bel_bl_philosophie-oral-tronc-commun-23-juin_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Philosophie (oral tronc commun, 23 juin)",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie (oral tronc commun, 23 juin)",
+  "questions": 0,
+  "tirages": 11,
+  "sujets": 22,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/philosophie_23_juin.pdf",
+    "sha256_sujet": "a284654d9686eaffc6dafddf4cafa63c5ef30e548e3667a94469c7a4d70abe69",
+    "pages_sujet": "Feuillet daté, page unique.",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_philosophie.pdf",
+    "sha256_rapport_jury": "f43dbd726e8d925d3dbf694566dff8fd1eab8da6e6e7a6d5b5a75f59a5470d14",
+    "pages_rapport": "1 pour les modalités, 2–5 pour les observations et 5–6 pour les 61 paires annuelles."
+  },
+  "billets": [
+    {
+      "numero": 1,
+      "sujets": [
+        "La bienveillance",
+        "En politique, peut-on faire table rase du passé ?"
+      ],
+      "option_choisie": 1,
+      "sujet_choisi": "La bienveillance"
+    },
+    {
+      "numero": 2,
+      "sujets": [
+        "Le dévouement",
+        "La pratique des sciences met-elle à l’abri des préjugés ?"
+      ],
+      "option_choisie": 2,
+      "sujet_choisi": "La pratique des sciences met-elle à l’abri des préjugés ?"
+    },
+    {
+      "numero": 3,
+      "sujets": [
+        "La crainte du châtiment",
+        "La philosophie peut-elle disparaître ?"
+      ],
+      "option_choisie": 1,
+      "sujet_choisi": "La crainte du châtiment"
+    },
+    {
+      "numero": 4,
+      "sujets": [
+        "Le quotidien",
+        "La souffrance a-t-elle un sens ?"
+      ],
+      "option_choisie": 2,
+      "sujet_choisi": "La souffrance a-t-elle un sens ?"
+    },
+    {
+      "numero": 5,
+      "sujets": [
+        "L’aveu",
+        "Peut-on tout désirer ?"
+      ],
+      "option_choisie": 2,
+      "sujet_choisi": "Peut-on tout désirer ?"
+    },
+    {
+      "numero": 6,
+      "sujets": [
+        "La vengeance",
+        "Que faut-il savoir pour agir ?"
+      ],
+      "option_choisie": 2,
+      "sujet_choisi": "Que faut-il savoir pour agir ?"
+    },
+    {
+      "numero": 7,
+      "sujets": [
+        "Maître et disciple",
+        "Qu’est-ce qu’un fait social ?"
+      ],
+      "option_choisie": 2,
+      "sujet_choisi": "Qu’est-ce qu’un fait social ?"
+    },
+    {
+      "numero": 8,
+      "sujets": [
+        "Vieillir",
+        "La culture est-elle un luxe ?"
+      ],
+      "option_choisie": 1,
+      "sujet_choisi": "Vieillir"
+    },
+    {
+      "numero": 9,
+      "sujets": [
+        "L’envie",
+        "Avons-nous le droit de juger autrui ?"
+      ],
+      "option_choisie": 2,
+      "sujet_choisi": "Avons-nous le droit de juger autrui ?"
+    },
+    {
+      "numero": 10,
+      "sujets": [
+        "Le laboratoire",
+        "Quand la guerre finira-t-elle ?"
+      ],
+      "option_choisie": 1,
+      "sujet_choisi": "Le laboratoire"
+    },
+    {
+      "numero": 11,
+      "sujets": [
+        "Être engagé",
+        "Qu’est-ce qu’un principe ?"
+      ],
+      "option_choisie": 1,
+      "sujet_choisi": "Être engagé"
+    }
+  ],
+  "figures": [
+    {
+      "fichier": "figures/billet-3-option-1.svg",
+      "question": "La crainte du châtiment",
+      "legende": "Trois repères pour examiner crainte du châtiment."
+    },
+    {
+      "fichier": "figures/billet-7-option-2.svg",
+      "question": "Qu’est-ce qu’un fait social ?",
+      "legende": "Trois repères pour examiner fait social."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "x_maths_b_anciennes",
+      "modifications": true,
+      "perimetre": "Rédaction des propositions argumentées et des relances individuelles pour les 22 sujets et de deux figures. Contrôle visuel des 11 paires et du gras, confrontation des intitulés à la liste du rapport 2025."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "La bienveillance",
+      "En politique, peut-on faire table rase du passé ?",
+      "Le dévouement",
+      "La pratique des sciences met-elle à l’abri des préjugés ?",
+      "La crainte du châtiment",
+      "La philosophie peut-elle disparaître ?",
+      "Le quotidien",
+      "La souffrance a-t-elle un sens ?",
+      "L’aveu",
+      "Peut-on tout désirer ?",
+      "La vengeance",
+      "Que faut-il savoir pour agir ?",
+      "Maître et disciple",
+      "Qu’est-ce qu’un fait social ?",
+      "Vieillir",
+      "La culture est-elle un luxe ?",
+      "L’envie",
+      "Avons-nous le droit de juger autrui ?",
+      "Le laboratoire",
+      "Quand la guerre finira-t-elle ?",
+      "Être engagé",
+      "Qu’est-ce qu’un principe ?"
+    ],
+    "precision": "Intégralité du feuillet du 23 juin exclusivement. Les deux sujets de chacun des 11 billets y sont développés. Le rapport annuel compte 61 paires, dont 11 supplémentaires après les cinq feuillets datés."
+  }
+}

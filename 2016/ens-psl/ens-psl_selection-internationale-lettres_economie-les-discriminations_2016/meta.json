@@ -1,0 +1,104 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_economie-les-discriminations_2016",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Économie — les discriminations",
+    "annee": 2016,
+    "modalite": "écrit"
+  },
+  "intitule": "Économie — les discriminations",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/ECO-ecrit-SIL2016.pdf",
+    "sujet_sha256": "308902bd36a9dcf378bdcd32ecfa168d4f06bd95edcee9f80af664f1b2b17823",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/rapport%20SIL%20Economie%202016.pdf",
+    "rapport_sha256": "936e17e2272a45aab860ecca2d3df4078bf8a37f0c96e873c6c6663a8ccef843",
+    "references": [
+      "https://doi.org/10.1257/0002828042002561"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/discriminations.svg",
+      "question": "Explication",
+      "legende": "Ce que chaque comparaison permet d’établir"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "sil_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du rapport disciplinaire de la session, avec distinction entre ses indications sur l’écrit et sur l’oral."
+    },
+    {
+      "phase": "redaction",
+      "session": "sil_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Dissertation économique et démarche de mesure avec test de correspondance, mécanismes et évaluation des politiques."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "sil_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification des consignes, des raisonnements et des légendes dans les deux éditions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Le rapport de 2016 attend des faits d’emploi, une discussion de leur mesure, des mécanismes économiques et des politiques correctives. Les deux éditions traitent le test de correspondance, son champ et ses limites, la discrimination par préférence et la discrimination statistique.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation unique sur les discriminations. Mesure des écarts de traitement, préférences, information imparfaite, effets d’allocation et politiques publiques."
+    ],
+    "annexes_verifiees": [],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "limites": "Le sujet écrit tient sur une page et comporte une consigne de composition. Le rapport rattache les trois documents sur la santé à l’oral.",
+    "verification": "Le rapport de 2016 attend des faits d’emploi, une discussion de leur mesure, des mécanismes économiques et des politiques correctives. Les deux éditions traitent le test de correspondance, son champ et ses limites, la discrimination par préférence et la discrimination statistique."
+  }
+}

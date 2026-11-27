@@ -1,0 +1,63 @@
+{
+  "slug": "ens_mp-pc_italien-le2_2008",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Italien (LE2)",
+    "annee": 2008,
+    "modalite": "écrit"
+  },
+  "intitule": "Galilée, Aristote et la relation entre science et philosophie",
+  "questions": 2,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "V",
+      "1"
+    ]
+  },
+  "sources": {
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2008",
+    "etablissements": "ENS de Paris et de Cachan",
+    "pages_sujet": "7",
+    "code_garde": "80.10PM",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2008/sujet-ecrit-2008_mp-pc_sujet_langue_etrangere_2.pdf#page=7",
+    "sujet_sha256": "9b7aa31d65f4d9a11653560330e033bd5d37f5c14a60dab16297ed778620f613",
+    "precision": "L’extrait provient d’Enrico Bellone, Le Scienze, février 2008. Les deux coupures du cahier sont conservées. La réponse italienne compte 100 mots. Le rapport de cette option n’a pas été retrouvé."
+  },
+  "mots_expression": {
+    "1": 100
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V",
+      "fichier": "figures/methode.svg",
+      "legende": "Le conditionnel du premier paragraphe présente une thèse attribuée à d’autres."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "fichier": "figures/questions.svg",
+      "legende": "Chaque pratique éprouve une partie du raisonnement."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "italien_sciences_2005_2010",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et réponses intégrales en italien. Galilée, Aristote et la relation entre science et philosophie.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}

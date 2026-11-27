@@ -6,7 +6,11 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-La troisième commission du 26 juin a distribué douze billets de deux sujets. Les réponses suivent l’ordre de la feuille. Le rapport, page 8, permet de reconnaître par ses caractères gras le sujet choisi, qui est signalé à chaque billet. La rédaction et les relances du guide sont des propositions d’entraînement.
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Le [feuillet du 26 juin, commission 3](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_3_al.pdf) contient 12 billets de deux sujets. Les développements suivent leur ordre. Le jury a mis en gras le premier sujet sur 8 billets et le second sur 4. Le choix est indiqué à chaque billet. Le [rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf#page=8) permet de vérifier les choix. Dans l’[index officiel](https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-al), les liens du 29 reprennent les fichiers datés du 26.
+
+Lisez à haute voix les deux sujets du billet, choisissez pendant les 90 minutes de préparation et annoncez votre choix au début des 20 minutes d’exposé. L’entretien dure ensuite 10 minutes. Le coefficient est de 3. Seul un dictionnaire de langue française est autorisé, à l’exclusion des dictionnaires de noms propres.
 
 ## 1. Avoir des principes
 
@@ -155,5 +159,3 @@ Un responsable qui se tait sur un défaut important dont des usagers subiront le
 ### L’histoire de la philosophie
 
 Lire un débat ancien sur la liberté impose de reconstituer le sens que ses termes prenaient dans une controverse particulière. Une lecture purement actuelle risquerait d’attribuer à un auteur une réponse à une question qu’il ne posait pas. Mais raconter seulement les circonstances extérieures laisserait inexplicable la possibilité qu’un argument nous oblige encore à revoir une distinction présente. L’histoire de la philosophie étudie ainsi à la fois des textes historiquement situés et des prétentions à donner des raisons dont l’examen reste possible. Comparer plusieurs usages d’un même terme peut révéler une transformation des problèmes, et non seulement une succession d’opinions. La lecture la plus féconde rend l’argument assez précis pour pouvoir le discuter et assez étranger pour ne pas lui faire dire ce que le lecteur attendait déjà.
-
-[Feuille officielle du 26c3 juin](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_3_al.pdf) · [Rapport du jury, modalités et annexe des sujets](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf)

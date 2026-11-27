@@ -37,5 +37,54 @@
       "fournisseur": "codex",
       "agent": "astra_maths"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4a",
+      "I.4b",
+      "I.5a",
+      "I.5b",
+      "I.5c",
+      "I.5d",
+      "I.6",
+      "II.1",
+      "II.2a",
+      "II.2b",
+      "II.3a",
+      "II.3b",
+      "II.3c",
+      "II.4a",
+      "II.4b",
+      "II.5",
+      "III.1a",
+      "III.1b",
+      "III.2",
+      "III.3a",
+      "III.3b",
+      "III.3c",
+      "III.3d",
+      "III.4a",
+      "III.4b",
+      "IV.1",
+      "IV.2a",
+      "IV.2b",
+      "IV.2c",
+      "IV.2d",
+      "IV.3a",
+      "IV.3b",
+      "IV.3c"
+    ],
+    "precision": "Les 36 réponses des deux éditions correspondent aux 18 questions numérotées et à leurs subdivisions sur le fac-similé officiel. Le journal antérieur documente la portée du travail sur les solutions.",
+    "origine_attestation": {
+      "commit_du_journal": "e95ff565580fea2c88c29ecbab87f4b573a5baad",
+      "sha256_sujet_controle": "1f8988a604a87d58bb50d2374bda200408d3ff00e8a2e256af856479b8614449",
+      "phase": "redaction",
+      "date": "2026-11-24",
+      "perimetre": "Rédaction des 36 réponses et des indications de chaque question à partir du sujet original et des quatre pages de rapport. Contrôle des changements de norme, du prolongement en classe C², du cas de la tangente, des exposants de Fibonacci et de la condition d’existence de l’itéré."
+    }
+  }
 }

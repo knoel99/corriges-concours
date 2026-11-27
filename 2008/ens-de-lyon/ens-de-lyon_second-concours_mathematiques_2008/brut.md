@@ -2,7 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 Les deux exercices portent sur la variation totale puis sur une forme hermitienne qui localise les racines d’un polynôme. Dans la dernière partie, l’indépendance annoncée pour toutes les factorisations nécessite une hypothèse : le corrigé donne le contre-exemple et démontre le critère de signature.
 
@@ -23,6 +25,8 @@ La fonction $x\mapsto x\cos(1/x)$ est continue pour $x>0$. Comme $|x\cos(1/x)|\l
 ### Question 1.3.b
 
 Pour $x_k=1/(k\pi)$ on a $f(x_k)=(-1)^k/(k\pi)$. Pour deux points successifs, la distance verticale vaut $(1/k+1/(k+1))/\pi$. La variation sur la subdivision donnée est donc au moins $\pi^{-1}\sum_{k=1}^{n-1}(1/k+1/(k+1))$ en omettant les deux accroissements extérieurs, positifs ou nuls. Cette borne tend vers $+\infty$ par divergence harmonique.
+
+Dans l’ordre croissant des points de la subdivision, l’ajout de $0$ et de $1$ fournit même la somme exacte $2H_n/\pi+\cos(1)$, où $H_n=\sum_{k=1}^n1/k$. En effet le premier accroissement a longueur $1/(n\pi)$ et le dernier vaut $\cos(1)+1/\pi$.
 
 ![Figure 1 — Les points choisis sur les deux enveloppes ont des ordonnées de signes alternés. La somme des déplacements verticaux croît comme une somme harmonique.](figures/oscillations-variation.svg)
 
@@ -95,6 +99,8 @@ Pour un facteur $z-\zeta$, le noyau vaut $\zeta-\bar\zeta$ et la forme vaut $2\I
 avec $a$ coefficient dominant. Si $f$ et $f^*$ sont premiers entre eux, à chaque étape le facteur ajouté $z-z_j$ est premier avec le conjugué du produit antérieur. Par 2.2.e et 2.1.d le changement est inversible. L’indépendance des formes au rang précédent, jointe à la nouvelle coordonnée, se conserve. Cela démontre la version nécessaire à la suite.
 
 L’indépendance sans hypothèse est fausse dans la question imprimée. Pour $f(z)=(z-i)(z+i)=z^2+1$, on a $f=f^*$ et $H(f)=0$. Si les deux formes étaient indépendantes, le changement de coordonnées serait inversible et $2|F_1|^2-2|F_2|^2$ ne serait pas identiquement nul. La formule de récurrence reste vraie avec des formes parfois dépendantes.
+
+Le calcul de 2.2.d fait apparaître le défaut directement. En prenant $f_1=z-i$ et $f_2=z+i$, on a $f_2=f_1^*=z+i$. Les deux formes obtenues sont identiques, $v_0=w_0=iu_0+u_1$, et leurs contributions à $H(f)$ se compensent. En revanche $(z-i)^2$ a une racine double et reste premier avec $(z+i)^2$. La multiplicité seule ne provoque donc pas cette annulation.
 
 ### Question 2.2.g
 

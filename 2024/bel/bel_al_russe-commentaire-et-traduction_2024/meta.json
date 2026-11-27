@@ -1,0 +1,182 @@
+{
+  "slug": "bel_al_russe-commentaire-et-traduction_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Russe (commentaire et traduction)",
+    "annee": 2024,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "duree_heures": 6,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2024-11/Commentaire%20d%27un%20texte%20en%20LVE%20et%20traduction.pdf#page=20",
+    "sujet_sha256": "80d15efa86786e91577675fd10623264c98f1e5e2424288248f1a684c15c9f6f",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2024-11/Russe%202024%20OK.pdf#page=2",
+    "rapport_jury_sha256": "4d1448404cdc4195151ac19a7ee2a6a45823ef0a3f11eedea5ed717f652b40cd",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2024",
+    "ouvrage": "Vladimir Korolenko, *Le Musicien aveugle*, épilogue. Le feuillet indique 1886–1898.",
+    "pages_rapport_verifiees": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2024-11/Commentaire%20d%27un%20texte%20en%20LVE%20et%20traduction.pdf#page=20",
+      "sha256": "80d15efa86786e91577675fd10623264c98f1e5e2424288248f1a684c15c9f6f",
+      "pages": 24,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "1f33d62d2f2871fbd373843ba5fed681f83b35c59a9ab1b31a272b421148df99"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "3ea33261456a99b4e412cefc548d9cbb5b7a5a907bf3904edbcad2bb93d9a265"
+        },
+        {
+          "numero": 20,
+          "rendu_sha256": "137054ddc59ff3544b1419e3f18d711e36588e2ca9f473478bea5be05d5cc556"
+        },
+        {
+          "numero": 21,
+          "rendu_sha256": "94837a316c32d5acc125dccfa17cdbed936446a0d8bef213a546888040190fb8"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2024-11/Russe%202024%20OK.pdf#page=2",
+      "sha256": "4d1448404cdc4195151ac19a7ee2a6a45823ef0a3f11eedea5ed717f652b40cd",
+      "pages": 16,
+      "pages_verifiees": [
+        {
+          "numero": 2,
+          "rendu_sha256": "820e49d5d0a4df3349c7fd1848102af01bc30a4cd2002895bf3ffaa77dbc4a40"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "c71ff02412fbb2f503615f725eeb5c850968d5d216c4e1a786822f2f5760de96"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "7d753faa86fa0a32407951770b032e48a793df8252424eed409855d32d6c35d9"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "603e4650b4e6ddc6309b8a0a1851c055949f345615b38ba8476ac549939af8e4"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "ea3a2e2235b7d2b604f38522e28671c3917dfeec74f2df823e18f7e8a9fdf12b"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "4ac84f5f434c6fedede5070f0234636a1b929d56110dee58fc8a94c285dbd31f"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "a9034b062f06cf50242c64ff82ed9367b219fc081a4345b373f504ffa52ade23"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "beb298a057e9f9ccadc716b0ba01b7c07d34763b1250e90f4668eefd0f2a0878"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "a91a1e8b52952511f95d981d46ca8dded13441c96b8f13720f49e3f26bb69f4f"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "937c7c9086365357c6c0aa7be16f8f2f90765b8885de9c4b2372e48bb2a6741a"
+        }
+      ]
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "bel_al_russe_commun_2023_2025",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire russe sur les lignes 1–80, version française des lignes 30–58, guide et schéma."
+    },
+    {
+      "phase": "revision",
+      "session": "bel_al_russe_commun_2023_2025",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle des bornes et de chaque unité de la version sur le sujet, relecture du commentaire, des points de vue et des choix de langue avec le rapport pages 2 à 11."
+    }
+  ],
+  "figures": [
+    {
+      "question": "Commentaire en russe",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "Les curieux réunis à Kiev deviennent un public qui reconnaît une douleur partagée. Maxime entend une histoire qu’il connaît déjà."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Vladimir Korolenko, *Le Musicien aveugle*, épilogue. Le feuillet indique 1886–1898."
+    ],
+    "note": "Commentaire et traduction pédagogiques originaux. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire en russe",
+      "Version française"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Commentaire en russe",
+        "pages_pdf": [
+          20,
+          21
+        ],
+        "lignes": "1–80"
+      },
+      {
+        "question": "Version française",
+        "pages_pdf": [
+          20,
+          21
+        ],
+        "lignes": "30–58",
+        "debut": "Когда он смолк",
+        "fin": "прорывалась какая-то за душу хватающая нота."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

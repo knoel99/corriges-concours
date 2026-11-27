@@ -1,0 +1,70 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_epreuve-a-option-dominante-economique_2021",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Épreuve à option — dominante économique",
+    "annee": 2021,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "La performance économique des États autoritaires au XXe siècle",
+  "gabarit": "dissertation",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2021_Sujet_1A_D2-1_Option.pdf#page=1",
+    "index": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=289&field_year_target_id%5B%5D=545",
+    "pages_sujet": "1",
+    "sujet_sha256": "e7aadd02e7172ece29df11d6892f06517e0d77a6b9ab8957b4aeb368161deec1",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2021_Sujet_1A_D2-1_Option.pdf",
+        "pages": 8,
+        "sha256": "e7aadd02e7172ece29df11d6892f06517e0d77a6b9ab8957b4aeb368161deec1"
+      },
+      {
+        "role": "rapport-eco",
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2021_rapport_ecrit_D2_epreuve_option_economique.pdf",
+        "pages": 3,
+        "sha256": "58947faaa76ccfd2a1aa3fa1d0f94047f451e5ebdc1a1c25779e90eed7b69291"
+      }
+    ],
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2021_rapport_ecrit_D2_epreuve_option_economique.pdf",
+    "rapport_sha256": "58947faaa76ccfd2a1aa3fa1d0f94047f451e5ebdc1a1c25779e90eed7b69291"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/comparaison.svg",
+      "question": "Dissertation",
+      "legende": "Une même production finale de 120 représente une productivité de 1 ou de 1,2 selon les heures mobilisées."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "inventaire_livraisons_26",
+      "agent": "inventaire_livraisons_26",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Dissertation comparant capacité de mobilisation, productivité et niveaux de vie, de la Russie impériale à l’Asie orientale. Décomposition de deux trajectoires de croissance."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "limites": "La question figure sur la couverture, page 1 du cahier. Le cas Freshprox et ses annexes appartiennent à la dominante gestion. Le rapport du jury insiste sur la période antérieure à 1914, la variété des régimes et la distinction entre croissance extensive et intensive. Le calcul est un exemple construit."
+  }
+}

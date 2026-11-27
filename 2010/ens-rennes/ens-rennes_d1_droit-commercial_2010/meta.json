@@ -1,0 +1,73 @@
+{
+  "slug": "ens-rennes_d1_droit-commercial_2010",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Droit commercial",
+    "annee": 2010,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "intitule": "Les évolutions économiques et juridiques du début du XXIe siècle remettent-elles en cause la notion de fonds de commerce ?",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/se1a-10d1-options-2010_1421752521892-pdf#page=2",
+    "sujet_sha256": "0ea50730235f894ec85702c4672fa91d041e9aa99bfe0a65c4071dca570d2432",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/re1a_10d1_droit_commercial_1280151091409.pdf",
+    "rapport_sha256": "c42c98f8cedb83e349424c9aeb5307e808f69f35faff49d2ee16e7e76f0d509e",
+    "references_complementaires": {
+      "Code civil en avril 2010": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006070721/2010-04-01/",
+      "Code de commerce en avril 2010": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000005634379/2010-04-01/",
+      "Code rural en avril 2010": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006071367/2010-04-01/"
+    },
+    "etablissement_imprime": "École normale supérieure de Cachan"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "section": "A1",
+      "fichier": "figures/clientele-propre.svg",
+      "legende": "L’attraction d’un réseau peut coexister avec le travail propre d’un commerçant."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "section": "B2",
+      "fichier": "figures/biens-et-titres.svg",
+      "legende": "Le débiteur des obligations ne change pas de la même manière selon l’objet de la cession."
+    }
+  ],
+  "redaction": "Rédaction effective des éditions brute et guidée de « Les évolutions économiques et juridiques du début du XXIe siècle remettent-elles en cause la notion de fonds de commerce ? » à partir des pièces distribuées ou conservées par l’ENS Rennes. Clientèle des réseaux et vente numérique, fonds agricole et libéral, opérations sur titres et sur fonds, insaisissabilité et EIRL encore à l’état de projet au jour de l’écrit.",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Le rapport insiste sur Trévisan, les fonds numériques, les protections patrimoniales, les clientèles hors commerce et le statut alors en préparation de l’EIRL."
+    },
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction effective des éditions brute et guidée de « Les évolutions économiques et juridiques du début du XXIe siècle remettent-elles en cause la notion de fonds de commerce ? » à partir des pièces distribuées ou conservées par l’ENS Rennes. Clientèle des réseaux et vente numérique, fonds agricole et libéral, opérations sur titres et sur fonds, insaisissabilité et EIRL encore à l’état de projet au jour de l’écrit."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}

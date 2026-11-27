@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## I. Version française
 
 *Valentina Melis et Serena Uccello, Il Sole 24 Ore, 8 décembre 2025.*

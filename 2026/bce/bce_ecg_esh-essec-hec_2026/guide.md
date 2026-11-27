@@ -8,6 +8,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
 **Cadre.** Épreuve d'économie, sociologie et histoire du monde contemporain (ESH), conception ESSEC BS et HEC Paris, voie générale, jeudi 23 avril 2026, de 8 h à 12 h. Aucun document, aucune calculatrice. Le sujet tient en une question : « Le court terme est-il l'ennemi du long terme ? ». La consigne demande d'éviter tout verbiage, recommande de ne pas dépasser huit pages et prévient qu'il sera tenu compte du plan, de l'exposition et de la correction de la langue.
@@ -191,6 +193,12 @@ Si l'analyse économique conduit à voir dans le court terme la condition du lon
 - **Notions à revoir.** Courte et longue période ; neutralité de la monnaie ; hystérésis ; destruction créatrice ; préférence pour le présent et actualisation ; théorie de l'agence et valeur actionnariale ; cycle électoral et incohérence temporelle ; taux d'actualisation et débat Stern-Nordhaus ; biens communs.
 - **Références à maîtriser.** Keynes (1923, 1936), Blanchard et Summers (1986), Schumpeter (1942), Kydland et Prescott (1977), Hardin (1968), Stern (2006) et Nordhaus, Ostrom (1990), Thaler.
 - **Sujets voisins.** « Faut-il sacrifier le présent à l'avenir ? » ; « La finance est-elle court-termiste ? » ; « Les politiques conjoncturelles sont-elles encore utiles ? » ; « La croissance est-elle compatible avec la soutenabilité ? » ; « Les règles doivent-elles l'emporter sur la discrétion en politique économique ? ».
+
+## Vérification sur le sujet
+
+Dissertation unique confrontée au feuillet officiel et au rapport. Les deux éditions traitent les arbitrages privés et publics, la possible persistance des chocs conjoncturels et les institutions capables de modifier les horizons de décision. Les effets d’une politique de soutien et ceux d’un retard d’investissement sont explicités.
+
+À coût immédiat de 100, un projet dont le seul bénéfice certain est de 150 dans vingt ans a une valeur actuelle d’environ 123 au taux d’actualisation réel de 1 %, et de 68 au taux de 4 %. La valeur nette est donc approximativement +23 ou −32. Pour une intervention climatique, le choix du taux social, la répartition des coûts entre générations et l’irréversibilité des dommages doivent être discutés séparément. L’horizon du projet est identique dans les deux calculs. C’est le poids donné à ses effets futurs qui change la décision.
 
 ## Sources
 

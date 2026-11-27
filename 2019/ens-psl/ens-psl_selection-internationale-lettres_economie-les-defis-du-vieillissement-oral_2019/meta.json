@@ -1,0 +1,93 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_economie-les-defis-du-vieillissement-oral_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Économie — les défis du vieillissement (oral)",
+    "annee": 2019,
+    "modalite": "oral"
+  },
+  "intitule": "Économie — les défis du vieillissement (oral)",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/economie-oral-sil2019.pdf",
+    "sujet_sha256": "ab858a3b9df7dea20425eb04cd86799d83273c1da4e6ed3a2ecc27a01d42a576"
+  },
+  "figures": [
+    {
+      "fichier": "figures/vieillissement.svg",
+      "question": "Explication",
+      "legende": "Lire les indicateurs du vieillissement avec le bon dénominateur"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "sil_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Exposé et préparation orale couvrant les cinq documents du dossier bilingue, les projections, les retraites et les soins de longue durée."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "sil_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification des consignes, des raisonnements et des légendes dans les deux éditions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Dans les deux copies, la valeur française initiale du document 5 a été corrigée après lecture du tableau original. Le taux net théorique du cas type passe de 76 % en 2016 à 68 % en 2056. Les autres valeurs présentées ont été confrontées aux cinq documents.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Exposé unique sur les défis du vieillissement."
+    ],
+    "annexes_verifiees": [
+      "Document 1, indicateurs démographiques européens.",
+      "Document 2, pyramides des âges françaises observées et projetées.",
+      "Document 3, bénéficiaires de soins de longue durée.",
+      "Document 4, population de 80 ans ou plus et dépenses de longue durée.",
+      "Document 5, remplacement théorique net, ratio agrégé brut et durée de vie au travail."
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "limites": "Les trois pages reproduisent cinq documents facultatifs. Les tableaux sous forme d’image ont été lus visuellement. Les projections correspondent aux hypothèses et aux dates du feuillet.",
+    "verification": "Dans les deux copies, la valeur française initiale du document 5 a été corrigée après lecture du tableau original. Le taux net théorique du cas type passe de 76 % en 2016 à 68 % en 2056. Les autres valeurs présentées ont été confrontées aux cinq documents."
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "slug": "x_mp-pc_francais_2007",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Français",
+    "annee": 2007,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "Jean Starobinski et l’imagination comme conduite située",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://web.archive.org/web/20090424050904id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/07_ComposFranc.pdf",
+    "sha256_sujet": "02e2dd1870cf2f3ddab61a1994dd4464e1709f430f2cf9ec73e780726f751818",
+    "index_sujet": "https://web.archive.org/web/20090415204525/http://www.polytechnique.fr:80/concours/sujets/sujet07/sujet07.htm",
+    "code_garde": null,
+    "oeuvres_au_programme": [
+      "Miguel de Cervantès, Don Quichotte",
+      "Nicolas Malebranche, De la recherche de la vérité",
+      "Marcel Proust, Un amour de Swann"
+    ],
+    "portee_rapport": "La garde X-ESPCI nomme les deux filières MP et PC. Le rapport de cinq pages donne le contexte critique du passage et précise que la phrase proposée commençait bien par « Il n’y a pas ». Il invite à séparer affect, éthique et rapport aux codes sociaux sans exiger la connaissance du contexte théorique antérieur.",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://web.archive.org/web/20090424050904id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/07_ComposFranc.pdf",
+        "sha256": "02e2dd1870cf2f3ddab61a1994dd4464e1709f430f2cf9ec73e780726f751818",
+        "pages": 1,
+        "ecoles": "École polytechnique et École supérieure de physique et de chimie industrielles",
+        "url_originale": "http://www.imprimerie.polytechnique.fr/EnLignes/Files/07_ComposFranc.pdf",
+        "date_capture_utc": "2009-04-24T05:09:04Z",
+        "index": "https://web.archive.org/web/20090415204525/http://www.polytechnique.fr:80/concours/sujets/sujet07/sujet07.htm"
+      },
+      {
+        "role": "rapport",
+        "url": "https://web.archive.org/web/20090424045408id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/07_Compos_Francais_MP_PC_Rap.pdf",
+        "sha256": "fd1bd3fd5ea560550766d50a0f785b1628941cdf3488e3f4aad5ac45a4c1d78d",
+        "pages": 5,
+        "ecoles": "École polytechnique et École supérieure de physique et de chimie industrielles",
+        "url_originale": "http://www.imprimerie.polytechnique.fr/EnLignes/Files/07_Compos_Francais_MP_PC_Rap.pdf",
+        "date_capture_utc": "2009-04-24T04:54:08Z",
+        "index": "https://web.archive.org/web/20090415204525/http://www.polytechnique.fr:80/concours/sujets/sujet07/sujet07.htm"
+      }
+    ],
+    "rapport_jury": "https://web.archive.org/web/20090424045408id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/07_Compos_Francais_MP_PC_Rap.pdf",
+    "sha256_rapport_jury": "fd1bd3fd5ea560550766d50a0f785b1628941cdf3488e3f4aad5ac45a4c1d78d"
+  },
+  "figures": [
+    {
+      "fichier": "figures/sens-et-direction.svg",
+      "question": "Dissertation",
+      "legende": "Un vocabulaire partagé peut servir à des conduites opposées. La circulation des images ne préjuge pas de leur usage moral."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "option_info_2006_2009",
+      "agent": "option_info_2006_2009",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Dissertation sur l’imagination comme conduite, ses orientations affectives et morales, son rapport aux codes et les limites d’une explication extérieure. Lecture du rôle chevaleresque et de Marcelle, de la jalousie et de la musique chez Swann, des imaginations fortes chez Malebranche. Guide et schéma."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "limites": "Une interprétation argumentée du sujet. Les exemples des œuvres sont paraphrasés sauf indication explicite."
+  }
+}

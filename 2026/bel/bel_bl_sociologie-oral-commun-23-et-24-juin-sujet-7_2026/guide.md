@@ -6,6 +6,10 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## Le travail de plateforme
@@ -32,6 +36,8 @@ Dans l’hébergement touristique (doc. 7), les nuitées en logements particulie
 
 ![Contraintes et ressources déclarées sur les plateformes](figures/lecture-des-donnees.svg)
 
+Reconstituez les quatre groupes exclusifs. Soustrayez les 16 cas communs aux 34 cas de contrainte et aux 26 cas de ressource, puis complétez à 100. On obtient 18, 10, 16 et 56, à l’arrondi près.
+
 ## Questions du jury
 
 > [!INDICATION]
@@ -45,3 +51,9 @@ Par inclusion-exclusion, 34 + 26 − 44 = 16 % environ. L’addition directe com
 Le document décrit deux évolutions sur un an. Pour identifier un transfert causal, il faudrait notamment observer les lieux, les clientèles, la capacité d’hébergement, les prix et l’évolution attendue sans cette nouvelle offre.
 
 [Dossier officiel](https://www.ens.psl.eu/sites/default/files/dossier_travail_plateforme.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_tronc_commun_sociologie.pdf)
+
+## Vérification sur le dossier
+
+Les témoignages de chauffeurs et l’action des investisseurs publics ont été reliés à la diversité des métiers, aux profils sociaux, aux contraintes et ressources de l’intermédiation. Le coût horaire et la variation des nuitées sont distingués des revenus des personnes.
+
+Dans le document 3, les dix groupes professionnels nommés totalisent 71 % des travailleurs de plateforme interrogés. Les intermédiaires et prestataires de services en représentent 18 % à eux seuls. Environ 29 % de l’ensemble se trouvent donc dans des métiers extérieurs aux dix catégories dominantes. Généraliser aux indépendants de plateforme le seul cas des chauffeurs présenté au document 1 écarterait une grande partie des situations du dossier.

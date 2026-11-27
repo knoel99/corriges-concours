@@ -1,0 +1,119 @@
+{
+  "slug": "ens-paris-saclay_design_philosophie-de-lart_2018",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Philosophie de l’art",
+    "annee": 2018,
+    "modalite": "écrit",
+    "etablissement_imprime": "École normale supérieure Paris-Saclay"
+  },
+  "intitule": "Devrions-nous ainsi décrire la tâche du designer ?",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2018_Sujet_1A_Design_Philo_art.pdf",
+    "sha256_sujet": "5493931558bf32a203ad06aa4e498dc9b52db54b4d44991dbdedce6fb1a7ce2d",
+    "index_annales": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=277",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2018_RE_1A_Design.pdf",
+    "sha256_rapport_jury": "c8c46d4627f12457af6c32c67c5d52413050f8015e81fd16b34260a58a134e8c",
+    "code_sujet": "C18102",
+    "intitule_imprime": "Devrions-nous ainsi décrire la tâche du designer ?",
+    "index_annales_sha256": "93f9bf1de114c39a09f6e2cebec611897444b7c18c03b4e95d70ae970e21802c",
+    "composition_du_sujet": "Feuillet imprimé unique, textuel, sans annexe appelée.",
+    "pages_rapport_philosophie": [
+      11,
+      12,
+      13
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/resistance-et-retour.svg",
+      "question": "Dissertation",
+      "legende": "Une résistance peut rester muette ou devenir perceptible et ouvrir une enquête."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_design",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Dissertation consacrée à la transposition du propos de Ponge, en regard du rapport de 2018. Analyse de la répartition du dérangement et schéma original du retour perceptible."
+    },
+    {
+      "phase": "revision",
+      "agent": "x_hist_1986",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Retour à l’adresse du poème et aux acceptions du verbe arranger, confrontation au jury et étude de la commode de Tejo Remy."
+    }
+  ],
+  "duree_heures": 4,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2018_Sujet_1A_Design_Philo_art.pdf",
+      "sha256": "5493931558bf32a203ad06aa4e498dc9b52db54b4d44991dbdedce6fb1a7ce2d",
+      "pages": 1,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "54b24f91acf380ebc1816defdec525cb21b41a638b8f7dc8e18d73110ce4c6c6"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2018_RE_1A_Design.pdf",
+      "sha256": "c8c46d4627f12457af6c32c67c5d52413050f8015e81fd16b34260a58a134e8c",
+      "pages": 22,
+      "pages_verifiees": [
+        {
+          "numero": 2,
+          "rendu_sha256": "a4e36c3605cdcb5131b7207a55113e5c2e61ab8c870e148551e87b8070a2be96"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "b10945667f0d3903a23a4466f29e7cfa4fbdf886ab5f4f4e111cca6fce0601bd"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "3c76037d77b0af78ad63499b8e25fc2796e615d4ed62f1622c6ca7e7ce4f7472"
+        },
+        {
+          "numero": 13,
+          "rendu_sha256": "d077ad1678eb498d9a09f0b20fe8ec81e509e710370d6bd203e0b00fda015e9e"
+        }
+      ]
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 1,
+        "intitule_ou_demande": "Rattacher le démonstratif « ainsi » à la citation de Ponge et éprouver la transposition aux pratiques du design."
+      }
+    ],
+    "annexes_sujet": [],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

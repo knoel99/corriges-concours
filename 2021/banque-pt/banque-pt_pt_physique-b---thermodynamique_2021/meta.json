@@ -1,0 +1,247 @@
+{
+  "slug": "banque-pt_pt_physique-b---thermodynamique_2021",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique B - Thermodynamique",
+    "annee": 2021
+  },
+  "questions": 26,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2021/ph_b_th_2021_pt.pdf",
+    "sujet_sha256": "9dbf89cab4ed0c8ac5583f691d4cbeef096018171aee5728b16f002366ae3861",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2021/rapport_phys_b_ecrit_2021.pdf",
+    "rapport_sha256": "9ca72eba717d68d73f4561e48bb8ea17d65ae16d024c2d69e17983a907c3b05f",
+    "notice": "https://www.banquept.fr/documents/livret/2021/Livret_PT_2021.pdf#page=13",
+    "notice_sha256": "a95299a81ad019b05252f6f59dae7737025e8fa6e195ff13a8be7f950737103e"
+  },
+  "figures": [
+    {
+      "fichier": "figures/irreversibilites.svg",
+      "question": "Q6",
+      "legende": "Taux de performance et puissance normalisée en fonction de la création d’entropie"
+    },
+    {
+      "fichier": "figures/methane.svg",
+      "question": "Q9",
+      "legende": "États du méthane dans le diagramme pression-enthalpie"
+    },
+    {
+      "fichier": "figures/evaporation.svg",
+      "question": "Q21",
+      "legende": "Évaporation et seuil de la spécification thermique"
+    },
+    {
+      "fichier": "figures/cuve.svg",
+      "question": "Q25",
+      "legende": "Repérage radial de la paroi isolante"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "26 questions, figures et tableaux des annexes sur le thème « Liquéfaction et transport du gaz naturel »."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture des diagrammes et des états de méthane, contrôle indépendant de la lecture avec des propriétés thermodynamiques et vérification du seuil de transport, de la résistance et des débits."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21",
+      "Q22",
+      "Q23",
+      "Q24",
+      "Q25",
+      "Q26"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Q1",
+        "page_pdf": 3,
+        "intitule": "Entropie du liquide saturé"
+      },
+      {
+        "question": "Q2",
+        "page_pdf": 4,
+        "intitule": "Bilan de puissance de la liquéfaction"
+      },
+      {
+        "question": "Q3",
+        "page_pdf": 4,
+        "intitule": "Entropie créée par kilogramme"
+      },
+      {
+        "question": "Q4",
+        "page_pdf": 4,
+        "intitule": "Puissance mécanique et irréversibilités"
+      },
+      {
+        "question": "Q5",
+        "page_pdf": 4,
+        "intitule": "Puissance minimale de liquéfaction"
+      },
+      {
+        "question": "Q6",
+        "page_pdf": 4,
+        "intitule": "Taux de performance et domaine physique"
+      },
+      {
+        "question": "Q7",
+        "page_pdf": 6,
+        "intitule": "Nature des transformations de l’installation de Linde"
+      },
+      {
+        "question": "Q8",
+        "page_pdf": 6,
+        "intitule": "Enthalpie du mélange après la vanne"
+      },
+      {
+        "question": "Q9",
+        "page_pdf": 6,
+        "intitule": "Tableau d’état et tracé sur le diagramme du méthane"
+      },
+      {
+        "question": "Q10",
+        "page_pdf": 6,
+        "intitule": "Enthalpie de vaporisation"
+      },
+      {
+        "question": "Q11",
+        "page_pdf": 6,
+        "intitule": "Débits dans le mélangeur et le séparateur"
+      },
+      {
+        "question": "Q12",
+        "page_pdf": 6,
+        "intitule": "Titre et fraction du débit recyclé"
+      },
+      {
+        "question": "Q13",
+        "page_pdf": 6,
+        "intitule": "Valeurs des débits internes"
+      },
+      {
+        "question": "Q14",
+        "page_pdf": 6,
+        "intitule": "Travail des trois compresseurs"
+      },
+      {
+        "question": "Q15",
+        "page_pdf": 7,
+        "intitule": "Enthalpie du gaz revenant vers le mélangeur"
+      },
+      {
+        "question": "Q16",
+        "page_pdf": 7,
+        "intitule": "Position du point de retour 11"
+      },
+      {
+        "question": "Q17",
+        "page_pdf": 7,
+        "intitule": "Réfrigérateur des trois premiers échangeurs"
+      },
+      {
+        "question": "Q18",
+        "page_pdf": 7,
+        "intitule": "Réfrigérateur de l’étage haute pression"
+      },
+      {
+        "question": "Q19",
+        "page_pdf": 7,
+        "intitule": "Performance globale de la liquéfaction"
+      },
+      {
+        "question": "Q20",
+        "page_pdf": 8,
+        "intitule": "Taux d’évaporation et résistance de la paroi"
+      },
+      {
+        "question": "Q21",
+        "page_pdf": 9,
+        "intitule": "Domaine physique du taux d’évaporation"
+      },
+      {
+        "question": "Q22",
+        "page_pdf": 9,
+        "intitule": "Épaisseur nécessaire pour un pour cent"
+      },
+      {
+        "question": "Q23",
+        "page_pdf": 9,
+        "intitule": "Constante du profil sphérique"
+      },
+      {
+        "question": "Q24",
+        "page_pdf": 9,
+        "intitule": "Loi de Fourier"
+      },
+      {
+        "question": "Q25",
+        "page_pdf": 9,
+        "intitule": "Gradient radial et vecteur unitaire"
+      },
+      {
+        "question": "Q26",
+        "page_pdf": 9,
+        "intitule": "Résistance thermique de la mousse"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "annexes": "Sujet principal pages 1 à 9 et document réponse pages 13 à 16, dont la page 15 contient le tableau et le diagramme P/h du méthane, utilisé aussi aux Q1 et Q16."
+  }
+}

@@ -8,6 +8,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le sujet propose une tribune d’Alexander Hurst, adaptée de *The Guardian* du 6 janvier 2025. L’épreuve dure deux heures. Chaque réponse de compréhension demande au moins 50 mots. Pour l’essai, la plage admise va de 360 à 440 mots. Les barres marquent chaque groupe de cinquante mots.
 
 ## Reading comprehension

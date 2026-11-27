@@ -1,0 +1,141 @@
+{
+  "slug": "agro-veto_bcpst_svt_2025",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "SVT",
+    "annee": 2025
+  },
+  "questions": 39,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "annexe_biologie": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/bcpst_0625_a3biol_0.pdf",
+    "annexe_biologie_sha256": "4ea97e017db4d4bf2fce2e59a3871a6222810a9741dc7898b3e3007e3a474ba3",
+    "annexe_geologie": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/bcpst_0625_a3geol_0.pdf",
+    "annexe_geologie_sha256": "388746e64b8a9b48321909f3e5729d6bf3cb081c945c980a4ba023ac54da42dc",
+    "rapport": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/rapport_epreuve_sur_document_2025_vdef-2_0.pdf",
+    "rapport_sha256": "4f6f6439501dce2bf481ac70b200dccca2c0b5db58486cff37ed8c57feec8473",
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/sujet-cpge-bcpst-svt-session-2025_0.pdf",
+    "sujet_sha256": "101724d39f47dd992d2ab337f61e595e07e8b66514da147fceb7f57f912f8d72"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "G1",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G6",
+      "G7a",
+      "G7b",
+      "G7c",
+      "G8",
+      "G9",
+      "G10",
+      "G11",
+      "G12",
+      "G13",
+      "B1",
+      "B2a",
+      "B2b",
+      "B3a",
+      "B3b",
+      "B3c",
+      "B4a",
+      "B4b",
+      "B5a",
+      "B5b",
+      "B6a",
+      "B6b",
+      "B7",
+      "B9b",
+      "B10a",
+      "B10b",
+      "B11a",
+      "B11b",
+      "B11c",
+      "B11d",
+      "B12"
+    ],
+    "questions_partiellement_traitees": [
+      "B8",
+      "B9a",
+      "B9c"
+    ],
+    "questions_non_traitees": [],
+    "precision": "Les deux cahiers et les deux annexes A3 sont exploités. Les repères G1 à G13 renvoient à la géologie, B1 à B12 à la biologie. Les sous-questions comptées séparément donnent 39 repères. B8 couvre les observations histologiques et les concentrations du marqueur inflammatoire. B9a couvre le témoin de charge, les différences de signal et le principe général d’action d’un microARN. B9c relie les observations à la fonction protectrice normale de la muqueuse. Le modèle d’induction expérimentale et la manipulation ciblée des défenses ne sont pas développés."
+  },
+  "figures": [
+    {
+      "question": "G3",
+      "fichier": "figures/qap.svg",
+      "legende": "Projection originale dans le triangle Q–A–P. Les amphiboles et la biotite sont écartées de la normalisation."
+    },
+    {
+      "question": "G6",
+      "fichier": "figures/concordia.svg",
+      "legende": "La discordia est ajustée sur les quatre zircons de Guernesey. L’intersection la plus jeune dépend fortement du prolongement de la droite."
+    },
+    {
+      "question": "G7a",
+      "fichier": "figures/colonnes.svg",
+      "legende": "Modèle isostatique en coupe. Le Moho océanique est plus haut que le Moho continental et la compensation se situe sous les deux."
+    },
+    {
+      "question": "G10",
+      "fichier": "figures/tri.svg",
+      "legende": "Lectures approchées sur l’abaque de Hjulström et ordre de dépôt dans un courant décroissant. Les deux sables ont le même diamètre."
+    },
+    {
+      "question": "G11",
+      "fichier": "figures/pli.svg",
+      "legende": "Le tracé simplifie les plans visibles sur la photo. Leur épaisseur varie près de la charnière, caractéristique d’un pli anisopaque."
+    },
+    {
+      "question": "G12",
+      "fichier": "figures/trajet.svg",
+      "legende": "La paragenèse de haute pression est suivie d’une rééquilibration en faciès schistes verts. La photographie ne fixe pas un trajet thermobarométrique unique."
+    },
+    {
+      "question": "B2a",
+      "fichier": "figures/alveole.svg",
+      "legende": "Repères à reporter sur le document 2. Les couleurs conventionnelles indiquent la lumière et le cytoplasme, sans reprendre la photographie du sujet."
+    },
+    {
+      "question": "B5b",
+      "fichier": "figures/frise.svg",
+      "legende": "Chronologie verticale suivant la convention du sujet qui situe le début de la production de lait après la mise bas."
+    },
+    {
+      "question": "B9a–B9b",
+      "fichier": "figures/arn.svg",
+      "legende": "Principes généraux de régulation par un microARN et de répartition entre formes libre et associée."
+    },
+    {
+      "question": "B10a, B11a–B11b",
+      "fichier": "figures/arbre.svg",
+      "legende": "Arbre réduit pour reporter les innovations sur les branches correspondantes de l’annexe. La lactation est commune aux Mammifères, y compris aux trois familles de Pinnipèdes."
+    },
+    {
+      "question": "B12",
+      "fichier": "figures/nino.svg",
+      "legende": "Chaîne argumentée par les panneaux A à D du document 12-1 et le tableau 12-2. Les valeurs des courbes sont lues graphiquement."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction originale des deux éditions en regard des vingt pages du sujet BCPST-0625, des quatre faces des annexes A3 et du rapport de dix-neuf pages. Vérification des axes, des affleurements, des profils histologiques et des données chiffrées. Onze figures originales. B8, B9a et B9c sont limitées aux interprétations indiquées dans la couverture."
+    }
+  ]
+}

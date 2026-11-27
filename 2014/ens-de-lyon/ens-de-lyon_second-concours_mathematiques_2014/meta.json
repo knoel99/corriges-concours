@@ -32,5 +32,38 @@
       "fournisseur": "codex",
       "agent": "astra_maths"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13.1",
+      "13.2",
+      "13.3",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18"
+    ],
+    "precision": "Les 20 repères de questions et sous-questions ont été rapprochés dans l’ordre du sujet officiel et dans chacune des deux éditions. La portée de la rédaction ou de la révision est conservée dans le journal cité.",
+    "origine_attestation": {
+      "commit_du_journal": "9ac0bc0e444c0519ea4322371703c8457c06a80e",
+      "sha256_sujet_controle": "00151c09c942523f642032303eee48bfdfb0c81c63315203337bb8a610bfa39e",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction intégrale des 18 questions et des trois sous-questions de Q13, soit 20 réponses par édition, à partir du sujet et du rapport. Toutes les formules de décalage, de convolution, les limites pondérées et la majoration taubérienne ont été contrôlées. Figure originale comparant les limites de Q14."
+    }
+  }
 }

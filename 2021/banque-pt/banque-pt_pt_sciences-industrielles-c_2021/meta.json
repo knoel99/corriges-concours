@@ -1,0 +1,746 @@
+{
+  "slug": "banque-pt_pt_sciences-industrielles-c_2021",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Sciences industrielles C",
+    "annee": 2021
+  },
+  "questions": 49,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2021/si_c_2021_pt.zip",
+    "sujet_sha256": "e0b5422ac1e490a6054badaf218c76a0d25e54f76acd1fadc9cdb2431eed6ce3",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2021/rapport_si_c_ecrit_2021.pdf",
+    "rapport_sha256": "b8777443d4e19c3a739df389df413808adeb8d01afa1ac8a8ce424b99f15abf8",
+    "lecture_rapport": "PDF du jury 2021, p. 1–4. Le sous-titre de tête reprend le thème des hélicoptères légers. Le corps du rapport décrit la cellule de perçage, la fragmentation, le piézo et la cotation du coulisseau traités dans le sujet 2021. Pages 2–3, revue des quatre parties et des difficultés de lecture.",
+    "sujet_membre_principal": "si_c_2021_pt.pdf",
+    "sujet_membre_principal_sha256": "eb101c0d49252e6b337c84be7cd273c008c0e52dd0831c8a572e0e4b9313eb42"
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2021/si_c_2021_pt.zip",
+      "sha256": "eb101c0d49252e6b337c84be7cd273c008c0e52dd0831c8a572e0e4b9313eb42",
+      "nombre_pages": 33,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "943f6e1af42a68956cdf478eb7486d1b30ab9bb6c16845d6f69c26cb984d4ba6"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "931f05bf2f92398bcc2d375b7d20cc3fc3951c6fcfc40b0f8cff5e983527eed7"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "de5750df6e2c9b9cd44c37cc9ea10a6d9ffd74f61d4b898375978a5d8fb0dbaf"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "2caa0104eb952b8a889cd5b56ab93031de4f33e8ce620bdce9c23d217d22656c"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "f38c3807510ac6be17db283af493d1a55e725f68155605e3a889100d4cce1cca"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "cd42bd44d8b367c29bc54653bb1c87ce43670a20a958bff76b017f1fb01e9ac5"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "7b03f5de19f767c21a50a94462b50431f7374bf777d058e1388928e96aac7774"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "56ebe8e6438accbc33f8fa77dbe8fa39fdfb11594058e600f1b6900de3cff726"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "b0eb4d60463adab85a65b0c82e263c7ceac91477e7f9ba97ab06064309cd8dd2"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "c18d5bdf0f9cbeeaf9b5c0266987020d6c4da9a1d2f4822af36bc872c30bfa27"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "e38b70b2627302d354d7483a5a5f9cd898fd3ce28878992a10ed8f558fe71548"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "861abd239d5a0f1d4704bf843f4033fe5a7b180a6708e89fa508957b8e1f1db4"
+        },
+        {
+          "numero": 13,
+          "rendu_sha256": "619a78805b906aaa9e20a789210fb98e4ab263de79e8521eb66f18916d41420d"
+        },
+        {
+          "numero": 14,
+          "rendu_sha256": "036e3bbf9d6c1616bad4b143b1c31e795c2ea9959423a77cd84bbdc20c5cbdb6"
+        },
+        {
+          "numero": 15,
+          "rendu_sha256": "d60078edd13e5dc066db506cc80eb62e532b923f998c8912d57639f502a4107e"
+        },
+        {
+          "numero": 16,
+          "rendu_sha256": "3b18bee725f906b2c75441c16e8b806b5c2174197c69ded3a1f153c0ad80167b"
+        },
+        {
+          "numero": 17,
+          "rendu_sha256": "d4b24adfbac069cd1576e332fa4250f669f37add41e8e52ebfa9e80a8ce13d72"
+        },
+        {
+          "numero": 18,
+          "rendu_sha256": "344dd77809df7ed333c9295937de5f4c98187ded3897c1afad256508a1010772"
+        },
+        {
+          "numero": 19,
+          "rendu_sha256": "344dd77809df7ed333c9295937de5f4c98187ded3897c1afad256508a1010772"
+        },
+        {
+          "numero": 20,
+          "rendu_sha256": "b917e38045ad6deec49ffbe1d4225fcabd49e74c2fe6029b1513714007364524"
+        },
+        {
+          "numero": 21,
+          "rendu_sha256": "881c72752d45061197861c17ec9eabcbc9902cdd467c303ae72385c2e0ac8025"
+        },
+        {
+          "numero": 22,
+          "rendu_sha256": "a22a0ea6d072259cde8c3d59a61a57910a4f3eba86be42376998ba7fff7d6ce8"
+        },
+        {
+          "numero": 23,
+          "rendu_sha256": "7cfec2bc9dd0f10cad6901f1f74c844ad6ecd3b7de09382a02409a0c1aff9347"
+        },
+        {
+          "numero": 24,
+          "rendu_sha256": "27019d72509b612b127ab0be67fa9fbf23370775c3b8330c6a7e2634219c10d9"
+        },
+        {
+          "numero": 25,
+          "rendu_sha256": "bbec757f41d528cb80306da6b4d5db8f30b1c379ceb8f615cad68a4151296aef"
+        },
+        {
+          "numero": 26,
+          "rendu_sha256": "b0c7a6e58c2c060548f3d8f35054680305badc89b31351b28d5569112ef7d52c"
+        },
+        {
+          "numero": 27,
+          "rendu_sha256": "40c7f4f482754117701e30155d039637b4db44c6303c5498aa4fcb2f0a208e22"
+        },
+        {
+          "numero": 28,
+          "rendu_sha256": "567c674f4afb88348dd63913160dcb3a7c544e233a4d0e308d16d947bd75b2bb"
+        },
+        {
+          "numero": 29,
+          "rendu_sha256": "0b83a5d6e5394e4b94bc27a340811e8f03fb1ba225403f1aee8d58cffb233502"
+        },
+        {
+          "numero": 30,
+          "rendu_sha256": "286b8d2d4238a2112620b0e815af5810360abbc79620c96e09a4864c74931c22"
+        },
+        {
+          "numero": 31,
+          "rendu_sha256": "5034add9dd85c84d39d6e24419ef207ba07d9f3f6eb0684cb9b2c5c46743d77c"
+        },
+        {
+          "numero": 32,
+          "rendu_sha256": "39d34deb9f6dde19ea57c10b262522dacc5811136f1b530f0908473de6518592"
+        },
+        {
+          "numero": 33,
+          "rendu_sha256": "76aa1cd0f3ab9f222c58b86db21f24fddccb12f0093d4dee499294e6f49e16f9"
+        }
+      ],
+      "echelle_rendu": 0.6,
+      "membre_archive": "si_c_2021_pt.pdf"
+    },
+    "piece_si_c_2021_pt_annexes": {
+      "url": "https://www.banquept.fr/documents/2021/si_c_2021_pt.zip",
+      "sha256": "4cb652f2b412c8002912a75a8920dd46c085c3653129d09594884757e99ebbfa",
+      "nombre_pages": 45,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "7f6ec435c842c6d715dd30cd9cf105251769713b140271c910ef39b5c32643d7"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "52bd9cee40be307a71451d044dddcdf4f685bfe06caaa7e57d94ba7bf6a7ea09"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "c57ee6d610a7a7888826c6a4977d66ec69e92bf477dfc49b2c6e30213be12a2a"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "8b078f8d8eb14fa78edb1cf4bf13b303ab15e007b69abecd74cbae72f2b49552"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "d88f02020041f52d8ed17e0dc724f22958aa17e5ae72592907d3078a01ebd409"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "380e1310441fa6451e6f47f4aa9180ba52b72110c3c790b03eb486203e1455dd"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "7701a7138e26842b50c3b3fe14c7aad61587ae853614d69a1953a009d282efcb"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "f0b5c2cdba4ea5618fde94c6682768b7f41ea62f7a5c13ff21010eff148e96bc"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "68be2ed516965b019b691a07ada647fb7ba54db73b95d311e694813c69cd7083"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "f0419670ffffbd17aa4b31fed74831725486e10e2e073e993aba30dd052f4d30"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "344dd77809df7ed333c9295937de5f4c98187ded3897c1afad256508a1010772"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "344dd77809df7ed333c9295937de5f4c98187ded3897c1afad256508a1010772"
+        },
+        {
+          "numero": 13,
+          "rendu_sha256": "344dd77809df7ed333c9295937de5f4c98187ded3897c1afad256508a1010772"
+        },
+        {
+          "numero": 14,
+          "rendu_sha256": "a19709b36a044b8a462dea433b5cfe768888c1c1515e168667cb354073d60819"
+        },
+        {
+          "numero": 15,
+          "rendu_sha256": "a0bfa0f6f5507a30d93ddb3fb9ec8d6517aebc3e57a5b78d9ad85e80de418bc5"
+        },
+        {
+          "numero": 16,
+          "rendu_sha256": "1fe1c3d9191e76734a7d0005c62295bab6eac28ee837ddb0e3921d01b9164dc0"
+        },
+        {
+          "numero": 17,
+          "rendu_sha256": "bb74ba093103a2bba8a21a9e5d19e96a3b46a36f83dd33c1dae60905fa69e22b"
+        },
+        {
+          "numero": 18,
+          "rendu_sha256": "7db94912f7b2c90b7dcb46dfd16c14e9b9f267f32caba410fa3695b514baa103"
+        },
+        {
+          "numero": 19,
+          "rendu_sha256": "95f9c7c3b0c79da3f318ccd8a63d01d2fc712d5ee471d4ed55c932c4d07d5566"
+        },
+        {
+          "numero": 20,
+          "rendu_sha256": "7666b788faa8d45fbc7ad529103a41e81d1b6c5b43058467014d5d3e59eebd20"
+        },
+        {
+          "numero": 21,
+          "rendu_sha256": "2b6d54258764010ab59d9b1207d93add33b121bf73468b3b09e6beec23abfb6d"
+        },
+        {
+          "numero": 22,
+          "rendu_sha256": "c184e87125300b6bca784273452410fd08f40f4f05af4149fcdc45dd28a5e67e"
+        },
+        {
+          "numero": 23,
+          "rendu_sha256": "0c8ce0c5fc555386c4a8769efdf4994972155c2b951af70a88e753f83fca65a1"
+        },
+        {
+          "numero": 24,
+          "rendu_sha256": "a6fa93b38b386685f0e7e8b1a5a332f4809d71c9302a7468b55aaabf30005dfc"
+        },
+        {
+          "numero": 25,
+          "rendu_sha256": "0878740687e583d165af752ddf9fc440def373c8fbf9131278e54b7448259be6"
+        },
+        {
+          "numero": 26,
+          "rendu_sha256": "03cd524257297b9f613594a5cda12c93bb7b1e469b2305ae8116278bae5c8456"
+        },
+        {
+          "numero": 27,
+          "rendu_sha256": "1a0f493c884c01c56d50ff4dbc5610123532ba65afba9823a58efd41f9b93ed1"
+        },
+        {
+          "numero": 28,
+          "rendu_sha256": "1bd990cfab64605b1d4a31533cd64d8d5ce6798306663e609e820ab0b36d46d7"
+        },
+        {
+          "numero": 29,
+          "rendu_sha256": "72459f081171b673c152fe05f14c1d0d984383d62c89ce951375992aa6442aa3"
+        },
+        {
+          "numero": 30,
+          "rendu_sha256": "a29a049a08ab9e108249072d19e1b40fefe3f668ff77f449c27ade6d3b4e3f7f"
+        },
+        {
+          "numero": 31,
+          "rendu_sha256": "10835e200bc26f065c2c6c163b1f460e4715399e7383752e5afd4c5a6c79e96a"
+        },
+        {
+          "numero": 32,
+          "rendu_sha256": "040f01ef883de8a2ba3bc7d91210669f9600994065343e0adf9aed0ce1b16e85"
+        },
+        {
+          "numero": 33,
+          "rendu_sha256": "9cf50b713ee0fc0f3c238a9e0544213676e03f44ebb8e0c5b287af813b9ff24b"
+        },
+        {
+          "numero": 34,
+          "rendu_sha256": "a4fe213900da4bcdc065c60e2f9785b37ee8911e698eaaefb28a0f922b9941aa"
+        },
+        {
+          "numero": 35,
+          "rendu_sha256": "bd034ac4a9a41e8fe0d10cf6fc954c95196bfffe602e2b7a3e8bb9d5131828b5"
+        },
+        {
+          "numero": 36,
+          "rendu_sha256": "148df6a30b9512f62a7f4b933dc2a8a79f63bc7df305769426d033cbd7ee00e7"
+        },
+        {
+          "numero": 37,
+          "rendu_sha256": "1184ea40a52b6cb7ad72b66a2d0a2151ad659495a873f79baa13af29ca5149dd"
+        },
+        {
+          "numero": 38,
+          "rendu_sha256": "18507f6c616304ab551a23a10383f90ed8d859c23ba8f564362e974d15f6fb95"
+        },
+        {
+          "numero": 39,
+          "rendu_sha256": "b3a7cf84b80a79e3c4b9b2c09adcf075b8778625e26507340c616bc09460d30d"
+        },
+        {
+          "numero": 40,
+          "rendu_sha256": "fd4f1028a99ee2475421fc9e1b071c6631f20b0cb6bb49bab55cba56dfa52363"
+        },
+        {
+          "numero": 41,
+          "rendu_sha256": "dab7d0ae0f7ab78eadfb1a4bec824f640bc5270001e2dc653f3847ea49c714ae"
+        },
+        {
+          "numero": 42,
+          "rendu_sha256": "1bed86cd80abf9602ccee6a6e887a1e626eeb8884a03675885b81127cebf24ca"
+        },
+        {
+          "numero": 43,
+          "rendu_sha256": "03317307e70496344ad0bd43d0718b8c6542b343eee0d4b15aaa0df18d10f749"
+        },
+        {
+          "numero": 44,
+          "rendu_sha256": "4196ba9e92e7ee481c7b8d164b7fbb8251ff0335b3b6063247d7cb7167a7c92b"
+        },
+        {
+          "numero": 45,
+          "rendu_sha256": "a10631990eba4321c728d467202b286413924becc1005e75254b9aa9cba619dd"
+        }
+      ],
+      "echelle_rendu": 0.6,
+      "membre_archive": "si_c_2021_pt_annexes.pdf"
+    },
+    "rapport_jury": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2021/rapport_si_c_ecrit_2021.pdf",
+      "sha256": "b8777443d4e19c3a739df389df413808adeb8d01afa1ac8a8ce424b99f15abf8",
+      "nombre_pages": 4,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "6352bdc90a395841bb5c1a53d0b7c79a36071e28cf6ff914072971b34118eb75"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "a7775af92c40c061777fedc3fb569b130fa1ead29a1dd7cb6d738b76b017cd95"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "36ff22e9e948d71d26a3f43de4c0617ec4a513618b4c3a3736eaebd7d98b2d3b"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "37898f07ae0335e7d7a63270595dcce56098aab5a75f9b9d8438c4154389c462"
+        }
+      ],
+      "echelle_rendu": 0.6
+    }
+  },
+  "date_revision": "2026-11-26",
+  "figures": [
+    {
+      "fichier": "figures/secteur.svg",
+      "question": "Q1",
+      "legende": "Secteur de 60 degrés couvert depuis A et construction du rayon maximal"
+    },
+    {
+      "fichier": "figures/fragmentation.svg",
+      "question": "Q17",
+      "legende": "Épaisseur géométrique pour des oscillations en phase et en opposition de phase"
+    },
+    {
+      "fichier": "figures/flector.svg",
+      "question": "Q21",
+      "legende": "Mouvements autorisés et transmission du couple par le flector"
+    },
+    {
+      "fichier": "figures/butee.svg",
+      "question": "Q38",
+      "legende": "Coupe de la butée et direction des trois lignes de poussée"
+    },
+    {
+      "fichier": "figures/planeite.svg",
+      "question": "Q49",
+      "legende": "Écarts imprimés et résidus obtenus en recalculant le plan sur les huit mesures"
+    }
+  ],
+  "contributions": [
+    {
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "session": "banque_pt_si_c_ecorner_formup_percage_2021",
+      "phase": "redaction",
+      "perimetre": "49 réponses et 49 indications. Ressources I à XXI, dossier de 33 pages suivi du fascicule de 45 pages, tableaux de correspondance et GPS, géométrie du secteur, flector et construction de la butée sur les fonds fournis."
+    },
+    {
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "session": "banque_pt_si_c_ecorner_formup_percage_2021",
+      "phase": "relecture_corrige",
+      "perimetre": "Contrôle du bilan de traction et de basculement, du titane et de la déformation des deux tôles, du signe d’avance, de la chaîne de précharge entre les trois roulements et des données contradictoires de la ressource XXI. Relecture de la garde, des références de catalogue, des signets, des schémas et des deux PDF.",
+      "tour": 1
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21",
+      "Q22",
+      "Q23",
+      "Q24",
+      "Q25",
+      "Q26",
+      "Q27",
+      "Q28",
+      "Q29",
+      "Q30",
+      "Q31",
+      "Q32",
+      "Q33",
+      "Q34",
+      "Q35",
+      "Q36",
+      "Q37",
+      "Q38",
+      "Q39",
+      "Q40",
+      "Q41",
+      "Q42",
+      "Q43",
+      "Q44",
+      "Q45",
+      "Q46",
+      "Q47",
+      "Q48",
+      "Q49"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "Q1",
+        "page_pdf": 5,
+        "traitement": "Placer le centre de la cellule"
+      },
+      {
+        "question": "Q2",
+        "page_pdf": 5,
+        "traitement": "Rayon extérieur et longueur du transfert"
+      },
+      {
+        "question": "Q3",
+        "page_pdf": 5,
+        "traitement": "Vitesse maximale"
+      },
+      {
+        "question": "Q4",
+        "page_pdf": 6,
+        "traitement": "Effort disponible aux roues"
+      },
+      {
+        "question": "Q5",
+        "page_pdf": 6,
+        "traitement": "Accélération du véhicule"
+      },
+      {
+        "question": "Q6",
+        "page_pdf": 6,
+        "traitement": "Temps et distance d’accélération"
+      },
+      {
+        "question": "Q7",
+        "page_pdf": 6,
+        "traitement": "Durée du transfert"
+      },
+      {
+        "question": "Q8",
+        "page_pdf": 6,
+        "traitement": "Effort qui déclenche le basculement"
+      },
+      {
+        "question": "Q9",
+        "page_pdf": 7,
+        "traitement": "Formation du défaut entre les tôles"
+      },
+      {
+        "question": "Q10",
+        "page_pdf": 7,
+        "traitement": "Déformation d’accostage"
+      },
+      {
+        "question": "Q11",
+        "page_pdf": 7,
+        "traitement": "Action de la deuxième tôle sur la première"
+      },
+      {
+        "question": "Q12",
+        "page_pdf": 7,
+        "traitement": "Force d’accostage minimale"
+      },
+      {
+        "question": "Q13",
+        "page_pdf": 8,
+        "traitement": "Avance et épaisseur en coupe classique"
+      },
+      {
+        "question": "Q14",
+        "page_pdf": 8,
+        "traitement": "Épaisseur pendant une oscillation"
+      },
+      {
+        "question": "Q15",
+        "page_pdf": 8,
+        "traitement": "Introduire les oscillations par passage de dent"
+      },
+      {
+        "question": "Q16",
+        "page_pdf": 9,
+        "traitement": "Condition de fragmentation"
+      },
+      {
+        "question": "Q17",
+        "page_pdf": 9,
+        "traitement": "Amplitude minimale et fréquence correspondante"
+      },
+      {
+        "question": "Q18",
+        "page_pdf": 10,
+        "traitement": "Passer de la nomenclature aux classes du schéma"
+      },
+      {
+        "question": "Q19",
+        "page_pdf": 10,
+        "traitement": "Hyperstatisme du schéma initial"
+      },
+      {
+        "question": "Q20",
+        "page_pdf": 10,
+        "traitement": "Conséquences de l’hyperstatisme"
+      },
+      {
+        "question": "Q21",
+        "page_pdf": 10,
+        "traitement": "Modéliser le flector"
+      },
+      {
+        "question": "Q22",
+        "page_pdf": 11,
+        "traitement": "Hyperstatisme après modification"
+      },
+      {
+        "question": "Q23",
+        "page_pdf": 11,
+        "traitement": "Autres moyens de réduire la redondance"
+      },
+      {
+        "question": "Q24",
+        "page_pdf": 11,
+        "traitement": "Vitesse d’avance différentielle"
+      },
+      {
+        "question": "Q25",
+        "page_pdf": 11,
+        "traitement": "Consigne de vitesse de M2"
+      },
+      {
+        "question": "Q26",
+        "page_pdf": 11,
+        "traitement": "Résolution des codeurs"
+      },
+      {
+        "question": "Q27",
+        "page_pdf": 11,
+        "traitement": "Position sous modulation du moteur d’avance"
+      },
+      {
+        "question": "Q28",
+        "page_pdf": 12,
+        "traitement": "Consignes qui produisent la fragmentation minimale"
+      },
+      {
+        "question": "Q29",
+        "page_pdf": 13,
+        "traitement": "Course d’un piézo préchargé"
+      },
+      {
+        "question": "Q30",
+        "page_pdf": 13,
+        "traitement": "Raideur des ressorts de précharge"
+      },
+      {
+        "question": "Q31",
+        "page_pdf": 13,
+        "traitement": "Maintien du contact pendant l’oscillation"
+      },
+      {
+        "question": "Q32",
+        "page_pdf": 13,
+        "traitement": "Fréquence propre et domaine utile"
+      },
+      {
+        "question": "Q33",
+        "page_pdf": 14,
+        "traitement": "Identifier les convertisseurs B2 et B3"
+      },
+      {
+        "question": "Q34",
+        "page_pdf": 14,
+        "traitement": "Inductance du filtre"
+      },
+      {
+        "question": "Q35",
+        "page_pdf": 14,
+        "traitement": "Amortissement par la résistance série"
+      },
+      {
+        "question": "Q36",
+        "page_pdf": 14,
+        "traitement": "Fréquence de découpage"
+      },
+      {
+        "question": "Q37",
+        "page_pdf": 15,
+        "traitement": "Vérifier les trois roulements choisis"
+      },
+      {
+        "question": "Q38",
+        "page_pdf": 15,
+        "traitement": "Compléter la butée entre O et J"
+      },
+      {
+        "question": "Q39",
+        "page_pdf": 15,
+        "traitement": "Orienter les lignes de poussée"
+      },
+      {
+        "question": "Q40",
+        "page_pdf": 15,
+        "traitement": "Disposer les Belleville en série"
+      },
+      {
+        "question": "Q41",
+        "page_pdf": 16,
+        "traitement": "Remplir les trois grilles GPS"
+      },
+      {
+        "question": "Q42",
+        "page_pdf": 16,
+        "traitement": "Cémentation et durcissement superficiel"
+      },
+      {
+        "question": "Q43",
+        "page_pdf": 16,
+        "traitement": "Sélectionner une gamme admissible"
+      },
+      {
+        "question": "Q44",
+        "page_pdf": 16,
+        "traitement": "Fermeture vectorielle au point de mesure"
+      },
+      {
+        "question": "Q45",
+        "page_pdf": 16,
+        "traitement": "Identifier les déplacements qui changent le plan"
+      },
+      {
+        "question": "Q46",
+        "page_pdf": 17,
+        "traitement": "Résidu après déplacement"
+      },
+      {
+        "question": "Q47",
+        "page_pdf": 17,
+        "traitement": "Équations normales"
+      },
+      {
+        "question": "Q48",
+        "page_pdf": 17,
+        "traitement": "Pente et translation à partir des huit relevés"
+      },
+      {
+        "question": "Q49",
+        "page_pdf": 17,
+        "traitement": "Contrôle de planéité"
+      }
+    ]
+  }
+}

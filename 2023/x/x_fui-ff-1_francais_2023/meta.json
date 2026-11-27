@@ -16,24 +16,29 @@
     {
       "fichier": "figures/lumiere-et-instruction.svg",
       "question": "A2b",
-      "legende": "Comment se construit l’image de la lumière."
+      "legende": "Comment se construit l’image de la lumière.",
+      "numero": 1
     },
     {
       "fichier": "figures/lire-et-enqueter.svg",
       "question": "B",
-      "legende": "Ce que fait le roman, ce que complète le document."
+      "legende": "Ce que fait le roman, ce que complète le document.",
+      "numero": 2
     }
   ],
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20FUI-FF%20S1%20SUJET%20DE%20FRANCAIS.pdf",
     "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
-    "sujet_sha256": "28418678c6ffd49ad1f13d5725fbb220487fed20a0d337c00ff7ae2d006aafdd"
+    "sujet_sha256": "28418678c6ffd49ad1f13d5725fbb220487fed20a0d337c00ff7ae2d006aafdd",
+    "pages_sujet": 4,
+    "reperage": "PDF p. 1, garde de la session d’automne. P. 3, discours, référence du 7 juin 1878, A1, A2a, A2b et B. Les pages 2 et 4 portent uniquement un numéro.",
+    "rapport": "La rubrique FUI-FF de la banque publie les sujets de français, sans lien vers un rapport pour cette session."
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "revision": {
-    "date": "2026-11-24",
-    "modele": "Codex (GPT-6)",
-    "verification": "Contre-lecture indépendante sur le sujet officiel : thèse, questions et sous-questions, références littéraires et argument de l’essai vérifiés."
+    "date": "2026-11-26",
+    "modele": "GPT-6.2 Astra Ultra",
+    "verification": "Réparation du pronom sans antécédent dans la thèse, justification de la phrase relevée, progression de la concession à la priorité, lecture personnelle de Hugo, Zola et Ernaux et révision des deux schémas."
   },
   "provenance": {
     "redaction": {
@@ -83,6 +88,38 @@
       "modifications": true,
       "perimetre": "Relecture des trois réponses sur le discours de Hugo, citation vérifiée, circulation universelle du livre, détail de la comparaison des rues et confrontation de l’essai aux exemples littéraires.",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "francais_x_2022_2023",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Réparation du pronom sans antécédent dans la thèse, justification de la phrase relevée, progression de la concession à la priorité, lecture personnelle de Hugo, Zola et Ernaux et révision des deux schémas."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A1 — Idée principale, regard sur la littérature et citation exacte d’une phrase représentative.",
+      "A2a — Sens des écoles comme points lumineux de la civilisation, ligne 14.",
+      "A2b — Sens de la comparaison entre éclairage des rues et éclairage des esprits, lignes 21–22.",
+      "B — Essai personnel sur la littérature et son importance contemporaine, discussion du propos de Hugo et exemples précis."
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "elements_verifies": [
+      "PDF p. 1, garde de la session d’automne. P. 3, discours, référence du 7 juin 1878, A1, A2a, A2b et B. Les pages 2 et 4 portent uniquement un numéro.",
+      "Épreuve n° 2 de deux heures. Dictionnaires et traducteurs électroniques interdits. Un seul essai, sans option ni limite du nombre de mots.",
+      "Réparation du pronom sans antécédent dans la thèse, justification de la phrase relevée, progression de la concession à la priorité, lecture personnelle de Hugo, Zola et Ernaux et révision des deux schémas."
+    ]
+  }
 }

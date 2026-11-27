@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Partie 1 · Stratégies simples
 
 ### Question 1 · Les douze requêtes avec FIFO
@@ -204,6 +206,8 @@ $$
 $$
 
 En éléments transférés, multiplier par $Q$. Le cas $M=NQ$ donne exactement $N$ lectures et $N$ écritures, ce qui vérifie le terme constant.
+
+Par exemple, pour $M=64$, $N=4$, $Q=4$, les blocs de cache contiennent 16 clés. Les trois niveaux lisent chacun 64 clés et en écrivent 64, soit 384 mouvements de clés ou 96 transferts de pages. Le rapport compte bien les deux sens au début de son calcul, mais sa formule finale en éléments perd le facteur 2.
 
 ### Question 16 · Utiliser toutes les pages disponibles
 

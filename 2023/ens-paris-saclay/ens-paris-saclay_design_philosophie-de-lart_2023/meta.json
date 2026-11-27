@@ -1,0 +1,138 @@
+{
+  "slug": "ens-paris-saclay_design_philosophie-de-lart_2023",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Philosophie de l’art",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "intitule": "Peut-on dire de même que l’objet du design enveloppe sa genèse ?",
+  "intitule_editorial": false,
+  "questions": 1,
+  "duree_heures": 4,
+  "date_revision": "2026-11-26",
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2023_Sujet_ecrit_Philo_Design.pdf",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2023_Design_rapport_ecrit_Dissertation_Philo.pdf",
+    "notice": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/CONCOURS_2023/2023_Notice_interENS.pdf",
+    "sujet_sha256": "6c39c61d9011ab25adc9892ca954147633bbbd1598310666b5bf638a8996f974",
+    "rapport_sha256": "c0ea3f33098837c838ed37a14c2f5ba430610b1b206305ed249ab6e5a2ea442a",
+    "page_pdf_sujet": 1,
+    "consigne_imprimee": "Peut-on dire de même que l’objet du design enveloppe sa genèse ?",
+    "reference_imprimee": "Gilbert Simondon, Du mode d’existence des objets techniques, Paris, Aubier 1958, p. 22.",
+    "index_annales": "https://ens-paris-saclay.fr/node/9875",
+    "lien_errone_index": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2023_Sujet_ecrit_TechnoDesign.pdf",
+    "localisation": "Le fichier du sujet trouvé dans le même répertoire institutionnel que le sujet d’histoire porte la garde Design 2023 et la question confirmée par le rapport. La rubrique Philosophie du site rattache par erreur le PDF de techno-design.",
+    "references": [
+      "https://www.thonet.de/en/magazine/history-brand/detail/225-years-of-michael-thonet",
+      "https://collection.cnap.fr/artwork/enzo-mari-sedia-1-140000000834564"
+    ]
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2023_Sujet_ecrit_Philo_Design.pdf",
+      "sha256": "6c39c61d9011ab25adc9892ca954147633bbbd1598310666b5bf638a8996f974",
+      "pages": 1,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "326719485d5133f68665e19d2f561c3a06f683db85eebcfb8ab1201909ddac25"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2023_Design_rapport_ecrit_Dissertation_Philo.pdf",
+      "sha256": "c0ea3f33098837c838ed37a14c2f5ba430610b1b206305ed249ab6e5a2ea442a",
+      "pages": 4,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "81c97f8d20a7500bb4e024ca1efcc3a72d35e237b44f1f62dcc221c27e78357b"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "3e7b5fa8752ecc54d91007e30c89a6716aed2462fd59dda1fe221c994ab6c617"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "6c4ceb2a8d3e43966ad712115941b9ed64623998f01ff53799c532ae4ba1a63d"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "18ba3100a6d84408c667545fb508a549d5cc617dc52ade7861f3fa9315cd4f44"
+        }
+      ]
+    },
+    "notice": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/CONCOURS_2023/2023_Notice_interENS.pdf",
+      "sha256": "9e6e62ab0e991e7b4a033f12af212cdc432cd3ec6fe240112f3d36759f3d7b9a",
+      "pages": 48,
+      "pages_verifiees": [
+        {
+          "numero": 38,
+          "rendu_sha256": "acf8ad84c8b0f600fb6d29b7508974138daca9ddcb9c6d36f57896b3bffaacd6"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "fichier": "figures/genese.svg",
+      "question": "Dissertation",
+      "legende": "Trois façons de retrouver la genèse dans une chaise."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "agent": "x_hist_1986",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction sur le feuillet authentifié de la dissertation et de cinq indications de méthode, avec un schéma conceptuel dans chaque édition."
+    },
+    {
+      "phase": "autocontrole",
+      "fournisseur": "codex",
+      "agent": "x_hist_1986",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture sur la page du sujet, le rapport de quatre pages et le calendrier inter-ENS. Contrôle des exemples Thonet et Mari sur les notices de Thonet et du CNAP. Vérification de la dissertation et des schémas dans les deux PDF."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 1,
+        "consigne": "Peut-on dire de même que l’objet du design enveloppe sa genèse ?"
+      }
+    ],
+    "annexes_sujet": [],
+    "pages_blanches": [],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

@@ -6,6 +6,12 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+**Couverture vérifiée.** Les sept documents du dossier sont traités dans les deux éditions. Les dénominateurs des départs et de l’hébergement, les quatre pyramides de nuitées, les intentions et les deux tableaux de loisirs ont été contrôlés. Les deux terrains de village de vacances et les trois groupes de l’ethnographie de la plage sont distingués.
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## Les pratiques touristiques
@@ -24,15 +30,26 @@ Anne-Catherine Wagner observe la place du voyage dans l’éducation des classes
 
 Les villages de vacances étudiés par Bertrand Réau (doc. 7) offrent des services comparables en apparence, mais accueillent des clientèles différentes. Hors vacances, 69,6 % des vacanciers du Club Med déclarent aller au restaurant lorsqu’ils sortent le soir, contre 48,7 % au VVF. L’écart de 20,9 points concerne une pratique ordinaire observée chez des personnes classées par lieu de séjour. Il invite à chercher comment la clientèle se sélectionne. L’âge, le revenu, les habitudes de loisirs et l’offre du lieu peuvent ensuite expliquer conjointement les activités pratiquées pendant le séjour.
 
+Les deux tableaux du document 7 permettent de préciser la sélection. Pendant le séjour, 32,6 % des enquêtés du Club Med étudié en Sicile jouent au tennis, contre 9,5 % au VVF étudié sur la Côte d’Azur. Hors séjour, les taux sont de 21,7 % et 8,5 %. L’écart entre clientèles passe de 13,2 points dans la vie ordinaire à 23,1 points pendant le séjour. On compare ici deux lieux et deux clientèles de ménages avec enfant(s). Leur composition sociale, les installations et le coût peuvent intervenir ensemble.
+
 ### Une même pratique prend des sens différents selon le public de retour
 
 Sur la plage algérienne de Capritour, Jennifer Bidet (doc. 2) compare notamment de jeunes descendants d’immigrés résidant en France et des familles algériennes aisées. Pour les premiers, rentrer bronzé en France peut signifier que l’on a eu de vraies vacances. Pour d’autres, une peau plus claire est valorisée dans une hiérarchie locale où intervient le colorisme. Les deux groupes partagent un espace sans partager le public auquel la pratique s’adresse. Le corps rend visible un déplacement, mais sa valeur dépend des classements qui attendent les vacanciers à leur retour.
 
+Un troisième groupe éclaire la comparaison de Bidet. Les femmes de milieu populaire qu’elle évoque sont rencontrées sur des plages publiques et disposent moins souvent des moyens et de la liberté nécessaires pour fréquenter le complexe privé. Même dans une enquête qui observe finement les corps présents, le prix et les normes familiales ont déjà sélectionné qui peut apparaître sur la plage observée.
+
 Ainsi, compter les départs permet de repérer une privation sans décrire ce que l’on apprend, affirme ou transmet en voyage. Inversement, les observations sur la plage ou dans un lycée ne permettent pas d’estimer à elles seules la fréquence de ces pratiques dans toute la population. L’intérêt du dossier est de relier l’accès matériel à des usages et à des jugements socialement situés.
 
-![Hébergement chez des parents ou amis en 1989](figures/lecture-des-donnees.svg)
+![Figure 1 — Hébergement chez des parents ou amis en 1989](figures/lecture-des-donnees.svg)
+
+Le tableau 99 répartit le nombre de séjours. Un ménage qui fait trois séjours peut être compté trois fois. Pour étudier l’accès au départ, il faudrait revenir à une base de personnes ou de ménages qui inclut les non-partants.
 
 ## Questions du jury
+
+> [!INDICATION]
+> Peut-on déduire des pyramides de nuitées que chaque femme de 20 ans a prolongé ses vacances entre 1979 et 2004 ?
+
+Les journées cumulées des femmes de 20 ans passent de 6,2 à 6,6 millions, celles des hommes de 4,7 à 5,8 millions. L’écart entre les deux groupes se réduit de 1,5 à 0,8 million. Les effectifs des générations, la proportion de partants et les nuitées par partant sont trois composantes distinctes du volume publié.
 
 > [!INDICATION]
 > Peut-on calculer la fraction approximative des enfants partis ayant séjourné à la mer ?

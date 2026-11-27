@@ -1,0 +1,307 @@
+{
+  "slug": "banque-pt_pt_maths-c_2022",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths C",
+    "intitule_officiel": "Épreuve de Mathématiques C",
+    "annee": 2022
+  },
+  "questions": 36,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2022/math_c_2022_pt.pdf",
+    "sujet_sha256": "fc3d229fb0c149d5227022e31602bc5c312efc8e4ca71b2fa431dd6c28e709b2",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2022/rapport_math_c_ecrit_2022.pdf",
+    "rapport_jury_sha256": "472189acf75372afc4887cf7dc8be29b197296ee3ebdec48496ecebe07931d33",
+    "pages_rapport": 12,
+    "grille_ecoles": "https://www.banquept.fr/documents/livret/2022/Livret_PT_2022.pdf#page=13",
+    "grille_sha256": "a3e4b9bf97bbd0bc5e1bb35ca0e750bee426010a41a256e1dd1dd43f8e88bf2f",
+    "page_grille": 13,
+    "usage_coefficients": {
+      "X": "admissibilité",
+      "ENS Paris-Saclay": "admissibilité",
+      "ENS Rennes": "admissibilité"
+    },
+    "coefficients": {
+      "X": 6,
+      "ENS Paris-Saclay": 3,
+      "ENS Rennes": 3
+    }
+  },
+  "figures": [
+    {
+      "question": "P.4",
+      "fichier": "figures/tangente-arctangente.svg",
+      "legende": "Les deux graphes sont symétriques par rapport à la droite y = x. La planche séparée conserve 2 cm par unité à l’impression à 100 %."
+    },
+    {
+      "question": "III.3.b",
+      "fichier": "figures/integrales-de-racines.svg",
+      "legende": "Les deux intégrales de puissances fractionnaires, de part et d’autre de π/4, convergent vers la même valeur par des côtés opposés."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "P.1",
+      "P.2",
+      "P.3",
+      "P.4",
+      "P.5",
+      "I.1.a",
+      "I.1.b",
+      "I.1.c",
+      "I.2.a",
+      "I.2.b",
+      "I.2.c",
+      "I.2.d",
+      "I.2.e",
+      "II.1.a",
+      "II.1.b",
+      "II.2.a",
+      "II.2.b",
+      "II.2.c",
+      "II.2.d",
+      "III.1.a",
+      "III.1.b",
+      "III.1.c",
+      "III.1.d",
+      "III.2.a",
+      "III.2.b",
+      "III.2.c",
+      "III.2.d",
+      "III.2.e",
+      "III.2.f",
+      "III.3.a",
+      "III.3.b",
+      "IV.1",
+      "IV.2",
+      "IV.3",
+      "IV.4.a",
+      "IV.4.b"
+    ],
+    "pages_du_sujet": 8,
+    "pages_pdf_des_questions": {
+      "P.1": 2,
+      "P.2": 2,
+      "P.3": 2,
+      "P.4": 2,
+      "P.5": 2,
+      "I.1.a": 2,
+      "I.1.b": 2,
+      "I.1.c": 2,
+      "I.2.a": 2,
+      "I.2.b": 2,
+      "I.2.c": 3,
+      "I.2.d": 3,
+      "I.2.e": 3,
+      "II.1.a": 3,
+      "II.1.b": 3,
+      "II.2.a": 3,
+      "II.2.b": 3,
+      "II.2.c": 4,
+      "II.2.d": 4,
+      "III.1.a": 4,
+      "III.1.b": 4,
+      "III.1.c": 4,
+      "III.1.d": 4,
+      "III.2.a": 4,
+      "III.2.b": 4,
+      "III.2.c": 4,
+      "III.2.d": 4,
+      "III.2.e": 4,
+      "III.2.f": 5,
+      "III.3.a": 5,
+      "III.3.b": 5,
+      "IV.1": 5,
+      "IV.2": 5,
+      "IV.3": 5,
+      "IV.4.a": 6,
+      "IV.4.b": 6
+    },
+    "repere_par_question": [
+      {
+        "question": "P.1",
+        "page_pdf": 2
+      },
+      {
+        "question": "P.2",
+        "page_pdf": 2
+      },
+      {
+        "question": "P.3",
+        "page_pdf": 2
+      },
+      {
+        "question": "P.4",
+        "page_pdf": 2
+      },
+      {
+        "question": "P.5",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.1.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.1.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.1.c",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.2.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.2.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.2.c",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.2.d",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.2.e",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.1.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.1.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.2.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.2.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.2.c",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.2.d",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.1.a",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.1.b",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.1.c",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.1.d",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.2.a",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.2.b",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.2.c",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.2.d",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.2.e",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.2.f",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.3.a",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.3.b",
+        "page_pdf": 5
+      },
+      {
+        "question": "IV.1",
+        "page_pdf": 5
+      },
+      {
+        "question": "IV.2",
+        "page_pdf": 5
+      },
+      {
+        "question": "IV.3",
+        "page_pdf": 5
+      },
+      {
+        "question": "IV.4.a",
+        "page_pdf": 6
+      },
+      {
+        "question": "IV.4.b",
+        "page_pdf": 6
+      }
+    ],
+    "precision": "Garde 079, feuille de papier millimétré à rendre. Questions aux pages 2–6, page 7 blanche puis colophon page 8. La comparaison finale porte sur 2 B₂ et 4 B₄, dont le second est négatif."
+  },
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Lecture des 8 pages du sujet, du rapport spécifique de 12 pages et de la grille applicable page 13. Rédaction des 36 réponses et des indications, vérification des figures. Garde 079, feuille de papier millimétré à rendre. Questions aux pages 2–6, page 7 blanche puis colophon page 8. La comparaison finale porte sur 2 B₂ et 4 B₄, dont le second est négatif. Le rapport, pages 5–6 et 10–12, souligne la justification des changements de variable, la positivité stricte de la constante dans l’équivalent et l’identification des coefficients par unicité."
+    }
+  ],
+  "planches_impression": [
+    {
+      "fichier": "planches/trace-echelle.svg",
+      "format": "A4 paysage",
+      "echelle_cm_par_unite": 2,
+      "impression": "100 %",
+      "lien_lecteurs": "https://raw.githubusercontent.com/knoel99/corriges-concours/9ff54cac1631b8c479f3ae657dbb042bbc41edc5/2022/banque-pt/banque-pt_pt_maths-c_2022/planches/trace-echelle.svg",
+      "commit_source": "9ff54cac1631b8c479f3ae657dbb042bbc41edc5",
+      "sha256_source": "eb9f7c47eaa5ba80ac329479f904dcd6e8c4ee3e6a1b7ad9a50b3f0aeaef187f"
+    }
+  ]
+}

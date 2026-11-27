@@ -4,7 +4,11 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le problème construit le gradient conjugué pour résoudre un système symétrique défini positif. Le nombre de composantes spectrales actives fixe son rang d’arrêt exact. [Sujet officiel](https://www.ens.psl.eu/sites/default/files/19_psi_math_sujet.pdf)
+
+On note $\bar x=A^{-1}b$, $r_k=b-Ax_k$ et $e_k=x_k-\bar x$. La norme d’énergie vérifie $\|u\|_A^2=\langle Au,u\rangle$. La vérification suit les questions du sujet officiel. Le rapport écrit de mathématiques de cette session reste introuvable dans les archives consultées.
 
 ## I. Normes et calcul spectral
 
@@ -118,6 +122,8 @@ On lit $H_k$ pour le symbole $K_k$ imprimé ici, lequel n’a pas été défini.
 
 Chaque étape ajoute au plus un générateur. Avant $m$, chaque inclusion est stricte, donc $\dim H_k=k$ pour $0\le k\le m$. À l’égalité, $AH_m\subset H_{m+1}=H_m$. Toutes les puissances suivantes de $A$ appliquées à $r_0$ restent donc dans $H_m$, ce qui impose $H_k=H_m$ et $\dim H_k=m$ dès $k\ge m$.
 
+On peut repérer le premier arrêt sans calculer tous les espaces. Avant lui, les $k$ colonnes de la matrice $[r_0\ Ar_0\ \ldots\ A^{k-1}r_0]$ sont indépendantes. Dès que la colonne suivante dépend des précédentes, appliquer $A$ à cette relation ramène toutes les colonnes ultérieures dans le même espace.
+
 ### Question 8a
 
 > [!INDICATION]
@@ -135,6 +141,8 @@ Si $Ar_0=\lambda r_0$, toutes ses puissances sont colinéaires à $r_0\ne0$. Ain
 #### Solution
 
 Posons $u_i=p_{F_i}r_0$ et $I=\{i:u_i\ne0\}$. Comme $A^jr_0=\sum_{i\in I}\lambda_i^ju_i$, les espaces sont contenus dans $\operatorname{Vect}(u_i:i\in I)$. Réciproquement, le polynôme de Lagrange $P_i$ de degré au plus $|I|-1$ valant $1$ en $\lambda_i$ et $0$ aux autres nœuds actifs satisfait $P_i(A)r_0=u_i$. Ces vecteurs non nuls et orthogonaux sont indépendants. Il en résulte $m=|I|\le d$.
+
+Explicitement, $P_i(X)=\prod_{j\in I\setminus\{i\}}(X-\lambda_j)/(\lambda_i-\lambda_j)$. Le produit vide vaut un, ce qui comprend le cas d’un seul espace propre actif. Même si une valeur propre a multiplicité supérieure à un, les puissances de $A$ n’y engendrent que la droite portée par $u_i$.
 
 ### Question 8c
 
@@ -255,6 +263,8 @@ Pour $B=I+AQ(A)$, 6 et la décomposition spectrale donnent $A^{1/2}B=BA^{1/2}$. 
 
 Les polynômes $1+XQ(X)$ décrivent exactement $\Lambda_k$. Pour $R\in\Lambda_k$, $R(A)$ est symétrique et $\|R(A)\|_{\rm op}=\max_i|R(\lambda_i)|\le\max_{[\lambda_1,\lambda_N]}|R|$ par 3 et 5. Le minimum sur $\Lambda_k$ fournit la borne. Il existe car la norme uniforme sur cet intervalle non réduit à un point est une norme sur l’espace de dimension finie des polynômes de degré au plus $k$, et $\Lambda_k$ y est fermé.
 
+Pour détailler l’existence, la constante $1$ fournit un concurrent de norme uniforme $1$. On peut donc choisir une suite minimisante dans la boule de rayon $2$. En dimension finie, une sous-suite converge dans cette norme. La condition $R(0)=1$ passe à la limite par continuité de l’évaluation des polynômes de degré borné, même si $0$ est extérieur à l’intervalle spectral.
+
 ### Question 19a
 
 > [!INDICATION]
@@ -291,7 +301,7 @@ Pour $t\ge0$, $\cosh((k+1)t)+\cosh((k-1)t)=2\cosh(t)\cosh(kt)$. Les valeurs init
 
 Écrivons $a=\lambda_1$, $b=\lambda_N$. Comme $0<a<b$, $-(b+a)/(b-a)<-1$ et 20 donne un dénominateur non nul pour $\omega_k$. La transformation $t\mapsto(2t-a-b)/(b-a)$ envoie $[a,b]$ sur $[-1,1]$ et zéro sur $-(b+a)/(b-a)$. Ainsi $Q_k(0)=1$, $\deg Q_k=k$ et $Q_k\in\Lambda_k$. Sur l’intervalle spectral, $|T_k|\le1$ et l’égalité est atteinte en $t=b$. Le maximum vaut donc $|\omega_k|$.
 
-![Figure 1 — Pour des valeurs propres comprises entre 1 et 5, le polynôme de degré trois conserve la valeur un en zéro et oscille entre deux bornes opposées sur l’intervalle grisé.](figures/polynome-spectral.svg)
+![Pour des valeurs propres comprises entre 1 et 5, le polynôme de degré trois conserve la valeur un en zéro et oscille entre deux bornes opposées sur l’intervalle grisé.](figures/polynome-spectral.svg)
 
 ### Question 22
 
@@ -324,6 +334,8 @@ En choisissant $Q_k$ dans 18, on trouve $\|x_k-\bar x\|_A\le2\|e_0\|_A[(\sqrt\ka
 
 Les $r_0,Ar_0,\ldots,A^{m-1}r_0$ forment une base de $H_m$ par 7c. Appliquer Gram–Schmidt à ces vecteurs dans cet ordre, pour $(\cdot,\cdot)_A$, fournit des $p_0,\ldots,p_{m-1}$ non nuls et mutuellement $A$-orthogonaux. À chaque rang l’orthogonalisation conserve l’espace engendré par le préfixe, qui est précisément $H_k$.
 
+Pour (i), au rang $j$ le coefficient du vecteur $A^j r_0$ dans son orthogonalisé vaut un. Le changement de famille sur tout préfixe est ainsi triangulaire inversible. Pour (ii), chaque terme soustrait est la projection selon $(\cdot,\cdot)_A$ sur une direction précédente, d’où $\langle Ap_i,p_j\rangle=0$ pour $i<j$.
+
 ### Question 25
 
 > [!INDICATION]
@@ -355,6 +367,8 @@ Pour $k+1<m$, vérifions la conjugaison de $p_{k+1}=r_{k+1}+\beta_kp_k$. Quand $
 
 Dans le pas précédent, $x_{k+1}=x_k+\alpha_kp_k\in x_0+H_{k+1}$. Son résidu est orthogonal à $H_{k+1}$, donc son erreur est $A$-orthogonale à cet espace directeur. La propriété de projection de 14 prouve que c’est l’unique minimiseur sur $x_0+H_{k+1}$. Cela établit $\widetilde x_j=x_j$ jusqu’à $j=m$, y compris le rang zéro où l’espace affine est réduit à $x_0$.
 
+Le point de départ est le sous-espace affine $x_0+H_k$, écrit à la question 13. Sur cette translation, pour $h\in H_k$, la variation est $J(x_k+h)-J(x_k)=-\langle r_k,h\rangle+\tfrac12\langle Ah,h\rangle$. L’annulation du premier terme et la positivité du second donnent une vérification directe du minimum.
+
 ### Question 26(iii)
 
 > [!INDICATION]
@@ -372,3 +386,7 @@ Au départ $\widetilde r_0=b-A\widetilde x_0$. L’identité persiste car $b-A(\
 #### Solution
 
 Lorsque $k+1<m$, $r_{k+1}\ne0$ par 15 et (ii)–(iii). Il appartient à $H_{k+2}$ et est orthogonal à $H_{k+1}$. Ainsi $p_{k+1}=r_{k+1}+\beta_kp_k$ appartient à $H_{k+2}$ et reste hors de $H_{k+1}$. Il complète donc la base précédente en une base, car les dimensions sont $k+1$ et $k+2$. Avec la conjugaison établie en (i), cela ferme l’induction. À la dernière mise à jour $r_m=0$, et aucune division par $\|r_m\|^2$ n’est requise.
+
+Prenons $A=\operatorname{diag}(1,4)$, $b=(1,1)$ et $x_0=0$. Alors $p_0=r_0=(1,1)$, $\alpha_0=2/5$ et $x_1=(2/5,2/5)$. Le résidu devient $r_1=(3/5,-3/5)$, orthogonal à $r_0$. Comme $\beta_0=9/25$, on trouve $p_1=(24/25,-6/25)$ puis $\alpha_1=5/8$. Le point $x_2=(1,1/4)$ vérifie bien $Ax_2=b$. On a aussi $\langle Ap_0,p_1\rangle=24/25-24/25=0$.
+
+![Les ellipses sont les niveaux de la fonction quadratique. Le premier pas minimise cette fonction sur la droite portée par le résidu initial. Le deuxième atteint le centre des ellipses.](figures/trajectoire-gradient-conjugue.svg)

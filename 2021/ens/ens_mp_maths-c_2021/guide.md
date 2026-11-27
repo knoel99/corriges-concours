@@ -6,6 +6,8 @@
 
 **Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
 L’épreuve inter-ENS du 16 avril 2021 dure quatre heures. Les questions 2 à 13 classent des fractions rationnelles à partir de leurs valeurs sur le cercle puis sur les racines de l’unité. Les questions 14 à 29 bornent le nombre de points d’un réseau sur un graphe transcendant. Ces deux parties sont indépendantes. Les 29 questions de l’énoncé correspondent à 39 réponses avec leurs subdivisions. [Sujet officiel](https://www.ens.psl.eu/sites/default/files/2021_mp_sujet_mathc.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/21_mp_rap_emathc.pdf)
@@ -214,6 +216,8 @@ On a $\zeta_n-1=2\pi i/n+O(n^{-2})$ et $P(z)=P'(1)(z-1)+O(|z-1|^2)$ au voisinage
 Écrivons $F=P/Q$ avec $Q(1)\ne0$. Comme $(P-Q)(1)=0$, la question 8a appliquée à $P-Q$ donne
 $$n_j\bigl(F(\zeta_{n_j})-1\bigr)\longrightarrow2\pi i\,\frac{P'(1)-Q'(1)}{Q(1)}=2\pi i F'(1).$$
 La fonction $h(t)=(e^{2\pi i t}-1)/(2\pi i t)$ se prolonge par $h(0)=1$. D'après 7, $h(q_j)\to1$. En écrivant $F(\zeta_{n_j})-1=2\pi i q_j h(q_j)$, on obtient $n_jq_j\to F'(1)$, y compris si certains $q_j$ s'annulent. Cette limite est réelle.
+
+Avec $F(X)=X^{-2}$, le représentant de l’argument de $F(\zeta_n)$ est $q=-2/n$ pour $n\ge5$. Le produit $nq=-2$ donne exactement $F'(1)$. Dans le plan complexe, $n(F(\zeta_n)-1)=n(e^{-4\pi i/n}-1)$ tend vers $-4\pi i$, ce qui vérifie également le facteur $2\pi i$.
 
 ### Question 9
 

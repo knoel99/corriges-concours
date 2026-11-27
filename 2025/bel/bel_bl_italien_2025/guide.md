@@ -4,9 +4,13 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Sujet officiel](https://www.ens.psl.eu/sites/default/files/2025_blses_epreuve_a_option_sujet_italien.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_ecrit_italien_option.pdf)
 
 ## Construire le commentaire
+
+L’article est daté du 25 novembre. Comment citer les deux décomptes sans les additionner ni en faire des bilans de fin d’année ?
 
 Distinguer le temps de la représentation et celui de la réalisation. *Comizi d’amore* sort en 1964 ; la scène est située par le sujet sur une plage toscane, vraisemblablement à l’été 1963. Le film de Cortellesi est de 2023 et met en scène le lendemain de la guerre. Le photogramme établit la position des personnages ; il ne montre pas comment le plat est tombé.
 
@@ -26,7 +30,7 @@ Nel film di Cortellesi il mezzo cambia. Alle spalle di Delia quasi tutti guardan
 
 **Che cosa consente una conquista giuridica?** Giorgio Frasca Polara racconta di Iotti presidente della Camera nel 1979, abbracciata da alcune suore con stupore di un compagno. La sua battuta, che ricorda al compagno come anche loro siano donne, interrompe la divisione apparentemente ovvia fra comuniste e cattoliche. Lo stesso principio trova un banco di prova più esigente nel dibattito della Costituente. Se l'uguaglianza vale davvero, l'accesso delle donne ai gradi più alti della magistratura non può dipendere da pregiudizi sulla pretesa fragilità del loro corpo. Qui la testimone è una protagonista che argomenta con le parole della futura Costituzione; altrove è il biografo a precisare che preferiva parlare di emancipazione piuttosto che di liberazione. Il ritratto non va appiattito sull'etichetta che Iotti non rivendicava. E tra il riconoscimento del principio e l'ingresso effettivo delle donne nella magistratura, nel 1963, passa un tempo che racconta quanto lavoro rimane dopo un voto.
 
-La discussione riportata da Camilli nel novembre 2024 illumina quel divario da un altro lato. Alla presentazione della fondazione dedicata a Giulia Cecchettin, il ministro Valditara invoca la riforma del diritto di famiglia del 1975 per datare la fine del patriarcato come fenomeno giuridico. Non nega che esistano comportamenti maschilisti. La giornalista, però, interroga ciò che questa definizione lascia fuori. La famiglia di Giulia ha trasformato una perdita in un impegno collettivo; i dati del ministero e quelli di Non una di meno vengono attribuiti alle rispettive fonti e non misurano automaticamente la stessa categoria. Una cerimonia alla Camera può accogliere istanze politiche e insieme offrire una tribuna a chi ne ridimensiona il significato.
+La discussione riportata da Camilli nel novembre 2024 illumina quel divario da un altro lato. Alla presentazione della fondazione dedicata a Giulia Cecchettin, il ministro Valditara invoca la riforma del diritto di famiglia del 1975 per datare la fine del patriarcato come fenomeno giuridico. Non nega che esistano comportamenti maschilisti. La giornalista, però, interroga ciò che questa definizione lascia fuori. La famiglia di Giulia ha trasformato una perdita in un impegno collettivo. Camilli riferisce le cifre disponibili il 25 novembre 2024. I femminicidi sono 98 secondo il ministero e 104 secondo l’osservatorio di Non una di meno. Sommare i due numeri significherebbe contare due volte casi che le rilevazioni cercano entrambe di registrare. Il testo non spiega quali casi producano lo scarto. Una cerimonia alla Camera può accogliere istanze politiche e insieme offrire una tribuna a chi ne ridimensiona il significato.
 
 **Chi può parlare a nome di altre donne?** Nel romanzo di Sapienza Modesta cerca volti concreti per resistere alle parole di Joyce sulle donne. La memoria non le offre un'immagine consolante di solidarietà spontanea: riaffiorano anche giudizi che svalutano le compagne. L'apostrofe alle donne che dispongono di cultura e libertà denuncia la possibilità che un'avanzata individuale si paghi accettando i criteri del potere esistente. Le mani segnate dalla varecchina e quelle di chi lavora in fabbrica legano la differenza di genere alla divisione sociale dei lavori. A queste figure risponde da lontano la mano che Delia tende verso il piatto. Ma nel romanzo è una voce interiore travagliata a mettere in guardia contro l'oblio; nel film è chi guarda a dover interpretare il silenzio.
 

@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Partie I · Construire des labyrinthes
 
 ### Question 1 · Mélange croissant de Knuth
@@ -144,27 +146,22 @@ Initialement la source, de distance 0, est seule. Toute première découverte de
 
 ### Question 16 · Compter le minimum de monstres
 
+**Étape 3.** Initialiser la distance de la source et l’insérer dans la file vide.
+
 ```ocaml
-let minimum_monstres g monstre src dst =
-  let distance = Array.make g.n (-1, -1) in
-  let f = file_vide g.n in
-  distance.(src) <- ((if monstre.(src) then 1 else 0), 0);
-  ajoute_debut f src;
-  let rec loop () =
-    let v = retire_debut f in
-    if v = dst then distance.(v)
-    else begin
-      let m, longueur = distance.(v) in
-      List.iter (fun w ->
-        if distance.(w) = (-1, -1) then begin
-          let cout = if monstre.(w) then 1 else 0 in
-          distance.(w) <- (m + cout, longueur + 1);
-          if monstre.(w) then ajoute_fin f w else ajoute_debut f w
-        end) g.adj.(v);
-      loop ()
-    end
-  in
-  loop ()
+distance.(src) <- ((if monstre.(src) then 1 else 0), 0);
+ajoute_debut f src;
+```
+
+**Étape 4(c).** Dans le corps de la fonction passée à `List.iter`, traiter le voisin `w` de `v` lors de sa première découverte.
+
+```ocaml
+if distance.(w) = (-1, -1) then begin
+  let m, longueur = distance.(v) in
+  let cout = if monstre.(w) then 1 else 0 in
+  distance.(w) <- (m + cout, longueur + 1);
+  if monstre.(w) then ajoute_fin f w else ajoute_debut f w
+end
 ```
 Les sommets à coût de monstre inchangé sont traités avant la prochaine strate. L'entrée dans un même voisin ajoute le même nombre de monstres quel que soit le prédécesseur. Le couple enregistre aussi la longueur du chemin qui le découvre. La file de capacité $n$ suffit puisque chaque sommet y entre une fois.
 
@@ -195,6 +192,8 @@ Prenons les voisins par numéros croissants. La tête de chaque file se trouve �
 | Retrait 13 | 14 ← (1, 5) | 11,14 | ∅ | 9,10 |
 | Retrait 11 et arrêt | — | 14 | ∅ | 9,10 |
 
+Lors de la promotion, 2(a)i déplace d’abord $4,5,3,6$ dans les sources courantes, puis 2(a)ii met seulement $4$ dans la file active. Après le retrait de $4$, 2(d) transfère $5$ avant que 2(e) ajoute $8$. Après le retrait de $5$, 2(d) transfère $3,6$ derrière $8$, puis 2(e) place $9$ dans les sources suivantes.
+
 La valeur rendue est $(1,5)$. Par exemple $0,1,2,3,7,11$ réalise ce coût. En retirant les monstres, la composante de $0$ ne contient pas $11$. En outre les coordonnées sur la grille imposent au moins cinq arêtes entre les deux cases.
 
 ![Les cases teintées portent un monstre. Le chemin vert atteint 11 en cinq arêtes en passant seulement par le monstre en 3.](figures/q18-chemin-optimal.svg)
@@ -204,8 +203,8 @@ La valeur rendue est $(1,5)$. Par exemple $0,1,2,3,7,11$ réalise ce coût. En r
 On maintient les propriétés suivantes avant chaque retrait, après un éventuel transfert.
 
 1. Les sommets découverts sont soit traités, soit dans exactement l'une des trois files. Chacun a reçu le coût d'un chemin l'atteignant. Tout sommet déjà traité a son coût minimal.
-2. Pendant la strate $m$, les éléments de la file active ont ce même nombre de monstres, avec des longueurs croissantes au sens large. Si la tête a longueur $\ell$, la file active ne contient que des longueurs $\ell$ ou $\ell+1$. Les sources courantes, toutes de strate $m$, sont ordonnées par longueur, et aucune n'a une longueur moindre que la tête active. Les sources suivantes, de strate $m+1$, sont elles aussi ordonnées par longueur.
-3. Le prochain sommet retiré a le coût minimal parmi les sommets découverts en attente. Les retraits sont ordonnés lexicographiquement. L'étape 2(d) intègre les sources courantes de longueur $\ell+1$ avant de poursuivre ce niveau. Si la file active est vide, on reprend au plus petit niveau courant encore disponible, et on ne promeut la strate suivante qu'une fois la strate courante épuisée.
+2. Pendant la strate $m$, les éléments de la file active ont ce même nombre de monstres, avec des longueurs croissantes au sens large. Si la tête a longueur $\ell$, la file active ne contient que des longueurs $\ell$ ou $\ell+1$. Les sources courantes, toutes de strate $m$, sont ordonnées par longueur. Celles qui y restent ont une longueur strictement supérieure à $\ell$. Les sources suivantes, de strate $m+1$, sont elles aussi ordonnées par longueur.
+3. Le prochain sommet retiré a le coût minimal parmi les sommets découverts en attente. Les retraits sont ordonnés lexicographiquement. L’étape 2(d) transfère toutes les sources courantes de longueur $\ell+1$ avant l’ajout des nouveaux voisins. Quand $\ell+1$ arrive en tête, toutes les sources de cette longueur sont donc déjà actives. Si la file active est vide, l’étape 2(a) y transfère toutes les sources courantes de longueur minimale. La strate suivante est promue une fois la strate courante épuisée.
 
 Initialement seule la source est en attente, de coût $(\mathbf1_{\rm monstre(src)},0)$. Depuis $(m,\ell)$, un voisin libre est placé à $(m,\ell+1)$ et un monstre à $(m+1,\ell+1)$. Cela conserve l'ordre spécifié. Pour justifier le **marquage dès la découverte** de $w$, observons que chaque arête entrante lui ajoute la même paire $(\mathbf1_{\rm monstre(w)},1)$. Un chemin strictement meilleur vers $w$ nécessiterait donc un prédécesseur de coût strictement inférieur à celui qui le découvre. Sur un tel chemin minimal, le premier sommet encore non traité aurait dû être découvert par son prédécesseur déjà traité et extrait plus tôt, par l'ordre de priorité. Cela contredit le choix courant. C'est la récurrence habituelle sur les retraits, renforcée ici par l'égalité des coûts entrants pour un même sommet. L'algorithme s'arrête à la destination, accessible par connexité, et y rend le coût minimal.
 

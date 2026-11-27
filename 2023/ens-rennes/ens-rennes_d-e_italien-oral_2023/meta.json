@@ -1,0 +1,58 @@
+{
+  "slug": "ens-rennes_d-e_italien-oral_2023",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Italien (oral)",
+    "annee": 2023,
+    "modalite": "oral"
+  },
+  "intitule": "Épreuve orale d’italien",
+  "questions": 1,
+  "redaction": "Présentation italienne du plan d’adaptation, distinction des observations et scénarios datés, mécanismes de transmission des risques aux transports, à l’agriculture et au tourisme. Trois relances résolues.",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/annales-oral-italien-d-e-2023_1698769099652-pdf",
+    "sujet_sha256": "a6b028b9fab6ce7232f0cc8087f825ac02387ee6660f6fe3bfbcd0f0a73522ad",
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2023-1"
+  },
+  "billets": [
+    {
+      "numero": 1,
+      "intitule": "Clima, l’Italia è più fragile",
+      "pages": [
+        1
+      ],
+      "support": "fascicule distribué",
+      "url": "https://www.ens-rennes.fr/medias/fichier/annales-oral-italien-d-e-2023_1698769099652-pdf#page=1"
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "fichier": "figures/dal-clima-al-danno.svg",
+      "legende": "Uno stesso aumento della temperatura diventa un danno diverso secondo ciò che viene esposto."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Présentation italienne du plan d’adaptation, distinction des observations et scénarios datés, mécanismes de transmission des risques aux transports, à l’agriculture et au tourisme. Trois relances résolues."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ],
+    "precision": "Le billet unique reproduit une adaptation d’un article de Manuela Perrone. Les relances sont proposées pour l’entraînement."
+  }
+}

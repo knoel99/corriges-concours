@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La feuille du 22 juin réunit 12 tickets de deux sujets. Le candidat dispose de 1 h 30 de préparation et indique au jury son choix au moment du passage. Il présente un seul sujet pendant 20 minutes, puis répond aux questions durant 10 minutes. Les deux possibilités de chaque ticket sont traitées ici. Chaque relance met à l’épreuve une distinction précise. Pour développer oralement les propositions, reprendre l’exemple, en faire varier une condition, puis expliquer comment cette variation modifie la réponse.
 
 ## Ticket 1
@@ -88,6 +90,8 @@ La démonstration d’Euclide suppose un nombre fini de nombres premiers dans un
 Pour la bibliothèque, statistiques de fréquentation, coûts et égalité d’accès éclairent une décision sans la rendre mathématiquement nécessaire. Une argumentation rationnelle expose ses hypothèses, répond aux objections et distingue un fait d’une priorité collective. Elle peut inclure une démonstration sur un point particulier, par exemple une borne budgétaire. L’opposition pertinente concerne le régime de justification et la force de la conclusion. L’argumentation n’est pas inférieure par principe : elle répond à des questions pratiques pour lesquelles la pluralité des raisons pertinentes ne forme pas un système déductif unique.
 
 ![Contrôler deux formes de raisonnement](figures/raisonnement.svg)
+
+Essayer l’exemple d’un produit augmenté de un qui soit composé. La démonstration résiste à cet essai dès lors qu’elle porte sur le diviseur premier, ce qui permet d’isoler l’étape nécessaire de l’argument.
 
 > [!INDICATION]
 > Une démonstration dispense-t-elle de convaincre ?

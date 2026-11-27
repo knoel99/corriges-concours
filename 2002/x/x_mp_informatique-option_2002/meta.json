@@ -1,0 +1,78 @@
+{
+  "slug": "x_mp_informatique-option_2002",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Informatique (option)",
+    "annee": 2002,
+    "modalite": "écrit"
+  },
+  "intitule": "Paiement exact, portefeuille borné et systèmes monétaires canoniques",
+  "questions": 22,
+  "redaction": "Douze questions du cahier. Programmes de paiement à stock borné, preuves sur le témoin minimal, test cubique de canonicité et vérification du système européen.",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/x_option-info_mp_2002.pdf",
+    "sha256_sujet": "7d501db68625ac371ee00fe5adea0a1378f90c1e38de3002d7bfa9b0eae8e2e3",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.wikiprepa.fr/concours/data/x_option-info_mp_2002.pdf",
+        "sha256": "7d501db68625ac371ee00fe5adea0a1378f90c1e38de3002d7bfa9b0eae8e2e3"
+      },
+      {
+        "role": "autre exemplaire",
+        "url": "https://www.doc-solus.fr/prepa/sci/adc/pdf/enonces.pdf/2002/MP_INFO_X_1_2002.enonce.pdf",
+        "sha256": "1c79beb86765773efed38ce3ef0bbc5c4e939989cde2d05045dd0be6307624a3"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "question": "8",
+      "fichier": "figures/paiement-48.svg",
+      "legende": "Deux façons de payer 48 unités dans l’ancien système britannique.",
+      "numero": 1
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "arabe_mp_pc_2011_2014",
+      "agent": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Douze questions du cahier. Programmes de paiement à stock borné, preuves sur le témoin minimal, test cubique de canonicité et vérification du système européen."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2.a",
+      "2.b",
+      "3.a",
+      "3.b",
+      "4",
+      "5.a",
+      "5.b",
+      "6",
+      "7.a",
+      "7.b",
+      "8",
+      "9",
+      "10.a",
+      "10.b",
+      "10.c",
+      "11.a",
+      "11.b",
+      "11.c",
+      "12.a",
+      "12.b",
+      "12.c"
+    ]
+  }
+}

@@ -1,0 +1,700 @@
+{
+  "slug": "banque-pt_pt_physique-a_2012",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique A",
+    "annee": 2012,
+    "duree": "4 h",
+    "modalite": "écrit",
+    "code_garde": "037"
+  },
+  "questions": 71,
+  "redaction": "Proposition pédagogique non officielle, rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2012/phys_a_pt_2012.zip",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2012/rapport_phys_a_ecrit_2012.pdf",
+    "livret": "https://www.banquept.fr/documents/livret/2012/Livret_PT_2012.pdf#page=12"
+  },
+  "pieces_verifiees": {
+    "document_reponse": {
+      "url": "https://www.banquept.fr/documents/2012/phys_a_pt_2012.zip",
+      "sha256": "2f24eeed60314052e4db0cb770830e6c87d642a0cf838a97df3ae08cc325e7e9",
+      "pages": 2,
+      "fichier_banque": "ph_a_pt_2012/ph_a_pt_2012_doc_reponse.pdf",
+      "sha256_conteneur": "3666b5753aaeda83e8ef1c8f5bec9acd58d5a5fe5ad254c936cbe6d9429d6472",
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "610b3436008e1e156555b9e7ffd23143f7c85fd015233a1cc245f1ffd46e9718"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "e0b64d60678c2810cf12db62c54146da9bd4d386fa9d48e157ccaae696696633"
+        }
+      ]
+    },
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2012/phys_a_pt_2012.zip",
+      "sha256": "856365577d0e9e9ca3eebae741028a5fe0451f7364219ba882f65acfafb09aec",
+      "pages": 12,
+      "fichier_banque": "ph_a_pt_2012/ph_a_pt_2012_sujet.pdf",
+      "sha256_conteneur": "3666b5753aaeda83e8ef1c8f5bec9acd58d5a5fe5ad254c936cbe6d9429d6472",
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "ed8af9192d91d025942bb96a6d87898cd35e749eb709e681c306942cc0716a76"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "eda2cf502ba0bae65064dece89835f5823733b077bd223734d4bad714df14811"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "e2b5557b8d64a277377dfec471f45ab6d4b4d0a9cb1cc4351f8a2894d4150cd0"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "721a61865c92245f53326c25ff3105935c0b829b2932a550e5307a18682ba9e5"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "86cbd9d21dc64ba87d0bbda7498573e6efe4f755168b109c6100a0b1424edb4b"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "2dfc7ba4757ec354cc02b4b9a3d4dbec1442f2814505b26ce47fffbf5e934889"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "d6000d52463e3e5d7235def7ea3989fee4baea45abab4f0e42cc2bba9fd52c21"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "f67b4eabc50ea925bca7431ab8b00b828a4417a91b75dd51630d69aeae5dd5b5"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "c06da7658d10d3f6d9a64cba9f1deb8154255bd6efaa7ef33eeb825cc25ffb88"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "a3bc737061be1860a00d9068ab7dcd2539dcc0f38c1c00b635242add419d1977"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "4f5c5d22aa0eb432d4025850dc3ba43b04b88bead66fe69a9c216a99e812cd9f"
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2012/rapport_phys_a_ecrit_2012.pdf",
+      "sha256": "8ee9e8b19129cb28deafda082d16cb7b2e8c64ca3c6e73cbdf26e97b2b7606ac",
+      "pages": 3,
+      "fichier_banque": "rapport_phys_a_ecrit_2012.pdf",
+      "sha256_conteneur": "8ee9e8b19129cb28deafda082d16cb7b2e8c64ca3c6e73cbdf26e97b2b7606ac",
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "f1e318b98fcb7f201e0b347d3701a1bd0489fb8ba5c6a85a937bdfc9617f84a6"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "5adfd7308d7f39baa6831aad3bbbc25f1718ebedcad43b2f91bbe61817b232dc"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "97a3f9deb737cc8acc8702fd71db89164c168d5b238fe1bc493db071e948452d"
+        }
+      ]
+    },
+    "livret": {
+      "url": "https://www.banquept.fr/documents/livret/2012/Livret_PT_2012.pdf#page=12",
+      "sha256": "778c796c26e1a3f2558523fa548e8d4fe4c92c6e0265a53fc4b63bd98a8c5c62",
+      "pages": 72,
+      "pages_verifiees": [
+        {
+          "numero": 12,
+          "rendu_sha256": "a73c80f344dfda977c0689e8acb75b1bcd181a4992cc505ecd222d83d2a561c9"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "A.I.2.c",
+      "fichier": "figures/cadre-induction.svg",
+      "legende": "Vue dans le plan du cadre. Le champ électrique est parallèle à y et le champ magnétique sort de la feuille.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "A.II.2.d",
+      "fichier": "figures/diagramme-bode.svg",
+      "legende": "Diagramme de gain aux échelles du document-réponse. Pour un gain central de dix et un facteur de qualité de dix, le sommet atteint vingt décibels.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "A.II.3.c",
+      "fichier": "figures/spectres-modulation.svg",
+      "legende": "Exemple de spectres unilatéraux rapportés à leur porteuse, pour C égal à 0,4 et b égal à 2. Les deux bandes latérales sont atténuées dans le même rapport.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "B.II.1",
+      "fichier": "figures/coordonnees-cylindriques.svg",
+      "legende": "La projection H définit la distance à l’axe et l’angle azimutal. Les vecteurs radial, tangent et axial sont dessinés au point M.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "B.III.2.c",
+      "fichier": "figures/potentiel-cylindre.svg",
+      "legende": "Potentiel relatif à la surface, divisé par sa valeur relative sur l’axe. La parabole intérieure rejoint le profil logarithmique au rayon extérieur.",
+      "provenance": "Figure originale."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A.I.1.a",
+      "A.I.1.b",
+      "A.I.1.c",
+      "A.I.2.a",
+      "A.I.2.b",
+      "A.I.2.c",
+      "A.I.2.d",
+      "A.I.2.e",
+      "A.I.3",
+      "A.I.4.a",
+      "A.I.4.b",
+      "A.I.4.c",
+      "A.I.4.d",
+      "A.I.5.a",
+      "A.I.5.b",
+      "A.II.1.a",
+      "A.II.1.b",
+      "A.II.2.a",
+      "A.II.2.b",
+      "A.II.2.c",
+      "A.II.2.d",
+      "A.II.2.e",
+      "A.II.3.a",
+      "A.II.3.b",
+      "A.II.3.c",
+      "B.I.1",
+      "B.I.2.a",
+      "B.I.2.b",
+      "B.II.1",
+      "B.II.2",
+      "B.II.3",
+      "B.III.1",
+      "B.III.2.a",
+      "B.III.2.b",
+      "B.III.2.c",
+      "B.IV",
+      "C.I.1",
+      "C.I.2.a",
+      "C.I.2.b",
+      "C.I.2.c",
+      "C.I.2.d",
+      "C.II.1",
+      "C.II.2",
+      "C.III.1.a",
+      "C.III.1.b",
+      "C.III.1.c",
+      "C.III.2.a",
+      "C.III.2.b",
+      "C.III.2.c",
+      "D.I.1.a",
+      "D.I.1.b",
+      "D.I.1.c",
+      "D.I.1.d",
+      "D.I.1.e",
+      "D.I.1.f",
+      "D.I.2.a",
+      "D.I.2.b",
+      "D.I.2.c",
+      "D.I.2.d",
+      "D.I.2.e",
+      "D.II.1.a",
+      "D.II.1.b",
+      "D.II.2",
+      "D.II.3",
+      "D.III.1.a",
+      "D.III.1.b.α",
+      "D.III.1.b.β",
+      "D.III.1.c",
+      "D.III.2.a",
+      "D.III.2.b",
+      "D.III.2.c"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "annexes_imposees": [
+      "Document-réponse officiel, diagramme de Bode et tableau des composantes, page 1 du fichier autonome de deux pages ; verso sans question."
+    ],
+    "repere_par_question": [
+      {
+        "question": "A.I.1.a",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Vecteur d’onde"
+      },
+      {
+        "question": "A.I.1.b",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Dispersion de l’air assimilé au vide"
+      },
+      {
+        "question": "A.I.1.c",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Champs instantanés de l’onde"
+      },
+      {
+        "question": "A.I.2.a",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Induction dans le cadre"
+      },
+      {
+        "question": "A.I.2.b",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Orientation optimale"
+      },
+      {
+        "question": "A.I.2.c",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Repérage du cadre et des champs"
+      },
+      {
+        "question": "A.I.2.d",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Flux spatialement intégré"
+      },
+      {
+        "question": "A.I.2.e",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Valeur efficace exacte"
+      },
+      {
+        "question": "A.I.3",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Développement à petite taille"
+      },
+      {
+        "question": "A.I.4.a",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Phase locale et approximation uniforme"
+      },
+      {
+        "question": "A.I.4.b",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Amplitude magnétique"
+      },
+      {
+        "question": "A.I.4.c",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Tension pour un champ uniforme"
+      },
+      {
+        "question": "A.I.4.d",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Application numérique de la détection"
+      },
+      {
+        "question": "A.I.5.a",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Flux électromagnétique au récepteur"
+      },
+      {
+        "question": "A.I.5.b",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Puissance isotrope"
+      },
+      {
+        "question": "A.II.1.a",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Raies de la tension d’entrée"
+      },
+      {
+        "question": "A.II.1.b",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Enveloppe modulée"
+      },
+      {
+        "question": "A.II.2.a",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Asymptote à haute fréquence"
+      },
+      {
+        "question": "A.II.2.b",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Asymptote à basse fréquence"
+      },
+      {
+        "question": "A.II.2.c",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Gain au centre"
+      },
+      {
+        "question": "A.II.2.d",
+        "page_pdf": 4,
+        "page_rapport": 2,
+        "objet": "Diagramme demandé sur la feuille-réponse"
+      },
+      {
+        "question": "A.II.2.e",
+        "page_pdf": 4,
+        "page_rapport": 2,
+        "objet": "Filtre près de la porteuse"
+      },
+      {
+        "question": "A.II.3.a",
+        "page_pdf": 4,
+        "page_rapport": 2,
+        "objet": "Tableau des composantes du document-réponse"
+      },
+      {
+        "question": "A.II.3.b",
+        "page_pdf": 4,
+        "page_rapport": 2,
+        "objet": "Modulation de sortie"
+      },
+      {
+        "question": "A.II.3.c",
+        "page_pdf": 4,
+        "page_rapport": 2,
+        "objet": "Spectre après filtrage"
+      },
+      {
+        "question": "B.I.1",
+        "page_pdf": 5,
+        "page_rapport": 2,
+        "objet": "Maxwell en électrostatique"
+      },
+      {
+        "question": "B.I.2.a",
+        "page_pdf": 5,
+        "page_rapport": 2,
+        "objet": "Énoncé du théorème de Gauss"
+      },
+      {
+        "question": "B.I.2.b",
+        "page_pdf": 5,
+        "page_rapport": 2,
+        "objet": "De la loi locale au flux"
+      },
+      {
+        "question": "B.II.1",
+        "page_pdf": 5,
+        "page_rapport": 2,
+        "objet": "Repère cylindrique"
+      },
+      {
+        "question": "B.II.2",
+        "page_pdf": 5,
+        "page_rapport": 2,
+        "objet": "Réduction à une variable"
+      },
+      {
+        "question": "B.II.3",
+        "page_pdf": 5,
+        "page_rapport": 2,
+        "objet": "Champ de la couche chargée"
+      },
+      {
+        "question": "B.III.1",
+        "page_pdf": 5,
+        "page_rapport": 2,
+        "objet": "Potentiel de la couche"
+      },
+      {
+        "question": "B.III.2.a",
+        "page_pdf": 5,
+        "page_rapport": 2,
+        "objet": "Potentiel du cylindre plein"
+      },
+      {
+        "question": "B.III.2.b",
+        "page_pdf": 5,
+        "page_rapport": 2,
+        "objet": "Potentiel axial"
+      },
+      {
+        "question": "B.III.2.c",
+        "page_pdf": 5,
+        "page_rapport": 2,
+        "objet": "Tracé de potentiel"
+      },
+      {
+        "question": "B.IV",
+        "page_pdf": 5,
+        "page_rapport": 2,
+        "objet": "Équation de Poisson"
+      },
+      {
+        "question": "C.I.1",
+        "page_pdf": 6,
+        "page_rapport": 2,
+        "objet": "Puissance volumique de Joule"
+      },
+      {
+        "question": "C.I.2.a",
+        "page_pdf": 6,
+        "page_rapport": 2,
+        "objet": "Loi de Fourier"
+      },
+      {
+        "question": "C.I.2.b",
+        "page_pdf": 6,
+        "page_rapport": 2,
+        "objet": "Premier principe sur une tranche"
+      },
+      {
+        "question": "C.I.2.c",
+        "page_pdf": 6,
+        "page_rapport": 2,
+        "objet": "Divergence en coordonnées cartésiennes"
+      },
+      {
+        "question": "C.I.2.d",
+        "page_pdf": 6,
+        "page_rapport": 2,
+        "objet": "Passage au bilan local"
+      },
+      {
+        "question": "C.II.1",
+        "page_pdf": 7,
+        "page_rapport": 2,
+        "objet": "Tableau de l’analogie"
+      },
+      {
+        "question": "C.II.2",
+        "page_pdf": 7,
+        "page_rapport": 2,
+        "objet": "Poisson thermique"
+      },
+      {
+        "question": "C.III.1.a",
+        "page_pdf": 7,
+        "page_rapport": 2,
+        "objet": "Section conductrice du câble"
+      },
+      {
+        "question": "C.III.1.b",
+        "page_pdf": 7,
+        "page_rapport": 2,
+        "objet": "Puissance de l’âme déroulée"
+      },
+      {
+        "question": "C.III.1.c",
+        "page_pdf": 7,
+        "page_rapport": 2,
+        "objet": "Courant efficace dans le cuivre"
+      },
+      {
+        "question": "C.III.2.a",
+        "page_pdf": 7,
+        "page_rapport": 2,
+        "objet": "Température dans l’âme"
+      },
+      {
+        "question": "C.III.2.b",
+        "page_pdf": 7,
+        "page_rapport": 2,
+        "objet": "Température maximale du cuivre"
+      },
+      {
+        "question": "C.III.2.c",
+        "page_pdf": 7,
+        "page_rapport": 2,
+        "objet": "Uniformité thermique d’un fil"
+      },
+      {
+        "question": "D.I.1.a",
+        "page_pdf": 8,
+        "page_rapport": 3,
+        "objet": "Spires d’une couche"
+      },
+      {
+        "question": "D.I.1.b",
+        "page_pdf": 8,
+        "page_rapport": 3,
+        "objet": "Rayon de la première couche"
+      },
+      {
+        "question": "D.I.1.c",
+        "page_pdf": 8,
+        "page_rapport": 3,
+        "objet": "Tableau des longueurs de couche"
+      },
+      {
+        "question": "D.I.1.d",
+        "page_pdf": 8,
+        "page_rapport": 3,
+        "objet": "Équation quadratique du nombre de couches"
+      },
+      {
+        "question": "D.I.1.e",
+        "page_pdf": 8,
+        "page_rapport": 3,
+        "objet": "Dernière couche"
+      },
+      {
+        "question": "D.I.1.f",
+        "page_pdf": 8,
+        "page_rapport": 3,
+        "objet": "Rayon extérieur du bobinage"
+      },
+      {
+        "question": "D.I.2.a",
+        "page_pdf": 9,
+        "page_rapport": 3,
+        "objet": "Spires dans une maille de réseau carré"
+      },
+      {
+        "question": "D.I.2.b",
+        "page_pdf": 9,
+        "page_rapport": 3,
+        "objet": "Densité surfacique de spires"
+      },
+      {
+        "question": "D.I.2.c",
+        "page_pdf": 9,
+        "page_rapport": 3,
+        "objet": "Longueur différentielle"
+      },
+      {
+        "question": "D.I.2.d",
+        "page_pdf": 9,
+        "page_rapport": 3,
+        "objet": "Rayon par intégration"
+      },
+      {
+        "question": "D.I.2.e",
+        "page_pdf": 9,
+        "page_rapport": 3,
+        "objet": "Comparaison des deux méthodes"
+      },
+      {
+        "question": "D.II.1.a",
+        "page_pdf": 9,
+        "page_rapport": 3,
+        "objet": "Volume du milieu équivalent"
+      },
+      {
+        "question": "D.II.1.b",
+        "page_pdf": 9,
+        "page_rapport": 3,
+        "objet": "Puissance du câble enroulé"
+      },
+      {
+        "question": "D.II.2",
+        "page_pdf": 9,
+        "page_rapport": 3,
+        "objet": "Surface en convection"
+      },
+      {
+        "question": "D.II.3",
+        "page_pdf": 9,
+        "page_rapport": 3,
+        "objet": "Écart de température au moyeu"
+      },
+      {
+        "question": "D.III.1.a",
+        "page_pdf": 10,
+        "page_rapport": 3,
+        "objet": "Coordonnées du réseau de contacts"
+      },
+      {
+        "question": "D.III.1.b.α",
+        "page_pdf": 10,
+        "page_rapport": 3,
+        "objet": "Développement du voisin de droite"
+      },
+      {
+        "question": "D.III.1.b.β",
+        "page_pdf": 10,
+        "page_rapport": 3,
+        "objet": "Somme horizontale"
+      },
+      {
+        "question": "D.III.1.c",
+        "page_pdf": 10,
+        "page_rapport": 3,
+        "objet": "Somme verticale"
+      },
+      {
+        "question": "D.III.2.a",
+        "page_pdf": 10,
+        "page_rapport": 3,
+        "objet": "De la cellule à l’équation locale"
+      },
+      {
+        "question": "D.III.2.b",
+        "page_pdf": 10,
+        "page_rapport": 3,
+        "objet": "Opérateur de diffusion"
+      },
+      {
+        "question": "D.III.2.c",
+        "page_pdf": 10,
+        "page_rapport": 3,
+        "objet": "Conductivité et convention de volume"
+      }
+    ]
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "fournisseur": "codex",
+      "agent": "x_hist_1987",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture de la garde, des questions et des documents de la Banque PT ; rédaction et contrôle de 71 rubriques dans les deux éditions, indications, figures et vérifications indépendantes."
+    },
+    {
+      "phase": "rectification documentaire",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "fournisseur": "codex",
+      "agent": "x_hist_1987",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "A.I.2.d : rétablissement de la notation imprimée γ pour la pulsation. A.II.2.d : contrôle du décalage de numérotation sur le cadre du document-réponse, estampillé AII-2e."
+    }
+  ]
+}

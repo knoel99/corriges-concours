@@ -6,11 +6,17 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 « Jeu social, jeu esthétique, jeu critique, jeu figural, jeu d’interaction, le théâtre se situe en effet dans l’espace vide que lui laisse la cité : il est entre les pièces, entre les rouages de la machine, il en figure le *jeu*, et c’est en cela qu’il permet qu’elle fonctionne. »
 
 Christian Biet et Christophe Triau, *Qu’est-ce que le théâtre ?*, « Conclusion », Folio essais, 2006, p. 930.
 
 Vous discuterez cette analyse en vous référant en particulier aux œuvres au programme.
+
+[Sujet officiel, p. 1](https://www.ens-lyon.fr/sites/default/files/2024-11/Composition%20fran%C3%A7aise.pdf#page=1) · [Rapport du jury, partie écrite, p. 2–7](https://www.ens-lyon.fr/sites/default/files/2024-11/Composition%20fran%C3%A7aise%20et%20explication%20texte%202024%20OK.pdf#page=2)
 
 **Problématique** — Comment le théâtre peut-il contribuer à la vie de la cité en ouvrant une distance à l’égard des rôles et des fins que cette même cité lui assigne ?
 
@@ -21,6 +27,10 @@ Dans *La Dispute* de Marivaux, le prince invite Hermiane à regarder, sans être
 ## I. Le temps de jouer permet de voir agir une règle
 
 Sur la scène du *Cid*, Rodrigue pourrait se contenter d’accepter de son père l’épée et le devoir de vengeance. Un tel enchaînement montrerait ce qu’exige l’honneur familial sans faire éprouver au public comment on en vient à lui obéir. Corneille insère entre la demande du père et l’affrontement avec le comte les stances où Rodrigue se découvre à la fois fils de l’offensé et amant de la fille de l’offenseur. La variation de la longueur des vers, le retour du nom de Chimène et les reprises d’une alternative suspendent l’action sans l’abolir. Tout le plaisir du morceau vient de ce que le spectateur peut suivre, dans le rythme même de la parole, le coût d’une décision qui, vue de l’extérieur, passerait pour la simple exécution d’un code. La scène donne une durée et un corps à ce que la transmission d’une épée semblait devoir rendre immédiat. C’est là un premier sens du « jeu » entre les rouages. Une liaison qui paraît nécessaire peut être desserrée assez longtemps pour devenir perceptible.
+
+L’honneur familial arrive à Rodrigue sous la forme d’une dette déjà nommée. Les stances lui donnent pourtant le temps de mesurer ce que l’acquitter coûtera à Chimène et à lui-même. Le public découvre ainsi que la règle sociale doit passer par la voix singulière de celui qui s’apprête à l’exécuter.
+
+![Figure 1 — L’intervalle ouvert par les stances de Rodrigue. La variation du vers fait éprouver le coût d’un geste que commande le code de l’honneur.](figures/honneur-et-stances.svg)
 
 Chez Marivaux, le moyen est différent. Dans *La Double Inconstance*, Silvia veut retrouver Arlequin. Le prince, qui désire qu’elle le choisisse, dispose d’un palais et d’auxiliaires pour agir sur leurs sentiments. Flaminia fait de sa propre proximité avec Arlequin une pièce essentielle de la manœuvre. Elle lui offre une écoute que rendent plus précieuse les contrariétés qu’il subit par ailleurs. Le spectateur à qui les préparatifs ont été révélés entend donc chaque parole deux fois : comme l’ami entendrait la marque de bienveillance, puis comme le témoin d’une stratégie reconnaît le travail qu’elle accomplit. La comédie n’a pas eu besoin de faire proclamer à un personnage que la puissance peut prendre le langage de l’amitié. Elle nous en a fait entendre la possibilité dans une phrase qui continue de paraître aimable. Appeler le théâtre un « jeu figural », c’est lui reconnaître cette puissance d’intelligence indirecte.
 
@@ -36,11 +46,19 @@ Colette rend sensible à son tour cette inégalité en confiant la narration de 
 
 Cette dissymétrie devient un enjeu éthique dans *La Dispute*. Églé s’arrête devant l’eau où se découvre un visage dont elle ne sait pas encore que c’est le sien. Le public qui connaît le dispositif peut prendre plaisir à reconnaître avant elle le principe du reflet. Cette avance est un ressort comique, mais d’où vient le privilège de ceux qui savent ? Pour pouvoir offrir à Hermiane le spectacle d’un premier regard, il a fallu organiser pendant des années l’ignorance de celle qui regarde. Le prince présente une expérience censée donner accès à la nature humaine. Le spectacle de Marivaux rend visibles les soins extrêmement artificiels que réclame cette prétention. Il est possible de voir dans la même scène la charmante naissance d’une conscience de soi et l’effet d’un pouvoir qui entend régler jusqu’au moment de cette naissance. La machine peut donc fonctionner très bien pour qui commande le spectacle et très mal pour celui auquel on a distribué un rôle sans l’en avertir.
 
+![Figure 2 — Le prince, les jeunes gens et le public occupent trois places distinctes.](figures/regards-dans-la-dispute.svg)
+
 ## III. Le fonctionnement de la cité se joue aussi dans le désaccord de ses spectateurs
 
 Dire que le théâtre rend possible le fonctionnement de la société oblige dès lors à préciser ce qu’on attend de celle-ci. Si fonctionner signifie reproduire un ordre en le faisant aimer, le dénouement de *La Double Inconstance* s’y prête. Le prince obtient Silvia, Arlequin a trouvé auprès de Flaminia un nouvel attachement et l’apparente satisfaction des intéressés dispense d’employer ouvertement la force. On peut pourtant quitter la représentation avec un souvenir que ces unions heureuses ne suffisent pas à effacer : au début, la jeune fille avait été séparée d’Arlequin selon la volonté du prince. Toute la différence entre les places tient à ce que le prince pouvait dès le départ organiser les rencontres, tandis que Silvia ne pouvait qu’y répondre. Il n’est nullement indispensable de juger ses nouveaux sentiments faux pour s’interroger sur les conditions qui leur ont permis de naître. Le déroulement de la comédie donne au public de quoi résister à l’interprétation la plus rassurante de son dénouement.
 
+![Figure 3 — Le dénouement de La Double Inconstance accorde les couples et laisse au spectateur le souvenir du premier enlèvement.](figures/double-inconstance.svg)
+
 Le dernier échange de *La Dispute* permet de vérifier jusqu’où va ce droit de juger. Lorsque Meslis et Dina apparaissent, Carise invite chacun à se choisir un autre partenaire. Tous deux restent attachés l’un à l’autre. Le prince décide de les placer à part et formule une conclusion générale sur les vertus et les vices des deux sexes. Hermiane refuse pourtant la plaisanterie finale et demande à partir. L’arrivée du couple fidèle retire à l’expérience sa prétention à expliquer universellement l’inconstance. Elle donne aussi au public une décision à apprécier : le prince peut disposer des lieux et tirer sa morale, mais il ne peut régler l’effet de ses paroles ni sur Hermiane ni sur la salle.
+
+Dans la scène XX, la résistance des jeunes gens prend corps dans deux didascalies. Dina jette son bras sur celui de Meslis, puis le prend par-dessous le bras au moment où Carise lui enjoint d’examiner les personnes présentes. Sa réponse, « Tout est vu, allons-nous-en », oppose à l’inspection désirée par la cour un geste dont le sens se passe d’enquête. À la fin, Hermiane dit à son tour « Partons ». Les deux femmes sortent ainsi du jeu par des mots semblables, l’une comme sujet de l’expérience, l’autre comme spectatrice que son spectacle ne satisfait plus.
+
+![Figure 4 — Le jeu de la cité au dénouement de La Dispute.](figures/le-jeu-de-la-cite.svg)
 
 La suite historique du *Cid* aide à mesurer ce pouvoir des spectateurs. Chimène demande au roi justice contre celui qu’elle aime. L’autorité peut promettre à Rodrigue l’espoir d’une union à venir ; elle ne décide pas à la place du public si le désir de la jeune femme est compatible avec son devoir. La querelle de 1637 transporte une partie de cette difficulté hors de la salle. La conduite accordée à Chimène, le plaisir éprouvé devant la pièce et les règles au nom desquelles on la juge deviennent matière à controverse. Les spectateurs et les lecteurs ne forment pas spontanément une communauté d’opinion. De leur désaccord naissent au contraire de nouveaux discours sur ce qu’on peut leur montrer et sur la légitimité du plaisir qu’ils y prennent. Le fonctionnement dont le théâtre est ici l’une des conditions est une faculté de discussion. Elle s’exerce d’autant mieux que la pièce ne vient pas mettre fin au différend dont elle a donné l’occasion.
 

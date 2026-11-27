@@ -55,6 +55,54 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Confrontation au dossier original et au rapport du jury. Contrôle des valeurs reportées, des champs, des dénominateurs et des limites de l’interprétation."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture croisée du dossier et du rapport de l’oral commun de sociologie 2026. Document 3, consignes déclarées selon le groupe professionnel et portée de l’hypothèse de socialisation politique. Figure interprétée dans la copie et calcul ou question de méthode développé dans le guidé."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "gestion_2022_2023",
+      "agent": "gestion_2022_2023",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Les sept documents du dossier sont traités dans les deux éditions. Les champs des tableaux Dares, les quatre vagues sur les consignes, les différents répondants de Réponse et le rapprochement entre travail individuel et vote communal ont été contrôlés."
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "De la démocratie en entreprise"
+    ],
+    "precision": "Les sept documents du dossier sont traités dans les deux éditions. Les champs des tableaux Dares, les quatre vagues sur les consignes, les différents répondants de Réponse et le rapprochement entre travail individuel et vote communal ont été contrôlés.",
+    "controle": [
+      "Document 1. La question de Friedmann sur le travail parcellaire et le civisme en 1949.",
+      "Document 2. Les trois pratiques patronales observées par Gantois dans une entreprise de transport.",
+      "Document 3. En 1991, 52,8 − 20,5 = 32,3 points entre ouvriers et cadres (consignes appliquées strictement), contre 41,8 − 18,4 = 23,4 en 2013.",
+      "Document 4. Parmi les entreprises de 10 à 49 salariés dans le champ Dares, 9,8 % négocient. Leur poids est de 82,3 % en entreprises et 27,1 % en salariés.",
+      "Document 5. Salaires et primes, 10,3 % des entreprises négocient, 71,6 % de ces négociations aboutissent, 7,4 % des entreprises concluent, et les entreprises concluant emploient 35,8 % des salariés.",
+      "Document 6. Réponse, deux volets, accord de 83 % des salariés mandatés, 50 % des non-mandatés et 51 % de l’ensemble à la première affirmation.",
+      "Document 7. Conditions de travail des salariés du privé en 2016 et résultats communaux de 2017 ; le vote individuel est inconnu."
+    ]
+  }
 }

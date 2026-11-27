@@ -1,0 +1,118 @@
+{
+  "slug": "bel_al_polonais-theme-lyon_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Polonais (thème Lyon)",
+    "annee": 2025,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "duree_heures": 4,
+  "redaction": "Traduction originale proposée par IA, non officielle.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2025-09/251113.pdf#page=16",
+    "sujet_sha256": "b7d09bb818f637ec169e3e81e4912858b211e06941981935364478be20cd6766",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2025-11/Polonais%202025%20OK%20Lyon%20RELU.pdf#page=13",
+    "rapport_jury_sha256": "96864b3a78b7c0a1c56c6a03b86de28929b026268479be0dc8598b5b3888805f",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2025",
+    "ouvrage": "Jean-Marc Roberts, *Affaires étrangères* (1979).",
+    "ecoles": "ENS de Lyon"
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2025-09/251113.pdf#page=16",
+      "sha256": "b7d09bb818f637ec169e3e81e4912858b211e06941981935364478be20cd6766",
+      "pages": 20,
+      "perimetre": "Thème en français à traduire en polonais, sujet ENS de Lyon.",
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "8ec0333bc615d21e75fd6bd8739b8ac1ac8f7527ec5d1bc38afbba95f28f63b7"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        },
+        {
+          "numero": 16,
+          "rendu_sha256": "ca11fcbd46397c8b355eb35d215ada79b368aa85f9cc6ac7c94eaf51b6e580a3"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2025-11/Polonais%202025%20OK%20Lyon%20RELU.pdf#page=13",
+      "sha256": "96864b3a78b7c0a1c56c6a03b86de28929b026268479be0dc8598b5b3888805f",
+      "pages": 14,
+      "perimetre": "Section du rapport de polonais consacrée au thème.",
+      "pages_verifiees": [
+        {
+          "numero": 13,
+          "rendu_sha256": "bef146d3f4d6f5b6fba1e7199f90123b2140f852e25e08737184c1b5208bd917"
+        },
+        {
+          "numero": 14,
+          "rendu_sha256": "271a5f291225ae948b9247a23b534bd08ef5677ccdc39e76c0e4d2d831e61e3a"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "Proposition de thème",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "Trois positions successives du petit-fils. La forme masculine renvoie au petit garçon chargé de surveiller Jeannot, puis au salarié dont Yette vante les avantages."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Traduction polonaise originale et commentaire des voix, du lexique et de la syntaxe, schéma de lecture et vérification des sources."
+    },
+    {
+      "phase": "revision",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Texte collationné avec le feuillet et dialogues relus pour vérifier l’âge approximatif de Jeannot, soupçon masculin du narrateur, rythme des épisodes récurrents, cumul de sens de la fausse morte et dernière remise."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Proposition de thème"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Proposition de thème",
+        "page_pdf": 16,
+        "feuillet_imprime": 16,
+        "perimetre": "Du soupçon initial du petit-fils au dernier mot de Yette sur les fauteuils et la remise de quatre-vingts pour cent."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

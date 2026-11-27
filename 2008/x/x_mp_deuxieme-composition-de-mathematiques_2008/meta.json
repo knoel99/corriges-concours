@@ -11,7 +11,8 @@
   "sources": {
     "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-2_mp_2008.pdf",
     "rapport_jury": "https://www.wikiprepa.fr/concours/data/x_maths-2_mp_2008_rapport_jury.pdf",
-    "sha256_sujet": "80be31dc6f9614ed2b293eb4e9667d1685c64cc393565a62aa2f1a86c5cf14ea"
+    "sha256_sujet": "80be31dc6f9614ed2b293eb4e9667d1685c64cc393565a62aa2f1a86c5cf14ea",
+    "sha256_rapport_jury": "2224714d703808d3b325d8687f499a1d1f30b7985f3ff45d358dbdbfa25391af"
   },
   "figures": [
     {
@@ -31,6 +32,133 @@
       "perimetre": "Rédaction intégrale des deux éditions à partir des quatre pages du sujet et du rapport. Partition suivant l’image et les fibres, coefficients explicites entre bases, produit et composition de séries en convergence absolue avec justification des doubles sommes. Figure du dénombrement par taille d’image.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "x_mp_deuxieme_composition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Pointage physique des 19 consignes sur 4 pages. Vérification des coefficients de la figure, du cas k nul et des indices de matrices. Double calcul du déterminant et contrôles numériques de la formule des surjections et des coefficients de Taylor."
     }
-  ]
+  ],
+  "intitule": "Dénombrement d’applications entre ensembles finis",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3.a",
+      "3.b",
+      "4.a",
+      "4.b",
+      "4.c",
+      "4.d",
+      "5",
+      "6",
+      "7.a",
+      "7.b",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1",
+        "page_pdf": "1"
+      },
+      {
+        "question": "2",
+        "page_pdf": "1"
+      },
+      {
+        "question": "3.a",
+        "page_pdf": "1"
+      },
+      {
+        "question": "3.b",
+        "page_pdf": "1"
+      },
+      {
+        "question": "4.a",
+        "page_pdf": "2"
+      },
+      {
+        "question": "4.b",
+        "page_pdf": "2"
+      },
+      {
+        "question": "4.c",
+        "page_pdf": "2"
+      },
+      {
+        "question": "4.d",
+        "page_pdf": "2"
+      },
+      {
+        "question": "5",
+        "page_pdf": "2"
+      },
+      {
+        "question": "6",
+        "page_pdf": "2"
+      },
+      {
+        "question": "7.a",
+        "page_pdf": "2"
+      },
+      {
+        "question": "7.b",
+        "page_pdf": "2"
+      },
+      {
+        "question": "8",
+        "page_pdf": "2"
+      },
+      {
+        "question": "9",
+        "page_pdf": "3"
+      },
+      {
+        "question": "10",
+        "page_pdf": "3"
+      },
+      {
+        "question": "11",
+        "page_pdf": "3"
+      },
+      {
+        "question": "12",
+        "page_pdf": "4"
+      },
+      {
+        "question": "13",
+        "page_pdf": "4"
+      },
+      {
+        "question": "14",
+        "page_pdf": "4"
+      }
+    ],
+    "controle": [
+      "p. 1, injections et bijections, décomposition selon l’image, déterminant du produit S(r)P(r)",
+      "p. 2, translation, inversion binomiale avec ligne d’indice zéro, base des factorielles croissantes et signes",
+      "p. 3, multinôme, expansion sur les fonctions et passage aux surjections par le profil des fibres",
+      "p. 4, séries produits, hypothèses de sommabilité absolue, composition et coefficients de l’exponentielle itérée",
+      "Vérification des coefficients de la figure, du cas k nul et des indices de matrices. Double calcul du déterminant et contrôles numériques de la formule des surjections et des coefficients de Taylor."
+    ]
+  }
 }

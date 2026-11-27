@@ -1,0 +1,54 @@
+{
+  "slug": "ens_mp-pc_russe-lv1_2008",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Russe (LV1)",
+    "annee": 2008,
+    "modalite": "écrit"
+  },
+  "intitule": "Les sculptures de Baillet-en-France et les relations franco-russes",
+  "questions": 2,
+  "redaction": "Traduction intégrale en français et traitement des questions en russe. Les sculptures de Baillet-en-France et les relations franco-russes.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2008/sujet-ecrit-2008_mppc_sujet_langue_vivante_1.pdf#page=6",
+    "sha256_sujet": "54d0900d478637b442e3ecac217a1f803f6b95a9197e52e427d80cf31b3e1058",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2008",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2008/sujet-ecrit-2008_mppc_sujet_langue_vivante_1.pdf#page=6",
+        "sha256": "54d0900d478637b442e3ecac217a1f803f6b95a9197e52e427d80cf31b3e1058"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I",
+      "fichier": "figures/lecture-de-la-version.svg",
+      "legende": "Deux ensembles au pavillon soviétique de 1937"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "arabe_mp_pc_2011_2014",
+      "session": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Traduction intégrale en français et traitement des questions en russe. Les sculptures de Baillet-en-France et les relations franco-russes."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I",
+      "II"
+    ]
+  }
+}

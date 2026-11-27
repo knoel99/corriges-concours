@@ -1,0 +1,98 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_analyse-economique-generale_2016",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Analyse économique générale",
+    "annee": 2016,
+    "modalite": "écrit"
+  },
+  "intitule": "Équilibre de marché, intervention publique et contrats de monopole",
+  "gabarit": "probleme",
+  "questions": 29,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2016_Sujet_1A_D2-1_Analyse-Eco.pdf",
+    "sujet_sha256": "71e54b0950fe9d1bfdc50316870bc22a0a50ca260fe19ce4b8b411e4921b0661",
+    "index": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=289&field_year_target_id%5B%5D=281",
+    "precision": "Aucun rapport distinct de cet écrit n’est identifié sur la page d’annales de la session."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "1.8",
+      "1.9",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4.1",
+      "4.4.2",
+      "4.4.3",
+      "4.4.4",
+      "4.5.1",
+      "4.5.2",
+      "4.6.1",
+      "4.6.2"
+    ]
+  },
+  "redaction": "Résolution des 29 sous-questions terminales, avec profits, surplus et conditions de participation. Traitement des anticipations incompatibles en Stackelberg, de l’hypothèse d’éviction et de la contrainte de revenu du contrat.",
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/quantites.svg",
+      "question": "1.2–1.6",
+      "legende": "Les trois mécanismes n’attribuent pas le même comportement aux concurrents. Les valeurs sont des quantités par entreprise."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/transferts.svg",
+      "question": "2.1–2.4",
+      "legende": "Le surplus collectif inclut l’État et les transferts entre acteurs s’annulent."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/monopole.svg",
+      "question": "3.3–3.5",
+      "legende": "La tarification choisie dépend de la contrainte de profit et du financement des coûts fixes."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/forfait.svg",
+      "question": "4.4–4.5",
+      "legende": "Un contrat à quantité imposée et l’achat libre au même prix unitaire ont des ensembles de choix différents."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "saclay_economie_archives",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Résolution des 29 sous-questions terminales, avec profits, surplus et conditions de participation. Traitement des anticipations incompatibles en Stackelberg, de l’hypothèse d’éviction et de la contrainte de revenu du contrat.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}

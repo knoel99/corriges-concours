@@ -11,7 +11,8 @@
   "sources": {
     "sujet": "https://www.ens.psl.eu/IMG/file/concours/2014/MPI/14_sujet_mathD_MP.pdf",
     "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2014/MPI/14_mp_rap_ecrit_mathD.pdf",
-    "sha256_sujet": "0d72dd035b8033dd4daf15b90a3db8ff4a8ae1345b0902f7c9b1cff9871663a7"
+    "sha256_sujet": "0d72dd035b8033dd4daf15b90a3db8ff4a8ae1345b0902f7c9b1cff9871663a7",
+    "sha256_rapport_jury": "b57d1a8c675126ee30f8ab6d5a5b67f014048c9dafa83bd8c263aaef628a279a"
   },
   "figures": [
     {
@@ -31,6 +32,90 @@
       "perimetre": "Rédaction complète des deux éditions à partir du sujet d’Ulm et du rapport. Vérification des partitions, des sous-groupes maximaux, des conjugaisons et de la classification en dimension première. Contre-exemple à la condition de commutation stricte de V.4.c et preuve de V.6 indépendante de cette condition. Schéma original du transport cyclique entre facteurs.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "ens_mp_mathematiques_d",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Pointage des 55 repères sur le sujet, les deux éditions et le rapport. p. 2–4, ordre sur les partitions, sous-groupes paraboliques et décomposition en cycles. p. 4–7, maximalité, unités matricielles, algèbres produits et action d’un groupe abélien fini. p. 8, groupe de Heisenberg, permutation transitive de degré premier et normalisation du relèvement du cycle."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3.a",
+      "I.3.b",
+      "I.4",
+      "II.1.a",
+      "II.1.b",
+      "II.2.a",
+      "II.2.b",
+      "II.3",
+      "II.4",
+      "II.5.a",
+      "II.5.b",
+      "II.5.c",
+      "II.6.a",
+      "II.6.b",
+      "II.7.a",
+      "II.7.b",
+      "II.8.a",
+      "II.8.b",
+      "III.1",
+      "III.2.a",
+      "III.2.b",
+      "III.3",
+      "IV.1",
+      "IV.2.a",
+      "IV.2.b",
+      "IV.2.c",
+      "IV.3.a",
+      "IV.3.b",
+      "IV.3.c",
+      "IV.4.a",
+      "IV.4.b",
+      "IV.5",
+      "IV.6",
+      "V.1.a",
+      "V.1.b",
+      "V.2.a",
+      "V.2.b",
+      "V.2.c",
+      "V.3.a",
+      "V.3.b",
+      "V.3.c",
+      "V.4.a",
+      "V.4.b",
+      "V.4.c",
+      "V.5",
+      "V.6",
+      "V.7",
+      "VI.1",
+      "VI.2",
+      "VI.3",
+      "VI.4.a",
+      "VI.4.b",
+      "VI.5"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "controle": [
+      "p. 2–4, ordre sur les partitions, sous-groupes paraboliques et décomposition en cycles",
+      "p. 4–7, maximalité, unités matricielles, algèbres produits et action d’un groupe abélien fini",
+      "p. 8, groupe de Heisenberg, permutation transitive de degré premier et normalisation du relèvement du cycle"
+    ]
+  }
 }

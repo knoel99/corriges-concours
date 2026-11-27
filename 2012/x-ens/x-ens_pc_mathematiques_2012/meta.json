@@ -1,0 +1,140 @@
+{
+  "slug": "x-ens_pc_mathematiques_2012",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Mathématiques",
+    "annee": 2012,
+    "duree_heures": 4
+  },
+  "questions": 33,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "identification": "Composition de mathématiques, code XEULC, filière PC, cinq pages, quatre heures. École polytechnique, ESPCI et ENS. Rapport officiel des correcteurs consulté.",
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2012/PC/pc2012_sujet_mathematiques%5B1%5D.pdf",
+    "sujet_sha256": "4c22ac734602aac051069e3f51759f341b5f5d4d9d6e6ea96bfb07632ad177bf",
+    "index_sujet": "https://www.ens.psl.eu/rapports-et-sujets-2012-pc",
+    "rapport": "https://www.ens.psl.eu/IMG/file/concours/2012/PC/2012PC%20RapportMathXEULC.pdf",
+    "rapport_sha256": "95ed72e1fd409ab6a09e61ba38a6ad5c5361d95a48a10174190ee1ee47c29a45",
+    "index_rapport": "https://www.ens.psl.eu/rapports-et-sujets-2012-pc",
+    "sha256_sujet": "4c22ac734602aac051069e3f51759f341b5f5d4d9d6e6ea96bfb07632ad177bf",
+    "sha256_rapport_jury": "95ed72e1fd409ab6a09e61ba38a6ad5c5361d95a48a10174190ee1ee47c29a45",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2012/PC/2012PC%20RapportMathXEULC.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/trajectoires-logistiques.svg",
+      "question": "4c",
+      "legende": "Figure 1 — Pour a et b égaux à un, trois données initiales donnent trois solutions entre les deux équilibres."
+    },
+    {
+      "fichier": "figures/rayon-nonlineaire.svg",
+      "question": "13c",
+      "legende": "Figure 2 — Pour un rayon initial égal à un, la norme décroît, reste constante ou diverge selon le signe du paramètre. La branche croissante a pour temps limite 1."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Tous les items des préliminaires et des trois parties. Solution logistique, évolution linéaire, temps négatifs, variation de la constante, contrôle uniforme et argument de premier contact. Deux schémas quantitatifs."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Norme induite, évolution matricielle, formule de la solution en rotation et explosion finie, stabilité après translation. Les 33 indications sont accompagnées de démonstrations dans le guidé.",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "agent": "rennes_oraux_economie",
+      "session": "rennes_oraux_economie"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4a",
+      "4b",
+      "4c",
+      "4d",
+      "5",
+      "6a",
+      "6b",
+      "6c",
+      "7a",
+      "7b",
+      "7c",
+      "8a",
+      "8b",
+      "9a",
+      "9b",
+      "10a",
+      "10b",
+      "10c",
+      "11a",
+      "11b",
+      "12a",
+      "12b",
+      "12c",
+      "13a",
+      "13b",
+      "13c",
+      "14a",
+      "14b",
+      "14c",
+      "14d"
+    ],
+    "pages_du_sujet": 5,
+    "pages_pdf_des_questions": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4a": 2,
+      "4b": 2,
+      "4c": 2,
+      "4d": 2,
+      "5": 3,
+      "6a": 3,
+      "6b": 3,
+      "6c": 3,
+      "7a": 3,
+      "7b": 3,
+      "7c": 3,
+      "8a": 3,
+      "8b": 3,
+      "9a": 3,
+      "9b": 4,
+      "10a": 4,
+      "10b": 4,
+      "10c": 4,
+      "11a": 4,
+      "11b": 4,
+      "12a": 4,
+      "12b": 4,
+      "12c": 4,
+      "13a": 5,
+      "13b": 5,
+      "13c": 5,
+      "14a": 5,
+      "14b": 5,
+      "14c": 5,
+      "14d": 5
+    },
+    "precision": "Pages du fac-similé institutionnel, garde incluse. Le numéro désigne le début de la demande imprimée."
+  }
+}

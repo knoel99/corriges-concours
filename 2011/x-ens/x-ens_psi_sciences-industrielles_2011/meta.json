@@ -1,0 +1,42 @@
+{
+  "slug": "x-ens_psi_sciences-industrielles_2011",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Sciences industrielles",
+    "annee": 2011,
+    "duree_heures": 5
+  },
+  "questions": 53,
+  "couverture": {
+    "statut": "partiel",
+    "perimetre": "Expliquer le principe de lecture absolue demandé au début de la question 4. Le dimensionnement final de cette question et les questions 1 à 3 et 5 à 53 sont hors couverture."
+  },
+  "questions_traitees": [
+    "4, première proposition uniquement"
+  ],
+  "sources": {
+    "sujet": "https://groupe-reussite.fr/ressources/wp-content/uploads/Annales/x-ens/si/sujet-polytechnique-ens-si-psi-2011.pdf",
+    "sujet_sha256": "4b1795d08ba9909240f0cd0a875ae7bf39dc17eef8528c6da08948465150b945"
+  },
+  "figures": [
+    {
+      "fichier": "figures/secteurs-du-plateau.svg",
+      "question": "4",
+      "legende": "Quatre secteurs déroulés en quatre colonnes. À la troisième colonne, les deux pistes donnent le mot 11."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Principe de lecture du codeur absolu seulement, question 4. Exemple civil d’un plateau de jeu et schéma original. Confrontation à la garde et au texte du cahier original."
+    }
+  ]
+}

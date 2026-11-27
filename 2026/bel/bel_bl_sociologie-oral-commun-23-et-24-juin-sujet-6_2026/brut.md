@@ -6,6 +6,10 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## La transition vers l’âge adulte
@@ -28,6 +32,16 @@ Le document 5 valorise le service de logement reçu quand on cohabite. Il repré
 
 Le document 7 porte sur de jeunes salariés du champ de l’enquête Défis. Dans les cinq années à venir, 59 % disent souhaiter trouver un autre emploi ou changer d’entreprise, 73 % prendre davantage de responsabilités et 79 % faire évoluer le contenu de leur activité. Ces réponses peuvent se cumuler. Les salariés à temps partiel sont 70 % à souhaiter changer d’emploi ou d’entreprise contre 58 % des salariés en CDI, deux catégories qui peuvent elles-mêmes se chevaucher. Les intentions témoignent d’une marge de projection, sans garantir la mobilité future. Il faut aussi prendre en compte l’offre d’emploi, le logement, les charges familiales et le risque attaché à une démission.
 
+![Figure 1 — Trois souhaits professionnels des jeunes salariés](figures/lecture-des-donnees.svg)
+
+L’évolution du contenu du travail recueille 79 % des réponses, le souhait de changer d’emploi ou d’entreprise 59 %. Certains jeunes peuvent vouloir les deux. À l’inverse, une nouvelle responsabilité ou un changement de tâches peuvent être recherchés dans l’entreprise actuelle. L’aspiration au changement recouvre donc des projets professionnels distincts.
+
 Le passage à l’âge adulte combine ainsi différents pouvoirs, gagner une ressource, en disposer, habiter ailleurs et répondre d’autrui. Une chronologie individuelle, mise en regard des aides reçues et des possibilités de choix, explique davantage qu’un seuil d’âge unique.
 
 [Dossier officiel](https://www.ens.psl.eu/sites/default/files/dossier_transition_adulte.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_tronc_commun_sociologie.pdf)
+
+## Vérification sur le dossier
+
+Les deux enquêtes qualitatives et les cinq documents quantitatifs ont été contrôlés. Itinéraires, composition des ressources, aides aux parents ou aux jeunes et souhaits des salariés sont rapportés à leurs populations respectives.
+
+Dans le document 4, la part des pères cadres ou exerçant une profession libérale vaut 27,9 % parmi les étudiants et 9 % parmi les non-étudiants. Le premier groupe présente une part supérieure de 18,9 points, environ 3,1 fois celle du second. Les colonnes sont constituées selon la situation d’études. Pour calculer la probabilité d’être étudiant parmi les enfants de cadres, il faudrait inverser le conditionnement à partir des effectifs ou des parts pondérées de chaque groupe.

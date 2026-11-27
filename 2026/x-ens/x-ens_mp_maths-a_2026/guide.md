@@ -10,6 +10,8 @@
 
 **Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** Le sujet compare la norme subordonnée $\vert\!\vert\!\vert p(A)\vert\!\vert\!\vert $ d'un polynôme de matrice au maximum de $|p|$ sur un compact du plan lié à $A$ : le spectre, un disque, puis le *Hausdorffien* (ou image numérique) $\mathcal H(A)$. Il culmine sur la **conjecture de Crouzeix** $\vert\!\vert\!\vert p(A)\vert\!\vert\!\vert \le2\|p\|_{\mathcal H(A)}$, dont on démontre ici l'optimalité de la constante et plusieurs cas particuliers, ainsi qu'une version affaiblie (disque contenant $\mathcal H(A)$) admettant le théorème d'Okubo-Ando.
@@ -830,6 +832,8 @@ Donc $4\vert\!\vert\!\vert A\vert\!\vert\!\vert \le8\,r(A)$.
 
 $$\boxed{\tfrac12\vert\!\vert\!\vert A\vert\!\vert\!\vert \le r(A)\le\vert\!\vert\!\vert A\vert\!\vert\!\vert }$$
 
+Les deux constantes sont atteintes. Pour la matrice $N$ de la question 21, $N(x_1,x_2)=(x_2,0)$ donne $\|N\|_{\mathrm{op}}=1$ (prendre $x=e_2$), tandis que son disque numérique a pour rayon $1/2$. Pour $A=I_n$, chaque vecteur unitaire donne $\langle Ax|x\rangle=1$ et $r(A)=\|A\|_{\mathrm{op}}=1$. Ici $\|\cdot\|_{\mathrm{op}}$ désigne la norme subordonnée du sujet.
+
 > [!METHODE]
 > L'identité de polarisation permet de reconstruire la forme sesquilinéaire $\langle Ax|y\rangle$ à partir de la forme quadratique $\langle Au|u\rangle$. C'est l'outil standard pour comparer une quantité « diagonale » ($r$) à une quantité « bilinéaire » ($\vert\!\vert\!\vert \cdot\vert\!\vert\!\vert $).
 
@@ -884,10 +888,10 @@ $$r(AB)=1>\tfrac14=r(A)\,r(B).$$
 > Pour la première identité, évaluez l'égalité usuelle en $1/t$ pour $t\neq0$.
 
 > [!INDICATION]
-> Pour la seconde, la somme est un polynôme de degré au plus $k-1$. Évaluez-la aux points $\omega_k^{-j}$ : un seul terme survit.
+> Pour écrire $Q_j$ sous forme développée, multiplier la somme géométrique de raison $\omega_k^jX$ par $1-\omega_k^jX$.
 
 > [!INDICATION]
-> Le produit $\prod_{m=1}^{k-1}(1-\omega_k^m)$ se calcule en évaluant $\frac{X^k-1}{X-1}$ en un point bien choisi.
+> Regrouper ensuite les termes d’un même degré $m$. Pour quels $m$ la raison $\omega_k^m$ vaut-elle $1$ ?
 
 #### Solution
 
@@ -899,26 +903,18 @@ Les polynômes $\prod_\ell(1-\omega_k^\ell X)$ et $1-X^k$ coïncident sur l'ense
 
 $$\boxed{1-X^k=\prod_{\ell=1}^k(1-\omega_k^\ell X)}$$
 
-*Seconde identité.* Posons $Q_j=\prod_{\ell\neq j}(1-\omega_k^\ell X)$ et $S=\sum_{j=1}^kQ_j$, de degré $\le k-1$. Soit $j_0\in\{1,\dots,k\}$.
-
-Pour $j\neq j_0$, $Q_j$ contient le facteur $1-\omega_k^{j_0}X$, nul en $\omega_k^{-j_0}$. Donc
-
-$$\begin{aligned}S(\omega_k^{-j_0})&=Q_{j_0}(\omega_k^{-j_0})\\ &=\prod_{\ell\neq j_0}\big(1-\omega_k^{\ell-j_0}\big)\\ &=\prod_{m=1}^{k-1}(1-\omega_k^m),\end{aligned}$$
-
-car $\ell-j_0$ parcourt modulo $k$ les classes non nulles. Or
-
-$$\begin{aligned}\prod_{m=1}^{k-1}(X-\omega_k^m)&=\frac{X^k-1}{X-1}\\ &=1+X+\dots+X^{k-1},\end{aligned}$$
-
-qui vaut $k$ en $X=1$.
-
-Donc $S-k$, de degré $\le k-1$, s'annule aux $k$ points distincts $\omega_k^{-1},\dots,\omega_k^{-k}$. Ainsi $S-k=0$ :
-
-$$\boxed{1=\frac1k\sum_{j=1}^k\prod_{\substack{\ell=1\\ \ell\neq j}}^k(1-\omega_k^\ell X)}$$
+*Seconde identité.* Posons $Q_j=\prod_{\ell\ne j}(1-\omega_k^\ell X)$. Par la première identité et la formule de la somme géométrique, les deux polynômes $Q_j$ et $\sum_{m=0}^{k-1}\omega_k^{jm}X^m$ donnent $1-X^k$ après multiplication par $1-\omega_k^jX$. Ce facteur étant un polynôme non nul, on peut le simplifier dans $\mathbb C[X]$. Ainsi
+$$
+\frac1k\sum_{j=1}^k Q_j
+=\sum_{m=0}^{k-1}\left(\frac1k\sum_{j=1}^k\omega_k^{jm}\right)X^m.
+$$
+Pour $m=0$, le coefficient vaut $1$. Pour $1\le m<k$, le rapport $\omega_k^m$ est différent de $1$ et sa puissance $k$-ième vaut $1$. La somme géométrique des $k$ termes vaut donc zéro. D’où
+$$\boxed{\frac1k\sum_{j=1}^k\prod_{\ell\ne j}(1-\omega_k^\ell X)=1.}$$
 
 Pour $k=1$, le produit vide vaut $1$ et l'identité est triviale.
 
 > [!METHODE]
-> Deux polynômes de degré au plus $k-1$ qui coïncident en $k$ points sont égaux. C'est le moyen le plus rapide de démontrer une identité polynomiale dont on connaît les valeurs en assez de points.
+> La moyenne sur les $k$ racines de l’unité conserve le terme constant et annule les monômes de degrés $1$ à $k-1$. La question 26-b utilisera cette égalité après substitution de $A$ à $X$.
 
 > [!METHODE]
 > Le rapport 2026 indique une autre voie pour la seconde identité : la dériver de la première. En dérivant $1-X^k=\prod_\ell(1-\omega_k^\ell X)$, on obtient $\sum_j\omega_k^jQ_j=kX^{k-1}$.

@@ -1,0 +1,314 @@
+{
+  "slug": "banque-pt_pt_maths-c_2021",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths C",
+    "intitule_officiel": "Épreuve de Mathématiques C",
+    "annee": 2021
+  },
+  "questions": 39,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2021/math_c_2021_pt.pdf",
+    "sujet_sha256": "ff9f3852131d36a471ec01ba5c2bd8342ace93adabc856e55378edbdb9043827",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2021/rapport_math_c_ecrit_2021.pdf",
+    "rapport_jury_sha256": "ce4a8bd6515058a9cbc75bd9e2466f6a7c847fa6a36ba6c088772f2cc8feb236",
+    "pages_rapport": 10,
+    "grille_ecoles": "https://www.banquept.fr/documents/livret/2021/Livret_PT_2021.pdf#page=13",
+    "grille_sha256": "a95299a81ad019b05252f6f59dae7737025e8fa6e195ff13a8be7f950737103e",
+    "page_grille": 13,
+    "usage_coefficients": {
+      "X": "admissibilité",
+      "ENS Paris-Saclay": "admissibilité",
+      "ENS Rennes": "admissibilité"
+    },
+    "coefficients": {
+      "X": 6,
+      "ENS Paris-Saclay": 3,
+      "ENS Rennes": 3
+    }
+  },
+  "figures": [
+    {
+      "question": "II.8",
+      "fichier": "figures/gaussienne-bornes-mobiles.svg",
+      "legende": "Intégrale entre x et 2x de la gaussienne avec ses deux extrema aux abscisses opposées."
+    },
+    {
+      "question": "III.3.d",
+      "fichier": "figures/bernstein-gaussienne.svg",
+      "legende": "Les approximations de Bernstein reproduisent les deux valeurs aux extrémités. Les erreurs absolues indiquent l’évolution sur le segment."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "P.1",
+      "P.2",
+      "P.3",
+      "P.4.a",
+      "P.4.b",
+      "P.5",
+      "P.6",
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7.a",
+      "I.7.b",
+      "I.7.c",
+      "I.7.d",
+      "I.7.e",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6.a",
+      "II.6.b",
+      "II.6.c",
+      "II.7",
+      "II.8",
+      "II.9.a",
+      "II.9.b",
+      "II.9.c",
+      "II.10.a",
+      "II.10.b",
+      "III.1",
+      "III.2",
+      "III.3.a",
+      "III.3.b",
+      "III.3.c",
+      "III.3.d"
+    ],
+    "pages_du_sujet": 5,
+    "pages_pdf_des_questions": {
+      "P.1": 2,
+      "P.2": 2,
+      "P.3": 2,
+      "P.4.a": 2,
+      "P.4.b": 2,
+      "P.5": 2,
+      "P.6": 2,
+      "I.1": 2,
+      "I.2": 2,
+      "I.3": 2,
+      "I.4": 2,
+      "I.5": 3,
+      "I.6": 3,
+      "I.7.a": 3,
+      "I.7.b": 3,
+      "I.7.c": 3,
+      "I.7.d": 3,
+      "I.7.e": 3,
+      "II.1": 3,
+      "II.2": 3,
+      "II.3": 3,
+      "II.4": 3,
+      "II.5": 4,
+      "II.6.a": 4,
+      "II.6.b": 4,
+      "II.6.c": 4,
+      "II.7": 4,
+      "II.8": 4,
+      "II.9.a": 4,
+      "II.9.b": 4,
+      "II.9.c": 4,
+      "II.10.a": 4,
+      "II.10.b": 4,
+      "III.1": 4,
+      "III.2": 4,
+      "III.3.a": 4,
+      "III.3.b": 5,
+      "III.3.c": 5,
+      "III.3.d": 5
+    },
+    "repere_par_question": [
+      {
+        "question": "P.1",
+        "page_pdf": 2
+      },
+      {
+        "question": "P.2",
+        "page_pdf": 2
+      },
+      {
+        "question": "P.3",
+        "page_pdf": 2
+      },
+      {
+        "question": "P.4.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "P.4.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "P.5",
+        "page_pdf": 2
+      },
+      {
+        "question": "P.6",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.1",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.2",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.3",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.4",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.5",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.6",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.7.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.7.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.7.c",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.7.d",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.7.e",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.1",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.2",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.3",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.4",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.5",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.6.a",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.6.b",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.6.c",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.7",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.8",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.9.a",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.9.b",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.9.c",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.10.a",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.10.b",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.1",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.2",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.3.a",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.3.b",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.3.c",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.3.d",
+        "page_pdf": 5
+      }
+    ],
+    "precision": "Garde 052. Les trois maxima de P.3 sont lus sur le fac-similé. La série de II.5 porte sur F(2 puissance n). Les cinq pages ont été ouvertes."
+  },
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Lecture des 5 pages du sujet, du rapport spécifique de 10 pages et de la grille applicable page 13. Rédaction des 39 réponses et des indications, vérification des figures. Garde 052. Les trois maxima de P.3 sont lus sur le fac-similé. La série de II.5 porte sur F(2 puissance n). Les cinq pages ont été ouvertes. Le rapport, pages 4–10, demande de justifier les changements de variable et les problèmes de convergence, puis de distinguer espérance, loi binomiale et convergence en probabilité."
+    }
+  ]
+}

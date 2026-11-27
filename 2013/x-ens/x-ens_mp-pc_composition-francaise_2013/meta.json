@@ -1,0 +1,92 @@
+{
+  "slug": "x-ens_mp-pc_composition-francaise_2013",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC",
+    "matiere": "Composition française",
+    "annee": 2013,
+    "modalite": "écrit"
+  },
+  "intitule": "Parler, respirer et jouer selon Valère Novarina",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/04/13_mppc_fr_xeulc.pdf",
+    "sha256_sujet": "1b395d09449143a47ba74cd511b69e2e968201e8786c0ef30afa0f3d18c52432",
+    "index_sujet": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2013",
+    "sujet_pages": 1,
+    "sujet_miroir": "https://www.ens.psl.eu/IMG/file/concours/2013/PC/13_mppc_fr_xeulc.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2013/MPI/13_mppc_rap_efran.pdf",
+    "sha256_rapport_jury": "fea2fba1af1c9b3f5650dd5e541fe4c8cceb1c9c1034d2af8e4e000f6a25ea41",
+    "index_rapport_jury": "https://www.ens.psl.eu/rapports-et-sujets-pc-2013",
+    "rapport_jury_pages": 6,
+    "code_garde": "XEULC",
+    "duree": "4 heures",
+    "attribution": "Composition de quatre heures, commune aux filières MP et PC. La garde porte XEULC pour l’X, l’ESPCI et les ENS de Paris, Lyon et Cachan.",
+    "programme": "https://www.education.gouv.fr/bo/12/Hebdo26/ESRS1200215A.htm",
+    "reference_programme": "Arrêté du 1er juin 2012, BO n° 26 du 26 juin 2012, NOR ESRS1200215A, article 1, thème 2 « La Parole ».",
+    "oeuvres_au_programme": [
+      "Platon, Phèdre, introduction, traduction et notes de Létitia Mouze, Le Livre de poche.",
+      "Marivaux, Les Fausses Confidences.",
+      "Paul Verlaine, Romances sans paroles."
+    ],
+    "passages_verifies": [
+      "Phèdre, 228a–e (rouleau et lecture), 242b–244a (signe et palinodie), 274c–277a (Theuth et Thamous, écrit et dialectique).",
+      "Les Fausses Confidences, acte II, scène de la dictée, scène XIII dans l’édition Nelson, et acte III, scène de l’aveu.",
+      "Ariettes oubliées, III, et Aquarelles, « Green »."
+    ],
+    "portee_rapport": "Rapport commun MP–PC XEULC, six pages. P. 1–3, rôle de l’exemple animal, images de la respiration et du jeu, parole et action. P. 3–6, progression, transitions et confrontation des trois œuvres.",
+    "lecture_phedre": "https://adfonteslibrary.org/work-plato-phaedrus",
+    "lecture_marivaux_acte_2": "https://fr.wikisource.org/wiki/Les_Fausses_Confidences/Acte_II",
+    "lecture_marivaux_acte_3": "https://fr.wikisource.org/wiki/Les_Fausses_Confidences/Acte_III",
+    "lecture_verlaine": "https://fr.wikisource.org/wiki/Romances_sans_paroles_(1891)"
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Dissertation",
+      "legende": "À qui la parole rend-elle l’initiative ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de la dissertation sur le passage de Valère Novarina, confrontation des trois œuvres, vérification de la garde, du programme prescrit, du rapport commun MP-PC et des passages cités. Ajout d’une préparation guidée et d’un schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Verlaine, « Spleen », Romances sans paroles, mouvement de l’adresse et lien sonore entre « rouges » et « bouges ». Distinction entre transmettre une information et faire jouer les mots. Comparaison au sujet original et au rapport. Relecture des trois mouvements et de la conclusion dans les deux éditions."
+    }
+  ],
+  "gabarit": "dissertation",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "La parole, la respiration et le jeu"
+    ],
+    "pages_du_sujet": 1,
+    "pages_pdf_des_questions": {
+      "La parole, la respiration et le jeu": 1
+    },
+    "precision": "Dissertation unique de quatre heures sur la citation de Novarina, au regard des trois œuvres prescrites. Le repère est un intitulé éditorial. La consigne imprimée se trouve page 1. Rapport du jury, pages 1 à 6."
+  }
+}

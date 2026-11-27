@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Lire les consignes de la session
 
 La sélection internationale de 2026 demande de lire les pages 180 à 190 de l’article de Pacherie et de répondre en français aux six questions. La version anglaise permet de contrôler le sens de la consigne. La ligne « Écrit 2025 » du fascicule diverge de son en-tête et du rapport de la session 2026, qui décrit l’article, les six questions et la durée de deux heures.
@@ -15,6 +17,8 @@ La sélection internationale de 2026 demande de lire les pages 180 à 190 de l�
 ## Identifier ce que contrôle chaque intention
 
 ![Figure 1 — Trois niveaux de contrôle pendant l’envoi d’un colis](figures/intentions-d-p-m.svg)
+
+Faire varier seulement la taille du colis. Tant qu’une rotation suffit, le projet d’expédition et le lieu de dépôt peuvent rester les mêmes. Cette manipulation précise ce que le modèle attribue au contrôle moteur.
 
 Pour la deuxième question, conserver le même exemple à travers les trois niveaux et montrer ce qui reste stable quand une circonstance change. Pour la troisième, distinguer le format de la représentation, ce qu’elle sélectionne et le temps sur lequel elle corrige. La proximité chronologique d’un geste ne suffit pas à en faire une intention P.
 

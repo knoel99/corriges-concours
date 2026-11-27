@@ -1,0 +1,58 @@
+{
+  "slug": "ens-rennes_d1_espagnol_2009",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Espagnol",
+    "annee": 2009,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/epreuve-de-l-v-e-d1_1423059201606-pdf#page=4",
+    "sha256_sujet": "1ca28fc3f90cefff51fd6629106ac010d1d983969eff47c49e7ec68f2d7f797e",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "publication": "D’après El País, 21 janvier 2009",
+    "page": 4,
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/s-ro01-09d1-esp-1_1423059265684-pdf#page=2",
+    "sha256_rapport_jury": "adfcf471012dcf2e4d582bdce4958d0b0c2d4ce70153ec2791f96fd9a8491040"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en espagnol"
+    ],
+    "precision": "Version du chapeau et du premier paragraphe seulement, de « Los responsables del gigante » à « derechos de autores y editores ». Réponse portant sur l’ensemble de l’article."
+  },
+  "longueur_expression": {
+    "mots": 107,
+    "regle": "Distinguer le projet de Google des projets de catalogage évoqués au début du texte. Au moins 100 mots."
+  },
+  "figures": [
+    {
+      "fichier": "figures/libros.svg",
+      "legende": "¿Qué distingue los proyectos citados?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Version du chapeau et du premier paragraphe seulement, de « Los responsables del gigante » à « derechos de autores y editores ». Réponse portant sur l’ensemble de l’article. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

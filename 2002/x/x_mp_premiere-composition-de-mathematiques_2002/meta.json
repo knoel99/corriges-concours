@@ -9,7 +9,7 @@
   "questions": 23,
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
-    "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-1_mp_2002.pdf",
+    "sujet": "https://fichiers.wikiprepa.fr/data/x_maths-1_mp_2002.pdf",
     "rapport_jury": "",
     "sha256_sujet": "eb080f4793bfc87702ca4fbd6a056a8f5604d78ec0ba13eb18aaec21b844dc5e"
   },
@@ -31,6 +31,77 @@
       "perimetre": "Rédaction complète sur l’original de trois pages, des minimums quadratiques à la stabilité des médianes. Vérification des dérivées aux atomes, du caractère fermé des demi-droites, des préimages monotones, de la continuité et de la convergence en moyenne. Graphique comparatif des deux exemples de la question 6.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Moyennes quadratiques et absolues, limites des masses, signes des pentes des cordes, convergence uniforme et stabilité des médianes.",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "agent": "rennes_oraux_economie",
+      "session": "rennes_oraux_economie"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4.a",
+      "4.b",
+      "5",
+      "6.a",
+      "6.b",
+      "7",
+      "8.a",
+      "8.b",
+      "8.c",
+      "9.a",
+      "9.b",
+      "9.c",
+      "9.d",
+      "10.a",
+      "10.b",
+      "10.c",
+      "11.a",
+      "11.b",
+      "11.c",
+      "12"
+    ],
+    "pages_du_sujet": 3,
+    "pages_pdf_des_questions": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4.a": 1,
+      "4.b": 2,
+      "5": 2,
+      "6.a": 2,
+      "6.b": 2,
+      "7": 2,
+      "8.a": 2,
+      "8.b": 2,
+      "8.c": 2,
+      "9.a": 3,
+      "9.b": 3,
+      "9.c": 3,
+      "9.d": 3,
+      "10.a": 3,
+      "10.b": 3,
+      "10.c": 3,
+      "11.a": 3,
+      "11.b": 3,
+      "11.c": 3,
+      "12": 3
+    },
+    "precision": "Sous-questions relevées sur le fac-similé. Le numéro de page désigne le début de chaque demande dans le PDF original."
+  }
 }

@@ -6,6 +6,10 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## Le travail de plateforme
@@ -24,6 +28,10 @@ Dans le document 4, 57 % des travailleurs de plateforme sont des hommes, contre 
 
 Le document 5 montre que 21 % des travailleurs de plateforme déclarent recevoir des instructions précises sur la manière de travailler, et 20 % un contrôle de la réalisation des tâches. Au total, 34 % subissent au moins une des contraintes relevées et 26 % disposent d’au moins une ressource fournie, comme une formation. Leur union représente 44 %. À l’arrondi près, 16 % des travailleurs connaissent donc à la fois une contrainte et une ressource. Les autres peuvent subir une dépendance économique non captée par les seules instructions. Pour qualifier juridiquement une relation, la seule présence d’une plateforme ne suffirait pas. Sociologiquement, on étudiera aussi fixation des prix, accès aux clients, possibilité de se déconnecter et conséquences concrètes d’un refus.
 
+![Figure 1 — Contraintes et ressources déclarées sur les plateformes](figures/lecture-des-donnees.svg)
+
+Sur cent travailleurs, environ 18 déclarent des contraintes seules, 10 des ressources seules et 16 les deux. Les 56 restants ne déclarent aucun des éléments retenus. Cette décomposition explique comment une même plateforme peut fournir un appui technique tout en encadrant l’exécution des tâches.
+
 ### Qui supporte le coût de la flexibilité ?
 
 Le schéma du Sénat (doc. 6) compare un exemple d’intérim à 17,50 euros de coût horaire et une facturation à 15 euros par mise à disposition d’autoentrepreneurs. L’écart de 2,50 euros représente environ 14,3 % du premier coût. Les postes ne se répartissent pas de façon identique, notamment pour les cotisations et les indemnités associées à l’intérim. La baisse du prix facturé n’équivaut pas à une hausse du revenu net et ne suffit pas à mesurer une productivité. Comptent aussi le temps consacré à trouver des missions, les interruptions d’activité et la couverture des risques.
@@ -31,3 +39,9 @@ Le schéma du Sénat (doc. 6) compare un exemple d’intérim à 17,50 euros de 
 Dans l’hébergement touristique (doc. 7), les nuitées en logements particuliers proposés par les plateformes progressent d’environ 30 % de 2015 à 2016 alors que les logements professionnels connaissent un léger recul et que l’ensemble augmente faiblement. Une progression forte dans une catégorie de poids initial réduit est compatible avec cette faible progression totale. Elle ne mesure ni la part des réservations désormais réalisées par plateforme ni le nombre d’emplois créés. On pourrait chercher qui réalise le ménage, reçoit les clients et assume les périodes sans réservation. L’intermédiation rend visibles des activités et peut en déplacer les coûts vers d’autres acteurs. Son effet sur l’autonomie dépend du pouvoir réel de quitter la plateforme, de négocier et de supporter les aléas.
 
 [Dossier officiel](https://www.ens.psl.eu/sites/default/files/dossier_travail_plateforme.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_tronc_commun_sociologie.pdf)
+
+## Vérification sur le dossier
+
+Les témoignages de chauffeurs et l’action des investisseurs publics ont été reliés à la diversité des métiers, aux profils sociaux, aux contraintes et ressources de l’intermédiation. Le coût horaire et la variation des nuitées sont distingués des revenus des personnes.
+
+Dans le document 3, les dix groupes professionnels nommés totalisent 71 % des travailleurs de plateforme interrogés. Les intermédiaires et prestataires de services en représentent 18 % à eux seuls. Environ 29 % de l’ensemble se trouvent donc dans des métiers extérieurs aux dix catégories dominantes. Généraliser aux indépendants de plateforme le seul cas des chauffeurs présenté au document 1 écarterait une grande partie des situations du dossier.

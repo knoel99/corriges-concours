@@ -34,7 +34,7 @@
       "legende": "Le succès populaire, le vote et les droits ne se mesurent pas de la même façon."
     }
   ],
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "revision": {
     "date": "2026-11-22",
     "modele": "Codex (GPT-6)",
@@ -98,6 +98,31 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Lecture des deux images sur l’original. Correction du rapprochement qui confondait les personnes photographiées et celles qui organisent l’exposition. Distinction entre résidents et électeurs en B, contrôle sur le calendrier officiel de l’ONU d’une date erronée dans le document 1."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "session": "fin_langues_x_interens",
+      "agent": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Collation des deux éditions avec la garde, les quatre documents de synthèse et l’éditorial. Vérification des longueurs (657 et 541 mots), du titre et du document visuel de la page 9 du PDF. La synthèse compare les dénominations du 12 octobre en Espagne et en Argentine et les lectures concurrentes de la fête à Madrid. Le quatrième document juxtapose une photographie et la une satirique d’El Jueves. La réponse discute la lecture de la fête que propose Nuria Labari.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ],
+    "precision": "La garde du sujet fixe les deux exercices. Le brut et le guidé donnent la même synthèse titrée des documents 1 à 4 (657 mots hors titre) et la même réponse argumentée au document 5 (541 mots). Comptage par espaces dans les deux copies. Document visuel à la page 9 du PDF, texte d’opinion à partir de la page 10. La synthèse compare les dénominations du 12 octobre en Espagne et en Argentine et les lectures concurrentes de la fête à Madrid. Le quatrième document juxtapose une photographie et la une satirique d’El Jueves. La réponse discute la lecture de la fête que propose Nuria Labari."
+  }
 }

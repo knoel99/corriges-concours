@@ -1,0 +1,98 @@
+{
+  "slug": "bel_al_grec-moderne-commentaire-et-traduction_2023",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Grec moderne (commentaire et traduction)",
+    "annee": 2023
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2023-09/Commentaire-d-un-texte-en-LVE.pdf#page=12",
+    "sujet_sha256": "465bc18f65e3127c7bcf5720f6042d95180133384f245e34fd7b38acd0ffb760",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2023-12/Grec-moderne-2023-V2.pdf#page=2",
+    "rapport_sha256": "9dace3f31b954b856be1d52d4b7b5dc420eb6fbdae548f6d9e44a47587e8f133",
+    "archive_session": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2023",
+    "archive_session_sha256": "f6056d10df69cb1cd23d19cee5fd113ebee95a1de79dd9a39e5b1a150e9e01d6",
+    "auteur_oeuvre": "Ζήσιμος Λορεντζάτος, Το χαμένο κέντρο (1961, édition citée de 1989)."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "Où la tradition reste-t-elle vivante ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire intégral en grec moderne, version française du passage indiqué, schéma et accompagnement."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rattachement grammatical de αλλοίθωρη, désignation de l’allusion delphique et réagencement du sort des anciens temples et de l’incise finale dans la version."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire",
+      "Version française"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Commentaire",
+        "page_pdf": 12,
+        "page_pdf_fin": 13,
+        "perimetre": "Lignes 1 à 34, de l’affirmation collective jusqu’à la qualification de la nouvelle lecture historique de la tradition, dans la dernière phrase.",
+        "pages_rapport": [
+          2,
+          2
+        ]
+      },
+      {
+        "question": "Version française",
+        "page_pdf": 12,
+        "page_pdf_fin": 13,
+        "perimetre": "Lignes 1 à 25, de « Οἱ Ἕλληνες δὲν εἴχαμε ἔλλειψη » à « τῶν ἀρχαίων Ἑλλήνων ».",
+        "pages_rapport": [
+          2,
+          3
+        ]
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

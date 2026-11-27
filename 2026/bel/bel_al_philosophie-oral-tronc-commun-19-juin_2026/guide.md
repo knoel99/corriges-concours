@@ -6,7 +6,11 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Le jury publie 11 billets pour le 19 juin. Pour chacun, le premier intitulé est celui qui a été choisi. Le second était proposé au choix. Les deux reçoivent ici des réponses distinctes. Les exemples et arguments proposés servent à préparer une leçon personnelle.
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Le [feuillet du 19 juin](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_19_juin.pdf) contient 11 billets de deux sujets. Les développements suivent leur ordre. Le premier sujet a été choisi sur chacun des 11 billets. Le [rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf#page=6) permet de vérifier les choix. Au billet 1, le rapport corrige « encyclopéies » en « encyclopédies ».
+
+Lisez à haute voix les deux sujets du billet puis annoncez votre choix au début de l’exposé. Seul un dictionnaire de langue française est autorisé, à l’exclusion des dictionnaires de noms propres. Pour essayer l’autre sujet, utilisez la question d’entretien et la piste de réponse placées après son développement.
 
 ## Préparer les reprises
 
@@ -34,6 +38,8 @@ L’ordre alphabétique rend l’accès commode, mais le simple voisinage des mo
 
 Revendiquer l’égalité suppose-t-il que toutes les femmes vivent une même situation ? L’histoire des droits politiques fait voir un obstacle commun, comme l’exclusion des femmes du suffrage dans la France du début du XXe siècle. Son abolition en 1944 change la qualité de citoyenne, sans supprimer des inégalités de ressources, d’accès aux responsabilités ou de répartition du travail domestique. Le féminisme articule ainsi une exigence d’égale liberté et une enquête sur les mécanismes qui la contrarient. Les différences de classe, d’origine ou de condition familiale transforment la manière de subir ces mécanismes et les moyens disponibles pour les contester. Reconnaître cette pluralité affine l’exigence commune en obligeant à demander de quelle liberté concrète il s’agit, pour qui et à quelles conditions.
 
+**À l’entretien. À quoi sert de proclamer l’égalité si les usages restent les mêmes ?** Comparer l’accès légal à un métier et l’organisation effective du recrutement ou des horaires. Le droit fournit de quoi contester une exclusion. L’enquête sur les pratiques montre quelles conditions manquent encore pour exercer ce droit.
+
 ## 2. Mentir
 
 Un enfant décrit une baleine dans la rivière où il vient de voir un bateau. Il peut s’être trompé, jouer avec son interlocuteur ou chercher sérieusement à lui faire croire au passage de l’animal. La fausseté de la phrase est la même dans les trois cas. Mentir se distingue par un rapport à ce que le locuteur tient pour vrai et par une intention de tromper une personne qui peut raisonnablement attendre la sincérité. Une réplique de théâtre ne réclame pas cette confiance de la même façon.
@@ -44,6 +50,8 @@ Ce pouvoir de la parole a une dimension morale particulière. Le menteur s’app
 
 Une personne retrouve chaque soir son chien, qui la reconnaît, cherche sa compagnie et modifie sa conduite selon son état. Appeler cette relation « amitié » rend justice à une histoire partagée et à une attention réciproque. Elle demeure néanmoins asymétrique. L’humain décide des conditions de vie de l’animal et peut projeter ses attentes sur des comportements dont il méconnaît le sens. La formule devient plus difficile encore à l’échelle de tous les animaux. Une espèce sauvage n’a pas à entrer dans une relation familière pour mériter une protection. L’amitié nomme donc justement certaines relations singulières si l’on tient compte des besoins propres de l’autre vivant. Elle fournit un motif de sollicitude, sans constituer la condition de toutes nos obligations envers les animaux.
 
+**À l’entretien. La gentillesse d’un animal suffit-elle à en faire un ami ?** Deux animaux peuvent rechercher la même nourriture sans manifester de préférence l’un pour l’autre. Chercher un signe de reconnaissance durable entre individus. Demander ensuite quelle réciprocité est possible entre un animal et la personne qui dépend de sa compagnie.
+
 ## 3. Pourquoi des conflits de générations ?
 
 Deux personnes séparées par quarante ans discutent du prix des loyers. Si l’on répond qu’elles s’opposent parce que l’une est jeune et l’autre âgée, on répète le constat. Il faut distinguer l’effet de l’âge, celui de l’époque et celui d’une position historique commune. On commence et on termine une vie professionnelle avec des intérêts susceptibles de différer. Une même hausse des loyers touche pourtant aussi les personnes âgées qui ne possèdent pas leur logement.
@@ -53,6 +61,8 @@ Dans *Le Problème des générations*, Mannheim distingue la situation liée à 
 ### Le matérialisme
 
 Le mot dénonce parfois un goût excessif pour l’acquisition de biens. Le matérialisme philosophique pose une question différente, celle de savoir si des réalités matérielles suffisent à rendre compte de ce qui existe. Un changement de l’attention après une nuit sans sommeil atteste une dépendance entre une capacité mentale et des conditions corporelles. Cette dépendance ne suffit pourtant pas à prouver que tout énoncé sur une raison d’agir puisse être remplacé par une description de l’état cérébral. Les explications peuvent porter sur des niveaux différents sans postuler deux substances indépendantes. Un matérialisme défendable doit exposer le passage entre ses observations et sa thèse générale. Il doit aussi expliquer comment la pensée, l’expérience et le jugement trouvent place dans la nature dont il soutient l’unité.
+
+**À l’entretien. Peser un livre revient-il à en expliquer le sens ?** Les mêmes phrases imprimées sur deux papiers de poids différent gardent leur sens. Le matérialiste doit expliquer comment une organisation matérielle peut porter une signification, au-delà de la seule mesure de masse.
 
 ![Pourquoi deux classes d’âge s’opposent-elles ?](figures/generations.svg)
 
@@ -66,6 +76,8 @@ Dans « La jeunesse n’est qu’un mot », Bourdieu interroge la construction s
 
 Le risque que les conventions soient sans effet en l’absence d’un pouvoir commun aide à comprendre la place de la sécurité dans le *Léviathan* de Hobbes. Sans sûreté prévisible, personne ne peut aisément investir dans une entreprise ou compter sur une promesse. Assurer cette condition exige déjà des règles publiques, des tribunaux et des garanties contre l’arbitraire. Un ordre qui supprimerait les libertés au nom de la tranquillité pourrait protéger contre certains risques tout en en créant d’autres. Les citoyens demandent aussi que le pouvoir rende possibles l’éducation, la participation aux décisions ou la protection sociale. On peut discuter l’étendue de ces attributions. La sécurité explique l’une des raisons de constituer un État et ne tranche pas, à elle seule, ce qu’un pouvoir commun a le droit ou le devoir d’entreprendre.
 
+**À l’entretien. Un État qui protège chacun contre les agressions a-t-il accompli toute sa tâche ?** Imaginer une ville parfaitement sûre où certains habitants sont exclus du vote. La sécurité rend possible une vie commune. La situation laisse ouverte la question de savoir qui participe à la définition de ses règles.
+
 ## 5. La solidarité
 
 Dans une caisse d’assurance, certaines personnes reçoivent aujourd’hui beaucoup plus qu’elles n’ont versé, d’autres ne retirent presque rien durant des années. On ne comprendrait guère l’institution comme une série de cadeaux personnels. Une règle durable met en commun un risque et crée des droits même entre des gens qui ne se rencontreront jamais. La solidarité se distingue ici de la générosité ponctuelle par la manière dont elle distribue des obligations.
@@ -75,6 +87,8 @@ Pourtant, toute dépendance mutuelle n’est pas solidaire au sens moral. Deux t
 ### Y a-t-il des mensonges sans conséquences ?
 
 Un rendez-vous annoncé à tort est rectifié avant que quiconque ait pris la route. La conséquence redoutée n’a pas eu lieu. En conclure que le mensonge n’a eu aucun effet demande de déterminer un domaine et une durée d’observation. La personne qui l’a reçu a pu dépenser du temps à vérifier, ou n’avoir effectivement jamais ouvert le message. Pour le menteur lui-même, le choix d’abuser de la confiance a eu lieu même si la tentative échoue. La distinction entre résultat, tentative et disposition morale permet de poser la bonne question. Certains mensonges ne causent aucun dommage repérable à leur destinataire. Cela ne suffit pas à garantir qu’ils soient sans toute conséquence possible ni à juger la décision de tromper uniquement d’après la chance qu’elle a eue de rester sans effet visible.
+
+**À l’entretien. Si personne ne découvre le mensonge, qu’a-t-il changé ?** Une excuse inventée peut être oubliée tout en ayant privé son destinataire d’un choix éclairé. Distinguer le dommage visible, la modification de la décision et l’habitude que prend celui qui ment.
 
 ## 6. Qu’est-ce qu’être de son temps ?
 
@@ -86,6 +100,8 @@ Une romancière qui refuse une convention en vogue peut rendre plus visibles les
 
 Lors d’une fête religieuse, un groupe se rassemble dans un calendrier commun et reconnaît publiquement certains engagements. Durkheim, dans *Les Formes élémentaires de la vie religieuse*, rend intelligible l’importance des pratiques qui font éprouver au groupe sa propre existence. Cette analyse explique une dimension de la religion sans épuiser ce que croit chaque participant ni régler la vérité des croyances. La même institution peut aussi marquer une frontière, exclure un membre ou devenir l’objet d’une controverse. Inversement, des personnes de religions différentes peuvent partager des institutions civiles et des solidarités ordinaires. La religion organise donc certains liens, selon des formes à décrire. Elle ne se confond pas avec tout ce qui unit une société et ne produit pas nécessairement la même intégration pour chacun.
 
+**À l’entretien. Une fête religieuse rassemble-t-elle tout le monde de la même façon ?** Comparer l’accueil du voisin venu en visite et les obligations du membre de la communauté. Un rite peut produire une solidarité interne tout en marquant une frontière. Nommer à chaque fois ceux que le lien réunit.
+
 ## 7. Le non-être
 
 « Il n’y a pas de livre sur la table » semble parler avec précision de ce qui n’est pas. Si le non-être n’est rien, comment le discours peut-il le viser ? Et si l’on en fait une chose logée quelque part, ne lui a-t-on pas déjà accordé l’être que le terme refuse ? Le problème se desserre dès que l’on distingue l’absence d’un objet attendu, la négation d’un prédicat et l’idée d’un néant absolu.
@@ -95,6 +111,8 @@ Dans le *Sophiste* de Platon, l’Étranger examine la possibilité de penser le
 ### Que nous apprend l’histoire des religions ?
 
 Un édifice change d’usage, un calendrier s’impose à un territoire, une formule rituelle se traduit dans une langue nouvelle. Ces traces enseignent comment des croyances sont transmises, instituées et transformées, parfois par des conflits ou des emprunts que la mémoire de la communauté a simplifiés. Elles permettent aussi de corriger la projection de nos catégories. Une séparation contemporaine entre « religieux » et « politique » ne se retrouve pas à l’identique à toute époque. Quelqu’un qui croit peut apprendre cette historicité de sa propre tradition, comme celui qui ne croit pas peut apprendre ce que les pratiques ont signifié pour leurs participants. Le passage d’une explication historique de la transmission à un jugement sur la vérité d’une croyance réclamerait toutefois un argument supplémentaire.
+
+**À l’entretien. Une explication historique d’une croyance réfute-t-elle cette croyance ?** La datation d’un rite explique sa transmission et ses transformations. Elle fournit parfois une objection à un récit sur son origine. Elle ne tranche pas à elle seule toutes les affirmations auxquelles ce rite donne un sens.
 
 ## 8. Puis-je faire ce que je veux de mon corps ?
 
@@ -106,6 +124,8 @@ Cette différence fonde une forte exigence de consentement. Nul ne peut, pour so
 
 Dans un récit familial, un changement de ville peut apparaître comme la décision soudaine d’un parent. Les archives d’un bassin industriel révèlent que plusieurs ateliers fermaient à la même date. Ce rapprochement replace la décision dans un ensemble de possibilités sans déduire la destination choisie de la seule conjoncture. Réciproquement, la lettre de la famille donne à voir une expérience du déplacement que les statistiques de l’emploi ne conservent pas. Halbwachs montre dans ses travaux sur la mémoire collective que les groupes fournissent aussi les cadres dans lesquels un souvenir personnel se reconstruit. On gagne à confronter témoignages et archives dans les deux sens. Le mouvement collectif n’est pas la somme de souvenirs privés, et l’existence singulière ne se réduit pas à l’illustration d’une force générale.
 
+**À l’entretien. Un souvenir de famille constitue-t-il une source d’histoire collective ?** Une photographie peut attester un lieu de travail et orienter vers des archives. La mémoire de son propriétaire éclaire l’expérience vécue. Il faut comparer d’autres traces avant d’étendre cette expérience à toute une génération.
+
 ## 9. Qui dit le juste ?
 
 Un tribunal décide à qui revient un bien disputé. La décision s’impose dans les conditions prévues par le droit. Faut-il en conclure que le jugement a rendu juste ce qu’il a déclaré ou que la justice était accessible avant et indépendamment de toute décision ? La première réponse empêche de reconnaître un jugement injuste. La seconde minimise le travail nécessaire pour établir les faits, interpréter une règle et rendre des prétentions incompatibles effectivement arbitrables.
@@ -115,6 +135,8 @@ Aristote, au livre V de l’*Éthique à Nicomaque*, examine l’équitable comm
 ### Le fini et l’infini
 
 Un segment possède deux extrémités et une longueur déterminée. On peut toutefois y choisir un milieu, puis le milieu de l’une des moitiés, sans rencontrer une dernière division prescrite par la géométrie. Le fini selon la longueur peut ainsi être indéfiniment divisible. Aristote éclaire ce type de cas par l’idée d’un infini en puissance, la possibilité de poursuivre une opération. Il faut le distinguer de la considération d’un ensemble infini comme totalité, par exemple celui des entiers naturels en mathématiques. Associer à chaque entier son double établit une correspondance terme à terme avec les entiers pairs, bien que ceux-ci ne remplissent qu’une partie du premier ensemble. Ces exemples précisent sous quel rapport une grandeur est bornée et en quel sens une opération ou une collection peut être dite infinie.
+
+**À l’entretien. Ajouter toujours une unité produit-il un nombre qui serait le dernier ?** Partir de n’importe quel entier et montrer qu’on peut en former le suivant. On établit ainsi l’absence de dernier terme. Demander ensuite ce qu’ajoute l’idée de considérer la suite entière comme un objet.
 
 ![Deux questions sur l’infini](figures/infini.svg)
 
@@ -128,6 +150,8 @@ L’article 12 de la Déclaration des droits de l’homme et du citoyen de 1789 
 
 « La grève s’étend sur la grève » réunit dans la même phrase un mouvement de cessation du travail et une étendue de rivage. Le lecteur doit momentanément maintenir deux sens du même son, puis les distribuer selon le contexte. Une telle surprise montre comment l’usage ordinaire sélectionne le sens si vite que nous oublions son ambiguïté possible. Un jeu de mots peut éclairer une question en rapprochant deux expressions ou montrer que deux interlocuteurs emploient un terme selon des règles différentes. Il peut également faire croire abusivement que deux réalités partagent une propriété parce qu’elles sont désignées de la même manière. Sa fécondité philosophique commence avec la surprise et dépend ensuite de la capacité à reconstruire, au-delà de la sonorité, une relation que des raisons peuvent soutenir.
 
+**À l’entretien. Pourquoi un jeu de mots se traduit-il parfois si mal ?** Faire varier le son tout en conservant le sens littéral. Si le second sens disparaît, le rapprochement phonétique faisait partie de ce qui était dit. Une traduction inventive cherchera éventuellement un autre rapprochement.
+
 ## 11. Peut-on perdre sa liberté ?
 
 Un contrat de travail m’engage pour certaines heures. Je ne peux plus les employer exactement comme auparavant, mais le revenu obtenu peut élargir le reste de mes choix. Toute limitation n’est donc pas une perte de liberté au même sens. Il faut distinguer l’option particulière que l’on abandonne, la possibilité de revenir sur un engagement et le statut qui permet encore de décider ou de contester.
@@ -138,4 +162,4 @@ Une captivité prive effectivement de la liberté d’aller et venir. Lui oppose
 
 Un poème qu’on se rappelle plusieurs années après sa lecture n’a peut-être transmis aucune information que l’on aurait pu relever dans un manuel. Pourtant, sa coupe ou la reprise d’un son a rendu perceptible une hésitation qu’une description abstraite nommait mal. La poésie peut transformer notre attention aux mots et aux expériences qu’ils permettent de partager. Elle peut aussi constituer une mémoire commune ou changer la manière de prendre la parole dans une circonstance publique. Lui demander de justifier chaque vers par un bénéfice décidé à l’avance menacerait toutefois cette puissance d’invention. La poésie a des usages réels, parfois imprévus. L’un d’eux consiste précisément à suspendre pour un moment la demande d’efficacité immédiate qui organise d’autres emplois du langage.
 
-[Feuille officielle du 19 juin](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_19_juin.pdf) · [Rapport du jury, modalités et annexe des sujets](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf)
+**À l’entretien. Un poème sans message pratique peut-il transformer une situation ?** Une élégie peut donner une forme partageable à un deuil sans le résoudre. Préciser le critère employé pour juger de son utilité et demander ce que la diction apporte qu’un avis pratique ne procurerait pas.

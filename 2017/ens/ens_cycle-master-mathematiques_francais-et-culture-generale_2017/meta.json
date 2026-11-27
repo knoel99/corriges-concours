@@ -5,7 +5,12 @@
     "filiere": "Cycle master mathématiques",
     "matiere": "Français et culture générale",
     "annee": 2017,
-    "modalite": "écrit"
+    "modalite": "écrit",
+    "etablissements_sur_garde": [
+      "École Normale Supérieure Paris-Saclay",
+      "École Normale Supérieure de Rennes"
+    ],
+    "code_garde": "2C7123"
   },
   "intitule": "Français et culture générale",
   "questions": 2,
@@ -28,9 +33,15 @@
       "fichier": "figures/houlou.svg",
       "question": "1",
       "legende": "Qui commande la mesure chez Houlou ?"
+    },
+    {
+      "fichier": "figures/choisir-la-duree.svg",
+      "question": "2b",
+      "legende": "À délai moyen égal, deux répartitions de l’attente.",
+      "provenance": "Schéma original pour cette révision."
     }
   ],
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -55,6 +66,124 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Confrontation au texte et aux deux questions du sujet, double recomptage du résumé et vérification des exemples et du raisonnement. Lecture du rapport de la session classé en ligne à l’oral."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle de la présentation de Condorcet et de l’image chiffrée, du seuil de généralisation de la note 3 et des deux horizons de décision. Deux commentaires et exemple calculé sur les délais. Collation des feuillets et double décompte du résumé."
     }
-  ]
+  ],
+  "duree_heures": 3,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2017_SE_2C_Math_FrancaisV2.pdf",
+      "sha256": "ad83fc3bcb1f88a87a06e55ce9734cfa481c7a6982ef4ac2ac61de02220afafd",
+      "pages": 6,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "ffc9632d3b5f98165f873b3ea3f365b870b30600524a77d7900d13a4b72563bb"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "81156f21ee5ea95c69e0425ea1f286f99b0e904cd9a671dab0a440dbc0f449fc"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "686fe9dd5eb2861aa648ec49822ac8c44d746b1405229bb5a9e6b637df3394bf"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "9f641ce8c55b37385bc439d08f714c61e072a94c5a79368da783860b6dae1e75"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "67d124746f25588a1b9d9ee45bb1a1723495b087a687c1138649e6a6d1871ab7"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "92696699fe20817210d7cf858fff75d0692e8d124466c3da879ee1121f00d5e2"
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2017_RO_2C_Math_Francais.pdf",
+      "sha256": "246d6c85f886ac96940436e3abdbb9feaa1bdc8952fb76dfd015d84ce5ffb1e1",
+      "pages": 4,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "ad8e1fc79752d89b1624f192716fbc1c148bdf2290d301dcac820beb4e0e6d28"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "e5e7ffaf5316ecd52d4d4d8295f6be043e5fff114465bece233e1c7fb31f5ec5"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "d91d1ade614653abc99d4d5e58c3fa23966678924118d8b508172f294c448bcc"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "ab7dd4de2eff034d835f1bed91d10d983c81d70ada2348169ca9f72f366db3d2"
+        }
+      ],
+      "rubriques": "p. 1, identification et consignes ; p. 2–3, résumé et expression ; p. 4, développement au choix.",
+      "classement": "Indexé en rapport oral, son contenu commente le résumé de Houlou et les deux commentaires écrits."
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2a",
+      "2b"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1",
+        "page_pdf": 6,
+        "consigne": "Résumer le texte en 380 mots (avec une marge de tolérance de + ou – 10%). Le nombre exact de mots utilisés sera indiqué en fin de résumé.",
+        "points": 10,
+        "cible_mots": 380,
+        "intervalle": [
+          342,
+          418
+        ],
+        "texte": "Antoine Houlou, « Du chiffrage de la politique à la politique du chiffre », Le Débat, 2015/2, n° 184, p. 118–123.",
+        "pages_texte": [
+          2,
+          6
+        ]
+      },
+      {
+        "question": "2a",
+        "page_pdf": 6,
+        "consigne": "Sous forme d’un développement construit, commenter, au choix, l’une des deux réflexions suivantes de l’auteur :",
+        "citation": "« Car le travail n’est plus une fin en soi ni un accomplissement personnel, mais un moyen de profiter du temps de non-travail. »"
+      },
+      {
+        "question": "2b",
+        "page_pdf": 6,
+        "consigne": "Sous forme d’un développement construit, commenter, au choix, l’une des deux réflexions suivantes de l’auteur :",
+        "citation": "« Si la pensée continue de se dissoudre dans le chiffre, la folie du court terme achèvera de tuer la construction sereine de l’avenir. »"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "choix": "Deux commentaires proposés pour les deux possibilités de la question 2, dont un seul était demandé, sur 10 points.",
+    "annexes_imposees": []
+  }
 }

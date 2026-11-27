@@ -42,5 +42,42 @@
       "modifications": true,
       "perimetre": "Rédaction des huit questions sur le tramage par remplissage, suréchantillonnage et aire, à partir des quatre pages natives. Vérification de 10 780 aires sur 308 droites en arithmétique rationnelle indépendante, traitement de la pente nulle, des égalités et des bords. Trois illustrations originales."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "pages_des_questions": {
+      "1": 2,
+      "2": 2,
+      "3": 3,
+      "4": 3,
+      "5": 3,
+      "6": 4,
+      "7": 4,
+      "8": 4
+    },
+    "precision": "Les 8 rubriques de chaque édition concordent avec les questions du fac-similé. Les deux séries de réponses ont été retrouvées au commit du journal indiqué.",
+    "origine_attestation": {
+      "commit_du_journal": "3ae841ba8990ad3f7f2e60a0982bdf5ab815f882",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction des huit questions sur le tramage par remplissage, suréchantillonnage et aire, à partir des quatre pages natives. Vérification de 10 780 aires sur 308 droites en arithmétique rationnelle indépendante, traitement de la pente nulle, des égalités et des bords. Trois illustrations originales.",
+      "sha256_sujet_controle": "e4b2f211d893c61f32c08e87ae0efd7708e1326777a1d54cea772d9a60860278"
+    },
+    "controle_fonctions": {
+      "fonctions": [
+        "intensite4"
+      ],
+      "cas_par_edition": 144
+    }
+  }
 }

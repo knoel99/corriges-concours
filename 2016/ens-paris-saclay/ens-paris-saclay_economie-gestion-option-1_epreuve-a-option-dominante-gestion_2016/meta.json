@@ -1,0 +1,82 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_epreuve-a-option-dominante-gestion_2016",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Épreuve à option — dominante gestion",
+    "annee": 2016,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "OML Football : immobilisations incorporelles, centre de formation et diagnostic financier",
+  "gabarit": "questions",
+  "questions": 21,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2016_Sujet_1A_D2-1_Options.pdf#page=3",
+    "sujet_sha256": "890c42dfc1c2ebf40a65c0066549b8a451b9b03b12d66b95c27de5da36855ba8",
+    "index": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=289&field_year_target_id%5B%5D=281",
+    "pages_sujet": "3–16 du fascicule C1693, annexes 1 à 5",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2016_Sujet_1A_D2-1_Options.pdf",
+        "pages": 16,
+        "sha256": "890c42dfc1c2ebf40a65c0066549b8a451b9b03b12d66b95c27de5da36855ba8"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/rentabilite-centre.svg",
+      "question": "1.1",
+      "legende": "En 2016, aux tarifs de référence, la contribution annuelle d’un interne couvre une fraction des frais fixes. La capacité physique du centre fixe la borne supérieure."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Résolution des 21 questions : écritures du logiciel et du brevet, budgets, bilan, trois hypothèses, SIG, bilan fonctionnel, flux OEC, CAF, VAN différentielle et guide méthodologique."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7",
+      "2.8",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "3.7"
+    ],
+    "limites": "Hypothèses de versement précisées. Le relevé publié ne ventile pas l’IS dans les dettes fiscales ; décomposition fonctionnelle sous hypothèse explicite. Bilan arrondi au k€, tableau réponse restitué."
+  }
+}

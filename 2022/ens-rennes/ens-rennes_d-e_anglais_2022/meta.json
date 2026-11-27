@@ -1,0 +1,63 @@
+{
+  "slug": "ens-rennes_d-e_anglais_2022",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Anglais",
+    "annee": 2022,
+    "modalite": "écrit"
+  },
+  "intitule": "Anglais",
+  "questions": 4,
+  "redaction": "Deux traductions intégrales et deux réponses en anglais de 244 et 251 mots. Raisonnement judiciaire sur la viabilité, accord diplomatique AUKUS et comparaison des effets d’une acquisition de logements ou d’une construction neuve.",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-anglais-d-e-e-crit-2022_1657700601752-pdf",
+    "sujet_sha256": "9ddb5ecbb825e29a4a46084f0843eafdf23cce6241912dccbc018e061fc10c01",
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2022-1",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-du-jury-lve-anglais-e-crit-d-e-2022_1681912988606-pdf",
+    "rapport_sha256": "155239b0389cbd37b9ae3a4d4e63b6312a241b719f2ef7a5aa8fc202b7a6e127"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "III.1",
+      "fichier": "figures/rental-supply.svg",
+      "legende": "The housing effect depends on what the investor does with the property."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Le jury demande de distinguer juges et juridictions, de retrouver l’antécédent de « it said » et d’interpréter l’expression « in so many words » dans son contexte."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Deux traductions intégrales et deux réponses en anglais de 244 et 251 mots. Raisonnement judiciaire sur la viabilité, accord diplomatique AUKUS et comparaison des effets d’une acquisition de logements ou d’une construction neuve."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I. Version",
+      "II. Thème",
+      "III.1. How legitimate are concerns about private companies buying up rental houses?",
+      "III.2. To what extent and why should governments regulate the presence of private equity in real estate?"
+    ]
+  }
+}

@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Les échelles de la décroissance
 
 De 2015 à 2020, la population du Japon diminue de 0,7 %, tandis que celle de la préfecture de Tokyo augmente de 3,9 %. Les deux observations portent sur la même période et décrivent le même pays. La seconde éclaire la première en montrant que la contraction nationale peut s’accompagner d’une concentration géographique. Une décroissance territoriale est une diminution mesurable et durable, démographique ou économique, qui modifie les conditions d’occupation d’un territoire. Le choix d’un indicateur, d’une durée et d’un périmètre fait donc partie de l’explication. Que révèle le passage d’une échelle à l’autre sur les mécanismes de la décroissance et sur la possibilité d’en gouverner les effets ?
@@ -17,6 +19,10 @@ La petite échelle cartographique permet d’abord de repérer une répartition.
 Le contraste existe à l’intérieur d’une même région urbaine. Entre les recensements de 2010 et 2020, la ville de Detroit passe de 713 777 à 639 111 habitants, soit une diminution de 10,5 %. Dans le comté d’Oakland, au nord-ouest du centre, la population passe de 1 202 362 à 1 274 395 habitants, en hausse de 6,0 %. Le deuxième périmètre se situe dans l’espace métropolitain mais hors de la ville de Detroit. Additionner ces deux seuls nombres ne produirait donc pas le bilan de la métropole entière. Les comparer montre en revanche combien il serait imprudent d’appliquer le taux de la ville-centre à tous ceux qui partagent avec elle un bassin d’emploi.
 
 Un taux dépend aussi du moment retenu. Deux recensements permettent d’établir un solde entre deux dates, mais ne garantissent pas que la baisse a été régulière dans l’intervalle, ni qu’elle se poursuivra. Pour parler de décroissance économique, il faut mobiliser un indicateur distinct, comme les emplois situés dans le périmètre. Un nombre d’usines qui baisse ne dit encore ni combien d’emplois persistent dans les services ni où habitent ceux qui les occupent. La cartographie la plus explicative superpose donc rarement tout. Elle met en regard quelques indicateurs construits dans des mailles et des temps comparables.
+
+À Detroit et dans le comté voisin d’Oakland, les évolutions opposées s’observent à l’intérieur d’une même région urbaine. Au Japon, Tokyo appartient au total national dont sa trajectoire s’écarte. Dans le premier cas, il faut encore connaître les autres territoires pour établir le bilan régional. Dans le second, il faut connaître les effectifs pour calculer la contribution de Tokyo.
+
+![Figure 1 — Deux changements d’échelle, deux types de comparaison](figures/comparer-perimetres.svg)
 
 ### II. Relier les échelles fait apparaître des mécanismes
 

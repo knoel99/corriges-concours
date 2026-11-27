@@ -1,0 +1,51 @@
+{
+  "perimetre": "Vérification documentaire des écrits A/L 2017 et 2022",
+  "controle": {
+    "date": "2026-11-26",
+    "session": "x_maths_b_anciennes",
+    "modele": "gpt-6.2-astra",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "epreuves": [
+    {
+      "slug": "ens-de-lyon_series-la-lv-sh-a-l_epreuve-de-specialite-geographie-ecrit_2017",
+      "epreuve": "Spécialité géographie, écrit, série sciences humaines",
+      "territoire": "Cergy-Pontoise",
+      "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/17-bel-epreuve-de-specialite-geographie_1506586871716_0.pdf",
+      "sha256_sujet": "76b3812d0e543fcf06b58eaa24b4177c272be1e3fc033c0d325af626127aaa63",
+      "pages_pdf": 3,
+      "archive": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2017",
+      "rapport": "https://www.ens-lyon.fr/sites/default/files/2018-03/GEO_TC_SPE_2017.pdf#page=4",
+      "sha256_rapport": "9f63f44f0c1639898ed1c5ceaac9203e41134e45d7d7b28f1bd8bbb343e83e89",
+      "inventaire": {
+        "p. 1": "Garde de l’écrit de spécialité, durée trois heures, sans atlas ni feuille de papier calque. Le sujet demande de commenter l’extrait du SCAN 25 au 1/25 000, édition 2015, secteur de Saint-Ouen-l’Aumône et de Pontoise.",
+        "p. 2 imprimée et p. 3 imprimée": "La deuxième page du PDF est un double feuillet. À gauche, extrait du SCAN 100, édition 2016, au 1/100 000. À droite, schéma de l’offre de transport de la communauté d’agglomération de Cergy-Pontoise en 2015.",
+        "p. 4 imprimée": "La troisième page du PDF reproduit la seule légende du SCAN 25. Sa note précise que la planche au format A1 assemblait plusieurs dalles de l’IGN."
+      },
+      "precision_manquante": "Planche A1 du SCAN 25, édition 2015, rassemblant les dalles de l’épreuve. Les documents publiés permettent d’étudier les transports et la situation dans le Val-d’Oise. Le cadrage et les figurés du document à commenter ne sont pas fournis.",
+      "statut": "Paire absente ou incomplète",
+      "recherche": "La rubrique des écrits de la session renvoie au PDF décrit ci-dessus. Les annexes d’oral identifiant d’autres cartes ont été distinguées du sujet écrit. Aucune planche principale authentifiée dans les pièces consultées."
+    },
+    {
+      "slug": "ens-de-lyon_series-la-lv-sh-a-l_epreuves-de-specialite-geographie-ecrit_2022",
+      "epreuve": "Spécialité géographie, écrit, série sciences humaines",
+      "territoire": "Sète",
+      "sujet": "https://www.ens-lyon.fr/sites/default/files/2022-11/Session-2022_BEL_Commentaire%20de%20carte_compressed.pdf",
+      "sha256_sujet": "454fc8fdb9e21288a02e5e2545b5bbc245884bc9e3f4a93b0f2bfa95de94efab",
+      "pages_pdf": 4,
+      "archive": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2022",
+      "rapport": "https://www.ens-lyon.fr/sites/default/files/2022-11/G%C3%A9ographie%202022.pdf#page=8",
+      "sha256_rapport": "fb9d2647a6771e7a0eadd18cb9d8ef727caa00d901219194871a1b0c0874dc5d",
+      "inventaire": {
+        "p. 1": "Garde de l’écrit. Trois heures, sans atlas ni feuille de papier calque. Le commentaire porte sur l’extrait de Sète au 1/25 000, SCAN 25 édition 2021.",
+        "p. 2": "Extrait du SCAN 100, édition 2020, au 1/100 000.",
+        "p. 3": "Deux photographies aériennes de Sète. En haut, vue depuis le nord-ouest attribuée à Sète Agglopôle Méditerranée. En bas, vue depuis le sud attribuée à Midi Libre (septembre 2021).",
+        "p. 4": "Légende du SCAN 25. La note précise que la planche A2 assemblait plusieurs dalles de l’IGN et mentionne des différences de figurés."
+      },
+      "precision_manquante": "Planche A2 du SCAN 25, édition 2021, au cadrage effectivement distribué. Le SCAN 100 et les deux photographies du port accompagnent ce document et permettent une contextualisation. Ils ne permettent pas sa lecture topographique détaillée.",
+      "statut": "Paire absente ou incomplète",
+      "recherche": "La rubrique des écrits de la session renvoie au PDF décrit ci-dessus. Les annexes d’oral identifiant d’autres cartes ont été distinguées du sujet écrit. Aucune planche principale authentifiée dans les pièces consultées."
+    }
+  ]
+}

@@ -11,7 +11,8 @@
   "sources": {
     "sujet": "https://www.vmaths.fr/wp-content/uploads/XENS/MP/X_ENS_2010_MP_M1_enonce.pdf",
     "rapport_jury": "https://www.doc-solus.fr/prepa/sci/adc/pdf/rapports.pdf/2010/MP_MATHS_X_1_2010.rapport.pdf",
-    "sha256_sujet": "e1e889f003249e16f9acf3d3ad27dfbb7113376458b1246e0362d3deba19af88"
+    "sha256_sujet": "e1e889f003249e16f9acf3d3ad27dfbb7113376458b1246e0362d3deba19af88",
+    "sha256_rapport_jury": "3adec875162d1f1eb822ca41e22ebf29f84181244bcd541225f774c37de6326b"
   },
   "figures": [
     {
@@ -31,6 +32,93 @@
       "perimetre": "Rédaction des deux éditions à partir de la première composition en quatre pages et du rapport. Dualité, courbes tangentes, existence du minimum sans compacité du groupe, morphismes différentiables et formule complète des commutateurs itérés. Illustration du minimum sur les diagonales en dimension deux.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Factorisation des formes linéaires, courbes tangentes, compacité du sous-niveau, minimum sur le groupe spécial linéaire et vérification de la différentielle matricielle sur un exemple non commutatif.",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "agent": "rennes_oraux_economie",
+      "session": "rennes_oraux_economie"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.a",
+      "1.b",
+      "2",
+      "3",
+      "4",
+      "5.a",
+      "5.b",
+      "6.a",
+      "6.b",
+      "6.c",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11.a",
+      "11.b",
+      "12.a",
+      "12.b",
+      "13.a",
+      "13.b",
+      "13.c",
+      "14.a",
+      "14.b",
+      "15.a",
+      "15.b",
+      "15.c",
+      "15.d",
+      "16.a",
+      "16.b",
+      "16.c",
+      "16.d"
+    ],
+    "pages_du_sujet": 4,
+    "pages_pdf_des_questions": {
+      "1.a": 1,
+      "1.b": 1,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5.a": 2,
+      "5.b": 2,
+      "6.a": 2,
+      "6.b": 2,
+      "6.c": 2,
+      "7": 3,
+      "8": 3,
+      "9": 3,
+      "10": 3,
+      "11.a": 3,
+      "11.b": 3,
+      "12.a": 3,
+      "12.b": 3,
+      "13.a": 3,
+      "13.b": 3,
+      "13.c": 3,
+      "14.a": 4,
+      "14.b": 4,
+      "15.a": 4,
+      "15.b": 4,
+      "15.c": 4,
+      "15.d": 4,
+      "16.a": 4,
+      "16.b": 4,
+      "16.c": 4,
+      "16.d": 4
+    },
+    "precision": "Sous-questions relevées sur le fac-similé. Le numéro de page désigne le début de chaque demande dans le PDF original."
+  }
 }

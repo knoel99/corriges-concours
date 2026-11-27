@@ -1,0 +1,68 @@
+{
+  "slug": "bel_bl_economie-oral-commun-delinquance-et-criminalite_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Économie (oral commun) — Délinquance et criminalité",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "Délinquance et criminalité : déterminants et fonctionnement",
+  "questions": 0,
+  "documents": 5,
+  "date_revision": "2026-11-26",
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_dossiers_24_juin_economie.pdf#page=11",
+    "sujet_sha256": "7fcdd31dc80d2dd536d34312f0e416cbf4d177be4b4c326f1646eead3e52cd11",
+    "pages_sujet": "11 à 19 sur 27",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_economie_tronc_commun.pdf",
+    "rapport_sha256": "b0b1a696afc5d758d40283be9361a3fe50abd56041e7cad3533c62eabb4c5dd7",
+    "pages_rapport": "1–2, titre confirmé p. 2"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "agent": "fui_physique_un",
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Économie publique des cinq documents, lecture des chiffres et des dénominateurs, évaluation causale, prévention et deux illustrations graphiques originales."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Document 1",
+      "fichier": "figures/moyens-et-enregistrements.svg",
+      "legende": "Deux séries distinctes et deux périodes. Agents municipaux en 2012 et 2023, victimes enregistrées par la police et la gendarmerie en 2016 et 2024. Sénat, document 1."
+    },
+    {
+      "numero": 2,
+      "question": "Document 3",
+      "fichier": "figures/quartiers-et-infractions.svg",
+      "legende": "Infractions enregistrées pour 1 000 habitants. Comparaison des quartiers prioritaires et du reste des unités urbaines qui les contiennent. Moyennes de 2021–2022, France hors Mayotte, SSMSI."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "precision": "Une question générale sur dossier, sans questions numérotées. Les deux éditions proposent un exposé complet qui traite chaque document.",
+    "documents_entierement_traites": [
+      "Document 1",
+      "Document 2",
+      "Document 3",
+      "Document 4",
+      "Document 5"
+    ],
+    "controle_des_documents": [
+      "Document 1, pages PDF 12–12. Polices municipales 19 405 à 28 161 agents, victimes enregistrées de 214 700 à 336 800, part intrafamiliale de 44 à 57 %.",
+      "Document 2, pages PDF 13–14. Multiplicateur social, sélection, programme MTO à trois bras, 638 familles et baisse relative des arrestations.",
+      "Document 3, pages PDF 15–15. Comparaison 2021–2022 QPV / hors QPV d’unités urbaines contenant ces quartiers. 4,2 / 2,5 et 2,0 / 3,7 pour mille.",
+      "Document 4, pages PDF 16–17. Incitations, contexte, inégalités, échelles d’analyse, organisations et externalités.",
+      "Document 5, pages PDF 18–19. Champs des 900 000 et 600 000, demande, coût collectif et coordination des politiques de prévention, de santé et de sécurité."
+    ]
+  }
+}

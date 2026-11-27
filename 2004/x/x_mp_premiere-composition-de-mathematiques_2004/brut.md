@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le multiplicateur sur une période décide de l’existence des solutions périodiques. Une perturbation non linéaire s’étudie ensuite par point fixe, puis une équation autonome illustre les intervalles maximaux et la stabilité.
 
 ## I. Équations linéaires périodiques
@@ -24,6 +26,8 @@ La fonction $t\mapsto x_c(t+T)$ satisfait la même équation. Par unicité, la p
 
 Avec la convention $\widehat f(n)=(2\pi)^{-1}\int_0^{2\pi}f(t)e^{-int}\,dt$, l’équation donne $(in-k)\widehat x(n)=\widehat b(n)$. Pour $k\ne0$, le dénominateur ne s’annule jamais. La série des $|\widehat x(n)|$ converge par Cauchy–Schwarz, car $(\widehat b(n))\in\ell^2$ par Bessel et $\sum_n(k^2+n^2)^{-1}<\infty$. La série de Fourier de $x$ converge normalement, donc absolument et uniformément. Sa somme est $x$ par unicité des coefficients pour les fonctions continues périodiques.
 
+Le passage de $x'$ aux coefficients utilise l’intégration par parties. Son terme de bord vaut $[x(t)e^{-int}]_0^{2\pi}=0$, d’où $\widehat{x'}(n)=in\widehat x(n)$. Pour $n=0$ on retrouve bien $\widehat x(0)=-\widehat b(0)/k$.
+
 ### Question 3.b
 
 Pour $k=0$, l’équation est $x'=b$. Une primitive périodique existe exactement si $\widehat b(0)=0$. Dans ce cas, $\widehat x(0)$ est une constante réelle arbitraire et $\widehat x(n)=\widehat b(n)/(in)$ pour $n\ne0$. Comme en 3.a, la série converge normalement vers $x$.
@@ -37,6 +41,8 @@ Pour une solution sur un intervalle contenant zéro, $(x/g)'=H(x(t),t)/g(t)$. L�
 ### Question 5
 
 Pour $x\in P$, $b_x(t)=H(x(t),t)$ est continue et $T$-périodique. La formule de 2.b fournit l’unique solution périodique $y$ de $y'=ay+b_x$. Entre $t$ et $t+T$, la variation des constantes donne $y(t+T)/g(t+T)-y(t)/g(t)=\int_t^{t+T}b_x(s)/g(s)\,ds$. Or $y(t+T)=y(t)$ et $g(t+T)=e^Ag(t)$. On obtient exactement $y=U_Hx$, qui appartient donc à $P$. Ainsi $x$ est solution périodique de (E3) exactement si $x=y$, c’est-à-dire $x=U_Hx$.
+
+Sous forme explicite, le calcul donne $U_Hx(t)=e^Ag(t)\int_t^{t+T}H(x(s),s)/g(s)\,ds/(1-e^A)$. Le signe de $1-e^A$ provient de la différence des valeurs de $y/g$ aux deux extrémités. Il est essentiel, par exemple, pour retrouver la constante en question 8.
 
 ### Question 6.a
 
@@ -73,6 +79,8 @@ L’équation $-c+\varepsilon c^2=0$ a pour solutions $0$ et $1/\varepsilon$. Po
 Le champ polynomial donne existence et unicité locales. Pour $\alpha=0$ la solution est identiquement nulle, pour $\alpha=1/\varepsilon$ elle est constante égale à $1/\varepsilon$, toutes deux sur $\mathbb R$. Pour les autres données, l’unicité empêche de traverser zéro, et $y=1/x$ vérifie $y'=y-\varepsilon$. Ainsi
 $$\varphi_\alpha(t)=\frac{\alpha}{\varepsilon\alpha+(1-\varepsilon\alpha)e^t}.$$
 Si $0<\alpha<1/\varepsilon$, le dénominateur est positif pour tout $t$ et la solution décroît de $1/\varepsilon$ vers zéro. Pour $\alpha<0$ ou $\alpha>1/\varepsilon$, posons $t_*=\log[\varepsilon\alpha/(\varepsilon\alpha-1)]$. Pour $\alpha<0$, $t_*<0$, l’intervalle maximal est $(t_*,+\infty)$, la solution part de $-\infty$ et tend vers zéro. Pour $\alpha>1/\varepsilon$, $t_*>0$, l’intervalle maximal est $(-\infty,t_*)$, la solution tend vers $1/\varepsilon$ à gauche et vers $+\infty$ au pôle. La divergence au bord fini justifie la maximalité.
+
+Pour vérifier le sens des branches représentées, $x'=x(\varepsilon x-1)$ est positif sur $]-\infty,0[$ et sur $]1/\varepsilon,+\infty[$, négatif entre les deux équilibres. Unicité et signe du champ expliquent pourquoi aucune des courbes ne traverse les deux droites horizontales.
 
 ![Figure 1 — Pour ε = 1, les équilibres sont 0 et 1. Les trois données initiales illustrent les branches maximales, dont deux ont un pôle en temps fini.](figures/trajectoires-et-equilibres.svg)
 

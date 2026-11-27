@@ -4,11 +4,12 @@
     "concours": "ENS Paris-Saclay",
     "filiere": "Design",
     "matiere": "Philosophie de l’art",
-    "annee": 2026
+    "annee": 2026,
+    "modalite": "écrit"
   },
   "intitule": "Qu’est-ce qu’un design écologique ?",
   "gabarit": "dissertation",
-  "questions": 0,
+  "questions": 1,
   "redaction": "Proposition non officielle rédigée par IA.",
   "modele": {
     "provider": "codex",
@@ -23,16 +24,23 @@
     "references": [
       "https://www.fairphone.com/resources/pdf/Fairphone5_LCA_Report_2024.pdf",
       "https://observatoire-reemploi-reutilisation.ademe.fr/actualites/etude-consigne-emballages"
-    ]
+    ],
+    "consigne_imprimee": "Qu’est-ce qu’un design écologique ?",
+    "page_pdf_sujet": 3,
+    "numero_epreuve": 3,
+    "index_annales": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=605",
+    "index_annales_sha256": "d10dbe2d8a06206da005dae4795374eee9a4b1c4a9de0e3c7531df09a30c26ed",
+    "citation_repere": null,
+    "rapport_jury_verification": "L’index consulté pour cette session ne répertorie pas de rapport de philosophie de l’art."
   },
   "figures": [
     {
       "fichier": "figures/objet-usages-service.svg",
       "question": "Composition",
-      "legende": "La promesse écologique à trois échelles"
+      "legende": "Pour cent livraisons d’un litre, vingt bouteilles utilisées cinq fois et cinquante bouteilles utilisées deux fois rendent le même service."
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -57,6 +65,77 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Relecture de l’argument, distinction entre objet réemployable et réemploi effectif, vérification des références à l’ADEME et à l’analyse du Fairphone 5."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet « Qu’est-ce qu’un design écologique ? ». Comparaison à service identique de deux organisations du réemploi d’une même bouteille."
+    },
+    {
+      "phase": "revision",
+      "agent": "x_hist_1986",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture de la demande de définition, calcul à service identique sur deux flottes hypothétiques, différence entre réemploi et bénéfice écologique, prise en compte des milieux vivants et de leurs temporalités."
     }
-  ]
+  ],
+  "duree_heures": 4,
+  "intitule_editorial": false,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2026/2026_SUJET_1A_Design_Philosophie_de_l_art.pdf",
+      "sha256": "492de053accc54f8f41f1bf42d49a4ac17a89dcbd1d65cc3ab62ca0b3fd8d78c",
+      "pages": 3,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "be0dd6314946f323f113fdda5cf0c87ae35f4fb154ff91186278803e48b3f88e"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "17450deee3ccf23621cf1715213a08ddc1b462a3fcd8aeae64b4a0eb9b3d6f05"
+        }
+      ]
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Composition"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Composition",
+        "page_pdf": 3,
+        "consigne": "Qu’est-ce qu’un design écologique ?"
+      }
+    ],
+    "annexes_sujet": [],
+    "pages_blanches": [
+      2
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
 }

@@ -1,0 +1,775 @@
+{
+  "slug": "banque-pt_pt_physique-a_2015",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique A",
+    "intitule": "Épreuve de Physique A",
+    "annee": 2015,
+    "duree": "4 h",
+    "modalite": "écrit",
+    "code_garde": "040"
+  },
+  "questions": 82,
+  "redaction": "Proposition pédagogique non officielle, rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2015/ph_a_2015_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2015/rapport_phys_a_ecrit_2015.pdf",
+    "livret": "https://www.banquept.fr/documents/livret/2015/Livret_PT_2015.pdf",
+    "sujet_sha256": "236ea3b0fa4ed414827ef92063dd8e3b5b4fef0bdf8a92fd801267d3ce7c0212",
+    "rapport_jury_sha256": "515e3f74525a1c0e7a950a02593f985ea3a80d60ce7b332fab16ea3023ebd8db",
+    "observation_rapport": "Le jury commente les champs, les sensibilités, la mécanique, les chronogrammes et le montage oscillant, principalement en première page. Les écarts entre C.3, C.4 et les légendes de D sont établis ici par substitution et lecture des périodes."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2015/ph_a_2015_pt.pdf",
+      "sha256": "236ea3b0fa4ed414827ef92063dd8e3b5b4fef0bdf8a92fd801267d3ce7c0212",
+      "pages": 12,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "b1812fac3b78d6b406fa02de001d0eb603b3cbb30109682150e750b65a72062f"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "de439d489f5da0edf66d60257c6bd74b2eebecd775306c02d164fe80d796732d"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "e0fd663899edd1a1076cec8d69071f06e8e0e1c472de0e9f2fae70a41c3a375d"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "d921b57caca1ad5e5e8faf893036590874b169f9fb2fff05611290e109417fe3"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "b8d805f1cf20c8438f37c05f7e7a7221c82240e3983679cc2077e21e20a9c368"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "fe53c904355fcb75e5c239fb26b3c65f686ae7423c3c09c8a7af8d02a5f072fd"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "5d15dfb3a059538c3a573098ad6ff3f45d347cddb4c9e6c18ee76ddc9856ea63"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "8d65ce3bc17db24445ec8fe1e8e9b63b764390893d17f9148f92d0164b4e7022"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "fc2b395652e978089f67c6fc8fc241b9bf7ad248d5ad6830f9d8a6e5bb3fc9c6"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "9fdcb32f471d29e94c92a5f272c9a59d42d7c06723ac32102ce802875d59ae39"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "23a830609edce9be84e46a239aa3ac0f759a53273ab0842accf0ac3de748019d"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "ab8b0a6a2f1c073ea895f2a83320fbae1f7a17d3fa652b9bac021dc0545cab8c"
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2015/rapport_phys_a_ecrit_2015.pdf",
+      "sha256": "515e3f74525a1c0e7a950a02593f985ea3a80d60ce7b332fab16ea3023ebd8db",
+      "pages": 2,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "6b65f73fe63d4ca4ff808414470bba775add1373914dd4fed6483697e63abaa8"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "90f065117a20da11c78d1cd3b6d4274e01b2dd0f8842af2abe123eaea0de4e8d"
+        }
+      ]
+    },
+    "livret": {
+      "url": "https://www.banquept.fr/documents/livret/2015/Livret_PT_2015.pdf",
+      "sha256": "00daed661c4cca725666c4035b6b2b29111ac29ccd980edf6db5421458ba7b68",
+      "pages": 79,
+      "pages_verifiees": [
+        {
+          "numero": 8,
+          "rendu_sha256": "97c5fb7054318f30b930c5d09fb183a3edad8ef240920837c06b2fb50876235f"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "c73be06e960ffc50f91687716c1dbb3811f1b85e2fa4339606e62683ddf4dd72"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "ae9533f9e83438e4b2041b390ff1513489c94d021035c2f75e952b8cba19520b"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "A.2.a",
+      "fichier": "figures/champ-et-tension.svg",
+      "legende": "Les lignes du champ vont de la plaque positive à la plaque négative. La flèche de tension monte vers le potentiel supérieur.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "A.3.b",
+      "fichier": "figures/champ-potentiel.svg",
+      "legende": "Le champ normalisé forme un créneau négatif et le potentiel normalisé une rampe entre deux plateaux.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "A.3.f.ii",
+      "fichier": "figures/capacites.svg",
+      "legende": "Pour les plaques, la tangente approche la courbe autour de zéro. Pour les cylindres, le recouvrement fixe une capacité paire.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "A.6.b",
+      "fichier": "figures/deux-etalonnages.svg",
+      "legende": "À gauche, les capacités complémentaires gardent une somme fixe. À droite, l’inductance décroît entre ses deux valeurs extrêmes.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "B.1.b",
+      "fichier": "figures/solenoide.svg",
+      "legende": "Les lignes du solénoïde fini se referment à l’extérieur. Le modèle illimité conserve le champ axial intérieur.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "C.3.b",
+      "fichier": "figures/modes.svg",
+      "legende": "Les vrais modes du système de Newton ont des amplitudes inégales. Le rapide est en opposition de phase et le lent en phase.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "D.1.b",
+      "fichier": "figures/spectres.svg",
+      "legende": "Chaque paire de raies encadre la porteuse à 400 Hz. Les espacements emploient les fréquences mécaniques lues sur la figure 9.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "E.1.b",
+      "fichier": "figures/bode.svg",
+      "legende": "Le pic à moins 20 décibels se trouve au-dessus de l’intersection des deux asymptotes.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "E.4.e",
+      "fichier": "figures/amorcage.svg",
+      "legende": "Une perturbation de 0,05 V croît sous une enveloppe exponentielle avant la limitation des crêtes à 11 V.",
+      "provenance": "Figure originale."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A.1.a",
+      "A.1.b",
+      "A.1.c",
+      "A.2.a",
+      "A.2.b",
+      "A.2.c",
+      "A.3.a",
+      "A.3.b",
+      "A.3.c",
+      "A.3.d",
+      "A.3.e",
+      "A.3.f.i",
+      "A.3.f.ii",
+      "A.3.f.iii",
+      "A.3.f.iv",
+      "A.4.a",
+      "A.4.b",
+      "A.4.c",
+      "A.4.d",
+      "A.4.e",
+      "A.4.f",
+      "A.4.g",
+      "A.4.h",
+      "A.5.a",
+      "A.5.b",
+      "A.5.c.i",
+      "A.5.c.ii",
+      "A.5.c.iii",
+      "A.6.a",
+      "A.6.b",
+      "A.7.i",
+      "A.7.ii",
+      "A.7.iii",
+      "A.7.iv",
+      "B.1.a",
+      "B.1.b",
+      "B.1.c",
+      "B.1.d",
+      "B.1.e",
+      "B.2.a",
+      "B.2.b",
+      "B.2.c",
+      "C.1.a",
+      "C.1.b",
+      "C.2.a",
+      "C.2.b",
+      "C.3.a",
+      "C.3.b",
+      "C.4.a",
+      "C.4.b.i.1",
+      "C.4.b.i.2",
+      "C.4.b.i.3",
+      "C.4.b.i.4",
+      "C.4.b.ii.1",
+      "C.4.b.ii.2",
+      "C.4.b.ii.3",
+      "C.4.b.ii.4",
+      "D.1.a",
+      "D.1.b",
+      "D.1.c",
+      "D.2.a.i",
+      "D.2.a.ii",
+      "D.2.b",
+      "D.2.c",
+      "D.2.d",
+      "E.1.a",
+      "E.1.b",
+      "E.1.c",
+      "E.1.d",
+      "E.2.a",
+      "E.2.b",
+      "E.3.a",
+      "E.3.b.i",
+      "E.3.b.ii",
+      "E.3.c",
+      "E.4.a",
+      "E.4.b",
+      "E.4.c",
+      "E.4.d",
+      "E.4.e",
+      "E.5.a",
+      "E.5.b"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "annexes_imposees": [
+      "Le verso final est blanc."
+    ],
+    "document_reponse_mentionne": null,
+    "repere_par_question": [
+      {
+        "question": "A.1.a",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Maxwell en régime stationnaire"
+      },
+      {
+        "question": "A.1.b",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Flux électrique"
+      },
+      {
+        "question": "A.1.c",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Passage de la loi locale à la loi intégrale"
+      },
+      {
+        "question": "A.2.a",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Conventions du condensateur"
+      },
+      {
+        "question": "A.2.b",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Charge et tension"
+      },
+      {
+        "question": "A.2.c",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Influence des armatures"
+      },
+      {
+        "question": "A.3.a",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Lignes orientées"
+      },
+      {
+        "question": "A.3.b",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Champ dans tout l’espace"
+      },
+      {
+        "question": "A.3.c",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Potentiel électrique"
+      },
+      {
+        "question": "A.3.d",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Graphe du potentiel"
+      },
+      {
+        "question": "A.3.e",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Capacité plane"
+      },
+      {
+        "question": "A.3.f.i",
+        "page_pdf": 3,
+        "page_rapport": null,
+        "objet": "Déplacement de la plaque"
+      },
+      {
+        "question": "A.3.f.ii",
+        "page_pdf": 3,
+        "page_rapport": null,
+        "objet": "Courbe exacte"
+      },
+      {
+        "question": "A.3.f.iii",
+        "page_pdf": 3,
+        "page_rapport": null,
+        "objet": "Approximation affine"
+      },
+      {
+        "question": "A.3.f.iv",
+        "page_pdf": 3,
+        "page_rapport": null,
+        "objet": "Tangente à l’origine"
+      },
+      {
+        "question": "A.4.a",
+        "page_pdf": 3,
+        "page_rapport": 1,
+        "objet": "Repérage coaxial"
+      },
+      {
+        "question": "A.4.b",
+        "page_pdf": 3,
+        "page_rapport": 1,
+        "objet": "Direction et sens du champ"
+      },
+      {
+        "question": "A.4.c",
+        "page_pdf": 3,
+        "page_rapport": 1,
+        "objet": "Champ par zones"
+      },
+      {
+        "question": "A.4.d",
+        "page_pdf": 3,
+        "page_rapport": 1,
+        "objet": "Potentiel et tension coaxiaux"
+      },
+      {
+        "question": "A.4.e",
+        "page_pdf": 3,
+        "page_rapport": 1,
+        "objet": "Capacité par unité de longueur"
+      },
+      {
+        "question": "A.4.f",
+        "page_pdf": 4,
+        "page_rapport": null,
+        "objet": "Recouvrement mobile"
+      },
+      {
+        "question": "A.4.g",
+        "page_pdf": 4,
+        "page_rapport": null,
+        "objet": "Pentes du graphe coaxial"
+      },
+      {
+        "question": "A.4.h",
+        "page_pdf": 4,
+        "page_rapport": null,
+        "objet": "Information de position"
+      },
+      {
+        "question": "A.5.a",
+        "page_pdf": 4,
+        "page_rapport": 1,
+        "objet": "Conversion résistance-capacité"
+      },
+      {
+        "question": "A.5.b",
+        "page_pdf": 4,
+        "page_rapport": 1,
+        "objet": "Sensibilités de l’amplitude et de la phase"
+      },
+      {
+        "question": "A.5.c.i",
+        "page_pdf": 4,
+        "page_rapport": 1,
+        "objet": "Dépendance en position"
+      },
+      {
+        "question": "A.5.c.ii",
+        "page_pdf": 4,
+        "page_rapport": 1,
+        "objet": "Variation de l’excitation"
+      },
+      {
+        "question": "A.5.c.iii",
+        "page_pdf": 4,
+        "page_rapport": 1,
+        "objet": "Choix de la lecture"
+      },
+      {
+        "question": "A.6.a",
+        "page_pdf": 5,
+        "page_rapport": null,
+        "objet": "Deux longueurs complémentaires"
+      },
+      {
+        "question": "A.6.b",
+        "page_pdf": 5,
+        "page_rapport": null,
+        "objet": "Évolution différentielle"
+      },
+      {
+        "question": "A.7.i",
+        "page_pdf": 5,
+        "page_rapport": null,
+        "objet": "Tension complexe du pont"
+      },
+      {
+        "question": "A.7.ii",
+        "page_pdf": 5,
+        "page_rapport": null,
+        "objet": "Amplitude et déplacement"
+      },
+      {
+        "question": "A.7.iii",
+        "page_pdf": 5,
+        "page_rapport": null,
+        "objet": "Sensibilité du pont"
+      },
+      {
+        "question": "A.7.iv",
+        "page_pdf": 5,
+        "page_rapport": null,
+        "objet": "Information de phase"
+      },
+      {
+        "question": "B.1.a",
+        "page_pdf": 6,
+        "page_rapport": 1,
+        "objet": "Loi d’Ampère"
+      },
+      {
+        "question": "B.1.b",
+        "page_pdf": 6,
+        "page_rapport": 1,
+        "objet": "Champ du solénoïde fini"
+      },
+      {
+        "question": "B.1.c",
+        "page_pdf": 6,
+        "page_rapport": 1,
+        "objet": "Champ extérieur du modèle illimité"
+      },
+      {
+        "question": "B.1.d",
+        "page_pdf": 6,
+        "page_rapport": 1,
+        "objet": "Champ intérieur"
+      },
+      {
+        "question": "B.1.e",
+        "page_pdf": 6,
+        "page_rapport": 1,
+        "objet": "Auto-inductance"
+      },
+      {
+        "question": "B.2.a",
+        "page_pdf": 7,
+        "page_rapport": null,
+        "objet": "Nombre de spires par tronçon"
+      },
+      {
+        "question": "B.2.b",
+        "page_pdf": 7,
+        "page_rapport": null,
+        "objet": "Inductance variable"
+      },
+      {
+        "question": "B.2.c",
+        "page_pdf": 7,
+        "page_rapport": null,
+        "objet": "Droite d’étalonnage"
+      },
+      {
+        "question": "C.1.a",
+        "page_pdf": 7,
+        "page_rapport": 1,
+        "objet": "Équilibre mécanique"
+      },
+      {
+        "question": "C.1.b",
+        "page_pdf": 7,
+        "page_rapport": 1,
+        "objet": "Modules des tensions"
+      },
+      {
+        "question": "C.2.a",
+        "page_pdf": 8,
+        "page_rapport": 1,
+        "objet": "Deuxième masse"
+      },
+      {
+        "question": "C.2.b",
+        "page_pdf": 8,
+        "page_rapport": 1,
+        "objet": "Première masse"
+      },
+      {
+        "question": "C.3.a",
+        "page_pdf": 8,
+        "page_rapport": 1,
+        "objet": "Système modal"
+      },
+      {
+        "question": "C.3.b",
+        "page_pdf": 8,
+        "page_rapport": 1,
+        "objet": "Pulsations et vecteurs propres"
+      },
+      {
+        "question": "C.4.a",
+        "page_pdf": 8,
+        "page_rapport": 1,
+        "objet": "Phases pour un départ sans vitesse"
+      },
+      {
+        "question": "C.4.b.i.1",
+        "page_pdf": 8,
+        "page_rapport": 1,
+        "objet": "Premier départ et amplitudes"
+      },
+      {
+        "question": "C.4.b.i.2",
+        "page_pdf": 8,
+        "page_rapport": 1,
+        "objet": "Fréquences du premier départ"
+      },
+      {
+        "question": "C.4.b.i.3",
+        "page_pdf": 8,
+        "page_rapport": 1,
+        "objet": "Caractère du premier mouvement"
+      },
+      {
+        "question": "C.4.b.i.4",
+        "page_pdf": 8,
+        "page_rapport": 1,
+        "objet": "Loi horaire du premier départ"
+      },
+      {
+        "question": "C.4.b.ii.1",
+        "page_pdf": 8,
+        "page_rapport": 1,
+        "objet": "Second départ et amplitudes"
+      },
+      {
+        "question": "C.4.b.ii.2",
+        "page_pdf": 8,
+        "page_rapport": 1,
+        "objet": "Fréquences du second départ"
+      },
+      {
+        "question": "C.4.b.ii.3",
+        "page_pdf": 8,
+        "page_rapport": 1,
+        "objet": "Caractère du second mouvement"
+      },
+      {
+        "question": "C.4.b.ii.4",
+        "page_pdf": 8,
+        "page_rapport": 1,
+        "objet": "Loi horaire du second départ"
+      },
+      {
+        "question": "D.1.a",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Modulation par le déplacement"
+      },
+      {
+        "question": "D.1.b",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Raies du premier signal"
+      },
+      {
+        "question": "D.1.c",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Raies du second signal"
+      },
+      {
+        "question": "D.2.a.i",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Porteuse sur le tracé a"
+      },
+      {
+        "question": "D.2.a.ii",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Enveloppe sur le tracé a"
+      },
+      {
+        "question": "D.2.b",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Lectures sur le tracé b"
+      },
+      {
+        "question": "D.2.c",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Pulsations mesurées"
+      },
+      {
+        "question": "D.2.d",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Confrontation avec les modes calculés"
+      },
+      {
+        "question": "E.1.a",
+        "page_pdf": 10,
+        "page_rapport": 1,
+        "objet": "Asymptotes du gain"
+      },
+      {
+        "question": "E.1.b",
+        "page_pdf": 10,
+        "page_rapport": 1,
+        "objet": "Diagramme de Bode"
+      },
+      {
+        "question": "E.1.c",
+        "page_pdf": 10,
+        "page_rapport": 1,
+        "objet": "Nature du filtre"
+      },
+      {
+        "question": "E.1.d",
+        "page_pdf": 10,
+        "page_rapport": 1,
+        "objet": "Identification des paramètres du filtre"
+      },
+      {
+        "question": "E.2.a",
+        "page_pdf": 10,
+        "page_rapport": 1,
+        "objet": "Amplificateur non inverseur"
+      },
+      {
+        "question": "E.2.b",
+        "page_pdf": 10,
+        "page_rapport": 1,
+        "objet": "Module de l’amplificateur"
+      },
+      {
+        "question": "E.3.a",
+        "page_pdf": 10,
+        "page_rapport": 1,
+        "objet": "Équation de boucle"
+      },
+      {
+        "question": "E.3.b.i",
+        "page_pdf": 10,
+        "page_rapport": 1,
+        "objet": "Condition d’entretien"
+      },
+      {
+        "question": "E.3.b.ii",
+        "page_pdf": 10,
+        "page_rapport": 1,
+        "objet": "Fréquence entretenue"
+      },
+      {
+        "question": "E.3.c",
+        "page_pdf": 10,
+        "page_rapport": 1,
+        "objet": "Amorçage oscillant"
+      },
+      {
+        "question": "E.4.a",
+        "page_pdf": 11,
+        "page_rapport": 1,
+        "objet": "Solution numérique transitoire"
+      },
+      {
+        "question": "E.4.b",
+        "page_pdf": 11,
+        "page_rapport": 1,
+        "objet": "Variation temporelle de l’amplitude"
+      },
+      {
+        "question": "E.4.c",
+        "page_pdf": 11,
+        "page_rapport": 1,
+        "objet": "Enveloppe en fonction du temps"
+      },
+      {
+        "question": "E.4.d",
+        "page_pdf": 11,
+        "page_rapport": 1,
+        "objet": "Limitation pratique"
+      },
+      {
+        "question": "E.4.e",
+        "page_pdf": 11,
+        "page_rapport": 1,
+        "objet": "Allure du signal oscillant"
+      },
+      {
+        "question": "E.5.a",
+        "page_pdf": 11,
+        "page_rapport": null,
+        "objet": "Conversion déplacement-fréquence"
+      },
+      {
+        "question": "E.5.b",
+        "page_pdf": 11,
+        "page_rapport": null,
+        "objet": "Déplacement résolu"
+      }
+    ]
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_hist_1987",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture des 82 questions ou sous-questions et du rapport institutionnel, rédaction des solutions et indications, figures originales et vérifications indépendantes des calculs."
+    }
+  ]
+}

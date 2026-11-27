@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Les trois premières parties portent sur une équation triangulaire de séries entières à terme de convolution. La dernière étudie une équation différentielle singulière et distingue l’analyticité de la régularité indéfinie en zéro.
 
 ## I. Majorations pour les séries entières
@@ -95,6 +97,8 @@ Si $u\in E_+$, sa série converge absolument à l’intérieur d’un disque non
 
 Les nombres $|k+a|$ sont non nuls et tendent vers l’infini. Leur minimum $\delta>0$ convient pour (1). Prenons par exemple $M_0=\delta/[2\gamma(1+|c|)]$, qui assure (2). Puisque $v\in E_+$, 1.a donne $M>0$ tel que $|v_k|\le M^k$. Posons $L=\max(1,2/(\delta M_0))$ et $M_1=4ML$. Comme $k^2\le4^k$ et $L^k\ge2/(\delta M_0)$ pour $k\ge1$, on a $2k^2M^k\le\delta M_0M_1^k$. En particulier (4) suit de $k=1$, et les cinq conditions sont satisfaites.
 
+En particulier $2|c|\gamma M_0=\delta |c|/(1+|c|)\le\delta$. Pour (4), l’inégalité (5) prise à $k=1$ donne même $2M\le\delta M_0M_1$. Le choix des constantes ne fait intervenir aucun coefficient encore inconnu de $u$.
+
 ### Question 6.c
 
 > [!INDICATION]
@@ -121,6 +125,8 @@ La borne de 6.c donne la convergence pour $|x|<1/M_1$, donc l’antécédent de 
 #### Solution
 
 On a $u_1=\lambda$, donc $\alpha_1=1$. Pour $k\ge2$, la récurrence se réduit à $ku_k=\sum_{i=1}^{k-1}u_i u_{k-i}$. En posant $u_k=\alpha_k\lambda^k$, il reste $\alpha_k=k^{-1}\sum_{i=1}^{k-1}\alpha_i\alpha_{k-i}>0$. Si les bornes sont connues avant $k$, chaque produit est au plus $1$ et au moins $2^{2-k}$. Ainsi $\alpha_k\le(k-1)/k\le1$ et $\alpha_k\ge((k-1)/k)2^{2-k}\ge2^{1-k}$.
+
+Les quatre premiers coefficients normalisés sont $1,1/2,1/3,11/48$. Par exemple $4\alpha_4=2\alpha_1\alpha_3+\alpha_2^2=11/12$. Ces valeurs fixent les premiers points de la courbe.
 
 ![Figure 1 — Les douze premiers coefficients normalisés suivent la récurrence quadratique et restent entre la borne géométrique et 1. L’axe vertical est logarithmique.](figures/coefficients-du-produit.svg)
 
@@ -190,3 +196,5 @@ Comme $a\ne0$, le terme constant d’une solution analytique doit être nul. Pou
 #### Solution
 
 La dérivabilité à droite avec $g(0)=0$ donne $g(s)=O(s)$ en zéro, d’où la convergence de $\int_0^{t_0}s^{a-1}g(s)ds$. Choisissons $\alpha=t_0^{-a}\int_0^{t_0}s^{a-1}g(s)ds$. Alors $f(t)=t^{-a}\int_0^t s^{a-1}g(s)ds=O(t)$, donc $f(t)\to0$. Toute autre valeur ajoute un multiple non nul de $t^{-a}$ qui diverge en module.
+
+Plus précisément, si $d=g'_+(0)$, écrivons $g(s)=ds+s\eta(s)$ avec $\eta(s)\to0$. Alors $t^{-a}\int_0^t s^{a-1}g(s)\,ds=dt/(a+1)+o(t)$, car l’erreur est majorée par $t\sup_{0<s\le t}|\eta(s)|/(a+1)$. Cela vérifie directement le retour à zéro pour la valeur initiale trouvée.

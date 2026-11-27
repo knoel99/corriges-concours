@@ -1,0 +1,360 @@
+{
+  "slug": "banque-pt_pt_langue-vivante-a_2022",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Langue vivante A",
+    "annee": 2022
+  },
+  "questions": 5,
+  "redaction": "IA (gpt-6.2-astra)",
+  "figures": [
+    {
+      "fichier": "figures/lecture-de.svg",
+      "question": "Allemand",
+      "legende": "Caméras de surveillance pour 1 000 habitants"
+    },
+    {
+      "fichier": "figures/lecture-en.svg",
+      "question": "Anglais",
+      "legende": "Adultes déclarant peu ou pas de contrôle"
+    },
+    {
+      "fichier": "figures/lecture-ar.svg",
+      "question": "Arabe",
+      "legende": "Trois conditions du travail journalistique"
+    },
+    {
+      "fichier": "figures/lecture-es.svg",
+      "question": "Espagnol",
+      "legende": "Que mesure l’enquête chilienne ?"
+    },
+    {
+      "fichier": "figures/lecture-it.svg",
+      "question": "Italien",
+      "legende": "Interactions moyennes par publication en mai 2020"
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "agent": "x_maths_b_recentes",
+      "perimetre": "Rédaction des cinq synthèses par langue et du commentaire des vingt-cinq documents du fascicule 2022, contrôle des figures et des décomptes dans les deux éditions."
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2022/lv_a_2022_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2022/rapport_lv_a_ecrit_2022.pdf",
+    "sujet_sha256": "1dc6403aab598b010e77df8f5e0d56e6891d799087f252a33c906b7e5540b789",
+    "rapport_sha256": "395455c67e3b82b3af504880a23131db7e7b2af4e7cc67d83463c26b28f155d0"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Allemand",
+      "Anglais",
+      "Arabe",
+      "Espagnol",
+      "Italien"
+    ],
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "1dc6403aab598b010e77df8f5e0d56e6891d799087f252a33c906b7e5540b789",
+      "perimetre": "Rédaction des cinq synthèses par langue et du commentaire des vingt-cinq documents du fascicule 2022, contrôle des figures et des décomptes dans les deux éditions.",
+      "controles": [
+        {
+          "nom": "Allemand",
+          "titre": "Wer schützt uns vor den Folgen des Schutzes?",
+          "consigne": "Überwachung und Sicherheit: eine Gefahr für Datenschutz und Privatsphäre?",
+          "pages_sujet": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "pages_rapport": [
+            1
+          ],
+          "mots_titre_inclus": 457,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                3
+              ],
+              "controle": "Le compte rendu d’un roman distingue un milieu protecteur de laboratoire, la surveillance de Red Eccles et les marges incertaines du protagoniste."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                4
+              ],
+              "controle": "L’Académie autrichienne des sciences étudie la relation entre sécurité, technologies, liberté de choix et vie privée."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                5
+              ],
+              "controle": "L’entretien avec Gigerenzer questionne le prix du confort domestique connecté et les motifs pour lesquels certaines populations acceptent la surveillance."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                6
+              ],
+              "controle": "L’image accompagnant le récit d’un vol de données représente clavier et chiffres binaires ; le titre oppose un jeune individu aux autorités."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                6
+              ],
+              "controle": "Le graphique de 2019 relève les caméras pour 1 000 habitants, dont 68,4 à Londres contre 11,2 à Berlin. Il ne chiffre pas la sécurité obtenue."
+            }
+          ]
+        },
+        {
+          "nom": "Anglais",
+          "titre": "Who watches whom in America?",
+          "consigne": "How is control exerted by the various actors of the American surveillance society?",
+          "pages_sujet": [
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "pages_rapport": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "mots_titre_inclus": 464,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                8
+              ],
+              "controle": "Wired replace le changement d’acceptabilité des pouvoirs de surveillance dans les semaines qui suivent le 11 septembre 2001."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                9,
+                10
+              ],
+              "controle": "L’article sur Orwell confronte l’État fictif au paysage marchand des dispositifs volontairement adoptés par les utilisateurs."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                10
+              ],
+              "controle": "Le récit des révélations Snowden met en évidence la rupture entre entreprises et services de renseignement et l’adoption plus large du chiffrement."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                11
+              ],
+              "controle": "Mark Zuckerberg témoigne à distance devant une sous-commission de la Chambre ; un contrôle parlementaire des plateformes est ainsi mis en scène."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                11
+              ],
+              "controle": "Pew mesure le contrôle que les répondants pensent exercer sur les données recueillies par les entreprises ou par le gouvernement."
+            }
+          ]
+        },
+        {
+          "nom": "Arabe",
+          "titre": "صحافة تصل إلى القارئ من بعيد وتكافح لتحافظ على استقلالها",
+          "consigne": "ما هو حال الصحافة العربية ومآلها زمن جائحة كورونا؟",
+          "pages_sujet": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "pages_rapport": [
+            9,
+            10
+          ],
+          "mots_titre_inclus": 452,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                13
+              ],
+              "controle": "Le premier article traite des fausses informations et de restrictions pouvant être motivées par leur lutte."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                14
+              ],
+              "controle": "Le deuxième confronte la nécessité de la rigueur professionnelle et la fragilité de la liberté de publier pendant la pandémie."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                15
+              ],
+              "controle": "Le troisième présente le travail à distance, les applications de messagerie et les nouvelles pratiques de rédaction."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                16
+              ],
+              "controle": "L’image du virus et des journaux accompagne une manchette sur l’édition numérique, la baisse des coûts et la demande de soutien public."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                17
+              ],
+              "controle": "Le microphone de télévision et le journal sont enchaînés ensemble, une critique de restrictions qui touchent plusieurs supports."
+            }
+          ]
+        },
+        {
+          "nom": "Espagnol",
+          "titre": "De hacerse visible a responder por lo que se difunde",
+          "consigne": "¿Cómo ser ciudadano/a en un mundo digital en el siglo XXI?",
+          "pages_sujet": [
+            18,
+            19,
+            20,
+            21,
+            22
+          ],
+          "pages_rapport": [
+            11,
+            12,
+            13
+          ],
+          "mots_titre_inclus": 483,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                19
+              ],
+              "controle": "Les vidéos d’Estíbaliz Feito donnent un exemple d’explication du féminisme au moyen de formats courts."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                20
+              ],
+              "controle": "L’article sur TikTok présente les codes des plateformes, leur appropriation par les jeunes et leur usage par les partis."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                21
+              ],
+              "controle": "Le cinquième pouvoir concerne le journalisme citoyen, la mobilisation et les dommages que peut causer une dénonciation sans vérification."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                22
+              ],
+              "controle": "Les jeunes Chiliens interrogés comparent les réseaux et le vote pour faire connaître des demandes, et non pour remplacer la représentation politique."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                22
+              ],
+              "controle": "Le personnage à visage couvert brandit un hashtag comme un projectile, suggérant le pouvoir ambivalent d’un message qui circule."
+            }
+          ]
+        },
+        {
+          "nom": "Italien",
+          "titre": "Quando il primo incontro con un museo avviene sul telefono",
+          "consigne": "Che ruolo hanno gli influencer nel mondo dell’Arte?",
+          "pages_sujet": [
+            23,
+            24,
+            25,
+            26,
+            27
+          ],
+          "pages_rapport": [
+            14
+          ],
+          "mots_titre_inclus": 455,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                24
+              ],
+              "controle": "Le premier commentaire compare les cas de Ferragni et Will Smith, et interroge le choix des lieux à promouvoir."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                25
+              ],
+              "controle": "Wired analyse le recours des Musées du Vatican aux influenceurs en période de fermeture et de baisse de fréquentation."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                26
+              ],
+              "controle": "Le commentaire sur les Offices distingue la valeur d’un accès au musée et la compréhension du patrimoine par de nouveaux publics."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                27
+              ],
+              "controle": "Le tableau de février à mai 2020 distingue sur trois plateformes le nombre de publications et le nombre moyen d’interactions par publication."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                27
+              ],
+              "controle": "La campagne ministérielle du 29 mars 2020 invite le public à partager des photographies de musées ; les mains forment un cœur."
+            }
+          ],
+          "etat_rapport": "Page 14 consultée au rendu : rubrique ITALIEN avec son seul titre, sans commentaire du jury."
+        }
+      ]
+    }
+  }
+}

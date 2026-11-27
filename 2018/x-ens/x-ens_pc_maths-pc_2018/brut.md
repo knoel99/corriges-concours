@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le sujet compare les extrêmes de la somme des coefficients d’une matrice de signes lorsqu’on inverse des lignes et des colonnes. Les bornes font intervenir des sommes de signes indépendants et le coefficient binomial central. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_PC_sujet_Maths.pdf) · [Rapport du jury](https://banques-ecoles.fr/cms/wp-content/uploads/2018/10/18_PC_rap_eMath.pdf)
 
 ## I. Matrices de signes et cas particuliers
@@ -46,6 +48,8 @@ Pour $\lambda>0$, $\mathbb P(S_k\ge t)=\mathbb P(e^{\lambda S_k}\ge e^{\lambda t
 
 Par II.1–2 l’exposant est au plus $k\lambda^2/2-\lambda t$. Pour $t>0$, choisir $\lambda=t/k>0$ donne $\mathbb P(S_k\ge t)\le e^{-t^2/(2k)}$.
 
+La valeur limite $t=0$ donne simplement $\mathbb P(S_k\ge0)\le1$. Pour un seuil négatif, la même optimisation sur $\lambda>0$ n’autorise pas le choix $t/k$. L’hypothèse sur le signe du seuil est donc utilisée au passage de II.2 à II.3.
+
 ### Question II.4
 
 La multiplication de chaque entrée par les signes déterministes $x_i y_j$ est une bijection de l’ensemble des matrices de signes vers lui-même. La matrice transformée a donc encore la loi uniforme. Toute configuration complète des $n^2$ entrées a probabilité $2^{-n^2}$, produit des probabilités $1/2$ de chaque coordonnée prescrite. Cela donne les lois marginales uniformes et l’indépendance mutuelle.
@@ -76,6 +80,8 @@ Avec la convention $\binom{n-1}{-1}=0$, les identités $(n-k)\binom nk=n\binom{n
 
 La symétrie $k\leftrightarrow n-k$ donne deux fois la somme des termes non négatifs jusqu’à $\lfloor n/2\rfloor$ (le terme central éventuel est nul). III.2 puis III.3a donnent $\mathbb E g_A(Z)=n^2\,2^{1-n}\binom{n-1}{\lfloor n/2\rfloor}$.
 
+Pour $n=3$, une ligne donne $|3-2K|=3$ avec probabilité $1/4$ et $1$ avec probabilité $3/4$, donc une moyenne $3/2$. Les trois lignes donnent $9/2$, en accord avec $3^2\,2^{-2}\binom21$. Ce contrôle utilise uniquement la linéarité de l’espérance.
+
 ### Question III.4a
 
 Pour chaque $A$, $M(A)=\max_Yg_A(Y)\ge\mathbb E g_A(Z)$. Le membre droit de III.3b ne dépend pas de $A$, donc le même minorant vaut pour $M(n)$.
@@ -105,6 +111,8 @@ Pour $u=x/t>0$, $\partial_tf=tF(u)$ avec $F(u)=2\log(1+u)-u/(1+u)-u$. Or $F(0)=0
 ### Question IV.4
 
 Posons $h_n(x)=\mathbf1_{x>-\sqrt n}\exp f(\sqrt n,x)$, avec valeur zéro hors du domaine. Pour $x$ fixé, $n[\log(1+x/\sqrt n)-x/\sqrt n]\to-x^2/2$ par développement limité. Pour $x\le0$, $h_n(x)\le e^{-x^2/2}$ par IV.3a. Pour $x>0$, $h_n(x)\le e^{f(1,x)}=(1+x)e^{-x}$ par IV.3b. Les deux majorants sont intégrables sur leurs demi-droites. Par convergence dominée, $\int h_n\to\sqrt{2\pi}$. IV.1–2 donnent $n!\sim\sqrt{2\pi n}(n/e)^n$.
+
+Au point $x=-\sqrt n$, le facteur polynomial de IV.2 vaut zéro. On peut donc prolonger l’intégrande par zéro à gauche sans changer l’intégrale. Le majorant $(1+x)e^{-x}$ sur la demi-droite positive et la gaussienne sur la demi-droite négative sont indépendants de $n$.
 
 ![Figure 1 — Après recentrage au maximum, les intégrandes de la factorielle convergent vers une gaussienne. Les dominations sur les demi-droites permettent d’intégrer cette limite.](figures/stirling-integrande.svg)
 

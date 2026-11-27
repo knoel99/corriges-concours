@@ -1,0 +1,365 @@
+{
+  "slug": "banque-pt_pt_langue-vivante-a_2019",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Langue vivante A",
+    "annee": 2019
+  },
+  "questions": 5,
+  "redaction": "IA (gpt-6.2-astra)",
+  "figures": [
+    {
+      "fichier": "figures/lecture-de.svg",
+      "question": "Allemand",
+      "legende": "Calories végétales par calorie produite"
+    },
+    {
+      "fichier": "figures/lecture-en.svg",
+      "question": "Anglais",
+      "legende": "Chômage après une incarcération"
+    },
+    {
+      "fichier": "figures/lecture-ar.svg",
+      "question": "Arabe",
+      "legende": "Dépenses de santé par habitant en 2014"
+    },
+    {
+      "fichier": "figures/lecture-es.svg",
+      "question": "Espagnol",
+      "legende": "Freins déclarés au recyclage au Chili"
+    },
+    {
+      "fichier": "figures/lecture-it.svg",
+      "question": "Italien",
+      "legende": "Mobilité des participants italiens"
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "agent": "x_maths_b_recentes",
+      "perimetre": "Rédaction des cinq synthèses par langue et du commentaire des vingt-cinq documents du fascicule 2019, contrôle des figures et des décomptes dans les deux éditions."
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2019/lv_a_2019_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2019/rapport_lv_a_ecrit_2019.pdf",
+    "sujet_sha256": "01d4ecf9a72a797c3e89cf8b36f6943505576a0f5c1ccb922b6bdacac3fb41bd",
+    "rapport_sha256": "e8cfa4115f64d04ce78bc1feeb4ce969a895f46e1937d53bb851126f6351f256"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Allemand",
+      "Anglais",
+      "Arabe",
+      "Espagnol",
+      "Italien"
+    ],
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "01d4ecf9a72a797c3e89cf8b36f6943505576a0f5c1ccb922b6bdacac3fb41bd",
+      "perimetre": "Rédaction des cinq synthèses par langue et du commentaire des vingt-cinq documents du fascicule 2019, contrôle des figures et des décomptes dans les deux éditions.",
+      "controles": [
+        {
+          "nom": "Allemand",
+          "titre": "Was vom Fleisch bleiben könnte",
+          "consigne": "Eine Zukunft ohne Fleisch?",
+          "pages_sujet": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "pages_rapport": [
+            1,
+            2
+          ],
+          "mots_titre_inclus": 459,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                3
+              ],
+              "controle": "Die Zeit présente des aliments issus de cultures cellulaires et les limites économiques et éthiques soulevées par les entreprises."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                4
+              ],
+              "controle": "La Hannoversche Allgemeine Zeitung explique l’attachement à la forme des plats et le débat sur le nom des produits végétariens."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                5,
+                6
+              ],
+              "controle": "GEO compare le rôle nutritionnel des légumineuses à leurs effets sur les sols, l’azote et les pollinisateurs."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                6
+              ],
+              "controle": "Le schéma sur le blé compare les calories végétales nécessaires par calorie obtenue selon la destination."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                7
+              ],
+              "controle": "Les extrêmes régionaux de consommation de viande et de charcuterie, en grammes par jour, sont donnés séparément par sexe."
+            }
+          ]
+        },
+        {
+          "nom": "Anglais",
+          "titre": "What counts as a second chance?",
+          "consigne": "Addressing mass incarceration issues in the US: towards a better and fairer system?",
+          "pages_sujet": [
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "pages_rapport": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "mots_titre_inclus": 464,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                9
+              ],
+              "controle": "Vogue relie une sortie de détention à l’histoire de politiques pénales suivies sous des présidents de différents partis et aux disparités raciales."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                10
+              ],
+              "controle": "USA Today rend compte des soutiens contradictoires et des critiques du projet de First Step Act au moment de sa discussion."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                11
+              ],
+              "controle": "CNN distingue les prisons fédérales des prisons des États et des établissements locaux ; les infractions liées aux drogues n’y ont pas le même poids."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                12
+              ],
+              "controle": "Les taux de chômage sont comparés pour les 35–44 ans selon les antécédents de détention, le sexe et le groupe racial."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                12
+              ],
+              "controle": "Adam Zyglis transforme les bandes du drapeau américain en barreaux. Le titre emprunté à l’hymne met la promesse de liberté à l’épreuve."
+            }
+          ]
+        },
+        {
+          "nom": "Arabe",
+          "titre": "الحق في الصحة بين النص والمسافة إلى العلاج",
+          "consigne": "انطلاقاً من الوثائق الخمس التالية، ماذا يمكن استنتاجه من طبيعة التحديات التي يواجهها العالم العربي في ميدان الحق في الصحة؟",
+          "pages_sujet": [
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "pages_rapport": [
+            12,
+            13,
+            14
+          ],
+          "mots_titre_inclus": 458,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                14
+              ],
+              "controle": "Le premier texte présente les obligations et principes internationaux relatifs au droit à la santé et à l’accès aux soins."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                15
+              ],
+              "controle": "Le diagnostic tunisien oppose la centralisation des ressources aux besoins des habitants des régions périphériques."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                16
+              ],
+              "controle": "Au Soudan, l’université de la Gezira associe personnels formés, structures locales et suivi de la mortalité maternelle et néonatale."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                17
+              ],
+              "controle": "Les tableaux de l’OMS comparent dépenses par habitant, part du PIB et résultats de santé au Qatar et en Mauritanie, avec années et unités distinctes."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                17
+              ],
+              "controle": "Le dessin marocain représente une famille sous la pluie. L’inscription « couverture sanitaire » sur un abri de carton interroge la réalité de la protection."
+            }
+          ]
+        },
+        {
+          "nom": "Espagnol",
+          "titre": "Del árbol en el museo al bosque vivo",
+          "consigne": "¿En qué medida el desarrollo sostenible es un desafío para el siglo XXI?",
+          "pages_sujet": [
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "pages_rapport": [
+            15,
+            16
+          ],
+          "mots_titre_inclus": 461,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                19
+              ],
+              "controle": "El País rapporte l’extension des cultures et des pâturages, les pertes de forêt au Mexique et des engagements régionaux à l’horizon 2030."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                20
+              ],
+              "controle": "L’entretien d’eldiario.es articule économie, écologie et société et pointe la faiblesse des mécanismes d’application des engagements climatiques."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                21
+              ],
+              "controle": "Le texte guatémaltèque expose l’Agenda 2030 et relie les décisions publiques aux changements de consommation."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                22
+              ],
+              "controle": "Le musée imaginé par Forges expose un arbre comme un objet archéologique du XXIe siècle sous les yeux d’un adulte et d’un enfant."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                23
+              ],
+              "controle": "L’infographie chilienne distingue déchets produits, recyclage et obstacles pratiques, notamment l’insuffisance des conteneurs et des points de collecte."
+            }
+          ]
+        },
+        {
+          "nom": "Italien",
+          "titre": "Erasmus oltre il semestre all’estero",
+          "consigne": "In che misura dopo 30 anni e varie evoluzioni Erasmus rimane un’opportunità per i giovani e i meno giovani di tutto il mondo?",
+          "pages_sujet": [
+            24,
+            25,
+            26,
+            27,
+            28,
+            29
+          ],
+          "pages_rapport": [
+            17
+          ],
+          "mots_titre_inclus": 458,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                25
+              ],
+              "controle": "Il Sole 24 Ore retrace trente ans d’échanges, l’extension du programme et la formation d’une génération européenne."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                26
+              ],
+              "controle": "Le Corriere compare les flux d’entrée et de sortie en Italie et analyse les obstacles de langue, de logement et de coût."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                27
+              ],
+              "controle": "Le débat de Florence juxtapose les partenariats et formations existants avec des propositions pour les jeunes élèves et futurs enseignants."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                28
+              ],
+              "controle": "Le profil italien distingue mobilités pour études et pour stage : âges, durée, bourses et répartition des participants."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                29
+              ],
+              "controle": "Le visuel de la Commission européenne relie expérience de mobilité, compétences recherchées et offres d’emploi après le stage."
+            }
+          ]
+        }
+      ],
+      "pagination_verifiee": "La garde visible et les pages de début des sujets concordent : arabe p. 13–17, espagnol p. 18–23. La couche de texte de la garde superpose un deuxième jeu de bornes."
+    }
+  }
+}

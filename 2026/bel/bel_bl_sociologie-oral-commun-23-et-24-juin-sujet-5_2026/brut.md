@@ -6,6 +6,10 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## Les enfants surdoués
@@ -17,6 +21,10 @@ Entre une performance à une épreuve cognitive et l’identité d’« enfant s
 Norbert Elias (doc. 1) analyse le parcours de Mozart. La précocité musicale s’exerce au contact d’un père musicien, d’un entraînement intense et d’un monde où certaines formes musicales sont reconnues. Retracer ces conditions ne signifie ni que n’importe quel enfant aurait eu la même trajectoire ni que toutes les dispositions soient fixées à la naissance. Cela déplace la question vers les apprentissages, les encouragements et les occasions de faire reconnaître un talent. Le terrain de Wilfried Lignier (doc. 2) porte sur des parents adhérant à une association autour de la précocité. Son objet est l’appropriation sociale d’un résultat et d’une appellation. Ce recrutement ne représente pas tous les enfants qui auraient un score élevé lors d’un test systématique de la population.
 
 Cette distinction éclaire le document 3. Dans l’échantillon de familles enquêtées, 50,4 % des pères dont le diplôme est renseigné ont au moins un niveau bac + 5, contre 9,1 % dans l’échantillon comparable de l’enquête Éducation et famille de 2003. Chez les mères, les proportions sont 39 % et 5,3 %. Il s’agit de la part des diplômés parmi les parents d’un groupe sélectionné. Pour calculer la probabilité qu’un enfant de diplômé soit reconnu précoce, il faudrait un dénominateur comprenant tous les enfants de diplômés et distinguer les étapes menant à cette reconnaissance.
+
+![Figure 1 — Diplôme au moins égal à bac + 5 parmi les parents](figures/lecture-des-donnees.svg)
+
+La surreprésentation relative atteint environ 5,5 pour les pères diplômés à bac + 5 ou au-delà (50,4 divisé par 9,1) et 7,4 pour les mères (39 divisé par 5,3). La seconde valeur est plus élevée alors que, dans le groupe associatif, la proportion des mères très diplômées est inférieure à celle des pères. Les populations de comparaison expliquent ce classement.
 
 ### Découvrir une catégorie suppose des ressources et des attentes
 
@@ -31,3 +39,9 @@ Dans le document 6, 54,3 % des enfants du groupe enquêté jouent d’un instrum
 Le dossier permet ainsi d’expliquer comment se constitue une population reconnue comme exceptionnelle. Il faudrait une autre enquête pour mesurer toutes les aptitudes d’une cohorte. L’enquête sociologique gagne en précision en étudiant les conditions de passation, de reconnaissance et d’usage des résultats, y compris leurs bénéfices ou leurs contraintes pour l’enfant.
 
 [Dossier officiel](https://www.ens.psl.eu/sites/default/files/dossier_surdouance.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_tronc_commun_sociologie.pdf)
+
+## Vérification sur le dossier
+
+Élias et Lignier éclairent la formation des aptitudes et l’identification du diagnostic. Les tableaux sur les diplômes, la profession paternelle, les investissements parentaux et les activités des enfants puis les scores de maternelle ont été confrontés aux deux copies.
+
+Le document 6 distingue le nombre d’activités du fait de pratiquer au moins un sport. Trois activités ou davantage concernent 39,2 % du groupe enquêté et 6,1 % du groupe comparable. L’écart vaut 33,1 points et le rapport environ 6,4. Ces calculs décrivent les groupes constitués par l’enquête, dont le premier passe par une association de familles. Ils ne mesurent pas l’effet d’une activité supplémentaire sur un test individuel.

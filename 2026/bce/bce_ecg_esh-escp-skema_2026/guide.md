@@ -8,6 +8,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
 **Cadre.** Épreuve d'économie, sociologie et histoire du monde contemporain (ESH), conception ESCP BS et SKEMA BS, voie générale, lundi 27 avril 2026, de 8 h à 12 h. Aucun document, aucune calculatrice. Le sujet tient en une question : « Y a-t-il une limite à l'endettement public ? ». La consigne demande d'éviter tout verbiage, recommande de ne pas dépasser huit pages et prévient qu'il sera tenu compte du plan, de l'exposition et de la correction de la langue.
@@ -188,6 +190,12 @@ L'arithmétique de la dette et le jugement des marchés imposent bien une limite
 - **Notions à revoir.** Dette au sens de Maastricht ; déficit, solde primaire et charge d'intérêts ; taux apparent ; contrainte budgétaire intertemporelle ; solde stabilisant ; effet d'éviction ; équivalence ricardienne ; dominance budgétaire ; règles budgétaires européennes.
 - **Références à maîtriser.** Domar (1944), Barro (1974), Sargent et Wallace (1981), Bohn (1998), Reinhart et Rogoff (2009, 2010), Blanchard (2019), Blanchard et Leigh (2013).
 - **Sujets voisins.** « Faut-il craindre la dette publique ? » ; « La politique budgétaire est-elle encore efficace ? » ; « Faut-il des règles budgétaires ? » ; « L'indépendance des banques centrales est-elle menacée ? » ; « Peut-on financer la transition écologique par la dette ? ».
+
+## Vérification sur le sujet
+
+Dissertation unique sur une éventuelle limite à l’endettement public. La démonstration, le guide et la figure ont été rapprochés du sujet et du rapport. Les deux textes distinguent encours, charge d’intérêt et solde primaire, puis traitent croissance, risque de refinancement et choix institutionnels.
+
+Un exemple de refinancement distingue une contrainte de liquidité de la dynamique du ratio. Pour un encours de 100 dont 20 arrivent à échéance, un État à solde total nul doit, en l’absence de trésorerie disponible, émettre 20 pour rembourser les titres échus. L’encours reste de 100, mais l’accès au marché au moment du renouvellement demeure décisif. Si seule cette tranche est refinancée avec deux points d’intérêt de plus, la charge annuelle augmente d’abord de 0,4. Multiplier les deux points par la totalité de l’encours supposerait que toutes les échéances se renouvellent simultanément.
 
 ## Sources
 

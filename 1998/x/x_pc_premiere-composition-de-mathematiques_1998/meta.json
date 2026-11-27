@@ -1,0 +1,115 @@
+{
+  "slug": "x_pc_premiere-composition-de-mathematiques_1998",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "PC",
+    "annee": 1998,
+    "matiere": "Première composition de mathématiques",
+    "modalite": "écrit"
+  },
+  "intitule": "Première composition de mathématiques",
+  "theme": "Matrices de Householder à coefficients entiers.",
+  "organisateurs": "École polytechnique et École supérieure de physique et de chimie industrielles",
+  "identification": "Les deux établissements sont nommés en toutes lettres. Option PC. Première composition de mathématiques.",
+  "questions": 23,
+  "sources": {
+    "sujet": "https://www.sujetsetcorriges.fr/dl/X/Maths/PC/sec-x-1998-maths1-PC.pdf",
+    "sha256_sujet": "ab243e4e3613eba47ca22cda6997bfe2c58f4803935c4d9e61a90206499dc825",
+    "pages_sujet": 4,
+    "collection": "https://www.sujetsetcorriges.fr/cpge-spe/x/x-mathematiques/x-espci-maths-pc/",
+    "notice_ups": "m98xp1",
+    "pieces_ups": [
+      {
+        "id": "m98xp1",
+        "type": "énoncé",
+        "auteur": "UPS",
+        "source": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-acf82277baebe43d2fd8",
+        "sha256": "62040fd7876821687c96d84000cf6adf6c3db26f79f43fcc77c32da602f07cf6"
+      },
+      {
+        "id": "m98xp1",
+        "type": "énoncé",
+        "auteur": "UPS",
+        "source": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-96bd5209f61702a73aa2",
+        "sha256": "dabb1d2004a5ca20acb99543b95e14eeaed2b4ee1e04877dfb27d079cba91642"
+      },
+      {
+        "id": "m98xp1",
+        "type": "corrigé",
+        "auteur": "Dallard",
+        "source": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-96c98adc11055167a5e1",
+        "sha256": "50098e089e7caf945499cc0c4cb4faa403a4ac5a98bcd49fb8a8ebd9109ba128"
+      },
+      {
+        "id": "m98xp1",
+        "type": "corrigé",
+        "auteur": "Ravelli",
+        "source": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-4c4b6d2c2c3878367f77",
+        "sha256": "fbc5683c669918c9e906bbe6d3206b0ce047fce28944a38f99337defe0b01645"
+      }
+    ],
+    "recoupement": null,
+    "rapport_jury": null,
+    "precision_rapport": "Aucun rapport de jury identifié dans les deux collections consultées."
+  },
+  "figures": [
+    {
+      "fichier": "figures/figure-1.svg",
+      "question": "5.b",
+      "legende": "Les quatre bases et les images des vecteurs de base"
+    },
+    {
+      "fichier": "figures/figure-2.svg",
+      "question": "8",
+      "legende": "Un cycle dont les deux parités sont paires"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "x_maths_b_recentes",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Contrôle de la garde et des parties du fac-similé, résolution de chaque consigne dans les deux éditions, indications par subdivision, figures mathématiques originales et rapprochement avec la notice UPS."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.a",
+      "1.b",
+      "1.c",
+      "1.d",
+      "1.e",
+      "2.a",
+      "2.b",
+      "2.c",
+      "3.a",
+      "3.b",
+      "4.a",
+      "4.b",
+      "5.a",
+      "5.b",
+      "5.c",
+      "6.a",
+      "6.b",
+      "6.c",
+      "6.d",
+      "7.a",
+      "7.b",
+      "8",
+      "9"
+    ],
+    "precision": "Contrôle de la garde et des parties du fac-similé, résolution de chaque consigne dans les deux éditions, indications par subdivision, figures mathématiques originales et rapprochement avec la notice UPS.",
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "perimetre": "Contrôle de la garde et des parties du fac-similé, résolution de chaque consigne dans les deux éditions, indications par subdivision, figures mathématiques originales et rapprochement avec la notice UPS.",
+      "sha256_sujet_controle": "ab243e4e3613eba47ca22cda6997bfe2c58f4803935c4d9e61a90206499dc825"
+    }
+  }
+}

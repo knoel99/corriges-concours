@@ -1,0 +1,95 @@
+{
+  "slug": "ens_mp-mpi_informatique-fondamentale_2025",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-MPI",
+    "matiere": "Informatique fondamentale",
+    "annee": 2025,
+    "duree_heures": 4
+  },
+  "questions": 34,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/ens_maths-info_mp-mpi_2025.pdf",
+    "sujet_sha256": "61ded01de53c4d624800a5e8d513b3e381b8f79cf2b2d45e968e775f9374e3b0",
+    "page_source": "https://www.wikiprepa.fr/concours/ecrit/ens_maths-info_mp-mpi_2025",
+    "identification": "Fac-similé de la composition officielle ULSR, vendredi 18 avril 2025, épreuve n° 10, garde et douze pages numérotées."
+  },
+  "figures": [
+    {
+      "fichier": "figures/arbre-des-six-lettres.svg",
+      "question": "10",
+      "legende": "Les trois enfants de la racine ont tous l’image idempotente 0. Chaque paire de feuilles est réunie par une branche binaire libre."
+    },
+    {
+      "fichier": "figures/regroupement-de-brandt.svg",
+      "question": "24",
+      "legende": "Les frontières laissent un a initial et un suffixe b uₖ₊₁. Les blocs centraux peuvent partager une seule racine lorsque leur nombre est au moins trois."
+    },
+    {
+      "fichier": "figures/deux-enfants-voisins.svg",
+      "question": "31",
+      "legende": "Pour la requête sur les positions 2 et 3, le premier morceau est la feuille b et le second la feuille a. Aucun facteur entier ne se trouve entre eux."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des 34 questions d’après le fac-similé, avec preuves sur la hauteur des arbres pour les groupes cycliques et Brandt, vérification visuelle de la ligne 15 erronée, contre-exemple et programme de recherche infixe rectifié. Contrôles exhaustifs sur mots courts et trois illustrations originales."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34"
+    ],
+    "precision": "Les 34 questions du fac-similé ont été rapprochées dans leur ordre des deux éditions signées. Les solutions de chaque édition ont été retrouvées à la révision de rédaction citée.",
+    "origine_attestation": {
+      "commit_du_journal": "66904de43333370e85c6dfa51bac1751a0a1c908",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction intégrale des 34 questions d’après le fac-similé, avec preuves sur la hauteur des arbres pour les groupes cycliques et Brandt, vérification visuelle de la ligne 15 erronée, contre-exemple et programme de recherche infixe rectifié. Contrôles exhaustifs sur mots courts et trois illustrations originales.",
+      "sha256_sujet_controle": "61ded01de53c4d624800a5e8d513b3e381b8f79cf2b2d45e968e775f9374e3b0"
+    }
+  }
+}

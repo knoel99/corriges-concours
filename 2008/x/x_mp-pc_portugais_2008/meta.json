@@ -1,0 +1,72 @@
+{
+  "slug": "x_mp-pc_portugais_2008",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Portugais",
+    "annee": 2008,
+    "modalite": "écrit"
+  },
+  "intitule": "Manuel Alegre, Rafael, et Tzvetan Todorov, le pouvoir de la littérature",
+  "questions": 3,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "V",
+      "1",
+      "2"
+    ]
+  },
+  "sources": {
+    "index": "https://www.alloschool.com/element/33546",
+    "etablissements": "École polytechnique et École supérieure de physique et de chimie industrielles",
+    "pages_sujet": "8",
+    "sujet": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2008-langues-vivantes.pdf#page=8",
+    "sujet_sha256": "a33182de1be447a22b945fc9dcec2142ddd43b38e1607eebf6095f5714f2d329",
+    "sujet_complementaire": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2008-langues-vivantes.pdf#page=1",
+    "sujet_complementaire_sha256": "a33182de1be447a22b945fc9dcec2142ddd43b38e1607eebf6095f5714f2d329",
+    "precision": "La version est extraite de Rafael de Manuel Alegre (2004) et le texte d’expression de La Littérature en péril de Tzvetan Todorov (2007). Les deux réponses suivent l’usage du Portugal. Le cahier d’expression de 2008 ne chiffre pas leur longueur. Aucun rapport spécifique à cette composition portugaise n’a été retrouvé."
+  },
+  "mots_expression": {
+    "1": 138,
+    "2": 193
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V",
+      "fichier": "figures/tu.svg",
+      "legende": "Le personnage s’adresse à lui-même avant que la silhouette de Júlia ne rouvre son passé."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "fichier": "figures/savoirs.svg",
+      "legende": "Todorov distingue l’expérience littéraire, le concept et la vérification scientifique."
+    },
+    {
+      "numero": 3,
+      "question": "2",
+      "fichier": "figures/heteronimos.svg",
+      "legende": "Le lecteur de Pessoa apprend à identifier le regard à partir duquel il interprète un lieu."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "portugais_sciences_2005_2010",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et réponses intégrales en portugais. Manuel Alegre, Rafael, et Tzvetan Todorov, le pouvoir de la littérature.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}

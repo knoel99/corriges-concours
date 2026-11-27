@@ -1,0 +1,65 @@
+{
+  "slug": "x-ens_mp-pc-psi_allemand_2021",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Allemand",
+    "annee": 2021,
+    "modalite": "écrit"
+  },
+  "intitule": "Télétravail, coopération et vie familiale pendant la pandémie",
+  "questions": 2,
+  "redaction": "Synthèse allemande titrée des quatre pièces et réponse en allemand aux arguments de l’éditorial. Télétravail, coopération et vie familiale pendant la pandémie.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/07/2021_MPPC_sujet_All.pdf",
+    "sha256_sujet": "aed04dddd7f34acccbfbb44797a2a3d23b3320c6f9f5e6f93661861a8cf5e5d9",
+    "code_garde": "XEULCR",
+    "index": "https://banques-ecoles.fr/cms/session-2021-3/",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/10/21_MPPC_rapport_eAll.pdf",
+    "sha256_rapport_jury": "b624b2eba76227726a0b8ddd476fd23c5e372d55582845544e528fe3ffe4f58e",
+    "pages_sujet": 10,
+    "perimetre_sujet": "A1–A3 p. 2–7, dessin p. 8, B p. 9–10",
+    "precision_rapport": "La garde et le rapport concernent les filières MP, PC et PSI."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/conditions-du-teletravail.svg",
+      "legende": "Les conditions qui séparent un lieu connecté d’un lieu propice au travail dans le dossier A."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des 2 pages du rapport sur les deux productions, la langue et la lecture du dossier."
+    },
+    {
+      "phase": "redaction",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Synthèse allemande titrée des quatre pièces et réponse en allemand aux arguments de l’éditorial. Télétravail, coopération et vie familiale pendant la pandémie."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  }
+}

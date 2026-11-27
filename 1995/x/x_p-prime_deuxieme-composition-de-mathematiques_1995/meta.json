@@ -1,0 +1,135 @@
+{
+  "slug": "x_p-prime_deuxieme-composition-de-mathematiques_1995",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "P prime",
+    "matiere": "Deuxième composition de mathématiques",
+    "annee": 1995
+  },
+  "questions": 15,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.sujetsetcorriges.fr/dl/X/Maths/PC/sec-x-1995-maths2-PC.pdf",
+    "sha256_sujet": "5830847bbe0d7d3a465062ff34a8f8c1f7d8271763719d6ae7bb4ac569ddf0a9",
+    "rapport_jury": "",
+    "provenance": "Reproduction en deux pages diffusée par Sujets et Corrigés, rapprochée des deux pages de la notice UPS m95xp2. Les deux exemplaires donnent la même composition et les mêmes bornes.",
+    "exemplaires_ups": [
+      {
+        "notice": "m95xp2",
+        "document": "m95xp2ea",
+        "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-dd3bf9f3993f64e2fbda",
+        "sha256": "f47978d85dc6070feaf64a6de6d06f5ce1845f95c03f05c83d21927b8581f22c",
+        "pages": 2
+      }
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/croissance-transitoire.svg",
+      "question": "9",
+      "legende": "Pour la donnée initiale (1,1), les coordonnées tendent vers zéro tandis que la norme augmente d’abord. Le maximum est indiqué sur la courbe."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "maths_x_p-prime_1997_1999",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction intégrale des deux éditions sur les 2 pages du fac-similé. 15 consignes pointées. I. Une base de matrices symétriques ; II. Spectre de l’application de Lyapunov ; III. Stabilité et formes quadratiques. Vérification des démonstrations, des notations et des bornes."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2.a",
+      "2.b",
+      "2.c",
+      "3",
+      "4",
+      "5.a",
+      "5.b",
+      "6",
+      "7.a",
+      "7.b",
+      "8.a",
+      "8.b",
+      "8.c",
+      "9"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1",
+        "page_pdf": 1
+      },
+      {
+        "question": "2.a",
+        "page_pdf": 1
+      },
+      {
+        "question": "2.b",
+        "page_pdf": 1
+      },
+      {
+        "question": "2.c",
+        "page_pdf": 1
+      },
+      {
+        "question": "3",
+        "page_pdf": 1
+      },
+      {
+        "question": "4",
+        "page_pdf": 1
+      },
+      {
+        "question": "5.a",
+        "page_pdf": 1
+      },
+      {
+        "question": "5.b",
+        "page_pdf": 1
+      },
+      {
+        "question": "6",
+        "page_pdf": 2
+      },
+      {
+        "question": "7.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "7.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "8.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "8.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "8.c",
+        "page_pdf": 2
+      },
+      {
+        "question": "9",
+        "page_pdf": 2
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

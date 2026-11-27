@@ -1,0 +1,95 @@
+{
+  "slug": "x_pc_physique-a_2014",
+  "epreuve": {
+    "concours": "X",
+    "ecoles_historiques": "École polytechnique et ESPCI",
+    "filiere": "PC",
+    "matiere": "Physique A",
+    "annee": 2014
+  },
+  "questions": 30,
+  "intitule": "Pièges optiques",
+  "redaction": "Les 30 questions sont traitées dans les deux éditions. La raideur de la question 18 est chiffrée par watt, la puissance omise empêchant une valeur absolue. Les figures expérimentales 2 et 4 ont été relues sur le fac-similé.",
+  "sources": {
+    "garde": "XE · École polytechnique et ESPCI · 4 heures",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2014/10/14_pc_suj_phy_a.pdf",
+    "sujet_sha256": "cd5186778a229cf725e70267522cf0d90d6317c51e09fe3df30f0e9aff686ad1",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/01/14_pc_rap_ecrit_physique_a.pdf",
+    "rapport_sha256": "2e83fb938f0c819bf062bbae6334829653ded2530937ea0d9aa57ada225d83be"
+  },
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "physique_a_pc_x",
+      "session": "physique_a_pc_x",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du rapport du jury, y compris la puissance manquante en question 18, la lecture de fréquence en hertz, la longueur de segment et la distinction entre déplacement de bille et extension."
+    },
+    {
+      "phase": "redaction",
+      "agent": "physique_a_pc_x",
+      "session": "physique_a_pc_x",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Les 30 questions sont traitées dans les deux éditions. La raideur de la question 18 est chiffrée par watt, la puissance omise empêchant une valeur absolue. Les figures expérimentales 2 et 4 ont été relues sur le fac-similé."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "16",
+      "fichier": "figures/diffraction.svg",
+      "legende": "Coupe transverse calculée pour une fente uniformément éclairée. La distance entre les deux premiers zéros est le diamètre w."
+    },
+    {
+      "numero": 2,
+      "question": "23",
+      "fichier": "figures/coupure.svg",
+      "legende": "Réponse réduite du piège et ses deux asymptotes dans un diagramme logarithmique. Les pointillés repèrent la coupure à 1/√2 du plateau."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30"
+    ]
+  }
+}

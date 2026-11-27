@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Préliminaires
 
 ### Question 1 · Quatre tests de satisfiabilité
@@ -47,7 +49,7 @@ let un_sat f =
 
 ### Question 4 · Coût du premier parcours
 
-La boucle effectue $|V|$ appels initiaux. Le marquage précède toute descente récursive, donc chaque sommet parcourt sa liste de successeurs et entre dans la liste des fins exactement une fois. Les appels lancés par ces parcours sont exactement $\sum_{u\in V}\deg^+(u)=|E|$, y compris ceux qui rencontrent un sommet marqué. Le traitement propre à chaque appel coûte $O(1)$ en plus de ses descendants. Compte tenu de l'initialisation, le temps total est $\Theta(|V|+|E|)$.
+La boucle effectue $|V|$ appels initiaux. Le marquage précède toute descente récursive, donc chaque sommet parcourt sa liste de successeurs et entre dans la liste des fins exactement une fois. Les appels lancés par ces parcours sont exactement $\sum_{u\in V}\deg^+(u)=|E|$, y compris ceux qui rencontrent un sommet marqué. Chaque appel paie un test de marquage en temps constant. Les appels qui découvrent un sommet $u$ paient aussi $O(1+\deg^+(u))$ pour le marquage, le parcours de sa liste et l’insertion finale. La somme des degrés sortants vaut $|E|$. Compte tenu de l'initialisation, le temps total est $\Theta(|V|+|E|)$.
 
 ### Question 5 · Transposée du graphe
 
@@ -100,7 +102,7 @@ Notons $C\preceq D$ si un chemin va de $D$ à $C$. Le chemin de longueur zéro �
 
 ### Question 9 · Contre-exemple à l'inégalité sur les sommets
 
-La version distribuée demandait de déduire $t_i>t_j$ d'un chemin de $v_i$ vers $v_j$ en l'absence de chemin retour. Cette affirmation est **fausse**. Dans la figure 2, $v_4\to v_1\to v_3$ existe. À partir de $v_3$, seuls $v_3,v_2,v_0$ sont accessibles, donc aucun retour vers $v_4$ n'existe. L'ordre de fin donné en (2) comporte pourtant $t_4<t_3$. Le rapport du jury relève l'erreur. L'archive ENS saute ce numéro, reproduit dans le fac-similé du sujet distribué. [Fac-similé, p. 8](https://www.doc-solus.fr/prepa/sci/adc/pdf/enonces.pdf/2016/MP_INFO_X_1_2016.enonce.pdf) · [Rapport du jury, p. 3](https://www.ens.psl.eu/IMG/file/concours/2016/rapports/mpi-i/16_mp_rap_einfo_a.pdf)
+La version distribuée demandait de déduire $t_i>t_j$ d'un chemin de $v_i$ vers $v_j$ en l'absence de chemin retour. Cette affirmation est **fausse**. Dans la figure 2, $v_4\to v_1\to v_3$ existe. À partir de $v_3$, seuls $v_3,v_2,v_0$ sont accessibles, donc aucun retour vers $v_4$ n'existe. Le parcours commence par 0, puis par 1. Depuis 1, il termine d’abord 4, dont les deux successeurs 0 et 1 sont déjà marqués. Il visite ensuite 3, puis 2, et termine 2 avant 3. Les premières fins sont donc $t_0<t_4<t_2<t_3<t_1$, comme dans l’ordre (2) du sujet. Le rapport du jury relève l'erreur. L'archive ENS saute ce numéro, reproduit dans le fac-similé du sujet distribué. [Fac-similé, p. 8](https://www.doc-solus.fr/prepa/sci/adc/pdf/enonces.pdf/2016/MP_INFO_X_1_2016.enonce.pdf) · [Rapport du jury, p. 3](https://www.ens.psl.eu/IMG/file/concours/2016/rapports/mpi-i/16_mp_rap_einfo_a.pdf)
 
 ![Sous-graphe de la figure 2. Le sommet 4 atteint 3 par 1, sans retour possible. Quand 1 explore 4 avant 3, la fin de 4 précède celle de 3.](figures/q09-fins-dfs.svg)
 

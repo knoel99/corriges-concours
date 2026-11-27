@@ -5,7 +5,12 @@
     "filiere": "Cycle master mathématiques",
     "matiere": "Français et culture générale",
     "annee": 2019,
-    "modalite": "écrit"
+    "modalite": "écrit",
+    "etablissements_sur_garde": [
+      "École Normale Supérieure Paris-Saclay",
+      "École Normale Supérieure de Rennes"
+    ],
+    "code_garde": "2C9123"
   },
   "intitule": "Français et culture générale",
   "questions": 2,
@@ -28,9 +33,15 @@
       "fichier": "figures/chopplet.svg",
       "question": "1",
       "legende": "Qui écrit la ville intelligente ?"
+    },
+    {
+      "fichier": "figures/trajet-et-absence.svg",
+      "question": "2a",
+      "legende": "La carte de la ligne donne des traces de fréquentation. L’absence de ligne laisse les besoins ouverts.",
+      "provenance": "Schéma original pour cette révision."
     }
   ],
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -55,6 +66,119 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Confrontation au texte et aux deux questions du sujet, double recomptage du résumé et vérification des exemples et du raisonnement. Lecture du rapport écrit de 2019, disponible sous deux liens au même contenu."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle de la singularité technologique, du double cartographique et des opérateurs. Analyse du « encore ? » dans le choix a et du « mais » dans le choix b. Schéma des trajets sans données et des responsabilités politiques. Collation des feuillets et double décompte du résumé. Clarification des objets qui alimentent le réseau en données personnelles."
     }
-  ]
+  ],
+  "duree_heures": 3,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2019_SE2C_MATHS_Francais_V2.pdf",
+      "sha256": "ccdc8f21d29fa11206243a49da5f340cde9d73befca40c2c8e9d5907cee15fbc",
+      "pages": 5,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "8d6d052a17d87fea126fa3e86c033f84906296222a2d8622f8b5042698cc02cc"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "e7a66c7997c1ad29c45d74e5e8c0f03261f0e06381eef67476215ea3b8714152"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "6bf5d20c0543042a457d3afa7547b9eb4a1ab3c104b0694af7cf807bab7b59b2"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "39849c4830e13e7ae8e89a45c8a318ab93c9f67591134329a0fd2ec3003d89d4"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "5c14b4c50281c264be5a2a87ed43c898c0b09a1e0ada74f2a097af1eb17ff5f1"
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2019_RE_2C_MATHS_Francais.pdf",
+      "sha256": "00a4ffe17da4add5db54ed7e3d60201114ef6098a96657cde3a70265d6de2803",
+      "pages": 4,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "2791a480fbaf2780a1d23e1ec9d95541e4810f57c53722c8aeb71976591bf03c"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "561fd5d2f162ef7c3adde896cf4d3b77ac90a4e3fb2f73b8932ef4dea3a0ce61"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "ddc420389b7e4f332d1e03cb86bb00f400411b7f1ecd00702eef89d82280d4ff"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "bbdd58f582353040abf44dca8ec71f5719636e820e2f2fa916e4a68b372d7c3f"
+        }
+      ],
+      "rubriques": "p. 1, identification et consignes ; p. 2–3, résumé et expression ; p. 3–4, développement au choix."
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2a",
+      "2b"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1",
+        "page_pdf": 5,
+        "consigne": "Résumer le texte en 360 mots (avec une marge de tolérance de + ou – 10%). Le nombre exact de mots utilisés sera indiqué en fin de résumé.",
+        "points": 10,
+        "cible_mots": 360,
+        "intervalle": [
+          324,
+          396
+        ],
+        "texte": "Marc Chopplet, « Smart City : quelle intelligence pour quelle action ? Les concepts de John Dewey, scalpels de la ville intelligente », Quaderni, 2018/2, n° 96, p. 71–86. Le feuillet précise que l’article est reproduit en partie.",
+        "pages_texte": [
+          2,
+          5
+        ]
+      },
+      {
+        "question": "2a",
+        "page_pdf": 5,
+        "consigne": "Sous forme d’un développement construit, commenter, au choix, l’une des deux réflexions suivantes de l’auteur :",
+        "citation": "«…. après la ville à la fois connectée techniquement et déconnectée là où il n’existe pas (encore ?) de données, les « big data » dessinent une ville sans mémoire autre que statistique. »"
+      },
+      {
+        "question": "2b",
+        "page_pdf": 5,
+        "consigne": "Sous forme d’un développement construit, commenter, au choix, l’une des deux réflexions suivantes de l’auteur :",
+        "citation": "« Mais parle-t-on encore de cité ? »"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "choix": "Deux commentaires proposés pour les deux possibilités de la question 2, dont un seul était demandé, sur 10 points.",
+    "annexes_imposees": []
+  }
 }

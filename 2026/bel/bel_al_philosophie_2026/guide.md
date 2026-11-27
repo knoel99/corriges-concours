@@ -12,6 +12,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **L’épreuve.** La composition commune de philosophie dure six heures. Le sujet officiel tient sur une page et donne un intitulé unique, « L’autorité de la science ». Le domaine du programme est « La science ». [Sujet officiel](https://www.ens.psl.eu/sites/default/files/al_philo_261107.pdf)
@@ -42,6 +44,8 @@ L’*autorité* désigne d’abord une relation. Quelqu’un reconnaît à une p
 La *science* peut désigner un corps de résultats, les pratiques par lesquelles on les établit, ou les communautés qui les défendent. Prenez le cas de Galilée. Voir une fois des points lumineux près de Jupiter autorise une description. Répéter l’observation donne accès à une relation de mouvement. Établir ce que montre cette relation permet de circonscrire l’autorité du témoignage.
 
 ![Figure 1 — De l’observation de Jupiter aux limites de la conclusion astronomique](figures/observer-et-conclure.svg)
+
+Cacher les relevés ultérieurs et demander ce qu’un observateur pourrait inférer du premier seul. Les réintroduire fait distinguer l’autorité du témoin et la valeur d’une série de positions contrôlables.
 
 ### Étape 2 — Problématiser
 

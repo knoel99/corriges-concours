@@ -31,6 +31,53 @@
       "perimetre": "Rédaction des 26 questions des quatre parties sur le fascicule original. Hypothèse de régularité manquante en I et contre-exemple au cas alpha nul en IV.10. Contrôle des deux sens de récurrence, des restes intégrés et de la dérivation. Figure comparative de deux noyaux.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Comparaison des 26 réponses et indications du second concours avec les quatre pages numérotées du fascicule UL245. Précision sur la régularité exigée en I.1–2, preuve élémentaire de la continuité, justification du premier coefficient de la dérivée en IV.9. Vérification des deux récurrences de la partie III et du contre-exemple de IV.10.",
+      "fournisseur": "codex",
+      "agent": "anciens_maths_x_lyon"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7",
+      "IV.1",
+      "IV.2",
+      "IV.3",
+      "IV.4",
+      "IV.5",
+      "IV.6",
+      "IV.7",
+      "IV.8",
+      "IV.9",
+      "IV.10"
+    ],
+    "detail": [
+      "I.1–4, pages imprimées 1–2. Le noyau seulement borné du texte peut empêcher la définition ou la continuité de Th. Les deux contre-exemples et la résolution sous une hypothèse suffisante figurent dans chaque édition.",
+      "II.1–5 et III.1–7, pages 2–3. Calcul des coefficients du produit et de l’inverse, primitives croissantes et intégrales de queue, y compris le régime oscillant.",
+      "IV.1–10, pages 3–4. Construction du noyau, équation intégrale, régularité et développements de g et de sa dérivée. Le cas α nul inclus dans la dernière consigne est traité par contre-exemple."
+    ]
+  }
 }

@@ -4,11 +4,15 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 Les pages imprimées 4 à 6 réunissent deux traductions et une expression écrite sur un troisième texte. Chaque réponse d’expression doit compter de 225 à 275 mots. Le nombre indiqué après chaque réponse exclut son titre.
 
-[Fascicule officiel, pages imprimées 4 à 6](https://www.ens-rennes.fr/medias/fichier/sujet-lve-d-e-2026_1790867583165-pdf#page=5) · [Rapport écrit de anglais](https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-anglais-e-crit-2026_1793640873886-pdf)
+[Fascicule officiel, pages imprimées 4 à 6](https://www.ens-rennes.fr/medias/fichier/sujet-lve-d-e-2026_1790867583165-pdf#page=5) · [Rapport écrit d’anglais](https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-anglais-e-crit-2026_1793640873886-pdf)
+
+**Repère du fascicule.** Pour traduire les trois montants de l’amende, conserver la devise après chaque chiffre. Les dollars australiens, les dollars américains et les livres sont trois équivalents d’une même sanction. La sanction potentielle vise les entreprises.
 
 ## I. Version française
 

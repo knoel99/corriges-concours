@@ -4,7 +4,7 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 ## Présentation du sujet
 
@@ -173,6 +173,8 @@ def enumtrees(f, n):
 ```
 
 Au niveau $n$, l'affectation est complète et une unique feuille est possible, étiquetée par $f(x)$. Par induction sur le nombre de coordonnées libres, toute paire d'arbres renvoyés pour un indice racine donne un arbre complet correct sur les entrées de la branche. Inversement, chaque arbre complet correct possède une de ces racines et deux enfants figurant dans les listes correspondantes. Ils sont reconstruits ensemble. Les entrées fixées par les ancêtres sont conservées. Les cases libres sont toujours réaffectées avant leur lecture à une feuille.
+
+Pour contrôler l’exhaustivité sur une petite dimension, notons $a_n$ le nombre d’arbres complets distincts pour une fonction fixée. À la racine on a $n$ choix, puis $a_{n-1}$ constructions pour chacune des deux restrictions, indépendamment. Ainsi $a_0=1$, $a_n=n a_{n-1}^2$ et $a_3=12$. Les valeurs de la fonction imposent les étiquettes des feuilles pour chacune de ces structures.
 
 ## III. Fonctions positives et complexes simpliciaux
 
@@ -435,3 +437,5 @@ Pour chaque couple $(\tau_c,\sigma_c)$ de l'arbre complet, les deux entrées aya
 ## Bilan
 
 Le critère est à sens unique. Une caractéristique réduite non nulle certifie que tout arbre devra lire tous les bits sur au moins une entrée. La preuve part, en sens inverse, d’un arbre qui économise un test sur chaque branche, puis construit un couplage parfait qui annule les contributions à la caractéristique.
+
+**Remarque finale du sujet.** Le théorème donne aussi sa contraposée. Une caractéristique d’Euler réduite non nulle impose l’évasivité. La dernière page pose ensuite comme question ouverte l’évasivité de toute fonction positive, faiblement symétrique et non triviale. La question 17 établit le critère sur la caractéristique d’Euler. Pour conclure dans le cadre plus général de la remarque, il faudrait un argument supplémentaire.

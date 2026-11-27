@@ -35,7 +35,7 @@
       "legende": "Par quel canal le prix d’un titre change-t-il un choix ?"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "lecture_rapport_jury",
@@ -72,6 +72,47 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Confrontation des deux éditions aux pages du sujet, au rapport du jury et aux références primaires. Empreintes des aperçus vérifiées séparément des empreintes des originaux institutionnels."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "L’intitulé unique et le rapport de deux pages ont été rapprochés de chaque édition. Les décisions étudiées concernent les ménages, les entreprises et la puissance publique, avec finance directe ou intermédiée, prix du risque, contraintes de crédit et intégration internationale. Les réponses distinguent également marché primaire et marché secondaire.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dans quelle mesure les marchés financiers affectent-ils les décisions économiques ?"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "verification": "L’intitulé unique et le rapport de deux pages ont été rapprochés de chaque édition. Les décisions étudiées concernent les ménages, les entreprises et la puissance publique, avec finance directe ou intermédiée, prix du risque, contraintes de crédit et intégration internationale. Les réponses distinguent également marché primaire et marché secondaire.",
+    "limites": "Une dissertation, sans annexe, sur le feuillet officiel d’une page.",
+    "pieces_controlees": [
+      {
+        "role": "sujet",
+        "pages": 1,
+        "sha256_apercu": "91164988f0f33299d534863b9bf82f2c858ff473b3bd52c89c38784770623a7b",
+        "sha256_original": "f421450692029a57839d060cc201b5e27c25cc695c3db35727efab20c7413a65"
+      },
+      {
+        "role": "rapport_jury",
+        "pages": 2,
+        "sha256_apercu": "cca838a9aac26288bf4458299a93f6f5c6c38d939a1592b1228e0c47548f0282",
+        "sha256_original": "a683a4c00b2482f7338760b5b7ec15252ca6f5fb36dedb6f9e13c0aa683c6a42"
+      }
+    ]
+  }
 }

@@ -11,13 +11,21 @@
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/19_psi_math_sujet.pdf",
     "rapport_jury": "",
-    "sha256_sujet": "efa43476b68f8667df25eb2e9ca639e41f7cfab1de038605b530cc7c2cc41c2c"
+    "sha256_sujet": "efa43476b68f8667df25eb2e9ca639e41f7cfab1de038605b530cc7c2cc41c2c",
+    "pages_sujet": 8,
+    "etat_rapport_jury": "Rapport de l’épreuve écrite de mathématiques non retrouvé lors de cette révision.",
+    "index_institutionnel": "https://www.ens.psl.eu/rapports-et-sujets-2019-psi"
   },
   "figures": [
     {
       "fichier": "figures/polynome-spectral.svg",
       "question": "21",
       "legende": "Pour des valeurs propres comprises entre 1 et 5, le polynôme de degré trois conserve la valeur un en zéro et oscille entre deux bornes opposées sur l’intervalle grisé."
+    },
+    {
+      "fichier": "figures/trajectoire-gradient-conjugue.svg",
+      "question": "26(iv)",
+      "legende": "Les ellipses sont les niveaux de la fonction quadratique. Le premier pas minimise cette fonction sur la droite portée par le résidu initial. Le deuxième atteint le centre des ellipses."
     }
   ],
   "contributions": [
@@ -31,6 +39,231 @@
       "perimetre": "Rédaction intégrale des questions 1 à 26 et des quatre assertions finales. Vérification du rang de stabilisation, de la borne en nombre de condition et de la récurrence de conjugaison avant arrêt. Schéma du polynôme de Tchebychev normalisé.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Pointage des 39 rubriques des 26 numéros sur le fac-similé. Recalcul des espaces propres actifs et des minima, de la borne de Tchebychev et des quatre assertions de la récurrence. Vérification sur des matrices définies positives par calcul rationnel exact. Tracé d’un exemple en deux pas."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4a",
+      "4b",
+      "5",
+      "6a",
+      "6b",
+      "6c",
+      "7a",
+      "7b",
+      "7c",
+      "8a",
+      "8b",
+      "8c",
+      "8d",
+      "9",
+      "10",
+      "11a",
+      "11b",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19a",
+      "19b",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26(i)",
+      "26(ii)",
+      "26(iii)",
+      "26(iv)"
+    ],
+    "numeros_principaux": 26,
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": "1",
+        "page_pdf": 4
+      },
+      {
+        "question": "2",
+        "page_pdf": 4
+      },
+      {
+        "question": "3",
+        "page_pdf": 4
+      },
+      {
+        "question": "4a",
+        "page_pdf": 4
+      },
+      {
+        "question": "4b",
+        "page_pdf": 4
+      },
+      {
+        "question": "5",
+        "page_pdf": 4
+      },
+      {
+        "question": "6a",
+        "page_pdf": 4
+      },
+      {
+        "question": "6b",
+        "page_pdf": 4
+      },
+      {
+        "question": "6c",
+        "page_pdf": 4
+      },
+      {
+        "question": "7a",
+        "page_pdf": 5
+      },
+      {
+        "question": "7b",
+        "page_pdf": 5
+      },
+      {
+        "question": "7c",
+        "page_pdf": 5
+      },
+      {
+        "question": "8a",
+        "page_pdf": 5
+      },
+      {
+        "question": "8b",
+        "page_pdf": 5
+      },
+      {
+        "question": "8c",
+        "page_pdf": 5
+      },
+      {
+        "question": "8d",
+        "page_pdf": 5
+      },
+      {
+        "question": "9",
+        "page_pdf": 5
+      },
+      {
+        "question": "10",
+        "page_pdf": 5
+      },
+      {
+        "question": "11a",
+        "page_pdf": 5
+      },
+      {
+        "question": "11b",
+        "page_pdf": 5
+      },
+      {
+        "question": "12",
+        "page_pdf": 6
+      },
+      {
+        "question": "13",
+        "page_pdf": 6
+      },
+      {
+        "question": "14",
+        "page_pdf": 6
+      },
+      {
+        "question": "15",
+        "page_pdf": 6
+      },
+      {
+        "question": "16",
+        "page_pdf": 6
+      },
+      {
+        "question": "17",
+        "page_pdf": 6
+      },
+      {
+        "question": "18",
+        "page_pdf": 6
+      },
+      {
+        "question": "19a",
+        "page_pdf": 7
+      },
+      {
+        "question": "19b",
+        "page_pdf": 7
+      },
+      {
+        "question": "20",
+        "page_pdf": 7
+      },
+      {
+        "question": "21",
+        "page_pdf": 7
+      },
+      {
+        "question": "22",
+        "page_pdf": 7
+      },
+      {
+        "question": "23",
+        "page_pdf": 7
+      },
+      {
+        "question": "24",
+        "page_pdf": 8
+      },
+      {
+        "question": "25",
+        "page_pdf": 8
+      },
+      {
+        "question": "26(i)",
+        "page_pdf": 8
+      },
+      {
+        "question": "26(ii)",
+        "page_pdf": 8
+      },
+      {
+        "question": "26(iii)",
+        "page_pdf": 8
+      },
+      {
+        "question": "26(iv)",
+        "page_pdf": 8
+      }
+    ],
+    "precision": "Q24(i)–(ii) sont deux propriétés de la même construction de Gram–Schmidt, démontrées en Q24. Les assertions Q26(i)–(iv) possèdent quatre rubriques distinctes. Les p. 1 à 3 portent la garde, une page blanche et les notations."
+  },
+  "date_revision": "2026-11-26"
 }

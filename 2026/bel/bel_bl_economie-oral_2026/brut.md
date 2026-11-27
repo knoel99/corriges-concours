@@ -10,6 +10,12 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+**Couverture vérifiée.** Les onze exposés et leurs guides ont été rapprochés des 52 documents du fascicule officiel de 93 pages. Les compléments ci-dessous vérifient les dénominateurs, unités et populations des tableaux, cartes et graphiques. Les sujets individuels sont connus pour chacun des onze dossiers. Les relances sont des propositions de préparation à l’entretien.
+
 Onze dossiers de la banque officielle de 93 pages, dans leur ordre de publication. Pour chaque tirage : 1 h 30 de préparation, puis 30 minutes devant le jury, dont 15 minutes d’exposé et 15 minutes d’entretien. Chaque texte ci-dessous propose un exposé complet ; les réponses possibles de l’entretien dépendent des questions du jury.
 
 ## Dossier 1 — Les échanges économiques empêchent-ils la guerre ?
@@ -74,6 +80,8 @@ La paix apparaît alors comme un **bien public** : non rivale et non exclusive �
 
 Les échanges économiques n'« empêchent » pas mécaniquement la guerre : ils en modifient le calcul. En augmentant les gains d’échange auxquels il faudrait renoncer, l’interdépendance *bilatérale* peut réduire le risque de conflit. La perte de production rapportée par le document 1 inclut aussi des dommages étrangers à ce mécanisme. Cette interprétation est conforme à l'intuition de Montesquieu et de Kant. Mais cet effet est conditionnel : l'ouverture *multilatérale* peut au contraire désinhiber (document 3) ; la causalité est incertaine (1914, Ukraine) ; et le commerce échoue lorsque les décideurs ne supportent pas le coût social de la guerre. **Le commerce pacifie donc conditionnellement et partiellement — jamais à lui seul.** La montée des guerres commerciales et des rivalités sur les routes stratégiques illustre la fragilité d’une paix fondée sur les seuls échanges et l’importance des institutions qui les encadrent.
 
+Le graphique du document 2 donne un repère distinct du chiffre de perte de PIB cité dans la presse. L’année du déclenchement, le taux de croissance de la production se situe environ 7 à 8 points au-dessous de la moyenne nationale de référence. Deux ans après le début du conflit, l’inflation se situe environ 11 points au-dessus de sa moyenne. Les barres verticales représentent des intervalles de confiance à 90 %. Ces écarts de taux ne mesurent pas une perte cumulée de production.
+
 **Relance d’entretien.** Deux voisins qui échangent beaucoup se font-ils moins souvent la guerre en raison du commerce ? Une comparaison brute mêle causalité inverse et facteurs communs comme la stabilité des institutions. Suivre les mêmes couples de pays et examiner des variations du coût des échanges indépendantes de la relation politique améliore l’identification, sous réserve que ces variations n’agissent pas directement sur les conflits.
 
 ## Dossier 2 — Écologie : les nudges (« coups de pouce ») peuvent-ils remplacer les politiques contraignantes ?
@@ -113,6 +121,8 @@ Cette combinaison doit être socialement et démocratiquement soutenable. Une ta
 La critique de Wagener attire l'attention sur l'influence des intérêts économiques dans la décision collective. On peut en retenir la question de la capture des politiques sans adopter comme une loi démontrée l'impossibilité de toute transition dans une démocratie de marché. Des règles publiques peuvent précisément changer les rendements privés et les rapports de force. Leur qualité se juge à leurs effets, à leur répartition et à leur légitimité, non à l'étiquette douce ou dure qui leur est attachée.
 
 Enfin, l'évaluation doit mesurer les émissions réellement évitées, leur permanence, le coût et les effets redistributifs, en comparant si possible des groupes soumis ou non au dispositif. Une hausse des intentions déclarées ne vaut pas réduction d'émissions. Les nudges **ne remplacent donc pas les politiques contraignantes** : ils constituent un instrument utile lorsque le problème tient au contexte du choix, au sein d'une politique qui traite aussi les externalités, les infrastructures et les inégalités.
+
+Sur la pancarte de l’hôtel, 75 % désigne la proportion annoncée de clients qui ont accepté de réutiliser leurs serviettes. Ce nombre fait partie du message adressé au client. Pour mesurer l’effet causal de la pancarte, il faudrait comparer le taux de réutilisation de chambres exposées au message à celui de chambres semblables soumises à une autre consigne. L’économie de lavage, puis celle d’énergie, constitueraient deux étapes supplémentaires.
 
 **Relance d’entretien.** Une taxe et un quota donnent-ils le même résultat ? Si le décideur connaît la demande de permis, il peut fixer une taxe égale au prix d’équilibre du plafond. En présence d’incertitude, la taxe stabilise le prix payé et le quota, la quantité. Les recettes ou la valeur des droits dépendent en outre de la mise aux enchères ou de l’allocation gratuite.
 
@@ -156,6 +166,8 @@ Un signal-prix reste utile pour internaliser le dommage climatique, mais ses rec
 
 Enfin, la participation des populations concernées améliore la connaissance des contraintes et la légitimité des choix. Réduire les inégalités peut renforcer la coopération, la confiance et l'accès aux innovations sobres. Le climat et les inégalités forment donc **une relation à double sens** : une transition efficace doit répartir justement les efforts, et la réduction de certaines inégalités constitue elle-même une condition de sa réussite.
 
+Les deux images du document 2 changent d’unité et de population. La carte de 2016 donne la part de chaque pays dans les émissions mondiales annuelles de CO₂. Sur le graphique de ménages, la barre des 10 % les plus aisés des États-Unis atteint environ 50 tonnes de CO₂ par personne, contre environ 17 en France pour le même groupe de revenu national. Attribuer ces valeurs à la moyenne de chaque pays effacerait précisément l’inégalité que le document met en évidence.
+
 **Relance d’entretien.** Une baisse des émissions territoriales prouve-t-elle qu’un ménage a réduit son empreinte ? Non. Une production délocalisée réduit les émissions du territoire producteur initial mais peut rester incorporée dans la consommation de ses résidents. Le calcul d’empreinte rattache les émissions aux biens et services consommés.
 
 ## Dossier 4 — Les géants du numérique menacent-ils la concurrence ou révèlent-ils la nécessité de la régulation publique des marchés ?
@@ -197,6 +209,8 @@ Une régulation mal conçue peut toutefois renforcer les acteurs installés. Des
 Enfin, soutenir la recherche, les compétences et les infrastructures peut élargir les possibilités d'entrée ; subventionner durablement un acteur sans condition ne garantit pas une concurrence effective. Il faut évaluer les effets sur l'accès, la qualité, les coûts de changement et l'innovation, et pas seulement sur le nombre de fournisseurs nationaux.
 
 Les géants du numérique **menacent la concurrence lorsqu'ils convertissent leurs avantages en possibilités d'exclusion**. Ils montrent aussi que le marché concurrentiel n'est pas un état naturel qu'il suffirait de laisser agir. La bonne régulation doit rendre les positions contestables, protéger les utilisateurs et préserver les économies utiles, plutôt que choisir abstraitement entre gigantisme privé et suppression du marché.
+
+On peut chiffrer la concentration sans connaître les petits fournisseurs. Si les parts sont exprimées sur 100, les trois premiers contribuent déjà approximativement $32^2+22^2+11^2=1\,629$ à l’indice de Herfindahl-Hirschman. Le total dépend de la répartition des 35 % qui restent. Une telle mesure décrit une structure de marché. Elle ne permet pas, à elle seule, de constater un abus.
 
 **Relance d’entretien.** Les parts de marché permettent-elles de calculer exactement un indice de concentration ? Le graphique donne seulement les principaux fournisseurs. On peut sommer leurs parts et les carrés de leurs parts, mais pour un Herfindahl-Hirschman complet il manquerait la distribution entre tous les autres acteurs.
 
@@ -240,6 +254,8 @@ Pour les ménages, prévenir le crédit abusif, rendre les frais lisibles et org
 
 Ainsi **le débiteur n'est pas toujours le seul payeur, et un paiement n'est pas toujours un coût social net**. La question décisive porte sur l'usage initial des fonds, la capacité de remboursement et les règles d'ajustement. Une politique responsable cherche à préserver les financements utiles tout en empêchant que leur charge soit transférée silencieusement vers les populations les moins protégées.
 
+En 2021, sur le graphique du document 4, on lit environ 48 pays dont le service de la dette dépasse la dépense d’éducation et environ 38 pour la santé. Une même administration peut figurer dans les deux colonnes. Additionner les deux effectifs compterait alors certains pays deux fois. Il convient aussi de distinguer un dépassement constaté d’une réduction de dépenses provoquée par la dette.
+
 **Relance d’entretien.** Une dette extérieure de 60 pour un PIB de 200 représente 30 % du PIB. Un service annuel de 6 pour des exportations de 30 représente 20 % des exportations. Dépasser le seuil de 15 % du dossier signale une vulnérabilité de paiement en devises ; il ne démontre pas à lui seul l’insolvabilité.
 
 ## Dossier 6 — Plateformes collaboratives type Airbnb : risques et opportunités
@@ -281,6 +297,8 @@ L'effectivité dépend des données, des moyens de contrôle et des sanctions. L
 Les pouvoirs publics doivent aussi agir sur l'offre résidentielle, l'accès au foncier et les besoins des habitants. Interdire une plateforme ne construirait pas les logements manquants. Inversement, demander seulement de construire davantage négligerait les effets immédiats de l'arbitrage touristique sur un parc existant rare. La transparence fiscale et la contribution aux charges locales permettent enfin de mieux rapprocher bénéfices privés et coûts collectifs.
 
 Les plateformes collaboratives **créent des possibilités réelles mais répartissent inégalement leurs gains et leurs risques**. Leur régulation doit préserver la location occasionnelle et les gains d'appariement, tout en empêchant que l'exploitation touristique permanente d'un parc contraint dégrade durablement l'accès au logement. L'indicateur décisif n'est pas seulement le nombre de réservations, mais aussi l'évolution du parc résidentiel, des prix et des conditions de vie locales.
+
+Dans le document 4, 35 % est une proportion parmi les propriétaires. Le tableau indique par ailleurs que 65,3 % des logements de son champ ont au moins un multipropriétaire, et la carte donne 81,5 % à Paris. Un logement détenu en indivision peut figurer dans plusieurs catégories de propriétaires. Ces chiffres renseignent sur la propriété disponible pour différents usages, sans indiquer quelle fraction est mise en location touristique.
 
 **Relance d’entretien.** Comment tester l’effet d’une limitation ? Comparer les variations d’offre résidentielle et de loyers dans une zone traitée et une zone comparable avant et après l’entrée en vigueur, vérifier leurs tendances antérieures et les reports d’annonces sur les zones voisines.
 
@@ -326,6 +344,8 @@ La politique familiale, enfin, peut rendre possibles les naissances souhaitées 
 
 La dénatalité **ne conduit donc pas mécaniquement au déclin économique**. Elle transforme les contraintes de production, de solidarité et d'investissement. Le critère pertinent demeure le niveau de vie et sa distribution, dans une société capable d'adapter ses institutions et de prendre en compte également ses ressources naturelles.
 
+La table de la projection centrale permet de comprendre le point de retournement. De 2026 à 2037, le solde naturel moyen est de −94 000 personnes par an, compensé par 150 000 de solde migratoire, soit +56 000. De 2037 à 2070, le solde naturel passe à −268 000 dans le scénario et, avec la même hypothèse migratoire, la population diminue de 118 000 par an en moyenne. La comparaison décompose une projection conditionnelle.
+
 **Relance d’entretien.** Si le nombre d’emplois par habitant diminue de 1 % tandis que la production par emploi augmente de 2 %, le PIB par habitant est multiplié par 0,99 × 1,02 = 1,0098. Il croît donc d’environ 0,98 %. Ce petit calcul explique pourquoi dénatalité et déclin ne sont pas synonymes.
 
 ## Dossier 8 — Supprimer un jour férié
@@ -363,6 +383,8 @@ La répartition de la charge varie également. Un salarié dont le salaire mensu
 Le loisir a lui-même une valeur, même s'il n'entre pas directement dans le PIB. Un jour de repos commun facilite les activités familiales, associatives et culturelles ; il n'est pas parfaitement remplaçable par un repos isolé. Le bilan pertinent est donc un bilan de bien-être et de distribution, pas seulement de production marchande.
 
 Une décision cohérente doit préciser son objectif : financer l'autonomie, réduire le déficit ou augmenter les capacités productives. Elle doit ensuite comparer cette mesure à d'autres prélèvements ou à d'autres organisations du travail, avec leurs effets redistributifs. Les gains annoncés doivent être confrontés aux comportements réels, à la demande et aux emplois financés. **Supprimer un jour férié n'est ni une recette gratuite ni nécessairement une perte collective** : son résultat dépend du dispositif concret et de la manière dont sont partagés le travail, le revenu et le temps libre.
+
+Le tableau de calendrier de l’Insee donne pour 2026 trois jeudis ouvrés de plus et deux vendredis ouvrés de moins que l’année précédente. Le nombre total de jours ouvrés en semaine hors lundi reste pourtant à 202. Pour convertir un calendrier en activité agrégée, il faut tenir compte du jour et des secteurs concernés. Le résultat d’une suppression permanente doit en outre intégrer les reports de consommation et la négociation sur le temps de travail.
 
 **Relance d’entretien.** Le salaire mensuel restant constant, qui finance la mesure ? Le temps travaillé augmente pour le salarié concerné et le salaire horaire moyen baisse. L’employeur peut gagner un supplément de production, mais supporter une cotisation. Les clients ou les travailleurs peuvent ensuite en supporter une partie selon la réaction des prix et des salaires.
 
@@ -408,6 +430,8 @@ La diversification commerciale possède enfin une valeur stratégique. Réduire 
 
 L'accord UE-Mercosur **ne se juge ni au seul volume des échanges ni à un affrontement simplifié entre deux produits**. Son intérêt dépend des gains d'accès au marché, de la répartition de l'ajustement, du contrôle des engagements et de la protection des biens collectifs. La question économique centrale est de rendre compatibles ouverture, transition productive et capacité des sociétés à en partager les bénéfices.
 
+Le document 4 mesure l’utilisation de pesticides en 2023 en kilogrammes de substance active par hectare agricole. Le rapport entre le Brésil (12,63) et l’Union à 27 (2,67) est d’environ 4,73. Ce rapport est distinct des limites maximales de résidus propres à un produit et à une substance. Il n’établit ni le résidu sur une denrée précise ni l’effet causal d’un accord qui vient d’être signé.
+
 **Relance d’entretien.** Si l’Europe est plus productive en niveau, peut-elle encore gagner à importer ? Oui. C’est le rapport entre temps nécessaires aux deux productions dans chaque zone qui détermine les possibilités d’échange. Dans l’exemple, passer de cinq à sept unités de bœuf pour une voiture représente un gain pour l’Europe même si elle produit chaque bien avec au moins autant d’efficacité.
 
 ## Dossier 10 — Le patrimoine des ménages français
@@ -421,6 +445,10 @@ Le patrimoine brut est la valeur des actifs détenus ; le patrimoine net déduit
 * * *
 
 Le patrimoine privé est très inégalement réparti. Début 2024, le document 1 indique une moyenne brute de 374 900 euros et une médiane de 205 100 euros. Une moyenne sensiblement supérieure à la médiane signale le poids du haut de la distribution. Le premier décile est à 6 200 euros et le neuvième à 857 700 euros : leur rapport est d'environ 138, mais ces seuils ne sont pas les moyennes des groupes pauvres et riches.
+
+![Figure 1 — Patrimoine brut des ménages en logement ordinaire, France hors Mayotte, début 2024](figures/patrimoine-seuils.svg)
+
+Entre le premier décile et la médiane, l’écart atteint 198 900 euros. Entre la médiane et le neuvième décile, il monte à 652 600 euros. Chaque intervalle couvre pourtant quarante points de rang dans la population des ménages. Cet étirement du haut de la distribution aide à comprendre pourquoi le patrimoine moyen dépasse la médiane.
 
 Les parts de masse confirment la concentration : les 10 % les mieux dotés en patrimoine brut en détiennent environ 48 %, les 1 % environ 15 %. La moitié la mieux dotée en possède 93 %, laissant 7 % à l'autre moitié. Ces groupes sont définis par le patrimoine, pas par le revenu annuel. On ne peut pas non plus additionner les pourcentages des différentes composantes : les personnes les plus dotées en actifs professionnels ne sont pas nécessairement les plus dotées en immobilier.
 
@@ -447,6 +475,8 @@ Un droit à pension n'est toutefois ni librement vendable ni transmissible comme
 Le travail de la BCE éclaire enfin le comportement d'épargne. Une meilleure retraite attendue peut réduire le besoin d'accumuler des actifs privés. Les auteurs estiment en moyenne une baisse de 53 centimes du patrimoine financier pour un dollar supplémentaire de richesse retraite, mais soulignent l'hétérogénéité entre pays et groupes. Il ne s'agit ni d'une substitution euro pour euro ni d'une règle individuelle certaine ; des complémentarités apparaissent même dans certains déciles inférieurs.
 
 Le patrimoine des ménages français est donc **à la fois très concentré, hétérogène dans sa composition et incomplet si l'on ignore les ressources sociales futures**. L'action publique doit articuler accès au logement, fiscalité des transmissions, protection contre les risques et retraite, en distinguant richesse nette, liquidité et sécurité économique. Une seule moyenne ne suffit pas à mesurer ces dimensions.
+
+La table fiscale du document 4 compte environ 40 700 foyers à très haut revenu et autant à très haut patrimoine immobilier en 2022. Seulement 6 900 appartiennent aux deux groupes, soit environ 17 % de chacun. Le revenu est un flux annuel et le patrimoine un stock. Le calcul concerne le champ fiscal défini dans ce document, à distinguer de celui des ménages interrogés par l’Insee.
 
 **Relance d’entretien.** Classer les ménages d’après le patrimoine brut puis soustraire la dette du « ménage médian » donne-t-il la médiane du patrimoine net ? Non. La dette modifie l’ordre entre ménages. Il faut calculer le patrimoine net de chacun puis les reclasser.
 
@@ -489,6 +519,8 @@ RTE envisage une électrification d'usages aujourd'hui fossiles pour décarboner
 La dépêche Reuters rappelle cette nécessité d'un bilan complet pour les centres de données. Le sondage cité mesure les craintes des personnes interrogées quant aux tarifs, à l'eau et au territoire ; il ne prouve pas mécaniquement une hausse de prix donnée. De nouveaux usages peuvent absorber des excédents mais aussi créer des besoins de réseau et des tensions à d'autres heures. Leur implantation doit donc être évaluée localement.
 
 Les prix négatifs ne sont ainsi **ni économiquement impossibles ni, par eux-mêmes, la preuve d'un système optimal**. Ils peuvent constituer un signal rationnel d'excédent temporaire dans un environnement contraint. L'enjeu est de développer la flexibilité et des règles de financement adaptées, afin que l'abondance bas carbone d'une période bénéficie aux utilisateurs sans compromettre la fiabilité du système.
+
+En lisant les fins de courbe de 2024 et de 2025, on passe de quelque 360 à un peu plus de 500 heures de prix négatif. Cinq cents heures représentent de l’ordre de 6 % des 8 760 heures d’une année ordinaire. Le prix de gros peut donc devenir négatif à certaines heures sans que le prix moyen de l’année, ou la facture finale d’un ménage, prenne ce signe.
 
 **Relance d’entretien.** Pourquoi une batterie ne fait-elle pas immédiatement disparaître tous les prix négatifs ? Il faut qu’elle soit accessible au bon nœud, qu’elle dispose encore de capacité de charge et qu’une revente ultérieure couvre pertes et coût du cycle. Si toutes les batteries locales sont déjà pleines, la contrainte persiste.
 

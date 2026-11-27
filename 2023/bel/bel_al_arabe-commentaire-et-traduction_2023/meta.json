@@ -1,0 +1,132 @@
+{
+  "slug": "bel_al_arabe-commentaire-et-traduction_2023",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Arabe (commentaire et traduction)",
+    "annee": 2023,
+    "modalite": "écrit commun"
+  },
+  "questions": 2,
+  "duree_heures": 6,
+  "redaction": "Corrigé original proposé par IA, non officiel.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2023-09/Commentaire-d-un-texte-en-LVE.pdf#page=6",
+    "sujet_sha256": "465bc18f65e3127c7bcf5720f6042d95180133384f245e34fd7b38acd0ffb760",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2023-12/Arabe-2023.pdf#page=2",
+    "rapport_jury_sha256": "0da95285695bb5751218471468f518f4fb0e933f80195f47e4f5ff5877db6ff3",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2023",
+    "ouvrage": "Muṣṭafā Luṭfī al-Manfalūṭī, « La Liberté », *al-Naẓarāt* (édition datée de 1984 sur le sujet).",
+    "ecoles": "ENS de Lyon / ENS (Paris)"
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2023-09/Commentaire-d-un-texte-en-LVE.pdf#page=6",
+      "sha256": "465bc18f65e3127c7bcf5720f6042d95180133384f245e34fd7b38acd0ffb760",
+      "pages": 24,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "2d00da9d0f1f2cdf2b38a83f2d4c6e4c708adc481caee234bd08becf5b5b22e7"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "07bf7c7ea1e09c9e01b35c439fb384e78325e16ca6969efdf51845f93bfb66ff"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "09190a920f17744df5a90238141118f23b58ef67d477732ede3c988174783448"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "93f5ac79de7f037018030f34b8b6f683529235961c85988fe4d1c4fd1abbbe43"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2023-12/Arabe-2023.pdf#page=2",
+      "sha256": "0da95285695bb5751218471468f518f4fb0e933f80195f47e4f5ff5877db6ff3",
+      "pages": 2,
+      "pages_verifiees": [
+        {
+          "numero": 2,
+          "rendu_sha256": "11a8c212083785ec7bf97e8c3df08dbd63dda5929d62c0c4edde9ff32f24a279"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "Commentaire",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "Le changement d’agent déplace la contrainte. Celui qui a besoin de sortir, celui qui ferme et celui qui garde ne restent pas toujours distincts."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction originale des deux éditions, étude du feuillet, consultation du jury, élaboration du guide et du schéma."
+    },
+    {
+      "phase": "revision",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture des 39 lignes, des deux mouvements de la version et des trois prépositions sur la surveillance de soi. Contrôle de la comparaison avec l’oiseau et de la dernière image du soleil."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire",
+      "Version"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Commentaire",
+        "page_pdf": 6,
+        "pages_pdf": [
+          6,
+          7
+        ],
+        "ligne_debut": 1,
+        "ligne_fin": 39
+      },
+      {
+        "question": "Version",
+        "page_pdf": 7,
+        "pages_pdf": [
+          7
+        ],
+        "ligne_debut": 21,
+        "ligne_fin": 28,
+        "debut": "صنع الإنسان",
+        "fin": "دمعة واحدة عليها"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

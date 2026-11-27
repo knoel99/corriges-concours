@@ -9,9 +9,10 @@
   "questions": 22,
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
-    "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-1_mp_2009.pdf",
+    "sujet": "https://fichiers.wikiprepa.fr/data/x_maths-1_mp_2009.pdf",
     "rapport_jury": "https://www.wikiprepa.fr/concours/data/x_maths-1_mp_2009_rapport_jury.pdf",
-    "sha256_sujet": "72d2da00e1fd179cd92bc84651a589cf2525b851f8100996ad904aa63b8c5613"
+    "sha256_sujet": "72d2da00e1fd179cd92bc84651a589cf2525b851f8100996ad904aa63b8c5613",
+    "sha256_rapport_jury": "f98a05f8dc326da9dd1c9df7f93f8182ed85e1bd5a155856d707ad7da94e9c87"
   },
   "figures": [
     {
@@ -31,6 +32,75 @@
       "perimetre": "Rédaction intégrale des deux éditions, contrôle du sujet de quatre pages et du rapport des correcteurs. Convergence des séries intérieures et des familles doubles, rayon des séries de Taylor et concentration par les moments d’ordre deux et quatre. Figure d’une famille de densités concentrées.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Génératrices des coefficients de dilatation, sommabilité absolue de la double série, changement d’échelle gaussien et borne sommable à partir du quatrième moment.",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "agent": "rennes_oraux_economie",
+      "session": "rennes_oraux_economie"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7.a",
+      "7.b",
+      "7.c",
+      "7.d",
+      "7.e",
+      "7.f",
+      "8",
+      "9.a",
+      "9.b",
+      "10",
+      "11",
+      "12.a",
+      "12.b",
+      "13.a",
+      "13.b",
+      "13.c"
+    ],
+    "pages_du_sujet": 4,
+    "pages_pdf_des_questions": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 2,
+      "6": 2,
+      "7.a": 2,
+      "7.b": 2,
+      "7.c": 2,
+      "7.d": 2,
+      "7.e": 2,
+      "7.f": 2,
+      "8": 3,
+      "9.a": 3,
+      "9.b": 3,
+      "10": 3,
+      "11": 3,
+      "12.a": 3,
+      "12.b": 4,
+      "13.a": 4,
+      "13.b": 4,
+      "13.c": 4
+    },
+    "precision": "Sous-questions relevées sur le fac-similé. Le numéro de page désigne le début de chaque demande dans le PDF original."
+  }
 }

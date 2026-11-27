@@ -11,7 +11,8 @@
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours/session-2003/sujet-ecrit-2003-second-concours_mathematiques.pdf",
     "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/rapports-des-jurys-du-second-concours/session-2003/rapport-2003-second-concours_ecrit_mathematiques.pdf",
-    "sha256_sujet": "723720e456db04dd50fdf20ecb5a21057b10abb0844f2dc911bc3d3d9df02f09"
+    "sha256_sujet": "723720e456db04dd50fdf20ecb5a21057b10abb0844f2dc911bc3d3d9df02f09",
+    "sha256_rapport_jury": "a60155ac817ec0894cf27dea0491fcd913a27462eda80fcd1768bd427e5372cf"
   },
   "figures": [
     {
@@ -31,6 +32,50 @@
       "perimetre": "Rédaction complète sur l’original et le rapport. Système polynomial et matrice triangulaire, deux exemples de Cesàro, encadrement pondéré du saut, contrôle des coefficients de signes mixtes et choix explicite de la coupure. Figure des puissances et du seuil.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "x_maths_b_anciennes",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Confrontation des 20 rubriques des deux éditions aux 4 pages du sujet. Rapport écrit du jury consulté. Matrice triangulaire explicitée, argument de signe et indépendance logique de la conclusion taubérienne précisés. Seuil de la figure vérifié."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1.a",
+      "I.1.b",
+      "I.2.a",
+      "I.2.b",
+      "I.3",
+      "II.1",
+      "II.2.a",
+      "II.2.b",
+      "II.3.a",
+      "II.3.b",
+      "II.3.c",
+      "II.3.d",
+      "III.1.a",
+      "III.1.b",
+      "III.1.c",
+      "III.2",
+      "III.3.a",
+      "III.3.b",
+      "III.3.c",
+      "III.4"
+    ],
+    "precision": "Confrontation des 20 rubriques des deux éditions aux 4 pages du sujet. Rapport écrit du jury consulté. Matrice triangulaire explicitée, argument de signe et indépendance logique de la conclusion taubérienne précisés. Seuil de la figure vérifié.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "723720e456db04dd50fdf20ecb5a21057b10abb0844f2dc911bc3d3d9df02f09",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Confrontation des 20 rubriques des deux éditions aux 4 pages du sujet. Rapport écrit du jury consulté. Matrice triangulaire explicitée, argument de signe et indépendance logique de la conclusion taubérienne précisés. Seuil de la figure vérifié.",
+      "commit_redaction_anterieure": "185390da34e660da3351bea744a20298663c545d"
+    }
+  }
 }

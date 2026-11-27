@@ -4,7 +4,8 @@
     "concours": "Centrale-Supélec",
     "filiere": "TSI",
     "matiere": "Rédaction",
-    "annee": 2026
+    "annee": 2026,
+    "modalite": "écrit"
   },
   "questions": 2,
   "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
@@ -13,6 +14,12 @@
       "fichier": "figures/lecture-du-sujet.svg",
       "question": "Dissertation",
       "legende": "La corneille blanche de Haushofer"
+    },
+    {
+      "fichier": "figures/le-jardin-revient.svg",
+      "question": "Résumé",
+      "legende": "Le retour des pousses en février et la diversité qui amortit une perturbation éclairent deux questions distinctes.",
+      "provenance": "Schéma pédagogique original pour cette révision."
     }
   ],
   "sources": {
@@ -50,7 +57,109 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Lecture des deux pages de l’épreuve. Recompte des trois tranches de cinquante mots et contrôle du plafond de 1 800 mots pour la dissertation. Explication de la pluralité du sens d’un jardin à partir de la corneille de Haushofer."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Relecture de la dissertation à la lumière de la formule de Feertchak. Suppression d’une affirmation invérifiable sur la fonction écologique de la corneille et distinction des trois regards dans les deux éditions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Nouvelle rédaction du résumé de Feertchak, décompte des trois cinquantaines et de la dissertation seule, vérification des consignes de présentation et du programme, correction du milieu propre et de la sélection des signaux chez Canguilhem."
     }
   ],
-  "date_revision": "2026-11-24"
+  "date_revision": "2026-11-26",
+  "duree_heures": 4,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.concours-centrale-supelec.fr/sites/default/files/documents/R132.pdf",
+      "sha256": "73f9056b2c119b4a77b581cc444e3df130f7aaa76c030216466255f642408b48",
+      "pages": 2,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "ad7d4848d71214b9beb52d77f947daa744d8af6020e25fe6afcc71f242a15ce3"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "2d8f4fd0079e51ff854b739cdaa60b9e65ac1f8227adc49614f7ded5d06ee77b"
+        }
+      ]
+    },
+    "catalogue": {
+      "url": "https://www.concours-centrale-supelec.fr/sujets-rapports",
+      "sha256": "7e564389f6b701010fa9cd31f8a0736ecca499196322778431c84b3afe7f7cb6",
+      "constat": "La rubrique officielle des rapports TSI consultée le 26 novembre 2026 s’arrête à la session 2025. Les consignes ci-dessus proviennent du feuillet de 2026."
+    },
+    "programme": {
+      "url": "https://www.enseignementsup-recherche.gouv.fr/fr/bo/2025/Hebdo23/MENS2514209A",
+      "sha256": "9ffa8558361588f4db261db1aecff045e22bc5bf3c1dd99bce476c947662ea24",
+      "reference": "BO n° 23 du 5 juin 2025, arrêté du 6 mai 2025, article 1, thème 2."
+    },
+    "verne": {
+      "url": "https://fr.wikisource.org/wiki/Vingt_mille_lieues_sous_les_mers/Texte_entier",
+      "sha256": "0079c22d4b5a2ae447ebfc827e3cb346f6df8492b44966bcf857e4a047628a29",
+      "reference": "Première partie, chapitre VII, Une baleine d’espèce inconnue."
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Résumé",
+      "Dissertation"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "Résumé",
+        "page_pdf": 1,
+        "consigne": "Résumer en 150 mots le texte suivant. Un écart de 10 % en plus ou en moins sera accepté. Indiquer par une barre nette chaque cinquantaine de mots, puis, à la fin du résumé, le total exact.",
+        "intervalle": [
+          135,
+          165
+        ],
+        "mots_rediges": 150,
+        "marques": [
+          50,
+          100,
+          150
+        ],
+        "ponderation": "1/2"
+      },
+      {
+        "question": "Dissertation",
+        "page_pdf": 2,
+        "citation": "Selon Sonia Feertchak, dans un jardin on découvre que « tout fait sens, l’harmonie se donne à voir, rien de vivant n’est insignifiant. »",
+        "consigne": "Dans quelle mesure les trois œuvres au programme permettent-elles de commenter cette formule ?",
+        "limite_mots": 1800,
+        "ponderation": "1/2",
+        "mots_dissertation_brut": 1676,
+        "mots_dissertation_guide": 1676
+      }
+    ],
+    "choix": "Les deux exercices sont obligatoires.",
+    "annexes_imposees": []
+  }
 }

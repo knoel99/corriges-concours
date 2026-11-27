@@ -1,0 +1,66 @@
+{
+  "slug": "ens-de-lyon_series-la-lv-sh-a-l_philosophie-oral_2022",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries LA/LV/SH (A/L)",
+    "matiere": "Philosophie (oral)",
+    "annee": 2022,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie · Oral de spécialité SH · ENS de Lyon 2022",
+  "questions": 110,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2022-11/Philosophie2022_0.pdf",
+    "sha256_sujet": "4c1babecd0179ec00bf50b86b2f61b9b61ced0c14e1159c562269ecfc8a70c1c",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2022-11/Philosophie%202022.pdf",
+    "sha256_rapport_jury": "b762666335ff95bfe67afca19e2cd428cc54909185bd891aac6f1756bf874337",
+    "texte_comparaison_nietzsche": "https://fr.wikisource.org/wiki/Le%20Gai%20Savoir/Livre%20cinqui%C3%A8me",
+    "texte_comparaison_montaigne": "https://fr.wikisource.org/wiki/Essais/Livre%20II/Texte%20entier",
+    "reperage": "Cahier des sujets, série SH, p. 2 Nietzsche, 3 Montaigne, 4–5 leçons. Rapport 2022, sections sur les deux oraux. Les éditions de comparaison éclairent les textes ; la pagination des billets reste celle de Wotling et de Folio."
+  },
+  "couverture": {
+    "statut": "complet",
+    "options_publiees": 110,
+    "explications": {
+      "occurrences": 56,
+      "decoupages_distincts": 45
+    },
+    "lecons": {
+      "enveloppes": 27,
+      "options": 54
+    },
+    "notice": "Les 110 options publiées sont abordées, avec renvois pour les reprises de passage. Les choix effectivement décrits par le jury sont distingués des autres options."
+  },
+  "figures": [
+    {
+      "fichier": "figures/nietzsche.svg",
+      "question": "Que demande la connaissance au § 355 ?",
+      "legende": "Que demande la connaissance au § 355 ?"
+    },
+    {
+      "fichier": "figures/montaigne.svg",
+      "question": "À quoi comparer un instrument de jugement ?",
+      "legende": "À quoi comparer un instrument de jugement ?"
+    },
+    {
+      "fichier": "figures/lecon.svg",
+      "question": "Changer de scène pour éprouver une distinction",
+      "legende": "Changer de scène pour éprouver une distinction"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des 54 leçons et des explications des 56 occurrences publiées. Vérification des deux épreuves, de la pagination et des reprises, trois schémas et deux éditions. Le travail oraux_lyon comprend le relevé des billets, les analyses Nietzsche et la leçon longue.",
+      "collaboration": "oraux_lyon"
+    }
+  ]
+}

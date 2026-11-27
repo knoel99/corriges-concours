@@ -22,7 +22,9 @@
     "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-oraux-de-droit-d-e-2026_1790958475414-pdf",
     "sujet_sha256": "cda4db535e5065b85539b08324a6b2e67a68dc2931c5b22736e72b61bbdc9260",
     "apercu_sujet_sha256": "90683c5c59ad2f5a59a4f18e263054396546f60b3753cc46a047c0a18adc5d54",
-    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2026-1"
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2026-1",
+    "attestation": "Origine, pagination, premières lignes et SHA du document institutionnel consignés dans la collecte nationale lot-E.tsv. Les numéros, bornes et consignes ont été contrôlés sur un rendu PDF de l’URL de l’ENS dont l’empreinte distincte est conservée.",
+    "pages_sujet": 23
   },
   "figures": [
     {
@@ -65,6 +67,309 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Vérification de la numérotation imprimée et des conditions des recours. Contrôle des décisions publiées sur l’eau, l’indivision, l’indemnisation routière, la réservation de stand et les lingots."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Relecture de la planche 8 du fascicule officiel. Analyse des pièces utiles à l’injonction de livrer de l’eau et à la réduction du prix d’abonnement, en conservant le taux demandé dans l’énoncé."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "x_hist_8589",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Vérification des 23 questions théoriques et de leurs cas, enrichissement des conclusions, repérage de chaque billet, trois schémas repris dans les deux éditions."
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "sujets_entierement_traites": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      23,
+      24
+    ],
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      23,
+      24
+    ],
+    "reperes": [
+      {
+        "numero": 1,
+        "pages_pdf": [
+          1,
+          1
+        ],
+        "demande_theorique": "La place du droit de l’Union européenne dans la hiérarchie des normes en France",
+        "demande_pratique": true
+      },
+      {
+        "numero": 2,
+        "pages_pdf": [
+          2,
+          2
+        ],
+        "demande_theorique": "L’articulation des articles 34, 37 et 38 de la Constitution française : loi, ordonnance et décret",
+        "demande_pratique": true
+      },
+      {
+        "numero": 3,
+        "pages_pdf": [
+          3,
+          3
+        ],
+        "demande_theorique": "L’« invocabilité » des directives de l’Union européenne",
+        "demande_pratique": true
+      },
+      {
+        "numero": 4,
+        "pages_pdf": [
+          4,
+          4
+        ],
+        "demande_theorique": "Commenter l’article 1 alinéa 1er du Code civil",
+        "demande_pratique": true
+      },
+      {
+        "numero": 5,
+        "pages_pdf": [
+          5,
+          5
+        ],
+        "demande_theorique": "La période précontractuelle dans le Code civil",
+        "demande_pratique": true
+      },
+      {
+        "numero": 6,
+        "pages_pdf": [
+          6,
+          6
+        ],
+        "demande_theorique": "La liberté contractuelle",
+        "demande_pratique": true
+      },
+      {
+        "numero": 7,
+        "pages_pdf": [
+          7,
+          7
+        ],
+        "demande_theorique": "La classification des droits subjectifs",
+        "demande_pratique": true
+      },
+      {
+        "numero": 8,
+        "pages_pdf": [
+          8,
+          8
+        ],
+        "demande_theorique": "Les sanctions de l’inexécution du contrat",
+        "demande_pratique": true
+      },
+      {
+        "numero": 9,
+        "pages_pdf": [
+          9,
+          9
+        ],
+        "demande_theorique": "Commentez l’article 1170 du Code civil",
+        "demande_pratique": true
+      },
+      {
+        "numero": 10,
+        "pages_pdf": [
+          10,
+          10
+        ],
+        "demande_theorique": "La signature",
+        "demande_pratique": true
+      },
+      {
+        "numero": 11,
+        "pages_pdf": [
+          11,
+          11
+        ],
+        "demande_theorique": "La responsabilité du fait des choses à l’épreuve des nouvelles technologies",
+        "demande_pratique": true
+      },
+      {
+        "numero": 12,
+        "pages_pdf": [
+          12,
+          12
+        ],
+        "demande_theorique": "Droit de la preuve et ordre public",
+        "demande_pratique": true
+      },
+      {
+        "numero": 13,
+        "pages_pdf": [
+          13,
+          13
+        ],
+        "demande_theorique": "Force obligatoire et effet relatif des contrats",
+        "demande_pratique": true
+      },
+      {
+        "numero": 14,
+        "pages_pdf": [
+          14,
+          14
+        ],
+        "demande_theorique": "Quelle utilité pour la notion de quasi-contrat au XXIe siècle ?",
+        "demande_pratique": true
+      },
+      {
+        "numero": 15,
+        "pages_pdf": [
+          15,
+          15
+        ],
+        "demande_theorique": "Les classifications secondaires des biens en droit français",
+        "demande_pratique": true
+      },
+      {
+        "numero": 16,
+        "pages_pdf": [
+          16,
+          16
+        ],
+        "demande_theorique": "La reconnaissance des propriétés collectives dans le Code civil",
+        "demande_pratique": true
+      },
+      {
+        "numero": 17,
+        "pages_pdf": [
+          17,
+          17
+        ],
+        "demande_theorique": "Le nom des personnes",
+        "demande_pratique": true
+      },
+      {
+        "numero": 18,
+        "pages_pdf": [
+          18,
+          18
+        ],
+        "demande_theorique": "Les méthodes d’interprétation de la règle de droit",
+        "demande_pratique": true
+      },
+      {
+        "numero": 19,
+        "pages_pdf": [
+          19,
+          19
+        ],
+        "demande_theorique": "Commentez cet article issu du Code civil : Article 1245-3",
+        "demande_pratique": true
+      },
+      {
+        "numero": 20,
+        "pages_pdf": [
+          20,
+          20
+        ],
+        "demande_theorique": "Dressez la typologie des régimes de protection des incapables",
+        "demande_pratique": true
+      },
+      {
+        "numero": 21,
+        "pages_pdf": [
+          21,
+          21
+        ],
+        "demande_theorique": "Responsabilité contractuelle ou responsabilité extra-contractuelle ?",
+        "demande_pratique": true
+      },
+      {
+        "numero": 23,
+        "pages_pdf": [
+          22,
+          22
+        ],
+        "demande_theorique": "Consensualisme et conséquences",
+        "demande_pratique": true
+      },
+      {
+        "numero": 24,
+        "pages_pdf": [
+          23,
+          23
+        ],
+        "demande_theorique": "L’acquisition de la propriété",
+        "demande_pratique": true
+      }
+    ],
+    "perimetre": "Les 23 questions théoriques et les 23 cas pratiques du fascicule.",
+    "numeros_absents_du_fascicule": [
+      22
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "nombre_questions_theoriques": 23,
+    "nombre_cas_pratiques": 23
+  }
 }

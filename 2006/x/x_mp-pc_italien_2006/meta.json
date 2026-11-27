@@ -1,0 +1,74 @@
+{
+  "slug": "x_mp-pc_italien_2006",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Italien",
+    "annee": 2006,
+    "modalite": "écrit"
+  },
+  "intitule": "Rosetta Loy, Ricordi, et Thérèse Delpech, La maîtrise du développement technologique",
+  "questions": 3,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "V",
+      "1",
+      "2"
+    ]
+  },
+  "sources": {
+    "index": "https://web.archive.org/web/20090501013104/http://www.polytechnique.fr:80/concours/sujets/sujet06/sujet06.htm",
+    "etablissements": "École polytechnique et École supérieure de physique et de chimie industrielles",
+    "pages_sujet": "5",
+    "sujet": "https://web.archive.org/web/20090320042100id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/06_Version.pdf#page=5",
+    "sujet_sha256": "3c0241e84f54feccff75ccc446adc3977fde1b0af7c98b6bd9a5f0aa93a6ae7d",
+    "sujet_complementaire": "https://web.archive.org/web/20090320034643id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/06_ExprEcrit.pdf",
+    "sujet_complementaire_sha256": "ad80c0da654053218712dac3cf40e8b5a0dc914d0adc391ff04bf02b5cdad42d",
+    "rapport_jury": "https://web.archive.org/web/20061208144551id_/http://www.imprimerie.polytechnique.fr/EnLignes/Files/06_Version_ExprEcrit_IT.pdf",
+    "rapport_jury_sha256": "f036a06638735400db9b09aa4ac295671d2278e78b5770f7a195a82afe039124",
+    "precision": "Le récit italien provient de Nero è l’albero dei ricordi (2004). Les questions d’expression portent sur l’extrait de L’Ensauvagement (2005). Le rapport commun à la version et à l’expression italiennes est signé Laura Fournier Finocchiaro."
+  },
+  "mots_expression": {
+    "1": 126,
+    "2": 186
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V",
+      "fichier": "figures/projet.svg",
+      "legende": "Les temps du récit opposent l’avenir imaginé et les faits passés."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "fichier": "figures/codes.svg",
+      "legende": "Delpech part d’exemples dont les effets dépassent l’acteur initial."
+    },
+    {
+      "numero": 3,
+      "question": "2",
+      "fichier": "figures/fiducia.svg",
+      "legende": "Les informations ont des effets différents selon la confiance accordée à la source."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "italien_sciences_2005_2010",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et réponses intégrales en italien. Rosetta Loy, Ricordi, et Thérèse Delpech, La maîtrise du développement technologique.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}

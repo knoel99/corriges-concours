@@ -1,0 +1,566 @@
+{
+  "slug": "banque-pt_pt_physique-a_2020",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique A",
+    "annee": 2020,
+    "modalite": "écrit"
+  },
+  "questions": 58,
+  "reponses_reperees": 62,
+  "duree_heures": 4,
+  "redaction": "Corrigé original rédigé par IA, non officiel.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2020/ph_a_2020_pt.pdf",
+    "sujet_sha256": "4e2653d762df6e9d6c57111e1f38089879575fb73ea33fa0212d767e04f0f7bd",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2020/rapport_phys_a_ecrit_2020.pdf",
+    "rapport_jury_sha256": "3a59a9bf68a8f48a912535b0aa668f3cda0c870d39994735e82355fed7ea9c45",
+    "index_annuel": "https://www.banquept.fr/spip.php?article158",
+    "historique": "https://www.ligo.caltech.edu/page/press-release-gw150914",
+    "annexes": "Données p. 2 et figures dans le corps. Fin p. 13, p. 14 et 15 blanches, mention d’imprimerie p. 16. La cellule des annales présente un seul sujet."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2020/ph_a_2020_pt.pdf",
+      "sha256": "4e2653d762df6e9d6c57111e1f38089879575fb73ea33fa0212d767e04f0f7bd",
+      "pages": 16,
+      "pieces_jointes": [],
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "8352dce3c8bba1c6fb07a9b83df3607a25357a0fb51ba0ca85cc441e93de8e45"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "b9d953f39419c4c0f0dbff1c66a26dc6ec37097e2858b1fc39f94c83eb524664"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "4b0f401904f5413f5eb3331925d1789d7062e5541fda2e86cdfffe57f8719523"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "c554ce4ad7be77dd6dc3f225cb61952e12f8a736c8a38851d2e74964aa0621cc"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "4fb009487ac860151ee56719b6fe710ea83d4c76db5a867006a12e0b9398ee8d"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "95d39fa2b5591a86fa274fd957be001d60698cd8af22f6d1976850e55195a6a2"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "bfa9090c8f13def03861df6598ab0a0e72e5e48de42073d453f7e429ab5a9503"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "67b68e67a7808a410b978cc7081bab5a0be7ad2ff8fb0d1b5c48812d91678e57"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "b5ae5a8064411a9c352ff17d510810ab1fa306422eb69134b5659107f7cea3a1"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "638624d6c966ce213ac22c5ddc2c24a4f891813010a52a2b2e77f5a2f9660d10"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "3ade722bb163779eb39dd9fa13244e967550b2d63d12d22c6ddab70d9f672781"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "4093b2adeaf37a44648417aa697662c7d9dc923d376dfc5b184f68cf87a75532"
+        },
+        {
+          "numero": 13,
+          "rendu_sha256": "28f5267305a9a6c93b253fb0a328e86656caa4606e3a96035c301042fc56da1b"
+        },
+        {
+          "numero": 14,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        },
+        {
+          "numero": 15,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        },
+        {
+          "numero": 16,
+          "rendu_sha256": "453bc1f98611cade66f36130d809a5a95e89a5dc705ecb6f06bf96a077a036fb"
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2020/rapport_phys_a_ecrit_2020.pdf",
+      "sha256": "3a59a9bf68a8f48a912535b0aa668f3cda0c870d39994735e82355fed7ea9c45",
+      "pages": 2,
+      "pieces_jointes": [],
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "0ba5ebffb711bf12a2c32de8887abd9758711dc54392d76851b8f8a245a8a709"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "880f4a76341ec5b8891cf2c0377bf8152164282c836964a979bea8c13c20e750"
+        }
+      ]
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction des trois parties et de toutes les sous-questions, création de six schémas, distinctions entre instrument décrit et observation historique."
+    },
+    {
+      "phase": "revision",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle des données du feuillet, relecture au rapport, reprise des conventions de phase et du facteur deux du seuil imprimé, vérification indépendante du graphe, des bilans orbitaux et thermiques et des valeurs numériques."
+    }
+  ],
+  "figures": [
+    {
+      "question": "I.7",
+      "numero": 1,
+      "fichier": "figures/champ.svg",
+      "legende": "Champ de la sphère homogène en unités réduites. Sa norme est maximale à la surface."
+    },
+    {
+      "question": "I.11",
+      "numero": 2,
+      "fichier": "figures/orbites.svg",
+      "legende": "Positions et vitesses dans le référentiel barycentrique pour une rotation de sens trigonométrique."
+    },
+    {
+      "question": "II.2",
+      "numero": 3,
+      "fichier": "figures/compensatrice.svg",
+      "legende": "Michelson avec compensatrice dans le bras y. Les flèches bleues indiquent les trajets aller, les rouges les retours."
+    },
+    {
+      "question": "II.3",
+      "numero": 4,
+      "fichier": "figures/rayons.svg",
+      "legende": "Marche de deux rayons parallèles dans le système replié et convergence au même point du plan focal image."
+    },
+    {
+      "question": "II.20",
+      "numero": 5,
+      "fichier": "figures/modes.svg",
+      "legende": "Trois premiers modes propres. Les miroirs imposent des nœuds en x = 0 et x = L."
+    },
+    {
+      "question": "III.8d",
+      "numero": 6,
+      "fichier": "figures/peau.svg",
+      "legende": "Atténuation dans le métal. La densité de puissance moyenne décroît deux fois plus vite dans l’exposant que l’amplitude électrique."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7",
+      "I.8",
+      "I.9",
+      "I.10",
+      "I.11",
+      "I.12",
+      "I.13",
+      "I.14",
+      "I.15",
+      "I.16",
+      "I.17",
+      "I.18",
+      "I.19",
+      "I.20",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "II.8",
+      "II.9",
+      "II.10",
+      "II.11",
+      "II.12",
+      "II.13",
+      "II.14",
+      "II.15",
+      "II.16",
+      "II.17",
+      "II.18",
+      "II.19",
+      "II.20",
+      "II.21",
+      "II.22",
+      "II.23",
+      "II.24",
+      "II.25",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7",
+      "III.8a",
+      "III.8b",
+      "III.8c",
+      "III.8d",
+      "III.9",
+      "III.10",
+      "III.11",
+      "III.12a",
+      "III.12b",
+      "III.13"
+    ],
+    "repere_par_question": [
+      {
+        "question": "I.1",
+        "page_pdf": 3,
+        "titre": "Force de Coulomb"
+      },
+      {
+        "question": "I.2",
+        "page_pdf": 3,
+        "titre": "Théorème de Gauss électrique"
+      },
+      {
+        "question": "I.3",
+        "page_pdf": 3,
+        "titre": "Force gravitationnelle"
+      },
+      {
+        "question": "I.4",
+        "page_pdf": 3,
+        "titre": "Correspondance et flux gravitationnel"
+      },
+      {
+        "question": "I.5",
+        "page_pdf": 3,
+        "titre": "Champ extérieur de la sphère"
+      },
+      {
+        "question": "I.6",
+        "page_pdf": 3,
+        "titre": "Champ intérieur"
+      },
+      {
+        "question": "I.7",
+        "page_pdf": 3,
+        "titre": "Graphe de la norme du champ"
+      },
+      {
+        "question": "I.8",
+        "page_pdf": 3,
+        "titre": "Positions relatives"
+      },
+      {
+        "question": "I.9",
+        "page_pdf": 3,
+        "titre": "Plan de l'orbite"
+      },
+      {
+        "question": "I.10",
+        "page_pdf": 4,
+        "titre": "Uniformité lorsque la séparation est constante"
+      },
+      {
+        "question": "I.11",
+        "page_pdf": 4,
+        "titre": "Géométrie et vitesses"
+      },
+      {
+        "question": "I.12",
+        "page_pdf": 4,
+        "titre": "Fréquence orbitale"
+      },
+      {
+        "question": "I.13",
+        "page_pdf": 4,
+        "titre": "Énergie potentielle"
+      },
+      {
+        "question": "I.14",
+        "page_pdf": 4,
+        "titre": "Énergie cinétique d'un corps"
+      },
+      {
+        "question": "I.15",
+        "page_pdf": 4,
+        "titre": "Énergie mécanique du système"
+      },
+      {
+        "question": "I.16",
+        "page_pdf": 4,
+        "titre": "Énergie et fréquence"
+      },
+      {
+        "question": "I.17",
+        "page_pdf": 4,
+        "titre": "Évolution sous l'effet du rayonnement"
+      },
+      {
+        "question": "I.18",
+        "page_pdf": 4,
+        "titre": "Équation différentielle de la fréquence"
+      },
+      {
+        "question": "I.19",
+        "page_pdf": 5,
+        "titre": "Intégration"
+      },
+      {
+        "question": "I.20",
+        "page_pdf": 5,
+        "titre": "Interprétation du temps caractéristique"
+      },
+      {
+        "question": "II.1",
+        "page_pdf": 6,
+        "titre": "Réglage en lame d'air"
+      },
+      {
+        "question": "II.2",
+        "page_pdf": 6,
+        "titre": "Rôle et placement de la compensatrice"
+      },
+      {
+        "question": "II.3",
+        "page_pdf": 6,
+        "titre": "Marche des rayons et forme des franges"
+      },
+      {
+        "question": "II.4",
+        "page_pdf": 6,
+        "titre": "Rayon du premier anneau brillant"
+      },
+      {
+        "question": "II.5",
+        "page_pdf": 7,
+        "titre": "Éclairement d'un seul bras"
+      },
+      {
+        "question": "II.6",
+        "page_pdf": 7,
+        "titre": "Différence de phase à la sortie"
+      },
+      {
+        "question": "II.7",
+        "page_pdf": 7,
+        "titre": "Somme cohérente des amplitudes"
+      },
+      {
+        "question": "II.8",
+        "page_pdf": 7,
+        "titre": "Uniformité sur la hauteur du miroir"
+      },
+      {
+        "question": "II.9",
+        "page_pdf": 7,
+        "titre": "Temps d'intégration"
+      },
+      {
+        "question": "II.10",
+        "page_pdf": 8,
+        "titre": "Éclairement au premier ordre"
+      },
+      {
+        "question": "II.11",
+        "page_pdf": 8,
+        "titre": "Réglage optimal et variation de puissance"
+      },
+      {
+        "question": "II.12",
+        "page_pdf": 8,
+        "titre": "Nombre moyen de photons"
+      },
+      {
+        "question": "II.13",
+        "page_pdf": 8,
+        "titre": "Bruit de puissance"
+      },
+      {
+        "question": "II.14",
+        "page_pdf": 8,
+        "titre": "Seuil absolu et facteur deux"
+      },
+      {
+        "question": "II.15",
+        "page_pdf": 9,
+        "titre": "Propagation dans le vide de la cavité"
+      },
+      {
+        "question": "II.16",
+        "page_pdf": 9,
+        "titre": "Nature du champ séparé"
+      },
+      {
+        "question": "II.17",
+        "page_pdf": 9,
+        "titre": "Conducteur parfait"
+      },
+      {
+        "question": "II.18",
+        "page_pdf": 9,
+        "titre": "Conditions aux limites"
+      },
+      {
+        "question": "II.19",
+        "page_pdf": 9,
+        "titre": "Fonction spatiale"
+      },
+      {
+        "question": "II.20",
+        "page_pdf": 9,
+        "titre": "Modes propres"
+      },
+      {
+        "question": "II.21",
+        "page_pdf": 10,
+        "titre": "Déphasage d'un tour de cavité"
+      },
+      {
+        "question": "II.22",
+        "page_pdf": 10,
+        "titre": "Condition de résonance"
+      },
+      {
+        "question": "II.23",
+        "page_pdf": 10,
+        "titre": "Amplitude émergente du bras y"
+      },
+      {
+        "question": "II.24",
+        "page_pdf": 11,
+        "titre": "Éclairement muni des cavités"
+      },
+      {
+        "question": "II.25",
+        "page_pdf": 11,
+        "titre": "Gain et faisabilité de la mesure"
+      },
+      {
+        "question": "III.1",
+        "page_pdf": 11,
+        "titre": "Onde incidente sur le miroir"
+      },
+      {
+        "question": "III.2",
+        "page_pdf": 11,
+        "titre": "Fréquence optique"
+      },
+      {
+        "question": "III.3",
+        "page_pdf": 11,
+        "titre": "Champ magnétique et flux d'énergie"
+      },
+      {
+        "question": "III.4",
+        "page_pdf": 11,
+        "titre": "Puissance et amplitude électrique"
+      },
+      {
+        "question": "III.5",
+        "page_pdf": 12,
+        "titre": "Maxwell–Ampère dans le métal"
+      },
+      {
+        "question": "III.6",
+        "page_pdf": 12,
+        "titre": "Équation de propagation approchée"
+      },
+      {
+        "question": "III.7",
+        "page_pdf": 12,
+        "titre": "Relation de dispersion"
+      },
+      {
+        "question": "III.8a",
+        "page_pdf": 12,
+        "titre": "Champ dans le conducteur semi-infini"
+      },
+      {
+        "question": "III.8b",
+        "page_pdf": 12,
+        "titre": "Épaisseur de peau"
+      },
+      {
+        "question": "III.8c",
+        "page_pdf": 12,
+        "titre": "Vitesse de phase"
+      },
+      {
+        "question": "III.8d",
+        "page_pdf": 12,
+        "titre": "Dissipation moyenne par unité de volume"
+      },
+      {
+        "question": "III.9",
+        "page_pdf": 13,
+        "titre": "Validité de l'approximation semi-infinie"
+      },
+      {
+        "question": "III.10",
+        "page_pdf": 13,
+        "titre": "Puissance totale absorbée"
+      },
+      {
+        "question": "III.11",
+        "page_pdf": 13,
+        "titre": "Vitesse d'échauffement sans évacuation"
+      },
+      {
+        "question": "III.12a",
+        "page_pdf": 13,
+        "titre": "Pourquoi contraindre la dilatation ?"
+      },
+      {
+        "question": "III.12b",
+        "page_pdf": 13,
+        "titre": "Durée maximale d'éclairement dans le modèle local"
+      },
+      {
+        "question": "III.13",
+        "page_pdf": 13,
+        "titre": "Diffusion thermique à travers le métal"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

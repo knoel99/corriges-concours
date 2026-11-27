@@ -1,0 +1,54 @@
+{
+  "slug": "x-ens_mp-pc_arabe_2014",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC",
+    "matiere": "Arabe",
+    "annee": 2014,
+    "modalite": "écrit"
+  },
+  "intitule": "L’école dans le monde arabe et les indicateurs de sa réussite",
+  "questions": 2,
+  "redaction": "Synthèse arabe titrée des trois articles et du dessin de presse, puis texte personnel en arabe en réponse aux sept idées discutées par Mourad al-Zein. Guidage sur la lecture des données, le dessin et l’évaluation en classe.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2014/10/14_mppc_suj_lv_ara.pdf",
+    "sha256_sujet": "176641ba9a3f6ca464794bf3fd21309535c5ab46f941f81b5d170c256b2db415",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2014/",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2014/10/14_mppc_suj_lv_ara.pdf",
+        "sha256": "176641ba9a3f6ca464794bf3fd21309535c5ab46f941f81b5d170c256b2db415"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/indicateurs.svg",
+      "legende": "Trois questions à poser aux observations du dossier."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "arabe_mp_pc_2011_2014",
+      "session": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Synthèse arabe titrée des trois articles et du dessin de presse, puis texte personnel en arabe en réponse aux sept idées discutées par Mourad al-Zein. Guidage sur la lecture des données, le dessin et l’évaluation en classe."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  }
+}

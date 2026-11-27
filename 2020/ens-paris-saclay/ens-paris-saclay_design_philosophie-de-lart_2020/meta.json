@@ -1,0 +1,89 @@
+{
+  "slug": "ens-paris-saclay_design_philosophie-de-lart_2020",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Philosophie de l’art",
+    "annee": 2020,
+    "modalite": "écrit",
+    "etablissement_imprime": "École normale supérieure de Paris Saclay"
+  },
+  "intitule": "Imaginer, anticiper, inventer",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2020/2020_Sujet_1A_Design_Philosophie_de_l_art.pdf",
+    "sha256_sujet": "272c3edaab72380558aebcade3ad5c24fa4ad8d8fe2aa111ac7f4c651a842605",
+    "index_annales": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=541",
+    "intitule_imprime": "Imaginer, anticiper, inventer.",
+    "index_annales_sha256": "2e0357288a9a92127f1818bdf0131892a04492c5e0a873c0efadee55988373f6",
+    "composition_du_sujet": "Feuillet imprimé unique, textuel, sans annexe appelée.",
+    "rapport_jury_verification": "L’index officiel Design 2020 présente le sujet de philosophie de l’art et le sujet pratique. Il ne référence pas de rapport de philosophie."
+  },
+  "figures": [
+    {
+      "fichier": "figures/boucle-du-prototype.svg",
+      "question": "Dissertation",
+      "legende": "Du dessin au geste observé, un essai peut obliger à reformuler le projet."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_design",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Composition et parcours guidé sur les trois infinitifs, l’hypothèse et l’essai, avec étude de Bergson, Dewey et de l’assise en porte-à-faux. Figure du prototype."
+    },
+    {
+      "phase": "revision",
+      "agent": "x_hist_1986",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Distinction entre prévision et action anticipée, précision des exemples de Stam et de Mies van der Rohe, confrontation entre rectification et invention et nouvelle figure."
+    }
+  ],
+  "duree_heures": 4,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2020/2020_Sujet_1A_Design_Philosophie_de_l_art.pdf",
+      "sha256": "272c3edaab72380558aebcade3ad5c24fa4ad8d8fe2aa111ac7f4c651a842605",
+      "pages": 1,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "67d7231f16815ae59d9eb1005e42c36ca3df4b3081b7eaa3dece6a324be509e4"
+        }
+      ]
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 1,
+        "intitule_ou_demande": "Construire le problème et traiter les rapports entre les trois opérations formulées par les infinitifs."
+      }
+    ],
+    "annexes_sujet": [],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

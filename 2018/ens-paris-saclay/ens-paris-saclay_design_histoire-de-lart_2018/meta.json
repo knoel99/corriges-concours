@@ -1,0 +1,167 @@
+{
+  "slug": "ens-paris-saclay_design_histoire-de-lart_2018",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Histoire de l’art",
+    "annee": 2018,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2018_Sujet_1A_Design_Histoire_art.pdf",
+    "sha256_sujet": "dd242ce108963dd47f02f71534dc46ff07e2b0a5997d9a5071110de1fef27a7e",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2018_RE_1A_Design.pdf",
+    "notices_documentaires": [
+      {
+        "titre": "Lit Aube et Crépuscule, musée de l’École de Nancy",
+        "url": "https://musee-ecole-de-nancy.nancy.fr/fileadmin/MBA/Scolaires/2019/LIT_AUBE_ET_CREPUSCULE.pdf"
+      },
+      {
+        "titre": "Chaise longue, Fondation Le Corbusier",
+        "url": "https://www.fondationlecorbusier.fr/oeuvre-mobilier/chaise-longue-le-corbusier-pierre-jeanneret-charlotte-perriand-1928/"
+      }
+    ],
+    "index_annales": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=277",
+    "sha256_rapport_jury": "c8c46d4627f12457af6c32c67c5d52413050f8015e81fd16b34260a58a134e8c",
+    "programme": "Design et modernité(s) (1890–1939)",
+    "consigne_imprimee": "Vous analyserez et discuterez ce propos d’Émile Gallé. En vous appuyant sur votre connaissance du programme, vous développerez l’analyse.",
+    "reference_imprimee": "Émile Gallé, « Le mobilier contemporain orné d’après la nature », Revue des Arts décoratifs, Paris, vol. 20, 1900.",
+    "page_pdf_sujet": 1,
+    "index_annales_sha256": "93f9bf1de114c39a09f6e2cebec611897444b7c18c03b4e95d70ae970e21802c",
+    "code_sujet": "C18104",
+    "notices_verifiees_revision": [
+      {
+        "url": "https://www.nancy.fr/fileadmin/NAN/culture/scolaires/2019/MEN_-_Exposition_Politique.pdf",
+        "statut": 200,
+        "sha256": "8b4c9a193c319c26b52963f6498add62a668190318e58a479c8a08e013cc3fcc"
+      },
+      {
+        "url": "https://musee-ecole-de-nancy.nancy.fr/fileadmin/MBA/Scolaires/2019/LIT_AUBE_ET_CREPUSCULE.pdf",
+        "statut": 200,
+        "sha256": "b96f438d45dcccde178d585f7da9e4288f6c73a43ea4b8f6bd18f3c8343a972c"
+      }
+    ],
+    "pages_rapport_histoire_de_lart": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/analyse-du-design.svg",
+      "question": "I. L’ornement peut faire comprendre la fonction intime du meuble",
+      "legende": "Du pied au chevet, deux moments du sommeil. Sur la chaise longue, l’inclinaison se règle."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des deux compositions après lecture de la page 1 du sujet. Problématisation et datation des exemples, vérification des notices documentaires et du dessin analytique original.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "lettres_design",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture des fonctions affectives du meuble et de la prescription des usages en regard du rapport écrit, avec exercice guidé."
+    },
+    {
+      "phase": "revision",
+      "agent": "x_hist_1986",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Interprétation de la joie de créer, de l’adresse collective du texte et des motifs des deux chevets. Comparaison avec le vase Hommes noirs de 1900. Lecture du rapport commun, section d’histoire de l’art p. 3–7.",
+      "tour": 2
+    }
+  ],
+  "gabarit": "dissertation",
+  "duree_heures": 4,
+  "date_revision": "2026-11-26",
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2018_Sujet_1A_Design_Histoire_art.pdf",
+      "sha256": "dd242ce108963dd47f02f71534dc46ff07e2b0a5997d9a5071110de1fef27a7e",
+      "pages": 1,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "eaea2971f88a3eb38e5ad904aa35e9b48aabe100cdac37613751d240e34e332f"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2018_RE_1A_Design.pdf",
+      "sha256": "c8c46d4627f12457af6c32c67c5d52413050f8015e81fd16b34260a58a134e8c",
+      "pages": 22,
+      "pages_verifiees": [
+        {
+          "numero": 2,
+          "rendu_sha256": "a4e36c3605cdcb5131b7207a55113e5c2e61ab8c870e148551e87b8070a2be96"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "60c5f47375e3e88a6d68323415263188d3843fae18292bd4bda8f8a28318995e"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "ec3051e9d20e28856046f61e0a83f93dfc75adf4ac715a2bb12481165953cfd7"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "42741dc2d5692d0af691ab9c58c92549643149e4d2c7187f9cc2955841e7cafd"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "d751479a0f7cdba1ea8544ea7c7d322ef45abc1c9c20c70262517fab9034eb48"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "dee158ee261a0786bebb09d26cca729ceaa70b81c8b057c2eca40c27da96652b"
+        }
+      ]
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "consigne": "Vous analyserez et discuterez ce propos d’Émile Gallé. En vous appuyant sur votre connaissance du programme, vous développerez l’analyse.",
+        "page_pdf": 1
+      }
+    ],
+    "annexes_sujet": [],
+    "reproductions_sujet": [],
+    "pages_blanches_sujet": [],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

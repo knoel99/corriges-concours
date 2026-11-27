@@ -42,5 +42,53 @@
       "modifications": true,
       "perimetre": "Rédaction des treize questions, du dénombrement avec chevauchement au regroupement des k-grammes dans le tableau des suffixes. Lecture du PDF natif, confrontation à la recherche exhaustive pour 15 810 requêtes et 1 275 distributions de fréquences. Trois figures originales."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "pages_des_questions": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 3,
+      "7": 3,
+      "8": 4,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4
+    },
+    "precision": "Les 13 rubriques de chaque édition concordent avec les questions du fac-similé. Les deux séries de réponses ont été retrouvées au commit du journal indiqué.",
+    "origine_attestation": {
+      "commit_du_journal": "d8efd180283b669f8fc0df49da84e777a412d05a",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction des treize questions, du dénombrement avec chevauchement au regroupement des k-grammes dans le tableau des suffixes. Lecture du PDF natif, confrontation à la recherche exhaustive pour 15 810 requêtes et 1 275 distributions de fréquences. Trois figures originales.",
+      "sha256_sujet_controle": "6dcdb986e2dfaf836f4a9aaa5a4183b29b92aa01eea958f8bec9bbb86b38605c"
+    },
+    "controle_fonctions": {
+      "fonctions": [
+        "enTeteDeSuffixe",
+        "compterOccurrences"
+      ],
+      "cas_par_edition": 635
+    }
+  }
 }

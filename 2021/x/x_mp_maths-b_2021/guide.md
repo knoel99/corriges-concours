@@ -2,7 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 La composition du 13 avril 2021 relie une loi discrète sur les entiers à la série bêta de Dirichlet. Les produits infinis du sinus et de la fonction gamma permettent ensuite d’en calculer les valeurs en 3 et en 5. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/uploads/2021/07/2021_MP_sujet_MathB.pdf) · [Rapport du jury](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2021%20MP%20RAPPORT%20ECRIT%20MATHEMATIQUES%20B%20%28X%29.pdf)
 
@@ -248,6 +250,13 @@ Pour multiplier ces minorants, il suffit que $m\ge\pi|x|/2$, hypothèse satisfai
 Pour les grands $m$ où les minorants sont tous dans $[0,1]$, on peut les multiplier. En utilisant aussi $\prod(1-t_k)\ge1-\sum t_k$ sur $0\le t_k\le1$, on obtient
 $$1\ge v_{m,n}\ge\prod_{k=m+1}^n\left(1-\frac{\pi^2x^2}{4k^2}\right)\ge1-\frac{\pi^2x^2}{4}\sum_{k>m}\frac1{k^2}.$$
 La borne est uniforme en $n$. En faisant tendre $n$ puis $m$ vers l’infini, on trouve bien $v_m\to1$.
+
+Il existe aussi un minorant valable pour **tout** $m>|x|$. Posons $a_k=\sin^2(\pi x/(2n+1))/\sin^2(\pi k/(2n+1))$. On a $0\le a_k<1$ pour $k>m$. L’inégalité $1-\prod(1-a_k)\le\sum a_k$ se démontre par récurrence. Les majorations trigonométriques précédentes entraînent
+$$
+0\le 1-v_{m,n}\le\frac{\pi^2 x^2}{4}\sum_{k=m+1}^n\frac1{k^2}
+\le\frac{\pi^2 x^2}{4m}.
+$$
+La dernière inégalité suit de la comparaison à $\int_m^\infty t^{-2}\,dt$. En passant à la limite en $n$, on obtient la même borne pour $1-v_m$ sans hypothèse de signe sur les minorants imprimés.
 
 ### Question 11c
 

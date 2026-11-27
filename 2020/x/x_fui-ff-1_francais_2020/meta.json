@@ -16,21 +16,33 @@
   "figures": [
     {
       "fichier": "figures/savoir-et-observer.svg",
-      "question": "A2",
+      "question": "1 b",
       "legende": "Comment Rousseau justifie la comparaison."
     },
     {
       "fichier": "figures/marche-et-regards.svg",
-      "question": "B",
+      "question": "2",
       "legende": "Trois accès à la vie d’une même place."
     }
   ],
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20FUI-FF%20SUJET%20DE%20FRANCAIS%20Session%201.pdf",
     "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
-    "sujet_sha256": "10b18d6eb16186dd8a2564ec440832b5d0a074e124e314caaf675516e9f63928"
+    "sujet_sha256": "10b18d6eb16186dd8a2564ec440832b5d0a074e124e314caaf675516e9f63928",
+    "numero_pages_sujet": 4,
+    "reperage": "P. 1 garde, p. 2 feuillet de séparation paginé, p. 3 extrait d’Émile (1762), cinq notes et compréhension, p. 4 énoncé de l’essai.",
+    "modalites_verifiees": {
+      "date_imprimee": "2019-09-13",
+      "horaire_imprime": "13 h 30–15 h 30",
+      "saison": "automne",
+      "duree": "2 heures",
+      "instructions_materiel": "L’utilisation de dictionnaires et traducteurs électroniques n’est pas autorisée pour cette épreuve.",
+      "bareme": "Compréhension : 10 points ; essai : 10 points.",
+      "longueur": "Essai bref de forme libre, sans limitation du nombre de mots.",
+      "notes_du_texte": 5
+    }
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "revision": {
     "date": "2026-11-24",
     "modele": null,
@@ -85,6 +97,23 @@
       "modifications": true,
       "perimetre": "Relecture des cinq réponses de compréhension, des trois formules à expliquer et de l’essai face au texte de Rousseau. Vérification de l’induction, de l’exemple national et de la date réelle de l’épreuve.",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "classiques_2017",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Rétablissement de la numérotation de la garde et distinction entre le caractère d’une nation et les traits communs aux hommes au terme du raisonnement. Vérification du rôle des notes et du statut des exemples dans l’essai."
     }
   ],
   "provenance": {
@@ -101,5 +130,16 @@
       "effort": "ultra",
       "service_tier": null
     }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1 a. Fonction éducative des voyages et confrontation de plusieurs peuples.",
+      "1 b. Arguments : excès de lectures, expérience des récits divergents, reformulation de la question et induction.",
+      "1 c, a. Première formule : l’abus des livres crée l’illusion de savoir.",
+      "1 c, b. Deuxième formule : métaphore du livre du monde.",
+      "1 c, c. Troisième formule : sens de « voir » dans le domaine de l’observation.",
+      "2. Essai personnel argumenté sur le voyage et la découverte de l’étranger, avec exemples précis."
+    ]
   }
 }

@@ -1,0 +1,88 @@
+{
+  "slug": "bel_bl_sociologie-oral-a-option-anomie_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Sociologie (oral à option) — Anomie",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "L’anomie",
+  "questions": 0,
+  "sujets": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_sociologie_option.pdf#page=4",
+    "sujet_sha256": "514cddfb2a08ef98d7d1375ef107103a12e496e5c827f26b9640024be445eb8b",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_sociologie_option.pdf",
+    "rapport_sha256": "514cddfb2a08ef98d7d1375ef107103a12e496e5c827f26b9640024be445eb8b",
+    "index_annuel": "https://www.ens.psl.eu/rapports-et-sujets-du-concours-2025-section-des-lettres-groupe-bl",
+    "index_oraux": "https://www.ens.psl.eu/sujets-des-epreuves-orales-du-concours-bl-session-2025-0",
+    "provenance_sujet": "Intitulé individuel dans la liste des sujets posés, p. 4. Le rapport, p. 1, décrit un choix entre deux sujets secs. Aucun des feuillets d’option retrouvés ne permet de rattacher cet intitulé à son second choix.",
+    "references": [
+      "https://doi.org/10.2307/2084686"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/trois-mecanismes.svg",
+      "question": "L’anomie",
+      "legende": "Ce que trois hypothèses d’anomie demandent d’observer"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "sociologie_bel_bl_intitules_individuels_2025",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Rédaction de l’exposé et de la préparation guidée sur le sujet sec individuel « L’anomie ». Schéma commun aux deux éditions. Le second choix du billet demeure inconnu."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "sociologie_bel_bl_intitules_individuels_2025",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": false,
+      "perimetre": "Confrontation à la liste officielle du jury et aux deux fascicules publiés, vérification de la portée individuelle et des raisonnements de la copie, du guidé et du schéma."
+    }
+  ],
+  "couverture": {
+    "statut": "à confirmer",
+    "unite": "sujet sec individuel",
+    "questions_entierement_traitees": [
+      "L’anomie"
+    ],
+    "precision": "Le sujet sec individuel est intégralement traité dans les deux éditions. La couverture du tirage reste à confirmer tant que le feuillet et son second choix ne sont pas établis.",
+    "controle": [
+      "Émile Durkheim, division du travail, solidarité organique et régulation des fonctions.",
+      "Régulation des attentes et distinction avec l’intégration.",
+      "Robert K. Merton, tension entre fins et moyens institutionnalisés, vérification empirique."
+    ],
+    "statut_sujet_individuel": "complet"
+  }
+}

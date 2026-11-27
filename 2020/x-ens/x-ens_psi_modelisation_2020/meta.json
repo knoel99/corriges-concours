@@ -25,6 +25,11 @@
       "legende": "Efforts avec traction positive et bras de levier figés à l’assiette horizontale. Les deux portances font tourner le bateau en sens opposés autour de P."
     },
     {
+      "fichier": "figures/q29-contour-ampere.svg",
+      "question": "Q29",
+      "legende": "Contour orienté passant par le fer du stator, les deux entrefers, les deux aimants et le fer du rotor. La branche symétrique porte l’autre moitié du flux de dent."
+    },
+    {
       "fichier": "figures/q33a-flux.svg",
       "question": "Q33a",
       "legende": "L’aimant de hauteur égale à la longueur magnétique équivalente donne la moitié du flux limite."
@@ -51,6 +56,78 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Rédaction des 48 questions du sujet et de son erratum sur le catamaran F50. Lecture des figures de navigation, de portance, du circuit magnétique et de l’encoche, explicitation des signes des moments et des deux questions 33. Cinq illustrations originales. Vérifications numériques de la traction, du pivot, de la thermique et du critère de stabilité, contrôle des codes Python et de la requête SQL des deux éditions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture des 48 réponses, de l’erratum et de l’annexe sur les listes et matrices. Vérification des bras mobiles en tangage et de leur apport à la raideur, des cas limites de la dichotomie, du théorème d’Ampère sur les figures 14–15 et des deux questions 33. Contrôle des quatre représentations demandées, des calculs de traction et de diffusion, du code Python et de la requête SQL."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33a",
+      "33b",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47"
+    ],
+    "precision": "Le fascicule de 28 pages comprend un erratum des questions 11 et 12 à la page 3 et une annexe Python à la page 28. La numérotation va de 1 à 47 avec deux questions 33 distinctes, soit 48 rubriques. Les dessins du contour magnétique, de la loi de flux, du réseau thermique et de l’algorigramme sont inclus. Le fascicule ne fournit pas de feuille réponse séparée.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "159b089670df203f40410e18d3bf0ead90b9e9ba9ffaae3812d67210dc82655f",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Relecture des 48 réponses, de l’erratum et de l’annexe sur les listes et matrices. Vérification des bras mobiles en tangage et de leur apport à la raideur, des cas limites de la dichotomie, du théorème d’Ampère sur les figures 14–15 et des deux questions 33. Contrôle des quatre représentations demandées, des calculs de traction et de diffusion, du code Python et de la requête SQL.",
+      "commit_redaction_anterieure": "849a317e2016c8bd63414d0d9bfa1c5b17e05591"
+    }
+  }
 }

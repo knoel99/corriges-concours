@@ -1,0 +1,60 @@
+{
+  "slug": "x_mp-pc_russe_2010",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Russe",
+    "annee": 2010,
+    "modalite": "écrit"
+  },
+  "intitule": "La guerre contre la mémoire et le bon usage du temps",
+  "questions": 3,
+  "redaction": "Traduction intégrale en français, analyse et réflexion personnelle en russe. La guerre contre la mémoire et le bon usage du temps.",
+  "sources": {
+    "sujet": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2010-langues-vivantes.pdf#page=10",
+    "sha256_sujet": "44be9353a9797be2ce331618ae2b484ddd60056a2b192059d7aa698def3e54eb",
+    "index": "https://www.alloschool.com/element/33548",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2010-langues-vivantes.pdf#page=10",
+        "sha256": "44be9353a9797be2ce331618ae2b484ddd60056a2b192059d7aa698def3e54eb"
+      },
+      {
+        "role": "sujet complémentaire",
+        "url": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2010-langues-vivantes.pdf#page=1",
+        "sha256": "44be9353a9797be2ce331618ae2b484ddd60056a2b192059d7aa698def3e54eb"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Version",
+      "fichier": "figures/lecture-de-la-version.svg",
+      "legende": "L’image de la page arrachée change d’échelle"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "arabe_mp_pc_2011_2014",
+      "session": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Traduction intégrale en français, analyse et réflexion personnelle en russe. La guerre contre la mémoire et le bon usage du temps."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version",
+      "Expression 1",
+      "Expression 2"
+    ]
+  }
+}

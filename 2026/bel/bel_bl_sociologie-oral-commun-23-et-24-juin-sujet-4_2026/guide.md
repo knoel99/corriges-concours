@@ -6,6 +6,10 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## Sobriété et classes sociales
@@ -32,6 +36,8 @@ La sobriété devient donc un objet sociologique quand on sépare conditions du 
 
 ![Faire attention à toute sa consommation d’énergie et d’eau](figures/lecture-des-donnees.svg)
 
+Rapprochez le souvenir de l’enfance du document 4a des scènes domestiques du document 2. Demandez, par exemple, qui surveillait l’éclairage dans le foyer d’origine et qui s’en charge aujourd’hui. Cette comparaison donne un contenu précis à l’hypothèse de transmission.
+
 ## Questions du jury
 
 > [!INDICATION]
@@ -45,3 +51,9 @@ Les chiffres sont calculés sur 31 et 40 enquêtés dans les deux lignes consid�
 Observer le service dont la personne a besoin, les alternatives disponibles et ce qu’elle ferait si son revenu ou les transports changeaient. Un même faible usage de voiture peut refléter une offre collective satisfaisante ou l’impossibilité de se déplacer.
 
 [Dossier officiel](https://www.ens.psl.eu/sites/default/files/dossier_sobriete.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_tronc_commun_sociologie.pdf)
+
+## Vérification sur le dossier
+
+Les entretiens sur les usages domestiques ont été mis en relation avec les tableaux d’attention aux consommations, les achats alimentaires, les usages de la voiture et le renoncement à l’achat numérique. Les pourcentages de ligne du document automobile ont été distingués de la fréquence d’une pratique dans un groupe social.
+
+Le document 4a indique que 61,7 % des personnes décrivant une situation familiale « très difficile » dans leur enfance déclarent aujourd’hui faire attention à tout pour l’énergie et l’eau, contre 29,4 % de celles qui disent leur famille « à l’aise ». La différence de 32,3 points associe un souvenir et une pratique déclarée. Le montant des factures, la qualité du logement et la contrainte de revenu actuelle éclaireraient les mécanismes de cette association.

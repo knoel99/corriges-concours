@@ -1,0 +1,72 @@
+{
+  "slug": "ens-rennes_d1_droit-commercial_2008",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Droit commercial",
+    "annee": 2008,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "intitule": "Risque et exercice du commerce",
+  "sources": {
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/r1a_08_d1_droitcommercial1_1404897148550.pdf",
+    "rapport_sha256": "80fc895818614b002269b0709aca2c8d0197a3aba602393ad90e92a2501ebba6",
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet08d1options_1421752181536-pdf#page=2",
+    "sujet_sha256": "d88721a3e2c6a4f1919fdf6d535c20de126517ee747d0d3bfbee0eb77ed1329b",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "references_complementaires": {
+      "Code de commerce au printemps 2008": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000005634379/2008-04-01/",
+      "Code civil au printemps 2008": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006070721/2008-04-01/"
+    }
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "section": "I-A",
+      "fichier": "figures/risque-exploitation.svg",
+      "legende": "Le régime du fonds et la personne qui contracte déterminent qui supporte le risque d’exploitation."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "section": "II-A",
+      "fichier": "figures/patrimoines-engages.svg",
+      "legende": "La société doit le prix ou le montant du prêt sur son patrimoine. La caution ajoute un recours réservé à son bénéficiaire."
+    }
+  ],
+  "redaction": "Rédaction de la dissertation et du parcours guidé sur l’imputation du risque au commerçant, aux associés et aux créanciers, les protections patrimoniales et le traitement des difficultés au printemps 2008.",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite/commercial",
+      "session": "rennes_droit_suite/commercial",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des trois pages du rapport de Catherine-Thérèse Barreau, notamment sa distinction entre risque économique et risque juridique ainsi que les limites temporelles des réformes évoquées."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite/commercial",
+      "session": "rennes_droit_suite/commercial",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de la dissertation et du parcours guidé sur l’imputation du risque au commerçant, aux associés et aux créanciers, les protections patrimoniales et le traitement des difficultés au printemps 2008."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}

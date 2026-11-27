@@ -29,12 +29,20 @@
     {
       "fichier": "figures/profondeur-trois.svg",
       "question": "1.a",
-      "legende": "Dans les deux univers le dernier partage atteint le niveau 3. À droite, seule la cellule contenant les deux points est subdivisée."
+      "legende": "Dans les deux univers le dernier partage atteint le niveau 3. À droite, seule la cellule contenant les deux points est subdivisée.",
+      "numero": 1
+    },
+    {
+      "fichier": "figures/insertion-pascal.svg",
+      "question": "4.a",
+      "legende": "Insertion Pascal de deux corps dans des quadrants distincts. Une ancienne feuille est rattachée au nouveau nœud et les filles vides valent nil.",
+      "numero": 2
     },
     {
       "fichier": "figures/cellules-ouvertes-a-un-niveau.svg",
       "question": "6.b",
-      "legende": "Le barycentre G d’une cellule ouverte par le critère est dans le disque en pointillés. Le carré entier tient dans le grand disque."
+      "legende": "Le barycentre G d’une cellule ouverte par le critère est dans le disque en pointillés. Le carré entier tient dans le grand disque.",
+      "numero": 3
     }
   ],
   "contributions": [
@@ -48,6 +56,172 @@
       "perimetre": "Rédaction des deux éditions à partir des huit pages de l’énoncé UPS et confrontation aux corrigés de Schauber et Michel Quercia. Sous-questions de géométrie et branche Caml complète, échelle des flottants, terminaison des insertions, barycentres, forces et coût par niveau. Deux dessins géométriques originaux.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Révision des deux éditions et des démonstrations, rédaction de la variante Pascal, contrôle des figures et confrontation des programmes extraits des deux fichiers à des oracles indépendants en Pascal et en OCaml. Les deux variantes des parties II et III sont rapprochées de leurs pages respectives et testées. La partie I est commune.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_un",
+      "controles": {
+        "Free Pascal": "3.2.2, compilation ObjFPC avec vérification des intervalles et des débordements, exécution des deux éditions.",
+        "OCaml": "5.3.0, exécution des blocs extraits des deux éditions.",
+        "resultats": [
+          {
+            "annee": 1997,
+            "edition": "brut",
+            "langage": "pascal",
+            "SHA256_programme": "20473e8f59b4ac42ea1fac02efcbae68c3b79f907229609e0028b683825a2969",
+            "tests": {
+              "univers": 5,
+              "seuils": 6,
+              "accelerations_verifiees": 240,
+              "erreur_max_normalisee": 2.0094489528067838e-15
+            }
+          },
+          {
+            "annee": 1997,
+            "edition": "brut",
+            "langage": "ocaml",
+            "SHA256_programme": "98ab547c2f1a4eb6f605114507ddf353cd294d209941ca86958c18ca22c9c8f7",
+            "tests": {
+              "univers": 5,
+              "seuils": 6,
+              "accelerations_verifiees": 240,
+              "erreur_max_normalisee": 2.0094489528067838e-15
+            }
+          },
+          {
+            "annee": 1997,
+            "edition": "guide",
+            "langage": "pascal",
+            "SHA256_programme": "20473e8f59b4ac42ea1fac02efcbae68c3b79f907229609e0028b683825a2969",
+            "tests": {
+              "univers": 5,
+              "seuils": 6,
+              "accelerations_verifiees": 240,
+              "erreur_max_normalisee": 2.0094489528067838e-15
+            }
+          },
+          {
+            "annee": 1997,
+            "edition": "guide",
+            "langage": "ocaml",
+            "SHA256_programme": "98ab547c2f1a4eb6f605114507ddf353cd294d209941ca86958c18ca22c9c8f7",
+            "tests": {
+              "univers": 5,
+              "seuils": 6,
+              "accelerations_verifiees": 240,
+              "erreur_max_normalisee": 2.0094489528067838e-15
+            }
+          }
+        ],
+        "figures": "Figures vérifiées sur les sources et dans les deux PDF."
+      }
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "precision": "Les deux variantes des parties II et III sont rapprochées de leurs pages respectives et testées. La partie I est commune.",
+    "sujet_controle": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-1024310950ce7e7a1a40",
+    "sha256_sujet_controle": "8c17ddd7f5d567ccba1353927ebb31a92aa0cfc3fbd46ce348e4547415736a7d",
+    "questions_entierement_traitees": [
+      "1.a",
+      "1.b",
+      "1.c",
+      "1.d",
+      "1.e",
+      "2.a",
+      "2.b",
+      "2.c",
+      "3.a",
+      "3.b",
+      "4.a",
+      "4.b",
+      "4.c",
+      "5",
+      "6.a",
+      "6.b",
+      "6.c"
+    ],
+    "variantes": [
+      "Caml (OCaml)",
+      "Pascal"
+    ],
+    "pages_par_question": {
+      "1.a": [
+        2,
+        2
+      ],
+      "1.b": [
+        2,
+        2
+      ],
+      "1.c": [
+        3,
+        3
+      ],
+      "1.d": [
+        3,
+        3
+      ],
+      "1.e": [
+        3,
+        3
+      ],
+      "2.a": [
+        3,
+        6
+      ],
+      "2.b": [
+        3,
+        6
+      ],
+      "2.c": [
+        3,
+        6
+      ],
+      "3.a": [
+        4,
+        6
+      ],
+      "3.b": [
+        4,
+        6
+      ],
+      "4.a": [
+        4,
+        7
+      ],
+      "4.b": [
+        4,
+        7
+      ],
+      "4.c": [
+        4,
+        7
+      ],
+      "5": [
+        4,
+        7
+      ],
+      "6.a": [
+        5,
+        8
+      ],
+      "6.b": [
+        5,
+        8
+      ],
+      "6.c": [
+        5,
+        8
+      ]
+    }
+  },
+  "date_revision": "2026-11-26"
 }

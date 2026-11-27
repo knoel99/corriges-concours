@@ -1,0 +1,37 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire-le-geographe-ibn-hawqal-oral_2017",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire — le géographe Ibn Hawqal (oral)",
+    "annee": 2017
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/histoire-oral3.pdf",
+    "sha256_sujet": "5c940c9f10279d92111072c714efd9ed8c70acfadf7ed83a27d208b09b6cb5f9",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_s.i._histoire_2017.pdf",
+    "sha256_rapport_jury": "254e7e5cb46d5fd9e53ac43b3cde383015b5d5b5b92dc6787595b6f6295be021"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture-du-document.svg",
+      "question": "Un savoir des routes, des prélèvements et des habitants",
+      "legende": "Trois opérations de la géographie revendiquée dans la Configuration de la terre."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Deux pages, notes et rapport lus. Rédaction des deux commentaires sur les méthodes, la provenance des savoirs, le rapport aux autorités et les limites du témoignage. Figure vérifiée.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

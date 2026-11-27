@@ -1,0 +1,73 @@
+{
+  "slug": "ens-rennes_d1_droit-commercial_2011",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Droit commercial",
+    "annee": 2011,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "intitule": "Comparez la société unipersonnelle et l’E.I.R.L.",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/se1a_11d1_epreuve_a_option_1304088228843.pdf#page=2",
+    "sujet_sha256": "b5f98e64fc5955e00a72c35bed6c361be0ad351e2807c84144eecf60faf319ce",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/re-11d1-droit-commercial_1421751217280-pdf",
+    "rapport_sha256": "120ff6ac14b882021cbe76a25d8c0df67fbb7b64c995ab5a0a086f356e82bbd9",
+    "references_complementaires": {
+      "Code civil en avril 2011": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006070721/2011-04-01/",
+      "Code de commerce en avril 2011": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000005634379/2011-04-01/",
+      "Directive 2009/102/CE sur les sociétés à un seul associé": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32009L0102"
+    },
+    "etablissement_imprime": "École normale supérieure de Cachan"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "section": "A1",
+      "fichier": "figures/deux-techniques.svg",
+      "legende": "L’immatriculation et la déclaration d’affectation créent des frontières de nature différente."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "section": "B2",
+      "fichier": "figures/associer-ou-transmettre.svg",
+      "legende": "L’admission d’un associé change la répartition du capital. La transmission d’une exploitation demande une autre opération."
+    }
+  ],
+  "redaction": "Rédaction effective des éditions brute et guidée de « Comparez la société unipersonnelle et l’E.I.R.L. » à partir des pièces distribuées ou conservées par l’ENS Rennes. Comparaison continue des personnes, gages et formalités, des sûretés, des capacités de développement et des possibilités de transmission en 2011.",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Le rapport attribué à 2011 sur la page institutionnelle reprend le libellé distribué tout en portant en tête la mention session 2010. Cette anomalie est signalée dans la copie."
+    },
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction effective des éditions brute et guidée de « Comparez la société unipersonnelle et l’E.I.R.L. » à partir des pièces distribuées ou conservées par l’ENS Rennes. Comparaison continue des personnes, gages et formalités, des sûretés, des capacités de développement et des possibilités de transmission en 2011."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}

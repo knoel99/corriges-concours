@@ -1,0 +1,63 @@
+{
+  "slug": "ens-rennes_d-e_italien_2023",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Italien",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "intitule": "Italien",
+  "questions": 4,
+  "redaction": "Deux traductions intégrales et deux réponses en italien de 237 et 239 mots. Accession à la propriété, musée de Casoria, dynamique économique et démographique du Mezzogiorno, propositions de formation et d’insertion.",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-e-crit-italien-d-e-2023_1682689443858-pdf",
+    "sujet_sha256": "15ec7b5fdd03ea0ab61516c9ea05cb8f90b27bde207d830dc5f0976484a0a1eb",
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2023-1",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-e-crit-italien-d-e-2023_1698422109389-pdf",
+    "rapport_sha256": "e99f6ca1b1e5a3647f1198d523c8bcfbc97cc71819d53768024e296fb77cfcf9"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "III.1",
+      "fichier": "figures/divario-territoriale.svg",
+      "legende": "Nel ragionamento di Leogrande le difficoltà produttive, demografiche e politiche si alimentano a vicenda."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Distinction demandée entre données du texte pour la première question et propositions originales argumentées dans la seconde."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Deux traductions intégrales et deux réponses en italien de 237 et 239 mots. Accession à la propriété, musée de Casoria, dynamique économique et démographique du Mezzogiorno, propositions de formation et d’insertion."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I. Version",
+      "II. Thème",
+      "III.1. In che cosa consiste il divario tra nord e sud in Italia?",
+      "III.2. Quali iniziative dovrebbe applicare un governo per migliorare la situazione dei giovani tra i 15 e i 34 anni che, nelle regioni del sud, non lavorano né studiano?"
+    ]
+  }
+}

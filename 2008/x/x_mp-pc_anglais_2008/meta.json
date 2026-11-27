@@ -1,0 +1,74 @@
+{
+  "slug": "x_mp-pc_anglais_2008",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Anglais",
+    "annee": 2008,
+    "modalite": "écrit"
+  },
+  "intitule": "Kent Haruf, Coming home, et Tzvetan Todorov, Le pouvoir de la littérature",
+  "questions": 3,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "V",
+      "1",
+      "2"
+    ]
+  },
+  "sources": {
+    "index": "https://www.alloschool.com/element/33546",
+    "etablissements": "École polytechnique et École supérieure de physique et de chimie industrielles",
+    "pages_sujet": "4",
+    "sujet": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2008-langues-vivantes.pdf#page=4",
+    "sujet_sha256": "a33182de1be447a22b945fc9dcec2142ddd43b38e1607eebf6095f5714f2d329",
+    "sujet_complementaire": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2008-langues-vivantes.pdf#page=1",
+    "sujet_complementaire_sha256": "a33182de1be447a22b945fc9dcec2142ddd43b38e1607eebf6095f5714f2d329",
+    "rapport_jury": "https://web.archive.org/web/20090428220503id_/http://gargantua.polytechnique.fr:80/siatel-web/linkto/?objectId=DOCF0009000003C600000000000004C900000000",
+    "rapport_jury_sha256": "79dab53df04bd1a39590b0c9dd1f18f987563dc8d6680437c5ecb7e3e245457a",
+    "precision": "Le fac-similé AlloSchool réunit les sujets de l’X et de l’ESPCI, avec Todorov aux pages 1 et 2 et Haruf à la page 4 du PDF. Le rapport officiel archivé porte sur la version. Un rapport distinct sur l’expression anglaise n’a pas été retrouvé dans les pièces consultées."
+  },
+  "mots_expression": {
+    "1": 136,
+    "2": 192
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V",
+      "fichier": "figures/retour.svg",
+      "legende": "Les gestes sont visibles, le sens du silence des frères reste ouvert."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "fichier": "figures/discours.svg",
+      "legende": "La comparaison proposée par Todorov porte sur le rôle du lecteur et les modes de validation."
+    },
+    {
+      "numero": 3,
+      "question": "2",
+      "fichier": "figures/austen.svg",
+      "legende": "Exemple personnel de composition à partir d’Orgueil et Préjugés."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "anglais_sciences_2005_2008",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et réponses intégrales en anglais. Kent Haruf, Coming home, et Tzvetan Todorov, Le pouvoir de la littérature.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}

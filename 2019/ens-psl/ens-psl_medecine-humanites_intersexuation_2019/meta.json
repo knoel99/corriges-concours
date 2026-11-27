@@ -1,0 +1,74 @@
+{
+  "slug": "ens-psl_medecine-humanites_intersexuation_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Médecine-Humanités",
+    "matiere": "Intersexuation",
+    "annee": 2019,
+    "modalite": "écrit"
+  },
+  "intitule": "Intersexuation",
+  "questions": 1,
+  "redaction": "Commentaire rédigé en lecture croisée sur « Intersexuation », guide d’analyse de chaque document, composition développée et schéma.",
+  "sources": {
+    "sujet": "https://medecine-humanites.ens.fr/wp-content/uploads/2019/10/Sujet-1-e%CC%81crit-MH2019-ENS.tiff",
+    "index": "https://medecine-humanites.ens.psl.eu/sujets-et-rapports-du-concours-2018/",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://medecine-humanites.ens.fr/wp-content/uploads/2019/10/Sujet-1-e%CC%81crit-MH2019-ENS.tiff",
+        "fac_simile": "https://web.archive.org/web/20210214092031id_/http://medecine-humanites.ens.fr/wp-content/uploads/2019/10/Sujet-1-e%CC%81crit-MH2019-ENS.tiff",
+        "sha256": "0d65dca3fbf1a9d4b0246b0dbf9e46af8112d94f3bbcc3b991ffc6fbd74b7596",
+        "nature": "TIFF",
+        "pages": 6
+      }
+    ]
+  },
+  "documents_commentes": [
+    "Ilana Löwy, *Cahiers du Genre*, 2003. Identifier l’origine sociale de l’urgence dont elle analyse les effets médicaux.",
+    "*Hermaphrodite endormi*, Louvre. La photographie montre un corps au repos sur un matelas sculpté. La notice distingue copie romaine, original grec et intervention du Bernin.",
+    "Virginia Woolf, *Orlando*, 1928. Les questions successives du narrateur mettent en jeu des attentes liées aux vêtements et aux conduites.",
+    "Flora Yacine, *Sciences humaines*, 2012. Le parcours de Laxmi et la reconnaissance administrative au Tamil Nadu permettent d’interroger la portée sociale d’un statut.",
+    "*Le Monde* et AFP, 29 mai 2019. Caster Semenya et son avocat s’expriment après la décision du Tribunal arbitral du sport."
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Commentaire",
+      "fichier": "figures/lecture-croisee.svg",
+      "legende": "Trois questions avant une intervention sur le corps"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "arabe_mp_pc_2011_2014",
+      "session": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Commentaire rédigé en lecture croisée sur « Intersexuation », guide d’analyse de chaque document, composition développée et schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "agent": "reprise_medecine_humanites",
+      "session": "reprise_medecine_humanites",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Relecture des cinq pièces du scan TIFF du 13 juin. Précisions sur le point de vue de la photographie et la différence entre mythe, classement sportif et indication de soin. Repérage des pages dans le guidé et contrôle des deux éditions."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire de documents"
+    ]
+  }
+}

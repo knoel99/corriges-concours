@@ -1,0 +1,84 @@
+{
+  "slug": "ens_pc_mathematiques_2009",
+  "epreuve": {
+    "concours": "ENS",
+    "ecoles_historiques": "ENS de Paris, Lyon et Cachan",
+    "filiere": "PC",
+    "matiere": "Mathématiques",
+    "annee": 2009
+  },
+  "questions": 26,
+  "intitule": "Calcul certifié des racines réelles par intervalles d’exclusion",
+  "redaction": "Questions A.1 à C.4 et toutes leurs subdivisions demandant une démonstration. Vérification des inégalités aux extrémités, des racines simples, des bornes de coefficients et de l’adaptation numérique certifiée.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2009/PC/2009_sujet_pc_maths.pdf",
+    "sujet_sha256": "6f23b1d12af3402a0c91766cf62ee63fb3a60abef51028f8956d74b120f738f6",
+    "garde": "92.13P · ENS de Paris, Lyon et Cachan",
+    "rapport_jury": null
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "physique_mp_suite",
+      "session": "physique_mp_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Questions A.1 à C.4 et toutes leurs subdivisions demandant une démonstration. Vérification des inégalités aux extrémités, des racines simples, des bornes de coefficients et de l’adaptation numérique certifiée."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A.2",
+      "fichier": "figures/rayon-et-distance.svg",
+      "legende": "Pour le polynôme x² − 1, le rayon coïncide avec la distance sur le segment entre les deux racines et lui est inférieur à l’extérieur."
+    },
+    {
+      "numero": 2,
+      "question": "A.6.3",
+      "fichier": "figures/zeros-de-la-fonction-auxiliaire.svg",
+      "legende": "Chaque fonction du rayon est strictement décroissante. Ses changements de signe encadrent le zéro lorsque le centre x varie."
+    },
+    {
+      "numero": 3,
+      "question": "C.3",
+      "fichier": "figures/balayage-et-segments.svg",
+      "legende": "Exemple pour x² − 1 avec une maille de 0,28. Les segments conservés couvrent les deux racines marquées par des croix."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A.1",
+      "A.2",
+      "A.3",
+      "A.4",
+      "A.5",
+      "A.6.1",
+      "A.6.2",
+      "A.6.3",
+      "A.7.1",
+      "A.7.2",
+      "A.7.3",
+      "A.7.4",
+      "A.8",
+      "A.9.1",
+      "A.9.2",
+      "A.10",
+      "B.1",
+      "B.2",
+      "B.3",
+      "B.4",
+      "B.5",
+      "B.6",
+      "C.1",
+      "C.2",
+      "C.3",
+      "C.4"
+    ]
+  }
+}

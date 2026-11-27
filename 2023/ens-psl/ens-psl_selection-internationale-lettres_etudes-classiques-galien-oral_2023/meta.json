@@ -1,0 +1,72 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_etudes-classiques-galien-oral_2023",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Études classiques — Galien (oral)",
+    "annee": 2023,
+    "modalite": "oral"
+  },
+  "intitule": "Les conditions de l’exercice de la pharmacie au temps de Galien",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/dsa-oral-2-sil2023.pdf",
+    "sujet_sha256": "bf566f95b581c1df78e4dc0258036e519bcb8c9270d7e53a608cdff073263e13",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.ens.psl.eu/sites/default/files/dsa-oral-2-sil2023.pdf",
+        "sha256": "bf566f95b581c1df78e4dc0258036e519bcb8c9270d7e53a608cdff073263e13",
+        "pages": 4
+      },
+      {
+        "role": "rapport",
+        "url": "https://www.ens.psl.eu/sites/default/files/sil2023_oral_etudesclassiques_rapport.pdf",
+        "sha256": "019efbe2a2ec3dd4ddc9bc09164f33fa9ae147d911455dd1f8f47391092c4775",
+        "pages": 6
+      }
+    ],
+    "precision_sujet": "Dossier d’oral 2. Quatre pages, huit extraits traduits des Simples et des Antidotes avec les notes éditoriales. Une heure de préparation, trente minutes de passage en français. Le rapport de Daniel Béguin commente ces huit documents."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/temoignages-de-lemnos.svg",
+      "question": "Exposé de synthèse",
+      "legende": "Du témoignage écrit à l’observation, puis à l’examen des usages à Lemnos"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "classiques_2017",
+      "agent": "classiques_2017",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture des quatre feuillets et du rapport de six pages. Synthèse, guide de préparation, contrôle des huit numéros et schéma sur la preuve à Lemnos."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Exposé de synthèse"
+    ],
+    "elements_verifies": [
+      "Synthèse structurée des conditions matérielles et savantes de la pharmacie au IIe siècle de notre ère.",
+      "Textes 1 et 2 : scorie de Soles, visite de la mine, transport et réserve.",
+      "Textes 3 et 4 : voyage à Lemnos, rite, informateurs locaux et distinction des usages rapportés ou éprouvés.",
+      "Textes 5 et 6 : commerce, authenticité, apprentissage et approvisionnement.",
+      "Textes 7 et 8 : pharmacies impériales, conservation, observations sur Marc-Aurèle et limites de l’inférence."
+    ]
+  }
+}

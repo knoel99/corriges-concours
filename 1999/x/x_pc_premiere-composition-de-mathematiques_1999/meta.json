@@ -1,0 +1,106 @@
+{
+  "slug": "x_pc_premiere-composition-de-mathematiques_1999",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "PC",
+    "annee": 1999,
+    "matiere": "Première composition de mathématiques",
+    "modalite": "écrit"
+  },
+  "intitule": "Première composition de mathématiques",
+  "theme": "Représentation matricielle de réseaux électriques parallèles.",
+  "organisateurs": "École polytechnique et École supérieure de physique et de chimie industrielles",
+  "identification": "Les deux établissements sont nommés en toutes lettres. Filière PC. Première composition de mathématiques.",
+  "questions": 28,
+  "sources": {
+    "sujet": "https://www.sujetsetcorriges.fr/dl/X/Maths/PC/sec-x-1999-maths1-PC.pdf",
+    "sha256_sujet": "922a8047fee7d09b164a7c3a5364b59b7a17fd5d32f8dc7834fbce1612f559c9",
+    "pages_sujet": 4,
+    "collection": "https://www.sujetsetcorriges.fr/cpge-spe/x/x-mathematiques/x-espci-maths-pc/",
+    "notice_ups": "m99xp1",
+    "pieces_ups": [
+      {
+        "id": "m99xp1",
+        "type": "énoncé",
+        "auteur": "École Polytechnique",
+        "source": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-a45a50d9347e26def48d",
+        "sha256": "ec7eda89695a26bb000c5e4ef58eaea05d60b42f938803db1cd8475b7f80fe54"
+      },
+      {
+        "id": "m99xp1",
+        "type": "corrigé",
+        "auteur": "Mme Wetta",
+        "source": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-4a312f718389d90bd795",
+        "sha256": "64d7b6768a272eb700f0d8834289ba653d5025f80dce5127aa791715257edd5a"
+      }
+    ],
+    "recoupement": null,
+    "rapport_jury": null,
+    "precision_rapport": "Aucun rapport de jury identifié dans les deux collections consultées."
+  },
+  "figures": [
+    {
+      "fichier": "figures/figure-1.svg",
+      "question": "5.b",
+      "legende": "Partage du courant qui minimise la puissance"
+    },
+    {
+      "fichier": "figures/figure-2.svg",
+      "question": "11",
+      "legende": "Deux réseaux couplés montés en parallèle"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "x_maths_b_recentes",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Contrôle de la garde et des parties du fac-similé, résolution de chaque consigne dans les deux éditions, indications par subdivision, figures mathématiques originales et rapprochement avec la notice UPS."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3.a",
+      "3.b",
+      "3.c",
+      "4.a",
+      "4.b",
+      "5.a",
+      "5.b",
+      "5.c",
+      "6.a",
+      "6.b",
+      "6.c",
+      "7.a",
+      "7.b",
+      "7.c",
+      "8.a",
+      "8.b",
+      "9",
+      "10",
+      "11",
+      "12.a",
+      "12.b",
+      "12.c",
+      "12.d",
+      "13.a",
+      "13.b",
+      "13.c"
+    ],
+    "precision": "Contrôle de la garde et des parties du fac-similé, résolution de chaque consigne dans les deux éditions, indications par subdivision, figures mathématiques originales et rapprochement avec la notice UPS.",
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "perimetre": "Contrôle de la garde et des parties du fac-similé, résolution de chaque consigne dans les deux éditions, indications par subdivision, figures mathématiques originales et rapprochement avec la notice UPS.",
+      "sha256_sujet_controle": "922a8047fee7d09b164a7c3a5364b59b7a17fd5d32f8dc7834fbce1612f559c9"
+    }
+  }
+}

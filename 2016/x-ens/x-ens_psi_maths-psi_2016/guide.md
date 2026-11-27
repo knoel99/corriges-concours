@@ -4,7 +4,13 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Le problème démontre le théorème de Broyden, puis son équivalence avec le théorème de Tucker et l’alternative de Farkas. La positivité est prise coordonnée par coordonnée. Les deux signes du relèvement de la question 17 sont vérifiés directement sur la matrice par blocs.
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Le problème démontre le théorème de Broyden, son équivalence avec le théorème de Tucker, puis l’alternative de Farkas. La positivité est prise coordonnée par coordonnée. Les deux signes du relèvement de la question 17 sont vérifiés directement sur la matrice par blocs.
+
+[Sujet officiel](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2016_Sujet_1C_PSI_Maths.pdf)
+
+Une diagonale de signes a ses coefficients diagonaux dans $\{-1,1\}$. Pour l’alternative finale, le cône des seconds membres admissibles est $\{Aw\mid w\ge0\}$. La vérification suit les questions du sujet officiel. Le rapport écrit de mathématiques de cette session reste introuvable dans les archives consultées.
 
 ## Préliminaire. Comparer les signes
 
@@ -48,6 +54,8 @@ Les termes $\|x\|^2+\|y\|^2$ coïncident dans les deux développements. La compa
 
 Si $Ox=Sx$ et $x>0$, alors $x\pm Ox=(I\pm S)x\ge0$. Réciproquement, le système donne $|(Ox)_i|\le x_i$ et l’orthogonalité impose $\sum_i(x_i^2-(Ox)_i^2)=0$. Tous les termes sont positifs ou nuls, donc $|(Ox)_i|=x_i$ pour tout $i$. On obtient $Ox=Sx$ en prenant $s_i=(Ox)_i/x_i$. Cette équivalence porte sur **l’existence** de $S$ dans le sens réciproque. Une diagonale fixée à l’avance, comme pourrait le suggérer la formulation imprimée, ne découle pas du système qui ne la mentionne pas.
 
+Pour voir concrètement le rôle du quantificateur, prenons $O=I$ et $x=(1,1)^t$. Le système $(*)$ est satisfait. Avec la diagonale prescrite $S=-I$, l’égalité $Ox=Sx$ est pourtant fausse. La diagonale déterminée par ce $x$ est $S=I$.
+
 ## A. Réflexions et rotations du plan
 
 ### Question 3
@@ -68,7 +76,7 @@ Pour une réflexion d’axe horizontal ou vertical, sa matrice est déjà diagon
 
 Si $v(a)=(\cos a,\sin a)^t$, la rotation donne $v(a+\theta)$ et les deux réflexions donnent $v(-a)$ et $v(\pi-a)$. Choisissons $x_+=v(-\theta/2)$ et $x_-=v((\pi-\theta)/2)$. Ils satisfont les deux égalités demandées. Pour $-\pi<\theta<0$, seul $x_+$ est strictement positif. Pour $0<\theta<\pi$, seul $x_-$ l’est. Le demi-tour $\theta=\pi$ appartient aussi à l’intervalle imprimé. Les deux directions trouvées sont alors des axes, sans vecteur strictement positif. Comme $O=-I$, le couple $x=(1,1)^t$, $S=-I$ donne directement le théorème.
 
-![Figure 1 — Dans chaque exemple, la rotation envoie le vecteur positif sur son symétrique par rapport à un axe de coordonnées.](figures/rotations-et-reflexions.svg)
+![Dans chaque exemple, la rotation envoie le vecteur positif sur son symétrique par rapport à un axe de coordonnées.](figures/rotations-et-reflexions.svg)
 
 ## B. Équivalence des théorèmes de Tucker et de Broyden
 
@@ -93,6 +101,8 @@ $$
 \|z_1+z_2\|\le \|O^t(z_1-z_2)\|=\|z_1-z_2\|\le\|z_1+z_2\|.
 $$
 La dernière inégalité résulte de $\langle z_1,z_2\rangle\ge0$. Toutes sont donc des égalités. Dans la première comparaison, deux vecteurs positifs ordonnés de même norme sont égaux, par sommation des différences de carrés. Il en résulte $c=0$.
+
+On peut aussi lire l’égalité des deux dernières normes sur leurs carrés. Leur différence vaut $4\langle z_1,z_2\rangle$. Ainsi $\langle z_1,z_2\rangle=0$ et, puisque les coefficients de ces deux vecteurs sont tous positifs ou nuls, ils ne possèdent aucun indice où ils seraient tous deux strictement positifs.
 
 ### Question 7
 
@@ -139,7 +149,7 @@ Broyden donne $x>0$ et $Ox=Sx$. Multiplier par $I+M$ donne $(I-M)x=(I+M)Sx$, don
 
 #### Solution
 
-Ces deux normes valent un. Ainsi $\|q\|^2=\|r\|^2=1-\alpha^2$. En particulier $|\alpha|\le1$, avec égalité exactement quand $q=r=0$.
+La dernière ligne $(q^t,\alpha)$ et la dernière colonne $(r^t,\alpha)^t$ de $O$ ont chacune une norme euclidienne égale à un, car $OO^t=O^tO=I$. Ainsi $\|q\|^2=\|r\|^2=1-\alpha^2$. En particulier $|\alpha|\le1$, avec égalité exactement quand $q=r=0$.
 
 ### Question 12
 
@@ -180,6 +190,8 @@ Le numérateur du coefficient est $1-(d-\alpha)^2=0$. Les deux matrices sont ort
 #### Solution
 
 Pour $a=\alpha+1$ et $b=\alpha-1$, le coefficient de $qq^t$ dans $Q_+^tQ_--I$ vaut $-1+\alpha/a+\alpha/b+(1-\alpha^2)/(ab)=-2/(1-\alpha^2)$. Multiplier $Q_+^tQ_-=I-2qq^t/(1-\alpha^2)$ à gauche par $Q_+$ donne la formule pour $Q_-$. Le facteur de droite est la réflexion orthogonale de normale $q$, puisque $q^tq=1-\alpha^2$.
+
+Posons $H=I-2qq^t/\|q\|^2$. Si $v\perp q$, alors $Hv=v$. En revanche $Hq=-q$. Ainsi $Q_+^tQ_-$ modifie exactement le signe de la composante selon $q$, et $Q_-=Q_+H$.
 
 ### Question 16
 
@@ -233,6 +245,10 @@ Conjuguons $O$ par une permutation qui envoie le premier axe sur le dernier. La 
 
 Si $\eta'>0$ on a fini. Sinon $z$ ne s’annule qu’au dernier indice et $z'$ seulement au premier, donc $z+z'>0$. Choisissons l’une des diagonales $R$ de 18a. L’orthogonalité donne $\|Rz+R'z'\|=\|O(z+z')\|=\|z+z'\|$. Le calcul de 1c reste valable pour des coordonnées nulles et force $R_i=R'_i$ dès que $z_i z'_i>0$. Choisissons à chaque indice le signe du vecteur dont la coordonnée est positive. Ce choix concorde en cas de recouvrement et produit $S(z+z')=Rz+R'z'=O(z+z')$. La récurrence est achevée, et 1b fournit l’unicité.
 
+Le cas d’égalité utilisé ici se vérifie sans exiger d’emblée des coordonnées strictement positives. Si $s_i,s'_i$ sont les signes des deux diagonales, alors
+$$\|z+z'\|^2-\|Rz+R'z'\|^2=4\sum_{i:s_i\ne s'_i}z_i z'_i.$$
+Chaque terme est positif ou nul. Les indices où les signes diffèrent ne peuvent donc porter deux coordonnées positives. Le signe de la somme s’y choisit sans ambiguïté.
+
 ## D. Alternative de Farkas
 
 ### Question 19
@@ -252,3 +268,7 @@ La matrice $B$ est antisymétrique. Pour $z=z_1-z_2$, les blocs de $By$ sont $Ax
 #### Solution
 
 Comme $Ax-tb$ et son opposé sont positifs, $Ax=tb$. Si $t>0$, alors $w=x/t\ge0$ vérifie $Aw=b$, d’où (I). Tucker assure que l’un des deux cas se produit. Si (I) et (II) étaient simultanés, on aurait $0< b^tz=w^tA^tz\le0$. Ils s’excluent donc.
+
+Prenons les colonnes $a_1=(1,0)^t$, $a_2=(1,1)^t$. Le point $(2,1)^t=a_1+a_2$ réalise (I). Pour $b=(1,2)^t$, le vecteur $z=(-1,1)^t$ vérifie $A^tz=(-1,0)^t\le0$ et $b^tz=1>0$. Il donne le certificat de (II) et explique la séparation sur la figure.
+
+![Le cône engendré par les colonnes (1,0) et (1,1) contient le point (2,1). Le point (1,2) est de l’autre côté de la droite de séparation. Son produit scalaire avec (−1,1) est strictement positif.](figures/alternative-farkas-plan.svg)

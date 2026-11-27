@@ -1,0 +1,70 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_espagnol-oral_2022",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Espagnol (oral)",
+    "annee": 2022,
+    "modalite": "oral"
+  },
+  "questions": 2,
+  "intitule": "Dos reportajes de Radio Nacional de España",
+  "sources": {
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2022_Rapport_Oral_Economie_Gestion_Option1_espagnol.pdf",
+    "rapport_sha256": "f16048a0d25b8dcc2db7129cbb720a964aac2a5c650605b30035f6bcbe03ab34",
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2022_Rapport_Oral_Economie_Gestion_Option1_espagnol.pdf#page=1",
+    "index": "https://ens-paris-saclay.fr/node/8841",
+    "archives_et_contexte": [
+      {
+        "fonction": "émission source",
+        "date": "2022-03-28",
+        "id": "6469279",
+        "duree_ms": 367934,
+        "url": "https://www.rtve.es/play/audios/reportajes-5-continentes/reggaeton-dimension-genero/6469279/"
+      },
+      {
+        "fonction": "émission source",
+        "date": "2022-05-25",
+        "id": "6548669",
+        "duree_ms": 283141,
+        "url": "https://www.rtve.es/play/audios/24-horas/falta-control-armas-fuego/6548669/"
+      }
+    ]
+  },
+  "redaction": "2 supports ou thèmes numérotés accompagnés de commentaires argumentés en espagnol, d’un exercice d’entretien et d’indications propres au sujet. Comptes rendus des deux publications retrouvées dans le catalogue de RNE.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "fichier": "figures/rythme-paroles-voix.svg",
+      "legende": "Trois éléments du reportage sur le reggaetón permettent de discuter la place des femmes dans la musique."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "espagnol_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "2 supports ou thèmes numérotés accompagnés de commentaires argumentés en espagnol, d’un exercice d’entretien et d’indications propres au sujet. Comptes rendus des deux publications retrouvées dans le catalogue de RNE.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [],
+    "questions_partiellement_traitees": [
+      "El reggaetón toma una dimensión de género",
+      "La falta de control en las armas de fuego"
+    ],
+    "questions_non_traitees": [],
+    "precision": "Les deux titres désignent des émissions retrouvées dans le catalogue de RNE. Leurs notices permettent des comptes rendus documentés. Le premier original dure 6 min 08, le second 4 min 43. Le jury indique une fourchette commune de 4 min 30 à 5 min ; seules les bornes de l’enregistrement d’épreuve permettraient d’en restituer exactement le montage. Les questions d’entretien sont proposées pour s’entraîner."
+  }
+}

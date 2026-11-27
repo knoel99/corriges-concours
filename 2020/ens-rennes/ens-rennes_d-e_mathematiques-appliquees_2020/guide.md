@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Tirages de cadeaux et distribution des revenus.** Le fascicule associe dérangements, loi de Pareto et deux ajustements sur des salaires français. En partie IV, les effectifs du premier tableau et le total annoncé diffèrent de vingt personnes.
 
 ## Exercice I. Option et cadeau
@@ -119,6 +121,8 @@ $a_n=\displaystyle\sum_{k=0}^n(-1)^k/k!$ pour tout $n\ge1$.
 #### Solution
 
 Par la série exponentielle en $-1$, $a_n\to e^{-1}\simeq0{,}36788$. Le quotient de deux termes consécutifs de la série est $-1/(k+1)$ ; c’est la série de l’exponentielle, parfois appelée par inadvertance « géométrique » dans le rapport.
+
+Le critère des séries alternées donne le contrôle numérique $|a_n-e^{-1}|\le 1/(n+1)!$. Par exemple, $d_4=9$, donc $a_4=9/24=0{,}375$. L’écart à $e^{-1}\simeq0{,}36788$ est inférieur à $1/120$.
 
 ## Problème I. Courbes des densités pour un seuil unitaire
 
@@ -318,13 +322,15 @@ Les neuf classes bornées ont la même largeur, donc les hauteurs sont proportio
 ### Question P.IV.1.c
 
 > [!INDICATION]
-> Vérifier le total des effectifs avant de pondérer les centres de classe.
+> Additionner d’abord les dix effectifs. Comparer ensuite la fréquence accumulée à 100 000 € dans le second tableau au nombre de personnes de la dernière classe.
 
 #### Solution
 
 Avec les centres 15 000, 25 000, …, 95 000 € et la moyenne imposée 225 240 € pour la classe ouverte, la somme pondérée imprimée vaut **234 855 520 €**. Les effectifs imprimés totalisent **9 980**, dont 9 832 dans les neuf classes bornées. La moyenne estimée des 9 980 observations listées vaut donc **23 532,62 €**.
 
 Le second tableau donne $F(100000)=0{,}9832$. Sur les 10 000 personnes annoncées, cela implique 168 personnes dans la dernière classe, au lieu de 148. Avec cette correction cohérente, la moyenne estimée des **10 000** personnes vaut $(234855520+20\times225240)/10000=\mathbf{23936{,}03}$ €. Diviser la seule somme imprimée par 10 000 donnerait 23 485,55 € et laisserait vingt salaires sans contribution.
+
+Si les vingt salaires absents ont une moyenne inconnue $m$, la moyenne estimée des 10 000 personnes s’écrit $(234855520+20m)/10000$. Dans l’interprétation où la dernière classe compte 168 personnes, on conserve pour cette classe la moyenne de 225 240 € fournie par le second tableau.
 
 ### Question P.IV.2.a
 
@@ -438,3 +444,5 @@ Pour la loi de Pareto, $\ln(1-F(x))=-\alpha\ln(x)+\alpha\ln x_0$. L’alignement
 #### Solution
 
 On estime $\alpha=-A\simeq\mathbf{1{,}79}$ et $x_0=\exp(B/\alpha)\simeq\mathbf{9989{,}61}$ €. On utilise les logarithmes et les coefficients initiaux à pleine précision avant l’arrondi final, car l’exponentiation est sensible à l’arrondi de la pente.
+
+Les deux estimations de $\alpha$ se situent entre 1 et 2. Dans les deux modèles de Pareto ajustés, le revenu a donc une moyenne finie et un deuxième moment infini. Le tableau d’effectifs fini conserve sa propre dispersion empirique.

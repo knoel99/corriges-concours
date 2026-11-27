@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 L’épreuve étudie la somme des deux translations opposées d’une suite bilatérale. On suit les mêmes solutions sur trois espaces différents avant de retrouver le noyau au moyen d’une série de Fourier.
 
 ## Première partie. Bases adaptées à la matrice de transfert
@@ -142,6 +144,8 @@ Soit $(Sx)_k=x_{k+1}$. Alors $A=S+S^{-1}$ et les deux termes commutent. Le binô
 
 Dans l’espace de Banach des endomorphismes continus de $E_1=\ell^1(\mathbb Z)$, $\sum_{n\ge0}\|\lambda^{-n}A_1^n\|\le\sum_{n\ge0}(2/|\lambda|)^n<\infty$. La somme définit donc l’opérateur $B_\lambda$ du sujet. Si $S_m$ est la somme partielle et $U=A_1/\lambda$, alors $(I-U)S_m=S_m(I-U)=I-U^{m+1}$, dont le dernier terme tend vers zéro en norme après soustraction de $I$. À la limite $B_\lambda^{-1}=I-A_1/\lambda$ des deux côtés.
 
+La convergence en norme se chiffre dès les sommes finies. Pour $p>m$, on a $\|S_p-S_m\|\le\sum_{j=m+1}^{p}(2/|\lambda|)^j$. Après passage à la limite, $\|B_\lambda-S_m\|\le(2/|\lambda|)^{m+1}/(1-2/|\lambda|)$. Cette estimation justifie les deux passages à la limite dans les identités de produit.
+
 ### Question 8.a
 
 > [!INDICATION]
@@ -168,6 +172,8 @@ Si $|\lambda|>2$, $\|A_\infty u\|_\infty\le2\|u\|_\infty$ interdit tout vecteur 
 #### Solution
 
 Pour $|\lambda|>2$, 7.b assure que l’image est $E_1$. Si $|\lambda|\le2$, 8.b fournit $u\ne0$ tel que $A_\infty u=\lambda u$. La forme $\ell(x)=\langle x,u\rangle$ est continue et non nulle par 5. Les séries absolument convergentes peuvent être réindexées, d’où $\langle A_1x,u\rangle=\langle x,A_\infty u\rangle$. Il s’ensuit que $\ell((A_1-\lambda I)x)=0$. L’image est contenue dans le noyau fermé propre de $\ell$, donc son adhérence aussi. La densité équivaut à $|\lambda|>2$.
+
+On peut donner un point explicitement séparé de l’image. Pour $|\lambda|\le2$, prenons $t$ tel que $2\cos t=\lambda$ et $u_k=e^{ikt}$. La forme $\ell$ ci-dessus est de norme un, vaut un en $\delta_0$ et s’annule sur l’image. Ainsi $\|\delta_0-y\|_1\ge1$ pour tout $y$ de l’image. Comme $0$ appartient à l’image, la distance de $\delta_0$ à celle-ci vaut exactement $1$, y compris aux deux valeurs $\lambda=\pm2$.
 
 ## Quatrième partie. Une transformation de Fourier
 
@@ -206,3 +212,5 @@ Soit $y=B_\lambda x$. Par 7.b, $x=y-A_1y/\lambda$. Par linéarité et 11, $\varp
 #### Solution
 
 Si $A_1x=\lambda x$, on a $(2\cos t-\lambda)\varphi_x(t)=0$ pour tout $t$. Le premier facteur ne s’annule qu’en un nombre fini de points par période, éventuellement aucun. Sur le complément dense, $\varphi_x$ est donc nulle. Elle l’est partout par continuité. L’extraction des coefficients en 10 donne $x_n=0$ pour chaque entier $n$, ce qui redémontre 8.a.
+
+Pour $\lambda=2$, le point $t=0$ est un zéro du multiplicateur ; pour $\lambda=-2$, c’est $t=\pi$. Prendre une suite de points voisins où le multiplicateur est non nul impose aussi $\varphi_x(0)=0$ ou $\varphi_x(\pi)=0$. Cette étape empêche de perdre les deux valeurs limites en divisant l’identité de 11.

@@ -1,0 +1,133 @@
+{
+  "slug": "bel_bl_anglais_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Anglais",
+    "annee": 2024,
+    "modalite": "écrit"
+  },
+  "intitule": "Analyse et commentaire de textes ou documents en anglais",
+  "type_epreuve": "Épreuve à option",
+  "questions": 1,
+  "documents": 5,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2024_blses_sujet_analyse_commentaire_anglais.pdf",
+    "sha256_sujet": "0cf54be40176501a7e6ad88ff49b3a94e261c85d7d044ad34d4cdf2e80a49b8f",
+    "pages_sujet": 7,
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_ecrit_anglais.pdf",
+    "sha256_rapport_jury": "e8efdae7e082f1dfcfb814214a7849a57faaadeb1956479a7f2d76c4907e7fe5",
+    "pages_rapport": 7
+  },
+  "ressources_graphiques": [],
+  "lecture_du_sujet": [
+    {
+      "piece": "Consigne",
+      "page_debut": 1,
+      "page_fin": 1,
+      "controle": "« Analysez et commentez, en anglais, les cinq documents suivants ». Le fascicule individuel commence à la page imprimée 8."
+    },
+    {
+      "piece": "Document 1 — Christine Bolt",
+      "page_debut": 1,
+      "page_fin": 2,
+      "controle": "Introduction de The Women’s Movements in the United States and Britain from the 1790s to the 1920s, 1993, l. 1–89. Comparaison transatlantique, doctrines des sphères, structure politique, rôle de la classe et de la race."
+    },
+    {
+      "piece": "Document 2 — Barbara Bodichon",
+      "page_debut": 3,
+      "page_fin": 4,
+      "controle": "Reasons for the Enfranchisement of Women, Manchester, 6 octobre 1866, l. 1–50. Fiscalité, veuves du Suffolk, routes et eau, formation du jugement et conditions du droit de vote."
+    },
+    {
+      "piece": "Document 3 — Margaret Thatcher",
+      "page_debut": 4,
+      "page_fin": 5,
+      "controle": "Conservative Women’s Conference, Londres, 25 mai 1988, l. 1–54. Anniversaires, sélection des candidates, budget, Family Credit et responsabilités de soin."
+    },
+    {
+      "piece": "Document 4 — Anna Julia Cooper",
+      "page_debut": 5,
+      "page_fin": 6,
+      "controle": "A Voice from the South, 1892, p. 142–146 de l’ouvrage, l. 1–46 du sujet. Maison en feu, revendication d’autorité et image de la plaque photographique."
+    },
+    {
+      "piece": "Document 5 — Betty Friedan",
+      "page_debut": 6,
+      "page_fin": 7,
+      "controle": "The Feminine Mystique, 1963, p. 5–9 de l’ouvrage, l. 1–57 du sujet. Suburbia, consommation, conseils des experts et réception de Beauvoir."
+    }
+  ],
+  "journal": [
+    {
+      "section": "Introduction",
+      "rapport": "p. 1–5",
+      "verification": "Identify the five authors, distinguish the historian from the four primary sources and give the comparison an interpretive question.",
+      "repere_dans_les_deux_editions": "the right to define that experience"
+    },
+    {
+      "section": "Making private responsibilities count in public",
+      "rapport": "p. 1–4",
+      "verification": "Bodichon’s examples of taxation and tenancy, Cooper’s analogy, and Bolt’s account of the doctrine and the class position of reformers.",
+      "repere_dans_les_deux_editions": "seven widows"
+    },
+    {
+      "section": "Whose experience could speak for women?",
+      "rapport": "p. 1–4",
+      "verification": "Close reading of Cooper and Friedan with Bolt on class, race, circulation of ideas and the two institutional settings.",
+      "repere_dans_les_deux_editions": "sensitised plate"
+    },
+    {
+      "section": "What survived the extension of the franchise?",
+      "rapport": "p. 2–5",
+      "verification": "Compare the two franchise settlements with the precise force of Thatcher’s partisan narrative, detailed policy references and Friedan’s response to domestic expertise.",
+      "repere_dans_les_deux_editions": "Constance Markievicz"
+    },
+    {
+      "section": "Conclusion",
+      "rapport": "p. 4–6",
+      "verification": "Return to the inquiry about authority, ordinary experience and the public standing to speak for others.",
+      "repere_dans_les_deux_editions": "standing to describe ordinary life"
+    }
+  ],
+  "figures": [
+    {
+      "fichier": "figures/uses-of-home.svg",
+      "question": "Making private responsibilities count in public",
+      "legende": "Figure 1 — Three appeals to the home pursue different political ends. Cooper’s burning-house analogy adds a further claim about responsibility."
+    },
+    {
+      "fichier": "figures/two-franchises.svg",
+      "question": "What survived the extension of the franchise?",
+      "legende": "Figure 2 — Britain and the United States expanded the franchise by different legal routes. The dates mark distinct changes in access and eligibility."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "x_maths_b_recentes",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Analyse et commentaire composé en anglais des cinq textes. Lecture des sept pages du sujet et du rapport, comparaison des perspectives britannique et américaine et des formes d’argumentation."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Analyse et commentaire de textes ou documents en anglais"
+    ],
+    "precision": "Analyse et commentaire composé en anglais des cinq textes. Lecture des sept pages du sujet et du rapport, comparaison des perspectives britannique et américaine et des formes d’argumentation.",
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "0cf54be40176501a7e6ad88ff49b3a94e261c85d7d044ad34d4cdf2e80a49b8f",
+      "sha256_rapport_jury_controle": "e8efdae7e082f1dfcfb814214a7849a57faaadeb1956479a7f2d76c4907e7fe5",
+      "perimetre": "Analyse et commentaire composé en anglais des cinq textes. Lecture des sept pages du sujet et du rapport, comparaison des perspectives britannique et américaine et des formes d’argumentation."
+    }
+  }
+}

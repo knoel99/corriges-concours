@@ -1,0 +1,80 @@
+{
+  "slug": "ens-psl_medecine-humanites_les-experiences-de-mort-imminente_2023",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Médecine-Humanités",
+    "matiere": "Les expériences de mort imminente",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "intitule": "Les expériences de mort imminente",
+  "questions": 1,
+  "redaction": "Commentaire rédigé en lecture croisée sur « Les expériences de mort imminente », guide d’analyse de chaque document, composition développée et schéma.",
+  "sources": {
+    "sujet": "https://medecine-humanites.ens.fr/wp-content/uploads/2023/06/Sujet-1-EMI-MH2023.pdf",
+    "index": "https://medecine-humanites.ens.psl.eu/sujets-et-rapports-du-concours-2018/",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://medecine-humanites.ens.fr/wp-content/uploads/2023/06/Sujet-1-EMI-MH2023.pdf",
+        "fac_simile": "https://web.archive.org/web/20240329005700id_/https://medecine-humanites.ens.fr/wp-content/uploads/2023/06/Sujet-1-EMI-MH2023.pdf",
+        "sha256": "02d9cc7638711e84cea2687f26267c38111ae098cd0ef2fe6227c5b1438258d1",
+        "nature": "PDF",
+        "pages": 4
+      },
+      {
+        "role": "rapport",
+        "url": "https://medecine-humanites.ens.fr/wp-content/uploads/2023/06/Rapport-Jury-MH2023.pdf",
+        "fac_simile": "https://web.archive.org/web/20240331041515id_/https://medecine-humanites.ens.fr/wp-content/uploads/2023/06/Rapport-Jury-MH2023.pdf",
+        "sha256": "cccfe2298f3250d5f92e4c57b84978399791a81daba27076a52aad6c569a24cc",
+        "nature": "PDF",
+        "pages": 5
+      }
+    ]
+  },
+  "documents_commentes": [
+    "Léon Tolstoï, *La Mort d’Ivan Ilitch*. Dans les dernières heures du personnage, le narrateur donne accès à ce qu’un témoin à son chevet ne saurait vérifier.",
+    "Sara Piazza, « La morte au cœur battant », 2018. Le cas de Mme D fait apparaître deux interprétations du même examen neurologique.",
+    "Matthieu Blanchin, *Quand vous pensiez que j’étais mort*, 2015, p. 7. La composition des cases dissocie la voix narrative, les plaintes et la silhouette du corps."
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Commentaire",
+      "fichier": "figures/lecture-croisee.svg",
+      "legende": "Trois situations, trois positions de parole"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "arabe_mp_pc_2011_2014",
+      "session": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Commentaire rédigé en lecture croisée sur « Les expériences de mort imminente », guide d’analyse de chaque document, composition développée et schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "agent": "reprise_medecine_humanites",
+      "session": "reprise_medecine_humanites",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Relecture des trois pièces et du rapport 2023. Analyse de la dernière bande de la planche de Blanchin et des points de vue sur la mort encéphalique. Repérage des pages dans le guidé et contrôle des deux éditions."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire de documents"
+    ]
+  }
+}

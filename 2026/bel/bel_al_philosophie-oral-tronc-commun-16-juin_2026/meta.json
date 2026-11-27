@@ -23,7 +23,8 @@
     "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_tc_1al.pdf",
     "sujet_sha256": "c8cbe6fc09cdfef3a7875aaaba6122167827ff284926ddc145c7f53f2b3b0da1",
     "rapport": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf",
-    "rapport_sha256": "b7ae24985758ee21c7601a903f81ce57bdcef0cb108f8852ecd308eba32c7dca"
+    "rapport_sha256": "b7ae24985758ee21c7601a903f81ce57bdcef0cb108f8852ecd308eba32c7dca",
+    "index": "https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-al"
   },
   "figures": [
     {
@@ -37,7 +38,7 @@
       "question": "9"
     }
   ],
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -62,6 +63,69 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Confrontation de l’ordre, des choix et de chaque énoncé au feuillet et aux caractères gras de l’annexe du rapport. Vérification de la durée, des références conceptuelles, du lien entre cas concrets et thèses et de l’entraînement propre au guide."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "sociologie_psl_oraux_individuels",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Confrontation des 12 billets et de leurs 24 intitulés aux feuillets et au gras de l’annexe du jury. Vérification de chaque réponse dans les deux éditions, précision des modalités de tirage et des ouvrages autorisés, rédaction de 12 relances avec réponse pour les sujets proposés en alternative dans le guidé."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "tirages_verifies": 12,
+    "sujets_choisis_verifies": 12,
+    "alternatives_verifiees": 12,
+    "intitules_par_edition": 24,
+    "questions_entierement_traitees": [
+      "1. Sujet choisi — Peut-on faire le bien d’autrui ?",
+      "1. Alternative — Technique et vivant",
+      "2. Sujet choisi — Le devoir d’aimer",
+      "2. Alternative — Y a-t-il des inégalités acceptables ?",
+      "3. Sujet choisi — Pourquoi donne-t-on ?",
+      "3. Alternative — Voir",
+      "4. Sujet choisi — Réforme et révolution",
+      "4. Alternative — Qui peut dire ce qui est beau ?",
+      "5. Sujet choisi — La laideur",
+      "5. Alternative — Les générations futures ont-elles des droits ?",
+      "6. Sujet choisi — Foi et superstition",
+      "6. Alternative — Que raconte l’histoire de l’art ?",
+      "7. Sujet choisi — Vivre et exister",
+      "7. Alternative — Y a-t-il plus dans la volonté que dans le désir ?",
+      "8. Sujet choisi — Les cinq sens",
+      "8. Alternative — Le bonheur est-il une affaire de volonté ?",
+      "9. Sujet choisi — La ressemblance et l’identité",
+      "9. Alternative — L’amour a-t-il à voir avec la morale ?",
+      "10. Sujet choisi — L’homme est-il le sujet de son histoire ?",
+      "10. Alternative — L’artisan et l’ingénieur",
+      "11. Sujet choisi — L’art s’adresse-t-il à la sensibilité ?",
+      "11. Alternative — Changer le monde",
+      "12. Sujet choisi — Faut-il cultiver le naturel ?",
+      "12. Alternative — Traiter autrui comme on veut qu’il nous traite"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "controle": "Billets 1 à 12 du feuillet du 16 juin, lignes 1 à 12 de la liste du rapport. Le premier sujet est en gras. Chaque intitulé possède son propre développement dans les deux éditions. Dans le guidé, les exercices de reprise sont des propositions pédagogiques.",
+    "pages_verifiees": {
+      "sujet": [
+        1
+      ],
+      "rapport": [
+        1,
+        6
+      ]
+    }
+  }
 }

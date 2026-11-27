@@ -9,15 +9,16 @@
   "questions": 22,
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
-    "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-1_mp_2006.pdf",
+    "sujet": "https://fichiers.wikiprepa.fr/data/x_maths-1_mp_2006.pdf",
     "rapport_jury": "https://www.wikiprepa.fr/concours/data/x_maths-1_mp_2006_rapport_jury.pdf",
-    "sha256_sujet": "eaddf158a91199d9993388ef276d8dc304fb73c0d61cb6cdb115e2facbd109da"
+    "sha256_sujet": "eaddf158a91199d9993388ef276d8dc304fb73c0d61cb6cdb115e2facbd109da",
+    "sha256_rapport_jury": "155560d63732585075551759dbea1002266b29fd8f0b29c74b1e4fa999250980"
   },
   "figures": [
     {
       "fichier": "figures/solutions-positives.svg",
       "question": "5.c",
-      "legende": "Les solutions pour trois valeurs de γ coïncident en zéro avec la même tangente. Sur [−1,+∞), elles sont croissantes."
+      "legende": "Les solutions pour trois valeurs de γ coïncident en zéro avec la même tangente. Elles sont croissantes à partir de x = −1."
     }
   ],
   "contributions": [
@@ -31,6 +32,75 @@
       "perimetre": "Rédaction complète sur les trois parties du sujet et les points soulignés par le rapport. Contrôle des dérivées mixtes, des séries bilatères aux deux signes et des jets à tous les raccords, puis preuve par approximation polynomiale. Figure des solutions normalisées.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Solutions bilatères de l’équation à dilatation, deux majorations pondérées, nécessité des coefficients sur la demi-droite positive et propagation des raccords différentiables.",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "agent": "rennes_oraux_economie",
+      "session": "rennes_oraux_economie"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3.a",
+      "3.b",
+      "4.a",
+      "4.b",
+      "4.c",
+      "4.d",
+      "4.e",
+      "5.a",
+      "5.b",
+      "5.c",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12.a",
+      "12.b",
+      "12.c",
+      "12.d"
+    ],
+    "pages_du_sujet": 3,
+    "pages_pdf_des_questions": {
+      "1": 1,
+      "2": 1,
+      "3.a": 1,
+      "3.b": 1,
+      "4.a": 1,
+      "4.b": 2,
+      "4.c": 2,
+      "4.d": 2,
+      "4.e": 2,
+      "5.a": 2,
+      "5.b": 2,
+      "5.c": 2,
+      "6": 2,
+      "7": 3,
+      "8": 3,
+      "9": 3,
+      "10": 3,
+      "11": 3,
+      "12.a": 3,
+      "12.b": 3,
+      "12.c": 3,
+      "12.d": 3
+    },
+    "precision": "Sous-questions relevées sur le fac-similé. Le numéro de page désigne le début de chaque demande dans le PDF original."
+  }
 }

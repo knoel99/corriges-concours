@@ -1,0 +1,59 @@
+{
+  "slug": "x-ens_mp-pc-psi_arabe_2019",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Arabe",
+    "annee": 2019,
+    "modalite": "écrit"
+  },
+  "intitule": "L’école arabe et la reproduction des inégalités",
+  "questions": 2,
+  "redaction": "Synthèse arabe titrée associant analyse sociologique, histoire des établissements du Golfe, trajectoires jordaniennes et caricature de la classe surchargée. Opinion sur les moyens d’assurer un égal accès à un enseignement de qualité.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/2019_MPPC_sujet_Arabe.pdf",
+    "sha256_sujet": "bb81aa99121673097f15a6c24619856f27df0e808141b6e06c77d06257b0c651",
+    "index": "https://banques-ecoles.fr/cms/session-2019-pc/",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/2019_MPPC_sujet_Arabe.pdf",
+        "sha256": "bb81aa99121673097f15a6c24619856f27df0e808141b6e06c77d06257b0c651"
+      },
+      {
+        "role": "rapport",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/11/19_MPPC_rapport_eAra.pdf",
+        "sha256": "8df44aa0b6ec698582bba8802e01f3223954fae1ea76a22333e6c94812fdb333"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/lecture-du-dossier.svg",
+      "legende": "Trois étapes qui expliquent la transformation du rôle social de l’école."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "arabe_mp_pc_2011_2014",
+      "session": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Synthèse arabe titrée associant analyse sociologique, histoire des établissements du Golfe, trajectoires jordaniennes et caricature de la classe surchargée. Opinion sur les moyens d’assurer un égal accès à un enseignement de qualité."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  }
+}

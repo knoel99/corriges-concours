@@ -1,0 +1,120 @@
+{
+  "slug": "ens-de-lyon_second-concours_biologie-biochimie_2015",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Biologie-biochimie",
+    "annee": 2015
+  },
+  "questions": 37,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/06/15_2clyon_sujet_bio2.pdf",
+    "sujet_sha256": "6330c4052a74311632da7bb7a2c87d1897dc0ddcb25808dd77bdf4a80ae97478",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/09/15_2clyon_rap_ebiochi.pdf",
+    "rapport_sha256": "85e8e2e782db358ded453d628a0608f1dfeee2861e4b687bdd733bb58cb91001"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "33",
+      "34",
+      "35",
+      "37"
+    ],
+    "questions_partiellement_traitees": [
+      "32",
+      "36"
+    ],
+    "questions_non_traitees": [],
+    "precision": "Les deux éditions traitent entièrement 35 des 37 questions. À la question 32 sont développés le lien CaSR–IP3 et le modèle de transduction, à l’exclusion du bras expérimental qui fait intervenir une toxine. La question 36 couvre le sens de l’effet des états de l’actine sur la sécrétion, sans analyse pratique des substances qui perturbent le cytosquelette. Les lectures graphiques sont approximatives."
+  },
+  "figures": [
+    {
+      "question": "3",
+      "fichier": "figures/flux-du-calcium.svg",
+      "legende": "Le plasma échange avec l’os et reçoit l’absorption intestinale. Les flux nets vers le milieu extérieur sont distingués des échanges internes."
+    },
+    {
+      "question": "12",
+      "fichier": "figures/coupe-d-une-villosite.svg",
+      "legende": "La bordure apicale regarde la lumière. Le vaisseau se trouve dans l’axe conjonctif, en deçà du revêtement épithélial."
+    },
+    {
+      "question": "17",
+      "fichier": "figures/transport-transcellulaire.svg",
+      "legende": "La voie régulatrice rejoint les protéines d’entrée et de liaison. PMCA oriente la sortie basolatérale vers le sang."
+    },
+    {
+      "question": "22",
+      "fichier": "figures/relais-osteoblastique.svg",
+      "legende": "La PTH agit sur l’ostéoblaste. Le RANKL disponible transmet le signal à la lignée ostéoclastique."
+    },
+    {
+      "question": "23",
+      "fichier": "figures/deux-effets-de-la-pth.svg",
+      "legende": "La PTH agit sur l’os et favorise dans le rein la production de calcitriol, qui augmente l’absorption digestive."
+    },
+    {
+      "question": "24",
+      "fichier": "figures/retroaction-et-calcemie.svg",
+      "legende": "Une chute de calcémie augmente la PTH. Le retour du calcium vers l’intervalle physiologique réduit le signal sécrétoire."
+    },
+    {
+      "question": "32",
+      "fichier": "figures/recepteur-et-seconds-messagers.svg",
+      "legende": "Le modèle place CaSR en amont de la PLC. L’IP3 gagne le cytosol, alors que le DAG demeure associé à la membrane."
+    },
+    {
+      "question": "37",
+      "fichier": "figures/calcium-reticulaire-et-secretion.svg",
+      "legende": "Le stock réticulaire fournit le calcium cytosolique. Le lien avec l’état du réseau cortical est une hypothèse appuyée par les résultats de sécrétion."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir des quatorze pages du sujet, des vingt-trois figures et du rapport de biologie-biochimie de 2015. Huit figures originales, dont une coupe de villosité et les sept autres représentations demandées. Distinction entre effet direct et indirect de VDR, entre flux et compartiments, et entre observation et modèle pour l’actine. Q32 et Q36 de portée partielle."
+    }
+  ]
+}

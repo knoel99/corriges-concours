@@ -1,0 +1,68 @@
+{
+  "slug": "ens_mp-pc_latin-le2_2005",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Latin (LE2)",
+    "annee": 2005,
+    "modalite": "écrit"
+  },
+  "intitule": "L’appétit est le meilleur des cuisiniers",
+  "questions": 1,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version"
+    ]
+  },
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2005/sujet-2005-ecrit-mp_pc_langue_etrangere_2.pdf#page=12",
+    "sujet_sha256": "3591b865ff600e9a1da38a819b3d68405c9a905cb43f3fc1b5ef6183ff6011c6",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2005",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2005/sujet-2005-ecrit-mp_pc_langue_etrangere_2.pdf#page=12",
+        "sha256": "3591b865ff600e9a1da38a819b3d68405c9a905cb43f3fc1b5ef6183ff6011c6",
+        "pages": "12",
+        "filieres": "MP-PC"
+      },
+      {
+        "role": "rapport",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2005/rapport-2005-pc_ecrit_langue_etrangere_2_latin.pdf",
+        "sha256": "5a276cb7f864afa8f3c38ce4b7ab96ab82af82b14b91ab847b9db5f501c2c2b2",
+        "pages": "1–2",
+        "filieres": "MP-PC"
+      }
+    ],
+    "precision": "Cicéron, Tusculanes, livre V.",
+    "etablissements": "ENS de Paris et de Cachan",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2005/rapport-2005-pc_ecrit_langue_etrangere_2_latin.pdf"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Version",
+      "fichier": "figures/lecture.svg",
+      "legende": "Les anecdotes royales, la promenade et la réplique du cuisinier expliquent le titre."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "fin_langues_x_interens",
+      "session": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Traduction française intégrale, explication des constructions et schéma du passage. Cicéron, Tusculanes, livre V.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}

@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 **Formes quadratiques et groupes d’isométries.** On écrit $\widetilde q$ pour la forme polaire. Le corps est de caractéristique nulle. Seule la deuxième partie utilise des propriétés propres aux réels.
 
 ## Préliminaires sur les formes quadratiques
@@ -230,7 +232,7 @@ va de l’identité à $f$. Chaque facteur préserve la forme et a déterminant 
 
 #### Solution
 
-Classons $M$ par $(\det M,\operatorname{sgn}(Me_3)_3)$. Sur $H$, la dernière coordonnée a module au moins 1. Chacun des quatre ensembles est donc fermé dans $O_{2,1}$. La classe $(+,+)$ est connexe par arcs d’après 14.c. Les matrices diagonales $\mathrm{diag}(-1,1,1)$ et $\mathrm{diag}(1,1,-1)$ permettent d’obtenir les quatre combinaisons. Pour chaque paire, la multiplication à gauche par une telle matrice diagonale convenablement choisie est un homéomorphisme de $(+,+)$ sur la classe en question, car elle multiplie le déterminant et la coordonnée verticale par des signes fixés. Les quatre classes sont non vides, disjointes, connexes par arcs et de réunion $O_{2,1}$.
+Classons $M$ par $(\det M,\operatorname{sgn}(Me_3)_3)$. Sur $H$, la dernière coordonnée a module au moins 1. Chacun des quatre ensembles est donc fermé dans $O_{2,1}$. La classe $(+,+)$ est connexe par arcs d’après 14.c. Prenons $D=\mathrm{diag}(-1,1,1)$ et $T=\mathrm{diag}(1,1,-1)$. Les représentants $I,D,T,DT$ ont respectivement pour signes $(+,+),(-,+),(-,-),(+,-)$. Pour chaque paire, la multiplication à gauche par une telle matrice diagonale convenablement choisie est un homéomorphisme de $(+,+)$ sur la classe en question, car elle multiplie le déterminant et la coordonnée verticale par des signes fixés. Les quatre classes sont non vides, disjointes, connexes par arcs et de réunion $O_{2,1}$.
 
 ![Figure 1 — Coupe de l’hyperboloïde par le plan x = 0. Le signe de la dernière coordonnée distingue ses deux nappes.](figures/hyperboloide-et-nappes.svg)
 

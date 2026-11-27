@@ -1,0 +1,64 @@
+{
+  "slug": "bel_bl_sociologie-oral-a-option-imitation-et-prediction_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Sociologie (oral à option) — Imitation et prédiction",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "L’imitation / Peut-on prédire en sociologie ?",
+  "questions": 0,
+  "sujets": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oraux_sociologie_option_bl.pdf#page=51",
+    "sujet_sha256": "a6cfd0e1d317596c64fdd7f85e2770ef806175c8b278483fe266bc97bed6e3d9",
+    "pages_pdf": "51",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_sociologie_option.pdf",
+    "rapport_sha256": "514cddfb2a08ef98d7d1375ef107103a12e496e5c827f26b9640024be445eb8b"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "L’imitation",
+      "fichier": "figures/ressemblance-et-influence.svg",
+      "legende": "Trois histoires compatibles avec la même ressemblance des goûts entre deux personnes."
+    },
+    {
+      "numero": 2,
+      "question": "Peut-on prédire en sociologie ?",
+      "fichier": "figures/diplomes-et-origine.svg",
+      "legende": "Diplômés de niveau bac + 3 ou plus parmi les 25–34 ans en 2021, selon l’origine sociale, en France hors Mayotte."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Deux exposés indépendants sur les deux choix du billet, avec leur conclusion, six indications et des relances distinctes dans le guidé. Comparaison visuelle à la page 51 et au rapport d’option. Vérification des résultats de Music Lab, des proportions de diplômés et du protocole du Fragile Families Challenge.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "sujets_entierement_traites": [
+      "L’imitation",
+      "Peut-on prédire en sociologie ?"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "redaction",
+      "sha256_sujet_controle": "a6cfd0e1d317596c64fdd7f85e2770ef806175c8b278483fe266bc97bed6e3d9",
+      "perimetre": "Deux exposés indépendants sur les deux choix du billet, avec leur conclusion, six indications et des relances distinctes dans le guidé. Comparaison visuelle à la page 51 et au rapport d’option. Vérification des résultats de Music Lab, des proportions de diplômés et du protocole du Fragile Families Challenge."
+    }
+  }
+}

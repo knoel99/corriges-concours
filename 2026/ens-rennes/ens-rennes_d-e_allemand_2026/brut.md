@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## I. Version française
 
 *Chiara Swenson, MDR, 19 septembre 2025.*
@@ -54,4 +56,4 @@ Ich könnte mir also vorstellen, in der Bundeswehr zu dienen. Eine uneingeschrä
 
 ![Figure 1 — Du questionnaire au service militaire](figures/lecture.svg)
 
-[Fascicule officiel, pages imprimées 1 à 3](https://www.ens-rennes.fr/medias/fichier/sujet-lve-d-e-2026_1790867583165-pdf#page=2) · [Rapport écrit de allemand](https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-allemand-e-crit-2026_1793640863622-pdf)
+[Fascicule officiel, pages imprimées 1 à 3](https://www.ens-rennes.fr/medias/fichier/sujet-lve-d-e-2026_1790867583165-pdf#page=2) · [Rapport écrit d’allemand](https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-allemand-e-crit-2026_1793640863622-pdf)

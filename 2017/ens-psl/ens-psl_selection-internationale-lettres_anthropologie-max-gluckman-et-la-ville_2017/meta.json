@@ -1,0 +1,70 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_anthropologie-max-gluckman-et-la-ville_2017",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Anthropologie — Max Gluckman et la ville",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "Anthropologie — Max Gluckman et la ville",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/anthropologie-ecrit-si17.pdf",
+    "sujet_sha256": "9f2487a7cc36a25267681c93ae2ea33dc5eab4c681afcbc1d2f22b231d9e7aff"
+  },
+  "figures": [
+    {
+      "fichier": "figures/gluckman.svg",
+      "question": "Explication",
+      "legende": "Quelles relations deviennent décisives d’une situation à l’autre ?"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "sil_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Commentaire du texte de 1960, lecture de Mitchell et protocole de mobilisation du terrain propre au candidat."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "sil_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification des consignes, des raisonnements et des légendes dans les deux éditions."
+    }
+  ],
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "Commentaire du passage et mobilisation des connaissances en anthropologie"
+    ],
+    "questions_partiellement_traitees": [
+      "Mobilisation de l’expérience personnelle de terrain"
+    ],
+    "questions_non_traitees": [],
+    "precision": "Les deux éditions expliquent la hiérarchie situationnelle et le retour, discutent la frontière et étudient la danse kalela de Mitchell. Le candidat doit ajouter une scène effectivement observée dans son propre terrain et confronter l’interprétation à ses matériaux."
+  }
+}

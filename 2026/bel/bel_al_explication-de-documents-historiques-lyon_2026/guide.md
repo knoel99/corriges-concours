@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Identifier les deux voix
 
 L’énoncé demande une explication de documents en trois heures. Lire d’abord la ponctuation de la ligne 12. Rigord parle du roi à la troisième personne, puis introduit par des guillemets l’acte du roi, dans lequel « nous » désigne Philippe. Le moine est un acteur de la mémoire du règne. Le sceau évoqué ligne 56 appartient à l’acte royal qu’il transmet. Cette distinction commande l’introduction comme la conclusion.
@@ -17,6 +19,8 @@ Une date prend ici plusieurs sens. Le 24 juin est le jour de la cérémonie à S
 ## Reconstituer la circulation des décisions
 
 ![Figure 1 — Les rythmes du gouvernement en l’absence du roi](figures/gouverner-en-absence.svg)
+
+Faire suivre à une plainte deux échelons possibles, puis relever dans l’acte les expressions de périodicité. L’existence d’un rendez-vous à Paris établit une possibilité de recours. Le récit de Rigord ne permet pas de compter les plaintes qui y ont abouti.
 
 Au brouillon, choisir deux lignes qui semblent dire des choses contraires. Le préambule parle de « tous les sujets ». La clause sur les hommes de bon témoignage précise « dans nos seigneuries ». Cette différence invite à distinguer la vocation du roi et la portée territoriale de ses moyens propres. De même, déléguer une audience à Paris laisse au roi le droit d’être informé et de punir. Chaque différence fournit le début d’un paragraphe d’analyse.
 

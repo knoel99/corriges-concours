@@ -1,0 +1,107 @@
+{
+  "slug": "x-ens_pc_physique-b_2013",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Physique B",
+    "annee": 2013
+  },
+  "intitule": "Gouttes en caléfaction",
+  "questions": 44,
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "reprise_physique_ulm",
+      "session": "reprise_physique_ulm",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": false,
+      "perimetre": "Lecture de la garde et du rapport des correcteurs reproduit par Doc-Solus. Reprise du bilan de débit, des longueurs d’échelle et des conditions initiales des trajectoires."
+    },
+    {
+      "phase": "redaction",
+      "agent": "reprise_physique_ulm",
+      "session": "reprise_physique_ulm",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Résolution des 44 questions énumérées et réalisation de 2 figures."
+    }
+  ],
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/04/13_pc_phy_b_xelc.pdf",
+    "sujet_sha256": "b94ff5d88acd5f76c67198b972aee6c5a6524ed8f6261dcf9c942606c2111e19",
+    "rapport_jury": "https://www.doc-solus.fr/prepa/sci/adc/pdf/rapports.pdf/2013/PC_PHYSIQUE_X_2_2013.rapport.pdf",
+    "rapport_sha256": "4caa356b3363585675ad62893ae01568e88c9bc9634290a52a27450eccc04a07",
+    "garde": "XELC · École polytechnique, ESPCI, ENS de Lyon et ENS de Cachan · 4 heures"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "2.o à 2.s",
+      "fichier": "figures/film.svg",
+      "legende": "Deux coupes différentes du film de vapeur. À gauche la vitesse à rayon fixé, à droite la surpression à altitude fixée."
+    },
+    {
+      "numero": 2,
+      "question": "3.j à 3.m",
+      "fichier": "figures/potentiel.svg",
+      "legende": "Potentiel effectif réduit. Le minimum et le maximum externes au centre de l’aimant correspondent aux deux rayons circulaires."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.a",
+      "1.b",
+      "1.c",
+      "1.d",
+      "1.e",
+      "1.f",
+      "1.g",
+      "2.a",
+      "2.b",
+      "2.c",
+      "2.d",
+      "2.e",
+      "2.f",
+      "2.g",
+      "2.h",
+      "2.i",
+      "2.j",
+      "2.k",
+      "2.l",
+      "2.m",
+      "2.n",
+      "2.o",
+      "2.p",
+      "2.q",
+      "2.r",
+      "2.s",
+      "2.t",
+      "2.u",
+      "2.v",
+      "2.w",
+      "2.x",
+      "3.a",
+      "3.b",
+      "3.c",
+      "3.d",
+      "3.e",
+      "3.f",
+      "3.g",
+      "3.h",
+      "3.i",
+      "3.j",
+      "3.k",
+      "3.l",
+      "3.m"
+    ]
+  }
+}

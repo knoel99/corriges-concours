@@ -8,17 +8,29 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
-**Format.** Épreuve écrite commune du concours BEL (filière B/L, sujet commun ENS Ulm – Lyon), session 2025 : durée 6 heures, coefficient 3. Une seule dissertation sur citation : Marcel Proust, *Le Temps retrouvé* (*À la Recherche du temps perdu*, Pléiade, t. IV, p. 489-490) : « L’écrivain ne dit que par une habitude prise dans le langage insincère des préfaces et des dédicaces : “mon lecteur”. En réalité, chaque lecteur est quand il lit le propre lecteur de soi-même. L’ouvrage de l’écrivain n’est qu’une espèce d’instrument optique qu’il offre au lecteur afin de lui permettre de discerner ce que sans ce livre il n’eût peut-être pas vu en soi-même. » Consigne : « En vous fondant sur des exemples précis, vous analyserez les enjeux et la pertinence d’une telle affirmation. »
+L’épreuve écrite commune aux ENS Ulm et Lyon dure six heures. Le rapport B/L indique le coefficient 3.
+
+« L’écrivain ne dit que par une habitude prise dans le langage insincère des préfaces et des dédicaces : « mon lecteur ». En réalité, chaque lecteur est quand il lit le propre lecteur de soi-même. L’ouvrage de l’écrivain n’est qu’une espèce d’instrument optique qu’il offre au lecteur afin de lui permettre de discerner ce que sans ce livre il n’eût peut-être pas vu en soi-même ».
+
+Marcel Proust, Le Temps retrouvé (1927), À la Recherche du temps perdu, Paris, Gallimard, coll. « Bibl. de la Pléiade », 1989, t. IV, p. 489-490.
+
+En vous fondant sur des exemples précis, vous analyserez les enjeux et la pertinence d’une telle affirmation.
 
 **Le sujet.** Une réflexion sur la relation triangulaire auteur–œuvre–lecteur, saisie sous un angle paradoxal : la *dénonciation* d’une illusion — l’adresse « mon lecteur » n’est qu’une convention « insincère » de préface — et la *réévaluation* de la lecture comme expérience intérieure, le livre devenant « instrument optique » qui médiatise (fait voir) et déforme (toute optique transforme). Le rapport souligne la double négation restrictive (« ne dit que », « n’est qu’une espèce ») qui oriente d’emblée la réflexion vers la limitation de la fonction de l’œuvre.
 
-**Ce que dit le rapport 2025.** Le jury rappelle que l’épreuve attend « problématisation, démonstration et illustration » (p. 9) : « une bonne maîtrise de la langue, un plan clair, une problématisation pertinente et l’usage raisonné d’exemples littéraires » sont les marques des copies valorisées, tandis que « erreurs de langue importantes, compréhension floue, indéfinition des notions clés, exemples mal exploités ou plan qui ne progresse pas » sont fortement pénalisés (p. 6). La maîtrise de la langue est « un critère discriminant » (p. 5). Aucun barème chiffré ni moyenne n’est publié.
+**Les critères du jury.** La section I du rapport examine les trois propositions de Proust et plusieurs plans. Dans la section II, le jury oppose les copies qui analysent l’instrument et savent en discuter les limites à celles qui accumulent les allusions. Les pages 6 à 9 permettent de contrôler l’introduction, les transitions, la conclusion et l’expression.
 
 **Exemple de répartition des six heures.** Lire et analyser la citation pendant 30 minutes ; consacrer 45 minutes au problème et au plan, 30 minutes aux exemples, 3 h 30 à la rédaction et 45 minutes à la relecture. Cette répartition indicative totalise 360 minutes.
 
 ![Du livre offert au lecteur de soi](figures/instrument.svg)
+
+Face à une lecture très personnelle, demander quel passage a fait apparaître ce que le lecteur reconnaît en lui. Ce retour au détail de l’œuvre permet d’éprouver le rôle exact de l’instrument décrit dans la citation.
 
 **Pourquoi le conditionnel passé importe-t-il ?** « Sans ce livre il n’eût peut-être pas vu » compare la lecture à ce qui aurait pu rester inaperçu. Le livre offre une possibilité. Le lecteur peut ne pas la saisir, la retrouver plus tard ou voir autre chose que le souvenir du narrateur. Cette variation donne un sens précis au réglage de l’instrument optique.
 
@@ -94,7 +106,7 @@ Problématique retenue : la lecture doit-elle nécessairement être le levier d�
 
 #### Solution
 
-Inventaire des références mobilisables, à mobiliser *analysées* et non en catalogue : Rousseau (*Confessions*, transparence revendiquée), Chateaubriand (*Mémoires d’outre-tombe*), Lejeune (*Le Pacte autobiographique*, « contrat de lecture »), Proust (*Contre Sainte-Beuve* : « un livre est le produit d’un autre moi que celui que nous manifestons dans nos habitudes »), Flaubert (lettre à Louise Colet : « comme Dieu dans l’univers, présent partout et visible nulle part »), Eco (*Lector in fabula*, « lecteur modèle »), Barthes (« La Mort de l’auteur »), la madeleine de la *Recherche* (« Longtemps, je me suis couché de bonne heure »), Certeau (*L’Invention du quotidien*, lecture comme « braconnage »), Montaigne (*Essais*, III, 2 : « Je ne peins pas l’être, je peins le passage »), Gautier (préface de *Mademoiselle de Maupin* : « Il n’y a de vraiment beau que ce qui ne peut servir à rien »), Valéry (« vivant sans entrailles »), Sartre (*Qu’est-ce que la littérature ?*, « pacte de générosité »), Proust (préface de *Sésame et les lys* : « notre sagesse commence où celle de l’auteur finit »), Baudelaire (« Hypocrite lecteur, mon semblable, mon frère »), Dostoïevski (*Crime et Châtiment*), Mallarmé.
+Pour tester l’adresse à un lecteur, partez du livre I des *Confessions*. Rousseau invite ses semblables à l’entendre, puis les engage à dévoiler leur propre cœur. Le regard change donc d’objet. Pour éprouver le verbe « discerner », relevez dans « Combray » le moment où le narrateur pose la tasse. La sensation seule lui laisse ignorer ce qu’il cherche. Dans « Au lecteur », observez enfin à quelle place arrive le « tu » derrière le « nous ». Chaque exemple fait ainsi porter la discussion sur une opération distincte du lecteur.
 
 > [!PIEGE]
 > Pas de catalogue de références (« cases à cocher ») : chaque exemple doit être analysé et relié à la problématique.
@@ -114,7 +126,7 @@ Inventaire des références mobilisables, à mobiliser *analysées* et non en ca
 
 #### Solution
 
-Plan proposé (un plan possible parmi d’autres — le jury « n’attendait pas un type de plan spécifique », p. 3) : **I.** L’œuvre semble parler de son auteur à un lecteur, mais cette communication se dérobe (Rousseau, Chateaubriand, Lejeune, Proust, Flaubert, Eco). **II.** Le renversement proustien : lire, c’est se lire (Barthes, la madeleine, Certeau, Montaigne). **III.** Au-delà du retour à soi : ce que l’instrument fait voir d’autre que soi (Gautier et le beau gratuit, Valéry, Sartre et l’engagement, Proust sur Ruskin, Baudelaire). Logique du plan : de l’illusion dénoncée au renversement affirmé, puis au dépassement qui interroge la « pertinence » de la restriction instrumentale.
+Le premier mouvement éprouve l’autorité de l’adresse aux lecteurs à partir de la convocation de Rousseau. Le deuxième étudie la part de l’attention et de la mémoire dans le discernement qu’envisage Proust. Le troisième suit les effets d’une lecture qui oblige aussi à découvrir une forme ou à juger un autre que soi. Le rapport accepte plusieurs plans, pourvu que le passage d’un moment à l’autre fasse avancer la discussion.
 
 > [!METHODE]
 > Un plan possible n’est pas un plan imposé : le rapport précise que « le jury n’attendait pas un type de plan spécifique » (p. 3) — ce qui compte est la rigueur du traitement de tous les aspects du sujet.
@@ -152,19 +164,21 @@ L’introduction rédigée ci-dessous (étape 7) suit les temps attendus : amorc
 
 #### Solution
 
-Le devoir complet est rédigé ci-dessous. Comme dans une copie, il ne porte ni titres ni numéros ; les astérisques marquent seulement les lignes que l’on saute entre l’introduction, les parties et la conclusion.
+Les intertitres de la dissertation servent de repères pour la relecture. Dans la copie, la progression passe par les transitions.
+
+### Introduction
 
 **Problématique** : la lecture doit-elle nécessairement être le levier d’une introspection du lecteur, ou l’œuvre excède-t-elle ce retour à soi en ouvrant au monde, à l’autre et à une beauté qui ne sert à rien ?
 
 L’auteur d’une préface peut appeler son destinataire « mon lecteur » avant de savoir si le livre rencontrera quelqu’un. Le possessif traite comme acquise une relation qui dépend pourtant d’un acte futur et libre. Dans *Le Temps retrouvé*, le narrateur met en cause cette désignation : « L’écrivain ne dit que par une habitude prise dans le langage insincère des préfaces et des dédicaces : “mon lecteur”. En réalité, chaque lecteur est quand il lit le propre lecteur de soi-même. L’ouvrage de l’écrivain n’est qu’une espèce d’instrument optique qu’il offre au lecteur afin de lui permettre de discerner ce que sans ce livre il n’eût peut-être pas vu en soi-même. » La comparaison conserve une relation entre l’auteur et autrui, celle du don d’un instrument, alors même qu’elle retire à l’auteur la possession imaginaire de son destinataire.
 
-La phrase se construit sur deux restrictions — « ne dit que », « n'est qu'une espèce » — qui réduisent et déplacent. La première proposition démasque une habitude : l'adresse « mon lecteur », familière des préfaces et des dédicaces, n'est qu'une convention « insincère ». Le mot ne porte pas d'accusation morale : il désigne la distance irréductible entre celui qui écrit et celui qui lira, distance qui fait du destinataire une fiction. La deuxième proposition, introduite par « en réalité », opère le renversement : le véritable objet de la lecture n'est pas autrui mais le lecteur lui-même, qui, lisant, devient « le propre lecteur de soi-même ». La troisième enfin déploie la métaphore de l'« instrument optique » — lunette, microscope, lorgnette : comme tout appareil d'observation, il ne livre pas une image brute mais une perception *ajustée*, à la fois révélée et altérée par le détour.
+La phrase se construit sur deux restrictions — « ne dit que », « n'est qu'une espèce » — qui réduisent et déplacent. La première proposition démasque une habitude : l'adresse « mon lecteur », familière des préfaces et des dédicaces, n'est qu'une convention « insincère ». Le mot critique une convention qui transforme une relation souhaitée en possession acquise. Il désigne la distance irréductible entre celui qui écrit et celui qui lira, distance qui fait du destinataire une fiction. La deuxième proposition, introduite par « en réalité », opère le renversement : le véritable objet de la lecture n'est pas autrui mais le lecteur lui-même, qui, lisant, devient « le propre lecteur de soi-même ». La troisième enfin déploie la métaphore de l'« instrument optique » — lunette, microscope, lorgnette : comme tout appareil d'observation, il ne livre pas une image brute mais une perception *ajustée*, à la fois révélée et altérée par le détour.
 
 Une tension traverse donc l'affirmation. D'un côté, elle congédie l'idée que l'œuvre communiquerait un auteur à son lecteur ; de l'autre, elle fait du livre le moyen d'une connaissance de soi. Mais cette promesse même inquiète : si l'ouvrage « n'est qu'une espèce d'instrument », s'il ne vaut que par ce qu'il fait voir *en soi*, que reste-t-il de la part du monde, de l'auteur, de l'altérité du texte ? La lecture doit-elle nécessairement être le levier d'une introspection, et l'expérience littéraire se laisse-t-elle réduire à un retour du lecteur sur lui-même ?
 
 On montrera d’abord que l’œuvre semble parler de son auteur et à son lecteur, mais que cette communication se dérobe et justifie la défiance proustienne. On verra ensuite comment Proust fait de la lecture une herméneutique de soi. On se demandera enfin si l'instrument optique ne fait pas voir bien davantage que soi : le monde, l'autre, et une beauté qui n'est au service de personne.
 
-* * *
+### I. À qui s’adresse le livre ?
 
 On croit spontanément que lire, c'est recevoir une parole : l'auteur se confie, le lecteur l'écoute. L'adresse « mon lecteur » scelle ce pacte de confidence. C'est précisément cette évidence que Proust tient pour « insincère ».
 
@@ -176,13 +190,13 @@ C'est pourquoi l'auteur lui-même se retire de son œuvre à mesure qu'il la cro
 
 Ainsi, la première proposition de Proust se vérifie : l'« insincérité » n'est pas une faute mais un constat de distance. L'œuvre ne met pas en contact deux présences. Reste alors à comprendre ce qui se joue vraiment dans la lecture, dès lors que l'auteur s'en est retiré. C'est le renversement qu'opère la deuxième proposition.
 
-* * *
+### II. Apprendre à discerner
 
 Si l'auteur n'est plus au rendez-vous, la lecture n'est pas pour autant vide : elle change de destinataire. « En réalité, chaque lecteur est quand il lit le propre lecteur de soi-même. » Le livre cesse d'être un message pour devenir un instrument de connaissance.
 
 Que l'auteur se dépossède de son œuvre, c'est la condition de ce transfert. Roland Barthes, dans son essai « La Mort de l'auteur », tire les conséquences du geste flaubertien : une fois écrit, le texte n'appartient plus à celui qui l'a produit ; « la naissance du lecteur doit se payer de la mort de l'Auteur ». Le lieu où l'œuvre existe n'est pas la conscience de l'écrivain, mais l'acte de lecture, où le sens se tient et se rejoue. Le lecteur n'est donc pas le disciple d'un maître qui lui délivrerait une vérité : il est celui qui, par le texte, *s'interprète*. L'« instrument optique » ne projette pas une image venue du dehors ; il ajuste le regard que le lecteur porte sur lui-même, et fait affleurer, selon les mots de Proust, « ce que sans ce livre il n'eût peut-être pas vu en soi-même ».
 
-Le goût de la madeleine ne livre pas aussitôt son origine. Dans « Combray », le narrateur goûte le gâteau trempé dans le thé, éprouve un plaisir dont il ignore la cause et essaie en vain de le répéter à volonté. La réminiscence rattache ensuite cette sensation au morceau de madeleine que sa tante Léonie lui offrait jadis. L’incipit sur les couchers précède cet épisode : les deux moments ne disent pas la même chose du temps. La comparaison avec le livre tient ici au travail de discernement. Un lecteur peut reconnaître, grâce à l’intervalle entre la sensation et son élucidation, une expérience dont il croyait ne rien savoir. Rien ne l’oblige à évoquer le même lieu ni le même objet que le narrateur. Ce « peut-être » maintient ouverte la possibilité que l’instrument demeure sans effet ou qu’il révèle autre chose à une seconde lecture.
+Dans « Combray », le narrateur éprouve un plaisir dont la cause lui échappe. Une nouvelle gorgée reproduit de moins en moins vivement la sensation recherchée. « Je pose la tasse et me tourne vers mon esprit », écrit-il, avant que le goût soit reconnu comme celui du morceau offert par tante Léonie. Un même objet extérieur suscite ainsi deux opérations de l’attention, boire à nouveau et chercher en soi. Pour le lecteur du roman, la scène peut rendre sensible une différence dont il n’avait pas le nom, celle qui sépare éprouver et reconnaître. Il peut la comprendre sans avoir jamais mangé de madeleine. Le « peut-être » du sujet laisse à chacun la latitude d’éprouver l’instrument ou de s’arrêter devant lui.
 
 Cette conception confère au lecteur une activité insoupçonnée. Michel de Certeau, dans *L'Invention du quotidien*, décrit la lecture comme un « braconnage » : le lecteur ne reçoit pas passivement le texte, il y circule, y prélève, se l'approprie, « invente dans les textes autre chose que ce qui en était l'intention ». Loin d'être, comme le craignaient certaines copies, un état d'inertie, la lecture est un travail d'élucidation et de refiguration : l'œuvre, produit d'une subjectivité, devient le miroir actif d'une autre subjectivité. Ce que Proust nomme « discerner », c'est ce travail — un ajustement optique qui demande l'effort du lecteur.
 
@@ -190,23 +204,23 @@ L’instrument optique pose une autre difficulté. Une lunette peut révéler un
 
 Mais c'est ici que la pensée proustienne montre sa limite. En faisant du livre un « instrument » et de la lecture un retour à soi, ne risque-t-elle pas d'enfermer l'expérience littéraire dans un cercle narcissique ? La restriction — « n'est qu'une espèce d'instrument optique » — pourrait réduire l'œuvre à un simple outil de développement personnel.
 
-* * *
+### III. Ce que la lecture nous fait découvrir d’autrui
 
 La force de Proust est d'avoir arraché la lecture à la passivité ; sa fragilité est de l'avoir peut-être trop rapportée au seul sujet lisant. Il faut donc demander si l'œuvre ne fait pas voir infiniment plus que soi.
 
-D'abord, une tradition esthétique conteste que la beauté soit un *instrument*. Les Parnassiens et Gautier revendiquent la gratuité de l'art : « Il n'y a de vraiment beau que ce qui ne peut servir à rien ; tout ce qui est utile est laid », écrit-il dans la préface de *Mademoiselle de Maupin*. L'instrument est, par définition, subordonné à une fin ; or l'œuvre d'art, pour cette tradition, ne sert à rien et vaut par elle-même. Lire un poème de Mallarmé, dont la syntaxe retorse résiste à toute « utilité », ce n'est pas se connaître : c'est éprouver une forme pour elle-même, admirer un objet verbal qui ne renvoie qu'à sa propre nécessité. Le beau n'est pas une lunette braquée sur le moi ; il peut être une présence qui se suffit.
+D'abord, une tradition esthétique conteste que la beauté soit un *instrument*. Gautier revendique la gratuité de l'art : « Il n'y a de vraiment beau que ce qui ne peut servir à rien ; tout ce qui est utile est laid », écrit-il dans la préface de *Mademoiselle de Maupin*. L'instrument est, par définition, subordonné à une fin ; or l'œuvre d'art, pour cette tradition, ne sert à rien et vaut par elle-même. Lire un poème de Mallarmé, dont la syntaxe retorse résiste à toute « utilité », ce n'est pas se connaître : c'est éprouver une forme pour elle-même, admirer un objet verbal qui ne renvoie qu'à sa propre nécessité. Le beau n'est pas une lunette braquée sur le moi ; il peut être une présence qui se suffit.
 
-Ensuite, loin de ramener à soi, l'œuvre peut nous en arracher. Paul Valéry l'a dit du personnage romanesque, ce « vivant sans entrailles » qui n'existe que de mots et pourtant nous requiert : lire, c'est consentir à prêter sa pensée à une conscience qui n'est pas la nôtre. Le lecteur de *Crime et Châtiment* n'y « discerne » pas d'abord lui-même : il épouse l'angoisse d'un meurtrier qui lui est radicalement étranger, et c'est de cette étrangeté qu'il revient changé. Sartre, dans *Qu'est-ce que la littérature ?*, nomme ce pouvoir : la lecture est un « pacte de générosité » qui me fait sortir de ma subjectivité pour me rendre responsable d'un monde. L'œuvre engagée ne renvoie pas le lecteur à son intériorité ; elle l'ouvre à l'Histoire et à autrui. Art pour l'art et littérature engagée, qui s'opposent en tout, s'accordent du moins sur un point : la littérature ne saurait être un simple miroir du moi.
+Baudelaire place lui aussi son destinataire dans le livre. Dans « Au lecteur », le « nous » de la première strophe semble permettre à chacun de rester anonyme au sein d’une humanité partagée. Le dernier vers fait soudain place à l’apostrophe au singulier. Qui vient de lire l’inventaire des vices en y reconnaissant les autres se trouve expressément appelé à rendre compte de sa propre lecture. Le mot « semblable » maintient en outre le poète dans le cercle du jugement. La découverte intime a donc besoin d’un autre, capable de m’adresser la parole et de se compromettre avec moi dans ce qu’il m’apprend.
 
 C'est peut-être qu'il faut relire la métaphore proustienne elle-même contre la tentation narcissique qu'elle paraît porter. Proust écrit que le livre fait voir « ce que sans ce livre il n'eût peut-être pas vu en soi-même » : or ce « soi-même » n'est pas un fonds déjà constitué que la lecture viendrait exhumer. Il est un soi *élargi*, décentré, qui s'est augmenté de tout ce que le détour par l'autre lui a appris. Dans sa préface au *Sésame et les lys* de Ruskin — ce bref essai sur « la lecture » —, Proust le dit avec netteté : l'écrivain ne peut que susciter en nous un désir ; « notre sagesse commence où celle de l’auteur finit ». Le livre n'est donc pas un terminus où le lecteur se rejoint : c'est un seuil à partir duquel il se dépasse. Lire l'autre, c'est moins se retrouver que se transformer. L'instrument optique ne nous rend pas à nous-mêmes : il élargit l'angle de notre regard jusqu'à y faire entrer ce que nous n'étions pas.
 
 Ainsi la restriction proustienne, prise au mot, se dément par son propre mouvement. Si l'œuvre « n'est qu'un instrument », cet instrument excède pourtant le lecteur qui s'en sert : il lui ouvre un monde, une forme, une conscience autres, sans lesquels le « soi » qu'il croit retrouver n'existerait même pas.
 
-* * *
+### Conclusion
 
 La formule de Proust tire sa puissance d'un double geste. En dénonçant l'adresse « insincère » des préfaces, elle démasque l'illusion d'une communication directe entre l'auteur et son lecteur : l'écrivain se retire de son œuvre, et nul « mon lecteur » ne comble la distance qui les sépare. Mais en faisant du livre un « instrument optique », elle refonde la lecture comme expérience intérieure : lire, c'est se lire, discerner en soi ce que le texte, par son détour, rend enfin visible. L'affirmation est pertinente en ceci qu'elle rend au lecteur son activité et à la lecture sa fécondité herméneutique.
 
-Sa limite tient à la restriction même qui la porte : l'œuvre y risque d'être réduite à un miroir du moi. Or l'instrument optique fait voir bien plus que soi — une forme gratuite, un monde, une conscience étrangère. C'est pourquoi la lecture est peut-être moins un retour qu'un décentrement : en lisant l'autre, le sujet se transforme plus qu'il ne se retrouve. On songe alors à l'adresse de Baudelaire — « Hypocrite lecteur, mon semblable, mon frère » : là où Proust fait du lecteur le lecteur de lui-même, Baudelaire lui tend un miroir où il reconnaît, non son visage, mais celui de tous. Entre l'autoscopie proustienne et la fraternité baudelairienne, la lecture demeure ce rare instrument qui nous fait voir, dans le même mouvement, le plus intime de nous-mêmes et le plus lointain d'autrui.
+Sa limite tient à la restriction même qui la porte : l'œuvre y risque d'être réduite à un miroir du moi. Or l'instrument optique fait voir bien plus que soi — une forme gratuite, un monde, une conscience étrangère. C'est pourquoi la lecture est peut-être moins un retour qu'un décentrement : en lisant l'autre, le sujet se transforme plus qu'il ne se retrouve. L’apostrophe finale du poème de Baudelaire en offre l’épreuve. Pour que je reconnaisse ma part du portrait commun, il faut que l’autre m’appelle et m’y désigne. Entre l'autoscopie proustienne et la fraternité baudelairienne, la lecture demeure ce rare instrument qui nous fait voir, dans le même mouvement, le plus intime de nous-mêmes et le plus lointain d'autrui.
 
 > [!PIEGE]
 > Superposer des exemples ne démontre pas : chaque exemple doit être soigneusement analysé et relié au raisonnement général.
@@ -226,6 +240,6 @@ Sa limite tient à la restriction même qui la porte : l'œuvre y risque d'être
 
 **Construire.** Un plan en deux ou trois parties dont chaque partie fait progresser la réponse ; des exemples précis, nommés (auteur + titre), analysés et reliés à la thèse — jamais un catalogue de références.
 
-**Rédiger.** Introduction calibrée (amorce, citation intégrale, analyse, problématique, annonce fluide) ; développement avec introductions et conclusions de partie et transitions ; conclusion en deux temps (bilan répondant à la problématique, ouverture affirmative sans nouveau développement). Soigner la langue (présent de l’indicatif, accords), les titres en italiques, et relire.
+**Rédiger.** Une introduction situe la citation, en donne le texte, en analyse la tension et annonce la progression ; développement avec introductions et conclusions de partie et transitions ; conclusion en deux temps (bilan répondant à la problématique, ouverture affirmative sans nouveau développement). Soigner la langue (présent de l’indicatif, accords), les titres en italiques, et relire.
 
 [Sujet officiel](https://www.ens.psl.eu/sites/default/files/2025_blses_sujet_composition_francaise.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_ecrit_francais.pdf)

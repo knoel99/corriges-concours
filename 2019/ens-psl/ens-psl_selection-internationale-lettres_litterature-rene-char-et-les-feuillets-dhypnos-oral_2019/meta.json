@@ -1,0 +1,38 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_litterature-rene-char-et-les-feuillets-dhypnos-oral_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Littérature — René Char et les Feuillets d’Hypnos (oral)",
+    "annee": 2019,
+    "modalite": "oral"
+  },
+  "intitule": "Littérature — René Char et les Feuillets d’Hypnos (oral)",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/litterature-oral-sil2019-2.pdf",
+    "sha256_sujet": "b3e00196393e63b73e1fd7ad95b8b7c143cc858177f9eaaf879a7134a215a813",
+    "reperage": "Commenter le passage des Feuillets d’Hypnos."
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Commentaire",
+      "legende": "Trois manières de demeurer présent"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet original. Commentaire intégral, analyse de la progression et de la forme, préparation guidée de l’entretien, réponses argumentées et schéma de lecture."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "ens-rennes_d1_russe_2005",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Russe",
+    "annee": 2005,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/2005-sujets-d1_1423060647728-pdf#page=11",
+    "sha256_sujet": "6e722c986780682109dc35cd612f69dd9f54c1674c5c472c52b1da9d33b0e220",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "publication": "Nina Geïde (Нина Гейдэ), « Наука — интернациональна », Эмигрантъ, février 2005 ; entretien avec Dmitri Diakonov",
+    "page": 11
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en russe"
+    ],
+    "precision": "Traduction française de l’intégralité du passage délimité et réponse en russe."
+  },
+  "longueur_expression": {
+    "mots": 100,
+    "regle": "Présenter en russe, en 100 mots, le phénomène de la « fuite des cerveaux » russes et discuter la possibilité de l’arrêter."
+  },
+  "figures": [
+    {
+      "fichier": "figures/chercheur.svg",
+      "legende": "Trois lieux dans l’entretien de Diakonov"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Traduction française de l’intégralité du passage délimité et réponse en russe. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

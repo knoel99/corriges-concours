@@ -42,5 +42,55 @@
       "modifications": true,
       "perimetre": "Rédaction des quatorze questions avec lecture du PDF original et des objets bitmap des figures 2 et 3. Tests sur 256 images et reproduction à l’identique des 28 860 pixels visibles de M et 115 440 pixels de N à partir des données du sujet. Le motif imprimé est 8 × 8 et peut être répété pour obtenir le 16 × 16 annoncé. Trois illustrations originales."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
+    "pages_des_questions": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 3,
+      "6": 3,
+      "7": 3,
+      "8": 3,
+      "9": 3,
+      "10": 4,
+      "11": 5,
+      "12": 5,
+      "13": 5,
+      "14": 5
+    },
+    "precision": "Les 14 rubriques de chaque édition concordent avec les questions du fac-similé. Les deux séries de réponses ont été retrouvées au commit du journal indiqué.",
+    "origine_attestation": {
+      "commit_du_journal": "ef7db816d1580e414fdfa0102c8ca27f506aef85",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction des quatorze questions avec lecture du PDF original et des objets bitmap des figures 2 et 3. Tests sur 256 images et reproduction à l’identique des 28 860 pixels visibles de M et 115 440 pixels de N à partir des données du sujet. Le motif imprimé est 8 × 8 et peut être répété pour obtenir le 16 × 16 annoncé. Trois illustrations originales.",
+      "sha256_sujet_controle": "683a2be083bcd58f6f7a58e98e0aa1591d91083e9bb344524dd743fbf61f9c64"
+    },
+    "controle_fonctions": {
+      "fonctions": [
+        "inverser",
+        "flipH"
+      ],
+      "cas_par_edition": 127
+    }
+  }
 }

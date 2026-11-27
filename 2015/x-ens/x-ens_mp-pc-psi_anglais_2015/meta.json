@@ -1,0 +1,71 @@
+{
+  "slug": "x-ens_mp-pc-psi_anglais_2015",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Anglais",
+    "annee": 2015,
+    "modalite": "écrit"
+  },
+  "intitule": "Cultures génétiquement modifiées en Grande-Bretagne et valeur d’une alerte associative",
+  "questions": 2,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  },
+  "mots_hors_titre": {
+    "A": 608,
+    "B": 523
+  },
+  "sources": {
+    "code_garde": "XEULCR",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2015/%20",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/09/15_mp-pc_sujet_anglais_xeulcr.pdf",
+    "sujet_sha256": "314dfcfd786133b3fc2d0b9437fec769326fba5b03d8e1542cb3be82747a0ecb",
+    "sujet_autre_publication": "https://www.ens.psl.eu/IMG/file/concours/2015/PC/sujets/sujet_mppc_ang2015.pdf",
+    "sujet_autre_publication_sha256": "9f18ad151010f6f9e863823bc2d8dc66b0721306eef10c5187cd32d5fee3fa71",
+    "precision": "Le sujet est conservé par la banque et l’ENS. Le rapport de cet écrit n’a pas été retrouvé dans les sources consultées."
+  },
+  "redaction": "Deux compositions intégrales en anglais, lecture croisée des quatre pièces du dossier de synthèse et réponse argumentée au document d’opinion. Cultures génétiquement modifiées en Grande-Bretagne et valeur d’une alerte associative.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/decision.svg",
+      "legende": "Ce que chaque étape permet de conclure."
+    },
+    {
+      "numero": 2,
+      "question": "A",
+      "fichier": "figures/sondage.svg",
+      "legende": "Réponses britanniques de février 2014, dans le second graphique de YouGov."
+    },
+    {
+      "numero": 3,
+      "question": "B",
+      "fichier": "figures/alerte.svg",
+      "legende": "Une observation motive une enquête. Les conclusions sanitaires exigent des preuves supplémentaires."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "anglais_mp_pc_psi_2015_2021",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Deux compositions intégrales en anglais, lecture croisée des quatre pièces du dossier de synthèse et réponse argumentée au document d’opinion. Cultures génétiquement modifiées en Grande-Bretagne et valeur d’une alerte associative.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}

@@ -31,7 +31,7 @@
       "legende": "De l’institution au critère économique"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -56,6 +56,54 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Lecture visuelle de la page R 26-330 et confrontation à la question du PDF et vérification des périmètres Union européenne et zone euro, du mécanisme de Viner et des articles 101, 102 et 107 du TFUE."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification du libellé de composition et de la partie sur Viner. Détournement de commerce illustré à coût, droit et quantité donnés ; rapprochement du gain privé et de la perte de recette douanière."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "La composition officielle de quatre heures tient sur une page et ne comporte pas d’annexe. Les deux copies étudient les principes de l’échange et de la concurrence, les corrections des externalités et les conditions d’une zone monétaire commune. La distinction entre intérêt privé et coût social est vérifiée sur l’exemple de détournement de commerce.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dans quelle mesure l’environnement économique construit au sein de l’Union européenne se conforme-t-il aux grands principes de l’analyse économique ?"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "verification": "La composition officielle de quatre heures tient sur une page et ne comporte pas d’annexe. Les deux copies étudient les principes de l’échange et de la concurrence, les corrections des externalités et les conditions d’une zone monétaire commune. La distinction entre intérêt privé et coût social est vérifiée sur l’exemple de détournement de commerce.",
+    "limites": "Une dissertation, sans annexe, sur le feuillet officiel d’une page.",
+    "pieces_controlees": [
+      {
+        "role": "sujet",
+        "pages": 1,
+        "sha256_apercu": "2cf9743cce0c9ee662732c6770b1d9d1781229ca12662555139d2a181599aa6f",
+        "sha256_original": "d012cd551832bee13e5a8ea5c988abe6798429aff199f502f69f8b07958fc03c"
+      }
+    ]
+  }
 }

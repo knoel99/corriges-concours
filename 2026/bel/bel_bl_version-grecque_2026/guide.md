@@ -8,9 +8,11 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Faire profil bas
 
-Le jury intitule cette version « Faire profil bas » et identifie les vers 304–324 du *Prométhée enchaîné* du Pseudo-Eschyle. Le fascicule d’épreuve demeure indisponible au lien donné par l’ENS. Le passage est reconstitué à partir des citations grecques et du vocabulaire du rapport. Il va de δέρκου θέαμα à τραχὺς μόναρχος οὐδ’ ὑπεύθυνος κρατεῖ, soit les vers 306–326 dans l’édition de Herbert Weir Smyth (1922). Cette différence de numérotation conserve les vingt et un vers, y compris l’image finale de l’aiguillon.
+Le rapport officiel intitule la version « Faire profil bas » et situe l’extrait aux vers 304–324 du *Prométhée enchaîné* du Pseudo-Eschyle. Il cite la condition prononcée par Océan, le potentiel de la réponse et plusieurs mots du passage. Ces indices concordent avec les vers 306–326 de l’édition de Herbert Weir Smyth (1922), de δέρκου θέαμα à τραχὺς μόναρχος οὐδ’ ὑπεύθυνος κρατεῖ. **Couverture partielle.** La traduction suit les vingt et un vers de Smyth. Le fascicule distribué manque pour confirmer ses bornes mot à mot, ses leçons et la teneur exacte des notes données aux candidats.
 
 ## Du spectacle à la mise en garde
 
@@ -24,6 +26,8 @@ La première personne de κάμπτομαι ramène au locuteur. Le groupe ὑπ
 ## Distinguer les trois moments de la menace
 
 ![Le conseil d’Océan dépend d’une menace éventuelle](figures/menace-ocean.svg)
+
+Dans les vers repérés à partir du rapport, distinguer la condition de son effet possible, puis demander à quel personnage les peines actuelles paraîtraient un jeu. Ce point de vue commande le choix du pronom français.
 
 > [!INDICATION]
 > Aux vers 311–314 dans la numérotation du jury, demander successivement qui parle, qui risque d’entendre et à qui les peines actuelles paraîtront légères.

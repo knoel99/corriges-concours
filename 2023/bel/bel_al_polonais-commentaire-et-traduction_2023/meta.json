@@ -1,0 +1,152 @@
+{
+  "slug": "bel_al_polonais-commentaire-et-traduction_2023",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Polonais (commentaire et traduction)",
+    "annee": 2023,
+    "modalite": "écrit commun"
+  },
+  "questions": 2,
+  "duree_heures": 6,
+  "redaction": "Corrigé original rédigé par IA, non officiel.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2023-09/Commentaire-d-un-texte-en-LVE.pdf#page=18",
+    "sujet_sha256": "465bc18f65e3127c7bcf5720f6042d95180133384f245e34fd7b38acd0ffb760",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2023-11/Polonais-2023.pdf#page=2",
+    "rapport_jury_sha256": "c10459e1e8fe4d615b9d6f8a298838ea412fddb4eb6ce3433f6eac2a79b12663",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2023",
+    "ouvrage": "Jakub Małecki, *Horyzont* (2019).",
+    "ecoles": "ENS de Lyon / ENS (Paris)"
+  },
+  "figures": [
+    {
+      "question": "Commentaire",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "Le passé entrevu à la caisse devient lisible au dernier échange de comptes. Le lecteur revoit alors les gestes de sollicitude de Maniek."
+    }
+  ],
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2023-09/Commentaire-d-un-texte-en-LVE.pdf#page=18",
+      "sha256": "465bc18f65e3127c7bcf5720f6042d95180133384f245e34fd7b38acd0ffb760",
+      "pages": 24,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "2d00da9d0f1f2cdf2b38a83f2d4c6e4c708adc481caee234bd08becf5b5b22e7"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "07bf7c7ea1e09c9e01b35c439fb384e78325e16ca6969efdf51845f93bfb66ff"
+        },
+        {
+          "numero": 18,
+          "rendu_sha256": "c2fb1e8af0a3476c9c4209f58ffa6bc2fe54d867f3d6006eb176dab3b68cd51c"
+        },
+        {
+          "numero": 19,
+          "rendu_sha256": "1093c45a804d9d290424746863921932623a1808f0efd608d8f094d29d61d6c2"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2023-11/Polonais-2023.pdf#page=2",
+      "sha256": "c10459e1e8fe4d615b9d6f8a298838ea412fddb4eb6ce3433f6eac2a79b12663",
+      "pages": 7,
+      "pages_verifiees": [
+        {
+          "numero": 2,
+          "rendu_sha256": "fd22315ec9bbfa0baab05700693b13ec52ba0b89555362b7b860760e030fd946"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "5f5a0902c285d00304f4bdaa106e2a3cf0bf21df0c55186ca637ce0cd6b9e1f3"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "c8110caefa9b03066105c4ab56623360c83853653e0e3b87c20e6bee38e0f4fc"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "ffaeb6c1211df30963fff1f573157da81d1a05557d6246fa61f74bab28b4d678"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "bb3bd68494b5994ee8dd7f77bc0830fb3c827ad48b24d5290eebb92364e9bec4"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "b8ac8a1c16c0c590c9a4543dc9450b19142975ca81c5ea56ebabafec4486660f"
+        }
+      ]
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire composé en polonais sur les deux feuillets, version française originale dans les limites de la consigne, guide de lecture et schéma."
+    },
+    {
+      "phase": "revision",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Vérification des 78 lignes, du statut hypothétique de la destination, des amandes, des deux décomptes et du génitif przeszłości et de sa valeur temporelle. Version bornée avant le code à quatre chiffres."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire",
+      "Version"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Commentaire",
+        "page_pdf": 18,
+        "pages_pdf": [
+          18,
+          19
+        ],
+        "ligne_debut": 1,
+        "ligne_fin": 78
+      },
+      {
+        "question": "Version",
+        "page_pdf": 18,
+        "pages_pdf": [
+          18
+        ],
+        "ligne_debut": 26,
+        "ligne_fin": 39,
+        "debut": "Wsuwam telefon",
+        "fin": "I w innych sytuacjach też."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

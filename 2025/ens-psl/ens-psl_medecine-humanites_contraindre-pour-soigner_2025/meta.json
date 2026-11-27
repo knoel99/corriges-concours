@@ -1,0 +1,68 @@
+{
+  "slug": "ens-psl_medecine-humanites_contraindre-pour-soigner_2025",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Médecine-Humanités",
+    "matiere": "Contraindre pour soigner ?",
+    "annee": 2025,
+    "modalite": "écrit"
+  },
+  "intitule": "Contraindre pour soigner ?",
+  "questions": 1,
+  "redaction": "Commentaire rédigé en lecture croisée sur « Contraindre pour soigner ? », guide d’analyse de chaque document, composition développée et schéma.",
+  "sources": {
+    "sujet": "https://medecine-humanites.ens.fr/wp-content/uploads/2025/07/sujet-Ecrit-Contraindre-pour-soigner-1.pdf",
+    "index": "https://medecine-humanites.ens.psl.eu/sujets-et-rapports-du-concours-2018/",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://medecine-humanites.ens.fr/wp-content/uploads/2025/07/sujet-Ecrit-Contraindre-pour-soigner-1.pdf",
+        "fac_simile": "https://web.archive.org/web/20250814104510id_/https://medecine-humanites.ens.fr/wp-content/uploads/2025/07/sujet-Ecrit-Contraindre-pour-soigner-1.pdf",
+        "sha256": "490a0d1e3b4e9cae2246014eac4d58f0564524deb5e87a3062bd455d83364f73",
+        "nature": "PDF",
+        "pages": 2
+      },
+      {
+        "role": "rapport",
+        "url": "https://medecine-humanites.ens.fr/wp-content/uploads/2025/07/CR-jury-2025_final.pdf",
+        "fac_simile": "https://web.archive.org/web/20250814115007id_/https://medecine-humanites.ens.fr/wp-content/uploads/2025/07/CR-jury-2025_final.pdf",
+        "sha256": "166ac80ca4deca8938628d5a50cc1daf193ead6ccd9eead669683ba3ddc5dd6e",
+        "nature": "PDF",
+        "pages": 4
+      }
+    ]
+  },
+  "documents_commentes": [
+    "Document 1, p. 1 · Jean-Étienne Esquirol, *Des maladies mentales*, 1838, p. 661–662. Suivre le passage du souvenir personnel au langage impersonnel de l’autorité médicale.",
+    "Document 2, p. 1–2 · André Comte-Sponville répond à Laure Lugon Zugravu dans *Le Temps*, le 17 avril 2020. Les relances de la journaliste font apparaître la tension entre liberté, survie et conséquences pour autrui.",
+    "Document 3, p. 2 · Joseph Beuys, *Infiltration homogène pour piano à queue*, 1966. Le sujet reproduit une photographie et rapporte une légende sur l’origine du feutre dans l’œuvre de l’artiste."
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Commentaire",
+      "fichier": "figures/lecture-croisee.svg",
+      "legende": "Trois questions pour examiner la justification d’une contrainte"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "reprise_medecine_humanites",
+      "session": "reprise_medecine_humanites",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Commentaire rédigé en lecture croisée sur « Contraindre pour soigner ? », guide d’analyse de chaque document, composition développée et schéma."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire de documents"
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "slug": "bel_bl_sociologie-oral-option-20-juin-billet-2_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Sociologie (oral option) — 20 juin billet 2",
+    "annee": 2024,
+    "modalite": "oral"
+  },
+  "intitule": "Sports, sportifs et sportives / « De manière évidente dans certains cas, mais probable dans tous les autres, ce ne sont pas tant les individus qui circulent entre les catégories que celles-ci qui bougent ou tremblent autour de ceux-là. » (Dominique Merllié, « Les classements professionnels dans les enquêtes de mobilité », Annales, 1990)",
+  "questions": 0,
+  "sujets": 2,
+  "tirages": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/bl_sujets_oraux_sociologie_opt_2_20062024.pdf",
+    "sujet_sha256": "487bcbe4e69a7a71ee3b2e52b439fc36a6fef519b7ba840b0f0503125555966f",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_oral_sociologie_option.pdf",
+    "rapport_sha256": "2ca9c5d2c465aa9c88e2ae0e72a7850567adcdbfbddf7539727161ed44e6ca42",
+    "pages_sujet": "p. 1"
+  },
+  "figures": [
+    {
+      "fichier": "figures/observations.svg",
+      "question": "Sports, sportifs et sportives",
+      "legende": "B change de catégorie parce que la règle de codage a changé. Aucun des quatre individus ne change ici de métier."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "bel_bl_sociologie-oral-option-20-juin-billet-2_2024",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Rédaction des deux sujets effectivement associés sur le billet, de quatre réponses de relance et de la figure « Deux classements des mêmes quatre emplois fictifs »."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "bel_bl_sociologie-oral-option-20-juin-billet-2_2024",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": false,
+      "perimetre": "Lecture des deux libellés sur le feuillet original, de la consigne de choix et de la durée dans le rapport. Contrôle des exemples et des deux plans."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Sports, sportifs et sportives",
+      "« De manière évidente dans certains cas, mais probable dans tous les autres, ce ne sont pas tant les individus qui circulent entre les catégories que celles-ci qui bougent ou tremblent autour de ceux-là. » (Dominique Merllié, « Les classements professionnels dans les enquêtes de mobilité », Annales, 1990)"
+    ],
+    "controle": [
+      "Rédaction des deux sujets effectivement associés sur le billet, de quatre réponses de relance et de la figure « Deux classements des mêmes quatre emplois fictifs ».",
+      "Lecture des deux libellés sur le feuillet original, de la consigne de choix et de la durée dans le rapport. Contrôle des exemples et des deux plans."
+    ]
+  }
+}

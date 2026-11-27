@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 On note $P^n$ l’itérée par composition. Les trois parties étudient les applications propres du disque, des exemples dynamiques et la topologie du bassin de l’infini.
 
 ## I. Applications holomorphes propres du disque
@@ -100,6 +102,10 @@ Pour $|z|=1$, $\varphi(z)=(z+\bar z)/2\in[-1,1]$. Réciproquement si $\varphi(z)
 
 Pour $w\notin[-1,1]$, les racines de $z^2-2wz+1$ sont distinctes, de produit un et n’ont pas module un par 13. Il en existe exactement une de module strictement inférieur à un. Cela donne la bijection de $D(0,1)\setminus\{0\}$ sur le plan fendu. Elle est holomorphe, de dérivée $(1-1/z^2)/2$ non nulle sur ce domaine ; l’inverse est holomorphe par inversion locale.
 
+Pour lire la géométrie de la bijection, écrire $z=re^{it}$. Alors $\varphi(z)=\tfrac12(r+r^{-1})\cos t+\tfrac i2(r-r^{-1})\sin t$. Pour $0<r<1$, les deux demi-axes de cette ellipse sont $(r+r^{-1})/2$ et $(r^{-1}-r)/2$. Ce dernier tend vers zéro lorsque $r$ tend vers un.
+
+![Images des cercles de rayon r par la fonction de Joukowski. Quand r tend vers 1, les ellipses se resserrent sur le segment de −1 à 1.](figures/joukowski-ellipses.svg)
+
 ### Question 15
 
 Pour $z=e^{it}$, $T_d(\varphi(z))=T_d(\cos t)=\cos(dt)=\varphi(z^d)$. Les deux fonctions sont holomorphes sur $\mathbb C^*$ connexe et coïncident sur le cercle, qui a des points d’accumulation dans ce domaine. L’identité vaut partout.
@@ -115,6 +121,8 @@ Si $w\in[-1,1]$, écrire $w=\varphi(e^{it})$ donne des itérées dans le segment
 ### Question 18.a
 
 Sous l’invariance totale du segment, $P$ envoie son complémentaire dans lui-même. Donc $G=\varphi^{-1}\circ P\circ\varphi$ est holomorphe à valeurs dans le disque pointé. Elle est bornée près de zéro, donc s’y prolonge. Comme $\varphi(z)\sim1/(2z)$, $P(\varphi(z))\to\infty$ lorsque $z\to0$. L’inverse de $\varphi$ à valeurs dans le disque vérifie $\varphi^{-1}(w)\sim1/(2w)$ à l’infini, d’après $2wz=1+z^2$ et $z\to0$. Ainsi $G(0)=0$.
+
+Pour justifier la limite de la branche inverse, considérons $w_j\to\infty$ et $u_j=\varphi^{-1}(w_j)$ de module inférieur à un. La relation $2w_ju_j=1+u_j^2$ donne $|u_j|\le1/|w_j|$, donc $u_j\to0$ et $2w_ju_j\to1$.
 
 ### Question 18.b
 

@@ -1,0 +1,248 @@
+{
+  "slug": "bel_bl_francais-oral-10-juin_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Français (oral 10 juin)",
+    "annee": 2024,
+    "modalite": "oral"
+  },
+  "intitule": "Explication d’un texte français — oral du 10 juin 2024",
+  "questions": 18,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "x_maths_b_anciennes",
+      "fournisseur": "codex",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Lecture du fac-similé et du rapport, transcription des 9 paires, confrontation aux œuvres, analyse et relances sur les 18 passages. Le feuillet réunit 9 billets, lus de haut en bas puis de page en page. Le cartouche de choix du billet 3 est coupé dans le PDF. Les pages des œuvres sont celles inscrites par le jury."
+    },
+    {
+      "phase": "autocontrole",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "x_maths_b_anciennes",
+      "fournisseur": "codex",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": false,
+      "perimetre": "Pointage des choix, des bornes, des titres et des éditions de référence. Rapprochement avec le rapport commun B/L et contrôle des deux éditions."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/bl_sujets_oraux_francais_10062024.pdf",
+    "sha256_sujet": "22da87d23100fb96bad03ef1974b8b4bce41cc3edb80f7e06dc794b4ee106d2f",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_oral_francais.pdf",
+    "sha256_rapport_jury": "f48a5ffe76735db07b5757108aeaba1208b59a85dc6b8a2cda3bbaaa1fb29e41"
+  },
+  "billets": [
+    {
+      "billet": 1,
+      "texte": 1,
+      "page_pdf": 1,
+      "choix_retenu": 1,
+      "reference": "Jean-Paul Sartre, Les Mots",
+      "bornes": "P. 37, de « J’ai commencé ma vie… » à « … sentaient le champignon ».",
+      "lecture_complementaire": "https://www.devenirenseignant.gouv.fr/media/16342/download"
+    },
+    {
+      "billet": 1,
+      "texte": 2,
+      "page_pdf": 1,
+      "choix_retenu": 1,
+      "reference": "Charles Perrault, Cendrillon",
+      "bornes": "Contes, p. 163–165, de « Alors ses deux sœurs la reconnurent… » jusqu’à la fin, « … ou des parrains ou des marraines ». Les moralités sont comprises.",
+      "lecture_complementaire": "https://upload.wikimedia.org/wikipedia/commons/2/24/M%C3%A9moires%2C_contes_et_autres_uvres_de_Charles_Perrault_%28IA_mmoiresconteseta00perr%29.pdf"
+    },
+    {
+      "billet": 2,
+      "texte": 1,
+      "page_pdf": 1,
+      "choix_retenu": 1,
+      "reference": "Jean de La Fontaine, Le Renard et les Poulets d’Inde",
+      "bornes": "Fables, t. II, p. 249, fable entière.",
+      "lecture_complementaire": "https://fr.wikisource.org/wiki/Le_Renard_et_les_Poulets_d%E2%80%99Inde"
+    },
+    {
+      "billet": 2,
+      "texte": 2,
+      "page_pdf": 1,
+      "choix_retenu": 1,
+      "reference": "François-René de Chateaubriand, Mémoires d’outre-tombe",
+      "bornes": "T. 3 tel que noté, p. 736–737, de « Grâce à… » à la fin, p. 737.",
+      "lecture_complementaire": "https://chateaubriand-lenchanteur.fr/journal/conclusion-des-memoires/"
+    },
+    {
+      "billet": 3,
+      "texte": 1,
+      "page_pdf": 2,
+      "choix_retenu": null,
+      "reference": "Marivaux, Le Jeu de l’amour et du hasard",
+      "bornes": "Acte II, scène XI, p. 825–826, de « C’est donc ce garçon qui vient de sortir » à « mais je n’y entends rien ».",
+      "lecture_complementaire": "https://classiques.app/livres/marivaux/le-jeu-de-l-amour-et-du-hasard/acte-ii-scene-xi"
+    },
+    {
+      "billet": 3,
+      "texte": 2,
+      "page_pdf": 2,
+      "choix_retenu": null,
+      "reference": "Marcel Proust, Du côté de chez Swann",
+      "bornes": "P. 168–169, de « En effet c’était une épine, mais rose » à « … d’un pompadour provincial ».",
+      "lecture_complementaire": "https://proust-personnages.fr/extraits-2/morceaux-choisis/les-aubepines/"
+    },
+    {
+      "billet": 4,
+      "texte": 1,
+      "page_pdf": 2,
+      "choix_retenu": 2,
+      "reference": "Agrippa d’Aubigné, Les Tragiques",
+      "bornes": "Livre premier, « Misères », p. 47–49, v. 97–130 inclus.",
+      "lecture_complementaire": "https://cte.univ-setif2.dz/moodle/pluginfile.php/7947/mod_folder/content/0/La%20litt%C3%A9rature%20fran%C3%A7aise%20au%20XVI%C3%A8me%20si%C3%A8cle.pdf?forcedownload=1"
+    },
+    {
+      "billet": 4,
+      "texte": 2,
+      "page_pdf": 2,
+      "choix_retenu": 2,
+      "reference": "Voltaire, Dictionnaire philosophique",
+      "bornes": "P. 75–76, article « Abbé » en entier.",
+      "lecture_complementaire": "https://fr.wikisource.org/wiki/Dictionnaire_philosophique/portatif_-_6e_ed._-_Londres_%281767%29/Abb%C3%A9"
+    },
+    {
+      "billet": 5,
+      "texte": 1,
+      "page_pdf": 3,
+      "choix_retenu": 1,
+      "reference": "Jean Ogier de Gombauld, « Je vogue sur la mer… »",
+      "bornes": "Anthologie de la poésie baroque française, t. I, p. 212, poème entier. Le billet écrit « Gombauld ».",
+      "lecture_complementaire": "https://manierisme.univ-rouen.fr/spip/index.html%3F3-2-4-Vagabonde-Inconstance.html"
+    },
+    {
+      "billet": 5,
+      "texte": 2,
+      "page_pdf": 3,
+      "choix_retenu": 1,
+      "reference": "Marguerite Yourcenar, Nouvelles orientales",
+      "bornes": "P. 20–21, de « Le jour, assis sur un tapis… » à « … par mes larmes ». Nouvelle « Comment Wang-Fô fut sauvé ». Le possessif manuscrit se lit « mes » ou « nos ». Le texte de comparaison porte « nos larmes ».",
+      "lecture_complementaire": "https://fr.scribd.com/document/885323627/Fleurs-d-Encre-Francais-Cycle-4-3e-HQ-ORG-9782017066682-ouni-Pw"
+    },
+    {
+      "billet": 6,
+      "texte": 1,
+      "page_pdf": 3,
+      "choix_retenu": 1,
+      "reference": "Étienne de La Boétie, Discours de la servitude volontaire",
+      "bornes": "P. 132–133, de « Pour ce coup, je ne voudrais… » à « … de celui duquel on n’a reçu que bien ».",
+      "lecture_complementaire": "https://hurlus.fr/laboetie1562_servitude/laboetie1562_servitude.pdf"
+    },
+    {
+      "billet": 6,
+      "texte": 2,
+      "page_pdf": 3,
+      "choix_retenu": 1,
+      "reference": "Edmond Rostand, Cyrano de Bergerac",
+      "bornes": "Acte V, scène 6, p. 348–350, du v. 2549 « Pas là ! non ! pas dans ce fauteuil » à la fin, « mon panache ».",
+      "lecture_complementaire": "https://fr.wikisource.org/wiki/Cyrano_de_Bergerac_%28Rostand%29/Acte_V"
+    },
+    {
+      "billet": 7,
+      "texte": 1,
+      "page_pdf": 4,
+      "choix_retenu": 2,
+      "reference": "Théophile Gautier, « Lied »",
+      "bornes": "Émaux et Camées, p. 86, poème désigné par son titre.",
+      "lecture_complementaire": "https://fr.wikisource.org/wiki/%C3%89maux_et_Cam%C3%A9es/Lied"
+    },
+    {
+      "billet": 7,
+      "texte": 2,
+      "page_pdf": 4,
+      "choix_retenu": 2,
+      "reference": "Jacques-Bénigne Bossuet, Sermon sur la mort",
+      "bornes": "Sermons, Le Carême du Louvre, p. 146–147, de « Me sera-t-il permis… » à « … l’entremise de la sainte Vierge ».",
+      "lecture_complementaire": "https://fr.wikisource.org/wiki/Sermon_sur_la_mort"
+    },
+    {
+      "billet": 8,
+      "texte": 1,
+      "page_pdf": 4,
+      "choix_retenu": 1,
+      "reference": "Jean Racine, Andromaque",
+      "bornes": "Acte I, scène 2, v. 143–172 inclus.",
+      "lecture_complementaire": "https://fr.wikisource.org/wiki/Andromaque/%C3%89dition_Mesnard%2C_1865/Acte_I"
+    },
+    {
+      "billet": 8,
+      "texte": 2,
+      "page_pdf": 4,
+      "choix_retenu": 1,
+      "reference": "Émile Zola, La Fortune des Rougon",
+      "bornes": "P. 37–38, du début à « … et suintait la sève ».",
+      "lecture_complementaire": "https://fr.wikisource.org/wiki/Page%3AEmile_Zola_-_La_Fortune_des_Rougon.djvu/4"
+    },
+    {
+      "billet": 9,
+      "texte": 1,
+      "page_pdf": 5,
+      "choix_retenu": 1,
+      "reference": "François Rabelais, Gargantua",
+      "bornes": "Prologue de l’auteur, p. 7–8, de « Et, posé… » à « … vie oeconomicque » (graphie du billet).",
+      "lecture_complementaire": "https://fr.wikisource.org/wiki/Gargantua_%28%C3%89dition_Juste_1535%29_%E2%80%94_Prologue_de_lauteur"
+    },
+    {
+      "billet": 9,
+      "texte": 2,
+      "page_pdf": 5,
+      "choix_retenu": 1,
+      "reference": "Gérard de Nerval, « El Desdichado »",
+      "bornes": "Les Chimères, p. 5, sonnet entier.",
+      "lecture_complementaire": "https://fr.wikisource.org/wiki/Les_Chim%C3%A8res/El_Desdichado"
+    }
+  ],
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Jean Racine, Andromaque",
+      "legende": "Les filiations dans la plaidoirie d’Oreste."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Jean-Paul Sartre, Les Mots",
+      "Charles Perrault, Cendrillon",
+      "Jean de La Fontaine, Le Renard et les Poulets d’Inde",
+      "François-René de Chateaubriand, Mémoires d’outre-tombe",
+      "Marivaux, Le Jeu de l’amour et du hasard",
+      "Marcel Proust, Du côté de chez Swann",
+      "Agrippa d’Aubigné, Les Tragiques",
+      "Voltaire, Dictionnaire philosophique",
+      "Jean Ogier de Gombauld, « Je vogue sur la mer… »",
+      "Marguerite Yourcenar, Nouvelles orientales",
+      "Étienne de La Boétie, Discours de la servitude volontaire",
+      "Edmond Rostand, Cyrano de Bergerac",
+      "Théophile Gautier, « Lied »",
+      "Jacques-Bénigne Bossuet, Sermon sur la mort",
+      "Jean Racine, Andromaque",
+      "Émile Zola, La Fortune des Rougon",
+      "François Rabelais, Gargantua",
+      "Gérard de Nerval, « El Desdichado »"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Le feuillet réunit 9 billets, lus de haut en bas puis de page en page. Le cartouche de choix du billet 3 est coupé dans le PDF. Les pages des œuvres sont celles inscrites par le jury."
+  }
+}

@@ -41,5 +41,58 @@
       "modifications": true,
       "perimetre": "Rédaction des quinze questions à partir du sujet original de quatre pages de la banque MP et des deux rapports de 2011. La banque PC référence par erreur comme sujet le rapport 2014. Vérification des deux éditions sur les 5 913 permutations de tailles 1 à 7, des itérées, ordres, orbites et deux propriétés de reconnaissance. Deux schémas originaux."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15"
+    ],
+    "pages_des_questions": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 2,
+      "7": 2,
+      "8": 3,
+      "9": 3,
+      "10": 3,
+      "11": 3,
+      "12": 3,
+      "13": 3,
+      "14": 3,
+      "15": 4
+    },
+    "origine_attestation": {
+      "commit_du_journal": "91e06b260b242218d6daa2bb8ffa433bae3bee5f",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction des quinze questions à partir du sujet original de quatre pages de la banque MP et des deux rapports de 2011. La banque PC référence par erreur comme sujet le rapport 2014. Vérification des deux éditions sur les 5 913 permutations de tailles 1 à 7, des itérées, ordres, orbites et deux propriétés de reconnaissance. Deux schémas originaux.",
+      "sha256_sujet_controle": "4ad814c56154a87377c5e9c5507e6449e0198cbd44b73ede364205fea1439feb",
+      "sha256_rapport_controle": "74c71b35341e3135f28d960805de6e90a013e30303d16a81f80b715661a2ae7b"
+    },
+    "controle_programmes": {
+      "resultats_par_edition": {
+        "brut": "brut.md 5913 permutations",
+        "guide": "guide.md 5913 permutations"
+      },
+      "controle_sur": "Programmes extraits de chaque édition et vérifiés à nouveau. En 2016 les requêtes SQL sont également exécutées sur une base de test."
+    },
+    "precision": "Les numéros et pages ont été relevés dans le fac-similé du concours. Les réponses des deux éditions sont présentes au commit éditorial indiqué."
+  }
 }

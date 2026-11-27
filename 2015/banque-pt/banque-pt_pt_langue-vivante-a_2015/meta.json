@@ -1,0 +1,374 @@
+{
+  "slug": "banque-pt_pt_langue-vivante-a_2015",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Langue vivante A",
+    "annee": 2015
+  },
+  "questions": 5,
+  "redaction": "IA (gpt-6.2-astra)",
+  "figures": [
+    {
+      "fichier": "figures/lecture-de.svg",
+      "question": "Allemand",
+      "legende": "Que permet la comparaison ?"
+    },
+    {
+      "fichier": "figures/lecture-en.svg",
+      "question": "Anglais",
+      "legende": "Trois objets de décision publique"
+    },
+    {
+      "fichier": "figures/lecture-ar.svg",
+      "question": "Arabe",
+      "legende": "Dans quel espace agir librement ?"
+    },
+    {
+      "fichier": "figures/lecture-es.svg",
+      "question": "Espagnol",
+      "legende": "Ce que rapporte et coûte le rivage"
+    },
+    {
+      "fichier": "figures/lecture-it.svg",
+      "question": "Italien",
+      "legende": "Comment les ménages s’adaptent"
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "agent": "lva_pt_2325",
+      "perimetre": "Rédaction des cinq synthèses par langue et du commentaire des vingt-cinq documents du fascicule 2015, contrôle des figures et des décomptes dans les deux éditions."
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "agent": "lva_pt_2325",
+      "perimetre": "Relecture des cinq copies sur les feuillets et le jury, contrôle de la fidélité des chiffres et des images, recomptage du titre et du corps, contrôle des cinq schémas et du rendu de la langue arabe."
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2015/lv_a_2015_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2015/rapport_lv_a_ecrit_2015.pdf",
+    "sujet_sha256": "3b4e0b4a434db7ce15efd743df314d90e8bbe1f6e315201b97f23b4c43bba57d",
+    "rapport_sha256": "bce7ddeaf5af5c8dfb9d73c7db85de75a930ff651bf1a5ffbe8b02711e6621a7",
+    "livret": "https://www.banquept.fr/documents/livret/2015/Livret_PT_2015.pdf#page=12",
+    "livret_sha256": "00daed661c4cca725666c4035b6b2b29111ac29ccd980edf6db5421458ba7b68"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Allemand",
+      "Anglais",
+      "Arabe",
+      "Espagnol",
+      "Italien"
+    ],
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "3b4e0b4a434db7ce15efd743df314d90e8bbe1f6e315201b97f23b4c43bba57d",
+      "perimetre": "Rédaction des cinq synthèses par langue et du commentaire des vingt-cinq documents du fascicule 2015, contrôle des figures et des décomptes dans les deux éditions.",
+      "controles": [
+        {
+          "nom": "Allemand",
+          "titre": "Was Tiere über sich und über uns erkennen lassen",
+          "consigne": "Tierische Intelligenz und Tierversuche: ein Paradox?",
+          "pages_sujet": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "pages_rapport": [
+            1
+          ],
+          "mots_titre_inclus": 471,
+          "mots_hors_titre": 462,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                3
+              ],
+              "controle": "« Tierisch klug! », Geolino. L’éléphant et la perruche réagissent différemment au miroir. Le test porte sur la reconnaissance de soi, dont l’enfant humain fait aussi l’apprentissage."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                4
+              ],
+              "controle": "Beobachter. Les fourmis du désert et les pigeons voyageurs s’orientent avec une efficacité remarquable. Le lien entre conscience, pensée abstraite et langage reste discuté."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                5
+              ],
+              "controle": "Wissenschaft aktuell. La réponse inflammatoire à certaines lésions diffère chez la souris et chez l’humain, en intensité comme en durée. La limite établie concerne ce modèle et ces phénomènes."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                6
+              ],
+              "controle": "Jim Davis. Garfield choisit un jouet pour partenaire de comparaison. Sa satisfaction renvoie au pouvoir de celui qui fixe les conditions d’un jugement d’intelligence."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                6
+              ],
+              "controle": "Aktionsgemeinschaft Schweizer Tierversuchsgegner. Le portrait d’un singe à la tête bandée donne un visage au coût des expériences et manifeste l’engagement de l’association suisse."
+            }
+          ]
+        },
+        {
+          "nom": "Anglais",
+          "titre": "Who gets to use the sky, and on what terms?",
+          "consigne": "Given the recent advances in the area of unmanned aircraft, what kind of challenges do governments have to face regarding drones and their different uses?",
+          "pages_sujet": [
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "pages_rapport": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "mots_titre_inclus": 492,
+          "mots_hors_titre": 482,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                8
+              ],
+              "controle": "Los Angeles Times. La popularisation des appareils de loisir met aux prises sécurité, protection de la vie privée et liberté d’usage. L’expérience des voisins donne une dimension concrète aux inquiétudes."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                9
+              ],
+              "controle": "The New York Times. Des survols signalés en France soulèvent la question des responsabilités et de l’identification. Le texte souligne l’écart entre l’incertitude sur les intentions et le devoir des pouvoirs publics."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                10
+              ],
+              "controle": "The Economist. Le développement de services commerciaux dépend des règles d’accès à l’espace aérien. Les autorités cherchent à concilier innovation, responsabilité et sécurité des autres usagers."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                11
+              ],
+              "controle": "The Economist, « A bumpy take-off ». Le panneau d’arrêt brandi par la FAA illustre la tension entre l’autorité fédérale américaine et des usagers aux ambitions différentes."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                11
+              ],
+              "controle": "Pew, février 2013. À propos des frappes américaines, 53 % se disent très inquiets du danger pour les civils. Les trois autres taux de très forte inquiétude, de 26 à 32 %, se rapportent à des risques distincts."
+            }
+          ]
+        },
+        {
+          "nom": "Arabe",
+          "titre": "من إعلان الحريات إلى ضمان ممارستها",
+          "consigne": "ماذا تقول الوثائق الخمس التالية عن أوضاع الحريات الفردية والجماعية في الدول العربية عامة وفي تونس ومصر والبحرين خاصة؟",
+          "pages_sujet": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "pages_rapport": [
+            6,
+            7,
+            8
+          ],
+          "mots_titre_inclus": 460,
+          "mots_hors_titre": 454,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                13
+              ],
+              "controle": "Tunisie. La tribune relie les acquis démocratiques de l’après-2011 à l’exercice du pluralisme. Elle permet de distinguer garanties institutionnelles et consolidation dans les pratiques."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                14,
+                15
+              ],
+              "controle": "Égypte. Quinze organisations contestent une loi qui confie la protection d’établissements publics à l’armée et expose des civils à la justice militaire. Elles en soulignent les effets sur la manifestation."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                16
+              ],
+              "controle": "Bahreïn. La libération du militant Nabil Rajab laisse ouverte la question des poursuites visant les formes pacifiques de contestation."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                17
+              ],
+              "controle": "Classement de la presse. Bahreïn passe de la 165e à la 163e place mondiale et occupe la 14e place parmi les 19 pays arabes examinés. Le léger progrès du rang n’efface pas les restrictions signalées."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                18
+              ],
+              "controle": "Caricature. Un personnage couronné libère un oiseau d’une petite cage à l’intérieur d’une cage immense. La différence d’échelle met en cause la portée d’une liberté accordée par le pouvoir."
+            }
+          ]
+        },
+        {
+          "nom": "Espagnol",
+          "titre": "La costa española, entre el negocio inmediato y su valor duradero",
+          "consigne": "¿En qué medida tiene la política española de urbanización consecuencias a la vez sobre el medioambiente y sobre la economía del país?",
+          "pages_sujet": [
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "pages_rapport": [
+            9,
+            10
+          ],
+          "mots_titre_inclus": 473,
+          "mots_hors_titre": 462,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                20
+              ],
+              "controle": "El País, « Más chiringuitos, menos playa ». La réglementation distingue les plages urbaines et naturelles. La superficie totale peut atteindre 300 m² en plage urbaine, contre 150 auparavant. En plage naturelle, le plafond est de 70 m², avec installations démontables."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                21
+              ],
+              "controle": "El País relaie les relevés de Greenpeace pour la bande côtière de 500 mètres. La surface urbanisée passe d’environ 58 000 à 72 000 hectares entre 1987 et 2005."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                22
+              ],
+              "controle": "El País. L’Andalousie prépare un plan coordonné de protection de son littoral. L’échelle régionale permet de dépasser les décisions municipales prises isolément."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                23
+              ],
+              "controle": "Greenpeace. Une plage privée est mise en scène devant le ministère. L’occupation symbolique de l’espace public donne à voir les conséquences que l’association prête à la réforme."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                23
+              ],
+              "controle": "Diario de Mallorca. La photographie de Magaluf montre un front de mer densément construit. Elle relie la capacité d’accueil du tourisme aux transformations durables du paysage."
+            }
+          ]
+        },
+        {
+          "nom": "Italien",
+          "titre": "Quando il bilancio familiare cambia anche i rapporti con gli altri",
+          "consigne": "In riferimento ai dati ed agli argomenti forniti, tracciate un quadro della situazione economica e sociale degli italiani di fronte alla crisi.",
+          "pages_sujet": [
+            24,
+            25,
+            26,
+            27,
+            28
+          ],
+          "pages_rapport": [
+            11
+          ],
+          "mots_titre_inclus": 466,
+          "mots_hors_titre": 455,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                25
+              ],
+              "controle": "La Repubblica, « Impoverito e triste ». La baisse de la consommation s’inscrit dans un climat de pessimisme. La crainte d’une perte de revenu suffit à différer certains achats."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                26
+              ],
+              "controle": "La Repubblica, « Incubo povertà ». Les ménages modifient sorties et dépenses courantes. La répétition de ces arbitrages rend visible l’écart entre adaptation et privation."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                27
+              ],
+              "controle": "La Repubblica, « Gli italiani e la carità ». Les dons en argent reculent plus nettement que le bénévolat associatif. Ressources et attitudes déclarées fournissent deux pistes d’explication différentes."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                28
+              ],
+              "controle": "La Repubblica, graphique du panier. Au premier trimestre 2013, inflation de 2,5 %, variation des prix du panier de 0,6 % et effet de composition de −1,9 %. Lire ces indicateurs conjointement."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                28
+              ],
+              "controle": "Corriere della Sera. Une famille sicilienne sur cinq dispose de moins de 1 000 euros par mois. Les écarts territoriaux touchent aussi l’emploi des femmes et les perspectives des diplômés."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

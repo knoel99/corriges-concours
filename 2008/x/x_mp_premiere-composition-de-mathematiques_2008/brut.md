@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve établit la séparation des zéros et compte ceux de la solution de Sturm–Liouville normalisée à gauche. Le rapport attire l’attention sur la compacité, les choix uniformes de voisinages et le saut du compteur à une valeur propre.
 
 ## Première partie. Zéros, wronskien et comparaison
@@ -88,6 +90,8 @@ Sur chacun des intervalles de signe strict de 8.a, le module de la fonction conc
 
 Si $\lambda=\rho$, la borne demandée vaut zéro. Si $\lambda>\rho$ et $0<\mu<\lambda-\rho$, alors $\lambda-r(x)>\mu$. Par 4.b, entre deux zéros successifs de $\sin(\sqrt\mu\,x)$ sur $[0,1]$ se trouve un zéro de $y_\lambda$. Il y a $\lfloor\sqrt\mu/\pi\rfloor$ tels intervalles et zéro est de plus un zéro de $y_\lambda$ distinct de ceux-là. Ainsi $N(\lambda)\ge1+\lfloor\sqrt\mu/\pi\rfloor$. Quand $\mu$ approche $\lambda-\rho$ par-dessous, le plancher prend soit la valeur cible soit, au seuil entier, cette valeur diminuée de un. Dans les deux cas $N(\lambda)\ge\lfloor\sqrt{\lambda-\rho}/\pi\rfloor$.
 
+Au cas limite $\sqrt{\lambda-\rho}/\pi=m$ entier strictement positif, les valeurs de $\mu$ immédiatement inférieures donnent exactement $m-1$ intervalles complets. Le zéro initial, extérieur à tous les intervalles ouverts de comparaison, fournit le $m$-ième zéro exigé. Ce décompte explique pourquoi on peut faire tendre $\mu$ vers la borne malgré la discontinuité du plancher.
+
 ### Question 10.a
 
 Par 8.c, $N$ est localement constante en tout point où $y_\lambda(1)\ne0$. Sur un intervalle $I$ composé de tels points, le niveau de chaque valeur est relativement ouvert et son complément aussi. Comme $I$ est connexe, $N$ y est constante.
@@ -106,6 +110,8 @@ S’il y avait seulement un nombre fini de valeurs propres, éventuellement zér
 
 Posons $s=\operatorname{sgn} y_x(\lambda_0,1)$. Choisissons $b<1$ assez proche de 1 pour que $s y_x(\lambda_0,x)>0$ sur $[b,1]$. Alors $s y(\lambda_0,b)<0$. Par continuité uniforme ces deux propriétés persistent pour $\lambda$ proche. Sur $[0,b]$, l’argument de 8.a–c conserve tous les zéros au nombre de $N(\lambda_0)-1$. Par 11, $s\,\partial_\lambda y(\lambda_0,1)>0$. Ainsi $s y(\lambda,1)$ est négatif juste avant $\lambda_0$, nul en ce point, positif juste après, par stricte monotonie locale en $\lambda$. Sur $[b,1]$, $s y(\lambda,\cdot)$ est strictement croissante et commence à une valeur négative. Elle n’a donc aucun zéro dans le premier cas et exactement un dans les deux autres, au bord compris. Un $\varepsilon>0$ réduit si nécessaire donne les deux intervalles fermés aux extrémités demandées.
 
+Dans le cas représenté $r=0$, le premier zéro mobile a pour abscisse $x_1(\lambda)=\pi/\sqrt\lambda$. En $\lambda=\pi^2$ on a $x_1=1$ et $x_1'(\pi^2)=-1/(2\pi^2)$. Il entre donc dans le segment par son bord droit lorsque $\lambda$ augmente, avec le sens du saut démontré ci-dessus.
+
 ![Figure 1 — Pour le potentiel nul, le premier zéro après l’origine arrive en x = 1 quand λ atteint π², puis se déplace vers la gauche. Le tracé est prolongé légèrement au-delà du bord pour visualiser ce passage.](figures/zero-bord.svg)
 
 ### Question 13
@@ -113,3 +119,5 @@ Posons $s=\operatorname{sgn} y_x(\lambda_0,1)$. Choisissons $b<1$ assez proche d
 Les valeurs propres sont les zéros de la fonction continue $\lambda\mapsto y(\lambda,1)$, donc forment un fermé. Par 11 sa dérivée y est non nulle, et chaque zéro est isolé. Un compact ne peut contenir une infinité de ces zéros, sinon une sous-suite convergerait vers un zéro non isolé. Comme ils sont minorés par 6.a et en nombre infini par 10.b, on peut les énumérer en ordre strictement croissant $\lambda_1<\lambda_2<\cdots$ avec $\lambda_n\to+\infty$.
 
 Pour $\lambda<\min r$, $y_\lambda$ ne peut s’annuler en un point $c>0$ : l’identité d’énergie de 6.a sur $[0,c]$ imposerait $\lambda\ge\min_{[0,c]}r$. Ainsi $N=1$ avant la première valeur propre, par 10.a. La question 12 ajoute exactement un zéro à chaque valeur propre et 10.a conserve le nombre entre deux passages. Par récurrence $N(\lambda_n)=n+1$, en comptant les deux extrémités du segment.
+
+Pour passer de l’hypothèse de récurrence au rang suivant, $N$ reste égal à $n+1$ sur $[\lambda_n,\lambda_{n+1}[$. La valeur au bord droit est $n+2$ par 12. En particulier la première fonction propre a exactement deux zéros sur le segment fermé et aucun à l’intérieur.

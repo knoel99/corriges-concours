@@ -1,0 +1,114 @@
+{
+  "slug": "x_mp_composition-de-physique_2010",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Composition de physique",
+    "annee": 2010
+  },
+  "questions": 33,
+  "intitule": "Caractérisation de particules et de pores à l’échelle nanométrique",
+  "redaction": "Rédaction des deux versions couvrant les 33 questions. Démonstrations et indications sur la diffusion aux petits angles, les régimes de Guinier et de Porod, les modèles de Langmuir et BET et la condensation capillaire. Lecture chiffrée de la surface spécifique et du diamètre moyen des pores.",
+  "sources": {
+    "sujet": "https://www.doc-solus.fr/prepa/sci/adc/pdf/enonces.pdf/2010/MP_PHYSIQUE_X_1_2010.enonce.pdf",
+    "sujet_sha256": "a7238bca258c70ae652cfceeff7c82ce273facc29b2e9a7bdaa54611f1d87265",
+    "rapport_jury": "https://www.doc-solus.fr/prepa/sci/adc/pdf/rapports.pdf/2010/MP_PHYSIQUE_X_1_2010.rapport.pdf",
+    "rapport_sha256": "1d02d6471b6a8ee3b7d6808a28f7d165338246721088b0aecae50ef3f5db0bd4"
+  },
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "physique_mp_suite",
+      "session": "physique_mp_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture de la composition de huit pages et du rapport des correcteurs Florin Constantin et François Devreux. Contrôle des conventions de diffusion, des trois courbes expérimentales en coordonnées physiques et des diamètres et rayons employés pour les pores."
+    },
+    {
+      "phase": "redaction",
+      "agent": "physique_mp_suite",
+      "session": "physique_mp_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux versions couvrant les 33 questions. Démonstrations et indications sur la diffusion aux petits angles, les régimes de Guinier et de Porod, les modèles de Langmuir et BET et la condensation capillaire. Lecture chiffrée de la surface spécifique et du diamètre moyen des pores."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I.2.1",
+      "fichier": "figures/projections-diffusion-rayons-x.svg",
+      "legende": "Les segments épais représentent les projections du déplacement du diffuseur sur les directions incidente et diffusée. Le troisième dessin donne le vecteur de diffusion comme différence des vecteurs d’onde."
+    },
+    {
+      "numero": 2,
+      "question": "I.3.5",
+      "fichier": "figures/sphere-guinier-porod.svg",
+      "legende": "Facteur de forme en intensité d’une sphère, rapporté à sa limite aux petits angles. La loi de Guinier décrit le départ du plateau et la moyenne des oscillations à grand qR fait apparaître la pente de Porod."
+    },
+    {
+      "numero": 3,
+      "question": "II.1.3",
+      "fichier": "figures/monocouche-de-langmuir.svg",
+      "legende": "À faible pression, la couverture est proportionnelle à la pression. À forte pression, tous les sites de la monocouche sont occupés."
+    },
+    {
+      "numero": 4,
+      "question": "II.2.5",
+      "fichier": "figures/lecture-de-bet.svg",
+      "legende": "La pente est bien déterminée par les points expérimentaux relevés sur la figure 5 du sujet. La petite ordonnée à l’origine est sensible à l’extrapolation."
+    },
+    {
+      "numero": 5,
+      "question": "III.8",
+      "fichier": "figures/diametre-du-pore.svg",
+      "legende": "La couche de gaz déjà adsorbée occupe une épaisseur sur chaque paroi. Le ménisque se forme dans le diamètre encore libre du pore."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1.1",
+      "I.1.2",
+      "I.1.3",
+      "I.1.4",
+      "I.1.5",
+      "I.1.6",
+      "I.2.1",
+      "I.2.2",
+      "I.2.3",
+      "I.2.4",
+      "I.2.5",
+      "I.3.1",
+      "I.3.2",
+      "I.3.3",
+      "I.3.4",
+      "I.3.5",
+      "I.3.6",
+      "II.1.1",
+      "II.1.2",
+      "II.1.3",
+      "II.2.1",
+      "II.2.2",
+      "II.2.3",
+      "II.2.4",
+      "II.2.5",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7",
+      "III.8"
+    ]
+  }
+}

@@ -1,0 +1,397 @@
+{
+  "slug": "banque-pt_pt_maths-a_2014",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths A",
+    "intitule": "Épreuve de Mathématiques A",
+    "annee": 2014,
+    "duree": "4 h",
+    "modalite": "écrit",
+    "code_garde": "098"
+  },
+  "questions": 38,
+  "redaction": "Proposition pédagogique non officielle, rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2014/math_a_2014_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2014/rapport_math_a_ecrit_2014.pdf",
+    "livret": "https://www.banquept.fr/documents/livret/2014/Livret_PT_2014.pdf",
+    "sujet_sha256": "0851ef6557cfc7104af469a51813372ca496daf12a2344956a5ed70a99ce98d0",
+    "rapport_jury_sha256": "fc0a72be64841f14048f5996899c7a9c1de8326ad9eb6c49e56e0ee420abb25c",
+    "observation_rapport": "La garde demande une feuille de papier millimétré à rendre. Le document-réponse annoncé en III.1.e est absent du PDF institutionnel. Le tracé intégral est fourni sur deux bandes de grille originales à l’échelle 1. I.2 reprend les huit sous-questions de I.1."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2014/math_a_2014_pt.pdf",
+      "sha256": "0851ef6557cfc7104af469a51813372ca496daf12a2344956a5ed70a99ce98d0",
+      "pages": 5,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "d0c52c5afd4825d8960b8a8a7b9ea4bccb733fa007150e1df1dba41952d75eb9"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "726d4e8e3e322a619ac9a32b4987071f1e356e2b4892eb07c66780b7210bec30"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "2b80fb8df0a4fcae98d1736960b31fbf23d497cac9b4e0769c080aac5417165b"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "1787b44124c219733c1b194b52e61cd5a93456c496d211746bdaf4408c396536"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "2cd4918d3b83e8dbed02498425dbb28c1dc9a227fba194ef9051bea4fdee415a"
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2014/rapport_math_a_ecrit_2014.pdf",
+      "sha256": "fc0a72be64841f14048f5996899c7a9c1de8326ad9eb6c49e56e0ee420abb25c",
+      "pages": 3,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "c1eb2ea760d77696befb4c8439e72a743269824a6875070f698947bf4a6a4baf"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "80defbd7dc6f6d83c08c1959def40f2168657028f0730466ce27bddd627b12f7"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "03ae6163057fe18df5fa159d88c0308a1de67e52e9c9365a58ab80c8cac49091"
+        }
+      ]
+    },
+    "livret": {
+      "url": "https://www.banquept.fr/documents/livret/2014/Livret_PT_2014.pdf",
+      "sha256": "645bd441b431dd180a74f457dcbbd9c88abb12286959e8141c44aeeb6e495f6b",
+      "pages": 77,
+      "pages_verifiees": [
+        {
+          "numero": 8,
+          "rendu_sha256": "2e87d859398267364a418bdac3cb49f5c5bb52715e0a00f0e9d8ea499d271629"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "43cf6f9ee0ef63a9d328968f2ec5fd699125f0533903224d19a2edee9f545a4e"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "III.1.e",
+      "fichier": "figures/helice-echelle-un.svg",
+      "legende": "Projection à l’échelle 1 sur deux bandes raccordées au point d’abscisse 3π. Une unité mesure 1 cm.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "IV.1",
+      "fichier": "figures/decomposition.svg",
+      "legende": "Le carré de la norme de u est la somme des carrés des deux composantes orthogonales.",
+      "provenance": "Figure originale."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1.a",
+      "I.1.b",
+      "I.1.c",
+      "I.1.d",
+      "I.1.e",
+      "I.1.f",
+      "I.1.g",
+      "I.1.h",
+      "I.2.a",
+      "I.2.b",
+      "I.2.c",
+      "I.2.d",
+      "I.2.e",
+      "I.2.f",
+      "I.2.g",
+      "I.2.h",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "III.1.a",
+      "III.1.b",
+      "III.1.c",
+      "III.1.d",
+      "III.1.e",
+      "IV.1",
+      "IV.2.a",
+      "IV.2.b",
+      "IV.3.a",
+      "IV.3.b",
+      "IV.4.a",
+      "IV.4.b",
+      "IV.4.c",
+      "IV.5.a",
+      "IV.5.b",
+      "IV.6.a",
+      "IV.6.b",
+      "IV.6.c"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "annexes_imposees": [
+      "Feuille de papier millimétré à rendre ; tracé reproduit sur grille originale."
+    ],
+    "document_reponse_mentionne": "III.1.e : non joint au PDF institutionnel ; représentation complète sur grille originale.",
+    "repere_par_question": [
+      {
+        "question": "I.1.a",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Idempotence de la projection sur D"
+      },
+      {
+        "question": "I.1.b",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Direction orthogonale du résidu"
+      },
+      {
+        "question": "I.1.c",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Formule vectorielle de p_D"
+      },
+      {
+        "question": "I.1.d",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Projection du vecteur normal"
+      },
+      {
+        "question": "I.1.e",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Définition d’un vecteur propre"
+      },
+      {
+        "question": "I.1.f",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Spectre et vecteurs propres de p_D"
+      },
+      {
+        "question": "I.1.g",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Diagonalisabilité"
+      },
+      {
+        "question": "I.1.h",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Matrice canonique de la projection"
+      },
+      {
+        "question": "I.2.a",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Idempotence de la projection sur F"
+      },
+      {
+        "question": "I.2.b",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Orthogonalité du résidu de p_F"
+      },
+      {
+        "question": "I.2.c",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Formule vectorielle de p_F"
+      },
+      {
+        "question": "I.2.d",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Image de la normale"
+      },
+      {
+        "question": "I.2.e",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Vecteur propre du projecteur plan"
+      },
+      {
+        "question": "I.2.f",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Spectre de p_F"
+      },
+      {
+        "question": "I.2.g",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Diagonalisabilité du projecteur complémentaire"
+      },
+      {
+        "question": "I.2.h",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Matrice canonique de p_F"
+      },
+      {
+        "question": "II.1",
+        "page_pdf": 2,
+        "page_rapport": 2,
+        "objet": "Localisation géométrique de J"
+      },
+      {
+        "question": "II.2",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Matrice de passage et orientation indirecte"
+      },
+      {
+        "question": "II.3",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Ancienne base et images projetées"
+      },
+      {
+        "question": "II.4",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Coordonnées du projeté sur F"
+      },
+      {
+        "question": "III.1.a",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Paramétrage de l’hélice projetée"
+      },
+      {
+        "question": "III.1.b",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Régularité"
+      },
+      {
+        "question": "III.1.c",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Réduction de l’intervalle par symétrie"
+      },
+      {
+        "question": "III.1.d",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Variations sur l’arc fondamental"
+      },
+      {
+        "question": "III.1.e",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Tracé intégral à l’échelle 1"
+      },
+      {
+        "question": "IV.1",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Contraction d’un projecteur orthogonal"
+      },
+      {
+        "question": "IV.2.a",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Image et noyau d’un projecteur"
+      },
+      {
+        "question": "IV.2.b",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Direction de la projection"
+      },
+      {
+        "question": "IV.3.a",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Inégalité quadratique et orthogonalité"
+      },
+      {
+        "question": "IV.3.b",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Caractère orthogonal du projecteur contractant"
+      },
+      {
+        "question": "IV.4.a",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Linéarité de l’adjoint défini par coordonnées"
+      },
+      {
+        "question": "IV.4.b",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Identité caractéristique de l’adjoint"
+      },
+      {
+        "question": "IV.4.c",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Unicité de l’adjoint"
+      },
+      {
+        "question": "IV.5.a",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Identité de produit scalaire pour p orthogonal"
+      },
+      {
+        "question": "IV.5.b",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Autoadjonction"
+      },
+      {
+        "question": "IV.6.a",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Première inclusion sur l’image de l’adjoint"
+      },
+      {
+        "question": "IV.6.b",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Inclusion réciproque par annulation du résidu"
+      },
+      {
+        "question": "IV.6.c",
+        "page_pdf": 4,
+        "page_rapport": 3,
+        "objet": "Réciproque de l’autoadjonction"
+      }
+    ]
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_hist_1987",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture des 38 questions ou sous-questions et du rapport institutionnel, rédaction des solutions et indications, figures originales et vérifications indépendantes des calculs."
+    }
+  ]
+}

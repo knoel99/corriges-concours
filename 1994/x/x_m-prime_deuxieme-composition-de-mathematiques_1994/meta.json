@@ -1,0 +1,179 @@
+{
+  "slug": "x_m-prime_deuxieme-composition-de-mathematiques_1994",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "M prime",
+    "filiere_historique": "M′",
+    "matiere": "Deuxième composition de mathématiques",
+    "annee": 1994
+  },
+  "questions": 18,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-9be802a81b9f7dfb8e20",
+    "sujet_sha256": "8d2dc16353e73d2815af30032edd568492b4335a864dae373df1babd738dfb40",
+    "notice_ups": "m94xm2",
+    "reproduction": "https://www.sujetsetcorriges.fr/dl/X/Maths/MP/sec-x-1994-maths2-MP.pdf",
+    "reproduction_sha256": "0c0af4d047adc54cd45a9dcaf74c25fad8536a2828274aa59541b8ebfd196243",
+    "calendrier": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000180352",
+    "rapport_jury": "",
+    "observation_rapport": "Aucun rapport de jury identifié dans les notices et les deux collections consultées.",
+    "provenance": "Les pages de garde du fac-similé portent le nom de l’école, l’option M′, la session 1994, le rang de la composition et sa durée de quatre heures."
+  },
+  "figures": [
+    {
+      "question": "3.a",
+      "fichier": "figures/bords-de-la-matrice.svg",
+      "legende": "Les termes restants se concentrent sur deux bords opposés selon le commutateur choisi."
+    },
+    {
+      "question": "14",
+      "fichier": "figures/frequences-qui-traversent-zero.svg",
+      "legende": "Le décalage de trois unités conserve trois images non nulles dans le commutateur, toutes du côté opposé à l’entrée."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2.a",
+      "2.b",
+      "3.a",
+      "3.b",
+      "4",
+      "5",
+      "6",
+      "7.a",
+      "7.b",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15"
+    ],
+    "pages_du_sujet": 4,
+    "pages_pdf_des_questions": {
+      "1": 1,
+      "2.a": 1,
+      "2.b": 1,
+      "3.a": 1,
+      "3.b": 1,
+      "4": 2,
+      "5": 2,
+      "6": 3,
+      "7.a": 3,
+      "7.b": 3,
+      "8": 3,
+      "9": 3,
+      "10": 3,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 4
+    },
+    "repere_par_question": [
+      {
+        "question": "1",
+        "page_pdf": 1
+      },
+      {
+        "question": "2.a",
+        "page_pdf": 1
+      },
+      {
+        "question": "2.b",
+        "page_pdf": 1
+      },
+      {
+        "question": "3.a",
+        "page_pdf": 1
+      },
+      {
+        "question": "3.b",
+        "page_pdf": 1
+      },
+      {
+        "question": "4",
+        "page_pdf": 2
+      },
+      {
+        "question": "5",
+        "page_pdf": 2
+      },
+      {
+        "question": "6",
+        "page_pdf": 3
+      },
+      {
+        "question": "7.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "7.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "8",
+        "page_pdf": 3
+      },
+      {
+        "question": "9",
+        "page_pdf": 3
+      },
+      {
+        "question": "10",
+        "page_pdf": 3
+      },
+      {
+        "question": "11",
+        "page_pdf": 4
+      },
+      {
+        "question": "12",
+        "page_pdf": 4
+      },
+      {
+        "question": "13",
+        "page_pdf": 4
+      },
+      {
+        "question": "14",
+        "page_pdf": 4
+      },
+      {
+        "question": "15",
+        "page_pdf": 4
+      }
+    ],
+    "precision": "Numérotation et pages du fac-similé UPS, subdivisions imprimées comprises."
+  },
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Lecture du fac-similé paginé et confrontation au second exemplaire. Rédaction et vérification de 18 réponses et des indications. Classification finie avec le coin inférieur droit isolé, polarisation bilinéaire complexe, normalisation de Fourier, rationalité et blocs du commutateur."
+    }
+  ]
+}

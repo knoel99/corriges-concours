@@ -1,0 +1,58 @@
+{
+  "slug": "ens-rennes_d1_espagnol_2007",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Espagnol",
+    "annee": 2007,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/annales-2007-concours-d1_1423059780504-pdf#page=5",
+    "sha256_sujet": "0f7a7f75322511a59614c2cd4fa6968b911a11d5b0428262b09f81ae76838ff0",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "publication": "Rafael Vilasanjuan, « Norte y Sur », El Periódico de Catalunya, 21 janvier 2007",
+    "page": 5,
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapports-2007-concours-d1_1423059785836-pdf#page=2",
+    "sha256_rapport_jury": "821ca153fcfca00d84ba26bbec1e1db0aac39d16388eaf65f68646767452c1b2"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en espagnol"
+    ],
+    "precision": "Version strictement délimitée de « Porto Alegre, estandarte » à « huir de la catástrofe ». L’introduction et la conclusion hors version éclairent l’expression, dont les deux demandes sont traitées."
+  },
+  "longueur_expression": {
+    "mots": 100,
+    "regle": "En 100 mots, donner son avis sur la responsabilité de l’Occident et préciser les raisons d’agir que donne le chroniqueur."
+  },
+  "figures": [
+    {
+      "fichier": "figures/nairobi.svg",
+      "legende": "De la scène de Nairobi à l’argument final"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Version strictement délimitée de « Porto Alegre, estandarte » à « huir de la catástrofe ». L’introduction et la conclusion hors version éclairent l’expression, dont les deux demandes sont traitées. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

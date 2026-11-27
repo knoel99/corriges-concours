@@ -16,7 +16,9 @@
   },
   "sources": {
     "sujet": "https://www.concours-bce.com/sites/default/files/2026-04/75%20AR%20-%20LANGUE_VIVANTE_A_ELVI_ARABE_ITALIEN_PORTUGAIS_RUSSE.pdf#page=8",
-    "sujet_sha256": "15c3ad1a28070ed3e4cc51677da9e62c38d2a07d29e3303ae0d1f790769e12e2"
+    "sujet_sha256": "15c3ad1a28070ed3e4cc51677da9e62c38d2a07d29e3303ae0d1f790769e12e2",
+    "rapport_jury": "https://www.concours-bce.com/sites/default/files/2026-11/75%20-%20Italien%20LVA%20ELVi%202026.pdf",
+    "rapport_sha256": "37c92c8674cb8dc117db10e6f60046dce807337854e7b416248ff61d8ff7bb4e"
   },
   "figures": [
     {
@@ -25,7 +27,7 @@
       "legende": "Langue commune et usages locaux"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -36,6 +38,44 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Résumé sur le rapport entre langue commune et parlers locaux, essai sur leurs fonctions sociales et culturelles, thème borné de Christian Bec, méthode d'exploitation des quatre pièces et schéma."
+    },
+    {
+      "phase": "lecture_rapport_jury",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "fui_physique_deux",
+      "modifications": false,
+      "perimetre": "Rapprochement du rapport BCE de la langue et du niveau correspondants avec le sujet et les trois exercices."
+    },
+    {
+      "phase": "revision",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "fui_physique_deux",
+      "modifications": true,
+      "perimetre": "Fascicule 75-AR, section italien-lva p. 8–12 et garde p. 1. Quatre pièces numérotées sur le sujet malgré les cinq évoquées dans le rapport. Comparaison Balboni–Il Post, accès à la langue commune et usages effectifs, portée des aires linguistiques de la carte. Thème de la première phrase sur la centralisation jusqu’à la majorité des Italiens au début du XXe siècle. Résumé 344 mots ; essai 501 mots. Contrôles dans les deux éditions."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I. Résumé analytique comparatif",
+      "II. Essai argumenté",
+      "III. Thème"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "origine_attestation": {
+      "phase": "revision",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "15c3ad1a28070ed3e4cc51677da9e62c38d2a07d29e3303ae0d1f790769e12e2",
+      "perimetre": "Fascicule 75-AR, section italien-lva p. 8–12 et garde p. 1. Quatre pièces numérotées sur le sujet malgré les cinq évoquées dans le rapport. Comparaison Balboni–Il Post, accès à la langue commune et usages effectifs, portée des aires linguistiques de la carte. Thème de la première phrase sur la centralisation jusqu’à la majorité des Italiens au début du XXe siècle. Résumé 344 mots ; essai 501 mots. Contrôles dans les deux éditions."
+    }
+  }
 }

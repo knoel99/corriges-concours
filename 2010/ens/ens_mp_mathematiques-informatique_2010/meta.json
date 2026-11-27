@@ -1,0 +1,100 @@
+{
+  "slug": "ens_mp_mathematiques-informatique_2010",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Mathématiques-informatique",
+    "annee": 2010,
+    "duree_heures": 4
+  },
+  "questions": 26,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-i/session-2010/MATHEMATIQUES%20-%20INFORMATIQUE%2010.05M.pdf",
+    "sujet_sha256": "5af66e01d6328b67358ce38cf493a5b6b3acf2d8efcfd925c753907dc300754d",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-i/session-2010/Rapport_math-info.pdf",
+    "rapport_sha256": "ba9bf3bc0035f6847209ad0e1f99e0059a1b8168c92bc8e793cbee28e46927c0",
+    "page_organisateur": "https://banques-ecoles.fr/cms/filiere-mp/les-annales-et-rapports-des-jurys/",
+    "identification": "Le cahier de quatre heures est commun aux ENS de Paris, Lyon et Cachan pour le groupe I de MP."
+  },
+  "figures": [
+    {
+      "fichier": "figures/quatre-generateurs.svg",
+      "question": "2.8",
+      "legende": "Les quatre colonnes minimales ont les mêmes deuxième et quatrième coordonnées et se répartissent trois unités entre la première et la troisième."
+    },
+    {
+      "fichier": "figures/montants-quatre-et-sept.svg",
+      "question": "3.3",
+      "legende": "Montants de 0 à 20 obtenus avec des pièces de 4 et 7 en vert. Le dernier montant manquant est 17."
+    },
+    {
+      "fichier": "figures/pyramides-et-boites.svg",
+      "question": "4.4",
+      "legende": "Boîtes de côtés 2 et 3 pour m = 6. Leur union recouvre le triangle sous la droite pleine et reste sous la droite pointillée de niveau 11."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 26 questions des quatre parties sur les pages scannées et contrôle avec le rapport du jury. Mesure de terminaison avec ex æquo, exécution des 25 coupures de Transf, preuve du rayon couvrant par classes et cellules, optimisation de la borne finale. Trois figures originales."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture du sujet 10.05M et du rapport-corrigé. Contrôle des 26 questions principales, des subdivisions de 1.1 et 3.3 et des trois figures. Rejeu des 25 coupures et des 26 feuilles de la matrice de 2.8, ajout de la trace explicite de la première coupure dans les deux éditions. Vérification du rayon couvrant par les classes de résidus, des volumes par tranches et de l’optimisation finale, y compris le cas d’une pièce de valeur un."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7",
+      "2.8",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "3.7",
+      "3.8",
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.6"
+    ],
+    "precision": "Les 26 questions principales sont traitées dans les deux éditions, y compris les deux demandes de 1.1 et les quatre de 3.3. Les pages de cahier contenant les questions sont les pages numérisées 2 à 5. La cinquième page porte la mention « Fin de l’épreuve ». Les pages 6 à 8 ne comportent aucune question.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "5af66e01d6328b67358ce38cf493a5b6b3acf2d8efcfd925c753907dc300754d",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Relecture du sujet 10.05M et du rapport-corrigé. Contrôle des 26 questions principales, des subdivisions de 1.1 et 3.3 et des trois figures. Rejeu des 25 coupures et des 26 feuilles de la matrice de 2.8, ajout de la trace explicite de la première coupure dans les deux éditions. Vérification du rayon couvrant par les classes de résidus, des volumes par tranches et de l’optimisation finale, y compris le cas d’une pièce de valeur un.",
+      "commit_redaction_anterieure": "07bc91c14618a437a60093809fdf56ceb5822fae"
+    }
+  }
+}

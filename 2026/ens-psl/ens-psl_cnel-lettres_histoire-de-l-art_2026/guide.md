@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Préparer la composition
 
 Le rapport donne le sujet intégral et demande de varier les époques et les médiums. Le jury attire expressément l’attention sur les collages cubistes et sur *La clef des songes*. L’épreuve écrite du département Arts durait trois heures. [ENS-PSL, rapport 2026, p. 2 et 4](https://www.ens.psl.eu/sites/default/files/rapport_du_jury_du_departement_arts_cnel_2026_ens-psl.pdf)
@@ -18,7 +20,13 @@ Le rapport donne le sujet intégral et demande de varier les époques et les mé
 
 **Vérifier les exemples.** Pour Picasso, distinguer la corde, la toile cirée imprimée et les lettres peintes. Pour Magritte, annoncer la date et le lieu de conservation de la version choisie. Pour Holzer, distinguer les affiches de la fin des années 1970, l’écran publicitaire de 1982 et la réinstallation muséale de 2024. La même phrase prend une autre valeur selon son support et l’institution qui la porte.
 
-![Trois opérations confiées au spectateur. Un fragment appelle un complément, une légende appelle une vérification, une définition appelle une comparaison.](figures/picasso-magritte-kosuth.svg)
+![De Picasso à Kosuth, trois gestes de lecture. Chez Magritte, une seule des quatre cases fait coïncider le mot avec l’objet.](figures/picasso-magritte-kosuth.svg)
+
+> [!INDICATION]
+> Cachez les quatre légendes de Magritte, puis découvrez seulement celle de l’éponge. Quelle règle attendez-vous pour les trois autres cases ? Recommencez en cachant la seule éponge. Pourquoi la seconde expérience rend-elle le désaccord plus facile à expliquer et la convention plus difficile à voir ?
+
+> [!INDICATION]
+> Regardez la page d’Apollinaire à deux distances. Nommez ce qui arrive en premier dans chaque cas, puis décidez quels effets survivraient à une lecture à voix haute sans la page sous les yeux.
 
 ## Composition rédigée
 
@@ -40,6 +48,10 @@ L’importance du collage cubiste tient à une expérience concrète de cette h�
 
 La mise en page de *La clef des songes* de René Magritte semble, en revanche, garantir une correspondance réglée. Dans la version de 1927 conservée à Munich, des objets isolés sont disposés en cases avec des mots écrits à leur pied. L’arrangement rappelle la planche d’apprentissage sur laquelle un enfant doit pouvoir passer sans difficulté de la chose représentée à son nom. Or un sac se trouve associé au ciel, un couteau à l’oiseau. Le lecteur reconnaît assez bien le dessin et comprend assez bien le mot pour éprouver leur désaccord. La place de la légende a fait naître une promesse de désignation que les associations défont. Picasso laissait le lecteur compléter un fragment. Magritte rend le mot disponible en entier et déplace la difficulté vers la relation que nous attendions entre deux signes parfaitement reconnaissables. Le trouble repose sur cette attente apprise. [Pinakothek der Moderne, version de 1927](https://www.sammlung.pinakothek.de/de/artwork/jpxe1JnxJ7)
 
+Le quatrième compartiment est décisif. Sous une feuille, on lit « la table », mais sous l’éponge on lit bien « l’éponge ». Si toutes les étiquettes avaient été déplacées, il suffirait de conclure que ce petit lexique a été mal rangé. Le seul accord oblige au contraire à reprendre l’examen case par case. Pourquoi avons-nous admis aussitôt que l’inscription inférieure devait nommer la chose supérieure ? Le cadre qui les réunit et l’habitude de l’imagier scolaire ont institué cette fonction avant même la lecture du premier mot. Magritte peut alors la suspendre trois fois et la satisfaire une fois. C’est en ménageant cet accord qu’il rend sensible la convention qui règle les quatre. [La version de 1927 reproduite, Musée Thyssen-Bornemisza, p. 11](https://www.museothyssen.org/sites/default/files/document/2024-03/03_Magritte_JL%20Calderon%20Aguirrezabala_OpenWindows_13.pdf#page=11)
+
+En 1918, la page 62 de *Calligrammes* d’Apollinaire propose une expérience inverse. Dans *Il pleut*, cinq traînées de mots presque verticales descendent de gauche à droite, sous un titre composé horizontalement. De loin, l’œil saisit leur direction commune d’un coup. Pour comprendre une phrase, il faut revenir à son départ, descendre une seule ligne et laisser momentanément les quatre autres. Les premiers mots font entendre des « voix de femmes » : la pluie que l’on avait cru voir devient aussi une pluralité de voix et de souvenirs. Recopier le poème sur cinq lignes horizontales conserverait les mots et changerait le temps que nous mettons à passer de la pluie visible aux voix entendues. Cet exemple éclaire la place de la poésie dans une histoire des arts visuels. La page fournit ici une partie de la preuve, au même titre que la surface du tableau. [Fac-similé de la page 62, édition du Mercure de France](https://fr.wikisource.org/wiki/Page:Apollinaire_-_Calligrammes.djvu/62)
+
 ### III. Faire du lecteur un participant et lui assigner une place
 
 Il suffit parfois d’exposer une définition à la place où l’on attendrait une explication pour que l’explication devienne un nouvel objet à examiner. Dans *One and Three Chairs* de Joseph Kosuth, en 1965, une chaise pliante en bois voisine avec une photographie de chaise et un agrandissement photographique d’une entrée de dictionnaire. Si l’on retire mentalement la définition, il reste une comparaison entre un objet singulier et son image. Quand on la rétablit, la classe entière des objets que l’on peut appeler *chair* entre dans le jeu. La photographie permet de reconnaître une apparence particulière, la définition peut convenir à des chaises qui auraient une tout autre apparence, et le meuble occupe devant nous un volume que les deux panneaux figurent ou décrivent. Le visiteur éprouve ces écarts en passant de l’un à l’autre. La définition exposée possède désormais un format et une place aussi déterminants que ses termes. [Museum of Modern Art, *One and Three Chairs*](https://www.moma.org/collection/works/81435)
@@ -50,4 +62,8 @@ Le lecteur de l’amphore pouvait départager deux voix en se penchant sur deux 
 
 ## Schéma de lecture
 
-![Deux parcours de lecture. Le cercle du bol conduit l’œil le long d’une inscription fixe. Dans la rotonde de Holzer, la ligne défile devant un lecteur lui-même mobile. Schémas de principe.](figures/deux-parcours-de-lecture.svg)
+![Sur le bol, l’inscription reste fixe sur le bord. Dans la rotonde de 2024, le texte défile et le lecteur peut se déplacer.](figures/deux-parcours-de-lecture.svg)
+
+## Source du sujet
+
+Le rapport du département Arts donne le sujet p. 4 et les modalités de l’écrit p. 2. [Rapport du jury ENS-PSL 2026](https://www.ens.psl.eu/sites/default/files/rapport_du_jury_du_departement_arts_cnel_2026_ens-psl.pdf#page=4)

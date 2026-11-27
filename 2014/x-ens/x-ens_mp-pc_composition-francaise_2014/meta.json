@@ -1,0 +1,91 @@
+{
+  "slug": "x-ens_mp-pc_composition-francaise_2014",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC",
+    "matiere": "Composition française",
+    "annee": 2014,
+    "modalite": "écrit"
+  },
+  "intitule": "La réalité de l’instant selon Gaston Bachelard",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2014/10/14_mppc_suj_francais.pdf",
+    "sha256_sujet": "f71d04fe209799edab22d7001aa0ce5da7c3852446a9d131dd6c1d02e74fb619",
+    "index_sujet": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2014/",
+    "sujet_pages": 1,
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/01/14_mp_pc_rap_ecrit_francais.pdf",
+    "sha256_rapport_jury": "54bd03cf31f288cdf853c8232a176a0094e7810b63028efa568912dda71c41d1",
+    "index_rapport_jury": "https://banques-ecoles.fr/cms/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2014/",
+    "rapport_jury_pages": 10,
+    "code_garde": "XEULCR",
+    "duree": "4 heures",
+    "attribution": "Composition de quatre heures, commune aux filières MP et PC. La garde porte XEULCR pour l’X, l’ESPCI et les ENS de Paris, Lyon et Cachan ainsi que Rennes.",
+    "programme": "https://www.education.gouv.fr/bo/13/Hebdo26/ESRS1300172A.htm",
+    "reference_programme": "Arrêté du 30 mai 2013, BO n° 26 du 27 juin 2013, NOR ESRS1300172A, article 1, thème 2 « Le temps vécu ».",
+    "oeuvres_au_programme": [
+      "Gérard de Nerval, Sylvie.",
+      "Virginia Woolf, Mrs Dalloway, traduction Marie-Claire Pasquier, Folio classique.",
+      "Henri Bergson, Essai sur les données immédiates de la conscience, chapitre II, « De la multiplicité des états de conscience. L’idée de durée »."
+    ],
+    "passages_verifies": [
+      "Nerval, chapitres II (ronde), III (pendule), VII (Châalis) et XIV (Dernier feuillet).",
+      "Bergson, chapitre II, oscillations du balancier et notes d’une mélodie.",
+      "Woolf, départ pour acheter les fleurs, automobile, chapeau confectionné pour Mrs Peters. Texte original consulté dans l’édition de l’Université de Virginie, sans citation traduite."
+    ],
+    "portee_rapport": "Rapport commun MP–PC, dix pages. La liste des rapports sur banques-ecoles.fr abrège le code en XEULC ; le PDF porte XEULCR et cite les ENS d’Ulm, de Cachan, de Lyon et de Rennes. P. 2–9, vies de l’instant, durée et récit. P. 9–10, distinguer instant et présent, examiner « resserrée », « suspendue » et « néant ».",
+    "lecture_bergson": "https://fr.wikisource.org/wiki/Essai_sur_les_donn%C3%A9es_imm%C3%A9diates_de_la_conscience/Chapitre_II",
+    "lecture_nerval_texte": "https://upload.wikimedia.org/wikipedia/commons/8/87/Les_filles_du_feu_by_Nerval%2C_G%C3%A9rard_de.pdf",
+    "lecture_nerval_dernier_feuillet": "https://odysseum.eduscol.education.fr/sylvie-gerard-de-nerval-dernier-feuillet",
+    "lecture_woolf_texte_anglais": "https://anthology.lib.virginia.edu/work/Woolf/woolf-dalloway"
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Dissertation",
+      "legende": "Que reste-t-il entre deux battements ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de la dissertation sur le passage de Gaston Bachelard, confrontation des trois œuvres, vérification de la garde, du programme prescrit, du rapport commun MP-PC et des passages cités. Ajout d’une préparation guidée et d’un schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Woolf, Mrs Dalloway, première sonnerie de Big Ben, confrontée à la rétention de la phrase mélodique chez Bergson et au néant entre les instants chez Bachelard. Comparaison au sujet original et au rapport. Relecture des trois mouvements et de la conclusion dans les deux éditions."
+    }
+  ],
+  "gabarit": "dissertation",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "L’instant, la durée et les deux néants"
+    ],
+    "pages_du_sujet": 1,
+    "pages_pdf_des_questions": {
+      "L’instant, la durée et les deux néants": 1
+    },
+    "precision": "Dissertation unique de quatre heures sur la citation de Bachelard, au regard des trois œuvres prescrites. Le repère est un intitulé éditorial. La consigne imprimée se trouve page 1. Rapport du jury, pages 1 à 10."
+  }
+}

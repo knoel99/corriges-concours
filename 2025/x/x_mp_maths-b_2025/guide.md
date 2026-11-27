@@ -6,15 +6,17 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
 Quatre parties conduisent de l’interpolation avec multiplicités aux fonctions de type positif sur la sphère. Les outils intermédiaires sont la quadrature, les polynômes orthogonaux et une génératrice développée en série entière.
 
-Les 44 repères sont numérotés de manière continue. Chaque titre indique le repère du sujet. Les renvois dans les solutions utilisent ces repères.
+Les titres et les renvois reprennent les 44 questions et sous-questions du fascicule.
 
 ## Première partie — Interpolation avec multiplicités
 
-### Question 1 — 1a
+### Question 1a
 
 > [!INDICATION]
 > Comptez les zéros de la dérivée aux points donnés, puis dans les intervalles qui les séparent.
@@ -33,7 +35,7 @@ $$
 $$
 Ainsi $h'$ s’annule à l’ordre $N$ au sens de l’énoncé.
 
-### Question 2 — 1b
+### Question 1b
 
 > [!INDICATION]
 > Appliquez plusieurs fois la conclusion précédente en diminuant l’ordre d’une unité.
@@ -42,7 +44,7 @@ Ainsi $h'$ s’annule à l’ordre $N$ au sens de l’énoncé.
 
 Par Q1a, $h'$ s’annule à l’ordre $N$. On itère tant que l’ordre est au moins deux, en utilisant la régularité de chaque dérivée. Ainsi $h^{(N)}$ s’annule à l’ordre 1, ce qui donne un point $c\in[a,b]$ où elle vaut zéro.
 
-### Question 3 — 2a
+### Question 2a
 
 > [!INDICATION]
 > Traduisez les annulations de dérivées en divisibilité polynomiale.
@@ -57,7 +59,7 @@ Leur produit, de degré $\deg P$, divise donc $Q$.
 
 Comme $\deg Q<\deg P$, **$Q=0$**.
 
-### Question 4 — 2b
+### Question 2b
 
 > [!INDICATION]
 > Comparez le nombre de données prescrites à la dimension de l’espace des polynômes admissibles.
@@ -78,7 +80,7 @@ Le vecteur des dérivées de $f$ admet ainsi un unique antécédent $H(f,P)$.
 
 Si $P$ est constant non nul, il n’y a aucune condition et $H=0$ dans l’espace réduit à zéro.
 
-### Question 5 — 3a
+### Question 3a
 
 > [!INDICATION]
 > Appliquez Taylor avec reste intégral à $g$ autour de $t_i$, puis changez de paramètre dans le reste.
@@ -93,7 +95,7 @@ $$
 Cette formule inclut $x=t_i$, où les deux membres s’annulent. Le changement de variable $v=1-s$ fournit explicitement
 $$g(x)=(x-t_i)^{k_i}\int_0^1\frac{v^{k_i-1}}{(k_i-1)!}\,g^{(k_i)}(t_i v+x(1-v))\,\mathrm dv.$$
 
-### Question 6 — 3b
+### Question 3b
 
 > [!INDICATION]
 > Au voisinage de chaque racine, simplifiez le facteur qui s’annule avant de dériver.
@@ -104,7 +106,7 @@ Au voisinage de $t_i$, les facteurs $(x-t_j)^{k_j}$ pour $j\ne i$ ne s’annulen
 
 Cette intégrale est de classe $C^\infty$ en $x$. À chaque ordre de dérivation, l’intégrande contient une dérivée continue de $g$ évaluée sur le segment $[a,b]$, bornée sur ce segment, et des facteurs en $v$ bornés sur $[0,1]$. Le théorème de dérivation sous l’intégrale s’applique à chaque ordre. On obtient ainsi un prolongement lisse à toutes les racines. Il est unique par continuité, puisque le domaine initial est dense.
 
-### Question 7 — 4a
+### Question 4a
 
 > [!INDICATION]
 > Le polynôme interpolateur pour un seul nœud est le polynôme de Taylor tronqué en ce nœud.
@@ -117,7 +119,7 @@ $$
 $$
 En effet, l’intégrale de $v^{n-1}/(n-1)!$ sur $[0,1]$ vaut $1/n!$.
 
-### Question 8 — 4b
+### Question 4b
 
 > [!INDICATION]
 > Décomposez deux fois la fonction en interpolateur plus reste factorisé. Vérifiez le degré du polynôme obtenu.
@@ -134,7 +136,7 @@ H(f,P_1P_2)=H(f,P_1)+P_1H(Q(f,P_1),P_2).
 $$
 En divisant le reste hors des racines puis en prolongeant, on obtient aussi $Q(f,P_1P_2)=Q(Q(f,P_1),P_2)$.
 
-### Question 9 — 5a
+### Question 5a
 
 > [!INDICATION]
 > Vérifiez les ordres aux nœuds et ajoutez le zéro fourni par l’évaluation au point extérieur à la liste.
@@ -151,7 +153,7 @@ Le point $t$ est distinct des nœuds et appartient au segment proposé.
 
 La somme des ordres retenus est $\deg P+1$.
 
-### Question 10 — 5b
+### Question 5b
 
 > [!INDICATION]
 > Appliquez Q1b et dérivez autant de fois que le degré de $P$.
@@ -163,7 +165,7 @@ $$
 \boxed{f(t)-H(f,P)(t)=\frac{f^{(d)}(\xi)}{d!}P(t).}
 $$
 
-### Question 11 — 6
+### Question 6
 
 > [!INDICATION]
 > Commencez par un facteur linéaire et étudiez toutes les dérivées de son quotient intégral.
@@ -188,7 +190,7 @@ Dans le cas d’un polynôme constant, le quotient est $f$.
 
 ## Deuxième partie — Quadrature et polynômes orthogonaux
 
-### Question 12 — 7a
+### Question 7a
 
 > [!INDICATION]
 > Exprimez le polynôme dans la base d’interpolation de Lagrange aux $n$ nœuds.
@@ -197,7 +199,7 @@ Dans le cas d’un polynôme constant, le quotient est $f$.
 
 Soit $L_i=\prod_{j\ne i}(X-r_j)/(r_i-r_j)$. Pour $P\in\mathbb R_{n-1}[X]$, on a $P=\sum_i P(r_i)L_i$, car la différence est de degré au plus $n-1$ et s’annule aux $n$ nœuds. En intégrant, on obtient le résultat avec $\lambda_i=\int_{-1}^1 L_i(x) f(x)\,\mathrm dx$.
 
-### Question 13 — 7b
+### Question 7b
 
 > [!INDICATION]
 > Divisez par $D$ et appliquez des arguments distincts au quotient et au reste.
@@ -214,7 +216,7 @@ Il s’annule aussi en chaque $r_i$.
 
 On applique Q7a à $R$ pour retrouver l’égalité (1) pour $P$.
 
-### Question 14 — 7c
+### Question 7c
 
 > [!INDICATION]
 > Le polynôme carré proposé ne prend une valeur non nulle qu’au nœud d’indice $i$.
@@ -223,7 +225,7 @@ On applique Q7a à $R$ pour retrouver l’égalité (1) pour $P$.
 
 Le polynôme $\prod_{j\ne i}(X-r_j)^2$ est de degré $2n-2$, positif ou nul et non nul. Son intégrale pondérée est strictement positive puisque $f$ est continue strictement positive. Dans (1), le terme d’indice $i$ est le seul qui subsiste, avec une évaluation strictement positive. Donc **$\lambda_i>0$**.
 
-### Question 15 — 7d
+### Question 7d
 
 > [!INDICATION]
 > Utilisez la quadrature pour transformer la forme en une somme sur les nœuds qui survivent au facteur $f_j$.
@@ -237,7 +239,7 @@ $$
 Ici $w_{j,i}=\lambda_i f_j(r_i)$.
 Pour $i\leq j$, $f_j(r_i)=0$. Pour $i>j$, chacun des facteurs de $f_j(r_i)$ est positif, par l’ordre des racines. La forme est bilinéaire, symétrique et positive. Si la forme quadratique s’annule, le polynôme s’annule aux $n-j$ nœuds restants. Son degré étant au plus $n-j-1$, il est nul. C’est un produit scalaire.
 
-### Question 16 — 8a
+### Question 8a
 
 > [!INDICATION]
 > Orthogonalisez les monômes sans changer leurs coefficients dominants.
@@ -246,7 +248,7 @@ Pour $i\leq j$, $f_j(r_i)=0$. Pour $i>j$, chacun des facteurs de $f_j(r_i)$ est 
 
 L’orthogonalisation de Gram–Schmidt de $(1,X,\ldots,X^{n-j-1})$ donne à chaque étape $X^i$ moins sa projection sur $\mathbb R_{i-1}[X]$. Le résultat est unitaire de degré $i$, et il est orthogonal à tous les degrés inférieurs. Pour l’unicité, deux candidats au même indice diffèrent d’un polynôme de degré inférieur à $i$, orthogonal à tout cet espace. Sa norme est nulle et il est donc nul.
 
-### Question 17 — 8b
+### Question 8b
 
 > [!INDICATION]
 > Faites apparaître le produit $D$ dans la définition du produit scalaire pondéré.
@@ -261,7 +263,7 @@ Le polynôme $q_{n-j}$ est unitaire.
 
 Deux candidats diffèrent par un élément de $\mathbb R_{n-j-1}[X]$ orthogonal à cet espace, donc nul par Q7d.
 
-### Question 18 — 9a
+### Question 9a
 
 > [!INDICATION]
 > Développez la différence dans la base orthogonale. Pour les petits indices, faites passer $X$ d’un argument à l’autre.
@@ -279,7 +281,7 @@ $$
 q_i-Xq_{i-1}=a_iq_{i-1}+b_iq_{i-2}.
 $$
 
-### Question 19 — 9b
+### Question 9b
 
 > [!INDICATION]
 > Prenez le produit scalaire de la relation précédente avec $q_{i-2}$.
@@ -291,7 +293,7 @@ $$
 b_i\langle q_{i-2},q_{i-2}\rangle_j=-\langle Xq_{i-1},q_{i-2}\rangle_j.
 $$
 
-### Question 20 — 9c
+### Question 9c
 
 > [!INDICATION]
 > Comparez le coefficient dominant de $Xq_{i-2}$ avec celui de $q_{i-1}$.
@@ -305,7 +307,7 @@ $$
 $$
 Les deux normes sont strictement positives par Q7d puisque $i-1\leq n-j-1$.
 
-### Question 21 — 10a
+### Question 10a
 
 > [!INDICATION]
 > Utilisez simplement le degré et le caractère unitaire.
@@ -314,7 +316,7 @@ Les deux normes sont strictement positives par Q7d puisque $i-1\leq n-j-1$.
 
 On a $q_0=1$, sans racine. Le polynôme $q_1$ est réel, unitaire et de degré 1, donc possède exactement une racine réelle, simple. Cela vaut également si $q_1$ est le polynôme de Q8b.
 
-### Question 22 — 10b
+### Question 10b
 
 > [!INDICATION]
 > Évaluez la relation de Q9a aux racines du polynôme précédent. Comparez les signes entre ces points et aux deux infinis.
@@ -345,7 +347,7 @@ Le degré impose qu’il y a exactement ces $i$ racines et qu’elles sont simpl
 
 ![Avec un poids constant sur le segment, les trois racines de degré 3 s’intercalent entre les quatre racines de degré 4. Les symboles correspondent aux zéros, sur le même axe.](figures/entrelacement-legendre.svg)
 
-### Question 23 — 10c
+### Question 10c
 
 > [!INDICATION]
 > Remontez l’entrelacement à partir du polynôme dont la plus grande racine est connue.
@@ -364,7 +366,7 @@ Pour $i=0$, $q_0=1$.
 
 Ainsi **$q_i(r_{j+1})>0$**.
 
-### Question 24 — 11a
+### Question 11a
 
 > [!INDICATION]
 > Regardez le degré du quotient de la différence. Il est inférieur aux deux degrés du premier argument.
@@ -373,10 +375,10 @@ Ainsi **$q_i(r_{j+1})>0$**.
 
 Posons $r=r_{j+1}$. Le quotient $(q_\ell-q_\ell(r))/(X-r)$ est un polynôme de degré au plus $\ell-1\leq i-1$, ou le polynôme nul si $\ell=0$. Il est orthogonal à $q_i$ et à $q_{i+1}$ par Q8a et Q8b, ce qui donne l’égalité.
 
-### Question 25 — 11b
+### Question 11b
 
 > [!INDICATION]
-> Dans l’égalité précédente, simplifiez les deux facteurs $X-r$ de part et d’autre du produit de polynômes.
+> Écrivez $q_{i+1}+\alpha_iq_i=(X-r)p_i$. Dans l’intégrale de 11a, le produit devient $p_i(q_\ell-q_\ell(r))$. Développez ensuite $p_i$ dans la base orthogonale.
 
 #### Solution
 
@@ -389,7 +391,7 @@ Le coefficient multiplicatif de $c_0$ est donc strictement positif par Q7d et Q1
 
 Le polynôme $p_i$ est unitaire de degré $i$, d’où $c_i=1$, ce qui impose $c_0>0$ et alors $c_\ell>0$ pour tout $\ell\leq i$.
 
-### Question 26 — 12
+### Question 12
 
 > [!INDICATION]
 > Multipliez par le nouveau facteur qui intervient dans le passage de $f_j$ à $f_{j+1}$.
@@ -403,7 +405,7 @@ $$
 $$
 par Q8a et Q8b. Pour $i=0$, l’espace à considérer est réduit à zéro. Pour l’indice maximal, l’égalité concerne la forme intégrale prolongée au degré du polynôme terminal, comme en Q8b.
 
-### Question 27 — 13
+### Question 13
 
 > [!INDICATION]
 > Pour chaque niveau, reconnaissez les polynômes du niveau suivant à l’aide de Q12. Propagez ensuite leurs coordonnées vers le niveau zéro.
@@ -434,7 +436,7 @@ Par exemple, pour $n=2$ et le poids constant $1$ sur $[-1,1]$, la base unitaire 
 
 ## Troisième partie — Développement et orthogonalité
 
-### Question 28 — 14
+### Question 14
 
 > [!INDICATION]
 > Réécrivez le trinôme comme une somme de termes positifs.
@@ -443,7 +445,7 @@ Par exemple, pour $n=2$ et le poids constant $1$ sur $[-1,1]$, la base unitaire 
 
 On a $1-2rx+r^2=(r-x)^2+1-x^2>0$ pour $|x|<1$. Le trinôme est lisse et la puissance $u\mapsto u^{-\lambda}$ est lisse sur les réels strictement positifs. Leur composée est **de classe $C^\infty$ sur $]-1,1[^2$**.
 
-### Question 29 — 15
+### Question 15
 
 > [!INDICATION]
 > Développez la puissance en fonction de $-2xr+r^2$ et justifiez le regroupement par degré.
@@ -469,7 +471,7 @@ Elle est finie.
 
 On regroupe donc par puissances de $r$, ce qui fournit un développement en série entière au voisinage de zéro.
 
-### Question 30 — 16a
+### Question 16a
 
 > [!INDICATION]
 > Dérivez par rapport à $r$, multipliez par le trinôme et identifiez les coefficients.
@@ -487,7 +489,7 @@ $$
 $$
 En regroupant, on retrouve la récurrence proposée.
 
-### Question 31 — 16b
+### Question 16b
 
 > [!INDICATION]
 > Dans la récurrence, un seul terme peut contribuer au degré maximal.
@@ -505,7 +507,7 @@ $$
 \boxed{c_n=\frac{2^n}{n!}\prod_{j=0}^{n-1}(\lambda+j).}
 $$
 
-### Question 32 — 17a
+### Question 17a
 
 > [!INDICATION]
 > Utilisez l’expression des coefficients d’une série entière à partir des dérivées au centre.
@@ -514,7 +516,7 @@ $$
 
 La série en $r$ est développable à l’origine et se dérive terme à terme dans son intervalle de convergence. À l’origine, la dérivée d’ordre $n$ vaut $n!$ fois le coefficient d’ordre $n$. Ainsi $a_n^{(\lambda)}(x)=\partial_r^nF_\lambda(x,0)/n!$.
 
-### Question 33 — 17b
+### Question 17b
 
 > [!INDICATION]
 > Calculez la dérivée en $x$ de la génératrice, puis faites commuter les dérivées partielles.
@@ -531,7 +533,7 @@ $$
 $$
 La dernière égalité résulte de la formule de Leibniz, le terme ayant encore un facteur $r$ s’annulant en zéro.
 
-### Question 34 — 17c
+### Question 17c
 
 > [!INDICATION]
 > Intégrez la dérivée de $t(1-t^2)^{\lambda+1/2}$ et utilisez la récurrence au premier rang.
@@ -545,7 +547,7 @@ $$
 $$
 Posons $w(t)=(1-t^2)^{\lambda-1/2}$. Le membre gauche vaut $\int_{-1}^1(1-t^2)w(t)\,\mathrm dt$, donc $\int w=2(\lambda+1)\int t^2w$. La récurrence Q16a donne $a_2^{(\lambda)}=2\lambda(\lambda+1)X^2-\lambda$. Sa moyenne pondérée est donc nulle.
 
-### Question 35 — 17d
+### Question 17d
 
 > [!INDICATION]
 > Intégrez par parties pour relier le moment linéaire au moment constant au paramètre suivant. Menez la récurrence pour tous les paramètres simultanément.
@@ -570,7 +572,7 @@ En intégrant la récurrence Q16a, les deux termes du membre droit s’annulent 
 
 Cela prouve par récurrence toutes les annulations constantes, puis la formule donne toutes les annulations linéaires demandées.
 
-### Question 36 — 17e
+### Question 17e
 
 > [!INDICATION]
 > Utilisez la récurrence pour contrôler les indices obtenus lorsqu’on multiplie par une puissance de $X$.
@@ -593,7 +595,7 @@ Le poids est strictement positif sur $]-1,1[$, ce qui assure la positivité déf
 
 ## Quatrième partie — Fonctions de type positif
 
-### Question 37 — 18a
+### Question 18a
 
 > [!INDICATION]
 > Calculez directement la forme quadratique de la matrice de rang au plus un.
@@ -602,7 +604,7 @@ Le poids est strictement positif sur $]-1,1[$, ce qui assure la positivité déf
 
 La matrice $UU^T$ est symétrique. Pour tout $X$, $X^TUU^TX=(U^TX)^2\geq0$, donc $UU^T\in S_n^+$.
 
-### Question 38 — 18b
+### Question 18b
 
 > [!INDICATION]
 > Vérifiez l’égalité sur un coefficient quelconque.
@@ -611,7 +613,7 @@ La matrice $UU^T$ est symétrique. Pour tout $X$, $X^TUU^TX=(U^TX)^2\geq0$, donc
 
 Au coefficient $(i,j)$, le membre gauche vaut $a_{ij}(b_{ij}+c_{ij})$, qui est la somme $a_{ij}b_{ij}+a_{ij}c_{ij}$. C’est le coefficient correspondant du membre droit.
 
-### Question 39 — 18c
+### Question 18c
 
 > [!INDICATION]
 > Appliquez le théorème spectral et écrivez la matrice diagonale comme somme de matrices de rang un.
@@ -620,7 +622,7 @@ Au coefficient $(i,j)$, le membre gauche vaut $a_{ij}(b_{ij}+c_{ij})$, qui est l
 
 La matrice réelle symétrique $M$ se diagonalise en base orthonormée de vecteurs propres $U_1,\ldots,U_n$. Ses valeurs propres $d_i$ sont positives ou nulles, en évaluant la forme quadratique sur ces vecteurs. La décomposition spectrale donne ainsi $M=\sum_i d_iU_iU_i^T$.
 
-### Question 40 — 18d
+### Question 18d
 
 > [!INDICATION]
 > Le produit coefficient par coefficient de deux matrices de rang un est encore de cette forme.
@@ -637,7 +639,7 @@ Par distributivité dans les deux arguments, le produit coefficient par coeffici
 
 Il est donc dans $S_n^+$.
 
-### Question 41 — 18e
+### Question 18e
 
 > [!INDICATION]
 > Pour un même choix de points, comparez la matrice du produit aux matrices des deux fonctions.
@@ -646,7 +648,7 @@ Il est donc dans $S_n^+$.
 
 Pour tout $k$ et tout choix des points $x_i$, la matrice associée au produit de deux fonctions est le produit coefficient par coefficient de leurs matrices respectives. Elles sont positives par hypothèse, donc le produit est positif par Q18d. Cela donne la propriété de type positif.
 
-### Question 42 — 19
+### Question 19
 
 > [!INDICATION]
 > Paramétrez les points du cercle par leurs angles et utilisez la formule du cosinus d’une différence.
@@ -665,7 +667,7 @@ Elle est positive par Q18a, pour tout choix de points et tout $k$.
 
 Donc **$T_n$ est de type positif en dimension 2**, y compris pour $n=0$.
 
-### Question 43 — 20
+### Question 20
 
 > [!INDICATION]
 > Utilisez la composition des interpolateurs. Vérifiez que la fonction passée au second interpolateur conserve sa monotonie absolue.
@@ -684,7 +686,7 @@ La somme et le produit par $\widehat P_1$ préservent cette propriété, par add
 
 L’identité de Q4b donne alors la propriété pour $H(f,P_1P_2)$, donc **$P_1P_2$ est $N$-conductif**.
 
-### Question 44 — 21
+### Question 21
 
 > [!INDICATION]
 > Commencez par le facteur associé au plus petit nœud. Pour ajouter un facteur, utilisez les coefficients obtenus en Q13 et la fermeture de Q20.

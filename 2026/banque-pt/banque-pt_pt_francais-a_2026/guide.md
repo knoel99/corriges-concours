@@ -10,6 +10,10 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Format.** Dissertation unique, 4 heures, sans dictionnaire ni appareil électronique. Aucune longueur imposée. Le sujet tient en deux phrases : une citation de Maurice Merleau-Ponty et une consigne.
@@ -56,7 +60,7 @@ On ne commence pas par chercher des exemples : on lit la citation comme un raiso
 
 #### Solution
 
-**Un seul raisonnement.** La première phrase procède par corrections : elle accorde à la nature le statut d'**objet**, puis le lui retire à moitié (« énigmatique », « pas tout à fait objet », « pas tout à fait devant nous »). La seconde, juxtaposée, la rectifie et l'explique : si la nature n'est pas devant nous, c'est parce qu'elle est notre sol. L'énigme de la première phrase trouve sa raison dans la seconde.
+**Un seul raisonnement.** La première phrase procède par corrections : elle part de l’expérience de la nature comme **objet** et précise jusqu’où cette description est valable (« énigmatique », « pas tout à fait objet », « pas tout à fait devant nous »). La seconde, juxtaposée, la rectifie et l'explique : même lorsque nous regardons la nature devant nous, elle soutient déjà notre regard. L'énigme de la première phrase trouve sa raison dans la seconde.
 
 **« Objet ».** Étymologiquement, l'objet est ce qui est jeté devant (*ob-jectum*), par opposition au sujet, ce qui est jeté dessous (*sub-jectum*). Être objet, c'est être placé en face d'un regard qui observe, mesure, connaît. Mais il faut distinguer l'objet inerte, l'objet vivant (que la biologie peine à objectiver, ce qui renvoie directement à Canguilhem) et l'objet technique, ce que l'homme utilise et manipule, d'où une réflexion légitime sur l'emprise de la technique sur la nature.
 
@@ -249,7 +253,7 @@ L'introduction du devoir complet (étape 8) suit ces cinq temps :
 
 Nous parlons de la nature comme d'un paysage que l'on regarde ou d'un objet que l'on étudie : la langue elle-même la place en face de nous, au bout du regard du promeneur ou sous l'instrument du savant. C'est cette évidence que Maurice Merleau-Ponty conteste dans ses cours du Collège de France de 1956-1957 : « La Nature est un objet énigmatique, un objet qui n'est pas tout à fait objet ; elle n'est pas tout à fait devant nous. Elle est notre sol, non pas ce qui est devant, mais ce qui nous porte. »
 
-Les deux phrases forment un seul raisonnement. La première accorde à la nature le statut d'objet, puis le lui retire à moitié. Or l'objet, étymologiquement, est ce qui est jeté devant (*ob-jectum*) : chose inerte que l'on observe, chose vivante que l'on expérimente, outil que l'on manipule. Une nature « pas tout à fait objet » est donc une nature que nous ne parvenons jamais à tenir entièrement à distance, d'où son caractère « énigmatique ». La seconde phrase, juxtaposée à la première, en donne la raison : si la nature n'est pas devant nous, c'est qu'elle est dessous. Le « sol » n'est pas ce qui nous entoure, mais ce sur quoi nous nous tenons, où nous nous enracinons, ce qui nous « porte » au double sens de soutenir et de faire vivre. Le possessif « notre » est lui-même ambigu : il dit notre appartenance à ce sol, mais aussi la prétention à le posséder, à le cultiver, à le fouler.
+Les deux phrases forment un seul raisonnement. La première part d’une expérience familière, celle de rencontrer un objet. La répétition de « pas tout à fait » limite la portée de cette expérience. Or l'objet, étymologiquement, est ce qui est jeté devant (*ob-jectum*) : chose inerte que l'on observe, chose vivante que l'on expérimente, outil que l'on manipule. Une nature « pas tout à fait objet » est donc une nature que nous ne parvenons jamais à tenir entièrement à distance, d'où son caractère « énigmatique ». La seconde phrase, juxtaposée à la première, en donne la raison : chaque fois que nous plaçons une chose devant nous, nous prenons déjà appui sur la nature pour la regarder. Le « sol » n'est pas ce qui nous entoure, mais ce sur quoi nous nous tenons, où nous nous enracinons, ce qui nous « porte » au double sens de soutenir et de faire vivre. Le possessif « notre » est lui-même ambigu : il dit notre appartenance à ce sol, mais aussi la prétention à le posséder, à le cultiver, à le fouler.
 
 Le sujet ne demande pas de définir la nature, mais d'évaluer si cette réflexion est « valable » pour définir « notre expérience » de la nature dans *Vingt mille lieues sous les mers* de Jules Verne (1869-1870), roman où un naturaliste découvre l'océan à bord d'un sous-marin, dans *La Connaissance de la vie* de Georges Canguilhem (1952, édition revue en 1965), essai sur la manière dont la biologie peut connaître le vivant, et dans *Le Mur invisible* de Marlen Haushofer (1963), récit d'une femme brusquement isolée dans une forêt autrichienne par une paroi inexplicable.
 
@@ -269,13 +273,15 @@ Il est possible de retourner au même endroit pour étudier un terrain sous ses 
 
 ![Deux fonctions d’un même terrain](figures/lecture-du-sujet.svg)
 
+Pour éprouver le mot « sol », garder le même rocher et changer le geste du sujet. L’analyse doit pouvoir dire ce qui demeure support jusque pendant l’acte qui détache un échantillon à observer.
+
 Les œuvres valident donc la première phrase de Merleau-Ponty : la nature peut être mise devant nous, mais elle y reste « énigmatique ». Reste à comprendre pourquoi : si elle échappe à l'objectivation, c'est peut-être que nous ne sommes jamais entièrement en face d'elle.
 
 **II. « Notre sol » : la nature comme ce qui nous porte et dont nous procédons**
 
-La seconde phrase de la citation rectifie et explique la première : la nature n'est pas « devant » nous parce qu'elle est d'abord sous nous. L'expérience de la nature cesse alors d'être frontale pour devenir une expérience d'appui.
+La seconde phrase de la citation fait apparaître ce que la première laissait dans l’ombre. L’expérience de la marche donne à sentir un appui qui persistait déjà lorsque nous nous arrêtions pour observer le paysage.
 
-**A. Un sol qui nourrit, mais pas de la même façon.** Les deux romans font de la nature une source de toutes les ressources. Le capitaine Nemo le proclame : « La mer est tout ! » Tout, à bord du *Nautilus*, vient d'elle : la nourriture tirée des poissons et des algues, les étoffes tissées avec le byssus de certains coquillages, l'énergie même, puisque le sodium des piles est extrait de l'eau de mer. La montagne porte aussi la narratrice : elle plante pommes de terre et haricots, fauche le foin pour l'hiver, trait la vache Bella, chasse pour la viande. Mais la différence est décisive. Nemo est porté par la mer à travers une machine qui le tient à l'abri d'elle, et son autonomie est d'abord une prouesse technique. La narratrice, elle, n'a que ses mains, quelques outils et ses bêtes : la terre ne la porte que si elle s'y épuise. Le même mot, « sol », recouvre ainsi une nature exploitée par la technique et une nature dont on dépend directement.
+**A. Un sol qui nourrit, mais pas de la même façon.** Les deux romans font de la nature une source de toutes les ressources. Le capitaine Nemo le proclame : « La mer est tout ! » Nemo rapporte à la mer jusqu’aux objets du quotidien à bord du *Nautilus* : la nourriture tirée des poissons et des algues, les étoffes tissées avec le byssus de certains coquillages, l'énergie même, puisque le sodium des piles est extrait de l'eau de mer. La montagne porte aussi la narratrice : elle plante pommes de terre et haricots, fauche le foin pour l'hiver, trait la vache Bella, chasse pour la viande. Mais la différence est décisive. Nemo est porté par la mer à travers une machine qui le tient à l'abri d'elle, et son autonomie est d'abord une prouesse technique. La narratrice, elle, n'a que ses mains, quelques outils et ses bêtes : la terre ne la porte que si elle s'y épuise. Le même mot, « sol », recouvre ainsi une nature exploitée par la technique et une nature dont on dépend directement.
 
 **B. Un sol dont nous procédons : l'homme vivant parmi les vivants.** Le sol n'est pas seulement ce qui fournit, c'est ce dans quoi l'on s'enracine. Canguilhem le montre sur le terrain du savoir lui-même. L'introduction de *La Connaissance de la vie*, « La pensée et le vivant », rappelle que la connaissance est une activité de vivant et que « la pensée du vivant doit tenir du vivant l'idée du vivant ». Le biologiste ne surplombe pas la vie qu'il étudie : il en procède, et c'est pourquoi il ne peut jamais la placer tout à fait devant lui. Les romans donnent à cette idée un contenu vécu. La narratrice note que son corps change, que sa personne d'avant s'efface, que le temps cyclique des saisons et des travaux remplace celui des horloges. Elle se pense peu à peu avec le chien Lynx, Bella, la chatte, puis le jeune taureau, comme une communauté de vivants dont elle n'est plus le centre. Nemo, avec sa devise *Mobilis in mobili*, « mobile dans l'élément mobile », dit une existence qui se tient non en face de la mer mais en elle ; le cimetière de corail, où il ensevelit l'un de ses hommes, fait de la mer le sol qui porte les vivants et reçoit les morts.
 

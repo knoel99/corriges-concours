@@ -1,0 +1,165 @@
+{
+  "slug": "x_p-prime_deuxieme-composition-de-mathematiques_1996",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "P prime",
+    "matiere": "Deuxième composition de mathématiques",
+    "annee": 1996
+  },
+  "questions": 21,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.sujetsetcorriges.fr/dl/X/Maths/PC/sec-x-1996-maths2-PC.pdf",
+    "sha256_sujet": "36cc99665f52c70ecd57279905ffa138e4bc0c7cf060509f6cf204c0acfad8f9",
+    "rapport_jury": "",
+    "provenance": "Reproduction en deux pages diffusée par Sujets et Corrigés, rapprochée des deux pages de la notice UPS m96xp2. Les deux exemplaires donnent la même composition et les mêmes bornes.",
+    "exemplaires_ups": [
+      {
+        "notice": "m96xp2",
+        "document": "m96xp2ea",
+        "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-f9c4f5309bc545c8178f",
+        "sha256": "2af759c1ab9410f268839a487c01ce85124a37d87df8b0fd04189120dcdfdcde",
+        "pages": 2
+      }
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/projections-successives.svg",
+      "question": "7",
+      "legende": "La première projection fixe le vecteur unitaire e de la diagonale. Sa projection horizontale Pe a pour longueur un sur racine de deux."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "maths_x_p-prime_1997_1999",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction intégrale des deux éditions sur les 2 pages du fac-similé. 21 consignes pointées. I. Racines positives et module d’un endomorphisme ; II. Isométries partielles et décomposition polaire ; III. Maximum de trace et construction d’une norme. Vérification des démonstrations, des notations et des bornes."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.a",
+      "1.b",
+      "1.c",
+      "2",
+      "3.a",
+      "3.b",
+      "4",
+      "5.a",
+      "5.b",
+      "5.c",
+      "6",
+      "7",
+      "8.a",
+      "8.b",
+      "9",
+      "10.a",
+      "10.b",
+      "11",
+      "12.a",
+      "12.b",
+      "13"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1.a",
+        "page_pdf": 1
+      },
+      {
+        "question": "1.b",
+        "page_pdf": 1
+      },
+      {
+        "question": "1.c",
+        "page_pdf": 1
+      },
+      {
+        "question": "2",
+        "page_pdf": 1
+      },
+      {
+        "question": "3.a",
+        "page_pdf": 1
+      },
+      {
+        "question": "3.b",
+        "page_pdf": 1
+      },
+      {
+        "question": "4",
+        "page_pdf": 1
+      },
+      {
+        "question": "5.a",
+        "page_pdf": 1
+      },
+      {
+        "question": "5.b",
+        "page_pdf": 1
+      },
+      {
+        "question": "5.c",
+        "page_pdf": 1
+      },
+      {
+        "question": "6",
+        "page_pdf": 1
+      },
+      {
+        "question": "7",
+        "page_pdf": 1
+      },
+      {
+        "question": "8.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "8.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "9",
+        "page_pdf": 2
+      },
+      {
+        "question": "10.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "10.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "11",
+        "page_pdf": 2
+      },
+      {
+        "question": "12.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "12.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "13",
+        "page_pdf": 2
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

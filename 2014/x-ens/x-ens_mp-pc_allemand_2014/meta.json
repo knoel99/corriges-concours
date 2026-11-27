@@ -1,0 +1,84 @@
+{
+  "slug": "x-ens_mp-pc_allemand_2014",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC",
+    "matiere": "Allemand",
+    "annee": 2014,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "intitule": "À qui revient une œuvre déplacée ?",
+  "duree": "Quatre heures pour l’ensemble. Aucun document autorisé.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2014/10/14_mppc_suj_lv_all.pdf",
+    "sujet_sha256": "612b9058d43c9779e91aa90966262429ef720ce89c89ddd44870ea874a2eca7c",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2014/",
+    "texte_support": "Deutsche Welle, 5 novembre 2013 et 21 juin 2013 (documents 1 et 2), SPIEGEL online, 12 mai 2013 (photographie, document 3), Deutsche Welle, 2 décembre 2013 (document 4), Christian Bommarius, Berliner Zeitung, 20 novembre 2013 (document 5).",
+    "etablissements_imprimes": "École polytechnique, ESPCI et Écoles normales supérieures ; code XEULCR",
+    "documents": [
+      {
+        "role": "sujet",
+        "partie": "Épreuve A et B de quatre heures",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2014/10/14_mppc_suj_lv_all.pdf",
+        "pages_document": "10",
+        "sha256_pdf": "612b9058d43c9779e91aa90966262429ef720ce89c89ddd44870ea874a2eca7c"
+      },
+      {
+        "role": "rapport",
+        "partie": "Rapport d’allemand",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/01/14_mp_pc_rap_ecrit_lv_allemand.pdf",
+        "pages_document": "3",
+        "sha256_pdf": "06da1599a1215b3e2ca98b73d554f5f8eb23ac87591697f0351ed0c67a0c8919"
+      },
+      {
+        "role": "autre publication du rapport",
+        "partie": "Même rapport, texte normalisé identique",
+        "url": "https://www.ens.psl.eu/IMG/file/concours/2014/MPI/14_mppc_rap_elv_all.pdf",
+        "pages_document": "3",
+        "sha256_pdf": "6772598881bb82068107a80955550b3e2d84e6182d0c0ecb3ff27371d36b4ed3"
+      }
+    ],
+    "portee_rapport": "Rapport écrit de Françoise Dablanc couvrant la synthèse et le texte d’opinion, 3 pages.",
+    "sujet_miroir": {
+      "url": "https://www.ens.psl.eu/IMG/file/concours/2014/PC/14_sujet_allemand_PC.pdf",
+      "sha256": "46037199f39456bf3e62af1df64b52b9e1ef0d12ba97ce05e891af0b2fb30fc4",
+      "index": "https://www.ens.psl.eu/rapports-et-sujets-pc-2014",
+      "concordance": "Texte extrait identique à celui du PDF de la Banque, dix pages."
+    }
+  },
+  "redaction": "Synthèse des quatre documents, photo comprise, et prise de position étayée sur l’éditorial allemand ; nombre de mots contrôlé et accompagnement des deux exercices.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/parcours-des-oeuvres.svg",
+      "legende": "Les trois demandes de restitution diffèrent par l’auteur de la dépossession, le demandeur et les preuves."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "oraux_lyon",
+      "session": "oraux_lyon",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Synthèse des quatre documents, photo comprise, et prise de position étayée sur l’éditorial allemand ; nombre de mots contrôlé et accompagnement des deux exercices.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  }
+}

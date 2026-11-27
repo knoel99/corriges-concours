@@ -25,7 +25,9 @@
     "pages_rapport": "9–14",
     "references": [
       "https://fr.wikisource.org/wiki/Mati%C3%A8re_et_M%C3%A9moire/Chapitre_II"
-    ]
+    ],
+    "sha256_sujet": "584c45c92277aefe34fd083279dd477990f7568de569a3f8d169bd44313931e2",
+    "sha256_rapport_jury": "cab4efc88afa5ea88d5a17813f193f23f67d04654f1db05d288139f8d8146115"
   },
   "figures": [
     {
@@ -34,7 +36,7 @@
       "legende": "Trois localisations possibles"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "contributions": [
     {
       "phase": "lecture_rapport_jury",
@@ -71,6 +73,47 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Comparaison des deux éditions aux pages originales du sujet et au rapport, contrôle des références, des exemples et du schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Bergson, localisation du support, conservation d’une habitude et exercice du rappel."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Analyse de la localisation, de la trace, de l’habitude et du rappel en première personne. Un cas où la lettre corrige la date sans communiquer le souvenir distingue l’autorité documentaire et l’expérience du passé."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Où est la mémoire ?"
+    ],
+    "pages_du_sujet": 13,
+    "pages_pdf_des_questions": {
+      "Où est la mémoire ?": 2
+    },
+    "precision": "Dissertation unique de 5 heures. Libellé lu sur la page 2 du fascicule officiel. Rapport du jury, pages 9 à 14. Les mouvements du plan sont proposés par le corrigé."
+  }
 }

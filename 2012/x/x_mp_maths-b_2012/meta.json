@@ -11,13 +11,14 @@
   "sources": {
     "sujet": "https://www.vmaths.fr/wp-content/uploads/XENS/MP/X_ENS_2012_MP_MB_enonce.pdf",
     "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/04/12_mp_rap_ecrit_math_b_x.pdf",
-    "sha256_sujet": "38060078130f1dbe3c363d17b574de9106e9ef2b8034df31800f76aaedd3979c"
+    "sha256_sujet": "38060078130f1dbe3c363d17b574de9106e9ef2b8034df31800f76aaedd3979c",
+    "sha256_rapport_jury": "9ea8aeeb34cd118650c44b6e0f7442587227b822afa21914b3bdf787d989a84f"
   },
   "figures": [
     {
       "fichier": "figures/couronne-de-kronecker.svg",
       "question": "13.c",
-      "legende": "La distance au centre varie entre la différence et la somme des deux rayons. Le déphasage permet toutes les distances intermédiaires."
+      "legende": "Les 900 premières sommes partielles, après soustraction du centre, restent entre les cercles de rayons 0,801 et 1,096 environ."
     }
   ],
   "contributions": [
@@ -31,6 +32,55 @@
       "perimetre": "Rédaction des trois parties à partir du sujet et du rapport. Vérification des résonances, des noyaux de Fejér et de la construction d’indices positifs dans le théorème de Kronecker. Calcul des rayons et exemple autorisé par Q13.b où un rayon est nul. Figure de la couronne de Q13.c.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "x_maths_b_anciennes",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Contrôle des 25 rubriques, des résonances, du noyau de Fejér et des valeurs d’adhérence. Construction strictement croissante en 12, rayons explicités selon la parité en 13.b et figure de 13.c recalculée avec des fréquences indépendantes sur les rationnels avec π."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5.a",
+      "5.b",
+      "5.c",
+      "6.a",
+      "6.b",
+      "6.c",
+      "7.a",
+      "7.b",
+      "8.a",
+      "8.b",
+      "8.c",
+      "9",
+      "10.a",
+      "10.b",
+      "10.c",
+      "11.a",
+      "11.b",
+      "12",
+      "13.a",
+      "13.b",
+      "13.c"
+    ],
+    "precision": "Les 25 rubriques des deux éditions ont été rapprochées du fascicule de 4 pages et du rapport du jury de 5 pages. Contrôle des 25 rubriques, des résonances, du noyau de Fejér et des valeurs d’adhérence. Construction strictement croissante en 12, rayons explicités selon la parité en 13.b et figure de 13.c recalculée avec des fréquences indépendantes sur les rationnels avec π.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "38060078130f1dbe3c363d17b574de9106e9ef2b8034df31800f76aaedd3979c",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Contrôle des 25 rubriques, des résonances, du noyau de Fejér et des valeurs d’adhérence. Construction strictement croissante en 12, rayons explicités selon la parité en 13.b et figure de 13.c recalculée avec des fréquences indépendantes sur les rationnels avec π.",
+      "commit_redaction_anterieure": "dd73abf09b895d2f82c162b9fdb85984e0b11262"
+    }
+  }
 }

@@ -84,11 +84,70 @@
       "tour": 3,
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Recoupement des 32 réponses des deux éditions et des trois figures avec le fascicule 047 et son rapport. Vérification de la récurrence des intégrales, du seuil x > e, de la somme par paires et de la différence entre la majoration O(N) et une preuve de divergence en III.5. Mise à l’échelle centimétrique de la courbe de la question 4 du préambule."
     }
   ],
   "date_revision": "2026-11-24",
   "sources": {
     "sujet": "https://www.banquept.fr/documents/2026/math_c_2026_pt.pdf",
-    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2026/rapport_math_c_ecrit_2026.pdf"
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2026/rapport_math_c_ecrit_2026.pdf",
+    "sujet_sha256": "35d9fe2446dcb4421fa3675158ec2f4a9cde9f257f7765240f857b4299d3d93d",
+    "rapport_sha256": "a8f38ad3245881fb1e9718f75f92b27cfa16a528c5d87e74f431cf86f668887e"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Préambule.1",
+      "Préambule.2",
+      "Préambule.3",
+      "Préambule.4",
+      "Préambule.5",
+      "Préambule.6",
+      "Préambule.7",
+      "Préambule.8",
+      "Préambule.9",
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7(a)",
+      "I.7(b)",
+      "I.7(c)",
+      "I.7(d)",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "II.8",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5"
+    ],
+    "precision": "Le fascicule 047 présente neuf questions de préambule et 10, 8 et 5 réponses élémentaires en I, II et III. La grille centimétrique demandée au préambule Q4 est fournie dans les deux tirages.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "35d9fe2446dcb4421fa3675158ec2f4a9cde9f257f7765240f857b4299d3d93d",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Recoupement des 32 réponses des deux éditions et des trois figures avec le fascicule 047 et son rapport. Vérification de la récurrence des intégrales, du seuil x > e, de la somme par paires et de la différence entre la majoration O(N) et une preuve de divergence en III.5. Mise à l’échelle centimétrique de la courbe de la question 4 du préambule.",
+      "commit_redaction_anterieure": "d48df23ae4ef6bf653bbe82e6ed589096a57309d"
+    }
   }
 }

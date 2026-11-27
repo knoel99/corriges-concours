@@ -1,0 +1,92 @@
+{
+  "slug": "x-ens_pc_mathematiques_2014",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Mathématiques",
+    "annee": 2014,
+    "duree_heures": 4
+  },
+  "questions": 33,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "identification": "Composition de mathématiques XEULC, filière PC, six pages, quatre heures. École polytechnique, ESPCI et ENS. Rapport de mathématiques PC 2014 consulté. Empreintes du sujet et du rapport de l’index de l’ENS vérifiées.",
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2014/PC/14_sujet_math_PC.pdf",
+    "sujet_sha256": "a4b74492fc98b0821db27565369a197077ad854bd84b561c509b3acf5eb88a3c",
+    "index_sujet": "https://www.ens.psl.eu/rapports-et-sujets-pc-2014",
+    "rapport": "https://www.ens.psl.eu/IMG/file/concours/2014/PC/14_pc_rap_ecrit_math.pdf",
+    "rapport_sha256": "f1f93c76b28468d5e9e078caf8b8ecb258bd0b5f32288c24e33d13e7cc4d3459",
+    "index_rapport": "https://www.ens.psl.eu/rapports-et-sujets-pc-2014"
+  },
+  "figures": [
+    {
+      "fichier": "figures/concentration-laplace.svg",
+      "question": "1b",
+      "legende": "Figure 1 — Pour t égal à 8, les phases linéaire et quadratique près de zéro donnent des largeurs caractéristiques différentes."
+    },
+    {
+      "fichier": "figures/moyennisation.svg",
+      "question": "7f",
+      "legende": "Figure 2 — Sur le segment unité, le poids 1 + x multiplie 1 + cos λx. L’intégrale oscille autour de trois demis avec une amplitude qui décroît quand la fréquence augmente."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Les 33 items de l’intégralité des trois parties. Laplace, Stirling, convergence de Fourier, moyennisation par cellules et force périodique, méthode de phase non stationnaire et borne uniforme d’ordre un demi. Deux graphiques quantitatifs."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1a",
+      "1b",
+      "2a",
+      "2b",
+      "3a",
+      "3b",
+      "3c",
+      "4a",
+      "4b",
+      "5a",
+      "5b",
+      "5c",
+      "6a",
+      "6b",
+      "7a",
+      "7b",
+      "7c",
+      "7d",
+      "7e",
+      "7f",
+      "8a",
+      "8b",
+      "8c",
+      "9ai",
+      "9aii",
+      "9b",
+      "10a",
+      "10b",
+      "11a",
+      "11b",
+      "11c",
+      "11d",
+      "11e"
+    ],
+    "precision": "Les 33 réponses des deux éditions correspondent aux 11 questions numérotées et à leurs subdivisions sur le fac-similé officiel. Le journal antérieur documente la portée du travail sur les solutions.",
+    "origine_attestation": {
+      "commit_du_journal": "88a7d8a1a2238b772a8eecaa5ae92793e604a818",
+      "sha256_sujet_controle": "a4b74492fc98b0821db27565369a197077ad854bd84b561c509b3acf5eb88a3c",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Les 33 items de l’intégralité des trois parties. Laplace, Stirling, convergence de Fourier, moyennisation par cellules et force périodique, méthode de phase non stationnaire et borne uniforme d’ordre un demi. Deux graphiques quantitatifs."
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "slug": "x_mp-pc_russe_2009",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Russe",
+    "annee": 2009,
+    "modalite": "écrit"
+  },
+  "intitule": "Anna Akhmatova et les sentiments en politique",
+  "questions": 3,
+  "redaction": "Traduction intégrale en français, analyse et réflexion personnelle en russe. Anna Akhmatova et les sentiments en politique.",
+  "sources": {
+    "sujet": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2009-langues-vivantes.pdf#page=10",
+    "sha256_sujet": "9dae5bdb8cb0d190d4c6022a6d1c9b848f78d280b42eae2ba39f224688fc85cf",
+    "index": "https://www.alloschool.com/element/33547",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2009-langues-vivantes.pdf#page=10",
+        "sha256": "9dae5bdb8cb0d190d4c6022a6d1c9b848f78d280b42eae2ba39f224688fc85cf"
+      },
+      {
+        "role": "sujet complémentaire",
+        "url": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2009-langues-vivantes.pdf#page=1",
+        "sha256": "9dae5bdb8cb0d190d4c6022a6d1c9b848f78d280b42eae2ba39f224688fc85cf"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Version",
+      "fichier": "figures/lecture-de-la-version.svg",
+      "legende": "Trois regards sur les vers d’Akhmatova"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "arabe_mp_pc_2011_2014",
+      "session": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Traduction intégrale en français, analyse et réflexion personnelle en russe. Anna Akhmatova et les sentiments en politique."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version",
+      "Expression 1",
+      "Expression 2"
+    ]
+  }
+}

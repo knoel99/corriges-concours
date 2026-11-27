@@ -39,5 +39,47 @@
       "modifications": true,
       "perimetre": "Rédaction des 16 questions sur la maximisation de fonctions sous-modulaires après lecture du sujet intégral et du rapport de jury. Deux figures originales ; tests de toutes les coupes de référence et de tous les graphes bipartis de petite taille, vérification des garanties du glouton et de l’algorithme de coupe."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16"
+    ],
+    "precision": "Les 16 questions numérotées du sujet institutionnel ont été rapprochées dans leur ordre des solutions signées. Le texte de chacune des solutions du brut figure aussi dans le guidé.",
+    "origine_attestation": {
+      "commit_du_journal": "7199e52ba36176752b05eda0df6f0200c7568ea7",
+      "phase": "redaction",
+      "date": "2026-11-24",
+      "perimetre": "Rédaction des 16 questions sur la maximisation de fonctions sous-modulaires après lecture du sujet intégral et du rapport de jury. Deux figures originales ; tests de toutes les coupes de référence et de tous les graphes bipartis de petite taille, vérification des garanties du glouton et de l’algorithme de coupe.",
+      "sha256_sujet_controle": "835d76bd3fb2f59e03995ba3bde2df9c995fa2fb7a226857a99cad2f7f4f6cc9",
+      "sha256_rapport_controle": "be0eb69e244dc9245c7040f80dcdd02e1881ad4a33d4fcadeee4e5b67238910e"
+    },
+    "subdivisions_du_sujet": {
+      "1": [
+        "1",
+        "2",
+        "3"
+      ],
+      "4": [
+        "1",
+        "2",
+        "3"
+      ]
+    }
+  }
 }

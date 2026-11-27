@@ -1,0 +1,61 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_sociologie-identification-image-sociale-et-appartenance-oral_2023",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Sociologie — identification, image sociale et appartenance (oral)",
+    "annee": 2023,
+    "modalite": "oral"
+  },
+  "intitule": "Commenter l’extrait de Martina Avanza et Gilles Laferté (2005) sur les limites de la « construction des identités ». La fiche distingue ce texte d’oral de l’intitulé écrit « Classe, race, genre ».",
+  "gabarit": "oral",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://web.archive.org/web/20251105050415id_/https://www.ens.psl.eu/sites/default/files/oral-6.pdf",
+    "sujet_sha256": "6eb49c63451d2ff44c84ff421fd8ce40e25c85269ab8d5efb13e8cc4ec905fda",
+    "index": "https://www.ens.psl.eu/une-formation-d-exception/admission-concours/international/concours-selection-internationale-0",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://web.archive.org/web/20251105050415id_/https://www.ens.psl.eu/sites/default/files/oral-6.pdf",
+        "url_ens": "https://www.ens.psl.eu/sites/default/files/oral-6.pdf",
+        "sha256": "6eb49c63451d2ff44c84ff421fd8ce40e25c85269ab8d5efb13e8cc4ec905fda",
+        "pages": 2
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "Trois objets d’enquête à distinguer lorsque des acteurs revendiquent ou contestent une identité."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire de la controverse océanienne, des trois critiques et de leur mise à l’épreuve."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire"
+    ],
+    "limites": "Fiche 6. Passage de Martina Avanza et Gilles Laferté sur les usages de la construction des identités."
+  }
+}

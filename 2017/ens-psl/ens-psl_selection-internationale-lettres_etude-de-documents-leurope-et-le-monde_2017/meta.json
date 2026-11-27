@@ -1,0 +1,61 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_etude-de-documents-leurope-et-le-monde_2017",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Étude de documents — l’Europe et le monde",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "« L’Europe et le monde ». Rédiger en quatre heures un commentaire synthétique des huit documents. La photographie et le dessin réunis sur la dernière page constituent ensemble le document 8.",
+  "gabarit": "dissertation",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://web.archive.org/web/20201230063147id_/https://www.ens.psl.eu/sites/default/files/commentaire-documents-sil2017.pdf",
+    "sujet_sha256": "37ef25cd2b9dcf51c7873e311432efe5624ea9227da47ee3743789c1df40c135",
+    "index": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2017-lettres-0",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://web.archive.org/web/20201230063147id_/https://www.ens.psl.eu/sites/default/files/commentaire-documents-sil2017.pdf",
+        "url_ens": "https://www.ens.psl.eu/sites/default/files/commentaire-documents-sil2017.pdf",
+        "sha256": "37ef25cd2b9dcf51c7873e311432efe5624ea9227da47ee3743789c1df40c135",
+        "pages": 8
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "question": "Composition",
+      "legende": "Trois rapprochements qui rendent compte des huit documents dans une même synthèse."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire des six textes et des deux planches, avec lecture visuelle séparée des deux composantes du document 8."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Composition"
+    ],
+    "limites": "Commentaire synthétique en quatre heures du dossier de huit documents « L’Europe et le monde »."
+  }
+}

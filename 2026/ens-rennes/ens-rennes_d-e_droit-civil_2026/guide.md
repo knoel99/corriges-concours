@@ -8,11 +8,17 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Préparer une dissertation avec le Code civil
 
 Le sujet autorise un Code civil non annoté et non indexé par le candidat. Le sujet tient en cinq mots. Construire néanmoins le devoir en posant trois questions à chaque article mobilisé. Qui demande quoi ? Quel écart économique doit-il démontrer ? À quelle date la chose est-elle évaluée ?
 
 ![Figure 1 — Quel rôle la valeur joue-t-elle ?](figures/fonctions-valeur.svg)
+
+Posez V pour la valeur de l’immeuble et P pour le prix reçu. La condition chiffrée s’écrit $(V-P)/V>7/12$, soit $P<5V/12$. Pour V égal à 240 000 euros, l’inégalité stricte exclut le prix de 100 000 euros. Cette vérification précède l’examen du délai et des autres conditions de l’action.
 
 **Faire travailler deux nombres.** Devant un immeuble valant 240 000 €, placer les prix de 90 000 € et de 100 000 € de part et d’autre de la condition stricte de l’article 1674. Dans un autre paragraphe, faire évoluer la valeur de l’objet entre la vente annulée et la restitution. Le premier exemple évalue une lésion à la vente, le second chiffre l’équivalent dû à un autre moment.
 
@@ -34,7 +40,7 @@ Le droit s’intéresse également à l’existence d’une véritable contrepar
 
 ### II. Une référence imposée pour protéger ou reconstituer le patrimoine
 
-**A. L’écart à une valeur de référence peut ouvrir un recours.** La vente immobilière donne un exemple précis de l’exception réservée par l’article 1168. L’article 1674 protège le vendeur lésé de plus de sept douzièmes dans le prix de l’immeuble. L’article 1675 renvoie à l’état du bien et à sa valeur au moment de la vente. Pour un immeuble valant alors 240 000 €, sept douzièmes représentent 140 000 €. Un prix de 100 000 € se trouve exactement au seuil et ne le franchit pas. Un prix de 90 000 € laisse un écart de 150 000 € et satisfait à la condition chiffrée. C’est le vendeur qui agit, dans le délai de deux ans prévu par l’article 1676. L’acquéreur dispose, si l’action est admise, du choix organisé par l’article 1681 entre restituer l’immeuble contre remboursement du prix et le conserver en acquittant le supplément légal. Le régime ne donne donc pas à tout acheteur déçu un droit général de rééquilibrage.
+**A. L’écart à une valeur de référence peut ouvrir un recours.** La vente immobilière donne un exemple précis de l’exception réservée par l’article 1168. L’article 1674 protège le vendeur lésé de plus de sept douzièmes dans le prix de l’immeuble. L’article 1675 renvoie à l’état du bien et à sa valeur au moment de la vente. Pour un immeuble valant alors 240 000 €, sept douzièmes représentent 140 000 €. Un prix de 100 000 € se trouve exactement au seuil et ne le franchit pas. Un prix de 90 000 € laisse un écart de 150 000 € et satisfait à la condition chiffrée. C’est le vendeur qui agit, dans le délai de deux ans prévu par l’article 1676. L’acquéreur dispose, si l’action est admise, du choix organisé par l’article 1681 entre restituer l’immeuble contre remboursement du prix et le conserver en acquittant le supplément légal. Le régime ne donne donc pas à tout acheteur déçu un droit général de rééquilibrage. Si l’action aboutit et que l’acquéreur conserve l’immeuble, l’article 1681 prévoit une déduction du dixième du prix total. Supposons que la valeur soit restée à 240 000 euros jusqu’au règlement. Après la déduction de 24 000 euros et imputation des 90 000 euros déjà payés, le supplément s’élève à 126 000 euros. Le seuil qui ouvre le recours et le montant dû pour conserver le bien répondent à deux calculs différents.
 
 La valeur devient également un instrument de protection de la personne. En principe, le majeur sous sauvegarde de justice conserve l’exercice de ses droits. Néanmoins, l’article 435 permet dans les conditions qu’il fixe la rescision pour simple lésion ou la réduction en cas d’excès des actes passés pendant la mesure. Le juge doit notamment considérer l’utilité de l’opération pour la personne, la consistance de son patrimoine et la bonne ou mauvaise foi de son cocontractant. Un achat dispendieux s’apprécie ici relativement aux moyens et aux besoins de l’intéressé. Transposer le seuil de sept douzièmes de la vente immobilière méconnaîtrait le but propre de la protection.
 
@@ -45,3 +51,5 @@ Le même souci de proportion se lit dans l’article 1352-5. Les dépenses néce
 La valeur ne fournit pas au juge un pouvoir général de réviser le prix. Son effet dépend de la raison pour laquelle le droit sollicite une mesure de l’équivalent. Tantôt la liberté d’évaluer fait partie du risque de l’échange. Tantôt une règle de protection ou de restitution désigne ce qu’il faut estimer, à quelle date et au profit de qui.
 
 [Énoncé officiel](https://www.ens-rennes.fr/medias/fichier/sujet-droit-civil-d-e-2026_1790867563170-pdf) · [Rapport du jury](https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-droit-civil-d-e-2026_1793640809565-pdf)
+
+[Code civil, art. 1681](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006442372/2026-04-14)

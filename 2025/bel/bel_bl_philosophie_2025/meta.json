@@ -4,27 +4,57 @@
     "concours": "BEL",
     "filiere": "BL",
     "matiere": "Philosophie",
-    "annee": 2025
+    "annee": 2025,
+    "modalite": "écrit"
   },
-  "questions": 0,
+  "questions": 1,
   "redaction": "IA (claude-opus-4-8), relue et révisée par IA",
   "figures": [
     {
       "fichier": "figures/sens.svg",
-      "question": "Analyse du sujet",
-      "legende": "Trois moments pour analyser le verbe « aimer »"
+      "question": "Aimer.",
+      "legende": "Trois moments pour analyser le verbe « aimer »",
+      "numero": 1
     },
     {
       "fichier": "figures/philia.svg",
-      "question": "Analyse du sujet",
-      "legende": "De la bienveillance à la philia"
+      "question": "Aimer.",
+      "legende": "De la bienveillance à la philia",
+      "numero": 2
     }
   ],
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/2025_blses_sujet_philosophie.pdf",
     "sujet_sha256": "65c9fa2721c0a394de5783a8aebf58da834d20ce0582525b2d3850214e538691",
     "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_ecrit_philosophie.pdf",
-    "rapport_jury_sha256": "1867565bb1f28764e1d90b687710c32052202786f06917593d9bbf2114d43ea4"
+    "rapport_jury_sha256": "1867565bb1f28764e1d90b687710c32052202786f06917593d9bbf2114d43ea4",
+    "rubriques_lues": [
+      {
+        "rubrique": "Le verbe et la problématisation",
+        "pages": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "rubrique": "Critères d’appréciation des copies",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      {
+        "rubrique": "Traitement du sujet, du trouble à la réciprocité",
+        "pages": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    ]
   },
   "contributions": [
     {
@@ -60,7 +90,110 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Contrôle du sujet « Aimer. » et du rapport, correction d’une citation du jury isolée à contresens, de l’analyse grammaticale et des distinctions sur Platon et Aristote. Deux schémas et cas limites."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Aimer chez Aristote, bienveillance réciproque et reconnaissance mutuelle."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "session": "bel_bl_philosophie_ecrits_2025_2026",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Réécriture de la dissertation autour du départ d’une amie ; analyse de Phèdre, de l’apprentissage du jugement et du souhait secret chez Aristote. Mise en regard du plan et des critères du jury, distinction entre l’aide par devoir et l’affection, vérification des sources et des figures."
     }
   ],
-  "date_revision": "2026-11-24"
+  "date_revision": "2026-11-26",
+  "duree_heures": 6,
+  "coefficient_ens_psl": 3,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens.psl.eu/sites/default/files/2025_blses_sujet_philosophie.pdf",
+      "sha256": "65c9fa2721c0a394de5783a8aebf58da834d20ce0582525b2d3850214e538691",
+      "nature": "Feuillet officiel, page 1",
+      "nombre_pages": 1,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "ea0fc0e180262daeefdc96adcd92e28910377e797249cb7e3082dbb554bd3016"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_ecrit_philosophie.pdf",
+      "sha256": "1867565bb1f28764e1d90b687710c32052202786f06917593d9bbf2114d43ea4",
+      "nature": "Rapport officiel de la composition écrite commune B/L",
+      "nombre_pages": 8,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "070538e15b3e28b8dda01462ddb925c1a42d4547caebcf8482878a0d62295ac2"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "5a9988df78af7844616efc6e15276d83d973fd361e03bcf65e60c5fdf7b4fd40"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "ab3a7a7c62957b6f93dfa464dfa0d0bc517b2aab6f69c4144521d11636eedcd4"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "3a3d6f22bdda82bdf26e7e1a7c0c00439b3e124ee4ca65266d3d7214974dba02"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "4b44211db8ad51c048d8a161393d34e0f5ded80ae4fe895ffb164b62a7d49884"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "ae8f816d75c7ea429e461d5b76b636ba882b8b8b821c4722f072a9d08ee4a3ee"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "1d5ef2bed8fb2eb143ae48938fadf4cabd6058892a5b06b985de3643c2e164ed"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "4541c5ff274ec341666aef390d1c811ac931993a2a30774e3a5cf4adf016b5d1"
+        }
+      ]
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Aimer."
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "Aimer.",
+        "page_pdf": 1,
+        "piece": "sujet",
+        "nature": "Feuillet officiel, page 1",
+        "traitement": "Dissertation intégrale, introduction, trois moments argumentés, conclusion ; guide de méthode avec critères et exemples."
+      }
+    ]
+  }
 }

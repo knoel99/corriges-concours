@@ -1,0 +1,76 @@
+{
+  "slug": "x_mp-pc_espagnol_2010",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Espagnol",
+    "annee": 2010,
+    "modalite": "écrit",
+    "duree_heures": 3
+  },
+  "intitule": "Une exposition couronnée de succès",
+  "questions": 3,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2010-langues-vivantes.pdf#page=7",
+    "sha256_sujet": "44be9353a9797be2ce331618ae2b484ddd60056a2b192059d7aa698def3e54eb",
+    "etablissements_imprimes": "École polytechnique et École supérieure de physique et de chimie industrielles",
+    "page_version": "7",
+    "texte_support": "Almudena Grandes, El corazón helado, 2008, selon la page du concours.",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2010-langues-vivantes.pdf#page=7",
+        "sha256": "44be9353a9797be2ce331618ae2b484ddd60056a2b192059d7aa698def3e54eb",
+        "pages": "7",
+        "pages_document": 10,
+        "index": "https://www.alloschool.com/element/33548",
+        "date_capture_utc": "sans capture"
+      },
+      {
+        "role": "sujet complémentaire",
+        "url": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2010-langues-vivantes.pdf#page=1",
+        "sha256": "44be9353a9797be2ce331618ae2b484ddd60056a2b192059d7aa698def3e54eb",
+        "pages": "1–2",
+        "pages_document": 10,
+        "index": "https://www.alloschool.com/element/33548",
+        "date_capture_utc": "sans capture"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/trois-positions-autour-du-musee.svg",
+      "question": "1",
+      "legende": "Le narrateur, son ancien professeur et son ami n’occupent plus la même place au musée. Comprendre ces liens permet d’attribuer les paroles et les sentiments du dernier paragraphe."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "option_info_2006_2009",
+      "agent": "option_info_2006_2009",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Version personnelle intégrale de « Une exposition couronnée de succès », deux réponses personnelles en espagnol, indications de traduction et de rédaction, schéma sur Le narrateur, son ancien professeur et son ami n’occupent plus la même place au musée. Comprendre ces liens permet d’attribuer les paroles et les sentiments du dernier paragraphe."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2.1",
+      "2.2"
+    ],
+    "limites": "Le rapport écrit de cette option reste à retrouver."
+  }
+}

@@ -66,6 +66,78 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Confrontation des intitulés, de leur groupement et des consignes aux documents du jury. Vérification de la portée des arguments, des exemples et des références philosophiques."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Apparence, variation du point de vue et reproductibilité d’une perception."
     }
-  ]
+  ],
+  "date_revision": "2026-11-25",
+  "couverture": {
+    "statut": "complet",
+    "tirages_entierement_traites": [
+      [
+        "Qu’est-ce qu’une crise ?",
+        "L’apparence"
+      ],
+      [
+        "La politique est-elle un art ?",
+        "L’inquiétude"
+      ],
+      [
+        "Que peut l’art ?",
+        "Perdre son âme"
+      ],
+      [
+        "La technique n’est-elle qu’une application de la science ?",
+        "L’insignifiant"
+      ],
+      [
+        "Y a-t-il des questions sans réponse ?",
+        "Le fatalisme"
+      ],
+      [
+        "Le bonheur est-il une fin politique ?",
+        "L’embarras du choix"
+      ],
+      [
+        "Est-on responsable de son passé ?",
+        "Le comédien"
+      ],
+      [
+        "Les œuvres d’art sont-elles éternelles ?",
+        "La police"
+      ],
+      [
+        "Peut-on concilier les contraires ?",
+        "Imaginer"
+      ],
+      [
+        "Que faire de nos passions ?",
+        "Le besoin de philosophie"
+      ],
+      [
+        "Le mépris peut-il être justifié ?",
+        "Rêver"
+      ]
+    ],
+    "precision": "Les deux éditions suivent les 11 billets dans l’ordre du rapport. Chaque sujet du billet a sa proposition argumentée et une question d’entretien avec réponse dans le guidé.",
+    "origine_attestation": {
+      "commit_du_journal": "51f2044817dbbfa44bc1e71158e04a6d49e592d4",
+      "sha256_feuillet_controle": "bb314d1449d1cb5741511a6c2151bbd4678f2cc698d454d54d39d67c36750a9a",
+      "sha256_rapport_controle": "180bf05d31da83942e012bc27ad2128aa290cd7ed2c7419574cccc52cce61f54",
+      "phase": "redaction",
+      "date": "2026-11-24",
+      "perimetre": "Rédaction des 22 propositions argumentées, de 22 questions et réponses pour l’entretien et de 3 schémas."
+    }
+  }
 }

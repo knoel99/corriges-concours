@@ -1,0 +1,169 @@
+{
+  "slug": "banque-pt_pt_physique-a_2006",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique A",
+    "annee": 2006
+  },
+  "redaction": "Corrigés non officiels rédigés et vérifiés par IA.",
+  "questions": 15,
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2006/phys_a_2006.zip",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_phys_a_ecrit_2006.pdf",
+    "index_sujets": "https://www.banquept.fr/article62.html",
+    "livret": "https://www.banquept.fr/documents/livret/2006/Livret_Rose_2006_1_2.pdf#page=12",
+    "index_rapports": "https://www.banquept.fr/article55.html",
+    "annexe": "https://www.banquept.fr/documents/2006/phys_a_2006.zip",
+    "membres_archive": [
+      "phys_a_2006.pdf",
+      "phys_a_doc_reponse_2006.pdf"
+    ],
+    "sha256_archive_sujet": "f171bee199b1fdb7b237cbd45851b00fb5cc588e20fdf40ec893190ccd34d85f",
+    "sha256_sujet": "b981983fb5abb7248e16edff4f92a00240c78c0360a18ecc8ee9ed17bfa92fed",
+    "pages_sujet": 13,
+    "sha256_rapport_jury": "1b3526c946494ce5b750cfbb3071811a3b0db65cd6aededfedbeb9b792763b9a",
+    "pages_rapport_jury": 2,
+    "sha256_livret": "5681be4b094f21d516a26f35fbc4958f52e9de82e5f9ad4eb9d2ecb0c2709269",
+    "pages_livret": 21,
+    "sha256_annexe": "f43c3a5c23ec87c9c9223b12d2a9ee6691d211d3750c3f76f303d84cae784c95",
+    "pages_annexe": 1,
+    "coefficients_admissibilite": {
+      "École polytechnique": 6,
+      "ENS Cachan": 3
+    }
+  },
+  "figures": [
+    {
+      "question": "A.3.8–3.9",
+      "fichier": "figures/couple.svg",
+      "legende": "Caractéristique du moteur. Les deux intersections sont les équilibres d’une charge de 30 N m."
+    },
+    {
+      "question": "B.1.5–1.8",
+      "fichier": "figures/hall.svg",
+      "legende": "Dans le matériau P, les droites équipotentielles (pointillées) sont normales au champ électrique total."
+    },
+    {
+      "question": "B.2.2",
+      "fichier": "figures/echelon.svg",
+      "legende": "Réponse à l’échelon de 10 A ; l’asymptote correspond à 19,9 mV."
+    },
+    {
+      "question": "C.3.5–3.7",
+      "fichier": "figures/annexe-bode.svg",
+      "legende": "Feuillet-réponse C.3.5. Gain et phase du filtre inverseur ; la construction asymptotique et la courbe réelle partagent les mêmes axes."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A.1",
+      "A.2",
+      "A.3.1–3.3",
+      "A.3.4–3.7",
+      "A.3.8–3.9",
+      "A.4",
+      "B.1.1–1.4",
+      "B.1.5–1.8",
+      "B.2.1",
+      "B.2.2",
+      "C.1",
+      "C.2",
+      "C.3.1–3.4",
+      "C.3.5–3.7",
+      "C.4"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": "A.1",
+        "page_sujet": 2
+      },
+      {
+        "question": "A.2",
+        "page_sujet": 3
+      },
+      {
+        "question": "A.3.1–3.3",
+        "page_sujet": 4
+      },
+      {
+        "question": "A.3.4–3.7",
+        "page_sujet": 5
+      },
+      {
+        "question": "A.3.8–3.9",
+        "page_sujet": 5
+      },
+      {
+        "question": "A.4",
+        "page_sujet": 5
+      },
+      {
+        "question": "B.1.1–1.4",
+        "page_sujet": 6
+      },
+      {
+        "question": "B.1.5–1.8",
+        "page_sujet": 7
+      },
+      {
+        "question": "B.2.1",
+        "page_sujet": 8
+      },
+      {
+        "question": "B.2.2",
+        "page_sujet": 10
+      },
+      {
+        "question": "C.1",
+        "page_sujet": 11
+      },
+      {
+        "question": "C.2",
+        "page_sujet": 12
+      },
+      {
+        "question": "C.3.1–3.4",
+        "page_sujet": 12
+      },
+      {
+        "question": "C.3.5–3.7",
+        "page_sujet": 13
+      },
+      {
+        "question": "C.4",
+        "page_sujet": 13
+      }
+    ],
+    "precision": "Trois parties A–C de 13 pages, schémas 1 à 10. Le document-réponse distinct du ZIP institutionnel fournit les deux axes logarithmiques de C.3.5, remplis ici avec les asymptotes et les réponses exactes."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modifications": true,
+      "perimetre": "Le champ tournant d’un moteur, la tension transversale d’une sonde de Hall et le filtrage d’une puissance instantanée donnent trois applications de l’électromagnétisme."
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modifications": true,
+      "perimetre": "Comparaison binaire des deux membres (13 p. et 1 p.) au ZIP officiel. Recalcul du courant rotorique via le bilan Joule et du signe de Hall avec les électrodes du schéma. Comparaison des capacités, de l’ondulation à 100 Hz et des phases du diagramme aux axes du feuillet-réponse. Ajout du point à une constante de temps de la sortie indicielle."
+    }
+  ]
+}

@@ -4,7 +4,11 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Les coefficients de Fourier mesurent la régularité des fonctions périodiques. Les symboles décrivent ensuite les opérateurs qui changent cette régularité et permettent de résoudre une équation différentielle avec un défaut aussi régulier qu’on le souhaite.
+
+L’épreuve commune dure quatre heures, avec les coefficients 4 pour Paris et 5 pour Cachan. Le jury corrige l’indice de norme en I.3 et demande de justifier les permutations de sommes. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-mp/session-2004/sujet-2004-ecrit-mp_mathematiques_cachan_paris.pdf) · [Rapport du jury](https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/rapport-de-jury-session-2004/rapport-2004-mp_ecrit_mathematiques_cachan_paris.pdf)
 
 ## I. Normes de fonctions périodiques
 
@@ -16,6 +20,8 @@ Les coefficients de Fourier mesurent la régularité des fonctions périodiques.
 #### Solution
 
 L’inégalité $|\phi(x)|^2\le N_\infty(\phi)^2$ intégrée sur une période donne $N_2(\phi)\le\sqrt{2\pi}\,N_\infty(\phi)$. Une constante non nulle réalise l’égalité.
+
+Les conventions utilisées dans la suite sont $e_n(x)=e^{inx}$, $c_n(\phi)=(2\pi)^{-1}\int_0^{2\pi}\phi(x)e^{-inx}\,dx$ et $\|\phi\|_s^2=\sum_{n\in\mathbb Z}(1+n^2)^s|c_n(\phi)|^2$. En particulier, le facteur $2\pi$ de Parseval donne $N_2(\phi)=\sqrt{2\pi}\|\phi\|_0$.
 
 ### Question I.2
 
@@ -47,6 +53,8 @@ $$c_n=\frac1\pi\int_0^\pi(\pi-x)\cos(nx)dx=\frac{1-(-1)^n}{\pi n^2}.$$
 La fonction est continue et ses pentes sont opposées de part et d’autre de zéro, donc $\phi\in C^p_{\rm per}$ exactement pour $p=0$ parmi les entiers naturels. La série pondérée, hors du terme constant, est de même nature que $\sum_{n>0,\ n\,\mathrm{impair}}n^{2s-4}$. Ainsi $\phi\in H^s$ exactement pour $s<3/2$, avec divergence harmonique à l’extrémité.
 
 ![Figure 1 — Les harmoniques impaires reconstituent le triangle périodique. Les sommes partielles sont lisses et la limite conserve un angle en zéro.](figures/triangle-et-sommes-partielles.svg)
+
+Pour vérifier directement la constante du mode non nul, une première intégration par parties élimine le terme de bord en sinus et donne $n^{-1}\int_0^\pi\sin(nx)\,dx=(1-(-1)^n)/n^2$ avant la division par $\pi$. Le mode $n=0$ se calcule à part par l’aire du triangle.
 
 ### Question I.5
 
@@ -275,6 +283,8 @@ La périodicité et la stricte positivité donnent $a(x,\xi)\ge c(1+\xi^2)$ pour
 Pour $b=a^{-1}$, III.3.2 donne $T_aT_b=I+T_r$, où
 $$r=\frac{2f\xi}{i}\partial_x b-f\partial_x^2b.$$
 Le premier terme est d’ordre $-1$, le second d’ordre $-2$. Par II.6, $R=T_r$ gagne un ordre sur les coefficients pondérés. On peut prendre $\phi_1=T_b\psi$ : alors $T_a\phi_1-\psi=R\psi\in H^1$. Pour justifier ces opérations avec $\psi$ seulement continue, l’approximer par ses sommes de Fourier en norme zéro (Parseval). La borne de II.6 pour $b$ donne convergence en norme $2$ et celle pour $r$ en norme $1$. Par I.3 les limites ont un représentant continu. L’identité s’étend par convergence des coefficients et au sens des distributions. Elle donne $\phi_1''=(g\phi_1-\psi-R\psi)/f$ continue. Une distribution dont la dérivée seconde est continue est $C^2$ : il suffit de retrancher une primitive seconde, le reste étant affine. L’identité est donc également classique.
+
+Plus précisément, si $\psi_N$ est une somme partielle de Fourier de $\psi$, alors $\phi_N=T_b\psi_N$ converge dans la norme 2 et $R\psi_N$ dans la norme 1. Ces deux convergences impliquent la convergence uniforme par I.3. L’équation $-f\phi_N''+g\phi_N=\psi_N+R\psi_N$ passe au sens des distributions puisque $\psi_N\to\psi$ en norme zéro. Le membre droit limite est continu car $\psi$ l’est par hypothèse, même lorsque ses sommes partielles ne convergent pas uniformément.
 
 ### Question IV.4
 

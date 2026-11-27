@@ -1,0 +1,70 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_litterature-assia-djebar-et-lamour-la-fantasia-oral_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Littérature — Assia Djebar et L’Amour, la fantasia (oral)",
+    "annee": 2018,
+    "modalite": "oral"
+  },
+  "intitule": "Littérature — Assia Djebar et L’Amour, la fantasia (oral)",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/oral-SIL2018-litt.4.pdf",
+    "sha256_sujet": "e40289765a9490fbe062eaf0ce3b95eabcb87e16f0319594b3c0f80bdd83217c",
+    "reperage": "Commenter le passage du roman d’Assia Djebar.",
+    "pages_sujet": 2,
+    "bornes_texte": "P. 1, « Nous, les filles, nous espérions », à p. 2, « d’une condisciple française… ». Référence imprimée après l’extrait : Première partie, II, « La Fille du gendarme français ».",
+    "composition_document": "Deux pages. Consigne et chapeau situant les vacances auprès de trois cousines dans les années 1940, puis extrait de L’Amour, la fantasia (1985). Le portrait de Marie-Louise se poursuit à la page 2 ; indication du chapitre après la dernière phrase. Aucune autre pièce ni note."
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Commentaire",
+      "legende": "Qui franchit quel seuil ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet original. Commentaire intégral, analyse de la progression et de la forme, préparation guidée de l’entretien, réponses argumentées et schéma de lecture."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "classiques_2017",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Collation des deux pages de L’Amour, la fantasia, du chapeau et des bornes. Identification des cousines et de la chronologie, restitution du rôle du café et du détail des aiguilles, vérification des voix du dialogue et de la double négation finale. Exercice de diction propre au guide ; figure et signatures conservées."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire de spécialité — commentaire unique de l’intégralité du texte donné, suivi d’un entretien."
+    ],
+    "elements_verifies": [
+      "P. 1 : identification de la narratrice et des trois cousines dans les années 1940 ; portrait auditif et mobile de Janine puis portrait visuel de Marie-Louise.",
+      "P. 1–2 : coquetterie et mise en scène de l’étrangère, rôle des langues, interrogation rétrospective sur l’âge et sur les fiançailles ; course et courte échappée des deux fillettes.",
+      "P. 2 : commissions, limite très précise de la mercerie face au café, échanges de répliques et actions distribuées entre la benjamine et la Bourguignonne, regard à travers la fenêtre.",
+      "P. 2 : changement de temps, maisons françaises et rivage des « Autres », double constat final à l’échelle de l’enfance et horizon de la guerre d’indépendance. Commentaire continu et entraînement à l’entretien."
+    ]
+  },
+  "date_revision": "2026-11-26"
+}

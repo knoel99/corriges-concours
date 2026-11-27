@@ -4,7 +4,13 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve met en relation une équation de Schrödinger et une évolution de courbe spatiale. Le profil complexe de la première partie a une énergie conservée. Dans la dernière, la courbure et la torsion du profil géométrique déterminent explicitement la phase de la solution.
+
+[Sujet officiel](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2015_Sujet_1C_PSI_Maths.pdf)
+
+Pour les questions 1 à 7, $\alpha>0$, $f(0)=1$ et $f^{\prime}(0)=0$. Dans la partie III, $T=G^{\prime}$ est le vecteur tangent au profil de la courbe. La vérification suit les questions du sujet officiel. Le rapport écrit de mathématiques de cette session reste introuvable dans les archives consultées.
 
 ## I. Profil complexe et équation de Schrödinger
 
@@ -32,6 +38,8 @@ Pour $x>0$ posons $A(x)=x^{-1}\int_0^x u$. Alors $A'=(xu(x)-\int_0^x u)/x^2=-4J(
 
 Par 3, $|J|\le D$, d’où $|A'|\le4D/x^2$. La dérivée est intégrable sur $[1,\infty[$, donc $A$ a une limite finie $\ell$. Comme $0\le A(x)\le1$, on a $0\le\ell\le1$.
 
+Pour $v>u\ge1$, l’intégration de la dérivée donne $|A(v)-A(u)|\le 4D(1/u-1/v)\le4D/u$. Le critère de Cauchy à l’infini montre ainsi directement que la limite existe, avant même d’estimer sa valeur.
+
 ### Question 4d
 
 On a $|A(x)-\ell|\le\int_x^\infty 4D/s^2\,ds=4D/x$ pour tout $x>0$. Le choix $M=4D$ convient.
@@ -51,6 +59,8 @@ Avec 4e cela donne $|J|\le|f'|\le K/\sqrt x$, $K=\sqrt{(1+\alpha)M_0/2}$. Donc $
 ### Question 5b
 
 Si $\ell=1$, la relation de 4a donne $\int_0^x(1-u)=x(1-u(x))-4J(x)$. Par 5a et sa preuve, les deux termes du membre droit tendent vers zéro. L’intégrande est continu positif ou nul, donc son intégrale croissante étant de limite nulle, $u\equiv1$ sur $[0,\infty[$. L’énergie impose alors $f'\equiv0$ et $f\equiv1$ sur ce demi-axe. C’est impossible dans l’équation, car $1+\alpha>0$. Ainsi $\ell<1$.
+
+On peut repérer la contradiction localement. L’équation initiale impose $f''(0)=-(1+\alpha)/2$, donc $(|f|^2)''(0)=-(1+\alpha)<0$. Or la nullité de l’intégrale précédente forcerait $|f|^2=1$ dès l’origine.
 
 ### Question 6
 
@@ -91,6 +101,8 @@ $$
 \Psi_0(t,x)=e^{i\ln(t)/2}\sum_{k\ge0}c_ke^{-ik^2(t-1)+ikx}.
 $$
 La somme satisfait l’équation libre par 8b avec les coefficients $c_ke^{ik^2}$ et est $2\pi$-périodique en $x$. Le facteur de temps $b$ vérifie $ib'+b/(2t)=0$. La règle du produit donne donc $(F_0)$ et conserve les régularités demandées pour $t>0$. En $t=1$ on retrouve $f_0$.
+
+Le décalage $t-1$ préserve chaque coefficient initial. Pour un seul mode $k$, la dérivée en temps de sa phase vaut $-ik^2+i/(2t)$. Après multiplication par $i$, sa contribution s’annule avec la dérivée seconde spatiale et le potentiel $1/(2t)$. La convergence normale de 8b permet de sommer ces identités.
 
 ## II. Rotations et exponentielle matricielle
 
@@ -152,6 +164,10 @@ Comme $T'=\lambda n$, on a $G-xT=2\lambda b$. La dérivation donne $-xT'=2\lambd
 
 On a $n'\cdot n=0$, $n'\cdot T=-n\cdot T'=-\lambda$ et $n'\cdot b=-n\cdot b'=x/2$. Donc $n'=-\lambda T+xb/2$.
 
+Les signes se lisent aussi sur la matrice des dérivées. Pour $U=(T\ n\ b)$ à colonnes vectorielles, on a
+$$U'=U\begin{pmatrix}0&-\lambda&0\\ \lambda&0&-x/2\\ 0&x/2&0\end{pmatrix}.$$
+La matrice de droite est antisymétrique. L’équation préserve ainsi les produits scalaires des trois vecteurs du repère orthonormal initial.
+
 ### Question 20c
 
 Puisque $G'''=\lambda n'=-\lambda^2G'+(\lambda x/2)b$ et $2\lambda b=G-xG'$, on obtient $G'''+(\lambda^2+x^2/4)G'-xG/4=0$.
@@ -184,8 +200,14 @@ L’inégalité imprimée a un membre droit négatif pour $x<0$. Sur toute la dr
 
 Pour $x\ge0$, l’intégration de 22a donne $|G_1(x)-\sin(\lambda x)/\lambda|\le x^4/(24\lambda)$. En $x_*=3\pi/(2\lambda)$, le sinus vaut $-1$. Si $\lambda>3\pi/(2\sqrt[4]{24})$, alors $G_1(x_*)<0$. Or $G_1(0)=0$ et $G_1'(0)=1$, donc $G_1$ est strictement positive juste à droite de zéro. Par continuité, elle s’annule en un point strictement compris entre zéro et $x_*$.
 
+Par exemple, si $\lambda=3$, le point d’essai vaut $x_*=\pi/2$. Au même point, le majorant est $G_1(x_*)\le-1/3+\pi^4/1152<0$. Cela localise un zéro dans $]0,\pi/2[$ sans recourir à la valeur numérique du profil.
+
+![Pour λ égal à trois, la première coordonnée du profil quitte zéro avec une pente positive, puis devient négative. La bande représente la majoration intégrée de la question 22a. Le trait plein est une intégration numérique.](figures/comparaison-premiere-coordonnee.svg)
+
 ### Question 23
 
 Par 19 et 20, $k_G=\lambda$ et $\tau_G(s)=s/2$. La formule fournie devient $\Psi=\lambda t^{-1/2}e^{ix^2/(4t)}$. Une dérivation directe donne $i\Psi_t+\Psi_{xx}=0$ : les contributions en $i/(2t)$ et en $x^2/(4t^2)$ s’annulent. Le terme restant de $(F_\alpha)$ vaut $\Psi(\alpha\lambda^2+1)/(2t)$. Il est nul pour $\alpha=-1/\lambda^2$. Cette valeur négative est autorisée par la question finale.
 
-![Figure 1 — Pour lambda égal à un, la courbure reste constante et la torsion traverse zéro à l’origine avant de changer de signe.](figures/courbure-et-torsion.svg)
+![Pour lambda égal à un, la courbure reste constante et la torsion traverse zéro à l’origine avant de changer de signe.](figures/courbure-et-torsion.svg)
+
+En posant $\phi=x^2/(4t)$, on a $\Psi_t/\Psi=-1/(2t)-ix^2/(4t^2)$ et $\Psi_{xx}/\Psi=i/(2t)-x^2/(4t^2)$. Comme $|\Psi|^2=\lambda^2/t$, la condition sur $\alpha$ vient alors de la seule combinaison $(1+\alpha\lambda^2)/(2t)$.

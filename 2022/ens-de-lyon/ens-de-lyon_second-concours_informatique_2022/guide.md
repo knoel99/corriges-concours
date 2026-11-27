@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Repères de résolution
 
 Un défaut de cache correspond à une page demandée absente. Pour comparer deux stratégies, tenir séparément l’identité des pages, leur case physique et leur date d’accès. Le dernier exercice change d’unité de coût en comptant les lectures et écritures de pages entières.
@@ -268,6 +270,8 @@ $$
 $$
 
 En éléments transférés, multiplier par $Q$. Le cas $M=NQ$ donne exactement $N$ lectures et $N$ écritures, ce qui vérifie le terme constant.
+
+Par exemple, pour $M=64$, $N=4$, $Q=4$, les blocs de cache contiennent 16 clés. Les trois niveaux lisent chacun 64 clés et en écrivent 64, soit 384 mouvements de clés ou 96 transferts de pages. Le rapport compte bien les deux sens au début de son calcul, mais sa formule finale en éléments perd le facteur 2.
 
 ### Question 16 · Utiliser toutes les pages disponibles
 

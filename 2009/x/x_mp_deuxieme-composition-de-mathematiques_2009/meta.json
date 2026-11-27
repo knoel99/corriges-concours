@@ -11,7 +11,8 @@
   "sources": {
     "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-2_mp_2009.pdf",
     "rapport_jury": "https://www.wikiprepa.fr/concours/data/x_maths-2_mp_2009_rapport_jury.pdf",
-    "sha256_sujet": "4a6e7bdda4c75d69ae7739662912ccb33d371c1d5fb58378cb4b057f500e53c2"
+    "sha256_sujet": "4a6e7bdda4c75d69ae7739662912ccb33d371c1d5fb58378cb4b057f500e53c2",
+    "sha256_rapport_jury": "e530eb222a8dffa46f0ff826d8c9757786aa56ec413ce1e4fc8f0575af7610c5"
   },
   "figures": [
     {
@@ -31,6 +32,142 @@
       "perimetre": "Rédaction intégrale des deux éditions à partir des trois pages du sujet et du rapport des correcteurs. Vérification des indices négatifs, des valeurs propres doubles, des modes périodiques, des normes, de la densité de l’image et du multiplicateur de Fourier. Figure des modes de période sept.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "x_mp_deuxieme_composition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Pointage physique des 21 consignes sur 3 pages. Énoncé et rapport comparés sur le cas des valeurs propres doubles et les distinctions entre espace de toutes les suites, espace sommable et espace borné. Estimation du reste en norme d’opérateur, témoin explicite de non-densité et contrôle aux zéros du multiplicateur de Fourier."
     }
-  ]
+  ],
+  "intitule": "Endomorphismes d’espaces vectoriels de dimension infinie",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.a",
+      "1.b",
+      "1.c",
+      "1.d",
+      "2.a",
+      "2.b",
+      "3.a",
+      "3.b",
+      "3.c",
+      "4",
+      "5",
+      "6",
+      "7.a",
+      "7.b",
+      "8.a",
+      "8.b",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1.a",
+        "page_pdf": "1"
+      },
+      {
+        "question": "1.b",
+        "page_pdf": "1"
+      },
+      {
+        "question": "1.c",
+        "page_pdf": "1"
+      },
+      {
+        "question": "1.d",
+        "page_pdf": "1"
+      },
+      {
+        "question": "2.a",
+        "page_pdf": "2"
+      },
+      {
+        "question": "2.b",
+        "page_pdf": "2"
+      },
+      {
+        "question": "3.a",
+        "page_pdf": "2"
+      },
+      {
+        "question": "3.b",
+        "page_pdf": "2"
+      },
+      {
+        "question": "3.c",
+        "page_pdf": "2"
+      },
+      {
+        "question": "4",
+        "page_pdf": "2"
+      },
+      {
+        "question": "5",
+        "page_pdf": "2"
+      },
+      {
+        "question": "6",
+        "page_pdf": "3"
+      },
+      {
+        "question": "7.a",
+        "page_pdf": "3"
+      },
+      {
+        "question": "7.b",
+        "page_pdf": "3"
+      },
+      {
+        "question": "8.a",
+        "page_pdf": "3"
+      },
+      {
+        "question": "8.b",
+        "page_pdf": "3"
+      },
+      {
+        "question": "9",
+        "page_pdf": "3"
+      },
+      {
+        "question": "10",
+        "page_pdf": "3"
+      },
+      {
+        "question": "11",
+        "page_pdf": "3"
+      },
+      {
+        "question": "12",
+        "page_pdf": "3"
+      },
+      {
+        "question": "13",
+        "page_pdf": "3"
+      }
+    ],
+    "controle": [
+      "p. 1, bases normalisées de la matrice de transfert, deux racines simples ou bloc aux extrémités",
+      "p. 2, itération bilatérale, formules aux trois régimes, cas de parité de la période, normes des formes bilinéaires",
+      "p. 3, normes des translations, deux inverses pour la série de Neumann, noyaux, obstruction à la densité et coefficients de Fourier",
+      "Énoncé et rapport comparés sur le cas des valeurs propres doubles et les distinctions entre espace de toutes les suites, espace sommable et espace borné. Estimation du reste en norme d’opérateur, témoin explicite de non-densité et contrôle aux zéros du multiplicateur de Fourier."
+    ]
+  }
 }

@@ -16,7 +16,14 @@
   },
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/2025_blses_epreuve_a_option_sujet_chinois.pdf",
-    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_ecrit_chinois_option.pdf"
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_ecrit_chinois_option.pdf",
+    "sujet_sha256": "4c2bcde876f7180f6632377b8e6ec5d88449e71b86b6ad05549d686a0cddbaac",
+    "fascicule": "https://www.ens-lyon.fr/sites/default/files/2025-10/Sujets%20BLSES%20%C3%A9preuves%20optionnelles%202025.pdf",
+    "fascicule_sha256": "ad7d4877a638d78c47207dd017be3bc1db45f86ee0ce486f5f6b255d7030285b",
+    "pages_fascicule": [
+      23,
+      26
+    ]
   },
   "figures": [
     {
@@ -25,7 +32,7 @@
       "question": "Commentaire"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -36,6 +43,30 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Commentaire composé en chinois des 2 documents du sujet officiel de six heures, guidage et schéma comparatif."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "fin_langues_x_interens",
+      "agent": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Le feuillet officiel demande un commentaire en six heures sur 2 documents. Les pages 23 à 26 du fascicule commun ENS Ulm et Lyon reproduisent le PDF individuel, garde incluse. Le commentaire complet des deux éditions rapproche Chen Lin dans Xinjing bao (17 janvier 2025) et Yuyuan Tantian (18 janvier 2025), suivis d’un lexique. Distinction entre contribution à la croissance mondiale et part du PIB mondial dans la déclaration de Kang Yi.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Analyse et commentaire du dossier en chinois"
+    ],
+    "precision": "Le feuillet officiel demande un commentaire en six heures sur 2 documents. Les pages 23 à 26 du fascicule commun ENS Ulm et Lyon reproduisent le PDF individuel, garde incluse. Le commentaire complet des deux éditions rapproche Chen Lin dans Xinjing bao (17 janvier 2025) et Yuyuan Tantian (18 janvier 2025), suivis d’un lexique."
+  }
 }

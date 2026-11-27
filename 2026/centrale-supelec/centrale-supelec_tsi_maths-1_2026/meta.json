@@ -25,6 +25,11 @@
       "legende": "droite des moindres carrés y = c + dx : E(c, d) est la somme des carrés des écarts verticaux y_i − c − dx_i (tirets), non des distances à la droite"
     },
     {
+      "fichier": "figures/q29-antecedents-et-residu.svg",
+      "question": "Q29",
+      "legende": "Une droite d’antécédents pour un projeté et un résidu uniques"
+    },
+    {
       "fichier": "figures/q42-quatre-sous-espaces.svg",
       "question": "Q42",
       "legende": "les quatre sous-espaces de la SVD : A envoie ker(A) sur 0 et ker(A)^⊥ bijectivement sur Im(A), Ã fait l'inverse et annule Im(A)^⊥, donc b = Ãy est dans ker(A)^⊥"
@@ -37,7 +42,16 @@
   ],
   "sources": {
     "sujet": "https://www.concours-centrale-supelec.fr/sites/default/files/documents/M085.pdf",
-    "annales_organisateur": "https://www.concours-centrale-supelec.fr/sujets-rapports"
+    "annales_organisateur": "https://www.concours-centrale-supelec.fr/sujets-rapports",
+    "sha256_sujet": "521a33e07fbb1430edeabcddf4acfd4b15c97cbd41407021090a10106de74c9a",
+    "pages_sujet": 6,
+    "rapport_jury": null,
+    "verification_rapport": {
+      "date": "2026-11-26",
+      "rubrique": "TSI, Rapports du jury",
+      "dernier_millesime_affiche": 2025,
+      "sha256_page_annales": "7e564389f6b701010fa9cd31f8a0736ecca499196322778431c84b3afe7f7cb6"
+    }
   },
   "contributions": [
     {
@@ -72,7 +86,83 @@
       "modifications": true,
       "agent": "astra_maths",
       "perimetre": "Vérification des 52 réponses, des indications et des cinq figures sur le sujet officiel M085. En Q29, contre-exemple explicite à l’unicité de la préimage. En Q50, dérivation de l’orthogonalité des directions successives. Aucun rapport TSI 2026 dans la rubrique Rapports du jury de l’organisateur à la date de la relecture."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "agent": "x_maths_b_recentes",
+      "perimetre": "Vérification des 52 questions sur M085, des calculs des deux éditions et des cinq schémas existants. Antécédents et résidu en Q29, cas d’arrêt en Q50–52, contrôle numérique du tracé de régression."
     }
   ],
-  "date_revision": "2026-11-24"
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21",
+      "Q22",
+      "Q23",
+      "Q24",
+      "Q25",
+      "Q26",
+      "Q27",
+      "Q28",
+      "Q29",
+      "Q30",
+      "Q31",
+      "Q32",
+      "Q33",
+      "Q34",
+      "Q35",
+      "Q36",
+      "Q37",
+      "Q38",
+      "Q39",
+      "Q40",
+      "Q41",
+      "Q42",
+      "Q43",
+      "Q44",
+      "Q45",
+      "Q46",
+      "Q47",
+      "Q48",
+      "Q49",
+      "Q50",
+      "Q51",
+      "Q52"
+    ],
+    "origine_attestation": {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "521a33e07fbb1430edeabcddf4acfd4b15c97cbd41407021090a10106de74c9a",
+      "perimetre": "Vérification des 52 questions sur M085, des calculs des deux éditions et des cinq schémas existants. Antécédents et résidu en Q29, cas d’arrêt en Q50–52, contrôle numérique du tracé de régression."
+    }
+  }
 }

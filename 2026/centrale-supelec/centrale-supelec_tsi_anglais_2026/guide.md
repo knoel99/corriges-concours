@@ -8,6 +8,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Format.** L'épreuve dure 4 heures ; calculatrice et tout système électronique sont interdits. Elle comporte un seul exercice :
@@ -18,7 +20,7 @@
 
 Le sujet précise que l'ordre des documents est arbitraire et ne revêt aucune signification particulière. Le barème n'est pas publié dans le sujet. Le fichier du sujet contient aussi, après les quatre pages d'anglais, le sujet « Langue vivante » des autres langues (allemand, arabe, espagnol, italien, portugais, russe, chinois) : ce corrigé ne traite que l'anglais, conformément à l'intitulé de l'épreuve.
 
-**Pas de rapport de jury.** Centrale-Supélec n'a pas publié de rapport de jury pour la session 2026 au moment de la rédaction. Ce corrigé ne cite donc aucune attente du jury : les conseils qui suivent sont des **conseils méthodologiques généraux** sur l'exercice de synthèse, présentés comme tels, et non des exigences propres aux correcteurs de cette session.
+Au 26 novembre 2026, le dernier rapport affiché dans la rubrique TSI est celui de la session 2025. Les conseils de ce guide partent du sujet et des quatre documents. [Annales de Centrale-Supélec](https://www.concours-centrale-supelec.fr/sujets-rapports)
 
 **Le dossier.**
 
@@ -142,15 +144,15 @@ In a world of screens, is reading books becoming a thing of the past? Two Americ
 
 In a world of screens, is reading books becoming a thing of the past? Two American articles, by Rose Horowitch in The Atlantic and Joshua Rothman in The New Yorker, examine the decline of reading, while an extract from Ben Elton's dystopian novel Blind Faith and a 2021 advertisement for the Metaverse offer two contrasting visions of escape. They raise the question of what is lost when sustained reading gives way to digital experiences.
 
-First, the articles describe a striking decline. Rothman notes that the share of American adults who read at least one book a year fell from 55 to 48 percent in a decade, while the proportion of thirteen-year-olds reading for fun almost every day was roughly halved. Horowitch adds that even students at elite universities such as Columbia, who can decode texts perfectly well, now feel overwhelmed by the idea of reading several books a semester, so that some professors have shortened their reading lists.
+First, the articles describe a striking decline. Rothman notes that the share of American adults who read at least one book a year fell from 55 to 48 percent in a decade, while the proportion of thirteen-year-olds reading for fun almost every day fell from 27 to 14 percent over roughly the same period. Horowitch adds that even students at elite universities such as Columbia, who can decode texts perfectly well, now feel overwhelmed by the idea of reading several books a semester, so that some professors have shortened their reading lists.
 
-Both journalists examine the competition for attention. Smartphones, TikTok or Netflix constantly compete for attention, and, as a psychologist quoted by Horowitch puts it, "being bored has become unnatural". Yet the problem is not only technical: many students choose not to read because they care more about their future careers. Rothman also insists that reading is changing rather than disappearing: some people enjoy a kind of "hyper-literacy", others switch between e-books and audio narration, and theorists even speak of a return to an oral culture of comments, podcasts and memes. The Metaverse advertisement goes further, promising total immersion: the open walls of a furnished room place a seated headset user face to face with prehistoric creatures, under the slogan "It's just the beginning".
+Both journalists examine the competition for attention. Smartphones and streaming platforms offer constant distractions, and, as a psychologist quoted by Horowitch puts it, "being bored has become unnatural". Yet the problem is not only technical: many students choose not to read because they care more about their future careers. Rothman also insists that reading is changing rather than disappearing: some people enjoy a kind of "hyper-literacy", others switch between e-books and audio narration, and theorists even speak of a return to an oral culture of comments, podcasts and memes. The Metaverse advertisement goes further, promising total immersion: the open walls of a furnished room place a seated headset user face to face with prehistoric creatures, under the slogan "It's just the beginning".
 
-However, the documents suggest that books offer something screens cannot replace. For Horowitch, "deep reading" develops critical thinking, self-reflection and empathy, by transporting readers into other minds, but only if they read whole works rather than excerpts. Elton's novel turns this idea into fiction: in a society where private thought is forbidden, Trafford reveals a copy of Wuthering Heights disguised as a pamphlet and presents it as "a door" to "a thousand universes", a way to escape through "reason and imagination". The advertisement promises a similar escape, yet one delivered by technology rather than built by the reader's own imagination.
+For Horowitch and Elton, following a whole book makes distinctive demands on the imagination. In Horowitch’s account, "deep reading" develops critical thinking, self-reflection and empathy, by transporting readers into other minds, but only if they read whole works rather than excerpts. Elton's novel turns this idea into fiction: in a society where private thought is forbidden, Trafford reveals a copy of Wuthering Heights disguised as a pamphlet and presents it as "a door" to "a thousand universes", a way to escape through "reason and imagination". The advertisement promises a similar escape, yet one delivered by technology rather than built by the reader's own imagination.
 
-In conclusion, the articles document the decline of sustained reading, even if reading itself is taking new forms. What is at stake is not just an old habit, but our capacity to concentrate, to imagine and to understand others.
+the articles document the decline of sustained reading, even if reading itself is taking new forms. What is at stake is not just an old habit, but our capacity to concentrate, to imagine and to understand others.
 
-**Number of words (title included): 425**
+**Number of words (title included): 434**
 
 > [!METHODE]
 > Les verbes introducteurs varient et situent la position de chaque auteur : *notes*, *adds*, *insists*, *suggest*. Ils évitent la répétition de *says*.
@@ -164,7 +166,7 @@ In conclusion, the articles document the decline of sustained reading, even if r
 > Comptez paragraphe par paragraphe, titre compris, et reportez le total exact.
 
 > [!INDICATION]
-> Relisez les temps (*fell … in a decade*, *was roughly halved*), les articles et l'accord sujet-verbe après *the share of* et *the proportion of*.
+> Relisez les temps (*fell … in a decade*, *fell from 27 to 14 percent*), les articles et l'accord sujet-verbe après *the share of* et *the proportion of*.
 
 #### Solution
 
@@ -172,17 +174,17 @@ In conclusion, the articles document the decline of sustained reading, even if r
 |---|---|
 | Titre | 5 |
 | Introduction | 74 |
-| Partie I | 84 |
-| Partie II | 123 |
-| Partie III | 100 |
-| Conclusion | 39 |
-| **Total** | **425** |
+| Partie I | 92 |
+| Partie II | 122 |
+| Partie III | 104 |
+| Conclusion | 37 |
+| **Total** | **434** |
 
-Le total (425 mots) est dans la fourchette 360-440, quelle que soit la convention adoptée pour les traits d'union et les apostrophes (voir la revue).
+Le total (434 mots) est dans la fourchette 360-440, quelle que soit la convention adoptée pour les traits d'union et les apostrophes (voir la revue).
 
 Points de langue vérifiés :
 
-- *the share of American adults … fell*, *the proportion of thirteen-year-olds … was roughly halved* : verbe au singulier, accordé à *share* et *proportion* ;
+- *the share of American adults … fell*, *the proportion of thirteen-year-olds … fell from 27 to 14 percent* : verbe au singulier, accordé à *share* et *proportion* ;
 - *thirteen-year-olds* : pas de *s* à *year*, trait d'union entre les trois éléments ;
 - *care more about their future careers* : *care about*, pas *care of* ;
 - *lies back in his living room* : *lie, lay, lain* (s'allonger), à ne pas confondre avec *lay, laid, laid* (poser).
@@ -197,6 +199,8 @@ Points de langue vérifiés :
 - **Documents non argumentatifs** : un extrait de roman et une publicité se décrivent puis s'interprètent en lien avec les articles, sans être présentés comme des faits.
 - **Langue utile** : *attention span*, *deep reading*, *to skim*, *to be overwhelmed by*, *reading list*, *literacy*, *audiobook*, *immersive*, *virtual reality headset*, *to escape into*.
 - **Transposable** : les dossiers sur les écrans, l'attention, l'école et la culture numérique se traitent avec la même grille (constat chiffré, causes, nuances, enjeux).
+
+Dans le projet publicitaire de DPM, l’horloge et la lampe situent le fauteuil dans un salon. La pièce ouverte donne directement sur des animaux préhistoriques. Ce raccord visuel construit la promesse du slogan. Il donne un point de comparaison précis avec le livre dissimulé de Trafford.
 
 ![Deux façons de franchir le décor](figures/lecture-du-dossier.svg)
 

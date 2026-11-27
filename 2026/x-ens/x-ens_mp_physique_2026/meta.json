@@ -130,6 +130,312 @@
       "perimetre": "Relecture indépendante des 56 questions du brut et du guidé, des dix schémas, du sujet et du rapport officiels. Corrections sur la force de flexion, le domaine de la plaque mince, la cohérence optique et la mesure du signal modulé.",
       "agent": "relecture_astra_physique_2026",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "tour": 4,
+      "agent": "fui_physique_un",
+      "fournisseur": "codex",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture des 56 consignes, des figures et du rapport. Vérification dimensionnelle des énergies et de la loi de dispersion, de la mesure de l’épaisseur de glace, des phases de l’interféromètre et de la démodulation en fréquence. Calcul de la tolérance de réglage de la vis en Q37 et de sa dépendance à la sensibilité demandée."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "56"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "1",
+        "page_pdf": 2
+      },
+      {
+        "question": "2",
+        "page_pdf": 3
+      },
+      {
+        "question": "3",
+        "page_pdf": 3
+      },
+      {
+        "question": "4",
+        "page_pdf": 3
+      },
+      {
+        "question": "5",
+        "page_pdf": 3
+      },
+      {
+        "question": "6",
+        "page_pdf": 3
+      },
+      {
+        "question": "7",
+        "page_pdf": 4
+      },
+      {
+        "question": "8",
+        "page_pdf": 4
+      },
+      {
+        "question": "9",
+        "page_pdf": 4
+      },
+      {
+        "question": "10",
+        "page_pdf": 4
+      },
+      {
+        "question": "11",
+        "page_pdf": 4
+      },
+      {
+        "question": "12",
+        "page_pdf": 5
+      },
+      {
+        "question": "13",
+        "page_pdf": 5
+      },
+      {
+        "question": "14",
+        "page_pdf": 5
+      },
+      {
+        "question": "15",
+        "page_pdf": 5
+      },
+      {
+        "question": "16",
+        "page_pdf": 5
+      },
+      {
+        "question": "17",
+        "page_pdf": 5
+      },
+      {
+        "question": "18",
+        "page_pdf": 5
+      },
+      {
+        "question": "19",
+        "page_pdf": 5
+      },
+      {
+        "question": "20",
+        "page_pdf": 6
+      },
+      {
+        "question": "21",
+        "page_pdf": 6
+      },
+      {
+        "question": "22",
+        "page_pdf": 6
+      },
+      {
+        "question": "23",
+        "page_pdf": 6
+      },
+      {
+        "question": "24",
+        "page_pdf": 6
+      },
+      {
+        "question": "25",
+        "page_pdf": 6
+      },
+      {
+        "question": "26",
+        "page_pdf": 6
+      },
+      {
+        "question": "27",
+        "page_pdf": 6
+      },
+      {
+        "question": "28",
+        "page_pdf": 7
+      },
+      {
+        "question": "29",
+        "page_pdf": 7
+      },
+      {
+        "question": "30",
+        "page_pdf": 7
+      },
+      {
+        "question": "31",
+        "page_pdf": 7
+      },
+      {
+        "question": "32",
+        "page_pdf": 8
+      },
+      {
+        "question": "33",
+        "page_pdf": 8
+      },
+      {
+        "question": "34",
+        "page_pdf": 8
+      },
+      {
+        "question": "35",
+        "page_pdf": 8
+      },
+      {
+        "question": "36",
+        "page_pdf": 9
+      },
+      {
+        "question": "37",
+        "page_pdf": 9
+      },
+      {
+        "question": "38",
+        "page_pdf": 9
+      },
+      {
+        "question": "39",
+        "page_pdf": 9
+      },
+      {
+        "question": "40",
+        "page_pdf": 9
+      },
+      {
+        "question": "41",
+        "page_pdf": 9
+      },
+      {
+        "question": "42",
+        "page_pdf": 9
+      },
+      {
+        "question": "43",
+        "page_pdf": 10
+      },
+      {
+        "question": "44",
+        "page_pdf": 10
+      },
+      {
+        "question": "45",
+        "page_pdf": 10
+      },
+      {
+        "question": "46",
+        "page_pdf": 10
+      },
+      {
+        "question": "47",
+        "page_pdf": 10
+      },
+      {
+        "question": "48",
+        "page_pdf": 10
+      },
+      {
+        "question": "49",
+        "page_pdf": 10
+      },
+      {
+        "question": "50",
+        "page_pdf": 10
+      },
+      {
+        "question": "51",
+        "page_pdf": 10
+      },
+      {
+        "question": "52",
+        "page_pdf": 10
+      },
+      {
+        "question": "53",
+        "page_pdf": 10
+      },
+      {
+        "question": "54",
+        "page_pdf": 10
+      },
+      {
+        "question": "55",
+        "page_pdf": 10
+      },
+      {
+        "question": "56",
+        "page_pdf": 11
+      }
+    ],
+    "precision": "Lecture des 56 consignes, des figures et du rapport. Vérification dimensionnelle des énergies et de la loi de dispersion, de la mesure de l’épaisseur de glace, des phases de l’interféromètre et de la démodulation en fréquence. Calcul de la tolérance de réglage de la vis en Q37 et de sa dépendance à la sensibilité demandée."
+  }
 }

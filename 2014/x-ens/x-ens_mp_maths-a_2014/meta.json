@@ -11,7 +11,8 @@
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2014/10/14_mp_suj_math_a.pdf",
     "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/01/14_mp_rap_ecrit_maths_a.pdf",
-    "sha256_sujet": "e43101b4ce6ae6742a4b0dd276aa511cb2605d413d9406a9265280d4111e7ba5"
+    "sha256_sujet": "e43101b4ce6ae6742a4b0dd276aa511cb2605d413d9406a9265280d4111e7ba5",
+    "sha256_rapport_jury": "7970fd195e4ca6e230518480b4039afda2a97542726c722e048bf6cf82d80ec5"
   },
   "figures": [
     {
@@ -31,6 +32,66 @@
       "perimetre": "Rédaction intégrale des deux éditions et de leurs 33 réponses. Vérification contre sujet et rapport des isométries, des quatre composantes réelles et de la simplification de Witt. Schéma original de la coupe des deux nappes.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_maths_b_recentes",
+      "modifications": true,
+      "perimetre": "33 subdivisions et la coupe de l’hyperboloïde confrontées au sujet et au rapport. Vérification du radical, du changement de base hyperbolique, des classes du groupe de Lorentz et de la simplification d’une forme commune. Représentants explicites des quatre classes en Q15."
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3.a",
+      "3.b",
+      "4.a",
+      "4.b",
+      "4.c",
+      "5",
+      "6.a",
+      "6.b",
+      "6.c",
+      "7.a",
+      "7.b",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13.a",
+      "13.b",
+      "14.a",
+      "14.b",
+      "14.c",
+      "15",
+      "16",
+      "17.a",
+      "17.b",
+      "17.c",
+      "18.a",
+      "18.b",
+      "18.c",
+      "19",
+      "20"
+    ],
+    "precision": "Énoncé de 5 pages PDF et rapport de 7 pages PDF. 33 subdivisions et la coupe de l’hyperboloïde confrontées au sujet et au rapport. Vérification du radical, du changement de base hyperbolique, des classes du groupe de Lorentz et de la simplification d’une forme commune. Représentants explicites des quatre classes en Q15.",
+    "origine_attestation": {
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "e43101b4ce6ae6742a4b0dd276aa511cb2605d413d9406a9265280d4111e7ba5",
+      "sha256_rapport_jury_controle": "7970fd195e4ca6e230518480b4039afda2a97542726c722e048bf6cf82d80ec5",
+      "perimetre": "33 subdivisions et la coupe de l’hyperboloïde confrontées au sujet et au rapport. Vérification du radical, du changement de base hyperbolique, des classes du groupe de Lorentz et de la simplification d’une forme commune. Représentants explicites des quatre classes en Q15.",
+      "commit_edition_anterieure": "1960eeb6a0e41539c8ee6cb77cb1447ab71f7044"
+    }
+  }
 }

@@ -11,7 +11,10 @@
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-mp/session-2004/sujet-2004-ecrit-mp_mathematiques_lyon_paris.pdf",
     "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/rapport-de-jury-session-2004/rapport-2004-mp_ecrit_mathematiques_lyon_paris.pdf",
-    "sha256_sujet": "4b56e54d76c8a6e5df0c7c12dfd7cb9caf7818acf4ad8f1a60fd76c4471d924f"
+    "sha256_sujet": "4b56e54d76c8a6e5df0c7c12dfd7cb9caf7818acf4ad8f1a60fd76c4471d924f",
+    "pages_sujet": 5,
+    "sha256_rapport_jury": "3f8bbd7f5f4f0d33045a1d9a0e0f44f17c012225163b3918675b212c87cec874",
+    "pages_rapport_jury": 10
   },
   "figures": [
     {
@@ -31,6 +34,204 @@
       "perimetre": "Rédaction des cinq parties sur l’original et contrôle du rapport avec éléments de solution. Arguments local et global pour les carrés, indépendance des caractères, trivialisation matricielle, exactitude et exemples SO₂ et S₃. Diagramme des fibres dans le dernier exemple.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Contrôle des 35 questions avec le sujet et le rapport détaillé. Vérification de l’inversion locale et de l’exception de dimension nulle, des équivariances et du calcul des cocycles de SO₂, de l’exactitude ainsi que des fibres du dernier exemple. Correction et développement des deux éditions.",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4.a",
+      "I.4.b",
+      "II.1",
+      "II.2",
+      "II.3.a",
+      "II.3.b",
+      "III.1.a",
+      "III.1.b",
+      "III.2.a",
+      "III.2.b",
+      "III.2.c",
+      "III.3",
+      "III.4.a",
+      "III.4.b",
+      "III.4.c",
+      "IV.1",
+      "IV.2",
+      "IV.3.a",
+      "IV.3.b",
+      "IV.4.a",
+      "IV.4.b",
+      "IV.5.a",
+      "IV.5.b",
+      "IV.5.c",
+      "V.1.a",
+      "V.1.b",
+      "V.1.c",
+      "V.2.a",
+      "V.2.b",
+      "V.2.c",
+      "V.3.a",
+      "V.3.b"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": "I.1",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.2",
+        "page_sujet": 3
+      },
+      {
+        "question": "I.3",
+        "page_sujet": 3
+      },
+      {
+        "question": "I.4.a",
+        "page_sujet": 3
+      },
+      {
+        "question": "I.4.b",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.1",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.2",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.3.a",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.3.b",
+        "page_sujet": 3
+      },
+      {
+        "question": "III.1.a",
+        "page_sujet": 3
+      },
+      {
+        "question": "III.1.b",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.2.a",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.2.b",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.2.c",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.3",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.4.a",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.4.b",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.4.c",
+        "page_sujet": 4
+      },
+      {
+        "question": "IV.1",
+        "page_sujet": 4
+      },
+      {
+        "question": "IV.2",
+        "page_sujet": 4
+      },
+      {
+        "question": "IV.3.a",
+        "page_sujet": 5
+      },
+      {
+        "question": "IV.3.b",
+        "page_sujet": 5
+      },
+      {
+        "question": "IV.4.a",
+        "page_sujet": 5
+      },
+      {
+        "question": "IV.4.b",
+        "page_sujet": 5
+      },
+      {
+        "question": "IV.5.a",
+        "page_sujet": 5
+      },
+      {
+        "question": "IV.5.b",
+        "page_sujet": 5
+      },
+      {
+        "question": "IV.5.c",
+        "page_sujet": 5
+      },
+      {
+        "question": "V.1.a",
+        "page_sujet": 5
+      },
+      {
+        "question": "V.1.b",
+        "page_sujet": 5
+      },
+      {
+        "question": "V.1.c",
+        "page_sujet": 5
+      },
+      {
+        "question": "V.2.a",
+        "page_sujet": 5
+      },
+      {
+        "question": "V.2.b",
+        "page_sujet": 5
+      },
+      {
+        "question": "V.2.c",
+        "page_sujet": 5
+      },
+      {
+        "question": "V.3.a",
+        "page_sujet": 5
+      },
+      {
+        "question": "V.3.b",
+        "page_sujet": 5
+      }
+    ],
+    "precision": "Cinq parties aux pages PDF 2 à 5 après la garde. En II.3.a la carte de SLₙ(R) a dimension n²−1 ; la convention p strictement positif du sujet exclut le singleton n=1, sauf si l’on autorise la dimension zéro."
+  }
 }

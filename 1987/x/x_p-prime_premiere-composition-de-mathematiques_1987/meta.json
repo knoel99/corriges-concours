@@ -1,0 +1,299 @@
+{
+  "slug": "x_p-prime_premiere-composition-de-mathematiques_1987",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "P prime",
+    "filiere_historique": "P′",
+    "annee": 1987,
+    "matiere": "Première composition de mathématiques",
+    "modalite": "écrit"
+  },
+  "questions": 27,
+  "duree_heures": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-20cd4cac870f6454738b",
+    "sujet_sha256": "7cbdfdb40dff42c5923820b4218c0d51ea82b5ac374086b5fd4c9a474495de37",
+    "notice_ups": "m87xp1",
+    "calendrier": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000516456",
+    "provenance": "Le document mixte m87xp1da offre une saisie de l’énoncé puis un corrigé. La garde du fac-similé confirme le concours, l’option et le rang.",
+    "rapport_jury": "",
+    "observation_rapport": "La notice UPS consultée ne fournit pas de rapport de jury."
+  },
+  "pieces_verifiees": {
+    "fac-simile": {
+      "reference": "m87xp1ea",
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-20cd4cac870f6454738b",
+      "sha256": "7cbdfdb40dff42c5923820b4218c0d51ea82b5ac374086b5fd4c9a474495de37",
+      "pages": 2,
+      "rendu_page_sha256": [
+        "c7392cbbd357a5afa1c1cdb200086c5aabf052d0a990a4089befe1753cf018b4",
+        "f0180a67257ff3a3be8e7ab1bd567092350db9618ce637d7f66997c5e67e7fef"
+      ]
+    },
+    "m87xp1da": {
+      "reference": "m87xp1da",
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-fac52f52cb4d2a9b6829",
+      "sha256": "9497d4f7bb828dd009b6c806403a3e41beb121fed5bacdfc8520b3f4ab2f0f87",
+      "pages": 4,
+      "rendu_page_sha256": [
+        "f38b7b2d0d925bebffeaa9cdd30d15bbbc25931fe7b6621139c09a291f63628b",
+        "9813972eb39ea7605ddc4abf9b72db4c7442e7ad9463a4769d7262a1243946da",
+        "ba4c822d2b50beba1c69ff3136d71a45a04af6f2f45f83d8b7425e239c6d842d",
+        "b57e818a9ebf15d1b79e312d147dc78e4a0aac091adc63afd7149dee9e6c43ad"
+      ]
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "x_hist_1987",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction des 27 rubriques des deux éditions, de leurs indications et de 3 figures."
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "x_hist_1987",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture du signe de l’intégration par parties, des cas constants, des raccords et des deux preuves d’égalité avec ou sans atteinte du supremum."
+    }
+  ],
+  "figures": [
+    {
+      "question": "I.1.c",
+      "numero": 1,
+      "fichier": "figures/noyau-a.svg",
+      "legende": "Les arcs du noyau A se rejoignent en zéro et ont une tangente horizontale aux deux extrémités de la période."
+    },
+    {
+      "question": "I.2.b",
+      "numero": 2,
+      "fichier": "figures/noyau-b.svg",
+      "legende": "Les segments du noyau B ont deux limites opposées en zéro. Le point plein indique la valeur prise par la série en ce point."
+    },
+    {
+      "question": "II.4.b",
+      "numero": 3,
+      "fichier": "figures/arcs-paraboliques.svg",
+      "legende": "Sur une période de longueur quatre, les arcs de paraboles se raccordent avec la même pente et la fonction atteint successivement ses deux valeurs extrêmes."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1.a",
+      "I.1.b",
+      "I.1.c",
+      "I.2.a",
+      "I.2.b",
+      "I.2.c",
+      "I.2.d",
+      "II.1.a",
+      "II.1.b",
+      "II.2.a",
+      "II.2.b",
+      "II.2.c",
+      "II.3.a",
+      "II.3.b",
+      "II.4.a",
+      "II.4.b",
+      "II.4.c",
+      "II.4.d",
+      "III.1.a",
+      "III.1.b",
+      "III.1.c",
+      "III.1.d",
+      "III.2.a",
+      "III.2.b",
+      "III.3.a",
+      "III.3.b",
+      "III.3.c"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "I.1.a",
+        "feuillet_imprime": 1,
+        "page_pdf": 1,
+        "page_recueil": 68
+      },
+      {
+        "question": "I.1.b",
+        "feuillet_imprime": 1,
+        "page_pdf": 1,
+        "page_recueil": 68
+      },
+      {
+        "question": "I.1.c",
+        "feuillet_imprime": 1,
+        "page_pdf": 1,
+        "page_recueil": 68
+      },
+      {
+        "question": "I.2.a",
+        "feuillet_imprime": 1,
+        "page_pdf": 1,
+        "page_recueil": 68
+      },
+      {
+        "question": "I.2.b",
+        "feuillet_imprime": 1,
+        "page_pdf": 1,
+        "page_recueil": 68
+      },
+      {
+        "question": "I.2.c",
+        "feuillet_imprime": 2,
+        "page_pdf": 1,
+        "page_recueil": 68
+      },
+      {
+        "question": "I.2.d",
+        "feuillet_imprime": 2,
+        "page_pdf": 1,
+        "page_recueil": 68
+      },
+      {
+        "question": "II.1.a",
+        "feuillet_imprime": 2,
+        "page_pdf": 1,
+        "page_recueil": 68
+      },
+      {
+        "question": "II.1.b",
+        "feuillet_imprime": 2,
+        "page_pdf": 1,
+        "page_recueil": 68
+      },
+      {
+        "question": "II.2.a",
+        "feuillet_imprime": 2,
+        "page_pdf": 1,
+        "page_recueil": 68
+      },
+      {
+        "question": "II.2.b",
+        "feuillet_imprime": 2,
+        "page_pdf": 1,
+        "page_recueil": 68
+      },
+      {
+        "question": "II.2.c",
+        "feuillet_imprime": 2,
+        "page_pdf": 1,
+        "page_recueil": 68
+      },
+      {
+        "question": "II.3.a",
+        "feuillet_imprime": 2,
+        "page_pdf": 1,
+        "page_recueil": 68
+      },
+      {
+        "question": "II.3.b",
+        "feuillet_imprime": 2,
+        "page_pdf": 1,
+        "page_recueil": 68
+      },
+      {
+        "question": "II.4.a",
+        "feuillet_imprime": 3,
+        "page_pdf": 2,
+        "page_recueil": 69
+      },
+      {
+        "question": "II.4.b",
+        "feuillet_imprime": 3,
+        "page_pdf": 2,
+        "page_recueil": 69
+      },
+      {
+        "question": "II.4.c",
+        "feuillet_imprime": 3,
+        "page_pdf": 2,
+        "page_recueil": 69
+      },
+      {
+        "question": "II.4.d",
+        "feuillet_imprime": 3,
+        "page_pdf": 2,
+        "page_recueil": 69
+      },
+      {
+        "question": "III.1.a",
+        "feuillet_imprime": 3,
+        "page_pdf": 2,
+        "page_recueil": 69
+      },
+      {
+        "question": "III.1.b",
+        "feuillet_imprime": 3,
+        "page_pdf": 2,
+        "page_recueil": 69
+      },
+      {
+        "question": "III.1.c",
+        "feuillet_imprime": 3,
+        "page_pdf": 2,
+        "page_recueil": 69
+      },
+      {
+        "question": "III.1.d",
+        "feuillet_imprime": 3,
+        "page_pdf": 2,
+        "page_recueil": 69
+      },
+      {
+        "question": "III.2.a",
+        "feuillet_imprime": 4,
+        "page_pdf": 2,
+        "page_recueil": 69
+      },
+      {
+        "question": "III.2.b",
+        "feuillet_imprime": 4,
+        "page_pdf": 2,
+        "page_recueil": 69
+      },
+      {
+        "question": "III.3.a",
+        "feuillet_imprime": 4,
+        "page_pdf": 2,
+        "page_recueil": 69
+      },
+      {
+        "question": "III.3.b",
+        "feuillet_imprime": 4,
+        "page_pdf": 2,
+        "page_recueil": 69
+      },
+      {
+        "question": "III.3.c",
+        "feuillet_imprime": 4,
+        "page_pdf": 2,
+        "page_recueil": 69
+      }
+    ]
+  }
+}

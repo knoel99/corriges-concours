@@ -8,7 +8,11 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-## Distinguer trois diagnostics
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+**Couverture vérifiée.** Écrit, sujet individuel 1 de la feuille officielle. Le rapport rattache le projet sur le rôle des politiques d’éducation et de formation face à la désindustrialisation à cette épreuve et à l’oral « À quoi sert l’éducation ? ». La dissertation et son guide traitent le ralentissement observé, les mécanismes de stagnation et la finalité de la croissance. Les taux français et leurs périodes de référence ont été rapprochés de la figure 1 de l’Insee. Une troisième période et une application au bassin industriel relient les séries nationales au projet décrit par le jury.
+
+## Repérer les mécanismes du ralentissement et ses enjeux
 
 1. **Le taux baisse.** À 2,2 % par an, le PIB réel double encore en près de trente-deux ans. Calculez avec le facteur annuel 1,022, puis interprétez.
 2. **La demande est insuffisante.** Recherchez les capacités inemployées et les évolutions de l’investissement. Une politique conjoncturelle peut modifier la trajectoire.
@@ -18,7 +22,9 @@
 
 Le jury rattache cet écrit à un projet sur les politiques de formation face à la désindustrialisation. Une application pertinente consiste à comparer les parcours d’emploi de travailleurs exposés différemment à une fermeture industrielle. Le dossier individuel n’étant pas publié, cette piste ne préjuge pas de la stratégie du candidat.
 
-![Deux régimes de croissance en France](figures/croissance-francaise.svg)
+**Vérifier les ordres de grandeur.** Le facteur qui double une base 100 en 32 ans est proche de $1{,}022^{32}$. Pour comparer des taux sur cinq ans, on calcule de même $100(1{,}001)^5$ et $100(1{,}022)^5$. Ce sont des trajectoires lissées destinées à interpréter les moyennes historiques. Pour décrire la récession d’une année particulière, il faut les observations annuelles.
+
+![Figure 1 — Deux régimes de croissance en France](figures/croissance-francaise.svg)
 
 ## La fin de la croissance
 
@@ -29,6 +35,8 @@ La France a connu entre 1949 et 1974 une croissance moyenne du produit intérieu
 Le PIB réel par habitant peut se décomposer en production par heure, heures travaillées par personne en emploi et proportion des personnes en emploi dans la population. Une réduction choisie du temps de travail et une diminution subie de l’emploi ont des effets arithmétiques analogues sur le PIB, mais des significations sociales différentes. La croissance exceptionnelle des pays européens après 1945 doit beaucoup à la reconstruction, à l’accumulation du capital, au transfert de main-d’œuvre et au rattrapage technologique. Plus une économie se rapproche de la frontière de productivité, moins elle peut compter sur la seule adoption de techniques déjà éprouvées. Dans le modèle de Solow, approfondir le capital par travailleur rencontre des rendements décroissants. À long terme, le progrès technique entretient l’augmentation de la production par travailleur. Il serait donc erroné de prolonger indéfiniment le rendement d’une phase de rattrapage.
 
 Il faut toutefois séparer un ralentissement de l’offre potentielle d’une demande durablement insuffisante. Des perspectives de débouchés médiocres peuvent dissuader les entreprises d’investir, même quand le financement est peu coûteux. Le vieillissement, les inégalités d’épargne et l’incertitude peuvent accentuer ce risque. Une demande déficiente dégrade à son tour le potentiel lorsque les chômeurs perdent des compétences ou que les investissements de recherche sont différés. Des séries sur le travail, l’investissement, la productivité horaire et les capacités inemployées aideraient à départager ces mécanismes. Leur distinction change la réponse publique. Maintenir la demande dans une économie momentanément déprimée ne supprime pas une contrainte physique de long terme.
+
+La même étude de l’Insee offre un troisième point de comparaison. De 2007 à 2012, le PIB français en volume ne progresse en moyenne que de 0,1 % par an. À taux constant, 100 deviendrait environ 100,5 en cinq ans, contre environ 111,5 à 2,2 %. Le premier intervalle inclut la récession de 2009. En déduire une disparition définitive des gains de productivité confondrait les effets de la crise sur la demande avec les déterminants du potentiel productif. Une fermeture d’usine illustre la difficulté à l’échelle locale. La valeur ajoutée régionale peut chuter alors même que l’économie nationale croît. Pour apprécier ce que change une politique de formation, il faudrait suivre simultanément les trajectoires des salariés déplacés et les recrutements dans les activités qui se développent, y compris hors du territoire initial.
 
 ### Ce qui peut encore croître et à quelles conditions
 

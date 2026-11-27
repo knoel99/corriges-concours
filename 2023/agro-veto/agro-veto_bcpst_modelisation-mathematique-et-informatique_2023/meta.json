@@ -1,0 +1,127 @@
+{
+  "slug": "agro-veto_bcpst_modelisation-mathematique-et-informatique_2023",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "Modélisation mathématique et informatique",
+    "annee": 2023,
+    "duree_heures": 3
+  },
+  "questions": 49,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "rapport": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/mmi_2023_rapport_le.pdf",
+    "rapport_sha256": "163dfc5ef1327b9d52dabf37b5f7a621aea5e268a0731d4d5447bebedbb95b1e",
+    "page_organisateur": "https://www.concours-agro-veto.fr/archives-bilans-statistiques/archives-sujets-rapports/sujets-rapports-concours-cpge-bcpst/epreuves-ecrites-concours-cpge-bcpst",
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/abcpst_sp_0223_mmi-1.pdf",
+    "sujet_sha256": "4a2cb023fed4dc036b7f6445d864a375371a56dd5353fcb223dd4d1f717d508b"
+  },
+  "figures": [
+    {
+      "fichier": "figures/uniformisation-dans-la-boite.svg",
+      "question": "I.11",
+      "legende": "En partant de la première case, les distributions aux instants 2, 8 et 40 se rapprochent de la distribution uniforme, de probabilité 1/6 par case."
+    },
+    {
+      "fichier": "figures/prix-et-versement.svg",
+      "question": "II.15",
+      "legende": "Au-dessous du prix d’exercice, le prix payé suit le cours. Au-dessus, la banque verse le dépassement."
+    },
+    {
+      "fichier": "figures/arbre-des-exposants.svg",
+      "question": "II.1a",
+      "legende": "Les huit chemins aboutissent à quatre exposants finaux. Les diagonales qui se rejoignent expliquent la recombinaison."
+    },
+    {
+      "fichier": "figures/seuils-des-feuilles.svg",
+      "question": "III.13",
+      "legende": "Pour cinq pas, un cours initial de 1 et un prix d’exercice de 2, les feuilles d’exposants 5, 3 puis 1 deviennent actives aux trois seuils pointillés."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction de toutes les questions sur le sujet et le rapport officiels. Correction de l’exception en I.9b, seuil strict du call, bords de la dernière tranche pour les deux parités et cas de division par zéro du code imprimé. Vérification sur arbres et matrices et quatre figures originales."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture des 49 réponses des deux éditions avec le rapport et l’annexe Python. Vérification des puissances de la matrice en boîte, de son projecteur limite, des probabilités des feuilles et des seuils de la prime. Contrôle numérique de la somme binomiale pour 1 100 pas et de l’inversion par tranches, y compris la prime nulle et les dérivées nulles du code imprimé."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5a",
+      "I.5b",
+      "I.6",
+      "I.7",
+      "I.8",
+      "I.9a",
+      "I.9b",
+      "I.9c",
+      "I.10a",
+      "I.10b",
+      "I.10c",
+      "I.11",
+      "I.12",
+      "II.13",
+      "II.14",
+      "II.15",
+      "II.1a",
+      "II.1b",
+      "II.1c",
+      "II.2a",
+      "II.2b",
+      "II.2c",
+      "II.3a",
+      "II.3b",
+      "II.3c",
+      "II.4a",
+      "II.4b",
+      "II.5",
+      "II.6",
+      "III.7a",
+      "III.7b",
+      "III.8a",
+      "III.8b",
+      "III.9a",
+      "III.9b",
+      "III.9c",
+      "III.10a",
+      "III.10b",
+      "III.10c",
+      "III.11",
+      "III.12",
+      "III.13",
+      "III.14",
+      "III.15a",
+      "III.15b"
+    ],
+    "precision": "Les trois parties du fascicule A BCPST 0223 rassemblent 17, 16 et 16 rubriques. Dans la deuxième partie, les numéros recommencent à 1 après les questions 13–15 sur le contrat à terme. L’annexe Python de la page 9 et le rapport du jury ont été contrôlés.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "4a2cb023fed4dc036b7f6445d864a375371a56dd5353fcb223dd4d1f717d508b",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Relecture des 49 réponses des deux éditions avec le rapport et l’annexe Python. Vérification des puissances de la matrice en boîte, de son projecteur limite, des probabilités des feuilles et des seuils de la prime. Contrôle numérique de la somme binomiale pour 1 100 pas et de l’inversion par tranches, y compris la prime nulle et les dérivées nulles du code imprimé.",
+      "commit_redaction_anterieure": "bbfe5a02c5d2a0784d3110e1d614d182919e74f1"
+    }
+  }
+}

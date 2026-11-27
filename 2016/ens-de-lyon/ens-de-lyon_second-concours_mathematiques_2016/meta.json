@@ -32,5 +32,37 @@
       "fournisseur": "codex",
       "agent": "astra_maths"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19"
+    ],
+    "precision": "Les questions 1 à 19 sont repérées dans le sujet officiel et dans chacune des deux éditions. La portée de la rédaction ou de la révision est conservée dans le journal cité.",
+    "origine_attestation": {
+      "commit_du_journal": "2ad5ffb2c24e16f622d75f24649d526947756794",
+      "sha256_sujet_controle": "aca123566ec97bc89f8b5657749e9526ee2041f8726875215fef853d8e1766f5",
+      "phase": "redaction",
+      "date": "2026-11-24",
+      "perimetre": "Rédaction et contrôle des 19 questions sur les trois pages officielles et consultation du rapport 2016. Vérification des différences finies pour le pas nul, des multiplicités du spectre et de la borne uniforme de Lipschitz, avec un tracé de deux approximants."
+    }
+  }
 }

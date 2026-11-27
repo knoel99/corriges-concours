@@ -66,6 +66,78 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Confrontation des intitulés, de leur groupement et des consignes aux documents du jury. Vérification de la portée des arguments, des exemples et des références philosophiques."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Moindre mal, recherche d’une alternative et répartition concrète du dommage."
     }
-  ]
+  ],
+  "date_revision": "2026-11-25",
+  "couverture": {
+    "statut": "complet",
+    "tirages_entierement_traites": [
+      [
+        "Qu’est-ce qu’une question métaphysique ?",
+        "La tolérance"
+      ],
+      [
+        "Le monde est-il un théâtre ?",
+        "Le droit à la paresse"
+      ],
+      [
+        "Le temps est-il notre allié ?",
+        "L’amour de l’argent"
+      ],
+      [
+        "L’art s’apprend-il ?",
+        "L’ennemi"
+      ],
+      [
+        "Qu’est-ce qu’être normal ?",
+        "Le législateur"
+      ],
+      [
+        "Un problème peut-il être insoluble ?",
+        "La banalité"
+      ],
+      [
+        "Y a-t-il une expérience de l’éternité ?",
+        "Trahir"
+      ],
+      [
+        "Le moindre mal",
+        "Y a-t-il une intelligence du corps ?"
+      ],
+      [
+        "Y a-t-il des actions désintéressées ?",
+        "La servitude volontaire"
+      ],
+      [
+        "Pourquoi est-il difficile de rectifier une erreur ?",
+        "L’hypocrisie"
+      ],
+      [
+        "Qu’est-ce qu’un problème technique ?",
+        "Le dialogue"
+      ]
+    ],
+    "precision": "Les deux éditions suivent les 11 billets dans l’ordre du rapport. Chaque sujet du billet a sa proposition argumentée et une question d’entretien avec réponse dans le guidé.",
+    "origine_attestation": {
+      "commit_du_journal": "51f2044817dbbfa44bc1e71158e04a6d49e592d4",
+      "sha256_feuillet_controle": "48de2a31571b2c4bbbbcd5340d2a6f87e8bfc021ed88c69ec7efc54717f6fb35",
+      "sha256_rapport_controle": "180bf05d31da83942e012bc27ad2128aa290cd7ed2c7419574cccc52cce61f54",
+      "phase": "redaction",
+      "date": "2026-11-24",
+      "perimetre": "Rédaction des 22 propositions argumentées, de 22 questions et réponses pour l’entretien et de 3 schémas."
+    }
+  }
 }

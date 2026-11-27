@@ -1,0 +1,130 @@
+{
+  "slug": "bel_al_russe-theme-lyon_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Russe (thème Lyon)",
+    "annee": 2025,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "duree_heures": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2025-09/251113.pdf#page=17",
+    "sujet_sha256": "b7d09bb818f637ec169e3e81e4912858b211e06941981935364478be20cd6766",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2025-11/Russe%202025%20OK%20Lyon%20RELU.pdf#page=13",
+    "rapport_jury_sha256": "d4113cf7e36fa112a338a42c226f12f1044e729b5693fd8bd4543e8946e8838d",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2025",
+    "ouvrage": "Michel Bussi, *Sang famille* (2019).",
+    "pages_rapport_verifiees": [
+      13,
+      14,
+      15
+    ]
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2025-09/251113.pdf#page=17",
+      "sha256": "b7d09bb818f637ec169e3e81e4912858b211e06941981935364478be20cd6766",
+      "pages": 20,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "8ec0333bc615d21e75fd6bd8739b8ac1ac8f7527ec5d1bc38afbba95f28f63b7"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        },
+        {
+          "numero": 17,
+          "rendu_sha256": "8c80483bd3c196645d070063096b9f2a281807fdcad527b36dd5ea7476fa17b1"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2025-11/Russe%202025%20OK%20Lyon%20RELU.pdf#page=13",
+      "sha256": "d4113cf7e36fa112a338a42c226f12f1044e729b5693fd8bd4543e8946e8838d",
+      "pages": 15,
+      "pages_verifiees": [
+        {
+          "numero": 13,
+          "rendu_sha256": "d295721f069aac28d58542a53729c1a9ef9eb71014442ddef614d59d52b8bc63"
+        },
+        {
+          "numero": 14,
+          "rendu_sha256": "dd14aee099ce26083a83915c80456566d93e87524176de0eaaf0084e04f8e5cf"
+        },
+        {
+          "numero": 15,
+          "rendu_sha256": "0bcb15c427bda54baf5a33251173e4f98eec5b4778f0cee89dbe9852f418d28e"
+        }
+      ]
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "bel_al_russe_2023_2025",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Traduction russe intégrale originale, guide de grammaire et de lecture, variantes situées et schéma."
+    },
+    {
+      "phase": "revision",
+      "session": "bel_al_russe_2023_2025",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "De l’approche du camp sous la pluie aux quatre phrases adressées au narrateur par Stéphanie. Les deux échos de la parole de l’agresseur sont maintenus. Confrontation au rapport et vérification de la ponctuation, des noms et des marques de voix."
+    }
+  ],
+  "figures": [
+    {
+      "question": "Proposition de thème",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "La voix de l’agresseur revient deux fois à l’identique. Le narrateur l’entend encore en marchant, puis Stéphanie prend la parole."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Michel Bussi, *Sang famille* (2019)."
+    ],
+    "note": "Traduction pédagogique originale. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Proposition de thème"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Proposition de thème",
+        "page_pdf": 17,
+        "feuillet_imprime": 17,
+        "perimetre": "De l’approche du camp sous la pluie aux quatre phrases adressées au narrateur par Stéphanie. Les deux échos de la parole de l’agresseur sont maintenus."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

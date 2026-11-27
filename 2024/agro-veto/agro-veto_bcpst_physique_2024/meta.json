@@ -1,0 +1,103 @@
+{
+  "slug": "agro-veto_bcpst_physique_2024",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "Physique",
+    "annee": 2024
+  },
+  "questions": 28,
+  "intitule": "L’appareil cardiovasculaire",
+  "redaction": "Les 28 questions avec leurs subdivisions ont été rédigées dans les deux éditions. Relecture du pont de la figure 3 et mesure sur la courbe originale de la figure 5. Distinction entre les deux estimations de pression moyenne, justification du bilan de quantité de mouvement, de la puissance de pression et de l’apport latéral sur un demi-cylindre. Rectification d’une addition dans le sujet. Coefficient X BCPST 4 en 2024.",
+  "sources": {
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/bcpst_0824_sp.pdf",
+    "sujet_sha256": "5fc6404ce3dfa64d7adbfa6006da397d9ecb6180b7380ea6a3ea4d85517175b5",
+    "rapport_jury": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/rapport_de_jury_epreuve_physique_bcpst_2024.pdf",
+    "rapport_sha256": "0ba1edccd86a52476737243884602ff70f5aaa40a7afe0d889e3fabcb85b346d"
+  },
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du rapport officiel des cinq pages et des dix pages de l’énoncé, incluant le système pour le bilan de quantité de mouvement et le flux diffusif. Valeurs des figures comparées au tracé vectoriel de l’épreuve."
+    },
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions brute et guidée. Les 28 questions avec leurs subdivisions ont été rédigées dans les deux éditions. Relecture du pont de la figure 3 et mesure sur la courbe originale de la figure 5. Distinction entre les deux estimations de pression moyenne, justification du bilan de quantité de mouvement, de la puissance de pression et de l’apport latéral sur un demi-cylindre. Rectification d’une addition dans le sujet. Coefficient X BCPST 4 en 2024."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "10",
+      "fichier": "figures/pression-radiale.svg",
+      "legende": "Lecture du tracé de la figure 5 du sujet Agro-Véto 2024. La moyenne par intégration porte sur deux périodes complètes."
+    },
+    {
+      "numero": 2,
+      "question": "11",
+      "fichier": "figures/profil-poiseuille.svg",
+      "legende": "Vitesses en section méridienne. L’écoulement est axial et la vitesse s’annule sur les deux parois."
+    },
+    {
+      "numero": 3,
+      "question": "21",
+      "fichier": "figures/bilan-de-diffusion.svg",
+      "legende": "Les flèches axiales fixent le sens positif des flux algébriques. L’apport latéral a lieu sur une demi-surface cylindrique."
+    },
+    {
+      "numero": 4,
+      "question": "24",
+      "fichier": "figures/profil-oxygene.svg",
+      "legende": "Équilibration de la concentration vers la valeur alvéolaire le long du capillaire."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28"
+    ]
+  }
+}

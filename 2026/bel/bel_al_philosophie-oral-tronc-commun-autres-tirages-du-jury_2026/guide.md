@@ -6,9 +6,13 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Le rapport énumère 182 billets pour l’ensemble des commissions. Douze feuilles datées en documentent 135. Les 47 autres figurent ici, dans leur ordre au rapport et sans attribution de date. Le numéro indiqué est la position du billet depuis le début de l’annexe, à la page 6. Les billets 112–123 et 136–145 figurent à la page 8, les billets 146–147 et 160–182 à la page 9. Les deux intitulés de chaque billet reçoivent une réponse. Le sujet effectivement choisi est celui que le jury imprime en gras.
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Le jury accorde 1 h 30 de préparation, vingt minutes de leçon et dix minutes d’entretien. Chaque seconde proposition était une alternative au sujet retenu. Les reprises ajoutées à chaque billet sont des exercices originaux, avec une réponse et un point de comparaison pour l’autre sujet.
+Le rapport du jury énumère 182 billets de philosophie A/L. Douze feuillets de séance permettent d’en dater 135. Les 47 billets réunis ici forment le reste de la liste. Leur rang se compte depuis la [page 6 du rapport](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf#page=6). Lisez les rangs 112 à 123 et 136 à 145 à la [page 8](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf#page=8), puis les rangs 146 à 147 et 160 à 182 à la [page 9](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf#page=9). Le jury les donne pour l’ensemble des commissions. La date et la commission de chacun restent indéterminées.
+
+Chaque billet offre deux sujets. Le jury met en gras le sujet choisi, qui est le premier terme dans 32 cas et le second dans 15. Les deux développements suivent l’ordre du rapport. Dans l’[index officiel](https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-al), les liens du 29 juin renvoient aux feuillets qui portent la date du 26. Le [relevé des 182 paires](https://github.com/knoel99/corriges-concours/blob/d74206db70dcfac402a53244525d338900d7053c/campagnes/x-ens/philosophie-al-2026-tirages.tsv) permet de retrouver les six intitulés également proposés sur un billet daté, chaque fois avec un autre sujet.
+
+L’épreuve est de coefficient 3. Vous lisez les deux sujets du billet devant le jury, choisissez au cours des 90 minutes de préparation et annoncez votre choix au début des 20 minutes d’exposé. L’entretien dure ensuite 10 minutes. Seul un dictionnaire de langue française est autorisé, à l’exclusion des dictionnaires de noms propres. La « Reprise » porte sur le sujet retenu. La question « À l’entretien » concerne l’autre sujet. Ces exercices sont des propositions d’entraînement.
 
 ## Billet 112 — Faut-il craindre la mort ?
 
@@ -19,6 +23,8 @@ Une échéance dont nous ignorons la date peut nous inquiéter avant même de no
 ### La simplicité
 
 Un énoncé simple permet de comprendre d’un seul regard une relation que des détails trop nombreux cachaient. Encore faut-il savoir ce qu’il a laissé de côté. Un plan qui omet les noms des rues secondaires peut convenir pour lire les grandes directions et égarer celui qui cherche une adresse précise. La simplicité peut caractériser un objet peu composé, une représentation économique ou une attitude sans ostentation. Elle gagne une valeur intellectuelle lorsqu’on conserve les différences utiles au problème. Enlever une complication inutile clarifie. Éliminer par décret la résistance du cas réel rend seulement l’explication simpliste.
+
+**À l’entretien. Une explication plus courte est-elle toujours plus simple ?** Une carte ne devient pas plus simple à utiliser quand on lui retire le repère qui permettait de s’orienter. Distinguer le nombre d’éléments et la facilité avec laquelle on comprend leur rapport. Le jugement dépend aussi de la tâche.
 
 **Reprise. La peur de perdre un proche réfute-t-elle Épicure ?** Elle porte sur une perte vécue par ceux qui demeurent, et non sur une expérience que le disparu ferait de sa propre absence. Pour la simplicité, préciser à qui le plan doit servir.
 
@@ -32,6 +38,8 @@ Les consignes d’un contrôleur de train, d’une enseignante et d’un ami n�
 
 Une personne se trompe de rangée au théâtre, se sent gênée et se déplace. L’embarras tient à un écart de situation qu’une correction légère suffit souvent à résoudre. La pudeur peut la conduire à protéger une part de son intimité avant même que personne ait rien vu. La honte touche plus profondément l’image de soi exposée au regard réel ou imaginé d’autrui. Elle peut même atteindre une victime qui n’est nullement coupable. Distinguer ces affects prévient deux erreurs, transformer toute gêne en jugement moral et conclure du sentiment d’être regardé à l’existence d’une faute.
 
+**À l’entretien. Un enfant peut-il rougir sans avoir rien fait de honteux ?** Il peut être embarrassé d’être remarqué, ou vouloir soustraire à autrui quelque chose d’intime. Demander ce qu’il souhaite alors rétablir, l’aisance de la situation, son intimité ou l’estime qu’il a de sa conduite.
+
 **Reprise. Un ordre inefficace cesse-t-il d’obliger ?** Son efficacité se distingue de la compétence de celui qui le donne et de sa justification. Sur la honte, donner un exemple qui établit que l’affect ne prouve pas la faute.
 
 ## Billet 114 — Le respect des lois
@@ -43,6 +51,8 @@ Traverser au vert sans regarder peut être dangereux si un véhicule est immobil
 ### Toute technique est-elle artificielle ?
 
 Une greffe est artificielle par l’intention de la jardinière et par la préparation de la coupe. L’union des tissus est produite par un organisme vivant. Une technique s’appuie sur des propriétés dont son praticien n’est pas l’auteur. Inversement, des techniques du corps telles que les façons de nager peuvent devenir si habituelles qu’elles semblent naturelles. L’« artificiel » peut qualifier une origine humaine ou une apparence forcée. Si l’on entend le premier sens, le savoir-faire acquis comporte un artifice. S’il s’agit du second, une technique accomplie peut être parfaitement ajustée à un milieu vivant et perdre tout caractère d’affectation.
+
+**À l’entretien. Apprendre à nager est-il artificiel même si l’on utilise son seul corps ?** La flottaison et la respiration imposent des conditions physiques. Coordonner l’expiration avec le mouvement des bras exige un apprentissage. Une technique peut ainsi régler une capacité naturelle sans ajouter d’objet fabriqué.
 
 **Reprise. Modifier une loi implique-t-il qu’on cesse de la respecter ?** On peut respecter le cadre constitutionnel qui autorise et règle sa modification. Pour la greffe, séparer l’intervention volontaire de ce qu’elle fait faire au vivant.
 
@@ -56,6 +66,8 @@ Donner à une personne le pouvoir de rédiger seule les critères d’une récom
 
 Classer les arts selon l’espace et le temps éclaire la différence entre une composition picturale et une phrase musicale. Lessing, dans le Laocoon, examine les conséquences de la coexistence ou de la succession des signes. Une installation sonore distribue cependant des sons dans une salle qu’il faut traverser. Le cas hybride ne ruine pas nécessairement la classification, il oblige à mettre à l’épreuve le critère et ses limites. Une autre classification, par matériaux ou par institutions, mettra au jour d’autres parentés. Classer sert à expliquer des opérations, à condition de ne pas transformer le classement en prescription sur ce que chaque art devrait à jamais rester.
 
+**À l’entretien. Où classer un spectacle qui associe projection et musique jouée sur scène ?** Le classer d’après son support éclaire les moyens employés. Examiner comment le public règle son regard sur la phrase musicale fait apparaître une autre unité. Le cas permet de juger ce que chaque classement explique ou laisse échapper.
+
 **Reprise. Pourquoi exiger des contrôles même d’un dirigeant honnête ?** L’accès indépendant aux preuves et la possibilité de contester protègent les citoyens et les successeurs. Pour les arts, décrire ce qu’une installation spatiale fait entendre autrement.
 
 ## Billet 116 — Se rebeller
@@ -68,6 +80,8 @@ Se rebeller suppose plus qu’une préférence pour le contraire de ce qui est d
 
 Une boutade fondée sur deux homophones perd son effet si l’on remplace chaque mot par un équivalent de dictionnaire. Il reste possible d’expliquer le jeu ou d’en créer un autre dans la langue d’arrivée. Tout dépend de ce que la traduction doit préserver, renseignement, rythme, ambiguïté ou expérience comique. Une traduction ne peut garantir simultanément toutes ces dimensions. L’existence de plusieurs versions justifiables ne fait pas disparaître les contresens détectables. On peut traduire beaucoup, y compris en signalant une perte, sans soutenir que tout est intégralement transportable par une unique équivalence.
 
+**À l’entretien. Une périphrase traduit-elle ce que le mot voulait dire ?** Elle peut identifier avec précision le lien de parenté qu’une autre langue désigne d’un mot. Dans une comptine, elle risque de perdre le rythme ou la rime. Pour juger la traduction, il faut dire ce qui devait passer d’une langue à l’autre.
+
 **Reprise. Un refus individuel est-il déjà juste parce qu’il est difficile ?** Le coût supporté témoigne de l’engagement, mais il faut examiner la cause et les droits d’autrui. En traduction, montrer ce que préserve une note sur un jeu de mots et ce qu’elle perd.
 
 ## Billet 117 — La chance
@@ -79,6 +93,8 @@ Deux élèves aussi bien préparés tirent des sujets dont un seul mobilise le c
 ### Dire, est-ce faire ?
 
 Déclarer une séance ouverte produit un changement si la personne compétente prononce la formule dans les circonstances prévues. Austin montre que les paroles peuvent accomplir des actes, promettre, nommer ou demander. À l’inverse, annoncer qu’une séance a déjà commencé peut être un simple renseignement. Même l’énoncé descriptif accomplit l’acte d’affirmer et expose le locuteur à une demande de preuve. Il reste une distinction entre ce que l’on fait en parlant et l’effet que la parole obtient sur l’auditeur. Je peux lui demander de venir sans le faire venir. Il faut donc préciser l’action, ses conditions de réussite et ses éventuelles conséquences.
+
+**À l’entretien. Pourquoi mon « je promets » n’a-t-il pas la même valeur au théâtre et devant mon ami ?** Les mots prononcés sont identiques. Sur scène, ils entrent dans le rôle d’un personnage. Dans l’autre situation, quelqu’un peut désormais compter sur ma parole et m’en demander raison. Le contexte contribue à l’acte accompli.
 
 ![Deux candidats devant un tirage au sort](figures/chance.svg)
 
@@ -94,6 +110,8 @@ Le jardin est travaillé pour donner à une croissance vivante certaines conditi
 
 Dire « c’est mon corps » affirme un droit décisif de consentir ou de refuser. Assimiler ce rapport à la propriété d’un objet que l’on pourrait aliéner entièrement manque toutefois que c’est avec ce corps que j’exerce ma volonté et communique une décision. Le consentement requiert une information intelligible, un pouvoir effectif de refuser et des garanties contre la pression. Une contrainte matérielle ou sociale peut rendre une prétendue liberté de disposer très inégale. Mon corps est le mien au sens d’une autonomie et d’une protection intime. La propriété patrimoniale n’en fournit qu’une métaphore partielle.
 
+**À l’entretien. L’expression « mon corps » implique-t-elle que je puisse le céder comme un objet ?** Comparer le prêt d’un livre et le consentement à un examen médical. Le second exprime le pouvoir d’autoriser un geste précis et de retirer son accord. Il protège la personne qui éprouve ce geste sans faire de son corps une chose échangeable.
+
 **Reprise. Qui est l’auteur d’un jardin qui change en hiver ?** Les interventions visent une forme, le vivant et le milieu produisent des transformations que personne n’a entièrement dessinées. Pour le corps, préciser quelles conditions rendent un consentement effectif.
 
 ## Billet 119 — Faut-il être gentil ?
@@ -105,6 +123,8 @@ Une personne accepte toujours de remplacer ses collègues. Sa gentillesse entret
 ### La conscience du temps
 
 L’horloge et l’impatience mesurent-elles le même temps ? Une minute objective garde sa durée tandis qu’elle semble interminable à qui attend une nouvelle. Pour entendre une mélodie, je dois aussi retenir la note précédente tout en anticipant la suite. Augustin analyse l’attention présente, la mémoire et l’attente dans le livre XI des Confessions. Cette structure éclaire comment une succession peut être vécue comme un déroulement et non comme une série d’instants sans rapport. La mesure publique et la conscience du temps ne s’annulent donc pas. Elles répondent à des questions différentes sur une expérience qui peut être comparée, partagée et diversement éprouvée.
+
+**À l’entretien. Comment puis-je entendre une mélodie si une seule note est présente à chaque instant ?** La note précédente doit encore compter dans l’écoute et la suivante pouvoir être attendue. Distinguer cette continuité vécue du temps que le chronomètre mesure entre deux attaques.
 
 **Reprise. La gentillesse autorise-t-elle à parler au nom du bénéficiaire ?** Non, il faut pouvoir entendre son avis et son refus. Pour la mélodie, retirer la mémoire de la note précédente et examiner ce qu’il reste du rythme.
 
@@ -118,6 +138,8 @@ Un enfant gagne plusieurs centimètres pendant une année. Un adulte lui dit aus
 
 Une société peut distinguer ses institutions civiles de toute confession commune et offrir des droits à des croyants et à des non-croyants. Cela ne suffit pas à établir qu’aucun de ses membres n’aura de croyances religieuses. Il faut donc séparer société sans religion officielle et société sans aucune pratique religieuse. Durkheim analyse la puissance de rassemblement des rites. D’autres pratiques, juridiques, culturelles ou civiques, peuvent également produire un temps partagé et des obligations. Leur capacité à faire du lien n’en fait pas nécessairement des religions. Une communauté politique peut ainsi se construire autour de droits et d’engagements communs en protégeant la diversité des convictions.
 
+**À l’entretien. Des rites civiques prouvent-ils qu’une société reste nécessairement religieuse ?** Une commémoration peut rassembler les générations autour d’un événement sans faire appel à une divinité. Pour soutenir qu’elle a un caractère religieux, il faut préciser le rôle du sacré et de la croyance, au-delà de la réunion collective.
+
 **Reprise. Savoir demander conseil est-il le contraire de grandir ?** Choisir et évaluer un avis peut marquer un progrès d’autonomie. Pour la religion, chercher quel problème change si l’on parle d’État laïque ou de convictions individuelles.
 
 ## Billet 121 — Rêver
@@ -129,6 +151,8 @@ Dans un rêve, une personne étrangère semble connue depuis toujours. L’espri
 ### Qu’est-ce qu’un témoin ?
 
 Un témoin ne garantit pas un fait parce qu’il parle avec assurance. Son témoignage revendique une présence ou un accès particulier à ce qui est arrivé. La distance, le moment et la possibilité de confusion doivent être examinés. Être de bonne foi ne donne pas une mémoire sans erreur. Inversement, le caractère situé de tout témoin ne rend pas vaine la confrontation de plusieurs témoignages indépendants avec des traces matérielles. Un témoin est donc une personne qui peut répondre de ce qu’elle atteste et dont la parole entre dans une procédure de vérification. Dire « je ne sais pas » sur un détail peut renforcer la précision du reste.
+
+**À l’entretien. Un témoin sincère peut-il se tromper ?** Il a pu voir la personne entrer sans voir de quelle porte elle venait. Reconstituer les conditions de perception aide à distinguer la sincérité du témoignage et l’exactitude de chaque détail. Une corroboration demeure possible.
 
 **Reprise. Pourquoi un rêve peut-il être certain comme expérience sans établir les faits rêvés ?** J’atteste avoir rêvé, et cette attestation porte sur autre chose que la présence réelle du personnage. Pour le témoin, séparer certitude subjective et conditions d’observation.
 
@@ -142,6 +166,8 @@ Une amie croit sentir très vivement la gêne de quelqu’un qui doit prendre la
 
 Parler d’histoire naturelle a pu désigner l’inventaire descriptif des espèces. La géologie et l’évolution donnent une autre portée à l’expression. Les couches d’un terrain et les parentés du vivant permettent d’établir des transformations irréversibles à partir de traces présentes. Ce devenir n’exige pas qu’une intention ait conçu chaque étape. D’autre part, le concept même de nature et les milieux transformés par les humains possèdent une histoire culturelle. Ces deux histoires se rencontrent lorsque l’étude de pollens anciens éclaire l’effet d’un mode de culture sur un paysage. Il faut distinguer l’historicité des êtres et celle des catégories avec lesquelles nous les connaissons.
 
+**À l’entretien. Une chaîne de montagnes a-t-elle une histoire au même titre qu’une ville ?** Le relief porte des traces qui permettent de reconstruire une succession de transformations irréversibles. La ville conserve aussi les effets de décisions et de conflits. Expliquer ce qui est commun aux enquêtes, puis ce qui diffère dans leurs causes et leurs sources.
+
 **Reprise. Peut-on comprendre une émotion sans l’éprouver soi-même ?** Une écoute et une explication peuvent instruire sans reproduire l’affect à l’identique. Pour la nature, séparer la date d’une transformation géologique de celle de sa découverte.
 
 ## Billet 123 — Pourquoi y a-t-il plusieurs philosophies ?
@@ -154,6 +180,8 @@ Deux philosophes peuvent examiner la liberté en partant l’un de la délibéra
 
 Une eau dite pure au laboratoire et une pratique dite impure dans un rituel ne relèvent pas du même contrôle. Une analyse établit la présence de certains composés, tandis qu’une règle culturelle attribue des places, des interdits et des conditions d’usage. Mary Douglas étudie dans De la souillure les rapports entre ces classifications et les frontières d’un ordre symbolique. Cette étude n’assimile pas toute exigence sanitaire à un rite. Elle demande quelle transgression ou quel mélange une société désigne comme souillure. La distinction devient dangereuse si la qualification d’impureté sert à retirer des droits à une personne. Il faut donc préciser la norme invoquée et la justification de ses effets.
 
+**À l’entretien. Une eau chimiquement pure est-elle pour autant pure dans une cérémonie ?** Le laboratoire fixe un critère de composition. Une tradition peut demander aussi une origine ou un geste de préparation. Décrire les deux règles évite de traiter une distinction symbolique comme une mesure chimique manquée.
+
 **Reprise. Le désaccord entre philosophes rend-il inutile une réfutation ?** Une objection précise peut éliminer un raisonnement même si le problème élargi reste discuté. Pour l’impur, demander qui définit la norme et quelles personnes elle affecte.
 
 ## Billet 136 — Le conflit
@@ -161,6 +189,8 @@ Une eau dite pure au laboratoire et une pratique dite impure dans un rituel ne r
 *Rapport, p. 8. Sujet choisi — Qu’est-ce qu’un paysage ?*
 
 Deux voisins peuvent préférer des couleurs différentes sans que leurs préférences s’opposent dans leurs effets. Un conflit commence lorsque leurs demandes ou leurs projets se rencontrent sur un enjeu qu’ils ne peuvent régler indépendamment, par exemple la destination d’un jardin commun. Il suppose ainsi une relation qu’il met en tension. Simmel a montré que le conflit lui-même peut constituer un mode de socialisation, en faisant apparaître des groupes, des règles et des prétentions jusque-là implicites. Il peut aussi défaire la relation si chaque partie entend supprimer la possibilité même du désaccord. Le conflit ne se juge pas sur sa seule intensité. Il faut savoir quel objet il rend discutable, si les parties sont reconnues et ce que le règlement permet de transformer.
+
+**À l’entretien. Un conflit qui devient public est-il nécessairement plus grave ?** Une règle d’horaires a pu peser longtemps sur des salariés silencieux. Son examen contradictoire rend le désaccord visible et ouvre éventuellement une négociation. Distinguer l’apparition du conflit, sa publicité et ses moyens de résolution.
 
 ### Qu’est-ce qu’un paysage ?
 
@@ -173,6 +203,8 @@ Le même bassin fluvial est un territoire mesuré sur une carte, un milieu habit
 *Rapport, p. 8. Sujet choisi — Perdre son temps*
 
 Un cri signale un danger sans former encore à lui seul un système de signes combinables grâce auquel on parlerait de ce qui est absent. Rechercher l’origine du langage peut vouloir dire dater une transformation chez les premiers humains ou reconstruire les conditions qui rendent un usage symbolique possible. Les deux enquêtes n’ont pas les mêmes preuves. Rousseau, dans l’Essai sur l’origine des langues, met en question la réduction de la parole à la seule satisfaction des besoins et examine le rôle des passions. Une scène hypothétique ne constitue pas un enregistrement des premières paroles. Elle peut éclairer pourquoi des êtres sociaux auraient besoin de s’adresser les uns aux autres dans des formes ouvertes et apprises, au-delà d’un signal immédiatement attaché à une situation.
+
+**À l’entretien. Inventer un mot entre amis permet-il d’expliquer la naissance du langage ?** Pour convenir du mot, les amis disposent déjà de signes et de pratiques communes. L’exemple éclaire une innovation à l’intérieur d’une langue. Il laisse ouverte la question des conditions dans lesquelles un premier signe peut être compris.
 
 ### Perdre son temps
 
@@ -190,6 +222,10 @@ Au terme d’une répétition, plusieurs musiciens rentrent chez eux heureux d�
 
 Une assemblée vote un texte, mais elle peut être soumise à une Constitution qui borne ses compétences. La souveraineté demande à quelle autorité ultime sont rapportées les compétences publiques. Selon un deuxième sens, elle désigne l’indépendance d’un État vis-à-vis de tout autre. Attribuer la souveraineté au peuple interdit de l’identifier sans autre preuve à la volonté personnelle d’un dirigeant. Rousseau distingue souveraineté et gouvernement. La première concerne la source de la loi, le second son administration. Dire où réside la souveraineté ne règle donc pas encore les procédures de représentation, les limites imposées par les droits ni les moyens de contrôle dont disposent effectivement les citoyens.
 
+**À l’entretien. Une assemblée peut-elle être toute-puissante parce qu’elle vote les lois ?** Tester le cas d’une loi qu’elle adopte hors de sa compétence. Le vote produit une décision, mais l’ordre constitutionnel permet d’en examiner la validité. Distinguer l’organe qui exerce le pouvoir et le principe qui autorise son exercice.
+
+![Le peuple, la Constitution et l’assemblée](figures/souverainete-et-competence.svg)
+
 **Reprise. Une raison de vivre doit-elle être extraordinaire ?** Un lien ordinaire ou une activité partagée peuvent déjà avoir une valeur singulière. Pour la souveraineté, distinguer la signature d’un acte et la source qui confère le pouvoir de signer.
 
 ## Billet 139 — Faut-il respecter la nature ?
@@ -197,6 +233,8 @@ Une assemblée vote un texte, mais elle peut être soumise à une Constitution q
 *Rapport, p. 8. Sujet choisi — Les limites du corps*
 
 Un promeneur respecte un milieu fragile en restant sur les chemins reconnus. Agit-il par souci du plaisir des futurs visiteurs ou parce que la vie de ce milieu a une valeur propre ? Les deux raisons peuvent soutenir la même conduite avec des conséquences différentes si aucun visiteur n’est attendu. Respecter la nature ne signifie pas en imiter toutes les opérations ni renoncer à toute intervention. Restaurer une zone humide abîmée peut être une manière de respecter les capacités de renouvellement d’un milieu. Un principe défendable exige d’identifier les êtres et les relations concernés, la vulnérabilité à nos actions et les conditions d’un usage juste pour les populations qui en dépendent.
+
+**À l’entretien. Protéger une forêt exige-t-il de la laisser toujours intacte ?** Comparer une coupe destinée au seul profit et une intervention destinée à restaurer un milieu dégradé. La valeur reconnue à la forêt doit orienter le choix et les preuves écologiques nécessaires. Le seul fait d’intervenir ne tranche pas le débat.
 
 ### Les limites du corps
 
@@ -214,6 +252,8 @@ Deux langues exigent de préciser des aspects différents d’une situation pour
 
 La tristesse peut se présenter au moment d’une perte, ou plus diffusement lorsque les activités familières paraissent demander davantage d’effort. Dans l’Éthique de Spinoza, la tristesse se comprend comme passage à une moindre puissance d’agir. Cette analyse dynamique se distingue du jugement moral qui reprocherait à la personne ce qu’elle éprouve. Une musique triste peut même être écoutée avec plaisir parce que sa forme donne un langage commun à une expérience difficile à dire. Les objets, les durées et les remèdes de la tristesse varient. L’examiner demande d’écouter la personne et de considérer les relations qui peuvent à nouveau la soutenir, sans transformer un sentiment en verdict sur sa vie.
 
+**À l’entretien. La tristesse qui suit une perte est-elle seulement un obstacle à l’action ?** Elle peut manifester la valeur d’une relation qui ne se remplace pas et modifier les gestes qui demeurent possibles. Une explication de son rôle ne donne pas pour autant une mesure uniforme de ce que chacun devrait éprouver.
+
 **Reprise. Comment montrer une influence d’une langue sans conclure à un enfermement ?** Comparer l’attention spontanée et ce qu’une personne peut formuler après explication. Sur la tristesse musicale, distinguer le caractère perçu et l’état de l’auditeur.
 
 ## Billet 141 — L’usage des plaisirs
@@ -221,6 +261,8 @@ La tristesse peut se présenter au moment d’une perte, ou plus diffusement lor
 *Rapport, p. 8. Sujet choisi — La création artistique*
 
 Un plaisir immédiat, manger un bon repas ou écouter longtemps de la musique, peut soutenir une vie heureuse. Le fait qu’il soit plaisant ne suffit pourtant pas à régler sa place parmi d’autres biens. Épicure invite dans la Lettre à Ménécée à considérer les effets des choix et des refus, puisque toute satisfaction n’est pas à rechercher dans toute circonstance. L’usage des plaisirs engage ainsi des relations de temps, de liberté et de considération pour autrui. Une discipline raisonnable peut élargir la variété de ce dont on jouit plutôt que l’appauvrir. L’enjeu n’est pas de distribuer les expériences en plaisirs honteux et légitimes par simple convention, mais d’examiner ce qu’ils rendent possible et les dépendances qui peuvent s’y former.
+
+**À l’entretien. Modérer un plaisir, est-ce nécessairement renoncer à une part de bonheur ?** Un musicien qui ménage des silences peut mieux goûter la reprise d’une phrase. Comparer l’intensité immédiate, la durée et la dépendance à la prochaine satisfaction. Ces critères donnent des évaluations différentes d’un même usage.
 
 ### La création artistique
 
@@ -238,6 +280,8 @@ Au moment d’expliquer une douleur ou de témoigner d’un événement inédit,
 
 Avoir la liberté de conscience signifie pouvoir former et réviser ses convictions, y compris religieuses, sans être contraint d’adhérer à une doctrine. Le droit concerne aussi celui qui ne professe aucune religion et celui qui change d’avis. Une autorité peut obtenir une déclaration de conformité sans produire une conviction véritable. Mais l’absence de pouvoir sur les pensées intérieures n’épuise pas la liberté, car la menace sur l’emploi ou l’éducation peut empêcher l’expression et l’examen commun des convictions. Il faut donc distinguer la protection du for intérieur et les conditions d’exercice des libertés dans un espace partagé, où les droits d’autrui interviennent également.
 
+**À l’entretien. La liberté de conscience garantit-elle que nul ne contestera publiquement mes convictions ?** Protéger une personne contre l’obligation de croire lui permet aussi d’entendre des objections et de changer d’avis. Distinguer la contrainte exercée sur une conscience, la critique d’une idée et les règles communes des actes publics.
+
 **Reprise. Le silence indique-t-il forcément qu’une expérience est indicible ?** Il peut aussi signifier qu’on n’a pas le temps, la confiance ou les conditions pour parler. Sur la conscience, distinguer une conviction et la conduite publique qui s’en réclame.
 
 ## Billet 143 — L’ordre du monde peut-il changer ?
@@ -250,6 +294,8 @@ L’ordre du monde peut désigner les régularités physiques ou l’organisatio
 
 L’argent sert à obtenir des biens très différents. Désirer cette capacité générale d’échange peut libérer d’une dépendance ponctuelle, notamment lorsqu’on peut répondre à une dépense imprévue. L’amour de l’argent commence à poser une difficulté particulière lorsque le moyen devient fin et que chaque acquisition accroît le désir de conserver ou d’accumuler plutôt qu’elle ne permet un usage. Simmel, dans la Philosophie de l’argent, examine cette transformation des rapports entre moyens et fins. Critiquer l’accumulation sans limites ne justifie pas de reprocher à qui manque de ressources son souci de sécurité. Il faut distinguer le pouvoir concret d’agir, le prestige du chiffre et la relation à autrui que l’argent règle ou déforme.
 
+**À l’entretien. Peut-on aimer l’argent pour autre chose que ce qu’il permet d’acheter ?** Comparer l’épargne destinée à un projet précis et l’accumulation dont aucun montant ne semble suffisant. La sécurité, le prestige et le sentiment de puissance changent l’objet du désir, même lorsque les sommes sont identiques.
+
 **Reprise. Si une théorie change, le monde a-t-il nécessairement changé à cette date ?** Une observation peut avoir corrigé le modèle d’un processus déjà existant. Sur l’argent, demander à quelle fin mesurable répond une somme supplémentaire.
 
 ## Billet 144 — Gouverner
@@ -257,6 +303,8 @@ L’argent sert à obtenir des biens très différents. Désirer cette capacité
 *Rapport, p. 8. Sujet choisi — Poésie et pensée*
 
 Gouverner suppose une direction collective et une compétence pour prendre des décisions qui n’existaient pas déjà sous forme de consignes. Le modèle du pilote éclaire l’ajustement à un milieu variable, mais les citoyens ne sont pas un chargement dont le trajet serait connu du seul gouvernant. Ils ont des droits et peuvent eux-mêmes déterminer quelle destination est souhaitable. Un gouvernement doit donc être évalué selon ses fins, ses résultats et sa manière de rendre des comptes. Réduire son activité à la bonne administration de moyens déjà choisis permettrait de soustraire à la discussion la décision la plus importante, ce qui mérite d’être poursuivi ensemble.
+
+**À l’entretien. Une décision qui satisfait chacun aujourd’hui est-elle forcément bien gouvernée ?** Une dépense peut obtenir un accord immédiat et rendre un service public impossible demain. Examiner qui peut connaître ce coût, délibérer et demander des comptes. Gouverner suppose aussi de rendre le choix commun discutable dans le temps.
 
 ### Poésie et pensée
 
@@ -270,6 +318,8 @@ Un vers qui s’interrompt avant le mot attendu fait éprouver une relation que 
 
 Une chorale apprend à régler sa voix sur celles des autres. Cette pratique peut former une attention et une coopération utiles à la vie commune. Il serait pourtant excessif de tirer de cette expérience une loi selon laquelle toute musique rendrait ses auditeurs pacifiques ou justes. Le contexte, le répertoire et l’organisation d’un public donnent des effets très différents à l’écoute collective. Une même marche peut rassembler et exclure. La formule sur l’adoucissement des mœurs désigne donc une puissance éducative possible plus qu’un résultat automatique. Elle devient une hypothèse précise lorsqu’on décrit quelle habitude d’écoute se forme, dans quelles relations et avec quelle possibilité de discussion.
 
+**À l’entretien. Le calme d’un auditoire prouve-t-il que la musique a adouci les mœurs ?** La concentration qui fait taire une salle peut disparaître à la sortie. Pour soutenir la thèse plus forte, rechercher comment une pratique d’écoute ou de jeu collectif transforme durablement l’attention portée à autrui.
+
 ### L’anarchie
 
 Une association peut se coordonner sans chef permanent, par des règles partagées et des responsabilités révocables. L’anarchie politique interroge la nécessité d’un pouvoir souverain séparé pour rendre durable une telle coopération. Dire que l’absence du chef engendre par définition le désordre ferait de la conclusion une prémisse. Il faut aussi éprouver l’hypothèse en sens inverse, comment traiter un litige durable, garantir les droits d’une minorité et empêcher les personnes influentes d’exercer un pouvoir informel sans recours ? Le problème porte sur la forme et le contrôle de l’autorité, et non sur le simple nombre de règles. Une expérience locale éclaire cette possibilité sans garantir qu’elle résolve toutes les questions d’échelle et de durée.
@@ -281,6 +331,8 @@ Une association peut se coordonner sans chef permanent, par des règles partagé
 *Rapport, p. 9. Sujet choisi — La trahison des images*
 
 On connaît des périodes et des lieux où des populations vivent durablement sans hostilités ouvertes. Cela donne une réponse d’existence minimale à la question « de ce monde ». Une paix plus forte exige aussi des institutions capables de traiter les différends sans laisser les personnes dépendre de la bonne volonté provisoire d’un autre pouvoir. Kant, dans Vers la paix perpétuelle, formule une exigence juridique qui permet de juger des arrangements imparfaits. La distance entre l’idéal et les faits ne suffit ni à rendre l’idéal impossible ni à garantir sa réalisation. Elle invite à déterminer ce que les expériences pacifiques ont effectivement institué et quelles exclusions fragilisent encore l’accord.
+
+**À l’entretien. Une paix perpétuellement à construire mérite-t-elle le nom de paix ?** Distinguer la suspension provisoire d’un différend et l’existence d’institutions qui permettent de l’arbitrer. La nécessité d’entretenir ces institutions ne suffit pas à réduire toute paix à un simple intervalle.
 
 ### La trahison des images
 
@@ -300,6 +352,8 @@ Le maître de musique possède un savoir-faire que l’élève ne peut pas appre
 
 Renoncer peut être se détourner d’un projet devenu impossible, ou choisir de ne pas exercer une possibilité encore ouverte parce qu’une autre fin compte davantage. Une bénévole qui refuse une responsabilité pour préserver du temps à un proche n’a pas nécessairement capitulé. Elle a reconnu une limite et hiérarchisé des engagements. À l’inverse, présenter comme renoncement libre l’abandon d’une formation inaccessible financièrement peut masquer une contrainte. On peut juger du sens du geste en demandant quelle option était réellement disponible, ce que l’agent savait et ce qu’il s’efforce de préserver. Le renoncement peut ainsi être perte subie, retrait prudent ou acte positif de détermination.
 
+**À l’entretien. Renoncer par choix et être privé d’une possibilité, est-ce la même chose ?** Deux personnes quittent un projet, l’une pour tenir une autre promesse, l’autre parce qu’on lui en refuse l’accès. Le résultat visible est semblable. La maîtrise des raisons et des options modifie le sens de ce qui arrive.
+
 **Reprise. Le maître sait-il qu’il a réussi quand l’élève le répète exactement ?** Il faut aussi que l’élève puisse discerner la raison d’une correction et l’appliquer autrement. Pour le renoncement, distinguer une option abandonnée d’une option jamais accessible.
 
 ## Billet 160 — La bonne conscience
@@ -307,6 +361,8 @@ Renoncer peut être se détourner d’un projet devenu impossible, ou choisir de
 *Rapport, p. 9. Sujet choisi — Quand y a-t-il peuple ?*
 
 Un responsable se félicite d’avoir appliqué la même procédure à tous. Une personne montre ensuite que la procédure entière la prive d’un recours accessible aux autres. La bonne conscience peut être le sentiment légitime d’avoir agi selon des raisons que l’on peut exposer, ou l’assurance qui dispense de chercher ce que l’on a omis. Le sentiment ne fournit pas sa propre preuve. Il faut distinguer l’absence de remords de la justice de l’acte. Une conscience qui accepte d’entendre les effets qu’elle n’avait pas prévus peut reconnaître un bien accompli sans devenir suffisante. L’examen critique ne commande pas pour autant la culpabilité permanente, il réclame des raisons et la disposition à les réviser.
+
+**À l’entretien. Une personne de bonne conscience est-elle nécessairement juste ?** Un responsable peut appliquer un critère qu’il croit impartial et ignorer ceux que ce critère exclut. Croire avoir bien agi décrit son rapport à lui-même. Il reste à examiner les raisons d’autrui et les effets réels de sa décision.
 
 ### Quand y a-t-il peuple ?
 
@@ -324,6 +380,8 @@ Une habitude de lecture libère de l’effort de déchiffrer chaque lettre et pe
 
 La fonction du soldat se définit dans un cadre politique et juridique qui confie à une personne une mission publique et des obligations particulières. La présence d’une hiérarchie ne signifie pas que toute responsabilité passe au supérieur. L’obéissance institutionnelle demeure bornée par le droit et par l’exigence de reconnaître des personnes comme titulaires de protections. Le sujet interroge aussi une situation civique singulière, servir sous des règles spécifiques tout en demeurant membre de la communauté des citoyens. Une société peut reconnaître ce service et discuter publiquement les décisions qui l’engagent. Étudier le soldat comme fonction évite d’identifier sa personne à une seule vertu supposée ou à une préférence personnelle pour le conflit.
 
+**À l’entretien. La fonction du soldat suffit-elle à déterminer sa responsabilité personnelle ?** Distinguer les obligations attachées au service, le jugement sur la légitimité d’une action et la possibilité de rendre des comptes. Le rôle institutionnel éclaire une situation sans dispenser d’examiner ce qu’une personne pouvait savoir et décider.
+
 **Reprise. Quelle habitude devrait-on conserver ?** Celle qui rend attentive une opération jusque-là trop coûteuse, comme la lecture fluide, à condition de préserver la possibilité de reprendre le geste. Pour le soldat, distinguer mission publique et décision politique sur sa finalité.
 
 ## Billet 162 — Justice et vengeance
@@ -332,9 +390,13 @@ La fonction du soldat se définit dans un cadre politique et juridique qui confi
 
 La justice et la vengeance supposent fréquemment une faute initiale reconnue par une personne qui en souffre. Une réponse devient vengeance lorsque la partie offensée détermine elle-même la mesure du retour et traite le nouveau dommage comme équivalent au premier. Une institution de justice intervient par une procédure, une qualification des faits et des garanties de contestation. Cette différence ne rend pas toute peine prononcée automatiquement juste. Une institution qui reprend le ressentiment d’un groupe sans examen des preuves trahirait sa fonction. Rendre justice implique d’entendre la victime et de limiter publiquement les conditions de la réponse. La réparation de ce qui peut l’être et la protection des droits restent distinctes du plaisir de faire subir une perte en retour.
 
+![Après un tort, qui peut juger ?](figures/tort-jugement-et-recours.svg)
+
 ### Pourquoi voyager ?
 
 Voyager peut satisfaire un besoin de déplacement ou le désir d’être dépaysé. On peut néanmoins transporter toutes ses habitudes avec soi et ne rencontrer du pays que ses propres attentes. Le voyage devient une épreuve de jugement lorsque le visiteur accepte de voir son interprétation corrigée, de découvrir les usages des lieux et d’examiner sa place temporaire parmi ceux qui les habitent. Cela ne transforme pas chaque séjour en obligation d’authenticité. Le repos et la visite d’un proche sont aussi de bonnes raisons. Il faut considérer les conditions concrètes de cette mobilité et ses effets sur les habitants. Le simple nombre de kilomètres ne garantit ni la connaissance ni l’ouverture à autrui.
+
+**À l’entretien. Un déplacement lointain garantit-il le dépaysement ?** Un voyageur peut retrouver partout les mêmes services et rechercher uniquement ce qu’il connaît déjà. Un autre peut découvrir un quartier voisin en acceptant d’être guidé. La distance parcourue et la disponibilité à corriger ses habitudes sont deux critères distincts.
 
 **Reprise. Pourquoi la parole de la victime compte-t-elle sans lui conférer le pouvoir de trancher seule ?** Elle fait connaître le tort, et le tiers établit une décision justifiable envers les deux parties. En voyage, examiner ce que l’on a effectivement appris d’un habitant.
 
@@ -343,6 +405,8 @@ Voyager peut satisfaire un besoin de déplacement ou le désir d’être dépays
 *Rapport, p. 9. Sujet choisi — Peut-on se mettre à la place d’autrui ?*
 
 L’origine d’un mot peut désigner la première occurrence conservée, un emprunt plus ancien ou le contexte qui a transformé son sens. Ces réponses ne se contredisent pas nécessairement, car elles n’interrogent pas la même naissance. Chercher l’origine d’une institution peut de même éclairer les rapports dont elle est issue, sans établir par là si l’institution actuelle est justifiée. L’étymologie d’un mot ne commande pas tous ses usages présents. Il faut distinguer le point de départ choisi pour l’enquête, les conditions de formation et le fondement que l’on invoque aujourd’hui. Ce tri permet à la généalogie de rendre un héritage discutable sans le disqualifier ou le consacrer par sa seule ancienneté.
+
+**À l’entretien. Donner la date d’une institution suffit-il à en donner l’origine ?** La date d’un vote peut établir son commencement juridique. L’enquête sur l’origine cherchera aussi les pratiques et conflits qui l’ont rendu possible. Ni la date ni la cause historique ne démontrent à elles seules la légitimité de l’institution.
 
 ### Peut-on se mettre à la place d’autrui ?
 
@@ -360,6 +424,8 @@ Une rue familière paraît étrangère après une longue absence. À l’inverse
 
 Une éclipse calculée a lieu nécessairement sous les conditions retenues par le modèle. Ma décision d’aller l’observer sur une colline plutôt qu’en ville est contingente si une autre conduite demeurait possible. Il faut distinguer la nécessité logique, la nécessité sous des lois et la contrainte pratique dans une situation. Il faut de même séparer contingent et imprévisible. Un résultat peut être prévisible sans être logiquement nécessaire, et une nécessité peut échapper à notre connaissance. Ce repérage empêche d’inférer du simple fait qu’un événement est arrivé qu’il ne pouvait pas en aller autrement. Examiner la contingence revient à préciser sous quelles conditions on peut soutenir une possibilité alternative.
 
+**À l’entretien. Un événement prévisible est-il nécessaire ?** Un train peut arriver à l’heure comme prévu et avoir pu être retardé. La prévision exprime une connaissance dans certaines conditions. Affirmer la nécessité demanderait de montrer sous quelles conditions une autre issue était impossible.
+
 **Reprise. Pourquoi peut-on être dépaysé chez soi ?** Une transformation du regard ou des usages peut rendre inopérants des repères connus sans changement de lieu. Pour la nécessité, identifier les hypothèses maintenues fixes dans la prévision.
 
 ## Billet 165 — L’artificiel
@@ -367,6 +433,8 @@ Une éclipse calculée a lieu nécessairement sous les conditions retenues par l
 *Rapport, p. 9. Sujet choisi — Qui croire ?*
 
 Un matériau de synthèse est artificiel en raison de son procédé de production. Un ton de voix paraît artificiel parce qu’il sonne affecté. Passer de la première qualification au second jugement comme si toute intervention humaine était mauvaise constitue une confusion. Un dispositif artificiel peut soutenir une fonction vitale et s’intégrer avec souplesse à l’activité. Inversement, ce qui arrive sans intervention humaine peut être nuisible. Interroger l’artificiel demande de préciser ce qui a été produit, selon quelle intention et avec quels effets. La distinction d’origine conserve son intérêt pour attribuer des responsabilités et suivre les dépendances. Elle ne prescrit pas à elle seule d’approuver ou de rejeter le résultat.
+
+**À l’entretien. Un matériau de synthèse est-il artificiel au même sens qu’un comportement affecté ?** Dans le premier cas, on décrit un mode de fabrication. Dans le second, on porte un jugement sur la présentation de soi. Faire varier les exemples empêche de transférer sans examen une connotation morale à une technique.
 
 ### Qui croire ?
 
@@ -384,6 +452,8 @@ Une personne qui découvre les effets des horaires de transport sur ses chances 
 
 Le salut peut vouloir dire se tirer d’un péril déterminé, orienter une vie ou espérer une délivrance religieuse. Un raisonnement peut discerner un moyen de sortir d’une difficulté sans assurer que l’action sera possible ni fixer seul ce qui mérite d’être sauvé. Dans la tradition philosophique, connaître les causes de ce qui nous trouble peut transformer notre rapport aux affects et à la nécessité. Dans une conception religieuse, la grâce ou la foi jouent un rôle qu’aucune démonstration ne remplace. Il faut donc annoncer le sens retenu, puis distinguer la raison qui examine des croyances, celle qui guide une action et l’hypothèse selon laquelle elle suffirait à produire tout salut.
 
+**À l’entretien. La raison peut-elle répondre à toute demande de salut ?** Un raisonnement peut dissiper une peur fondée sur une contradiction ou aider à décider comment agir. Il reste à déterminer si « salut » désigne ici une libération de l’erreur, un sens donné à la vie ou une espérance religieuse.
+
 **Reprise. Le sentiment d’injustice constitue-t-il à lui seul une conscience politique ?** Il peut l’amorcer. Il reste à mettre en relation les situations et à vérifier les causes sociales proposées. Pour le salut, préciser quel problème la raison est censée résoudre.
 
 ## Billet 167 — Peut-on renoncer à sa liberté ?
@@ -396,6 +466,8 @@ Un contrat de travail retire certaines possibilités pendant des heures définie
 
 Une fiction propose un monde ou une situation dont l’auteur et le lecteur n’exigent pas immédiatement l’attestation comme fait réel. Un récit à la première personne peut pourtant réemployer une rue connue et des événements établis. La fiction ne se définit donc pas par la fausseté de chaque phrase, mais aussi par des conventions d’usage et par la place qu’elles donnent à l’imagination. Une variation inventée peut aider à comprendre une relation, comme un cas hypothétique permet de séparer deux motifs confondus dans l’expérience ordinaire. Elle peut également renforcer des clichés. Sa valeur demande d’examiner la forme et la portée de ce qu’elle nous fait éprouver.
 
+**À l’entretien. En quoi le romancier diffère-t-il du menteur s’ils racontent tous deux ce qui n’a pas eu lieu ?** Le lecteur entre dans une convention qui lui permet d’examiner un récit inventé. Le menteur cherche à faire accepter son énoncé comme un fait. Le statut de la parole dépend de la relation qu’elle propose à son destinataire.
+
 **Reprise. Signer une promesse est-il déjà renoncer à sa liberté ?** C’est en user pour créer une attente limitée dont on accepte de répondre. Pour la fiction, montrer pourquoi inventer un narrateur n’empêche pas la présence de faits vérifiables.
 
 ## Billet 168 — Que faire de la tradition ?
@@ -403,6 +475,8 @@ Une fiction propose un monde ou une situation dont l’auteur et le lecteur n’
 *Rapport, p. 9. Sujet choisi — La vulnérabilité*
 
 Une tradition rassemble des pratiques reçues dont l’origine n’est pas nécessairement connue de chaque participant. La conserver peut donner une mémoire et des ressources à ceux qui viennent après nous. En faire une règle intangible transforme pourtant le passé en autorité qui n’aurait plus à répondre des exclusions qu’elle reproduit. La rejeter à cause de sa seule ancienneté ignorerait aussi ce que les générations successives ont déjà modifié pour la maintenir vivante. La bonne question est celle des possibilités de transmission, de réinterprétation et de refus. Que peut-on apprendre de cette pratique, qui y prend part et à quelles conditions ceux qu’elle engage peuvent-ils en changer le sens ?
+
+**À l’entretien. Modifier un rite suffit-il à rompre avec la tradition ?** Une famille peut traduire une chanson pour la transmettre à une nouvelle génération. La modification conserve certaines relations et change certaines formes. Demander ce que les participants tenaient à transmettre et qui peut proposer une nouvelle version.
 
 ### La vulnérabilité
 
@@ -422,6 +496,8 @@ Une danseuse paraît accomplir un mouvement difficile sans que l’effort se voi
 
 Le salaire est un gain essentiel, mais il ne résume pas ce que peut faire acquérir un travail. Un apprentissage développe des capacités, une coopération crée des liens et la réalisation visible d’un ouvrage donne prise sur le monde commun. Ces bénéfices dépendent toutefois des conditions d’emploi. Une tâche répétitive sans pouvoir d’initiative peut user les capacités qu’elle était censée développer. Inversement, un travail non rémunéré peut produire une valeur importante tout en faisant supporter une charge inégalement distribuée. Demander ce qu’on gagne exige ainsi de préciser qui travaille, qui recueille le produit et quelles libertés sont augmentées ou réduites dans la durée.
 
+**À l’entretien. Que gagne-t-on en travaillant quand le résultat ne nous appartient pas ?** Un apprenti peut acquérir la maîtrise d’un geste tandis que la pièce produite revient à l’atelier. Suivre séparément revenu, apprentissage, reconnaissance et pouvoir de fixer les tâches. Ces gains ne coïncident pas toujours.
+
 **Reprise. La grâce d’une interprétation exclut-elle la répétition ?** Une technique longuement exercée peut justement rendre possible la disponibilité apparente du geste. Pour le travail, distinguer le gain individuel et la valeur créée pour autrui.
 
 ## Billet 170 — La délibération
@@ -434,6 +510,8 @@ Deux élus déposent chacun un bulletin différent après une discussion. Ont-il
 
 Je sais par cœur une chanson et me rappelle une répétition précise où j’ai changé un accord. Bergson, dans Matière et mémoire, distingue la mémoire-habitude du souvenir d’un événement singulier. La seconde rappelle un passé auquel je me rapporte comme mien. Elle ne fonctionne pas pour autant comme une copie inchangée. Une photographie ou le récit d’un proche peut m’aider à retrouver un détail et peut aussi introduire un élément que je n’avais jamais vu. Se souvenir porte sur une expérience passée à partir d’un présent qui la reconstruit. Il faut distinguer la fidélité que vise le souvenir et les contrôles disponibles pour établir certains faits.
 
+**À l’entretien. Peut-on se souvenir d’une scène que l’on connaît surtout par des photographies ?** Reconnaître le décor sur un cliché, se rappeler une sensation vécue et connaître le récit familial ont des sources différentes. Leur accord est possible. Les distinguer aide à comprendre ce que l’on revendique comme son propre souvenir.
+
 **Reprise. Le vote à la fin suffit-il à prouver qu’il y a eu délibération ?** Il faut examiner ce qui a pu être réellement discuté et contesté avant lui. Pour la mémoire, comparer réciter le refrain et se rappeler le lieu où on l’a appris.
 
 ## Billet 171 — Le devenir
@@ -441,6 +519,8 @@ Je sais par cœur une chanson et me rappelle une répétition précise où j’a
 *Rapport, p. 9. Sujet choisi — Avons-nous besoin de spectacles ?*
 
 Un arbre change chaque saison sans cesser d’être cet arbre. Si l’on définit l’être par la permanence rigoureusement immobile, le changement devient une difficulté presque insoluble. Si tout se modifie sans aucune continuité, on ne peut plus dire de quoi il y a devenir. Aristote distingue ce qui reste sujet du changement, les formes qu’il acquiert et les possibilités dont l’actualisation explique la transformation. Cette manière d’analyser n’oblige pas à traiter toute histoire comme le développement d’une fin déjà fixée. Un changement historique peut inventer de nouvelles possibilités. Penser le devenir exige de préciser quelles relations demeurent reconnaissables, quelle nouveauté est produite et à quelle échelle de temps on la saisit.
+
+**À l’entretien. Un bourgeon qui devient une fleur était-il déjà cette fleur ?** L’explication du développement suit une continuité et des transformations réelles. Elle ne doit ni traiter le résultat comme déjà présent à l’identique ni considérer chaque état comme privé de rapport avec le précédent.
 
 ### Avons-nous besoin de spectacles ?
 
@@ -458,6 +538,8 @@ Une représentation théâtrale réunit un public autour d’une action fictive 
 
 Un parent attend le meilleur d’un enfant qu’il aime et refuse parfois de reconnaître une difficulté qu’une autre personne lui signale. L’amour peut orienter l’attention jusqu’à occulter une objection. Il peut aussi rendre perceptible un changement d’humeur trop discret pour un observateur indifférent. La même intensité affective ne garantit donc ni clairvoyance ni aveuglement. L’enjeu est le rapport au jugement de l’autre et à ce qui contredit l’image désirée. Aimer quelqu’un comme une personne singulière peut conduire à corriger cette image. Ne chercher que la confirmation de son propre désir rend l’amour aveugle à celui qu’il prétend viser.
 
+**À l’entretien. L’attention d’une personne aimante ne lui fait-elle pas parfois mieux voir ?** Elle peut reconnaître une hésitation imperceptible à un inconnu, mais aussi interpréter toute objection comme un malentendu. Comparer les indices qu’elle remarque et sa capacité à réviser son jugement lorsque l’autre lui répond.
+
 **Reprise. Refuser systématiquement un expert suffit-il pour penser par soi-même ?** Il faut aussi examiner ce que l’on sait et les raisons publiques disponibles. Pour l’amour, analyser la réaction à un détail qui dérange l’image aimée.
 
 ## Billet 173 — Peut-on ne pas être soi-même ?
@@ -469,6 +551,8 @@ Une personne joue un rôle professionnel qu’elle éprouve comme étranger à s
 ### Les bonnes manières
 
 Laisser finir une phrase et éviter de dévoiler une confidence sont des usages qui peuvent reconnaître l’autre dans une relation. Mais connaître la manière attendue de tenir un couvert ou de s’adresser à une autorité peut également fonctionner comme marque de distinction sociale. Il faut donc séparer l’égard réciproque et le code particulier qui l’exprime dans un milieu. La règle est défendable si elle facilite la coexistence et peut être expliquée à ceux qui ne la connaissent pas. Elle devient un instrument de domination si les initiés transforment un apprentissage inégal en jugement sur la dignité d’une personne. Les bonnes manières ont ainsi une valeur variable avec leurs effets et leur degré de réciprocité.
+
+**À l’entretien. Les bonnes manières ont-elles la même valeur quelle que soit la situation ?** Céder la parole peut protéger un interlocuteur interrompu. Lui imposer une formule de politesse avant de l’écouter peut reconduire une hiérarchie. Examiner la relation que le geste institue, au-delà de sa conformité aux usages.
 
 **Reprise. Un changement profond implique-t-il qu’une personne soit devenue une autre au sens juridique ?** Les critères d’identité civile et ceux du rapport vécu à soi ne sont pas identiques. Pour les manières, distinguer un geste d’attention et un code de prestige.
 
@@ -482,6 +566,8 @@ Punir suppose qu’un acte ait été qualifié selon des règles et imputé à u
 
 Le trajet matinal, la préparation d’un repas et l’attente d’un message ont en commun de s’inscrire dans une répétition qui les rend rarement dignes d’un récit public. La vie quotidienne n’est toutefois ni uniforme ni insignifiante. Ses rythmes distribuent du temps et des possibilités, révélant par exemple qui organise les repas et qui dispose de loisirs. Les analyses de Michel de Certeau s’attachent aux usages inventifs par lesquels les personnes reprennent des espaces et des objets déjà organisés. Le quotidien peut abriter initiative, attachement et injustice. Le décrire demande une attention aux pratiques effectivement vécues plutôt qu’un jugement de banalité fondé sur leur seule fréquence.
 
+**À l’entretien. L’habitude rend-elle la vie quotidienne philosophiquement insignifiante ?** Un trajet banal révèle la dépendance à un horaire ou à un accès dès qu’une panne l’interrompt. L’inattendu donne à voir des conditions ordinairement peu remarquées. Il faut ensuite les retrouver dans le déroulement des jours ordinaires.
+
 **Reprise. Le dommage causé disparaît-il lorsqu’une peine est exécutée ?** Il peut être irréversible ou demander une réparation distincte. Pour le quotidien, suivre l’organisation d’une journée avant de la dire identique à celle des autres.
 
 ## Billet 175 — La solitude
@@ -493,6 +579,8 @@ Une musicienne répète seule et éprouve cette solitude comme une liberté de r
 ### Être et apparaître
 
 Un visage paraît triste. L’interlocuteur peut se tromper sur l’état de la personne, mais l’apparence n’est pas toujours l’écran derrière lequel se cacherait l’être véritable. La tristesse peut précisément devenir perceptible dans un geste ou une voix. Un objet apparaît différemment suivant la lumière, sans que toutes ses apparences soient arbitraires. Distinguer être et apparaître exige de trouver un critère de reprise, observer sous d’autres conditions, écouter la personne ou confronter des descriptions. Il faut donc laisser place à l’apparence trompeuse et à l’apparaître comme mode d’accès à une réalité. L’opposition cesse alors d’être un partage immédiat entre vérité invisible et surface sans valeur.
+
+**À l’entretien. Une apparence qui trompe empêche-t-elle toute connaissance de ce qui est ?** Un objet immergé paraît déformé. Comparer plusieurs angles et les conditions de réfraction permet de comprendre l’apparence elle-même. Celle-ci peut fournir une prise sur la réalité dès que ses conditions sont examinées.
 
 **Reprise. Quelle différence y a-t-il entre retirer son attention et être exclu ?** La possibilité de renouer le lien et de choisir le retrait change profondément l’expérience. Sur l’apparence, proposer une vérification qui la corrige sans la dévaloriser d’avance.
 
@@ -506,6 +594,8 @@ Dire d’une porte qu’elle est ouverte et qu’elle est fermée à la même he
 
 « Malheur aux vaincus » peut décrire avec amertume le fait que la défaite laisse des personnes à la merci du vainqueur. Cela ne constitue pas une raison de leur refuser des protections. Une victoire établit un rapport de puissance dans certaines circonstances, sans suffire à donner au jugement du vainqueur valeur de justice. Des institutions de droit et de mémoire cherchent précisément à protéger les personnes même privées des moyens de se faire entendre. Le mot « malheur » peut ainsi conduire à deux usages opposés, légitimer le fait accompli ou nommer une vulnérabilité qui appelle des garanties. Le sens moral de la formule dépend de ce passage entre le constat et la norme.
 
+**À l’entretien. Le vainqueur acquiert-il un droit par le seul fait d’avoir gagné ?** Le résultat établit un rapport de forces et peut expliquer qu’une règle ait été imposée. Pour en établir la légitimité, il faudrait encore des raisons que la partie lésée puisse examiner. Séparer le constat et sa justification.
+
 **Reprise. À quelles conditions deux phrases sont-elles logiquement contradictoires ?** Il faut fixer leur objet, le moment et le rapport sous lequel elles portent. Pour la formule sur les vaincus, distinguer ce qui arrive de ce qui serait dû en droit.
 
 ## Billet 177 — Le courage
@@ -513,6 +603,8 @@ Dire d’une porte qu’elle est ouverte et qu’elle est fermée à la même he
 *Rapport, p. 9. Sujet choisi — Apprendre*
 
 La peur peut faire reconnaître ce qui compte et les risques d’une décision. Le courage ne consiste donc pas à ne rien craindre. Dans l’Éthique à Nicomaque, Aristote le distingue à la fois de la témérité et d’une peur qui détournerait d’un bien justifié. Une élève qui admet publiquement une erreur importante et demande qu’on la corrige peut faire preuve de courage sans chercher un danger. La conduite se juge par la fin, les possibilités réelles et la façon de prendre en compte ceux qui en supporteront les effets. Célébrer sans limite le courage d’un individu peut également dissimuler la responsabilité d’une organisation qui aurait dû le soutenir. Le courage est une vertu située, compatible avec la prudence et la solidarité.
+
+**À l’entretien. Persister avec obstination suffit-il à faire preuve de courage ?** Prendre la parole pour signaler un danger peut exiger du courage. Maintenir son affirmation une fois qu’on en a montré l’erreur n’en exige pas moins d’entêtement. Examiner le risque assumé, le bien poursuivi et le jugement sur la situation.
 
 ### Apprendre
 
@@ -528,6 +620,8 @@ Un élève reproduit le résultat d’un exercice, puis échoue lorsqu’on chan
 
 Une graine peut devenir un arbre dans certaines conditions sans être déjà un arbre miniature auquel il suffirait de laisser du temps. La puissance au sens aristotélicien désigne une capacité qui se distingue de son actualisation. La puissance d’une personne, d’un État ou d’une technique suppose aussi des possibilités dont la réalisation dépend d’un milieu et de la coopération d’autrui. Il ne faut donc pas confondre posséder une ressource, avoir le pouvoir de l’employer et obtenir le résultat souhaité. Une collectivité peut être plus puissante par le partage de connaissances ou l’organisation de droits, sans qu’un membre domine davantage les autres. L’analyse doit préciser qui peut faire quoi, avec quels appuis, sous quelles limites et pour quelle fin.
 
+**À l’entretien. Posséder un pouvoir que l’on n’exerce jamais, est-ce encore être puissant ?** Une personne peut avoir le droit d’interrompre une séance sans l’utiliser. Cette possibilité compte déjà dans la conduite des autres. Il faut distinguer capacité disponible, effets de son anticipation et exercice effectif.
+
 ### À quoi sert la connaissance du passé ?
 
 Les archives d’une réforme scolaire montrent qu’une règle aujourd’hui ordinaire a remplacé plusieurs solutions concurrentes. Le passé peut ainsi desserrer l’illusion de nécessité qui entoure le présent. Il permet également de reconnaître des responsabilités, des dettes et des effets qui persistent. Mais un précédent historique ne décide pas automatiquement de ce qu’il faut faire maintenant. Des institutions, des connaissances et des personnes ont changé. La connaissance du passé sert à comparer avec méthode, à restituer des voix et à éclairer les conditions d’un choix, non à fournir une recette infaillible. Elle a aussi une valeur indépendante d’un bénéfice immédiat, rendre justice à ce qui est attesté même lorsque cela contrarie nos projets.
@@ -539,6 +633,8 @@ Les archives d’une réforme scolaire montrent qu’une règle aujourd’hui or
 *Rapport, p. 9. Sujet choisi — Le jeu*
 
 Cent personnes qui ne peuvent pas se coordonner peuvent avoir moins d’influence qu’une petite équipe dont chaque membre sait quoi faire. Le nombre ajoute des ressources possibles, mais elles ne deviennent une force collective qu’avec des relations de confiance, de l’information et une forme de coordination. Dans un vote, une majorité acquiert aussi un pouvoir de décision parce qu’une règle publique attribue une fonction particulière au décompte. Le nombre ne garantit ni la vérité d’une proposition ni la justice de son application. Une minorité doit conserver des droits après le scrutin. Il faut donc distinguer les effets matériels d’un grand nombre, sa capacité d’organisation et le titre politique que peut ou non lui conférer une institution.
+
+**À l’entretien. Comment une minorité organisée peut-elle peser davantage qu’une majorité dispersée ?** Le nombre indique une réserve d’appuis. Une procédure de décision, une information partagée ou une coordination changent ce que ces appuis permettent d’obtenir. Leur efficacité ne décide pas à elle seule de la légitimité du résultat.
 
 ### Le jeu
 
@@ -556,6 +652,8 @@ Une règle de circulation commune permet à des personnes qui ne se connaissent 
 
 « J’ai le cœur serré » peut signifier qu’une nouvelle m’attriste, tandis qu’un médecin parlant du cœur peut examiner sa fonction de circulation. Le langage du cœur ne se laisse pas réduire à l’anatomie. Dans les Pensées de Pascal, le cœur intervient aussi dans un ordre de connaissance distinct de certaines démonstrations discursives. Il ne s’agit pas de donner à toute émotion le statut d’une preuve. Comprendre le terme exige de suivre la question, fonctionnement d’un organe, valeur d’un attachement ou manière de saisir un principe. L’usage affectif peut témoigner d’une importance réelle et le raisonnement peut en examiner les conséquences. L’opposition toute faite du cœur et de la raison efface ces relations.
 
+**À l’entretien. Que signifie « suivre son cœur » quand deux attachements nous sollicitent ?** Le mot peut désigner une affection, une intuition ou la disposition à prendre soin d’autrui. Nommer le lien particulier aide à examiner ses raisons. L’intensité du sentiment ne tranche pas à elle seule entre des obligations concurrentes.
+
 **Reprise. Dire qu’une loi est valide suffit-il à répondre au citoyen qui en conteste la justice ?** Il s’agit de deux questions distinctes et l’une peut conduire à réformer la réponse à l’autre. Pour Pascal, ne pas assimiler le cœur à une réaction impulsive.
 
 ## Billet 181 — Sait-on toujours ce que l’on veut ?
@@ -567,6 +665,8 @@ Je veux accepter une mission intéressante et garder le temps que je consacre d�
 ### La raison d’État
 
 La raison d’État désigne un argument selon lequel la sauvegarde de la communauté politique pourrait justifier une décision exceptionnelle. Il faut distinguer la protection d’une institution commune et la préservation de la position de ses dirigeants. Confondre les deux permettrait de présenter toute critique comme une menace publique. Une invocation recevable devrait pouvoir préciser le bien menacé, les règles qui bornent le pouvoir et les moyens de contrôle ou de révision. La difficulté est que le secret réclamé au nom de l’urgence peut empêcher la vérification de ses propres raisons. La formule doit donc ouvrir une enquête exigeante sur les droits et la responsabilité, plutôt que tenir lieu de justification définitive.
+
+**À l’entretien. Un gouvernement peut-il justifier le secret par le seul mot « nécessité » ?** Exiger qu’il précise l’intérêt public invoqué, la durée et les formes de contrôle compatibles avec la situation. Un motif peut être examiné sans que tout détail soit immédiatement divulgué. Le secret rend cette exigence de justification particulièrement importante.
 
 **Reprise. Le comportement révèle-t-il toujours plus exactement mon désir que mes paroles ?** Il peut aussi refléter une contrainte. Il faut comparer les raisons et les possibilités effectives. Sur l’État, demander si le bien annoncé demeure commun à ceux qui contestent la mesure.
 
@@ -580,6 +680,6 @@ L’île décrite dans l’Utopie de Thomas More peut être lue à la fois comme
 
 Deux personnes parlent alternativement sans se répondre. L’alternance matérielle des voix ne suffit pas à former une discussion. Il faut au moins un objet assez commun pour que les raisons se rencontrent, un accès intelligible aux termes et une possibilité de poser une objection à laquelle l’autre puisse réellement répondre. Un désaccord profond ne ferme pas nécessairement l’échange, mais une menace qui interdit de changer d’avis ou de refuser le vocabulaire peut le rendre fictif. L’égalité de dignité, des règles de temps et la disponibilité des preuves contribuent à l’effectivité d’une discussion. Son succès ne se mesure pas à la seule convergence finale. Pouvoir clarifier le motif d’un désaccord persistant peut déjà être un résultat rationnel.
 
-**Reprise. Une utopie perd-elle son rôle si elle est irréalisable telle quelle ?** Elle peut conserver sa puissance de comparaison, à condition de reconnaître la différence entre critique et programme applicable. Pour la discussion, dire ce qui rend un désaccord plus précis et mieux examiné.
+**À l’entretien. Deux personnes de bonne foi peuvent-elles échouer à discuter ?** Elles peuvent employer « justice » dans des sens différents ou ne disposer d’aucune règle pour examiner une objection. Faire expliciter un exemple, reconnaître le désaccord et laisser chacun répondre constituent des opérations que la bonne volonté seule n’accomplit pas.
 
-[Annexe officielle, p. 8](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf#page=8) · [Annexe officielle, p. 9](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf#page=9) · [Index des 182 billets et des choix](https://github.com/knoel99/corriges-concours/blob/master/campagnes/x-ens/philosophie-al-2026-tirages.tsv)
+**Reprise. Une utopie perd-elle son rôle si elle est irréalisable telle quelle ?** Elle peut conserver sa puissance de comparaison, à condition de reconnaître la différence entre critique et programme applicable. Pour la discussion, dire ce qui rend un désaccord plus précis et mieux examiné.

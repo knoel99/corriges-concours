@@ -1,0 +1,88 @@
+{
+  "slug": "bel_al_italien-theme-lyon_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Italien (thème Lyon)",
+    "annee": 2025
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2025-09/251113.pdf#page=15",
+    "sujet_sha256": "b7d09bb818f637ec169e3e81e4912858b211e06941981935364478be20cd6766",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2025-11/Italien%202025%20OK%20Lyon%20RELU%20CMCM%20FIN.pdf#page=7",
+    "rapport_sha256": "1cff7f34732399c09f8bdb9049167b37a63632546b70a6a8c5a492e5adfff205",
+    "archive_session": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2025",
+    "archive_session_sha256": "ad4b2d5508e5132af04c07c96bb278eb4e9eb062899548832904af2ccfc2e890",
+    "auteur_oeuvre": "Giuliano da Empoli, Le Mage du Kremlin (2022)."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Proposition de thème",
+      "legende": "Qui parle des pouvoirs de l’art ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Traduction italienne intégrale du feuillet de spécialité, notes de variantes et schéma. Pronoms impersonnels, succession je/nous, registres du théâtre et de la diplomatie, concordance des temps, reprise de la croyance et adresse finale."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Resserrement de la proposition sur la justification initiale et de l’adresse au lecteur. Vérification de l’ancrage temporel de la scène moscovite, du subjonctif dans l’interrogative indirecte et de la dernière réserve du narrateur. Explication de la nuance entre salvifica et redentrice."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Proposition de thème"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Proposition de thème",
+        "page_pdf": 15,
+        "page_pdf_fin": 15,
+        "perimetre": "Les trois paragraphes de la page 15, de « Quand on est jeune » à « la malédiction de cet âge ». La dernière phrase s’adresse directement aux interlocuteurs du narrateur.",
+        "paragraphes": 3,
+        "pages_rapport": [
+          7,
+          9
+        ]
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

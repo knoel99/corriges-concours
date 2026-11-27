@@ -17,7 +17,21 @@
   },
   "sources": {
     "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-04/Epreuve%20de%20sp%C3%A9cialit%C3%A9%202026.pdf#page=15",
-    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Italien%202026.pdf#page=9"
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Italien%202026.pdf#page=9",
+    "sujet_sha256": "62fa5ca9c1b2caf4de4b131c5e8e4432d72544a0e0a01930f1ffed7d6e59acc2",
+    "rapport_jury_sha256": "cd8303b341427a9228b47c92d71e7051d4e5a09a01f6b432854372136906b357",
+    "fascicule": "LC 663, J. 26 1066-P, Banque d’épreuves littéraires, épreuve de spécialité",
+    "page_sujet": 15,
+    "pages_rapport_jury": "9–13",
+    "epreuve": "Thème en quatre heures, sans dictionnaire",
+    "passage": {
+      "auteur": "Anatole France",
+      "titre": "Le Lys rouge",
+      "annee": 1894,
+      "premiers_mots": "Quand, dans son manteau carmélite, elle vint à Lungarno Acciaioli",
+      "derniers_mots": "c’était par force et malgré lui […].",
+      "paragraphes": 7
+    }
   },
   "figures": [
     {
@@ -26,7 +40,7 @@
       "question": "Thème"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -38,6 +52,24 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Thème intégral d’Anatole France, explication des trois voix, du vouvoiement, des repères temporels et des toponymes, schéma sur la déclaration de Dechartre."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "verification_themes_lyon_2026",
+      "agent": "latin26_lyon",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Comparaison du récit initial, des sept paragraphes et de la déclaration finale avec la page 15 du livret. Révision de l’aveu de coquetterie, de l’effort pour attirer Dechartre et du lien causal qui motive la demande de rester amis."
     }
   ],
   "droits_sources": {
@@ -45,5 +77,25 @@
       "Anatole France, Le Lys rouge, 1894."
     ],
     "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires. La licence du corrigé ne vaut pas autorisation de leur part."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Thème intégral en italien"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "precision": "Les 7 paragraphes de la page 15 du fascicule LC 663 ont été comparés, dans leur ordre, à la traduction complète de chacune des deux éditions.",
+    "reperes_par_paragraphe": [
+      "La rencontre au bord de l’Arno, la lumière et la première prise de parole.",
+      "La venue expliquée et la responsabilité reconnue.",
+      "La réaction de Dechartre et la reprise de la parole par la femme.",
+      "La confession de coquetterie.",
+      "Le mouvement de tête et la dénégation de Dechartre.",
+      "L’insistance, la demande de pardon et l’amitié proposée.",
+      "La déclaration rapportée, l’évocation de Fiesole et l’aveu involontaire jusqu’à la coupure imprimée."
+    ]
   }
 }

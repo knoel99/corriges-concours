@@ -4,9 +4,10 @@
     "concours": "BEL",
     "filiere": "BL",
     "matiere": "Philosophie",
-    "annee": 2026
+    "annee": 2026,
+    "modalite": "écrit"
   },
-  "questions": 0,
+  "questions": 1,
   "gabarit": "dissertation",
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
   "modele": {
@@ -17,26 +18,68 @@
     "sujet": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_tronc_commun_philosophie_v2.pdf#page=1",
     "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_tronc_commun_philosophie_v2.pdf",
     "sujet_sha256": "027fc4da8d498a85ea3bbcc09421b2a43e0a53ca124102e7725efc341f572763",
-    "rapport_sha256": "027fc4da8d498a85ea3bbcc09421b2a43e0a53ca124102e7725efc341f572763"
+    "rapport_sha256": "027fc4da8d498a85ea3bbcc09421b2a43e0a53ca124102e7725efc341f572763",
+    "rapport_jury_sha256": "027fc4da8d498a85ea3bbcc09421b2a43e0a53ca124102e7725efc341f572763",
+    "rubriques_lues": [
+      {
+        "rubrique": "Analyse de la forme de l’intitulé et méthode",
+        "pages": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "rubrique": "Critères d’appréciation des copies",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      {
+        "rubrique": "Traitement du sujet",
+        "pages": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "rubrique": "Analyse comparative de deux copies remarquées",
+        "pages": [
+          9,
+          10,
+          11
+        ]
+      }
+    ],
+    "lien_feuillet_reference": "https://www.ens.psl.eu/sites/default/files/bl_philo_261111.pdf",
+    "disponibilite_feuillet": "Lien de l’annale ENS Paris-PSL vérifié le 26 novembre 2026, réponse HTTP 404. Le rapport porte la question intégrale."
   },
   "figures": [
     {
       "fichier": "figures/trois-issues.svg",
-      "question": "Partie I",
-      "legende": "Que devient mon assentiment ?"
+      "question": "Peut-on cesser de croire ?",
+      "legende": "Que devient mon assentiment ?",
+      "numero": 1
     },
     {
       "fichier": "figures/plan-cessation.svg",
-      "question": "Plan",
-      "legende": "Parcours de la dissertation"
+      "question": "Peut-on cesser de croire ?",
+      "legende": "Parcours de la dissertation",
+      "numero": 2
     },
     {
       "fichier": "figures/deux-temps-du-doute.svg",
-      "question": "Partie II",
-      "legende": "Ce qu’une mise à l’épreuve peut interrompre"
+      "question": "Peut-on cesser de croire ?",
+      "legende": "Ce qu’une mise à l’épreuve peut interrompre",
+      "numero": 3
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "revision": {
     "date": "2026-11-24",
     "modele": "Codex (GPT-6)",
@@ -104,6 +147,121 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Contrôle des deux éditions et des renvois philosophiques. Correction du contre-exemple téléphonique et distinction entre absence de preuve décisive, suspension et croyance contraire."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Cesser de croire, distinction entre démenti et suspension à information incomplète."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "session": "bel_bl_philosophie_ecrits_2025_2026",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Reprise de l’argument de l’indice devenu caduc, Othello et la croyance fictive, maintien de l’assentiment dans le savoir, évolution d’une croyance publique. Nouvelle lecture des critères et des deux copies discutées par le jury, annonce du plan et contrôle des conditions de suspension, des schémas et des sources."
     }
-  ]
+  ],
+  "duree_heures": 6,
+  "coefficient_ens_psl": 3,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_tronc_commun_philosophie_v2.pdf#page=1",
+      "sha256": "027fc4da8d498a85ea3bbcc09421b2a43e0a53ca124102e7725efc341f572763",
+      "nature": "Intitulé intégral imprimé par le jury en page 1 de son rapport",
+      "nombre_pages": 11,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "c482ad650a43fb2e0d3da5686a589661fa397c6aa112de92d03c3a85dafe625d"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_tronc_commun_philosophie_v2.pdf",
+      "sha256": "027fc4da8d498a85ea3bbcc09421b2a43e0a53ca124102e7725efc341f572763",
+      "nature": "Rapport officiel de la composition écrite commune B/L",
+      "nombre_pages": 11,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "c482ad650a43fb2e0d3da5686a589661fa397c6aa112de92d03c3a85dafe625d"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "85250b79ed3a18d39048fb352d8164d9ab9e022750c08b8d21de24c9a24f7dfc"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "72ae64a7aa6f0128f5f69b9639100d13e6804b97d35a2df39379d0037ed07480"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "16969225d5d54ce4d78e4e5774e3f33ac7f2a4a95b0b4a8370aa95ae4b958058"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "fe2fb790cacde873dd976b14975b9133ab060d0f41a41437b7608fee63fa9a11"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "8a3258034130bdcd70e2f0456e1175ccb7666ce67879ff5e83259603d47c58a0"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "8fbeb32ab793c55ea98df9b3b2b3a23892373f0deb274e7433be18c10efe4ef6"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "0f062cab4632e87d824719f7ae7d5f2d755c5f8f7c9508289a9f761d3a81c9d7"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "57f78546f321ef5ba9bb37e47d99ceb51f5ea15cf310d16e2c322d28a26348ea"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "4a3a2ac6c2b72ab7b23d3ed0bec853431e4026ebe2db5598f03ba4d15e84a3ab"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "d63b59cbf5ee17a952e340f20d1dcad6dd9b1c1678ebce57bf58258d298d93e3"
+        }
+      ]
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Peut-on cesser de croire ?"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "Peut-on cesser de croire ?",
+        "page_pdf": 1,
+        "piece": "sujet",
+        "nature": "Intitulé intégral imprimé par le jury en page 1 de son rapport",
+        "traitement": "Dissertation intégrale, introduction, trois moments argumentés, conclusion ; guide de méthode avec critères et exemples."
+      }
+    ]
+  }
 }

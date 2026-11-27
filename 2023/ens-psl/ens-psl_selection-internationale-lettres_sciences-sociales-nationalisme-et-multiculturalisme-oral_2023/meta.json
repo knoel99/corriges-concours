@@ -1,0 +1,55 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_sciences-sociales-nationalisme-et-multiculturalisme-oral_2023",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Sciences sociales — nationalisme et multiculturalisme (oral)",
+    "annee": 2023,
+    "modalite": "oral"
+  },
+  "intitule": "Sciences sociales — nationalisme et multiculturalisme (oral)",
+  "gabarit": "commentaire",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://web.archive.org/web/20251023072910id_/https://www.ens.psl.eu/sites/default/files/oral-2.pdf",
+    "sujet_sha256": "4912296a5a6ddd8dbd93b77b7a9d466007dede0730388d408482c3d310f4563c",
+    "document_officiel": "https://www.ens.psl.eu/sites/default/files/oral-2.pdf",
+    "index": "https://www.ens.psl.eu/une-formation-d-exception/admission-concours/international/concours-selection-internationale-0",
+    "pages_sujet": 2,
+    "reference": "Daniel Sabbagh, « Nationalisme et multiculturalisme », Critique internationale, n° 23, 2004, p. 113–124. L’extrait distribué reprend une partie de l’analyse française, sur deux pages."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/regle-territoriale-et-public-atteint.svg",
+      "question": "Commentaire oral",
+      "legende": "Dans l’exemple français des ZEP analysé par Sabbagh, il faut distinguer les catégories du discours, le critère public d’attribution et les effets à mesurer. La comparaison avec les Pays-Bas doit soumettre chacun de ces niveaux à l’enquête."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "gestion_2022_2023",
+      "agent": "gestion_2022_2023",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire de l’extrait, distinction entre normes, catégories statistiques, ciblage et bénéficiaires, proposition comparative France–Pays-Bas et relances d’oral ; figure originale et deux éditions."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire oral"
+    ],
+    "limites": "Le protocole comparatif est une proposition adaptée à la consigne. Ni corpus personnel ni résultats néerlandais ne sont attribués au candidat ou à Sabbagh."
+  }
+}

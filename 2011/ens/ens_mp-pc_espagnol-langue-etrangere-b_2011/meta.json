@@ -1,0 +1,56 @@
+{
+  "slug": "ens_mp-pc_espagnol-langue-etrangere-b_2011",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Espagnol (langue étrangère B)",
+    "annee": 2011,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "intitule": "Lecture numérique et goût de lire",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2011/2011%20Langue%20E-B.pdf#page=6",
+    "sujet_sha256": "5890947752edcbb46be37dc05ed0a9e872c93ca0f7859b7d07cba7b9ffd7be6b",
+    "page_pdf": 6,
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2011",
+    "code_garde": "UC"
+  },
+  "redaction": "Version de l’article sur les usages numériques et réponse personnelle sur le rôle de l’école, avec explication des réserves des intervenants.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "fichier": "figures/mesures-de-la-lecture.svg",
+      "legende": "Trois observations éclairent des aspects différents de la lecture."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "espagnol_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version de l’article sur les usages numériques et réponse personnelle sur le rôle de l’école, avec explication des réserves des intervenants.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2"
+    ]
+  },
+  "bareme": {
+    "version": 15,
+    "question": 5
+  }
+}

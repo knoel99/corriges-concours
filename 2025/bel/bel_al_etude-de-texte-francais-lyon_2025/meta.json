@@ -1,0 +1,160 @@
+{
+  "slug": "bel_al_etude-de-texte-francais-lyon_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Étude de texte français (Lyon)",
+    "annee": 2025,
+    "modalite": "écrit de spécialité"
+  },
+  "intitule": "Marcel Aymé, La Jument verte",
+  "gabarit": "commentaire",
+  "questions": 1,
+  "duree_heures": 5,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2025-09/251113.pdf#page=6",
+    "sujet_sha256": "b7d09bb818f637ec169e3e81e4912858b211e06941981935364478be20cd6766",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2025-11/Lettres%20Modernes%202025%20relu%20IM.pdf#page=2",
+    "rapport_jury_sha256": "0527fa1caae00a1b431869be96ee997dd890d205a1cba9546ab9313541e1ffa9",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2025",
+    "ouvrage": "Marcel Aymé, *La Jument verte* (1933).",
+    "pages_rapport_verifiees": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2025-09/251113.pdf#page=6",
+      "sha256": "b7d09bb818f637ec169e3e81e4912858b211e06941981935364478be20cd6766",
+      "pages": 20,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "8ec0333bc615d21e75fd6bd8739b8ac1ac8f7527ec5d1bc38afbba95f28f63b7"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "bca0a30ca491954ed44168cb09e4ef159ff5cc21f2fdb1329317a5a5e79e9894"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "0e8105e11e0abfe93ff87e398a572b0ccd1bebd3f566822f27e99e883f66e708"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2025-11/Lettres%20Modernes%202025%20relu%20IM.pdf#page=2",
+      "sha256": "0527fa1caae00a1b431869be96ee997dd890d205a1cba9546ab9313541e1ffa9",
+      "pages": 11,
+      "pages_verifiees": [
+        {
+          "numero": 2,
+          "rendu_sha256": "9df7b5a548e91dbaec7a924f2a3d4e3f0f81c03102fd4366cb3a9e1d2a1bdea9"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "ff79429ba2d3bc59c8241a58a567158761a3cdd090553041fb097c096f9ad61f"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "6924e7494662c7a5db00a693869ef26ed5a0d236005e2f31f7178a4601864874"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "2d4a114b7229087405786600a186e6d3ad6d6bc0e7b6802867e88026fbd42ddf"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "2081fccdde936e414fc1cebd9dfc8eaca7a83169e802cff785d83d0fd4bcbdb7"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "24fcb26ba43ab4291ef048c4e858901633961d04548435e123005b26bd5f37f5"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "9dd20a6500186151d2f0f31b1bed47d308474e2e7a22d8ce34af6059339fb40a"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "Commentaire",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "La nouvelle passe de la place au marché électoral puis à la Cour. Les derniers jugements portent sur un animal que seuls certains interlocuteurs sont allés voir."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire stylistique original de la totalité du texte, guide et schéma de lecture."
+    },
+    {
+      "phase": "revision",
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Collation des 54 lignes, du sens de circulation de la nouvelle, des changements de durée, des lieux de parole et du rapprochement sonore final."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Marcel Aymé, *La Jument verte* (1933)."
+    ],
+    "note": "Commentaire et schéma originaux, accompagnés de citations brèves de l’extrait."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Commentaire",
+        "page_pdf": 6,
+        "pages_pdf": [
+          6,
+          7
+        ],
+        "ligne_debut": 1,
+        "ligne_fin": 54
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

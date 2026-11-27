@@ -1,0 +1,80 @@
+{
+  "slug": "ens-psl_medecine-humanites_les-deserts-medicaux_2023",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Médecine-Humanités",
+    "matiere": "Les déserts médicaux",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "intitule": "Les déserts médicaux",
+  "questions": 1,
+  "redaction": "Commentaire rédigé en lecture croisée sur « Les déserts médicaux », guide d’analyse de chaque document, composition développée et schéma.",
+  "sources": {
+    "sujet": "https://medecine-humanites.ens.fr/wp-content/uploads/2023/06/Sujet-2-deserts-med-MH2023.pdf",
+    "index": "https://medecine-humanites.ens.psl.eu/sujets-et-rapports-du-concours-2018/",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://medecine-humanites.ens.fr/wp-content/uploads/2023/06/Sujet-2-deserts-med-MH2023.pdf",
+        "fac_simile": "https://web.archive.org/web/20250504030926id_/https://medecine-humanites.ens.fr/wp-content/uploads/2023/06/Sujet-2-deserts-med-MH2023.pdf",
+        "sha256": "9c03587492bf30c15ad9adaa59f0e888dc14ce6bbae62c1187ec60c90d34d9c1",
+        "nature": "PDF",
+        "pages": 3
+      },
+      {
+        "role": "rapport",
+        "url": "https://medecine-humanites.ens.fr/wp-content/uploads/2023/06/Rapport-Jury-MH2023.pdf",
+        "fac_simile": "https://web.archive.org/web/20240331041515id_/https://medecine-humanites.ens.fr/wp-content/uploads/2023/06/Rapport-Jury-MH2023.pdf",
+        "sha256": "cccfe2298f3250d5f92e4c57b84978399791a81daba27076a52aad6c569a24cc",
+        "nature": "PDF",
+        "pages": 5
+      }
+    ]
+  },
+  "documents_commentes": [
+    "Jean-Paul Briand, tribune parue dans *Magcentre* en décembre 2017. Le médecin défend la liberté d’installation et lie l’offre de soins à l’attractivité du territoire.",
+    "Noémie Vergier et Hélène Chaput, DREES, mai 2017. Identifier les obstacles, choisir un seuil et comparer des situations constituent trois opérations distinctes.",
+    "Jules Léonard, *Le Médecin des pauvres*, 1857. Le cadrage horizontal réunit une consultation et de nombreuses personnes qui attendent dans la même pièce."
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Commentaire",
+      "fichier": "figures/lecture-croisee.svg",
+      "legende": "Ce qu’il faut savoir pour parler d’un accès aux soins"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "arabe_mp_pc_2011_2014",
+      "session": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Commentaire rédigé en lecture croisée sur « Les déserts médicaux », guide d’analyse de chaque document, composition développée et schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "agent": "reprise_medecine_humanites",
+      "session": "reprise_medecine_humanites",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Relecture des trois pièces et du rapport commun de 2023. Correction de l’attribution à Briand et distinction entre ses exemples et les hypothèses sur les transports. Repérage des pages dans le guidé et contrôle des deux éditions."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire de documents"
+    ]
+  }
+}

@@ -17,7 +17,14 @@
     {
       "fichier": "figures/deux-politiques.svg",
       "question": "5.b",
-      "legende": "Dans les deux arbres, le fils vrai est à gauche (trait plein) et le fils faux à droite (pointillés). Les feuilles 1 sont colorées."
+      "legende": "Dans les deux arbres, le fils vrai est à gauche (trait plein) et le fils faux à droite (pointillés). Les feuilles 1 sont colorées.",
+      "numero": 1
+    },
+    {
+      "fichier": "figures/politique-deja-vu.svg",
+      "question": "5.c",
+      "legende": "Arbre de la politique avec admission immédiate des jouets déjà vus. Un jouet nouveau suit les cinq tests de la politique initiale.",
+      "numero": 2
     }
   ],
   "contributions": [
@@ -31,6 +38,159 @@
       "perimetre": "Rédaction des deux éditions à partir des six pages de la composition de trois heures. Tables et implications, traduction des cinq règles, arbres réduits des variantes, décomposition par restrictions, programmes en OCaml et preuve de leur correction et de leur terminaison, lignes imprimées et nombre de profils. Schéma de deux arbres complets dans l’ordre du sujet.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Révision des deux éditions et des démonstrations, rédaction de la variante Pascal, contrôle des figures et confrontation des programmes extraits des deux fichiers à des oracles indépendants en Pascal et en OCaml. Les réponses communes (1–10) et toutes les consignes de programmation ont été rapprochées des six pages. Les deux variantes utilisent leur représentation propre.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_un",
+      "controles": {
+        "Free Pascal": "3.2.2, compilation ObjFPC avec vérification des intervalles et des débordements, exécution des deux éditions.",
+        "OCaml": "5.3.0, exécution des blocs extraits des deux éditions.",
+        "resultats": [
+          {
+            "annee": 1999,
+            "edition": "brut",
+            "langage": "pascal",
+            "SHA256_programme": "fc397aefc7bf78ff571368616526ea50a36ca430f2b84478916fa436dbb2e2f9",
+            "tests": {
+              "triplets_de_fonctions_binaires": 4096,
+              "valuations_par_triplet": 4,
+              "fonctions_ternaires": 256,
+              "restrictions_par_fonction": 8,
+              "profils_des_politiques": 32,
+              "lignes_affiches": [
+                1,
+                0,
+                4,
+                1
+              ]
+            }
+          },
+          {
+            "annee": 1999,
+            "edition": "brut",
+            "langage": "ocaml",
+            "SHA256_programme": "c62f9bcb4127950b9e28f04b1737a909f83dc17ef7fa48c340116cecdb03721b",
+            "tests": {
+              "triplets_de_fonctions_binaires": 4096,
+              "valuations_par_triplet": 4,
+              "fonctions_ternaires": 256,
+              "restrictions_par_fonction": 8,
+              "profils_des_politiques": 32,
+              "lignes_affiches": [
+                1,
+                0,
+                4,
+                1
+              ]
+            }
+          },
+          {
+            "annee": 1999,
+            "edition": "guide",
+            "langage": "pascal",
+            "SHA256_programme": "fc397aefc7bf78ff571368616526ea50a36ca430f2b84478916fa436dbb2e2f9",
+            "tests": {
+              "triplets_de_fonctions_binaires": 4096,
+              "valuations_par_triplet": 4,
+              "fonctions_ternaires": 256,
+              "restrictions_par_fonction": 8,
+              "profils_des_politiques": 32,
+              "lignes_affiches": [
+                1,
+                0,
+                4,
+                1
+              ]
+            }
+          },
+          {
+            "annee": 1999,
+            "edition": "guide",
+            "langage": "ocaml",
+            "SHA256_programme": "c62f9bcb4127950b9e28f04b1737a909f83dc17ef7fa48c340116cecdb03721b",
+            "tests": {
+              "triplets_de_fonctions_binaires": 4096,
+              "valuations_par_triplet": 4,
+              "fonctions_ternaires": 256,
+              "restrictions_par_fonction": 8,
+              "profils_des_politiques": 32,
+              "lignes_affiches": [
+                1,
+                0,
+                4,
+                1
+              ]
+            }
+          }
+        ],
+        "figures": "Figures vérifiées sur les sources et dans les deux PDF."
+      }
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "precision": "Les réponses communes (1–10) et toutes les consignes de programmation ont été rapprochées des six pages. Les deux variantes utilisent leur représentation propre.",
+    "sujet_controle": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-e76368775eb14f5d4e71",
+    "sha256_sujet_controle": "19d92541ff70e1b7d2a1318adcf61f0ea36992ffbd547f9b1b1f2e4ca2581458",
+    "questions_entierement_traitees": [
+      "1",
+      "2.a",
+      "2.b",
+      "3.a",
+      "3.b",
+      "4.a",
+      "4.b",
+      "4.c",
+      "5.a",
+      "5.b",
+      "5.c",
+      "6.a",
+      "6.b",
+      "7.a",
+      "7.b",
+      "8.a",
+      "8.b",
+      "8.c",
+      "8.d",
+      "9",
+      "10.a",
+      "10.b"
+    ],
+    "variantes": [
+      "Caml (OCaml)",
+      "Pascal"
+    ],
+    "pages_par_question": {
+      "1": 1,
+      "2.a": 2,
+      "2.b": 2,
+      "3.a": 2,
+      "3.b": 2,
+      "4.a": 3,
+      "4.b": 3,
+      "4.c": 3,
+      "5.a": 4,
+      "5.b": 4,
+      "5.c": 4,
+      "6.a": 4,
+      "6.b": 4,
+      "7.a": 5,
+      "7.b": 5,
+      "8.a": 5,
+      "8.b": 5,
+      "8.c": "5–6",
+      "8.d": 6,
+      "9": 6,
+      "10.a": 6,
+      "10.b": 6
+    }
+  },
+  "date_revision": "2026-11-26"
 }

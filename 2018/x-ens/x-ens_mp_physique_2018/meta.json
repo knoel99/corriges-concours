@@ -1,0 +1,102 @@
+{
+  "slug": "x-ens_mp_physique_2018",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Physique",
+    "annee": 2018
+  },
+  "questions": 41,
+  "intitule": "Étude du dispositif de propulsion du lanceur Ariane 5",
+  "redaction": "Corrigé partiel. Résolution des questions 2, 5, 8, 13 et 26 sur les 41 du sujet. Les deux éditions portent sur la cinétique de translation, la célérité acoustique, la continuité en régime stationnaire, la différentielle d’un rapport de vitesses et l’enthalpie totale. Schéma isentrope-isotherme original.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/18_mp_suj_phy.pdf",
+    "sujet_sha256": "e468305c5ee52d69406498981fea302ba7abb776935308cffbe8f8ed2b99e20b",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/18_mp_rap_ephy.pdf",
+    "rapport_sha256": "3f59dde1de93f2eea71621884df1b152b3e34383da1f50b013f8f4bddb838f2c"
+  },
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "physique_mp_suite",
+      "session": "physique_mp_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du cahier officiel XULCR de sept pages et du rapport officiel de trois pages. Reprise des observations du jury sur l’équipartition, la variable constante dans la célérité, le bilan massique et la grandeur conservée en écoulement adiabatique."
+    },
+    {
+      "phase": "redaction",
+      "agent": "physique_mp_suite",
+      "session": "physique_mp_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Corrigé partiel. Résolution des questions 2, 5, 8, 13 et 26 sur les 41 du sujet. Les deux éditions portent sur la cinétique de translation, la célérité acoustique, la continuité en régime stationnaire, la différentielle d’un rapport de vitesses et l’enthalpie totale. Schéma isentrope-isotherme original."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "5",
+      "fichier": "figures/compression-acoustique.svg",
+      "legende": "Autour du même état de référence, la pression augmente davantage lors d’une compression isentropique. La pente locale détermine le carré de la célérité du son."
+    }
+  ],
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "2",
+      "5",
+      "8",
+      "13",
+      "26"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [
+      "1",
+      "3",
+      "4",
+      "6",
+      "7",
+      "9",
+      "10",
+      "11",
+      "12",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "precision": "Cinq questions de physique générale sont traitées sur les 41 du sujet. Les questions 1, 3–4, 6–7, 9–12, 14–25 et 27–41 restent hors de cette édition."
+  }
+}

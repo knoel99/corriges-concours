@@ -1,0 +1,112 @@
+{
+  "slug": "banque-pt_pt_francais-b_2016",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français B",
+    "annee": 2016
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2016/fr_b_2016_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2016/rapport_fra_b_ecrit_2016.pdf",
+    "programme_officiel": "https://www.education.gouv.fr/bo/15/Hebdo23/MENS1501166A.htm",
+    "notice": "https://www.banquept.fr/documents/livret/2016/Livret_PT_2016.pdf#page=12",
+    "sujet_sha256": "42352186226d49f33f18f3ec0582d2e77b424d585d2d8f0923bfb77cd5959755",
+    "rapport_jury_sha256": "8ab1b6265c693b852ce8e32ff3fff94586ca62cc48c10d2198e799833461a742",
+    "programme_officiel_sha256": "c140879ba38df6b167411b3dcc4febaedb90af708b5c8e2ffc7edbf18febfabc",
+    "notice_sha256": "2d38e7c0962f3db4e1bbe63bb8d19e7f666c04250d51a8f0716679c39f2f5cde",
+    "oeuvres_au_programme": [
+      "Honoré de Balzac, La Cousine Bette",
+      "Jean Racine, Andromaque",
+      "David Hume, Dissertation sur les passions (traduction de Jean-Pierre Cléro)"
+    ],
+    "theme": "Le monde des passions",
+    "admissibilite_admission": "ENS Cachan et ENS Rennes, écrit d’admission, coefficient 4.",
+    "pages_rapport": "Pages PDF 2 à 5, pagination imprimée 40 à 43, sur les mouvements du texte et la dimension sociale de la dissertation."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "Que recouvre le mot amour ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Résumé original de 190 mots de l’extrait de Staël et dissertation sur l’exclusivité attribuée à l’amour. Étude du mariage dans Andromaque et La Cousine Bette et des passions indirectes chez Hume."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Retour à la concession de la page 4, au tableau du rang et de la réputation chez Racine et Balzac, et au statut de l’objet dans la distinction humienne des passions. Contrôle du décompte et des deux éditions.",
+      "tour": 1
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Résumé",
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Résumé",
+        "page_pdf": 2,
+        "page_pdf_fin": 4,
+        "page_consigne": 4,
+        "perimetre": "Le passage occupe les pages 2 à 4 du sujet, de « La nature et la société » à « qui devait et croître et dominer ». La notice biographique et les questions suivent l’extrait.",
+        "mots_demandes": 190,
+        "mots_admis": [
+          171,
+          209
+        ],
+        "mots_par_paragraphe": [
+          46,
+          76,
+          68
+        ],
+        "mots_rediges": 190,
+        "points": 8
+      },
+      {
+        "question": "Dissertation",
+        "page_pdf": 4,
+        "perimetre": "« L'amour est la seule passion des femmes ». La thèse de cette intellectuelle du XVIIIe siècle est–elle illustrée dans les œuvres au programme de Racine, Hume et Balzac ?",
+        "points": 12
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

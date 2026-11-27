@@ -1,0 +1,97 @@
+{
+  "slug": "bel_al_espagnol-commentaire-et-traduction_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Espagnol (commentaire et traduction)",
+    "annee": 2025,
+    "modalite": "écrit"
+  },
+  "duree_heures": 6,
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2025-07/Commentaire%20et%20traduction.pdf#page=10",
+    "sujet_sha256": "ea1e2d243c18761ad6c43ed4f301fdebb92b05def7502a7357659f787a15ae35",
+    "pages_pdf_sujet": [
+      10,
+      11
+    ],
+    "pages_fascicule": 24,
+    "lignes_version": [
+      51,
+      69
+    ],
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2025-11/Espagnol%202025%20OK%20Lyon%20RELU.pdf#page=2",
+    "sha256_rapport_jury": "94f783907268553b2518bda4795913e33a7e49baa49411d77d33bef13a57109f",
+    "pages_rapport_verifiees": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "ouvrage": "Isabel Allende, Hija de la fortuna (1998)",
+    "etablissements_figurant_sur_la_garde": "ENS de Lyon / ENS (Paris)",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2025"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/usages-des-livres.svg",
+      "question": "Commentaire",
+      "legende": "Comment les livres circulent-ils dans la maison ?"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire intégral en espagnol",
+      "Version en français des lignes 51–69"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ]
+  },
+  "contributions": [
+    {
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "phase": "redaction",
+      "perimetre": "Commentaire composé en espagnol, version française du passage désigné, préparation et schéma de lecture."
+    },
+    {
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "perimetre": "Clarification du sujet des objections au mariage, des référents de él et de la condition exprimée par casada. Commentaire revu pour préciser la distance du narrateur à Rose et la place d’Eliza dans le dialogue final."
+    }
+  ]
+}

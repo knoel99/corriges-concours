@@ -2,9 +2,13 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
-Ces deux exercices portent sur « Le surréalisme, cent ans après son premier manifeste ». Le jury prévoit deux heures de préparation. Chaque exposé de vingt minutes est suivi de dix minutes d’entretien.
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+Ces deux exercices portent sur « Le surréalisme, cent ans après son premier manifeste ». Après tirage au sort d’un thème, les deux exercices se préparent ensemble pendant deux heures. Chaque exposé de vingt minutes est suivi de dix minutes d’entretien.
+
+Le fascicule nomme les cinq œuvres sans reproduire les images. Pour les documents 3 et 4, l’identification de la feuille de Chicago et du photogramme projeté demeure ouverte. L’analyse de ces deux documents est partielle. Le second exposé se lit dans son intégralité.
 
 ## Sujet 1 · L’inconscient
 
@@ -26,6 +30,8 @@ Sur la feuille verticale d’André Masson, *Dessin automatique* (1925–1926), 
 
 Le *Cadavre exquis* de 1928 déplace l’expérience de la main à la table collective. Le fascicule le donne à Man Ray, André Breton, Yves Tanguy et Max Morise, crayon et encre sur papier. Le principe du jeu consiste à cacher une partie du travail déjà accompli, tout en laissant de quoi raccorder le segment suivant. Chaque participant peut dessiner intentionnellement ce qu’il ajoute. En revanche, personne ne connaît d’avance l’ensemble qui apparaîtra au dépliage. Cette dissociation est importante : le hasard porte sur la rencontre des contributions et la surprise finale, pas sur chaque mouvement de crayon. Là où Masson suspendait le projet d’une main, le pli distribue l’ignorance entre plusieurs personnes. Le spectateur de l’œuvre achevée en sait ainsi davantage sur le tout que chacun des dessinateurs pendant le jeu. Les différents cadavres exquis conservés ne sont pas interchangeables ; les noms et la localisation donnés ici sont ceux du sujet.
 
+La feuille conservée à Melbourne aide à poser une question d’identification avant l’interprétation. La National Gallery of Victoria indique le même quatuor et la même date, mais mesure 30,5 × 20 cm alors que le feuillet du concours annonce 21 × 30 cm et Chicago. Décrire sa silhouette comme celle du document 3 déplacerait toute la preuve. Revenons au fait défendable à l’oral : cacher une partie de la feuille règle ce que saura le dessinateur suivant. Devant le document remis, c’est un raccord concret, continu ou décalé, qui permettrait d’en préciser l’effet. Pour le film également, l’arrêt sur image montre une organisation dans le cadre. Ce qui vient avant et après relève d’une deuxième opération, le montage. Ni une œuvre voisine ni un souvenir de projection ne fixe le détail du document distribué.
+
 ### Des images précises pour des rapports impossibles
 
 Dans *La Chambre à coucher du maître*, collage rehaussé de gouache et de crayon, Max Ernst transforme une image imprimée. Le plancher converge vers un fond, le lit et un meuble contre le mur établissent l’idée d’un intérieur en perspective. Mais des animaux pris à une autre logique d’illustration y prennent place : un grand mammifère occupe le fond, une forme de cétacé s’étire sur les lames du sol. Le trouble ne vient pas d’un dessin illisible. Chaque figure peut être localisée dans la feuille. C’est la règle de leur coexistence et de leur échelle qui cesse de fonctionner. Le titre promet qu’il vaut la peine d’y passer une nuit. Il nous demande presque d’habiter cet assemblage avant de songer à le traduire dans un dictionnaire des rêves. Le collage conserve la lisibilité des fragments et rend étrange l’espace censé les unir.
@@ -38,7 +44,7 @@ Le petit panneau peint par Dalí en 1931, *La Persistance de la mémoire*, relè
 
 Le cinéma peut donc faire éprouver une association à plusieurs personnes en même temps, par le contrôle très précis de la succession des images. Le résultat est tout différent du jeu collectif sur une feuille pliée : ici, les auteurs règlent l’enchaînement, tandis que le public subit son irruption. Ernst avait ménagé la rencontre de mondes incompatibles sur une surface fixe. Chez Buñuel et Dalí, elle se produit au passage d’une image à la suivante. Le titre ne donne aucune clef qui épuiserait cette rencontre.
 
-![Figure 1 — Quatre opérations observables produisent des images énigmatiques. Elles distribuent différemment l’initiative entre geste, règle, montage et illusion.](figures/operations-inconscient.svg)
+![Quatre opérations observables produisent des images énigmatiques. Elles distribuent différemment l’initiative entre geste, règle, montage et illusion.](figures/operations-inconscient.svg)
 
 Ce corpus permet enfin une précaution. Si l’on déclarait que tel animal signifie ceci ou que la montre prouve tel diagnostic, on substituerait une autorité extérieure au travail concret des formes. Les œuvres inventent des occasions de percevoir une autre logique : la ligne peut précéder son objet, le tout peut échapper à ses auteurs, le détail minutieux peut rendre un monde plus incertain et le raccord peut nous atteindre avant que nous en ayons formulé le sens. L’inconscient est ici une question posée au faire et au voir.
 
@@ -58,22 +64,26 @@ Cet exemple permet de définir l’objet surréaliste à partir d’une expérie
 
 La scénographie est l’organisation de l’espace, de la lumière et des déplacements. Ici elle commence à fabriquer son propre sens au lieu de simplement soutenir des tableaux. Le public doit lever les yeux, avancer et chercher. Il ne s’agit pas pour autant d’une totale liberté. Les artistes ont préparé la situation, et le visiteur d’un soir ne voit pas nécessairement ce que verra le lecteur d’une photographie prise ensuite. Une vue d’installation peut rendre très nette la composition d’ensemble qui échappait justement au visiteur dans la pénombre. Documenter une exposition, c’est déjà la montrer autrement.
 
+À Paris en 1938, des objets suspendus déplacent le regard vers le plafond. À New York en 1942, les salles de *First Papers of Surrealism* sont parcourues de fils. Imaginez une photographie frontale de chacune. La première écrase la distance entre les objets et le sol. La seconde transforme le réseau de ficelles en lignes qui se superposent aux cadres des tableaux. Pour le visiteur, ces différences de profondeur règlent au contraire ce qu’il peut atteindre et à quelle distance il peut se tenir. Il existe donc au moins deux histoires d’une même exposition : celle de ses aménagements, que documentent les vues de salle, et celle des déplacements qu’ils permettaient. Pour la seconde, confronter plusieurs vues et les témoignages permet de tester ce qu’une photographie isolée laisserait seulement supposer.
+
 ### Faut-il bien voir pour faire l’expérience d’une exposition ?
 
 En 1942, à New York, *First Papers of Surrealism* a lieu dans un contexte de guerre et d’exil. Son titre évoque des documents de naturalisation. Marcel Duchamp tend de la ficelle à travers les salles. Le réseau reste assez ouvert pour laisser voir des images, mais une vue frontale et continue se heurte aux fils. Comparons-le à une corde de musée habituelle. Celle-ci indique à quelle distance il faut rester du tableau. Ici le fil lui-même fait événement et conduit à examiner l’espace entre l’image et son spectateur. Photographié, il peut presque devenir un dessin blanc posé sur les tableaux. Sur place, il oblige à prendre en compte son épaisseur, la profondeur de la salle et la présence d’autres corps. Les témoins et les vues d’installation ne permettent pas de réduire l’expérience à un parcours obligatoire identique pour chacun.
 
 La même année, dans la galerie new-yorkaise *Art of This Century* de Peggy Guggenheim, Frederick Kiesler propose d’autres manières de dégager les œuvres du mur, sur des supports saillants dans l’espace. Même ville, même moment, effet différent : la ficelle de Duchamp oblige à négocier une obstruction, les supports de Kiesler réorganisent la distance entre toile et paroi. Ce rapprochement aide à donner au mot « montrer » un sens précis. Pendre une peinture autrement peut déjà changer l’expérience d’une surface apparemment inchangée.
 
-![Figure 2 — Schémas de principe de trois dispositifs. La relation entre le corps du visiteur et l’œuvre change avec le meuble, le plafond puis les fils.](figures/trois-expositions.svg)
+![Schémas de principe de trois dispositifs. La relation entre le corps du visiteur et l’œuvre change avec le meuble, le plafond puis les fils.](figures/trois-expositions.svg)
 
 Ces trois visites déplacent l’attention de la vitrine au plafond, puis à l’air traversé par des fils. On peut les prolonger par la revue, transportable hors de toute galerie : sa mise en page rapproche deux images devant un lecteur isolé. Une œuvre ne cesse pas d’avoir une matière ou un auteur lorsqu’elle est exposée. Mais le voisinage, la lumière, le support et la manière dont on y accède deviennent à leur tour des choix artistiques. Les surréalistes font de la visite elle-même un lieu où l’on peut perdre puis reconstruire ses habitudes de regard.
 
 ## Documents et reproductions
 
-Les cinq légendes et les deux consignes sont réunies dans le fascicule officiel. Les attendus de l’oral se trouvent aux pages 5 et 6 du rapport. [Sujet de l’ENS de Lyon](https://www.ens-lyon.fr/sites/default/files/2026-11/Arts%202026.pdf#page=14) · [Rapport du jury](https://www.ens-lyon.fr/sites/default/files/2026-10/Arts%20-%20Histoire%20des%20arts%202026.pdf#page=5)
+Le fascicule officiel donne les cinq légendes et les deux consignes aux pages 14 et 15. Les attendus de l’oral se trouvent aux pages 5 et 6 du rapport. [Sujet de l’ENS de Lyon](https://www.ens-lyon.fr/sites/default/files/2026-11/Arts%202026.pdf#page=14) · [Rapport du jury](https://www.ens-lyon.fr/sites/default/files/2026-10/Arts%20-%20Histoire%20des%20arts%202026.pdf#page=5)
 
 - Dessin et peinture. [Masson, Centre Pompidou](https://www.centrepompidou.fr/fr/ressources/oeuvre/czAzGRr) · [Dalí, MoMA](https://www.moma.org/collection/works/79018)
 
 - Le collage et le film. [Ernst, catalogue Guggenheim, p. 78 imprimée](https://www.guggenheim.org/wp-content/uploads/2016/08/guggenheim-pub-max-ernst-retrospective-1975.pdf#page=82) · [Buñuel et Dalí, Cinémathèque française](https://www.cinematheque.fr/film/47197.html)
 
 - Expositions. [1936 et 1938, dossier du Centre Pompidou](https://www.centrepompidou.fr/media/document/d6/95/d6958a01c5c2647e46e2b233a88f8ac8/normal.pdf) · [Peggy Guggenheim, archives du Guggenheim](https://www.guggenheim.org/finding-aids/collection/m0002) · [First Papers of Surrealism, Tate Papers](https://www.tate.org.uk/research/tate-papers/22/duchamp-childhood-work-and-play-the-vernissage-for-first-papers-of-surrealism-new-york-1942)
+
+[Exemplaire distinct de Melbourne, NGV](https://www.ngv.vic.gov.au/explore/collection/work/107841/) · [Archives de la galerie de Peggy Guggenheim](https://www.guggenheim.org/finding-aids/collection/m0002)

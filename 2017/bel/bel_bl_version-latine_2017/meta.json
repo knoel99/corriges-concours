@@ -17,7 +17,29 @@
   "sources": {
     "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/ecrits-communs-optionnels-ses-2017_1506587060551.pdf#page=4",
     "sujet_sha256": "bdc658b34f2b80b696b7a912173f1ab822dae1d52727d0732ab0305166620e41",
-    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/17_latin_opt_ecrit.pdf"
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/17_latin_opt_ecrit.pdf",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.ens-lyon.fr/sites/default/files/2017-11/ecrits-communs-optionnels-ses-2017_1506587060551.pdf#page=3",
+        "sha256": "bdc658b34f2b80b696b7a912173f1ab822dae1d52727d0732ab0305166620e41",
+        "pages": "3 et 4 du PDF (garde UH 756/1 et page 2 imprimée)"
+      },
+      {
+        "role": "rapport",
+        "url": "https://www.ens.psl.eu/sites/default/files/17_latin_opt_ecrit.pdf",
+        "sha256": "4e6db27fa9a9837919bf5365af9c321ccd760e02a36a13ac83eb5b95ad7b4ff2",
+        "pages": "1–4",
+        "precision": "Jean-Denis Berger et Laetitia Ciccolini. Repère initial « 3, 7, 29sqq. » ; commentaire en numérotation locale 1–22."
+      },
+      {
+        "role": "édition de repérage",
+        "url": "https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi0959/phi008/phi0959.phi008.perseus-lat2.xml",
+        "sha256": "fac018274ae76cd3d0528e10841d3ee600bb4f8c663007af66434d68be18669d",
+        "precision": "Ovide, Tristes, III, 7. Onze distiques sans numéros sur le feuillet, d’Ergo desidiae remoue, doctissima, causas à prospiciet domitum Martia Roma, legar. Les vers portent les numéros 31–52 dans le texte Wheeler diffusé par Perseus. Le sujet imprime ingeniique au vers local 14."
+      }
+    ],
+    "precision": "Ovide, Tristes, III, 7. Onze distiques sans numéros sur le feuillet, d’Ergo desidiae remoue, doctissima, causas à prospiciet domitum Martia Roma, legar. Les vers portent les numéros 31–52 dans le texte Wheeler diffusé par Perseus. Le sujet imprime ingeniique au vers local 14."
   },
   "figures": [
     {
@@ -26,7 +48,7 @@
       "legende": "Que peut-on prendre au poète ?"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -37,6 +59,31 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Version française des vingt-deux vers d'Ovide sur le fascicule scanné, avec lecture du rapport officiel, analyse des constructions et du dernier futur."
+    },
+    {
+      "phase": "revision",
+      "tour": 1,
+      "session": "fin_langues_x_interens/latin26_lyon",
+      "agent": "latin26_lyon",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Version entière des onze distiques, contrôlée contre les 22 vers du feuillet et ses trois notes, dans les deux éditions. Garde PDF p. 3, latin p. 4. Distinction des numérotations de Wheeler, du rapport et du fac-similé. Reprise d’antiqua fronte, d’immensis censibus, de la continuité entre ingenii et ingenio et des futurs finaux. Schéma vérifié sur le dernier distique."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version"
+    ],
+    "verification": "Version entière des onze distiques, contrôlée contre les 22 vers du feuillet et ses trois notes, dans les deux éditions. Garde PDF p. 3, latin p. 4. Distinction des numérotations de Wheeler, du rapport et du fac-similé. Reprise d’antiqua fronte, d’immensis censibus, de la continuité entre ingenii et ingenio et des futurs finaux. Schéma vérifié sur le dernier distique."
+  },
+  "intitule": "Conseils à une jeune poétesse"
 }

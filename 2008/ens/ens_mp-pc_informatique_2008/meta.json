@@ -1,0 +1,124 @@
+{
+  "slug": "ens_mp-pc_informatique_2008",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Informatique",
+    "annee": 2008,
+    "duree_heures": 4
+  },
+  "questions": 33,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-mp/session-2008/sujet-2008_mpi_sujet_informatique.pdf",
+    "index_banque": "https://banques-ecoles.fr/cms/filiere-mp/les-annales-et-rapports-des-jurys/",
+    "identification": "Session 2008, cahier 80.04M, quatre heures. MP groupe I pour Paris, Lyon et Cachan. PC groupe I pour Paris et Lyon.",
+    "sujet_sha256": "6b5d79ed2a50754dfa8f50b33c2b22913da9b895c89ee5a9adc9b1bcd04c6dde",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/rapport-de-jury-session-2008/rapport-2008-mp_ecrit_informatique.pdf",
+    "rapport_sha256": "43c3c03b556606cd6c42cdfe7aadf6394c111e86250fb6826c767ec565b71fc6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/triangle-du-chemin.svg",
+      "question": "1.3",
+      "legende": "Figure 1 — Dans le graphe complet, une corde joignant les extrémités d’un segment de trois arêtes du chemin engendre un cycle de longueur quatre."
+    },
+    {
+      "fichier": "figures/deux-triangles.svg",
+      "question": "2.4.1",
+      "legende": "Figure 2 — Le graphe de départ possède deux triangles de sommet commun 1. Les deux arêtes opposées au sommet 1 constituent le support."
+    },
+    {
+      "fichier": "figures/deux-feuillets.svg",
+      "question": "2.4.1",
+      "legende": "Figure 3 — Les étoiles de centres 1+ et 1− gardent leur signe. Les quatre liaisons entre les étoiles changent le signe et relèvent les deux arêtes du support."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Huit questions numérotées, 33 items détaillés, corrigés depuis le cahier 80.04M et le rapport du jury. Arbres couvrants, calcul en temps proportionnel à la sortie, supports, graphe signé, calcul matriciel récursif et preuve des complexités."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "physique_psi_interens",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture des deux éditions et des trois illustrations contre le fac-similé de la banque. 33 sous-questions contrôlées. Deux pseudo-programmes explicités dans le brut et renvoi au calcul de parité précisé dans le guide."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1.1.a",
+      "1.1.1.b",
+      "1.1.2",
+      "1.1.3",
+      "1.2.1",
+      "1.2.2",
+      "1.3.1",
+      "1.3.2.a",
+      "1.3.2.b",
+      "1.3.3.a",
+      "1.3.3.b",
+      "2.1.1.a",
+      "2.1.1.b",
+      "2.1.2",
+      "2.1.3",
+      "2.2.1",
+      "2.2.2",
+      "2.3.1.a",
+      "2.3.1.b",
+      "2.3.2.a",
+      "2.3.2.b",
+      "2.4.1",
+      "2.4.2.a",
+      "2.4.2.b",
+      "2.4.2.c",
+      "2.4.3.a",
+      "2.4.3.b",
+      "2.5.1.a",
+      "2.5.1.b",
+      "2.5.2.a",
+      "2.5.2.b",
+      "2.5.3.a",
+      "2.5.3.b"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "recoupement_facsimile": [
+      {
+        "pages_pdf": "3",
+        "questions": "1.1–1.3",
+        "controle": "Arbre donné par ses listes, deux valeurs de la longueur totale et construction des cycles fondamentaux."
+      },
+      {
+        "pages_pdf": "4–5",
+        "questions": "2.1–2.3",
+        "controle": "Base des cycles, argument d’échange, résolution par pivot et projection des supports."
+      },
+      {
+        "pages_pdf": "5–6",
+        "questions": "2.4",
+        "controle": "Les six arêtes du graphe et les douze du graphe signé, chaîne, parité, optimum et complexité."
+      },
+      {
+        "pages_pdf": "6–7",
+        "questions": "2.5",
+        "controle": "Produits par blocs, système triangulaire, mise à jour et coût de la récursion."
+      }
+    ]
+  }
+}

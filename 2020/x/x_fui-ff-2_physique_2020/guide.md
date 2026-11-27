@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Session de printemps 2020. Les trois exercices sont indépendants.
 
 ## Présentation du sujet
@@ -302,7 +304,7 @@ Cette relation utilise le champ local du modèle de cavité sphérique et une r�
 
 #### Solution
 
-Le petit paramètre est **$N\alpha_e/3\ll1$**. On obtient $\chi_e=N\alpha_e+(N\alpha_e)^2/3+\cdots\simeq N\alpha_e$. Dans cette limite, le champ créé par les dipôles voisins est faible devant le champ imposé. Les contributions des atomes s’additionnent au premier ordre, ce qui est cohérent avec l’approximation d’atomes faiblement couplés.
+La densité $N$ est exprimée en $\mathrm{m^{-3}}$. La comparaison imprimée $N\ll1$ prend un sens physique une fois multipliée par le volume de polarisabilité. Le petit paramètre est **$N\alpha_e/3\ll1$**. On obtient $\chi_e=N\alpha_e+(N\alpha_e)^2/3+\cdots\simeq N\alpha_e$. Dans cette limite, le champ créé par les dipôles voisins est faible devant le champ imposé. Les contributions des atomes s’additionnent au premier ordre, ce qui est cohérent avec l’approximation d’atomes faiblement couplés.
 
 ## Exercice 3 · Champ d’une charge en mouvement
 
@@ -322,7 +324,7 @@ Si la charge se trouve en $M(t_0)$ au départ et si l’observation en $P$ a lie
 
 #### Solution
 
-Si $\psi$ est l’angle entre la vitesse et la direction émission-observation, ce facteur vaut $1-(v/c)\cos\psi$. Il devient petit pour une charge relativiste et une direction proche de la tangente en avant. Pour $\gamma\gg1$ et $|\psi|\ll1$, il vaut environ $(\gamma^{-2}+\psi^2)/2$, ce qui explique la concentration angulaire du rayonnement autour du mouvement. L’accélération et sa direction comptent aussi. Une vitesse constante ne produit pas de champ rayonné en $1/R$. Pour une accélération parallèle au mouvement, la composante radiative s’annule sur l’axe exact.
+Le dénominateur angulaire du champ est $(1-\mathbf n\cdot\mathbf v/c)^3$. Si $\psi$ est l’angle entre la vitesse et la direction émission-observation, son facteur de base vaut $1-(v/c)\cos\psi$. Il devient petit pour une charge relativiste et une direction proche de la tangente en avant. En posant $\gamma=(1-v^2/c^2)^{-1/2}$, pour $\gamma\gg1$ et $|\psi|\ll1$, il vaut environ $(\gamma^{-2}+\psi^2)/2$, ce qui explique la concentration angulaire du rayonnement autour du mouvement. L’accélération et sa direction comptent aussi. Une vitesse constante ne produit pas de champ rayonné en $1/R$. Pour une accélération parallèle au mouvement, la composante radiative s’annule sur l’axe exact.
 
 ### 3 · Termes dominants à grande distance
 

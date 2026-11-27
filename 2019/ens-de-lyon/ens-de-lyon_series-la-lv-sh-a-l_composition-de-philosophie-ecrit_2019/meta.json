@@ -1,0 +1,69 @@
+{
+  "slug": "ens-de-lyon_series-la-lv-sh-a-l_composition-de-philosophie-ecrit_2019",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries LA/LV/SH (A/L)",
+    "matiere": "Composition de philosophie (écrit)",
+    "annee": 2019,
+    "modalite": "écrit"
+  },
+  "intitule": "Peut-il y avoir des expériences métaphysiques ?",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2019-10/2019%20composition%20de%20philosophie.pdf",
+    "sha256_sujet": "d7e6751bdd8159db200963670c2c1b7b63d5dc011a85e2f68207f0c35f89df4e",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2019-11/PHILO_TC_SP_2019_0.pdf#page=1",
+    "sha256_rapport_jury": "cab4efc88afa5ea88d5a17813f193f23f67d04654f1db05d288139f8d8146115",
+    "precision_controle": "Feuillet de composition commune de la BEL, LCU 972, J. 19 1064, six heures, une question sans annexe. Section correspondante du rapport, pages 1 à 10, jusqu’à la fin du rapport de tronc commun au début de la page 10.",
+    "reference_complementaire": "https://athena.unige.ch/athena/leibniz/leibniz-monadologie.html"
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Dissertation",
+      "legende": "Qu’autorise l’épreuve dans chacun des trois cas ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet et du rapport commun de 2019. Dissertation sur la différence entre observation, épreuve à la première personne et expérience de pensée. Édition guidée, objections et schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "oraux_lyon_et_anciens_corriges",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Confrontation de la dissertation et du guidé au feuillet et à la section commune du rapport. Restitution de la conclusion positive de Leibniz au § 17 de la Monadologie et de la prémisse que peut contester le défenseur d’une explication par le système entier."
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Peut-il y avoir des expériences métaphysiques ?"
+    ],
+    "detail": [
+      "L’adjectif « métaphysiques » et la portée du pluriel structurent le problème.",
+      "Comparaison du constat causal, du doute cartésien, de l’intuition de la durée et de l’épreuve conceptuelle du moulin. La conclusion discute pour chaque type d’expérience ce qui peut être éprouvé et partagé."
+    ]
+  }
+}

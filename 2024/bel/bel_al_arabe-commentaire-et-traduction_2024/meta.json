@@ -1,0 +1,137 @@
+{
+  "slug": "bel_al_arabe-commentaire-et-traduction_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Arabe (commentaire et traduction)",
+    "annee": 2024,
+    "modalite": "écrit commun"
+  },
+  "questions": 2,
+  "duree_heures": 6,
+  "redaction": "Corrigé original proposé par IA, non officiel.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2024-11/Commentaire%20d%27un%20texte%20en%20LVE%20et%20traduction.pdf#page=6",
+    "sujet_sha256": "80d15efa86786e91577675fd10623264c98f1e5e2424288248f1a684c15c9f6f",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2024-11/Arabe%202024%20OK.pdf#page=2",
+    "rapport_jury_sha256": "adaa8939239aa19942fb636ae14d1d4f45fb675b7692d4228e59bdb0c95bb70f",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2024",
+    "ouvrage": "Adonis, *al-Šiʿriyya al-ʿarabiyya* (1985), chapitre consacré à la modernité.",
+    "ecoles": "ENS de Lyon / ENS (Paris)"
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2024-11/Commentaire%20d%27un%20texte%20en%20LVE%20et%20traduction.pdf#page=6",
+      "sha256": "80d15efa86786e91577675fd10623264c98f1e5e2424288248f1a684c15c9f6f",
+      "pages": 24,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "1f33d62d2f2871fbd373843ba5fed681f83b35c59a9ab1b31a272b421148df99"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "3ea33261456a99b4e412cefc548d9cbb5b7a5a907bf3904edbcad2bb93d9a265"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "8ca07252882527d4547395c60bbd8aa3bbfbfe45b779670544acc205809b35f6"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "0ff5ee23af73a1e2408d2c7bfa6ec067422a38a182c45f28574929c4f985d114"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2024-11/Arabe%202024%20OK.pdf#page=2",
+      "sha256": "adaa8939239aa19942fb636ae14d1d4f45fb675b7692d4228e59bdb0c95bb70f",
+      "pages": 5,
+      "pages_verifiees": [
+        {
+          "numero": 2,
+          "rendu_sha256": "5b2438f1c8015245b8a2256cc5379ec324bee40c0bba964fd8a11f74cef4e737"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "d0ec14f747946d8a60715fa4a5a2ccdd5d087f33869738aae2f2ebbe9dca4983"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "Commentaire",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "L’opposition peut hériter du modèle qu’elle récuse. L’idée d’un savoir déjà contenu dans un texte de référence lie les deux formes de pouvoir."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction originale des deux éditions, étude du feuillet, consultation du jury, élaboration du guide et du schéma."
+    },
+    {
+      "phase": "revision",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Collation sur le scan aux lignes 18–36, y compris la jonction entre les pages. Révision de l’attribution des thèses et de la paraphrase du propos d’al-Māwardī."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire",
+      "Version"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Commentaire",
+        "page_pdf": 6,
+        "pages_pdf": [
+          6,
+          7
+        ],
+        "ligne_debut": 1,
+        "ligne_fin": 36
+      },
+      {
+        "question": "Version",
+        "page_pdf": 6,
+        "pages_pdf": [
+          6,
+          7
+        ],
+        "ligne_debut": 18,
+        "ligne_fin": 36,
+        "debut": "إنّ هذا المأزق هو النواة",
+        "fin": "القائد، المعلّم"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

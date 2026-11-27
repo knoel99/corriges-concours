@@ -6,11 +6,15 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## L’abstention
 
-Un citoyen qui choisit de ne pas se déplacer, une personne absente des listes et un résident privé du droit de voter peuvent tous manquer dans le résultat final. Seul le premier est un abstentionniste au sens du taux calculé parmi les inscrits. Comment les institutions, les positions sociales et les circonstances du scrutin sélectionnent-elles les personnes dont la voix pourra être comptée ?
+Un électeur inscrit empêché de se déplacer, une personne absente des listes et un résident privé du droit de voter peuvent tous manquer dans le résultat final. Seul le premier entre dans le calcul de l’abstention parmi les inscrits. Ce calcul recense aussi bien les absences contraintes que les abstentions délibérées. Comment les institutions, les positions sociales et les circonstances du scrutin sélectionnent-elles les personnes dont la voix pourra être comptée ?
 
 ### Compter les absences fait partie de l’explication
 
@@ -30,6 +34,8 @@ Le document 7 territorialise le problème. Il représente les comportements en p
 
 ![Participation aux premiers tours de deux scrutins en 2017](figures/lecture-des-donnees.svg)
 
+Reconstituez les taux d’abstention par complément à 100. Les 29 points de différence sont un solde entre deux mobilisations. Des personnes différentes peuvent être entrées dans la participation et en être sorties.
+
 ## Questions du jury
 
 > [!INDICATION]
@@ -43,3 +49,9 @@ Il donne la différence entre deux catégories d’âge au premier tour. Il faud
 Elle écarte les conditions d’accès au registre, qui peuvent varier avec la nationalité, les déménagements et les ressources. Il faut préciser si la question porte sur l’usage d’un droit déjà ouvert ou sur la représentation politique d’une population entière.
 
 [Dossier officiel](https://www.ens.psl.eu/sites/default/files/dossier_abstention.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_tronc_commun_sociologie.pdf)
+
+## Vérification sur le dossier
+
+Le dossier relie les conditions sociales de la prise de parole et du vote aux différences de scrutin, de profession, de motivation déclarée et de territoire. Les pourcentages de participation, les écarts en points et les groupes de non-votants ont été vérifiés séparément.
+
+Le tableau du document 4 donne un écart d’abstention entre les 25–29 ans et les 65–69 ans de 8,9 points au premier tour présidentiel de 2007 et de 18,2 points en 2017. L’écart s’est donc accru de 9,3 points, sur ce scrutin et entre ces classes d’âge. Il s’agit de deux comparaisons transversales. L’information nécessaire pour séparer l’effet de l’âge de celui du remplacement des générations serait un suivi de plusieurs cohortes.

@@ -11,13 +11,21 @@
   "sources": {
     "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2016_Sujet_1C_PSI_Maths.pdf",
     "rapport_jury": "",
-    "sha256_sujet": "6c458b0c9a4635396423287a3e3dd64bf998f0388e3ba4e2723d4c3c91ee536c"
+    "sha256_sujet": "6c458b0c9a4635396423287a3e3dd64bf998f0388e3ba4e2723d4c3c91ee536c",
+    "pages_sujet": 7,
+    "etat_rapport_jury": "Rapport de l’épreuve écrite de mathématiques non retrouvé lors de cette révision.",
+    "index_institutionnel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=285&field_year_target_id%5B%5D=281&field_report_topic_target_id%5B%5D=266"
   },
   "figures": [
     {
       "fichier": "figures/rotations-et-reflexions.svg",
       "question": "4",
       "legende": "Dans chaque exemple, la rotation envoie le vecteur positif sur son symétrique par rapport à un axe de coordonnées."
+    },
+    {
+      "fichier": "figures/alternative-farkas-plan.svg",
+      "question": "20",
+      "legende": "Le cône engendré par les colonnes (1,0) et (1,1) contient le point (2,1). Le point (1,2) est de l’autre côté de la droite de séparation. Son produit scalaire avec (−1,1) est strictement positif."
     }
   ],
   "contributions": [
@@ -31,6 +39,156 @@
       "perimetre": "Rédaction des deux éditions sur le sujet original de sept pages. Distinction des quantificateurs en 2, demi-tour en 4, rectification des signes en 17 avec contre-exemple, fermeture de la récurrence et exclusivité de Farkas. Schéma des rotations et réflexions.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Contrôle des 24 rubriques des sept pages officielles. Vérification de l’unicité globale des signes, du quart et du demi-tour, de la transformation de Cayley, de la récurrence et de la séparation de Farkas. Produits par blocs recalculés en arithmétique rationnelle. Les rectifications de Q2 et de Q17 sont démontrées."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1a",
+      "1b",
+      "1c",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18a",
+      "18b",
+      "18c",
+      "19",
+      "20"
+    ],
+    "numeros_principaux": 20,
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": "1a",
+        "page_pdf": 4
+      },
+      {
+        "question": "1b",
+        "page_pdf": 4
+      },
+      {
+        "question": "1c",
+        "page_pdf": 4
+      },
+      {
+        "question": "2",
+        "page_pdf": 4
+      },
+      {
+        "question": "3",
+        "page_pdf": 4
+      },
+      {
+        "question": "4",
+        "page_pdf": 4
+      },
+      {
+        "question": "5",
+        "page_pdf": 5
+      },
+      {
+        "question": "6",
+        "page_pdf": 5
+      },
+      {
+        "question": "7",
+        "page_pdf": 5
+      },
+      {
+        "question": "8",
+        "page_pdf": 5
+      },
+      {
+        "question": "9",
+        "page_pdf": 5
+      },
+      {
+        "question": "10",
+        "page_pdf": 5
+      },
+      {
+        "question": "11",
+        "page_pdf": 5
+      },
+      {
+        "question": "12",
+        "page_pdf": 6
+      },
+      {
+        "question": "13",
+        "page_pdf": 6
+      },
+      {
+        "question": "14",
+        "page_pdf": 6
+      },
+      {
+        "question": "15",
+        "page_pdf": 6
+      },
+      {
+        "question": "16",
+        "page_pdf": 6
+      },
+      {
+        "question": "17",
+        "page_pdf": 6
+      },
+      {
+        "question": "18a",
+        "page_pdf": 6
+      },
+      {
+        "question": "18b",
+        "page_pdf": 7
+      },
+      {
+        "question": "18c",
+        "page_pdf": 7
+      },
+      {
+        "question": "19",
+        "page_pdf": 7
+      },
+      {
+        "question": "20",
+        "page_pdf": 7
+      }
+    ],
+    "precision": "Q1 introduite p. 3, ses demandes a–c se trouvent p. 4. Q2 requiert une quantification existentielle sur S. En Q17 les signes définis par la dernière ligne des blocs sont opposés aux deux signes imprimés. Q4 traite aussi le demi-tour."
+  },
+  "date_revision": "2026-11-26"
 }

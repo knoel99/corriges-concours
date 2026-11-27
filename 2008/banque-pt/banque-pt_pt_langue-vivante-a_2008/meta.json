@@ -1,0 +1,245 @@
+{
+  "slug": "banque-pt_pt_langue-vivante-a_2008",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Langue vivante A",
+    "annee": 2008
+  },
+  "questions": 15,
+  "redaction": "IA (gpt-6.2-astra)",
+  "figures": [
+    {
+      "fichier": "figures/lecture-de.svg",
+      "question": "Allemand",
+      "legende": "À qui revient chaque action ?"
+    },
+    {
+      "fichier": "figures/lecture-en.svg",
+      "question": "Anglais",
+      "legende": "Quels rôles pour les robots ?"
+    },
+    {
+      "fichier": "figures/lecture-ar.svg",
+      "question": "Arabe",
+      "legende": "Trois niveaux du débat de 2007"
+    },
+    {
+      "fichier": "figures/lecture-es.svg",
+      "question": "Espagnol",
+      "legende": "Du vivant à l’hypothèse de simulation"
+    },
+    {
+      "fichier": "figures/lecture-it.svg",
+      "question": "Italien",
+      "legende": "Que mesurent les sondages ?"
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "agent": "lva_pt_2325",
+      "perimetre": "Cinq versions françaises et dix réponses dans les langues des sujets, sources, commentaires et schémas par langue."
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "agent": "lva_pt_2325",
+      "perimetre": "Comparaison des bornes et du contenu des versions sur le fac-similé, relecture des réponses avec le jury, recomptage et examen des schémas et de l’arabe."
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2008/lv_a_2008.pdf",
+    "sujet_sha256": "855225ef182fef47a85bc85ba9d20f8183a4d19d0942598874bcb618046a265a",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2008/rapport_lv_a_ecrit_2008.pdf",
+    "rapport_sha256": "2d38f8a5e20fa489558b6c07e8631b6081ea50822cf5afd2cfd9103b6cb34fc9",
+    "livret": "https://www.banquept.fr/documents/livret/2008/Livret_PT_2008.pdf#page=12",
+    "livret_sha256": "ad57611750cbdcf6c4e1ba7444c3a7625cceaacff27f2a89763ffca957d67ca8",
+    "index_sujets": "https://www.banquept.fr/article152.html",
+    "index_rapports": "https://www.banquept.fr/article153.html"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Allemand · version",
+      "Allemand · question a",
+      "Allemand · question b",
+      "Anglais · version",
+      "Anglais · question a",
+      "Anglais · question b",
+      "Arabe · version",
+      "Arabe · question a",
+      "Arabe · question b",
+      "Espagnol · version",
+      "Espagnol · question a",
+      "Espagnol · question b",
+      "Italien · version",
+      "Italien · question a",
+      "Italien · question b"
+    ],
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "855225ef182fef47a85bc85ba9d20f8183a4d19d0942598874bcb618046a265a",
+      "perimetre": "Cinq versions françaises et dix réponses dans les langues des sujets, sources, commentaires et schémas par langue.",
+      "controles": [
+        {
+          "nom": "Allemand",
+          "titre": "Fahrerlose U-Bahn in Nürnberg unterwegs",
+          "pages_sujet": [
+            2,
+            3
+          ],
+          "pages_rapport": [
+            1,
+            2
+          ],
+          "origine": "D’après Stephan Maurer, DPA, Stern. Article page 2, questions page 3. Rapport d’allemand pages 1 et 2. Le calendrier présenté est celui qu’annoncent les responsables au moment des essais.",
+          "bornes_version": "De « Am Steuer sitzt künftig » à « jederzeit eingreifen können ». Reprendre aussi l’intertitre et la coupure signalée.",
+          "consignes": [
+            "Erklären Sie wie ATO reagiert, wenn es ein Problem auf den Gleisen gibt. Ist dieses System Ihrer Meinung nach sicher?",
+            "Die Wissenschaftler machen seit einigen Jahren große Fortschritte im Bereich der Technik. Wie stellen Sie sich in naher und ferner Zukunft das Leben mit den Maschinen vor?"
+          ],
+          "compte_mots": [
+            91,
+            208
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-de.svg"
+        },
+        {
+          "nom": "Anglais",
+          "titre": "Les robots de service au Japon",
+          "pages_sujet": [
+            4,
+            5
+          ],
+          "pages_rapport": [
+            3,
+            4
+          ],
+          "origine": "Reportage sur le salon de robotique de Tokyo, pages 4 et 5. Le fascicule passe directement de la fin de l’article à une note de vocabulaire. Rapport d’anglais pages 3 et 4.",
+          "bornes_version": "Deux extraits. Du passage « The robot is one of hundreds of cutting-edge devices » à « humans who invented them », puis de « Tocco-chan, for example » à « nothing more sinister than technical glitches ».",
+          "consignes": [
+            "In what ways can robots replace humans?",
+            "To what extent should machines be allowed to take the place of human beings?"
+          ],
+          "compte_mots": [
+            95,
+            212
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-en.svg"
+        },
+        {
+          "nom": "Arabe",
+          "titre": "إلغاء عقوبة الإعدام.. جدل مستمر",
+          "pages_sujet": [
+            6,
+            7
+          ],
+          "pages_rapport": [
+            5,
+            6
+          ],
+          "origine": "Akhîr Sâ’a, hebdomadaire égyptien, n° 3813 du 21 novembre 2007. Article page 6, questions page 7. Rapport d’arabe pages 5 et 6. L’énumération des trois pays dans l’introduction restitue les annonces telles que les présente le journaliste en 2007.",
+          "bornes_version": "Les deux premiers paragraphes de la page 6, depuis « لا يزال إلغاء عقوبة » dans le corps du texte jusqu’à « إلى تحقق نتيجة معينة ». Au début du renvoi, la page 7 imprime « لا تزال » et, à la fin, emploie le pluriel « نتائج » là où le texte porte le singulier « نتيجة ». Le passage se termine avant le paragraphe historique.",
+          "consignes": [
+            "بينوا الفكرة الأساسية للنص.",
+            "هل تطبيق عقوبة الإعدام كاف للحد من جرائم القتل في المجتمع؟"
+          ],
+          "compte_mots": [
+            82,
+            212
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-ar.svg"
+        },
+        {
+          "nom": "Espagnol",
+          "titre": "¿Hombres o engranajes?",
+          "pages_sujet": [
+            8,
+            9
+          ],
+          "pages_rapport": [
+            7
+          ],
+          "origine": "Lamberto García del Cid, REDcientífica.com. Texte page 8, questions page 9. Rapport d’espagnol page 7. La citation de Samuel Butler ouvre l’article et éclaire le raisonnement en a.",
+          "bornes_version": "De « Pobres de aquellos que odian los ordenadores » à « que lo descubriéramos ».",
+          "consignes": [
+            "Analice Usted en este texto la relación que establece el autor entre el hombre y la máquina.",
+            "¿Piensa Usted que las ideas que presenta este texto van ganando credibilidad en nuestra sociedad? Justifique su punto de vista."
+          ],
+          "compte_mots": [
+            92,
+            219
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-es.svg"
+        },
+        {
+          "nom": "Italien",
+          "titre": "Cosa pensano gli italiani della loro lingua? Quanto la conoscono realmente?",
+          "pages_sujet": [
+            10,
+            11
+          ],
+          "pages_rapport": [
+            8
+          ],
+          "origine": "Pasquale Notargiacomo, La Repubblica, septembre 2007. Texte pages 10 et 11, questions page 11. Rapport d’italien page 8. Le jury souligne le rôle des dialectes et des références littéraires.",
+          "bornes_version": "De « Meglio i giornalisti » à « per sostenere l’uso della lingua nel mondo ». Les deux intertitres compris dans ces bornes appartiennent à la version.",
+          "consignes": [
+            "«Un’identità (…) ancora in formazione». Spiegate come un tale pensiero possa essere veridica?",
+            "Pensate che la propria lingua possa essere un patrimonio individuale e collettivo. In che senso gli scrittori nazionali possano essere gli ambascatori del proprio paese?"
+          ],
+          "compte_mots": [
+            89,
+            213
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-it.svg"
+        }
+      ]
+    }
+  }
+}

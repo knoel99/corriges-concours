@@ -1,0 +1,65 @@
+{
+  "slug": "ens_mp-pc_japonais-le2_2010",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Japonais (LE2)",
+    "annee": 2010,
+    "modalite": "écrit"
+  },
+  "intitule": "Les voitures écologiques et l’avenir de l’automobile",
+  "questions": 2,
+  "redaction": "Traduction intégrale de l’extrait de l’Asahi, dix paragraphes, synthèse japonaise sur les écovoitures, distinction entre émissions au roulage et à la production d’électricité.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2010/MPI/mp-sujet-le2.pdf#page=8",
+    "sha256_sujet": "abc85dfcdb7fda6150491a22303fe0eab40a3ce1dab5961ead0b135ae8653512",
+    "page": 8,
+    "etablissements": "ENS de Paris et de Cachan",
+    "indexes": [
+      "https://www.ens.psl.eu/rapports-et-sujets-2010-mpi",
+      "https://www.ens.psl.eu/en/node/825"
+    ],
+    "reference_du_texte": "D’après le journal Asahi, 6 octobre 2007."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I",
+      "fichier": "figures/origines-energie.svg",
+      "legende": "Trois solutions automobiles décrites dans le texte et les limites de la comparaison."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Traduction intégrale de l’extrait de l’Asahi, dix paragraphes, synthèse japonaise sur les écovoitures, distinction entre émissions au roulage et à la production d’électricité."
+    },
+    {
+      "phase": "relecture_corrige",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Collation de la version avec la page 8 : données, comparaisons, projection à 2015, technologies exposées, date du salon et réponse de synthèse en japonais."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I",
+      "II"
+    ]
+  }
+}

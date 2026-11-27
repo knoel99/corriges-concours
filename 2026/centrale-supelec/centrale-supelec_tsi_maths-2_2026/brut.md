@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Notations : $\binom{j}{i}=0$ si $i>j$ (convention de l'énoncé). Deux défauts de l'énoncé sont corrigés en place. En **Q31**, « la matrice introduite en Q25 » désigne la matrice de la figure 4, introduite en **Q26**. En **Q37**, la convention cohérente est **$b_0=1$** et non $b_0=0$.
 
 ## Partie A — Matrices de Pascal
@@ -582,6 +584,10 @@ L'univers $G(\mathcal S_n)$ est muni de la probabilité uniforme. Via $G$, cela 
 
 Réciproquement, tout tel couple définit une permutation à exactement $j$ points fixes. Donc
 $$\boxed{\forall j\in[\![0,n]\!],\ \ P(X_n=j)=\frac{\binom nj\,b_{n-j}}{n!}.}$$
+
+Sur quatre éléments, les effectifs pour $j=0,1,2,3,4$ sont respectivement $9,8,6,0,1$. On peut les retrouver directement. Les permutations sans point fixe sont les six cycles de longueur quatre et les trois produits de deux transpositions disjointes. Avec un seul point fixe, il y a quatre choix pour ce point et deux cycles possibles sur les trois autres. Avec deux points fixes, il reste une seule transposition pour chaque choix des deux points. L’identité fournit le dernier cas.
+
+![Figure 4 — Effectifs des permutations de quatre éléments selon leur nombre de points fixes](figures/q37-points-fixes-quatre-elements.svg)
 
 ### Question 38
 

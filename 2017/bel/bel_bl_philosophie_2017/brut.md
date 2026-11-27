@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 « Qu’est-ce que penser ? » Dissertation commune de six heures.
 
 ## À quel moment ai-je commencé à penser ?
@@ -29,6 +31,8 @@ Dans le *Théétète*, Platon fait décrire la pensée comme une conversation de
 L’épreuve géométrique d’un carré rend cette opération visible. Je souhaite doubler l’aire d’un carré de côté un. Ma première idée est de doubler son côté. Il suffit de tracer les deux figures pour voir que j’ai construit quatre carrés de départ. Je trace maintenant la diagonale du petit carré et construis sur elle un carré nouveau. Quatre demi-carrés initiaux le remplissent, soit une aire égale à deux. L’important n’est pas ici le résultat numérique. J’ai appris à distinguer deux rapports que mon premier geste confondait, le rapport entre les longueurs et le rapport entre les aires. Une cause explique pourquoi j’ai commencé par copier et agrandir mon dessin. Une raison permet de comprendre pourquoi je corrige cette première opération. Le dialogue socratique du *Ménon* met précisément en scène cette distance entre l’assurance d’avoir une réponse et la découverte du problème.
 
 ![Du côté que l’on double à l’aire que l’on double](figures/carre.svg)
+
+Une pianiste improvise une fin que personne, elle comprise, n’avait anticipée. Pendant qu’elle cherche, elle ne formule aucune proposition sur les notes. Un accompagnateur substitue pourtant un dernier accord à celui qu’elle vient de jouer. Elle reprend la phrase et lui fait entendre pourquoi cet accord ferme trop tôt une tension qui devait durer. Le premier essai avait déjà un sens que sa reprise rend discutable. S’il fallait pouvoir dire sa raison avant de jouer, on manquerait ici le moment de l’invention. Si chaque suite de touches constituait par elle-même une pensée, rien ne distinguerait cette fin de celle que ferait entendre une main posée au hasard. Penser peut prendre cette forme intermédiaire : l’activité découvre, en s’exerçant, une différence à laquelle elle se reconnaît tenue.
 
 Cette possibilité de répondre de ses liaisons ne suppose aucune infaillibilité. Je peux hasarder une hypothèse, négliger une objection et me tromper en toute bonne foi. Elle ne suppose pas davantage une inspection verbale de chacun de mes gestes. La géomètre entraînée voit d’un coup la relation que j’ai laborieusement reconstruite. Si une difficulté surgit, sa vision peut cependant être reprise, communiquée et corrigée. Une pensée naissante et une pensée formée n’occupent pas le même temps, mais l’une peut devenir l’autre.
 

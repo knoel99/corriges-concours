@@ -1,0 +1,375 @@
+{
+  "slug": "banque-pt_pt_langue-vivante-a_2013",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Langue vivante A",
+    "annee": 2013
+  },
+  "questions": 5,
+  "redaction": "IA (gpt-6.2-astra)",
+  "figures": [
+    {
+      "fichier": "figures/lecture-de.svg",
+      "question": "Allemand",
+      "legende": "Qui décide du partage du travail ?"
+    },
+    {
+      "fichier": "figures/lecture-en.svg",
+      "question": "Anglais",
+      "legende": "À quelles conditions un bénéfice ?"
+    },
+    {
+      "fichier": "figures/lecture-ar.svg",
+      "question": "Arabe",
+      "legende": "Qui supporte la hausse ?"
+    },
+    {
+      "fichier": "figures/lecture-es.svg",
+      "question": "Espagnol",
+      "legende": "Qui nomme le 12 octobre ?"
+    },
+    {
+      "fichier": "figures/lecture-it.svg",
+      "question": "Italien",
+      "legende": "Où la reconversion se mesure-t-elle ?"
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "agent": "lva_pt_2325",
+      "perimetre": "Rédaction des cinq synthèses par langue et du commentaire des vingt-cinq documents du fascicule 2013, contrôle des figures et des décomptes dans les deux éditions."
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "agent": "lva_pt_2325",
+      "perimetre": "Relecture des cinq copies sur les feuillets et le jury, contrôle de la fidélité des chiffres et des images, recomptage du titre et du corps, contrôle des cinq schémas et du rendu de la langue arabe."
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2013/lv_a_2013_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2013/rapport_lv_a_ecrit_2013.pdf",
+    "sujet_sha256": "687b6e914afe3c04b3064d0739dd68698aa82c9254bf3acf004d81e2cb9cf6d3",
+    "rapport_sha256": "5838849ccff5e21769354218e2aaad63d082e5d1a8152cd2dd7f61738471fab0",
+    "index_sujets": "https://www.banquept.fr/article152.html",
+    "index_rapports": "https://www.banquept.fr/article153.html",
+    "livret": "https://www.banquept.fr/documents/livret/2013/Livret_PT_2013.pdf#page=12",
+    "livret_sha256": "a5ec06950020d6468198946219e761ae339b23d5e278f19d09876bacabb64a0e"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Allemand",
+      "Anglais",
+      "Arabe",
+      "Espagnol",
+      "Italien"
+    ],
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "687b6e914afe3c04b3064d0739dd68698aa82c9254bf3acf004d81e2cb9cf6d3",
+      "perimetre": "Rédaction des cinq synthèses par langue et du commentaire des vingt-cinq documents du fascicule 2013, contrôle des figures et des décomptes dans les deux éditions.",
+      "controles": [
+        {
+          "nom": "Allemand",
+          "titre": "Wer arbeitet, wenn eine Familie den Alltag teilt?",
+          "consigne": "Was ist denn los mit der Frauenarbeit heutzutage?",
+          "pages_sujet": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "pages_rapport": [
+            1,
+            2
+          ],
+          "mots_titre_inclus": 468,
+          "mots_hors_titre": 460,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                3
+              ],
+              "controle": "Sabine Rückert, Die Zeit. Le travail domestique assurait de multiples fonctions. Une mère peut aujourd’hui choisir de donner du temps à ses enfants si sa situation familiale et financière le permet."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                4
+              ],
+              "controle": "Christoph Drösser, Die Zeit. Le retrait durable d’un conjoint oblige l’autre à assurer seul le revenu. Le journaliste défend un aménagement réversible, convenu par les deux partenaires."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                5,
+                6
+              ],
+              "controle": "Stern. La législation et les divers horaires facilitent le temps partiel. Formation, progression et salaire horaire moyen restent en retrait par rapport au temps plein."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                6
+              ],
+              "controle": "Pixmac. La silhouette féminine maniant une pelle détourne un panneau de travaux. Le signe oblige à interroger la répartition conventionnelle des métiers."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                6
+              ],
+              "controle": "Dik Browne. Dans Hägar, le mari assure que son épouse ne travaillera jamais pendant qu’elle fait la lessive. L’humour tient au travail domestique rendu invisible par ses paroles."
+            }
+          ]
+        },
+        {
+          "nom": "Anglais",
+          "titre": "A gas dividend with conditions attached",
+          "consigne": "To what extent does the recent extraction of shale gas offer new hopes?",
+          "pages_sujet": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "pages_rapport": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "mots_titre_inclus": 473,
+          "mots_hors_titre": 467,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                8
+              ],
+              "controle": "David Brooks, The New York Times. Le gaz de schiste représente 30 % de l’approvisionnement américain en gaz à la date du texte, contre 1 % en 2000. Emploi, prix et indépendance énergétique fondent l’argument économique."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                9
+              ],
+              "controle": "Amy Goodman, The Guardian. Eau, déchets et incertitude sur la contamination alimentent les protestations. Distinguer témoignages locaux et bilan général."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                10,
+                11
+              ],
+              "controle": "The Economist. Substituer le gaz au charbon peut diminuer le CO₂ à la combustion. Les fuites de méthane et les investissements nécessaires dans les renouvelables rendent le gain climatique conditionnel."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                11
+              ],
+              "controle": "The Economist, données AIE de 2011. Le graphique porte sur les réserves récupérables en milliers de milliards de mètres cubes. La barre totale russe domine. Ses segments distinguent gaz conventionnel, gaz de réservoir compact, gaz de schiste et méthane de houille."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                12
+              ],
+              "controle": "The Observer. Un enfant manifeste près de Blackpool avec un message sur son avenir. La photographie introduit le coût intergénérationnel dans le débat sur l’exploitation."
+            }
+          ]
+        },
+        {
+          "nom": "Arabe",
+          "titre": "حين يصبح سعر البرميل مسألة سياسة عامة",
+          "consigne": "ما انعكاسات ارتفاع أسعار النفط على السياسة الاقتصادية للدول؟",
+          "pages_sujet": [
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "pages_rapport": [
+            7
+          ],
+          "mots_titre_inclus": 474,
+          "mots_hors_titre": 467,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                14
+              ],
+              "controle": "Emarat Al Youm, 26 novembre 2012. À Abou Dhabi, les pertes des distributeurs justifient une hausse à la pompe. L’effet sur les transports, les marchandises et le budget de soutien oppose plusieurs intérêts."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                15
+              ],
+              "controle": "Asharq Al-Awsat, 18 novembre 2012. Le pronostic du banquier saoudien au-delà de 150 dollars dépend des risques géopolitiques. La capacité disponible modifie le rôle des producteurs."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                16
+              ],
+              "controle": "Asharq Al-Awsat, 14 septembre 2012. Les marchés anticipent une annonce de la Réserve fédérale. L’AIE ne juge pas opportun le recours aux stocks stratégiques dans les conditions d’offre et de demande décrites."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                17
+              ],
+              "controle": "C. Schneider. Un automobiliste peine à atteindre le haut du tuyau qui prend la forme d’un cours ascendant. La même hausse se lit comme cotation et comme obstacle pour l’acheteur."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                17
+              ],
+              "controle": "Paperblog, environnement. La silhouette reliée à la pompe transforme la dépendance au carburant en menace pour l’usager. Le pictogramme complète la lecture du prix par le coût de cette dépendance."
+            }
+          ]
+        },
+        {
+          "nom": "Espagnol",
+          "titre": "Una fecha compartida, varias memorias en disputa",
+          "consigne": "Analice usted el concepto de Hispanidad que reflejan estos cinco documentos.",
+          "pages_sujet": [
+            18,
+            19,
+            20,
+            21,
+            22
+          ],
+          "pages_rapport": [
+            8
+          ],
+          "mots_titre_inclus": 471,
+          "mots_hors_titre": 464,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                19
+              ],
+              "controle": "El Huffington Post. À la communauté de langue répondent des mémoires nationales divergentes du 12 octobre. Au Venezuela, la résistance indigène donne son nom à la journée."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                20
+              ],
+              "controle": "Diariocrítico. Deux rassemblements barcelonais défendent des visions opposées. Les drapeaux à deux faces revendiquent la compatibilité entre appartenances catalane et espagnole."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                21
+              ],
+              "controle": "Eva Sans, La Vanguardia. La tribune s’appuie sur le monument de Barcelone pour revendiquer la catalanité de Colomb et de l’expédition. Attribuer la thèse à l’autrice."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                22
+              ],
+              "controle": "Théodore de Galle, gravure de 1589. L’Européen debout devant la figure féminine d’Amérique dans le hamac occupe le rôle de celui qui arrive et nomme. La flotte situe la scène."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                22
+              ],
+              "controle": "La Esponjadigital, Cuba. Les Taïnos commentent le visiteur qui prétend les découvrir. Le déplacement du point de vue fait ressortir l’ironie de la formule."
+            }
+          ]
+        },
+        {
+          "nom": "Italien",
+          "titre": "Quanto è verde la ripresa industriale italiana?",
+          "consigne": "In che misura si può parlare di riconversione green dell’industria italiana?",
+          "pages_sujet": [
+            23,
+            24,
+            25,
+            26,
+            27,
+            28
+          ],
+          "pages_rapport": [
+            9
+          ],
+          "mots_titre_inclus": 473,
+          "mots_hors_titre": 466,
+          "documents": [
+            {
+              "numero": 1,
+              "pages": [
+                24
+              ],
+              "controle": "Il Sole 24 Ore, rapport GreenItaly. De 2009 à 2012, 23,6 % des entreprises ont investi ou prévoient d’investir. Des secteurs traditionnels et des services sont concernés."
+            },
+            {
+              "numero": 2,
+              "pages": [
+                25
+              ],
+              "controle": "La Repubblica, Carbon Disclosure Project. 86 % des villes européennes étudiées ont prévu une réduction des émissions. Mesure, publication et coopération avec les fournisseurs relient villes et entreprises."
+            },
+            {
+              "numero": 3,
+              "pages": [
+                26
+              ],
+              "controle": "L’Espresso. Le festival de Bolzano rapproche recherche italienne et allemande. Le corridor de mobilité à hydrogène est un projet, sur fond de faible investissement et de difficultés de recrutement."
+            },
+            {
+              "numero": 4,
+              "pages": [
+                27
+              ],
+              "controle": "Il Sole 24 Ore. La carte indique les taux au sein de chaque région. L’Ombrie atteint 27,6 %, la Ligurie 20,4 %, pour une référence nationale de 23,6 %."
+            },
+            {
+              "numero": 5,
+              "pages": [
+                28
+              ],
+              "controle": "La Repubblica. Précipitations intenses et augmentation des températures sont signalées chacune dans 73 % des villes européennes étudiées. Ces effets déclarés sont distincts des projets de réduction des émissions."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

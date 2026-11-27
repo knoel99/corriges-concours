@@ -11,7 +11,8 @@
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20MP%20SUJET%20ECRIT%20DE%20MATHS%20B%20%28X%29.pdf",
     "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20MP%20RAPPORT%20ECRIT%20MATHS%20B%20%28X%29.pdf",
-    "sha256_sujet": "793338169627c8a6734707005e66ba1d534f36e5030914316fd84e5f7c2ebf6a"
+    "sha256_sujet": "793338169627c8a6734707005e66ba1d534f36e5030914316fd84e5f7c2ebf6a",
+    "sha256_rapport_jury": "ab302152f6caf60098df1fea3e2d9ea6dc8ae4788ef4cc78228d9e0dadccdd8f"
   },
   "figures": [
     {
@@ -27,7 +28,7 @@
     {
       "fichier": "figures/troncature-premiere.svg",
       "question": "16",
-      "legende": "Dans 924 = 2² × 3 × 7 × 11, le premier 5 ne change aucun facteur. Après 11, la troncature égale définitivement 924. L’axe vertical est logarithmique."
+      "legende": "Dans 924 = 2² × 3 × 7 × 11, le nombre premier 5 a une valuation nulle. Dès 11, la troncature vaut 924. L’axe vertical est logarithmique."
     },
     {
       "fichier": "figures/probabilite-pgcd-un.svg",
@@ -46,6 +47,71 @@
       "perimetre": "Rédaction intégrale des 41 réponses des quatre parties, des indications distinctes et de quatre figures originales. Vérification sur les six pages de questions et les sept pages du rapport, des sommes finies symétriques à la loi limite du PGCD.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Les questions 1a à 21 comprennent 41 rubriques. Vérification des termes de bord dans les sommes de cotangentes, des valeurs de zêta, des extractions diagonales, de la tension et de la loi limite du PGCD. Calcul exact de la norme sur les probabilités, de la troncature de 924 et des ordonnées du graphique par dénombrement des couples."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1a",
+      "1b",
+      "1c",
+      "1d",
+      "2a",
+      "2b",
+      "3a",
+      "3b",
+      "4",
+      "5a",
+      "5b",
+      "6",
+      "7a",
+      "7b",
+      "7c",
+      "8a",
+      "8b",
+      "9",
+      "10a",
+      "10b",
+      "10c",
+      "11",
+      "12a",
+      "12b",
+      "12c",
+      "12d",
+      "12e",
+      "13",
+      "14",
+      "15a",
+      "15b",
+      "15c",
+      "16",
+      "17a",
+      "17b",
+      "17c",
+      "18",
+      "19",
+      "20a",
+      "20b",
+      "21"
+    ],
+    "precision": "Les 41 rubriques des deux éditions ont été rapprochées du fascicule de 7 pages et du rapport du jury de 7 pages. Les questions 1a à 21 comprennent 41 rubriques. Vérification des termes de bord dans les sommes de cotangentes, des valeurs de zêta, des extractions diagonales, de la tension et de la loi limite du PGCD. Calcul exact de la norme sur les probabilités, de la troncature de 924 et des ordonnées du graphique par dénombrement des couples.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "793338169627c8a6734707005e66ba1d534f36e5030914316fd84e5f7c2ebf6a",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Les questions 1a à 21 comprennent 41 rubriques. Vérification des termes de bord dans les sommes de cotangentes, des valeurs de zêta, des extractions diagonales, de la tension et de la loi limite du PGCD. Calcul exact de la norme sur les probabilités, de la troncature de 924 et des ordonnées du graphique par dénombrement des couples.",
+      "commit_redaction_anterieure": "9573962a8708645625a7892ca0d637dc9375e982"
+    }
+  }
 }

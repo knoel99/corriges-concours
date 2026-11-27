@@ -23,11 +23,25 @@
       "fichier": "figures/q26-graphe-permutation.svg",
       "question": "Q26",
       "legende": "Figure 3 — Graphe G(σ) de la permutation de la figure 4 : boucles en 1 et 3, bi-boucle entre 2 et 4"
+    },
+    {
+      "fichier": "figures/q37-points-fixes-quatre-elements.svg",
+      "question": "Q37",
+      "legende": "Effectifs des permutations de quatre éléments selon leur nombre de points fixes"
     }
   ],
   "sources": {
     "sujet": "https://www.concours-centrale-supelec.fr/sites/default/files/documents/M100.pdf",
-    "annales_organisateur": "https://www.concours-centrale-supelec.fr/sujets-rapports"
+    "annales_organisateur": "https://www.concours-centrale-supelec.fr/sujets-rapports",
+    "sha256_sujet": "0872de9b222adfa6b3627eeb9f0d9092dc24c29d02b88a234a17e40332a7a6da",
+    "pages_sujet": 6,
+    "rapport_jury": null,
+    "verification_rapport": {
+      "date": "2026-11-26",
+      "rubrique": "TSI, Rapports du jury",
+      "dernier_millesime_affiche": 2025,
+      "sha256_page_annales": "7e564389f6b701010fa9cd31f8a0736ecca499196322778431c84b3afe7f7cb6"
+    }
   },
   "contributions": [
     {
@@ -62,7 +76,72 @@
       "modifications": true,
       "agent": "astra_maths",
       "perimetre": "Vérification des 41 réponses, des indications et des trois schémas sur le sujet officiel M100. Contrôle des formules de Pascal, des dérangements et des renvois du sujet. En Q35, décompte des multiplicités pour les involutions et explicitation du rôle du corps réel grâce au cycle de longueur trois. Aucun rapport TSI 2026 dans la rubrique Rapports du jury de l’organisateur à la date de la relecture."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "agent": "x_maths_b_recentes",
+      "perimetre": "Vérification des 41 questions sur M100, des deux éditions, du sens des arcs de la figure 5 et des trois schémas existants. Comparaison des conventions Q37 sur la loi exacte des points fixes au rang quatre et validation du code Q17."
     }
   ],
-  "date_revision": "2026-11-24"
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21",
+      "Q22",
+      "Q23",
+      "Q24",
+      "Q25",
+      "Q26",
+      "Q27",
+      "Q28",
+      "Q29",
+      "Q30",
+      "Q31",
+      "Q32",
+      "Q33",
+      "Q34",
+      "Q35",
+      "Q36",
+      "Q37",
+      "Q38",
+      "Q39",
+      "Q40",
+      "Q41"
+    ],
+    "origine_attestation": {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "0872de9b222adfa6b3627eeb9f0d9092dc24c29d02b88a234a17e40332a7a6da",
+      "perimetre": "Vérification des 41 questions sur M100, des deux éditions, du sens des arcs de la figure 5 et des trois schémas existants. Comparaison des conventions Q37 sur la loi exacte des points fixes au rang quatre et validation du code Q17."
+    }
+  }
 }

@@ -55,6 +55,47 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Confrontation des deux intitulés à la planche et au rapport. Vérification des concepts, du sens des exemples et des consignes d’oral."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Confrontation aux deux intitulés de la planche et au rapport d’option 2026. Application des trois sens de la dette à une même personne et identification des ayants droit. Cas développé dans le brut et exercice de discussion dans le guidé."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "gestion_2022_2023",
+      "agent": "gestion_2022_2023",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Les deux intitulés de la planche ont chacun un exposé complet dans les deux éditions. La relecture a porté sur les trois sens de la dette sociale et les modes d’appropriation culturelle. Les exemples d’enquête rendent explicite ce qui permettrait de départager les interprétations."
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "La dette sociale",
+      "La distinction : permanences et mutations"
+    ],
+    "precision": "Planche officielle d’option, une page et deux sujets secs au choix. Les deux possibilités sont développées. Le rapport rappelle les 15 minutes d’exposé et les 15 minutes d’entretien, après 1 h 30 de préparation. Les illustrations appartiennent au corrigé.",
+    "controle": "Les deux intitulés de la planche ont chacun un exposé complet dans les deux éditions. La relecture a porté sur les trois sens de la dette sociale et les modes d’appropriation culturelle. Les exemples d’enquête rendent explicite ce qui permettrait de départager les interprétations."
+  }
 }

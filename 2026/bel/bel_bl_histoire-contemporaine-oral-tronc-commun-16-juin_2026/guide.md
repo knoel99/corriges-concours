@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La feuille associe douze tirages à deux sujets. Avant la préparation de 1 h 30, le candidat choisit entre le sujet sur la France et celui sur le monde. Le rapport prévoit 20 minutes d’exposé et 10 minutes d’entretien. Cette proposition traite les deux possibilités de chaque tirage. Pour construire un passage, justifier les bornes chronologiques, situer les acteurs sur la carte et expliquer la transition entre les périodes au moyen d’un exemple précis. Chaque sujet est suivi d’une question d’entretien et d’une réponse.
 
 ## Tirage 1
@@ -194,6 +196,8 @@ Les pays participants coordonnent leurs besoins au sein de l’Organisation euro
 Le plan ne suffit pas à expliquer toute la croissance européenne, déjà engagée avant 1948 et liée également aux politiques nationales et aux capacités industrielles existantes. Il est néanmoins un accélérateur financier et un apprentissage institutionnel de la coopération occidentale. Il faut enfin le distinguer de l’OTAN, alliance de défense de 1949, et de la CECA, initiative d’intégration sectorielle lancée ultérieurement.
 
 ![Trois décisions distinctes dans l’aide américaine à l’Europe](figures/marshall.svg)
+
+Sur la dernière flèche, identifier qui verse les francs et dans quelle monnaie l’importation a été financée. On explique ainsi la contre-valeur sans confondre livraison extérieure et emploi intérieur du produit de la vente.
 
 > [!INDICATION]
 > S’agit-il uniquement d’un prêt que les Européens remboursent en dollars ?

@@ -1,0 +1,172 @@
+{
+  "slug": "bel_al_polonais-commentaire-et-traduction_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Polonais (commentaire et traduction)",
+    "annee": 2025,
+    "modalite": "écrit commun"
+  },
+  "questions": 2,
+  "duree_heures": 6,
+  "redaction": "Corrigé original rédigé par IA, non officiel.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2025-07/Commentaire%20et%20traduction.pdf#page=16",
+    "sujet_sha256": "ea1e2d243c18761ad6c43ed4f301fdebb92b05def7502a7357659f787a15ae35",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2025-11/Polonais%202025%20OK%20Lyon%20RELU.pdf#page=2",
+    "rapport_jury_sha256": "96864b3a78b7c0a1c56c6a03b86de28929b026268479be0dc8598b5b3888805f",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2025",
+    "ouvrage": "Sylwia Chutnik, *Jolanta* (2015).",
+    "ecoles": "ENS de Lyon / ENS (Paris)"
+  },
+  "figures": [
+    {
+      "question": "Commentaire",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "La panne modifie le sens de la cabine. À la voix des voisins succèdent la question de l’enfant et le souvenir de la protection du père."
+    }
+  ],
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2025-07/Commentaire%20et%20traduction.pdf#page=16",
+      "sha256": "ea1e2d243c18761ad6c43ed4f301fdebb92b05def7502a7357659f787a15ae35",
+      "pages": 24,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "d10fc4d68158b2c87292528c0faa5bf3de66f9759bfb6b0292536515d81036d3"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "1e7bff601e229489b20e9530d41c12b6a405a88fd4acd1634098b88de711e417"
+        },
+        {
+          "numero": 16,
+          "rendu_sha256": "7b595d31d9db1297dae4715f5b35bb67302fb378bbde73766f742afba4a65ad4"
+        },
+        {
+          "numero": 17,
+          "rendu_sha256": "199831380fe25fc38c391309ba9e4fa0a50cba8422569059b6b9e0a720085b8c"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2025-11/Polonais%202025%20OK%20Lyon%20RELU.pdf#page=2",
+      "sha256": "96864b3a78b7c0a1c56c6a03b86de28929b026268479be0dc8598b5b3888805f",
+      "pages": 14,
+      "pages_verifiees": [
+        {
+          "numero": 2,
+          "rendu_sha256": "374bb4e2da1ec91dfc8bf049b18332aedc9c2e5ec161cc5489a2690563e3c7a1"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "f6a9627260f52b0ad8d8e2ff84b2439275d7216a54609c8b8e970f064aafd3d6"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "6e45156b88ff88a118b51a2887ca60a75c75a5d6bcb09d0b07e7eb5a30af5fdf"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "7a26d815f45a7a2172a9dd77c89126c5d7aac0755d862c3801f2c452c9332ca8"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "bbbe867fba03c19bed481e31e38b6a4d23812dd3bc1ac1ea89b9a0c4dc815736"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "a1c9752ab4f8db363931c37a672c39c20de05c85f85c40499fede8dd6eecc929"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "0c79e20d5b8d5164732126641e02ead8255cac2c71b69e80e82583c4474452c6"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "03a6af93696f1c528893b94871315ecd9a88fb172d99bb81df453f30745c2ee4"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "73568b3e7a4458d93ed30f833c07ad94aaf6482e504a1ec9ba0c81d57939e853"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "b90c372b75f692ce768dc3276646b59327e936e2f238f12686bc8a2308161207"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "87ffdb3164c4d5ee4f00988b47048e46b651ad22ebe58d861b929da365afa19b"
+        }
+      ]
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire composé en polonais sur les deux feuillets, version française originale dans les limites de la consigne, guide de lecture et schéma."
+    },
+    {
+      "phase": "revision",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture de la charnière entre la voix collective et la fillette, des indices sur le père et du jeu sur la tension. Contrôle du mouvement des passants, des gestes et des temps. Arrêt de la version avant l’invocation au père."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire",
+      "Version"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Commentaire",
+        "page_pdf": 16,
+        "pages_pdf": [
+          16,
+          17
+        ],
+        "ligne_debut": 1,
+        "ligne_fin": 72
+      },
+      {
+        "question": "Version",
+        "page_pdf": 17,
+        "pages_pdf": [
+          17
+        ],
+        "ligne_debut": 49,
+        "ligne_fin": 64,
+        "debut": "Osiedle",
+        "fin": "do samego nieba."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

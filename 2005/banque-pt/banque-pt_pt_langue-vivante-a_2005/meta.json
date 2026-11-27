@@ -1,0 +1,297 @@
+{
+  "slug": "banque-pt_pt_langue-vivante-a_2005",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Langue vivante A",
+    "annee": 2005
+  },
+  "questions": 15,
+  "redaction": "IA (gpt-6.2-astra)",
+  "figures": [
+    {
+      "fichier": "figures/lecture-de.svg",
+      "question": "Allemand",
+      "legende": "Que choisit le client ?"
+    },
+    {
+      "fichier": "figures/lecture-en.svg",
+      "question": "Anglais",
+      "legende": "Que montre la comparaison ?"
+    },
+    {
+      "fichier": "figures/lecture-ar.svg",
+      "question": "Arabe",
+      "legende": "Comment l’auteur passe-t-il à sa thèse ?"
+    },
+    {
+      "fichier": "figures/lecture-es.svg",
+      "question": "Espagnol",
+      "legende": "Comment la science devient-elle publique ?"
+    },
+    {
+      "fichier": "figures/lecture-it.svg",
+      "question": "Italien",
+      "legende": "D’une carte à un portrait"
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "agent": "lva_pt_2325",
+      "perimetre": "Cinq versions françaises et dix réponses dans les langues des sujets, sources, commentaires et schémas par langue."
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "agent": "lva_pt_2325",
+      "perimetre": "Comparaison des bornes et du contenu des versions sur le fac-similé, relecture des réponses avec le jury, recomptage et examen des schémas et de l’arabe."
+    }
+  ],
+  "date_revision": "2026-11-27",
+  "sources": {
+    "sujet": "https://www.banquept.fr/IMG/pdf/lv_a_2005.pdf",
+    "sujet_sha256": "982b5a2bed88e2ef243d5d14fa4256816d8ca6c74eded811485fb3e6ce64c000",
+    "rapport_jury": "https://www.banquept.fr/article153.html",
+    "rapports_par_piece": {
+      "de": {
+        "url": "https://www.banquept.fr/documents/ecrit/rapport/2005/rapport_lv_a_all_ecrit_2005.pdf",
+        "sha256": "6939f3abc14137cee2c84260a0918aed3444c1cc591129c91bd731fffc631216",
+        "pages": 2,
+        "rendus_sha256": [
+          "f9f433f120d4a5425b38e460f7ee4195424c34513f8699887b7ceb17bb2f15dd",
+          "8a71336486848c7e4db1f028b1c4749fee225d9c989a78910e4c8ed76c7fff2d"
+        ],
+        "index": "https://www.banquept.fr/article153.html",
+        "sha256_index": "12a4a0b5710f8cb8cf7b71a6b75822f8e6036e5a84a391e6b3c003c170846638"
+      },
+      "en": {
+        "url": "https://www.banquept.fr/documents/ecrit/rapport/2005/rapport_lv_a_ang_ecrit_2005.pdf",
+        "sha256": "7a336edc95bb1fb192bcf8a0a320a843bf46939da701c58e420c009220e1cbec",
+        "pages": 2,
+        "rendus_sha256": [
+          "f2990aaa8c6bbce36a963cd44b54946f5196dcab4bdf38c5384f81f0f5c14313",
+          "7ac9e9a33ffbe1c0d7a9e8c4299022ac0c45fadde33153c085b081c5dda06a8a"
+        ],
+        "index": "https://www.banquept.fr/article153.html",
+        "sha256_index": "12a4a0b5710f8cb8cf7b71a6b75822f8e6036e5a84a391e6b3c003c170846638"
+      },
+      "ar": {
+        "url": "https://www.banquept.fr/documents/ecrit/rapport/2005/rapport_lv_a_ara_ecrit_2005.pdf",
+        "sha256": "8aaefc7a07ade9fe150372653944fccb003752cd85b974413a9ac86071a02ba1",
+        "pages": 1,
+        "rendus_sha256": [
+          "96400cbdd2b41875e2fcb86df0db976d9b01c14dbad388f575d59351ca749664"
+        ],
+        "index": "https://www.banquept.fr/article153.html",
+        "sha256_index": "12a4a0b5710f8cb8cf7b71a6b75822f8e6036e5a84a391e6b3c003c170846638"
+      },
+      "es": {
+        "url": "https://www.banquept.fr/documents/ecrit/rapport/2005/rapport_lv_a_aut_ecrit_2005.pdf",
+        "sha256": "3b3a516ba028cbbf1c5678144deda7b76fe443018df5e8bdb5f18e3e67009fec",
+        "pages": 1,
+        "rendus_sha256": [
+          "2a45167a5f0485eaf0fc4f8eeaa0b76bf4e891537eda22c29f7ab1d18a205d46"
+        ],
+        "index": "https://www.banquept.fr/article153.html",
+        "sha256_index": "12a4a0b5710f8cb8cf7b71a6b75822f8e6036e5a84a391e6b3c003c170846638"
+      }
+    },
+    "livret": "https://www.banquept.fr/documents/livret/2005/Livret_Rose_2005_1_2.pdf",
+    "livret_sha256": "6cd807006fd8f343e68c410bc382b6f648b5d46fb18d2140680176d4eb4efc8b",
+    "index_sujets": "https://www.banquept.fr/article152.html",
+    "index_rapports": "https://www.banquept.fr/article153.html"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Allemand · version",
+      "Allemand · question a",
+      "Allemand · question b",
+      "Anglais · version",
+      "Anglais · question a",
+      "Anglais · question b",
+      "Arabe · version",
+      "Arabe · question a",
+      "Arabe · question b",
+      "Espagnol · version",
+      "Espagnol · question a",
+      "Espagnol · question b",
+      "Italien · version",
+      "Italien · question a",
+      "Italien · question b"
+    ],
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-27",
+      "sha256_sujet_controle": "982b5a2bed88e2ef243d5d14fa4256816d8ca6c74eded811485fb3e6ce64c000",
+      "perimetre": "Cinq versions françaises et dix réponses dans les langues des sujets, sources, commentaires et schémas par langue.",
+      "controles": [
+        {
+          "nom": "Allemand",
+          "titre": "Amazon in Deutschland",
+          "pages_sujet": [
+            2,
+            3
+          ],
+          "pages_rapport": [
+            1,
+            2
+          ],
+          "rapport_url": "https://www.banquept.fr/documents/ecrit/rapport/2005/rapport_lv_a_all_ecrit_2005.pdf",
+          "rapport_sha256": "6939f3abc14137cee2c84260a0918aed3444c1cc591129c91bd731fffc631216",
+          "origine": "Adaptation libre de Stern, datée 4/7/2004 sur le feuillet. Texte pages 2 et 3, consignes page 3. Le sujet donne « commerce de détail » comme aide pour « Einzelhandel ». La question a demande une réponse personnelle, même si les exemples de l’article peuvent la nourrir. [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2005/rapport_lv_a_all_ecrit_2005.pdf)",
+          "bornes_version": "De « An einem Dienstag » à « vor allem als Kunden », en incluant l’incise « sagt Schröder ».",
+          "consignes": [
+            "Welche Produkte sind oder wären Sie bereit auf Internet zu kaufen und welche nicht? Sagen Sie auch warum.",
+            "Wie wird Ihrer Meinung nach das Gleichgewicht zwischen Einzelhandel, Supermärkten und Internethandel im Jahr 2050 aussehen?"
+          ],
+          "compte_mots": [
+            84,
+            204
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-de.svg"
+        },
+        {
+          "nom": "Anglais",
+          "titre": "Who’s Driving?",
+          "pages_sujet": [
+            4,
+            5
+          ],
+          "pages_rapport": [
+            1,
+            2
+          ],
+          "rapport_url": "https://www.banquept.fr/documents/ecrit/rapport/2005/rapport_lv_a_ang_ecrit_2005.pdf",
+          "rapport_sha256": "7a336edc95bb1fb192bcf8a0a320a843bf46939da701c58e420c009220e1cbec",
+          "origine": "Joel Achenbach, National Geographic Magazine, novembre 2004. Texte pages 4 et 5, questions page 5. La note de vocabulaire définit « berm » comme une levée de terre au bord de la route. [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2005/rapport_lv_a_ang_ecrit_2005.pdf)",
+          "bornes_version": "De « Thirteen vehicles lined up » à « wheels caught on fire ».",
+          "consignes": [
+            "Compare the performances of machines and natural biological systems.",
+            "Could autonomous vehicles be useful to mankind and how? Discuss."
+          ],
+          "compte_mots": [
+            89,
+            219
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-en.svg"
+        },
+        {
+          "nom": "Arabe",
+          "titre": "هل المجابهة بين الإسلام والغرب محتومة؟",
+          "pages_sujet": [
+            6,
+            7
+          ],
+          "pages_rapport": [
+            1
+          ],
+          "rapport_url": "https://www.banquept.fr/documents/ecrit/rapport/2005/rapport_lv_a_ara_ecrit_2005.pdf",
+          "rapport_sha256": "8aaefc7a07ade9fe150372653944fccb003752cd85b974413a9ac86071a02ba1",
+          "origine": "Bassem Al-Jisr, Al-Hawadith, 5 novembre 2004. Article pages 6 et 7, questions page 7. Le rapport d’arabe insiste sur les nuances à restituer en français. [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2005/rapport_lv_a_ara_ecrit_2005.pdf)",
+          "bornes_version": "De « كما كانت الأجيال المتأثرة » à « اعرف عدوك ». La version couvre les trois premiers paragraphes de la page 6.",
+          "consignes": [
+            "بينوا الفكرة الأساسية للنص.",
+            "هل إقرار العدالة مرهون بممارسة الإرهاب؟"
+          ],
+          "compte_mots": [
+            83,
+            202
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-ar.svg"
+        },
+        {
+          "nom": "Espagnol",
+          "titre": "Divulgando Ciencia",
+          "pages_sujet": [
+            8,
+            9
+          ],
+          "pages_rapport": [
+            1
+          ],
+          "rapport_url": "https://www.banquept.fr/documents/ecrit/rapport/2005/rapport_lv_a_aut_ecrit_2005.pdf",
+          "rapport_sha256": "3b3a516ba028cbbf1c5678144deda7b76fe443018df5e8bdb5f18e3e67009fec",
+          "origine": "Manuel Calvo Hernando, président de l’Association espagnole de journalisme scientifique, Cienciadigital, novembre 2001. Texte pages 8 et 9, questions page 9. Rapport d’espagnol dans la pièce commune avec l’italien. [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2005/rapport_lv_a_aut_ecrit_2005.pdf)",
+          "bornes_version": "De « Más que las guerras » à « la más fantástica aventura intelectual de nuestro tiempo ».",
+          "consignes": [
+            "Apoyándose en el texto, analice Usted la relación que establece el autor entre Ciencia y Periodismo.",
+            "¿Comparte Usted el punto de vista de M. Calvo Hernando, que empieza este artículo afirmando que «más que las guerras, el terrorismo y el mal en general, la ciencia es lo que caracteriza a nuestro tiempo»? Justifique su parecer."
+          ],
+          "compte_mots": [
+            91,
+            227
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-es.svg"
+        },
+        {
+          "nom": "Italien",
+          "titre": "Ecco la «plastic identity»",
+          "pages_sujet": [
+            10,
+            11
+          ],
+          "pages_rapport": [
+            1
+          ],
+          "rapport_url": "https://www.banquept.fr/documents/ecrit/rapport/2005/rapport_lv_a_aut_ecrit_2005.pdf",
+          "rapport_sha256": "3b3a516ba028cbbf1c5678144deda7b76fe443018df5e8bdb5f18e3e67009fec",
+          "origine": "Luca Fazzo, La Repubblica, janvier 2005. Texte pages 10 et 11, questions page 11. La rubrique italienne de la pièce commune avec l’espagnol indique que quatre candidats ont présenté l’épreuve. [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2005/rapport_lv_a_aut_ecrit_2005.pdf)",
+          "bornes_version": "Deuxième et troisième paragraphes de la page 10, de « È un cervello elettronico » à « per località ».",
+          "consignes": [
+            "Cosa pensa di questa «plastic identity»? Pensa che sia un servizio buono?",
+            "C’è ancora una possibilità di vita privata con la «plastic identity», dove si trova la libertà individuale? È proprio un progresse?"
+          ],
+          "compte_mots": [
+            89,
+            210
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-it.svg"
+        }
+      ]
+    }
+  }
+}

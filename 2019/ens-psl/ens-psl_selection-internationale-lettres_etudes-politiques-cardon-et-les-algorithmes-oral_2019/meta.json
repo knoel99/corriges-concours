@@ -1,0 +1,77 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_etudes-politiques-cardon-et-les-algorithmes-oral_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Études politiques — Cardon et les algorithmes (oral)",
+    "annee": 2019,
+    "modalite": "oral"
+  },
+  "intitule": "Commentaire de Dominique Cardon sur la construction du calcul, la personnalisation et la société des comportements.",
+  "gabarit": "oral",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sociologie-etudes-politiques-sil2019.pdf",
+    "sujet_sha256": "db758178be46ae5e9814aa588e00e6c4b17c931d82cafbab75afad1bb8337cb8",
+    "index": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2019-lettres",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.ens.psl.eu/sites/default/files/sociologie-etudes-politiques-sil2019.pdf",
+        "sha256": "db758178be46ae5e9814aa588e00e6c4b17c931d82cafbab75afad1bb8337cb8",
+        "pages": 2
+      },
+      {
+        "role": "attentes générales du jury",
+        "url": "https://www.ens.psl.eu/IMG/file/internationale/2008/Lettres/Lettres.pdf",
+        "sha256": "3a360c4a7769d5dbf001d43040fcd150dcf10e4ee661a0264586d3fb340a24f4",
+        "pages": 4
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/choix-de-mesure.svg",
+      "question": "Commentaire du texte",
+      "legende": "L’objet mesuré et la finesse d’un regroupement constituent deux choix distincts."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/personnalisation.svg",
+      "question": "Commentaire du texte",
+      "legende": "Cette boucle illustre un mécanisme possible de personnalisation et suggère où chercher ses effets."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "sociologie_psl_oraux_individuels",
+      "agent": "sociologie_psl_oraux_individuels",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire de Dominique Cardon sur la construction du calcul, la personnalisation et la société des comportements. Vérification des éléments de la consigne, des deux éditions et de leurs schémas."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire du texte",
+      "Conventions et milieu associé",
+      "PIB, IDH, déciles et centiles",
+      "Personnalisation et société des comportements"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "limites": "Les attentes générales du jury figurent sur l’index de la session. Cet index ne fournit pas de rapport particulier à ce sujet."
+  }
+}

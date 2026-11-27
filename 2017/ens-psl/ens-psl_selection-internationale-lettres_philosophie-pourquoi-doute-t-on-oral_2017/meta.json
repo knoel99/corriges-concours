@@ -1,0 +1,69 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_philosophie-pourquoi-doute-t-on-oral_2017",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Philosophie — Pourquoi doute-t-on (oral)",
+    "annee": 2017,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie — Pourquoi doute-t-on (oral)",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/philo-oral-sil17-sujet4.pdf",
+    "sha256_sujet": "6a980d5d9530ca15a7183e9c217dce3a480b928ece92e2fbdfe51b9e9a114796",
+    "reperage": "Le quatrième lien des oraux de philosophie de 2017 ouvre un feuillet individuel d’une page. Seuls les mots « Pourquoi doute-t-on ? » y figurent. Il ne prescrit aucune œuvre ni aucun recours au projet du candidat. Les questions d’entraînement de l’édition sont proposées par le rédacteur.",
+    "page_officielle": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2017-lettres-0",
+    "pages_sujet": 1,
+    "note_generale_jury": "https://www.ens.psl.eu/sites/default/files/qqs-attentes-jury-pageweb.pdf",
+    "sha256_note_generale": "85a7f1b02fb26a186a71b820afe3bb118cd2320fc5cfbf5dcf78456c4c56c049"
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Exposé oral",
+      "legende": "Trois questions à poser devant un doute"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet original. Exposé argumenté sur le sujet attribué, exemples et objections, préparation guidée de l’entretien et schéma des distinctions conceptuelles."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "oraux_lyon_et_anciens_corriges",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Vérification du quatrième feuillet individuel. Distinction entre cause psychologique, motif et visée de la suspension, contrôle de deux témoignages dérivés de la même source, objection en entretien."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Exposé individuel sur la seule question « Pourquoi doute-t-on ? »."
+    ],
+    "elements_verifies": [
+      "Le quatrième lien des oraux de philosophie de 2017 ouvre un feuillet individuel d’une page. Seuls les mots « Pourquoi doute-t-on ? » y figurent. Il ne prescrit aucune œuvre ni aucun recours au projet du candidat. Les questions d’entraînement de l’édition sont proposées par le rédacteur.",
+      "Vérification du quatrième feuillet individuel. Distinction entre cause psychologique, motif et visée de la suspension, contrôle de deux témoignages dérivés de la même source, objection en entretien."
+    ]
+  }
+}

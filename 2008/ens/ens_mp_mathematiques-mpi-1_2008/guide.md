@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le produit scalaire est antilinéaire à gauche. On note $H(f)$ l’ensemble des valeurs $\langle x,fx\rangle$ pour les vecteurs unitaires. Les quatre premières parties décrivent sa géométrie, puis la dernière majore les polynômes d’une contraction.
 
 ## 1. Premiers calculs
@@ -131,6 +133,8 @@ Dans une base propre orthonormée $\langle x,fx\rangle=|x_1|^2\lambda_1+|x_2|^2\
 $$r_1r_2e^{i(\alpha+\beta)/2}\big((A+B)\cos t+i(A-B)\sin t\big).$$
 La phase $t$ est libre et le produit $r_1r_2$ parcourt $[0,1/2]$. On remplit donc l’ellipse, son bord compris. Ses axes entiers ont longueurs $A+B$ et $|A-B|$ ; elle peut se réduire à un segment ou à un point.
 
+Pour les paramètres de la figure, le vecteur unitaire $x=2^{-1/2}(1,e^{it})$ donne $\langle x,fx\rangle=(3e^{it}+e^{-it})/2=2\cos t+i\sin t$. Ce calcul parcourt le bord entier. Des composantes de modules différents conservent la phase et multiplient les deux coordonnées par $2r_1r_2\in[0,1]$, ce qui remplit aussi l’intérieur.
+
 ![Figure 1 — Pour a = 3 et b = 1, les demi-axes valent 2 et 1. Les deux foyers sont les valeurs propres, situées en ±√3.](figures/ellipse-et-foyers.svg)
 
 ### Question 3.3
@@ -226,6 +230,8 @@ Pour tout $y\perp x$ unitaire, la première partie donne $\langle y,fx\rangle=\l
 #### Solution
 
 Le premier bloc permute cycliquement trois vecteurs orthonormés. Il est unitaire et a pour valeurs propres $1,j,j^2$ où $j=e^{2\pi i/3}$, car son polynôme caractéristique est $X^3-1$. Son image est leur triangle équilatéral. La distance de l’origine à chacun des côtés vaut $\cos(\pi/3)=1/2$. Le dernier bloc a pour image le disque de rayon $\varepsilon/2<1/2$ par 1.4. Ce disque et la valeur propre $0$ sont contenus dans le triangle. L’égalité de 4.3 donne bien l’enveloppe convexe du spectre pour la matrice entière. Le bloc nilpotent non nul ne commute pas avec son adjoint et la matrice entière n’est pas normale.
+
+On peut voir le défaut de normalité sur le seul bloc $B=\left(\begin{smallmatrix}0&\varepsilon\\0&0\end{smallmatrix}\right)$, à permutation des deux vecteurs près. Les matrices $BB^*$ et $B^*B$ ont diagonales $(\varepsilon^2,0)$ et $(0,\varepsilon^2)$. Le cercle inscrit dans le triangle a rayon $1/2$ et le rayon du disque de ce bloc est $\varepsilon/2$. Pour $\varepsilon=0{,}76$ comme sur la figure, la marge jusqu’à chacun des trois côtés vaut $0{,}12$.
 
 ![Figure 2 — Le bloc unitaire donne le triangle, le bloc nilpotent le disque de rayon ε/2 (ici ε = 0,76). Leur enveloppe convexe est encore le triangle.](figures/triangle-et-bloc.svg)
 

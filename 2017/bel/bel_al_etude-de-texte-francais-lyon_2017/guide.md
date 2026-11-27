@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Suivre la circulation du regard
 
 Les pages 4 et 5 du fascicule accordent cinq heures à l’étude du passage de Nicolas Bouvier. Le titre et le chapeau situent le séjour à Ceylan et la maladie. Le texte lui-même précise qui observe qui. Dès les lignes 1 à 6, noter le renversement entre la personne qui mange et sa bouche douloureuse. Aux lignes 12 à 21, l’écran rassemble ceux qui vont successivement montrer et regarder leurs radios. Aux lignes 21 à 30, la vue est troublée par l’évanouissement et par le reflet des lunettes. Les lignes 42 à 51 changent le centre d’attention en faisant entendre le ressentiment de l’astrologue.
@@ -17,6 +19,8 @@ Les pages 4 et 5 du fascicule accordent cinq heures à l’étude du passage de 
 **Éprouver la tonalité.** L’incongruité du métier de l’astrologue fait rire. Le désir d’être accompagné est immédiatement reconnu. Tenir ensemble ces deux temps empêche d’assimiler tout l’épisode à une moquerie du malade ou à une dénonciation uniforme de la médecine du lieu. Le rapport met notamment en garde contre l’exotisme plaqué sur le passage et l’emploi indifférencié des termes désignant le comique.
 
 ![Qui occupe la place du spectateur ?](figures/spectateur-patient.svg)
+
+Distinguer à chaque étape qui observe le malade et qui peut raconter ce regard. Ce dédoublement aide à expliquer pourquoi la scène publique ne prive pas le narrateur de toute faculté de jugement.
 
 ## Nicolas Bouvier, *Le Poisson-scorpion*, le dispensaire
 

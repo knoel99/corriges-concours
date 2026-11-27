@@ -16,7 +16,9 @@
   },
   "sources": {
     "sujet": "https://www.concours-bce.com/sites/default/files/2026-04/75%20GB%20-%20LANGUE_VIVANTE_A_ELVI_ALLEMAND_ANGLAIS_ESPAGNOL.pdf#page=8",
-    "sujet_sha256": "355b32ff17b6678d50137ca33444bb91f286d5a2a31fc1b73f310269a7177179"
+    "sujet_sha256": "355b32ff17b6678d50137ca33444bb91f286d5a2a31fc1b73f310269a7177179",
+    "rapport_jury": "https://www.concours-bce.com/sites/default/files/2026-10/75%20-%20Anglais%20LVA%20ELVi%202026.pdf",
+    "rapport_sha256": "6332979c55dc718840ef9686d798bdc34f2fcd2ba75549776bfbe8227ff43b94"
   },
   "figures": [
     {
@@ -25,7 +27,7 @@
       "legende": "What stage of enforcement is disputed?"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -36,6 +38,44 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Trois exercices de LVA anglaise sur le dossier officiel, résumé comparatif des articles américain et britannique, essai personnel mobilisant les documents et des exemples historiques, traduction de la seule partie délimitée du document 3, schéma."
+    },
+    {
+      "phase": "lecture_rapport_jury",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": false,
+      "agent": "fui_physique_deux",
+      "perimetre": "Rapport BCE ELVi anglais 2026 du niveau correspondant, critères et remarques sur les trois exercices confrontés au dossier original."
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux",
+      "perimetre": "Sujet de langue anglaise 75 GB, p. 8–13 : garde de section, cinq documents et bornes du thème. Contrôle des articles 3 et 8 de la Convention, de l’accord judiciaire américain de 2022, des deux caricatures et des chiffres du texte de Philippe Bernard. Résumé et essai recomptés dans les deux éditions : 355 mots, 547 mots."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I. Résumé analytique comparatif",
+      "II. Essai argumenté",
+      "III. Thème anglais"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "origine_attestation": {
+      "phase": "revision",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "355b32ff17b6678d50137ca33444bb91f286d5a2a31fc1b73f310269a7177179",
+      "perimetre": "Sujet de langue anglaise 75 GB, p. 8–13 : garde de section, cinq documents et bornes du thème. Contrôle des articles 3 et 8 de la Convention, de l’accord judiciaire américain de 2022, des deux caricatures et des chiffres du texte de Philippe Bernard. Résumé et essai recomptés dans les deux éditions : 355 mots, 547 mots."
+    }
+  }
 }

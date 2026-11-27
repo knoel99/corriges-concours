@@ -16,7 +16,24 @@
   },
   "sources": {
     "sujet": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/Ep%20communes/2026_LVA6AllArabe.pdf#page=5",
-    "rapport_jury": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/Ep%20communes/LV_ECRIT_2026_05.10.pdf#page=15"
+    "rapport_jury": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/Ep%20communes/LV_ECRIT_2026_05.10.pdf#page=15",
+    "sha256_sujet": "b058aad69cd7213a6e7a5a6e26ad834d023a57fcb9cad79137312129de2b52fa",
+    "sha256_rapport_jury": "23a73e191a42c2fcd03b46b4baca6da1089739620013f3ba144814c9a261dbb0",
+    "pages_pdf_sujet_verifiees": [
+      1,
+      5,
+      6,
+      7,
+      8
+    ],
+    "pages_pdf_rapport_verifiees": [
+      1,
+      2,
+      15,
+      16,
+      17,
+      18
+    ]
   },
   "figures": [
     {
@@ -25,7 +42,7 @@
       "question": "Synthèse"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-27",
   "contributions": [
     {
       "phase": "redaction",
@@ -36,6 +53,83 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Synthèse en arabe des 4 documents du sujet officiel p. 5–8, barres tous les vingt mots, comptage titre compris, lecture du rapport de l’option, guide et schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "lva_pt_2325",
+      "session": "/root/lva_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "perimetre": "Révision des deux éditions, confrontation des documents et figures au sujet et au rapport publiés, vérification du décompte depuis le titre."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Synthèse"
+    ],
+    "origine_attestation": {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "date": "2026-11-27",
+      "sha256_sujet_controle": "b058aad69cd7213a6e7a5a6e26ad834d023a57fcb9cad79137312129de2b52fa",
+      "perimetre": "Révision des deux éditions, confrontation des documents et figures au sujet et au rapport publiés, vérification du décompte depuis le titre.",
+      "documents_verifies": [
+        {
+          "numero": 1,
+          "pages": [
+            6
+          ],
+          "observation": "Al-Araby Al-Jadeed, 30/07/2025. Les licences omanaises augmentent de 191 % par rapport à l’année précédente. Les entrepreneuses témoignent de la souplesse du modèle."
+        },
+        {
+          "numero": 2,
+          "pages": [
+            7
+          ],
+          "observation": "Al Jazeera Net, 29/05/2023. L’article examine des croyances relatives à la rentabilité du commerce en ligne, à la clientèle et aux influenceurs."
+        },
+        {
+          "numero": 3,
+          "pages": [
+            8
+          ],
+          "observation": "Al-Wifaq, 15/02/2022. Le panneau fléché désigne le commerce électronique. Le personnage debout le montre au commerçant traditionnel, assoupi et replié au sol."
+        },
+        {
+          "numero": 4,
+          "pages": [
+            8
+          ],
+          "observation": "Hespress, 10/11/2023. Les transactions au Maroc, les garanties de qualité, les douanes, le droit de la consommation et le rôle des associations."
+        }
+      ],
+      "decompte": {
+        "titre": "التجارة الإلكترونية بين اتساع فرص العمل وشروط الثقة في السوق",
+        "langue": "arabe",
+        "minimum": 360,
+        "maximum": 440,
+        "mots": 368,
+        "titre_et_paragraphes": [
+          10,
+          47,
+          97,
+          97,
+          117
+        ],
+        "barres": 18,
+        "total_imprime": "عدد الكلمات مع العنوان ٣٦٨.",
+        "groupes_source_introduction": [
+          "العربي الجديد",
+          "الجزيرة نت",
+          "مجلة الوفاق"
+        ],
+        "convention": "Titre inclus. Dans l’introduction, chaque source et chaque date comptent pour un mot, ainsi que le renvoi compact à un document. Unités séparées par des blancs pour le reste de la copie. Chaque vingtième mot est suivi d’une barre. Total et FIN hors compte."
+      }
+    }
+  }
 }

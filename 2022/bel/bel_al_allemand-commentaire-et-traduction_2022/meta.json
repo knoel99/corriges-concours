@@ -17,7 +17,22 @@
   "sources": {
     "sujet": "https://www.ens-lyon.fr/sites/default/files/2022-11/Session-2022_BEL_Commentaire%20et%20traduction.pdf#page=2",
     "sujet_sha256": "3b5f7ae138200d4e4a49340049c68031521a44c93c0adbf783058761d9d91b6b",
-    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2022-11/Allemand%202022_0.pdf#page=2"
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2022-11/Allemand%202022_0.pdf#page=2",
+    "sha256_rapport_jury": "8f72cb874f061a5392f63d009ab7ea24916972a9fbbf175efb26434914a14283",
+    "pages_rapport_verifiees": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "ouvrage": "Emine Sevgi Özdamar, Die Brücke vom goldenen Horn (1998)."
   },
   "figures": [
     {
@@ -26,7 +41,7 @@
       "legende": "Où peut-on voir le visage des autres ?"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -37,6 +52,23 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Commentaire allemand du passage entier et version française de la rue en pente aux trois hypothèses de destination, avec lecture du rapport et schéma des regards."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture phrase par phrase sur le fascicule de l’ENS de Lyon et rapprochement avec le rapport du jury. Mouvements de la scène du pont, nombre des ombres, regard réflexif, comparaison entre ombres et corps, incertitude des questions finales.",
+      "agent": "lyon_ses_sources"
     }
   ],
   "droits_sources": {
@@ -44,5 +76,28 @@
       "Emine Sevgi Özdamar, *Die Brücke vom goldenen Horn* (1998)."
     ],
     "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire",
+      "Version française"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Commentaire",
+        "page_pdf": 2,
+        "page_pdf_fin": 3,
+        "perimetre": "Lignes 1–53 : arrêt du bus, pont, pointeuse, échange avec le portier, atelier et toilettes jusqu’au départ de Frau Missel."
+      },
+      {
+        "question": "Version française",
+        "page_pdf": 2,
+        "page_pdf_fin": 2,
+        "perimetre": "Lignes 11–23, de « Kurz bevor wir in der Fabrik » à « kamen sie von einem Friedhof? ». Les hypothèses finales portent successivement sur la destination et la provenance."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
   }
 }

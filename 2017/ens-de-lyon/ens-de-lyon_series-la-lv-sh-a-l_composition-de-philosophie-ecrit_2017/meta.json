@@ -1,0 +1,80 @@
+{
+  "slug": "ens-de-lyon_series-la-lv-sh-a-l_composition-de-philosophie-ecrit_2017",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries LA/LV/SH (A/L)",
+    "matiere": "Composition de philosophie (écrit)",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "Peut-on délimiter l’humain ?",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/17-bel-composition-philo_1506585550581_0.pdf",
+    "sha256_sujet": "6a3dede1de5923c1767d8dcf7791fa6562820ccf74e22bf3efa03e57b7eb673d",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/PHILO_TC_SP_2017.pdf",
+    "sha256_rapport_jury": "17d12a0809a391d46c37c5b0f66470e8f94eb45b624f5e3a1ec95a6aaf760e03",
+    "precision_controle": "Feuillet de composition commune de la BEL, LCU 772, J. 17 1113, six heures, une question sans annexe. Section correspondante du rapport, pages 1 à 5, jusqu’aux conseils de composition qui précèdent la section de spécialité.",
+    "reference_complementaire": "https://www.persee.fr/doc/pop_0032-4663_1949_num_4_4_2199"
+  },
+  "figures": [
+    {
+      "fichier": "figures/trois-questions.svg",
+      "question": "Composition",
+      "legende": "Lignée, manière de vivre et reconnaissance répondent à trois questions distinctes."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_design",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet original et du rapport de l’épreuve commune. Composition intégrale et édition guidée, analyse des exemples et schéma comparatif original."
+    },
+    {
+      "phase": "revision",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Conservation de la première rédaction signée lettres_design. Précision de la portée d’une comparaison ethnologique chez Mauss, ajout d’un exercice sur les trois prédicats et contrôle des deux éditions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "oraux_lyon_et_anciens_corriges",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture de la composition commune et de sa section de rapport. Précision du passage entre délimitation d’un objet de science humaine et délimitation du genre humain à partir de deux relations de cousinage. Ajout d’un exercice résolu dans l’édition guidée."
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Peut-on délimiter l’humain ?"
+    ],
+    "detail": [
+      "Le problème du pouvoir de tracer une frontière et celui de sa légitimité sont formulés en introduction.",
+      "Lignée et logos dans la première partie, techniques du corps et règles d’alliance dans la deuxième, différence entre non-humain et inhumain dans la troisième. La conclusion détermine ce qui change quand on passe de la connaissance à la reconnaissance."
+    ]
+  }
+}

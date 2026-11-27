@@ -18,7 +18,11 @@
   "sources": {
     "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-lve-d-e-2026_1790867583165-pdf#page=8",
     "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2026-1",
-    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-espagnol-e-crit-2026_1793640885461-pdf"
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-espagnol-e-crit-2026_1793640885461-pdf",
+    "sujet_sha256": "1fcd7f45d349ebdc34a800ac6657560e2c4af7541d7577ad4301dda9ac1fe1c7",
+    "apercu_sujet_sha256": "9ce9121b4d4735e242388eda6b9ae8b2dedac359f9e794ffe56885c452249be2",
+    "pages_sujet": "Pages 8 à 10 du PDF, pages imprimées 7 à 9.",
+    "provenance_empreintes": "L’empreinte du fichier de l’école vient du registre de collecte. Celle de l’aperçu porte sur le fac-similé intégral des treize pages utilisé pour la relecture."
   },
   "figures": [
     {
@@ -27,7 +31,7 @@
       "legende": "La coofficialité selon Solozábal"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -39,6 +43,23 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Rédaction complète de la version française, du thème en espagnol, des deux réponses de 244 et 245 mots, du guidage et du schéma à partir des pages imprimées 7 à 9 du fascicule."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "fin_langues_x_interens",
+      "agent": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Pages 8 à 10 du PDF. Les deux traductions correspondent aux extraits imprimés. Les réponses aux deux questions comportent respectivement 244 et 245 mots, pour une cible de 250 mots à 10 % près. La version mène du rayon des sauces au système d’étiquetage de Naturcode. Le thème va des propos de Charlotte Moge aux conséquences sanitaires et économiques du narcotrafic. Les deux réponses distinguent l’analyse du modèle linguistique par Solozábal du jugement personnel sur la coofficialité.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
   ],
   "droits_sources": {
@@ -48,5 +69,15 @@
       "Juan José Solozábal, El País, 3 octobre 2025."
     ],
     "note": "Traductions pédagogiques originales des extraits figurant dans le sujet. Les droits sur les textes sources appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I. Version française",
+      "II. Thème",
+      "III.1. Compréhension",
+      "III.2. Expression personnelle"
+    ],
+    "precision": "Pages 8 à 10 du PDF. Les deux traductions correspondent aux extraits imprimés. Les réponses aux deux questions comportent respectivement 244 et 245 mots, pour une cible de 250 mots à 10 % près. La version mène du rayon des sauces au système d’étiquetage de Naturcode. Le thème va des propos de Charlotte Moge aux conséquences sanitaires et économiques du narcotrafic. Les deux réponses distinguent l’analyse du modèle linguistique par Solozábal du jugement personnel sur la coofficialité."
   }
 }

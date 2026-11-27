@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La feuille du 18 juin réunit 12 tickets de deux sujets. Le candidat dispose de 1 h 30 de préparation et indique au jury son choix au moment du passage. Il présente un seul sujet pendant 20 minutes, puis répond aux questions durant 10 minutes. Les deux possibilités de chaque ticket sont traitées ici. Chaque relance met à l’épreuve une distinction précise. Pour développer oralement les propositions, reprendre l’exemple, en faire varier une condition, puis expliquer comment cette variation modifie la réponse.
 
 ## Ticket 1
@@ -303,6 +305,8 @@ Dans son travail sur les excuses, J. L. Austin invite à regarder ce que les mot
 Les excuses présentées à autrui possèdent aussi une valeur relationnelle. Elles peuvent nommer précisément le tort, reconnaître ses conséquences et ouvrir une réparation. Une formule qui déplore seulement la susceptibilité de l’autre évite justement cette reconnaissance. Même des excuses sincères ne donnent aucun droit immédiat au pardon. Leur valeur se juge à la vérité de l’explication, à la responsabilité reconnue et à ce que leur auteur fait ensuite pour réparer ou empêcher la répétition. Elles permettent alors de répondre de l’action sans prétendre annuler ce qui est arrivé.
 
 ![Quelle réponse donne-t-on après un tort ?](figures/excuses.svg)
+
+Dans le cas du train, modifier un seul fait en supposant qu’un message pouvait être envoyé. Vérifier alors quelle part du retard demeure excusable et quel manquement reste à reconnaître.
 
 > [!INDICATION]
 > Peut-on présenter des excuses sans avoir commis de faute ?

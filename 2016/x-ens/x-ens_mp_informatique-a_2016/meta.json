@@ -40,6 +40,68 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Rédaction des 24 questions sur SAT. Lecture du sujet et du rapport officiel, confrontation au fac-similé distribué pour Q9 et vérification du contre-exemple. Deux schémas originaux. Compilation Caml Light des deux éditions et validation exhaustive sur les graphes à trois sommets, les 2-FNC à deux variables et des arbres booléens avec contrôle des extensions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "archives_2016_2022",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture des 24 questions avec le rapport, le sujet archivé et le fac-similé distribué pour la question 9. Vérification du contre-exemple en déroulant la figure 2 dans l’ordre imprimé, et des deux illustrations. Précision du coût propre des tests et des parcours de listes en 4. Compilation Caml Light dans les deux éditions et comparaison à l’accessibilité sur 512 graphes, aux tables de vérité sur 256 familles de clauses et aux extensions de valuation sur 4 096 formules."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24"
+    ],
+    "precision": "Les 24 questions du tirage distribué sont traitées, y compris les quatre formules de 1 et les deux de 20. La page 8 du tirage contient la question 9, omise dans l’archive institutionnelle. Le rapport confirme que son affirmation admet un contre-exemple.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "ed0495f90663ea187bff7e760349dd92a1925ab9b0beb9ab24d56cb5d8861516",
+      "sha256_rapport_controle": "9b32c93924442876839c3464f0e51eea5ae3d6a1bde652cc3cd4030fcec10482",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Relecture des 24 questions avec le rapport, le sujet archivé et le fac-similé distribué pour la question 9. Vérification du contre-exemple en déroulant la figure 2 dans l’ordre imprimé, et des deux illustrations. Précision du coût propre des tests et des parcours de listes en 4. Compilation Caml Light dans les deux éditions et comparaison à l’accessibilité sur 512 graphes, aux tables de vérité sur 256 familles de clauses et aux extensions de valuation sur 4 096 formules.",
+      "commit_redaction_anterieure": "9f6674b7655ab13f20620cdd15295257810593b9",
+      "sha256_sujet_distribue_controle": "f8bdf81cbed6f19335dce042011cec6a5b8325f178dcb6f701f5fd440781f438"
+    },
+    "subdivisions_du_sujet": {
+      "1": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "20": [
+        "a",
+        "b"
+      ]
+    }
+  }
 }

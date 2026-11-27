@@ -2,7 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 **Transformation d’Euler et accélération de la convergence.** La transformée d’une série alternée convergente se démontre à l’aide de moyennes binomiales de ses restes. Pour le logarithme de deux, le sujet demande finalement les erreurs signées et leurs équivalents.
 
@@ -48,7 +50,7 @@ $$\ln2=\sum_{n\ge0}\frac{(-1)^n}{n+1}=\sum_{p\ge0}\frac1{(p+1)2^{p+1}}.$$
 
 ### Question 5.a
 
-Dans la définition de $E_n$, l’intégrale d’indice $p$ multipliée par $1/2$ vaut $(-1)^p(\Delta^pu)_0/2^{p+1}$ par 3.b. En sommant de 0 à $n$, on obtient la formule demandée.
+Dans la définition de $E_n$, l’intégrale d’indice $p$ multipliée par $1/2$ vaut $(-1)^p(\Delta^pu)_0/2^{p+1}$ par 3.b. La somme finie est donc $E_n=\sum_{p=0}^{n}(-1)^p(\Delta^pu)_0/2^{p+1}$.
 
 ### Question 5.b
 
@@ -128,7 +130,9 @@ $$|S-T_n|\le\frac{2S}{\rho^n+\rho^{-n}}\le 2S\rho^{-n}.$$
 
 ### Question 13
 
-Par la somme géométrique finie, $S-S_n=(-1)^{n+1}\int_0^1 t^{n+1}/(1+t)\,dt$. Pour toute fonction continue $h$ sur $[0,1]$, $(m+1)\int_0^1t^m h(t)dt\to h(1)$ : la masse de ce poids sur $[0,1-\varepsilon]$ tend vers zéro et, près de 1, la variation de $h$ est uniformément petite. En prenant $h(t)=1/(1+t)$, on obtient
+Par la somme géométrique finie, $S-S_n=(-1)^{n+1}\int_0^1 t^{n+1}/(1+t)\,dt$. Pour les deux premiers restes, il suffit d’un même calcul au bord. Pour $h\in C^1([0,1])$ et $m\ge0$, une intégration par parties donne
+$$ (m+1)\int_0^1t^m h(t)\,dt=h(1)-\int_0^1t^{m+1}h'(t)\,dt. $$
+La dernière intégrale a un module inférieur ou égal à $\|h'\|_\infty/(m+2)$. En prenant $h(t)=1/(1+t)$, on obtient
 $$S-S_n\sim\frac{(-1)^{n+1}}{2n}.$$
 De même 5.b donne $S-E_n=2^{-n-1}\int_0^1 (1-t)^{n+1}/(1+t)\,dt$. Après $v=1-t$, la fonction test $1/(2-v)$ vaut 1 en 1, d’où
 $$S-E_n\sim\frac{1}{n2^{n+1}}.$$

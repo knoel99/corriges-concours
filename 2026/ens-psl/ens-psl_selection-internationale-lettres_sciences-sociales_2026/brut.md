@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le libellé de l’écrit est attesté par le rapport du jury, p. 4. Le jury présente l’épreuve comme une dissertation courte de deux heures et indique en p. 5 plusieurs angles de discussion. La proposition ci-dessous développe un raisonnement possible.
 
 ## Quelle place donner à l’historicisation de son objet dans une recherche en sciences sociales ?
@@ -29,6 +31,10 @@ Cette démarche exige une critique symétrique des matériaux. Un ancien ouvrier
 ### Donner au détour historique la profondeur nécessaire à l’explication
 
 Une série longue expose à un risque voisin. On croit gagner en solidité en ajoutant des années alors qu’on rapproche parfois des nombres établis différemment. Lors de la refonte de l’enquête Emploi de 2021, l’Insee a dû évaluer les effets du changement de questionnaire et de méthode sur les indicateurs d’activité. Un dispositif de comparaison avec l’ancienne enquête a servi à mesurer les ruptures ; des séries rétropolées permettent de raisonner à conventions rendues plus comparables. Pour le chercheur, cette histoire de la mesure se traduit en actes précis. Il faut documenter le champ et le dénominateur, rechercher les modifications des questions et, lorsque la correction reste incertaine, présenter séparément les périodes. On peut ainsi distinguer une modification des pratiques d’une modification de leur visibilité.
+
+Même avec un instrument de mesure identique, la composition de la population peut changer. Supposons deux groupes dont les fréquences restent à 10 % et à 30 %. Avec 300 personnes dans le premier et 100 dans le second, on observe 60 cas sur 400. Si leurs effectifs s’inversent, le total monte à 100 cas sur 400. Pour interpréter historiquement cette hausse, il faut alors expliquer pourquoi le groupe le plus exposé a pris plus de poids.
+
+![Figure 1 — Un effet de composition sur un exemple fictif](figures/composition.svg)
 
 Faut-il alors remonter toujours plus loin ? Si l’on étudie ce qui se joue dans un entretien d’embauche, le détail des prises de parole, l’ordre des questions et les contraintes de l’échange peuvent expliquer un résultat que la généalogie du recrutement laisse indéterminé. En revanche, si un diplôme est constamment invoqué comme seuil d’accès, la création du titre, les transformations de ceux qui le possèdent et les usages qu’en fait l’employeur deviennent décisifs. La borne pertinente est celle qui permet de comparer des situations, de repérer une bifurcation ou de départager deux mécanismes. Elle dépend du problème posé et de la disponibilité de traces. Le chercheur doit également dater sa propre présence. Les souvenirs qu’on lui confie et les archives qui lui sont ouvertes changent lorsqu’une usine ferme ou lorsqu’une profession se mobilise.
 

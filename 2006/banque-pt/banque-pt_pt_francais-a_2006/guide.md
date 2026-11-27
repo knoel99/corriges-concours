@@ -1,0 +1,53 @@
+# Banque PT — Français A 2006 · Corrigé guidé
+
+*Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
+
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+[Énoncé officiel](https://www.banquept.fr/documents/2006/francais_a_2006.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_fra_ecrit_2006.pdf) · [Programme officiel](https://www.education.gouv.fr/bo/2005/29/MENS0501372A.htm) · [Grille de la session](https://www.banquept.fr/documents/livret/2006/Livret_Rose_2006_1_2.pdf#page=12)
+
+Épreuve de quatre heures sur « La recherche du bonheur ». Sénèque, La Vie heureuse et De la brièveté de la vie (traduction de François Rosso) · Anton Tchékhov, Oncle Vania (traduction d’André Markowicz et Françoise Morvan) · J. M. G. Le Clézio, Le Chercheur d’or.
+
+## Sujet
+
+Dans son dernier roman, La Possibilité d’une île (Editions Fayard, 2005), Michel Houellebecq fait dire à l’un de ses personnages :
+
+« A tout observateur impartial en tout cas il apparaît que l’individu humain ne peut pas être heureux, qu’il n’est en aucune manière conçu pour le bonheur et que sa seule destinée possible est de propager le malheur autour de lui en rendant l’existence des autres aussi intolérable que l’est la sienne propre. »
+
+Votre lecture des œuvres au programme (ou d’autres ouvrages consacrés à la recherche du bonheur) confirme ou infirme-t-elle un propos aussi péremptoire ?
+
+## Préparer la dissertation
+
+**Pourquoi parler du personnage de Houellebecq ?**
+
+Le sujet précise qui parle et l’adjectif « péremptoire » invite à tester une prétention à l’impartialité. Ne tenez pas l’énoncé pour la profession de foi personnelle du romancier.
+
+**Quel rapport logique faut-il examiner ?**
+
+Distinguez l’impossibilité d’être heureux de la nécessité de rendre les autres malheureux. Une personne malheureuse qui aide autrui contredit la seconde proposition, même si son sort reste pénible.
+
+**Pourquoi mobiliser les deux traités de Sénèque ?**
+
+L’un interroge le choix du bien qui doit guider la vie. L’autre examine le temps livré aux occupations et ambitions d’autrui. Cette distinction permet de rapporter un malheur fréquent à des causes modifiables.
+
+## Dissertation
+
+À la fin d’Oncle Vania, Sonia ne promet pas à son oncle que leur vie va brusquement devenir heureuse. Elle l’aide à reprendre le travail et lui parle du repos qu’ils connaîtront un jour. Faut-il y voir l’aveu de leur défaite ou la preuve que deux êtres malheureux peuvent s’apporter autre chose que du malheur ? Le personnage auquel Houellebecq donne la parole se réclame d’un observateur impartial. Il déclare pourtant savoir à quoi l’homme est destiné. De l’incapacité de l’individu à être heureux il conclut que sa seule action possible est de rendre la vie des autres intolérable. Les œuvres donnent-elles à cette double affirmation la force d’un constat, ou font-elles apparaître des choix là où elle ne voit qu’une destinée ?
+
+Le malheur paraît bien se propager. Dans la propriété où vivent Sonia et Vania, l’arrivée du professeur Sérébriakov bouleverse un ordre laborieusement entretenu. Ses plaintes, ses horaires et le service que demande sa santé scandent les nuits et les journées des autres. Il n’est pas nécessaire de lui prêter le dessein de tourmenter son entourage. Il suffit qu’il tienne ses propres soucis pour le centre de l’existence commune. Vania, qui a longtemps travaillé pour lui et admiré son œuvre, découvre que le sacrifice de ses années ne lui garantit aucune reconnaissance. Le projet du professeur de vendre la propriété rend cette dépossession brutalement visible. Là où Sérébriakov envisage une réorganisation de ses revenus, Vania entend que les années de travail peuvent être rayées par celui qui en a bénéficié. La pièce fait éprouver cette circulation du malheur jusque dans les conversations où l’un attend de l’autre une réponse que celui-ci est trop occupé de sa propre déception pour donner.
+
+Sénèque explique dans De la brièveté de la vie comment un tel échange peut devenir la règle. Celui qui fait dépendre sa satisfaction de l’attention d’un puissant abandonne une part de ses heures à quelqu’un qui, bien souvent, attend lui-même la faveur d’un autre. On peut ainsi être constamment entouré et ne jamais disposer du temps de rencontrer personne. La thèse de Houellebecq touche juste lorsqu’elle rapporte le mal que nous faisons au mal que nous éprouvons. Un homme qui n’a jamais assez d’honneurs traite son entourage comme une réserve de témoins ou de services insuffisants. Pourtant le raisonnement de Sénèque permet déjà une distinction. C’est une certaine conception du bien qui produit cet enchaînement. Dire « l’homme » là où il faudrait dire « l’homme qui attend son bien du jugement des autres » revient à ériger une habitude en loi de la nature.
+
+On comprend cette différence à la lecture du Chercheur d’or. Alexis reçoit de son père le rêve du trésor et tente de retrouver à Rodrigues de quoi réparer la ruine familiale et la perte du domaine de son enfance. L’attachement au passé a sa noblesse. Il contient aussi un piège. Un bien futur est chargé de restituer des relations et des lieux dont la valeur ne se mesurait pas en or. Tant que l’on attend de la découverte ce qu’elle ne peut donner, le présent prend l’aspect d’une épreuve dont il faudrait seulement atteindre le terme. Pourtant le récit a commencé par la mer qu’entendait l’enfant, par les voix familières et la compagnie de Laure. Ces moments ne deviennent pas fictifs parce qu’ils sont perdus. Il faudrait disposer d’une singulière définition du bonheur pour en exclure d’avance tout bien dont on peut ensuite être séparé.
+
+Le bonheur stoïcien répond à la difficulté par une autre voie. Il ne consiste pas à dresser une liste de circonstances propices et à patienter jusqu’à ce que toutes soient réunies. Dans La Vie heureuse, Sénèque examine ce qu’il convient de prendre pour guide avant même de se mettre en route. Il se pourrait que suivre la foule avec beaucoup d’énergie éloigne du but. Rendre son jugement moins dépendant de la richesse ou du plaisir, c’est recouvrer une capacité d’agir qui ne disparaît pas au premier revers. Cette proposition ne prouve pas qu’il soit facile de devenir heureux. Elle ruine en revanche l’assurance de l’observateur qui, devant tant d’hommes malheureux, prétendrait savoir que personne ne peut l’être. La fréquence d’un échec ne démontre pas la nécessité de sa cause.
+
+La seconde partie de la citation est encore plus fragile. Sonia aime Astrov sans être aimée de lui comme elle le voudrait. Ce manque ne disparaît pas grâce à la bonté qu’elle témoigne à son oncle. Mais elle refuse justement de faire de Vania le dépositaire de sa déception. En lui parlant d’un avenir qui leur serait commun, elle lui rend au présent une forme de compagnie. On peut rester réservé sur la consolation religieuse qu’elle espère et reconnaître ce que sa parole accomplit sur scène. Deux personnes dont la vie a été dure cessent, un moment, d’être seules avec leur dureté. Ce fait suffit à contredire le mot « seule » dans la prétendue destinée de l’individu malheureux.
+
+Chez Le Clézio aussi, l’attention d’une autre personne a une valeur qui ne se réduit pas à l’issue de la quête. À Rodrigues, Ouma apprend à Alexis à regarder et à habiter le lieu dont il scrutait surtout les signes en fonction du trésor. L’attention porte désormais sur ce qui nourrit et soutient une présence humaine. Cette relation est fragile, traversée de séparations et d’inégalités que le roman n’efface pas. C’est pourquoi elle est un argument plus précis qu’une promesse de félicité générale. Une rencontre peut réorienter les désirs d’un homme, même s’il n’est pas assuré de conserver celle qui lui ouvre cette possibilité.
+
+Il y a donc une part d’observation exacte dans le propos du personnage. L’attente déçue et la dépendance peuvent rendre la vie commune presque irrespirable. Mais son impartialité se dément lorsqu’il donne à ces mécanismes le statut d’une essence et se déclare d’avance incapable de reconnaître les exceptions. Sénèque demande à quoi nous accordons le pouvoir de nous rendre heureux. Le Clézio fait entendre les bonheurs que l’on manque en les cherchant ailleurs. Tchékhov montre ce que peut faire pour autrui quelqu’un qui n’a pas trouvé le bonheur. Aucune de ces réponses ne dispense de prendre le malheur au sérieux. Toutes interdisent d’en faire une vocation.
+
+![Figure 1 — D’un malheur subi à une conduite envers autrui](figures/lecture.svg)

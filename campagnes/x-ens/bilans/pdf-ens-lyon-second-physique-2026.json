@@ -1,0 +1,1047 @@
+{
+  "slug": "ens-de-lyon_second-concours_physique_2026",
+  "commit_export": "ceae13811ce346d748720e645677180e1aed7f77",
+  "branche": "relecture/lyon-second-physique-2024-2026",
+  "gabarit": "scripts/exporter au commit indiqué",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "A7",
+      "A8",
+      "A9",
+      "A10",
+      "B1",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "B6",
+      "B7",
+      "B8",
+      "B9",
+      "B10",
+      "B11",
+      "B12",
+      "B13",
+      "B14",
+      "B15",
+      "B16",
+      "B17",
+      "B18",
+      "B19",
+      "B20",
+      "B21",
+      "B22",
+      "B23",
+      "B24",
+      "B25",
+      "B26"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "correspondance": [
+      {
+        "question": "A1",
+        "page_pdf": 2
+      },
+      {
+        "question": "A2",
+        "page_pdf": 2
+      },
+      {
+        "question": "A3",
+        "page_pdf": 2
+      },
+      {
+        "question": "A4",
+        "page_pdf": 2
+      },
+      {
+        "question": "A5",
+        "page_pdf": 2
+      },
+      {
+        "question": "A6",
+        "page_pdf": 2
+      },
+      {
+        "question": "A7",
+        "page_pdf": 2
+      },
+      {
+        "question": "A8",
+        "page_pdf": 2
+      },
+      {
+        "question": "A9",
+        "page_pdf": 2
+      },
+      {
+        "question": "A10",
+        "page_pdf": 2
+      },
+      {
+        "question": "B1",
+        "page_pdf": 3
+      },
+      {
+        "question": "B2",
+        "page_pdf": 3
+      },
+      {
+        "question": "B3",
+        "page_pdf": 3
+      },
+      {
+        "question": "B4",
+        "page_pdf": 3
+      },
+      {
+        "question": "B5",
+        "page_pdf": 4
+      },
+      {
+        "question": "B6",
+        "page_pdf": 4
+      },
+      {
+        "question": "B7",
+        "page_pdf": 4
+      },
+      {
+        "question": "B8",
+        "page_pdf": 4
+      },
+      {
+        "question": "B9",
+        "page_pdf": 4
+      },
+      {
+        "question": "B10",
+        "page_pdf": 4
+      },
+      {
+        "question": "B11",
+        "page_pdf": 4
+      },
+      {
+        "question": "B12",
+        "page_pdf": 4
+      },
+      {
+        "question": "B13",
+        "page_pdf": 4
+      },
+      {
+        "question": "B14",
+        "page_pdf": 4
+      },
+      {
+        "question": "B15",
+        "page_pdf": 4
+      },
+      {
+        "question": "B16",
+        "page_pdf": 4
+      },
+      {
+        "question": "B17",
+        "page_pdf": 5
+      },
+      {
+        "question": "B18",
+        "page_pdf": 5
+      },
+      {
+        "question": "B19",
+        "page_pdf": 5
+      },
+      {
+        "question": "B20",
+        "page_pdf": 5
+      },
+      {
+        "question": "B21",
+        "page_pdf": 5
+      },
+      {
+        "question": "B22",
+        "page_pdf": 5
+      },
+      {
+        "question": "B23",
+        "page_pdf": 5
+      },
+      {
+        "question": "B24",
+        "page_pdf": 5
+      },
+      {
+        "question": "B25",
+        "page_pdf": 5
+      },
+      {
+        "question": "B26",
+        "page_pdf": 6
+      }
+    ],
+    "figures_du_sujet": [
+      {
+        "numero": 1,
+        "page_pdf": 3
+      },
+      {
+        "numero": 2,
+        "page_pdf": 4
+      },
+      {
+        "numero": 3,
+        "page_pdf": 5
+      },
+      {
+        "numero": 4,
+        "page_pdf": 6
+      }
+    ],
+    "fichiers_associes": "Le registre de physique sépare le sujet et le rapport écrit du rapport oral. Les pièces de l’écrit ne comportent pas de pièce jointe et toutes les figures utiles sont imprimées dans le sujet."
+  },
+  "interventions": [
+    {
+      "phase": "redaction",
+      "modele": null,
+      "vitesse": null,
+      "effort": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Corrigés brut et guidé.",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "agent": "physique_psi"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-24",
+      "modifications": null,
+      "perimetre": "Vérification de la numérotation des deux parties, calculs de tension, changement de variable, pentes de la figure 2 et sens des deux trajets visibles sur la figure 4. Contre-calcul indépendant des questions 11, 16, 19 et 23 à 26 du problème, avec relecture des deux graphiques et de la chronophotographie. La remarque préliminaire du rapport discordante avec le thème du sujet est signalée dans la présentation guidée.",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "tour": 1
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "tour": 2,
+      "modifications": true,
+      "perimetre": "Relecture des 10 questions de cours et des 26 questions du problème, du brut, du guidé et de leurs dix figures avec le sujet et le rapport. Vérification des deux approximations de l’équation de la corde, des pentes expérimentales, des vitesses signées et de la trajectoire près du bas de la boucle.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "agent": "lva_pt_2325",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "tour": 3,
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle des dix réponses de cours et des 26 questions du problème, ajustement séparé des branches sur les marqueurs de la figure 2 originale, confrontations des trajectoires à la figure 4 et distinction des mesures quantifiables de la chronophotographie sans cadence."
+    }
+  ],
+  "pieces": {
+    "index": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/",
+    "sha256_index": "1cf45e0a75bfb34a6d334abc69ca5a772ab6dc9302222638e7521653102252e3",
+    "ancrages": [
+      {
+        "texte": "Écrit physique",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/08/26_2cc_sujet_physique.pdf"
+      },
+      {
+        "texte": "Écrit physique",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/07/26_2cc_rap_ePhy.pdf"
+      },
+      {
+        "texte": "Oral physique",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/07/26_2cc_rap_oPhy.pdf"
+      }
+    ],
+    "sujet": {
+      "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/08/26_2cc_sujet_physique.pdf",
+      "sha256": "715f04c4511e299582b35cce176514d41b173ac90d3e8533a651ce13da9fa126",
+      "pages": 6,
+      "pieces_jointes": [],
+      "rendus": [
+        {
+          "page": 1,
+          "sha256_rendu": "800c42521b2e24c5139b9efa61dcc9c3eba02b9af188d753d92c94e6d51f8fe3",
+          "liens": []
+        },
+        {
+          "page": 2,
+          "sha256_rendu": "72560861937f05db0dee99b6c6cc24ed738654cc064a63111ce362f3d8b3c91c",
+          "liens": []
+        },
+        {
+          "page": 3,
+          "sha256_rendu": "940d565d31ec170f1898cef9120adf9caaa48ab4562dfd42af9165622ab2d36f",
+          "liens": []
+        },
+        {
+          "page": 4,
+          "sha256_rendu": "7f76ada645553ea68b4a073cd24526881c077df2cee08c18383c8ff49f314876",
+          "liens": []
+        },
+        {
+          "page": 5,
+          "sha256_rendu": "2cc4e3be694754387692270f86bc02c4a7ae766ee98fc6c1a26c0905289ecda2",
+          "liens": []
+        },
+        {
+          "page": 6,
+          "sha256_rendu": "1ce82cbddb31ef7c22b8d4c345550e95528eba4a05377e1ff6427a9779abdc6c",
+          "liens": []
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/07/26_2cc_rap_ePhy.pdf",
+      "sha256": "ca2b1a88a83e6ee613d664654c55ed3a1fb488936d3654153ed2cbe7d6d6da89",
+      "pages": 1,
+      "pieces_jointes": [],
+      "rendus": [
+        {
+          "page": 1,
+          "sha256_rendu": "a2e34eafc73f29535916351fc93398762e9fdc31149e49a3db485b66945df9f9",
+          "liens": []
+        }
+      ]
+    }
+  },
+  "controle_reseau": {
+    "index": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/",
+    "sha256_index": "ea09d8707f4a4b4059849c735fcc2c1d4644239d13e727c05952b157792c06f9",
+    "pdf": [
+      {
+        "annee": 2026,
+        "piece": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/08/26_2cc_sujet_physique.pdf",
+        "sha256": "715f04c4511e299582b35cce176514d41b173ac90d3e8533a651ce13da9fa126",
+        "octets": 237992,
+        "identique": true
+      },
+      {
+        "annee": 2026,
+        "piece": "rapport",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/07/26_2cc_rap_ePhy.pdf",
+        "sha256": "ca2b1a88a83e6ee613d664654c55ed3a1fb488936d3654153ed2cbe7d6d6da89",
+        "octets": 41455,
+        "identique": true
+      }
+    ]
+  },
+  "resultats_calcules": [
+    "Pseudo-célérité (s⁻¹), tensions basse et haute (N), vitesses au sommet (m/s), temps lent (s) 1.5660459763365826 5.0 5.490500000000001 0.47902667235845975 -20.479026672358458 2.038735983690112",
+    "Marqueurs de la figure 2, pente Z/t par ajustement [(16, 1.27889), (32, -1.4245), (19, -1.43608)]"
+  ],
+  "pdf": {
+    "brut": {
+      "pages": 9,
+      "signets": [
+        [
+          1,
+          "1. Questionnaire",
+          1
+        ],
+        [
+          2,
+          "Question A1",
+          1
+        ],
+        [
+          2,
+          "Question A2",
+          2
+        ],
+        [
+          2,
+          "Question A3",
+          2
+        ],
+        [
+          2,
+          "Question A4",
+          2
+        ],
+        [
+          2,
+          "Question A5",
+          2
+        ],
+        [
+          2,
+          "Question A6",
+          2
+        ],
+        [
+          2,
+          "Question A7",
+          2
+        ],
+        [
+          2,
+          "Question A8",
+          2
+        ],
+        [
+          2,
+          "Question A9",
+          2
+        ],
+        [
+          2,
+          "Question A10",
+          3
+        ],
+        [
+          1,
+          "2. Propagation d'ondes transverses dans une corde pesante",
+          3
+        ],
+        [
+          2,
+          "Question B1",
+          3
+        ],
+        [
+          2,
+          "Question B2",
+          3
+        ],
+        [
+          2,
+          "Question B3",
+          3
+        ],
+        [
+          2,
+          "Question B4",
+          3
+        ],
+        [
+          2,
+          "Question B5",
+          3
+        ],
+        [
+          2,
+          "Question B6",
+          4
+        ],
+        [
+          2,
+          "Question B7",
+          4
+        ],
+        [
+          2,
+          "Question B8",
+          4
+        ],
+        [
+          2,
+          "Question B9",
+          4
+        ],
+        [
+          2,
+          "Question B10",
+          4
+        ],
+        [
+          2,
+          "Question B11",
+          5
+        ],
+        [
+          2,
+          "Question B12",
+          5
+        ],
+        [
+          2,
+          "Question B13",
+          5
+        ],
+        [
+          2,
+          "Question B14",
+          5
+        ],
+        [
+          2,
+          "Question B15",
+          5
+        ],
+        [
+          2,
+          "Question B16",
+          5
+        ],
+        [
+          2,
+          "Question B17",
+          5
+        ],
+        [
+          2,
+          "Question B18",
+          6
+        ],
+        [
+          2,
+          "Question B19",
+          6
+        ],
+        [
+          2,
+          "Question B20",
+          6
+        ],
+        [
+          2,
+          "Question B21",
+          7
+        ],
+        [
+          2,
+          "Question B22",
+          7
+        ],
+        [
+          2,
+          "Question B23",
+          8
+        ],
+        [
+          2,
+          "Question B24",
+          8
+        ],
+        [
+          2,
+          "Question B25",
+          9
+        ],
+        [
+          2,
+          "Question B26",
+          9
+        ]
+      ],
+      "nombre_signets": 38,
+      "signets_questions": 36,
+      "pages_figures": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        7,
+        8,
+        8,
+        9
+      ],
+      "sha256": "b840d02ac5615450516c865c5563b23fc3f0e8eb8bd546fa4ce876105638675e",
+      "rendus_sha256": [
+        "7e5350f92957d1b7d21fe520cddbc65b85ac4bdbf562a1baf76c8ba80f6a41e2",
+        "74b6aebadb389f27b23311e87293655395a557b5f480e566274625086aa9b92b",
+        "a59d0aa983e5ce186cbca5af67032649f8be6dd5131caedfd15255d0631a19e3",
+        "bb6cba149fbb5e7763dbe3ebdd91b389eaf64c6a3b8aee0ccc1d49bc27eee4bd",
+        "ee469e2477609210624be6cd52a59c5da356a12ef6b2a1805c958136e2cba67f",
+        "87d2e5a9e70c7ed80405533d288940305b83b0ac01b536e2a92a825d608de8e9",
+        "b1cdb05c47a3722dce81e76b317af59226090e0543c2818a914862ccc7181dc5",
+        "adfbfbd631a425d502250500a43829e3c358f9d999a36c1e32e4b615cc8aa014",
+        "572c9800d5de1f8145ffc45ff1dce759992c43c564bc78300f9ca869e4d083df"
+      ]
+    },
+    "guide": {
+      "pages": 15,
+      "signets": [
+        [
+          1,
+          "Présentation du sujet",
+          1
+        ],
+        [
+          1,
+          "1. Questionnaire",
+          1
+        ],
+        [
+          2,
+          "Question A1",
+          1
+        ],
+        [
+          3,
+          "Solution",
+          2
+        ],
+        [
+          2,
+          "Question A2",
+          2
+        ],
+        [
+          3,
+          "Solution",
+          2
+        ],
+        [
+          2,
+          "Question A3",
+          3
+        ],
+        [
+          3,
+          "Solution",
+          3
+        ],
+        [
+          2,
+          "Question A4",
+          3
+        ],
+        [
+          3,
+          "Solution",
+          3
+        ],
+        [
+          2,
+          "Question A5",
+          3
+        ],
+        [
+          3,
+          "Solution",
+          3
+        ],
+        [
+          2,
+          "Question A6",
+          3
+        ],
+        [
+          3,
+          "Solution",
+          3
+        ],
+        [
+          2,
+          "Question A7",
+          3
+        ],
+        [
+          3,
+          "Solution",
+          3
+        ],
+        [
+          2,
+          "Question A8",
+          3
+        ],
+        [
+          3,
+          "Solution",
+          4
+        ],
+        [
+          2,
+          "Question A9",
+          4
+        ],
+        [
+          3,
+          "Solution",
+          4
+        ],
+        [
+          2,
+          "Question A10",
+          4
+        ],
+        [
+          3,
+          "Solution",
+          4
+        ],
+        [
+          1,
+          "2. Propagation d'ondes transverses dans une corde pesante",
+          4
+        ],
+        [
+          2,
+          "Le brin suspendu",
+          4
+        ],
+        [
+          2,
+          "Question B1",
+          4
+        ],
+        [
+          3,
+          "Solution",
+          4
+        ],
+        [
+          2,
+          "Question B2",
+          5
+        ],
+        [
+          3,
+          "Solution",
+          5
+        ],
+        [
+          2,
+          "Question B3",
+          5
+        ],
+        [
+          3,
+          "Solution",
+          5
+        ],
+        [
+          2,
+          "Question B4",
+          5
+        ],
+        [
+          3,
+          "Solution",
+          5
+        ],
+        [
+          2,
+          "Question B5",
+          6
+        ],
+        [
+          3,
+          "Solution",
+          6
+        ],
+        [
+          2,
+          "Question B6",
+          6
+        ],
+        [
+          3,
+          "Solution",
+          6
+        ],
+        [
+          2,
+          "Question B7",
+          6
+        ],
+        [
+          3,
+          "Solution",
+          7
+        ],
+        [
+          2,
+          "Question B8",
+          7
+        ],
+        [
+          3,
+          "Solution",
+          7
+        ],
+        [
+          2,
+          "Question B9",
+          7
+        ],
+        [
+          3,
+          "Solution",
+          7
+        ],
+        [
+          2,
+          "Question B10",
+          7
+        ],
+        [
+          3,
+          "Solution",
+          7
+        ],
+        [
+          2,
+          "Le changement de coordonnée",
+          7
+        ],
+        [
+          2,
+          "Question B11",
+          8
+        ],
+        [
+          3,
+          "Solution",
+          8
+        ],
+        [
+          2,
+          "Question B12",
+          8
+        ],
+        [
+          3,
+          "Solution",
+          8
+        ],
+        [
+          2,
+          "Question B13",
+          8
+        ],
+        [
+          3,
+          "Solution",
+          8
+        ],
+        [
+          2,
+          "Question B14",
+          8
+        ],
+        [
+          3,
+          "Solution",
+          8
+        ],
+        [
+          2,
+          "Question B15",
+          8
+        ],
+        [
+          3,
+          "Solution",
+          9
+        ],
+        [
+          2,
+          "Question B16",
+          9
+        ],
+        [
+          3,
+          "Solution",
+          9
+        ],
+        [
+          2,
+          "Lecture des trajectoires",
+          9
+        ],
+        [
+          2,
+          "Question B17",
+          9
+        ],
+        [
+          3,
+          "Solution",
+          9
+        ],
+        [
+          2,
+          "Question B18",
+          10
+        ],
+        [
+          3,
+          "Solution",
+          10
+        ],
+        [
+          2,
+          "Question B19",
+          10
+        ],
+        [
+          3,
+          "Solution",
+          10
+        ],
+        [
+          2,
+          "La boucle en défilement",
+          10
+        ],
+        [
+          2,
+          "Question B20",
+          11
+        ],
+        [
+          3,
+          "Solution",
+          11
+        ],
+        [
+          2,
+          "Question B21",
+          11
+        ],
+        [
+          3,
+          "Solution",
+          11
+        ],
+        [
+          2,
+          "Question B22",
+          12
+        ],
+        [
+          3,
+          "Solution",
+          12
+        ],
+        [
+          2,
+          "Question B23",
+          13
+        ],
+        [
+          3,
+          "Solution",
+          13
+        ],
+        [
+          2,
+          "Question B24",
+          13
+        ],
+        [
+          3,
+          "Solution",
+          13
+        ],
+        [
+          2,
+          "Question B25",
+          13
+        ],
+        [
+          3,
+          "Solution",
+          14
+        ],
+        [
+          2,
+          "Question B26",
+          14
+        ],
+        [
+          3,
+          "Solution",
+          14
+        ],
+        [
+          1,
+          "Bilan",
+          14
+        ]
+      ],
+      "nombre_signets": 80,
+      "signets_questions": 36,
+      "pages_figures": [
+        2,
+        2,
+        5,
+        6,
+        10,
+        11,
+        12,
+        12,
+        13,
+        14
+      ],
+      "sha256": "f788dd9de99dc4ed1a780f0ec8d7a8d5cb8a545874ff6b059660d8a61b5184be",
+      "rendus_sha256": [
+        "57da15e97cb50225907c41c491873b2f428bac5dd6a8e334746b762faed07a0e",
+        "460bd0bae0734f20f608d5861779a23e519dbcaf2483e39290ec9b30413017c0",
+        "777f38791f91ef2b23d78abb51be10d17a44e7d0b8cb10f4f2a496c6197b82f9",
+        "1bd9e2b917761c586f4acb45d237880a9ad865306d9062f192e2511961d00ba5",
+        "2c19f1dbf52134dcee6c80c580048c3297ddad29852fd7d6aa45f1a79f6a7235",
+        "70c1a946bbcc82886bf6fee3bb5a94aed4804415912fdeefe8b6ac6b8a5c3006",
+        "eeace45ec50a172da3fe7b00eda78854cd111219116d503430196a85df1c237b",
+        "a07cd474ee3f406f3a5702896f2f518e5ec914ab0f3047c0eca9803bfeca703c",
+        "c3441cc1cf065d563f73f7cc255759c8c3a2273191583afe70da383f1373c4d7",
+        "ff3d41b78b11e6cddfd0f93bed8628b92a07d3f3d6f969c81d4d9229d584ebc4",
+        "07fabb5529550cd47cd84fa5cf1b24ac6502465eb771e9ebf36d8e7af3ccf0aa",
+        "e5ee224873f9a25d32ac9e1c826c316c25757fd7d9b447b5d1755643f8b94594",
+        "fc69ad2a86bcfcc02f71653137e31c241a65bed04cad1c856f64bc6e4b7f67d3",
+        "695118d7a7c273eebd8f945c11a8eeae5f011075945bc3ed6f3591b6ac2c5ddf",
+        "5d24d6af7c8ada95f728e1841b8ed09fa11a543b7b15c5f8a6021e04fa1fb8b2"
+      ]
+    }
+  },
+  "empreintes": {
+    "brut.md": "b0234a4b21ba9e417e5aaa2c2afce774b655e32a461c5db1d6b92badcaf03cc1",
+    "guide.md": "e1ae613809040fc901c10e618c11d7521492a3419a8a6085adcb7358f386bdea",
+    "meta.json": "74d05e8b89b5e3d4a75451ef4694d82fc0aca385952e20b378359c8b122a86f7",
+    "verifier_calculs.py": "630b6875721c52ab84a9c13746370f6c61112c48f1b9f66879a4ca5b27d390ad",
+    "figures/interferometre-michelson.svg": "ba30614d28838f4267a63420e5590fc016311fe2462db92dfd4096079cc77100",
+    "figures/coin-air-franges.svg": "98c37ab5ade4b4ad25e3ee089b743c19944d3880eaeb78e3b1f1215c1fa519b1",
+    "figures/element-vertical-au-repos.svg": "d8090f98963a4269b6ec221b6000835b45b1850dbe115eee6fca28704d7ea29e",
+    "figures/forces-et-tangentes.svg": "e25cf5704449f4a1ef638418827c50f683eb3089b5e0eb0cb591de344a29b4f4",
+    "figures/trajectoires-z-et-z-reduit.svg": "6a65e26953d9872e5429fcd06bd2bbd74a3ffb6d04a07b5bc2ce2b8ddab3da37",
+    "figures/boucle-et-entrainement.svg": "ed2b468b64a231973d28920e98b7c2882d8971d7be1245b6cacc2a454ca018aa",
+    "figures/tension-autour-boucle.svg": "10864de37943df25cc2785830087f3845f7985daabf6f390b305ccb6b88fcf24",
+    "figures/celerite-autour-boucle.svg": "a3d75ed81875ddde3f299e9c75a968990b9d707745e04e657440128c8a55b719",
+    "figures/vitesses-signees-brin-descendant.svg": "d26f79573b09ed60bd6fc9313e4a45bea1a743cd2c53d86acf3d0fc733485f4f",
+    "figures/chronophotographie-interpretation.svg": "f3cc769cc7b3085763cda372a84bba269cb58c57a59aa186b9f7723cfa226989",
+    "brut.pdf": "b840d02ac5615450516c865c5563b23fc3f0e8eb8bd546fa4ce876105638675e",
+    "guide.pdf": "f788dd9de99dc4ed1a780f0ec8d7a8d5cb8a545874ff6b059660d8a61b5184be",
+    "controle-calculs.txt": "aa6777d2fb7d298b812db89c1ad875baf91b612a88bbac88be599bd16ad2d909",
+    "bilan-compilation.md": "65b778ac284d005ef14d85205bdb17db1ce675ddbc4215ead67fabac20e104f3",
+    "apercu.jpg": "a3b033eb8ce65465f4b49a4e53584e323c4c9cfea962317de1f09b5ac7237494"
+  },
+  "archive": "ENS-Lyon-second-concours-physique-2026.zip",
+  "sha256": "8b97b763989518a420ec52bbc3b5def599e423204088df8aead918b32cb0e6ac"
+}

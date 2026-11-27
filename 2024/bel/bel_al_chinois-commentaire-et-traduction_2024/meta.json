@@ -1,0 +1,156 @@
+{
+  "slug": "bel_al_chinois-commentaire-et-traduction_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Chinois (commentaire et traduction)",
+    "annee": 2024,
+    "modalite": "écrit commun"
+  },
+  "questions": 2,
+  "duree_heures": 6,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2024-11/Commentaire%20d%27un%20texte%20en%20LVE%20et%20traduction.pdf#page=8",
+    "sujet_sha256": "80d15efa86786e91577675fd10623264c98f1e5e2424288248f1a684c15c9f6f",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2024-11/Chinois%202024%20OK.pdf#page=2",
+    "rapport_jury_sha256": "3258153f8bfbfb8ce7168c2bb1d5d40fcc7b88070ac29ca4cdf664ec95b21605",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2024",
+    "ouvrage": "Yan Geling 严歌苓, « Le Bain céleste » (天浴, 1996).",
+    "provenance": "",
+    "rubriques_rapport": {
+      "commentaire": [
+        2,
+        4
+      ],
+      "version": [
+        2,
+        3
+      ]
+    }
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2024-11/Commentaire%20d%27un%20texte%20en%20LVE%20et%20traduction.pdf#page=8",
+      "sha256": "80d15efa86786e91577675fd10623264c98f1e5e2424288248f1a684c15c9f6f",
+      "pages": 24,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "1f33d62d2f2871fbd373843ba5fed681f83b35c59a9ab1b31a272b421148df99"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "3ea33261456a99b4e412cefc548d9cbb5b7a5a907bf3904edbcad2bb93d9a265"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "d4ff3cfdd64998d889fb41225feb662cf621722a3be0d5710b612984616369d6"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "c9845e7505d3c5c2dcf23ced67e0e1258ed198cb725473c2f3c57b61523b3d1e"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2024-11/Chinois%202024%20OK.pdf#page=2",
+      "sha256": "3258153f8bfbfb8ce7168c2bb1d5d40fcc7b88070ac29ca4cdf664ec95b21605",
+      "pages": 6,
+      "pages_verifiees": [
+        {
+          "numero": 2,
+          "rendu_sha256": "461af0fcc5ac13b3223a4e6d6e211429ec6a7d0beb39b61fe2613400fd733cc1"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "b8b777f7ce0942810454b9eeb5f91a001f328379c6cc74291b3d5346ef27744a"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "4cbdc9b3384a5420b7e3e67394c95fae216babfaeab079ddebe4df17135787ef"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "Commentaire",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "La chanson permet un rapprochement. L’odeur, la dent en or et le travail de l’eau rendent ensuite à Jin un corps et une histoire."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire composé en chinois sur l’extrait intégral, version française originale aux bornes imprimées, indications et schéma."
+    },
+    {
+      "phase": "revision",
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Vérification visuelle du départ en milieu de phrase, de la place du sourire et du passage intégral jusqu’au dialogue sur la fosse. Relecture des distinctions du jury entre 一流, 光 et la condition 实在不死."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Yan Geling 严歌苓, « Le Bain céleste » (天浴, 1996)."
+    ],
+    "note": "Le commentaire et la version pédagogique sont originaux. Les droits sur les œuvres étudiées appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire",
+      "Version"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Commentaire",
+        "pages_pdf": [
+          8,
+          9
+        ],
+        "page_pdf": 8,
+        "ligne_debut": 1,
+        "ligne_fin": 31
+      },
+      {
+        "question": "Version",
+        "page_pdf": 8,
+        "pages_pdf": [
+          8
+        ],
+        "ligne_debut": 4,
+        "ligne_fin": 15,
+        "debut": "天天叫身上痒",
+        "fin": "老金又腼腆地笑了"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

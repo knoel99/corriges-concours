@@ -25,6 +25,11 @@
       "legende": "Schéma cinématique en configuration déployée, dans le plan des panneaux"
     },
     {
+      "fichier": "figures/q30-verrouillage.svg",
+      "question": "Q30",
+      "legende": "Évolution de l’angle du panneau calculée par les équations (54), avec deux lois de passage au verrouillage du bras. Les temps de déploiement obtenus sont de 7,72 s et 10,66 s."
+    },
+    {
       "fichier": "figures/q31-schema-bloc.svg",
       "question": "Q31",
       "legende": "Schéma de commande complété : boucle de vitesse interne (codeur K_C) et boucle de position à retour unitaire"
@@ -33,11 +38,6 @@
       "fichier": "figures/q34-schema-bloc-correcteur.svg",
       "question": "Q34",
       "legende": "Schéma de commande avec le correcteur C(p) inséré entre K_G et la boucle de vitesse"
-    },
-    {
-      "fichier": "figures/q30-verrouillage.svg",
-      "question": "Q30",
-      "legende": "Évolution de l’angle du panneau calculée par les équations (54), avec deux lois de passage au verrouillage du bras. Les temps de déploiement obtenus sont de 7,72 s et 10,66 s."
     }
   ],
   "sources": {
@@ -45,7 +45,8 @@
     "rapport": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/MP_Phys%20%26%20SI%20OK.pdf",
     "sujet_sha256": "6a0b01a5341ac5cc01b6c1a4e9a3109ce09de66d7c68e7883c05f7ee912c6984",
     "rapport_sha256": "60d9618b28cb223c6a7aec1e4bf8d49273995eed0fdc15d426677e0503d4ad25",
-    "orbite_smile_esa": "https://www.esa.int/media/smile-reaches-science-orbit"
+    "orbite_smile_esa": "https://www.esa.int/media/smile-reaches-science-orbit",
+    "orbite_smile_altitudes_esa": "https://www.esa.int/articles/about-us/directorates/science/smile/how-to-follow-the-smile-launch-live"
   },
   "contributions": [
     {
@@ -93,7 +94,116 @@
       "perimetre": "Relecture des 37 questions avec sous-questions, des deux éditions et des schémas. Vérification de la dispersion et de la stabilité de L4, rectification de l’orbite de SMILE avec la source ESA, intégration numérique du mouvement des panneaux avant la butée et comparaison de deux modèles de verrouillage.",
       "agent": "astra_physique",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "tour": 4,
+      "modifications": true,
+      "perimetre": "Comparaison des 37 questions et de leurs items avec les deux éditions et le fac-similé. Recalcul de la fréquence plasma, des points de Lagrange, des trajectoires et du minimum d’encombrement. Correction du référentiel de SMILE en Q20, de la marge d’encombrement en Q29 et du choix numérique du gain en Q33. Six schémas vérifiés.",
+      "agent": "fui_physique_un",
+      "fournisseur": "codex"
     }
   ],
-  "date_revision": "2026-11-24"
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21",
+      "Q22",
+      "Q23",
+      "Q24",
+      "Q25",
+      "Q26",
+      "Q27",
+      "Q28",
+      "Q29",
+      "Q30",
+      "Q31",
+      "Q32",
+      "Q33",
+      "Q34",
+      "Q35",
+      "Q36",
+      "Q37"
+    ],
+    "items_verifies": [
+      "Q1.a",
+      "Q1.b",
+      "Q2.a",
+      "Q2.b",
+      "Q3.a",
+      "Q3.b",
+      "Q3.c",
+      "Q3.d",
+      "Q4",
+      "Q5.a",
+      "Q5.b",
+      "Q5.c",
+      "Q6.a",
+      "Q6.b",
+      "Q7.a",
+      "Q7.b",
+      "Q8.a",
+      "Q8.b",
+      "Q9.a",
+      "Q9.b",
+      "Q10",
+      "Q11",
+      "Q12.a",
+      "Q12.b",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16.a",
+      "Q16.b",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21",
+      "Q22",
+      "Q23",
+      "Q24",
+      "Q25",
+      "Q26",
+      "Q27",
+      "Q28",
+      "Q29",
+      "Q30",
+      "Q31",
+      "Q32",
+      "Q33",
+      "Q34",
+      "Q35",
+      "Q36",
+      "Q37"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Comparaison des 37 questions et de leurs items avec les deux éditions et le fac-similé. Recalcul de la fréquence plasma, des points de Lagrange, des trajectoires et du minimum d’encombrement. Correction du référentiel de SMILE en Q20, de la marge d’encombrement en Q29 et du choix numérique du gain en Q33. Six schémas vérifiés."
+  }
 }

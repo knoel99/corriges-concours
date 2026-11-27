@@ -1,0 +1,128 @@
+{
+  "slug": "banque-pt_pt_francais-b_2020",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français B",
+    "annee": 2020
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2020/fr_b_2020_pt.pdf",
+    "sujet_sha256": "3889548f501febcc5b07a61da9bc2b83c533739fa93e42f8fb0beea17fb9e178",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2020/rapport_fra_b_ecrit_2020.pdf",
+    "rapport_sha256": "500efd21c6004c745392bb4580923b6ae1afd2af3215115a6d2f700f1329e00b",
+    "programme_officiel": "https://www.education.gouv.fr/bo/19/Hebdo27/ESRS1900148A.htm",
+    "theme": "La démocratie",
+    "oeuvres_au_programme": [
+      "Tocqueville, De la démocratie en Amérique, tome II, partie IV",
+      "Aristophane, L’Assemblée des femmes et Les Cavaliers (traduction Marc-Jean Alfonsi)",
+      "Philip Roth, Le Complot contre l’Amérique (traduction Josée Kamoun)"
+    ],
+    "source_coefficients": "https://www.banquept.fr/documents/2020/Coefficients.pdf#page=1",
+    "admissibilite_admission": "ENS Paris-Saclay et ENS Rennes, écrits de classement exceptionnel, coefficient 4. Paris-Saclay indique la prise en compte dès l’admissibilité.",
+    "rectificatif_programme": "https://www.education.gouv.fr/bo/19/Hebdo31/ESRS1900183A.htm"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "Qui intervient dans la décision ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lyon_ses_sources",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture de Braud jusqu’à la conclusion sur la stabilité sociale. Distinction du mépris et de la déférence, du mandat et de la maîtrise des options. Contrôle du rectificatif concernant Tocqueville et de la grille exceptionnelle des coefficients. Rédaction des deux éditions, vérification du programme et réalisation du schéma."
+    },
+    {
+      "phase": "redaction",
+      "agent": "lyon_ses_sources",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Resserrement de quatre passages de la dissertation de Braud dans les deux éditions après lecture des premières épreuves PDF. Vérification du maintien du résumé de 200 mots."
+    },
+    {
+      "phase": "redaction",
+      "agent": "lyon_ses_sources",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Présentation condensée des références et du barème dans l’édition brute pour réunir la fin du raisonnement sur la deuxième page. Vérification des bornes, de la coupe imprimée et du décompte contre l’édition guidée."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Résumé",
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Résumé",
+        "page_pdf": 2,
+        "page_pdf_fin": 5,
+        "page_consigne": 5,
+        "perimetre": "Du premier paragraphe page 2, « L’invocation du peuple », à la fin du dernier paragraphe page 5, « de l’ordre social tout entier ». L’extrait contient une coupe signalée au premier paragraphe. Les questions sont imprimées page 5. La page 6 est blanche.",
+        "mots_demandes": 200,
+        "mots_admis": [
+          180,
+          220
+        ],
+        "mots_par_paragraphe": [
+          50,
+          83,
+          67
+        ],
+        "mots_rediges": 200,
+        "points": 8
+      },
+      {
+        "question": "Dissertation",
+        "page_pdf": 5,
+        "page_pdf_fin": 5,
+        "perimetre": "Les œuvres font-elles apparaître le décalage décrit par Braud entre l’attribution de la souveraineté et du dernier mot au peuple, et la répartition effective du pouvoir dans la société ?",
+        "points": 12
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

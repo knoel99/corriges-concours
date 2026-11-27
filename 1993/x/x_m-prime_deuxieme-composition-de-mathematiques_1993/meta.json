@@ -1,0 +1,171 @@
+{
+  "slug": "x_m-prime_deuxieme-composition-de-mathematiques_1993",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "M prime",
+    "filiere_historique": "M′",
+    "matiere": "Deuxième composition de mathématiques",
+    "annee": 1993
+  },
+  "questions": 14,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-619fdeb48629f7484c87",
+    "sujet_sha256": "43832424e664d46cb62ce1d24f53ed4bcd5fdc3c64a33ebe02f9abdea8fbc47f",
+    "notice_ups": "m93xm2",
+    "reproduction": "https://www.sujetsetcorriges.fr/dl/X/Maths/MP/sec-x-1993-maths2-MP.pdf",
+    "reproduction_sha256": "56e7dde570ad9462ea308d467f8369e69134779ac708ca17ff14f4b29131d9cb",
+    "pages": 2,
+    "calendrier": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000345466",
+    "rapport_jury": "",
+    "observation_rapport": "Les deux exemplaires du sujet et la notice UPS sont les sources consultées ; aucun rapport de jury n’y est joint.",
+    "provenance": "Le fac-similé de l’UPS porte l’option M′ et le rang de la composition. Les expressions et les conditions initiales ont été relues sur les pages originales."
+  },
+  "figures": [
+    {
+      "question": "10",
+      "fichier": "figures/trois-coniques.svg",
+      "legende": "Figure 1 — Courbes de courbure équiaffine constante positive, nulle ou négative, avec un même point, une même vitesse et une même accélération initiales."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ]
+      },
+      {
+        "question": "2",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ]
+      },
+      {
+        "question": "3",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ]
+      },
+      {
+        "question": "4",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ]
+      },
+      {
+        "question": "5",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ]
+      },
+      {
+        "question": "6",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ]
+      },
+      {
+        "question": "7",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ]
+      },
+      {
+        "question": "8",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ]
+      },
+      {
+        "question": "9",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ]
+      },
+      {
+        "question": "10",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ]
+      },
+      {
+        "question": "11",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ]
+      },
+      {
+        "question": "12",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ]
+      },
+      {
+        "question": "13",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ]
+      },
+      {
+        "question": "14",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ]
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Quatorze questions. Les trois signes de la courbure en 10, les deux invariants en 12 et le développement en coordonnées centrées en 14 sont traités."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "histoire_lyon_2017",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Quatorze questions. Les trois signes de la courbure en 10, les deux invariants en 12 et le développement en coordonnées centrées en 14 sont traités. Rédaction et vérification des solutions, des indications et de la figure."
+    }
+  ]
+}

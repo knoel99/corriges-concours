@@ -1,0 +1,54 @@
+{
+  "slug": "ens_mp-pc_russe-lv1_2007",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Russe (LV1)",
+    "annee": 2007,
+    "modalite": "écrit"
+  },
+  "intitule": "L’abstention aux référendums de Pskov et de Novgorod",
+  "questions": 2,
+  "redaction": "Traduction intégrale en français et traitement des questions en russe. L’abstention aux référendums de Pskov et de Novgorod.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2007/sujet-ecrit-2007-mp-pc_langue_vivante_1.pdf#page=6",
+    "sha256_sujet": "15f4c97a9eb06e463e4a884fa769e62b3ea7db6a925e0c92fce4dfe70e89da5b",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2007",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2007/sujet-ecrit-2007-mp-pc_langue_vivante_1.pdf#page=6",
+        "sha256": "15f4c97a9eb06e463e4a884fa769e62b3ea7db6a925e0c92fce4dfe70e89da5b"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I",
+      "fichier": "figures/lecture-de-la-version.svg",
+      "legende": "Pourquoi les deux consultations ont échoué"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "arabe_mp_pc_2011_2014",
+      "session": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Traduction intégrale en français et traitement des questions en russe. L’abstention aux référendums de Pskov et de Novgorod."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I",
+      "II"
+    ]
+  }
+}

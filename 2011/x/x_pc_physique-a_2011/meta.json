@@ -1,0 +1,102 @@
+{
+  "slug": "x_pc_physique-a_2011",
+  "epreuve": {
+    "concours": "X",
+    "ecoles_historiques": "École polytechnique et ESPCI",
+    "filiere": "PC",
+    "matiere": "Physique A",
+    "annee": 2011
+  },
+  "questions": 25,
+  "intitule": "Interactions dipolaires entre particules colloïdales",
+  "redaction": "Les 25 questions de I.1 à IV.5 sont résolues dans les deux éditions. Les lois de force, durées, estimations de seuil, pente de compression et couple sont dérivés. Quatre figures originales.",
+  "sources": {
+    "garde": "XE · École polytechnique et ESPCI · 4 heures",
+    "sujet": "https://www.doc-solus.fr/prepa/sci/adc/pdf/enonces.pdf/2011/PC_PHYSIQUE_X_1_2011.enonce.pdf",
+    "sujet_sha256": "71b13b5e982ed9061ab83a56ed8fabad70d9bc5e9edc3d4d9b639b525b550bb5",
+    "rapport_jury": "https://www.doc-solus.fr/prepa/sci/adc/pdf/rapports.pdf/2011/PC_PHYSIQUE_X_1_2011.rapport.pdf",
+    "rapport_sha256": "c2873f8e2c5ddf8af99e0c273f59bbc91f79d1dd0d841990470ce7c66d28d6bf"
+  },
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "physique_a_pc_x",
+      "session": "physique_a_pc_x",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des six pages du rapport de Bernard Andrieu et Emmanuel Levêque, notamment le mouvement des deux sphères, la régression du module d’Young et le référentiel barycentrique."
+    },
+    {
+      "phase": "redaction",
+      "agent": "physique_a_pc_x",
+      "session": "physique_a_pc_x",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Les 25 questions de I.1 à IV.5 sont résolues dans les deux éditions. Les lois de force, durées, estimations de seuil, pente de compression et couple sont dérivés. Quatre figures originales."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I.1 et I.2",
+      "fichier": "figures/champs.svg",
+      "legende": "En coupe méridienne, les lignes du champ sont orientées. Les cercles en tirets à gauche sont les équipotentielles de la charge."
+    },
+    {
+      "numero": 2,
+      "question": "II.9",
+      "fichier": "figures/capture.svg",
+      "legende": "Une excursion aléatoire rapproche la particule du voisin, puis la dérive magnétique l’amène au contact. Schéma dans le référentiel du voisin."
+    },
+    {
+      "numero": 3,
+      "question": "IV.1",
+      "fichier": "figures/couple.svg",
+      "legende": "Avec le retard compté du dimère vers le champ, le couple est positif pour un petit retard positif. Les points pleins marquent les équilibres stables."
+    },
+    {
+      "numero": 4,
+      "question": "IV.5",
+      "fichier": "figures/decrochage.svg",
+      "legende": "Au-dessus du seuil, l’orientation du dimère oscille tout en progressant. Calcul en régime suramorti pour une pulsation égale à 1,3 fois le seuil."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "II.8",
+      "II.9",
+      "II.10",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "IV.1",
+      "IV.2",
+      "IV.3",
+      "IV.4",
+      "IV.5"
+    ]
+  }
+}

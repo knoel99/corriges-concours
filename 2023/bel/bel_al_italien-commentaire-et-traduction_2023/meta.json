@@ -1,0 +1,98 @@
+{
+  "slug": "bel_al_italien-commentaire-et-traduction_2023",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Italien (commentaire et traduction)",
+    "annee": 2023
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2023-09/Commentaire-d-un-texte-en-LVE.pdf#page=14",
+    "sujet_sha256": "465bc18f65e3127c7bcf5720f6042d95180133384f245e34fd7b38acd0ffb760",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2023-11/Italien-2023.pdf#page=2",
+    "rapport_sha256": "34c01e2850cad810e1e5ee8b0d90807a7b87831e1b8f5df790dec1a4afd7ccb6",
+    "archive_session": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2023",
+    "archive_session_sha256": "f6056d10df69cb1cd23d19cee5fd113ebee95a1de79dd9a39e5b1a150e9e01d6",
+    "auteur_oeuvre": "Natalia Ginzburg, Caro Michele (1973, édition citée de 1995)."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "Ce qu’Angelica peut encore faire"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire intégral en italien, version française du passage indiqué, schéma et accompagnement."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Réexamen du nombre indéfini de lettres, de la précision à laquelle Angelica peut réellement prétendre et du caractère périodique de l’aide à Mara."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire",
+      "Version française"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Commentaire",
+        "page_pdf": 14,
+        "page_pdf_fin": 15,
+        "perimetre": "Lettre du 12 juin 1971 à Mara, jusqu’à la signature d’Angelica, après la ligne 57.",
+        "pages_rapport": [
+          2,
+          4
+        ]
+      },
+      {
+        "question": "Version française",
+        "page_pdf": 14,
+        "page_pdf_fin": 15,
+        "perimetre": "Lignes 14 à 34, de « Vorrei sapere » à « che mi piacevano ».",
+        "pages_rapport": [
+          4,
+          6
+        ]
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

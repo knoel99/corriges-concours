@@ -1,0 +1,139 @@
+{
+  "slug": "ens-psl_cnel-lettres_litterature-diderot-et-richardson_2021",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "CNEL Lettres",
+    "matiere": "Littérature — Diderot et Richardson",
+    "annee": 2021,
+    "modalite": "écrit"
+  },
+  "intitule": "Littérature — Diderot et Richardson",
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/litteratures-ecrit-cnel_2021.pdf",
+    "sujet_sha256": "9333c2080b597d9a99b9ebfc2b78c9abddeb9eaf65200013fe1ec32379782cb5"
+  },
+  "figures": [
+    {
+      "fichier": "figures/occasion.svg",
+      "legende": "Du lecteur au témoin d’une injustice",
+      "question": "A et B"
+    },
+    {
+      "fichier": "figures/un-verdict-en-deux-voix.svg",
+      "question": "B",
+      "legende": "Dans le livre VII des Fables, la qualification des fautes change avec le pouvoir de celui qui les avoue.",
+      "provenance": "Schéma original pour cette révision."
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de l’analyse détaillée A, de la réflexion personnelle B en plusieurs paragraphes, de son accompagnement et du schéma."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification des limites de la citation à analyser, de son insertion dans le passage, des questions distinctes et du barème 5/15 dans les deux éditions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Vérification des cinq propositions négatives, des quatre notes et de la portée de « certains ». Précision sur la scène de lecture de Diderot, étude du verdict de la fable VII, 1 et de la révision du jugement chez Austen."
+    }
+  ],
+  "duree_heures": 3,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens.psl.eu/sites/default/files/litteratures-ecrit-cnel_2021.pdf",
+      "sha256": "9333c2080b597d9a99b9ebfc2b78c9abddeb9eaf65200013fe1ec32379782cb5",
+      "pages": 2,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "7554686ed06792534488a96e5f7e867051b22531cca8a71e6ad5727adaae29ec"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "3588dd7b7ba0559f2af1c0e6cac5c2fe3a2e886e5ccc6f137b176d9a31ffe282"
+        }
+      ],
+      "notice_et_notes": "Denis Diderot, Éloge de Richardson (1761). L’extrait couvre les pages 1 et 2 du PDF. La notice présente Paméla (1740) et Clarisse Harlowe (1748). Quatre notes de la page 1 identifient Charron, Nicole, Lovelace et Tomlinson. La phrase de A commence p. 1, se poursuit p. 2 et y est recopiée dans la question."
+    },
+    "catalogue": {
+      "url": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-normalien-etudiant-lettres-et-concours-medecine-humanites-2021",
+      "sha256": "fe771d7899002b75238fb6b5e5cd5359dbb859b7b78397a58c4bdaa4f663c963",
+      "constat": "Le lien « Littératures » du catalogue de 2021 pointe vers un rapport départemental indisponible lors du contrôle. Les consignes sont celles du feuillet."
+    },
+    "rapport_signale": {
+      "url": "https://www.ens.psl.eu/sites/default/files/rapport-litteratures_2021.pdf",
+      "statut_http": 404,
+      "consultation": "2026-11-26"
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "A",
+        "page_pdf": 2,
+        "points": 5,
+        "consigne": "Vous commenterez cette phrase de manière approfondie :",
+        "incipit": "Cet auteur ne fait point couler le sang",
+        "explicit": "perd jamais dans les régions de la féerie.",
+        "consigne_analyse": "Dans une réponse concise, mais aussi exhaustive que possible, vous envisagerez cette citation dans tous ses aspects : par exemple, sa place dans le passage, son style, son contexte historique et culturel, ses références intertextuelles, etc."
+      },
+      {
+        "question": "B",
+        "page_pdf": 2,
+        "points": 15,
+        "consigne": "Considérez-vous comme Diderot que certains récits de fiction nous rendent moralement meilleurs ?",
+        "exigences": "Vous répondrez de manière argumentée, dans un texte organisé (c’est-à-dire divisé en paragraphes et amenant à une conclusion). Vous vous appuierez sur vos connaissances théoriques et historiques, ainsi que sur vos expériences personnelles de lectures et sur leur rôle dans votre vie."
+      }
+    ],
+    "choix": "Deux questions obligatoires à traiter dans l’ordre souhaité.",
+    "annexes_imposees": []
+  }
+}

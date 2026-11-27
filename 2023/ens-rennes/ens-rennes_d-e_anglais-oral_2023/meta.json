@@ -1,0 +1,112 @@
+{
+  "slug": "ens-rennes_d-e_anglais-oral_2023",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Anglais (oral)",
+    "annee": 2023,
+    "modalite": "oral"
+  },
+  "intitule": "Épreuve orale d’anglais",
+  "questions": 4,
+  "redaction": "Quatre analyses et commentaires en anglais, huit relances traitées, repérage des locuteurs et de la chronologie, avec deux figures dans les deux éditions.",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/annales-oral-anglais-d-e-2023_1698768003648-pdf",
+    "sujet_sha256": "3c2e465a7c16a0e71a8cf7d56edf45e5ffe766220c51e7a77635475e0ff23db2",
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2023-1",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-oral-anglais-d-e-2023_1698421690709-pdf",
+    "rapport_sha256": "9bea95fc4f6e3e4ba97aee1466e141f59aa810e34c53f4624a3861537c2b45a6"
+  },
+  "billets": [
+    {
+      "numero": 1,
+      "intitule": "Australian judge apologises after claiming that colleagues are appointed regardless of merit",
+      "pages": [
+        1
+      ],
+      "support": "fascicule distribué",
+      "url": "https://www.ens-rennes.fr/medias/fichier/annales-oral-anglais-d-e-2023_1698768003648-pdf#page=1",
+      "numero_imprime": 1
+    },
+    {
+      "numero": 2,
+      "intitule": "Animal welfare groups lose court challenge over ‘Frankenchickens’",
+      "pages": [
+        2
+      ],
+      "support": "fascicule distribué",
+      "url": "https://www.ens-rennes.fr/medias/fichier/annales-oral-anglais-d-e-2023_1698768003648-pdf#page=2",
+      "numero_imprime": 3
+    },
+    {
+      "numero": 3,
+      "intitule": "CBI sought legal advice over possible insolvency after misconduct scandal",
+      "pages": [
+        3
+      ],
+      "support": "fascicule distribué",
+      "url": "https://www.ens-rennes.fr/medias/fichier/annales-oral-anglais-d-e-2023_1698768003648-pdf#page=3",
+      "numero_imprime": 4
+    },
+    {
+      "numero": 4,
+      "intitule": "Trump hush money trial set for March 2024 during Republican primaries",
+      "pages": [
+        4
+      ],
+      "support": "fascicule distribué",
+      "url": "https://www.ens-rennes.fr/medias/fichier/annales-oral-anglais-d-e-2023_1698768003648-pdf#page=4",
+      "numero_imprime": 5
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "2",
+      "fichier": "figures/welfare-and-liability.svg",
+      "legende": "The welfare regulation and the scope of the ruling."
+    },
+    {
+      "numero": 2,
+      "question": "4",
+      "fichier": "figures/dates-and-voices.svg",
+      "legende": "A timetable, an allegation and a political claim occupy different places in the news report."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Les quatre titres ont été recoupés avec le rapport. Celui-ci demande une synthèse reformulée, une analyse des choix et des silences du texte et un échange argumenté en anglais intelligible."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Quatre analyses et commentaires en anglais, huit relances traitées, repérage des locuteurs et de la chronologie, avec deux figures dans les deux éditions."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "precision": "Le fascicule propose quatre articles des 23 au 30 mai 2023, imprimés sous les numéros 1, 3, 4 et 5. Les quatre analyses suivent les pages dans cet ordre. Les questions d’entretien sont proposées pour l’entraînement."
+  }
+}

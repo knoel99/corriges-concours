@@ -1,0 +1,64 @@
+{
+  "slug": "x-ens_mp-pc-psi_arabe_2016",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Arabe",
+    "annee": 2016,
+    "modalite": "écrit"
+  },
+  "intitule": "La migration des chercheurs et les conditions de production du savoir",
+  "questions": 2,
+  "redaction": "Synthèse titrée en arabe croisant la formation en Égypte, l’exemple irakien, le marché international et le dessin de la loupe. Réaction argumentée à l’éditorial de Yass Khodeir al-Bayati sur les deux formes de fuite des cerveaux.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/06/16_mp_pc_sujet_-Arabe-XEULCR.pdf",
+    "sha256_sujet": "859a4947512ced4e22df0da2cdb569f49eb179e020ea6bb70d6187abda3b4bfe",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2016/",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/06/16_mp_pc_sujet_-Arabe-XEULCR.pdf",
+        "sha256": "859a4947512ced4e22df0da2cdb569f49eb179e020ea6bb70d6187abda3b4bfe"
+      },
+      {
+        "role": "rapport",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/03/16_MP-PC_rap_Earabe.pdf",
+        "sha256": "816617e03e07367a0d8dac2e1a2aae1c78dcfee8da6adeadc3c3e5b469882b38"
+      },
+      {
+        "role": "autre publication du sujet",
+        "url": "https://www.ens.psl.eu/IMG/file/concours/2016/sujets/MPI/16_mppc_sujet_lve_arabe.pdf",
+        "sha256": "398e283acb94869885b4e301186c884e234d2c401c50616bd24baffe2631dda7"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/lecture-du-dossier.svg",
+      "legende": "Ce que change le déplacement d’un chercheur pour les trois acteurs du dossier."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "arabe_mp_pc_2011_2014",
+      "session": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Synthèse titrée en arabe croisant la formation en Égypte, l’exemple irakien, le marché international et le dessin de la loupe. Réaction argumentée à l’éditorial de Yass Khodeir al-Bayati sur les deux formes de fuite des cerveaux."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  }
+}

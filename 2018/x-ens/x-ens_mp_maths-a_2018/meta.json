@@ -10,9 +10,11 @@
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_MPI_sujet_MathA.pdf",
-    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/10/18_MP_rap_eMathA.pdf"
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/10/18_MP_rap_eMathA.pdf",
+    "sha256_sujet": "f7c50921b284815787ffc0ec47c215f4cd063d0dd667a4e59b79b7e3aad0b2f1",
+    "sha256_rapport_jury": "20810593459116b060fb2159cb7467f463c45499b646cb752358b57b26f3109f"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "figures": [
     {
       "fichier": "figures/deformation-cercle.svg",
@@ -101,6 +103,68 @@
       "perimetre": "Relecture intégrale des 36 réponses et six figures dans les deux éditions. Rôle de l’écart spectral, reconstruction par le bloc inversible, courbe de rang un à vitesse de rang deux et composante normale quadratique.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_maths_b_recentes",
+      "modifications": true,
+      "perimetre": "36 subdivisions et six figures contrôlées. Vérification de la décomposition singulière, des conditions d’égalité, de la projection oblique à facteur redondant et du contrôle quadratique. Précision en Q9c du minimum sans écart spectral et en Q16c du rôle du rang k."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5a",
+      "5b",
+      "6a",
+      "6b",
+      "6c",
+      "7",
+      "8a",
+      "8b",
+      "9a",
+      "9b",
+      "9c",
+      "10a",
+      "10b",
+      "10c",
+      "11",
+      "12",
+      "13a",
+      "13b",
+      "13c",
+      "14a",
+      "14b",
+      "15a",
+      "15b",
+      "16a",
+      "16b",
+      "16c",
+      "17",
+      "18a",
+      "18b",
+      "18c",
+      "18d",
+      "19"
+    ],
+    "precision": "Énoncé de 6 pages PDF et rapport de 4 pages PDF. 36 subdivisions et six figures contrôlées. Vérification de la décomposition singulière, des conditions d’égalité, de la projection oblique à facteur redondant et du contrôle quadratique. Précision en Q9c du minimum sans écart spectral et en Q16c du rôle du rang k.",
+    "origine_attestation": {
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "f7c50921b284815787ffc0ec47c215f4cd063d0dd667a4e59b79b7e3aad0b2f1",
+      "sha256_rapport_jury_controle": "20810593459116b060fb2159cb7467f463c45499b646cb752358b57b26f3109f",
+      "perimetre": "36 subdivisions et six figures contrôlées. Vérification de la décomposition singulière, des conditions d’égalité, de la projection oblique à facteur redondant et du contrôle quadratique. Précision en Q9c du minimum sans écart spectral et en Q16c du rôle du rang k.",
+      "commit_edition_anterieure": "45646931102e9dbad9baf4f6ddf7d7aec38fa3d9"
+    }
+  }
 }

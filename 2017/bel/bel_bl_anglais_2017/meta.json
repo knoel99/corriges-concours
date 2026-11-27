@@ -1,0 +1,68 @@
+{
+  "slug": "bel_bl_anglais_2017",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Anglais",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "Modernity and its Discontents",
+  "questions": 1,
+  "redaction": "La composition en anglais croise les perspectives des trois documents britanniques et des trois documents américains.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/ecrits-communs-optionnels-ses-2017_1506587060551.pdf#page=13",
+    "pages": "13–19",
+    "sha256_sujet": "bdc658b34f2b80b696b7a912173f1ab822dae1d52727d0732ab0305166620e41",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/17_BL_anglais_opt_ecrit.pdf",
+    "sha256_rapport_jury": "7da22d5409010d2d3a982694140ef780993e64ce4272bcb98986d5ea011dc5e8",
+    "documents": [
+      "G. M. Trevelyan, English Social History, 1942",
+      "Twelve Southerners, I’ll Take My Stand: The South and the Agrarian Tradition, 1930, extrait adapté",
+      "Clark Kerr et al., Industrialism and Industrial Man, 1960",
+      "Barbara Castle, House of Commons, second reading of the Equal Pay Bill, 9 February 1970",
+      "Dipesh Chakrabarty, Provincializing Europe: Postcolonial Thought and Historical Difference, 2000",
+      "John Aloysius Farrell, Scopes and Evolution Lost the Trial, But Modernity Won, US News, 9 April 2009, extrait adapté"
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Composition",
+      "fichier": "figures/who-gets-to-wait.svg",
+      "legende": "Three political clocks in the dossier. Each delay has an identifiable cause."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Rapport de Clarisse Berthezène, Elizabeth Levy et Jean-Christian Vinel, contrôle du contexte et du genre des six documents, lecture des changements d’échelle et du décalage entre le verdict Scopes et sa mémoire."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Essai rédigé en anglais sur les six pièces articulant consommation, travail, démocratie, historicisme et médiatisation. Schéma sur les délais et indications sur l’argumentation comparative."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Analyse et commentaire de la totalité du dossier en anglais"
+    ]
+  }
+}

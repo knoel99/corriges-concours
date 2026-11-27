@@ -28,7 +28,7 @@
       "legende": "Quantités offertes selon la forme de concurrence"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -53,6 +53,88 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Comparaison des facteurs de surplus, du seuil d’entrée et des solutions de coin. Vérification des profits avec les deux types du suiveur en information complète."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Contrôle des hypothèses de la première partie du sujet officiel. Comparaison chiffrée des quantités et prix de Cournot et Stackelberg par la pente de la demande inverse dans les deux éditions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "gestion_2022_2023",
+      "agent": "gestion_2022_2023",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Les 44 questions terminales des pages 1/4 à 4/4 ont été vérifiées dans les deux éditions. Le contrôle porte sur les cinq structures de marché, les surplus et l’indice de Lerner, l’entrée avec coût fixe et engagement préalable, puis les profits avec et sans information sur les coûts. Un équilibre numérique à production nulle vérifie la portée des formules de la troisième partie."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1.1",
+      "1.1.2",
+      "1.1.3",
+      "1.2.1",
+      "1.2.2",
+      "1.3.1",
+      "1.3.2",
+      "1.3.3",
+      "1.3.4",
+      "1.3.5.1",
+      "1.3.5.2",
+      "1.3.5.3",
+      "1.4.1",
+      "1.4.2",
+      "1.4.3",
+      "1.4.4",
+      "1.5.1",
+      "1.5.2",
+      "1.5.3",
+      "1.5.4",
+      "1.5.5",
+      "1.6.1",
+      "1.6.2",
+      "1.6.3",
+      "1.6.4",
+      "1.7",
+      "2.1.1",
+      "2.1.2",
+      "2.2.1",
+      "2.2.2",
+      "2.2.3",
+      "2.3.1",
+      "2.3.2",
+      "2.3.3",
+      "2.3.4",
+      "3.1",
+      "3.2.1",
+      "3.2.2",
+      "3.3.1",
+      "3.3.2",
+      "3.3.3",
+      "3.4.1",
+      "3.4.2",
+      "3.4.3"
+    ],
+    "precision": "Pages imprimées 1/4 à 4/4. Les 26 questions terminales de la partie 1, les 9 de la partie 2 et les 9 de la partie 3, ainsi que la définition demandée en tête de 1.2, sont rapprochées des deux résolutions.",
+    "controle": "Les 44 questions terminales des pages 1/4 à 4/4 ont été vérifiées dans les deux éditions. Le contrôle porte sur les cinq structures de marché, les surplus et l’indice de Lerner, l’entrée avec coût fixe et engagement préalable, puis les profits avec et sans information sur les coûts. Un équilibre numérique à production nulle vérifie la portée des formules de la troisième partie."
+  }
 }

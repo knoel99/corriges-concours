@@ -1,0 +1,125 @@
+{
+  "slug": "ens-rennes_d-e_allemand-oral_2023",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Allemand (oral)",
+    "annee": 2023,
+    "modalite": "oral"
+  },
+  "questions": 5,
+  "sujets": 5,
+  "intitules": {
+    "1": "Energiewende : Lindner sieht in Kernkraft-Comeback keine \"realistische Vorstellung\"",
+    "2": "Peking verbittet sich „Einmischung“ des Bundeskanzlers",
+    "3": "Klimaaktivismus - Angriffe auf Kunstwerke: Was sind die Folgen?",
+    "4": "Annalena Baerbock : \"Keine Revolution, sondern eine Selbstverständlichkeit\"",
+    "5": "Subventionen sind kein Allheilmittel"
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/annales-oral-allemand-d-e-2023_1698768826825-pdf",
+    "sujet_sha256": "0ff099896d5e5b94e8f0d7239f99bc8f6421a488c4b3ed2aabc38bfc33df96fd",
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2023-1",
+    "documents": [
+      {
+        "numero": 1,
+        "titre": "Energiewende : Lindner sieht in Kernkraft-Comeback keine \"realistische Vorstellung\"",
+        "publication": "ZEIT ONLINE, 15. April 2023",
+        "page": 1,
+        "fin_pdf": 1,
+        "reference": "https://www.ens-rennes.fr/medias/fichier/annales-oral-allemand-d-e-2023_1698768826825-pdf#page=1"
+      },
+      {
+        "numero": 2,
+        "titre": "Peking verbittet sich „Einmischung“ des Bundeskanzlers",
+        "publication": "Frankfurter Allgemeine Zeitung, 3. November 2022",
+        "page": 2,
+        "fin_pdf": 2,
+        "reference": "https://www.ens-rennes.fr/medias/fichier/annales-oral-allemand-d-e-2023_1698768826825-pdf#page=2"
+      },
+      {
+        "numero": 3,
+        "titre": "Klimaaktivismus - Angriffe auf Kunstwerke: Was sind die Folgen?",
+        "publication": "Philipp Jedicke, Deutsche Welle, 25. Oktober 2022",
+        "page": 3,
+        "fin_pdf": 3,
+        "reference": "https://www.ens-rennes.fr/medias/fichier/annales-oral-allemand-d-e-2023_1698768826825-pdf#page=3"
+      },
+      {
+        "numero": 4,
+        "titre": "Annalena Baerbock : \"Keine Revolution, sondern eine Selbstverständlichkeit\"",
+        "publication": "ZEIT ONLINE, 1. März 2023",
+        "page": 4,
+        "fin_pdf": 4,
+        "reference": "https://www.ens-rennes.fr/medias/fichier/annales-oral-allemand-d-e-2023_1698768826825-pdf#page=4"
+      },
+      {
+        "numero": 5,
+        "titre": "Subventionen sind kein Allheilmittel",
+        "publication": "Julia Löhr, Frankfurter Allgemeine Zeitung, 5. Mai 2023",
+        "page": 5,
+        "fin_pdf": 5,
+        "reference": "https://www.ens-rennes.fr/medias/fichier/annales-oral-allemand-d-e-2023_1698768826825-pdf#page=5"
+      }
+    ],
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-oral-allemand-d-e-2023_1698421392577-pdf",
+    "rapport_sha256": "1f780f6147337c3b142393f10b562c3c33063a3ef67bd42f881e7780af558e6e",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-oral-allemand-d-e-2023_1698421392577-pdf",
+    "rapport_jury_sha256": "1f780f6147337c3b142393f10b562c3c33063a3ef67bd42f881e7780af558e6e"
+  },
+  "redaction": "Rédaction en allemand des deux éditions pour les 5 billets du fascicule distribué, avec synthèses, commentaires, relances résolues et indications linguistiques contextualisées.",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des trois pages du rapport 2023. Temps de préparation et de passage, distinction résumé/commentaire, part des critères linguistiques, avertissement sur le contresens relatif à Markus Söder."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction en allemand des deux éditions pour les 5 billets du fascicule distribué, avec synthèses, commentaires, relances résolues et indications linguistiques contextualisées.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "fichier": "figures/drei-positionen.svg",
+      "legende": "Am Tag des Atomausstiegs beantworten die drei Politiker unterschiedliche Fragen zur Zukunft der Anlagen."
+    },
+    {
+      "numero": 2,
+      "question": "4",
+      "fichier": "figures/rechte-und-ressourcen.svg",
+      "legende": "Das Landbeispiel zeigt, wie rechtliche Stellung, Finanzierung und Mitsprache zusammenhängen."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ]
+  }
+}

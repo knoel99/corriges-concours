@@ -55,6 +55,84 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Confrontation au dossier original et au rapport du jury. Contrôle des valeurs reportées, des champs, des dénominateurs et des limites de l’interprétation."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture croisée du dossier et du rapport de l’oral commun de sociologie 2026. Document 5 de Tracov 2, décomposition des travailleurs de plateforme en quatre groupes exclusifs. Figure interprétée dans la copie et calcul ou question de méthode développé dans le guidé."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Les témoignages de chauffeurs et l’action des investisseurs publics ont été reliés à la diversité des métiers, aux profils sociaux, aux contraintes et ressources de l’intermédiation. Le coût horaire et la variation des nuitées sont distingués des revenus des personnes.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Le travail de plateforme"
+    ],
+    "annexes_verifiees": [
+      {
+        "document": 1,
+        "page": 2,
+        "intitule": "Chauffeurs Uber : aspirations et déceptions"
+      },
+      {
+        "document": 2,
+        "page": 3,
+        "intitule": "Des politiques d’incitation à la création d’entreprises innovantes"
+      },
+      {
+        "document": 3,
+        "page": 4,
+        "intitule": "Liste des 10 groupes de métiers les plus représentés parmi les travailleurs de plateforme en 2023"
+      },
+      {
+        "document": 4,
+        "page": 5,
+        "intitule": "Caractéristiques sociodémographiques des travailleurs de plateforme en 2023 (en % de colonne)"
+      },
+      {
+        "document": 5,
+        "page": 6,
+        "intitule": "Relations entre le travailleur et la plateforme"
+      },
+      {
+        "document": 6,
+        "page": 7,
+        "intitule": "Comparaison du coût horaire de l’intérim et de la mise à disposition d’autoentrepreneurs"
+      },
+      {
+        "document": 7,
+        "page": 8,
+        "intitule": "Évolution de la fréquentation des hébergements touristiques marchands en nuitées par voyageurs en France entre 2015 et 2016"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "verification": "Les témoignages de chauffeurs et l’action des investisseurs publics ont été reliés à la diversité des métiers, aux profils sociaux, aux contraintes et ressources de l’intermédiation. Le coût horaire et la variation des nuitées sont distingués des revenus des personnes.",
+    "limites": "Un exposé sur les sept documents. Les relances pédagogiques proposées dans le guide ne constituent pas un verbatim du jury."
+  }
 }

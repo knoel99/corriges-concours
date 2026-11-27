@@ -1,0 +1,68 @@
+{
+  "slug": "ens_mp-pc_chinois-le2_2007",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Chinois (LE2)",
+    "annee": 2007,
+    "modalite": "écrit"
+  },
+  "intitule": "L’effet de serre et ses conséquences",
+  "questions": 2,
+  "redaction": "Version du passage entier et réponse argumentée en chinois à la question de la page 5.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2007/sujet-ecrit-2007-mp-pc_langue_etrangere_2.pdf#page=5",
+    "sha256_sujet": "5309bb7be121409229b9d682b83dc64317cd1725af428d833510660019c75b2c",
+    "code_garde": "71.10PM",
+    "ecoles": "ENS de Paris et de Cachan",
+    "page_garde": 1,
+    "page": 5,
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2007",
+    "index_mp": "https://www.ens.psl.eu/rapports-et-sujets-2007-mpi | https://www.ens.psl.eu/rapports-et-sujets-2007-pc | https://banques-ecoles.fr/cms/filiere-mp/annales-de-la-banque-mmpmpi/session-2007",
+    "reference_du_passage": "Aucun auteur ni ouvrage indiqué sur la page de chinois.",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2007/rapport-2007-pc_ecrit_langue_etrangere_2_chinois.pdf",
+    "sha256_rapport_jury": "34eb2b277047d4339c9caf630c051f59052e306c8cb1b34eaf29968b2174f00a",
+    "page_rapport": 1
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I",
+      "fichier": "figures/effet-de-serre.svg",
+      "legende": "Les émissions de CO₂ renforcent un mécanisme atmosphérique qui existe déjà."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "A. Cheng-Wang recense dix copies de MP et deux de PC. Elle signale aussi l’absence de candidats en BCPST. La garde du présent cahier est celle des MP et PC."
+    },
+    {
+      "phase": "redaction",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français, réponse en chinois, indications de traduction et schéma spécifique au passage."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I",
+      "II"
+    ]
+  }
+}

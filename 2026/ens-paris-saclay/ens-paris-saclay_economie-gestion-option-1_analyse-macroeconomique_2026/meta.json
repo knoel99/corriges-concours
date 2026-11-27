@@ -32,7 +32,7 @@
       "legende": "Trois canaux du choc commercial"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -57,6 +57,45 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Vérification des dates à la date d’épreuve, de la distinction entre incidence et perception du droit et des institutions compétentes."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture de la composition officielle sur le retour du protectionnisme. Exemple intégré sur le débouché, le coût des intrants et l’investissement, avec distinction du redevable et de l’incidence économique dans le guidé."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "gestion_2022_2023",
+      "agent": "gestion_2022_2023",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "L’intitulé de la page 2 appelle une dissertation unique. Les deux éditions traitent les chocs subis par l’Union, les protections qu’elle adopte et la coordination des réponses. Les effets sur le revenu et sur le solde commercial sont recalculés dans un modèle d’économie ouverte. Les exemples européens sont situés avant le 16 avril 2026."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Composition"
+    ],
+    "precision": "Pages 1 et 2 du sujet du 16 avril 2026. Dissertation unique de quatre heures sur le retour du protectionnisme en Europe.",
+    "controle": "L’intitulé de la page 2 appelle une dissertation unique. Les deux éditions traitent les chocs subis par l’Union, les protections qu’elle adopte et la coordination des réponses. Les effets sur le revenu et sur le solde commercial sont recalculés dans un modèle d’économie ouverte. Les exemples européens sont situés avant le 16 avril 2026."
+  }
 }

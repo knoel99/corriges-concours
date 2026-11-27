@@ -1,0 +1,76 @@
+{
+  "slug": "banque-pt_pt_francais-a_2024",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français A",
+    "annee": 2024
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2024/fr_a_2024_pt.pdf",
+    "sujet_sha256": "05257555027d646ae0b1013c64794e53dd0c8de9b18e7fe6763e395c7d196cd3",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2024/rapport_fra_a_ecrit_2024.pdf",
+    "rapport_sha256": "809ea1804260935beea69b0833bfd44204eb9528317715f69b4cdb15b274adf8",
+    "programme_officiel": "https://www.education.gouv.fr/bo/2023/Hebdo28/ESRS2317934A",
+    "theme": "Faire croire",
+    "oeuvres_au_programme": [
+      "Hannah Arendt, « Du mensonge en politique » et « Vérité et politique »",
+      "Alfred de Musset, Lorenzaccio",
+      "Choderlos de Laclos, Les Liaisons dangereuses"
+    ],
+    "source_coefficients": "https://www.banquept.fr/documents/livret/2024/Livret_PT_2024.pdf#page=13",
+    "admissibilite_admission": "École polytechnique, admissibilité, coefficient 4",
+    "precision_coefficients": "Français facultatif pour les candidats étrangers à l’École polytechnique.",
+    "programme_sha256": "91350b31e7af8b6491683c5f195ce6b4cc0c0d35408c1629cc1dae904e3c750c"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "De qui dépend la croyance ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Analyse du commentaire sur Gracián, des trois maillons de son raisonnement et de la différence entre responsabilité morale du destinataire et dissimulation des indices. Rédaction des deux éditions, vérification du programme et réalisation du schéma."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 2,
+        "page_pdf_fin": 2,
+        "perimetre": "Dans quelle mesure le conseil de laisser croire se justifie-t-il par le peu de goût des hommes pour la vérité et par leur médiocrité morale, comme le suggère Brigitte Imbert-Vier ?"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

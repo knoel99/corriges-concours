@@ -18,6 +18,11 @@
       "fichier": "figures/courbe-par-morceaux.svg",
       "question": "1.2",
       "legende": "Les deux points anguleux se trouvent aux abscisses −1 et 1. La branche intérieure se sépare à l’asymptote verticale x = 1/2."
+    },
+    {
+      "fichier": "figures/deux-transmissions.svg",
+      "question": "3.a",
+      "legende": "Avec une probabilité d’inversion de 0,2 à chaque étape, les chemins qui restituent le message vrai après deux transmissions ont pour probabilités 0,64 et 0,04."
     }
   ],
   "contributions": [
@@ -31,6 +36,55 @@
       "perimetre": "Rédaction intégrale de la page 12 du fascicule de 2006, avec vérification directe des barres de valeur absolue sur la page originale. Calcul des coefficients, des quatre branches et des deux asymptotes, figure et preuves complètes des trois autres exercices.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Feuillet C1683V2, quatre exercices sur une page. Contrôle des valeurs absolues, des deux branches, du télescopage et des deux applications de la continuité. Ajout pour 3.a–d du calcul des chemins, de son hypothèse conditionnelle et d’un contre-exemple en cas de dépendance.",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "agent": "rennes_oraux_economie",
+      "session": "rennes_oraux_economie"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "3.a",
+      "3.b",
+      "3.c",
+      "3.d",
+      "4.a",
+      "4.b"
+    ],
+    "origine_attestation": {
+      "commit_du_journal": "f7c535d8f51bb635f3c3e30ebf797e8dbc7fbf47",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction intégrale de la page 12 du fascicule de 2006, avec vérification directe des barres de valeur absolue sur la page originale. Calcul des coefficients, des quatre branches et des deux asymptotes, figure et preuves complètes des trois autres exercices.",
+      "sha256_sujet_controle": "4b67e1f37e613e3ed5ac38bcebfbf0133e96e763f6d150b1663ac23df319af93"
+    },
+    "pages_pdf_des_questions": {
+      "1.1": 12,
+      "1.2": 12,
+      "2.1": 12,
+      "3.a": 12,
+      "3.b": 12,
+      "3.c": 12,
+      "3.d": 12,
+      "4.a": 12,
+      "4.b": 12
+    },
+    "precision": "Feuillet C1683V2, quatre exercices sur une page. Contrôle des valeurs absolues, des deux branches, du télescopage et des deux applications de la continuité. Ajout pour 3.a–d du calcul des chemins, de son hypothèse conditionnelle et d’un contre-exemple en cas de dépendance."
+  }
 }

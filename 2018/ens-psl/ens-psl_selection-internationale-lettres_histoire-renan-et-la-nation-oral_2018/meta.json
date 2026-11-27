@@ -1,0 +1,69 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire-renan-et-la-nation-oral_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire — Renan et la nation (oral)",
+    "annee": 2018,
+    "modalite": "oral"
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/Sujet%20oral%20SIL2018-4.pdf",
+    "sha256_sujet": "e4ad6fe631cae49b5b20165f0fdbe66ecda20233996a5741b0c05d8c7b1d5c70",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_2018_histoire.pdf",
+    "sha256_rapport_jury": "19972089324eb727a8d7cf01ec3532c7bab36bde9919bcb68ea8da6ab0949696",
+    "page_officielle": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2018-lettres",
+    "precision_controle": "Sujet oral n° 4, deux pages. Extrait de Qu’est-ce qu’une nation ?, édition Calmann Lévy, 1882, p. 7–11. Début sur l’oubli et l’erreur historique, fin sur les raisonnements et les esprits superficiels. La formule du « plébiscite de tous les jours » se trouve ailleurs dans la conférence. Rapport du jury, p. 2, section sur l’oral.",
+    "reference_complementaire": "https://classiques.uqam.ca/classiques/renan_ernest/qu_est_ce_une_nation/qu_est_ce_une_nation_texte.html"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture-du-document.svg",
+      "question": "Oublier la division pour hériter d’un passé commun",
+      "legende": "Du récit des violences aux questions finales de Renan."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Commentaire rédigé des pages 7 à 11, vérification de la date, des comparaisons et de la limite exacte de l’extrait. Deux éditions et schéma du raisonnement, rapport 2018 consulté.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "oraux_lyon_et_anciens_corriges",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture de l’antithèse Italie–Empire ottoman et de sa limite démonstrative. Mise en relation avec l’Autriche et la distinction finale entre État, nation et ascendance. Exercice de comparaison dans le guidé."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire de la conférence de Renan, depuis le rôle de l’oubli jusqu’aux questions sur la nationalité."
+    ],
+    "detail": [
+      "Ouverture sur l’oubli et l’erreur, violences et formation dynastique de la France. Contrastes entre espaces européens et ottomans, passage du constat généalogique à une norme civique.",
+      "Dernière partie et suite en page 2, voies de l’unification, paradoxe des victoires et défaites, rôle de la Révolution, séries de comparaisons et dernière question sur nationalités et races."
+    ]
+  },
+  "date_revision": "2026-11-26"
+}

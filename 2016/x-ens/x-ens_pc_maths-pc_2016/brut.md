@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve passe de l’entropie sur le simplexe aux lois exponentielles puis à l’optimisation sous contraintes de moments. Les probabilités peuvent s’annuler au bord du simplexe. La stricte positivité des masses d’un maximiseur est donc démontrée avant toute dérivation de leur logarithme.
 
 ## I. Entropie sur le simplexe
@@ -39,6 +41,8 @@ Posons $p_1=0$ et $p_i=C/(i(\ln i)^2)$ pour $i\ge2$, où $C$ est l’inverse de 
 ### Question 6
 
 Posons $Y_k=\ln p_{X_k}$. Toutes les masses étant strictement positives et en nombre fini, $Y_k$ est bornée. Ces variables sont deux à deux indépendantes, de moyenne $\sum_i p_i\ln p_i=-H_N(p)$ et de variance commune $v$. La moyenne $n^{-1}\sum_kY_k$ a donc variance $v/n$. Par Bienaymé–Tchebychev, la probabilité que son écart à $-H_N(p)$ soit en valeur absolue au moins $\varepsilon$ est au plus $v/(n\varepsilon^2)\to0$. C’est l’expression du sujet.
+
+En effet, $n^{-1}\ln(\prod_{k=1}^n p_{X_k})=n^{-1}\sum_{k=1}^nY_k$. L’indépendance deux à deux suffit pour annuler les covariances croisées dans la variance de cette moyenne. Aucune hypothèse sur l’indépendance mutuelle d’une famille entière n’est utilisée.
 
 ## II. Optimisation de l’entropie avec un terme linéaire
 
@@ -114,6 +118,8 @@ Les paramètres sont dans $\mathbb R^d$, domaine de $L$ (la mention $\mathbb R^N
 
 En 18a, $h'(t)<0$ pour $t<1$, donc $h(1)<h(0)$. Tout point critique est donc le strict minimum global, et il ne peut y en avoir deux. Réciproquement, un minimum atteint à l’intérieur de $\mathbb R^d$ est critique. Il y a donc zéro ou un point de minimum. L’existence ne découle pas de la seule Hessienne positive.
 
+Par exemple, pour deux issues, une contrainte de moyenne $0$ avec $g_1(1)=0$, $g_1(2)=1$ et $q=(1,0)$ donne $L(\theta)=\ln(1+e^\theta)$. Les colonnes de la matrice augmentée sont indépendantes. Pourtant l’infimum zéro n’est atteint à aucun $\theta$ fini. Cet exemple justifie la précaution de la question 19.
+
 ### Question 19a
 
 Posons $p^*=p(\theta^*)$ et $f=M\theta^*$. Par 16, $p^*$ est admissible, et par 10 il maximise $J_f$ sur tout le simplexe. Pour chaque $p$ admissible, $p^tf=p^tM\theta^*=q^tM\theta^*=(p^*)^tf$. De $J_f(p^*)\ge J_f(p)$ on déduit $H_N(p^*)\ge H_N(p)$, en particulier pour $p=q$. C’est la valeur maximale demandée.
@@ -121,5 +127,7 @@ Posons $p^*=p(\theta^*)$ et $f=M\theta^*$. Par 16, $p^*$ est admissible, et par 
 ### Question 19b
 
 Si $p$ admissible vérifie $H_N(p)=H_N(p^*)$, le terme linéaire étant commun, $J_f(p)=J_f(p^*)$. Or 10 a établi que $J_f$ a un unique maximiseur sur $\Sigma_N$, précisément $p^*$. D’où $p=p^*$ et l’unicité du maximum d’entropie sous contraintes.
+
+Pour la figure, les deux scores $(0,\theta)$ donnent $p_2=e^\theta/(1+e^\theta)$. Lorsque $\theta=0$ les deux probabilités valent $1/2$ et l’entropie vaut $\ln 2$. À mesure que $\theta$ tend vers l’un ou l’autre infini, la loi se concentre sur une seule issue et son entropie tend vers zéro.
 
 ![Figure 1 — Pour deux issues de scores zéro et thêta, la masse de la seconde issue augmente tandis que l’entropie est maximale pour deux masses égales.](figures/loi-exponentielle.svg)

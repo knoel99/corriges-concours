@@ -15,7 +15,28 @@
   },
   "redaction": "Proposition non officielle rédigée par IA.",
   "sources": {
-    "sujet": "https://www.concours-centrale-supelec.fr/sites/default/files/documents/G078-LV009.pdf#page=13"
+    "sujet": "https://www.concours-centrale-supelec.fr/sites/default/files/documents/G078-LV009.pdf#page=13",
+    "sha256_sujet": "0ac49c902444dba90f60fcb80879b21238abb65262e47749bfd7c4d90e1140c0",
+    "pages_pdf_sujet_verifiees": [
+      13,
+      14,
+      15,
+      16
+    ],
+    "rapport_jury": null,
+    "verification_rapport": {
+      "date": "2026-11-26",
+      "rubriques": [
+        "MP",
+        "MPI",
+        "PC",
+        "PSI",
+        "TSI"
+      ],
+      "dernier_millesime_affiche": 2025,
+      "sha256_page_annales": "7e564389f6b701010fa9cd31f8a0736ecca499196322778431c84b3afe7f7cb6",
+      "annales": "https://www.concours-centrale-supelec.fr/sujets-rapports"
+    }
   },
   "contributions": [
     {
@@ -28,14 +49,89 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Rédaction de la synthèse en espagnol des 4 documents sur les pages physiques 13 à 16 du PDF officiel, du guidage et du schéma. Contrôle du titre et du décompte de 478 mots."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "x_maths_b_recentes",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Consigne unique, rédaction et copie du guide, lecture du corpus, contrôle des visuels et du total de mots."
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "figures": [
     {
       "fichier": "figures/lecture-croisee.svg",
       "question": "Synthèse",
       "legende": "Une même victoire, trois questions politiques"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Synthèse"
+    ],
+    "origine_attestation": {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "0ac49c902444dba90f60fcb80879b21238abb65262e47749bfd7c4d90e1140c0",
+      "perimetre": "Consigne unique, rédaction et copie du guide, lecture du corpus, contrôle des visuels et du total de mots.",
+      "documents_verifies": [
+        {
+          "numero": 1,
+          "pages_facsimile": [
+            13,
+            14
+          ],
+          "controle": "L’éditorial d’ABC interprète le scrutin chilien et en tire un jugement politique sur le Chili et l’Espagne. Le modèle lui attribue ce point de vue."
+        },
+        {
+          "numero": 2,
+          "pages_facsimile": [
+            14,
+            15
+          ],
+          "controle": "Caruncho situe plusieurs alternances en Amérique latine et distingue insécurité, vote sanction et diversité des droites."
+        },
+        {
+          "numero": 3,
+          "pages_facsimile": [
+            15,
+            16
+          ],
+          "controle": "Zepeda Patterson examine redistribution et finances publiques ainsi que la situation mexicaine. Le cliché de Claudia Sheinbaum au pupitre accompagne la chronique."
+        },
+        {
+          "numero": 4,
+          "pages_facsimile": [
+            16
+          ],
+          "controle": "Eneko dessine en 2014 un panneau DERECHA pointant à droite et cinq fragments du mot IZQUIERDA pointant à gauche. La date est antérieure aux scrutins analysés par les trois articles de 2025."
+        }
+      ],
+      "decompte": {
+        "question_unique": "Synthèse",
+        "langue": "espagnol",
+        "minimum": 450,
+        "maximum": 550,
+        "titre": "El avance de las derechas y los límites de la alternancia latinoamericana",
+        "mots": 497,
+        "blocs": [
+          12,
+          88,
+          93,
+          101,
+          113,
+          90
+        ],
+        "convention": "Titre inclus. Mots séparés par des blancs, composés et formes à apostrophe conservés.",
+        "reperes_de_vingt": null
+      }
+    }
+  }
 }

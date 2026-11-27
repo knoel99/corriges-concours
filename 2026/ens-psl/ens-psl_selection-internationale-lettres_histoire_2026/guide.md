@@ -8,11 +8,15 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Faire place au projet sans l’inventer
 
 Chaque sujet est personnalisé. Le candidat ne devait en traiter qu’un. Le rapport du jury attend à la fois une connaissance du terrain choisi et la capacité à sortir de son seul cas. Les trois réponses sont donc trois copies possibles et distinctes. Pour adapter celle qui correspond au projet, remplacer un exemple par un document effectivement connu, identifié par sa date, sa langue, son producteur et son lieu de conservation. Justifier ce qu’il permet de conclure et le point sur lequel il reste muet.
 
 ![Figure 1 — Trois questions, trois tests documentaires](figures/operations-historiographiques.svg)
+
+Choisir la ligne de son propre sujet. Pour la source retenue, demander qui l’a produite, pour quel destinataire et ce qu’elle permet de comparer. À Paris, un livret traduit atteste un travail sur le texte ; une affirmation sur l’accueil de l’opéra réclame aussi des traces de réception.
 
 ## Trois façons de commencer
 

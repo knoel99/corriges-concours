@@ -32,7 +32,7 @@
       "legende": "Du prix de vente au résultat unitaire"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -57,6 +57,59 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Rapprochement des répartitions ABC avec 2 014 000 € de charges, lecture visuelle des deux pages du bilan, vérification des écritures selon le PCG 2025 et des périmètres de levier."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification du dossier 1, questions 1 et 2, sur l’original Pluvier. Rapprochement entre résultats globaux et unitaires, justification du centime d’écart d’arrondi pour la Demoiselle."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "gestion_2022_2023",
+      "agent": "gestion_2022_2023",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Les quinze réponses ont été rapprochées des huit annexes. Les imputations ABC, les cinq écritures de clôture et les ratios ont été recalculés. Les deux planches du bilan ont été lues directement, y compris la ligne des concours bancaires. Les réponses de management distinguent les faits propres à Pluvier des exemples de l’article sur les autres marques."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15"
+    ],
+    "precision": "Cas Maison Pluvier, pages imprimées 1/10 à 10/10. Dossier 1, questions 1 à 12 et annexes 1 à 7. Dossier 2, questions 13 à 15 et confrontation avec l’annexe 8.",
+    "controle": "Les quinze réponses ont été rapprochées des huit annexes. Les imputations ABC, les cinq écritures de clôture et les ratios ont été recalculés. Les deux planches du bilan ont été lues directement, y compris la ligne des concours bancaires. Les réponses de management distinguent les faits propres à Pluvier des exemples de l’article sur les autres marques."
+  }
 }

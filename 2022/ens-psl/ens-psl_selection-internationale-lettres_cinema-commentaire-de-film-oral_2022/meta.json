@@ -1,0 +1,79 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_cinema-commentaire-de-film-oral_2022",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Cinéma — commentaire de film (oral)",
+    "annee": 2022,
+    "modalite": "oral"
+  },
+  "intitule": "Prologue de Béla Tarr · commentaire de film",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujets-arts-sil2022._.pdf",
+    "sujet_sha256": "009d57bc8a9ee87bf0899c74f859fb2dcbe1aad98b16bf86958c4d8f49b15eb2",
+    "index_officiel": "https://www.ens.psl.eu/une-formation-d-exception/admission-concours/international/concours-selection-internationale-0",
+    "note": "Le feuillet de l’ENS renvoie à la vidéo IkxBoGYu1-w. Le programme du Doctorado en Semiótica de juin 2014 associe cet identifiant à Prologue de Béla Tarr. L’institut hongrois du cinéma confirme le titre original Prológus, l’année 2004 et une durée de cinq minutes pour l’œuvre. Les analyses de l’East European Film Bulletin et de L’Atalante documentent le plan et le générique.",
+    "references": {
+      "Lien vidéo du feuillet": "https://www.youtube.com/watch?v=IkxBoGYu1-w",
+      "Programme du séminaire, même lien": "https://doctoradosemiotica.blogspot.com/2014/06/normal-0-21-false-false.html",
+      "Institut hongrois du cinéma": "https://nfi.hu/en/films/prologue.html",
+      "Photogramme du film": "https://syncrofilmfest.com/prologue/",
+      "Analyse du plan dans l’East European Film Bulletin": "https://eefb.org/retrospectives/bela-tarrs-prologue-2004/",
+      "Étude du générique dans L’Atalante": "https://revistaatalante.com/index.php/atalante/article/download/700/594"
+    }
+  },
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/analyse.svg",
+      "question": "Commentaire",
+      "legende": "Chemin du regard dans le court métrage. Les vignettes synthétisent le changement interne au plan et le relais du générique."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "arts_selection_six",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions, construction des exemples et du schéma pour « Prologue de Béla Tarr · commentaire de film ». Le lien du jury permet d’identifier l’œuvre. Le contenu exact de la copie projetée en 2022, ses bornes et l’inclusion de son générique restent à vérifier. Le commentaire porte sur le court métrage documenté dans son intégralité."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "arts_selection_six",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Contrôle du libellé, des données documentaires, des distinctions analytiques et de leur lisibilité dans les deux éditions."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [],
+    "questions_partiellement_traitees": [
+      "Cinéma — commentaire de film (oral)"
+    ],
+    "questions_non_traitees": [],
+    "precision": "Le lien du jury permet d’identifier l’œuvre. Le contenu exact de la copie projetée en 2022, ses bornes et l’inclusion de son générique restent à vérifier. Le commentaire porte sur le court métrage documenté dans son intégralité."
+  }
+}

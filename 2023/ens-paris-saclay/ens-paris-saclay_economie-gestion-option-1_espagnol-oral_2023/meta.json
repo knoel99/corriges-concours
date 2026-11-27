@@ -1,0 +1,101 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_espagnol-oral_2023",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Espagnol (oral)",
+    "annee": 2023,
+    "modalite": "oral"
+  },
+  "questions": 6,
+  "intitule": "Tres textos del cuaderno y tres asuntos radiofónicos",
+  "sources": {
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2023_EcoG1_rapport_oral_Espagnol.pdf",
+    "rapport_sha256": "54643cb65055698fc724f2eebf89beac69fc813e2e3b27727f51e7f5a83e8c6f",
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2023_EcoG1_rapport_oral_Espagnol.pdf#page=1",
+    "index": "https://ens-paris-saclay.fr/node/9774",
+    "textes_reproduits": [
+      {
+        "titre": "La sequía pasará a producirse uno de cada cuatro años con el cambio climático",
+        "pages_pdf": "3–4",
+        "auteur": "Ignacio Martín",
+        "date": "2023-05-03"
+      },
+      {
+        "titre": "Las familias que todavía no existen para el Estado peruano",
+        "pages_pdf": "4–5",
+        "auteur": "Renzo Gómez Vega",
+        "date": "2023-05-22"
+      },
+      {
+        "titre": "Petro y el alto costo de un ‘trino en falso’: los tropiezos del presidente en Twitter",
+        "pages_pdf": "5–6",
+        "auteur": "Camila Osorio",
+        "date": "2023-05-19"
+      }
+    ],
+    "archives_et_contexte": [
+      {
+        "fonction": "rapprochement thématique, podcast non authentifié comme extrait",
+        "url": "https://www.washingtonpost.com/podcasts/el-post/migrantes-venezolanos-eeuu-y-mxico-el-congreso-y-trump-adis-a-messi-cristiano-y-modric/"
+      },
+      {
+        "fonction": "publication DW sur Maradiaga",
+        "url": "https://www.youtube.com/watch?v=vvkuaOOOxfY"
+      },
+      {
+        "fonction": "publication DW sur la Fiscalía",
+        "url": "https://www.youtube.com/watch?v=Lt6lQDLmXRc"
+      },
+      {
+        "fonction": "publication presse, familles",
+        "url": "https://elpais.com/internacional/2023-05-22/las-familias-que-todavia-no-existen-para-el-estado-peruano.html"
+      },
+      {
+        "fonction": "publication presse, Petro",
+        "url": "https://elpais.com/america-colombia/2023-05-19/petro-y-el-alto-costo-de-un-trino-en-falso-los-tropiezos-del-presidente-en-twitter.html"
+      }
+    ]
+  },
+  "redaction": "6 supports ou thèmes numérotés accompagnés de commentaires argumentés en espagnol, d’un exercice d’entretien et d’indications propres au sujet. Trois comptes rendus des textes de concours et deux comptes rendus des notices des publications sonores retrouvées.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "T1",
+      "fichier": "figures/eau-stock-et-tendance.svg",
+      "legende": "Le texte d’Ignacio Martín compare le stock de la semaine avec celui de l’année précédente et la moyenne sur cinq ans."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "espagnol_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "6 supports ou thèmes numérotés accompagnés de commentaires argumentés en espagnol, d’un exercice d’entretien et d’indications propres au sujet. Trois comptes rendus des textes de concours et deux comptes rendus des notices des publications sonores retrouvées.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "La sequía pasará a producirse uno de cada cuatro años con el cambio climático",
+      "Las familias que todavía no existen para el Estado peruano",
+      "Petro y el alto costo de un ‘trino en falso’: los tropiezos del presidente en Twitter"
+    ],
+    "questions_partiellement_traitees": [
+      "Migrantes venezolanos",
+      "El activista político nicaragüense Félix Maradiaga ha sido galardonado con el Premio al Valor 2023",
+      "Disputa entre el presidente y el fiscal general de Colombia"
+    ],
+    "questions_non_traitees": [],
+    "precision": "Les trois extraits de presse reproduits aux p. 3–6 sont traités intégralement dans les bornes imprimées. Pour l’audio, deux publications de DW portent les titres du jury. « Migrantes venezolanos » correspond à plusieurs archives possibles. Les bornes des sons et les questions prononcées restent inconnues. Le rapport ne permet pas d’identifier un éventuel quatrième texte ou enregistrement."
+  }
+}

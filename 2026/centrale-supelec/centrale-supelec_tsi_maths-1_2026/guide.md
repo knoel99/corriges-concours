@@ -8,11 +8,11 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Thème.** Le sujet s'intitule *La méthode des moindres carrés* (4 heures, calculatrice autorisée, 52 questions). Une seule idée le traverse : **minimiser $\|z-u\|$ quand $u$ parcourt un sous-espace de dimension finie, c'est projeter orthogonalement $z$ sur ce sous-espace.** Le sujet la décline cinq fois : distance d'un vecteur de $\mathcal M_{4,1}(\mathbb R)$ à un hyperplan, somme partielle de Fourier, régression polynomiale, équations normales $A^TAx=A^Ty$ et pseudo-inverse issue de la décomposition en valeurs singulières. Il se termine par un algorithme : la méthode du gradient à pas optimal, dont la vitesse dépend du conditionnement $c(A)=\lambda_p/\lambda_1$ (inégalité de Kantorovich).
-
-![Figure 1 — projection orthogonale sur F : p_F(v) est le point de F le plus proche de v, le résidu v − p_F(v) est orthogonal à F et sa norme est la distance de v à F (schéma, F hyperplan de ℳ₄,₁(ℝ))](figures/q3-projection-orthogonale.svg)
 
 **Découpage.**
 - **Partie A (Q1–Q12).** I : base orthogonale, projeté et distance dans $\mathcal M_{4,1}(\mathbb R)$. II : séries de Fourier. Coefficients de $\cos(\alpha x)$, sommes $\sum\frac1{n^2-\alpha^2}$ et $\sum\frac1{(n^2-\alpha^2)^2}$ par Dirichlet et Parseval, développement de la cotangente, puis équation $f''+e^{ix}f=0$ traitée par les coefficients exponentiels. On termine sur $S_N(g)$ vu comme un projeté orthogonal.
@@ -103,8 +103,10 @@ Contrôle : les $e_i$ ont une quatrième coordonnée nulle, donc $F\subset\{t=0\
 $F$ est de dimension finie, donc $\min_{u\in F}\|v-u\|_2$ existe, est atteint en $u=p_F(v)$ et vaut $\|v-p_F(v)\|_2$. Par Q2, $p_F(v)=(1,1,1,0)^T$, donc $v-p_F(v)=(0,0,0,1)^T$ et
 $$\boxed{\min_{u\in F}\|v-u\|_2=1.}$$
 
-> [!JURY]
-> Remplacer un minimum par un calcul explicite demande de citer le théorème de meilleure approximation. Sans cette justification, la réponse numérique seule vaut peu.
+> [!METHODE]
+> Le théorème de meilleure approximation identifie le minimiseur. La distance cherchée se calcule ensuite comme la norme du résidu.
+
+![Figure 1 — projection orthogonale sur F : p_F(v) est le point de F le plus proche de v, le résidu v − p_F(v) est orthogonal à F et sa norme est la distance de v à F (schéma, F hyperplan de ℳ₄,₁(ℝ))](figures/q3-projection-orthogonale.svg)
 
 ### II — Séries de Fourier
 
@@ -320,8 +322,8 @@ f(x)&=c_0(f)+\sum_{n=1}^{+\infty}\big(c_n(f)e^{inx}+c_{-n}(f)e^{-inx}\big)\\
 \end{aligned}}$$
 La dernière série converge absolument car $\left|\frac{e^{inx}}{(n!)^2}\right|=\frac1{(n!)^2}$ et $\sum\frac1{(n!)^2}$ converge (règle de d'Alembert).
 
-> [!JURY]
-> Pour identifier la limite des sommes de Fourier à $f(x)$ (et non à la demi-somme des limites à gauche et à droite), il faut dire que $f$ est continue. C'est une ligne, mais elle est attendue.
+> [!METHODE]
+> Pour identifier la limite des sommes de Fourier à $f(x)$ (et non à la demi-somme des limites à gauche et à droite), il faut dire que $f$ est continue. La continuité rend les deux limites latérales égales à la valeur de la fonction.
 
 ### Question 10
 
@@ -739,7 +741,7 @@ $$\boxed{\det(A^TA)=n\sum_{1\leqslant k\leqslant n}x_k^2-\Big(\sum_{1\leqslant k
 Posons $X=(x_1,\dots,x_n)$ et $U=(1,\dots,1)$. L'inégalité de Cauchy-Schwarz donne $\langle X,U\rangle^2\leqslant\|X\|^2\|U\|^2$, soit $(\sum x_k)^2\leqslant n\sum x_k^2$. Il y a égalité si et seulement si $(X,U)$ est liée. L'hypothèse de non-colinéarité rend l'inégalité stricte :
 $$\boxed{\det(A^TA)>0.}$$
 
-> [!JURY]
+> [!METHODE]
 > C'est la stricte positivité qui est demandée. Il faut énoncer le cas d'égalité de Cauchy-Schwarz et le confronter explicitement à l'hypothèse de l'énoncé.
 
 ### Question 26
@@ -845,6 +847,10 @@ C'est cohérent avec Q30, dont le cas d'égalité « $x-u\in\ker A$ » serait sa
 
 > [!METHODE]
 > Devant une affirmation d'énoncé qui n'est vraie que sous une hypothèse supplémentaire, on le signale brièvement et on démontre l'énoncé correct. On ne prouve pas un résultat faux.
+
+Le choix supplémentaire $u\in(\ker A)^\perp$ fixe un représentant unique. Ici, $\|(1,t)\|_2^2=1+t^2$ est minimale pour $t=0$. La question 43 établira cette caractérisation pour toute matrice.
+
+![Figure 4 — Une droite d’antécédents pour un projeté et un résidu uniques](figures/q29-antecedents-et-residu.svg)
 
 ### Question 30
 
@@ -1097,7 +1103,7 @@ La famille $(v_j)$ étant orthonormée, $\operatorname{Vect}(v_1,\dots,v_r)\subs
 $$\boxed{b=\tilde Ay\in\operatorname{Im}\tilde A=\operatorname{Vect}(v_1,\dots,v_r)\subset\ker(A)^\perp.}$$
 Les deux sous-espaces étant de dimension $r$, l'inclusion est même une égalité.
 
-![Figure 4 — les quatre sous-espaces de la SVD : A envoie ker(A) sur 0 et ker(A)^⊥ bijectivement sur Im(A), Ã fait l'inverse et annule Im(A)^⊥, donc b = Ãy est dans ker(A)^⊥](figures/q42-quatre-sous-espaces.svg)
+![Figure 5 — les quatre sous-espaces de la SVD : A envoie ker(A) sur 0 et ker(A)^⊥ bijectivement sur Im(A), Ã fait l'inverse et annule Im(A)^⊥, donc b = Ãy est dans ker(A)^⊥](figures/q42-quatre-sous-espaces.svg)
 
 ### Question 43
 
@@ -1274,7 +1280,7 @@ $$\boxed{f(x_{k+1})-f(\ell)=\big(f(x_k)-f(\ell)\big)\left(1-\frac{\|d_k\|_2^4}{\
 
 L’orthogonalité visible sur la figure découle aussi du choix du pas. En effet $d_{k+1}=d_k-t_k S d_k$, donc $\langle d_{k+1},d_k\rangle=\|d_k\|_2^2-t_k\langle S d_k,d_k\rangle=0$. Si $d_{k+1}=0$, l’itéré atteint exactement $\ell$.
 
-![Figure 5 — gradient à pas optimal pour AᵀA = Diag(1, 4) : lignes de niveau de f elliptiques centrées en ℓ, pas consécutifs orthogonaux, trajectoire en zigzag vers ℓ](figures/q50-gradient-zigzag.svg)
+![Figure 6 — gradient à pas optimal pour AᵀA = Diag(1, 4) : lignes de niveau de f elliptiques centrées en ℓ, pas consécutifs orthogonaux, trajectoire en zigzag vers ℓ](figures/q50-gradient-zigzag.svg)
 
 > [!METHODE]
 > Le pas $t_k$ est celui qui minimise le trinôme $t\mapsto f(x_k-td_k)$, de coefficient dominant $\langle Sd_k,d_k\rangle>0$ : c'est le sens de « pas optimal ».
@@ -1313,6 +1319,8 @@ $$\boxed{\lambda_1\|x_k-\ell\|_2^2\leqslant f(x_k)-f(\ell)\leqslant\big(f(x_0)-f
 > [!PIEGE]
 > Dans cette partie, $\lambda_1$ est la **plus petite** valeur propre. Confondre avec la convention décroissante de la partie D-III fausse la minoration. Autre point de rigueur : on multiplie l'inégalité sur le facteur par $f(x_k)-f(\ell)$, et il faut savoir que cette quantité est positive.
 
+Si $c(A)=1$, toutes les valeurs propres sont égales à $\lambda_1$, et $S=\lambda_1 I_p$. Pour $x_0\ne\ell$, le premier pas vaut $1/\lambda_1$ et $x_1=\ell$. Plus généralement, si un $d_k$ s’annule, on peut prolonger la suite en posant $x_j=\ell$ pour $j\geq k$. La borne de Q51 reste vraie après cet arrêt.
+
 ### Question 52
 
 > [!INDICATION]
@@ -1331,7 +1339,7 @@ Pour tout $x$, $\|Ax-y\|_2^2=f(x)+\langle y,y\rangle$. Par Q49, $f(x)-f(\ell)=\|
 $$\boxed{\|A\ell-y\|_2=\min_{x\in\mathcal M_{p,1}(\mathbb R)}\|Ax-y\|_2.}$$
 On peut aussi invoquer Q32, puisque $A^TA\ell=A^Ty$ par construction. On retrouve le vecteur $b$ de Q33 : la partie E en donne une méthode de calcul approché, utile quand l'inversion de $A^TA$ coûte cher, et d'autant plus rapide que $c(A)$ est proche de 1.
 
-> [!JURY]
+> [!METHODE]
 > Pour conclure à la convergence d'une suite de matrices colonnes à partir de celle des normes, il faut citer le critère admis. Il faut aussi justifier que la raison est strictement inférieure à 1.
 
 ## Bilan

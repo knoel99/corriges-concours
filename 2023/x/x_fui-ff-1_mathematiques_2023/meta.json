@@ -36,6 +36,57 @@
       "perimetre": "Rédaction des 27 questions et sous-questions à partir du PDF officiel. Vérification visuelle des formulations de 4c et 11–13. Contre-exemple pour une norme arbitraire, preuve en norme auxiliaire, approximation strictement positive, théorème de Frobenius et figure de chemins. Aucun rapport individuel indiqué dans le registre.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Vérification des 27 subdivisions sur le rayon spectral et le théorème de Perron–Frobenius. La norme oblique de Q4c vaut 7/2 pour un rayon spectral de 1/2. Les arêtes et les poids du graphe imprimé de Q14 sont repris, y compris la ligne nulle. L’argument de Q13 distingue le décalage diagonal de la perturbation à coefficients strictement positifs."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4a",
+      "4b",
+      "4c",
+      "4d",
+      "4e",
+      "5a",
+      "5b",
+      "6",
+      "7",
+      "8",
+      "9a",
+      "9b",
+      "9c",
+      "9d",
+      "9e",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16a",
+      "16b",
+      "16c"
+    ],
+    "precision": "Les 27 rubriques des deux éditions ont été rapprochées du fascicule institutionnel de 6 pages de l’École polytechnique. Vérification des 27 subdivisions sur le rayon spectral et le théorème de Perron–Frobenius. La norme oblique de Q4c vaut 7/2 pour un rayon spectral de 1/2. Les arêtes et les poids du graphe imprimé de Q14 sont repris, y compris la ligne nulle. L’argument de Q13 distingue le décalage diagonal de la perturbation à coefficients strictement positifs.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "bdf4e840b6ac15611ded4b27cc8f3a65fae544183a0f22afdcc809b139202499",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Vérification des 27 subdivisions sur le rayon spectral et le théorème de Perron–Frobenius. La norme oblique de Q4c vaut 7/2 pour un rayon spectral de 1/2. Les arêtes et les poids du graphe imprimé de Q14 sont repris, y compris la ligne nulle. L’argument de Q13 distingue le décalage diagonal de la perturbation à coefficients strictement positifs.",
+      "commit_redaction_anterieure": "5fac231ebc255cdfe012925e40c112fa1f29b076"
+    }
+  }
 }

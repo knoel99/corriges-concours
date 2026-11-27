@@ -1,0 +1,105 @@
+{
+  "slug": "ens-de-lyon_second-concours_informatique_2008",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Informatique",
+    "annee": 2008,
+    "duree_heures": 3
+  },
+  "questions": 16,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours-de-lens-lyon/session-2008/sujet-ecrit-2008-second-concours_informatique.pdf",
+    "sujet_sha256": "4a988c4db0ab025eed53ffd477370eb9ca9416345ceb3bc9f8021ecaf06af4c4",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/rapports-des-jurys-du-second-concours-de-lens-lyon/session-2008/rapport-2008-second-concours_ecrit_informatique.pdf",
+    "rapport_sha256": "808bb02a140377cd7cbed216f85c0b60563673d71bb859c0da35b238bf9a1d88",
+    "index_banque": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/"
+  },
+  "figures": [
+    {
+      "fichier": "figures/temps-par-atelier.svg",
+      "question": "1.2",
+      "legende": "Figure 1 — Le chemin de durée huit passe dans le second atelier dès la deuxième tâche."
+    },
+    {
+      "fichier": "figures/echeance-saturee.svg",
+      "question": "3.2",
+      "legende": "Figure 2 — Cinq tâches doivent tenir dans les quatre premiers créneaux si l’on ajoute la tâche 5 au bloc déjà retenu."
+    },
+    {
+      "fichier": "figures/jonction-de-precedences.svg",
+      "question": "4.2",
+      "legende": "Figure 3 — Deux tâches parallèles d’une durée de trois et cinq créneaux imposent un départ au temps cinq à leur successeur."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "info_suite",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 16 questions à partir du sujet et de l’erratum du jury. Calcul des deux traces par pénalité croissante et décroissante, comparaison exhaustive des sept commandes, preuve de l’échange et programmation dynamique. Trois schémas originaux."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "2.1",
+      "2.2",
+      "2.3",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "4.1",
+      "4.2"
+    ],
+    "reperes_par_page_du_pdf": {
+      "2": [
+        "1.1",
+        "1.2",
+        "1.3"
+      ],
+      "3": [
+        "1.4",
+        "1.5",
+        "1.6",
+        "2.1",
+        "2.2"
+      ],
+      "4": [
+        "2.3",
+        "3.1",
+        "3.2"
+      ],
+      "5": [
+        "3.3",
+        "3.4",
+        "3.5",
+        "4.1",
+        "4.2"
+      ]
+    },
+    "precision": "Les 16 numéros du fac-similé institutionnel ont été rapprochés dans leur ordre des solutions de la rédaction signée. Chaque édition présente une solution pour chaque numéro. Les formulations vérifiées sont celles de la contribution archivée.",
+    "origine_attestation": {
+      "commit_du_journal": "66ab8dd220e2a70e8277d13d588c41dc064a5e99",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction des 16 questions à partir du sujet et de l’erratum du jury. Calcul des deux traces par pénalité croissante et décroissante, comparaison exhaustive des sept commandes, preuve de l’échange et programmation dynamique. Trois schémas originaux.",
+      "sha256_sujet_controle": "4a988c4db0ab025eed53ffd477370eb9ca9416345ceb3bc9f8021ecaf06af4c4",
+      "sha256_rapport_controle": "808bb02a140377cd7cbed216f85c0b60563673d71bb859c0da35b238bf9a1d88"
+    }
+  }
+}

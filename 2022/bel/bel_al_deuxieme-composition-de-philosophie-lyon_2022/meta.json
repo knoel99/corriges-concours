@@ -25,7 +25,9 @@
     "pages_rapport": "10–17",
     "references": [
       "https://fr.wikisource.org/wiki/Monadologie/%C3%89dition_Nolen_1881"
-    ]
+    ],
+    "sha256_sujet": "8dcbf847bd6ec9f6883a858ccf44d61aa36cd84ce4117563a1e2f9c605776353",
+    "sha256_rapport_jury": "b762666335ff95bfe67afca19e2cd428cc54909185bd891aac6f1756bf874337"
   },
   "figures": [
     {
@@ -34,7 +36,7 @@
       "legende": "Qu’est-ce qui manque à la décision ?"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "contributions": [
     {
       "phase": "lecture_rapport_jury",
@@ -71,6 +73,47 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Comparaison des deux éditions aux pages originales du sujet et au rapport, contrôle des références, des exemples et du schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Absence de principe, distinction entre défaut documentaire et absence de justification."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Confrontation de la portée descriptive, explicative et pratique du principe. Analyse d’une décision collégiale sans barème et mise à l’épreuve de ce que cette absence permet de conclure sur l’arbitraire."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "L’absence de principe."
+    ],
+    "pages_du_sujet": 16,
+    "pages_pdf_des_questions": {
+      "L’absence de principe.": 2
+    },
+    "precision": "Dissertation unique de 6 heures. Libellé lu sur la page 2 du fascicule officiel. Rapport du jury, pages 10 à 17. Les mouvements du plan sont proposés par le corrigé."
+  }
 }

@@ -10,7 +10,9 @@
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
     "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2026/2026_EG1_Maths_et_stats.pdf",
-    "page_officielle": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id[]=289&field_year_target_id[]=605"
+    "page_officielle": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id[]=289&field_year_target_id[]=605",
+    "sha256_sujet": "9b1fbd28f850394590eca1a508cf6b48863e5eb29a136861f43b31bdc941860b",
+    "provenance": "Fac-similé officiel du mardi 14 avril 2026, ENS Paris-Saclay, ENSAI civil et INSEE attaché statisticien. Épreuve 2, économie gestion option 1. Une garde suivie de cinq pages imprimées, dont deux tables distinctes de résultats."
   },
   "note_sources": "Le sujet officiel contient trois problèmes. La page officielle de cette voie et de cette session ne fournit pas de rapport propre à cette épreuve.",
   "figures": [
@@ -46,6 +48,309 @@
       "perimetre": "Rédaction intégrale des 39 réponses en brut et guidé à partir des cinq pages de problèmes du sujet officiel. Calcul matriciel, dérivées et bord du carré, contrôles numériques des statistiques descriptives, quatre graphiques et test exact de signes sur les paires.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "agent": "maths_statistiques_saclay",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture des 39 consignes des deux éditions sur le fascicule. Les matrices et les deux tables de scores des pages PDF 5–6 ont été relevées sur le scan. Contrôle du raisonnement en dimension paire, des extrema sur le carré, des quatre tracés et des statistiques pour échantillons indépendants puis appariés."
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1a",
+      "1.1b",
+      "1.2a",
+      "1.2b",
+      "1.2c",
+      "1.2d",
+      "1.3a",
+      "1.3b",
+      "1.3c",
+      "1.3d",
+      "1.3e",
+      "1.3f",
+      "1.4",
+      "2.1a",
+      "2.1b",
+      "2.1c",
+      "2.1d",
+      "2.1e",
+      "2.2a",
+      "2.2b",
+      "2.2c",
+      "2.2d",
+      "3.1a",
+      "3.1b",
+      "3.2a",
+      "3.2b",
+      "3.2c",
+      "3.2d",
+      "3.3a",
+      "3.3b",
+      "3.3c",
+      "3.3d",
+      "3.4a",
+      "3.4b",
+      "3.4c",
+      "3.4d",
+      "3.5a",
+      "3.5b",
+      "3.5c"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1.1a",
+        "titre": "1a",
+        "partie": "Problème 1 — Algèbre",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.1b",
+        "titre": "1b",
+        "partie": "Problème 1 — Algèbre",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.2a",
+        "titre": "2a",
+        "partie": "Problème 1 — Algèbre",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.2b",
+        "titre": "2b",
+        "partie": "Problème 1 — Algèbre",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.2c",
+        "titre": "2c",
+        "partie": "Problème 1 — Algèbre",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.2d",
+        "titre": "2d",
+        "partie": "Problème 1 — Algèbre",
+        "page_pdf": 2
+      },
+      {
+        "question": "1.3a",
+        "titre": "3a",
+        "partie": "Problème 1 — Algèbre",
+        "page_pdf": 3
+      },
+      {
+        "question": "1.3b",
+        "titre": "3b",
+        "partie": "Problème 1 — Algèbre",
+        "page_pdf": 3
+      },
+      {
+        "question": "1.3c",
+        "titre": "3c",
+        "partie": "Problème 1 — Algèbre",
+        "page_pdf": 3
+      },
+      {
+        "question": "1.3d",
+        "titre": "3d",
+        "partie": "Problème 1 — Algèbre",
+        "page_pdf": 3
+      },
+      {
+        "question": "1.3e",
+        "titre": "3e",
+        "partie": "Problème 1 — Algèbre",
+        "page_pdf": 3
+      },
+      {
+        "question": "1.3f",
+        "titre": "3f",
+        "partie": "Problème 1 — Algèbre",
+        "page_pdf": 3
+      },
+      {
+        "question": "1.4",
+        "titre": "4",
+        "partie": "Problème 1 — Algèbre",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.1a",
+        "titre": "1a",
+        "partie": "Problème 2 — Analyse",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.1b",
+        "titre": "1b",
+        "partie": "Problème 2 — Analyse",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.1c",
+        "titre": "1c",
+        "partie": "Problème 2 — Analyse",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.1d",
+        "titre": "1d",
+        "partie": "Problème 2 — Analyse",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.1e",
+        "titre": "1e",
+        "partie": "Problème 2 — Analyse",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.2a",
+        "titre": "2a",
+        "partie": "Problème 2 — Analyse",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.2b",
+        "titre": "2b",
+        "partie": "Problème 2 — Analyse",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.2c",
+        "titre": "2c",
+        "partie": "Problème 2 — Analyse",
+        "page_pdf": 3
+      },
+      {
+        "question": "2.2d",
+        "titre": "2d",
+        "partie": "Problème 2 — Analyse",
+        "page_pdf": 3
+      },
+      {
+        "question": "3.1a",
+        "titre": "1a",
+        "partie": "Problème 3 — Probabilités et statistiques",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.1b",
+        "titre": "1b",
+        "partie": "Problème 3 — Probabilités et statistiques",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.2a",
+        "titre": "2a",
+        "partie": "Problème 3 — Probabilités et statistiques",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.2b",
+        "titre": "2b",
+        "partie": "Problème 3 — Probabilités et statistiques",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.2c",
+        "titre": "2c",
+        "partie": "Problème 3 — Probabilités et statistiques",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.2d",
+        "titre": "2d",
+        "partie": "Problème 3 — Probabilités et statistiques",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.3a",
+        "titre": "3a",
+        "partie": "Problème 3 — Probabilités et statistiques",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.3b",
+        "titre": "3b",
+        "partie": "Problème 3 — Probabilités et statistiques",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.3c",
+        "titre": "3c",
+        "partie": "Problème 3 — Probabilités et statistiques",
+        "page_pdf": 4
+      },
+      {
+        "question": "3.3d",
+        "titre": "3d",
+        "partie": "Problème 3 — Probabilités et statistiques",
+        "page_pdf": 5
+      },
+      {
+        "question": "3.4a",
+        "titre": "4a",
+        "partie": "Problème 3 — Probabilités et statistiques",
+        "page_pdf": 5
+      },
+      {
+        "question": "3.4b",
+        "titre": "4b",
+        "partie": "Problème 3 — Probabilités et statistiques",
+        "page_pdf": 5
+      },
+      {
+        "question": "3.4c",
+        "titre": "4c",
+        "partie": "Problème 3 — Probabilités et statistiques",
+        "page_pdf": 5
+      },
+      {
+        "question": "3.4d",
+        "titre": "4d",
+        "partie": "Problème 3 — Probabilités et statistiques",
+        "page_pdf": 5
+      },
+      {
+        "question": "3.5a",
+        "titre": "5a",
+        "partie": "Problème 3 — Probabilités et statistiques",
+        "page_pdf": 6
+      },
+      {
+        "question": "3.5b",
+        "titre": "5b",
+        "partie": "Problème 3 — Probabilités et statistiques",
+        "page_pdf": 6
+      },
+      {
+        "question": "3.5c",
+        "titre": "5c",
+        "partie": "Problème 3 — Probabilités et statistiques",
+        "page_pdf": 6
+      }
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "controle": [
+      "Les matrices et les deux tables de scores des pages PDF 5–6 ont été relevées sur le scan. Contrôle du raisonnement en dimension paire, des extrema sur le carré, des quatre tracés et des statistiques pour échantillons indépendants puis appariés."
+    ]
+  }
 }

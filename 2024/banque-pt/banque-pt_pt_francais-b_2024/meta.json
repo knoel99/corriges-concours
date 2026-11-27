@@ -1,0 +1,97 @@
+{
+  "slug": "banque-pt_pt_francais-b_2024",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français B",
+    "annee": 2024
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2024/fr_b_2024_pt.pdf",
+    "sujet_sha256": "4a3a8750ab8713e69e12876864459447a6ea00b04fe08d21b2babcdc89301038",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2024/rapport_fra_b_ecrit_2024.pdf",
+    "rapport_sha256": "c1ed81bb83db710cfa3bb131297b1fbbd916c5d79e9b50ee75a85854451fbcf8",
+    "programme_officiel": "https://www.education.gouv.fr/bo/2023/Hebdo28/ESRS2317934A",
+    "theme": "Faire croire",
+    "oeuvres_au_programme": [
+      "Hannah Arendt, « Du mensonge en politique » et « Vérité et politique »",
+      "Alfred de Musset, Lorenzaccio",
+      "Choderlos de Laclos, Les Liaisons dangereuses"
+    ],
+    "source_coefficients": "https://www.banquept.fr/documents/livret/2024/Livret_PT_2024.pdf#page=13",
+    "admissibilite_admission": "ENS Paris-Saclay et ENS Rennes, admission seule, coefficient 4",
+    "programme_sha256": "91350b31e7af8b6491683c5f195ce6b4cc0c0d35408c1629cc1dae904e3c750c",
+    "mots_du_texte_selon_le_sujet": 1417
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "Qui peut reconnaître le mensonge dès le début ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Vérification de l’ouverture et de la chute de Fonseca, de la place de la démocratie et de la portée logique de « toujours d’abord » selon le point de vue. Rédaction des deux éditions, vérification du programme et réalisation du schéma."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Résumé",
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Résumé",
+        "page_pdf": 2,
+        "page_pdf_fin": 4,
+        "page_consigne": 4,
+        "perimetre": "Le passage va de la difficulté d’expliquer le mensonge politique (p. 2) à l’urgence de le condamner en démocratie (p. 4). Le feuillet donne les deux questions p. 4.",
+        "mots_demandes": 200,
+        "mots_admis": [
+          180,
+          220
+        ],
+        "mots_par_paragraphe": [
+          30,
+          82,
+          88
+        ],
+        "mots_rediges": 200,
+        "points": 8
+      },
+      {
+        "question": "Dissertation",
+        "page_pdf": 4,
+        "page_pdf_fin": 4,
+        "perimetre": "Les œuvres confirment-elles que le mensonge, défini comme un « vouloir faire croire », échappe toujours au regard dans un premier temps ?",
+        "points": 12
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

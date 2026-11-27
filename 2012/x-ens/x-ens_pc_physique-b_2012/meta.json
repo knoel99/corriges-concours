@@ -1,0 +1,101 @@
+{
+  "slug": "x-ens_pc_physique-b_2012",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Physique B",
+    "annee": 2012
+  },
+  "intitule": "Étude de quelques phénomènes non linéaires dans les milieux diélectriques",
+  "questions": 38,
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "reprise_physique_ulm",
+      "session": "reprise_physique_ulm",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": false,
+      "perimetre": "Contrôle des symétries, des divergences de la réponse et de la distinction entre angle rasant et incidence."
+    },
+    {
+      "phase": "redaction",
+      "agent": "reprise_physique_ulm",
+      "session": "reprise_physique_ulm",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Résolution des 38 questions énumérées et réalisation de 2 figures."
+    }
+  ],
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2012/pc2012_physique_b.pdf",
+    "sujet_sha256": "14e92b4f4c58eaf8172bde14c4b58a00580203c3f1c2a60a6aa9a773e7a8b3b6",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2012/rap_pc2012_e_phy_b.pdf",
+    "rapport_sha256": "25181a53e4bd45a0a89fb408b8c758edee542ed40ad2ef8a141fbcf666135783",
+    "garde": "XELC · École polytechnique, ESPCI, ENS de Lyon et ENS de Cachan · 4 heures"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "3.c et 8.e",
+      "fichier": "figures/spectres.svg",
+      "legende": "Susceptibilité linéaire signée et module de la polarisation quadratique normalisés."
+    },
+    {
+      "numero": 2,
+      "question": "13 et 14",
+      "fichier": "figures/conversion.svg",
+      "legende": "Conversion du fondamental en second harmonique sous accord de phase. Le point correspond aux données du sujet."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.a",
+      "1.b",
+      "1.c",
+      "1.d",
+      "2.a",
+      "2.b",
+      "3.a",
+      "3.b",
+      "3.c",
+      "3.d",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8.a",
+      "8.b",
+      "8.c",
+      "8.d",
+      "8.e",
+      "8.f",
+      "8.g",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25"
+    ]
+  }
+}

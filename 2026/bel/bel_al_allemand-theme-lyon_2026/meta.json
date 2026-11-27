@@ -17,7 +17,22 @@
   },
   "sources": {
     "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-04/Epreuve%20de%20sp%C3%A9cialit%C3%A9%202026.pdf#page=10",
-    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Allemand%202026.pdf#page=15"
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Allemand%202026.pdf#page=15",
+    "sujet_sha256": "62fa5ca9c1b2caf4de4b131c5e8e4432d72544a0e0a01930f1ffed7d6e59acc2",
+    "rapport_jury_sha256": "a519faa0577c95d84e433356da9b06c510e88a23e7535ee464545b739e56f470",
+    "fascicule": "LC 663, J. 26 1066-P, Banque d’épreuves littéraires, épreuve de spécialité",
+    "page_sujet": 10,
+    "pages_rapport_jury": "15–24",
+    "epreuve": "Thème en quatre heures, sans dictionnaire",
+    "passage": {
+      "auteur": "Séverine Cressan",
+      "titre": "Nourrices",
+      "annee": 2025,
+      "premiers_mots": "De ce voyage qui durera deux journées entières et une nuit",
+      "derniers_mots": "sont conduites dans une salle sans fenêtre.",
+      "paragraphes": 4
+    },
+    "note_du_sujet": "1. die Vermittlerin."
   },
   "figures": [
     {
@@ -26,7 +41,7 @@
       "question": "Thème"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -38,6 +53,24 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Traduction en allemand des quatre paragraphes de Séverine Cressan et guide sur le point de vue, les temps, le lexique du couchage, la valeur financière des frais et le passage de l’hébergement au stockage."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "verification_themes_lyon_2026",
+      "agent": "latin26_lyon",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Comparaison des quatre paragraphes dans les deux éditions avec le livret et la note die Vermittlerin. Révision des signes de fatigue, de l’arrivée en voiture à cheval et de la reprise des voix dans le hangar."
     }
   ],
   "droits_sources": {
@@ -45,5 +78,22 @@
       "Séverine Cressan, Nourrices, 2025."
     ],
     "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires. La licence du corrigé ne vaut pas autorisation de leur part."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Thème intégral en allemand"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "precision": "Les 4 paragraphes de la page 10 du fascicule LC 663 ont été comparés, dans leur ordre, à la traduction complète de chacune des deux éditions.",
+    "reperes_par_paragraphe": [
+      "Les haltes, les instants à pied, l’auberge et le malaise durable de Sylvaine auprès d’Allouïn.",
+      "L’arrivée au bureau, la femme chargée du placement et le hangar où les nourrices attendent.",
+      "Le bruit, la chaumière regrettée, les frais à regagner et la place de Jehan au coucher.",
+      "La conduite de sept postulantes dans une salle sans fenêtre le lendemain."
+    ]
   }
 }

@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Écriture et arts visuels dans l’art en Europe au XXe siècle
 
 Quand on déplie *La Prose du Transsibérien et de la petite Jehanne de France*, le geste nécessaire à la lecture fait progressivement apparaître la peinture. On pourrait choisir d’exposer le livre ouvert sur toute sa hauteur. Le texte offrirait alors une surface à parcourir du regard avant qu’une phrase ait été lue. Ce changement de posture pose une question plus précise que celle de la présence des lettres dans les tableaux. Comment, dans l’art en Europe au XXe siècle, les œuvres règlent-elles le passage entre voir et lire, et que devient par ce passage l’autorité de ce qui est montré ?
@@ -29,6 +31,10 @@ L’enjeu tient à la destination de l’œuvre. Dans un périodique illustré, 
 Dans *Un coup de dés jamais n’abolira le hasard. Image* (1969), Marcel Broodthaers reprend la disposition du poème de Mallarmé publié en volume. Des blocs noirs occupent la place des lignes du poème. Il devient impossible de suivre la phrase dans les pages ainsi transformées et pourtant on peut comparer longueur des lignes, épaisseur des signes, interruptions et réserves blanches. Une opération de soustraction fait ressortir ce que la lecture de mots pouvait reléguer au second plan. La page mallarméenne avait déjà composé des relations dans l’espace. Le livre de Broodthaers donne à percevoir cette organisation en faisant éprouver ce que l’on perd quand on l’isole.
 
 Le titre du poème et le nom de Mallarmé continuent cependant d’orienter l’expérience. Sans eux les rectangles pourraient n’être qu’une suite graphique abstraite. Le geste de Broodthaers engage donc aussi la mémoire d’un texte, le format éditorial qui le transmet et le pouvoir de celui qui le donne à revoir sous un autre nom de genre, « Image ». L’écriture peut ainsi agir dans l’œuvre à l’endroit même où les mots ont cessé d’être lisibles.
+
+Un déplacement matériel suffit parfois à modifier l’opération de lecture. Le dépliant de Cendrars et Delaunay peut être ouvert sur toute sa longueur ou parcouru par portions. Chez Broodthaers, parcourir les lignes noires restitue un rythme de page, tandis que l’effacement empêche de former les phrases que leur disposition annonce. Dans les deux livres, le support participe à l’œuvre jusque dans ce qu’il permet au lecteur de faire.
+
+![Figure 1 — Quatre opérations proposées au spectateur](figures/regarder-et-lire.svg)
 
 Ces quatre expériences se comprennent par les places qu’elles assignent aux regardeurs. Le lecteur de Cendrars et Delaunay oscille entre déploiement et progression. Celui de Magritte doit interroger la confiance accordée à une légende. Celui de Heartfield est placé devant une accusation politique. Avec Broodthaers, il doit faire de sa mémoire de la lecture un instrument du regard. L’écriture dans les arts visuels change donc davantage que la composition d’une surface. Elle peut organiser une épreuve du temps, faire ou défaire une croyance publique et exposer les conditions matérielles dans lesquelles un texte peut encore être reconnu.
 

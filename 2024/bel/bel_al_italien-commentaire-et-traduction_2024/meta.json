@@ -1,0 +1,98 @@
+{
+  "slug": "bel_al_italien-commentaire-et-traduction_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Italien (commentaire et traduction)",
+    "annee": 2024
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2024-11/Commentaire%20d%27un%20texte%20en%20LVE%20et%20traduction.pdf#page=12",
+    "sujet_sha256": "80d15efa86786e91577675fd10623264c98f1e5e2424288248f1a684c15c9f6f",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2024-11/Italien%202024%20OK.pdf#page=2",
+    "rapport_sha256": "20fe5fa3ded1617af0dd57749ea4d785f1658447cba9c8ed1c936c2123ec471a",
+    "archive_session": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2024",
+    "archive_session_sha256": "e50bb1f96fd06e58cc7e72442a84ec9a6beb7a51746da04d7cbc16e0003b6def",
+    "auteur_oeuvre": "Elsa Morante, La storia (1974)."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "Une sirène entendue par quatre personnages"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire intégral en italien, version française du passage indiqué, schéma et accompagnement."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Distinction entre habitude et indifférence dans la parenthèse, singulier de la réserve d’énergie et description précise des regards de Blitz et Nino."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire",
+      "Version française"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Commentaire",
+        "page_pdf": 12,
+        "page_pdf_fin": 13,
+        "perimetre": "De la première annonce des raids à la dernière phrase sur Nino, « meglio che poteva ».",
+        "pages_rapport": [
+          2,
+          4
+        ]
+      },
+      {
+        "question": "Version française",
+        "page_pdf": 12,
+        "page_pdf_fin": 12,
+        "perimetre": "Lignes 1 à 20, de « Con l’avanzare della buona stagione » à « il ragazzo tedesco Gunther era sceso a bere ».",
+        "pages_rapport": [
+          4,
+          7
+        ]
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

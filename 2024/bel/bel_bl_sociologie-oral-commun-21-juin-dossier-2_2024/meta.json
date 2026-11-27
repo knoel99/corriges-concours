@@ -1,0 +1,81 @@
+{
+  "slug": "bel_bl_sociologie-oral-commun-21-juin-dossier-2_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Sociologie (oral commun) — 21 juin dossier 2",
+    "annee": 2024,
+    "modalite": "oral"
+  },
+  "intitule": "Le sommeil des Français",
+  "questions": 0,
+  "sujets": 1,
+  "tirages": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/bl_sujets_oraux_sociologie_tc2_21062024.pdf",
+    "sujet_sha256": "2b03a0b91f0756ec60fa7dda0a9e30dffae42885c5e79338e1f625bc858eb5bc",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_oral_sociologie_epreuve_commune.pdf",
+    "rapport_sha256": "2b325a35f255bbe5da766d002f0b39721fbc10704cbbb324e074b164d093878b",
+    "pages_sujet": "pp. 1–8"
+  },
+  "figures": [
+    {
+      "fichier": "figures/comparaison.svg",
+      "question": "Le sommeil des Français",
+      "legende": "Document 6, p. 7. Part des 18–75 ans déclarant une insomnie chronique, en pourcentage."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "bel_bl_sociologie-oral-commun-21-juin-dossier-2_2024",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Lecture des sept pièces dans leur pagination officielle, exposé, guide de lecture et trois réponses pour l’entretien. Rapprochement des pièces en trois étapes argumentées pour la présentation orale."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "bel_bl_sociologie-oral-commun-21-juin-dossier-2_2024",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": false,
+      "perimetre": "Contrôle des unités, champs et dénominateurs, lecture des graphiques au rendu et comparaison avec la figure « Insomnie chronique et situation financière perçue »."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Le sommeil des Français"
+    ],
+    "controle": [
+      "Lecture des sept pièces dans leur pagination officielle, exposé, guide de lecture et trois réponses pour l’entretien.",
+      "Contrôle des unités, champs et dénominateurs, lecture des graphiques au rendu et comparaison avec la figure « Insomnie chronique et situation financière perçue ».",
+      "Exposé structuré en trois rapprochements croisés, puis contrôle de chaque pièce en suivant la pagination officielle."
+    ]
+  }
+}

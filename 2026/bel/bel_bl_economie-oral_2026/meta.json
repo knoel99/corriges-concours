@@ -26,7 +26,7 @@
       "legende": "Un équilibre de marché sous le prix zéro"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/2026_sujets_economie_tronc_commun.pdf",
     "sujet_sha256": "1050d8bb2495144f8c8c2e926faf502b5d9b461c067163ec2a19fcbcf4e39eb0",
@@ -76,6 +76,122 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Vérification des onze dossiers des deux éditions sur le fascicule de 93 pages, des données et figures, du rapport et des numérotations. Distinction du niveau du PIB et du taux de croissance. Ajout de onze relances corrigées, d’un exemple de coûts comparatifs et de trois schémas quantitatifs."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Dossier 10 du fascicule officiel et rapport d’oral commun. Contrôle des quatre montants du document 1, tableau 3a, et de son champ. Écarts interquantiles calculés dans le brut et exercice de lecture de la médiane dans le guidé."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "session": "gestion_2022_2023",
+      "agent": "gestion_2022_2023",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Les onze exposés et leurs guides ont été rapprochés des 52 documents du fascicule officiel de 93 pages. Les compléments ci-dessous vérifient les dénominateurs, unités et populations des tableaux, cartes et graphiques. Les sujets individuels sont connus pour chacun des onze dossiers. Les relances sont des propositions de préparation à l’entretien."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dossier 1 — Échanges et guerre",
+      "Dossier 2 — Écologie et nudges",
+      "Dossier 3 — Climat et inégalités",
+      "Dossier 4 — Géants du numérique et concurrence",
+      "Dossier 5 — Coût de la dette",
+      "Dossier 6 — Plateformes de location",
+      "Dossier 7 — Dénatalité et activité",
+      "Dossier 8 — Jour férié",
+      "Dossier 9 — Accord UE-Mercosur",
+      "Dossier 10 — Patrimoine des ménages",
+      "Dossier 11 — Prix négatifs de l’énergie"
+    ],
+    "precision": "Oral commun sur dossiers, 1 h 30 de préparation, 15 minutes d’exposé puis 15 minutes d’entretien. Les 11 dossiers sont publiés intégralement ; les questions effectivement posées en entretien ne sont pas transcrites.",
+    "controle": [
+      {
+        "dossier": 1,
+        "pages_pdf": "1–7",
+        "documents": 5,
+        "controle": "Le graphique du document 2 donne un repère distinct du chiffre de perte de PIB cité dans la presse."
+      },
+      {
+        "dossier": 2,
+        "pages_pdf": "8–17",
+        "documents": 4,
+        "controle": "Sur la pancarte de l’hôtel, 75 % désigne la proportion annoncée de clients qui ont accepté de réutiliser leurs serviettes."
+      },
+      {
+        "dossier": 3,
+        "pages_pdf": "18–27",
+        "documents": 4,
+        "controle": "Les deux images du document 2 changent d’unité et de population."
+      },
+      {
+        "dossier": 4,
+        "pages_pdf": "28–37",
+        "documents": 5,
+        "controle": "On peut chiffrer la concentration sans connaître les petits fournisseurs."
+      },
+      {
+        "dossier": 5,
+        "pages_pdf": "38–46",
+        "documents": 5,
+        "controle": "En 2021, sur le graphique du document 4, on lit environ 48 pays dont le service de la dette dépasse la dépense d’éducation et environ 38 pour la santé."
+      },
+      {
+        "dossier": 6,
+        "pages_pdf": "47–55",
+        "documents": 6,
+        "controle": "Dans le document 4, 35 % est une proportion parmi les propriétaires."
+      },
+      {
+        "dossier": 7,
+        "pages_pdf": "56–63",
+        "documents": 4,
+        "controle": "La table de la projection centrale permet de comprendre le point de retournement."
+      },
+      {
+        "dossier": 8,
+        "pages_pdf": "64–72",
+        "documents": 4,
+        "controle": "Le tableau de calendrier de l’Insee donne pour 2026 trois jeudis ouvrés de plus et deux vendredis ouvrés de moins que l’année précédente."
+      },
+      {
+        "dossier": 9,
+        "pages_pdf": "73–78",
+        "documents": 4,
+        "controle": "Le document 4 mesure l’utilisation de pesticides en 2023 en kilogrammes de substance active par hectare agricole."
+      },
+      {
+        "dossier": 10,
+        "pages_pdf": "79–87",
+        "documents": 4,
+        "controle": "La table fiscale du document 4 compte environ 40 700 foyers à très haut revenu et autant à très haut patrimoine immobilier en 2022."
+      },
+      {
+        "dossier": 11,
+        "pages_pdf": "88–93",
+        "documents": 7,
+        "controle": "En lisant les fins de courbe de 2024 et de 2025, on passe de quelque 360 à un peu plus de 500 heures de prix négatif."
+      }
+    ]
+  }
 }

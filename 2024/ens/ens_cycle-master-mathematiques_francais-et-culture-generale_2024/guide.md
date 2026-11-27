@@ -6,7 +6,19 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Durée de l’épreuve, trois heures. Le résumé et le commentaire comptent chacun pour dix points. Le sujet demande un résumé de 250 mots, avec une tolérance de 225 à 275 mots, puis un seul des deux commentaires. Les deux choix sont traités ci-dessous.
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+## Sujet et consignes
+
+École normale supérieure Paris Saclay et École normale supérieure Rennes. Mardi 27 février 2024, de 8 h 30 à 11 h 30. Concours 2A Mathématiques, Épreuve n° 1. Dictionnaires interdits. Durée de l’épreuve, trois heures.
+
+P. Rosanvallon, La légitimité démocratique. Impartialité, réflexivité, proximité, Points Essais, 2008. La page 2 est blanche. Le texte occupe les pages 3 à 5 du PDF. Deux notes p. 3 renvoient à Louis Blanc et à Adhémar Esmein. Questions p. 5.
+
+Résumer le texte en 250 mots (avec une marge de tolérance de + ou – 10%). Le nombre exact de mots utilisés sera indiqué en fin de résumé. L’intervalle admis va de 225 à 275 mots.
+
+Sous forme d’un développement construit, commenter, au choix, l’une des deux réflexions suivantes de l’auteur : Chaque exercice vaut dix points. Les deux options sont traitées ici.
+
+Le rapport écrit traite p. 1 du nombre de mots, de la reformulation, du plan, de la culture mobilisée et de la langue. La p. 2 conclut ce bilan.
 
 ## Préparer les deux exercices
 
@@ -15,6 +27,8 @@ Tracer d’abord deux colonnes. Dans la première, noter ce que l’élection pe
 Le résumé doit suivre le mouvement du texte jusque dans sa dernière comparaison. Rosanvallon part de la rupture avec les anciens pouvoirs, distingue les deux fictions, décrit les désillusions de la période 1890–1920, puis examine comment l’administration devient porteuse d’une nouvelle espérance. La France met en avant la vocation du service public, les États-Unis la gestion rationnelle. Le passage évoque aussi brièvement l’attrait exercé par des projets totalitaires. Ce point ne doit ni disparaître ni occuper à lui seul le dernier mouvement.
 
 Dans 2 a, donner d’abord un sens précis au mot « établissement ». L’évolution du corps électoral permet de distinguer l’héritage historique et le principe qui le justifie. La question 2 b porte davantage sur la façon dont des raisons communes peuvent naître des pratiques d’un régime. Un exemple suivi, tel le réseau de transport ci-dessous, évite de remplacer cette difficulté par une liste abstraite de bonnes institutions. Pour tester un argument, se demander ce qu’un citoyen minoritaire pourrait encore demander après le vote.
+
+Rosanvallon mobilise Louis Blanc pour la rupture avec la légitimité héréditaire et Esmein pour la discussion de la majorité. Relevez ensuite les deux écarts distincts que le résumé doit restituer. Dans le second commentaire, refaites le calcul des deux trajets et formulez la raison que la commune pourrait donner à la personne la moins bien desservie.
 
 ## 1. Résumé
 
@@ -30,7 +44,7 @@ Pour redonner consistance au bien public, certains en viennent à désirer un po
 
 ![Du vote majoritaire à la recherche du bien commun](figures/majorite.svg)
 
-## 2 a. La démocratie peut-elle se défaire de « ses conditions d’établissement » ?
+## 2a. La démocratie peut-elle se défaire de « ses conditions d’établissement » ?
 
 Le lendemain d’une élection, le bulletin a désigné ceux qui gouverneront. A-t-il déjà rendu démocratiques les décisions qu’ils prendront pendant plusieurs années ? Le rapprochement proposé par Rosanvallon concerne d’abord une distinction de temps. Une origine jugée légitime et la conduite durable d’un régime se laissent aisément confondre. Il concerne aussi une histoire. Le suffrage majoritaire s’est imposé contre des pouvoirs de naissance et de privilège. Nous examinerons ce que la démocratie perdrait à renier cette origine, puis les raisons pour lesquelles elle doit la dépasser, avant de préciser quelles institutions peuvent prolonger l’autorisation initiale.
 
@@ -40,15 +54,21 @@ Le lendemain d’une élection, le bulletin a désigné ceux qui gouverneront. A
 
 **La durée du mandat doit donc offrir des occasions de justification et de contestation.** La publicité d’un débat permet de savoir quelles raisons ont fait changer un texte. La presse, les associations et les recours rendent perceptibles les conséquences d’une décision pour ceux qui ne l’ont pas voulue. La décision du Conseil constitutionnel sur la liberté d’association en 1971 en donne un exemple précis. La majorité parlementaire pouvait légiférer, mais sa délibération devait respecter un droit qui permet justement aux gouvernés de se réunir et de s’exprimer entre deux scrutins. Un tel contrôle est lui-même borné par les règles publiques qui définissent sa compétence. Sinon, la substitution du juge ou de l’expert à l’électeur déplacerait seulement le problème.
 
+La décision du 16 juillet 1971 reconnaît à la liberté d’association le rang de principe fondamental reconnu par les lois de la République. Le dispositif législatif examiné aurait permis de subordonner l’acquisition de la capacité juridique par certaines associations à un contrôle judiciaire préalable. En l’écartant, le Conseil protège une manière, pour les citoyens, de se constituer en interlocuteurs de la majorité après l’élection. La légitimité initiale du législateur et la légitimité de chacune de ses dispositions deviennent ainsi deux questions distinctes.
+
 La démocratie peut ainsi se défaire de certaines limites de son établissement et de la fiction d’un mandat approuvé par avance. Elle dépend toujours du pouvoir égal des gouvernés de choisir et de remplacer leurs représentants. Juger l’exercice de ce pouvoir tout au long du mandat donne sa portée à l’acte qui l’a institué.
 
-## 2 b. Le fonctionnement démocratique peut-il réaliser « l’exigence de généralité » ?
+## 2b. Le fonctionnement démocratique peut-il réaliser « l’exigence de généralité » ?
 
 Une commune doit desservir plusieurs quartiers par un nouveau réseau de bus. Si la majorité des habitants vit au centre, une consultation suffit-elle à produire un réseau qui serve toute la commune ? Chez Rosanvallon, la « généralité » désigne l’exigence de rapporter l’action publique au corps social tout entier en reconnaissant la valeur de chacun de ses membres. Une décision générale n’a donc pas à procurer le même gain à tous. Elle doit pouvoir se justifier auprès de ceux auxquels elle s’applique. Il faut voir pourquoi le vote ne suffit pas à cette tâche, comment la délibération et le service public peuvent la poursuivre, et à quelles conditions leur prétention reste contrôlable.
 
 **Compter les voix donne au conflit une issue commune.** Le quartier le plus nombreux n’a pas à recevoir un poids supplémentaire en raison de sa richesse ou de son prestige. Chaque citoyen compte également. Mais une règle de majorité peut aussi reconduire à chaque vote le désavantage du même quartier excentré. Lui opposer qu’il a voté ne répond pas à la question du trajet qu’un habitant âgé ou sans voiture pourra effectivement faire. Rousseau distinguait la volonté de tous, addition d’intérêts orientés vers des objets privés, et la volonté générale, qui porte sur ce que les citoyens ont en commun. L’addition des préférences renseigne sur leur distribution. Elle ne suffit pas à définir l’objet sur lequel il est juste de décider ensemble.
 
 **Une administration et une délibération peuvent modifier la question.** Des agents peuvent recueillir les horaires d’emploi, repérer l’absence de desserte d’un hôpital et comparer les besoins de mobilité des groupes qui participent peu aux réunions publiques. Le service public fournit ainsi une continuité et des connaissances qui manquent au seul moment du scrutin. Le débat entre représentants peut transformer des demandes rivales en un critère commun, par exemple garantir à chaque quartier un accès raisonnable aux services essentiels, puis répartir les moyens restants selon la fréquentation. Le centre et la périphérie ne recevront pas nécessairement la même fréquence. La différence doit pouvoir se rapporter à un principe intelligible pour tous.
+
+Imaginons cent votants et deux tracés. Cinquante et un habitants préfèrent A. Il amène ceux du centre à la mairie en dix minutes et ceux du hameau en une heure. Avec B, ces durées seraient de quatorze et vingt-huit minutes. Le décompte établit quelle option a gagné. Il reste à discuter en public si quatre minutes épargnées au centre justifient trente-deux minutes supplémentaires au hameau. Décider d’un temps maximal de desserte peut modifier l’objet même sur lequel on consulte les habitants.
+
+![Un vote décide du tracé. Le tableau permet ensuite de discuter la répartition des temps de trajet.](figures/lignes-de-bus.svg)
 
 **Aucun corps ne possède pourtant à lui seul le point de vue de la société.** Les services peuvent prendre pour universels les usages des personnes que leurs outils savent mesurer. Une consultation en ligne suffit à rendre invisibles certains habitants. Publier les données, organiser une réunion accessible à plusieurs horaires, entendre des associations et permettre un recours donnent des prises à la contestation. Modifier ensuite un itinéraire à la lumière de l’expérience manifeste une capacité de révision. La généralité tient aussi à la possibilité, pour un membre d’abord oublié, de faire apparaître à tous l’insuffisance du critère choisi.
 

@@ -10,16 +10,18 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Cette épreuve de la filière universitaire internationale de formation francophone dure deux heures. Montesquieu examine les effets du commerce dans De l’Esprit des lois (1748, livre XX, chapitre II). L’essai personnel est libre, sans limite de mots.
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Concours 2020, session de printemps. Le samedi 14 mars 2020, de 13 h 30 à 15 h 30 (deux heures). L’essai est bref, libre et sans limitation du nombre de mots. Montesquieu examine le commerce dans *De l’esprit des lois* (1748, livre XX, chapitre II).
 
 [Sujet officiel de la session 2](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20FUI-FF%20S2%20SUJET%20FRANCAIS.pdf)
 
 ## A1 · La thèse et ses étapes
 
 > [!INDICATION]
-> Suivre le changement d’échelle entre les nations, les individus et les pratiques d’hospitalité.
+> Attribuez à Aristote la classification du brigandage et à Montesquieu le rapprochement avec l’hospitalité. En quoi le dernier exemple complique-t-il le jugement sur les effets moraux du commerce ?
 
-Montesquieu déplace l’analyse du commerce d’une échelle à une autre. Entre deux nations, l’intérêt de vendre rencontre l’intérêt d’acheter ; la paix permet de poursuivre l’échange. Entre particuliers, en revanche, l’habitude de fixer le prix de chaque service peut étouffer les gestes de générosité. Le raisonnement se nuance encore : le commerce favorise le respect exact de ce qui est dû, tandis que les peuples qu’il qualifie de brigands peuvent, selon lui, pratiquer admirablement l’hospitalité. Aucune de ces deux organisations ne réunit donc à elle seule toutes les vertus.
+Montesquieu déplace l’analyse du commerce d’une échelle à une autre. Entre deux nations, l’intérêt de vendre rencontre l’intérêt d’acheter ; la paix permet de poursuivre l’échange. Entre particuliers, en revanche, l’habitude de fixer le prix de chaque service peut étouffer les gestes de générosité. Le raisonnement se nuance encore : le commerce favorise le respect exact de ce qui est dû, tandis que les peuples qu’il qualifie de brigands peuvent, selon lui, pratiquer admirablement l’hospitalité. La référence à Aristote intervient à un endroit précis : il classe le brigandage parmi les manières d’acquérir. C’est Montesquieu qui oppose ensuite la violence d’une acquisition et la gratuité possible de l’accueil chez un même peuple. Cette coexistence empêche d’ordonner toutes les sociétés sur une échelle unique de perfection morale.
 
 ![Deux effets de l’esprit de commerce.](figures/deux-echelles.svg)
 
@@ -47,7 +49,7 @@ La question imprimée parle de « nations », là où le texte évoquait les « 
 ## B · Les échanges et l’hospitalité
 
 > [!INDICATION]
-> Distinguer dans une scène précise l’obligation réciproque, l’expérience de l’autre et le geste d’accueil.
+> Dans l’orchestre de l’exemple, comparez le cachet dû au musicien et l’aide offerte après le concert. Comment passe-t-on de la justice exacte à l’hospitalité ?
 
 Les échanges entre les peuples peuvent défaire un préjugé précis. Un orchestre qui accueille des instrumentistes venus d’ailleurs découvre parfois qu’un passage joué ici d’une manière presque automatique peut recevoir un autre accent. Une répétition commune exige d’écouter ce que l’on croyait déjà connaître. Le concert n’a pas besoin de produire une manière unique de jouer. Il peut donner aux musiciens et au public deux interprétations qu’ils sauront désormais entendre comme différentes et également réfléchies.
 
@@ -56,9 +58,3 @@ Je ne pense pourtant pas que le seul fait d’échanger rende nécessairement me
 L’hospitalité a pour moi la valeur du temps que l’on accepte de ne pas facturer. Montrer à un invité où trouver une salle de répétition, lui donner le moyen de rentrer le soir ou lui offrir un repas peut lui rendre une liberté très concrète dans une ville inconnue. Il faut aussi que l’invité puisse refuser ce repas sans perdre sa place dans le programme. C’est à cette possibilité de répondre librement que je mesurerais le bénéfice humain d’un échange, qu’il s’agisse d’un concert, d’un commerce ou d’une visite ordinaire.
 
 ![Évaluer une rencontre musicale.](figures/jouer-ensemble.svg)
-
-> [!METHODE]
-> Pour terminer, relier la portée de l’exemple à la question posée. La conclusion personnelle doit pouvoir être comprise par quelqu’un qui découvre cet exemple.
-
-> [!METHODE]
-> Dans l’essai, distinguer le cachet dû au musicien invité d’une aide qu’on lui offre librement. Ces deux gestes permettent de discuter, à l’échelle des personnes, ce que Montesquieu appelle justice exacte et ce qu’il désigne comme hospitalité.

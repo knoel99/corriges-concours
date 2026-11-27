@@ -1,0 +1,92 @@
+{
+  "slug": "banque-pt_pt_francais-a_2013",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français A",
+    "annee": 2013
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2013/fr_a_2013_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2013/rapport_fra_a_ecrit_2013.pdf",
+    "programme_officiel": "https://www.education.gouv.fr/bo/12/Hebdo26/ESRS1200215A.htm",
+    "notice": "https://www.banquept.fr/documents/livret/2013/Livret_PT_2013.pdf#page=12",
+    "sujet_sha256": "a54cba551575f502e0a55dc7aa0785d9f5a3270932987c9f0f1cb7cd76451dfa",
+    "rapport_jury_sha256": "89eb1e613413c52a73c8f7bf5e170aeaeb3a06f33cd5d091cc19c89d427f29da",
+    "programme_officiel_sha256": "7118b752614653fd05c12dcf94e41fe9158307cad83cfed4f63b3a7ca2f654da",
+    "notice_sha256": "a5ec06950020d6468198946219e761ae339b23d5e278f19d09876bacabb64a0e",
+    "oeuvres_au_programme": [
+      "Platon, Phèdre (traduction de Létitia Mouze)",
+      "Pierre de Marivaux, Les Fausses Confidences",
+      "Paul Verlaine, Romances sans paroles"
+    ],
+    "theme": "La Parole",
+    "admissibilite_admission": "École polytechnique, admissibilité, coefficient 4",
+    "pages_rapport": "Rapport PDF p. 1 à 7, pagination imprimée 19 à 25. L’analyse examine le singulier de la voix, les deux instances du moi, la recherche et la chute familière."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "Qui peut répondre de ce que l’on entend ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction sur le paradoxe du silence et de la voix chez Ponge. Analyse de la lettre dictée, du rouleau de Lysias, de la palinodie, des Ariettes oubliées et de Green dans les deux éditions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Retour au feuillet et au rapport, vérification des trois œuvres. Précision sur le contenu de la confidence finale de Dorante et sur ce qu’Araminte peut y reconnaître.",
+      "tour": 1
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 1,
+        "perimetre": "Les œuvres au programme vous semblent-elles illustrer cette affirmation du poète Francis PONGE (Proèmes 1948) ?",
+        "points": 20
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "slug": "x_mp-pc_russe_2007",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Russe",
+    "annee": 2007,
+    "modalite": "écrit"
+  },
+  "intitule": "L’appartement de Kolia et le devoir d’assistance",
+  "questions": 3,
+  "redaction": "Traduction intégrale en français, analyse et réflexion personnelle en russe. L’appartement de Kolia et le devoir d’assistance.",
+  "sources": {
+    "sujet": "https://web.archive.org/web/20090424050957id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/07_Version.pdf#page=7",
+    "sha256_sujet": "b999f49ba6232ccaf44de763c2cb3752fbb87ded11728669268265262b0e3a03",
+    "index": "https://web.archive.org/web/20090415204525/http://www.polytechnique.fr:80/concours/sujets/sujet07/sujet07.htm",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://web.archive.org/web/20090424050957id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/07_Version.pdf#page=7",
+        "sha256": "b999f49ba6232ccaf44de763c2cb3752fbb87ded11728669268265262b0e3a03"
+      },
+      {
+        "role": "sujet complémentaire",
+        "url": "https://web.archive.org/web/20090424045418id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/07_ExprEcrit.pdf",
+        "sha256": "3480b2ca508e8df2f8d98d5325aef0f68faafb32776b69e2174e40304d224573"
+      },
+      {
+        "role": "rapport",
+        "url": "https://web.archive.org/web/20090424084544id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/07_Compos_Russe_MP_PC_Rap.pdf",
+        "sha256": "38f206ff1215ef5f3c7ddaa74fad92c628837712c86f224a2ad36e44e722a2e6"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Version",
+      "fichier": "figures/lecture-de-la-version.svg",
+      "legende": "La vente telle que la raconte Kolia"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "arabe_mp_pc_2011_2014",
+      "session": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Traduction intégrale en français, analyse et réflexion personnelle en russe. L’appartement de Kolia et le devoir d’assistance."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version",
+      "Expression 1",
+      "Expression 2"
+    ]
+  }
+}

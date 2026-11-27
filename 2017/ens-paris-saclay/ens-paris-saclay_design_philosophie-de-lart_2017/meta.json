@@ -1,0 +1,125 @@
+{
+  "slug": "ens-paris-saclay_design_philosophie-de-lart_2017",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Philosophie de l’art",
+    "annee": 2017,
+    "modalite": "écrit",
+    "etablissement_imprime": "École normale supérieure Paris-Saclay"
+  },
+  "intitule": "Discuter l’affirmation de Victor Papanek sur la responsabilité du designer",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2017_Sujet_1A_Design_Philo_art.pdf",
+    "sha256_sujet": "eab75b4f4d26773d41a996d52b1155851f6a8a8d44e496c43c39b94d2192b0df",
+    "index_annales": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=279",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2017_RE_1A_Design.pdf",
+    "sha256_rapport_jury": "0e260994d26a4a9edfae7ff149923a46e3e0a79e20520cd5f6614946dd90b2c7",
+    "code_sujet": "C17102",
+    "index_annales_sha256": "9a1a65285afa119e00dbc84ca52596174e747308f94f1ecdefda7ad571ff7565",
+    "composition_du_sujet": "Feuillet unique de texte. La citation et la consigne figurent page 1.",
+    "pages_rapport_philosophie": [
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/prise-et-effort.svg",
+      "question": "Dissertation",
+      "legende": "Une variation de diamètre redistribue l’effort de préhension pour certains usagers."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_design",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Analyse de l’affirmation de Papanek et du rapport 2017. Dissertation, guidage par cas contradictoires et figure originale sur les possibilités de prise."
+    },
+    {
+      "phase": "revision",
+      "agent": "x_hist_1986",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Confrontation à la citation et au rapport, distinction entre responsabilité constitutive et devoir de la reconnaître, correction du paramètre isolé par le schéma, objection sur le pouvoir de désigner les publics."
+    }
+  ],
+  "duree_heures": 4,
+  "intitule_editorial": true,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2017_Sujet_1A_Design_Philo_art.pdf",
+      "sha256": "eab75b4f4d26773d41a996d52b1155851f6a8a8d44e496c43c39b94d2192b0df",
+      "pages": 1,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "61167fdf513da35bccdd5708fdf6655285191ef1292abd180ee497d83c6359ac"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2017_RE_1A_Design.pdf",
+      "sha256": "0e260994d26a4a9edfae7ff149923a46e3e0a79e20520cd5f6614946dd90b2c7",
+      "pages": 23,
+      "pages_verifiees": [
+        {
+          "numero": 2,
+          "rendu_sha256": "62574d12f1155702a8d7d12269d7a81e34a3e62ff637b02bd1fa4357211d8da2"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "f867ae040982f83c9b2e81c575d60a0421971def9b809dc6dda012431fa6123f"
+        },
+        {
+          "numero": 13,
+          "rendu_sha256": "814f567d4e5ffdc6709279ddc68f3d45b09f42976fe5eb806effd4c3bbb9c2a0"
+        },
+        {
+          "numero": 14,
+          "rendu_sha256": "a49ad18ac0635382d50e63a80660b34ee70ef099ac2499b470fb7e1c4d1cf6fd"
+        },
+        {
+          "numero": 15,
+          "rendu_sha256": "87927fb4c5340a9fe05aa2d4f75d5dff556018c3f970060d447ad0a87bdacd06"
+        }
+      ]
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 1,
+        "intitule_ou_demande": "Discuter l’affirmation de Victor Papanek sur la conscience de sa responsabilité sociale et morale.",
+        "code": "C17102"
+      }
+    ],
+    "annexes_sujet": [],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

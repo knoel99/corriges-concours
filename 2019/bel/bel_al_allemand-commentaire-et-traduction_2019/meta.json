@@ -17,7 +17,22 @@
   "sources": {
     "sujet": "https://www.ens-lyon.fr/sites/default/files/2019-10/2019%20Commentaire%20et%20traduction%20en%20LVE.pdf#page=2",
     "sujet_sha256": "2bd23d0dbb0cf0decbef400bf4f915dcdf3e0ee739454679f39f79836660887c",
-    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2019-10/ALLEMAND_2019_0.pdf#page=1"
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2019-10/ALLEMAND_2019_0.pdf#page=1",
+    "sha256_rapport_jury": "a81346aa401c3af275f4f8a77bc2381ec9d2058b3bfa2f6daf6d2ef175ef2212",
+    "pages_rapport_verifiees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "ouvrage": "Peter Weiss, Abschied von den Eltern (1961)."
   },
   "figures": [
     {
@@ -26,7 +41,7 @@
       "legende": "La naissance d’une seconde voix"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -37,6 +52,23 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Commentaire en allemand de l’extrait complet d’Abschied von den Eltern de Peter Weiss, traduction des lignes 3–16, guide sur les emboîtements spatiaux et le passage de l’image à la parole, schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture phrase par phrase sur le fascicule de l’ENS de Lyon et rapprochement avec le rapport du jury. Scène du jeu et prêt du manteau, modalité du conditionnel, demi-étage et double sens du vocabulaire artisanal dans le commentaire.",
+      "agent": "lyon_ses_sources"
     }
   ],
   "droits_sources": {
@@ -44,5 +76,28 @@
       "Peter Weiss évoque dans Abschied von den Eltern (1961) la rencontre du narrateur avec Jacques au temps de l’exil. Le commentaire porte sur l’ensemble de l’extrait. La version commence avec la tombée de la nuit au jardin et se termine lorsque Jacques revient s’asseoir à la table."
     ],
     "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire",
+      "Version française"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Commentaire",
+        "page_pdf": 2,
+        "page_pdf_fin": 3,
+        "perimetre": "Lignes 1–46, du jardin et des derniers jeux jusqu’aux aperçus en forme de rébus sur le passé et l’avenir des deux hommes."
+      },
+      {
+        "question": "Version française",
+        "page_pdf": 2,
+        "page_pdf_fin": 2,
+        "perimetre": "Lignes 3–16, de « Es war schon fast dunkel im Garten » à « setzte er sich zu mir an den Tisch ». Le récit du travail de Jacques commence après la borne."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
   }
 }

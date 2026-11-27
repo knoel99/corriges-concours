@@ -10,6 +10,8 @@
 
 **Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Cadre.** Épreuve de 4 heures, conception ESCP BS – HEC Paris, sans document ni calculatrice. Un seul problème de 36 questions numérotées (54 au niveau le plus fin), en trois parties précédées de préliminaires. Selon le rapport 2026, 2836 copies ont été corrigées, avec une note péréquée moyenne de 10,84. Le rapport appelle la question 34 « dernière question » et parle d’une « Partie IV » pour les questions 28 à 32. Les numéros donnés ici suivent le sujet imprimé, qui va jusqu’à la question 36 en partie III.
@@ -419,7 +421,7 @@ Elle vaut $y_0$ pour $t\leqslant y_0$ et $t$ pour $t\geqslant y_0$ : elle est cr
 Pour $(0,0)$ et $(1,1)$ : $f_1(1,1)-f_1(0,1)-f_1(1,0)+f_1(0,0)=1-1-1+0=-1<0$.
 
 > [!JURY]
-> Le rapport 2026 relève une « Difficulté à construire des contre-exemples simples » et recommande de « Savoir construire des contre-exemples simples. » Un contre-exemple est numérique et se vérifie en une ligne.
+> Le rapport 2026 relève une « Difficulté à construire des contre-exemples simples » et recommande de « Savoir construire des contre-exemples simples. » Ici, les quatre valeurs de la fonction aux sommets du carré suffisent pour calculer un accroissement négatif.
 
 ### Question 19(a)
 
@@ -533,8 +535,13 @@ Pour $u\in[0,1]$, $\mathbb{P}(U\leqslant u)=C(u,1)=u$ ; avec $U\in[0,1]$, $U\hoo
 
 $C^*(0,x)=x-1+C(1,1-x)=0$, $C^*(1,x)=x+C(0,1-x)=x$, et de même dans l'autre variable. L'accroissement double de $C^*$ sur $[a_1,b_1]\times[a_2,b_2]$ vaut celui de $C$ sur $[1-b_1,1-a_1]\times[1-b_2,1-a_2]$, positif.
 
-> [!METHODE]
-> $C^*$ est la fonction de répartition de $(1-U,1-V)$ restreinte à $[0,1]^2$ : d'où son nom de copule de survie.
+Si $(U,V)$ est le couple associé à $C$, les marges uniformes n’ont pas d’atomes. Pour $u,v\in[0,1]$, le passage au complément donne
+$$\begin{aligned}
+\mathbb P(1-U\le u,\,1-V\le v)
+&=1-\mathbb P(U<1-u)-\mathbb P(V<1-v)\\
+&\quad+\mathbb P(U<1-u,\,V<1-v)\\
+&=u+v-1+C(1-u,1-v)=C^*(u,v).
+\end{aligned}$$
 
 ### Question 26(a)
 
@@ -762,7 +769,7 @@ Avec $s_\varepsilon(t)=\varepsilon+(1-2\varepsilon)t$, qui envoie $[0,1]$ dans $
 
 #### Solution
 
-$C_\theta(0,x)=C_\theta(x,0)=0$ (cas « sinon ») ; $C_\theta(1,x)=x\,\mathrm{e}^{0}=x$ pour $x\in\,]0,1]$, et $C_\theta(1,0)=0$. Avec Q34, $C_\theta$ est une copule.
+$C_\theta(0,x)=C_\theta(x,0)=0$ (cas « sinon ») ; $C_\theta(1,x)=x\,\mathrm{e}^{0}=x$ pour $x\in\,]0,1]$, et $C_\theta(1,0)=0$. Par symétrie, $C_\theta(x,1)=x$ aussi. Avec Q34, $C_\theta$ est une copule.
 
 ### Question 36
 

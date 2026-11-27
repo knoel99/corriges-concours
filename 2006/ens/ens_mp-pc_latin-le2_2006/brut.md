@@ -1,0 +1,21 @@
+# ENS · MP-PC · Latin (LE2) 2006 — Corrigé brut
+
+*Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
+
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+ENS de Paris et de Cachan. Version française en deux heures. Aulu-Gelle, Nuits attiques, XV, 18.
+
+## Version. Une prophétie remarquable
+
+Le jour où, pendant la guerre civile, Caius César et Cnaeus Pompée en vinrent aux mains en Thessalie, enseignes contre enseignes, il se produisit à Padoue, dans cette partie de l’Italie qui se trouve au-delà du Pô, un événement digne de mémoire.
+
+Un prêtre du nom de Cornélius […], vénérable par les devoirs sacrés de son ministère et d’une conduite irréprochable, eut soudain l’esprit bouleversé. Il dit qu’il apercevait au loin une bataille d’une extrême violence. Puis il s’écria qu’il voyait de ses propres yeux les uns céder du terrain, les autres les presser, les morts, la fuite, les traits qui volaient, le combat qui reprenait, la charge, les gémissements et les blessures, tout comme s’il assistait lui-même à la bataille. Peu après, il s’exclama soudain que César avait vaincu.
+
+Sur le moment, cette prophétie du prêtre Cornélius parut légère et insensée. Bientôt elle provoqua un immense étonnement. En effet, le jour de la bataille livrée en Thessalie fut bien celui qu’il avait dit, et l’issue du combat celle qu’il avait prédite. Bien plus, par les mouvements et les paroles du devin, on avait eu sous les yeux les vicissitudes successives de la lutte et le choc même des deux armées.
+
+Les verbes de parole donnent accès à la scène depuis Padoue. La dernière phrase distingue trois concordances successives entre la vision et la bataille.
+
+![Figure 1 — L’étonnement croît quand la concordance va du jour de la bataille à son déroulement.](figures/lecture.svg)
+
+[Sujet, page 12](https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2006/sujet-2006-ecrit-mp_pc_langue_etrangere_2.pdf#page=12) · [Rapport du jury, MP-PC](https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2006/rapport-2006-pc_ecrit_langue_etrangere_2_latin.pdf)

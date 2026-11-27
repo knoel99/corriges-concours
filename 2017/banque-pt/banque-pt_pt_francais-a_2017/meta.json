@@ -1,0 +1,74 @@
+{
+  "slug": "banque-pt_pt_francais-a_2017",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français A",
+    "annee": 2017
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2017/fr_a_2017_pt.pdf",
+    "sujet_sha256": "d657c03fda507f1f0de3bb23f2f51872435eaa3c3961f6574e8e27c72f7f773c",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2017/rapport_fra_a_ecrit_2017.pdf",
+    "rapport_sha256": "e3b05859be504973122ac816cba41cd2db46cadaa266a6b9b7e53b05d5c21f2c",
+    "programme_officiel": "https://www.education.gouv.fr/bo/16/Hebdo26/MENS1600411A.htm",
+    "theme": "Servitude et soumission",
+    "oeuvres_au_programme": [
+      "La Boétie, Discours de la servitude volontaire",
+      "Montesquieu, Lettres persanes",
+      "Ibsen, Une maison de poupée (traduction Éloi Recoing)"
+    ],
+    "source_coefficients": "https://www.banquept.fr/documents/livret/2017/Livret_PT_2017.pdf#page=12",
+    "admissibilite_admission": "École polytechnique, admissibilité, coefficient 4"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "Quand l’obéissance ressemble à un choix"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lyon_ses_sources",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture de la période conditionnelle de Hume. Vérification des Spartiates, des deux lettres de Krogstad, de la lettre de Roxane et de la redistribution des faveurs. Rédaction des deux éditions, vérification du programme et réalisation du schéma."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 1,
+        "page_pdf_fin": 1,
+        "perimetre": "Commenter la proposition de David Hume selon laquelle, chez ceux qui ont connu la liberté, la servitude doit avancer par degrés et se déguiser pour obtenir leur acceptation."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

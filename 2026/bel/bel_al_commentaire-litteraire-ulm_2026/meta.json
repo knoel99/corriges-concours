@@ -37,7 +37,7 @@
       "legende": "De la commande au retour à la pelisse"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "revision": {
     "date": "2026-11-24",
     "modele": null,
@@ -117,6 +117,19 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Vérification des deux éditions sur le passage de Giono, de la première épaule à la dernière réplique. Analyse du discours indirect de Mme Tim et de la manière dont Saucisse accède à ses paroles et au silence de Langlois."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Giono, différence entre indice visuel et reconnaissance dans la découverte du portrait."
     }
   ],
   "provenance": {

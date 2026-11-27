@@ -36,9 +36,26 @@
     "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/All%20Filieres_Fran%C3%A7ais%20OK.pdf",
     "programme": "https://www.education.gouv.fr/bo/2025/Hebdo23/MENS2514209A",
     "sujet_sha256": "62c2e80f2038769e6db5600a1712f41b32e8cdaafefd2e21b3766a48cf377b4e",
-    "rapport_sha256": "eae7c0b298ad22652035e6c25ab0431e48d56346a0eac2a0dff0779b761b1581"
+    "rapport_sha256": "eae7c0b298ad22652035e6c25ab0431e48d56346a0eac2a0dff0779b761b1581",
+    "programme_sha256": "2e2db7b19f105d0b210a79cddcfc09bfd99436c945dde11431dd36e1be48ace3",
+    "textes_de_reference": [
+      {
+        "libelle": "Condillac, Dessein de cet ouvrage",
+        "url": "https://fr.wikisource.org/wiki/Trait%C3%A9_des_sensations/Dessein_de_cet_ouvrage"
+      },
+      {
+        "libelle": "Verne, deuxième partie, chapitre XVI",
+        "url": "https://fr.wikisource.org/wiki/Vingt_mille_lieues_sous_les_mers/Partie_2/Chapitre_16"
+      },
+      {
+        "libelle": "Verne, deuxième partie, chapitre XVII",
+        "url": "https://fr.wikisource.org/wiki/Vingt_mille_lieues_sous_les_mers/Partie_2/Chapitre_17"
+      }
+    ],
+    "perimetre_du_rapport": "MP, MPI, PC et PSI",
+    "sujet_psi_sha256": "6bdd43230baaeab81696b5b0ad38f5e31b2af5963b830048ac30a68616a9ee59"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "revision": {
     "date": "2026-11-22",
     "modele": "Codex (GPT-6)",
@@ -106,6 +123,54 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Vérification de la citation de Condillac, du programme et des exemples dans les deux éditions ; développement sur le temps de l’avertissement et celui de l’anticipation chez Haushofer."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Condillac et Verne, manque d’air commun et distinction entre sensation vitale et choix d’un bénéficiaire."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "session": "fui_physique_un",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Contrôle du feuillet, du bulletin officiel et du rapport p. 3–8. Le rapport distingue l’habitude qui se forme par répétition de la rencontre singulière qui oblige à réviser une conduite. Il interroge aussi les habitudes susceptibles de desservir la liberté. Vérification des trois axes, des références aux œuvres et des schémas."
     }
-  ]
+  ],
+  "intitule": "Étienne Bonnot de Condillac, Traité des sensations (1754) — Expériences de la nature",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "precision": "La page 2 du sujet contient une seule consigne de commentaire et de discussion de la citation au moyen des œuvres du programme. Les trois axes identifient les étapes de la proposition pédagogique.",
+    "pages_pdf_sujet": [
+      2
+    ],
+    "programme": "Canguilhem, La Connaissance de la vie, introduction, I et III, chapitres II à V. Verne, Vingt mille lieues sous les mers. Haushofer, Le Mur invisible, traduction de Liselotte Bodo et Jacqueline Chambon.",
+    "items_verifies": [
+      "Valeur immédiate des sensations pour le vivant",
+      "Acquisition des habitudes, mémoire et expérience de la surprise",
+      "Dépassement du signal vital, jugement de valeur et choix des fins"
+    ],
+    "lecture_du_rapport": "Le rapport distingue l’habitude qui se forme par répétition de la rencontre singulière qui oblige à réviser une conduite. Il interroge aussi les habitudes susceptibles de desservir la liberté."
+  }
 }

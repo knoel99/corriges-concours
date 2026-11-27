@@ -1,0 +1,69 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_analyse-monetaire-et-politique-economique_2020",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Analyse monétaire et politique économique",
+    "annee": 2020,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "L’ouverture économique est-elle encore une opportunité pour les nations ?",
+  "gabarit": "dissertation",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2020/2020_Sujet_1A_D2-1_Analyse-Monetaire.pdf",
+    "sujet_sha256": "718eeb8e1639042155281f0efdfe57e88714f5d347b0be2c4c48eb0d40aaa55e",
+    "index": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=289&field_year_target_id%5B%5D=541",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2020/2020_Sujet_1A_D2-1_Analyse-Monetaire.pdf",
+        "sha256": "718eeb8e1639042155281f0efdfe57e88714f5d347b0be2c4c48eb0d40aaa55e",
+        "pages": 1
+      },
+      {
+        "role": "rapport",
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2020/2020_RAPPORT_ECRIT_D2_AMPE.pdf",
+        "sha256": "10caadf13d34a080b5cef12810eaff1e29e62e50155056f19655c1d3c3291d91",
+        "pages": 3
+      }
+    ],
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2020/2020_RAPPORT_ECRIT_D2_AMPE.pdf",
+    "rapport_sha256": "10caadf13d34a080b5cef12810eaff1e29e62e50155056f19655c1d3c3291d91"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/risque-approvisionnement.svg",
+      "question": "Composition",
+      "legende": "Deux sites pouvant chacun couvrir tout le besoin réduisent le risque de rupture simultanée de p à p² si leurs arrêts sont indépendants. Un choc parfaitement commun laisse le risque à p. Le calcul illustre l’effet de la diversification, sans estimer la fréquence des crises réelles."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Dissertation 2020 sur commerce et finance, gains marginaux, distribution, dépendances d’approvisionnement, politiques de développement et coopération ; une figure et deux applications numériques."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Composition"
+    ],
+    "limites": "Composition proposée dans le contexte de la session ; les données des figures illustrent un mécanisme."
+  }
+}

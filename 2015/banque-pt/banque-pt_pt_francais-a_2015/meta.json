@@ -1,0 +1,92 @@
+{
+  "slug": "banque-pt_pt_francais-a_2015",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français A",
+    "annee": 2015
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2015/fr_a_2015_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2015/rapport_fra_a_ecrit_2015.pdf",
+    "programme_officiel": "https://www.education.gouv.fr/bo/14/Hebdo24/MENS1401052A.htm",
+    "notice": "https://www.banquept.fr/documents/livret/2015/Livret_PT_2015.pdf#page=12",
+    "sujet_sha256": "4bc80179c202357f042c6237c202b97d4fc9978a2595ed1736f85cad9febb331",
+    "rapport_jury_sha256": "069cb828511f03eabcaec99ecfb14c819677b8b19eb6e994c0e27a3e73c4206f",
+    "programme_officiel_sha256": "edc716c1ef90971d23d169af09b70235b190d9c7148b1c9bbdb5f76f58e7a746",
+    "notice_sha256": "00daed661c4cca725666c4035b6b2b29111ac29ccd980edf6db5421458ba7b68",
+    "oeuvres_au_programme": [
+      "Eschyle, Les Perses (traduction de Danielle Sonnier)",
+      "Henri Barbusse, Le Feu",
+      "Carl von Clausewitz, De la guerre, livre I (traduction de Nicolas Waquet, pages 17 à 114)"
+    ],
+    "theme": "La guerre",
+    "admissibilite_admission": "École polytechnique, admissibilité, coefficient 4",
+    "pages_rapport": "Pages PDF 1 à 5, pagination imprimée 35 à 39, analyse de la citation, du plan et des trois œuvres. Conclusion imprimée page 40."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "À qui va la fidélité ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction d’une dissertation complète sur Bouthoul, lecture croisée du chant et du deuil dans Les Perses, du courage et de la responsabilité chez Clausewitz et des liens de l’escouade chez Barbusse."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Comparaison au feuillet et au rapport des sens du verbe exalter, du prix attribué par les civilisations et de la différence entre aptitude et vertu. Vérification du rang de Bertrand et de la fonction finale du chœur.",
+      "tour": 1
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 1,
+        "perimetre": "Vous discuterez cette affirmation du sociologue Gaston Bouthoul (La guerre, collection « Que sais-je ? » 1973) en vous appuyant sur votre lecture des trois œuvres au programme.",
+        "points": 20
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

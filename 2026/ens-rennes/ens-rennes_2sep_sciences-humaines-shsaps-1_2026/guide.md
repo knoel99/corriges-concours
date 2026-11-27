@@ -6,6 +6,14 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Lecture du rapport du jury** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Sujet R 26 – 325, page 1 · 2 heures.** « Apprendre, c’est prendre le risque d’échouer ». Explicitez cette affirmation au regard des théories de l’apprentissage et expliquez comment créer les conditions favorables à l’apprentissage moteur. Vous illustrerez vos propos dans l’APSA ou les APSA de votre choix dans le contexte scolaire ou fédéral.
+
 ## Présentation du sujet
 
 L’épreuve SHSAPS 1 dure deux heures. La formule « Apprendre, c’est prendre le risque d’échouer » appelle une explication à partir des théories de l’apprentissage, puis une proposition de conditions d’apprentissage moteur illustrées dans une ou plusieurs activités physiques, sportives et artistiques (APSA), en milieu scolaire ou fédéral. La copie ci-dessous suit une classe de collège en basket-ball. [Sujet officiel, session 2026](https://www.ens-rennes.fr/medias/fichier/sujet-shsaps-1-sciences-humaines-2sep-2026_1791303304026-pdf)
@@ -17,7 +25,9 @@ L’épreuve SHSAPS 1 dure deux heures. La formule « Apprendre, c’est prendre
 
 #### Solution
 
-La première observation renseigne sur une performance pendant la pratique accompagnée. La seconde peut contribuer à mesurer la rétention si l’on compare des essais assez nombreux, dans une tâche et des conditions comparables. Pour définir l’apprentissage, préciser la capacité acquise et la façon dont on pourrait la retrouver un peu plus tard. Pour définir le risque, distinguer l’incertitude sur le résultat, la crainte de perdre la face devant le groupe et le risque physique auquel on répond en aménageant l’espace.
+La première observation renseigne sur une performance pendant la pratique accompagnée. La seconde peut contribuer à mesurer la rétention si l’on compare des essais assez nombreux, dans une tâche et des conditions comparables. Pour définir l’apprentissage, préciser la capacité acquise et la façon dont on pourrait la retrouver un peu plus tard. Pour définir le risque, distinguer l’incertitude sur le résultat, la crainte de perdre la face devant le groupe et les conditions de sécurité matérielle à assurer dans toute séance.
+
+**Travailler le risque psychologique.** Dans un jeu réduit, une élève bien placée renonce plusieurs fois à tirer après que la classe a commenté un tir manqué. Quel indice distinguerait la crainte du jugement d’une difficulté à percevoir une occasion ? Relever les occasions disponibles, les choix de passe ou de tir et le récit de l’élève. Proposer ensuite un échange en binôme centré sur son propre progrès. Un retour des tentatives rend plausible un effet du climat. Vérifier séparément la précision et, plus tard, sa persistance sans aide. Le rapport développe les approches motivationnelles aux pages 2 et 3 et compare les analyses de copies aux pages 3 à 5.
 
 ## Problématique
 
@@ -58,7 +68,12 @@ Le but est de faire atteindre une zone à la balle. Celui qui n’atteint jamais
 
 ![Figure 3 — Une épreuve proche de la tâche initiale et une épreuve nouvelle répondent à deux questions différentes sur l’acquisition.](figures/retention-transfert.svg)
 
+Gardez constants le ballon, l’échauffement et la consigne lors du test différé. Modifiez ensuite la distance seule. Une consigne supplémentaire au moment du transfert rendrait difficile de savoir si la réussite provient d’une adaptation de l’élève ou de l’aide que vous venez de lui fournir.
+
 ## Repères théoriques
+
+- Chez John Nicholls (*The Competitive Ethos and Democratic Education*, 1989), les critères de compétence orientent les conduites. Comparer une performance à sa propre progression permet à un échec ponctuel de conserver une valeur d’information.
+- Chez James Gibson (*The Ecological Approach to Visual Perception*, 1979), une occasion de tirer dépend des possibilités d’action du joueur dans une situation donnée. [Discussion des modèles, rapport du jury, pages 2 et 3](https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-2sep-shsaps-1-sh-2026_1795712438197-pdf#page=2)
 
 - La théorie des schémas de Richard Schmidt (1975) relie les conditions de départ, les paramètres du mouvement, les conséquences sensorielles et le résultat. Le tir à l’arrêt donne ici un exemple d’habileté discrète. [Article original](https://doi.org/10.1037/h0076770)
 - Karl Newell (1986) étudie l’interaction des contraintes liées à la personne, à la tâche et à l’environnement dans l’émergence d’une coordination. [Chapitre original](https://grants.hhp.uh.edu/clayne/HistoryofMC/Newell1986.pdf)
@@ -95,15 +110,19 @@ Le modèle des contraintes de Newell (1986) donne une autre lecture de cette pro
 
 Le risque se joue aussi devant autrui. Un concours d’élimination expose chaque débutant au regard de toute la classe et lui retire précisément les essais dont il a besoin. Un travail en binômes, avec plusieurs ballons et des couloirs de tir espacés, donne davantage de répétitions. L’observateur relève une information convenue, par exemple « court, long ou dans la cible », et la restitue après que le tireur a formulé sa propre estimation. Les rôles tournent. On compare les essais d’une même personne au but qu’elle s’est donné et on ménage un droit de recommencer. Les élèves restent responsables de la circulation des ballons et du respect des zones de tir. Une incertitude sur le résultat du tir reste possible dans un espace où les collisions et les moqueries sont prévenues.
 
+Le choix de tenter le prochain tir dépend également de ce que réussir veut dire pour celui qui joue. Dans l’analyse des buts d’accomplissement de John Nicholls (1989), un élève peut juger sa compétence à son progrès dans une tâche ou à sa position relative parmi ses pairs. Dans un jeu où seul le meilleur pourcentage de réussite est affiché, passer systématiquement à un camarade peut préserver une réputation d’adresse. L’enseignant modifie donc la règle d’observation. Chaque binôme conserve une courte trace des trajectoires et chacun choisit une distance qui lui permet d’éprouver un réglage encore incertain. Un panier manqué après un choix pertinent donne droit à un nouvel essai et à une comparaison. Le premier effet à rechercher est que l’élève ose de nouveau prendre les occasions de tir qui se présentent. Si sa participation augmente, il obtient davantage d’occasions de faire et de vérifier une hypothèse sur son geste. Son engagement et son apprentissage peuvent ainsi se soutenir, mais seul un contrôle ultérieur renseignera sur la stabilité des acquisitions.
+
 ### III. Retirer progressivement les aides et vérifier ce qui dure
 
 À chaque lancer, le tireur dispose déjà d’informations intrinsèques, comme la trajectoire visible, ses appuis et la sensation du lâcher. Un retour extérieur peut préciser le résultat ou attirer l’attention sur l’exécution. Dans le premier cas, le partenaire peut situer l’arrivée par rapport au cercle. Dans le second, l’enseignant peut signaler que le tireur s’est tourné avant le lâcher. Une correction simultanée de chaque segment du corps occuperait l’attention qui doit aussi rester disponible pour lire le déplacement du ballon. Après quelques tentatives guidées, on laisse donc l’élève estimer seul la cause d’un écart, puis demander une observation lorsqu’il en a besoin. Les expériences de Winstein et Schmidt (1990) sur des tâches de laboratoire montrent que, dans certaines conditions, espacer les informations sur le résultat pendant la pratique améliore la rétention différée. Elles invitent à tester le retrait de l’aide dans la classe, sans en déduire une fréquence valable pour toute tâche.
 
 Un élève qui marque davantage en fin de séance avec un conseil avant chaque tir a amélioré sa performance dans ces conditions. Pour apprécier un apprentissage, l’enseignant reprend à la séance suivante une situation comparable sans rappel technique, après le même échauffement. Il note le nombre de tirs atteignant la zone visée, les paniers et la dispersion des trajectoires sur plusieurs tentatives. Il demande ensuite de tirer d’un repère voisin ou après une passe latérale. La première comparaison informe sur la rétention, la seconde sur le transfert à une condition nouvelle. L’élève qui ne marque pas encore régulièrement mais ajuste correctement une série de tirs initialement trop courts manifeste un progrès que le seul dernier score aurait masqué.
 
-Supposons qu’une élève réussisse deux lancers sur dix au départ, puis six sur dix quand son partenaire la conseille avant chaque tir. À la séance suivante, depuis la même marque et après le même échauffement, elle en réussit trois sans cette aide. Les quatre réussites supplémentaires de la première séance mesurent aussi le soutien immédiat du partenaire. Le deuxième relevé laisse envisager un progrès plus modeste. Dix essais varient assez pour qu’un lancer réussi de plus appelle une nouvelle observation. L’enseignant peut examiner en parallèle si les tirs courts deviennent moins fréquents et si l’élève sait repérer seule cet écart. C’est alors sa capacité à se corriger qui constitue un autre indice d’apprentissage.
+Supposons qu’une élève réussisse deux lancers sur dix au départ, puis six sur dix quand son partenaire la conseille avant chaque tir. À la séance suivante, depuis la même marque et après le même échauffement, elle en réussit trois sans cette aide. Le gain de quatre paniers coïncide avec la pratique et l’aide du partenaire. Cette comparaison ne permet pas d’isoler l’effet propre de chacun. Le deuxième relevé laisse envisager un progrès plus modeste. Dix essais varient assez pour qu’un lancer réussi de plus appelle une nouvelle observation. L’enseignant peut examiner en parallèle si les tirs courts deviennent moins fréquents et si l’élève sait repérer seule cet écart. C’est alors sa capacité à se corriger qui constitue un autre indice d’apprentissage.
 
 Enfin, dans un deux contre un aménagé, le porteur doit percevoir la place du défenseur. Une passe à un partenaire libre peut être une décision pertinente même si le professeur souhaitait observer des tirs. Pour évaluer le transfert, on distingue donc le choix d’une occasion favorable et l’exécution de la tentative. Un échec en match peut provenir d’un retard de décision ou d’une trajectoire mal dosée. Les confondre ramènerait tous les élèves au même exercice et le tireur à la même énigme qu’au premier essai.
+
+Deux explications du même échange permettent d’affiner le diagnostic. Dans la perspective écologique de Gibson (1979), une possibilité d’action dépend de la relation entre le joueur et la situation. L’espace momentanément libre devant le panier peut offrir à un élève le temps dont il a besoin pour tirer, alors qu’un camarade plus lent à préparer son geste ne disposera déjà plus de cette occasion. Pour les aider à discerner cette ouverture, on fait varier la position initiale du défenseur, en gardant la distance de tir constante. Pour un élève qui choisit déjà le bon moment mais lance régulièrement trop court, alterner des distances à l’arrêt permet de travailler le réglage décrit par Schmidt. Les deux observations orientent vers deux interventions que le seul nombre de points marqués ne permettrait pas de départager.
 
 ### Conclusion
 

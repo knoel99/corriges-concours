@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le rapport présente les deux objectifs de la composition de trois heures, la concavité de la racine du déterminant et l’inégalité de Brunn–Minkowski dans le plan. La dernière question demande aussi la quarrabilité de la somme pour tous les compacts de la définition. Un contre-exemple en précise la limite.
 
 ## 1. Matrices symétriques définies positives
@@ -83,11 +85,13 @@ Les valeurs propres de $SH$ sont positives par 1.7a. Leur produit est $\det(SH)=
 ### Question 1.8
 
 > [!INDICATION]
-> Après la minoration générale, choisir un $H$ qui rend le produit scalaire au sens matriciel.
+> Après la minoration générale, chercher une matrice $H$ pour laquelle $SH$ est un multiple de l’identité.
 
 #### Solution
 
 Pour tout $H\in\mathrm{SDP}_n$, 1.7b donne $\operatorname{Tr}(SH)/(n(\det H)^{1/n})\ge(\det S)^{1/n}$. Le choix $H=S^{-1}$ est permis par 1.3. Alors $SH=I_n$ et $\det H=(\det S)^{-1}$, ce qui donne l’égalité. L’infimum annoncé est donc atteint.
+
+Tous les cas d’égalité se lisent aussi dans la moyenne arithmético-géométrique. Les $n$ valeurs propres positives de $SH$ doivent être égales à un même $c$. Comme $SH$ est diagonalisable, cela équivaut à $SH=cI_n$, soit $H=cS^{-1}$ avec $c>0$.
 
 ### Question 1.9
 
@@ -211,6 +215,8 @@ Chaque domaine simple est non vide. Pour $p+p'=2$, il s’agit de deux pavés, c
 La conclusion sur la quarrabilité est fausse avec la définition générale imprimée. La partie valide est l’inégalité pour l’aire intérieure de $C+D$. En effet, pour tout $\varepsilon>0$, choisissons des domaines simples $A\subset C$, $B\subset D$ dont les aires approchent celles de $C,D$ à $\varepsilon$ près. Le domaine simple $A+B$ est inclus dans $C+D$. En appliquant 2.7 et en prenant la limite, on obtient pour l’aire intérieure $m_*$ la borne $\sqrt{m_*(C+D)}\ge\sqrt{|C|}+\sqrt{|D|}$. Elle vaut notamment pour l’aire de Lebesgue de la somme, qui est compacte. Si l’on suppose en plus $C+D$ quarrable, elle donne exactement l’inégalité d’aires de Jordan demandée.
 
 Voici un contre-exemple à la première assertion. Posons $a_j=2^{-j}+4^{-j}$ pour $j\ge1$ et formons $K$ de toutes les sommes $\sum_{j\ge1}\varepsilon_ja_j$ avec $\varepsilon_j\in\{0,1\}$. Ces ensembles de sommes sont compacts par extraction diagonale et convergence uniforme des queues. La somme de la queue après $j$ vaut $T_j=2^{-j}+4^{-j}/3<a_j$. Après $j$ choix, $K$ est donc couvert par $2^j$ intervalles disjoints de longueur $T_j$, emboîtés d’une étape à la suivante. Leur intersection est exactement $K$, car chaque point de l’intersection suit une chaîne et $T_j\to0$. Il en résulte que $K$ est sans intérieur et que sa longueur de Lebesgue est $\lim_j2^jT_j=1$.
+
+En effet, un intervalle contenu dans $K$ devrait tenir à chaque étage dans un seul intervalle de longueur $T_j$, car ces intervalles sont séparés par des lacunes ouvertes. Sa longueur serait donc nulle. En revanche, la longueur totale à l’étage $j$ vaut $1+2^{-j}/3$. La continuité de la mesure sur cette suite décroissante donne exactement 1 à la limite.
 
 Soient $E$ et $F$ les ensembles de sous-sommes obtenues en ne gardant que les indices impairs, respectivement pairs. On a $E+F=K$. Après les $2m$ premiers indices, chacun est couvert par $2^m$ intervalles de longueur au plus $T_{2m}$, dont la longueur totale tend vers zéro. Avec le carré $Q=[10,11]^2$, posons $C=Q\cup(E\times[0,1])$ et $D=Q\cup(F\times[0,1])$. Chacun est quarrable d’aire un. Le carré fournit l’approximation intérieure et les fines bandes verticales jointes au carré donnent les approximations extérieures.
 

@@ -1,0 +1,132 @@
+{
+  "slug": "agro-veto_bcpst_svt_2024",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "SVT",
+    "annee": 2024
+  },
+  "questions": 38,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "annexe_biologie": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/bcpst_0624_sp_a3_sv_0.pdf",
+    "annexe_biologie_sha256": "7235a1f730c11de7cfb9fcf577d4b319900e83b94a68fb0d5fd6933935e615a4",
+    "annexe_geologie": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/bcpst_0624_sp_a3_st_0.pdf",
+    "annexe_geologie_sha256": "aaa2e4ef629608a0985feefac3d251b010b5f4122a4e54698122000f771eb65e",
+    "rapport": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/rapport-cpge-bcpst-svt-epreuve-sur-support-de-documents-session-2024_0.pdf",
+    "rapport_sha256": "f1be693e90c1816736d399a0f4cfc1f5f04abe896fb2791078ea79dc768e6448",
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/sujet-a-bcpst-svt-session-2024_0.pdf",
+    "sujet_sha256": "9bb66b26b3a6669b5bf85cb08007f90eece43c4a20fec4777c6661d3985ce58e"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "G1",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G6",
+      "G7",
+      "G8",
+      "G9",
+      "G10",
+      "G11",
+      "G12",
+      "G13",
+      "G14",
+      "G15",
+      "G16",
+      "G17",
+      "G18",
+      "B1.1",
+      "B1.2",
+      "B2.1",
+      "B2.2",
+      "B3",
+      "B4.1",
+      "B4.2",
+      "B5.1",
+      "B5.2"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [
+      "B6.1",
+      "B6.2",
+      "B6.3",
+      "B7.1",
+      "B7.2",
+      "B7.3",
+      "B8",
+      "B9",
+      "B10.1",
+      "B10.2",
+      "B11"
+    ],
+    "precision": "Les 18 questions de géologie et les neuf questions ou sous-questions des thèmes biologiques 1 et 2 sont traitées. En biologie, les thèmes 3 et 4, portant sur l’infection cellulaire et la purification d’une protéine virale (B6 à B11), sont hors couverture. Le préfixe G désigne le cahier de géologie et le préfixe B le cahier de biologie."
+  },
+  "date_revision": "2026-11-25",
+  "figures": [
+    {
+      "question": "G4",
+      "fichier": "figures/frise-ouvertures.svg",
+      "legende": "Repères pour les colonnes tectoniques de la frise A3. La durée du décrochement est un encadrement déduit de l’ouverture différentielle."
+    },
+    {
+      "question": "G9",
+      "fichier": "figures/paleoprofondeur.svg",
+      "legende": "Repères pour l’annexe. Le flysch crétacé se distingue des carbonates de plate-forme. Au Miocène, les molasses sont continentales."
+    },
+    {
+      "question": "G12",
+      "fichier": "figures/anticlinal.svg",
+      "legende": "Le Keuper s’accumule au cœur de l’anticlinal. Les flancs montrent des pendages opposés, et les niveaux en relief ont ensuite été érodés."
+    },
+    {
+      "question": "G12",
+      "fichier": "figures/calcaire-300.svg",
+      "legende": "Interprétation de la courbe du calcaire à 300 °C. Le changement de pente est progressif et les limites des domaines sont approximatives."
+    },
+    {
+      "question": "G14",
+      "fichier": "figures/quatre-etapes.svg",
+      "legende": "Reconstitutions en vue de dessus. La position des terres est contrainte par le repère eurasien. La flèche du troisième cadre indique le mouvement suivant du bloc corso-sarde."
+    },
+    {
+      "question": "G17",
+      "fichier": "figures/vents.svg",
+      "legende": "Construction géostrophique aux six emplacements de l’annexe. Les isobares sont simplifiées et les basses pressions sont à gauche du vent."
+    },
+    {
+      "question": "B3",
+      "fichier": "figures/alveole-clinique.svg",
+      "legende": "Schéma d’interprétation anatomique des clichés post mortem. Les amas sanguins sont intravasculaires et ne remplissent pas la lumière aérienne."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction originale de deux éditions sur la partie géologique et les thèmes biologiques des anomalies atmosphériques et de l’imagerie clinique. Confrontation aux cartes, photographies, données et au rapport de la session. Les deux annexes A3 ont été vérifiées en image ; la partie biologique de l’annexe concerne exclusivement des questions hors couverture. 7 illustrations originales."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "codex",
+      "session": "lettres_svt_suite",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification de la couverture et des comptages cliniques du document 5. Précision sur le croisement des variables et la sélection des cas."
+    }
+  ]
+}

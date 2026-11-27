@@ -18,7 +18,9 @@
     "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2024-11/Philosophie%202024%20OK.pdf",
     "programme": "https://www.ens-lyon.fr/sites/default/files/2024-11/bulletin-officiel-n-30-du-27-juillet-2023-Pg-litteraire-session-2024_0.pdf",
     "sujet_sha256": "24a84637af9f4bb6bed0332cff50a2857e203f8bacdec65a90bbe205110132d8",
-    "rapport_jury_sha256": "e35fbed7c92ba6335c147e3e87fb2c273178e2b9abd70701c41b6b6d9baf8630"
+    "rapport_jury_sha256": "e35fbed7c92ba6335c147e3e87fb2c273178e2b9abd70701c41b6b6d9baf8630",
+    "sha256_sujet": "24a84637af9f4bb6bed0332cff50a2857e203f8bacdec65a90bbe205110132d8",
+    "sha256_rapport_jury": "e35fbed7c92ba6335c147e3e87fb2c273178e2b9abd70701c41b6b6d9baf8630"
   },
   "figures": [
     {
@@ -42,7 +44,7 @@
       "legende": "Une même situation, trois affirmations à distinguer"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "revision": {
     "date": "2026-11-24",
     "modele": "Codex (GPT-6)",
@@ -100,6 +102,47 @@
       "modifications": true,
       "perimetre": "Contrôle du sujet de métaphysique, du rapport et de la référence aux cent thalers. Distinction entre objectivité du diagnostic et réalité du vécu, contre-épreuve et schéma.",
       "tour": 2
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Réalité, distinction entre l’épreuve d’une douleur et la réfutation de sa cause supposée."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Confrontation de l’expérience, du jugement vrai et de l’état de choses. Le cas de l’horloge arrêtée fait apparaître une vérité fortuite et distingue l’instant de l’état réel et celui de la vérification."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Qu’est-ce que la réalité ?"
+    ],
+    "pages_du_sujet": 1,
+    "pages_pdf_des_questions": {
+      "Qu’est-ce que la réalité ?": 1
+    },
+    "precision": "Dissertation unique de 6 heures. Libellé lu sur la page 1 du fascicule officiel. Rapport du jury, pages 2 à 10. Les mouvements du plan sont proposés par le corrigé."
+  }
 }

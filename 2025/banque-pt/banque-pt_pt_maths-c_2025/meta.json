@@ -1,0 +1,286 @@
+{
+  "slug": "banque-pt_pt_maths-c_2025",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths C",
+    "intitule_officiel": "Épreuve de Mathématiques C",
+    "annee": 2025
+  },
+  "questions": 35,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2025/math_c_2025_pt.pdf",
+    "sujet_sha256": "8ddd5be211ff84e077d4ab45da78e2af474914d9e54d82b257694191df13c2b9",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2025/rapport_math_c_ecrit_2025.pdf",
+    "rapport_jury_sha256": "2c525535a3f49d5d5cbb4c7ad6a646e259c08e3c8ce5f669563b4c49c11ec35a",
+    "pages_rapport": 9,
+    "grille_ecoles": "https://www.banquept.fr/documents/livret/2025/Livret_PT_2025.pdf#page=13",
+    "grille_sha256": "4b83162034dd73f2516707f35e52b18ea6799a215935e95005f6a24bd66664ba",
+    "page_grille": 13,
+    "coefficients_admissibilite": {
+      "X": 6,
+      "ENS Paris-Saclay": 3,
+      "ENS Rennes": 3
+    }
+  },
+  "figures": [
+    {
+      "question": "I.10",
+      "fichier": "figures/deux-integrales-fractionnaires.svg",
+      "legende": "Les deux aires colorées jusqu’à la borne 1/√2 diffèrent. La substitution réciproque égalise les intégrales prises sur toute la demi-droite."
+    },
+    {
+      "question": "III.6.f",
+      "fichier": "figures/spirale-de-fresnel.svg",
+      "legende": "Les deux intégrales réelles tronquées, portées en abscisse et en ordonnée pour x de 0 à 7, s’enroulent autour de leur limite commune en chaque coordonnée."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "P.1",
+      "P.2",
+      "P.3",
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7",
+      "I.8",
+      "I.9.a",
+      "I.9.b",
+      "I.10",
+      "II.1.a",
+      "II.1.b",
+      "II.1.c",
+      "II.1.d.i",
+      "II.1.d.ii",
+      "II.1.e",
+      "II.1.f",
+      "II.2.a",
+      "II.2.b",
+      "II.2.c",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6.a",
+      "III.6.b",
+      "III.6.c",
+      "III.6.d",
+      "III.6.e",
+      "III.6.f"
+    ],
+    "pages_du_sujet": 8,
+    "pages_pdf_des_questions": {
+      "P.1": 2,
+      "P.2": 2,
+      "P.3": 2,
+      "I.1": 2,
+      "I.2": 2,
+      "I.3": 2,
+      "I.4": 2,
+      "I.5": 2,
+      "I.6": 2,
+      "I.7": 3,
+      "I.8": 3,
+      "I.9.a": 3,
+      "I.9.b": 3,
+      "I.10": 3,
+      "II.1.a": 3,
+      "II.1.b": 4,
+      "II.1.c": 4,
+      "II.1.d.i": 4,
+      "II.1.d.ii": 4,
+      "II.1.e": 4,
+      "II.1.f": 4,
+      "II.2.a": 4,
+      "II.2.b": 4,
+      "II.2.c": 4,
+      "III.1": 5,
+      "III.2": 5,
+      "III.3": 5,
+      "III.4": 5,
+      "III.5": 5,
+      "III.6.a": 5,
+      "III.6.b": 5,
+      "III.6.c": 5,
+      "III.6.d": 5,
+      "III.6.e": 6,
+      "III.6.f": 6
+    },
+    "repere_par_question": [
+      {
+        "question": "P.1",
+        "page_pdf": 2
+      },
+      {
+        "question": "P.2",
+        "page_pdf": 2
+      },
+      {
+        "question": "P.3",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.1",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.2",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.3",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.4",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.5",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.6",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.7",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.8",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.9.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.9.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "I.10",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.1.a",
+        "page_pdf": 3,
+        "page_pdf_fin": 4
+      },
+      {
+        "question": "II.1.b",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.1.c",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.1.d.i",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.1.d.ii",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.1.e",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.1.f",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.2.a",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.2.b",
+        "page_pdf": 4
+      },
+      {
+        "question": "II.2.c",
+        "page_pdf": 4
+      },
+      {
+        "question": "III.1",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.2",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.3",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.4",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.5",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.6.a",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.6.b",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.6.c",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.6.d",
+        "page_pdf": 5
+      },
+      {
+        "question": "III.6.e",
+        "page_pdf": 6
+      },
+      {
+        "question": "III.6.f",
+        "page_pdf": 6
+      }
+    ],
+    "precision": "Garde 002. Le feuillet visible de la page 4 fixe les niveaux i et ii de II.1.d et les trois subdivisions de II.2, malgré un fragment répété dans la couche texte. II.1.a commence en page 3 et se poursuit en page 4. Contrôle indépendant des deux intégrales à borne finie I.10 et II.2.c, et du signe de la phase complexe finale. Dernière question III.6.f en page 6, page 7 blanche, colophon page 8."
+  },
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Lecture des huit pages du fac-similé, du rapport spécifique de 9 pages et de la grille d’admissibilité page 13. Rédaction des 35 réponses et des indications, vérification des figures. Garde 002. Le feuillet visible de la page 4 fixe les niveaux i et ii de II.1.d et les trois subdivisions de II.2, malgré un fragment répété dans la couche texte. II.1.a commence en page 3 et se poursuit en page 4. Contrôle indépendant des deux intégrales à borne finie I.10 et II.2.c, et du signe de la phase complexe finale. Dernière question III.6.f en page 6, page 7 blanche, colophon page 8. Le rapport détaille les erreurs de bornes dans les changements de variable, la recherche des constantes des primitives et la domination des intégrales impropres."
+    }
+  ]
+}

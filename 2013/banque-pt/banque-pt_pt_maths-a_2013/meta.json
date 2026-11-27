@@ -1,0 +1,200 @@
+{
+  "slug": "banque-pt_pt_maths-a_2013",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths A",
+    "annee": 2013
+  },
+  "questions": 27,
+  "redaction": "Corrigés non officiels rédigés et vérifiés par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2013/math_a_2013_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2013/rapport_math_a_ecrit_2013.pdf",
+    "index_sujets": "https://www.banquept.fr/article51.html",
+    "index_rapports": "https://www.banquept.fr/article55.html",
+    "livret": "https://www.banquept.fr/documents/livret/2013/Livret_PT_2013.pdf#page=12",
+    "sha256_sujet": "036bd97a1492b69d4ec7b652e93bec394d347c4a97991da336f664678c79c2e7",
+    "pages_sujet": 5,
+    "sha256_rapport_jury": "7e1a7c3fd326b0d7479eebe2bd9e85e870eb4d53425cb0dad48d3a32b209d88e",
+    "pages_rapport_jury": 3,
+    "sha256_livret": "a5ec06950020d6468198946219e761ae339b23d5e278f19d09876bacabb64a0e",
+    "pages_livret": 73,
+    "coefficients_admissibilite": {
+      "ENS Cachan": 3,
+      "École polytechnique": 6
+    }
+  },
+  "figures": [
+    {
+      "question": "I.4",
+      "fichier": "figures/puissances.svg",
+      "legende": "Les trois coefficients de la première ligne des puissances tendent vers les valeurs stationnaires en pointillés."
+    },
+    {
+      "question": "G.5",
+      "fichier": "figures/cone.svg",
+      "legende": "Coupe du double cône dans un plan contenant son axe. La pente des génératrices vaut la racine carrée de deux."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "P.1.a",
+      "P.1.b",
+      "P.2.a",
+      "P.2.b",
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "II.1",
+      "II.2.a",
+      "II.2.b",
+      "II.2.c",
+      "II.3",
+      "III.1",
+      "III.2.a",
+      "III.2.b",
+      "III.2.c",
+      "III.3.a",
+      "III.3.b",
+      "III.3.c",
+      "G.1",
+      "G.2",
+      "G.3",
+      "G.4.a",
+      "G.4.b",
+      "G.5"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": "P.1.a",
+        "page_sujet": 2
+      },
+      {
+        "question": "P.1.b",
+        "page_sujet": 2
+      },
+      {
+        "question": "P.2.a",
+        "page_sujet": 2
+      },
+      {
+        "question": "P.2.b",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.1",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.2",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.3",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.4",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.5",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.1",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.2.a",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.2.b",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.2.c",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.3",
+        "page_sujet": 3
+      },
+      {
+        "question": "III.1",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.2.a",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.2.b",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.2.c",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.3.a",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.3.b",
+        "page_sujet": 4
+      },
+      {
+        "question": "III.3.c",
+        "page_sujet": 4
+      },
+      {
+        "question": "G.1",
+        "page_sujet": 4
+      },
+      {
+        "question": "G.2",
+        "page_sujet": 4
+      },
+      {
+        "question": "G.3",
+        "page_sujet": 4
+      },
+      {
+        "question": "G.4.a",
+        "page_sujet": 5
+      },
+      {
+        "question": "G.4.b",
+        "page_sujet": 5
+      },
+      {
+        "question": "G.5",
+        "page_sujet": 5
+      }
+    ],
+    "precision": "Pages 2 à 5 après la garde, préliminaire, trois parties et exercice de géométrie. En III.3.c la borne spectrale est large, avec égalité pour la valeur propre 1."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modifications": true,
+      "perimetre": "Lecture de la garde, des cinq pages et du rapport, vérification rationnelle du projecteur et des puissances, lecture spectrale du cône, rédaction et contrôle des deux éditions."
+    }
+  ]
+}

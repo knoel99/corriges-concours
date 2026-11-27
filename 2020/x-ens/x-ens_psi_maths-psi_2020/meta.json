@@ -10,10 +10,18 @@
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
     "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2020/2020_Sujet_1A_PSI_Maths.pdf",
-    "rapport_jury": "",
-    "sha256_sujet": "0b03d6bb3301c9b0c28440a43bae88e76e4732fa04577d5d62b60f065fc117b1"
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2020/2020_Rapport_Ecrit_PSI_Maths.pdf",
+    "sha256_sujet": "0b03d6bb3301c9b0c28440a43bae88e76e4732fa04577d5d62b60f065fc117b1",
+    "sha256_rapport_jury": "59ad31b25720cade4fc06e2313442592c49ede42712f86abc52d7f6c358b034f",
+    "pages_sujet": 8,
+    "pages_rapport": 2
   },
   "figures": [
+    {
+      "fichier": "figures/projection-hypographe.svg",
+      "question": "17c",
+      "legende": "Projection d’un point extérieur sur l’hypographe de la parabole. Le segment qui le relie à son projeté est normal à la droite d’appui."
+    },
     {
       "fichier": "figures/encadrement-quadratique.svg",
       "question": "24e",
@@ -31,6 +39,266 @@
       "perimetre": "Rédaction complète des trois parties. Vérification des majorations d’inf-convolution, de la construction de la normale par projection et de la constante 6K du gradient, figure de l’encadrement quadratique.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Relecture des 46 questions et sous-questions avec le sujet et le rapport. Contrôle des infimums non atteints, du choix des paramètres de convergence et des sommets du pavé, de la projection et du passage à la limite sans recours circulaire à la compacité séquentielle. Vérification de l’identité des restes et de la constante 6K. Ajout du schéma de projection."
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4a",
+      "4b",
+      "4c",
+      "4d",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9a",
+      "9b",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15a",
+      "15b",
+      "15c",
+      "15d",
+      "15e",
+      "16a",
+      "16b",
+      "16c",
+      "17a",
+      "17b",
+      "17c",
+      "17d",
+      "17e",
+      "18a",
+      "18b",
+      "18c",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23a",
+      "23b",
+      "23c",
+      "24a",
+      "24b",
+      "24c",
+      "24d",
+      "24e"
+    ],
+    "numeros_principaux": 24,
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": "1",
+        "page_pdf": 4
+      },
+      {
+        "question": "2",
+        "page_pdf": 4
+      },
+      {
+        "question": "3",
+        "page_pdf": 4
+      },
+      {
+        "question": "4a",
+        "page_pdf": 4
+      },
+      {
+        "question": "4b",
+        "page_pdf": 4
+      },
+      {
+        "question": "4c",
+        "page_pdf": 4
+      },
+      {
+        "question": "4d",
+        "page_pdf": 4
+      },
+      {
+        "question": "5",
+        "page_pdf": 4
+      },
+      {
+        "question": "6",
+        "page_pdf": 4
+      },
+      {
+        "question": "7",
+        "page_pdf": 5
+      },
+      {
+        "question": "8",
+        "page_pdf": 5
+      },
+      {
+        "question": "9a",
+        "page_pdf": 5
+      },
+      {
+        "question": "9b",
+        "page_pdf": 5
+      },
+      {
+        "question": "10",
+        "page_pdf": 5
+      },
+      {
+        "question": "11",
+        "page_pdf": 5
+      },
+      {
+        "question": "12",
+        "page_pdf": 5
+      },
+      {
+        "question": "13",
+        "page_pdf": 5
+      },
+      {
+        "question": "14",
+        "page_pdf": 6
+      },
+      {
+        "question": "15a",
+        "page_pdf": 6
+      },
+      {
+        "question": "15b",
+        "page_pdf": 6
+      },
+      {
+        "question": "15c",
+        "page_pdf": 6
+      },
+      {
+        "question": "15d",
+        "page_pdf": 6
+      },
+      {
+        "question": "15e",
+        "page_pdf": 6
+      },
+      {
+        "question": "16a",
+        "page_pdf": 6
+      },
+      {
+        "question": "16b",
+        "page_pdf": 6
+      },
+      {
+        "question": "16c",
+        "page_pdf": 6
+      },
+      {
+        "question": "17a",
+        "page_pdf": 6
+      },
+      {
+        "question": "17b",
+        "page_pdf": 6
+      },
+      {
+        "question": "17c",
+        "page_pdf": 6
+      },
+      {
+        "question": "17d",
+        "page_pdf": 7
+      },
+      {
+        "question": "17e",
+        "page_pdf": 7
+      },
+      {
+        "question": "18a",
+        "page_pdf": 7
+      },
+      {
+        "question": "18b",
+        "page_pdf": 7
+      },
+      {
+        "question": "18c",
+        "page_pdf": 7
+      },
+      {
+        "question": "19",
+        "page_pdf": 7
+      },
+      {
+        "question": "20",
+        "page_pdf": 7
+      },
+      {
+        "question": "21",
+        "page_pdf": 8
+      },
+      {
+        "question": "22",
+        "page_pdf": 8
+      },
+      {
+        "question": "23a",
+        "page_pdf": 8
+      },
+      {
+        "question": "23b",
+        "page_pdf": 8
+      },
+      {
+        "question": "23c",
+        "page_pdf": 8
+      },
+      {
+        "question": "24a",
+        "page_pdf": 8
+      },
+      {
+        "question": "24b",
+        "page_pdf": 8
+      },
+      {
+        "question": "24c",
+        "page_pdf": 8
+      },
+      {
+        "question": "24d",
+        "page_pdf": 8
+      },
+      {
+        "question": "24e",
+        "page_pdf": 8
+      }
+    ],
+    "pages_preliminaires": "Couverture p. 1, p. 2 blanche, notations p. 3."
+  }
 }

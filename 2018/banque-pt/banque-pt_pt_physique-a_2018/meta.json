@@ -1,0 +1,520 @@
+{
+  "slug": "banque-pt_pt_physique-a_2018",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique A",
+    "annee": 2018
+  },
+  "questions": 68,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2018/ph_a_2018_pt.pdf",
+    "sujet_sha256": "bc29ec1af510c17d22d11109c4f5fa8160840a6beed3e5ea6900df40886659b1",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2018/rapport_phys_a_ecrit_2018.pdf",
+    "rapport_sha256": "67726e10207b0ecf3588a4812a0eb15c27af28cf6d456584da84cc1138a47ba6",
+    "notice": "https://www.banquept.fr/documents/livret/2018/Livret_PT_2018.pdf#page=12",
+    "notice_sha256": "074f6cb1f105a67da4afcbc0b1f0746fb294077f31f1f0f23d60a14f24a26457"
+  },
+  "figures": [
+    {
+      "fichier": "figures/tonalite.svg",
+      "question": "I-7",
+      "legende": "Relevés de tonalité et position du la du diapason"
+    },
+    {
+      "fichier": "figures/passe-bande.svg",
+      "question": "II-A-6",
+      "legende": "Réponses normalisées du filtre à composants égaux et du filtre spécifié"
+    },
+    {
+      "fichier": "figures/diode.svg",
+      "question": "II-B-1-a",
+      "legende": "Circuits équivalents de la diode passante et de la diode bloquée"
+    },
+    {
+      "fichier": "figures/detecteur.svg",
+      "question": "II-B-3",
+      "legende": "Détection de la crête sur une période et un quart"
+    },
+    {
+      "fichier": "figures/point-statique.svg",
+      "question": "III-A-1-a",
+      "legende": "Droite de charge et lectures locales de la figure 13"
+    },
+    {
+      "fichier": "figures/bobine.svg",
+      "question": "IV-4",
+      "legende": "Équivalent électrique orienté du haut-parleur"
+    },
+    {
+      "fichier": "figures/instrument.svg",
+      "question": "IV-6",
+      "legende": "Chaîne de tonalité et chaîne de volume du thérémine"
+    },
+    {
+      "fichier": "figures/barriere.svg",
+      "question": "VI-4-a",
+      "legende": "Énergie potentielle et niveaux mécaniques dans le tube"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction des 68 réponses sur les deux instruments et réalisation de huit schémas et graphes à partir du feuillet et du rapport."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture des conventions de signe, vérification par calcul du spectre, des coupures, des reprises de conduction et de la pente de charge. Vérification du couplage mécanique, de la variation finie de capacité et du facteur 4/9 en VI-7. Inspection visuelle des figures vectorielles et ajustement des libellés des oscillateurs et de la légende du passe-bande."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I-1-a",
+      "I-1-b",
+      "I-2",
+      "I-3-a",
+      "I-3-b",
+      "I-3-c",
+      "I-4",
+      "I-5-a",
+      "I-5-b",
+      "I-6-a",
+      "I-6-b",
+      "I-7",
+      "I-8",
+      "II-A-1",
+      "II-A-2-a",
+      "II-A-2-b",
+      "II-A-3",
+      "II-A-4-a",
+      "II-A-4-b",
+      "II-A-5",
+      "II-A-6",
+      "II-B-1-a",
+      "II-B-1-b",
+      "II-B-1-c",
+      "II-B-2",
+      "II-B-3",
+      "II-B-4",
+      "II-B-5-a",
+      "II-B-5-b",
+      "II-B-5-c",
+      "II-B-6",
+      "III-A-1-a",
+      "III-A-1-b",
+      "III-A-2-a",
+      "III-A-2-b",
+      "III-A-3",
+      "III-B-1",
+      "III-B-2",
+      "IV-1",
+      "IV-2",
+      "IV-3",
+      "IV-4",
+      "IV-5",
+      "IV-6",
+      "IV-7",
+      "V-1",
+      "V-2",
+      "V-3",
+      "V-4",
+      "V-5",
+      "VI-1-a",
+      "VI-1-b",
+      "VI-1-c",
+      "VI-1-d",
+      "VI-1-e",
+      "VI-2",
+      "VI-3",
+      "VI-4-a",
+      "VI-4-b",
+      "VI-4-c",
+      "VI-5-a",
+      "VI-5-b",
+      "VI-5-c",
+      "VI-6-a",
+      "VI-6-b",
+      "VI-6-c",
+      "VI-6-d",
+      "VI-7"
+    ],
+    "repere_par_question": [
+      {
+        "question": "I-1-a",
+        "page_pdf": 4,
+        "intitule": "Deux oscillateurs hors du domaine audible"
+      },
+      {
+        "question": "I-1-b",
+        "page_pdf": 4,
+        "intitule": "Les raies du produit"
+      },
+      {
+        "question": "I-2",
+        "page_pdf": 4,
+        "intitule": "Isoler la note"
+      },
+      {
+        "question": "I-3-a",
+        "page_pdf": 4,
+        "intitule": "Équation de la maille oscillante"
+      },
+      {
+        "question": "I-3-b",
+        "page_pdf": 4,
+        "intitule": "Solution libre et conditions initiales"
+      },
+      {
+        "question": "I-3-c",
+        "page_pdf": 4,
+        "intitule": "Fréquence de référence"
+      },
+      {
+        "question": "I-4",
+        "page_pdf": 5,
+        "intitule": "Lire la chaîne hétérodyne"
+      },
+      {
+        "question": "I-5-a",
+        "page_pdf": 6,
+        "intitule": "Fréquence de l’oscillateur de tonalité"
+      },
+      {
+        "question": "I-5-b",
+        "page_pdf": 6,
+        "intitule": "Spectre en fonction de la distance"
+      },
+      {
+        "question": "I-6-a",
+        "page_pdf": 6,
+        "intitule": "Filtre de sortie du mélangeur"
+      },
+      {
+        "question": "I-6-b",
+        "page_pdf": 6,
+        "intitule": "Choix d’une résistance"
+      },
+      {
+        "question": "I-7",
+        "page_pdf": 6,
+        "intitule": "Position du la et loi logarithmique"
+      },
+      {
+        "question": "I-8",
+        "page_pdf": 6,
+        "intitule": "Étendue musicale et déplacement"
+      },
+      {
+        "question": "II-A-1",
+        "page_pdf": 7,
+        "intitule": "Transformer la fréquence en tension continue"
+      },
+      {
+        "question": "II-A-2-a",
+        "page_pdf": 7,
+        "intitule": "Reconnaître les passe-bande"
+      },
+      {
+        "question": "II-A-2-b",
+        "page_pdf": 7,
+        "intitule": "L’isolation de la charge par l’ALI"
+      },
+      {
+        "question": "II-A-3",
+        "page_pdf": 8,
+        "intitule": "Choisir le diagramme"
+      },
+      {
+        "question": "II-A-4-a",
+        "page_pdf": 8,
+        "intitule": "Paramètres canoniques du passe-bande"
+      },
+      {
+        "question": "II-A-4-b",
+        "page_pdf": 8,
+        "intitule": "Largeur de bande à trois décibels"
+      },
+      {
+        "question": "II-A-5",
+        "page_pdf": 8,
+        "intitule": "Fonction de transfert du montage actif"
+      },
+      {
+        "question": "II-A-6",
+        "page_pdf": 9,
+        "intitule": "Sélectivité requise par la plage de capacités"
+      },
+      {
+        "question": "II-B-1-a",
+        "page_pdf": 9,
+        "intitule": "État initial du détecteur"
+      },
+      {
+        "question": "II-B-1-b",
+        "page_pdf": 9,
+        "intitule": "Courant pendant la charge"
+      },
+      {
+        "question": "II-B-1-c",
+        "page_pdf": 9,
+        "intitule": "Instant où la diode se bloque"
+      },
+      {
+        "question": "II-B-2",
+        "page_pdf": 10,
+        "intitule": "Évolution pendant le blocage"
+      },
+      {
+        "question": "II-B-3",
+        "page_pdf": 10,
+        "intitule": "Chronogramme du détecteur de crête"
+      },
+      {
+        "question": "II-B-4",
+        "page_pdf": 10,
+        "intitule": "Régime permanent et ondulation"
+      },
+      {
+        "question": "II-B-5-a",
+        "page_pdf": 10,
+        "intitule": "Amplitude de sortie du passe-bande"
+      },
+      {
+        "question": "II-B-5-b",
+        "page_pdf": 10,
+        "intitule": "Réponse près de la résonance"
+      },
+      {
+        "question": "II-B-5-c",
+        "page_pdf": 10,
+        "intitule": "Tension de commande en fonction de la fréquence"
+      },
+      {
+        "question": "II-B-6",
+        "page_pdf": 10,
+        "intitule": "Adaptation du détecteur"
+      },
+      {
+        "question": "III-A-1-a",
+        "page_pdf": 13,
+        "intitule": "Point statique sur la caractéristique de grille"
+      },
+      {
+        "question": "III-A-1-b",
+        "page_pdf": 13,
+        "intitule": "Grille correspondant au point donné à 150 V"
+      },
+      {
+        "question": "III-A-2-a",
+        "page_pdf": 13,
+        "intitule": "Mouvement autour du point de repos"
+      },
+      {
+        "question": "III-A-2-b",
+        "page_pdf": 13,
+        "intitule": "Amplitude électrique sur la charge"
+      },
+      {
+        "question": "III-A-3",
+        "page_pdf": 13,
+        "intitule": "Action de la grille sur le niveau sonore"
+      },
+      {
+        "question": "III-B-1",
+        "page_pdf": 13,
+        "intitule": "Geste de la main droite"
+      },
+      {
+        "question": "III-B-2",
+        "page_pdf": 13,
+        "intitule": "Geste de la main gauche"
+      },
+      {
+        "question": "IV-1",
+        "page_pdf": 14,
+        "intitule": "Propagation dans la liaison audio"
+      },
+      {
+        "question": "IV-2",
+        "page_pdf": 14,
+        "intitule": "Force de Laplace et induction de mouvement"
+      },
+      {
+        "question": "IV-3",
+        "page_pdf": 14,
+        "intitule": "Dynamique de l’ensemble mobile"
+      },
+      {
+        "question": "IV-4",
+        "page_pdf": 14,
+        "intitule": "Source électrique équivalente de la bobine"
+      },
+      {
+        "question": "IV-5",
+        "page_pdf": 14,
+        "intitule": "Transfert entre tension et vitesse"
+      },
+      {
+        "question": "IV-6",
+        "page_pdf": 15,
+        "intitule": "Compléter les deux voies du thérémine"
+      },
+      {
+        "question": "IV-7",
+        "page_pdf": 15,
+        "intitule": "Comparer l’ondéa et le thérémine"
+      },
+      {
+        "question": "V-1",
+        "page_pdf": 16,
+        "intitule": "Capacité en électrostatique"
+      },
+      {
+        "question": "V-2",
+        "page_pdf": 16,
+        "intitule": "Champ et capacité des armatures planes"
+      },
+      {
+        "question": "V-3",
+        "page_pdf": 16,
+        "intitule": "Modèle de l’antenne et de la main"
+      },
+      {
+        "question": "V-4",
+        "page_pdf": 17,
+        "intitule": "Effet d’un petit recul"
+      },
+      {
+        "question": "V-5",
+        "page_pdf": 17,
+        "intitule": "Ordre de grandeur pour une antenne cylindrique"
+      },
+      {
+        "question": "VI-1-a",
+        "page_pdf": 18,
+        "intitule": "Théorème de l’énergie cinétique"
+      },
+      {
+        "question": "VI-1-b",
+        "page_pdf": 18,
+        "intitule": "Énergie des électrons recueillis à l’anode"
+      },
+      {
+        "question": "VI-1-c",
+        "page_pdf": 18,
+        "intitule": "Condition de passage"
+      },
+      {
+        "question": "VI-1-d",
+        "page_pdf": 18,
+        "intitule": "Sens du courant dans le vide"
+      },
+      {
+        "question": "VI-1-e",
+        "page_pdf": 18,
+        "intitule": "Action de diode"
+      },
+      {
+        "question": "VI-2",
+        "page_pdf": 18,
+        "intitule": "Équation de Poisson et densité de courant"
+      },
+      {
+        "question": "VI-3",
+        "page_pdf": 18,
+        "intitule": "Vitesse et franchissement d’un plan"
+      },
+      {
+        "question": "VI-4-a",
+        "page_pdf": 19,
+        "intitule": "Barrière d’énergie potentielle"
+      },
+      {
+        "question": "VI-4-b",
+        "page_pdf": 19,
+        "intitule": "Électrons réfléchis"
+      },
+      {
+        "question": "VI-4-c",
+        "page_pdf": 19,
+        "intitule": "Courant de saturation"
+      },
+      {
+        "question": "VI-5-a",
+        "page_pdf": 19,
+        "intitule": "Point d’arrêt à l’énergie seuil"
+      },
+      {
+        "question": "VI-5-b",
+        "page_pdf": 19,
+        "intitule": "Champ au plan critique"
+      },
+      {
+        "question": "VI-5-c",
+        "page_pdf": 19,
+        "intitule": "Courant en aval du plan critique"
+      },
+      {
+        "question": "VI-6-a",
+        "page_pdf": 20,
+        "intitule": "Bilan des deux faisceaux"
+      },
+      {
+        "question": "VI-6-b",
+        "page_pdf": 20,
+        "intitule": "Densités incidente et réfléchie"
+      },
+      {
+        "question": "VI-6-c",
+        "page_pdf": 20,
+        "intitule": "Vitesse des deux populations"
+      },
+      {
+        "question": "VI-6-d",
+        "page_pdf": 20,
+        "intitule": "Charge d’espace en amont"
+      },
+      {
+        "question": "VI-7",
+        "page_pdf": 20,
+        "intitule": "Loi en puissance trois demis"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "annexes": "Documents 1 à 3 pages 2 à 4, figures 1 à 20 et tableaux 1 et 2 dans le sujet. Questions pages 4 à 20. Aucune annexe autonome. Pages 21 à 23 sans énoncé et page 24 avec mention d’impression.",
+    "numerotation": "La seconde question de III-B porte également « II-B-2 » sur la page 13."
+  }
+}

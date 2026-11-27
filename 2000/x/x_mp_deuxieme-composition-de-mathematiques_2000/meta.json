@@ -41,6 +41,132 @@
       "perimetre": "Rédaction intégrale sur les trois pages de l’original. Trois figures des cônes plans avec leur dual et leur liste de faces, preuves de fermeture et de séparation, frontière relative, et vérification de la convention sur les générateurs non nuls en question 10.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "x_mp_deuxieme_composition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Pointage physique des 19 consignes sur 3 pages. Collation des trois figures et de leurs listes de faces. Précision de la qualification en dimension un en 4.b, de la correspondance des normales relatives en 8.b et du rôle des générateurs nuls et de l’intersection vide en 9.b–10."
     }
-  ]
+  ],
+  "intitule": "Cônes à faces, dualité et représentation par demi-espaces",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4.a",
+      "4.b",
+      "5.a",
+      "5.b",
+      "5.c",
+      "5.d",
+      "6.a",
+      "6.b",
+      "6.c",
+      "7",
+      "8.a",
+      "8.b",
+      "8.c",
+      "9.a",
+      "9.b",
+      "10"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1",
+        "page_pdf": "1"
+      },
+      {
+        "question": "2",
+        "page_pdf": "1"
+      },
+      {
+        "question": "3",
+        "page_pdf": "1"
+      },
+      {
+        "question": "4.a",
+        "page_pdf": "2"
+      },
+      {
+        "question": "4.b",
+        "page_pdf": "2"
+      },
+      {
+        "question": "5.a",
+        "page_pdf": "2"
+      },
+      {
+        "question": "5.b",
+        "page_pdf": "2"
+      },
+      {
+        "question": "5.c",
+        "page_pdf": "2"
+      },
+      {
+        "question": "5.d",
+        "page_pdf": "2"
+      },
+      {
+        "question": "6.a",
+        "page_pdf": "2"
+      },
+      {
+        "question": "6.b",
+        "page_pdf": "2"
+      },
+      {
+        "question": "6.c",
+        "page_pdf": "2"
+      },
+      {
+        "question": "7",
+        "page_pdf": "3"
+      },
+      {
+        "question": "8.a",
+        "page_pdf": "3"
+      },
+      {
+        "question": "8.b",
+        "page_pdf": "3"
+      },
+      {
+        "question": "8.c",
+        "page_pdf": "3"
+      },
+      {
+        "question": "9.a",
+        "page_pdf": "3"
+      },
+      {
+        "question": "9.b",
+        "page_pdf": "3"
+      },
+      {
+        "question": "10",
+        "page_pdf": "3"
+      }
+    ],
+    "controle": [
+      "p. 1, sous-espaces, trois configurations planes avec figure et liste de faces, huit faces de l’octant orthogonal",
+      "p. 2, compacité, deux contre-exemples, quotient orthogonal, projection métrique, signe et séparation du point extérieur",
+      "p. 3, frontière ambiante et relative, normale valable pour tous les exposants d’une face, nombre de faces, cas du cône nul",
+      "Collation des trois figures et de leurs listes de faces. Précision de la qualification en dimension un en 4.b, de la correspondance des normales relatives en 8.b et du rôle des générateurs nuls et de l’intersection vide en 9.b–10."
+    ]
+  }
 }

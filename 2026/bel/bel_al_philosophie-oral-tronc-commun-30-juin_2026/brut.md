@@ -6,7 +6,11 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-La troisième commission du 30 juin a distribué douze billets de deux sujets. Les réponses suivent l’ordre de la feuille. Le rapport, page 9, permet de reconnaître par ses caractères gras le sujet choisi, qui est signalé à chaque billet. La rédaction et les relances du guide sont des propositions d’entraînement.
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Le [feuillet du 30 juin](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_al.pdf) contient 12 billets de deux sujets. Les développements suivent leur ordre. Le jury a mis en gras le premier sujet sur 7 billets et le second sur 5. Le choix est indiqué à chaque billet. Le [rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf#page=9) permet de vérifier les choix. L’[index de l’ENS](https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-al) date ce feuillet de la commission 3.
+
+Lisez à haute voix les deux sujets du billet, choisissez pendant les 90 minutes de préparation et annoncez votre choix au début des 20 minutes d’exposé. L’entretien dure ensuite 10 minutes. Le coefficient est de 3. Seul un dictionnaire de langue française est autorisé, à l’exclusion des dictionnaires de noms propres.
 
 ## 1. Les mots disent-ils les choses ?
 
@@ -155,5 +159,3 @@ Un historien s’intéresse à des registres dont l’étude ne fera pas sa fort
 Une liste de provisions permet de reprendre une intention quand l’attention s’est déplacée. Une démonstration écrite permet de revenir à une prémisse en examinant simultanément plusieurs étapes. Un contrat signé rend une formulation consultable et contestable au-delà de la présence de ses auteurs. L’écriture nous apporte donc des formes de mémoire, de raisonnement et de coordination qui changent les opérations possibles, au-delà de la simple conservation d’une parole déjà constituée.
 
 Dans le *Phèdre*, Platon met en scène la crainte qu’une mémoire confiée à des signes extérieurs ne donne l’apparence du savoir et rappelle qu’un texte interrogé ne répond pas comme un interlocuteur vivant. Ce défaut est aussi lié à la possibilité de transmettre à des absents et à des lecteurs imprévus. L’écriture permet ainsi de reprendre, discuter et transformer une pensée par la stabilité de sa trace. Son apport dépend des pratiques qui la rendent lisible, de l’accès aux supports et de la disposition à vérifier, au lieu de prendre la permanence d’un énoncé pour la garantie de sa vérité.
-
-[Feuille officielle du 30 juin](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_al.pdf) · [Rapport du jury, modalités et annexe des sujets](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf)

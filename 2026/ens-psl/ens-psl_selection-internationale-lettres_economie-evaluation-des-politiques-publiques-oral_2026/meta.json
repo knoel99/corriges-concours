@@ -21,7 +21,15 @@
       "https://doi.org/10.1016/j.jeconom.2020.12.001"
     ]
   },
-  "figures": [],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Exposé oral",
+      "section": "II",
+      "fichier": "figures/trajectoire-contrefactuelle.svg",
+      "legende": "Les tendances parallèles permettent de construire un taux d’emploi contrefactuel de 53 %."
+    }
+  ],
   "contributions": [
     {
       "phase": "redaction",
@@ -33,9 +41,21 @@
       "perimetre": "Rédaction des deux éditions de l’exposé d’économie à partir du sujet individuel imprimé page 2 du rapport du jury. Contrefactuel, effet de l’offre et effet local, seuils, tendances parallèles et effets de déplacement. Deux politiques étudiées empiriquement et quatre relances argumentées.",
       "agent": "astra_physique",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Relecture du rapport et des deux éditions. Construction numérique et visuelle d’une double différence. Précision sur la comparaison des offres assignées aléatoirement dans l’étude des déplacements d’emploi."
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "couverture": {
     "statut": "complet",
     "questions_entierement_traitees": [

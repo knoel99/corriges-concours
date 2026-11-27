@@ -6,6 +6,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve d’admission dure deux heures trente, sans dictionnaire. La version compte pour le coefficient 0,5 et la production écrite pour 1,5. Les questions figurent sur la troisième page du PDF. Deux modèles de production sont proposés ici. Le candidat choisit **un seul** sujet et rédige de 180 à 220 mots en anglais.
 
 ## A · Version française
@@ -14,7 +16,7 @@ Le ministre ukrainien des Sports, Matvii Bidnyi, a toutefois adressé une répli
 
 « Les propos de Gianni Infantino me paraissent irresponsables, a-t-il déclaré. Ils coupent le football d’une réalité où l’on tue des enfants. Je vous rappelle que, depuis le début de l’agression russe à grande échelle, les Russes ont tué plus de 650 sportifs et entraîneurs ukrainiens. Cent d’entre eux étaient footballeurs. »
 
-Bidnyi a ensuite cité les cas de jeunes joueurs tués par des frappes de missiles ou des tirs d’artillerie, avant d’exhorter les instances du football à ne pas réintégrer la Russie. « La guerre est un crime, elle ne relève pas de la politique, a-t-il déclaré. Je partage la position de la Association ukrainienne de football, qui met elle aussi en garde contre le retour de la Russie dans les compétitions internationales.
+Bidnyi a ensuite cité les cas de jeunes joueurs tués par des frappes de missiles ou des tirs d’artillerie, avant d’exhorter les instances du football à ne pas réintégrer la Russie. « La guerre est un crime, elle ne relève pas de la politique, a-t-il déclaré. Je partage la position de l’Association ukrainienne de football, qui met elle aussi en garde contre le retour de la Russie dans les compétitions internationales.
 
 « Tant que les Russes continueront de tuer des Ukrainiens et de politiser le sport, leur drapeau et leurs symboles nationaux n’auront pas leur place parmi ceux qui sont attachés à des valeurs telles que la justice, l’intégrité et le fair-play. »
 

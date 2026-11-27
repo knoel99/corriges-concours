@@ -16,7 +16,24 @@
   },
   "sources": {
     "sujet": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/Ep%20communes/2026_LVA6AU.pdf#page=2",
-    "rapport_jury": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/Ep%20communes/LV_ECRIT_2026_05.10.pdf#page=19"
+    "rapport_jury": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/Ep%20communes/LV_ECRIT_2026_05.10.pdf#page=19",
+    "sha256_sujet": "f4aff4b5f57beec696fa9ae91f8dcac2d16ef0b2b1c30b80655e4be90c59a593",
+    "pages_pdf_sujet_verifiees": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "sha256_rapport_jury": "23a73e191a42c2fcd03b46b4baca6da1089739620013f3ba144814c9a261dbb0",
+    "pages_pdf_rapport_verifiees": [
+      1,
+      2,
+      19,
+      20,
+      21,
+      22
+    ]
   },
   "figures": [
     {
@@ -25,7 +42,7 @@
       "question": "Synthèse"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -36,6 +53,79 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Synthèse en espagnol des 4 documents du sujet officiel p. 2–5, barres tous les vingt mots, comptage titre compris, lecture du rapport de l’option, guide et schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "x_maths_b_recentes",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Consigne unique, rédaction et copie du guide, lecture du corpus, contrôle des visuels et du total de mots."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Synthèse"
+    ],
+    "origine_attestation": {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "f4aff4b5f57beec696fa9ae91f8dcac2d16ef0b2b1c30b80655e4be90c59a593",
+      "perimetre": "Consigne unique, rédaction et copie du guide, lecture du corpus, contrôle des visuels et du total de mots.",
+      "documents_verifies": [
+        {
+          "numero": 1,
+          "pages_facsimile": [
+            2,
+            3
+          ],
+          "controle": "Le premier éditorial distingue l’objectif de restauration pour 2030, le seuil de 55 % des États, celui de 65 % de la population et les 66 % obtenus."
+        },
+        {
+          "numero": 2,
+          "pages_facsimile": [
+            3
+          ],
+          "controle": "Le deuxième discute la désobéissance de Futuro Vegetal, son audience et la proportionnalité de la qualification pénale."
+        },
+        {
+          "numero": 3,
+          "pages_facsimile": [
+            4
+          ],
+          "controle": "Le troisième décrit le report d’un an concernant la déforestation, puis les précédents sur les pesticides et les véhicules."
+        },
+        {
+          "numero": 4,
+          "pages_facsimile": [
+            4,
+            5
+          ],
+          "controle": "Le quatrième distingue les articles 8 et 6 de la Convention et la voie de recours nationale épuisée par les requérantes suisses. Il explique le rejet procédural du recours portugais. Quatre textes, aucun graphique ou cliché dans cette option."
+        }
+      ],
+      "decompte": {
+        "question_unique": "Synthèse",
+        "langue": "espagnol",
+        "minimum": 360,
+        "maximum": 440,
+        "titre": "La política climática europea entre las urnas, la protesta y los tribunales",
+        "mots": 418,
+        "blocs": [
+          12,
+          49,
+          111,
+          87,
+          159
+        ],
+        "convention": "Titre inclus. Sources et dates de l’introduction comptées chacune pour un mot selon le rapport, p. 1. Renvois compacts à un document comptés pour un mot. Barres après chaque vingtième mot. FIN exclu.",
+        "reperes_de_vingt": 20
+      }
+    }
+  }
 }

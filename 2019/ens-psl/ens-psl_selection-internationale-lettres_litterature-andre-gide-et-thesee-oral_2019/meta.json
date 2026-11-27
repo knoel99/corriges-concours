@@ -1,0 +1,81 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_litterature-andre-gide-et-thesee-oral_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Littérature — André Gide et Thésée (oral)",
+    "annee": 2019,
+    "modalite": "oral"
+  },
+  "intitule": "Littérature — André Gide et Thésée (oral)",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/litterature-oral-sil2019-1.pdf",
+    "sha256_sujet": "651515d97a26b091df6e22764f25e36580e4c3d4a1940d9d1b04f5dbcacaa711",
+    "reperage": "Commenter le passage de Thésée.",
+    "controle_du_perimetre": "Les deux pages de l’oral 1 indiquent la durée approximative, le choix du plan et la tenue de l’entretien. Le feuillet ne transcrit aucune question effectivement posée par le jury."
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Commentaire",
+      "legende": "Trois moments d’un désaccord"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet original. Commentaire intégral, analyse de la progression et de la forme, préparation guidée de l’entretien, réponses argumentées et schéma de lecture."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "fournisseur": "codex",
+      "session": "francais_pt_2325",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Bornes des deux pages et note lexicale vérifiées ; intégration de la rectification d’Œdipe, du rappel de Tirésias et de la différence entre les relances d’entraînement et l’entretien annoncé."
+    }
+  ],
+  "date_revision": "2026-11-27",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "Commentaire",
+        "page_pdf": 1,
+        "page_pdf_fin": 2,
+        "debut": "Cette rencontre à Colone de nos destins",
+        "fin": "je n’y serais sans doute point parvenu.",
+        "consigne": "Vous commenterez le texte ci-dessous en 20 minutes environ. Vous pouvez choisir de le commenter en suivant l’ordre de la lecture, ou de rassembler vos remarques selon un plan qui met en valeur les principaux enjeux du texte. Votre interprétation tiendra compte, par exemple, de son genre littéraire, de son contexte historique et culturel, de sa structure, de sa forme (vocabulaire, syntaxe, effets stylistiques et poétiques), de sa thématique et de sa tonalité. Votre commentaire sera suivi d’un entretien avec le jury.",
+        "annexes": [],
+        "duree": "environ 20 minutes de commentaire puis entretien",
+        "remarque": "Les deux pages de l’oral 1 indiquent la durée approximative, le choix du plan et la tenue de l’entretien. Le feuillet ne transcrit aucune question effectivement posée par le jury.",
+        "notes": [
+          1
+        ],
+        "relances": "Questions d’entraînement rédigées pour le corrigé ; le feuillet annonce un entretien."
+      }
+    ]
+  }
+}

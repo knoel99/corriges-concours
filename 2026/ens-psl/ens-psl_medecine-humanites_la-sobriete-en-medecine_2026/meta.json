@@ -1,0 +1,75 @@
+{
+  "slug": "ens-psl_medecine-humanites_la-sobriete-en-medecine_2026",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Médecine-Humanités",
+    "matiere": "La sobriété en médecine",
+    "annee": 2026,
+    "modalite": "écrit",
+    "duree_heures": 3
+  },
+  "intitule": "La sobriété en médecine",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://medecine-humanites.ens.psl.eu/wp-content/uploads/2026/09/sujet-sobriete-en-medecine-2026_mis_en_forme.pdf",
+    "sha256_sujet": "b46943b3a374ad38148d8e2dc44e9af9a9b400965b91b757c44bcd9feda18725",
+    "rapport_jury": "https://medecine-humanites.ens.psl.eu/wp-content/uploads/2026/09/CR-jury-2026-1-1.pdf",
+    "sha256_rapport_jury": "a3b61343cfe21cd3cca1c0d0f2f7aabeead40834392a8791f71e6bef1138a53c",
+    "index": "https://medecine-humanites.ens.fr/sujets-et-rapports-du-concours-2018/",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://medecine-humanites.ens.psl.eu/wp-content/uploads/2026/09/sujet-sobriete-en-medecine-2026_mis_en_forme.pdf",
+        "pages": 3,
+        "sha256": "b46943b3a374ad38148d8e2dc44e9af9a9b400965b91b757c44bcd9feda18725",
+        "acces": "PDF du lien institutionnel servi par Google Docs Viewer"
+      },
+      {
+        "role": "rapport",
+        "url": "https://medecine-humanites.ens.psl.eu/wp-content/uploads/2026/09/CR-jury-2026-1-1.pdf",
+        "pages": 4,
+        "sha256": "a3b61343cfe21cd3cca1c0d0f2f7aabeead40834392a8791f71e6bef1138a53c",
+        "acces": "PDF du lien institutionnel servi par Google Docs Viewer"
+      }
+    ],
+    "corpus": [
+      "Jacques Bringer, Elisabeth Elefant, Claudine Esper, rapport de l’Académie nationale de médecine, décembre 2025, extrait p. 1 du sujet",
+      "Jules Romains, Knock, acte III, scène 6, 1924 selon la garde, extrait p. 2 du sujet",
+      "Jeanne Susplugas, La Maison malade, 1999, photographie reproduite p. 3 du sujet"
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/place-de-la-personne.svg",
+      "question": "Commentaire",
+      "legende": "Le changement d’échelle fait apparaître trois conséquences de la priorité donnée au nombre. Chaque document donne une forme différente à cette expérience."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "option_info_2006_2009",
+      "agent": "option_info_2006_2009",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Lecture croisée des trois documents, comparaison des formes, examen direct de la photographie p. 3, guide de méthode et schéma original."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire"
+    ],
+    "limites": "Une proposition de lecture du dossier. Le schéma est une aide à l’analyse et la photographie originale est visible sur la page 3 du sujet."
+  }
+}

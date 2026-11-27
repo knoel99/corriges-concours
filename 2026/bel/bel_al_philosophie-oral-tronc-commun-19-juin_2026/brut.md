@@ -6,7 +6,11 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Le jury publie 11 billets pour le 19 juin. Pour chacun, le premier intitulé est celui qui a été choisi. Le second était proposé au choix. Les deux reçoivent ici des réponses distinctes. Les exemples et arguments proposés servent à préparer une leçon personnelle.
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Le [feuillet du 19 juin](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_19_juin.pdf) contient 11 billets de deux sujets. Les développements suivent leur ordre. Le premier sujet a été choisi sur chacun des 11 billets. Le [rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf#page=6) permet de vérifier les choix. Au billet 1, le rapport corrige « encyclopéies » en « encyclopédies ».
+
+Lisez à haute voix les deux sujets du billet, choisissez pendant les 90 minutes de préparation et annoncez votre choix au début des 20 minutes d’exposé. L’entretien dure ensuite 10 minutes. Le coefficient est de 3. Seul un dictionnaire de langue française est autorisé, à l’exclusion des dictionnaires de noms propres.
 
 ## 1. À quoi servent les encyclopédies ?
 
@@ -121,5 +125,3 @@ Une captivité prive effectivement de la liberté d’aller et venir. Lui oppose
 ### L’utilité de la poésie
 
 Un poème qu’on se rappelle plusieurs années après sa lecture n’a peut-être transmis aucune information que l’on aurait pu relever dans un manuel. Pourtant, sa coupe ou la reprise d’un son a rendu perceptible une hésitation qu’une description abstraite nommait mal. La poésie peut transformer notre attention aux mots et aux expériences qu’ils permettent de partager. Elle peut aussi constituer une mémoire commune ou changer la manière de prendre la parole dans une circonstance publique. Lui demander de justifier chaque vers par un bénéfice décidé à l’avance menacerait toutefois cette puissance d’invention. La poésie a des usages réels, parfois imprévus. L’un d’eux consiste précisément à suspendre pour un moment la demande d’efficacité immédiate qui organise d’autres emplois du langage.
-
-[Feuille officielle du 19 juin](https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_19_juin.pdf) · [Rapport du jury, modalités et annexe des sujets](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf)

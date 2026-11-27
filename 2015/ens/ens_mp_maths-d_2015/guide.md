@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 La discrépance mesure un déséquilibre dans des progressions arithmétiques. Les deux premières parties l’abordent par dénombrement et analyse de Fourier. La fonction de Buchstab intervient ensuite dans le décompte des entiers sans petits facteurs, qui fournit les moyennes par lignes et par colonnes de la matrice de Maier.
 
 ## I. Discrépance moyenne d’ensembles finis
@@ -174,6 +176,12 @@ Prenons $s=\lfloor\sqrt N\rfloor$, donc $\sqrt N/2\le s\le\sqrt N$. Pour un term
 
 Sur $[1,2]$, la définition est explicite. Si la fonction est connue et continue jusqu’à $k$, la formule intégrale définit ses valeurs jusqu’à $k+1$ par les valeurs déjà connues. Elle se raccorde à $2$ puisque l’intégrale y est nulle, puis aux entiers suivants par la même formule. Pour $u>2$, le théorème fondamental donne $(u\omega(u))'=\omega(u-1)$, continûment. La définition donne ainsi une unique fonction continue, de classe $C^1$ sur $]2,\infty[$.
 
+Sur le premier intervalle construit, $2\le u\le3$, l’intégrande est encore $1/t$. Par conséquent
+$$u\omega(u)=1+\int_1^{u-1}\frac{dt}{t}=1+\ln(u-1).$$
+Cela donne $\omega(2)=1/2$ et $\omega(3)=(1+\ln2)/3$. La dérivée à droite en 2 vaut $1/4$ et celle à gauche vaut $-1/4$. La continuité en ce point est bien la régularité appropriée.
+
+![Figure 1 — Deux expressions exactes de la fonction de Buchstab se raccordent en 2 avec des dérivées latérales opposées.](figures/buchstab-premiers-intervalles.svg)
+
 ### Question III.1b
 
 > [!INDICATION]
@@ -299,6 +307,8 @@ Pour $x\ge4$, les entiers jusqu’à $\sqrt x$ contribuent au plus $\sqrt x/\ln^
 #### Solution
 
 Pour $\sqrt x<y<x$, les entiers comptés sont un et les premiers de $[y,x]$. Ainsi $\Phi(x,y)-\pi(x)+\pi(y)=1+\mathbf1_{y\text{ premier}}$. La borne imprimée par un est fausse, par exemple $x=7,y=3$. Le rapport la rectifie en **deux**. Lorsque $y=\sqrt x$, il peut en outre apparaître le seul carré $y^2$ si $y$ est premier. Dans tous les cas $\Phi(x,y)=\pi(x)-\pi(y)+O(1)$. Le théorème des nombres premiers donne $\pi(x)=x/\ln x+O(x/\ln^2 x)$ et $\pi(y)=O(y/\ln y)$ uniformément pour $y>1$ (traiter les petites valeurs directement). Cela donne la seconde borne.
+
+Pour l’exemple strict $x=7,y=3$, les entiers comptés sont $1,3,5,7$. On a $\Phi(7,3)=4$, $\pi(7)=4$ et $\pi(3)=2$, ce qui donne exactement $2$. À la frontière $x=9,y=3$, le composé supplémentaire $9$ est admis et la même différence vaut $3$. Cette frontière intervient dans la majoration asymptotique qui suit.
 
 ### Question III.6
 
@@ -454,4 +464,4 @@ La page 8 imprime $q^\beta/(\lambda\varphi(q)\ln(q^\beta))$. Pour un même $\lam
 
 Pour la **disjonction littérale**, le théorème de Maier sur les intervalles de longueur $(\ln x)^u$, $u>1$, établit indépendamment que le rapport de la première branche a une limite supérieure strictement supérieure à un. Prendre un $u>\max(1,\alpha_0)$ et $\lambda$ strictement entre un et cette limite supérieure donne la première branche imprimée. Passer d’un réel $x$ à sa partie entière n’altère le compte que d’un nombre borné de premiers, négligeable devant $(\ln x)^{u-1}$. Ce recours au théorème publié est supplémentaire aux résultats admis dans l’épreuve. [Helmut Maier, *Primes in short intervals*, Michigan Math. J. 32 (1985), 221–225](https://doi.org/10.1307/mmj/1029003189).
 
-![Figure 1 — Chaque colonne contient un intervalle court. Chaque ligne garde une classe modulo q et les lignes admissibles portent tous les nombres premiers.](figures/lignes-et-colonnes-de-maier.svg)
+![Figure 2 — Chaque colonne contient un intervalle court. Chaque ligne garde une classe modulo q et les lignes admissibles portent tous les nombres premiers.](figures/lignes-et-colonnes-de-maier.svg)

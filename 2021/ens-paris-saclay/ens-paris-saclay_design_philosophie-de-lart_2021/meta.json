@@ -1,0 +1,109 @@
+{
+  "slug": "ens-paris-saclay_design_philosophie-de-lart_2021",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Philosophie de l’art",
+    "annee": 2021,
+    "modalite": "écrit",
+    "etablissement_imprime": "École normale supérieure de Paris Saclay"
+  },
+  "intitule": "Peut-on dire du design qu’il est un langage ?",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2021_Sujet_1A_Design_Philo_art.pdf",
+    "sha256_sujet": "29e44b24454c8246abebf0e6f517295935477628fdd55d422696c105985a5a52",
+    "index_annales": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=545",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2021_rapport_ecrit_DESIGN_philo.pdf",
+    "sha256_rapport_jury": "33d4bddfffa6eedc8ab73a314e04accf6f6d7b8dd39d1de4f67af533faf42493",
+    "intitule_imprime": "Peut-on dire du design qu'il est un langage?",
+    "index_annales_sha256": "7b13714fcd99db6edf8a398c3439366ff7ddfa149ce7af8ecebb07d70897052d",
+    "composition_du_sujet": "Feuillet imprimé unique, textuel, sans annexe appelée.",
+    "pages_rapport_philosophie": [
+      1,
+      2
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/signe-et-ouverture.svg",
+      "question": "Dissertation",
+      "legende": "Inverser un signe modifie l’instruction sans déplacer l’ouverture."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_design",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet et du rapport 2021, analyse de la valeur du signe et de la limite matérielle de l’analogie, avec études d’Aicher, Baudrillard et Arendt. Figure comparative."
+    },
+    {
+      "phase": "revision",
+      "agent": "x_hist_1986",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Distinction entre système de signes, langue et usage, exemple du bâtiment-canard et du hangar décoré, reprise de la figure à ouverture fixe et lecture des deux pages du rapport."
+    }
+  ],
+  "duree_heures": 4,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2021_Sujet_1A_Design_Philo_art.pdf",
+      "sha256": "29e44b24454c8246abebf0e6f517295935477628fdd55d422696c105985a5a52",
+      "pages": 1,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "d1a905b7695bbfe26668c7ea155cdcb7961a7b16687e32ea7327295a9631db68"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2021_rapport_ecrit_DESIGN_philo.pdf",
+      "sha256": "33d4bddfffa6eedc8ab73a314e04accf6f6d7b8dd39d1de4f67af533faf42493",
+      "pages": 2,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "ba4cb7712a102197045e70d54b629aa5727181ad989eea39042c2e54dcf4e575"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "20458c6ef27f1d01bc2a6cd4540504ab2135f724b85702befbc86e3a43e32412"
+        }
+      ]
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 1,
+        "intitule_ou_demande": "Éprouver la possibilité de qualifier le design de langage."
+      }
+    ],
+    "annexes_sujet": [],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "slug": "banque-pt_pt_francais-a_2009",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français A",
+    "annee": 2009
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2009/francais_a_2009.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2009/rapport_fra_a_ecrit_2009.pdf",
+    "programme_officiel": "https://www.education.gouv.fr/bo/2008/30/ESRS0813177A.htm",
+    "notice": "https://www.banquept.fr/documents/livret/2009/Livret_PT_2009.pdf#page=12",
+    "sujet_sha256": "969e31942be8de33376da367b861f5b11c80cb55868504f4ee342c59962aa7fd",
+    "rapport_jury_sha256": "1ad360f85eaa082daf35756c2252111e12b12ad5baba88400f1049b3e1d60448",
+    "programme_officiel_sha256": "c293851b5f41c07e824426ded57e8631f46ffeea10bbea56ba66aab850593ca7",
+    "notice_sha256": "a3c1cf502cc1a8772e9b488ffec97dba9f6ce8298fb91e23dd0cf6ea2d5e75b9",
+    "oeuvres_au_programme": [
+      "Saint Augustin, Les Confessions, livre X (traduction d’Arnauld d’Andilly)",
+      "Alfred de Musset, Lorenzaccio",
+      "Michel Leiris, L’Âge d’homme"
+    ],
+    "theme": "Énigmes du moi",
+    "admissibilite_admission": "École polytechnique, admissibilité, coefficient 4",
+    "pages_rapport": "Rapport PDF p. 1 à 6. Analyse des sens de déchiffrer et transmuer, des procédés de composition et des visées distinctes des trois œuvres particulièrement p. 3 à 5."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "Qu’est-ce qui change dans l’enquête sur soi ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture du feuillet, du rapport et de la prescription du livre X. Dissertation sur les opérations distinctes de déchiffrement et de transmutation chez Augustin, Leiris et Musset."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Vérification de la formule impersonnelle du feuillet, différente de celle reproduite par le rapport. Retour au dispositif des Confessions et précision sur la nature de l’échange avec Philippe dans Lorenzaccio.",
+      "tour": 1
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 1,
+        "perimetre": "Cette assertion permet-elle d’éclairer la lecture que vous avez faite des œuvres au programme ?",
+        "points": 20
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

@@ -63,6 +63,18 @@
       "perimetre": "Relecture des 48 questions sur le sujet, les annexes, le cahier réponses et le rapport. Vérification des longueurs des muscles orthétiques, du maximum de contraction, de la convergence de Newton et des colonnes du fichier de mesures. Recalcul des régimes du compresseur et du chronogramme.",
       "agent": "astra_info_si",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture des deux éditions sur les 48 questions de l’orthèse de poignet, le cahier des réponses, les annexes et le rapport du jury. Détermination du signe de h sans discontinuité de tangente, recalcul du gain à la première cassure et distinction entre limites de gain en augmentation et en diminution sur la figure 24. Contrôle du code de Newton et de lecture des mesures, de la correction dimensionnelle de C.4, des bilans pneumatiques et du chronogramme."
     }
   ],
   "provenance": {
@@ -87,6 +99,69 @@
   "date_revision": "2026-11-24",
   "sources": {
     "sujet": "https://www.banquept.fr/documents/2026/si_a_2026_pt.pdf",
-    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2026/rapport_si_a_ecrit_2026.pdf"
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2026/rapport_si_a_ecrit_2026.pdf",
+    "sujet_sha256": "a4feccea3dda2794781f96708cde50cf314e63e350248450a357bb27d09b477c",
+    "rapport_sha256": "7be76a0c231aa21e9f7233e1a8848b0b008729cdab99521f2cbbf44ecba0489f"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48"
+    ],
+    "precision": "Le cahier des réponses reproduit Q1–Q48 aux pages PDF 40–66 après sa garde, puis laisse la page 67 libre. Les annexes A–G, les quatre dessins des corrigés, les neuf cases de Q29 et les blocs de Q30 ont été recoupés.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "a4feccea3dda2794781f96708cde50cf314e63e350248450a357bb27d09b477c",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Relecture des deux éditions sur les 48 questions de l’orthèse de poignet, le cahier des réponses, les annexes et le rapport du jury. Détermination du signe de h sans discontinuité de tangente, recalcul du gain à la première cassure et distinction entre limites de gain en augmentation et en diminution sur la figure 24. Contrôle du code de Newton et de lecture des mesures, de la correction dimensionnelle de C.4, des bilans pneumatiques et du chronogramme.",
+      "commit_redaction_anterieure": "d42e40860cae1122645b9c7f9fd5c843c615da26"
+    }
   }
 }

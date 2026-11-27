@@ -4,9 +4,10 @@
     "concours": "BEL",
     "filiere": "AL",
     "matiere": "Composition française",
-    "annee": 2025
+    "annee": 2025,
+    "modalite": "écrit commun"
   },
-  "questions": 0,
+  "questions": 1,
   "redaction": "Proposition non officielle produite par IA (Claude Opus 4.8), révisée par OpenAI Codex (GPT-6).",
   "figures": [
     {
@@ -35,7 +36,7 @@
     "rapport_jury_sha256": "e345af15d95cc3c27d81d52f5200a9f117cb25e962858e4bb90f3500ea46e066",
     "bernardin": "https://fr.wikisource.org/wiki/Paul_et_Virginie/Texte_entier"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "revision": {
     "date": "2026-11-22",
     "modele": "Codex (GPT-6)",
@@ -101,6 +102,144 @@
       "modifications": true,
       "perimetre": "Confrontation du texte de Butor et du rapport aux Comices chez Flaubert et à l’ouverture de Paul et Virginie. Rectification de l’attribution d’un imparfait, du régime de témoignage chez Duras et du statut des ruines ; schéma de lecture.",
       "tour": 3
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Butor et les Lettres portugaises, distinction entre renvoyer les objets et adresser la rupture."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 5,
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle du texte de Butor, de la section écrite et du chapitre II, VIII de Madame Bovary. Distinction du président qui lit la liste des prix, du conseiller qui appelle la lauréate et du maire qui lui explique la récompense. Distinction du montage et de la réécriture des comices par Homais."
+    }
+  ],
+  "duree_heures": 6,
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens.psl.eu/sites/default/files/2025_al_tronc_commun_francais.pdf",
+      "sha256": "2ce122351cc55b555a603303708ab33501110fcfcfc9ca0622b2b05675ccc8e3",
+      "pages": 1,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "41135495b6c0e3e350ca7152beac144ad66966c1e718c71602199cdb53324f8f"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens.psl.eu/sites/default/files/2025_bel_rapport_ecrit_composition_francaise.pdf",
+      "sha256": "e345af15d95cc3c27d81d52f5200a9f117cb25e962858e4bb90f3500ea46e066",
+      "pages": 12,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "85fab6060e9f322aba4d75011c2f54beab4cb28a93f5c46b75dc2008e54e23a1"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "bc19e6fd924d66c0e3e39b31c0c8b4ce8f904489222a1211db69e1974d2614f6"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "81d99c58b1aa813980c97f094535954701c5bd1c88e694967e4e5b3951f93ce1"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "cefd07febf94176ada64b975791a182328a2cb0a8af957aeedf6dfc0b3ef9666"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "84ec0cc90a059305a6d03d69a4a7820a29ff5d9a038c2a00754d25f1dc7a5da4"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "e3b3c4d7ffac513abf1984ea8c2597fb6e797481756e4ebfdc078baabd53b3d0"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "df36d6e4a1f5db0c7d5c42699d03c59792aa3c956f5705610515314c5156d0c2"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "2eb36e8830f0938533aff75be39e3d6b137f9b42ec3061c5ebe6104126f306a1"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "cd066b4de96fea1edc94dac7f21bd9083d4d1586905258a2414773e3ad7d2528"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "f3b52b993f24516a7f2e0266ac1579fb50c9f9c1201ff21c7dc78419ba0d9a1b"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "50a9d7d7a07e652b58d10ea33577bb7634c6079f558a7234ab5ad7ebb856601c"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "691188cb9a20e5a098eecb085290a7741d6dd9369e077708edc29b4ea5540cd7"
+        }
+      ]
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Composition française"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Composition française",
+        "page_pdf": 1,
+        "code": "LCU 571",
+        "citation": "Alors que le récit véridique a toujours l’appui, la ressource d’une évidence extérieure, le roman doit suffire à susciter ce dont il nous entretient. C’est pourquoi il est le domaine phénoménologique par excellence, le lieu par excellence où étudier de quelle façon la réalité nous apparaît ou peut nous apparaître ; c’est pourquoi le roman est le laboratoire du récit.",
+        "reference": "Michel Butor, « Le roman comme recherche » (1955), dans Essais sur le roman, Paris, Gallimard, coll. « Tel », 1992, p. 9.",
+        "consigne": "Vous discuterez cette proposition, en vous appuyant plus particulièrement sur les œuvres au programme.",
+        "perimetre": "Discussion du régime véridique, du phénomène perçu, des deux inférences de Butor et des opérations du lecteur."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  },
+  "verifications_textuelles": [
+    {
+      "oeuvre": "Gustave Flaubert, Madame Bovary",
+      "passage": "Deuxième partie, chapitre VIII",
+      "url": "https://fr.wikisource.org/wiki/Madame_Bovary/Deuxi%C3%A8me_partie/08",
+      "nature": "Texte de l’œuvre, transcription consultée.",
+      "empreinte_transcription_sha256": "94c79d8834fc6a1259ce32a9b598bf5c34a53afe6edbc4fecdaf1e9c6126fc1f",
+      "elements": [
+        "Deux interprétations du mouvement de la main d’Emma.",
+        "Le président lit les prix ; le conseiller reprend le nom de Catherine Leroux et la liste ; Tuvache détaille la récompense."
+      ]
+    },
+    {
+      "oeuvre": "Bernardin de Saint-Pierre, Paul et Virginie",
+      "passage": "Ouverture du récit, ruines des deux cabanes et rencontre du vieillard",
+      "url": "https://fr.wikisource.org/wiki/Paul_et_Virginie/Texte_entier",
+      "nature": "Texte de l’œuvre, transcription consultée.",
+      "empreinte_transcription_sha256": "0c016d216061fb6832aa4ebf01f57bbbcc89e0adb7fe726dccfbd6f6a8427a45"
     }
   ]
 }

@@ -8,7 +8,7 @@
   },
   "intitule": "Hume et la conversion de la peine en plaisir esthétique",
   "gabarit": "dissertation",
-  "questions": 0,
+  "questions": 2,
   "redaction": "Proposition non officielle rédigée par IA.",
   "modele": {
     "provider": "codex",
@@ -21,16 +21,22 @@
     "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_-_explication_de_texte_si_philosophie_sil_2026.pdf",
     "sujet_sha256": "65b5cafbe47e93348dc173a62b8e507dc89d0412ba8f76a2427bcf37e98d3e52",
     "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_du_jury_de_philosophie_sil2026.pdf",
-    "rapport_sha256": "48bc5c089b1ff6293eaa61c52aa9af2121abba90169984b209cf2ed597536433"
+    "rapport_sha256": "48bc5c089b1ff6293eaa61c52aa9af2121abba90169984b209cf2ed597536433",
+    "index_banque": "https://www.ens.psl.eu/une-formation-d-exception/admission-concours/international/concours-selection-internationale-0",
+    "numero_pages_sujet": 1,
+    "numero_pages_rapport": 1,
+    "reperage": "Feuillet unique : extrait de Hume, de « Le plaisir procuré par les poètes » à « le plus grand plaisir », puis une consigne en deux phrases. Le rapport (p. 1) confirme un écrit commun et distingue les sujets d’oraux adaptés aux projets. Aucun choix, autre feuillet ou annexe à l’écrit de philosophie.",
+    "contexte_oeuvre": "https://davidhume.org/texts/fd/full",
+    "passages_contexte": "Hume, Four Dissertations (1757), Of Tragedy : § 8–10, éloquence de Cicéron ; § 19, passage du sujet ; § 20, inversion des mouvements dans la suite de l’essai."
   },
   "figures": [
     {
       "fichier": "figures/mouvements-esthetiques.svg",
-      "question": "Composition",
+      "question": "I. Explication du texte",
       "legende": "La relation entre les deux mouvements chez Hume"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "lecture_rapport_jury",
@@ -67,6 +73,43 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Vérification de l’ordre des phrases, de la hiérarchie des mouvements et de la distinction entre plaisir et jugement dans la discussion finale."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Hume, rôle de la compassion dans la conversion esthétique et variation de la représentation."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "classiques_2017",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Confrontation du sujet et du rapport de la SIL, tous deux d’une page, avec les deux éditions et la figure. Distinction des deux consignes obligatoires et des projets d’oral. Ajout du contexte historique demandé par le jury, correction du sens de « simple apparence » à partir du § 19 anglais et de l’exemple de Cicéron. Précision de la reconnaissance chez Sophocle, mise à l’épreuve personnelle de la prédominance, réécriture du guide phrase par phrase."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I. Expliquer les quatre phrases de l’extrait de Hume : paradoxe tragique, plaisirs propres de la représentation, conversion du mouvement subordonné et distinction entre vue de l’objet réel et représentation artistique. Les deux éditions situent l’essai dans son contexte historique.",
+      "II. Développer une réflexion personnelle à partir du texte : cas de la reconnaissance d’Œdipe, inversion de la dominance pour un auditeur concerné, distinction entre plaisir éprouvé et jugement sur la justesse de l’œuvre."
+    ]
+  }
 }

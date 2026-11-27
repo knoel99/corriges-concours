@@ -1,0 +1,71 @@
+{
+  "slug": "bel_bl_sociologie-oral-commun-delinquance-juvenile_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Sociologie (oral commun) — Délinquance juvénile",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "La délinquance juvénile",
+  "questions": 1,
+  "sujets": 1,
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujets_socio_17_juin.pdf#page=17",
+    "sujet_sha256": "85cc47a53b07ba86c6b1d18e9821517bc9802a7365e87997d5b9c709d8e4b5b0",
+    "sujet_pages": 32,
+    "page_pdf": 17,
+    "fin_pdf": 24,
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_sociologie_tronc_commun.pdf",
+    "rapport_sha256": "9bc988f94c13ebc880ab5860fd1c30f145a4bf52df2207b66bb6dbb78e4bd008",
+    "rapport_pages": 4
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire du dossier"
+    ],
+    "documents_entierement_traites": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "precision": "Un dossier de sept documents, pages internes 1 à 8. Les deux volets du document 2, la légende du document 3, la composition des colonnes des documents 4 et 5 et la note de lecture du document 6 ont été vérifiés visuellement. Le rapport commun cite ce dossier page 4. Les relances sont éditoriales."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Commentaire du dossier",
+      "fichier": "figures/composition-affaires.svg",
+      "legende": "Répartition de trois catégories parmi les auteurs présumés de chaque groupe d’âge, en France en 2014. Extrait du document 2b."
+    },
+    {
+      "numero": 2,
+      "question": "Commentaire du dossier",
+      "fichier": "figures/scolarisation-et-age.svg",
+      "legende": "Part des jeunes hors scolarité à chaque âge, dans l’unité de la Nièvre et dans la population française de référence. Document 5."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture visuelle du dossier et du rapport du jury, mise en regard des statistiques de parquet, du casier judiciaire, des dossiers éducatifs et des victimes enregistrées. Rédaction des deux éditions, des relances et de deux graphiques à barres comparatives."
+    }
+  ]
+}

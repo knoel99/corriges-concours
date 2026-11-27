@@ -1,0 +1,81 @@
+{
+  "slug": "bel_bl_sociologie-oral-commun-14-juin-dossier-1_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Sociologie (oral commun) — 14 juin dossier 1",
+    "annee": 2024,
+    "modalite": "oral"
+  },
+  "intitule": "Violences et genre",
+  "questions": 0,
+  "sujets": 1,
+  "tirages": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/bl_sujets_oraux_sociologie_1_14062024.pdf",
+    "sujet_sha256": "266db295c681f4cee68eb7d53bd0d142b6870fe086fdbee84476ecce42e1f6eb",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_oral_sociologie_epreuve_commune.pdf",
+    "rapport_sha256": "2b325a35f255bbe5da766d002f0b39721fbc10704cbbb324e074b164d093878b",
+    "pages_sujet": "pp. 1–8"
+  },
+  "figures": [
+    {
+      "fichier": "figures/comparaison.svg",
+      "question": "Violences et genre",
+      "legende": "Document 5, p. 6. Pourcentage ayant déclaré un fait au cours des douze derniers mois."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "bel_bl_sociologie-oral-commun-14-juin-dossier-1_2024",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Lecture des sept pièces dans leur pagination officielle, exposé, guide de lecture et trois réponses pour l’entretien. Rapprochement des pièces en trois étapes argumentées pour la présentation orale."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "bel_bl_sociologie-oral-commun-14-juin-dossier-1_2024",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": false,
+      "perimetre": "Contrôle des unités, champs et dénominateurs, lecture des graphiques au rendu et comparaison avec la figure « Atteintes déclarées dans l’espace public, tous âges »."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Violences et genre"
+    ],
+    "controle": [
+      "Lecture des sept pièces dans leur pagination officielle, exposé, guide de lecture et trois réponses pour l’entretien.",
+      "Contrôle des unités, champs et dénominateurs, lecture des graphiques au rendu et comparaison avec la figure « Atteintes déclarées dans l’espace public, tous âges ».",
+      "Exposé structuré en trois rapprochements croisés, puis contrôle de chaque pièce en suivant la pagination officielle."
+    ]
+  }
+}

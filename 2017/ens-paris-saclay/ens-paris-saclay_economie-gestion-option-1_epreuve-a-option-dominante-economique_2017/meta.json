@@ -1,0 +1,62 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_epreuve-a-option-dominante-economique_2017",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Épreuve à option — dominante économique",
+    "annee": 2017,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "Le choix entre libre-échange et protectionnisme : quel impact sur la croissance (1919-1995) ?",
+  "gabarit": "dissertation",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2017_SE_D2-1_EpreuveOption.pdf#page=3",
+    "sujet_sha256": "1808245ac2351f3858458d645957a1aa378c33f246387f470af9286c7c0b2718",
+    "index": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=289&field_year_target_id%5B%5D=279",
+    "pages_sujet": "3 du fascicule, page imprimée 1 de l’épreuve",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2017_SE_D2-1_EpreuveOption.pdf",
+        "pages": 16,
+        "sha256": "1808245ac2351f3858458d645957a1aa378c33f246387f470af9286c7c0b2718"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/commerce-et-production.svg",
+      "question": "Composition",
+      "legende": "Le même droit de douane peut déplacer l’activité vers un producteur national, renchérir ses intrants et susciter des représailles. L’effet sur la croissance dépend du poids et de la durée de ces mécanismes."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Dissertation rédigée sur 1919–1995 ; comparaison historique des crises, de la libéralisation négociée et des industrialisations protégées, mécanismes et guide."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Composition"
+    ],
+    "limites": "Une proposition de dissertation, replacée dans la période demandée."
+  }
+}

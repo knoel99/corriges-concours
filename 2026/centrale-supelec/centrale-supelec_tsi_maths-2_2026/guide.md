@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Thème.** Le sujet (4 heures, calculatrice autorisée, 41 questions) fait converger quatre chemins vers un même nombre : $b_n$, le nombre de permutations de $[\![1,n]\!]$ **sans point fixe** (on dit aussi « dérangements »). La conclusion du problème est la formule
@@ -21,7 +23,7 @@ obtenue deux fois : une fois par une série entière, une fois par l'inversion d
   - III : la matrice symétrique $S=LU$ est diagonalisable, à valeurs propres strictement positives, et son spectre est stable par $x\mapsto\frac1x$. Un contre-exemple montre que la réciproque est fausse.
   - IV : un dénombrement de chemins dans un quadrillage orienté démontre la formule de Vandermonde et donne $S_{i,j}=\binom{i+j}i$.
 - **Partie B (Q16–Q25).** Suite et série entière.
-  - I : la suite définie par $a_0=1$, $a_1=0$ et $a_{n+1}=n(a_n+a_{n-1})$. Viennent une fonction Python, des récurrences doubles, puis $a_n=n!\sum_{k=0}^n\frac{(-1)^k}{k!}$ : $a_n$ est l'entier le plus proche de $\frac{n!}e$.
+  - I : la suite définie par $a_0=1$, $a_1=0$ et $a_{n+1}=n(a_n+a_{n-1})$. Viennent une fonction Python, des récurrences doubles, puis $a_n=n!\sum_{k=0}^n\frac{(-1)^k}{k!}$ : pour $n\geq1$, $a_n$ est l'entier le plus proche de $\frac{n!}e$.
   - II : la série entière $\sum\frac{a_n}{n!}x^n$, de rayon $1$ et de somme $\frac{e^{-x}}{1-x}$. La formule de Leibniz donne ensuite la relation $p!=\sum_k\binom pk a_k$.
 - **Partie C (Q26–Q35).** Permutations.
   - Une permutation est représentée par un graphe (arcs $i\to\sigma(i)$) et par une matrice ($1$ en position $(i,\sigma(i))$).
@@ -29,7 +31,7 @@ obtenue deux fois : une fois par une série entière, une fois par l'inversion d
   - Le théorème : $M(\sigma)$ est diagonalisable si et seulement si $\sigma^2=\mathrm{id}$ (le graphe n'a que des boucles et des bi-boucles).
 - **Partie D (Q36–Q41).** Loi du nombre $X_n$ de points fixes, relation $p!=\sum_k\binom pk b_k$, et deux calculs de $P(B_n)$ : par identification $b_k=a_k$ (partie B), puis par $b=L^{-1}F$ (partie A).
 
-**Deux défauts de l'énoncé à connaître.** En **Q31**, « la matrice introduite en Q25 » est une coquille : il s'agit de la matrice de la figure 4, introduite en **Q26**. En **Q37**, la convention « $b_0=0$ » rend fausses les formules de Q37 (pour $j=n$) et de Q38 (dès $p=0$) ; la convention cohérente est **$b_0=1$**. Le corrigé le signale et poursuit avec $b_0=1$ : c'est l'attitude attendue face à une coquille.
+**Deux défauts de l'énoncé à connaître.** En **Q31**, « la matrice introduite en Q25 » est une coquille : il s'agit de la matrice de la figure 4, introduite en **Q26**. En **Q37**, la convention « $b_0=0$ » rend fausses les formules de Q37 (pour $j=n$) et de Q38 (dès $p=0$) ; la convention cohérente est **$b_0=1$**. Le corrigé le signale et poursuit avec $b_0=1$.
 
 **Notions du programme mobilisées.** Matrice d'une application linéaire, matrices triangulaires, inverse, transposée, matrices semblables, valeurs propres et diagonalisation (dimension des sous-espaces propres), théorème spectral pour les matrices symétriques réelles, trace. Coefficients binomiaux et dénombrement (bijections, principe multiplicatif). Récurrences doubles. Séries numériques, suites adjacentes, développement en série entière de l'exponentielle. Rayon de convergence, dérivation terme à terme, lien coefficients–dérivées en $0$. Équations différentielles linéaires du premier ordre. Formule de Leibniz. Probabilités sur un univers fini, système complet d'événements. Python : listes.
 
@@ -192,7 +194,7 @@ Comme $D$ est inversible, **$U$ est semblable à $U^{-1}$**.
 > [!PIEGE]
 > Les matrices ne commutent pas : on ne « simplifie » pas $DU=U^{-1}D$ par $D$. On multiplie les deux membres par $D$, du même côté.
 
-> [!JURY]
+> [!METHODE]
 > Pour conclure à une similitude, il faut nommer la matrice de passage et justifier qu'elle est inversible (ici $D$, par Q5).
 
 ### Question 7
@@ -612,7 +614,7 @@ Unicité : si $m\in\mathbb Z$ vérifie aussi $\left|\frac{n!}e-m\right|<\frac12$
 > [!PIEGE]
 > Pour $n=1$, la borne générale vaut $\frac12$, ce qui ne donne pas l'inégalité stricte. Il faut traiter ce rang à part.
 
-> [!JURY]
+> [!METHODE]
 > Une formule de l'énoncé du type « l'unique entier tel que » contient deux affirmations, existence et unicité : il faut démontrer les deux.
 
 ### Question 22
@@ -857,8 +859,8 @@ C'est cohérent avec le théorème : $G(\sigma)$ n'a que deux boucles et une bi-
 > [!METHODE]
 > Contrôle du polynôme caractéristique : la somme des racines $1+1+1-1=2$ est égale à $\operatorname{tr}N$, et leur produit $-1$ à $\det N$.
 
-> [!JURY]
-> Face à une coquille d'énoncé, on la signale en une phrase, on dit comment on l'interprète et on poursuit. Une interprétation raisonnable et explicitée est toujours mieux qu'une question laissée blanche.
+> [!METHODE]
+> Le degré du polynôme caractéristique est la taille de la matrice. Il permet ici d’identifier la figure 4 malgré le renvoi erroné.
 
 ### Question 32
 
@@ -1021,6 +1023,10 @@ Contrôle pour $n=3$ : $\frac26,\frac36,0,\frac16$, de somme $1$.
 
 > [!PIEGE]
 > La restriction de $\sigma$ hors de $F$ doit être *sans point fixe*, sinon $\sigma$ aurait plus de $j$ points fixes : c'est ce qui fait apparaître $b_{n-j}$ et non $(n-j)!$.
+
+Sur quatre éléments, les effectifs pour $j=0,1,2,3,4$ sont respectivement $9,8,6,0,1$. On peut les retrouver directement. Les permutations sans point fixe sont les six cycles de longueur quatre et les trois produits de deux transpositions disjointes. Avec un seul point fixe, il y a quatre choix pour ce point et deux cycles possibles sur les trois autres. Avec deux points fixes, il reste une seule transposition pour chaque choix des deux points. L’identité fournit le dernier cas.
+
+![Figure 4 — Effectifs des permutations de quatre éléments selon leur nombre de points fixes](figures/q37-points-fixes-quatre-elements.svg)
 
 ### Question 38
 

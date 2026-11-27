@@ -1,0 +1,97 @@
+{
+  "slug": "banque-pt_pt_francais-b_2021",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français B",
+    "annee": 2021
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2021/fr_b_2021_pt.pdf",
+    "sujet_sha256": "c48895c6af0d8f1998f310167b517ca9e12231628ff8f9b8b3bf95fa4196edb2",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2021/rapport_fra_b_ecrit_2021.pdf",
+    "rapport_sha256": "ea9b7ab6c1f0308b18936b7f92939ec7c35ce8e2b91ee99ce307c53d20035301",
+    "programme_officiel": "https://www.education.gouv.fr/bo/20/Hebdo32/ESRS2014851A.htm",
+    "theme": "La force de vivre",
+    "oeuvres_au_programme": [
+      "Hugo, Les Contemplations, livres IV et V",
+      "Nietzsche, Le Gai Savoir, préface à la seconde édition et livre IV (traduction Patrick Wotling)",
+      "Alexievitch, La Supplication (traduction Galia Ackerman et Pierre Lorrain)"
+    ],
+    "source_coefficients": "https://www.banquept.fr/documents/livret/2021/Livret_PT_2021.pdf#page=13",
+    "admissibilite_admission": "ENS Paris-Saclay et ENS Rennes, admission seule, coefficient 4",
+    "notice_editeur": "https://www.hachette.fr/livre/le-ressort-invisible-vivre-lextreme-9782100707140/",
+    "mots_du_texte_selon_le_sujet": 1552
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "Que devient le lien après la perte ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lyon_ses_sources",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture des quatre pages de Fischer et de la graphie Fisher imprimée au feuillet, vérifiée contre la notice éditoriale. Contrôle de la séparation, du temps, de la reconstruction de l’identité et du second détachement dans les deux éditions. Rédaction des deux éditions, vérification du programme et réalisation du schéma."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Résumé",
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Résumé",
+        "page_pdf": 2,
+        "page_pdf_fin": 5,
+        "page_consigne": 5,
+        "perimetre": "De « Les situations extrêmes éclairent l’humain » (p. 2) à « et peut-être la refaire » (p. 5). Une coupe est signalée p. 3. Les deux questions suivent p. 5.",
+        "mots_demandes": 200,
+        "mots_admis": [
+          180,
+          220
+        ],
+        "mots_par_paragraphe": [
+          77,
+          58,
+          65
+        ],
+        "mots_rediges": 200,
+        "points": 8
+      },
+      {
+        "question": "Dissertation",
+        "page_pdf": 5,
+        "page_pdf_fin": 5,
+        "perimetre": "La force de vivre suppose-t-elle de faire disparaître intérieurement ce que l’on a déjà perdu pour continuer son existence et, peut-être, la refaire ?",
+        "points": 12
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

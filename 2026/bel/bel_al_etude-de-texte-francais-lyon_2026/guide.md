@@ -14,6 +14,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Texte étudié** — Claude Simon, *L’Acacia* (1989), la recherche de la tombe du père.
 
 [Sujet officiel, pp. 6–7](https://www.ens-lyon.fr/sites/default/files/2026-04/Epreuve%20de%20sp%C3%A9cialit%C3%A9%202026.pdf#page=6) · [Rapport du jury](https://www.ens-lyon.fr/sites/default/files/2026-10/Lettres%20Modernes%202026.pdf#page=2)
@@ -43,6 +45,8 @@ Pour discuter le regard de l’enfant, associer le détail rapproché des pédal
 > L’or du képi et les cuivres brillants signalent un officier de haut rang. Le nom qu’entend la famille reste absent du récit. Donner à cet homme une identité historique précise fermerait prématurément la question de savoir qui a le privilège d’identifier qui.
 
 ![Les regards à la fin du passage](figures/regards.svg)
+
+Distribuer entre les personnages trois actes différents, prononcer, entendre et reconnaître. Puis placer le lecteur dans cette distribution en indiquant où il dispose d’un geste visible et où l’identité lui échappe.
 
 ## Proposition d’étude littéraire
 

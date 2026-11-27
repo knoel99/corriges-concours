@@ -36,6 +36,66 @@
       "perimetre": "Rédaction des deux éditions sur toutes les questions du sujet XUSR scanné et confrontation avec le rapport, du point selle aux itérations de Sinkhorn. Traitement du mot vide, de la stricte convexité au bord et de la liberté additive des potentiels. Deux figures originales.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Comparaison des 38 réponses et indications aux quatre pages numérotées du sujet XUSR. Récurrence suggérée en 5c pour l’inégalité de Kraft, traitement des branches vides et des singletons, domaine du supremum dual en 16, détail de la liberté additive. Recalcul des quinze cycles représentés en 16d.",
+      "fournisseur": "codex",
+      "agent": "anciens_maths_x_lyon"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1a",
+      "1b",
+      "2a",
+      "2b",
+      "2c",
+      "3a",
+      "3b",
+      "3c",
+      "3d",
+      "4a",
+      "4b",
+      "4c",
+      "5a",
+      "5b",
+      "5c",
+      "6a",
+      "6b",
+      "7",
+      "8a",
+      "8b",
+      "8c",
+      "9",
+      "10a",
+      "10b",
+      "10c",
+      "11a",
+      "11b",
+      "12a",
+      "12b",
+      "13a",
+      "13b",
+      "13c",
+      "14",
+      "15",
+      "16a",
+      "16b",
+      "16c",
+      "16d"
+    ],
+    "detail": [
+      "1a–3d, pages imprimées 1–2. Stricte convexité, orthogonalité et multiplicateurs sous contrainte affine.",
+      "4a–6b, page 2. Stricte convexité au bord, codes préfixes, inégalité de Kraft et borne entropique pour les longueurs.",
+      "7–12b, page 3. Plans à marges fixées, rôle de la régularisation, preuve de positivité et point selle.",
+      "13a–16d, page 4. Valeur duale, normalisations alternées et convergence du plan sous l’hypothèse de convergence des potentiels."
+    ]
+  }
 }

@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Statistiques environnementales, moments gaussiens et fiabilité mécanique.** Les calculs de régression utilisent les coefficients non arrondis. Les deux demi-intégrales des moments sont contrôlées séparément.
 
 ## 1. Émissions et énergies renouvelables
@@ -34,13 +36,15 @@ Le rang correspondant à 2050 est $2050-2009=41$. La prévision est donc $\wideh
 
 L’inégalité $-(7/60)x+1301/180<2$ équivaut à $x>941/21\simeq44{,}81$. Le premier rang est 45, soit l’année **2054**.
 
+Aux deux rangs voisins, la droite donne $377/180\simeq2{,}09$ en 2053 et $356/180\simeq1{,}98$ en 2054. Ces deux valeurs encadrent le seuil demandé.
+
 ### Question 1.2.a
 
 C’est une série univariée quantitative continue. L’individu est un pays et sa valeur est une proportion en pourcentage, mesurée ici au dixième.
 
 ### Question 1.2.b
 
-Les valeurs de ces quatre rangs sont respectivement $9{,}5$, $16{,}0$, $17{,}3$ et $28{,}3$. La médiane usuelle est $(16{,}0+17{,}3)/2=16{,}65\,\%$. Les quartiles empiriques sont $Q_1=9{,}50\,\%$ et $Q_3=28{,}30\,\%$, d’où un écart de **18,80 points de pourcentage**.
+Dans la liste croissante des 28 pays, les quartiles occupent les rangs 7 et 21. La médiane est la moyenne des rangs 14 et 15. Les valeurs aux rangs 7, 14, 15 et 21 sont respectivement $9{,}5$, $16{,}0$, $17{,}3$ et $28{,}3$. La médiane usuelle est $(16{,}0+17{,}3)/2=16{,}65\,\%$. Les quartiles empiriques sont $Q_1=9{,}50\,\%$ et $Q_3=28{,}30\,\%$, d’où un écart de **18,80 points de pourcentage**.
 
 ### Question 1.2.c
 
@@ -64,9 +68,14 @@ Les deux facteurs sont dérivables. Pour $n\ge1$, $\varphi_n'(x)=(nx^{n-1}-x^{n+
 
 Pour $n=0$, la dérivée est strictement négative sur $]0,\infty[$ et $\varphi_0$ décroît de 1 jusqu’à sa limite 0. Pour $n\ge1$, $\varphi_n$ part de 0, croît strictement jusqu’à $x=\sqrt n$ puis décroît strictement jusqu’à 0. La valeur au sommet est $n^{n/2}e^{-n/2}$.
 
+| Paramètre | Au départ $x=0$ | Variation sur la demi-droite positive | Limite en $+\infty$ |
+|---|---:|:---|---:|
+| $n=0$ | $1$ | Décroît pour tout $x>0$ | $0$ |
+| $n\ge1$ | $0$ | Croît jusqu’à $x=\sqrt n$, puis décroît | $0$ |
+
 ### Question 2.I.4
 
-Le maximum est $M_0=1$ atteint en 0. Pour $n\ge1$, $M_n=(n/e)^{n/2}$ est atteint uniquement en $\sqrt n$.
+Sur $[0,+\infty[$, le maximum est $M_0=1$ atteint en 0. Pour $n\ge1$, $M_n=(n/e)^{n/2}$ est atteint uniquement en $\sqrt n$.
 
 ### Question 2.I.5
 

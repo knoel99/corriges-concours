@@ -16,7 +16,7 @@
     {
       "fichier": "figures/transformation-gauss.svg",
       "question": "8",
-      "legende": "Les branches décroissent de 1 exclu à 0 inclus. Elles s’accumulent vers zéro."
+      "legende": "Les cercles vides marquent les extrémités exclues. Les points pleins sont les zéros en 1/k pour k au moins égal à 2."
     }
   ],
   "contributions": [
@@ -30,6 +30,49 @@
       "perimetre": "Rédaction des 17 questions et de leurs subdivisions dans les deux éditions, soit 22 réponses. Lecture directe des trois pages imprimées du problème. Contrôle du premier pas de la suite des dénominateurs, figure des branches de la transformation de Gauss et sommation de la dernière couverture.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Comparaison des 22 réponses et indications avec les pages imprimées 3 à 5 du sujet de la session d’automne. Explicitation de la différence de réduites en 3. Correction du domaine et du point ouvert en 1 sur le graphe de Gauss en 8. Vérification des restes en 10 et de la couverture par intervalles en 17.",
+      "fournisseur": "codex",
+      "agent": "anciens_maths_x_lyon"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12a",
+      "12b",
+      "13",
+      "14a",
+      "14b",
+      "15a",
+      "15b",
+      "15c",
+      "16",
+      "17a",
+      "17b"
+    ],
+    "detail": [
+      "1–7, page 3. Produit matriciel, récurrences, exception possible à la croissance stricte au premier pas, monotonie et irrationalité de la limite.",
+      "8–14b, page 4. Branches de la transformation de Gauss, développement d’un irrationnel, approximation de π et caractère quadratique des queues périodiques.",
+      "15a–17b, page 5. Période explicite de la racine positive et estimation du coût du recouvrement des ensembles de bonnes approximations."
+    ]
+  }
 }

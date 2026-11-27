@@ -1,0 +1,55 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_etudes-politiques-jean-pierre-chretien-et-le-genocide-des-tutsi-oral_2023",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Études politiques — Jean-Pierre Chrétien et le génocide des Tutsi (oral)",
+    "annee": 2023,
+    "modalite": "oral"
+  },
+  "intitule": "Études politiques — Jean-Pierre Chrétien et le génocide des Tutsi (oral)",
+  "gabarit": "commentaire",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://web.archive.org/web/20230529064642id_/https://www.ens.psl.eu/sites/default/files/oral-1.pdf",
+    "sujet_sha256": "dfc7bb12bb18f03e4c548779a1eed4c79e1c4cc5e953a99edbf0682ffaab33de",
+    "document_officiel": "https://www.ens.psl.eu/sites/default/files/oral-1.pdf",
+    "index": "https://www.ens.psl.eu/une-formation-d-exception/admission-concours/international/concours-selection-internationale-0",
+    "pages_sujet": 2,
+    "reference": "Jean-Pierre Chrétien, entretien avec Stéphane Audoin-Rouzeau et Hélène Dumas, « Un historien face au génocide des Tutsi », Vingtième Siècle. Revue d’histoire, n° 122, 2014, p. 23–35. La fiche d’oral reproduit deux pages et leurs notes."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/des-documents-a-l-alerte.svg",
+      "question": "Commentaire oral",
+      "legende": "Chrétien distingue le texte de propagande, les violences constatées et l’alerte publique. Leur succession rend intelligible son jugement de 1993 sans supposer que l’issue de 1994 était alors certaine."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "gestion_2022_2023",
+      "agent": "gestion_2022_2023",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture des deux pages et des notes ; commentaire de l’entretien, chronologie distinguant l’alerte du récit rétrospectif, questions de relance et schéma."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire oral"
+    ],
+    "limites": "Le périmètre de l’oral est l’extrait distribué. Les relances proposées pour l’entraînement sont rédigées pour ce corrigé."
+  }
+}

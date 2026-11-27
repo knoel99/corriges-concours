@@ -13,7 +13,7 @@
     "model": "GPT-6"
   },
   "redaction": "Rédaction originale par IA à partir du sujet officiel.",
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "sources": {
     "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-shsaps-1-sciences-humaines-2sep-2026_1791303304026-pdf",
     "index_banque": "https://www.ens-rennes.fr/admission/concours1a/2sep/concours-2sep-2026",
@@ -22,7 +22,11 @@
     "guadagnoli_lee_2004": "https://pubmed.ncbi.nlm.nih.gov/15130871/",
     "winstein_schmidt_1990": "https://doi.org/10.1037/0278-7393.16.4.677",
     "apercu_sujet_sha256": "58f8a937964fc74be13fb3855bf5cb2a03cc15316e6d04430bc9233353cdf47d",
-    "verification_apercu": "Comparaison avec les pages rendues du PDF ENS Rennes. Les empreintes d’aperçu désignent les fichiers rendus par la visionneuse."
+    "verification_apercu": "Comparaison avec les pages rendues du PDF ENS Rennes. Les empreintes d’aperçu désignent les fichiers rendus par la visionneuse.",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-2sep-shsaps-1-sh-2026_1795712438197-pdf",
+    "sha256_sujet": "f0af56292c871753e27750f6e511f994e764b8ced542afda127ce134ddf8d57e",
+    "sha256_rapport_jury": "2742228869089c17c44f9f660c75712b62bb6462638ac9255ac7bd399c0f4cd3",
+    "verification_originaux": "PDF des liens ENS Rennes repérés sur l’index 2026 et récupérés par le miroir d’octets AllOrigins. Garde, pagination et texte relus sur ces fichiers."
   },
   "figures": [
     {
@@ -73,6 +77,63 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Lecture de la page unique du sujet écrit et vérification des deux réponses, du rôle du risque et de l’exemple scolaire de tir au panier. Comparaison raisonnée d’une performance de séance et d’un test de rétention."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification du sujet R 26-325. Construction d’une comparaison entre rétention et transfert en basket-ball scolaire, en faisant varier la distance après le retrait des aides."
+    },
+    {
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "phase": "lecture_rapport_jury",
+      "modifications": false,
+      "perimetre": "Rapport SHSAPS 1 2026, six pages. Examen des modèles, conditions motivationnelles, bandeau de correction, copies commentées et conseils."
+    },
+    {
+      "session": "rennes_oraux_economie",
+      "agent": "rennes_oraux_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "modifications": true,
+      "perimetre": "Garde R 26-325, 2 heures, sans document, calculatrice ni dictionnaire. Page unique comprenant garde et consigne, sans annexe. Le repère éditorial désigne l’unique composition. Rapport de jury, pages 1 à 6. Lecture du rapport de six pages nouvellement retrouvé. Approche de Nicholls sur le critère de compétence, conséquences du jugement anticipé sur les tentatives et lien avec la régulation motrice. Distinction entre une occasion de tir perçue et l’adresse d’exécution. Vérification et insertion des trois illustrations dans les deux éditions."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Prise de risque, théories de l’apprentissage et conditions de l’apprentissage moteur"
+    ],
+    "pages_du_sujet": 1,
+    "pages_pdf_des_questions": {
+      "Prise de risque, théories de l’apprentissage et conditions de l’apprentissage moteur": 1
+    },
+    "precision": "Garde R 26-325, 2 heures, sans document, calculatrice ni dictionnaire. Page unique comprenant garde et consigne, sans annexe. Le repère éditorial désigne l’unique composition. Rapport de jury, pages 1 à 6."
+  }
 }

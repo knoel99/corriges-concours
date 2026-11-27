@@ -11,7 +11,14 @@
   "sources": {
     "sujet": "https://www.ens.psl.eu/IMG/file/concours/2016/sujets/MPI/16_sujet_mpi_mathc.pdf",
     "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2016/rapports/mpi-i/16_mp_rap_math_c.pdf",
-    "sha256_sujet": "26b4a522af3c8ff04c90c7fcf2fcb7271a86a621cddd9216d2994ad7075f2c32"
+    "sha256_sujet": "26b4a522af3c8ff04c90c7fcf2fcb7271a86a621cddd9216d2994ad7075f2c32",
+    "index_banque": "https://www.ens.psl.eu/rapports-et-sujets-2016-mpi",
+    "index_banque_sha256": "dca4bc94cf244592493ac8c37db62d24bfb69e23c2fc71a09dcf54df0f19af45",
+    "rapport": "https://www.ens.psl.eu/IMG/file/concours/2016/rapports/mpi-i/16_mp_rap_math_c.pdf",
+    "sujet_sha256": "26b4a522af3c8ff04c90c7fcf2fcb7271a86a621cddd9216d2994ad7075f2c32",
+    "sujet_pages": 6,
+    "rapport_sha256": "0c499ec1ef9825cfcd6a39b4533bb63f15a0c6ff2d2d97a51a8d10b63247c9ef",
+    "rapport_pages": 4
   },
   "figures": [
     {
@@ -31,6 +38,76 @@
       "perimetre": "Rédaction et vérification sur les six pages du sujet original et le rapport inter-ENS. Vérification des jets, du critère de Kalman, des normes Gevrey, des coefficients complexes et de la commande de Neumann. Graphique du raccordement plat.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Contrôle des 43 subdivisions des cinq parties du sujet et du rapport. Vérification du critère de Kalman dans la base construite, des jets de raccordement aux deux extrémités, du signe et des modules dans l’extraction du coefficient de Cauchy, des constantes Gevrey et de la commande frontière de la chaleur.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4a",
+      "2.4b",
+      "2.4c",
+      "2.4d",
+      "2.5",
+      "2.6",
+      "2.7",
+      "2.8",
+      "2.9a",
+      "2.9b",
+      "2.10",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5a",
+      "3.5b",
+      "3.5c",
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4a",
+      "4.4b",
+      "4.4c",
+      "4.4d",
+      "4.4e",
+      "4.4f",
+      "4.4g",
+      "4.5",
+      "4.6",
+      "4.7",
+      "5.1",
+      "5.2",
+      "5.3",
+      "5.4"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "precision": "Contrôle des 43 subdivisions des cinq parties du sujet et du rapport. Vérification du critère de Kalman dans la base construite, des jets de raccordement aux deux extrémités, du signe et des modules dans l’extraction du coefficient de Cauchy, des constantes Gevrey et de la commande frontière de la chaleur.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "relecture_corrige",
+      "perimetre": "Contrôle des 43 subdivisions des cinq parties du sujet et du rapport. Vérification du critère de Kalman dans la base construite, des jets de raccordement aux deux extrémités, du signe et des modules dans l’extraction du coefficient de Cauchy, des constantes Gevrey et de la commande frontière de la chaleur.",
+      "sha256_sujet_controle": "26b4a522af3c8ff04c90c7fcf2fcb7271a86a621cddd9216d2994ad7075f2c32",
+      "sha256_rapport_controle": "0c499ec1ef9825cfcd6a39b4533bb63f15a0c6ff2d2d97a51a8d10b63247c9ef"
+    }
+  }
 }

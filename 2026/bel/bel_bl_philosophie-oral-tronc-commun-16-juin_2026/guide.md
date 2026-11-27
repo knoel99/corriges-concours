@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La feuille du 16 juin réunit 11 tickets de deux sujets. Le candidat dispose de 1 h 30 de préparation et indique au jury son choix au moment du passage. Il présente un seul sujet pendant 20 minutes, puis répond aux questions durant 10 minutes. Les deux possibilités de chaque ticket sont traitées ici. Chaque relance met à l’épreuve une distinction précise. Pour développer oralement les propositions, reprendre l’exemple, en faire varier une condition, puis expliquer comment cette variation modifie la réponse.
 
 ## Ticket 1
@@ -217,6 +219,8 @@ Il faut d’abord établir que les options sont réellement incompatibles. Si un
 Le moindre mal ne délivre donc pas une permission générale. Deux décisions également favorables en moyenne peuvent différer profondément si l’une fait toujours payer les mêmes personnes. Même la solution la mieux justifiée laisse subsister des devoirs de réparation et de réexamen. Le choix du moindre mal est plus exigeant que la simple maximisation lorsqu’il garde ouverte la question de savoir comment les institutions pourraient rendre demain une meilleure option possible.
 
 ![Trois questions à poser avant de choisir le moindre mal](figures/moindre-mal.svg)
+
+Au moment de comparer les risques, faire entendre la voix des habitants isolés. Une faible perte moyenne peut recouvrir une privation décisive pour quelques personnes.
 
 > [!INDICATION]
 > Le regret est-il incohérent si l’on referait le même choix ?

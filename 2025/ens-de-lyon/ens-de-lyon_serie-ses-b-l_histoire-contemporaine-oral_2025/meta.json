@@ -1,0 +1,449 @@
+{
+  "slug": "ens-de-lyon_serie-ses-b-l_histoire-contemporaine-oral_2025",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Série SES (B/L)",
+    "matiere": "Histoire contemporaine (oral)",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "Histoire contemporaine",
+  "questions": 36,
+  "sujets": 36,
+  "billets": 18,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2025-10/Fascicule%20SES%202025%20OK.pdf#page=17",
+    "sujet_sha256": "c8ddaa0530f71dbb4dfb4bb32f8373963776602248462be1d250ba5c27b674c5",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2025-11/Fascicule%20SES%202025%20relu%20EB%2B%20SLG.pdf#page=11",
+    "rapport_sha256": "376daf04dd646b0b3fa852e3fb741b66e422a77d5cbe836a9541ca8da0d35c4d",
+    "precision_sujet": "Le fascicule donne seize billets aux pages 17 et 18. Quinze se retrouvent au tableau des pages 12 et 13 du rapport. Le quatorzième billet du fascicule figure dans cette pièce seule. Les deux billets ajoutés en fin de corrigé viennent du rapport seul. Son en-tête annonce dix-sept candidats, son commentaire fait état de seize prestations, avec onze sujets français et cinq internationaux. La liste réunie compte dix-huit billets et trente-six intitulés distincts.",
+    "repere_programme": "https://saint-sernin.mon-ent-occitanie.fr/classes-preparatoires-bl-lss/disciplines/histoire/l-histoire-en-cpge-b-l-17468.htm",
+    "programme": "https://www.enseignementsup-recherche.gouv.fr/fr/bo/22/Hebdo27/ESRS2218309A.htm",
+    "musee_immigration_1917": "https://www.histoire-immigration.fr/exposition-permanente/1917",
+    "hcr_titres_de_voyage": "https://www.unhcr.org/fr-fr/editions/pieces-didentite-pour-les-refugies"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/droits-sociaux.svg",
+      "legende": "Trois logiques de protection en France",
+      "question": "L’État providence en France"
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/berlin.svg",
+      "legende": "Berlin, trois moments de la frontière",
+      "question": "Le mur de Berlin"
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/emplois-industriels.svg",
+      "legende": "Pourquoi l’emploi industriel peut-il reculer ?",
+      "question": "La désindustrialisation en France"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "x_maths_b_anciennes",
+      "perimetre": "Rédaction historique des deux propositions de chaque billet.",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    },
+    {
+      "phase": "revision",
+      "session": "x_maths_b_anciennes",
+      "perimetre": "Confrontation des exposés aux pièces, contrôle des repères, relecture des réponses, rédaction des activités du guidé et des trois figures.",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Les échanges culturels dans le monde depuis 1945",
+      "Les droites en France",
+      "L’Europe et les États-Unis depuis 1945",
+      "L’antisémitisme en France",
+      "La guerre d’Espagne",
+      "L’État providence en France",
+      "Les conséquences économiques de la Seconde Guerre mondiale",
+      "Les étrangers en France",
+      "Les intellectuels en Europe (de 1918 aux années 1990)",
+      "La politique extérieure de la France",
+      "Les origines de la Guerre froide",
+      "Paris",
+      "Le mur de Berlin",
+      "La France coloniale (1870-1962)",
+      "Ordre mondial et organisations internationales (1919-1991)",
+      "La France de la Belle Époque",
+      "Sociétés et régimes autoritaires en Europe (1919-1945)",
+      "Propagande et communication politique en France",
+      "Le communisme international",
+      "Religions et politique en France",
+      "Les contre-cultures aux États-Unis",
+      "La guerre d’Algérie",
+      "L’anticolonialisme dans le monde",
+      "L’éducation en France (1881-1989)",
+      "Les « années folles » dans le monde",
+      "Monde rural et transformations de la société française au XXe siècle",
+      "La crise de 1929",
+      "Les sports en France au XXe siècle",
+      "Réfugiés, déplacés, exilés dans le monde de la fin de la Première Guerre mondiale au début des années 1990",
+      "Socialismes et socialistes en France",
+      "Le pétrole dans le monde depuis 1945",
+      "Les femmes et le travail en France",
+      "1968 dans le monde",
+      "La désindustrialisation en France",
+      "Europe et Afrique depuis 1945",
+      "Ancrer la République (1870-1914)"
+    ],
+    "detail": "Le fascicule donne seize billets aux pages 17 et 18. Quinze se retrouvent au tableau des pages 12 et 13 du rapport. Le quatorzième billet du fascicule figure dans cette pièce seule. Les deux billets ajoutés en fin de corrigé viennent du rapport seul. Son en-tête annonce dix-sept candidats, son commentaire fait état de seize prestations, avec onze sujets français et cinq internationaux. La liste réunie compte dix-huit billets et trente-six intitulés distincts."
+  },
+  "journal_billets": [
+    {
+      "titre": "Les échanges culturels dans le monde depuis 1945",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 17,
+      "billet": 1,
+      "option": "A",
+      "page_rapport": 13
+    },
+    {
+      "titre": "Les droites en France",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 17,
+      "billet": 1,
+      "option": "B",
+      "page_rapport": 13
+    },
+    {
+      "titre": "L’Europe et les États-Unis depuis 1945",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 17,
+      "billet": 2,
+      "option": "A",
+      "page_rapport": 12
+    },
+    {
+      "titre": "L’antisémitisme en France",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 17,
+      "billet": 2,
+      "option": "B",
+      "page_rapport": 12
+    },
+    {
+      "titre": "La guerre d’Espagne",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 17,
+      "billet": 3,
+      "option": "A",
+      "page_rapport": 12
+    },
+    {
+      "titre": "L’État providence en France",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 17,
+      "billet": 3,
+      "option": "B",
+      "page_rapport": 12,
+      "variante_rapport": "L’État-providence en France"
+    },
+    {
+      "titre": "Les conséquences économiques de la Seconde Guerre mondiale",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 17,
+      "billet": 4,
+      "option": "A",
+      "page_rapport": 12
+    },
+    {
+      "titre": "Les étrangers en France",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 17,
+      "billet": 4,
+      "option": "B",
+      "page_rapport": 12
+    },
+    {
+      "titre": "Les intellectuels en Europe (de 1918 aux années 1990)",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 17,
+      "billet": 5,
+      "option": "A",
+      "page_rapport": 12
+    },
+    {
+      "titre": "La politique extérieure de la France",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 17,
+      "billet": 5,
+      "option": "B",
+      "page_rapport": 12
+    },
+    {
+      "titre": "Les origines de la Guerre froide",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 17,
+      "billet": 6,
+      "option": "A",
+      "page_rapport": 13
+    },
+    {
+      "titre": "Paris",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 17,
+      "billet": 6,
+      "option": "B",
+      "page_rapport": 13
+    },
+    {
+      "titre": "Le mur de Berlin",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 17,
+      "billet": 7,
+      "option": "A",
+      "page_rapport": 12
+    },
+    {
+      "titre": "La France coloniale (1870-1962)",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 17,
+      "billet": 7,
+      "option": "B",
+      "page_rapport": 12
+    },
+    {
+      "titre": "Ordre mondial et organisations internationales (1919-1991)",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 17,
+      "billet": 8,
+      "option": "A",
+      "page_rapport": 13
+    },
+    {
+      "titre": "La France de la Belle Époque",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 17,
+      "billet": 8,
+      "option": "B",
+      "page_rapport": 13
+    },
+    {
+      "titre": "Sociétés et régimes autoritaires en Europe (1919-1945)",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 17,
+      "billet": 9,
+      "option": "A",
+      "page_rapport": 12
+    },
+    {
+      "titre": "Propagande et communication politique en France",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 17,
+      "billet": 9,
+      "option": "B",
+      "page_rapport": 12
+    },
+    {
+      "titre": "Le communisme international",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 17,
+      "billet": 10,
+      "option": "A",
+      "page_rapport": 13
+    },
+    {
+      "titre": "Religions et politique en France",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 17,
+      "billet": 10,
+      "option": "B",
+      "page_rapport": 13
+    },
+    {
+      "titre": "Les contre-cultures aux États-Unis",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 17,
+      "billet": 11,
+      "option": "A",
+      "page_rapport": 13
+    },
+    {
+      "titre": "La guerre d’Algérie",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 17,
+      "billet": 11,
+      "option": "B",
+      "page_rapport": 13
+    },
+    {
+      "titre": "L’anticolonialisme dans le monde",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 17,
+      "billet": 12,
+      "option": "A",
+      "page_rapport": 13
+    },
+    {
+      "titre": "L’éducation en France (1881-1989)",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 17,
+      "billet": 12,
+      "option": "B",
+      "page_rapport": 13
+    },
+    {
+      "titre": "Les « années folles » dans le monde",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 17,
+      "billet": 13,
+      "option": "A",
+      "page_rapport": 13
+    },
+    {
+      "titre": "Monde rural et transformations de la société française au XXe siècle",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 17,
+      "billet": 13,
+      "option": "B",
+      "page_rapport": 13
+    },
+    {
+      "titre": "La crise de 1929",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 17,
+      "billet": 14,
+      "option": "A",
+      "page_rapport": null
+    },
+    {
+      "titre": "Les sports en France au XXe siècle",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 17,
+      "billet": 14,
+      "option": "B",
+      "page_rapport": null
+    },
+    {
+      "titre": "Réfugiés, déplacés, exilés dans le monde de la fin de la Première Guerre mondiale au début des années 1990",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 17,
+      "billet": 15,
+      "option": "A",
+      "page_rapport": 13
+    },
+    {
+      "titre": "Socialismes et socialistes en France",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 17,
+      "billet": 15,
+      "option": "B",
+      "page_rapport": 13
+    },
+    {
+      "titre": "Le pétrole dans le monde depuis 1945",
+      "italique": false,
+      "piece": "fascicule",
+      "page": 18,
+      "billet": 16,
+      "option": "A",
+      "page_rapport": 13
+    },
+    {
+      "titre": "Les femmes et le travail en France",
+      "italique": true,
+      "piece": "fascicule",
+      "page": 18,
+      "billet": 16,
+      "option": "B",
+      "page_rapport": 13
+    },
+    {
+      "titre": "1968 dans le monde",
+      "italique": null,
+      "piece": "rapport",
+      "page": 13,
+      "billet": 17,
+      "option": "A",
+      "page_rapport": 13
+    },
+    {
+      "titre": "La désindustrialisation en France",
+      "italique": null,
+      "piece": "rapport",
+      "page": 13,
+      "billet": 17,
+      "option": "B",
+      "page_rapport": 13
+    },
+    {
+      "titre": "Europe et Afrique depuis 1945",
+      "italique": null,
+      "piece": "rapport",
+      "page": 13,
+      "billet": 18,
+      "option": "A",
+      "page_rapport": 13
+    },
+    {
+      "titre": "Ancrer la République (1870-1914)",
+      "italique": null,
+      "piece": "rapport",
+      "page": 13,
+      "billet": 18,
+      "option": "B",
+      "page_rapport": 13
+    }
+  ]
+}

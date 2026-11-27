@@ -8,6 +8,10 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Les trois problèmes sont indépendants. Le tableau de la page 2 du rapport attribue un coefficient à chacune des 55 rubriques. Leur somme vaut 60. Le texte de cette même page annonce un maximum brut de 64 et un bonus ou malus de deux points. Le rapport ne détaille pas le rapprochement de ces chiffres. [Sujet de la session](https://www.ens.psl.eu/sites/default/files/bl_22_mathematiques.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2022_bl_rapport_ecrit_mathematiques.pdf).
+
 ## Présentation du sujet
 
 L'écrit commun à Ulm, Lyon, Paris-Saclay, l'ENSAE et l'ENSAI dure quatre heures, sans calculatrice. Il comporte trois problèmes indépendants, numérotés de 1 à 22, et 55 réponses en comptant les subdivisions.
@@ -110,6 +114,8 @@ $$
 $$
 
 **(4e)** Depuis $100+j$, pour $0\le j\le4$, un pile arrête à $111+j$. Une face donne $90+j$, puis une seconde face arrête à $80+j$. L'unique prolongement pouvant atteindre exactement $105$ est donc $FP$, qui mène à $101+j$. Pour $j=0,1,2,3$, ce dernier capital est intérieur. Pour $j=4$, il vaut $105$. L'événement cherché est exactement la suite de cinq paires $FP$, de probabilité $\boxed{(1/4)^5=1/1024}$.
+
+La même analyse borne le temps d’arrêt. Chaque paire qui laisse continuer le jeu augmente le capital d’une unité. Après quatre paires $FP$, le capital vaut $104$. La paire suivante provoque nécessairement la sortie, au plus tard au dixième lancer. Cette borne justifie que la variable $S_T$ est définie sur toutes les suites de lancers.
 
 ![Figure 1 — Branches jusqu'au troisième lancer. Chaque branche a une probabilité de moitié. Les cases pleines correspondent aux arrêts.](figures/q04-arbre-arret.svg)
 
@@ -273,6 +279,8 @@ Le théorème des valeurs intermédiaires fournit un zéro sur $]0,b[$. La stric
 
 **(12e)** Les signes stricts aux bornes obtenus en (12d) donnent même $\boxed{0<x_0<b}$, donc bien $x_0\in[0,b]$.
 
+L’unique zéro est aussi l’unique point de minimum du temps de trajet. En effet, $T'(x)<0$ pour $x<x_0$ et $T'(x)>0$ pour $x>x_0$. En posant $\varphi(t)=t/\sqrt{1+t^2}$, la condition du minimum s’écrit $\varphi(x_0)/V=\varphi(b-x_0)$. Ces deux termes sont les sinus des angles avec la normale à l’interface, divisés chacun par la vitesse sur le segment correspondant.
+
 > [!JURY]
 > Le rapport 2022 rappelle en (12a) que les radicandes doivent rester strictement positifs pour cet argument de dérivabilité. En (12d), l'existence du zéro requiert un théorème assorti de ses hypothèses.
 
@@ -329,6 +337,8 @@ Par (13c), $s\to0$ quand $V\to0^+$. Le quotient à droite a pour limite $b/\sqrt
 
 **(14b)** Par définition de la dérivabilité à droite,
 $$\boxed{x_0(V)=\frac b{\sqrt{1+b^2}}\,V+o(V)\quad(V\to0^+).}$$
+
+La symétrie de (13d) donne aussi $b-x_0(V)=x_0(1/V)$. En injectant $1/V$ dans le développement précédent, on retrouve l’approche de l’autre bord sous la forme $b-x_0(V)=b/(V\sqrt{1+b^2})+o(1/V)$ lorsque $V\to+\infty$.
 
 ![Figure 4 — Pour $b=2$, la position optimale part de zéro avec une pente $2/\sqrt{5}$ et tend vers $2$. À vitesses égales, le point optimal est le milieu.](figures/q14-position-optimale.svg)
 
@@ -446,6 +456,8 @@ $$
 **(19c)** Si $aAe_1+cAe_2=0$, les deux premières coordonnées donnent $-cx_3=0$ et $ax_3=0$. Comme $x_3\ne0$, on a $a=c=0$. Ces images sont indépendantes, donc $\operatorname{rg}A\ge2$. Par le théorème du rang, $\boxed{\dim\ker A=3-\operatorname{rg}A\le1}$.
 
 **(19d)** Le calcul de (19a) avec $y=x$ donne $Ax=0$. Puisque $x_3\ne0$, le vecteur $x$ est non nul et (19c) entraîne $\ker A=\operatorname{Vect}(x)$. Par hypothèse $y$ n'appartient pas à cette droite. Donc $\boxed{z=Ay\ne0}$.
+
+Un contrôle indépendant résulte de l’identité $\|z\|^2=\|x\|^2\|y\|^2-\langle x,y\rangle^2$, obtenue en développant les trois carrés de (19a). La non-colinéarité rend stricte l’inégalité de Cauchy–Schwarz. On retrouve bien $\|z\|^2>0$.
 
 > [!METHODE]
 > Une borne sur la dimension du noyau et un vecteur explicite peuvent déterminer tout le noyau, sans résoudre un nouveau système.

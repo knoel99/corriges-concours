@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Repères pour résoudre le sujet
 
 Les Q1 à Q31 suivent l’énergie dans un lit de roches, depuis les pertes par les parois jusqu’au rendement d’un cycle de charge-décharge. Les Q32 à Q53 portent sur la conversion de chaleur en électricité par un moteur Stirling et une génératrice linéaire. Les indices chauds et froids du moteur désignent des chambres, tandis que les indices du lit distinguent le solide et le fluide. Les rapports de température thermodynamiques exigent des kelvins.
@@ -32,7 +34,7 @@ $\phi=(T-T_{\rm amb})/R_{\rm th}$. Pour $750\ ^\circ\mathrm C$ à l’intérieur
 
 #### Solution
 
-Pour le garnissage massif de cette sous-partie, $V=8{,}67\ \mathrm{m^3}$ et $C=\rho_s c_sV=31{,}21\ \mathrm{MJ\,K^{-1}}$. Le premier principe donne $C\dot T=-\phi$, soit $T=T_{\rm amb}+(T_1-T_{\rm amb})e^{-t/\tau}$ avec $\tau=R_{\rm th}C=3{,}97\,10^6\ \mathrm s=46{,}0$ jours. La moitié de l’écart initial correspond à $385\ ^\circ\mathrm C$ après $\tau\ln 2=31{,}9$ jours. Si « 50 % de la température initiale » désigne $375\ ^\circ\mathrm C$ sur l’échelle de l’énoncé, on trouve $t=\tau\ln(730/355)=33{,}2$ jours.
+Pour le garnissage massif de cette sous-partie, $V=8{,}67\ \mathrm{m^3}$ et $C=\rho_s c_sV=31{,}21\ \mathrm{MJ\,K^{-1}}$. Le premier principe donne $C\dot T=-\phi$, soit $T=T_{\rm amb}+(T_1-T_{\rm amb})e^{-t/\tau}$ avec $\tau=R_{\rm th}C=3{,}97\,10^6\ \mathrm s=46{,}0$ jours. La moitié de l’écart initial correspond à $385\ ^\circ\mathrm C$ après $\tau\ln 2=31{,}9$ jours. Si « 50 % de la température initiale » désigne $375\ ^\circ\mathrm C$ sur l’échelle de l’énoncé, on trouve $t=\tau\ln(730/355)=33{,}2$ jours. Si le pourcentage portait sur la température thermodynamique absolue, $T_1/2=511{,}575$ K donnerait environ $55{,}5$ jours. Pour l’énergie utile, la référence pertinente reste l’ambiante et le temps de demi-charge est de $31{,}9$ jours.
 
 ### Question 4 · Durée utile
 
@@ -138,7 +140,9 @@ sorties = profils(3, 1001, 36000, 60, 150, 525,
 for temps, solide, air in sorties:
     print(temps, air[-1])
 ```
-Un maillage plus grossier ou un traitement implicite de la diffusion réduit le coût après vérification de la précision.
+Au maillage de l’énoncé, chaque sortie espacée de 60 s exige 109 020 sous-pas, soit 65 412 000 pour dix heures. Avec les conditions aux bords de Q7, le schéma donne alors, à $x=0$, $1{,}5$ et $3$ m, des températures de roche de $355{,}4$, $294{,}6$ et $251{,}8\ ^\circ\mathrm C$. L’air entre à $525\ ^\circ\mathrm C$ et sort à $370{,}9\ ^\circ\mathrm C$. Les deux températures locales restent distinctes dans ce modèle à deux phases. Un maillage plus grossier ou un traitement implicite de la diffusion réduit le coût après vérification de la précision.
+
+![Températures du solide et de l’air obtenues sur dix heures avec les coefficients du sujet et les conditions aux limites de Q7.](figures/q09-simulation-dix-heures.svg)
 
 ### Question 10 · Mémoire et convergence
 
@@ -172,7 +176,7 @@ $\dot m=\rho_fD=0{,}60\ \mathrm{kg\,s^{-1}}$. La puissance portée par l’air a
 
 #### Solution
 
-En charge, le lit initialement froid se réchauffe d’abord en $x=0$. Derrière le front, la température se rapproche de $T_1$. Le front progresse vers $L$ et s’élargit sous l’effet des échanges et de la diffusion. En décharge, l’admission froide est à droite. La zone froide s’étend vers la gauche et la température de l’air restitué en $x=0$ chute lorsque le front y arrive. L’état initial représenté peut conserver le gradient laissé par la phase précédente.
+En charge, le lit initialement froid se réchauffe d’abord en $x=0$. Derrière le front, la température se rapproche de $T_1$. Le front progresse vers $L$ et s’élargit sous l’effet des échanges et de la diffusion. En décharge, l’admission froide est à droite. La zone froide s’étend vers la gauche et la température de l’air restitué en $x=0$ chute lorsque le front y arrive. La figure 4 permet de suivre un même niveau de température. En charge, l’isotherme de $450\ ^\circ\mathrm C$ passe d’environ $0{,}3$ m à 1 h à environ $1{,}4$ m à 4 h. En décharge, elle se déplace dans l’autre sens. Le profil de départ conserve le gradient laissé par la charge. Cette figure emploie une température chaude voisine de $750\ ^\circ\mathrm C$, alors que le code de Q9 fixe explicitement son admission à $525\ ^\circ\mathrm C$.
 
 ### Question 14 · Air sortant en charge
 
@@ -309,7 +313,7 @@ Le premier mode domine à temps long. Sa réduction à 1 % de sa propre amplitud
 
 #### Solution
 
-Au début, la sortie est froide et presque toute la puissance thermique entrante augmente l’énergie des roches. La courbe d’énergie monte rapidement. Lorsque le front atteint la sortie, $T_{\rm sortie}$ croît. À débit constant, la puissance nette $\dot m c_f(T_{\rm entrée}-T_{\rm sortie})$ diminue. La pente de l’énergie décroît et la charge s’approche d’un plafond.
+Au début, la sortie est froide et presque toute la puissance thermique entrante augmente l’énergie des roches. La courbe d’énergie monte rapidement. Lorsque le front atteint la sortie, $T_{\rm sortie}$ croît. À débit constant, la puissance nette $\dot m c_f(T_{\rm entrée}-T_{\rm sortie})$ diminue. La pente de l’énergie décroît et la charge s’approche d’un plafond. Sur la figure 5a, l’axe gauche place l’énergie vers 40 % après 3 h et près de 80 % après 6 h. Sur l’axe droit, la sortie reste proche de $220\ ^\circ\mathrm C$ pendant les premières heures et dépasse $300\ ^\circ\mathrm C$ en fin d’essai.
 
 ### Question 29 · Pertes et énergie
 
@@ -503,7 +507,7 @@ Pour $|x|<a/2$, $\phi'=-2\widehat\phi/a$ et pour $a/2<|x|<a$, $\phi'=+2\widehat\
 
 #### Solution
 
-Les connexions font s’ajouter les flux, donc $\Phi_1=KN\phi$. Avec l’origine et la référence de tension choisies pour une fém en cosinus, $\widehat e=k_ev$, $k_e=8KN\widehat\phi/(\pi a)$, $\omega=\pi v/a$ et $e_1=\widehat e\cos(\omega t)$. La loi de Faraday est $e=-d\Phi/dt$ pour les orientations associées ; une inversion des deux bornes modifie le signe annoncé. Pour un décalage spatial $\Delta x$, écrire $e_j=\widehat e\cos(\omega t-\pi\Delta x/a)$, en tenant aussi compte du sens de bobinage. Les déports $a/3,2a/3$ donnent les angles géométriques $\pi/3,2\pi/3$. En notation triphasée équilibrée usuelle, un choix cohérent des polarités et de l’ordre donne les phases $0,2\pi/3,4\pi/3$.
+Les connexions font s’ajouter les flux, donc $\Phi_1=KN\phi$. Avec l’origine et la référence de tension choisies pour une fém en cosinus, $\widehat e=k_ev$, $k_e=8KN\widehat\phi/(\pi a)$, $\omega=\pi v/a$ et $e_1=\widehat e\cos(\omega t)$. La loi de Faraday est $e=-d\Phi/dt$ pour les orientations associées ; une inversion des deux bornes modifie le signe annoncé. Pour un décalage spatial $\Delta x$, écrire $e_j=\widehat e\cos(\omega t-\pi\Delta x/a)$, en tenant aussi compte du sens de bobinage. Pour des bobinages de même polarité, les déports $a/3,2a/3$ donnent explicitement $e_2=\widehat e\cos(\omega t-\pi/3)$ et $e_3=\widehat e\cos(\omega t-2\pi/3)$. En notation triphasée équilibrée usuelle, un choix cohérent des polarités et de l’ordre donne les phases $0,2\pi/3,4\pi/3$.
 
 ### Question 49 · Effort d’une phase
 

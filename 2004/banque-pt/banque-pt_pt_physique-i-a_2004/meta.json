@@ -1,0 +1,241 @@
+{
+  "slug": "banque-pt_pt_physique-i-a_2004",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique I-A",
+    "annee": 2004
+  },
+  "redaction": "Corrigés non officiels rédigés et vérifiés par IA.",
+  "questions": 31,
+  "sources": {
+    "sujet": "https://www.banquept.fr/IMG/pdf/phys_1_a_2004.pdf",
+    "rapport_jury": "https://www.banquept.fr/IMG/pdf/rapport_sc_physiques_1A_2004.pdf",
+    "index_sujets": "https://www.banquept.fr/article62.html",
+    "livret": "https://www.banquept.fr/documents/livret/2004/Livret_PT_2004.pdf#page=13",
+    "index_rapports": "https://www.banquept.fr/article55.html",
+    "sha256_sujet": "998a39fc41f67242590c62d02c47caebd96d2a72b4f33ed5dbcf9cc3c4ec137f",
+    "pages_sujet": 10,
+    "sha256_rapport_jury": "2c41ab9814066fddaef91601b6fdca4b22be9b33117dc6cc894e0ddac5f230f7",
+    "pages_rapport_jury": 2,
+    "sha256_livret": "c8a0ee21667397eb6314cd96223199431e7435b4e73cc997c474bbe22a788548",
+    "pages_livret": 82,
+    "coefficients_admissibilite": {
+      "École polytechnique": 6,
+      "ENS Cachan": 5
+    }
+  },
+  "figures": [
+    {
+      "question": "A.I.1",
+      "fichier": "figures/reperes.svg",
+      "legende": "Repères en translation. G partage le segment des deux masses en raison inverse de leurs masses."
+    },
+    {
+      "question": "A.IV.8",
+      "fichier": "figures/potentiels.svg",
+      "legende": "Potentiels effectifs réduits ; le zéro à la moitié du rayon circulaire appartient au cas gravitationnel."
+    },
+    {
+      "question": "B.I.2",
+      "fichier": "figures/trajets.svg",
+      "legende": "Deux rayons émergents parallèles. Le second effectue un aller-retour supplémentaire dans la lame."
+    },
+    {
+      "question": "B.II.2",
+      "fichier": "figures/profils-airy.svg",
+      "legende": "Fonctions d’Airy sur une échelle de phase commune. La ligne pointillée repère la demi-hauteur."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A.I.1",
+      "A.I.2",
+      "A.I.3",
+      "A.I.4",
+      "A.II.1",
+      "A.II.2",
+      "A.III.1",
+      "A.III.2",
+      "A.III.3",
+      "A.III.4",
+      "A.III.5",
+      "A.III.6",
+      "A.III.7",
+      "A.IV.1",
+      "A.IV.2",
+      "A.IV.3",
+      "A.IV.4",
+      "A.IV.5",
+      "A.IV.6",
+      "A.IV.7",
+      "A.IV.8",
+      "A.V.1",
+      "A.V.2",
+      "A.V.3",
+      "B.I.1",
+      "B.I.2",
+      "B.II.1",
+      "B.II.2",
+      "B.II.3",
+      "B.II.4",
+      "B.II.5"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": "A.I.1",
+        "page_sujet": 2
+      },
+      {
+        "question": "A.I.2",
+        "page_sujet": 2
+      },
+      {
+        "question": "A.I.3",
+        "page_sujet": 2
+      },
+      {
+        "question": "A.I.4",
+        "page_sujet": 2
+      },
+      {
+        "question": "A.II.1",
+        "page_sujet": 2
+      },
+      {
+        "question": "A.II.2",
+        "page_sujet": 2
+      },
+      {
+        "question": "A.III.1",
+        "page_sujet": 3
+      },
+      {
+        "question": "A.III.2",
+        "page_sujet": 3
+      },
+      {
+        "question": "A.III.3",
+        "page_sujet": 3
+      },
+      {
+        "question": "A.III.4",
+        "page_sujet": 3
+      },
+      {
+        "question": "A.III.5",
+        "page_sujet": 3
+      },
+      {
+        "question": "A.III.6",
+        "page_sujet": 3
+      },
+      {
+        "question": "A.III.7",
+        "page_sujet": 3
+      },
+      {
+        "question": "A.IV.1",
+        "page_sujet": 4
+      },
+      {
+        "question": "A.IV.2",
+        "page_sujet": 4
+      },
+      {
+        "question": "A.IV.3",
+        "page_sujet": 4
+      },
+      {
+        "question": "A.IV.4",
+        "page_sujet": 4
+      },
+      {
+        "question": "A.IV.5",
+        "page_sujet": 4
+      },
+      {
+        "question": "A.IV.6",
+        "page_sujet": 4
+      },
+      {
+        "question": "A.IV.7",
+        "page_sujet": 5
+      },
+      {
+        "question": "A.IV.8",
+        "page_sujet": 5
+      },
+      {
+        "question": "A.V.1",
+        "page_sujet": 5
+      },
+      {
+        "question": "A.V.2",
+        "page_sujet": 5
+      },
+      {
+        "question": "A.V.3",
+        "page_sujet": 5
+      },
+      {
+        "question": "B.I.1",
+        "page_sujet": 8
+      },
+      {
+        "question": "B.I.2",
+        "page_sujet": 8
+      },
+      {
+        "question": "B.II.1",
+        "page_sujet": 8
+      },
+      {
+        "question": "B.II.2",
+        "page_sujet": 9
+      },
+      {
+        "question": "B.II.3",
+        "page_sujet": 9
+      },
+      {
+        "question": "B.II.4",
+        "page_sujet": 10
+      },
+      {
+        "question": "B.II.5",
+        "page_sujet": 10
+      }
+    ],
+    "precision": "Garde et dix pages de l’épreuve contrôlées. Parties A.I–V et B.I–II, chaque lettre et les deux applications de B.II.4.b. Aucune annexe séparée indiquée. Les trois figures du sujet sont prises en compte."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modifications": true,
+      "perimetre": "Comment déceler deux étoiles lorsque le télescope ne sépare pas leurs images ? Le mouvement relatif fixe le décalage Doppler et la finesse du Fabry–Perot fixe l’écart mesurable."
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modifications": true,
+      "perimetre": "Vérification contre les pages 2–10 du fac-similé et le rapport. Recalcul des contrastes à deux ondes, de la largeur exacte à mi-hauteur, du seuil et de la masse. Correction du repère de page de B.I.1, explicitation des forces internes et ajout d’un tracé de la lame pour la différence de marche."
+    }
+  ]
+}

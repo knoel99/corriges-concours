@@ -24,8 +24,13 @@
     "rapport_sha256": "c02c1b93226b2c1f0533e82b14e93e2c135c82bb32dadae4b1ba363dd7696d85",
     "references": [
       "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-10-24/465144",
-      "https://conseil-etat.fr/fr/arianeweb/CE/analyse/2024-10-24/465144"
-    ]
+      "https://conseil-etat.fr/fr/arianeweb/CE/analyse/2024-10-24/465144",
+      "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006449406/2025-04-16"
+    ],
+    "notice_interens": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/12/Notice-interENS-2025_Version_finale_pour_mise_en_ligne.pdf",
+    "notice_sha256": "07fb6e5fbc3cce1da09f0b36a15f90349b018b309cf2593e90cd616105336122",
+    "sujet_exemplaire_lu_sha256": "e972069d46659d9a714c67c587b51550bda94282974fd7b4b3a3268477ad6453",
+    "rapport_exemplaire_lu_sha256": "95ce135d79147336504f43c516047547949878bd22ec4e0e702f2b5954920074"
   },
   "figures": [
     {
@@ -34,7 +39,7 @@
       "legende": "Pourquoi casser l’arrêt puis rejeter la demande ?"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "lecture_rapport_jury",
@@ -71,6 +76,43 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Confrontation des deux éditions aux pages du sujet, au rapport du jury et aux références primaires. Empreintes des aperçus vérifiées séparément des empreintes des originaux institutionnels."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "fui_physique_un",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Consigne unique et quatre axes : Refus de protection diplomatique et fondements du recours, Cassation pour erreur de droit sur la compétence, Charge spéciale, gravité, causalité et restrictions, Perte de chance, situation de la MCR et rejet au fond. Confrontation au sujet, aux sources de droit et au rapport institutionnel de l’écrit. Titres nominaux et chapeaux des deux parties conformes aux observations méthodologiques du jury. Resserrement du dispositif et réunion des références dans l’édition guidée."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "precision": "La garde donne une composition unique de quatre heures. Les deux éditions traitent la totalité de cette consigne. Les axes de lecture décrivent la rédaction pédagogique.",
+    "questions_entierement_traitees": [
+      "Composition"
+    ],
+    "intitule_officiel": "Commentez la décision suivante — CE, ass., 24 oct. 2024, n° 465144",
+    "pages_pdf_sujet": [
+      7,
+      8,
+      9
+    ],
+    "date_epreuve": "2025-04-16",
+    "items_verifies": [
+      "Refus de protection diplomatique et fondements du recours",
+      "Cassation pour erreur de droit sur la compétence",
+      "Charge spéciale, gravité, causalité et restrictions",
+      "Perte de chance, situation de la MCR et rejet au fond"
+    ]
+  }
 }

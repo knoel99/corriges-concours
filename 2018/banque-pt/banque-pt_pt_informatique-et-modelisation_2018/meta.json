@@ -1,0 +1,553 @@
+{
+  "slug": "banque-pt_pt_informatique-et-modelisation_2018",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Informatique et modélisation",
+    "annee": 2018
+  },
+  "questions": 30,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2018/info_mod_2018_pt.pdf",
+    "sujet_sha256": "ea85df33aa3b89298b561981172c7580b1db9de455976582261a96256ac895c9",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2018/rapport_info_model_ecrit_2018.pdf",
+    "rapport_sha256": "71058a384cff888d9f2a5348671340496faee588cd69be6c780bfd74991413cd",
+    "annexe": "Documentation matplotlib.pyplot, pages physiques 15 et 16 du PDF (14 et 15 imprimées). Pages PDF 17 à 19 blanches et page 20 marque d’impression."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2018/info_mod_2018_pt.pdf",
+      "sha256": "ea85df33aa3b89298b561981172c7580b1db9de455976582261a96256ac895c9",
+      "nombre_pages": 20,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "599f443f8e5465028cd715e189d03b977cfdb0245f29b12dfd804362379cecf0"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "df02391739bccc7a793073aef33b17f49fb7860ef56fc7a3073e8470cf06fb97"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "e2a279196b39833e1b3dfa57a3930f319d932bf9f8a8a4861d5bc837a1169f00"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "bd58958569acedc6992ef46c8b943fcd4f25209c2ab3ec67facc1bed24f4ebe6"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "8a0147458af0fdc95daedc790058b5e1ee6b45c4a34ebcadc98a863b1c891a17"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "e3dec59028ee81414ef076f942e1efab9fde414ee4f3dad068b90e427b214b2b"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "573df604da778ff2304a60f8a0787555381f419fab920154446f7f60d58b0fbe"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "8d9180e5e7a3996e7806b56a1c5c3bef961224385c3a555910aec19fc27f61dd"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "839d22db9b2eca46bad870580aa4a6b9f77a4cc9e6919dec69048fc39938fafb"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "d7564e614d381e1518238cb38d2bfc8236be7ca2db2274a1fb0a29ee4156602f"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "1b02bb245715e1fde51b0795d3d010b9d7028321299810bede07efab8602edf0"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "b07bbdc39bc27cd590dcc886c389266c6a7cc94484f77198f038f880b2dc78fd"
+        },
+        {
+          "numero": 13,
+          "rendu_sha256": "e9158a7c57f681bec41bb81b56105103d5984f3f78fe723337e2ac5763f7998c"
+        },
+        {
+          "numero": 14,
+          "rendu_sha256": "28d842accf4f6f76d006740dfb875454dd23605544a6f60030de1a40a4ae049e"
+        },
+        {
+          "numero": 15,
+          "rendu_sha256": "6c12e545d0100c94c50fc31bef0600ad8e577fc492dfb0a06866b1b51fdde7e3"
+        },
+        {
+          "numero": 16,
+          "rendu_sha256": "77e2db81f5f985907c0eb7d006cfaca3ea2b0dc771f7ac8a1bd9818e5615534a"
+        },
+        {
+          "numero": 17,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        },
+        {
+          "numero": 18,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        },
+        {
+          "numero": 19,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        },
+        {
+          "numero": 20,
+          "rendu_sha256": "713b8f25609fd7af7c1a42aa88421467890250df825760cf8d87843d73bcfcc3"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2018/rapport_info_model_ecrit_2018.pdf",
+      "sha256": "71058a384cff888d9f2a5348671340496faee588cd69be6c780bfd74991413cd",
+      "nombre_pages": 3,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "da8ac86dd3db223a92782e8bb062ea33022df2de5d203bb614543213ebb92287"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "87bb963cee5b49e45ea566e154178de454b8a045f7697e5d4650d8cc6b0a79f8"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "76c17deb8ec2e88c4d4b8382d3837d88cd568252507e450297ac04ea62b206f9"
+        }
+      ]
+    }
+  },
+  "date_revision": "2026-11-26",
+  "figures": [
+    {
+      "fichier": "figures/afocal.svg",
+      "question": "Q1",
+      "legende": "Faisceau incliné et plan focal commun"
+    },
+    {
+      "fichier": "figures/prismes.svg",
+      "question": "Q3",
+      "legende": "Deux réflexions par prisme"
+    },
+    {
+      "fichier": "figures/cycle.svg",
+      "question": "Q10",
+      "legende": "Caractéristique du comparateur non inverseur"
+    }
+  ],
+  "contributions": [
+    {
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "session": "pt_info_sprint_2018",
+      "phase": "redaction",
+      "perimetre": "Résolution des trente questions et des sous-questions, trois schémas originaux, programmes Python et requêtes SQL."
+    },
+    {
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "session": "pt_info_sprint_2018",
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "perimetre": "Comparaison avec les faces de réflexion, le montage et les rubriques Q1 à Q30 du rapport. Contrôle du vecteur magnétique, du bilan optique, des seuils et des simulations. Essais des programmes, requêtes, dessins et lecture des deux PDF."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21",
+      "Q22",
+      "Q23",
+      "Q24",
+      "Q25",
+      "Q26",
+      "Q27",
+      "Q28",
+      "Q29",
+      "Q30"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "Q1",
+        "pages_pdf": [
+          3
+        ],
+        "sous_questions": [
+          "a",
+          "b",
+          "c"
+        ],
+        "rapport_page_imprimee": 9,
+        "traitement": "Un doublet afocal"
+      },
+      {
+        "question": "Q2",
+        "pages_pdf": [
+          3
+        ],
+        "sous_questions": [
+          "a",
+          "b",
+          "c"
+        ],
+        "rapport_page_imprimee": 9,
+        "traitement": "Grossissement et distance entre lentilles"
+      },
+      {
+        "question": "Q3",
+        "pages_pdf": [
+          4
+        ],
+        "sous_questions": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ],
+        "rapport_page_imprimee": 9,
+        "traitement": "Quatre réflexions pour replier le trajet"
+      },
+      {
+        "question": "Q4",
+        "pages_pdf": [
+          4
+        ],
+        "sous_questions": [
+          "a",
+          "b"
+        ],
+        "rapport_page_imprimee": 9,
+        "traitement": "Changer de référentiel dans la force de Lorentz"
+      },
+      {
+        "question": "Q5",
+        "pages_pdf": [
+          5
+        ],
+        "sous_questions": [
+          "a",
+          "b"
+        ],
+        "rapport_page_imprimee": 9,
+        "traitement": "Deux sens de propagation"
+      },
+      {
+        "question": "Q6",
+        "pages_pdf": [
+          5
+        ],
+        "sous_questions": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ],
+        "rapport_page_imprimee": 9,
+        "traitement": "Réflexion sur la surface mobile"
+      },
+      {
+        "question": "Q7",
+        "pages_pdf": [
+          5
+        ],
+        "sous_questions": [],
+        "rapport_page_imprimee": 9,
+        "traitement": "Écart de fréquence à 10 mètres par seconde"
+      },
+      {
+        "question": "Q8",
+        "pages_pdf": [
+          5
+        ],
+        "sous_questions": [],
+        "rapport_page_imprimee": 10,
+        "traitement": "Battement sur le photodétecteur"
+      },
+      {
+        "question": "Q9",
+        "pages_pdf": [
+          6
+        ],
+        "sous_questions": [
+          "a",
+          "b"
+        ],
+        "rapport_page_imprimee": 10,
+        "traitement": "Filtrer le courant reçu"
+      },
+      {
+        "question": "Q10",
+        "pages_pdf": [
+          6
+        ],
+        "sous_questions": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ],
+        "rapport_page_imprimee": 10,
+        "traitement": "Mise en forme par hystérésis"
+      },
+      {
+        "question": "Q11",
+        "pages_pdf": [
+          6
+        ],
+        "sous_questions": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "rapport_page_imprimee": 10,
+        "traitement": "Compter sur une fenêtre de 0,2 seconde"
+      },
+      {
+        "question": "Q12",
+        "pages_pdf": [
+          7,
+          8
+        ],
+        "sous_questions": [
+          "a",
+          "b",
+          "c"
+        ],
+        "rapport_page_imprimee": 10,
+        "traitement": "Intégrer des vitesses à pas variable"
+      },
+      {
+        "question": "Q13",
+        "pages_pdf": [
+          8
+        ],
+        "sous_questions": [],
+        "rapport_page_imprimee": 10,
+        "traitement": "Reproduire le tracé des positions"
+      },
+      {
+        "question": "Q14",
+        "pages_pdf": [
+          8
+        ],
+        "sous_questions": [
+          "a",
+          "b",
+          "c"
+        ],
+        "rapport_page_imprimee": 10,
+        "traitement": "Interpoler le passage de la ligne"
+      },
+      {
+        "question": "Q15",
+        "pages_pdf": [
+          8,
+          9
+        ],
+        "sous_questions": [],
+        "rapport_page_imprimee": 10,
+        "traitement": "Identifier la différence finie"
+      },
+      {
+        "question": "Q16",
+        "pages_pdf": [
+          9
+        ],
+        "sous_questions": [
+          "a",
+          "b"
+        ],
+        "rapport_page_imprimee": 10,
+        "traitement": "Placer les estimations sur l’axe des temps"
+      },
+      {
+        "question": "Q17",
+        "pages_pdf": [
+          9
+        ],
+        "sous_questions": [],
+        "rapport_page_imprimee": 10,
+        "traitement": "Repérer une entrée et la dernière sortie durable"
+      },
+      {
+        "question": "Q18",
+        "pages_pdf": [
+          9
+        ],
+        "sous_questions": [],
+        "rapport_page_imprimee": 10,
+        "traitement": "Coût du repérage"
+      },
+      {
+        "question": "Q19",
+        "pages_pdf": [
+          10
+        ],
+        "sous_questions": [],
+        "rapport_page_imprimee": 10,
+        "traitement": "Ajuster l’accélération en fonction de la vitesse"
+      },
+      {
+        "question": "Q20",
+        "pages_pdf": [
+          10
+        ],
+        "sous_questions": [
+          "a",
+          "b"
+        ],
+        "rapport_page_imprimee": 10,
+        "traitement": "Simuler le modèle dynamique par Euler explicite"
+      },
+      {
+        "question": "Q21",
+        "pages_pdf": [
+          11
+        ],
+        "sous_questions": [],
+        "rapport_page_imprimee": 10,
+        "traitement": "Interpréter le nombre affiché"
+      },
+      {
+        "question": "Q22",
+        "pages_pdf": [
+          11
+        ],
+        "sous_questions": [],
+        "rapport_page_imprimee": 11,
+        "traitement": "Réparer la décomposition en forces massiques"
+      },
+      {
+        "question": "Q23",
+        "pages_pdf": [
+          12
+        ],
+        "sous_questions": [],
+        "rapport_page_imprimee": 11,
+        "traitement": "Intégrer une puissance massique"
+      },
+      {
+        "question": "Q24",
+        "pages_pdf": [
+          13
+        ],
+        "sous_questions": [],
+        "rapport_page_imprimee": 11,
+        "traitement": "Identifier une performance"
+      },
+      {
+        "question": "Q25",
+        "pages_pdf": [
+          13
+        ],
+        "sous_questions": [],
+        "rapport_page_imprimee": 11,
+        "traitement": "Lister les épreuves sur 100 mètres"
+      },
+      {
+        "question": "Q26",
+        "pages_pdf": [
+          13
+        ],
+        "sous_questions": [],
+        "rapport_page_imprimee": 11,
+        "traitement": "Sélectionner les performances en douze secondes au plus"
+      },
+      {
+        "question": "Q27",
+        "pages_pdf": [
+          13
+        ],
+        "sous_questions": [],
+        "rapport_page_imprimee": 11,
+        "traitement": "Réunir athlète, épreuve et temps"
+      },
+      {
+        "question": "Q28",
+        "pages_pdf": [
+          14
+        ],
+        "sous_questions": [],
+        "rapport_page_imprimee": 11,
+        "traitement": "Construire les séries d’un coureur"
+      },
+      {
+        "question": "Q29",
+        "pages_pdf": [
+          14
+        ],
+        "sous_questions": [],
+        "rapport_page_imprimee": 11,
+        "traitement": "Ne sélectionner que les dix premières lignes"
+      },
+      {
+        "question": "Q30",
+        "pages_pdf": [
+          14,
+          15
+        ],
+        "sous_questions": [
+          "a",
+          "b",
+          "c"
+        ],
+        "rapport_page_imprimee": 11,
+        "traitement": "Comparer avec un tri complet"
+      }
+    ]
+  }
+}

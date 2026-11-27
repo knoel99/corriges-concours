@@ -1,0 +1,187 @@
+{
+  "slug": "x_p-prime_premiere-composition-de-mathematiques_1995",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "P prime",
+    "matiere": "Première composition de mathématiques",
+    "annee": 1995
+  },
+  "questions": 20,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.sujetsetcorriges.fr/dl/X/Maths/PC/sec-x-1995-maths1-PC.pdf",
+    "sha256_sujet": "044a904307b21c97443a392f1bfb9bfcc12d265dc67350d2bba8078c69a64e7f",
+    "rapport_jury": "",
+    "provenance": "Reproduction en deux pages diffusée par Sujets et Corrigés, rapprochée des deux pages de la notice UPS m95xp1. Le tirage dactylographié distribue les parties I et II en page 1. Dans le scan UPS m95xp1eb, la partie II commence en page 2.",
+    "exemplaires_ups": [
+      {
+        "notice": "m95xp1",
+        "document": "m95xp1ea",
+        "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-c294d7f5998ddeaab4dc",
+        "sha256": "7e8e089a54c1da8e5788ad35a6d41e8a6ee97a4e9b9ffa8bfb80531df792c583",
+        "pages": 2
+      },
+      {
+        "notice": "m95xp1",
+        "document": "m95xp1eb",
+        "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-615a71f31fd8f9579886",
+        "sha256": "803ddd002132f457b50eb9720cefea0d5a94f6efb3d9ac0338e9f4201127b684",
+        "pages": 2
+      }
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/lieu-inflexions.svg",
+      "question": "3",
+      "legende": "Lieu des points de courbure nulle. Les deux points marqués ont une tangente horizontale et la tangente à l’origine est verticale."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "maths_x_p-prime_1997_1999",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction intégrale des deux éditions sur les 2 pages du fac-similé. 20 consignes pointées. I. Solutions maximales de l’équation de Riccati ; II. Solutions entières de l’équation linéaire ; III. Zéros et dérivées logarithmiques. Vérification des démonstrations, des notations et des bornes."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.a",
+      "1.b",
+      "1.c",
+      "1.d",
+      "1.e",
+      "1.f",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6.a",
+      "6.b",
+      "6.c",
+      "7",
+      "8",
+      "9.a",
+      "9.b",
+      "10.a",
+      "10.b",
+      "10.c"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1.a",
+        "page_pdf": 1,
+        "page_scan_ups_m95xp1eb": 1
+      },
+      {
+        "question": "1.b",
+        "page_pdf": 1,
+        "page_scan_ups_m95xp1eb": 1
+      },
+      {
+        "question": "1.c",
+        "page_pdf": 1,
+        "page_scan_ups_m95xp1eb": 1
+      },
+      {
+        "question": "1.d",
+        "page_pdf": 1,
+        "page_scan_ups_m95xp1eb": 1
+      },
+      {
+        "question": "1.e",
+        "page_pdf": 1,
+        "page_scan_ups_m95xp1eb": 1
+      },
+      {
+        "question": "1.f",
+        "page_pdf": 1,
+        "page_scan_ups_m95xp1eb": 1
+      },
+      {
+        "question": "2",
+        "page_pdf": 1,
+        "page_scan_ups_m95xp1eb": 1
+      },
+      {
+        "question": "3",
+        "page_pdf": 1,
+        "page_scan_ups_m95xp1eb": 1
+      },
+      {
+        "question": "4",
+        "page_pdf": 1,
+        "page_scan_ups_m95xp1eb": 1
+      },
+      {
+        "question": "5",
+        "page_pdf": 1,
+        "page_scan_ups_m95xp1eb": 2
+      },
+      {
+        "question": "6.a",
+        "page_pdf": 1,
+        "page_scan_ups_m95xp1eb": 2
+      },
+      {
+        "question": "6.b",
+        "page_pdf": 1,
+        "page_scan_ups_m95xp1eb": 2
+      },
+      {
+        "question": "6.c",
+        "page_pdf": 1,
+        "page_scan_ups_m95xp1eb": 2
+      },
+      {
+        "question": "7",
+        "page_pdf": 1,
+        "page_scan_ups_m95xp1eb": 2
+      },
+      {
+        "question": "8",
+        "page_pdf": 2,
+        "page_scan_ups_m95xp1eb": 2
+      },
+      {
+        "question": "9.a",
+        "page_pdf": 2,
+        "page_scan_ups_m95xp1eb": 2
+      },
+      {
+        "question": "9.b",
+        "page_pdf": 2,
+        "page_scan_ups_m95xp1eb": 2
+      },
+      {
+        "question": "10.a",
+        "page_pdf": 2,
+        "page_scan_ups_m95xp1eb": 2
+      },
+      {
+        "question": "10.b",
+        "page_pdf": 2,
+        "page_scan_ups_m95xp1eb": 2
+      },
+      {
+        "question": "10.c",
+        "page_pdf": 2,
+        "page_scan_ups_m95xp1eb": 2
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

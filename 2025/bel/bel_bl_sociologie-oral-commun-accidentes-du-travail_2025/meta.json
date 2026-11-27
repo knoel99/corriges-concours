@@ -1,0 +1,72 @@
+{
+  "slug": "bel_bl_sociologie-oral-commun-accidentes-du-travail_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Sociologie (oral commun) — Accidentés du travail",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "Les accidenté.e.s du travail",
+  "questions": 0,
+  "documents": 7,
+  "date_revision": "2026-11-26",
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujets_socio_17_juin.pdf#page=1",
+    "sujet_sha256": "85cc47a53b07ba86c6b1d18e9821517bc9802a7365e87997d5b9c709d8e4b5b0",
+    "pages_sujet": "1 à 8 sur 32",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_sociologie_tronc_commun.pdf",
+    "rapport_sha256": "9bc988f94c13ebc880ab5860fd1c30f145a4bf52df2207b66bb6dbb78e4bd008",
+    "pages_rapport": "1 à 4, titre du dossier p. 4"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "agent": "fui_physique_un",
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Lecture des huit pages rendues, confrontation aux sept documents et au rapport de jury, rédaction des deux éditions, deux figures originales calculées à partir des cases visibles, contrôle des dénominateurs et des champs."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Document 3",
+      "fichier": "figures/composition-professionnelle.svg",
+      "legende": "Part des heures et part des accidents du travail, par catégorie socioprofessionnelle. Salariés du régime général, France entière, Dares, 2012 (document 3)."
+    },
+    {
+      "numero": 2,
+      "question": "Document 5",
+      "fichier": "figures/frequence-et-gravite-par-age.svg",
+      "legende": "Fréquence des accidents du travail avec arrêt et part des cas avec incapacité partielle permanente parmi ces accidents. Salariés des régimes général et agricole, France entière, Dares, 2012 (document 5)."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "precision": "Dossier unique, sept documents sur les pages 2 à 8. La garde ne formule pas de questions numérotées. Les sept documents sont traités dans chaque édition.",
+    "documents_entierement_traites": [
+      "Document 1",
+      "Document 2",
+      "Document 3",
+      "Document 4",
+      "Document 5",
+      "Document 6",
+      "Document 7"
+    ],
+    "controle_des_documents": [
+      "D1, p. 2. Nombre, taux de fréquence, double axe, 2005–2016, régime général.",
+      "D2, p. 3 et source p. 4. Effectifs, fréquence par million, mortalité par milliard, IPP, secteurs et champ, 2019.",
+      "D3, p. 4 et source p. 5. PCS, heures et accidents, trajet sans taux de fréquence disponible. Unités des proportions et incohérence de la formule imprimée.",
+      "D4, p. 5. Sexe, heures, parts, taux et mortalité, distinction des accidents de trajet et du travail.",
+      "D5, p. 6. Âges, fréquence et séquelles, trajet, comparaison transversale.",
+      "D6, p. 7. Quatre catégories de part du chiffre d’affaires, accidents reconnus rapportés aux équivalents temps plein, point haut dans la catégorie intermédiaire.",
+      "D7, p. 8. Rémi Lenoir, 1980, enquête sur la construction de la catégorie, intérêts divergents, déclaration et appuis collectifs."
+    ]
+  }
+}

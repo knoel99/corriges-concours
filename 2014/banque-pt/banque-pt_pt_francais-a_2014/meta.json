@@ -1,0 +1,92 @@
+{
+  "slug": "banque-pt_pt_francais-a_2014",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français A",
+    "annee": 2014
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2014/fr_a_2014_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2014/rapport_fra_a_ecrit_2014.pdf",
+    "programme_officiel": "https://www.education.gouv.fr/bo/13/Hebdo26/ESRS1300172A.htm",
+    "notice": "https://www.banquept.fr/documents/livret/2014/Livret_PT_2014.pdf#page=12",
+    "sujet_sha256": "3974bc3d59757b5001a826da943cb81c447a9a7f9dc7ac515df197b1ea69b9be",
+    "rapport_jury_sha256": "c328ea1caa92589d5f3e4ba1d622329408d64bf017eb5e74a04d9de5b14e6ac5",
+    "programme_officiel_sha256": "584e5ff82ffde4dd103840fb183ae5973e405f48307415ba8539164381f9aead",
+    "notice_sha256": "645bd441b431dd180a74f457dcbbd9c88abb12286959e8141c44aeeb6e495f6b",
+    "oeuvres_au_programme": [
+      "Gérard de Nerval, Sylvie",
+      "Virginia Woolf, Mrs Dalloway (traduction de Marie-Claire Pasquier)",
+      "Henri Bergson, Essai sur les données immédiates de la conscience, chapitre II"
+    ],
+    "theme": "Le temps vécu",
+    "admissibilite_admission": "École polytechnique, admissibilité, coefficient 4",
+    "pages_rapport": "Rapport PDF p. 1 à 9, pagination imprimée 18 à 26. Analyse de l’ennui, de l’imagination, du rempart et de la colonne aux pages imprimées 19 à 21."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "Quand le passé nous rend-il au présent ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction de la dissertation sur le cycle de l’ennui et du regret puis sur les deux images architecturales de Lavelle. Lecture comparée de Sylvie, de Mrs Dalloway et du deuxième chapitre de l’Essai."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Vérification de la continuité qualitative au chapitre II de Bergson et du geste de Clarissa à Bourton. Précision sur la différence entre l’unité de la mélodie et une opération de stockage des notes.",
+      "tour": 1
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 1,
+        "perimetre": "Dans quelle mesure votre lecture des œuvres au programme sur le thème Le temps vécu vous permet-elle de souscrire à ces propos du philosophe Louis Lavelle (La conscience de soi 1933) ?",
+        "points": 20
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

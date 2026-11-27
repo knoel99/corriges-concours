@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le fil directeur est le dénombrement des surjections. On les retrouve dans une inversion binomiale, un changement de base polynomiale, la formule du multinôme et les coefficients d’une composition de séries entières.
 
 ## Première partie. Dénombrer par l’image
@@ -25,6 +27,8 @@ Les $n^k$ applications ont toutes une image non vide, de cardinal $q\le n$. Pour
 ### Question 3.b
 
 Le produit matriciel de 3.a donne $A(r)=S(r)P(r)$. La matrice $S$ est triangulaire inférieure car $s_{k,n}=0$ si $k<n$, avec diagonale $k!$. La matrice $P$ est triangulaire supérieure car $p_{k,n}=0$ si $k>n$, avec diagonale un. Donc $\det A(r)=\prod_{k=1}^r k!$.
+
+Le déterminant se contrôle aussi directement. En sortant $n$ de la colonne $n$ de $A(r)$, on obtient la matrice de Vandermonde de termes $n^{k-1}$. Son déterminant est $\prod_{1\le i<j\le r}(j-i)=\prod_{j=2}^r(j-1)!$. Le facteur extrait est $r!$, qui redonne $\prod_{k=1}^r k!$ avec le signe positif.
 
 ## Deuxième partie. Translation et inversion binomiale
 
@@ -64,6 +68,8 @@ On trouve $T^{-1}N_q=N_q-N_{q-1}$ pour $q\ge1$ et $T^{-1}N_0=N_0$. La matrice in
 
 Pour tout entier $m\ge k\ge1$, 3.a donne $m^k=\sum_{q=1}^k s_{k,q}\binom mq$. Les deux côtés étant polynomiaux en $m$ et égaux en une infinité d’entiers, ils coïncident pour toute variable complexe. En $m=-X$ on a $\binom{-X}{q}=(-1)^qN_q(X)$. D’où $X^k=\sum_{q=1}^k(-1)^{k-q}s_{k,q}N_q(X)$ et, pour $k=0$, $X^0=N_0$.
 
+Pour $k=3$, on a $s_{3,1}=1$, $s_{3,2}=6$ et $s_{3,3}=6$. La formule donne $X^3=N_1-6N_2+6N_3$. En développant on obtient $X-3X(X+1)+X(X+1)(X+2)=X^3$. Le signe alterné provient du choix de factorielles croissantes.
+
 ## Troisième partie. Multinôme et fibres des surjections
 
 ### Question 9
@@ -91,3 +97,5 @@ Posons $A_*(t)=\sum_{j\ge1}|a_j|t^j$. Elle tend vers zéro quand $t\downarrow0$ 
 ### Question 14
 
 Ici $\varphi(x)=e^x-1$ a $a_j=1/j!$ pour $j\ge1$, et $\psi(z)=e^z$ a $b_n=1/n!$. Pour $k\ge n\ge1$, la question 11 donne $\alpha_{n,k}=\sum_{f\in D_{k,n}}1/\prod_i f(i)!=s_{k,n}/k!$. Ainsi le terme constant de $\theta$ est un et son coefficient de degré $k\ge1$ vaut $\frac1{k!}\sum_{n=1}^k s_{k,n}/n!$. En particulier $\theta^{(k)}(0)=\sum_{n=1}^k s_{k,n}/n!$. La convergence vaut pour tout $x$, car dans la preuve de 13 on peut choisir $r$ arbitrairement grand.
+
+À l’ordre trois, la somme pondérée vaut $1+6/2!+6/3!=5$. Ainsi $\theta^{(3)}(0)=5$, mais le coefficient de $x^3$ vaut $5/6$. La même distinction donne les premiers termes $1+x+x^2+5x^3/6$, en accord avec la composition directe des deux exponentielles.

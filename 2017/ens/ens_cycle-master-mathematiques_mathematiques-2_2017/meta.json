@@ -11,13 +11,31 @@
   "sources": {
     "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2017_SE_2C_Maths2.pdf",
     "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2017_RO_2C_Maths_Probas-Stats.pdf",
-    "sha256_sujet": "5dd7bc2a1b08e2dd0e134fa7f94cfd309845bfca2d9c7b75cb96495f3a69e242"
+    "sha256_sujet": "5dd7bc2a1b08e2dd0e134fa7f94cfd309845bfca2d9c7b75cb96495f3a69e242",
+    "rapports_controles": [
+      {
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2017_SE_2C_Math_Analyse_Num.pdf",
+        "sha256": "b6c4e60c547232641ece97fde58c6981a43e8fdd4d3e3d14c64ac231b0b3ed52",
+        "pages": 1
+      },
+      {
+        "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2017_RO_2C_Maths_Probas-Stats.pdf",
+        "sha256": "7f82e80067f1d0bd4948e0d3eaa1f5104bf7aaf77257780cdd7ab79c9ff28066",
+        "pages": 2
+      }
+    ],
+    "sha256_rapport_jury": "7f82e80067f1d0bd4948e0d3eaa1f5104bf7aaf77257780cdd7ab79c9ff28066"
   },
   "figures": [
     {
       "fichier": "figures/transport-echelon.svg",
       "question": "N.2.2.2.d",
       "legende": "Le schéma amont lisse le saut à maille finie. À temps final fixé, la zone de transition se resserre lorsque le nombre de pas augmente."
+    },
+    {
+      "fichier": "figures/variances-des-quantiles.svg",
+      "question": "P.3.6",
+      "legende": "Rapport des variances limites de l’estimateur récursif et du quantile empirique, pour le pas du sujet. La valeur minimale 1 est atteinte lorsque la densité au quantile vaut 1."
     }
   ],
   "contributions": [
@@ -31,6 +49,99 @@
       "perimetre": "Rédaction intégrale des deux options du fascicule 2C7122. Quantiles empiriques, algorithme récursif et lois normales, transport, régularisation, stabilité et obstruction de Godunov. Contre-exemple aux pas dyadiques pour P.2.4.d et correction de l’indice du défaut en N.2.1.5.b. Figure du transport du saut.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "68 consignes des deux options et deux rapports du jury contrôlés. Le rapport numérique d’une page est classé comme sujet dans l’index. Quantiles, localisation et TCL, stencil binomial, obstruction de Godunov et taux après régularisation ont été recalculés. Ajout du rapport explicite des variances et du comportement à la discontinuité.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "P.1.1.a",
+      "P.1.1.b",
+      "P.1.1.c",
+      "P.1.2",
+      "P.1.3.a",
+      "P.1.3.b",
+      "P.1.3.c",
+      "P.1.3.d",
+      "P.1.4",
+      "P.1.5.a",
+      "P.1.5.b",
+      "P.2.1",
+      "P.2.2.a",
+      "P.2.2.b",
+      "P.2.3.a",
+      "P.2.3.b",
+      "P.2.3.c",
+      "P.2.4.a",
+      "P.2.4.b",
+      "P.2.4.c",
+      "P.2.4.d",
+      "P.3.1",
+      "P.3.2",
+      "P.3.3",
+      "P.3.4.a",
+      "P.3.4.b",
+      "P.3.4.c",
+      "P.3.4.d",
+      "P.3.5.a",
+      "P.3.5.b",
+      "P.3.5.c",
+      "P.3.5.d",
+      "P.3.6",
+      "P.3.7",
+      "N.1.1",
+      "N.1.2",
+      "N.1.3",
+      "N.1.4",
+      "N.1.5",
+      "N.2.1.1.a",
+      "N.2.1.1.b",
+      "N.2.1.1.c",
+      "N.2.1.2",
+      "N.2.1.3.a",
+      "N.2.1.3.b",
+      "N.2.1.4.a",
+      "N.2.1.4.b",
+      "N.2.1.5.a",
+      "N.2.1.5.b",
+      "N.2.1.6.a",
+      "N.2.1.6.b",
+      "N.2.2.1",
+      "N.2.2.2.a",
+      "N.2.2.2.b",
+      "N.2.2.2.c",
+      "N.2.2.2.d",
+      "N.3.1.1",
+      "N.3.1.2",
+      "N.3.1.3",
+      "N.3.1.4",
+      "N.3.1.5",
+      "N.3.1.6",
+      "N.3.2.1.a",
+      "N.3.2.1.b",
+      "N.3.2.2.a",
+      "N.3.2.2.b",
+      "N.3.2.2.c",
+      "N.3.2.2.d"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "revision",
+      "sha256_sujet_controle": "5dd7bc2a1b08e2dd0e134fa7f94cfd309845bfca2d9c7b75cb96495f3a69e242",
+      "perimetre": "68 consignes des deux options et deux rapports du jury contrôlés. Le rapport numérique d’une page est classé comme sujet dans l’index. Quantiles, localisation et TCL, stencil binomial, obstruction de Godunov et taux après régularisation ont été recalculés. Ajout du rapport explicite des variances et du comportement à la discontinuité."
+    }
+  },
+  "date_revision": "2026-11-26"
 }

@@ -1,0 +1,70 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_philosophie-le-pouvoir-est-il-un-theatre-oral_2017",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Philosophie — Le pouvoir est-il un théâtre (oral)",
+    "annee": 2017,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie — Le pouvoir est-il un théâtre (oral)",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/philo-oral-sil17-sujet2.pdf",
+    "sha256_sujet": "4d4c7826a5bee3963f1b5c74d92dc92a4419812989ac17399db0c91561923b6e",
+    "reperage": "Feuillet oral distinct n° 2 dans les liens de philosophie de 2017. Le document d’une page présente exclusivement la question « Le pouvoir est-il un théâtre ? ».",
+    "page_officielle": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2017-lettres-0",
+    "pages_sujet": 1,
+    "note_generale_jury": "https://www.ens.psl.eu/sites/default/files/qqs-attentes-jury-pageweb.pdf",
+    "sha256_note_generale": "85a7f1b02fb26a186a71b820afe3bb118cd2320fc5cfbf5dcf78456c4c56c049"
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Exposé oral",
+      "legende": "Que fait l’apparition publique ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet original. Exposé argumenté sur le sujet attribué, exemples et objections, préparation guidée de l’entretien et schéma des distinctions conceptuelles."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "oraux_lyon_et_anciens_corriges",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture du feuillet autonome, contrôle des bornes et travail sur l’exposé, les relances et le schéma. Représentation d’une fonction, différence entre investiture et répétition, efficacité des règles et conditions d’un contrôle après la séance."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Le pouvoir est-il un théâtre ?"
+    ],
+    "elements_verifies": [
+      "Feuillet oral distinct n° 2 dans les liens de philosophie de 2017. Le document d’une page présente exclusivement la question « Le pouvoir est-il un théâtre ? ».",
+      "Aucun texte à commenter, renvoi au dossier individuel, sujet alternatif ou sous-question sur ce feuillet. Les relances d’entraînement sont éditoriales.",
+      "Représentation d’une fonction, différence entre investiture et répétition, efficacité des règles et conditions d’un contrôle après la séance."
+    ]
+  }
+}

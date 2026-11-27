@@ -1,0 +1,112 @@
+{
+  "slug": "banque-pt_pt_francais-b_2011",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français B",
+    "annee": 2011
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2011/fr_b_pt_2011.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2011/rapport_fra_b_ecrit_2011.pdf",
+    "programme_officiel": "https://www.education.gouv.fr/bo/2010/17/esrs1000116a.htm",
+    "notice": "https://www.banquept.fr/documents/livret/2011/Livret_PT_2011.pdf#page=13",
+    "sujet_sha256": "79e489eaa767561b1253702bbd3d3890d5201084c30208f5338723f56d6aafaf",
+    "rapport_jury_sha256": "56d24de8a205282c4b9e276ec5a907b32232b6b7e85036b030f992d3c8dc343b",
+    "programme_officiel_sha256": "fa86864d5262f2564a329b023d1ceb1e0f3960b987a3f68cebb8e0aa30726b63",
+    "notice_sha256": "f9cd26395e9749f34a6ba265a7ac7f313e4550c3ab2d4fca547d3d492498f219",
+    "oeuvres_au_programme": [
+      "Jean-Jacques Rousseau, Profession de foi du vicaire savoyard (Émile, livre IV, extrait prescrit)",
+      "William Shakespeare, Macbeth (traduction de Pierre-Jean Jouve)",
+      "Jean Giono, Les Âmes fortes"
+    ],
+    "theme": "Le mal",
+    "admissibilite_admission": "ENS Cachan, écrit d’admission, coefficient 4.",
+    "pages_rapport": "Rapport PDF p. 1 à 7. Analyse de l’accusation, de la plainte, du récit et des controverses théologiques et philosophiques p. 2. Consignes et remarques de correction sur la dissertation dans les pages suivantes."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "Que rend intelligible chaque forme ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture des quatre pages d’Abel et du rapport, rédaction des 180 mots et d’une dissertation différenciant récit, explication, accusation, justification et plainte dans les trois œuvres."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Vérification de la succession des positions théologiques et du contraste entre Bayle et Leibniz, des 180 mots et des points de vue dans la scène de la nouvelle à Macduff. Précision sur la comparaison avec Banquo.",
+      "tour": 1
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Résumé",
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Résumé",
+        "page_pdf": 1,
+        "page_pdf_fin": 4,
+        "page_consigne": 4,
+        "perimetre": "Le texte commence sur la page de garde, après les consignes, par « Dans cette question, qui précède toute justice ». Il se termine page 4 par « vaine, sinon insoutenable ». Les questions suivent sur cette même page.",
+        "mots_demandes": 180,
+        "mots_admis": [
+          162,
+          198
+        ],
+        "mots_par_paragraphe": [
+          70,
+          35,
+          75
+        ],
+        "mots_rediges": 180,
+        "points": 8
+      },
+      {
+        "question": "Dissertation",
+        "page_pdf": 4,
+        "perimetre": "« Le mal n’est pas explicable, mais seulement racontable ». Vous direz si la lecture des œuvres au programme vous permet de confirmer ou d’infirmer ce point de vue.",
+        "points": 12
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

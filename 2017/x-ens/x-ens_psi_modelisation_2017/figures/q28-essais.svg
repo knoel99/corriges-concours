@@ -1,350 +1,59 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="464.4pt" height="295.2pt" viewBox="0 0 464.4 295.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="patch_1">
-   <path d="M 0 295.2
-L 464.4 295.2
-L 464.4 0
-L 0 0
-z
-" style="fill: #ffffff"/>
-  </g>
-  <g id="axes_1">
-   <g id="line2d_1">
-    <path d="M 30.587671 117.117035
-L 30.587671 52.725364
-L 151.023945 52.725364
-L 151.023945 117.117035
-L 30.587671 117.117035
-" clip-path="url(#pde1bb3e3c0)" style="fill: none; stroke: #667881; stroke-linecap: square"/>
-   </g>
-   <g id="patch_2">
-    <path d="M 102.133973 62.264871
-L 135.522247 62.264871
-L 135.522247 43.185857
-L 102.133973 43.185857
-z
-" clip-path="url(#pde1bb3e3c0)" style="fill: #ffffff; stroke: #427760; stroke-linejoin: miter"/>
-   </g>
-   <g id="text_1">
-    <text style="font-size: 6.7px; font-family: 'DejaVu Sans'; text-anchor: middle" x="118.82811" y="54.574146" transform="rotate(-0 118.82811 54.574146)">phase a</text>
-   </g>
-   <g id="text_2">
-    <text style="font-size: 7px; font-family: 'DejaVu Sans'; text-anchor: middle" x="110.481041" y="88.498515" transform="rotate(-0 110.481041 88.498515)">ω mesurée</text>
-   </g>
-   <g id="text_3">
-    <text style="font-size: 6.5px; font-family: 'DejaVu Sans'; text-anchor: start" x="152.216384" y="121.886789" transform="rotate(-0 152.216384 121.886789)">N</text>
-   </g>
-   <g id="text_4">
-    <text style="font-size: 10.8px; font-family: 'DejaVu Sans'; text-anchor: middle" x="118.53" y="15.125748" transform="rotate(-0 118.53 15.125748)">Q28 · Arbre entraîné</text>
-   </g>
-   <g id="patch_3">
-    <path d="M 30.587671 95.653145
-C 33.591936 95.653145 36.473557 94.459538 38.597893 92.335203
-C 40.722229 90.210867 41.915836 87.329245 41.915836 84.324981
-C 41.915836 81.320716 40.722229 78.439095 38.597893 76.314759
-C 36.473557 74.190423 33.591936 72.996816 30.587671 72.996816
-C 27.583407 72.996816 24.701785 74.190423 22.577449 76.314759
-C 20.453114 78.439095 19.259507 81.320716 19.259507 84.324981
-C 19.259507 87.329245 20.453114 90.210867 22.577449 92.335203
-C 24.701785 94.459538 27.583407 95.653145 30.587671 95.653145
-z
-" clip-path="url(#pde1bb3e3c0)" style="fill: #eff5f4; stroke: #285c75; stroke-linejoin: miter"/>
-   </g>
-   <g id="text_5">
-    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle" x="30.587671" y="86.532481" transform="rotate(-0 30.587671 86.532481)">V</text>
-   </g>
-  </g>
-  <g id="axes_2">
-   <g id="line2d_2">
-    <path d="M 257.927671 117.117035
-L 257.927671 52.725364
-L 378.363945 52.725364
-L 378.363945 117.117035
-L 257.927671 117.117035
-" clip-path="url(#p135f1f3698)" style="fill: none; stroke: #667881; stroke-linecap: square"/>
-   </g>
-   <g id="line2d_3">
-    <path d="M 322.319342 52.725364
-L 322.319342 90.287172
-L 370.613096 90.287172
-L 370.613096 52.725364
-" clip-path="url(#p135f1f3698)" style="fill: none; stroke: #667881; stroke-width: 0.8; stroke-linecap: square"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 329.473973 62.264871
-L 362.862247 62.264871
-L 362.862247 43.185857
-L 329.473973 43.185857
-z
-" clip-path="url(#p135f1f3698)" style="fill: #ffffff; stroke: #427760; stroke-linejoin: miter"/>
-   </g>
-   <g id="text_6">
-    <text style="font-size: 6.7px; font-family: 'DejaVu Sans'; text-anchor: middle" x="346.16811" y="54.574146" transform="rotate(-0 346.16811 54.574146)">phase a</text>
-   </g>
-   <g id="text_7">
-    <text style="font-size: 6.5px; font-family: 'DejaVu Sans'; text-anchor: start" x="379.556384" y="121.886789" transform="rotate(-0 379.556384 121.886789)">N</text>
-   </g>
-   <g id="text_8">
-    <text style="font-size: 10.8px; font-family: 'DejaVu Sans'; text-anchor: middle" x="345.87" y="15.125748" transform="rotate(-0 345.87 15.125748)">Q29 · Rotor bloqué, continu</text>
-   </g>
-   <g id="patch_5">
-    <path d="M 257.927671 97.441803
-C 260.931936 97.441803 263.813557 96.248196 265.937893 94.12386
-C 268.062229 91.999524 269.255836 89.117903 269.255836 86.113638
-C 269.255836 83.109374 268.062229 80.227752 265.937893 78.103416
-C 263.813557 75.979081 260.931936 74.785474 257.927671 74.785474
-C 254.923407 74.785474 252.041785 75.979081 249.917449 78.103416
-C 247.793114 80.227752 246.599507 83.109374 246.599507 86.113638
-C 246.599507 89.117903 247.793114 91.999524 249.917449 94.12386
-C 252.041785 96.248196 254.923407 97.441803 257.927671 97.441803
-z
-" clip-path="url(#p135f1f3698)" style="fill: #eff5f4; stroke: #285c75; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 293.700822 64.053529
-C 296.705086 64.053529 299.586708 62.859922 301.711044 60.735586
-C 303.835379 58.61125 305.028986 55.729629 305.028986 52.725364
-C 305.028986 49.7211 303.835379 46.839478 301.711044 44.715142
-C 299.586708 42.590807 296.705086 41.3972 293.700822 41.3972
-C 290.696558 41.3972 287.814936 42.590807 285.6906 44.715142
-C 283.566264 46.839478 282.372658 49.7211 282.372658 52.725364
-C 282.372658 55.729629 283.566264 58.61125 285.6906 60.735586
-C 287.814936 62.859922 290.696558 64.053529 293.700822 64.053529
-z
-" clip-path="url(#p135f1f3698)" style="fill: #eff5f4; stroke: #285c75; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 346.764329 101.615337
-C 349.768593 101.615337 352.650215 100.42173 354.774551 98.297394
-C 356.898886 96.173059 358.092493 93.291437 358.092493 90.287172
-C 358.092493 87.282908 356.898886 84.401286 354.774551 82.276951
-C 352.650215 80.152615 349.768593 78.959008 346.764329 78.959008
-C 343.760064 78.959008 340.878443 80.152615 338.754107 82.276951
-C 336.629771 84.401286 335.436164 87.282908 335.436164 90.287172
-C 335.436164 93.291437 336.629771 96.173059 338.754107 98.297394
-C 340.878443 100.42173 343.760064 101.615337 346.764329 101.615337
-z
-" clip-path="url(#p135f1f3698)" style="fill: #eff5f4; stroke: #285c75; stroke-linejoin: miter"/>
-   </g>
-   <g id="text_9">
-    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle" x="257.927671" y="88.321138" transform="rotate(-0 257.927671 88.321138)">=</text>
-   </g>
-   <g id="text_10">
-    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle" x="293.700822" y="54.932864" transform="rotate(-0 293.700822 54.932864)">A</text>
-   </g>
-   <g id="text_11">
-    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle" x="346.764329" y="92.494672" transform="rotate(-0 346.764329 92.494672)">V</text>
-   </g>
-  </g>
-  <g id="axes_3">
-   <g id="line2d_4">
-    <path d="M 30.587671 257.109682
-L 30.587671 192.718011
-L 151.023945 192.718011
-L 151.023945 257.109682
-L 30.587671 257.109682
-" clip-path="url(#pd0654c6352)" style="fill: none; stroke: #667881; stroke-linecap: square"/>
-   </g>
-   <g id="line2d_5">
-    <path d="M 94.979342 192.718011
-L 94.979342 230.279819
-L 143.273096 230.279819
-L 143.273096 192.718011
-" clip-path="url(#pd0654c6352)" style="fill: none; stroke: #667881; stroke-width: 0.8; stroke-linecap: square"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 102.133973 202.257517
-L 135.522247 202.257517
-L 135.522247 183.178504
-L 102.133973 183.178504
-z
-" clip-path="url(#pd0654c6352)" style="fill: #ffffff; stroke: #427760; stroke-linejoin: miter"/>
-   </g>
-   <g id="text_12">
-    <text style="font-size: 6.7px; font-family: 'DejaVu Sans'; text-anchor: middle" x="118.82811" y="194.566792" transform="rotate(-0 118.82811 194.566792)">phase a</text>
-   </g>
-   <g id="text_13">
-    <text style="font-size: 6.5px; font-family: 'DejaVu Sans'; text-anchor: start" x="152.216384" y="261.879435" transform="rotate(-0 152.216384 261.879435)">N</text>
-   </g>
-   <g id="text_14">
-    <text style="font-size: 10.8px; font-family: 'DejaVu Sans'; text-anchor: middle" x="118.53" y="155.118394" transform="rotate(-0 118.53 155.118394)">Q30 · Rotor bloqué, 50 Hz</text>
-   </g>
-   <g id="patch_9">
-    <path d="M 30.587671 237.434449
-C 33.591936 237.434449 36.473557 236.240842 38.597893 234.116506
-C 40.722229 231.992171 41.915836 229.110549 41.915836 226.106285
-C 41.915836 223.10202 40.722229 220.220398 38.597893 218.096063
-C 36.473557 215.971727 33.591936 214.77812 30.587671 214.77812
-C 27.583407 214.77812 24.701785 215.971727 22.577449 218.096063
-C 20.453114 220.220398 19.259507 223.10202 19.259507 226.106285
-C 19.259507 229.110549 20.453114 231.992171 22.577449 234.116506
-C 24.701785 236.240842 27.583407 237.434449 30.587671 237.434449
-z
-" clip-path="url(#pd0654c6352)" style="fill: #eff5f4; stroke: #285c75; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 66.360822 204.046175
-C 69.365086 204.046175 72.246708 202.852568 74.371044 200.728232
-C 76.495379 198.603897 77.688986 195.722275 77.688986 192.718011
-C 77.688986 189.713746 76.495379 186.832124 74.371044 184.707789
-C 72.246708 182.583453 69.365086 181.389846 66.360822 181.389846
-C 63.356558 181.389846 60.474936 182.583453 58.3506 184.707789
-C 56.226264 186.832124 55.032658 189.713746 55.032658 192.718011
-C 55.032658 195.722275 56.226264 198.603897 58.3506 200.728232
-C 60.474936 202.852568 63.356558 204.046175 66.360822 204.046175
-z
-" clip-path="url(#pd0654c6352)" style="fill: #eff5f4; stroke: #285c75; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 119.424329 241.607983
-C 122.428593 241.607983 125.310215 240.414376 127.434551 238.290041
-C 129.558886 236.165705 130.752493 233.284083 130.752493 230.279819
-C 130.752493 227.275554 129.558886 224.393933 127.434551 222.269597
-C 125.310215 220.145261 122.428593 218.951654 119.424329 218.951654
-C 116.420064 218.951654 113.538443 220.145261 111.414107 222.269597
-C 109.289771 224.393933 108.096164 227.275554 108.096164 230.279819
-C 108.096164 233.284083 109.289771 236.165705 111.414107 238.290041
-C 113.538443 240.414376 116.420064 241.607983 119.424329 241.607983
-z
-" clip-path="url(#pd0654c6352)" style="fill: #eff5f4; stroke: #285c75; stroke-linejoin: miter"/>
-   </g>
-   <g id="text_15">
-    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle" x="30.587671" y="228.313785" transform="rotate(-0 30.587671 228.313785)">∿</text>
-   </g>
-   <g id="text_16">
-    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle" x="66.360822" y="194.925511" transform="rotate(-0 66.360822 194.925511)">A</text>
-   </g>
-   <g id="text_17">
-    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle" x="119.424329" y="232.487319" transform="rotate(-0 119.424329 232.487319)">V</text>
-   </g>
-  </g>
-  <g id="axes_4">
-   <g id="line2d_6">
-    <path d="M 257.927671 257.109682
-L 257.927671 192.718011
-L 378.363945 192.718011
-L 378.363945 257.109682
-L 257.927671 257.109682
-" clip-path="url(#pa0f35bdbb0)" style="fill: none; stroke: #667881; stroke-linecap: square"/>
-   </g>
-   <g id="line2d_7">
-    <path d="M 378.363945 257.109682
-L 429.042575 257.109682
-L 429.042575 192.718011
-L 401.616493 192.718011
-L 401.616493 243.99286
-L 378.363945 243.99286
-" clip-path="url(#pa0f35bdbb0)" style="fill: none; stroke: #667881; stroke-width: 0.9; stroke-linecap: square"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 329.473973 202.257517
-L 362.862247 202.257517
-L 362.862247 183.178504
-L 329.473973 183.178504
-z
-" clip-path="url(#pa0f35bdbb0)" style="fill: #ffffff; stroke: #427760; stroke-linejoin: miter"/>
-   </g>
-   <g id="text_18">
-    <text style="font-size: 6.7px; font-family: 'DejaVu Sans'; text-anchor: middle" x="346.16811" y="194.566792" transform="rotate(-0 346.16811 194.566792)">phase a</text>
-   </g>
-   <g id="patch_13">
-    <path d="M 390.884548 232.068476
-L 412.348438 232.068476
-L 412.348438 208.815928
-L 390.884548 208.815928
-z
-" clip-path="url(#pa0f35bdbb0)" style="fill: #ffffff; stroke: #427760; stroke-linejoin: miter"/>
-   </g>
-   <g id="text_19">
-    <text style="font-size: 6.5px; font-family: 'DejaVu Sans'; text-anchor: start" x="379.556384" y="261.879435" transform="rotate(-0 379.556384 261.879435)">N</text>
-   </g>
-   <g id="text_20">
-    <text style="font-size: 10.8px; font-family: 'DejaVu Sans'; text-anchor: middle" x="345.87" y="155.118394" transform="rotate(-0 345.87 155.118394)">Q31 · Rotor bloqué, 50 Hz</text>
-   </g>
-   <g id="patch_14">
-    <path d="M 257.927671 237.434449
-C 260.931936 237.434449 263.813557 236.240842 265.937893 234.116506
-C 268.062229 231.992171 269.255836 229.110549 269.255836 226.106285
-C 269.255836 223.10202 268.062229 220.220398 265.937893 218.096063
-C 263.813557 215.971727 260.931936 214.77812 257.927671 214.77812
-C 254.923407 214.77812 252.041785 215.971727 249.917449 218.096063
-C 247.793114 220.220398 246.599507 223.10202 246.599507 226.106285
-C 246.599507 229.110549 247.793114 231.992171 249.917449 234.116506
-C 252.041785 236.240842 254.923407 237.434449 257.927671 237.434449
-z
-" clip-path="url(#pa0f35bdbb0)" style="fill: #eff5f4; stroke: #285c75; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_15">
-    <path d="M 293.700822 204.046175
-C 296.705086 204.046175 299.586708 202.852568 301.711044 200.728232
-C 303.835379 198.603897 305.028986 195.722275 305.028986 192.718011
-C 305.028986 189.713746 303.835379 186.832124 301.711044 184.707789
-C 299.586708 182.583453 296.705086 181.389846 293.700822 181.389846
-C 290.696558 181.389846 287.814936 182.583453 285.6906 184.707789
-C 283.566264 186.832124 282.372658 189.713746 282.372658 192.718011
-C 282.372658 195.722275 283.566264 198.603897 285.6906 200.728232
-C 287.814936 202.852568 290.696558 204.046175 293.700822 204.046175
-z
-" clip-path="url(#pa0f35bdbb0)" style="fill: #eff5f4; stroke: #285c75; stroke-linejoin: miter"/>
-   </g>
-   <g id="text_21">
-    <text style="font-size: 7px; font-family: 'DejaVu Sans'; text-anchor: middle" x="401.616493" y="221.336531" transform="rotate(-0 401.616493 221.336531)">b</text>
-   </g>
-   <g id="patch_16">
-    <path d="M 429.042575 235.645791
-C 432.04684 235.645791 434.928462 234.452185 437.052797 232.327849
-C 439.177133 230.203513 440.37074 227.321891 440.37074 224.317627
-C 440.37074 221.313363 439.177133 218.431741 437.052797 216.307405
-C 434.928462 214.18307 432.04684 212.989463 429.042575 212.989463
-C 426.038311 212.989463 423.156689 214.18307 421.032353 216.307405
-C 418.908018 218.431741 417.714411 221.313363 417.714411 224.317627
-C 417.714411 227.321891 418.908018 230.203513 421.032353 232.327849
-C 423.156689 234.452185 426.038311 235.645791 429.042575 235.645791
-z
-" clip-path="url(#pa0f35bdbb0)" style="fill: #eff5f4; stroke: #285c75; stroke-linejoin: miter"/>
-   </g>
-   <g id="text_22">
-    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle" x="257.927671" y="228.313785" transform="rotate(-0 257.927671 228.313785)">∿</text>
-   </g>
-   <g id="text_23">
-    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle" x="293.700822" y="194.925511" transform="rotate(-0 293.700822 194.925511)">A</text>
-   </g>
-   <g id="text_24">
-    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle" x="429.042575" y="226.525127" transform="rotate(-0 429.042575 226.525127)">V</text>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="pde1bb3e3c0">
-   <rect x="9.72" y="21.125748" width="217.62" height="122.821151"/>
-  </clipPath>
-  <clipPath id="p135f1f3698">
-   <rect x="237.06" y="21.125748" width="217.62" height="122.821151"/>
-  </clipPath>
-  <clipPath id="pd0654c6352">
-   <rect x="9.72" y="161.118394" width="217.62" height="122.821151"/>
-  </clipPath>
-  <clipPath id="pa0f35bdbb0">
-   <rect x="237.06" y="161.118394" width="217.62" height="122.821151"/>
-  </clipPath>
- </defs>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="690" height="365" viewBox="0 0 690 365" role="img"><title>Les quatre essais électriques de la machine synchrone</title><rect width="690" height="365" fill="white"/><g font-family="DejaVu Sans, sans-serif">
+<text x="12" y="22" text-anchor="start" font-size="15" fill="#183347">Q28 · Circuit ouvert, arbre entraîné</text>
+<polyline fill="none" stroke="#243d52" stroke-width="2" points="40,68 279,68 279,140 40,140 40,68"/>
+<circle cx="40" cy="104" r="13" stroke="#28536b" stroke-width="1.5" fill="#f1f5f4"/>
+<text x="40" y="109" text-anchor="middle" font-size="14" fill="#183347">V</text>
+<rect x="206.5" y="56" width="55" height="24" fill="#f4faf4" stroke="#345f48" stroke-width="1.5"/>
+<text x="234" y="72" text-anchor="middle" font-size="12" fill="#183347">phase a</text>
+<text x="286" y="144" text-anchor="start" font-size="13" fill="#183347">N</text>
+<text x="77" y="158" text-anchor="middle" font-size="11" fill="#183347">oscilloscope</text>
+<rect x="91.5" y="90" width="95" height="24" fill="#f4faf4" stroke="#345f48" stroke-width="1.5"/>
+<text x="139" y="106" text-anchor="middle" font-size="12" fill="#183347">entraînement</text>
+<polyline fill="none" stroke="#7e6335" stroke-width="2" stroke-dasharray="5 4" points="187,102 209,102"/>
+<circle cx="224" cy="102" r="13" stroke="#28536b" stroke-width="1.5" fill="#f1f5f4"/>
+<text x="224" y="107" text-anchor="middle" font-size="14" fill="#183347">Ω</text>
+<text x="160" y="125" text-anchor="middle" font-size="11" fill="#183347">arbre et tachymètre</text>
+<text x="352" y="22" text-anchor="start" font-size="15" fill="#183347">Q29 · Rotor immobile, courant continu</text>
+<polyline fill="none" stroke="#243d52" stroke-width="2" points="383,64 606,64 606,143 383,143 383,64"/>
+<circle cx="383" cy="103" r="13" stroke="#28536b" stroke-width="1.5" fill="#f1f5f4"/>
+<text x="383" y="108" text-anchor="middle" font-size="14" fill="#183347">=</text>
+<circle cx="438" cy="64" r="13" stroke="#28536b" stroke-width="1.5" fill="#f1f5f4"/>
+<text x="438" y="69" text-anchor="middle" font-size="14" fill="#183347">A</text>
+<rect x="517.5" y="52" width="55" height="24" fill="#f4faf4" stroke="#345f48" stroke-width="1.5"/>
+<text x="545" y="68" text-anchor="middle" font-size="12" fill="#183347">phase a</text>
+<polyline fill="none" stroke="#243d52" stroke-width="2" points="496,64 496,112 588,112 588,64"/>
+<circle cx="545" cy="112" r="13" stroke="#28536b" stroke-width="1.5" fill="#f1f5f4"/>
+<text x="545" y="117" text-anchor="middle" font-size="14" fill="#183347">V</text>
+<circle cx="496" cy="64" r="3" fill="#243d52"/>
+<circle cx="588" cy="64" r="3" fill="#243d52"/>
+<text x="614" y="148" text-anchor="start" font-size="13" fill="#183347">N</text>
+<text x="12" y="195" text-anchor="start" font-size="15" fill="#183347">Q30 · Rotor bloqué, alimentation à 50 Hz</text>
+<polyline fill="none" stroke="#243d52" stroke-width="2" points="43,237 266,237 266,316 43,316 43,237"/>
+<circle cx="43" cy="276" r="13" stroke="#28536b" stroke-width="1.5" fill="#f1f5f4"/>
+<text x="43" y="281" text-anchor="middle" font-size="14" fill="#183347">∼</text>
+<circle cx="98" cy="237" r="13" stroke="#28536b" stroke-width="1.5" fill="#f1f5f4"/>
+<text x="98" y="242" text-anchor="middle" font-size="14" fill="#183347">A</text>
+<rect x="177.5" y="225" width="55" height="24" fill="#f4faf4" stroke="#345f48" stroke-width="1.5"/>
+<text x="205" y="241" text-anchor="middle" font-size="12" fill="#183347">phase a</text>
+<polyline fill="none" stroke="#243d52" stroke-width="2" points="156,237 156,285 248,285 248,237"/>
+<circle cx="205" cy="285" r="13" stroke="#28536b" stroke-width="1.5" fill="#f1f5f4"/>
+<text x="205" y="290" text-anchor="middle" font-size="14" fill="#183347">V</text>
+<circle cx="156" cy="237" r="3" fill="#243d52"/>
+<circle cx="248" cy="237" r="3" fill="#243d52"/>
+<text x="274" y="321" text-anchor="start" font-size="13" fill="#183347">N</text>
+<text x="352" y="195" text-anchor="start" font-size="15" fill="#183347">Q31 · Rotor bloqué, couplage à 50 Hz</text>
+<polyline fill="none" stroke="#243d52" stroke-width="2" points="378,237 550,237 550,317 378,317 378,237"/>
+<circle cx="378" cy="277" r="13" stroke="#28536b" stroke-width="1.5" fill="#f1f5f4"/>
+<text x="378" y="282" text-anchor="middle" font-size="14" fill="#183347">∼</text>
+<circle cx="422" cy="237" r="13" stroke="#28536b" stroke-width="1.5" fill="#f1f5f4"/>
+<text x="422" y="242" text-anchor="middle" font-size="14" fill="#183347">A</text>
+<rect x="462.5" y="225" width="55" height="24" fill="#f4faf4" stroke="#345f48" stroke-width="1.5"/>
+<text x="490" y="241" text-anchor="middle" font-size="12" fill="#183347">phase a</text>
+<polyline fill="none" stroke="#243d52" stroke-width="2" points="550,317 597,317 597,259 653,259 653,317 597,317"/>
+<rect x="572.5" y="274" width="49" height="24" fill="#f4faf4" stroke="#345f48" stroke-width="1.5"/>
+<text x="597" y="290" text-anchor="middle" font-size="12" fill="#183347">phase b</text>
+<circle cx="653" cy="286" r="13" stroke="#28536b" stroke-width="1.5" fill="#f1f5f4"/>
+<text x="653" y="291" text-anchor="middle" font-size="14" fill="#183347">V</text>
+<circle cx="597" cy="317" r="3" fill="#243d52"/>
+<text x="550" y="333" text-anchor="middle" font-size="14" fill="#183347">N</text>
+</g></svg>

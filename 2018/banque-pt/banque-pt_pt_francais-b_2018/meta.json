@@ -1,0 +1,95 @@
+{
+  "slug": "banque-pt_pt_francais-b_2018",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français B",
+    "annee": 2018
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2018/fr_b_2018_pt.pdf",
+    "sujet_sha256": "6dc9a6c23093bfa1e50c32698b48c2eb69fe7c66a17a743781edbc29ac2a703b",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2018/rapport_fra_b_ecrit_2018.pdf",
+    "rapport_sha256": "975b016ba0f54a75d41109b1b7f84fb1401bf547a91b75b86b444830dbd2762a",
+    "programme_officiel": "https://www.education.gouv.fr/bo/17/Hebdo26/ESRS1700064A.htm",
+    "theme": "L’aventure",
+    "oeuvres_au_programme": [
+      "Homère, L’Odyssée (traduction Philippe Jaccottet)",
+      "Conrad, Au cœur des ténèbres (traduction Jean-Jacques Mayoux)",
+      "Jankélévitch, L’Aventure, l’Ennui, le Sérieux, chapitre I, « L’aventure »"
+    ],
+    "source_coefficients": "https://www.banquept.fr/documents/livret/2018/Livret_PT_2018.pdf#page=12",
+    "admissibilite_admission": "ENS Paris-Saclay et ENS Rennes, admission seule, coefficient 4"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "Quel risque engage la personne ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lyon_ses_sources",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture des trois pages du texte de Chalier, du stoïcisme à la question finale. Contrôle du passage sur Bousquet, de la conclusion du résumé et de la double exigence intérieure et morale dans la dissertation. Rédaction des deux éditions, vérification du programme et réalisation du schéma."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Résumé",
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Résumé",
+        "page_pdf": 2,
+        "page_pdf_fin": 4,
+        "page_consigne": 4,
+        "perimetre": "Du premier paragraphe page 2, « Comme l’a jadis enseigné Épictète », à la dernière interrogation page 4, « à un poète ou à un mystique ? ». Les deux consignes suivent sur cette même page.",
+        "mots_demandes": 180,
+        "mots_admis": [
+          162,
+          198
+        ],
+        "mots_par_paragraphe": [
+          55,
+          57,
+          68
+        ],
+        "mots_rediges": 180,
+        "points": 8
+      },
+      {
+        "question": "Dissertation",
+        "page_pdf": 4,
+        "page_pdf_fin": 4,
+        "perimetre": "Discuter l’idée de Catherine Chalier selon laquelle aucun risque ni enjeu véritables ne subsistent dans une aventure sans exploration intérieure ni effort en faveur du bien.",
+        "points": 12
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

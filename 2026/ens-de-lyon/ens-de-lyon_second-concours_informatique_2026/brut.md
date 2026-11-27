@@ -4,7 +4,7 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 Dans les programmes, les noms `Leaf`, `Node` et leurs accesseurs désignent les primitives de l’énoncé. La file `deque` est celle de `collections`. Dans les arbres de décision, l’enfant gauche correspond à la valeur vraie.
 
@@ -110,6 +110,8 @@ def enumtrees(f, n):
 
 Au niveau $n$, l'affectation est complète et une unique feuille est possible, étiquetée par $f(x)$. Par induction sur le nombre de coordonnées libres, toute paire d'arbres renvoyés pour un indice racine donne un arbre complet correct sur les entrées de la branche. Inversement, chaque arbre complet correct possède une de ces racines et deux enfants figurant dans les listes correspondantes. Ils sont reconstruits ensemble. Les entrées fixées par les ancêtres sont conservées. Les cases libres sont toujours réaffectées avant leur lecture à une feuille.
 
+Pour contrôler l’exhaustivité sur une petite dimension, notons $a_n$ le nombre d’arbres complets distincts pour une fonction fixée. À la racine on a $n$ choix, puis $a_{n-1}$ constructions pour chacune des deux restrictions, indépendamment. Ainsi $a_0=1$, $a_n=n a_{n-1}^2$ et $a_3=12$. Les valeurs de la fonction imposent les étiquettes des feuilles pour chacune de ces structures.
+
 ## III. Fonctions positives et complexes simpliciaux
 
 ### Question 8
@@ -117,6 +119,8 @@ Au niveau $n$, l'affectation est complète et une unique feuille est possible, �
 Le support des cases fausses peut être n'importe quelle partie de $\{0,1,2\}$ sauf la partie entière, puisque le « ou » exige au moins une case vraie. Ainsi
 $$K_{\mathrm{ou}}^3=\{\varnothing,\{0\},\{1\},\{2\},\{0,1\},\{0,2\},\{1,2\}\}.$$
 Il s'agit des trois sommets et des trois arêtes d'un triangle, avec la face vide et sans la face à trois sommets.
+
+![Figure 3 — La frontière du triangle contient trois arêtes et trois sommets. Son intérieur ne figure pas dans le complexe. La face vide n’a pas de point sur ce dessin.](figures/triangle-ou.svg)
 
 ### Question 9
 
@@ -163,6 +167,8 @@ def makefaces(cmpl):
 ```
 
 Les clés d'un sous-arbre prolongent la face par un indice plus grand. Chaque face non vide a un unique préfixe obtenu en supprimant son dernier indice, elle est donc mise en file une seule fois. La concaténation du tuple coûte au plus $O(n)$ par face. Les consultations et opérations de file sont constantes. Le coût est $O(n\,\#K)$ pour $K$ non vide et constant pour le complexe vide.
+
+![Figure 4 — Le parcours en largeur de l’arbre des préfixes donne la face vide, les quatre sommets, puis les trois arêtes du complexe des triplets consécutifs.](figures/prefixes-faces.svg)
 
 ### Question 11
 
@@ -227,6 +233,8 @@ def makehasse(cmpl, m):
 
 Soit $S=P\cup\{v\}$ où $v$ est le plus grand sommet. Ses facettes sont $P$ et les $F\cup\{v\}$ pour toutes les facettes $F$ de $P$. Ces extensions de $F$ existent par fermeture du complexe et s'obtiennent par une consultation de dictionnaire sur le sommet $v$. Le parcours initial a créé tous les identifiants par taille croissante. La seconde boucle trouve donc les facettes de $P$ déjà calculées. Elle traite chaque incidence une seule fois et l'oriente vers le haut exactement si elle appartient au couplage. Dans cette boucle sur les incidences, les accès se font par identifiants entiers. Les listes de voisins contiennent des références aux tuples déjà construits. Le dictionnaire de sortie prend chaque face comme clé une seule fois. Créer les tuples coûte au total $O(n\,\#K)$. Il y a au plus $n$ incidences par face et au plus $\#K/2$ couples. Le temps total est ainsi $O(n\,\#K)$ pour un complexe non vide, avec retour immédiat pour le vide.
 
+![Figure 6 — Pour former les facettes de {0, 2, 5}, on conserve le préfixe {0, 2}, puis on ajoute 5 à chacune de ses deux facettes.](figures/facettes-extension.svg)
+
 ### Question 14
 
 Supprimons successivement les sommets dont le degré entrant est nul. À chaque suppression, on diminue les degrés entrants des voisins sortants. Le compteur détermine si tous les sommets ont été atteints.
@@ -262,14 +270,20 @@ Raisonnons par récurrence sur le nombre de faces. Le complexe vide convient. Si
 
 Toute face strictement plus grande contenant $\tau$ contient une coface immédiate de $\tau$. Si elle avait au moins deux sommets de plus que $\tau$, on pourrait ajouter séparément chacun de ces deux sommets et obtenir deux cofaces immédiates, contradiction. Par conséquent $\sigma$ est maximale et c'est la seule face contenant strictement $\tau$. On peut enlever le couple par effondrement élémentaire. Le couplage restant est parfait et son diagramme est le sous-graphe induit sur les faces restantes, donc acyclique. On termine par récurrence.
 
+![Figure 7 — Quatre effondrements élémentaires enlèvent successivement les couples du diagramme de la question 12. Le dernier effondrement emporte aussi la face vide.](figures/effondrement.svg)
+
 ### Question 16
 
 La perfection suit de l'hypothèse admise : toute face apparaît dans un couple et le couplage interdit les doubles utilisations. Prouvons l'acyclicité par récurrence sur $n$. Pour $n=1$, il n'y a que l'arc montant $\varnothing\to\{0\}$. Pour $n>1$, soit $v$ le premier indice testé à la racine. Les couples montants ne changent que le dernier indice testé. Celui-ci diffère de $v$. Ils restent donc dans une même classe de faces, selon que $v$ est présent ou absent.
 
 Tout arc entre les deux classes descend en supprimant $v$. Un cycle ne pourrait donc pas les parcourir toutes les deux. Dans la classe sans $v$, les paires et les orientations sont celles du sous-arbre gauche puisque la réponse sur $v$ est vraie. Dans la classe avec $v$, enlever $v$ de toutes les faces identifie les orientations à celles du sous-arbre droit. Ces sous-arbres sont complets sur les $n-1$ indices restants, que l'on peut renuméroter. Les deux diagrammes sont acycliques par récurrence, d'où le résultat.
 
+![Figure 8 — Les seuls arcs entre les deux classes effacent le premier indice testé. Un cycle ne peut donc jamais revenir dans la classe qui le contient.](figures/classes-racine.svg)
+
 ### Question 17
 
 Choisissons un arbre représentant $f$ de hauteur strictement inférieure à $n$. Sous chaque feuille, ajoutons des tests des indices encore libres, dans un ordre fixé sur la branche, jusqu'à atteindre la hauteur $n$. Les nouvelles feuilles portent toutes la valeur de l'ancienne feuille. Le dernier test ajouté sur chaque chemin est donc indifférent à la valeur de $f$.
 
 Pour chaque couple $(\tau_c,\sigma_c)$ de l'arbre complet, les deux entrées ayant ces supports de cases fausses ne diffèrent que sur ce dernier test. Elles ont la même image : ou bien les deux faces appartiennent à $K_f^n$, ou bien aucune n'y appartient. Le couplage de 16 se restreint donc à un couplage parfait et acyclique du complexe. Par 15, celui-ci s'effondre jusqu'au complexe vide. À chaque retrait, les deux faces ont des tailles consécutives et leurs contributions à $\widetilde\chi$ s'annulent. Comme $\widetilde\chi(\varnothing)=0$, on obtient $\widetilde\chi(K_f^n)=0$. La positivité garantit que l'ensemble de départ est bien un complexe.
+
+**Remarque finale du sujet.** Le théorème donne aussi sa contraposée. Une caractéristique d’Euler réduite non nulle impose l’évasivité. La dernière page pose ensuite comme question ouverte l’évasivité de toute fonction positive, faiblement symétrique et non triviale. La question 17 établit le critère sur la caractéristique d’Euler. Pour conclure dans le cadre plus général de la remarque, il faudrait un argument supplémentaire.

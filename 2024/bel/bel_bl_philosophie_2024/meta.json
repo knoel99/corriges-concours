@@ -1,0 +1,50 @@
+{
+  "slug": "bel_bl_philosophie_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Philosophie",
+    "annee": 2024,
+    "modalite": "écrit"
+  },
+  "intitule": "La valeur de la nature",
+  "organisateurs": "ENS Ulm, ENS de Lyon et ENS Paris-Saclay",
+  "duree": "6 heures",
+  "code_sujet": "UHC 455",
+  "questions": 0,
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2024_blses_sujet_composition_philosophie.pdf",
+    "sha256_sujet": "6cdf60c4f228ddb3afc13835f79d441afd9f24040d79fa68b6f64fc1769310bb",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_ecrit_philosophie.pdf",
+    "sha256_rapport_jury": "dfdf03a3537a3811b486655bba55763a417f853275d6b903ecdbfd4793b1f792"
+  },
+  "figures": [
+    {
+      "fichier": "figures/crue-et-valeurs.svg",
+      "question": "La valeur de la nature",
+      "legende": "Trois critères d’évaluation de la crue et leur rôle dans une décision."
+    }
+  ],
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "x_maths_b_anciennes",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Dissertation entière de six heures, introduction problématisée, trois mouvements, analyse précise des exemples, objections et conclusion. Dans l’édition guidée, analyse préalable et travail propre à chaque mouvement."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "La valeur de la nature"
+    ],
+    "precision": "Dissertation entière de six heures, introduction problématisée, trois mouvements, analyse précise des exemples, objections et conclusion. Dans l’édition guidée, analyse préalable et travail propre à chaque mouvement."
+  },
+  "gabarit": "dissertation"
+}

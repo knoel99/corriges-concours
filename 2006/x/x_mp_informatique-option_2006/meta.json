@@ -1,0 +1,82 @@
+{
+  "slug": "x_mp_informatique-option_2006",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Informatique (option)",
+    "annee": 2006,
+    "duree_heures": 4,
+    "modalite": "écrit"
+  },
+  "intitule": "Dictionnaires",
+  "questions": 15,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/x_option-info_mp_2006.pdf",
+    "sujet_sha256": "bedf9a2c6dd8ab4f03269e2cc1cb0ad66f81810b833aa695f19d9b76ba932d3f",
+    "rapport": "https://www.doc-solus.fr/prepa/sci/adc/pdf/rapports.pdf/2006/MP_INFO_X_1_2006.rapport.pdf",
+    "rapport_sha256": "5bbd132b4748150bec5ed18cd4c529e24b3643eb4fed63bdd6c8dc1ebacb4a74",
+    "identification": "École polytechnique, filière MP option informatique, composition 2006 de quatre heures. Cahier de six pages reproduit par WikiPrépa. Rapport des correcteurs de la session reproduit par Doc-Solus.",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.wikiprepa.fr/concours/data/x_option-info_mp_2006.pdf",
+        "sha256": "bedf9a2c6dd8ab4f03269e2cc1cb0ad66f81810b833aa695f19d9b76ba932d3f",
+        "pages": 6
+      },
+      {
+        "role": "rapport",
+        "url": "https://www.doc-solus.fr/prepa/sci/adc/pdf/rapports.pdf/2006/MP_INFO_X_1_2006.rapport.pdf",
+        "sha256": "5bbd132b4748150bec5ed18cd4c529e24b3643eb4fed63bdd6c8dc1ebacb4a74",
+        "pages": 5
+      },
+      {
+        "role": "autre exemplaire",
+        "url": "https://www.doc-solus.fr/prepa/sci/adc/pdf/enonces.pdf/2006/MP_INFO_X_1_2006.enonce.pdf",
+        "sha256": "acc5e4f91066cce6cce7cfe0a1251e82daed23d6755ac8258eb1b3e2ae3e5974",
+        "pages": 6
+      }
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/fils-frere.svg",
+      "question": "7",
+      "legende": "Figure 1 — Pour les mots a et ab, la branche de terminaison et la branche b sont sœurs. L’arête horizontale conserve donc le même préfixe."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "option_info_2006_2009",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Questions 1 à 15, y compris 3a–b et 11a–b. Tries tabulés et binaires, encadrement de la mémoire, conversion, multiensembles, sortie des mots et des anagrammes. Ambiguïtés de sortie et mot vide traités explicitement."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "limites": "À la question 14, l’énoncé hésite entre une liste en retour et un affichage. Les deux interfaces sont données. À la question 15, les facteurs sont des mots non vides pour obtenir une énumération finie. L’alphabet et la primitive lettre sont fournis."
+  }
+}

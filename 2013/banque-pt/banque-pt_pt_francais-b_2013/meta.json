@@ -1,0 +1,112 @@
+{
+  "slug": "banque-pt_pt_francais-b_2013",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français B",
+    "annee": 2013
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2013/fr_b_2013_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2013/rapport_fra_b_ecrit_2013.pdf",
+    "programme_officiel": "https://www.education.gouv.fr/bo/12/Hebdo26/ESRS1200215A.htm",
+    "notice": "https://www.banquept.fr/documents/livret/2013/Livret_PT_2013.pdf#page=12",
+    "sujet_sha256": "5c84d6968cea3c4604a94896808e48533bba09b1201bd55dc66779fcb7acc759",
+    "rapport_jury_sha256": "b278be38baf036dd289ab3ab3bc9785efb866d04fa1868277c8e39c6a282174e",
+    "programme_officiel_sha256": "7118b752614653fd05c12dcf94e41fe9158307cad83cfed4f63b3a7ca2f654da",
+    "notice_sha256": "a5ec06950020d6468198946219e761ae339b23d5e278f19d09876bacabb64a0e",
+    "oeuvres_au_programme": [
+      "Platon, Phèdre (traduction de Létitia Mouze)",
+      "Pierre de Marivaux, Les Fausses Confidences",
+      "Paul Verlaine, Romances sans paroles"
+    ],
+    "theme": "La Parole",
+    "admissibilite_admission": "ENS Cachan, écrit d’admission, coefficient 4.",
+    "pages_rapport": "Rapport PDF p. 1 à 8, pagination imprimée 26 à 33. Progression du texte p. 27, critères de la dissertation p. 28, analyse des difficultés dans les pages suivantes."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "De qui dépend l’effet d’une parole ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture du texte et de ses notes, rédaction d’un résumé original de 200 mots et d’une dissertation comparant les actes de langage de Dubois, Lysias, Socrate, Dorante et des voix de Verlaine."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Vérification du changement d’auditoire chez Barthes, du rôle du corps et de la distinction entre écriture et transcription. Précision apportée à l’analyse du dernier aveu de la comédie et comptage du résumé.",
+      "tour": 1
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Résumé",
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Résumé",
+        "page_pdf": 2,
+        "page_pdf_fin": 4,
+        "page_consigne": 5,
+        "perimetre": "Le texte à résumer s’étend des pages 2 à 4 du feuillet, de « Nous parlons, on nous enregistre » à « différent selon qu’il parle, transcrit ou énonce ». Les quatre notes et les questions figurent page 5.",
+        "mots_demandes": 200,
+        "mots_admis": [
+          180,
+          220
+        ],
+        "mots_par_paragraphe": [
+          59,
+          66,
+          75
+        ],
+        "mots_rediges": 200,
+        "points": 8
+      },
+      {
+        "question": "Dissertation",
+        "page_pdf": 5,
+        "perimetre": "Roland Barthes déclare que « la parole est toujours tactique ». Ce point de vue vous semble-t-il illustré dans les œuvres au programme.",
+        "points": 12
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

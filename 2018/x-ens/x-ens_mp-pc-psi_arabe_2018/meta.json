@@ -1,0 +1,59 @@
+{
+  "slug": "x-ens_mp-pc-psi_arabe_2018",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Arabe",
+    "annee": 2018,
+    "modalite": "écrit"
+  },
+  "intitule": "Travail des femmes, pauvreté et capacité de choisir",
+  "questions": 2,
+  "redaction": "Synthèse titrée confrontant enquête au Maghreb, initiative égyptienne, travaux africains et photographie des six bidons. Réaction à l’éditorial sur l’égalité des possibilités professionnelles, avec comptage des deux textes arabes.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_MPPC_sujet_Arabe.pdf",
+    "sha256_sujet": "0f988ef91985cd05ec8d14bf2935d53594177f4841b5d90d3414e8758f8fc90e",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2018/",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_MPPC_sujet_Arabe.pdf",
+        "sha256": "0f988ef91985cd05ec8d14bf2935d53594177f4841b5d90d3414e8758f8fc90e"
+      },
+      {
+        "role": "rapport",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/10/18_MPPC_rapport_eArabe.pdf",
+        "sha256": "6688ff8b585196d3a294d85a0484de10dc3d038b1cacffb159a2325a29ecca7c"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/lecture-du-dossier.svg",
+      "legende": "Ce que le dossier révèle quand on suit une journée de travail plutôt qu’un seul salaire."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "arabe_mp_pc_2011_2014",
+      "session": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Synthèse titrée confrontant enquête au Maghreb, initiative égyptienne, travaux africains et photographie des six bidons. Réaction à l’éditorial sur l’égalité des possibilités professionnelles, avec comptage des deux textes arabes."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  }
+}

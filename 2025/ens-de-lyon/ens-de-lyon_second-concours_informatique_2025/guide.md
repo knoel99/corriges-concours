@@ -4,7 +4,7 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 ## Présentation du sujet
 
@@ -436,6 +436,8 @@ def nbcroisements(P, Q):
 ```
 
 Deux cordes d'un cercle se coupent à l'intérieur exactement lorsque leurs extrémités alternent en parcourant le cercle. En effet, une corde partage le disque en deux parties, et l'autre la traverse si ses extrémités appartiennent aux deux arcs ouverts opposés. À la fin $q_i$ de la première corde à fermer, les croisements avec les cordes actives correspondent exactement aux cas $p_i<p_j<q_i<q_j$. Les clés strictement supérieures à $p_i$ sont au nombre de $\mathrm{taille}(A)-\mathrm{rang}(A,p_i)$, calculé **avant** la suppression. Chaque paire qui se croise est comptée une fois à la première des deux fermetures. Les hypothèses excluent les égalités d'angles.
+
+Avec les extrémités dans l’ordre $P_1,P_2,Q_1,Q_2$, la fermeture en $Q_1$ trouve un début actif postérieur à $P_1$ et ajoute un croisement. Dans l’ordre emboîté $P_1,P_2,Q_2,Q_1$, la première fermeture ne trouve aucun début postérieur à $P_2$, puis il ne reste que $P_1$. Le comptage ajoute zéro dans ce cas.
 
 Dans l’ordre cyclique du schéma ci-dessous, les quatre débuts sont déjà passés au moment de fermer la corde 1. Le rang dépend de l’ensemble encore actif à chaque fermeture.
 

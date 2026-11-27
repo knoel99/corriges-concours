@@ -1,0 +1,59 @@
+{
+  "slug": "agro-veto_bcpst_anglais_2024",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "Anglais",
+    "annee": 2024,
+    "modalite": "écrit"
+  },
+  "questions": 3,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/bcpst_0924_sp.pdf",
+    "sujet_sha256": "22cddc344ad3e733eccd14add1ef317bbdca8e11b99dbe13d42396b36c81aaca",
+    "rapport_jury": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/rapport_anglais_bcpst-2024.pdf",
+    "rapport_jury_sha256": "c7c66e4bedafa1dcb50954903b3671164a71d4459e6faf4da154806406e1b911",
+    "bilan_X_BIO": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/bilan-concours-cpge-bcpst-session-2024.pdf#page=4"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I · Compréhension des deux articles · 10 points",
+      "II · Expression, sujet 1 · Online and offline activities",
+      "II · Expression, sujet 2 · Biden’s appeal to Americans"
+    ],
+    "precision": "Comparaison des deux articles sur la High Street et deux essais au choix, remplacement des activités hors ligne et discours de Biden. Les éléments historiques mobilisés étaient disponibles à la date du concours."
+  },
+  "longueurs": {
+    "comprehension": 201,
+    "online": 205,
+    "biden": 206,
+    "methode": "groupes séparés par un espace"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "legende": "Comment les deux articles éclairent-ils la même rue ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture des feuillets et du rapport officiel de cette session. Comparaison des deux articles sur la High Street et deux essais au choix, remplacement des activités hors ligne et discours de Biden. Les éléments historiques mobilisés étaient disponibles à la date du concours. Rédaction du brut, du guidé et de la figure."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

@@ -10,9 +10,17 @@
 
 **Retouches** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Garde commune de l’ENS de Lyon et de l’ENS (Paris), portant aussi l’ENS Paris-Saclay pour l’anglais.
+
 ## Présentation du sujet
 
 Les deux exercices portent sur le même extrait de *Frankenstein* de Mary Shelley. Le commentaire en anglais va du débarquement des époux à la dispersion des chercheurs, lignes 1 à 59. La version commence au départ d’Elizabeth, ligne 22, et s’achève sur l’évanouissement de Victor, ligne 36. Dans cette épreuve de six heures avec dictionnaire unilingue autorisé, tracer ces bornes dès la première lecture évite de confondre le réveil de Victor, ligne 37, avec la fin du passage à traduire.
+
+Le texte de la version tient sur la page 4. La page 5 poursuit le récit après l’évanouissement. Les retours au présent et les deux gestes à la fenêtre permettent d’expliquer comment Victor parle à un auditoire qui n’a pas vu la scène.
 
 [Sujet officiel, pages 4 et 5](https://www.ens.psl.eu/sites/default/files/al_lve_commun_commentaire_traduction_2026.pdf#page=4) · [Rapport du jury, partie écrite, pages 2 à 23](https://www.ens-lyon.fr/sites/default/files/2026-10/Anglais%202026.pdf#page=2)
 
@@ -37,6 +45,8 @@ Victor identifie l’origine du cri, peut imaginer Elizabeth endormie après que
 
 ![Figure 1 — Le geste répété à la fenêtre](figures/deux-gestes.svg)
 
+Retrouver le sujet de chacun des deux gestes avant d’identifier les témoins. Le second geste permet à Victor d’indiquer un lieu. Il donne à la foule un point de départ pour ses recherches, sans lui fournir la même expérience qu’au narrateur.
+
 > [!JURY]
 > À la page 4, le jury demande de construire une interprétation en rapprochant des particularités de l’extrait. On peut ainsi étudier ensemble le cri d’Elizabeth et le bruit du coup de feu. Victor accourt à la chambre, puis la foule y accourt à son tour. Dans les deux cas, le bruit conduit au lieu d’un événement dont l’action principale échappe au regard.
 
@@ -46,9 +56,9 @@ Victor identifie l’origine du cri, peut imaginer Elizabeth endormie après que
 
 Elizabeth asks the simplest and most urgent question in this passage from Mary Shelley's *Frankenstein* (1818). What does Victor fear? He can describe his feelings with extraordinary precision to Walton, who hears his story afterwards. On his wedding night he can give his wife no answer that would help her act. The murder itself takes place out of his sight. How does Shelley make the limits of Victor's testimony felt in the very intensity of his account? The Gothic scene draws the reader into his acts of looking. His attention to bodies then exposes a blind spot in his understanding of Elizabeth, and the difficulty of sharing what he has seen gives his story its peculiar force as testimony.
 
-The couple's first pleasure together is to make out shapes in failing light. The adjective “transitory” (l. 2) sets a limit on that pleasure. Soon the sky is in motion in the water as well as overhead, and the waves add a disturbance of their own to what they reflect (ll. 5–8). An act of looking can register more movement than its object possesses. Shelley puts this effect to work again inside the inn. When the shutters are thrown back, moonlight makes the figure at the window visible and induces “a kind of panic” (ll. 47–51). The reader sees the creature through the aperture of the window and through the account of someone already afraid. The grin is visible. Its intention as a jeer remains an inference, marked by “seemed” (l. 51). Even at its most sharply lit the scene leaves something for Victor to supply.
+The couple's first pleasure together is to make out shapes in failing light. The adjective “transitory” (l. 2) sets a limit on that pleasure. The wind dies down in the south only to rise in the west. On the lake the waves lend the reflection of the clouds a motion over and above their own (ll. 4–8). An act of looking can register more movement than its object possesses. Shelley puts this effect to work again inside the inn. When the shutters are thrown back, moonlight makes the figure at the window visible and induces “a kind of panic” (ll. 47–51). The reader sees the creature through the aperture of the window and through the account of someone already afraid. The grin is visible. Its intention as a jeer remains an inference, marked by “seemed” (l. 51). Even at its most sharply lit the scene leaves something for Victor to supply.
 
-Sound offers a different kind of access to the murder. Before Elizabeth leaves, every noise alarms Victor as he waits for a combat that never takes place (ll. 10–13). Her cry, by contrast, breaks into a sentence still occupied with his hopeful conjecture. The part of the house he chose for her becomes the one place towards which he must now run. Later the report of his pistol brings a crowd into the room (ll. 53–56). They can see the man who fired, but the figure he fired at has gone. Both sounds draw witnesses to the aftermath of an action they have missed. The reader's position resembles theirs. We hear the cry through Victor, see what he finds afterwards and have to piece together the missing action.
+Sound offers a different kind of access to the murder. Before Elizabeth leaves, every noise alarms Victor as he waits for a combat that never takes place (ll. 10–13). Her cry, by contrast, breaks into a sentence still occupied with his hopeful conjecture. The part of the house he chose for her becomes the one place towards which he must now run. Later the report of his pistol brings a crowd into the room (ll. 53–56). They can see the man who fired, but the figure he fired at has gone. The witnesses do not all miss the same thing. Victor hears Elizabeth before he can see what has happened to her. The crowd hears Victor before it can see what he fired at. The reader's position resembles theirs. We hear the cry through Victor, see what he finds afterwards and have to piece together the missing action.
 
 That gap matters because Victor has already given the danger a plot. The alternatives he imagines are his own death and his adversary's. Elizabeth has no place in that sentence, although she is standing close enough to notice his agitation (ll. 10–15). Her two questions move from what she can observe to what she cannot know. His reply gives her a time, insistently repeated, in place of an explanation. He imagines what witnessing his combat would do to her and begs her to leave. The “bridal bier” (l. 35) gives that gesture its terrible consequence in a single phrase. The bed on which the couple should have met has become the place where he sees the body of the wife he meant to spare.
 
@@ -67,18 +77,18 @@ Elizabeth dies between a question her husband leaves unanswered and a cry he und
 
 #### Solution
 
-Elle me laissa. Quelque temps encore, j’arpentai les couloirs de la maison, scrutant le moindre recoin où mon adversaire eût pu trouver refuge. Je ne trouvai pourtant nulle trace de lui et je commençais à me figurer que quelque heureux hasard était intervenu pour l’empêcher de mettre ses menaces à exécution, quand soudain j’entendis un cri perçant et effroyable. Il venait de la chambre où Elizabeth s’était retirée. Quand je l’entendis, toute la vérité s’imposa d’un coup à mon esprit. Mes bras tombèrent sans force le long de mon corps. Chacun de mes muscles, chacune de mes fibres s’immobilisa. Je sentais mon sang couler goutte à goutte dans mes veines et, aux extrémités de mes membres, le picotement qu’il y provoquait. Je ne demeurai qu’un instant dans cet état. Le cri retentit de nouveau et je me précipitai dans la chambre.
+Elle me laissa. Quelque temps encore, j’arpentai les couloirs de la maison, scrutant le moindre recoin où mon adversaire eût pu trouver refuge. Je ne trouvai pourtant nulle trace de lui et je commençais à me figurer que quelque heureux hasard était intervenu pour l’empêcher de mettre ses menaces à exécution, quand soudain j’entendis un cri perçant et effroyable. Il venait de la chambre où Elizabeth s’était retirée. Quand je l’entendis, toute la vérité s’imposa d’un coup à mon esprit. Mes bras retombèrent. Tout mouvement cessa dans chacun de mes muscles, dans chacune de mes fibres. Je sentais mon sang couler goutte à goutte dans mes veines et, aux extrémités de mes membres, le picotement qu’il y provoquait. Je ne demeurai qu’un instant dans cet état. Le cri retentit de nouveau et je me précipitai dans la chambre.
 
 Grand Dieu ! Que ne suis-je mort à cet instant ! Pourquoi suis-je ici à relater la perte du plus bel espoir et de la plus pure créature de cette terre ? Elle gisait là, sans vie et sans mouvement, jetée en travers du lit, la tête pendante, ses traits pâles et déformés à demi voilés par ses cheveux. De quelque côté que je me tourne, je vois la même silhouette — ses bras exsangues, son corps affaissé que le meurtrier a précipité sur son catafalque nuptial. Comment pouvais-je contempler ce spectacle et vivre encore ? Hélas ! La vie s’obstine et jamais elle ne s’attache à nous si étroitement que lorsque nous la haïssons le plus. Un instant seulement, je perdis le souvenir de tout. Je m’évanouis.
 
 ### Justifier trois décisions de traduction
 
-**L’action interrompue.** La conjecture était en train de se former au moment où le cri l’interrompt. L’imparfait ménage cette place à l’événement. À « je commençais » répond « j’entendis » au passé simple. La traduction du second cri doit également rendre le redémarrage de Victor après un arrêt d’un instant.
+**L’action interrompue.** *Was beginning* place la conjecture en cours à l’imparfait. Le cri qui l’interrompt appelle le passé simple.
 
-**La distance entre la chambre et le récit.** La première interrogation après l’entrée dans la chambre porte sur l’instant où Victor aurait voulu mourir. La suivante concerne sa présence au moment de parler. Le présent revient encore lorsqu’il se tourne et retrouve toujours la même silhouette. Mettre toute la scène au passé effacerait la persistance de cette vision.
+**La distance entre la chambre et le récit.** *Then* renvoie à la nuit du meurtre. Avec *why am I here* puis *I turn, I see*, Victor revient au présent de sa parole et d’une vision qui persiste.
 
-**Le lit des époux.** Un *bier* est un support funèbre sur lequel on dépose le mort. *Catafalque nuptial* maintient le sens funéraire du nom et la contradiction avec l’adjectif. Le lit est encore nommé à la ligne 33. Deux lignes plus loin, *bier* fait voir au même emplacement l’appareil d’une cérémonie funèbre.
+**Le lit des époux.** Au lit de la ligne 33 se superpose, ligne 35, le support funèbre désigné par *bier*. « Catafalque nuptial » maintient ensemble les noces et la mort.
 
 ## Bilan
 
-À la relecture du commentaire, vérifier que chaque interprétation précise qui voit, entend ou touche. À la relecture de la version, suivre dans la marge le passage de la marche au cri, du cri à l’immobilité, de l’immobilité à l’élan. Le dernier point du français tombe avec l’évanouissement.
+Qui voit, entend ou touche dans le commentaire ? Dans la version, suivre la marche, le cri, l’immobilité, l’élan puis l’évanouissement qui en marque la borne.

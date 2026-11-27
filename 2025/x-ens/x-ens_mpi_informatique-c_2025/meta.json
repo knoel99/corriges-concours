@@ -44,5 +44,104 @@
       "modifications": true,
       "perimetre": "Rédaction des 33 questions sur Edmonds, le déterminant de Mahajan–Vinay et le test de Tutte, avec lecture du sujet et du rapport officiels. Trois figures originales, contrôle des arêtes du fac-similé, exécution du code OCaml et C extrait des deux éditions, comparaison de couplages et de déterminants à des oracles indépendants. Précision sur la borne uniforme de Q33 et la possibilité de fermer une boucle en Q28."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33"
+    ],
+    "pages_des_questions": {
+      "1": 5,
+      "2": 5,
+      "3": 6,
+      "4": 6,
+      "5": 7,
+      "6": 7,
+      "7": 8,
+      "8": 8,
+      "9": 8,
+      "10": 8,
+      "11": 9,
+      "12": 9,
+      "13": 9,
+      "14": 10,
+      "15": 10,
+      "16": 10,
+      "17": 11,
+      "18": 11,
+      "19": 11,
+      "20": 11,
+      "21": 11,
+      "22": 13,
+      "23": 13,
+      "24": 14,
+      "25": 14,
+      "26": 15,
+      "27": 16,
+      "28": 16,
+      "29": 17,
+      "30": 17,
+      "31": 17,
+      "32": 18,
+      "33": 19
+    },
+    "origine_attestation": {
+      "commit_du_journal": "42fbe98a9cde1b725805274dbfd2c1b5e1c16774",
+      "phase": "redaction",
+      "date": "2026-11-24",
+      "perimetre": "Rédaction des 33 questions sur Edmonds, le déterminant de Mahajan–Vinay et le test de Tutte, avec lecture du sujet et du rapport officiels. Trois figures originales, contrôle des arêtes du fac-similé, exécution du code OCaml et C extrait des deux éditions, comparaison de couplages et de déterminants à des oracles indépendants. Précision sur la borne uniforme de Q33 et la possibilité de fermer une boucle en Q28.",
+      "sha256_sujet_controle": "ed9c5a276c1004e196bd581176d8676b285ccbc6634d50daed7f8d1b4a56e6b1",
+      "sha256_rapport_controle": "773b17e66b472dcaa632a7ca5d5b5a1550f0f320ebc28ff2b6010c02ad658fde"
+    },
+    "controle_programmes": {
+      "langages": [
+        "OCaml",
+        "C"
+      ],
+      "editions_extraites": [
+        "brut",
+        "guide"
+      ],
+      "resultats": [
+        "1299 graphes verifies en OCaml",
+        "1260 determinants et 64 graphes testes en C.",
+        "1299 graphes verifies en OCaml",
+        "1260 determinants et 64 graphes testes en C."
+      ],
+      "sha256_script_de_verification": "ecb5f868354f9e20f06ee44d88c3cec20396bea8de70b00dca7dabf263925945"
+    },
+    "precision": "Les réponses numérotées ont été retrouvées dans les deux éditions au commit du journal. La pagination provient du fac-similé institutionnel. Les programmes ont été extraits à nouveau de chaque édition pour les contrôles ci-dessus."
+  }
 }

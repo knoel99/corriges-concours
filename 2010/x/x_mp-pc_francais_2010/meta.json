@@ -1,0 +1,76 @@
+{
+  "slug": "x_mp-pc_francais_2010",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Français",
+    "annee": 2010,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "Nelly Wolf, l’argent comme signe et comme intermédiaire du désir",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://upls.fr/wp-content/uploads/2011/04/2010_mp-pc_sujet_ecrit_francais.pdf",
+    "sha256_sujet": "7cbdaec3f2f9925dde85c6c991e1da52c32ff8abf913eeb2cf02a2f7d0f41f4d",
+    "index_sujet": "https://upls.fr/ecole-polytechnique-2/",
+    "code_garde": null,
+    "oeuvres_au_programme": [
+      "Molière, L’Avare",
+      "Émile Zola, L’Argent",
+      "Georg Simmel, Philosophie de l’argent, chapitre III"
+    ],
+    "portee_rapport": "La garde de l’École polytechnique et de l’ESPCI indique une durée de quatre heures et les filières MP et PC. Le rapport commun des huit correcteurs, notamment p. 3 à 6, distingue moyen et intermédiaire, signe et objet du désir. Il demande une discussion de l’extériorité de l’argent.",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://upls.fr/wp-content/uploads/2011/04/2010_mp-pc_sujet_ecrit_francais.pdf",
+        "sha256": "7cbdaec3f2f9925dde85c6c991e1da52c32ff8abf913eeb2cf02a2f7d0f41f4d",
+        "pages": 1,
+        "ecoles": "École polytechnique et École supérieure de physique et de chimie industrielles",
+        "date_capture_utc": "sans capture",
+        "index": "https://upls.fr/ecole-polytechnique-2/"
+      },
+      {
+        "role": "rapport",
+        "url": "https://upls.fr/wp-content/uploads/2011/04/2010_mp-pc_rapport_ecrit_francais.pdf",
+        "sha256": "c3f8582e1c58c85e6e5ac632bf0189bb8b0e36868a422b80d50ae43cc6042a91",
+        "pages": 8,
+        "ecoles": "École polytechnique et École supérieure de physique et de chimie industrielles",
+        "date_capture_utc": "sans capture",
+        "index": "https://upls.fr/ecole-polytechnique-2/"
+      }
+    ],
+    "rapport_jury": "https://upls.fr/wp-content/uploads/2011/04/2010_mp-pc_rapport_ecrit_francais.pdf",
+    "sha256_rapport_jury": "c3f8582e1c58c85e6e5ac632bf0189bb8b0e36868a422b80d50ae43cc6042a91"
+  },
+  "figures": [
+    {
+      "fichier": "figures/desirs-et-prix.svg",
+      "question": "Dissertation",
+      "legende": "Dans le projet de mariage d’Élise avec Anselme, une même condition financière rapproche les futurs alliés selon Harpagon, et contrarie l’union désirée par Élise. Le désir auquel le prix donne accès dépend de celui qui dispose de la décision."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "option_info_2006_2009",
+      "agent": "option_info_2006_2009",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Commentaire et discussion de l’argent signe, moyen et tiers chez Nelly Wolf. Analyse d’une alliance sans dot, du crédit accordé à l’Universelle et du renversement des moyens en fins chez Simmel. Dissertation, guide et schéma dans les deux éditions."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "limites": "Une interprétation argumentée du sujet. Les exemples des œuvres sont paraphrasés sauf indication explicite."
+  }
+}

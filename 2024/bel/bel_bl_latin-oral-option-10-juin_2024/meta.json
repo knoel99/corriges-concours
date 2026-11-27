@@ -1,0 +1,120 @@
+{
+  "slug": "bel_bl_latin-oral-option-10-juin_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Latin (oral option, 10 juin)",
+    "annee": 2024,
+    "modalite": "oral",
+    "intitule": "Explication d’un texte latin · oral à option du 10 juin 2024",
+    "date": "2024-06-10",
+    "preparation": "1 h 30",
+    "duree": "30 minutes, dont 20 minutes d’exposé et 10 minutes de questions"
+  },
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "questions": 4,
+  "sujets": 4,
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/bl_sujets_oraux_latin_10062024.pdf",
+    "sha256_sujet": "280ed67fc9d5638490e0b29112b500b9b389eb8d7d710b2bc3a19d6033d4b622",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_oral_latin.pdf",
+    "sha256_rapport": "9965b3fde6263f4ba4cdd835e35a390b397b1eb2eb339f143bdd25d99cf42b09",
+    "calendrier": "https://www.ens.psl.eu/sujets-des-epreuves-orales-du-concours-bl-session-2024",
+    "sha256_calendrier": "e29fe4638b872109267d01cb2aa3c6865a7957029c7e7119d76cfeeb6ccf2fb9",
+    "edition_comparaison_vers_273": "https://thelatinlibrary.com/vergil/aen4.shtml"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "date": "2026-11-26",
+      "agent": "fui_physique_un",
+      "fournisseur": "codex",
+      "perimetre": "Les quatre passages distribués le 10 juin sont traduits et commentés, avec lecture, notes, entretien et lexiques entiers. Les dix-neuf vers du premier passage suivent le fac-similé, qui omet le v. 273. Les deux derniers appels de notes du dernier passage ont été rapprochés de leur contenu. Contrôle visuel des huit pages et des recommandations du jury de 2024, notamment de sa liste p. 7."
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Énée doit partir",
+      "Nouveau songe prophétique d’Énée",
+      "Position sociale et politique d’Atticus",
+      "Entre-deux-guerres"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Les quatre passages distribués le 10 juin sont traduits et commentés, avec lecture, notes, entretien et lexiques entiers. Les dix-neuf vers du premier passage suivent le fac-similé, qui omet le v. 273. Les deux derniers appels de notes du dernier passage ont été rapprochés de leur contenu.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "passages": [
+        {
+          "titre": "Énée doit partir",
+          "reference": "Virgile, Énéide IV, 265–284",
+          "pages_pdf": [
+            1,
+            2
+          ],
+          "controle": "19 vers imprimés, 6 notes, 42 entrées",
+          "nombre_entrees_lexique": 42
+        },
+        {
+          "titre": "Nouveau songe prophétique d’Énée",
+          "reference": "Virgile, Énéide VIII, 55–73",
+          "pages_pdf": [
+            3,
+            4
+          ],
+          "controle": "19 vers imprimés, 6 notes, 43 entrées",
+          "nombre_entrees_lexique": 43
+        },
+        {
+          "titre": "Position sociale et politique d’Atticus",
+          "reference": "Cornélius Népos, Vie d’Atticus V, 3 – VI, 2",
+          "pages_pdf": [
+            5,
+            6
+          ],
+          "controle": "18 lignes, 3 notes, 33 entrées",
+          "nombre_entrees_lexique": 33
+        },
+        {
+          "titre": "Entre-deux-guerres",
+          "reference": "Cornélius Népos, Vie d’Hamilcar II, 4 – III, 2",
+          "pages_pdf": [
+            7,
+            8
+          ],
+          "controle": "18 lignes, 4 notes, 37 entrées",
+          "nombre_entrees_lexique": 37
+        }
+      ],
+      "rapprochement": "La liste du rapport du jury p. 7 correspond aux quatre pièces du fascicule daté."
+    }
+  },
+  "figures": [
+    {
+      "fichier": "figures/mercure.svg",
+      "question": "Énée doit partir",
+      "legende": "D’une voix à l’autre, l’ordre de Jupiter aboutit à une question qu’Énée doit résoudre."
+    },
+    {
+      "fichier": "figures/tibre.svg",
+      "question": "Nouveau songe prophétique d’Énée",
+      "legende": "Du songe au rite, les verbes du dieu trouvent une réponse dans le corps puis dans la voix d’Énée."
+    },
+    {
+      "fichier": "figures/atticus.svg",
+      "question": "Position sociale et politique d’Atticus",
+      "legende": "L’expérience de l’amitié fournit au lecteur deux points de comparaison pour interpréter le retrait politique."
+    },
+    {
+      "fichier": "figures/hamilcar.svg",
+      "question": "Entre-deux-guerres",
+      "legende": "Les trois hommes du récit sont distingués par les deux liens de parenté qu’explicite le passage."
+    }
+  ]
+}

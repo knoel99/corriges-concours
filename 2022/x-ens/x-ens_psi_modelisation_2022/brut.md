@@ -4,6 +4,10 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Partie 1 · Présentation de l’étude
 
 ### Question 1 · Quels usages pour un modèle cardiaque ?
@@ -211,7 +215,9 @@ La constante de temps est $\tau_a=R_aC_a$. Lorsque le clapet se ferme, on prend 
 
 Pour un plateau de durée $T_h$ dans une période $T$, $Q_{\rm moy}=Q_{\max}T_h/T$. En régime périodique, $\langle p^*\rangle=p_s+R_aQ_{\rm moy}$. Durant le plateau, la pression tend exponentiellement vers $p_s+R_aQ_{\max}$ et, pendant la diastole, vers $p_s$, toujours avec la constante $\tau_a$.
 
-À $\omega_1=10/\tau_a$, la période est $0,628\tau_a$ et la pression ondule autour de sa moyenne sans suivre entièrement les créneaux. À $\omega_2=1/(10\tau_a)$, la période est $62,8\tau_a$ et les deux plateaux deviennent presque accessibles si la fraction de systole est du même ordre que celle de la figure. Le tracé ci-dessous fixe $T_h/T=0,4$ pour illustrer les deux allures sur une phase normalisée.
+À $\omega_1=10/\tau_a$, la période est $0,628\tau_a$ et la pression ondule autour de sa moyenne sans suivre entièrement les créneaux. À $\omega_2=1/(10\tau_a)$, la période est $62,8\tau_a$ et les deux plateaux deviennent presque accessibles si la fraction de systole est du même ordre que celle de la figure. On peut vérifier graphiquement les niveaux en résolvant le raccord aux deux commutations. Posons $a=e^{-T_h/\tau_a}$, $b=e^{-(T-T_h)/\tau_a}$ et $z=(p^*-p_s)/(R_aQ_{\max})$. Le plateau haut mène de $z_{\min}$ à $z_{\max}=1-a+az_{\min}$, puis le plateau bas ramène à $z_{\min}=bz_{\max}$. On obtient $z_{\max}=(1-a)/(1-ab)$ et $z_{\min}=b(1-a)/(1-ab)$. L’ordonnée moyenne vaut toujours $T_h/T$ par intégration du bilan sur une période.
+
+Le tracé ci-dessous fixe $T_h/T=0,4$ pour illustrer les deux allures sur une phase normalisée.
 
 ![Réponses périodiques du Windkessel. Le débit est rapporté à son maximum et la surpression à Ra Qmax. Chaque fenêtre contient deux périodes.](figures/q31-reponses-creneau.svg)
 
@@ -323,7 +329,7 @@ def retard_lin(n, X, Y, rt, DT):
 ```
 Le temps demandé est $(j-f)\Delta T$. Il est entre les indices $j-1$ et $j$ lorsque $f>0$. La préhistoire du sujet est nulle à tout temps strictement négatif. Le calcul utilise seulement des cases déjà connues, y compris $X[n]$ si le retard est inférieur à un pas.
 
-![Pour n = 4 et un retard de 1,35 pas, l’instant voulu correspond à 2,65 pas, entre X[2] et X[3].](figures/q44-retard-fractionnaire.svg)
+![Pour n = 4 et un retard de 1,35 pas, l’instant voulu correspond à 2,65 pas, entre les échantillons d’indices 2 et 3.](figures/q44-retard-fractionnaire.svg)
 
 ### Question 45 · Générateur d’impulsions IPFM
 

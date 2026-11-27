@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le produit scalaire définit le cône dual par des inégalités positives ou nulles. Les quatre parties relient générateurs, projections, faces et intersections de demi-espaces. La dernière question appelle une précision sur le cône réduit à zéro.
 
 ## I. Premiers cônes, duaux et faces
@@ -41,6 +43,8 @@ Si $K$ est vide, l’ensemble engendré ici est vide et fermé. Sinon $d=\min_{x
 ### Question 4.b
 
 Dans $\mathbb R^2$, $K_1=\{(n,1):n\ge1\}$ est fermé et ne contient pas zéro. Les points $(1,1/n)$ sont des multiples d’éléments de $K_1$ et tendent vers $(1,0)$, qui n’est pas un tel multiple. Pour le second cas, $K_2=\{(1/n,1/n^2):n\ge1\}\cup\{0\}$ est compact ; les mêmes points $(1,1/n)$ appartiennent aux demi-droites qu’il engendre et leur limite en est exclue. Aucune des deux hypothèses affaiblies ne suffit en général.
+
+La dimension du contre-exemple intervient. En dimension un, tout ensemble obtenu par ces dilatations est, selon les signes présents dans la partie initiale, vide, réduit à zéro, une demi-droite fermée ou la droite entière. L’échec dans le plan suffit à répondre à la question posée pour les espaces euclidiens de dimension quelconque.
 
 ### Question 5.a
 
@@ -86,6 +90,8 @@ Si $x\in F=C\cap w^\perp$ et $F\ne C$, alors $w\ne0$. Toute boule autour de $x$ 
 
 Si $H=\operatorname{Vect}(C)\ne E$, tout $C$ est dans sa frontière dans $E$. L’implication « appartenir à une face propre entraîne être sur la frontière » subsiste. Sa réciproque peut échouer : pour une demi-droite du plan, tout point non nul est sur la frontière dans le plan et sa seule face propre est le sommet. Dans $H$, l’équivalence se rétablit pour la frontière relative en appliquant 8.a dans cet espace.
 
+Pour identifier précisément les faces de la section relative, décomposons $w=w_H+w_\perp$ suivant $E=H\oplus H^\perp$. Pour $c\in C$, $(w\mid c)=(w_H\mid c)$. Ainsi chaque normale ambiante définit la même face que sa projection sur $H$, et une normale relative fournit une normale ambiante par inclusion. Les points de la frontière relative sont exactement ceux des faces propres, même lorsqu’une normale ambiante non nulle orthogonale à $H$ expose tout $C$.
+
 ### Question 8.c
 
 Soit $x_0$ intérieur et $x\notin C$. Par fermeture et convexité, le segment $x_t=(1-t)x_0+tx$ sort de $C$ en un dernier point $x_{t_*}$ avec $0<t_*<1$. Ce point est frontière. Choisissons par 8.a une face propre $F$ qui le contient. Pour chaque $w\in C^+$ exposant $F$, $w\ne0$ et $(w\mid x_0)>0$ (sinon une boule autour de $x_0$ contiendrait des produits négatifs). Comme $(w\mid x_{t_*})=0$, on obtient $(w\mid x)=-(1-t_*)(w\mid x_0)/t_*<0$ pour tous ces $w$.
@@ -97,6 +103,8 @@ Si $w\in C^+$, chaque $(w\mid c_i)$ est positif ou nul. Pour $x=\sum_i t_i c_i$ 
 ### Question 9.b
 
 Si $C$ engendre $E$, choisissons pour chaque face propre $F$ un $w_F\in C^+$ qui l’expose. On a $C\subset\bigcap_F\{w_F\}^+$ et tout point extérieur est exclu par au moins l’un de ces demi-espaces d’après 8.c. La famille est finie par 9.a. Si $H=\operatorname{Vect}(C)$ est propre, appliquons cette représentation dans $H$, en gardant les normales dans $H$. Dans $E$, ajoutons les demi-espaces définis par les deux signes de chaque vecteur d’une base de $H^\perp$ : leur intersection est exactement $H$. Le cas $C=E$ correspond à une intersection vide.
+
+Plus explicitement, si $u_1,\ldots,u_s$ est une base de $H^\perp$, les deux contraintes $(x\mid u_j)\ge0$ et $(x\mid -u_j)\ge0$ imposent $(x\mid u_j)=0$. Leur conjonction pour tout $j$ donne $x\in H$. On peut alors tester sur $x$ les normales choisies dans $H$.
 
 ### Question 10
 

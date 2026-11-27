@@ -45,6 +45,20 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Rédaction du résumé comparatif de 242 mots, de l’essai de 340 mots et du thème complet en hébreu. Lecture des pages 8 à 15 du PDF, vérification des chiffres et de la photographie générée, des bornes de traduction, des exemples culturels et du sens de lecture des PDF."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Enquête scolaire du dossier hébreu, dénominateurs, formation et usage déclaré."
     }
-  ]
+  ],
+  "date_revision": "2026-11-25"
 }

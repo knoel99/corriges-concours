@@ -8,9 +8,13 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
 Une coloration peut être facile à construire et impossible à modifier sommet par sommet. Le sujet examine ce phénomène avec trois regards différents. La partie I construit des chemins de recoloration, la partie II reconstruit le graphe d’origine à partir de ses colorations et la partie III étudie les pas d’une marche aléatoire. La partie IV remplace les colorations par des ensembles dominants. En partie V, on colore les arêtes et une permutation de deux couleurs débloque la situation.
+
+L’écrit commun de quatre heures a eu lieu le 17 avril 2026, sans calculatrice. Le sommaire de l’ENS répertorie l’épreuve pour Ulm, Lyon, Paris-Saclay et Rennes. [Sujet officiel](https://www.ens.psl.eu/sites/default/files/vpubliee_mp_mpi_info_fond_ulsr_26.pdf) · [Sommaire ENS](https://www.ens.psl.eu/rapports-et-sujets-2026-mpi)
 
 Pour aborder l’épreuve, les exemples I.1–4 et le dessin II.1 fixent les objets. Les questions III.1–6 et V.1–5 s’appuient ensuite sur le cours de probabilités et la parité. La recherche d’un invariant en IV.5 et l’augmentation d’un couplage en V.7 demandent des arguments plus longs. Deux énoncés imprimés, I.12 et III.11, admettent des contre-exemples. Pour chacun le corrigé donne aussi une version démontrable.
 
@@ -36,7 +40,7 @@ Dans l'ordre **$1,2,3,4,5$**, les voisinages antérieurs sont respectivement $\v
 
 #### Solution
 
-Chaque sommet du graphe a au moins trois voisins. Le dernier sommet de tout ordre en a donc au moins trois avant lui. Réciproquement, dans l'ordre $8,7,3,4,9,6,2,5,1$, les nombres de voisins antérieurs valent $0,1,2,2,2,2,3,2,3$. La dégénérescence est **$3$**.
+Les degrés des sommets numérotés de 1 à 9 sont $3,4,4,6,3,3,4,4,3$. Chaque sommet du graphe a donc au moins trois voisins. Le dernier sommet de tout ordre en a donc au moins trois avant lui. Réciproquement, dans l'ordre $8,7,3,4,9,6,2,5,1$, les nombres de voisins antérieurs valent $0,1,2,2,2,2,3,2,3$. La dégénérescence est **$3$**.
 
 
 ![Figure 1 — Nombre de voisins antérieurs dans un ordre du graphe officiel. Le maximum vaut 3 et le degré minimum du graphe entier vaut également 3.](figures/i02-ordre.svg)
@@ -69,6 +73,8 @@ Restreindre l'ordre aux sommets de $H$ préserve leurs positions relatives. Effa
 Parcourir les sommets dans l'ordre donné. Pour $v_i$, marquer dans un tableau les couleurs de ses voisins déjà traités, puis lui donner la première couleur libre dans $\{1,\ldots,d+1\}$. Au plus $d$ couleurs sont interdites. Toute arête reçoit des couleurs distinctes lorsque sa dernière extrémité est traitée.
 
 Lire les listes coûte $O(n+m)$ au total et initialiser ou parcourir les palettes coûte $O((d+1)n)$. On obtient $O(dn+m)$ pour $d\geq1$. Pour $d=0$, écrire explicitement les $n$ couleurs prend $O(n)$.
+
+On peut même éviter de réinitialiser la palette pour chaque sommet. Un tableau de marques, initialisé une seule fois sur $\min(d+1,n)$ couleurs, enregistre l’indice $i$ pour chaque couleur rencontrée chez un voisin antérieur de $v_i$. Si $r_i$ est le nombre de ces voisins, une couleur disponible apparaît parmi les $r_i+1$ premières. La recherche prend donc $O(r_i+1)$. Comme $\sum_i r_i=m$, cette variante coûte $O(n+m)$, écriture de la réponse comprise.
 
 ### Question I.6
 
@@ -255,6 +261,8 @@ Pour chaque sommet $\gamma$ du graphe d'entrée $H$, calculer les composantes de
 
 Par II.6, chaque candidat s'injecte dans $G$ en préservant les arêtes. Par II.7 l'un des candidats est isomorphe à $G$. Le maximum atteint donc les deux effectifs de $G$, et l'injection du candidat conservé devient une bijection préservant exactement les arêtes. L'algorithme restitue $G$ à isomorphisme près.
 
+Pour chiffrer cette première recherche, écrivons $h=|V(H)|$. Construire la matrice d’adjacence de $H$ coûte $O(h^2)$. Pour un centre donné, on examine au plus $h^2$ paires de voisins. Avec cette matrice, balayer les $h$ sommets dénombre leurs voisins communs en $O(h)$ par paire. En répétant pour les $h$ centres, on obtient $O(h^4)$ opérations. Cette borne peut être exponentielle en $|V(G)|$, d’où l’intérêt de la question suivante.
+
 ### Question II.9
 
 > [!INDICATION]
@@ -402,6 +410,9 @@ $$\mathbb E Z=n(1-1/n)^t\longrightarrow\tfrac12,\qquad
 \mathbb E Z^2=\mathbb E Z+n(n-1)(1-2/n)^t\longrightarrow\tfrac34.$$
 En effet, les indicatrices de deux sommets distincts valent toutes deux $1$ lorsque les $t$ tirages ont évité ces deux sommets. Les limites résultent de $\ln(1-x)=-x+O(x^2)$. Cauchy–Schwarz appliqué à $Z\mathbf1_{\{Z>0\}}$ donne $\mathbb P(T>t)=\mathbb P(Z>0)\geq(\mathbb E Z)^2/\mathbb E Z^2$, de limite inférieure au moins $1/3$. La probabilité d'échec ne tend donc pas vers zéro au temps annoncé.
 
+Dans cet exemple, on peut même calculer la limite exacte. Pour $t_n=\lceil n\ln(2n)\rceil$, la formule d’inclusion-exclusion donne
+$$\mathbb P(T\le t_n)=\sum_{j=0}^n(-1)^j\binom nj(1-j/n)^{t_n}.$$
+Pour $j$ fixé, le terme en valeur absolue tend vers $2^{-j}/j!$. En effet, $\binom nj\sim n^j/j!$ et $t_n\ln(1-j/n)=-j\ln(2n)+o(1)$. Il est aussi majoré par $n^j e^{-jt_n/n}/j!\le 2^{-j}/j!$ pour tout $j\le n$. Le majorant étant sommable, la probabilité de couplage tend vers $e^{-1/2}$. Celle de désaccord tend donc vers $1-e^{-1/2}\simeq0{,}393$.
 
 ![Figure 5 — Probabilité exacte qu’il reste un sommet non tiré pour 32 sommets isolés. Le seuil imprimé laisse une probabilité supérieure à 1/n.](figures/iii11-couplage.svg)
 

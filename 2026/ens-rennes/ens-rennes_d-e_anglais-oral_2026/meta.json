@@ -22,7 +22,33 @@
     "sujet_sha256": "2d55b85c57a25cba221345e7a1507fe94316ff8a79cfc4408f35ca3a15ac5248",
     "apercu_sujet_sha256": "044ad1a0f04e7c6bcc169389123f4fa7dbba13ebba04884087b1c4bf119c614b",
     "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2026-1",
-    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-anglais-oral-2026_1793640944998-pdf"
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-anglais-oral-2026_1793640944998-pdf",
+    "reperes_verifies": [
+      {
+        "sujet": 1,
+        "pages_pdf": [
+          1,
+          2
+        ],
+        "repere": "Beyond the AI bubble"
+      },
+      {
+        "sujet": 2,
+        "pages_pdf": [
+          3,
+          4
+        ],
+        "repere": "Urban AI"
+      },
+      {
+        "sujet": 3,
+        "pages_pdf": [
+          5,
+          6
+        ],
+        "repere": "Rising Costs and Competition"
+      }
+    ]
   },
   "figures": [
     {
@@ -31,7 +57,7 @@
       "legende": "Who bears the cost of expanding AI?"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -42,6 +68,32 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "3 exposés en anglais sur chacun des articles, guidage, schéma et relances d'entraînement."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "fin_langues_x_interens",
+      "agent": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Chaque sujet demande une analyse du texte et sa présentation au jury. Les 3 exposés en langue étrangère sont présents dans les deux éditions. Les trois articles cités dans le rapport occupent chacun deux pages. La suite sur l’énergie des centres de données, la gestion des réseaux urbains et les demandes d’aide financière à New York a été relue avec les trois présentations.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Sujet 1 — The different prices of an AI breakthrough",
+      "Sujet 2 — What should a city optimise?",
+      "Sujet 3 — The cost of getting a choice in New York schools"
+    ],
+    "precision": "Chaque sujet demande une analyse du texte et sa présentation au jury. Les 3 exposés en langue étrangère sont présents dans les deux éditions. Les trois articles cités dans le rapport occupent chacun deux pages. La suite sur l’énergie des centres de données, la gestion des réseaux urbains et les demandes d’aide financière à New York a été relue avec les trois présentations."
+  }
 }

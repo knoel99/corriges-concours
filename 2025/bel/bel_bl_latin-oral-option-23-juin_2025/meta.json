@@ -1,0 +1,177 @@
+{
+  "slug": "bel_bl_latin-oral-option-23-juin_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Latin (oral option, 23 juin)",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie pour tous ! / Savoir considérer les esclaves / Il ne faut pas craindre la mort",
+  "questions": 0,
+  "sujets": 3,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/latin_23_juin.pdf",
+    "sujet_sha256": "267839d70cfd8a48cab210111953d45b9bb5eafbcafb70941ff6deac88328ffe",
+    "pages_pdf": "1–6",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_latin_oral_option.pdf",
+    "rapport_sha256": "d94d3b6be4704b6f827667017fadd878461b3097e48fe2f820f4dcdd0a4e3ecf",
+    "index_oraux": "https://www.ens.psl.eu/sujets-des-epreuves-orales-du-concours-bl-session-2025-0",
+    "index_oraux_sha256": "391af10509e2aaed3272651aa1c8107a143ea6f36de76d7ca95a916357380ce1",
+    "index_session": "https://www.ens.psl.eu/rapports-et-sujets-du-concours-2025-section-des-lettres-groupe-bl",
+    "index_session_sha256": "5c8c1e2d1a4820a38b0514443293fe832e3f5611808955e98dff4c6860b5e500"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/noblesse.svg",
+      "legende": "De la lumière offerte à tous à la noblesse que les portraits ne confèrent pas.",
+      "sujet": "Philosophie pour tous !",
+      "pages_source": [
+        1,
+        2
+      ],
+      "lignes": [
+        1,
+        12
+      ]
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/parole-au-banquet.svg",
+      "legende": "Deux usages de la parole au banquet mettent le proverbe à l’épreuve.",
+      "sujet": "Savoir considérer les esclaves",
+      "pages_source": [
+        3,
+        4
+      ],
+      "lignes": [
+        1,
+        13
+      ]
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/temps-de-la-vie.svg",
+      "legende": "Du dilemme sur le sort de l’âme à l’expérience du temps écoulé.",
+      "sujet": "Il ne faut pas craindre la mort",
+      "pages_source": [
+        5,
+        6
+      ],
+      "lignes": [
+        1,
+        13
+      ]
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Traductions intégrales des 12, 13 et 13 lignes de Sénèque, présentation, lecture, construction et commentaire littéraire de chaque extrait dans les deux éditions ; contrôle des trois notes et des trois lexiques, attribution aux lettres 44, 47 et 24 dans le rapport.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
+    },
+    {
+      "phase": "revision",
+      "fournisseur": "codex",
+      "agent": "x_hist_1986",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture des trois extraits et de leurs lexiques sur le fascicule et le rapport du jury. Ajout d’un schéma argumentatif par extrait dans les deux éditions. Correction de la construction admonuero ut te iudices et de la relation de Lucilius à ses devanciers. Vérification des douze groupes de traduction et des six insertions vectorielles."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "sujets_entierement_traites": [
+      "Philosophie pour tous !",
+      "Savoir considérer les esclaves",
+      "Il ne faut pas craindre la mort"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "redaction",
+      "sha256_sujet_controle": "267839d70cfd8a48cab210111953d45b9bb5eafbcafb70941ff6deac88328ffe",
+      "perimetre": "Traductions intégrales des 12, 13 et 13 lignes de Sénèque, présentation, lecture, construction et commentaire littéraire de chaque extrait dans les deux éditions ; contrôle des trois notes et des trois lexiques, attribution aux lettres 44, 47 et 24 dans le rapport."
+    }
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "sha256": "267839d70cfd8a48cab210111953d45b9bb5eafbcafb70941ff6deac88328ffe",
+      "url": "https://www.ens.psl.eu/sites/default/files/latin_23_juin.pdf",
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "ec58a98e6717d3ae5a69cc32d03dc7a2eeae3aab4a042a1fdbdb4c81a99d0419"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "5aea27b9b0be9d3ee8e52713ba64414693a1dc3e68e88a91ffefd3aafa4c4a84"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "b817dabf2d100061174b3332b58db08c71585d1f3f1fcb001e2f6b8f9956d032"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "ff502678f8bac0c4354fbe594ad0e193ab5b9476196a3684eb77ebe828d32c9b"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "a1f96b6d75bcf9451c5850ff077e80f6266991848e7c965f318131d35bef0d34"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "d559687143b1637df5080f969b6db350922a7f29d6ec030dabb2334f9feaa7ba"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "sha256": "d94d3b6be4704b6f827667017fadd878461b3097e48fe2f820f4dcdd0a4e3ecf",
+      "url": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_latin_oral_option.pdf",
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "006107e600970300abe2f889a374c322ccf430ad11499e29fb74cdb34469ffde"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "a227ce99d7c266a242546bbcad43d95969a45faf64e4d2cded6900f7053f0576"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "5d23906db03c77a1a97090a27b93ae7026a99ec7a815c5f7ae213a160c809db6"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "9f9bc11ee7fff0856b57ea6a88ccc76692488a75ed2170e6bb09b14488270836"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "4e9d7e8a8932bfd63a8c4fc0ad1ca64218e4c440d7b2b7545c1227b56cb6a9c8"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "949d9b832f0812acf1bb1192a9d50bcd5f324cce50429ef4be814c4b0d7e6889"
+        }
+      ]
+    }
+  }
+}

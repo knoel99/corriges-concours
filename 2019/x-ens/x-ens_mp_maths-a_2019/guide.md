@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
 L’épreuve du 18 avril 2019 dure quatre heures. Ses 24 numéros contiennent 43 questions et sous-questions. Elle étudie les conjugués des entiers algébriques, les racines de l’unité et les nombres de Salem, pour calculer le plus petit de ces nombres en degré quatre. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/2019_MPI_sujet_MathA.pdf)
@@ -243,7 +245,7 @@ Chaque $z_i$ étant de module un, $|a_k|\le n$ pour tout $k$. La série $\sum a_
 
 #### Solution
 
-La somme des séries géométriques donne $f(z)=\sum_i(1-zz_i)^{-1}$. Or $P'(y)/P(y)=\sum_i1/(y-z_i)$ hors des racines. Pour $0<|z|<1$, on peut prendre $y=1/z$, puisque ses racines ont module un, et obtenir $P'(1/z)/P(1/z)=zf(z)$. On retrouve l’égalité annoncée.
+La somme des séries géométriques donne $f(z)=\sum_i(1-zz_i)^{-1}$. Or $P'(y)/P(y)=\sum_i1/(y-z_i)$ hors des racines. Pour $0<|z|<1$, on peut prendre $y=1/z$, puisque les racines de $P$ ont module un, et obtenir $P'(1/z)/P(1/z)=zf(z)$. On retrouve l’égalité annoncée.
 
 ### Question 11c
 
@@ -526,7 +528,9 @@ $t_n=\alpha_n+1/\alpha_n>2$ est réel et $s_n=6+n-t_n$ aussi. Les deux nombres s
 
 #### Solution
 
-Le discriminant de $Q_n$ vaut $\Delta_n=n^2+8n+4=(n+4)^2-12$. Pour $n\ge3$, $\Delta_n-(n+3)^2=2n-5>0$, donc $\Delta_n$ est strictement entre les deux carrés consécutifs $(n+3)^2$ et $(n+4)^2$. Pour $n=1,2$, les valeurs $13,24$ ne sont pas non plus des carrés. La racine carrée d’un entier n’est rationnelle que si elle est entière. Les deux racines $t_n,s_n$ du trinôme sont ainsi irrationnelles.
+Une preuve courte utilise directement les valeurs du trinôme. On a $Q_n(1)=3$ et $Q_n(2)=-n<0$. Comme $t_n>2$, il vient $1<s_n<2$. Or toute racine rationnelle de ce trinôme unitaire entier serait entière. Ainsi $s_n$ est irrationnel et $t_n=n+6-s_n$ aussi.
+
+On peut également contrôler ce résultat en calculant les deux racines. Le discriminant de $Q_n$ vaut $\Delta_n=n^2+8n+4=(n+4)^2-12$. Pour $n\ge3$, $\Delta_n-(n+3)^2=2n-5>0$, donc $\Delta_n$ est strictement entre les deux carrés consécutifs $(n+3)^2$ et $(n+4)^2$. Pour $n=1,2$, les valeurs $13,24$ ne sont pas non plus des carrés. La racine carrée d’un entier n’est rationnelle que si elle est entière. Les deux racines $t_n,s_n$ du trinôme sont ainsi irrationnelles.
 
 ### Question 23b
 

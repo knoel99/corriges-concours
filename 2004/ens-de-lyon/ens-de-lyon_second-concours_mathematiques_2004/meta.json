@@ -31,6 +31,53 @@
       "perimetre": "Rédaction sur l’original commun Ulm–Lyon. Suivi des deux demi-sauts aux bornes en I.5, contre-exemple à la minoration en II.2 sur la première unité, transformée et limite contrôlées, modèle probabiliste précisé. Graphique exact du nombre moyen sur [0,4].",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "x_maths_b_anciennes",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Confrontation des 23 rubriques des deux éditions aux 6 pages du sujet. Conventions aux sauts, borne taubérienne, intégrale de la constante de stationnement et modèle probabiliste contrôlés. III.1 et III.2 correspondent aux deux demandes finales sans numéro. Courbe des espérances contrôlée."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7",
+      "I.8",
+      "I.9",
+      "I.10",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "II.8",
+      "II.9",
+      "II.10",
+      "II.11",
+      "III.1",
+      "III.2"
+    ],
+    "precision": "Confrontation des 23 rubriques des deux éditions aux 6 pages du sujet. Conventions aux sauts, borne taubérienne, intégrale de la constante de stationnement et modèle probabiliste contrôlés. III.1 et III.2 correspondent aux deux demandes finales sans numéro. Courbe des espérances contrôlée.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "6312bf77c1729934b7fab16577326aa46718ff7b38b1279c51b049dc35e23522",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Confrontation des 23 rubriques des deux éditions aux 6 pages du sujet. Conventions aux sauts, borne taubérienne, intégrale de la constante de stationnement et modèle probabiliste contrôlés. III.1 et III.2 correspondent aux deux demandes finales sans numéro. Courbe des espérances contrôlée.",
+      "commit_redaction_anterieure": "3f7dccabf7cefad67fd724065403993ac84b78c1"
+    }
+  }
 }

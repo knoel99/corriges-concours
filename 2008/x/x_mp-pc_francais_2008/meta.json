@@ -1,0 +1,78 @@
+{
+  "slug": "x_mp-pc_francais_2008",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Français",
+    "annee": 2008,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "Paul Veyne et les issues prétendument normales de l’histoire",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://upls.fr/wp-content/uploads/2011/04/2008_mp-pc_sujet_ecrit_francais.pdf",
+    "sha256_sujet": "5e0820948b4331fd8220c41f0701a6771e7451a2fb430c77bf14370b5b9a87c6",
+    "index_sujet": "https://upls.fr/ecole-polytechnique-2/",
+    "code_garde": null,
+    "oeuvres_au_programme": [
+      "Pierre Corneille, Horace",
+      "François-René de Chateaubriand, Mémoires d’outre-tombe, livres IX à XII",
+      "Karl Marx, Le Dix-huit Brumaire de Louis Bonaparte"
+    ],
+    "portee_rapport": "La garde de l’X et de l’ESPCI annonce une composition de quatre heures en MP et PC. Le rapport commun de sept pages, conservé par Internet Archive, analyse notamment la portée de « rationnelle », de « raisonnable » et d’« intrigue » (p. 4 à 6).",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://upls.fr/wp-content/uploads/2011/04/2008_mp-pc_sujet_ecrit_francais.pdf",
+        "sha256": "5e0820948b4331fd8220c41f0701a6771e7451a2fb430c77bf14370b5b9a87c6",
+        "pages": 1,
+        "ecoles": "École polytechnique et École supérieure de physique et de chimie industrielles",
+        "url_originale": "http://www.polymedia.polytechnique.fr/EnLignes/Files/08_ComposFranc.pdf",
+        "date_capture_utc": "sans capture",
+        "index": "https://upls.fr/ecole-polytechnique-2/"
+      },
+      {
+        "role": "rapport",
+        "url": "https://web.archive.org/web/20090425190952id_/http://gargantua.polytechnique.fr:80/siatel-web/linkto/?objectId=DOCF0009000003C400000000000004B100000000",
+        "sha256": "f244e240100264eb8efdd84133ebd638d6a285e58bce3bd9d38b007ec55b242b",
+        "pages": 7,
+        "ecoles": "École polytechnique et École supérieure de physique et de chimie industrielles",
+        "url_originale": "http://gargantua.polytechnique.fr:80/siatel-web/linkto/?objectId=DOCF0009000003C400000000000004B100000000",
+        "date_capture_utc": "2009-04-25T19:09:52Z",
+        "index": "https://web.archive.org/web/20090504222753/http://www.polytechnique.fr:80/concours/sujets/sujet08/sujet08.htm"
+      }
+    ],
+    "rapport_jury": "https://web.archive.org/web/20090425190952id_/http://gargantua.polytechnique.fr:80/siatel-web/linkto/?objectId=DOCF0009000003C400000000000004B100000000",
+    "sha256_rapport_jury": "f244e240100264eb8efdd84133ebd638d6a285e58bce3bd9d38b007ec55b242b"
+  },
+  "figures": [
+    {
+      "fichier": "figures/proces-et-victoire.svg",
+      "question": "Dissertation",
+      "legende": "Le jugement de Tulle suit la victoire. Le service rendu à Rome explique le pardon royal. Cette raison politique laisse entière la question de la justice due à Camille."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "option_info_2006_2009",
+      "agent": "option_info_2006_2009",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Analyse du refus de la téléologie chez Veyne, discussion des forces collectives et des convictions providentialistes à l’épreuve du dénouement dans les trois œuvres, rédaction et schéma commenté des deux éditions."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "limites": "Une interprétation argumentée du sujet. Les exemples des œuvres sont paraphrasés sauf indication explicite."
+  }
+}

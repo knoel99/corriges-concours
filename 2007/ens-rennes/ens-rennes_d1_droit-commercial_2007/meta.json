@@ -1,0 +1,59 @@
+{
+  "slug": "ens-rennes_d1_droit-commercial_2007",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Droit commercial",
+    "annee": 2007,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "intitule": "La commémoration du bicentenaire du Code de commerce",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/annales-2007-concours-d1_1423059780504-pdf#page=9",
+    "sujet_sha256": "0f7a7f75322511a59614c2cd4fa6968b911a11d5b0428262b09f81ae76838ff0",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "references_complementaires": {
+      "Code de 1807, Bulletin des lois": "https://upload.wikimedia.org/wikipedia/commons/4/45/Code_de_commerce%2C_1807.pdf",
+      "Ordonnance de codification du 18 septembre 2000": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000219662",
+      "Code de commerce en avril 2007": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000005634379/2007-04-01/"
+    }
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "section": "I-B",
+      "fichier": "figures/qualifier-commerce.svg",
+      "legende": "La qualification d’un acte et celle de son auteur commandent des conséquences différentes."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "section": "II-B",
+      "fichier": "figures/deux-codifications.svg",
+      "legende": "La recodification rassemble des règles dont les innovations matérielles sont souvent antérieures."
+    }
+  ],
+  "redaction": "Dissertation et parcours guidé sur l’héritage du Code de 1807, la décodification et la recodification de 2000–2007, avec deux illustrations portant sur la commercialité et les nouvelles fonctions du Code.",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite/commercial",
+      "session": "rennes_droit_suite/commercial",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Dissertation et parcours guidé sur l’héritage du Code de 1807, la décodification et la recodification de 2000–2007, avec deux illustrations portant sur la commercialité et les nouvelles fonctions du Code."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}

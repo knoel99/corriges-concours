@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le cahier de quatre heures traite les âges des mères, une famille de courbes et le contrôle de roulements à billes. Le tableau de régression et la dernière question de durée de vie demandent de préciser les conventions de calcul.
 
 ## Exercice 1. Âge des mères à la naissance du premier enfant
@@ -52,6 +54,8 @@ La densité maximale vaut $8\,\%$ par an. Deux classes sont modales, $[27,29[$ e
 
 La moyenne des bornes inférieures pondérées vaut $0{,}13(15)+0{,}25(23)+0{,}16(27)+0{,}16(29)+0{,}18(31)+0{,}12(35)=26{,}44$. Avec les bornes supérieures $23,27,29,31,35,45$, la même somme vaut $31{,}04$. La moyenne réelle vérifie donc $26{,}44\le\bar a<31{,}04$ ans. Les extrémités sont optimales sans information sur les âges au sein des classes.
 
+L’encadrement est optimal sous le modèle continu. En concentrant chaque classe sur son extrémité gauche, on atteint $26{,}44$. Pour $0<\varepsilon<2$, placer toutes les mères de chaque classe à $\varepsilon$ an de sa borne droite donne une moyenne $31{,}04-\varepsilon$. Les mêmes fréquences autorisent ainsi une moyenne aussi proche que voulu de la borne supérieure.
+
 ### Question 1.2.e
 
 Les fréquences cumulées atteignent $13\,\%$, $38\,\%$, puis $54\,\%$. Le rang médian tombe donc dans $[27,29[$. On ne peut resserrer cet intervalle sans connaître la répartition des $16\,\%$ d’observations dans cette classe.
@@ -73,6 +77,11 @@ Les facteurs polynôme et exponentielle sont dérivables sur $\mathbb R$. On obt
 ### Question 2.I.3
 
 La dérivée a le signe de 2.I.1. De $-\infty$ à zéro, $f_n$ décroît de $+\infty$ à zéro. De zéro à $2/n$ elle croît de zéro à $4e^{-2}$. De $2/n$ à $+\infty$ elle décroît vers zéro. Les limites extrêmes sont celles données dans l’énoncé.
+
+| $x$ | $-\infty$ |  | $0$ |  | $2/n$ |  | $+\infty$ |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| $f_n'(x)$ |  | $-$ | $0$ | $+$ | $0$ | $-$ |  |
+| $f_n(x)$ | $+\infty$ | $\searrow$ | $0$ | $\nearrow$ | $4e^{-2}$ | $\searrow$ | $0$ |
 
 ### Question 2.I.4
 
@@ -138,6 +147,16 @@ $P(\bar D\cap E)=0{,}95\times0{,}04=0{,}0380$.
 
 Les événements $D,\bar D$ forment un système complet. Les deux contributions incompatibles donnent $P(E)=0{,}0400+0{,}0380=0{,}0780$.
 
+On peut suivre les deux erreurs du contrôle sur 10 000 billes théoriques aux proportions données.
+
+| État | Éliminées | Conservées | Ensemble |
+|---|---:|---:|---:|
+| Défectueuses | 400 | 100 | 500 |
+| Conformes | 380 | 9 120 | 9 500 |
+| Ensemble | 780 | 9 220 | 10 000 |
+
+Pour les deux questions suivantes, les dénominateurs sont les totaux des colonnes de décision.
+
 ### Question 3.I.5
 
 $P(\bar D\mid E)=0{,}038/0{,}078=0{,}4872$ à $10^{-4}$ près.
@@ -197,3 +216,7 @@ Les bornes réduites sont $-1{,}5$ et $1{,}5$, d’où $P(9{,}97\le Z\le10{,}03)
 ### Question 3.IV.2
 
 Au sens littéral, $\mathbb ET=3$, $\operatorname{sd}(T)=0{,}3$. Si $\ln T\sim\mathcal N(\mu,s^2)$, alors $s^2=\ln(1+0{,}3^2/3^2)=\ln(1{,}01)$ et $\mu=\ln3-s^2/2$. La probabilité vaut $\Phi((\ln10-\mu)/s)=\Phi(12{,}1196)\simeq1{,}0000$. Une autre convention donne comme paramètres les moments du logarithme. Si l’énoncé entend $\ln T\sim\mathcal N(3,0{,}3^2)$, on obtient $\Phi((\ln10-3)/0{,}3)=0{,}0100$. Ces lectures correspondent à des durées moyennes différentes.
+
+En effet, pour $U=\ln T$ normale de paramètres $(\mu,s^2)$, $\mathbb E(e^{kU})=\exp(k\mu+k^2s^2/2)$. En prenant $k=1$ et $k=2$, on obtient
+$$\frac{\mathbb E(T^2)}{\mathbb E(T)^2}=e^{s^2}=1+\frac{\operatorname{Var}(T)}{\mathbb E(T)^2}.$$
+C’est le rapport sans unité $0{,}3^2/3^2$ qui intervient lorsque les moments portent sur la durée mesurée en années.

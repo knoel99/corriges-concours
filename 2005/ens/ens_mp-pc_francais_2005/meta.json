@@ -1,0 +1,66 @@
+{
+  "slug": "ens_mp-pc_francais_2005",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Français",
+    "annee": 2005,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "Paul Valéry, la surface humaine et la substance du vivant",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2005/sujet-2005-ecrit-mp_pc_francais.pdf",
+    "sha256_sujet": "095a811c22f24b3e8899dfd0fb276a0c82bf95b22570cb37fffba12304608316",
+    "index_sujet": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2005",
+    "code_garde": "ULC 526",
+    "oeuvres_au_programme": [
+      "Jean de La Fontaine, Fables, livres VII à XI",
+      "Étienne Bonnot de Condillac, Traité des animaux",
+      "Franz Kafka, La Métamorphose"
+    ],
+    "portee_rapport": "Le cahier ULC 526, d’une page, porte les ENS de Paris, Lyon et Cachan et les filières MP et PC. Il attribue le texte à *Tel quel* et nomme les trois œuvres. Le registre de cette épreuve comprend le sujet seul.",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2005/sujet-2005-ecrit-mp_pc_francais.pdf",
+        "sha256": "095a811c22f24b3e8899dfd0fb276a0c82bf95b22570cb37fffba12304608316",
+        "pages": 1,
+        "ecoles": "ENS de Paris, de Lyon et de Cachan",
+        "url_originale": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2005/sujet-2005-ecrit-mp_pc_francais.pdf",
+        "date_capture_utc": "sans capture",
+        "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2005"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/surface-et-reconnaissance.svg",
+      "question": "Dissertation",
+      "legende": "Trois niveaux de description de Gregor. Une observation exacte du corps peut encore manquer la personne qui éprouve ce qui lui arrive."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "option_info_2006_2009",
+      "agent": "option_info_2006_2009",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction complète et guidée sur la gradation de Valéry, avec les animaux-machines du Discours à Madame de La Sablière, le raisonnement analogique de Condillac et la scène du violon chez Kafka. Le schéma suit l’épreuve de reconnaissance de Gregor."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "limites": "Une interprétation argumentée du sujet. Les exemples des œuvres sont paraphrasés sauf indication explicite."
+  }
+}

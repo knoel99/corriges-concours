@@ -1,0 +1,67 @@
+{
+  "slug": "x-ens_mp-pc-psi_chinois_2017",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Chinois",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "Comment les familles chinoises accueillent-elles la politique des deux enfants ?",
+  "questions": 2,
+  "redaction": "Synthèse titrée des quatre documents sur la réception de la politique des deux enfants, avec lecture du dessin et des bases de l’enquête, puis opinion chinoise sur les prévisions démographiques et économiques.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/11/2017_MPPC_sujet_eChinois.pdf",
+    "sha256_sujet": "bbe44d21d9a448b80c00bf14a3e0dfafee2a5bb534002af3409e7f2077821b3f",
+    "pages_sujet": 7,
+    "code_garde": "XEULCR",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2017/",
+    "reference_du_texte": "A1, 环球时报, 31 octobre 2015. A2, 人民日报, 8 août 2016. A3, 中国青年报, 27 novembre 2014. A4, dessin de 人民网. La page 6 ne précise pas l’auteur ni le titre de l’éditorial B.",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/11/17_MP-PC_rap_eChinois.pdf",
+    "sha256_rapport_jury": "fefec5b4497c854358fd706241b003602ba6fb067ecf093a92417b7929975f74",
+    "autre_publication_sujet": "https://www.ens.psl.eu/sites/default/files/2017_MPPCPSI_sujet_chinois.pdf",
+    "sha256_autre_publication_sujet": "44973fe0e5ffad54977b8722507835a1a692a9245565703d09f4ef2557856df7",
+    "precision_rapport": "La garde de l’épreuve vise MP, PC et PSI. L’en-tête du rapport et les résultats qu’il présente sont limités à MP et PC."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/freins-demande.svg",
+      "legende": "Les trois premières raisons données pour expliquer l’absence de demande, enquête de 2014, document A3."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Deux pages du rapport sur la synthèse, le texte d’opinion et les difficultés de langue, avec vérification des limites de filière."
+    },
+    {
+      "phase": "redaction",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Synthèse titrée des quatre documents sur la réception de la politique des deux enfants, avec lecture du dessin et des bases de l’enquête, puis opinion chinoise sur les prévisions démographiques et économiques."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  }
+}

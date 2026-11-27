@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Le point de vue du récit
 
 Quinte-Curce raconte la rencontre d’Alexandre et de la reine des Amazones dans son *Histoire d’Alexandre le Grand* (livre VI). L’épreuve commune d’Ulm demande une version en quatre heures. Le récit interrompt la rencontre pour décrire les Amazones, puis rapporte leurs paroles au style indirect. Conserver les changements de temps et les relais de parole permet de traduire la représentation antique de ce peuple en la laissant à son narrateur.
@@ -29,6 +31,8 @@ La rencontre reprend à l’imparfait. *Intuebatur* est déponent et fait de Tha
 ## La demande et ses suites
 
 ![Figure 1 — Suivre les sujets du discours indirect](figures/discours-reine.svg)
+
+À côté de chaque verbe du discours indirect, écrire le nom qui remplacerait son sujet. Vérifier particulièrement la différence entre celui qui accorde la permission et celle qui en ferait usage.
 
 *Interrogata* est passif. La reine reçoit la question et en donne la réponse. Après *fateri*, on peut rétablir *se* devant les infinitifs futurs *retenturam [esse]* et *reddituram [esse]*. Leurs formes féminines assurent que les promesses viennent de la reine. Au milieu de ce discours, *ipse* est masculin et sujet de *generaret*. Le français peut lever cette alternance en nommant successivement le père et la mère.
 

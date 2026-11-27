@@ -1,0 +1,74 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_philosophie-peut-on-dire-de-lhistoire-quelle-est-depourvue-de-sens-oral_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Philosophie — Peut-on dire de l’histoire qu’elle est dépourvue de sens (oral)",
+    "annee": 2019,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie — Peut-on dire de l’histoire qu’elle est dépourvue de sens (oral)",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/philo.pdf",
+    "sha256_sujet": "e4d2e0b125bc27ca5c2d671e569ffb36314a5aab9fc5c2b9eaf08567862179a1",
+    "reperage": "Feuillet de philosophie orale, page unique, candidat 4. Consigne commune « Développez et commentez ». Sujet attribué : Peut-on dire de l’histoire qu’elle est dépourvue de sens ?",
+    "index": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2019-lettres",
+    "pages_sujet": 1,
+    "candidat": 4,
+    "attentes_generales_jury": "https://www.ens.psl.eu/IMG/file/internationale/2008/Lettres/Lettres.pdf",
+    "reference_suffrage_1848_1850": "https://www2.assemblee-nationale.fr/decouvrir-l-assemblee/juniors/histoire/1848-1852-la-iie-republique/les-faits"
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Exposé du candidat 4",
+      "legende": "Trois jugements possibles devant un monument aux morts",
+      "numero": 1
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet original. Exposé argumenté sur le sujet attribué, exemples et objections, préparation guidée de l’entretien et schéma des distinctions conceptuelles."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "philosophie_sil_2019_candidats_1_2_4",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Confrontation de l’exposé et du guidage au sujet du candidat 4. Cours des événements et connaissance du passé ; distinction entre causalité, finalité et valeur attribuée. 1848 et restriction du vote en 1850, limites d’un progrès local, fil conducteur cosmopolitique chez Kant. Benjamin et l’attention aux vaincus ; archives et cérémonies devant un monument, objection sur la signification donnée après coup. Reprise du schéma et des relances proposées."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Candidat 4. Peut-on dire de l’histoire qu’elle est dépourvue de sens ?"
+    ],
+    "elements_verifies": [
+      "Le feuillet d’une page attribue une question distincte à chacun des quatre candidats. Le périmètre de cette paire est la question de la ligne 4.",
+      "Cours des événements et connaissance du passé ; distinction entre causalité, finalité et valeur attribuée.",
+      "1848 et restriction du vote en 1850, limites d’un progrès local, fil conducteur cosmopolitique chez Kant.",
+      "Benjamin et l’attention aux vaincus ; archives et cérémonies devant un monument, objection sur la signification donnée après coup."
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

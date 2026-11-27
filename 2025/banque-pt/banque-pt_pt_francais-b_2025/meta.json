@@ -1,0 +1,97 @@
+{
+  "slug": "banque-pt_pt_francais-b_2025",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français B",
+    "annee": 2025
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2025/fr_b_2025_pt.pdf",
+    "sujet_sha256": "5ba9d3cd2451a99661aa72068f8194f658293290a7a642231de3c86593331f11",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2025/rapport_fra_b_ecrit_2025.pdf",
+    "rapport_sha256": "af9aa6a06fd55d0275d9088dcd424f39f29c5a686ceea4fba5ee366e0272e755",
+    "programme_officiel": "https://www.education.gouv.fr/bo/2024/Hebdo29/ESRS2418417A",
+    "theme": "La communauté et l’individu",
+    "oeuvres_au_programme": [
+      "Eschyle, Les Suppliantes et Les Sept contre Thèbes (traduction de Paul Mazon)",
+      "Spinoza, Traité théologico-politique, préface et chapitres XVI à XX",
+      "Edith Wharton, Le Temps de l’innocence (traduction de Madeleine Taillandier)"
+    ],
+    "source_coefficients": "https://www.banquept.fr/documents/livret/2025/Livret_PT_2025.pdf#page=13",
+    "admissibilite_admission": "ENS Paris-Saclay et ENS Rennes, admission seule, coefficient 4",
+    "programme_sha256": "5e329586a757853b0b1eff03cc2b63acc89b80a4fb972e0607ca23f08bddbb19",
+    "mots_du_texte_selon_le_sujet": 1455
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "Comment les normes se transmettent-elles ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle des bornes du passage de Lipovetsky, des dix groupes de vingt mots, de la différence entre individualité antique et authenticité moderne, et du traitement des deux tragédies d’Eschyle. Ajustement du titre du schéma et de la mise en page de la conclusion après lecture des PDF. Rédaction des deux éditions, vérification du programme et réalisation du schéma."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Résumé",
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Résumé",
+        "page_pdf": 2,
+        "page_pdf_fin": 4,
+        "page_consigne": 5,
+        "perimetre": "Le texte va de l’idéal de concordance avec soi (p. 2) à la distinction entre franchise envers autrui et sincérité envers soi (p. 4). Les deux consignes sont p. 5.",
+        "mots_demandes": 200,
+        "mots_admis": [
+          180,
+          220
+        ],
+        "mots_par_paragraphe": [
+          76,
+          81,
+          43
+        ],
+        "mots_rediges": 200,
+        "points": 8
+      },
+      {
+        "question": "Dissertation",
+        "page_pdf": 5,
+        "page_pdf_fin": 5,
+        "perimetre": "Les tragédies d’Eschyle, le traité de Spinoza et le roman de Wharton confirment-ils la primauté de la conformité aux usages sur les pensées et les sentiments, dans la reconduction d’un ordre commun ?",
+        "points": 12
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

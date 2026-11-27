@@ -1,0 +1,78 @@
+{
+  "slug": "bel_al_espagnol-theme-lyon_2018",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Espagnol (thème Lyon)",
+    "annee": 2018
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2018-10/2018%20%C3%A9preuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=11",
+    "sujet_sha256": "36548d14a5bc4863106fd5bfe41b30654f210f6968be40d6374c992c20da793a",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-11/Fascicule%20ESPAGNOL_2018.pdf#page=10",
+    "sha256_rapport_jury": "8d5d844acb570fe13fcbf40b578e8d2a3ecbba55c014764080ef0319ac6716c5",
+    "pages_rapport_verifiees": [
+      10,
+      11,
+      12
+    ],
+    "ouvrage": "Marguerite Yourcenar, Alexis (1929).",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2018"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Proposition de thème",
+      "legende": "Qui éprouve la joie de vivre ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lyon_ses_sources",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Feuillet entier, de « Je compris alors » à « pour l’accepter ». Le destinataire réapparaît dans les dernières lignes. Traduction originale, explication des difficultés et schéma « Qui éprouve la joie de vivre ? »."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Marguerite Yourcenar, Alexis (1929)."
+    ],
+    "note": "Traduction pédagogique originale. Les droits sur le texte français appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Proposition de thème"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Proposition de thème",
+        "page_pdf": 11,
+        "page_pdf_fin": 11,
+        "perimetre": "Feuillet entier, de « Je compris alors » à « pour l’accepter ». Le destinataire réapparaît dans les dernières lignes."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

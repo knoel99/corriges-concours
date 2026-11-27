@@ -1,0 +1,80 @@
+{
+  "slug": "bel_al_allemand-theme-lyon_2018",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Allemand (thème Lyon)",
+    "annee": 2018
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2018-10/2018%20%C3%A9preuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=8",
+    "sujet_sha256": "36548d14a5bc4863106fd5bfe41b30654f210f6968be40d6374c992c20da793a",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-11/Fascicule%20ALLEMAND_2018.pdf#page=8",
+    "sha256_rapport_jury": "ce5e56e95856b9436b9623cd0fa513b8bf61349c07f67319f7ef63fd5e4050ca",
+    "pages_rapport_verifiees": [
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "ouvrage": "Jean-Christophe Rufin, La Salamandre (2005).",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2018"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Proposition de thème",
+      "legende": "Un enfant, deux prénoms"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lyon_ses_sources",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Cinq paragraphes, de « À l’époque où naquit » à « que des avantages ». Le marié et le futur consul sont une seule personne. Traduction originale, explication des difficultés et schéma « Un enfant, deux prénoms »."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Jean-Christophe Rufin, La Salamandre (2005)."
+    ],
+    "note": "Traduction pédagogique originale. Les droits sur le texte français appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Proposition de thème"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Proposition de thème",
+        "page_pdf": 8,
+        "page_pdf_fin": 8,
+        "perimetre": "Cinq paragraphes, de « À l’époque où naquit » à « que des avantages ». Le marié et le futur consul sont une seule personne."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

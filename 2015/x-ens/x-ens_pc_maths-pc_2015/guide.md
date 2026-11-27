@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Les valeurs propres des matrices symétriques sont répétées avec multiplicité et rangées dans l’ordre décroissant. Le principe du minimax permet de les comparer sous une perturbation et de décrire exactement les spectres possibles d’une somme en dimension deux.
 
 ## I. Spectre ordonné, minimax et régularité
@@ -203,6 +205,8 @@ Grassmann donne $\dim(U\cap V)\ge\dim U+\dim V-n$, puis $\dim(U\cap V\cap W)\ge\
 
 Prenons les espaces propres cumulés des indices $j,\ldots,n$ de $A$, des indices $k,\ldots,n$ de $B$ et des indices $1,\ldots,j+k-1$ de $C$. La somme de leurs dimensions vaut $2n+1$, donc ils ont un vecteur unitaire commun $x$. Par 2c, $c_{j+k-1}\le x^tCx\le a_j+b_k$. Pour la seconde inégalité, appliquer cette première borne à $A=C+(-B)$ aux indices $j$ et $1$. On obtient $a_j\le c_j-b_n$, donc $a_j+b_n\le c_j$.
 
+Pour la première borne, les trois dimensions sont $n-j+1$, $n-k+1$ et $j+k-1$. Le total vaut $2n+1$ dès que $j+k-1\le n$. Le vecteur commun repère à la fois une borne supérieure pour chacune des formes de $A,B$ et une borne inférieure pour celle de $C$.
+
 ### Question 8a
 
 > [!INDICATION]
@@ -264,6 +268,8 @@ Pour toute famille orthonormale de cardinal $j$, la somme des quotients de $C$ e
 
 Posons $t=a_1+a_2+b_1+b_2$. On a $c_2=t-c_1$ et $a_1+b_2\le c_1\le a_1+b_1$ par 7b et 6b. Les extrémités sont $P=(a_1+b_2,a_2+b_1)$ et $Q=(a_1+b_1,a_2+b_2)$. Pour $P$, l’ordre est assuré par $a_1-a_2\ge b_1-b_2$. Des matrices diagonales respectivement croisées et alignées réalisent $P,Q$. Le segment $L=[P,Q]$ a pour longueur $\sqrt2(b_1-b_2)$, y compris si les deux points coïncident.
 
+En écrivant $d=b_1-b_2\ge0$, on a $Q-P=(d,-d)$. La longueur euclidienne demandée vaut donc $\sqrt{d^2+(-d)^2}=\sqrt2\,d$. Dans l’exemple tracé $d=2$, elle vaut $2\sqrt2$.
+
 ![Figure 1 — Avec les spectres (3, 0) et (2, 0), la trace de la somme vaut cinq. Les couples ordonnés possibles remplissent le segment entre (3, 2) et (5, 0).](figures/segment-des-spectres.svg)
 
 ### Question 10a
@@ -292,3 +298,5 @@ Soit $R_\theta$ la rotation d’angle $\theta$. L’application $\theta\mapsto R
 #### Solution
 
 D’après 4d et 10a–b, la première valeur propre de $D_a+R_\theta D_b R_\theta^t$ varie continûment avec $\theta$. Aux angles zéro et $\pi/2$, on retrouve respectivement $Q$ et $P$. Le théorème des valeurs intermédiaires réalise toute première coordonnée entre les deux bornes, la seconde étant imposée par la trace. Ainsi $L\subset\Sigma$ et, avec 9, $\Sigma=L$.
+
+Pour vérifier directement le segment de la figure, prenons $A=\operatorname{diag}(3,0)$ et $B=R_\theta\operatorname{diag}(2,0)R_\theta^t$. Le déterminant de la somme est $6\sin^2\theta$ et sa trace $5$. Les deux racines de $X^2-5X+6\sin^2\theta$ relient donc $(5,0)$ à $(3,2)$ lorsque $\theta$ va de $0$ à $\pi/2$.

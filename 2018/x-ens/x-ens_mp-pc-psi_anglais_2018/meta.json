@@ -1,0 +1,71 @@
+{
+  "slug": "x-ens_mp-pc-psi_anglais_2018",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Anglais",
+    "annee": 2018,
+    "modalite": "écrit"
+  },
+  "intitule": "Réseaux sociaux, participation démocratique et retour d’expérience de Wael Ghonim",
+  "questions": 2,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  },
+  "mots_hors_titre": {
+    "A": 610,
+    "B": 528
+  },
+  "sources": {
+    "code_garde": "XEULCR",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2018/",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_MPPC_sujet_Angl.pdf",
+    "sujet_sha256": "b9517f87c5c991eebc6fe9e0e77013c20d6091f2b8e986c8470439894fce86d2",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/10/18_MPPC_rapport_eAng.pdf",
+    "rapport_jury_sha256": "405c8dc3b89c1c4ca47ed1359eb9c9ee96ec048d30cef5f6b47584c2e99b5652",
+    "precision": "Le sujet et le rapport annuel ont été consultés. Les 66 % de trafic perdus à Soy502 et les 60 % d’interactions perdues sur des pages slovaques portent sur des mesures différentes."
+  },
+  "redaction": "Deux compositions intégrales en anglais, lecture croisée des quatre pièces du dossier de synthèse et réponse argumentée au document d’opinion. Réseaux sociaux, participation démocratique et retour d’expérience de Wael Ghonim.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/courbes.svg",
+      "legende": "Lecture du graphique de The Economist sur les messages Facebook et Twitter."
+    },
+    {
+      "numero": 2,
+      "question": "A",
+      "fichier": "figures/distribution.svg",
+      "legende": "Le rôle de l’intermédiaire varie avec la fonction examinée."
+    },
+    {
+      "numero": 3,
+      "question": "B",
+      "fichier": "figures/mobilisation.svg",
+      "legende": "La réponse à Friedman demande quelles institutions prolongent une mobilisation."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "anglais_mp_pc_psi_2015_2021",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Deux compositions intégrales en anglais, lecture croisée des quatre pièces du dossier de synthèse et réponse argumentée au document d’opinion. Réseaux sociaux, participation démocratique et retour d’expérience de Wael Ghonim.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}

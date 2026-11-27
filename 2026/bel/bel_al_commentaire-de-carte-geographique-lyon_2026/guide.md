@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Les documents utilisables
 
 En trois heures, les candidats devaient commenter l’extrait du SCAN 25 de 2025 avec l’aide des documents joints, sans atlas ni calque. Le fascicule public fournit l’extrait régional au 1/250 000 (p. 2), les tableaux de l’Insee et les douze communes (p. 3), puis la légende du SCAN 25 (p. 4). La planche A2 au 1/25 000 distribuée en salle manque dans cette archive. Les observations de détail sur les bâtiments, les sites et les remontées sont celles que le jury localise aux pages 10 à 18 de son rapport. Le schéma synthétise ces relations sans reconstituer les tracés de la carte.
@@ -17,6 +19,8 @@ En trois heures, les candidats devaient commenter l’extrait du SCAN 25 de 2025
 Repérer d’abord le coude de la vallée de l’Isère à Moûtiers et sa relation avec Albertville. Puis suivre les embranchements vers les Doron et les stations. À la distance cartographique de 1 cm correspondent 2,5 km sur l’annexe régionale et 250 m sur le SCAN 25 d’examen. Une gare ou un quartier que l’on décrit à la seconde échelle ne peut pas être déduit du seul figuré d’agglomération sur la première.
 
 ![Figure 1 — De Moûtiers aux pôles de la Tarentaise](figures/reseaux-tarentaise.svg)
+
+Dans la légende, réserver un signe au carrefour et un autre aux pôles de séjour. Les relier par les itinéraires visibles sur les cartes IGN permet d’expliquer pourquoi une commune de passage et une commune de station peuvent appartenir au même bassin de vie.
 
 À l’étape suivante, situer un village, une station et un équipement énergétique. Une localité de replat peut mettre en évidence le peuplement hors du fond de vallée. Une remontée reliant deux domaines révèle une centralité qui varie avec la saison. Une retenue reliée à une centrale donne au dénivelé une autre fonction. Relier ces trois observations à Moûtiers évite de produire trois catalogues d’activités.
 

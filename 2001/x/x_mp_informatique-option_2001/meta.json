@@ -1,0 +1,78 @@
+{
+  "slug": "x_mp_informatique-option_2001",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Informatique (option)",
+    "annee": 2001,
+    "modalite": "écrit"
+  },
+  "intitule": "Flots compatibles, triangulations et quatre couleurs",
+  "questions": 22,
+  "redaction": "Résolution des douze questions, y compris la loi du premier échec, l’espérance du coût, les bijections de classement et la recherche finie. Code OCaml et numérotations contrôlés par énumération.",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/x_option-info_mp_2001.pdf",
+    "sha256_sujet": "966da393a37eb500bd4334c0c35025c73bb338fef1531affe27c63bcd0c84947",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.wikiprepa.fr/concours/data/x_option-info_mp_2001.pdf",
+        "sha256": "966da393a37eb500bd4334c0c35025c73bb338fef1531affe27c63bcd0c84947"
+      },
+      {
+        "role": "autre exemplaire",
+        "url": "https://www.doc-solus.fr/prepa/sci/adc/pdf/enonces.pdf/2001/MP_INFO_X_1_2001.enonce.pdf",
+        "sha256": "6e7c274b28478ee1d94e3065a2985f5e9a833072a7c4d2d4f18092eab14b7019"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "question": "7.a",
+      "fichier": "figures/octogone-arbre.svg",
+      "legende": "L’arbre de l’octogone de l’énoncé. Les feuilles sont les sept côtés consécutifs.",
+      "numero": 1
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "arabe_mp_pc_2011_2014",
+      "agent": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Résolution des douze questions, y compris la loi du premier échec, l’espérance du coût, les bijections de classement et la recherche finie. Code OCaml et numérotations contrôlés par énumération."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3.a",
+      "3.b",
+      "3.c",
+      "4.a",
+      "4.b",
+      "4.c",
+      "5",
+      "6",
+      "7.a",
+      "7.b",
+      "7.c",
+      "8",
+      "9.a",
+      "9.b",
+      "9.c",
+      "10.a",
+      "10.b",
+      "11",
+      "12.a",
+      "12.b"
+    ]
+  }
+}

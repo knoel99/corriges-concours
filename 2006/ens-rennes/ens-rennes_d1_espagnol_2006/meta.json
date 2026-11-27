@@ -1,0 +1,58 @@
+{
+  "slug": "ens-rennes_d1_espagnol_2006",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Espagnol",
+    "annee": 2006,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/2006-annales-d1_1423060020336-pdf#page=6",
+    "sha256_sujet": "4b67e1f37e613e3ed5ac38bcebfbf0133e96e763f6d150b1663ac23df319af93",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "publication": "Lola Galán, « Jóvenes sin límites », El País, 15 janvier 2006",
+    "page": 6,
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/2006-rapport-d1_1423060025947-pdf#page=14",
+    "sha256_rapport_jury": "5a4b10141b45d4b82443f4cf8eca29a9ad5869c4afb32faaee00b961ea7cd1f8"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en espagnol"
+    ],
+    "precision": "Version du début du texte à « protocolo y buena educación ». Le titre n’est pas demandé ; les développements ultérieurs éclairent l’expression sur l’autorité."
+  },
+  "longueur_expression": {
+    "mots": 100,
+    "regle": "Commenter en espagnol, en 100 mots, l’affirmation sur la perception du principe d’autorité publique comme dictatorial."
+  },
+  "figures": [
+    {
+      "fichier": "figures/ville.svg",
+      "legende": "Quel usage de la ville pour quels habitants ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Version du début du texte à « protocolo y buena educación ». Le titre n’est pas demandé ; les développements ultérieurs éclairent l’expression sur l’autorité. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

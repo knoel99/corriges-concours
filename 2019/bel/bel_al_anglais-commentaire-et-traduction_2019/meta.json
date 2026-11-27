@@ -17,7 +17,11 @@
   "sources": {
     "sujet": "https://www.ens-lyon.fr/sites/default/files/2019-10/2019%20Commentaire%20et%20traduction%20en%20LVE.pdf#page=4",
     "sujet_sha256": "2bd23d0dbb0cf0decbef400bf4f915dcdf3e0ee739454679f39f79836660887c",
-    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2019-10/Anglais_2019.pdf#page=1"
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2019-10/Anglais_2019.pdf#page=1",
+    "archive_session": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2019",
+    "archive_session_sha256": "8da6137c33487888a82982f7b45c71832d739a2f866d30c280083fdf37f3eb6c",
+    "rapport_sha256": "f297af9fc1abc43060605c759ab05843e83ee0bc18619a83d54a31b4b3e9d881",
+    "rubrique": "Série Lettres et arts, Langues vivantes et Sciences humaines, écrit commun"
   },
   "figures": [
     {
@@ -26,7 +30,7 @@
       "legende": "Trois usages du nom dans le récit"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -37,6 +41,22 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Commentaire en anglais sur l’ensemble de l’extrait de John Irving, version française depuis le jugement sportif de Cromwell jusqu’à Dover, guide sur la conjecture et les registres du récit, schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rétablissement du double peut-être et distinction entre les avant-postes et la colonie de Dover. Précision sur la parole adressée au lecteur et le contraste entre les certitudes du récit et les conjectures du narrateur. Contrôle de la rubrique A/L, des pages anglaises du cahier commun, des vingt segments du rapport et des deux éditions."
     }
   ],
   "droits_sources": {
@@ -44,5 +64,37 @@
       "L’épreuve commune porte sur le premier chapitre de A Prayer for Owen Meany de John Irving (1989). John Wheelwright se souvient de son enfance dans le New Hampshire. Le passage à traduire commence au jugement d’Oliver Cromwell sur le joueur et s’arrête au peuplement de Dover."
     ],
     "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire",
+      "Version française"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Commentaire",
+        "page_pdf": 4,
+        "page_pdf_fin": 5,
+        "perimetre": "l. 1–58, de l’affirmation de l’identité des Wheelwright aux prés et aux marais décrits par Wall.",
+        "rapport_pages": [
+          1,
+          7
+        ]
+      },
+      {
+        "question": "Version française",
+        "page_pdf": 5,
+        "page_pdf_fin": 5,
+        "perimetre": "l. 36–54, de « Oliver Cromwell believed » à « the settlement in Dover. ». Le jugement antérieur sur Cromwell et le trajet sur la Squamscott, l. 55–58, relèvent du commentaire.",
+        "rapport_pages": [
+          7,
+          15
+        ],
+        "segments_du_rapport": 20
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
   }
 }

@@ -1,0 +1,110 @@
+{
+  "slug": "ens-paris-saclay_design_techno-design_2023",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Techno-design",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "intitule": "Couvrir pour choisir ce que l’on montre",
+  "redaction": "Proposition de corrigé rédigée par IA, non officielle.",
+  "questions": 2,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2023_Sujet_ecrit_TechnoDesign.pdf",
+    "sujet_sha256": "39af46ac5be1b6bc43e0914c086b2b4e9db3f985417e47be0e4f1d10800283e1",
+    "index_officiel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=583",
+    "nature": "Les sept pages du fascicule sont présentes. La quatrième notice iconographique désigne Dior. La mention de Cartier dans le rapport est signalée dans l’analyse pour conserver l’attribution du sujet.",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2023_Design_rapport_ecrit_Techno_Design.pdf",
+    "rapport_sha256": "9ca57200fde1c1161c9ef98571ce26f09ea0c74329ae4f55e90052bbfa02921d"
+  },
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/01-analyse.svg",
+      "question": "Analyse 1/5",
+      "legende": "Qu’est-ce que la peau fait au corps ?. Chez Christo et Jeanne-Claude un écart protège les reliefs du monument."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/02-analyse.svg",
+      "question": "Analyse 2/5",
+      "legende": "Quand l’image change de côté. Sur la bâche Dior, une façade de fiction recouvre le chantier."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/03-esquisse.svg",
+      "question": "Esquisse 3/5",
+      "legende": "Un objet, trois temps de découverte. Le capot repose sur le socle et laisse un jeu autour du relief."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/04-esquisse.svg",
+      "question": "Esquisse 4/5",
+      "legende": "Un voile et deux éclairages. Comparer les états devant un même fond et depuis la même place."
+    },
+    {
+      "numero": 5,
+      "fichier": "figures/05-esquisse.svg",
+      "question": "Esquisse 5/5",
+      "legende": "Rendre la découverte à la personne suivante. La manipulation porte sur un fac-similé prévu pour le toucher."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "design_saclay_six_archives",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des observations du jury et confrontation avec les planches du fascicule."
+    },
+    {
+      "phase": "redaction",
+      "session": "design_saclay_six_archives",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de deux éditions et dessin de cinq planches A3 originales. Deux analyses croisées ouvrent sur trois esquisses exploratoires, leurs contraintes et leurs essais."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "design_saclay_six_archives",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification du sujet, des légendes, des dessins, de la distinction entre observations, hypothèses et essais, et des deux documents.",
+      "tour": 1
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Analyse des productions",
+      "Esquisses et recherche expérimentale"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Les sept pages du fascicule sont présentes. La quatrième notice iconographique désigne Dior. La mention de Cartier dans le rapport est signalée dans l’analyse pour conserver l’attribution du sujet."
+  }
+}

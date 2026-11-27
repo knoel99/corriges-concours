@@ -1,0 +1,126 @@
+{
+  "slug": "bel_al_chinois-theme-lyon_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Chinois (thème Lyon)",
+    "annee": 2025,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "duree_heures": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2025-09/251113.pdf#page=13",
+    "sujet_sha256": "b7d09bb818f637ec169e3e81e4912858b211e06941981935364478be20cd6766",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2025-11/Chinois%202025%20OK%20Lyon%20RELU.pdf#page=5",
+    "rapport_jury_sha256": "8bfee92576f2353959f6d3cec051ecd38de244408586d2c8d80715a9e7f31323",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2025",
+    "ouvrage": "Jean-Jacques Rousseau, *Rêveries du promeneur solitaire* (1782).",
+    "provenance": "",
+    "pages_rapport_verifiees": [
+      5,
+      6
+    ]
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2025-09/251113.pdf#page=13",
+      "sha256": "b7d09bb818f637ec169e3e81e4912858b211e06941981935364478be20cd6766",
+      "pages": 20,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "8ec0333bc615d21e75fd6bd8739b8ac1ac8f7527ec5d1bc38afbba95f28f63b7"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        },
+        {
+          "numero": 13,
+          "rendu_sha256": "98cb77f8a523ef5499bc7a49f2ff926969156aae02040446640b828e5c289d27"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2025-11/Chinois%202025%20OK%20Lyon%20RELU.pdf#page=5",
+      "sha256": "8bfee92576f2353959f6d3cec051ecd38de244408586d2c8d80715a9e7f31323",
+      "pages": 7,
+      "pages_verifiees": [
+        {
+          "numero": 5,
+          "rendu_sha256": "c9029be7486948cc881ec41706862de8e1da37a0d26ec22d3c4bc30636e68492"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "995ee498dd3915c6f3f600e057826201a3f6510b877c16b54ff9bb81cf4bb35a"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "Proposition de thème",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "Le regard au-dehors laisse place à deux appels que le solitaire s’adresse, puis à l’espoir d’un gain limité."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Traduction originale complète, schéma et guide consacré aux difficultés de syntaxe, d’aspect, de lexique et de voix du passage."
+    },
+    {
+      "phase": "revision",
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Vérification des trois absences, de l’hypothèse de la planète, des deux impératifs, des modalisations et des deux conclusions atténuées."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Jean-Jacques Rousseau, *Rêveries du promeneur solitaire* (1782)."
+    ],
+    "note": "Traduction pédagogique originale. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Proposition de thème"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Proposition de thème",
+        "page_pdf": 13,
+        "feuillet_imprime": 13,
+        "perimetre": "De la première déclaration d’étrangeté à la réserve sur les derniers jours, sans retrancher les deux mouvements négatifs de la conclusion."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

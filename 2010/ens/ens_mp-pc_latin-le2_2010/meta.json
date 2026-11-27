@@ -1,0 +1,66 @@
+{
+  "slug": "ens_mp-pc_latin-le2_2010",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Latin (LE2)",
+    "annee": 2010,
+    "modalite": "écrit"
+  },
+  "intitule": "Brutus et l’oracle de Delphes",
+  "questions": 1,
+  "redaction": "Traduction française intégrale du récit, interprétation des relatives et des infinitives, des trois ruses et du sens politique de la dernière phrase.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2010/MPI/mp-sujet-le2.pdf#page=12",
+    "sha256_sujet": "abc85dfcdb7fda6150491a22303fe0eab40a3ce1dab5961ead0b135ae8653512",
+    "page": 12,
+    "etablissements": "ENS de Paris et de Cachan",
+    "indexes": [
+      "https://www.ens.psl.eu/rapports-et-sujets-2010-mpi",
+      "https://www.ens.psl.eu/en/node/825"
+    ],
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2010/MPI/mp-ecrit-latin-le2.pdf",
+    "sha256_rapport_jury": "258cdb1598c9fd4b64b3b659cedb7028f7ace1da0a47b5b01a8c91d30e589b2c",
+    "reference_du_texte": "Valère Maxime, Faits et dits mémorables (ouvrage identifié dans le rapport)."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Version",
+      "fichier": "figures/trois-ruses.svg",
+      "legende": "De la protection personnelle à l’interprétation de l’oracle."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Le rapport de F. Fleck confirme la valeur de cum, le génitif descriptif obtusi cordis, la complétive après timebat, le locatif Romae et les emplois de esse sous-entendu."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Traduction française intégrale du récit, interprétation des relatives et des infinitives, des trois ruses et du sens politique de la dernière phrase."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version"
+    ]
+  }
+}

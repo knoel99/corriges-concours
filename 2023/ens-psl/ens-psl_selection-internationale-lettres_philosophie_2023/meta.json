@@ -8,7 +8,7 @@
   },
   "intitule": "Qu’est-ce qu’être philosophe aujourd’hui ?",
   "gabarit": "dissertation",
-  "questions": 0,
+  "questions": 1,
   "modele": {
     "provider": "codex",
     "model": "gpt-6.2-astra",
@@ -22,7 +22,10 @@
     "sujet_sha256": "e1fa60fa6e9a5ff7b106ee1678d6720afe22c4fdb4a924016a1c6e26593bcca9",
     "references": [
       "https://plato.stanford.edu/entries/kant-reason/"
-    ]
+    ],
+    "page_officielle": "https://www.ens.psl.eu/une-formation-d-exception/admission-concours/international/concours-selection-internationale-0",
+    "pages_sujet": 1,
+    "reperage": "Une page intitulée « Épreuve écrite de Philosophie », suivie de la seule question. Aucun texte à commenter, sujet alternatif, renvoi à une œuvre imposée ou document personnel. Le feuillet ne précise pas la durée."
   },
   "figures": [
     {
@@ -56,6 +59,33 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Vérification de la consigne et de ses limites contre le fac-similé officiel, des références et du schéma intégré aux deux éditions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "oraux_lyon_et_anciens_corriges",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Vérification de la dissertation unique, distinction entre enquête socratique et définition, cas d’attribution de deux places, objection et portée de l’usage public de la raison."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation unique : « Qu’est-ce qu’être philosophe aujourd’hui ? »"
+    ],
+    "elements_verifies": [
+      "Une page intitulée « Épreuve écrite de Philosophie », suivie de la seule question. Aucun texte à commenter, sujet alternatif, renvoi à une œuvre imposée ou document personnel. Le feuillet ne précise pas la durée.",
+      "Vérification de la dissertation unique, distinction entre enquête socratique et définition, cas d’attribution de deux places, objection et portée de l’usage public de la raison."
+    ]
+  }
 }

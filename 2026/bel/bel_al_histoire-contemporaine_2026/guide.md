@@ -12,6 +12,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 La composition commune d’histoire dure six heures. L’énoncé, intégralement publié sur une page, propose un unique sujet sur la construction étatique et les transformations des sociétés au Moyen-Orient de 1920 à 2011. [Sujet de la session](https://www.ens.psl.eu/sites/default/files/al_commun_hist.pdf)
@@ -55,6 +57,8 @@ Construire un État suppose de disposer d’agents, de recettes et de règles ap
 La lettre de cadrage inclut l’Égypte, la Turquie, l’Iran, le Levant, l’Irak et les pays de la péninsule Arabique. Elle fait aussi place aux revendications kurdes et palestiniennes ainsi qu’au passage du Yichouv à l’État d’Israël. La Tunisie peut situer le départ de la vague de 2010–2011. Le terrain sur lequel on l’étudie ici reste moyen-oriental. En 1920, comparez deux lieux de décision, San Remo et Ankara. En 2011, séparez la contestation d’un régime du devenir des services et des institutions. [Lettre de cadrage 2026](https://www.ens-lyon.fr/sites/default/files/2025-05/Lettre%20de%20cadrage%20programme%20commun%20Histoire%20session%202026.pdf)
 
 ![Figure 1 — En 1920–1923, la mobilisation à Ankara modifie le règlement préparé par les Alliés](figures/sevres-lausanne.svg)
+
+Inscrire sous chaque traité le pouvoir qui s’y engage. Puis placer l’abolition du sultanat entre les deux dates. Cette opération explique pourquoi le règlement de paix dépend aussi des transformations du pouvoir en Anatolie.
 
 > [!PIEGE]
 > Deux dérives à éviter : réduire le Moyen-Orient au seul monde arabe en oubliant la Turquie et l'Iran, pourtant exemplaires d'une construction étatique volontaire ; et traiter 2011 comme un épilogue plaqué au lieu d'en faire la conclusion logique de la problématique.

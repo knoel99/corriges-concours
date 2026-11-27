@@ -1,0 +1,69 @@
+{
+  "slug": "ens-psl_medecine-humanites_la-peau-oral_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Médecine-Humanités",
+    "matiere": "La peau (oral)",
+    "annee": 2018,
+    "modalite": "oral"
+  },
+  "intitule": "La peau",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://web.archive.org/web/20250624132033id_/https://medecine-humanites.ens.fr/wp-content/uploads/2018/07/MH2018-OralDocuments-1-peau.pdf",
+    "rapport_jury": "https://web.archive.org/web/20240410061106id_/https://medecine-humanites.ens.fr/wp-content/uploads/2018/07/Rapport-jury-Medecine-Humanites-2018-1.pdf",
+    "index": "https://medecine-humanites.ens.psl.eu/sujets-et-rapports-du-concours-2018/",
+    "sha256_sujet": "ce445ebdf03db0a754cc74d2917eb096e658c6ca1a953e4a2385b80a1b8908d6",
+    "sha256_rapport_jury": "513f0820e9d187f33824549b6a429ccd2964ac8cfda7be30f75dd2e29a304924",
+    "documents": [
+      {
+        "role": "sujet",
+        "url_officielle": "https://medecine-humanites.ens.fr/wp-content/uploads/2018/07/MH2018-OralDocuments-1-peau.pdf",
+        "url": "https://web.archive.org/web/20250624132033id_/https://medecine-humanites.ens.fr/wp-content/uploads/2018/07/MH2018-OralDocuments-1-peau.pdf",
+        "pages": 6,
+        "sha256": "ce445ebdf03db0a754cc74d2917eb096e658c6ca1a953e4a2385b80a1b8908d6"
+      },
+      {
+        "role": "rapport",
+        "url_officielle": "https://medecine-humanites.ens.fr/wp-content/uploads/2018/07/Rapport-jury-Medecine-Humanites-2018-1.pdf",
+        "url": "https://web.archive.org/web/20240410061106id_/https://medecine-humanites.ens.fr/wp-content/uploads/2018/07/Rapport-jury-Medecine-Humanites-2018-1.pdf",
+        "pages": 4,
+        "sha256": "513f0820e9d187f33824549b6a429ccd2964ac8cfda7be30f75dd2e29a304924"
+      }
+    ],
+    "corpus": "Les pages 2 à 6 donnent successivement les *Annales de dermatologie et de vénéréologie* (2005), le collage numérique *Skin* de Bill McConkey (vers 2010), *La Légende de saint Julien l’Hospitalier* de Gustave Flaubert (1877), *Le Moi peau* de Didier Anzieu (1985) et l’enquête d’Henriette Didillon et Dominique Bounsana sur Brazzaville (1987)."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/lecture-croisee.svg",
+      "question": "Commentaire",
+      "legende": "Trois opérations de la peau relient une description du corps aux relations entre personnes."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "sciences_humaines_medecine",
+      "agent": "sciences_humaines_medecine",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture du sujet et du rapport authentifiés, étude des textes et de la reproduction, composition du commentaire, accompagnement pédagogique et schéma original."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire"
+    ]
+  }
+}

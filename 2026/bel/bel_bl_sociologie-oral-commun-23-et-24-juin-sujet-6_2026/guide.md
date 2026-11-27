@@ -6,6 +6,10 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## La transition vers l’âge adulte
@@ -32,6 +36,8 @@ Le passage à l’âge adulte combine ainsi différents pouvoirs, gagner une res
 
 ![Trois souhaits professionnels des jeunes salariés](figures/lecture-des-donnees.svg)
 
+Comparez une ligne du tableau à la ligne d’ensemble. Parmi les salariés à temps partiel, 70 % souhaitent trouver un autre emploi ou changer d’entreprise, contre 59 % dans l’ensemble. Les 11 points d’écart décrivent des souhaits, avant toute mobilité effectivement réalisée.
+
 ## Questions du jury
 
 > [!INDICATION]
@@ -45,3 +51,9 @@ Sur 100 hommes d’origine ouvrière entrant dans le champ, environ 36 appartien
 Elle augmente les ressources du ménage selon les conventions du dispositif. La somme effectivement accessible au jeune dépend du partage et des dépenses financées pour lui. Le modèle doit expliciter son hypothèse de mise en commun.
 
 [Dossier officiel](https://www.ens.psl.eu/sites/default/files/dossier_transition_adulte.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_tronc_commun_sociologie.pdf)
+
+## Vérification sur le dossier
+
+Les deux enquêtes qualitatives et les cinq documents quantitatifs ont été contrôlés. Itinéraires, composition des ressources, aides aux parents ou aux jeunes et souhaits des salariés sont rapportés à leurs populations respectives.
+
+Dans le document 4, la part des pères cadres ou exerçant une profession libérale vaut 27,9 % parmi les étudiants et 9 % parmi les non-étudiants. Le premier groupe présente une part supérieure de 18,9 points, environ 3,1 fois celle du second. Les colonnes sont constituées selon la situation d’études. Pour calculer la probabilité d’être étudiant parmi les enfants de cadres, il faudrait inverser le conditionnement à partir des effectifs ou des parts pondérées de chaque groupe.

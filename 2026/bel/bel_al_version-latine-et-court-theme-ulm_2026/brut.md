@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Le règne de Numa et l’Hélène d’Euripide
 
 ### I. Version · Tite-Live
@@ -23,5 +25,11 @@ Comme cette crainte ne pouvait pénétrer dans les esprits sans quelque récit i
 ### II. Court thème · Racine
 
 Quanto audacior fuit Euripides in ea tragoedia quae *Helena* inscribitur! In ea enim palam repugnat opinioni quam tota Graecia communiter tenet. Fingit enim Helenam numquam Troiam pedem intulisse atque, ea urbe incensa, Menelaum suam uxorem in Aegypto reperire, unde illa non discesserit. Quae omnia in ea opinione posita sunt quam soli Aegyptii probabant.
+
+**Repère de lecture**
+
+Dans le thème de Racine, Ménélas retrouve Hélène après l’incendie de Troie. Ce repère du récit est compatible avec un infinitif présent dans la proposition infinitive. Le choix du temps latin dépend ici du rapport avec le récit attribué à Euripide, tandis que l’incendie reste antérieur à la rencontre.
+
+![Figure 1 — Le passage au discours indirect dans le thème](figures/racine-infinitives.svg)
 
 [Énoncé officiel](https://www.ens.psl.eu/sites/default/files/al_opt_vers_lat_261104.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/fait_2026_al_rapport_option_ecrit_version_latine_court_theme.pdf)

@@ -32,7 +32,7 @@
       "legende": "Trois gestes autour du puits"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "contributions": [
     {
       "phase": "lecture_rapport_jury",
@@ -69,6 +69,19 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Comparaison des deux éditions aux pages originales du sujet et au rapport, contrôle des références, des exemples et du schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Desbordes-Valmore, valeur de la reprise verbale et transmission dans l’envoi à Ondine."
     }
   ]
 }

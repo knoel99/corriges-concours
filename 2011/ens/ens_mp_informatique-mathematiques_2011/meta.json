@@ -12,7 +12,16 @@
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-i/session-2011/2011%20Info_Maths.pdf",
     "sujet_sha256": "76d9bd084f1f217c395c841332c684539d83ddf1cff14238809e257410735e21",
-    "identification": "Garde Écoles normales supérieures, concours d’admission 2011, MP concours INFO, composition d’informatique-mathématiques (ULC), durée quatre heures. Douze pages numérotées."
+    "identification": "Garde Écoles normales supérieures, concours d’admission 2011, MP concours INFO, composition d’informatique-mathématiques (ULC), durée quatre heures. Douze pages numérotées.",
+    "sha256_sujet": "76d9bd084f1f217c395c841332c684539d83ddf1cff14238809e257410735e21",
+    "pages_sujet": 12,
+    "sha256_index": "ed9b5a7b67f27760109973fe977a85ab08277af30bb57f8d319badb440e83e99",
+    "sha256_sommaire_rapports": "ed6b88200e0e39adbfaf679371d04b29a5038bbd1181e8169d6b19e0d4f21cbb",
+    "sha256_calendrier": "baddfffe5539432df8337730f6a1e9d69b29d22e5d10cb99ace563b80e04f351",
+    "pages_calendrier": 1,
+    "index": "https://banques-ecoles.fr/cms/filiere-mp/les-annales-et-rapports-des-jurys/",
+    "calendrier": "https://www.ens.psl.eu/IMG/file/concours/INFO%20et%20MPI%202011.pdf",
+    "sommaire_rapports": "https://banques-ecoles.fr/cms/filiere-mp/rapports-des-jurys-de-la-banque-i/session-2011"
   },
   "figures": [
     {
@@ -42,6 +51,349 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Rédaction des trente questions et de leurs subdivisions sur l’original de la banque. Contrôle des seuils de correction, de la reconstruction rationnelle et des trois restrictions de domaine omises en 4.1fgh. Trois schémas originaux et vérifications exactes du décodage et des identités discrètes."
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "perimetre": "Relecture du sujet ULC sur les codes correcteurs, des cinq algorithmes et des 30 questions, avec pointage de leurs lettres. Vérification du calendrier ENS et du sommaire de la banque. Recalcul des trois figures, de l’interpolant de la réception, du localisateur et de la reconstruction par restes euclidiens. Vérification de la matrice de Krawtchouk et de la borne de Singleton.",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4.a",
+      "1.4.b",
+      "1.5",
+      "1.6.a",
+      "1.6.b",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5.a",
+      "2.5.b",
+      "2.6",
+      "2.7",
+      "2.8",
+      "2.9",
+      "2.10.a",
+      "2.10.b",
+      "2.10.c",
+      "2.11",
+      "3.1.a",
+      "3.1.b",
+      "3.1.c",
+      "3.1.d",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5.a",
+      "3.5.b",
+      "3.5.c",
+      "3.6.a",
+      "3.6.b",
+      "3.7",
+      "4.1.a",
+      "4.1.b",
+      "4.1.c",
+      "4.1.d",
+      "4.1.e",
+      "4.1.f",
+      "4.1.g",
+      "4.1.h",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.6"
+    ],
+    "sections": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7",
+      "2.8",
+      "2.9",
+      "2.10",
+      "2.11",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "3.7",
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.6"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": "1.1",
+        "page_pdf_sujet": 2,
+        "section": "1.1"
+      },
+      {
+        "question": "1.2",
+        "page_pdf_sujet": 2,
+        "section": "1.2"
+      },
+      {
+        "question": "1.3",
+        "page_pdf_sujet": 2,
+        "section": "1.3"
+      },
+      {
+        "question": "1.4.a",
+        "page_pdf_sujet": 3,
+        "section": "1.4"
+      },
+      {
+        "question": "1.4.b",
+        "page_pdf_sujet": 3,
+        "section": "1.4"
+      },
+      {
+        "question": "1.5",
+        "page_pdf_sujet": 3,
+        "section": "1.5"
+      },
+      {
+        "question": "1.6.a",
+        "page_pdf_sujet": 3,
+        "section": "1.6"
+      },
+      {
+        "question": "1.6.b",
+        "page_pdf_sujet": 3,
+        "section": "1.6"
+      },
+      {
+        "question": "2.1",
+        "page_pdf_sujet": 5,
+        "section": "2.1"
+      },
+      {
+        "question": "2.2",
+        "page_pdf_sujet": 5,
+        "section": "2.2"
+      },
+      {
+        "question": "2.3",
+        "page_pdf_sujet": 6,
+        "section": "2.3"
+      },
+      {
+        "question": "2.4",
+        "page_pdf_sujet": 6,
+        "section": "2.4"
+      },
+      {
+        "question": "2.5.a",
+        "page_pdf_sujet": 6,
+        "section": "2.5"
+      },
+      {
+        "question": "2.5.b",
+        "page_pdf_sujet": 6,
+        "section": "2.5"
+      },
+      {
+        "question": "2.6",
+        "page_pdf_sujet": 6,
+        "section": "2.6"
+      },
+      {
+        "question": "2.7",
+        "page_pdf_sujet": 6,
+        "section": "2.7"
+      },
+      {
+        "question": "2.8",
+        "page_pdf_sujet": 7,
+        "section": "2.8"
+      },
+      {
+        "question": "2.9",
+        "page_pdf_sujet": 7,
+        "section": "2.9"
+      },
+      {
+        "question": "2.10.a",
+        "page_pdf_sujet": 7,
+        "section": "2.10"
+      },
+      {
+        "question": "2.10.b",
+        "page_pdf_sujet": 7,
+        "section": "2.10"
+      },
+      {
+        "question": "2.10.c",
+        "page_pdf_sujet": 7,
+        "section": "2.10"
+      },
+      {
+        "question": "2.11",
+        "page_pdf_sujet": 7,
+        "section": "2.11"
+      },
+      {
+        "question": "3.1.a",
+        "page_pdf_sujet": 8,
+        "section": "3.1"
+      },
+      {
+        "question": "3.1.b",
+        "page_pdf_sujet": 8,
+        "section": "3.1"
+      },
+      {
+        "question": "3.1.c",
+        "page_pdf_sujet": 9,
+        "section": "3.1"
+      },
+      {
+        "question": "3.1.d",
+        "page_pdf_sujet": 9,
+        "section": "3.1"
+      },
+      {
+        "question": "3.2",
+        "page_pdf_sujet": 9,
+        "section": "3.2"
+      },
+      {
+        "question": "3.3",
+        "page_pdf_sujet": 9,
+        "section": "3.3"
+      },
+      {
+        "question": "3.4",
+        "page_pdf_sujet": 9,
+        "section": "3.4"
+      },
+      {
+        "question": "3.5.a",
+        "page_pdf_sujet": 9,
+        "section": "3.5"
+      },
+      {
+        "question": "3.5.b",
+        "page_pdf_sujet": 9,
+        "section": "3.5"
+      },
+      {
+        "question": "3.5.c",
+        "page_pdf_sujet": 9,
+        "section": "3.5"
+      },
+      {
+        "question": "3.6.a",
+        "page_pdf_sujet": 10,
+        "section": "3.6"
+      },
+      {
+        "question": "3.6.b",
+        "page_pdf_sujet": 10,
+        "section": "3.6"
+      },
+      {
+        "question": "3.7",
+        "page_pdf_sujet": 10,
+        "section": "3.7"
+      },
+      {
+        "question": "4.1.a",
+        "page_pdf_sujet": 11,
+        "section": "4.1"
+      },
+      {
+        "question": "4.1.b",
+        "page_pdf_sujet": 11,
+        "section": "4.1"
+      },
+      {
+        "question": "4.1.c",
+        "page_pdf_sujet": 11,
+        "section": "4.1"
+      },
+      {
+        "question": "4.1.d",
+        "page_pdf_sujet": 11,
+        "section": "4.1"
+      },
+      {
+        "question": "4.1.e",
+        "page_pdf_sujet": 11,
+        "section": "4.1"
+      },
+      {
+        "question": "4.1.f",
+        "page_pdf_sujet": 11,
+        "section": "4.1"
+      },
+      {
+        "question": "4.1.g",
+        "page_pdf_sujet": 11,
+        "section": "4.1"
+      },
+      {
+        "question": "4.1.h",
+        "page_pdf_sujet": 11,
+        "section": "4.1"
+      },
+      {
+        "question": "4.2",
+        "page_pdf_sujet": 12,
+        "section": "4.2"
+      },
+      {
+        "question": "4.3",
+        "page_pdf_sujet": 12,
+        "section": "4.3"
+      },
+      {
+        "question": "4.4",
+        "page_pdf_sujet": 12,
+        "section": "4.4"
+      },
+      {
+        "question": "4.5",
+        "page_pdf_sujet": 12,
+        "section": "4.5"
+      },
+      {
+        "question": "4.6",
+        "page_pdf_sujet": 12,
+        "section": "4.6"
+      }
+    ],
+    "precision": "Douze pages PDF et cinq algorithmes imbriqués dans l’énoncé. Les 30 questions principales comportent 48 items en distinguant chaque sous-question imprimée. Les indices de 4.1.f, 4.1.g et 4.1.h sont discutés. Le rapport de la composition « Écrit Info-Math ULC » n’a pas été retrouvé dans le sommaire de la session."
+  }
 }

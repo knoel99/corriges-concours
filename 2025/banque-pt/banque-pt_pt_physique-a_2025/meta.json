@@ -1,0 +1,363 @@
+{
+  "slug": "banque-pt_pt_physique-a_2025",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique A",
+    "annee": 2025,
+    "modalite": "écrit"
+  },
+  "duree_heures": 4,
+  "questions": 49,
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2025/ph_a_2025_pt.pdf",
+    "sujet_sha256": "1a2973d42e9d23959dbf1844c5c32ecfc9b58d3ba433b9f8fffca945d29ecd3c",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2025/rapport_phys_a_ecrit_2025.pdf",
+    "sha256_rapport_jury": "b6e2848e278933ed77473e74f035107d8113ce15e75f9dd9ca578ab212dba6ed",
+    "livret": "https://www.banquept.fr/documents/livret/2025/Livret_PT_2025.pdf#page=13",
+    "pages_fascicule": 16,
+    "pages_rapport": 2,
+    "releve": "Questions 1 à 49, cinq parties p. 2–12. Neuf figures et un tableau de commande dans le sujet. Pages PDF 13 à 15 blanches et p. 16 réservée à l’imprimeur. Aucune annexe séparée ni fichier joint au PDF."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/cycle-thermique.svg",
+      "question": "Q10",
+      "legende": "Températures à la surface et au plafond sur un cycle, origine au maximum extérieur."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/champ.svg",
+      "question": "Q15",
+      "legende": "Norme du champ électrostatique dans une jonction neutre."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/creneau.svg",
+      "question": "Q23",
+      "legende": "Tension sur deux périodes pour la commande symétrique, avec T égal à 20 ms."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/spectre.svg",
+      "question": "Q24",
+      "legende": "Spectre unilatéral en unités de E, de la composante continue au cinquième harmonique."
+    },
+    {
+      "numero": 5,
+      "fichier": "figures/etats-pont.svg",
+      "question": "Q25",
+      "legende": "Circuits équivalents dans chaque état du tableau, les fermetures actives sont dessinées."
+    },
+    {
+      "numero": 6,
+      "fichier": "figures/decalage.svg",
+      "question": "Q25",
+      "legende": "Commande décalée sur une période et sinusoïde fondamentale superposée à amplitude illustrative."
+    },
+    {
+      "numero": 7,
+      "fichier": "figures/hysteresis.svg",
+      "question": "Q36",
+      "legende": "Cycle orienté du comparateur, gradué pour les réglages trouvés en Q39."
+    },
+    {
+      "numero": 8,
+      "fichier": "figures/projection.svg",
+      "question": "Q46",
+      "legende": "Projection verticale de la position des centres de masse par rotation autour du pivot."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": 1,
+        "premiere_page_pdf": 2
+      },
+      {
+        "question": 2,
+        "premiere_page_pdf": 2
+      },
+      {
+        "question": 3,
+        "premiere_page_pdf": 2
+      },
+      {
+        "question": 4,
+        "premiere_page_pdf": 3
+      },
+      {
+        "question": 5,
+        "premiere_page_pdf": 3
+      },
+      {
+        "question": 6,
+        "premiere_page_pdf": 3
+      },
+      {
+        "question": 7,
+        "premiere_page_pdf": 3
+      },
+      {
+        "question": 8,
+        "premiere_page_pdf": 3
+      },
+      {
+        "question": 9,
+        "premiere_page_pdf": 3
+      },
+      {
+        "question": 10,
+        "premiere_page_pdf": 3
+      },
+      {
+        "question": 11,
+        "premiere_page_pdf": 4
+      },
+      {
+        "question": 12,
+        "premiere_page_pdf": 4
+      },
+      {
+        "question": 13,
+        "premiere_page_pdf": 5
+      },
+      {
+        "question": 14,
+        "premiere_page_pdf": 5
+      },
+      {
+        "question": 15,
+        "premiere_page_pdf": 5
+      },
+      {
+        "question": 16,
+        "premiere_page_pdf": 5
+      },
+      {
+        "question": 17,
+        "premiere_page_pdf": 6
+      },
+      {
+        "question": 18,
+        "premiere_page_pdf": 6
+      },
+      {
+        "question": 19,
+        "premiere_page_pdf": 6
+      },
+      {
+        "question": 20,
+        "premiere_page_pdf": 6
+      },
+      {
+        "question": 21,
+        "premiere_page_pdf": 6
+      },
+      {
+        "question": 22,
+        "premiere_page_pdf": 6
+      },
+      {
+        "question": 23,
+        "premiere_page_pdf": 7
+      },
+      {
+        "question": 24,
+        "premiere_page_pdf": 7
+      },
+      {
+        "question": 25,
+        "premiere_page_pdf": 7
+      },
+      {
+        "question": 26,
+        "premiere_page_pdf": 7
+      },
+      {
+        "question": 27,
+        "premiere_page_pdf": 8
+      },
+      {
+        "question": 28,
+        "premiere_page_pdf": 8
+      },
+      {
+        "question": 29,
+        "premiere_page_pdf": 8
+      },
+      {
+        "question": 30,
+        "premiere_page_pdf": 8
+      },
+      {
+        "question": 31,
+        "premiere_page_pdf": 8
+      },
+      {
+        "question": 32,
+        "premiere_page_pdf": 8
+      },
+      {
+        "question": 33,
+        "premiere_page_pdf": 8
+      },
+      {
+        "question": 34,
+        "premiere_page_pdf": 10
+      },
+      {
+        "question": 35,
+        "premiere_page_pdf": 10
+      },
+      {
+        "question": 36,
+        "premiere_page_pdf": 10
+      },
+      {
+        "question": 37,
+        "premiere_page_pdf": 10
+      },
+      {
+        "question": 38,
+        "premiere_page_pdf": 10
+      },
+      {
+        "question": 39,
+        "premiere_page_pdf": 10
+      },
+      {
+        "question": 40,
+        "premiere_page_pdf": 10
+      },
+      {
+        "question": 41,
+        "premiere_page_pdf": 10
+      },
+      {
+        "question": 42,
+        "premiere_page_pdf": 10
+      },
+      {
+        "question": 43,
+        "premiere_page_pdf": 10
+      },
+      {
+        "question": 44,
+        "premiere_page_pdf": 10
+      },
+      {
+        "question": 45,
+        "premiere_page_pdf": 12
+      },
+      {
+        "question": 46,
+        "premiere_page_pdf": 12
+      },
+      {
+        "question": 47,
+        "premiere_page_pdf": 12
+      },
+      {
+        "question": 48,
+        "premiere_page_pdf": 12
+      },
+      {
+        "question": 49,
+        "premiere_page_pdf": 12
+      }
+    ]
+  },
+  "contributions": [
+    {
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "phase": "redaction",
+      "perimetre": "Résolution de Q1–49 et rédaction des pistes, avec huit figures de thermique, électrostatique, commutation, régulation et mécanique."
+    },
+    {
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "perimetre": "Lecture des figures originales 3, 5, 7 et 8, vérification des bornes du tableau 1 et de la pondération du potentiomètre, du bilan de Bernoulli et de la stabilité du tube. Recalcul des données numériques et confrontation au rapport."
+    }
+  ]
+}

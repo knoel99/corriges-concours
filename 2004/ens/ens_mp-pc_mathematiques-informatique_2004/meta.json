@@ -1,0 +1,92 @@
+{
+  "slug": "ens_mp-pc_mathematiques-informatique_2004",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Mathématiques-informatique",
+    "annee": 2004,
+    "duree_heures": 4
+  },
+  "questions": 23,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-i/session-2004/sujet-ecrit-2004-mathematiques_informatique.pdf",
+    "index_banque": "https://banques-ecoles.fr/cms/filiere-mp/les-annales-et-rapports-des-jurys/",
+    "identification": "Cahier ULC 420, onze pages numérisées. Épreuve de quatre heures, MP groupe I aux ENS Paris, Lyon et Cachan, PC groupe I à Paris et Lyon.",
+    "sujet_sha256": "fa4186dd6b134737b6832b12de60d4a03b93bdd45759766f49d07dfe4cea9441",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-i/session-2004/rapport2004-i_ecrit_mathematiques_informatique.pdf",
+    "rapport_sha256": "d4962100c12aaba09b01479d9a63308ba8d867997cbdd5d42f923a3db8b80c47"
+  },
+  "figures": [
+    {
+      "fichier": "figures/complexes.svg",
+      "question": "2.4",
+      "legende": "Figure 1 — À gauche, le triangle ne contient aucune face pleine. À droite, les deux triangles colorés sont pleins. Le cycle qui entoure la zone entre c, d et e subsiste."
+    },
+    {
+      "fichier": "figures/paire.svg",
+      "question": "5.3",
+      "legende": "Figure 2 — Pour un ordre fixe de trois questions, les deux entrées d’une paire répondent de la même manière aux premières questions et diffèrent seulement à la dernière."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Les 23 questions des cinq parties. Orthogonalisation, matrices de bord, calculs des deux complexes, contractions, inégalités de Morse, appariement du dernier test et borne de Kahn–Saks–Sturtevant. Figures des complexes et d’un arbre de décision."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture des 23 questions, des figures et du rapport du jury de 2004. En 5.3, démonstration de l’inégalité portant sur les listes des partenaires pour toute flèche descendante, en comparant le premier test différent et en tenant compte de la dernière réponse basculée. Contrôle des rangs des matrices de bord des deux complexes, des variations des nombres de Betti et de la borne d’évasivité."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "5.1",
+      "5.2",
+      "5.3",
+      "5.4"
+    ],
+    "precision": "Les six questions de la partie 1, les quatre de la partie 2, les cinq de la partie 3 et les quatre de chacune des parties 4 et 5 ont été confrontées au sujet ULC 420 et aux deux éditions.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "fa4186dd6b134737b6832b12de60d4a03b93bdd45759766f49d07dfe4cea9441",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Relecture des 23 questions, des figures et du rapport du jury de 2004. En 5.3, démonstration de l’inégalité portant sur les listes des partenaires pour toute flèche descendante, en comparant le premier test différent et en tenant compte de la dernière réponse basculée. Contrôle des rangs des matrices de bord des deux complexes, des variations des nombres de Betti et de la borne d’évasivité.",
+      "commit_redaction_anterieure": "87870d16237527dc2d9609330e8ac8ea054634f5"
+    }
+  }
+}

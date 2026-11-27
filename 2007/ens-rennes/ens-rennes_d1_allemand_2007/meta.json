@@ -1,0 +1,58 @@
+{
+  "slug": "ens-rennes_d1_allemand_2007",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Allemand",
+    "annee": 2007,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/annales-2007-concours-d1_1423059780504-pdf#page=3",
+    "sha256_sujet": "0f7a7f75322511a59614c2cd4fa6968b911a11d5b0428262b09f81ae76838ff0",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "publication": "« Zusammenschluss », Spiegel Online, 31 décembre 2006",
+    "page": 3,
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapports-2007-concours-d1_1423059785836-pdf#page=1",
+    "sha256_rapport_jury": "821ca153fcfca00d84ba26bbec1e1db0aac39d16388eaf65f68646767452c1b2"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en allemand"
+    ],
+    "precision": "Traduction française de l’intégralité du passage délimité et réponse en allemand."
+  },
+  "longueur_expression": {
+    "mots": 100,
+    "regle": "Les syndicats peuvent-ils encore jouer un rôle dans une économie mondialisée ? Répondre en allemand en 100 mots."
+  },
+  "figures": [
+    {
+      "fichier": "figures/syndicats.svg",
+      "legende": "Deux projets et deux ordres de grandeur"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Traduction française de l’intégralité du passage délimité et réponse en allemand. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

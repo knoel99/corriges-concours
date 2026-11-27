@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Sujet commun](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20MP-MPI-PC-PSI%20SUJET%20ALLEMAND%20(XEULSR).pdf) · [Fascicule PSI](https://www.ens.psl.eu/sites/default/files/2024_psi_lv_allemand_xusr.pdf) · [Rapport du jury](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20MP-MPI-PC%20RAPPORT%20ECRIT%20ALLEMAND%20(XEULSR).pdf)
 
 ## Préparer la composition
@@ -46,6 +48,4 @@ Makartsevs Vertrauen in die Bildung teile ich durchaus. Ich würde Schülerinnen
 
 Schwieriger ist die Sache, wenn eine Maschine aus Stimme oder Mimik auf persönliche Eigenschaften schließt. Selbst ein gut informierter Kunde kann beim Gespräch kaum feststellen, welche Auswertung im Hintergrund erfolgt. Hier würde ich die Erhebung auf das für den erklärten Zweck Erforderliche begrenzen und überprüfbare Regeln für die Löschung verlangen. Bei einer Terminabsage gibt es keinen überzeugenden Grund, zugleich die Stimmung des Anrufers für spätere Werbung zu speichern. Genau an diesem Punkt braucht der ethische Kompass, den der Autor von der Wissenschaft verlangt, eine institutionelle Entsprechung.
 
-Ich würde den alten Test also durch eine Reihe viel unspektakulärerer Fragen ergänzen. Erfährt der Betroffene, wie eine Auskunft zustande kam? Kann er einen Fehler rechtzeitig berichtigen lassen? Kann er auf eine Auswertung verzichten, die mit seinem Anliegen nichts zu tun hat? Werden diese Fragen überzeugend beantwortet, kann eine synthetische Stimme eine große Hilfe sein. Bleiben sie offen, würde auch die vollkommenste Unterscheidung zwischen Mensch und Maschine niemandem den verlorenen Anspruch auf Pflege zurückgeben.
-
-*506 mots, selon le même décompte.*
+Ich würde den alten Test also durch eine Reihe viel unspektakulärerer Fragen ergänzen. Erfährt der Betroffene, wie eine Auskunft zustande kam? Kann er einen Fehler rechtzeitig berichtigen lassen? Kann er auf eine Auswertung verzichten, die mit seinem Anliegen nichts zu tun hat? Werden diese Fragen überzeugend beantwortet, kann eine synthetische Stimme eine große Hilfe sein. Bleiben sie offen, würde auch die vollkommenste Unterscheidung zwischen Mensch und Maschine niemandem den verlorenen Anspruch auf Pflege zurückgeben. *(506 mots)*

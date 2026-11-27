@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 On compte les représentations des entiers comme sommes de puissances. Les notations $g(d)$ et $G(d)$ concernent respectivement tous les entiers et les entiers assez grands. La dernière partie établit pas à pas les estimations de la méthode du cercle.
 
 ## I. Compositions et obstruction modulo huit
@@ -101,6 +103,8 @@ Soit $m_0>1$ impair. Choisissons $y_i=x_i-b_i m_0$ dans $[-(m_0-1)/2,(m_0-1)/2]$
 ### Question II.4.d.ii
 
 Soient $X,Y$ les quaternions de coordonnées $x_i,y_i$. Les coordonnées du produit $Z=X\tau(Y)$ sont entières et $Z\equiv X\tau(X)=m_0p\equiv0\pmod{m_0}$ coordonnée par coordonnée. Sa norme vaut $(m_0p)(m_0m_1)=m_0^2m_1p$. Les valeurs absolues $z_i$ des quatre coordonnées satisfont les deux conditions demandées.
+
+Par exemple, pour $p=13$, le quadruplet $(5,3,2,1)$ représente $3p=39$. Les résidus centrés modulo $3$ sont $(-1,0,-1,1)$, de norme carrée $3$. Le produit de $(5+3I+2J+K)$ par le conjugué de $-1-J+K$ se calcule avec $IJ=K$. La partie scalaire vaut $-5-2+1=-6$ et la partie vectorielle est $(-3,-2,-1)+(0,5,-5)+( -3,3,3)=(-6,6,-3)$. Le produit a donc pour coordonnées $(-6,-6,6,-3)$. Après division par $3$, les quatre carrés donnent $4+4+4+1=13$.
 
 ### Question II.4.e
 
@@ -276,7 +280,9 @@ Avec $r=B^{\Delta-d}$, la condition sur $[0,1)$ est $\min(\alpha,1-\alpha)<r$. A
 
 Les dénominateurs $1\le q\le B^\Delta$ et les numérateurs $1\le a\le q$ forment une liste finie. Pour chaque fraction, le voisinage de rayon $B^{\Delta-d}/q$ sur le cercle donne au plus deux intervalles sur $[0,1)$ (ou tout l’intervalle). La réunion finie de ces intervalles en est encore une ; leur complémentaire relatif aussi, en découpant aux extrémités. Des singletons peuvent subsister dans le complément.
 
-![Figure 1 — Premières familles d’arcs pour d = 2, B = 8, Δ = 1. La ligne q = 1 montre l’arc autour de zéro partagé entre les deux extrémités de [0,1).](figures/arcs-majeurs.svg)
+Dans la figure, le rayon autour de $a/q$ est $1/(8q)$. Pour $q=2$ l’unique numérateur réduit donne l’intervalle $(7/16,9/16)$. Pour $q=3$ les bornes autour de $1/3$ sont $7/24$ et $3/8$. Ces arcs peuvent être dessinés séparément même lorsque leurs unions, pour plusieurs dénominateurs, se recouvrent.
+
+![Figure 1 — Premières familles d’arcs pour d = 2, B = 8, Δ = 1. La ligne q = 1 montre l’arc autour de zéro partagé entre les deux extrémités de l’intervalle unité.](figures/arcs-majeurs.svg)
 
 ### Question V.12.a
 

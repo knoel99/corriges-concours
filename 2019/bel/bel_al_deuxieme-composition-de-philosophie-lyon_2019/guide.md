@@ -8,6 +8,10 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Rendre à « où » ses différents objets
 
 La question compte quatre mots et la feuille accorde cinq heures. Placer devant soi une photographie annotée. À la question « où est la photo ? », une adresse suffit. Pour « où ce repas a-t-il eu lieu ? », il faut identifier la scène représentée. Pour « où est le souvenir de ce repas ? », la réponse dépend de ce que l’on recherche : la trace d’un événement, une disposition corporelle, le vécu d’un participant ou la pratique familiale qui entretient le récit. C’est cette difficulté qui ordonne la copie.
@@ -19,6 +23,10 @@ La question compte quatre mots et la feuille accorde cinq heures. Placer devant 
 **Relire le rapport.** Le jury relève les difficultés d’une juxtaposition du corps, de l’esprit et de la société en trois réponses indépendantes. Il invite à éprouver des distinctions comme actuel et virtuel et à discuter ce qu’un cadre collectif fait au souvenir singulier. Dans la dernière partie, le monument oblige à préciser à qui une mémoire est attribuée lorsque toute personne ayant vécu l’événement a disparu.
 
 ![Trois localisations possibles](figures/trace-habitude-rappel.svg)
+
+Supprimer successivement le cahier et l’occasion de réciter. À chaque étape, distinguer ce qui a disparu, ce qui est conservé et ce dont l’exercice reste momentanément empêché.
+
+**Exercice de préparation.** Faites varier un seul élément dans le cas de la lettre : les deux sœurs apprennent la date exacte, mais une seule se rappelle la pièce. Qu’est-ce qui a été localisé sur le papier ? De quoi la seconde sœur dispose-t-elle maintenant sans pouvoir dire « je m’en souviens » ? Imaginez enfin que l’archive établisse une date différente du souvenir le plus vif. Le lieu de vérification et le sujet du rappel jouent alors deux rôles distincts et indispensables à l’enquête.
 
 ## Où est la mémoire ?
 
@@ -38,6 +46,8 @@ L’ancienne métaphore du magasin de souvenirs rend compte de la recherche et d
 
 Dans le deuxième chapitre de *Matière et mémoire*, Bergson compare deux manières de savoir une leçon. Après des répétitions, je peux la réciter. Sa possession se vérifie dans une suite de mouvements articulés que je suis capable d’exécuter. Je peux aussi me rappeler telle lecture particulière, faite hier près d’une fenêtre. Une seule occurrence suffit à donner à cette scène sa date. Répéter la leçon perfectionne le premier savoir et ne transforme pas les lectures successives en une seule scène passée. La distinction entre mémoire-habitude et souvenir d’un événement porte donc sur ce que l’on cherche à retrouver. Dans le premier cas, le corps montre ce qu’il sait faire. Dans le second, je reconnais quelque chose comme ayant eu lieu une fois.
 
+Une leçon peut être récitée après la disparition du cahier où elle était écrite. La perte de ce support empêche un mode de consultation, tout en laissant subsister la disposition acquise par répétition. Demander où se trouve la mémoire requiert alors de préciser quelle opération de rappel on cherche à expliquer.
+
 Dans la théorie de Bergson, la conservation du passé et son actualisation en une image utile à la situation présente ne se confondent pas. Dire le souvenir « virtuel » revient ici à lui attribuer une réalité qui ne se donne pas actuellement sous la forme d’une perception. La chambre de mon enfance peut revenir avec une présence frappante. Je sais pourtant que la pièce où je me trouve aujourd’hui est ailleurs. Une carte des lieux représentés dans mes souvenirs situerait la chambre, la fenêtre et le jardin. Elle ne situerait pas mon acte de me souvenir, encore moins toutes les conditions qui en permettent la reprise. Le cerveau est bien dans la pièce où je parle et la chambre remémorée situe mon enfance. Le mot « où » renvoie ainsi à deux objets distincts.
 
 Si la mémoire n’est que mon acte présent, l’objection renaît cependant sous une autre forme. Qu’est-ce qui distinguerait un souvenir d’enfance d’une invention que je pourrais aujourd’hui produire à partir de la photo ? La reconnaissance d’une expérience passée prétend à une fidélité. Une confidence, une photographie datée ou un carnet peuvent contredire mon impression. Le passé auquel je me rapporte a laissé des traces dont je ne puis disposer à ma guise, même si aucune ne livre seule ce que ce passé a été pour moi.
@@ -47,6 +57,8 @@ Si la mémoire n’est que mon acte présent, l’objection renaît cependant so
 Dans *Les Cadres sociaux de la mémoire*, Maurice Halbwachs montre que le groupe familial, le langage et les repères temporels partagés ne fournissent pas seulement des renseignements supplémentaires à une mémoire privée déjà complète. Ils aident à organiser les conditions de la remémoration. À l’issue de la conversation avec son frère, la femme de l’exemple situe le souvenir parce qu’elle peut l’inscrire dans une suite d’événements et reconnaître la place qu’elle y occupait. Elle peut aussi contester une date donnée par son frère. La mémoire collective ne suppose pas un grand cerveau du groupe où leurs deux souvenirs seraient physiquement déposés. Les cadres communs rendent des récits possibles et contrôlables sans rendre les points de vue identiques.
 
 Un monument aux morts donne à cette idée une forme publique. Il occupe un emplacement identifiable. Ses noms et ses inscriptions peuvent être lus quand aucun témoin ne se trouve présent. L’appel des noms lors d’une cérémonie ou l’enquête d’une descendante font toutefois autre chose que regarder la pierre. Ils reprennent le signe dans une pratique de commémoration ou de connaissance familiale. Le jour où aucune personne présente n’a connu les disparus, on peut encore parler de mémoire publique. On ne prétend pas que chaque participant se rappelle personnellement la scène de leur mort. La transmission exige des objets durables, des institutions qui les conservent et des personnes capables d’en renouveler les usages. Elle peut aussi sélectionner certains noms et en laisser d’autres hors du monument.
+
+Deux sœurs retrouvent une lettre de leur mère qui indique la date d’un déménagement. Toutes deux avaient placé l’événement un an plus tard. Elles rectifient la date. Une seule, pourtant, se souvient de l’écho particulier que faisait sa voix dans la pièce vide. La lettre peut corriger le récit de celle qui se souvient et renseigner celle qui n’a aucun souvenir de la pièce. L’exactitude de la date et la présence du passé à quelqu’un varient donc indépendamment. Ce que l’archive conserve en un lieu demeure précieux, précisément parce qu’elle peut contredire un témoignage sincère. Ce qu’elle ne peut fournir à elle seule, c’est le rapport à l’événement de celle qui dit y avoir été. La personne n’est pas une autre boîte où chercher une seconde copie de la lettre. Elle est celle dont le présent peut être affecté par ce passé, et dont le récit demande parfois à être corrigé.
 
 La question du lieu était donc justifiée lorsque nous cherchions des conditions de persistance et les points par lesquels une mémoire peut être blessée ou soutenue. Elle devient trompeuse lorsqu’elle exige une adresse unique du souvenir. Il y a un lieu pour une trace, un corps pour une habitude, une situation présente pour un rappel et des cadres collectifs dans lesquels un passé devient reconnaissable. Ce qui en fait une mémoire est la relation de reprise et d’attribution par laquelle quelqu’un ou une communauté rapporte ces signes et ces capacités à un passé. Localiser ses conditions aide à comprendre cette relation. Cela ne dispense pas de dire qui se souvient, de quoi, et avec quelle prétention à la fidélité.
 

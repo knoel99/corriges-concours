@@ -1,0 +1,365 @@
+{
+  "slug": "banque-pt_pt_physique-b---chimie_2023",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique B - Chimie",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "questions": 36,
+  "reponses_reperees": 36,
+  "unite_de_decompte": "36 questions numérotées de Q1 à Q36, en six parties.",
+  "duree_heures": 2,
+  "redaction": "Corrigé original rédigé par IA, non officiel.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2023/ph_b_ch_2023_pt.pdf",
+    "sujet_sha256": "f32ff9c36c8dfc8c415bada761e16f8e012440d4bf7aa98ffd0c680cfde37204",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2023/rapport_phys_b_ecrit_2023.pdf",
+    "rapport_jury_sha256": "8bbebafee340d2100718ce54730abeec782c896642a1fb6d654b89ed17c34b1d",
+    "livret": "https://www.banquept.fr/documents/livret/2023/Livret_PT_2023.pdf#page=13",
+    "index_annuel": "https://www.banquept.fr/spip.php?article158",
+    "annexes": "Document-réponse intégré au fascicule, pages PDF 9–12. Cadre de la Q36 en page 10, page 2/4 du document-réponse. Rapport commun, chimie aux pages 1–2 et thermodynamique aux pages 3–5."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "annee": 2023,
+      "nature": "sujet",
+      "url": "https://www.banquept.fr/documents/2023/ph_b_ch_2023_pt.pdf",
+      "sha256": "f32ff9c36c8dfc8c415bada761e16f8e012440d4bf7aa98ffd0c680cfde37204",
+      "pages": 12,
+      "pieces_jointes": [],
+      "sha256_rendus": [
+        "8a80b643e6e2729fd7c16cb8e6a7d230012273ee35d9931f3891814a66203f11",
+        "65928bf2daf0cec4643f43bee64e0e0510e1c96c0b8e0a2fb9d4430553b652a1",
+        "8e4532e6e1286d9c31bc63ee1e0f7cfbf3f5e6f36b7c94684bb09367da04e3c4",
+        "47e47e7233c863262210e6dca9aec6a1adbabe7130bc3b44e17719848b5a078d",
+        "45a0bf20b73f7b2979167b4897f950193f54b754e36a7284141a3933569bb669",
+        "e01ba6db58c8e3503af5c8de838cd77683621609d5033fcba433367e01d10b43",
+        "7f9d85ac93ca0528d8075978fd90e011b099b744513521438d98f8a67b82eadf",
+        "3749e53c73417015f724dcd67fc6f63026c495a21d341e6278e579196e996340",
+        "9fcc6bb9211ab52eb402c5bd83cad50a44ec73bf44a8ab2bd7e043df10bdf1ac",
+        "cef6713ac07d33846f194ea201f6853745cf883ae23d374d620e70e8bbfef652",
+        "3ca720067a11a937598e1fd05b731b48e42d239daab15868f9060d16bad40cbe",
+        "c189853208543326fedd4a1dfcd6b44b59726dd0a42761002cf86b441b02f085"
+      ]
+    },
+    "rapport": {
+      "annee": 2023,
+      "nature": "rapport",
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2023/rapport_phys_b_ecrit_2023.pdf",
+      "sha256": "8bbebafee340d2100718ce54730abeec782c896642a1fb6d654b89ed17c34b1d",
+      "pages": 5,
+      "pieces_jointes": [],
+      "sha256_rendus": [
+        "851aeabdc45d1a804f90d531c9659ff3cc0f5a654365960bef4230f77b2fd62f",
+        "9357f896b364cc638378759b8ed7c19f63390ebc067ce1dcbdbcda2d06e3caaa",
+        "4b4728853f935dafcd268aedab67fe7fecc47bbeb2660163ce6554dd8d62e655",
+        "90f7f8816c2364c8c19d72214fd9cb2177001cfe5b105521c9ac4873ebccc509",
+        "99aab116dd1f4f193ca9b7165698b106d727a0a55d41506c61cc9fdd0a17a9d3"
+      ]
+    },
+    "livret": {
+      "annee": 2023,
+      "nature": "livret",
+      "url": "https://www.banquept.fr/documents/livret/2023/Livret_PT_2023.pdf",
+      "sha256": "ef653aad65d312dfc629926cfc7be2d59352bf0cd6362274307a292c916d0233",
+      "pages": 76,
+      "pieces_jointes": [],
+      "sha256_rendus": [
+        "f845fe5ab5f65725c05f99bb8579a8c2aa4b3edc1f8baf1e42bcc9b9cf3f43c0"
+      ]
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Résolution des 36 questions, dessin de cinq figures et lecture du document-réponse Q36."
+    },
+    {
+      "phase": "revision",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Seconde lecture du sujet et du jury, vérification des légendes, de la lecture de Q36, du coefficient stœchiométrique des pentes et des données de l’étalonnage."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21",
+      "Q22",
+      "Q23",
+      "Q24",
+      "Q25",
+      "Q26",
+      "Q27",
+      "Q28",
+      "Q29",
+      "Q30",
+      "Q31",
+      "Q32",
+      "Q33",
+      "Q34",
+      "Q35",
+      "Q36"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Q1",
+        "page_pdf": "2",
+        "titre": "Maille des anions et localisation des cavités"
+      },
+      {
+        "question": "Q2",
+        "page_pdf": "2",
+        "titre": "Population d’anions"
+      },
+      {
+        "question": "Q3",
+        "page_pdf": "2",
+        "titre": "Occupation des sites"
+      },
+      {
+        "question": "Q4",
+        "page_pdf": "2",
+        "titre": "Formule et degré d’oxydation"
+      },
+      {
+        "question": "Q5",
+        "page_pdf": "2",
+        "titre": "Rayons maximaux des sites"
+      },
+      {
+        "question": "Q6",
+        "page_pdf": "2",
+        "titre": "Limite du modèle de sphères"
+      },
+      {
+        "question": "Q7",
+        "page_pdf": "2",
+        "titre": "Masse volumique"
+      },
+      {
+        "question": "Q8",
+        "page_pdf": "3",
+        "titre": "Loi différentielle de vitesse"
+      },
+      {
+        "question": "Q9",
+        "page_pdf": "3",
+        "titre": "Première expérience et ordre apparent"
+      },
+      {
+        "question": "Q10",
+        "page_pdf": "3",
+        "titre": "Pente logarithmique et première constante"
+      },
+      {
+        "question": "Q11",
+        "page_pdf": "3",
+        "titre": "Deuxième expérience et acidité"
+      },
+      {
+        "question": "Q12",
+        "page_pdf": "3",
+        "titre": "Rapport stœchiométrique et seconde constante"
+      },
+      {
+        "question": "Q13",
+        "page_pdf": "3–4",
+        "titre": "Droite des concentrations inverses"
+      },
+      {
+        "question": "Q14",
+        "page_pdf": "3",
+        "titre": "Ordre en protons et dimension de la constante"
+      },
+      {
+        "question": "Q15",
+        "page_pdf": "4",
+        "titre": "Grandeurs standard de réaction"
+      },
+      {
+        "question": "Q16",
+        "page_pdf": "4",
+        "titre": "Déplacement de l’équilibre"
+      },
+      {
+        "question": "Q17",
+        "page_pdf": "4",
+        "titre": "Enthalpie libre et sens d’évolution"
+      },
+      {
+        "question": "Q18",
+        "page_pdf": "4",
+        "titre": "Ordre de grandeur de la constante"
+      },
+      {
+        "question": "Q19",
+        "page_pdf": "4",
+        "titre": "Quotient en pressions partielles"
+      },
+      {
+        "question": "Q20",
+        "page_pdf": "4",
+        "titre": "Tableau d’avancement"
+      },
+      {
+        "question": "Q21",
+        "page_pdf": "4",
+        "titre": "Avancement effectivement atteint"
+      },
+      {
+        "question": "Q22",
+        "page_pdf": "5",
+        "titre": "Polarité et force électromotrice"
+      },
+      {
+        "question": "Q23",
+        "page_pdf": "5",
+        "titre": "Réaction en fonctionnement"
+      },
+      {
+        "question": "Q24",
+        "page_pdf": "5",
+        "titre": "Constante de la réaction de pile"
+      },
+      {
+        "question": "Q25",
+        "page_pdf": "5",
+        "titre": "Composition de la pile usée"
+      },
+      {
+        "question": "Q26",
+        "page_pdf": "6",
+        "titre": "Choix de la longueur d’onde"
+      },
+      {
+        "question": "Q27",
+        "page_pdf": "6",
+        "titre": "Droite d’étalonnage"
+      },
+      {
+        "question": "Q28",
+        "page_pdf": "6",
+        "titre": "Coefficient d’absorption molaire"
+      },
+      {
+        "question": "Q29",
+        "page_pdf": "6",
+        "titre": "Concentration inconnue"
+      },
+      {
+        "question": "Q30",
+        "page_pdf": "6",
+        "titre": "Fractions massiques du laiton"
+      },
+      {
+        "question": "Q31",
+        "page_pdf": "7",
+        "titre": "Rapidité des systèmes électrochimiques"
+      },
+      {
+        "question": "Q32",
+        "page_pdf": "7",
+        "titre": "Courant limite"
+      },
+      {
+        "question": "Q33",
+        "page_pdf": "7",
+        "titre": "Branches sans palier visible"
+      },
+      {
+        "question": "Q34",
+        "page_pdf": "7",
+        "titre": "Bilan cuivre–argent"
+      },
+      {
+        "question": "Q35",
+        "page_pdf": "7",
+        "titre": "Prévision thermodynamique"
+      },
+      {
+        "question": "Q36",
+        "page_pdf": "7 et 10",
+        "titre": "Potentiel mixte sur l’annexe"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  },
+  "figures": [
+    {
+      "question": "Q1",
+      "numero": 1,
+      "fichier": "figures/maille.svg",
+      "legende": "Maille du réseau anionique. Les pointillés relient un site tétraédrique à ses quatre voisins."
+    },
+    {
+      "question": "Q13",
+      "numero": 2,
+      "fichier": "figures/cinetique.svg",
+      "legende": "Les cinq mesures de chaque expérience et les ajustements imprimés. C désigne la concentration de l’oxydant restant."
+    },
+    {
+      "question": "Q23",
+      "numero": 3,
+      "fichier": "figures/pile.svg",
+      "legende": "Électrodes et circuit extérieur fermé. Les électrons quittent l’anode A et sont captés à la cathode B."
+    },
+    {
+      "question": "Q29",
+      "numero": 4,
+      "fichier": "figures/etalonnage.svg",
+      "legende": "Projection de l’absorbance 0,62 sur la droite de la figure 5 du sujet."
+    },
+    {
+      "question": "Q36",
+      "numero": 5,
+      "fichier": "figures/potentiel-mixte.svg",
+      "legende": "Construction sur les branches de l’annexe. Les deux segments verticaux au potentiel mixte ont la même hauteur."
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "slug": "x_m-prime_deuxieme-composition-de-mathematiques_1988",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "M prime",
+    "annee": 1988,
+    "matiere": "Deuxième composition de mathématiques",
+    "modalite": "écrit"
+  },
+  "intitule": "Deuxième composition de mathématiques · option M′",
+  "questions": 27,
+  "duree_heures": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-2e3e2a43d1bbd9828617",
+    "sujet_sha256": "5ec6231945f9c011af7d89463c98933235a1a1cb9294e47e22b97393077a67df",
+    "notice_ups": "m88xm2",
+    "notice_officielle": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000697782",
+    "precisions": "Pages imprimées 117 à 119, garde propre à M′."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-2e3e2a43d1bbd9828617",
+      "sha256": "5ec6231945f9c011af7d89463c98933235a1a1cb9294e47e22b97393077a67df",
+      "pages": 3,
+      "rendu_page_sha256": [
+        "cb2eab7b1ecd793caf58821d4e6d8028ae144f1cdbb2684e2423d60de19c566c",
+        "f83199760c71c3d3db0ece2c2837efb2836314406fd99df169fb3b250c8e511f",
+        "34a921fd472d08dff8aa24b8b4174cef98d1bcdf3246bed98feb1307573c42f7"
+      ]
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "x_maths_b_anciennes",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Rédaction des 27 réponses à partir des trois pages imprimées, des indications et des deux figures."
+    },
+    {
+      "phase": "revision",
+      "session": "x_maths_b_anciennes",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Contrôle des exposants critiques, de la frontière entre F et E, des conditions en zéro et en π, de l’insuffisance de la sommabilité absolue pour C¹ et de la résolution spectrale du problème forcé."
+    }
+  ],
+  "figures": [
+    {
+      "question": "II.1.c",
+      "numero": 1,
+      "fichier": "figures/fermeture-ponderee.svg",
+      "legende": "Avec α égal à 0,28, les fonctions représentées convergent dans la norme pondérée. À l’exposant limite, le carré pondéré de la dérivée a une singularité en 1/t près de zéro."
+    },
+    {
+      "question": "III.2.b",
+      "numero": 2,
+      "fichier": "figures/fourier-bord.svg",
+      "legende": "Les sommes de sinus s’annulent toutes en π. La courbe de la fonction prend en ce point la valeur strictement positive π puissance moins α."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1.a",
+      "I.1.b",
+      "I.1.c",
+      "I.1.d",
+      "I.2.a",
+      "I.2.b",
+      "I.2.c",
+      "I.2.d",
+      "II.1.a",
+      "II.1.b",
+      "II.1.c",
+      "II.2.a",
+      "II.2.b",
+      "II.3.a",
+      "II.3.b",
+      "III.1.a",
+      "III.1.b",
+      "III.2.a",
+      "III.2.b",
+      "III.2.c",
+      "III.3.a",
+      "III.3.b",
+      "III.4.a",
+      "III.4.b",
+      "III.5.a",
+      "III.5.b",
+      "III.5.c"
+    ],
+    "repere_par_question": [
+      {
+        "question": "I.1.a",
+        "page_pdf": 1,
+        "page_imprimee": 117
+      },
+      {
+        "question": "I.1.b",
+        "page_pdf": 1,
+        "page_imprimee": 117
+      },
+      {
+        "question": "I.1.c",
+        "page_pdf": 1,
+        "page_imprimee": 117
+      },
+      {
+        "question": "I.1.d",
+        "page_pdf": 1,
+        "page_imprimee": 117
+      },
+      {
+        "question": "I.2.a",
+        "page_pdf": 1,
+        "page_imprimee": 117
+      },
+      {
+        "question": "I.2.b",
+        "page_pdf": 1,
+        "page_imprimee": 117
+      },
+      {
+        "question": "I.2.c",
+        "page_pdf": 1,
+        "page_imprimee": 117
+      },
+      {
+        "question": "I.2.d",
+        "page_pdf": 1,
+        "page_imprimee": 117
+      },
+      {
+        "question": "II.1.a",
+        "page_pdf": 2,
+        "page_imprimee": 118
+      },
+      {
+        "question": "II.1.b",
+        "page_pdf": 2,
+        "page_imprimee": 118
+      },
+      {
+        "question": "II.1.c",
+        "page_pdf": 2,
+        "page_imprimee": 118
+      },
+      {
+        "question": "II.2.a",
+        "page_pdf": 2,
+        "page_imprimee": 118
+      },
+      {
+        "question": "II.2.b",
+        "page_pdf": 2,
+        "page_imprimee": 118
+      },
+      {
+        "question": "II.3.a",
+        "page_pdf": 2,
+        "page_imprimee": 118
+      },
+      {
+        "question": "II.3.b",
+        "page_pdf": 2,
+        "page_imprimee": 118
+      },
+      {
+        "question": "III.1.a",
+        "page_pdf": 3,
+        "page_imprimee": 119
+      },
+      {
+        "question": "III.1.b",
+        "page_pdf": 3,
+        "page_imprimee": 119
+      },
+      {
+        "question": "III.2.a",
+        "page_pdf": 3,
+        "page_imprimee": 119
+      },
+      {
+        "question": "III.2.b",
+        "page_pdf": 3,
+        "page_imprimee": 119
+      },
+      {
+        "question": "III.2.c",
+        "page_pdf": 3,
+        "page_imprimee": 119
+      },
+      {
+        "question": "III.3.a",
+        "page_pdf": 3,
+        "page_imprimee": 119
+      },
+      {
+        "question": "III.3.b",
+        "page_pdf": 3,
+        "page_imprimee": 119
+      },
+      {
+        "question": "III.4.a",
+        "page_pdf": 3,
+        "page_imprimee": 119
+      },
+      {
+        "question": "III.4.b",
+        "page_pdf": 3,
+        "page_imprimee": 119
+      },
+      {
+        "question": "III.5.a",
+        "page_pdf": 3,
+        "page_imprimee": 119
+      },
+      {
+        "question": "III.5.b",
+        "page_pdf": 3,
+        "page_imprimee": 119
+      },
+      {
+        "question": "III.5.c",
+        "page_pdf": 3,
+        "page_imprimee": 119
+      }
+    ]
+  }
+}

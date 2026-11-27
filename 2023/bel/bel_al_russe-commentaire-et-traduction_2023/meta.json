@@ -1,0 +1,176 @@
+{
+  "slug": "bel_al_russe-commentaire-et-traduction_2023",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Russe (commentaire et traduction)",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "duree_heures": 6,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2023-09/Commentaire-d-un-texte-en-LVE.pdf#page=22",
+    "sujet_sha256": "465bc18f65e3127c7bcf5720f6042d95180133384f245e34fd7b38acd0ffb760",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2023-11/Russe-2023.pdf#page=2",
+    "rapport_jury_sha256": "49ee04d1af6bb8034696b4470de629ddad4896b68eadf7b7c973cf864bdeb1ed",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2023",
+    "ouvrage": "Gaïto Gazdanov, *Une soirée chez Claire*, édition de 2006 citée sur le sujet.",
+    "pages_rapport_verifiees": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2023-09/Commentaire-d-un-texte-en-LVE.pdf#page=22",
+      "sha256": "465bc18f65e3127c7bcf5720f6042d95180133384f245e34fd7b38acd0ffb760",
+      "pages": 24,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "2d00da9d0f1f2cdf2b38a83f2d4c6e4c708adc481caee234bd08becf5b5b22e7"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "07bf7c7ea1e09c9e01b35c439fb384e78325e16ca6969efdf51845f93bfb66ff"
+        },
+        {
+          "numero": 22,
+          "rendu_sha256": "b61f50c07ccd7b0033557034d9518336ba32806e3bcb8285eb58a300f86f90f9"
+        },
+        {
+          "numero": 23,
+          "rendu_sha256": "45c2fbc036f881064d1302c477628005b2aaf9647bee206366a7eac44090f280"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2023-11/Russe-2023.pdf#page=2",
+      "sha256": "49ee04d1af6bb8034696b4470de629ddad4896b68eadf7b7c973cf864bdeb1ed",
+      "pages": 15,
+      "pages_verifiees": [
+        {
+          "numero": 2,
+          "rendu_sha256": "d850a98cdc40b43511f0f55eaf8880141d6a0c16c4721cec58f22497657c9554"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "d5ce7caeea85f197f89587a119ad2a10b026d602a8b3210df0becd6ea779135e"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "57bb1bf723319ce7f73c8d54e97b642d4be6428fff235b80a8f9b0286095504c"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "cc39f45b13d561b0e84710ffd9ed290dca56309571c0cf8c007ece08f8bfd772"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "e2e0cb5e944b0ee9b29b23cd130694e2c23008714221203ba2aabea93438bbb8"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "84ca6d2424082ce2ffc6e8358cd264c8de5256f9dd673e45b0eb6c2f60bb858e"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "5dc6f77907b90bfd28d6e877bdbb53aa52491d96120e807ce5a0c2f6d57cff29"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "91e456bd0eb6cdbfad60b5d8d2c9348c1e1d778600738192cf2cd9508d7f2fc0"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "ddbc974a77aded724ea4ec0ab1fe1183a18f9b56076edd74ffabdca955b3d93c"
+        }
+      ]
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "bel_al_russe_commun_2023_2025",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire russe sur les lignes 1–80, version française des lignes 1–24, guide et schéma."
+    },
+    {
+      "phase": "revision",
+      "session": "bel_al_russe_commun_2023_2025",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle des bornes et de chaque unité de la version sur le sujet, relecture du commentaire, des points de vue et des choix de langue avec le rapport pages 2 à 10."
+    }
+  ],
+  "figures": [
+    {
+      "question": "Commentaire en russe",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "L’adolescent, le vieil officier et l’historien imaginé ne donnent pas le même sens à la guerre."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Gaïto Gazdanov, *Une soirée chez Claire*, édition de 2006 citée sur le sujet."
+    ],
+    "note": "Commentaire et traduction pédagogiques originaux. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire en russe",
+      "Version française"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Commentaire en russe",
+        "pages_pdf": [
+          22,
+          23
+        ],
+        "lignes": "1–80"
+      },
+      {
+        "question": "Version française",
+        "pages_pdf": [
+          22
+        ],
+        "lignes": "1–24",
+        "debut": "Я приезжал в Кисловодск каждое лето",
+        "fin": "не знают законов социальных отношений."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

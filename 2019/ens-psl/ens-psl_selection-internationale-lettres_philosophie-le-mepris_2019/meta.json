@@ -8,7 +8,7 @@
     "modalite": "écrit"
   },
   "intitule": "Philosophie — le mépris",
-  "questions": 0,
+  "questions": 1,
   "redaction": "Proposition non officielle rédigée par IA.",
   "modele": {
     "provider": "codex",
@@ -23,7 +23,10 @@
     "references": [
       "https://fr.wikisource.org/wiki/Rh%C3%A9torique_%28trad._Ruelle%29/Livre_II/Chapitre_2",
       "https://fr.wikisource.org/wiki/Doctrine_de_la_vertu_%28trad._Barni%29/%C3%89l%C3%A9ments_m%C3%A9taphysiques/Partie_2/Chapitre_1/S2/%2439"
-    ]
+    ],
+    "page_officielle": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2019-lettres",
+    "pages_sujet": 1,
+    "reperage": "P. 1, « Développez et commentez la notion suivante » est suivi du seul intitulé « Le mépris ». Aucun extrait ni auteur imposé. Les références à Aristote et à Kant soutiennent le raisonnement proposé."
   },
   "figures": [
     {
@@ -57,6 +60,34 @@
       "date": "2026-11-25",
       "perimetre": "Vérification du livre II de la Rhétorique, de la distinction kantienne du respect et de l’estime et des trois usages de la notion dans la copie. Contrôle des deux éditions.",
       "modifications": true
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "oraux_lyon_et_anciens_corriges",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle du feuillet et de sa portée, reprise de l’argument et du schéma, exercice guidé. Mépris, indifférence, blâme, jugement sur les biens et sur les personnes, mépris de soi, estime et respect."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Développer et commenter la notion « Le mépris »."
+    ],
+    "elements_verifies": [
+      "P. 1, « Développez et commentez la notion suivante » est suivi du seul intitulé « Le mépris ». Aucun extrait ni auteur imposé. Les références à Aristote et à Kant soutiennent le raisonnement proposé.",
+      "Mépris, indifférence, blâme, jugement sur les biens et sur les personnes, mépris de soi, estime et respect.",
+      "L’épreuve imprimée ne propose ni sujet alternatif, ni annexe, ni recours à un dossier individuel."
+    ]
+  }
 }

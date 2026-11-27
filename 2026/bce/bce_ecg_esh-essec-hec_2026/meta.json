@@ -50,6 +50,23 @@
       "fournisseur": "codex",
       "agent": "astra_info_si",
       "perimetre": "Relecture de la copie et du guide sur les horizons de décision, contrôle des citations du jury, correction des attributions à Solow et Laibson, des inférences sur la crise et des unités de prix. Figure originale sur l’inversion d’une préférence."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Dissertation unique confrontée au feuillet officiel et au rapport. Les deux éditions traitent les arbitrages privés et publics, la possible persistance des chocs conjoncturels et les institutions capables de modifier les horizons de décision. Les effets d’une politique de soutien et ceux d’un retard d’investissement sont explicités.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
   ],
   "sources": {
@@ -62,5 +79,27 @@
       "https://doi.org/10.1016/j.jacceco.2005.01.002"
     ]
   },
-  "date_revision": "2026-11-24"
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Le court terme est-il l’ennemi du long terme ?"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "limites": "Composition de quatre heures. Le sujet publié tient sur une page et ne comporte aucune annexe.",
+    "verification": "Dissertation unique confrontée au feuillet officiel et au rapport. Les deux éditions traitent les arbitrages privés et publics, la possible persistance des chocs conjoncturels et les institutions capables de modifier les horizons de décision. Les effets d’une politique de soutien et ceux d’un retard d’investissement sont explicités.",
+    "pieces_controlees": [
+      {
+        "role": "sujet",
+        "pages": 1,
+        "sha256": "0c85ebdb42ba7dfa2526fd36af6ebb9bb34aece5c7a7311628f676124d759f7e"
+      },
+      {
+        "role": "rapport",
+        "pages": 10,
+        "sha256": "db109294d02fdedc57d962575e8b06670984de8520de8416e4ea26f433ae7e66"
+      }
+    ]
+  }
 }

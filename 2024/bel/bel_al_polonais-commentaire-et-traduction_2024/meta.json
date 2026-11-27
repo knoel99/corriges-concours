@@ -1,0 +1,145 @@
+{
+  "slug": "bel_al_polonais-commentaire-et-traduction_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Polonais (commentaire et traduction)",
+    "annee": 2024,
+    "modalite": "écrit commun"
+  },
+  "questions": 2,
+  "duree_heures": 6,
+  "redaction": "Corrigé original rédigé par IA, non officiel.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2024-11/Commentaire%20d%27un%20texte%20en%20LVE%20et%20traduction.pdf#page=16",
+    "sujet_sha256": "80d15efa86786e91577675fd10623264c98f1e5e2424288248f1a684c15c9f6f",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2024-11/Polonais%202024%20OK.pdf#page=2",
+    "rapport_jury_sha256": "92d65d1afdaae9b09e23996e440de255a65f4ae0d50854002a496020cc8365a5",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2024",
+    "ouvrage": "Ryszard Kapuściński, *Imperium* (1993).",
+    "ecoles": "ENS de Lyon / ENS (Paris)"
+  },
+  "figures": [
+    {
+      "question": "Commentaire",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "Trois objets font varier le regard de l’enfant. La contrainte armée cède la place à la contrainte scolaire puis à la réévaluation des portraits dans la cour."
+    }
+  ],
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2024-11/Commentaire%20d%27un%20texte%20en%20LVE%20et%20traduction.pdf#page=16",
+      "sha256": "80d15efa86786e91577675fd10623264c98f1e5e2424288248f1a684c15c9f6f",
+      "pages": 24,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "1f33d62d2f2871fbd373843ba5fed681f83b35c59a9ab1b31a272b421148df99"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "3ea33261456a99b4e412cefc548d9cbb5b7a5a907bf3904edbcad2bb93d9a265"
+        },
+        {
+          "numero": 16,
+          "rendu_sha256": "39b57237977ea4903cdb4a179997130c06860a40f5ce067cb90b82877b9555f2"
+        },
+        {
+          "numero": 17,
+          "rendu_sha256": "588eafc9852a2a2ab35acd31a99f248d95ba1ed06e261f0fe8cc4c5331fb35e9"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2024-11/Polonais%202024%20OK.pdf#page=2",
+      "sha256": "92d65d1afdaae9b09e23996e440de255a65f4ae0d50854002a496020cc8365a5",
+      "pages": 7,
+      "pages_verifiees": [
+        {
+          "numero": 2,
+          "rendu_sha256": "95d13d17442384392cb483f6e77adda1cd0920bbc01a69ee0fac684d376e10cd"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "b9c4b9851fb048d5723e25dcbd878526957c03ac968fbc78dc12bc8185197ae0"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "d2af19e7a60d53b4915e73157b3e3efe86b47727f8aa35f6cd174614d61706b6"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "6720929962105f8e63adaec63646bd6c52b015400108659c0fec17fba6abd722"
+        }
+      ]
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire composé en polonais sur les deux feuillets, version française originale dans les limites de la consigne, guide de lecture et schéma."
+    },
+    {
+      "phase": "revision",
+      "agent": "lva_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Confrontation aux deux feuillets numérisés. Contrôle du prénom Władzio, de la toile, du titre de Staline, du dernier membre de la ligne 41 et des signes de hiérarchie détournés par les enfants."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire",
+      "Version"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Commentaire",
+        "page_pdf": 16,
+        "pages_pdf": [
+          16,
+          17
+        ],
+        "ligne_debut": 1,
+        "ligne_fin": 74
+      },
+      {
+        "question": "Version",
+        "page_pdf": 16,
+        "pages_pdf": [
+          16,
+          17
+        ],
+        "ligne_debut": 24,
+        "ligne_fin": 41,
+        "debut": "W szkole od pierwszej lekcji",
+        "fin": "zniżają głos do szeptu."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

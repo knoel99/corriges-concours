@@ -8,6 +8,10 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+Les quatre arbres figurent à la page 4 du sujet. L’annexe Python de la page 9 précise les trois commandes utilisées dans l’épreuve. [Sujet officiel](https://www.concours-agro-veto.fr/sites/default/files/media/2026-04/bcpst_0226_sp.pdf) · [Rapport du jury](https://concours-agro-veto.fr/sites/default/files/media/2026-09/rapport-mmi-cpge-bcpst-2026.pdf)
+
 Convention : $t^0=1$ pour tout réel $t$, y compris $t=0$ (c'est aussi la convention de Python, `0**0` vaut `1`).
 
 ## I. Notion de fonction génératrice
@@ -229,7 +233,7 @@ La boucle des lignes 4 à 6 simule la **phase de croissance**. Pour chacune des 
 
 La boucle des lignes 7 à 10 simule la **phase de floraison** des seules plantes retenues (`l[i] == 1`). Pour chacune, un tirage de Bernoulli de paramètre $p_2$ décide si elle fleurit, et `aux` compte les plantes retenues qui ont fleuri. La valeur renvoyée est une réalisation de $J_2$.
 
-### II.B. Loi de $J_2$
+### II.B. Loi du nombre de plantes retenues
 
 ### Q 8.1
 
@@ -409,15 +413,15 @@ Chaque tour de boucle traite une plante :
 
 ### Q 13
 
-- $(H_3)$ : toutes les euglènes, quel que soit le jour, ont la **même loi de reproduction**, celle de $D$. Les individus sont interchangeables et le milieu est stationnaire au cours du temps.
+- $(H_3)$ : toutes les euglènes, quel que soit le jour, ont la **même loi de reproduction**, celle de $D$. Le modèle attribue à chaque individu les mêmes probabilités pour chaque nombre de descendants, quel que soit le jour.
 - $(H_5)$ : une euglène a **au plus $m$ descendants** en une journée : la fécondité est bornée.
-- $(H_6)$ : les nombres de descendants des différentes euglènes, le même jour ou des jours différents, sont **indépendants**. Il n'y a aucune interaction entre individus (ni compétition pour les ressources, ni régulation par la densité), ni influence de la lignée.
+- $(H_6)$ : les nombres de descendants des différentes euglènes, le même jour ou des jours différents, sont **indépendants**. Dans ce modèle, connaître la descendance d’un individu ne change pas la loi de celle des autres. Une compétition qui couplerait les nombres de descendants est ainsi écartée.
 
 ### Q 14
 
 Comme $N_0=1$, on a $N_1=\sum_{k=1}^{N_0}D_{0,k}=D_{0,1}$. D'après $(H_3)$, $D_{0,1}$ suit la loi de $D$.
 
-**$N_1$ et $D$ suivent la même loi.** (Elles ne sont pas égales pour autant : seule leur loi est commune.)
+**$N_1$ et $D$ suivent la même loi.** Les hypothèses identifient leurs lois. Une égalité presque sûre avec la variable $D$ demanderait une hypothèse supplémentaire.
 
 ### Q 15
 
@@ -434,6 +438,15 @@ $$\begin{aligned}
 
 **Pour tout $j\in\mathbb N$, $N_j$ est à valeurs dans $\{0,\dots,m^j\}$.**
 
+Lecture de la planche de la page 4. Pour passer d’une colonne à la suivante, on additionne les nombres inscrits sur les nœuds de la génération courante.
+
+| Expérience | Jour 0 | Jour 1 | Jour 2 | Jour 3 |
+|:--|--:|--:|--:|--:|
+| 1 | 1 | 1 | 3 | 1 |
+| 2 | 1 | 3 | 3 | 4 |
+| 3 | 1 | 4 | 3 | 3 |
+| 4 | 1 | 3 | 3 | 0 |
+
 ### Q 16
 
 D'après $(H_4)$, $D$ est à valeurs dans $\{0,\dots,m\}$. Donc $p_n=0$ pour tout $n>m$, et **$S\subset\{0,\dots,m\}$**.
@@ -444,7 +457,7 @@ De plus, $p_m=P(D=m)>0$ d'après $(H_4)$, donc **$m\in S$**.
 
 La racine (euglène du jour 0) porte $D_{0,1}$. Les nœuds du jour 1 portent, de gauche à droite, $D_{1,1},\dots,D_{1,k}$.
 
-![Figure 1 — Arbres des événements A₁ et A₂ : chaque nœud porte son nombre de descendants ; A₁ laisse trois euglènes au jour 2, de descendance non précisée, A₂ éteint la population au jour 2](figures/q17-1-arbres-a1-a2.svg)
+![Arbres des événements A₁ et A₂ : chaque nœud porte son nombre de descendants ; A₁ laisse trois euglènes au jour 2, de descendance non précisée, A₂ éteint la population au jour 2](figures/q17-1-arbres-a1-a2.svg)
 
 Sur $A_1$, il y a $2+1=3$ euglènes au jour 2. Sur $A_2$, la population est éteinte au jour 2.
 
@@ -637,13 +650,15 @@ Au début du tour `i`, `N` contient $N_i$. Les lignes 4 à 6 ajoutent à `aux`, 
 
 **`extinction_rec` réalise un parcours en profondeur.** Après avoir tiré le nombre `N1` d'enfants de la racine, la boucle `for k in range(N1)` de la ligne 17 appelle `extinction_rec(j-1)` sur le premier enfant. Cet appel explore entièrement le sous-arbre de cet enfant, en suivant une lignée jusqu'au jour $j$, avant de passer au deuxième enfant.
 
-![Figure 2 — Ordre des appels à simule_D() sur l'arbre de l'expérience 2 pour j = 3 : extinction_iter tire génération par génération, extinction_rec branche par branche et s'arrête dès qu'une lignée atteint le jour 3](figures/q22-3-parcours-largeur-profondeur.svg)
+![Ordre des appels à simule_D() sur l'arbre de l'expérience 2 pour j = 3 : extinction_iter tire génération par génération, extinction_rec branche par branche et s'arrête dès qu'une lignée atteint le jour 3](figures/q22-3-parcours-largeur-profondeur.svg)
 
 **Comparaison.** Les deux fonctions renvoient une variable de même loi (l'indicatrice de $N_j=0$).
 
 - `extinction_iter` effectue $N_0+N_1+\dots+N_{j-1}$ appels à `simule_D`. Après extinction, les effectifs suivants valent zéro et ne contribuent plus à cette somme. Ce nombre croît en moyenne comme $E(D)^j$ lorsque $E(D)>1$. La mémoire utilisée est constante.
 - `extinction_rec` visite au plus les mêmes nœuds, et s'arrête dès qu'elle a trouvé une euglène vivante au jour $j$ (lignes 18-19). En cas de survie, elle peut conclure après très peu d'appels : elle est alors bien plus efficace.
-- En cas d'extinction au jour $j$, les deux visitent tout l'arbre et sont aussi rapides. La version récursive utilise en outre une pile d'appels de profondeur $j$ (risque de dépasser la limite de récursion de Python pour $j$ grand) et un surcoût par appel.
+- En cas d'extinction au jour $j$, les deux fonctions simulent le même nombre de descendants individuels sur un arbre fixé, une fois pour chaque nœud précédant le jour $j$. Leur durée effective dépend du coût des appels et des boucles. La version récursive utilise en outre une pile d'appels de profondeur $j$ (risque de dépasser la limite de récursion de Python pour $j$ grand) et un surcoût par appel.
+
+Sur l’expérience 2 de la page 4 et pour $j=3$, les tirages successifs valent $3,2,1,0,0,0,4$ en largeur. En profondeur, ils valent $3,2,0,0,1,4$. Le premier enfant de ce dernier nœud atteint le jour 3. Le programme récursif renvoie alors `False`, après six tirages, et ignore le sous-arbre de droite. Le programme itératif a effectué sept tirages.
 
 ### Q 23.1
 
@@ -915,7 +930,7 @@ $$\boxed{\mathcal F=\{\alpha,1\}}$$
 
 $$\boxed{\alpha<1}$$
 
-![Figure 3 — Courbe de G_D et droite y = t : si E(D) ≤ 1, seul point commun en 1 ; si E(D) > 1, second point commun α < 1, et f = G_D − t est minimale en β (exemples G_D(t) = 0,6 + 0,4t² et 0,2 + 0,8t²)](figures/q29-4-points-fixes-gd.svg)
+![Courbe de G_D et droite y = t : si E(D) ≤ 1, seul point commun en 1 ; si E(D) > 1, second point commun α < 1, et f = G_D − t est minimale en β (exemples G_D(t) = 0,6 + 0,4t² et 0,2 + 0,8t²)](figures/q29-4-points-fixes-gd.svg)
 
 **Interprétation** : si chaque euglène a en moyenne strictement plus d'un descendant, la population survit indéfiniment avec la probabilité strictement positive $1-\alpha$. L'extinction reste possible ($\alpha>0$) dès que $p_0>0$.
 
@@ -928,21 +943,23 @@ D'après Q 28 et Q 29, pour $b\in[0,1]$ : $G_D(b)-b>0$ si et seulement si $b<\al
 À la sortie, $c-a\le\varepsilon$, donc $\alpha\le c\le\alpha+\varepsilon$ : $c$ est une valeur approchée de $\alpha$ par excès à $\varepsilon$ près.
 
 ```python
+from fractions import Fraction
+
 def proba_extinction(epsilon):
-    a = 0
-    c = 1
+    a = Fraction(0)
+    c = Fraction(1)
     while c - a > epsilon:
-        b = (a+c)/2
-        if b == a or b == c:
-            raise ValueError("La précision demandée dépasse celle du calcul.")
-        if G_D(b) > b:  # équivaut à G_D(b) - b > 0
+        b = (a + c) / 2
+        if G_D(b) - b > 0:
             a = b
         else:
             c = b
     return c
 ```
 
-La preuve de l’encadrement suppose que le signe de $G_D(b)-b$ est évalué correctement. Dans le cas critique $G_D(t)=(1+t^2)/2$, ce résidu vaut $(1-b)^2/2$. Pour $b=1-2^{-30}$, il est strictement positif, mais le calcul direct en double précision peut donner zéro. Une factorisation telle que $(1-b)^2/2$ conserve ici le signe. Pour des probabilités rationnelles connues, on peut aussi utiliser des fractions exactes pour les coefficients et les bornes, par exemple en initialisant `a, c = Fraction(0), Fraction(1)` après avoir importé `Fraction` de `fractions`.
+Les quatre blancs du sujet sont `c - a > epsilon`, `a = b`, `c = b` et `c`. Le programme ci-dessus utilise des fractions pour les deux bornes. Si `G_D` conserve ce type et emploie des coefficients rationnels exacts, le signe testé est exact à chaque étape. Par exemple, la formule `(1 + 3*t*t)/4` donne $\alpha=1/3$. Pour $\varepsilon=1/100$, on termine avec $42/128<1/3<43/128$ et on renvoie $43/128$.
+
+Si la commande fournie renvoie un flottant arrondi, la preuve mathématique suppose toujours un signe fiable. Au seuil critique $G_D(t)=(1+t^2)/2$, le résidu exact vaut $(1-t)^2/2$. Pour $t=1-2^{-30}$, l’évaluation directe en double précision peut donner zéro. Évaluer cette loi en fractions exactes ou employer sa forme factorisée préserve la comparaison dans cet exemple.
 
 La boucle s'arrête après $\lceil\log_2(1/\varepsilon)\rceil$ tours. On renvoie `c`, défini avant la boucle : pour `epsilon = 1`, la boucle n'est jamais exécutée et `b` n'existerait pas.
 
@@ -992,6 +1009,8 @@ D'après Q 31.2, il suffit que $\frac{p+1}{n\varepsilon^2}\le\eta$. Une conditio
 
 $$\boxed{n\ge\frac{p+1}{\eta\,\varepsilon^2}}$$
 
+Toutes les abscisses utilisent les mêmes observations $X_0,\ldots,X_{n-1}$. La majoration de la probabilité d’une réunion reste valable même si les événements $A_i$ sont dépendants.
+
 ### Q 32.1
 
 Posons $q=\frac{p+1}{\eta\varepsilon^2}>0$. `int` tronque le réel positif $q$ à sa partie entière, donc $n=\lfloor q\rfloor+1>q$.
@@ -1025,7 +1044,9 @@ P\big(\text{la courbe de }G_X\text{ coupe les }p+1\text{ segments}\big)&\ge P\Bi
 &\ge1-\eta .
 \end{aligned}$$
 
-![Figure 4 — Sortie de trace1 simulée pour X de loi binomiale ℬ(2, 1/2), p = 5, ε = 0,1 : la courbe de G_X coupe les p + 1 segments verticaux de longueur 2ε](figures/q32-4-segments-confiance.svg)
+![Fonction génératrice de la binomiale de paramètres 2 et 1/2, deux bornes empiriques et six segments pour un tirage de 1 537 valeurs.](figures/q32-4-segments-confiance.svg)
+
+Pour reproduire la figure, on a pris $p=5$, $\varepsilon=1/8$, $\eta=1/4$, puis tiré $1\,537$ réalisations de $\mathcal B(2,1/2)$ avec le générateur PCG64 de NumPy et la graine `20261126`. Les deux courbes en pointillés relient les points produits par `trace1`. Les segments et la courbe exacte $G_X(t)=(1+t)^2/4$ ont été ajoutés pour vérifier les intersections sur cet échantillon.
 
 ### Q 33
 
@@ -1044,3 +1065,5 @@ def trace2(p, liste):
 ```
 
 Pour `trace2(10, [0.4, 0.6])`, on obtient les onze points $(\frac i{10},\,0{,}4+0{,}6\cdot\frac i{10})$, de $(0;0{,}4)$ à $(1;1)$. C'est bien le graphe de $G_X(t)=0{,}4+0{,}6t$, fonction génératrice de $\mathcal B(3/5)$.
+
+![Les onze points de la question 33 pour une variable de Bernoulli de paramètre 3/5.](figures/q33-generatrice-bernoulli.svg)

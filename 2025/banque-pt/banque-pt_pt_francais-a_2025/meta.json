@@ -1,0 +1,76 @@
+{
+  "slug": "banque-pt_pt_francais-a_2025",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français A",
+    "annee": 2025
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2025/fr_a_2025_pt.pdf",
+    "sujet_sha256": "c9502a77ff252672675f306b4853dd1b2117f74948a71a07c338da0169ac2d31",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2025/rapport_fra_a_ecrit_2025.pdf",
+    "rapport_sha256": "79ba72e9fe39edc71c52c5cfeffe973dbb3658cb63c9379bb14e95216b8c6c0e",
+    "programme_officiel": "https://www.education.gouv.fr/bo/2024/Hebdo29/ESRS2418417A",
+    "theme": "La communauté et l’individu",
+    "oeuvres_au_programme": [
+      "Eschyle, Les Suppliantes et Les Sept contre Thèbes (traduction de Paul Mazon)",
+      "Spinoza, Traité théologico-politique, préface et chapitres XVI à XX",
+      "Edith Wharton, Le Temps de l’innocence (traduction de Madeleine Taillandier)"
+    ],
+    "source_coefficients": "https://www.banquept.fr/documents/livret/2025/Livret_PT_2025.pdf#page=13",
+    "admissibilite_admission": "École polytechnique, admissibilité, coefficient 4",
+    "precision_coefficients": "Français facultatif pour les candidats étrangers à l’École polytechnique.",
+    "programme_sha256": "5e329586a757853b0b1eff03cc2b63acc89b80a4fb972e0607ca23f08bddbb19"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "À qui profite la force de l’union ?"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture de la question sur le bénéficiaire de la force et de la personnification finale chez Alain. Distinction entre union qui se perpétue, protection des étrangères à Argos et liberté de juger chez Spinoza. Rédaction des deux éditions, vérification du programme et réalisation du schéma."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 2,
+        "page_pdf_fin": 2,
+        "perimetre": "Les œuvres confirment-elles le jugement d’Alain selon lequel la puissance de l’union en vient à se prendre elle-même pour fin et à persécuter ceux qui s’en écartent ?"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

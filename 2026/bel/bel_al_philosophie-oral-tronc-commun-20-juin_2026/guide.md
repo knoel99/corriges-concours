@@ -6,7 +6,11 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Le jury publie 12 billets pour le 20 juin. Pour chacun, le premier intitulé est celui qui a été choisi. Le second était proposé au choix. Les deux reçoivent ici des réponses distinctes. Les exemples et arguments proposés servent à préparer une leçon personnelle.
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Le [feuillet du 20 juin](https://www.ens.psl.eu/sites/default/files/philosophie_20_juin_tronc_commun.pdf) contient 12 billets de deux sujets. Les développements suivent leur ordre. Le premier sujet a été choisi sur chacun des 12 billets. Le [rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf#page=7) permet de vérifier les choix.
+
+Lisez à haute voix les deux sujets du billet puis annoncez votre choix au début de l’exposé. Seul un dictionnaire de langue française est autorisé, à l’exclusion des dictionnaires de noms propres. Pour essayer l’autre sujet, utilisez la question d’entretien et la piste de réponse placées après son développement.
 
 ## S’exercer aux dix minutes d’entretien
 
@@ -35,6 +39,8 @@ Dans ses *Salons*, Diderot doit rendre présentes à des lecteurs éloignés des
 
 Il suffit de rappeler une douleur injustement infligée pour sentir combien une réponse négative risquerait de paraître indifférente aux victimes. Mais reconnaître la réalité de la souffrance oblige-t-il à faire du mal une substance qui existerait comme un objet ? Augustin analyse le mal comme privation d’un bien dû. Une promesse trahie a des effets fort réels, sans qu’il faille supposer qu’une « chose mauvaise » s’est ajoutée à une relation. C’est la fidélité légitimement attendue qui lui fait défaut. Cette analyse éclaire la différence entre le fait d’une atteinte et la manière de concevoir son existence. Il reste à distinguer une souffrance naturelle et un tort moral, qui engage un jugement sur une conduite. Parler du mal a un sens déterminé lorsqu’on peut dire quel bien a été atteint et quelle responsabilité est en jeu.
 
+**À l’entretien. Peut-on montrer le mal comme on montre un objet ?** Comparer une blessure, que l’on peut examiner, et la trahison dont elle est la conséquence. L’évaluation porte sur une action et une relation. L’absence d’un objet appelé « le mal » ne fait pas disparaître le tort.
+
 ## 2. Travail manuel, travail intellectuel
 
 Une luthière ajuste l’épaisseur d’une pièce de bois et vérifie sa réponse sous les doigts. L’étudiant qui produit une démonstration pose des signes sur une page, rature un essai et déplace une figure. L’un pense dans un geste, l’autre raisonne grâce à des inscriptions matérielles. La différence entre travail manuel et intellectuel n’est donc pas une séparation entre mouvements sans pensée et pensée sans corps.
@@ -44,6 +50,8 @@ Elle peut désigner avec précision des exigences distinctes d’un travail, pui
 ### Avons-nous des devoirs envers les animaux ?
 
 Un chien confié à quelqu’un a besoin d’eau même si aucun humain ne verra ce qui se passe. L’obligation semble tenir à ce qui peut arriver à l’animal lui-même. Bentham demande de considérer la capacité de souffrir lorsqu’on détermine qui compte moralement. Cette considération n’attribue pas à toutes les espèces les mêmes besoins. Elle exige justement de connaître leurs manières de vivre et les dépendances que les humains ont créées. S’abstenir de faire souffrir, soigner un animal sous sa garde et préserver un milieu sont des obligations de portée différente. Elles peuvent être discutées lorsque des intérêts s’opposent. Leur raison ne se réduit pourtant pas à protéger les sentiments des observateurs ou la valeur marchande d’une propriété.
+
+**À l’entretien. Une obligation envers un animal dépend-elle de ce que son propriétaire ressent ?** Imaginer un animal sans propriétaire en détresse. Si sa souffrance compte encore dans la décision, le devoir possède un destinataire différent de l’entourage humain. Reste à préciser quelles capacités et quels besoins nous obligent.
 
 ![Comment raisonne la main de la luthière ?](figures/lutherie.svg)
 
@@ -57,6 +65,8 @@ Dans les *Passions de l’âme*, Descartes examine comment les représentations 
 
 Une bibliothèque autogérée peut décider collectivement des horaires et confier les comptes à des responsables révocables. L’absence de chef permanent n’y équivaut pas à l’absence de règles. L’anarchie comme thèse politique examine la possibilité d’une coopération sans pouvoir souverain imposé d’en haut. Son problème propre commence lorsque les décisions engagent durablement des personnes en désaccord. Comment répartir les tâches, limiter les emprises informelles et organiser un recours sans rétablir une autorité incontrôlable ? Le sens ordinaire de désordre général décrit l’échec possible d’une coordination. Il ne suffit pas pour réfuter l’hypothèse. On la juge en examinant les formes concrètes d’association, leur capacité à faire respecter des garanties et la place qu’elles laissent à la dissidence.
 
+**À l’entretien. La disparition d’un chef suffit-elle à établir l’anarchie ?** Observer une association qui décide en assemblée. Elle peut se passer d’un chef permanent tout en ayant des règles et des procédures exigeantes. Distinguer la contestation de la domination et l’effondrement de toute coordination.
+
 ## 4. La morale du citoyen
 
 Une déclaration fiscale sincère et une voix donnée à un candidat honnête peuvent toutes deux relever d’une morale civique. Obéir à la loi et contribuer à déterminer quelles lois doivent exister sont pourtant deux actes distincts. Le citoyen est à la fois soumis aux règles communes et, dans une démocratie, membre du corps qui peut les modifier. Que lui demande cette double position lorsqu’il estime qu’une règle est injuste ?
@@ -66,6 +76,8 @@ Se croire dispensé de toute obligation dès qu’on se sait en désaccord détr
 ### Pourquoi lire des romans ?
 
 Le récit peut faire percevoir la même conversation depuis deux consciences pour lesquelles un silence n’a pas du tout la même signification. Cette expérience ne rend pas le lecteur omniscient dans la vie réelle. Elle lui fait éprouver la fragilité des attributions d’intention dont il use ordinairement. On lit aussi pour les plaisirs d’une voix, pour la construction d’un monde et parfois pour s’évader. Ces fins ne se ramènent pas à une leçon morale obligatoire. Un roman peut conforter des préjugés tout comme il peut les déranger. Il apprend quelque chose de singulier quand sa forme conduit à suivre les conséquences d’une perspective et à la reprendre autrement, sans réduire les personnages à des exemples déjà expliqués d’avance.
+
+**À l’entretien. Pourquoi relire un roman dont on connaît la fin ?** À la seconde lecture, un détail banal devient l’indice d’une décision future. La valeur de l’expérience tient aussi à une manière de suivre des raisons, des attentes et des voix, même quand la surprise a disparu.
 
 ## 5. L’humour
 
@@ -77,6 +89,8 @@ Il ne suffit cependant pas d’avoir fait rire pour qu’un propos échappe au j
 
 Comparer deux taux de réussite scolaire selon l’origine sociale révèle un écart que les trajectoires individuelles isolées peuvent masquer. La connaissance sociologique rend ici une critique possible. Elle n’en établit pas seule toutes les prémisses. Il faut encore dire à quel titre l’écart est injuste et examiner les mécanismes qui le produisent au lieu de prendre une corrélation pour une explication complète. Inversement, l’expérience d’une injustice peut conduire un enquêteur vers un phénomène négligé. Sa conviction ne l’autorise pas à écarter un résultat contraire à son attente. Connaître et critiquer se fécondent donc lorsque question normative, construction des données et épreuve des hypothèses restent distinctes et publiquement discutables. Leur alliance ne se réalise pas de façon automatique.
 
+**À l’entretien. Un chiffre sur une inégalité constitue-t-il déjà une critique ?** Décrire un écart de revenu, en chercher les mécanismes, puis dire en vertu de quelle exigence on le juge injuste. La critique a besoin de connaissances et rend explicite une norme que la mesure ne contient pas à elle seule.
+
 ## 6. Le sport
 
 Deux personnes courent le même kilomètre. La première veut prendre son train, la seconde s’entraîne pour une course. Le mouvement du corps ne suffit pas à faire du second trajet un exercice sportif. Un but réglé oriente l’effort, rend une performance comparable et permet d’en reprendre la progression. La gymnastique de loisir ou l’escalade pratiquée sans compétition officielle montrent aussi que le classement public n’est pas indispensable.
@@ -86,6 +100,8 @@ La règle fait apparaître des habiletés qui n’existeraient pas de la même f
 ### Y a-t-il un inconscient collectif ?
 
 Plusieurs personnes reproduisent une règle de distance ou de politesse sans savoir en énoncer l’histoire. On tient là une influence collective qui échappe en partie à la conscience individuelle. A-t-on pour autant découvert une seule psyché commune à tous les membres du groupe ? Jung donne à l’inconscient collectif un sens plus fort en postulant des formes psychiques universelles, les archétypes. Constater des rites ou des motifs semblables dans plusieurs sociétés ne prouve pas à soi seul cette hypothèse. Des transmissions, des apprentissages et des problèmes analogues peuvent aussi rendre compte des ressemblances. On peut donc établir des dimensions sociales non conscientes dans nos conduites tout en laissant ouverte la thèse d’une structure psychique universelle. Les deux propositions n’exigent pas les mêmes preuves.
+
+**À l’entretien. Une habitude partagée prouve-t-elle l’existence d’un inconscient collectif ?** Des élèves reproduisent le même geste appris sans pouvoir en expliquer l’origine. Une transmission sociale implicite suffit ici à rendre compte de la ressemblance. Indiquer l’observation supplémentaire qui justifierait une hypothèse plus forte.
 
 ## 7. La culture artistique
 
@@ -97,6 +113,8 @@ Les deux aspects se soutiennent à certaines conditions. Connaître la destinati
 
 Si toutes les tâches pénibles étaient supprimées, des personnes aujourd’hui épuisées disposeraient de temps pour se reposer, apprendre ou prendre leurs propres initiatives. Mais le travail peut désigner des réalités différentes, l’emploi rémunéré, l’entretien des conditions de la vie, la fabrication durable ou une activité choisie exigeant de l’effort. Supprimer un emploi n’abolit pas nécessairement la tâche, qui peut retomber sans rémunération sur un proche. La distinction d’Arendt entre travail, œuvre et action aide à interroger ce que l’on souhaite soustraire à la nécessité et ce que l’on voudrait préserver comme pouvoir de faire. Un monde moins soumis au travail contraint est désirable dans cette mesure. La disparition de tout effort productif et de toute coopération n’en est ni une condition claire ni un idéal suffisamment défini.
 
+**À l’entretien. Si des machines produisaient tous nos biens, qui prendrait encore soin des personnes ?** Distinguer l’emploi rémunéré, les activités nécessaires à la vie et l’activité choisie pour elle-même. La disparition d’une catégorie statistique de travail ne garantit ni la disparition des tâches ni leur juste répartition.
+
 ## 8. Pourquoi pleurons-nous au cinéma ?
 
 Une scène montre un père qui attend un enfant dont le public sait qu’il est rentré chez lui. Le spectateur connaît l’issue heureuse et sait que l’acteur pourra recommencer la scène. Ses larmes sont pourtant réelles. L’explication ne peut donc pas être qu’il prend simplement la fiction pour un fait actuel. Le film règle l’accès aux pensées et aux événements, nous fait durer dans l’attente du personnage et donne, par le jeu, la lumière ou le silence, une forme perceptible à l’inquiétude.
@@ -106,6 +124,8 @@ L’émotion suppose alors moins une croyance en l’existence actuelle du perso
 ### L’égalité devant la loi
 
 Exiger que deux personnes placées dans la même situation relèvent d’une même règle interdit le privilège attaché au nom ou au rang. Mais comment savoir sous quel rapport les situations sont les mêmes ? Un bâtiment public dont tous doivent emprunter le même escalier offre formellement la même entrée et prive certaines personnes d’un accès réel. La différence de traitement qui prévoit une rampe ou une assistance peut donc servir une égalité de droit. Le principe n’autorise pas pour autant toute distinction présentée comme bienveillante. Le critère doit avoir un rapport défendable avec l’objet de la règle et pouvoir être contesté. L’égalité devant la loi concerne sa formulation, ses procédures d’application et la possibilité effective pour chacun de faire valoir son droit devant une instance commune.
+
+**À l’entretien. Une amende du même montant traite-t-elle également tous les citoyens ?** Comparer l’identité de la règle et le poids de la sanction selon les ressources. Défendre l’un des critères exige d’expliquer quelle égalité doit être garantie, notamment dans l’accès au recours.
 
 ![Quatre raisons de pleurer devant une fiction](figures/cinema.svg)
 
@@ -119,6 +139,8 @@ Dans l’*Euthyphron* de Platon, la question de savoir si le pieux est aimé des
 
 Un comédien oublie une réplique qui préparait une révélation. Le public ne comprend plus un changement de personnage. Le critère d’échec est ici identifiable dans la construction même de la scène. À l’inverse, une dissonance qui heurte un auditeur peut constituer exactement l’effet recherché et provoquer un nouvel apprentissage de l’écoute. Faut-il alors s’en remettre à l’intention déclarée de l’artiste ? Une œuvre peut échouer malgré une intention défendable ou réussir par des effets qu’elle ne prévoyait pas. On peut dire avec raison qu’une œuvre est ratée lorsque l’on précise le problème qu’elle affronte, l’effet que ses moyens produisent et l’incompatibilité que l’on décèle. Le verdict reste exposé à une autre lecture qui ferait apparaître, dans la difficulté perçue, une cohérence négligée.
 
+**À l’entretien. Une œuvre peut-elle échouer selon le projet de son auteur et réussir autrement ?** Imaginer une pièce écrite pour faire rire qui bouleverse son public. Comparer l’intention, l’effet produit et la cohérence de la forme. Le jugement doit dire sur lequel de ces plans il porte.
+
 ## 10. Domination et violence
 
 Une direction peut imposer un rythme injuste sans qu’aucun coup soit porté, si les salariés qui protestent risquent une perte immédiate de revenu et ne disposent d’aucune voie de recours. La domination désigne une relation durable dans laquelle les uns peuvent déterminer les conditions d’action des autres sans contrôle suffisant. La violence peut la soutenir, la révéler ou la produire. Toutefois, définir la première uniquement par les actes violents visibles rendrait invisible une dépendance qui dure même les jours sans incident.
@@ -128,6 +150,8 @@ Inversement, un acte violent isolé ne constitue pas à lui seul un ordre de dom
 ### Ai-je un corps ou suis-je un corps ?
 
 On dit « j’ai mal à la main » et « je tends la main » avec une égale justesse. Dans le premier cas, je peux considérer ma main comme une partie localisable et susceptible d’être examinée. Dans le second, le corps est le sujet d’une action vers le monde, sans qu’une conscience extérieure ait d’abord à pousser une machine. Merleau-Ponty décrit ce corps propre comme un pouvoir de percevoir et d’habiter un milieu. Une blessure peut faire passer au premier plan l’organe jusqu’alors engagé silencieusement dans mes gestes. Les deux formules correspondent donc à des perspectives réelles, à condition que la possession ne transforme pas le corps en objet étranger et que l’identité corporelle ne fasse pas disparaître la possibilité de réfléchir sur son état et de demander des soins.
+
+**À l’entretien. Que change l’expression « j’ai mal » par rapport à la description d’une lésion ?** La lésion peut être examinée par quelqu’un d’autre. La douleur se présente à celui qui l’éprouve et modifie son pouvoir d’agir. Les deux descriptions éclairent le même corps depuis des rapports distincts.
 
 ## 11. Imitation et création
 
@@ -139,6 +163,8 @@ Dans la *Poétique*, Aristote analyse une imitation qui porte sur des actions et
 
 Découvrir qu’un calendrier de travail a changé plusieurs fois libère d’une illusion de nécessité. Une organisation présentée comme naturelle est le résultat de décisions qui auraient pu être différentes. Le savoir historique élargit ainsi les possibilités que nous pouvons concevoir. Il peut aussi enfermer si l’on prétend déduire d’un précédent une loi qui dicterait toute conduite présente ou si le poids des injustices anciennes sert à déclarer toute initiative vaine. Il faut comparer les situations, identifier les héritages qui agissent encore et examiner les marges de décision réellement ouvertes. La connaissance ne distribue pas d’elle-même les moyens d’agir. Elle accroît la liberté lorsqu’une enquête plus juste sur les conditions reçues peut entrer dans la délibération présente.
 
+**À l’entretien. Savoir d’où vient une institution donne-t-il le pouvoir de la changer ?** Sa genèse montre qu’elle aurait pu prendre une autre forme. Son fonctionnement présent peut néanmoins dépendre de ressources ou de droits difficiles à transformer. Relier le gain de compréhension aux moyens effectifs d’agir.
+
 ## 12. Littérature et politique
 
 Un roman qui confie le récit à une domestique peut faire entendre comme parole réfléchie ce qui ne passait, dans l’ordre social décrit, que pour un bruit d’arrière-plan. Il produit un effet politique sans nécessairement défendre un programme. Une affiche électorale en vers, à l’inverse, affiche directement une orientation politique sans suffire pour autant à définir l’ensemble des rapports entre littérature et politique. Il faut distinguer l’opinion d’un auteur, les conditions de publication et ce que fait la forme de son texte.
@@ -149,4 +175,4 @@ Dans les réflexions de Rancière sur le partage du sensible, la distribution de
 
 Une communauté accablée par une vieille querelle ne peut bâtir aucun projet si chaque incident doit rejouer toutes les offenses anciennes. Il existe une capacité de laisser au passé sa place pour agir maintenant. Elle ne se confond pas avec l’effacement volontaire des archives ou le refus de reconnaître un tort qui se prolonge. Oublier une discrimination peut condamner ses victimes à la subir de nouveau et priver la collectivité des moyens de comprendre une inégalité présente. Avec Nietzsche, on peut demander à quelle mesure le rapport à l’histoire soutient ou entrave la vie. Se donner un avenir exige de pouvoir reprendre et déplacer un héritage. Selon les cas, c’est une mémoire reconnue et discutée, plutôt qu’une injonction à l’oubli, qui rend ce déplacement possible.
 
-[Feuille officielle du 20 juin](https://www.ens.psl.eu/sites/default/files/philosophie_20_juin_tronc_commun.pdf) · [Rapport du jury, modalités et annexe des sujets](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf)
+**À l’entretien. Toute fidélité à la mémoire empêche-t-elle de commencer quelque chose ?** Un quartier peut conserver l’archive d’une injustice et modifier les règles qui la reproduisaient. Distinguer la remémoration qui enferme dans la répétition et celle qui rend possible une décision nouvelle.

@@ -1,0 +1,73 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_philosophie-que-veut-on-dire-quand-on-parle-de-la-mort-de-la-metaphysique-oral_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Philosophie — Que veut-on dire quand on parle de la mort de la métaphysique (oral)",
+    "annee": 2019,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie — Que veut-on dire quand on parle de la mort de la métaphysique (oral)",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/philo.pdf",
+    "sha256_sujet": "e4d2e0b125bc27ca5c2d671e569ffb36314a5aab9fc5c2b9eaf08567862179a1",
+    "reperage": "Feuillet de philosophie orale, page unique, candidat 2. Consigne commune « Développez et commentez ». Sujet attribué : Que veut-on dire quand on parle de « la mort de la métaphysique » ?",
+    "index": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2019-lettres",
+    "pages_sujet": 1,
+    "candidat": 2,
+    "attentes_generales_jury": "https://www.ens.psl.eu/IMG/file/internationale/2008/Lettres/Lettres.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Exposé du candidat 2",
+      "legende": "Quelle preuve demander à chaque diagnostic ?",
+      "numero": 1
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet original. Exposé argumenté sur le sujet attribué, exemples et objections, préparation guidée de l’entretien et schéma des distinctions conceptuelles."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "philosophie_sil_2019_candidats_1_2_4",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Confrontation de l’exposé et du guidage au sujet du candidat 2. Attention aux guillemets et à la demande portant sur le sens d’une formule. Enquête d’Aristote, désuétude historique, première antinomie de Kant et portée de la connaissance théorique. Chez Carnap, distinction entre une négation et le nom d’une chose ; statut du critère, cas de l’identité à travers le changement et objection sur le sens des guillemets. Reprise du schéma et des relances proposées."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Candidat 2. Que veut-on dire quand on parle de « la mort de la métaphysique » ?"
+    ],
+    "elements_verifies": [
+      "Le feuillet d’une page attribue une question distincte à chacun des quatre candidats. Le périmètre de cette paire est la question de la ligne 2.",
+      "Attention aux guillemets et à la demande portant sur le sens d’une formule.",
+      "Enquête d’Aristote, désuétude historique, première antinomie de Kant et portée de la connaissance théorique.",
+      "Chez Carnap, distinction entre une négation et le nom d’une chose ; statut du critère, cas de l’identité à travers le changement et objection sur le sens des guillemets."
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

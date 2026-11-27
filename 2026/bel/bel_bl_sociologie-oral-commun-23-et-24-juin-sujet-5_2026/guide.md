@@ -6,6 +6,10 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## Les enfants surdoués
@@ -32,6 +36,8 @@ Le dossier permet ainsi d’expliquer comment se constitue une population reconn
 
 ![Diplôme au moins égal à bac + 5 parmi les parents](figures/lecture-des-donnees.svg)
 
+Calculez aussi les différences en points : 41,3 pour les pères, 33,7 pour les mères. La comparaison des écarts absolus et celle des rapports ne donnent pas le même ordre, parce que les proportions de départ diffèrent.
+
 ## Questions du jury
 
 > [!INDICATION]
@@ -45,3 +51,9 @@ C’est le rapport entre les parts de cette profession dans deux échantillons d
 Elle renseigne, sous l’hypothèse nulle et les hypothèses du test, sur la rareté d’un résultat au moins aussi extrême. Elle ne donne pas directement la probabilité de vérité d’une hypothèse ni la taille de l’effet.
 
 [Dossier officiel](https://www.ens.psl.eu/sites/default/files/dossier_surdouance.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_tronc_commun_sociologie.pdf)
+
+## Vérification sur le dossier
+
+Élias et Lignier éclairent la formation des aptitudes et l’identification du diagnostic. Les tableaux sur les diplômes, la profession paternelle, les investissements parentaux et les activités des enfants puis les scores de maternelle ont été confrontés aux deux copies.
+
+Le document 6 distingue le nombre d’activités du fait de pratiquer au moins un sport. Trois activités ou davantage concernent 39,2 % du groupe enquêté et 6,1 % du groupe comparable. L’écart vaut 33,1 points et le rapport environ 6,4. Ces calculs décrivent les groupes constitués par l’enquête, dont le premier passe par une association de familles. Ils ne mesurent pas l’effet d’une activité supplémentaire sur un test individuel.

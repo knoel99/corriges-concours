@@ -6,6 +6,12 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+**Couverture vérifiée.** Les sept documents du dossier sont traités dans les deux éditions. Les champs des tableaux Dares, les quatre vagues sur les consignes, les différents répondants de Réponse et le rapprochement entre travail individuel et vote communal ont été contrôlés.
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## De la démocratie en entreprise
@@ -16,13 +22,21 @@ Le citoyen vote à égalité avec les autres électeurs, mais passe une partie d
 
 Georges Friedmann se demande en 1949 si un travail parcellaire et répétitif affaiblit les dispositions critiques nécessaires à la démocratie (doc. 1). Il formule une hypothèse sur la socialisation quotidienne. Le tableau de la Dares permet d’en préciser la première condition (doc. 3). En 1991, 20,5 % des salariés cadres et professions intellectuelles supérieures disent appliquer strictement les consignes, contre 52,8 % des ouvriers. L’écart de 32,3 points concerne des déclarations de pratique au travail. Une réponse « sans objet » est prévue pour ceux qui ne reçoivent pas de telles consignes. La ranger avec les personnes qui désobéissent confondrait deux situations. L’autonomie déclarée peut résulter d’une position de qualification ou d’une nécessité pratique de s’adapter à un travail impossible à prescrire complètement.
 
+![Figure 1 — Consignes strictement appliquées selon la position au travail](figures/lecture-des-donnees.svg)
+
+Les ordres strictement suivis sont environ 2,6 fois plus fréquents dans les déclarations des ouvriers que dans celles des cadres. Friedmann invite à se demander si cette différence se prolonge hors de l’atelier. Pour le savoir, il faudrait retrouver chez les mêmes personnes les formes de prise de parole et de participation politique.
+
 Pour éprouver l’hypothèse d’un apprentissage politique, il faudrait suivre des personnes avant et après un changement d’organisation du travail. L’origine sociale, les préférences antérieures et le choix du métier peuvent en effet influer ensemble sur le poste occupé et sur la politique. Friedmann donne au dossier une question. Le simple constat d’une différence entre catégories professionnelles ne suffit pas à la trancher.
+
+La comparaison se déplace avec le temps. En 2013, 41,8 % des ouvriers et 18,4 % des cadres déclarent appliquer strictement les consignes. L’écart atteint alors 23,4 points, contre 32,3 en 1991. Il s’est resserré de 8,9 points entre ces deux enquêtes. Les répondants peuvent changer d’une vague à l’autre. Ce résultat décrit l’évolution des deux catégories et laisse ouverte la trajectoire de chaque salarié.
 
 ### La représentation donne une prise inégale sur la décision
 
 L’enquête de Maïlys Gantois dans une PME de transport (doc. 2) montre comment la direction prétend définir les formes légitimes de la discussion. Elle adresse des lettres aux salariés, tout en reprochant aux représentants d’avoir distribué un tract avant une négociation. L’existence d’une instance ne garantit donc pas le droit pratique de fixer l’ordre du jour ou d’informer les collègues par ses propres canaux. La taille de l’entreprise modifie les possibilités de négocier. En 2024, les entreprises de 10 à 49 salariés constituent 82,3 % des entreprises du champ privé non agricole mais emploient 27,1 % de ses salariés. Dans cette tranche de taille, 9,8 % sont concernées par au moins une négociation (doc. 4). On comprend qu’une faible part d’entreprises négociatrices puisse couvrir une part bien supérieure de travailleurs.
 
 Que produit la négociation ? Les salaires et primes sont négociés dans 10,3 % des entreprises du champ du document 5. Parmi celles qui abordent le thème, 71,6 % concluent un accord. Les entreprises concluant un accord sur ce thème emploient 35,8 % des salariés. Ces trois chiffres mesurent respectivement une fréquence parmi les entreprises, un taux conditionnel d’aboutissement et une couverture en salariés. Un accord peut acter une concession importante ou formaliser un déséquilibre. L’enquête Réponse (doc. 6) ajoute le regard des intéressés. En 2023, 83 % des salariés mandatés disent que les représentants du personnel traduisent bien leurs aspirations. Le tableau sur les représentants des directions et du personnel compte quant à lui des établissements. La pluralité des points de vue fait partie du phénomène à expliquer.
+
+Gantois observe aussi que la direction renvoie un problème matériel du dépôt au comité spécialisé et reçoit séparément trois des quatre signataires des revendications. Ces choix modifient qui parle devant qui et avec quel appui. Cette attention aux positions aide à lire Réponse : à la même question sur la traduction des aspirations, 83 % des salariés mandatés se disent d’accord, contre 50 % des non-mandatés et 51 % de l’ensemble. Le mandat peut à la fois sélectionner des salariés plus confiants et transformer leur expérience de la représentation.
 
 ### Jusqu’où l’expérience professionnelle informe-t-elle la citoyenneté ?
 

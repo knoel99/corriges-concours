@@ -41,7 +41,8 @@
   ],
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/FUI-FF%202%202025%20Maths.pdf",
-    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
+    "sha256_sujet": "f5bf0ccfb500759ae3e3a8ce5176cddb901cb4a19f1680af6b791c574a2247f2"
   },
   "date_revision": "2026-11-24",
   "provenance": {
@@ -76,6 +77,57 @@
       "agent": "astra_maths",
       "fournisseur": "codex",
       "tour": 1
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Le problème I compte neuf sous-questions et le problème II dix-sept. Recoupement de la convergence conditionnelle de l’intégrale oscillante, des deux équations différentielles et de l’identification des fonctions. Vérification des normes complexes, du polynôme compagnon et du contrôle des produits en blocs dans la récurrence à coefficients variables, y compris le cas de rayon spectral nul.",
+      "tour": 2
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1a",
+      "I.1b",
+      "I.1c",
+      "I.2a",
+      "I.2b",
+      "I.2c",
+      "I.3",
+      "I.4",
+      "I.5",
+      "II.1",
+      "II.2a",
+      "II.2b",
+      "II.3",
+      "II.4a",
+      "II.4b",
+      "II.5",
+      "II.6a",
+      "II.6b",
+      "II.6c",
+      "II.6d",
+      "II.7",
+      "II.8",
+      "II.9",
+      "II.10",
+      "II.11",
+      "II.12"
+    ],
+    "precision": "Les 26 rubriques des deux éditions ont été rapprochées du fascicule institutionnel de 4 pages de l’École polytechnique. Le problème I compte neuf sous-questions et le problème II dix-sept. Recoupement de la convergence conditionnelle de l’intégrale oscillante, des deux équations différentielles et de l’identification des fonctions. Vérification des normes complexes, du polynôme compagnon et du contrôle des produits en blocs dans la récurrence à coefficients variables, y compris le cas de rayon spectral nul.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "f5bf0ccfb500759ae3e3a8ce5176cddb901cb4a19f1680af6b791c574a2247f2",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Le problème I compte neuf sous-questions et le problème II dix-sept. Recoupement de la convergence conditionnelle de l’intégrale oscillante, des deux équations différentielles et de l’identification des fonctions. Vérification des normes complexes, du polynôme compagnon et du contrôle des produits en blocs dans la récurrence à coefficients variables, y compris le cas de rayon spectral nul.",
+      "commit_redaction_anterieure": "8fee680318f08a9672725e9a8308b035b5c0130e"
+    }
+  }
 }

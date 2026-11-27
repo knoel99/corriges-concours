@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La feuille du 16 juin réunit 11 tickets de deux sujets. Le candidat dispose de 1 h 30 de préparation et indique au jury son choix au moment du passage. Il présente un seul sujet pendant 20 minutes, puis répond aux questions durant 10 minutes. Les deux possibilités de chaque ticket sont traitées ici.
 
 ## Ticket 1
@@ -141,6 +143,10 @@ Il arrive aussi que plusieurs fidélités s’excluent. Signaler une fraude peut
 Appeler une décision le moindre mal, c’est admettre qu’elle conserve quelque chose de mauvais dans la situation même où elle paraît préférable. Le responsable qui supprime temporairement une desserte après l’endommagement d’un pont pénalise des voyageurs pour éviter un accident. Qu’est-ce qui autorise à comparer les pertes et à imposer à certains le prix de cette comparaison ?
 
 Il faut d’abord établir que les options sont réellement incompatibles. Si un transport de remplacement existe, opposer la circulation dangereuse à l’abandon des voyageurs revient à fabriquer un dilemme. Il faut ensuite rendre comparables la gravité, la probabilité et la répartition des dommages. L’addition des heures perdues et le risque de blessure ne se lisent pas sur une même échelle. Une comparaison publique peut cependant se fonder sur des priorités justifiables, par exemple protéger les personnes tout en garantissant l’accès aux soins pour qui dépend de la ligne. Le caractère du mal tient aussi à celui qui le supporte.
+
+Supposons qu’une fermeture du pont évite un risque aux voyageurs et prive un village de son seul accès aux soins. L’existence d’une navette modifierait les termes du choix. Avant de retenir le moindre des deux dommages, la collectivité doit donc expliquer pourquoi une solution qui les réduit ensemble demeure impraticable.
+
+![Figure 1 — Trois questions à poser avant de choisir le moindre mal](figures/moindre-mal.svg)
 
 Le moindre mal ne délivre donc pas une permission générale. Deux décisions également favorables en moyenne peuvent différer profondément si l’une fait toujours payer les mêmes personnes. Même la solution la mieux justifiée laisse subsister des devoirs de réparation et de réexamen. Le choix du moindre mal est plus exigeant que la simple maximisation lorsqu’il garde ouverte la question de savoir comment les institutions pourraient rendre demain une meilleure option possible.
 

@@ -1,0 +1,112 @@
+{
+  "slug": "banque-pt_pt_francais-b_2012",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français B",
+    "annee": 2012
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2012/fr_b_pt_2012.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2012/rapport_fra_b_ecrit_2012.pdf",
+    "programme_officiel": "https://www.education.gouv.fr/bo/2011/24/esrs1100188a.htm",
+    "notice": "https://www.banquept.fr/documents/livret/2012/Livret_PT_2012.pdf#page=12",
+    "sujet_sha256": "7196b14999292f80f4f71cf46052538f1872f41a644e84b0d1130c85d4c493a8",
+    "rapport_jury_sha256": "94eb94dcabe53172475ce948bf909b8711e04b69b3adf2f6406865f53c83a008",
+    "programme_officiel_sha256": "ac22865d9dec1091697e48d332465516707d080d9d569e4f6af9bf9be5f3c7d7",
+    "notice_sha256": "778c796c26e1a3f2558523fa548e8d4fe4c92c6e0265a53fc4b63bd98a8c5c62",
+    "oeuvres_au_programme": [
+      "Eschyle, Les Choéphores et Les Euménides (traduction de Daniel Loayza)",
+      "Blaise Pascal, Pensées (fragments prescrits, édition Lafuma) et Trois Discours sur la condition des grands",
+      "John Steinbeck, Les Raisins de la colère (traduction de Marcel Duhamel et Maurice-Edgar Coindreau)"
+    ],
+    "theme": "La justice",
+    "admissibilite_admission": "ENS Cachan, écrit d’admission, coefficient 4.",
+    "pages_rapport": "Rapport PDF p. 1 à 9, pagination imprimée 27 à 35. Analyse des déplacements successifs du texte et des sens du religieux, p. 28 et 29."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "Trois rapports entre le religieux et le juste"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture de Carbonnier, des inflexions de son argument sur Luther et du rapport du jury. Rédaction originale du résumé et d’un développement sur les rapports entre rites, foi, équité et fondement des institutions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Vérification des 180 mots, du sens de la justification par la grâce et des différences de niveau de l’exigence religieuse chez les auteurs. Précision sur la place de l’oracle dans le conflit d’Oreste.",
+      "tour": 1
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Résumé",
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Résumé",
+        "page_pdf": 2,
+        "page_pdf_fin": 4,
+        "page_consigne": 4,
+        "perimetre": "Texte des pages 2 à 4, de « S’il me faut aujourd’hui développer ma pensée » à « leur règne provisoire ». Les questions clôturent la page 4. Les deux feuillets suivants sont blancs.",
+        "mots_demandes": 180,
+        "mots_admis": [
+          162,
+          198
+        ],
+        "mots_par_paragraphe": [
+          49,
+          58,
+          73
+        ],
+        "mots_rediges": 180,
+        "points": 8
+      },
+      {
+        "question": "Dissertation",
+        "page_pdf": 4,
+        "perimetre": "« N’est-il donc pas de justice qui ne soit religieuse ? D’une façon ou d’une autre ? ». Ce point de vue trouve-t-il un écho dans les œuvres du programme ?",
+        "points": 12
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

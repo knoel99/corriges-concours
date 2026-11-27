@@ -22,7 +22,8 @@
     "sujet_sha256": "b7232381cd384b1619bae3e318708eec1ba3ca0dd83d734fe7489b0d6891905d",
     "references": [
       "https://digitallibrary.un.org/record/218450",
-      "https://unctad.org/about/history"
+      "https://unctad.org/about/history",
+      "https://www.beac.int/billets-pieces/histoire-franc-cfa/"
     ]
   },
   "figures": [
@@ -32,7 +33,7 @@
       "legende": "Trois degrés de maîtrise économique"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -57,6 +58,45 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Confrontation à la page 2 du fascicule et vérification des chronologies indienne, algérienne, égyptienne et multilatérale."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification de la question de la dominante économique, p. 2 du fascicule officiel. Décomposition de la nationalisation en droits, recettes et capacités, avec exemples de pièces à mobiliser."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "gestion_2022_2023",
+      "agent": "gestion_2022_2023",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "La composition de la page 2 est traitée dans les deux éditions. La relecture a porté sur les revendications antérieures aux indépendances, les nationalisations, les politiques industrielles et les contraintes monétaires de la fin du siècle. Le changement de parité du franc CFA en 1994 est vérifié dans la chronologie de la BEAC et appliqué aux achats comme aux recettes d’exportation."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Composition"
+    ],
+    "precision": "Fascicule commun du 15 avril 2026, consigne de choix en page 1 et dissertation économique unique en page 2. Le cas de gestion commence à la page suivante.",
+    "controle": "La composition de la page 2 est traitée dans les deux éditions. La relecture a porté sur les revendications antérieures aux indépendances, les nationalisations, les politiques industrielles et les contraintes monétaires de la fin du siècle. Le changement de parité du franc CFA en 1994 est vérifié dans la chronologie de la BEAC et appliqué aux achats comme aux recettes d’exportation."
+  }
 }

@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Moûtiers et les vallées de Tarentaise
 
 Située en Savoie, en Tarentaise, Moûtiers occupe un carrefour entre la vallée de l’Isère et celles des Doron. La carte de situation au 1/250 000 invite à suivre la route depuis Albertville vers la haute Tarentaise, mais aussi les bifurcations vers les stations qui dominent la petite ville. À l’échelle du bassin de vie, le document statistique compte 18 548 habitants en 2022 sur 554,5 km². Moûtiers n’en rassemble que 3 482 dans ses étroites limites communales. Comment une ville de vallée peut-elle à la fois organiser les circulations d’un territoire montagnard et rester en marge d’une partie des richesses qui s’y forment ?
@@ -17,6 +19,10 @@ Située en Savoie, en Tarentaise, Moûtiers occupe un carrefour entre la vallée
 Le noyau de Moûtiers s’est développé en rive droite de l’Isère, dans un ombilic, élargissement de la vallée glaciaire bordé de sections plus resserrées. La proximité des débouchés des Doron ouvre plusieurs directions, tandis que la faible étendue du fond plat limite la surface constructible. Le cours rectifié de l’Isère et les voies de circulation se partagent ce fond. Le rapport relève la gare et le cimetière sur les marges du bâti, ainsi que des immeubles collectifs au sud. La cathédrale et le quartier des Cordeliers rappellent l’ancienneté de cette centralité. Les 1 102 habitants par km² de la commune doivent ainsi se lire avec ses 3,2 km² de superficie. Les 33,5 habitants par km² du bassin incluent de grands versants et des espaces d’altitude très peu peuplés. Les deux densités ne décrivent ni le même mode d’habiter ni la même surface disponible.
 
 Vers l’aval, l’élargissement autour d’Aigueblanche a permis l’extension de l’habitat et l’installation de services. La route nationale 90 et la voie ferrée relient la Tarentaise à Albertville et, au-delà, à la cluse de Chambéry. Dans l’autre sens, elles donnent accès à la haute vallée vers Bourg-Saint-Maurice. Moûtiers peut accueillir ou redistribuer des voyageurs qui n’y séjournent pas. Sur les versants, le bâti répond à d’autres logiques. Saint-Jean-de-Belleville occupe au sud une clairière sur un replat. Ce village et les hameaux échelonnés permettent de reconnaître une occupation antérieure au ski. La pente concentre les possibilités d’installation, mais l’histoire des exploitations agricoles, des villages et des voies explique pourquoi certains replats sont densément occupés et d’autres boisés.
+
+De Moûtiers à Brides-les-Bains, on quitte l’axe de l’Isère pour remonter le Doron de Bozel. C’est ce changement de vallée qui donne au carrefour son importance pour la desserte des stations. La carte de situation permet de suivre la liaison au-delà de l’extrait au 1/25 000.
+
+![Figure 1 — De Moûtiers aux pôles de la Tarentaise](figures/reseaux-tarentaise.svg)
 
 ### II. L’altitude et l’eau mettent en relation des lieux éloignés
 

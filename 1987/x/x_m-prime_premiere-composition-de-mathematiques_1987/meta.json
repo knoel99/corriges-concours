@@ -1,0 +1,268 @@
+{
+  "slug": "x_m-prime_premiere-composition-de-mathematiques_1987",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "M prime",
+    "filiere_historique": "M′",
+    "annee": 1987,
+    "matiere": "Première composition de mathématiques",
+    "modalite": "écrit"
+  },
+  "questions": 22,
+  "duree_heures": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-1e53022cf87337a94d07",
+    "sujet_sha256": "b9ec1ed51c4af19f2b11846d27c267a57905e37cf0f86ba781a79ef04a879012",
+    "notice_ups": "m87xm1",
+    "calendrier": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000516456",
+    "provenance": "Deux vues doubles, trois parties, fin III.3.e. La garde de m87xm1ea se présente comme une saisie de M. Quercia d’après le texte original.",
+    "rapport_jury": "",
+    "observation_rapport": "La notice UPS consultée ne fournit pas de rapport de jury."
+  },
+  "pieces_verifiees": {
+    "fac-simile": {
+      "reference": "m87xm1eb",
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-1e53022cf87337a94d07",
+      "sha256": "b9ec1ed51c4af19f2b11846d27c267a57905e37cf0f86ba781a79ef04a879012",
+      "pages": 2,
+      "rendu_page_sha256": [
+        "f67bac7bc4caf68b1d1fd44c673dacc43172319170430bddcae10bcbbda7acb0",
+        "24e224e825d6bd89687577a0a35a0c2d8372b93f53824f030ec7be4c1edb4411"
+      ]
+    },
+    "m87xm1ea": {
+      "reference": "m87xm1ea",
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-2ef7d1d2f04a0d3157e2",
+      "sha256": "e759cb10570a587e76b17b0845637ae25b6c15f5b2da57a9a81b5f00b20a7230",
+      "pages": 2,
+      "rendu_page_sha256": [
+        "9a28bf122197f4223703e1af9586f6849366ade57eee20863b7344c7658911f2",
+        "dd6fa4b65105b5922d3f7b6bda98a70994a6d8dc37ddd8f06ac6d90eddc5bd6d"
+      ]
+    },
+    "m87xm1ca": {
+      "reference": "m87xm1ca",
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-f31c3ca702ae416d941d",
+      "sha256": "77eb2c8e5c3416c0c468a762d31f2ecf47a7c82d921d4bb44c7be5e511afa989",
+      "pages": 4,
+      "rendu_page_sha256": [
+        "08fff5e0ba445bd44521b9e1196b8e12b68264c8298fdc7c379010a8cea336f9",
+        "a11bf17d14b3613e23e135dae2750df9a76376435ac3c64ca9795367392e793d",
+        "a4ad008cc605a47b1b98effb429175fc1530fe8de5ba061cf2ca4f3c69e8de9a",
+        "f3676de835d20b4aaaa95bed330b0a563b892726f0ae54e115694234895585cb"
+      ]
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "x_hist_1987",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction des 22 rubriques des deux éditions, de leurs indications et de 2 figures."
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "x_hist_1987",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle des doubles racines, des intégrales impropres, de la convergence de chaque moment et du calcul de la proportion sur les deux arcs."
+    }
+  ],
+  "figures": [
+    {
+      "question": "III.2",
+      "numero": 1,
+      "fichier": "figures/repartition.svg",
+      "legende": "Répartition cumulée de seize valeurs propres dans le cas du symbole 1 + cos θ, et proportion limite donnée par la longueur des arcs."
+    },
+    {
+      "question": "III.3.e",
+      "numero": 2,
+      "fichier": "figures/arcs-spectre.svg",
+      "legende": "Les deux bandes verticales donnent les angles où le symbole appartient à l’intervalle de 1 à 1,5. Chacune a pour longueur π/6."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2.a",
+      "I.2.b",
+      "I.3.a",
+      "I.3.b",
+      "I.4",
+      "II.1.a",
+      "II.1.b",
+      "II.1.c",
+      "II.2.a",
+      "II.2.b",
+      "II.2.c",
+      "II.2.d",
+      "III.1.a",
+      "III.1.b",
+      "III.1.c",
+      "III.2",
+      "III.3.a",
+      "III.3.b",
+      "III.3.c",
+      "III.3.d",
+      "III.3.e"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "I.1",
+        "feuillet_imprime": 1,
+        "page_pdf": 1,
+        "page_recueil": 66
+      },
+      {
+        "question": "I.2.a",
+        "feuillet_imprime": 2,
+        "page_pdf": 1,
+        "page_recueil": 66
+      },
+      {
+        "question": "I.2.b",
+        "feuillet_imprime": 2,
+        "page_pdf": 1,
+        "page_recueil": 66
+      },
+      {
+        "question": "I.3.a",
+        "feuillet_imprime": 2,
+        "page_pdf": 1,
+        "page_recueil": 66
+      },
+      {
+        "question": "I.3.b",
+        "feuillet_imprime": 2,
+        "page_pdf": 1,
+        "page_recueil": 66
+      },
+      {
+        "question": "I.4",
+        "feuillet_imprime": 2,
+        "page_pdf": 1,
+        "page_recueil": 66
+      },
+      {
+        "question": "II.1.a",
+        "feuillet_imprime": 2,
+        "page_pdf": 1,
+        "page_recueil": 66
+      },
+      {
+        "question": "II.1.b",
+        "feuillet_imprime": 2,
+        "page_pdf": 1,
+        "page_recueil": 66
+      },
+      {
+        "question": "II.1.c",
+        "feuillet_imprime": 2,
+        "page_pdf": 1,
+        "page_recueil": 66
+      },
+      {
+        "question": "II.2.a",
+        "feuillet_imprime": 2,
+        "page_pdf": 1,
+        "page_recueil": 66
+      },
+      {
+        "question": "II.2.b",
+        "feuillet_imprime": 2,
+        "page_pdf": 1,
+        "page_recueil": 66
+      },
+      {
+        "question": "II.2.c",
+        "feuillet_imprime": 3,
+        "page_pdf": 2,
+        "page_recueil": 67
+      },
+      {
+        "question": "II.2.d",
+        "feuillet_imprime": 3,
+        "page_pdf": 2,
+        "page_recueil": 67
+      },
+      {
+        "question": "III.1.a",
+        "feuillet_imprime": 3,
+        "page_pdf": 2,
+        "page_recueil": 67
+      },
+      {
+        "question": "III.1.b",
+        "feuillet_imprime": 3,
+        "page_pdf": 2,
+        "page_recueil": 67
+      },
+      {
+        "question": "III.1.c",
+        "feuillet_imprime": 3,
+        "page_pdf": 2,
+        "page_recueil": 67
+      },
+      {
+        "question": "III.2",
+        "feuillet_imprime": 3,
+        "page_pdf": 2,
+        "page_recueil": 67
+      },
+      {
+        "question": "III.3.a",
+        "feuillet_imprime": 4,
+        "page_pdf": 2,
+        "page_recueil": 67
+      },
+      {
+        "question": "III.3.b",
+        "feuillet_imprime": 4,
+        "page_pdf": 2,
+        "page_recueil": 67
+      },
+      {
+        "question": "III.3.c",
+        "feuillet_imprime": 4,
+        "page_pdf": 2,
+        "page_recueil": 67
+      },
+      {
+        "question": "III.3.d",
+        "feuillet_imprime": 4,
+        "page_pdf": 2,
+        "page_recueil": 67
+      },
+      {
+        "question": "III.3.e",
+        "feuillet_imprime": 4,
+        "page_pdf": 2,
+        "page_recueil": 67
+      }
+    ]
+  }
+}

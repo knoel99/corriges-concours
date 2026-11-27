@@ -1,0 +1,60 @@
+{
+  "slug": "ens_mp-pc_grec-ancien-le2_2005",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Grec ancien (LE2)",
+    "annee": 2005,
+    "modalite": "écrit"
+  },
+  "intitule": "Démosthène exhorte les Athéniens à l’action",
+  "questions": 1,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version"
+    ]
+  },
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2005/sujet-2005-ecrit-mp_pc_langue_etrangere_2.pdf#page=11",
+    "sujet_sha256": "3591b865ff600e9a1da38a819b3d68405c9a905cb43f3fc1b5ef6183ff6011c6",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2005",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2005/sujet-2005-ecrit-mp_pc_langue_etrangere_2.pdf#page=11",
+        "sha256": "3591b865ff600e9a1da38a819b3d68405c9a905cb43f3fc1b5ef6183ff6011c6",
+        "pages": "11",
+        "filieres": "MP-PC"
+      }
+    ],
+    "precision": "Démosthène, Première Philippique, §§ 10–11.",
+    "etablissements": "ENS de Paris et de Cachan"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Version",
+      "fichier": "figures/lecture.svg",
+      "legende": "La question sur un homme devient une question sur les décisions des Athéniens."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "fin_langues_x_interens",
+      "session": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Traduction française intégrale, explication des constructions et schéma du passage. Démosthène, Première Philippique, §§ 10–11.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}

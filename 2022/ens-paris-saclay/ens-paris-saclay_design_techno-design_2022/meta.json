@@ -1,0 +1,110 @@
+{
+  "slug": "ens-paris-saclay_design_techno-design_2022",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Techno-design",
+    "annee": 2022,
+    "modalite": "écrit"
+  },
+  "intitule": "Donner un bord à ce qui coule",
+  "redaction": "Proposition de corrigé rédigée par IA, non officielle.",
+  "questions": 2,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2022_Sujet_Ecrit_DESIGN_Techno_Design.pdf",
+    "sujet_sha256": "84e59ae741fa8b3a266c9a07559ea9ea96b8c056dced9c0c7120a80d79e2f2a3",
+    "index_officiel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=572",
+    "nature": "Les sept pages du fascicule documentent les six références de la session. Le sujet et le rapport de techno-design sont disponibles.",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2022_Rapport_Ecrit_DESIGN_Techno_Design.pdf",
+    "rapport_sha256": "394a1ead9d0a603095f407a5688195550345d620e84c728d54aaaf97c7614fa3"
+  },
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/01-analyse.svg",
+      "question": "Analyse 1/5",
+      "legende": "Qui détermine le bord ?. La même silhouette peut provenir d’un moule, d’un trajet ou d’un étalement."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/02-analyse.svg",
+      "question": "Analyse 2/5",
+      "legende": "Rendre le temps perceptible. Chez Zevs la coulure attaque la netteté du signe."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/03-esquisse.svg",
+      "question": "Esquisse 3/5",
+      "legende": "Une tuile enregistre une averse. Sur le banc d’essai, déposer le même volume d’eau sur les trois surfaces."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/04-esquisse.svg",
+      "question": "Esquisse 4/5",
+      "legende": "Reproduire le support, varier le trajet. Le gabarit commun rend les plaques interchangeables."
+    },
+    {
+      "numero": 5,
+      "fichier": "figures/05-esquisse.svg",
+      "question": "Esquisse 5/5",
+      "legende": "Lire une trace sans la surinterpréter. L’humidité visible renseigne sur l’état présent de la plaque."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "design_saclay_six_archives",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des observations du jury et confrontation avec les planches du fascicule."
+    },
+    {
+      "phase": "redaction",
+      "session": "design_saclay_six_archives",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de deux éditions et dessin de cinq planches A3 originales. Deux analyses croisées ouvrent sur trois esquisses exploratoires, leurs contraintes et leurs essais."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "design_saclay_six_archives",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification du sujet, des légendes, des dessins, de la distinction entre observations, hypothèses et essais, et des deux documents.",
+      "tour": 1
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Analyse des productions",
+      "Esquisses et recherche expérimentale"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Les sept pages du fascicule documentent les six références de la session. Le sujet et le rapport de techno-design sont disponibles."
+  }
+}

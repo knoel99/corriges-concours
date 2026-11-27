@@ -1,0 +1,61 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_etudes-politiques-les-refugies-et-les-conflits_2023",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Études politiques — les réfugiés et les conflits",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "intitule": "« Les réfugiés et les conflits ». La fiche 1 donne cet intitulé écrit. Elle réserve l’entretien avec Jean-Pierre Chrétien à l’épreuve orale.",
+  "gabarit": "dissertation",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://web.archive.org/web/20230529064642id_/https://www.ens.psl.eu/sites/default/files/oral-1.pdf",
+    "sujet_sha256": "dfc7bb12bb18f03e4c548779a1eed4c79e1c4cc5e953a99edbf0682ffaab33de",
+    "index": "https://www.ens.psl.eu/une-formation-d-exception/admission-concours/international/concours-selection-internationale-0",
+    "documents": [
+      {
+        "role": "intitulé écrit dans le feuillet d’oral",
+        "url": "https://web.archive.org/web/20230529064642id_/https://www.ens.psl.eu/sites/default/files/oral-1.pdf",
+        "url_ens": "https://www.ens.psl.eu/sites/default/files/oral-1.pdf",
+        "sha256": "dfc7bb12bb18f03e4c548779a1eed4c79e1c4cc5e953a99edbf0682ffaab33de",
+        "pages": 2
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "question": "Composition",
+      "legende": "Suivre un déplacement à trois moments pour distinguer les causes du départ des conditions de protection."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Dissertation de science politique sur la production des déplacements, le droit d’asile, les politiques d’accueil et les sorties d’exil."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Composition"
+    ],
+    "limites": "La fiche 1, classée par l’ENS parmi les oraux de 2023, désigne explicitement cet intitulé comme le sujet d’écrit, avant le texte d’oral. Seul l’intitulé de l’écrit est reproduit."
+  }
+}

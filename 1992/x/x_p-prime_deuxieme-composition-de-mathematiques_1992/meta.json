@@ -1,0 +1,308 @@
+{
+  "slug": "x_p-prime_deuxieme-composition-de-mathematiques_1992",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "P prime",
+    "matiere": "Deuxième composition de mathématiques",
+    "annee": 1992
+  },
+  "questions": 27,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-d6ea43e1dae0c1fe2668",
+    "sha256_sujet": "6d0f6983fbdee5254cfc9e7380b98217978706fe6c772b7913d8af787d391cae",
+    "rapport_jury": "",
+    "provenance": "Fac-similé UPS de trois pages (pages 66 à 68 du recueil). Le second exemplaire est diffusé sous un autre fichier PDF. La comparaison des rendus des trois pages donne la même garde, les mêmes énoncés et la même pagination.",
+    "notice_ups": "m92xp2",
+    "document_ups": "m92xp2ea",
+    "second_exemplaire": "https://www.sujetsetcorriges.fr/dl/X/Maths/PC/sec-x-1992-maths2-PC.pdf",
+    "sha256_second_exemplaire": "689ceba118b4f8fca3277da6116ed77f7f1b828c2083fa145a714140eee03365",
+    "pages_fac_simile": 3,
+    "instruction_concours": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000357550",
+    "sha256_instruction": "dcec46508f3c500fead7724d1385aa321fbda8c1ec66f9c5339c22cca6d08b54"
+  },
+  "figures": [
+    {
+      "fichier": "figures/cinq-facteurs.svg",
+      "question": "17",
+      "legende": "Figure 1 — Exemple en dimension deux : du demi-tour négatif à un produit de cinq facteurs positifs"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "lyon_ses_sources",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction et vérification des 27 questions et sous-questions des deux éditions. Exponentielle et spectre, similitudes et congruences alternées, classification des produits de deux à cinq facteurs et traitement des matrices scalaires."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.a",
+      "1.b",
+      "1.c",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7.a",
+      "7.b",
+      "8",
+      "9.a",
+      "9.b",
+      "10.a",
+      "10.b",
+      "11",
+      "12",
+      "13",
+      "14.a",
+      "14.b",
+      "14.c",
+      "15",
+      "16.a",
+      "16.b",
+      "16.c",
+      "16.d",
+      "17"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1.a",
+        "page_pdf": 1,
+        "page_pdf_fin": 1,
+        "page_pdf_second": 1,
+        "page_pdf_second_fin": 1,
+        "perimetre": "Conjuguer d’abord les sommes partielles de la série."
+      },
+      {
+        "question": "1.b",
+        "page_pdf": 1,
+        "page_pdf_fin": 1,
+        "page_pdf_second": 1,
+        "page_pdf_second_fin": 1,
+        "perimetre": "Triangulariser sur $\\mathbb C$ et regarder seulement les coefficients diagonaux."
+      },
+      {
+        "question": "1.c",
+        "page_pdf": 1,
+        "page_pdf_fin": 1,
+        "page_pdf_second": 1,
+        "page_pdf_second_fin": 1,
+        "perimetre": "Prendre le produit des valeurs propres obtenues, en gardant la trace réelle."
+      },
+      {
+        "question": "2",
+        "page_pdf": 1,
+        "page_pdf_fin": 1,
+        "page_pdf_second": 1,
+        "page_pdf_second_fin": 1,
+        "perimetre": "Les antécédents d’un réel négatif se groupent par conjugaison complexe."
+      },
+      {
+        "question": "3",
+        "page_pdf": 1,
+        "page_pdf_fin": 1,
+        "page_pdf_second": 1,
+        "page_pdf_second_fin": 1,
+        "perimetre": "Comparer une rotation d’angle $2\\pi$ et une matrice ayant deux valeurs propres négatives simples."
+      },
+      {
+        "question": "4",
+        "page_pdf": 1,
+        "page_pdf_fin": 1,
+        "page_pdf_second": 1,
+        "page_pdf_second_fin": 1,
+        "perimetre": "Traiter séparément le terme d’ordre zéro, car la somme des idempotents n’est pas supposée égale à l’identité."
+      },
+      {
+        "question": "5",
+        "page_pdf": 1,
+        "page_pdf_fin": 1,
+        "page_pdf_second": 1,
+        "page_pdf_second_fin": 1,
+        "perimetre": "Sur chaque sous-espace propre d’une matrice définie positive, prendre le logarithme réel de sa valeur propre."
+      },
+      {
+        "question": "6",
+        "page_pdf": 2,
+        "page_pdf_fin": 2,
+        "page_pdf_second": 2,
+        "page_pdf_second_fin": 2,
+        "perimetre": "Écrire la forme quadratique du transformé au vecteur $X$."
+      },
+      {
+        "question": "7.a",
+        "page_pdf": 2,
+        "page_pdf_fin": 2,
+        "page_pdf_second": 2,
+        "page_pdf_second_fin": 2,
+        "perimetre": "Grouper les facteurs par paires et transformer les deux facteurs d’une paire par des congruences différentes."
+      },
+      {
+        "question": "7.b",
+        "page_pdf": 2,
+        "page_pdf_fin": 2,
+        "page_pdf_second": 2,
+        "page_pdf_second_fin": 2,
+        "perimetre": "Isoler le premier facteur et appliquer la stabilité paire au produit restant."
+      },
+      {
+        "question": "8",
+        "page_pdf": 2,
+        "page_pdf_fin": 2,
+        "page_pdf_second": 2,
+        "page_pdf_second_fin": 2,
+        "perimetre": "Prendre les racines carrées des valeurs propres dans une base orthonormée."
+      },
+      {
+        "question": "9.a",
+        "page_pdf": 2,
+        "page_pdf_fin": 2,
+        "page_pdf_second": 2,
+        "page_pdf_second_fin": 2,
+        "perimetre": "Écrire le premier facteur comme un carré. La similitude obtenue est aussi une congruence appliquée au produit de longueur impaire."
+      },
+      {
+        "question": "9.b",
+        "page_pdf": 2,
+        "page_pdf_fin": 2,
+        "page_pdf_second": 2,
+        "page_pdf_second_fin": 2,
+        "perimetre": "Faire cette fois une congruence par $S^{-1}$."
+      },
+      {
+        "question": "10.a",
+        "page_pdf": 2,
+        "page_pdf_fin": 2,
+        "page_pdf_second": 2,
+        "page_pdf_second_fin": 2,
+        "perimetre": "Conjuguer $AB$ à l’aide de la racine carrée de $A$."
+      },
+      {
+        "question": "10.b",
+        "page_pdf": 2,
+        "page_pdf_fin": 2,
+        "page_pdf_second": 2,
+        "page_pdf_second_fin": 2,
+        "perimetre": "La matrice symétrique semblable au produit est en même temps congruente à $B$."
+      },
+      {
+        "question": "11",
+        "page_pdf": 2,
+        "page_pdf_fin": 2,
+        "page_pdf_second": 2,
+        "page_pdf_second_fin": 2,
+        "perimetre": "Utiliser les deux directions : une décomposition donne le spectre, puis une diagonalisation fournit un représentant dans $\\mathcal D$."
+      },
+      {
+        "question": "12",
+        "page_pdf": 2,
+        "page_pdf_fin": 2,
+        "page_pdf_second": 2,
+        "page_pdf_second_fin": 2,
+        "perimetre": "Utiliser d’abord une direction propre, puis transporter la positivité par congruence."
+      },
+      {
+        "question": "13",
+        "page_pdf": 2,
+        "page_pdf_fin": 2,
+        "page_pdf_second": 2,
+        "page_pdf_second_fin": 2,
+        "perimetre": "La congruence préserve la symétrie. Que devient alors le critère spectral de $\\mathcal D_2$ ?"
+      },
+      {
+        "question": "14.a",
+        "page_pdf": 2,
+        "page_pdf_fin": 3,
+        "page_pdf_second": 2,
+        "page_pdf_second_fin": 3,
+        "perimetre": "Diagonaliser la partie symétrique par une base orthonormée et examiner la partie antisymétrique dans la même base."
+      },
+      {
+        "question": "14.b",
+        "page_pdf": 3,
+        "page_pdf_fin": 3,
+        "page_pdf_second": 3,
+        "page_pdf_second_fin": 3,
+        "perimetre": "Annuler l’entrée supérieure droite avant de régler le premier coefficient diagonal."
+      },
+      {
+        "question": "14.c",
+        "page_pdf": 3,
+        "page_pdf_fin": 3,
+        "page_pdf_second": 3,
+        "page_pdf_second_fin": 3,
+        "perimetre": "La matrice triangulaire a deux valeurs propres distinctes, donc satisfait le critère des deux facteurs."
+      },
+      {
+        "question": "15",
+        "page_pdf": 3,
+        "page_pdf_fin": 3,
+        "page_pdf_second": 3,
+        "page_pdf_second_fin": 3,
+        "perimetre": "Supposer $-I=AB$ avec deux produits de deux facteurs et comparer leurs spectres."
+      },
+      {
+        "question": "16.a",
+        "page_pdf": 3,
+        "page_pdf_fin": 3,
+        "page_pdf_second": 3,
+        "page_pdf_second_fin": 3,
+        "perimetre": "Chercher un vecteur $v$ tel que $v$ et $Av$ soient libres."
+      },
+      {
+        "question": "16.b",
+        "page_pdf": 3,
+        "page_pdf_fin": 3,
+        "page_pdf_second": 3,
+        "page_pdf_second_fin": 3,
+        "perimetre": "Calculer d’abord le produit de droite, puis retrancher $t$ fois sa seconde ligne à la première."
+      },
+      {
+        "question": "16.c",
+        "page_pdf": 3,
+        "page_pdf_fin": 3,
+        "page_pdf_second": 3,
+        "page_pdf_second_fin": 3,
+        "perimetre": "Prolonger le cisaillement par l’identité sur les $n-2$ autres coordonnées."
+      },
+      {
+        "question": "16.d",
+        "page_pdf": 3,
+        "page_pdf_fin": 3,
+        "page_pdf_second": 3,
+        "page_pdf_second_fin": 3,
+        "perimetre": "Distinguer les matrices non scalaires et les matrices scalaires. La multiplication par un scalaire positif peut être absorbée dans un seul facteur."
+      },
+      {
+        "question": "17",
+        "page_pdf": 3,
+        "page_pdf_fin": 3,
+        "page_pdf_second": 3,
+        "page_pdf_second_fin": 3,
+        "perimetre": "En dimension paire, multiplier un scalaire négatif par l’inverse d’une matrice définie positive non scalaire."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

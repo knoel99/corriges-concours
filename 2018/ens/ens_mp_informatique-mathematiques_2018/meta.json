@@ -44,5 +44,76 @@
       "modifications": true,
       "perimetre": "Rédaction des 22 questions et sous-questions, lecture du sujet et du rapport officiels, reconstruction intégrale des graphes G, H et D. Distinction entre isolement, composante singleton et élagage bi-infini. Code Caml éprouvé sur les 256 règles binaires élémentaires, avec décision indépendante par automate des parties et comparaison sur les configurations périodiques de périodes un à dix."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22"
+    ],
+    "precision": "Les 22 questions du fac-similé ont été rapprochées dans leur ordre des deux éditions signées. Les solutions de chaque édition ont été retrouvées à la révision de rédaction citée.",
+    "origine_attestation": {
+      "commit_du_journal": "1902575c624f493a7c1d1e1949019de834014bfe",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction des 22 questions et sous-questions, lecture du sujet et du rapport officiels, reconstruction intégrale des graphes G, H et D. Distinction entre isolement, composante singleton et élagage bi-infini. Code Caml éprouvé sur les 256 règles binaires élémentaires, avec décision indépendante par automate des parties et comparaison sur les configurations périodiques de périodes un à dix.",
+      "sha256_sujet_controle": "4489070db708caeac2840d4981c9ca9f5d809db5ac48983dec3cb0141476ab12",
+      "sha256_rapport_controle": "a8aa10835364046d07be586bac74fe7cbf28be1f33b51352343985a4e48fbbc9"
+    },
+    "subdivisions_du_sujet": {
+      "1": [
+        "1",
+        "2"
+      ],
+      "6": [
+        "1",
+        "2",
+        "3"
+      ],
+      "9": [
+        "1",
+        "2",
+        "3"
+      ],
+      "11": [
+        "1",
+        "2",
+        "3"
+      ],
+      "12": [
+        "1",
+        "2"
+      ],
+      "14": [
+        "1",
+        "2",
+        "3"
+      ],
+      "17": [
+        "1",
+        "2",
+        "3"
+      ]
+    }
+  }
 }

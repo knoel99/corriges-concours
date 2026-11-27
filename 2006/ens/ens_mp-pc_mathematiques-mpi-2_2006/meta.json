@@ -4,20 +4,33 @@
     "concours": "ENS",
     "filiere": "MP-PC",
     "matiere": "Mathématiques MPI 2",
-    "annee": 2006
+    "annee": 2006,
+    "duree": "4 h",
+    "code_garde": "60.22M",
+    "modalite": "écrit"
   },
   "questions": 25,
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
-    "sujet": "https://www.wikiprepa.fr/concours/data/ens_maths-2_mp-pc_2006.pdf",
-    "rapport_jury": "",
-    "sha256_sujet": "e270a110f81bc2a7e9a92d34441a5a35cf882a58b36d74373a3649234abe9a03"
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-mp/session-2006/sujet-2006-ecrit-mp_mathematiques_2.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/rapport-de-jury-session-2006/rapport-2006-mp_ecrit_mathematiques_2.pdf",
+    "sha256_sujet": "e270a110f81bc2a7e9a92d34441a5a35cf882a58b36d74373a3649234abe9a03",
+    "index": "https://banques-ecoles.fr/cms/filiere-mp/annales-de-la-banque-mmpmpi/session-2006/",
+    "fac_simile_anterieur_identique": "https://www.wikiprepa.fr/concours/data/ens_maths-2_mp-pc_2006.pdf",
+    "sha256_rapport_jury": "62820e08775e7fcc2187d18deddc37bfd67b36f383994f36ab4731d15d506462",
+    "index_rapport": "https://banques-ecoles.fr/cms/filiere-mp/rapports-des-jurys-de-la-banque-mmpmpi/session-2006/"
   },
   "figures": [
     {
       "fichier": "figures/partition-dyadique.svg",
       "question": "1.4",
       "legende": "Sur la demi-droite des fréquences, chaque fenêtre se décale par doublement. Au plus deux fenêtres de bande sont actives à la même fréquence."
+    },
+    {
+      "question": "1.3.c",
+      "fichier": "figures/minimum-deux-fenetres.svg",
+      "legende": "Dans un recouvrement, les deux fenêtres ont pour valeurs s et 1 − s. Leur somme quadratique atteint son minimum au partage égal.",
+      "provenance": "Figure originale de la révision."
     }
   ],
   "contributions": [
@@ -31,6 +44,291 @@
       "perimetre": "Rédaction intégrale des trois parties des deux éditions à partir du cahier. Construction de la partition de l’unité, normalisation des noyaux, convergence simultanée uniforme et quadratique, estimateur de Bernstein à fenêtre élargie et équivalence de Zygmund avec un exemple strict. Figure de la partition fréquentielle.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "x_hist_1987",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Confrontation des 25 rubriques au fascicule, vérifications de fond et de la figure précédente ou des figures précédentes ; compléments aux deux éditions portant sur les points suivants : recouvrement des fenêtres, minimum exact de la somme de carrés, identification locale des limites de Fourier et formule intégrale de la différence seconde.",
+      "questions_modifiees": [
+        "1.3.a",
+        "1.3.c",
+        "2.6.2",
+        "3.1"
+      ]
     }
-  ]
+  ],
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-mp/session-2006/sujet-2006-ecrit-mp_mathematiques_2.pdf",
+      "index": "https://banques-ecoles.fr/cms/filiere-mp/annales-de-la-banque-mmpmpi/session-2006/",
+      "sha256": "e270a110f81bc2a7e9a92d34441a5a35cf882a58b36d74373a3649234abe9a03",
+      "pages": 7,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "0e2f09bf304781e651c019c6156759fed919d2c3b06d976dc67bb000a71e18f9"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "3dec0ddd3579038fe1b386370acfa49bb06ac584a7e978357d6a42c2e7f009ce"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "89eed2de6df94a21a34d08d0568f20d3854fc1ede017125148069d7d88b23cd5"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "967aaf0fcecfec60dfa44e1d24f367774fa15c30ace066454ba5260f703c191d"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "80ada9a8f6f6c322df07d4a682000fdaa5cbffec20651766010879f14dd8d7f4"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "4cda0a5e0c421017d3428f3fb25d560092114be66368eef03f6bfa1912787eeb"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "a6cf7959ebe1f58f1d29bfa764c5d4d2f855b1217b0db729b9d0f65308f3ee02"
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/rapport-de-jury-session-2006/rapport-2006-mp_ecrit_mathematiques_2.pdf",
+      "index": "https://banques-ecoles.fr/cms/filiere-mp/rapports-des-jurys-de-la-banque-mmpmpi/session-2006/",
+      "sha256": "62820e08775e7fcc2187d18deddc37bfd67b36f383994f36ab4731d15d506462",
+      "pages": 2,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "f9a3ed1070d19f4e2330fa746c3fbd87394df069f49c46365e37451e232ee8e0"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "f306fa85b7c12b540282f6ff11f38d8c5872da26c327c6951b00110afe395e18"
+        }
+      ]
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3.a",
+      "1.3.b",
+      "1.3.c",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "1.8",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6.1",
+      "2.6.2",
+      "2.6.3",
+      "2.6.4",
+      "2.6.5",
+      "2.6.6",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "annexes_imposees": [],
+    "repere_par_question": [
+      {
+        "question": "1.1",
+        "page_pdf": 3,
+        "pages_rapport": [
+          1
+        ]
+      },
+      {
+        "question": "1.2",
+        "page_pdf": 3,
+        "pages_rapport": [
+          1
+        ]
+      },
+      {
+        "question": "1.3.a",
+        "page_pdf": 3,
+        "pages_rapport": [
+          1
+        ]
+      },
+      {
+        "question": "1.3.b",
+        "page_pdf": 3,
+        "pages_rapport": [
+          1
+        ]
+      },
+      {
+        "question": "1.3.c",
+        "page_pdf": 3,
+        "pages_rapport": [
+          1
+        ]
+      },
+      {
+        "question": "1.4",
+        "page_pdf": 4,
+        "pages_rapport": [
+          1
+        ]
+      },
+      {
+        "question": "1.5",
+        "page_pdf": 4,
+        "pages_rapport": [
+          1
+        ]
+      },
+      {
+        "question": "1.6",
+        "page_pdf": 4,
+        "pages_rapport": [
+          1
+        ]
+      },
+      {
+        "question": "1.7",
+        "page_pdf": 4,
+        "pages_rapport": [
+          1
+        ]
+      },
+      {
+        "question": "1.8",
+        "page_pdf": 4,
+        "pages_rapport": [
+          1
+        ]
+      },
+      {
+        "question": "2.1",
+        "page_pdf": 5,
+        "pages_rapport": [
+          2
+        ]
+      },
+      {
+        "question": "2.2",
+        "page_pdf": 5,
+        "pages_rapport": [
+          2
+        ]
+      },
+      {
+        "question": "2.3",
+        "page_pdf": 5,
+        "pages_rapport": [
+          2
+        ]
+      },
+      {
+        "question": "2.4",
+        "page_pdf": 5,
+        "pages_rapport": [
+          2
+        ]
+      },
+      {
+        "question": "2.5",
+        "page_pdf": 5,
+        "pages_rapport": [
+          2
+        ]
+      },
+      {
+        "question": "2.6.1",
+        "page_pdf": 6,
+        "pages_rapport": [
+          2
+        ]
+      },
+      {
+        "question": "2.6.2",
+        "page_pdf": 6,
+        "pages_rapport": [
+          2
+        ]
+      },
+      {
+        "question": "2.6.3",
+        "page_pdf": 6,
+        "pages_rapport": [
+          2
+        ]
+      },
+      {
+        "question": "2.6.4",
+        "page_pdf": 6,
+        "pages_rapport": [
+          2
+        ]
+      },
+      {
+        "question": "2.6.5",
+        "page_pdf": 6,
+        "pages_rapport": [
+          2
+        ]
+      },
+      {
+        "question": "2.6.6",
+        "page_pdf": 6,
+        "pages_rapport": [
+          2
+        ]
+      },
+      {
+        "question": "3.1",
+        "page_pdf": 6,
+        "pages_rapport": [
+          2
+        ]
+      },
+      {
+        "question": "3.2",
+        "page_pdf": 7,
+        "pages_rapport": [
+          2
+        ]
+      },
+      {
+        "question": "3.3",
+        "page_pdf": 7,
+        "pages_rapport": [
+          2
+        ]
+      },
+      {
+        "question": "3.4",
+        "page_pdf": 7,
+        "pages_rapport": [
+          2
+        ]
+      }
+    ]
+  }
 }

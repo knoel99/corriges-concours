@@ -1,0 +1,175 @@
+{
+  "slug": "x_m-prime_deuxieme-composition-de-mathematiques_1996",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "M prime",
+    "filiere_historique": "M′",
+    "matiere": "Deuxième composition de mathématiques",
+    "annee": 1996
+  },
+  "questions": 21,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-53df65e7c74977f9ce5e",
+    "sujet_sha256": "2fb6a7139da7226b0bf86b1180ea31d4b8ea976f087df48197c976f3d1be1063",
+    "notice_ups": "m96xm2",
+    "reproduction": "https://www.sujetsetcorriges.fr/dl/X/Maths/MP/sec-x-1996-maths2-MP.pdf",
+    "reproduction_sha256": "c8aa4487eb742ee19ad925d3a8bad72ccd539fb2cd6c5b687a8451f1f9b87d15",
+    "calendrier": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000191386",
+    "rapport_jury": "",
+    "observation_rapport": "Aucun rapport de jury identifié dans les deux collections consultées.",
+    "provenance": "Le fac-similé UPS donne explicitement M′, le rang de la composition et la durée de quatre heures. Sa numérotation continue fait foi.",
+    "corriges_independants": [
+      {
+        "auteur": "Cabane",
+        "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-0abf1cfa29ffa01e7563",
+        "sha256": "f158dc855176d51f58cd65fafaad1ee2b2007795f945de52a78373e999967d42"
+      },
+      {
+        "auteur": "Joël Pipon",
+        "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-3041ee58c38f77cea558",
+        "sha256": "e7cef35331dff37f92c9f1a8b48cfe27ecf5ffd5e9b0cb3cce269dc98b9669bd"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "question": "10",
+      "fichier": "figures/chaine-d-images.svg",
+      "legende": "La chaîne du modèle en dimension quatre et les dimensions de ses images successives."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.a",
+      "1.b",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13.a",
+      "13.b",
+      "13.c",
+      "14",
+      "15.a",
+      "15.b",
+      "16.a",
+      "16.b"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1.a",
+        "page_pdf": 1
+      },
+      {
+        "question": "1.b",
+        "page_pdf": 1
+      },
+      {
+        "question": "2",
+        "page_pdf": 1
+      },
+      {
+        "question": "3",
+        "page_pdf": 2
+      },
+      {
+        "question": "4",
+        "page_pdf": 2
+      },
+      {
+        "question": "5",
+        "page_pdf": 2
+      },
+      {
+        "question": "6",
+        "page_pdf": 2
+      },
+      {
+        "question": "7",
+        "page_pdf": 2
+      },
+      {
+        "question": "8",
+        "page_pdf": 2
+      },
+      {
+        "question": "9",
+        "page_pdf": 2
+      },
+      {
+        "question": "10",
+        "page_pdf": 2
+      },
+      {
+        "question": "11",
+        "page_pdf": 3
+      },
+      {
+        "question": "12",
+        "page_pdf": 3
+      },
+      {
+        "question": "13.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "13.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "13.c",
+        "page_pdf": 3
+      },
+      {
+        "question": "14",
+        "page_pdf": 3
+      },
+      {
+        "question": "15.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "15.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "16.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "16.b",
+        "page_pdf": 3
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "21 consignes repérées sur trois pages. Le fac-similé UPS donne explicitement M′, le rang de la composition et la durée de quatre heures. Sa numérotation continue fait foi."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "fui_physique_un",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture des trois pages, rédaction de 21 solutions et de leurs indications, vérification des démonstrations et des diagrammes."
+    }
+  ]
+}

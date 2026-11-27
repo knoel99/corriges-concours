@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Les candidats choisissaient entre deux options. Les réponses P portent sur l’estimation des quantiles et les réponses N sur l’équation de transport et ses schémas numériques.
 
 ## Probabilités. Quantiles empiriques
@@ -146,6 +148,10 @@ Sur $E_j$, pour $k\ge j$, $|\delta_k|\le C T_k^2$ par $F\in C^2$. Les termes $k<
 
 Comme $\tau>1/2$, $\sqrt n\beta_{n-1}T_0\to0$. Le reste tend vers zéro en probabilité par P.3.5.d et le terme de martingale a pour limite une normale centrée, inchangée par le signe moins. Ainsi $\sqrt n(\widehat\theta_n-\theta_p)\Rightarrow\mathcal N(0,p(1-p)/(2f(\theta_p)-1))$.
 
+En comparant à P.1.3.d, le rapport des variances limites vaut $\tau^2/(2\tau-1)$, pour $\tau=f(\theta_p)>1/2$. La différence à 1 est $(\tau-1)^2/(2\tau-1)$. Le choix de pas imposé aboutit à la même variance que la statistique d’ordre exactement lorsque $\tau=1$.
+
+![Rapport des variances limites de l’estimateur récursif et du quantile empirique, pour le pas du sujet. La valeur minimale 1 est atteinte lorsque la densité au quantile vaut 1.](figures/variances-des-quantiles.svg)
+
 ### Question P.3.7
 
 L’algorithme conserve une estimation et l’indice de temps. Chaque observation nouvelle exige une comparaison et une mise à jour scalaire, en mémoire constante. Une statistique d’ordre exacte nécessite habituellement d’entretenir les observations ou une structure ordonnée dont la taille croît ; l’algorithme récursif se prête donc au traitement en flux.
@@ -243,6 +249,8 @@ $j(N)\Delta x\le x<(j(N)+1)\Delta x$, donc $0\le x-x_{j(N)}<\Delta x=T/(N\lambda
 À $t=T$, $u_{\Delta x}(T,x)=\mathbb P(B_N/N\le j(N)/N)$. Comme $N\Delta x=T/\lambda$, le seuil tend vers $\lambda x/T$. La loi des grands nombres donne $B_N/N\to\mu=\lambda V$ en probabilité. Si $x<VT$ la probabilité tend vers zéro ; si $x>VT$ elle tend vers un. L’énoncé ne requiert pas de valeur au saut.
 
 ![Figure 1 — Le schéma amont lisse le saut à maille finie. À temps final fixé, la zone de transition se resserre lorsque le nombre de pas augmente.](figures/transport-echelon.svg)
+
+Au point du saut $x=VT$, le seuil vaut $j(N)=\lfloor N\mu\rfloor$. Si $0<\mu<1$, le seuil centré réduit tend vers zéro et le TCL binomial donne la limite $1/2$. Si $\mu=1$, le décalage est exact et la valeur au saut est $1$ pour la convention du sujet.
 
 ## Analyse numérique. Obstruction de Godunov et données peu régulières
 

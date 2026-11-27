@@ -1,0 +1,55 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_langue-francaise-le-conspirationnisme_2016",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Langue française — le conspirationnisme",
+    "annee": 2016,
+    "modalite": "écrit"
+  },
+  "questions": 6,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/L.FRANCAISE.pdf",
+    "sujet_sha256": "e31ae5c284097d837a662fcef04709413ce2829ae5fadf227159f8f9427b5a44",
+    "source_imprimee": "Gérald Bronner, « L’espace logique du conspirationnisme », Esprit, novembre 2015."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Compréhension · quatre expressions",
+      "Résumé",
+      "Rédaction"
+    ]
+  },
+  "longueurs": {
+    "resume": 191,
+    "redaction": 349,
+    "methode": "groupes séparés par un espace"
+  },
+  "figures": [
+    {
+      "fichier": "figures/raisonnement.svg",
+      "legende": "Pourquoi une objection réfutée ne suffit-elle pas ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet officiel et du texte entier. Quatre réponses de compréhension contextualisées, résumé sous contrainte, rédaction argumentée, explication et schéma dans les deux éditions."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

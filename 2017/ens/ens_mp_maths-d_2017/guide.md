@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 L’épreuve de six heures étudie les itérées d’applications de l’intervalle et le nombre de leurs branches de monotonie. Le titre « MPI » est celui de l’original de 2017. La question préliminaire conserve l’hypothèse imprimée, qui autorise les sauts. Les deux corrections de notation signalées par le jury en III.2c et IV.2 sont explicitées.
 
 ## Préliminaire · Composition des applications monotones par morceaux
@@ -16,6 +18,10 @@ L’épreuve de six heures étudie les itérées d’applications de l’interva
 #### Solution
 
 Soient $g,h$ monotones par morceaux avec des ensembles finis de découpe. Sur chaque intervalle ouvert de stricte monotonie de $g$, l’image réciproque de chacun des intervalles de stricte monotonie de $h$ est un intervalle, éventuellement vide, car $g$ est monotone. L’image réciproque de chaque point de découpe de $h$ y a au plus un élément par stricte monotonie. Ces ensembles forment un découpage fini une fois leurs extrémités ajoutées. Sur chaque intervalle ouvert restant, $h\circ g$ est strictement monotone comme composée de deux applications strictement monotones. Ce raisonnement couvre aussi les sauts de $g$ qui franchissent une valeur de découpe sans l’atteindre. Une récurrence à partir de l’identité donne le résultat pour $f^n$.
+
+L’illustration de la page 2 peut être contrôlée sans compter à vue. Pour $f(x)=x^2-5/4$, les zéros des dérivées successives viennent de $(f^k)'(x)=2^k\prod_{j=0}^{k-1}f^j(x)$. Pour $k=3$, ce sont $0$, les deux racines de $x^2=5/4$, puis les quatre racines de $x^2=5/4\pm\sqrt{5/4}$. Elles sont distinctes et simples. On obtient ainsi deux, quatre, puis huit intervalles de stricte monotonie. Le dessin utilise l’intervalle stable $[-\beta,\beta]$, où $\beta=(1+\sqrt6)/2$.
+
+![Figure 1 — Les zéros successifs du produit des dérivées divisent les trois graphes en deux, quatre et huit plis.](figures/trois-iteres-quadratiques.svg)
 
 ## I. Orbites bornées des polynômes quadratiques
 
@@ -268,7 +274,7 @@ Les images sont $J_2\cup J_3$, $J_1\cup J_2\cup J_3$, $J_1\cup J_2$, dans cet or
 $$M=\begin{pmatrix}0&1&1\\1&1&1\\1&1&0\end{pmatrix}.$$
 Le vecteur $(1,0,-1)$ est propre de valeur $-1$. Sur les vecteurs $(x,y,x)$, la transformation des deux coordonnées est $(x+y,2x+y)$, de valeurs propres $1+\sqrt2$ et $1-\sqrt2$. Ces trois valeurs épuisent le spectre.
 
-![Figure 1 — Les extrema du cubique et les images des deux bords déterminent les intervalles accessibles depuis chacun des trois plis.](figures/cubique-transitions.svg)
+![Figure 2 — Les extrema du cubique et les images des deux bords déterminent les intervalles accessibles depuis chacun des trois plis.](figures/cubique-transitions.svg)
 
 ### Question III.2e
 
@@ -278,6 +284,8 @@ Le vecteur $(1,0,-1)$ est propre de valeur $-1$. Sur les vecteurs $(x,y,x)$, la 
 #### Solution
 
 On a $v_1=(1,1,1)$ et $v_n=M^{n-1}v_1$. La plus grande valeur propre $\rho=1+\sqrt2$ a pour vecteur propre $(1,\sqrt2,1)$ strictement positif. $M$ étant symétrique, la projection de $v_1$ sur ce vecteur est non nulle et positive. Les deux autres valeurs propres sont de module strictement inférieur à $\rho$. Ainsi $\lambda(f^n)=(1,1,1)\cdot v_n\sim C\rho^{n-1}$ avec $C>0$. Par III.1d, $h(f)=\ln\rho$.
+
+Voici le comptage sans calcul de vecteurs propres. Par symétrie, $v_n=(a_n,b_n,a_n)$. La matrice réduite donne $a_{n+1}=a_n+b_n$ et $b_{n+1}=2a_n+b_n$. Son polynôme caractéristique est $X^2-2X-1$. La suite $L_n=2a_n+b_n$ satisfait donc $L_{n+2}=2L_{n+1}+L_n$, avec $L_1=3$ et $L_2=7$. La composante devant $(1+\sqrt2)^{n-1}$ vaut $(3+2\sqrt2)/2>0$, ce qui vérifie directement la limite logarithmique.
 
 ### Question III.3a
 

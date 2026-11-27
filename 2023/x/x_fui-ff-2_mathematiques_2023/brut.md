@@ -2,7 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 L’écrit de printemps associe un exercice sur les matrices circulantes à un problème sur les fonctions lisses à support compact. Le support est la fermeture de l’ensemble des points où la fonction est non nulle.
 
@@ -97,7 +99,11 @@ Si $\varphi\in C_c^k$, ce membre est $C^k$, donc $T_\mu\varphi\in C_c^{k+1}$ ave
 
 ### Question 14
 
-Par 13, l’écart recherché est $T_\mu g-g$ pour $g=\varphi^{(k)}$. Le théorème des accroissements finis donne $|g(x+s)-g(x)|\le |s|\|\varphi^{(k+1)}\|_\infty$. La moyenne de $|s|$ sur $[-\mu,\mu]$ vaut $\mu/2$. Cela donne la borne uniforme annoncée. La même démonstration vaut pour $k=0$, cas utilisé en 16.
+Par 13, l’écart recherché est $T_\mu g-g$ pour $g=\varphi^{(k)}$. Le théorème des accroissements finis donne $|g(x+s)-g(x)|\le |s|\|\varphi^{(k+1)}\|_\infty$. Puisque $\int_{-\mu}^{\mu}|s|\,ds=\mu^2$, l’intégration de cette inégalité donne, indépendamment de $x$,
+$$\big\|(T_\mu\varphi)^{(k)}-\varphi^{(k)}\big\|_\infty
+\le\frac{1}{2\mu}\int_{-\mu}^{\mu}|s|\,ds\,\|\varphi^{(k+1)}\|_\infty
+=\frac{\mu}{2}\|\varphi^{(k+1)}\|_\infty.$$
+La même démonstration vaut pour $k=0$, cas utilisé en 16.
 
 ### Question 15
 
@@ -112,7 +118,9 @@ La dernière inégalité résulte de la contraction de 13 à l’ordre $k+1$ app
 
 ### Question 17
 
-Notons $g_k$ la limite uniforme de $\psi_n^{(k)}$ pour $n\ge k$. Elle est continue. Pour $a,b$ réels, passer à la limite dans $\psi_n^{(k)}(b)-\psi_n^{(k)}(a)=\int_a^b\psi_n^{(k+1)}$ donne $g_k(b)-g_k(a)=\int_a^b g_{k+1}$. Ainsi $g_k'=g_{k+1}$ et $f=g_0$ est $C^\infty$, avec $f^{(k)}=g_k$. Par contraction, $\|\psi_n^{(k)}\|_\infty\le\|\psi_k^{(k)}\|_\infty$ pour $n\ge k$. Le passage à la limite donne la borne requise.
+Notons $g_k$ la limite uniforme de $\psi_n^{(k)}$ pour $n\ge k$. Elle est continue. Pour $a,b$ réels, passer à la limite dans $\psi_n^{(k)}(b)-\psi_n^{(k)}(a)=\int_a^b\psi_n^{(k+1)}$ donne $g_k(b)-g_k(a)=\int_a^b g_{k+1}$. Ainsi $g_k'=g_{k+1}$ et $f=g_0$ est $C^\infty$, avec $f^{(k)}=g_k$. Par contraction, $\|\psi_n^{(k)}\|_\infty\le\|\psi_k^{(k)}\|_\infty$ pour $n\ge k$. Le passage à la limite donne $\|f^{(k)}\|_\infty\le\|\psi_k^{(k)}\|_\infty$, y compris pour $k=0$. Pour $n\ge k+2$, on peut aussi faire tendre $m$ vers l’infini dans la majoration télescopique de 16, ce qui donne l’erreur après $n$ moyennes,
+$$\|f^{(k)}-\psi_n^{(k)}\|_\infty\le
+\tfrac12\|\psi_{k+1}^{(k+1)}\|_\infty\sum_{j=n+1}^\infty\mu_j.$$
 
 ### Question 18
 

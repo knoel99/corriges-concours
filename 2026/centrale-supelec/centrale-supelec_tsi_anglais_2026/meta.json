@@ -57,10 +57,100 @@
       "modifications": true,
       "perimetre": "Relecture des deux synthèses sur les quatre sources des pages 1 à 4. Comparaison du livre déguisé et du salon ouvert sur le paysage préhistorique, attribution des thèses et nouvelles vérifications des décomptes.",
       "agent": "astra_langues"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "agent": "x_maths_b_recentes",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Consigne unique, rédaction et copie du guide, lecture du corpus, contrôle des visuels et du total de mots."
     }
   ],
   "sources": {
-    "sujet": "https://www.concours-centrale-supelec.fr/sites/default/files/documents/G078-LV009.pdf"
+    "sujet": "https://www.concours-centrale-supelec.fr/sites/default/files/documents/G078-LV009.pdf",
+    "sha256_sujet": "0ac49c902444dba90f60fcb80879b21238abb65262e47749bfd7c4d90e1140c0",
+    "pages_pdf_sujet_verifiees": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "rapport_jury": null,
+    "verification_rapport": {
+      "date": "2026-11-26",
+      "rubriques": [
+        "TSI"
+      ],
+      "dernier_millesime_affiche": 2025,
+      "sha256_page_annales": "7e564389f6b701010fa9cd31f8a0736ecca499196322778431c84b3afe7f7cb6",
+      "annales": "https://www.concours-centrale-supelec.fr/sujets-rapports"
+    }
   },
-  "date_revision": "2026-11-24"
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Synthèse"
+    ],
+    "origine_attestation": {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "0ac49c902444dba90f60fcb80879b21238abb65262e47749bfd7c4d90e1140c0",
+      "perimetre": "Consigne unique, rédaction et copie du guide, lecture du corpus, contrôle des visuels et du total de mots.",
+      "documents_verifies": [
+        {
+          "numero": 1,
+          "pages_facsimile": [
+            1,
+            2
+          ],
+          "controle": "Horowitch distingue le déchiffrage et la lecture suivie, compare les observations des enseignants et examine les arbitrages des étudiants."
+        },
+        {
+          "numero": 2,
+          "pages_facsimile": [
+            2
+          ],
+          "controle": "Rothman compare deux séries américaines. Les adultes lisant au moins un livre par an passent de 55 à 48 %. Les jeunes de treize ans lisant pour leur plaisir presque chaque jour passent de 27 à 14 %. Il décrit également les nouvelles pratiques numériques."
+        },
+        {
+          "numero": 3,
+          "pages_facsimile": [
+            3
+          ],
+          "controle": "Dans Blind Faith, le camouflage matériel du roman de Brontë permet à Trafford d’expliquer comment l’imagination ouvre un espace privé."
+        },
+        {
+          "numero": 4,
+          "pages_facsimile": [
+            4
+          ],
+          "controle": "L’image de DPM rapproche une personne assise dans un fauteuil et portant un casque de réalité virtuelle, les objets domestiques et un paysage préhistorique. Le slogan promet une immersion, comparée dans la synthèse à celle d’un lecteur de fiction."
+        }
+      ],
+      "decompte": {
+        "question_unique": "Synthèse",
+        "langue": "anglais",
+        "minimum": 360,
+        "maximum": 440,
+        "titre": "Turning the Page on Books?",
+        "mots": 434,
+        "blocs": [
+          5,
+          74,
+          92,
+          122,
+          104,
+          37
+        ],
+        "convention": "Titre inclus. Mots séparés par des blancs, composés et formes à apostrophe conservés.",
+        "reperes_de_vingt": null
+      }
+    }
+  }
 }

@@ -1,0 +1,89 @@
+{
+  "slug": "bel_bl_economie-oral-commun-12-juin-dossier-2_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Économie (oral commun) — 12 juin, dossier 2",
+    "annee": 2024,
+    "modalite": "oral"
+  },
+  "intitule": "La décarbonation de l’industrie française",
+  "questions": 0,
+  "sujets": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "date_revision": "2026-11-26",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/bl_sujets_oraux_economie_2_12062024.pdf",
+    "sujet_pages": 7,
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_oral_economie_epreuve_commune.pdf",
+    "rapport_sha256": "fe5cc6dcbe4008c26a4690c9b5f2e24e5772986d17abc64298dc8717224afffe",
+    "calendrier": "https://www.ens.psl.eu/sujets-des-epreuves-orales-du-concours-bl-session-2024",
+    "restitution_texte_sha256": "2d3f825933c89e1f4446bde84f4ca3d562d79e5b976ded0378f34e83c1de4bf8",
+    "pieces_rattachees": [
+      {
+        "source": "https://www.ipp.eu/wp-content/uploads/2025/05/102_Note_IPP_Budget_Green_Firms-4.pdf",
+        "sha256": "bdd55e92952cf00f49444b279d19b2936d2a88da2b09e52fd990bdffd5aae653",
+        "rattachement": "Documents 1 et 4. Figures 1 et 2 page PDF 4, figure 3 page 5, figure 4 page 6. Titres, champs et lectures concordent."
+      },
+      {
+        "source": "https://www.entreprises.gouv.fr/files/files/Publications/2023/Themas/themas-dge-n8-decarbonation.pdf",
+        "sha256": "e59007003821810bd4e54d4cadace745e75b0b875f81ea6573d526e0ea2f2be2",
+        "rattachement": "Documents 2 et 5. Graphique 2 page PDF 3 et graphique 4 page 5. Titres, séries et sources concordent."
+      }
+    ]
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Restitution textuelle du sujet à son URL identifiée par le calendrier officiel. Le PDF ne peut être téléchargé (HTTP 404). Les cinq pièces sont vérifiées par concordance entre le texte de l’épreuve et les graphiques originaux des éditeurs.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Conception et vérification du schéma du document 2. Calcul aux deux dates du document 2, graphique 2 de la DGE. Le total couvre les émissions directes territoriales. Isoler les effets du volume produit, de la composition et de l’efficacité exige une décomposition. Légende descriptive et alternative textuelle intégrées aux deux éditions.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
+    }
+  ],
+  "figures": [
+    {
+      "fichier": "figures/emissions-directes-industrie.svg",
+      "question": "Document 2",
+      "legende": "Figure 1 — Émissions directes de l’industrie manufacturière en France. Les émissions directes passent de 139,3 Mt équivalent CO₂ en 1990 à 76,3 en 2019. La baisse atteint 63,0 Mt, soit 45,2 % de la valeur de 1990.",
+      "description": "Les émissions directes passent de 139,3 Mt équivalent CO₂ en 1990 à 76,3 en 2019. La baisse atteint 63,0 Mt, soit 45,2 % de la valeur de 1990.",
+      "source": "Calcul aux deux dates du document 2, graphique 2 de la DGE. Le total couvre les émissions directes territoriales. Isoler les effets du volume produit, de la composition et de l’efficacité exige une décomposition."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "sujets_entierement_traites": [
+      "La décarbonation de l’industrie française"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "redaction",
+      "perimetre": "Restitution textuelle du sujet à son URL identifiée par le calendrier officiel. Le PDF ne peut être téléchargé (HTTP 404). Les cinq pièces sont vérifiées par concordance entre le texte de l’épreuve et les graphiques originaux des éditeurs.",
+      "sha256_restitution": "2d3f825933c89e1f4446bde84f4ca3d562d79e5b976ded0378f34e83c1de4bf8"
+    },
+    "documents_entierement_traites": [
+      "Document 1 — Identifier les procédés et les entreprises les plus émetteurs",
+      "Document 2 — Expliquer une baisse sur le territoire",
+      "Document 3 — Organiser la rareté des quotas",
+      "Document 4 — Séparer coût marginal et charge moyenne",
+      "Document 5 — Suivre les émissions de la consommation française"
+    ]
+  }
+}

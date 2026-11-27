@@ -1,0 +1,39 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_litterature-laclos-et-les-liaisons-dangereuses-oral_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Littérature — Laclos et Les Liaisons dangereuses (oral)",
+    "annee": 2018,
+    "modalite": "oral"
+  },
+  "intitule": "Littérature — Laclos et Les Liaisons dangereuses (oral)",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/oral-SIL2018-litt.3.pdf",
+    "archive_sujet": "https://web.archive.org/web/20201230063142id_/https://www.ens.psl.eu/sites/default/files/oral-SIL2018-litt.3.pdf",
+    "sha256_sujet": "702cb78f117e3de671b5ba05b36aa2e947b9d74656186b52cf4fa00c34e27d0d",
+    "reperage": "Troisième sujet de 2018, pages 1 et 2. Début de la lettre CXXV, Valmont à Merteuil, du constat de victoire à la promesse de rapporter les répliques."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lettre.svg",
+      "question": "Commentaire",
+      "legende": "À qui se rapporte la maîtrise dans la lettre ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "reprise_oraux_litterature_sil_2017_2019",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Lecture intégrale du fac-similé, commentaire de spécialité, préparation guidée et réponses pour l’entretien, rédaction et vérification du schéma."
+    }
+  ]
+}

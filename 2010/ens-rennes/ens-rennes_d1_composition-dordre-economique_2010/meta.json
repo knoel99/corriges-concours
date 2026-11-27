@@ -1,0 +1,69 @@
+{
+  "slug": "ens-rennes_d1_composition-dordre-economique_2010",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Composition d’ordre économique",
+    "annee": 2010,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "intitule": "Les marchés constituent-ils encore un bon mécanisme de régulation économique ?",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/se1a-10d1-dissertation_1421752506344-pdf",
+    "sujet_sha256": "97611356ffcf84aeb8c659fdf4f4501bcf9fd495a9f64ea127edaf053854329f",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/ro_10d1economie_1283500378806.pdf",
+    "rapport_sha256": "2f3c75c6890a5ee92d26a17049c9b2574313fbfee594a73b11d0202e64f3ec90",
+    "references_complementaires": {},
+    "etablissement_imprime": "École normale supérieure de Cachan"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "section": "A2",
+      "fichier": "figures/ventes-et-bilans.svg",
+      "legende": "Un choix de liquidité modifie les prix auxquels les autres institutions doivent valoriser leurs garanties."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "section": "A1",
+      "fichier": "figures/choc-de-productivite.svg",
+      "legende": "Dans l’exemple concurrentiel, la baisse du coût marginal déplace l’équilibre de (40, 60) à (45, 55)."
+    }
+  ],
+  "redaction": "Rédaction effective des éditions brute et guidée de « Les marchés constituent-ils encore un bon mécanisme de régulation économique ? » à partir des pièces distribuées ou conservées par l’ENS Rennes. Choc de productivité et monopole chiffrés, externalités, ventes forcées, effets macroéconomiques et instruments dans une économie ouverte.",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Le rapport demande un traitement microéconomique et macroéconomique, un examen des chocs et des mécanismes de concurrence au-delà du récit de la crise."
+    },
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction effective des éditions brute et guidée de « Les marchés constituent-ils encore un bon mécanisme de régulation économique ? » à partir des pièces distribuées ou conservées par l’ENS Rennes. Choc de productivité et monopole chiffrés, externalités, ventes forcées, effets macroéconomiques et instruments dans une économie ouverte."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}

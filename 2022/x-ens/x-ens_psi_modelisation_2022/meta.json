@@ -11,7 +11,10 @@
   "redaction": "GPT-6.2 Astra · effort Ultra",
   "sources": {
     "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2022_Sujet_Ecrit_PSI_Modelisation.pdf",
-    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2022_Rapport_Ecrit_PSI_mod%C3%A9lisation.pdf"
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2022_Rapport_Ecrit_PSI_mod%C3%A9lisation.pdf",
+    "sha256_sujet": "d159106f45ae3eaf263562e5497bd7c4f0745e9994b73b1154f3a02e981e4c79",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2022_Rapport_Ecrit_PSI_mod%C3%A9lisation.pdf",
+    "sha256_rapport_jury": "1d8ea3fce338323fcf2315cf4fa9c576ff393551b9c8504b19b71e51b6fbf6ba"
   },
   "figures": [
     {
@@ -42,7 +45,7 @@
     {
       "fichier": "figures/q44-retard-fractionnaire.svg",
       "question": "Q44",
-      "legende": "Pour n = 4 et un retard de 1,35 pas, l’instant voulu correspond à 2,65 pas, entre X[2] et X[3]."
+      "legende": "Pour n = 4 et un retard de 1,35 pas, l’instant voulu correspond à 2,65 pas, entre les échantillons d’indices 2 et 3."
     }
   ],
   "contributions": [
@@ -56,6 +59,94 @@
       "agent": "astra_info_si",
       "fournisseur": "codex",
       "perimetre": "Rédaction des 50 questions sur la mécanique musculaire et ventriculaire, la circulation, le filtre barométrique et la simulation du SNA. Lecture des 25 pages du PDF et du rapport, confrontation des graphes et équations aux rendus de pages, six illustrations et vérification des programmes et des valeurs numériques."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "perimetre": "Question 44. Vérification de l’interpolation au temps retardé et correction de la légende du graphique dans les deux éditions pour le rendu Markdown et PDF."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_maths_b_recentes",
+      "modifications": true,
+      "perimetre": "50 questions, six figures et sept blocs Python. Comparaison de l’original et du rapport, contrôle des phases du modèle de Hill, de la dynamique et des unités, de la réponse périodique du Windkessel, des retards et de la correspondance A à G de la figure 27. Q31 donne les deux valeurs extrêmes périodiques et distingue valeur moyenne et ondulation."
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50"
+    ],
+    "precision": "50 questions, six figures et sept blocs Python. Comparaison de l’original et du rapport, contrôle des phases du modèle de Hill, de la dynamique et des unités, de la réponse périodique du Windkessel, des retards et de la correspondance A à G de la figure 27. Q31 donne les deux valeurs extrêmes périodiques et distingue valeur moyenne et ondulation.",
+    "origine_attestation": {
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "d159106f45ae3eaf263562e5497bd7c4f0745e9994b73b1154f3a02e981e4c79",
+      "perimetre": "50 questions, six figures et sept blocs Python. Comparaison de l’original et du rapport, contrôle des phases du modèle de Hill, de la dynamique et des unités, de la réponse périodique du Windkessel, des retards et de la correspondance A à G de la figure 27. Q31 donne les deux valeurs extrêmes périodiques et distingue valeur moyenne et ondulation.",
+      "commit_edition_anterieure": "a7540efcf2e5a2386e74ce497f1ab1a4f5c649b7",
+      "sha256_rapport_jury_controle": "1d8ea3fce338323fcf2315cf4fa9c576ff393551b9c8504b19b71e51b6fbf6ba"
+    }
+  }
 }

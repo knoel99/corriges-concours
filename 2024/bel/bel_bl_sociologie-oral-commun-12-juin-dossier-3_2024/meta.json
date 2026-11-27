@@ -1,0 +1,81 @@
+{
+  "slug": "bel_bl_sociologie-oral-commun-12-juin-dossier-3_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Sociologie (oral commun) — 12 juin dossier 3",
+    "annee": 2024,
+    "modalite": "oral"
+  },
+  "intitule": "L’avortement : permanences et mutations",
+  "questions": 0,
+  "sujets": 1,
+  "tirages": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/bl_sujets_oraux_sociologie_3_12062024.pdf",
+    "sujet_sha256": "d0e993bc864ac7fedae9da4064fbbf459267c2a77aa32cca1ac3fdd28d811461",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_oral_sociologie_epreuve_commune.pdf",
+    "rapport_sha256": "2b325a35f255bbe5da766d002f0b39721fbc10704cbbb324e074b164d093878b",
+    "pages_sujet": "pp. 1–8"
+  },
+  "figures": [
+    {
+      "fichier": "figures/comparaison.svg",
+      "question": "L’avortement : permanences et mutations",
+      "legende": "Document 5, p. 6. Pourcentages des bulletins en métropole. Les caractéristiques peuvent se cumuler."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "bel_bl_sociologie-oral-commun-12-juin-dossier-3_2024",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Lecture des sept pièces dans leur pagination officielle, exposé, guide de lecture et trois réponses pour l’entretien. Rapprochement des pièces en trois étapes argumentées pour la présentation orale."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "bel_bl_sociologie-oral-commun-12-juin-dossier-3_2024",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": false,
+      "perimetre": "Contrôle des unités, champs et dénominateurs, lecture des graphiques au rendu et comparaison avec la figure « Composition des interruptions enregistrées »."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "L’avortement : permanences et mutations"
+    ],
+    "controle": [
+      "Lecture des sept pièces dans leur pagination officielle, exposé, guide de lecture et trois réponses pour l’entretien.",
+      "Contrôle des unités, champs et dénominateurs, lecture des graphiques au rendu et comparaison avec la figure « Composition des interruptions enregistrées ».",
+      "Exposé structuré en trois rapprochements croisés, puis contrôle de chaque pièce en suivant la pagination officielle."
+    ]
+  }
+}

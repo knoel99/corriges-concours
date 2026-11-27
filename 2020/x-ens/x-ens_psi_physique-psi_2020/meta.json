@@ -1,0 +1,110 @@
+{
+  "slug": "x-ens_psi_physique-psi_2020",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Physique PSI",
+    "annee": 2020
+  },
+  "intitule": "Mesures de précision et métrologie",
+  "questions": 52,
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "physique_psi_interens",
+      "session": "physique_psi_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": false,
+      "perimetre": "Rapport 2020 : variations relatives, résultante des pressions, conductivité à champ nul et homogénéité de la densité spectrale."
+    },
+    {
+      "phase": "redaction",
+      "agent": "physique_psi_interens",
+      "session": "physique_psi_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Résolution des 52 questions énumérées et réalisation de 1 figures."
+    }
+  ],
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2020/2020_Sujet_1A_PSI_Physique.pdf",
+    "sujet_sha256": "4a4d6ea80a015112c4d261c274cbcd854cec9230b24184ebc25936d4d662c887",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2020/2020_RAPPORT_ECRIT_PSI_PHYSIQUE_XCR.pdf",
+    "rapport_sha256": "2d37b6204d52c5eb313ea074bd3f007b908636e8b3d60ea1d447f557eedcf98f",
+    "garde": "XCR · écrit commun de physique PSI · 4 heures",
+    "provenance_sujet": "PDF ouvert, garde ou texte et rattachement contrôlés chez l’organisateur"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "46–47",
+      "fichier": "figures/bode.svg",
+      "legende": "Niveau relatif de la densité spectrale des vitesses, avec les deux asymptotes et le point à mi-hauteur de la densité."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51",
+      "52"
+    ]
+  }
+}

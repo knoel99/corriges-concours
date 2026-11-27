@@ -11,7 +11,8 @@
   "sources": {
     "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2017_SE_D2-1_Maths.pdf",
     "rapport_jury": "",
-    "sha256_sujet": "666de611cd5e049494793f1e41ce6b9115811d450c93a1b2e2d8a07584df3acb"
+    "sha256_sujet": "666de611cd5e049494793f1e41ce6b9115811d450c93a1b2e2d8a07584df3acb",
+    "provenance": "Garde C1792, École normale supérieure de Cachan, concours de première année économie et gestion 2017. Trois pages et trois problèmes, à distinguer de la composition de 2007 portant également le code C1792."
   },
   "figures": [
     {
@@ -31,6 +32,267 @@
       "perimetre": "Rédaction et vérification sur les trois pages du sujet C1792 des deux éditions et des 33 items. Changement de base, étude complète des extrema avec figure des quatre contacts, identification et loi conditionnelle des deux dés.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "agent": "maths_statistiques_saclay",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture des 33 consignes des deux éditions sur le fascicule. Base oblique et projecteur orthogonal, deux niveaux de distance avec la contrainte du sixième degré, double six, arrêt et loi conditionnelle. Vérification du cas où la variable vaut zéro par convention."
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1a",
+      "I.1b",
+      "I.2a",
+      "I.2b",
+      "I.2c",
+      "I.2d",
+      "I.3a",
+      "I.3b",
+      "I.3c",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "II.8",
+      "II.9",
+      "III.1a",
+      "III.1b",
+      "III.1c",
+      "III.2a",
+      "III.2b",
+      "III.2c",
+      "III.2d",
+      "III.3a.i",
+      "III.3a.ii",
+      "III.3a.iii",
+      "III.3a.iv",
+      "III.3b.i",
+      "III.3b.ii",
+      "III.3b.iii",
+      "III.3b.iv"
+    ],
+    "repere_par_question": [
+      {
+        "question": "I.1a",
+        "titre": "I.1a",
+        "partie": "Problème 1 · Changement de base et projection",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.1b",
+        "titre": "I.1b",
+        "partie": "Problème 1 · Changement de base et projection",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.2a",
+        "titre": "I.2a",
+        "partie": "Problème 1 · Changement de base et projection",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.2b",
+        "titre": "I.2b",
+        "partie": "Problème 1 · Changement de base et projection",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.2c",
+        "titre": "I.2c",
+        "partie": "Problème 1 · Changement de base et projection",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.2d",
+        "titre": "I.2d",
+        "partie": "Problème 1 · Changement de base et projection",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.3a",
+        "titre": "I.3a",
+        "partie": "Problème 1 · Changement de base et projection",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.3b",
+        "titre": "I.3b",
+        "partie": "Problème 1 · Changement de base et projection",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.3c",
+        "titre": "I.3c",
+        "partie": "Problème 1 · Changement de base et projection",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.1",
+        "titre": "II.1",
+        "partie": "Problème 2 · Distance à une courbe du sixième degré",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.2",
+        "titre": "II.2",
+        "partie": "Problème 2 · Distance à une courbe du sixième degré",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.3",
+        "titre": "II.3",
+        "partie": "Problème 2 · Distance à une courbe du sixième degré",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.4",
+        "titre": "II.4",
+        "partie": "Problème 2 · Distance à une courbe du sixième degré",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.5",
+        "titre": "II.5",
+        "partie": "Problème 2 · Distance à une courbe du sixième degré",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.6",
+        "titre": "II.6",
+        "partie": "Problème 2 · Distance à une courbe du sixième degré",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.7",
+        "titre": "II.7",
+        "partie": "Problème 2 · Distance à une courbe du sixième degré",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.8",
+        "titre": "II.8",
+        "partie": "Problème 2 · Distance à une courbe du sixième degré",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.9",
+        "titre": "II.9",
+        "partie": "Problème 2 · Distance à une courbe du sixième degré",
+        "page_pdf": 2
+      },
+      {
+        "question": "III.1a",
+        "titre": "III.1a",
+        "partie": "Problème 3 · Temps d’identification d’un dé",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.1b",
+        "titre": "III.1b",
+        "partie": "Problème 3 · Temps d’identification d’un dé",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.1c",
+        "titre": "III.1c",
+        "partie": "Problème 3 · Temps d’identification d’un dé",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.2a",
+        "titre": "III.2a",
+        "partie": "Problème 3 · Temps d’identification d’un dé",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.2b",
+        "titre": "III.2b",
+        "partie": "Problème 3 · Temps d’identification d’un dé",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.2c",
+        "titre": "III.2c",
+        "partie": "Problème 3 · Temps d’identification d’un dé",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.2d",
+        "titre": "III.2d",
+        "partie": "Problème 3 · Temps d’identification d’un dé",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.3a.i",
+        "titre": "III.3a.i",
+        "partie": "Problème 3 · Temps d’identification d’un dé",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.3a.ii",
+        "titre": "III.3a.ii",
+        "partie": "Problème 3 · Temps d’identification d’un dé",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.3a.iii",
+        "titre": "III.3a.iii",
+        "partie": "Problème 3 · Temps d’identification d’un dé",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.3a.iv",
+        "titre": "III.3a.iv",
+        "partie": "Problème 3 · Temps d’identification d’un dé",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.3b.i",
+        "titre": "III.3b.i",
+        "partie": "Problème 3 · Temps d’identification d’un dé",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.3b.ii",
+        "titre": "III.3b.ii",
+        "partie": "Problème 3 · Temps d’identification d’un dé",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.3b.iii",
+        "titre": "III.3b.iii",
+        "partie": "Problème 3 · Temps d’identification d’un dé",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.3b.iv",
+        "titre": "III.3b.iv",
+        "partie": "Problème 3 · Temps d’identification d’un dé",
+        "page_pdf": 3
+      }
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "controle": [
+      "Base oblique et projecteur orthogonal, deux niveaux de distance avec la contrainte du sixième degré, double six, arrêt et loi conditionnelle. Vérification du cas où la variable vaut zéro par convention."
+    ]
+  }
 }

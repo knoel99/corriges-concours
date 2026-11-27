@@ -17,7 +17,14 @@
   "sources": {
     "sujet": "https://www.ens-lyon.fr/sites/default/files/2022-11/Session-2022_BEL_Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=12",
     "sujet_sha256": "8dcbf847bd6ec9f6883a858ccf44d61aa36cd84ce4117563a1e2f9c605776353",
-    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2022-11/Espagnol%202022.pdf#page=11"
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2022-11/Espagnol%202022.pdf#page=11",
+    "sha256_rapport_jury": "dbb6102f8196a633581c1c3727a8e5f30b73b4cf10ac3aba28a0325c78edfca6",
+    "pages_rapport_verifiees": [
+      11,
+      12,
+      13
+    ],
+    "ouvrage": "Jules-Amédée Barbey d’Aurevilly, Les Diaboliques, édition citée de 1882, p. 100–101."
   },
   "figures": [
     {
@@ -26,7 +33,7 @@
       "legende": "Le temps de Don Juan dans le portrait"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -37,6 +44,23 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Thème espagnol intégral des deux paragraphes de Barbey d’Aurevilly au programme du thème lyonnais 2022, commentaire des difficultés de voix, de temps et de métaphores, et schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "lyon_ses_sources",
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture des deux éditions sur le feuillet et le rapport du jury. Désignation du séducteur, dérivation juanesque, temps des hypothèses, reprise des cheveux par le pronom pluriel, réciprocité des pronoms finaux."
     }
   ],
   "droits_sources": {
@@ -44,5 +68,21 @@
       "Jules Barbey d’Aurevilly, *Les Diaboliques*, édition citée par le sujet, Paris, 1882, p. 100-101. Le thème de spécialité dure quatre heures et porte sur l’intégralité du passage donné à la page 12 du fascicule."
     ],
     "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Proposition de thème"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Proposition de thème",
+        "page_pdf": 12,
+        "page_pdf_fin": 12,
+        "perimetre": "Les deux paragraphes du portrait, de « Un nom providentiel, Madame » à « elles en firent un chef-d’œuvre ». Adresse, incises, ellipse entre crochets, souper du Commandeur et clausule inclus."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
   }
 }

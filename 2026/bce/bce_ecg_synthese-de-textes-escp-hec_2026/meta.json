@@ -21,7 +21,7 @@
     "rapport_jury": "https://www.concours-bce.com/sites/default/files/2026-09/304%20-%20Etude%20et%20synthe%CC%80se%20de%20textes%20ESCP%20BS.HEC%20Paris%202026.pdf",
     "rapport_sha256": "c996b07a0943aac62978298f756cdd131e051a6e17355e24b84e8779895b70d2"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "nombre_mots_synthese": 300,
   "contributions": [
     {
@@ -66,6 +66,45 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Reprise des trois axes de confrontation à partir des pages imagées de l’original. Nouvelle copie de 300 mots, repères toutes les cinquante unités vérifiés dans les deux éditions. Ajout d’un schéma pédagogique."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification de la consigne de 300 mots du sujet 304, des trois auteurs et du rapport. Illustration et comparaison ajoutées après la copie décomptée ; exercice de confrontation dans le guidé."
+    },
+    {
+      "phase": "revision",
+      "tour": 4,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux",
+      "perimetre": "Sujet BCE 304. Garde p. 1, Benjamin p. 2–3, Yannic p. 3–4, Larsonneur p. 5–6. Confrontation des trois textes en une synthèse de 300 mots, question comprise ; repères tous les cinquante mots vérifiés dans les deux éditions. Rapport institutionnel relu, exemple Brot / pain et effets du correcteur distincts de la métrique des clics."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "sujets_entierement_traites": [
+      "Synthèse ESCP–HEC des trois textes, en 300 mots"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "origine_attestation": {
+      "phase": "revision",
+      "date": "2026-11-26",
+      "sha256_sujet_controle": "721ab48cbed475e0ec2ae9d7019cfb60e4a2442744f5ae8d8283c6b5785862fe",
+      "perimetre": "Sujet BCE 304. Garde p. 1, Benjamin p. 2–3, Yannic p. 3–4, Larsonneur p. 5–6. Confrontation des trois textes en une synthèse de 300 mots, question comprise ; repères tous les cinquante mots vérifiés dans les deux éditions. Rapport institutionnel relu, exemple Brot / pain et effets du correcteur distincts de la métrique des clics."
+    }
+  }
 }

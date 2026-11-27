@@ -1,0 +1,103 @@
+{
+  "slug": "ens_mp-pc_mathematiques-informatique_2008",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Mathématiques-informatique",
+    "annee": 2008,
+    "duree_heures": 4
+  },
+  "questions": 29,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-i/session-2008/sujet-ecrit-2008-i_mathematiques_informatique.pdf",
+    "index_banque": "https://banques-ecoles.fr/cms/filiere-mp/les-annales-et-rapports-des-jurys/",
+    "identification": "Cahier 80.05M, sept pages, quatre heures. MP groupe I pour Paris, Lyon et Cachan. PC groupe I pour Paris et Lyon.",
+    "sujet_sha256": "420d330504dc2b15e9b9f2846e088c168100321511e1638ece33a78e41c10e0d",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-i/session-2008/rapport-2008-i_ecrit_mathematiques_informatique.pdf",
+    "rapport_sha256": "3587ee32a6cf90ffba2adf29bc2cd91a7d53a910a8c2cc52b3950bfaed812ae1"
+  },
+  "figures": [
+    {
+      "fichier": "figures/sections-boules.svg",
+      "question": "2.2",
+      "legende": "Figure 1 — En dimension deux, une tranche verticale du disque a pour demi-hauteur la racine de un moins le carré de son abscisse. Les tranches du losange donnent une dépendance linéaire."
+    },
+    {
+      "fichier": "figures/classes-reseau.svg",
+      "question": "3.4",
+      "legende": "Figure 2 — Modulo trois, les six points dont la première coordonnée est non nulle se répartissent en trois directions. La deuxième coordonnée du générateur vaut zéro, un ou deux."
+    },
+    {
+      "fichier": "figures/projection-arrondi.svg",
+      "question": "4.4",
+      "legende": "Figure 3 — Sur la droite des représentants, le minimum continu se trouve à distance au plus un demi du paramètre entier le plus proche."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Les 29 questions numérotées des quatre parties. Certificats et terminaison du pivot, dualité, jauges, Minkowski, Hlawka et réduction de Lovász et Scarf. Vérification des restrictions de signe et de symétrie, et rectification de 2.7 et 2.11 avec le rapport du jury."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture des 29 questions principales, de leurs subdivisions, des trois figures et du rapport du jury. Contrôle des certificats primaux et duaux sur 486 couples de base et de second membre, des classes de réseaux et du contre-exemple à la borne imprimée en 2.11. Ajout dans les deux éditions d’un contre-exemple à la première assertion de 2.11 lorsque les réels de produit un sont négatifs. Contrôle des hypothèses de symétrie et des facteurs de réduction de la dernière partie."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7",
+      "2.8",
+      "2.9",
+      "2.10",
+      "2.11",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.6",
+      "4.7"
+    ],
+    "precision": "Les 29 repères principaux du cahier 80.05M comprennent les cinq points de 1.2, les trois de 1.3, les deux de 1.4, les deux de 2.1 et les trois propriétés de 2.4. Le résultat de 2.11 est donné avec sa correction et les hypothèses nécessaires, celui de 4.2 avec un contre-exemple sans symétrie.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "420d330504dc2b15e9b9f2846e088c168100321511e1638ece33a78e41c10e0d",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Relecture des 29 questions principales, de leurs subdivisions, des trois figures et du rapport du jury. Contrôle des certificats primaux et duaux sur 486 couples de base et de second membre, des classes de réseaux et du contre-exemple à la borne imprimée en 2.11. Ajout dans les deux éditions d’un contre-exemple à la première assertion de 2.11 lorsque les réels de produit un sont négatifs. Contrôle des hypothèses de symétrie et des facteurs de réduction de la dernière partie.",
+      "commit_redaction_anterieure": "b60db79d544826e2e43fe40a7c99ce130bad239c"
+    }
+  }
+}

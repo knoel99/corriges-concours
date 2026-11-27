@@ -39,5 +39,60 @@
       "modifications": true,
       "perimetre": "Rédaction des seize questions à partir du sujet et du rapport de la banque. Contrôle indépendant de la compaction et de la fusion par ensembles explicites de points, du nombre de comparaisons et des trois requêtes SQL. Deux figures originales."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16"
+    ],
+    "pages_des_questions": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 3,
+      "5": 3,
+      "6": 3,
+      "7": 3,
+      "8": 3,
+      "9": 4,
+      "10": 4,
+      "11": 5,
+      "12": 6,
+      "13": 6,
+      "14": 6,
+      "15": 6,
+      "16": 7
+    },
+    "origine_attestation": {
+      "commit_du_journal": "c070d93f2a1980798eb9bbc18bd9ad88596ba7e7",
+      "phase": "redaction",
+      "date": "2026-11-24",
+      "perimetre": "Rédaction des seize questions à partir du sujet et du rapport de la banque. Contrôle indépendant de la compaction et de la fusion par ensembles explicites de points, du nombre de comparaisons et des trois requêtes SQL. Deux figures originales.",
+      "sha256_sujet_controle": "59d21b22b2d57db8d543092d48496f4a8210746ded982bebd0326206b301da7b",
+      "sha256_rapport_controle": "d6d4963011d332fc037b6d4532d54bf24a794becf04986fb81fa561d593c30a3"
+    },
+    "controle_programmes": {
+      "resultats_par_edition": {
+        "brut": "brut 65536 sous-ensembles, 1400 intersections et 3 requêtes SQL",
+        "guide": "guide 65536 sous-ensembles, 1400 intersections et 3 requêtes SQL"
+      },
+      "controle_sur": "Programmes extraits de chaque édition et vérifiés à nouveau. Les tests portent aussi sur les requêtes SQL lorsqu’elles sont proposées."
+    },
+    "precision": "Les numéros et pages ont été relevés dans le fac-similé du concours. Les réponses des deux éditions sont présentes au commit éditorial indiqué."
+  }
 }

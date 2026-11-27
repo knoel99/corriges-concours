@@ -8,6 +8,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 Pour l’option d’anglais de l’ENS de Paris, le livret prévoit deux traductions en six heures, sans dictionnaire. La version occupe la page 4. Dans *Deliverance* (1970), James Dickey fait entendre un homme qui suspend son ascension pour regarder la rivière. Le thème occupe la page 5. Dans *Les Solidarités mystérieuses* (2011), Pascal Quignard fait reconnaître une personne par le son de sa voix avant qu’un visage soit vu de face. La première traduction travaille les degrés d’adhésion à une image. Dans la seconde, Claire retrouve le nom de la vieille dame alors que celle-ci scrute encore le visage de Claire à la fin de l’extrait.
@@ -62,6 +64,8 @@ Je me retournai. Je me retournai vers la paroi, vers la falaise, et me retrouvai
 L’apparition du nom complet de Claire accompagne les larmes. La reconnaissance de la vieille dame, elle, se donne à lire dans l’attente d’une main et d’une bague, puis dans l’appel répété. Les deux articles définis sont importants. Pour Claire, ce sont déjà la main et la bague de quelqu’un. À la fin, le retard se transporte du côté de Madame Ladon. Sa gêne précède le moment où elle pourrait identifier la jeune femme. Un client interrompt cet examen pour ordonner à Claire de reprendre sa place dans la file.
 
 ![Figure 2 — Les deux temps de la reconnaissance](figures/marche.svg)
+
+Comparer les sujets de « Elle dit plus fort » et « Elle vit le dos de la vieille dame se crisper ». Les deux actes reviennent à Claire. Le mouvement qu’elle observe est en revanche celui de la cliente.
 
 ### Faire entendre les reprises
 

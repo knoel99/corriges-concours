@@ -1,0 +1,99 @@
+{
+  "slug": "ens-de-lyon_second-concours_biologie-biochimie_2017",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Biologie-biochimie",
+    "annee": 2017
+  },
+  "questions": 26,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/10/2017_2CC_sujet_Bio.pdf",
+    "sujet_sha256": "24ac939e7805598ab1fb7bd07d7e15a760a35b7e3e3f290ca0a26a806b9760d1",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/10/17_2CC_rap_eBio.pdf",
+    "rapport_sha256": "9e4f6d883fa993441c553ed9a401aa905549772e3fd6504ae85a1cb00bbb9ae7"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26"
+    ],
+    "questions_partiellement_traitees": [
+      "16"
+    ],
+    "questions_non_traitees": [],
+    "precision": "Les 25 questions sur la communication nerveuse et hormonale, le circuit hypothalamique et les signaux périphériques sont traitées intégralement. La question 16 couvre les deux graphiques et l’interprétation physiologique. Son mécanisme expérimental d’ablation est hors couverture. Les valeurs lues sur les figures sont approximatives."
+  },
+  "figures": [
+    {
+      "question": "1",
+      "fichier": "figures/neurone-et-synapse.svg",
+      "legende": "Le segment initial intègre les entrées avant la propagation axonale. Les points orange représentent le neurotransmetteur dans la fente."
+    },
+    {
+      "question": "9",
+      "fichier": "figures/retroaction-de-la-leptine.svg",
+      "legende": "La rétroaction négative relie le signal adipeux au comportement. Les deux mutants permettent de distinguer production et réponse."
+    },
+    {
+      "question": "10",
+      "fichier": "figures/decalage-des-courbes-de-reponse.svg",
+      "legende": "Courbes qualitatives illustrant le décalage vers la droite à récepteur Mc1R présent. Le trait pointillé compare deux doses pour un même effet."
+    },
+    {
+      "question": "19",
+      "fichier": "figures/arnm-pomc-et-signal-leptine.svg",
+      "legende": "Lectures approximatives des moyennes de la figure 14. Chaque panneau a son propre témoin. Les incertitudes se lisent sur la planche originale."
+    },
+    {
+      "question": "21",
+      "fichier": "figures/deux-populations-de-l-arc.svg",
+      "legende": "Les deux populations du noyau arqué agissent en sens opposés sur la voie à Mc4R. Les signes qualifient la réponse du récepteur."
+    },
+    {
+      "question": "26",
+      "fichier": "figures/integration-des-signaux-peripheriques.svg",
+      "legende": "Le signal des réserves et le signal gastrique recrutent deux branches opposées. Le lien direct entre ghréline et neurones à AgRP reste à établir."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir du cahier de onze pages et de ses dix-neuf figures, confrontées au rapport du jury de 2017. Six illustrations originales. Lecture des données par génotype, portée de la coexpression et construction des modèles demandés aux questions 9, 21 et 26. La question 16 se limite aux données et à leur interprétation physiologique."
+    }
+  ]
+}

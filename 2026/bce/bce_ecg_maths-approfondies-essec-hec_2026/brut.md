@@ -10,6 +10,8 @@
 
 **Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Épreuve de 4 h, sans document ni calculatrice. Thème : théorème de Birkhoff-Von Neumann, fonctions S-convexes, théorèmes de Davis et de Fan.
 
 Dans tout le corrigé, pour $x=(x_1,\dots,x_n)\in\mathbb{R}^n$ et $\sigma\in\mathscr{P}_n$, on rappelle que $x_\sigma=(x_{\sigma(1)},\dots,x_{\sigma(n)})$, et l'on identifie $\mathbb{R}^n$ et $\mathcal{M}_{n,1}(\mathbb{R})$.
@@ -283,7 +285,7 @@ En sommant les coefficients de la première ligne dans $S=\beta_0I_3+\sum_{i=1}^
 
 $$1=\beta_0+\beta_1+\dots+\beta_5 .$$
 
-Ainsi toute matrice bistochastique $S\in\mathcal{M}_3(\mathbb{R})$ est une combinaison convexe des six matrices de permutation $I_3,P_1,\dots,P_5$ (avec $k=6$).
+Ainsi toute matrice bistochastique $S\in\mathcal{M}_3(\mathbb{R})$ est une combinaison convexe des six matrices de permutation $I_3,P_1,\dots,P_5$ (avec $k=6$). Par exemple, la matrice dont tous les coefficients valent $1/3$ admet deux décompositions. Dans chaque somme $I_3+P_4+P_5$ et $P_1+P_2+P_3$, les trois matrices placent exactement un $1$ dans chacune des neuf cases. Diviser chacune des deux sommes par trois donne les deux combinaisons convexes annoncées.
 
 Avec la question 8(b) pour $n=2$ (combinaison de $I_2$ et $J$, coefficients $\alpha$ et $1-\alpha$), **le théorème de Birkhoff-Von Neumann est démontré pour $n\in\{2,3\}$.**
 

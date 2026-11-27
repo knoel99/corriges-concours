@@ -1,0 +1,101 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_analyse-microeconomique_2023",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Analyse microéconomique",
+    "annee": 2023,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "Dualité, fiscalité et équilibre concurrentiel",
+  "gabarit": "questions",
+  "questions": 33,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2023_sujet_ecrit_ecoG_micro_lundi_2023.pdf",
+    "sujet_sha256": "06d40f5146c4cbb6a64998a7edd883742f88536aaf980efabd9df6c797aaff40"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/dualite.svg",
+      "question": "1.9.1",
+      "legende": "Au point A, le budget maximal disponible finance exactement la courbe cible. Exemple avec deux prix unitaires et un revenu de 5."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/variations-prix.svg",
+      "question": "1.9.2–1.9.3",
+      "legende": "A est le panier initial. Quand seul le bien 2 devient moins cher, H garde l’utilité de A aux nouveaux prix. Quand tous les prix baissent de moitié, la pente ne change pas."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/coins.svg",
+      "question": "2.2–2.4",
+      "legende": "Au prix unitaire pour les deux biens, B maximise pour R < 1 ; A et B maximisent pour R = 1 ; A maximise pour R > 1. Les courbes d’indifférence se courbent vers le bas."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/recettes.svg",
+      "question": "2.7.2–2.7.4.2",
+      "legende": "Avec R = 4, deux prix unitaires et θ = 1, le seuil de basculement est t = 1. Au seuil, les deux choix purs donnent respectivement 2 ou 0 de recettes."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "micro_2023_2025",
+      "session": "micro_2023_2025",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Résolution de chaque question, calculs, cas limites, figures originales et indications pas à pas."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "1.8",
+      "1.9.1",
+      "1.9.2",
+      "1.9.3",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7.1",
+      "2.7.2",
+      "2.7.3",
+      "2.7.4.1",
+      "2.7.4.2",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "3.7",
+      "3.8.1",
+      "3.8.2",
+      "3.8.3",
+      "3.9"
+    ]
+  }
+}

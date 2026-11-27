@@ -1,0 +1,319 @@
+{
+  "slug": "banque-pt_pt_informatique-et-modelisation_2023",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Informatique et modélisation",
+    "annee": 2023
+  },
+  "questions": 38,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2023/info_mod_2023_pt.pdf",
+    "sujet_sha256": "afbcdad3bfbe20a909066d3891e207df63b74b1f43f5bbb5341dca08655d8672",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2023/rapport_info_model_ecrit_2023.pdf",
+    "rapport_sha256": "05b490b668253ba14b562eeb0b05334e71a59757c5ff592e2f674bacb0f1ef28",
+    "notice": "https://www.banquept.fr/documents/livret/2023/Livret_PT_2023.pdf#page=13",
+    "notice_sha256": "ef653aad65d312dfc629926cfc7be2d59352bf0cd6362274307a292c916d0233"
+  },
+  "figures": [
+    {
+      "fichier": "figures/ressorts.svg",
+      "question": "Q2",
+      "legende": "Série et parallèle, sous la même traction totale"
+    },
+    {
+      "fichier": "figures/piege.svg",
+      "question": "Q17",
+      "legende": "Force transversale autour du maximum d’intensité"
+    },
+    {
+      "fichier": "figures/regression.svg",
+      "question": "Q26",
+      "legende": "Exemple synthétique de régression tension-fréquence"
+    },
+    {
+      "fichier": "figures/spectre.svg",
+      "question": "Q31",
+      "legende": "Lecture de la fréquence de coupure sur une lorentzienne normalisée"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Trente-huit réponses, modélisation, calibration, schémas et programmes de calcul. Contradictions des données commentées aux questions 19, 27, 31, 36 et 38."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Relecture des 38 numéros et des unités, recomptage des six liaisons, lecture indépendante du spectre et du critère d’arrêt imprimés, cohérence des poids et du tracé, ajout d’exemples chiffrés et exécution des tests des programmes."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21",
+      "Q22",
+      "Q23",
+      "Q24",
+      "Q25",
+      "Q26",
+      "Q27",
+      "Q28",
+      "Q29",
+      "Q30",
+      "Q31",
+      "Q32",
+      "Q33",
+      "Q34",
+      "Q35",
+      "Q36",
+      "Q37",
+      "Q38"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Q1",
+        "page_pdf": 3,
+        "intitule": "Forces élastiques sur A et B"
+      },
+      {
+        "question": "Q2",
+        "page_pdf": 3,
+        "intitule": "Deux ressorts en série"
+      },
+      {
+        "question": "Q3",
+        "page_pdf": 3,
+        "intitule": "Sept bases, six intervalles"
+      },
+      {
+        "question": "Q4",
+        "page_pdf": 4,
+        "intitule": "Deux branches en parallèle"
+      },
+      {
+        "question": "Q5",
+        "page_pdf": 4,
+        "intitule": "Domaine de la loi de Hooke"
+      },
+      {
+        "question": "Q6",
+        "page_pdf": 4,
+        "intitule": "Ordre de grandeur d’une liaison"
+      },
+      {
+        "question": "Q7",
+        "page_pdf": 5,
+        "intitule": "Corrélation entre deux bâtonnets"
+      },
+      {
+        "question": "Q8",
+        "page_pdf": 5,
+        "intitule": "Déplacement et distance quadratique"
+      },
+      {
+        "question": "Q9",
+        "page_pdf": 5,
+        "intitule": "Force de rappel entropique"
+      },
+      {
+        "question": "Q10",
+        "page_pdf": 7,
+        "intitule": "Forces électriques en champ uniforme"
+      },
+      {
+        "question": "Q11",
+        "page_pdf": 7,
+        "intitule": "Forces magnétiques sur le dipôle mobile"
+      },
+      {
+        "question": "Q12",
+        "page_pdf": 7,
+        "intitule": "Direction et polarisation"
+      },
+      {
+        "question": "Q13",
+        "page_pdf": 7,
+        "intitule": "Moyenne du terme de gradient"
+      },
+      {
+        "question": "Q14",
+        "page_pdf": 7,
+        "intitule": "Moyenne du terme dérivé"
+      },
+      {
+        "question": "Q15",
+        "page_pdf": 7,
+        "intitule": "Intensité lumineuse"
+      },
+      {
+        "question": "Q16",
+        "page_pdf": 7,
+        "intitule": "Raideur locale du piège"
+      },
+      {
+        "question": "Q17",
+        "page_pdf": 7,
+        "intitule": "Orientation de la force au foyer"
+      },
+      {
+        "question": "Q18",
+        "page_pdf": 9,
+        "intitule": "Étalonnage local du déplacement"
+      },
+      {
+        "question": "Q19",
+        "page_pdf": 9,
+        "intitule": "Résolution de la conversion"
+      },
+      {
+        "question": "Q20",
+        "page_pdf": 9,
+        "intitule": "Somme d’une liste"
+      },
+      {
+        "question": "Q21",
+        "page_pdf": 9,
+        "intitule": "Moyenne arithmétique"
+      },
+      {
+        "question": "Q22",
+        "page_pdf": 10,
+        "intitule": "Variance de population"
+      },
+      {
+        "question": "Q23",
+        "page_pdf": 12,
+        "intitule": "Équations normales de la droite"
+      },
+      {
+        "question": "Q24",
+        "page_pdf": 12,
+        "intitule": "Régression linéaire centrée"
+      },
+      {
+        "question": "Q25",
+        "page_pdf": 12,
+        "intitule": "Coût de la droite"
+      },
+      {
+        "question": "Q26",
+        "page_pdf": 12,
+        "intitule": "Points mesurés et droite ajustée"
+      },
+      {
+        "question": "Q27",
+        "page_pdf": 12,
+        "intitule": "Regrouper des répétitions"
+      },
+      {
+        "question": "Q28",
+        "page_pdf": 13,
+        "intitule": "Régression pondérée à plusieurs fonctions"
+      },
+      {
+        "question": "Q29",
+        "page_pdf": 13,
+        "intitule": "Coût de la régression pondérée"
+      },
+      {
+        "question": "Q30",
+        "page_pdf": 13,
+        "intitule": "Spectre du déplacement brownien"
+      },
+      {
+        "question": "Q31",
+        "page_pdf": 13,
+        "intitule": "Fréquence de coupure et normalisation"
+      },
+      {
+        "question": "Q32",
+        "page_pdf": 14,
+        "intitule": "Intégrale sur les fréquences mesurées"
+      },
+      {
+        "question": "Q33",
+        "page_pdf": 15,
+        "intitule": "Dérivées du modèle spectral"
+      },
+      {
+        "question": "Q34",
+        "page_pdf": 15,
+        "intitule": "Calcul du modèle et de ses dérivées"
+      },
+      {
+        "question": "Q35",
+        "page_pdf": 15,
+        "intitule": "Gradient de l’erreur totale"
+      },
+      {
+        "question": "Q36",
+        "page_pdf": 15,
+        "intitule": "Descente du gradient"
+      },
+      {
+        "question": "Q37",
+        "page_pdf": 15,
+        "intitule": "Coût des itérations"
+      },
+      {
+        "question": "Q38",
+        "page_pdf": 15,
+        "intitule": "Force correspondant à une tension mesurée"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "annexes": "Documentation NumPy et Matplotlib page 16. Les pages 17 à 19 sont blanches et la page 20 porte la mention d’imprimerie."
+  }
+}

@@ -1,0 +1,401 @@
+{
+  "slug": "bel_bl_histoire-contemporaine-oral-tronc-commun-10-juin_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Histoire contemporaine (oral tronc commun, 10 juin)",
+    "annee": 2024,
+    "modalite": "oral"
+  },
+  "intitule": "Histoire — Sujets du 10 juin 2024",
+  "questions": 0,
+  "tirages": 8,
+  "sujets": 16,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/bl_sujets_oraux_histoire_10062024.pdf",
+    "sha256_sujet": "2d504099aa090ffeca4ccf0f295176aba9370abeab3fe9855d70bb1f43e8b0ed",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_oral_histoire.pdf",
+    "sha256_rapport_jury": "888e6723a8d4525e1f385ba55d1d7881d0ce80c84ad63f0acca3a47c35813058",
+    "pages_sujet": 1,
+    "pages_rapport_jury": 3
+  },
+  "billets": [
+    {
+      "numero": 1,
+      "sujets": [
+        "Vivre à la campagne en France 1870-1940",
+        "Les collaborateurs en Europe pendant la Seconde Guerre mondiale"
+      ],
+      "intitule_en_gras": "Vivre à la campagne en France 1870-1940",
+      "page": 1
+    },
+    {
+      "numero": 2,
+      "sujets": [
+        "Jean Monnet",
+        "Les sociétés industrielles et la désindustrialisation"
+      ],
+      "intitule_en_gras": "Les sociétés industrielles et la désindustrialisation",
+      "page": 1
+    },
+    {
+      "numero": 3,
+      "sujets": [
+        "Radio et télévision en France des années 1930 aux années 1980",
+        "La croissance économique dans les pays occidentaux 1945-1990"
+      ],
+      "intitule_en_gras": "Radio et télévision en France des années 1930 aux années 1980",
+      "page": 1
+    },
+    {
+      "numero": 4,
+      "sujets": [
+        "Les crises politiques en France, de la 3e à la 5e République",
+        "L'Etat providence en Europe de l'Ouest au 20e s."
+      ],
+      "intitule_en_gras": "Les crises politiques en France, de la 3e à la 5e République",
+      "page": 1
+    },
+    {
+      "numero": 5,
+      "sujets": [
+        "Appartenir à une minorité religieuse en France 1870-1990",
+        "La fin des empires coloniaux en Afrique"
+      ],
+      "intitule_en_gras": "La fin des empires coloniaux en Afrique",
+      "page": 1
+    },
+    {
+      "numero": 6,
+      "sujets": [
+        "Contester la modernisation en France 1940-1990",
+        "les diasporas dans le monde 1919-1990"
+      ],
+      "intitule_en_gras": "Contester la modernisation en France 1940-1990",
+      "page": 1
+    },
+    {
+      "numero": 7,
+      "sujets": [
+        "La mort en France 1870-1990",
+        "Libéraux et conservateurs en Europe occidentale 1919-1990"
+      ],
+      "intitule_en_gras": "La mort en France 1870-1990",
+      "page": 1
+    },
+    {
+      "numero": 8,
+      "sujets": [
+        "Habiter en ville en France, de 1870 aux années 1980",
+        "Le dollar dans le monde au 20e siècle"
+      ],
+      "intitule_en_gras": "Le dollar dans le monde au 20e siècle",
+      "page": 1
+    }
+  ],
+  "figures": [
+    {
+      "fichier": "figures/figure-1.svg",
+      "question": "Jean Monnet",
+      "legende": "De la coordination à l’autorité commune"
+    },
+    {
+      "fichier": "figures/figure-2.svg",
+      "question": "L'Etat providence en Europe de l'Ouest au 20e s.",
+      "legende": "Comment est assurée la protection sociale ?"
+    }
+  ],
+  "reprises_du_corpus": [
+    {
+      "sujet": "Vivre à la campagne en France 1870-1940",
+      "fichier": "2026/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-autres-tirages-du-jury_2026/brut.md",
+      "titre": "Vivre à la campagne en France (1870-1940)",
+      "paragraphes": [
+        1,
+        2
+      ],
+      "sha256_blocs": "e89d969f9b16937d773569dd31aa055e04267b25bad099cac5dfc1828bcdca03",
+      "attributions": [
+        {
+          "phase": "lecture_rapport_jury",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "redaction",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "autocontrole",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "relecture_corrige",
+          "session": "illustrations_double_edition",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-25"
+        }
+      ]
+    },
+    {
+      "sujet": "Les collaborateurs en Europe pendant la Seconde Guerre mondiale",
+      "fichier": "2026/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-22-juin_2026/brut.md",
+      "titre": "Les collaborateurs en France (1940-1945)",
+      "paragraphes": [
+        2
+      ],
+      "sha256_blocs": "efbd6b10f46696ade03f49449a1206016991df52f30c2442f56151ad10a3083e",
+      "attributions": [
+        {
+          "phase": "redaction",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "autocontrole",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "relecture_corrige",
+          "session": "illustrations_double_edition",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-25"
+        }
+      ]
+    },
+    {
+      "sujet": "Radio et télévision en France des années 1930 aux années 1980",
+      "fichier": "2026/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-22-juin_2026/brut.md",
+      "titre": "La télévision en France au second XXe siècle",
+      "paragraphes": [
+        1,
+        2,
+        3
+      ],
+      "sha256_blocs": "7041b29ca17c633965223c3bb20752a852ab283385cc8912abcbb272cade2f26",
+      "attributions": [
+        {
+          "phase": "redaction",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "autocontrole",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "relecture_corrige",
+          "session": "illustrations_double_edition",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-25"
+        }
+      ]
+    },
+    {
+      "sujet": "Les crises politiques en France, de la 3e à la 5e République",
+      "fichier": "2025/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-28-juin_2025/brut.md",
+      "titre": "Les crises politiques de la IIIe République",
+      "paragraphes": [
+        1,
+        2
+      ],
+      "sha256_blocs": "8235b3029c8e3d870ea8da4c32f5183de35176b74021443f704c6e669116088d",
+      "attributions": [
+        {
+          "phase": "redaction",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "agent": "fui_physique_un",
+          "date": "2026-11-26"
+        }
+      ]
+    },
+    {
+      "sujet": "L'Etat providence en Europe de l'Ouest au 20e s.",
+      "fichier": "2025/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-19-juin_2025/brut.md",
+      "titre": "L’État providence en Europe de l’Ouest au 20e s.",
+      "paragraphes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sha256_blocs": "5cb4e573d1a0c498d99877f3e346a13303cb4f0f21a738481527386a9a79e785",
+      "attributions": [
+        {
+          "phase": "redaction",
+          "session": "rennes_oraux_economie",
+          "agent": "rennes_oraux_economie",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-26"
+        }
+      ]
+    },
+    {
+      "sujet": "Appartenir à une minorité religieuse en France 1870-1990",
+      "fichier": "2025/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-19-juin_2025/brut.md",
+      "titre": "Être juif en France (1870-années 1980)",
+      "paragraphes": [
+        3
+      ],
+      "sha256_blocs": "b61bf48630113c7d5234255fde01bbbbc1cd6a0d257be48d8c2d81184b9ed33e",
+      "attributions": [
+        {
+          "phase": "redaction",
+          "session": "rennes_oraux_economie",
+          "agent": "rennes_oraux_economie",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-26"
+        }
+      ]
+    },
+    {
+      "sujet": "La fin des empires coloniaux en Afrique",
+      "fichier": "2025/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-17-juin_2025/brut.md",
+      "titre": "Les décolonisations africaines (1954-1990)",
+      "paragraphes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sha256_blocs": "877b3412dc62262aa895b015cdd561255c1bf6114634499ae561d318b732504a",
+      "attributions": [
+        {
+          "phase": "redaction",
+          "session": "rennes_oraux_economie",
+          "agent": "rennes_oraux_economie",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-26"
+        }
+      ]
+    },
+    {
+      "sujet": "Habiter en ville en France, de 1870 aux années 1980",
+      "fichier": "2025/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-17-juin_2025/brut.md",
+      "titre": "Habiter en banlieue des années 1920 aux années 1980",
+      "paragraphes": [
+        3,
+        4
+      ],
+      "sha256_blocs": "953c449f145cd75e03d0314b95de5be2d8754166891c9177831913b29e886a73",
+      "attributions": [
+        {
+          "phase": "redaction",
+          "session": "rennes_oraux_economie",
+          "agent": "rennes_oraux_economie",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-26"
+        }
+      ]
+    },
+    {
+      "sujet": "Le dollar dans le monde au 20e siècle",
+      "fichier": "2026/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-autres-tirages-du-jury_2026/brut.md",
+      "titre": "Le dollar dans les relations internationales",
+      "paragraphes": [
+        1,
+        2
+      ],
+      "sha256_blocs": "7a27a327d82b9d1d51255bbb0c5ea2670fe4a42b5f80cb9f704da228cf0c59f2",
+      "attributions": [
+        {
+          "phase": "lecture_rapport_jury",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "redaction",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "autocontrole",
+          "session": "astra_lettres",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-24"
+        },
+        {
+          "phase": "relecture_corrige",
+          "session": "illustrations_double_edition",
+          "modele": "gpt-6.2-astra",
+          "effort": "ultra",
+          "date": "2026-11-25"
+        }
+      ]
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "x_maths_b_recentes",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Comparaison du fac-similé du 10 juin et du rapport officiel ; vérification des 8 paires et du gras, rédaction et adaptation de 16 exposés, une relance avec réponse par sujet et deux figures originales. Les paragraphes adaptés du corpus antérieur sont rattachés à leurs auteurs dans les emprunts documentés."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Vivre à la campagne en France 1870-1940",
+      "Les collaborateurs en Europe pendant la Seconde Guerre mondiale",
+      "Jean Monnet",
+      "Les sociétés industrielles et la désindustrialisation",
+      "Radio et télévision en France des années 1930 aux années 1980",
+      "La croissance économique dans les pays occidentaux 1945-1990",
+      "Les crises politiques en France, de la 3e à la 5e République",
+      "L'Etat providence en Europe de l'Ouest au 20e s.",
+      "Appartenir à une minorité religieuse en France 1870-1990",
+      "La fin des empires coloniaux en Afrique",
+      "Contester la modernisation en France 1940-1990",
+      "les diasporas dans le monde 1919-1990",
+      "La mort en France 1870-1990",
+      "Libéraux et conservateurs en Europe occidentale 1919-1990",
+      "Habiter en ville en France, de 1870 aux années 1980",
+      "Le dollar dans le monde au 20e siècle"
+    ],
+    "precision": "Comparaison du fac-similé du 10 juin et du rapport officiel ; vérification des 8 paires et du gras, rédaction et adaptation de 16 exposés, une relance avec réponse par sujet et deux figures originales. Les paragraphes adaptés du corpus antérieur sont rattachés à leurs auteurs dans les emprunts documentés.",
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-26",
+      "perimetre": "Comparaison du fac-similé du 10 juin et du rapport officiel ; vérification des 8 paires et du gras, rédaction et adaptation de 16 exposés, une relance avec réponse par sujet et deux figures originales. Les paragraphes adaptés du corpus antérieur sont rattachés à leurs auteurs dans les emprunts documentés.",
+      "sha256_sujet_controle": "2d504099aa090ffeca4ccf0f295176aba9370abeab3fe9855d70bb1f43e8b0ed",
+      "sha256_rapport_jury_controle": "888e6723a8d4525e1f385ba55d1d7881d0ce80c84ad63f0acca3a47c35813058"
+    }
+  }
+}

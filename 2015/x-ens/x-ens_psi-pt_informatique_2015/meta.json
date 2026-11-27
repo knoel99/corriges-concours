@@ -42,5 +42,55 @@
       "modifications": true,
       "perimetre": "Rédaction des 14 questions du sujet XCR, de la représentation des listes à la recherche paramétrée de chemins par coloration. Lecture du PDF natif et des deux plans imprimés, reconstruction, vérification de 37 888 cas sur les 1 024 graphes étiquetés à cinq sommets. Trois illustrations originales."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
+    "pages_des_questions": {
+      "1": 2,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 4,
+      "9": 5,
+      "10": 5,
+      "11": 5,
+      "12": 5,
+      "13": 6,
+      "14": 6
+    },
+    "precision": "Les 14 rubriques de chaque édition concordent avec les questions du fac-similé. Les deux séries de réponses ont été retrouvées au commit du journal indiqué.",
+    "origine_attestation": {
+      "commit_du_journal": "19a301037958b6af7aaf268ea833ccd8592e9ffd",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction des 14 questions du sujet XCR, de la représentation des listes à la recherche paramétrée de chemins par coloration. Lecture du PDF natif et des deux plans imprimés, reconstruction, vérification de 37 888 cas sur les 1 024 graphes étiquetés à cinq sommets. Trois illustrations originales.",
+      "sha256_sujet_controle": "d9dd8e891b94d79838ebab81d51e43cf9edba511e8dfb423bf86a9bac629c500"
+    },
+    "controle_fonctions": {
+      "fonctions": [
+        "estDansListe",
+        "ajouteDansListe"
+      ],
+      "cas_par_edition": 127
+    }
+  }
 }

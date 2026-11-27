@@ -55,6 +55,84 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Confrontation au dossier original et au rapport du jury. Contrôle des valeurs reportées, des champs, des dénominateurs et des limites de l’interprétation."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture croisée du dossier et du rapport de l’oral commun de sociologie 2026. Document 3, double lecture des surreprésentations relatives et des écarts absolus selon le diplôme parental. Figure interprétée dans la copie et calcul ou question de méthode développé dans le guidé."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Élias et Lignier éclairent la formation des aptitudes et l’identification du diagnostic. Les tableaux sur les diplômes, la profession paternelle, les investissements parentaux et les activités des enfants puis les scores de maternelle ont été confrontés aux deux copies.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Les enfants surdoués"
+    ],
+    "annexes_verifiees": [
+      {
+        "document": 1,
+        "page": 2,
+        "intitule": "Sociologie d’un génie"
+      },
+      {
+        "document": 2,
+        "page": 3,
+        "intitule": "Enquêter sur la précocité intellectuelle"
+      },
+      {
+        "document": 3,
+        "page": 4,
+        "intitule": "Niveau de diplôme des parents des enfants surdoués relativement aux autres enfants"
+      },
+      {
+        "document": 4,
+        "page": 5,
+        "intitule": "Profession du père des enfants surdoués relativement aux autres enfants"
+      },
+      {
+        "document": 5,
+        "page": 6,
+        "intitule": "L’investissement des parents d’enfants surdoués"
+      },
+      {
+        "document": 6,
+        "page": 7,
+        "intitule": "Activités extrascolaires des enfants surdoués relativement aux autres enfants"
+      },
+      {
+        "document": 7,
+        "page": 8,
+        "intitule": "Score moyen des élèves en petite section de maternelle selon les domaines d’apprentissage et le milieu social de l’élève en 2022"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "verification": "Élias et Lignier éclairent la formation des aptitudes et l’identification du diagnostic. Les tableaux sur les diplômes, la profession paternelle, les investissements parentaux et les activités des enfants puis les scores de maternelle ont été confrontés aux deux copies.",
+    "limites": "Un exposé sur les sept documents. Les relances pédagogiques proposées dans le guide ne constituent pas un verbatim du jury."
+  }
 }

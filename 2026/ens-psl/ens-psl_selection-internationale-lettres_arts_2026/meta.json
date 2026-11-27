@@ -36,7 +36,7 @@
       "legende": "Quatre opérations proposées au spectateur"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "contributions": [
     {
       "phase": "lecture_rapport_jury",
@@ -73,6 +73,19 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Confrontation des quatre cas aux notices de collection, vérification des supports du livre de 1913 et de l’opération sur Mallarmé en 1969."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification du sujet SIL et du rapport d’arts. Mise en regard du dépliant de 1913 et de l’effacement des mots chez Broodthaers, à partir des gestes de lecture."
     }
   ]
 }

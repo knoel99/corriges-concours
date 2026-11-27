@@ -1,0 +1,95 @@
+{
+  "slug": "ens_mp-pc_informatique_2002",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Informatique",
+    "annee": 2002,
+    "duree_heures": 4
+  },
+  "questions": 29,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/ens_info_mp-pc_2002.pdf",
+    "index_banque": "https://www.wikiprepa.fr/concours/ecrit/ens_info_mp-pc_2002",
+    "identification": "Fac-similé du cahier ULC 214 J, quatre heures. Groupes M, MP et MPI en filière MP pour Paris, Lyon et Cachan. Groupe I en MP et PC pour Paris et Lyon. Aucun rapport associé dans l’archive de cette composition.",
+    "sujet_sha256": "9316f04af766d068f48c7133beb9eb297a8117f31e866d42e1c77da7321ce8c6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/arbre-de-base.svg",
+      "question": "II.3",
+      "legende": "Figure 1 — L’arbre de b + 1 porte à gauche l’exposant 1 et, à droite, le terme unité restant."
+    },
+    {
+      "fichier": "figures/suite-goodstein.svg",
+      "question": "II.6",
+      "legende": "Figure 2 — Les trois premières valeurs viennent de la même écriture héréditaire, avec changement de base puis soustraction d’une unité."
+    },
+    {
+      "fichier": "figures/ordre-successeur.svg",
+      "question": "IV.4",
+      "legende": "Figure 3 — Le second ordre construit le successeur en greffant l’arbre précédent à droite d’une feuille O."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Cinq parties du fac-similé étudiant les décompositions héréditaires, l’arithmétique sur arbres, deux ordres bien fondés, les successeurs et bornes, puis le lemme de Higman. Garde contrôlée sur le PDF. Précisions sur les cas vides et sur la relation stricte des mots."
+    },
+    {
+      "phase": "relecture",
+      "fournisseur": "codex",
+      "agent": "reprise_physique_ulm",
+      "session": "reprise_physique_ulm",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Compléments de résultats et d’algorithmes dans la version guidée aux questions I.2, II.1 à II.5 et III.2. Contrôle et attestation de la couverture."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "II.8",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7",
+      "III.8",
+      "III.9",
+      "IV.1",
+      "IV.2",
+      "IV.3",
+      "IV.4",
+      "IV.5",
+      "IV.6",
+      "IV.7",
+      "IV.8",
+      "V.1",
+      "V.2"
+    ],
+    "verification": "Recoupement du fac-similé conservé à l’empreinte des sources avec les énoncés, subdivisions, figures et résultats des deux éditions. Compléments de résultats et d’algorithmes dans la version guidée aux questions I.2, II.1 à II.5 et III.2."
+  }
+}

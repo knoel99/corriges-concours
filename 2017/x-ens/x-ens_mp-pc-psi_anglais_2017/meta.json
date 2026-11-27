@@ -1,0 +1,73 @@
+{
+  "slug": "x-ens_mp-pc-psi_anglais_2017",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Anglais",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "Vie privée numérique, surveillance et publication des courriels de John Podesta",
+  "questions": 2,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  },
+  "mots_hors_titre": {
+    "A": 611,
+    "B": 515
+  },
+  "sources": {
+    "code_garde": "XEULCR",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2017/",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/07/2017_MPPC_sujet_eAnglais.pdf",
+    "sujet_sha256": "d2cf6288bdd074790e2a73de6b8a8544232bea2c73c04fdb89e61bd2b616752c",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/11/17_MP-PC_rap_eAng.pdf",
+    "rapport_jury_sha256": "79d9bcb5b7cfbad031f9366f657a1bb82331fb28eca11d08f1702fa015701660",
+    "sujet_autre_publication": "https://www.ens.psl.eu/sites/default/files/2017_MPPCPSI_sujet_anglais.pdf",
+    "sujet_autre_publication_sha256": "dabd9f9d4571b3ef145b62ef7b32e112586c2f8647120b98f076406166ee0c17",
+    "precision": "Le sujet et son rapport situent la synthèse dans les débats américain et britannique de 2010 à 2016. L’éditorial de la partie B date de la campagne présidentielle américaine de 2016."
+  },
+  "redaction": "Deux compositions intégrales en anglais, lecture croisée des quatre pièces du dossier de synthèse et réponse argumentée au document d’opinion. Vie privée numérique, surveillance et publication des courriels de John Podesta.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/publics.svg",
+      "legende": "L’audience voulue par l’usager, celle que crée la plateforme et celle d’une fuite diffèrent."
+    },
+    {
+      "numero": 2,
+      "question": "A",
+      "fichier": "figures/institutions.svg",
+      "legende": "Situations évoquées par les articles de 2015 et 2016."
+    },
+    {
+      "numero": 3,
+      "question": "B",
+      "fichier": "figures/publication.svg",
+      "legende": "Critères proposés dans l’éditorial de réponse."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "anglais_mp_pc_psi_2015_2021",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Deux compositions intégrales en anglais, lecture croisée des quatre pièces du dossier de synthèse et réponse argumentée au document d’opinion. Vie privée numérique, surveillance et publication des courriels de John Podesta.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}

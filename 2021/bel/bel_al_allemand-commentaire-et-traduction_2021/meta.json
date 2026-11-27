@@ -1,0 +1,165 @@
+{
+  "slug": "bel_al_allemand-commentaire-et-traduction_2021",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Allemand (commentaire et traduction)",
+    "annee": 2021,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "duree_heures": 6,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2021-10/Commentaire-et-traduction-en-LVE.pdf#page=2",
+    "sujet_sha256": "3caa2cab1297b4899fabe9fd1487a5f16e5f344f3d9b28e88656b03818586053",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2021-11/ALLEMAND_2021.pdf#page=1",
+    "rapport_jury_sha256": "757b887161fdfb1acb7d565125371cd8d1f8713c819a2c4ff32810edbe8dfacd",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2021",
+    "ouvrage": "Carl Zuckmayer, *Als wär’s ein Stück von mir. Horen der Freundschaft*, 1966.",
+    "pages_rapport_verifiees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "section_rapport": "Écrit, toutes séries, commentaire et traduction."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2021-10/Commentaire-et-traduction-en-LVE.pdf#page=2",
+      "sha256": "3caa2cab1297b4899fabe9fd1487a5f16e5f344f3d9b28e88656b03818586053",
+      "pages": 19,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "21387dc86b3fb376e2bfa98e2665ba4e4de8d3374af4f11194dd23614da9d289"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "73b87bf4493e45f2f6a9a0bf0063524c23bbca1f4ec096e7a8676cedd1cca42a"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "f7a900bb95345d7221725b51588bc6ccf6c852ea217d0ff91521ab5ca7c87ef7"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2021-11/ALLEMAND_2021.pdf#page=1",
+      "sha256": "757b887161fdfb1acb7d565125371cd8d1f8713c819a2c4ff32810edbe8dfacd",
+      "pages": 26,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "f009554bd3bec7cd5978489112d9606512f9a75b8c5aaa02807e7f4734c2e92f"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "64731fe480ba1f19576803d3e6f1c6c79d2fa9486434121f532aee46e9c7feda"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "c1cfb62faf8c5d8ad93f3e4b2e1fb3894f35cdf6fba7f6991171547ac00e6c1f"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "04b4ac58e88a0724fd70328554cbe3b3074f355d55cda687c50a13f255fbc7f6"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "4994aec9b4b4eb896cc394b831850b0ee05af0e9f302c54ce94d68519a494c94"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "17106a05c43310dae4c3c05357dc07aef68f29e200963b06d10f104897a8ce87"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "8a337102937cd3b16294a010bfb3caa345a8957da9228ed8efa19b41fa676016"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "Commentaire en allemand",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "L’échec public se mesure d’abord au bruit de la salle, puis au coût de l’indépendance. Le repas familial donne le dernier mot au père."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire allemand de l’extrait entier, version française de toutes les phrases prescrites, indications et schéma."
+    },
+    {
+      "phase": "revision",
+      "agent": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle du point de vue rétrospectif, du sens théâtral de Durchfall, des liens financiers entre père et fils, du conditionnel de sacrifice et de la borne médiane de la ligne 47."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire en allemand",
+      "Version française"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "Commentaire en allemand",
+        "pages_pdf": [
+          2,
+          3
+        ],
+        "lignes": [
+          1,
+          61
+        ],
+        "langue": "allemand"
+      },
+      {
+        "question": "Version française",
+        "pages_pdf": [
+          3
+        ],
+        "lignes": [
+          31,
+          47
+        ],
+        "premiers_mots": "Gerade der Mißerfolg",
+        "derniers_mots": "nicht weiter zu unterstützen.",
+        "langue": "français"
+      }
+    ]
+  }
+}

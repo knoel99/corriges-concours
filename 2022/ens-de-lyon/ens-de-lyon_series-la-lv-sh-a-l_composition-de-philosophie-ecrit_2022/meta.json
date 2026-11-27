@@ -1,0 +1,71 @@
+{
+  "slug": "ens-de-lyon_series-la-lv-sh-a-l_composition-de-philosophie-ecrit_2022",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries LA/LV/SH (A/L)",
+    "matiere": "Composition de philosophie (écrit)",
+    "annee": 2022,
+    "modalite": "écrit"
+  },
+  "intitule": "Quand y a-t-il art ?",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2022-11/Session-2022_BEL_Composition%20de%20philosophie.pdf",
+    "sha256_sujet": "d30966b9a1594f06a86b1e19c10198b0f828cd361175073e0a72bf2acbff302b",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2022-11/Philosophie%202022.pdf",
+    "sha256_rapport_jury": "b762666335ff95bfe67afca19e2cd428cc54909185bd891aac6f1756bf874337",
+    "reperage": "Cahier BEL de tronc commun (LCU 172, J. 22 1069), une page, Paris-Saclay, Lyon et Paris. Rapport de Lyon, section de composition écrite p. 2 à 9.",
+    "precision_controle": "Feuillet de composition commune de la BEL, LCU 172, J. 22 1069, six heures, une question sans annexe. Section correspondante du rapport, pages 2 à 9.",
+    "reference_complementaire": "https://mbarouen.fr/en/oeuvres/rouen-cathedral-facade-and-tour-d-albane-grey-weather"
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Dissertation",
+      "legende": "Trois épreuves du mot « quand »"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction à partir de la garde BEL de tronc commun et du rapport, p. 2 à 9. Distinction de la spécialité, discussion de Goodman, Duchamp et de la temporalité musicale, deux éditions et schéma. Concordance du cahier commun BEL LCU 172, J. 22 1069, porté pour les ENS Paris-Saclay, de Lyon et de Paris ; maintien de la fiche historique ENS de Lyon, séries LA/LV/SH (A/L)."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "oraux_lyon_et_anciens_corriges",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Vérification du sujet commun sur sa garde, et du rapport pages 2 à 9. Développement de l’exposition des Cathédrales de Monet en 1895 pour articuler la date d’un événement public et la transformation de l’attention esthétique. Exercice guidé et repérage des deux sens temporels dans chaque édition."
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Quand y a-t-il art ?"
+    ],
+    "detail": [
+      "La première partie teste les conditions de la technè et les limites de la maîtrise artisanale.",
+      "La seconde distingue usage ordinaire, exemplification et proposition artistique, avec la pierre de Goodman et Fontaine de Duchamp.",
+      "La troisième traite l’événement et l’historicité de l’art, du motif musical repris à la présentation publique des Cathédrales en 1895. La conclusion répond aux différents sens de « quand »."
+    ]
+  }
+}

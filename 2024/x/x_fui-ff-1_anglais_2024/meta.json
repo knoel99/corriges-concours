@@ -34,7 +34,7 @@
     "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
     "sujet_sha256": "ae0f862202c4d6a421ba452caca87020c8631a8309028bc6c58e55480b5811fb"
   },
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "revision": {
     "date": "2026-11-24",
     "modele": "Codex (GPT-6)",
@@ -98,6 +98,34 @@
       "fournisseur": "codex",
       "session": "astra_langues",
       "perimetre": "Distinction des observations parentales et de la généralisation sur les examens, précision sur le comportement collectif des systèmes et le caractère interdisciplinaire du risque alimentaire, mise en relation de l’ouverture et de la responsabilité des adultes en clôture."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "session": "fin_langues_x_interens",
+      "agent": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Fascicule officiel, consignes de compréhension et d’essai en fin de sujet (PDF de 4 pages). Les quatre réponses comptent respectivement 59, 77, 65, 67 mots hors références. L’essai compte 371 mots pour une cible de 400 à 10 % près, avec un séparateur tous les 50 mots. Les cinq réponses sont présentes dans les deux éditions. Les réponses confrontent socle national et contraintes, métacognition et compétences transversales, évaluation et systèmes complexes. L’essai examine comment l’école peut apprendre aux élèves à reconnaître les influences sur leur pensée.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "Essai"
+    ],
+    "precision": "Fascicule officiel, consignes de compréhension et d’essai en fin de sujet (PDF de 4 pages). Les quatre réponses comptent respectivement 59, 77, 65, 67 mots hors références. L’essai compte 371 mots pour une cible de 400 à 10 % près, avec un séparateur tous les 50 mots. Les cinq réponses sont présentes dans les deux éditions. Les réponses confrontent socle national et contraintes, métacognition et compétences transversales, évaluation et systèmes complexes. L’essai examine comment l’école peut apprendre aux élèves à reconnaître les influences sur leur pensée."
+  }
 }

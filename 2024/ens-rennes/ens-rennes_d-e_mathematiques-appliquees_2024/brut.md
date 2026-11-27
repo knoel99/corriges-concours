@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Les données du festival et du bar à jeux sont fictives. Les trois exercices portent successivement sur l’ajustement statistique, les puissances du produit $x\ln x$ et les probabilités d’essais répétés.
 
 ## Exercice 1. Festivaliers et tarifs du bar à jeux
@@ -33,6 +35,8 @@ Avec les centres $c_i=5,15,\ldots,85$, l’âge moyen estimé vaut $\sum_i c_ix_
 ### Question 1.1.f
 
 Le seuil est $N/4=87\,000$. Le cumul vaut $1\,900$ avant 10 ans et $102\,630$ avant 20 ans. Sous l’hypothèse uniforme dans la deuxième classe, le premier quartile est $10+10(87\,000-1\,900)/100\,730\simeq18{,}448$ ans.
+
+Dans la classe de 10 à 20 ans il faut encore $87000-1900=85100$ personnes. Elles représentent environ $84{,}48\,\%$ des 100 730 membres de cette classe. Parcourir la même proportion de ses dix années retrouve les 18,448 ans estimés.
 
 ### Question 1.2.a
 
@@ -80,6 +84,8 @@ Avec $a'=C_{xz}/V_x\simeq1{,}915497$ et $b'=\bar z-a'\bar x\simeq3{,}222524$, la
 
 Puisque $z=e^y$, le modèle est $y=\ln(a'x+b')$. Dépasser $3{,}2$ euros équivaut à $x>(e^{3,2}-b')/a'\simeq11{,}125$. Le premier rang semestriel admissible est $11{,}5$, soit **juillet 2027**. C’est une extrapolation à partir des données finissant en 2023.
 
+Aux rangs semestriels voisins, le modèle donne $\ln(11a'+b')\simeq3{,}190$ euros en janvier 2027 et $\ln(11{,}5a'+b')\simeq3{,}229$ euros en juillet 2027. La croissance du logarithme et $a'>0$ assurent qu’il s’agit du premier franchissement.
+
 ## Exercice 2. Puissances de x ln x, intégrales et densité
 
 ### Question 2.I.1
@@ -121,6 +127,13 @@ La dérivation en chaîne donne $f_n'(x)=n(x\ln x)^{n-1}(1+\ln x)=n x^{n-1}(\ln 
 ### Question 2.II.5
 
 Posons $u=x\ln x$. Il décroît de $0$ à $-1/e$ sur $]0,1/e]$, puis croît jusqu’à zéro en $1$ et vers $+\infty$. Si $n$ est impair, $f_n$ décroît jusqu’à $-e^{-n}$ puis croît jusqu’à l’infini, en passant par zéro en $1$. Si $n$ est pair, $f_n$ croît de $0$ à $e^{-n}$, décroît ensuite jusqu’à zéro en $1$ et croît enfin vers $+\infty$. Toutes les variations indiquées sont strictes sur leurs intervalles.
+
+| Valeur ou limite | $0^+$ | $1/e$ | $1$ | $+\infty$ |
+|---|---:|---:|---:|---:|
+| $n$ impair | $0$ | $-e^{-n}$ | $0$ | $+\infty$ |
+| Variation vers la colonne suivante | Décroît | Croît | Croît | |
+| $n$ pair | $0$ | $e^{-n}$ | $0$ | $+\infty$ |
+| Variation vers la colonne suivante | Croît | Décroît | Croît | |
 
 ### Question 2.II.6
 
@@ -259,6 +272,8 @@ La probabilité d’échouer aux $k$ premiers essais est $\frac13\sum_{i=1}^3(1-
 ### Question 3.III.6
 
 L’espérance conditionnelle dans la salle $i$ vaut $1/p_i=2^i$. En sommant les trois séries positives pondérées de la loi, on obtient l’espérance finie $\mathbb E(X)=(2+4+8)/3=14/3$ tentatives.
+
+Le choix de la salle fixe la probabilité de réussite pour toute la partie. La moyenne des trois probabilités de réussite au premier lancer vaut $7/24$, mais son inverse $24/7$ ne donne pas le temps moyen. Ce dernier se calcule en pondérant les trois temps moyens conditionnels.
 
 ### Question 3.IV.1
 

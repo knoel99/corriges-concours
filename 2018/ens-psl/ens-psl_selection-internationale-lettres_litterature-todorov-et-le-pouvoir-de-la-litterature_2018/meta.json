@@ -1,0 +1,132 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_litterature-todorov-et-le-pouvoir-de-la-litterature_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Littérature — Todorov et le pouvoir de la littérature",
+    "annee": 2018,
+    "modalite": "écrit"
+  },
+  "intitule": "Littérature — Todorov et le pouvoir de la littérature",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/rapport_sil_litterature_ecrit_2018.pdf",
+    "sujet_sha256": "c903e7cc5bef339649eee9e638012779da3a9a0d281adcc2da812ccc39c339fe",
+    "references": [
+      "https://www.gutenberg.org/files/2814/2814-h/2814-h.htm",
+      "https://assets.cambridge.org/97805215/31825/copyright/9780521531825_copyright_info.pdf"
+    ],
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_sil_litterature_ecrit_2018.pdf",
+    "rapport_sha256": "c903e7cc5bef339649eee9e638012779da3a9a0d281adcc2da812ccc39c339fe",
+    "type_sujet": "Citation et consigne attestées par le rapport du jury.",
+    "archive_annuelle": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2018-lettres",
+    "feuillet_signale": "https://www.ens.psl.eu/sites/default/files/SIL%202018%20Sujet%20ecrit%20litt.pdf",
+    "etat_feuillet_signale": "Lien de la rubrique écrite consulté le 26 novembre 2026 : HTTP 404. Le rapport reproduit le passage entier et la consigne."
+  },
+  "figures": [
+    {
+      "fichier": "figures/ondes.svg",
+      "question": "Dissertation",
+      "legende": "Comment une dernière scène peut modifier une question"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Lecture du rapport reproduisant le sujet, de la distinction entre proposition et leçon, de la place des émotions et des exemples de lecture demandés.",
+      "modifications": false
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Rédaction de la dissertation littéraire, de son accompagnement et de sa figure dans les deux éditions.",
+      "modifications": true
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Confrontation au support du jury, aux étapes de l’argument de Todorov et à la scène finale chez Joyce. Examen des limites du jugement moral dans la fable et la parabole. Contrôle des deux éditions.",
+      "modifications": true
+    },
+    {
+      "phase": "relecture",
+      "session": "x_maths_b_anciennes",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "perimetre": "Lecture des deux pages du rapport ; contrôle de l’opposition entre proposition et imposition, de la morale explicite chez La Fontaine, de la scène finale chez Joyce et du renvoi à Martha Nussbaum.",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    },
+    {
+      "phase": "autocontrole",
+      "session": "x_maths_b_anciennes",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "perimetre": "Contrôle de la consigne unique et de ses attendus, des exemples, de la figure, des signatures et des signets des deux PDF.",
+      "modifications": false,
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commenter la réflexion de Tzvetan Todorov sur la figuration, la liberté interprétative et les effets différés de la littérature, à partir de lectures littéraires, critiques et personnelles."
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Le rapport officiel, p. 1–2, reproduit la citation entière et précise la consigne du commentaire. Le lien vers le feuillet séparé annoncé par la liste annuelle renvoie une réponse HTTP 404."
+  },
+  "controle_enonce": {
+    "question": "Commenter la réflexion de Tzvetan Todorov sur la figuration, la liberté interprétative et les effets différés de la littérature, à partir de lectures littéraires, critiques et personnelles.",
+    "attendus": [
+      "Figurer un cas et inciter le lecteur à formuler une thèse",
+      "L’usage évocateur des mots et l’interprétation symbolique",
+      "Le retentissement qui se poursuit après le premier contact",
+      "Exemples littéraires et critiques et expérience personnelle de lecture"
+    ],
+    "repere": "Le rapport officiel, p. 1–2, reproduit la citation entière et précise la consigne du commentaire. Le lien vers le feuillet séparé annoncé par la liste annuelle renvoie une réponse HTTP 404.",
+    "figure": "Comment une dernière scène peut modifier une question"
+  }
+}

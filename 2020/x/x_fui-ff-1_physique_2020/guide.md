@@ -2,7 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
 Session d’automne du concours 2020, épreuve passée le 14 septembre 2019.
 
@@ -79,7 +81,7 @@ $$u=U_0\left(\frac{1+x}{2+x}-\frac12\right)=\frac{U_0x}{2(2+x)}\simeq\frac{U_0k\
 
 Avec $\Delta P=10\,\mathrm{hPa}=10^3\,\mathrm{Pa}$, le produit $x=10^{-3}$ donne $\Delta R_4=0,50\,\Omega$ et **$u=+3,0\,\mathrm{mV}$** pour la flèche imprimée.
 
-À résistivité $\rho_{\rm el}$ constante et courant longitudinal, $R_4=\rho_{\rm el}a/(bc)$. On en tire $\Delta R_4/R_4\simeq\Delta a/a-\Delta b/b-\Delta c/c=2\Delta a/a$. Ainsi la variation relative de longueur est $+5,0\times10^{-4}$, soit $0,050\,\%$. Une variation de résistivité ajouterait son propre terme à la variation relative de résistance.
+À résistivité $\rho_{\rm el}$ constante et courant longitudinal, $R_4=\rho_{\rm el}a/(bc)$. On en tire $\Delta R_4/R_4\simeq\Delta a/a-\Delta b/b-\Delta c/c=2\Delta a/a$. Ainsi la variation relative de longueur est $+5,0\times10^{-4}$, soit $0,050\,\%$. À volume et résistivité constants, $R_4=\rho_{\rm el}a^2/V$ donne aussi la relation exacte $\Delta a/a=\sqrt{1+x}-1$, soit $4{,}999\times10^{-4}$. Une variation de résistivité ajouterait son propre terme à la variation relative de résistance.
 
 ### A.5 · Amplification de la différence
 
@@ -121,7 +123,7 @@ En négligeant la rotation terrestre, $g(z)/g(0)=[R_{\mathrm T}/(R_{\mathrm T}+z
 
 #### Solution
 
-Posons $H=RT_0/(Mg)\simeq8,48\,\mathrm{km}$. La masse volumique constante vaut $\mu_0=MP_0/(RT_0)$, d’où $P=P_0-\mu_0gz=P_0(1-z/H)$. Puis $T=MP/(R\mu_0)=T_0(1-z/H)$. Le gradient constant vaut $-T_0/H=-Mg/R\simeq-34\,\mathrm{K\,km^{-1}}$. La pression vaut $P_0/2$ à **$z=H/2\simeq4,24\,\mathrm{km}$**. Le modèle conduirait à une température absolue négative pour $z>H$, ce qui en limite l’usage.
+Avec $T_0=288\,\mathrm K$, posons $H=RT_0/(Mg)\simeq8,48\,\mathrm{km}$. La masse volumique constante vaut $\mu_0=MP_0/(RT_0)$, d’où $P=P_0-\mu_0gz=P_0(1-z/H)$. Puis $T=MP/(R\mu_0)=T_0(1-z/H)$. Le gradient constant vaut $-T_0/H=-Mg/R\simeq-34\,\mathrm{K\,km^{-1}}$. La pression vaut $P_0/2$ à **$z=H/2\simeq4,24\,\mathrm{km}$**. Le modèle conduirait à une température absolue négative pour $z>H$, ce qui en limite l’usage.
 
 ### A.6.d · Atmosphère isotherme
 

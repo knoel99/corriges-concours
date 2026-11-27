@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Présentation du sujet
 
 L’épreuve du 17 avril 2023 dure quatre heures. Les 27 numéros comprennent 41 questions et sous-questions. Le sujet relie les rotations de l’espace à la classification des algèbres réelles admettant une norme multiplicative. On peut aborder la géométrie des normes du plan dès Q14, indépendamment des calculs de rotations. [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20MP-MPI%20SUJET%20DE%20MATHEMATIQUES%20A%20%28XLSR%29.pdf)
@@ -37,7 +39,9 @@ La représentation matricielle permet de passer de la multiplication non commuta
 
 L’énoncé donne une base de $H$ comme espace vectoriel réel. La table de produits de $I,J,K$, jointe au fait que $E$ est l’unité de $M_2(\mathbb C)$, assure par bilinéarité que $H$ est stable par produit et contient l’unité. De plus $E^*=E$ et la lecture des trois matrices donne $I^*=-I$, $J^*=-J$, $K^*=-K$. L’adjonction est réelle-linéaire, donc elle préserve $H$. Dans les coordonnées complexes du sujet, le calcul donne directement
 $$Z(z_1,z_2)^*=Z(\overline{z_1},-z_2).$$
-Le signe porte sur la seconde coordonnée entière. La conjugaison complexe porte sur la première.
+Le signe porte sur la seconde coordonnée entière. La conjugaison complexe porte sur la première. On peut aussi lire le produit sur la première colonne. Pour $a,b,c,d\in\mathbb C$,
+$$Z(a,b)Z(c,d)=Z(ac-\overline b d,\,bc+\overline a d).$$
+La seconde colonne est obtenue à partir de la première par la règle qui définit $Z$.
 
 ### Question 1b
 
@@ -352,7 +356,8 @@ Soit $M=\max_{z\in C}\|z\|>0$, qui existe par compacité du cercle euclidien. L�
 
 Posons $D_r=\operatorname{diag}(r,1/r)$. Comme $B$ est une rotation pour la norme euclidienne **de départ**, $AB\in K$ et $\det(AB)=\det A$. Si $ABD_r$ appartenait aussi à $K$, la convexité y placerait le milieu $M_r=AB(\mathrm{id}+D_r)/2$. Or
 $$\det M_r=\det A\,\frac{(1+r)(1+1/r)}4>\det A,$$
-puisque $r+1/r>2$ pour $0<r<1$. Donc $ABD_r\notin K$. Il existe un vecteur non nul violant l’inégalité qui définit $K$ ; en le divisant par sa norme euclidienne, on obtient $x_r\in C$ tel que $\|ABD_rx_r\|>1$.
+car le gain relatif de déterminant est strictement positif,
+$$\frac{\det M_r-\det A}{\det A}=\frac{(1-r)^2}{4r}>0\qquad(0<r<1).$$ Donc $ABD_r\notin K$. Il existe un vecteur non nul violant l’inégalité qui définit $K$ ; en le divisant par sa norme euclidienne, on obtient $x_r\in C$ tel que $\|ABD_rx_r\|>1$.
 
 ![Figure 4 — Le disque et l’ellipse déformée ont même aire. L’image par la moyenne des deux matrices possède une aire supérieure. Illustration pour r = 0,55 avec AB égal à l’identité.](figures/q16-deformation-ellipse.svg)
 

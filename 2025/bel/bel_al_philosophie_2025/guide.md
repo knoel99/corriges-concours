@@ -8,9 +8,15 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 L’écrit de tronc commun dure six heures. Le domaine au programme est la morale. Les seuls mots sur lesquels composer sont « Tu dois », placés entre guillemets. Le rapport lyonnais traite cet écrit commun au début du fascicule, avant les épreuves de spécialité. [Sujet officiel](https://www.ens.psl.eu/sites/default/files/2025_al_tronc_commun_philosophie.pdf) · [Rapport du jury 2025](https://www.ens-lyon.fr/sites/default/files/2025-11/Philosophie%202025%20OK%20Lyon%20RELU.pdf)
+
+**Exercice de préparation.** Gardez la formule « tu dois rendre le livre demain » et faites varier uniquement la personne qui accorde un délai. Le témoin connaît la promesse ; la prêteuse peut, sous certaines conditions, en modifier le terme. Expliquez pourquoi savoir qu’une obligation existe, être autorisé à la rappeler et pouvoir en délier le destinataire sont trois pouvoirs différents. Revenez ensuite aux deux mots du sujet pour montrer ce qu’un interlocuteur peut entendre sans qu’un complément soit prononcé.
 
 ## Lire les deux mots
 
@@ -27,6 +33,8 @@ Une conjecture porte sur ce qu’on croit arrivé. Une condition de réussite re
 > Le jury relève deux confusions. Grammaticalement, « dois » est ici à l’indicatif présent. La portée d’une injonction dépend des circonstances et de la relation entre les personnes. Le rapport invite aussi à tirer une conséquence philosophique de la deuxième personne du singulier. [Sujet officiel](https://www.ens.psl.eu/sites/default/files/2025_al_tronc_commun_philosophie.pdf) · [Rapport du jury 2025](https://www.ens-lyon.fr/sites/default/files/2025-11/Philosophie%202025%20OK%20Lyon%20RELU.pdf)
 
 ![Trois énoncés devant le même registre](figures/attribuer-une-obligation.svg)
+
+Imaginer que la personne à qui l’on s’adresse découvre le faux sans avoir le droit de modifier le registre. L’obligation pourrait alors porter sur l’alerte à donner. L’adresse contribue à déterminer le contenu même du devoir.
 
 **Reformuler sans changer le fait.** Le registre doit être rectifié dans les trois cas. Dire « il faut » laisse l’auteur du geste ouvert, dire « tu dois » attribue une responsabilité et dire « je dois » la reprend en son nom. Vérifier qui a qualité pour attribuer cette responsabilité évite de prendre le simple fait d’interpeller pour une preuve de légitimité.
 
@@ -62,6 +70,8 @@ Une autre différence apparaît si l’on compare « tu dois être arrivé » et
 
 Essayons de remplacer « tu dois » par « il faut ». Devant un registre erroné, « il faut rectifier » peut énoncer une raison d’agir que chacun approuvera, tout en laissant ouverte la question de l’agent. « Tu dois rectifier » demande à cet interlocuteur de répondre du rapport qu’il entretient à l’erreur. Le témoin et l’auteur de l’inscription peuvent reconnaître le même tort sans être tenus au même geste. Inversement, celui qui dit « je dois » assume déjà en son nom une exigence qu’un autre peut encore discuter. L’énoncé entre guillemets isole ainsi un moment fragile, celui où une nécessité prétend atteindre quelqu’un avant qu’il l’ait reprise à la première personne.
 
+Si deux témoins savent qu’un registre est faux, la forme impersonnelle laisse ouverte la répartition de la tâche. Dire « tu dois le rectifier » oblige celui qui parle à donner une raison de viser cet interlocuteur précis. La capacité de corriger le registre ou la responsabilité de l’erreur peuvent fournir deux raisons distinctes.
+
 Le silence qui suit la formule ne la rend donc pas immédiatement absolue. Entre deux personnes qui savent qu’une restitution est en jeu, ces seuls mots sont tout à fait déterminés. Prononcés devant quelqu’un qui ignore ce que l’on veut de lui, ils peuvent au contraire obtenir son acquiescement avant même que le contenu de l’exigence ait été révélé. Cette seconde possibilité rend suspecte l’assurance de celui qui parle. En présentant une nécessité à l’indicatif, ne risque-t-il pas de faire passer sa propre volonté pour une raison que son interlocuteur posséderait déjà ?
 
 ## II. Pouvoir donner un ordre et être fondé à rappeler une obligation
@@ -69,6 +79,8 @@ Le silence qui suit la formule ne la rend donc pas immédiatement absolue. Entre
 Un chef peut obtenir très vite l’action de son subordonné en disant « tu dois ». Son autorité institutionnelle explique alors pourquoi l’action suit. Elle ne règle pas tout ce que la formule prétend régler. Si le chef exige de fausser un registre pour dissimuler sa faute, le pouvoir qu’il a d’infliger une sanction demeure. Pourtant le subordonné a précisément une raison de lui résister. Se borner à mesurer la force respective des deux volontés ferait disparaître ce qui oppose l’ordre donné et l’obligation invoquée. On peut d’ailleurs imaginer la situation retournée. Le subordonné rappelle au chef son obligation de rectifier le registre. Sa phrase perd en puissance de contrainte et gagne en justification.
 
 Mais suffirait-il que chacun juge souverainement de l’exigence qu’il reconnaît ? Si l’emprunteur pouvait dissoudre une promesse en cessant simplement d’y consentir, la personne à laquelle elle a été faite n’aurait rien reçu. Kant examine, dans la deuxième section des *Fondements de la métaphysique des mœurs*, le projet de promettre ce que l’on sait ne pas pouvoir tenir pour se procurer de l’argent. La difficulté tient à la maxime qui rendrait cette pratique permise à chacun. Si personne ne pouvait plus croire la parole donnée dans une telle situation, le procédé perdrait la confiance même qu’il exploite. Ce détour permet à l’emprunteur de comprendre une raison qui vaut pour lui alors même qu’il préférerait y échapper. La personne qui la lui rappelle peut l’inviter à faire cet examen sans se prévaloir d’une supériorité sur lui.
+
+La même promesse permet d’aller plus loin. Je me suis engagé à rendre un livre demain. Sa propriétaire m’accorde une semaine de plus. Un ami qui a entendu mon engagement peut en témoigner fidèlement ; il se tromperait pourtant en continuant de m’adresser la même injonction pour demain. Aucun fait passé n’a changé. Une personne avait qualité pour modifier la créance, et elle l’a fait. À présent, supposons que le livre ait été confié à la propriétaire par la bibliothèque et que le délai engage également celle-ci. La permission obtenue ne règle plus tout. L’adresse au singulier fait ainsi chercher qui peut exiger quoi de qui. Déterminer le devoir suppose parfois de reconstituer plusieurs relations que les deux mots laissaient dans l’ombre.
 
 Il ne s’ensuit pas que l’identité du locuteur soit toujours indifférente. Quand la personne lésée me dit « tu dois », elle fait aussi connaître ce que ma défaillance lui a fait supporter. Un tiers peut constater aussi bien qu’elle qu’un dépôt n’a pas été rendu. Elle seule peut, en son nom, me délier d’un engagement pris envers elle, si cet engagement ne met en cause aucun autre droit. La forme de seconde personne désigne ainsi deux rapports qu’il serait dommage de confondre. Je peux reconnaître la portée d’une raison proposée par quiconque. Je peux aussi découvrir que je dois répondre de ma conduite devant quelqu’un en particulier. Que devient cette seconde dimension en l’absence de tout interlocuteur ?
 

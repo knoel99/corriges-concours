@@ -18,7 +18,16 @@
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20MP-PC-PSI%20SUJET%20ECRIT%20DE%20FRANCAIS%20(XEULSR).pdf",
     "sujet_sha256": "b04643778b5e6e25c04512c999300ee7f8ac0306f4dca7cd4a8de842939eb51c",
     "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20MP-PC-PSI%20RAPPORT%20ECRIT%20FRANCAIS%20(XEULSR).pdf",
-    "rapport_sha256": "645654a58486efa792ae4cdcd7b94faaf869428dc5ac6f6e9f4ee99447b39d73"
+    "rapport_sha256": "645654a58486efa792ae4cdcd7b94faaf869428dc5ac6f6e9f4ee99447b39d73",
+    "programme": "https://www.education.gouv.fr/bo/21/Hebdo28/ESRS2119554A.htm",
+    "programme_sha256": "0283ba61d857a3676e5bd67fbb2ebd59abab8284846614102dbf8a08871a89c3",
+    "textes_de_reference": [
+      {
+        "libelle": "Rousseau, Émile, livre I",
+        "url": "https://fr.wikisource.org/wiki/%C3%89mile,_ou_De_l%E2%80%99%C3%A9ducation/%C3%89dition_1782/Livre_I"
+      }
+    ],
+    "perimetre_du_rapport": "MP, PC et PSI"
   },
   "figures": [
     {
@@ -37,7 +46,42 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Rédaction des deux éditions sur le sujet officiel et le rapport du jury. Dissertation sur la proposition d’Annie Ernaux à partir des livres I et II de l’Émile, des Contes d’Andersen et d’Aké de Wole Soyinka, accompagnée d’une préparation sur les voix, le geste et le récit rétrospectif."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "fui_physique_un",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Contrôle du feuillet, du bulletin officiel et du rapport p. 3–6. Le rapport distingue l’identification d’un événement et l’expression du vécu enfantin. Il invite à examiner aussi le langage littéraire de l’adulte. Vérification des trois axes, des références aux œuvres et des schémas."
     }
   ],
-  "date_revision": "2026-11-24"
+  "date_revision": "2026-11-26",
+  "intitule": "Annie Ernaux, L’Autre Fille (2011) — L’enfance",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "precision": "La page 2 du sujet contient une seule consigne de commentaire et de discussion de la citation au moyen des œuvres du programme. Les trois axes identifient les étapes de la proposition pédagogique.",
+    "pages_pdf_sujet": [
+      2
+    ],
+    "programme": "Rousseau, livres I et II d’Émile. Andersen, Contes, traduction de Marc Auchet. Soyinka, Aké, les années d’enfance, traduction d’Étienne Galle.",
+    "items_verifies": [
+      "Antériorité du vécu sur les catégories disponibles",
+      "Pouvoir de nomination de l’enfant et silences des adultes",
+      "Écart entre l’expérience et sa reprise littéraire"
+    ],
+    "lecture_du_rapport": "Le rapport distingue l’identification d’un événement et l’expression du vécu enfantin. Il invite à examiner aussi le langage littéraire de l’adulte."
+  }
 }

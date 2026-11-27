@@ -1,0 +1,70 @@
+{
+  "slug": "x-ens_mp-pc-psi_francais_2019",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Français",
+    "annee": 2019,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "Rousseau, l’illusion amoureuse et le pouvoir de donner l’être",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/2019_MPPC_sujet_Fr.pdf",
+    "sha256_sujet": "32cd2e73bd36748c48ccc5944a0eb5d6375eaeec107570043c3bfea4349cd377",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/11/19_MPPC_rapport_eFr.pdf",
+    "sha256_rapport_jury": "0dd49d56d3b31da3ada344c454714fe8fef6e190a53ec71d075c18e166c05321",
+    "index_sujet": "https://banques-ecoles.fr/cms/session-2019-pc/",
+    "code_garde": "XEULCR",
+    "oeuvres_au_programme": [
+      "Platon, Le Banquet",
+      "William Shakespeare, Le Songe d’une nuit d’été",
+      "Stendhal, La Chartreuse de Parme"
+    ],
+    "portee_rapport": "Le cahier XEULCR comporte quatre pages. La garde nomme MP, PC et PSI, et la citation de Rousseau se trouve p. 3. Le rapport de seize pages, intitulé MP et PC, identifie le corpus et examine les liens entre illusion, création et vérité. La formulation est attribuée au dialogue littéraire de Rousseau.",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/2019_MPPC_sujet_Fr.pdf",
+        "sha256": "32cd2e73bd36748c48ccc5944a0eb5d6375eaeec107570043c3bfea4349cd377",
+        "pages": 4
+      },
+      {
+        "role": "rapport",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/11/19_MPPC_rapport_eFr.pdf",
+        "sha256": "0dd49d56d3b31da3ada344c454714fe8fef6e190a53ec71d075c18e166c05321",
+        "pages": 16
+      }
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/objet-valeur-relation.svg",
+      "question": "Dissertation",
+      "legende": "L’illusion ne porte pas toujours sur la même chose. Le personnage peut se tromper sur une qualité, attribuer une valeur ou construire une relation qui exige une réponse."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "option_info_2006_2009",
+      "agent": "option_info_2006_2009",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Dissertation sur l’alternative rousseauiste entre donner l’être et inventer un objet. Confrontation du discours de Diotime et de l’entrée d’Alcibiade, du philtre et du spectacle des artisans, de la tour Farnèse et du langage des amants. Préparation guidée et schéma."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "limites": "Une interprétation argumentée du sujet. Les exemples des œuvres sont paraphrasés sauf indication explicite."
+  }
+}

@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Les tirages attestés par le rapport
 
 Le rapport du jury recense 69 paires. Les trois feuilles datées des 16, 17 et 22 juin en documentent 36 dans le même ordre. Les 33 paires qui suivent commencent à la dernière ligne de la page 5 du rapport et se poursuivent aux pages 6 et 7. Le tableau ne précise pas la date de ces tirages. Les deux branches de chaque paire reçoivent ici une proposition de réponse, indépendamment du choix fait au concours.
@@ -459,6 +461,10 @@ Persécutions et guerre provoquent dans les années 1930–1940 des exils immens
 Alfred Dreyfus, officier français juif, est condamné pour trahison en décembre 1894 et déporté en Guyane. L’affaire devient une crise de la République parce que l’institution militaire, la justice, la presse et les mobilisations citoyennes se divisent sur la possibilité de revenir sur une condamnation. L’antisémitisme rend plausible aux yeux d’une partie de l’opinion l’accusation contre un officier patriote. Le fonctionnement du conseil de guerre et la communication d’éléments à l’insu de la défense mettent en cause le droit au procès équitable.
 
 Les indices réunis par le lieutenant-colonel Picquart conduisent vers Esterhazy. Sa connaissance ne produit pourtant pas immédiatement une révision. Le rôle des proches de Dreyfus, des premiers soutiens et des mobilisations de journalistes et d’intellectuels est décisif. Après l’acquittement d’Esterhazy, Zola publie *J’accuse… !* en janvier 1898. Devenue un affrontement public sur la légitimité de l’armée et les droits individuels, l’affaire élargit aussi le champ d’action de l’antisémitisme organisé. À Rennes, en 1899, Dreyfus est de nouveau condamné puis gracié. La grâce lui permet de recouvrer la liberté sans établir juridiquement son innocence. En 1906, la Cour de cassation annule sans renvoi la condamnation, puis Dreyfus est réintégré. La distinction entre grâce et réhabilitation résume le cœur de la crise : l’apaisement politique et la réparation d’une erreur de justice ne relèvent pas du même acte.
+
+À la question « quand Dreyfus retrouve-t-il la liberté ? », le dossier conduit à 1899. À la question « quand le dernier jugement de condamnation est-il annulé ? », il conduit à 1906. Dans l’intervalle, sa liberté coexiste avec une condamnation toujours inscrite dans l’ordre juridique.
+
+![Figure 1 — Dreyfus, trois effets juridiques différents](figures/dreyfus.svg)
 
 ### Monde · Une culture de guerre froide ?
 

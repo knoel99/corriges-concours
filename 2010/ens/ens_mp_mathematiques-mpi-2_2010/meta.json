@@ -11,7 +11,10 @@
   "sources": {
     "sujet": "https://www.ens.psl.eu/IMG/file/concours/2010/MPI/mp-sujet-maths2.pdf",
     "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2010/MPI/mp-ecrit-maths2.pdf",
-    "sha256_sujet": "34f30aec37120a4740ee3a78e3f4c86a235d4dd716c188b0cb063218fa221c59"
+    "sha256_sujet": "34f30aec37120a4740ee3a78e3f4c86a235d4dd716c188b0cb063218fa221c59",
+    "pages_sujet": 8,
+    "sha256_rapport_jury": "62dea821cdbd7b1a655cf1765f18b7344cb689f91d91307afad03e4ed063857a",
+    "pages_rapport_jury": 3
   },
   "figures": [
     {
@@ -31,6 +34,239 @@
       "perimetre": "Rédaction des cinq parties après confrontation des huit pages du sujet et du rapport. Déterminant et indépendance, critère de Kalman, convergence en norme d’opérateur, majoration des séries de Fourier et calcul complet de l’énergie modifiée avec constantes indépendantes du mode. Figure calculée pour deux fréquences.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Vérification des 35 questions et des objections du jury, des signes avec le produit hermitien linéaire au premier argument, de la sommation de Fourier et des constantes de Lyapunov. Comparaison des sommets de la figure avec l’exponentielle matricielle pour k=1 et 3. Recalcul de la pente des deux énergies.",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1.a",
+      "I.1.b",
+      "I.2",
+      "II.1",
+      "II.2",
+      "II.3.a",
+      "II.3.b",
+      "II.4",
+      "II.5",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5.a",
+      "III.5.b",
+      "III.6.a",
+      "III.6.b",
+      "III.6.c",
+      "III.7.a",
+      "III.7.b",
+      "III.7.c",
+      "III.8",
+      "IV.1",
+      "IV.2",
+      "IV.3",
+      "IV.4",
+      "V.1",
+      "V.2.a",
+      "V.2.b",
+      "V.2.c",
+      "V.2.d",
+      "V.2.e",
+      "V.2.f",
+      "V.3",
+      "V.4"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": "I.1.a",
+        "page_pdf_sujet": 3,
+        "page_imprimee": 2
+      },
+      {
+        "question": "I.1.b",
+        "page_pdf_sujet": 3,
+        "page_imprimee": 2
+      },
+      {
+        "question": "I.2",
+        "page_pdf_sujet": 4,
+        "page_imprimee": 3
+      },
+      {
+        "question": "II.1",
+        "page_pdf_sujet": 4,
+        "page_imprimee": 3
+      },
+      {
+        "question": "II.2",
+        "page_pdf_sujet": 4,
+        "page_imprimee": 3
+      },
+      {
+        "question": "II.3.a",
+        "page_pdf_sujet": 4,
+        "page_imprimee": 3
+      },
+      {
+        "question": "II.3.b",
+        "page_pdf_sujet": 4,
+        "page_imprimee": 3
+      },
+      {
+        "question": "II.4",
+        "page_pdf_sujet": 4,
+        "page_imprimee": 3
+      },
+      {
+        "question": "II.5",
+        "page_pdf_sujet": 4,
+        "page_imprimee": 3
+      },
+      {
+        "question": "III.1",
+        "page_pdf_sujet": 5,
+        "page_imprimee": 4
+      },
+      {
+        "question": "III.2",
+        "page_pdf_sujet": 5,
+        "page_imprimee": 4
+      },
+      {
+        "question": "III.3",
+        "page_pdf_sujet": 5,
+        "page_imprimee": 4
+      },
+      {
+        "question": "III.4",
+        "page_pdf_sujet": 5,
+        "page_imprimee": 4
+      },
+      {
+        "question": "III.5.a",
+        "page_pdf_sujet": 5,
+        "page_imprimee": 4
+      },
+      {
+        "question": "III.5.b",
+        "page_pdf_sujet": 5,
+        "page_imprimee": 4
+      },
+      {
+        "question": "III.6.a",
+        "page_pdf_sujet": 5,
+        "page_imprimee": 4
+      },
+      {
+        "question": "III.6.b",
+        "page_pdf_sujet": 5,
+        "page_imprimee": 4
+      },
+      {
+        "question": "III.6.c",
+        "page_pdf_sujet": 5,
+        "page_imprimee": 4
+      },
+      {
+        "question": "III.7.a",
+        "page_pdf_sujet": 5,
+        "page_imprimee": 4
+      },
+      {
+        "question": "III.7.b",
+        "page_pdf_sujet": 6,
+        "page_imprimee": 5
+      },
+      {
+        "question": "III.7.c",
+        "page_pdf_sujet": 6,
+        "page_imprimee": 5
+      },
+      {
+        "question": "III.8",
+        "page_pdf_sujet": 6,
+        "page_imprimee": 5
+      },
+      {
+        "question": "IV.1",
+        "page_pdf_sujet": 6,
+        "page_imprimee": 5
+      },
+      {
+        "question": "IV.2",
+        "page_pdf_sujet": 6,
+        "page_imprimee": 5
+      },
+      {
+        "question": "IV.3",
+        "page_pdf_sujet": 6,
+        "page_imprimee": 5
+      },
+      {
+        "question": "IV.4",
+        "page_pdf_sujet": 7,
+        "page_imprimee": 6
+      },
+      {
+        "question": "V.1",
+        "page_pdf_sujet": 7,
+        "page_imprimee": 6
+      },
+      {
+        "question": "V.2.a",
+        "page_pdf_sujet": 7,
+        "page_imprimee": 6
+      },
+      {
+        "question": "V.2.b",
+        "page_pdf_sujet": 7,
+        "page_imprimee": 6
+      },
+      {
+        "question": "V.2.c",
+        "page_pdf_sujet": 7,
+        "page_imprimee": 6
+      },
+      {
+        "question": "V.2.d",
+        "page_pdf_sujet": 8,
+        "page_imprimee": 7
+      },
+      {
+        "question": "V.2.e",
+        "page_pdf_sujet": 8,
+        "page_imprimee": 7
+      },
+      {
+        "question": "V.2.f",
+        "page_pdf_sujet": 8,
+        "page_imprimee": 7
+      },
+      {
+        "question": "V.3",
+        "page_pdf_sujet": 8,
+        "page_imprimee": 7
+      },
+      {
+        "question": "V.4",
+        "page_pdf_sujet": 8,
+        "page_imprimee": 7
+      }
+    ],
+    "precision": "Cinq parties, 35 questions, pages imprimées 2 à 7 (PDF 3 à 8). L’énoncé définit un produit hermitien linéaire au premier argument. Les deux éditions distinguent la convergence mode par mode et l’estimation uniforme en fréquence."
+  }
 }

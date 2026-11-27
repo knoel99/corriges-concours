@@ -1,0 +1,71 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_cinema-les-arts-selon-alain-badiou_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Cinéma — les arts selon Alain Badiou",
+    "annee": 2019,
+    "modalite": "écrit"
+  },
+  "intitule": "Que rend populaire le septième art ?",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/cinema-sil2019.pdf",
+    "sujet_sha256": "b442ca09f5fe4299617975134dbcff4bdd28114f80cebbc4938628461cacff11",
+    "index_officiel": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2019-lettres",
+    "note": "Le feuillet de 2019 donne une citation d’Alain Badiou publiée dans Critique en janvier-février 2005 et demande de l’illustrer et de la commenter."
+  },
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/analyse.svg",
+      "question": "Commentaire",
+      "legende": "La scène, le regard et l’adresse au public de cinéma."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "arts_selection_six",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions, construction des exemples et du schéma pour « Que rend populaire le septième art ? ». "
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "arts_selection_six",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Contrôle du libellé, des données documentaires, des distinctions analytiques et de leur lisibilité dans les deux éditions."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Cinéma — les arts selon Alain Badiou"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Le feuillet de 2019 donne une citation d’Alain Badiou publiée dans Critique en janvier-février 2005 et demande de l’illustrer et de la commenter."
+  }
+}

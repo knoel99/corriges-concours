@@ -1,0 +1,68 @@
+{
+  "slug": "ens_mp-pc_grec-ancien-le2_2007",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Grec ancien (LE2)",
+    "annee": 2007,
+    "modalite": "écrit"
+  },
+  "intitule": "Un mauvais citoyen",
+  "questions": 1,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version"
+    ]
+  },
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2007/sujet-ecrit-2007-mp-pc_langue_etrangere_2.pdf#page=11",
+    "sujet_sha256": "5309bb7be121409229b9d682b83dc64317cd1725af428d833510660019c75b2c",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2007",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2007/sujet-ecrit-2007-mp-pc_langue_etrangere_2.pdf#page=11",
+        "sha256": "5309bb7be121409229b9d682b83dc64317cd1725af428d833510660019c75b2c",
+        "pages": "11",
+        "filieres": "MP-PC"
+      },
+      {
+        "role": "rapport",
+        "url": "https://www.ens.psl.eu/IMG/file/concours/2007/MP/mp_ecrit_grec.pdf",
+        "sha256": "90bf9cf52e4e4da5cd30e66e87cb710c36bff0e37f7edfe1103c5a169e02b525",
+        "pages": "1",
+        "filieres": "MP"
+      }
+    ],
+    "precision": "Lysias, Contre Philon, §§ 31–32.",
+    "etablissements": "ENS de Paris et de Cachan",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2007/MP/mp_ecrit_grec.pdf"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Version",
+      "fichier": "figures/lecture.svg",
+      "legende": "Le même groupe occupe les deux temps du réquisitoire."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "fin_langues_x_interens",
+      "session": "fin_langues_x_interens",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Traduction française intégrale, explication des constructions et schéma du passage. Lysias, Contre Philon, §§ 31–32.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}

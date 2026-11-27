@@ -32,5 +32,44 @@
       "fournisseur": "codex",
       "agent": "astra_maths"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1a",
+      "1b",
+      "2a",
+      "2b",
+      "2c",
+      "2d",
+      "3",
+      "4",
+      "5a",
+      "5b",
+      "6a",
+      "6b",
+      "7a",
+      "7b",
+      "7c",
+      "7d",
+      "8a",
+      "8b",
+      "8c",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14a",
+      "14b"
+    ],
+    "precision": "Les 26 repères de questions et sous-questions ont été rapprochés dans l’ordre du sujet officiel et dans chacune des deux éditions. La portée de la rédaction ou de la révision est conservée dans le journal cité.",
+    "origine_attestation": {
+      "commit_du_journal": "78b7db691ab1c24bd1713f9d295a62e91c5313e6",
+      "sha256_sujet_controle": "5b6e205bcd34739e3cf5279c1d1b182f9be88cf847262db8a6465a73a50615a2",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction de toutes les questions du sujet XLC et confrontation au rapport, y compris le changement de base de déterminant un, le produit des exponentielles tronquées et la preuve de simplicité du quotient. Les signes du crochet et les deux coefficients terminaux de la chaîne ont été recalculés. Figure originale en dimension quatre."
+    }
+  }
 }

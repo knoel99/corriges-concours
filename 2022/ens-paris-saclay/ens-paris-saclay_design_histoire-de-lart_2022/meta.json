@@ -1,0 +1,133 @@
+{
+  "slug": "ens-paris-saclay_design_histoire-de-lart_2022",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Histoire de l’art",
+    "annee": 2022,
+    "modalite": "écrit"
+  },
+  "intitule": "Vivre avec le climat, à quel prix ?",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "index_annales": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=572",
+    "reperes_documentaires": [
+      "Paul-Jacques Grillo, What Is Design?, Chicago, Theobald, 1960.",
+      "Hassan Fathy, Architecture for the Poor: An Experiment in Rural Egypt, édition anglaise, 1973.",
+      "Ministère de l’Éducation et de la Santé, aujourd’hui Palácio Gustavo Capanema, Rio de Janeiro, chantier de l’entre-deux-guerres et des années 1940."
+    ],
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2022_Sujet_Ecrit_DESIGN_Histoire_de_lArt.pdf",
+    "sha256_sujet": "cb8f63c510164a698924bfe1aae650bd08c7da9fec35bc2aa57fbfc4bf57ec73",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2022_Rapport_Ecrit_DESIGN_histoire%20de%20l%27art.pdf",
+    "sha256_rapport_jury": "5ce4fe8c32f97d2ed1d009fdd56856dd05cb127e5054a33a9cac9b5eb9f38592"
+  },
+  "figures": [
+    {
+      "fichier": "figures/du-projet-au-milieu.svg",
+      "question": "Dissertation",
+      "legende": "Coupe de principe d’un pare-soleil fixe dans l’hémisphère Nord. La hauteur du soleil change l’exposition de la baie.",
+      "provenance": "Dessin analytique original de la campagne, session astra_maths, repris pour cette composition."
+    },
+    {
+      "fichier": "figures/lames-a-rio.svg",
+      "question": "Dissertation",
+      "legende": "Deux positions possibles des lames horizontales, vues en coupe.",
+      "provenance": "Schéma original de cette révision, composé d’après la référence étudiée."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_design",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions après confrontation du sujet au rapport de la session. Mise en relation du dessin analytique conservé, des exemples datés et de l’argumentation historique."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "x_hist_1987",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "La grille de Rio et la coupe solaire rattachent le confort à l’orientation. La chronologie du conditionnement, de la façade et du village soumet la promesse de bonheur à des situations datées. Confrontation au feuillet et aux rubriques du rapport écrit de la session."
+    }
+  ],
+  "gabarit": "dissertation",
+  "date_revision": "2026-11-26",
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2022_Sujet_Ecrit_DESIGN_Histoire_de_lArt.pdf",
+      "sha256": "cb8f63c510164a698924bfe1aae650bd08c7da9fec35bc2aa57fbfc4bf57ec73",
+      "pages": 1,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "6516c326458af975de890ab1542d72ad01913ff06f2b494e026791d8c540bab4"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2022_Rapport_Ecrit_DESIGN_histoire%20de%20l%27art.pdf",
+      "sha256": "5ce4fe8c32f97d2ed1d009fdd56856dd05cb127e5054a33a9cac9b5eb9f38592",
+      "pages": 4,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "890be743b6039ec859b0ea32a6ee240fd62bc5fd61c1168a1b04beadc7a5a4a1"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "f3ea95d73cdec8aa0f5cae804c7c9ccf21064bc329c53372177baa0728247014"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "b251cb8a4c1a919ec130bb7086232308c03b725d580bbed0b1021c7c51988d26"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "154d7a38bab56deab988e8b60ca65c0999ca04e0cc8cd5298920b4b8e3384465"
+        }
+      ],
+      "rubriques": "Connaissance du design et préparation de cette épreuve, programme, analyse du sujet, problématique, développement, rédaction."
+    },
+    "reference_etudiee": {
+      "url": "https://www.gov.br/iphan/pt-br/acesso-a-informacao/licitacoes-e-contratos/iphan-rj_uasg-343006/licitacoes/concorrencia/2025/arquivos-2/5.pdf",
+      "sha256": "e4e31740874cbd527b9e7832e28c443b8fbe91ea7e73bf0fdd9b28ba5bba3912",
+      "nature": "État technique des brise-soleil de la façade nord, IPHAN, p. 1–2."
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 1,
+        "citation": "« [Les] inventions mécaniques portent la gloire de l'orgueil humain et nous donnent le sentiment de maîtriser les éléments [...]. Nous pensons avoir \"liquidé\" le problème de la chaleur avec la climatisation artificielle et les glacières, comme si cette solution était possible partout et pour tous les budgets. Ce triste malentendu entre notre mode de vie et notre environnement nous fait vivre dans notre propre monde comme des \"personnes déplacées\", incapables de trouver le vrai bonheur car, au lieu d'être en paix avec le monde qui nous entoure, nos arbres, nos nuages, nos déserts et nos mers, nous avons choisi de combattre la nature comme notre plus féroce ennemi et de considérer toute solution non naturelle comme une victoire. »",
+        "reference": "Paul-Jacques Grillo, What is design?, 1960, Chicago: P. Theobald & Company.",
+        "consigne": "Vous analyserez et discuterez cet extrait du designer Paul-Jacques Grillo en vous appuyant sur votre connaissance du programme et selon un propos argumenté.",
+        "programme_imprime": "Design : de l’objet à l’environnement (1900-1980)",
+        "annexes_imposees": [],
+        "perimetre": "La grille de Rio et la coupe solaire rattachent le confort à l’orientation. La chronologie du conditionnement, de la façade et du village soumet la promesse de bonheur à des situations datées."
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

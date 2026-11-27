@@ -1,0 +1,52 @@
+{
+  "slug": "ens-rennes_d1_droit-public_2005",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Droit public",
+    "annee": 2005,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "intitule": "L’acte administratif unilatéral illégal",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/2005-sujets-d1_1423060647728-pdf#page=3",
+    "sujet_sha256": "6e722c986780682109dc35cd612f69dd9f54c1674c5c472c52b1da9d33b0e220",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "references_complementaires": {
+      "Conseil d’État, Compagnie Alitalia, 1989": "https://conseil-etat.fr/fr/arianeweb/CE/decision/1989-02-03/74052",
+      "Conseil d’État, Ternon, 2001": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2001-10-26/197018",
+      "Conseil d’État, Association AC !, 2004": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2004-05-11/255886"
+    }
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "section": "II.A",
+      "fichier": "figures/effets-dans-le-temps.svg",
+      "legende": "Le choix entre suspension, abrogation, retrait et annulation détermine ce qui subsiste des effets antérieurs."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions sur l’identification de l’illégalité, l’autorité de l’acte, le recours et le référé, le retrait, l’abrogation, la modulation et l’indemnisation selon le droit du printemps 2005.",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur l’identification de l’illégalité, l’autorité de l’acte, le recours et le référé, le retrait, l’abrogation, la modulation et l’indemnisation selon le droit du printemps 2005."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}

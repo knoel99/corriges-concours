@@ -4,11 +4,15 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Fascicule officiel](https://www.ens-rennes.fr/medias/fichier/sujets-oraux-espagnol-d-e-2026_1793377280812-pdf)
 
 ## Préparer le passage
 
 Le fascicule contient huit sujets de presse, chacun demandant une analyse à présenter au jury. La couverture occupe la première page. Pour préparer un sujet, relever la source et la date, attribuer les déclarations, distinguer ce qui a eu lieu de ce qui est annoncé, puis choisir une difficulté que deux détails de l'article permettent de discuter. Les questions d'entretien qui suivent chaque exposé sont proposées pour l'entraînement. Aucun rapport d'oral espagnol n'est référencé dans la rubrique officielle de cette session.
+
+**Repère du fascicule.** Les textes 2 et 3 traitent tous deux des relations entre le Mexique et l’Union européenne. L’article économique de Machorro tire des conséquences pour les entreprises et la négociation commerciale. La dépêche signée Rosales rapporte la manière dont la présidente mexicaine justifie l’accord. Nommer ces deux situations de parole évite de présenter les billets comme interchangeables.
 
 ## Sujet 1 — Cuba, entre el anuncio de sanciones y la vida durante los apagones
 
@@ -216,6 +220,6 @@ El contexto electoral da a Lula motivos para destacar el resultado. También da 
 
 ### Relances d’entraînement
 
-**¿Se puede hablar de recuperación del bosque solo con esta cifra?** La pérdida anual ha disminuido. Para afirmar una recuperación neta necesitaríamos también medir regeneración, cambios de cobertura y su evolución durante más tiempo.
+**¿Se puede hablar de recuperación del bosque solo con esta cifra?** Ha disminuido la pérdida anual. Para comprobar una recuperación neta habría que medir también la regeneración y los cambios de cobertura a largo plazo.
 
-**¿Por qué resulta importante mencionar el Cerrado?** Concentra alrededor de la mitad de la pérdida nacional. Una mirada limitada a la selva amazónica ocultaría gran parte del problema y podría orientar mal las prioridades de vigilancia.
+**¿Por qué resulta importante mencionar el Cerrado?** El Cerrado concentra cerca de la mitad de la pérdida nacional. Vigilar solo la Amazonía dejaría desatendida gran parte del problema.

@@ -1,0 +1,136 @@
+{
+  "slug": "ens-rennes_d1_mathematiques-appliquees_2009",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Mathématiques appliquées",
+    "annee": 2009
+  },
+  "questions": 34,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/epreuve-a-options-d1_1423059195691-pdf#page=4",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/re1a-09d1-option-maths_1423059243211-pdf",
+    "sha256_sujet": "f8bfda7ba3c3b7a4d1c4cfdb9963f6e754fc10641f1a7affc8596985a2e16dab",
+    "sha256_rapport_jury": "1efa091e4eda84a7fc5f4c593af37b8114e9fc2699ee32db1d64a7ad47ad4c7f"
+  },
+  "figures": [
+    {
+      "fichier": "figures/courbe-nuage-et-seuil.svg",
+      "question": "2.I.3",
+      "legende": "La droite horizontale de niveau 2 coupe la courbe juste après le huitième rang. Les six taux observés sont superposés à la courbe."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des trois exercices et de toutes leurs parties après lecture des quatre pages originales et du rapport. Conditionnement et protocole familial, régression, prolongement, extrema, homogénéité, intégrales et matrices. Figure du modèle, des observations et du franchissement du seuil.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Les 34 rubriques des pages 4 à 7 comprennent les deux lignes 2.II.2.d imprimées avec le même identifiant. Recalcul des paramètres de la régression, du seuil, des produits matriciels et de l’inverse. Restitution du tableau de variation demandé et du tableau de contingence qui distingue les dénominateurs du conditionnement.",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "agent": "rennes_oraux_economie",
+      "session": "rennes_oraux_economie"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.I.1",
+      "1.I.2",
+      "1.I.3",
+      "1.I.4",
+      "1.II",
+      "1.III",
+      "2.I.1",
+      "2.I.2",
+      "2.I.3",
+      "2.I.4",
+      "2.II.1",
+      "2.II.2.a",
+      "2.II.2.b",
+      "2.II.2.c",
+      "2.II.2.d (droite)",
+      "2.II.2.d (retour à y)",
+      "2.II.3",
+      "3.I.1",
+      "3.I.2.a",
+      "3.I.2.b",
+      "3.I.2.c",
+      "3.I.3",
+      "3.II.1.a",
+      "3.II.1.b",
+      "3.II.2",
+      "3.II.3.a",
+      "3.II.3.b",
+      "3.II.4",
+      "3.III.1.a",
+      "3.III.1.b",
+      "3.III.2",
+      "3.III.3",
+      "3.IV.1",
+      "3.IV.2"
+    ],
+    "origine_attestation": {
+      "commit_du_journal": "db097835b7d7d1b705d82f709f3590def7e69041",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction intégrale des trois exercices et de toutes leurs parties après lecture des quatre pages originales et du rapport. Conditionnement et protocole familial, régression, prolongement, extrema, homogénéité, intégrales et matrices. Figure du modèle, des observations et du franchissement du seuil.",
+      "sha256_sujet_controle": "f8bfda7ba3c3b7a4d1c4cfdb9963f6e754fc10641f1a7affc8596985a2e16dab"
+    },
+    "pages_pdf_des_questions": {
+      "1.I.1": 4,
+      "1.I.2": 4,
+      "1.I.3": 4,
+      "1.I.4": 4,
+      "1.II": 4,
+      "1.III": 4,
+      "2.I.1": 5,
+      "2.I.2": 5,
+      "2.I.3": 5,
+      "2.I.4": 5,
+      "2.II.1": 5,
+      "2.II.2.a": 5,
+      "2.II.2.b": 5,
+      "2.II.2.c": 5,
+      "2.II.2.d (droite)": 5,
+      "2.II.2.d (retour à y)": 5,
+      "2.II.3": 5,
+      "3.I.1": 6,
+      "3.I.2.a": 6,
+      "3.I.2.b": 6,
+      "3.I.2.c": 6,
+      "3.I.3": 6,
+      "3.II.1.a": 6,
+      "3.II.1.b": 6,
+      "3.II.2": 6,
+      "3.II.3.a": 7,
+      "3.II.3.b": 7,
+      "3.II.4": 7,
+      "3.III.1.a": 7,
+      "3.III.1.b": 7,
+      "3.III.2": 7,
+      "3.III.3": 7,
+      "3.IV.1": 7,
+      "3.IV.2": 7
+    },
+    "precision": "Les 34 rubriques des pages 4 à 7 comprennent les deux lignes 2.II.2.d imprimées avec le même identifiant. Recalcul des paramètres de la régression, du seuil, des produits matriciels et de l’inverse. Restitution du tableau de variation demandé et du tableau de contingence qui distingue les dénominateurs du conditionnement."
+  }
+}

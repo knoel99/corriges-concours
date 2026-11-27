@@ -2,9 +2,13 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
-Ces deux exercices portent sur « Le surréalisme, cent ans après son premier manifeste ». Le jury prévoit deux heures de préparation. Chaque exposé de vingt minutes est suivi de dix minutes d’entretien.
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+Ces deux exercices portent sur « Le surréalisme, cent ans après son premier manifeste ». Après tirage au sort d’un thème, les deux exercices se préparent ensemble pendant deux heures. Chaque exposé de vingt minutes est suivi de dix minutes d’entretien.
+
+La photographie de la cible et les quatre pages du pamphlet ont pu être confrontées aux reproductions publiques. La légende du concours indique le 27 mars 1920 pour la photographie. Les reproductions publiées renseignent l’œuvre et ses détails, sans établir le cadrage de la planche du jury.
 
 ## Sujet 1 · Rébellion, engagements
 
@@ -40,13 +44,18 @@ Les trois documents précédents datent de Dada, avant le premier *Manifeste du 
 
 Dans le montage de couverture, Breton est figuré les yeux clos, le front entouré d’une couronne d’épines. La citation du Christ peut se lire comme une accusation de posture sacrificielle et d’autorité spirituelle. L’ornement religieux et la brutalité du titre se contredisent assez pour produire de l’ironie. Le lecteur passe d’un visage qu’il peut reconnaître à des colonnes signées qui lui contestent le droit de parler au nom du groupe. Cela ne suffit pas à faire des dissidents un parti homogène. Le document atteste une alliance polémique à un moment donné. Par rapport à 1920, la cible a donc changé : l’homme qui portait l’affiche de Picabia pour provoquer un public devient lui-même le support d’une image hostile.
 
+Comparons maintenant les deux portraits de Breton. Sur le cliché de 1920, son visage se tourne de côté au-dessus du panneau. Sa main apparaît devant la cible dessinée, et la signature imprimée de Picabia se détache sous les cercles. Parmi les participants à la provocation, l’image distingue donc celui qui porte l’affiche et celui qui la signe. En première page d’*Un cadavre*, le visage de face, les yeux clos, se trouve assujetti au titre et à la légende « AUTO-PROPHÉTIE ». Tourner la feuille révèle des colonnes et plusieurs signatures ; le portrait unique introduit une parole collective hostile. Celui qui s’exposait pour provoquer le public est devenu la cible d’une publication dont d’autres maîtrisent la diffusion. Ce renversement de position donne un sens historique à la similitude entre les deux portraits.
+
+> [!INDICATION]
+> Cachez la cible du premier document, puis la légende du pamphlet. Qu’apprend-on de la position publique de Breton quand on les restitue ? Nommez le porteur, le signataire de l’affiche et les voix du tract.
+
 ### Faire voir la guerre sans lui donner deux camps symétriques
 
 La *Construction molle avec haricots bouillis* de Dalí, datée de 1936, ne relève ni du tract collectif ni de l’intervention éphémère. Dans une toile presque carrée, un immense corps composite prend appui sur ses propres parties. Une main serre la chair, un pied pèse sur une masse qui semble appartenir au même organisme. L’ouverture entre les membres laisse voir un morceau de ciel. Au ras du sol, les haricots, le meuble et la petite figure humaine indiquent une échelle dérisoire auprès de cette anatomie monumentale. Les transitions de lumière et le modelé très précis rendent chaque détail crédible. Pourtant, il est impossible d’attribuer à deux combattants distincts les gestes de celui qui déchire et de celui qui souffre.
 
 Le tableau est élaboré à la veille de la guerre civile espagnole. Son sous-titre, « Prémonition de la guerre civile », oriente la lecture historique. Il n’autorise ni à attribuer à la toile un pouvoir de prédiction ni à en déduire à lui seul une adhésion partisane de Dalí. Son apport est plus précis. Une allégorie, c’est une image qui donne une forme visible à une idée : ici, le corps collectif se détruit lui-même. Le visiteur n’a pas besoin d’un uniforme ou d’un drapeau pour éprouver cette idée, mais il a besoin de la date et du titre pour comprendre le conflit visé. On mesure ainsi la distance entre la parole imprimée qui déclare agir et la peinture qui construit une position de témoin.
 
-![Figure 1 — Trois situations de prise de parole. La chronologie distingue la provocation dada, le conflit interne et l’allégorie de guerre civile.](figures/formes-de-l-engagement.svg)
+![Trois situations de prise de parole. La chronologie distingue la provocation dada, le conflit interne et l’allégorie de guerre civile.](figures/formes-de-l-engagement.svg)
 
 Le point commun à ces objets est une modification du rapport ordinaire au public. Le corps porte une affiche, l’imprimé prend la parole, le portrait se retourne contre les signes du génie, le groupe met en scène sa propre rupture et la toile donne une anatomie à la guerre civile. Cette diversité permet de comprendre une tension durable du surréalisme : vouloir changer le monde en changeant les représentations ne dispense jamais de demander quel monde et quelle politique une œuvre engage effectivement.
 
@@ -79,13 +88,18 @@ Passons à la galerie Charles Ratton en 1936 pour l’*Exposition surréaliste d
 
 Le rapprochement fait découvrir. Il peut aussi appauvrir. Des objets d’Océanie ou des Amériques, transportés à travers des circuits de collecte et de commerce, n’étaient pas des trouvailles anonymes pour les sociétés qui les avaient produits. Si le cartel indique seulement ce que le collectionneur européen y a vu, une part de leur histoire disparaît. Une présentation actuelle peut conserver la force d’un rapprochement et restituer à côté le nom de la société productrice lorsqu’il est connu, la fonction documentée, le trajet de l’objet et les lacunes de provenance. On donne alors au public les moyens de reconnaître une analogie proposée par un collectionneur, au lieu de la transformer en identité universelle.
 
+Une petite boîte aide à faire cette expérience. Dans son *Objet* de juin 1931, Valentine Hugo dispose dans une boîte vitrée un tapis de jeu vert, des dés, des mains de mannequins gantées, des épingles et des fils. Les mains deviennent des partenaires possibles du jeu, mais la vitre interdit de lancer les dés. Ce premier rapprochement est construit par l’artiste et fixé dans un volume de 9,5 cm de profondeur. Quand la boîte prend place parmi les pièces du mur de Breton, un autre rapprochement survient, choisi par le collectionneur. Quand le musée lui donne le numéro AM 2003-3 (12), il permet enfin de retrouver une autrice, une date et des matériaux au sein de l’ensemble. Pour un visiteur, distinguer ces trois gestes évite de prêter au seul collectionneur toute l’invention d’une œuvre que la relation de voisinage a rendue plus visible.
+
+> [!INDICATION]
+> Distinguez trois décisions devant la boîte de Valentine Hugo. Qui a assemblé les éléments, qui a choisi un voisinage et qui a attribué le numéro d’inventaire ? Formulez pour chacune une conséquence visible ou documentaire.
+
 ### Que conserve le musée lorsqu’il conserve un mur ?
 
 L’atelier de Breton, au 42 rue Fontaine à Paris, constitue un cas presque inverse du livre transportable. Un mur évoquant la seconde pièce de l’appartement est entré par dation au Musée national d’art moderne en 2003. Le Centre Pompidou dénombre 212 œuvres et objets dans cet ensemble. On peut regarder une pièce séparément, puis reculer pour retrouver des alignements, des contrastes de matières, de tailles et de silhouettes. L’unité pertinente devient parfois l’intervalle entre deux objets. Ce voisinage a lui-même une histoire. Il traduit la durée d’une collection et les choix de Breton, et ne représente pas à lui seul les goûts de toutes les personnes ayant participé au surréalisme.
 
 Dans l’appartement, une chose pouvait être déplacée, montrée à une visiteuse, remplacée. Au musée, on peut étudier et protéger les relations entre ces choses, mais on stabilise une disposition et on sélectionne des informations pour le public. Un mur conservé n’est donc ni une collection intégralement restituée ni un simple décor. C’est un document sur une manière de construire des affinités. Comparé au petit musée mobile de la revue, il rappelle ce que l’image reproduite peine à communiquer : l’épaisseur des objets et leur présence simultanée autour de quelqu’un.
 
-![Figure 2 — Comparer sur la page, dans une vitrine et sur un mur d’atelier. Chaque support conserve une relation et en transforme une autre.](figures/supports-musee-imaginaire.svg)
+![Comparer sur la page, dans une vitrine et sur un mur d’atelier. Chaque support conserve une relation et en transforme une autre.](figures/supports-musee-imaginaire.svg)
 
 Je terminerais la visite par deux questions adressées au public. Quelle relation venez-vous de découvrir grâce au voisinage de deux objets ? Qu’aimeriez-vous maintenant savoir de chacun pris séparément ? La première question préserve la liberté d’association qui animait le surréalisme. La seconde protège les œuvres et les personnes de l’effacement de leur histoire. Le musée imaginaire devient ainsi une méthode de regard dont on peut éprouver à la fois le pouvoir d’invention et les limites.
 
@@ -97,10 +111,12 @@ Je terminerais la visite par deux questions adressées au public. Quelle relatio
 
 ## Documents et reproductions
 
-Les cinq légendes et les deux consignes sont réunies dans le fascicule officiel. Les attendus de l’oral se trouvent aux pages 5 et 6 du rapport. [Sujet de l’ENS de Lyon](https://www.ens-lyon.fr/sites/default/files/2026-11/Arts%202026.pdf#page=15) · [Rapport du jury](https://www.ens-lyon.fr/sites/default/files/2026-10/Arts%20-%20Histoire%20des%20arts%202026.pdf#page=5)
+Le fascicule officiel donne les cinq légendes et les deux consignes à la page 15. Les attendus de l’oral se trouvent aux pages 5 et 6 du rapport. [Sujet de l’ENS de Lyon](https://www.ens-lyon.fr/sites/default/files/2026-11/Arts%202026.pdf#page=15) · [Rapport du jury](https://www.ens-lyon.fr/sites/default/files/2026-10/Arts%20-%20Histoire%20des%20arts%202026.pdf#page=5)
 
 - Le tract et le collage photographique. [Tzara, MoMA](https://www.moma.org/collection/works/184054) · [Ernst, Metropolitan Museum](https://www.metmuseum.org/art/collection/search/923122) · [Boiffard et le pamphlet, Centre Pompidou](https://www.centrepompidou.fr/fr/programme/agenda/evenement/cqp6Bbx)
 
 - De l’image de la cible au tableau de 1936. [Photographie du festival Dada](https://www.bridgemanimages.com/fr/picabia/andre-breton-as-target-sandwich-man-by-picabia-at-dada-festival-paris-march-27-1920-photo/photography/asset/4158315) · [Dalí, Philadelphia Museum of Art](https://www.philamuseum.org/objects/51315)
 
 - Exposition et collection. [Sophie Leclercq, Sciences Po](https://www.sciencespo.fr/artsetsocietes/fr/archives/2451) · [Un objet du mur de Breton et l’ensemble, Centre Pompidou](https://www.centrepompidou.fr/fr/ressources/oeuvre/ca9XzK)
+
+[Cliché de Breton, chronologie d’Henri Béhar](https://www.melusine-surrealisme.fr/henribehar/andre-breton-chronologie-numerique-3) · [Pamphlet, quatre pages et détail](https://www.traces-ecrites.com/document/un-cadavre-violente-charge-contre-andre-breton/) · [Boîte de Valentine Hugo, Centre Pompidou](https://www.centrepompidou.fr/fr/ressources/oeuvre/ca9XzK)

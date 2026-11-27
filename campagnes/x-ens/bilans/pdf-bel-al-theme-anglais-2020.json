@@ -1,0 +1,162 @@
+{
+  "slug": "bel_al_anglais-theme-lyon_2020",
+  "commit_export": "46ed90cd32fe989f27129fb4b960d6f605dfdfd8",
+  "arbre_git": "ebee8ac93be0fc23b479b1f1648877c946455292",
+  "archive": "BEL-AL-theme-anglais-2020.zip",
+  "agent": "lva_pt_2325",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2020-09/2020%20Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=8",
+    "sha256_sujet": "994b2d68067654ccd48e5ab3cd93250544d1ba3909e2d3651b6b2e20aea315ac",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2020-10/Anglais_2020%20internet.pdf#page=14",
+    "sha256_rapport_jury": "b8bbc003adc848e012b206ce76457ac29fccb03c3ab4103aca214eeac91580df",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2020",
+    "pages_sujet_verifiees": [
+      1,
+      8
+    ],
+    "pages_rapport_theme": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ]
+  },
+  "consigne": {
+    "duree_heures": 4,
+    "langue": "anglais",
+    "dictionnaire": "Tout dictionnaire interdit.",
+    "fascicule": "Épreuve de spécialité. La garde cite l’ENS de Lyon et l’ENS Paris-Saclay (langue anglaise).",
+    "annexe": "Texte entier sur une page, sans annexe ou note de bas de page pour ce thème.",
+    "debut": "Le cri d’une bête qu’on égorge",
+    "fin": "décalqués de ses propres rêves.",
+    "page": 8
+  },
+  "controle_paragraphe": [
+    {
+      "numero": 1,
+      "contenu": "Sursaut d’Horace, rectification de la perception, circulation mêlée, main devinée et visage reflété, adieu au vide.",
+      "incipit_anglais": "The scream of an animal having",
+      "explicit_anglais": "hand. A farewell to the void."
+    },
+    {
+      "numero": 2,
+      "contenu": "Soirées du printemps 1915, hôpital, divan, marche puis cabinet, âge et trois fonctions, Brill et l’intérêt pour Freud.",
+      "incipit_anglais": "And so, on certain evenings that",
+      "explicit_anglais": "keen interest in Dr Freud’s method."
+    },
+    {
+      "numero": 3,
+      "contenu": "Renommée et anxiété ancienne, allure, vêtements, destination et ambiance du pub, paroles du patient et sens de la comparaison finale entre les rêves.",
+      "incipit_anglais": "For all his newfound fame, Horace",
+      "explicit_anglais": "have been traced from his own."
+    }
+  ],
+  "editions": {
+    "brut": {
+      "pages": 2,
+      "blocs_compares": {
+        "traduction_anglaise": {
+          "pages": [
+            1
+          ],
+          "lettres_chiffres": 1884,
+          "mots": 426,
+          "paragraphes": 3,
+          "empreinte_normalisee": "6e4f6d8c4231603f7b91becffda6c7669c5a89087d1a9a0efd3ff4bd45242e2e"
+        }
+      },
+      "signets": [
+        {
+          "titre": "Traduction en anglais",
+          "page": 1,
+          "ecart_points": 6.8
+        }
+      ],
+      "figures": [
+        {
+          "question": "Traduction en anglais",
+          "fichier": "figures/traduction.svg",
+          "legende": "La promenade de Frink entre perception et souvenir",
+          "page": 2,
+          "sha256_svg": "d3c556ce0c7d68821d72ac11ce18344441c1658430fbe01172a1b44086b6fa9a",
+          "sha256_forme_pdf": "6ed9e1d76d4354d83432de5ed676a8f3a92c8e7d24a8f1c5a2571564af509438"
+        }
+      ],
+      "liens_sources": [
+        "https://www.ens-lyon.fr/sites/default/files/2020-09/2020%20Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=8",
+        "https://www.ens-lyon.fr/sites/default/files/2020-10/Anglais_2020%20internet.pdf#page=14"
+      ],
+      "signatures_sur_premiere_page": [
+        "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+        "**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+      ],
+      "diagnostic_latex_propre": true,
+      "sha256_markdown": "7f6e7e68e134f1db3201daa69e68cccb81532217b8899423e99ec88c223a0f65",
+      "sha256_pdf": "67cf9112b914c590644a7af58b08c9e7f9bd418c37d59ecf0820771dedc2f48e"
+    },
+    "guide": {
+      "pages": 2,
+      "blocs_compares": {
+        "traduction_anglaise": {
+          "pages": [
+            1,
+            2
+          ],
+          "lettres_chiffres": 1884,
+          "mots": 426,
+          "paragraphes": 3,
+          "empreinte_normalisee": "6e4f6d8c4231603f7b91becffda6c7669c5a89087d1a9a0efd3ff4bd45242e2e"
+        }
+      },
+      "signets": [
+        {
+          "titre": "Préparer le thème",
+          "page": 1,
+          "ecart_points": 6.8
+        },
+        {
+          "titre": "Traduction en anglais",
+          "page": 1,
+          "ecart_points": 9.1
+        }
+      ],
+      "figures": [
+        {
+          "question": "Traduction en anglais",
+          "fichier": "figures/traduction.svg",
+          "legende": "La promenade de Frink entre perception et souvenir",
+          "page": 1,
+          "sha256_svg": "d3c556ce0c7d68821d72ac11ce18344441c1658430fbe01172a1b44086b6fa9a",
+          "sha256_forme_pdf": "6ed9e1d76d4354d83432de5ed676a8f3a92c8e7d24a8f1c5a2571564af509438"
+        }
+      ],
+      "liens_sources": [
+        "https://www.ens-lyon.fr/sites/default/files/2020-09/2020%20Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=8",
+        "https://www.ens-lyon.fr/sites/default/files/2020-10/Anglais_2020%20internet.pdf#page=14"
+      ],
+      "signatures_sur_premiere_page": [
+        "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+        "**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+      ],
+      "diagnostic_latex_propre": true,
+      "sha256_markdown": "8d7530caae1ab281c0a60710ab1ca82b56ba553af425088ae23542648a2d5c2a",
+      "sha256_pdf": "f144fafdc9ac8422d24c521ce58f00fa33fab30adc540f5ec9528e0caf95c26f"
+    }
+  },
+  "sha256_contenus": {
+    "guide.md": "8d7530caae1ab281c0a60710ab1ca82b56ba553af425088ae23542648a2d5c2a",
+    "brut.md": "7f6e7e68e134f1db3201daa69e68cccb81532217b8899423e99ec88c223a0f65",
+    "meta.json": "d53ebd568c0a0ca041405d599fe2c2d412204e0dc9bb5785d2199e1ca4319654",
+    "journal-revision.json": "10f60bcb7025251a23f40a8cb0e218a0d9666aee83f05dc0baff2486c42492ce",
+    "figures/traduction.svg": "d3c556ce0c7d68821d72ac11ce18344441c1658430fbe01172a1b44086b6fa9a",
+    "brut.pdf": "67cf9112b914c590644a7af58b08c9e7f9bd418c37d59ecf0820771dedc2f48e",
+    "guide.pdf": "f144fafdc9ac8422d24c521ce58f00fa33fab30adc540f5ec9528e0caf95c26f"
+  },
+  "sha256_archive": "312562b99d30c0ca579d8e5031970cc29aaf01750a1b0cf9c2e9623b2a683767"
+}

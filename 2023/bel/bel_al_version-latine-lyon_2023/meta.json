@@ -1,0 +1,87 @@
+{
+  "slug": "bel_al_version-latine-lyon_2023",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Version latine (Lyon)",
+    "annee": 2023
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2023-09/Epreuve-de-specialite.pdf#page=5",
+    "sujet_sha256": "d646a518fbe4febf8a67e582f0310174ed455fa1f7d2c93d37f450a6420673a2",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2023-11/Latin-2023.pdf#page=2",
+    "rapport_sha256": "e6f33e0597a45318f0921ab2cb7475a4ccf187b6986a01e4a8483aaf88ebe68b",
+    "archive_session": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2023",
+    "archive_session_sha256": "f6056d10df69cb1cd23d19cee5fd113ebee95a1de79dd9a39e5b1a150e9e01d6",
+    "auteur_oeuvre": "Ovide, Tristes, III, 10."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Version française",
+      "legende": "Le fleuve change de fonction"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Version française originale en prose de tout le feuillet de spécialité, notes sur les lemmes de l’imprimé, schéma et guide de construction."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rapprochement de chacun des quatorze distiques avec la prose française. Vérification du changement d’état du vin, du Nil et de l’ablatif absolu des vents. Précision sur l’écart entre ipse et Hister."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Version française",
+        "page_pdf": 5,
+        "page_pdf_fin": 5,
+        "perimetre": "Les vingt-huit vers du feuillet « Un hiver chez les barbares », de Sauromatae cingunt à ungula pulsat equi. Les numéros employés ici repartent du premier vers de l’extrait.",
+        "pages_rapport": [
+          2,
+          4
+        ]
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

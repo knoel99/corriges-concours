@@ -1,0 +1,327 @@
+{
+  "slug": "x_ta_deuxieme-epreuve-de-mathematiques_1989",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "TA",
+    "filiere_historique": "T.A.",
+    "matiere": "Deuxième épreuve de mathématiques",
+    "annee": 1989,
+    "modalite": "écrit"
+  },
+  "questions": 25,
+  "duree_heures": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-fbfdb235c2e55104db0d",
+    "sujet_sha256": "8dbe04c62d09dd187c5e8e5460751a75ba1a1c348bf37a8b3ffa4e5a872c16b0",
+    "notice_ups": "m89mi2",
+    "calendrier": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000884199",
+    "provenance": "Le sujet imprimé comporte six feuillets répartis sur les vues 111 à 113 du recueil et attribue la deuxième épreuve à l’option T.A. En II.1.b, la moyenne de S annoncée nulle sur un demi-intervalle est contredite par le premier sinus. Les deux éditions démontrent la formule exacte. La dernière somme débute bien en n égal à zéro."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "document": "m89mi2ea",
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-fbfdb235c2e55104db0d",
+      "sha256": "8dbe04c62d09dd187c5e8e5460751a75ba1a1c348bf37a8b3ffa4e5a872c16b0",
+      "pages": 3,
+      "rendu_page_sha256": [
+        "d236ca048cc6ec59f6b5c5e5c67f3d233fe09d0ef6c96bc9c9ae752228c640b8",
+        "99966f1765a1d532ad6f0d8c0fc4a3b8510814bee1d2cf7d0a162c23554d9619",
+        "5482a0bd8a985b8811f0b9b673a8ec9e5d0afb46c5e41d29a760d7a4a1387609"
+      ]
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "x_hist_1986",
+      "session": "x_hist_1986",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction originale des 25 rubriques, des indications et des deux figures. Le sujet imprimé comporte six feuillets répartis sur les vues 111 à 113 du recueil et attribue la deuxième épreuve à l’option T.A. En II.1.b, la moyenne de S annoncée nulle sur un demi-intervalle est contredite par le premier sinus. Les deux éditions démontrent la formule exacte. La dernière somme débute bien en n égal à zéro."
+    }
+  ],
+  "figures": [
+    {
+      "question": "I.1.a",
+      "numero": 1,
+      "fichier": "figures/fonction-triangulaire.svg",
+      "legende": "Le prolongement pair est continu. Les sommets sont les seuls points où les deux pentes diffèrent."
+    },
+    {
+      "question": "I.2.a",
+      "numero": 2,
+      "fichier": "figures/dents-de-scie.svg",
+      "legende": "Le prolongement impair prend la valeur zéro aux points pleins. Les deux cercles ouverts marquent les limites latérales du saut."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1.a",
+      "I.1.b",
+      "I.1.c",
+      "I.2.a",
+      "I.2.b",
+      "I.2.c",
+      "II.1.a",
+      "II.1.b",
+      "II.2.a",
+      "II.2.b",
+      "II.3.a",
+      "II.3.b",
+      "II.3.c",
+      "II.4.a",
+      "II.4.b",
+      "II.4.c",
+      "II.4.d",
+      "II.4.e",
+      "III.1.a",
+      "III.1.b",
+      "III.1.c",
+      "III.2.a",
+      "III.2.b",
+      "III.3.a",
+      "III.3.b"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "I.1.a",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 111
+      },
+      {
+        "question": "I.1.b",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 111
+      },
+      {
+        "question": "I.1.c",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 111
+      },
+      {
+        "question": "I.2.a",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 111
+      },
+      {
+        "question": "I.2.b",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 111
+      },
+      {
+        "question": "I.2.c",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 111
+      },
+      {
+        "question": "II.1.a",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 111
+      },
+      {
+        "question": "II.1.b",
+        "page_pdf": 1,
+        "pages_pdf": [
+          1
+        ],
+        "feuillet_imprime": 2,
+        "page_recueil": 111
+      },
+      {
+        "question": "II.2.a",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3,
+        "page_recueil": 112
+      },
+      {
+        "question": "II.2.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3,
+        "page_recueil": 112
+      },
+      {
+        "question": "II.3.a",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3,
+        "page_recueil": 112
+      },
+      {
+        "question": "II.3.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3,
+        "page_recueil": 112
+      },
+      {
+        "question": "II.3.c",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 3,
+        "page_recueil": 112
+      },
+      {
+        "question": "II.4.a",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 4,
+        "page_recueil": 112
+      },
+      {
+        "question": "II.4.b",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 4,
+        "page_recueil": 112
+      },
+      {
+        "question": "II.4.c",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 4,
+        "page_recueil": 112
+      },
+      {
+        "question": "II.4.d",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 4,
+        "page_recueil": 112
+      },
+      {
+        "question": "II.4.e",
+        "page_pdf": 2,
+        "pages_pdf": [
+          2
+        ],
+        "feuillet_imprime": 4,
+        "page_recueil": 112
+      },
+      {
+        "question": "III.1.a",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ],
+        "feuillet_imprime": 5,
+        "page_recueil": 113
+      },
+      {
+        "question": "III.1.b",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ],
+        "feuillet_imprime": 5,
+        "page_recueil": 113
+      },
+      {
+        "question": "III.1.c",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ],
+        "feuillet_imprime": 5,
+        "page_recueil": 113
+      },
+      {
+        "question": "III.2.a",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ],
+        "feuillet_imprime": 6,
+        "page_recueil": 113
+      },
+      {
+        "question": "III.2.b",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ],
+        "feuillet_imprime": 6,
+        "page_recueil": 113
+      },
+      {
+        "question": "III.3.a",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ],
+        "feuillet_imprime": 6,
+        "page_recueil": 113
+      },
+      {
+        "question": "III.3.b",
+        "page_pdf": 3,
+        "pages_pdf": [
+          3
+        ],
+        "feuillet_imprime": 6,
+        "page_recueil": 113
+      }
+    ],
+    "precision": "Le sujet imprimé comporte six feuillets répartis sur les vues 111 à 113 du recueil et attribue la deuxième épreuve à l’option T.A. En II.1.b, la moyenne de S annoncée nulle sur un demi-intervalle est contredite par le premier sinus. Les deux éditions démontrent la formule exacte. La dernière somme débute bien en n égal à zéro."
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "slug": "x_mp_premiere-composition-de-mathematiques_1997",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Première composition de mathématiques",
+    "annee": 1997
+  },
+  "questions": 20,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.sujetsetcorriges.fr/dl/X/Maths/MP/sec-x-1997-maths1-MP.pdf",
+    "sha256_sujet": "e91ceff517c6c58a22c32ee06012660c3debec1c71565e21af49b16a9b0cd798",
+    "rapport_jury": "",
+    "provenance": "Reproduction du sujet du concours d’admission diffusée par Sujets et Corrigés, 3 pages. La garde, la suite des consignes et la dernière page ont été contrôlées."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lobes-du-sinus-cardinal.svg",
+      "question": "7",
+      "legende": "Les aires entre la courbe et l’axe alternent de signe. Leur valeur absolue décroît entre deux zéros successifs."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "maths_x_mp_1997_1999",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rédaction intégrale des deux éditions sur les 3 pages du fac-similé. 20 consignes pointées. I. Régularité höldérienne et complétude ; II. Une intégrale singulière périodique ; III. Multiplicateurs de Fourier ; IV. Valeur principale sur un segment. Vérification des démonstrations, des notations et des bornes."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2.a",
+      "2.b",
+      "3",
+      "4",
+      "5.a",
+      "5.b",
+      "5.c",
+      "5.d",
+      "6",
+      "7",
+      "8.a",
+      "8.b",
+      "8.c",
+      "8.d",
+      "8.e",
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1",
+        "page_pdf": 1
+      },
+      {
+        "question": "2.a",
+        "page_pdf": 1
+      },
+      {
+        "question": "2.b",
+        "page_pdf": 1
+      },
+      {
+        "question": "3",
+        "page_pdf": 1
+      },
+      {
+        "question": "4",
+        "page_pdf": 1
+      },
+      {
+        "question": "5.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "5.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "5.c",
+        "page_pdf": 2
+      },
+      {
+        "question": "5.d",
+        "page_pdf": 2
+      },
+      {
+        "question": "6",
+        "page_pdf": 2
+      },
+      {
+        "question": "7",
+        "page_pdf": 2
+      },
+      {
+        "question": "8.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "8.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "8.c",
+        "page_pdf": 2
+      },
+      {
+        "question": "8.d",
+        "page_pdf": 3
+      },
+      {
+        "question": "8.e",
+        "page_pdf": 3
+      },
+      {
+        "question": "9",
+        "page_pdf": 3
+      },
+      {
+        "question": "10",
+        "page_pdf": 3
+      },
+      {
+        "question": "11",
+        "page_pdf": 3
+      },
+      {
+        "question": "12",
+        "page_pdf": 3
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

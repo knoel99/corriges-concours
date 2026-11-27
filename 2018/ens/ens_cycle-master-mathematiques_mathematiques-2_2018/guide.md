@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Les candidats choisissaient un des deux sujets. La première option étudie des urnes renforcées et les mesures de mélange. La seconde construit des interpolants polynomiaux positifs. Les préfixes P et N distinguent leurs numérotations.
 
 ## Probabilités. Premières propriétés des urnes
@@ -567,6 +569,8 @@ Le polynôme concerné est $q_n$, interpolant $f_h$ (désigné $p_n$ dans la nor
 
 Prenons $p(x)=(x-1/8)(x-3/8)$. Il est positif aux nœuds $0,1/2,1$ et négatif entre ses racines. La fonction $f(x)=\max(p(x),1/128)$ est strictement positive et prend les mêmes valeurs que $p$ aux trois nœuds, où le minimum vaut $3/64$. Par unicité son interpolant est $p$.
 
+![Détail du contre-exemple près de zéro. Les courbes coïncident aux trois nœuds, dont le troisième, en 1, a une ordonnée de 35/64 au-delà de la fenêtre. Le polynôme est négatif entre 1/8 et 3/8.](figures/perte-de-positivite.svg)
+
 ### Question N.5
 
 > [!INDICATION]
@@ -878,3 +882,7 @@ Prolongeons $f$ de classe $C^1$ hors de $[0,1]$, par ses tangentes aux deux extr
 #### Solution
 
 Au point $(0,X_*)$, N.16 donne $\Phi=0$ et N.17.c l’inversibilité de la dérivée en $X$. N.18 permet d’appliquer le théorème des fonctions implicites. Pour $|h|$ assez petit, il existe $X(h)$ de classe $C^1$ avec $X(0)=X_*$ et $\Phi(h,X(h))=0$. L’ordre strict des nœuds persiste par continuité. Choisir $0<h_0\le1$ dans ce voisinage ; N.15 fournit, pour chaque $0\le h\le h_0$, un interpolant positif de $f_h$ aux $2m+2$ nœuds, ce qui résout le problème dans le degré impair étudié. Pour $m=0$, l’interpolant affine aux deux bornes suffit directement.
+
+On peut aussi vérifier l’existence dans le Problème 1 pour tout degré fixé $n$, y compris pair. Choisissons $n+1$ nœuds distincts fixes et notons $\ell_i$ leurs polynômes de Lagrange. Comme $\sum_i\ell_i=1$, l’interpolant $q_h$ de $f(h\,\cdot)$ satisfait
+$$\|q_h-f(0)\|_\infty\le\left(\max_{x\in[0,1]}\sum_i|\ell_i(x)|\right)\sup_{0\le t\le h}|f(t)-f(0)|.$$
+La constante entre parenthèses est finie et indépendante de $h$. Par continuité en zéro, le membre de droite est inférieur à $f(0)/2$ pour tout $h$ assez petit. Cela donne un interpolant strictement positif. La construction de la partie 4 fournit en plus les nœuds et les deux carrés de la représentation demandée.

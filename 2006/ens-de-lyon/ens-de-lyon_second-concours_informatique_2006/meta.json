@@ -1,0 +1,96 @@
+{
+  "slug": "ens-de-lyon_second-concours_informatique_2006",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Informatique",
+    "annee": 2006,
+    "duree_heures": 3
+  },
+  "questions": 14,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours/session-2006/sujet-ecrit-2006-second-concours_informatique.pdf",
+    "sujet_sha256": "7577748cd890bc734ef028aef42614b3c9a03d914519545d741408e3afdc7b36",
+    "index_banque": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/"
+  },
+  "figures": [
+    {
+      "fichier": "figures/rencontre-des-equipes.svg",
+      "question": "6",
+      "legende": "Figure 1 — Sur une chaîne de durées 2 et 6, le meilleur sommet de rencontre donne un délai de 6. Le milieu temporel du trajet donne un délai de 4."
+    },
+    {
+      "fichier": "figures/transvasements-autorises.svg",
+      "question": "9",
+      "legende": "Figure 2 — Un point dans la colonne d’arrivée et la ligne de départ représente un transvasement possible. La matrice dessine chacun des 58 arcs du graphe."
+    },
+    {
+      "fichier": "figures/frontiere-des-volumes.svg",
+      "question": "12",
+      "legende": "Figure 3 — Pour les capacités 7, 5 et 4, la coupe du coin supérieur droit laisse seize points entiers sur le bord du domaine."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "info_suite",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 14 questions sur le fac-similé. Traitement du trajet vide, de la fiabilité nulle et des durées nulles. Énumération des 16 configurations et des 58 arcs dirigés, vérification des coûts optimaux de partage. Trois schémas originaux."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
+    "reperes_par_page_du_pdf": {
+      "3": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "4": [
+        "7"
+      ],
+      "5": [
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ]
+    },
+    "precision": "Les 14 numéros du fac-similé institutionnel ont été rapprochés dans leur ordre des solutions de la rédaction signée. Chaque édition présente une solution pour chaque numéro. Les formulations vérifiées sont celles de la contribution archivée.",
+    "origine_attestation": {
+      "commit_du_journal": "22a6bbdf92304102b02d691bd127ab42fc2dc6fd",
+      "phase": "redaction",
+      "date": "2026-11-25",
+      "perimetre": "Rédaction des 14 questions sur le fac-similé. Traitement du trajet vide, de la fiabilité nulle et des durées nulles. Énumération des 16 configurations et des 58 arcs dirigés, vérification des coûts optimaux de partage. Trois schémas originaux.",
+      "sha256_sujet_controle": "7577748cd890bc734ef028aef42614b3c9a03d914519545d741408e3afdc7b36"
+    }
+  }
+}

@@ -1,0 +1,858 @@
+{
+  "slug": "ens-de-lyon_second-concours_physique_2025",
+  "commit_export": "853aac40aba245e6e9b3c36230c61e0d42b4252a",
+  "branche": "relecture/lyon-second-physique-2024-2026",
+  "gabarit": "scripts/exporter au commit indiqué",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "A7",
+      "A8",
+      "A9",
+      "A10",
+      "B1",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "B6",
+      "B7",
+      "B8",
+      "B9",
+      "B10",
+      "B11",
+      "B12",
+      "B13",
+      "B14",
+      "B15",
+      "B16",
+      "B17",
+      "B18",
+      "B19",
+      "B20",
+      "B21",
+      "B22",
+      "B23",
+      "B24",
+      "B25",
+      "B26"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "correspondance": [
+      {
+        "question": "A1",
+        "page_pdf": 2
+      },
+      {
+        "question": "A2",
+        "page_pdf": 2
+      },
+      {
+        "question": "A3",
+        "page_pdf": 2
+      },
+      {
+        "question": "A4",
+        "page_pdf": 2
+      },
+      {
+        "question": "A5",
+        "page_pdf": 2
+      },
+      {
+        "question": "A6",
+        "page_pdf": 2
+      },
+      {
+        "question": "A7",
+        "page_pdf": 2
+      },
+      {
+        "question": "A8",
+        "page_pdf": 2
+      },
+      {
+        "question": "A9",
+        "page_pdf": 2
+      },
+      {
+        "question": "A10",
+        "page_pdf": 2
+      },
+      {
+        "question": "B1",
+        "page_pdf": 4
+      },
+      {
+        "question": "B2",
+        "page_pdf": 4
+      },
+      {
+        "question": "B3",
+        "page_pdf": 4
+      },
+      {
+        "question": "B4",
+        "page_pdf": 4
+      },
+      {
+        "question": "B5",
+        "page_pdf": 4
+      },
+      {
+        "question": "B6",
+        "page_pdf": 4
+      },
+      {
+        "question": "B7",
+        "page_pdf": 4
+      },
+      {
+        "question": "B8",
+        "page_pdf": 4
+      },
+      {
+        "question": "B9",
+        "page_pdf": 4
+      },
+      {
+        "question": "B10",
+        "page_pdf": 4
+      },
+      {
+        "question": "B11",
+        "page_pdf": 5
+      },
+      {
+        "question": "B12",
+        "page_pdf": 5
+      },
+      {
+        "question": "B13",
+        "page_pdf": 5
+      },
+      {
+        "question": "B14",
+        "page_pdf": 5
+      },
+      {
+        "question": "B15",
+        "page_pdf": 5
+      },
+      {
+        "question": "B16",
+        "page_pdf": 5
+      },
+      {
+        "question": "B17",
+        "page_pdf": 5
+      },
+      {
+        "question": "B18",
+        "page_pdf": 5
+      },
+      {
+        "question": "B19",
+        "page_pdf": 5
+      },
+      {
+        "question": "B20",
+        "page_pdf": 5
+      },
+      {
+        "question": "B21",
+        "page_pdf": 6
+      },
+      {
+        "question": "B22",
+        "page_pdf": 6
+      },
+      {
+        "question": "B23",
+        "page_pdf": 6
+      },
+      {
+        "question": "B24",
+        "page_pdf": 6
+      },
+      {
+        "question": "B25",
+        "page_pdf": 6
+      },
+      {
+        "question": "B26",
+        "page_pdf": 6
+      }
+    ],
+    "figures_du_sujet": [
+      {
+        "numero": 1,
+        "page_pdf": 3
+      }
+    ],
+    "fichiers_associes": "Le registre de physique sépare le sujet et le rapport écrit du rapport oral. Les pièces de l’écrit ne comportent pas de pièce jointe et toutes les figures utiles sont imprimées dans le sujet."
+  },
+  "interventions": [
+    {
+      "phase": "redaction",
+      "modele": null,
+      "vitesse": null,
+      "effort": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Corrigés brut et guidé.",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "agent": "physique_psi"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-24",
+      "modifications": null,
+      "perimetre": "Numérotations de A1 à A10 et B1 à B26 vérifiées sur le sujet et rapport écrit consulté. Contre-calcul indépendant des deux flux de chaleur, du rapport α/h, de la condition de surface homogène et de la non-séparabilité du champ initial. Contrôle numérique des profils par modes de Bessel.",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "tour": 2,
+      "modifications": true,
+      "perimetre": "Relecture des éditions brute et guidée. Comparaison des dix questions courtes et des vingt-six questions de thermodynamique avec le sujet et le rapport de jury. Contrôle de la condition de bord du tissu, du temps diffusif et du premier mode cylindrique pour les paramètres de l’énoncé.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "agent": "lva_pt_2325",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "tour": 3,
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle des dix réponses de cours et des 26 questions du problème, vérification des puissances d’évaporation, du signe de la condition de surface, des trois premiers modes et de leurs projections. Précision de la portance hydrostatique et de la légende des modes."
+    }
+  ],
+  "pieces": {
+    "index": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/",
+    "sha256_index": "1cf45e0a75bfb34a6d334abc69ca5a772ab6dc9302222638e7521653102252e3",
+    "ancrages": [
+      {
+        "texte": "Écrit physique",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_sujet_phys.pdf"
+      },
+      {
+        "texte": "Écrit physique",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_rap_ePhy.pdf"
+      },
+      {
+        "texte": "Oral physique",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_rap_oPhy.pdf"
+      }
+    ],
+    "sujet": {
+      "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_sujet_phys.pdf",
+      "sha256": "cc93f13f3c1c01b279a72d9d65864f4f711f3c8875f95c11277fe2bce250d980",
+      "pages": 6,
+      "pieces_jointes": [],
+      "rendus": [
+        {
+          "page": 1,
+          "sha256_rendu": "ddc04e80f5aa42fbea10b1534b4f6be57c7a3d8babacd432c1156aec66ba7e00",
+          "liens": []
+        },
+        {
+          "page": 2,
+          "sha256_rendu": "b28f05f53b6929e2a881c1b726f8a16ede6f910a78621a1b87e1f1e3418055c5",
+          "liens": []
+        },
+        {
+          "page": 3,
+          "sha256_rendu": "c2d8fe2fc8ed62ede0dc95bd24980bfb267fc6d778e85e617d9cbf3df6de9c5c",
+          "liens": []
+        },
+        {
+          "page": 4,
+          "sha256_rendu": "acbd100886051467729e3a0b1a2ce66a0ea94af9bbb463be524202fdc64c71ec",
+          "liens": []
+        },
+        {
+          "page": 5,
+          "sha256_rendu": "82e168db19a0ffe3fa7170d71621598d9c84ea88e4d0226f25ec37a3b0f96d1a",
+          "liens": []
+        },
+        {
+          "page": 6,
+          "sha256_rendu": "b8831ed558547d183fe942f70cf7b1e39f5b816082f2bfd19cd7bc3fce3c4df5",
+          "liens": []
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_rap_ePhy.pdf",
+      "sha256": "2a497f831446d033d7b1bd237009f98049811a8bc1e9a5ebb3cd22e8109bb592",
+      "pages": 1,
+      "pieces_jointes": [],
+      "rendus": [
+        {
+          "page": 1,
+          "sha256_rendu": "2f1617320094069e83ee9e20f2ac04b9be4e3fadefefcf83105edbb427b69c8d",
+          "liens": []
+        }
+      ]
+    }
+  },
+  "controle_reseau": {
+    "index": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/",
+    "sha256_index": "ea09d8707f4a4b4059849c735fcc2c1d4644239d13e727c05952b157792c06f9",
+    "pdf": [
+      {
+        "annee": 2025,
+        "piece": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_sujet_phys.pdf",
+        "sha256": "cc93f13f3c1c01b279a72d9d65864f4f711f3c8875f95c11277fe2bce250d980",
+        "octets": 490574,
+        "identique": true
+      },
+      {
+        "annee": 2025,
+        "piece": "rapport",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_rap_ePhy.pdf",
+        "sha256": "2a497f831446d033d7b1bd237009f98049811a8bc1e9a5ebb3cd22e8109bb592",
+        "octets": 84747,
+        "identique": true
+      }
+    ]
+  },
+  "resultats_calcules": [
+    "Racine, coefficient modal projeté 1.989814714719699 1.5028690865929264",
+    "Racine, coefficient modal projeté 4.7131422869460025 -0.7973153083735692",
+    "Racine, coefficient modal projeté 7.61770770506266 0.4841845784990373",
+    "Fluide et surface (W/m², K), Bi, temps diffusif (h), temps du mode lent (h) 359.99999999999994 11.999999999999998 5.0 19.44444444444445 4.911003718066314"
+  ],
+  "pdf": {
+    "brut": {
+      "pages": 7,
+      "signets": [
+        [
+          1,
+          "Partie A — Questionnaire de physique",
+          1
+        ],
+        [
+          2,
+          "Question A1",
+          1
+        ],
+        [
+          2,
+          "Question A2",
+          1
+        ],
+        [
+          2,
+          "Question A3",
+          2
+        ],
+        [
+          2,
+          "Question A4",
+          2
+        ],
+        [
+          2,
+          "Question A5",
+          2
+        ],
+        [
+          2,
+          "Question A6",
+          2
+        ],
+        [
+          2,
+          "Question A7",
+          2
+        ],
+        [
+          2,
+          "Question A8",
+          2
+        ],
+        [
+          2,
+          "Question A9",
+          2
+        ],
+        [
+          2,
+          "Question A10",
+          2
+        ],
+        [
+          1,
+          "Partie B — Principe de fonctionnement d'un réfrigérateur du désert",
+          2
+        ],
+        [
+          2,
+          "Considérations préliminaires",
+          2
+        ],
+        [
+          3,
+          "Question B1",
+          2
+        ],
+        [
+          3,
+          "Question B2",
+          3
+        ],
+        [
+          3,
+          "Question B3",
+          3
+        ],
+        [
+          3,
+          "Question B4",
+          3
+        ],
+        [
+          3,
+          "Question B5",
+          4
+        ],
+        [
+          2,
+          "Champ de température dans le cylindre",
+          4
+        ],
+        [
+          3,
+          "Question B6",
+          4
+        ],
+        [
+          3,
+          "Question B7",
+          4
+        ],
+        [
+          3,
+          "Question B8",
+          4
+        ],
+        [
+          3,
+          "Question B9",
+          4
+        ],
+        [
+          3,
+          "Question B10",
+          5
+        ],
+        [
+          3,
+          "Question B11",
+          5
+        ],
+        [
+          2,
+          "Régime stationnaire",
+          5
+        ],
+        [
+          3,
+          "Question B12",
+          5
+        ],
+        [
+          3,
+          "Question B13",
+          5
+        ],
+        [
+          3,
+          "Question B14",
+          5
+        ],
+        [
+          3,
+          "Question B15",
+          5
+        ],
+        [
+          3,
+          "Question B16",
+          6
+        ],
+        [
+          3,
+          "Question B17",
+          6
+        ],
+        [
+          3,
+          "Question B18",
+          6
+        ],
+        [
+          3,
+          "Question B19",
+          6
+        ],
+        [
+          3,
+          "Question B20",
+          6
+        ],
+        [
+          2,
+          "Régime transitoire",
+          6
+        ],
+        [
+          3,
+          "Question B21",
+          6
+        ],
+        [
+          3,
+          "Question B22",
+          6
+        ],
+        [
+          3,
+          "Question B23",
+          6
+        ],
+        [
+          3,
+          "Question B24",
+          7
+        ],
+        [
+          3,
+          "Question B25",
+          7
+        ],
+        [
+          3,
+          "Question B26",
+          7
+        ]
+      ],
+      "nombre_signets": 42,
+      "signets_questions": 36,
+      "pages_figures": [
+        1,
+        3,
+        3,
+        4,
+        5,
+        7
+      ],
+      "sha256": "99c44edacc20e2d28b9ab4cd109d52c83b0d0745ab6e1a9e72ec8da68671a653",
+      "rendus_sha256": [
+        "51d4ad052ce5bbcf6cca98a9b5e11b63c93d1185dc00ea8b3c338b1a37a2333d",
+        "26bdeb0096fc2c4b2fe4845d1ba5e937a63e8b56386a681d5f605e973b9c415a",
+        "393e42c8d61380af56dbd9af58beaec956b8744303e9b31fd02790087d7acccf",
+        "36262da54550fcfe585c6e5f9fc31a00de479f0eb08abd2d1497d39f854b09a3",
+        "26f0eb77ad69ac7ef3762e3ded820e08deca33321ec58809aad80b481770147e",
+        "de7335868f4fe680f741525308dbe142b452e1d927ac67d4a972f157cb667afe",
+        "570c5074d0ea5ee8377c390b7f5a542c6d63b938006f768e766136fb7df7fa7a"
+      ]
+    },
+    "guide": {
+      "pages": 11,
+      "signets": [
+        [
+          1,
+          "Présentation du sujet",
+          1
+        ],
+        [
+          1,
+          "Partie A — Questionnaire de physique",
+          1
+        ],
+        [
+          2,
+          "Question A1",
+          1
+        ],
+        [
+          2,
+          "Question A2",
+          1
+        ],
+        [
+          2,
+          "Question A3",
+          2
+        ],
+        [
+          2,
+          "Question A4",
+          2
+        ],
+        [
+          2,
+          "Question A5",
+          2
+        ],
+        [
+          2,
+          "Question A6",
+          3
+        ],
+        [
+          2,
+          "Question A7",
+          3
+        ],
+        [
+          2,
+          "Question A8",
+          3
+        ],
+        [
+          2,
+          "Question A9",
+          3
+        ],
+        [
+          2,
+          "Question A10",
+          3
+        ],
+        [
+          1,
+          "Partie B — Principe de fonctionnement d'un réfrigérateur du désert",
+          4
+        ],
+        [
+          2,
+          "Considérations préliminaires",
+          4
+        ],
+        [
+          3,
+          "Question B1",
+          4
+        ],
+        [
+          3,
+          "Question B2",
+          4
+        ],
+        [
+          3,
+          "Question B3",
+          4
+        ],
+        [
+          3,
+          "Question B4",
+          5
+        ],
+        [
+          3,
+          "Question B5",
+          5
+        ],
+        [
+          2,
+          "Champ de température dans le cylindre",
+          5
+        ],
+        [
+          3,
+          "Question B6",
+          5
+        ],
+        [
+          3,
+          "Question B7",
+          6
+        ],
+        [
+          3,
+          "Question B8",
+          6
+        ],
+        [
+          3,
+          "Question B9",
+          6
+        ],
+        [
+          3,
+          "Question B10",
+          7
+        ],
+        [
+          3,
+          "Question B11",
+          7
+        ],
+        [
+          2,
+          "Régime stationnaire",
+          7
+        ],
+        [
+          3,
+          "Question B12",
+          7
+        ],
+        [
+          3,
+          "Question B13",
+          8
+        ],
+        [
+          3,
+          "Question B14",
+          8
+        ],
+        [
+          3,
+          "Question B15",
+          8
+        ],
+        [
+          3,
+          "Question B16",
+          8
+        ],
+        [
+          3,
+          "Question B17",
+          8
+        ],
+        [
+          3,
+          "Question B18",
+          8
+        ],
+        [
+          3,
+          "Question B19",
+          9
+        ],
+        [
+          3,
+          "Question B20",
+          9
+        ],
+        [
+          2,
+          "Régime transitoire",
+          9
+        ],
+        [
+          3,
+          "Question B21",
+          9
+        ],
+        [
+          3,
+          "Question B22",
+          9
+        ],
+        [
+          3,
+          "Question B23",
+          10
+        ],
+        [
+          3,
+          "Question B24",
+          10
+        ],
+        [
+          3,
+          "Question B25",
+          10
+        ],
+        [
+          3,
+          "Question B26",
+          10
+        ],
+        [
+          1,
+          "Bilan",
+          11
+        ]
+      ],
+      "nombre_signets": 44,
+      "signets_questions": 36,
+      "pages_figures": [
+        2,
+        4,
+        5,
+        6,
+        7,
+        11
+      ],
+      "sha256": "dd539d3a8f2ea96acf1cf463820c116f5a0fc28ba44f378e25f3b4a9baff8b78",
+      "rendus_sha256": [
+        "bf987df3a1b38a8205ed9f3d6e802507c1aa9cbf908ec0e0456f7a980f9e6301",
+        "f25f380ab391c3c167cdb7544a80a0930f6a2557f162ee529f2a86e3089a2213",
+        "55925f6381f09f87e35d5be8472ba06b21503ce6a1b75110110834d59c93ffc4",
+        "ab42f6dbfa839c917416690e87519a4fe7711c9425e2050751e802c32bababf3",
+        "f0ebb064facd13458a8e6cde584ac5901f0d2f0bd27a72db7e124d40c63069f7",
+        "7303c58b231875dd1e476174c9f0d7676f956fb81331f1205d742fc8d2abd8a6",
+        "006576b48e46b1360e79162cbf0b1bbddbb5b265fb6bb524aa3648c31c08b743",
+        "5494e6b541d51d990b8458c4abb41f60b73f70eeb0d29dd032eb9e2ff515b7a6",
+        "75e9cfdf4c42e721796a48c82209e691692e27e54a84dbb8919b6075e0d89b52",
+        "26a0c7d8940e465ab76dffa24d133389319da21a5fb4ab4f36607b453794ca32",
+        "18c2278c4b008b2d126ee5a9ffba84d8631d1343bb2de2ea1876fdc3905f358a"
+      ]
+    }
+  },
+  "empreintes": {
+    "brut.md": "035357860ef0db5fb021817136388fe9231891a3077d2bcc5fe8bd8124047830",
+    "guide.md": "e121785d16f291f9d3c6670a8e60c0f384dc7ae4f65452373557fb777d93665a",
+    "meta.json": "11857e3e7444037eb722ae4844c0ad8f7be613fceea3c9db672e299f3fe14ba4",
+    "verifier_calculs.py": "11cc845fcf4b069d11b47c1d1adecd0398224bbc13bed80d159f3583fa8eec24",
+    "figures/spectre-par-longueur-onde.svg": "c9d1fce23185c7030696984dba554cffb24be53ba2643a8d42922ce75f898249",
+    "figures/profil-radial-et-flux.svg": "9b5172612126c8730a182decd026b987f15842bfb7b898d180a4dcf61b7b9f44",
+    "figures/retard-thermique-du-centre.svg": "4874c5cd620be95b1c0c58aee10f04010f1ea97e9a95124ca3e0555dfd982284",
+    "figures/bilan-sur-bague.svg": "cde0792077d93c6357076e5fe91e9dcfda920d212f5d6e824ca67c8412337a46",
+    "figures/echanges-de-la-surface.svg": "8138cf21afab227256b307d0a6bad997f19d08237b17aa4a2cf5e0fcda71fc4f",
+    "figures/modes-radiaux.svg": "0c3d36031522dc59a9baa09d5014102bab088d140c55e6fa0125d266289fe92d",
+    "brut.pdf": "99c44edacc20e2d28b9ab4cd109d52c83b0d0745ab6e1a9e72ec8da68671a653",
+    "guide.pdf": "dd539d3a8f2ea96acf1cf463820c116f5a0fc28ba44f378e25f3b4a9baff8b78",
+    "controle-calculs.txt": "eacf933ca2ca10b2dbc31e0b425b5458957d4ed53f04ee6d6bdfb1a41afa16c5",
+    "bilan-compilation.md": "feef9f783823607ac22294d8e74f190feb20fc55ded0870fbaffa722e494921d",
+    "apercu.jpg": "28628d030c3469c62e5a2c663d3cc320e67e8a45673395df30d1e5884681adac"
+  },
+  "archive": "ENS-Lyon-second-concours-physique-2025.zip",
+  "sha256": "3a2af74913cb8586360757f3a891b2f184d18359c34d30e125781f31624fad69"
+}

@@ -58,6 +58,68 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Rédaction des 38 questions depuis le cahier CX0614 et DR1 à DR3. Comparaison indépendante avec la proposition enseignante, cinématique et énergie sur deux cycles différents, lecture des cotes de précharge du ressort, vérification de stabilité du PI et traitement des transitions concurrentes de la commande de vanne. Six figures originales."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Confrontation des deux solutions aux 38 questions, à la transmission de l’annexe et aux trois feuilles-réponses. Vérification des seuils d’adhérence, des quatre travaux, des débits du coupleur et des deux boucles. Calcul du quotient des travaux aux accélérations maximales de l’énoncé et des distances correspondantes. Lecture des graphes FAST, des pistons et des transitions concurrentes du Grafcet."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38"
+    ],
+    "precision": "CX0614 comporte Q1 à Q38 sur les 19 premières pages, une annexe en page 20, puis les trois feuilles DR1–DR3 après leur garde. Les résultats énergétiques sont donnés aux maxima imprimés et pour le service commun.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "ac782cd2cfaf650d988f8828f85c487dbb1e72dc720dcc4756d696a6d110a615",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Confrontation des deux solutions aux 38 questions, à la transmission de l’annexe et aux trois feuilles-réponses. Vérification des seuils d’adhérence, des quatre travaux, des débits du coupleur et des deux boucles. Calcul du quotient des travaux aux accélérations maximales de l’énoncé et des distances correspondantes. Lecture des graphes FAST, des pistons et des transitions concurrentes du Grafcet.",
+      "commit_redaction_anterieure": "caa9fc951d9ca73ab7dcf1753b2d2a2215c9442f"
+    }
+  }
 }

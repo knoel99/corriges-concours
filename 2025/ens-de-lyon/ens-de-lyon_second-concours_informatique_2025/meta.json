@@ -10,7 +10,11 @@
   "questions": 27,
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_sujet_info.pdf",
-    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_rap_eInfo.pdf"
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_rap_eInfo.pdf",
+    "sujet_sha256": "de42cc44f0af3f454733d0bb6560f4a821a739367c7798e6d4b2879e32916a02",
+    "rapport_sha256": "b62407d26cd70a9f4e4bf6607e031b95c729a495097b5e5df4ce42c2f4759e8d",
+    "index_banque": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/",
+    "index_banque_sha256": "36243e7203175ea8fc3f1b47cf04cfaeff13de5e6fe10463bd7d894a9fca4bfe"
   },
   "figures": [
     {
@@ -54,7 +58,7 @@
       "legende": "Les cordes en ordre alterné se croisent. À Q1 on compte trois autres débuts actifs, et à Q2 on en compte un, celui de la corde 3."
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "provenance": {
     "redaction": {
       "provider": "codex",
@@ -92,11 +96,66 @@
       "perimetre": "Questions 1 à 27 du brut et du guidé confrontées au sujet et au rapport. Vérification du contre-exemple à la borne de hauteur avec feuilles réelles, des rotations et des rangs. Preuve locale des hauteurs noires précisée en Q20 et calcul des quatre fermetures détaillé en Q26.",
       "agent": "astra_info_si",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Confrontation des 27 énoncés, des figures du sujet et du rapport aux deux éditions. Vérification de la convention relative aux feuilles absentes en Q8–10, des deux états après rotation en Q16, de l’invariant en Q20 et du comptage par rang en Q26–27. Exécution des blocs Python des deux versions sur 175 familles chacune, avec dénombrement quadratique indépendant des croisements.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
     }
   ],
   "revision": {
     "date": "2026-11-24",
     "modele": "GPT-6.2 Astra (effort Ultra)",
     "verification": "Questions 1 à 27 du brut et du guidé confrontées au sujet et au rapport. Vérification du contre-exemple à la borne de hauteur avec feuilles réelles, des rotations et des rangs. Preuve locale des hauteurs noires précisée en Q20 et calcul des quatre fermetures détaillé en Q26."
+  },
+  "questions_principales": 27,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "subdivisions_du_sujet": {},
+    "precision": "27 rubriques principales et 27 consignes terminales repérées dans le fascicule officiel. Confrontation des 27 énoncés, des figures du sujet et du rapport aux deux éditions. Vérification de la convention relative aux feuilles absentes en Q8–10, des deux états après rotation en Q16, de l’invariant en Q20 et du comptage par rang en Q26–27. Exécution des blocs Python des deux versions sur 175 familles chacune, avec dénombrement quadratique indépendant des croisements.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "relecture_corrige",
+      "perimetre": "Confrontation des 27 énoncés, des figures du sujet et du rapport aux deux éditions. Vérification de la convention relative aux feuilles absentes en Q8–10, des deux états après rotation en Q16, de l’invariant en Q20 et du comptage par rang en Q26–27. Exécution des blocs Python des deux versions sur 175 familles chacune, avec dénombrement quadratique indépendant des croisements.",
+      "sha256_sujet_controle": "de42cc44f0af3f454733d0bb6560f4a821a739367c7798e6d4b2879e32916a02",
+      "sha256_rapport_controle": "b62407d26cd70a9f4e4bf6607e031b95c729a495097b5e5df4ce42c2f4759e8d"
+    }
   }
 }

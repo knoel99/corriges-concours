@@ -32,5 +32,47 @@
       "fournisseur": "codex",
       "agent": "astra_maths"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10a",
+      "10b",
+      "11",
+      "12a",
+      "12b",
+      "12c",
+      "13a",
+      "13b",
+      "13c",
+      "13d",
+      "14",
+      "15a",
+      "15b",
+      "16a",
+      "16b",
+      "16c",
+      "17a",
+      "17b",
+      "17c",
+      "18"
+    ],
+    "precision": "Les 29 réponses des deux éditions correspondent aux 18 questions numérotées et à leurs subdivisions sur le fac-similé officiel. Le journal antérieur documente la portée du travail sur les solutions.",
+    "origine_attestation": {
+      "commit_du_journal": "9556a2091686ee2bd1bb58a9f8bde584968443f2",
+      "sha256_sujet_controle": "a4484e90a085ce8e34ca1e850c7e49c442a0483e724f76dc54055a19d4899e75",
+      "phase": "redaction",
+      "date": "2026-11-24",
+      "perimetre": "Rédaction intégrale des 29 questions ou sous-questions. Vérification de la dilation unitaire, de la normalisation du polynôme sur l’arc et de la borne d’erreur uniforme de reconstruction. Schéma du seuil entre deux paramètres de Bernoulli."
+    }
+  }
 }

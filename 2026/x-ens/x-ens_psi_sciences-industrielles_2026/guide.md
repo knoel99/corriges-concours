@@ -8,6 +8,12 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
+Les 63 questions et les annexes A à F figurent au livret. Les deux documents réponse annoncés en page 2 manquent dans les exemplaires de Saclay et d’Éduscol, identiques octet pour octet. Les constructions de Q4.2 et Q4.10 sont données sur des grilles reconstituées. La couverture de ces deux reports graphiques reste partielle.
+
+[Sujet original](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2026/2026_PSI_SI_XSR.pdf) · [Présentation Éduscol](https://sti.eduscol.education.fr/concours_examens/concours-cpge-2026-x-ens-epreuve-de-sciences-industrielles-filiere-psi-systemes) · [Exemplaire Éduscol](https://sti.eduscol.education.fr/sites/eduscol.education.fr.sti/files/concours-examens/19517/19517-x-ens-psi-2026-si-robots-polyarticules.pdf)
+
 ## Présentation du sujet
 
 Le sujet du 14 avril 2026 étudie le robot industriel KUKA KR 500, depuis ses effecteurs jusqu’au frein de sécurité. Les six parties de cette épreuve de cinq heures comportent 63 questions. Les valeurs tirées des tracés et des vues sans cotes sont indiquées comme des lectures graphiques. [Sujet officiel de l’ENS Paris-Saclay](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2026/2026_PSI_SI_XSR.pdf)
@@ -637,6 +643,10 @@ En entrée, l'adaptateur transforme $I^*$ en $k_{I0}I^*$. Le comparateur soustra
 
 ![Figure 9 — L’adaptateur et le capteur ont le même gain. Le comparateur soustrait le courant mesuré après conversion en tension.](figures/p4-boucle-courant.svg)
 
+Le schéma ci-dessus reconstruit les blocs depuis les équations des pages imprimées 23 et 24. La grille du document réponse 1, annoncée sur la garde intérieure, manque aux deux exemplaires institutionnels vérifiés.
+
+[Feuillet officiel, p. 25 du PDF](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2026/2026_PSI_SI_XSR.pdf#page=25)
+
 ### Question 4.3
 
 > [!INDICATION]
@@ -751,6 +761,10 @@ Considérons deux positions de l'axe d'épaule, avec la même charge et la même
 Sans correction $L_J(p)=(k_ck_V/f)/(1+Jp/f)$. Le plateau de gain vaut $20\log_{10}(2500)\simeq68\ \mathrm{dB}$ pour les deux inerties. Pour $J_1=10^2\ \mathrm{kg\,m^2}$ (vert), la cassure est $f/J_1=10^{-4}\ \mathrm{rad/s}$. Pour $J_2=10^3\ \mathrm{kg\,m^2}$ (rouge), elle est $10^{-5}\ \mathrm{rad/s}$. Après leur cassure, les deux asymptotes de gain décroissent de $20\ \mathrm{dB}$ par décade. À haute fréquence, la rouge se trouve $20\ \mathrm{dB}$ sous la verte. La phase exacte est $-\arctan(J\omega/f)$, de $0^\circ$ à $-90^\circ$ avec $-45^\circ$ à la cassure. Le tracé asymptotique usuel relie les deux plateaux entre un dixième et dix fois la pulsation de cassure. Multiplier l'inertie par dix déplace les courbes d'une décade vers la gauche.
 
 ![Figure 12 — Les deux tracés asymptotiques ont le même plateau de gain. Une inertie dix fois plus forte déplace chaque cassure d’une décade vers la gauche.](figures/p4-bode-inerties.svg)
+
+La lecture du feuillet imprimé p. 27 confirme les exposants positifs 2 et 3. À $10^{-4}$ rad/s, les asymptotes placent la courbe verte sur son plateau et la rouge à 20 dB sous celui-ci. Le tracé ci-dessus restitue ces réponses sur une grille reconstruite. Le document réponse 2 annoncé manque aux exemplaires vérifiés.
+
+[Feuillet officiel, p. 28 du PDF](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2026/2026_PSI_SI_XSR.pdf#page=28)
 
 ### Question 4.11
 
@@ -972,6 +986,10 @@ Le rayon efficace est entre $r_1$ et $r_2$. L’ouverture disparaît lorsqu’on
 
 ![Figure 13 — Le contact d’une couronne se décompose en éléments de surface. Chacun produit un couple proportionnel au carré du rayon par unité de rayon et d’angle.](figures/frein-contact-sectoriel.svg)
 
+En posant $r_1\to r_2$ dans le quotient du couple par $fF$, on retrouve le rayon unique de contact. Pour un disque plein $r_1=0$, le même quotient tend vers $2r_2/3$. Ces deux limites vérifient l’intégration.
+
+[Feuillet officiel, p. 34 du PDF](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2026/2026_PSI_SI_XSR.pdf#page=34)
+
 ### Question 6.4
 
 > [!INDICATION]
@@ -995,6 +1013,12 @@ Après l’échelon de 15 V, la force contre-électromotrice est d’abord nulle
 #### Solution
 
 Le plateau vaut environ $4{,}0\times10^4\ \mathrm N$ et le maximum $5{,}4\times10^4\ \mathrm N$. Le dépassement est donc voisin de $35\,\%$, inférieur aux $40\,\%$ autorisés. Pour le temps de réponse **à compter de l’échelon**, tracer la bande $[3{,}8;4{,}2]\times10^4\ \mathrm N$. Après une première traversée, la courbe redescend un peu sous la limite basse vers 39–40 ms. Son dernier retour dans la bande se situe vers 42–43 ms, au-delà des 40 ms exigées. La lecture est graphique à quelques millisecondes près. Le critère de dépassement est respecté, la double spécification de maintien n’est pas validée par cette simulation.
+
+Le plateau autorise 2 000 N d’écart de part et d’autre de 40 000 N. Le contact prend à lui seul environ 26 ms sur le budget de 40 ms, avant la montée et l’oscillation de l’effort.
+
+![Lecture des seuils à 5 % et des 40 ms sur la courbe d’effort de freinage](figures/q65-frein-seuil.svg)
+
+[Feuillet officiel, p. 36 du PDF](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2026/2026_PSI_SI_XSR.pdf#page=36)
 
 ## Bilan
 

@@ -1,0 +1,72 @@
+{
+  "slug": "x_mp-pc_portugais_2007",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Portugais",
+    "annee": 2007,
+    "modalite": "écrit"
+  },
+  "intitule": "Pedro Vasconcelos, le procès de Manuel Álvares, et la morale internationale",
+  "questions": 3,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "V",
+      "1",
+      "2"
+    ]
+  },
+  "sources": {
+    "index": "https://web.archive.org/web/20090415204525/http://www.polytechnique.fr:80/concours/sujets/sujet07/sujet07.htm",
+    "etablissements": "École polytechnique et École supérieure de physique et de chimie industrielles",
+    "pages_sujet": "6",
+    "sujet": "https://web.archive.org/web/20090424050957id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/07_Version.pdf#page=6",
+    "sujet_sha256": "b999f49ba6232ccaf44de763c2cb3752fbb87ded11728669268265262b0e3a03",
+    "sujet_complementaire": "https://web.archive.org/web/20090424045418id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/07_ExprEcrit.pdf",
+    "sujet_complementaire_sha256": "3480b2ca508e8df2f8d98d5325aef0f68faafb32776b69e2174e40304d224573",
+    "precision": "Le roman historique 1613 de Pedro Vasconcelos a paru en 2005. L’essai de Gilles Andréani et Pierre Hassner est également daté de 2005. Les réponses suivent l’usage du Portugal. Aucun rapport propre à la composition portugaise n’a été retrouvé."
+  },
+  "mots_expression": {
+    "1": 132,
+    "2": 195
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V",
+      "fichier": "figures/tribunal.svg",
+      "legende": "L’écoulement du sable encadre un passage du for intérieur au réquisitoire."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "fichier": "figures/ordre.svg",
+      "legende": "Les auteurs suivent deux évolutions distinctes après la guerre froide."
+    },
+    {
+      "numero": 3,
+      "question": "2",
+      "fichier": "figures/assistencia.svg",
+      "legende": "Trois questions permettent d’éprouver la formule de Mitterrand."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "portugais_sciences_2005_2010",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et réponses intégrales en portugais. Pedro Vasconcelos, le procès de Manuel Álvares, et la morale internationale.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}

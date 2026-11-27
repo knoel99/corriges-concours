@@ -10,6 +10,10 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 ## Construire la dissertation
 
 La feuille du 22 avril donne un infinitif et un complément de manière. La question centrale porte donc sur ce qui se passe lorsque quelqu’un juge, et sur le degré de liberté avec lequel il le fait. Rédiger la copie sans chiffres, lettres ni titres de parties. Le rapport demande de hiérarchiser les sens de la liberté. Pour établir une hiérarchie, il faut un critère qui départage deux jugements paraissant tous les deux indépendants.
@@ -27,6 +31,10 @@ Dans le premier cas, la règle donne au perdant une prise sur les raisons du jug
 
 ![À quel titre ce jugement est-il libre ?](figures/lecture-du-sujet.svg)
 
+Demandez ce qui change si le vote reste secret et qu’une preuve nouvelle devient accessible. Le juré conserve la même indépendance extérieure. Sa capacité à justifier, voire à réviser, sa décision change avec les raisons qu’il peut désormais examiner.
+
+Pour distinguer les deux conditions, faites varier successivement ce que le juré peut dire et ce qu’il peut savoir. Un vote indépendant protège la conclusion. L’accès aux pièces et la contradiction agissent plus tôt, au moment où les raisons de conclure se forment.
+
 ## Dissertation rédigée
 
 Le 13 janvier 1898, deux jours après l’acquittement d’Esterhazy par un conseil de guerre, Zola publie dans *L’Aurore* sa lettre ouverte au président de la République. Pourquoi juger publiquement une affaire qu’un tribunal vient de trancher ? Zola s’expose à une poursuite en diffamation qui peut donner lieu à un débat contradictoire sur ce que la discipline militaire et le secret avaient jusque-là soustrait à l’examen. Le geste est libre par le refus d’une tutelle, mais il engage l’écrivain à répondre de ses affirmations. Le seul courage de contredire un conseil de guerre ne prouve pas que l’on ait raison. Une liberté qui dispenserait Zola de produire ses raisons offrirait au premier accusateur venu la même autorité.
@@ -42,6 +50,10 @@ Cette liberté intérieure appelle une liberté extérieure, et le jugement libr
 Pourtant, prise au pied de la lettre, l'absence de toute contrainte ruine le jugement plus qu'elle ne l'accomplit. Descartes lui-même explique l'erreur par cette liberté : je me trompe parce que ma volonté, plus étendue que mon entendement, se porte à juger de ce que je ne comprends pas. C'est pourquoi le premier précepte du *Discours de la méthode* (1637) commande d'« éviter soigneusement la précipitation et la prévention ». Le jugement qui ne connaît aucune retenue n'est pas plus libre, il est plus téméraire : il affirme tout et n'importe quoi. Flaubert l'a résumé dans une lettre à Louis Bouilhet du 4 septembre 1850 : « La bêtise consiste à vouloir conclure. » Le sot n'est pas celui qui manque d'avis, mais celui qui en a sur tout et tranche sans examen. Plus grave encore, ce jugement prétendument affranchi est souvent le plus asservi. Dans « Les Animaux malades de la peste », La Fontaine montre une assemblée qui délibère sans autre règle que la flatterie : le lion avoue avoir dévoré des moutons et même le berger, on l'absout ; l'âne avoue avoir tondu la largeur de sa langue dans un pré, on le condamne à mort. La morale dit ce qu'est un tel tribunal : « Selon que vous serez puissant ou misérable, / Les jugements de cour vous rendront blanc ou noir. » L'assemblée était libre de juger comme elle voulait ; elle a jugé comme le voulaient la crainte et l'intérêt. Spinoza en donne la raison dans l'*Éthique* (1677) : les hommes se croient libres parce qu'ils ont conscience de leurs volitions et ignorent les causes qui les déterminent. Le jugement qui croit ne dépendre de rien dépend en réalité de tout ce qu'il ignore.
 
 L'absence de contrainte n'est donc pas la plénitude de la liberté de juger. Il faut alors chercher cette plénitude non dans l'indépendance à l'égard de toute règle, mais dans un certain rapport aux règles.
+
+Imaginons qu’un juré vote à bulletin secret. Le secret le protège d’un ordre donné par un supérieur. Il peut pourtant reconduire, sans l’examiner, un préjugé sur l’accusé. S’il accepte de reformuler son motif à la lumière d’une objection, la contradiction peut accroître sa liberté de juger. La protection de sa décision et l’examen de ses raisons répondent à deux exigences distinctes.
+
+L’affaire Dreyfus permet de reprendre la difficulté au point précis où se forment les raisons du juge. En 1894, un dossier secret fut communiqué au conseil de guerre à l’insu de la défense. Imaginons que chacun des juges ait voté selon sa conviction, sans subir d’ordre. Quelle confiance accorder à cette indépendance si les pièces qui la nourrissent ont échappé à la contradiction ? La défense aurait pu demander d’où venait une pièce ou à qui elle se rapportait. En écartant ces questions, la procédure retranchait des possibilités à l’intelligence même du juge. L’exigence du débat contradictoire prend ici son sens. Une règle qui oblige à écouter une objection peut restituer au jugement une liberté que le secret du vote, à lui seul, ne lui donnait pas.
 
 La liberté du jugement a des degrés, et son degré le plus haut est la liberté éclairée. Descartes le dit expressément dans la même quatrième Méditation : l'indifférence, cet état où aucune raison ne me pousse d'un côté plutôt que de l'autre, est « le plus bas degré de la liberté ». Plus je vois clairement où sont le vrai et le bien, plus je m'y porte librement ; et si je les connaissais toujours clairement, je n'aurais jamais à délibérer, je serais entièrement libre sans être jamais indifférent. La connaissance n'est donc pas une borne posée à la volonté de juger : elle est ce qui la libère de l'hésitation et de l'arbitraire. Spinoza va plus loin encore : être libre, ce n'est pas échapper à toute nécessité, c'est agir par la seule nécessité de sa nature, et l'homme devient libre à mesure qu'il comprend les causes qui le déterminent. Juger en toute liberté, c'est alors juger en toute connaissance de cause, et l'on mesure le contresens qui fait de la vérité une contrainte pour l'esprit.
 

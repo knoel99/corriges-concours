@@ -1,0 +1,74 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_linguistique_2016",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Linguistique",
+    "annee": 2016,
+    "modalite": "écrit"
+  },
+  "questions": 18,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/Ecrit_Linguistique.pdf",
+    "sujet_sha256": "aa93a2c037501b4dfa97b88f5c91b69cb3dde9c9a7bd151d5776bbf1bb457b3d",
+    "pages": 14
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Phonèmes du lango · A. Distribution locale des consonnes",
+      "Phonèmes du lango · B. Huit phonèmes et deux regroupements",
+      "Phonèmes du lango · C. Règles",
+      "Phonèmes du lango · D. Ordre des règles",
+      "Phonèmes du lango · E. « Fainéant » et « fainéantise »",
+      "Temps en proposition subordonnée · 1. Deux jours avant quelle date ?",
+      "Temps en proposition subordonnée · 2. Deux lectures hypothétiques sous un passé",
+      "Temps en proposition subordonnée · 3. Le présent dans la relative sous passé",
+      "Temps en proposition subordonnée · 4. Le présent dans la complétive sous futur",
+      "Temps en proposition subordonnée · 5. Généralisation provisoire",
+      "Temps en proposition subordonnée · 6. Une lecture exclusivement absolue en (6)",
+      "Temps en proposition subordonnée · 7. Peut-on isoler de la même manière l'antériorité relative ?",
+      "Temps en proposition subordonnée · 8. Le passé dans la complétive de (7)",
+      "Temps en proposition subordonnée · 9. Quand le rhume et la pensée coïncident",
+      "Temps en proposition subordonnée · 10. Bilan pour la lecture absolue",
+      "Temps en proposition subordonnée · 11. Question optionnelle, le passé sous futur",
+      "Article de Sandler et al. · 1. Reconstruire et discuter l'argument de Sandler et de ses collègues",
+      "Article de Sandler et al. · 2. Portée pour une théorie de l'innéité"
+    ],
+    "precision": "Cinq questions A–E sur le tableau original des 64 formes du lango, onze questions sur les temps, dont la dernière est optionnelle, et deux questions sur les extraits de Sandler et al."
+  },
+  "figures": [
+    {
+      "fichier": "figures/partie-a.svg",
+      "legende": "Où le contraste se voit-il ?"
+    },
+    {
+      "fichier": "figures/partie-b.svg",
+      "legende": "Deux configurations où isoler une lecture"
+    },
+    {
+      "fichier": "figures/partie-c.svg",
+      "legende": "Du signe compris à la phonologie"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Cinq questions A–E sur le tableau original des 64 formes du lango, onze questions sur les temps, dont la dernière est optionnelle, et deux questions sur les extraits de Sandler et al. Rédaction intégrale des deux éditions et des schémas après lecture du fascicule."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

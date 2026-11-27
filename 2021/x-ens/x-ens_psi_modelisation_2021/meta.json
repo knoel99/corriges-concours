@@ -12,7 +12,8 @@
   "sources": {
     "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2021_Sujet_1A_PSI_Modelisation.pdf",
     "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2021_Rapport_Ecrit_PSI_Modelisation.pdf",
-    "sujet_sha256": "ef3dfc728069993dcdab9af9c938fc94a8bc6d4e087b2d9bdc3436534ed1006b"
+    "sujet_sha256": "ef3dfc728069993dcdab9af9c938fc94a8bc6d4e087b2d9bdc3436534ed1006b",
+    "rapport_sha256": "54421193d1e2e296e0c3157d86d8590c11d06e7fd8ac1c39ac6115e76e3d85de"
   },
   "figures": [
     {
@@ -38,7 +39,7 @@
     {
       "fichier": "figures/q51-bode.svg",
       "question": "Q51",
-      "legende": "Gain relatif au plateau et phase du capteur de courant. La cassure à ω Ti = 1 sépare le plateau de la décroissance à vingt décibels par décade."
+      "legende": "Diagramme de Bode du rapport de courants. La verticale indique la coupure à 500 000 rad/s. Le gain absolu au plateau vaut −67,96 dB."
     }
   ],
   "contributions": [
@@ -52,6 +53,87 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Rédaction des 57 questions sur la houle, la dynamique à deux corps, la commande conjuguée et la mesure de courant. Lecture du sujet de 17 pages et du rapport du jury, contrôle des conventions de signe, des graphes et des circuits sur les pages originales, cinq schémas. Contrôles numériques des équations de dispersion, des bilans, de la commande optimale et de la saturation du capteur."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "agent": "maths_info_archives",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture des 57 réponses des deux éditions avec le sujet et son annexe géométrique, les figures de réponse en fréquence et le rapport du jury. Vérification des centres de carène et de masse, du transport du moment hydrostatique et de la compensation par le poids. Recoupement des composantes de radiation, du maximum de vitesse, de l’impédance optimale et du gain de Hall. Tracé de Bode en pulsation et en gain absolus, avec une coupure à 500 000 rad/s."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "57"
+    ],
+    "precision": "Les 57 questions couvrent cinq parties interrogées en 17 pages. L’annexe 1 précise la géométrie de l’embase et du flotteur. Les schémas et le diagramme de Bode sont renseignés avec la coupure, le gain et la phase. Le rapport de quatre pages décrit le même sujet sur la génératrice houlomotrice.",
+    "origine_attestation": {
+      "sha256_sujet_controle": "ef3dfc728069993dcdab9af9c938fc94a8bc6d4e087b2d9bdc3436534ed1006b",
+      "phase": "relecture_corrige",
+      "date": "2026-11-26",
+      "perimetre": "Relecture des 57 réponses des deux éditions avec le sujet et son annexe géométrique, les figures de réponse en fréquence et le rapport du jury. Vérification des centres de carène et de masse, du transport du moment hydrostatique et de la compensation par le poids. Recoupement des composantes de radiation, du maximum de vitesse, de l’impédance optimale et du gain de Hall. Tracé de Bode en pulsation et en gain absolus, avec une coupure à 500 000 rad/s.",
+      "commit_redaction_anterieure": "cde7c9ca236a1a69db4569c9691bfeff80742c4e"
+    }
+  }
 }

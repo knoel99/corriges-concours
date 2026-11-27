@@ -1,0 +1,92 @@
+{
+  "slug": "banque-pt_pt_francais-a_2008",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Français A",
+    "annee": 2008
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2008/francais_a_2008.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2008/rapport_fra_a_ecrit_2008.pdf",
+    "programme_officiel": "https://www.education.gouv.fr/bo/2007/18/MENS0700809A.htm",
+    "notice": "https://www.banquept.fr/documents/livret/2008/Livret_PT_2008.pdf#page=12",
+    "sujet_sha256": "ac4369974a602d79893d55eb7684a5ba1342a647c8b08205b862646950776b6f",
+    "rapport_jury_sha256": "a0b72025cfbdc53e96e1bfa1ea8175aaff482a8bb5c96b45c295809c346d24a0",
+    "programme_officiel_sha256": "585130d997cdba19af79c8b2ee29fe2750ac352cb38aea5dd49b5d9c6ec45bba",
+    "notice_sha256": "ad57611750cbdcf6c4e1ba7444c3a7625cceaacff27f2a89763ffca957d67ca8",
+    "oeuvres_au_programme": [
+      "François-René de Chateaubriand, Mémoires d’outre-tombe, livres IX à XII",
+      "Karl Marx, Le 18 Brumaire de Louis Bonaparte (traduction de Maximilien Rubel)",
+      "Pierre Corneille, Horace"
+    ],
+    "theme": "Penser l’histoire",
+    "admissibilite_admission": "École polytechnique, admissibilité, coefficient 4",
+    "pages_rapport": "Rapport PDF p. 1 à 7. La relation entre la connaissance des causes, le choix d’une politique et la singularité du cas est analysée aux p. 4 à 6."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "De la cause à la décision politique"
+    }
+  ],
+  "date_revision": "2026-11-26",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture du sujet Polybe et du rapport, rédaction sur le rapport entre explication causale et choix situé, à partir de Marx, de Corneille et des livres prescrits des Mémoires."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle du numéro du livre de Polybe sur la garde, de la distinction entre les deux Bonaparte et des raisons publiques et familiales au dernier acte d’Horace.",
+      "tour": 1
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Dissertation",
+        "page_pdf": 1,
+        "perimetre": "Ce propos de l’auteur grec POLYBE (202-120 av JC) dans Histoire VI vous semble-t-il vérifié par les œuvres et le thème au programme ?",
+        "points": 20
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": []
+  }
+}

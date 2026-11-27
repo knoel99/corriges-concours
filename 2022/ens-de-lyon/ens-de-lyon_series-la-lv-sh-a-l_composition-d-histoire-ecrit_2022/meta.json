@@ -1,0 +1,37 @@
+{
+  "slug": "ens-de-lyon_series-la-lv-sh-a-l_composition-d-histoire-ecrit_2022",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries LA/LV/SH (A/L)",
+    "matiere": "Composition d'histoire (écrit)",
+    "annee": 2022
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2022-11/Session-2022_BEL_Composition%20d%27histoire.pdf",
+    "sha256_sujet": "d2df38bc815c2c6aaddb0753d7858b02963e64c8d6a3e6372974d8f5564d520e",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2022-11/Histoire%202022.pdf#page=2",
+    "sha256_rapport_jury": "365533971a2d6c14f5e6a9d1750f567d8a95a359f8ece1a22dbfde52e283b873"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture-du-document.svg",
+      "question": "I. De la guerre de Crimée à 1917, réformer et étendre un empire de statuts inégaux",
+      "legende": "Transformation du rapport entre différenciation territoriale et autorité centrale."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Composition intégrale fondée sur l’énoncé imprimé et le rapport de Lyon, pages physiques 2 à 21, avec examen des trajectoires sociale, impériale, fédérale et républicaine, des frontières et des exemples régionaux. Deux éditions et figure.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "ens-rennes_d1_russe_2009",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Russe",
+    "annee": 2009,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/epreuve-de-l-v-e-d1_1423059201606-pdf#page=6",
+    "sha256_sujet": "1ca28fc3f90cefff51fd6629106ac010d1d983969eff47c49e7ec68f2d7f797e",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "publication": "Message de Dmitri Medvedev à l’Assemblée fédérale, Kremlin.ru, 5 novembre 2008",
+    "page": 6
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en russe"
+    ],
+    "precision": "Traduction française de l’intégralité du passage délimité et réponse en russe."
+  },
+  "longueur_expression": {
+    "mots": 92,
+    "regle": "Какова, по-вашему, роль закона в обществе? Question sur 8 points. Aucun nombre de mots imprimé."
+  },
+  "figures": [
+    {
+      "fichier": "figures/justice.svg",
+      "legende": "Trois conditions d’une justice effective dans le discours"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Traduction française de l’intégralité du passage délimité et réponse en russe. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

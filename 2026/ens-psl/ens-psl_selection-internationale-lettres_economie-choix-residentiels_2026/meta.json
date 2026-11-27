@@ -19,8 +19,10 @@
       "https://www.insee.fr/fr/statistiques/6680439",
       "https://doi.org/10.1086/522381",
       "https://www.nber.org/papers/w21156",
-      "https://doi.org/10.1257/aer.20200407"
-    ]
+      "https://doi.org/10.1257/aer.20200407",
+      "https://doi.org/10.1257/aer.20150572"
+    ],
+    "rapport_sha256": "de2de7badfe0c93897c67d74c736111ab7182145ccedc81aad6b505ae000b150"
   },
   "figures": [
     {
@@ -40,6 +42,33 @@
       "agent": "astra_info_si",
       "fournisseur": "codex",
       "perimetre": "Rédaction de la dissertation et de son guide à partir du sujet individuel écrit du candidat 1 reproduit page 2 du rapport du jury. Vérification des références académiques et institutionnelles, des raisonnements et de la figure originale sur le thème choix résidentiels."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "gestion_2022_2023",
+      "agent": "gestion_2022_2023",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "La dissertation et le guide confrontent le tri résidentiel aux effets d’exposition au quartier et à la réaction des loyers. Les effets de l’offre d’un bon et de son utilisation dans Moving to Opportunity sont distingués avec leurs montants et leur population. L’essai de Seattle est vérifié séparément sur la mobilité observée."
     }
-  ]
+  ],
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Choix résidentiels et inégalités sociales et économiques."
+    ],
+    "precision": "Le rapport du jury donne page 2 l’écrit individuel du candidat 1. Son oral distinct a pour intitulé « Environnement social et contraintes économiques dans les décisions et les résultats scolaires ». La dissertation répond à une consigne unique, reproduite sans document annexe ni sous-question.",
+    "controle": "La dissertation et le guide confrontent le tri résidentiel aux effets d’exposition au quartier et à la réaction des loyers. Les effets de l’offre d’un bon et de son utilisation dans Moving to Opportunity sont distingués avec leurs montants et leur population. L’essai de Seattle est vérifié séparément sur la mobilité observée."
+  }
 }

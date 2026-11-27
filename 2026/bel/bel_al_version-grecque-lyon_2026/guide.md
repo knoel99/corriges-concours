@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Le passage et l’épreuve
 
 Dans la *Vie de Thésée* (24, 1-4), Plutarque raconte comment un roi transforme des communautés dispersées en une seule cité et renonce lui-même à la royauté. La version de spécialité dure quatre heures. Le fascicule autorise les dictionnaires grec-français. Le titre imprime le nom de Thésée, sujet à restituer dès la première phrase.
@@ -23,6 +25,8 @@ Les participes ὄντας, διαφερομένους et πολεμοῦντα�
 Quel est le premier verbe personnel ? Ἔπειθε, à l’imparfait, décrit un travail répété de persuasion. Son objet se tire de la première phrase. Κατά distribue les visites par communautés et par familles. Il y a ensuite deux manières de répartir les interlocuteurs dans cette longue période.
 
 ![Figure 1 — Les deux partages de la période de Plutarque](figures/periode-thesee.svg)
+
+Identifier d’abord le complément de la proposition faite par Thésée. À l’intérieur du groupe ainsi désigné, repérer ensuite les deux pronoms opposés et donner à chacun son rôle dans sa proposition.
 
 Les simples particuliers et les pauvres forment le sujet d’un génitif absolu. Pour les puissants, le datif τοῖς δυνατοῖς dépend de προτείνων, dont le sujet est Thésée. La différence des cas signale le passage de ceux qui acceptent à ceux auxquels il propose des institutions.
 

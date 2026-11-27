@@ -1,0 +1,87 @@
+{
+  "slug": "ens_mp-pc_informatique_2004",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Informatique",
+    "annee": 2004,
+    "duree_heures": 4
+  },
+  "questions": 13,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-mp/session-2004/sujet-2004-ecrit-mp-informatique.pdf",
+    "index_banque": "https://banques-ecoles.fr/cms/filiere-mp/les-annales-et-rapports-des-jurys/",
+    "identification": "ULC 414. Groupes MPI/MI de MP : Paris et Cachan. Groupe I de MP : Paris, Lyon, Cachan. Groupe I de PC : Paris et Lyon. Quatre heures. Le PDF de rapport fourni par la banque comporte une page d’identification et une page blanche.",
+    "sujet_sha256": "4d0b5d71835ee6af75274fb288866b0e47d0fc099059613b0b21f43929cfbb43",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/rapport-de-jury-session-2004/rapport-2004-mp_ecrit_informatique.pdf",
+    "rapport_sha256": "4ccc7af3d48a6ba69e4d79cb9ea848984062b6a1ab31506abb978b7389be4451"
+  },
+  "figures": [
+    {
+      "fichier": "figures/deux-temoins.svg",
+      "question": "2",
+      "legende": "Figure 1 — Deux successeurs peuvent fournir la même cible dans deux solutions différentes. L’intersection perd alors les témoins nécessaires au sommet OU."
+    },
+    {
+      "fichier": "figures/arbre-0101.svg",
+      "question": "8",
+      "legende": "Figure 2 — Branches obligatoires après le premier zéro de 0101 ; chaque feuille indiquée par vrai termine le calcul sur une transition ET vide."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Les treize questions et leurs sous-questions. Vérification des deux égalités de compatibilité sur le fac-similé, contre-exemples et correction du cas des puits ET. Arbres de calcul, complément, élimination de l’alternance et construction quadratique du singleton unaire."
+    },
+    {
+      "phase": "relecture",
+      "fournisseur": "codex",
+      "agent": "reprise_physique_ulm",
+      "session": "reprise_physique_ulm",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Précision de l’initialisation et de la taille de l’automate 13.2 dans le brut, compléments de complexité et de résultat dans le guide. Contrôle et attestation de la couverture."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5",
+      "5.1",
+      "5.2",
+      "5.3",
+      "5.4",
+      "6",
+      "7.1",
+      "7.2",
+      "7.3",
+      "7.4",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13.1",
+      "13.2"
+    ],
+    "verification": "Recoupement du fac-similé conservé à l’empreinte des sources avec les énoncés, subdivisions, figures et résultats des deux éditions. Précision de l’initialisation et de la taille de l’automate 13.2 dans le brut, compléments de complexité et de résultat dans le guide."
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "slug": "banque-pt_pt_maths-a_2010",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths A",
+    "annee": 2010
+  },
+  "questions": 31,
+  "redaction": "Corrigés non officiels rédigés et vérifiés par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2010/math_a_pt_2010.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2010/rapport_math_a_ecrit_2010.pdf",
+    "livret": "https://www.banquept.fr/documents/livret/2010/Livret_PT_2010.pdf#page=12",
+    "sha256_sujet": "36190ae99d223a517cc47b5612c3858bddf2b825e326176a8052f778348d8c92",
+    "pages_sujet": 4,
+    "sha256_rapport_jury": "afa2ac669f1a3888157dbc3e23afc9f38484757b4b7e81c7422b546a5b0eb3cb",
+    "pages_rapport_jury": 2,
+    "sha256_livret": "7cc6c6ae3007f08f1ba5351e2e64af501a4e93bef5175ed9429d5fdd34f32d00",
+    "pages_livret": 73,
+    "coefficients_admissibilite": {
+      "ENS Cachan": 3,
+      "École polytechnique": 6
+    }
+  },
+  "figures": [
+    {
+      "question": "III.2.c",
+      "fichier": "figures/factorisation-lineaire.svg",
+      "legende": "Le trajet de E à G donne la même image en appliquant directement v ou en composant u puis w."
+    },
+    {
+      "question": "IV.4.c",
+      "fichier": "figures/rangs-bloc-nilpotent.svg",
+      "legende": "Exemple du bloc de Jordan de taille cinq à diagonale nulle et surdiagonale unité. Les rangs successifs décroissent de cinq à zéro."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Préliminaire 1",
+      "Préliminaire 2",
+      "Préliminaire 3",
+      "I.1",
+      "I.2",
+      "I.3.a",
+      "I.3.b",
+      "I.3.c",
+      "I.3.d",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "III.1",
+      "III.2.a",
+      "III.2.b",
+      "III.2.c",
+      "IV.1",
+      "IV.2.a",
+      "IV.2.b",
+      "IV.3.a",
+      "IV.3.b",
+      "IV.3.c.i",
+      "IV.3.c.ii",
+      "IV.3.c.iii",
+      "IV.3.c.iv",
+      "IV.3.d",
+      "IV.4.a",
+      "IV.4.b",
+      "IV.4.c"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": "Préliminaire 1",
+        "page_sujet": 2
+      },
+      {
+        "question": "Préliminaire 2",
+        "page_sujet": 2
+      },
+      {
+        "question": "Préliminaire 3",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.1",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.2",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.3.a",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.3.b",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.3.c",
+        "page_sujet": 2
+      },
+      {
+        "question": "I.3.d",
+        "page_sujet": 2
+      },
+      {
+        "question": "II.1",
+        "page_sujet": 2
+      },
+      {
+        "question": "II.2",
+        "page_sujet": 2
+      },
+      {
+        "question": "II.3",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.4",
+        "page_sujet": 3
+      },
+      {
+        "question": "II.5",
+        "page_sujet": 3
+      },
+      {
+        "question": "III.1",
+        "page_sujet": 3
+      },
+      {
+        "question": "III.2.a",
+        "page_sujet": 3
+      },
+      {
+        "question": "III.2.b",
+        "page_sujet": 3
+      },
+      {
+        "question": "III.2.c",
+        "page_sujet": 3
+      },
+      {
+        "question": "IV.1",
+        "page_sujet": 3
+      },
+      {
+        "question": "IV.2.a",
+        "page_sujet": 3
+      },
+      {
+        "question": "IV.2.b",
+        "page_sujet": 3
+      },
+      {
+        "question": "IV.3.a",
+        "page_sujet": 3
+      },
+      {
+        "question": "IV.3.b",
+        "page_sujet": 3
+      },
+      {
+        "question": "IV.3.c.i",
+        "page_sujet": 4
+      },
+      {
+        "question": "IV.3.c.ii",
+        "page_sujet": 4
+      },
+      {
+        "question": "IV.3.c.iii",
+        "page_sujet": 4
+      },
+      {
+        "question": "IV.3.c.iv",
+        "page_sujet": 4
+      },
+      {
+        "question": "IV.3.d",
+        "page_sujet": 4
+      },
+      {
+        "question": "IV.4.a",
+        "page_sujet": 4
+      },
+      {
+        "question": "IV.4.b",
+        "page_sujet": 4
+      },
+      {
+        "question": "IV.4.c",
+        "page_sujet": 4
+      }
+    ],
+    "precision": "Trois préliminaires et quatre parties du fac-similé 10PT28, y compris les quatre étapes de IV.3.c. Toutes les questions des pages 2, 3 et 4 sont numérotées dans les deux éditions."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modifications": true,
+      "perimetre": "Calcul des images des unités matricielles, construction des bases propres et vérification des deux sens de la factorisation. Vérification des transposées et des signes de l’identité de trace en IV, puis test du commutateur sur un bloc de Jordan."
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "slug": "ens_mp_informatique_2009",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Informatique",
+    "annee": 2009,
+    "duree_heures": 4
+  },
+  "questions": 26,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-mp/session-2009/ecrit-sujet-2009-mp_informatique.pdf",
+    "index_banque": "https://banques-ecoles.fr/cms/filiere-mp/les-annales-et-rapports-des-jurys/",
+    "identification": "Cahier 90.04M, sept pages. Épreuve informatique de quatre heures, filière MP groupe I, commune aux ENS de Paris, Lyon et Cachan.",
+    "sujet_sha256": "a4dc640cdf461ffe332ad60890d37effd11439e4a2be0621e542eed09d48d339",
+    "rapport": "https://www.ens.psl.eu/IMG/file/concours/2009/MP/mp2009_ecrit_Info.pdf",
+    "rapport_sha256": "7d89e9be50eb3682d769f656e14c65b91c224cc4735c0af71bf66d96a64005ca"
+  },
+  "figures": [
+    {
+      "fichier": "figures/automate-faible.svg",
+      "question": "2.4",
+      "legende": "Figure 1 — Lecture du bit de poids faible vers le bit de poids fort. Les états à double cercle sont acceptants. Les deux états G mémorisent aussi le dernier bit pour imposer une écriture canonique."
+    },
+    {
+      "fichier": "figures/automate-fort.svg",
+      "question": "2.5",
+      "legende": "Figure 2 — Lecture du bit de poids fort vers le bit de poids faible. Après le premier bit, chaque état mémorise la lettre obtenue et le dernier bit lu. Le mot vide est accepté."
+    },
+    {
+      "fichier": "figures/dragon.svg",
+      "question": "2.8",
+      "legende": "Figure 3 — Les seize premiers segments puis les seize suivants de la courbe. La seconde portion est le quart de tour négatif de la première parcourue en sens inverse autour du point de jonction."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Les 26 questions des deux parties. Mots de Lyndon, successeur de Duval, factorisation, repliages, deux automates dessinés et géométrie des contacts de la courbe du Dragon. Écritures binaires canoniques, comparaisons et preuves de complexité."
+    },
+    {
+      "phase": "relecture",
+      "agent": "reprise_physique_ulm",
+      "session": "reprise_physique_ulm",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Attestation de couverture sur le fac-similé. Les 26 demandes du cahier de sept pages ont été rapprochées des preuves, algorithmes, deux automates, tracé et questions de contact. Équivalence des tests de Lyndon vérifiée sur les mots binaires non vides de longueur au plus dix."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "1.8",
+      "1.9",
+      "1.10",
+      "1.11",
+      "1.12",
+      "1.13",
+      "1.14",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7",
+      "2.8",
+      "2.9",
+      "2.10",
+      "2.11",
+      "2.12"
+    ],
+    "verification": "Les 26 demandes du cahier de sept pages ont été rapprochées des preuves, algorithmes, deux automates, tracé et questions de contact. Équivalence des tests de Lyndon vérifiée sur les mots binaires non vides de longueur au plus dix."
+  }
+}

@@ -10,6 +10,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Sujet** — La matière de l’histoire
 
 [Sujet officiel, p. 3](https://www.ens-lyon.fr/sites/default/files/2026-04/Epreuve%20de%20sp%C3%A9cialit%C3%A9%202026.pdf#page=3) · [Rapport du jury, p. 11–23](https://www.ens-lyon.fr/sites/default/files/2026-10/Philosophie%202026.pdf#page=11)
@@ -19,6 +21,8 @@
 Le sujet demande ce dont l’histoire est faite et ce qui peut être travaillé dans l’histoire. Ce double sens est plus exigeant qu’une liste de sources pour l’historien ou une discussion générale sur le sens de l’histoire. Prenez un seul objet et soumettez-le à deux questions. À quelle action a-t-il servi ? À quelles conditions peut-il nous instruire après coup sur cette action ?
 
 ![Trois histoires d’un registre](figures/registre-usages.svg)
+
+Séparer l’usage initial du registre, la raison de sa conservation et la question que lui adresse l’historien. Un rapprochement produit par l’ordre des écritures devient ainsi une hypothèse dont la preuve reste à construire.
 
 ## Éprouver la comparaison avec un artisan
 

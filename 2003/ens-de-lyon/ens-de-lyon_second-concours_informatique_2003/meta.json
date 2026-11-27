@@ -1,0 +1,131 @@
+{
+  "slug": "ens-de-lyon_second-concours_informatique_2003",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Informatique",
+    "annee": 2003,
+    "duree_heures": 3
+  },
+  "questions": 20,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours/session-2003/sujet-ecrit-2003-second-concours_informatique.pdf",
+    "index_banque": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/",
+    "sujet_sha256": "4ff0da89d02b8665b6d55d4e185fca60b2acc4896f2a066bf991a03847892f3b",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/rapports-des-jurys-du-second-concours/session-2003/rapport-2003-second-concours_ecrit_informatique.pdf",
+    "rapport_sha256": "25da0270802bc34e2a2ef689839a5c33b0c335185ee57ca191c62485becb93d6",
+    "index_banque_sha256": "36243e7203175ea8fc3f1b47cf04cfaeff13de5e6fe10463bd7d894a9fca4bfe"
+  },
+  "figures": [
+    {
+      "fichier": "figures/pivot-a-longueur-fixe.svg",
+      "question": "2.2",
+      "legende": "Figure 1 — Pour trois parts et une somme de 10, le pivot 6 devient 5. La plus grande queue compatible commence alors par 4."
+    },
+    {
+      "fichier": "figures/deplacements-dans-les-lignes.svg",
+      "question": "3.1",
+      "legende": "Figure 2 — En insérant 2 dans les lignes (1, 4, 7) et (3, 6), on déplace 4, puis 6. Une nouvelle ligne reçoit 6."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Huit questions sur les compositions, partitions et tableaux de Young. Successeurs à longueur fixe, invariants d’insertion et de suppression, tri, identité alternée et formule de dénombrement. Lecture des quatre pages et du rapport officiel."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Confrontation des quatre pages et du rapport d’Y. Robert aux deux éditions. Vérification des coupures et des successeurs, de la forme et de l’ordre des tableaux de Young après déplacement, de l’identité alternée et des cas de bord de la récurrence. Les deux figures ont été rapprochées des algorithmes.",
+      "fournisseur": "codex",
+      "agent": "fui_physique_deux"
+    }
+  ],
+  "questions_principales": 8,
+  "date_revision": "2026-11-26",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1.1",
+      "1.1.2",
+      "1.1.3",
+      "1.2.1",
+      "1.2.2",
+      "1.2.3",
+      "2.1.1",
+      "2.1.2",
+      "2.1.3",
+      "2.2.1",
+      "2.2.2",
+      "3.1.1",
+      "3.1.2",
+      "3.2.1",
+      "3.2.2",
+      "3.3.1",
+      "3.3.2",
+      "3.4.1",
+      "3.4.2",
+      "3.4.3"
+    ],
+    "questions_non_traitees": [],
+    "questions_partiellement_traitees": [],
+    "subdivisions_du_sujet": {
+      "1.1": [
+        "1",
+        "2",
+        "3"
+      ],
+      "1.2": [
+        "1",
+        "2",
+        "3"
+      ],
+      "2.1": [
+        "1",
+        "2",
+        "3"
+      ],
+      "2.2": [
+        "1",
+        "2"
+      ],
+      "3.1": [
+        "1",
+        "2"
+      ],
+      "3.2": [
+        "1",
+        "2"
+      ],
+      "3.3": [
+        "1",
+        "2"
+      ],
+      "3.4": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "precision": "8 rubriques principales et 20 consignes terminales repérées dans le fascicule officiel. Confrontation des quatre pages et du rapport d’Y. Robert aux deux éditions. Vérification des coupures et des successeurs, de la forme et de l’ordre des tableaux de Young après déplacement, de l’identité alternée et des cas de bord de la récurrence. Les deux figures ont été rapprochées des algorithmes.",
+    "origine_attestation": {
+      "date": "2026-11-26",
+      "phase": "relecture_corrige",
+      "perimetre": "Confrontation des quatre pages et du rapport d’Y. Robert aux deux éditions. Vérification des coupures et des successeurs, de la forme et de l’ordre des tableaux de Young après déplacement, de l’identité alternée et des cas de bord de la récurrence. Les deux figures ont été rapprochées des algorithmes.",
+      "sha256_sujet_controle": "4ff0da89d02b8665b6d55d4e185fca60b2acc4896f2a066bf991a03847892f3b",
+      "sha256_rapport_controle": "25da0270802bc34e2a2ef689839a5c33b0c335185ee57ca191c62485becb93d6"
+    }
+  }
+}

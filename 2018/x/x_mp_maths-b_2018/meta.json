@@ -32,5 +32,49 @@
       "fournisseur": "codex",
       "agent": "astra_maths"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1a",
+      "1b",
+      "1c",
+      "2a",
+      "2b",
+      "2c",
+      "3a",
+      "3b",
+      "3c",
+      "4",
+      "5a",
+      "5b",
+      "5c",
+      "6a",
+      "6b",
+      "7",
+      "8",
+      "9",
+      "10a",
+      "10b",
+      "10c",
+      "11",
+      "12",
+      "13",
+      "14a",
+      "14b",
+      "14c",
+      "14d",
+      "15",
+      "16",
+      "17"
+    ],
+    "precision": "Les 31 repères de questions et sous-questions ont été rapprochés dans l’ordre du sujet officiel et dans chacune des deux éditions. La portée de la rédaction ou de la révision est conservée dans le journal cité.",
+    "origine_attestation": {
+      "commit_du_journal": "703004364ddcea99cd8a8fe6f292ecf71bfe5cb9",
+      "sha256_sujet_controle": "7d37a54d527c70ac9512464939e101d9d3947a849414414647ecc03d4e0bf9a9",
+      "phase": "redaction",
+      "date": "2026-11-24",
+      "perimetre": "Rédaction des 31 questions ou sous-questions de la composition de remplacement du 5 mai 2018. Concordance vérifiée avec le rapport, y compris la chronologie p. 4. Vérification des normes de Legendre, des cercles et des cas d’égalité, du minimiseur et de la valeur du minimum. Figure de la question 10c."
+    }
+  }
 }

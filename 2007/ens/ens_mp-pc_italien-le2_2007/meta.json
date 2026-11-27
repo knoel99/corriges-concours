@@ -1,0 +1,63 @@
+{
+  "slug": "ens_mp-pc_italien-le2_2007",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Italien (LE2)",
+    "annee": 2007,
+    "modalite": "écrit"
+  },
+  "intitule": "Photovoltaïque organique et incitations à moins polluer",
+  "questions": 2,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "V",
+      "1"
+    ]
+  },
+  "sources": {
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2007",
+    "etablissements": "ENS de Paris et de Cachan",
+    "pages_sujet": "7",
+    "code_garde": "71.10PM",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2007/sujet-ecrit-2007-mp-pc_langue_etrangere_2.pdf#page=7",
+    "sujet_sha256": "5309bb7be121409229b9d682b83dc64317cd1725af428d833510660019c75b2c",
+    "precision": "L’extrait de Jaime D’Alessandro a été publié par La Repubblica.it le 11 décembre 2006. Les rendements, prix et perspectives sont ceux du reportage. Le rapport d’italien LE2 2007 n’a pas été retrouvé."
+  },
+  "mots_expression": {
+    "1": 125
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V",
+      "fichier": "figures/panneaux.svg",
+      "legende": "L’article compare un produit commercial de 2006 et une piste de recherche."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "fichier": "figures/incitation.svg",
+      "legende": "L’exemple des transports distingue règle, alternative et résultat."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "italien_sciences_2005_2010",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et réponses intégrales en italien. Photovoltaïque organique et incitations à moins polluer.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}

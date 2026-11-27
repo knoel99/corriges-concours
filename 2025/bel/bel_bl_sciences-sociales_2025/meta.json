@@ -71,12 +71,81 @@
       "modifications": true,
       "perimetre": "Revue du PDF distribué et des deux copies. Calcul de trois probabilités conditionnelles d’achat bio à partir de la constante et des rapports de cotes du document 3. Discussion du revenu, du diplôme, des données Kantar 2007, de leur portée causale et de l’événement observé, avec un graphique original et le calcul dans le guidé.",
       "session": "astra_physique"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "session": "reprise_saclay_eco",
+      "agent": "reprise_saclay_eco",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Les huit documents du sujet imprimé ont été comparés aux deux éditions, y compris les suites des extraits de Perrin Heredia, Pinaud, Tordjman et Stanziani. Les notes sur les quintiles, les cotes, les taux de mortalité et les soldes commerciaux ont été vérifiées sur les pages 2, 4, 5 et 10. Le rapport du jury a été recoupé aux pages 2 et 15 pour résoudre la différence de décompte.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
   ],
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/2025_blses_sujet_composition_sciences_sociales.pdf",
     "rapport": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_ecrit_sciences_economiques_et_sociales.pdf",
     "sujet_sha256": "4f0de3d7667321c3fd8c72833471a142ad07dcba56118d370627f3d77ea9fc90"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "L’alimentation : à quels prix ?"
+    ],
+    "annexes_verifiees": [
+      {
+        "document": 1,
+        "pages": "2",
+        "intitule": "Structure de la consommation des ménages"
+      },
+      {
+        "document": 2,
+        "pages": "2–3",
+        "intitule": "Ethnographie économique des dépenses d’un ménage populaire"
+      },
+      {
+        "document": 3,
+        "pages": "4",
+        "intitule": "Les déterminants de l’achat bio"
+      },
+      {
+        "document": 4,
+        "pages": "5",
+        "intitule": "Régime alimentaire et mortalité, comparaisons par pays"
+      },
+      {
+        "document": 5,
+        "pages": "6–7",
+        "intitule": "Institutions, autonomie des marchés et prix : la PAC"
+      },
+      {
+        "document": 6,
+        "pages": "8–9",
+        "intitule": "Alimentation et système de production"
+      },
+      {
+        "document": 7,
+        "pages": "10",
+        "intitule": "Les performances à l’export des filières agricoles et agroalimentaires"
+      },
+      {
+        "document": 8,
+        "pages": "10–11",
+        "intitule": "Marchés financiers et prix des matières premières"
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "verification": "Les huit documents du sujet imprimé ont été comparés aux deux éditions, y compris les suites des extraits de Perrin Heredia, Pinaud, Tordjman et Stanziani. Les notes sur les quintiles, les cotes, les taux de mortalité et les soldes commerciaux ont été vérifiées sur les pages 2, 4, 5 et 10. Le rapport du jury a été recoupé aux pages 2 et 15 pour résoudre la différence de décompte.",
+    "limites": "Le dossier imprimé de onze pages et huit documents fixe le périmètre de la dissertation. Le rapport de l’ENS, consulté dans sa version indexée, annonce sept pièces à la page 2 puis commente le document 8 à la page 15."
   }
 }

@@ -1,0 +1,67 @@
+{
+  "slug": "bel_bl_sociologie-oral-a-option-esprit-sociologique-des-lois-et-sale-boulot_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Sociologie (oral à option) — Esprit sociologique des lois et sale boulot",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "L’esprit sociologique des lois / Le « sale boulot »",
+  "questions": 2,
+  "sujets": 2,
+  "intitules": {
+    "A": "L’esprit sociologique des lois",
+    "B": "Le « sale boulot »"
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oraux_sociologie_option_bl.pdf#page=52",
+    "sujet_sha256": "a6cfd0e1d317596c64fdd7f85e2770ef806175c8b278483fe266bc97bed6e3d9",
+    "sujet_pages": 54,
+    "page_pdf": 52,
+    "fin_pdf": 52,
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_sociologie_option.pdf",
+    "rapport_sha256": "514cddfb2a08ef98d7d1375ef107103a12e496e5c827f26b9640024be445eb8b",
+    "rapport_pages": 4
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ],
+    "precision": "Un billet offre deux sujets sans documents. Les deux exposés au choix figurent dans chaque édition. Intitulés relus sur le fac-similé page 52 et dans la liste page 4 du rapport d’option."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/formation-dun-litige.svg",
+      "legende": "Les étapes qui séparent une expérience d’un litige. Au fil des étapes, la population observable par les institutions change."
+    },
+    {
+      "numero": 2,
+      "question": "B",
+      "fichier": "figures/trois-points-dobservation.svg",
+      "legende": "Trois points d’observation du même soin quotidien. Les écarts entre prescription, activité et reconnaissance renseignent sur la division morale du travail."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "rennes_oraux_economie",
+      "session": "rennes_oraux_economie",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture du billet et du rapport. Rédaction indépendante des deux exposés, élaboration de situations d’enquête sur le droit et la division morale du travail, figures et relances résolues."
+    }
+  ]
+}

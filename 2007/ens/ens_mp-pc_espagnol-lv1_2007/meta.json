@@ -1,0 +1,73 @@
+{
+  "slug": "ens_mp-pc_espagnol-lv1_2007",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Espagnol (LV1)",
+    "annee": 2007,
+    "modalite": "écrit",
+    "duree_heures": 2
+  },
+  "intitule": "Les Mayas selon Hollywood",
+  "questions": 3,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2007/sujet-ecrit-2007-mp-pc_langue_vivante_1.pdf#page=4",
+    "sha256_sujet": "15f4c97a9eb06e463e4a884fa769e62b3ea7db6a925e0c92fce4dfe70e89da5b",
+    "etablissements_imprimes": "ENS de Paris, de Lyon et de Cachan",
+    "page_version": "4",
+    "texte_support": "D’après El Universal, Mexique, dimanche 28 janvier 2007.",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2007/sujet-ecrit-2007-mp-pc_langue_vivante_1.pdf#page=4",
+        "sha256": "15f4c97a9eb06e463e4a884fa769e62b3ea7db6a925e0c92fce4dfe70e89da5b",
+        "pages": "4",
+        "pages_document": 8,
+        "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2007",
+        "url_originale": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2007/sujet-ecrit-2007-mp-pc_langue_vivante_1.pdf",
+        "date_capture_utc": "sans capture"
+      }
+    ],
+    "code_garde": "71.12PM"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/trois-questions-aux-spectateurs.svg",
+      "question": "1",
+      "legende": "Trois questions du sondage portent sur des objets différents. Leurs résultats agrégés laissent ouverte la question des motivations de chaque personne interrogée."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "option_info_2006_2009",
+      "agent": "option_info_2006_2009",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Version personnelle intégrale de « Les Mayas selon Hollywood », deux réponses personnelles en espagnol, indications de traduction et de rédaction, schéma sur Trois questions du sondage portent sur des objets différents. Leurs résultats agrégés laissent ouverte la question des motivations de chaque personne interrogée."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2.1",
+      "2.2"
+    ],
+    "limites": "Le rapport écrit de cette option reste à retrouver."
+  },
+  "bareme": {
+    "version": 12,
+    "expression": 8
+  }
+}

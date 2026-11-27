@@ -1,0 +1,108 @@
+{
+  "slug": "agro-veto_bcpst_svt_2023",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "SVT",
+    "annee": 2023
+  },
+  "questions": 29,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "annexe": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/sujet-a-bcpst-svt-annexe-session-2023_0.pdf",
+    "annexe_sha256": "f13fc95959e74aaf169cc13578ca4efdebbca66415cc99073d3843b750723325",
+    "rapport": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/rapport-svt-epreuve-sur-support-de-documents-abcpst-session-2023_0.pdf",
+    "rapport_sha256": "6e702696f8be105047def4dcd954b1602386abb2634192c534df1151d9c48ebe",
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/sujet-a-bcpst-svt-session-2023_0.pdf",
+    "sujet_sha256": "f68ed38a5811e26d5a3d9b884c6ba4eb0c2d379660fd5b373bf38d255db2f76e"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "G1",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G6",
+      "G7",
+      "G8",
+      "G9",
+      "G10",
+      "G11",
+      "G12",
+      "G13",
+      "G14",
+      "B1",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "B6",
+      "B7",
+      "B8",
+      "B9",
+      "B10",
+      "B11",
+      "B12",
+      "B13",
+      "B14",
+      "B15"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Les 14 questions du cahier de géologie (G) et les 15 du cahier de biologie (B) sont traitées avec leurs sous-questions. Les dessins donnent les constructions à reporter sur l’annexe."
+  },
+  "date_revision": "2026-11-25",
+  "figures": [
+    {
+      "question": "G5",
+      "fichier": "figures/failles.svg",
+      "legende": "Une ellipse par champ régional. Les axes intermédiaires sont verticaux. Les dimensions des ellipses sont conventionnelles."
+    },
+    {
+      "question": "G7",
+      "fichier": "figures/afm.svg",
+      "legende": "Les points rouges situent l’échantillon. Dans AFM, chaque proportion est rapportée à la somme A + F + M."
+    },
+    {
+      "question": "G9",
+      "fichier": "figures/coupes.svg",
+      "legende": "Interprétation des profils de l’annexe. L’ancienne subduction océanique vers le NE précède l’épaississement continental. Coupes schématiques sans exagération chiffrée."
+    },
+    {
+      "question": "G10",
+      "fichier": "figures/pompages.svg",
+      "legende": "Les mesures de niveau et de déplacement contraignent le lien proposé entre extraction, compaction et rupture différentielle."
+    },
+    {
+      "question": "G14",
+      "fichier": "figures/plis.svg",
+      "legende": "Schéma de report des deux crêtes, du creux central et des deux principales langues salifères. Les affleurements permettent de proposer la position des conduits."
+    },
+    {
+      "question": "B11–B12",
+      "fichier": "figures/kar.svg",
+      "legende": "Le cycle pyrane de gauche distingue KAR1 de la molécule de comparaison. Les oxygènes expliquent la présence de liaisons polaires dans cette molécule neutre."
+    },
+    {
+      "question": "B15",
+      "fichier": "figures/signal.svg",
+      "legende": "Une réponse moléculaire précède des effets observés à plusieurs échelles dans des espèces différentes. ABA désigne l’acide abscissique."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "lettres_svt_suite",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Résolution des deux cahiers de l’épreuve et de leurs sous-questions, confrontée aux cartes, graphes, planche A3 et rapport du jury. Sept illustrations originales, dont les constructions AFM, le croquis structural et la structure de KAR1."
+    }
+  ]
+}

@@ -9,9 +9,10 @@
   "questions": 15,
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
-    "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-1_mp_2003.pdf",
+    "sujet": "https://fichiers.wikiprepa.fr/data/x_maths-1_mp_2003.pdf",
     "rapport_jury": "https://www.wikiprepa.fr/concours/data/x_maths-1_mp_2003_rapport_jury.pdf",
-    "sha256_sujet": "806b23d98491cf293c536b28306aec0d7b5aa1e4111c2492f6b3f2200d22a58f"
+    "sha256_sujet": "806b23d98491cf293c536b28306aec0d7b5aa1e4111c2492f6b3f2200d22a58f",
+    "sha256_rapport_jury": "62445e1f17054a53ddfa95e1da0a44ca5329ed48b9fd0d9c063fe5bf3af8f2bc"
   },
   "figures": [
     {
@@ -31,6 +32,61 @@
       "perimetre": "Rédaction sur l’original et le rapport de correction. Continuité de l’intégrale, complétude et inverse bilatère, wronskien, restes oscillants par intégrations par parties, récurrence et paramètres de troncature. Schéma du rapport des coefficients.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Contrôle visuel des trois pages scannées, complétude de l’espace des opérateurs, dérivation sous l’intégrale, signes du développement oscillant et série terminée.",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "agent": "rennes_oraux_economie",
+      "session": "rennes_oraux_economie"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9.a",
+      "9.b",
+      "9.c",
+      "10.a",
+      "10.b",
+      "10.c",
+      "10.d"
+    ],
+    "pages_du_sujet": 3,
+    "pages_pdf_des_questions": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 2,
+      "6": 2,
+      "7": 2,
+      "8": 2,
+      "9.a": 3,
+      "9.b": 3,
+      "9.c": 3,
+      "10.a": 3,
+      "10.b": 3,
+      "10.c": 3,
+      "10.d": 3
+    },
+    "precision": "Sous-questions relevées sur le fac-similé. Le numéro de page désigne le début de chaque demande dans le PDF original."
+  }
 }

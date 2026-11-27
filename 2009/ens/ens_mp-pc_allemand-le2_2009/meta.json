@@ -1,0 +1,73 @@
+{
+  "slug": "ens_mp-pc_allemand-le2_2009",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Allemand (LE2)",
+    "annee": 2009,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "intitule": "Medizin: „Gesundheit wird zur eigenen Religion“",
+  "bareme": {
+    "version": 15,
+    "expression": 5
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2009/MP/2009_sujet_mp_pc_le2.pdf#page=2",
+    "sujet_sha256": "f46f3fc56ede28104327530e51415ff9d26e0fde65bc9ea704a143f78112288e",
+    "page_pdf": 2,
+    "index": "https://www.ens.psl.eu/rapports-et-sujets-2009-pc",
+    "etablissements_imprimes": "Paris et Cachan",
+    "texte_support": "« Medizin: Gesundheit wird zur eigenen Religion », WeltOnline, décembre 2008.",
+    "rapport": "https://www.ens.psl.eu/IMG/file/concours/2009/PC/pc2009_ecri_allemand_le2.pdf",
+    "rapport_sha256": "be35605d672202485d184523e8c24a2f93f90d7d6c6050ceacdc7a9e9f19171f",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2009/PC/pc2009_ecri_allemand_le2.pdf"
+  },
+  "redaction": "Version de l’article sur l’analogie religieuse de Manfred Lütz, qualification des propos rapportés et argumentation en allemand de plus de cent mots.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I",
+      "fichier": "figures/analogie-medicale.svg",
+      "legende": "Les correspondances religieuses que le psychiatre emploie pour décrire un culte de la santé."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du rapport de M. Bourcy sur la progression logique du texte, les inférences lexicales et l’argumentation de la question à cent mots minimum."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version de l’article sur l’analogie religieuse de Manfred Lütz, qualification des propos rapportés et argumentation en allemand de plus de cent mots.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I",
+      "II"
+    ]
+  }
+}

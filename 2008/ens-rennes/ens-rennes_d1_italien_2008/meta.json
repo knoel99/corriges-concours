@@ -1,0 +1,56 @@
+{
+  "slug": "ens-rennes_d1_italien_2008",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Italien",
+    "annee": 2008,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet08d1langues_1421752176045-pdf#page=6",
+    "sha256_sujet": "cb9e217b941d664b2ef7272786c8e3dfa9e5ab1fbb9e68250888aa1f3a7fa603",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "publication": "Eurispes, Rapporto Italia 2008, synthèse pour la presse",
+    "page": 6
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en italien"
+    ],
+    "precision": "Traduction française de l’intégralité du passage délimité et réponse en italien."
+  },
+  "longueur_expression": {
+    "mots": 100,
+    "regle": "Le preoccupazioni economiche condizionano il modo in cui i giovani considerano il loro avvenire? 100 mots."
+  },
+  "figures": [
+    {
+      "fichier": "figures/autonomia.svg",
+      "legende": "Due dimensioni dell’emancipazione"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Traduction française de l’intégralité du passage délimité et réponse en italien. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

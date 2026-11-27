@@ -16,24 +16,35 @@
     {
       "fichier": "figures/proces-du-loup.svg",
       "question": "A2",
-      "legende": "Le déplacement des accusations."
+      "legende": "Le déplacement des accusations.",
+      "numero": 1
     },
     {
       "fichier": "figures/accusation-publique.svg",
       "question": "B",
-      "legende": "Une réponse au pouvoir du premier accusateur."
+      "legende": "Une réponse au pouvoir du premier accusateur.",
+      "numero": 2
     }
   ],
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20FUI-FF%20Session%20Printemps%20SUJET%20FRANCAIS.pdf",
     "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
-    "sujet_sha256": "80c46fa494fc0ab933f45084655a820f9602a8aa006d833866b5f319c15a9028"
+    "sujet_sha256": "80c46fa494fc0ab933f45084655a820f9602a8aa006d833866b5f319c15a9028",
+    "pages_sujet": 3,
+    "reperage": "PDF p. 1, garde de printemps avec la seule mention « Date ». P. 2, fable et six gloses. P. 3, A1 à A4 et B.",
+    "rapport": "La rubrique FUI-FF de la banque publie les sujets de français, sans lien vers un rapport pour cette session.",
+    "references_essai": [
+      {
+        "titre": "Cour de cassation, chambre sociale, 4 mars 2020, pourvoi n° 19-13.316",
+        "url": "https://www.courdecassation.fr/toutes-les-actualites/2020/03/04/uber-et-requalification-de-la-prestation-dun-chauffeur-en-contrat"
+      }
+    ]
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-26",
   "revision": {
-    "date": "2026-11-24",
-    "modele": "Codex (GPT-6)",
-    "verification": "Contre-lecture indépendante sur le sujet scanné, les réponses, les exemples précis et la portée de l’essai personnel."
+    "date": "2026-11-26",
+    "modele": "GPT-6.2 Astra Ultra",
+    "verification": "Correction du rôle des personnages dans le résumé, passage du singulier au collectif, ironie du superlatif, développement de deux exemples contemporains dont un cas jugé en 2020 et nouvelle représentation des objections."
   },
   "provenance": {
     "redaction": {
@@ -83,6 +94,39 @@
       "modifications": true,
       "perimetre": "Relecture du fac-similé de La Fontaine, détail de la position dans le courant, absence de réponse au dernier grief, qualification des deux personnages, morale et essai contemporain.",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "francais_x_2022_2023",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Correction du rôle des personnages dans le résumé, passage du singulier au collectif, ironie du superlatif, développement de deux exemples contemporains dont un cas jugé en 2020 et nouvelle représentation des objections."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A1 — Idée principale et récit de la rencontre en ses propres mots.",
+      "A2 — Caractériser les accusations du loup et les réponses de l’agneau.",
+      "A3 — Donner des adjectifs justifiés pour chacune des deux attitudes.",
+      "A4 — Expliquer le premier vers et montrer comment la fable illustre la morale.",
+      "B — Donner un avis personnel sur la morale par des exemples concrets et précis dans la société contemporaine."
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "elements_verifies": [
+      "PDF p. 1, garde de printemps avec la seule mention « Date ». P. 2, fable et six gloses. P. 3, A1 à A4 et B.",
+      "Épreuve n° 2 de deux heures. Dictionnaires et traducteurs électroniques interdits. Un seul essai, sans option ni limite du nombre de mots.",
+      "Correction du rôle des personnages dans le résumé, passage du singulier au collectif, ironie du superlatif, développement de deux exemples contemporains dont un cas jugé en 2020 et nouvelle représentation des objections."
+    ]
+  }
 }

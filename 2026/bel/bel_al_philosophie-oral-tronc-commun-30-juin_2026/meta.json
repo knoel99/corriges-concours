@@ -23,7 +23,8 @@
     "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_al.pdf",
     "sujet_sha256": "df7ffdc22ce75bd0987d51a6c51a508d7cde989fd0d876b3581efe56400c21ee",
     "rapport": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf",
-    "rapport_sha256": "b7ae24985758ee21c7601a903f81ce57bdcef0cb108f8852ecd308eba32c7dca"
+    "rapport_sha256": "b7ae24985758ee21c7601a903f81ce57bdcef0cb108f8852ecd308eba32c7dca",
+    "index": "https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-al"
   },
   "figures": [
     {
@@ -37,7 +38,7 @@
       "question": "11"
     }
   ],
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-26",
   "contributions": [
     {
       "phase": "redaction",
@@ -62,6 +63,22 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Confrontation de l’ordre, des choix et de chaque énoncé au feuillet et aux caractères gras de l’annexe du rapport. Vérification de la durée, des références conceptuelles, du lien entre cas concrets et thèses et de l’entraînement propre au guide."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "sociologie_psl_oraux_individuels",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rapprochement des 12 billets et des 24 intitulés avec le feuillet, les choix en gras du rapport et les développements des deux éditions. Ajout des consignes de tirage et des ouvrages autorisés, du renvoi aux sources et de 12 relances argumentées pour les alternatives dans le guidé."
     }
   ],
   "choix_dans_ordre_feuillet": [
@@ -77,5 +94,80 @@
     1,
     2,
     2
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "tirages_verifies": 12,
+    "sujets_choisis_verifies": 12,
+    "alternatives_verifiees": 12,
+    "intitules_par_edition": 24,
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "questions_entierement_traitees": [
+      "1. Alternative — Les mots disent-ils les choses ?",
+      "1. Sujet choisi — La répétition",
+      "2. Sujet choisi — Qu’est-ce qu’un malentendu ?",
+      "2. Alternative — Posséder",
+      "3. Sujet choisi — Qui a un destin ?",
+      "3. Alternative — La généralité",
+      "4. Sujet choisi — Le manque",
+      "4. Alternative — Que font les machines ?",
+      "5. Sujet choisi — Le désordre",
+      "5. Alternative — Qu’est-ce qu’une nation ?",
+      "6. Alternative — Le neutre",
+      "6. Sujet choisi — La paix peut-elle être perpétuelle ?",
+      "7. Sujet choisi — Le privé et le public",
+      "7. Alternative — Tenir son rôle",
+      "8. Alternative — Qu’est-ce qui est tragique ?",
+      "8. Sujet choisi — La fin de la politique",
+      "9. Sujet choisi — L’immortalité",
+      "9. Alternative — Qu’est-ce qu’une institution ?",
+      "10. Sujet choisi — La partie et le tout",
+      "10. Alternative — De quoi meurent les civilisations ?",
+      "11. Alternative — Qu’est-ce qu’un faux problème ?",
+      "11. Sujet choisi — L’égalité des chances",
+      "12. Alternative — L’intérêt",
+      "12. Sujet choisi — Que nous apporte l’écriture ?"
+    ],
+    "choix_dans_ordre_feuillet": [
+      2,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      1,
+      2,
+      2
+    ],
+    "pages_verifiees": {
+      "sujet": [
+        1
+      ],
+      "rapport": [
+        1,
+        9
+      ]
+    },
+    "rangs_annexe_rapport": [
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159
+    ],
+    "controle": "12 billets sur le feuillet et aux rangs 148–159 dans la section V du rapport. Le sujet en gras est le sujet choisi. Chaque terme reçoit son propre développement dans chacune des deux éditions. Le feuillet porte « Philosophie 3 ». Sa date est établie par le lien « 30 juin » de l’index officiel."
+  }
 }

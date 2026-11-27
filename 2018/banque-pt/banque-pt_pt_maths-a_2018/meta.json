@@ -1,0 +1,235 @@
+{
+  "slug": "banque-pt_pt_maths-a_2018",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths A",
+    "intitule": "Épreuve de Mathématiques A",
+    "annee": 2018,
+    "duree": "4 h"
+  },
+  "questions": 36,
+  "redaction": "Proposition pédagogique non officielle, rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2018/math_a_2018_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2018/rapport_math_a_ecrit_2018.pdf",
+    "sujet_sha256": "24e289118c58f0192ceca7e49be4f81d96e6d5c00b114842869979a1d468e15e",
+    "rapport_jury_sha256": "8e3ff89a3ebff6b6b07d49be303421d00206e681e2acf4c5fe3f3b95b4b55fcf",
+    "observation_rapport": "Le rapport 2018, p. 1–2, insiste sur la base dans laquelle on écrit une rotation et sur les deux facteurs du changement de base. Aux p. 3–4, il demande de justifier les dénombrements et l’identification de la loi binomiale."
+  },
+  "figures": [
+    {
+      "question": "P.4",
+      "fichier": "figures/occupation.svg",
+      "legende": "Pour arriver à k cases occupées après le lancer, la boule réutilise une case occupée ou ouvre une nouvelle case."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "II.1.a",
+      "II.1.b",
+      "II.1.c",
+      "II.2.a",
+      "II.2.b",
+      "II.2.c",
+      "III.1",
+      "III.2.a",
+      "III.2.b",
+      "III.2.c",
+      "III.3.a",
+      "III.3.b",
+      "III.3.c",
+      "III.3.d",
+      "III.3.e",
+      "III.3.f",
+      "III.4.a",
+      "III.4.b",
+      "III.4.c",
+      "III.4.d",
+      "P.1",
+      "P.2",
+      "P.3",
+      "P.4",
+      "P.5.a",
+      "P.5.b",
+      "P.5.c",
+      "P.5.d",
+      "P.6.a",
+      "P.6.b",
+      "P.6.c",
+      "P.6.d"
+    ],
+    "repere_par_question": [
+      {
+        "question": "I.1",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.2",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.3",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.4",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.1.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.1.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.1.c",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.2.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.2.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.2.c",
+        "page_pdf": 2
+      },
+      {
+        "question": "III.1",
+        "page_pdf": 2
+      },
+      {
+        "question": "III.2.a",
+        "page_pdf": 2
+      },
+      {
+        "question": "III.2.b",
+        "page_pdf": 2
+      },
+      {
+        "question": "III.2.c",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.3.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.3.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.3.c",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.3.d",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.3.e",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.3.f",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.4.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.4.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.4.c",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.4.d",
+        "page_pdf": 3
+      },
+      {
+        "question": "P.1",
+        "page_pdf": 3
+      },
+      {
+        "question": "P.2",
+        "page_pdf": 3
+      },
+      {
+        "question": "P.3",
+        "page_pdf": 3
+      },
+      {
+        "question": "P.4",
+        "page_pdf": 4
+      },
+      {
+        "question": "P.5.a",
+        "page_pdf": 4
+      },
+      {
+        "question": "P.5.b",
+        "page_pdf": 4
+      },
+      {
+        "question": "P.5.c",
+        "page_pdf": 4
+      },
+      {
+        "question": "P.5.d",
+        "page_pdf": 4
+      },
+      {
+        "question": "P.6.a",
+        "page_pdf": 4
+      },
+      {
+        "question": "P.6.b",
+        "page_pdf": 4
+      },
+      {
+        "question": "P.6.c",
+        "page_pdf": 4
+      },
+      {
+        "question": "P.6.d",
+        "page_pdf": 4
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "36 consignes ou sous-consignes numérotées traitées dans chaque édition. Les deux sens de la diagonalisation, les deux corps et les cas limites n > N et N = 1 sont explicités."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "fui_physique_un",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture du sujet et du rapport annuels, rédaction et vérification des deux éditions illustrées et du décompte par page. Les deux sens de la diagonalisation, les deux corps et les cas limites n > N et N = 1 sont explicités."
+    }
+  ]
+}
