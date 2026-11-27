@@ -610,6 +610,24 @@
       "modifications": true,
       "phase": "redaction",
       "perimetre": "Résolution des 45 questions et rédaction des indications des deux éditions après lecture du sujet, du cahier et du rapport du jury."
+    },
+    {
+      "agent": "/root/ta_maths_8587",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "session": "banque_pt_si_a_2012",
+      "modifications": true,
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "perimetre": "Lecture des deux PDF membres du ZIP, du cahier et du rapport de trois pages, recalage des données des six arcs sur les dimensions du tableau 3, test de la surface balayée, identification des deux courbes imprimées, contrôle numérique du polynôme de l’observateur et transcription étape par étape des deux GRAFCET, y compris les deux variantes de perte de lobe."
     }
-  ]
+  ],
+  "date_revision": "2026-11-27"
 }

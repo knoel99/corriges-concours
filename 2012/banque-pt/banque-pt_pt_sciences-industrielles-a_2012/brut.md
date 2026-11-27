@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 27 novembre 2026
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 27 novembre 2026
+
 Le robot aspirateur étudié est un appareil de nettoyage domestique. La correction suit le sujet et son cahier réunis dans un PDF de 48 pages. Un second PDF de l’archive officielle remplace le texte de la question 5 et fixe la masse utilisée aux questions 6 à 8 à 3,6 kg.
 
 [Sujet et cahier officiels](https://www.banquept.fr/documents/2012/si_a_pt_2012.zip) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2012/rapport_si_a_ecrit_2012.pdf)
@@ -30,7 +32,7 @@ Il manque $0,90\times3,30=2,97$ Ah. À 1,50 A et avec un rendement de charge de 
 
 ### Question 5 — Confrontation aux annonces
 
-Sous les conditions moyennes du sujet, $3,30/1,35=2,44$ h, soit 147 min pour 120 min au minimum. En 120 min, 95,0 m² dépassent les 80 m² attendus, et la recharge de 2,48 h reste sous 3 h. Les trois critères sont respectés.
+Sous les conditions moyennes du sujet, $3,30/1,35=2,44$ h, soit 147 min pour 120 min au minimum. En 120 min, 95,0 m² dépassent les 80 m² attendus, et la recharge de 2,48 h reste sous 3 h. Les trois critères sont respectés. L’erratum officiel ajoute après cette question $M_{\rm rbt}=3,6$ kg pour l’étude de la rampe.
 
 ### Question 6 — Forces extérieures en pente
 
@@ -63,7 +65,7 @@ Dans les axes du cahier, $G_0=O_i=(0,0)$, la roue droite est au départ à $(0,1
 | Q5 | (0, 75) | (−225, 75) | (−375, 75) | (−75, 75) |
 | Q6 | (75, 75) | (75, 375) | (75, 525) | (75, 225) |
 
-
+ La grille du cahier dessine l’empattement transversal sur quatre carreaux étiquetés 100 mm. La dimension de 300 mm et les rayons du tableau 3 donnent 75 mm par carreau de ce dessin.
 
 ![Six positions de l’essieu et centres instantanés en millimètres](figures/positions.svg)
 
@@ -155,7 +157,7 @@ $\tau_2=g/\omega_n^2=1/(2m\omega_n)\simeq0,0483$ s, environ 0,05 s. En imposant 
 
 ### Question 26 — Essai du correcteur compensé
 
-La figure 11 converge vers environ 2,09 rad à l’arbre moteur. Le seuil $0,95\times2,09\simeq1,99$ rad est franchi vers 0,197 à 0,20 s sans sortie ultérieure de la bande. Le temps est compatible avec la limite de 0,22 s.
+La figure 11 converge vers environ 2,09 rad à l’arbre moteur. Le seuil $0,95\times2,09\simeq1,99$ rad est franchi vers 0,197 à 0,20 s sans sortie ultérieure de la bande. Le temps est compatible avec la limite de 0,22 s. Le niveau proche de $2\pi/3$ rad pour un top s’explique par le capteur réel à trois tops par tour. Le réducteur multiplie les ordonnées par $1/80$ et conserve le temps de réponse.
 
 ![Seuil de réponse en position sur la figure 11](figures/suivi.svg)
 
@@ -207,7 +209,7 @@ $\det(pI-A_o)=(p+K_{\rm pos}L_{o1})(p+1/\tau_\Omega)+K_{\rm pos}L_{o2}$. Le poly
 
 ### Question 36 — Deux pôles plus rapides
 
-$\tau_o=\tau_\Omega/5=0,020$ s. On trouve $L_{o1}=(2/\tau_o-1/\tau_\Omega)/K_{\rm pos}$ et $L_{o2}=1/(K_{\rm pos}\tau_o^2)-L_{o1}/\tau_\Omega$. Numériquement $L_{o1}=180$ et $L_{o2}=3200$ dans les unités du modèle.
+$\tau_o=\tau_\Omega/5=0,020$ s. On trouve $L_{o1}=(2/\tau_o-1/\tau_\Omega)/K_{\rm pos}$ et $L_{o2}=1/(K_{\rm pos}\tau_o^2)-L_{o1}/\tau_\Omega$. Numériquement $L_{o1}=180$ et $L_{o2}=3200$ dans les unités du modèle. Le polynôme obtenu est $p^2+100p+2500=(p+50)^2$, ce qui fournit une vérification des signes et de l’ordre des états.
 
 ### Question 37 — Rapidité et coût avec l’observateur
 
@@ -249,7 +251,7 @@ Définir $sig=lt\lor ltg\lor lg\lor lgd\lor ld\lor ltd$. La réceptivité en amo
 
 ### Question 44 — Expansion du lobe tourelle
 
-L’étape 100 est activée par l’étape 9. Sous $lt$, on entre en 101, action FW. Après 0,5 s de 101, un autre code ramène au répartiteur 100. Avec $lt$ et $dd$ on commande CCW jusqu’à la disparition de $dd$, avec $lt$ et $dg$ on commande CW jusqu’à la disparition de $dg$, puis on redistribue en 100. Si aucun code n’est reçu, on passe en recherche CW. Quand $lt$ revient sans obstacle, on prolonge CW de 25°, puis on redistribue. S’il revient avec un obstacle, on prend la rotation d’évitement correspondante. Tout autre lobe acquis renvoie à 100.
+L’étape 100 est activée par l’étape 9. Sous $lt$, on entre en 101, action FW. Après 0,5 s de 101, un autre code ramène au répartiteur 100. Avec $lt$ et $dd$ on commande CCW jusqu’à la disparition de $dd$, avec $lt$ et $dg$ on commande CW jusqu’à la disparition de $dg$, puis on redistribue en 100. Si aucun code n’est reçu, on passe en recherche CW. Quand $lt$ revient sans obstacle, on prolonge CW de 25°, puis on redistribue. S’il revient avec un obstacle, on prend la rotation d’évitement correspondante. Tout autre lobe acquis renvoie à 100. Les détecteurs de proximité sont exploités seulement pendant la réception de $lt$. La figure rend explicite un choix de priorité à droite si les deux côtés s’activent à la fois, éventualité que le texte ne départage pas. Le contact dock termine l’encapsulation.
 
 ![Expansion du guidage par la tourelle et retours au répartiteur](figures/tourelle.svg)
 
