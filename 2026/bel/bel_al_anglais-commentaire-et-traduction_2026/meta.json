@@ -6,7 +6,7 @@
     "matiere": "Anglais (commentaire et traduction)",
     "annee": 2026
   },
-  "questions": 0,
+  "questions": 2,
   "redaction": "Proposition non officielle rédigée par IA.",
   "modele": {
     "provider": "codex",
@@ -17,7 +17,38 @@
   },
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/al_lve_commun_commentaire_traduction_2026.pdf#page=4",
-    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Anglais%202026.pdf#page=2"
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Anglais%202026.pdf#page=2",
+    "sha256_sujet": "a70699ab765553dd9ad914a5027a2cad6faac518819e96aa6f2a4d96e0be27c6",
+    "sha256_rapport_jury": "00c482cd51fd12a61ef70ee9e667ceab2da69d8656858294b8652f7d160e0a90",
+    "pages_sujet_verifiees": [
+      1,
+      4,
+      5
+    ],
+    "pages_rapport_commun": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ]
   },
   "figures": [
     {
@@ -26,7 +57,7 @@
       "legende": "Le geste répété à la fenêtre"
     }
   ],
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-27",
   "contributions": [
     {
       "phase": "redaction",
@@ -86,6 +117,62 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Frankenstein, gestes à la fenêtre, focalisation et limite du témoignage."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "/root/lva_pt_2325",
+      "agent": "lva_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "perimetre": "Rapprochement des deux sons et de leurs témoins, retour à la direction du vent et au mouvement ajouté par le reflet. Relecture des 35 segments du rapport et de la rupture dans les mouvements de Victor."
     }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire en anglais",
+      "Version française"
+    ],
+    "origine_attestation": {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "date": "2026-11-27",
+      "sha256_sujet_controle": "a70699ab765553dd9ad914a5027a2cad6faac518819e96aa6f2a4d96e0be27c6",
+      "perimetre": "Rapprochement des deux sons et de leurs témoins, retour à la direction du vent et au mouvement ajouté par le reflet. Relecture des 35 segments du rapport et de la rupture dans les mouvements de Victor."
+    },
+    "repere_par_question": [
+      {
+        "question": "Commentaire en anglais",
+        "pages_pdf": [
+          4,
+          5
+        ],
+        "lignes": [
+          1,
+          59
+        ]
+      },
+      {
+        "question": "Version française",
+        "pages_pdf": [
+          4
+        ],
+        "lignes": [
+          22,
+          36
+        ],
+        "debut": "She left me, and",
+        "fin": "I fainted."
+      }
+    ]
+  },
+  "provenance": [
+    "ENS de Lyon",
+    "ENS (Paris)",
+    "ENS Paris-Saclay (langue anglaise)"
   ]
 }
