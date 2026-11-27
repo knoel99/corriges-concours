@@ -62,7 +62,7 @@ def registre() -> dict[str, str]:
         for r in lignes
     ):
         raise ValueError(
-            "Chaque épreuve requiert une modalité et un lien HTTPS vers son sujet."
+            "Chaque épreuve requiert une modalité et un lien HTTPS vers sa source."
         )
     return sujets
 

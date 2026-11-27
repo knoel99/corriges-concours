@@ -1,6 +1,6 @@
 # Relectures Polytechnique et ENS
 
-Le registre recense les sujets identifiés de Polytechnique, de l’ENS-PSL, de l’ENS de Lyon, de l’ENS Paris-Saclay et de l’ENS Rennes. Chaque ligne donne l’identifiant du corrigé, la modalité et le lien vers le sujet. Une épreuve partagée entre plusieurs écoles ou filières compte une fois. Le bilan distingue les écrits, les oraux et les projets pratiques. L’identification des archives se poursuit. [Registre des sujets](epreuves.tsv)
+Le registre recense les sujets identifiés de Polytechnique, de l’ENS-PSL, de l’ENS de Lyon, de l’ENS Paris-Saclay et de l’ENS Rennes. Chaque ligne donne l’identifiant du corrigé, la modalité et la source qui atteste l’épreuve. Pour l’oral de mathématiques PT de 2003, cette source est le rapport du jury. Les 90 planches qu’il dénombre restent à retrouver. Une épreuve partagée entre plusieurs écoles ou filières compte une fois. Le bilan distingue les écrits, les oraux et les projets pratiques. L’identification des archives se poursuit. [Registre des sujets](epreuves.tsv)
 
 ### Écoles et banques de concours
 
