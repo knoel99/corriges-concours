@@ -1,0 +1,193 @@
+{
+  "slug": "ccinp_mp-mpi-pc-psi-tpc-tsi_arabe_2026",
+  "commit_export": "485ae7c9974cb9d1b8671a40b8cc5ba34b488112",
+  "arbre_git": "2a3eda2ce7e4d5a972eeb283542c23499b576698",
+  "archive": "CCINP-LVA-arabe-2026.zip",
+  "agent": "lva_pt_2325",
+  "revision": {
+    "phase": "relecture_corrige",
+    "tour": 1,
+    "agent": "lva_pt_2325",
+    "session": "/root/lva_pt_2325",
+    "modele": "gpt-6.2-astra",
+    "effort": "ultra",
+    "vitesse": null,
+    "date": "2026-11-27",
+    "modifications": true,
+    "perimetre": "Révision des deux éditions, confrontation des documents et figures au sujet et au rapport publiés, vérification du décompte depuis le titre."
+  },
+  "sources": {
+    "sujet": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/Ep%20communes/2026_LVA6AllArabe.pdf#page=5",
+    "rapport_jury": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/Ep%20communes/LV_ECRIT_2026_05.10.pdf#page=15",
+    "sha256_sujet": "b058aad69cd7213a6e7a5a6e26ad834d023a57fcb9cad79137312129de2b52fa",
+    "sha256_rapport_jury": "23a73e191a42c2fcd03b46b4baca6da1089739620013f3ba144814c9a261dbb0",
+    "pages_pdf_sujet_verifiees": [
+      1,
+      5,
+      6,
+      7,
+      8
+    ],
+    "pages_pdf_rapport_verifiees": [
+      1,
+      2,
+      15,
+      16,
+      17,
+      18
+    ]
+  },
+  "decompte": {
+    "titre": "التجارة الإلكترونية بين اتساع فرص العمل وشروط الثقة في السوق",
+    "langue": "arabe",
+    "minimum": 360,
+    "maximum": 440,
+    "mots": 368,
+    "titre_et_paragraphes": [
+      10,
+      47,
+      97,
+      97,
+      117
+    ],
+    "barres": 18,
+    "total_imprime": "عدد الكلمات مع العنوان ٣٦٨.",
+    "groupes_source_introduction": [
+      "العربي الجديد",
+      "الجزيرة نت",
+      "مجلة الوفاق"
+    ],
+    "convention": "Titre inclus. Dans l’introduction, chaque source et chaque date comptent pour un mot, ainsi que le renvoi compact à un document. Unités séparées par des blancs pour le reste de la copie. Chaque vingtième mot est suivi d’une barre. Total et FIN hors compte."
+  },
+  "editions": {
+    "brut": {
+      "pages": 2,
+      "pages_copie": [
+        1
+      ],
+      "copie_integrale_et_total_verifies": true,
+      "barres_verifiees": 18,
+      "fin_verifie": true,
+      "signets": [
+        [
+          1,
+          "التجارة الإلكترونية بين اتساع فرص العمل وشروط الثقة في السوق",
+          1
+        ]
+      ],
+      "figures": [
+        {
+          "fichier": "figures/lecture-croisee.svg",
+          "legende": "À quelles conditions la vente en ligne tient-elle ses promesses ?",
+          "question": "Synthèse",
+          "page_pdf": 2,
+          "sha256_svg": "c82e61bfb37cf059f33b481f701cf61a366790b6f0feff0e3a17167c14fdbc89",
+          "sha256_forme_pdf": "c42ec092b81ed84bb42bc862d6daf22fad12c8a01565c14e8b8bd157b57081b7"
+        }
+      ],
+      "signatures_sur_premiere_page": [
+        "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+        "**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+      ],
+      "sha256_pdf": "0febc446acbc569d90818919b6cbea810a1b74370df4f224532a87962c846b76",
+      "sha256_markdown": "428983866a1d77eda276f7a5746fd08ba60ae3e39c29fe5ae916399e7f88ecbe",
+      "diagnostic_latex_propre": true,
+      "lettres_arabes_restituees": 1712,
+      "ordre_logique_et_position_des_reperes": true,
+      "segments_chiffres_arabes_controles": [
+        "١",
+        "٣٠",
+        "٠٧",
+        "٢٠٢٥",
+        "٢",
+        "٢٩",
+        "٠٥",
+        "٢٠٢٣",
+        "٣",
+        "١٥",
+        "٠٢",
+        "٢٠٢٢",
+        "٤",
+        "١٠",
+        "١١",
+        "٢٠٢٣",
+        "٣٦٨"
+      ]
+    },
+    "guide": {
+      "pages": 2,
+      "pages_copie": [
+        2
+      ],
+      "copie_integrale_et_total_verifies": true,
+      "barres_verifiees": 18,
+      "fin_verifie": true,
+      "signets": [
+        [
+          1,
+          "Lire la consigne",
+          1
+        ],
+        [
+          1,
+          "Croiser les documents",
+          1
+        ],
+        [
+          1,
+          "التجارة الإلكترونية بين اتساع فرص العمل وشروط الثقة في السوق",
+          2
+        ]
+      ],
+      "figures": [
+        {
+          "fichier": "figures/lecture-croisee.svg",
+          "legende": "À quelles conditions la vente en ligne tient-elle ses promesses ?",
+          "question": "Synthèse",
+          "page_pdf": 2,
+          "sha256_svg": "c82e61bfb37cf059f33b481f701cf61a366790b6f0feff0e3a17167c14fdbc89",
+          "sha256_forme_pdf": "c42ec092b81ed84bb42bc862d6daf22fad12c8a01565c14e8b8bd157b57081b7"
+        }
+      ],
+      "signatures_sur_premiere_page": [
+        "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+        "**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+      ],
+      "sha256_pdf": "c43298f090549d524cc87e346a7a98c361739f3813a708fa2d3d08ffef0c5d98",
+      "sha256_markdown": "9819475bd32217af6f7627be8c2205afd4533402e3f8b84f145a95ea26fbf984",
+      "diagnostic_latex_propre": true,
+      "lettres_arabes_restituees": 1712,
+      "ordre_logique_et_position_des_reperes": true,
+      "segments_chiffres_arabes_controles": [
+        "١",
+        "٣٠",
+        "٠٧",
+        "٢٠٢٥",
+        "٢",
+        "٢٩",
+        "٠٥",
+        "٢٠٢٣",
+        "٣",
+        "١٥",
+        "٠٢",
+        "٢٠٢٢",
+        "٤",
+        "١٠",
+        "١١",
+        "٢٠٢٣",
+        "٣٦٨"
+      ]
+    }
+  },
+  "sha256_contenus": {
+    "guide.md": "9819475bd32217af6f7627be8c2205afd4533402e3f8b84f145a95ea26fbf984",
+    "brut.md": "428983866a1d77eda276f7a5746fd08ba60ae3e39c29fe5ae916399e7f88ecbe",
+    "meta.json": "78066a8ba2d8083b304257d44fd76047e322321b19253289a8a925f875fdb4f9",
+    "journal-revision.json": "a1fe39dc420ad48795d7bb913fdcf94bd2008f1ee3f63e8c5e88d5b386bc33ac",
+    "figures/lecture-croisee.svg": "c82e61bfb37cf059f33b481f701cf61a366790b6f0feff0e3a17167c14fdbc89",
+    "brut.pdf": "0febc446acbc569d90818919b6cbea810a1b74370df4f224532a87962c846b76",
+    "guide.pdf": "c43298f090549d524cc87e346a7a98c361739f3813a708fa2d3d08ffef0c5d98",
+    "verifier-decompte.py": "576cfd891d23390f28fb2d7122c705914f1fd6972e3feb4b8fec8440443c7595"
+  },
+  "sha256_archive": "eaa8a1dd04a303d23512875f6d3b47b1871e023a45d62998f2b5db2f7b76619d"
+}
