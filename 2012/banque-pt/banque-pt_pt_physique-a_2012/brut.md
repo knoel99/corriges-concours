@@ -36,7 +36,7 @@ La figure ci-dessous représente la source en O, le centre C à $x=R$, le plan $
 
 ### Question A.I.2.d
 
-Avec une normale $+\vec u_z$ et $\omega=ck$, le flux enlacé vaut $\Phi=Na(E_0/c)\int_{R-a/2}^{R+a/2}\cos(\omega t-kx)\,dx=[2NaE_0/(ck)]\sin(ka/2)\cos(\omega t-kR)$. La dérivée changée de signe donne $u=A\sin(\chi t+\psi)$ avec $A=2NaE_0\sin(ka/2)$, $\chi=ck$ et $\psi=-kR$. Inverser les bornes du voltmètre change le signe de $u$.
+Avec une normale $+\vec u_z$ et $\omega=ck$, le flux enlacé vaut $\Phi=Na(E_0/c)\int_{R-a/2}^{R+a/2}\cos(\omega t-kx)\,dx=[2NaE_0/(ck)]\sin(ka/2)\cos(\omega t-kR)$. La dérivée changée de signe donne $u=A\sin(\gamma t+\psi)$ avec $A=2NaE_0\sin(ka/2)$, $\gamma=ck$ et $\psi=-kR$. Inverser les bornes du voltmètre change le signe de $u$.
 
 ### Question A.I.2.e
 
@@ -92,7 +92,7 @@ Pour $x\ll1$, $|H|\sim G_0 x/Q$. Le gain asymptotique est donc $20\log_{10}(G_0/
 
 ### Question A.II.2.d
 
-Le gain exact vaut $20\log_{10}G_0-10\log_{10}[1+Q^2(x-1/x)^2]$. Pour $G_0=Q=10$, les deux asymptotes se rencontrent en $(0,0)$ sur les axes de la feuille. La courbe exacte est symétrique autour de $\log_{10}x=0$. À $x=0{,}01$, $0{,}1$, $0{,}5$, $1$, $2$, $10$, $100$, elle vaut environ $-40$, $-20$, $-3{,}5$, $20$, $-3{,}5$, $-20$, $-40$ dB. Les abscisses $x\simeq0{,}951$ et $1{,}051$ donnent 17 dB, ce qui fixe la largeur étroite du pic. Seul le gain est demandé.
+Le gain exact vaut $20\log_{10}G_0-10\log_{10}[1+Q^2(x-1/x)^2]$. Pour $G_0=Q=10$, les deux asymptotes se rencontrent en $(0,0)$ sur les axes de la feuille. La courbe exacte est symétrique autour de $\log_{10}x=0$. À $x=0{,}01$, $0{,}1$, $0{,}5$, $1$, $2$, $10$, $100$, elle vaut environ $-40$, $-20$, $-3{,}5$, $20$, $-3{,}5$, $-20$, $-40$ dB. Les abscisses $x\simeq0{,}951$ et $1{,}051$ donnent 17 dB, ce qui fixe la largeur étroite du pic. Seul le gain est demandé. Sur la feuille-réponse, le cadre du graphique est étiqueté A.II.2.e, alors que le tracé est demandé en A.II.2.d dans le sujet.
 
 ![Diagramme de gain aux échelles du document-réponse. Pour un gain central de dix et un facteur de qualité de dix, le sommet atteint vingt décibels.](figures/diagramme-bode.svg)
 
