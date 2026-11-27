@@ -4,7 +4,11 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Les lettres majuscules A et B utilisées dans les traces désignent les inverses formels de a et b. Ailleurs, une barre inverse une lettre, et inverse aussi l’ordre des lettres d’un mot. Le produit dans le groupe consiste à concaténer puis réduire.
+
+Les 38 items se répartissent entre 31 questions numérotées. Les exemples utilisent les mots réduits comme représentants des éléments du groupe libre. Lors du pliage des graphes, une même lettre doit désigner la même transition sortante depuis un sommet donné. [Fac-similé du sujet](https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-i/session-2007/sujet-ecrit-2007-i-mathematiques_informatique.pdf) · [Rapport du jury](https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-i/session-2007/rapport-2007-i_ecrit_mathematiques_informatique.pdf) · [Sommaire](https://banques-ecoles.fr/cms/filiere-mp/les-annales-et-rapports-des-jurys/)
 
 ## Partie 1 · Morphismes et engendrement
 
@@ -94,6 +98,8 @@ Si $u=rs$ et $v=sr$, alors $v=r^{-1}ur$. Réciproquement soient $u,v$ cycliqueme
 
 Ôter les bordures de 5.1 des deux mots, obtenant $v,v'$. Si l’un est vide, les deux doivent l’être. Sinon exiger $|v|=|v'|$, puis chercher $v'$ comme facteur de $vv$. Ces facteurs de longueur $|v|$ sont les rotations. Une recherche naïve coûte $O(n^2)$ et un automate de préfixes de type Knuth–Morris–Pratt donne $O(n)$, avec $n$ la somme des longueurs d’entrée.
 
+Par exemple, considérons les mots $aab\bar a$ et $ba$. Le premier a pour noyau cyclique $ab$, le second $ba$. Chercher $ba$ dans $abab$ réussit à partir de la deuxième lettre. En revanche $a\bar b$ n’est aucune des rotations de $ab$. Le test distingue donc ces deux cas sans énumérer les conjugateurs.
+
 ## Partie 6 · Groupe d’un graphe étiqueté
 
 ### Question 6.1 · Chemins et étiquettes
@@ -140,6 +146,8 @@ Former un bouquet de circuits à base commune, un circuit subdivisé par mot non
 
 Soit $N=1+\sum_i|h_i|$, après lecture des éventuels mots vides. Le bouquet contient $O(N)$ arêtes et sommets. À chaque tour, ranger les arcs par couples (origine, lettre signée) dans l’arête symétrisée, détecter une collision, fusionner ses extrémités et dédoublonner. Avec un tri comparatif, un tour coûte $O(N\log(2N))$ et il y en a $O(N)$. Le parcours d’arbre puis l’écriture des mots $x_s a x_t^{-1}$ pour chaque corde ajoutent $O(N^2)$, car chaque chemin a longueur $O(N)$. Total déterministe $O(n+N^2\log(2N))$ pour $n$ générateurs. L’espace de travail est $O(N)$ si l’on écrit les mots au fil du calcul.
 
+Pour $h_1=ab,\ h_2=a\bar b$, le bouquet a deux arêtes de lettre $a$ quittant la racine. Après leur pliage, il reste deux sommets $s,v$, une arête $a:s\to v$, une arête $b:v\to s$ et une arête $b:s\to v$. Le graphe symétrisé est déterministe. L’arête $a$ peut servir d’arbre couvrant. Les deux cordes de lettre $b$ donnent alors les lacets $ab$ et $b\bar a=(a\bar b)^{-1}$. On obtient une base de deux éléments, en accord avec $3-2+1=2$.
+
 ## Partie 8 · Deux représentations fidèles
 
 ### Question 8.1 · Une action par matrices
@@ -157,3 +165,5 @@ Dans l’anneau non commutatif, $S=\sum_{k\ge0}(-1)^k a^k$ satisfait $(1+a)S=S(1
 ### Question 8.3 · Représentation par séries
 
 La propriété universelle donne le morphisme $a\mapsto1+a$. Soit $w=c_1^{n_1}\cdots c_r^{n_r}$ réduit par blocs, $c_i\ne c_{i+1}$, $n_i\ne0$. Dans $(1+c_i)^{n_i}$, les termes sont des puissances de $c_i$, avec terme constant $1$ et coefficient linéaire $n_i$, y compris pour $n_i<0$ par 8.2. Pour produire le monôme $c_1\cdots c_r$ dans le produit, aucun facteur ne peut fournir deux lettres ou plus, puisqu’alors deux lettres adjacentes seraient identiques. La longueur $r$ impose donc une lettre de chaque facteur. Le coefficient est $\prod_i n_i\ne0$. L’image d’un mot non vide diffère de la série $1$, donc le morphisme est injectif.
+
+Pour $w=a^2b^{-1}a$, le monôme témoin est $aba$. Son coefficient dans $(1+a)^2(1+b)^{-1}(1+a)$ vaut $2\cdot(-1)\cdot1=-2$. Cette lecture reste valable malgré les deux blocs de lettre $a$, car ils sont séparés par une contribution obligatoire en $b$.

@@ -4,7 +4,11 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Un mot et son inverse se lisent dans les deux sens le long d’un chemin. La pile donne une forme normale, la lecture sur un arbre fournit des bases et le pliage d’un graphe rend calculables les sous-groupes.
+
+Les 38 items se répartissent entre 31 questions numérotées. Les exemples utilisent les mots réduits comme représentants des éléments du groupe libre. Lors du pliage des graphes, une même lettre doit désigner la même transition sortante depuis un sommet donné. [Fac-similé du sujet](https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-i/session-2007/sujet-ecrit-2007-i-mathematiques_informatique.pdf) · [Rapport du jury](https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-i/session-2007/rapport-2007-i_ecrit_mathematiques_informatique.pdf) · [Sommaire](https://banques-ecoles.fr/cms/filiere-mp/les-annales-et-rapports-des-jurys/)
 
 ## Partie 1 · Morphismes et engendrement
 
@@ -90,6 +94,8 @@ Pousser le préfixe $r$ d’un mot $rs$ à sa fin est exactement le conjuguer pa
 
 Les bordures ne changent que le conjugateur. Comparer donc les noyaux, en traitant le vide à part. Deux noyaux de même longueur se conjuguent si la lecture circulaire du premier peut donner le second. Doubler le premier mot réalise toutes les lectures circulaires en une seule recherche de facteur. La méthode des décalages successifs est quadratique au pire. Une recherche linéaire de motif conserve le temps linéaire de l’élagage.
 
+Par exemple, considérons les mots $aab\bar a$ et $ba$. Le premier a pour noyau cyclique $ab$, le second $ba$. Chercher $ba$ dans $abab$ réussit à partir de la deuxième lettre. En revanche $a\bar b$ n’est aucune des rotations de $ab$. Le test distingue donc ces deux cas sans énumérer les conjugateurs.
+
 ## Partie 6 · Groupe d’un graphe étiqueté
 
 ### Question 6.1 · Chemins et étiquettes
@@ -136,6 +142,8 @@ Dessiner une boucle privée par générateur et ne partager au départ que le po
 
 Le nombre initial de lettres majore la taille du graphe à chaque étape. Rechercher les conflits en triant la liste des transitions signées, puis effectuer une fusion. Il y a moins de fusions que de sommets initiaux. Avec un tri en $O(N\log(2N))$ par tour, l’ensemble des pliages coûte $O(N^2\log(2N))$. Construire ensuite un arbre et, pour chaque arête restante, écrire le trajet de la racine à l’arête et le retour par l’arbre. Leur longueur totale est au plus quadratique. Ajouter le coût de lecture de la liste, même si beaucoup de ses mots sont vides.
 
+Pour $h_1=ab,\ h_2=a\bar b$, le bouquet a deux arêtes de lettre $a$ quittant la racine. Après leur pliage, il reste deux sommets $s,v$, une arête $a:s\to v$, une arête $b:v\to s$ et une arête $b:s\to v$. Le graphe symétrisé est déterministe. L’arête $a$ peut servir d’arbre couvrant. Les deux cordes de lettre $b$ donnent alors les lacets $ab$ et $b\bar a=(a\bar b)^{-1}$. On obtient une base de deux éléments, en accord avec $3-2+1=2$.
+
 ## Partie 8 · Deux représentations fidèles
 
 ### Question 8.1 · Une action par matrices
@@ -151,3 +159,5 @@ Chercher un inverse dont le coefficient constant vaut un. Le coefficient en $a$ 
 ### Question 8.3 · Représentation par séries
 
 Dans l’image d’un bloc de puissance signée $n$, regarder seulement le coefficient de degré un. Chacun des $|n|$ facteurs fournit $+1$ ou $-1$ selon son signe et les autres fournissent leur terme constant, d’où le coefficient $n$. Considérer ensuite le mot qui prend une seule lettre dans chacun des blocs successifs. Il n’a jamais deux lettres voisines identiques. Aucun bloc ne pourrait donc contribuer deux lettres au coefficient recherché. Il faut une contribution linéaire de chaque bloc, ce qui donne un produit d’entiers non nuls. Ce monôme témoigne de la non-trivialité de l’image.
+
+Pour $w=a^2b^{-1}a$, le monôme témoin est $aba$. Son coefficient dans $(1+a)^2(1+b)^{-1}(1+a)$ vaut $2\cdot(-1)\cdot1=-2$. Cette lecture reste valable malgré les deux blocs de lettre $a$, car ils sont séparés par une contribution obligatoire en $b$.
