@@ -238,6 +238,7 @@
 | 2025 | Banque PT | PT | Sciences industrielles A | [md](2025/banque-pt/banque-pt_pt_sciences-industrielles-a_2025/brut.md) | [md](2025/banque-pt/banque-pt_pt_sciences-industrielles-a_2025/guide.md) |
 | 2026 | Banque PT | PT | Sciences industrielles A | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-a_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-a_2026/guide.md) |
 | 2026 | Banque PT | PT | Sciences industrielles B | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-b_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-b_2026/guide.md) |
+| 2014 | Banque PT | PT | Sciences industrielles C | [md](2014/banque-pt/banque-pt_pt_sciences-industrielles-c_2014/brut.md) | [md](2014/banque-pt/banque-pt_pt_sciences-industrielles-c_2014/guide.md) |
 | 2015 | Banque PT | PT | Sciences industrielles C | [md](2015/banque-pt/banque-pt_pt_sciences-industrielles-c_2015/brut.md) | [md](2015/banque-pt/banque-pt_pt_sciences-industrielles-c_2015/guide.md) |
 | 2016 | Banque PT | PT | Sciences industrielles C | [md](2016/banque-pt/banque-pt_pt_sciences-industrielles-c_2016/brut.md) | [md](2016/banque-pt/banque-pt_pt_sciences-industrielles-c_2016/guide.md) |
 | 2017 | Banque PT | PT | Sciences industrielles C | [md](2017/banque-pt/banque-pt_pt_sciences-industrielles-c_2017/brut.md) | [md](2017/banque-pt/banque-pt_pt_sciences-industrielles-c_2017/guide.md) |
