@@ -1,0 +1,371 @@
+{
+  "slug": "bel_al_espagnol-commentaire-et-traduction_2026",
+  "contribution": {
+    "phase": "relecture_corrige",
+    "tour": 1,
+    "session": "/root/lva_pt_2325",
+    "agent": "lva_pt_2325",
+    "modele": "gpt-6.2-astra",
+    "effort": "ultra",
+    "vitesse": null,
+    "date": "2026-11-27",
+    "modifications": true,
+    "perimetre": "Réintégration de la visite au consul et du risque encouru par les parents à leur domicile. Précision du jeu de rôles père/médecin et du temps qui s’étire avant la reprise de la vie publique."
+  },
+  "contributions_historiques": 1,
+  "pieces": {
+    "sujet": {
+      "url": "https://www.ens.psl.eu/sites/default/files/al_lve_commun_commentaire_traduction_2026.pdf",
+      "sha256": "a70699ab765553dd9ad914a5027a2cad6faac518819e96aa6f2a4d96e0be27c6",
+      "pages": 24,
+      "index": "https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-al",
+      "sha256_index": "73998ffa27c29c7724a9267758eb93ccf07e95f4cb3103e1d70fa480ceb4eee6",
+      "rendus": [
+        {
+          "page": 1,
+          "sha256_rendu": "b6e9e87e3907e45fe708f69e8b4aa2a8d6efd700bd8b22eefb8fbc6f425ccfca"
+        },
+        {
+          "page": 2,
+          "sha256_rendu": "fd488aa04e2fbdc7824a8a2757f0a938ac73c2bee1ec897163469f7792d65bfb"
+        },
+        {
+          "page": 3,
+          "sha256_rendu": "ae16227f06402cefb7d4d0d127aad3c23d1a4dad3a91df908973cdbb7c37bcc4"
+        },
+        {
+          "page": 4,
+          "sha256_rendu": "3e5f153ffaa282e0d3ae89d2c1cb063c103e0642fe6ecb9ae98f50b797d1087c"
+        },
+        {
+          "page": 5,
+          "sha256_rendu": "92582ce16555b82f77be4432588e75548072cf65012cee371804519ff04e6a9f"
+        },
+        {
+          "page": 6,
+          "sha256_rendu": "919984e048da74a7ea7605ec29f6310704df475e9c8e3c764915d71ba90a5f35"
+        },
+        {
+          "page": 7,
+          "sha256_rendu": "78482d903d7acb584ccca2266d41b88f88e1b7fb0f1fe5626611c56887db7608"
+        },
+        {
+          "page": 8,
+          "sha256_rendu": "07676b2d4613b2febf4409ab14c71b5491c926e11d131688d36562acbc615fd8"
+        },
+        {
+          "page": 9,
+          "sha256_rendu": "dd3654b6e38a43982bfc97a5bc067b9698346048329c9b3fdaabaf607cd04697"
+        },
+        {
+          "page": 10,
+          "sha256_rendu": "5f9eaa20ad863415559ffeec0580dddc1f3c948235a84414bf09db4c08706eef"
+        },
+        {
+          "page": 11,
+          "sha256_rendu": "e70aaa700d43ae03255d9f4bbcc25c02f8f7d341f10a6209889b1fe80e4820be"
+        },
+        {
+          "page": 12,
+          "sha256_rendu": "d0dd39488945195aca8e5aa42d7a10396eae5cfbe6670f24e0cecf07f2007813"
+        },
+        {
+          "page": 13,
+          "sha256_rendu": "63797b088216d6fc456d125b0e2c76fb17721bda6480e3745687a8d594eb389b"
+        },
+        {
+          "page": 14,
+          "sha256_rendu": "055f2e8567db1b3bf64e0222e3a623cdabc69f8af259731d2dc977244841ad3b"
+        },
+        {
+          "page": 15,
+          "sha256_rendu": "e1716d80634e9b171c49d984d28f980a8217938822f25a910153c4c485919edf"
+        },
+        {
+          "page": 16,
+          "sha256_rendu": "ab53c8d86f9b8eba5177afc5d34a2853545556b045f78c9f5e6e4cf914d0c225"
+        },
+        {
+          "page": 17,
+          "sha256_rendu": "196c3662d5a590d36d422639d402a087d52260db8c439744b8d3309e8e595c31"
+        },
+        {
+          "page": 18,
+          "sha256_rendu": "52e534a074990994bfd5d3eaae06151a04c2db324c563856e77f2ed5d9e50404"
+        },
+        {
+          "page": 19,
+          "sha256_rendu": "886b116d3bd56ebb762518a1fe116afa3b233deb2bf66fab609aba2e0052e1c1"
+        },
+        {
+          "page": 20,
+          "sha256_rendu": "e115d6bfda045b9adc0ebc7c6ad375145cad90f0349152f4455bf901ca50c81d"
+        },
+        {
+          "page": 21,
+          "sha256_rendu": "e6f667a4e00117a9f6e01b7f638ce260f22e95acefed6aa5dc039f7f3bb8676e"
+        },
+        {
+          "page": 22,
+          "sha256_rendu": "d31a561ab33d0a2cb270c3b56e1f8e93afcc7558e89730e6bd4ac11dc33a7029"
+        },
+        {
+          "page": 23,
+          "sha256_rendu": "d31a561ab33d0a2cb270c3b56e1f8e93afcc7558e89730e6bd4ac11dc33a7029"
+        },
+        {
+          "page": 24,
+          "sha256_rendu": "56175e145bc0f13f052f4b6ca85500cc06f80b0a6e14a7d0ba1711ddbf430373"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2026-10/Espagnol%202026.pdf",
+      "sha256": "4d7aad3e9416c16268a6a20e2b3944d0977db759c4a175cbd3d84d93d7da70cb",
+      "pages": 40,
+      "index": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2026",
+      "sha256_index": "9f28b60b862adfb2de55d2385cc710222d9af63851dc88f51b3f9d270a0ec1f0",
+      "rendus": [
+        {
+          "page": 1,
+          "sha256_rendu": "06c7d2d2a90678a181826e0248ea9372477cdff8437c5745db61a72565afebc8"
+        },
+        {
+          "page": 2,
+          "sha256_rendu": "ec30a0746cadba6fd5f4601d9b022c20d3a9fe05306c037a52d8ae574cce987f"
+        },
+        {
+          "page": 3,
+          "sha256_rendu": "a3a74b192cdda6afb4d67a5661e9cff27a0e20c514cf49ac8f6be97e32cb6495"
+        },
+        {
+          "page": 4,
+          "sha256_rendu": "43a8ad481825b1a22ec0256539af04ea67a07e7121650c1b6ff2c91cf3367227"
+        },
+        {
+          "page": 5,
+          "sha256_rendu": "75a3620a38b60cfbcd1cb3a27a5afd6b664ce8459aadf731b87fa8e500f0ee5e"
+        },
+        {
+          "page": 6,
+          "sha256_rendu": "a7effc503e52d18df97942786965bc2f2bf1fba3623fae918eb0b0f71fbf1c1f"
+        },
+        {
+          "page": 7,
+          "sha256_rendu": "677d17da2b272030428d4438a3e025ec6cb9b1b45d8656aaa6fff4da2b50c705"
+        },
+        {
+          "page": 8,
+          "sha256_rendu": "fa791ee2a6f3984bc92810a423d767d7b3ed99584252d93e9f8f7372394458cd"
+        },
+        {
+          "page": 9,
+          "sha256_rendu": "258647f57c82470cfa542206289aa34f3d8a0150704185859e3b48ab50af2d8f"
+        },
+        {
+          "page": 10,
+          "sha256_rendu": "32fbcc3762034577a3f6f97a177a6a6a951dd10ab0dd9acb1265a39e42386f14"
+        },
+        {
+          "page": 11,
+          "sha256_rendu": "721736a853904c175462cf78fa8996a913f8637bd1d9cd7c036c4758a20fa1db"
+        },
+        {
+          "page": 12,
+          "sha256_rendu": "5b398e3abefc6eb66f4d61aae81b9a1e46168c61e524aa69b2ebc5ef9b3d4828"
+        },
+        {
+          "page": 13,
+          "sha256_rendu": "8be6851d489922771898aaff35005eeeaa8584f2af8bf1026d7442907533fdc8"
+        },
+        {
+          "page": 14,
+          "sha256_rendu": "63314de0ef08c2eaa82b81798cd26577884db4f31b659c1038af83deee681dab"
+        },
+        {
+          "page": 15,
+          "sha256_rendu": "34226d2cb2eb3c67ccf712faed2a20aa567bc216d0686775c37c08f221a4ada3"
+        },
+        {
+          "page": 16,
+          "sha256_rendu": "91184bdd077b496417df989e2f448c1c219a53f096c952c98ee909f4e65da6e3"
+        },
+        {
+          "page": 17,
+          "sha256_rendu": "52f6408e522131bdd1c706c2d9f74df67557a4c6e6faa81040cbbf991ea29351"
+        },
+        {
+          "page": 18,
+          "sha256_rendu": "cfa0aa9c94fe09c050584c775ffb39daad1f224e408230170b5774339ed7dcae"
+        },
+        {
+          "page": 19,
+          "sha256_rendu": "fb9ceb9e6272a3967748367a2f1c579d338f978825711af461eada03b1d70299"
+        },
+        {
+          "page": 20,
+          "sha256_rendu": "853e06a98cadcdcdd3df1765c4fd5f570df860b60cd29aa3225a0bc37180f261"
+        },
+        {
+          "page": 21,
+          "sha256_rendu": "8ae125cfc4c870ac44bd6f6aad9421e637a0c64ac2c22b97e2ed17ddf5098d9b"
+        },
+        {
+          "page": 22,
+          "sha256_rendu": "007d2b1146ebea9f6ef81cfca9981042090331c680f32dd26268e44d607600bf"
+        },
+        {
+          "page": 23,
+          "sha256_rendu": "892fc7e90b8aa7df425c16b091195d38ddbf17a2c7b54efc26d9d103f4098d07"
+        },
+        {
+          "page": 24,
+          "sha256_rendu": "c2d6db789122e46488e98fdc1c5c0dfeb911dbebc251989aca0fca3916d06854"
+        },
+        {
+          "page": 25,
+          "sha256_rendu": "c4c5c257a4f7cad8ef7ee3b7b130db8f6d55b1a1081698a082cfece571bd53fc"
+        },
+        {
+          "page": 26,
+          "sha256_rendu": "7105edadf32024f4dd268f39fd1008e460bc80111e0fb920a011f64ca3941c36"
+        },
+        {
+          "page": 27,
+          "sha256_rendu": "2f8870bbc25e734770e1971ac609e6e3ee918832c3fda0434e9206da0018be59"
+        },
+        {
+          "page": 28,
+          "sha256_rendu": "e98efc8c835e82425465e33c35a985fdb6dca34317689617a85cb32eaeea329e"
+        },
+        {
+          "page": 29,
+          "sha256_rendu": "a3da23b1a15a8bfe73cf8d35cd64d6d07c9573d03f1faff61d68532fe36891b7"
+        },
+        {
+          "page": 30,
+          "sha256_rendu": "673174a3a39576e38fcf326927f9799d55f297471bb94cb842b53eeb09a8749c"
+        },
+        {
+          "page": 31,
+          "sha256_rendu": "1a55309b4b2a7ac49c7385a2a9465ac675a1577b15244392783b0d0e6c0f12af"
+        },
+        {
+          "page": 32,
+          "sha256_rendu": "2924bdcb771f20f7b99c4f184d1b3b13bb67c67f6e7edd1c8bac57f94366fdb1"
+        },
+        {
+          "page": 33,
+          "sha256_rendu": "9f1cc809a80104a8f9d473a0e6016e9e06b9f71233c54462243df39a917e6f02"
+        },
+        {
+          "page": 34,
+          "sha256_rendu": "f4df48fb335446413b9637ec9150fbc804f73875e8a333b959b2a4c93fefd4e0"
+        },
+        {
+          "page": 35,
+          "sha256_rendu": "eeddfb113130676bbc379445e5e8bd3e5f02fd4a9aa348a3d0d31890d71dbf6b"
+        },
+        {
+          "page": 36,
+          "sha256_rendu": "fa64ce8b91c4219f690233ba133d550cfd90a97e13be0f3f8a0dad2a8aa92683"
+        },
+        {
+          "page": 37,
+          "sha256_rendu": "1724e3494ec4884d1e4a21575076545f67f1b38b8aca612e8ef62de691153584"
+        },
+        {
+          "page": 38,
+          "sha256_rendu": "7a72bf636b99202cc81cc53b5c7bf054d675237cce4c9d89e583e56cb477bc03"
+        },
+        {
+          "page": 39,
+          "sha256_rendu": "20d0e9d4bd361948ddc6fbf4ac70d842c75ae9e2d3d491e6f069ab3d58f33209"
+        },
+        {
+          "page": 40,
+          "sha256_rendu": "e7c871751be72dc91026241e192b65c3163c128562a7eb644a8ca39af2b41606"
+        }
+      ]
+    }
+  },
+  "garde": [
+    "ENS de Lyon",
+    "ENS (Paris)"
+  ],
+  "consigne": {
+    "duree_heures": 6,
+    "dictionnaire": "unilingue autorisé",
+    "auteur_ouvrage": "Andrés Neuman, Una vez Argentina (2003).",
+    "exercices": [
+      {
+        "question": "Commentaire en espagnol",
+        "pages_pdf": [
+          10,
+          11
+        ],
+        "lignes": [
+          1,
+          72
+        ]
+      },
+      {
+        "question": "Version française",
+        "pages_pdf": [
+          10
+        ],
+        "lignes": [
+          19,
+          35
+        ],
+        "debut": "La tía Silvia estaba embarazada",
+        "fin": "tendía a suceder lo contrario."
+      }
+    ]
+  },
+  "commentaire_integral": [
+    {
+      "lignes": "1–18",
+      "releve": "Librairie, premier café, peur de la censure, glissement de la confiscation de livres à la disparition de leurs vendeurs."
+    },
+    {
+      "lignes": "19–35",
+      "releve": "Le narrateur nouveau-né, l’absence signalée indirectement, le père et le médecin en Mario, le contrepoint des lieux publics."
+    },
+    {
+      "lignes": "36–49",
+      "releve": "Doute des proches, échec de l’appel diplomatique, découverte d’un lien possible par l’ancienne députée."
+    },
+    {
+      "lignes": "50–72",
+      "releve": "Hospitalité, soupçon et téléphone, deuxième café, libération, datation incertaine et brièveté de la chute."
+    }
+  ],
+  "pointage_version": [
+    "19–22 : parentés, naissance et croyance, heure incertaine et voiture.",
+    "23–29 : téléphone, librairie et maison, retour des grands-parents, mère enceinte et double point de vue de Mario.",
+    "29–35 : réactions, coupe imprimée, tournée des institutions, reprises temporelles et géographie du dernier contraste."
+  ],
+  "coupes_imprimees": 1,
+  "limites": "La coupe imprimée au milieu de la ligne 30 demeure dans la version. La visite à l’ancienne députée et la dernière phrase se lisent jusqu’à la ligne 72 et interviennent uniquement dans le commentaire.",
+  "rapport_pages": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "annexes": "Le fascicule contient les deux pages utiles et la garde. Aucune autre pièce n’est appelée pour cette langue."
+}
