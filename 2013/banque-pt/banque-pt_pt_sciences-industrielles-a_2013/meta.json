@@ -666,6 +666,24 @@
       "modifications": true,
       "phase": "redaction",
       "perimetre": "Résolution des 49 questions et rédaction des indications des deux éditions après lecture du sujet, du cahier et du rapport du jury."
+    },
+    {
+      "agent": "/root/ta_maths_8587",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "session": "banque_pt_si_a_2013",
+      "modifications": true,
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "perimetre": "Reprise des données vectorielles des figures I.3, III.3, III.6 et des cadres Q15, Q20, Q29 et Q46. Comparaison indépendante des seuils de contact et des gains, vérification des signes de fuite, du modèle gyroscopique et des bornes du cahier des charges. Essai du modèle de boucle fermée et contrôle des écarts de lecture sur les figures."
     }
-  ]
+  ],
+  "date_revision": "2026-11-27"
 }

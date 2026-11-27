@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 27 novembre 2026
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 27 novembre 2026
+
 Le Clever est un tricycle urbain dont l’habitacle peut s’incliner indépendamment du groupe arrière. Le sujet relie trois modèles de cet objet, depuis le contact roue–route jusqu’à l’essai au banc de l’asservissement hydraulique. Les renvois comptent les pages physiques du fichier de la Banque PT.
 
 [Sujet et cahier officiels](https://www.banquept.fr/documents/2013/si_a_2013_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2013/rapport_si_a_ecrit_2013.pdf)
@@ -22,7 +24,7 @@ $\mathrm d\vec y_0/\mathrm dt=-\dot\theta\vec x_0$, donc $\vec a_G=-a_c\vec x_0$
 
 ### Question 3 — Moment dynamique en G
 
-Avec $\vec\Omega=(V/R_C)\vec z_0$ et l’opérateur d’inertie $J_G$ fixe dans l’habitacle, $\vec\delta_G=\vec\Omega\times(J_G\vec\Omega)$. La partie tangentielle $J_G\dot{\vec\Omega}$ est nulle. Pour le modèle ponctuel, ou si la verticale est axe principal, $\vec\delta_G=\vec0$.
+Avec $\vec\Omega=(V/R_C)\vec z_0$ et l’opérateur d’inertie $J_G$ fixe dans l’habitacle, $\vec\delta_G=\vec\Omega\times(J_G\vec\Omega)$. La partie tangentielle $J_G\dot{\vec\Omega}$ est nulle. Pour le modèle ponctuel, ou si la verticale est axe principal, $\vec\delta_G=\vec0$. Le seul fait que le rayon, l’inclinaison et la vitesse sont constants ne suffit pas à annuler le couple gyroscopique d’un solide étendu. Les calculs numériques du sujet demandent implicitement de négliger sa composante de roulis, aucune inertie numérique n’étant fournie.
 
 ### Question 4 — Équations des contacts
 
@@ -58,7 +60,7 @@ L’habitacle doit basculer vers l’intérieur. Il faut donc $\alpha<0$, $x<0$ 
 
 ### Question 12 — Lecture du seuil à 55 km/h
 
-La figure I.3 croise 55 km/h à environ $-38^\circ$. La plage admissible pour le seul renversement, selon ce tracé, est donc approximativement $[-45^\circ,-38^\circ]$.
+La figure I.3 croise 55 km/h à environ $-38^\circ$. La plage admissible pour le seul renversement, selon ce tracé, est donc approximativement $[-45^\circ,-38^\circ]$. Le tracé coupe l’axe $\alpha=0$ à 43,7 km/h, contre 37,8 avec les données de Q10. En outre, à 55 km/h et $-38^\circ$, l’adhérence demanderait $f\ge1,17$ pour le modèle de Q7. La courbe de renversement seule ne valide donc pas les deux exigences de FS1.
 
 ![Intersection de la courbe I.3 avec la vitesse prescrite](figures/renversement.svg)
 
@@ -80,7 +82,7 @@ Au démarrage le distributeur est fermé. La pompe charge l’accumulateur à tr
 
 ### Question 15 — Course tirée du dessin
 
-La construction sur l’axe droit donne environ 0,35 et 0,55 m, soit une course d’environ 0,20 m. Le vérin de 200 mm correspond à la course nominale lue.
+La construction sur l’axe droit donne environ 0,35 et 0,55 m, soit une course d’environ 0,20 m. Le vérin de 200 mm correspond à la course nominale lue. Le pointage des centres donne 0,349 et 0,552 m, soit 202 mm environ. L’arrondi du dessin autorise la conclusion pédagogique de compatibilité à l’échelle du centimètre, mais le dessin ne garantit aucune marge pour les butées et tolérances.
 
 ![Positions extrêmes et distances entre axes à l’échelle du cahier](figures/course.svg)
 
@@ -96,7 +98,7 @@ Chaque portée circulaire courte peut se modéliser par une liaison linéaire an
 
 ### Question 18 — Mobilité et montage isostatique
 
-Les deux vérins suivent la même inclinaison, d’où une mobilité utile et $m_c=1$ avec les pivots d’extrémité du schéma. En dimension trois, cinq pivots et deux pivots glissants donnent neuf mobilités de liaison et deux cycles indépendants. Ainsi $h=6\times2-9+1=4$. Avec des rotules aux quatre ancrages, les deux corps et les deux tiges peuvent chacun tourner autour de leur axe. On a $m_c=1+4=5$, somme des libertés $1+4\times3+2\times2=17$, donc $h=12-17+5=0$.
+Les deux vérins suivent la même inclinaison, d’où une mobilité utile et $m_c=1$ avec les pivots d’extrémité du schéma. En dimension trois, cinq pivots et deux pivots glissants donnent neuf mobilités de liaison et deux cycles indépendants. Ainsi $h=6\times2-9+1=4$. Avec des rotules aux quatre ancrages, les deux corps et les deux tiges peuvent chacun tourner autour de leur axe. On a $m_c=1+4=5$, somme des libertés $1+4\times3+2\times2=17$, donc $h=12-17+5=0$. En mécanique strictement plane, le même dessin réduit comporte cinq pivots et deux glissières, soit $h=3\times2-7+1=0$. C’est le montage réel en trois dimensions qui motive la modification des chapes.
 
 ## II.4 — Géométrie et premier asservissement
 
@@ -180,7 +182,7 @@ Notons $k_h=BS^2/V_0$ la raideur hydraulique. L’élimination donne $H_{V2}=\la
 
 ### Question 33 — Ordre de grandeur de la pesanteur
 
-$k_h\simeq2,59\,10^7$ N/m. En prenant les 395 kg du véhicule à vide comme ordre de grandeur majorant la masse du seul habitacle vide, $k_g\simeq1,09\,10^5$ N/m, soit 0,42 % de $k_h$. Avec et sans ce terme, on obtient environ 51,2 et 51,3 rad/s, puis 1 249 et 1 243 m⁻² pour $K_V$. On le néglige dans la suite.
+$k_h\simeq2,59\,10^7$ N/m. En prenant les 395 kg du véhicule à vide comme ordre de grandeur majorant la masse du seul habitacle vide, $k_g\simeq1,09\,10^5$ N/m, soit 0,42 % de $k_h$. Avec et sans ce terme, on obtient environ 51,2 et 51,3 rad/s, puis 1 249 et 1 243 m⁻² pour $K_V$. On le néglige dans la suite. Le tableau donne la masse à vide du véhicule complet. Le rapport exact pour un habitacle chargé varierait en proportion de sa masse.
 
 ### Question 34 — Boucle globale sans amortissement
 
@@ -188,7 +190,7 @@ Pour le correcteur unitaire de l’étude de stabilité, posons $k=CK_SK_VR>0$. 
 
 ### Question 35 — Fuite et signe de l’amortissement
 
-Pour une fuite dissipative $q_f=d\,p_r$ avec $d>0$, le débit de pompe vérifie $q=S v+(V_0/B)\dot p_r+d p_r$. Soustraire $dP_r$ au sommateur hydraulique. En négligeant $k_g$, $H_{V3}=(1/S)/[p(1+a_1p+p^2/\omega_V^2)]$, $a_1=M_{\rm eq}d/S^2$ et $\xi_V=a_1\omega_V/2=d\sqrt{M_{\rm eq}B/V_0}/(2S)$.
+Pour une fuite dissipative $q_f=d\,p_r$ avec $d>0$, le débit de pompe vérifie $q=S v+(V_0/B)\dot p_r+d p_r$. Soustraire $dP_r$ au sommateur hydraulique. En négligeant $k_g$, $H_{V3}=(1/S)/[p(1+a_1p+p^2/\omega_V^2)]$, $a_1=M_{\rm eq}d/S^2$ et $\xi_V=a_1\omega_V/2=d\sqrt{M_{\rm eq}B/V_0}/(2S)$. La ligne imprimée porte précisément $-\delta p_r$. Si on garde cette notation algébrique avec $q$ en entrée, $d=-\delta$, $a_1=-M_{\rm eq}\delta/S^2$ et la stabilisation nécessite $\delta<0$. Mettre une fuite positive avec le signe imprimé produirait de l’anti-amortissement.
 
 ![Sommateur de débit et effet dissipatif de la fuite](figures/fuite.svg)
 
@@ -260,7 +262,7 @@ La chaîne comporte $U_e\to K_S\to Q\to H_V\to\lambda\to R\to\alpha\to p\to\Omeg
 
 ### Question 46 — Mode propre mesuré
 
-La tension finale est proche de 2,40 V. Le premier maximum, près de 0,061 s, atteint 4,1 à 4,15 V. Le dépassement relatif est environ 0,72. Le graphe III.4 ou $\xi=-\ln D/\sqrt{\pi^2+(\ln D)^2}$ donne $\xi_V\simeq0,10$. Avec une pseudopériode proche de 0,12 s, $\omega_V=2\pi/[T_d\sqrt{1-\xi_V^2}]\simeq52$ rad/s.
+La tension finale est proche de 2,40 V. Le premier maximum, près de 0,061 s, atteint 4,1 à 4,15 V. Le dépassement relatif est environ 0,72. Le graphe III.4 ou $\xi=-\ln D/\sqrt{\pi^2+(\ln D)^2}$ donne $\xi_V\simeq0,10$. Avec une pseudopériode proche de 0,12 s, $\omega_V=2\pi/[T_d\sqrt{1-\xi_V^2}]\simeq52$ rad/s. La valeur finale appartient à l’essai et le quotient du dépassement se calcule avec elle. Utiliser à sa place le gain théorique des composants change artificiellement l’amortissement identifié.
 
 ![Réponse mesurée au banc et repérage du premier maximum](figures/mode.svg)
 
@@ -280,7 +282,7 @@ Un filtre fixé à la pulsation et à l’amortissement mesurés ne coïncide pl
 
 ### Question 49 — Critères effectivement vérifiables
 
-Figure III.6, le mouvement parcourt 45° en 0,75 s et la sortie suit la rampe après un bref transitoire, puis revient à 45°. L’écart de traînage est compatible avec zéro, comme le prévoit la classe 2 stable. Le pic mesuré vers 0,776 s est proche de 46° (environ 45,9° sur l’enveloppe lissée). L’écart dynamique est donc à la limite du degré. Les pointes numérisées atteignent environ 1,01°, si bien que le respect du seuil strict de 1° n’est pas démontré. Le retour reste dans la bande de 5 % après la rupture de pente. Le temps de réponse indicielle demanderait un essai en échelon.
+Figure III.6, le mouvement parcourt 45° en 0,75 s et la sortie suit la rampe après un bref transitoire, puis revient à 45°. L’écart de traînage est compatible avec zéro, comme le prévoit la classe 2 stable. Le pic mesuré vers 0,776 s est proche de 46° (environ 45,9° sur l’enveloppe lissée). L’écart dynamique est donc à la limite du degré. Les pointes numérisées atteignent environ 1,01°, si bien que le respect du seuil strict de 1° n’est pas démontré. Le retour reste dans la bande de 5 % après la rupture de pente. Le temps de réponse indicielle demanderait un essai en échelon. La marge nominale est vérifiée en Q48. Les 65 rad/s mesurent la traversée de 0 dB en boucle ouverte. Avec le modèle nominal parfaitement compensé et le réglage donné en Q48, le module de $L/(1+L)$ tombe à $1/\sqrt2$ vers 118 rad/s, au-delà de la plage 50–70 rad/s si elle désigne la bande passante en boucle fermée. L’essai temporel seul ne peut valider cette exigence fréquentielle.
 
 ![Écart mesuré à la consigne avec lecture du pic final de III.6](figures/validation.svg)
 
