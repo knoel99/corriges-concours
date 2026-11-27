@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve dure trois heures. Chaque candidat traite la langue choisie à l’inscription. La version française vaut 10 points. La question a demande 80 à 100 mots pour 4 points. La question b demande 200 à 250 mots pour 6 points.
 
 [Sujet](https://www.banquept.fr/documents/2006/lv_a_2006.pdf) · [Index des rapports](https://www.banquept.fr/article153.html) · [Grille du livret](https://www.banquept.fr/documents/livret/2006/Livret_Rose_2006_1_2.pdf)
@@ -52,7 +54,7 @@ Schließlich muss ein Betrieb zeigen, dass kürzere Arbeitszeiten eine beruflich
 
 The Economist, 17 septembre 2005. Texte pages 4 et 5, questions page 5. Rapport d’anglais séparé. [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_lv_a_ang_ecrit_2006.pdf)
 
-Distinguer le téléphone qui recueille une information, le capteur qui la mesure et le soignant qui l’interprète. Les essais du système britannique sont annoncés pour 2006 au moment de la publication. La réponse courte peut utiliser aussi les exemples postérieurs à la borne.
+Distinguer le téléphone qui recueille une information, le capteur qui la mesure et le soignant qui l’interprète. Le jury relève que « trials » désigne des essais et « cap » le bouchon du flacon. Les essais du système britannique sont annoncés pour 2006 au moment de la publication. La réponse courte peut utiliser aussi les exemples postérieurs à la borne.
 
 ![Que mesure le dispositif ?](figures/lecture-en.svg)
 
@@ -94,7 +96,7 @@ Lastly, the benefits should reach people with different incomes, languages and l
 
 Al-Watan Al-Arabi, n° 1496 du vendredi 4 novembre 2005. Article page 6, consignes page 7. Le rapport d’arabe demande des exemples précis à l’appui des idées et une expression écrite soignée. [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_lv_a_ara_ecrit_2006.pdf)
 
-Bien séparer les savoirs antérieurs, leur appropriation et les contributions nouvelles. Identifier correctement la Mésopotamie, le Khorasan si le texte le mentionnait, et ici surtout les deux bornes géographiques, l’Asie centrale et les Pyrénées. Les causes du déclin sont soumises à discussion en b.
+Bien séparer les savoirs antérieurs, leur appropriation et les contributions nouvelles. « بلاد الرافدين » désigne la Mésopotamie. Deux étendues distinctes sont décrites, l’Inde et l’Andalousie pour l’usage de la langue, les confins de l’Asie centrale et les Pyrénées pour l’espace de la civilisation. Les causes du déclin sont soumises à discussion en b.
 
 ![Comment circulent les savoirs ?](figures/lecture-ar.svg)
 
@@ -140,7 +142,7 @@ Garder la distinction entre la voix de Di Marco et celle du narrateur cité. Le 
 
 De « Más de medio siglo atrás » à « percibidor abstracto del mundo ».
 
-Il y a plus d’un demi-siècle, J. L. Borges nous émerveillait avec ses récits fantastiques, Fictions, L’Aleph, Autres inquisitions, entre autres, et leurs personnages incroyables qui jouaient d’étranges rôles dans des mondes énigmatiques et incertains.
+Il y a plus d’un demi-siècle, J. L. Borges nous émerveillait avec ses récits fantastiques, Fictions, L’Aleph, Enquêtes, entre autres, et leurs personnages incroyables qui jouaient d’étranges rôles dans des mondes énigmatiques et incertains.
 
 Peu de gens imaginaient alors que ses idées et ses concepts coïncideraient, des décennies plus tard, avec de véritables révolutions scientifiques dans notre conception de la « réalité ». Coïncidence ? Pur hasard ?
 
