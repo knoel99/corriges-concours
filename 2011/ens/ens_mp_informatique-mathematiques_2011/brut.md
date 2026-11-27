@@ -4,7 +4,11 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Autour des codes correcteurs.** Le cahier ULC comporte trente questions. On suit la convention $\deg 0=-\infty$. Le rayon de correction est entier. Pour la dernière partie, le domaine des indices de trois identités de la question 4.1 est précisé et les extensions impossibles sont examinées.
+
+La banque identifie cette composition par « Écrit Info-Math ULC ». Le calendrier de l’ENS la fixe au vendredi 13 mai 2011, de 8 h à 12 h, pour le concours INFO. Le corrigé s’appuie sur le sujet. Le sommaire des rapports de cette session identifie séparément l’épreuve de TIPE informatique. [Fac-similé du sujet](https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-i/session-2011/2011%20Info_Maths.pdf) · [Sommaire](https://banques-ecoles.fr/cms/filiere-mp/les-annales-et-rapports-des-jurys/) · [Sommaire des rapports](https://banques-ecoles.fr/cms/filiere-mp/rapports-des-jurys-de-la-banque-i/session-2011) · [Calendrier ENS](https://www.ens.psl.eu/IMG/file/concours/INFO%20et%20MPI%202011.pdf)
 
 ## I. Codes correcteurs
 
@@ -85,6 +89,8 @@ $$
 $E$ est unitaire de degré exact $e$ et $\deg F<e+k$. Pour $i\in J$, les deux côtés de $F(\alpha_i)=y_iE(\alpha_i)$ sont nuls. Pour $i\notin J$, on utilise $f(\alpha_i)=y_i$. Le quotient vaut $f$ dans $K(X)$.
 
 ![La troisième valeur reçue est 8 au lieu de 5. Le facteur X − 2 annule cette position dans les équations et permet de retrouver le message par division.](figures/localisateur-lineaire.svg)
+
+Pour les cinq nœuds $0,1,2,3,4$ de la figure, prenons $f=1+2X$ et la réception $(1,3,8,7,9)$. La distance au message vaut un. Avec $e=1$, choisir $E=X-2$ donne $F=2X^2-3X-2$. Au nœud 2, les deux membres de l’équation sont nuls malgré l’erreur. En tout autre nœud, $E$ est non nul et l’équation retrouve la valeur transmise.
 
 ### Question 2.7 · Unicité du quotient
 
@@ -178,6 +184,10 @@ $$
 Les conditions aux nœuds équivalent à $V\mid U$. Écrivons $b=\deg B$, $s=|J|$. Il existe une paire si et seulement si $e-b\ge s$ et $\deg A+e-b<h$, avec $\deg 0=-\infty$. En effet, tout $U$ admissible a degré $e-b$ et doit être multiple de $V$. Réciproquement $U=VX^{e-b-s}$ donne $E$ unitaire et $F$ du degré requis. On effectue alors la division exacte éventuelle et le test de distance de l'algorithme 2.
 
 Les interpolations, Euclide étendu et le pgcd de réduction coûtent chacun $O(n^2)$. Les divisions, les évaluations des deux polynômes aux $n$ nœuds et les produits de facteurs linéaires coûtent aussi $O(n^2)$. Les degrés intermédiaires restent $O(n)$. Le total est donc $O(n^2)$, y compris lorsque l'algorithme conclut à un échec.
+
+Retrouvons le même exemple par l’algorithme quadratique. Posons $M=X(X-1)(X-2)(X-3)(X-4)$. Une seule position est erronée et le message a degré inférieur à $k=2$. En ajoutant au message trois fois le polynôme de Lagrange du nœud 2, on obtient l’interpolant de la réception,
+$$P=1+2X+\frac34 X(X-1)(X-3)(X-4).$$
+La relation $(X-2)P=F+3M/4$ fournit une paire de reconstruction de seuil $e+k=3$. La division de $F$ par $X-2$ retrouve $1+2X$ et le test final relève un seul désaccord.
 
 ## IV. Borne de programmation linéaire
 
@@ -294,3 +304,5 @@ f(x)=\frac{q^m}{\binom nm}\binom{n-x}{m}
 $$
 
 par 4.1g. Le coefficient de $K_0$ est $1$ et les autres sont positifs ou nuls. Pour chaque entier $d\le i\le n$, on a $0\le n-i<m$, donc $f(i)=0$. Enfin $f(0)=q^m$. La borne de 4.5 donne $A_q(n,d)\le q^{n-d+1}$. Aux extrêmes, elle redonne $q^n$ pour $d=1$ et $q$ pour $d=n$.
+
+En dimension $n=4$ sur l’alphabet binaire, la figure de 4.1 permet de contrôler le certificat pour $d=3$. Ici $m=2$ et $f=1+\tfrac12K_1+\tfrac16K_2$. On lit $f(0)=4$, $f(3)=f(4)=0$. La borne obtenue est donc $|C|\le4$ pour ces paramètres.
