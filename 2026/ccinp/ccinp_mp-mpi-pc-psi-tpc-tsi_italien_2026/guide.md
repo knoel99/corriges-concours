@@ -16,11 +16,11 @@ Les cinq sources ne mesurent pas la même chose. L’Istat compte une lecture de
 
 Pour croiser les documents 3 et 5, identifier leur destinataire. L’enquête journalistique choisit et vérifie des sources pour des lecteurs qui veulent s’informer ; la fanfiction fait varier un univers connu devant un public qui peut réagir. On peut ensuite relier les deux activités au problème d’argumentation posé par Perotti, en gardant leur différence de but.
 
+![Schéma — La lecture selon la question posée](figures/lecture-croisee.svg)
+
 La couverture du livre de Bigli, p. 7, accompagne l’entretien sur l’éducation à la lecture. À la p. 9, les figurines disposées autour d’une machine à écrire font écho à la réutilisation de personnages dans la fanfiction. Le texte présente Wattpad comme lieu de publication.
 
 Le titre compte 9 mots. Les paragraphes en comptent respectivement 54, 117, 82 et 145, pour un total de 407. Les repères sont placés après chaque groupe de vingt, titre compris. L’indication du total, puis FIN, suivent la composition.
-
-![Schéma — La lecture selon la question posée](figures/lecture-croisee.svg)
 
 ## Le pagine e gli schermi dei giovani lettori italiani
 
