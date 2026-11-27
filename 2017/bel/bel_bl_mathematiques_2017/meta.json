@@ -4,20 +4,30 @@
     "concours": "BEL",
     "filiere": "BL",
     "matiere": "Mathématiques",
-    "annee": 2017
+    "annee": 2017,
+    "duree": "4 h",
+    "code_garde": "UHCE 754",
+    "modalite": "écrit"
   },
   "questions": 50,
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
     "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/2017-ecrits-communs-ses_1506586985330_0.pdf#page=3",
-    "rapport_jury": "",
-    "sha256_sujet": "03ec9addf43c6d602d5ba363bea12a3dce3e2f95ce20d99ad95df799ee5842d7"
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/17_maths_com_ecrit.pdf",
+    "sha256_sujet": "03ec9addf43c6d602d5ba363bea12a3dce3e2f95ce20d99ad95df799ee5842d7",
+    "sha256_rapport_jury": "cbbf61f36825c20f71b9c812b3962873cf86d7fa20b2f1494437cbfbe33ac9ec"
   },
   "figures": [
     {
       "fichier": "figures/courbe-tangente.svg",
       "question": "E.1e",
       "legende": "La courbe et sa tangente au point d’abscisse e. Le cercle vide indique la limite en zéro."
+    },
+    {
+      "question": "A.8",
+      "fichier": "figures/iteres-geometriques.svg",
+      "legende": "Depuis zéro, les itérés tendent vers un pour les deux premiers paramètres et vers un demi pour le troisième. Au paramètre critique, la distance à un vaut l’inverse de n + 1.",
+      "provenance": "Figure originale de la révision."
     }
   ],
   "contributions": [
@@ -31,6 +41,592 @@
       "perimetre": "Rédaction des deux éditions à partir de la couverture et des six pages numérisées de la composition. Vérification des 50 items, du tracé de la tangente, du seuil des urnes, des points fixes et des cas dégénérés des matrices compagnes.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "revision",
+      "tour": 1,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "x_hist_1987",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Confrontation des 50 rubriques au sujet et au rapport, vérification des coefficients, des deux éditions et de leurs figures. Interventions sur les points suivants : tableau de variations, seuil entier des urnes, vitesse au point fixe double, continuité uniforme des queues et commutation de la matrice compagne.",
+      "questions_modifiees": [
+        "E.1c",
+        "E.5f",
+        "A.8",
+        "A.10",
+        "B.4e"
+      ]
     }
-  ]
+  ],
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2017-11/2017-ecrits-communs-ses_1506586985330_0.pdf#page=3",
+      "index": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2017",
+      "sha256": "03ec9addf43c6d602d5ba363bea12a3dce3e2f95ce20d99ad95df799ee5842d7",
+      "pages": 21,
+      "pages_verifiees": [
+        {
+          "numero": 3,
+          "rendu_sha256": "e1e0bda8a17475ecbebb49223cf56e99b72d0a5804431507dfd3fcedd8e52d68"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "2c11b7114884aa18d5afae05aca5cd72331f5d165988df89e59d4f4169a232da"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "adab1716484709d9b8a2c00115e5a265ab2f94dd1f23dbd00ca35b831fcfc7cd"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "773b68404a69c2c34542e45953729d2aee6ac9e3750a0495b51c14b0c520c9e6"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "27837ffefdc840af5cd91d824474abc92270d3488c7675b40d3bfea9ea307c2b"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "f13705d2be993b830908dd41193c915c04e25332b925b082222aca742cac567c"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "b74e7f0694fbadccd8f1aa0dcbc3b7100a9bc863e0d507a0b76b33ddc54e963f"
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://www.ens.psl.eu/sites/default/files/17_maths_com_ecrit.pdf",
+      "index": "https://www.ens.psl.eu/rapports-du-concours-2017-section-des-lettres-groupe-bl-0",
+      "sha256": "cbbf61f36825c20f71b9c812b3962873cf86d7fa20b2f1494437cbfbe33ac9ec",
+      "pages": 13,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "fa458c96d2aef6242c3665f091c36045270e31d7de37b321ad42d6ba86b77056"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "c047a87ccc5c9c6b68afc5a04d36013fb9b3f4134e5aa899db863501fd035477"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "5fea6242c516a658b32d92ae7a09abc25ee635f511b290d0995cf5ae20ecd886"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "e99a3b39630c803c8fc831ae7d66819a210f311dbff88ae26daedbb428ba0870"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "686f2af8c69486e074156aa14180e09d5e5ff4dbd10a6b1dfb1c9bbd05729870"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "f280857e168ff72f66448bafef2566391a59d725aa0fe644f10767274609ce8b"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "3d43578b5ac8235c14eed5791f6ffe0b7dfc18b6fbbb34d3e99479f2d4ebe0bd"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "729c69352c62641d8f2dea41f50ba161a8bd77e9bdf04d1f6158c49b0a1f70ec"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "72bb9dda369c4939a188570dbc19e1f0ccfcd3f98d41b5b49d6615ec2162dbae"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "98cfd7028fbbe229b6ee6c17e2852173716c8489ca9243a167f4637a91a25506"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "2dfc4262b0085876c22527da87b95cb8fc19101c9ea32d51a2dea2ac6fa3f98e"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "65a7ce3405e88ef819ddabfffc33dd9be98d95f0e8938accaa49af675f2b9fa9"
+        },
+        {
+          "numero": 13,
+          "rendu_sha256": "da5376b73e0bc85edc983e17dcc3c9f243e1bacfc079fa2d1042b20f00316c8d"
+        }
+      ]
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "E.1a",
+      "E.1b",
+      "E.1c",
+      "E.1d",
+      "E.1e",
+      "E.2",
+      "E.3a",
+      "E.3b",
+      "E.4a",
+      "E.4b",
+      "E.5a",
+      "E.5b",
+      "E.5c",
+      "E.5d",
+      "E.5e",
+      "E.5f",
+      "A.1",
+      "A.2",
+      "A.3a",
+      "A.3b",
+      "A.3c",
+      "A.4",
+      "A.5a",
+      "A.5b",
+      "A.5c",
+      "A.6",
+      "A.7a",
+      "A.7b",
+      "A.8",
+      "A.9",
+      "A.10",
+      "B.1a",
+      "B.1b",
+      "B.1c",
+      "B.1d",
+      "B.2a",
+      "B.2b",
+      "B.2c",
+      "B.3",
+      "B.4a",
+      "B.4b",
+      "B.4c",
+      "B.4d",
+      "B.4e",
+      "B.5a",
+      "B.5b",
+      "B.6a",
+      "B.6b",
+      "B.7a",
+      "B.7b"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "annexes_imposees": [],
+    "bareme": "La composition comporte un exercice et deux problèmes indépendants. Le jury note chaque réponse sur quatre avant pondération. Les coefficients des 50 rubriques totalisent 62,5, soit 250 points pour les réponses. Le jury annonce une note brute sur 258 et décrit séparément son appréciation de la rédaction et de l’honnêteté.",
+    "repere_par_question": [
+      {
+        "question": "E.1a",
+        "page_pdf": 4,
+        "page_imprimee": 1,
+        "page_commentaire_rapport": 9,
+        "page_coefficient_rapport": 9,
+        "coefficient_jury": 0.5
+      },
+      {
+        "question": "E.1b",
+        "page_pdf": 4,
+        "page_imprimee": 1,
+        "page_commentaire_rapport": 9,
+        "page_coefficient_rapport": 9,
+        "coefficient_jury": 2.0
+      },
+      {
+        "question": "E.1c",
+        "page_pdf": 4,
+        "page_imprimee": 1,
+        "page_commentaire_rapport": 9,
+        "page_coefficient_rapport": 9,
+        "coefficient_jury": 0.5
+      },
+      {
+        "question": "E.1d",
+        "page_pdf": 4,
+        "page_imprimee": 1,
+        "page_commentaire_rapport": 9,
+        "page_coefficient_rapport": 9,
+        "coefficient_jury": 0.5
+      },
+      {
+        "question": "E.1e",
+        "page_pdf": 4,
+        "page_imprimee": 1,
+        "page_commentaire_rapport": 9,
+        "page_coefficient_rapport": 9,
+        "coefficient_jury": 1.0
+      },
+      {
+        "question": "E.2",
+        "page_pdf": 4,
+        "page_imprimee": 1,
+        "page_commentaire_rapport": 10,
+        "page_coefficient_rapport": 10,
+        "coefficient_jury": 2.0
+      },
+      {
+        "question": "E.3a",
+        "page_pdf": 4,
+        "page_imprimee": 1,
+        "page_commentaire_rapport": 10,
+        "page_coefficient_rapport": 10,
+        "coefficient_jury": 1.0
+      },
+      {
+        "question": "E.3b",
+        "page_pdf": 4,
+        "page_imprimee": 1,
+        "page_commentaire_rapport": 10,
+        "page_coefficient_rapport": 10,
+        "coefficient_jury": 0.5
+      },
+      {
+        "question": "E.4a",
+        "page_pdf": 4,
+        "page_imprimee": 1,
+        "page_commentaire_rapport": 10,
+        "page_coefficient_rapport": 10,
+        "coefficient_jury": 1.5
+      },
+      {
+        "question": "E.4b",
+        "page_pdf": 4,
+        "page_imprimee": 1,
+        "page_commentaire_rapport": 10,
+        "page_coefficient_rapport": 10,
+        "coefficient_jury": 1.0
+      },
+      {
+        "question": "E.5a",
+        "page_pdf": 4,
+        "page_imprimee": 1,
+        "page_commentaire_rapport": 10,
+        "page_coefficient_rapport": 10,
+        "coefficient_jury": 1.5
+      },
+      {
+        "question": "E.5b",
+        "page_pdf": 4,
+        "page_imprimee": 1,
+        "page_commentaire_rapport": 10,
+        "page_coefficient_rapport": 10,
+        "coefficient_jury": 1.0
+      },
+      {
+        "question": "E.5c",
+        "page_pdf": 4,
+        "page_imprimee": 1,
+        "page_commentaire_rapport": 10,
+        "page_coefficient_rapport": 10,
+        "coefficient_jury": 1.0
+      },
+      {
+        "question": "E.5d",
+        "page_pdf": 4,
+        "page_imprimee": 1,
+        "page_commentaire_rapport": 11,
+        "page_coefficient_rapport": 11,
+        "coefficient_jury": 1.0
+      },
+      {
+        "question": "E.5e",
+        "page_pdf": 5,
+        "page_imprimee": 2,
+        "page_commentaire_rapport": 11,
+        "page_coefficient_rapport": 11,
+        "coefficient_jury": 2.0
+      },
+      {
+        "question": "E.5f",
+        "page_pdf": 5,
+        "page_imprimee": 2,
+        "page_commentaire_rapport": 11,
+        "page_coefficient_rapport": 11,
+        "coefficient_jury": 2.0
+      },
+      {
+        "question": "A.1",
+        "page_pdf": 6,
+        "page_imprimee": 3,
+        "page_commentaire_rapport": 11,
+        "page_coefficient_rapport": 11,
+        "coefficient_jury": 1.5
+      },
+      {
+        "question": "A.2",
+        "page_pdf": 6,
+        "page_imprimee": 3,
+        "page_commentaire_rapport": 11,
+        "page_coefficient_rapport": 11,
+        "coefficient_jury": 1.0
+      },
+      {
+        "question": "A.3a",
+        "page_pdf": 6,
+        "page_imprimee": 3,
+        "page_commentaire_rapport": 11,
+        "page_coefficient_rapport": 11,
+        "coefficient_jury": 1.0
+      },
+      {
+        "question": "A.3b",
+        "page_pdf": 6,
+        "page_imprimee": 3,
+        "page_commentaire_rapport": 11,
+        "page_coefficient_rapport": 11,
+        "coefficient_jury": 0.5
+      },
+      {
+        "question": "A.3c",
+        "page_pdf": 6,
+        "page_imprimee": 3,
+        "page_commentaire_rapport": 11,
+        "page_coefficient_rapport": 11,
+        "coefficient_jury": 1.0
+      },
+      {
+        "question": "A.4",
+        "page_pdf": 6,
+        "page_imprimee": 3,
+        "page_commentaire_rapport": 11,
+        "page_coefficient_rapport": 11,
+        "coefficient_jury": 1.0
+      },
+      {
+        "question": "A.5a",
+        "page_pdf": 6,
+        "page_imprimee": 3,
+        "page_commentaire_rapport": 11,
+        "page_coefficient_rapport": 11,
+        "coefficient_jury": 1.5
+      },
+      {
+        "question": "A.5b",
+        "page_pdf": 6,
+        "page_imprimee": 3,
+        "page_commentaire_rapport": 11,
+        "page_coefficient_rapport": 11,
+        "coefficient_jury": 1.0
+      },
+      {
+        "question": "A.5c",
+        "page_pdf": 6,
+        "page_imprimee": 3,
+        "page_commentaire_rapport": 11,
+        "page_coefficient_rapport": 11,
+        "coefficient_jury": 1.5
+      },
+      {
+        "question": "A.6",
+        "page_pdf": 7,
+        "page_imprimee": 4,
+        "page_commentaire_rapport": 12,
+        "page_coefficient_rapport": 12,
+        "coefficient_jury": 1.0
+      },
+      {
+        "question": "A.7a",
+        "page_pdf": 7,
+        "page_imprimee": 4,
+        "page_commentaire_rapport": 12,
+        "page_coefficient_rapport": 12,
+        "coefficient_jury": 1.0
+      },
+      {
+        "question": "A.7b",
+        "page_pdf": 7,
+        "page_imprimee": 4,
+        "page_commentaire_rapport": 12,
+        "page_coefficient_rapport": 12,
+        "coefficient_jury": 2.0
+      },
+      {
+        "question": "A.8",
+        "page_pdf": 7,
+        "page_imprimee": 4,
+        "page_commentaire_rapport": 12,
+        "page_coefficient_rapport": 12,
+        "coefficient_jury": 2.0
+      },
+      {
+        "question": "A.9",
+        "page_pdf": 7,
+        "page_imprimee": 4,
+        "page_commentaire_rapport": 12,
+        "page_coefficient_rapport": 12,
+        "coefficient_jury": 1.5
+      },
+      {
+        "question": "A.10",
+        "page_pdf": 7,
+        "page_imprimee": 4,
+        "page_commentaire_rapport": 12,
+        "page_coefficient_rapport": 12,
+        "coefficient_jury": 2.0
+      },
+      {
+        "question": "B.1a",
+        "page_pdf": 8,
+        "page_imprimee": 5,
+        "page_commentaire_rapport": 12,
+        "page_coefficient_rapport": 12,
+        "coefficient_jury": 1.0
+      },
+      {
+        "question": "B.1b",
+        "page_pdf": 8,
+        "page_imprimee": 5,
+        "page_commentaire_rapport": 12,
+        "page_coefficient_rapport": 12,
+        "coefficient_jury": 1.0
+      },
+      {
+        "question": "B.1c",
+        "page_pdf": 8,
+        "page_imprimee": 5,
+        "page_commentaire_rapport": 12,
+        "page_coefficient_rapport": 12,
+        "coefficient_jury": 1.5
+      },
+      {
+        "question": "B.1d",
+        "page_pdf": 8,
+        "page_imprimee": 5,
+        "page_commentaire_rapport": 12,
+        "page_coefficient_rapport": 12,
+        "coefficient_jury": 1.0
+      },
+      {
+        "question": "B.2a",
+        "page_pdf": 8,
+        "page_imprimee": 5,
+        "page_commentaire_rapport": 12,
+        "page_coefficient_rapport": 12,
+        "coefficient_jury": 2.0
+      },
+      {
+        "question": "B.2b",
+        "page_pdf": 8,
+        "page_imprimee": 5,
+        "page_commentaire_rapport": 12,
+        "page_coefficient_rapport": 12,
+        "coefficient_jury": 1.0
+      },
+      {
+        "question": "B.2c",
+        "page_pdf": 8,
+        "page_imprimee": 5,
+        "page_commentaire_rapport": 13,
+        "page_coefficient_rapport": 13,
+        "coefficient_jury": 1.5
+      },
+      {
+        "question": "B.3",
+        "page_pdf": 8,
+        "page_imprimee": 5,
+        "page_commentaire_rapport": 13,
+        "page_coefficient_rapport": 13,
+        "coefficient_jury": 2.0
+      },
+      {
+        "question": "B.4a",
+        "page_pdf": 9,
+        "page_imprimee": 6,
+        "page_commentaire_rapport": 13,
+        "page_coefficient_rapport": 13,
+        "coefficient_jury": 1.5
+      },
+      {
+        "question": "B.4b",
+        "page_pdf": 9,
+        "page_imprimee": 6,
+        "page_commentaire_rapport": 13,
+        "page_coefficient_rapport": 13,
+        "coefficient_jury": 1.0
+      },
+      {
+        "question": "B.4c",
+        "page_pdf": 9,
+        "page_imprimee": 6,
+        "page_commentaire_rapport": 13,
+        "page_coefficient_rapport": 13,
+        "coefficient_jury": 1.0
+      },
+      {
+        "question": "B.4d",
+        "page_pdf": 9,
+        "page_imprimee": 6,
+        "page_commentaire_rapport": 13,
+        "page_coefficient_rapport": 13,
+        "coefficient_jury": 1.0
+      },
+      {
+        "question": "B.4e",
+        "page_pdf": 9,
+        "page_imprimee": 6,
+        "page_commentaire_rapport": 13,
+        "page_coefficient_rapport": 13,
+        "coefficient_jury": 1.0
+      },
+      {
+        "question": "B.5a",
+        "page_pdf": 9,
+        "page_imprimee": 6,
+        "page_commentaire_rapport": 13,
+        "page_coefficient_rapport": 13,
+        "coefficient_jury": 0.5
+      },
+      {
+        "question": "B.5b",
+        "page_pdf": 9,
+        "page_imprimee": 6,
+        "page_commentaire_rapport": 13,
+        "page_coefficient_rapport": 13,
+        "coefficient_jury": 0.5
+      },
+      {
+        "question": "B.6a",
+        "page_pdf": 9,
+        "page_imprimee": 6,
+        "page_commentaire_rapport": 13,
+        "page_coefficient_rapport": 13,
+        "coefficient_jury": 1.5
+      },
+      {
+        "question": "B.6b",
+        "page_pdf": 9,
+        "page_imprimee": 6,
+        "page_commentaire_rapport": 13,
+        "page_coefficient_rapport": 13,
+        "coefficient_jury": 2.0
+      },
+      {
+        "question": "B.7a",
+        "page_pdf": 9,
+        "page_imprimee": 6,
+        "page_commentaire_rapport": 13,
+        "page_coefficient_rapport": 13,
+        "coefficient_jury": 1.5
+      },
+      {
+        "question": "B.7b",
+        "page_pdf": 9,
+        "page_imprimee": 6,
+        "page_commentaire_rapport": 13,
+        "page_coefficient_rapport": 13,
+        "coefficient_jury": 1.5
+      }
+    ],
+    "graphiques_du_sujet": {
+      "E.1c": "Tableau de variations demandé, solution typographiée.",
+      "E.1e": "Courbe et tangente au point d’abscisse e sur le même repère."
+    }
+  }
 }
