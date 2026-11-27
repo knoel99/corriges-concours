@@ -6,7 +6,17 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+## Feuillet de l’oral
+
+Vous commenterez le texte ci-dessous en 20 minutes environ. Vous pouvez choisir de le commenter en suivant l’ordre de la lecture, ou de rassembler vos remarques selon un plan qui met en valeur les principaux enjeux du texte. Votre interprétation tiendra compte, par exemple, de son genre littéraire, de son contexte historique et culturel, de sa structure, de sa forme (vocabulaire, syntaxe, effets stylistiques et poétiques), de sa thématique et de sa tonalité. Votre commentaire sera suivi d’un entretien avec le jury.
+
+Agrippa d’Aubigné, *Les Tragiques*, livre VII, « Jugement », vers 651 à 684. Dans le recueil de huit pages, le passage occupe les pages 3 et 4. Il s’ouvre sur « Réjouissez-vous donc, ô vous, âmes célestes ! » et s’achève par « Riants au ciel riant d’une agréable audace. ». Le feuillet numérote localement ces 34 vers. Les huit notes de vocabulaire et d’interprétation accompagnent l’extrait.
+
 ## Préparer les vingt minutes
+
+**Comment commencer à voix haute ?** Le rapport demande de lire les premières lignes. Faites entendre le retour du premier impératif au vers 3 et le changement de destinataire, des âmes aux corps. Lisez ensuite jusqu’au verbe au futur qui porte la promesse. Cette lecture peut devenir votre première observation sur le genre prophétique et la tonalité de joie.
 
 Repérez deux ordres donnés au début puis au vers 11 du feuillet. Préparez la différence entre appeler des destinataires à la joie et obliger le regard à se déplacer. Choisissez un couple de rimes et un enjambement dont la lecture aidera à comprendre la résurrection.
 
@@ -39,13 +49,17 @@ La terre ouvre son sein et les tombeaux ont un ventre. Au passage du vers 15 au 
 
 ### Vers 25 à 34. Rendre à chacun son corps
 
+Le saut de page du fascicule n’interrompt pas la vision. Au bas de la page 3, le dernier verbe évoque un éveil ; en haut de la page 4 la comparaison du nageur débouche, au vers suivant, sur le réveil de celui qui sort d’un songe. À voix haute, on peut maintenir la continuité entre ces deux mouvements tout en marquant la place nouvelle du mot « Tous ». Une sensation que l’imagination peut attribuer à une seule personne prépare une affirmation qui porte sur chacun. L’allure familière de la comparaison donne à l’espérance collective sa force sensible.
+
 Le nageur qui remonte à la surface offre une mesure familière à une scène hors de toute expérience. Le jeu de rime entre la plongée, que le feuillet nomme « plonge », et le songe rapproche le retour à l’air du réveil. Le pluriel « Tous » étend à tous les ressuscités le savoir du souffle retrouvé que suggère cette comparaison individuelle. Mais l’image paisible du dormeur rencontre tout de suite la mention des tyrans. Certains corps ont été dispersés par une action humaine. L’enjeu historique des *Tragiques*, les violences des guerres de Religion, revient ainsi dans l’accomplissement d’une espérance chrétienne.
 
 Le trajet d’un seul bras, entre l’Afrique brûlante et la froide Thulé, oppose l’immensité des distances au bref moment nécessaire au rassemblement. Le membre isolé et les restes réduits à l’état de cendres constituent deux difficultés croissantes pour l’imagination. Le vers 32 renverse pourtant l’ordre attendu de la dispersion et de la réunion. Les plus petits fragments paraissent unis plus vite encore qu’ils ne furent dispersés. L’extrême fragilité de la matière mesure la puissance de ce qui la réunit.
 
 Le dernier vers fait correspondre le rire des ressuscités au rire du ciel. La proximité sonore des deux formes du même verbe traduit leur accord, et l’adjectif attaché à l’audace en fait l’expression heureuse d’une assurance retrouvée. Les corps naguère exposés au mépris peuvent se tenir face au ciel. La joie recommandée par le poète au premier vers est devenue, au dernier, un geste que chacun peut voir.
 
-## Après l’exposé
+## Questions d’entraînement après l’exposé
+
+Ces deux relances sont proposées pour répéter l’entretien annoncé sur le feuillet.
 
 **Pourquoi s’arrêter sur les rimes ?** Dans la première paire, la dignité céleste se trouve rapprochée de la pauvre matière des restes. Plus loin, « plonge » et « songe » réunissent deux expériences de retour à la vie consciente. La forme versifiée fait percevoir les rapports que l’imagination doit construire.
 
@@ -55,3 +69,5 @@ Le dernier vers fait correspondre le rire des ressuscités au rire du ciel. La p
 > Thulé désigne dans la note une île nordique. L’écart avec l’Afrique sert à rendre sensible la portée du rassemblement. Le passage ne décrit aucun itinéraire que le commentaire devrait localiser exactement.
 
 **Bilan.** Reprenez à l’oral le naître, le sentir et le rire du passage. Ils permettent d’expliquer comment le regard prophétique passe d’une affirmation de foi à un monde animé tout entier.
+
+[Feuillets officiels archivés](https://web.archive.org/web/20201230063150id_/https://www.ens.psl.eu/sites/default/files/litterature-4oraux-si17.pdf#page=3) · [Rapport de la session](https://www.ens.psl.eu/sites/default/files/ens_rapport_sil_litterature_2017.pdf#page=2)
