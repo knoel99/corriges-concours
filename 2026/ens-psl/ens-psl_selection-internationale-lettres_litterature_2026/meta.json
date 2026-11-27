@@ -4,11 +4,12 @@
     "concours": "ENS-PSL",
     "filiere": "Sélection internationale Lettres",
     "matiere": "Littérature",
-    "annee": 2026
+    "annee": 2026,
+    "modalite": "écrit"
   },
   "intitule": "Que signifie orienter la littérature vers la vérité et la morale ?",
   "gabarit": "dissertation",
-  "questions": 0,
+  "questions": 1,
   "redaction": "Proposition non officielle rédigée par IA.",
   "modele": {
     "provider": "codex",
@@ -21,7 +22,8 @@
     "sujet": "https://www.ens.psl.eu/sites/default/files/sil_2026_sujet_ecrit_spe_litteratures_.pdf",
     "sujet_sha256": "cfbd485430c2aeebbdbd29a0a6bd4fc86cd00a68becfad45a54771916409dfe9",
     "rapport_jury": "https://www.ens.psl.eu/sites/default/files/sil_rapport_jury_litterature_2026.pdf",
-    "rapport_sha256": "bf613c13602c448a8646e60eb6f2f2bced290ad81327850ba9b28b379f12ef78"
+    "rapport_sha256": "bf613c13602c448a8646e60eb6f2f2bced290ad81327850ba9b28b379f12ef78",
+    "controle_du_perimetre": "Rapport officiel, pages 1 et 2, rubrique de l’écrit. Le sujet commun aux candidats est distingué des extraits personnalisés de l’oral."
   },
   "figures": [
     {
@@ -30,7 +32,7 @@
       "legende": "Trois expériences de lecture pour éprouver la citation"
     }
   ],
-  "date_revision": "2026-11-25",
+  "date_revision": "2026-11-27",
   "contributions": [
     {
       "phase": "lecture_rapport_jury",
@@ -80,6 +82,43 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Todorov et Primo Levi, fonction des lacunes dans la transmission et le témoignage."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "fournisseur": "codex",
+      "session": "francais_pt_2325",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Rétablissement de la consigne intégrale, comptage de la composition unique, analyse de la parenthèse en venir/en revenir et contrôle de la portée du rapport écrit."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Composition"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "Composition",
+        "page_pdf": 1,
+        "page_pdf_fin": 1,
+        "debut": "[On nous a] répété à qui mieux mieux",
+        "fin": "orienté vers la vérité et la morale.",
+        "consigne": "Vous analyserez et commenterez la citation ci-dessous sous la forme d’un écrit organisé. Vous pouvez éclairer ces propos par des éléments de contexte, par vos connaissances d’histoire de la littérature. Vous ferez appel à votre expérience de lectrice ou de lecteur, sans vous limiter au corpus de votre projet de recherche.",
+        "annexes": [],
+        "duree": "2 heures",
+        "remarque": "Rapport officiel, pages 1 et 2, rubrique de l’écrit. Le sujet commun aux candidats est distingué des extraits personnalisés de l’oral."
+      }
+    ]
+  }
 }

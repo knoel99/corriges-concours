@@ -10,7 +10,17 @@
 
 **Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+## Sujet de l’écrit
+
+Vous analyserez et commenterez la citation ci-dessous sous la forme d’un écrit organisé. Vous pouvez éclairer ces propos par des éléments de contexte, par vos connaissances d’histoire de la littérature. Vous ferez appel à votre expérience de lectrice ou de lecteur, sans vous limiter au corpus de votre projet de recherche.
+
+Tzvetan Todorov, *Critique de la critique* (1984). Le feuillet de l’écrit commun propose une seule citation. Elle commence par « [On nous a] répété à qui mieux mieux » et s’achève par « orienté vers la vérité et la morale. ». Durée de l’épreuve : deux heures.
+
 ## Partir d’un mot de la citation
+
+**Pourquoi Todorov se reprend-il entre parenthèses ?** Remplacez « en revenir » par « tenir enfin pour certaine ». La nouvelle formule supprimerait l’idée d’un oubli historique. Remettez ensuite à l’épreuve le mot « évidences » devant une phrase de Flaubert où il est difficile de savoir qui parle. Qu’est-ce qui demeure évident dans le rapport à l’existence et qu’est-ce qui reste difficile à interpréter ?
 
 Dans cette épreuve de deux heures, le sujet attend un écrit organisé qui engage une expérience de lecture et dépasse le corpus personnel de recherche. Le mot « orienté » permet d’interroger le lien entre vérité, morale et langage sans transformer Todorov en défenseur d’une morale imposée par chaque texte.
 
@@ -27,6 +37,8 @@ Changer ensuite de genre pour mettre la thèse en difficulté. Le témoignage in
 ## Commentaire rédigé
 
 En reprochant aux critiques d’avoir répété que la littérature trouvait « sa fin en [elle]-même », Todorov oppose à une doctrine devenue commune une évidence qui, dit-il, aurait été oubliée. Une œuvre « a trait à l’existence humaine ». Pourtant son existence comme œuvre tient à la manière singulière dont elle agence des signes. Quelle vérité et quelle morale peut viser un discours dont rien ne garantit que les faits racontés aient eu lieu ? Le terme décisif de la citation est « orienté ». Une orientation peut guider une expérience sans lui assigner d’avance la proposition à laquelle elle devrait aboutir.
+
+Une parenthèse donne pourtant à ce retour une allure singulière. Todorov écrit qu’il faut « en venir » aux évidences, puis « en revenir ». Le premier verbe indique un terme qu’il faudrait atteindre. Le second suppose un lieu déjà connu, que la critique aurait quitté. Il ne s’agit donc pas de découvrir hors de l’œuvre un supplément moral qu’on lui apporterait. Todorov invite à rendre à la lecture une question qu’elle savait autrefois poser. Mais qui décidera de ce qui est évident ? Le mouvement impatient de la phrase explique sa force polémique et justifie aussi qu’on l’éprouve sur des œuvres où la vérité est difficile à reconnaître.
 
 L’argument de l’autonomie possède d’abord une force qu’il serait imprudent de sacrifier. Dans *Madame Bovary*, lorsque le récit semble faire sienne une rêverie amoureuse d’Emma, une liste d’objets désirables, un rythme exalté ou une formule empruntée aux romans peuvent faire hésiter le lecteur sur la voix qui parle. Est-ce le narrateur qui accrédite ce bonheur annoncé, ou Emma qui emprunte des mots tout faits pour l’imaginer ? Adresser d’abord son attention à l’organisation des voix permet de résister à une lecture qui tirerait simplement du destin d’Emma une maxime sur les dangers de la lecture ou de l’adultère. L’analyse des formes protège ici l’existence humaine représentée contre une interprétation morale trop rapide.
 
