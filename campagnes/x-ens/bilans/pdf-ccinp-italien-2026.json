@@ -1,0 +1,149 @@
+{
+  "slug": "ccinp_mp-mpi-pc-psi-tpc-tsi_italien_2026",
+  "commit_export": "dc000216729aa1a0fe3262ff8b74f18d80bfb79d",
+  "arbre_git": "b4204d61dd6c627110029150d840df758fe56fca",
+  "archive": "CCINP-LVA-italien-2026.zip",
+  "agent": "lva_pt_2325",
+  "revision": {
+    "phase": "relecture_corrige",
+    "tour": 1,
+    "agent": "lva_pt_2325",
+    "session": "/root/lva_pt_2325",
+    "modele": "gpt-6.2-astra",
+    "effort": "ultra",
+    "vitesse": null,
+    "date": "2026-11-27",
+    "modifications": true,
+    "perimetre": "Révision des deux éditions, confrontation des documents et figures au sujet et au rapport publiés, vérification du décompte depuis le titre."
+  },
+  "sources": {
+    "sujet": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/Ep%20communes/2026_LVA6AU.pdf#page=6",
+    "rapport_jury": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/Ep%20communes/LV_ECRIT_2026_05.10.pdf#page=23",
+    "sha256_sujet": "f4aff4b5f57beec696fa9ae91f8dcac2d16ef0b2b1c30b80655e4be90c59a593",
+    "sha256_rapport_jury": "23a73e191a42c2fcd03b46b4baca6da1089739620013f3ba144814c9a261dbb0",
+    "pages_pdf_sujet_verifiees": [
+      1,
+      6,
+      7,
+      8,
+      9
+    ],
+    "pages_pdf_rapport_verifiees": [
+      1,
+      2,
+      23,
+      24,
+      25
+    ]
+  },
+  "decompte": {
+    "titre": "Le pagine e gli schermi dei giovani lettori italiani",
+    "langue": "italien",
+    "minimum": 360,
+    "maximum": 440,
+    "mots": 407,
+    "titre_et_paragraphes": [
+      9,
+      54,
+      117,
+      82,
+      145
+    ],
+    "barres": 20,
+    "total_imprime": "407 parole, titolo compreso.",
+    "groupes_source_introduction": [
+      "Scrivere è vivere",
+      "Benbow. Scrittura e narrazione"
+    ],
+    "convention": "Titre inclus. Dans l’introduction, chaque source et chaque date comptent pour un mot, ainsi que le renvoi compact à un document. Unités séparées par des blancs pour le reste de la copie. Chaque vingtième mot est suivi d’une barre. Total et FIN hors compte."
+  },
+  "editions": {
+    "brut": {
+      "pages": 2,
+      "pages_copie": [
+        1
+      ],
+      "copie_integrale_et_total_verifies": true,
+      "barres_verifiees": 20,
+      "fin_verifie": true,
+      "signets": [
+        [
+          1,
+          "Le pagine e gli schermi dei giovani lettori italiani",
+          1
+        ]
+      ],
+      "figures": [
+        {
+          "fichier": "figures/lecture-croisee.svg",
+          "legende": "La lecture selon la question posée",
+          "question": "Synthèse",
+          "page_pdf": 2,
+          "sha256_svg": "1f7fd24f96b2c4323bbc3fee805658bd7cab4e33012db4b25a60cef49ae7bd07",
+          "sha256_forme_pdf": "e99d274640b93fac012f5ceb9ec25da00ac9af9efef295cc8db4188acb20a1cf"
+        }
+      ],
+      "signatures_sur_premiere_page": [
+        "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+        "**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+      ],
+      "sha256_pdf": "80327257f935ff5f208ceb926d63b9865f62e7f004bbfd34f428a7c35894b111",
+      "sha256_markdown": "ab0fd24e2e6ed88e5528044fe74a7df1b54d4e836cd5b06c322198a6a72c834a",
+      "diagnostic_latex_propre": true
+    },
+    "guide": {
+      "pages": 2,
+      "pages_copie": [
+        2
+      ],
+      "copie_integrale_et_total_verifies": true,
+      "barres_verifiees": 20,
+      "fin_verifie": true,
+      "signets": [
+        [
+          1,
+          "Lire la consigne",
+          1
+        ],
+        [
+          1,
+          "Croiser les documents",
+          1
+        ],
+        [
+          1,
+          "Le pagine e gli schermi dei giovani lettori italiani",
+          2
+        ]
+      ],
+      "figures": [
+        {
+          "fichier": "figures/lecture-croisee.svg",
+          "legende": "La lecture selon la question posée",
+          "question": "Synthèse",
+          "page_pdf": 1,
+          "sha256_svg": "1f7fd24f96b2c4323bbc3fee805658bd7cab4e33012db4b25a60cef49ae7bd07",
+          "sha256_forme_pdf": "e99d274640b93fac012f5ceb9ec25da00ac9af9efef295cc8db4188acb20a1cf"
+        }
+      ],
+      "signatures_sur_premiere_page": [
+        "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+        "**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+      ],
+      "sha256_pdf": "fb10c5d538e60bf270d7409ea41e2903d582046e34bec5b477c9aef81f2fe7bf",
+      "sha256_markdown": "312940e65dfba5b7772fb610cd1c14460bc9ec3892c1ce6608f436e87e936fbd",
+      "diagnostic_latex_propre": true
+    }
+  },
+  "sha256_contenus": {
+    "guide.md": "312940e65dfba5b7772fb610cd1c14460bc9ec3892c1ce6608f436e87e936fbd",
+    "brut.md": "ab0fd24e2e6ed88e5528044fe74a7df1b54d4e836cd5b06c322198a6a72c834a",
+    "meta.json": "423c593772fb792882affe0db19bbacc32dda31d650dc594325d2b75e153b832",
+    "journal-revision.json": "acb7a3dd4dd8101764fe26b8caeac32c4be796ef9a4552a20f80d78c085cba18",
+    "figures/lecture-croisee.svg": "1f7fd24f96b2c4323bbc3fee805658bd7cab4e33012db4b25a60cef49ae7bd07",
+    "brut.pdf": "80327257f935ff5f208ceb926d63b9865f62e7f004bbfd34f428a7c35894b111",
+    "guide.pdf": "fb10c5d538e60bf270d7409ea41e2903d582046e34bec5b477c9aef81f2fe7bf",
+    "verifier-decompte.py": "576cfd891d23390f28fb2d7122c705914f1fd6972e3feb4b8fec8440443c7595"
+  },
+  "sha256_archive": "13d8dd34cf2c134f3090f5817feb49091410e2608ebc7494eb3f20a5b3e0f3e8"
+}
