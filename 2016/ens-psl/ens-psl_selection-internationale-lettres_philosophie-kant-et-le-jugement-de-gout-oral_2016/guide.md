@@ -4,7 +4,17 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+## Feuillet de l’oral
+
+Le passage de Kant occupe la page 3 du recueil des oraux de philosophie de 2016. Il va de « Pour ce qui est de l’agréable » à « qui puisse légitimement réclamer l’assentiment universel. ». Ses deux paragraphes passent de l’agréable au beau. Les exemples appartiennent à l’argumentation de Kant et le feuillet donne une consigne unique.
+
+Expliquez et commentez librement cet extrait de I. Kant, Critique du jugement, § 7 :
+
 ## Préparer l’explication
+
+**Comment passer du constat à la prétention ?** Gardez le même objet de la liste de Kant et formulez deux jugements à son sujet. Demandez-vous lequel perdrait sa portée si vous y ajoutiez « pour moi ». Ce test éclaire la valeur normative de la dernière phrase, même si votre interlocuteur continue à ne pas partager votre goût.
 
 Faites jouer la même scène à table puis devant un tableau. Dans le premier cas, ajoutez « pour moi » et dites pourquoi la phrase demeure satisfaisante. Dans le second, expliquez ce que l’ajout laisse échapper. La différence porte sur ce que chacun attend de son interlocuteur.
 
@@ -24,6 +34,8 @@ Kant étend ensuite l’exemple au-delà du goût entendu comme sensation du pal
 
 Lorsque je déclare une chose belle, je parle comme si la beauté était une qualité de la chose. Le « comme si » est décisif. Je peux démontrer que ce vase contient un litre en le mesurant selon une opération que d’autres peuvent contrôler. Je ne dispose pas d’un concept de la beauté dont je déduirais qu’un poème satisfait nécessairement tous ses lecteurs comme un objet remplit une définition. Mais je ne fais pas non plus le simple relevé de mon état intérieur. Je donne la chose à regarder à quelqu’un, j’attends qu’il y prenne plaisir et trouve décevant un refus qui me paraîtrait parfaitement admissible dans le cas du vin. La grammaire du jugement rend cette attente sensible. « Ce poème est beau » perdrait quelque chose de sa prétention si je le remplaçais sans reste par « il se trouve que j’aime ce poème ».
 
+Le texte met lui-même le changement à l’épreuve sur un bâtiment, un vêtement, un concert et un poème. L’intérêt de la série tient à ce qu’un seul de ces objets peut donner lieu aux deux langages. Je peux préférer ce vêtement parce que sa couleur me rappelle un lieu familier, puis inviter quelqu’un à en regarder autrement les proportions. Dans le premier cas, son désaccord ne menace en rien ma préférence. Dans le second, le souci que je prends de le faire regarder de nouveau manifeste ce que ma phrase réclamait de lui. L’objet reste le même. C’est le statut que je donne à ma satisfaction qui change.
+
 D’où la distinction, explicitée dans le passage, entre constater et exiger un accord. L’observation d’un consensus déjà formé pourrait fonder une prévision, je m’attendrais à ce qu’un nouveau public réagisse comme les précédents. L’exigence du jugement de goût survit au contraire à un désaccord avéré. On peut maintenir sa conviction sur la beauté d’un tableau devant une salle entière qui en rit. La revendication d’une voix universelle vise tous les autres du point de vue de la possibilité de partager la satisfaction, sans se confondre avec la somme des suffrages recueillis.
 
 ### Pourquoi la discussion est-elle possible en l’absence de preuve ?
@@ -36,7 +48,9 @@ Une objection historique reste sérieuse. Le goût d’un groupe social peut se 
 
 ![Figure 1 — Trois manières de comprendre un accord](figures/experiences.svg)
 
-## Pour l’entretien
+## Questions d’entraînement
+
+Ces questions ont été rédigées pour préparer la discussion. Le feuillet du concours donne la seule consigne d’expliquer et de commenter librement l’extrait.
 
 **Un jugement de goût est-il universellement vrai dès qu’il se présente comme tel ?** Le paragraphe établit le type d’assentiment auquel il prétend. Il ne garantit pas que tous les jugements effectivement prononcés soient purs de tout intérêt ou exempts d’erreur.
 
