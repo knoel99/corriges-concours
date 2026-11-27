@@ -1,0 +1,130 @@
+{
+  "slug": "bel_al_arabe-commentaire-et-traduction_2020",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Arabe (commentaire et traduction)",
+    "annee": 2020,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "duree_heures": 6,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2020-09/2020%20Commentaire%20d%27un%20texte%20en%20LVE%20et%20traduction.pdf#page=6",
+    "sujet_sha256": "38b8795aae8773ed81ebd843f2436a126f190f44a6a853ee15d561be36f8c269",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2021-05/ARABE_2020%20internet.pdf#page=1",
+    "rapport_jury_sha256": "80b90e79806cbcac904d3e56f6b6aabd3ab93aec046f87ac4bb9807f9f04cd42",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2020",
+    "ouvrage": "Taha Hussein, *Propos sur la poésie et la prose*, Le Caire, 1936.",
+    "pages_rapport_verifiees": [
+      1
+    ],
+    "section_rapport": "Écrit, toutes séries, commentaire et traduction."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2020-09/2020%20Commentaire%20d%27un%20texte%20en%20LVE%20et%20traduction.pdf#page=6",
+      "sha256": "38b8795aae8773ed81ebd843f2436a126f190f44a6a853ee15d561be36f8c269",
+      "pages": 19,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "bed93f9cad31bd6dd7e6cac821b5c6e087d7be43497d51815af4c72c4b1b3f08"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "d1f4ec8f43d61bd2a505b246ffcc078270e08234ef0fe677e18ff58cd36d3ad8"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2021-05/ARABE_2020%20internet.pdf#page=1",
+      "sha256": "80b90e79806cbcac904d3e56f6b6aabd3ab93aec046f87ac4bb9807f9f04cd42",
+      "pages": 1,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "6c20b9e56d2b8cac81057a971110e6ecb9d67a32144f0a09262716dfec030d93"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "Commentaire en arabe",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "Le texte déplace une querelle entre littératures vers une querelle entre époques et interroge le principe commun de l’exclusion."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire arabe de l’extrait entier, version française de toutes les phrases prescrites, indications et schéma."
+    },
+    {
+      "phase": "revision",
+      "agent": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Collation de la restriction initiale, des trois orateurs, de l’attribution à al-Jahiz, du chiasme et de la phrase finale. Identification de la voix des modernes dans la dernière phrase du commentaire."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire en arabe",
+      "Version française"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "Commentaire en arabe",
+        "pages_pdf": [
+          6
+        ],
+        "lignes": [
+          1,
+          30
+        ],
+        "langue": "arabe"
+      },
+      {
+        "question": "Version française",
+        "pages_pdf": [
+          6
+        ],
+        "lignes": [
+          11,
+          17
+        ],
+        "premiers_mots": "فاليونان لا حظّ لهم",
+        "derniers_mots": "أنصار الجديد",
+        "langue": "français"
+      }
+    ]
+  }
+}
