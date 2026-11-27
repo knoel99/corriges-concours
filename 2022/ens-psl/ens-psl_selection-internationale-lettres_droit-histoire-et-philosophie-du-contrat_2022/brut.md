@@ -8,6 +8,20 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+## Quatre questions de droit
+
+Sélection internationale ENS Lettres, écrit d’Histoire et Philosophie du Droit 2022. Le feuillet unique demande quatre réponses argumentées sur cinq points chacune. Le rapport du jury de droit traite de la sélection des dossiers. Le projet individuel auquel renvoie la quatrième question ne figure pas dans ces documents.
+
+**1.** Décrivez les grandes étapes du développement du droit des contrats et de sa théorisation, notamment autour des notions de consensualisme, de liberté contractuelle et d'autonomie de la volonté.
+
+**2.** Quelles sont, à votre avis, les évolutions marquantes du droit français des contrats de 1804 à aujourd'hui (notamment avec la réforme de 2016) ?
+
+**3.** Quels sont les divers moyens, en droit civil et en droit de la consommation, de rééquilibrer les contrats entre parties fortes et parties faibles? Vous pouvez citer plusieurs systèmes juridiques à l’appui de votre analyse.
+
+**4.** Avec quelles méthodes comptez-vous procéder pour la réalisation du projet présenté dans votre candidature?
+
 ## 1. Consentir, choisir et se donner une règle
 
 Le consensualisme concerne le mode de formation du contrat. La rencontre des consentements suffit en principe, sauf exigence particulière de forme ou de remise d’une chose. La liberté contractuelle désigne notamment le choix de contracter ou de s’abstenir, du partenaire et du contenu dans les limites de la loi. L’autonomie de la volonté est une théorie du fondement de l’obligation. Le sujet gagne à garder séparées ces trois questions. Une vente peut se former sans formalité et être largement encadrée quant aux garanties dues par le vendeur.
@@ -26,7 +40,7 @@ L’imprévision illustre une inflexion de fond. Sous les conditions de l’arti
 
 ## 3. Rééquilibrer sans annuler indistinctement
 
-Avant la conclusion, une information compréhensible, un délai de réflexion ou, dans certains cas, un droit de rétractation redonnent un choix effectif. Pour les contrats de consommation conclus à distance ou hors établissement, le délai de principe est de quatorze jours, avec un point de départ variant selon le type de contrat et des exceptions prévues par la loi. L’achat ordinaire en magasin n’ouvre pas par lui-même ce droit. Le formalisme de protection offre ainsi un exemple de limite au consensualisme établie pour que le choix soit effectif.
+Avant la conclusion, une information compréhensible et, lorsque la loi le prévoit, un délai de réflexion permettent de décider en connaissance de cause. Après la conclusion, le consommateur peut, dans les cas prévus, exercer un droit de rétractation. Pour les contrats de consommation conclus à distance ou hors établissement, le délai de principe est de quatorze jours, avec les exceptions prévues par la loi. Pour une prestation de services, le délai court en principe de la conclusion du contrat. Pour une vente de biens, il court en principe de la réception par le consommateur ou le tiers qu’il a désigné, autre que le transporteur. L’achat ordinaire en magasin n’ouvre pas par lui-même ce droit. Le formalisme de protection offre ainsi un exemple de limite au consensualisme établie pour que le choix soit effectif.
 
 À la formation, le dol et la violence protègent l’intégrité du consentement. L’article 1143 vise celui qui abuse de l’état de dépendance dans lequel son cocontractant se trouve à son égard pour obtenir un engagement qu’il n’aurait pas souscrit sans cette contrainte et en tirer un avantage manifestement excessif. Il faut établir ces éléments, et non déduire la violence de toute différence de fortune. L’action en nullité relative protège la partie dont le consentement a été vicié. À l’inverse, une simple absence d’équivalence entre prestations ne suffit en principe pas à annuler un contrat synallagmatique. L’article 1168 réserve les exceptions prévues par la loi.
 

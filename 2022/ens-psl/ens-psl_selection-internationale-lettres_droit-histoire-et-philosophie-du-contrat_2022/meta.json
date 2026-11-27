@@ -28,7 +28,8 @@
       "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000032004939",
       "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:31993L0013",
       "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32011L0083"
-    ]
+    ],
+    "controle_du_perimetre": "Feuillet préparé et publié : quatre questions sans texte support ni annexe. Le rapport indique que l’audition proposée par le jury de droit n’a pas été retenue en délibération commune. Q4 dépend du projet de candidature, absent. Une méthode et un exemple hypothétique sont disponibles."
   },
   "figures": [
     {
@@ -37,7 +38,7 @@
       "legende": "À quel moment le droit intervient-il ?"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-27",
   "contributions": [
     {
       "phase": "lecture_rapport_jury",
@@ -74,6 +75,67 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Vérification de la consigne et de la modalité sur la feuille officielle, de la portée du rapport et des raisonnements et exemples des deux éditions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Vérification des quatre formulations, du barème et du contenu effectif du rapport. Correction de la chronologie de la rétractation dans les deux éditions, distinction du droit de réflexion, et documentation des limites de la réponse personnalisée à Q4."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3"
+    ],
+    "questions_partiellement_traitees": [
+      "Q4"
+    ],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "Q1",
+        "page_pdf": 1,
+        "page_pdf_fin": 1,
+        "consigne": "Décrivez les grandes étapes du développement du droit des contrats et de sa théorisation, notamment autour des notions de consensualisme, de liberté contractuelle et d'autonomie de la volonté.",
+        "points": 5
+      },
+      {
+        "question": "Q2",
+        "page_pdf": 1,
+        "page_pdf_fin": 1,
+        "consigne": "Quelles sont, à votre avis, les évolutions marquantes du droit français des contrats de 1804 à aujourd'hui (notamment avec la réforme de 2016) ?",
+        "points": 5
+      },
+      {
+        "question": "Q3",
+        "page_pdf": 1,
+        "page_pdf_fin": 1,
+        "consigne": "Quels sont les divers moyens, en droit civil et en droit de la consommation, de rééquilibrer les contrats entre parties fortes et parties faibles? Vous pouvez citer plusieurs systèmes juridiques à l’appui de votre analyse.",
+        "points": 5
+      },
+      {
+        "question": "Q4",
+        "page_pdf": 1,
+        "page_pdf_fin": 1,
+        "consigne": "Avec quelles méthodes comptez-vous procéder pour la réalisation du projet présenté dans votre candidature?",
+        "points": 5
+      }
+    ],
+    "limites": [
+      "Q4 : le dossier de candidature n’est pas annexé ; l’exemple de protocole est hypothétique."
+    ]
+  }
 }
