@@ -6,7 +6,17 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Épreuve écrite de trois heures. Les deux questions peuvent être traitées dans l’ordre choisi. La lecture personnelle développée dans la partie B est un exemple de copie.
+
+## Les deux questions du feuillet
+
+Germaine de Staël, *Essai sur les fictions* (1795). Page 1, le passage court de « Il y a des écrits tels que » à « si l’influence de son talent pouvait se perpétuer. ». Le chapeau et cinq notes le situent. Les deux questions de la page 2 peuvent être traitées dans l’ordre choisi. Durée totale : trois heures.
+
+**A (5 points).** Vous proposerez de cette phrase un commentaire approfondi : de « Les sentiments dont elles sont agitées sont à peine compris » à « quelques rayons du bonheur qui leur échappe au milieu du monde. ». Le sujet demande une réponse concise et aussi exhaustive que possible, qui examine notamment la place de la phrase, son style, son contexte historique et culturel et ses références intertextuelles.
+
+**B (15 points).** Votre expérience de lecteur/lectrice vous amène-t-elle aux mêmes idées que Germaine de Staël sur la fonction des fictions dans notre vie ? Le développement doit comporter des paragraphes et une conclusion. Mobilisez vos connaissances théoriques et historiques et vos expériences personnelles de lecture. Les exemples peuvent appartenir à toutes les époques et à toutes les langues.
 
 ## A. Commentaire de la phrase indiquée (5 points)
 
@@ -17,6 +27,8 @@ Un glissement grammatical condense leur malheur. Le sujet de la première propos
 Que fait donc l’ouvrage ? Il rend une voix audible, puis quelques rayons perceptibles. La première image prolonge l’impossibilité de faire comprendre sa propre langue. Dans la tradition biblique de la voix au désert, la voix se fait entendre en un lieu où manque l’interlocuteur. Ici celui qui attend un signe peut le recevoir en lisant. L’image lumineuse reste modeste. Des rayons ne font pas disparaître tout le désert. Le dernier balancement entre la solitude de la lecture et le milieu du monde renverse enfin la valeur habituelle des lieux, car la présence des autres avait livré ces lecteurs à la condamnation. En 1795, après le succès européen de *Julie* et de *Werther*, Staël déplace ainsi le débat moral sur le roman. À ceux que l’on soupçonne d’excès de sensibilité, elle restitue le droit de reconnaître leur expérience dans une voix écrite.
 
 ![Trois relations successives entre les lecteurs et leur monde](figures/voix.svg)
+
+La suite du passage permet de mesurer exactement la place de cette phrase. Staël y compare l’écrit à un ami qui demeure auprès du malheureux. Puis elle concède qu’un seul jour de répit suffirait déjà à justifier un livre, avant de mettre au conditionnel la possibilité d’un bonheur durable. Le mot « quelques », dans la phrase à commenter, prépare cette modestie de la durée et de la quantité. Qu’une œuvre ait une « toute-puissance » sur le cœur, comme le suggérait le début du passage, ne lui donne pas le pouvoir de modifier définitivement la condition de ses lecteurs.
 
 ## B. Réflexion personnelle (15 points)
 
