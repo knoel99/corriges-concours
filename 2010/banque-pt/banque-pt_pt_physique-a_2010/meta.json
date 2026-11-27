@@ -1,0 +1,425 @@
+{
+  "slug": "banque-pt_pt_physique-a_2010",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique A",
+    "annee": 2010,
+    "duree": "4 h",
+    "modalite": "écrit",
+    "code_garde": "10PT17"
+  },
+  "questions": 38,
+  "redaction": "Proposition pédagogique non officielle, rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2010/phys_a_pt_2010.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2010/rapport_phys_a_ecrit_2010.pdf",
+    "livret": "https://www.banquept.fr/documents/livret/2010/Livret_PT_2010.pdf#page=12"
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2010/phys_a_pt_2010.pdf",
+      "sha256": "0d46f6eb94ebf81f524869100b5d7cee294f01b51d50c3f101b8ca0bfcb67dcc",
+      "pages": 12,
+      "fichier_banque": "phys_a_pt_2010.pdf",
+      "sha256_conteneur": "0d46f6eb94ebf81f524869100b5d7cee294f01b51d50c3f101b8ca0bfcb67dcc",
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "55f4f5c49fba2667364b817145d77f8ce9c9a1cfd8af1fd07838a530db71294f"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "4b0e527cad3f4b3395d105f8083b0a3d096ffc1e0b4a4641e54761c75e0a30bc"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "92ecfe075afd3f916ec9aa214fbea0cef7ffc9a3d10ebd8a7596addf8cc728a4"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "b4eaf4a5bd54e7cd6a07f2d286a301428c5b51434d230d2a363fe78e22cef484"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "88cb1a372304f062668dba1663838f60fc839a3a6f0d974fcbe2d89f5660b23c"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "ce16de616992372f80c4abca5d37fa740ef9b048a2e70d2f669cd46d8e41038c"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "dd67f77cdca3f73f018b04001c0e96cad338672aa2818180027e4a83e00619a9"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "42d5bf83274b2ec762ae52dd2df2c3281ce143a2d91763eb87e8bdc64e37a633"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "e31c9659f07767fdab20ad91ff5f13f7917ebf382e7ed5210c07ea0e28fad0e8"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "6afbdffa8b67fde8011d0699b0bf6eb5323a5ed3ab61143d9aecc193a3e89dd6"
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2010/rapport_phys_a_ecrit_2010.pdf",
+      "sha256": "9be0621780266d43adf56395203291d306636aa06a86e21c07422e875b87bfdd",
+      "pages": 2,
+      "fichier_banque": "rapport_phys_a_ecrit_2010.pdf",
+      "sha256_conteneur": "9be0621780266d43adf56395203291d306636aa06a86e21c07422e875b87bfdd",
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "302dee0312caf1333a56c690d78dfcb188839cc3745d237425c2047c5f7543a4"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "5be0b9dbbe21d114006c27982b41fead409d7170135792cc90893892cff157c6"
+        }
+      ]
+    },
+    "livret": {
+      "url": "https://www.banquept.fr/documents/livret/2010/Livret_PT_2010.pdf#page=12",
+      "sha256": "7cc6c6ae3007f08f1ba5351e2e64af501a4e93bef5175ed9429d5fdd34f32d00",
+      "pages": 73,
+      "pages_verifiees": [
+        {
+          "numero": 12,
+          "rendu_sha256": "b0a90ee47750bd20a1c11cf04e95c5e6afaa4ff612d736b7a50daab179749c44"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "A.I.1",
+      "fichier": "figures/descartes.svg",
+      "legende": "Réflexion et réfraction dans le plan d’incidence. Les deux angles supérieurs ont la même valeur absolue.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "A.II.1",
+      "fichier": "figures/cauchy.svg",
+      "legende": "Les huit indices mesurés sont pratiquement alignés en fonction de l’inverse du carré de la longueur d’onde.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "B.II.2.2",
+      "fichier": "figures/cones-antisolaires.svg",
+      "legende": "Coupe axiale des cônes observés. Les directions des gouttes lumineuses font environ 42 et 52 degrés avec l’axe opposé au Soleil.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "C.II.2.3",
+      "fichier": "figures/mode-fondamental.svg",
+      "legende": "Dans la section de trois centimètres sur deux, le champ électrique longitudinal du mode fondamental s’annule sur les quatre parois et atteint son maximum au centre.",
+      "provenance": "Figure originale."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A.I.1",
+      "A.I.2.1",
+      "A.I.2.2",
+      "A.I.3",
+      "A.I.4",
+      "A.II.1",
+      "A.II.2",
+      "A.II.3",
+      "A.II.4",
+      "A.II.5.1",
+      "A.II.5.2",
+      "A.II.5.3",
+      "A.II.5.4",
+      "A.II.5.5",
+      "B.I",
+      "B.II.1.1",
+      "B.II.1.2",
+      "B.II.2.1",
+      "B.II.2.2",
+      "B.II.2.3",
+      "B.II.2.4",
+      "B.II.2.5",
+      "B.II.2.6",
+      "C.I.1",
+      "C.I.2",
+      "C.I.3",
+      "C.I.4",
+      "C.I.5",
+      "C.I.6",
+      "C.I.7",
+      "C.I.8",
+      "C.II.1",
+      "C.II.2.1",
+      "C.II.2.2",
+      "C.II.2.3",
+      "C.II.2.4",
+      "C.II.2.5",
+      "C.II.2.6"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "annexes_imposees": [],
+    "repere_par_question": [
+      {
+        "question": "A.I.1",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Lois de passage d’un rayon"
+      },
+      {
+        "question": "A.I.2.1",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Deux faces du prisme"
+      },
+      {
+        "question": "A.I.2.2",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Déviation totale"
+      },
+      {
+        "question": "A.I.3",
+        "page_pdf": 2,
+        "page_rapport": 1,
+        "objet": "Condition du minimum"
+      },
+      {
+        "question": "A.I.4",
+        "page_pdf": 3,
+        "page_rapport": 1,
+        "objet": "Mesure de l’indice"
+      },
+      {
+        "question": "A.II.1",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Exploitation des huit indices"
+      },
+      {
+        "question": "A.II.2",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Déviation et couleur"
+      },
+      {
+        "question": "A.II.3",
+        "page_pdf": 3,
+        "page_rapport": 1,
+        "objet": "Incidence de référence"
+      },
+      {
+        "question": "A.II.4",
+        "page_pdf": 3,
+        "page_rapport": 1,
+        "objet": "Dispersion à incidence fixée"
+      },
+      {
+        "question": "A.II.5.1",
+        "page_pdf": 4,
+        "page_rapport": 2,
+        "objet": "Plan focal du spectromètre"
+      },
+      {
+        "question": "A.II.5.2",
+        "page_pdf": 4,
+        "page_rapport": 1,
+        "objet": "Image de la fente de référence"
+      },
+      {
+        "question": "A.II.5.3",
+        "page_pdf": 4,
+        "page_rapport": 2,
+        "objet": "Résolution du doublet"
+      },
+      {
+        "question": "A.II.5.4",
+        "page_pdf": 4,
+        "page_rapport": 2,
+        "objet": "Spectre de la source blanche"
+      },
+      {
+        "question": "A.II.5.5",
+        "page_pdf": 4,
+        "page_rapport": 2,
+        "objet": "Autre spectromètre"
+      },
+      {
+        "question": "B.I",
+        "page_pdf": 5,
+        "page_rapport": 1,
+        "objet": "Bille rétroréfléchissante"
+      },
+      {
+        "question": "B.II.1.1",
+        "page_pdf": 5,
+        "page_rapport": 1,
+        "objet": "Une réflexion dans la goutte"
+      },
+      {
+        "question": "B.II.1.2",
+        "page_pdf": 6,
+        "page_rapport": 1,
+        "objet": "Deux réflexions dans la goutte"
+      },
+      {
+        "question": "B.II.2.1",
+        "page_pdf": 6,
+        "page_rapport": 1,
+        "objet": "Concentration des rayons"
+      },
+      {
+        "question": "B.II.2.2",
+        "page_pdf": 6,
+        "page_rapport": 1,
+        "objet": "Disposition du Soleil et de la pluie"
+      },
+      {
+        "question": "B.II.2.3",
+        "page_pdf": 6,
+        "page_rapport": 1,
+        "objet": "Position des deux arcs"
+      },
+      {
+        "question": "B.II.2.4",
+        "page_pdf": 6,
+        "page_rapport": 1,
+        "objet": "Équinoxe à midi"
+      },
+      {
+        "question": "B.II.2.5",
+        "page_pdf": 6,
+        "page_rapport": 1,
+        "objet": "Dispersion du premier arc"
+      },
+      {
+        "question": "B.II.2.6",
+        "page_pdf": 7,
+        "page_rapport": 1,
+        "objet": "Bande sombre d’Alexandre"
+      },
+      {
+        "question": "C.I.1",
+        "page_pdf": 7,
+        "page_rapport": 1,
+        "objet": "Conducteur parfait"
+      },
+      {
+        "question": "C.I.2",
+        "page_pdf": 7,
+        "page_rapport": 1,
+        "objet": "Champ magnétique dans le métal"
+      },
+      {
+        "question": "C.I.3",
+        "page_pdf": 7,
+        "page_rapport": 1,
+        "objet": "Équations de propagation dans le vide"
+      },
+      {
+        "question": "C.I.4",
+        "page_pdf": 7,
+        "page_rapport": 1,
+        "objet": "Constante de propagation"
+      },
+      {
+        "question": "C.I.5",
+        "page_pdf": 7,
+        "page_rapport": 1,
+        "objet": "Signe de k et opérateurs complexes"
+      },
+      {
+        "question": "C.I.6",
+        "page_pdf": 8,
+        "page_rapport": 1,
+        "objet": "Quatre équations pour les composantes transverses"
+      },
+      {
+        "question": "C.I.7",
+        "page_pdf": 8,
+        "page_rapport": 1,
+        "objet": "Équation transverse de E longitudinal"
+      },
+      {
+        "question": "C.I.8",
+        "page_pdf": 8,
+        "page_rapport": 2,
+        "objet": "Conditions sur les parois"
+      },
+      {
+        "question": "C.II.1",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Valeurs au bord du rectangle"
+      },
+      {
+        "question": "C.II.2.1",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Amplitude séparée"
+      },
+      {
+        "question": "C.II.2.2",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Séparation des variables"
+      },
+      {
+        "question": "C.II.2.3",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Modes et fréquence de coupure"
+      },
+      {
+        "question": "C.II.2.4",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Champs transverses et vérification des bords"
+      },
+      {
+        "question": "C.II.2.5",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Vitesse de phase et dispersion"
+      },
+      {
+        "question": "C.II.2.6",
+        "page_pdf": 9,
+        "page_rapport": 1,
+        "objet": "Valeurs numériques"
+      }
+    ]
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "fournisseur": "codex",
+      "agent": "x_hist_1987",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture de la garde, des questions et des documents de la Banque PT ; rédaction et contrôle de 38 rubriques dans les deux éditions, indications, figures et vérifications indépendantes."
+    }
+  ]
+}
