@@ -1,0 +1,855 @@
+{
+  "banque-pt_pt_langue-vivante-a_2006": {
+    "commit": "a7a93ce9e34a795bee093e7098ade320ccd64c3b",
+    "arbre_git": "1ffe3c1fc92bff010a0da1af55c5d0d5fc4282f0",
+    "questions": 15,
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2006/lv_a_2006.pdf",
+      "sha256": "e281af60735623302a75f5582438a92830db894bf2f73e71dc83921704a5152e",
+      "pages": 11,
+      "rendus_sha256": [
+        "6b0b6b61a7a7ed4747eedae9a945cd71569e5b13aa4d7b58ed56d82c38b9e2bd",
+        "f25ec1e0c780d2d8b3a8aa2aea2a5c7f69186a8a8be37041d3407bf9d9b4f726",
+        "7408062c38a9a2c333fdb816766c9503ef71cd4f4564b8e4dd8078e85f479fe2",
+        "680918bf2327ec3444ff0222adaef07b73ae6269f47995239895fc4efa0d211f",
+        "c735459bdfb27341ca079c313edaafa07912ef9e1fc221935945232ca418e785",
+        "e271e7513e97859fbcc02732537a10f5f41b451cd26ae3d0369be589dd45dd93",
+        "65d0727405273191b3cefb07805a4fbc6398cf4352607cce297de52e9f0caa38",
+        "5f49c47cabe5557c2f6e1c0b0a9cd0eed56b1f01b26baf2bbbbbf5c98190b484",
+        "eb66f4f37d44548815d9c4a808534c2254cad48a72f0cf8d421d9cb71656252c",
+        "3985e5c2a39577124f3e3ece285ecbcb5b828db32560c073fd9d5446b94b1e87",
+        "30c1062e1f45072fd9450bd9166e03b7be6bad79b2df496a089c224acae67f33"
+      ],
+      "index": "https://www.banquept.fr/article152.html",
+      "sha256_index": "17cdf08d3d07da44b1d575a7149c96840d25bcd4eaa49fd210234f6fd544625b"
+    },
+    "livret": {
+      "url": "https://www.banquept.fr/documents/livret/2006/Livret_Rose_2006_1_2.pdf",
+      "sha256": "5681be4b094f21d516a26f35fbc4958f52e9de82e5f9ad4eb9d2ecb0c2709269",
+      "pages": 21,
+      "rendus_sha256": [
+        "a09d8a2bbb5b2bb194f49c6030a7ec763276b30b287f3bd4b6c5bc47882d7753",
+        "75890fd46ebc750d7378d21d577ac50e679650882e63443fcf59ead5970af35d",
+        "850dbf83c149d891466c97457ffee3ac58a27cf11f1923a4b08e0997bf70f102",
+        "aa603f8cfbee0abc2bf3b87cb66966d78a0585f4f5fa7a41486a2436884bf972",
+        "830f41c74240d6b49ee9f10fa3e92d5ee62fa54b8674314ba65ad19aa14b520c",
+        "2cb88b7dc66f11c34829d8758c68d7e400b5bbfc7ee6bbbc83b1a860189a1010",
+        "39c3e777445d951bd3deb88c4c0e913e03acab4fbb01a6490dd30f25a329efb1",
+        "82c3bc2e4194e702678e70b2ac3317d08ee0eb378178a03d6329d941657da89a",
+        "d6aa57c16cec8aae6d37fef6e315e9f482bc65850a403d3a63815aab9a8e4a66",
+        "5a6929c4d6dbecc305e96c1c1509bc333626d1cc795dac108166bd885ba0ec39",
+        "555464b3dddc0f6f9d60b97fcbacced2579ba76a4f412bd9f3090f882b1563e5",
+        "5111a00c6b7132883b1cf84a4405d8090beb182e9d8be5cbfa7a0d54a94eeb75",
+        "82665bc442e21cf6e8f96710d6499460cec0fec63d4359864ca80c79d851a2d5",
+        "4e2ea98a7d78c4c066306f766ae7063bf30e3f36d6fcc260335e83134ca0e7ca",
+        "5f95d4364103967fc3fee95fd9f70f053252ddfe1a3d3b81e99675481c216e73",
+        "33ab0becc41736efa69966ad1a33e10a744f6c7dc80a468902731fa0c2618a94",
+        "cb88f298a6f6ea90cca99a695ca16ea806a12cab5fc4fd0a2e0759fcb78340ae",
+        "36ad9eefc80a3a602c2e451e8be03ca129e72d4b41aa07e7cc4e60f3df07b8ec",
+        "01e1d569dd014e16f2acb975142ace7e606dddfc111f96df13bb364e099348ba",
+        "d6b243b36428586a1939b905231d6afbd2e498ec5b7265b445ea47d45c9c27fc",
+        "d3a9189bc1ac49a671c30a319a88541c18d2a5520699c4c53d6fb6c97e5defd2"
+      ],
+      "page_grille": 12,
+      "coefficients_admission": {
+        "École polytechnique": 6,
+        "ENS Cachan": 1
+      }
+    },
+    "rapports": {
+      "de": {
+        "url": "https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_lv_a_all_ecrit_2006.pdf",
+        "sha256": "1b4c2b1fae68073977fa87b1750307658d3c3bbe9f970337b8789f713394d3a4",
+        "pages": 2,
+        "rendus_sha256": [
+          "3b19880bfa305ccdc8ff1e4088c00de546734f212deb9c105715e5181affa824",
+          "a0e6d9c741845b6d5d3cf53339e1110dc2ee88dec82ce19b2232f5261b8659dd"
+        ],
+        "index": "https://www.banquept.fr/article153.html",
+        "sha256_index": "12a4a0b5710f8cb8cf7b71a6b75822f8e6036e5a84a391e6b3c003c170846638"
+      },
+      "en": {
+        "url": "https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_lv_a_ang_ecrit_2006.pdf",
+        "sha256": "de7e1c967aebead83b3dc2ddb9f1bfdc135fdcf99b4be5cd709a6408d73bb8c3",
+        "pages": 2,
+        "rendus_sha256": [
+          "7beb9fce3fb188fcabb2ca5355ad52ff96532524f5dec4f97e97417ab59d228c",
+          "b55ad970979efd985bc8441b602adbb976b2dfb71b1639a7723f29669bd353d8"
+        ],
+        "index": "https://www.banquept.fr/article153.html",
+        "sha256_index": "12a4a0b5710f8cb8cf7b71a6b75822f8e6036e5a84a391e6b3c003c170846638"
+      },
+      "ar": {
+        "url": "https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_lv_a_ara_ecrit_2006.pdf",
+        "sha256": "20af5d8d6386629893a962c772406b797fa7fa8dab1dd0101e92e5cc39b47d69",
+        "pages": 1,
+        "rendus_sha256": [
+          "33b2402bb4ede6dea9cbd7d003190484a57ac3f20ea6a8214b372d6a218e7a66"
+        ],
+        "index": "https://www.banquept.fr/article153.html",
+        "sha256_index": "12a4a0b5710f8cb8cf7b71a6b75822f8e6036e5a84a391e6b3c003c170846638"
+      },
+      "es": {
+        "url": "https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_lv_a_aut_ecrit_2006.pdf",
+        "sha256": "94c7c51594d5f7194234adcf5ec791dfd5638247eafa44806312f1c9240fe945",
+        "pages": 1,
+        "rendus_sha256": [
+          "67941fa66366f7e4fe94cf1b697fbead0b3370ba7c2615d6ee36a90f34df40dc"
+        ],
+        "index": "https://www.banquept.fr/article153.html",
+        "sha256_index": "12a4a0b5710f8cb8cf7b71a6b75822f8e6036e5a84a391e6b3c003c170846638"
+      }
+    },
+    "index_rapports": "https://www.banquept.fr/article153.html",
+    "livret_suite": {
+      "url": "https://www.banquept.fr/documents/livret/2006/Livret_Rose_2006_2_2.pdf",
+      "sha256": "c82f0925923d85a9a4ff31af7d782876f47904a65a86ef8f66d899f5987c0ed5",
+      "pages": 63,
+      "rendus_sha256": [
+        "e6e5dfc223ab3e8dee5cb5f201e494afbdcae9fdef79ba15a0f2c00b07c37ece",
+        "abf88c5ba964cb1e0e6dd824d271b7a4b61093dd71b8d67eb900771ba470bbf3",
+        "ff67ae88f988f4ff7a041a6a285c14af171d37463ddb0f470c8451992a2c6537",
+        "027594693a6ccb26f6da930bee4141936a9fe8598bac76a327acbe84d9e1d48e",
+        "238fcbc0425eba4a7116d5e564ad48e1d94e46e6533884bee2f529c228b89412",
+        "b1419ef1a206d09981b9c23b71b4d14de08c1a8d7cf8f8509533f901336a966a",
+        "7065954f26db76b93c2969cb80006671de6fa9eb77b396d043827d4a10ccbe2c",
+        "47711908966081748303f96bdcde19594997d7d30c53578ad766aaaf2e06033f",
+        "8d24a9de6c98865a2e605b104b78f5149efec7281c475a6fd0ec1d8018ca7720",
+        "33a6fc345940359540bb774b59255c916ce7ffa0b09895d7ae17ee21538b3fc9",
+        "d5c2da267f163bfdf5bf8885afaaaa0b19c1a40df4a251f5b0ae2b14d7a7c883",
+        "ace987f026eded5c64d6197e18233bddbac7c3b52e308e6e27976e34fc46ef11",
+        "74e597086081dc8388ac692ae36dfb8d14e00c9f34080dd670bc78a48d1be621",
+        "3f74cfe27a70f7d297b46d577fe80224009cc37a9439d9f3ca30d70959921fc9",
+        "d28226c7f4d126787d43de3402c23642ec88b2349f4c8a4dd65c27ad6a951058",
+        "75706e046b9614d98c52015b90a10671b139525f35994475d88ed3233cd54070",
+        "70a49af7465f345afd6e0f58fdb99d7c2b84810530426832f7bbc53cc7980799",
+        "faa2f92617c4dfca72e4d282df8ec0c475ea49fc962469c0cd08a259d5267d62",
+        "2fe7920888e3cf7f81a55db8656589ae261b3c9a73984b92d5483ab64ae088cb",
+        "81ffb0dfcd9256b4d2ba8733e6965a2ae9c6da050c2ed4bd832268ffb4ddb65a",
+        "728c53c935b7460778e600ad8fdae6c570d454b66766ffd39d73af8ad5f4216b",
+        "63b9ae1f2352eda8679582294e97ea7a8c46dae5862d03b378ac25abed2ec833",
+        "1fae522c26fd1e0ab2de72b93eef604947b38f816653833d7487c5391a8aa12b",
+        "19db23d72f9d3a898e966685e01c14dbe54da283f1fb6ea34d6786d97013ccab",
+        "f6fc46674dc1c9bba89183a9beb153425a1a1b694f12c0ed7996cddeb550ab9e",
+        "69074604781c6b58c3f5429f9a5253ff2801c8b6027665f63dbcc1f727a61cc7",
+        "1c02f0464e926391514121d69c86ad041496f6d2eda711f8450aadfa4f8be0ee",
+        "80cff7c982d2a61555ba4f0955859c84fa988a5e929dd1da829472901d19e88b",
+        "611f053e19a69dc379a6706cc2d067fbdf03d6157d01ec1a3b1321c6b05330ee",
+        "770f4bf25a3d824f16dcaf115d941a91c554e54f3b7b5029b733adbd9ea59ee4",
+        "113f7e7ef7d57953cce55d497ee3be4d5088859d6ab2d402084adb728d8b5c33",
+        "0087d4fa0163f79a39f9146a3dd94635f25a8b5741e3a8c83c5a6daad792a252",
+        "0a8dbc1b4f2b6ab7474f504e138d8b832e61e2dbf4cf552c240a5eb29054b24e",
+        "011a43c63b6a5901088b182c98d6d2b4d98fcbd3d393fdbd19f4b3ee48f82e26",
+        "30530c918e40998f6ac934406a30e9c04bb5b1ed61bdcc83f9c1aa74fc4bc36a",
+        "0149f543aa34d4a9964c2569cca9ff41326392c3db127fb5475a7c56c9759c34",
+        "09d825818b158bd5579e3de0046db78eb676568aeee27c121163e403ff863215",
+        "8c341fde9acf646a0f264802f5690bec80994d73c53bd4f97b03d2f6b584404f",
+        "418f212711dc31311c1c2972c28c233d4290d1f2118131964a21c595e51f5d24",
+        "31a3860bd1de92f3b4015adaee5ffb2accfbbae4a3fd65b2397c2ff56842bd30",
+        "08ec97b6ea0019dd923f7ee8f93e54a88b7b499a6f63dcba9d92e9363457d1bb",
+        "1ab6da35b75c26e21e3866ee3c57b18706b0c4bcbef0e28df23908871503cd61",
+        "643bb7e463eaa99e9dc6fb54d18575bb56a14770205e0f7576d26932a5ebec98",
+        "56020318f960e80e19c24bca7f88fb11fa2a23df8113ec7fca114fb9da8d6830",
+        "948bb33fda62a99e33f0bb0ccf74b19eec8742a1957b94804daf68aff4bc72b9",
+        "84aec9c71b9470006f63b2b2be13771420b3723638b1e9a28b60f75c44d24ed4",
+        "ef0656f2ac360712440945ac491c808ff384a6e243947f70b448b56f0c7a02e5",
+        "32142980080ac33ac836812fc83d348bda365076d0ed514be91f31ef7a2ce9e7",
+        "ecd836bd6c9e3d4c9a7bdfe3a9d1a92c4df167753b6d5af4b40d65c67c06037f",
+        "6bd4662e18a94f6def9eea91ec36189c61c6b6ee3c87d753c21ea0756aba83b5",
+        "e5c7cc05ed2c6e8d4a6c870eb096659b70a0004959cca4748149a65216454c63",
+        "fda2a733388d6016140c4d77ddce07fa2e00724fcb54e707bb1841178e855d5f",
+        "8adc936e28399c934d02c8a0ad3ac0ed32e778980821e9f0f22906960322965e",
+        "bc1197f4e028d7994c4ed426c85526e029f19db6af312be757285035e3737fb8",
+        "b97ecce2ce3d61f0e3b79cd59ac3d8ac5bc9c7ca3be3ef95de8b639b53086870",
+        "89649876511c36bce8cc4b2821b4d22f7053dac934d0b32d42087c1871591185",
+        "9514325b84eb65953af5e913a68052abcfdf7a5d187cd02beef74c947eeee9df",
+        "9695e106dd9866161dd380f3bfa54710dc75efc7bdc8daa3c03f670d2f59c062",
+        "b0419e244340b1f665e13d8e083bb226650717e51f6ccd947321c1bef78a8734",
+        "402dcfec683b0153a638d85be8a8ace0521fa52544dc777d6a7fda35d4b569a3",
+        "1502398d4fb45586e2931842a9237a7b586c634955d6ffb54e1d62e764b2dbe5",
+        "f366f52c717d7e30060d64c2f999c0c5195321ec3bb093cd5958928f2fd0f64b",
+        "aca7771971e773fc8d440c50339b41f2eac98313e9be12715798b544707e7d73"
+      ]
+    },
+    "editions": {
+      "brut": {
+        "pages": 8,
+        "signets": [
+          [
+            1,
+            "Allemand",
+            1
+          ],
+          [
+            2,
+            "Version française",
+            1
+          ],
+          [
+            2,
+            "Question a",
+            1
+          ],
+          [
+            2,
+            "Question b",
+            2
+          ],
+          [
+            1,
+            "Anglais",
+            2
+          ],
+          [
+            2,
+            "Version française",
+            2
+          ],
+          [
+            2,
+            "Question a",
+            3
+          ],
+          [
+            2,
+            "Question b",
+            3
+          ],
+          [
+            1,
+            "Arabe",
+            4
+          ],
+          [
+            2,
+            "Version française",
+            4
+          ],
+          [
+            2,
+            "Question a",
+            4
+          ],
+          [
+            2,
+            "Question b",
+            5
+          ],
+          [
+            1,
+            "Espagnol",
+            5
+          ],
+          [
+            2,
+            "Version française",
+            5
+          ],
+          [
+            2,
+            "Question a",
+            6
+          ],
+          [
+            2,
+            "Question b",
+            6
+          ],
+          [
+            1,
+            "Italien",
+            7
+          ],
+          [
+            2,
+            "Version française",
+            7
+          ],
+          [
+            2,
+            "Question a",
+            7
+          ],
+          [
+            2,
+            "Question b",
+            7
+          ]
+        ],
+        "questions": [
+          {
+            "nom": "Allemand",
+            "rapport_url": "https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_lv_a_all_ecrit_2006.pdf",
+            "rapport_sha256": "1b4c2b1fae68073977fa87b1750307658d3c3bbe9f970337b8789f713394d3a4",
+            "pages_rapport": [
+              1,
+              2
+            ],
+            "pages_sujet": [
+              2,
+              3
+            ],
+            "exercices": [
+              {
+                "exercice": "Version française",
+                "pages_pdf": [
+                  1
+                ]
+              },
+              {
+                "exercice": "Question a",
+                "mots_verifies": 83,
+                "pages_pdf": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "exercice": "Question b",
+                "mots_verifies": 204,
+                "pages_pdf": [
+                  2
+                ]
+              }
+            ],
+            "bornes_version": "De « Den ganzen Tag am Computer sitzen » à « ein lustiges Grüppchen »."
+          },
+          {
+            "nom": "Anglais",
+            "rapport_url": "https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_lv_a_ang_ecrit_2006.pdf",
+            "rapport_sha256": "de7e1c967aebead83b3dc2ddb9f1bfdc135fdcf99b4be5cd709a6408d73bb8c3",
+            "pages_rapport": [
+              1,
+              2
+            ],
+            "pages_sujet": [
+              4,
+              5
+            ],
+            "exercices": [
+              {
+                "exercice": "Version française",
+                "pages_pdf": [
+                  3
+                ]
+              },
+              {
+                "exercice": "Question a",
+                "mots_verifies": 92,
+                "pages_pdf": [
+                  3
+                ]
+              },
+              {
+                "exercice": "Question b",
+                "mots_verifies": 203,
+                "pages_pdf": [
+                  3
+                ]
+              }
+            ],
+            "bornes_version": "De « Through a new service » à « whenever the cap is removed ». La dernière phrase traduite s’achève avant l’envoi éventuel d’un rappel."
+          },
+          {
+            "nom": "Arabe",
+            "rapport_url": "https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_lv_a_ara_ecrit_2006.pdf",
+            "rapport_sha256": "20af5d8d6386629893a962c772406b797fa7fa8dab1dd0101e92e5cc39b47d69",
+            "pages_rapport": [
+              1
+            ],
+            "pages_sujet": [
+              6,
+              7
+            ],
+            "exercices": [
+              {
+                "exercice": "Version française",
+                "pages_pdf": [
+                  4
+                ]
+              },
+              {
+                "exercice": "Question a",
+                "mots_verifies": 83,
+                "lettres_arabes_contigues": 392,
+                "pages_pdf": [
+                  4
+                ]
+              },
+              {
+                "exercice": "Question b",
+                "mots_verifies": 202,
+                "lettres_arabes_contigues": 870,
+                "pages_pdf": [
+                  5
+                ]
+              }
+            ],
+            "bornes_version": "De « يؤكد هذا المعرض » à « للمعارف التقنية والمهارات ». Le dernier paragraphe est à traduire jusqu’à cette expression, au milieu du propos d’Ahmed Djebbar."
+          },
+          {
+            "nom": "Espagnol",
+            "rapport_url": "https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_lv_a_aut_ecrit_2006.pdf",
+            "rapport_sha256": "94c7c51594d5f7194234adcf5ec791dfd5638247eafa44806312f1c9240fe945",
+            "pages_rapport": [
+              1
+            ],
+            "pages_sujet": [
+              8,
+              9
+            ],
+            "exercices": [
+              {
+                "exercice": "Version française",
+                "pages_pdf": [
+                  5
+                ]
+              },
+              {
+                "exercice": "Question a",
+                "mots_verifies": 90,
+                "pages_pdf": [
+                  6
+                ]
+              },
+              {
+                "exercice": "Question b",
+                "mots_verifies": 219,
+                "pages_pdf": [
+                  6
+                ]
+              }
+            ],
+            "bornes_version": "De « Más de medio siglo atrás » à « percibidor abstracto del mundo »."
+          },
+          {
+            "nom": "Italien",
+            "rapport_url": "https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_lv_a_aut_ecrit_2006.pdf",
+            "rapport_sha256": "94c7c51594d5f7194234adcf5ec791dfd5638247eafa44806312f1c9240fe945",
+            "pages_rapport": [
+              1
+            ],
+            "pages_sujet": [
+              10,
+              11
+            ],
+            "exercices": [
+              {
+                "exercice": "Version française",
+                "pages_pdf": [
+                  7
+                ]
+              },
+              {
+                "exercice": "Question a",
+                "mots_verifies": 85,
+                "pages_pdf": [
+                  7
+                ]
+              },
+              {
+                "exercice": "Question b",
+                "mots_verifies": 208,
+                "pages_pdf": [
+                  7,
+                  8
+                ]
+              }
+            ],
+            "bornes_version": "Les trois derniers paragraphes de la page 10, de « L’idea di Michaud » à « in quelle a carbone »."
+          }
+        ],
+        "figures": [
+          {
+            "fichier": "figures/lecture-de.svg",
+            "question": "Allemand",
+            "legende": "Qu’est-ce qui rend le choix possible ?",
+            "page_pdf": 2,
+            "sha256_svg": "d0370fd63d84c64e8397dbde4338f1a857cb28e0206726a58d66d3e8953201f6",
+            "sha256_forme_pdf": "b80246bca707b1ad633e03292b9a8c22c4d3b21915bdab17b30a2bad29c37e6f"
+          },
+          {
+            "fichier": "figures/lecture-en.svg",
+            "question": "Anglais",
+            "legende": "Que mesure le dispositif ?",
+            "page_pdf": 4,
+            "sha256_svg": "65b07ac7cfe417dc313571128ba96870f732748e19a0faee12e5bf0a10275641",
+            "sha256_forme_pdf": "aee6365d7e3a33ec9d378aa138d7eedb7a9d29d9a365e4402de540e9ec6def62"
+          },
+          {
+            "fichier": "figures/lecture-ar.svg",
+            "question": "Arabe",
+            "legende": "Comment circulent les savoirs ?",
+            "page_pdf": 5,
+            "sha256_svg": "02587cc1043f3880c70fa7146ba55f415556b33c94cecc3820a4dda870a04c79",
+            "sha256_forme_pdf": "b787df923cd72424d6c3947be3f514bdfa1563a4fad1d0dfb59d4900e6dd0e68"
+          },
+          {
+            "fichier": "figures/lecture-es.svg",
+            "question": "Espagnol",
+            "legende": "De l’image au concept",
+            "page_pdf": 6,
+            "sha256_svg": "9fdaba08969dca4209c5d64949632686fb921de633d0da6daaca7fd0613441ec",
+            "sha256_forme_pdf": "c2ff191431686b47ba071ed9925825111e3eaeb6438d9a8429792b5340598274"
+          },
+          {
+            "fichier": "figures/lecture-it.svg",
+            "question": "Italien",
+            "legende": "De l’essai à la centrale",
+            "page_pdf": 8,
+            "sha256_svg": "50f719445db0bfe398e676cc94fe0713731a5ed076865859dffbcdada25509fb",
+            "sha256_forme_pdf": "c86463db2a2d411196301c5ba72688bc852534ac18e36a2d97ed96653ea3f1d7"
+          }
+        ],
+        "signatures_premiere_page": [
+          "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+          "**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+        ],
+        "sha256_pdf": "4d6618ebce0747a4357a79337ec45b54e99edace8fe0f1a24d4772f9a3fccae7",
+        "sha256_markdown": "13e4c655a307483ea97802d9d9f6b26c4441f63f7b7ed07388af2edf9f384938",
+        "diagnostic_latex_propre": true
+      },
+      "guide": {
+        "pages": 9,
+        "signets": [
+          [
+            1,
+            "Allemand",
+            1
+          ],
+          [
+            2,
+            "Version française",
+            1
+          ],
+          [
+            2,
+            "Question a",
+            2
+          ],
+          [
+            2,
+            "Question b",
+            2
+          ],
+          [
+            1,
+            "Anglais",
+            2
+          ],
+          [
+            2,
+            "Version française",
+            3
+          ],
+          [
+            2,
+            "Question a",
+            3
+          ],
+          [
+            2,
+            "Question b",
+            4
+          ],
+          [
+            1,
+            "Arabe",
+            4
+          ],
+          [
+            2,
+            "Version française",
+            5
+          ],
+          [
+            2,
+            "Question a",
+            5
+          ],
+          [
+            2,
+            "Question b",
+            5
+          ],
+          [
+            1,
+            "Espagnol",
+            6
+          ],
+          [
+            2,
+            "Version française",
+            6
+          ],
+          [
+            2,
+            "Question a",
+            6
+          ],
+          [
+            2,
+            "Question b",
+            7
+          ],
+          [
+            1,
+            "Italien",
+            7
+          ],
+          [
+            2,
+            "Version française",
+            8
+          ],
+          [
+            2,
+            "Question a",
+            8
+          ],
+          [
+            2,
+            "Question b",
+            8
+          ]
+        ],
+        "questions": [
+          {
+            "nom": "Allemand",
+            "rapport_url": "https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_lv_a_all_ecrit_2006.pdf",
+            "rapport_sha256": "1b4c2b1fae68073977fa87b1750307658d3c3bbe9f970337b8789f713394d3a4",
+            "pages_rapport": [
+              1,
+              2
+            ],
+            "pages_sujet": [
+              2,
+              3
+            ],
+            "exercices": [
+              {
+                "exercice": "Version française",
+                "pages_pdf": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "exercice": "Question a",
+                "mots_verifies": 83,
+                "pages_pdf": [
+                  2
+                ]
+              },
+              {
+                "exercice": "Question b",
+                "mots_verifies": 204,
+                "pages_pdf": [
+                  2
+                ]
+              }
+            ],
+            "bornes_version": "De « Den ganzen Tag am Computer sitzen » à « ein lustiges Grüppchen »."
+          },
+          {
+            "nom": "Anglais",
+            "rapport_url": "https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_lv_a_ang_ecrit_2006.pdf",
+            "rapport_sha256": "de7e1c967aebead83b3dc2ddb9f1bfdc135fdcf99b4be5cd709a6408d73bb8c3",
+            "pages_rapport": [
+              1,
+              2
+            ],
+            "pages_sujet": [
+              4,
+              5
+            ],
+            "exercices": [
+              {
+                "exercice": "Version française",
+                "pages_pdf": [
+                  3
+                ]
+              },
+              {
+                "exercice": "Question a",
+                "mots_verifies": 92,
+                "pages_pdf": [
+                  3,
+                  4
+                ]
+              },
+              {
+                "exercice": "Question b",
+                "mots_verifies": 203,
+                "pages_pdf": [
+                  4
+                ]
+              }
+            ],
+            "bornes_version": "De « Through a new service » à « whenever the cap is removed ». La dernière phrase traduite s’achève avant l’envoi éventuel d’un rappel."
+          },
+          {
+            "nom": "Arabe",
+            "rapport_url": "https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_lv_a_ara_ecrit_2006.pdf",
+            "rapport_sha256": "20af5d8d6386629893a962c772406b797fa7fa8dab1dd0101e92e5cc39b47d69",
+            "pages_rapport": [
+              1
+            ],
+            "pages_sujet": [
+              6,
+              7
+            ],
+            "exercices": [
+              {
+                "exercice": "Version française",
+                "pages_pdf": [
+                  5
+                ]
+              },
+              {
+                "exercice": "Question a",
+                "mots_verifies": 83,
+                "lettres_arabes_contigues": 392,
+                "pages_pdf": [
+                  5
+                ]
+              },
+              {
+                "exercice": "Question b",
+                "mots_verifies": 202,
+                "lettres_arabes_contigues": 870,
+                "pages_pdf": [
+                  5,
+                  6
+                ]
+              }
+            ],
+            "bornes_version": "De « يؤكد هذا المعرض » à « للمعارف التقنية والمهارات ». Le dernier paragraphe est à traduire jusqu’à cette expression, au milieu du propos d’Ahmed Djebbar."
+          },
+          {
+            "nom": "Espagnol",
+            "rapport_url": "https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_lv_a_aut_ecrit_2006.pdf",
+            "rapport_sha256": "94c7c51594d5f7194234adcf5ec791dfd5638247eafa44806312f1c9240fe945",
+            "pages_rapport": [
+              1
+            ],
+            "pages_sujet": [
+              8,
+              9
+            ],
+            "exercices": [
+              {
+                "exercice": "Version française",
+                "pages_pdf": [
+                  6
+                ]
+              },
+              {
+                "exercice": "Question a",
+                "mots_verifies": 90,
+                "pages_pdf": [
+                  6,
+                  7
+                ]
+              },
+              {
+                "exercice": "Question b",
+                "mots_verifies": 219,
+                "pages_pdf": [
+                  7
+                ]
+              }
+            ],
+            "bornes_version": "De « Más de medio siglo atrás » à « percibidor abstracto del mundo »."
+          },
+          {
+            "nom": "Italien",
+            "rapport_url": "https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_lv_a_aut_ecrit_2006.pdf",
+            "rapport_sha256": "94c7c51594d5f7194234adcf5ec791dfd5638247eafa44806312f1c9240fe945",
+            "pages_rapport": [
+              1
+            ],
+            "pages_sujet": [
+              10,
+              11
+            ],
+            "exercices": [
+              {
+                "exercice": "Version française",
+                "pages_pdf": [
+                  8
+                ]
+              },
+              {
+                "exercice": "Question a",
+                "mots_verifies": 85,
+                "pages_pdf": [
+                  8
+                ]
+              },
+              {
+                "exercice": "Question b",
+                "mots_verifies": 208,
+                "pages_pdf": [
+                  8,
+                  9
+                ]
+              }
+            ],
+            "bornes_version": "Les trois derniers paragraphes de la page 10, de « L’idea di Michaud » à « in quelle a carbone »."
+          }
+        ],
+        "figures": [
+          {
+            "fichier": "figures/lecture-de.svg",
+            "question": "Allemand",
+            "legende": "Qu’est-ce qui rend le choix possible ?",
+            "page_pdf": 1,
+            "sha256_svg": "d0370fd63d84c64e8397dbde4338f1a857cb28e0206726a58d66d3e8953201f6",
+            "sha256_forme_pdf": "b80246bca707b1ad633e03292b9a8c22c4d3b21915bdab17b30a2bad29c37e6f"
+          },
+          {
+            "fichier": "figures/lecture-en.svg",
+            "question": "Anglais",
+            "legende": "Que mesure le dispositif ?",
+            "page_pdf": 3,
+            "sha256_svg": "65b07ac7cfe417dc313571128ba96870f732748e19a0faee12e5bf0a10275641",
+            "sha256_forme_pdf": "aee6365d7e3a33ec9d378aa138d7eedb7a9d29d9a365e4402de540e9ec6def62"
+          },
+          {
+            "fichier": "figures/lecture-ar.svg",
+            "question": "Arabe",
+            "legende": "Comment circulent les savoirs ?",
+            "page_pdf": 4,
+            "sha256_svg": "02587cc1043f3880c70fa7146ba55f415556b33c94cecc3820a4dda870a04c79",
+            "sha256_forme_pdf": "b787df923cd72424d6c3947be3f514bdfa1563a4fad1d0dfb59d4900e6dd0e68"
+          },
+          {
+            "fichier": "figures/lecture-es.svg",
+            "question": "Espagnol",
+            "legende": "De l’image au concept",
+            "page_pdf": 6,
+            "sha256_svg": "9fdaba08969dca4209c5d64949632686fb921de633d0da6daaca7fd0613441ec",
+            "sha256_forme_pdf": "c2ff191431686b47ba071ed9925825111e3eaeb6438d9a8429792b5340598274"
+          },
+          {
+            "fichier": "figures/lecture-it.svg",
+            "question": "Italien",
+            "legende": "De l’essai à la centrale",
+            "page_pdf": 7,
+            "sha256_svg": "50f719445db0bfe398e676cc94fe0713731a5ed076865859dffbcdada25509fb",
+            "sha256_forme_pdf": "c86463db2a2d411196301c5ba72688bc852534ac18e36a2d97ed96653ea3f1d7"
+          }
+        ],
+        "signatures_premiere_page": [
+          "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+          "**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+        ],
+        "sha256_pdf": "b2c2eb1ada6184f2eb3a3b33b8375b96339f859f03ea713ebdfb380c765f4624",
+        "sha256_markdown": "c30daf2f08af349c84088a3dd39673b35d9ade7fa65728279a4c33f70ef0d001",
+        "diagnostic_latex_propre": true
+      }
+    },
+    "sha256_journal": "a88fdc053fac65d4225f2dd6da5101a97d81c376f8ed28bde2497f696edaedf7"
+  }
+}
