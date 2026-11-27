@@ -5,6 +5,9 @@
 | 2018 | Banque PT | PT | Informatique et modélisation | [md](2018/banque-pt/banque-pt_pt_informatique-et-modelisation_2018/brut.md) | [md](2018/banque-pt/banque-pt_pt_informatique-et-modelisation_2018/guide.md) |
 | 2021 | Banque PT | PT | Informatique et modélisation | [md](2021/banque-pt/banque-pt_pt_informatique-et-modelisation_2021/brut.md) | [md](2021/banque-pt/banque-pt_pt_informatique-et-modelisation_2021/guide.md) |
 | 2024 | Banque PT | PT | Informatique et modélisation | [md](2024/banque-pt/banque-pt_pt_informatique-et-modelisation_2024/brut.md) | [md](2024/banque-pt/banque-pt_pt_informatique-et-modelisation_2024/guide.md) |
+| 2005 | Banque PT | PT | Langue vivante A | [md](2005/banque-pt/banque-pt_pt_langue-vivante-a_2005/brut.md) | [md](2005/banque-pt/banque-pt_pt_langue-vivante-a_2005/guide.md) |
+| 2006 | Banque PT | PT | Langue vivante A | [md](2006/banque-pt/banque-pt_pt_langue-vivante-a_2006/brut.md) | [md](2006/banque-pt/banque-pt_pt_langue-vivante-a_2006/guide.md) |
+| 2007 | Banque PT | PT | Langue vivante A | [md](2007/banque-pt/banque-pt_pt_langue-vivante-a_2007/brut.md) | [md](2007/banque-pt/banque-pt_pt_langue-vivante-a_2007/guide.md) |
 | 2008 | Banque PT | PT | Langue vivante A | [md](2008/banque-pt/banque-pt_pt_langue-vivante-a_2008/brut.md) | [md](2008/banque-pt/banque-pt_pt_langue-vivante-a_2008/guide.md) |
 | 2009 | Banque PT | PT | Langue vivante A | [md](2009/banque-pt/banque-pt_pt_langue-vivante-a_2009/brut.md) | [md](2009/banque-pt/banque-pt_pt_langue-vivante-a_2009/guide.md) |
 | 2010 | Banque PT | PT | Langue vivante A | [md](2010/banque-pt/banque-pt_pt_langue-vivante-a_2010/brut.md) | [md](2010/banque-pt/banque-pt_pt_langue-vivante-a_2010/guide.md) |
@@ -20,6 +23,7 @@
 | 2023 | Banque PT | PT | Langue vivante A | [md](2023/banque-pt/banque-pt_pt_langue-vivante-a_2023/brut.md) | [md](2023/banque-pt/banque-pt_pt_langue-vivante-a_2023/guide.md) |
 | 2024 | Banque PT | PT | Langue vivante A | [md](2024/banque-pt/banque-pt_pt_langue-vivante-a_2024/brut.md) | [md](2024/banque-pt/banque-pt_pt_langue-vivante-a_2024/guide.md) |
 | 2025 | Banque PT | PT | Langue vivante A | [md](2025/banque-pt/banque-pt_pt_langue-vivante-a_2025/brut.md) | [md](2025/banque-pt/banque-pt_pt_langue-vivante-a_2025/guide.md) |
+| 2004 | Banque PT | PT | Langue vivante I-A | [md](2004/banque-pt/banque-pt_pt_langue-vivante-i-a_2004/brut.md) | [md](2004/banque-pt/banque-pt_pt_langue-vivante-i-a_2004/guide.md) |
 | 2005 | Banque PT | PT | Maths A | [md](2005/banque-pt/banque-pt_pt_maths-a_2005/brut.md) | [md](2005/banque-pt/banque-pt_pt_maths-a_2005/guide.md) |
 | 2006 | Banque PT | PT | Maths A | [md](2006/banque-pt/banque-pt_pt_maths-a_2006/brut.md) | [md](2006/banque-pt/banque-pt_pt_maths-a_2006/guide.md) |
 | 2007 | Banque PT | PT | Maths A | [md](2007/banque-pt/banque-pt_pt_maths-a_2007/brut.md) | [md](2007/banque-pt/banque-pt_pt_maths-a_2007/guide.md) |
@@ -226,6 +230,7 @@
 | 2020 | Banque PT | PT | Sciences industrielles C | [md](2020/banque-pt/banque-pt_pt_sciences-industrielles-c_2020/brut.md) | [md](2020/banque-pt/banque-pt_pt_sciences-industrielles-c_2020/guide.md) |
 | 2021 | Banque PT | PT | Sciences industrielles C | [md](2021/banque-pt/banque-pt_pt_sciences-industrielles-c_2021/brut.md) | [md](2021/banque-pt/banque-pt_pt_sciences-industrielles-c_2021/guide.md) |
 | 2022 | Banque PT | PT | Sciences industrielles C | [md](2022/banque-pt/banque-pt_pt_sciences-industrielles-c_2022/brut.md) | [md](2022/banque-pt/banque-pt_pt_sciences-industrielles-c_2022/guide.md) |
+| 2023 | Banque PT | PT | Sciences industrielles C | [md](2023/banque-pt/banque-pt_pt_sciences-industrielles-c_2023/brut.md) | [md](2023/banque-pt/banque-pt_pt_sciences-industrielles-c_2023/guide.md) |
 | 2025 | Banque PT | PT | Sciences industrielles C | [md](2025/banque-pt/banque-pt_pt_sciences-industrielles-c_2025/brut.md) | [md](2025/banque-pt/banque-pt_pt_sciences-industrielles-c_2025/guide.md) |
 | 2026 | Banque PT | PT | Sciences industrielles C | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-c_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-c_2026/guide.md) |
 | 2025 | BCE | ECG | Culture générale (EDHEC-ESSEC) | [md](2025/bce/bce_ecg_culture-generale-edhec-essec_2025/brut.md) | [md](2025/bce/bce_ecg_culture-generale-edhec-essec_2025/guide.md) |
@@ -486,6 +491,7 @@
 | 2024 | ENS Paris-Saclay | Économie-gestion option 1 | Mathématiques et statistiques | [md](2024/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2024/brut.md) | [md](2024/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2024/guide.md) |
 | 2025 | ENS Paris-Saclay | Économie-gestion option 1 | Mathématiques et statistiques | [md](2025/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2025/brut.md) | [md](2025/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2025/guide.md) |
 | 2026 | ENS Paris-Saclay | Économie-gestion option 1 | Mathématiques et statistiques | [md](2026/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2026/brut.md) | [md](2026/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2026/guide.md) |
+| 2026 | ENS-PSL | CNEL Lettres | Philosophie | [md](2026/ens-psl/ens-psl_cnel-lettres_philosophie_2026/brut.md) | [md](2026/ens-psl/ens-psl_cnel-lettres_philosophie_2026/guide.md) |
 | 2021 | ENS-PSL | CNEL Lettres | Sciences sociales — crise sanitaire ou interdépendances | [md](2021/ens-psl/ens-psl_cnel-lettres_sciences-sociales-crise-sanitaire-ou-interdependances_2021/brut.md) | [md](2021/ens-psl/ens-psl_cnel-lettres_sciences-sociales-crise-sanitaire-ou-interdependances_2021/guide.md) |
 | 2019 | ENS-PSL | Médecine-Humanités | Autisme | [md](2019/ens-psl/ens-psl_medecine-humanites_autisme_2019/brut.md) | [md](2019/ens-psl/ens-psl_medecine-humanites_autisme_2019/guide.md) |
 | 2025 | ENS-PSL | Médecine-Humanités | Contraindre pour soigner ? | [md](2025/ens-psl/ens-psl_medecine-humanites_contraindre-pour-soigner_2025/brut.md) | [md](2025/ens-psl/ens-psl_medecine-humanites_contraindre-pour-soigner_2025/guide.md) |
@@ -1691,6 +1697,10 @@
 | 2010 | ENS | MP-PC | Italien (LV1) | [md](2010/ens/ens_mp-pc_italien-lv1_2010/brut.md) | [md](2010/ens/ens_mp-pc_italien-lv1_2010/guide.md) |
 | 2010 | ENS | MP-PC | Japonais (LE2) | [md](2010/ens/ens_mp-pc_japonais-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_japonais-le2_2010/guide.md) |
 | 2010 | ENS | MP-PC | Latin (LE2) | [md](2010/ens/ens_mp-pc_latin-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_latin-le2_2010/guide.md) |
+| 2005 | ENS | MP-PC | Mathématiques MPI 2 | [md](2005/ens/ens_mp-pc_mathematiques-mpi-2_2005/brut.md) | [md](2005/ens/ens_mp-pc_mathematiques-mpi-2_2005/guide.md) |
+| 2006 | ENS | MP-PC | Mathématiques MPI 2 | [md](2006/ens/ens_mp-pc_mathematiques-mpi-2_2006/brut.md) | [md](2006/ens/ens_mp-pc_mathematiques-mpi-2_2006/guide.md) |
+| 2007 | ENS | MP-PC | Mathématiques MPI 2 | [md](2007/ens/ens_mp-pc_mathematiques-mpi-2_2007/brut.md) | [md](2007/ens/ens_mp-pc_mathematiques-mpi-2_2007/guide.md) |
+| 2008 | ENS | MP-PC | Mathématiques MPI 2 | [md](2008/ens/ens_mp-pc_mathematiques-mpi-2_2008/brut.md) | [md](2008/ens/ens_mp-pc_mathematiques-mpi-2_2008/guide.md) |
 | 2011 | ENS | MP-PC | Portugais (langue étrangère B) | [md](2011/ens/ens_mp-pc_portugais-langue-etrangere-b_2011/brut.md) | [md](2011/ens/ens_mp-pc_portugais-langue-etrangere-b_2011/guide.md) |
 | 2005 | ENS | MP-PC | Portugais (LE2) | [md](2005/ens/ens_mp-pc_portugais-le2_2005/brut.md) | [md](2005/ens/ens_mp-pc_portugais-le2_2005/guide.md) |
 | 2006 | ENS | MP-PC | Portugais (LE2) | [md](2006/ens/ens_mp-pc_portugais-le2_2006/brut.md) | [md](2006/ens/ens_mp-pc_portugais-le2_2006/guide.md) |
@@ -1744,6 +1754,8 @@
 | 2008 | ENS | MP | Mathématiques MPI 1 | [md](2008/ens/ens_mp_mathematiques-mpi-1_2008/brut.md) | [md](2008/ens/ens_mp_mathematiques-mpi-1_2008/guide.md) |
 | 2009 | ENS | MP | Mathématiques MPI 1 | [md](2009/ens/ens_mp_mathematiques-mpi-1_2009/brut.md) | [md](2009/ens/ens_mp_mathematiques-mpi-1_2009/guide.md) |
 | 2010 | ENS | MP | Mathématiques MPI 1 | [md](2010/ens/ens_mp_mathematiques-mpi-1_2010/brut.md) | [md](2010/ens/ens_mp_mathematiques-mpi-1_2010/guide.md) |
+| 2009 | ENS | MP | Mathématiques MPI 2 | [md](2009/ens/ens_mp_mathematiques-mpi-2_2009/brut.md) | [md](2009/ens/ens_mp_mathematiques-mpi-2_2009/guide.md) |
+| 2010 | ENS | MP | Mathématiques MPI 2 | [md](2010/ens/ens_mp_mathematiques-mpi-2_2010/brut.md) | [md](2010/ens/ens_mp_mathematiques-mpi-2_2010/guide.md) |
 | 2003 | ENS | MP | Mathématiques Paris-Cachan | [md](2003/ens/ens_mp_mathematiques-paris-cachan_2003/brut.md) | [md](2003/ens/ens_mp_mathematiques-paris-cachan_2003/guide.md) |
 | 2004 | ENS | MP | Mathématiques Paris-Cachan | [md](2004/ens/ens_mp_mathematiques-paris-cachan_2004/brut.md) | [md](2004/ens/ens_mp_mathematiques-paris-cachan_2004/guide.md) |
 | 2003 | ENS | MP | Mathématiques Paris-Lyon | [md](2003/ens/ens_mp_mathematiques-paris-lyon_2003/brut.md) | [md](2003/ens/ens_mp_mathematiques-paris-lyon_2003/guide.md) |
