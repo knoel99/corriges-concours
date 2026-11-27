@@ -16,7 +16,21 @@
   },
   "sources": {
     "sujet": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/Ep%20communes/2026_LVA6AU.pdf#page=14",
-    "rapport_jury": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/Ep%20communes/LV_ECRIT_2026_05.10.pdf#page=28"
+    "rapport_jury": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/Ep%20communes/LV_ECRIT_2026_05.10.pdf#page=28",
+    "sha256_sujet": "f4aff4b5f57beec696fa9ae91f8dcac2d16ef0b2b1c30b80655e4be90c59a593",
+    "sha256_rapport_jury": "23a73e191a42c2fcd03b46b4baca6da1089739620013f3ba144814c9a261dbb0",
+    "pages_pdf_sujet_verifiees": [
+      1,
+      14,
+      15,
+      16,
+      17
+    ],
+    "pages_pdf_rapport_verifiees": [
+      1,
+      2,
+      28
+    ]
   },
   "figures": [
     {
@@ -25,7 +39,7 @@
       "question": "Synthèse"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-27",
   "contributions": [
     {
       "phase": "redaction",
@@ -36,6 +50,82 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Synthèse en russe des 4 documents du sujet officiel p. 14–17, barres tous les vingt mots, comptage titre compris, lecture du rapport de l’option, guide et schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "lva_pt_2325",
+      "session": "/root/lva_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "perimetre": "Révision des deux éditions, confrontation des documents et figures au sujet et au rapport publiés, vérification du décompte depuis le titre."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Synthèse"
+    ],
+    "origine_attestation": {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "date": "2026-11-27",
+      "sha256_sujet_controle": "f4aff4b5f57beec696fa9ae91f8dcac2d16ef0b2b1c30b80655e4be90c59a593",
+      "perimetre": "Révision des deux éditions, confrontation des documents et figures au sujet et au rapport publiés, vérification du décompte depuis le titre.",
+      "documents_verifies": [
+        {
+          "numero": 1,
+          "pages": [
+            15
+          ],
+          "observation": "Аргументы и Факты, nº 31, 30/07/2025. Infographie, panier filles 6 850 roubles (+8 %), garçons 7 050 (+6 %), fournitures 985. Moyenne annuelle +7 %."
+        },
+        {
+          "numero": 2,
+          "pages": [
+            16
+          ],
+          "observation": "Антонина Лопаева, Аргументы и Факты, nº 31, 30/07/2025. Le budget annoncé suppose les remises maximales. Besoins et points de vente varient."
+        },
+        {
+          "numero": 3,
+          "pages": [
+            16
+          ],
+          "observation": "Юлия Борта et Виктор Панин, Аргументы и Факты, nº 33, 14/08/2024. Proposition du 1er août au 1er novembre, coût des compensations et aide ciblée."
+        },
+        {
+          "numero": 4,
+          "pages": [
+            17
+          ],
+          "observation": "Антон Парфеев, АиФ-Москва, 15/08/2024. Conseils de Волкова, achats anticipés, groupés ou d’occasion, économies éventuelles et aides sociales."
+        }
+      ],
+      "decompte": {
+        "titre": "Цена первого сентября и способы облегчить расходы семьи",
+        "langue": "russe",
+        "minimum": 360,
+        "maximum": 440,
+        "mots": 378,
+        "titre_et_paragraphes": [
+          8,
+          47,
+          82,
+          82,
+          81,
+          78
+        ],
+        "barres": 18,
+        "total_imprime": "Количество слов с учётом заголовка — 378.",
+        "groupes_source_introduction": [
+          "Аргументы и факты"
+        ],
+        "convention": "Titre inclus. Dans l’introduction, chaque source et chaque date comptent pour un mot, ainsi que le renvoi compact à un document. Unités séparées par des blancs pour le reste de la copie. Chaque vingtième mot est suivi d’une barre. Total et FIN hors compte."
+      }
+    }
+  }
 }
