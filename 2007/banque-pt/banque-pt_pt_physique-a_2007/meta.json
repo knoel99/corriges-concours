@@ -1,0 +1,166 @@
+{
+  "slug": "banque-pt_pt_physique-a_2007",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique A",
+    "annee": 2007
+  },
+  "redaction": "Corrigés non officiels rédigés et vérifiés par IA.",
+  "questions": 17,
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2007/phys_a_2007.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2007/rapport_phys_a_ecrit_2007.pdf",
+    "index_sujets": "https://www.banquept.fr/article62.html",
+    "livret": "https://www.banquept.fr/documents/livret/2007/Livret_Rose_2007_1_2.pdf#page=12",
+    "index_rapports": "https://www.banquept.fr/article55.html",
+    "sha256_sujet": "7fd53af94311b9b30039795b119600da0341217e61293623314eda3601cdfb1d",
+    "pages_sujet": 12,
+    "sha256_rapport_jury": "af74acbb33b21d4364f7c73b25f2b6b8524c75fe89cae86a1c9b076bb90be151",
+    "pages_rapport_jury": 3,
+    "sha256_livret": "92b0f9429df696ee5c62424af4ce682b8ad1b2aafa7d90e2e50e620b545274d0",
+    "pages_livret": 20,
+    "coefficients_admissibilite": {
+      "École polytechnique": 6,
+      "ENS Cachan": 3
+    }
+  },
+  "figures": [
+    {
+      "question": "1.1.1",
+      "fichier": "figures/cylindre.svg",
+      "legende": "Cylindre chargé positivement. Le champ et le potentiel se raccordent à la surface."
+    },
+    {
+      "question": "2.2.1",
+      "fichier": "figures/diffraction.svg",
+      "legende": "Tracés demandés en 2.1.3.d, 2.1.4, 2.1.6 et 2.2.1.b. La courbe des trois fentes agrandit une fenêtre de quatre millimètres."
+    },
+    {
+      "question": "3.3",
+      "fichier": "figures/chute.svg",
+      "legende": "Chute de la spire sur les treize secondes demandées et agrandissement autour de dix secondes."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1.1",
+      "1.1.2",
+      "1.2.1",
+      "1.2.2",
+      "1.2.3",
+      "1.3.1–3.3",
+      "1.3.4–3.6",
+      "2.1.1–1.2",
+      "2.1.3",
+      "2.1.4",
+      "2.1.5",
+      "2.1.6",
+      "2.2.1",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": "1.1.1",
+        "page_sujet": 3
+      },
+      {
+        "question": "1.1.2",
+        "page_sujet": 3
+      },
+      {
+        "question": "1.2.1",
+        "page_sujet": 3
+      },
+      {
+        "question": "1.2.2",
+        "page_sujet": 3
+      },
+      {
+        "question": "1.2.3",
+        "page_sujet": 4
+      },
+      {
+        "question": "1.3.1–3.3",
+        "page_sujet": 4
+      },
+      {
+        "question": "1.3.4–3.6",
+        "page_sujet": 5
+      },
+      {
+        "question": "2.1.1–1.2",
+        "page_sujet": 6
+      },
+      {
+        "question": "2.1.3",
+        "page_sujet": 6
+      },
+      {
+        "question": "2.1.4",
+        "page_sujet": 6
+      },
+      {
+        "question": "2.1.5",
+        "page_sujet": 7
+      },
+      {
+        "question": "2.1.6",
+        "page_sujet": 7
+      },
+      {
+        "question": "2.2.1",
+        "page_sujet": 7
+      },
+      {
+        "question": "3.1",
+        "page_sujet": 8
+      },
+      {
+        "question": "3.2",
+        "page_sujet": 9
+      },
+      {
+        "question": "3.3",
+        "page_sujet": 9
+      },
+      {
+        "question": "3.4",
+        "page_sujet": 9
+      }
+    ],
+    "precision": "Trois problèmes, toutes les lettres des pages 2 à 9. Le PDF officiel comporte douze pages physiques, dont les pages 10 à 12 blanches."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modifications": true,
+      "perimetre": "Les trois problèmes passent du champ local à une grandeur mesurable : puissance traversant un câble, intensité diffractée dans le plan focal et ralentissement d’une spire."
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modifications": true,
+      "perimetre": "Relecture des pages 2 à 9, vérification des trois pages blanches finales et lecture du rapport. Recalcul des 13 longueurs d’onde éteintes et du signe de translation par le prisme. Vérification indépendante des constantes des deux régimes de chute et du décrément 5,34. Rappel du contrôle de signe par la loi de Lenz ajouté."
+    }
+  ]
+}
