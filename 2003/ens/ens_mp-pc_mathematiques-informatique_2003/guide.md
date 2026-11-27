@@ -4,7 +4,11 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le tri par piles détermine la longueur d’une sous-suite croissante. L’insertion de Robinson–Schensted conserve en plus l’histoire de la permutation. Les formes de ses tableaux serviront enfin à compter des représentations.
+
+La réussite et les tableaux emploient deux ordres différents. Pour la permutation de sept cartes du sujet, les indices de lecture imposent l’ordre d’une sous-suite. Dans un tableau de Young, les lignes se lisent de gauche à droite et les colonnes de bas en haut. [Fac-similé du sujet](https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-i/session-2003/sujet-ecrit-2003-info_mathematiques_informatique.pdf) · [Rapport du jury](https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-i/session-2003/rapport-2003-i_ecrit_mathematiques_informatique.pdf) · [Sommaire](https://banques-ecoles.fr/cms/filiere-mp/les-annales-et-rapports-des-jurys/)
 
 ## Partie 1 · Mélange et réussite
 
@@ -29,6 +33,8 @@ Chercher deux bornes indépendantes. Dans chaque pile la lecture chronologique d
 La réussite calcule une longueur mais les cartes les plus récentes des colonnes n’ont pas forcément coexisté. Lors de chaque pose, accrocher un pointeur vers la carte qui termine alors la colonne de gauche. À la fin, partir d’une carte de la dernière colonne, suivre les pointeurs jusqu’à la première et retourner ce chemin. Chaque lien remonte à la fois dans le temps et vers une valeur plus petite. Le tableau des dernières valeurs étant trié, la recherche coûte un logarithme par carte.
 
 ![Figure 1 — Colonnes finales pour le paquet sept, deux, trois, six, un, cinq, quatre. La sous-suite deux, trois, quatre utilise les trois colonnes et les indices deux, trois, sept dans le paquet.](figures/reussite.svg)
+
+Dans le jeu imprimé, les dernières cartes du bas forment la liste $1,3,4$. La carte 1 est apparue au rang 5 et la carte 3 au rang 3. Ce triplet ne peut donc pas être renvoyé comme sous-suite. Les prédécesseurs de la carte 4 au rang 7 ramènent à la carte 3 au rang 3, puis à la carte 2 au rang 2.
 
 ### Question 1.6 · Inversions
 
@@ -66,6 +72,8 @@ Pour une forme donnée, les choix de $P$ et $Q$ sont indépendants et chacun a $
 
 ![Figure 2 — À gauche, le tableau des valeurs et, à droite, le tableau des dates d’insertion. Dans les deux tableaux la ligne la plus longue est en bas.](figures/tableaux.svg)
 
+Pour vérifier concrètement l’inversion de la figure, lire les lignes depuis le bas. Les lignes de $P$ valent $(1,3,4),(2,5),(6),(7)$ et celles de $Q$ valent $(1,3,4),(2,6),(5),(7)$. La date 7 désigne la case du sommet. La remontée inverse descend avec $7$, puis $6$, puis $5$, et ressort avec $4$ dans la ligne du bas. Cette dernière carte correspond bien à $\sigma(7)$.
+
 ### Question 2.6 · Involutions
 
 Un couple inchangé quand on échange les tableaux est déterminé par un seul tableau. Compter ces couples donne le nombre d’involutions. Pour compter directement les mêmes permutations, lister les points échangés deux par deux. Diviser par deux pour l’ordre dans chaque couple et par la factorielle du nombre de couples pour leur ordre entre eux. Tous les autres points sont fixes.
@@ -89,3 +97,5 @@ L’action ne fait que réordonner les coordonnées et garde donc leur somme. Po
 Pour trois lettres, les deux caractères et la restriction à l’hyperplan de somme nulle ont les dimensions prescrites par les trois formes possibles. Calculer l’action sur $u=e_1-e_2$, $v=e_2-e_3$. L’échange de 1 et 2 envoie $(u,v)$ sur $(-u,u+v)$, celui de 2 et 3 sur $(u+v,-v)$. Leurs matrices en colonnes sont $A=\left(\begin{smallmatrix}-1&1\\0&1\end{smallmatrix}\right)$ et $B=\left(\begin{smallmatrix}1&0\\1&-1\end{smallmatrix}\right)$. Pour les trois autres éléments non triviaux, les colonnes de $AB$ sont $(0,1),(-1,-1)$, celles de $BA$ sont $(-1,-1),(1,0)$ et celles de $ABA$ sont $(0,-1),(-1,0)$. Avec l’identité, cela donne toutes les matrices.
 
 Pour obtenir $n-1$ tableaux, prendre une rangée de $n-1$ cases et une seule case au-dessus. Le numéro de cette case peut être n’importe quel entier sauf un, puis l’ordre de la rangée du bas est forcé. Pour les petits degrés, compter récursivement les places autorisées du plus grand numéro, toujours un coin extérieur. Dans l’ordre décroissant lexicographique des partitions, on obtient en degré quatre les cinq dimensions $1,3,2,3,1$. En degré cinq, les sept dimensions sont $1,4,5,6,5,4,1$. Pour vérifier, les sommes des carrés donnent respectivement $24$ et $120$.
+
+Un contrôle des dimensions consiste à sommer leurs carrés. Au degré quatre, $1+9+4+9+1=24$. Au degré cinq, $1+16+25+36+25+16+1=120$. Ces deux totaux concordent avec le nombre de permutations établi à la question 2.5.

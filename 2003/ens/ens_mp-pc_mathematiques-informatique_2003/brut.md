@@ -4,7 +4,11 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le mot d’une permutation σ est σ(1),…,σ(n). Le nombre L est la longueur maximale d’une sous-suite strictement croissante, U le coût minimal en déplacements de cartes, K le coût en échanges adjacents. Les tableaux sont dessinés selon la convention française.
+
+La réussite et les tableaux emploient deux ordres différents. Pour la permutation de sept cartes du sujet, les indices de lecture imposent l’ordre d’une sous-suite. Dans un tableau de Young, les lignes se lisent de gauche à droite et les colonnes de bas en haut. [Fac-similé du sujet](https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-i/session-2003/sujet-ecrit-2003-info_mathematiques_informatique.pdf) · [Rapport du jury](https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-i/session-2003/rapport-2003-i_ecrit_mathematiques_informatique.pdf) · [Sommaire](https://banques-ecoles.fr/cms/filiere-mp/les-annales-et-rapports-des-jurys/)
 
 ## Partie 1 · Mélange et réussite
 
@@ -29,6 +33,8 @@ Les cartes du bas des colonnes restent rangées par ordre croissant puisque chaq
 Maintenir les indices des cartes du bas dans un tableau de colonnes. Pour la carte de rang $t$, trouver par dichotomie la première colonne dont le bas est plus grand, ou créer la colonne suivante. Avant remplacement, enregistrer pour $t$ l’indice du bas de la colonne précédente, ou un marqueur vide en première colonne. En fin de lecture, remonter depuis le bas de la dernière colonne par ces indices et inverser la liste. La preuve de 1.4 garantit longueur et croissance. Coût $O(n\log n)$, espace $O(n)$. Pour l’exemple, les valeurs $2,3,4$ sont aux indices $2,3,7$.
 
 ![Figure 1 — Colonnes finales pour le paquet sept, deux, trois, six, un, cinq, quatre. La sous-suite deux, trois, quatre utilise les trois colonnes et les indices deux, trois, sept dans le paquet.](figures/reussite.svg)
+
+Dans le jeu imprimé, les dernières cartes du bas forment la liste $1,3,4$. La carte 1 est apparue au rang 5 et la carte 3 au rang 3. Ce triplet ne peut donc pas être renvoyé comme sous-suite. Les prédécesseurs de la carte 4 au rang 7 ramènent à la carte 3 au rang 3, puis à la carte 2 au rang 2.
 
 ### Question 1.6 · Inversions
 
@@ -74,6 +80,8 @@ $$
 
 ![Figure 2 — À gauche, le tableau des valeurs et, à droite, le tableau des dates d’insertion. Dans les deux tableaux la ligne la plus longue est en bas.](figures/tableaux.svg)
 
+Pour vérifier concrètement l’inversion de la figure, lire les lignes depuis le bas. Les lignes de $P$ valent $(1,3,4),(2,5),(6),(7)$ et celles de $Q$ valent $(1,3,4),(2,6),(5),(7)$. La date 7 désigne la case du sommet. La remontée inverse descend avec $7$, puis $6$, puis $5$, et ressort avec $4$ dans la ligne du bas. Cette dernière carte correspond bien à $\sigma(7)$.
+
 ### Question 2.6 · Involutions
 
 Par le résultat admis de Schützenberger, inverser la permutation échange $P$ et $Q$. La bijection implique $\sigma^2=e$ si et seulement si $P=Q$. Il y a donc $\sum_{\lambda\vdash n}d_\lambda$ involutions. Une involution à $j$ transpositions choisit $2j$ points et les partage en paires non ordonnées. Cela donne $\binom n{2j}(2j)!/(2^j j!)$. Ainsi le même total vaut $\sum_{j=0}^{\lfloor n/2\rfloor}n!/(2^j j!(n-2j)!)$.
@@ -111,3 +119,5 @@ Au degré quatre, les couples (forme, dimension) sont $(4):1$, $(3,1):3$, $(2,2)
 Au degré cinq, on obtient $(5):1$, $(4,1):4$, $(3,2):5$, $(3,1,1):6$, $(2,2,1):5$, $(2,1,1,1):4$ et $(1^5):1$.
 
 Il y a donc cinq et sept classes respectivement.
+
+Un contrôle des dimensions consiste à sommer leurs carrés. Au degré quatre, $1+9+4+9+1=24$. Au degré cinq, $1+16+25+36+25+16+1=120$. Ces deux totaux concordent avec le nombre de permutations établi à la question 2.5.

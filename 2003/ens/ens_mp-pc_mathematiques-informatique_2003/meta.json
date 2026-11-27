@@ -15,7 +15,14 @@
     "identification": "Cahier ULC 320, J. 5017, neuf pages numérisées. Quatre heures, MP groupe I à Paris, Lyon et Cachan, PC groupe I à Paris et Lyon.",
     "sujet_sha256": "014a76dbae40477d52d9e395b6256caa45926501d241bea2bd4cb859f55970b5",
     "rapport": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-i/session-2003/rapport-2003-i_ecrit_mathematiques_informatique.pdf",
-    "rapport_sha256": "c8f8c55b94e4f0b2106dd05236d45c27e529f4acbe8b6cf90fe3f788fdbd7d78"
+    "rapport_sha256": "c8f8c55b94e4f0b2106dd05236d45c27e529f4acbe8b6cf90fe3f788fdbd7d78",
+    "sha256_sujet": "014a76dbae40477d52d9e395b6256caa45926501d241bea2bd4cb859f55970b5",
+    "pages_sujet": 9,
+    "sha256_rapport_jury": "c8f8c55b94e4f0b2106dd05236d45c27e529f4acbe8b6cf90fe3f788fdbd7d78",
+    "pages_rapport_jury": 6,
+    "sha256_index": "ed9b5a7b67f27760109973fe977a85ab08277af30bb57f8d319badb440e83e99",
+    "index": "https://banques-ecoles.fr/cms/filiere-mp/les-annales-et-rapports-des-jurys/",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-i/session-2003/rapport-2003-i_ecrit_mathematiques_informatique.pdf"
   },
   "figures": [
     {
@@ -40,6 +47,150 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Dix-sept questions, permutation en sept cartes, trace de la réussite et tableaux P et Q, preuve bijective de Robinson–Schensted, comptages et matrices explicites de la représentation du groupe symétrique de degré trois."
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "perimetre": "Relecture des 17 questions, de l’exemple imprimé, des figures de tableaux et du rapport de six pages. Reconstruction explicite de la dernière insertion et recalcul des longueurs et de l’inversion de Robinson–Schensted sur les 5 040 permutations de sept lettres. Contrôle des dimensions aux degrés quatre et cinq.",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589"
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4"
+    ],
+    "sections": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": "1.1",
+        "page_pdf_sujet": 2,
+        "section": "1.1"
+      },
+      {
+        "question": "1.2",
+        "page_pdf_sujet": 3,
+        "section": "1.2"
+      },
+      {
+        "question": "1.3",
+        "page_pdf_sujet": 3,
+        "section": "1.3"
+      },
+      {
+        "question": "1.4",
+        "page_pdf_sujet": 3,
+        "section": "1.4"
+      },
+      {
+        "question": "1.5",
+        "page_pdf_sujet": 3,
+        "section": "1.5"
+      },
+      {
+        "question": "1.6",
+        "page_pdf_sujet": 4,
+        "section": "1.6"
+      },
+      {
+        "question": "1.7",
+        "page_pdf_sujet": 4,
+        "section": "1.7"
+      },
+      {
+        "question": "2.1",
+        "page_pdf_sujet": 4,
+        "section": "2.1"
+      },
+      {
+        "question": "2.2",
+        "page_pdf_sujet": 6,
+        "section": "2.2"
+      },
+      {
+        "question": "2.3",
+        "page_pdf_sujet": 7,
+        "section": "2.3"
+      },
+      {
+        "question": "2.4",
+        "page_pdf_sujet": 7,
+        "section": "2.4"
+      },
+      {
+        "question": "2.5",
+        "page_pdf_sujet": 7,
+        "section": "2.5"
+      },
+      {
+        "question": "2.6",
+        "page_pdf_sujet": 8,
+        "section": "2.6"
+      },
+      {
+        "question": "3.1",
+        "page_pdf_sujet": 8,
+        "section": "3.1"
+      },
+      {
+        "question": "3.2",
+        "page_pdf_sujet": 8,
+        "section": "3.2"
+      },
+      {
+        "question": "3.3",
+        "page_pdf_sujet": 9,
+        "section": "3.3"
+      },
+      {
+        "question": "3.4",
+        "page_pdf_sujet": 9,
+        "section": "3.4"
+      }
+    ],
+    "precision": "Les 17 questions des trois parties. La page 5 est consacrée aux définitions et figures de l’insertion dans les tableaux. MP groupe I : Paris, Lyon et Cachan. PC groupe I : Paris et Lyon."
+  }
 }
