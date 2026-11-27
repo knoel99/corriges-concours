@@ -599,6 +599,24 @@
       "modifications": true,
       "phase": "redaction",
       "perimetre": "Résolution des 51 questions et rédaction des indications des deux éditions après lecture du sujet, du cahier et du rapport du jury."
+    },
+    {
+      "agent": "/root/ta_maths_8587",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "session": "banque_pt_si_a_2008",
+      "modifications": true,
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "perimetre": "Pointage des 51 questions et des douze figures sur les six planches imposées, comparaison à la loi de levée et aux deux régimes, contrôle du signe de la perturbation, recalcul du seuil de Routh et de l’avance de phase, vérification des dix codes, des seize cases de chaque carte et des douze mots successifs du chronogramme."
     }
-  ]
+  ],
+  "date_revision": "2026-11-27"
 }

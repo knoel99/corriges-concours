@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 27 novembre 2026
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 27 novembre 2026
+
 Le système de distribution automobile décale la rotation de l’arbre à cames par rapport à la poulie entraînée par le vilebrequin. Le sujet compte quatre parties et 51 questions. Les références au cahier donnent la page physique de son PDF de six planches. Les figures 1 à 12 du cahier sont identifiées par leur numéro imprimé.
 
 [Sujet et cahier officiels](https://www.banquept.fr/documents/2008/si_a_2008.zip) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2008/rapport_si_a_ecrit_2008.pdf)
@@ -70,7 +72,7 @@ $m_{\rm eq}=0,06833$ kg, $I_{\rm eq}=1,335\times10^{-4}$ kg·m² et $m'_{\rm eq}
 
 ### Question 12 — Maximum de la réaction
 
-La force pondérée $VF_I/L$ atteint sa limite supérieure sur les paraboles extérieures pour $h=h_{\max}/4$. Au régime maximal d’utilisation de 7800 tr/min moteur, elle vaut $F_0+kh_{\max}/4+72m'_{\rm eq}h_{\max}\omega_2^2/\pi^2=1800$ N. En assimilant le bras de la normale à $V\simeq\ell=30$ mm, $F_{I,\max}\simeq3,60$ kN. Au régime d’affolement de 8580 tr/min, la même estimation donne 4,14 kN.
+La force pondérée $VF_I/L$ atteint sa limite supérieure sur les paraboles extérieures pour $h=h_{\max}/4$. Au régime maximal d’utilisation de 7800 tr/min moteur, elle vaut $F_0+kh_{\max}/4+72m'_{\rm eq}h_{\max}\omega_2^2/\pi^2=1800$ N. En assimilant le bras de la normale à $V\simeq\ell=30$ mm, $F_{I,\max}\simeq3,60$ kN. Au régime d’affolement de 8580 tr/min, la même estimation donne 4,14 kN. Le feuillet définit $V(\theta_2)$ sans en fournir la fonction numérique. Un maximum exact de l’effort non pondéré exige ce bras de levier ou le profil complet de la came. Les deux nombres précédents utilisent l’approximation explicite $V\simeq\ell$.
 
 ### Question 13 — Graphe des liaisons
 
@@ -186,7 +188,7 @@ Dans la zone utile de commande, $T\simeq K/p$ et $H_{BF}\simeq K/(p+K)$. Pour un
 
 ### Question 36 — Ajout d’une intégration
 
-La boucle ouverte réduite est $K/p^2$. Sa droite passe par $20\log_{10}K=21,6$ dB à 1 rad/s, de pente −40 dB/décade, avec coupure à $\sqrt K=3,46$ rad/s et phase −180°. La marge de phase est nulle et les pôles réduits sont $\pm j\sqrt K$. Avec le modèle complet, au-delà de $\Omega_Q$ la pente tend vers −80 dB/décade et la phase vers −360°. À la première coupure la phase est légèrement inférieure à −180° : le modèle complet est instable. La figure 5 distingue le diagramme asymptotique de la courbe exacte au voisinage de la résonance.
+La boucle ouverte réduite est $K/p^2$. Sa droite passe par $20\log_{10}K=21,6$ dB à 1 rad/s, de pente −40 dB/décade, avec coupure à $\sqrt K=3,46$ rad/s et phase −180°. La marge de phase est nulle et les pôles réduits sont $\pm j\sqrt K$. Avec le modèle complet, au-delà de $\Omega_Q$ la pente tend vers −80 dB/décade et la phase vers −360°. À la première coupure la phase est légèrement inférieure à −180° : le modèle complet est instable. La figure 5 (cahier) distingue le diagramme asymptotique de la courbe exacte au voisinage de la résonance.
 
 ![Figure 5 du cahier. Boucle ouverte après ajout de l’intégrateur](figures/bode.svg)
 
@@ -198,7 +200,7 @@ Avant l’intégration supplémentaire, $\omega_c\simeq12$ rad/s. À cette pulsa
 
 ### Question 38 — Avance de phase et ajustement du gain
 
-Pour $50°$, $a=(1-\sin50°)/(1+\sin50°)=0,1325$. Pour conserver exactement la première coupure à 11,98 rad/s, centrer le réseau par $\tau_{AV}=1/(11,98\sqrt a)=0,229$ s et réajuster le gain global à $K_{AV}=11,98\sqrt a=4,36$. Si l’on conserve impérativement le gain 11,98 de Q37, la coupure après avance se déplace vers $\sqrt{KK_{AV}/\sqrt a}=19,9$ rad/s. Il faut alors $\tau_{AV}=0,138$ s pour y centrer l’avance de 50°. La première solution conserve la dynamique initiale au sens de la pulsation de coupure.
+Pour $50°$, $a=(1-\sin50°)/(1+\sin50°)=0,1325$. Pour conserver exactement la première coupure à 11,98 rad/s, centrer le réseau par $\tau_{AV}=1/(11,98\sqrt a)=0,229$ s et réajuster le gain global à $K_{AV}=11,98\sqrt a=4,36$. Si l’on conserve impérativement le gain 11,98 de Q37, la coupure après avance se déplace vers $\sqrt{KK_{AV}/\sqrt a}=19,9$ rad/s. Il faut alors $\tau_{AV}=0,138$ s pour y centrer l’avance de 50°. La première solution conserve la dynamique initiale au sens de la pulsation de coupure. La phase supplémentaire de l’étage hydraulique à ces pulsations est inférieure à 0,001°. Le gain statique et la pulsation de centrage doivent être contrôlés ensemble.
 
 ## IV — Capteur, multiplexage et démultiplexage
 
@@ -235,7 +237,7 @@ Une solution en sommes de produits est $d=x\bar y t$, $c=xy+\bar x t$, $b=\bar x
 
 ### Question 42 — Chronogrammes avec défaut d’alignement
 
-Pour le premier disque, avant/après le passage de 0 à 1, $xyzt=1000,1010$. Seul $z$ monte. Avec le lecteur aligné, la position change à $t_1$. Avec $x$ décalé, le passage prématuré de la frontière sous $x$ est sans effet électrique : le mot reste 1000 tant que $z$ n’a pas commuté et vaut ensuite 1010. Pour le second disque, les mots des secteurs 0 et 1 sont 1000 et 0010. Bien alignés, $x$ descend et $z$ monte simultanément. Si $x$ anticipe, les trois mots sont 1000, 0000, 0010, soit les positions 0, 9, 1 du second disque.
+Pour le premier disque, avant/après le passage de 0 à 1, $xyzt=1000,1010$. Seul $z$ monte. Avec le lecteur aligné, la position change à $t_1$. Avec $x$ décalé, le passage prématuré de la frontière sous $x$ est sans effet électrique : le mot reste 1000 tant que $z$ n’a pas commuté et vaut ensuite 1010. Pour le second disque, les mots des secteurs 0 et 1 sont 1000 et 0010. Bien alignés, $x$ descend et $z$ monte simultanément. Si $x$ anticipe, les trois mots sont 1000, 0000, 0010, soit les positions 0, 9, 1 du second disque. Dans la figure, les deux repères du cas décalé distinguent le passage géométrique sous $x$ de celui sous les lecteurs alignés. Si $t_1$ désigne strictement le premier changement électrique, il coïncide avec le front de $z$ dans le deuxième cas et aucun front supplémentaire ne se produit dans ce passage.
 
 ![Figure 8 du cahier. Deux disques, deux alignements du lecteur x](figures/alignement.svg)
 
@@ -271,7 +273,7 @@ Les adresses bouclent $00,01,10,11$. Avec une case de durée $T_b$, $f_{a0}=1/(2
 
 ### Question 48 — Résolution et cadence pour un tour
 
-Il faut au moins $360/0,3=1200$ secteurs, donc 11 pistes puisque $2^{10}<1200\le2^{11}$. Pour un disque de 2048 secteurs, la résolution vaut 0,176°. À 4000 tr/min, la fréquence de secteur atteint 136,5 kHz. Toute piste binaire peut au plus changer une fois par secteur, soit une borne de 68,27 kHz en périodes complètes. En binaire naturel les pistes, du poids faible au fort, ont pour fréquences $68,27/2^j$ kHz avec $j=0,\ldots,10$. Un code cyclique à transition unique a un spectre différent : pour le Gray réfléchi la piste la plus rapide vaut 34,13 kHz, les suivantes sont divisées par deux, les deux plus lentes valant 66,67 Hz. Quatre bits adressent les onze pistes. Avec une trame binaire complète de seize cases par secteur, il faut 2,185 M cases/s et $f_{a0}=1,092$ MHz. Ces ordres de grandeur sont accessibles à l’électronique automobile ; la transmission physique doit accepter ce débit.
+Il faut au moins $360/0,3=1200$ secteurs, donc 11 pistes puisque $2^{10}<1200\le2^{11}$. Pour un disque de 2048 secteurs, la résolution vaut 0,176°. À 4000 tr/min, la fréquence de secteur atteint 136,5 kHz. Toute piste binaire peut au plus changer une fois par secteur, soit une borne de 68,27 kHz en périodes complètes. En binaire naturel les pistes, du poids faible au fort, ont pour fréquences $68,27/2^j$ kHz avec $j=0,\ldots,10$. Un code cyclique à transition unique a un spectre différent : pour le Gray réfléchi la piste la plus rapide vaut 34,13 kHz, les suivantes sont divisées par deux, les deux plus lentes valant 66,67 Hz. Quatre bits adressent les onze pistes. Avec une trame binaire complète de seize cases par secteur, il faut 2,185 M cases/s et $f_{a0}=1,092$ MHz. Ces ordres de grandeur sont accessibles à l’électronique automobile ; la transmission physique doit accepter ce débit. Avec exactement 1200 secteurs utiles et seize adresses, les valeurs deviennent 80 k secteurs/s, 1,28 M cases/s et 640 kHz pour $a_0$. Un balayage raccourci aux seules voies utilisées changerait aussi la cadence requise.
 
 ### Question 49 — Table de routage du démultiplexeur
 
