@@ -4,6 +4,10 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+La garde 60.22M porte une durée de quatre heures. L’épreuve est commune aux ENS de Paris, Lyon et Cachan pour les groupes MP/MPI et I de la filière MP. Pour le groupe I des filières MP et PC, elle est aussi proposée en option commune à Paris et Lyon. Une calculatrice de poche autonome, non imprimante et sans document d’accompagnement est autorisée. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-mp/session-2006/sujet-2006-ecrit-mp_mathematiques_2.pdf) · [Rapport du jury](https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/rapport-de-jury-session-2006/rapport-2006-mp_ecrit_mathematiques_2.pdf).
+
 La décomposition dyadique partage les fréquences entre un bloc bas et des bandes d’échelles successives. La décroissance des blocs mesure la régularité de Hölder et, à l’exposant critique, celle des différences secondes.
 
 ## I. Partition des fréquences et noyaux de convolution
@@ -35,6 +39,8 @@ Le produit $\phi_0(x)\phi_0(1-x)$ est lisse et strictement positif exactement po
 
 Un terme non nul impose $3/4<2^{-q}|x|<8/3$. Le rapport des bornes vaut $32/9<4$, donc au plus deux indices consécutifs conviennent. Pour $r>0$, la somme bilatère $D(r)=\sum_{j\in\mathbb Z}\psi(2^jr)$ est positive, car les intervalles dilatés se recouvrent et couvrent $\mathbb R_+^*$. Elle est invariante par doublement. Quand $\psi(r)\ne0$, seuls $j=-1,0,1$ sont possibles, donc la formule du sujet est $\phi(r)=\psi(r)/D(r)$ (et vaut zéro pour $\psi(r)=0$). La somme de ces quotients sur toutes les échelles vaut un. Pour $r\ge3/2$, les échelles manquantes du côté $q<0$ ont $2^{-q}r\ge3>8/3$ ; la somme sur $q\ge0$ vaut donc déjà un.
 
+Pour détailler le recouvrement, les intervalles ouverts $I_j=(2^j\,3/4,2^j\,8/3)$ et $I_{j+1}$ se chevauchent puisque $3/2<8/3$. Leurs extrémités tendent vers zéro à gauche et l’infini à droite. De plus $I_j$ et $I_{j+2}$ sont disjoints puisque $8/3<3$. Cela justifie à la fois la positivité du dénominateur, le nombre maximal de termes et la réindexation de la somme.
+
 ### Question 1.3.b
 
 > [!INDICATION]
@@ -52,6 +58,10 @@ Choisissons $\psi$ comme en 1.2 pour $(3/4,8/3)$. La somme définissant $D$ est 
 #### Solution
 
 En chaque point au plus trois termes interviennent en comptant $\chi$. Cauchy–Schwarz dans $\mathbb R^3$ donne $1=(\chi+\sum_q\phi_q)^2\le3(\chi^2+\sum_q\phi_q^2)$ avec $\phi_q(x)=\phi(2^{-q}|x|)$. Le minorant $1/3$ convient.
+
+Pour la partition construite en 1.3.b, on peut affiner le minorant. Si la coupure basse $\chi(x)$ est non nulle, $|x|<3/2$ et seule la bande $q=0$ peut s’y superposer. Ailleurs il y a au plus deux bandes. En notant $s$ et $1-s$ les deux contributions, la somme des carrés est $s^2+(1-s)^2=1/2+2(s-1/2)^2\ge1/2$. De $|x|=3/4$ à $|x|=3/2$, la première bande passe continûment de zéro à un, donc le minimum $1/2$ est atteint. Le rapport annonce $1/4$ comme minimum ; c’est un minorant valable mais non optimal pour la somme de carrés demandée.
+
+![Dans un recouvrement, les deux fenêtres ont pour valeurs s et 1 − s. Leur somme quadratique atteint son minimum au partage égal.](figures/minimum-deux-fenetres.svg)
 
 ### Question 1.4
 
@@ -165,6 +175,8 @@ Posons $M=\sup_{q\ge-1}2^{q\alpha}\|\Delta_qu\|_\infty$. La série des blocs de 
 
 Notons $m_p=\chi+\sum_{q=0}^{p-1}\phi_q$. Ces fonctions sont bornées uniformément (elles sont positives, de somme totale un) et $m_p\to1$ ponctuellement. Les blocs sont intégrables par leur formule de convolution, et dans $L^2$ car ils sont aussi bornés. Par inversion, $\mathcal F(S_pu)=m_p\mathcal Fu$. Plancherel donne $\|u-S_pu\|_2^2=\int|1-m_p|^2|\mathcal Fu|^2\to0$ par convergence dominée. D’autre part les sommes partielles convergent uniformément par 2.6.1. Sur chaque compact ces deux convergences identifient la limite uniforme à $u$ presque partout et donc partout par continuité. Ainsi $u=S_pu+R_pu$.
 
+Plus explicitement, Young donne $\|\Delta_q u\|_1\le\|h_q\|_1\|u\|_1$ (avec $g$ au rang $-1$). Fubini, avec la convention unitaire, donne $\mathcal F(h_q*u)=\sqrt{2\pi}\,\mathcal Fh_q\,\mathcal Fu=\phi_q\mathcal Fu$. Pour tout segment $J$, la limite uniforme $S$ vérifie alors $\|u-S\|_{L^2(J)}\le\|u-S_pu\|_2+|J|^{1/2}\|S_pu-S\|_\infty\to0$, ce qui explicite l’identification des limites.
+
 ### Question 2.6.3
 
 > [!INDICATION]
@@ -211,6 +223,8 @@ Pour $0<d=|x-y|\le1$, choisissons $p\ge0$ tel que $2^{-p-1}<d\le2^{-p}$. Par 2.6
 #### Solution
 
 Soit $M=\sup_q 2^q\|\Delta_qu\|_\infty$. La reconstruction de 2.6.2 reste valable (on peut d’ailleurs utiliser un exposant $1/2$). Pour une fonction $v$ de classe $C^2$, sa différence seconde centrée est majorée par $|y|^2\|v''\|_\infty$ par double intégration, et par $4\|v\|_\infty$ sans dériver. Cela donne exactement l’inégalité imprimée en séparant $q<p$ et $q\ge p$. Par 2.6.3 les basses dérivées secondes ont une somme $O(1+M2^p)$, et les hautes normes une somme $O(M2^{-p})$. Pour $0<|y|\le1$, le choix $2^{-p-1}<|y|\le2^{-p}$ donne une borne $C|y|$. Pour $|y|>1$, la borne $4\|u\|_\infty$ suffit ; le cas nul est immédiat.
+
+En effet, pour $d=|y|$, la formule exacte est $v(x+y)+v(x-y)-2v(x)=\int_{-d}^d(d-|s|)v''(x+s)\,ds$. Le noyau triangulaire a pour masse $d^2$. En appliquant cette identité aux blocs de rang $-1$ à $p-1$, on obtient la première somme $d^2\sum_{q<p}\|(\Delta_q u)''\|_\infty$ ; la seconde est $4\sum_{q\ge p}\|\Delta_q u\|_\infty$.
 
 ### Question 3.2
 
