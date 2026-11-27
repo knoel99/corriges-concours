@@ -1,0 +1,112 @@
+{
+  "slug": "bel_al_espagnol-commentaire-et-traduction_2020",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Espagnol (commentaire et traduction)",
+    "annee": 2020,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "duree_heures": 6,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "provenance": [
+    "ENS de Lyon",
+    "ENS (Paris)"
+  ],
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2020-09/2020%20Commentaire%20d%27un%20texte%20en%20LVE%20et%20traduction.pdf#page=8",
+    "sha256_sujet": "38b8795aae8773ed81ebd843f2436a126f190f44a6a853ee15d561be36f8c269",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2020-11/ESPAGNOL_2020%20internet.pdf#page=1",
+    "sha256_rapport_jury": "c4065ed9c5291ee79b75e3afb09ff191432b161f18cf35abbf9a2a8ab7c61adf",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2020",
+    "pages_sujet": [
+      1,
+      8,
+      9
+    ],
+    "pages_rapport_commun": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "fin_rubrique_rapport": "La rubrique commune se termine sur la page 8 avant le thème de spécialité."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lva_pt_2325",
+      "session": "/root/lva_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Rédaction du commentaire de l’extrait entier en espagnol et de la version française du segment prescrit. Construction du schéma à trois mouvements."
+    },
+    {
+      "phase": "revision",
+      "agent": "lva_pt_2325",
+      "session": "/root/lva_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Distinction de la date de publication et du cadre politique antérieur à 1976, vérification du récit enchâssé, du changement de locuteur et de la reprise de pibe par le même mot en français."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire en espagnol",
+      "Version française"
+    ],
+    "repere_par_question": [
+      {
+        "question": "Commentaire en espagnol",
+        "pages_pdf": [
+          8,
+          9
+        ],
+        "lignes": [
+          1,
+          78
+        ]
+      },
+      {
+        "question": "Version française",
+        "pages_pdf": [
+          8,
+          9
+        ],
+        "lignes": [
+          32,
+          49
+        ],
+        "premiers_mots": "Los dos se quedaron en silencio",
+        "derniers_mots": "pudiera haber decidido morirse."
+      }
+    ]
+  },
+  "figures": [
+    {
+      "question": "Commentaire en espagnol",
+      "fichier": "figures/lecture.svg",
+      "legende": "Ce que Villa entend et ce qu’il ne peut entendre"
+    }
+  ]
+}
