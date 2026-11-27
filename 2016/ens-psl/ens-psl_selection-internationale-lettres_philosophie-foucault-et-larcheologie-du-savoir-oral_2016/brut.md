@@ -4,6 +4,14 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+## Feuillet de l’oral
+
+Michel Foucault, *L’Archéologie du savoir*, pages 181 à 183 de l’œuvre. Dix coupures sont imprimées entre crochets. Les quatre points numérotés appartiennent au passage. Le passage occupe la page 2 du recueil de cinq pages. Il va de « Entre analyse archéologique et histoire des idées » à « la description systématique d’un discours-objet. ».
+
+Expliquez et commentez librement cet extrait de M. Foucault, L’archéologie du savoir, p. 181-183 :
+
 ## Explication de l’extrait de *L’Archéologie du savoir*
 
 Un médecin du dix-neuvième siècle décrit un patient dans un compte rendu. Nous pouvons chercher dans ces phrases ce que leur auteur pensait en son for intérieur, ou nous demander à quelles conditions ce qu’il écrivait pouvait constituer un énoncé de médecine. Les deux questions peuvent intéresser l’historien, mais elles ne découpent ni le même objet ni les mêmes séries de faits. L’extrait de *L’Archéologie du savoir* donné au concours organise leur séparation en quatre points numérotés. Pourquoi réserver à une description de la seconde sorte le terme d’« archéologie » ? Il faut suivre une transformation qui affecte successivement le statut du discours, sa temporalité, son unité et, finalement, le geste de celui qui en écrit l’histoire.
@@ -30,11 +38,15 @@ L’alternative du texte, « entièrement » ou seulement « en partie », compt
 
 Le dernier point revient sur ce qui pourrait sembler la vocation la plus généreuse de l’interprète, rendre à un énoncé sa signification vivante au moment où son auteur l’a voulu. Foucault refuse de faire de cette coïncidence supposée le terme de sa méthode. Reclasser les productions du médecin dans une série de descriptions analogues, mettre des dates en regard ou séparer les différents usages d’une catégorie transforme effectivement ce qui a été transmis. En ce sens l’archéologie est une « réécriture ». La qualification « réglée » évite le contresens inverse. Un historien qui pourrait faire dire n’importe quoi à ses archives n’aurait découvert aucune régularité discursive. Il doit pouvoir montrer pourquoi il a retenu tel rapprochement et à quel endroit une rupture intervient.
 
+Les deux extrémités de l’extrait se répondent jusque dans la grammaire. Au début, l’archéologie est distinguée d’une histoire des idées. À la fin, c’est un « discours-objet » qu’elle donne à décrire. Le trait d’union permet de préciser la portée du quatrième point. Le discours dont l’historien a fait un objet reste un ensemble de paroles déjà prononcées, avec leur ordre et leurs conditions de circulation. Disposer ces paroles autrement peut rendre une règle visible. Si l’on attribuait cette nouvelle disposition aux auteurs anciens, on perdrait à la fois ce qu’ils ont effectivement écrit et le travail de celui qui les décrit.
+
 On peut soumettre cette méthode à une objection précise. Si elle renonce au fil d’une intention, ne risque-t-elle pas de substituer aux actions des hommes des structures que personne n’aurait jamais expérimentées ? Le texte ne fait pas disparaître les actes de parole. Il cherche ce qui rend leur apparition possible et repérable en dehors de la seule conscience de leurs auteurs. En revanche, répondre à des questions sur la souffrance d’un malade ou les luttes par lesquelles une institution s’est imposée pourra demander une autre échelle d’analyse. Définir une archéologie, ici, c’est rendre à la fois compréhensible et discutable la spécificité de ce qu’elle peut expliquer.
 
 ![Figure 1 — Quatre décisions de l’archéologue](figures/experiences.svg)
 
-## Pour l’entretien
+## Questions d’entraînement
+
+Ces deux relances sont proposées pour travailler le passage. Le feuillet du concours donne la consigne d’explication reproduite plus haut.
 
 **Quelle différence entre document et monument ?** Il s’agit de deux usages possibles du même matériau. Dans le second, on explique comment l’énoncé prend place parmi d’autres au lieu de le traverser pour rejoindre une intention supposée.
 
