@@ -1,0 +1,181 @@
+{
+  "slug": "banque-pt_pt_physique-a_2005",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique A",
+    "annee": 2005
+  },
+  "redaction": "Corrigés non officiels rédigés et vérifiés par IA.",
+  "questions": 20,
+  "sources": {
+    "sujet": "https://www.banquept.fr/IMG/pdf/phys_a_2005.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2005/rapport_phys_a_ecrit_2005.pdf",
+    "index_sujets": "https://www.banquept.fr/article62.html",
+    "livret": "https://www.banquept.fr/documents/livret/2005/Livret_Rose_2005_1_2.pdf#page=12",
+    "index_rapports": "https://www.banquept.fr/article55.html",
+    "sha256_sujet": "e609fd1bc7cc636d57696435b99daaf18bafaee4f8bb9ef8d428eb7c01fe32f5",
+    "pages_sujet": 12,
+    "sha256_rapport_jury": "ee9f8fbc925f57bc1e4504c94647808f4a3796b7b07a93882ded2a67243c8221",
+    "pages_rapport_jury": 2,
+    "sha256_livret": "6cd807006fd8f343e68c410bc382b6f648b5d46fb18d2140680176d4eb4efc8b",
+    "pages_livret": 20,
+    "coefficients_admissibilite": {
+      "École polytechnique": 6,
+      "ENS Cachan": 3
+    }
+  },
+  "figures": [
+    {
+      "question": "1.III.3",
+      "fichier": "figures/reponse.svg",
+      "legende": "Réponse en amplitude et phase. La branche sans amortissement a une asymptote en x = 1."
+    },
+    {
+      "question": "1.III.5",
+      "fichier": "figures/impulsion.svg",
+      "legende": "À aire constante, le triangle se concentre et impose une vitesse initiale au pendule."
+    },
+    {
+      "question": "2.I.2",
+      "fichier": "figures/triangle.svg",
+      "legende": "Le bras et O′B tournent ensemble. Le ressort joint A, point fixe, au point mobile B."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.I.1",
+      "1.I.2",
+      "1.I.3",
+      "1.II.1",
+      "1.II.2",
+      "1.II.3",
+      "1.II.4",
+      "1.III.1",
+      "1.III.2",
+      "1.III.3",
+      "1.III.4",
+      "1.III.5",
+      "1.IV.1",
+      "1.IV.2",
+      "2.I.1",
+      "2.I.2",
+      "2.I.3",
+      "2.II.1",
+      "2.II.2",
+      "2.II.3"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": "1.I.1",
+        "page_sujet": 2
+      },
+      {
+        "question": "1.I.2",
+        "page_sujet": 2
+      },
+      {
+        "question": "1.I.3",
+        "page_sujet": 2
+      },
+      {
+        "question": "1.II.1",
+        "page_sujet": 3
+      },
+      {
+        "question": "1.II.2",
+        "page_sujet": 3
+      },
+      {
+        "question": "1.II.3",
+        "page_sujet": 3
+      },
+      {
+        "question": "1.II.4",
+        "page_sujet": 3
+      },
+      {
+        "question": "1.III.1",
+        "page_sujet": 4
+      },
+      {
+        "question": "1.III.2",
+        "page_sujet": 4
+      },
+      {
+        "question": "1.III.3",
+        "page_sujet": 4
+      },
+      {
+        "question": "1.III.4",
+        "page_sujet": 5
+      },
+      {
+        "question": "1.III.5",
+        "page_sujet": 5
+      },
+      {
+        "question": "1.IV.1",
+        "page_sujet": 7
+      },
+      {
+        "question": "1.IV.2",
+        "page_sujet": 7
+      },
+      {
+        "question": "2.I.1",
+        "page_sujet": 9
+      },
+      {
+        "question": "2.I.2",
+        "page_sujet": 9
+      },
+      {
+        "question": "2.I.3",
+        "page_sujet": 9
+      },
+      {
+        "question": "2.II.1",
+        "page_sujet": 10
+      },
+      {
+        "question": "2.II.2",
+        "page_sujet": 11
+      },
+      {
+        "question": "2.II.3",
+        "page_sujet": 11
+      }
+    ],
+    "precision": "Deux parties, des lois de la dynamique à l’étalonnage du SL210, sur les onze pages numérotées suivant la garde. Graphes demandés, géométrie orientée et neuf figures ou photographies du dossier consultés."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modifications": true,
+      "perimetre": "Un sismomètre enregistre le déplacement de sa masse relativement au châssis. Ce mouvement dépend de la fréquence du sol, du réglage du ressort et de la charge électrique de la bobine."
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modifications": true,
+      "perimetre": "Confrontation des deux sens de l’axe vertical aux figures 3 et 8. Développement de la géométrie isocèle contrôlé par différence centrale, signe du couplage vérifié par dissipation positive, contrôle du milligal et du facteur 3,58. Précision apportée au choix des extrema pour l’étalonnage."
+    }
+  ]
+}
