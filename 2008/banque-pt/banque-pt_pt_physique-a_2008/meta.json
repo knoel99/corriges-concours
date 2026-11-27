@@ -1,0 +1,156 @@
+{
+  "slug": "banque-pt_pt_physique-a_2008",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique A",
+    "annee": 2008
+  },
+  "redaction": "Corrigés non officiels rédigés et vérifiés par IA.",
+  "questions": 14,
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2008/phys_a_2008.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2008/rapport_phys_a_ecrit_2008.pdf",
+    "index_sujets": "https://www.banquept.fr/article62.html",
+    "livret": "https://www.banquept.fr/documents/livret/2008/Livret_PT_2008.pdf#page=12",
+    "index_rapports": "https://www.banquept.fr/article55.html",
+    "sha256_sujet": "0031da110f7ee6dd4fd66612c5f93b75b66550e461a06f66925b3fb3808817ce",
+    "pages_sujet": 16,
+    "sha256_rapport_jury": "9077e7f657f7f209f840660063a35810265de61ad01fe2dededee79c600f2670",
+    "pages_rapport_jury": 2,
+    "sha256_livret": "ad57611750cbdcf6c4e1ba7444c3a7625cceaacff27f2a89763ffca957d67ca8",
+    "pages_livret": 71,
+    "coefficients_admissibilite": {
+      "ENS Cachan": 3,
+      "École polytechnique": 6
+    }
+  },
+  "figures": [
+    {
+      "question": "A.2.1–2.3",
+      "fichier": "figures/champs.svg",
+      "legende": "Profils radiaux demandés en A.1.3 et A.2.3. Les pointillés repèrent les surfaces du câble."
+    },
+    {
+      "question": "B.3.1–3.2",
+      "fichier": "figures/entree.svg",
+      "legende": "Équivalents à l’entrée. La ligne présente sa résistance caractéristique à l’onde incidente ; le générateur éteint présente la même résistance à l’onde de retour."
+    },
+    {
+      "question": "B.3.3–3.5",
+      "fichier": "figures/echelons.svg",
+      "legende": "Échelons pour les trois charges, y compris les tracés superposés en circuit ouvert."
+    },
+    {
+      "question": "B.3.6",
+      "fichier": "figures/echos.svg",
+      "legende": "Relecture des oscillogrammes de la page 12, avec une division horizontale de 100 ns et une impulsion incidente de 5 V."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A.1.1–1.3",
+      "A.1.4–1.8",
+      "A.2.1–2.3",
+      "A.2.4–2.7",
+      "A.3",
+      "B.1.1–1.5",
+      "B.1.6–1.8",
+      "B.2.1–2.3",
+      "B.2.4–2.6",
+      "B.2.7",
+      "B.2.8–2.10",
+      "B.3.1–3.2",
+      "B.3.3–3.5",
+      "B.3.6"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": "A.1.1–1.3",
+        "page_sujet": 3
+      },
+      {
+        "question": "A.1.4–1.8",
+        "page_sujet": 3
+      },
+      {
+        "question": "A.2.1–2.3",
+        "page_sujet": 4
+      },
+      {
+        "question": "A.2.4–2.7",
+        "page_sujet": 4
+      },
+      {
+        "question": "A.3",
+        "page_sujet": 5
+      },
+      {
+        "question": "B.1.1–1.5",
+        "page_sujet": 6
+      },
+      {
+        "question": "B.1.6–1.8",
+        "page_sujet": 6
+      },
+      {
+        "question": "B.2.1–2.3",
+        "page_sujet": 8
+      },
+      {
+        "question": "B.2.4–2.6",
+        "page_sujet": 8
+      },
+      {
+        "question": "B.2.7",
+        "page_sujet": 8
+      },
+      {
+        "question": "B.2.8–2.10",
+        "page_sujet": 9
+      },
+      {
+        "question": "B.3.1–3.2",
+        "page_sujet": 10
+      },
+      {
+        "question": "B.3.3–3.5",
+        "page_sujet": 10
+      },
+      {
+        "question": "B.3.6",
+        "page_sujet": 11
+      }
+    ],
+    "precision": "Deux parties ; pages imprimées 1 à 13 et trois pages blanches terminales du PDF de 16 pages. Deux oscillogrammes lus sur la grille physique de la page 12."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modifications": true,
+      "perimetre": "Les champs d’un câble coaxial déterminent ses paramètres par mètre. Dans une ligne sans pertes, ces paramètres fixent la célérité et l’impédance qui permettent d’interpréter les échos d’une impulsion."
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modifications": true,
+      "perimetre": "Lecture sur le quadrillage original des amplitudes 2,5 divisions et du retard aller-retour de cinq divisions des deux échos. Contrôle numérique de la résistance aller-retour, de la célérité et de l’impédance. Source active et source éteinte différenciées sur le schéma équivalent, avec libellés compatibles avec la police."
+    }
+  ]
+}
