@@ -1,0 +1,301 @@
+{
+  "slug": "banque-pt_pt_langue-vivante-i-a_2004",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Langue vivante I-A",
+    "annee": 2004
+  },
+  "questions": 15,
+  "redaction": "IA (gpt-6.2-astra)",
+  "figures": [
+    {
+      "fichier": "figures/lecture-de.svg",
+      "question": "Allemand",
+      "legende": "Distinguer les dispositifs"
+    },
+    {
+      "fichier": "figures/lecture-en.svg",
+      "question": "Anglais",
+      "legende": "Que sont les nouvelles frontières ?"
+    },
+    {
+      "fichier": "figures/lecture-ar.svg",
+      "question": "Arabe",
+      "legende": "Qui soutient quelle idée ?"
+    },
+    {
+      "fichier": "figures/lecture-es.svg",
+      "question": "Espagnol",
+      "legende": "Que change Dasher ?"
+    },
+    {
+      "fichier": "figures/lecture-it.svg",
+      "question": "Italien",
+      "legende": "Comment juger la sécurité publique ?"
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "agent": "lva_pt_2325",
+      "perimetre": "Cinq versions françaises et dix réponses dans les langues des sujets, sources, commentaires et schémas par langue."
+    }
+  ],
+  "date_revision": "2026-11-27",
+  "sources": {
+    "sujet": "https://www.banquept.fr/IMG/pdf/lv_1a_2004.pdf",
+    "sujet_sha256": "2cf1b16c4b0b880d878eb5dc06a831b29a3073993e1690a14122238e2003c869",
+    "rapport_jury": "https://www.banquept.fr/article153.html",
+    "rapports_par_piece": {
+      "de": {
+        "url": "https://www.banquept.fr/IMG/pdf/rapport_allemand_1_a_2004.pdf",
+        "sha256": "c11164fc4b58b76fba514e3ca1108ce0e664c780e10bdde60b227f45afedcfc7",
+        "pages": 3,
+        "rendus_sha256": [
+          "f79890b67e827b99d4763fbd239e6d5be1cd02778dbbf389ee38251318cea9b7",
+          "4edb211aeeec8a56651afa524da7d3ac84896521aecccda9eb4b822091b76298",
+          "7bbb16474dc15205b5d25b25cf4133e60359ed3888f923a200093880408562f7"
+        ],
+        "index": "https://www.banquept.fr/article153.html",
+        "sha256_index": "12a4a0b5710f8cb8cf7b71a6b75822f8e6036e5a84a391e6b3c003c170846638"
+      },
+      "en": {
+        "url": "https://www.banquept.fr/IMG/pdf/rapport_anglais_1_a_2004.pdf",
+        "sha256": "16ad7ba8aa7bbdfefb9b068ae387e38701ecb0d501ae33800ea14a53418f7ca6",
+        "pages": 2,
+        "rendus_sha256": [
+          "b7e5d9fcdb8772b93e5b9c9d468d5299f847305b2b9812dac98e4cc3c0765019",
+          "1be20ff1311a0e23661ef30d4230c881394137954067da9a030efb321eaedae2"
+        ],
+        "index": "https://www.banquept.fr/article153.html",
+        "sha256_index": "12a4a0b5710f8cb8cf7b71a6b75822f8e6036e5a84a391e6b3c003c170846638"
+      },
+      "ar": {
+        "url": "https://www.banquept.fr/IMG/pdf/rapport_arabe_1_a_2004.pdf",
+        "sha256": "5b640b3d947cb45feca57c9d2dd5e810e4b465e9accbb91c2a278519882f240d",
+        "pages": 2,
+        "rendus_sha256": [
+          "5817695795fb3a3699fb8a32e511bad460920effcf92669a5b14e99179f82362",
+          "1aed54792e25cc10e443b163efeac866c547b7327b1610b672953f1137ba1062"
+        ],
+        "index": "https://www.banquept.fr/article153.html",
+        "sha256_index": "12a4a0b5710f8cb8cf7b71a6b75822f8e6036e5a84a391e6b3c003c170846638"
+      },
+      "es": {
+        "url": "https://www.banquept.fr/IMG/pdf/rapport_espagnol_1_a_2004.pdf",
+        "sha256": "8f4d510bb93f58564ba68611ec25e4e6046dc798f2d6fb0145d20c2c4ddf552f",
+        "pages": 1,
+        "rendus_sha256": [
+          "40698c5344a6438eea5ab3d669f6cecc4c45a1d4b4702ef18457ce1a8ac32f94"
+        ],
+        "index": "https://www.banquept.fr/article153.html",
+        "sha256_index": "12a4a0b5710f8cb8cf7b71a6b75822f8e6036e5a84a391e6b3c003c170846638"
+      },
+      "it": {
+        "url": "https://www.banquept.fr/IMG/pdf/rapport_italien_1_a_2004.pdf",
+        "sha256": "7ec411e1b4bff7c3d65880a669d6e2e6d4cced0bb41cad77bfbae61929c460f1",
+        "pages": 1,
+        "rendus_sha256": [
+          "2bd2ddf991220e096dc0d45612ae46ad735122eda2b22bc0e531083fd5e219e9"
+        ],
+        "index": "https://www.banquept.fr/article153.html",
+        "sha256_index": "12a4a0b5710f8cb8cf7b71a6b75822f8e6036e5a84a391e6b3c003c170846638"
+      }
+    },
+    "livret": "https://www.banquept.fr/documents/livret/2004/Livret_PT_2004.pdf",
+    "livret_sha256": "c8a0ee21667397eb6314cd96223199431e7435b4e73cc997c474bbe22a788548",
+    "index_sujets": "https://www.banquept.fr/article152.html",
+    "index_rapports": "https://www.banquept.fr/article153.html"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Allemand · version",
+      "Allemand · question a",
+      "Allemand · question b",
+      "Anglais · version",
+      "Anglais · question a",
+      "Anglais · question b",
+      "Arabe · version",
+      "Arabe · question a",
+      "Arabe · question b",
+      "Espagnol · version",
+      "Espagnol · question a",
+      "Espagnol · question b",
+      "Italien · version",
+      "Italien · question a",
+      "Italien · question b"
+    ],
+    "origine_attestation": {
+      "phase": "redaction",
+      "date": "2026-11-27",
+      "sha256_sujet_controle": "2cf1b16c4b0b880d878eb5dc06a831b29a3073993e1690a14122238e2003c869",
+      "perimetre": "Cinq versions françaises et dix réponses dans les langues des sujets, sources, commentaires et schémas par langue.",
+      "controles": [
+        {
+          "nom": "Allemand",
+          "titre": "Frühstart mit Schutzengel",
+          "pages_sujet": [
+            2,
+            3
+          ],
+          "pages_rapport": [
+            1,
+            2,
+            3
+          ],
+          "rapport_url": "https://www.banquept.fr/IMG/pdf/rapport_allemand_1_a_2004.pdf",
+          "rapport_sha256": "c11164fc4b58b76fba514e3ca1108ce0e664c780e10bdde60b227f45afedcfc7",
+          "origine": "D’après Stern, référence imprimée « 5/1/2003 ». Texte pages 2 et 3, questions page 3. Le rapport distingue la description du projet allemand et la discussion sur la sécurité routière en France. [Rapport du jury](https://www.banquept.fr/IMG/pdf/rapport_allemand_1_a_2004.pdf)",
+          "bornes_version": "De « Der Experte Matthias Feltz » à la fin de l’article, « für das erste eigene Auto ».",
+          "consignes": [
+            "Das «begleitete Fahren» kennen wir in Frankreich schon. Nach welchen Regeln soll es in Deutschland organisiert werden? Sie können eventuell die zukünftigen deutschen Regeln mit den französischen vergleichen.",
+            "Mehr noch als in Deutschland gibt es in Frankreich zu viele Todesopfer auf den Straßen. Erwähnen Sie die Maßnahmen, die in der letzten Zeit in Frankreich schon getroffen wurden und sagen Sie, was man sonst noch machen könnte, um die Zahl der Unfälle weiter zu senken."
+          ],
+          "compte_mots": [
+            86,
+            206
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-de.svg"
+        },
+        {
+          "nom": "Anglais",
+          "titre": "Old, unsafe and costly",
+          "pages_sujet": [
+            4,
+            5
+          ],
+          "pages_rapport": [
+            1,
+            2
+          ],
+          "rapport_url": "https://www.banquept.fr/IMG/pdf/rapport_anglais_1_a_2004.pdf",
+          "rapport_sha256": "16ad7ba8aa7bbdfefb9b068ae387e38701ecb0d501ae33800ea14a53418f7ca6",
+          "origine": "The Economist, 28 août 2003. Texte pages 4 et 5, questions page 5. Le rapport anglais appartient à la série de cinq rapports de langue I-A de la session. [Rapport du jury](https://www.banquept.fr/IMG/pdf/rapport_anglais_1_a_2004.pdf)",
+          "bornes_version": "Deux passages en gras. De « One day » à « America’s very deep pockets », puis de « Instead, NASA » à la fin de la phrase « the first privately financed craft to take people into space ». S’arrêter avant « In five years’ time ».",
+          "consignes": [
+            "Explain what is meant by «NASA could explore the real frontiers.»",
+            "Should governments and private companies have different research objectives?"
+          ],
+          "compte_mots": [
+            90,
+            219
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-en.svg"
+        },
+        {
+          "nom": "Arabe",
+          "titre": "ثقافة التغيير",
+          "pages_sujet": [
+            8,
+            9
+          ],
+          "pages_rapport": [
+            1,
+            2
+          ],
+          "rapport_url": "https://www.banquept.fr/IMG/pdf/rapport_arabe_1_a_2004.pdf",
+          "rapport_sha256": "5b640b3d947cb45feca57c9d2dd5e810e4b465e9accbb91c2a278519882f240d",
+          "origine": "Al-Watan Al-Arabi, n° 1391 du vendredi 31 octobre 2003. Texte pages 8 et 9, consignes page 9. Le rapport d’arabe de 2004 est distinct. Il insiste notamment sur la construction française des verbes de parole. [Rapport du jury](https://www.banquept.fr/IMG/pdf/rapport_arabe_1_a_2004.pdf)",
+          "bornes_version": "De « كنت أتحدث » à « كما يجب ». Le troisième paragraphe de la page 8 est à traduire jusqu’à l’objection du journaliste, avant la réplique du chercheur.",
+          "consignes": [
+            "ما هي فكرة النص الأساسية؟",
+            "علقوا على رأي الباحث الاقتصادي في الأوضاع الاقتصادية بالعالم العربي."
+          ],
+          "compte_mots": [
+            81,
+            205
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-ar.svg"
+        },
+        {
+          "nom": "Espagnol",
+          "titre": "Tecleando con mucho ojo",
+          "pages_sujet": [
+            6,
+            7
+          ],
+          "pages_rapport": [
+            1
+          ],
+          "rapport_url": "https://www.banquept.fr/IMG/pdf/rapport_espagnol_1_a_2004.pdf",
+          "rapport_sha256": "8f4d510bb93f58564ba68611ec25e4e6046dc798f2d6fb0145d20c2c4ddf552f",
+          "origine": "Cienciadigital.net, septembre 2002. Texte et questions pages 6 et 7. Le rapport d’espagnol est un fichier distinct d’une page. [Rapport du jury](https://www.banquept.fr/IMG/pdf/rapport_espagnol_1_a_2004.pdf)",
+          "bornes_version": "De « El programa analiza la probabilidad » à « prácticamente sin ningún esfuerzo ». Le passage commence page 6 et s’achève page 7.",
+          "consignes": [
+            "Apoyándose en el texto, analice Usted qué revolución supone la creación de «Dasher» en el mundo de la información.",
+            "¿Le parece a Usted acertada la comparación de «Dasher» con la biblioteca infinita o el Libro de Arena de Borges? Justifique su parecer."
+          ],
+          "compte_mots": [
+            91,
+            226
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-es.svg"
+        },
+        {
+          "nom": "Italien",
+          "titre": "Quella scelta tra diritti e sicurezza",
+          "pages_sujet": [
+            10,
+            11
+          ],
+          "pages_rapport": [
+            1
+          ],
+          "rapport_url": "https://www.banquept.fr/IMG/pdf/rapport_italien_1_a_2004.pdf",
+          "rapport_sha256": "7ec411e1b4bff7c3d65880a669d6e2e6d4cced0bb41cad77bfbae61929c460f1",
+          "origine": "D’après La Repubblica. Texte pages 10 et 11, questions page 11. Le fichier de jury séparé, intitulé « ITALIEN IA », indique deux candidats et une moyenne de 9,5 sur 20. [Rapport du jury](https://www.banquept.fr/IMG/pdf/rapport_italien_1_a_2004.pdf)",
+          "bornes_version": "De « Libertà e sicurezza » à « con rinunce alla libertà », pages 10 et 11.",
+          "consignes": [
+            "È conciliabile l’uso della forza ai fini di sicurezza con l’istituzione democratica?",
+            "È davvero indispensabile limitare i diritti dei cittadini per assicurare a tutti la necessaria sicurezza alla quale aspiriamo?"
+          ],
+          "compte_mots": [
+            87,
+            214
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-it.svg"
+        }
+      ]
+    }
+  }
+}
