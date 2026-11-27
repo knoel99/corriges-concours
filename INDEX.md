@@ -211,6 +211,7 @@
 | 2018 | Banque PT | PT | Physique B - Thermodynamique | [md](2018/banque-pt/banque-pt_pt_physique-b---thermodynamique_2018/brut.md) | [md](2018/banque-pt/banque-pt_pt_physique-b---thermodynamique_2018/guide.md) |
 | 2019 | Banque PT | PT | Physique B - Thermodynamique | [md](2019/banque-pt/banque-pt_pt_physique-b---thermodynamique_2019/brut.md) | [md](2019/banque-pt/banque-pt_pt_physique-b---thermodynamique_2019/guide.md) |
 | 2026 | Banque PT | PT | Physique B - thermodynamique | [md](2026/banque-pt/banque-pt_pt_physique-b---thermodynamique_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_physique-b---thermodynamique_2026/guide.md) |
+| 2013 | Banque PT | PT | Sciences industrielles A | [md](2013/banque-pt/banque-pt_pt_sciences-industrielles-a_2013/brut.md) | [md](2013/banque-pt/banque-pt_pt_sciences-industrielles-a_2013/guide.md) |
 | 2015 | Banque PT | PT | Sciences industrielles A | [md](2015/banque-pt/banque-pt_pt_sciences-industrielles-a_2015/brut.md) | [md](2015/banque-pt/banque-pt_pt_sciences-industrielles-a_2015/guide.md) |
 | 2016 | Banque PT | PT | Sciences industrielles A | [md](2016/banque-pt/banque-pt_pt_sciences-industrielles-a_2016/brut.md) | [md](2016/banque-pt/banque-pt_pt_sciences-industrielles-a_2016/guide.md) |
 | 2017 | Banque PT | PT | Sciences industrielles A | [md](2017/banque-pt/banque-pt_pt_sciences-industrielles-a_2017/brut.md) | [md](2017/banque-pt/banque-pt_pt_sciences-industrielles-a_2017/guide.md) |
@@ -224,6 +225,7 @@
 | 2025 | Banque PT | PT | Sciences industrielles A | [md](2025/banque-pt/banque-pt_pt_sciences-industrielles-a_2025/brut.md) | [md](2025/banque-pt/banque-pt_pt_sciences-industrielles-a_2025/guide.md) |
 | 2026 | Banque PT | PT | Sciences industrielles A | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-a_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-a_2026/guide.md) |
 | 2026 | Banque PT | PT | Sciences industrielles B | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-b_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-b_2026/guide.md) |
+| 2016 | Banque PT | PT | Sciences industrielles C | [md](2016/banque-pt/banque-pt_pt_sciences-industrielles-c_2016/brut.md) | [md](2016/banque-pt/banque-pt_pt_sciences-industrielles-c_2016/guide.md) |
 | 2017 | Banque PT | PT | Sciences industrielles C | [md](2017/banque-pt/banque-pt_pt_sciences-industrielles-c_2017/brut.md) | [md](2017/banque-pt/banque-pt_pt_sciences-industrielles-c_2017/guide.md) |
 | 2018 | Banque PT | PT | Sciences industrielles C | [md](2018/banque-pt/banque-pt_pt_sciences-industrielles-c_2018/brut.md) | [md](2018/banque-pt/banque-pt_pt_sciences-industrielles-c_2018/guide.md) |
 | 2019 | Banque PT | PT | Sciences industrielles C | [md](2019/banque-pt/banque-pt_pt_sciences-industrielles-c_2019/brut.md) | [md](2019/banque-pt/banque-pt_pt_sciences-industrielles-c_2019/guide.md) |
@@ -370,6 +372,8 @@
 | 2017 | BEL | B/L | Espagnol | [md](2017/bel/bel_bl_espagnol_2017/brut.md) | [md](2017/bel/bel_bl_espagnol_2017/guide.md) |
 | 2025 | BEL | BL | Français (oral tronc commun 19 juin) | [md](2025/bel/bel_bl_francais-oral-tronc-commun-19-juin_2025/brut.md) | [md](2025/bel/bel_bl_francais-oral-tronc-commun-19-juin_2025/guide.md) |
 | 2017 | BEL | B/L | Italien | [md](2017/bel/bel_bl_italien_2017/brut.md) | [md](2017/bel/bel_bl_italien_2017/guide.md) |
+| 2017 | BEL | BL | Mathématiques | [md](2017/bel/bel_bl_mathematiques_2017/brut.md) | [md](2017/bel/bel_bl_mathematiques_2017/guide.md) |
+| 2025 | BEL | BL | Mathématiques | [md](2025/bel/bel_bl_mathematiques_2025/brut.md) | [md](2025/bel/bel_bl_mathematiques_2025/guide.md) |
 | 2017 | BEL | B/L | Russe | [md](2017/bel/bel_bl_russe_2017/brut.md) | [md](2017/bel/bel_bl_russe_2017/guide.md) |
 | 2017 | BEL | BL | Sciences sociales | [md](2017/bel/bel_bl_sciences-sociales_2017/brut.md) | [md](2017/bel/bel_bl_sciences-sociales_2017/guide.md) |
 | 2011 | ENS de Lyon | PC | Physique-chimie | [md](2011/ens-de-lyon/ens-de-lyon_pc_physique-chimie_2011/brut.md) | [md](2011/ens-de-lyon/ens-de-lyon_pc_physique-chimie_2011/guide.md) |
@@ -1587,6 +1591,7 @@
 | 2026 | ENS | BCPST | Maths | [md](2026/ens/ens_bcpst_maths_2026/brut.md) | [md](2026/ens/ens_bcpst_maths_2026/guide.md) |
 | 2026 | ENS | BCPST | Physique | [md](2026/ens/ens_bcpst_physique_2026/brut.md) | [md](2026/ens/ens_bcpst_physique_2026/guide.md) |
 | 2026 | ENS | BCPST | Sciences de la Terre | [md](2026/ens/ens_bcpst_sciences-de-la-terre_2026/brut.md) | [md](2026/ens/ens_bcpst_sciences-de-la-terre_2026/guide.md) |
+| 1999 | ENS | Groupes M, I et MP | Mathématiques-informatique | [md](1999/ens/ens_groupes-m-i-et-mp_mathematiques-informatique_1999/brut.md) | [md](1999/ens/ens_groupes-m-i-et-mp_mathematiques-informatique_1999/guide.md) |
 | 2011 | ENS | MP-PC | Allemand (langue étrangère B) | [md](2011/ens/ens_mp-pc_allemand-langue-etrangere-b_2011/brut.md) | [md](2011/ens/ens_mp-pc_allemand-langue-etrangere-b_2011/guide.md) |
 | 2005 | ENS | MP-PC | Allemand (LE2) | [md](2005/ens/ens_mp-pc_allemand-le2_2005/brut.md) | [md](2005/ens/ens_mp-pc_allemand-le2_2005/guide.md) |
 | 2006 | ENS | MP-PC | Allemand (LE2) | [md](2006/ens/ens_mp-pc_allemand-le2_2006/brut.md) | [md](2006/ens/ens_mp-pc_allemand-le2_2006/guide.md) |
