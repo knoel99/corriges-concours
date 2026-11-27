@@ -162,6 +162,15 @@
 | 2024 | Banque PT | PT | Français B | [md](2024/banque-pt/banque-pt_pt_francais-b_2024/brut.md) | [md](2024/banque-pt/banque-pt_pt_francais-b_2024/guide.md) |
 | 2004 | Banque PT | PT | Maths I-A | [md](2004/banque-pt/banque-pt_pt_maths-i-a_2004/brut.md) | [md](2004/banque-pt/banque-pt_pt_maths-i-a_2004/guide.md) |
 | 2004 | Banque PT | PT | Maths II-B | [md](2004/banque-pt/banque-pt_pt_maths-ii-b_2004/brut.md) | [md](2004/banque-pt/banque-pt_pt_maths-ii-b_2004/guide.md) |
+| 2005 | Banque PT | PT | Physique A | [md](2005/banque-pt/banque-pt_pt_physique-a_2005/brut.md) | [md](2005/banque-pt/banque-pt_pt_physique-a_2005/guide.md) |
+| 2006 | Banque PT | PT | Physique A | [md](2006/banque-pt/banque-pt_pt_physique-a_2006/brut.md) | [md](2006/banque-pt/banque-pt_pt_physique-a_2006/guide.md) |
+| 2007 | Banque PT | PT | Physique A | [md](2007/banque-pt/banque-pt_pt_physique-a_2007/brut.md) | [md](2007/banque-pt/banque-pt_pt_physique-a_2007/guide.md) |
+| 2008 | Banque PT | PT | Physique A | [md](2008/banque-pt/banque-pt_pt_physique-a_2008/brut.md) | [md](2008/banque-pt/banque-pt_pt_physique-a_2008/guide.md) |
+| 2009 | Banque PT | PT | Physique A | [md](2009/banque-pt/banque-pt_pt_physique-a_2009/brut.md) | [md](2009/banque-pt/banque-pt_pt_physique-a_2009/guide.md) |
+| 2010 | Banque PT | PT | Physique A | [md](2010/banque-pt/banque-pt_pt_physique-a_2010/brut.md) | [md](2010/banque-pt/banque-pt_pt_physique-a_2010/guide.md) |
+| 2011 | Banque PT | PT | Physique A | [md](2011/banque-pt/banque-pt_pt_physique-a_2011/brut.md) | [md](2011/banque-pt/banque-pt_pt_physique-a_2011/guide.md) |
+| 2012 | Banque PT | PT | Physique A | [md](2012/banque-pt/banque-pt_pt_physique-a_2012/brut.md) | [md](2012/banque-pt/banque-pt_pt_physique-a_2012/guide.md) |
+| 2013 | Banque PT | PT | Physique A | [md](2013/banque-pt/banque-pt_pt_physique-a_2013/brut.md) | [md](2013/banque-pt/banque-pt_pt_physique-a_2013/guide.md) |
 | 2014 | Banque PT | PT | Physique A | [md](2014/banque-pt/banque-pt_pt_physique-a_2014/brut.md) | [md](2014/banque-pt/banque-pt_pt_physique-a_2014/guide.md) |
 | 2015 | Banque PT | PT | Physique A | [md](2015/banque-pt/banque-pt_pt_physique-a_2015/brut.md) | [md](2015/banque-pt/banque-pt_pt_physique-a_2015/guide.md) |
 | 2016 | Banque PT | PT | Physique A | [md](2016/banque-pt/banque-pt_pt_physique-a_2016/brut.md) | [md](2016/banque-pt/banque-pt_pt_physique-a_2016/guide.md) |
@@ -211,6 +220,10 @@
 | 2018 | Banque PT | PT | Physique B - Thermodynamique | [md](2018/banque-pt/banque-pt_pt_physique-b---thermodynamique_2018/brut.md) | [md](2018/banque-pt/banque-pt_pt_physique-b---thermodynamique_2018/guide.md) |
 | 2019 | Banque PT | PT | Physique B - Thermodynamique | [md](2019/banque-pt/banque-pt_pt_physique-b---thermodynamique_2019/brut.md) | [md](2019/banque-pt/banque-pt_pt_physique-b---thermodynamique_2019/guide.md) |
 | 2026 | Banque PT | PT | Physique B - thermodynamique | [md](2026/banque-pt/banque-pt_pt_physique-b---thermodynamique_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_physique-b---thermodynamique_2026/guide.md) |
+| 2004 | Banque PT | PT | Physique I-A | [md](2004/banque-pt/banque-pt_pt_physique-i-a_2004/brut.md) | [md](2004/banque-pt/banque-pt_pt_physique-i-a_2004/guide.md) |
+| 2008 | Banque PT | PT | Sciences industrielles A | [md](2008/banque-pt/banque-pt_pt_sciences-industrielles-a_2008/brut.md) | [md](2008/banque-pt/banque-pt_pt_sciences-industrielles-a_2008/guide.md) |
+| 2010 | Banque PT | PT | Sciences industrielles A | [md](2010/banque-pt/banque-pt_pt_sciences-industrielles-a_2010/brut.md) | [md](2010/banque-pt/banque-pt_pt_sciences-industrielles-a_2010/guide.md) |
+| 2012 | Banque PT | PT | Sciences industrielles A | [md](2012/banque-pt/banque-pt_pt_sciences-industrielles-a_2012/brut.md) | [md](2012/banque-pt/banque-pt_pt_sciences-industrielles-a_2012/guide.md) |
 | 2013 | Banque PT | PT | Sciences industrielles A | [md](2013/banque-pt/banque-pt_pt_sciences-industrielles-a_2013/brut.md) | [md](2013/banque-pt/banque-pt_pt_sciences-industrielles-a_2013/guide.md) |
 | 2015 | Banque PT | PT | Sciences industrielles A | [md](2015/banque-pt/banque-pt_pt_sciences-industrielles-a_2015/brut.md) | [md](2015/banque-pt/banque-pt_pt_sciences-industrielles-a_2015/guide.md) |
 | 2016 | Banque PT | PT | Sciences industrielles A | [md](2016/banque-pt/banque-pt_pt_sciences-industrielles-a_2016/brut.md) | [md](2016/banque-pt/banque-pt_pt_sciences-industrielles-a_2016/guide.md) |
@@ -225,6 +238,7 @@
 | 2025 | Banque PT | PT | Sciences industrielles A | [md](2025/banque-pt/banque-pt_pt_sciences-industrielles-a_2025/brut.md) | [md](2025/banque-pt/banque-pt_pt_sciences-industrielles-a_2025/guide.md) |
 | 2026 | Banque PT | PT | Sciences industrielles A | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-a_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-a_2026/guide.md) |
 | 2026 | Banque PT | PT | Sciences industrielles B | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-b_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-b_2026/guide.md) |
+| 2015 | Banque PT | PT | Sciences industrielles C | [md](2015/banque-pt/banque-pt_pt_sciences-industrielles-c_2015/brut.md) | [md](2015/banque-pt/banque-pt_pt_sciences-industrielles-c_2015/guide.md) |
 | 2016 | Banque PT | PT | Sciences industrielles C | [md](2016/banque-pt/banque-pt_pt_sciences-industrielles-c_2016/brut.md) | [md](2016/banque-pt/banque-pt_pt_sciences-industrielles-c_2016/guide.md) |
 | 2017 | Banque PT | PT | Sciences industrielles C | [md](2017/banque-pt/banque-pt_pt_sciences-industrielles-c_2017/brut.md) | [md](2017/banque-pt/banque-pt_pt_sciences-industrielles-c_2017/guide.md) |
 | 2018 | Banque PT | PT | Sciences industrielles C | [md](2018/banque-pt/banque-pt_pt_sciences-industrielles-c_2018/brut.md) | [md](2018/banque-pt/banque-pt_pt_sciences-industrielles-c_2018/guide.md) |
@@ -332,6 +346,9 @@
 | 2026 | BEL | AL | Anglais (oral tronc commun 20 juin) | [md](2026/bel/bel_al_anglais-oral-tronc-commun-20-juin_2026/brut.md) | [md](2026/bel/bel_al_anglais-oral-tronc-commun-20-juin_2026/guide.md) |
 | 2026 | BEL | AL | Anglais (oral tronc commun 22 juin) | [md](2026/bel/bel_al_anglais-oral-tronc-commun-22-juin_2026/brut.md) | [md](2026/bel/bel_al_anglais-oral-tronc-commun-22-juin_2026/guide.md) |
 | 2026 | BEL | AL | Anglais (oral tronc commun 23 juin) | [md](2026/bel/bel_al_anglais-oral-tronc-commun-23-juin_2026/brut.md) | [md](2026/bel/bel_al_anglais-oral-tronc-commun-23-juin_2026/guide.md) |
+| 2018 | BEL | AL | Anglais (thème Lyon) | [md](2018/bel/bel_al_anglais-theme-lyon_2018/brut.md) | [md](2018/bel/bel_al_anglais-theme-lyon_2018/guide.md) |
+| 2020 | BEL | AL | Anglais (thème Lyon) | [md](2020/bel/bel_al_anglais-theme-lyon_2020/brut.md) | [md](2020/bel/bel_al_anglais-theme-lyon_2020/guide.md) |
+| 2021 | BEL | AL | Anglais (thème Lyon) | [md](2021/bel/bel_al_anglais-theme-lyon_2021/brut.md) | [md](2021/bel/bel_al_anglais-theme-lyon_2021/guide.md) |
 | 2023 | BEL | AL | Anglais (thème Lyon) | [md](2023/bel/bel_al_anglais-theme-lyon_2023/brut.md) | [md](2023/bel/bel_al_anglais-theme-lyon_2023/guide.md) |
 | 2024 | BEL | AL | Anglais (thème Lyon) | [md](2024/bel/bel_al_anglais-theme-lyon_2024/brut.md) | [md](2024/bel/bel_al_anglais-theme-lyon_2024/guide.md) |
 | 2025 | BEL | AL | Anglais (thème Lyon) | [md](2025/bel/bel_al_anglais-theme-lyon_2025/brut.md) | [md](2025/bel/bel_al_anglais-theme-lyon_2025/guide.md) |
@@ -357,6 +374,9 @@
 | 2026 | BEL | AL | Commentaire littéraire (Ulm) | [md](2026/bel/bel_al_commentaire-litteraire-ulm_2026/brut.md) | [md](2026/bel/bel_al_commentaire-litteraire-ulm_2026/guide.md) |
 | 2026 | BEL | AL | Commentaire philosophique (Ulm) | [md](2026/bel/bel_al_commentaire-philosophique-ulm_2026/brut.md) | [md](2026/bel/bel_al_commentaire-philosophique-ulm_2026/guide.md) |
 | 2024 | Agro-Véto | BCPST | Anglais | [md](2024/agro-veto/agro-veto_bcpst_anglais_2024/brut.md) | [md](2024/agro-veto/agro-veto_bcpst_anglais_2024/guide.md) |
+| 2018 | BEL | AL | Espagnol (commentaire et traduction) | [md](2018/bel/bel_al_espagnol-commentaire-et-traduction_2018/brut.md) | [md](2018/bel/bel_al_espagnol-commentaire-et-traduction_2018/guide.md) |
+| 2020 | BEL | AL | Espagnol (commentaire et traduction) | [md](2020/bel/bel_al_espagnol-commentaire-et-traduction_2020/brut.md) | [md](2020/bel/bel_al_espagnol-commentaire-et-traduction_2020/guide.md) |
+| 2021 | BEL | AL | Espagnol (commentaire et traduction) | [md](2021/bel/bel_al_espagnol-commentaire-et-traduction_2021/brut.md) | [md](2021/bel/bel_al_espagnol-commentaire-et-traduction_2021/guide.md) |
 | 2023 | BEL | AL | Étude de texte français (Lyon) | [md](2023/bel/bel_al_etude-de-texte-francais-lyon_2023/brut.md) | [md](2023/bel/bel_al_etude-de-texte-francais-lyon_2023/guide.md) |
 | 2024 | BEL | AL | Étude de texte français (Lyon) | [md](2024/bel/bel_al_etude-de-texte-francais-lyon_2024/brut.md) | [md](2024/bel/bel_al_etude-de-texte-francais-lyon_2024/guide.md) |
 | 2025 | BEL | AL | Étude de texte français (Lyon) | [md](2025/bel/bel_al_etude-de-texte-francais-lyon_2025/brut.md) | [md](2025/bel/bel_al_etude-de-texte-francais-lyon_2025/guide.md) |
