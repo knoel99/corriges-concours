@@ -616,6 +616,23 @@
       "phase": "relecture_corrige",
       "tour": 1,
       "perimetre": "Pointage des 51 questions et des douze figures sur les six planches imposées, comparaison à la loi de levée et aux deux régimes, contrôle du signe de la perturbation, recalcul du seuil de Routh et de l’avance de phase, vérification des dix codes, des seize cases de chaque carte et des douze mots successifs du chronogramme."
+    },
+    {
+      "agent": "/root/ta_maths_8587",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "session": "banque_pt_si_a_2008",
+      "modifications": true,
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "perimetre": "Lecture vectorielle des deux traits de Bode du feuillet à la Q32. Remplacement des couples pulsation-phase-gain calculés par les points effectivement imprimés et signalement du décalage de 6,4 rad/s."
     }
   ],
   "date_revision": "2026-11-27"

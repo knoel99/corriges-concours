@@ -6,6 +6,8 @@
 
 **Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 27 novembre 2026
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 27 novembre 2026
+
 Le système de distribution automobile décale la rotation de l’arbre à cames par rapport à la poulie entraînée par le vilebrequin. Le sujet compte quatre parties et 51 questions. Les références au cahier donnent la page physique de son PDF de six planches. Les figures 1 à 12 du cahier sont identifiées par leur numéro imprimé.
 
 [Sujet et cahier officiels](https://www.banquept.fr/documents/2008/si_a_2008.zip) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2008/rapport_si_a_ecrit_2008.pdf)
@@ -168,7 +170,7 @@ L’équation caractéristique vaut $a_2p^3+0p^2+p+K=0$. Dans le tableau de Rout
 
 ### Question 32 — Lieu de Black autour de la résonance
 
-La boucle ouverte est $T=K/[p(1+2\zeta_Qp/\Omega_Q+p^2/\Omega_Q^2)]$, avec $\Omega_Q=7589,5$ rad/s. Pour $\zeta_Q=10^{-4}$, les couples (phase en degrés, gain en dB) sont environ $(-94,6;-4,0)$ à 7580 rad/s, $(-102,4;+4,6)$ à 7586, $(-180;+17,9)$ à 7589,5, $(-243,7;+10,9)$ à 7591 et $(-266,8;-7,1)$ à 7603. Le tracé orienté de la figure 4 passe au-dessus du point critique près de la résonance.
+La boucle ouverte est $T=K/[p(1+2\zeta_Qp/\Omega_Q+p^2/\Omega_Q^2)]$, avec $\Omega_Q=7589,5$ rad/s. Pour $\zeta_Q=10^{-4}$, sur l’agrandissement imprimé (figure III.5), les couples (phase en degrés, gain en dB) lus pour les pulsations croissantes sont environ $(-94;-4,4)$ à 7586 rad/s, $(-112;+9,3)$ à 7594, $(-180;+18)$ vers 7596, $(-235;+13,1)$ à 7597 et $(-264;-1,5)$ à 7603. Le passage imprimé à −180° est ainsi décalé d’environ 6,4 rad/s vers la droite par rapport à $\Omega_Q$ calculée avec les valeurs littérales. Le tracé orienté de la figure 4 passe au-dessus du point critique près de la résonance.
 
 ![Figure 4 du cahier. Lieu de Black orienté et voisinage de la résonance](figures/black.svg)
 
