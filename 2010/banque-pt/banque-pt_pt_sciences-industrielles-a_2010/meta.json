@@ -811,6 +811,24 @@
       "modifications": true,
       "phase": "redaction",
       "perimetre": "Résolution des 59 questions et rédaction des indications des deux éditions après lecture du sujet, du cahier et du rapport du jury."
+    },
+    {
+      "agent": "/root/ta_maths_8587/tripteor",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "fournisseur": "codex",
+      "session": "banque_pt_si_a_2010",
+      "modifications": true,
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "perimetre": "Contrôle des 59 consignes contre le sujet et les 26 pages numérotées du cahier. Vérification de la contradiction entre l’erratum et les intitulés Q30–33, des signes des torseurs et des deux interprétations du gel angulaire en Q19. Mesure des temps de réponse sur les dessins originaux, vérification indépendante des boucles, des conversions d’unités et des limites de la mesure de précision."
     }
-  ]
+  ],
+  "date_revision": "2026-11-27"
 }

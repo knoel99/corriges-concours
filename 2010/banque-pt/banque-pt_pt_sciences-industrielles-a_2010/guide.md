@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 27 novembre 2026
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 27 novembre 2026
+
 Le centre de fraisage Triptéor comporte trois bras parallèles et un poignet en série. Le sujet contient 31 pages numérotées, suivies d’une page blanche dans le PDF. Les 26 pages numérotées du cahier commencent à la troisième page de son PDF. Les renvois des éditions utilisent les pages des fichiers. Les questions 30 à 33 sont identifiées par leur texte et par le tableau de correspondance de la question 30.
 
 [Sujet et cahier officiels](https://www.banquept.fr/documents/2010/si_a_pt_2010.zip) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2010/rapport_si_a_ecrit_2010.pdf)
@@ -89,7 +91,14 @@ $Y1=\overline{SB1a}\,\overline{SB1b}$. Les contacts de repos ferment chacun un c
 
 #### Solution
 
-Le tableau donne les états après stabilisation dans l’ordre $(KA1,KA2,KAU1,KAU2)$ ; chaque état final devient l’état initial de la phase suivante. Pour KA1 maintenu au travail, la seconde voie fait tomber les deux sorties en phase 2. En phase 4 le circuit de contrôle interdit le redémarrage. Pour KAU1 dont le contact reste au travail, KAU2 ouvre la chaîne d’autorisation en phase 2. Le retour de contrôle de KAU1 interdit le redémarrage en phase 4. La phase 3 est la levée de la demande d’arrêt, sans ordre de réarmement.
+Le tableau donne les états après stabilisation dans l’ordre $(KA1,KA2,KAU1,KAU2)$ ; chaque état final devient l’état initial de la phase suivante. Pour KA1 maintenu au travail, la seconde voie fait tomber les deux sorties en phase 2. En phase 4 le circuit de contrôle interdit le redémarrage. Pour KAU1 dont le contact reste au travail, KAU2 ouvre la chaîne d’autorisation en phase 2. Le retour de contrôle de KAU1 interdit le redémarrage en phase 4. La phase 3 est la levée de la demande d’arrêt, sans ordre de réarmement. Une sortie indiquée à 1 en défaut désigne ici l’état mécanique du contact commandé. Sa bobine peut être privée de courant.
+
+| Phase | Y1 | SA1 | KA1 bloqué : avant → après | KAU1 bloqué : avant → après |
+|---|---:|---:|---|---|
+| 1. Marche | 1 | 0 | 1111 → 1111 | 1111 → 1111 |
+| 2. Arrêt demandé | 0 | 0 | 1111 → 1000 | 1111 → 0010 |
+| 3. Arrêt libéré | 1 | 0 | 1000 → 1000 | 0010 → 0010 |
+| 4. Réarmement demandé | 1 | 1 | 1000 → 1000 | 0010 → 0010 |
 
 ### Question 8 — Autorisation par deux voies
 
@@ -211,7 +220,7 @@ Avec $\lambda_i,\lambda_f$ les deux longueurs, $\overrightarrow{A_{4i}A_{4f}}=\l
 
 #### Solution
 
-Pour la translation guidée le long de $z_0$, la cote transversale de A₄ reste fixe : la vitesse axiale est la projection de la vitesse de A₄ sur le bras. Ainsi $\dot\lambda_{14}=\dot U\cos\theta_{10}$ et $\dot U=\dot\lambda_{14}/\cos\theta_{10}$ ; pour une petite course on évalue le cosinus à l’angle initial.
+Pour la translation guidée le long de $z_0$, la cote transversale de A₄ reste fixe : la vitesse axiale est la projection de la vitesse de A₄ sur le bras. Ainsi $\dot\lambda_{14}=\dot U\cos\theta_{10}$ et $\dot U=\dot\lambda_{14}/\cos\theta_{10}$ ; pour une petite course on évalue le cosinus à l’angle initial. Si l’on gèle littéralement la direction du bras et qu’on projette son seul allongement sur $z_0$, on trouve $\dot U_{\rm proj}=\dot\lambda_{14}\cos\theta_{10}$. Ce mouvement possède une composante transversale. Une direction de bras strictement constante et une translation strictement sur $z_0$ sont incompatibles hors alignement. Mettre simplement $\Delta\theta=0$ dans Q18 ne conserve pas la contrainte transversale.
 
 ### Question 20 — Pas de la vis
 
@@ -247,7 +256,7 @@ Le tiers du poids de plateforme exerce $\boldsymbol F=(m_4/3)g\boldsymbol z_g$. 
 
 #### Solution
 
-Dans le modèle angulaire gelé, l’énergie cinétique des masses translatées et des inerties tournantes est $E_c=J_{\rm ram}\omega^2/2$, avec $J_{\rm ram}=J_{\rm rot}+m_{\rm tr}k^2$. Si B14 seul est compté en translation, $m_{\rm tr}=m_{14}$ ; $J_{\rm rot}$ comprend les inerties de vis et de rotor effectivement retenues, ramenées à la rotation moteur. Les actions intérieures de liaisons parfaites ont une puissance totale nulle. Avec le seul système mécanique de l’axe, $J_{\rm ram}\omega\dot\omega=C_M\omega+\mathcal P_{14}+\mathcal P_4$. En posant $a=\dot U/\dot\lambda_{14}$ selon la convention retenue, on obtient $J_{\rm ram}\dot\omega=C_M+gk(m_{14}\cos\theta_{10}+m_4 a/3)/\sqrt2$.
+Dans le modèle angulaire gelé, l’énergie cinétique des masses translatées et des inerties tournantes est $E_c=J_{\rm ram}\omega^2/2$, avec $J_{\rm ram}=J_{\rm rot}+m_{\rm tr}k^2$. Si B14 seul est compté en translation, $m_{\rm tr}=m_{14}$ ; $J_{\rm rot}$ comprend les inerties de vis et de rotor effectivement retenues, ramenées à la rotation moteur. Les actions intérieures de liaisons parfaites ont une puissance totale nulle. Avec le seul système mécanique de l’axe, $J_{\rm ram}\omega\dot\omega=C_M\omega+\mathcal P_{14}+\mathcal P_4$. En posant $a=\dot U/\dot\lambda_{14}$ selon la convention retenue, on obtient $J_{\rm ram}\dot\omega=C_M+gk(m_{14}\cos\theta_{10}+m_4 a/3)/\sqrt2$. La force prescrite par le sujet sur le bras ne contient que la part de poids de P4. Si l’on incorpore en plus le tiers de la masse de plateforme dans le système isolé pour un modèle dynamique élargi, son inertie ajoutée est $(m_4/3)(ak)^2$. La valeur $0,01$ kg·m² imposée pour la suite provient d’une étude globale.
 
 ## D.3 — Identification de la boucle de couple
 
@@ -284,7 +293,7 @@ L’entrée est appliquée à 0,50 ms, le couple commence à évoluer vers 0,74 
 
 #### Solution
 
-On écrit $e^{-dp}=1/e^{dp}\simeq1/(1+dp)$ pour $|dp|\ll1$. D’où $H_C(p)\simeq0,97/[(1+0,00025p)(1+0,00015p)]$. Le pôle ajouté est $-1/d$.
+On écrit $e^{-dp}=1/e^{dp}\simeq1/(1+dp)$ pour $|dp|\ll1$. D’où $H_C(p)\simeq0,97/[(1+0,00025p)(1+0,00015p)]$. Le pôle ajouté est $-1/d$. Un retard pur est linéaire et invariant dans le temps. Son transfert est non rationnel ; l’opération demandée en construit une approximation rationnelle. Le développement direct $1-dp$ n’aurait aucun pôle supplémentaire.
 
 ### Question 27 — Bode asymptotique du couple
 
@@ -328,7 +337,14 @@ $J_{\rm eq}\dot\Omega+f_{\rm eq}\Omega=C$. À conditions initiales nulles, $\Ome
 
 #### Solution
 
-Dans le sens négatif $B(t)=A(t+T/4)$. Si A monte à $t=0$, B est déjà à 1 et descend à $T/4$, tandis que A descend à $T/2$. Le chronogramme donne deux périodes.
+Dans le sens négatif $B(t)=A(t+T/4)$. Si A monte à $t=0$, B est déjà à 1 et descend à $T/4$, tandis que A descend à $T/2$. Le chronogramme donne deux périodes. L’erratum demande de changer les étiquettes imprimées 30, 31, 32, 33 en 31, 32, 33, 30. Les quatre questions de contenu correspondant aux mêmes cadres sont en réalité 33, 30, 31, 32. Le tableau ci-après donne les deux indications pour retrouver chaque réponse.
+
+| Cadre imprimé | Numéro selon l’erratum | Question du sujet par contenu |
+|---|---|---|
+| p. 16, Q30 | Q31 | Q33. Gain du capteur |
+| p. 16, Q31 | Q32 | Q30. Chronogramme |
+| p. 17, Q32 | Q33 | Q31. Nombre de périodes |
+| p. 17, Q33 | Q30 | Q32. Bascule D |
 
 ![Deux tours de phase en quadrature négative](figures/quadrature.svg)
 
@@ -403,7 +419,7 @@ Après compensation, $G=0,388K_\Omega/[0,004p(1+0,00025p)]$. Avec $K_s=2048/(2\p
 
 #### Solution
 
-Sur le modèle imposé, $2\zeta/\omega_0=3\times10^{-5}/K_\Omega$ et $1/\omega_0^2=8\times10^{-9}/K_\Omega$. En fixant $\zeta=1$, on trouve $K_\Omega=(3\times10^{-5})^2/(4\times8\times10^{-9})=0,028125$, soit **0,03** à deux décimales. Pour les vérifications, conserver la valeur critique avant arrondi.
+Sur le modèle imposé, $2\zeta/\omega_0=3\times10^{-5}/K_\Omega$ et $1/\omega_0^2=8\times10^{-9}/K_\Omega$. En fixant $\zeta=1$, on trouve $K_\Omega=(3\times10^{-5})^2/(4\times8\times10^{-9})=0,028125$, soit **0,03** à deux décimales. Pour les vérifications, conserver la valeur critique avant arrondi. Insérer exactement 0,03 dans le polynôme arrondi donne $\zeta\simeq0,968$. Cette petite différence est due à l’arrondi du réglage affiché.
 
 ### Question 38 — Pulsation naturelle
 
@@ -434,7 +450,7 @@ Pour $\zeta=1$, la réponse réduite est $1-(1+u)e^{-u}$, avec $u=\omega_0t$. La
 
 #### Solution
 
-La graduation verticale du tracé donne un palier voisin de $3,07\times10^{-3}$ rad/s. Le seuil inférieur est donc voisin de $2,92\times10^{-3}$ rad/s. La courbe le franchit vers **1,9 ms** et reste ensuite dans la bande. Cette durée est plus courte que les 2,53 ms du modèle réduit.
+La graduation verticale du tracé donne un palier voisin de $3,07\times10^{-3}$ rad/s. Le seuil inférieur est donc voisin de $2,92\times10^{-3}$ rad/s. La courbe le franchit vers **1,9 ms** et reste ensuite dans la bande. Cette durée est plus courte que les 2,53 ms du modèle réduit. L’annotation « 0,00315 » associée au trait horizontal du document ne coïncide pas exactement avec les graduations. Si on la lit comme palier, 95 % donne $2,99\times10^{-3}$ et une lecture voisine de 2,1 ms. Cette incertitude graphique ne change pas la comparaison à la limite de 3 ms.
 
 ![Lecture du seuil de 95 % sur la simulation complète](figures/vitesse-simulee.svg)
 
@@ -623,4 +639,4 @@ Le déplacement va d’environ −939,8242 à −939,3242 mm, soit 0,5000 mm. Le
 
 #### Solution
 
-Le graphe montre une réponse croissante sans dépassement visible, avec un temps de réponse voisin de 37 ms, compatible avec le nominal de 40 ms et sa tolérance de 20 %. Le modèle stable conserve un gain statique unitaire. Avec l’anticipation filtrée et $aK_{av}=1$, son erreur de rampe est nulle car le gain en basse fréquence du filtre reste 1. Le modèle satisfait donc les tolérances de 0,5 µm en statique et de 10 µm en poursuite.
+Le graphe montre une réponse croissante sans dépassement visible, avec un temps de réponse voisin de 37 ms, compatible avec le nominal de 40 ms et sa tolérance de 20 %. Le modèle stable conserve un gain statique unitaire. Avec l’anticipation filtrée et $aK_{av}=1$, son erreur de rampe est nulle car le gain en basse fréquence du filtre reste 1. Le modèle satisfait donc les tolérances de 0,5 µm en statique et de 10 µm en poursuite. La résolution verticale du feuillet ne permet pas de certifier 0,5 µm sur la machine, et l’essai reproduit est un échelon. Une mesure de l’erreur à l’arrêt et un essai sur rampe seraient nécessaires pour attester expérimentalement ces deux précisions.
