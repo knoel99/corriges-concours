@@ -1,0 +1,213 @@
+{
+  "slug": "bel_al_espagnol-commentaire-et-traduction_2026",
+  "commit_export": "4cf0b3fa2ef83a150f15cdb2f0b393f5fd7f4f01",
+  "arbre_git": "8853c27936dfb8cfb90722fb705d3ad42f291dfd",
+  "archive": "BEL-AL-espagnol-commentaire-et-traduction-2026.zip",
+  "agent": "lva_pt_2325",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/al_lve_commun_commentaire_traduction_2026.pdf#page=10",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Espagnol%202026.pdf#page=2",
+    "sha256_sujet": "a70699ab765553dd9ad914a5027a2cad6faac518819e96aa6f2a4d96e0be27c6",
+    "sha256_rapport_jury": "4d7aad3e9416c16268a6a20e2b3944d0977db759c4a175cbd3d84d93d7da70cb",
+    "pages_sujet_verifiees": [
+      1,
+      10,
+      11
+    ],
+    "pages_rapport_commun": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ]
+  },
+  "exercices": [
+    {
+      "question": "Commentaire en espagnol",
+      "pages_pdf": [
+        10,
+        11
+      ],
+      "lignes": [
+        1,
+        72
+      ]
+    },
+    {
+      "question": "Version française",
+      "pages_pdf": [
+        10
+      ],
+      "lignes": [
+        19,
+        35
+      ],
+      "debut": "La tía Silvia estaba embarazada",
+      "fin": "tendía a suceder lo contrario."
+    }
+  ],
+  "editions": {
+    "brut": {
+      "pages": 3,
+      "blocs_compares": {
+        "commentaire_espagnol": {
+          "pages": [
+            1,
+            2
+          ],
+          "lettres_chiffres": 4543,
+          "mots": 1016,
+          "paragraphes": 6,
+          "empreinte_normalisee": "ae7f7c565aa9efc63661224e1c5c9d1a78ad2d2842e0a77fe594ea79dc1f9460"
+        },
+        "version_francaise": {
+          "pages": [
+            2
+          ],
+          "lettres_chiffres": 1442,
+          "mots": 303,
+          "paragraphes": 1,
+          "empreinte_normalisee": "f10ce6e303aaf2016b97df540caf417b9c477c9a42e9ef427494418571e2482d"
+        }
+      },
+      "signets": [
+        {
+          "titre": "Comentario del fragmento",
+          "page": 1,
+          "ecart_points": 9.0
+        },
+        {
+          "titre": "Version française — lignes 19 à 35",
+          "page": 2,
+          "ecart_points": 7.0
+        }
+      ],
+      "figures": [
+        {
+          "fichier": "figures/disparition.svg",
+          "legende": "Trois façons de rendre la disparition perceptible",
+          "question": "Commentaire",
+          "page": 3,
+          "sha256_svg": "4bbbe9d2b0d1772318d66b3ebe037abc8e34eb677a03eb93511170f818e403f5",
+          "sha256_forme_pdf": "0b7386b7e5c61ce99138bf6dfa59a46e4df5d201f066e74156b380033dc6dbb7"
+        }
+      ],
+      "liens_sources": [
+        "https://www.ens-lyon.fr/sites/default/files/2026-10/Espagnol%202026.pdf#page=2",
+        "https://www.ens.psl.eu/sites/default/files/al_lve_commun_commentaire_traduction_2026.pdf#page=10"
+      ],
+      "signatures_sur_premiere_page": [
+        "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+        "**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+      ],
+      "diagnostic_latex_propre": true,
+      "sha256_markdown": "375892fc42e0a76ad049db871463783274dd53651dd617963b3a6e467b30bd3c",
+      "sha256_pdf": "ec36b9c6c39608a04681f9ff2b2aff537601a52cf986c79643333b7567598a8b"
+    },
+    "guide": {
+      "pages": 4,
+      "blocs_compares": {
+        "commentaire_espagnol": {
+          "pages": [
+            2,
+            3
+          ],
+          "lettres_chiffres": 4543,
+          "mots": 1016,
+          "paragraphes": 6,
+          "empreinte_normalisee": "ae7f7c565aa9efc63661224e1c5c9d1a78ad2d2842e0a77fe594ea79dc1f9460"
+        },
+        "version_francaise": {
+          "pages": [
+            4
+          ],
+          "lettres_chiffres": 1442,
+          "mots": 303,
+          "paragraphes": 1,
+          "empreinte_normalisee": "f10ce6e303aaf2016b97df540caf417b9c477c9a42e9ef427494418571e2482d"
+        }
+      },
+      "signets": [
+        {
+          "titre": "Présentation du sujet",
+          "page": 1,
+          "ecart_points": 6.2
+        },
+        {
+          "titre": "Préparer le commentaire",
+          "page": 1,
+          "ecart_points": 6.7
+        },
+        {
+          "titre": "Rédiger le commentaire en espagnol",
+          "page": 2,
+          "ecart_points": 3.4
+        },
+        {
+          "titre": "Solution",
+          "page": 2,
+          "ecart_points": 5.3
+        },
+        {
+          "titre": "Traduire les lignes 19 à 35",
+          "page": 3,
+          "ecart_points": 7.0
+        },
+        {
+          "titre": "Solution",
+          "page": 4,
+          "ecart_points": 6.5
+        },
+        {
+          "titre": "Bilan",
+          "page": 4,
+          "ecart_points": 7.0
+        }
+      ],
+      "figures": [
+        {
+          "fichier": "figures/disparition.svg",
+          "legende": "Trois façons de rendre la disparition perceptible",
+          "question": "Commentaire",
+          "page": 1,
+          "sha256_svg": "4bbbe9d2b0d1772318d66b3ebe037abc8e34eb677a03eb93511170f818e403f5",
+          "sha256_forme_pdf": "0b7386b7e5c61ce99138bf6dfa59a46e4df5d201f066e74156b380033dc6dbb7"
+        }
+      ],
+      "liens_sources": [
+        "https://www.ens-lyon.fr/sites/default/files/2026-10/Espagnol%202026.pdf#page=2",
+        "https://www.ens.psl.eu/sites/default/files/al_lve_commun_commentaire_traduction_2026.pdf#page=10"
+      ],
+      "signatures_sur_premiere_page": [
+        "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+        "**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+      ],
+      "diagnostic_latex_propre": true,
+      "sha256_markdown": "d77cdd559321aa9501f28bf6e7d85fc138b93a3355316cfbdb0f749fbf3bcb85",
+      "sha256_pdf": "df6f28a21a041d0dd212ad5f1cfcb5b3db2c19ca2272142094f05c55a2321727"
+    }
+  },
+  "sha256_contenus": {
+    "guide.md": "d77cdd559321aa9501f28bf6e7d85fc138b93a3355316cfbdb0f749fbf3bcb85",
+    "brut.md": "375892fc42e0a76ad049db871463783274dd53651dd617963b3a6e467b30bd3c",
+    "meta.json": "beade1b05a9c226bcc51c79e1213d5bb255f513c5709a7385528a1573c1764e2",
+    "journal-revision.json": "38224fe4cdc638eb7d6dd2e5a798b09be69b4b574c3fbd057b5ae7e8db4da79d",
+    "figures/disparition.svg": "4bbbe9d2b0d1772318d66b3ebe037abc8e34eb677a03eb93511170f818e403f5",
+    "brut.pdf": "ec36b9c6c39608a04681f9ff2b2aff537601a52cf986c79643333b7567598a8b",
+    "guide.pdf": "df6f28a21a041d0dd212ad5f1cfcb5b3db2c19ca2272142094f05c55a2321727"
+  },
+  "sha256_archive": "6ec4227e2008fd20a074d8b83fdde9030129264775bff5169d58e787297b1038"
+}
