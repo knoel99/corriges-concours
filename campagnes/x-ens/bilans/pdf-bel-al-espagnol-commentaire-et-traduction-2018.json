@@ -1,0 +1,189 @@
+{
+  "slug": "bel_al_espagnol-commentaire-et-traduction_2018",
+  "commit_export": "ed2f8e7b3bc0765380f37bc154c4050be167704a",
+  "arbre_git": "29bebdc01526d2a6b488c03dacb9c6502faaec12",
+  "archive": "BEL-AL-espagnol-commentaire-et-traduction-2018.zip",
+  "agent": "lva_pt_2325",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2018-10/2018%20commentaire%20et%20traduction%20en%20LVE.pdf#page=10",
+    "sha256_sujet": "7fc20aeb691b830e55ba968bf8ddffeea75d8b969364dfe82fb2483888cfae3e",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-11/Fascicule%20ESPAGNOL_2018.pdf#page=1",
+    "sha256_rapport_jury": "8d5d844acb570fe13fcbf40b578e8d2a3ecbba55c014764080ef0319ac6716c5",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2018",
+    "pages_sujet": [
+      1,
+      10,
+      11
+    ],
+    "pages_rapport_commun": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "fin_rubrique_rapport": "La rubrique commune se termine sur la page 10 avant le thème de spécialité."
+  },
+  "exercices": [
+    {
+      "question": "Commentaire en espagnol",
+      "pages_pdf": [
+        10,
+        11
+      ],
+      "lignes": [
+        1,
+        63
+      ]
+    },
+    {
+      "question": "Version française",
+      "pages_pdf": [
+        10
+      ],
+      "lignes": [
+        1,
+        20
+      ],
+      "premiers_mots": "Una vez por semana",
+      "derniers_mots": "qué felices anuncios traen de la sesión gastronómica!"
+    }
+  ],
+  "editions": {
+    "brut": {
+      "pages": 2,
+      "blocs_compares": {
+        "commentaire_espagnol": {
+          "pages": [
+            1,
+            2
+          ],
+          "lettres_chiffres": 3259,
+          "mots": 684,
+          "paragraphes": 5,
+          "empreinte_normalisee": "d10f26484f635ef70204d6852f341c0160c306dea3ba59becf176d0f85989e08"
+        },
+        "version_francaise": {
+          "pages": [
+            2
+          ],
+          "lettres_chiffres": 1481,
+          "mots": 315,
+          "paragraphes": 3,
+          "empreinte_normalisee": "ca4712acc24db450812d22713135884fbc3015d587f27abb0d6cfc7d1abdba64"
+        }
+      },
+      "signets": [
+        {
+          "titre": "Commentaire en espagnol",
+          "page": 1,
+          "ecart_points": 6.8
+        },
+        {
+          "titre": "Version française",
+          "page": 2,
+          "ecart_points": 9.1
+        }
+      ],
+      "figures": [
+        {
+          "question": "Commentaire en espagnol",
+          "fichier": "figures/lecture.svg",
+          "legende": "De la table au compte en banque",
+          "page": 2,
+          "sha256_svg": "e96209a02183c22e4082e7d79f01ba77ad33ff5baa988a828adb772e7c31c73f",
+          "sha256_forme_pdf": "847baa7a8eadddcf114e1d9ed823c1891089248afb5d11f2132d3ecf85c4f2f9"
+        }
+      ],
+      "liens_sources": [
+        "https://www.ens-lyon.fr/sites/default/files/2018-10/2018%20commentaire%20et%20traduction%20en%20LVE.pdf#page=10",
+        "https://www.ens-lyon.fr/sites/default/files/2018-11/Fascicule%20ESPAGNOL_2018.pdf#page=1"
+      ],
+      "signatures_sur_premiere_page": [
+        "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+        "**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+      ],
+      "diagnostic_latex_propre": true,
+      "sha256_markdown": "7f860b03a8fd3fb7b078b088666c1bdadfdbdc1777819530710ad1932ae0a10a",
+      "sha256_pdf": "fab6c310f88f770ba9626c627c762c37b0f0113f3d96027c86d3b3ae0f1c7244"
+    },
+    "guide": {
+      "pages": 3,
+      "blocs_compares": {
+        "commentaire_espagnol": {
+          "pages": [
+            1,
+            2
+          ],
+          "lettres_chiffres": 3259,
+          "mots": 684,
+          "paragraphes": 5,
+          "empreinte_normalisee": "d10f26484f635ef70204d6852f341c0160c306dea3ba59becf176d0f85989e08"
+        },
+        "version_francaise": {
+          "pages": [
+            2,
+            3
+          ],
+          "lettres_chiffres": 1481,
+          "mots": 315,
+          "paragraphes": 3,
+          "empreinte_normalisee": "ca4712acc24db450812d22713135884fbc3015d587f27abb0d6cfc7d1abdba64"
+        }
+      },
+      "signets": [
+        {
+          "titre": "Préparer la lecture",
+          "page": 1,
+          "ecart_points": 6.8
+        },
+        {
+          "titre": "Commentaire en espagnol",
+          "page": 1,
+          "ecart_points": 9.1
+        },
+        {
+          "titre": "Version française",
+          "page": 2,
+          "ecart_points": 7.0
+        }
+      ],
+      "figures": [
+        {
+          "question": "Commentaire en espagnol",
+          "fichier": "figures/lecture.svg",
+          "legende": "De la table au compte en banque",
+          "page": 1,
+          "sha256_svg": "e96209a02183c22e4082e7d79f01ba77ad33ff5baa988a828adb772e7c31c73f",
+          "sha256_forme_pdf": "847baa7a8eadddcf114e1d9ed823c1891089248afb5d11f2132d3ecf85c4f2f9"
+        }
+      ],
+      "liens_sources": [
+        "https://www.ens-lyon.fr/sites/default/files/2018-10/2018%20commentaire%20et%20traduction%20en%20LVE.pdf#page=10",
+        "https://www.ens-lyon.fr/sites/default/files/2018-11/Fascicule%20ESPAGNOL_2018.pdf#page=1"
+      ],
+      "signatures_sur_premiere_page": [
+        "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+        "**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+      ],
+      "diagnostic_latex_propre": true,
+      "sha256_markdown": "07f185826affb88256a38463b3ed3536b0c86d92134658b96ea7abed32cc3295",
+      "sha256_pdf": "256ccb1a984817f1733bfef21319f2c3cddf4a1825fb9c924e4f069a453dbd34"
+    }
+  },
+  "sha256_contenus": {
+    "guide.md": "07f185826affb88256a38463b3ed3536b0c86d92134658b96ea7abed32cc3295",
+    "brut.md": "7f860b03a8fd3fb7b078b088666c1bdadfdbdc1777819530710ad1932ae0a10a",
+    "meta.json": "59b7c81ed0b3e6a808a10062168f0c95e37487321cf5516cbaa50be89cf9b637",
+    "journal-revision.json": "a21dfe1d2699379fac5b734fcd8d4c0b04168559cf748b404f070b5d2a44741e",
+    "figures/lecture.svg": "e96209a02183c22e4082e7d79f01ba77ad33ff5baa988a828adb772e7c31c73f",
+    "brut.pdf": "fab6c310f88f770ba9626c627c762c37b0f0113f3d96027c86d3b3ae0f1c7244",
+    "guide.pdf": "256ccb1a984817f1733bfef21319f2c3cddf4a1825fb9c924e4f069a453dbd34"
+  },
+  "sha256_archive": "3b8d7e7f33d3b52d68386330c39b14e5a9ff26d0b8450203bc4a2b2ce29770dd"
+}
