@@ -16,11 +16,11 @@ Lire les trois totaux de l’infographie. Les 6 850 et 7 050 roubles concernent 
 
 Les deux documents du 30 juillet 2025 précisent le niveau des prix avec remises. Les deux articles de 2024 distinguent la politique proposée et le conseil financier aux particuliers. Le plafonnement du 1er août au 1er novembre reste une proposition ; Panine préfère l’aide ciblée. La réponse de Volkova conserve son propre statut de conseil, sans garantie générale d’économie.
 
+![Schéma — Que mesure le prix de la rentrée ?](figures/lecture-croisee.svg)
+
 Les deux articles publiés en août 2024 ne décrivent pas le même levier. Le document 3 examine une proposition de plafonnement que Panine juge peu efficace. Dans le document 4, Volkova donne un maximum possible d’économie dans certains cas, pour une préparation étalée sur six mois.
 
 Le titre compte 8 mots. Les paragraphes en comptent respectivement 47, 82, 82, 81 et 78, pour un total de 378. Les repères sont placés après chaque groupe de vingt, titre compris. L’indication du total, puis FIN, suivent la composition.
-
-![Schéma — Que mesure le prix de la rentrée ?](figures/lecture-croisee.svg)
 
 ## Цена первого сентября и способы облегчить расходы семьи
 
