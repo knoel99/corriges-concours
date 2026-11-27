@@ -6,6 +6,10 @@
 
 **Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+La garde de l’Imprimerie nationale, conservée par l’APML, annonce quatre pages numérotées. Dans le PDF, elles occupent les pages 2 à 5. Les pages 6 et 7 sont blanches et la page 8 porte la mention de l’imprimeur. Le maximum brut annoncé est 66,5. Le tableau des coefficients totalise 64,5 et le rapport mentionne également un bonus ou malus de deux points. [Sujet diffusé par l’APML](https://apml-maths.com/wp-content/uploads/2026/05/Sujet-ecrit-ENS-2026.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_mathematiques.pdf).
+
 La composition commune à l’ENS Paris-PSL, l’ENS de Lyon, l’ENS Paris-Saclay, l’ENSAE et l’ENSAI dure quatre heures. La calculatrice est interdite.
 
 ## Problème A — Applications linéaires et projecteurs
@@ -61,6 +65,8 @@ Par associativité, $S^2=BRB^{\mathsf T}$ et $S^3=BR^2B^{\mathsf T}$. Or $R^2=R$
 
 Toute valeur propre réelle $\lambda$ de $S$ vérifie $\lambda^2(\lambda-1)=0$. Dans une base de diagonalisation, qui existe par hypothèse, $S$ est donc représentée par une diagonale de zéros et de uns. Chaque coefficient diagonal vérifie alors $\lambda^2=\lambda$. En revenant à la base canonique, on obtient $S^2=S$.
 
+Concrètement, écrivons $S=VDV^{-1}$. L’identité $S^3=S^2$ entraîne $D^3=D^2$. Comme $D$ est diagonale, les égalités scalaires sur ses coefficients donnent aussitôt $D^2=D$, puis $S^2=S$. Le passage dans une base propre justifie l’abaissement de la puissance même si zéro est valeur propre.
+
 ### Question 5a
 
 $BX=0$ entraîne $RX=0$. Si $RX=0$, alors $\|BX\|^2=X^{\mathsf T}RX=0$ et $BX=0$. D’où $\ker R=\ker B$.
@@ -98,6 +104,10 @@ Pour $i\le r$, $u(e_i)=e_i$ par 8b. Pour $i>r$, le vecteur $e_i$ est orthogonal 
 ### Question 8d
 
 Pour tous $i,j$ on a $\langle C^{\mathsf T}Ce_i,e_j\rangle=\langle c(e_i),c(e_j)\rangle=\langle u(e_i),e_j\rangle$ par 8a et 8c. D’après 7, les deux endomorphismes sont égaux. Dans la base canonique on conclut $U=C^{\mathsf T}C$.
+
+La construction se lit dans les deux espaces. L’adjoint $c^*$ envoie $f_i$ sur $e_i$ pour $i\le r$ et sur zéro pour $i>r$, puisque $\langle c^*(f_i),e_j\rangle=\langle f_i,c(e_j)\rangle$. Ainsi $c^*c$ fixe l’image de $U$ et annule son orthogonal. De même, $cc^*$ fixe l’image de $W$ et annule son orthogonal. Le premier produit est $U$, et le second est $W$.
+
+![En dimension deux et au rang un, c envoie le premier vecteur de départ sur le premier vecteur d’arrivée et annule le second. Son adjoint agit dans le sens inverse sur les premiers vecteurs.](figures/projecteurs-adjoints.svg)
 
 ## Problème B — Sommes et maxima de variables aléatoires
 
@@ -197,6 +207,8 @@ Pour $x\le0$, $F_{M_n}(x)=0$ pour tout $n$. Pour $x>0$, la seconde branche s’a
 
 La fonction limite est croissante sur chaque intervalle et continue en zéro puisque $e^{-1/x}\to0$ quand $x\downarrow0$. Ses limites en $-\infty$ et en $+\infty$ sont respectivement 0 et 1. C’est donc une fonction de répartition. Ici, ces propriétés ont été vérifiées directement sur la limite.
 
+La densité de la limite fournit un contrôle supplémentaire. Sur $x>0$, elle vaut $x^{-2}e^{-1/x}$ et elle est nulle sur $x<0$. En posant $t=1/x$, son intégrale sur la demi-droite positive devient $\int_0^\infty e^{-t}\,dt=1$. Comme $F(0)=F(0^-)=0$, aucune masse ponctuelle ne manque à l’origine.
+
 ## Problème C — Moyennes de la fonction gaussienne
 
 ### Question 17a
@@ -250,6 +262,8 @@ Les bornes de 19a tendent toutes deux vers zéro lorsque $x\to+\infty$, d’où 
 La limite en zéro permet un prolongement continu à cette borne. En $+\infty$, la majoration de 19a par une gaussienne intégrable assure la convergence. L’intégration des deux bornes, avec $v=2x$ pour la borne inférieure et $\int_0^\infty e^{-v^2}\,\mathrm dv=\sqrt\pi/2$, donne
 $$\frac{\sqrt\pi}{4}\leq\int_0^\infty f(x)\,\mathrm dx\leq\frac{\sqrt\pi}{2}.$$
 
+Une vérification donne même la valeur entre les deux bornes. D’après 18b l’intégrande est positive. Le théorème de Tonelli autorise donc l’échange des intégrales en $u$ et en $x$. Pour $u\in[1,2]$, le changement de variable $v=ux$ donne $\int_0^\infty e^{-u^2x^2}\,dx=\sqrt\pi/(2u)$. Il en résulte $\int_0^\infty f(x)\,dx=(\sqrt\pi/2)\ln2$, bien comprise entre $\sqrt\pi/4$ et $\sqrt\pi/2$.
+
 ### Question 20a
 
 Soit $H$ une primitive de $h$. Pour $x\ne0$, $xf(x)=H(2x)-H(x)$. Comme $H$ est dérivable, le quotient par $x\ne0$ rend $f$ dérivable sur $D_f$. En dérivant l’identité, $xf'(x)+f(x)=2e^{-4x^2}-e^{-x^2}$.
@@ -267,6 +281,8 @@ Pour $z\to0$, $e^z=1+z+z^2/2+z^3/6+o(z^3)$. En remplaçant $z$ par $-t^2$, on ob
 ### Question 21b
 
 Pour $x\ne0$, substituer $t=xu$ transforme la quantité à étudier en $\int_1^2u^2\varepsilon(xu)\,\mathrm du$. Sa valeur absolue est au plus $(7/3)\sup_{|v|\leq2|x|}|\varepsilon(v)|$. Ce supremum tend vers zéro par la continuité en zéro et $\varepsilon(0)=0$. Le raisonnement vaut des deux côtés de zéro.
+
+Pour écrire directement la quantification, fixons $\eta>0$. Il existe $\delta>0$ tel que $|\varepsilon(v)|<3\eta/7$ dès que $|v|<\delta$. Si $0<|x|<\delta/2$, cette borne vaut pour tout $v=xu$ avec $1\le u\le2$. Comme $\int_1^2u^2\,du=7/3$, la valeur absolue de l’intégrale transformée est alors inférieure à $\eta$.
 
 ### Question 21c
 
