@@ -20,14 +20,14 @@
       "legende": "Que sont les nouvelles frontières ?"
     },
     {
-      "fichier": "figures/lecture-ar.svg",
-      "question": "Arabe",
-      "legende": "Qui soutient quelle idée ?"
-    },
-    {
       "fichier": "figures/lecture-es.svg",
       "question": "Espagnol",
       "legende": "Que change Dasher ?"
+    },
+    {
+      "fichier": "figures/lecture-ar.svg",
+      "question": "Arabe",
+      "legende": "Qui soutient quelle idée ?"
     },
     {
       "fichier": "figures/lecture-it.svg",
@@ -53,6 +53,16 @@
       "modifications": true,
       "agent": "lva_pt_2325",
       "perimetre": "Cinq versions françaises et dix réponses dans les langues des sujets, sources, commentaires et schémas par langue."
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "agent": "lva_pt_2325",
+      "perimetre": "Comparaison des bornes et du contenu des versions sur le fac-similé, relecture des réponses avec le jury, recomptage et examen des schémas et de l’arabe."
     }
   ],
   "date_revision": "2026-11-27",
@@ -130,12 +140,12 @@
       "Anglais · version",
       "Anglais · question a",
       "Anglais · question b",
-      "Arabe · version",
-      "Arabe · question a",
-      "Arabe · question b",
       "Espagnol · version",
       "Espagnol · question a",
       "Espagnol · question b",
+      "Arabe · version",
+      "Arabe · question a",
+      "Arabe · question b",
       "Italien · version",
       "Italien · question a",
       "Italien · question b"
@@ -155,12 +165,11 @@
           ],
           "pages_rapport": [
             1,
-            2,
-            3
+            2
           ],
           "rapport_url": "https://www.banquept.fr/IMG/pdf/rapport_allemand_1_a_2004.pdf",
           "rapport_sha256": "c11164fc4b58b76fba514e3ca1108ce0e664c780e10bdde60b227f45afedcfc7",
-          "origine": "D’après Stern, référence imprimée « 5/1/2003 ». Texte pages 2 et 3, questions page 3. Le rapport distingue la description du projet allemand et la discussion sur la sécurité routière en France. [Rapport du jury](https://www.banquept.fr/IMG/pdf/rapport_allemand_1_a_2004.pdf)",
+          "origine": "D’après Stern, référence imprimée « 5/1/2003 ». Texte pages 2 et 3, questions page 3. Le rapport porte son commentaire aux pages 1 et 2. Sa troisième page est blanche. Il distingue la description du projet allemand et la discussion sur la sécurité routière en France. [Rapport du jury](https://www.banquept.fr/IMG/pdf/rapport_allemand_1_a_2004.pdf)",
           "bornes_version": "De « Der Experte Matthias Feltz » à la fin de l’article, « für das erste eigene Auto ».",
           "consignes": [
             "Das «begleitete Fahren» kennen wir in Frankreich schon. Nach welchen Regeln soll es in Deutschland organisiert werden? Sie können eventuell die zukünftigen deutschen Regeln mit den französischen vergleichen.",
@@ -208,6 +217,35 @@
           "figure": "figures/lecture-en.svg"
         },
         {
+          "nom": "Espagnol",
+          "titre": "Tecleando con mucho ojo",
+          "pages_sujet": [
+            6,
+            7
+          ],
+          "pages_rapport": [
+            1
+          ],
+          "rapport_url": "https://www.banquept.fr/IMG/pdf/rapport_espagnol_1_a_2004.pdf",
+          "rapport_sha256": "8f4d510bb93f58564ba68611ec25e4e6046dc798f2d6fb0145d20c2c4ddf552f",
+          "origine": "Cienciadigital.net, septembre 2002. Texte et questions pages 6 et 7. Le rapport d’espagnol est un fichier distinct d’une page. [Rapport du jury](https://www.banquept.fr/IMG/pdf/rapport_espagnol_1_a_2004.pdf)",
+          "bornes_version": "De « El programa analiza la probabilidad » à « prácticamente sin ningún esfuerzo ». Le passage commence page 6 et s’achève page 7.",
+          "consignes": [
+            "Apoyándose en el texto, analice Usted qué revolución supone la creación de «Dasher» en el mundo de la información.",
+            "¿Le parece a Usted acertada la comparación de «Dasher» con la biblioteca infinita o el Libro de Arena de Borges? Justifique su parecer."
+          ],
+          "compte_mots": [
+            91,
+            226
+          ],
+          "barème": [
+            10,
+            4,
+            6
+          ],
+          "figure": "figures/lecture-es.svg"
+        },
+        {
           "nom": "Arabe",
           "titre": "ثقافة التغيير",
           "pages_sujet": [
@@ -236,35 +274,6 @@
             6
           ],
           "figure": "figures/lecture-ar.svg"
-        },
-        {
-          "nom": "Espagnol",
-          "titre": "Tecleando con mucho ojo",
-          "pages_sujet": [
-            6,
-            7
-          ],
-          "pages_rapport": [
-            1
-          ],
-          "rapport_url": "https://www.banquept.fr/IMG/pdf/rapport_espagnol_1_a_2004.pdf",
-          "rapport_sha256": "8f4d510bb93f58564ba68611ec25e4e6046dc798f2d6fb0145d20c2c4ddf552f",
-          "origine": "Cienciadigital.net, septembre 2002. Texte et questions pages 6 et 7. Le rapport d’espagnol est un fichier distinct d’une page. [Rapport du jury](https://www.banquept.fr/IMG/pdf/rapport_espagnol_1_a_2004.pdf)",
-          "bornes_version": "De « El programa analiza la probabilidad » à « prácticamente sin ningún esfuerzo ». Le passage commence page 6 et s’achève page 7.",
-          "consignes": [
-            "Apoyándose en el texto, analice Usted qué revolución supone la creación de «Dasher» en el mundo de la información.",
-            "¿Le parece a Usted acertada la comparación de «Dasher» con la biblioteca infinita o el Libro de Arena de Borges? Justifique su parecer."
-          ],
-          "compte_mots": [
-            91,
-            226
-          ],
-          "barème": [
-            10,
-            4,
-            6
-          ],
-          "figure": "figures/lecture-es.svg"
         },
         {
           "nom": "Italien",

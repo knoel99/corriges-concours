@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve dure trois heures. Chaque candidat traite la langue choisie à l’inscription. La version française vaut 10 points. La question a demande 80 à 100 mots pour 4 points. La question b demande 200 à 250 mots pour 6 points.
 
 [Sujet](https://www.banquept.fr/IMG/pdf/lv_1a_2004.pdf) · [Index des rapports](https://www.banquept.fr/article153.html) · [Grille du livret](https://www.banquept.fr/documents/livret/2004/Livret_PT_2004.pdf)
@@ -16,7 +18,7 @@ L’épreuve dure trois heures. Chaque candidat traite la langue choisie à l’
 
 De « Der Experte Matthias Feltz » à la fin de l’article, « für das erste eigene Auto ».
 
-Le spécialiste Matthias Feltz voit en outre de sérieux obstacles juridiques à l’expérimentation en Allemagne. « Si, par exemple, un jeune de 17 ans roule trop vite dans une zone limitée à 30 km/h et provoque des dommages corporels, l’accompagnateur risque lui aussi d’être poursuivi, s’il aurait pu empêcher cet excès de vitesse et ne l’a pas fait. » Selon lui, le projet expérimental ne prévoit jusqu’ici aucune disposition juridique particulière pour des questions aussi importantes.
+Le spécialiste Matthias Feltz voit en outre de sérieux obstacles juridiques à l’expérimentation en Allemagne. « Si, par exemple, un jeune de 17 ans roule trop vite dans une zone limitée à 30 km/h et provoque des dommages corporels, l’accompagnateur risque lui aussi d’être poursuivi, s’il était en mesure d’empêcher cet excès de vitesse et ne l’a pas fait. » Selon lui, le projet expérimental ne prévoit jusqu’ici aucune disposition juridique particulière pour des questions aussi importantes.
 
 Comme l’a montré un sondage, les jeunes de 16 et 17 ans ne sont pas enthousiastes. Environ 40 % d’entre eux trouvent que le permis à 17 ans n’a vraiment rien de séduisant et ne souhaitent pas profiter de cette possibilité, ou tout au plus l’envisagent-ils éventuellement. Lors d’un sondage réalisé par Dekra, près de la moitié des adultes (48 %) ont même rejeté l’expérimentation du permis à 17 ans.
 
@@ -54,7 +56,7 @@ Deux passages en gras. De « One day » à « America’s very deep pockets », 
 
 Un jour, on s’étonnera que la navette spatiale américaine soit restée en service aussi longtemps. Elle le doit en partie aux émotions qu’elle suscite. Après tout, des millions de personnes dans le monde ont regardé en direct à la télévision l’atterrissage impeccable de Columbia sur la base aérienne d’Edwards, en Californie. Pourtant, depuis cette journée ensoleillée de 1981, la navette n’a jamais rempli convenablement la mission pour laquelle elle avait été conçue. Dès l’origine, elle a souffert d’une mauvaise conception. Elle coûte cher, comporte des risques inhérents à sa nature même et, comme l’ont démontré deux accidents mortels, elle n’est pas sûre. Elle ne peut mettre des satellites en orbite à un prix raisonnable et, si elle emmène des hommes dans l’espace, c’est uniquement parce que les États-Unis en ont très largement les moyens.
 
-La NASA devrait plutôt s’attacher à mettre au point des technologies dont l’issue est très incertaine mais qui pourraient transformer le transport spatial courant des personnes et du matériel. Autrement dit, elle devrait mener les travaux de recherche et de développement que les entreprises privées n’entreprendront pas de leur propre initiative. Elle pourrait aussi se spécialiser dans l’exploration au long cours et ouvrir la voie à l’exploration de Mars.
+La NASA devrait plutôt s’attacher à mettre au point des technologies dont la mise au point est très incertaine mais qui pourraient transformer le transport spatial courant des personnes et du matériel. Autrement dit, elle devrait mener les travaux de recherche et de développement que les entreprises privées n’entreprendront pas de leur propre initiative. Elle pourrait aussi se spécialiser dans l’exploration au long cours et ouvrir la voie à l’exploration de Mars.
 
 Car, tandis que la NASA engloutissait des sommes considérables dans la navette, une nouvelle génération d’entrepreneurs et d’entreprises s’efforçait de prendre pied dans le secteur spatial. Certains, comme M. Rutan, rivalisent pour construire le premier engin à financement privé qui emmènera des passagers dans l’espace.
 
@@ -79,6 +81,40 @@ Public funding also creates obligations. If taxpayers help develop a new instrum
 **219 mots**
 
 ![Que sont les nouvelles frontières ?](figures/lecture-en.svg)
+
+## Espagnol
+
+*Tecleando con mucho ojo*
+
+### Version française
+
+De « El programa analiza la probabilidad » à « prácticamente sin ningún esfuerzo ». Le passage commence page 6 et s’achève page 7.
+
+Le programme analyse la probabilité qu’un caractère donné apparaisse après une suite de lettres connue et propose à l’utilisateur les lettres les plus probables, de façon que les plus fréquentes soient les plus faciles à trouver. Il part d’une base de données pour la langue souhaitée, que l’on peut constituer en y introduisant deux textes littéraires représentatifs. En outre, Dasher apprend au fur et à mesure. Il met constamment sa base de données à jour pour s’adapter au vocabulaire propre à chaque utilisateur. Ainsi, plus on s’en sert, plus on peut écrire vite.
+
+L’un des pères de Dasher, David MacKay, est un lecteur de Jorge Luis Borges. Dans La Bibliothèque de Babel, celui-ci évoque une bibliothèque infinie dans laquelle sont conservés, en désordre, les livres qui contiennent toutes les combinaisons possibles des 26 caractères. Ce récit a tant inspiré MacKay qu’il le cite dans la bibliographie de son article paru dans Nature. En réalité, Dasher n’est rien d’autre que la bibliothèque de Borges parfaitement ordonnée en fonction de nos besoins. En effet, à la différence des bibliothécaires du récit, les utilisateurs ne sont pas obligés de passer le reste de leur vie à rechercher péniblement les suites de caractères qui ont un sens pour eux. Celles-ci leur apparaissent sous les yeux presque sans effort.
+
+### Question a
+
+*Apoyándose en el texto, analice Usted qué revolución supone la creación de «Dasher» en el mundo de la información.*
+
+Dasher cambia la forma de introducir información porque permite escribir sin pulsar un teclado. Si el ordenador sigue el movimiento del ojo y propone las letras que probablemente vendrán después, una persona con dificultades para mover las manos puede construir su propio mensaje. El sistema aprende además del vocabulario de cada usuario, de modo que la ayuda se vuelve más pertinente con el uso. El autor ve también una posible aplicación en los teléfonos móviles. La novedad une así una mayor rapidez a la posibilidad de participar en la comunicación escrita.
+
+**91 mots**
+
+### Question b
+
+*¿Le parece a Usted acertada la comparación de «Dasher» con la biblioteca infinita o el Libro de Arena de Borges? Justifique su parecer.*
+
+La comparación con Borges me parece acertada si nos preguntamos qué significa encontrar algo entre un número enorme de posibilidades. En la biblioteca del relato existen todas las combinaciones, pero esa abundancia apenas ayuda al lector que busca una frase comprensible. Dasher introduce una diferencia decisiva: ordena las opciones según un idioma y una persona concreta. Una combinación que antes estaba perdida entre millones se convierte así en un camino que el usuario puede seguir.
+
+El Libro de Arena ofrece otra imagen sugestiva. Un objeto que cabe en la mano parece contener más páginas de las que nadie podría recorrer. Algo semejante siente quien escribe un mensaje largo en un aparato pequeño. Sin embargo, el teléfono no guarda ya escritos todos los mensajes posibles. Aplica unas reglas para ofrecer opciones a medida que alguien escribe. La libertad del usuario consiste precisamente en poder escoger una palabra poco probable cuando expresa mejor lo que quiere decir.
+
+También hay una diferencia en la experiencia humana. El libro infinito puede inquietar a su dueño porque no consigue orientarse en él. El programa, en cambio, se diseñó para que una persona recupere la posibilidad de expresarse sin ayuda de otra. Por eso conservaría la metáfora como punto de partida imaginativo, con una condición: recordar que aquí el sentido nace de las decisiones de quien escribe, no del tamaño del catálogo.
+
+**226 mots**
+
+![Que change Dasher ?](figures/lecture-es.svg)
 
 ## Arabe
 
@@ -115,40 +151,6 @@ Je lui ai répondu que son opinion frôlait le préjugé raciste et que, même s
 **205 mots**
 
 ![Qui soutient quelle idée ?](figures/lecture-ar.svg)
-
-## Espagnol
-
-*Tecleando con mucho ojo*
-
-### Version française
-
-De « El programa analiza la probabilidad » à « prácticamente sin ningún esfuerzo ». Le passage commence page 6 et s’achève page 7.
-
-Le programme analyse la probabilité qu’un caractère donné apparaisse après une suite de lettres connue et propose à l’utilisateur les lettres les plus probables, de façon que les plus fréquentes soient les plus faciles à trouver. Il part d’une base de données pour la langue souhaitée, que l’on peut constituer en y introduisant deux textes littéraires représentatifs. En outre, Dasher apprend au fur et à mesure. Il met constamment sa base de données à jour pour s’adapter au vocabulaire propre à chaque utilisateur. Ainsi, plus on s’en sert, plus on peut écrire vite.
-
-L’un des pères de Dasher, David MacKay, est un lecteur de Jorge Luis Borges. Dans La Bibliothèque de Babel, celui-ci évoque une bibliothèque infinie dans laquelle sont conservés, en désordre, les livres qui contiennent toutes les combinaisons possibles des 26 caractères. Ce récit a tant inspiré MacKay qu’il le cite dans la bibliographie de son article paru dans Nature. En réalité, Dasher n’est rien d’autre que la bibliothèque de Borges parfaitement ordonnée en fonction de nos besoins. En effet, à la différence des bibliothécaires du récit, les utilisateurs ne sont pas obligés de passer le reste de leur vie à rechercher péniblement les suites de caractères qui ont un sens pour eux. Celles-ci leur apparaissent sous les yeux presque sans effort.
-
-### Question a
-
-*Apoyándose en el texto, analice Usted qué revolución supone la creación de «Dasher» en el mundo de la información.*
-
-Dasher cambia la forma de introducir información porque permite escribir sin pulsar un teclado. Si el ordenador sigue el movimiento del ojo y propone las letras que probablemente vendrán después, una persona con dificultades para mover las manos puede construir su propio mensaje. El sistema aprende además del vocabulario de cada usuario, de modo que la ayuda se vuelve más pertinente con el uso. El autor ve también una posible aplicación en los teléfonos móviles. La novedad une así una mayor rapidez a la posibilidad de participar en la comunicación escrita.
-
-**91 mots**
-
-### Question b
-
-*¿Le parece a Usted acertada la comparación de «Dasher» con la biblioteca infinita o el Libro de Arena de Borges? Justifique su parecer.*
-
-La comparación con Borges me parece acertada si nos preguntamos qué significa encontrar algo entre un número enorme de posibilidades. En la biblioteca del relato existen todas las combinaciones, pero esa abundancia apenas ayuda al lector que busca una frase comprensible. Dasher introduce una diferencia decisiva: ordena las opciones según un idioma y una persona concreta. Una combinación que antes estaba perdida entre millones se convierte así en un camino que el usuario puede seguir.
-
-El Libro de Arena ofrece otra imagen sugestiva. Un objeto que cabe en la mano parece contener más páginas de las que nadie podría recorrer. Algo semejante siente quien escribe un mensaje largo en un aparato pequeño. Sin embargo, el teléfono no guarda ya escritos todos los mensajes posibles. Aplica unas reglas para ofrecer opciones a medida que alguien escribe. La libertad del usuario consiste precisamente en poder escoger una palabra poco probable cuando expresa mejor lo que quiere decir.
-
-También hay una diferencia en la experiencia humana. El libro infinito puede inquietar a su dueño porque no consigue orientarse en él. El programa, en cambio, se diseñó para que una persona recupere la posibilidad de expresarse sin ayuda de otra. Por eso conservaría la metáfora como punto de partida imaginativo, con una condición: recordar que aquí el sentido nace de las decisiones de quien escribe, no del tamaño del catálogo.
-
-**226 mots**
-
-![Que change Dasher ?](figures/lecture-es.svg)
 
 ## Italien
 
