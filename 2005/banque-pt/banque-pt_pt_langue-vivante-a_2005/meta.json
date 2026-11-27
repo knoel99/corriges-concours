@@ -53,6 +53,16 @@
       "modifications": true,
       "agent": "lva_pt_2325",
       "perimetre": "Cinq versions françaises et dix réponses dans les langues des sujets, sources, commentaires et schémas par langue."
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "agent": "lva_pt_2325",
+      "perimetre": "Comparaison des bornes et du contenu des versions sur le fac-similé, relecture des réponses avec le jury, recomptage et examen des schémas et de l’arabe."
     }
   ],
   "date_revision": "2026-11-27",
@@ -147,7 +157,7 @@
           ],
           "rapport_url": "https://www.banquept.fr/documents/ecrit/rapport/2005/rapport_lv_a_all_ecrit_2005.pdf",
           "rapport_sha256": "6939f3abc14137cee2c84260a0918aed3444c1cc591129c91bd731fffc631216",
-          "origine": "Adaptation libre de Stern, datée 4/7/2004 sur le feuillet. Texte pages 2 et 3, consignes page 3. Le sujet donne « commerce de détail » comme aide pour « Einzelhandel ». [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2005/rapport_lv_a_all_ecrit_2005.pdf)",
+          "origine": "Adaptation libre de Stern, datée 4/7/2004 sur le feuillet. Texte pages 2 et 3, consignes page 3. Le sujet donne « commerce de détail » comme aide pour « Einzelhandel ». La question a demande une réponse personnelle, même si les exemples de l’article peuvent la nourrir. [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2005/rapport_lv_a_all_ecrit_2005.pdf)",
           "bornes_version": "De « An einem Dienstag » à « vor allem als Kunden », en incluant l’incise « sagt Schröder ».",
           "consignes": [
             "Welche Produkte sind oder wären Sie bereit auf Internet zu kaufen und welche nicht? Sagen Sie auch warum.",

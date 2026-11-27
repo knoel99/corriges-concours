@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve dure trois heures. Chaque candidat traite la langue choisie à l’inscription. La version française vaut 10 points. La question a demande 80 à 100 mots pour 4 points. La question b demande 200 à 250 mots pour 6 points.
 
 [Sujet](https://www.banquept.fr/IMG/pdf/lv_a_2005.pdf) · [Index des rapports](https://www.banquept.fr/article153.html) · [Grille du livret](https://www.banquept.fr/documents/livret/2005/Livret_Rose_2005_1_2.pdf)
@@ -12,7 +14,7 @@ L’épreuve dure trois heures. Chaque candidat traite la langue choisie à l’
 
 *Amazon in Deutschland*
 
-Adaptation libre de Stern, datée 4/7/2004 sur le feuillet. Texte pages 2 et 3, consignes page 3. Le sujet donne « commerce de détail » comme aide pour « Einzelhandel ». [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2005/rapport_lv_a_all_ecrit_2005.pdf)
+Adaptation libre de Stern, datée 4/7/2004 sur le feuillet. Texte pages 2 et 3, consignes page 3. Le sujet donne « commerce de détail » comme aide pour « Einzelhandel ». La question a demande une réponse personnelle, même si les exemples de l’article peuvent la nourrir. [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2005/rapport_lv_a_all_ecrit_2005.pdf)
 
 Le premier « er » désigne Jeff Bezos. Le contexte passe ensuite à Bad Hersfeld, puis au libraire Thomas Schröder, qui voit les salariés du groupe comme des clients. En b, envisager les trois formes de commerce et leurs relations en 2050.
 
@@ -54,7 +56,7 @@ Das Gleichgewicht hängt aber auch von politischen Entscheidungen ab. Wenn die K
 
 Joel Achenbach, National Geographic Magazine, novembre 2004. Texte pages 4 et 5, questions page 5. La note de vocabulaire définit « berm » comme une levée de terre au bord de la route. [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2005/rapport_lv_a_ang_ecrit_2005.pdf)
 
-Conserver l’enchaînement des abandons et l’ironie de « winner ». Les distances en miles et leurs équivalents métriques sont ceux que donne le texte. En a, comparer la capacité de juger une situation nouvelle. En b, choisir des usages civils dont on peut expliquer le bénéfice.
+Conserver l’enchaînement des abandons et l’ironie de « winner ». Le feuillet associe 142 miles à 223 kilomètres. La version reproduit les deux chiffres de l’article, même si la conversion usuelle donne environ 229 kilomètres. En a, comparer la capacité de juger une situation nouvelle. En b, choisir des usages civils dont on peut expliquer le bénéfice.
 
 ![Que montre la comparaison ?](figures/lecture-en.svg)
 
@@ -94,7 +96,7 @@ I would be cautious about extending these successes to every street. A crowded c
 
 Bassem Al-Jisr, Al-Hawadith, 5 novembre 2004. Article pages 6 et 7, questions page 7. Le rapport d’arabe insiste sur les nuances à restituer en français. [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2005/rapport_lv_a_ara_ecrit_2005.pdf)
 
-Attribuer les slogans aux courants dont parle l’auteur. Sa propre thèse apparaît après la concession qui ouvre le deuxième paragraphe. Préserver la différence entre dénoncer une politique et condamner globalement des peuples. En b, raisonner sur les conditions d’une justice partagée.
+Attribuer les slogans aux courants dont parle l’auteur. Sa propre thèse apparaît après la concession qui ouvre le deuxième paragraphe. « المصيرية » renvoie au destin. Distinguer la critique de politiques déterminées et la condamnation de peuples entiers. En b, raisonner sur les conditions d’une justice partagée.
 
 ![Comment l’auteur passe-t-il à sa thèse ?](figures/lecture-ar.svg)
 
@@ -104,7 +106,7 @@ De « كما كانت الأجيال المتأثرة » à « اعرف عدوك
 
 Tout comme les générations influencées par le marxisme et les principes socialistes à l’époque de la guerre froide accablaient les États-Unis et l’Occident des qualificatifs les plus abominables (colonialisme, impérialisme, capitalisme vorace, etc.), les générations islamistes, salafistes, fondamentalistes ou radicales, ont aujourd’hui pris le même chemin. À leurs yeux, les États-Unis sont le « grand Satan », l’« allié d’Israël », celui qui « exploite les richesses des Arabes et des musulmans », l’« ennemi du retour de l’islam » et le « danger qui menace les principes religieux et moraux et les cultures nationales dans le monde ». Les militants de gauche et les nationalistes, même s’ils ont d’autres raisons d’être hostiles aux États-Unis, partagent avec eux tout ou partie de ces jugements sans appel.
 
-Tout en reconnaissant que les États-Unis, par leur parti pris constant et leur soutien sans réserve à Israël, ont mérité d’être blâmés par tous les Arabes et les musulmans, sinon de susciter leur hostilité (comment justifier leur occupation de l’Irak et la manière dont ils renoncent à défendre le peuple palestinien ?), nous estimons que ce sentiment de révolte ou d’hostilité à leur égard, dans le monde arabe et musulman, ne doit pas devenir le sentiment unique ou dominant de la psychologie arabo-égyptienne, ni transformer en arme certains musulmans, qui s’en servent aujourd’hui les uns contre les autres. Il ne doit pas non plus servir de prétexte pour porter des coups à l’aveugle aux États-Unis et aux pays occidentaux, ainsi qu’aux régimes arabes et musulmans. De tels coups font mal, certes. Mais le tort qu’ils font et le danger qu’ils représentent sont, par leur ampleur et leur gravité, encore plus grands, en définitive, pour les États et les peuples arabes et musulmans, sur les plans politique, économique et international.
+Tout en reconnaissant que les États-Unis, par leur parti pris constant et leur soutien sans réserve à Israël, ont mérité d’être blâmés par tous les Arabes et les musulmans, sinon de susciter leur hostilité (comment en irait-il autrement après qu’ils ont occupé l’Irak et laissé à Sharon les mains libres pour massacrer le peuple palestinien ?), nous estimons que ce sentiment de révolte ou d’hostilité à leur égard, dans le monde arabe et musulman, ne doit pas devenir le sentiment unique ou dominant dans la façon dont les Arabes envisagent leur destin, ni transformer en arme certains musulmans, qui s’en servent aujourd’hui les uns contre les autres. Il ne doit pas non plus servir de prétexte pour commettre des attentats terroristes aux États-Unis et aux pays occidentaux, ainsi qu’aux régimes arabes et musulmans. De tels coups font mal, certes. Mais le tort qu’ils font et le danger qu’ils représentent l’emportent sur le bénéfice et les résultats que l’on peut en attendre, et retombent en définitive sur les États et les peuples arabes et musulmans, sur les plans politique, économique et international.
 
 Faire sauter les oléoducs en Irak, et ainsi priver le peuple irakien de la principale ressource nécessaire à la reconstruction de l’État et de ses institutions, tuer les policiers irakiens chargés de maintenir la sécurité, faire sauter les hôtels en Égypte, privant le pays du tiers de son revenu national, celui du tourisme, et d’autres actes analogues ne changeront rien aux stratégies des grandes puissances. En revanche, ils suscitent un esprit d’hostilité profonde envers les Arabes et les musulmans, sans compter les graves dommages matériels et moraux qu’ils infligent aux États et aux peuples arabes et musulmans.
 
