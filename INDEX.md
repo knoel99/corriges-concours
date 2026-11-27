@@ -354,6 +354,7 @@
 | 2025 | BEL | AL | Anglais (thème Lyon) | [md](2025/bel/bel_al_anglais-theme-lyon_2025/brut.md) | [md](2025/bel/bel_al_anglais-theme-lyon_2025/guide.md) |
 | 2026 | BEL | AL | Anglais (thème Lyon) | [md](2026/bel/bel_al_anglais-theme-lyon_2026/brut.md) | [md](2026/bel/bel_al_anglais-theme-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Anglais (version et thème Ulm) | [md](2026/bel/bel_al_anglais-version-et-theme-ulm_2026/brut.md) | [md](2026/bel/bel_al_anglais-version-et-theme-ulm_2026/guide.md) |
+| 2018 | BEL | AL | Arabe (commentaire et traduction) | [md](2018/bel/bel_al_arabe-commentaire-et-traduction_2018/brut.md) | [md](2018/bel/bel_al_arabe-commentaire-et-traduction_2018/guide.md) |
 | 2023 | BEL | AL | Arabe (commentaire et traduction) | [md](2023/bel/bel_al_arabe-commentaire-et-traduction_2023/brut.md) | [md](2023/bel/bel_al_arabe-commentaire-et-traduction_2023/guide.md) |
 | 2024 | BEL | AL | Arabe (commentaire et traduction) | [md](2024/bel/bel_al_arabe-commentaire-et-traduction_2024/brut.md) | [md](2024/bel/bel_al_arabe-commentaire-et-traduction_2024/guide.md) |
 | 2025 | BEL | AL | Arabe (commentaire et traduction) | [md](2025/bel/bel_al_arabe-commentaire-et-traduction_2025/brut.md) | [md](2025/bel/bel_al_arabe-commentaire-et-traduction_2025/guide.md) |
