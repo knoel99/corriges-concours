@@ -13,7 +13,8 @@
   "sources": {
     "sujet": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/ORAUX-PHILO-SIL2016.pdf",
     "sha256_sujet": "354bd9d0769af73c51a4bf7873418f8b2ecdcdf13e16ec46c418fe62bcf0be8c",
-    "reperage": "Pages 1 du recueil. Expliquer et commenter le passage attribué au candidat."
+    "reperage": "Pages 1 du recueil. Expliquer et commenter le passage attribué au candidat.",
+    "controle_du_perimetre": "Feuillet 1 du recueil de cinq oraux distincts. La seule consigne demande d’expliquer et de commenter librement. La page ne donne ni durée ni questions distinctes pour l’entretien."
   },
   "figures": [
     {
@@ -33,6 +34,43 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Lecture du sujet original. Exposé argumenté sur le sujet attribué, exemples et objections, préparation guidée de l’entretien et schéma des distinctions conceptuelles."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Comparaison des trois définitions que le texte écarte, des deux issues de la chaîne et des formes institutionnelles finales."
     }
-  ]
+  ],
+  "date_revision": "2026-11-27",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Exposé oral"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "Exposé oral",
+        "page_pdf": 1,
+        "page_pdf_fin": 1,
+        "debut": "Par pouvoir, je ne veux pas dire",
+        "fin": "dans la formulation de la loi, dans les hégémonies sociales.",
+        "consigne": "Expliquez et commentez librement cet extrait de M. Foucault, Histoire de la sexualité. 1. La volonté de savoir, p. 121-122 :",
+        "coupures": 0,
+        "questions_imprimees": 1
+      }
+    ]
+  }
 }

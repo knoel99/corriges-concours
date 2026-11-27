@@ -4,6 +4,14 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+## Feuillet de l’oral
+
+Michel Foucault, *Histoire de la sexualité*, I, *La Volonté de savoir*, pages 121 et 122 de l’œuvre. Le passage occupe la page 1 du recueil de cinq pages. Il va de « Par pouvoir, je ne veux pas dire » à « dans la formulation de la loi, dans les hégémonies sociales. ».
+
+Expliquez et commentez librement cet extrait de M. Foucault, Histoire de la sexualité. 1. La volonté de savoir, p. 121-122 :
+
 ## Explication de l’extrait de *La Volonté de savoir*
 
 Quand on demande « où est le pouvoir ? », on s’attend à ce qu’on indique un siège de gouvernement, une administration ou un groupe dominant. Or Foucault commence par barrer les unes après les autres les réponses que cette façon d’interroger rend disponibles. C’est assez paradoxal dans un livre consacré à l’histoire politique des discours sur la sexualité. Comment rendre compte d’effets durables et massifs si l’on se prive de ce qui paraissait leur donner une unité ? Le passage établit que le point d’arrivée légitime d’une analyse peut en devenir le plus mauvais point de départ. Il faut suivre les négations qui libèrent le terme de pouvoir, puis la succession d’opérations que ce mot peut désormais désigner.
@@ -26,11 +34,15 @@ Le mot « jeu » rend ensuite à cette structure son historicité. Une manière 
 
 La fin de la phrase retrouve les appareils d’État, la loi et les hégémonies sociales. Toute l’analyse est dans cette différence de place. Des pratiques de consignation des individus peuvent se soutenir de l’école à l’hôpital, se trouver relayées par la statistique et devenir les points d’appui d’une décision publique. À l’inverse, elles peuvent reposer sur des catégories incompatibles et laisser certaines personnes échapper au classement. La « cristallisation » institutionnelle désigne la stabilisation éventuelle d’une configuration dont il faut expliquer les éléments et les relais. Une fois constituée, elle peut à son tour élargir, codifier ou transformer ces relations. Le terme « terminales » décrit un sens d’enquête, il ne promet pas que l’histoire serait terminée.
 
+La phrase ménage, avant de retrouver les institutions, un embranchement décisif. Les rapports peuvent se soutenir et faire chaîne ; leurs différences peuvent aussi les séparer. Deux services d’un établissement peuvent suivre les mêmes catégories administratives tout en donnant, dans la pratique, des conséquences différentes au même classement. L’inscription commune explique qu’ils puissent coordonner leurs décisions. Elle ne permet pas de conclure d’avance à leur coordination effective. « Cristallisation » désigne alors un résultat à expliquer, dont les conditions auraient pu se défaire. Voilà pourquoi la fin du passage peut nommer à nouveau la loi sans revenir à l’explication initialement refusée.
+
 Une objection demeure. Si les relations sont partout, à quoi reconnaît-on une domination qu’il faut combattre ? Le passage fournit une partie de la réponse en distinguant les rapports susceptibles de se transformer et les systèmes qui les fixent. On peut rechercher concrètement qui peut invoquer une règle, qui supporte ses conséquences et si une contestation peut être entendue. Cette description ne remplace pas à elle seule un jugement sur le juste et l’injuste, mais elle donne à ce jugement un objet plus précis. Le renoncement à une définition globale du pouvoir rend possible l’analyse de ce qui donne effectivement à certaines dominations leur caractère global.
 
 ![Figure 1 — Du rapport local à une institution](figures/experiences.svg)
 
-## Pour l’entretien
+## Questions d’entraînement
+
+Ces deux relances sont proposées pour travailler le passage. Le feuillet du concours donne la consigne d’explication reproduite plus haut.
 
 **Foucault abolit-il la souveraineté de l’État ?** Il déplace son statut explicatif. On peut rechercher par quels relais une règle commune acquiert sa force et comment elle agit en retour. C’est en cela que la souveraineté devient un résultat à expliquer.
 
