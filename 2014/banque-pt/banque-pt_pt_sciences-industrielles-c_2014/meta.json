@@ -1,0 +1,598 @@
+{
+  "slug": "banque-pt_pt_sciences-industrielles-c_2014",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Sciences industrielles C",
+    "annee": 2014
+  },
+  "questions": 48,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2014/si_c_2014_pt.pdf",
+    "sujet_sha256": "cfe5ef657dba45c0a33d9e38fd1f7c3b914d369c4e09e4a9da0bfab658a5fd54",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2014/rapport_si_c_ecrit_2014.pdf",
+    "rapport_sha256": "8df7d526362de33eada38e94bb8ebf060e9e7c65a8c30524a5406d738c97d689",
+    "lecture_rapport": "Rapport officiel p. 1–3 (pages imprimées 42–44). Sens de la vitesse relative, choix du carbone, torseur d’un couple pur, lecture de la plaquette, respect des dimensions et des arrêts de bague."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2014/si_c_2014_pt.pdf",
+      "sha256": "cfe5ef657dba45c0a33d9e38fd1f7c3b914d369c4e09e4a9da0bfab658a5fd54",
+      "nombre_pages": 49,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "161b56dbe08288a0d52d22980cf941ed11243e6cc60d511de70b57d622a704ce"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "6710276c03796d5d3ab58333a8da57036f370e17da439eebfbdf983693ac3acd"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "92feac27acf6e60fe2aa9b454379ce9d8b6a1ec4d7e33fbeba53e2fe178fc55a"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "8fac5fa03edd728ed46408222ffb0126c1a5a200a48c58d14381f58e67ca3720"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "439beedd91252b87c5f89985528e457751d530eb94b7689f8edf968f531d5f89"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "1ffbcf6aee62e5759e97e15c43dce050d31568c648a6cd1feccc4ab215719d97"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "c4ce6a1f205b4e7181332e99332ad7ec34dffc2222178bb4cb6d12e78e2f0d2b"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "406b61e664ddc03c3f467c0f6846d85c785bfd83d7485cb42dfef13bb99c99aa"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "6a2de2b75d7f5c8efb14ba54f9af964aa9881f460a1ffc9231af44e2e841c5aa"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "805af22abb0b9735dd5ee8d65839256abe3eae34630cc126e36079123d3c0cfc"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "9ea9caa4a7084cda6527915c59a83b635cb33d189943a62d1d0525ecd41183fa"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "749a7a0a93dab12b49bea7fa26bc1916634a1d7d435965d3573bf14d5fd14ad2"
+        },
+        {
+          "numero": 13,
+          "rendu_sha256": "c90524b159f884d1d2610f8a7717e59499bfa8dd33a842cb8c5ac5b009e5c8c5"
+        },
+        {
+          "numero": 14,
+          "rendu_sha256": "6afc6e653a28b484d735f3898bc0b21dc31930d2edf2e8b0f0dfee4ce5fd2ff9"
+        },
+        {
+          "numero": 15,
+          "rendu_sha256": "1e6d2571a72dc70649f9b9ce69fa0bc9bd4dfc2f999baee59d14c751cd41e0a3"
+        },
+        {
+          "numero": 16,
+          "rendu_sha256": "f355995becb061fe75e15febc69fdb709ed6dd4ee50b93586b1e0da3ad9cfcc7"
+        },
+        {
+          "numero": 17,
+          "rendu_sha256": "a52c83acdad534fa701c3c720cfb8aab030b981acb389221f26f638be77ec8d4"
+        },
+        {
+          "numero": 18,
+          "rendu_sha256": "1cc33551b76cc49a0bd809743db1befcb727fa703e0e66eaf957322e5f2bc2df"
+        },
+        {
+          "numero": 19,
+          "rendu_sha256": "4b38d6024337246c60e56c6a0efc4dc1e24eb0946fd744951549d99344d77df5"
+        },
+        {
+          "numero": 20,
+          "rendu_sha256": "16544cec065fae9bf35046724400bc7bd6967b0a38b964e3dda6a01fcb8abc23"
+        },
+        {
+          "numero": 21,
+          "rendu_sha256": "3b3de92be7ea86bd576f7cff7fa2bd3ac0c5774f9c2b689221ebc3432af31eb7"
+        },
+        {
+          "numero": 22,
+          "rendu_sha256": "f72b875e83bb0ef91b729363e1163c7beb83d9641fe8352a4f449578d48823dc"
+        },
+        {
+          "numero": 23,
+          "rendu_sha256": "204d7bc6a77e74a866f05f4997a8068df52c47375c144e8163ae727578577b77"
+        },
+        {
+          "numero": 24,
+          "rendu_sha256": "b997adde09a8f8e5f9139a82b49d5a2e0ed25154b468ae32fc60eb5aefd9146b"
+        },
+        {
+          "numero": 25,
+          "rendu_sha256": "5c73f657fd1345e390ecc14be1dac1b00a5452db3b4b2117f3329d2c25366b2c"
+        },
+        {
+          "numero": 26,
+          "rendu_sha256": "6e489074e870e98429c91ce4d577a9645e9d829806c25290bd1f780be06d443b"
+        },
+        {
+          "numero": 27,
+          "rendu_sha256": "9f3c167cafd755a2c4c8b29e272c6a926ac34a0806486220844901c77be6507d"
+        },
+        {
+          "numero": 28,
+          "rendu_sha256": "84dae097de16e0e65237fdfb5bb6d4655f296a1187f2bb7a80b23505f2315133"
+        },
+        {
+          "numero": 29,
+          "rendu_sha256": "481c46f6f1781d75ee327c27f2fe30876edb0cefce264de4b3011b7e3872205b"
+        },
+        {
+          "numero": 30,
+          "rendu_sha256": "111cc304ee436efdb82a280cbb3d2ee88f5db0fbcb52534e752f2cd6ee16c5fb"
+        },
+        {
+          "numero": 31,
+          "rendu_sha256": "ea9db35e69bc378272005615b8bf09215e05834d9adbaef300ec4b1b1c6319ab"
+        },
+        {
+          "numero": 32,
+          "rendu_sha256": "b4efe3e93375645d9c79316ab46f4bc2f030744a6d32ea77b468d2a703d83852"
+        },
+        {
+          "numero": 33,
+          "rendu_sha256": "3a60d83fc1ddc661af5dbd6a040f617a39bbeb42f47fa524ae4a6ee2077b4d1f"
+        },
+        {
+          "numero": 34,
+          "rendu_sha256": "5f70b82d303ef95c640e70aa81021e97bd83b8ffd26872efa46739b80ae8ceb3"
+        },
+        {
+          "numero": 35,
+          "rendu_sha256": "fdd4be089a60f5c087f2cad355f5162ea068c16cd8618f85bae33c1a56558381"
+        },
+        {
+          "numero": 36,
+          "rendu_sha256": "5b111be9e51b04d4fe95cbd7f3eed7f5d648e02f5944f43b198dd2bf962bfd60"
+        },
+        {
+          "numero": 37,
+          "rendu_sha256": "de52cc9deaddd608a278d2b488f23c210a443c23dd4f035e05d2537a9bb738cd"
+        },
+        {
+          "numero": 38,
+          "rendu_sha256": "a0a9bf7375a48e89ea2a23d568046e05f9e52e587f0bd104c5999d2145148abf"
+        },
+        {
+          "numero": 39,
+          "rendu_sha256": "eab948eced337e9f927d54184edf9b34737feeb5702c6d05cccc27668f13ca90"
+        },
+        {
+          "numero": 40,
+          "rendu_sha256": "b3c0abda8c8e7713e32797e1fbea6e96d668ba5c337d36a599b47c9cdb84c8a7"
+        },
+        {
+          "numero": 41,
+          "rendu_sha256": "6438b6a4627e750e132c87e63d7340fc938a58ef6c23bb31ac2643f0ab67c97c"
+        },
+        {
+          "numero": 42,
+          "rendu_sha256": "c3cfd06a6a9fa37ee16c8932cd078a8ed444e580b70b8a78b166f086d75e8ea7"
+        },
+        {
+          "numero": 43,
+          "rendu_sha256": "db7e2cf0c9027689f71e41a5cbdf4e8a71964be04615d6c9c666de98d25cadf3"
+        },
+        {
+          "numero": 44,
+          "rendu_sha256": "6f6efc482191a573871ccab372a524a73cb53d91d006282fd4eb392f3976c6cf"
+        },
+        {
+          "numero": 45,
+          "rendu_sha256": "be556f421483e155dd1d2b0a26530000320e6d8c1a093eb93a77889e79b0bff9"
+        },
+        {
+          "numero": 46,
+          "rendu_sha256": "2f86af10122c4c578730d0d2b3ade2528a2589f3f19343ffb3b6eb1aa0b3966d"
+        },
+        {
+          "numero": 47,
+          "rendu_sha256": "67850a4360d07cb84dc450b1b07b8bfc52d396332d9c39c3584897eeccb2e388"
+        },
+        {
+          "numero": 48,
+          "rendu_sha256": "f2321e4c7f6d00465ee600e5461b024d446f5cd930887e054aa49c49c93bbb8b"
+        },
+        {
+          "numero": 49,
+          "rendu_sha256": "45b50c1fa8a94fd82be8bb72e5a9bc24c3768f4c8ea447bff6267a331681e77d"
+        }
+      ],
+      "echelle_rendu": 0.6
+    },
+    "rapport_jury": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2014/rapport_si_c_ecrit_2014.pdf",
+      "sha256": "8df7d526362de33eada38e94bb8ebf060e9e7c65a8c30524a5406d738c97d689",
+      "nombre_pages": 3,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "7d1c41074fb05ee19918ae7e0c6b4d6ff3ddaa539f7802718bf77183d69d4d0f"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "5fc24b5815f4f4c8886a06b316afc6c0cb287b5061ed67ba3503a746f04a1eff"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "791d72f41b7f5ce5b84c1512fac2544adef99ef32e96ab4838c055fc4dab0093"
+        }
+      ],
+      "echelle_rendu": 0.6
+    }
+  },
+  "date_revision": "2026-11-27",
+  "figures": [
+    {
+      "fichier": "figures/grafcets.svg",
+      "question": "I.4",
+      "legende": "Transitions et confirmations pour réorienter la nacelle et mettre les pales en drapeau."
+    },
+    {
+      "fichier": "figures/paliers.svg",
+      "question": "V.2",
+      "legende": "Coupe axiale et dimensions des roulements coniques, repérées sur le calque A3."
+    },
+    {
+      "fichier": "figures/bras.svg",
+      "question": "V.4",
+      "legende": "Disposition du bras sur la bride du moyeu, appui, centrage et boulons accessibles."
+    }
+  ],
+  "contributions": [
+    {
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "session": "banque_pt_si_c_industrie_civile_2014",
+      "phase": "redaction",
+      "perimetre": "48 questions et 48 indications. Vérification des 49 pages du sujet, des ressources I à XII, du cahier réponses, du calque A3 et des trois pages du rapport. Reconstitution des GRAFCET, des constructions vectorielles, des cadres GPS et du guidage."
+    },
+    {
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "session": "banque_pt_si_c_industrie_civile_2014",
+      "phase": "relecture_corrige",
+      "perimetre": "Contrôle des deux puissances éoliennes, des circuits hydrauliques et des réalisations à Cardan, des deux états matière de la spécification du centrage, de la nuance 4044 de la figure, des quatre arêtes de chaque plaquette et des deux tailles de roulement.",
+      "tour": 1
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "II.8",
+      "II.9",
+      "II.10",
+      "II.11",
+      "II.12",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7",
+      "III.8",
+      "III.9",
+      "III.10",
+      "III.11",
+      "III.12",
+      "III.13",
+      "III.14",
+      "III.15",
+      "III.16",
+      "III.17",
+      "IV.1",
+      "IV.2",
+      "IV.3",
+      "IV.4",
+      "IV.5",
+      "IV.6",
+      "IV.7",
+      "IV.8",
+      "IV.9",
+      "IV.10",
+      "IV.11",
+      "V.1",
+      "V.2",
+      "V.3",
+      "V.4"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "I.1",
+        "page_pdf": 5,
+        "traitement": "Vitesse du vent"
+      },
+      {
+        "question": "I.2",
+        "page_pdf": 5,
+        "traitement": "Conditions climatiques"
+      },
+      {
+        "question": "I.3",
+        "page_pdf": 6,
+        "traitement": "Réorientation de la nacelle"
+      },
+      {
+        "question": "I.4",
+        "page_pdf": 6,
+        "traitement": "Mise en drapeau et reprise"
+      },
+      {
+        "question": "II.1",
+        "page_pdf": 6,
+        "traitement": "Débit massique"
+      },
+      {
+        "question": "II.2",
+        "page_pdf": 6,
+        "traitement": "Puissance maximale"
+      },
+      {
+        "question": "II.3",
+        "page_pdf": 6,
+        "traitement": "Influence du site"
+      },
+      {
+        "question": "II.4",
+        "page_pdf": 7,
+        "traitement": "Vitesse de la section"
+      },
+      {
+        "question": "II.5",
+        "page_pdf": 7,
+        "traitement": "Triangle des vitesses"
+      },
+      {
+        "question": "II.6",
+        "page_pdf": 7,
+        "traitement": "Forces lues sur la coupe"
+      },
+      {
+        "question": "II.7",
+        "page_pdf": 7,
+        "traitement": "Projections de portance et de traînée"
+      },
+      {
+        "question": "II.8",
+        "page_pdf": 7,
+        "traitement": "Vrillage"
+      },
+      {
+        "question": "II.9",
+        "page_pdf": 8,
+        "traitement": "Masse et inertie"
+      },
+      {
+        "question": "II.10",
+        "page_pdf": 8,
+        "traitement": "Séparer les trois facteurs"
+      },
+      {
+        "question": "II.11",
+        "page_pdf": 8,
+        "traitement": "Lecture de l’indice"
+      },
+      {
+        "question": "II.12",
+        "page_pdf": 8,
+        "traitement": "Fabrication de la pale"
+      },
+      {
+        "question": "III.1",
+        "page_pdf": 9,
+        "traitement": "Premier modèle et mobilités"
+      },
+      {
+        "question": "III.2",
+        "page_pdf": 9,
+        "traitement": "Effet d’un contact unique"
+      },
+      {
+        "question": "III.3",
+        "page_pdf": 9,
+        "traitement": "Trois contacts ponctuels"
+      },
+      {
+        "question": "III.4",
+        "page_pdf": 9,
+        "traitement": "Condition de couple pur"
+      },
+      {
+        "question": "III.5",
+        "page_pdf": 9,
+        "traitement": "Défaut d’alignement"
+      },
+      {
+        "question": "III.6",
+        "page_pdf": 10,
+        "traitement": "Transmission articulée"
+      },
+      {
+        "question": "III.7",
+        "page_pdf": 10,
+        "traitement": "Degré d’hyperstatisme du double joint"
+      },
+      {
+        "question": "III.8",
+        "page_pdf": 10,
+        "traitement": "Torseur transmis par les cardans"
+      },
+      {
+        "question": "III.9",
+        "page_pdf": 11,
+        "traitement": "Équilibrage hydraulique"
+      },
+      {
+        "question": "III.10",
+        "page_pdf": 11,
+        "traitement": "Longueurs des poussoirs"
+      },
+      {
+        "question": "III.11",
+        "page_pdf": 11,
+        "traitement": "Fluide incompressible et ressorts rigides"
+      },
+      {
+        "question": "III.12",
+        "page_pdf": 12,
+        "traitement": "Écrasements sur un circuit"
+      },
+      {
+        "question": "III.13",
+        "page_pdf": 12,
+        "traitement": "Deux poussoirs opposés"
+      },
+      {
+        "question": "III.14",
+        "page_pdf": 12,
+        "traitement": "Raideur de torsion finie"
+      },
+      {
+        "question": "III.15",
+        "page_pdf": 12,
+        "traitement": "Pression moyenne"
+      },
+      {
+        "question": "III.16",
+        "page_pdf": 12,
+        "traitement": "Précharge optimale du modèle"
+      },
+      {
+        "question": "III.17",
+        "page_pdf": 12,
+        "traitement": "Dimensionnement du bras hydraulique"
+      },
+      {
+        "question": "IV.1",
+        "page_pdf": 13,
+        "traitement": "Désignation EN-GJS-400"
+      },
+      {
+        "question": "IV.2",
+        "page_pdf": 13,
+        "traitement": "Essai Brinell"
+      },
+      {
+        "question": "IV.3",
+        "page_pdf": 13,
+        "traitement": "Obtention du brut"
+      },
+      {
+        "question": "IV.4",
+        "page_pdf": 13,
+        "traitement": "Trois spécifications du plan"
+      },
+      {
+        "question": "IV.5",
+        "page_pdf": 13,
+        "traitement": "Maximum de matière"
+      },
+      {
+        "question": "IV.6",
+        "page_pdf": 13,
+        "traitement": "Choix du foret"
+      },
+      {
+        "question": "IV.7",
+        "page_pdf": 13,
+        "traitement": "Débit de copeaux"
+      },
+      {
+        "question": "IV.8",
+        "page_pdf": 14,
+        "traitement": "Paramètres de coupe"
+      },
+      {
+        "question": "IV.9",
+        "page_pdf": 14,
+        "traitement": "Puissance de perçage"
+      },
+      {
+        "question": "IV.10",
+        "page_pdf": 14,
+        "traitement": "Temps et consommables"
+      },
+      {
+        "question": "IV.11",
+        "page_pdf": 14,
+        "traitement": "Outil à deux diamètres"
+      },
+      {
+        "question": "V.1",
+        "page_pdf": 15,
+        "traitement": "Montage des roulements"
+      },
+      {
+        "question": "V.2",
+        "page_pdf": 15,
+        "traitement": "Coupe et réglage"
+      },
+      {
+        "question": "V.3",
+        "page_pdf": 15,
+        "traitement": "Appui et fixation du bras"
+      },
+      {
+        "question": "V.4",
+        "page_pdf": 15,
+        "traitement": "Vue de la liaison vissée"
+      }
+    ]
+  }
+}
