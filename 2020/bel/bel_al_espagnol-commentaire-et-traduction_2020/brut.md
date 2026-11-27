@@ -6,11 +6,7 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Luis Gusmán, *Villa* (1995). Écrit commun de l’ENS de Lyon et de l’ENS (Paris), six heures avec dictionnaire unilingue autorisé.
-
-Le commentaire couvre les lignes 1 à 78. La version va de « Los dos se quedaron en silencio… » à « …pudiera haber decidido morirse. » (lignes 32 à 49).
-
-[Sujet officiel, p. 8–9](https://www.ens-lyon.fr/sites/default/files/2020-09/2020%20Commentaire%20d%27un%20texte%20en%20LVE%20et%20traduction.pdf#page=8) · [Rapport du jury, rubrique commune, p. 1–8](https://www.ens-lyon.fr/sites/default/files/2020-11/ESPAGNOL_2020%20internet.pdf#page=1)
+Luis Gusmán, *Villa* (1995). ENS de Lyon et ENS (Paris). Six heures, dictionnaire unilingue autorisé. Commentaire, l. 1–78. Version, l. 32–49, de « Los dos se quedaron en silencio… » à « …pudiera haber decidido morirse. ». [Sujet, p. 8–9](https://www.ens-lyon.fr/sites/default/files/2020-09/2020%20Commentaire%20d%27un%20texte%20en%20LVE%20et%20traduction.pdf#page=8) · [Jury, p. 1–8](https://www.ens-lyon.fr/sites/default/files/2020-11/ESPAGNOL_2020%20internet.pdf#page=1)
 
 ## Commentaire en espagnol
 
