@@ -16,7 +16,22 @@
   },
   "sources": {
     "sujet": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/Ep%20communes/2026_LVA6AU.pdf#page=10",
-    "rapport_jury": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/Ep%20communes/LV_ECRIT_2026_05.10.pdf#page=26"
+    "rapport_jury": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/Ep%20communes/LV_ECRIT_2026_05.10.pdf#page=26",
+    "sha256_sujet": "f4aff4b5f57beec696fa9ae91f8dcac2d16ef0b2b1c30b80655e4be90c59a593",
+    "sha256_rapport_jury": "23a73e191a42c2fcd03b46b4baca6da1089739620013f3ba144814c9a261dbb0",
+    "pages_pdf_sujet_verifiees": [
+      1,
+      10,
+      11,
+      12,
+      13
+    ],
+    "pages_pdf_rapport_verifiees": [
+      1,
+      2,
+      26,
+      27
+    ]
   },
   "figures": [
     {
@@ -25,7 +40,7 @@
       "question": "Synthèse"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-27",
   "contributions": [
     {
       "phase": "redaction",
@@ -36,6 +51,88 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Synthèse en portugais des 5 documents du sujet officiel p. 10–13, barres tous les vingt mots, comptage titre compris, lecture du rapport de l’option, guide et schéma."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "agent": "lva_pt_2325",
+      "session": "/root/lva_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "perimetre": "Révision des deux éditions, confrontation des documents et figures au sujet et au rapport publiés, vérification du décompte depuis le titre."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Synthèse"
+    ],
+    "origine_attestation": {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "date": "2026-11-27",
+      "sha256_sujet_controle": "f4aff4b5f57beec696fa9ae91f8dcac2d16ef0b2b1c30b80655e4be90c59a593",
+      "perimetre": "Révision des deux éditions, confrontation des documents et figures au sujet et au rapport publiés, vérification du décompte depuis le titre.",
+      "documents_verifies": [
+        {
+          "numero": 1,
+          "pages": [
+            10,
+            11
+          ],
+          "observation": "Socicana (consulté le 14/08/2025). Écoles et services de la commune de Guariba, élèves relais des connaissances."
+        },
+        {
+          "numero": 2,
+          "pages": [
+            11
+          ],
+          "observation": "Luís Leitão, ECO, 17/09/2024. Croissance de l’emploi par activité et projection pour 2030 des pertes touristiques selon l’origine des visiteurs."
+        },
+        {
+          "numero": 3,
+          "pages": [
+            12
+          ],
+          "observation": "Florestas.pt (consulté le 14/08/2025). Le mode de gestion des terres agricoles explique leur résilience et soulève la question de la rémunération du service rendu."
+        },
+        {
+          "numero": 4,
+          "pages": [
+            12,
+            13
+          ],
+          "observation": "Embrapa, 10/01/2025. Dommages multiples, adaptation aux parcelles, gestion des résidus et financement annuel."
+        },
+        {
+          "numero": 5,
+          "pages": [
+            13
+          ],
+          "observation": "Florestas.pt, 18/09/2019. Aires empilées de 2001 à 2018, en pourcentage du nombre total de feux. Reprises, négligence, intention et causes naturelles."
+        }
+      ],
+      "decompte": {
+        "titre": "Incêndios em Portugal e no Brasil entre o custo dos danos e o trabalho de prevenção",
+        "langue": "portugais",
+        "minimum": 360,
+        "maximum": 440,
+        "mots": 418,
+        "titre_et_paragraphes": [
+          16,
+          69,
+          102,
+          104,
+          127
+        ],
+        "barres": 20,
+        "total_imprime": "418 palavras, incluindo o título.",
+        "groupes_source_introduction": [],
+        "convention": "Titre inclus. Dans l’introduction, chaque source et chaque date comptent pour un mot, ainsi que le renvoi compact à un document. Unités séparées par des blancs pour le reste de la copie. Chaque vingtième mot est suivi d’une barre. Total et FIN hors compte."
+      }
+    }
+  }
 }
