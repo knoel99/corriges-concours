@@ -303,6 +303,7 @@
 | 2026 | BCE | ECT | Résumé de texte (ICN-ISC) | [md](2026/bce/bce_ect_resume-de-texte-icn-isc_2026/brut.md) | [md](2026/bce/bce_ect_resume-de-texte-icn-isc_2026/guide.md) |
 | 2025 | BCE | ECT | Synthèse de textes (ESCP-HEC) | [md](2025/bce/bce_ect_synthese-de-textes-escp-hec_2025/brut.md) | [md](2025/bce/bce_ect_synthese-de-textes-escp-hec_2025/guide.md) |
 | 2026 | BCE | ECT | Synthèse de textes (ESCP-HEC) | [md](2026/bce/bce_ect_synthese-de-textes-escp-hec_2026/brut.md) | [md](2026/bce/bce_ect_synthese-de-textes-escp-hec_2026/guide.md) |
+| 2018 | BEL | AL | Allemand (commentaire et traduction) | [md](2018/bel/bel_al_allemand-commentaire-et-traduction_2018/brut.md) | [md](2018/bel/bel_al_allemand-commentaire-et-traduction_2018/guide.md) |
 | 2023 | BEL | AL | Allemand (commentaire et traduction) | [md](2023/bel/bel_al_allemand-commentaire-et-traduction_2023/brut.md) | [md](2023/bel/bel_al_allemand-commentaire-et-traduction_2023/guide.md) |
 | 2024 | BEL | AL | Allemand (commentaire et traduction) | [md](2024/bel/bel_al_allemand-commentaire-et-traduction_2024/brut.md) | [md](2024/bel/bel_al_allemand-commentaire-et-traduction_2024/guide.md) |
 | 2025 | BEL | AL | Allemand (commentaire et traduction) | [md](2025/bel/bel_al_allemand-commentaire-et-traduction_2025/brut.md) | [md](2025/bel/bel_al_allemand-commentaire-et-traduction_2025/guide.md) |
