@@ -1,0 +1,148 @@
+{
+  "slug": "ccinp_mp-mpi-pc-psi-tpc-tsi_russe_2026",
+  "commit_export": "cef75dbd98b1f327876cccbd3900ba2d6a1ce7df",
+  "arbre_git": "1b871eefd84e6cd05b655cf23c15d57bd0d4b390",
+  "archive": "CCINP-LVA-russe-2026.zip",
+  "agent": "lva_pt_2325",
+  "revision": {
+    "phase": "relecture_corrige",
+    "tour": 1,
+    "agent": "lva_pt_2325",
+    "session": "/root/lva_pt_2325",
+    "modele": "gpt-6.2-astra",
+    "effort": "ultra",
+    "vitesse": null,
+    "date": "2026-11-27",
+    "modifications": true,
+    "perimetre": "Révision des deux éditions, confrontation des documents et figures au sujet et au rapport publiés, vérification du décompte depuis le titre."
+  },
+  "sources": {
+    "sujet": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/Ep%20communes/2026_LVA6AU.pdf#page=14",
+    "rapport_jury": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/Ep%20communes/LV_ECRIT_2026_05.10.pdf#page=28",
+    "sha256_sujet": "f4aff4b5f57beec696fa9ae91f8dcac2d16ef0b2b1c30b80655e4be90c59a593",
+    "sha256_rapport_jury": "23a73e191a42c2fcd03b46b4baca6da1089739620013f3ba144814c9a261dbb0",
+    "pages_pdf_sujet_verifiees": [
+      1,
+      14,
+      15,
+      16,
+      17
+    ],
+    "pages_pdf_rapport_verifiees": [
+      1,
+      2,
+      28
+    ]
+  },
+  "decompte": {
+    "titre": "Цена первого сентября и способы облегчить расходы семьи",
+    "langue": "russe",
+    "minimum": 360,
+    "maximum": 440,
+    "mots": 378,
+    "titre_et_paragraphes": [
+      8,
+      47,
+      82,
+      82,
+      81,
+      78
+    ],
+    "barres": 18,
+    "total_imprime": "Количество слов с учётом заголовка — 378.",
+    "groupes_source_introduction": [
+      "Аргументы и факты"
+    ],
+    "convention": "Titre inclus. Dans l’introduction, chaque source et chaque date comptent pour un mot, ainsi que le renvoi compact à un document. Unités séparées par des blancs pour le reste de la copie. Chaque vingtième mot est suivi d’une barre. Total et FIN hors compte."
+  },
+  "editions": {
+    "brut": {
+      "pages": 2,
+      "pages_copie": [
+        1,
+        2
+      ],
+      "copie_integrale_et_total_verifies": true,
+      "barres_verifiees": 18,
+      "fin_verifie": true,
+      "signets": [
+        [
+          1,
+          "Цена первого сентября и способы облегчить расходы семьи",
+          1
+        ]
+      ],
+      "figures": [
+        {
+          "fichier": "figures/lecture-croisee.svg",
+          "legende": "Que mesure le prix de la rentrée ?",
+          "question": "Synthèse",
+          "page_pdf": 2,
+          "sha256_svg": "8e4949ab63f159ac055621003adb6dfa74f6b7b6706113c4b845b5adde68f0eb",
+          "sha256_forme_pdf": "2a28d564022ada4151c53274131065fbe71b714bc01c0d77003533238ec9b0ec"
+        }
+      ],
+      "signatures_sur_premiere_page": [
+        "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+        "**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+      ],
+      "sha256_pdf": "34f8dd67c738deb008890d3aeaa1b2a6812bfb123760367508559b1b133ef9cb",
+      "sha256_markdown": "9b9a7a871d073b9197daafe72fd098d111b7d441d5abe3ab50b6540bec13f889",
+      "diagnostic_latex_propre": true
+    },
+    "guide": {
+      "pages": 2,
+      "pages_copie": [
+        2
+      ],
+      "copie_integrale_et_total_verifies": true,
+      "barres_verifiees": 18,
+      "fin_verifie": true,
+      "signets": [
+        [
+          1,
+          "Lire la consigne",
+          1
+        ],
+        [
+          1,
+          "Croiser les documents",
+          1
+        ],
+        [
+          1,
+          "Цена первого сентября и способы облегчить расходы семьи",
+          2
+        ]
+      ],
+      "figures": [
+        {
+          "fichier": "figures/lecture-croisee.svg",
+          "legende": "Que mesure le prix de la rentrée ?",
+          "question": "Synthèse",
+          "page_pdf": 1,
+          "sha256_svg": "8e4949ab63f159ac055621003adb6dfa74f6b7b6706113c4b845b5adde68f0eb",
+          "sha256_forme_pdf": "2a28d564022ada4151c53274131065fbe71b714bc01c0d77003533238ec9b0ec"
+        }
+      ],
+      "signatures_sur_premiere_page": [
+        "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+        "**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+      ],
+      "sha256_pdf": "9051a8b4d44a505f36ae4ecee6d1f0df397fb666c7108b93e2e170d54966defa",
+      "sha256_markdown": "3bb5d46f6099d787e6b7144cd96e011d6b66be3945a71d6231cbf6347c649766",
+      "diagnostic_latex_propre": true
+    }
+  },
+  "sha256_contenus": {
+    "guide.md": "3bb5d46f6099d787e6b7144cd96e011d6b66be3945a71d6231cbf6347c649766",
+    "brut.md": "9b9a7a871d073b9197daafe72fd098d111b7d441d5abe3ab50b6540bec13f889",
+    "meta.json": "0a899fe24d91e450c47621d571c9e634f6c05c664d0af2c90271d6ceafcd491e",
+    "journal-revision.json": "a246aaf7f719806eec43e176ea424d0031755edf73407fda2a0f81bf8c07eeb0",
+    "figures/lecture-croisee.svg": "8e4949ab63f159ac055621003adb6dfa74f6b7b6706113c4b845b5adde68f0eb",
+    "brut.pdf": "34f8dd67c738deb008890d3aeaa1b2a6812bfb123760367508559b1b133ef9cb",
+    "guide.pdf": "9051a8b4d44a505f36ae4ecee6d1f0df397fb666c7108b93e2e170d54966defa",
+    "verifier-decompte.py": "576cfd891d23390f28fb2d7122c705914f1fd6972e3feb4b8fec8440443c7595"
+  },
+  "sha256_archive": "6797eae432ef654f21e95e5ada4a4df77d261a432dcb56b37b7ecbebf08f685d"
+}
