@@ -4,6 +4,14 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+## Feuillet de l’oral
+
+Vous commenterez le texte ci-dessous en 20 minutes environ. Vous pouvez choisir de le commenter en suivant l’ordre de la lecture, ou de rassembler vos remarques selon un plan qui met en valeur les principaux enjeux du texte. Votre interprétation tiendra compte, par exemple, de son genre littéraire, de son contexte historique et culturel, de sa structure, de sa forme (vocabulaire, syntaxe, effets stylistiques et poétiques), de sa thématique et de sa tonalité. Votre commentaire sera suivi d’un entretien avec le jury.
+
+André Gide, *Thésée* (1946). Le chapeau de la première page situe l’arrivée d’Œdipe à Colone. Le passage à commenter commence par « Cette rencontre à Colone de nos destins » et s’achève, à la fin de la deuxième page, par « je n’y serais sans doute point parvenu. ». La note au bas de la première page explique « impréhensible ». Le texte du dialogue se poursuit au-delà de cet appel de note.
+
 ## Commentaire de la rencontre à Colone
 
 Dans *Thésée*, publié en 1946, André Gide laisse le héros grec raconter sa vie. Le passage distribué se situe à la fin du récit, lorsqu’il accueille à Colone un autre héros vieillissant, Œdipe. Un homme qui a su répondre jadis à l’énigme du Sphinx doit rendre à un interlocuteur compte de sa propre histoire. Nous pourrions attendre d’une rencontre aussi tardive que la sagesse de deux vies se résume en une même leçon. Or Thésée dit à plusieurs reprises qu’il ne comprend pas. Pourquoi le récit fait-il de cette difficulté le couronnement d’une carrière héroïque ? Il faut distinguer la confrontation telle que l’ordonne le narrateur, l’interprétation qu’Œdipe donne de la vue et les révisions que son discours subit à mesure qu’il se prolonge.
@@ -24,6 +32,8 @@ La pause du personnage puis le souvenir du Sphinx font entrer dans cette opposit
 
 ### Deux compréhensions de l’action et de la souffrance restent en présence
 
+Un détail de vocabulaire permet d’entendre ce qui sépare les deux hommes. Œdipe qualifie le monde intérieur d’« insensible », puis intervient dans sa propre phrase pour substituer à ce mot « impréhensible par nos sens ». La note du feuillet éclaire le second adjectif. L’important est aussi le temps pris par la rectification : cette réalité pourrait être d’une grande intensité tout en se dérobant à nos moyens de la saisir. Plus loin, l’allusion à Tirésias replace Œdipe dans la position de celui qui, naguère, ne comprenait pas. Au moment même où il s’impatiente devant Thésée, il donne donc à son interlocuteur un précédent dans sa propre histoire.
+
 La brève intervention de Thésée est très exactement construite. Il concède l’importance de ce monde intérieur et demande pourquoi il faudrait l’opposer à celui dans lequel « nous vivons et agissons ». Son désaccord tient à l’exclusivité exigée par Œdipe. Le « nous » replace les deux hommes dans un monde commun, celui où un roi reçoit un exilé et où chacun demeure responsable des suites de ses actes. Ainsi une seule réplique suffit à modifier la question. Il ne s’agit plus de nier l’expérience d’Œdipe, mais de déterminer quelle conclusion il est en droit d’en tirer.
 
 Œdipe part alors de sa royauté et du crime qu’il a découvert à son origine. De la souillure des décisions d’un roi, il passe à ses fils, puis de leur histoire singulière à une « tare originelle » qui atteindrait l’humanité entière. Ce passage de la première personne au genre humain est une extrapolation que le lecteur peut repérer et discuter. Le vocabulaire de l’humanité pécheresse, du secours divin et de la rédemption fait entendre chez un héros grec des accents qui évoquent aussi le christianisme. Le texte moderne organise la rencontre de plusieurs traditions. Il donne à entendre une interprétation de l’histoire, sans la transformer en verdict du narrateur sur tous les hommes.
@@ -32,7 +42,9 @@ Un nouveau silence précède la dernière tentative. Le héros lui-même finit p
 
 ![Figure 1 — Trois moments d’un désaccord](figures/experiences.svg)
 
-## Deux relances pour l’entretien
+## Deux relances d’entraînement pour l’entretien
+
+Le feuillet annonce un échange avec le jury. Les deux questions ci-dessous ont été rédigées pour s’y préparer.
 
 **La longueur de la parole d’Œdipe signifie-t-elle qu’il a gagné la discussion ?** Il reçoit le temps de développer ses raisons. Mais Thésée raconte la rencontre, formule une objection précise et prévient le lecteur que l’explication n’a pas emporté son adhésion. L’inégalité de longueur ne supprime pas la pluralité des points de vue.
 
