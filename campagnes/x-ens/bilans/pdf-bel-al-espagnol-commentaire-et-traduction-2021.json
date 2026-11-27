@@ -1,0 +1,185 @@
+{
+  "slug": "bel_al_espagnol-commentaire-et-traduction_2021",
+  "commit_export": "a8bec3287abca2bec1c08ace07ae812810b6b557",
+  "arbre_git": "8f7d3395482331bc738346575a88df272fc556d8",
+  "archive": "BEL-AL-espagnol-commentaire-et-traduction-2021.zip",
+  "agent": "lva_pt_2325",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2021-10/Commentaire-et-traduction-en-LVE.pdf#page=10",
+    "sha256_sujet": "3caa2cab1297b4899fabe9fd1487a5f16e5f344f3d9b28e88656b03818586053",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2021-11/ESPAGNOL_2021.pdf#page=1",
+    "sha256_rapport_jury": "254cd0a08f2751a1fa0434a5b91821865b7766bd1d58157733d95aac22845c34",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2021",
+    "pages_sujet": [
+      1,
+      10,
+      11
+    ],
+    "pages_rapport_commun": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "fin_rubrique_rapport": "La rubrique commune se termine sur la page 5 avant le thème de spécialité."
+  },
+  "exercices": [
+    {
+      "question": "Commentaire en espagnol",
+      "pages_pdf": [
+        10,
+        11
+      ],
+      "lignes": [
+        1,
+        38
+      ]
+    },
+    {
+      "question": "Version française",
+      "pages_pdf": [
+        10,
+        11
+      ],
+      "lignes": [
+        12,
+        26
+      ],
+      "premiers_mots": "Y ahora estoy aquí",
+      "derniers_mots": "que alguna vez dejó en los montes la esperanza."
+    }
+  ],
+  "editions": {
+    "brut": {
+      "pages": 2,
+      "blocs_compares": {
+        "commentaire_espagnol": {
+          "pages": [
+            1,
+            2
+          ],
+          "lettres_chiffres": 3334,
+          "mots": 703,
+          "paragraphes": 6,
+          "empreinte_normalisee": "f3ba13ad3979f1dda9086d6cdf805f1a45fe06732419222a3d3d9dfc2ba6660e"
+        },
+        "version_francaise": {
+          "pages": [
+            2
+          ],
+          "lettres_chiffres": 1108,
+          "mots": 244,
+          "paragraphes": 1,
+          "empreinte_normalisee": "96174103d06985f863c05744e2467632bfc1296b528aa6df820f225cff681ee7"
+        }
+      },
+      "signets": [
+        {
+          "titre": "Commentaire en espagnol",
+          "page": 1,
+          "ecart_points": 6.8
+        },
+        {
+          "titre": "Version française",
+          "page": 2,
+          "ecart_points": 9.1
+        }
+      ],
+      "figures": [
+        {
+          "question": "Commentaire en espagnol",
+          "fichier": "figures/lecture.svg",
+          "legende": "Trois présences dans les derniers mots d’Ojos Azules",
+          "page": 2,
+          "sha256_svg": "fd89289c39db1894e7a6f30bd9afceb1deb1062724974ab581f7c8279504b628",
+          "sha256_forme_pdf": "a27a001c5b5a12080fc52e25f1c03a7eb7b74ba0eb7f50ed22fadbff55d76dab"
+        }
+      ],
+      "liens_sources": [
+        "https://www.ens-lyon.fr/sites/default/files/2021-10/Commentaire-et-traduction-en-LVE.pdf#page=10",
+        "https://www.ens-lyon.fr/sites/default/files/2021-11/ESPAGNOL_2021.pdf#page=1"
+      ],
+      "signatures_sur_premiere_page": [
+        "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+        "**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+      ],
+      "diagnostic_latex_propre": true,
+      "sha256_markdown": "b2cf681d8b095367a174a7b6149f6e1ce510bd03b12d7a1b417159b459bd9d9a",
+      "sha256_pdf": "2f7b9e9fecb75ad10f0f4c74935e8240927763745d847d6c79a3d090f5da4842"
+    },
+    "guide": {
+      "pages": 3,
+      "blocs_compares": {
+        "commentaire_espagnol": {
+          "pages": [
+            1,
+            2
+          ],
+          "lettres_chiffres": 3334,
+          "mots": 703,
+          "paragraphes": 6,
+          "empreinte_normalisee": "f3ba13ad3979f1dda9086d6cdf805f1a45fe06732419222a3d3d9dfc2ba6660e"
+        },
+        "version_francaise": {
+          "pages": [
+            2,
+            3
+          ],
+          "lettres_chiffres": 1108,
+          "mots": 244,
+          "paragraphes": 1,
+          "empreinte_normalisee": "96174103d06985f863c05744e2467632bfc1296b528aa6df820f225cff681ee7"
+        }
+      },
+      "signets": [
+        {
+          "titre": "Préparer la lecture",
+          "page": 1,
+          "ecart_points": 6.8
+        },
+        {
+          "titre": "Commentaire en espagnol",
+          "page": 1,
+          "ecart_points": 9.1
+        },
+        {
+          "titre": "Version française",
+          "page": 2,
+          "ecart_points": 9.0
+        }
+      ],
+      "figures": [
+        {
+          "question": "Commentaire en espagnol",
+          "fichier": "figures/lecture.svg",
+          "legende": "Trois présences dans les derniers mots d’Ojos Azules",
+          "page": 1,
+          "sha256_svg": "fd89289c39db1894e7a6f30bd9afceb1deb1062724974ab581f7c8279504b628",
+          "sha256_forme_pdf": "a27a001c5b5a12080fc52e25f1c03a7eb7b74ba0eb7f50ed22fadbff55d76dab"
+        }
+      ],
+      "liens_sources": [
+        "https://www.ens-lyon.fr/sites/default/files/2021-10/Commentaire-et-traduction-en-LVE.pdf#page=10",
+        "https://www.ens-lyon.fr/sites/default/files/2021-11/ESPAGNOL_2021.pdf#page=1"
+      ],
+      "signatures_sur_premiere_page": [
+        "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+        "**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+      ],
+      "diagnostic_latex_propre": true,
+      "sha256_markdown": "775395573d002d6611c746617a9168d142e57c27d9f0e67c3c330b59a40a7c76",
+      "sha256_pdf": "286de2b20ed70e80ea3350990f3a78ae07f1d8e1ea773454a641b97f22a06262"
+    }
+  },
+  "sha256_contenus": {
+    "guide.md": "775395573d002d6611c746617a9168d142e57c27d9f0e67c3c330b59a40a7c76",
+    "brut.md": "b2cf681d8b095367a174a7b6149f6e1ce510bd03b12d7a1b417159b459bd9d9a",
+    "meta.json": "0d8181afb8aa13464a9baf9aac3a0d20f2be074b54d3ff78706c172a7364f688",
+    "journal-revision.json": "835dfc7eeaa58ad77f4a77c602ab66011c05921dfd3722d0ecb8b074d8be4c18",
+    "figures/lecture.svg": "fd89289c39db1894e7a6f30bd9afceb1deb1062724974ab581f7c8279504b628",
+    "brut.pdf": "2f7b9e9fecb75ad10f0f4c74935e8240927763745d847d6c79a3d090f5da4842",
+    "guide.pdf": "286de2b20ed70e80ea3350990f3a78ae07f1d8e1ea773454a641b97f22a06262"
+  },
+  "sha256_archive": "90dd085bf7a417cf947e32afdf69e20a5945b45d2ba9fbfc8669009c49e93c0e"
+}
