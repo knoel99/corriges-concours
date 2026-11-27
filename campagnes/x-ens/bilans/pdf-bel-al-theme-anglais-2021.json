@@ -1,0 +1,180 @@
+{
+  "slug": "bel_al_anglais-theme-lyon_2021",
+  "commit_export": "ee56e03a8dd470b8ef2f1fc9653ec8448fcc3c63",
+  "arbre_git": "3fd066c6dd86a41e12dcbafea096789a01acacbe",
+  "archive": "BEL-AL-theme-anglais-2021.zip",
+  "agent": "lva_pt_2325",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2021-10/Epreuves-de-Specialite.pdf#page=9",
+    "sha256_sujet": "1204b3dd5ed1c85101afe6b8aaa9fbfa0b3746b5ce3fcd6fefd4add8476fe553",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2021-11/ANGLAIS_2021.pdf#page=13",
+    "sha256_rapport_jury": "44e2a802fd0c09f6f351da333ce760fc226ce43c7209ec9d9238a9934607890b",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2021",
+    "pages_sujet_verifiees": [
+      1,
+      9
+    ],
+    "pages_rapport_theme": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ]
+  },
+  "consigne": {
+    "duree_heures": 4,
+    "langue": "anglais",
+    "dictionnaire": "Tout dictionnaire interdit.",
+    "fascicule": "Épreuve de spécialité. La garde cite l’ENS de Lyon et l’ENS Paris-Saclay (langue anglaise).",
+    "annexe": "Texte entier sur une page, sans annexe ou note de bas de page pour ce thème.",
+    "debut": "À la fin de la saison des pluies",
+    "fin": "le nom modeste d’Emporio, c’est-à-dire la Halle.",
+    "page": 9
+  },
+  "controle_paragraphe": [
+    {
+      "numero": 1,
+      "contenu": "Retour des fils au centre-ville, véhicules, cinq provenances et huit familles.",
+      "incipit_anglais": "At the end of the rainy",
+      "explicit_anglais": "Olguins, the Olids, the Olmoses …"
+    },
+    {
+      "numero": 2,
+      "contenu": "Échange ancien des demeures de pierre rose contre les villas et les châteaux, toitures, colonnes, jacuzzis et trois formes des piscines.",
+      "incipit_anglais": "Long ago their parents had traded",
+      "explicit_anglais": "shaped like hearts, guitars and strawberries."
+    },
+    {
+      "numero": 3,
+      "contenu": "Maintien des droits et transformation commerciale des maisons.",
+      "incipit_anglais": "But they had never relinquished their",
+      "explicit_anglais": "or restaurants serving steaks grilled gaucho-style."
+    },
+    {
+      "numero": 4,
+      "contenu": "Fondation de l’Emporio dans une ville dégradée.",
+      "incipit_anglais": "In the midst of this ruined",
+      "explicit_anglais": "humanities and the pursuit of knowledge."
+    },
+    {
+      "numero": 5,
+      "contenu": "Origines familiales de Thomas et trois métiers, distance envers le pouvoir, Quitupan et le fleuve.",
+      "incipit_anglais": "Thomas Moises did not come from",
+      "explicit_anglais": "the headwaters of the Tepalcatepec River."
+    },
+    {
+      "numero": 6,
+      "contenu": "Rencontre personnelle, traits du visage et détails du costume, fondation à cinquante ans, tradition et mémoire, de l’Athénée à la Halle.",
+      "incipit_anglais": "The first time I met him,",
+      "explicit_anglais": "of Emporio, meaning the Market Hall."
+    }
+  ],
+  "editions": {
+    "brut": {
+      "pages": 2,
+      "blocs_compares": {
+        "traduction_anglaise": {
+          "pages": [
+            1,
+            2
+          ],
+          "lettres_chiffres": 2139,
+          "mots": 436,
+          "paragraphes": 6,
+          "empreinte_normalisee": "95099059fb28df162499c5b838ee126155ff4f530823eef991db34650faa8379"
+        }
+      },
+      "signets": [
+        {
+          "titre": "Traduction en anglais",
+          "page": 1,
+          "ecart_points": 6.8
+        }
+      ],
+      "figures": [
+        {
+          "question": "Traduction en anglais",
+          "fichier": "figures/traduction.svg",
+          "legende": "Du retour des héritiers à la rencontre avec Don Thomas",
+          "page": 2,
+          "sha256_svg": "cf0262a5f12c28c548f0ed98a4830d9a693e8cf842f4e32cd76f958d909e59d5",
+          "sha256_forme_pdf": "4d7991c27314d2831b7ff8e0c39ccfa4f746cdbf818070af2f6977274bef9e73"
+        }
+      ],
+      "liens_sources": [
+        "https://www.ens-lyon.fr/sites/default/files/2021-10/Epreuves-de-Specialite.pdf#page=9",
+        "https://www.ens-lyon.fr/sites/default/files/2021-11/ANGLAIS_2021.pdf#page=13"
+      ],
+      "signatures_sur_premiere_page": [
+        "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+        "**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+      ],
+      "diagnostic_latex_propre": true,
+      "sha256_markdown": "bd2d51e5b4394b5a351b382b1691ca71af4e7e2c51bca022f3f4573423340314",
+      "sha256_pdf": "4d2648450d368800506472bce4ad812b12d2d5a68f7d00eac159b81f52f6589e"
+    },
+    "guide": {
+      "pages": 2,
+      "blocs_compares": {
+        "traduction_anglaise": {
+          "pages": [
+            1,
+            2
+          ],
+          "lettres_chiffres": 2139,
+          "mots": 436,
+          "paragraphes": 6,
+          "empreinte_normalisee": "95099059fb28df162499c5b838ee126155ff4f530823eef991db34650faa8379"
+        }
+      },
+      "signets": [
+        {
+          "titre": "Préparer le thème",
+          "page": 1,
+          "ecart_points": 6.8
+        },
+        {
+          "titre": "Traduction en anglais",
+          "page": 1,
+          "ecart_points": 9.0
+        }
+      ],
+      "figures": [
+        {
+          "question": "Traduction en anglais",
+          "fichier": "figures/traduction.svg",
+          "legende": "Du retour des héritiers à la rencontre avec Don Thomas",
+          "page": 1,
+          "sha256_svg": "cf0262a5f12c28c548f0ed98a4830d9a693e8cf842f4e32cd76f958d909e59d5",
+          "sha256_forme_pdf": "4d7991c27314d2831b7ff8e0c39ccfa4f746cdbf818070af2f6977274bef9e73"
+        }
+      ],
+      "liens_sources": [
+        "https://www.ens-lyon.fr/sites/default/files/2021-10/Epreuves-de-Specialite.pdf#page=9",
+        "https://www.ens-lyon.fr/sites/default/files/2021-11/ANGLAIS_2021.pdf#page=13"
+      ],
+      "signatures_sur_premiere_page": [
+        "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+        "**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+      ],
+      "diagnostic_latex_propre": true,
+      "sha256_markdown": "d2f6cfd2b94b3ba4eac6e8f5e9e4092c40bb6ec5e91fa8e2e8ffcf0d45b4732d",
+      "sha256_pdf": "83ad8f8e1e4575a6336c832a9201dd784652ffabb3e57ec19c198aafb1430565"
+    }
+  },
+  "sha256_contenus": {
+    "guide.md": "d2f6cfd2b94b3ba4eac6e8f5e9e4092c40bb6ec5e91fa8e2e8ffcf0d45b4732d",
+    "brut.md": "bd2d51e5b4394b5a351b382b1691ca71af4e7e2c51bca022f3f4573423340314",
+    "meta.json": "ec87ecbd4c9bd73c561419d89305a4c015a20c470284ae34f737ea07731c9d77",
+    "journal-revision.json": "2a40c20719c6a2185a7ef3f78d2e378a9ac4b26fb67f523be968a752b1a917df",
+    "figures/traduction.svg": "cf0262a5f12c28c548f0ed98a4830d9a693e8cf842f4e32cd76f958d909e59d5",
+    "brut.pdf": "4d2648450d368800506472bce4ad812b12d2d5a68f7d00eac159b81f52f6589e",
+    "guide.pdf": "83ad8f8e1e4575a6336c832a9201dd784652ffabb3e57ec19c198aafb1430565"
+  },
+  "sha256_archive": "8f5bc30d8ca7b6fb4c84bbf235625bf4936bd8321e637ffdb611d910a0103603"
+}
