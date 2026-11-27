@@ -5,17 +5,19 @@
     "filiere": "CNEL Lettres",
     "matiere": "Philosophie",
     "annee": 2026,
-    "type": "écrit"
+    "type": "écrit",
+    "modalite": "écrit"
   },
   "intitule": "Locke, la probabilité et le témoignage",
   "gabarit": "dissertation",
-  "questions": 0,
+  "questions": 2,
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/rapport_du_jury_philosophie_cnel_2026_ens-psl.pdf#page=2",
     "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_du_jury_philosophie_cnel_2026_ens-psl.pdf",
     "sha256_sujet": "b35249ef3aa6c5f5d7a08cd331dd51b70964840003e5ad2fc7736e0ace856460",
-    "sha256_rapport": "b35249ef3aa6c5f5d7a08cd331dd51b70964840003e5ad2fc7736e0ace856460"
+    "sha256_rapport": "b35249ef3aa6c5f5d7a08cd331dd51b70964840003e5ad2fc7736e0ace856460",
+    "controle_du_perimetre": "Écrit restitué dans le rapport, p. 2-3 ; attentes et observations p. 3-4. Deux tâches solidaires. Le rapport n’indique pas ici de durée pour cet écrit."
   },
   "figures": [
     {
@@ -46,6 +48,54 @@
       "perimetre": "Ajout d’un schéma de lecture original sur l’évidence et les raisons des trois auditeurs. Distinction explicite entre les exemples de Locke et la question d’interprétation du corrigé. Ajout dans les deux éditions après la copie.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle des deux obligations de l’écrit, de leurs plafonds et des 27 lignes. Distinction entre marche observée, charge envisagée au conditionnel et accusation de mensonge. Le problème formulé en I est repris en II."
     }
-  ]
+  ],
+  "date_revision": "2026-11-27",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I",
+      "II"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "I",
+        "page_pdf": 3,
+        "page_pdf_fin": 3,
+        "debut": "Comme la probabilité n’est pas accompagnée de cette évidence",
+        "fin": "mais présentement je suis assuré que vous mentez.",
+        "consigne": "Après avoir exposé les principales articulations du texte suivant, et formulé un problème philosophique qu’il soulève (max. 2 p. pour l’ensemble), vous développerez une réflexion sur ce problème (max. 4-5 pages).",
+        "page_consigne": 2,
+        "limite": "2 pages maximum pour les articulations et le problème ensemble"
+      },
+      {
+        "question": "II",
+        "page_pdf": 3,
+        "page_pdf_fin": 3,
+        "debut": "Comme la probabilité n’est pas accompagnée de cette évidence",
+        "fin": "mais présentement je suis assuré que vous mentez.",
+        "consigne": "Après avoir exposé les principales articulations du texte suivant, et formulé un problème philosophique qu’il soulève (max. 2 p. pour l’ensemble), vous développerez une réflexion sur ce problème (max. 4-5 pages).",
+        "page_consigne": 2,
+        "limite": "4-5 pages maximum pour la réflexion"
+      }
+    ]
+  }
 }
