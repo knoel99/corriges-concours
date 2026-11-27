@@ -4,20 +4,33 @@
     "concours": "ENS",
     "filiere": "MP-PC",
     "matiere": "Mathématiques MPI 2",
-    "annee": 2005
+    "annee": 2005,
+    "duree": "4 h",
+    "code_garde": "ULC 522",
+    "modalite": "écrit"
   },
   "questions": 25,
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
-    "sujet": "https://www.wikiprepa.fr/concours/data/ens_maths-2_mp-pc_2005.pdf",
-    "rapport_jury": "",
-    "sha256_sujet": "fbe603a72c3f5df838568f91422048732082c1b67897302397fa661dc8a7eea2"
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-mp/session-2005/sujet-2005-ecrit-mp_mathematiques_2.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/rapport-de-jury-session-2005/rapport-2005-mp_ecrit_mathematiques_cachan_lyon_paris.pdf",
+    "sha256_sujet": "fbe603a72c3f5df838568f91422048732082c1b67897302397fa661dc8a7eea2",
+    "index": "https://banques-ecoles.fr/cms/filiere-mp/annales-de-la-banque-mmpmpi/session-2005/",
+    "fac_simile_anterieur_identique": "https://www.wikiprepa.fr/concours/data/ens_maths-2_mp-pc_2005.pdf",
+    "sha256_rapport_jury": "90ec3ec2f0a1747607b1a1e35a71cdb4f18566bd5f717260940c1ab6efb89345",
+    "index_rapport": "https://banques-ecoles.fr/cms/filiere-mp/rapports-des-jurys-de-la-banque-mmpmpi/session-2005/"
   },
   "figures": [
     {
       "fichier": "figures/profils-de-transition.svg",
       "question": "IV.3.c",
       "legende": "Sur trois intervalles, les profils tendent vers les plateaux de signes alternés. Chaque morceau comporte deux demi-transitions."
+    },
+    {
+      "question": "III.3",
+      "fichier": "figures/cout-du-passage.svg",
+      "legende": "Le coût augmente de chaque côté de la valeur un. Sa dérivée s’y annule et un demi-passage jusqu’à cette valeur coûte deux tiers avant normalisation.",
+      "provenance": "Figure originale de la révision."
     }
   ],
   "contributions": [
@@ -31,6 +44,298 @@
       "perimetre": "Rédaction sur les huit pages du fascicule. Dérivées par morceaux et contre-exemple à I.1.b, première variation, régularité et conservation, énergie exacte des demi-profils, borne et construction optimales pour plusieurs interfaces. Figure de profils à deux échelles.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "x_hist_1987",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Confrontation des 25 rubriques au fascicule, vérifications de fond et de la figure précédente ou des figures précédentes ; compléments aux deux éditions portant sur les points suivants : contre-exemple de I.1.b confirmé par le jury, calcul exact du reste de première variation, majoration par les rampes, coût au maximum et énergie des demi-profils.",
+      "questions_modifiees": [
+        "I.1.b",
+        "II.2.a",
+        "II.3",
+        "III.3",
+        "IV.2"
+      ]
     }
-  ]
+  ],
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-mp/session-2005/sujet-2005-ecrit-mp_mathematiques_2.pdf",
+      "index": "https://banques-ecoles.fr/cms/filiere-mp/annales-de-la-banque-mmpmpi/session-2005/",
+      "sha256": "fbe603a72c3f5df838568f91422048732082c1b67897302397fa661dc8a7eea2",
+      "pages": 8,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "eb10b9a463fa09f321e3d4ceda24b6d0b1ea0af05dab0e374d46868898916359"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "a1ff0be101d9aa57407c82a227006828ed16be1c7454ddc665faac70a9621a81"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "70550f99bff4bc5da0bd86891bbb0207d98da65af0f5f1bfc30a5c8934b6ed9d"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "754ce58d914acfc4caca279a5234e04b55a4a9f03ca4ae2097f372fff245afdd"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "fbd9d0f16f37e2f343ebab9c36aba9b6bfd55fd93ca26ce5e3dbab6b376a06c3"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "baa268eeeddc7a73e645e1c5808380f4805825ea1a1953f9f50470d0ee652aa2"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "95005c2e66c2ee4be88ca573561f99a1af49dc89defab694376e6bc2d1b63810"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "6156b0eadcb42cddbaaa3f6ea4ce914ec62c54618bd16b173af141c67731643e"
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/rapport-de-jury-session-2005/rapport-2005-mp_ecrit_mathematiques_cachan_lyon_paris.pdf",
+      "index": "https://banques-ecoles.fr/cms/filiere-mp/rapports-des-jurys-de-la-banque-mmpmpi/session-2005/",
+      "sha256": "90ec3ec2f0a1747607b1a1e35a71cdb4f18566bd5f717260940c1ab6efb89345",
+      "pages": 2,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "0df0d35280cff5096afd33c479936fd9588262b10bf7a860cee3b0a8f0b0a064"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "7eb29cc107e2fab10c6da0ee475287757e5edfbe549c1f761338ce96fb25ecef"
+        }
+      ]
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1.a",
+      "I.1.b",
+      "I.1.c",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "II.1",
+      "II.2.a",
+      "II.2.b",
+      "II.2.c",
+      "II.2.d",
+      "II.2.e",
+      "II.3",
+      "II.4.a",
+      "II.4.b",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "IV.1",
+      "IV.2",
+      "IV.3.a",
+      "IV.3.b",
+      "IV.3.c"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "annexes_imposees": [],
+    "repere_par_question": [
+      {
+        "question": "I.1.a",
+        "page_pdf": 2,
+        "pages_rapport": [
+          1
+        ]
+      },
+      {
+        "question": "I.1.b",
+        "page_pdf": 2,
+        "pages_rapport": [
+          1
+        ],
+        "suite_page_pdf": 3
+      },
+      {
+        "question": "I.1.c",
+        "page_pdf": 3,
+        "pages_rapport": [
+          1
+        ]
+      },
+      {
+        "question": "I.2",
+        "page_pdf": 3,
+        "pages_rapport": [
+          1
+        ]
+      },
+      {
+        "question": "I.3",
+        "page_pdf": 3,
+        "pages_rapport": [
+          1
+        ]
+      },
+      {
+        "question": "I.4",
+        "page_pdf": 3,
+        "pages_rapport": [
+          1
+        ]
+      },
+      {
+        "question": "I.5",
+        "page_pdf": 3,
+        "pages_rapport": [
+          1
+        ]
+      },
+      {
+        "question": "II.1",
+        "page_pdf": 4,
+        "pages_rapport": [
+          1
+        ]
+      },
+      {
+        "question": "II.2.a",
+        "page_pdf": 4,
+        "pages_rapport": [
+          1
+        ]
+      },
+      {
+        "question": "II.2.b",
+        "page_pdf": 4,
+        "pages_rapport": [
+          1
+        ]
+      },
+      {
+        "question": "II.2.c",
+        "page_pdf": 4,
+        "pages_rapport": [
+          1
+        ],
+        "suite_page_pdf": 5
+      },
+      {
+        "question": "II.2.d",
+        "page_pdf": 5,
+        "pages_rapport": [
+          1
+        ]
+      },
+      {
+        "question": "II.2.e",
+        "page_pdf": 5,
+        "pages_rapport": [
+          1
+        ]
+      },
+      {
+        "question": "II.3",
+        "page_pdf": 5,
+        "pages_rapport": [
+          1
+        ]
+      },
+      {
+        "question": "II.4.a",
+        "page_pdf": 5,
+        "pages_rapport": [
+          1
+        ]
+      },
+      {
+        "question": "II.4.b",
+        "page_pdf": 5,
+        "pages_rapport": [
+          1
+        ]
+      },
+      {
+        "question": "III.1",
+        "page_pdf": 6,
+        "pages_rapport": [
+          1
+        ]
+      },
+      {
+        "question": "III.2",
+        "page_pdf": 6,
+        "pages_rapport": [
+          1
+        ]
+      },
+      {
+        "question": "III.3",
+        "page_pdf": 6,
+        "pages_rapport": [
+          1
+        ]
+      },
+      {
+        "question": "III.4",
+        "page_pdf": 6,
+        "pages_rapport": [
+          1
+        ]
+      },
+      {
+        "question": "IV.1",
+        "page_pdf": 7,
+        "pages_rapport": [
+          2
+        ]
+      },
+      {
+        "question": "IV.2",
+        "page_pdf": 7,
+        "pages_rapport": [
+          2
+        ]
+      },
+      {
+        "question": "IV.3.a",
+        "page_pdf": 7,
+        "pages_rapport": [
+          2
+        ]
+      },
+      {
+        "question": "IV.3.b",
+        "page_pdf": 7,
+        "pages_rapport": [
+          2
+        ]
+      },
+      {
+        "question": "IV.3.c",
+        "page_pdf": 8,
+        "pages_rapport": [
+          2
+        ]
+      }
+    ]
+  }
 }
