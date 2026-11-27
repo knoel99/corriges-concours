@@ -83,12 +83,12 @@ Grand Dieu ! Que ne suis-je mort à cet instant ! Pourquoi suis-je ici à relate
 
 ### Justifier trois décisions de traduction
 
-**L’action interrompue.** La conjecture était en train de se former au moment où le cri l’interrompt. L’imparfait ménage cette place à l’événement. À « je commençais » répond « j’entendis » au passé simple. La traduction du second cri doit également rendre le redémarrage de Victor après un arrêt d’un instant.
+**L’action interrompue.** *Was beginning* place la conjecture en cours à l’imparfait. Le cri qui l’interrompt appelle le passé simple.
 
-**La distance entre la chambre et le récit.** La première interrogation après l’entrée dans la chambre porte sur l’instant où Victor aurait voulu mourir. La suivante concerne sa présence au moment de parler. Le présent revient encore lorsqu’il se tourne et retrouve toujours la même silhouette. Mettre toute la scène au passé effacerait la persistance de cette vision.
+**La distance entre la chambre et le récit.** *Then* renvoie à la nuit du meurtre. Avec *why am I here* puis *I turn, I see*, Victor revient au présent de sa parole et d’une vision qui persiste.
 
-**Le lit des époux.** Un *bier* est un support funèbre sur lequel on dépose le mort. *Catafalque nuptial* maintient le sens funéraire du nom et la contradiction avec l’adjectif. Le lit est encore nommé à la ligne 33. Deux lignes plus loin, *bier* fait voir au même emplacement l’appareil d’une cérémonie funèbre.
+**Le lit des époux.** Au lit de la ligne 33 se superpose, ligne 35, le support funèbre désigné par *bier*. « Catafalque nuptial » maintient ensemble les noces et la mort.
 
 ## Bilan
 
-À la relecture du commentaire, vérifier que chaque interprétation précise qui voit, entend ou touche. À la relecture de la version, suivre dans la marge le passage de la marche au cri, du cri à l’immobilité, de l’immobilité à l’élan. Le dernier point du français tombe avec l’évanouissement.
+Qui voit, entend ou touche dans le commentaire ? Dans la version, suivre la marche, le cri, l’immobilité, l’élan puis l’évanouissement qui en marque la borne.
