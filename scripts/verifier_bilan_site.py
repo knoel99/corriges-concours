@@ -28,13 +28,23 @@ def verifier_page(contenu, lignes, date):
         fiche = urlsplit(sujet["fiche du site"])
         signature = sujet["historique éditorial"].splitlines()
         dossier = sujet["dossier GitHub"]
+        titre = ligne.xpath("./th/a[1]/text()" if fiche.path else "./th/span[1]/text()")
+        adresse = [fiche.path + ("?" + fiche.query if fiche.query else "")] if fiche.path else []
         if (
-            ligne.xpath("./th/a[1]/text()") != [sujet["épreuve"]]
-            or ligne.xpath("./th/a[1]/@href") != [f"{fiche.path}?{fiche.query}"]
+            titre != [sujet["épreuve"]]
+            or ligne.xpath("./th/a[1]/@href") != adresse
             or len(cellules) != 4
             or cellules[0].text_content().strip() != sujet["couverture GitHub"]
         ):
             raise ValueError(f"{slug} : identité, lien ou état du corrigé différent.")
+        if "rapport" in sujet:
+            for colonne, libelle in (("sujet", "Sujet"), ("rapport", "Rapport du jury")):
+                liens_sources = cellules[3].xpath(
+                    ".//a[normalize-space(.)=$libelle]/@href", libelle=libelle
+                )
+                url = sujet[colonne]
+                if liens_sources != ([url] if url else []):
+                    raise ValueError(f"{slug} : le lien « {libelle} » diffère du relevé.")
         liens = ligne.xpath(".//a/@href")
         journal = ligne.xpath('.//a[normalize-space(.)="Journal des interventions"]/@href')
         attendu = [dossier.replace("/tree/", "/blob/") + "/meta.json"] if dossier else []
@@ -91,7 +101,7 @@ def verifier_tableau(dossier):
         "date_releve": bilan["date"],
         "epreuves": len(sujets),
         "epreuves_signees": sum(
-            s["couverture GitHub"] in {"Complet", "Partiel"}
+            s["couverture GitHub"] in {"Complet", "Partiel", "Couverture à confirmer"}
             and s["modèle"] == "GPT-6.2 Astra" and s["effort"] == "Ultra"
             for s in sujets
         ),
