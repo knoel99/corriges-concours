@@ -1,0 +1,135 @@
+{
+  "slug": "bel_al_arabe-commentaire-et-traduction_2021",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Arabe (commentaire et traduction)",
+    "annee": 2021,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "duree_heures": 6,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2021-10/Commentaire-et-traduction-en-LVE.pdf#page=6",
+    "sujet_sha256": "3caa2cab1297b4899fabe9fd1487a5f16e5f344f3d9b28e88656b03818586053",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2021-11/Arabe_2021.pdf#page=1",
+    "rapport_jury_sha256": "18a416f082c808e3bf998c47794c8c6199f3315f6a873368e21d38dd72a6c826",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2021",
+    "ouvrage": "Tahar Haddad, *Notre femme dans la législation islamique et la société*, édition citée sur le sujet, 2011.",
+    "pages_rapport_verifiees": [
+      1
+    ],
+    "section_rapport": "Écrit, toutes séries, commentaire et traduction."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2021-10/Commentaire-et-traduction-en-LVE.pdf#page=6",
+      "sha256": "3caa2cab1297b4899fabe9fd1487a5f16e5f344f3d9b28e88656b03818586053",
+      "pages": 19,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "21387dc86b3fb376e2bfa98e2665ba4e4de8d3374af4f11194dd23614da9d289"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "102fab19a83e2fe0f382c86ebbc2bd51a9e6341b92087dab1f2e6d5dd0602f6f"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "1e144df9596149b8d73f1a5d2969d98055cbb1cce4405bed770e1b1128c6b054"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2021-11/Arabe_2021.pdf#page=1",
+      "sha256": "18a416f082c808e3bf998c47794c8c6199f3315f6a873368e21d38dd72a6c826",
+      "pages": 1,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "ad8231c6f1bc5be7e7a210dd70f4eaf78c8c40025792bf5d1bc70f962ca2bfdc"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "Commentaire en arabe",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "Les deux camps européens partagent un premier accord. En Orient le désaccord porte déjà sur les études et la liberté civile."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire arabe de l’extrait entier, version française de toutes les phrases prescrites, indications et schéma."
+    },
+    {
+      "phase": "revision",
+      "agent": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Distinction entre les droits civils déjà admis dans la comparaison européenne et le désaccord sur la souveraineté. Vérification des sujets de la phrase sur le bénéfice réciproque et de l’arrêt en cours de ligne 17."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire en arabe",
+      "Version française"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "Commentaire en arabe",
+        "pages_pdf": [
+          6,
+          7
+        ],
+        "lignes": [
+          1,
+          34
+        ],
+        "langue": "arabe"
+      },
+      {
+        "question": "Version française",
+        "pages_pdf": [
+          6
+        ],
+        "lignes": [
+          11,
+          17
+        ],
+        "premiers_mots": "الناس أمام المرأة",
+        "derniers_mots": "تيّار قوي",
+        "langue": "français"
+      }
+    ]
+  }
+}
