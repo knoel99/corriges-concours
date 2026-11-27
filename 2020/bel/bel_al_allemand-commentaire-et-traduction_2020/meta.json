@@ -1,0 +1,185 @@
+{
+  "slug": "bel_al_allemand-commentaire-et-traduction_2020",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Allemand (commentaire et traduction)",
+    "annee": 2020,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "duree_heures": 6,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2020-09/2020%20Commentaire%20d%27un%20texte%20en%20LVE%20et%20traduction.pdf#page=2",
+    "sujet_sha256": "38b8795aae8773ed81ebd843f2436a126f190f44a6a853ee15d561be36f8c269",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2020-10/ALLEMAND_2020%20internet.pdf#page=1",
+    "rapport_jury_sha256": "a3d380b09868922ff45092415fd8a9898bba1662949337a197e5088043a0b5bb",
+    "index_annuel": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2020",
+    "ouvrage": "Uwe Timm, *Der Freund und der Fremde. Eine Erzählung*, 2005.",
+    "pages_rapport_verifiees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "section_rapport": "Écrit, toutes séries, commentaire et traduction."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2020-09/2020%20Commentaire%20d%27un%20texte%20en%20LVE%20et%20traduction.pdf#page=2",
+      "sha256": "38b8795aae8773ed81ebd843f2436a126f190f44a6a853ee15d561be36f8c269",
+      "pages": 19,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "bed93f9cad31bd6dd7e6cac821b5c6e087d7be43497d51815af4c72c4b1b3f08"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "e3aaeaa784253dd8a2dd9d55e5aa5880e5d0297f2dbe0b83758a6dc23ad8a8a1"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "c2fefe044841670b3df3a1c7cbcc3142e72880d384f09d4835f4563b659f02f8"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2020-10/ALLEMAND_2020%20internet.pdf#page=1",
+      "sha256": "a3d380b09868922ff45092415fd8a9898bba1662949337a197e5088043a0b5bb",
+      "pages": 18,
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "b5a8b8d556d209b280c70fb501017fa13d2e77529818af5ab81dfe4f3864360a"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "64211c88d820dfad500735933a2383f3ce6ad47d9a36732abe467c484c23db1f"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "617b87420e20456ce36bb09322cb7689f514d5a3c52116aa9108a3394f4e70f8"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "766852986b3176303e3504b88f272d0ff7441ce079dbc26d578d9cd6c0a278d5"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "2292a935f8d39e1e5d9d7a7a572f1b060b5d872659cbd7209d3b8f44ca0d82d6"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "8f12da187d79b70f1eab884010918243e9d4c73ffc02ad95cab3d99459c2b1e1"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "d9cfaeb212cf0b5200d68089b61c0b1dd177bf27f44666289c4c903dcf88cba7"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "ccaf3141e4940615a0913ba26a06094b951353452e3f1b969ec3b36724f70b4c"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "172221410c7bdf7ead12eae1b9700f3f7e0415de993134cab612cd319f78ab4e"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "9225cee1d978304dcc314b3b0626fb418d236943bb233ac6522766dc97e9cd51"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "14f194ddf94d913d09c524ab94bd5079082936d2381317720a9ecf5fef0836c5"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "Commentaire en allemand",
+      "numero": 1,
+      "fichier": "figures/lecture.svg",
+      "legende": "Le fils garde la trace d’un départ, l’ami reconnaît une trace du père, puis le nom du père disparaît provisoirement de la tombe."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Commentaire allemand de l’extrait entier, version française de toutes les phrases prescrites, indications et schéma."
+    },
+    {
+      "phase": "revision",
+      "agent": "francais_pt_2325",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Contrôle des locuteurs au changement de personne derrière le store et de la chronologie de la vidéo. Vérification des relatives et de la fin à l’intérieur de la ligne 23."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire en allemand",
+      "Version française"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "Commentaire en allemand",
+        "pages_pdf": [
+          2,
+          3
+        ],
+        "lignes": [
+          1,
+          61
+        ],
+        "langue": "allemand"
+      },
+      {
+        "question": "Version française",
+        "pages_pdf": [
+          2
+        ],
+        "lignes": [
+          8,
+          23
+        ],
+        "premiers_mots": "Er hat Tee gemacht",
+        "derniers_mots": "Brauchbaren und Unbrauchbaren.",
+        "langue": "français"
+      }
+    ]
+  }
+}
