@@ -1,0 +1,196 @@
+{
+  "slug": "banque-pt_pt_physique-a_2009",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique A",
+    "annee": 2009
+  },
+  "redaction": "Corrigés non officiels rédigés et vérifiés par IA.",
+  "questions": 22,
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2009/phys_a_2009.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2009/rapport_phys_a_ecrit_2009.pdf",
+    "index_sujets": "https://www.banquept.fr/article62.html",
+    "livret": "https://www.banquept.fr/documents/livret/2009/Livret_PT_2009.pdf#page=12",
+    "index_rapports": "https://www.banquept.fr/article55.html",
+    "sha256_sujet": "4b1bb3e5a42d37d839a61872af95a5b84e9976ba6b54252a824c4b44fc90f214",
+    "pages_sujet": 12,
+    "sha256_rapport_jury": "3b3f06cef6fd014b0cefa578c67d5b5226aec58d6e95b85392b6d0b3fd8e0296",
+    "pages_rapport_jury": 3,
+    "sha256_livret": "a3c1cf502cc1a8772e9b488ffec97dba9f6ce8298fb91e23dd0cf6ea2d5e75b9",
+    "pages_livret": 71,
+    "coefficients_admissibilite": {
+      "ENS Cachan": 3,
+      "École polytechnique": 6
+    }
+  },
+  "figures": [
+    {
+      "question": "A.III.3",
+      "fichier": "figures/transfert.svg",
+      "legende": "Transfert à fréquence fixée et reconstruction de la lecture de phase sur le deuxième oscillogramme."
+    },
+    {
+      "question": "B.II.5–II.7",
+      "fichier": "figures/temperature.svg",
+      "legende": "Échauffement relatif dans l’épaisseur. La pente s’annule sur la face isolée."
+    },
+    {
+      "question": "D.IV.2",
+      "fichier": "figures/rayons.svg",
+      "legende": "Construction de l’image d’un point décentré par une lentille mince, en coordonnées de la lentille."
+    },
+    {
+      "question": "D.IV.3",
+      "fichier": "figures/resolution.svg",
+      "legende": "Résolution locale sur la totalité de la plage du détecteur incliné. Les trois points correspondent aux valeurs demandées."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A.I.1",
+      "A.I.2",
+      "A.II.1–II.2",
+      "A.II.3",
+      "A.III.1",
+      "A.III.2",
+      "A.III.3",
+      "A.III.4",
+      "B.I",
+      "B.II.1–II.4",
+      "B.II.5–II.7",
+      "C.I",
+      "C.II.1",
+      "C.II.2",
+      "C.II.3",
+      "D.I",
+      "D.II",
+      "D.III",
+      "D.IV.1",
+      "D.IV.2",
+      "D.IV.3",
+      "D.IV.4"
+    ],
+    "editions_verifiees": [
+      "brut",
+      "guide"
+    ],
+    "reperes": [
+      {
+        "question": "A.I.1",
+        "page_sujet": 2
+      },
+      {
+        "question": "A.I.2",
+        "page_sujet": 2
+      },
+      {
+        "question": "A.II.1–II.2",
+        "page_sujet": 3
+      },
+      {
+        "question": "A.II.3",
+        "page_sujet": 3
+      },
+      {
+        "question": "A.III.1",
+        "page_sujet": 4
+      },
+      {
+        "question": "A.III.2",
+        "page_sujet": 4
+      },
+      {
+        "question": "A.III.3",
+        "page_sujet": 4
+      },
+      {
+        "question": "A.III.4",
+        "page_sujet": 5
+      },
+      {
+        "question": "B.I",
+        "page_sujet": 6
+      },
+      {
+        "question": "B.II.1–II.4",
+        "page_sujet": 6
+      },
+      {
+        "question": "B.II.5–II.7",
+        "page_sujet": 6
+      },
+      {
+        "question": "C.I",
+        "page_sujet": 7
+      },
+      {
+        "question": "C.II.1",
+        "page_sujet": 7
+      },
+      {
+        "question": "C.II.2",
+        "page_sujet": 8
+      },
+      {
+        "question": "C.II.3",
+        "page_sujet": 8
+      },
+      {
+        "question": "D.I",
+        "page_sujet": 10
+      },
+      {
+        "question": "D.II",
+        "page_sujet": 10
+      },
+      {
+        "question": "D.III",
+        "page_sujet": 11
+      },
+      {
+        "question": "D.IV.1",
+        "page_sujet": 11
+      },
+      {
+        "question": "D.IV.2",
+        "page_sujet": 12
+      },
+      {
+        "question": "D.IV.3",
+        "page_sujet": 12
+      },
+      {
+        "question": "D.IV.4",
+        "page_sujet": 12
+      }
+    ],
+    "precision": "Quatre parties de l’épreuve, pages 2 à 12. Les trois oscillogrammes A.III.3, la photographie graduée C.II.3, les schémas analogiques et la géométrie du capteur de la dernière page ont été contrôlés sur les figures du sujet."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modifications": true,
+      "perimetre": "Le sujet relie l’induction et la diffusion thermique à deux questions de mesure : comment former l’image nette d’une règle inclinée et déduire une position de deux photocourants."
+    },
+    {
+      "phase": "revision",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "fournisseur": "codex",
+      "agent": "x_hist_8589",
+      "modifications": true,
+      "perimetre": "Vérification sur le scan des trois mesures crête à crête, du sens de l’avance en A.III.3 et des positions des traits 3, 1,5 et 0 à mi-hauteur en C.II.3. Contrôle de la dérivée du capteur par différences centrées, des deux limites et des trois résolutions. Ajout du plan du détecteur au tracé des deux rayons pour rendre visible le défaut de mise au point."
+    }
+  ]
+}
