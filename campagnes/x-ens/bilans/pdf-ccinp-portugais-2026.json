@@ -1,0 +1,145 @@
+{
+  "slug": "ccinp_mp-mpi-pc-psi-tpc-tsi_portugais_2026",
+  "commit_export": "1517e5dfbe7e7ae4c7cb9ee7cdd40d9918c1ce97",
+  "arbre_git": "3145448a396d127b066c66c8d50b9bc4c487bedf",
+  "archive": "CCINP-LVA-portugais-2026.zip",
+  "agent": "lva_pt_2325",
+  "revision": {
+    "phase": "relecture_corrige",
+    "tour": 1,
+    "agent": "lva_pt_2325",
+    "session": "/root/lva_pt_2325",
+    "modele": "gpt-6.2-astra",
+    "effort": "ultra",
+    "vitesse": null,
+    "date": "2026-11-27",
+    "modifications": true,
+    "perimetre": "Révision des deux éditions, confrontation des documents et figures au sujet et au rapport publiés, vérification du décompte depuis le titre."
+  },
+  "sources": {
+    "sujet": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/Ep%20communes/2026_LVA6AU.pdf#page=10",
+    "rapport_jury": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/Ep%20communes/LV_ECRIT_2026_05.10.pdf#page=26",
+    "sha256_sujet": "f4aff4b5f57beec696fa9ae91f8dcac2d16ef0b2b1c30b80655e4be90c59a593",
+    "sha256_rapport_jury": "23a73e191a42c2fcd03b46b4baca6da1089739620013f3ba144814c9a261dbb0",
+    "pages_pdf_sujet_verifiees": [
+      1,
+      10,
+      11,
+      12,
+      13
+    ],
+    "pages_pdf_rapport_verifiees": [
+      1,
+      2,
+      26,
+      27
+    ]
+  },
+  "decompte": {
+    "titre": "Incêndios em Portugal e no Brasil entre o custo dos danos e o trabalho de prevenção",
+    "langue": "portugais",
+    "minimum": 360,
+    "maximum": 440,
+    "mots": 418,
+    "titre_et_paragraphes": [
+      16,
+      69,
+      102,
+      104,
+      127
+    ],
+    "barres": 20,
+    "total_imprime": "418 palavras, incluindo o título.",
+    "groupes_source_introduction": [],
+    "convention": "Titre inclus. Dans l’introduction, chaque source et chaque date comptent pour un mot, ainsi que le renvoi compact à un document. Unités séparées par des blancs pour le reste de la copie. Chaque vingtième mot est suivi d’une barre. Total et FIN hors compte."
+  },
+  "editions": {
+    "brut": {
+      "pages": 2,
+      "pages_copie": [
+        1
+      ],
+      "copie_integrale_et_total_verifies": true,
+      "barres_verifiees": 20,
+      "fin_verifie": true,
+      "signets": [
+        [
+          1,
+          "Incêndios em Portugal e no Brasil entre o custo dos danos e o trabalho de prevenção",
+          1
+        ]
+      ],
+      "figures": [
+        {
+          "fichier": "figures/lecture-croisee.svg",
+          "legende": "Comparer les surfaces, les usages et les décisions",
+          "question": "Synthèse",
+          "page_pdf": 2,
+          "sha256_svg": "044d89c501d66e426f2eabb2f16aad4c2a5d589ef18b1334dd13eca3459bf506",
+          "sha256_forme_pdf": "4d37cece058164d89f709f84d9fcb171b0ab97b4e1fcfa41fc5bd954df02e6f6"
+        }
+      ],
+      "signatures_sur_premiere_page": [
+        "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+        "**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+      ],
+      "sha256_pdf": "aecc5915eed0b80452518d3e299b114bdc5af1692b6a6936d4b717aa18982ea5",
+      "sha256_markdown": "3be0e88fd42f340fff05534758e57302a6f32147f2bb97bd512908d9a2616e7b",
+      "diagnostic_latex_propre": true
+    },
+    "guide": {
+      "pages": 2,
+      "pages_copie": [
+        2
+      ],
+      "copie_integrale_et_total_verifies": true,
+      "barres_verifiees": 20,
+      "fin_verifie": true,
+      "signets": [
+        [
+          1,
+          "Lire la consigne",
+          1
+        ],
+        [
+          1,
+          "Croiser les documents",
+          1
+        ],
+        [
+          1,
+          "Incêndios em Portugal e no Brasil entre o custo dos danos e o trabalho de prevenção",
+          2
+        ]
+      ],
+      "figures": [
+        {
+          "fichier": "figures/lecture-croisee.svg",
+          "legende": "Comparer les surfaces, les usages et les décisions",
+          "question": "Synthèse",
+          "page_pdf": 1,
+          "sha256_svg": "044d89c501d66e426f2eabb2f16aad4c2a5d589ef18b1334dd13eca3459bf506",
+          "sha256_forme_pdf": "4d37cece058164d89f709f84d9fcb171b0ab97b4e1fcfa41fc5bd954df02e6f6"
+        }
+      ],
+      "signatures_sur_premiere_page": [
+        "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée",
+        "**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+      ],
+      "sha256_pdf": "3022196c7f214a0cfaef0d087321e5e4144ef77ef2b94071d0f7adac87e04b86",
+      "sha256_markdown": "88ab858ecf32a1e820b9f4898a02b2098e5ca7ec5c600189841d04361712c0ad",
+      "diagnostic_latex_propre": true
+    }
+  },
+  "sha256_contenus": {
+    "guide.md": "88ab858ecf32a1e820b9f4898a02b2098e5ca7ec5c600189841d04361712c0ad",
+    "brut.md": "3be0e88fd42f340fff05534758e57302a6f32147f2bb97bd512908d9a2616e7b",
+    "meta.json": "5774a3e41c1429a0282e3efa69d025aa3eb9698ff71df2f1864cdd0747377622",
+    "journal-revision.json": "ffe3b6e586e3a0b3cd25a4eb813ae1550f62799b7db136a5a09745999b7df469",
+    "figures/lecture-croisee.svg": "044d89c501d66e426f2eabb2f16aad4c2a5d589ef18b1334dd13eca3459bf506",
+    "brut.pdf": "aecc5915eed0b80452518d3e299b114bdc5af1692b6a6936d4b717aa18982ea5",
+    "guide.pdf": "3022196c7f214a0cfaef0d087321e5e4144ef77ef2b94071d0f7adac87e04b86",
+    "verifier-decompte.py": "576cfd891d23390f28fb2d7122c705914f1fd6972e3feb4b8fec8440443c7595"
+  },
+  "sha256_archive": "0ebf8fe15fb60141772499b7c630664828b7afd7e89359b74454bc730eb5d991"
+}
