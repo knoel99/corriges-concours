@@ -1,0 +1,518 @@
+{
+  "slug": "banque-pt_pt_physique-a_2011",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique A",
+    "annee": 2011,
+    "duree": "4 h",
+    "modalite": "écrit",
+    "code_garde": "11PT17"
+  },
+  "questions": 51,
+  "redaction": "Proposition pédagogique non officielle, rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2011/phys_a_pt_2011.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2011/rapport_phys_a_ecrit_2011.pdf",
+    "livret": "https://www.banquept.fr/documents/livret/2011/Livret_PT_2011.pdf#page=13"
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://www.banquept.fr/documents/2011/phys_a_pt_2011.pdf",
+      "sha256": "fe072bece238d7acc3ad6ce4e37b8414c13e694de3f84ab44e7f141ae3073c6f",
+      "pages": 14,
+      "fichier_banque": "phys_a_pt_2011.pdf",
+      "sha256_conteneur": "fe072bece238d7acc3ad6ce4e37b8414c13e694de3f84ab44e7f141ae3073c6f",
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "115dc69bcb1a7e2a885c9db8c1c96e6335002f72f0e646497984b3d4f4af31d5"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "d149e6ae65637f13e40241bee54f3ceb8563804a73631f7f979504f09c11f9de"
+        },
+        {
+          "numero": 3,
+          "rendu_sha256": "3f9660cdb07cac85d7c169ea011e101e52ea04a17600555843d09c883d86c7b3"
+        },
+        {
+          "numero": 4,
+          "rendu_sha256": "3e2f944d1c0753ca91e3f1ef456016b018efaee893f3ddc4bb48ac4c2ce5ab18"
+        },
+        {
+          "numero": 5,
+          "rendu_sha256": "2e198a348a5964a3cdaeceb52e5959523cc1a092da28155e7eb6fed61cee69d6"
+        },
+        {
+          "numero": 6,
+          "rendu_sha256": "6281c49208254eb1ace0946a2e105a1487335e147bee99620f5e2d90a52bd1c6"
+        },
+        {
+          "numero": 7,
+          "rendu_sha256": "895e9af8dd59d24229cbee8fd4ca053f149f6d1eae0c7dd1c865089a07223bba"
+        },
+        {
+          "numero": 8,
+          "rendu_sha256": "41ecb1378986e4a5749bfa2949550c159633b5faaa3cb7a43f133aecc1d68ea3"
+        },
+        {
+          "numero": 9,
+          "rendu_sha256": "950768a70e66becbc076720526edbbb326fb7921da84191556b70f2c9c16929a"
+        },
+        {
+          "numero": 10,
+          "rendu_sha256": "20db56ffc67378f14e4bca80d0731a17e29ac31b4cb3ec766c7b240246b5b4a3"
+        },
+        {
+          "numero": 11,
+          "rendu_sha256": "95b8feda316a74c546ef645fe5667df16055ee6da4c79b3597f12ddcf669b3f5"
+        },
+        {
+          "numero": 12,
+          "rendu_sha256": "796f12dd295da5bdb55fe5cbf261a94899f3d7ad93f29d73e89b40d5c34f6f7a"
+        },
+        {
+          "numero": 13,
+          "rendu_sha256": "ea3c501cca3f3f05c878c0c288bb52701dea8a034b0c8b823353fcdf9f7d782d"
+        },
+        {
+          "numero": 14,
+          "rendu_sha256": "966e238b24364c88d1946ee832dcdff6f645e92766536ecde7c0f73e66c0c25a"
+        }
+      ]
+    },
+    "rapport": {
+      "url": "https://www.banquept.fr/documents/ecrit/rapport/2011/rapport_phys_a_ecrit_2011.pdf",
+      "sha256": "ed9282fdaffc57c6775673f7bdaee8f18b915e37f6e1d9e7ea6ac9b03eac2ee9",
+      "pages": 2,
+      "fichier_banque": "rapport_phys_a_ecrit_2011.pdf",
+      "sha256_conteneur": "ed9282fdaffc57c6775673f7bdaee8f18b915e37f6e1d9e7ea6ac9b03eac2ee9",
+      "pages_verifiees": [
+        {
+          "numero": 1,
+          "rendu_sha256": "3b3457dad5281245c3ad3d6cc9870eb21437e2f0208b6d16c2f979f038e44932"
+        },
+        {
+          "numero": 2,
+          "rendu_sha256": "ffde4dc6770f18b1755a2f943a1f020adfd7e3cf184118300bee19cd5e58d407"
+        }
+      ]
+    },
+    "livret": {
+      "url": "https://www.banquept.fr/documents/livret/2011/Livret_PT_2011.pdf#page=13",
+      "sha256": "f9cd26395e9749f34a6ba265a7ac7f313e4550c3ab2d4fca547d3d492498f219",
+      "pages": 73,
+      "pages_verifiees": [
+        {
+          "numero": 13,
+          "rendu_sha256": "d32aeaa8960bcd3f63d8921ad8da22a774905f9e69196acc49991f4627564757"
+        }
+      ]
+    }
+  },
+  "figures": [
+    {
+      "question": "II.A2",
+      "fichier": "figures/miroir-convexe.svg",
+      "legende": "Construction paraxiale. Les rayons réfléchis repartent vers la gauche et leurs prolongements se rencontrent en B′ derrière le miroir.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "II.B7",
+      "fichier": "figures/profil-michelson.svg",
+      "legende": "Profil parabolique proposé pour interpréter la figure 8. Une variation verticale de 0,3165 micromètre correspond à une période de l’intensité.",
+      "provenance": "Figure originale."
+    },
+    {
+      "question": "III.7",
+      "fichier": "figures/dispersion-plasma.svg",
+      "legende": "La vitesse de phase décroît depuis le seuil de propagation. La droite horizontale représente la célérité de la lumière dans le vide.",
+      "provenance": "Figure originale."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.A1",
+      "I.A2",
+      "I.A3",
+      "I.A4",
+      "I.A5",
+      "I.A6",
+      "I.A7",
+      "I.A8",
+      "I.A9",
+      "I.A10",
+      "I.B1",
+      "I.B2",
+      "I.B3",
+      "I.B4",
+      "I.B5",
+      "I.B6",
+      "I.B7",
+      "I.B8",
+      "I.B9",
+      "II.A1",
+      "II.A2",
+      "II.A3",
+      "II.A4",
+      "II.A5",
+      "II.A6",
+      "II.A7",
+      "II.A8",
+      "II.A9",
+      "II.A10",
+      "II.A11",
+      "II.A12",
+      "II.A13",
+      "II.A14",
+      "II.B1",
+      "II.B2",
+      "II.B3",
+      "II.B4",
+      "II.B5",
+      "II.B6",
+      "II.B7",
+      "II.B8",
+      "II.B9",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7",
+      "III.8",
+      "III.9"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "annexes_imposees": [],
+    "repere_par_question": [
+      {
+        "question": "I.A1",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Champ gravitationnel terrestre"
+      },
+      {
+        "question": "I.A2",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Période et choix imprimés"
+      },
+      {
+        "question": "I.A3",
+        "page_pdf": 3,
+        "page_rapport": 2,
+        "objet": "Vitesse orbitale"
+      },
+      {
+        "question": "I.A4",
+        "page_pdf": 4,
+        "page_rapport": 1,
+        "objet": "Énergie potentielle"
+      },
+      {
+        "question": "I.A5",
+        "page_pdf": 4,
+        "page_rapport": 1,
+        "objet": "Viriel sur le cercle"
+      },
+      {
+        "question": "I.A6",
+        "page_pdf": 4,
+        "page_rapport": 1,
+        "objet": "Dimension du coefficient de frottement"
+      },
+      {
+        "question": "I.A7",
+        "page_pdf": 4,
+        "page_rapport": 1,
+        "objet": "Énergie de l’orbite lentement variable"
+      },
+      {
+        "question": "I.A8",
+        "page_pdf": 4,
+        "page_rapport": 1,
+        "objet": "Évolution de l’altitude"
+      },
+      {
+        "question": "I.A9",
+        "page_pdf": 4,
+        "page_rapport": 1,
+        "objet": "Perte par révolution et bilan décennal"
+      },
+      {
+        "question": "I.A10",
+        "page_pdf": 4,
+        "page_rapport": 1,
+        "objet": "Choix de l’orbite"
+      },
+      {
+        "question": "I.B1",
+        "page_pdf": 5,
+        "page_rapport": 2,
+        "objet": "Orbites du barycentre"
+      },
+      {
+        "question": "I.B2",
+        "page_pdf": 5,
+        "page_rapport": 2,
+        "objet": "Forces gravitationnelles"
+      },
+      {
+        "question": "I.B3",
+        "page_pdf": 5,
+        "page_rapport": 2,
+        "objet": "Forces d’inertie"
+      },
+      {
+        "question": "I.B4",
+        "page_pdf": 5,
+        "page_rapport": 2,
+        "objet": "Moment de Coriolis"
+      },
+      {
+        "question": "I.B5",
+        "page_pdf": 5,
+        "page_rapport": 2,
+        "objet": "Développement du gradient de gravité"
+      },
+      {
+        "question": "I.B6",
+        "page_pdf": 5,
+        "page_rapport": 2,
+        "objet": "Couple de rappel"
+      },
+      {
+        "question": "I.B7",
+        "page_pdf": 6,
+        "page_rapport": 2,
+        "objet": "Équation et équilibres"
+      },
+      {
+        "question": "I.B8",
+        "page_pdf": 6,
+        "page_rapport": 2,
+        "objet": "Stabilité de l’orientation radiale"
+      },
+      {
+        "question": "I.B9",
+        "page_pdf": 6,
+        "page_rapport": 2,
+        "objet": "Période de libration"
+      },
+      {
+        "question": "II.A1",
+        "page_pdf": 6,
+        "page_rapport": 2,
+        "objet": "Conditions de Gauss"
+      },
+      {
+        "question": "II.A2",
+        "page_pdf": 6,
+        "page_rapport": 2,
+        "objet": "Construction au miroir convexe"
+      },
+      {
+        "question": "II.A3",
+        "page_pdf": 7,
+        "page_rapport": 2,
+        "objet": "Conjugaison et grandissement"
+      },
+      {
+        "question": "II.A4",
+        "page_pdf": 8,
+        "page_rapport": 2,
+        "objet": "Image du primaire"
+      },
+      {
+        "question": "II.A5",
+        "page_pdf": 8,
+        "page_rapport": 2,
+        "objet": "Foyer du télescope"
+      },
+      {
+        "question": "II.A6",
+        "page_pdf": 8,
+        "page_rapport": 2,
+        "objet": "Grandissements successifs"
+      },
+      {
+        "question": "II.A7",
+        "page_pdf": 8,
+        "page_rapport": 2,
+        "objet": "Valeur et sens de l’image"
+      },
+      {
+        "question": "II.A8",
+        "page_pdf": 8,
+        "page_rapport": 2,
+        "objet": "Focale équivalente"
+      },
+      {
+        "question": "II.A9",
+        "page_pdf": 8,
+        "page_rapport": 2,
+        "objet": "Intérêt du trajet replié"
+      },
+      {
+        "question": "II.A10",
+        "page_pdf": 8,
+        "page_rapport": 2,
+        "objet": "Position du capteur"
+      },
+      {
+        "question": "II.A11",
+        "page_pdf": 8,
+        "page_rapport": 2,
+        "objet": "Résolution de SPOT 4"
+      },
+      {
+        "question": "II.A12",
+        "page_pdf": 8,
+        "page_rapport": 2,
+        "objet": "Largeur de la bande observée"
+      },
+      {
+        "question": "II.A13",
+        "page_pdf": 8,
+        "page_rapport": 2,
+        "objet": "Pixels nécessaires pour SPOT 5"
+      },
+      {
+        "question": "II.A14",
+        "page_pdf": 9,
+        "page_rapport": 2,
+        "objet": "Limite de diffraction"
+      },
+      {
+        "question": "II.B1",
+        "page_pdf": 9,
+        "page_rapport": 2,
+        "objet": "Lame d’air en incidence normale"
+      },
+      {
+        "question": "II.B2",
+        "page_pdf": 10,
+        "page_rapport": 2,
+        "objet": "Recherche du contact optique"
+      },
+      {
+        "question": "II.B3",
+        "page_pdf": 10,
+        "page_rapport": 2,
+        "objet": "Coin d’air"
+      },
+      {
+        "question": "II.B4",
+        "page_pdf": 10,
+        "page_rapport": 2,
+        "objet": "Épaisseur d’air au-dessus du défaut"
+      },
+      {
+        "question": "II.B5",
+        "page_pdf": 10,
+        "page_rapport": 2,
+        "objet": "Localisation des anneaux"
+      },
+      {
+        "question": "II.B6",
+        "page_pdf": 10,
+        "page_rapport": 2,
+        "objet": "Rayons des franges brillantes"
+      },
+      {
+        "question": "II.B7",
+        "page_pdf": 11,
+        "page_rapport": 2,
+        "objet": "Lecture de la figure 8 et signe du relief"
+      },
+      {
+        "question": "II.B8",
+        "page_pdf": 12,
+        "page_rapport": 2,
+        "objet": "Marche de l’écho géodésique"
+      },
+      {
+        "question": "II.B9",
+        "page_pdf": 12,
+        "page_rapport": 2,
+        "objet": "Lecture de Yellowstone"
+      },
+      {
+        "question": "III.1",
+        "page_pdf": 13,
+        "page_rapport": 2,
+        "objet": "Forces sur les porteurs"
+      },
+      {
+        "question": "III.2",
+        "page_pdf": 13,
+        "page_rapport": 2,
+        "objet": "Courant du plasma"
+      },
+      {
+        "question": "III.3",
+        "page_pdf": 13,
+        "page_rapport": 2,
+        "objet": "Équations de Maxwell"
+      },
+      {
+        "question": "III.4",
+        "page_pdf": 13,
+        "page_rapport": 2,
+        "objet": "Équation d’onde dans le plasma"
+      },
+      {
+        "question": "III.5",
+        "page_pdf": 14,
+        "page_rapport": 2,
+        "objet": "Nombre d’onde"
+      },
+      {
+        "question": "III.6",
+        "page_pdf": 14,
+        "page_rapport": 2,
+        "objet": "Bande de propagation"
+      },
+      {
+        "question": "III.7",
+        "page_pdf": 14,
+        "page_rapport": 2,
+        "objet": "Dispersion et vitesse de phase"
+      },
+      {
+        "question": "III.8",
+        "page_pdf": 14,
+        "page_rapport": 2,
+        "objet": "Coupure et valeurs proposées"
+      },
+      {
+        "question": "III.9",
+        "page_pdf": 14,
+        "page_rapport": 2,
+        "objet": "Coupures de nuit et de jour"
+      }
+    ]
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "fournisseur": "codex",
+      "agent": "x_hist_1987",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture de la garde, des questions et des documents de la Banque PT ; rédaction et contrôle de 51 rubriques dans les deux éditions, indications, figures et vérifications indépendantes."
+    }
+  ]
+}
