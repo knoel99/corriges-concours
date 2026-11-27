@@ -4,7 +4,11 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Polynômes creux.** L’épreuve commune aux groupes M, I et MP compte les opérations arithmétiques et leur attribue aussi un coût égal à la somme des tailles de leurs opérandes, avec $\operatorname{taille}(u)=\log_2(2+|u|)$. La représentation creuse garde les couples $(a_j,\beta_j)$ par exposants strictement décroissants. Le cahier original compte six pages. Le registre ne rattache aucun rapport à cette composition.
+
+La section 1 fixe le modèle de coût. Dans l’exemple dense de Horner, après $j$ itérations, $|y|\le(j+1)H\max(1,|x|)^j$ si $H$ majore les valeurs absolues des coefficients. La taille de chaque opérande est donc $O(\log(d+2)+\log(H+2)+d\log(2+|x|))$. Avec $d$ multiplications et $d$ additions, cela justifie le coût polynomial annoncé pour la représentation dense. [Fac-similé du sujet](https://stephane.gonnord.org/Info/lc99.pdf) · [Sommaire](https://stephane.gonnord.org/Info/info.html)
 
 ## 2. Calcul de puissances
 
@@ -38,6 +42,8 @@ Comme $15=(1111)_2$, l’algorithme 2.1.b effectue trois carrés et trois produi
 Indiquons chaque monôme par son exposant. Pour 2.1.b, la chaîne est $(1,2,3,6,7,14,15)$, de longueur 6. Pour 2.2 et 2.3, la chaîne des résultats utiles est $(1,2,3,4,7,8,15)$, également de longueur 6. Les produits de ces deux versions qui recopient $x$ ou produisent $x^{16}$ après le résultat n’entrent pas dans une chaîne pour $X^{15}$. Une chaîne plus courte est $(1,2,3,6,12,15)$, où $15=12+3$. Elle a longueur 5.
 
 ![Figure 1 — Chaque nombre est un exposant déjà calculé. Pour obtenir 15 dans la chaîne du bas, on réutilise la puissance d’exposant 3.](figures/chaines-pour-quinze.svg)
+
+La chaîne de longueur cinq est même minimale. Après trois multiplications le plus grand exposant possible est 8. Pour produire 15 au quatrième rang, il faudrait donc disposer de 8 et de 7. Atteindre 8 en trois multiplications impose les doublements successifs $1,2,4,8$, qui ne produisent pas 7. Quatre multiplications ne suffisent pas.
 
 ### Question 2.5
 
@@ -125,6 +131,8 @@ La largeur $U-L$ est au plus $3(i-1)-2+2=3i-3$. Pour comparer $2^L$ à $2|a_i|$,
 Les exposants conservés eux-mêmes tiennent en peu de bits. En dehors des réinitialisations, la borne supérieure augmente d’au plus $l+2\le g\log_2 x+3$ par tour. Lors des réinitialisations exactes, le maximum des exposants est $O(\log(2+\max_j|a_j|)+k)$ dans la branche modulaire. La somme des écarts $g$ ne dépasse pas $\beta_1$. Ainsi tous les exposants enregistrés sont au plus $O(\beta_1\log_2(2+x)+k+\log_2(2+\max_j|a_j|))$ **en valeur**, donc leur longueur binaire est polynomiale en la taille creuse et celle de $x$. Les $k$ étapes ont chacune un coût polynomial. Le signe de sortie $\sigma_k$ répond à la question par 4.5.a.
 
 ![Figure 2 — Un produit de grande taille conserve son signe s’il domine le coefficient suivant. Dans l’autre cas, sa borne supérieure permet de calculer la somme exacte par réduction modulaire.](figures/decision-pour-le-signe.svg)
+
+Le calcul exact de la seconde branche peut s’observer sur $f(X)=X^5-3X^3-2X^2+1$ en $x=2$. Les préfixes valent successivement $1$, $1\cdot2^2-3=1$, $1\cdot2-2=0$, puis $0\cdot2^2+1=1$. L’exemple fait intervenir l’annulation d’un préfixe non terminal. Le pas suivant doit alors reprendre directement le coefficient courant.
 
 ### Question 4.6
 
