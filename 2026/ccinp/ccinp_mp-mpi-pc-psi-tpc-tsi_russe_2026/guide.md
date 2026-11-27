@@ -12,15 +12,13 @@ Le fascicule accorde trois heures pour une synthèse en russe de 400 mots, titre
 
 ## Croiser les documents
 
-Lire les trois totaux de l’infographie. Les 6 850 et 7 050 roubles concernent les listes sous les deux personnages ; le panier de papeterie à 985 roubles s’y ajoute. La baisse ou la hausse du coût ne se mesure pas en comparant les deux personnages : 8 % et 6 % sont leurs augmentations respectives sur un an.
+Dans l’infographie, les vêtements, les chaussures et le sac coûtent 6 850 roubles pour une fille, 7 050 pour un garçon. Les fournitures ajoutent 985 roubles. Les hausses annuelles sont respectivement de 8 % et 6 %.
 
-Les deux documents du 30 juillet 2025 précisent le niveau des prix avec remises. Les deux articles de 2024 distinguent la politique proposée et le conseil financier aux particuliers. Le plafonnement du 1er août au 1er novembre reste une proposition ; Panine préfère l’aide ciblée. La réponse de Volkova conserve son propre statut de conseil, sans garantie générale d’économie.
+En 2025, les prix supposent les remises maximales. En 2024, Panine examine le plafonnement proposé du 1er août au 1er novembre et défend l’aide ciblée. Volkova estime que six mois de préparation peuvent, dans certains cas, réduire de moitié les dépenses.
 
 ![Schéma — Que mesure le prix de la rentrée ?](figures/lecture-croisee.svg)
 
-Les deux articles publiés en août 2024 ne décrivent pas le même levier. Le document 3 examine une proposition de plafonnement que Panine juge peu efficace. Dans le document 4, Volkova donne un maximum possible d’économie dans certains cas, pour une préparation étalée sur six mois.
-
-Le titre compte 8 mots. Les paragraphes en comptent respectivement 47, 82, 82, 81 et 78, pour un total de 378. Les repères sont placés après chaque groupe de vingt, titre compris. L’indication du total, puis FIN, suivent la composition.
+Le titre et les cinq paragraphes comptent 8 + 47 + 82 + 82 + 81 + 78 = 378 mots. Tracer un repère après chaque vingtième mot, puis inscrire le total et FIN.
 
 ## Цена первого сентября и способы облегчить расходы семьи
 
