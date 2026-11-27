@@ -1,0 +1,314 @@
+{
+  "slug": "bel_al_anglais-theme-lyon_2018",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "lva_pt_2325",
+      "session": "/root/lva_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Traduction anglaise intégrale du passage français, guide en français et figure propre au thème."
+    },
+    {
+      "phase": "revision",
+      "agent": "lva_pt_2325",
+      "session": "/root/lva_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Confrontation au rapport et au feuillet de la construction de la phrase de Balbec, du changement de temps à Je remarquai, de la portée de la comparaison initiale et des pommes à l’anglaise."
+    }
+  ],
+  "pieces": {
+    "sujet": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2018-10/2018%20%C3%A9preuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=9",
+      "sha256": "36548d14a5bc4863106fd5bfe41b30654f210f6968be40d6374c992c20da793a",
+      "pages": 13,
+      "rendus": [
+        {
+          "page": 1,
+          "sha256_rendu": "faac74c6ef4475cb709481e7ef8b581e61ee4836f577197d939395db91281ef5"
+        },
+        {
+          "page": 2,
+          "sha256_rendu": "f79363c8d15f9b95856601a780ba0593ddd9b30f88cba90fbb92eeb59555ebf7"
+        },
+        {
+          "page": 3,
+          "sha256_rendu": "6a1a1cc0221e4ed17ecffe3a233d4832136d5d56e7ca3eb90b0a4fed4fb64e8f"
+        },
+        {
+          "page": 4,
+          "sha256_rendu": "817c230e9a92db285ffc12dd68dc187a40b5dd1757b5e23255367c6639343cd9"
+        },
+        {
+          "page": 5,
+          "sha256_rendu": "e315225a3cad3e0e2a66b80ec9608e943183dc7f87d2ec32fc303e5c17a7dfc7"
+        },
+        {
+          "page": 6,
+          "sha256_rendu": "6a6d5c20dbd3fdd09df06feccd1154105506ffcfcb7d1a96845824cd320d681a"
+        },
+        {
+          "page": 7,
+          "sha256_rendu": "821987a052628b6247a3605dcac9e2dbde9d01630bbceda6e5ed7dd861e4cc30"
+        },
+        {
+          "page": 8,
+          "sha256_rendu": "978b6394e3cad4dbc7d555e144ed8d9e920cb5581f984beb76fbdef87f3ba40d"
+        },
+        {
+          "page": 9,
+          "sha256_rendu": "0c67f86926f74916fd721ee17376e8e0bedd4f339e70266cfea6191db12e904c"
+        },
+        {
+          "page": 10,
+          "sha256_rendu": "262117ffd0d863b702429f8f08d062cdc60c57afffd271e74d96f0c8a1be48a2"
+        },
+        {
+          "page": 11,
+          "sha256_rendu": "235cff1c1fc1331fce7e727cff98c0b2e771368498e1c9f3608f20dcb051fd14"
+        },
+        {
+          "page": 12,
+          "sha256_rendu": "0d1b31f939fae9aa8337d2e16d51f1246f84063cc33a149acb41fe90482919f7"
+        },
+        {
+          "page": 13,
+          "sha256_rendu": "a16c12dd36864499d9af5da39b5b6a4260cdd1ebd121eb87387b401f4f8118e5"
+        }
+      ]
+    },
+    "rapport_jury": {
+      "url": "https://www.ens-lyon.fr/sites/default/files/2018-11/Fascicule%20Anglais_2018.pdf#page=14",
+      "sha256": "e0e127862dc56f5aa8e9d9f5935c23fe1207fb6fcc5c5126d087eb415be43c8d",
+      "pages": 38,
+      "rendus": [
+        {
+          "page": 1,
+          "sha256_rendu": "b06a4aa10bbaa7875ba8f51295bda1304a4e841a36a143afa30e5b918c7326d7"
+        },
+        {
+          "page": 2,
+          "sha256_rendu": "6ecabd3c967c34446d5b595a2cc358065e9706415605657491c08109ac30934b"
+        },
+        {
+          "page": 3,
+          "sha256_rendu": "5a40834d3a46cee166c9d4b4d9b8d389ded5fc77d0b7e5e2f80db74c8867271d"
+        },
+        {
+          "page": 4,
+          "sha256_rendu": "e3b0e84e9f2fbe920322cb14b8ec4fc0fcd398869c7ec2cdfb3e3b332a4a6f94"
+        },
+        {
+          "page": 5,
+          "sha256_rendu": "98970df0fd89482d5deb59853a22d4f67556296931ddb5f2ca00e274c5d3891e"
+        },
+        {
+          "page": 6,
+          "sha256_rendu": "edf31260b26c78a8e16f241807caaae7c8e75b2e4af4bf76a999f0ce2ceedf85"
+        },
+        {
+          "page": 7,
+          "sha256_rendu": "583ee8c932211f707b572fa6a64302b2ecca6cfb37fb95ed0a069b733a4a56ab"
+        },
+        {
+          "page": 8,
+          "sha256_rendu": "61b1de51eaab7606b4d79a809dd53c1c3662941816304e011628a1501176214a"
+        },
+        {
+          "page": 9,
+          "sha256_rendu": "4d4be6bcd3a3521ba04add3f2fb34b099a40d247c9c710bf61ef71078d7ed5c0"
+        },
+        {
+          "page": 10,
+          "sha256_rendu": "1afcc2586254e5f168baca87930285d39498479ddd01d4cee4dc879b865ae861"
+        },
+        {
+          "page": 11,
+          "sha256_rendu": "d412bcf9a4af54d08f3abfb7ae5e445c4d7cd19dcda049d7ba19719825f748cd"
+        },
+        {
+          "page": 12,
+          "sha256_rendu": "693a4b90ba5595072d2ebcad4361ae1965b96c4740c97aa4896344e04c5f2b2c"
+        },
+        {
+          "page": 13,
+          "sha256_rendu": "ab645eab97145b2711dfcc7723ed223c68fd982dda6c113cdf371db2ab3fb49c"
+        },
+        {
+          "page": 14,
+          "sha256_rendu": "f96d9381adc002dd36d02090c6b858ddbf3aa6a4b84f6c934800f6746a06dbe0"
+        },
+        {
+          "page": 15,
+          "sha256_rendu": "835d0a353cd1e8c9d06c171f9f6deac701dffea675c1d4131c34ed1d74867e87"
+        },
+        {
+          "page": 16,
+          "sha256_rendu": "f26debf55a715245e8884afeb4e0eb4889b767ce22bea168a5f64dda8bd9c185"
+        },
+        {
+          "page": 17,
+          "sha256_rendu": "1b8ee06c506974a76ce322ce46e5ed0dba296f35f0f87cf4bfcd1c1d0625a213"
+        },
+        {
+          "page": 18,
+          "sha256_rendu": "991156553a8c7de2b3037c6daafd9cf841b792eaa06fdf2f5ef54dc5cf773c58"
+        },
+        {
+          "page": 19,
+          "sha256_rendu": "d288769db7616d3c89851b547a22b5634653cee42a6989cc50da25b9701289b4"
+        },
+        {
+          "page": 20,
+          "sha256_rendu": "deb054427ee4a69b7af98a36aba4a5833de755ef300ec2ddba6fac52a29d5bd2"
+        },
+        {
+          "page": 21,
+          "sha256_rendu": "700489c6f709b8a649fc8099ab154a50c44b99b7a57cce4162ac0a866b2370f3"
+        },
+        {
+          "page": 22,
+          "sha256_rendu": "6dbb983f44df11906c4b00462be27ff78532c6ff5e42a90e95f6d4a4fd126c29"
+        },
+        {
+          "page": 23,
+          "sha256_rendu": "073c5fcc62a62dbebd96bc131c8140f86571dbf5bcd6a0f1a1cae05d0b0db8cf"
+        },
+        {
+          "page": 24,
+          "sha256_rendu": "886ef21dc878f34a2921c8c17a6896cf89c2f04cfea41361e30b3d1d907fb666"
+        },
+        {
+          "page": 25,
+          "sha256_rendu": "ba45da5b1d9a6ccfa60a8f58fb5cf005c0ffad0198607d50e5151c7c40491d92"
+        },
+        {
+          "page": 26,
+          "sha256_rendu": "74777e5a5c6e70f5adfe7d0c106474c3f9120cad5e54231dc499d3582016c070"
+        },
+        {
+          "page": 27,
+          "sha256_rendu": "18da49e98d5293e43d5d5094612653ae561bf145e8ff6a7fd1048d2530a7f535"
+        },
+        {
+          "page": 28,
+          "sha256_rendu": "c8028a58d054db08cf3d86984ccff6d1fa766342082d52f8cf62d9db13619a44"
+        },
+        {
+          "page": 29,
+          "sha256_rendu": "285149f5d6ce1f8d9d872f38f1e4dc04e4ef6bb2d30c15dfaafa1e5f3245b299"
+        },
+        {
+          "page": 30,
+          "sha256_rendu": "38c5b92cf21201cbf8af8939dd563d2308d5b7903879bab125ba5eeb0c1dc3af"
+        },
+        {
+          "page": 31,
+          "sha256_rendu": "28d211181459facb0d0e58d507340a7afff054ebe903a9e5e87bc65b01c14de0"
+        },
+        {
+          "page": 32,
+          "sha256_rendu": "7b3ae08741e3a94560d6cd4abd49d714a636df59f9ad41252108d6b23880b20b"
+        },
+        {
+          "page": 33,
+          "sha256_rendu": "8852183a399dbe5d8ef7895855bcf57223c9e8940345c9efa3e619a9f7430b43"
+        },
+        {
+          "page": 34,
+          "sha256_rendu": "95dfc9c4f7a9568f2380510f74d685ef67eb5f4efa06b941a1dcd70aa715f9d8"
+        },
+        {
+          "page": 35,
+          "sha256_rendu": "0ffea28cdf61ab998eb22e01714d2a5024cff8240118969e63c585dabdf9ef40"
+        },
+        {
+          "page": 36,
+          "sha256_rendu": "0b610b793bcbccfb3fe9b5d86b83ee03a4d6e4b2c16f64504b8a2dd22999e1b1"
+        },
+        {
+          "page": 37,
+          "sha256_rendu": "89c38399d3f0c1b6544d3ae2aaf4c4d4e40d1cea0144f77a7d5c8fb47caa0ff0"
+        },
+        {
+          "page": 38,
+          "sha256_rendu": "ca8bbcefe68805a19476987d36b6c1d950ea1f6ab24a70f668ca5f5f9d657e8e"
+        }
+      ]
+    },
+    "index": "https://www.ens-lyon.fr/formation/admission/archives-du-concours-lettres-et-sciences-humaines/concours-dentree-session-2018",
+    "sha256_index": "f84f3aba6df5ebcd7e91efba5bd60e7eb75867d6f9147d7f898694a20bf0fc2f"
+  },
+  "plage_jury": [
+    14,
+    23
+  ],
+  "section_jury": "Thème. Proposition, remarques et analyse des segments.",
+  "reference": {
+    "auteur": "Marcel Proust",
+    "oeuvre": "À l’ombre des jeunes filles en fleurs",
+    "annee_imprimee": 1919
+  },
+  "consigne": {
+    "duree_heures": 4,
+    "langue": "anglais",
+    "dictionnaire": "Tout dictionnaire interdit.",
+    "fascicule": "Épreuve de spécialité. La garde cite l’ENS de Lyon et l’ENS Paris-Saclay (langue anglaise).",
+    "annexe": "Note unique sur les gommeuses, au bas de la page du thème.",
+    "debut": "Je donnais mon paletot",
+    "fin": "se fixait en une calme harmonie.",
+    "page": 9
+  },
+  "controle_paragraphe": [
+    {
+      "numero": 1,
+      "contenu": "Le paletot, la marche jouée par les musiciens, le contraste entre l’enthousiasme et le maintien glacé, les chanteuses de café-concert.",
+      "incipit_anglais": "I would hand over my overcoat.",
+      "explicit_anglais": "bawdy verse to a warlike tune."
+    },
+    {
+      "numero": 2,
+      "contenu": "Le lien avec la grand-mère suspendu jusqu’à la sortie et la fraternité passagère avec les garçons.",
+      "incipit_anglais": "From that moment on I was",
+      "explicit_anglais": "who were about to serve us."
+    },
+    {
+      "numero": 3,
+      "contenu": "Balbec et la quantité bue, le porto, le pourboire de deux louis, la course des serveurs et les plats, le serveur comparé à un ara, le changement dans la perception du spectacle.",
+      "incipit_anglais": "As much beer, let alone champagne,",
+      "explicit_anglais": "activity settled into a calm harmony."
+    }
+  ],
+  "figure": [
+    [
+      "L’entrée",
+      "An easy path to glory",
+      "Rite et musique"
+    ],
+    [
+      "Le service",
+      "The waiters race",
+      "Vitesse et équilibre"
+    ],
+    [
+      "Le regard",
+      "A calm harmony",
+      "Du rite à une vision"
+    ]
+  ]
+}
