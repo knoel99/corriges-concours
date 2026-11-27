@@ -4,7 +4,11 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Système hyperbolique périodique et condition de Kalman.** Le produit hermitien du sujet est linéaire en son premier argument. On note $D=B^*B$ et les normes matricielles sont subordonnées à la norme euclidienne complexe.
+
+Les questions occupent les pages imprimées 2 à 7. Le jury insiste sur le passage de la convergence de chaque trajectoire à celle de la norme d’opérateur, puis sur la dépendance éventuelle en fréquence des constantes de décroissance. [Sujet officiel](https://www.ens.psl.eu/IMG/file/concours/2010/MPI/mp-sujet-maths2.pdf) · [Rapport du jury](https://www.ens.psl.eu/IMG/file/concours/2010/MPI/mp-ecrit-maths2.pdf)
 
 ## I. Déterminant de Vandermonde et exponentielles indépendantes
 
@@ -223,7 +227,7 @@ Si [a] échoue, il existe un vecteur unitaire $v$ avec $Av=i\omega v$ et $Bv=0$.
 
 #### Solution
 
-Comme $A^*=A$, on a $(iA)^*=\bar i A^*=-iA$. La matrice $iA$ est antihermitienne, et $ikA$ l’est aussi pour tout entier réel $k$.
+Comme $A^*=A$, on a $(iA)^*=\bar i A^*=-iA$. La matrice $iA$ est antihermitienne, et $ikA$ l’est aussi pour tout $k\in\mathbb Z$.
 
 ### Question IV.2
 
@@ -254,6 +258,8 @@ Notons $D=B^*B$, $M_k=ikA-D$, $c_k=c_k(w_0)$, $X_k(t)=e^{M_kt}c_k$. Par III.3 ap
 Pour $k\ne0$, $ikA$ a les mêmes espaces propres que $A$, donc satisfait [a] avec $B$. Par III.7.a, $X_k(t)\to0$. Pour $k=0$ le coefficient est déjà nul. Par Parseval,
 $$\int_0^{2\pi}\|w(t,x)\|^2dx=2\pi\sum_k\|X_k(t)\|^2.$$
 Les termes sont majorés par $\|c_k\|^2$, série sommable par Parseval pour $w_0$. La convergence dominée de la somme donne la limite nulle, sans hypothèse d’un taux uniforme entre fréquences.
+
+On peut détailler le passage à la limite sans choisir de taux de décroissance. Étant donné $\delta>0$, choisissons $m$ assez grand pour que $\sum_{|k|>m}\|c_k\|^2<\delta$. La queue des énergies est alors majorée par $\delta$ à tout instant, tandis que les $2m+1$ premiers termes tendent tous vers zéro. Le supremum limite de la somme totale est donc au plus $\delta$, ce qui suffit.
 
 ## V. Décroissance exponentielle uniforme en dimension deux
 
@@ -350,3 +356,8 @@ $$\int_0^{2\pi}\|w(t,x)\|^2dx=2\pi\sum_{k\ne0}\|X_k(t)\|^2\le K^2 e^{-2ct}2\pi\s
 La dernière somme multipliée par $2\pi$ vaut $\|w_0\|_{L^2}^2$. D’où $\|w(t,\cdot)\|_{L^2}\le K e^{-ct}\|w_0\|_{L^2}$. La figure illustre le mécanisme pour $A=\left(\begin{smallmatrix}0&1\\1&0\end{smallmatrix}\right)$, $B=\operatorname{diag}(1,0)$ et $X_k(0)=(0,1)^t$. Ici $BX_k(0)=0$ mais $BAX_k(0)\ne0$ : l’énergie usuelle a une dérivée initiale nulle, alors que l’estimation exponentielle s’applique.
 
 ![Figure 1 — Exemple à deux composantes. Une composante initialement invisible par B donne une pente initiale nulle pour les deux fréquences, puis son énergie décroît par couplage.](figures/dissipation-des-modes.svg)
+
+Dans l’exemple de la figure, si $X_k=(u,v)^t$, on a $v''+v'+k^2v=0$, $v(0)=1$ et $v'(0)=0$. Avec $\omega_k=\sqrt{k^2-1/4}$, on trouve
+$$v=e^{-t/2}\!\left(\cos(\omega_kt)+\frac{\sin(\omega_kt)}{2\omega_k}\right),\qquad
+u=\frac{ik}{\omega_k}\,e^{-t/2}\sin(\omega_kt).$$
+Les deux tracés représentent $|u|^2+|v|^2$ pour $k=1$ et $k=3$. Au départ, $U=0$ et $\|V\|=1$ dans les notations de V.2.c. La pente de l’énergie usuelle est donc nulle, tandis que celle de l’énergie modifiée vaut $-\varepsilon$ dans les deux cas. Cette différence explique l’intérêt du terme croisé.
