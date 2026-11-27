@@ -4,6 +4,14 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+## Feuillet de l’oral
+
+La page 5 du recueil donne un extrait de *L’Œil et l’Esprit*, pages 9 à 13 de l’œuvre. Le passage débute par « La science […] est, elle a toujours été » et s’achève par « sans aucun devoir d’appréciation. ». Les deux coupures entre crochets, à l’ouverture et après la référence au corps, figurent sur le feuillet. Il comporte quatre paragraphes.
+
+Expliquez et commentez librement cet extrait de M. Merleau-Ponty, L’œil et l’esprit, p. 9-13 :
+
 ## Explication de l’extrait de *L’Œil et l’Esprit*
 
 Mesurer la distance entre deux taches de couleur et les considérer pour préparer un tableau sont deux activités qui se déroulent dans le même monde visible. Pourquoi faudrait-il pourtant qu’une réflexion sur la science s’achève en donnant au peintre une place singulière ? Dans cet extrait de *L’Œil et l’Esprit*, Merleau-Ponty part du pouvoir opératoire de la science, isole une thèse philosophique qui tend à rendre ce pouvoir autosuffisant, puis fait de la peinture le témoin d’une expérience dont la pensée scientifique elle-même dépend. Il ne propose ni de rejeter la connaissance scientifique ni de faire du peintre un savant d’un autre genre. Il faut comprendre ce que l’opération de connaissance suppose sans toujours le thématiser.
@@ -26,11 +34,15 @@ Dire qu’il faut replacer la pensée de « survol » dans un « il y a » préa
 
 La peinture « puise » à cette dimension. Regardons une surface peinte où une ombre fait se creuser un coin de pièce. Je vois à la fois le plan matériel de la toile et une profondeur qui n’est pas derrière lui comme le serait une seconde planche. Le tableau n’a pas fourni une mesure incomplète qu’un géomètre viendrait enfin corriger. Il a fait apparaître comment un champ coloré peut donner à voir du relief à un regard situé. L’expérience de la peinture permet ainsi de revenir sur ce qui était déjà à l’œuvre quand nous regardions autour de nous sans chercher à l’expliquer.
 
+La dernière phrase mesure cette différence à deux mots de la vie publique, le droit et le devoir. Un « droit de regard » fait d’ordinaire penser à la faculté de surveiller ou d’approuver ce que fait autrui. Ici, le droit est justement dissocié de l’obligation de prononcer une appréciation. Regarder peut prendre du temps avant même qu’il y ait quelque chose de nettement identifiable à louer ou à condamner. Cela éclaire également le verbe « puiser » qui introduisait la peinture. Il fallait laisser le sensible se présenter avant de lui demander de servir de preuve ou de motif à une décision.
+
 Le dernier paragraphe caractérise cette liberté par une série de positions. On demande à l’écrivain ou au philosophe de donner un avis et de prendre en charge ce qu’implique le fait de parler. La musique semble à Merleau-Ponty pouvoir figurer les mouvements de l’être en deçà de l’identification d’objets déterminés. Le peintre, lui, conserve un droit de regard sans avoir à juger ce qu’il regarde. La formule finale est volontairement forte. On peut lui objecter qu’une peinture peut prendre parti et qu’un texte littéraire peut suspendre un jugement. L’objection vise avec raison toute hiérarchie fixe entre les arts. Elle laisse toutefois subsister le point méthodologique du passage. La pensée opératoire gagne à rencontrer une activité qui n’a pas pour première fin de maîtriser son objet et qui lui rend sensible comment un monde lui était déjà donné à voir.
 
 ![Figure 1 — De l’opération au monde d’où elle part](figures/experiences.svg)
 
-## Pour l’entretien
+## Questions d’entraînement
+
+Ces questions ont été rédigées pour préparer la discussion. Le feuillet du concours donne la seule consigne d’expliquer et de commenter librement l’extrait.
 
 **Dire qu’un appareil produit un phénomène retire-t-il sa valeur au résultat ?** La construction expérimentale spécifie les conditions dans lesquelles un phénomène peut être observé et contrôlé. La critique porte sur la prétention de faire de cette situation la définition exhaustive de tout rapport au monde.
 

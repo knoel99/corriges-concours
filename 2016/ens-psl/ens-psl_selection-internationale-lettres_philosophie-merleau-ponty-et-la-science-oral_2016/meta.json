@@ -13,7 +13,8 @@
   "sources": {
     "sujet": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/ORAUX-PHILO-SIL2016.pdf",
     "sha256_sujet": "354bd9d0769af73c51a4bf7873418f8b2ecdcdf13e16ec46c418fe62bcf0be8c",
-    "reperage": "Pages 5 du recueil. Expliquer et commenter le passage attribué au candidat."
+    "reperage": "Pages 5 du recueil. Expliquer et commenter le passage attribué au candidat.",
+    "controle_du_perimetre": "Page 5 du recueil. Les pages 9 à 13 sont celles de l’ouvrage. Le feuillet ne donne ni durée ni questions de jury distinctes."
   },
   "figures": [
     {
@@ -33,6 +34,42 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Lecture du sujet original. Exposé argumenté sur le sujet attribué, exemples et objections, préparation guidée de l’entretien et schéma des distinctions conceptuelles."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "francais_pt_2325",
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-27",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Repérage des quatre paragraphes et des deux coupures de la page 5. Interprétation du couple droit de regard/devoir d’appréciation. Les questions ultérieures des éditions sont distinguées de l’extrait."
     }
-  ]
+  ],
+  "date_revision": "2026-11-27",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Exposé oral"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "repere_par_question": [
+      {
+        "question": "Exposé oral",
+        "page_pdf": 5,
+        "page_pdf_fin": 5,
+        "debut": "La science […] est, elle a toujours été",
+        "fin": "sans aucun devoir d’appréciation.",
+        "consigne": "Expliquez et commentez librement cet extrait de M. Merleau-Ponty, L’œil et l’esprit, p. 9-13 :",
+        "coupures": 2
+      }
+    ]
+  }
 }
