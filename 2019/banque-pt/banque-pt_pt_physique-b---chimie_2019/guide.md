@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** « Autour du calcium » : de l'élément au carbonate de calcium des roches calcaires et des coraux. L'épreuve dure 2 heures, **sans calculatrice**, et comporte 38 questions réparties en quatre parties indépendantes, dont l'énoncé indique le poids dans le barème. Aucun document n'est à rendre.
@@ -15,12 +17,12 @@
 
 **Notions mobilisées.** Règles de remplissage, classification périodique, oxydo-réduction, cristallographie (population, coordinence, sites), loi de Hess, loi de Van't Hoff, variance, équilibres hétérogènes, acides et bases, produit de solubilité, gaz parfait, lois de vitesse et méthode intégrale.
 
-**Difficulté.** Le sujet est long mais proche du cours des deux années, et le rapport souligne qu'il privilégie des notions simples. Les points se gagnent sur la justification (variance, signes, cohérence des hypothèses d'équilibre) et sur les calculs menés à la main avec les valeurs approchées fournies au fil des questions. Les passages les plus discriminants d'après le rapport sont la variance (question 13), la rupture d'équilibre (questions 18 à 20), la fin de la partie C (questions 24 à 27) et l'intégration des lois de vitesse (questions 34 à 37).
+**Difficulté.** Le sujet est long mais proche du cours des deux années, et le rapport souligne qu'il privilégie des notions simples. Les points se gagnent sur la justification (variance, signes, cohérence des hypothèses d'équilibre) et sur les calculs menés à la main avec les valeurs approchées fournies au fil des questions. Le rapport relève des difficultés sur la variance (question 13), la nature des phases dans l'étude de l'équilibre et de sa rupture (questions 17 à 20), la solubilité, surtout la fin de la partie C (questions 24 à 27), le pH de l'acide fort (question 28) et l'intégration des lois de vitesse (questions 34 à 36).
 
 **Gestion du temps.** Environ 35 minutes pour la partie A, 25 pour la partie B, 25 pour la partie C et 35 pour la partie D. Les parties sont indépendantes : la partie D, qui pèse près d'un tiers de la note, comporte beaucoup de questions rapides (28 à 33) qu'il serait dommage de ne pas atteindre.
 
 > [!JURY]
-> Le rapport 2019 rappelle trois exigences générales. La présentation est appréciée et compte : résultats numériques soulignés, expressions littérales encadrées. Seule une réponse justifiée et argumentée reçoit la totalité des points. Une valeur numérique sans unité n'a pas de sens et n'est pas récompensée. Il insiste aussi sur la lecture attentive de l'énoncé (position du magnésium, caractéristiques de l'indicateur, description du cristal) et sur le bon sens face à un résultat aberrant.
+> Le rapport 2019 formule trois remarques générales. Le jury a souvent apprécié la qualité de la présentation (résultats numériques soulignés, expressions littérales encadrées) et encourage à maintenir ces exigences. Seule une réponse justifiée et argumentée reçoit la totalité des points. Une valeur numérique sans unité n'a pas de sens et n'est pas récompensée. Il relève aussi plusieurs erreurs dues à une mauvaise lecture de l'énoncé (magnésium, caractéristiques de l'indicateur, description du cristal) et en appelle au bon sens face à un résultat inapproprié.
 
 [Sujet officiel](https://www.banquept.fr/documents/2019/ph_b_ch_2019_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2019/rapport_phys_b_ecrit_2019.pdf)
 
@@ -174,7 +176,7 @@ $$\boxed{a\sqrt2 = 4\,R_{\mathrm{Ca}}}$$
 Vérification : $R_{\mathrm{Ca}} = a\sqrt2/4 \approx 560\times 1{,}4/4 = 196\ \mathrm{pm}$, en accord avec la valeur $R_{\mathrm{Ca}} \approx 200\ \mathrm{pm}$ donnée.
 
 > [!JURY]
-> Le rapport juge cette partie souvent bien menée, sauf chez ceux qui ont mal lu la description du cristal, et met en garde contre la confusion fréquente entre **coordinence** (nombre de plus proches voisins, 12) et **compacité** (fraction de volume occupée, 0,74).
+> Le rapport juge cette partie souvent bien menée, sauf chez ceux qui ont mal lu la description du cristal, et met en garde contre la confusion fréquente entre **coordinence** et **compacité**. La coordinence est le nombre de plus proches voisins (12 ici), la compacité la fraction de volume occupée (0,74).
 
 ### Question 8
 
@@ -301,7 +303,7 @@ $$\boxed{V \approx 0{,}6\ \mathrm{L\ de\ lait\ par\ jour}}$$
 (0,58 L avec les valeurs non arrondies.) L'ordre de grandeur est raisonnable : il correspond à un apport de l'ordre du gramme de calcium par jour, deux à trois grands verres de lait.
 
 > [!JURY]
-> Le rapport s'amuse des résultats allant de quelques millilitres à plusieurs dizaines de litres, et valorise les candidats qui commentent une valeur aberrante. Toujours confronter le résultat au bon sens, et garder des unités cohérentes (1110 mg = 1,110 g).
+> Le rapport relève des résultats allant de quelques millilitres à quelques dizaines de litres, et note que certains candidats, heureusement, ont commenté leur valeur lorsqu'elle semblait aberrante. Toujours confronter le résultat au bon sens, et garder des unités cohérentes (1110 mg = 1,110 g).
 
 ## Partie B — Calcination du carbonate de calcium
 
@@ -391,7 +393,7 @@ $$\boxed{\text{Haute température (au-delà de 1000 K) et élimination du dioxyd
 *Remarque.* Avec ces données, $K^\circ = 1$ à 1000 K et $K^\circ$ serait supérieur à 1 à 1100 K. La valeur $K^\circ = 0{,}20$ à 1100 K fournie pour les questions 17 à 20 est une donnée indépendante du tableau ; on l'utilise telle quelle dans la suite.
 
 > [!JURY]
-> « C'est positif » n'est pas un commentaire, écrit le rapport. Sont attendus les mots **endothermique** et **augmentation du désordre par formation de gaz**, puis une proposition argumentée de conditions opératoires.
+> Répondre « c'est positif » « n'est bien sûr pas une réponse valable », écrit le rapport. Donner le sens physique de chaque signe (réaction **endothermique**, **augmentation du désordre par formation de gaz**), puis argumenter les conditions opératoires.
 
 ### Question 16
 
@@ -449,7 +451,7 @@ $$\boxed{n(\mathrm{CaCO_3}) = 0{,}078\ \mathrm{mol}\ ;\quad n(\mathrm{CaO}) = 0{
 $$\boxed{P = 0{,}20\ \mathrm{bar}}$$
 
 > [!METHODE]
-> Pour un équilibre hétérogène, raisonner toujours en deux temps : (1) supposer l'équilibre, calculer l'avancement ; (2) le comparer à l'avancement maximal. S'il le dépasse, l'équilibre n'existe pas : c'est la rupture d'équilibre, traitée à la question suivante. Le rapport insiste sur l'attention à porter à la nature des phases.
+> Pour un équilibre hétérogène, raisonner toujours en deux temps : (1) supposer l'équilibre, calculer l'avancement ; (2) le comparer à l'avancement maximal. S'il le dépasse, l'équilibre n'existe pas : c'est la rupture d'équilibre, traitée à la question suivante. Le rapport rappelle qu'il fallait bien faire attention à la nature des phases.
 
 ### Question 19
 
@@ -520,7 +522,7 @@ La courbe est continue en $V_{\lim}$, avec un point anguleux. Les deux états ca
 ![Figure 3 — Schémas de Lewis de l'ion carbonate et de l'ion hydrogénocarbonate, avec doublets non liants et charges formelles](figures/lewis-carbonate-hydrogenocarbonate.svg)
 
 > [!JURY]
-> Le rapport regrette de trop nombreuses formules ne respectant pas la règle de l'octet (carbone à cinq liaisons, oxygène à trois liaisons sans charge), et note que des candidats ayant le bon schéma du carbonate ne savent pas en déduire celui de l'hydrogénocarbonate. Vérifier : nombre total de doublets, octet de chaque atome, somme des charges formelles égale à la charge de l'ion.
+> Le rapport regrette de trop nombreuses formules ne respectant pas la règle de l'octet, et note que des candidats ayant le bon schéma du carbonate ne savent pas en déduire celui de l'hydrogénocarbonate. Vérifier : nombre total de doublets, octet de chaque atome (ni carbone à cinq liaisons, ni oxygène à trois liaisons sans charge), somme des charges formelles égale à la charge de l'ion.
 
 ### Question 22
 
@@ -538,7 +540,7 @@ Les couples sont $\mathrm{H_2CO_3/HCO_3^-}$ ($\mathrm pK_{a1} = 6{,}4$) et $\mat
 ![Figure 4 — Diagramme de prédominance des espèces carbonatées en fonction du pH, frontières à 6,4 et 10,3, zone de pH de l'océan repérée](figures/diagramme-predominance-carbonates.svg)
 
 > [!JURY]
-> Le rapport s'étonne de diagrammes où des espèces basiques prédominent en milieu acide, et de frontières non chiffrées. L'espèce la plus protonée est à gauche ; les valeurs 6,4 et 10,3 doivent figurer sur l'axe.
+> Le rapport s'étonne de diagrammes où des espèces basiques prédominent en milieu acide, et note que les frontières de pH n'ont pas toujours été précisées. L'espèce la plus protonée est à gauche ; les valeurs 6,4 et 10,3 doivent figurer sur l'axe.
 
 ### Question 23
 
@@ -552,7 +554,7 @@ Les couples sont $\mathrm{H_2CO_3/HCO_3^-}$ ($\mathrm pK_{a1} = 6{,}4$) et $\mat
 
 Équation de dissolution :
 
-$$\boxed{\mathrm{CaCO_{3(s)}} = \mathrm{Ca^{2+}_{(aq)}} + \mathrm{CO_3^{2-}_{(aq)}}}\qquad K_s = [\mathrm{Ca^{2+}}]\,[\mathrm{CO_3^{2-}}]$$
+$$\boxed{\mathrm{CaCO_{3(s)}} = \mathrm{Ca^{2+}_{(aq)}} + \mathrm{CO_{3\,(aq)}^{2-}}}\qquad K_s = [\mathrm{Ca^{2+}}]\,[\mathrm{CO_3^{2-}}]$$
 
 (concentrations en $\mathrm{mol\cdot L^{-1}}$, rapportées à $c^\circ = 1\ \mathrm{mol\cdot L^{-1}}$). La solubilité $s$ est la quantité de solide dissoute par litre de solution saturée. Chaque mole dissoute libère une mole de chaque ion, et rien ne les consomme dans cette hypothèse :
 
@@ -573,14 +575,14 @@ $$\boxed{s \approx 6{,}3\cdot 10^{-5}\ \mathrm{mol\cdot L^{-1}}}$$
 
 La valeur mesurée, $2\cdot 10^{-4}\ \mathrm{mol\cdot L^{-1}}$, est environ trois fois plus grande que la valeur calculée. Le calcul a négligé le caractère **basique de l'ion carbonate** ($\mathrm pK_{a2} = 10{,}3$) : dans l'eau, une part importante des ions carbonate libérés réagit selon
 
-$$\mathrm{CO_3^{2-}_{(aq)}} + \mathrm{H_2O_{(l)}} = \mathrm{HCO_3^-_{(aq)}} + \mathrm{HO^-_{(aq)}}$$
+$$\mathrm{CO_{3\,(aq)}^{2-}} + \mathrm{H_2O_{(l)}} = \mathrm{HCO_{3\,(aq)}^{-}} + \mathrm{HO^-_{(aq)}}$$
 
 Cette réaction consomme des ions carbonate : le quotient $[\mathrm{Ca^{2+}}][\mathrm{CO_3^{2-}}]$ repasse sous $K_s$ et du solide supplémentaire se dissout. La solubilité réelle, $s = [\mathrm{Ca^{2+}}]$, est donc supérieure à $\sqrt{K_s}$.
 
 L'hypothèse était d'ailleurs incohérente : le pH d'une solution saturée (voisin de 10) est inférieur à $\mathrm pK_{a2}$, de sorte que l'ion carbonate n'y est pas l'espèce prédominante. S'y ajoute le dioxyde de carbone de l'air dissous dans l'eau, acide, qui accentue encore la dissolution (question 27).
 
 > [!JURY]
-> Le rapport attend ici du « bon sens » : l'explication est suggérée par l'énoncé lui-même, qui demandait de négliger les propriétés basiques du carbonate, puis de les prendre en compte à la question 26.
+> Le rapport regrette que les candidats n'aient pas toujours fait preuve de « bon sens » pour expliquer cet écart. L'explication est suggérée par l'énoncé lui-même, qui demandait de négliger les propriétés basiques du carbonate, puis de les prendre en compte à la question 26.
 
 ### Question 25
 
@@ -628,13 +630,13 @@ Cette expression croît avec $h$ : on retrouve le résultat de la question 25, e
 
 Entre pH 8,0 et 8,3, on se trouve entre $\mathrm pK_{a1} = 6{,}4$ et $\mathrm pK_{a2} = 10{,}3$ : l'espèce carbonatée prédominante est l'ion **hydrogénocarbonate** (figure 4). Le dioxyde de carbone dissous (acide, forme $\mathrm{H_2CO_3}$) et l'ion carbonate du solide (base) se transforment tous deux en cette espèce :
 
-$$\boxed{\mathrm{CaCO_{3(s)}} + \mathrm{CO_{2(aq)}} + \mathrm{H_2O_{(l)}} = \mathrm{Ca^{2+}_{(aq)}} + 2\,\mathrm{HCO_3^-_{(aq)}}}$$
+$$\boxed{\mathrm{CaCO_{3(s)}} + \mathrm{CO_{2(aq)}} + \mathrm{H_2O_{(l)}} = \mathrm{Ca^{2+}_{(aq)}} + 2\,\mathrm{HCO_{3\,(aq)}^{-}}}$$
 
 Cette équation est la somme de la dissolution ($K_s$), de la première acidité de l'acide carbonique ($K_{a1}$) et de la protonation du carbonate ($1/K_{a2}$) :
 
 $$K^\circ = \frac{K_s\,K_{a1}}{K_{a2}} = 10^{-8{,}4 - 6{,}4 + 10{,}3} = 10^{-4{,}5}$$
 
-Cette constante est très supérieure à $K_s = 10^{-8{,}4}$ : le carbonate de calcium est bien plus soluble dans une eau chargée en dioxyde de carbone, comme l'annonce l'énoncé.
+Cette constante dépasse $K_s = 10^{-8{,}4}$ de près de quatre ordres de grandeur. Les deux équations n'ont pas la même stœchiométrie, la comparaison reste donc qualitative, mais elle va dans le sens annoncé par l'énoncé : le carbonate de calcium est bien plus soluble dans une eau chargée en dioxyde de carbone.
 
 > [!JURY]
 > D'après le rapport, la fin de cette partie a été souvent mal traitée, signe d'une compréhension fragile des phénomènes de dissolution. L'équation attendue ne fait apparaître ni $\mathrm{CO_3^{2-}}$ ni $\mathrm{H^+}$ libres : seules les espèces prédominantes au pH considéré s'écrivent.
@@ -655,7 +657,7 @@ $$\mathrm{pH} = -\log\frac{c_a}{c^\circ} = -\log(0{,}10)$$
 $$\boxed{\mathrm{pH} = 1{,}0}$$
 
 > [!JURY]
-> Le rapport rapporte des valeurs allant de 0 à 14 pour cette question de première année. Une solution d'acide fort décimolaire a un pH de 1 ; toute valeur supérieure à 7 doit alerter.
+> Le rapport signale de nombreuses difficultés sur cette question, avec des pH annoncés aussi bien à 0 qu'à 14, et en appelle au bon sens. Une solution d'acide fort décimolaire a un pH de 1 ; toute valeur supérieure à 7 doit alerter.
 
 ### Question 29
 
@@ -683,7 +685,12 @@ avec $p_{\mathrm{CO_2}}$ en pascals et $V = 1{,}0\cdot 10^{-3}\ \mathrm{m^3}$.
 
 #### Solution
 
-Tableau d'avancement de $\mathrm{CaCO_{3(s)}} + 2\,\mathrm{H^+_{(aq)}} = \mathrm{CO_{2(g)}} + \mathrm{H_2O_{(l)}} + \mathrm{Ca^{2+}_{(aq)}}$ : il n'y a pas de dioxyde de carbone au départ, il s'en forme $x$ mol, et tout le gaz formé se dégage :
+Tableau d'avancement de $\mathrm{CaCO_{3(s)}} + 2\,\mathrm{H^+_{(aq)}} = \mathrm{CO_{2(g)}} + \mathrm{H_2O_{(l)}} + \mathrm{Ca^{2+}_{(aq)}}$ : il n'y a pas de dioxyde de carbone au départ, il s'en forme $x$ mol, et tout le gaz formé se dégage (quantités en mmol, carbonate de calcium en excès) :
+
+| | $\mathrm{CaCO_{3(s)}}$ | $2\,\mathrm{H^+_{(aq)}}$ | $\mathrm{CO_{2(g)}}$ | $\mathrm{Ca^{2+}_{(aq)}}$ |
+|---|---|---|---|---|
+| $t = 0$ | excès | $c_aV_0 = 10{,}0$ | 0 | 0 |
+| $t$ | excès | $c_aV_0 - 2x$ | $x$ | $x$ |
 
 $$\boxed{x = n(\mathrm{CO_{2(g)}}) = \frac{p_{\mathrm{CO_2}}\,V}{RT}}$$
 
@@ -691,7 +698,9 @@ $$\boxed{x = n(\mathrm{CO_{2(g)}}) = \frac{p_{\mathrm{CO_2}}\,V}{RT}}$$
 
 $$x = 7\,170\times 1{,}0\cdot 10^{-3}\times 4\cdot 10^{-4} = 2{,}87\cdot 10^{-3}\ \mathrm{mol}$$
 
-$$\boxed{x(100\ \mathrm s) \approx 2{,}9\ \mathrm{mmol}}$$
+$$\boxed{x(100\ \mathrm s) \approx 2{,}87\ \mathrm{mmol}}$$
+
+C'est la valeur à deux décimales qui complète le tableau (2,80 mmol à 90 s), soit environ 2,9 mmol.
 
 Contrôle sur une valeur du tableau : à 10,0 s, $1\,250\times 4\cdot 10^{-7} = 0{,}50\ \mathrm{mmol}$, comme indiqué. Les autres valeurs du tableau ont visiblement été calculées avec $1/RT \approx 4{,}04\cdot 10^{-4}\ \mathrm{mol\cdot J^{-1}}$, ce qui donnerait ici 2,89 mmol ; l'écart est inférieur à 1 %.
 
@@ -895,7 +904,7 @@ L'attaque acide des coraux est donc **extrêmement lente** au pH actuel de l'oc�
 Mais l'ordre 2 rend cette vitesse très sensible au pH. Le dioxyde de carbone atmosphérique qui se dissout dans l'océan est un acide : il abaisse le pH. Un passage de 8,3 à 8,0 double $[\mathrm{H^+}]$ ($10^{0{,}3} \approx 2$) et **quadruple** la vitesse de dissolution. À cet effet cinétique s'ajoute l'effet thermodynamique des questions 25 et 27 : le dioxyde de carbone dissous augmente la solubilité du carbonate de calcium. L'augmentation de la teneur de l'atmosphère en dioxyde de carbone (acidification des océans) menace donc les coraux et, plus largement, les organismes à coquille calcaire.
 
 > [!JURY]
-> Le rapport indique que l'impact du dioxyde de carbone sur cette dissolution a été bien abordé par certains candidats : c'est le lien attendu entre la cinétique, la partie C et l'enjeu environnemental.
+> Le rapport indique que l'impact du dioxyde de carbone sur cette dissolution a été bien abordé par certains candidats. C'est le lien à faire entre la cinétique, la partie C et l'enjeu environnemental.
 
 ## Bilan
 
@@ -907,7 +916,7 @@ Mais l'ordre 2 rend cette vitesse très sensible au pH. Le dioxyde de carbone at
 - *Solubilité* : $s = \sqrt{K_s}$ ne vaut que si l'anion n'a pas de propriétés acido-basiques ; consommer l'anion (par un acide) augmente la solubilité ; l'équation d'une dissolution s'écrit avec les espèces prédominantes au pH considéré.
 - *Cinétique* : $v = -\frac12\,\mathrm d[\mathrm{H^+}]/\mathrm dt$ ; méthode intégrale : $[\mathrm{H^+}]$, $\ln[\mathrm{H^+}]$ ou $1/[\mathrm{H^+}]$ affine du temps selon que l'ordre vaut 0, 1 ou 2 ; la pente donne $k$ au facteur stœchiométrique près.
 
-**Résultats numériques.** $r_O \approx 80$ pm et $r_T \approx 40$ pm ; $m_{\mathrm{Ca}} \approx 1{,}2$ kg ; $V \approx 0{,}6$ L de lait par jour ; $v = 1$ ; $\Delta_r H^\circ = +150\ \mathrm{kJ\cdot mol^{-1}}$ ; $\Delta_r S^\circ = +150\ \mathrm{J\cdot K^{-1}\cdot mol^{-1}}$ ; à 10,0 L, 0,022 mol de gaz sous 0,20 bar ; à 100,0 L, 0,10 mol de gaz sous 0,091 bar ; $V_{\lim} \approx 46$ L ; $s \approx 6{,}3\cdot 10^{-5}\ \mathrm{mol\cdot L^{-1}}$ ; pH = 1,0 ; $x(100\ \mathrm s) \approx 2{,}9$ mmol ; $x(10{,}0\ \mathrm s) = 0{,}50$ mmol ; ordre 2 et $k \approx 7{,}2\cdot 10^{-2}\ \mathrm{L\cdot mol^{-1}\cdot s^{-1}}$.
+**Résultats numériques.** $r_O \approx 80$ pm et $r_T \approx 40$ pm ; $m_{\mathrm{Ca}} \approx 1{,}2$ kg ; $V \approx 0{,}6$ L de lait par jour ; $v = 1$ ; $\Delta_r H^\circ = +150\ \mathrm{kJ\cdot mol^{-1}}$ ; $\Delta_r S^\circ = +150\ \mathrm{J\cdot K^{-1}\cdot mol^{-1}}$ ; à 10,0 L, 0,022 mol de gaz sous 0,20 bar ; à 100,0 L, 0,10 mol de gaz sous 0,091 bar ; $V_{\lim} \approx 46$ L ; $s \approx 6{,}3\cdot 10^{-5}\ \mathrm{mol\cdot L^{-1}}$ ; pH = 1,0 ; $x(100\ \mathrm s) \approx 2{,}87$ mmol ; $x(10{,}0\ \mathrm s) = 0{,}50$ mmol ; ordre 2 et $k \approx 7{,}2\cdot 10^{-2}\ \mathrm{L\cdot mol^{-1}\cdot s^{-1}}$.
 
 **Erreurs les plus coûteuses d'après le jury.** Mal lire l'énoncé (magnésium, indicateur coloré, cristal) ; confondre coordinence et compacité ; donner une variance sans explication ; commenter un signe par « c'est positif » ; oublier la nature des phases dans l'étude de l'équilibre ; proposer un schéma de Lewis qui viole la règle de l'octet ; placer une base en milieu acide dans le diagramme de prédominance ; annoncer un pH aberrant pour un acide fort ; oublier le facteur 2 dans la vitesse ; donner une constante de vitesse sans unité.
 

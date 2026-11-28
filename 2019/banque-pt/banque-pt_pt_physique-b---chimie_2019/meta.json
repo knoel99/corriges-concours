@@ -93,6 +93,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Rédaction des corrigés brut et guidé des 38 questions et de quatre figures, à partir du sujet et du rapport du jury ; applications numériques recalculées et lectures des graphes contrôlées sur le PDF."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Corrections issues d'une relecture indépendante, brut et guidé : écriture des équations des questions 23, 24 et 27 (double indice refusé par KaTeX), toutes les formules des deux fichiers repassées dans KaTeX ; question 27, comparaison des constantes reformulée ; question 30, tableau d'avancement dressé et valeur 2,87 mmol. Guidé : les encadrés du jury contrôlés un par un contre le rapport et ramenés à son texte (présentation, questions 7, 12, 15, 18, 21, 22, 24, 28, 38). Figures des questions 20 et 22 : étiquettes déplacées, rendus contrôlés."
     }
   ]
 }

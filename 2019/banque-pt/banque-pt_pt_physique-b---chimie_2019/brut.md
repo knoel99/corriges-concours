@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Épreuve de 2 heures, sans calculatrice, consacrée au calcium : 38 questions en quatre parties indépendantes (élément et cristal, calcination du carbonate de calcium, solubilité, cinétique de dissolution en milieu acide). Les 38 questions sont traitées. Les applications numériques emploient les valeurs approchées fournies par l'énoncé ; les valeurs lues sur les graphes de la partie D sont signalées à la question 37.
 
 [Sujet officiel](https://www.banquept.fr/documents/2019/ph_b_ch_2019_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2019/rapport_phys_b_ecrit_2019.pdf)
@@ -335,7 +337,7 @@ Les couples sont $\mathrm{H_2CO_3/HCO_3^-}$ ($\mathrm pK_{a1} = 6{,}4$) et $\mat
 
 Équation de dissolution :
 
-$$\boxed{\mathrm{CaCO_{3(s)}} = \mathrm{Ca^{2+}_{(aq)}} + \mathrm{CO_3^{2-}_{(aq)}}}\qquad K_s = [\mathrm{Ca^{2+}}]\,[\mathrm{CO_3^{2-}}]$$
+$$\boxed{\mathrm{CaCO_{3(s)}} = \mathrm{Ca^{2+}_{(aq)}} + \mathrm{CO_{3\,(aq)}^{2-}}}\qquad K_s = [\mathrm{Ca^{2+}}]\,[\mathrm{CO_3^{2-}}]$$
 
 (concentrations en $\mathrm{mol\cdot L^{-1}}$, rapportées à $c^\circ = 1\ \mathrm{mol\cdot L^{-1}}$). La solubilité $s$ est la quantité de solide dissoute par litre de solution saturée. Chaque mole dissoute libère une mole de chaque ion, et rien ne les consomme dans cette hypothèse :
 
@@ -351,7 +353,7 @@ $$\boxed{s \approx 6{,}3\cdot 10^{-5}\ \mathrm{mol\cdot L^{-1}}}$$
 
 La valeur mesurée, $2\cdot 10^{-4}\ \mathrm{mol\cdot L^{-1}}$, est environ trois fois plus grande que la valeur calculée. Le calcul a négligé le caractère **basique de l'ion carbonate** ($\mathrm pK_{a2} = 10{,}3$) : dans l'eau, une part importante des ions carbonate libérés réagit selon
 
-$$\mathrm{CO_3^{2-}_{(aq)}} + \mathrm{H_2O_{(l)}} = \mathrm{HCO_3^-_{(aq)}} + \mathrm{HO^-_{(aq)}}$$
+$$\mathrm{CO_{3\,(aq)}^{2-}} + \mathrm{H_2O_{(l)}} = \mathrm{HCO_{3\,(aq)}^{-}} + \mathrm{HO^-_{(aq)}}$$
 
 Cette réaction consomme des ions carbonate : le quotient $[\mathrm{Ca^{2+}}][\mathrm{CO_3^{2-}}]$ repasse sous $K_s$ et du solide supplémentaire se dissout. La solubilité réelle, $s = [\mathrm{Ca^{2+}}]$, est donc supérieure à $\sqrt{K_s}$.
 
@@ -385,13 +387,13 @@ Cette expression croît avec $h$ : on retrouve le résultat de la question 25, e
 
 Entre pH 8,0 et 8,3, on se trouve entre $\mathrm pK_{a1} = 6{,}4$ et $\mathrm pK_{a2} = 10{,}3$ : l'espèce carbonatée prédominante est l'ion **hydrogénocarbonate** (figure 4). Le dioxyde de carbone dissous (acide, forme $\mathrm{H_2CO_3}$) et l'ion carbonate du solide (base) se transforment tous deux en cette espèce :
 
-$$\boxed{\mathrm{CaCO_{3(s)}} + \mathrm{CO_{2(aq)}} + \mathrm{H_2O_{(l)}} = \mathrm{Ca^{2+}_{(aq)}} + 2\,\mathrm{HCO_3^-_{(aq)}}}$$
+$$\boxed{\mathrm{CaCO_{3(s)}} + \mathrm{CO_{2(aq)}} + \mathrm{H_2O_{(l)}} = \mathrm{Ca^{2+}_{(aq)}} + 2\,\mathrm{HCO_{3\,(aq)}^{-}}}$$
 
 Cette équation est la somme de la dissolution ($K_s$), de la première acidité de l'acide carbonique ($K_{a1}$) et de la protonation du carbonate ($1/K_{a2}$) :
 
 $$K^\circ = \frac{K_s\,K_{a1}}{K_{a2}} = 10^{-8{,}4 - 6{,}4 + 10{,}3} = 10^{-4{,}5}$$
 
-Cette constante est très supérieure à $K_s = 10^{-8{,}4}$ : le carbonate de calcium est bien plus soluble dans une eau chargée en dioxyde de carbone, comme l'annonce l'énoncé.
+Cette constante dépasse $K_s = 10^{-8{,}4}$ de près de quatre ordres de grandeur. Les deux équations n'ont pas la même stœchiométrie, la comparaison reste donc qualitative, mais elle va dans le sens annoncé par l'énoncé : le carbonate de calcium est bien plus soluble dans une eau chargée en dioxyde de carbone.
 
 ## Partie D — Cinétique de la dissolution du carbonate de calcium dans une solution acide
 
@@ -413,7 +415,12 @@ avec $p_{\mathrm{CO_2}}$ en pascals et $V = 1{,}0\cdot 10^{-3}\ \mathrm{m^3}$.
 
 ### Question 30 — Avancement à partir de la pression
 
-Tableau d'avancement de $\mathrm{CaCO_{3(s)}} + 2\,\mathrm{H^+_{(aq)}} = \mathrm{CO_{2(g)}} + \mathrm{H_2O_{(l)}} + \mathrm{Ca^{2+}_{(aq)}}$ : il n'y a pas de dioxyde de carbone au départ, il s'en forme $x$ mol, et tout le gaz formé se dégage :
+Tableau d'avancement de $\mathrm{CaCO_{3(s)}} + 2\,\mathrm{H^+_{(aq)}} = \mathrm{CO_{2(g)}} + \mathrm{H_2O_{(l)}} + \mathrm{Ca^{2+}_{(aq)}}$ : il n'y a pas de dioxyde de carbone au départ, il s'en forme $x$ mol, et tout le gaz formé se dégage (quantités en mmol, carbonate de calcium en excès) :
+
+| | $\mathrm{CaCO_{3(s)}}$ | $2\,\mathrm{H^+_{(aq)}}$ | $\mathrm{CO_{2(g)}}$ | $\mathrm{Ca^{2+}_{(aq)}}$ |
+|---|---|---|---|---|
+| $t = 0$ | excès | $c_aV_0 = 10{,}0$ | 0 | 0 |
+| $t$ | excès | $c_aV_0 - 2x$ | $x$ | $x$ |
 
 $$\boxed{x = n(\mathrm{CO_{2(g)}}) = \frac{p_{\mathrm{CO_2}}\,V}{RT}}$$
 
@@ -421,7 +428,9 @@ $$\boxed{x = n(\mathrm{CO_{2(g)}}) = \frac{p_{\mathrm{CO_2}}\,V}{RT}}$$
 
 $$x = 7\,170\times 1{,}0\cdot 10^{-3}\times 4\cdot 10^{-4} = 2{,}87\cdot 10^{-3}\ \mathrm{mol}$$
 
-$$\boxed{x(100\ \mathrm s) \approx 2{,}9\ \mathrm{mmol}}$$
+$$\boxed{x(100\ \mathrm s) \approx 2{,}87\ \mathrm{mmol}}$$
+
+C'est la valeur à deux décimales qui complète le tableau (2,80 mmol à 90 s), soit environ 2,9 mmol.
 
 Contrôle sur une valeur du tableau : à 10,0 s, $1\,250\times 4\cdot 10^{-7} = 0{,}50\ \mathrm{mmol}$, comme indiqué. Les autres valeurs du tableau ont visiblement été calculées avec $1/RT \approx 4{,}04\cdot 10^{-4}\ \mathrm{mol\cdot J^{-1}}$, ce qui donnerait ici 2,89 mmol ; l'écart est inférieur à 1 %.
 
