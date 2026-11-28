@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Épreuve de 2 heures, sans calculatrice : 24 questions en trois parties indépendantes (conduction thermique et isolation d'un mur, alimentation en eau d'une maison par un château d'eau avec pertes de charge, climatisation par un « déphaseur » à eau). Les 24 questions sont traitées. Les applications numériques sont menées à la main, avec un ou deux chiffres significatifs comme le demande l'énoncé, qui donne $g = 9{,}8\ \mathrm{m\cdot s^{-2}}$ et $\sqrt{3{,}6} = 1{,}9$. Les figures 1 à 5 du sujet sont de simples schémas de principe : aucune valeur n'y est à lire, toutes les données numériques viennent du texte. À la question 7, les valeurs numériques sont des ordres de grandeur choisis par le rédacteur, comme le demande l'énoncé.
 
 [Sujet officiel](https://www.banquept.fr/documents/2015/ph_b_th_2015_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2015/rapport_phys_b_ecrit_2015.pdf)
@@ -131,7 +133,7 @@ $$j_2 = \frac{\Delta T}{R_b + R_p} = \frac{20}{2{,}7} \approx 7\ \mathrm{W\cdot 
 
 **Conclusion.**
 
-$$\boxed{\frac{j_1}{j_2} = \frac{R_b + R_p}{R_b} \approx 13}$$
+$$\boxed{\frac{j_1}{j_2} = \frac{R_b + R_p}{R_b} = \frac{2{,}7}{0{,}2} \approx 14}$$
 
 Dix centimètres de polystyrène divisent les pertes par plus de dix : pour $100\ \mathrm{m^2}$ de murs, on passe d'environ $10\ \mathrm{kW}$ à moins de $1\ \mathrm{kW}$ de chauffage nécessaire. L'isolant est équivalent, à lui seul, à $2{,}5\ \mathrm{m}$ de béton. C'est la couche de plus grande résistance qui fixe le flux, d'où l'intérêt d'un matériau de très faible conductivité même en faible épaisseur.
 
@@ -379,7 +381,7 @@ $$\boxed{P_{vent} \approx 5\cdot 10^{-3}\ \mathrm{W}}$$
 
 $$\boxed{e = \frac{P_{perdue}}{P_{vent}} = \frac{2\,c_p\,(T_e - T_s)}{v_a^2} = \frac{4{,}5\cdot 10^{2}}{5{,}4\cdot 10^{-3}} \approx 8\cdot 10^{4}}$$
 
-**Commentaire.** La valeur est gigantesque, car le ventilateur ne fait que déplacer l'air : il ne « pompe » pas la chaleur, qui passe spontanément de l'air chaud à l'eau froide. Cette puissance est une borne inférieure ; un ventilateur réel doit vaincre les pertes de charge du canal et a un rendement médiocre, il consomme plutôt quelques watts. L'efficacité reste alors de l'ordre de la centaine, très au-dessus de celle d'un climatiseur.
+**Commentaire.** La valeur est gigantesque, car le ventilateur ne fait que déplacer l'air : il ne « pompe » pas la chaleur, qui passe spontanément de l'air chaud à l'eau froide. Cette puissance est un minorant de la puissance réellement consommée, donc l'efficacité calculée est un majorant ; un ventilateur réel doit vaincre les pertes de charge du canal et a un rendement médiocre, il consomme plutôt quelques watts. L'efficacité reste alors de l'ordre de la centaine, très au-dessus de celle d'un climatiseur.
 
 ### Question 22 — Efficacité d'un réfrigérateur réversible
 

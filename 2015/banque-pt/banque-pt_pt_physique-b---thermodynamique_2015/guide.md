@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** L'habitat : isolation thermique, alimentation en eau et rafraîchissement. L'épreuve dure 2 heures, **sans calculatrice**, et comporte 24 questions numérotées de 1 à 24, réparties en trois parties indépendantes.
@@ -228,7 +230,7 @@ $$j_2 = \frac{\Delta T}{R_b + R_p} = \frac{20}{2{,}7} \approx 7\ \mathrm{W\cdot 
 
 **Conclusion.**
 
-$$\boxed{\frac{j_1}{j_2} = \frac{R_b + R_p}{R_b} \approx 13}$$
+$$\boxed{\frac{j_1}{j_2} = \frac{R_b + R_p}{R_b} = \frac{2{,}7}{0{,}2} \approx 14}$$
 
 Dix centimètres de polystyrène divisent les pertes par plus de dix : pour $100\ \mathrm{m^2}$ de murs, on passe d'environ $10\ \mathrm{kW}$ à moins de $1\ \mathrm{kW}$ de chauffage nécessaire. L'isolant est équivalent, à lui seul, à $2{,}5\ \mathrm{m}$ de béton. C'est la couche de plus grande résistance qui fixe le flux, d'où l'intérêt d'un matériau de très faible conductivité même en faible épaisseur.
 
@@ -315,7 +317,7 @@ La vitesse de la surface libre est donc négligeable devant celle de l'eau dans 
 > Appliquer la relation de Bernoulli le long d'une ligne de courant allant de la surface libre à la sortie du robinet, en énonçant ses conditions de validité.
 
 > [!INDICATION]
-> Les deux points sont à la pression atmosphérique, et la vitesse en haut est négligeable (question 10). Sans calculatrice, prendre $g \approx 10\ \mathrm{m\cdot s^{-2}}$ pour extraire la racine.
+> Les deux points sont à la pression atmosphérique, et la vitesse en haut est négligeable (question 10). Sans calculatrice, remarquer que $2 \times 9{,}8 \times 20 = 392 \approx 400$, dont la racine est immédiate.
 
 #### Solution
 
@@ -627,7 +629,7 @@ $$\boxed{P_{vent} \approx 5\cdot 10^{-3}\ \mathrm{W}}$$
 
 $$\boxed{e = \frac{P_{perdue}}{P_{vent}} = \frac{2\,c_p\,(T_e - T_s)}{v_a^2} = \frac{4{,}5\cdot 10^{2}}{5{,}4\cdot 10^{-3}} \approx 8\cdot 10^{4}}$$
 
-**Commentaire.** La valeur est gigantesque, car le ventilateur ne fait que déplacer l'air : il ne « pompe » pas la chaleur, qui passe spontanément de l'air chaud à l'eau froide. Cette puissance est une borne inférieure ; un ventilateur réel doit vaincre les pertes de charge du canal et a un rendement médiocre, il consomme plutôt quelques watts. L'efficacité reste alors de l'ordre de la centaine, très au-dessus de celle d'un climatiseur.
+**Commentaire.** La valeur est gigantesque, car le ventilateur ne fait que déplacer l'air : il ne « pompe » pas la chaleur, qui passe spontanément de l'air chaud à l'eau froide. Cette puissance est un minorant de la puissance réellement consommée, donc l'efficacité calculée est un majorant ; un ventilateur réel doit vaincre les pertes de charge du canal et a un rendement médiocre, il consomme plutôt quelques watts. L'efficacité reste alors de l'ordre de la centaine, très au-dessus de celle d'un climatiseur.
 
 > [!PIEGE]
 > Aucune perte de charge n'est donnée pour le canal : le seul calcul possible avec les données est celui de l'énergie cinétique communiquée à l'air. Il faut annoncer clairement cette hypothèse et présenter le résultat comme une borne inférieure de la puissance.
@@ -721,7 +723,7 @@ soit environ un tiers de période ; avec un débit un peu plus faible ou davanta
 - *Systèmes ouverts* : premier principe en écoulement stationnaire, $D_m\,\Delta h = P_u + P_{th}$ lorsque les énergies cinétique et potentielle sont négligeables.
 - *Machines dithermes* : l'efficacité se démontre à partir des deux principes ; pour un réfrigérateur réversible, $e = T_f/(T_c - T_f)$, températures en kelvins ; les machines réelles en sont loin (3 à 5).
 
-**Résultats numériques.** $j \approx 100\ \mathrm{W\cdot m^{-2}}$ sans isolant et $7\ \mathrm{W\cdot m^{-2}}$ avec (valeurs choisies) ; $v \approx 20\ \mathrm{m\cdot s^{-1}}$ ; $D_v = 20\ \mathrm{L\cdot s^{-1}}$ ; perte de charge de $2\ \mathrm{mm}$ d'eau par mètre, soit $2\ \mathrm{m}$ d'eau pour $1\ \mathrm{km}$ ; $v' \approx 19\ \mathrm{m\cdot s^{-1}}$ ; $P_{pompe} \approx 0{,}4\ \mathrm{kW}$ ; $c_p \approx 1{,}0\ \mathrm{kJ\cdot K^{-1}\cdot kg^{-1}}$ ; $\Delta\rho/\rho \approx 5\ \%$ ; $P_{perdue} = 450\ \mathrm{W}$ ; $\Delta t_{max} \approx 8{,}5\ \mathrm{h}$ ; $P_{vent} \approx 5\ \mathrm{mW}$ et $e \approx 8\cdot 10^{4}$ ; $e_{rév} \approx 19$.
+**Résultats numériques.** $j \approx 100\ \mathrm{W\cdot m^{-2}}$ sans isolant et $7\ \mathrm{W\cdot m^{-2}}$ avec (valeurs choisies) ; $v \approx 20\ \mathrm{m\cdot s^{-1}}$ ; $D_v = 20\ \mathrm{L\cdot s^{-1}}$ ; perte de charge de $2\ \mathrm{mm}$ d'eau par mètre, soit $2\ \mathrm{m}$ d'eau pour $1\ \mathrm{km}$ ; $v' \approx 19\ \mathrm{m\cdot s^{-1}}$ ; $P_{pompe} \approx 0{,}4\ \mathrm{kW}$ ; $c_p \approx 1{,}0\ \mathrm{kJ\cdot K^{-1}\cdot kg^{-1}}$ ; $\Delta\rho/\rho \approx 5\ \%$ ; $P_{perdue} = 450\ \mathrm{W}$ ; $\Delta t_{max} \approx 8{,}5\ \mathrm{h}$ ; $P_{vent} \approx 5\ \mathrm{mW}$ (minorant) et $e \approx 8\cdot 10^{4}$ (majorant) ; $e_{rév} \approx 19$.
 
 **Erreurs relevées par le jury.** Loi de Fourier sans vecteurs ni unités, signe non justifié ; démonstration de l'équation de la chaleur bâclée, temps caractéristique confondu avec la diffusivité ; résistances données sans définition ; question 5 réduite à une discussion ; ordres de grandeur inconnus ; absence de comparaison chiffrée à la question 7 ; expressions non homogènes aux questions 8 et 9 ; conservation du débit non justifiée ; pertes de charge mal maîtrisées ; capacité thermique affirmée sans démonstration ; températures en degrés Celsius, confusions entre joule, kilojoule et watt ; efficacité du réfrigérateur non démontrée ou inférieure à 1.
 

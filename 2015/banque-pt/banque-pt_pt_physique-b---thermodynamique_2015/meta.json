@@ -69,6 +69,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Rédaction des deux éditions (24 questions) à partir du sujet lu en image et du rapport du jury ; applications numériques refaites, deux figures créées, encadrés du jury relus contre le rapport."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application de la seconde relecture, chaque point vérifié contre le sujet : question 7 (rapport des flux 2,7/0,2 = 13,5 arrondi à 14, deux éditions) ; question 11 (indication du guidé accordée à la solution, g = 9,8 et 392 ≈ 400) ; figure mur-bicouche.svg (flèche et libellé du flux dégagés du profil de température) ; question 21 (puissance du ventilateur dite minorant et efficacité majorant, solution des deux éditions et bilan du guidé). Les 18 encadrés du jury recontrôlés contre le rapport, aucun requalifié."
     }
   ]
 }
