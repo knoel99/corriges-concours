@@ -93,6 +93,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Rédaction des corrigés brut et guidé des 42 questions et de trois figures, à partir du sujet, de son document-réponse et du rapport du jury ; applications numériques recalculées, frontières du diagramme potentiel-pH recoupées par le calcul, encadrés JURY relus contre le rapport."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Corrections de la relecture indépendante, chacune revérifiée contre le sujet et le rapport du jury. Guidé, IV.3.3 : encadré PIEGE corrigé (KFe(CN)3 est neutre avec du fer(II) ; l'erreur contredit la formule de l'énoncé et IV.3.1). Brut et guidé : I.1.5 (abondances isotopiques signalées hors énoncé), I.3.3 (0,146 a au lieu de 0,147 a, valeur de l'énoncé retrouvée à l'arrondi près), I.5.1 (3,710·10^-25 au lieu de 3,709·10^-25), I.5.2 (dilatation thermique ramenée à une hypothèse, structure du fer delta signalée hors énoncé), IV.3.3 (orientation du cyanure signalée hors énoncé). Guidé : encadrés JURY de II.1.2 et II.2.2 ramenés au texte du rapport ; les 14 encadrés JURY recontrôlés, aucun requalifié. Figures : libellés des zones II et IV du diagramme potentiel-pH déplacés hors des tracés, mention « sans échelle » ajoutée à la figure des mailles."
     }
   ]
 }

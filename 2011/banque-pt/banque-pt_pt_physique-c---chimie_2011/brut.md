@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Épreuve de 2 heures, sans calculatrice, sur la chimie physique du fer : 42 questions, repérées comme dans l'énoncé de I.1.1 à IV.3.3, en quatre parties indépendantes (élément et cristallographie, oxydation en voie sèche, corrosion en voie aqueuse, complexes cyanés), avec un document-réponse à rendre (diagramme d'Ellingham à tracer, diagramme potentiel-pH à compléter). Les 42 questions sont traitées. Les valeurs lues sur le document-réponse sont signalées à l'endroit où elles servent et recoupées par le calcul. L'énoncé ne fournit pas la constante d'Avogadro, nécessaire à la question I.5.1 : la valeur retenue y est présentée comme un choix du corrigé. La question I.4 ne porte pas de sous-numéro, et l'énoncé nomme (4), sans réaction (3), l'oxydation de la wüstite en magnétite.
 
 [Sujet officiel (archive)](https://www.banquept.fr/documents/2011/phys_c_pt_2011.zip) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2011/rapport_phys_c_ecrit_2011.pdf)
@@ -65,7 +67,7 @@ La masse molaire atomique d'un élément est la **moyenne des masses molaires de
 
 $$M = \sum_i x_i\,M_i$$
 
-Le fer naturel est un mélange de quatre isotopes stables : ${}^{56}\mathrm{Fe}$, de loin le plus abondant (environ 92 %), accompagné de ${}^{54}\mathrm{Fe}$ (environ 6 %), de ${}^{57}\mathrm{Fe}$ (environ 2 %) et de traces de ${}^{58}\mathrm{Fe}$. La valeur obtenue est donc proche de $56\ \mathrm{g\cdot mol^{-1}}$ sans être entière ; elle lui est légèrement inférieure parce que l'isotope minoritaire le plus abondant est plus léger.
+Le fer naturel est un mélange de quatre isotopes stables (abondances usuelles, non fournies par l'énoncé et non exigibles) : ${}^{56}\mathrm{Fe}$, de loin le plus abondant (environ 92 %), accompagné de ${}^{54}\mathrm{Fe}$ (environ 6 %), de ${}^{57}\mathrm{Fe}$ (environ 2 %) et de traces de ${}^{58}\mathrm{Fe}$. La valeur obtenue est donc proche de $56\ \mathrm{g\cdot mol^{-1}}$ sans être entière ; elle lui est légèrement inférieure parce que l'isotope minoritaire le plus abondant est plus léger.
 
 Par ailleurs, la masse molaire d'un isotope n'est elle-même pas exactement égale à son nombre de masse : la masse d'un noyau est inférieure à la somme des masses de ses nucléons (défaut de masse, lié à l'énergie de liaison du noyau), et l'unité de masse atomique est définie à partir du carbone 12.
 
@@ -171,7 +173,9 @@ $$R_i = \frac a2 - R = a\left(\frac12 - \frac{\sqrt3}{4}\right) \approx 0{,}067\
 
 On retrouve la valeur de l'énoncé. De même, pour la structure cubique à faces centrées, le site du milieu d'une arête donne :
 
-$$R_i = \frac a2 - R = a\left(\frac12 - \frac{\sqrt2}{4}\right) \approx 0{,}147\,a$$
+$$R_i = \frac a2 - R = a\left(\frac12 - \frac{\sqrt2}{4}\right) \approx 0{,}146\,a$$
+
+soit, à l'arrondi près, la valeur $0{,}147\,a$ de l'énoncé.
 
 ### Question I.4 — Pourquoi les aciers se forment à partir de l'austénite
 
@@ -197,7 +201,7 @@ L'énoncé ne fournit pas la constante d'Avogadro : le corrigé retient $N_A = 6
 
 $$\rho_\alpha = \frac{2M}{N_A\,a_\alpha^3} = \frac{1{,}855\cdot10^{-25}}{a_\alpha^3}$$
 
-$$\rho_\gamma = \frac{4M}{N_A\,a_\gamma^3} = \frac{3{,}709\cdot10^{-25}}{a_\gamma^3}$$
+$$\rho_\gamma = \frac{4M}{N_A\,a_\gamma^3} = \frac{3{,}710\cdot10^{-25}}{a_\gamma^3}$$
 
 Avec $a_\alpha = 286{,}6\cdot10^{-12}\ \mathrm{m}$ et $a_\gamma = 359{,}1\cdot10^{-12}\ \mathrm{m}$ :
 
@@ -223,11 +227,11 @@ $$R_\alpha = \frac{a_\alpha\sqrt3}{4} \approx 124\ \mathrm{pm}$$
 
 $$R_\gamma = \frac{a_\gamma\sqrt2}{4} \approx 127\ \mathrm{pm}$$
 
-Deux effets expliquent cette différence : le rayon métallique augmente avec la coordinence (8 dans la structure cubique centrée, 12 dans la structure cubique à faces centrées), et les variétés stables à haute température sont dilatées par l'agitation thermique. Le gain de compacité est ainsi presque exactement compensé, et le volume occupé par atome reste à peu près le même ($a_\alpha^3/2 \approx 11{,}8\cdot10^{-30}\ \mathrm{m^3}$ contre $a_\gamma^3/4 \approx 11{,}6\cdot10^{-30}\ \mathrm{m^3}$).
+L'effet principal est connu (hors énoncé) : le rayon métallique augmente avec la coordinence (8 dans la structure cubique centrée, 12 dans la structure cubique à faces centrées). L'énoncé ne précise pas à quelle température les paramètres de maille sont donnés ; s'ils l'étaient chacun dans le domaine de stabilité de la variété, la dilatation thermique s'y ajouterait. Le gain de compacité est ainsi presque exactement compensé, et le volume occupé par atome reste à peu près le même ($a_\alpha^3/2 \approx 11{,}8\cdot10^{-30}\ \mathrm{m^3}$ contre $a_\gamma^3/4 \approx 11{,}6\cdot10^{-30}\ \mathrm{m^3}$).
 
 $$\boxed{\text{densités voisines : le modèle de sphères dures de rayon invariable n'est pas valable d'une variété à l'autre}}$$
 
-Pour le fer $\delta$, l'énoncé indique seulement une maille cubique : l'égalité des densités ne permet pas à elle seule de trancher entre les deux empilements. Il s'agit en fait d'une structure cubique centrée, comme le fer $\alpha$, dont le paramètre de maille est un peu plus grand du fait de la dilatation thermique. Conséquence pratique : les transformations allotropiques du fer s'accompagnent de variations de volume faibles.
+Pour le fer $\delta$, l'énoncé indique seulement une maille cubique : l'égalité des densités ne permet pas à elle seule de trancher entre les deux empilements. Il s'agit en fait (donnée extérieure à l'énoncé) d'une structure cubique centrée, comme le fer $\alpha$, dont le paramètre de maille est un peu plus grand du fait de la dilatation thermique. Conséquence pratique : les transformations allotropiques du fer s'accompagnent de variations de volume faibles.
 
 ## Partie II — Oxydation en voie sèche
 
@@ -593,4 +597,4 @@ Le contenu d'un cube est donc $\mathrm{K_{1/2}Fe(CN)_3}$, soit, en doublant :
 
 $$\boxed{2 \times \mathrm{K_{1/2}Fe(CN)_3} = \mathrm{KFe_2(CN)_6}}$$
 
-Chaque atome de fer est entouré de six ligands portés par les six arêtes qui se rejoignent en son sommet : la coordinence octaédrique des complexes précédents est conservée. Chaque cyanure, aligné sur une arête, ponte deux atomes de fer par ses deux doublets (question IV.3.2), le carbone du côté du fer(II), l'azote du côté du fer(III). Les deux degrés d'oxydation alternent ainsi d'un sommet au suivant ; chaque type de fer occupe alors les nœuds d'un réseau cubique à faces centrées dont l'arête vaut le double de celle du petit cube, ce qui s'accorde avec le système cristallin indiqué par l'énoncé. Cette grande maille, formée de huit petits cubes, contient 4 motifs $\mathrm{KFe_2(CN)_6}$. On vérifie enfin l'électroneutralité : $+1 + 2 + 3 - 6 = 0$.
+Chaque atome de fer est entouré de six ligands portés par les six arêtes qui se rejoignent en son sommet : la coordinence octaédrique des complexes précédents est conservée. Chaque cyanure, aligné sur une arête, ponte deux atomes de fer par ses deux doublets (question IV.3.2), le carbone du côté du fer(II), l'azote du côté du fer(III) (orientation connue par ailleurs, que l'énoncé ne demande pas). Les deux degrés d'oxydation alternent ainsi d'un sommet au suivant ; chaque type de fer occupe alors les nœuds d'un réseau cubique à faces centrées dont l'arête vaut le double de celle du petit cube, ce qui s'accorde avec le système cristallin indiqué par l'énoncé. Cette grande maille, formée de huit petits cubes, contient 4 motifs $\mathrm{KFe_2(CN)_6}$. On vérifie enfin l'électroneutralité : $+1 + 2 + 3 - 6 = 0$.
