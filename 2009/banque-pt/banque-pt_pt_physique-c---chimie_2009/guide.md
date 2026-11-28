@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** Un matériau de construction : le ciment. L'épreuve dure 2 heures, **calculatrice autorisée**, et comporte 34 questions en quatre parties indépendantes, dont l'énoncé indique le poids dans le barème. Les données (masses molaires, constantes, $\mathrm{p}K_A$ de l'EDTA, $\mathrm{p}K_s$ du chlorure d'argent, potentiel standard du couple de l'argent, conductivités molaires ioniques) sont regroupées en tête du sujet ; les grandeurs thermodynamiques sont données au fil des questions. Il n'y a ni annexe ni document-réponse. Les questions sont repérées ici de A.1 à D.4 : l'énoncé écrit « A-1 », « C-2 a) », « D.1 a) » ou « D.2.1 a) », ce qui devient A.1, C.2.a, D.1.a et D.2.1.a.
@@ -272,7 +274,7 @@ $$m(\mathrm{CH_4}) = 2{,}28\cdot10^{3} \times 16{,}0\cdot10^{-3}$$
 
 $$\boxed{m(\mathrm{CH_4}) \approx 36{,}5\ \mathrm{kg}}$$
 
-Remarque : le calcul utilise la valeur de l'énoncé, $-690\ \mathrm{kJ\cdot mol^{-1}}$. Les tables donnent plutôt une valeur voisine de $-800\ \mathrm{kJ\cdot mol^{-1}}$ lorsque l'eau est formée à l'état de vapeur ; l'ordre de grandeur du résultat n'en est pas changé.
+Remarque : le calcul utilise la valeur de l'énoncé, $-690\ \mathrm{kJ\cdot mol^{-1}}$, et l'équation (2) laisse l'eau sans état physique, parce que l'énoncé ne le précise pas. Les enthalpies standard de formation tabulées à 298 K ($-393{,}5$ pour $\mathrm{CO_2}_{(g)}$, $-74{,}8$ pour $\mathrm{CH_4}_{(g)}$, $-241{,}8$ pour $\mathrm{H_2O}_{(g)}$ et $-285{,}8\ \mathrm{kJ\cdot mol^{-1}}$ pour $\mathrm{H_2O}_{(l)}$) donnent, par la loi de Hess, $-802\ \mathrm{kJ\cdot mol^{-1}}$ si l'eau est formée à l'état de vapeur et $-890\ \mathrm{kJ\cdot mol^{-1}}$ si elle est liquide. La valeur de l'énoncé est plus petite en valeur absolue dans les deux cas ; avec $-802\ \mathrm{kJ\cdot mol^{-1}}$, on trouverait environ 31 kg de méthane : l'ordre de grandeur du résultat n'en est pas changé.
 
 > [!JURY]
 > Le rapport juge la question généralement bien traitée, tout en signalant que du dihydrogène apparaît assez souvent dans l'équation de combustion écrite par les candidats.
@@ -400,7 +402,7 @@ $$K_4^\circ(T_2) \approx 1{,}73$$
 
 $$\boxed{P_e(900\ {}^\circ\mathrm{C}) \approx 1{,}73\ \mathrm{bar}}$$
 
-La pression d'équilibre augmente avec la température, comme attendu pour une réaction endothermique. On retrouve la même valeur avec $\ln K_4^\circ = -\Delta_r H_4^\circ/(RT_2) + \Delta_r S_4^\circ/R$, ce qui revient à supposer aussi $\Delta_r S_4^\circ$ constante.
+La pression d'équilibre augmente avec la température, comme attendu pour une réaction endothermique. On retrouve la même valeur avec $\ln K_4^\circ = -\Delta_r H_4^\circ/(RT_2) + \Delta_r S_4^\circ/R$, ce qui revient à supposer aussi $\Delta_r S_4^\circ$ constante. L'exponentielle amplifie les arrondis : il faut y garder la valeur non arrondie $\Delta_r S_4^\circ \approx 154{,}78\ \mathrm{J\cdot K^{-1}\cdot mol^{-1}}$ (soit $\Delta_r G_4^\circ \approx 21{,}415\ \mathrm{kJ\cdot mol^{-1}}$), car la valeur encadrée 155 donnerait 1,78 bar.
 
 ### Question C.5.c
 

@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Épreuve de 2 heures, calculatrice autorisée, sur un matériau de construction, le ciment : 34 questions en quatre parties indépendantes (propriétés atomiques du calcium, cristallographie, thermochimie de l'industrie cimentière, dosages d'une solution représentative d'un ciment). Les 34 questions sont traitées. Elles sont repérées ici de A.1 à D.4 : l'énoncé écrit « A-1 », « C-2 a) », « D.1 a) » ou « D.2.1 a) », ce qui devient A.1, C.2.a, D.1.a et D.2.1.a. Les données numériques sont celles de l'énoncé ; deux choix du corrigé sont signalés à leur place (question D.3.b : solution et volume auxquels se rapporte la concentration ; question C.3.a : absence de pertes thermiques).
 
 [Sujet officiel (archive)](https://www.banquept.fr/documents/2009/phys_c_2009.zip) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2009/rapport_phys_c_ecrit_2009.pdf)
@@ -162,7 +164,7 @@ $$m(\mathrm{CH_4}) = 2{,}28\cdot10^{3} \times 16{,}0\cdot10^{-3}$$
 
 $$\boxed{m(\mathrm{CH_4}) \approx 36{,}5\ \mathrm{kg}}$$
 
-Remarque : le calcul utilise la valeur de l'énoncé, $-690\ \mathrm{kJ\cdot mol^{-1}}$. Les tables donnent plutôt une valeur voisine de $-800\ \mathrm{kJ\cdot mol^{-1}}$ lorsque l'eau est formée à l'état de vapeur ; l'ordre de grandeur du résultat n'en est pas changé.
+Remarque : le calcul utilise la valeur de l'énoncé, $-690\ \mathrm{kJ\cdot mol^{-1}}$, et l'équation (2) laisse l'eau sans état physique, parce que l'énoncé ne le précise pas. Les enthalpies standard de formation tabulées à 298 K ($-393{,}5$ pour $\mathrm{CO_2}_{(g)}$, $-74{,}8$ pour $\mathrm{CH_4}_{(g)}$, $-241{,}8$ pour $\mathrm{H_2O}_{(g)}$ et $-285{,}8\ \mathrm{kJ\cdot mol^{-1}}$ pour $\mathrm{H_2O}_{(l)}$) donnent, par la loi de Hess, $-802\ \mathrm{kJ\cdot mol^{-1}}$ si l'eau est formée à l'état de vapeur et $-890\ \mathrm{kJ\cdot mol^{-1}}$ si elle est liquide. La valeur de l'énoncé est plus petite en valeur absolue dans les deux cas ; avec $-802\ \mathrm{kJ\cdot mol^{-1}}$, on trouverait environ 31 kg de méthane : l'ordre de grandeur du résultat n'en est pas changé.
 
 ### Question C.3.b — Masse de dioxyde de carbone produite par la combustion
 
@@ -241,7 +243,7 @@ $$K_4^\circ(T_2) \approx 1{,}73$$
 
 $$\boxed{P_e(900\ {}^\circ\mathrm{C}) \approx 1{,}73\ \mathrm{bar}}$$
 
-La pression d'équilibre augmente avec la température, comme attendu pour une réaction endothermique. On retrouve la même valeur avec $\ln K_4^\circ = -\Delta_r H_4^\circ/(RT_2) + \Delta_r S_4^\circ/R$, ce qui revient à supposer aussi $\Delta_r S_4^\circ$ constante.
+La pression d'équilibre augmente avec la température, comme attendu pour une réaction endothermique. On retrouve la même valeur avec $\ln K_4^\circ = -\Delta_r H_4^\circ/(RT_2) + \Delta_r S_4^\circ/R$, ce qui revient à supposer aussi $\Delta_r S_4^\circ$ constante. L'exponentielle amplifie les arrondis : il faut y garder la valeur non arrondie $\Delta_r S_4^\circ \approx 154{,}78\ \mathrm{J\cdot K^{-1}\cdot mol^{-1}}$ (soit $\Delta_r G_4^\circ \approx 21{,}415\ \mathrm{kJ\cdot mol^{-1}}$), car la valeur encadrée 155 donnerait 1,78 bar.
 
 ### Question C.5.c — Affinité initiale pour n très faible
 

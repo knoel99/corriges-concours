@@ -90,6 +90,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Rédaction des corrigés brut et guidé des 34 questions et de quatre figures, à partir du sujet et du rapport du jury ; applications numériques recalculées, encadrés JURY relus contre le rapport."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application des trois défauts mineurs de la relecture indépendante, revérifiés contre le sujet (p. 4) et par le calcul, dans le brut et le guidé. C.3.a : remarque sur l'enthalpie de combustion précisée (enthalpies de formation tabulées, −802 kJ/mol eau vapeur, −890 kJ/mol eau liquide, environ 31 kg de méthane avec −802) et raison de l'absence d'état physique de l'eau dans l'équation (2) indiquée, l'énoncé ne le précisant pas. C.5.b : vérification croisée par l'entropie complétée par la valeur non arrondie 154,78 J/K/mol, la valeur encadrée 155 donnant 1,78 bar. Aucun résultat encadré, figure ni encadré JURY modifié."
     }
   ]
 }
