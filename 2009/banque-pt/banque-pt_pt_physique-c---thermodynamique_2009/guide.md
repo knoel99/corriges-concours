@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** Étude très simplifiée d'une centrale nucléaire à eau pressurisée. L'épreuve dure 2 heures, **calculatrice autorisée**, et comporte 28 questions numérotées de 1 à 28, en quatre parties dont l'énoncé donne le poids dans le barème. Il n'y a pas de document réponse : le tableau 2 est à recopier sur la copie.
@@ -277,7 +279,7 @@ $$(u_s + P_s v_s) - (u_e + P_e v_e) = w_i + q$$
 $$\boxed{\Delta h = h_s - h_e = w_i + q}$$
 
 > [!JURY]
-> Le rapport y voit une question de cours classique, pourtant rarement bien traitée : le système est trop souvent mal défini (un schéma sans légende ne suffit pas) et les étapes ne sont pas justifiées, ce qui donne l'impression d'un par cœur mal maîtrisé. Il cite des erreurs graves : affirmer qu'un système fermé subit nécessairement une transformation isochore, ou qu'en régime permanent la différentielle de son énergie est nulle.
+> Le rapport y voit une question de cours classique, pourtant rarement bien traitée : le système est trop souvent mal défini (un schéma sans légende ne suffit pas) et les étapes ne sont pas justifiées, ce qui donne l'impression d'un par cœur plus ou moins maîtrisé. Il cite des erreurs graves : affirmer qu'un système fermé subit nécessairement une transformation isochore, ou qu'en régime permanent la différentielle de son énergie est nulle.
 
 > [!METHODE]
 > Trois étapes à faire apparaître : définition du système fermé aux deux instants, bilan d'énergie en régime permanent (seules les tranches d'entrée et de sortie comptent), inventaire des travaux en séparant travail de transvasement et travail indiqué.
@@ -481,7 +483,7 @@ soit près de trois hectares. C'est un ordre de grandeur, comme le demande l'én
 
 $$P_{th} = \frac{5{,}0 \times 10^{3} \times 15\,000 \times 1720 \times 20}{15\,000 - 1720}\ \mathrm{W} \approx 1{,}9 \times 10^{2}\ \mathrm{MW}$$
 
-(le secondaire ne s'échaufferait que de $22{,}6\ \mathrm{K}$ et le primaire ne se refroidirait que de $2{,}6\ \mathrm{K}$). C'est environ vingt fois moins que les $4143\ \mathrm{MW}$ de la question 2. L'écart vient de l'hypothèse simplificatrice de la partie III : en ignorant la vaporisation, on prive le fluide secondaire de l'essentiel de l'énergie qu'il absorbe (chaleur latente). Appliquée telle quelle avec ces données, la formule de la question 17 donnerait $S = \dfrac{c\,D_1 D_2}{h\,(D_1 - D_2)}\ln\!\left(\dfrac{\Delta T_0}{\Delta T_L}\right) \approx 1{,}3 \times 10^{3}\ \mathrm{m^2}$, surface d'un échangeur qui ne transmettrait que $1{,}9 \times 10^{2}\ \mathrm{MW}$. Le corrigé retient la première valeur, la seule compatible avec la puissance à transférer et avec la question 20 ; c'est un choix du corrigé, que l'énoncé ne tranche pas explicitement.
+(le secondaire ne s'échaufferait que de $22{,}6\ \mathrm{K}$ et le primaire ne se refroidirait que de $2{,}6\ \mathrm{K}$). C'est environ vingt fois moins que les $4143\ \mathrm{MW}$ de la question 2. L'écart vient de l'hypothèse simplificatrice de la partie III : en ignorant la vaporisation, on prive le fluide secondaire de l'essentiel de l'énergie qu'il absorbe (chaleur latente). Appliquée telle quelle avec ces données, la formule de la question 17 donnerait $S = \dfrac{c\,D_1 D_2}{h\,(D_1 - D_2)}\ln\!\left(\dfrac{\Delta T_0}{\Delta T_L}\right) \approx 1{,}3 \times 10^{3}\ \mathrm{m^2}$, surface d'un échangeur qui ne transmettrait que $1{,}9 \times 10^{2}\ \mathrm{MW}$. Le corrigé retient la première valeur, la seule compatible avec la puissance à transférer ; c'est un choix du corrigé, que l'énoncé ne tranche pas explicitement. Avec la seconde, un appareil ne transmettrait que $1{,}9 \times 10^{2}\ \mathrm{MW}$ et il en faudrait une vingtaine : la conclusion de la question 20 (plusieurs générateurs en parallèle) est la même dans les deux lectures.
 
 > [!PIEGE]
 > Ne pas se contenter de « $h = 3000$ SI » : donner l'unité, $\mathrm{W \cdot m^{-2} \cdot K^{-1}}$, et s'en servir pour vérifier l'homogénéité de $S = P_{th}/(h\,\Delta T_{ml})$.
@@ -545,7 +547,7 @@ Le cycle est parcouru dans le sens horaire : c'est un cycle moteur.
 
 **Précision sur la figure.** Les points 2 à 6 et les extrémités des paliers sont placés à l'échelle avec les valeurs des tableaux 1 et 2 du sujet. La courbe de saturation n'est connue que par les trois lignes du tableau 1 : entre ces points, et jusqu'au point critique (placé à $374\ \mathrm{°C}$ et $4{,}4\ \mathrm{kJ \cdot K^{-1} \cdot kg^{-1}}$, valeurs de cours que l'énoncé ne donne pas), le tracé est une interpolation qui n'a qu'une valeur d'allure.
 
-**Incohérence dans le tableau 1.** Sur un palier de changement d'état, $h'' - h' = T\,(s'' - s')$. Les lignes $11\ \mathrm{bar}$ et $0{,}05\ \mathrm{bar}$ vérifient cette relation à mieux que $0{,}3\ \%$. La ligne $74\ \mathrm{bar}$ ne la vérifie pas : $(h'' - h')/T = (2786 - 1290)/563{,}15 \approx 2{,}66\ \mathrm{kJ \cdot K^{-1} \cdot kg^{-1}}$, alors que $s'' - s' = 5{,}8877 - 3{,}611 \approx 2{,}28\ \mathrm{kJ \cdot K^{-1} \cdot kg^{-1}}$. Si les trois autres valeurs sont exactes, $s'$ à $74\ \mathrm{bar}$ devrait valoir environ $3{,}23$ au lieu de $3{,}611$. Cette valeur de $s'$ n'intervient dans aucun calcul demandé (seule $s''$ à $74\ \mathrm{bar}$ sert) : les résultats des questions 23 à 28 n'en dépendent pas. Elle n'affecte que la position, sur la figure 3, de l'extrémité gauche du palier $290\ \mathrm{°C}$, tracée avec la valeur du sujet.
+**Incohérence dans le tableau 1.** Sur un palier de changement d'état, $h'' - h' = T\,(s'' - s')$. Les lignes $11\ \mathrm{bar}$ et $0{,}05\ \mathrm{bar}$ vérifient cette relation à mieux que $0{,}3\ \%$. La ligne $74\ \mathrm{bar}$ ne la vérifie pas : $(h'' - h')/T = (2786 - 1290)/563{,}15 \approx 2{,}66\ \mathrm{kJ \cdot K^{-1} \cdot kg^{-1}}$, alors que $s'' - s' = 5{,}8877 - 3{,}611 \approx 2{,}28\ \mathrm{kJ \cdot K^{-1} \cdot kg^{-1}}$. Si les trois autres valeurs sont exactes, $s'$ à $74\ \mathrm{bar}$ devrait valoir environ $3{,}23$ au lieu de $3{,}611$. (Les tables de l'eau donnent environ $3{,}16$ à $290\ \mathrm{°C}$, valeur extérieure à l'énoncé : une inversion de chiffres, $3{,}161$ devenu $3{,}611$, est plausible.) Cette valeur de $s'$ n'intervient dans aucun calcul demandé (seule $s''$ à $74\ \mathrm{bar}$ sert) : les résultats des questions 23 à 28 n'en dépendent pas. Elle n'affecte que la position, sur la figure 3, de l'extrémité gauche du palier $290\ \mathrm{°C}$, tracée avec la valeur du sujet.
 
 **Limite du modèle de gaz parfait.** Entre la vapeur saturante à $11\ \mathrm{bar}$ et le point 4, les tableaux donnent $\Delta s / \ln(T_4/T_3) \approx 2{,}8\ \mathrm{kJ \cdot K^{-1} \cdot kg^{-1}}$ mais $\Delta h / \Delta T \approx 0{,}94\ \mathrm{kJ \cdot K^{-1} \cdot kg^{-1}}$ : ces deux estimations de $c_P$ ne s'accordent pas. Le modèle du gaz parfait à $c_P$ constant ne sert donc qu'à justifier l'allure de l'isobare, pas à calculer.
 
@@ -583,7 +585,7 @@ $$w_{i,\text{pompe}} \approx 1{,}0 \times 10^{-3} \times (74 - 0{,}05) \times 10
 C'est moins de $1\ \%$ du travail fourni par les turbines (environ $10^{3}\ \mathrm{kJ \cdot kg^{-1}}$, question 26) : l'approximation est justifiée, grâce au très faible volume massique du liquide.
 
 > [!JURY]
-> Le rapport cite un enchaînement d'erreurs : poser $h = C_p T$ pour en conclure que la température ne varie pas dans une évolution calorifugée. Il relève aussi que de nombreux candidats partent de l'identité $\mathrm{d}h = T\,\mathrm{d}s + v\,\mathrm{d}P$ en affirmant que la transformation dans la pompe est isobare, et demande de garder à l'esprit la réalité physique du problème.
+> Le rapport cite un exemple de « surerreur » : affirmer que la transformation dans la pompe est isenthalpique parce que $\Delta h = C_p\,\Delta T$ avec $\Delta T = 0$, la température étant supposée constante au motif que l'évolution est calorifugée. Il relève aussi que de nombreux candidats partent de l'identité $\mathrm{d}h = T\,\mathrm{d}s + v\,\mathrm{d}P$ en affirmant que la transformation dans la pompe est isobare, et demande de garder à l'esprit la réalité physique du problème.
 
 > [!PIEGE]
 > Une pompe sert à augmenter la pression : la transformation 6 → 1 fait passer de $0{,}05\ \mathrm{bar}$ à $74\ \mathrm{bar}$. C'est le terme $v\,\mathrm{d}P$ qui est petit parce que $v$ est petit, pas parce que $\mathrm{d}P$ serait nul.
@@ -654,7 +656,7 @@ Le taux d'humidité est le titre massique en liquide, $y = 1 - x$.
 - Sortie de la turbine haute pression (point 3) : $y_3 = 1 - 0{,}847$, soit $\boxed{y_3 \approx 15{,}3\ \%}$.
 - Sortie de la turbine basse pression (point 5) : $y_5 = 1 - 0{,}829$, soit $\boxed{y_5 \approx 17{,}1\ \%}$.
 
-**La limite de $15\ \%$ n'est strictement respectée en sortie d'aucun des deux corps** : elle est tout juste atteinte, et très légèrement dépassée, en sortie du corps haute pression ($15{,}3\ \%$), et dépassée de deux points en sortie du corps basse pression ($17{,}1\ \%$). Dans ce modèle idéal, le cycle fonctionne donc à la limite de ce qui est toléré.
+**La limite de $15\ \%$ n'est strictement respectée en sortie d'aucun des deux corps** : elle est tout juste atteinte, et très légèrement dépassée, en sortie du corps haute pression ($15{,}3\ \%$), et dépassée de deux points en sortie du corps basse pression ($17{,}1\ \%$). Dans ce modèle idéal, le cycle fonctionne donc à la limite de ce qui est toléré. À la précision de la limite donnée (deux chiffres), on peut aussi dire qu'elle est respectée en sortie du corps haute pression ($15\ \%$) et dépassée en sortie du corps basse pression ($17\ \%$) : c'est probablement la réponse attendue.
 
 Remarque : dans une turbine réelle, la détente n'est pas réversible ; l'entropie massique augmente, le point de sortie se déplace vers la droite sur le palier et le taux d'humidité réel est un peu plus faible que celui du modèle.
 

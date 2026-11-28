@@ -79,6 +79,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Rédaction des deux éditions (28 questions) à partir du sujet lu en image et du rapport du jury ; applications numériques refaites par calcul, trois figures (deux schémas de principe, un diagramme entropique à l'échelle des tableaux), encadrés du jury relus contre le rapport, trois incohérences de l'énoncé signalées."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application des corrections de la relecture indépendante, chaque défaut revérifié contre le sujet et le rapport lus en image. Guidé : encadré du jury de la question 22 réécrit d'après le rapport (la « surerreur » est de justifier le caractère isenthalpique par Δh = Cp ΔT avec ΔT = 0) ; encadré du jury de la question 10 aligné sur le rapport (« plus ou moins maîtrisé »). Brut et guidé : question 19, la conclusion de la question 20 vaut dans les deux lectures de la surface ; question 21, hypothèse d'une inversion de chiffres pour s' à 74 bar (3,161 devenu 3,611), donnée comme hypothèse ; question 24, réponse probablement attendue à la précision de la limite (respectée en sortie du corps haute pression, dépassée en sortie du corps basse pression). Les 15 encadrés du jury du guidé contrôlés un par un contre le rapport (pages imprimées 25 à 27), aucun requalifié."
     }
   ]
 }
