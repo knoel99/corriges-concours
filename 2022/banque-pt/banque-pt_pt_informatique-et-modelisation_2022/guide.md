@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 Épreuve de quatre heures, sans calculatrice, sur le suivi de la consommation d'eau d'une habitation : un compteur délivre une impulsion par tour de sa partie mobile, et il s'agit de mettre en forme ces impulsions, puis de les exploiter. Le sujet compte 46 questions, numérotées de 1 à 46, en deux parties indépendantes.
@@ -106,7 +108,7 @@ On peut raisonnablement attendre la même tension en sortie, car aucune limitati
 - la sortie est à vide : le courant débité est négligeable.
 
 > [!JURY]
-> D'après le rapport 2022, la lecture est en général bien faite, mais la discussion sur la sortie est souvent erronée. Une réponse « oui » sans examen des limitations ne rapporte rien : les deux questions suivantes montrent justement deux cas où la sortie ne suit plus.
+> D'après le rapport 2022, la lecture est en général bien faite, mais la discussion sur la sortie est souvent erronée. Une réponse « oui » sans examen des limitations ne suffit pas : les deux questions suivantes montrent justement deux cas où la sortie ne suit plus.
 
 ### Question 4 — Vitesse de balayage
 
@@ -171,7 +173,7 @@ En égalant à $V_e$ :
 $$\boxed{G = \frac{V_s}{V_e} = 1 + \frac{R_2}{R_1}}$$
 
 > [!JURY]
-> Le rapport 2022 relève un certain nombre de schémas faux, notamment avec la rétroaction ramenée sur l'entrée $+$ : le montage serait alors instable et l'ALI saturerait.
+> Le rapport 2022 relève un certain nombre de schémas faux, notamment avec la rétroaction ramenée sur l'entrée $+$. Le montage serait alors instable et l'ALI saturerait.
 
 ### Question 7 — Choix des résistances et limites du gain
 
@@ -197,7 +199,7 @@ On garde les résistances entre le kilo-ohm et le mégohm. Avec $R_1 = 1\ \mathr
 
 $$G_{max} \sim \frac{10^{6}\ \mathrm{Hz}}{10^{4}\ \mathrm{Hz}} = 10^{2} .$$
 
-**On peut donc atteindre un gain d'environ $10^3$ à $10^4$ en continu, mais seulement d'une centaine à $10\ \mathrm{kHz}$.**
+**En continu, le gain est borné par le gain statique de l'ALI ($\mu_0 \sim 10^5$) et reste fiable jusqu'à $10^3$ ou $10^4$ ; à $10\ \mathrm{kHz}$, le produit gain × bande passante le limite à une centaine.**
 
 > [!JURY]
 > Le rapport 2022 juge cette question étonnamment mal traitée : valeurs de résistances irréalistes (de l'ordre de l'ohm) et limitations ignorées, alors que le gain statique et le produit gain-bande sont des ordres de grandeur du cours.
@@ -287,7 +289,7 @@ par exemple $\Delta t \lesssim 0{,}1\ \mathrm{ms}$.
 La tension $u_C$ est continue et n'évolue que par la charge ou la décharge du condensateur à travers $R$, sur une durée de l'ordre de $\tau$. Pendant $\Delta t \ll \tau$, sa variation relative est de l'ordre de $\Delta t/\tau \ll 1$ : $u_C$ reste pratiquement égale à sa valeur initiale $V_{sat} - V_0$.
 
 > [!JURY]
-> Le rapport 2022 attend la mention explicite de $\tau = RC$ ; une allusion vague à « un temps caractéristique du circuit ou de l'ALI » ne suffit pas.
+> Le rapport 2022 attend la mention explicite de $\tau = RC$ ; une allusion vague à un temps caractéristique du circuit ou de l'ALI ne suffit pas. Une réponse citant le temps de charge ou de décharge du condensateur pouvait aussi convenir.
 
 ### Question 12 — Basculement à l'arrivée de l'impulsion
 
@@ -318,7 +320,7 @@ $$\varepsilon = V_+ - 0 \approx +13\ \mathrm{V} > 0 .$$
 Le signe de $\varepsilon$ ne change pas : **la sortie reste à $+V_{sat}$, il n'y a pas de second basculement.** L'état haut est désormais entretenu par le condensateur, et non plus par l'entrée.
 
 > [!JURY]
-> Le rapport 2022 trouve les réponses trop vagues : il attend une chaîne logique nommant les grandeurs, à savoir signe de $\varepsilon$, basculement de $V_s$, continuité de $u_C$, nouvelle valeur de $V_+$, nouveau signe de $\varepsilon$.
+> Le rapport 2022 trouve les réponses trop vagues : il attend une suite de raisonnements logiques qui précise clairement les grandeurs électriques concernées. La solution ci-dessus suit cet ordre : signe de $\varepsilon$, basculement de $V_s$, continuité de $u_C$, nouvelle valeur de $V_+$, nouveau signe de $\varepsilon$.
 
 ### Question 13 — Évolution de la tension du condensateur
 
@@ -398,7 +400,7 @@ $$\boxed{t_1 \approx 17\ \mathrm{ms}}$$
 
 #### Solution
 
-Lecture de l'enregistrement ($5\ \mathrm{V/div}$, $5\ \mathrm{ms/div}$) : niveau de repos à $-0{,}2$ division, soit $-1\ \mathrm{V}$ ; saut à $t = 0$ jusqu'à $+2{,}5$ divisions, soit environ $+12{,}5\ \mathrm{V}$ ; décroissance jusqu'à $0\ \mathrm{V}$, atteinte $3{,}3$ divisions plus tard, soit $16{,}6\ \mathrm{ms}$ ; chute brutale jusqu'à $-2{,}8$ divisions, soit $-14\ \mathrm{V}$ ; puis remontée lente vers $-1\ \mathrm{V}$.
+Lecture de l'enregistrement ($5\ \mathrm{V/div}$, $5\ \mathrm{ms/div}$) : niveau de repos à $-0{,}2$ division, soit $-1\ \mathrm{V}$ ; saut à $t = 0$ jusqu'à $+2{,}5$ divisions, soit environ $+12{,}5\ \mathrm{V}$ ; décroissance jusqu'à $0\ \mathrm{V}$, atteinte $3{,}3$ divisions plus tard, soit $16{,}6\ \mathrm{ms}$ ; chute brutale jusqu'à $-2{,}7$ divisions, soit environ $-13{,}6\ \mathrm{V}$ ; puis remontée lente vers $-1\ \mathrm{V}$.
 
 **Première phase, $0 < t < t_1$ (sortie haute).** Le saut initial est celui de la question 12 : $V_+$ passe de $-V_0$ à $2V_{sat} - V_0 = 13\ \mathrm{V}$. Puis
 
@@ -412,7 +414,7 @@ $$V_+(t_1^+) = -V_{sat} + u_C(t_1) = -2V_{sat}$$
 
 $$\boxed{V_{+,min} = -2V_{sat} = -14\ \mathrm{V}}$$
 
-ce qui est bien la valeur lue.
+en accord avec la valeur lue ($-13{,}6\ \mathrm{V}$) à 3 % près ; de même la crête lue ($+12{,}5\ \mathrm{V}$) est un peu en dessous de $2V_{sat} - V_0 = 13\ \mathrm{V}$ : les tensions de saturation réelles sont légèrement inférieures à $V_{cc}$.
 
 **Seconde phase, $t > t_1$ (sortie basse).** Avec $V_s = -V_{sat}$, la même mise en équation donne
 
@@ -527,7 +529,7 @@ La tension filtrée vaut $\langle V_s\rangle = 2V_{sat}t_1 f - V_{sat}$. Pour ob
 
 $$U = \langle V_s \rangle + V_{sat} = 2\,V_{sat}\,t_1\,f .$$
 
-Réalisation : on place après le filtre (derrière un suiveur, pour ne pas le charger) un montage soustracteur à ALI, à quatre résistances identiques, dont la sortie vaut la différence de ses deux entrées. On applique $\langle V_s \rangle$ sur l'entrée positive et $-V_{cc}$ sur l'entrée négative ; le voltmètre branché en sortie mesure $U$. Ce second ALI doit être alimenté sous une tension supérieure à $2V_{sat}$ pour ne pas saturer. Plus simplement, un voltmètre branché entre la sortie du filtre et la borne $-V_{cc}$ de l'alimentation mesure directement cette différence.
+Réalisation : on place après le filtre (derrière un suiveur, pour ne pas le charger) un montage soustracteur à ALI, à quatre résistances identiques, dont la sortie vaut la différence de ses deux entrées. On applique $\langle V_s \rangle$ sur l'entrée positive et $-V_{cc}$ sur l'entrée négative ; le voltmètre branché en sortie mesure $U$. La tension $U$ reste inférieure à $2V_{sat}\,t_1/T$, soit moins de $5\ \mathrm{V}$ dans le domaine d'emploi $f \lesssim 20\ \mathrm{Hz}$ : ce second ALI peut être alimenté par la même source $\pm V_{cc}$ sans saturer. Plus simplement, un voltmètre branché entre la sortie du filtre et la borne $-V_{cc}$ de l'alimentation mesure directement cette différence.
 
 Avec les valeurs du montage,
 
@@ -605,7 +607,7 @@ soit environ sept chiffres décimaux significatifs. Pour une valeur de $1{,}6\ti
 **Dans les deux cas, 32 bits ne suffisent pas pour stocker directement un *timestamp* à la milliseconde.**
 
 > [!JURY]
-> Le rapport 2022 observe beaucoup de justifications partiellement correctes et peu de réponses complètes : les deux cas, entier et flottant, doivent être traités et chiffrés.
+> Le rapport 2022 observe beaucoup de justifications partiellement correctes et peu de réponses complètes. Pour être complet, il faut traiter et chiffrer les deux cas, entier et flottant.
 
 ### Question 25 — Lecture du fichier des impulsions
 
@@ -780,7 +782,7 @@ Le volume est l'intégrale du débit. Entre $t_{j-1}$ et $t_j$, on approche l'ai
 $$\boxed{v_j = v_{j-1} + \frac{q_{j-1} + q_j}{2}\,\Delta t}$$
 
 > [!JURY]
-> Le rapport 2022 note peu de réponses correctes alors qu'il s'agit d'une application directe du cours : la demi-somme des deux débits est indispensable, sinon on écrit la méthode des rectangles.
+> Le rapport 2022 note peu de réponses correctes alors qu'il s'agit d'une application directe de la méthode des trapèzes. La demi-somme des deux débits est indispensable, sinon on écrit la méthode des rectangles.
 
 ### Question 32 — Calcul des volumes
 
@@ -918,7 +920,7 @@ def code1(L, cle):
 Par exemple, `code1([6, 13], 3)` renvoie `[5, 14]`.
 
 > [!JURY]
-> Le rapport 2022 note que certains candidats choisissent une méthode inutilement compliquée (passage par les écritures binaires) : l'opérateur rappelé par le sujet fait tout le travail.
+> Le rapport 2022 note que certains candidats choisissent une méthode inutilement compliquée, qui leur fait perdre du temps : l'opérateur rappelé par le sujet fait tout le travail.
 
 ### Question 37 — Involution et chiffrement symétrique
 
@@ -1000,7 +1002,10 @@ def entiers(flux):
 La tranche `flux[64*k : 64*(k+1)]` contient exactement 64 caractères (borne de droite exclue). On vérifie que `entiers(bits(L))` redonne `L`.
 
 > [!JURY]
-> Le rapport 2022 constate beaucoup de réponses incorrectes, peut-être par précipitation : bornes des tranches décalées d'une unité, oubli du second argument de `int`, ou conversion caractère par caractère.
+> Le rapport 2022 constate beaucoup de réponses incorrectes, peut-être par précipitation.
+
+> [!PIEGE]
+> Les erreurs à éviter : bornes des tranches décalées d'une unité, oubli du second argument de `int`, conversion caractère par caractère.
 
 ### Question 41 — Position du bit de clé
 
@@ -1051,7 +1056,10 @@ Vérifications effectuées :
 > Les éléments du flux sont des caractères, pas des entiers : on ne peut pas leur appliquer `^` directement. Soit on compare les caractères, comme ici, soit on écrit `str(int(flux[i]) ^ int(bcle[i % l]))`.
 
 > [!JURY]
-> Le rapport 2022 y voit la question la plus difficile du sujet, très rarement réussie en entier. Les points souvent oubliés : l'ajout du zéro quand la clé a un nombre pair de bits, le modulo, et la reconversion finale en entiers.
+> Le rapport 2022 y voit sans doute la question la plus difficile du sujet, avec très peu de bonnes réponses : le problème n'est le plus souvent que partiellement traité.
+
+> [!PIEGE]
+> Trois étapes à ne pas oublier pour être complet : l'ajout du zéro quand la clé a un nombre pair de bits, le modulo, et la reconversion finale en entiers.
 
 ### Question 43 — Attaque à clair connu
 
@@ -1068,7 +1076,7 @@ C'est la propriété de la question 37, où message et clé échangent leurs rô
 
 **Pour `code1`.** Un seul couple suffit : si `L` est le message et `Lc` son chiffré, alors `L[0] ^ Lc[0]` est la clé. Tous les éléments étant chiffrés avec la même clé, le reste de toute transmission se déchiffre aussitôt.
 
-**Pour `code2`.** On calcule le OU exclusif bit à bit des flux `bits(L)` et `bits(Lc)`. On obtient la clé répétée bout à bout. Il reste à repérer la période $l$ de ce motif (la plus petite longueur telle que le flux se répète identique à lui-même) : les $l$ premiers bits sont l'écriture binaire de la clé. Il faut pour cela disposer d'un message de longueur au moins égale à quelques périodes. Essai effectué : avec la clé $(1011001)_2$ et une vingtaine d'entiers, on retrouve la période 7 et la clé.
+**Pour `code2`.** On calcule le OU exclusif bit à bit des flux `bits(L)` et `bits(Lc)`. On obtient la clé répétée bout à bout. Il reste à repérer la période $l$ de ce motif (la plus petite longueur telle que le flux se répète identique à lui-même) : les $l$ premiers bits sont l'écriture binaire de la clé (précédée du zéro ajouté si elle avait un nombre pair de bits ; si ce motif est lui-même périodique, on obtient une clé plus courte qui produit le même chiffrement). Il faut pour cela disposer d'un message de longueur au moins égale à quelques périodes. Essai effectué : avec la clé $(1011001)_2$ et une vingtaine d'entiers, on retrouve la période 7 et la clé.
 
 D'où l'intérêt d'une clé à usage unique, aussi longue que le message : la connaissance d'un message et de son chiffré ne révèle alors rien sur les suivants.
 
@@ -1100,6 +1108,9 @@ Sur l'extrait du sujet, la première requête renvoie 153.
 > [!PIEGE]
 > La date est de type chaîne : elle s'écrit entre apostrophes, au format exact `aaaa-mm-jj`. Sans apostrophes, `2017-11-17` serait évalué comme une soustraction.
 
+> [!JURY]
+> Le rapport 2022 ne commente pas la question 43, de sorte que sa numérotation est décalée d'un rang à partir d'ici : son point 43 juge la présente question bien traitée dans la majorité des copies, sauf quand la syntaxe SQL est fantaisiste.
+
 ### Question 45 — Filtre sur le mois et agrégats
 
 > [!INDICATION]
@@ -1129,7 +1140,7 @@ WHERE date LIKE '2017-11-%';
 La seconde requête renvoie une seule ligne de deux valeurs. On affiche la date avec la consommation dans la première pour que le résultat soit lisible ; `SELECT conso` seul répond aussi à la demande.
 
 > [!JURY]
-> Le rapport 2022 (dont la numérotation est décalée d'un rang à partir d'ici) signale que `LIKE`, `SUM` et `AVG` ne sont pas toujours bien utilisés, et que l'on trouve souvent `AND` là où il faut une virgule entre les colonnes du `SELECT` : `AND` est un opérateur logique réservé aux conditions.
+> Le rapport 2022 (dont la numérotation est décalée d'un rang depuis la question 44 : son point 44 commente la présente question) signale que `LIKE`, `SUM` et `AVG` ne sont pas toujours bien utilisés. Ses remarques générales relèvent aussi que l'on trouve souvent `AND` là où l'on attend une virgule : `AND` est un opérateur logique, réservé aux conditions.
 
 ### Question 46 — Plusieurs habitations : seconde table et jointure
 
@@ -1160,7 +1171,7 @@ WHERE habitations.adresse = '3 rue des Lilas';
 ```
 
 > [!JURY]
-> Le rapport 2022 juge les réponses plutôt satisfaisantes : le principe des jointures est compris. La précision attendue est le couple clé primaire, clé étrangère.
+> Le rapport 2022 juge les réponses plutôt satisfaisantes : le principe des jointures est compris et les solutions proposées sont valables.
 
 ## Bilan
 

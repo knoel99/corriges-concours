@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Épreuve de quatre heures, sans calculatrice : suivi de la consommation d'eau d'une habitation, 46 questions en deux parties indépendantes. Les valeurs lues sur les oscillogrammes du sujet sont données avec leur lecture en divisions. Documents officiels : [sujet](https://www.banquept.fr/documents/2022/info_mod_2022_pt.pdf) et [rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2022/rapport_info_model_ecrit_2022.pdf).
 
 ## Première partie — Compteur d'impulsions analogique
@@ -115,7 +117,7 @@ On garde les résistances entre le kilo-ohm et le mégohm. Avec $R_1 = 1\ \mathr
 
 $$G_{max} \sim \frac{10^{6}\ \mathrm{Hz}}{10^{4}\ \mathrm{Hz}} = 10^{2} .$$
 
-**On peut donc atteindre un gain d'environ $10^3$ à $10^4$ en continu, mais seulement d'une centaine à $10\ \mathrm{kHz}$.**
+**En continu, le gain est borné par le gain statique de l'ALI ($\mu_0 \sim 10^5$) et reste fiable jusqu'à $10^3$ ou $10^4$ ; à $10\ \mathrm{kHz}$, le produit gain × bande passante le limite à une centaine.**
 
 ### Question 8 — Sortie de l'amplificateur de gain 10
 
@@ -243,7 +245,7 @@ $$\boxed{t_1 \approx 17\ \mathrm{ms}}$$
 
 ### Question 15 — Les deux phases de la tension de l'entrée non inverseuse
 
-Lecture de l'enregistrement ($5\ \mathrm{V/div}$, $5\ \mathrm{ms/div}$) : niveau de repos à $-0{,}2$ division, soit $-1\ \mathrm{V}$ ; saut à $t = 0$ jusqu'à $+2{,}5$ divisions, soit environ $+12{,}5\ \mathrm{V}$ ; décroissance jusqu'à $0\ \mathrm{V}$, atteinte $3{,}3$ divisions plus tard, soit $16{,}6\ \mathrm{ms}$ ; chute brutale jusqu'à $-2{,}8$ divisions, soit $-14\ \mathrm{V}$ ; puis remontée lente vers $-1\ \mathrm{V}$.
+Lecture de l'enregistrement ($5\ \mathrm{V/div}$, $5\ \mathrm{ms/div}$) : niveau de repos à $-0{,}2$ division, soit $-1\ \mathrm{V}$ ; saut à $t = 0$ jusqu'à $+2{,}5$ divisions, soit environ $+12{,}5\ \mathrm{V}$ ; décroissance jusqu'à $0\ \mathrm{V}$, atteinte $3{,}3$ divisions plus tard, soit $16{,}6\ \mathrm{ms}$ ; chute brutale jusqu'à $-2{,}7$ divisions, soit environ $-13{,}6\ \mathrm{V}$ ; puis remontée lente vers $-1\ \mathrm{V}$.
 
 **Première phase, $0 < t < t_1$ (sortie haute).** Le saut initial est celui de la question 12 : $V_+$ passe de $-V_0$ à $2V_{sat} - V_0 = 13\ \mathrm{V}$. Puis
 
@@ -257,7 +259,7 @@ $$V_+(t_1^+) = -V_{sat} + u_C(t_1) = -2V_{sat}$$
 
 $$\boxed{V_{+,min} = -2V_{sat} = -14\ \mathrm{V}}$$
 
-ce qui est bien la valeur lue.
+en accord avec la valeur lue ($-13{,}6\ \mathrm{V}$) à 3 % près ; de même la crête lue ($+12{,}5\ \mathrm{V}$) est un peu en dessous de $2V_{sat} - V_0 = 13\ \mathrm{V}$ : les tensions de saturation réelles sont légèrement inférieures à $V_{cc}$.
 
 **Seconde phase, $t > t_1$ (sortie basse).** Avec $V_s = -V_{sat}$, la même mise en équation donne
 
@@ -330,7 +332,7 @@ La tension filtrée vaut $\langle V_s\rangle = 2V_{sat}t_1 f - V_{sat}$. Pour ob
 
 $$U = \langle V_s \rangle + V_{sat} = 2\,V_{sat}\,t_1\,f .$$
 
-Réalisation : on place après le filtre (derrière un suiveur, pour ne pas le charger) un montage soustracteur à ALI, à quatre résistances identiques, dont la sortie vaut la différence de ses deux entrées. On applique $\langle V_s \rangle$ sur l'entrée positive et $-V_{cc}$ sur l'entrée négative ; le voltmètre branché en sortie mesure $U$. Ce second ALI doit être alimenté sous une tension supérieure à $2V_{sat}$ pour ne pas saturer. Plus simplement, un voltmètre branché entre la sortie du filtre et la borne $-V_{cc}$ de l'alimentation mesure directement cette différence.
+Réalisation : on place après le filtre (derrière un suiveur, pour ne pas le charger) un montage soustracteur à ALI, à quatre résistances identiques, dont la sortie vaut la différence de ses deux entrées. On applique $\langle V_s \rangle$ sur l'entrée positive et $-V_{cc}$ sur l'entrée négative ; le voltmètre branché en sortie mesure $U$. La tension $U$ reste inférieure à $2V_{sat}\,t_1/T$, soit moins de $5\ \mathrm{V}$ dans le domaine d'emploi $f \lesssim 20\ \mathrm{Hz}$ : ce second ALI peut être alimenté par la même source $\pm V_{cc}$ sans saturer. Plus simplement, un voltmètre branché entre la sortie du filtre et la borne $-V_{cc}$ de l'alimentation mesure directement cette différence.
 
 Avec les valeurs du montage,
 
@@ -704,7 +706,7 @@ C'est la propriété de la question 37, où message et clé échangent leurs rô
 
 **Pour `code1`.** Un seul couple suffit : si `L` est le message et `Lc` son chiffré, alors `L[0] ^ Lc[0]` est la clé. Tous les éléments étant chiffrés avec la même clé, le reste de toute transmission se déchiffre aussitôt.
 
-**Pour `code2`.** On calcule le OU exclusif bit à bit des flux `bits(L)` et `bits(Lc)`. On obtient la clé répétée bout à bout. Il reste à repérer la période $l$ de ce motif (la plus petite longueur telle que le flux se répète identique à lui-même) : les $l$ premiers bits sont l'écriture binaire de la clé. Il faut pour cela disposer d'un message de longueur au moins égale à quelques périodes. Essai effectué : avec la clé $(1011001)_2$ et une vingtaine d'entiers, on retrouve la période 7 et la clé.
+**Pour `code2`.** On calcule le OU exclusif bit à bit des flux `bits(L)` et `bits(Lc)`. On obtient la clé répétée bout à bout. Il reste à repérer la période $l$ de ce motif (la plus petite longueur telle que le flux se répète identique à lui-même) : les $l$ premiers bits sont l'écriture binaire de la clé (précédée du zéro ajouté si elle avait un nombre pair de bits ; si ce motif est lui-même périodique, on obtient une clé plus courte qui produit le même chiffrement). Il faut pour cela disposer d'un message de longueur au moins égale à quelques périodes. Essai effectué : avec la clé $(1011001)_2$ et une vingtaine d'entiers, on retrouve la période 7 et la clé.
 
 D'où l'intérêt d'une clé à usage unique, aussi longue que le message : la connaissance d'un message et de son chiffré ne révèle alors rien sur les suivants.
 

@@ -10,7 +10,7 @@
 <text x="88.0" y="200.0" text-anchor="start" fill="#1a1a1a" font-size="14" font-weight="bold" font-style="italic">Vs</text>
 <text x="680.0" y="257.0" text-anchor="end" fill="#1a1a1a" font-size="14" font-style="italic">t</text>
 <polyline fill="none" stroke="#1a1a1a" stroke-width="2.4" stroke-linejoin="round" points="80.0,95.0 120.0,95.0 120.0,135.0 134.0,135.0 134.0,95.0 370.0,95.0 370.0,135.0 384.0,135.0 384.0,95.0 620.0,95.0 620.0,135.0 634.0,135.0 634.0,95.0 660.0,95.0"/>
-<polyline fill="none" stroke="#c0392b" stroke-width="2.4" stroke-linejoin="round" points="80.0,315.0 120.0,315.0 120.0,215.0 215.0,215.0 215.0,315.0 370.0,315.0 370.0,215.0 465.0,215.0 465.0,315.0 620.0,315.0 620.0,215.0 660.0,215.0"/>
+<polyline fill="none" stroke="#c0392b" stroke-width="2.4" stroke-linejoin="round" points="80.0,315.0 120.0,315.0 120.0,215.0 205.0,215.0 205.0,315.0 370.0,315.0 370.0,215.0 455.0,215.0 455.0,315.0 620.0,315.0 620.0,215.0 660.0,215.0"/>
 <text x="74.0" y="100.0" text-anchor="end" fill="#1a1a1a" font-size="13">0</text>
 <text x="74.0" y="140.0" text-anchor="end" fill="#1a1a1a" font-size="13">−5 V</text>
 <text x="74.0" y="220.0" text-anchor="end" fill="#1a1a1a" font-size="13">+Vsat</text>
@@ -24,9 +24,9 @@
 <line x1="348.0" y1="153.0" x2="370.0" y2="153.0" stroke="#1a1a1a" stroke-width="1.2" marker-end="url(#fl)"/>
 <line x1="406.0" y1="153.0" x2="384.0" y2="153.0" stroke="#1a1a1a" stroke-width="1.2" marker-end="url(#fl)"/>
 <text x="410.0" y="158.0" text-anchor="start" fill="#1a1a1a" font-size="14">Δt</text>
-<line x1="120.0" y1="337.0" x2="215.0" y2="337.0" stroke="#1a1a1a" stroke-width="1.2" marker-end="url(#fl)" marker-start="url(#fl)"/>
-<text x="167.5" y="355.0" text-anchor="middle" fill="#1a1a1a" font-size="14">t₁</text>
-<line x1="215.0" y1="337.0" x2="370.0" y2="337.0" stroke="#1a1a1a" stroke-width="1.2" marker-end="url(#fl)" marker-start="url(#fl)"/>
-<text x="292.5" y="355.0" text-anchor="middle" fill="#1a1a1a" font-size="14">T − t₁ (plusieurs τ)</text>
+<line x1="120.0" y1="337.0" x2="205.0" y2="337.0" stroke="#1a1a1a" stroke-width="1.2" marker-end="url(#fl)" marker-start="url(#fl)"/>
+<text x="162.5" y="355.0" text-anchor="middle" fill="#1a1a1a" font-size="14">t₁</text>
+<line x1="205.0" y1="337.0" x2="370.0" y2="337.0" stroke="#1a1a1a" stroke-width="1.2" marker-end="url(#fl)" marker-start="url(#fl)"/>
+<text x="287.5" y="355.0" text-anchor="middle" fill="#1a1a1a" font-size="14">T − t₁ (plusieurs τ)</text>
 <text x="370.0" y="385.0" text-anchor="middle" fill="#666666" font-size="13">Ordre des durées : Δt très petit devant τ, et T supérieur à t₁ + 5τ.</text>
 </svg>

@@ -64,7 +64,7 @@
       "45",
       "46"
     ],
-    "precision": "Sujet de 20 pages lu en entier (énoncé pages 2 à 17, pages 18 à 20 blanches), rapport de 3 pages lu. 46 questions numérotées de 1 à 46, toutes traitées. Les valeurs des oscillogrammes des questions 3, 4, 5 et 15 sont des lectures sur les figures du sujet. La numérotation du rapport est décalée d'un rang à partir de la question 43."
+    "precision": "Sujet de 20 pages lu en entier (énoncé pages 2 à 17, pages 18 à 20 blanches), rapport de 3 pages lu. 46 questions numérotées de 1 à 46, toutes traitées. Les valeurs des oscillogrammes des questions 3, 4, 5 et 15 sont des lectures sur les figures du sujet. Le rapport ne commente pas la question 43 : ses points 43 à 45 portent sur les questions 44 à 46."
   },
   "figures": [
     {
@@ -111,6 +111,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Rédaction des deux éditions pour les 46 questions, six schémas, lecture chiffrée des quatre oscillogrammes. Tout le code Python et SQL a été exécuté et testé, applications numériques recalculées."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application des neuf défauts mineurs de la relecture indépendante, chacun vérifié contre le sujet ou le rapport : question 15 (minimum de V₊ relu à −2,7 div sur l'oscillogramme), question 21 (alimentation du soustracteur), question 7 (borne du gain statique rappelée en conclusion), question 43 (clé retrouvée à une clé équivalente près), figures des questions 6, 8 et 18. Guidé : les 24 encadrés du jury contrôlés un par un dans le rapport, questions 3, 6, 11, 12, 24, 31, 36, 40, 42, 45 et 46 ramenées au texte du rapport, encadré ajouté à la question 44, décalage de numérotation du rapport précisé (questions 44 et 45)."
     }
   ]
 }
