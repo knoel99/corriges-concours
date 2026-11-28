@@ -1,0 +1,125 @@
+{
+  "slug": "banque-pt_pt_sciences-industrielles-b_2025",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Sciences industrielles B",
+    "annee": 2025
+  },
+  "questions": 50,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2025/si_b_2025_pt.pdf",
+    "sujet_sha256": "83a68a6b66307c1e9a0b1d68aa69e0a17ff42538a620e322128902b08ca52868",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2025/rapport_si_b_ecrit_2025.pdf",
+    "rapport_sha256": "c6a3537acbf4c4388cf80a1395dda36cae67682763880231ac4ec67a004d8ece"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50"
+    ],
+    "precision": "Les 56 pages du PDF ont été lues en image : 33 pages de texte et d'annexes (A à H) et le cahier réponse de 15 pages. Le sujet pose 50 questions, toutes traitées. Les tracés demandés sur le cahier réponse (questions 2, 5 à 7, 9, 16, 18 à 23, 29, 32 et 45) sont redessinés dans sept figures originales, sans reprise des fonds de l'énoncé. La valeur de K_ba (question 7) repose sur la lecture du schéma du cadre réponse."
+  },
+  "figures": [
+    {
+      "fichier": "figures/q2-q9-brame-elementaire.svg",
+      "question": "2",
+      "legende": "Brame élémentaire : efforts à l'équilibre (questions 2 à 4) et cône d'adhérence à la limite du glissement (question 9)"
+    },
+    {
+      "fichier": "figures/q5-q7-effet-de-bord.svg",
+      "question": "5",
+      "legende": "Modèles des questions 5, 6 et 7 : tronçons isolés, pivot, efforts et bras de levier"
+    },
+    {
+      "fichier": "figures/q16-q18-mouvement-actuel.svg",
+      "question": "16",
+      "legende": "Configuration actuelle : repères a à f sur l'axe des distances et phase de décalaminage d'une brame de 10 m"
+    },
+    {
+      "fichier": "figures/q19-q23-mouvement-envisage.svg",
+      "question": "19",
+      "legende": "Configuration envisagée : vitesse et déplacement de l'avant de la brame, points Q, R, S, T et W"
+    },
+    {
+      "fichier": "figures/q29-actions-sur-le-rouleau.svg",
+      "question": "29",
+      "legende": "Actions mécaniques appliquées au rouleau en phase d'accélération, sur les trois vues"
+    },
+    {
+      "fichier": "figures/q32-diagrammes-cohesion.svg",
+      "question": "32",
+      "legende": "Diagrammes de N, Ty, Tz, Mt, Mfy et Mfz le long du rouleau, avec la nature de chaque portion de courbe"
+    },
+    {
+      "fichier": "figures/q45-defauts-alignement.svg",
+      "question": "45",
+      "legende": "Défauts d'alignement axial, radial et angulaire, amplifiés (5 mm, 5 mm et 15°)"
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions pour les 50 questions à partir du sujet, du cahier réponse, des annexes et du rapport du jury. Applications numériques recalculées et sept figures originales produites pour les tracés du cahier réponse."
+    }
+  ]
+}
