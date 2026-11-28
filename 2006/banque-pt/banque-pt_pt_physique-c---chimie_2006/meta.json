@@ -1,0 +1,87 @@
+{
+  "slug": "banque-pt_pt_physique-c---chimie_2006",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique C - Chimie",
+    "annee": 2006
+  },
+  "questions": 36,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2006/phys_c_2006.zip",
+    "sujet_sha256": "6676a86a4875d700c0bcfb1b576e356e23524fb0b2687870516489e64f67435d",
+    "precision": "L'adresse est celle de l'archive commune aux deux problèmes de Physique C (chimie et thermodynamique), SHA-256 6676a86a4875d700c0bcfb1b576e356e23524fb0b2687870516489e64f67435d. L'archive contient deux fichiers, sans archive interne. Énoncé : phys_c_2006.pdf, 16 pages, SHA-256 18f4a9dc16aa745607f6aa321ded8b1dcd4d6eeb062bfb0c26e6c9e9b9582a79 ; il réunit les deux problèmes sous une garde commune « Epreuve de Physique C » (p. 1), le problème de chimie, identifié par son cartouche « CHIMIE » et son titre « LE PLATINE », occupant les pages 2 à 6 (annexe de données en p. 6), le problème de thermodynamique commençant p. 7. Document-réponse : phys_c_doc_reponse_2006.pdf, 1 page, SHA-256 47d751ff03aec6de563085730906731140fa4cc611de7eb0fcfc7bacc39129ce ; c'est le diagramme enthalpique du fluide R134A, à rendre avec la copie de thermodynamique : il ne concerne pas la chimie et n'a pas été utilisé. Les trois empreintes et la répartition des pages sont identiques à celles de campagnes/x-ens/bilans/sources-epreuves-banque-pt-2004-2007.tsv et de campagnes/x-ens/bilans/feuillets-physique-c-banque-pt-2005-2007.tsv. Le rapport du jury est commun aux deux problèmes de Physique C ; son empreinte est aussi celle du premier de ces fichiers.",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_phys_c_ecrit_2006.pdf",
+    "rapport_sha256": "30d564f63e96de7b0f5ab011816606401227f7981a0f82555e4c396f5157176e"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.A.1",
+      "I.A.2",
+      "I.A.3.a",
+      "I.A.3.b",
+      "I.B.1",
+      "I.B.2",
+      "I.B.3",
+      "I.B.4",
+      "I.B.5.a",
+      "I.B.5.b",
+      "II.A.1",
+      "II.A.2",
+      "II.A.3.a",
+      "II.A.3.b",
+      "II.B.1.a",
+      "II.B.1.b",
+      "II.B.1.c",
+      "II.B.2.a",
+      "II.B.2.b",
+      "II.B.2.c",
+      "II.B.2.d",
+      "II.B.3.a",
+      "II.B.3.b",
+      "II.B.4",
+      "II.B.5.a",
+      "II.B.5.b",
+      "II.B.5.c",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "IV.1",
+      "IV.2",
+      "IV.3",
+      "IV.4",
+      "IV.5"
+    ],
+    "precision": "Énoncé numérisé lu en image : garde commune p. 1 et problème de chimie p. 2 à 6 du PDF de 16 pages (annexe p. 6) ; les pages du problème de thermodynamique et le document-réponse ne sont pas traités ici. 36 questions, toutes traitées, repérées par le numéro de partie, la lettre de section et le numéro de l'énoncé. Rapport du jury de Physique C de 5 pages, chimie p. 1 à 3. Question I.A.3.b : l'énoncé ne donne pas les masses isotopiques ; le corrigé assimile la masse molaire de chaque isotope à son nombre de masse, choix signalé à sa place. Question I.A.2 : configuration donnée par la règle de Klechkowski, l'exception réelle du platine étant mentionnée en remarque. Question III.1 : « oxygène » lu comme dioxygène, coquille reconnue par le rapport. Question IV.4 : la conservation des éléments et de la charge ne fixe pas seule les coefficients ; l'équation retenue est celle des plus petits coefficients, ce qui est signalé en remarque. Question IV.3 (« selon vous ») : réponse d'interprétation."
+  },
+  "figures": [
+    {
+      "fichier": "figures/maille-cfc-platine.svg",
+      "question": "I.B.1",
+      "legende": "Maille cubique à faces centrées du platine, contact le long de la diagonale d'une face et site tétraédrique au centre d'un huitième de cube."
+    },
+    {
+      "fichier": "figures/lewis-synthese-acide-nitrique.svg",
+      "question": "III.2",
+      "legende": "Structures de Lewis de l'ammoniac, de l'eau, du dioxygène, du monoxyde d'azote, du dioxyde d'azote et de l'acide nitrique."
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des corrigés brut et guidé des 36 questions et de deux figures, à partir de l'énoncé, de son annexe et du rapport du jury ; applications numériques recalculées, encadrés JURY relus contre le rapport."
+    }
+  ]
+}
