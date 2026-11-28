@@ -1,0 +1,95 @@
+{
+  "slug": "banque-pt_pt_physique-c---chimie_2009",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique C - Chimie",
+    "annee": 2009
+  },
+  "questions": 34,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2009/phys_c_2009.zip",
+    "sujet_sha256": "2316dd00db25e6b1d5523eb9c87f29688205d278259a73ad1173a7a95724b997",
+    "precision": "L'adresse est celle de l'archive commune aux deux parties de Physique C (chimie et thermodynamique), SHA-256 2316dd00db25e6b1d5523eb9c87f29688205d278259a73ad1173a7a95724b997. L'archive contient deux fichiers à sa racine, sans archive interne. Fichier de la partie chimie, identifié par sa garde « Epreuve de Physique C - Chimie » : Phys_c_Chimie.PDF, 8 pages, SHA-256 c52170293bedaf204282e0a807b974c6c17502ac4e1ec074513dc2412a153c3a. Cette partie n'a ni annexe ni document-réponse. L'autre fichier, Phys_c_Thermo.pdf (SHA-256 7552b906e3cf422d666e6e2a7750240b4c7c7dc5dc871b77d6a8aef9079da41b), est la partie thermodynamique, non traitée ici. Les empreintes de l'archive et du fichier de chimie sont identiques à celles de campagnes/x-ens/bilans/sources-epreuves-banque-pt-2008-2016.tsv. Le rapport du jury est commun aux deux parties de Physique C ; son empreinte est aussi celle du même fichier.",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2009/rapport_phys_c_ecrit_2009.pdf",
+    "rapport_sha256": "5503d73c1ce9bacaf00a0c24bfed1b83d4d708422ac9007f44f641ca8ffc0dde"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A.1",
+      "A.2",
+      "B.1",
+      "B.2",
+      "C.1",
+      "C.2.a",
+      "C.2.b",
+      "C.2.c",
+      "C.3.a",
+      "C.3.b",
+      "C.3.c",
+      "C.4",
+      "C.5.a",
+      "C.5.b",
+      "C.5.c",
+      "C.5.d",
+      "C.5.e",
+      "C.5.f",
+      "D.1.a",
+      "D.1.b",
+      "D.1.c",
+      "D.2.1.a",
+      "D.2.1.b",
+      "D.2.1.c",
+      "D.2.2.a",
+      "D.2.2.b",
+      "D.2.2.c",
+      "D.3.a",
+      "D.3.b",
+      "D.3.c",
+      "D.3.d",
+      "D.3.e",
+      "D.3.f",
+      "D.4"
+    ],
+    "precision": "Sujet de 8 pages PDF lu en entier en image (garde p. 1, présentation et données p. 2, énoncé p. 3 à 7, page blanche p. 8) ; 34 questions, toutes traitées, repérées de A.1 à D.4 (l'énoncé écrit « A-1 », « C-2 a) », « D.1 a) », « D.2.1 a) »). Rapport du jury de Physique C de 5 pages, partie chimie p. 1 à 3 (paginées 23 à 25). Aucune lecture sur figure : le sujet n'en comporte pas ; les valeurs d'absorbance viennent du tableau de la page 6. Choix du corrigé signalés à leur place : question D.3.b, l'énoncé ne dit pas à quelle solution se rapporte la concentration C ni dans quel volume tombe la goutte (retenus : concentration en chlorure dans le bécher, 200 mL du protocole ; l'autre lecture est discutée) ; question C.3.a, combustion supposée sans perte thermique, avec l'enthalpie de combustion de l'énoncé (−690 kJ/mol, inférieure en valeur absolue aux valeurs tabulées, remarque faite à sa place). Température de 900 °C prise égale à 1173 K. Aucun constat de campagne (constat-*.tsv) ne porte sur cette épreuve."
+  },
+  "figures": [
+    {
+      "fichier": "figures/maille-cfc-calcium.svg",
+      "question": "B.1",
+      "legende": "Maille cubique à faces centrées du calcium alpha, avec la diagonale de face le long de laquelle les atomes sont en contact."
+    },
+    {
+      "fichier": "figures/pression-co2-chaux.svg",
+      "question": "C.5.f",
+      "legende": "Pression finale dans le récipient en fonction de la quantité de dioxyde de carbone introduite : droite, palier d'équilibre à 1,73 bar entre 0,89 et 2,32 mol, droite."
+    },
+    {
+      "fichier": "figures/etalonnage-fer-phenanthroline.svg",
+      "question": "D.2.1.c",
+      "legende": "Courbe d'étalonnage : absorbance à 510 nm en fonction de la concentration massique en fer(II), avec la lecture de la solution X."
+    },
+    {
+      "fichier": "figures/dosage-conductimetrique-chlorure.svg",
+      "question": "D.3.d",
+      "legende": "Allure calculée de la conductivité en fonction du volume de nitrate d'argent versé : deux segments de droite qui se coupent à l'équivalence, 12,5 mL."
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des corrigés brut et guidé des 34 questions et de quatre figures, à partir du sujet et du rapport du jury ; applications numériques recalculées, encadrés JURY relus contre le rapport."
+    }
+  ]
+}
