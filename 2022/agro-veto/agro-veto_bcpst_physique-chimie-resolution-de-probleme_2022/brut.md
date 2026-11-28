@@ -4,7 +4,9 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
-Sujet de chimie « Quelques aspects de la chimie des alcènes », 49 questions, toutes traitées. Les mécanismes sont décrits étape par étape, le mouvement des doublets étant indiqué en toutes lettres ; les formules topologiques des composés bicycliques figurent sur les figures 3 et 4.
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
+Sujet de chimie « Quelques aspects de la chimie des alcènes », 49 questions, toutes traitées. Les mécanismes sont décrits étape par étape, le mouvement des doublets étant indiqué en toutes lettres ; les formules topologiques des composés bicycliques figurent sur les figures 4 et 5.
 
 ## Partie I — L’isobutène, molécule clé des carburants biosourcés · A. Mécanismes de formation
 
@@ -205,7 +207,7 @@ La règle de Zaïtsev repose sur l’idée que l’alcène le plus substitué es
 
 Comme le mélange est sous contrôle thermodynamique (question 19), c’est l’isomère le plus stable, **F’**, qui domine. Le rapport observé $[\mathrm{F'}]/[\mathrm{F}]=4$ correspond à une constante d’équilibre $K=4$ pour $\mathrm{F \rightleftharpoons F'}$, soit un écart de stabilité modeste, $RT\ln 4\simeq 4\ \mathrm{kJ\,mol^{-1}}$ vers 100 °C.
 
-On peut ajouter un argument statistique, qui va dans le même sens : le carbocation en $\mathrm{C_8}$ possède six hydrogènes de méthyle conduisant à **F’** contre deux hydrogènes de $\mathrm{CH_2}$, de surcroît encombrés par le tert-butyle, conduisant à **F**.
+Remarque : le décompte des hydrogènes éliminables du carbocation en $\mathrm{C_8}$ (six hydrogènes de méthyle menant à **F’**, deux hydrogènes de $\mathrm{CH_2}$ menant à **F**) est un argument de vitesse. Il ne jouerait que sous contrôle cinétique ; il n’explique pas un rapport d’équilibre et n’est donc pas l’explication retenue ici.
 
 ## Partie I · B. Étude thermodynamique de la synthèse de l’ETBE
 
@@ -247,6 +249,8 @@ Cette correction représente environ 1 % de $|\Delta_rH^\circ_{298}|$ : elle est
 $$\boxed{\Delta_rH^\circ(T_1)\simeq\Delta_rH^\circ_{298}\simeq-57\ \mathrm{kJ\,mol^{-1}}}$$
 
 La réaction reste exothermique à 67 °C.
+
+Limite de ce calcul simplifié : la valeur à 298 K est établie avec **A** gazeux (question 22), alors qu’à $(T_1, P_1)$ l’isobutène est liquide (question 23) et que le tableau 5 donne les capacités thermiques des liquides. En toute rigueur, il faudrait tenir compte de l’enthalpie de vaporisation de **A**, absente des données (de l’ordre de 20 kJ/mol, valeur usuelle hors énoncé) : la réaction entre liquides est moins exothermique, mais le signe, et donc les conclusions qui suivent, sont inchangés.
 
 ### Question 25 — Effet d’une élévation isobare de température
 
@@ -325,7 +329,7 @@ Discussion : le gain est réel (de 82 % à 97 % au mieux), mais il s’obtient p
 
 Lecture de la figure 3 de l’énoncé : chaque courbe passe par un maximum, d’environ 88 % vers 62 °C pour $\alpha=1$ à environ 92 % vers 67 °C pour $\alpha=1,5$ ; à 84 °C les conversions s’échelonnent d’environ 83 % ($\alpha=1$) à 88 % ($\alpha=1,5$).
 
-**Partie en accord avec l’étude précédente : les hautes températures, à droite des maxima (au-delà de $T_1$ environ).** La conversion y diminue quand la température augmente, comme le prévoit la loi de Van ’t Hoff pour une réaction exothermique (question 25). Les courbes y sont rangées dans l’ordre des $\alpha$ croissants : plus l’excès d’éthanol est grand, plus la conversion est élevée (question 29). Les ordres de grandeur concordent aussi : le modèle donne 92 % à 67 °C pour $\alpha=1,5$, valeur lue sur la courbe. Dans ce domaine, l’équilibre chimique est atteint en sortie de réacteur : la conversion est sous contrôle thermodynamique.
+**Partie en accord avec l’étude précédente : les hautes températures, à droite des maxima (au-delà de $T_1$ environ).** La conversion y diminue quand la température augmente, comme le prévoit la loi de Van ’t Hoff pour une réaction exothermique (question 25). Les courbes y sont rangées dans l’ordre des $\alpha$ croissants : plus l’excès d’éthanol est grand, plus la conversion est élevée (question 29). Les ordres de grandeur concordent aussi, sans plus : à 67 °C le modèle donne 92 % pour $\alpha=1,5$, valeur lue sur la courbe, mais 82 % pour $\alpha=1$ (question 28) là où la figure indique entre 87 et 88 %. Le système de la figure est seulement « semblable » à celui du modèle ; c’est le sens des variations, avec la température et avec $\alpha$, qui est en accord. Dans ce domaine, l’équilibre chimique est atteint en sortie de réacteur : la conversion est sous contrôle thermodynamique.
 
 **Partie a priori incohérente : les basses températures, à gauche des maxima.** La conversion y augmente avec la température, alors que la thermodynamique prévoit l’inverse ; de plus les courbes sont resserrées et ne sont plus rangées selon $\alpha$ (vers 50 °C, la courbe $\alpha=1,1$ est même la plus basse) : l’excès d’éthanol n’apporte plus de bénéfice net.
 
@@ -334,6 +338,8 @@ Lecture de la figure 3 de l’énoncé : chaque courbe passe par un maximum, d�
 ### Question 32 — Diagramme binaire ETBE / éthanol
 
 Données utilisées : sous 1 bar, $T_{eb}(\mathrm{B})=73\ \mathrm{°C}$ (en $w_E=0$) et $T_{eb}(\mathrm{E})=79\ \mathrm{°C}$ (en $w_E=1$) ; le distillat contient au mieux 80 % en masse d’ETBE, ce qui situe l’azéotrope en $w_E=0,20$. L’azéotrope étant à minimum de température, sa température d’ébullition $T_{az}$ est inférieure à 73 °C (elle n’est pas donnée ; la figure la place arbitrairement vers 67 °C).
+
+Ces températures d’ébullition sont celles du texte qui précède la question ; le tableau 3 les attribue en sens inverse (question 22). On retient ici l’attribution du texte, placée juste avant la question. Avec celle du tableau, seules les deux ordonnées extrêmes s’échangeraient : l’allure, la position de l’azéotrope et les conclusions des questions 32 et 33 sont inchangées.
 
 ![Figure 2 — Allure du diagramme binaire isobare liquide-vapeur ETBE / éthanol sous 1 bar, avec azéotrope à minimum de température](figures/binaire-etbe-ethanol.svg)
 
@@ -407,7 +413,11 @@ On obtient le cétol **K** : une seule des deux fonctions cétone a réagi, faut
 
 Justification du racémique majoritaire. Le carbonyle attaqué est plan ; ses deux faces ne sont pas équivalentes, car le carbone quaternaire voisin présente d’un côté du cycle un groupe méthyle et de l’autre la chaîne $\mathrm{{-}CH_2{-}C{\equiv}C^-}$, plus volumineuse. L’organolithien approche préférentiellement par la **face la moins encombrée**, celle du méthyle. Dans le produit majoritaire, le groupe isopropényle se trouve donc du même côté du cycle que le méthyle (cis), et le groupe hydroxyle du même côté que la chaîne propargyle.
 
-Structure d’un énantiomère du racémique majoritaire : cycle à cinq atomes dans le plan de la feuille, parcouru dans le sens $\mathrm{C_a}$, $\mathrm{C_b}$, C(=O), $\mathrm{CH_2}$, $\mathrm{CH_2}$ en tournant dans le sens trigonométrique ; sur $\mathrm{C_a}$, OH vers l’avant et isopropényle vers l’arrière ; sur $\mathrm{C_b}$, propargyle vers l’avant et méthyle vers l’arrière.
+Cette attribution repose sur le seul argument d’encombrement, la chaîne $\mathrm{{-}CH_2{-}C{\equiv}C^-}$ étant supposée plus gênante qu’un méthyle : c’est une hypothèse. L’énoncé ne précise pas lequel des deux racémiques domine, et toute réponse justifiée de cette façon et cohérente avec ses descripteurs est recevable.
+
+Structure d’un énantiomère du racémique majoritaire : cycle à cinq atomes dans le plan de la feuille, parcouru dans le sens $\mathrm{C_a}$, $\mathrm{C_b}$, C(=O), $\mathrm{CH_2}$, $\mathrm{CH_2}$ en tournant dans le sens trigonométrique ; sur $\mathrm{C_a}$, OH vers l’avant et isopropényle vers l’arrière ; sur $\mathrm{C_b}$, propargyle vers l’avant et méthyle vers l’arrière (figure 3).
+
+![Figure 3 — Un énantiomère du racémique majoritaire du cétol K : OH et chaîne propargyle vers l’avant, isopropényle et méthyle vers l’arrière](figures/cetol-k-enantiomere.svg)
 
 Ordres de priorité (règles de Cahn, Ingold et Prelog) :
 
@@ -450,7 +460,7 @@ L’énol, peu stable, s’isomérise en cétone par tautomérie, catalysée par
 
 $$\mathrm{{-}CH{=}C(OH){-} \rightleftharpoons {-}CH_2{-}C({=}O){-}}$$
 
-Le carbonyle apparaît sur l’ancien carbone interne de l’alcyne : c’est le carbone 5 de **L**, voisin du $\mathrm{CH_2}$ lié au carbone quaternaire, tandis que l’ancien carbone terminal est devenu un $\mathrm{CH_2}$. Le carbonyle en position 8 est celui de **K**, resté intact. **L**, isomère de **K**, a pour formule $\mathrm{C_{12}H_{16}O_2}$ (perte puis gain d’une molécule d’eau). Sa formule est rappelée sur la figure 3 (question 42).
+Le carbonyle apparaît sur l’ancien carbone interne de l’alcyne : c’est le carbone 5 de **L**, voisin du $\mathrm{CH_2}$ lié au carbone quaternaire, tandis que l’ancien carbone terminal est devenu un $\mathrm{CH_2}$. Le carbonyle en position 8 est celui de **K**, resté intact. **L**, isomère de **K**, a pour formule $\mathrm{C_{12}H_{16}O_2}$ (perte puis gain d’une molécule d’eau). Sa formule est rappelée sur la figure 4 (question 42).
 
 ## Partie II · B. Aménagement fonctionnel
 
@@ -470,7 +480,7 @@ Par analogie avec la question 39, une fonction cétone réagit avec l’éthane-
 
 $$\mathrm{C_{12}H_{16}O_2 + C_2H_6S_2 \longrightarrow C_{14}H_{20}OS_2 + H_2O}$$
 
-On retrouve la formule de **N** (une double protection aurait donné $\mathrm{C_{16}H_{24}S_4}$). Un seul carbonyle est donc transformé, et l’énoncé indique qu’il s’agit de celui du carbone 5 : dans **N**, le carbone 5 est lié à deux atomes de soufre reliés par un pont $\mathrm{{-}CH_2{-}CH_2{-}}$ (cycle 1,3-dithiolane spiro), tandis que le carbonyle en 8 et la double liaison C=C sont intacts (figure 3, question 42).
+On retrouve la formule de **N** (une double protection aurait donné $\mathrm{C_{16}H_{24}S_4}$). Un seul carbonyle est donc transformé, et l’énoncé indique qu’il s’agit de celui du carbone 5 : dans **N**, le carbone 5 est lié à deux atomes de soufre reliés par un pont $\mathrm{{-}CH_2{-}CH_2{-}}$ (cycle 1,3-dithiolane spiro), tandis que le carbonyle en 8 et la double liaison C=C sont intacts (figure 4, question 42).
 
 Sélectivité : **L** possède deux fonctions cétone, dont une seule réagit. La réaction distingue deux sites portant la même fonction : c’est une **régiosélectivité** (sélectivité de site ; on parle parfois, par extension, de chimiosélectivité entre les deux carbonyles).
 
@@ -480,7 +490,7 @@ Justification : l’**encombrement stérique**. Le carbonyle en 8 est directemen
 
 $\mathrm{NaBH_4}$ réduit les cétones en alcools secondaires par addition nucléophile d’un ion hydrure sur le carbone du carbonyle, suivie de la protonation de l’alcoolate lors de l’hydrolyse. Il ne réagit ni avec le dithioacétal ni avec la double liaison C=C.
 
-**O** est donc l’alcool secondaire correspondant : le groupe $\mathrm{C{=}O}$ du carbone 8 est remplacé par $\mathrm{CH{-}OH}$, le reste de la molécule étant inchangé ($\mathrm{C_{14}H_{22}OS_2}$, figure 3). L’hydrolyse est « prudente » pour protoner l’alcoolate et détruire l’excès d’hydrure sans provoquer la déshydratation de l’alcool en milieu acide.
+**O** est donc l’alcool secondaire correspondant : le groupe $\mathrm{C{=}O}$ du carbone 8 est remplacé par $\mathrm{CH{-}OH}$, le reste de la molécule étant inchangé ($\mathrm{C_{14}H_{22}OS_2}$, figure 4). L’hydrolyse est « prudente » pour protoner l’alcoolate et détruire l’excès d’hydrure sans provoquer la déshydratation de l’alcool en milieu acide.
 
 Nécessité de la protection : $\mathrm{NaBH_4}$, utilisé en excès, ne distingue pas deux cétones. Sur la dione **L**, il aurait réduit les deux carbonyles, et en priorité le plus accessible, celui du carbone 5, pour donner un diol. Or le carbonyle en 5 doit être conservé pour construire la chaîne latérale (question 44). Sa transformation préalable en dithioacétal, inerte vis-à-vis des hydrures, permet de ne réduire que le carbonyle en 8.
 
@@ -492,11 +502,11 @@ $$\mathrm{R_2CH{-}OH + (CH_3)_2C{=}CH_2 \rightleftharpoons R_2CH{-}O{-}C(CH_3)_3
 
 où $\mathrm{R_2CH{-}OH}$ désigne l’alcool **O**. La fonction alcool est ainsi protégée pour la suite ; la structure de **R** fournie par l’énoncé, qui porte ce groupe en position 8, le confirme.
 
-![Figure 3 — Formules topologiques de la dione L et des composés N, O et P, la stéréochimie n’étant pas représentée](figures/bicycle-protection-reduction.svg)
+![Figure 4 — Formules topologiques de la dione L et des composés N, O et P, la stéréochimie n’étant pas représentée](figures/bicycle-protection-reduction.svg)
 
 ### Question 43 — Structure de Q
 
-Le dihydrogène en présence de palladium hydrogène la double liaison $\mathrm{C1{=}C(CH_3)}$ du cycle à sept chaînons. **Q** est le composé saturé correspondant ($\mathrm{C_{18}H_{32}OS_2}$) : le carbone 1 et le carbone voisin portant le méthyle sont désormais tétraédriques et portent chacun un hydrogène ; l’éther de tert-butyle en 8 et le dithioacétal en 5 sont inchangés (figure 4, question 49). On retrouve bien le squelette saturé de **R** donné par l’énoncé.
+Le dihydrogène en présence de palladium hydrogène la double liaison $\mathrm{C1{=}C(CH_3)}$ du cycle à sept chaînons. **Q** est le composé saturé correspondant ($\mathrm{C_{18}H_{32}OS_2}$) : le carbone 1 et le carbone voisin portant le méthyle sont désormais tétraédriques et portent chacun un hydrogène ; l’éther de tert-butyle en 8 et le dithioacétal en 5 sont inchangés (figure 5, question 49). On retrouve bien le squelette saturé de **R** donné par l’énoncé.
 
 L’addition des deux hydrogènes est syn, sur la face la moins encombrée de la double liaison ; elle crée deux nouveaux centres stéréogènes dont la configuration relative est ainsi contrôlée.
 
@@ -512,7 +522,7 @@ Le carbone de l’ylure, porteur de la charge négative, est nucléophile et att
 
 ### Question 45 — Structure de T et rôle de la configuration de S
 
-L’hydrogénation catalytique sature la double liaison de **S** : **T** porte sur le carbone 5 la chaîne $\mathrm{{-}CH_2{-}CO_2CH_3}$, le carbone 5 étant devenu un CH (figure 4, question 49). La fonction ester n’est pas réduite dans ces conditions, non plus que l’éther.
+L’hydrogénation catalytique sature la double liaison de **S** : **T** porte sur le carbone 5 la chaîne $\mathrm{{-}CH_2{-}CO_2CH_3}$, le carbone 5 étant devenu un CH (figure 5, question 49). La fonction ester n’est pas réduite dans ces conditions, non plus que l’éther.
 
 La configuration *Z* ou *E* de **S** est **sans importance** : la double liaison disparaît, et les deux isomères conduisent au même enchaînement d’atomes. Le carbone voisin de l’ester devient un $\mathrm{CH_2}$, qui n’est pas stéréogène ; le seul centre créé est le carbone 5, dont la configuration dépend de la face du bicycle par laquelle le dihydrogène s’additionne, et non de la géométrie *Z* ou *E*. Il était donc inutile de contrôler cette configuration lors de la réaction de Wittig, ou de séparer les deux isomères.
 
@@ -532,7 +542,7 @@ $$\mathrm{R{-}\overset{-}{C}H{-}CO_2CH_3 + H_2C{=}O \longrightarrow R{-}CH(CH_2O
 
 $$\boxed{\mathrm{{-}CH(CH_2OH){-}CO_2CH_3}}$$
 
-le reste de la molécule (éther de tert-butyle en 8, méthyles, bicycle saturé) étant celui de **T**. Dans ces équations, R désigne le bicycle de **T** lié par son carbone 5. La structure est représentée sur la figure 4 (question 49).
+le reste de la molécule (éther de tert-butyle en 8, méthyles, bicycle saturé) étant celui de **T**. Dans ces équations, R désigne le bicycle de **T** lié par son carbone 5. La structure est représentée sur la figure 5 (question 49).
 
 ### Question 47 — Structure de U’ et rôle de la pyridine
 
@@ -572,7 +582,7 @@ Sélectivité. La réaction est **chimiosélective** : seule la fonction éther 
 
 L’oxydation de l’alcool secondaire du carbone 8 de **W** donne une cétone. **X** est le cétoester : carbonyle en position 8, chaîne $\mathrm{{-}C({=}CH_2){-}CO_2CH_3}$ en position 5. C’est l’ester méthylique de l’acide damsinique.
 
-![Figure 4 — Formules topologiques des composés Q, T, U et X, la stéréochimie n’étant pas représentée](figures/bicycle-chaine-laterale.svg)
+![Figure 5 — Formules topologiques des composés Q, T, U et X, la stéréochimie n’étant pas représentée](figures/bicycle-chaine-laterale.svg)
 
 Passage de **X** à l’acide damsinique : il reste à transformer l’ester méthylique en acide carboxylique.
 

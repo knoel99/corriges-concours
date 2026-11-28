@@ -81,6 +81,11 @@
       "legende": "Allure du diagramme binaire isobare liquide-vapeur ETBE / éthanol sous 1 bar, avec azéotrope à minimum de température."
     },
     {
+      "fichier": "figures/cetol-k-enantiomere.svg",
+      "question": "36",
+      "legende": "Un énantiomère du racémique majoritaire du cétol K : OH et chaîne propargyle vers l’avant, isopropényle et méthyle vers l’arrière."
+    },
+    {
       "fichier": "figures/bicycle-protection-reduction.svg",
       "question": "42",
       "legende": "Formules topologiques de la dione L et des composés N, O et P, la stéréochimie n’étant pas représentée."
@@ -104,6 +109,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Rédaction originale des 49 questions dans les deux éditions à partir du sujet officiel et du rapport du jury. Applications numériques des questions 19, 21, 24, 28 à 30 et 33 recalculées, lecture de la figure 3, descripteurs CIP de la question 36 contrôlés par calcul, quatre figures originales."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application, après vérification contre le sujet, des défauts mineurs d’une relecture indépendante, dans les deux éditions : question 21 (le décompte des hydrogènes est un argument de vitesse, écarté sous contrôle thermodynamique), question 24 (état physique de A à 298 K et à T1), question 31 (écart entre modèle et figure 3 pour α = 1), question 32 (rappel du jeu de températures d’ébullition retenu), question 36 (hypothèse stérique signalée, figure de l’énantiomère avec liaisons en coin, descripteurs contrôlés par calcul sur les coordonnées de la figure) ; question 44 du guidé (fragment apporté par l’ylure). Figures renumérotées de 1 à 5."
     }
   ]
 }
