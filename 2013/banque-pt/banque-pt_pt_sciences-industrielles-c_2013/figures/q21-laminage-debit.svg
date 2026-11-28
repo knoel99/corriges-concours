@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" width="760" height="300" role="img"><title>Laminage à chaud puis débit par sciage</title><defs><pattern id="h1" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="7" stroke="#4a5a6a" stroke-width="1"/></pattern><pattern id="h2" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><line x1="0" y1="0" x2="0" y2="7" stroke="#4a5a6a" stroke-width="1"/></pattern><pattern id="h3" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="5" stroke="#8a5a2a" stroke-width="1"/></pattern><pattern id="h4" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><line x1="0" y1="0" x2="0" y2="5" stroke="#2a6a5a" stroke-width="1"/></pattern><pattern id="h5" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="9" stroke="#6a4a8a" stroke-width="1"/></pattern><pattern id="h6" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><line x1="0" y1="0" x2="0" y2="4" stroke="#8a3a3a" stroke-width="1"/></pattern><marker id="fr" orient="auto-start-reverse" markerWidth="9" markerHeight="9" refX="8" refY="4.5" viewBox="0 0 9 9"><path d="M0 0.8L9 4.5L0 8.2Z" fill="#b3261e"/></marker><marker id="fk" orient="auto-start-reverse" markerWidth="9" markerHeight="9" refX="8" refY="4.5" viewBox="0 0 9 9"><path d="M0 0.8L9 4.5L0 8.2Z" fill="#1b1f24"/></marker><marker id="fb" orient="auto-start-reverse" markerWidth="9" markerHeight="9" refX="8" refY="4.5" viewBox="0 0 9 9"><path d="M0 0.8L9 4.5L0 8.2Z" fill="#2a62b0"/></marker></defs><rect x="0" y="0" width="760" height="300" fill="#ffffff"/>
+<path d="M20.0 105.0L135.0 105.0L170.0 125.0L330.0 125.0L330.0 175.0L170.0 175.0L135.0 195.0L20.0 195.0Z" fill="url(#h1)" stroke="#1b1f24" stroke-width="2"/>
+<circle cx="170.0" cy="70.0" r="55.0" fill="#e6ebf1" stroke="#1b1f24" stroke-width="2"/>
+<circle cx="170.0" cy="230.0" r="55.0" fill="#e6ebf1" stroke="#1b1f24" stroke-width="2"/>
+<circle cx="170.0" cy="70.0" r="4.0" fill="#1b1f24" stroke="#1b1f24" stroke-width="1.5"/>
+<circle cx="170.0" cy="230.0" r="4.0" fill="#1b1f24" stroke="#1b1f24" stroke-width="1.5"/>
+<path d="M200 45 A40 40 0 0 0 140 45" fill="none" stroke="#2a62b0" stroke-width="2" marker-end="url(#fb)"/>
+<path d="M200 255 A40 40 0 0 1 140 255" fill="none" stroke="#2a62b0" stroke-width="2" marker-end="url(#fb)"/>
+<text x="14.0" y="96.0" font-family="sans-serif" font-size="13" text-anchor="start" fill="#1b1f24">bloom chaud</text>
+<line x1="250.0" y1="150.0" x2="320.0" y2="150.0" stroke="#b3261e" stroke-width="2.5" marker-end="url(#fr)"/>
+<text x="236.0" y="116.0" font-family="sans-serif" font-size="12" text-anchor="start" fill="#6a7480">section réduite</text>
+<text x="20.0" y="292.0" font-family="sans-serif" font-size="13" text-anchor="start" fill="#1b1f24">cylindres de laminoir (passes successives)</text>
+<rect x="420.0" y="125.0" width="300.0" height="50.0" rx="0" fill="url(#h1)" stroke="#1b1f24" stroke-width="2"/>
+<text x="570.0" y="92.0" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#1b1f24">barre laminée de section carrée</text>
+<line x1="520.0" y1="105.0" x2="520.0" y2="195.0" stroke="#b3261e" stroke-width="3"/>
+<line x1="620.0" y1="105.0" x2="620.0" y2="195.0" stroke="#b3261e" stroke-width="3"/>
+<text x="520.0" y="215.0" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#b3261e">trait de scie</text>
+<line x1="520.0" y1="240.0" x2="620.0" y2="240.0" stroke="#1b1f24" stroke-width="1" marker-end="url(#fk)"/>
+<line x1="620.0" y1="240.0" x2="520.0" y2="240.0" stroke="#1b1f24" stroke-width="1" marker-end="url(#fk)"/>
+<text x="570.0" y="258.0" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#1b1f24">lopin : longueur 450 mm + surépaisseurs</text>
+<line x1="345.0" y1="150.0" x2="405.0" y2="150.0" stroke="#1b1f24" stroke-width="1.5" marker-end="url(#fk)"/>
+</svg>

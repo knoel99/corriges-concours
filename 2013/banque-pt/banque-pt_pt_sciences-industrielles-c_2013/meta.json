@@ -1,0 +1,115 @@
+{
+  "slug": "banque-pt_pt_sciences-industrielles-c_2013",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Sciences industrielles C",
+    "annee": 2013
+  },
+  "questions": 32,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2013/si_c_2013_pt.pdf",
+    "sujet_sha256": "5f7838517d78bd075171541ba93e13c9b2a7da312f89b8bf99d3699a099d6e84",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2013/rapport_si_c_ecrit_2013.pdf",
+    "rapport_sha256": "cbcadf074dec407dbaaafe17708d79fb3036abbed097cff9f75e95b7ae0c5c43"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ],
+    "questions_partiellement_traitees": [
+      "28",
+      "29",
+      "30",
+      "31",
+      "32"
+    ],
+    "questions_non_traitees": [],
+    "precision": "Sujet de 41 pages lu en entier, page par page en image (texte, douze documents ressources, cahier réponses, calque réponse A3), et rapport du jury de 3 pages. 32 questions : 7 en partie I, 5 en partie II, 6 en partie III, 2 en partie IV, 7 en partie V, 5 en partie VI. Les questions 28 à 32 sont partielles : les solutions de conception sont choisies, justifiées et représentées par deux coupes de principe originales, sans tracé à l’échelle sur le calque A3 du sujet. Les réponses graphiques des questions 1, 3, 7, 10, 11, 21 et 27 sont des figures originales ; les tableaux des questions 11, 12 et 24 sont rendus en tableaux."
+  },
+  "figures": [
+    {
+      "fichier": "figures/q1-grafcet.svg",
+      "question": "1",
+      "legende": "Grafcet de production normale de la pièce pliée, étapes 10 à 100"
+    },
+    {
+      "fichier": "figures/q3-codeur-gray.svg",
+      "question": "3",
+      "legende": "Disque d’un codeur absolu à trois pistes en code Gray et table des huit secteurs"
+    },
+    {
+      "fichier": "figures/q7-glissement-galet.svg",
+      "question": "7",
+      "legende": "Vitesses au contact galet-fil en présence de glissement"
+    },
+    {
+      "fichier": "figures/q10-pliage-efforts.svg",
+      "question": "10",
+      "legende": "Épure du pliage : positions B0 à B4 et C0 à C4, efforts de la tête sur le fil et valeurs calculées"
+    },
+    {
+      "fichier": "figures/q21-laminage-debit.svg",
+      "question": "21",
+      "legende": "Principe du laminage à chaud puis débit du lopin par sciage"
+    },
+    {
+      "fichier": "figures/q27-sous-phase-10.svg",
+      "question": "27",
+      "legende": "Sous-phase 10 : normales de repérage 1 à 6, outils, mouvements et efforts de coupe"
+    },
+    {
+      "fichier": "figures/q30-arbre-intermediaire.svg",
+      "question": "28",
+      "legende": "Coupe de principe de l’arbre intermédiaire : galet, pignon et roulements, repères 1 à 17"
+    },
+    {
+      "fichier": "figures/q32-vis-ecrous-colonne.svg",
+      "question": "31",
+      "legende": "Coupe de principe de la vis de bridage, des deux écrous et d’une colonne, repères 1 à 9"
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions pour les 32 questions à partir du sujet de 41 pages et du rapport du jury ; applications numériques et épure du pliage recalculées, huit figures originales dessinées et contrôlées au rendu. Les questions 28 à 32 restent partielles faute de tracé sur le calque A3."
+    }
+  ]
+}
