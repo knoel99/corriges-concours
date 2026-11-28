@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Épreuve de quatre heures, sans calculatrice : étude d'un tensiomètre électronique, 37 questions numérotées de 1 à 37 (la partie I de l'énoncé est une présentation sans question). Les applications numériques sont données avec un chiffre significatif, comme le demande l'énoncé. Documents officiels : [sujet](https://www.banquept.fr/documents/2016/info_mod_2016_pt.pdf) et [rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2016/rapport_info_model_ecrit_2016.pdf).
 
 ## Partie II — Étude du capteur de pression
@@ -120,7 +122,7 @@ $$\boxed{\varepsilon_1 = -\varepsilon_2 = -\varepsilon_3 = \varepsilon_4 = k\,F 
 
 Chaque jauge mesure la moitié de la déformation maximale. Deux jauges sont tendues et deux comprimées, avec la même valeur absolue : c'est ce qui rendra le pont de la partie II.3 quatre fois plus sensible qu'avec une seule jauge.
 
-![Figure 1 — Déformation de la peau supérieure le long de la membrane et position des quatre jauges](figures/q5-deformation-jauges.svg)
+![Figure 1 — Déformation de la peau supérieure le long de la membrane et position des quatre jauges (valeurs du modèle de la figure 3(b) du sujet)](figures/q5-deformation-jauges.svg)
 
 **II.2 Choix des jauges de déformation (questions 6 à 11).**
 
@@ -294,7 +296,7 @@ $$\boxed{60\,000 \times 2 = 120\,000\ \text{octets} \approx 120\ \text{ko}}$$
 
 L'équation est celle d'un filtre passe-bas du second ordre, de gain statique 1, de pulsation propre $\omega$ et de coefficient d'amortissement $z$.
 
-- **Pulsation.** La fréquence cardiaque maximale est $190 / 60 \approx 3{,}2\ \mathrm{Hz}$, soit une pulsation $2\pi \times 3{,}2 \approx 20\ \mathrm{rad \cdot s^{-1}}$. En prenant $\omega = 20\ \mathrm{rad \cdot s^{-1}}$, on place la coupure juste au-dessus de la bande utile : les oscillations dues aux battements du cœur sont conservées et le bruit de mesure, de fréquence plus élevée, est atténué de 40 dB par décade.
+- **Pulsation.** La fréquence cardiaque maximale est $190 / 60 \approx 3{,}2\ \mathrm{Hz}$, soit une pulsation $2\pi \times 3{,}2 \approx 20\ \mathrm{rad \cdot s^{-1}}$. En prenant $\omega = 20\ \mathrm{rad \cdot s^{-1}}$, on place la coupure à la limite supérieure de la bande utile : les oscillations dues aux battements du cœur sont conservées (au pire atténuées de 3 dB à 190 pulsations par minute, où le gain vaut $1/(2z) \approx 0{,}71$) et le bruit de mesure, de fréquence plus élevée, est atténué de 40 dB par décade.
 - **Amortissement.** Avec $z = 0{,}7 \approx 1/\sqrt{2}$, la réponse en fréquence n'a pas de résonance (pas d'amplification artificielle autour de $\omega$, bande passante la plus plate possible) et la réponse temporelle est la plus rapide, avec un dépassement d'environ 5 % seulement.
 
 ### Question 21 — Relation de récurrence
@@ -332,7 +334,7 @@ $$\eta \approx 5\,T_e ,$$
 
 **le schéma converge donc à l'ordre 1 dans cette configuration** (une méthode d'ordre $p$ donnerait une erreur divisée par $10^p$).
 
-Contrôle par simulation de la réponse indicielle du filtre avec la fonction de la question 25 : on retrouve des erreurs de $0{,}047$, $0{,}0046$ et $0{,}00046$ pour ces trois pas.
+Contrôle par simulation de la réponse indicielle du filtre avec la fonction de la question 25, pour $\gamma = 1/2$ et $\beta = 1/6$ (réglage qui reproduit les courbes de la figure 7 ; $\beta = 1/4$ donne les mêmes valeurs) : on retrouve des erreurs de $0{,}047$, $0{,}0046$ et $0{,}00046$ pour ces trois pas. L'ordre 1 vient ici des conditions initiales : la dérivée seconde est prise nulle au premier indice alors que l'échelon impose $\ddot U_f(0^+) = \omega^2$.
 
 ### Question 24 — Qualité du signal filtré
 
@@ -368,11 +370,11 @@ La fonction effectue $N - 1$ passages dans la boucle : sa complexité est linéa
 
 ### Question 26 — Version économe en mémoire
 
-La fonction précédente crée trois listes de taille $N$ alors que seule `Uf` est demandée : les dérivées première et seconde ne servent qu'au pas suivant. On les remplace par deux scalaires, mis à jour à chaque pas ; la mémoire auxiliaire passe de $2N$ flottants à trois.
+La fonction précédente crée trois listes de taille $N$ alors que seule `Uf` est demandée : les dérivées première et seconde ne servent qu'au pas suivant. On les remplace par des scalaires, mis à jour à chaque pas ; la mémoire auxiliaire passe de $2N$ flottants à quatre (`u`, `v`, `a` et `a_suiv`).
 
 ```python
 def newmark2(gamma, beta, omega, z, e, Te):
-    """Même calcul avec trois scalaires au lieu de deux listes auxiliaires."""
+    """Même calcul avec quatre scalaires au lieu de deux listes auxiliaires."""
     N = len(e)
     Uf = [0.0] * N
     u, v, a = 0.0, 0.0, 0.0           # valeurs au pas courant i
@@ -417,7 +419,7 @@ def pression_systolique(data):
     return maxi
 ```
 
-Les tests `i < n - 1` empêchent de sortir du tableau. Les inégalités larges font franchir les éventuels paliers. Complexité linéaire : l'indice `i` ne recule jamais.
+Les tests `i < n - 1` empêchent de sortir du tableau ; la boucle externe, elle, ne se termine que parce que l'énoncé garantit qu'une bosse vérifie le critère (sans cette hypothèse, `i` resterait bloqué à `n - 1` et il faudrait aussi arrêter la boucle dans ce cas). Les inégalités larges font franchir les éventuels paliers. Complexité linéaire : l'indice `i` ne recule jamais.
 
 ![Figure 3 — Bosses et creux de la pression filtrée, sens de parcours des questions 27 et 28](figures/q27-bosses-creux.svg)
 
@@ -448,7 +450,7 @@ def pression_diastolique(data):
     return maxi
 ```
 
-La valeur `maxi` retenue est celle qui a rendu le critère vrai : la dernière boucle interne ne la modifie pas. Test : même contrôle qu'à la question 27, sur les mêmes 41 signaux, par comparaison avec la recherche exhaustive de la dernière bosse satisfaisant les deux conditions.
+La valeur `maxi` retenue est celle qui a rendu le critère vrai : la dernière boucle interne ne la modifie pas. Comme à la question 27, la boucle externe ne se termine que grâce à l'hypothèse de l'énoncé (la pression diastolique figure dans `data`) : sans elle, `i` resterait bloqué à 0. Test : même contrôle qu'à la question 27, sur les mêmes 41 signaux, par comparaison avec la recherche exhaustive de la dernière bosse satisfaisant les deux conditions.
 
 ## Partie IV — Stockage et analyse des résultats
 
@@ -615,4 +617,4 @@ WHERE mesures.psyst > 160 AND mesures.pdias > 110
   AND mesures.pouls > 100 AND mesures.pouls < 150;
 ```
 
-Les deux tables ont un attribut `id` : il faut le préfixer par le nom de la table. `DISTINCT` évite qu'un patient apparaisse autant de fois qu'il a de mesures concernées. Test : sur la base d'essai, un patient ayant deux mesures conformes n'apparaît qu'une fois, et les patients dont une constante est exactement à la borne (pouls de 150, diastolique de 110) sont écartés.
+Les deux tables ont un attribut `id` : il faut le préfixer par le nom de la table. `DISTINCT` évite qu'un patient apparaisse autant de fois qu'il a de mesures concernées. Limite : deux patients homonymes de même téléphone seraient confondus en une seule ligne ; pour les distinguer, on ajouterait `patients.id` aux colonnes (`SELECT DISTINCT patients.id, patients.nom, patients.prenom, patients.telephone`). Test : sur la base d'essai, un patient ayant deux mesures conformes n'apparaît qu'une fois, et les patients dont une constante est exactement à la borne (pouls de 150, diastolique de 110) sont écartés.

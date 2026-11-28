@@ -55,13 +55,13 @@
       "36",
       "37"
     ],
-    "precision": "Sujet de 13 pages lu en entier (énoncé pages 2 à 12 avec l'annexe de documentation, page 13 blanche), rapport de 2 pages lu. 37 questions numérotées de 1 à 37, toutes traitées. Le modèle simplifié de la figure 3(b) est suivi tel que l'énoncé le dessine, avec la force F entière sur la demi-membrane ; la symétrie n'en attribuerait que la moitié, ce qui diviserait par deux les résultats des questions 3 à 5, 16 et 17 (signalé aux questions 1 et 17). Les seuils de stabilité de la question 22 sont lus sur la figure 7 du sujet. Aux questions 27 et 28, chaque maximum local est comparé au minimum local qui le suit, convention que l'énoncé ne fixe pas."
+    "precision": "Sujet de 13 pages lu en entier (énoncé pages 2 à 12 avec l'annexe de documentation, page 13 blanche), rapport de 2 pages lu. 37 questions numérotées de 1 à 37, toutes traitées. Le modèle simplifié de la figure 3(b) est suivi tel que l'énoncé le dessine, avec la force F entière sur la demi-membrane ; la symétrie n'en attribuerait que la moitié, ce qui diviserait par deux les résultats des questions 3 à 5, 16 et 17 (signalé aux questions 1 et 17). Les seuils de stabilité de la question 22 sont lus sur la figure 7 du sujet. Aux questions 27 et 28, chaque maximum local est comparé au minimum local qui le suit, convention que l'énoncé ne fixe pas mais qui suit l'ordre de la solution décrite par le rapport du jury."
   },
   "figures": [
     {
       "fichier": "figures/q5-deformation-jauges.svg",
       "question": "5",
-      "legende": "Déformation de la peau supérieure le long de la membrane et position des quatre jauges"
+      "legende": "Déformation de la peau supérieure le long de la membrane et position des quatre jauges (valeurs du modèle de la figure 3(b) du sujet)"
     },
     {
       "fichier": "figures/q14-pont-wheatstone.svg",
@@ -87,6 +87,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Rédaction des deux éditions pour les 37 questions et de trois schémas. Calculs littéraux vérifiés par calcul formel, applications numériques recalculées, tout le code Python et SQL exécuté et testé (réponse indicielle du filtre comparée à la solution exacte, extrema comparés à une recherche exhaustive, requêtes sur une base SQLite d'essai)."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application des sept défauts mineurs de la relecture indépendante, vérifiés contre le sujet et le rapport, dans les deux éditions : légende de la figure 1 (valeurs du modèle de la figure 3(b)), question 20 (coupure à la limite de la bande utile, 3 dB à 190 pulsations par minute), question 23 (paramètres du contrôle et origine de l'ordre 1, resimulés), question 26 (quatre scalaires), questions 27 et 28 (terminaison liée à l'hypothèse de l'énoncé, convention rattachée au rapport dans le guidé), question 37 (limite de DISTINCT, variante testée sous sqlite3). Code Python des deux éditions réexécuté. Les 23 encadrés du jury recontrôlés contre le rapport, aucun requalifié."
     }
   ]
 }
