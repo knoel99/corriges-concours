@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 Épreuve de quatre heures, sans calculatrice, sur l'identification par radiofréquence (RFID) appliquée aux titres de transport sans contact. Le sujet compte 40 questions en deux parties indépendantes.
@@ -73,7 +75,10 @@ En UHF ($\lambda \approx 33\ \mathrm{cm}$ à 900 MHz), l'antenne a une taille co
 **Les ondes UHF portent plus loin parce que l'antenne rayonne une puissance beaucoup plus grande (en $f^4$) sous forme d'une onde qui se propage, alors qu'en BF et HF la liaison repose sur le champ proche, qui s'effondre dès qu'on s'éloigne de l'antenne.**
 
 > [!JURY]
-> Le rapport 2015 regrette que les réponses aux questions qualitatives soient souvent de simples paraphrases vagues. Ici, la réponse doit s'appuyer sur la loi en $1/\lambda^4$ fournie par l'énoncé.
+> Le rapport 2015 regrette que les réponses aux questions qualitatives soient souvent de simples paraphrases vagues.
+
+> [!PIEGE]
+> Répondre sans utiliser la loi en $1/\lambda^4$ fournie par l'énoncé : c'est elle qui porte l'argument.
 
 ### Question I.A4 — Pénétration dans un conducteur
 
@@ -162,13 +167,13 @@ $$\boxed{\vec B_1(M,t) = B_1(z,t)\,\vec u_z}$$
 
 **Lecture de la figure 3.** On suit la droite horizontale $z = z_0 = 0{,}10\ \mathrm{m}$ et on relève les abscisses où elle coupe les courbes de niveau :
 
-| $a$ (m) | 0 | $\approx 0{,}05$ | $\approx 0{,}065$ | $\approx 0{,}09$ | $\approx 0{,}14$ à $0{,}15$ | $0{,}20$ |
+| $a$ (m) | 0 | $\approx 0{,}035$ | $\approx 0{,}05$ | $\approx 0{,}075$ | $\approx 0{,}14$ | $0{,}20$ |
 |---|---|---|---|---|---|---|
 | $B_{1\mathrm{eff}}$ ($\mathrm{\mu T}$) | 0 | 2 | 3 | 4 | $\approx 5$ (maximum) | entre 4 et 5 |
 
-La droite $z = z_0$ ne franchit pas la courbe $5\ \mathrm{\mu T}$ : elle vient l'effleurer vers $a \approx 0{,}14$ à $0{,}15\ \mathrm{m}$, puis reste entre les courbes 4 et 5 $\mathrm{\mu T}$ jusqu'au bord du graphe. Le champ part donc de zéro pour $a = 0$ (une spire de rayon nul ne crée aucun champ), croît, passe par un maximum d'environ $5\ \mathrm{\mu T}$, puis décroît lentement (il tend vers zéro quand $a \to \infty$).
+Toutes ces valeurs sont lues sur la carte, à quelques millimètres près : la courbe $2\ \mathrm{\mu T}$ est coupée aux deux tiers de l'intervalle $[0 ; 0{,}05]$, la courbe $3\ \mathrm{\mu T}$ presque sur la graduation $0{,}05$, la courbe $4\ \mathrm{\mu T}$ au milieu de l'intervalle $[0{,}05 ; 0{,}10]$. La droite $z = z_0$ ne franchit pas la courbe $5\ \mathrm{\mu T}$ : elle vient l'effleurer vers $a \approx 0{,}14\ \mathrm{m}$, puis reste entre les courbes 4 et 5 $\mathrm{\mu T}$ jusqu'au bord du graphe. Le champ part donc de zéro pour $a = 0$ (une spire de rayon nul ne crée aucun champ), croît, passe par un maximum d'environ $5\ \mathrm{\mu T}$, puis décroît lentement (il tend vers zéro quand $a \to \infty$).
 
-![Figure 1 — Champ efficace sur l'axe à 10 cm de la bobine en fonction de son rayon : maximum de 4,8 μT pour a ≈ 0,14 m](figures/b2-champ-efficace-rayon.svg)
+![Figure 1 — Champ efficace sur l'axe à 10 cm de la bobine en fonction de son rayon : courbe calculée par la formule du champ sur l'axe (maximum de 4,8 μT pour a ≈ 0,14 m) et points relevés sur la carte du sujet pour 2, 3 et 4 μT](figures/b2-champ-efficace-rayon.svg)
 
 **Application numérique.** La carte est tracée pour la bobine complète ($N_1 = 100$ spires, $I_1 = 20\ \mathrm{mA}$) : la valeur se lit directement, sans la multiplier ni la diviser par $N_1$.
 
@@ -182,7 +187,9 @@ Elle est maximale pour $a = z_0\sqrt 2 \approx 0{,}14\ \mathrm{m}$ et vaut alors
 
 $$B_{1\mathrm{eff,max}} = \frac{\mu_0 N_1 I_1}{3\sqrt 3\, z_0} = \frac{4\pi\times 10^{-7}\times 100\times 0{,}020}{3\sqrt 3\times 0{,}10}\ \mathrm{T} \approx 4{,}8\ \mathrm{\mu T} ,$$
 
-en accord avec la lecture.
+en accord avec le maximum lu sur la carte.
+
+L'accord est moins bon sur la partie montante. La formule place les passages par 2, 3 et $4\ \mathrm{\mu T}$ en $a \approx 0{,}046$, $0{,}063$ et $0{,}085\ \mathrm{m}$, alors que la carte les donne en $a \approx 0{,}035$, $0{,}05$ et $0{,}075\ \mathrm{m}$, soit environ un centimètre plus à gauche. Les abscisses du tableau sont celles de la carte, seules demandées (« sans calcul supplémentaire »). Sur la figure 1, la courbe est celle de la formule et les trois cercles sont les points relevés sur la carte : l'écart entre les deux y est visible.
 
 > [!METHODE]
 > Lire une coupe dans une carte de courbes de niveau : on se déplace sur la droite imposée, chaque courbe traversée donne un point (abscisse, valeur). Une courbe seulement effleurée signale un extremum, dont la valeur est celle de cette courbe.
@@ -248,7 +255,7 @@ $$\frac{\mathrm{d}}{\mathrm{d}a}\left[\frac{a^2}{(a^2+d^2)^{3/2}}\right] = \frac
 
 $$\boxed{a_{\mathrm{opt}} = d\sqrt 2 \approx 14\ \mathrm{cm}}$$
 
-Remarque. Avec les données ($N_2 = 4$, $S_2 = 30\ \mathrm{cm^2}$) et $B_{1\mathrm{eff}} \approx 5\ \mathrm{\mu T}$, ce modèle donne $M \approx N_2 S_2 B_{1\mathrm{eff}}/I_1 \approx 3\ \mathrm{\mu H}$, alors que l'énoncé impose $M = 0{,}1\ \mathrm{\mu H}$ pour les applications numériques. Les données de l'énoncé ne sont pas cohérentes entre elles sur ce point ; on utilise dans la suite la valeur imposée $M = 0{,}1\ \mathrm{\mu H}$.
+Remarque. Avec les données ($N_2 = 4$, $S_2 = 30\ \mathrm{cm^2}$) et $B_{1\mathrm{eff}} \approx 5\ \mathrm{\mu T}$, ce modèle donne $M \approx N_2 S_2 B_{1\mathrm{eff}}/I_1 \approx 3\ \mathrm{\mu H}$ pour le rayon optimal, alors que l'énoncé impose $M = 0{,}1\ \mathrm{\mu H}$ pour les applications numériques, soit trente fois moins. L'énoncé ne chiffre pas le rayon $a$ : la valeur imposée n'est donc pas contredite par une autre donnée, mais elle ne correspond pas au rayon optimal (le modèle ne redonne $0{,}1\ \mathrm{\mu H}$ que pour $a \approx 1\ \mathrm{cm}$, ce qui contredit $b \ll a$ puisque $b = \sqrt{S_2/\pi} \approx 3\ \mathrm{cm}$, ou pour un rayon de plusieurs mètres). Elle est en revanche cohérente avec le coefficient de couplage donné, $k\sqrt{L_1L_2} = 0{,}0063\times\sqrt{40\times 6{,}3}\ \mathrm{\mu H} \approx 0{,}1\ \mathrm{\mu H}$, et c'est elle qui conduit au seuil de 4,6 V des questions I.B9 et I.B10 : on l'utilise dans toute la suite.
 
 > [!JURY]
 > Le rapport 2015 indique que la notion d'inductance mutuelle a posé beaucoup de problèmes, qu'un grand nombre de candidats ne sont pas allés au-delà des questions qui la font intervenir, et que les copies contiennent toutes sortes de relations fausses et inhomogènes.
@@ -399,7 +406,7 @@ La tension passe de 0,17 V sans condensateur à 4,6 V avec lui, soit juste le se
 > Champ uniforme sur la petite bobine : écrire le flux à travers ses $N_2$ spires, puis la valeur efficace de sa dérivée.
 
 > [!INDICATION]
-> Assimiler la tension aux bornes de la puce à la force électromotrice induite, puis discuter ce que change la résonance étudiée à la question précédente.
+> Relier la tension aux bornes de la puce à la force électromotrice induite : que vaut leur rapport à la résonance (question I.B9) ? À quel moment du sujet le seuil de 4,6 V est-il introduit ?
 
 #### Solution
 
@@ -407,15 +414,23 @@ Le champ $\vec B_1$ est quasi uniforme sur $b_2$ ($b \ll a$, $b \ll d$) et dirig
 
 $$E_{\mathrm{eff}} = N_2\, S_2\, \omega_0\, B_{\mathrm{eff}} .$$
 
-On néglige le champ créé par $i_2$ et les chutes de tension dans $R_2$ : la tension aux bornes de la puce est de l'ordre de cette force électromotrice, $U_{2\mathrm{eff}} \approx E_{\mathrm{eff}}$. La condition $U_{2\mathrm{eff}} > 4{,}6\ \mathrm{V}$ impose alors
+L'énoncé est ambigu sur le lien entre cette force électromotrice et la tension $U_{2\mathrm{eff}}$ soumise au seuil de 4,6 V, et le rapport du jury ne commente pas cette question. Deux lectures sont possibles ; on retient celle du circuit accordé, seule cohérente avec les données, et on donne l'autre pour comparaison.
 
-$$B_{\min} \approx \frac{U_{2\mathrm{eff,min}}}{N_2 S_2 \omega_0} = \frac{4{,}6}{4\times 30\times 10^{-4}\times 8{,}5\times 10^{7}}\ \mathrm{T} = \frac{4{,}6}{1{,}0\times 10^{6}}\ \mathrm{T} ,$$
+**Avec le circuit accordé (lecture retenue).** Le seuil de 4,6 V est introduit après l'insertion de $C_2$, et c'est exactement la tension obtenue à la question I.B9. À la résonance, la tension aux bornes de la puce vaut $Q_T$ fois la force électromotrice induite ($U_{2\mathrm{eff}} = R_{21} I_1 = Q_T\,M\omega_0 I_1$, où $M\omega_0 I_1$ est la force électromotrice) : $U_{2\mathrm{eff}} \approx Q_T\,E_{\mathrm{eff}}$. Les approximations sont celles déjà faites : champ uniforme sur $b_2$, $R_2 \ll R_L$, pulsation égale à $\omega_0$. La condition $U_{2\mathrm{eff}} > 4{,}6\ \mathrm{V}$ impose
 
-$$\boxed{B_{\min} \approx 4{,}5\ \mathrm{\mu T} \approx 5\ \mathrm{\mu T}}$$
+$$B_{\min} \approx \frac{U_{2\mathrm{eff,min}}}{Q_T\,N_2 S_2\,\omega_0} = \frac{4{,}6}{27\times 4\times 30\times 10^{-4}\times 8{,}5\times 10^{7}}\ \mathrm{T} \approx \frac{4{,}6}{2{,}8\times 10^{7}}\ \mathrm{T} ,$$
 
-C'est l'ordre de grandeur du champ maximal créé par $b_1$ à 10 cm (question I.B2) : sans précaution, la carte n'est alimentée qu'à la limite de portée, pour le rayon optimal.
+$$\boxed{B_{\min} \approx 0{,}17\ \mathrm{\mu T} \approx 0{,}2\ \mathrm{\mu T}}$$
 
-Avec le circuit accordé de la question I.B9, la tension aux bornes de la puce vaut $Q_T$ fois la force électromotrice ($R_{21} I_1 = Q_T\,M\omega_0 I_1$) : le champ nécessaire est divisé par $Q_T \approx 27$, soit **$B_{\min} \approx 0{,}2\ \mathrm{\mu T}$ à la résonance**. L'ordre de grandeur demandé est donc le microtesla sans accord, et quelques dixièmes de microtesla avec accord.
+Contrôle : avec $M = 0{,}1\ \mathrm{\mu H}$ et $I_1 = 20\ \mathrm{mA}$, le champ au niveau de $b_2$ vaut $M I_1/(N_2 S_2) = 10^{-7}\times 0{,}020/(1{,}2\times 10^{-2})\ \mathrm{T} \approx 0{,}17\ \mathrm{\mu T}$, et la question I.B9 donne alors juste 4,6 V : les deux résultats se recoupent.
+
+**Sans accord (pour comparaison).** Si l'on assimile la tension aux bornes de la puce à la force électromotrice, $U_{2\mathrm{eff}} \approx E_{\mathrm{eff}}$, il faut
+
+$$B_{\min} \approx \frac{U_{2\mathrm{eff,min}}}{N_2 S_2 \omega_0} = \frac{4{,}6}{4\times 30\times 10^{-4}\times 8{,}5\times 10^{7}}\ \mathrm{T} = \frac{4{,}6}{1{,}0\times 10^{6}}\ \mathrm{T} \approx 4{,}5\ \mathrm{\mu T} \approx 5\ \mathrm{\mu T} ,$$
+
+soit $Q_T \approx 27$ fois plus. Cette valeur est de l'ordre du champ maximal lu à la question I.B2, mais elle ne tient pas compte du condensateur $C_2$, pourtant branché à ce stade du sujet, et elle ne s'accorde pas avec $M = 0{,}1\ \mathrm{\mu H}$ (question I.B5).
+
+L'ordre de grandeur retenu est donc quelques dixièmes de microtesla ; l'accord du TAG divise par $Q_T$ le champ nécessaire.
 
 ### Question I.B11 — Bilan de puissance
 
@@ -707,8 +722,8 @@ Les trois simulations ne diffèrent que par le pas de temps. Celui-ci agit de de
 
 **Sur les changements d'état.** Le circuit réel fonctionne ainsi : la diode se bloque juste après chaque maximum de $e$, la sortie décroît lentement (de $\mathrm{e}^{-T_p/\tau} \approx 0{,}93$ par période), et la diode redevient passante un peu avant le maximum suivant, quand $e$ rattrape $s$. Dans la simulation, un changement d'état ne peut être détecté qu'à un instant de calcul, donc avec un retard pouvant atteindre un pas, et la sortie continue pendant ce pas à suivre l'équation de l'ancien état.
 
-- Figure 5 (1 ns) : la simulation exécutée donne un blocage à $t \approx 20\ \mathrm{ns}$, juste après le premier maximum ($T_p/4 \approx 18\ \mathrm{ns}$), une remise en conduction à 88 ns, un blocage à 93 ns, puis de même à chaque période. La diode ne conduit que quelques nanosecondes autour de chaque maximum : c'est le comportement attendu, et $s$ suit l'enveloppe.
-- Figure 4 (10 ns) : le blocage est constaté un pas trop tard, alors que $s$ a déjà suivi $e$ dans sa descente. Sur le zoom, $s$ monte à 1,3 V puis retombe à 0,7 V avant de se figer ; à la période suivante, elle se fige à 0,1 V. Le palier retenu dépend de la position des points de calcul par rapport au maximum, qui glisse d'une période à l'autre car $T_p$ n'est pas multiple de 10 ns : les paliers sont irréguliers, entre 0,1 et 1,5 V.
+- Figure 5 (1 ns) : sur le zoom du sujet, $s$ quitte $e$ vers $0{,}2\times 10^{-7}\ \mathrm{s}$, juste après le premier maximum ($T_p/4 \approx 18\ \mathrm{ns}$), et la rejoint vers $0{,}9\times 10^{-7}\ \mathrm{s}$, juste avant le maximum suivant. Ces instants sont lus sur la figure ; la simulation exécutée les confirme (blocage à 20 ns, remise en conduction à 88 ns, nouveau blocage à 93 ns, puis de même à chaque période). La diode ne conduit que quelques nanosecondes autour de chaque maximum : c'est le comportement attendu, et $s$ suit l'enveloppe.
+- Figure 4 (10 ns) : sur le zoom du sujet, la diode se bloque à $0{,}3\times 10^{-7}\ \mathrm{s}$, redevient passante vers $0{,}9\times 10^{-7}\ \mathrm{s}$ et se bloque de nouveau à $1{,}1\times 10^{-7}\ \mathrm{s}$ (instants lus sur la figure, confirmés par la simulation exécutée). Le blocage est constaté un pas trop tard, alors que $s$ a déjà suivi $e$ dans sa descente : $s$ monte à 1,3 V puis retombe à 0,7 V avant de se figer ; à la période suivante, elle se fige à 0,1 V. Le palier retenu dépend de la position des points de calcul par rapport au maximum, qui glisse d'une période à l'autre car $T_p$ n'est pas multiple de 10 ns : les paliers sont irréguliers, entre 0,1 et 1 V environ, sous des pics qui atteignent 1,3 à 1,5 V.
 - Figure 3 (100 ns) : les changements d'état se produisent à des instants sans rapport avec les maximums de la porteuse, et $s$ prend même des valeurs négatives, ce qui est impossible pour le montage réel, dont la sortie reste positive.
 
 **Constat : les instants de changement d'état de la diode ne sont correctement repérés (juste après et juste avant chaque maximum de la porteuse) que si le pas est petit devant la période de la porteuse ; sinon ils sont décalés et la sortie calculée est fausse, alors que le schéma numérique lui-même reste stable ($\Delta t/\tau \leqslant 0{,}1$).**
@@ -727,7 +742,7 @@ Les trois simulations ne diffèrent que par le pas de temps. Celui-ci agit de de
 #### Solution
 
 - Figure 3 ($\Delta t_1 = 100\ \mathrm{ns}$) : $s$ oscille entre $-1{,}5$ et $1{,}3\ \mathrm{V}$ sans faire apparaître deux niveaux. Aucun seuil possible.
-- Figure 4 ($\Delta t_2 = 10\ \mathrm{ns}$) : les paliers varient de 0,1 à 1,5 V, de la même façon pendant les trois bits. Aucun seuil ne sépare le bit 1 des bits 0.
+- Figure 4 ($\Delta t_2 = 10\ \mathrm{ns}$) : les paliers varient de 0,1 à 1 V environ, sous des pics de 1,3 à 1,5 V, de la même façon pendant les trois bits. Aucun seuil ne sépare le bit 1 des bits 0.
 - Figure 5 ($\Delta t_3 = 1\ \mathrm{ns}$) : $s$ reste comprise entre 1,2 et 1,3 V pendant les bits 0 et entre 1,4 et 1,5 V pendant le bit 1 (l'ondulation correspond à la décharge sur une période, $1{,}3\times 0{,}93 \approx 1{,}21$ et $1{,}5\times 0{,}93 \approx 1{,}39$). Un seuil placé vers 1,35 V sépare les deux niveaux : le message 0, 1, 0 est récupérable.
 
 ![Figure 2 — Simulation au pas de 1 ns : la sortie s(t) suit l'enveloppe de e(t) et un seuil à 1,35 V sépare le bit 1 des bits 0](figures/q8-enveloppe-pas-1-ns.svg)
@@ -775,7 +790,10 @@ def parite(bits):
 ```
 
 > [!JURY]
-> Le rapport 2015 insiste sur la différence entre renvoyer une valeur (`return`) et l'afficher à l'écran (`print`), trop souvent confondus : ici la fonction doit retourner l'entier.
+> Le rapport 2015 insiste sur la différence entre renvoyer une valeur (`return`) et l'afficher à l'écran (`print`), trop souvent confondus.
+
+> [!PIEGE]
+> Terminer la fonction par `print` : ici, elle doit retourner l'entier.
 
 ### Question Q11 — Limites du bit de parité
 
@@ -904,7 +922,10 @@ Dans l'exemple de la question Q14, le mot de contrôle vaut $(0, 1, 1)$ mais deu
 **Conclusion sur ces techniques.** Un bit de parité détecte un nombre impair d'erreurs sans les localiser. Le code de Hamming (7,4) combine trois bits de parité portant sur des sous-ensembles qui se recoupent : il localise et corrige une erreur unique, mais se trompe en cas d'erreur double. Un quatrième bit de parité lui permet de détecter les erreurs doubles tout en corrigeant les erreurs simples. Chaque progrès se paie en redondance : un bit de contrôle pour sept bits de données dans le premier cas, quatre pour quatre dans le dernier. Aucun de ces codes ne traite les erreurs plus nombreuses.
 
 > [!JURY]
-> Le rapport 2015 juge les propositions souvent laconiques et incomplètes, voire fantaisistes : il faut décrire le bit ajouté et la règle de décision à la réception.
+> Le rapport 2015 juge les propositions souvent laconiques et incomplètes, voire fantaisistes.
+
+> [!METHODE]
+> Une réponse complète décrit le bit ajouté, puis la règle de décision à la réception.
 
 **Utilisation des données de la puce pour autoriser ou non le passage (questions Q16 à Q20).**
 

@@ -37,8 +37,10 @@
 <text x="181.9" y="20" text-anchor="middle" font-weight="bold">bit 0</text>
 <text x="425.8" y="20" text-anchor="middle" font-weight="bold">bit 1</text>
 <text x="618.0" y="20" text-anchor="middle" font-weight="bold">bit 0</text>
-<text x="68" y="231.1" fill="#b22">s(t)</text>
-<text x="68" y="267.2" fill="#567">e(t)</text>
+<line x1="470" y1="403" x2="498" y2="403" stroke="#b22" stroke-width="2"/>
+<text x="504" y="408" fill="#b22">sortie s(t)</text>
+<line x1="590" y1="403" x2="618" y2="403" stroke="#9ab" stroke-width="2"/>
+<text x="624" y="408" fill="#567">entrée e(t)</text>
 <text x="370" y="408" text-anchor="middle">temps (μs)</text>
 <text x="16" y="195" text-anchor="middle" transform="rotate(-90 16 195)">tension (V)</text>
 </svg>

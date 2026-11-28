@@ -58,13 +58,13 @@
       "Q21",
       "Q22"
     ],
-    "precision": "Sujet de 16 pages lu en entier en image (PDF numérisé sans couche de texte ; énoncé pages 2 à 14, pages 15 et 16 blanches), rapport de 5 pages lu. 40 questions : I.A1 à I.A5, I.B1 à I.B13, Q1 à Q22, toutes traitées. Les valeurs de la question I.B2 sont lues sur la carte de courbes de niveau du sujet et recoupées par la formule du champ sur l'axe. L'inductance mutuelle imposée par l'énoncé (0,1 μH) ne concorde pas avec le modèle de la question I.B5 (environ 3 μH) : l'écart est signalé et la valeur de l'énoncé est utilisée. Question I.B10 : deux ordres de grandeur sont donnés, sans et avec résonance. Partie informatique rédigée en Python ; pas de version Scilab, faute d'interpréteur."
+    "precision": "Sujet de 16 pages lu en entier en image (PDF numérisé sans couche de texte ; énoncé pages 2 à 14, pages 15 et 16 blanches), rapport de 5 pages lu. 40 questions : I.A1 à I.A5, I.B1 à I.B13, Q1 à Q22, toutes traitées. Question I.B2 : les abscisses du tableau (0,035 ; 0,05 ; 0,075 ; 0,14 m) et le maximum d'environ 5 μT sont lus sur la carte de courbes de niveau du sujet ; la formule du champ sur l'axe, non demandée, recoupe le maximum (4,8 μT pour a ≈ 0,14 m) mais place les niveaux 2, 3 et 4 μT environ un centimètre plus à droite (0,046 ; 0,063 ; 0,085 m), écart signalé dans le texte et visible sur la figure. L'inductance mutuelle imposée par l'énoncé (0,1 μH) ne concorde pas avec le modèle de la question I.B5 (environ 3 μH) : l'écart est signalé et la valeur de l'énoncé est utilisée. Question I.B10 : énoncé ambigu et rapport muet sur cette question ; valeur retenue avec le circuit accordé (0,2 μT), valeur sans accord (5 μT) donnée pour comparaison. Partie informatique rédigée en Python ; pas de version Scilab, faute d'interpréteur."
   },
   "figures": [
     {
       "fichier": "figures/b2-champ-efficace-rayon.svg",
       "question": "I.B2",
-      "legende": "Champ efficace sur l'axe à 10 cm de la bobine en fonction de son rayon : maximum de 4,8 μT pour a ≈ 0,14 m"
+      "legende": "Champ efficace sur l'axe à 10 cm de la bobine en fonction de son rayon : courbe calculée par la formule du champ sur l'axe (maximum de 4,8 μT pour a ≈ 0,14 m) et points relevés sur la carte du sujet pour 2, 3 et 4 μT"
     },
     {
       "fichier": "figures/q8-enveloppe-pas-1-ns.svg",
@@ -85,6 +85,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Rédaction des deux éditions pour les 40 questions et de deux figures (courbe calculée, simulation exécutée). Tout le code Python et SQL a été exécuté et testé (tests exhaustifs du code de Hamming, base SQLite d'essai), applications numériques recalculées ; pas de version Scilab."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Corrections issues de la relecture indépendante, vérifiées contre le sujet et le rapport. I.B2 : figure 3 du sujet relue à 300 ppp, tableau, texte, figure et légende corrigés (abscisses lues sur la carte distinguées de celles de la formule). I.B5 : remarque sur l'inductance mutuelle précisée. I.B10 : calcul refait, valeur du circuit accordé (0,2 μT) retenue, 5 μT gardé comme cas sans accord. Q7 et Q8 : paliers et instants de commutation présentés comme lus sur les figures et confirmés par la simulation, réexécutée. Les 28 encadrés du jury du guidé contrôlés un par un dans le rapport ; ajouts du rédacteur sortis des encadrés I.A3, Q10 et Q15. Figure de Q8 : légende déplacée hors du tracé."
     }
   ]
 }
