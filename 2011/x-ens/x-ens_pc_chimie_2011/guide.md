@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 Composition de chimie commune à l'École polytechnique, aux Écoles normales supérieures et à l'ESPCI (code XEULC), filière PC, session 2011. **Durée : 4 heures, calculatrices interdites.** Le sujet compte 16 pages et 84 questions, réparties en deux problèmes indépendants de poids comparable.
@@ -729,7 +731,7 @@ Un acide carboxylique a un $\mathrm{p}K_A$ voisin de 4 à 5. Ici, le carbone en 
 
 $$\boxed{\mathrm{p}K_A(\mathbf{1}/\text{carboxylate}) \approx 2 \text{ à } 3 \qquad K_A \sim 10^{-3} \text{ à } 10^{-2}}$$
 
-Pour la 1-phényléthylamine, le couple à considérer est ion ammonium/amine, comme pour toute amine primaire :
+Pour la 1-phényléthylamine, qui intervient ici comme base, le couple à considérer est ion ammonium/amine, comme pour toute amine primaire (son acidité propre, couple $\mathrm{RNH_2/RNH^-}$ de $\mathrm{p}K_A$ voisin de 35, ne joue aucun rôle dans la suite) :
 
 $$\boxed{\mathrm{p}K_A(\mathrm{RNH_3^+/RNH_2}) \approx 9 \text{ à } 10 \qquad K_A \sim 10^{-10}}$$
 
@@ -870,6 +872,10 @@ Il existe donc une chaise où **les trois substituants sont équatoriaux**, l'au
    C3, C4, C6 : un H axial et un H équatorial chacun
 ```
 
+![Figure 2 — Chaise la plus stable du (−)-menthol, de descripteurs (1R,2S,5R) : OH, isopropyle et méthyle en position équatoriale, H1, H2 et H5 en position axiale](figures/chaise-menthol.svg)
+
+Sur ce dessin, les liaisons en trait épais sont en avant ; les atomes d'hydrogène de C3, C4 et C6 ne sont pas représentés.
+
 ### Question P2.1.2.5.b
 
 > [!INDICATION]
@@ -888,7 +894,7 @@ Les positions se fixent avec les descripteurs.
 - Dans **8**, le carbone de l'acide est R, avec l'ordre $\mathrm{OCH_3} > \mathrm{CF_3} > \mathrm{C1} > \mathrm{Ph}$ (C1 garde le rang de $\mathrm{CO_2}$) : **$\mathrm{OCH_3}$ est à gauche et le phényle à droite**, du côté de C6.
 - Dans **9**, le carbone de l'acide est S : $\mathrm{OCH_3}$ et phényle sont échangés. **Le phényle est à gauche**, du côté de C2 et donc de l'isopropyle, et $\mathrm{OCH_3}$ à droite.
 
-![Figure 2 — Projections de Newman des esters 8 et 9 dans la représentation simplifiée, C1 du menthol devant ; le phényle est du côté de C6 dans 8 et du côté de C2 dans 9](figures/newman-esters-de-mosher.svg)
+![Figure 3 — Projections de Newman des esters 8 et 9 dans la représentation simplifiée, C1 du menthol devant ; le phényle est du côté de C6 dans 8 et du côté de C2 dans 9](figures/newman-esters-de-mosher.svg)
 
 La représentation simplifiée n'est pas une vraie liaison : les deux atomes sont séparés par le groupe $\mathrm{CO_2}$, ce qui explique que $\mathrm{CF_3}$ et H1 puissent être du même côté sans gêne stérique.
 
@@ -1015,7 +1021,7 @@ La liaison $\mathrm{C{-}O}$ n'est pas rompue et le carbone stéréogène n'est p
 
 #### Solution
 
-L'hydrure de diisobutylaluminium réduit l'ester ; les données montrent que la réduction s'arrête au stade de l'**aldéhyde** : bande intense à $1740\ \mathrm{cm^{-1}}$ (vibration de valence $\mathrm{C{=}O}$ d'un aldéhyde, d'après la table du sujet) et signal vers $10\ \mathrm{ppm}$ intégrant pour un proton (proton aldéhydique $\mathrm{{-}CHO}$, domaine 9 à 11 ppm de la table). L'absence de bande large vers $3200$ à $3600\ \mathrm{cm^{-1}}$ exclut l'alcool primaire.
+L'hydrure de diisobutylaluminium réduit l'ester ; les données montrent que la réduction s'arrête au stade de l'**aldéhyde** : bande intense à $1740\ \mathrm{cm^{-1}}$ (vibration de valence $\mathrm{C{=}O}$ d'un aldéhyde, d'après la table du sujet) et signal vers $10\ \mathrm{ppm}$ intégrant pour un proton (proton aldéhydique $\mathrm{{-}CHO}$, domaine 9 à 11 ppm de la table). Une réduction poussée jusqu'à l'alcool primaire ne donnerait ni cette bande $\mathrm{C{=}O}$ ni ce signal vers $10\ \mathrm{ppm}$ : elle est donc exclue.
 
 $$\boxed{\mathbf{14} : \ \mathrm{TsO{-}CH_2{-}CH(CH_3){-}CHO}}$$
 
@@ -1158,7 +1164,7 @@ Le cycle à six atomes de l'état de transition comprend, dans l'ordre : le bore
 
 Le carbone de l'aldéhyde porte un atome d'hydrogène et le groupe $\mathrm{R = C(CH_3){=}CH_2}$. On place **R en position équatoriale et H en position axiale**. En position axiale, le groupe R, volumineux, subirait une interaction 1,3-diaxiale forte avec le groupe butyle axial du bore ; en position équatoriale, il pointe vers l'extérieur du cycle, sans gêne. L'état de transition correspondant est de plus basse énergie.
 
-La chaise ainsi dessinée est celle des deux schémas de la figure 3, donnée à la question suivante.
+La chaise ainsi dessinée est celle des deux schémas de la figure 4, donnée à la question suivante.
 
 ### Question P2.2.2.3.b
 
@@ -1175,7 +1181,7 @@ Le carbone nucléophile de l'énolate porte H et $\mathrm{CH_3}$. La double liai
 - **Énolate Z** ($\mathrm{CH_3}$ du côté de l'oxygène) : $\mathrm{CH_3}$ est **axial**, H équatorial ; R reste équatorial. $\mathrm{CH_3}$ et R, portés par deux carbones voisins, l'un axial et l'autre équatorial, sont en *cis* sur le cycle.
 - **Énolate E** ($\mathrm{CH_3}$ du côté de $\mathrm{X_p}$) : $\mathrm{CH_3}$ est **équatorial**, H axial ; R équatorial. $\mathrm{CH_3}$ et R, tous deux équatoriaux sur deux carbones voisins, sont en *trans* sur le cycle.
 
-![Figure 3 — États de transition cycliques en conformation chaise pour l'énolate Z, qui conduit à l'aldol syn, et pour l'énolate E, qui conduit à l'aldol anti](figures/etats-de-transition-aldolisation.svg)
+![Figure 4 — États de transition cycliques en conformation chaise pour l'énolate Z, qui conduit à l'aldol syn, et pour l'énolate E, qui conduit à l'aldol anti](figures/etats-de-transition-aldolisation.svg)
 
 **Produits.** Dans le produit, la chaîne principale est $\mathrm{X_pCO{-}CH(CH_3){-}CH(OH){-}R}$ : l'oxygène de l'aldéhyde devient le groupe $\mathrm{OH}$, alors que R appartient à la chaîne. Dans la chaise, le carbone lié à $\mathrm{X_p}$ et le groupe R équatorial sont antipériplanaires autour de la liaison formée : la chaîne est déjà en zigzag.
 
@@ -1246,7 +1252,7 @@ avec $\mathrm{TBS} = \mathrm{Si(CH_3)_2C(CH_3)_3}$.
 1. **diisopropylamidure de lithium (LDA), dans le THF anhydre, à $-78\ ^\circ\mathrm{C}$**, sous atmosphère inerte : la base, forte et encombrée, arrache rapidement et irréversiblement un hydrogène du méthyle, le plus accessible, plutôt que l'hydrogène porté par le carbone qui porte le groupe OMOM ;
 2. **addition de $\mathrm{TBSCl}$** à l'énolate de lithium : l'oxygène, site dur, attaque le silicium (la liaison $\mathrm{Si{-}O}$ est très forte) et l'ion chlorure est expulsé.
 
-La basse température et l'absence d'excès de cétone évitent l'équilibration vers l'énolate le plus substitué.
+La basse température et l'absence d'excès de cétone évitent l'équilibration vers l'énolate le plus substitué. En variante, on peut employer le triflate $\mathrm{TBSOTf}$ en présence de triéthylamine, plus réactif que $\mathrm{TBSCl}$ vis-à-vis de l'oxygène de l'énolate.
 
 ## Deuxième problème · 2.3 Préparation du synthon C
 

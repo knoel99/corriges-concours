@@ -11,7 +11,7 @@
   "sources": {
     "sujet": "https://www.ens.psl.eu/IMG/file/concours/2011/PC/pc2011_sujet_chimie.pdf",
     "sujet_sha256": "7bc436f60bcd6be7b9e0c3b54a74edb549f850b2903c51f801c3781458e8fb06",
-    "rapport": null,
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2011/rap_ecrit_chimie_xeulc_pc2011.pdf",
     "rapport_sha256": null
   },
   "couverture": {
@@ -102,13 +102,18 @@
       "P2.2.4.3",
       "P2.2.4.4"
     ],
-    "precision": "Les 16 pages du sujet ont été lues (texte et images). Les 84 questions sont traitées : 41 pour le premier problème (repères P1) et 43 pour le second (repères P2). Le rapport du jury, publié sur le site des banques d'écoles, n'a pas pu être téléchargé (connexion refusée, y compris par l'archive du Web) : il n'a donc pas été lu et aucune attente du jury n'est citée. Les lectures graphiques (figures 4 à 6 du sujet) sont arrondies. Les structures sont données en formules semi-développées et en nomenclature, les représentations spatiales étant décrites en texte ou schématisées."
+    "precision": "Les 16 pages du sujet ont été lues (texte et images). Les 84 questions sont traitées : 41 pour le premier problème (repères P1) et 43 pour le second (repères P2). Le rapport du jury n'a pas pu être lu : son adresse est connue (champ sources.rapport), mais le téléchargement a échoué à chaque tentative (hôte banques-ecoles.fr inaccessible, y compris par l'archive du Web), d'où l'absence d'empreinte. Aucune attente du jury n'est donc citée et le corrigé guidé ne contient aucun encadré du jury. Les lectures graphiques (figures 4 à 6 du sujet) sont arrondies. Les structures sont données en formules semi-développées et en nomenclature ; la chaise du (−)-menthol, les projections de Newman et les états de transition sont dessinés, les autres représentations spatiales sont décrites en texte."
   },
   "figures": [
     {
       "fichier": "figures/diagramme-binaire-sicl4-ticl4.svg",
       "question": "P1.1.1",
       "legende": "Diagramme isobare liquide-vapeur du mélange SiCl₄/TiCl₄ tracé avec les points du tableau 1 du sujet, et construction pour le mélange de fraction 0,15 en SiCl₄."
+    },
+    {
+      "fichier": "figures/chaise-menthol.svg",
+      "question": "P2.1.2.5.a",
+      "legende": "Chaise la plus stable du (−)-menthol, de descripteurs (1R,2S,5R) : OH, isopropyle et méthyle en position équatoriale, H1, H2 et H5 en position axiale."
     },
     {
       "fichier": "figures/newman-esters-de-mosher.svg",
@@ -134,6 +139,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Rédaction originale des deux éditions pour les 84 questions du sujet, sans le rapport du jury (inaccessible). Applications numériques refaites, descripteurs stéréochimiques contrôlés par calcul, trois figures originales."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application de la relecture indépendante, chaque point revérifié sur le sujet, dans les deux éditions : P2.2.1.2 (argument d'exclusion de l'alcool fondé sur les seules données de l'énoncé), P2.1.1.4 (couple ammonium/amine précisé), P2.2.2.6 (variante TBSOTf/triéthylamine), P2.1.2.5.a (figure ajoutée : chaise du menthol, descripteurs contrôlés par calcul sur le modèle projeté ; figures renumérotées de 1 à 4). Figure du diagramme binaire (P1.1.1) : deux étiquettes déplacées. Métadonnées : adresse du rapport du jury renseignée, rapport non lu (téléchargement impossible). Le doute sur P1.1.15 n'a pas été appliqué. Aucun encadré du jury dans le guidé."
     }
   ]
 }
