@@ -1,0 +1,72 @@
+{
+  "slug": "banque-pt_pt_physique-c---chimie_2007",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique C - Chimie",
+    "annee": 2007
+  },
+  "questions": 21,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2007/phys_c_2007.pdf",
+    "sujet_sha256": "3604505bc84c1ffd52d73c1ca1003a959a815e5c3c8faf4b8a97799044c9938f",
+    "precision": "L'adresse est celle du fascicule commun aux deux problèmes de Physique C (chimie et thermodynamique) : un seul PDF de 12 pages, phys_c_2007.pdf, SHA-256 3604505bc84c1ffd52d73c1ca1003a959a815e5c3c8faf4b8a97799044c9938f, sans archive ni fichier annexe. Garde commune « Epreuve de Physique C » en p. 1 ; le problème de chimie, identifié par son titre « CHIMIE », occupe les pages 2 à 6 (énoncé p. 2 à 5, avec l'allure de la courbe conductimétrique en p. 4 ; données numériques en p. 6) ; le problème de thermodynamique commence p. 7. Il n'y a ni document-réponse ni feuillet à rendre pour la chimie. L'empreinte et la répartition des pages (2–6) sont identiques à celles de campagnes/x-ens/bilans/sources-epreuves-banque-pt-2004-2007.tsv et de campagnes/x-ens/bilans/feuillets-physique-c-banque-pt-2005-2007.tsv. Le rapport du jury est commun aux deux problèmes de Physique C (4 pages, chimie p. 1 et 2) ; son empreinte est aussi celle du premier de ces fichiers. Aucun fichier campagnes/x-ens/bilans/constat-*.tsv ne porte sur cette épreuve.",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2007/rapport_phys_c_ecrit_2007.pdf",
+    "rapport_sha256": "1c563e54b564b1b5c1d997db0a48c13920a2d25063357739b182a01ac9442a8d"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I-1-a",
+      "I-1-b",
+      "I-2-a",
+      "I-2-b",
+      "I-2-c",
+      "I-2-d",
+      "II-1",
+      "II-2-a",
+      "II-2-b",
+      "II-2-c",
+      "II-3-a",
+      "II-3-b",
+      "II-3-c",
+      "II-3-d",
+      "III-1",
+      "III-2-a",
+      "III-2-b",
+      "III-3",
+      "III-4",
+      "III-5",
+      "III-6"
+    ],
+    "precision": "Énoncé lu en image : garde commune p. 1 et problème de chimie p. 2 à 6 du PDF de 12 pages (données numériques p. 6) ; les pages du problème de thermodynamique (p. 7 à 12) ne sont pas traitées ici. 21 questions, toutes traitées, sous les repères de l'énoncé (I-1-a à III-6). Rapport du jury de Physique C de 4 pages, chimie p. 1 et 2. Question I-1-b : l'énoncé ne donne pas les masses isotopiques ; la masse molaire de chaque isotope est assimilée à son nombre de masse. Question III-4 : le produit ionique de l'eau ne figure pas dans les données ; il est pris égal à 10^-14, choix signalé à sa place. La courbe conductimétrique de l'énoncé n'est qu'une allure sans graduation en ordonnée : seuls les volumes équivalents donnés dans le texte (6,0 mL et 14,0 mL) sont utilisés ; la figure 2 la reproduit avec des pentes dans le rapport des conductivités."
+  },
+  "figures": [
+    {
+      "fichier": "figures/maille-cfc-nickel.svg",
+      "question": "I-2-a",
+      "legende": "Maille cubique à faces centrées du nickel : atomes aux sommets et aux centres des faces, sites octaédriques au centre et aux milieux des arêtes, contact le long de la diagonale d'une face."
+    },
+    {
+      "fichier": "figures/courbe-conductimetrique-nickel.svg",
+      "question": "III-1",
+      "legende": "Allure de la conductance en fonction du volume d'acide éthanoïque versé, avec les deux volumes équivalents et l'interprétation des trois domaines."
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des corrigés brut et guidé des 21 questions du problème de chimie et de deux figures, à partir de l'énoncé et du rapport du jury ; applications numériques recalculées, encadrés JURY relus contre le rapport."
+    }
+  ]
+}
