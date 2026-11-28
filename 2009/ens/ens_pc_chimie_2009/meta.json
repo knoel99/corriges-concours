@@ -135,6 +135,11 @@
       "legende": "États de transition chaise de l'aldolisation avec un énolate Z : R1 équatorial ou R1 axial ; les deux autres sont leurs images dans un miroir."
     },
     {
+      "fichier": "figures/etat-de-transition-enolate-e.svg",
+      "question": "2.A.I.3.c.iv",
+      "legende": "État de transition chaise le plus stable de l'aldolisation avec l'énolate E : X axial, R2 équatorial, R1 équatorial."
+    },
+    {
       "fichier": "figures/conformeres-et-attaques-c11-c12.svg",
       "question": "2.B.I.3",
       "legende": "Énergie des conformères en fonction de l'angle dièdre entre C=O et C–OR, conformères I et II en projection de Newman et trajectoires d'attaque à l'opposé de OR."
@@ -153,6 +158,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Rédaction des deux éditions et de trois figures à partir des 25 pages du sujet et du rapport du jury. Applications numériques refaites par le calcul, formules brutes et stéréodescripteurs (composés 0, 4, 5, 6, 7, C, 16) contrôlés par un calcul indépendant à partir des dessins de l'énoncé."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Corrections issues d'une relecture indépendante, vérifiées sur le sujet, dans les deux éditions. 2.A.II.2.c : séquence refaite avec les seuls réactifs du programme (LiAlH4, PCC, déprotection du THP en dernier), limite d'acétalisation indiquée, DIBAL-H et MnO2 signalés hors programme. 2.C : chlorure d'acyle ou anhydride avec pyridine, hydrure de sodium et borohydrure de sodium en réponse principale ; DCC/DMAP, éther-couronne et chlorure de cérium signalés hors programme. 2.B.II.4.b : taux de protonation du carboxylate recalculé (moins de 1 %). 2.A.I.1.b : justification de symétrie corrigée pour le carbone de l'orthoester. 1.A.II.1.e : grandeur citée en kJ/mol nommée T·ΔrS°. 2.A.I.3.c.iv : description de la chaise et nouvelle figure 3 (état de transition avec l'énolate E), l'ancienne figure 3 devenant la figure 4. Guidé : les huit encadrés du jury contrôlés sur le rapport, six resserrés sur ce que dit le rapport, leurs conseils de rédaction déplacés en encadrés de piège."
     }
   ]
 }

@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 Épreuve de chimie commune aux ENS de Paris, Lyon et Cachan, filière PC, session 2009 : **5 heures, sans calculatrice**. Le sujet, intitulé « Quelques aspects de la chimie médicale », comporte deux problèmes indépendants et de poids comparable.
@@ -14,7 +16,7 @@
 Le sujet alterne questions proches du cours (configurations électroniques, lois de vitesse, mécanismes classiques, spectroscopie) et questions d'analyse de données ou de modèles fournis. Les questions de cours, à ne pas laisser passer, se trouvent au début de chaque sous-partie ; les questions qualitatives (interprétation des tableaux thermodynamiques, des paramètres d'activation, de la stéréosélectivité) font la différence. En cinq heures, il est raisonnable de consacrer environ deux heures et quart à chaque problème et de garder du temps pour la relecture et le soin des schémas.
 
 > [!JURY]
-> Le rapport du jury (525 candidats, moyenne 8,33, écart type 3,45) indique que les parties classiques assuraient environ 7,5 sur 20 et que les meilleures notes sont allées aux copies qui construisent leurs réponses en trois temps : observation des données, analyse et déduction, conclusion. Il reproche les paraphrases des données, les démonstrations arrangées pour retrouver un résultat donné, les configurations absolues non justifiées, les mécanismes d'acétalisation non renversables et la méconnaissance des conditions opératoires. Des points de présentation étaient attribués ; en cas de doute de lecture, l'arbitrage a été rendu contre le candidat.
+> Le rapport du jury (525 candidats, moyenne 8,33, écart type 3,45) indique que les parties classiques assuraient environ 7,5 sur 20 et que les meilleures notes sont allées aux copies qui construisent leurs réponses en trois temps : observation des données, analyse et déduction, conclusion. Il reproche les paraphrases des données, les « tours de passe-passe » pour retrouver un résultat donné, les configurations absolues non justifiées, les mécanismes d'acétalisation non renversables et la méconnaissance des conditions opératoires. Des points de présentation étaient attribués ; en cas de doute de lecture, l'arbitrage a été rendu contre le candidat.
 
 Documents officiels : [sujet](https://www.ens.psl.eu/IMG/file/concours/2009/PC/2009_sujet_pc_chimie.pdf) et [rapport du jury](https://www.ens.psl.eu/IMG/file/concours/2009/PC/pc2009_ecri_chimie_ulc.pdf).
 
@@ -82,7 +84,10 @@ Analyse bloc par bloc : une sous-couche de nombre quantique secondaire $\ell$ co
 Le spin maximal s'obtient donc dans le bloc f, pour une configuration $f^7$. Parmi les ions $4f^7$ ($\mathrm{Eu^{2+}}$, $\mathrm{Gd^{3+}}$, $\mathrm{Tb^{4+}}$), seul $\mathrm{Gd^{3+}}$ est au degré d'oxydation stable de son élément ; les ions $5f^7$ des actinides sont radioactifs. De plus, les orbitales 4f sont internes : elles participent peu aux liaisons, et la complexation ne provoque pas d'appariement des spins (contrairement au bloc d, où un champ fort de ligands peut donner un complexe bas spin). **Le gadolinium(III) est le meilleur choix.**
 
 > [!JURY]
-> Le rapport signale une confusion fréquente entre le spin et le nombre quantique de spin : écrire que « le spin vaut $\pm 7/2$ » est faux. Il faut donner $S=7/2$, et réserver les valeurs signées à la projection $M_S$.
+> Le rapport signale que la notion de spin reste floue, avec une confusion fréquente entre le spin et le nombre quantique de spin : beaucoup de candidats écrivent que le spin vaut « ± 7/2 ».
+
+> [!PIEGE]
+> Écrire $\pm 7/2$ pour le spin total : il faut donner $S=7/2$, et réserver les valeurs signées à la projection $M_S$.
 
 ### Question 1.A.II.1.a — Équations-bilans des réactions 5 et 6
 
@@ -119,7 +124,10 @@ Dans les trois cas le complexe chélaté est plus stable ($\Delta(\Delta_rG^\cir
 **L'effet chélate est principalement d'origine entropique.**
 
 > [!JURY]
-> Le rapport regrette les paraphrases du tableau sans analyse. La réponse attendue se construit en trois temps : choisir les couples comparables, calculer les écarts, conclure sur le terme dominant.
+> Le rapport regrette, dans cette partie qualitative, les paraphrases des données numériques sans analyse ni raisonnement construit ; il loue les copies qui procèdent en trois temps : observation des informations, analyse et déduction, puis conclusion.
+
+> [!PIEGE]
+> Recopier le tableau ligne par ligne. Ici, les trois temps sont : choisir les couples de réactions comparables, calculer les écarts, conclure sur le terme dominant.
 
 ### Question 1.A.II.1.c — Interprétation moléculaire
 
@@ -161,7 +169,7 @@ Réaction 6 : on gagne trois particules (4 donnent 7), mais trois ligands sont i
 - un effet statistique : le premier ligand dispose de douze arêtes de l'octaèdre pour se fixer, le troisième d'une seule, alors que le nombre de façons de se dissocier augmente ;
 - un effet de rigidité : le complexe tris-chélaté est encombré et rigide, ses liaisons plus fortes vibrent moins librement (compensation entre enthalpie et entropie).
 
-L'entropie de la réaction 6 est ainsi négative, mais beaucoup moins que celle de la réaction 5 ($-48{,}3\ \mathrm{kJ\,mol^{-1}}$), qui immobilise six molécules d'ammoniac : l'avantage entropique du chélate, mis en évidence en A.II.1.b, croît bien avec le nombre de cycles formés ($+8{,}0$, $+19{,}6$, $+32{,}3\ \mathrm{kJ\,mol^{-1}}$).
+Le terme $T\Delta_rS^\circ$ de la réaction 6 est ainsi négatif, mais beaucoup moins que celui de la réaction 5 ($-48{,}3\ \mathrm{kJ\,mol^{-1}}$), qui immobilise six molécules d'ammoniac : l'avantage entropique du chélate, mis en évidence en A.II.1.b, croît bien avec le nombre de cycles formés ($+8{,}0$, $+19{,}6$, $+32{,}3\ \mathrm{kJ\,mol^{-1}}$).
 
 > [!PIEGE]
 > Ne pas conclure du signe négatif de $\Delta_rS^\circ(6)$ que l'effet chélate « n'est pas entropique » : l'effet chélate est une comparaison entre deux réactions de même sphère de coordination, pas le signe d'une seule.
@@ -457,7 +465,10 @@ $$\boxed{[\mathrm{Gd^{3+}}]^2_{\text{relargué}} = \frac{[\mathrm{Gd(Z)^{2-}}]}{
 Le produit $\prod_{j=0}^{i-1}K_{5-j}$ vaut bien $K_5$ pour $i=1$, $K_5K_4$ pour $i=2$, et ainsi de suite jusqu'à $K_5K_4K_3K_2K_1$.
 
 > [!JURY]
-> Le rapport indique que les démonstrations « arrangées » pour retomber sur la formule de l'énoncé ont été lourdement sanctionnées. Le point à écrire explicitement est la conservation de la matière, qui justifie le carré.
+> Le rapport indique que, dans la partie de chimie des solutions, les « tours de passe-passe » employés pour arriver au résultat proposé ont été sanctionnés au prix fort.
+
+> [!PIEGE]
+> Retomber sur la formule de l'énoncé sans la justifier : le point à écrire explicitement est la conservation de la matière, qui justifie le carré.
 
 ### Question 1.B.II.1.c — Constante de stabilité apparente
 
@@ -745,7 +756,10 @@ Conclusion : **l'échange suit le mécanisme dissociatif**, l'étape cinétiquem
 Vérification de cohérence avec la formule monomoléculaire de C.7 : $k = \dfrac{k_BT}{h}\exp\left(\dfrac{\Delta_rS^{0\ddagger}}{R}\right)\exp\left(-\dfrac{\Delta_rH^{0\ddagger}}{RT}\right)$ donne, à 25 °C, $3{,}3\times 10^{6}\ \mathrm{s^{-1}}$ pour le complexe de DTPA et $4{,}2\times 10^{6}\ \mathrm{s^{-1}}$ pour celui de DOTA, en accord avec la dernière colonne du tableau (calcul fait à la machine, hors des conditions de l'épreuve).
 
 > [!JURY]
-> D'après le rapport, les candidats ont su mener les calculs de cette partie mais presque jamais les interprétations chimiques. La démarche attendue est en trois temps : observation des signes, analyse en termes de liaisons et de désordre, conclusion sur le mécanisme.
+> D'après le rapport, cette partie a été peu traitée : les candidats qui l'ont abordée ont bien répondu aux questions mathématiques, mais presque pas aux questions qualitatives demandant une interprétation chimique.
+
+> [!PIEGE]
+> S'arrêter au calcul. L'interprétation se construit ici en trois temps : observation des signes, analyse en termes de liaisons et de désordre, conclusion sur le mécanisme.
 
 ### Question 1.C.10 — Signe de l'enthalpie d'activation
 
@@ -861,7 +875,7 @@ Chiralité : la molécule possède un axe de symétrie d'ordre 2 (dans le plan d
 
 $$\mathrm{R{-}CO_2Et \;\xrightarrow{\;1)\ LiAlH_4\quad 2)\ H_2O\;}\; R{-}CH_2OH + EtOH}$$
 
-2 est le 2-éthoxy-4,5-bis(hydroxyméthyl)-1,3-dioxolane, de géométrie trans inchangée : les carbones asymétriques ne sont pas touchés (leur descripteur devient S, uniquement parce que l'ordre de priorité des substituants change). Le carbone de l'orthoester n'est pas asymétrique : l'axe d'ordre 2 de la molécule rend ses deux faces équivalentes.
+2 est le 2-éthoxy-4,5-bis(hydroxyméthyl)-1,3-dioxolane, de géométrie trans inchangée : les carbones asymétriques ne sont pas touchés (leur descripteur devient S, uniquement parce que l'ordre de priorité des substituants change). Le carbone de l'orthoester n'est pas un centre stéréogène : le reste du cycle (carbones 4 et 5 de même descripteur, substituants trans) possède un axe d'ordre 2 qui passe par ce carbone et échange ses deux positions libres ; placer le groupe éthoxy sur l'une ou sur l'autre donne la même molécule.
 
 **THF anhydre.** L'ion hydrure réagit violemment avec l'eau et tout solvant protique ($\mathrm{H^- + H_2O\to H_2 + HO^-}$) : le réactif serait détruit, avec un dégagement de dihydrogène inflammable. Le THF est aprotique, inerte vis-à-vis de l'hydrure, et sa basicité de Lewis solvate le cation lithium, ce qui dissout le réactif.
 
@@ -975,7 +989,10 @@ Bilan : $\text{triol} + \mathrm{(CH_3)_2CO} \rightleftharpoons \text{8} + \mathr
 La réaction étant sous contrôle thermodynamique, c'est l'acétal le plus stable qui se forme : avec une cétone, le dioxolane l'emporte (dans un dioxane, l'un des deux méthyles serait en position axiale).
 
 > [!JURY]
-> Le rapport note que ce mécanisme a rarement été bien traité, beaucoup de candidats oubliant de l'écrire renversable : des doubles flèches à chaque étape sont attendues.
+> Le rapport note que ce mécanisme a rarement été bien traité, beaucoup de candidats oubliant de l'écrire renversable.
+
+> [!PIEGE]
+> Écrire des flèches simples : chaque étape de l'acétalisation est un équilibre et s'écrit avec une double flèche.
 
 ### Question 2.A.I.2.c.i — Structure de 9 et nature de la réaction
 
@@ -1205,7 +1222,10 @@ Dans le modèle (groupes X, $\mathrm{R_1}$ et $\mathrm{R_2}$ achiraux), $\mathrm
 À $-78\ \mathrm{°C}$, l'aldolisation n'est pas renversable : la réaction est sous **contrôle cinétique**. Les proportions des produits sont fixées par les vitesses de formation, donc par les énergies relatives des états de transition : le produit majoritaire est celui qui passe par l'état de transition le plus bas. Ce sont $\mathrm{ET_1}$ et $\mathrm{ET_1'}$ ($\mathrm{R_1}$ équatorial), qui conduisent au couple d'énantiomères Syn. La basse température accentue la sélectivité, le rapport des vitesses valant $\exp(\Delta\Delta G^{\ddagger}/RT)$.
 
 > [!JURY]
-> Le rapport constate que la distinction entre contrôle cinétique et contrôle thermodynamique est globalement bien maîtrisée : il faut la nommer explicitement et la relier aux états de transition.
+> Le rapport constate que la notion de contrôle cinétique et de contrôle thermodynamique est globalement bien maîtrisée par les candidats.
+
+> [!PIEGE]
+> Invoquer la stabilité des produits : sous contrôle cinétique, il faut nommer ce contrôle et comparer les états de transition.
 
 ### Question 2.A.I.3.b.v — Proportion des deux énantiomères Syn
 
@@ -1269,7 +1289,9 @@ La propriété négligée est la **chiralité** des groupes : X (l'oxazolidinone
 
 #### Solution
 
-Avec l'énolate E, le méthyle ($\mathrm{R_2}$) et l'hydrogène échangent leurs positions sur le carbone nucléophile : dans la chaise, $\mathrm{R_2}$ devient équatorial et H axial. L'état de transition le plus stable garde le reste de l'aldéhyde 9 en position équatoriale (pour éviter les interactions 1,3-diaxiales avec l'oxazolidinone et le butyle), et l'attaque se fait sur la même face de l'énolate, celle que l'oxazolidinone laisse libre. On le dessine donc comme l'état de transition de gauche de la figure 2, en échangeant $\mathrm{R_2}$ et H sur le sommet correspondant.
+Avec l'énolate E, le méthyle ($\mathrm{R_2}$) et l'hydrogène échangent leurs positions sur le carbone nucléophile : dans la chaise, $\mathrm{R_2}$ devient équatorial et H axial. L'état de transition le plus stable garde le reste de l'aldéhyde 9 en position équatoriale (pour éviter les interactions 1,3-diaxiales avec l'oxazolidinone et le butyle), et l'attaque se fait sur la même face de l'énolate, celle que l'oxazolidinone laisse libre. On le dessine donc comme l'état de transition de gauche de la figure 2, en échangeant $\mathrm{R_2}$ et H sur le sommet correspondant : X axial sur le carbone de l'énolate lié à l'oxygène ; sur le carbone nucléophile, H axial et le méthyle équatorial ; sur le carbone de l'aldéhyde, H axial et le reste de 9 équatorial ; un butyle axial et un butyle équatorial sur le bore.
+
+![Figure 3 — État de transition chaise le plus stable de l'aldolisation avec l'énolate E : X axial, R2 équatorial, R1 équatorial](figures/etat-de-transition-enolate-e.svg)
 
 Le carbone de l'alcool se forme avec la même configuration que dans 10, mais le carbone en $\alpha$ du carbonyle a la configuration inverse : on aurait obtenu l'aldol **Anti**, épimère de 10 sur le carbone porteur du méthyle en $\alpha$ du carbonyle (groupe hydroxyle et méthyle de part et d'autre du plan de la chaîne en zigzag).
 
@@ -1362,14 +1384,16 @@ où R est la chaîne de C : $\mathrm{R = CH_3{-}CH(OTHP){-}CH(CH_3){-}CH(OTBS){-
 
 A possède six doubles liaisons conjuguées terminées par un aldéhyde, un groupe hydroxyle libre à la place du groupe $\mathrm{OTHP}$, et conserve le groupe $\mathrm{OTBS}$. À partir de 13 (trois doubles liaisons, ester), on propose :
 
-1. **Réduction de l'ester en alcool allylique** : hydrure de diisobutylaluminium (DIBAL-H, deux équivalents) à basse température, puis hydrolyse (à défaut, $\mathrm{LiAlH_4}$ dans l'éther anhydre). On obtient $\mathrm{R{-}(CH{=}CH)_3{-}CH_2OH}$.
-2. **Oxydation ménagée en aldéhyde** : dioxyde de manganèse $\mathrm{MnO_2}$ (sélectif des alcools allyliques) ou PCC en milieu anhydre. On obtient $\mathrm{R{-}(CH{=}CH)_3{-}CHO}$.
+1. **Réduction de l'ester en alcool allylique** : $\mathrm{LiAlH_4}$ dans l'éther ou le THF anhydre, à basse température, puis hydrolyse (réactif de l'annexe A pour le passage de 1 à 2). On obtient $\mathrm{R{-}(CH{=}CH)_3{-}CH_2OH}$.
+2. **Oxydation ménagée en aldéhyde** : PCC dans le dichlorométhane anhydre (conditions du passage de 8 à 9), qui s'arrête à l'aldéhyde. On obtient $\mathrm{R{-}(CH{=}CH)_3{-}CHO}$.
 3. **Seconde réaction de Horner-Wadsworth-Emmons** avec un deuxième équivalent de D déprotoné par le LDA : $\mathrm{R{-}(CH{=}CH)_6{-}CO_2Et}$, tout E.
-4. **Déprotection du groupe THP** : méthanol, acide en quantité catalytique (précision de l'énoncé). Le groupe TBS, plus robuste dans ces conditions douces, est conservé. On obtient l'alcool secondaire libre.
-5. **Réduction de l'ester** : DIBAL-H (un équivalent supplémentaire, consommé par l'alcool libre), puis hydrolyse : alcool allylique terminal.
-6. **Oxydation chimiosélective** de l'alcool allylique par $\mathrm{MnO_2}$, qui n'oxyde pas l'alcool secondaire non allylique : aldéhyde hexaénique.
+4. **Réduction de l'ester** : $\mathrm{LiAlH_4}$ dans les mêmes conditions, puis hydrolyse : alcool allylique terminal.
+5. **Oxydation ménagée** de cet alcool par le PCC en milieu anhydre : aldéhyde hexaénique. L'alcool secondaire est encore protégé par le groupe THP, il n'est donc pas oxydé.
+6. **Déprotection du groupe THP** : méthanol, acide en quantité catalytique (précision de l'énoncé). Le groupe TBS, plus robuste dans ces conditions douces, est conservé. On obtient l'alcool secondaire libre.
 
-On obtient A. L'ordre choisi évite deux écueils : traiter un aldéhyde par le méthanol en milieu acide (acétalisation), et oxyder l'alcool secondaire libre (d'où le choix de $\mathrm{MnO_2}$ à la dernière étape, et non du PCC).
+On obtient A. Les groupes $\mathrm{OTBS}$ et $\mathrm{OTHP}$ résistent aux hydrures, au PCC et aux bases. **Limite de cette séquence** : à l'étape 6, l'aldéhyde est en présence de méthanol et d'un acide, il peut donc s'acétaliser en partie. Cette réaction est renversable et l'aldéhyde, très conjugué, y est peu sensible ; une hydrolyse douce en fin de traitement le régénère.
+
+**Variantes hors programme.** L'ordre qui évite ce risque (déprotéger après l'étape 3, réduire l'ester, puis oxyder en dernier) exige d'oxyder l'alcool allylique sans toucher l'alcool secondaire libre : aucun réactif du programme de PC ne le permet, le PCC oxyderait les deux alcools. Le réactif usuel de cette oxydation sélective est le dioxyde de manganèse $\mathrm{MnO_2}$, qui est hors programme. De même, l'hydrure de diisobutylaluminium (DIBAL-H), couramment employé pour réduire un ester conjugué en alcool allylique, est hors programme : il n'est pas nécessaire ici, $\mathrm{LiAlH_4}$ suffit.
 
 ## Problème 2, partie B — Synthèse du synthon B
 
@@ -1416,7 +1440,7 @@ La courbe est périodique de période 180°, avec deux maxima égaux et deux min
 - conformère I ($\theta = 90°$) : $\mathrm{R_2}$ est du côté de O, H du côté de $\mathrm{R_1}$ ;
 - conformère II ($\theta = 270°$) : $\mathrm{R_2}$ est du côté de $\mathrm{R_1}$, H du côté de O.
 
-![Figure 3 — Énergie des conformères en fonction de l'angle dièdre entre C=O et C–OR, conformères I et II en projection de Newman et trajectoires d'attaque à l'opposé de OR](figures/conformeres-et-attaques-c11-c12.svg)
+![Figure 4 — Énergie des conformères en fonction de l'angle dièdre entre C=O et C–OR, conformères I et II en projection de Newman et trajectoires d'attaque à l'opposé de OR](figures/conformeres-et-attaques-c11-c12.svg)
 
 ### Question 2.B.I.4 — Angle d'attaque de 105°
 
@@ -1444,7 +1468,7 @@ Pour chaque conformère, deux faces sont possibles, soit quatre attaques :
 - conformère II, face opposée à $\mathrm{OR}$ : la trajectoire passe près de $\mathrm{R_2}$ ;
 - conformères I et II, face de $\mathrm{OR}$ : la trajectoire longe le groupe $\mathrm{OR}$, le plus volumineux, pratiquement éclipsé avec elle.
 
-Les deux premières sont représentées par les flèches de la figure 3.
+Les deux premières sont représentées par les flèches de la figure 4.
 
 ### Question 2.B.I.6 — Produit majoritaire sous contrôle cinétique
 
@@ -1455,7 +1479,7 @@ Les deux premières sont représentées par les flèches de la figure 3.
 
 Sous contrôle cinétique, le produit majoritaire est issu de l'attaque la plus rapide, donc la moins gênée : l'attaque du **conformère I par la face opposée à** $\mathrm{OR}$, où le nucléophile ne rencontre que l'hydrogène de C12. Viennent ensuite l'attaque du conformère II à l'opposé de $\mathrm{OR}$ (gêne de $\mathrm{R_2}$), puis les attaques du côté de $\mathrm{OR}$.
 
-Produit : après l'attaque, C11 porte le nucléophile (en bas sur la figure 3, à l'opposé de $\mathrm{OR}$), l'oxygène et $\mathrm{R_1}$ se relevant vers le haut. $\mathrm{R_1}$ se trouve alors en anti de $\mathrm{R_2}$ : la chaîne $\mathrm{R_1{-}C11{-}C12{-}R_2}$ est en zigzag, et l'oxygène de C11 (futur groupe hydroxyle) et le groupe $\mathrm{OR}$ de C12, décalés de 60°, sont **du même côté** du plan de cette chaîne.
+Produit : après l'attaque, C11 porte le nucléophile (en bas sur la figure 4, à l'opposé de $\mathrm{OR}$), l'oxygène et $\mathrm{R_1}$ se relevant vers le haut. $\mathrm{R_1}$ se trouve alors en anti de $\mathrm{R_2}$ : la chaîne $\mathrm{R_1{-}C11{-}C12{-}R_2}$ est en zigzag, et l'oxygène de C11 (futur groupe hydroxyle) et le groupe $\mathrm{OR}$ de C12, décalés de 60°, sont **du même côté** du plan de cette chaîne.
 
 Lorsque le nucléophile est un hydrure, le produit majoritaire, après hydrolyse, est donc l'alcool dont le groupe hydroxyle en C11 et le groupe $\mathrm{OR}$ en C12 sont en relation **syn** (chaîne en zigzag). L'attaque du conformère II donnerait le diastéréoisomère anti.
 
@@ -1602,7 +1626,7 @@ L'acétate, les éthers silylés, l'acétal mixte méthylique et les deux acéta
 
 L'ion ammonium ($\mathrm{p}K_a = 9{,}2$) neutralise l'excès d'ions hydroxyde : $\mathrm{NH_4^+ + HO^- \to NH_3 + H_2O}$. Cela **arrête la réaction** au bout de 20 minutes, avant que l'acétate ne soit saponifié à son tour, et ramène le milieu à un pH voisin de la neutralité (tampon ammonium/ammoniac).
 
-On choisit un acide faible parce que la molécule porte des fonctions sensibles aux acides forts (acétals, acétal mixte, éthers silylés) et que l'hydroxy-acide pourrait relactoniser en milieu acide. Le carboxylate n'est que partiellement protoné à ce pH ; l'extraction par la phase organique déplace l'équilibre vers l'acide 25.
+On choisit un acide faible parce que la molécule porte des fonctions sensibles aux acides forts (acétals, acétal mixte, éthers silylés) et que l'hydroxy-acide pourrait relactoniser en milieu acide. À ce pH, le carboxylate n'est presque pas protoné. Il reste $1{,}66 - 1{,}51 = 0{,}15\ \mathrm{mmol}$ d'ions hydroxyde, que l'ion ammonium, en large excès, transforme en ammoniac ; l'énoncé ne donne pas la concentration de la solution de chlorure d'ammonium, mais pour 5 à 25 mmol d'ions ammonium le tampon a un pH de $9{,}2 + \log(0{,}15/5) \approx 7{,}7$ à $9{,}2 + \log(0{,}15/25) \approx 7{,}0$. Avec un $\mathrm{p}K_a$ voisin de 4,8 pour l'acide carboxylique (valeur usuelle, non fournie), la fraction protonée $1/(1+10^{\mathrm{pH}-\mathrm{p}K_a})$ vaut de 0,1 % à 0,6 % : la réaction $\mathrm{RCO_2^- + NH_4^+ \rightleftharpoons RCO_2H + NH_3}$ a une constante de $10^{4{,}8-9{,}2} \approx 10^{-4{,}4}$ seulement. C'est l'extraction par la phase organique, où seule la forme acide, très lipophile, est soluble, qui déplace cet équilibre vers l'acide 25.
 
 ### Question 2.B.II.4.c — Ajout d'éther diéthylique
 
@@ -1705,14 +1729,16 @@ Les acétals et les éthers silylés ne sont pas sensibles aux nucléophiles bas
 
 **Séquence proposée.**
 
-1. **Estérification** entre l'acide carboxylique de B et l'alcool secondaire de A. L'estérification directe en milieu acide est exclue (équilibre limité, fonctions sensibles aux acides) : on active l'acide dans des conditions douces, par exemple avec le dicyclohexylcarbodiimide en présence de 4-diméthylaminopyridine (à défaut, passage par un anhydride mixte ou un chlorure d'acyle en présence de pyridine). L'aldéhyde et le cétophosphonate ne réagissent pas dans ces conditions. On relie ainsi les deux synthons par la liaison ester.
-2. **Macrocyclisation par réaction de Horner-Wadsworth-Emmons intramoléculaire.** Une base (carbonate de potassium en présence d'un éther-couronne, ou hydrure de sodium) déprotone le $\mathrm{CH_2}$ situé entre le phosphore et la cétone, très acide ; le carbanion attaque l'aldéhyde de l'autre extrémité et l'élimination du phosphate ferme le cycle en créant la septième double liaison, de configuration E, conjuguée à la cétone. On opère à **haute dilution** pour favoriser la réaction intramoléculaire devant les réactions intermoléculaires (argument cinétique du problème 1, question A.III.2).
-3. **Réduction de la cétone conjuguée en alcool** : borohydrure de sodium dans le méthanol à basse température (addition 1,2, favorisée par l'ajout de chlorure de cérium). Les esters ne sont pas réduits. On obtient le groupe hydroxyle allylique du bas du macrocycle.
+1. **Estérification** entre l'acide carboxylique de B et l'alcool secondaire de A. L'estérification directe en milieu acide est exclue (équilibre limité, fonctions sensibles aux acides) : on active l'acide en chlorure d'acyle (chlorure de thionyle en présence de pyridine, qui capte le chlorure d'hydrogène formé) ou en anhydride, puis on le fait réagir avec l'alcool en présence de pyridine, à froid et en milieu anhydre. L'aldéhyde et le cétophosphonate ne réagissent pas avec l'alcool dans ces conditions. On relie ainsi les deux synthons par la liaison ester.
+2. **Macrocyclisation par réaction de Horner-Wadsworth-Emmons intramoléculaire.** Une base (hydrure de sodium dans le THF anhydre, comme dans la figure 1 de l'énoncé) déprotone le $\mathrm{CH_2}$ situé entre le phosphore et la cétone, très acide ; le carbanion attaque l'aldéhyde de l'autre extrémité et l'élimination du phosphate ferme le cycle en créant la septième double liaison, de configuration E, conjuguée à la cétone. On opère à **haute dilution** pour favoriser la réaction intramoléculaire devant les réactions intermoléculaires (argument cinétique du problème 1, question A.III.2).
+3. **Réduction de la cétone conjuguée en alcool** : borohydrure de sodium dans le méthanol à basse température (addition 1,2 sur le carbonyle). Les esters ne sont pas réduits. On obtient le groupe hydroxyle allylique du bas du macrocycle.
 4. **Retrait des groupes silylés** : fluorure de tétrabutylammonium en excès (déprotection de l'énoncé), qui libère les trois groupes hydroxyle protégés par TBS (un venant de A, deux venant de B).
 5. **Retrait des deux acétals isopropylidène** : méthanol, acide en quantité catalytique, à température ambiante (transacétalisation). Dans le méthanol, l'acétal mixte méthylique du cycle pyranique est conservé.
 6. **Saponification de l'ester méthylique** : hydroxyde de lithium aqueux en quantité contrôlée dans le THF à 0 °C, puis acidification douce, comme pour le passage de 24 à 25, afin de ne pas ouvrir la lactone du macrocycle, plus encombrée.
 
 On obtient le précurseur. L'ordre inverse des étapes 1 et 2 serait moins favorable : la base de la réaction de Horner-Wadsworth-Emmons serait d'abord consommée par l'acide carboxylique libre, et la fermeture finale du cycle par estérification d'un alcool secondaire encombré serait difficile.
+
+**Variantes hors programme.** Les réactifs ci-dessus sont ceux du programme de PC ; sur une molécule aussi fragile, ils ont des limites : la formation du chlorure d'acyle libère un acide que la pyridine doit capter pour préserver les acétals et les éthers silylés, et le borohydrure de sodium seul peut aussi donner un peu d'addition 1,4 sur la cétone conjuguée. En pratique, on emploie des conditions plus douces, toutes hors programme : activation de l'acide par le dicyclohexylcarbodiimide en présence de 4-diméthylaminopyridine (étape 1), carbonate de potassium en présence d'un éther-couronne comme base (étape 2), ajout de chlorure de cérium au borohydrure de sodium pour favoriser l'addition 1,2 (étape 3). Elles ne sont pas attendues d'un candidat.
 
 ## Bilan
 
