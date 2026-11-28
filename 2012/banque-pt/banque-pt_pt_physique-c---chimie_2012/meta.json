@@ -1,0 +1,92 @@
+{
+  "slug": "banque-pt_pt_physique-c---chimie_2012",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique C - Chimie",
+    "annee": 2012
+  },
+  "questions": 36,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2012/phys_c_pt_2012.zip",
+    "sujet_sha256": "32de2bc10cca9954a2f5e57be6021c6e01b915a5945409de3b9dca4c69c72ed9",
+    "precision": "L'adresse est celle de l'archive commune aux deux parties de Physique C (chimie et thermodynamique), SHA-256 32de2bc10cca9954a2f5e57be6021c6e01b915a5945409de3b9dca4c69c72ed9. Fichier interne de la partie chimie, identifié par sa garde « Epreuve de Physique C - Chimie » : ph_c_pt_2012/ph_c_pt_2012_chimie/ph_c_pt_2012_chimie_sujet.pdf, 8 pages, SHA-256 f88ba0aea32557349a1cff057e3b7f9dc2a40267104fcd027b0aaa1d93f5a69a. Annexe (document-réponse) : ph_c_pt_2012/ph_c_pt_2012_chimie/ph_c_pt_2012_chimie_annexes.pdf, 2 pages, SHA-256 a477931b354fe7e4a5ffa5139774b2b21dda65f180561e2a55f6d6fc392fe05e. Les trois empreintes sont identiques à celles de campagnes/x-ens/bilans/sources-epreuves-banque-pt-2008-2016.tsv. Le rapport du jury est commun aux deux parties de Physique C ; son empreinte est aussi celle du même fichier.",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2012/rapport_phys_c_ecrit_2012.pdf",
+    "rapport_sha256": "58d8488e229e31319f9e50138be60d059416ca11177b85cc545906248b1519c6"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1.1",
+      "I.1.2",
+      "I.1.3",
+      "I.1.4",
+      "I.1.5",
+      "I.2.1.1",
+      "I.2.1.2",
+      "I.2.1.3",
+      "I.2.2.1",
+      "I.2.2.2",
+      "I.2.2.3",
+      "I.2.2.4",
+      "I.2.3",
+      "II.1.1",
+      "II.1.2",
+      "II.1.3",
+      "II.1.4",
+      "II.1.5",
+      "II.1.6",
+      "II.1.7",
+      "II.1.8",
+      "II.2.1",
+      "II.2.2",
+      "II.3.1",
+      "II.3.2",
+      "II.3.3",
+      "II.3.4",
+      "III.1.1",
+      "III.1.2",
+      "III.1.3",
+      "III.2.1",
+      "III.2.2",
+      "III.2.3",
+      "III.3.1",
+      "III.3.2",
+      "III.3.3"
+    ],
+    "precision": "Sujet de 8 pages PDF numérisées, lu en entier en image (garde p. 1, énoncé p. 2 à 6, pages blanches p. 7 et 8) et annexe de 2 pages (diagramme potentiel-pH du fer, du cuivre et du manganèse p. 1, verso vierge p. 2) ; 36 questions repérées de I.1.1 à III.3.3, toutes traitées. La question II.1.2 est imprimée « I.1.2 » sur l'énoncé ; la question I.2.3 (cémentation) n'y a pas de sous-numéro. Rapport du jury de Physique C de 5 pages, partie chimie p. 1 à 3 (paginées 14 à 16). Lectures sur l'annexe, recoupées par le calcul avec les produits de solubilité de l'énoncé : frontières verticales à pH 2 (fer(III)), 5 (cuivre), 7,5 (fer(II)) et 8,6 (manganèse), ordonnées 1,29, 0,77, 0,31 et −1,24 V. Le document-réponse complété est reproduit par la figure 2. Question II.3.4 : l'énoncé ne précise ni la température initiale ni l'avancement ; le calcul retient 700 K et l'avancement de la question II.3.3, hypothèse signalée à sa place."
+  },
+  "figures": [
+    {
+      "fichier": "figures/maille-blende.svg",
+      "question": "I.1.1",
+      "legende": "Maille de la blende : ions sulfure en réseau cubique à faces centrées, ions zinc dans un site tétraédrique sur deux, contacts zinc-soufre."
+    },
+    {
+      "fichier": "figures/diagramme-e-ph-lixiviation.svg",
+      "question": "I.2.2.4",
+      "legende": "Diagramme potentiel-pH du fer, du cuivre et du manganèse reconstruit d'après l'annexe et complété par les droites des couples de l'eau, avec les pH des deux lixiviations."
+    },
+    {
+      "fichier": "figures/ph-precipitation-sulfures.svg",
+      "question": "III.3.2",
+      "legende": "Axe des pH de début et de fin de précipitation des sulfures de cuivre, de nickel et de fer en solution saturée en sulfure d'hydrogène."
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des corrigés brut et guidé des 36 questions et de trois figures, à partir du sujet, de son annexe et du rapport du jury ; applications numériques recalculées, lectures du diagramme potentiel-pH recoupées par le calcul, encadrés JURY relus contre le rapport."
+    }
+  ]
+}
