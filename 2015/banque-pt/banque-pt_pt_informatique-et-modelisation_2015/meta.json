@@ -1,0 +1,90 @@
+{
+  "slug": "banque-pt_pt_informatique-et-modelisation_2015",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Informatique et modélisation",
+    "annee": 2015
+  },
+  "questions": 40,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2015/info_mod_2015_pt.pdf",
+    "sujet_sha256": "fa38fa4c8aae742da6e250dff397434581349b6efd07ecce02b2bc26a0a21650",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2015/rapport_info_model_ecrit_2015.pdf",
+    "rapport_sha256": "96ad330b7fc4775671fee45b415f9492d4c193e74415570d527ae371ca51f35c"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.A1",
+      "I.A2",
+      "I.A3",
+      "I.A4",
+      "I.A5",
+      "I.B1",
+      "I.B2",
+      "I.B3",
+      "I.B4",
+      "I.B5",
+      "I.B6",
+      "I.B7",
+      "I.B8",
+      "I.B9",
+      "I.B10",
+      "I.B11",
+      "I.B12",
+      "I.B13",
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21",
+      "Q22"
+    ],
+    "precision": "Sujet de 16 pages lu en entier en image (PDF numérisé sans couche de texte ; énoncé pages 2 à 14, pages 15 et 16 blanches), rapport de 5 pages lu. 40 questions : I.A1 à I.A5, I.B1 à I.B13, Q1 à Q22, toutes traitées. Les valeurs de la question I.B2 sont lues sur la carte de courbes de niveau du sujet et recoupées par la formule du champ sur l'axe. L'inductance mutuelle imposée par l'énoncé (0,1 μH) ne concorde pas avec le modèle de la question I.B5 (environ 3 μH) : l'écart est signalé et la valeur de l'énoncé est utilisée. Question I.B10 : deux ordres de grandeur sont donnés, sans et avec résonance. Partie informatique rédigée en Python ; pas de version Scilab, faute d'interpréteur."
+  },
+  "figures": [
+    {
+      "fichier": "figures/b2-champ-efficace-rayon.svg",
+      "question": "I.B2",
+      "legende": "Champ efficace sur l'axe à 10 cm de la bobine en fonction de son rayon : maximum de 4,8 μT pour a ≈ 0,14 m"
+    },
+    {
+      "fichier": "figures/q8-enveloppe-pas-1-ns.svg",
+      "question": "Q8",
+      "legende": "Simulation au pas de 1 ns : la sortie s(t) suit l'enveloppe de e(t) et un seuil à 1,35 V sépare le bit 1 des bits 0"
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions pour les 40 questions et de deux figures (courbe calculée, simulation exécutée). Tout le code Python et SQL a été exécuté et testé (tests exhaustifs du code de Hamming, base SQLite d'essai), applications numériques recalculées ; pas de version Scilab."
+    }
+  ]
+}
