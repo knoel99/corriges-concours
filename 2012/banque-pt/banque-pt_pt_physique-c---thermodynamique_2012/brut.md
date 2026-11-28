@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Épreuve de 2 heures, calculatrice autorisée : étude d'une turbine à gaz, en 40 questions numérotées de 1 à 40 et réparties en quatre parties (préliminaires, cycle de Joule, compression étagée, turbine à deux étages avec régénérateur). Les 40 questions sont traitées. Le sujet ne comporte ni table ni diagramme gradué : les seules données numériques sont $M$, $\gamma$, $R$ (question 4), $T_1 = 300\ \mathrm{K}$ et $T_3 = 1000\ \mathrm{K}$ (questions 17 à 25). Les figures 4, 6 et 8 du sujet sont des schémas sans graduation ; les courbes y sont identifiées par raisonnement (questions 7, 26 et 30). Les six figures du corrigé sont tracées à l'échelle à partir des lois du gaz parfait ; lorsqu'un tracé demande des valeurs que l'énoncé ne donne pas (rapports de pression, températures intermédiaires), elles sont signalées à leur place comme un choix du corrigé. Convention : $w$ et $q$ désignent des grandeurs massiques reçues par l'air, comptées algébriquement.
 
 [Sujet officiel (archive réunissant les deux parties de Physique C)](https://www.banquept.fr/documents/2012/phys_c_pt_2012.zip) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2012/rapport_phys_c_ecrit_2012.pdf)
@@ -74,7 +76,7 @@ $$c_{vm} = \frac{8{,}31}{29\times 10^{-3}\times 0{,}4} = 716\ \mathrm{J\cdot K^{
 
 $$c_{pm} = \gamma\,c_{vm} = \frac{1{,}4\times 8{,}31}{29\times 10^{-3}\times 0{,}4} = 1{,}00\times 10^{3}\ \mathrm{J\cdot K^{-1}\cdot kg^{-1}}$$
 
-$$\boxed{c_{pm} \approx 1{,}00\times 10^{3}\ \mathrm{J\cdot K^{-1}\cdot kg^{-1}} \qquad c_{vm} \approx 7{,}2\times 10^{2}\ \mathrm{J\cdot K^{-1}\cdot kg^{-1}}}$$
+$$\boxed{c_{pm} \approx 1{,}00\times 10^{3}\ \mathrm{J\cdot K^{-1}\cdot kg^{-1}} \qquad c_{vm} \approx 716\ \mathrm{J\cdot K^{-1}\cdot kg^{-1}}}$$
 
 Le calcul donne $c_{pm} = 1003\ \mathrm{J\cdot K^{-1}\cdot kg^{-1}}$ ; c'est cette valeur qui sert dans la suite.
 
@@ -358,7 +360,7 @@ Vérification physique : au cours d'une compression isentropique, la températur
 
 ### Question 27 — Compressions à un et à deux étages dans le diagramme de Clapeyron
 
-On reprend la figure 6 avec l'isentropique et l'isotherme identifiées à la question 26.
+On reprend la figure 6 du sujet avec l'isentropique et l'isotherme identifiées à la question 26.
 
 - **Un étage, $1 \to 2$** : on suit l'isentropique issue de 1 (courbe de droite) de la pression $P_1$ jusqu'à la pression $P_2$.
 - **Deux étages** :
@@ -377,7 +379,7 @@ Pour une compression réversible d'un fluide en écoulement, le travail indiqué
 - Un étage : aire à gauche de la courbe $1 \to 2$.
 - Deux étages : aire à gauche de la ligne $1 \to 1a \to 1b \to 2a$.
 
-Entre $P_1$ et $P_x$ les deux lignes coïncident. Entre $P_x$ et $P_2$, la courbe $1b \to 2a$ est à gauche de la courbe $1a \to 2$ : les volumes massiques y sont plus petits à chaque pression. La différence des deux travaux est l'aire du quadrilatère curviligne $1a$–$2$–$2a$–$1b$ (en vert sur la figure 3).
+Entre $P_1$ et $P_x$ les deux lignes coïncident. Entre $P_x$ et $P_2$, la courbe $1b \to 2a$ est à gauche de la courbe $1a \to 2$ : les volumes massiques y sont plus petits à chaque pression. La différence des deux travaux est l'aire du quadrilatère curviligne $1a$–$2$–$2a$–$1b$ (en vert sur la figure 3 du corrigé, question 27).
 
 **La compression à deux étages avec refroidissement intermédiaire demande donc moins de travail que la compression à un étage**, pour les mêmes pressions extrêmes : on comprime un gaz refroidi, donc moins volumineux. De plus l'air sort moins chaud ($T_{2a} < T_2$).
 
@@ -444,7 +446,7 @@ Le cycle est parcouru dans le sens horaire (cycle moteur).
 
 ![Figure 5 — Cycle de la turbine à deux étages avec régénérateur, tracé sur les isobares et les isothermes de la figure 8](figures/q30-cycle-regenerateur-entropique.svg)
 
-Sur la figure 8 du sujet, les courbes sont bien disposées pour que les points 1 et 2, 3 et 4, 6 et 7, 8 et 9 soient à la verticale l'un de l'autre. La figure 5 ci-dessus reproduit cette disposition avec des valeurs choisies par le corrigé pour le dessin ($T_1 = 300\ \mathrm{K}$, $T_5 = 700\ \mathrm{K}$, rapport de pression 3 par étage) ; la figure 8 du sujet ne porte aucune graduation.
+Sur la figure 8 du sujet, les courbes sont bien disposées pour que les points 1 et 2, 3 et 4, 6 et 7, 8 et 9 soient à la verticale l'un de l'autre. La figure 5 du corrigé, ci-dessus, reproduit cette disposition avec des valeurs choisies par le corrigé pour le dessin ($T_1 = 300\ \mathrm{K}$, $T_5 = 700\ \mathrm{K}$, rapport de pression 3 par étage) ; la figure 8 du sujet ne porte aucune graduation et l'espacement de ses isothermes n'est pas à l'échelle (les écarts $T_2 - T_1$ et $T_6 - T_5$ y sont dessinés égaux), ce qui ne change ni la position relative des points ni le tracé demandé.
 
 ### Question 31 — Lecture graphique des transferts thermiques
 
@@ -459,7 +461,7 @@ q_{9\,10} &= c_{pm}\,(T_2 - T_5) < 0 \\
 q_{10\,1} &= c_{pm}\,(T_1 - T_2) < 0
 \end{aligned}}$$
 
-Sur le diagramme de la question 30 (figure 5), ils sont portés le long des arcs correspondants : $q_{45}$ et $q_{56}$ sur l'isobare $P_2$, entre les isothermes $T_2$ et $T_5$ puis $T_5$ et $T_6$ ; $q_{9\,10}$ et $q_{10\,1}$ sur l'isobare $P_1$, entre les isothermes $T_5$ et $T_2$ puis $T_2$ et $T_1$.
+Sur le diagramme de la question 30 (figure 5 du corrigé), ils sont portés le long des arcs correspondants : $q_{45}$ et $q_{56}$ sur l'isobare $P_2$, entre les isothermes $T_2$ et $T_5$ puis $T_5$ et $T_6$ ; $q_{9\,10}$ et $q_{10\,1}$ sur l'isobare $P_1$, entre les isothermes $T_5$ et $T_2$ puis $T_2$ et $T_1$.
 
 On vérifie que $q_{9\,10} = -q_{45}$ : dans le régénérateur idéal, toute la chaleur cédée par l'air détendu est reçue par l'air comprimé. C'est ce qui impose $T_{10} = T_4$ et $T_5 = T_9$.
 
@@ -529,7 +531,7 @@ Les deux arcs d'isobare se déduisent l'un de l'autre par translation horizontal
 
 ### Question 36 — Identification des évolutions
 
-Sur le cycle de la question 35 (sommets A, B, C, D de la figure 6) :
+Sur le cycle de la question 35 (sommets A, B, C, D de la figure 6 du corrigé) :
 
 - **Régénérateur** : les deux isobares. Sur $B \to C$ (isobare $P_2$), l'air comprimé est préchauffé de $T_a$ à $T_b$ ; la chaleur nécessaire, $c_{pm}\,(T_b - T_a)$, lui est cédée par l'air détendu qui se refroidit de $T_b$ à $T_a$ sur $D \to A$ (isobare $P_1$). Ces deux transferts sont opposés et internes à l'installation.
 - **Réchauffement lors des détentes** : l'isotherme haute $C \to D$, à la température $T_b$. C'est la limite de la ligne en dents de scie $6 \to 7 \to 8 \to 9$ de la question 30 ; l'air y reçoit de la chaleur de la source chaude.
