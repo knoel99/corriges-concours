@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Premier problème · 1.1 Structure cristalline des cristaux de O
 
 ### Question I.1.1.1 — Angles de la maille orthorhombique
@@ -229,8 +231,8 @@ $$\boxed{\lambda\approx5{,}5\times10^{-7}\ \mathrm m\approx550\ \mathrm{nm}}$$
 
 Lecture de la figure 4.
 
-- **O** (trait plein) absorbe essentiellement dans l'ultraviolet (maxima vers 320 et 360 nm). Le pied de sa bande déborde toutefois sur le visible : l'absorbance vaut encore environ 0,25 à 400 nm et ne s'annule que vers 430–440 nm. **O** absorbe donc faiblement le violet (380–440 nm) : sa solution est **presque incolore, légèrement jaune-vert** (jaune pâle).
-- Les deux états photostationnaires absorbent jusqu'à environ 500 nm (absorbance de 0,15 à 0,20 vers 440–450 nm), domaine où **O** n'absorbe plus : cette absorption est due à **F**. **F** absorbe donc le violet, le bleu et le début du bleu-vert (380–500 nm) : sa solution est **jaune**, tirant sur l'orangé.
+- **O** (trait plein) absorbe essentiellement dans l'ultraviolet (maxima vers 320 et 360 nm). Le pied de sa bande déborde toutefois sur le visible : l'absorbance vaut encore environ 0,2 à 400 nm et ne s'annule que vers 430 nm. **O** absorbe donc faiblement le violet (380–430 nm) : sa solution est **presque incolore, légèrement jaune-vert** (jaune pâle).
+- Les deux états photostationnaires absorbent jusqu'à environ 480 nm (absorbance de 0,15 à 0,20 vers 430 nm, encore 0,08 à 0,10 vers 450 nm), domaine où **O** n'absorbe plus : cette absorption est due à **F**. **F** absorbe donc le violet et le bleu (380–480 nm), dont les couleurs complémentaires sont le jaune-vert et le jaune : sa solution est **jaune**.
 
 La réaction est bien photochrome : le passage $\mathbf O\to\mathbf F$ s'accompagne d'un jaunissement de la solution.
 
@@ -247,11 +249,11 @@ $$h\nu_2<h\nu_1\quad\Longleftrightarrow\quad\lambda_2=\frac{hc}{h\nu_2}>\lambda_
 Une réaction photochimique n'a lieu que si le réactif absorbe le rayonnement.
 
 - **Cyclisation $\mathbf O\to\mathbf F$** : il faut irradier dans la bande d'absorption de **O**, soit $\lambda\lesssim430\ \mathrm{nm}$, et en pratique dans l'ultraviolet, entre 300 et 380 nm environ, où **O** absorbe fortement (c'est le cas des raies à 313 et 365 nm). **F** absorbant aussi dans ce domaine, on n'obtient pas **F** pur mais un état photostationnaire.
-- **Cycloréversion $\mathbf F\to\mathbf O$** : il faut irradier là où **F** absorbe ; pour qu'elle soit totale, on choisit le domaine où **F** absorbe seul, soit dans le visible entre 440 et 500 nm environ (violet-bleu). **O** n'y absorbe pas, la cyclisation ne peut pas avoir lieu et tout **F** revient à **O**.
+- **Cycloréversion $\mathbf F\to\mathbf O$** : il faut irradier là où **F** absorbe ; pour qu'elle soit totale, on choisit le domaine où **F** absorbe seul, soit dans le visible entre 430 et 480 nm environ (essentiellement le bleu). **O** n'y absorbe pas, la cyclisation ne peut pas avoir lieu et tout **F** revient à **O**.
 
 ### Question I.2.2.4 — Usage de la raie verte du mercure
 
-La transition $E_3\to E_1$ donne $\lambda\approx547\ \mathrm{nm}$. D'après la figure 4, l'absorbance de **O** comme celle des états photostationnaires est nulle au-delà de 500 nm environ : **ni O ni F n'absorbent** cette radiation.
+La transition $E_3\to E_1$ donne $\lambda\approx547\ \mathrm{nm}$. D'après la figure 4, l'absorbance de **O** comme celle des états photostationnaires est nulle au-delà de 490 nm environ : **ni O ni F n'absorbent** cette radiation.
 
 Elle ne peut donc induire **ni la cyclisation, ni la cycloréversion** : l'énergie du photon (2,27 eV) est inférieure à l'écart $S_0$–$S_1$ de chacun des deux isomères.
 
@@ -369,7 +371,7 @@ $$\boxed{X_\mathrm F^\mathrm{EPS}=\frac{\varepsilon_\mathrm O\,\phi_\mathrm O}{\
 
 Les trois spectres de la figure 4 correspondent à la même concentration totale et à la même cuve.
 
-- Entre 440 et 500 nm, **O** n'absorbe pas : l'absorbance est proportionnelle à $[\mathrm F]$. Elle est plus grande pour l'état photostationnaire obtenu à 365 nm (environ 0,20 vers 450 nm) que pour celui obtenu à 313 nm (environ 0,15).
+- Entre 430 et 480 nm, **O** n'absorbe pas : l'absorbance est proportionnelle à $[\mathrm F]$. Elle est plus grande pour l'état photostationnaire obtenu à 365 nm (environ 0,20 à 430 nm, 0,16 à 440 nm) que pour celui obtenu à 313 nm (environ 0,16 à 430 nm, 0,12 à 440 nm).
 - Vers 320–370 nm, où **O** absorbe fortement (absorbance voisine de 0,9 pour **O** pur), l'absorbance est tombée à 0,40 environ pour l'état obtenu à 313 nm et à 0,25 environ pour celui obtenu à 365 nm : il reste moins de **O** dans le second.
 
 Les deux lectures concordent :
@@ -406,13 +408,13 @@ Avec $\phi_\mathrm O=\phi_\mathrm F$, $X_\mathrm F^\mathrm{EPS}=\varepsilon_\mat
 
 $$\boxed{\varepsilon_\mathrm F\ll\varepsilon_\mathrm O}$$
 
-à la longueur d'onde d'irradiation (idéalement $\varepsilon_\mathrm F=0$) : il faut irradier à une longueur d'onde où **F** n'absorbe pas, de sorte que la cycloréversion n'ait pas lieu. La figure 4 montre que ce n'est pas possible pour ce composé, **F** absorbant partout où **O** absorbe.
+à la longueur d'onde d'irradiation (idéalement $\varepsilon_\mathrm F=0$) : il faut irradier à une longueur d'onde où **F** n'absorbe pas, de sorte que la cycloréversion n'ait pas lieu. La figure 4 montre que cette condition n'est remplie ni à 313 nm ni à 365 nm : les deux états photostationnaires contiennent encore **O**, ce qui prouve que **F** absorbe à ces longueurs d'onde.
 
 ## Premier problème · 2.5 Étude cinétique de la réaction photochrome
 
 ### Question I.2.5.1 — Point isobestique
 
-B est un **point isobestique** (point d'isoabsorbance) : tous les spectres des mélanges **O**/**F** de même concentration totale s'y croisent. Sur la figure 4, il se situe vers $\lambda_\mathrm B\approx400\ \mathrm{nm}$ (absorbance voisine de 0,25).
+B est un **point isobestique** (point d'isoabsorbance) : tous les spectres des mélanges **O**/**F** de même concentration totale s'y croisent. Sur la figure 4, il se situe juste en dessous de 400 nm ($\lambda_\mathrm B\approx397\ \mathrm{nm}$, absorbance voisine de 0,23).
 
 En ce point, l'absorbance $A=(\varepsilon_\mathrm O[\mathrm O]+\varepsilon_\mathrm F[\mathrm F])\,l$ doit être indépendante de la répartition entre **O** et **F** lorsque $[\mathrm O]+[\mathrm F]=C_\mathrm{tot}$, ce qui impose :
 
@@ -478,7 +480,7 @@ La loi précédente s'écrit $X_\mathrm F^\mathrm{EPS}-X_\mathrm F(t)=X_\mathrm 
 
 $$\boxed{\ln\left(1-\frac{X_\mathrm F(t)}{X_\mathrm F^\mathrm{EPS}}\right)=-K\left(\phi_\mathrm O+\phi_\mathrm F\right)t}$$
 
-Protocole : on irradie la solution de **O** à $\lambda_\mathrm B$ et on suit $X_\mathrm F(t)$ par spectrophotométrie, par exemple à une longueur d'onde du visible où **F** absorbe seul (vers 450 nm), où l'absorbance d'analyse $A_\mathrm{an}$ est proportionnelle à $[\mathrm F]$ ; alors $1-X_\mathrm F/X_\mathrm F^\mathrm{EPS}=1-A_\mathrm{an}(t)/A_\mathrm{an}(\infty)$. On poursuit jusqu'au palier, puis on trace $\ln\left(1-X_\mathrm F/X_\mathrm F^\mathrm{EPS}\right)$ en fonction de $t$ : on obtient une droite passant par l'origine, de pente $-K(\phi_\mathrm O+\phi_\mathrm F)$.
+Protocole : on irradie la solution de **O** à $\lambda_\mathrm B$ et on suit $X_\mathrm F(t)$ par spectrophotométrie, par exemple à une longueur d'onde du visible où **F** absorbe seul (vers 430–440 nm), où l'absorbance d'analyse $A_\mathrm{an}$ est proportionnelle à $[\mathrm F]$ ; alors $1-X_\mathrm F/X_\mathrm F^\mathrm{EPS}=1-A_\mathrm{an}(t)/A_\mathrm{an}(\infty)$. On poursuit jusqu'au palier, puis on trace $\ln\left(1-X_\mathrm F/X_\mathrm F^\mathrm{EPS}\right)$ en fonction de $t$ : on obtient une droite passant par l'origine, de pente $-K(\phi_\mathrm O+\phi_\mathrm F)$.
 
 La constante $K=I_0(1-10^{-A})/(V\,C_\mathrm{tot})$ se calcule à partir de grandeurs mesurables : $V$, $C_\mathrm{tot}$, l'absorbance $A$ de la solution à $\lambda_\mathrm B$ et le flux de photons $I_0$ de la lampe (mesuré par actinométrie). On en déduit $\phi_\mathrm O+\phi_\mathrm F$.
 
@@ -702,7 +704,7 @@ Dans le stéréoisomère (1R,2R,4R,5R), les deux OH sont sur la même face : les
 
 **Sélectivité.** La réaction est **stéréospécifique** : le mécanisme $\mathrm{S_N2}$ impose la configuration du produit à partir de celle du réactif. Le diastéréoisomère (1R,2R,4R,5R), comme son énantiomère, ne conduit qu'à **4a**, tandis que le diastéréoisomère méso (1R,2R,4S,5S), dont les deux OH sont sur des faces opposées, ne conduit qu'à **4b**. Elle est par conséquent **stéréosélective** : à partir du stéréoisomère considéré, un seul des deux diépoxydes diastéréoisomères possibles est obtenu.
 
-Remarque : la configuration du diépoxyde est fixée par celle de l'ion ponté de départ (*cis* ou *trans*), que le dibromodiol soit de type 1,4-diol ou 1,3-diol.
+Remarque : la configuration du diépoxyde est fixée par celle de l'ion ponté de départ (*cis* ou *trans*), que le dibromodiol soit de type 1,4-diol ou 1,3-diol. Avec le dénombrement de la question 2.1.3, chaque régioisomère comporte donc des stéréoisomères menant à **4a** (issus de l'ion *cis*) et d'autres menant à **4b** (issus de l'ion *trans*). Cela s'écarte de l'énoncé, qui écrit que **3a** et **3b** sont transformés « respectivement » en **4a** et **4b**. Une interprétation possible, que les données du sujet ne permettent pas de justifier : l'énoncé sous-entendrait une ouverture régiosélective de chaque ion ponté, l'ion *cis* ne donnant que le 2,5-dibromocyclohexane-1,4-diol (**3a**, celui de la question 2.1.4, qui conduit bien à **4a**) et l'ion *trans* que l'autre régioisomère (**3b**, qui conduit à **4b**).
 
 ### Question II.2.1.6 — Obtention directe des diépoxydes 4
 
@@ -861,7 +863,7 @@ Bilan : $\mathrm{ArCHO+HOCH_2C(CH_3)_2CH_2OH\rightleftharpoons\mathbf B+H_2O}$. 
 
 **17** porte deux alcynes vrais terminaux et **18** deux fonctions azoture : en présence de Cu(I), une **double cycloaddition de Huisgen** entre une molécule de **17** et une molécule de **18** referme un macrocycle.
 
-Structure de **19** : chaque groupe $\mathrm{{-}CH_2{-}C{\equiv}CH}$ terminal de **17** est transformé en cycle 1,2,3-triazole 1,4-disubstitué, dont le carbone 4 porte le groupe $\mathrm{{-}CH_2{-}O{-}}$ de la chaîne polyéther, dont le carbone 5 porte un hydrogène, et dont l'azote 1 est lié au cycle benzénique provenant de **18**. Ce cycle benzénique, trisubstitué en 1, 3 et 5, porte les deux triazoles en positions 3 et 5 et conserve l'acétal (5,5-diméthyl-1,3-dioxan-2-yle) en position 1. L'anneau enchaîne donc : phénanthroline – phénylène – chaîne tri(oxyéthylène) – $\mathrm{O{-}CH_2}$ – triazole – benzène – triazole – $\mathrm{CH_2{-}O}$ – chaîne tri(oxyéthylène) – phénylène – retour à la phénanthroline.
+Structure de **19** : chaque groupe $\mathrm{{-}CH_2{-}C{\equiv}CH}$ terminal de **17** est transformé en cycle 1,2,3-triazole 1,4-disubstitué, dont le carbone 4 porte le groupe $\mathrm{{-}CH_2{-}O{-}}$ de la chaîne polyéther, dont le carbone 5 porte un hydrogène, et dont l'azote 1 est lié au cycle benzénique provenant de **18**. Ce cycle benzénique, trisubstitué en 1, 3 et 5, porte les deux triazoles en positions 3 et 5 et conserve l'acétal (5,5-diméthyl-1,3-dioxan-2-yle) en position 1. L'anneau enchaîne donc : phénanthroline (substituée en positions 2 et 9, voisines des deux atomes d'azote) – *para*-phénylène – chaîne tri(oxyéthylène) – $\mathrm{O{-}CH_2}$ – triazole – benzène – triazole – $\mathrm{CH_2{-}O}$ – chaîne tri(oxyéthylène) – *para*-phénylène – retour à la phénanthroline.
 
 La réaction est conduite à 70 °C avec un seul équivalent de **18** ; la fermeture intramoléculaire du second triazole est en compétition avec l'oligomérisation, que l'on défavorise en travaillant en milieu dilué.
 
