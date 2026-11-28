@@ -1,0 +1,116 @@
+{
+  "slug": "banque-pt_pt_informatique-et-modelisation_2022",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Informatique et modélisation",
+    "annee": 2022
+  },
+  "questions": 46,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2022/info_mod_2022_pt.pdf",
+    "sujet_sha256": "06b8c31dc70439e1210128596b9e306c25723c586ad719b901c4a2919f002422",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2022/rapport_info_model_ecrit_2022.pdf",
+    "rapport_sha256": "bb8ceee6b2cd03b66940912c3ea85e9d53a9f11a4febc2b4dcfad843507bbd99"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46"
+    ],
+    "precision": "Sujet de 20 pages lu en entier (énoncé pages 2 à 17, pages 18 à 20 blanches), rapport de 3 pages lu. 46 questions numérotées de 1 à 46, toutes traitées. Les valeurs des oscillogrammes des questions 3, 4, 5 et 15 sont des lectures sur les figures du sujet. La numérotation du rapport est décalée d'un rang à partir de la question 43."
+  },
+  "figures": [
+    {
+      "fichier": "figures/q1-caracteristique-ali.svg",
+      "question": "1",
+      "legende": "Caractéristique de transfert de l'ALI : zone linéaire de ±150 μV, saturations à ±15 V"
+    },
+    {
+      "fichier": "figures/q6-amplificateur-non-inverseur.svg",
+      "question": "6",
+      "legende": "Amplificateur non inverseur : entrée sur la borne +, pont R₁, R₂ sur la borne −"
+    },
+    {
+      "fichier": "figures/q8-sortie-saturee.svg",
+      "question": "8",
+      "legende": "Sortie de l'amplificateur de gain 10 : sinusoïde écrêtée à ±15 V, fronts d'environ 30 μs"
+    },
+    {
+      "fichier": "figures/q16-chronogrammes-monostable.svg",
+      "question": "16",
+      "legende": "Chronogrammes de V₊, de u_C et de Vs après une impulsion : état haut de 17 ms puis recharge du condensateur"
+    },
+    {
+      "fichier": "figures/q18-impulsions-periodiques.svg",
+      "question": "18",
+      "legende": "Impulsions périodiques Ve et créneaux Vs : largeur Δt, durée t₁, période T"
+    },
+    {
+      "fichier": "figures/q20-filtre-passe-bas.svg",
+      "question": "20",
+      "legende": "Filtre passe-bas R′C′ placé en sortie du monostable, tension moyenne prise aux bornes de C′"
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions pour les 46 questions, six schémas, lecture chiffrée des quatre oscillogrammes. Tout le code Python et SQL a été exécuté et testé, applications numériques recalculées."
+    }
+  ]
+}
