@@ -1,0 +1,75 @@
+{
+  "slug": "banque-pt_pt_physique-c---thermodynamique_2013",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique C - Thermodynamique",
+    "annee": 2013
+  },
+  "questions": 30,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2013/ph_c_th_2013_pt.pdf",
+    "sujet_sha256": "8777ac91adae6a47187a89f048bbee2ea9bbb045d5cea12a3f6a561d14e80871",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2013/rapport_phys_c_ecrit_2013.pdf",
+    "rapport_sha256": "6bb656ac6e407c53900beb8e7b61ad69a7f680d6e151076952d751f3d74ba788"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30"
+    ],
+    "precision": "Sujet de 8 pages PDF (page de garde, énoncé p. 2 à 5, annexe 1 p. 6, annexe 2 p. 7, dernière page vide), lues en image ; 30 questions numérotées de 1 à 30, toutes traitées. Rapport commun à Physique C de 6 pages, partie thermodynamique sur les pages imprimées 14 à 17. Annexe 1 (diagramme de l'air humide) : lecture de 16 g/kg à 30 °C sur la courbe 60 % (question 7) et d'un point de rosée d'environ 21 °C sur la courbe 100 % (question 8). Annexe 2 (table de saturation du R134a) : lignes -25 °C, 30 °C et 40 °C pour les questions 21 à 28, lignes 25 °C et 30 °C pour les ordres de grandeur des questions 5 et 28. Choix d'interprétation signalés dans le texte : question 11, seuls les 20 kg d'aliments sont pris comme système ; question 15, puissance du compresseur prise égale aux 200 W imposés par l'énoncé ; question 24, travail calculé avec le modèle du gaz parfait (64 kJ/kg), la valeur tirée de la table (47 kJ/kg) étant donnée en remarque ; question 30, débit calculé pour 200 W."
+  },
+  "figures": [
+    {
+      "fichier": "figures/cycle-diagramme-entropique.svg",
+      "question": "18",
+      "legende": "Cycle du R134a dans le diagramme entropique, tracé avec les valeurs de l'annexe 2 : courbe de saturation, cycle sans surchauffe ni sous-refroidissement en pointillés, cycle avec surchauffe et sous-refroidissement en trait plein (états 1 à 4)."
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions (30 questions) à partir du sujet lu en image et du rapport du jury ; applications numériques refaites par calcul, lectures des annexes 1 et 2 localisées, une figure créée à partir de la table de saturation, encadrés du jury relus contre le rapport."
+    }
+  ]
+}
