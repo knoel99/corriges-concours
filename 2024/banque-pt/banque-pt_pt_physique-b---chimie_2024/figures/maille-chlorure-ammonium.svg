@@ -2,23 +2,23 @@
 <rect width="700" height="440" fill="#ffffff"/>
 <g fill="none" stroke="#222222" stroke-width="2">
 <polygon points="150,150 390,150 390,390 150,390"/>
-<polygon points="250,70 490,70 490,310 250,310" stroke-dasharray="6 5"/>
-<line x1="150" y1="150" x2="250" y2="70"/>
-<line x1="390" y1="150" x2="490" y2="70"/>
-<line x1="390" y1="390" x2="490" y2="310"/>
-<line x1="150" y1="390" x2="250" y2="310" stroke-dasharray="6 5"/>
-<line x1="250" y1="70" x2="490" y2="70"/>
-<line x1="490" y1="70" x2="490" y2="310"/>
+<polygon points="260,90 500,90 500,330 260,330" stroke-dasharray="6 5"/>
+<line x1="150" y1="150" x2="260" y2="90"/>
+<line x1="390" y1="150" x2="500" y2="90"/>
+<line x1="390" y1="390" x2="500" y2="330"/>
+<line x1="150" y1="390" x2="260" y2="330" stroke-dasharray="6 5"/>
+<line x1="260" y1="90" x2="500" y2="90"/>
+<line x1="500" y1="90" x2="500" y2="330"/>
 </g>
-<line x1="150" y1="390" x2="490" y2="70" stroke="#b03030" stroke-width="2" stroke-dasharray="3 4"/>
+<line x1="150" y1="390" x2="500" y2="90" stroke="#b03030" stroke-width="2" stroke-dasharray="3 4"/>
 <g fill="#7fbf7f" stroke="#222222" stroke-width="1.5">
 <circle cx="150" cy="150" r="17"/><circle cx="390" cy="150" r="17"/><circle cx="390" cy="390" r="17"/><circle cx="150" cy="390" r="17"/>
-<circle cx="250" cy="70" r="17"/><circle cx="490" cy="70" r="17"/><circle cx="490" cy="310" r="17"/><circle cx="250" cy="310" r="17"/>
+<circle cx="260" cy="90" r="17"/><circle cx="500" cy="90" r="17"/><circle cx="500" cy="330" r="17"/><circle cx="260" cy="330" r="17"/>
 </g>
-<circle cx="320" cy="230" r="13" fill="#1f4e9c" stroke="#222222" stroke-width="1.5"/>
+<circle cx="325" cy="240" r="13" fill="#1f4e9c" stroke="#222222" stroke-width="1.5"/>
 <text x="270" y="412" text-anchor="middle" font-style="italic">a</text>
-<text x="530" y="330" fill="#b03030" font-size="14">pointillés rouges :</text>
-<text x="530" y="350" fill="#b03030" font-size="14">diagonale du cube, a√3</text>
+<text x="530" y="375" fill="#b03030" font-size="14">pointillés rouges :</text>
+<text x="530" y="395" fill="#b03030" font-size="14">diagonale du cube, a√3</text>
 <circle cx="545" cy="150" r="17" fill="#7fbf7f" stroke="#222222" stroke-width="1.5"/>
 <text x="572" y="156">Cl⁻ (sommets)</text>
 <circle cx="545" cy="200" r="13" fill="#1f4e9c" stroke="#222222" stroke-width="1.5"/>

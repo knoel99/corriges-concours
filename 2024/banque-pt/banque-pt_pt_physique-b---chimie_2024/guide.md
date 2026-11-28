@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 Épreuve de chimie de la Physique B, **2 heures, calculatrice interdite**. Le thème, l'azote et le phosphore, sert de fil conducteur à 38 questions courtes réparties en trois parties indépendantes.
@@ -15,7 +17,7 @@
 Seule la question 9 réutilise un résultat antérieur (question 6). Sans calculatrice, les valeurs numériques sont choisies pour se simplifier ; le sujet insiste sur les chiffres significatifs et sur la justification des résultats.
 
 > [!JURY]
-> Le rapport souligne que le grand nombre de questions proches du cours vise à récompenser un travail régulier de la chimie sur les deux années, et que les programmes de première et de seconde année sont sollicités de façon équilibrée. La présentation de la copie entre dans la note : des copies sales ou peu lisibles ont été sanctionnées. Plusieurs blocs faciles ont été peu abordés (question 1, titrage 19 à 22, électrolyse 30 à 34) : parcourir tout le sujet est payant.
+> Le rapport souligne que le grand nombre de questions proches du cours vise à récompenser un travail régulier de la chimie sur les deux années, et que les programmes de première et de seconde année sont sollicités de façon équilibrée. La présentation de la copie entre dans la note, et le jury regrette d'avoir eu à corriger des copies sales et peu lisibles. Plusieurs blocs faciles ont été peu abordés (question 1, titrage 19 à 22, électrolyse 30 à 34) : parcourir tout le sujet est payant.
 
 Documents officiels : [sujet](https://www.banquept.fr/documents/2024/ph_b_ch_2024_pt.pdf) · [rapport du jury, pages 1 et 2 pour la chimie](https://www.banquept.fr/documents/ecrit/rapport/2024/rapport_phys_b_ecrit_2024.pdf).
 
@@ -198,7 +200,7 @@ D'après la question 6, $\Delta_rH^\circ<0$ : la décomposition de la phosphine 
 
 $$\boxed{\text{L'opérateur doit refroidir le réacteur.}}$$
 
-Remarque : le réacteur étant indéformable, le transfert thermique reçu par le système vaut $Q=\Delta U=\xi\,\Delta_rU^\circ$, avec $\Delta_rU^\circ=\Delta_rH^\circ-RT\sum_{\text{gaz}}\nu_i=\Delta_rH^\circ-2RT$. Cette grandeur est encore plus négative que $\Delta_rH^\circ$ : la conclusion est inchangée, $Q<0$.
+Remarque : le réacteur étant indéformable, le transfert thermique reçu par le système vaut $Q=\Delta U=\xi\,\Delta_rU^\circ$, avec $\Delta_rU^\circ=\Delta_rH^\circ-RT\sum_{\text{gaz}}\nu_i=\Delta_rH^\circ-2RT$. Cette grandeur est encore plus négative que $\Delta_rH^\circ$ : la conclusion est inchangée, $Q<0$. Cette conclusion repose sur l'équation (R1) telle que l'écrit le sujet, avec du phosphore solide : c'est aussi ce choix qui donne la relation de la question 11.
 
 > [!JURY]
 > Très peu de candidats ont fait le lien avec l'exothermicité établie à la question 6 : c'est le seul point où les parties du sujet ne sont pas indépendantes.
@@ -292,10 +294,10 @@ Lecture de la figure 2 du sujet :
 Le modèle affine convient pour $\ln C$ : **la décomposition de la phosphine suit une loi de vitesse d'ordre 1.** L'ordonnée à l'origine de la régression, $-6{,}93$, correspond bien à $\ln C_0$ avec $C_0\approx1{,}0\times10^{-3}\ \mathrm{mol\cdot L^{-1}}$, valeur lue à $t=0$ sur le premier tracé ($\ln10^{-3}=-3\times2{,}3=-6{,}9$).
 
 > [!JURY]
-> Le jury attend que l'alignement raisonnable des points sur la droite soit dit explicitement, et que les deux autres tracés soient écartés. Une phrase du type « on voit que c'est un ordre 1 » n'a rapporté aucun point.
+> Le jury attend que l'alignement raisonnable des points expérimentaux soit dit explicitement. Une phrase du type « on voit que c'est un ordre un » n'a rapporté aucun point. Écarter en une ligne les deux autres tracés, comme ci-dessus, complète la justification.
 
 > [!PIEGE]
-> Le sujet demande la constante de vitesse associée à (R1) : la vitesse de réaction se définit avec le nombre stœchiométrique, d'où le facteur 4 entre la pente et $k$. Si l'on pose directement $\mathrm dC/\mathrm dt=-k_{\text{app}}C$, la constante apparente vaut $k_{\text{app}}=4k$ ; il faut annoncer clairement la définition retenue.
+> Le sujet demande la constante de vitesse « associée à (R1) » : avec la vitesse de réaction définie par le nombre stœchiométrique, un facteur 4 sépare la pente de $k$. Si l'on pose directement $\mathrm dC/\mathrm dt=-k_{\text{app}}C$, on obtient $k_{\text{app}}=4k=5{,}05\times10^{-4}\ \mathrm{s^{-1}}$. Ni l'énoncé ni le rapport du jury ne tranchent entre ces deux écritures : il faut annoncer la définition retenue et s'y tenir jusqu'à la question 16, dont le résultat $\tau$ ne dépend pas de ce choix.
 
 ### Question 14 — Valeur de la constante de vitesse
 
@@ -310,7 +312,7 @@ $$4k=5{,}05\times10^{-4}\ \mathrm{s^{-1}}$$
 
 $$\boxed{k=\frac{5{,}05\times10^{-4}}{4}=1{,}26\times10^{-4}\ \mathrm{s^{-1}}}$$
 
-Pour un ordre 1, $k$ est homogène à l'inverse d'un temps. Avec la convention $\mathrm dC/\mathrm dt=-k_{\text{app}}C$, on lirait directement $k_{\text{app}}=5{,}05\times10^{-4}\ \mathrm{s^{-1}}$.
+Pour un ordre 1, $k$ est homogène à l'inverse d'un temps. Avec la convention $\mathrm dC/\mathrm dt=-k_{\text{app}}C$, on lirait directement $k_{\text{app}}=5{,}05\times10^{-4}\ \mathrm{s^{-1}}$ ; l'énoncé ne tranche pas entre les deux écritures, et $\tau$ (questions 15 et 16) n'en dépend pas.
 
 > [!JURY]
 > L'unité de la constante de vitesse a rarement été donnée correctement : $\mathrm{s^{-1}}$ pour un ordre 1, sans concentration.
@@ -373,9 +375,7 @@ L'azote est central, lié aux trois oxygènes. Pour respecter l'octet sur chaque
 - deux liaisons simples $\mathrm{N-O}$ ; chacun de ces oxygènes porte trois doublets non liants et une charge formelle $-1$ ;
 - l'azote, engagé dans quatre doublets liants et sans doublet non liant, porte une charge formelle $+1$.
 
-En écriture linéaire, doublets non liants non représentés :
-
-$$\mathrm{O=\overset{\oplus}{N}}\left(-\mathrm O^{\ominus}\right)_2$$
+![Figure 2 — Schéma de Lewis de l'ion nitrate (une des trois formules mésomères)](figures/lewis-nitrate.svg)
 
 Vérifications : $4$ doublets liants $+\,2+3+3=8$ doublets non liants, soit 12 doublets ; somme des charges formelles $+1-1-1=-1$, charge de l'ion ; octet respecté pour les quatre atomes. Trois formules mésomères équivalentes s'obtiennent en déplaçant la double liaison : les trois liaisons $\mathrm{N-O}$ sont en réalité identiques et l'ion est plan triangulaire.
 
@@ -517,7 +517,7 @@ $$\boxed{\mathrm{NH_4Cl(s)=NH_4^+(aq)+Cl^-(aq)}}$$
 
 #### Solution
 
-**Système.** L'ensemble {calorimètre, eau, chlorure d'ammonium}, de son état initial (eau et calorimètre à $\theta_1$, solide non dissous) à son état final (solution et calorimètre à $\theta_2$).
+**Système.** L'ensemble {calorimètre, eau, chlorure d'ammonium}, de son état initial (eau et calorimètre à $\theta_1$, solide non dissous supposé lui aussi à $\theta_1$, l'énoncé ne précisant pas sa température) à son état final (solution et calorimètre à $\theta_2$).
 
 **Premier principe.** La transformation est monobare, avec équilibre mécanique dans l'état initial et dans l'état final, sans autre travail que celui des forces de pression : $\Delta H=Q$. Le calorimètre est supposé parfaitement calorifugé, la transformation est adiabatique : $Q=0$. Donc
 
@@ -544,7 +544,7 @@ L'application numérique n'est pas demandée. À titre de contrôle seulement, a
 Remarque : si l'on attribuait à la solution la masse $m_e+m$, il suffirait de remplacer $m_ec_e$ par $(m_e+m)c_e$ ; l'énoncé invite à assimiler la capacité de la solution à celle de l'eau introduite.
 
 > [!JURY]
-> C'est la seule question du sujet qui demande un raisonnement long. Le rapport reproche trois choses : système rarement défini, calorimètre oublié, et justification incomplète de $\Delta H=0$ (dire « adiabatique » ne suffit pas, il faut aussi « monobare »). Une suite de symboles non définis ne rapporte rien.
+> C'est la seule question du sujet qui demande un raisonnement long. Le rapport reproche trois choses : système rarement défini, calorimètre oublié, et justification incomplète de $\Delta H=0$ (dire « adiabatique » ne suffit pas, il faut aussi « monobare »). Il relève aussi des successions de symboles non définis, sans justification.
 
 > [!PIEGE]
 > Attention au signe : la température baisse, donc $\Delta H_2<0$ et $\Delta H_1>0$. Une enthalpie de dissolution négative serait incompatible avec le refroidissement de la solution.
@@ -599,7 +599,7 @@ Espèces électroactives : le zinc de l'électrode, les ions $\mathrm{Zn^{2+}}$ 
 
 Bien que $E^\circ(\mathrm{H^+/H_2})=0\ \mathrm V$ soit supérieur à $E_1$, la réduction de $\mathrm{H^+}$ ne démarre qu'à des potentiels bien plus bas : ce couple est lent sur le zinc (forte surtension cathodique).
 
-![Figure 2 — Courbe courant-potentiel de la solution S sur électrode de zinc, avec le processus de chaque portion](figures/courbe-courant-potentiel-zinc.svg)
+![Figure 3 — Courbe courant-potentiel de la solution S sur électrode de zinc, avec le processus de chaque portion](figures/courbe-courant-potentiel-zinc.svg)
 
 > [!METHODE]
 > Pour annoter une courbe courant-potentiel : (1) lister les espèces présentes et les couples possibles ; (2) placer les potentiels d'équilibre ; (3) attribuer oxydations à $i>0$ et réductions à $i<0$ ; (4) interpréter paliers (diffusion d'un soluté) et murs (solvant, électrode).
@@ -686,7 +686,7 @@ La réduction à la cathode consomme des électrons, que le générateur doit fo
 
 Dans le circuit extérieur, les électrons vont de l'anode de graphite vers la borne $+$ du générateur, puis de la borne $-$ vers la cathode de zinc ; le courant $I$ circule en sens inverse (il sort par la borne $+$ et entre dans la solution par l'anode). Dans la solution, le courant est porté par les ions : cations vers la cathode, anions vers l'anode.
 
-![Figure 3 — Montage d'électrolyse, branchement du générateur et sens des électrons](figures/montage-electrolyse-zinc.svg)
+![Figure 4 — Montage d'électrolyse, branchement du générateur et sens des électrons](figures/montage-electrolyse-zinc.svg)
 
 ### Question 32 — Masse de zinc déposée
 
@@ -744,7 +744,7 @@ Le chlorure d'ammonium est un électrolyte fort dont les ions $\mathrm{NH_4^+}$ 
 
 Maille cubique d'arête $a$ : un ion chlorure à chacun des huit sommets, un ion ammonium (représenté par son atome d'azote) au centre du cube.
 
-![Figure 4 — Maille cubique du chlorure d'ammonium](figures/maille-chlorure-ammonium.svg)
+![Figure 5 — Maille cubique du chlorure d'ammonium](figures/maille-chlorure-ammonium.svg)
 
 Population : $8\times\tfrac18=1$ ion $\mathrm{Cl^-}$ et $1$ ion $\mathrm{NH_4^+}$ par maille, ce qui respecte la stœchiométrie et la neutralité de $\mathrm{NH_4Cl}$.
 

@@ -65,6 +65,11 @@
       "legende": "Polarisation des liaisons et moment dipolaire de l'ammoniac"
     },
     {
+      "fichier": "figures/lewis-nitrate.svg",
+      "question": "17",
+      "legende": "Schéma de Lewis de l'ion nitrate (une des trois formules mésomères)"
+    },
+    {
       "fichier": "figures/courbe-courant-potentiel-zinc.svg",
       "question": "26",
       "legende": "Courbe courant-potentiel de la solution S sur électrode de zinc, avec le processus de chaque portion"
@@ -93,6 +98,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Rédaction des éditions brute et guidée pour les 38 questions à partir du sujet et du rapport du jury, quatre figures SVG, applications numériques refaites séparément."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application des huit défauts mineurs de la relecture indépendante, vérifiés contre le sujet et le rapport : question 17 (schéma de Lewis du nitrate ajouté en figure, figures renumérotées de 1 à 5), questions 13 et 14 (convention de vitesse non tranchée par l'énoncé, encadré du jury ramené au rapport), question 9 (modélisation du phosphore solide), question 24 (température initiale du solide), retouches de mise en page des quatre figures existantes (questions 1, 26, 31, 35). Contrôle des 21 encadrés du jury du guidé contre le rapport : trois reformulés (présentation, questions 13 et 24)."
     }
   ]
 }

@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Sujet « Azote et phosphore » : 38 questions numérotées de 1 à 38, en trois parties indépendantes, durée 2 heures, calculatrice interdite. Les applications numériques utilisent les valeurs approchées du sujet ($\ln10\approx2{,}3$ ; $\tfrac{RT}{\mathcal F}\ln10=0{,}06\ \mathrm V$ à 298 K).
 
 ## Partie A — L'ammoniac et la phosphine
@@ -107,7 +109,7 @@ D'après la question 6, $\Delta_rH^\circ<0$ : la décomposition de la phosphine 
 
 $$\boxed{\text{L'opérateur doit refroidir le réacteur.}}$$
 
-Remarque : le réacteur étant indéformable, le transfert thermique reçu par le système vaut $Q=\Delta U=\xi\,\Delta_rU^\circ$, avec $\Delta_rU^\circ=\Delta_rH^\circ-RT\sum_{\text{gaz}}\nu_i=\Delta_rH^\circ-2RT$. Cette grandeur est encore plus négative que $\Delta_rH^\circ$ : la conclusion est inchangée, $Q<0$.
+Remarque : le réacteur étant indéformable, le transfert thermique reçu par le système vaut $Q=\Delta U=\xi\,\Delta_rU^\circ$, avec $\Delta_rU^\circ=\Delta_rH^\circ-RT\sum_{\text{gaz}}\nu_i=\Delta_rH^\circ-2RT$. Cette grandeur est encore plus négative que $\Delta_rH^\circ$ : la conclusion est inchangée, $Q<0$. Cette conclusion repose sur l'équation (R1) telle que l'écrit le sujet, avec du phosphore solide : c'est aussi ce choix qui donne la relation de la question 11.
 
 ### Question 10 — Tableau d'avancement
 
@@ -176,7 +178,7 @@ $$4k=5{,}05\times10^{-4}\ \mathrm{s^{-1}}$$
 
 $$\boxed{k=\frac{5{,}05\times10^{-4}}{4}=1{,}26\times10^{-4}\ \mathrm{s^{-1}}}$$
 
-Pour un ordre 1, $k$ est homogène à l'inverse d'un temps. Avec la convention $\mathrm dC/\mathrm dt=-k_{\text{app}}C$, on lirait directement $k_{\text{app}}=5{,}05\times10^{-4}\ \mathrm{s^{-1}}$.
+Pour un ordre 1, $k$ est homogène à l'inverse d'un temps. Avec la convention $\mathrm dC/\mathrm dt=-k_{\text{app}}C$, on lirait directement $k_{\text{app}}=5{,}05\times10^{-4}\ \mathrm{s^{-1}}$ ; l'énoncé ne tranche pas entre les deux écritures, et $\tau$ (questions 15 et 16) n'en dépend pas.
 
 ### Question 15 — Temps de décomposition de 90 %
 
@@ -212,9 +214,7 @@ L'azote est central, lié aux trois oxygènes. Pour respecter l'octet sur chaque
 - deux liaisons simples $\mathrm{N-O}$ ; chacun de ces oxygènes porte trois doublets non liants et une charge formelle $-1$ ;
 - l'azote, engagé dans quatre doublets liants et sans doublet non liant, porte une charge formelle $+1$.
 
-En écriture linéaire, doublets non liants non représentés :
-
-$$\mathrm{O=\overset{\oplus}{N}}\left(-\mathrm O^{\ominus}\right)_2$$
+![Figure 2 — Schéma de Lewis de l'ion nitrate (une des trois formules mésomères)](figures/lewis-nitrate.svg)
 
 Vérifications : $4$ doublets liants $+\,2+3+3=8$ doublets non liants, soit 12 doublets ; somme des charges formelles $+1-1-1=-1$, charge de l'ion ; octet respecté pour les quatre atomes. Trois formules mésomères équivalentes s'obtiennent en déplaçant la double liaison : les trois liaisons $\mathrm{N-O}$ sont en réalité identiques et l'ion est plan triangulaire.
 
@@ -294,7 +294,7 @@ $$\boxed{\mathrm{NH_4Cl(s)=NH_4^+(aq)+Cl^-(aq)}}$$
 
 ### Question 24 — Enthalpie standard de dissolution
 
-**Système.** L'ensemble {calorimètre, eau, chlorure d'ammonium}, de son état initial (eau et calorimètre à $\theta_1$, solide non dissous) à son état final (solution et calorimètre à $\theta_2$).
+**Système.** L'ensemble {calorimètre, eau, chlorure d'ammonium}, de son état initial (eau et calorimètre à $\theta_1$, solide non dissous supposé lui aussi à $\theta_1$, l'énoncé ne précisant pas sa température) à son état final (solution et calorimètre à $\theta_2$).
 
 **Premier principe.** La transformation est monobare, avec équilibre mécanique dans l'état initial et dans l'état final, sans autre travail que celui des forces de pression : $\Delta H=Q$. Le calorimètre est supposé parfaitement calorifugé, la transformation est adiabatique : $Q=0$. Donc
 
@@ -351,7 +351,7 @@ Espèces électroactives : le zinc de l'électrode, les ions $\mathrm{Zn^{2+}}$ 
 
 Bien que $E^\circ(\mathrm{H^+/H_2})=0\ \mathrm V$ soit supérieur à $E_1$, la réduction de $\mathrm{H^+}$ ne démarre qu'à des potentiels bien plus bas : ce couple est lent sur le zinc (forte surtension cathodique).
 
-![Figure 2 — Courbe courant-potentiel de la solution S sur électrode de zinc, avec le processus de chaque portion](figures/courbe-courant-potentiel-zinc.svg)
+![Figure 3 — Courbe courant-potentiel de la solution S sur électrode de zinc, avec le processus de chaque portion](figures/courbe-courant-potentiel-zinc.svg)
 
 ### Question 27 — Potentiel à courant nul
 
@@ -392,7 +392,7 @@ La réduction à la cathode consomme des électrons, que le générateur doit fo
 
 Dans le circuit extérieur, les électrons vont de l'anode de graphite vers la borne $+$ du générateur, puis de la borne $-$ vers la cathode de zinc ; le courant $I$ circule en sens inverse (il sort par la borne $+$ et entre dans la solution par l'anode). Dans la solution, le courant est porté par les ions : cations vers la cathode, anions vers l'anode.
 
-![Figure 3 — Montage d'électrolyse, branchement du générateur et sens des électrons](figures/montage-electrolyse-zinc.svg)
+![Figure 4 — Montage d'électrolyse, branchement du générateur et sens des électrons](figures/montage-electrolyse-zinc.svg)
 
 ### Question 32 — Masse de zinc déposée
 
@@ -430,7 +430,7 @@ Le chlorure d'ammonium est un électrolyte fort dont les ions $\mathrm{NH_4^+}$ 
 
 Maille cubique d'arête $a$ : un ion chlorure à chacun des huit sommets, un ion ammonium (représenté par son atome d'azote) au centre du cube.
 
-![Figure 4 — Maille cubique du chlorure d'ammonium](figures/maille-chlorure-ammonium.svg)
+![Figure 5 — Maille cubique du chlorure d'ammonium](figures/maille-chlorure-ammonium.svg)
 
 Population : $8\times\tfrac18=1$ ion $\mathrm{Cl^-}$ et $1$ ion $\mathrm{NH_4^+}$ par maille, ce qui respecte la stœchiométrie et la neutralité de $\mathrm{NH_4Cl}$.
 
