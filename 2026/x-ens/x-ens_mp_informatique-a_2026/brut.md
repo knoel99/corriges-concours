@@ -10,6 +10,8 @@
 
 **Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision (tour 4)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 
 *Bases de données de vecteurs.* Durée 4 h, calculatrice interdite, langage OCaml. On note $[n]=\{0,\dots,n-1\}$ et $\log$ le logarithme en base 2.
 
@@ -149,16 +151,48 @@ let tosignature (sp : sparse) (delta : int) : signature =
   !resultat
 ```
 
+Si l’on accepte qu’un triplet réalisé plusieurs fois figure plusieurs fois dans la liste, la double boucle suffit et tient en quelques lignes :
+
+```ocaml
+let tosignature_simple (sp : sparse) (delta : int) : signature =
+  let a = Array.of_list sp in
+  let res = ref [] in
+  Array.iter (fun (f, t) ->
+    Array.iter (fun (g, u) ->
+      if 0 < u - t && u - t <= delta then res := (f, g, u - t) :: !res
+    ) a
+  ) a;
+  !res
+```
+
+Elle est aussi en $O(n^2)$ : deux parcours imbriqués du tableau et un travail constant par couple. L’arbre de préfixes ne sert qu’à garantir une liste sans répétition tout en restant en $O(n^2)$.
+
 **(b)** Chaque paire autorisée par (1) propose sa clé et chaque clé apparaît une seule fois dans la liste finale. Sur les entiers OCaml à 63 bits de l’énoncé, une consultation de l’arbre examine $3\times62$ bits, indépendamment de $n$. Les deux parcours du tableau coûtent donc $O(n^2)$ dans le pire cas. Pour $U$ triplets distincts, l’arbre contient au plus $1+186U$ nœuds.
 
 ### Question I.8
 
-**(a)** Le jury attend le balayage par une file d’instants. Avant d’enfiler $t$, on retire les instants $u$ tels que $t-u>\Delta$. Le nombre d’éléments restants est exactement le nombre de **couples d’occurrences** qui se terminent en $t$. La taille de l’**ensemble** défini par (1) peut être plus petite. Par exemple, avec `[(1,0); (1,1); (1,2)]` et $\Delta=1$, les temps sont distincts, mais les deux couples donnent le seul triplet $(1,1,1)$.
-
-Pour respecter la définition ensembliste, gardons les fréquences dans la file et mémorisons les triplets avec `nouveau` de I.7.
+**(a)** Le jury attend le balayage par une file d’instants. Avant d’enfiler $t$, on retire les instants $u$ tels que $t-u>\Delta$. Le nombre d’éléments restants est exactement le nombre de **couples d’occurrences** qui se terminent en $t$ : on l’ajoute au total.
 
 ```ocaml
 let signature_size (sp : sparse) (delta : int) : int =
+  let q = Queue.create () in
+  let total = ref 0 in
+  List.iter (fun (_, t) ->
+    while Queue.length q > 0 && t - Queue.peek q > delta do
+      Queue.drop q
+    done;
+    total := !total + Queue.length q;
+    Queue.push t q
+  ) sp;
+  !total
+```
+
+Cette fonction compte les couples d’occurrences. La taille de l’**ensemble** défini par (1) peut être plus petite. Par exemple, avec `[(1,0); (1,1); (1,2)]` et $\Delta=1$, les temps sont distincts, mais les deux couples donnent le seul triplet $(1,1,1)$.
+
+Pour respecter strictement la définition ensembliste lorsque plusieurs couples réalisent le même triplet, on garde les fréquences dans la file et on mémorise les triplets avec `nouveau` de I.7.
+
+```ocaml
+let signature_size_ensemble (sp : sparse) (delta : int) : int =
   let q = Queue.create () and vus = vide () in
   let total = ref 0 in
   List.iter (fun (g, t) ->
@@ -173,15 +207,17 @@ let signature_size (sp : sparse) (delta : int) : int =
   !total
 ```
 
-**(b)** Au moment du parcours de la file, ses entrées sont exactement les occurrences antérieures telles que $0<t-u\le\Delta$. Les dates sont strictement croissantes, donc un élément retiré restera trop ancien. Chaque réalisation d’un triplet se présente à sa date de fin. `nouveau` augmente le compteur uniquement à la première réalisation. Les deux exemples de l’énoncé donnent respectivement 0 et 10.
+**(b)** Une fois les instants trop anciens retirés, les entrées de la file sont exactement les occurrences antérieures telles que $0<t-u\le\Delta$. Les dates sont strictement croissantes, donc un élément retiré restera trop ancien. Chaque couple est ainsi compté une seule fois, à sa date de fin, par l’addition de `Queue.length q`. Dans `signature_size_ensemble`, chaque réalisation d’un triplet se présente de même à sa date de fin et `nouveau` augmente le compteur uniquement à la première réalisation. Avec les deux fonctions, les deux exemples de l’énoncé donnent respectivement 0 et 10.
 
 ![Figure 1 — Un pas de signature_size avec Δ = 4 : à l'arrivée de t_j = 10, les instants 4 et 5 sont défilés, les deux instants restants donnent deux couples candidats, puis t_j est enfilé](figures/i8-file-fenetre-glissante.svg)
 
-Si $P$ est le nombre de couples qui satisfont la borne temporelle, les enfilements et défilements coûtent $O(n)$ en tout et le traitement des couples coûte $O(P)$. Le coût total est $O(n+P)$, avec $P\le n\min(n,\Delta)$ puisque les temps sont des entiers distincts. Il est donc linéaire en $n$ pour $\Delta$ fixé. Pour compter seulement les couples, la variante du jury remplace le parcours de la file par l’addition de `Queue.length q`. Son coût reste $O(n)$ même si $\Delta$ varie. Ce dernier compteur fournit directement le cardinal de la signature lorsque chaque triplet n’a qu’une réalisation.
+Complexité de `signature_size` : chaque instant est enfilé une fois et défilé au plus une fois, et `Queue.length` est en $O(1)$. Un tour de la boucle `while` peut être long, mais le coût total est $O(n)$, amorti sur l’ensemble du parcours, quel que soit $\Delta$. Cette fonction fournit directement le cardinal de la signature lorsque chaque triplet n’a qu’une réalisation.
+
+Pour `signature_size_ensemble`, si $P$ est le nombre de couples qui satisfont la borne temporelle, les enfilements et défilements coûtent $O(n)$ en tout et le traitement des couples coûte $O(P)$. Le coût total est $O(n+P)$, avec $P\le n\min(n,\Delta)$ puisque les temps sont des entiers distincts. Il n’est donc linéaire en $n$ que pour $\Delta$ fixé.
 
 ### Question I.9
 
-**La musique $A$ correspond le mieux à l’extrait.** La figure 2 place les trois écarts de $A$ dans une seule classe de l’histogramme, autour de 1. Pour $B$, ils se répartissent autour de 3, 8 et 11. Une translation de l’extrait dans la musique produit un décalage constant, quelle que soit son amplitude. L’histogramme de $A$ est donc le plus compatible avec cette hypothèse.
+**La musique $A$ correspond le mieux à l’extrait.** La figure 2 place les trois écarts de $A$ dans une seule classe de l’histogramme, autour de 1. Pour $B$, ils tombent dans trois classes éloignées, vers 3–4, 8 et 11–12. Une translation de l’extrait dans la musique produit un décalage constant, quelle que soit son amplitude. L’histogramme de $A$ est donc le plus compatible avec cette hypothèse.
 
 Le texte annonce des écarts en valeur absolue. Des amplitudes égales constituent un indice de cohérence. Pour confirmer la translation, on vérifierait que les trois écarts signés sont égaux. Les trois correspondances dans chaque musique donnent le numérateur de Jaccard. Les tailles des unions seraient nécessaires pour comparer les deux indices.
 
@@ -282,7 +318,7 @@ Calculons d’abord dans le modèle sans bord gauche utilisé pour obtenir la fo
 - en **descendant** depuis $(x,i+1)$, si $x$ est présent à l'étage $i+1$. À l'envers, on monte d'un étage ;
 - **horizontalement** depuis le prédécesseur de $x$ à l'étage $i$, sinon. À l'envers, on reste à l'étage $i$.
 
-En effet, si $x$ est présent à l'étage $i+1$, la recherche directe l'y a atteint, puis elle a dû y descendre, car son successeur à cet étage est absent ou de valeur $\geq v$.
+En effet, si $x$ est présent à l'étage $i+1$, la recherche directe l'y a atteint, puis elle a dû y descendre, car son successeur à cet étage est absent ou de valeur $>v$.
 
 Sachant que $x$ est présent à l'étage $i$, il l'est aussi à l'étage supérieur avec probabilité $p$ : `random_level` fait un tirage indépendant de plus. Ce tirage est indépendant de la partie du chemin déjà remontée.
 
@@ -380,9 +416,9 @@ let closest (query : vector) (g : hgraph) : int =
 
 À chaque tour, on passe au voisin le plus proche de `query` s'il réduit strictement la distance. Sinon, on descend d'un étage. À l'étage 0, on renvoie le nœud atteint, qui est un minimum local.
 
-**(b)** On note $\delta=\texttt{dist query db.(current)}$. Cette quantité décroît strictement à chaque déplacement et ne change pas lors d'une descente. Les nœuds successivement visités sont donc deux à deux distincts, ce qui fait au plus $n-1$ déplacements. Il y a au plus $L-1$ descentes. Un même couple (nœud, étage) n'est donc examiné qu'une fois. La liste d'adjacence parcourue au tour courant est celle de ce couple, et l'ensemble des listes parcourues a une longueur totale au plus $\sum_\ell 2|E_\ell|=2|E|$. Chaque voisin coûte un calcul de distance en $O(d)$. Complexité :
+**(b)** On note $\delta=\texttt{dist query db.(current)}$. Cette quantité décroît strictement à chaque déplacement et ne change pas lors d'une descente. Les nœuds successivement visités sont donc deux à deux distincts, ce qui fait au plus $n-1$ déplacements. Il y a au plus $L-1$ descentes. Un même couple (nœud, étage) n'est donc examiné qu'une fois. La liste d'adjacence parcourue au tour courant est celle de ce couple, et l'ensemble des listes parcourues a une longueur totale au plus $\sum_\ell 2|E_\ell|=2|E|$. Chaque déplacement suit une arête d’une liste qui vient d’être lue, donc le nombre de déplacements est aussi majoré par $2|E|$. Chaque voisin coûte un calcul de distance en $O(d)$. Complexité :
 
-$$\boxed{O\big(d\,(|E|+1)+n+L\big)},$$
+$$\boxed{O\big(d\,(|E|+1)+L\big)},$$
 
 dominée en pratique par $O(d\,|E|)$.
 

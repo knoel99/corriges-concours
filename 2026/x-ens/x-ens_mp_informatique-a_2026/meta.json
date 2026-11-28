@@ -89,9 +89,21 @@
       "agent": "archives_2016_2022",
       "fournisseur": "codex",
       "perimetre": "Relecture des 25 questions, de leurs subdivisions, du rapport et des quatre schémas. En I.9–10, lecture de l’histogramme, extension du minHash aux signatures vides et précision des données à relire pour départager les candidats. Correction de la probabilité de montée à la sentinelle sur la figure II.4 et du cas où la liste n’atteint pas le seuil en II.5. Mise en cohérence du coût de III.7 avec l’affectation finale de III.6. Exécution des 16 blocs OCaml dans chaque édition, comparaison des deux fonctions de signature sur 5 120 couples entrée–fenêtre et contrôle des collisions minHash par permutations exhaustives."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application d’une seconde relecture contrôlée sur le sujet et le rapport du jury. I.8 : la fonction attendue par le jury (file d’instants, addition de Queue.length, coût amorti linéaire) devient la réponse principale, la version ensembliste est renommée signature_size_ensemble, la justification et la complexité sont séparées pour les deux fonctions, encadré JURY ajouté au guidé. I.7 : ajout de la double boucle simple et d’une indication sur les triplets répétés. I.9 : lecture des classes de l’histogramme de B (3–4, 8, 11–12) et encadré JURY au guidé. II.4 (brut) : inégalité stricte sur le successeur. II.7(b) : borne resserrée en O(d(|E|+1)+L). Code de I.7 et I.8 exécuté sous OCaml 4.14.1 (Queue.drop émulée) : exemples de l’énoncé et 5 000 entrées aléatoires contre des références naïves."
     }
   ],
-  "date_revision": "2026-11-26",
+  "date_revision": "2026-11-28",
   "revision": {
     "date": "2026-11-26",
     "modele": "GPT-6.2 Astra (effort Ultra)",
