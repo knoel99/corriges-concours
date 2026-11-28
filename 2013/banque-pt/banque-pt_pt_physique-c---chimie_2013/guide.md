@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** Le monoxyde de carbone, réducteur industriel et poison : la molécule, son rôle dans la pyrométallurgie du zinc, puis le dosage de la carboxyhémoglobine dans le sang. L'épreuve dure 2 heures, **sans calculatrice**, et comporte 42 questions numérotées de 1 à 42, réparties en trois parties largement indépendantes. Deux feuilles annexes sont à rendre avec la copie : les mailles à dessiner et le diagramme d'Ellingham à compléter, puis le papier millimétré de la courbe d'étalonnage. Les données et une liste d'aides numériques figurent à la fin de l'énoncé.
@@ -628,7 +630,7 @@ $$
 
 #### Solution
 
-À $T = 1273\ \mathrm{K}$, la courbe en pointillés, sur son segment de forte pente (zinc gazeux), a une ordonnée située un demi-carreau sous la graduation $-400$. Parmi les valeurs proposées, la plus proche est
+À $T = 1273\ \mathrm{K}$, la courbe en pointillés, sur son segment de forte pente (zinc gazeux), a une ordonnée située entre un demi-carreau et un carreau sous la graduation $-400$, soit une lecture voisine de $-415\ \mathrm{kJ\cdot mol^{-1}}$ (un carreau vaut $20\ \mathrm{kJ\cdot mol^{-1}}$). Parmi les valeurs proposées, la plus proche est
 
 $$\boxed{\Delta_r G_{\mathrm{ZnO/Zn}}^\circ(1000\ °\mathrm{C}) = -410\ \mathrm{kJ\cdot mol^{-1}}}$$
 
@@ -740,7 +742,7 @@ $$\Delta_r G_5^\circ = \frac{\Delta_r G_1^\circ - \Delta_r G_{\mathrm{ZnO/Zn}}^\
 
 valeur identique à $\Delta_r G_4^\circ + \Delta_r G_{\text{Boud}}^\circ$ et qui redonne $K_5^\circ = \exp\left(\dfrac{20{,}0\cdot10^{3}}{8{,}314 \times 1273}\right) \approx 6{,}6$. Le diagramme et le calcul sont en accord.
 
-La réduction par $\mathrm{CO}$ seul ne deviendrait favorable qu'au-delà du croisement de la courbe du zinc avec la droite 3, vers 1500 K d'après l'annexe.
+La réduction par $\mathrm{CO}$ seul ne deviendrait favorable qu'au-delà du croisement de la courbe du zinc avec la droite 3, vers 1530 K d'après l'annexe.
 
 > [!PIEGE]
 > « Domaines disjoints » se raisonne avec l'oxydant d'un couple et le réducteur de l'autre : $\mathrm{ZnO}$ au-dessus de sa courbe, $\mathrm{C}$ au-dessous de la sienne. Comparer $\mathrm{Zn}$ et $\mathrm{C}$ n'a pas de sens.
@@ -847,7 +849,7 @@ $K^\circ \approx 10^{49} \gg 10^{4}$ : la réaction est **quantitative (totale)*
 
 $$\boxed{n(\mathrm{Pd})_{\text{formé}} = n(\mathrm{CO})_{\text{libéré}}}$$
 
-La réaction peut donc servir de support à un dosage. (La thermodynamique ne dit rien de la vitesse : il faut aussi que la réaction soit assez rapide, ce qu'assure le protocole de microdiffusion.)
+La réaction peut donc servir de support à un dosage. (La thermodynamique ne dit rien de la vitesse : il faut aussi que la réaction soit assez rapide, point sur lequel l'énoncé ne donne aucune information.)
 
 > [!PIEGE]
 > « La réaction est favorable » est insuffisant : la conclusion utile pour la suite est le caractère total et la relation entre quantités de matière qu'il permet d'écrire.
@@ -971,7 +973,7 @@ $$\boxed{\%\,\mathrm{CO}_{(5)} \approx 62{,}1\ \%}$$
 
 Ces valeurs se retrouvent par lecture sur la droite de la figure 3 : environ 1 % et 62 %.
 
-Remarque sur la précision : pour le spectre n° 4, $r$ ne diffère de $r_{0\,\%}$ que de $0{,}011$, c'est-à-dire de l'ordre de la précision des absorbances ; le résultat signifie « environ 1 %, en tout cas très faible ». Les absorbances résiduelles à 700 nm ($0{,}008$ et $0{,}011$), où aucune des deux formes n'absorbe, donnent l'ordre de grandeur de l'incertitude sur la ligne de base : les retrancher conduirait à environ 0,1 % et 61 %, sans changer les conclusions.
+Remarque sur la précision : ces pourcentages sont obtenus avec les quotients arrondis fournis par l'énoncé ($1{,}754$ et $1{,}222$) ; sans arrondir les quotients ($1{,}049/0{,}598 \approx 1{,}7542$ et $0{,}583/0{,}477 \approx 1{,}2222$), on trouverait $1{,}24\ \%$ et $62{,}0\ \%$ : le troisième chiffre dépend donc de l'arrondi des aides numériques. Pour le spectre n° 4, $r$ ne diffère de $r_{0\,\%}$ que de $0{,}011$, c'est-à-dire de l'ordre de la précision des absorbances ; le résultat signifie « environ 1 %, en tout cas très faible ». Les absorbances résiduelles à 700 nm ($0{,}008$ et $0{,}011$), où aucune des deux formes n'absorbe, donnent l'ordre de grandeur de l'incertitude sur la ligne de base : les retrancher conduirait à environ 0,1 % et 61 %, sans changer les conclusions.
 
 > [!PIEGE]
 > Prendre le rapport des deux maxima du spectre (lignes 1 et 2 du tableau) n'est pas ce que définit l'énoncé : $r$ est le rapport de l'absorbance à 576,5 nm à l'absorbance à 560,5 nm, c'est-à-dire la ligne 1 divisée par la ligne 4.
@@ -1011,6 +1013,6 @@ Remarque sur la précision : pour le spectre n° 4, $r$ ne diffère de $r_{0\,\%
 
 **Résultats numériques.** Structure cubique : $a \approx 245\ \mathrm{pm}$, $\rho \approx 9{,}19\cdot10^{3}\ \mathrm{kg\cdot m^{-3}}$ ; structure Rocksalt : $a = 424\ \mathrm{pm}$, $\rho \approx 7{,}09\cdot10^{3}\ \mathrm{kg\cdot m^{-3}}$ ; Würtzite : 2 motifs par maille, $\rho \approx 5{,}67\cdot10^{3}\ \mathrm{kg\cdot m^{-3}}$. À 1000 °C : $\Delta_r G_1^\circ = -450$, $\Delta_r G_3^\circ = -345$, $\Delta_r G_{\mathrm{ZnO/Zn}}^\circ = -410$, $\Delta_r G_{\text{Boud}}^\circ = -52{,}5$ et $\Delta_r G_4^\circ = +32{,}5\ \mathrm{kJ\cdot mol^{-1}}$ ; $K_{\text{Boud}}^\circ \approx 143$, $K_4^\circ \approx 4{,}64\cdot10^{-2}$, $K_5^\circ \approx 6{,}64$. Oxydation de $\mathrm{CO}$ par $\mathrm{Pd^{2+}}$ : $K^\circ \approx 10^{49}$. Étalonnage : $r = 1{,}765 - 8{,}75\cdot10^{-3} \times \%\,\mathrm{CO}$ ; échantillons à 1,26 % et 62,1 % de $\mathrm{CO}$.
 
-**Erreurs relevées par le jury.** Réponses non justifiées ; résultats non plausibles acceptés sans réaction (masse volumique de quelques grammes par mètre cube) ; consigne des trois chiffres significatifs oubliée ; états physiques absents, d'où des constantes d'équilibre fausses à la question 34 ; aides numériques non vues ; symbole Pb employé pour le palladium ; confusion entre électroneutralité et électronégativité ; contact mal placé dans un cristal ionique ; noms propres des règles mal orthographiés ; représentations de Lewis erronées.
+**Points signalés par le jury.** Réponses non justifiées ; résultats non plausibles acceptés sans réaction (masse volumique de quelques grammes par mètre cube) ; consigne des trois chiffres significatifs à suivre pour chaque calcul ; états physiques absents, d'où des constantes d'équilibre fausses à la question 34 ; aides numériques non vues ; symbole Pb employé pour le palladium ; confusion entre électroneutralité et électronégativité ; contact entre ions de charges opposées dans un cristal ionique ; orthographe des noms propres des règles à connaître ; représentations de Lewis erronées.
 
 **Pour s'entraîner.** Refaire sans aide les questions 13 à 15, puis l'enchaînement 21 à 26 en reproduisant le diagramme à main levée, les questions 29 à 32 en vérifiant chaque combinaison d'équations, enfin 33 à 35 en soignant les états physiques.

@@ -92,6 +92,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Rédaction des corrigés brut et guidé des 42 questions et de trois figures, à partir du sujet et du rapport du jury ; applications numériques recalculées, lectures du diagramme d'Ellingham contrôlées sur le PDF, encadrés JURY relus contre le rapport."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application des cinq défauts mineurs d'une relecture indépendante, vérifiés contre le sujet et son annexe, dans le brut et le guidé : question 28 (lecture de la courbe ZnO/Zn à 1273 K décrite entre un demi-carreau et un carreau sous −400, voisine de −415 kJ/mol, valeur retenue −410 inchangée), question 32 (croisement avec la droite 3 vers 1530 K), question 36 (affirmation non étayée sur la cinétique retirée), question 41 (pourcentages 1,26 % et 62,1 % rattachés aux quotients arrondis de l'énoncé, 1,24 % et 62,0 % sans arrondi), bilan du guidé (« Points signalés par le jury »). Figures : étiquettes du diagramme d'Ellingham déplacées, axe des ordonnées de la droite d'étalonnage repris depuis 0 comme sur le document-réponse. Les dix encadrés JURY du guidé recontrôlés contre le rapport, aucun requalifié."
     }
   ]
 }

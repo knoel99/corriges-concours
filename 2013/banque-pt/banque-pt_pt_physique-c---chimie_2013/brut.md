@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Épreuve de 2 heures, sans calculatrice, sur le monoxyde de carbone : 42 questions numérotées de 1 à 42, en trois parties largement indépendantes (généralités sur la molécule, pyrométallurgie du zinc, nocivité pour l'organisme), avec deux feuilles annexes à rendre. Les 42 questions sont traitées. Les valeurs lues sur l'annexe (diagramme d'Ellingham) et sur les spectres sont signalées à l'endroit où elles servent. Les applications numériques sont menées à la main, avec les aides numériques de l'énoncé, et les résultats finaux sont donnés avec trois chiffres significatifs comme le demande le sujet.
 
 [Sujet officiel](https://www.banquept.fr/documents/2013/ph_c_ch_2013_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2013/rapport_phys_c_ecrit_2013.pdf)
@@ -324,7 +326,7 @@ $$
 
 ### Question 28 — Lecture pour le couple ZnO/Zn à 1000 °C
 
-À $T = 1273\ \mathrm{K}$, la courbe en pointillés, sur son segment de forte pente (zinc gazeux), a une ordonnée située un demi-carreau sous la graduation $-400$. Parmi les valeurs proposées, la plus proche est
+À $T = 1273\ \mathrm{K}$, la courbe en pointillés, sur son segment de forte pente (zinc gazeux), a une ordonnée située entre un demi-carreau et un carreau sous la graduation $-400$, soit une lecture voisine de $-415\ \mathrm{kJ\cdot mol^{-1}}$ (un carreau vaut $20\ \mathrm{kJ\cdot mol^{-1}}$). Parmi les valeurs proposées, la plus proche est
 
 $$\boxed{\Delta_r G_{\mathrm{ZnO/Zn}}^\circ(1000\ °\mathrm{C}) = -410\ \mathrm{kJ\cdot mol^{-1}}}$$
 
@@ -392,7 +394,7 @@ $$\Delta_r G_5^\circ = \frac{\Delta_r G_1^\circ - \Delta_r G_{\mathrm{ZnO/Zn}}^\
 
 valeur identique à $\Delta_r G_4^\circ + \Delta_r G_{\text{Boud}}^\circ$ et qui redonne $K_5^\circ = \exp\left(\dfrac{20{,}0\cdot10^{3}}{8{,}314 \times 1273}\right) \approx 6{,}6$. Le diagramme et le calcul sont en accord.
 
-La réduction par $\mathrm{CO}$ seul ne deviendrait favorable qu'au-delà du croisement de la courbe du zinc avec la droite 3, vers 1500 K d'après l'annexe.
+La réduction par $\mathrm{CO}$ seul ne deviendrait favorable qu'au-delà du croisement de la courbe du zinc avec la droite 3, vers 1530 K d'après l'annexe.
 
 ## Partie 3 — Nocivité du CO pour l'organisme
 
@@ -452,7 +454,7 @@ $K^\circ \approx 10^{49} \gg 10^{4}$ : la réaction est **quantitative (totale)*
 
 $$\boxed{n(\mathrm{Pd})_{\text{formé}} = n(\mathrm{CO})_{\text{libéré}}}$$
 
-La réaction peut donc servir de support à un dosage. (La thermodynamique ne dit rien de la vitesse : il faut aussi que la réaction soit assez rapide, ce qu'assure le protocole de microdiffusion.)
+La réaction peut donc servir de support à un dosage. (La thermodynamique ne dit rien de la vitesse : il faut aussi que la réaction soit assez rapide, point sur lequel l'énoncé ne donne aucune information.)
 
 ### Question 37 — Du titrage du palladium au pourcentage de CO
 
@@ -527,7 +529,7 @@ $$\boxed{\%\,\mathrm{CO}_{(5)} \approx 62{,}1\ \%}$$
 
 Ces valeurs se retrouvent par lecture sur la droite de la figure 3 : environ 1 % et 62 %.
 
-Remarque sur la précision : pour le spectre n° 4, $r$ ne diffère de $r_{0\,\%}$ que de $0{,}011$, c'est-à-dire de l'ordre de la précision des absorbances ; le résultat signifie « environ 1 %, en tout cas très faible ». Les absorbances résiduelles à 700 nm ($0{,}008$ et $0{,}011$), où aucune des deux formes n'absorbe, donnent l'ordre de grandeur de l'incertitude sur la ligne de base : les retrancher conduirait à environ 0,1 % et 61 %, sans changer les conclusions.
+Remarque sur la précision : ces pourcentages sont obtenus avec les quotients arrondis fournis par l'énoncé ($1{,}754$ et $1{,}222$) ; sans arrondir les quotients ($1{,}049/0{,}598 \approx 1{,}7542$ et $0{,}583/0{,}477 \approx 1{,}2222$), on trouverait $1{,}24\ \%$ et $62{,}0\ \%$ : le troisième chiffre dépend donc de l'arrondi des aides numériques. Pour le spectre n° 4, $r$ ne diffère de $r_{0\,\%}$ que de $0{,}011$, c'est-à-dire de l'ordre de la précision des absorbances ; le résultat signifie « environ 1 %, en tout cas très faible ». Les absorbances résiduelles à 700 nm ($0{,}008$ et $0{,}011$), où aucune des deux formes n'absorbe, donnent l'ordre de grandeur de l'incertitude sur la ligne de base : les retrancher conduirait à environ 0,1 % et 61 %, sans changer les conclusions.
 
 ### Question 42 — Conclusions pour chaque situation
 
