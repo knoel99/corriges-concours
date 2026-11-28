@@ -1,0 +1,98 @@
+{
+  "slug": "banque-pt_pt_physique-b---chimie_2019",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique B - Chimie",
+    "annee": 2019
+  },
+  "questions": 38,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2019/ph_b_ch_2019_pt.pdf",
+    "sujet_sha256": "d28b0bdd4493a5a0b5fe30c2057894d361f6df7fa8b609efdce193487e53bb58",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2019/rapport_phys_b_ecrit_2019.pdf",
+    "rapport_sha256": "127df965f60c19d552d6b389b8889e0c203655b34ff6344e4d613c8236a02955"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38"
+    ],
+    "precision": "Sujet de 8 pages PDF lu en entier (page de garde, énoncé p. 2 à 6, deux pages blanches) ; 38 questions numérotées de 1 à 38, toutes traitées. Rapport commun à Physique B de 5 pages, partie chimie p. 1 et 2. Aucun document à rendre. Lectures graphiques : équations des droites de régression et coefficients de détermination des trois graphes (question 37). Le tableau de la question 15 donne une température d'inversion de 1000 K, alors que l'énoncé fixe ensuite une constante de 0,20 à 1100 K : la donnée de l'énoncé est utilisée telle quelle aux questions 17 à 20."
+  },
+  "figures": [
+    {
+      "fichier": "figures/maille-cfc-calcium.svg",
+      "question": "6",
+      "legende": "Maille cubique à faces centrées du calcium, sites octaédriques et tétraédriques, contact le long de la diagonale d'une face."
+    },
+    {
+      "fichier": "figures/pression-volume-calcination.svg",
+      "question": "20",
+      "legende": "Pression dans le réacteur à 1100 K en fonction du volume : palier d'équilibre à 0,20 bar puis branche d'hyperbole après la rupture d'équilibre."
+    },
+    {
+      "fichier": "figures/lewis-carbonate-hydrogenocarbonate.svg",
+      "question": "21",
+      "legende": "Schémas de Lewis de l'ion carbonate et de l'ion hydrogénocarbonate."
+    },
+    {
+      "fichier": "figures/diagramme-predominance-carbonates.svg",
+      "question": "22",
+      "legende": "Diagramme de prédominance des espèces carbonatées, frontières à pH 6,4 et 10,3, zone de pH de l'océan."
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des corrigés brut et guidé des 38 questions et de quatre figures, à partir du sujet et du rapport du jury ; applications numériques recalculées et lectures des graphes contrôlées sur le PDF."
+    }
+  ]
+}
