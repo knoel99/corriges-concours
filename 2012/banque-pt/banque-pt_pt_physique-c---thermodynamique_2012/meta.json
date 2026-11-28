@@ -1,0 +1,111 @@
+{
+  "slug": "banque-pt_pt_physique-c---thermodynamique_2012",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique C - Thermodynamique",
+    "annee": 2012
+  },
+  "questions": 40,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2012/phys_c_pt_2012.zip",
+    "sujet_sha256": "32de2bc10cca9954a2f5e57be6021c6e01b915a5945409de3b9dca4c69c72ed9",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2012/rapport_phys_c_ecrit_2012.pdf",
+    "rapport_sha256": "58d8488e229e31319f9e50138be60d059416ca11177b85cc545906248b1519c6",
+    "precision": "L'archive phys_c_pt_2012.zip (SHA-256 32de2bc10cca9954a2f5e57be6021c6e01b915a5945409de3b9dca4c69c72ed9) réunit les deux parties de Physique C. Partie thermodynamique, identifiée par sa page de garde « Epreuve de Physique C - Thermodynamique » : fichier interne ph_c_pt_2012/ph_c_pt_2012_thermo/ph_c_pt_2012_thermo_sujet.pdf (12 pages PDF, SHA-256 056e49b77b0a170191e3903939f4de8d566088fe330e2562d0df20ea79174f59) et document réponse ph_c_pt_2012/ph_c_pt_2012_thermo/ph_c_pt_2012_thermo_annexe.pdf (2 pages PDF, SHA-256 207a83258c96a7bdec57d8be0d3c31fa682313f5464284c3c9ac80655840642e). Empreintes de l'archive, des deux fichiers internes et du rapport identiques à celles de campagnes/x-ens/bilans/sources-epreuves-banque-pt-2008-2016.tsv. Aucun fichier campagnes/x-ens/bilans/constat-*.tsv ne porte sur cette épreuve."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "precision": "Sujet de 12 pages PDF lues en image : page de garde, énoncé sur les pages numérotées 2/8 à 8/8, puis quatre pages sans contenu ; document réponse de 2 pages PDF (figure 8, verso sans contenu). 40 questions numérotées de 1 à 40, toutes traitées. Rapport commun à Physique C de 5 pages PDF, partie thermodynamique sur les pages imprimées 17 et 18, lues en image. Le sujet ne contient ni table ni diagramme gradué : aucune valeur n'est lue sur une figure. Les figures 4, 6 et 8 du sujet sont des schémas sans graduation dont les courbes sont identifiées par raisonnement (question 7 : isobares ; question 26 : isentropique à droite, isotherme à gauche ; question 30 : isothermes T1, T2, T5, T6 de bas en haut, isobares P2, Px, P1 de gauche à droite). Applications numériques (questions 4 et 25) refaites par calcul avec les données de l'énoncé (M, gamma, R, T1 = 300 K, T3 = 1000 K). Choix du corrigé signalés dans le texte : valeurs de T2 des cas a et b de la figure de la question 20 (900 K et 330 K) ; rapport de pression 3 par étage pour les figures des questions 27, 29 et 30 ; T5 = 700 K pour la figure de la question 30 ; Ta = 300 K, Tb = 1000 K et P2/P1 = 9 pour la figure de la question 35 ; noms A, B, C, D des sommets du cycle limite. Question 32 : le corrigé compte au dénominateur du rendement la chaleur de la chambre de combustion et celle du réchauffement entre les deux turbines, la chaleur du régénérateur étant interne."
+  },
+  "figures": [
+    {
+      "fichier": "figures/q05-cycle-joule-clapeyron.svg",
+      "question": "5",
+      "legende": "Cycle de Joule dans le diagramme de Clapeyron (P, v), tracé à l'échelle pour le rapport de pression de la question 25 ; sens de parcours horaire, aire égale au travail net."
+    },
+    {
+      "fichier": "figures/q20-cycles-joule-entropique.svg",
+      "question": "20",
+      "legende": "Cycles de Joule dans le diagramme (T, s) pour T₁ = 300 K, T₃ = 1000 K et P₁ fixés : cas a (T₂ = 900 K), cas b (T₂ = 330 K) et cas d'aire maximale (T₂ = T₄ = 548 K)."
+    },
+    {
+      "fichier": "figures/q27-compression-etagee-clapeyron.svg",
+      "question": "27",
+      "legende": "Compression à un étage (1 à 2) et à deux étages (1, 1a, 1b, 2a) dans le diagramme de Clapeyron, avec l'isotherme T₁ ; l'aire verte est le travail économisé (questions 26 à 28)."
+    },
+    {
+      "fichier": "figures/q29-compression-etagee-entropique.svg",
+      "question": "29",
+      "legende": "Compression à deux étages dans le diagramme (T, s) : isobares P₁, Pₓ, P₂, isotherme T₁ et évolutions 1 à 1a, 1a à 1b, 1b à 2a."
+    },
+    {
+      "fichier": "figures/q30-cycle-regenerateur-entropique.svg",
+      "question": "30",
+      "legende": "Cycle de la turbine à deux étages de compression et de détente avec régénérateur, points 1 à 10 placés sur les isobares et les isothermes de la figure 8, avec les transferts thermiques de la question 31."
+    },
+    {
+      "fichier": "figures/q35-cycle-isothermes-isobares.svg",
+      "question": "35",
+      "legende": "Cycle limite à nombre infini d'étages : deux isothermes et deux isobares dans le diagramme (T, s), avec le rôle de chaque évolution (question 36)."
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions (40 questions) à partir du sujet et du document réponse lus en image et du rapport du jury ; applications numériques refaites par calcul, six figures tracées à l'échelle à partir des lois du gaz parfait, encadrés du jury relus contre le rapport."
+    }
+  ]
+}

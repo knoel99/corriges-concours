@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" font-family="sans-serif" font-size="13">
+<rect width="720" height="480" fill="#ffffff"/>
+<line x1="80" y1="420" x2="700" y2="420" stroke="#222" stroke-width="1.5"/>
+<line x1="80" y1="420" x2="80" y2="25" stroke="#222" stroke-width="1.5"/>
+<path d="M704,420 l-9,-4 v8 z" fill="#222"/>
+<path d="M80,21 l-4,9 h8 z" fill="#222"/>
+<text x="702" y="444" text-anchor="end" font-size="15">s</text>
+<text x="70" y="30" text-anchor="end" font-size="15">T</text>
+<polyline points="340.8,397.6 351.1,389.8 361.2,382.0 370.9,374.2 380.4,366.4 389.7,358.5 398.7,350.7 407.5,342.9 416.1,335.1 424.5,327.2 432.6,319.4 440.7,311.6 448.5,303.8 456.2,295.9 463.7,288.1 471.0,280.3 478.2,272.5 485.3,264.6 492.2,256.8 499.0,249.0 505.7,241.2 512.3,233.4 518.7,225.5 525.0,217.7 531.2,209.9 537.3,202.1 543.3,194.2 549.2,186.4 555.0,178.6 560.7,170.8 566.4,162.9 571.9,155.1 577.4,147.3 582.7,139.5 588.0,131.6 593.2,123.8 598.4,116.0 603.5,108.2 608.5,100.4 613.4,92.5 618.3,84.7" fill="none" stroke="#777" stroke-width="1.4" stroke-linejoin="round"/>
+<text x="618.3" y="76.7" text-anchor="middle" fill="#555" font-size="13">P₁</text>
+<polyline points="228.2,397.6 238.5,389.8 248.5,382.0 258.3,374.2 267.8,366.4 277.0,358.5 286.0,350.7 294.8,342.9 303.4,335.1 311.8,327.2 320.0,319.4 328.0,311.6 335.9,303.8 343.5,295.9 351.0,288.1 358.4,280.3 365.6,272.5 372.7,264.6 379.6,256.8 386.4,249.0 393.1,241.2 399.6,233.4 406.1,225.5 412.4,217.7 418.6,209.9 424.7,202.1 430.7,194.2 436.6,186.4 442.4,178.6 448.1,170.8 453.7,162.9 459.3,155.1 464.7,147.3 470.1,139.5 475.4,131.6 480.6,123.8 485.8,116.0 490.8,108.2 495.8,100.4 500.8,92.5 505.6,84.7" fill="none" stroke="#777" stroke-width="1.4" stroke-linejoin="round"/>
+<text x="505.6" y="76.7" text-anchor="middle" fill="#555" font-size="13">Pₓ</text>
+<polyline points="115.6,397.6 125.9,389.8 135.9,382.0 145.7,374.2 155.1,366.4 164.4,358.5 173.4,350.7 182.2,342.9 190.8,335.1 199.2,327.2 207.4,319.4 215.4,311.6 223.2,303.8 230.9,295.9 238.4,288.1 245.8,280.3 253.0,272.5 260.0,264.6 267.0,256.8 273.8,249.0 280.4,241.2 287.0,233.4 293.4,225.5 299.7,217.7 306.0,209.9 312.1,202.1 318.1,194.2 324.0,186.4 329.8,178.6 335.5,170.8 341.1,162.9 346.6,155.1 352.1,147.3 357.5,139.5 362.8,131.6 368.0,123.8 373.1,116.0 378.2,108.2 383.2,100.4 388.1,92.5 393.0,84.7" fill="none" stroke="#777" stroke-width="1.4" stroke-linejoin="round"/>
+<text x="393.0" y="76.7" text-anchor="middle" fill="#555" font-size="13">P₂</text>
+<polyline points="80.0,330.6 672.1,330.6" fill="none" stroke="#1565c0" stroke-width="1.2" stroke-linejoin="round" stroke-dasharray="7 4"/>
+<line x1="76" y1="330.6" x2="80" y2="330.6" stroke="#222"/>
+<text x="72" y="334.6" text-anchor="end">T₁</text>
+<line x1="76" y1="207.0" x2="80" y2="207.0" stroke="#222"/>
+<text x="72" y="211.0" text-anchor="end">T₁ₐ = T₂ₐ</text>
+<polyline points="80.0,207.0 420.9,207.0" fill="none" stroke="#777" stroke-width="1" stroke-linejoin="round" stroke-dasharray="2 4"/>
+<polyline points="420.9,330.6 420.9,207.0 420.9,207.0 418.5,210.0 416.0,213.1 413.6,216.2 411.1,219.3 408.6,222.4 406.1,225.5 403.6,228.6 401.0,231.7 398.4,234.8 395.9,237.9 393.3,241.0 390.6,244.0 388.0,247.1 385.3,250.2 382.7,253.3 380.0,256.4 377.3,259.5 374.5,262.6 371.8,265.7 369.0,268.8 366.2,271.9 363.3,275.0 360.5,278.0 357.6,281.1 354.7,284.2 351.8,287.3 348.9,290.4 345.9,293.5 342.9,296.6 339.9,299.7 336.9,302.8 333.8,305.9 330.7,309.0 327.6,312.0 324.4,315.1 321.2,318.2 318.0,321.3 314.8,324.4 311.5,327.5 308.3,330.6 308.3,207.0" fill="none" stroke="#c62828" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="420.9,207.0 420.9,37.7" fill="none" stroke="#222" stroke-width="1.6" stroke-linejoin="round" stroke-dasharray="5 4"/>
+<circle cx="420.9" cy="330.6" r="4" fill="#c62828"/>
+<text x="428.9" y="348.6" text-anchor="start" font-weight="bold" font-size="15">1</text>
+<circle cx="420.9" cy="207.0" r="4" fill="#c62828"/>
+<text x="428.9" y="211.0" text-anchor="start" font-weight="bold" font-size="15">1a</text>
+<circle cx="308.3" cy="330.6" r="4" fill="#c62828"/>
+<text x="302.3" y="348.6" text-anchor="end" font-weight="bold" font-size="15">1b</text>
+<circle cx="308.3" cy="207.0" r="4" fill="#c62828"/>
+<text x="300.3" y="199.0" text-anchor="end" font-weight="bold" font-size="15">2a</text>
+<circle cx="420.9" cy="37.7" r="4" fill="#222"/>
+<text x="428.9" y="41.7" text-anchor="start" font-weight="bold" font-size="15">2</text>
+<path d="M5,0 l-10,-5 v10 z" fill="#c62828" transform="translate(420.9,285.9) rotate(-90.0)"/>
+<path d="M5,0 l-10,-5 v10 z" fill="#c62828" transform="translate(367.1,270.8) rotate(132.3)"/>
+<path d="M5,0 l-10,-5 v10 z" fill="#c62828" transform="translate(308.3,285.9) rotate(-90.0)"/>
+<text x="442.8" y="140.6" text-anchor="start" fill="#222" font-size="12">compression à un étage</text>
+<text x="442.8" y="155.6" text-anchor="start" fill="#222" font-size="12">(de 1 à 2, en pointillés)</text>
+<text x="582.4" y="322.6" text-anchor="start" fill="#1565c0" font-size="12">isotherme T₁</text>
+</svg>
