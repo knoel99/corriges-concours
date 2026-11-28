@@ -12,6 +12,8 @@
 
 **Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision (tour 5)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** Le sujet s'intitule *Étude des ondes mécaniques dans une plaque élastique*. Il construit, par une démarche **entièrement énergétique**, la physique des ondes de flexion d'une plaque mince, puis l'applique à des situations concrètes (verre qui chante, séismes, lac gelé). Il se termine par une méthode optique de mesure de ces vibrations, la vibrométrie laser. L'épreuve dure 4 heures, la calculatrice est **interdite**, et le sujet compte **56 questions** en six parties, dont certaines sont indépendantes.
@@ -23,7 +25,7 @@
 - **Partie V, applications (Q21–31).** On étudie la quantification sur un anneau et la fréquence du mode $n=2$ d'une flûte à champagne. On confronte le modèle aux ondes sismiques. Le spectrogramme du son d'une pierre sur un lac gelé fournit enfin une signature de la dispersion.
 - **Partie VI, vibrométrie laser (Q32–56).** C'est un interféromètre à deux bras : amplitudes, phases, cohérence, puis signal $U_0\left(1+\cos(4\pi(z-\epsilon)/\lambda_l)\right)$, réglage en quadrature et comptage de franges. On passe ensuite à l'effet Doppler sur un miroir mobile, au battement, à la cellule de Bragg (modulation de fréquence) et à la démodulation par un circuit CR dérivateur.
 
-**Notions mobilisées.** Énergie d'un ressort et passage du discret au continu, OPPH, relation de dispersion, vitesses de phase et de groupe, paquets d'ondes, modes propres et quantification, interférences à deux ondes (cohérence temporelle, formule de Fresnel, contraste), effet Doppler, battements, filtrage du premier ordre. Tout est au programme de MP. Le seul « hors-piste » est le vocabulaire de la modulation de fréquence, que l'énoncé introduit lui-même.
+**Notions mobilisées.** Énergie d'un ressort et passage du discret au continu, OPPH, relation de dispersion, vitesses de phase et de groupe, paquets d'ondes, modes propres et quantification, interférences à deux ondes (cohérence temporelle, formule de Fresnel, contraste), effet Doppler, battements, filtrage du premier ordre. Les outils sont ceux du programme de MP. L'effet Doppler et la modulation de fréquence, qui n'y figurent pas en tant que tels, sont introduits et guidés par l'énoncé lui-même.
 
 **Difficulté et longueur.** Le sujet est long (56 questions) mais très progressif, et beaucoup de questions sont des applications directes. Les parties I à IV sont guidées : les résultats à démontrer sont donnés, ce qui permet de continuer même en cas de blocage. La partie V demande de **commenter**, avec des discussions qualitatives qui rapportent si elles sont précises. La partie VI est la plus technique : il faut suivre deux chemins optiques sans erreur et bien séparer les échelles de temps.
 
@@ -69,7 +71,7 @@ Le ressort $n$ relie les molécules de positions au repos $na$ et $(n+1)a$, donc
 
 $$\delta_n=u((n+1)a,t)-u(na,t)$$
 
-On compte les ressorts dont l’extrémité gauche est au repos dans $[0,\lambda[$, soit $n=0,\ldots,N-1$ avec $N=\lceil\lambda/a\rceil$. L’écart de bord est inférieur à une maille et $N\simeq\lambda/a$ dans la limite continue.
+On somme sur les ressorts dont l’extrémité gauche est au repos dans $[0,\lambda[$, soit $n=0,\ldots,N-1$ avec $N\simeq\lambda/a\gg1$ ressorts. À ce niveau de description, un ressort de plus ou de moins au bord ne change rien.
 
 $$\boxed{E_p^{\lambda}=\sum_{n=0}^{N-1}\tfrac12\,\kappa\,\big[u((n+1)a,t)-u(na,t)\big]^2}$$
 
@@ -633,7 +635,7 @@ Si les 4 km/s désignaient la vitesse de phase, la longueur d’onde serait de 8
 
 #### Solution
 
-- On voit **deux** signaux de même forme, un par impact, séparés d'environ 1,1 s (vers 0,5 s puis vers 1,7 s). La similitude de ces durées est compatible avec des distances d’impact comparables, si les deux impacts émettent la même bande de fréquences.
+- On voit **deux** signaux de même forme, un par impact, séparés d'environ 1,2 s (vers 0,5 s puis vers 1,7 s). Les deux balayages ont à peu près la même durée, ce qui est compatible avec des distances d’impact comparables, si les deux impacts émettent la même bande de fréquences.
 - Dans chaque signal, les hautes fréquences (environ 2 kHz) arrivent les premières, puis la fréquence reçue décroît jusqu'à quelques dizaines de hertz environ 0,5 s plus tard : c'est un **balayage descendant**.
 - La puissance reçue est la plus forte aux basses fréquences, en fin de signal.
 
@@ -721,7 +723,7 @@ $$\boxed{a_1=a_2=\frac{a_0}{4}}$$
 
 Un miroir à 45° en $S_1$ renverrait directement la référence vers $S_3$. On aurait alors $a_1=a_0/2\neq a_2$, et le contraste $2a_1a_2/(a_1^2+a_2^2)$ tomberait à 0,8.
 
-La séparatrice **équilibre les amplitudes**, ce qui donne un contraste égal à 1 et des franges allant de $0$ à $2U_0$. Elle permet aussi d'utiliser le bras $S_1M_1$, dont le miroir réglable par la vis fixe le chemin de référence.
+La séparatrice **équilibre les amplitudes**, ce qui donne un contraste égal à 1 et des franges allant de $0$ à $2U_0$. Elle permet aussi d'utiliser le bras $S_1M_1$, dont l'aller-retour compense celui de la sonde vers $M_2$ (sans lui, la différence de marche au repos vaudrait $2D$) et dont le miroir, réglable par la vis, fixe le chemin de référence.
 
 ![Figure 6 — Trajets et amplitudes de champ après chaque séparatrice. Les deux ondes atteignent la photodiode avec la même amplitude.](figures/q32-bilan-amplitudes.svg)
 
@@ -1030,7 +1032,7 @@ Inverser le mouvement change le signe de $f_D$, donc celui de la phase accumulé
 
 #### Solution
 
-La sonde revient à $f_l+f_B+f_D$ (car $f_B\ll f_l$, le décalage Doppler est inchangé). La référence reste à $f_l$. Donc
+La sonde revient à $f_l+f_B+f_D$ (car $f_B\ll f_l$, le décalage Doppler est inchangé). La référence reste à $f_l$. Le battement se fait donc à la fréquence $f_B+f_D(t)$.
 
 En négligeant le retard de la Q48, la phase du battement vérifie $\Phi'(t)=2\pi[f_B+f_D(t)]$. Ainsi
 

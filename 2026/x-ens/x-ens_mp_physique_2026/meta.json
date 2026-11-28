@@ -60,7 +60,7 @@
       "legende": "Sortie Us(t) du dérivateur : porteuse centrée sur 0 dont l'enveloppe est proportionnelle à fB + fD(t) (modulation exagérée)"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-28",
   "revision": {
     "modele": "OpenAI Codex (GPT-6)",
     "objet": "Relecture des 56 questions à partir du sujet et du rapport 2026. Révision des explications et des schémas."
@@ -146,6 +146,18 @@
         "guide"
       ],
       "perimetre": "Lecture des 56 consignes, des figures et du rapport. Vérification dimensionnelle des énergies et de la loi de dispersion, de la mesure de l’épaisseur de glace, des phases de l’interféromètre et de la démodulation en fréquence. Calcul de la tolérance de réglage de la vis en Q37 et de sa dépendance à la sensibilité demandée."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 5,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application d'une seconde relecture des 56 questions (brut et guidé), chaque défaut revérifié contre le sujet, le rapport et le programme. Q2 : dénombrement des ressorts sans partie entière. Q29 : écart entre les deux signaux de la figure 6 porté à 1,2 s et, dans le guidé, phrase sur la durée des balayages. Q32 : rôle du bras S1M1 dans l'égalité des chemins. Q50 : phrase laissée en suspens complétée. Présentation du guidé : l'effet Doppler et la modulation de fréquence sont introduits par l'énoncé."
     }
   ],
   "couverture": {

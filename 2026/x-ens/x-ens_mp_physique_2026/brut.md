@@ -12,6 +12,8 @@
 
 **Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision (tour 5)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Épreuve n° 5, durée 4 h, calculatrice interdite. Sujet : *Étude des ondes mécaniques dans une plaque élastique*.
 
 ## I. Préambule : onde de compression unidimensionnelle
@@ -28,7 +30,7 @@ Le $n$-ième ressort relie les molécules $n$ et $n+1$, de positions au repos $n
 
 $$\delta_n=u\big((n+1)a,t\big)-u(na,t)$$
 
-On compte les ressorts dont l’extrémité gauche est au repos dans $[0,\lambda[$, soit $n=0,\ldots,N-1$ avec $N=\lceil\lambda/a\rceil$. L’écart de bord est inférieur à une maille et $N\simeq\lambda/a$ dans la limite continue.
+On somme sur les ressorts dont l’extrémité gauche est au repos dans $[0,\lambda[$, soit $n=0,\ldots,N-1$ avec $N\simeq\lambda/a\gg1$ ressorts. À ce niveau de description, un ressort de plus ou de moins au bord ne change rien.
 
 $$\boxed{\begin{aligned}E_p^{\lambda}&=\sum_{n=0}^{N-1}\tfrac12\,\kappa\,\delta_n^{2}\\&=\sum_{n=0}^{N-1}\tfrac12\,\kappa\,\big[u((n+1)a,t)-u(na,t)\big]^2\end{aligned}}$$
 
@@ -348,7 +350,7 @@ Avec $v_g=4\ \mathrm{km\,s^{-1}}$, on trouve $ke\simeq1{,}16$ et $T=\lambda/v_\v
 ### Question 29
 
 Lecture de la figure 6 du sujet :
-- on voit deux signaux de même allure, un par impact, séparés d'environ 1,1 s (le premier commence vers 0,5 s, le second vers 1,7 s). La similitude de leurs durées suggère des distances d’impact comparables si les deux impacts émettent la même bande de fréquences ;
+- on voit deux signaux de même allure, un par impact, séparés d'environ 1,2 s (le premier commence vers 0,5 s, le second vers 1,7 s). La similitude de leurs durées suggère des distances d’impact comparables si les deux impacts émettent la même bande de fréquences ;
 - dans chaque signal, les hautes fréquences (environ 2 kHz) arrivent les premières, puis la fréquence reçue décroît vers quelques dizaines de hertz en environ 0,5 s : c'est un balayage descendant (« chirp ») ;
 - la puissance la plus forte est reçue aux basses fréquences, en fin de signal (traînée claire au voisinage de $f\approx0$).
 
@@ -406,7 +408,7 @@ Un miroir à 45° placé en $S_1$ enverrait directement le faisceau de référen
 
 $$\frac{2a_1a_2}{a_1^2+a_2^2}=0{,}8$$
 
-La séparatrice impose **$a_1=a_2$, donc un contraste maximal égal à 1**. Elle permet aussi d'insérer le bras $S_1M_1$, dont le miroir monté sur vis micrométrique sert à régler finement le chemin optique de référence ($\epsilon$) et à équilibrer les deux bras.
+La séparatrice impose **$a_1=a_2$, donc un contraste maximal égal à 1**. Elle permet aussi d'insérer le bras $S_1M_1$ : l'aller-retour $2(d+\epsilon)$ compense l'aller-retour $2(D+z)$ de la sonde. Avec un simple miroir, la référence parcourrait $4d$ contre $4d+2D$ pour la sonde, et la différence de marche $2D$ ne serait plus réglable. Le miroir monté sur vis micrométrique règle finement le chemin de référence ($\epsilon$).
 
 ![Figure 6 — Trajets et amplitudes de champ après chaque séparatrice. Les deux ondes atteignent la photodiode avec la même amplitude.](figures/q32-bilan-amplitudes.svg)
 
@@ -612,7 +614,7 @@ La sonde arrive sur $M_2$ à la fréquence $f_l+f_B$. Elle repart à la fréquen
 
 $$f_D'=-2(f_l+f_B)\frac{v}{c_0}\simeq f_D\quad\text{car } f_B\ll f_l.$$
 
-La référence reste à $f_l$. Le battement se fait donc à $f_B+f_D$ :
+La référence reste à $f_l$. Le battement se fait donc à la fréquence $f_B+f_D(t)$.
 
 En négligeant le retard de la Q48, la phase du battement vérifie $\Phi'(t)=2\pi[f_B+f_D(t)]$. Ainsi
 
