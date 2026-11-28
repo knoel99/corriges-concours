@@ -36,6 +36,18 @@
       "perimetre": "Rédaction des 35 réponses repérées dans les 27 questions des cinq parties à partir du sujet officiel et du rapport détaillé. Preuves des deux sens en 5c et 6, calcul par blocs en 7–8, entrelacement, prolongement polynomial en 22 et franchissement du seuil en 27. Deux figures.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Seconde relecture des 35 réponses contre le sujet officiel et le rapport du jury. Brut et guidé : justification de la proportionnalité des colonnes en 3, de u = ±w_j en 18c, limites aux bords et théorème de la bijection en 19b, rôles des questions 17 et 20 en 21. Guidé : encadrés méthode (9, 22), piège (5c, 18c, 19c) et jury (8, 19b) tirés du rapport 2025, bilan final. Figure de la question 27 : virgule décimale sur les graduations."
     }
   ],
   "couverture": {
@@ -85,5 +97,6 @@
       "date": "2026-11-24",
       "perimetre": "Rédaction des 35 réponses repérées dans les 27 questions des cinq parties à partir du sujet officiel et du rapport détaillé. Preuves des deux sens en 5c et 6, calcul par blocs en 7–8, entrelacement, prolongement polynomial en 22 et franchissement du seuil en 27. Deux figures."
     }
-  }
+  },
+  "date_revision": "2026-11-28"
 }

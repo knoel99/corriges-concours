@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Une perturbation de rang un modifie le déterminant par un facteur scalaire. Pour une matrice symétrique, ce même facteur permet de situer les valeurs propres de la matrice perturbée.
 
 ## Partie I — Matrices de rang un
@@ -18,7 +20,7 @@ Pour $e=(1,\ldots,1)^T\ne0$, on a $J=ee^T$, puisque chaque coefficient est $1\cd
 
 ### Question 3
 
-Le rang 1 assure l’existence d’une colonne non nulle $u$ de $K$ et toutes les colonnes sont proportionnelles à $u$. Écrivons la $j$-ième colonne $v_ju$ et posons $v=(v_1,\ldots,v_n)^T$. Le coefficient correspondant à la colonne choisie vaut 1, donc $v\ne0$. Les colonnes du produit $uv^T$ étant les $v_ju$, on obtient $K=uv^T$.
+Comme $K$ est de rang 1, elle n’est pas nulle : elle a une colonne non nulle $u$. L’image de $K$, engendrée par ses colonnes, est une droite qui contient $u\ne0$, donc c’est $\mathbb Ru$ et toutes les colonnes de $K$ sont proportionnelles à $u$. Écrivons la $j$-ième colonne $v_ju$ et posons $v=(v_1,\ldots,v_n)^T$. Le coefficient correspondant à la colonne choisie vaut 1, donc $v\ne0$. Les colonnes du produit $uv^T$ étant les $v_ju$, on obtient $K=uv^T$.
 
 ### Question 4
 
@@ -113,7 +115,7 @@ Si $\ell\notin J$, $u^Tw_\ell=0$. On en déduit $Bw_\ell=Aw_\ell=\lambda_\ell w_
 
 ### Question 18c
 
-Si $J=\{j\}$, alors $u=\pm w_j$ et $uu^T=w_jw_j^T$. Ainsi $Bw_j=(\lambda_j+1)w_j$, tandis que $Bw_k=\lambda_k w_k$ pour $k\ne j$. Toute la base est propre pour $B$. Son spectre avec multiplicités remplace une occurrence de $\lambda_j$ par $\lambda_j+1$, même si cette dernière valeur coïncide avec une autre valeur propre. L’ordre de la liste peut changer.
+Si $J=\{j\}$, la décomposition $u=\sum_k\langle w_k,u\rangle w_k$ se réduit à $u=\langle w_j,u\rangle w_j$. Comme $\|u\|=\|w_j\|=1$, on a $\langle w_j,u\rangle=\pm1$, donc $u=\pm w_j$ et $uu^T=w_jw_j^T$. Ainsi $Bw_j=(\lambda_j+1)w_j$, tandis que $Bw_k=\lambda_k w_k$ pour $k\ne j$. Toute la base est propre pour $B$. Son spectre avec multiplicités remplace une occurrence de $\lambda_j$ par $\lambda_j+1$, même si cette dernière valeur coïncide avec une autre valeur propre. L’ordre de la liste peut changer.
 
 ### Question 19a
 
@@ -121,7 +123,7 @@ Posons $c_k=\langle w_k,u\rangle^2>0$. La fonction rationnelle $f(x)=\sum_k c_k/
 
 ### Question 19b
 
-Sur $]\lambda_\ell,\lambda_{\ell+1}[$, le terme d’indice $\ell$ tend vers $+\infty$ à gauche et celui d’indice $\ell+1$ vers $-\infty$ à droite, les autres termes restant finis à l’extrémité considérée. Continuité et stricte décroissance donnent une unique solution de $f(x)=1$. Sur $]\lambda_n,+\infty[$, la limite à gauche est $+\infty$ et la limite à droite est 0. Les mêmes arguments donnent encore une unique solution.
+Soit $\ell\in\{1,\ldots,n-1\}$. Quand $x\to\lambda_\ell^+$, le terme $c_\ell/(x-\lambda_\ell)$ tend vers $+\infty$ et les autres ont une limite finie, donc $f(x)\to+\infty$. Quand $x\to\lambda_{\ell+1}^-$, le terme $c_{\ell+1}/(x-\lambda_{\ell+1})$ tend vers $-\infty$ et les autres ont une limite finie, donc $f(x)\to-\infty$. Par 19a, $f$ est continue et strictement décroissante sur l’intervalle $]\lambda_\ell,\lambda_{\ell+1}[$. Le théorème de la bijection montre que $f$ réalise une bijection de cet intervalle sur $\mathbb R$ : l’équation $f(x)=1$ y a une unique solution. Sur $]\lambda_n,+\infty[$, on a de même $f(x)\to+\infty$ quand $x\to\lambda_n^+$, et $f(x)\to0$ quand $x\to+\infty$ car chaque terme tend vers 0. La fonction $f$, continue et strictement décroissante, réalise une bijection de $]\lambda_n,+\infty[$ sur $]0,+\infty[$, qui contient 1 : l’équation a encore une unique solution.
 
 ![Figure 1 — Pour les pôles 0, 1,5 et 3, chaque branche située à droite d’un pôle traverse le niveau 1. Les abscisses des intersections donnent les valeurs propres de la matrice perturbée.](figures/q19-entrelacement.svg)
 
@@ -137,7 +139,7 @@ La formule de transfert donne $\mathbb E[\langle U,w\rangle^2]=n^{-1}\sum_{j=1}^
 
 ### Question 21
 
-Pour $x$ fixé, la variable $\chi_B(x)$ prend au plus $n$ valeurs finies et est intégrable. Pour $x\notin\{\lambda_k\}$, les questions 17 et 20, appliquées aux $w_k$ unitaires, donnent
+Pour $x$ fixé, la variable $\chi_B(x)$ prend au plus $n$ valeurs finies et est intégrable. Soit $x\notin\{\lambda_k\}$. Chaque $u_j$ est unitaire, donc la question 17 s’applique à $A+u_ju_j^T$ et donne $\chi_B(x)=\chi_A(x)\bigl(1-\sum_{k}\langle w_k,U\rangle^2/(x-\lambda_k)\bigr)$. Par linéarité de l’espérance et par la question 20 appliquée à $w=w_k$, de norme 1,
 $$\mathbb E[\chi_B(x)]=\chi_A(x)\left(1-\frac1n\sum_{k=1}^n\frac1{x-\lambda_k}\right).$$
 En dérivant $\chi_A(x)=\prod_k(x-\lambda_k)$ par la règle du produit, on a $\chi'_A(x)=\chi_A(x)\sum_k1/(x-\lambda_k)$, y compris en présence de valeurs propres répétées puisque $x$ les évite. On obtient $\mathbb E[\chi_B(x)]=\chi_A(x)-\chi'_A(x)/n$.
 

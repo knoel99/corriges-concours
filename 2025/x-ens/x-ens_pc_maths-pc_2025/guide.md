@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Une perturbation de rang un modifie le déterminant par un facteur scalaire. Pour une matrice symétrique, ce même facteur permet de situer les valeurs propres de la matrice perturbée.
 
 ## Partie I — Matrices de rang un
@@ -33,7 +35,7 @@ Pour $e=(1,\ldots,1)^T\ne0$, on a $J=ee^T$, puisque chaque coefficient est $1\cd
 
 #### Solution
 
-Le rang 1 assure l’existence d’une colonne non nulle $u$ de $K$ et toutes les colonnes sont proportionnelles à $u$. Écrivons la $j$-ième colonne $v_ju$ et posons $v=(v_1,\ldots,v_n)^T$. Le coefficient correspondant à la colonne choisie vaut 1, donc $v\ne0$. Les colonnes du produit $uv^T$ étant les $v_ju$, on obtient $K=uv^T$.
+Comme $K$ est de rang 1, elle n’est pas nulle : elle a une colonne non nulle $u$. L’image de $K$, engendrée par ses colonnes, est une droite qui contient $u\ne0$, donc c’est $\mathbb Ru$ et toutes les colonnes de $K$ sont proportionnelles à $u$. Écrivons la $j$-ième colonne $v_ju$ et posons $v=(v_1,\ldots,v_n)^T$. Le coefficient correspondant à la colonne choisie vaut 1, donc $v\ne0$. Les colonnes du produit $uv^T$ étant les $v_ju$, on obtient $K=uv^T$.
 
 ### Question 4
 
@@ -71,6 +73,9 @@ On a $K^2=(uv^T)(uv^T)=u(v^Tu)v^T=(\operatorname{Tr}K)K$.
 
 Posons $t=\operatorname{Tr}K$. Si $t\ne0$, la question 5b fournit le polynôme annulateur $X(X-t)$, scindé à racines simples. Ainsi $K$ est diagonalisable sur $\mathbb R$. Si $t=0$, alors $K^2=0$, donc toute valeur propre vaut 0. Une matrice diagonalisable dont toutes les valeurs propres sont nulles est la matrice nulle, ce qui contredirait le rang 1. Ces deux implications établissent l’équivalence.
 
+> [!PIEGE]
+> Le critère du polynôme annulateur scindé à racines simples ne fournit qu’une implication. Quand la trace est nulle, on ne conclut pas que $K$ n’est pas diagonalisable au seul motif que $X^2$ a une racine double : il faut l’argument propre de la solution, une matrice diagonalisable dont la seule valeur propre est 0 est nulle.
+
 ### Question 6
 
 > [!INDICATION]
@@ -101,6 +106,9 @@ $$\begin{pmatrix}I_n&0\\v^T&1\end{pmatrix}\begin{pmatrix}I_n&u\\-v^T&1\end{pmatr
 
 Dans le produit initial, les deux facteurs extérieurs sont triangulaires par blocs avec blocs diagonaux $I_n$ et 1, donc ont déterminant 1. Le facteur du milieu est triangulaire supérieur par blocs et a pour déterminant $\det(I_n+uv^T)$. La matrice obtenue en 7 est elle aussi triangulaire par blocs, son déterminant vaut $1+v^Tu$. La multiplicativité donne l’égalité demandée.
 
+> [!JURY]
+> Le rapport 2025 signale une question « très mal traitée » : le déterminant ne se calcule pas par blocs en général. Il faut dire que chaque matrice est triangulaire par blocs avant de multiplier les déterminants des blocs diagonaux, ou développer selon une ligne ou une colonne.
+
 ### Question 9
 
 > [!INDICATION]
@@ -110,6 +118,9 @@ Dans le produit initial, les deux facteurs extérieurs sont triangulaires par bl
 
 L’inversibilité de $A$ permet d’écrire $A+uv^T=A(I_n+A^{-1}uv^T)$. En appliquant 8 au couple $(A^{-1}u,v)$ puis en utilisant la multiplicativité,
 $$\det(A+uv^T)=\det A\,(1+v^TA^{-1}u).$$
+
+> [!METHODE]
+> Pour étendre à une matrice inversible $A$ un résultat établi autour de l’identité, factoriser $A$ et appliquer le résultat à des vecteurs modifiés, ici $A^{-1}u$ et $v$. Le même réflexe sert en 17 avec $xI_n-A$.
 
 ### Question 10
 
@@ -233,7 +244,10 @@ Si $\ell\notin J$, $u^Tw_\ell=0$. On en déduit $Bw_\ell=Aw_\ell=\lambda_\ell w_
 
 #### Solution
 
-Si $J=\{j\}$, alors $u=\pm w_j$ et $uu^T=w_jw_j^T$. Ainsi $Bw_j=(\lambda_j+1)w_j$, tandis que $Bw_k=\lambda_k w_k$ pour $k\ne j$. Toute la base est propre pour $B$. Son spectre avec multiplicités remplace une occurrence de $\lambda_j$ par $\lambda_j+1$, même si cette dernière valeur coïncide avec une autre valeur propre. L’ordre de la liste peut changer.
+Si $J=\{j\}$, la décomposition $u=\sum_k\langle w_k,u\rangle w_k$ se réduit à $u=\langle w_j,u\rangle w_j$. Comme $\|u\|=\|w_j\|=1$, on a $\langle w_j,u\rangle=\pm1$, donc $u=\pm w_j$ et $uu^T=w_jw_j^T$. Ainsi $Bw_j=(\lambda_j+1)w_j$, tandis que $Bw_k=\lambda_k w_k$ pour $k\ne j$. Toute la base est propre pour $B$. Son spectre avec multiplicités remplace une occurrence de $\lambda_j$ par $\lambda_j+1$, même si cette dernière valeur coïncide avec une autre valeur propre. L’ordre de la liste peut changer.
+
+> [!PIEGE]
+> La question 17 ne sert pas ici : elle ne vaut que hors du spectre de $A$, et rien n’empêche $\lambda_j+1$ d’être égal à un autre $\lambda_k$. Le rapport 2025 indique une variante plus courte pour la dernière valeur propre, par la trace : $\operatorname{Tr}B=\operatorname{Tr}A+1$.
 
 ### Question 19a
 
@@ -251,9 +265,12 @@ Posons $c_k=\langle w_k,u\rangle^2>0$. La fonction rationnelle $f(x)=\sum_k c_k/
 
 #### Solution
 
-Sur $]\lambda_\ell,\lambda_{\ell+1}[$, le terme d’indice $\ell$ tend vers $+\infty$ à gauche et celui d’indice $\ell+1$ vers $-\infty$ à droite, les autres termes restant finis à l’extrémité considérée. Continuité et stricte décroissance donnent une unique solution de $f(x)=1$. Sur $]\lambda_n,+\infty[$, la limite à gauche est $+\infty$ et la limite à droite est 0. Les mêmes arguments donnent encore une unique solution.
+Soit $\ell\in\{1,\ldots,n-1\}$. Quand $x\to\lambda_\ell^+$, le terme $c_\ell/(x-\lambda_\ell)$ tend vers $+\infty$ et les autres ont une limite finie, donc $f(x)\to+\infty$. Quand $x\to\lambda_{\ell+1}^-$, le terme $c_{\ell+1}/(x-\lambda_{\ell+1})$ tend vers $-\infty$ et les autres ont une limite finie, donc $f(x)\to-\infty$. Par 19a, $f$ est continue et strictement décroissante sur l’intervalle $]\lambda_\ell,\lambda_{\ell+1}[$. Le théorème de la bijection montre que $f$ réalise une bijection de cet intervalle sur $\mathbb R$ : l’équation $f(x)=1$ y a une unique solution. Sur $]\lambda_n,+\infty[$, on a de même $f(x)\to+\infty$ quand $x\to\lambda_n^+$, et $f(x)\to0$ quand $x\to+\infty$ car chaque terme tend vers 0. La fonction $f$, continue et strictement décroissante, réalise une bijection de $]\lambda_n,+\infty[$ sur $]0,+\infty[$, qui contient 1 : l’équation a encore une unique solution.
 
 ![Figure 1 — Pour les pôles 0, 1,5 et 3, chaque branche située à droite d’un pôle traverse le niveau 1. Les abscisses des intersections donnent les valeurs propres de la matrice perturbée.](figures/q19-entrelacement.svg)
+
+> [!JURY]
+> Le rapport 2025 demande un argument mené intervalle par intervalle, qui précise la monotonie de $f$ et les limites aux bords. Sans ces limites, l’argument n’est pas valide. L’intervalle $]\lambda_n,+\infty[$ demande une rédaction à part.
 
 ### Question 19c
 
@@ -263,6 +280,9 @@ Sur $]\lambda_\ell,\lambda_{\ell+1}[$, le terme d’indice $\ell$ tend vers $+\i
 #### Solution
 
 Les $n$ solutions de 19b sont distinctes et évitent les $\lambda_k$. Par 17, elles annulent $\chi_B$. Ce polynôme étant de degré $n$, elles en constituent toutes les racines et sont simples. En les ordonnant on obtient $\lambda_1<\mu_1<\lambda_2<\mu_2<\cdots<\lambda_n<\mu_n$.
+
+> [!PIEGE]
+> Ne pas partir d’une valeur propre de $B$ en affirmant sans preuve qu’elle n’est pas valeur propre de $A$, pour en faire une solution de $f(x)=1$. Le raisonnement va dans l’autre sens : les $n$ solutions de 19b sont des racines de $\chi_B$, et le degré montre qu’il n’y en a pas d’autre.
 
 ## Partie IV — Polynôme caractéristique moyen
 
@@ -282,7 +302,7 @@ La formule de transfert donne $\mathbb E[\langle U,w\rangle^2]=n^{-1}\sum_{j=1}^
 
 #### Solution
 
-Pour $x$ fixé, la variable $\chi_B(x)$ prend au plus $n$ valeurs finies et est intégrable. Pour $x\notin\{\lambda_k\}$, les questions 17 et 20, appliquées aux $w_k$ unitaires, donnent
+Pour $x$ fixé, la variable $\chi_B(x)$ prend au plus $n$ valeurs finies et est intégrable. Soit $x\notin\{\lambda_k\}$. Chaque $u_j$ est unitaire, donc la question 17 s’applique à $A+u_ju_j^T$ et donne $\chi_B(x)=\chi_A(x)\bigl(1-\sum_{k}\langle w_k,U\rangle^2/(x-\lambda_k)\bigr)$. Par linéarité de l’espérance et par la question 20 appliquée à $w=w_k$, de norme 1,
 $$\mathbb E[\chi_B(x)]=\chi_A(x)\left(1-\frac1n\sum_{k=1}^n\frac1{x-\lambda_k}\right).$$
 En dérivant $\chi_A(x)=\prod_k(x-\lambda_k)$ par la règle du produit, on a $\chi'_A(x)=\chi_A(x)\sum_k1/(x-\lambda_k)$, y compris en présence de valeurs propres répétées puisque $x$ les évite. On obtient $\mathbb E[\chi_B(x)]=\chi_A(x)-\chi'_A(x)/n$.
 
@@ -294,6 +314,9 @@ En dérivant $\chi_A(x)=\prod_k(x-\lambda_k)$ par la règle du produit, on a $\c
 #### Solution
 
 La fonction $x\mapsto\mathbb E[\chi_B(x)]=n^{-1}\sum_j\chi_{A+u_ju_j^T}(x)$ est polynomiale. La différence avec $\chi_A-\chi'_A/n$ est nulle hors d’un ensemble fini par 21, donc identiquement nulle. En $x=\lambda_k$ on trouve $\mathbb E[\chi_B(\lambda_k)]=-\chi'_A(\lambda_k)/n$.
+
+> [!METHODE]
+> Une égalité entre deux polynômes, établie hors d’un ensemble fini de points, vaut partout : leur différence a une infinité de racines. C’est ce qui remplace ici un passage à la limite.
 
 ### Question 23
 
@@ -346,3 +369,12 @@ $$\sum_{k=1}^n\frac1{\mu_k-\varepsilon}\le\sum_{k=1}^n\frac1{\lambda_k-\varepsil
 contrairement à 26, les deux sommes étant les traces des inverses par diagonalisation orthogonale. Le cas $\mu_m=\varepsilon$ est exclu par 25. Ainsi $\mu_m>\varepsilon$.
 
 ![Figure 2 — Exemple avec deux valeurs propres nulles de A. Une valeur propre reste à zéro et la seconde passe au-dessus du seuil. Les autres restent à droite du seuil.](figures/q27-franchissement.svg)
+
+## Bilan
+
+- Pour identifier deux matrices, comparez leur action sur une base bien choisie : base orthonormale en 14, base propre en 15 et 18c.
+- Pour passer d’un résultat sur $I_n+uv^T$ à une matrice inversible quelconque, factorisez cette matrice (9, 17, 25).
+- Un déterminant par blocs ne se calcule que pour une matrice triangulaire par blocs, et il faut le dire (8).
+- Pour localiser les racines d’une somme de fractions simples, étudiez-la intervalle par intervalle : monotonie, limites aux bords, théorème de la bijection, puis décompte par le degré (19).
+- Une identité polynomiale établie hors d’un ensemble fini se prolonge à tous les réels (22).
+- À revoir : polynôme annulateur et diagonalisation, théorème spectral, formule de transfert.
