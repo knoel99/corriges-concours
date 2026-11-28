@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Épreuve de 2 heures, calculatrice autorisée : étude de la climatisation d'une automobile (machine frigorifique au R134a), en 27 questions numérotées de 1 à 27 et réparties en cinq parties (principe, diagramme $(\log P, h)$ de l'annexe 1, bloc détendeur-sonde de l'annexe 2, diagramme entropique, circuit d'air pulsé). Les 27 questions sont traitées. Presque toutes les valeurs numériques sont lues sur le diagramme de l'annexe 1, sur lequel le cycle est déjà tracé : le corrigé dit pour chacune où elle est lue (question 9 pour les enthalpies et les températures, question 20 pour le titre en vapeur) et avec quelle précision. Les entropies du liquide saturant et de la vapeur saturante viennent de la table de la question 20. Les hypothèses que l'énoncé ne fournit pas sont signalées à leur place comme un choix du corrigé (proportionnalité entre consommation et puissance à la question 16, température de sortie de l'air à la question 26). Conventions : $w$ et $q$ désignent le travail massique utile et le transfert thermique massique **reçus par le fluide**, comptés algébriquement, avec les indices comp, d, e et cond de l'énoncé. Les états du fluide sont numérotés de 1 à 4 comme à la question 9.
 
 [Sujet officiel (archive réunissant les deux parties de Physique C)](https://www.banquept.fr/documents/2011/phys_c_pt_2011.zip) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2011/rapport_phys_c_ecrit_2011.pdf)
@@ -102,7 +104,7 @@ $$\boxed{h = h_0 + c_p\,(T - T_0)}$$
 
 $$c_p = \frac{\gamma\,r}{\gamma - 1} = \frac{1{,}12 \times 85}{0{,}12} \approx 7{,}9\times 10^{2}\ \mathrm{J\cdot K^{-1}\cdot kg^{-1}}$$
 
-**Cas du R134a.** Sur l'annexe 1, les isothermes ont trois allures :
+**Cas du R134a.** Sur l'annexe 1, les isothermes ne sont tracées en entier que dans la vapeur ; à chaque graduation de température de la courbe de saturation, de courtes amorces indiquent leur direction ailleurs. Elles ont trois allures :
 
 - dans le liquide, elles sont presque verticales (l'enthalpie d'un liquide dépend très peu de la pression) ;
 - sous la cloche, ce sont des **paliers horizontaux**, car le changement d'état d'un corps pur à température fixée se fait à pression fixée ;
@@ -142,7 +144,7 @@ La figure 2 reprend, à l'échelle, les quatre sommets lus sur l'annexe 1 ; la c
 | État | Position sur le diagramme | $P$ (bar) | $h$ (kJ·kg⁻¹) | $T$ (°C) | État physique |
 |---|---|---|---|---|---|
 | 1 | un peu à droite de la courbe de rosée | 3 | $\approx 403$ | $\approx 5$ | vapeur légèrement surchauffée |
-| 2 | à droite de la courbe de rosée | 13 | $\approx 440$ | $\approx 60$ | vapeur surchauffée |
+| 2 | à droite de la courbe de rosée | 13 | $\approx 440$ | $\approx 63$ | vapeur surchauffée |
 | 3 | sur la courbe d'ébullition | 13 | $\approx 272$ | 50 | liquide saturant |
 | 4 | sous la cloche | 3 | $\approx 272$ | 0 | mélange liquide-vapeur |
 
@@ -150,10 +152,12 @@ Détail des lectures :
 
 - côté gauche du cycle : verticale située aux six dixièmes de l'intervalle entre les graduations 260 et 280, d'où $h_3 = h_4 \approx 272\ \mathrm{kJ\cdot kg^{-1}}$ ; son sommet supérieur est sur la courbe d'ébullition, à la graduation 50 °C ;
 - sommet 1 : un peu à droite de la graduation 400, d'où $h_1 \approx 403\ \mathrm{kJ\cdot kg^{-1}}$ ; il est entre l'isotherme 0 °C (qui part de la courbe de rosée à 3 bar) et l'isotherme 10 °C, d'où $T_1 \approx 5\ \text{°C}$ ;
-- sommet 2 : sur la graduation 440, d'où $h_2 \approx 440\ \mathrm{kJ\cdot kg^{-1}}$ ; il est pratiquement sur l'isotherme 60 °C, d'où $T_2 \approx 60\ \text{°C}$ ;
+- sommet 2 : sur la graduation 440, d'où $h_2 \approx 440\ \mathrm{kJ\cdot kg^{-1}}$ ; il est à droite de l'isotherme 60 °C, au tiers environ de l'intervalle qui la sépare de l'isotherme 70 °C, d'où $T_2 \approx 63\ \text{°C}$ (l'isotherme 60 °C coupe le trait du haut vers 435, l'isotherme 70 °C vers 447) ;
 - paliers : l'isobare du bas coupe la courbe de saturation à la graduation 0 °C, celle du haut à la graduation 50 °C.
 
-Ces lectures sont faites à environ $2\ \mathrm{kJ\cdot kg^{-1}}$ près. Les traits horizontaux du cycle, épais, sont centrés un peu au-dessous de 3 bar et un peu au-dessus de 13 bar ; l'écart est de l'ordre de l'épaisseur du trait et l'on garde les valeurs de l'énoncé, 3 bar et 13 bar.
+Ces lectures sont faites à environ $2\ \mathrm{kJ\cdot kg^{-1}}$ près pour les enthalpies et à 2 °C près pour $T_1$ et $T_2$. Les traits horizontaux du cycle, épais, sont centrés un peu au-dessous de 3 bar et un peu au-dessus de 13 bar ; l'écart est de l'ordre de l'épaisseur du trait et l'on garde les valeurs de l'énoncé, 3 bar et 13 bar.
+
+Contrôle. La loi de Laplace de la question 4 donnerait $T_2 \approx 278 \times (13/3)^{0{,}12/1{,}12} \approx 325\ \mathrm{K}$, soit 52 °C : une dizaine de degrés de moins que la lecture. Près de la courbe de rosée, la vapeur n'est pas un gaz parfait (question 7) ; on garde la valeur lue.
 
 **Cases à compléter sur l'annexe 1.**
 
@@ -166,7 +170,7 @@ Ces lectures sont faites à environ $2\ \mathrm{kJ\cdot kg^{-1}}$ près. Les tra
 
 ### Question 10 — Nature de la transformation dans le compresseur
 
-Sur l'annexe 1, le côté $1 \to 2$ **longe la courbe d'entropie massique constante** repérée $s = 1{,}75\ \mathrm{kJ\cdot K^{-1}\cdot kg^{-1}}$ : il reste entre les courbes $s = 1{,}70$ et $s = 1{,}80$, sans les couper. La transformation dans le compresseur est donc **isentropique**.
+Sur l'annexe 1, le côté $1 \to 2$ **longe la courbe d'entropie massique constante** repérée $s = 1{,}75\ \mathrm{kJ\cdot K^{-1}\cdot kg^{-1}}$ : il se confond avec elle à l'épaisseur du trait près, d'un sommet à l'autre, et ne coupe pas la courbe voisine $s = 1{,}80$. La transformation dans le compresseur est donc **isentropique**.
 
 Ce qui peut le justifier :
 
@@ -235,11 +239,11 @@ On en tire $q_c = -q_f\,T_c/T_f$, puis $w = q_f\,(T_c - T_f)/T_f$, d'où
 
 $$\boxed{e_C = \frac{q_f}{w} = \frac{T_f}{T_c - T_f}}$$
 
-Les températures extrêmes du cycle sont $T_f = T_4 = 0\ \text{°C} = 273\ \mathrm{K}$ (palier d'évaporation) et $T_c = T_2 \approx 60\ \text{°C} = 333\ \mathrm{K}$ (fin de compression) :
+Les températures extrêmes du cycle sont $T_f = T_4 = 0\ \text{°C} = 273\ \mathrm{K}$ (palier d'évaporation) et $T_c = T_2 \approx 63\ \text{°C} = 336\ \mathrm{K}$ (fin de compression) :
 
-$$e_C \approx \frac{273}{333 - 273} \approx 4{,}6$$
+$$e_C \approx \frac{273}{336 - 273} \approx 4{,}3$$
 
-L'efficacité réelle, $e \approx 3{,}5$, est **inférieure** à $e_C$, comme l'impose le second principe : elle en représente environ les trois quarts. L'écart vient des irréversibilités du cycle : la détente isenthalpique (question 20) et le refroidissement de la vapeur surchauffée dans le condenseur, au contact d'une source plus froide qu'elle.
+L'efficacité réelle, $e \approx 3{,}5$, est **inférieure** à $e_C$, comme l'impose le second principe : elle en représente environ les quatre cinquièmes. L'écart vient des irréversibilités du cycle : la détente isenthalpique (question 20) et le refroidissement de la vapeur surchauffée dans le condenseur, au contact d'une source plus froide qu'elle.
 
 Remarque. Avec les températures des deux paliers (0 °C et 50 °C), on trouverait $273/50 \approx 5{,}5$. Avec les températures des sources elles-mêmes (habitacle à 20 °C, extérieur à 35 °C), on trouverait $293/15 \approx 20$ : l'essentiel de la perte d'efficacité vient des écarts de température nécessaires entre le fluide et les sources pour que les échanges se fassent à un rythme suffisant.
 
@@ -290,6 +294,8 @@ Or la puissance thermique $\Phi$ que l'air peut céder à travers l'évaporateur
 
 Le mécanisme de l'annexe 2 agit bien dans ce sens : le fluide qui passe de 4 à 5 est au contact de la sonde. S'il est trop froid, il refroidit le fluide de la sonde, dont la pression $P_s$ baisse ; le diaphragme remonte, le ressort se détend, la bille se rapproche de son siège et la section de passage diminue.
 
+Remarque. Le rapport du jury ne donne pas la réponse attendue sur la basse pression ; celle-ci résulte du raisonnement ci-dessus, cohérent avec le schéma de l'annexe 2 et avec la question 18.
+
 ### Question 18 — Régulation du débit et de la pression
 
 **Équilibre de l'ensemble mobile.** Le diaphragme, de section $S$, est soumis :
@@ -336,7 +342,7 @@ $$h_4 = (1 - x_4)\,h_\ell + x_4\,h_v$$
 
 $$x_4 = \frac{h_4 - h_\ell}{h_v - h_\ell} \approx \frac{272 - 200}{398 - 200} \approx 0{,}36$$
 
-Lecture directe de contrôle : sur l'annexe 1, le sommet 4 est entre les courbes de titre 0,30 et 0,40, aux six dixièmes de l'intervalle, ce qui donne aussi $x_4 \approx 0{,}36$.
+Lecture directe de contrôle : sur l'annexe 1, le sommet 4 est entre les courbes de titre 0,30 et 0,40, aux deux tiers de l'intervalle environ, soit $x_4 \approx 0{,}36$ à $0{,}37$ : les deux lectures concordent à 0,01 près.
 
 L'entropie est extensive elle aussi :
 
@@ -388,16 +394,16 @@ avec $c_p = \gamma r/(\gamma - 1) \approx 7{,}9\times 10^{2}\ \mathrm{J\cdot K^{
 
 $$s_1 = s_v(0\ \text{°C}) + c_p\,\ln\frac{T_1}{273} \approx 1{,}717 + 0{,}793 \times \ln\frac{278}{273} \approx 1{,}73\ \mathrm{kJ\cdot K^{-1}\cdot kg^{-1}}$$
 
-**Point 2.** Vapeur à 13 bar, à $T_2 \approx 60\ \text{°C} = 333\ \mathrm{K}$ (question 9), sur l'isobare qui part de V' à $323\ \mathrm{K}$ :
+**Point 2.** Vapeur à 13 bar, à $T_2 \approx 63\ \text{°C} = 336\ \mathrm{K}$ (question 9), sur l'isobare qui part de V' à $323\ \mathrm{K}$ :
 
-$$s_2 = s_v(50\ \text{°C}) + c_p\,\ln\frac{T_2}{323} \approx 1{,}707 + 0{,}793 \times \ln\frac{333}{323} \approx 1{,}73\ \mathrm{kJ\cdot K^{-1}\cdot kg^{-1}}$$
+$$s_2 = s_v(50\ \text{°C}) + c_p\,\ln\frac{T_2}{323} \approx 1{,}707 + 0{,}793 \times \ln\frac{336}{323} \approx 1{,}74\ \mathrm{kJ\cdot K^{-1}\cdot kg^{-1}}$$
 
-Les deux calculs, indépendants, donnent la même entropie : $s_1 = s_2$, ce qui confirme que la compression est isentropique. La courbe que longe le côté $1 \to 2$ sur l'annexe 1 est repérée $s = 1{,}75$ ; l'écart de 0,02 avec la valeur calculée est de l'ordre de l'incertitude de lecture et de l'approximation du gaz parfait près de la saturation.
+Les deux calculs, indépendants, donnent des entropies égales à 0,01 près : c'est compatible avec une compression isentropique, compte tenu de l'incertitude sur $T_1$ et $T_2$ (2 °C déplacent chaque entropie de 0,005 environ) et de l'approximation du gaz parfait près de la saturation. La courbe que longe le côté $1 \to 2$ sur l'annexe 1 est repérée $s = 1{,}75$ ; l'écart de 0,01 à 0,02 avec les valeurs calculées a la même origine. Sur le diagramme $(T, s)$, on trace donc $1 \to 2$ comme un segment vertical, à l'abscisse $s \approx 1{,}73$ à $1{,}74$.
 
 | Point | $T$ (°C) | $s$ (kJ·K⁻¹·kg⁻¹) | Origine de la valeur |
 |---|---|---|---|
 | 1 | $\approx 5$ | $\approx 1{,}73$ | lecture de $T_1$ sur l'annexe 1, calcul de $s_1$ |
-| 2 | $\approx 60$ | $\approx 1{,}73$ | lecture de $T_2$ sur l'annexe 1, calcul de $s_2$ |
+| 2 | $\approx 63$ | $\approx 1{,}74$ | lecture de $T_2$ sur l'annexe 1, calcul de $s_2$ |
 | 3 | 50 | 1,245 | table |
 | 4 | 0 | $\approx 1{,}26$ | titre lu sur l'annexe 1, table |
 
