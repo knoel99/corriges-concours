@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 440" width="600" height="440" font-family="sans-serif" font-size="14">
+<rect x="0" y="0" width="600" height="440" fill="#ffffff"/>
+<defs><marker id="fl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker><marker id="flg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888888"/></marker></defs>
+<text x="300.0" y="24.0" text-anchor="middle" font-size="15" fill="#111111" font-weight="bold" font-style="normal">Trajectoire dans le plan (X, Y)</text>
+<line x1="80.0" y1="380.0" x2="524.0" y2="380.0" stroke="#111111" stroke-width="1.5" marker-end="url(#fl)"/>
+<line x1="80.0" y1="380.0" x2="80.0" y2="36.0" stroke="#111111" stroke-width="1.5" marker-end="url(#fl)"/>
+<text x="295.0" y="422.0" text-anchor="middle" font-size="14" fill="#111111" font-weight="normal" font-style="normal"></text>
+<text x="74.0" y="28.0" text-anchor="start" font-size="14" fill="#111111" font-weight="normal" font-style="normal"></text>
+<text x="516.0" y="404.0" text-anchor="end" font-size="14" fill="#111111" font-weight="normal" font-style="italic">X</text>
+<text x="68.0" y="40.0" text-anchor="end" font-size="14" fill="#111111" font-weight="normal" font-style="italic">Y</text>
+<text x="72.0" y="396.0" text-anchor="end" font-size="13" fill="#111111" font-weight="normal" font-style="normal">0</text>
+<line x1="284.8" y1="380.0" x2="284.8" y2="63.8" stroke="#555555" stroke-width="1" stroke-dasharray="5 4"/>
+<line x1="80.0" y1="242.5" x2="499.8" y2="242.5" stroke="#555555" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="284.8" y="400.0" text-anchor="middle" font-size="13" fill="#111111" font-weight="normal" font-style="normal">X<tspan dy="4" font-size="10">eq</tspan></text>
+<text x="71.0" y="246.5" text-anchor="end" font-size="13" fill="#111111" font-weight="normal" font-style="normal">Y<tspan dy="4" font-size="10">eq</tspan></text>
+<polyline points="356.4,160.0 349.6,154.1 342.6,148.6 335.3,143.6 327.9,139.2 320.4,135.5 313.0,132.4 305.5,130.1 298.2,128.4 291.1,127.4 284.1,127.1 277.4,127.5 270.9,128.6 264.7,130.2 258.9,132.5 253.3,135.2 248.0,138.5 243.1,142.2 238.5,146.2 234.2,150.6 230.3,155.2 226.6,160.1 223.2,165.2 220.2,170.5 217.4,175.8 214.8,181.2 212.5,186.6 210.5,192.1 208.7,197.5 207.1,202.9 205.8,208.3 204.6,213.5 203.7,218.7 202.9,223.7 202.3,228.7 201.9,233.5 201.7,238.2 201.6,242.7 201.7,247.1 201.9,251.3 202.3,255.4 202.9,259.3 203.5,263.1 204.3,266.8 205.3,270.2 206.4,273.6 207.6,276.8 208.9,279.8 210.4,282.7 212.0,285.5 213.7,288.1 215.5,290.6 217.5,292.9 219.5,295.1 221.7,297.2 224.0,299.2 226.5,301.1 229.0,302.8 231.7,304.4 234.5,306.0 237.4,307.4 240.4,308.6 243.6,309.8 246.9,310.9 250.2,311.9 253.7,312.7 257.3,313.5 261.1,314.2 264.9,314.7 268.8,315.2 272.9,315.5 277.0,315.8 281.3,315.9 285.6,315.9 290.0,315.9 294.6,315.7 299.2,315.4 303.9,315.0 308.6,314.4 313.4,313.7 318.3,312.9 323.2,312.0 328.1,310.9 333.1,309.6 338.0,308.2 342.9,306.6 347.8,304.9 352.6,302.9 357.4,300.8 362.0,298.4 366.5,295.9 370.9,293.1 375.1,290.0 379.1,286.7 382.8,283.1 386.2,279.3 389.3,275.1 392.1,270.7 394.4,266.0 396.3,260.9 397.8,255.6 398.8,250.0 399.2,244.0 399.0,237.8 398.3,231.3 397.0,224.6 395.0,217.7 392.4,210.7 389.2,203.5 385.4,196.3 381.0,189.1 376.1,181.9 370.6,175.0 364.7,168.2 358.3,161.8 356.4,160.0" fill="none" stroke="#1f5fa8" stroke-width="2.5" stroke-linejoin="round"/>
+<line x1="306.6" y1="130.4" x2="280.0" y2="127.3" stroke="#1f5fa8" stroke-width="2.5" marker-end="url(#fl)"/>
+<line x1="202.2" y1="230.0" x2="201.7" y2="247.2" stroke="#1f5fa8" stroke-width="2.5" marker-end="url(#fl)"/>
+<line x1="246.4" y1="310.7" x2="259.6" y2="313.9" stroke="#1f5fa8" stroke-width="2.5" marker-end="url(#fl)"/>
+<line x1="372.6" y1="291.9" x2="386.7" y2="278.7" stroke="#1f5fa8" stroke-width="2.5" marker-end="url(#fl)"/>
+<circle cx="356.4" cy="160.0" r="5" fill="#111111"/>
+<text x="366.4" y="152.0" text-anchor="start" font-size="13" fill="#111111" font-weight="normal" font-style="normal">(X₀, Y₀)</text>
+<circle cx="284.8" cy="242.5" r="3.5" fill="#c0392b"/>
+<line x1="461.6" y1="109.1" x2="435.6" y2="87.1" stroke="#888888" stroke-width="2" marker-end="url(#flg)"/>
+<text x="448.6" y="76.1" text-anchor="middle" font-size="12" fill="#555555" font-weight="normal" font-style="normal">X ↘, Y ↗</text>
+<line x1="149.3" y1="87.1" x2="123.3" y2="109.1" stroke="#888888" stroke-width="2" marker-end="url(#flg)"/>
+<text x="136.3" y="76.1" text-anchor="middle" font-size="12" fill="#555555" font-weight="normal" font-style="normal">X ↘, Y ↘</text>
+<line x1="123.3" y1="300.2" x2="149.3" y2="322.2" stroke="#888888" stroke-width="2" marker-end="url(#flg)"/>
+<text x="136.3" y="289.2" text-anchor="middle" font-size="12" fill="#555555" font-weight="normal" font-style="normal">X ↗, Y ↘</text>
+<line x1="435.6" y1="360.8" x2="461.6" y2="338.8" stroke="#888888" stroke-width="2" marker-end="url(#flg)"/>
+<text x="448.6" y="327.8" text-anchor="middle" font-size="12" fill="#555555" font-weight="normal" font-style="normal">X ↗, Y ↗</text>
+</svg>
