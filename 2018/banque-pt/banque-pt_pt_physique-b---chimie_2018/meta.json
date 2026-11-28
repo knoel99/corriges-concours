@@ -95,6 +95,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Rédaction des corrigés brut et guidé des 40 questions et de quatre figures, à partir du sujet et du rapport du jury ; applications numériques recalculées, lectures des annexes et du graphique contrôlées sur le PDF, encadrés JURY relus contre le rapport."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application des sept défauts mineurs de la relecture indépendante, chacun vérifié contre le sujet et le rapport : question 5 (remarque sur l'écart 1,56 V / 1,57 V entre l'annexe 1 et le calcul, brut et guidé) ; question 23 (demi-vies relues sur le graphique de la question 21 : ordre 1 affirmé, conséquence pour la dilution, brut et guidé) ; encadrés JURY du guidé en présentation, question 20 (mot « colorimétrique » du rapport rétabli, remarque à part) et question 30, ramenés au texte du rapport ; indication de la question 24 (plus de « loi de Hess » pour les entropies) ; figure du diagramme potentiel-pH (étiquette de pente complétée, inclinaison de l'étiquette de (AB)). Les douze encadrés JURY du guidé recontrôlés un par un contre le rapport."
     }
   ]
 }

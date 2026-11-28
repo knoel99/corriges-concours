@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** L'eau de Javel : préparation, contrôle de son titre, vieillissement, puis étude d'une solution de remplacement, le percarbonate de sodium, qui libère de l'eau oxygénée. L'épreuve dure 2 heures, **sans calculatrice**, et comporte 40 questions réparties en trois parties indépendantes, avec un papier millimétré à rendre (annexe 3).
@@ -20,7 +22,7 @@
 **Gestion du temps.** Environ 35 minutes pour la partie 1, 30 pour la partie 2, 20 pour la thermodynamique et 35 pour la cinétique, qui comporte un tracé. Beaucoup de questions sont courtes : ne pas s'attarder sur une question bloquante, les parties étant indépendantes. Penser à rendre l'annexe 3 si elle a servi.
 
 > [!JURY]
-> Le rapport 2018 formule trois recommandations générales. Il a apprécié la qualité de la présentation (résultats numériques soulignés, expressions littérales encadrées, usage de couleurs) et encourage à la maintenir. Seule une réponse justifiée et argumentée reçoit l'intégralité des points. Les unités doivent impérativement être précisées pour que les points des applications numériques soient attribués, notamment pour les constantes de vitesse et les grandeurs de réaction. Il note par ailleurs un niveau d'ensemble plus faible que les années précédentes, malgré quelques excellentes copies.
+> Le rapport 2018 formule trois recommandations générales. Il a apprécié la qualité de la présentation (résultats numériques soulignés, expressions littérales encadrées, usage de couleurs) et encourage à la maintenir. Seule une réponse justifiée et argumentée reçoit l'intégralité des points. Les unités doivent impérativement être précisées pour que les points des applications numériques soient attribués, notamment pour les constantes de vitesse et les grandeurs de réaction. Il dit par ailleurs avoir été surpris de corriger de nombreuses copies d'un niveau plus faible que les années passées, tout en ayant lu d'excellentes copies de la part de quelques candidats.
 
 [Sujet officiel](https://www.banquept.fr/documents/2018/ph_b_ch_2018_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2018/rapport_phys_b_ecrit_2018.pdf)
 
@@ -132,6 +134,8 @@ $$E^\circ_3 = \frac{E^\circ_1 + E^\circ_2}{2} = \frac{1{,}4 + 1{,}6}{2}$$
 $$\boxed{E^\circ_3 = 1{,}5\ \mathrm V}$$
 
 Contrôle sur le diagramme : au point A, la frontière $\mathrm{HClO}/\mathrm{Cl^-}$ donne $E = 1{,}5 - 0{,}03\times 2{,}2 = 1{,}43\ \mathrm V$, valeur portée sur l'annexe 1.
+
+Remarque : avec la concentration de tracé $0{,}10\ \mathrm{mol\cdot L^{-1}}$ et l'égalité des concentrations sur les frontières, les données donnent à $\mathrm{pH} = 0$ la frontière $\mathrm{Cl_2}/\mathrm{Cl^-}$ à $1{,}4 + 0{,}03\log\dfrac{0{,}10}{0{,}10^2} = 1{,}43\ \mathrm V$, comme sur l'annexe, et la frontière $\mathrm{HClO}/\mathrm{Cl_2}$ à $1{,}6 + 0{,}03\log\dfrac{0{,}10^2}{0{,}10} = 1{,}57\ \mathrm V$. L'annexe porte $1{,}56\ \mathrm V$ : écart d'arrondi de l'énoncé, sans effet sur les réponses.
 
 > [!JURY]
 > Le rapport note que de nombreux candidats, ayant mal lu l'énoncé, ne donnent pas le potentiel du couple $\mathrm{HClO}/\mathrm{Cl^-}$. Il demande de lire l'énoncé sans précipitation, puis de fournir une réponse concise, limitée à la question posée.
@@ -438,7 +442,9 @@ $$\boxed{D \approx 34^\circ\ \text{chl}}$$
 **Comparaison.** L'étiquette annonce 36° chl « au conditionnement » : l'écart relatif est de $2/36 \approx 6\ \%$. Le résultat est du bon ordre de grandeur et légèrement inférieur à la valeur annoncée, ce qui est cohérent avec la lente décomposition des ions hypochlorite depuis la fabrication (questions 21 à 23), à laquelle s'ajoutent les incertitudes du dosage.
 
 > [!JURY]
-> Le rapport signale que l'exploitation finale des résultats du dosage, pour les relier au degré chlorométrique, a été très rarement menée à bien. Il rappelle aussi que les unités doivent impérativement être précisées pour que les points des applications numériques soient attribués.
+> Le rapport signale que l'exploitation finale des résultats du dosage, pour les relier au degré « colorimétrique », a été très rarement menée à bien. Il rappelle aussi que les unités doivent impérativement être précisées pour que les points des applications numériques soient attribués.
+
+Le mot « colorimétrique » est celui du rapport ; il s'agit vraisemblablement du degré chlorométrique de l'énoncé.
 
 > [!PIEGE]
 > Deux oublis fréquents dans ce type de calcul : le facteur de dilution 10 entre $S_0$ et la solution commerciale, et la conversion des mètres cubes en litres.
@@ -495,17 +501,17 @@ Comme $E_a > 0$, $k$ croît avec $T$ : la réaction est plus rapide à chaud.
 
 **Oui, la solution diluée se conserve mieux.** La concentration du réactif est un facteur cinétique : pour une loi de vitesse $v = k\,[\mathrm{ClO^-}]^{\alpha}$ avec $\alpha > 0$, diluer diminue la vitesse de décomposition. On le voit sur les courbes : la pente (vitesse de disparition) diminue à mesure que la concentration baisse. C'est cohérent avec l'étiquette, qui impose un délai pour diluer le concentré mais non pour utiliser la solution diluée.
 
-Précision : le gain porte sur la fraction décomposée seulement si l'ordre est supérieur à 1 (le temps de demi-réaction, en $1/(k\,c_0)$ pour un ordre 2, augmente alors par dilution) ; pour un ordre exactement égal à 1, le temps de demi-réaction ne dépendrait pas de la concentration et seule la vitesse absolue diminuerait.
+Précision : ce gain porte sur la vitesse absolue (en $\mathrm{mol\cdot L^{-1}}$ par jour). La fraction décomposée en un temps donné ne diminue par dilution que si l'ordre est supérieur à 1 (pour un ordre 2, le temps de demi-réaction, en $1/(k\,c_0)$, augmente quand on dilue). Or les courbes de la question 21 ont un temps de demi-réaction constant : à 30 °C, la concentration passe de 2,1 à $1{,}05\ \mathrm{mol\cdot L^{-1}}$ en 45 jours environ, puis à 0,5 en 45 jours de plus, puis à 0,25 en 45 jours encore ; à 20 °C, elle est multipliée par 0,82 environ tous les 50 jours (1,75 à 50 jours, 1,45 à 100 jours, 1,2 à 150 jours), soit une division par deux tous les 175 jours environ. Ces courbes sont donc celles d'un **ordre 1**, pour lequel le temps de demi-réaction ne dépend pas de la concentration : d'après elles, une solution diluée perd la même fraction de son titre dans le même temps, et seule la quantité décomposée par litre et par jour est plus faible.
 
 > [!PIEGE]
-> Ne pas confondre vitesse de décomposition (en $\mathrm{mol\cdot L^{-1}}$ par jour, qui diminue toujours par dilution si l'ordre est positif) et temps de demi-réaction (indépendant de la concentration pour un ordre 1).
+> Ne pas confondre vitesse de décomposition (en $\mathrm{mol\cdot L^{-1}}$ par jour, qui diminue toujours par dilution si l'ordre est positif) et temps de demi-réaction (indépendant de la concentration pour un ordre 1, ce qui est le cas des courbes de la question 21).
 
 ## Partie 3 — Le percarbonate de sodium, aspect thermodynamique
 
 ### Question 24
 
 > [!INDICATION]
-> Appliquer la loi de Hess aux entropies molaires standard, sans oublier le nombre stœchiométrique $1/2$ du dioxygène.
+> Faire la somme des entropies molaires standard pondérées par les nombres stœchiométriques (produits moins réactifs), sans oublier le nombre stœchiométrique $1/2$ du dioxygène.
 
 #### Solution
 
@@ -648,7 +654,7 @@ $$\boxed{\text{Du point de vue thermodynamique : haute température et haute pre
 **Portée de cette réponse.** Avec $K^\circ \approx 10^{19}$ à 300 K, ces leviers sont inopérants en pratique : même à 400 K, $\ln K^\circ = \dfrac{100\cdot 10^{3}}{8{,}31\times 400} + \dfrac{30}{8{,}31} \approx 34$, soit $K^\circ \approx 10^{15}$. La conservation réelle de l'eau oxygénée relève du contrôle cinétique, et les conditions sont alors opposées pour la température : conservation **au frais** (loi d'Arrhenius), à l'abri de la lumière, dans un flacon propre, **sans catalyseur** (ions métalliques, poussières). Sur une copie, donner la réponse thermodynamique demandée, puis distinguer explicitement cet argument cinétique.
 
 > [!JURY]
-> Le rapport indique que les réponses sur l'optimisation du procédé ont donné assez régulièrement satisfaction, tout en regrettant que certains candidats mélangent notions thermodynamiques et cinétiques dans leurs justifications.
+> Le rapport indique que les réponses sur l'optimisation du procédé chimique ont donné assez régulièrement satisfaction, et note que certains candidats mélangent notions thermodynamiques et cinétiques dans leurs justifications et leurs raisonnements.
 
 > [!PIEGE]
 > Thermodynamique et cinétique donnent ici des conclusions opposées sur la température. Annoncer clairement de quel point de vue on se place avant de conclure.

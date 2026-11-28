@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Épreuve de 2 heures, sans calculatrice, sur l'eau de Javel et une solution de remplacement, le percarbonate de sodium : 40 questions en trois parties indépendantes, un papier millimétré à rendre (annexe 3). Les 40 questions sont traitées. Les valeurs lues sur les annexes et sur le graphique de la question 21 sont signalées à l'endroit où elles servent. Les applications numériques emploient les valeurs approchées fournies par l'énoncé. Une incohérence numérique de l'énoncé (quantité d'ions iodure) est signalée à la question 17.
 
 [Sujet officiel](https://www.banquept.fr/documents/2018/ph_b_ch_2018_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2018/rapport_phys_b_ecrit_2018.pdf)
@@ -71,6 +73,8 @@ $$E^\circ_3 = \frac{E^\circ_1 + E^\circ_2}{2} = \frac{1{,}4 + 1{,}6}{2}$$
 $$\boxed{E^\circ_3 = 1{,}5\ \mathrm V}$$
 
 Contrôle sur le diagramme : au point A, la frontière $\mathrm{HClO}/\mathrm{Cl^-}$ donne $E = 1{,}5 - 0{,}03\times 2{,}2 = 1{,}43\ \mathrm V$, valeur portée sur l'annexe 1.
+
+Remarque : avec la concentration de tracé $0{,}10\ \mathrm{mol\cdot L^{-1}}$ et l'égalité des concentrations sur les frontières, les données donnent à $\mathrm{pH} = 0$ la frontière $\mathrm{Cl_2}/\mathrm{Cl^-}$ à $1{,}4 + 0{,}03\log\dfrac{0{,}10}{0{,}10^2} = 1{,}43\ \mathrm V$, comme sur l'annexe, et la frontière $\mathrm{HClO}/\mathrm{Cl_2}$ à $1{,}6 + 0{,}03\log\dfrac{0{,}10^2}{0{,}10} = 1{,}57\ \mathrm V$. L'annexe porte $1{,}56\ \mathrm V$ : écart d'arrondi de l'énoncé, sans effet sur les réponses.
 
 ### Question 6 — Équation de formation de l'eau de Javel
 
@@ -302,7 +306,7 @@ Comme $E_a > 0$, $k$ croît avec $T$ : la réaction est plus rapide à chaud.
 
 **Oui, la solution diluée se conserve mieux.** La concentration du réactif est un facteur cinétique : pour une loi de vitesse $v = k\,[\mathrm{ClO^-}]^{\alpha}$ avec $\alpha > 0$, diluer diminue la vitesse de décomposition. On le voit sur les courbes : la pente (vitesse de disparition) diminue à mesure que la concentration baisse. C'est cohérent avec l'étiquette, qui impose un délai pour diluer le concentré mais non pour utiliser la solution diluée.
 
-Précision : le gain porte sur la fraction décomposée seulement si l'ordre est supérieur à 1 (le temps de demi-réaction, en $1/(k\,c_0)$ pour un ordre 2, augmente alors par dilution) ; pour un ordre exactement égal à 1, le temps de demi-réaction ne dépendrait pas de la concentration et seule la vitesse absolue diminuerait.
+Précision : ce gain porte sur la vitesse absolue (en $\mathrm{mol\cdot L^{-1}}$ par jour). La fraction décomposée en un temps donné ne diminue par dilution que si l'ordre est supérieur à 1 (pour un ordre 2, le temps de demi-réaction, en $1/(k\,c_0)$, augmente quand on dilue). Or les courbes de la question 21 ont un temps de demi-réaction constant : à 30 °C, la concentration passe de 2,1 à $1{,}05\ \mathrm{mol\cdot L^{-1}}$ en 45 jours environ, puis à 0,5 en 45 jours de plus, puis à 0,25 en 45 jours encore ; à 20 °C, elle est multipliée par 0,82 environ tous les 50 jours (1,75 à 50 jours, 1,45 à 100 jours, 1,2 à 150 jours), soit une division par deux tous les 175 jours environ. Ces courbes sont donc celles d'un **ordre 1**, pour lequel le temps de demi-réaction ne dépend pas de la concentration : d'après elles, une solution diluée perd la même fraction de son titre dans le même temps, et seule la quantité décomposée par litre et par jour est plus faible.
 
 ## Partie 3 — Le percarbonate de sodium, aspect thermodynamique
 
