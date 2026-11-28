@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="360" viewBox="0 0 700 360" font-family="sans-serif" font-size="14">
+<defs>
+<marker id="ak" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 z" fill="#222"/></marker>
+<marker id="ab" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 z" fill="#0072B2"/></marker>
+<marker id="av" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 z" fill="#D55E00"/></marker>
+<marker id="ag" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 z" fill="#009E73"/></marker>
+<pattern id="h1" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#D55E00" stroke-width="1.2"/></pattern>
+<pattern id="h2" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#0072B2" stroke-width="1.2"/></pattern>
+<pattern id="h3" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#222" stroke-width="1"/></pattern>
+</defs>
+<rect x="0" y="0" width="700" height="360" fill="#fff"/>
+<line x1="60.0" y1="180.0" x2="640.0" y2="180.0" stroke="#222" stroke-width="1.2" stroke-dasharray="14 4 3 4"/>
+<rect x="180.0" y="120.0" width="40.0" height="20.0" fill="#ddd" stroke="#222" stroke-width="1.5" />
+<rect x="180.0" y="70.0" width="40.0" height="20.0" fill="#ddd" stroke="#222" stroke-width="1.5" />
+<circle cx="200.0" cy="105.0" r="13" fill="#fff" stroke="#222" stroke-width="1.5" />
+<rect x="180.0" y="220.0" width="40.0" height="20.0" fill="#ddd" stroke="#222" stroke-width="1.5" />
+<rect x="180.0" y="270.0" width="40.0" height="20.0" fill="#ddd" stroke="#222" stroke-width="1.5" />
+<circle cx="200.0" cy="255.0" r="13" fill="#fff" stroke="#222" stroke-width="1.5" />
+<text x="200.0" y="46.0" fill="#222" font-size="14" text-anchor="middle" >Roulement (4)</text>
+<rect x="480.0" y="120.0" width="40.0" height="20.0" fill="#ddd" stroke="#222" stroke-width="1.5" />
+<rect x="480.0" y="70.0" width="40.0" height="20.0" fill="#ddd" stroke="#222" stroke-width="1.5" />
+<circle cx="500.0" cy="105.0" r="13" fill="#fff" stroke="#222" stroke-width="1.5" />
+<rect x="480.0" y="220.0" width="40.0" height="20.0" fill="#ddd" stroke="#222" stroke-width="1.5" />
+<rect x="480.0" y="270.0" width="40.0" height="20.0" fill="#ddd" stroke="#222" stroke-width="1.5" />
+<circle cx="500.0" cy="255.0" r="13" fill="#fff" stroke="#222" stroke-width="1.5" />
+<text x="500.0" y="46.0" fill="#222" font-size="14" text-anchor="middle" >Roulement (6)</text>
+<line x1="120.0" y1="140.0" x2="590.0" y2="140.0" stroke="#222" stroke-width="2" />
+<line x1="120.0" y1="220.0" x2="590.0" y2="220.0" stroke="#222" stroke-width="2" />
+<line x1="166.0" y1="74.0" x2="178.0" y2="86.0" stroke="#D55E00" stroke-width="2.6" />
+<line x1="166.0" y1="86.0" x2="178.0" y2="74.0" stroke="#D55E00" stroke-width="2.6" />
+<line x1="222.0" y1="124.0" x2="234.0" y2="136.0" stroke="#D55E00" stroke-width="2.6" />
+<line x1="222.0" y1="136.0" x2="234.0" y2="124.0" stroke="#D55E00" stroke-width="2.6" />
+<line x1="466.0" y1="124.0" x2="478.0" y2="136.0" stroke="#D55E00" stroke-width="2.6" />
+<line x1="466.0" y1="136.0" x2="478.0" y2="124.0" stroke="#D55E00" stroke-width="2.6" />
+<line x1="522.0" y1="74.0" x2="534.0" y2="86.0" stroke="#D55E00" stroke-width="2.6" />
+<line x1="522.0" y1="86.0" x2="534.0" y2="74.0" stroke="#D55E00" stroke-width="2.6" />
+<line x1="162.0" y1="118.0" x2="162.0" y2="55.0" stroke="#222" stroke-width="3" />
+<line x1="538.0" y1="118.0" x2="538.0" y2="55.0" stroke="#222" stroke-width="3" />
+<rect x="154" y="55.0" width="8" height="63" fill="url(#h3)"/>
+<rect x="538" y="55.0" width="8" height="63" fill="url(#h3)"/>
+<line x1="166.0" y1="274.0" x2="178.0" y2="286.0" stroke="#D55E00" stroke-width="2.6" />
+<line x1="166.0" y1="286.0" x2="178.0" y2="274.0" stroke="#D55E00" stroke-width="2.6" />
+<line x1="222.0" y1="224.0" x2="234.0" y2="236.0" stroke="#D55E00" stroke-width="2.6" />
+<line x1="222.0" y1="236.0" x2="234.0" y2="224.0" stroke="#D55E00" stroke-width="2.6" />
+<line x1="466.0" y1="224.0" x2="478.0" y2="236.0" stroke="#D55E00" stroke-width="2.6" />
+<line x1="466.0" y1="236.0" x2="478.0" y2="224.0" stroke="#D55E00" stroke-width="2.6" />
+<line x1="522.0" y1="274.0" x2="534.0" y2="286.0" stroke="#D55E00" stroke-width="2.6" />
+<line x1="522.0" y1="286.0" x2="534.0" y2="274.0" stroke="#D55E00" stroke-width="2.6" />
+<line x1="162.0" y1="242.0" x2="162.0" y2="305.0" stroke="#222" stroke-width="3" />
+<line x1="538.0" y1="242.0" x2="538.0" y2="305.0" stroke="#222" stroke-width="3" />
+<rect x="154" y="242.0" width="8" height="63" fill="url(#h3)"/>
+<rect x="538" y="242.0" width="8" height="63" fill="url(#h3)"/>
+<text x="150.0" y="330.0" fill="#222" font-size="12" text-anchor="middle" >Carter (1), fond du logement</text>
+<text x="150.0" y="344.0" fill="#222" font-size="12" text-anchor="middle" >(par une cale)</text>
+<text x="550.0" y="330.0" fill="#222" font-size="12" text-anchor="middle" >Pièce (5) fixée</text>
+<text x="550.0" y="344.0" fill="#222" font-size="12" text-anchor="middle" >sur le carter (1)</text>
+<text x="244.0" y="122.0" fill="#222" font-size="12" text-anchor="start" >pignon (2), en appui</text>
+<text x="244.0" y="136.0" fill="#222" font-size="12" text-anchor="start" >sur l'arbre (7)</text>
+<text x="456.0" y="122.0" fill="#222" font-size="12" text-anchor="end" >épaulement</text>
+<text x="456.0" y="136.0" fill="#222" font-size="12" text-anchor="end" >de l'arbre (7)</text>
+<line x1="400.0" y1="166.0" x2="300.0" y2="166.0" stroke="#0072B2" stroke-width="3" marker-end="url(#ab)" />
+<text x="350.0" y="202.0" fill="#0072B2" font-size="12" text-anchor="middle" >charge axiale de l'engrènement</text>
+<text x="350.0" y="94.0" fill="#222" font-size="12" text-anchor="middle" >Axe de l'arbre (7)</text>
+<line x1="350.0" y1="100.0" x2="350.0" y2="178.0" stroke="#888" stroke-width="1" />
+<line x1="34.0" y1="16.0" x2="46.0" y2="28.0" stroke="#D55E00" stroke-width="2.6" />
+<line x1="34.0" y1="28.0" x2="46.0" y2="16.0" stroke="#D55E00" stroke-width="2.6" />
+<text x="54.0" y="27.0" fill="#222" font-size="12.5" text-anchor="start" >arrêt axial de la bague ; bagues intérieures arrêtées côté intérieur, bagues extérieures côté extérieur</text>
+</svg>

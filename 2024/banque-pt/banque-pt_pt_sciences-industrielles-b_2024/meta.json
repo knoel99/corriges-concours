@@ -1,0 +1,142 @@
+{
+  "slug": "banque-pt_pt_sciences-industrielles-b_2024",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Sciences industrielles B",
+    "annee": 2024
+  },
+  "questions": 62,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2024/si_b_2024_pt.pdf",
+    "sujet_sha256": "1854a25cc77211820697dabd3351e0dcaaf6008556396c7cd377c6a129ae6f62",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2024/rapport_si_b_ecrit_2024.pdf",
+    "rapport_sha256": "6e2a252aab913e20ef40175e2a8ec33bd3aa9141085b2e6676d5d097a58f14e0"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "57",
+      "58",
+      "59",
+      "60",
+      "61",
+      "62"
+    ],
+    "precision": "Sujet de 63 pages PDF lu en entier en image (notice, documents ressources, cahier réponse) et rapport du jury de 4 pages. Les 62 questions sont traitées. Les tracés demandés sur le cahier réponse (questions 7 à 11, 14, 31, 40, 50 et 54) sont rendus par huit schémas originaux et non sur les fonds du cahier ; pour la question 50, le schéma est donné en deux vues planes et non sur la perspective du cahier. Les questions 23, 28, 47, 50 et 62 appellent des réponses argumentées pour lesquelles d'autres choix sont recevables ; à la question 56, l'angle α de la figure 30 est pris comme l'angle réel entre la force et la direction tangentielle."
+  },
+  "figures": [
+    {
+      "fichier": "figures/q7-q9-choix-essieu.svg",
+      "question": "7",
+      "legende": "Force sur l'attelage en fonction de λ : limite de report de charge à 28,5 kN, limite Δ = 1,4 m, zones exclues hachurées et point de fonctionnement retenu (constructions des questions 7, 8 et 9)"
+    },
+    {
+      "fichier": "figures/q10-timon-actions.svg",
+      "question": "10",
+      "legende": "Timon isolé : forces verticales en C (26 kN vers le haut), B (52 kN vers le bas) et A (26 kN vers le haut), tracées à l'échelle"
+    },
+    {
+      "fichier": "figures/q11-diagrammes-cohesion.svg",
+      "question": "11",
+      "legende": "Diagrammes de l'effort tranchant Ry (−26 kN puis +26 kN) et du moment de flexion Mz (maximum 41,6 kN·m en B) le long du timon, convention aval sur amont"
+    },
+    {
+      "fichier": "figures/q14-cone-de-frottement.svg",
+      "question": "14",
+      "legende": "Amendement isolé : poids P en A8, réaction normale RN et frottement RT en A3, cône de frottement de demi-angle 27° et résultante du fond sur la génératrice du cône"
+    },
+    {
+      "fichier": "figures/q31-schema-cinematique-rt500.svg",
+      "question": "31",
+      "legende": "Schéma cinématique du réducteur RT 500 : entrée par pignon conique 18 (28 dents) sur roue 14 (43 dents), puis trains cylindriques 12–9 (10 et 63 dents) et 7–4 (12 et 54 dents) vers l'arbre creux de sortie 2"
+    },
+    {
+      "fichier": "figures/q40-vitesse-trois-vues.svg",
+      "question": "40",
+      "legende": "Vecteur vitesse du point B dans les trois vues du cahier réponse : composante principale rA·ΩRD selon Y1, petite composante selon X1, aucune composante selon Z1"
+    },
+    {
+      "fichier": "figures/q50-architecture-boitier.svg",
+      "question": "50",
+      "legende": "Architecture proposée du boîtier : pignon conique d'entrée, roue conique sur un arbre transversal, deux pignons coniques symétriques entraînant en sens opposés les roues des deux arbres de sortie verticaux"
+    },
+    {
+      "fichier": "figures/q54-montage-roulements.svg",
+      "question": "54",
+      "legende": "Schéma d'architecture du guidage de l'arbre 7 : roulements 4 et 6 en coupe, quatre arrêts axiaux repérés par des croix (bagues intérieures arrêtées côté intérieur, bagues extérieures arrêtées côté extérieur par le carter)"
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions (62 questions) à partir du sujet lu en image et du rapport du jury 2024 ; toutes les applications numériques recalculées, huit schémas originaux tracés pour les documents-réponses."
+    }
+  ]
+}

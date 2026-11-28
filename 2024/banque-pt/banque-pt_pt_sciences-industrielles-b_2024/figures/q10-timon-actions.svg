@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="340" viewBox="0 0 700 340" font-family="sans-serif" font-size="14">
+<defs>
+<marker id="ak" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 z" fill="#222"/></marker>
+<marker id="ab" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 z" fill="#0072B2"/></marker>
+<marker id="av" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 z" fill="#D55E00"/></marker>
+<marker id="ag" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 z" fill="#009E73"/></marker>
+<pattern id="h1" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#D55E00" stroke-width="1.2"/></pattern>
+<pattern id="h2" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#0072B2" stroke-width="1.2"/></pattern>
+<pattern id="h3" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#222" stroke-width="1"/></pattern>
+</defs>
+<rect x="0" y="0" width="700" height="340" fill="#fff"/>
+<path d="M118.0,162.0 L190.0,148.0 L310.0,136.0 L390.0,144.0 L580.0,163.0 L580.0,177.0 L160.0,180.0 L118.0,180.0 z" fill="#eee" stroke="#888" stroke-width="1.5" />
+<circle cx="130.0" cy="170.0" r="4" fill="#fff" stroke="#222" stroke-width="1.5" />
+<circle cx="350.0" cy="170.0" r="4" fill="#fff" stroke="#222" stroke-width="1.5" />
+<circle cx="570.0" cy="170.0" r="4" fill="#fff" stroke="#222" stroke-width="1.5" />
+<text x="104.0" y="176.0" fill="#222" font-size="17" text-anchor="start" >C</text>
+<text x="360.0" y="162.0" fill="#222" font-size="17" text-anchor="start" >B</text>
+<text x="586.0" y="176.0" fill="#222" font-size="17" text-anchor="start" >A</text>
+<line x1="570.0" y1="170.0" x2="570.0" y2="112.8" stroke="#0072B2" stroke-width="3" marker-end="url(#ab)" />
+<text x="580.0" y="130.0" fill="#0072B2" font-size="14" text-anchor="start" >FA = 26 kN</text>
+<line x1="130.0" y1="170.0" x2="130.0" y2="112.8" stroke="#0072B2" stroke-width="3" marker-end="url(#ab)" />
+<text x="140.0" y="120.0" fill="#0072B2" font-size="14" text-anchor="start" >FC = 26 kN</text>
+<line x1="350.0" y1="170.0" x2="350.0" y2="284.4" stroke="#D55E00" stroke-width="3" marker-end="url(#av)" />
+<text x="360.0" y="270.0" fill="#D55E00" font-size="14" text-anchor="start" >FB = 52 kN</text>
+<line x1="130.0" y1="184.0" x2="130.0" y2="318.0" stroke="#888" stroke-width="1" />
+<line x1="350.0" y1="290.0" x2="350.0" y2="318.0" stroke="#888" stroke-width="1" />
+<line x1="570.0" y1="184.0" x2="570.0" y2="318.0" stroke="#888" stroke-width="1" />
+<line x1="240.0" y1="310.0" x2="130.0" y2="310.0" stroke="#222" stroke-width="1.2" marker-end="url(#ak)" />
+<line x1="240.0" y1="310.0" x2="350.0" y2="310.0" stroke="#222" stroke-width="1.2" marker-end="url(#ak)" />
+<line x1="240.0" y1="310.0" x2="240.0" y2="310.0" stroke="#222" stroke-width="1.2" />
+<line x1="460.0" y1="310.0" x2="350.0" y2="310.0" stroke="#222" stroke-width="1.2" marker-end="url(#ak)" />
+<line x1="460.0" y1="310.0" x2="570.0" y2="310.0" stroke="#222" stroke-width="1.2" marker-end="url(#ak)" />
+<line x1="460.0" y1="310.0" x2="460.0" y2="310.0" stroke="#222" stroke-width="1.2" />
+<text x="240.0" y="303.0" fill="#222" font-size="14" text-anchor="middle" >1,6 m</text>
+<text x="460.0" y="303.0" fill="#222" font-size="14" text-anchor="middle" >Δ = 1,6 m</text>
+<line x1="610.0" y1="60.0" x2="632.0" y2="60.0" stroke="#222" stroke-width="2" />
+<line x1="610.0" y1="54.0" x2="610.0" y2="66.0" stroke="#222" stroke-width="1.5" />
+<line x1="632.0" y1="54.0" x2="632.0" y2="66.0" stroke="#222" stroke-width="1.5" />
+<text x="621.0" y="46.0" fill="#222" font-size="13" text-anchor="middle" >Échelle : 10 kN</text>
+<text x="20.0" y="30.0" fill="#222" font-size="14" text-anchor="start" >Timon isolé : trois forces verticales (efforts longitudinaux et poids du timon négligés)</text>
+</svg>
