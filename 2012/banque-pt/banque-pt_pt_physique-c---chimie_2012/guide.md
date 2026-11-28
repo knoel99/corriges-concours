@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** La chimie de quelques composés du soufre, de la blende au sulfure d'hydrogène. L'épreuve dure 2 heures, **calculatrice autorisée**, et comporte 36 questions repérées de I.1.1 à III.3.3, réparties en trois parties indépendantes. Un document-réponse est à rendre avec la copie : le diagramme potentiel-pH simplifié du fer, du cuivre et du manganèse, à compléter par les frontières des couples de l'eau. Les données sont distribuées au fil de l'énoncé, à la suite des questions qui les utilisent.
@@ -268,7 +270,7 @@ soit, formellement, $\mathrm{Fe_2O_{3(s)}} + 3\,\mathrm{H_2O} = 2\,\mathrm{Fe(OH
 
 Pendant ce temps, l'oxyde de zinc, basique, est dissous par l'acide : $\mathrm{ZnO_{(s)}} + 2\,\mathrm{H^+_{(aq)}} = \mathrm{Zn^{2+}_{(aq)}} + \mathrm{H_2O}$. Une filtration sépare donc la solution de zinc du résidu solide qui contient le fer(III).
 
-À ce même pH, le diagramme montre en revanche que le fer(II) reste en solution sous forme $\mathrm{Fe^{2+}}$ (frontière avec $\mathrm{Fe(OH)_2}$ à $\mathrm{pH} = 7{,}5$), de même que le cuivre sous forme $\mathrm{Cu^{2+}}$ (frontière à $\mathrm{pH} = 5$) et le manganèse(II) sous forme $\mathrm{Mn^{2+}}$ (frontière à $\mathrm{pH} = 8{,}6$) : la première lixiviation ne les élimine pas. Le plomb, lui, est retenu dans le résidu sous forme de sulfate de plomb très peu soluble ($\mathrm{p}K_s = 7{,}8$) en milieu sulfurique.
+À ce même pH, le diagramme montre en revanche que le fer(II) reste en solution sous forme $\mathrm{Fe^{2+}}$ (frontière avec $\mathrm{Fe(OH)_2}$ à $\mathrm{pH} = 7{,}5$), de même que le cuivre sous forme $\mathrm{Cu^{2+}}$ (frontière à $\mathrm{pH} = 5$) et le manganèse(II) sous forme $\mathrm{Mn^{2+}}$ (frontière à $\mathrm{pH} = 8{,}6$) : la première lixiviation ne les élimine pas. Le plomb, lui, reste dans le résidu solide : l'énoncé donne $\mathrm{p}K_s(\mathrm{PbSO_4}) = 7{,}8$, et le sulfate de plomb(II) est très peu soluble en milieu sulfurique. L'énoncé cite toutefois l'oxyde $\mathrm{PbO_2}$, où le plomb est au degré $+\mathrm{IV}$ : le passage au sulfate, où il est au degré $+\mathrm{II}$, suppose une réduction que l'énoncé ne détaille pas. Dans les deux cas, le plomb ne passe pas en solution.
 
 > [!JURY]
 > Le rapport indique que le traitement de l'oxyde de zinc par la première lixiviation a été bien perçu : il fallait pour cela savoir lire le diagramme potentiel-pH joint en annexe.
@@ -346,7 +348,11 @@ $$\boxed{\text{Tout le fer est engagé dans le précipité d'hydroxyde de fer(II
 
 *Cuivre.* La frontière $\mathrm{Cu^{2+}/Cu(OH)_2}$ est à $\mathrm{pH} = 5$ pour $C_0 = 1{,}0\cdot10^{-1}\ \mathrm{mol\cdot L^{-1}}$. À $\mathrm{pH} = 6$, on est dans le domaine de $\mathrm{Cu(OH)_2}$ : **le cuivre précipite en grande partie sous forme d'hydroxyde de cuivre(II)**, éliminé avec le résidu. Il subsiste $[\mathrm{Cu^{2+}}] = K_s/[\mathrm{HO^-}]^2 = 10^{-19}/10^{-16} = 10^{-3}\ \mathrm{mol\cdot L^{-1}}$, soit 1 % de la concentration de tracé : il reste donc un peu de cuivre dissous.
 
-*Manganèse.* La frontière $\mathrm{Mn^{2+}/Mn(OH)_2}$ est à $\mathrm{pH} = 8{,}6$ : à $\mathrm{pH} = 6$, **le manganèse(II) ne précipite pas sous forme d'hydroxyde**, il reste en solution sous forme $\mathrm{Mn^{2+}}$. Le diagramme montre toutefois que la droite du dioxygène ($0{,}87\ \mathrm{V}$ à $\mathrm{pH} = 6$) passe au-dessus de la frontière $\mathrm{MnO_2/Mn^{2+}}$ ($1{,}29 - 0{,}12 \times 6 = 0{,}57\ \mathrm{V}$) : thermodynamiquement, le dioxygène peut oxyder $\mathrm{Mn^{2+}}$ en dioxyde de manganèse solide, et cela d'autant plus que le pH est élevé (les deux droites se croisent à $\mathrm{pH} = 1$). Cette oxydation est lente et l'élimination du manganèse n'est que partielle : des ions $\mathrm{Mn^{2+}}$ subsistent, ce que confirme la suite de l'énoncé (cémentation).
+*Manganèse.* La frontière $\mathrm{Mn^{2+}/Mn(OH)_2}$ est à $\mathrm{pH} = 8{,}6$ : à $\mathrm{pH} = 6$, **le manganèse(II) ne précipite pas sous forme d'hydroxyde**. En revanche, la droite du dioxygène ($0{,}87\ \mathrm{V}$ à $\mathrm{pH} = 6$) passe au-dessus de la frontière $\mathrm{MnO_2/Mn^{2+}}$ ($1{,}29 - 0{,}12 \times 6 = 0{,}57\ \mathrm{V}$) : les domaines de $\mathrm{O_2}$ et de $\mathrm{Mn^{2+}}$ sont disjoints dès que $\mathrm{pH} > 1$ (les deux droites se croisent à $\mathrm{pH} = 1$), avec un écart de $0{,}30\ \mathrm{V}$ à $\mathrm{pH} = 6$. D'après le diagramme, le dioxygène oxyde donc $\mathrm{Mn^{2+}}$ en dioxyde de manganèse solide :
+
+$$2\,\mathrm{Mn^{2+}_{(aq)}} + \mathrm{O_{2(g)}} + 2\,\mathrm{H_2O} = 2\,\mathrm{MnO_{2(s)}} + 4\,\mathrm{H^+_{(aq)}}$$
+
+**Le manganèse est donc engagé dans le précipité de dioxyde de manganèse $\mathrm{MnO_2}$**, et la calcine consomme les ions $\mathrm{H^+}$ formés. Le diagramme ne renseigne que sur ce qui est possible, pas sur la vitesse ni sur le taux d'élimination atteint : l'énoncé précise ensuite que la solution contient encore des cations qui n'ont pu être éliminés et donne $E^\circ(\mathrm{Mn^{2+}/Mn})$ pour la cémentation, ce qui indique que des ions $\mathrm{Mn^{2+}}$ subsistent.
 
 > [!JURY]
 > D'après le rapport, la seconde lixiviation, en présence de calcine et de dioxygène, est restée un mystère pour nombre de candidats.
@@ -574,7 +580,7 @@ $$T_i = \frac{\Delta_r H^\circ}{\Delta_r S^\circ} = \frac{-141{,}5\cdot10^{3}}{-
 
 $$\boxed{T_i \approx 816\ \mathrm{K}\ \ (\text{environ } 543\ ^\circ\mathrm{C})}$$
 
-Pour $T < T_i$, $\Delta_r G^\circ < 0$ et $K^\circ > 1$. Cette valeur est supérieure à la température d'ébullition du soufre (718 K) : elle sort du domaine de validité de l'expression utilisée et n'a donc qu'une valeur indicative.
+Pour $T < T_i$, $\Delta_r G^\circ < 0$ et $K^\circ > 1$. Cette valeur est supérieure à la température d'ébullition du soufre (718 K) : elle sort du domaine de validité de l'expression utilisée et n'a donc qu'une valeur indicative. À 718 K, limite du domaine, $\Delta_r G^\circ_3 = -141{,}5\cdot10^{3} + 173{,}5 \times 718 \approx -16{,}9\cdot10^{3}\ \mathrm{J\cdot mol^{-1}}$, soit $K^\circ = \exp\left(-\Delta_r G^\circ_3/RT\right) \approx 17$ : l'équilibre (3), écrit avec le soufre liquide, ne s'inverse pas tant que le soufre est liquide.
 
 *Domaine où la réaction est « totale ».* La condition $K^\circ_T \geqslant 10^4$ s'écrit $\Delta_r G^\circ(T) = -RT\ln K^\circ \leqslant -RT\ln(10^4)$ :
 
@@ -584,10 +590,10 @@ $$T \leqslant \frac{-\Delta_r H^\circ}{-\Delta_r S^\circ + R\ln(10^4)} = \frac{1
 
 $$\boxed{T \leqslant 566\ \mathrm{K}\ \ (\text{environ } 293\ ^\circ\mathrm{C})}$$
 
-Cette borne est bien dans le domaine du soufre liquide. Comme le soufre doit rester liquide pour être évacué, on opère entre 386 K et 566 K, soit entre 113 °C et un peu moins de 300 °C : c'est exactement l'intervalle annoncé par l'énoncé.
+Cette borne est bien dans le domaine du soufre liquide. Comme le soufre doit rester liquide pour être évacué, on opère entre 386 K et 566 K, soit entre 113 °C et un peu moins de 300 °C : c'est, à quelques degrés près, l'intervalle annoncé par l'énoncé.
 
 > [!JURY]
-> Le rapport reproche à beaucoup de candidats de ne pas indiquer que la linéarisation de l'enthalpie libre de réaction ne vaut qu'entre deux changements d'état, et de ne presque jamais préciser la réaction pour laquelle on linéarise, ce qui donne au correcteur le sentiment que le candidat ne sait pas vraiment de quoi il parle.
+> Le rapport relève que tous les candidats n'indiquent pas que la linéarisation de l'enthalpie libre de réaction ne vaut qu'entre deux changements d'état, et que la réaction pour laquelle on linéarise n'est presque jamais précisée, ce qui donne au correcteur le sentiment que le candidat ne sait pas vraiment de quoi il parle.
 
 > [!PIEGE]
 > Unités : $\Delta_r H^\circ$ est en kilojoules par mole, $\Delta_r S^\circ$ en joules par kelvin et par mole. Convertir avant de diviser, sinon $T_i$ sort mille fois trop petit.
