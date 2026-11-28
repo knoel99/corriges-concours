@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Épreuve de 6 h, sans calculatrice ni document. Support : étude de préconception d'un épandeur agricole monocoque surbaissé à caisse étroite (gamme « FORCE »), de volume utile $11\ \text{m}^3$. Les 62 questions de la notice justificative sont traitées dans l'ordre du sujet ; les tracés demandés sur le cahier réponse sont donnés sous forme de schémas originaux. Les applications numériques sont menées avec $g = 10\ \text{m·s}^{-2}$ et des arrondis compatibles avec un calcul à la main.
 
 Principales données utilisées :
@@ -277,13 +279,13 @@ Le moment de flexion est nul aux articulations $C$ et $A$ et maximal dans la zon
 
 ### Question 14 — Actions sur l'amendement et cône de frottement
 
-On isole la masse d'amendement, qui glisse vers l'arrière (sens $+\vec x$ de la figure du cahier réponse) sur le fond en acier de la caisse.
+On isole la masse d'amendement, qui glisse vers l'arrière, vers les rotors (sens $-\vec X$ de la figure du cahier réponse, dont l'axe $\vec X$ pointe vers l'avant de l'épandeur), sur le fond en acier de la caisse.
 
 | Action | Point d'application | Direction et sens |
 |---|---|---|
 | Poids $\vec P$ | $A_8$ (centre du volume d'amendement) | vertical, vers le bas |
 | Réaction normale du fond $\vec R_N$ | $A_3$ (milieu du fond, à la verticale de $A_8$) | verticale, vers le haut |
-| Frottement du fond $\vec R_T$ | $A_3$ | horizontal, opposé au déplacement de l'amendement ($-\vec x$) |
+| Frottement du fond $\vec R_T$ | $A_3$ | horizontal, opposé au déplacement de l'amendement, donc vers l'avant ($+\vec X$) |
 | Cône de frottement | sommet $A_3$, axe vertical (normale au fond) | demi-angle au sommet $\alpha$ |
 
 En glissement, la résultante $\vec R_N + \vec R_T$ est sur le cône, inclinée de $\alpha$ par rapport à la normale, du côté opposé au mouvement (figure 4).
@@ -459,7 +461,7 @@ Vérification : la vitesse des noix vaut $P_{noix}/C_{noix} \approx 2{,}0\ \text
 | Puissance mécanique nécessaire sur l'arbre d'entraînement des noix | | X | |
 | Rendement de l'ensemble de la chaîne de transmission de puissance | | | X |
 
-Le réducteur divise le couple demandé au moteur par environ $1/R$ et multiplie sa vitesse d'autant : la cylindrée chute dans le même rapport et le moteur travaille dans une plage de vitesse où son rendement est correct. Le besoin sur l'arbre des noix ne change pas. Le rendement de la chaîne est multiplié par celui du réducteur (environ $0{,}86$, question 33) ; la puissance hydraulique augmente donc d'environ $17\ \%$, ce qui reste du même ordre de grandeur.
+Le réducteur divise le couple demandé au moteur par environ $1/R$ et multiplie sa vitesse d'autant : la cylindrée chute dans le même rapport et le moteur travaille dans une plage de vitesse où son rendement est correct. Le besoin sur l'arbre des noix ne change pas. Le rendement de la chaîne est multiplié par celui du réducteur (environ $0{,}86$, question 33) ; la puissance hydraulique augmente donc d'environ $17\ \%$, ce qui reste du même ordre de grandeur. Les deux réponses se tiennent : la baisse de rendement (facteur $0{,}86$) et cette hausse de puissance hydraulique sont le même effet. On peut aussi cocher « Augmentation » pour la puissance hydraulique, à condition de dire que la hausse reste modeste devant les gains sur le couple et la cylindrée.
 
 **II.2.4 — Choix du réducteur mécanique**
 
@@ -570,7 +572,7 @@ Tableau de la figure 19 :
 
 **Justification.** C'est le seul moteur qui atteint $810\ \text{tr·min}^{-1}$ avec un couple d'au moins $104\ \text{N·m}$. Sur sa courbe caractéristique (figure 21), le point ($810\ \text{tr·min}^{-1}$, $104\ \text{N·m}$) se trouve dans la zone d'utilisation intermittente, près de la ligne de pression $110\ \text{bar}$ et de la ligne de débit $68\ \text{L·min}^{-1}$. C'est acceptable, car ce point correspond aux conditions extrêmes (dose et vitesse maximales à la fois, benne pleine), qui ne sont pas tenues en permanence. Dans les conditions courantes, le moteur travaille dans sa zone continue, où son rendement global dépasse $70\ \%$.
 
-Réserve : le débit théorique à ce point, $80\times 810 \approx 65\ \text{L·min}^{-1}$, dépasse les $60\ \text{L·min}^{-1}$ de l'exigence 8.2, mais reste inférieur aux $100\ \text{L·min}^{-1}$ annoncés sur la figure 11 pour l'arrivée hydraulique du tracteur.
+Réserve : le débit théorique à ce point vaut $80\times 810 \approx 65\ \text{L·min}^{-1}$, et le débit à fournir $65/0{,}9 \approx 72\ \text{L·min}^{-1}$ avec le rendement volumétrique de $0{,}9$ de la question 24. Cette valeur dépasse les $60\ \text{L·min}^{-1}$ de l'exigence 8.2, ainsi que la ligne $68\ \text{L·min}^{-1}$ qui borne à droite la zone intermittente de la figure 21 (sur la courbe du constructeur, le point reste juste à gauche de cette ligne, ce qui suppose un rendement volumétrique meilleur que $0{,}9$). Elle reste inférieure aux $100\ \text{L·min}^{-1}$ annoncés sur la figure 11 pour l'arrivée hydraulique du tracteur. Le point extrême n'est donc pas tenu dans les limites de l'exigence 8.2 : avec $60\ \text{L·min}^{-1}$, le moteur ne dépasse pas $60\times 0{,}9/0{,}080 = 675\ \text{tr·min}^{-1}$, soit environ $83\ \%$ de la vitesse visée.
 
 ## Partie II.3 — Dimensionnement de la chaîne de transmission de puissance des rotors de distribution verticaux
 
@@ -709,6 +711,8 @@ Les expressions de la question 45 donnent $t \approx 1{,}08\ \text{s}$ et $Y \ap
 
 Réserve : cette distance est une portée maximale, pour une particule partant du haut du rotor ; la majorité des particules, éjectées plus bas ou dans d'autres directions, retombe plus près. La marge par rapport à la borne basse ($15\ \text{m}$) est faible, mais la vitesse des rotors permet de l'ajuster.
 
+Autre réserve : l'exigence porte sur une largeur épandue et le calcul sur la portée d'une particule. La comparaison directe suppose que cette portée mesure la largeur de la bande ; si la matière était projetée à cette distance de chaque côté de l'épandeur, la bande serait deux fois plus large et dépasserait $18\ \text{m}$. Le dire sur la copie.
+
 ### Question 48 — Vitesse de rotation des rotors
 
 La composante horizontale de la vitesse d'éjection est la vitesse d'entraînement en périphérie du hérisson, au rayon $d_{hér.}/2$ :
@@ -743,7 +747,7 @@ C'est un rapport de réduction. L'énoncé retient ensuite $N_{RD} = 450\ \text{
 - Ce pignon engrène avec une roue conique solidaire d'un arbre transversal horizontal, logé dans la partie tubulaire du carter et guidé par une liaison pivot.
 - L'arbre transversal porte à chaque extrémité un pignon conique, qui engrène avec une roue conique liée à l'arbre de sortie vertical correspondant ; chaque arbre de sortie est en liaison pivot avec le carter (deux roulements, figure 29).
 
-**Sens de rotation.** Les deux pignons d'extrémité tournent ensemble. Placés de façon symétrique par rapport au plan médian du boîtier (tous deux du côté intérieur des arbres de sortie, ou tous deux du côté extérieur), ils attaquent les deux roues de sortie sur des flancs opposés : les deux arbres de sortie tournent en sens contraires. Le côté où l'on place la roue conique de l'arbre transversal par rapport à l'arbre d'entrée fixe ensuite le sens d'ensemble ; changer cette roue de côté inverse les deux sorties à la fois. Avec les sens de la figure 26 et des pignons du côté intérieur, la roue de l'arbre transversal est placée du côté du rotor droit.
+**Sens de rotation.** Les deux pignons d'extrémité tournent ensemble. Placés de façon symétrique par rapport au plan médian du boîtier (tous deux du côté intérieur des arbres de sortie, ou tous deux du côté extérieur), ils attaquent les deux roues de sortie sur des flancs opposés : les deux arbres de sortie tournent en sens contraires. Le côté où l'on place la roue conique de l'arbre transversal par rapport à l'arbre d'entrée fixe ensuite le sens d'ensemble ; changer cette roue de côté inverse les deux sorties à la fois. Sur la figure 26, l'arbre d'entrée tourne dans le sens trigonométrique vu de face ; vus de dessus, le rotor droit tourne dans le sens trigonométrique et le rotor gauche dans le sens horaire. Avec des roues de sortie placées sous l'arbre transversal (comme le pignon (2) de la figure 29) et des pignons du côté intérieur, la roue de l'arbre transversal est alors placée du côté du rotor droit ; elle passerait du côté du rotor gauche si les roues de sortie étaient au-dessus de l'arbre transversal.
 
 **Rapport.** Le produit des rapports des deux étages doit valoir $0{,}45$ :
 
@@ -813,7 +817,7 @@ $$\boxed{L_{cann.} \approx 0{,}062\ \text{m} = 62\ \text{mm}}$$
 
 | Bague | Arrêt axial | Côté |
 |---|---|---|
-| Bague intérieure de (4) | moyeu du pignon (2), lui-même en appui sur un épaulement de l'arbre (7) | côté intérieur (vers l'autre roulement) |
+| Bague intérieure de (4) | moyeu du pignon (2), lui-même en appui sur l'épaulement de l'arbre (7) par l'intermédiaire de la bague entretoise (3) | côté intérieur (vers l'autre roulement) |
 | Bague extérieure de (4) | fond du logement du carter (1), par l'intermédiaire d'une cale | côté extérieur |
 | Bague intérieure de (6) | épaulement de l'arbre (7) | côté intérieur |
 | Bague extérieure de (6) | épaulement du logement de la pièce (5), fixée sur le carter (1) par les vis (9) | côté extérieur |
@@ -840,7 +844,14 @@ $$\boxed{\left\{\mathbf T_{engr.\to(2)}\right\} = \begin{Bmatrix} -F_{eng}\,\sin
 
 $Z_{engr.}$ est la composante tangentielle, qui transmet le couple ; $Y_{engr.}$ est la composante radiale, dirigée vers l'axe ; $X_{engr.}$ est la composante axiale, qui pousse le pignon vers le roulement (4).
 
-Remarque de lecture : cette écriture prend $\alpha$ comme l'angle réel entre la force et $\vec Z$. Si l'on prenait pour $\alpha$ l'angle apparent dessiné dans la vue $(\vec X,\vec Z)$, on aurait $\tan\alpha = X_{engr.}/Z_{engr.}$, ce qui diffère peu pour un angle de pression usuel.
+Remarques de lecture.
+
+- Angle $\alpha$ : cette écriture prend $\alpha$ comme l'angle réel entre la force et $\vec Z$ (angle de pression). Si l'on prenait pour $\alpha$ l'angle apparent dessiné dans la vue $(\vec X,\vec Z)$, on aurait $\tan\alpha = X_{engr.}/Z_{engr.}$, ce qui diffère peu pour un angle de pression usuel.
+- Angle $\beta$ : l'énoncé est ambigu, car la figure 30 et le texte ne s'accordent pas. Sur la figure, $\beta$ est tracé entre la projection de la force et l'axe $\vec Y$ ; c'est la lecture retenue ici, puisque la question demande l'action « telle que modélisée sur la Fig. 30 ». Mais la force est perpendiculaire à la génératrice du cône, si bien que l'angle ainsi tracé est le demi-angle au sommet du cône, alors que le texte donne $90^\circ-\beta$ pour ce demi-angle (et l'annexe B appelle $\beta$ l'angle à la base du cône). Avec la définition du texte, la force fait l'angle $\beta$ avec l'axe $\vec X$ et les rôles de $\sin\beta$ et $\cos\beta$ s'échangent :
+
+$$X_{engr.} = -F_{eng}\,\sin\alpha\,\cos\beta \qquad Y_{engr.} = -F_{eng}\,\sin\alpha\,\sin\beta \qquad Z_{engr.} = -F_{eng}\,\cos\alpha$$
+
+Les deux écritures décrivent la même force, avec deux angles $\beta$ complémentaires. Sur une copie, annoncer la lecture choisie.
 
 ### Question 57 — Composantes nulles des torseurs en $A$ et $B$
 

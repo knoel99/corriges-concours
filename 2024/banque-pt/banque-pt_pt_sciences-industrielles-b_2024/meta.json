@@ -80,7 +80,7 @@
       "61",
       "62"
     ],
-    "precision": "Sujet de 63 pages PDF lu en entier en image (notice, documents ressources, cahier réponse) et rapport du jury de 4 pages. Les 62 questions sont traitées. Les tracés demandés sur le cahier réponse (questions 7 à 11, 14, 31, 40, 50 et 54) sont rendus par huit schémas originaux et non sur les fonds du cahier ; pour la question 50, le schéma est donné en deux vues planes et non sur la perspective du cahier. Les questions 23, 28, 47, 50 et 62 appellent des réponses argumentées pour lesquelles d'autres choix sont recevables ; à la question 56, l'angle α de la figure 30 est pris comme l'angle réel entre la force et la direction tangentielle."
+    "precision": "Sujet de 63 pages PDF lu en entier en image (notice, documents ressources, cahier réponse) et rapport du jury de 4 pages. Les 62 questions sont traitées. Les tracés demandés sur le cahier réponse (questions 7 à 11, 14, 31, 40, 50 et 54) sont rendus par huit schémas originaux et non sur les fonds du cahier ; pour la question 50, le schéma est donné en deux vues planes et non sur la perspective du cahier. Les questions 23, 28, 47, 50 et 62 appellent des réponses argumentées pour lesquelles d'autres choix sont recevables ; à la question 56, l'angle α de la figure 30 est pris comme l'angle réel entre la force et la direction tangentielle, et l'angle β est lu sur la figure (entre la projection de la force et l'axe Y), lecture qui diffère de la définition donnée par le texte de l'énoncé (demi-angle au sommet égal à 90° − β) ; l'autre écriture est donnée en remarque."
   },
   "figures": [
     {
@@ -137,6 +137,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Rédaction des deux éditions (62 questions) à partir du sujet lu en image et du rapport du jury 2024 ; toutes les applications numériques recalculées, huit schémas originaux tracés pour les documents-réponses."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Corrections issues d'une relecture indépendante, vérifiées sur le sujet, dans les deux éditions : question 14 (axe X du cahier réponse orienté vers l'avant, signes du texte et repère du schéma corrigés), question 56 (désaccord entre la figure 30 et le texte sur l'angle β signalé, seconde expression donnée), question 38 (débit avec le rendement volumétrique, 72 L/min, et conclusion sur l'exigence 8.2), question 50 (hypothèses sur le sens de l'entrée et la position des roues de sortie écrites, flèche ajoutée au schéma), question 54 (entretoise 3), questions 28 et 47 (précisions) ; encadrés du jury recontrôlés sur le rapport."
     }
   ]
 }
