@@ -1,0 +1,118 @@
+{
+  "slug": "banque-pt_pt_physique-b---chimie_2022",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique B - Chimie",
+    "annee": 2022
+  },
+  "questions": 43,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2022/ph_b_ch_2022_pt.pdf",
+    "sujet_sha256": "a8acf0787db9cecfbfd39febec65d8fa9182aa9d5511314da84791fe69d84c76",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2022/rapport_phys_b_ecrit_2022.pdf",
+    "rapport_sha256": "d1204ae1c8aef67bea25ebe9e2c99d04ce94535537502ab859904a255485f867"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43"
+    ],
+    "precision": "Sujet de 8 pages PDF lu en entier (énoncé p. 2 à 5, données p. 6, p. 7 et 8 blanches) ; 43 questions numérotées Q1 à Q43, toutes traitées. Rapport commun à Physique B de 5 pages, partie chimie p. 1 et 2. Lectures graphiques sur les courbes densité de courant-potentiel : potentiels à 10 mA/cm² lus à 0,01 V près (-0,69 V sur le zinc, -0,42 V sur le cuivre, question 19), pied de la branche D vers -0,25 V (questions 14, 15 et 18). Diagramme potentiel-pH de l'iode retracé par le calcul (questions 40 et 41). Question 16 traitée avec les potentiels standard (0,76 V par élément), la valeur mesurée de 5,2 V étant interprétée à la question 18 par la surtension du dihydrogène sur le cuivre."
+  },
+  "figures": [
+    {
+      "fichier": "figures/maille-oxyde-baryum.svg",
+      "question": "9",
+      "legende": "Maille de l'oxyde de baryum : ions oxyde aux sommets et aux centres des faces, ions baryum dans les sites octaédriques."
+    },
+    {
+      "fichier": "figures/pile-volta-element.svg",
+      "question": "13",
+      "legende": "Un élément de la pile de Volta : électrodes, polarités, sens du courant, des électrons et des ions, réactions aux électrodes."
+    },
+    {
+      "fichier": "figures/courbes-j-e-pile-volta.svg",
+      "question": "14",
+      "legende": "Courbes densité de courant-potentiel du zinc et du cuivre, réactions des branches A, B, C, D et lecture des potentiels à 10 mA par centimètre carré."
+    },
+    {
+      "fichier": "figures/quantite-co2-volume.svg",
+      "question": "31",
+      "legende": "Quantité de dioxyde de carbone dans l'enceinte en fonction du volume : portion linéaire puis palier à 1 mol."
+    },
+    {
+      "fichier": "figures/lewis-ion-iodate.svg",
+      "question": "32",
+      "legende": "Schéma de Lewis de l'ion iodate et géométrie pyramidale à base triangulaire."
+    },
+    {
+      "fichier": "figures/titrage-conductimetrique-baryum.svg",
+      "question": "37",
+      "legende": "Allure de la conductance en fonction du volume de sulfate de sodium versé, rupture de pente à 11,0 mL."
+    },
+    {
+      "fichier": "figures/diagramme-e-ph-iode.svg",
+      "question": "40",
+      "legende": "Diagramme potentiel-pH de l'iode complété : domaines de l'ion iodate, du diiode et de l'ion iodure."
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des corrigés brut et guidé des 43 questions et de sept figures, à partir du sujet et du rapport du jury ; applications numériques recalculées et lectures des courbes contrôlées sur le PDF."
+    }
+  ]
+}
