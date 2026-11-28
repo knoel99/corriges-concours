@@ -1,0 +1,98 @@
+{
+  "slug": "banque-pt_pt_physique-c---chimie_2011",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique C - Chimie",
+    "annee": 2011
+  },
+  "questions": 42,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2011/phys_c_pt_2011.zip",
+    "sujet_sha256": "afaa6b8f411a066aa96f5354572309b487df4aab5a8a178f3877bd5b23ad200a",
+    "precision": "L'adresse est celle de l'archive commune aux deux parties de Physique C (chimie et thermodynamique), SHA-256 afaa6b8f411a066aa96f5354572309b487df4aab5a8a178f3877bd5b23ad200a. Fichier interne de la partie chimie, identifié par sa garde « Epreuve de Physique C - Chimie » (repère 11PT19) : ph_c_ch_pt_2011/Physique C chimie SUJET.pdf, 5 pages, SHA-256 e846f067487994ca5381d0612982365368cd9e3fe4759a64b634e4fc0e6f8699. Annexe (document-réponse) : ph_c_ch_pt_2011/PHYSIQUE C CHIMIE(DOC REPONSE) .pdf (le nom comporte une espace avant l'extension), 2 pages, SHA-256 a54cc07139eb4a658ef3f3268e9b555101a313e1e755f44d42ca7317f9999a58. Les trois empreintes sont identiques à celles de campagnes/x-ens/bilans/sources-epreuves-banque-pt-2008-2016.tsv. Le rapport du jury est commun aux deux parties de Physique C ; son empreinte est aussi celle du même fichier. Aucun fichier campagnes/x-ens/bilans/constat-*.tsv ne porte sur cette épreuve.",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2011/rapport_phys_c_ecrit_2011.pdf",
+    "rapport_sha256": "9fe7757862877079293eea9db08ddd44bdcf012cca270b045e1e7247ffd92f17"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1.1",
+      "I.1.2",
+      "I.1.3",
+      "I.1.4",
+      "I.1.5",
+      "I.2.1",
+      "I.2.2",
+      "I.2.3",
+      "I.2.4",
+      "I.2.5",
+      "I.3.1",
+      "I.3.2",
+      "I.3.3",
+      "I.4",
+      "I.5.1",
+      "I.5.2",
+      "II.1.1",
+      "II.1.2",
+      "II.2.1",
+      "II.2.2",
+      "II.3.1",
+      "II.3.2",
+      "II.3.3",
+      "II.3.4",
+      "III.1.1",
+      "III.1.2",
+      "III.2.1",
+      "III.2.2",
+      "III.2.3",
+      "III.3.1",
+      "III.3.2",
+      "III.3.3",
+      "III.3.4",
+      "IV.1.1",
+      "IV.1.2",
+      "IV.2.1",
+      "IV.2.2",
+      "IV.2.3",
+      "IV.2.4",
+      "IV.3.1",
+      "IV.3.2",
+      "IV.3.3"
+    ],
+    "precision": "Sujet de 5 pages PDF numérisées, lu en entier en image (garde p. 1, énoncé p. 2 à 5) et document-réponse de 2 pages (cadre vierge du diagramme d'Ellingham et diagramme potentiel-pH du fer à compléter p. 1, verso barré p. 2) ; 42 questions repérées de I.1.1 à IV.3.3, toutes traitées. Les repères I.1, I.2, I.3, II.1, II.3, III.1, III.2, III.3, IV.1, IV.2 et IV.3 sont des chapeaux sans question ; I.4 est une question sans sous-numéro ; l'énoncé nomme (4), et non (3), la réaction d'oxydation de la wüstite en magnétite. Rapport du jury de Physique C de 4 pages, partie chimie p. 1 et 2. Épreuve sans calculatrice. Lectures sur le document-réponse, recoupées par le calcul avec les données de l'énoncé : frontières verticales à pH 2 et 7,5, segments horizontaux à 0,77 et −0,50 V, points (7,5 ; −0,22 V), (14 ; −0,61 V) et (14 ; −0,89 V). Les deux diagrammes complétés sont reproduits par les figures 2 et 3. Question I.5.1 : l'énoncé ne donne pas la constante d'Avogadro, le corrigé retient 6,022·10^23 mol^-1, choix signalé à sa place. Question I.4 : le rayon de l'atome de carbone, non fourni, n'est cité qu'en ordre de grandeur. Question I.5.2 : l'énoncé dit les densités identiques, le calcul les donne voisines à 1,7 % près, écart signalé. Question IV.1.1 : l'énoncé dit insoluble le composé contenant l'anion A, alors que l'hexacyanoferrate(II) de potassium est soluble, remarque signalée à sa place."
+  },
+  "figures": [
+    {
+      "fichier": "figures/mailles-fer-alpha-gamma.svg",
+      "question": "I.2.1",
+      "legende": "Mailles du fer gamma (cubique à faces centrées) et du fer alpha (cubique centré), avec la position de leurs sites octaédriques."
+    },
+    {
+      "fichier": "figures/ellingham-fer.svg",
+      "question": "II.2.2",
+      "legende": "Diagramme d'Ellingham du fer entre 500 et 1200 K : droites des réactions (1), (2) et (4) écrites pour une mole de dioxygène, point de concours à 843 K et domaines de stabilité du fer, de la wüstite et de la magnétite."
+    },
+    {
+      "fichier": "figures/diagramme-e-ph-fer.svg",
+      "question": "III.2.3",
+      "legende": "Diagramme potentiel-pH du fer à 0,01 mol/L reconstruit d'après le document-réponse et complété : espèces des cinq zones, domaines de corrosion, de passivation et d'immunité, droites des couples de l'eau."
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des corrigés brut et guidé des 42 questions et de trois figures, à partir du sujet, de son document-réponse et du rapport du jury ; applications numériques recalculées, frontières du diagramme potentiel-pH recoupées par le calcul, encadrés JURY relus contre le rapport."
+    }
+  ]
+}
