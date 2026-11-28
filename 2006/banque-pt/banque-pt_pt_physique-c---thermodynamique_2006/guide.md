@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** Étude d'une climatisation fonctionnant en « producteur de froid » : principe de la machine frigorifique, puissance thermique qui traverse un mur en régime stationnaire, cycle du fluide frigorigène dans le diagramme enthalpique $(h, \log P)$, améliorations du cycle (surchauffe, désurchauffe, sous-refroidissement), refroidissement de l'air du local. L'épreuve de Physique C dure 4 heures pour deux problèmes, chimie et thermodynamique, aux barèmes identiques : le sujet conseille d'y consacrer le même temps, soit 2 heures pour cette partie. **Calculatrices autorisées.** Le problème comporte 29 questions numérotées de A-1 à E-29 et un feuillet mobile (figure 3, diagramme du R134A) à compléter et à rendre avec la copie.
@@ -231,7 +233,7 @@ $$J_{th} = \frac{13}{2{,}41} \approx 5{,}4\ \mathrm{W\cdot m^{-2}}$$
 
 $$\boxed{P_f = 5{,}39 \times 52{,}5 \approx 2{,}8 \times 10^{2}\ \mathrm{W} \approx 0{,}28\ \mathrm{kW}}$$
 
-Avec les valeurs du tableau 1, ce sont les deux couches de ciment qui portent l'essentiel de la résistance. La puissance trouvée est dix fois plus faible que les $3\ \mathrm{kW}$ retenus ensuite par l'énoncé : les fenêtres, l'ensoleillement, les occupants et les appareils électriques dominent le bilan réel.
+Avec les valeurs du tableau 1, ce sont les deux couches de ciment qui portent l'essentiel de la résistance. La conductivité $\lambda_c = 0{,}02\ \mathrm{W\cdot m^{-1}\cdot K^{-1}}$ est utilisée telle que le sujet la donne ; c'est une valeur d'isolant, bien plus faible que celle d'un enduit de ciment courant (de l'ordre de $1\ \mathrm{W\cdot m^{-1}\cdot K^{-1}}$, ordre de grandeur extérieur au sujet), avec laquelle le mur laisserait passer environ $1{,}5\ \mathrm{kW}$. La puissance trouvée est dix fois plus faible que les $3\ \mathrm{kW}$ retenus ensuite par l'énoncé : les fenêtres, l'ensoleillement, les occupants et les appareils électriques dominent le bilan réel.
 
 ## Partie C — Étude du cycle du fluide frigorigène
 
@@ -437,7 +439,7 @@ en accord avec la lecture sur les isotitres.
 
 Le tableau 3 du sujet indique pour l'enthalpie massique l'unité « $\mathrm{kJ\cdot kg^{-1}\cdot K^{-1}}$ » : c'est une coquille, l'enthalpie massique s'exprime en $\mathrm{kJ\cdot kg^{-1}}$, comme sur l'axe du diagramme.
 
-![Figure 2 — Cycle 1-2-3-4 du R134A (question C-14) et cycle optimisé de la partie D dans le diagramme enthalpique, tracés à partir des valeurs lues sur la figure 3 du sujet ; les compressions sont représentées par des segments et le point 2 seconde, non figuré, se confond presque avec le point 2](figures/c14-cycles-diagramme-enthalpique.svg)
+![Figure 2 — Cycle 1-2-3-4 du R134A (question C-14) et cycle optimisé de la partie D dans le diagramme enthalpique, tracés à partir des valeurs lues sur la figure 3 du sujet ; les compressions sont représentées par des segments et le point 2 seconde (cercle évidé, non étiqueté) se confond presque avec le point 2](figures/c14-cycles-diagramme-enthalpique.svg)
 
 **Efficacité.** Avec la relation de la question C-12 :
 
@@ -511,7 +513,7 @@ $$\varepsilon_{\mathrm{R22}} = \frac{h_1 - h_4}{h_2 - h_1} = \frac{395 - 229}{43
 
 $$\boxed{\varepsilon_{\mathrm{R22}} \approx 4{,}2}$$
 
-**Commentaire.** Entre les mêmes pressions, les deux fluides ont des efficacités très voisines, celle du R22 étant légèrement supérieure (l'écart est de l'ordre de l'incertitude de lecture). Les températures de changement d'état diffèrent en revanche : $-25\ \mathrm{°C}$ et $23\ \mathrm{°C}$ pour le R22, contre $-10\ \mathrm{°C}$ et $39\ \mathrm{°C}$ pour le R134A. Avec une condensation à $23\ \mathrm{°C}$, le R22 ne pourrait d'ailleurs pas céder de chaleur à un air extérieur à $33\ \mathrm{°C}$ : ce réglage de pressions ne lui convient pas. Le tableau de l'énoncé montre surtout que le R134A ne détruit pas l'ozone (indice ODP nul) et contribue moins à l'effet de serre : c'est ce critère environnemental, et non l'efficacité, qui conduit à le retenir.
+**Commentaire.** Entre les mêmes pressions, les deux fluides ont des efficacités très voisines, celle du R22 étant légèrement supérieure (l'écart est de l'ordre de l'incertitude de lecture). Les températures de changement d'état diffèrent en revanche : $-25\ \mathrm{°C}$ et $23\ \mathrm{°C}$ pour le R22, contre $-10\ \mathrm{°C}$ et $39\ \mathrm{°C}$ pour le R134A. Avec une température de condensation de $23\ \mathrm{°C}$, le R22 ne pourrait d'ailleurs pas se liquéfier au contact d'un air extérieur à $33\ \mathrm{°C}$ : ce réglage de pressions ne lui convient pas. Le tableau de l'énoncé montre surtout que le R134A ne détruit pas l'ozone (indice ODP nul) et contribue moins à l'effet de serre : c'est ce critère environnemental, et non l'efficacité, qui conduit à le retenir.
 
 ## Partie D — Comment améliorer l'efficacité du cycle
 
@@ -599,7 +601,7 @@ Le point 2'' se place sur l'horizontale $10\ \mathrm{bar}$, entre la courbe de s
 > La chaleur prélevée au local par kilogramme de fluide est $h_{1'} - h_4$, avec $h_4 = h_3$. Comment la faire grandir sans toucher au compresseur ?
 
 > [!INDICATION]
-> Augmenter de 5 % la valeur $h_{1'} - h_3$ de la question D-18, à débit fixé, donne la nouvelle enthalpie $h_{3'}$. Dans le liquide, les isothermes sont verticales : interpoler entre l'isotherme $30\ \mathrm{°C}$ et le point de saturation.
+> Augmenter de 5 % la valeur $h_{1'} - h_3$ de la question D-18, à débit fixé, donne la nouvelle enthalpie $h_{3'}$. Dans le liquide, les isothermes sont verticales : interpoler entre les amorces des isothermes $30\ \mathrm{°C}$ et $40\ \mathrm{°C}$ portées par la courbe d'ébullition.
 #### Solution
 
 **Intérêt.** Le liquide sous-refroidi a une enthalpie plus faible que le liquide saturant. La détente étant isenthalpique, le point 4' est décalé vers la gauche sur le palier $2\ \mathrm{bar}$ : le fluide entre dans l'évaporateur avec un titre en vapeur plus faible, il y a davantage de liquide à vaporiser. La chaleur prélevée au local par kilogramme de fluide, $h_{1'} - h_{4'}$, augmente alors que le travail de compression $h_{2'} - h_{1'}$ est inchangé : la puissance frigorifique et l'efficacité augmentent. Le sous-refroidissement garantit aussi que le détendeur ne reçoit que du liquide.
@@ -616,13 +618,13 @@ $$\boxed{h_{3'} = 396 - 147 = 249\ \mathrm{kJ\cdot kg^{-1}}}$$
 
 soit une baisse de $7\ \mathrm{kJ\cdot kg^{-1}}$ par rapport au liquide saturant.
 
-**Température.** Le point 3' est sur l'horizontale $10\ \mathrm{bar}$, dans le domaine du liquide, où les isothermes sont verticales (question C-13). L'isotherme $30\ \mathrm{°C}$ est à l'abscisse 244 et le liquide saturant ($39\ \mathrm{°C}$) à l'abscisse 256. Par interpolation :
+**Température.** Le point 3' est sur l'horizontale $10\ \mathrm{bar}$, dans le domaine du liquide, où les isothermes sont verticales (question C-13). Sur la courbe d'ébullition, chaque repère de température porte une courte amorce de l'isotherme du liquide : celle de $30\ \mathrm{°C}$ est à l'abscisse 241, celle de $40\ \mathrm{°C}$ à l'abscisse 256 (le liquide saturant sous $10\ \mathrm{bar}$, à $39\ \mathrm{°C}$, est juste à sa gauche). Il ne faut pas les confondre avec les isentropiques, qui partent de la même courbe vers l'intérieur du domaine diphasé. Par interpolation :
 
-$$T_{3'} \approx 30 + 9 \times \frac{249 - 244}{256 - 244} \approx 34\ \mathrm{°C}$$
+$$T_{3'} \approx 30 + 10 \times \frac{249 - 241}{256 - 241} \approx 35\ \mathrm{°C}$$
 
-$$\boxed{T_{3'} \approx 34\ \mathrm{°C} \text{, soit un sous-refroidissement d'environ } 5\ \mathrm{°C}}$$
+$$\boxed{T_{3'} \approx 35\ \mathrm{°C} \text{, soit un sous-refroidissement d'environ } 4\ \mathrm{°C}}$$
 
-À la précision de la lecture ($1\ \mathrm{°C}$ correspond à un peu plus de $1\ \mathrm{kJ\cdot kg^{-1}}$, soit moins d'un millimètre sur le feuillet), ce résultat s'accorde avec la valeur $T_{3'} = 35\ \mathrm{°C}$ que l'énoncé retient pour la suite. On garde $h_{3'} \approx 249\ \mathrm{kJ\cdot kg^{-1}}$. Le point 4', à la verticale de 3' sur le palier $2\ \mathrm{bar}$, a pour titre $(249 - 187)/(391 - 187) \approx 0{,}31$ au lieu de $0{,}34$.
+C'est la valeur $T_{3'} = 35\ \mathrm{°C}$ que l'énoncé retient pour la suite ($1\ \mathrm{°C}$ correspond ici à $1{,}5\ \mathrm{kJ\cdot kg^{-1}}$, soit un peu moins d'un millimètre sur le feuillet). On garde $h_{3'} \approx 249\ \mathrm{kJ\cdot kg^{-1}}$. Le point 4', à la verticale de 3' sur le palier $2\ \mathrm{bar}$, a pour titre $(249 - 187)/(391 - 187) \approx 0{,}30$ au lieu de $0{,}34$.
 
 > [!PIEGE]
 > Les 5 % portent sur la puissance frigorifique, donc sur la différence $h_{1'} - h_{3}$, et non sur l'enthalpie $h_3$ elle-même.

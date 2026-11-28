@@ -18,7 +18,7 @@
   "couverture": {
     "statut": "complet",
     "questions_entierement_traitees": ["A-1", "A-2", "A-3", "B-4", "B-5", "B-6", "B-7", "C-8", "C-9", "C-10", "C-11", "C-12", "C-13", "C-14", "C-15", "C-16", "D-17", "D-18", "D-19", "D-20", "D-21", "D-22", "D-23", "D-24", "D-25", "D-26", "D-27", "E-28", "E-29"],
-    "precision": "Fascicule de 16 pages PDF lues en image ; partie thermodynamique sur la garde 1/16 et les pages 7/16 à 16/16 ; document réponse d'une page (figure 3). 29 questions numérotées de A-1 à E-29, toutes traitées. Rapport commun à Physique C de 5 pages PDF, partie physique sur les pages PDF 3 et 4, conseils généraux page 5. Valeurs numériques des questions C-14, C-16 et D-18 à D-26 lues sur les diagrammes enthalpiques des figures 3 (R134A) et 4 (R22), sur des rendus à 300 points par pouce pivotés et agrandis, après étalonnage sur le quadrillage (20 kJ/kg par carreau, pression en échelle logarithmique) ; précision de lecture estimée à 1 kJ/kg, enthalpies données à l'unité et efficacités à deux chiffres significatifs. Applications numériques refaites par calcul. Points signalés dans le texte : le tableau 3 du sujet porte l'unité kJ.kg-1.K-1 pour l'enthalpie massique (coquille) ; la conductivité du ciment du tableau 1 (0,02 W.m-1.K-1) est utilisée telle quelle ; à la question D-21 la lecture donne environ 34 °C, compatible avec les 35 °C retenus ensuite par l'énoncé ; à la question C-15 les deux sources sont prises à 33 °C et 20 °C, la valeur entre -10 °C et 39 °C étant donnée en commentaire ; ordre de grandeur du volume massique du liquide (C-13) et constante R (E-29) ajoutés par le corrigé."
+    "precision": "Fascicule de 16 pages PDF lues en image ; partie thermodynamique sur la garde 1/16 et les pages 7/16 à 16/16 ; document réponse d'une page (figure 3). 29 questions numérotées de A-1 à E-29, toutes traitées. Rapport commun à Physique C de 5 pages PDF, partie physique sur les pages PDF 3 et 4, conseils généraux page 5. Valeurs numériques des questions C-14, C-16 et D-18 à D-26 lues sur les diagrammes enthalpiques des figures 3 (R134A) et 4 (R22), sur des rendus à 300 points par pouce pivotés et agrandis, après étalonnage sur le quadrillage (20 kJ/kg par carreau, pression en échelle logarithmique) ; précision de lecture estimée à 1 kJ/kg, enthalpies données à l'unité et efficacités à deux chiffres significatifs. Applications numériques refaites par calcul. Points signalés dans le texte : le tableau 3 du sujet porte l'unité kJ.kg-1.K-1 pour l'enthalpie massique (coquille) ; la conductivité du ciment du tableau 1 (0,02 W.m-1.K-1) est utilisée telle quelle et signalée comme une valeur d'isolant ; à la question D-21 la lecture donne environ 35 °C, valeur retenue ensuite par l'énoncé ; à la question C-15 les deux sources sont prises à 33 °C et 20 °C, la valeur entre -10 °C et 39 °C étant donnée en commentaire ; ordre de grandeur du volume massique du liquide (C-13) et constante R (E-29) ajoutés par le corrigé."
   },
   "figures": [
     {
@@ -45,6 +45,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Rédaction des deux éditions (29 questions) à partir du fascicule et du feuillet mobile lus en image et du rapport du jury ; lectures des diagrammes R134A et R22 faites sur des rendus agrandis et étalonnés, applications numériques refaites par calcul, deux figures tracées, encadrés du jury relus contre le rapport."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application de la seconde relecture, chaque défaut revérifié sur le sujet. D-21 : amorce de l'isotherme 30 °C du liquide relue à 241 kJ/kg sur le diagramme du R134A (et non 244, abscisse d'une isentropique voisine), d'où T3' d'environ 35 °C au lieu de 34 °C, sous-refroidissement de 4 °C, indication du guidé accordée ; titre du point 4' corrigé en 0,30. B-7 : la conductivité 0,02 du tableau 1 est signalée comme une valeur d'isolant. C-16 : formulation resserrée sur le R22 (liquéfaction impossible au contact d'un air à 33 °C). C-14 : texte alternatif de la figure 2 accordé au tracé du point 2''. Lecture de h2' (D-18) laissée à 431, l'écart restant dans la précision annoncée. Les 12 encadrés du jury, contrôlés par la relecture, sont inchangés."
     }
   ]
 }
