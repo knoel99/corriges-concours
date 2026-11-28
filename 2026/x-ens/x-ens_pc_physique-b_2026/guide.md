@@ -12,6 +12,8 @@
 
 **Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision (tour 5)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** *De la topologie dans les ondes : de la matière condensée à El Niño.* Le sujet part d'un objet de cours, la chaîne de masses et de ressorts, et va jusqu'à une notion de recherche : l'**invariant topologique** d'une structure de bandes et la **correspondance volume-bord**, qui prédit le nombre de modes piégés à une interface.
@@ -29,7 +31,7 @@ Il transpose ensuite ce schéma aux ondes océaniques équatoriales (ondes de Ke
 
 **Difficulté et longueur.** Le jury a trouvé l'épreuve « particulièrement discriminante » : une centaine de copies ont eu moins de 4/20, à peu près autant plus de 15/20. La difficulté est surtout **conceptuelle** et **graphique**.
 
-- Les **tracés** (Q4, Q7.4, Q14, Q15.3, Q18, Q21, Q29) ont été, selon le rapport 2026, « extrêmement discriminantes », dès le tracé de $\lvert\sin x\rvert$ en Q4.
+- Les **représentations graphiques** (Q4, Q7.4, Q14, Q15.3, Q18, Q21, Q29) se sont révélées, selon le rapport 2026, « extrêmement discriminantes », dès le tracé de $\lvert\sin x\rvert$ en Q4.
 - Les questions de commentaire (Q11, Q12, Q16, Q20, Q21, Q31, Q33) demandent de réinvestir les objets construits plus tôt.
 - Q13 (deux branches à distinguer partout), Q27 (les trois racines, avec le signe $\pm$) et Q31 (saut d'invariant) ont fait la différence. Q29 à Q31 n'ont presque jamais été traitées.
 
@@ -258,7 +260,7 @@ La solution n'est définie que pour $n$ entier : on trace des **points**, un par
 > Tracer une exponentielle continue, ou oublier l'alternance de signe due à $k'=\pi/a$. La chaîne est discrète : seuls les points d'abscisse $na$ ont un sens.
 
 > [!JURY]
-> Le rapport 2026 observe que de bons candidats ont tracé un amortissement exponentiel, mais que « très rares ont été ceux qui ont réalisé que la solution est uniquement définie pour $n \in \mathbb{Z}$ » : la courbe devait être « discrétisée ».
+> Le rapport 2026 observe que certains candidats ont tracé un amortissement exponentiel, mais que « très rares ont été ceux qui ont réalisé que la solution est uniquement définie pour $n \in \mathbb{Z}$ » : la courbe devait être « discrétisée ».
 
 ### Question 7.5
 
@@ -537,7 +539,7 @@ On a $-\pi/(2a)\equiv\pi/(2a)$ dans la zone de Brillouin.
 ### Question 15.2
 
 > [!INDICATION]
-> Dans chaque cas, $\cos(2\underline ka)=\pm\mathrm{ch}(2k''a)$. Comparer le radicande à $(\omega_1^2+\omega_2^2)^2$ ou à $(\omega_1^2-\omega_2^2)^2$.
+> Dans chaque cas, $\cos(2\underline ka)=\pm\mathrm{ch}(2k''a)$. Exprimer $1+\cos(2\underline ka)$ à partir du déterminant de la Q10 et étudier son signe quand $\omega^2$ est entre $2\omega_1^2$ et $2\omega_2^2$.
 
 #### Solution
 
@@ -572,7 +574,7 @@ Posons $S=\omega_1^2+\omega_2^2$. Quand le dénominateur est non nul, la premiè
 
 avec $\gamma=2k''a$. Le profil est celui de la Q7.4 à l'échelle de la maille : le signe s'inverse d'une maille à la suivante et l'enveloppe est exponentielle décroissante. Le tracé est, là encore, fait de points.
 
-Pour le tracé, prenons $\omega_1=2\Omega$, $\omega_2=3\Omega$ et $q=e^{-2k''a}=2/3$. Sur la branche inférieure, $\omega^2=(13-\sqrt{19})\Omega^2$ et $U_1/U_0=-2/\sqrt{19}$. Les masses paires suivent $(-q)^n U_0$, les impaires $(-q)^n U_1$ à $t=0$.
+Pour le tracé, prenons $\omega_1=2\Omega$, $\omega_2=3\Omega$ et $q=e^{-2k''a}=2/3$. Deux pulsations de la bande interdite donnent ce facteur, $\omega^2=(13\pm\sqrt{19})\Omega^2$. On retient la plus basse, $\omega^2=(13-\sqrt{19})\Omega^2$, pour laquelle $U_1/U_0=-2/\sqrt{19}$. Les masses paires suivent $(-q)^n U_0$, les impaires $(-q)^n U_1$ à $t=0$.
 
 ![Figure 4 — Dans la bande interdite, chaque sous-réseau alterne de signe et son amplitude décroît d’une maille à la suivante.](figures/q15-3-evanescence-dimere.svg)
 
@@ -911,7 +913,7 @@ et $\Delta\mathscr C^{(0)}=0$.
 **Conséquence.** Le changement d’invariant signale des ondes localisées à l’équateur. En appliquant aux valeurs données la règle de la Q20, le rapport du jury attend **quatre modes associés à la bande $(+)$ et quatre à la bande $(-)$**. La Q33 permet de confronter cette prédiction au diagramme fourni.
 
 > [!PIEGE]
-> Prendre $\lvert\mathscr C^{(\pm)}\rvert=2$ comme nombre de modes : c'est l'invariant d'un seul milieu. Comme en Q20, c'est la **différence** entre les deux milieux qui compte.
+> Répondre sans former la différence des invariants des deux hémisphères. La démarche attendue est celle de la Q20 : un invariant par milieu, puis leur écart, ici 4 pour chaque bande de Poincaré. La Q33 montre que la figure fournie ne donne que deux traversées par intervalle : il faut signaler cet écart, pas le masquer.
 
 > [!JURY]
 > Le rapport 2026 juge la question « très délicate dans la mesure où il faut avoir compris Q20 et s'en souvenir à ce moment pour savoir comment procéder ». Il donne comme réponse un saut de 4 pour chacune des bandes $(+)$ et $(-)$, et précise : « Pour les quelques copies concernées qui ont trouvé 4 modes de bord au total, tous les points ont été attribués, plus des bonus. »

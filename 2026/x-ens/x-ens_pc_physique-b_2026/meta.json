@@ -60,7 +60,7 @@
       "legende": "Les crêtes de Rossby se déplacent vers l’ouest. Le sens de propagation d’un paquet dépend de sa longueur d’onde."
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-28",
   "revision": {
     "modele": "OpenAI Codex (GPT-6)",
     "objet": "Relecture des 45 questions et sous-questions sur le sujet et le rapport 2026. Tracé discret de la question 15.3 et comparaison des comptages aux questions 31 et 33. Contre-vérification indépendante du tracé de la question 15.3 et des comptages des questions 31–33."
@@ -146,6 +146,18 @@
         "guide"
       ],
       "perimetre": "Lecture du sujet, des consignes numérotées et du rapport, comparaison des deux éditions et des dix figures. Recalcul des bandes de la chaîne dimérisée, du raccord du mode de bord, de la structure méridienne des modes équatoriaux et des vitesses de phase et de groupe."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 5,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application des corrections d'une seconde relecture, chaque défaut revérifié sur le sujet et le rapport. Q15.3 (brut et guidé) : les deux pulsations de la bande interdite remplacent « branche inférieure ». Guidé : encadré de la Q31 accordé au comptage de la Q33, indication de la Q15.2 accordée à sa solution, formulations de la présentation et de la Q7.4 rapprochées du rapport. Figures des Q14 et Q16 : étiquettes déplacées pour supprimer deux chevauchements."
     }
   ],
   "couverture": {

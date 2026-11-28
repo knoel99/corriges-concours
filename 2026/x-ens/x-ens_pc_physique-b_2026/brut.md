@@ -12,6 +12,8 @@
 
 **Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
 
+**Révision (tour 5)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 *De la topologie dans les ondes : de la matière condensée à El Niño.* Durée 4 h, calculatrice interdite. 45 questions (numérotation du sujet, sous-questions comprises).
 
 ## Partie I — Chaînes masse-ressort
@@ -357,7 +359,7 @@ Le profil est le même qu'en 7.4, à l'échelle de la maille. Le signe s'inverse
 
 avec $\gamma=2k''a$.
 
-Pour le tracé, prenons $\omega_1=2\Omega$, $\omega_2=3\Omega$ et $q=e^{-2k''a}=2/3$. Sur la branche inférieure, $\omega^2=(13-\sqrt{19})\Omega^2$ et $U_1/U_0=-2/\sqrt{19}$. Les masses paires suivent $(-q)^n U_0$, les impaires $(-q)^n U_1$ à $t=0$.
+Pour le tracé, prenons $\omega_1=2\Omega$, $\omega_2=3\Omega$ et $q=e^{-2k''a}=2/3$. Deux pulsations de la bande interdite donnent ce facteur, $\omega^2=(13\pm\sqrt{19})\Omega^2$. On retient la plus basse, $\omega^2=(13-\sqrt{19})\Omega^2$, pour laquelle $U_1/U_0=-2/\sqrt{19}$. Les masses paires suivent $(-q)^n U_0$, les impaires $(-q)^n U_1$ à $t=0$.
 
 ![Figure 4 — Dans la bande interdite, chaque sous-réseau alterne de signe et son amplitude décroît d’une maille à la suivante.](figures/q15-3-evanescence-dimere.svg)
 
