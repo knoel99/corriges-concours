@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Problème de chimie de l'épreuve de Physique C (4 heures pour les deux problèmes, de même barème ; 2 heures conseillées pour la chimie, calculatrice autorisée), consacré au platine : 36 questions en quatre parties indépendantes (élément et cristal, oxydoréduction en solution, catalyse de la synthèse de l'acide nitrique, obtention industrielle du métal), avec une annexe de données. Les 36 questions sont traitées. Les repères sont ceux de l'énoncé, précédés du numéro de la partie et de la lettre de la section. L'énoncé demande trois chiffres significatifs. Deux choix sont signalés à leur place : les masses isotopiques, absentes de l'annexe, sont assimilées aux nombres de masse (I.A.3.b), et l'« oxygène » de la partie III est lu comme le dioxygène (III.1). Le document-réponse joint au sujet ne concerne que le problème de thermodynamique.
 
 [Sujet officiel (archive)](https://www.banquept.fr/documents/2006/phys_c_2006.zip) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_phys_c_ecrit_2006.pdf)
@@ -294,7 +296,7 @@ $$\log K^\circ = \frac{4 \times (0{,}00 - 0{,}740)}{0{,}06} \approx -49{,}3$$
 
 $$\boxed{K^\circ \approx 4{,}63\times 10^{-50} < 10^{-4}}$$
 
-(On vérifie que $K^\circ = \beta \times K^\circ_2$, soit $2{,}15\times 10^{27} \times 2{,}15\times 10^{-77}$.) L'écart $\Delta E^\circ = -0{,}74\ \mathrm{V}$ est très inférieur au seuil $-0{,}06\ \mathrm{V}$ : **la réaction n'a quasiment pas lieu**. Malgré la complexation, l'acide chlorhydrique seul n'attaque pas le platine : l'ion $\mathrm{H^+}$ reste un oxydant trop faible.
+(On vérifie que $K^\circ = \beta \times K^\circ_2$, soit $2{,}15\times 10^{27} \times 2{,}154\times 10^{-77}$ ; le troisième chiffre dépend des arrondis intermédiaires : $4{,}64\times 10^{-50}$ si l'on arrondit $E^\circ$ à $0{,}740\ \mathrm{V}$ avant de calculer.) L'écart $\Delta E^\circ = -0{,}74\ \mathrm{V}$ est très inférieur au seuil $-0{,}06\ \mathrm{V}$ : **la réaction n'a quasiment pas lieu**. Malgré la complexation, l'acide chlorhydrique seul n'attaque pas le platine : l'ion $\mathrm{H^+}$ reste un oxydant trop faible.
 
 ### Question II.B.3.a — Attaque du platine par l'eau régale
 
@@ -306,7 +308,7 @@ $$\log K^\circ = \frac{4 \times (0{,}96 - 0{,}740)}{0{,}06} \approx 14{,}7$$
 
 $$\boxed{K^\circ \approx 4{,}63\times 10^{14} > 10^{4}}$$
 
-(On vérifie que $K^\circ = \beta \times K^\circ_4$.) L'écart $\Delta E^\circ = +0{,}22\ \mathrm{V}$ dépasse le seuil $0{,}06\ \mathrm{V}$ pour $n = 4$.
+(On vérifie que $K^\circ = \beta \times K^\circ_4$, soit $2{,}15\times 10^{27} \times 2{,}154\times 10^{-13}$ ; même remarque sur le troisième chiffre : $4{,}64\times 10^{14}$ avec $E^\circ$ arrondi à $0{,}740\ \mathrm{V}$.) L'écart $\Delta E^\circ = +0{,}22\ \mathrm{V}$ dépasse le seuil $0{,}06\ \mathrm{V}$ pour $n = 4$.
 
 **Conclusion.** La réaction est totale : l'eau régale dissout le platine, alors qu'aucun des deux acides pris séparément ne l'attaque. L'acide nitrique fournit l'oxydant, l'acide chlorhydrique le ligand qui abaisse le potentiel du couple du platine en dessous de celui du couple $\mathrm{NO_3^-/NO}$. Les fortes concentrations en $\mathrm{H^+}$, $\mathrm{NO_3^-}$ et $\mathrm{Cl^-}$ déplacent encore l'équilibre dans le sens de la dissolution.
 
@@ -398,7 +400,7 @@ Vérification de l'étape 3 : azote 4 ; hydrogène 4 ; oxygène $8 + 2 + 2 = 12$
 
 ### Question III.2 — Structures de Lewis
 
-**Atomes.** L'azote ($Z = 7$) a pour configuration $1s^2\,2s^2\,2p^3$ : 5 électrons de valence, soit un doublet non liant et trois électrons célibataires (trivalent). L'oxygène ($Z = 8$) a pour configuration $1s^2\,2s^2\,2p^4$ : 6 électrons de valence, soit deux doublets non liants et deux électrons célibataires (divalent). L'hydrogène a un électron de valence.
+**Atomes.** L'azote ($Z = 7$) a pour configuration $1s^2\,2s^2\,2p^3$ : 5 électrons de valence, soit un doublet non liant et trois électrons célibataires (trivalent). L'oxygène ($Z = 8$) a pour configuration $1s^2\,2s^2\,2p^4$ : 6 électrons de valence, soit deux doublets non liants et deux électrons célibataires (divalent). L'hydrogène a un électron de valence. Si l'on comprend « l'azote et l'oxygène » comme les corps simples, le dioxygène figure ci-dessous et le diazote s'écrit $|\mathrm{N{\equiv}N}|$ (10 électrons de valence : une liaison triple et un doublet non liant sur chaque atome).
 
 **Molécules.** Six molécules interviennent dans la synthèse ; leurs structures sont représentées sur la figure 2.
 

@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** Le platine, de l'atome au métal purifié. L'épreuve de Physique C dure 4 heures pour deux problèmes de même barème, à rendre sur deux copies séparées ; le problème de chimie est prévu pour 2 heures, **calculatrice autorisée**, résultats numériques à donner avec trois chiffres significatifs, et l'énoncé annonce qu'il sera tenu compte de la rédaction. Il comporte 36 questions en quatre parties indépendantes, dont le poids dans le barème est indiqué. Toutes les données sont regroupées dans une annexe d'une page, à consulter régulièrement. Le document-réponse distribué avec le sujet ne sert qu'au problème de thermodynamique.
@@ -78,7 +80,7 @@ D'après la règle de Hund, la sous-couche $5d^8$ comporte trois orbitales doubl
 *Remarque.* La configuration réelle du platine, $[\mathrm{Xe}]\,4f^{14}\,5d^{9}\,6s^{1}$, est une exception à la règle de Klechkowski, les niveaux $5d$ et $6s$ étant très proches ; la réponse attendue est celle que donnent les règles.
 
 > [!JURY]
-> Le rapport juge les règles de remplissage mal sues : beaucoup de candidats n'emploient que le schéma de Klechkowski, et le principe de Pauli ou la règle de Hund sont utilisés sans être nommés, voire oubliés. Il signale à l'inverse quelques copies où ces notions sont remarquablement exposées.
+> Le rapport juge les règles de remplissage moins bien sues : beaucoup de candidats n'emploient que le schéma de Klechkowski, et le principe de Pauli ou la règle de Hund sont utilisés sans être nommés, voire oubliés. Il signale à l'inverse quelques copies où ces notions sont remarquablement exposées.
 
 > [!PIEGE]
 > Oublier la sous-couche $4f$, que l'énoncé rappelle pourtant : on obtiendrait une configuration à 64 électrons seulement. Toujours recompter les électrons.
@@ -314,9 +316,6 @@ $$\boxed{\log K^\circ = \frac{n\,(E^\circ_2 - E^\circ_1)}{0{,}06} = \frac{nF\,(E
 
 avec les potentiels en volts ; $E^\circ_2$ est le potentiel standard du couple dont l'oxydant est réactif, $E^\circ_1$ celui du couple dont le réducteur est réactif. On retrouve le même résultat par $\Delta_r G^\circ = -nF(E^\circ_2 - E^\circ_1) = -RT\ln K^\circ$.
 
-> [!JURY]
-> Le rapport signale l'erreur classique de ceux qui oublient de passer au logarithme décimal dans la relation avec les potentiels standard.
-
 > [!PIEGE]
 > Le nombre $n$ est celui des électrons échangés dans l'équation telle qu'elle est écrite. Multiplier l'équation par un facteur multiplie $n$ et $\log K^\circ$ par ce facteur : la constante n'a de sens qu'associée à une équation.
 
@@ -334,6 +333,9 @@ $$\frac{n\,\Delta E^\circ}{0{,}06} > 4$$
 $$\boxed{\Delta E^\circ = E^\circ_2 - E^\circ_1 > \frac{0{,}24}{n}\ \mathrm{V}}$$
 
 Soit $0{,}24\ \mathrm{V}$ pour un électron échangé, $0{,}12\ \mathrm{V}$ pour deux, $0{,}06\ \mathrm{V}$ pour quatre : l'oxydant 2 doit être nettement plus fort que l'oxydant 1.
+
+> [!JURY]
+> Le rapport signale l'erreur classique de ceux qui oublient de passer au logarithme pour déterminer l'écart $\Delta E^\circ$.
 
 ### Question II.A.3.b
 
@@ -506,7 +508,7 @@ $$\log K^\circ = \frac{4 \times (0{,}00 - 0{,}740)}{0{,}06} \approx -49{,}3$$
 
 $$\boxed{K^\circ \approx 4{,}63\times 10^{-50} < 10^{-4}}$$
 
-(On vérifie que $K^\circ = \beta \times K^\circ_2$, soit $2{,}15\times 10^{27} \times 2{,}15\times 10^{-77}$.) L'écart $\Delta E^\circ = -0{,}74\ \mathrm{V}$ est très inférieur au seuil $-0{,}06\ \mathrm{V}$ : **la réaction n'a quasiment pas lieu**. Malgré la complexation, l'acide chlorhydrique seul n'attaque pas le platine : l'ion $\mathrm{H^+}$ reste un oxydant trop faible.
+(On vérifie que $K^\circ = \beta \times K^\circ_2$, soit $2{,}15\times 10^{27} \times 2{,}154\times 10^{-77}$ ; le troisième chiffre dépend des arrondis intermédiaires : $4{,}64\times 10^{-50}$ si l'on arrondit $E^\circ$ à $0{,}740\ \mathrm{V}$ avant de calculer.) L'écart $\Delta E^\circ = -0{,}74\ \mathrm{V}$ est très inférieur au seuil $-0{,}06\ \mathrm{V}$ : **la réaction n'a quasiment pas lieu**. Malgré la complexation, l'acide chlorhydrique seul n'attaque pas le platine : l'ion $\mathrm{H^+}$ reste un oxydant trop faible.
 
 ### Question II.B.3.a
 
@@ -526,7 +528,7 @@ $$\log K^\circ = \frac{4 \times (0{,}96 - 0{,}740)}{0{,}06} \approx 14{,}7$$
 
 $$\boxed{K^\circ \approx 4{,}63\times 10^{14} > 10^{4}}$$
 
-(On vérifie que $K^\circ = \beta \times K^\circ_4$.) L'écart $\Delta E^\circ = +0{,}22\ \mathrm{V}$ dépasse le seuil $0{,}06\ \mathrm{V}$ pour $n = 4$.
+(On vérifie que $K^\circ = \beta \times K^\circ_4$, soit $2{,}15\times 10^{27} \times 2{,}154\times 10^{-13}$ ; même remarque sur le troisième chiffre : $4{,}64\times 10^{14}$ avec $E^\circ$ arrondi à $0{,}740\ \mathrm{V}$.) L'écart $\Delta E^\circ = +0{,}22\ \mathrm{V}$ dépasse le seuil $0{,}06\ \mathrm{V}$ pour $n = 4$.
 
 **Conclusion.** La réaction est totale : l'eau régale dissout le platine, alors qu'aucun des deux acides pris séparément ne l'attaque. L'acide nitrique fournit l'oxydant, l'acide chlorhydrique le ligand qui abaisse le potentiel du couple du platine en dessous de celui du couple $\mathrm{NO_3^-/NO}$. Les fortes concentrations en $\mathrm{H^+}$, $\mathrm{NO_3^-}$ et $\mathrm{Cl^-}$ déplacent encore l'équilibre dans le sens de la dissolution.
 
@@ -677,7 +679,7 @@ Vérification de l'étape 3 : azote 4 ; hydrogène 4 ; oxygène $8 + 2 + 2 = 12$
 
 #### Solution
 
-**Atomes.** L'azote ($Z = 7$) a pour configuration $1s^2\,2s^2\,2p^3$ : 5 électrons de valence, soit un doublet non liant et trois électrons célibataires (trivalent). L'oxygène ($Z = 8$) a pour configuration $1s^2\,2s^2\,2p^4$ : 6 électrons de valence, soit deux doublets non liants et deux électrons célibataires (divalent). L'hydrogène a un électron de valence.
+**Atomes.** L'azote ($Z = 7$) a pour configuration $1s^2\,2s^2\,2p^3$ : 5 électrons de valence, soit un doublet non liant et trois électrons célibataires (trivalent). L'oxygène ($Z = 8$) a pour configuration $1s^2\,2s^2\,2p^4$ : 6 électrons de valence, soit deux doublets non liants et deux électrons célibataires (divalent). L'hydrogène a un électron de valence. Si l'on comprend « l'azote et l'oxygène » comme les corps simples, le dioxygène figure ci-dessous et le diazote s'écrit $|\mathrm{N{\equiv}N}|$ (10 électrons de valence : une liaison triple et un doublet non liant sur chaque atome).
 
 **Molécules.** Six molécules interviennent dans la synthèse ; leurs structures sont représentées sur la figure 2.
 
@@ -760,7 +762,7 @@ $$\boxed{\mathrm{R_2} :\quad 3\,(\mathrm{NH_4})_2\mathrm{PtCl_6} = 3\,\mathrm{Pt
 Vérification : azote $6 = 4 + 2$ ; hydrogène $24 = 16 + 8$ ; chlore $18 = 16 + 2$. Contrôle par les électrons : trois atomes de platine passent de $+\mathrm{IV}$ à $0$ (12 électrons captés), quatre atomes d'azote passent de $-\mathrm{III}$ à $0$ (12 électrons cédés).
 
 > [!JURY]
-> Le rapport précise qu'il ne s'agissait pas d'essayer des combinaisons de chiffres au hasard, mais d'établir un jeu d'équations donnant les coefficients. Les correcteurs ont apprécié les copies qui ont posé ces équations et ont repéré celles où le candidat avait « tenté sa chance » ; les réponses numériquement justes relevaient presque toujours d'un traitement mécanique, le calcul complet étant rarement présent.
+> Le rapport précise qu'il ne s'agissait pas d'essayer des combinaisons de chiffres au hasard, mais d'établir un jeu d'équations donnant les coefficients. Les correcteurs ont apprécié les copies qui ont posé ces équations et ont repéré celles où les candidats ont « tenté leur chance » ; les réponses numériquement justes relevaient presque toujours d'un traitement mécanique, le calcul complet étant rarement présent.
 
 > [!METHODE]
 > Autant d'équations de conservation que d'éléments ; le système est homogène, donc défini à un facteur près : on fixe ce facteur en cherchant les plus petits entiers. Un contrôle par les électrons échangés détecte une erreur de recopie.
