@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Épreuve de 6 h, sans calculatrice ni document. Support : système d'ouverture de la porte latérale avant d'un avion-cargo (actionneur linéaire électrique, basculeur, porte). Les 56 questions sont traitées dans l'ordre ; les tracés demandés sur le cahier réponse (questions 3 et 31) sont redessinés dans des figures originales.
 
 Données principales (annexe P) : $T = 30\ \mathrm{s}$, $M = 100\ \mathrm{kg}$, $g = 9{,}81\ \mathrm{m\cdot s^{-2}}$, $a_1 = 0{,}25\ \mathrm{m}$, $b_1 = 0{,}5\ \mathrm{m}$, $r_3 = 41/11$, $\eta_r = 0{,}95$, $\eta_v = 0{,}7$, $p = 8\ \mathrm{mm}$ par tour, $U_m = 24\ \mathrm{V}$, $k_m = 0{,}03\ \mathrm{N\cdot m\cdot A^{-1}}$, $R_m = 1\ \Omega$, $J_m = 140\times10^{-7}\ \mathrm{kg\cdot m^2}$, $J_{eq} = 3000\ \mathrm{kg\cdot m^2}$, $R = 1{,}5\ \mathrm{m}$, $r' = 0{,}1\ \mathrm{m\cdot rad^{-1}}$, $\mu = 0{,}1$, $\sigma_e = 240\ \mathrm{MPa}$, $s = 2$, $N_3 = 140\ \mathrm{tr\cdot min^{-1}}$.
@@ -57,7 +59,7 @@ Mesures sur le tracé, avec l'échelle du document ($100\ \mathrm{mm}$ représen
 
 $$\boxed{\lambda = CD \approx 360\ \mathrm{mm}\qquad \lambda' = CD' \approx 505\ \mathrm{mm}\qquad \Delta\lambda = \lambda' - \lambda \approx 145\ \mathrm{mm}}$$
 
-(Reconstruction numérique à partir des coordonnées des points du document : $362\ \mathrm{mm}$, $505\ \mathrm{mm}$ et $143\ \mathrm{mm}$.) Cette course est cohérente avec celle de $150\ \mathrm{mm}$ retenue en partie II et avec l'écart lu sur la figure 8 ($428 - 276 = 152\ \mathrm{mm}$ entre $40°$ et $130°$).
+(Reconstruction numérique à partir des coordonnées des points du document : $362\ \mathrm{mm}$, $505\ \mathrm{mm}$ et $143\ \mathrm{mm}$.) Cette course est cohérente avec celle de $150\ \mathrm{mm}$ retenue en partie II et avec l'écart lu sur la figure 8 ($428 - 276 = 152\ \mathrm{mm}$ entre $40°$ et $130°$) ; le tracé du cahier réponse et la figure 8 ne reposent pas sur les mêmes longueurs ($\lambda\approx362\ \mathrm{mm}$ contre $276\ \mathrm{mm}$ porte fermée) : seule la course se compare.
 
 ### Question 5 — Vitesse linéaire moyenne
 
@@ -71,7 +73,7 @@ soit environ $5\ \mathrm{mm\cdot s^{-1}}$, valeur retenue par l'énoncé en part
 
 - Nombre de mobilités utiles : **1** (l'allongement du vérin commande l'ouverture de la porte).
 - Nombre de paramètres introduits : **5** ($\theta_1$, $\theta_2$, $\theta_3$, $\lambda$, $\delta$).
-- Nombre d'équations scalaires liant ces paramètres : $5 - 1 =$ **4**, soit deux fermetures géométriques planes. Pour la seule loi $\lambda = f(\theta_1)$, trois équations suffisent si l'on évite d'introduire $\delta$ (question 7).
+- Nombre d'équations scalaires liant ces paramètres : **4** dans le décompte général ($5 - 1$, soit deux fermetures géométriques planes), **3** si l'on ne vise que la loi $\lambda = f(\theta_1)$ en évitant d'introduire $\delta$ (question 7). L'intitulé vise cette loi : écrire le décompte retenu à côté du nombre.
 
 ### Question 7 — Équations utiles à la loi entrée/sortie
 
@@ -247,7 +249,7 @@ avec, d'après la question 10, $C_p(\theta_1) = M g\,(a_1\cos\theta_1 - b_1\sin\
 ### Question 22 — Ordre, linéarité, méthode numérique
 
 - $C_p(\theta_1)$ quelconque : équation d'**ordre 2** en $\theta_1$, **non linéaire** (le second membre dépend de $\theta_1$ par des fonctions trigonométriques).
-- $C_p$ indépendant de $\theta_1$ : équation **linéaire** à coefficients constants, toujours d'**ordre 2** en $\theta_1$ ; comme $A_0 = 0$, elle se ramène à une équation du premier ordre pour la vitesse $\dot\theta_1$, ce qui justifie la constante de temps de la question 23.
+- $C_p$ indépendant de $\theta_1$ : équation **linéaire** à coefficients constants, toujours d'**ordre 2** en $\theta_1$ ; comme $A_0 = 0$, elle se ramène à une équation d'**ordre 1** pour la vitesse $\dot\theta_1$, ce qui justifie la constante de temps de la question 23. Le cahier ne permet qu'une case : cocher « ordre 2 » si l'on raisonne sur $\theta_1$, « ordre 1 » si l'on raisonne sur $\dot\theta_1$ (lecture que suggère la question 23), en écrivant l'inconnue à côté.
 - Méthode dans le cas général : mise sous forme d'un système du premier ordre pour le vecteur $(\theta_1,\dot\theta_1)$, puis intégration pas à pas par un schéma d'Euler explicite (ou de Runge-Kutta), avec un pas de temps petit devant la constante de temps.
 
 ### Question 23 — Constante de temps
@@ -427,7 +429,7 @@ Critères, avec $F_r\approx3416\ \mathrm{N}$ (question 32) et $\Delta F\leq342\ 
 
 Justification : Sol1, 5, 8, 10, 13 et 15 n'ont qu'une rondelle par paquet et ne fournissent pas l'effort presseur, même écrasées à $75\ \%$ ; Sol11 et Sol12, trop raides, ont un pas de réglage supérieur à la tolérance. La meilleure solution est **Sol9** (trois paquets de deux rondelles) : effort atteint au milieu de la plage d'écrasement et réglage le plus fin ($76\ \mathrm{N}$).
 
-Réserve : la colonne « $\Delta F\,\%$ » du cahier réponse correspond à $\Delta F$ rapporté à un effort d'environ $2200\ \mathrm{N}$, et non aux $3416\ \mathrm{N}$ obtenus ici avec les données de l'énoncé. Si l'on applique directement le seuil de $10\ \%$ à cette colonne, Sol3 et Sol7 ($10{,}3\ \%$), Sol4 ($15{,}5\ \%$) et Sol14 ($13{,}9\ \%$) sont aussi éliminées ; il reste alors Sol6, Sol9 et Sol16, qui conviennent quelle que soit la lecture.
+Réserve : la colonne « $\Delta F\,\%$ » imprimée dans le cahier réponse semble issue d'un autre jeu de données. Chacune de ses valeurs vaut $\Delta F/2200\ \mathrm{N}$ (par exemple $114/2200 = 5{,}2\ \%$ pour Sol1), et non $\Delta F/3416\ \mathrm{N}$, alors que $3416\ \mathrm{N}$ est l'effort que donnent les données de l'énoncé et que confirme la figure 22 (en $D$, où la flexion est nulle, $\sigma = N/S\approx120\ \mathrm{MPa}$ pour $d = 6\ \mathrm{mm}$, soit $N\approx3400\ \mathrm{N}$). Le tableau ci-dessus garde donc $3416\ \mathrm{N}$ pour les deux critères, mais ce que la grille de correction a retenu n'est pas connu, et deux autres lectures sont possibles. Si l'on garde $3416\ \mathrm{N}$ pour le critère 1 et que l'on applique tel quel le seuil de $10\ \%$ à la colonne imprimée, Sol3 et Sol7 ($10{,}3\ \%$), Sol4 ($15{,}5\ \%$) et Sol14 ($13{,}9\ \%$) sont aussi éliminées : il reste Sol6, Sol9 et Sol16. Si l'on prend $2200\ \mathrm{N}$ pour les deux critères (valeur pour laquelle le tableau semble avoir été construit), conviennent Sol1, 5, 8, 9, 10, 13 et 15. Seule Sol9 convient dans les trois lectures : c'est la seule réponse sûre. Indiquer sur la copie la valeur de $F_r$ utilisée.
 
 ---
 
@@ -554,13 +556,13 @@ $$\boxed{\tau^p = \frac{M_t}{I_0}\,\rho}$$
 
 Surface extérieure : la contrainte de flexion est proportionnelle à la distance à la fibre neutre et celle de torsion à $\rho$ ; toutes deux sont maximales pour $\rho = d/2$. Le point le plus sollicité de chaque section est donc sur la surface du cylindre.
 
-Comparaison (figures 22 et 23, $d = 6\ \mathrm{mm}$) : $\sigma$ atteint environ $650\ \mathrm{MPa}$ et $\tau$ environ $155\ \mathrm{MPa}$ sur le tronçon 2. La contrainte normale domine, mais $\tau$ n'est pas négligeable : elle est pondérée par $\sqrt3$ dans le critère de Von Mises ($\sqrt3\,\tau\approx270\ \mathrm{MPa}$), elle relève la contrainte équivalente d'environ $8\ \%$ au point le plus chargé et elle est seule présente sur les génératrices où $\sigma$ s'annule. Il n'est judicieux de négliger ni l'une ni l'autre.
+Comparaison (figures 22 et 23, $d = 6\ \mathrm{mm}$) : $\sigma$ atteint environ $660\ \mathrm{MPa}$ et $\tau$ environ $160\ \mathrm{MPa}$ sur le tronçon 2. La contrainte normale domine, mais $\tau$ n'est pas négligeable : elle est pondérée par $\sqrt3$ dans le critère de Von Mises ($\sqrt3\,\tau\approx280\ \mathrm{MPa}$), elle relève la contrainte équivalente d'environ $8\ \%$ au point le plus chargé et elle est seule présente sur les génératrices où $\sigma$ s'annule. Il n'est judicieux de négliger ni l'une ni l'autre.
 
 ### Question 52 — Diamètre de l'arbre
 
 $$\boxed{\sigma_{VM}^{max}\leq\frac{\sigma_e}{s} = \frac{240}{2} = 120\ \mathrm{MPa}}$$
 
-Lecture de la figure 24 (maximum sur toutes les génératrices) : environ $700\ \mathrm{MPa}$ pour $d = 6\ \mathrm{mm}$, $315\ \mathrm{MPa}$ pour $8\ \mathrm{mm}$, $170\ \mathrm{MPa}$ pour $10\ \mathrm{mm}$, $103\ \mathrm{MPa}$ pour $12\ \mathrm{mm}$. Seul le dernier respecte le critère ; c'est aussi le plus léger des diamètres admissibles.
+Lecture de la figure 24 (maximum sur toutes les génératrices) : environ $720\ \mathrm{MPa}$ pour $d = 6\ \mathrm{mm}$, $320\ \mathrm{MPa}$ pour $8\ \mathrm{mm}$, $170\ \mathrm{MPa}$ pour $10\ \mathrm{mm}$, $104\ \mathrm{MPa}$ pour $12\ \mathrm{mm}$. Seul le dernier respecte le critère ; c'est aussi le plus léger des diamètres admissibles.
 
 $$\boxed{d = 12\ \mathrm{mm}\qquad \text{tronçon 2, juste après } B\qquad \theta = \frac{\pi}{2}}$$
 
@@ -576,7 +578,7 @@ $$\boxed{F_{A,a} = 0\qquad F_{D,a} = 0\qquad F_{A,r} = \sqrt{180^2 + 810^2}\appr
 
 ### Question 54 — Durée de vie souhaitée
 
-Chaque jour de service, $N_{of/j}$ manœuvres de durée $T$ :
+L'énoncé appelle « cycle » une ouverture ou une fermeture, de durée $T$ ; $N_{of/j}$ est lu ici comme le nombre journalier de ces cycles. Chaque jour de service, $N_{of/j}$ manœuvres de durée $T$ :
 
 $$\boxed{L_h = \frac{L_a\,N_{j/a}\,N_{of/j}\,T}{3600}}$$
 
@@ -585,6 +587,8 @@ $$\boxed{L_h = \frac{20\times300\times20\times30}{3600} = 1000\ \mathrm{h}}$$
 $$\boxed{L = \frac{60\,N_3\,L_h}{10^{6}}}$$
 
 $$\boxed{L = \frac{60\times140\times1000}{10^{6}} = 8{,}4\ \text{millions de tours}}$$
+
+Réserve : l'énoncé ne dit pas expressément si $N_{of/j} = 20$ compte des manœuvres (une ouverture ou une fermeture, de durée $T$) ou des couples ouverture puis fermeture (durée $2T$, soit $40$ manœuvres par jour). La première lecture est retenue parce que $N_{of/j}$ et $T$ sont définis dans la même phrase, où le cycle est « ouverture ou fermeture », et que l'expression demandée ne fait intervenir que ces quatre données. Dans la seconde, $L_h = 2\,L_a\,N_{j/a}\,N_{of/j}\,T/3600 = 2000\ \mathrm{h}$ et $L = 16{,}8$ millions de tours ; les conséquences sont chiffrées aux questions 55 et 56. Indiquer sur la copie la lecture choisie.
 
 ### Question 55 — Charges dynamiques de base minimales
 
@@ -596,10 +600,14 @@ Avec $8{,}4^{1/3}\approx2{,}03$ :
 
 $$\boxed{C_A \approx 830\times2{,}03\approx1{,}7\ \mathrm{kN}\qquad C_D\approx355\times2{,}03\approx0{,}72\ \mathrm{kN}}$$
 
+Dans la seconde lecture de la question 54 ($L = 16{,}8$ millions de tours, $16{,}8^{1/3}\approx2{,}56$), les charges sont multipliées par $2^{1/3}\approx1{,}26$ : $C_A\approx830\times2{,}56\approx2{,}1\ \mathrm{kN}$ et $C_D\approx355\times2{,}56\approx0{,}91\ \mathrm{kN}$.
+
 ### Question 56 — Roulements non adaptés
 
 Critères : alésage au moins égal au diamètre minimal de l'arbre aux portées, $d_r = 6\ \mathrm{mm}$ ; charge dynamique de base $C\geq1{,}7\ \mathrm{kN}$ en $A$ et $C\geq0{,}72\ \mathrm{kN}$ en $D$ ; vitesse limite très supérieure à $140\ \mathrm{tr\cdot min^{-1}}$ pour tous.
 
 $$\boxed{\text{Roulements non adaptés : 624 et 625}}$$
 
-Le 624 ($d = 4\ \mathrm{mm}$, $C = 0{,}936\ \mathrm{kN}$) et le 625 ($d = 5\ \mathrm{mm}$, $C = 1{,}14\ \mathrm{kN}$) ont un alésage inférieur à $6\ \mathrm{mm}$ et une capacité insuffisante pour le palier $A$. Tous les autres conviennent pour les deux paliers, à partir du 626 ($d = 6\ \mathrm{mm}$, $C = 2{,}34\ \mathrm{kN}$) ; le 61801 ($C = 1{,}74\ \mathrm{kN}$) passe de justesse en $A$.
+Le 624 ($d = 4\ \mathrm{mm}$, $C = 0{,}936\ \mathrm{kN}$) et le 625 ($d = 5\ \mathrm{mm}$, $C = 1{,}14\ \mathrm{kN}$) ont un alésage inférieur à $6\ \mathrm{mm}$ et une capacité insuffisante pour le palier $A$. Tous les autres conviennent pour les deux paliers, à partir du 626 ($d = 6\ \mathrm{mm}$, $C = 2{,}34\ \mathrm{kN}$) ; le 61801 ($C = 1{,}74\ \mathrm{kN}$) passe de justesse en $A$ (marge d'environ $3\ \%$ sur $C_A\approx1{,}69\ \mathrm{kN}$).
+
+Dans la seconde lecture de la question 54 ($C_A\approx2{,}1\ \mathrm{kN}$, $C_D\approx0{,}91\ \mathrm{kN}$), le 624 et le 625 restent exclus par leur alésage, et le 61801 ne convient plus au palier $A$ ($1{,}74 < 2{,}1\ \mathrm{kN}$) ; il reste admissible en $D$, et tous les autres roulements conviennent encore ($C\geq2{,}34\ \mathrm{kN}$).

@@ -74,7 +74,7 @@
       "55",
       "56"
     ],
-    "precision": "Les 54 pages du PDF ont été lues en image : 15 pages de texte, les annexes A à P (18 pages) et le cahier réponse de 11 pages ; le rapport du jury (3 pages) a été lu. Le sujet pose 56 questions, toutes traitées. Le tracé de la question 3 est reconstruit à l'échelle dans une figure originale à partir des coordonnées des points du cahier réponse, et le graphique de la question 31 est redessiné ; les fonds de l'énoncé ne sont pas repris. Trois réponses dépendent d'une interprétation signalée dans le texte : décompte des équations (question 6), ordre de l'équation simplifiée (question 22), tri des empilements (question 36, colonne ΔF% du cahier réponse incohérente avec l'effort presseur calculé)."
+    "precision": "Les 54 pages du PDF ont été lues en image : 15 pages de texte, les annexes A à P (18 pages) et le cahier réponse de 11 pages ; le rapport du jury (3 pages) a été lu. Le sujet pose 56 questions, toutes traitées. Le tracé de la question 3 est reconstruit à l'échelle dans une figure originale à partir des coordonnées des points du cahier réponse, et le graphique de la question 31 est redessiné ; les fonds de l'énoncé ne sont pas repris. Quatre réponses dépendent d'une interprétation signalée dans le texte : décompte des équations (question 6 : 4 dans le décompte général, 3 pour la seule loi entrée/sortie), ordre de l'équation simplifiée (question 22 : ordre 2 en θ1, ordre 1 en vitesse), tri des empilements (question 36 : la colonne ΔF% du cahier réponse est calculée pour 2200 N et non pour l'effort presseur de 3416 N tiré des données ; seule Sol9 convient dans les trois lectures possibles), durée de vie des roulements (question 54 : l'énoncé ne dit pas si les 20 ouvertures/fermetures journalières sont 20 manœuvres de durée T, lecture retenue, Lh = 1000 h et L = 8,4 millions de tours, ou 20 couples ouverture et fermeture, soit 40 manœuvres, Lh = 2000 h et L = 16,8 millions de tours ; dans ce second cas les charges de la question 55 passent à 2,1 kN et 0,91 kN et le roulement 61801 ne convient plus au palier A à la question 56)."
   },
   "figures": [
     {
@@ -106,6 +106,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Rédaction des deux éditions pour les 56 questions à partir du sujet, des annexes, du cahier réponse et du rapport du jury. Applications numériques recalculées, construction de la question 3 reconstituée par le calcul et trois figures originales produites."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Corrections de la relecture indépendante, vérifiées contre le sujet, dans les deux éditions. Questions 54 à 56 : seconde lecture du nombre de manœuvres journalières (40 au lieu de 20) donnée avec ses conséquences chiffrées, réserve ajoutée à la précision de couverture. Question 36 : réserve réécrite selon les trois lectures de la colonne ΔF%, seule Sol9 commune. Question 52 : encadré sur la correspondance des figures 22 et 24 (symétrie θ ↔ 3π/2 − θ) et lectures des figures 22 à 24 ajustées aux questions 51 et 52. Questions 4, 6 et 22 : formulations précisées. Figure de la question 3 complétée par l'arc de la porte fermée et ouverte, étiquettes de la figure de la question 43 mises en indices. Les 15 encadrés du jury ont été contrôlés contre le rapport."
     }
   ]
 }
