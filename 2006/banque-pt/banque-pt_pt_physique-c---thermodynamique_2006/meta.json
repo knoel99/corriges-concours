@@ -1,0 +1,50 @@
+{
+  "slug": "banque-pt_pt_physique-c---thermodynamique_2006",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique C - Thermodynamique",
+    "annee": 2006
+  },
+  "questions": 29,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2006/phys_c_2006.zip",
+    "sujet_sha256": "6676a86a4875d700c0bcfb1b576e356e23524fb0b2687870516489e64f67435d",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2006/rapport_phys_c_ecrit_2006.pdf",
+    "rapport_sha256": "30d564f63e96de7b0f5ab011816606401227f7981a0f82555e4c396f5157176e",
+    "precision": "L'archive phys_c_2006.zip (SHA-256 6676a86a4875d700c0bcfb1b576e356e23524fb0b2687870516489e64f67435d) réunit les deux parties de Physique C, sans archive interne : fascicule phys_c_2006.pdf (16 pages PDF, SHA-256 18f4a9dc16aa745607f6aa321ded8b1dcd4d6eeb062bfb0c26e6c9e9b9582a79) et document réponse phys_c_doc_reponse_2006.pdf (1 page PDF, SHA-256 47d751ff03aec6de563085730906731140fa4cc611de7eb0fcfc7bacc39129ce). La garde commune (page 1/16, « Epreuve de Physique C ») annonce un problème de chimie et un problème de thermodynamique ; la partie thermodynamique, identifiée par son titre « THERMODYNAMIQUE » en tête de la page 7/16, occupe les pages 7/16 à 16/16 du fascicule : énoncé et tableaux 1 et 2 sur les pages 7/16 à 13/16, figure 1 (schéma du climatiseur) page 14/16, figure 2 (allure du cycle) et tableau 3 page 15/16, figure 4 (diagramme enthalpique du R22) page 16/16. Son annexe est l'unique page du document réponse (figure 3, diagramme enthalpique du R134A, à rendre avec la copie de thermodynamique). Les pages 2/16 à 6/16 relèvent de la chimie et ne sont pas traitées ici. Empreintes de l'archive, des deux fichiers internes et du rapport identiques à celles de campagnes/x-ens/bilans/documents-banque-pt-2004-2007.tsv, sources-epreuves-banque-pt-2004-2007.tsv et feuillets-physique-c-banque-pt-2005-2007.tsv. Le rapport est commun aux deux parties de Physique C : seule sa partie « Sujet de Physique » est utilisée."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": ["A-1", "A-2", "A-3", "B-4", "B-5", "B-6", "B-7", "C-8", "C-9", "C-10", "C-11", "C-12", "C-13", "C-14", "C-15", "C-16", "D-17", "D-18", "D-19", "D-20", "D-21", "D-22", "D-23", "D-24", "D-25", "D-26", "D-27", "E-28", "E-29"],
+    "precision": "Fascicule de 16 pages PDF lues en image ; partie thermodynamique sur la garde 1/16 et les pages 7/16 à 16/16 ; document réponse d'une page (figure 3). 29 questions numérotées de A-1 à E-29, toutes traitées. Rapport commun à Physique C de 5 pages PDF, partie physique sur les pages PDF 3 et 4, conseils généraux page 5. Valeurs numériques des questions C-14, C-16 et D-18 à D-26 lues sur les diagrammes enthalpiques des figures 3 (R134A) et 4 (R22), sur des rendus à 300 points par pouce pivotés et agrandis, après étalonnage sur le quadrillage (20 kJ/kg par carreau, pression en échelle logarithmique) ; précision de lecture estimée à 1 kJ/kg, enthalpies données à l'unité et efficacités à deux chiffres significatifs. Applications numériques refaites par calcul. Points signalés dans le texte : le tableau 3 du sujet porte l'unité kJ.kg-1.K-1 pour l'enthalpie massique (coquille) ; la conductivité du ciment du tableau 1 (0,02 W.m-1.K-1) est utilisée telle quelle ; à la question D-21 la lecture donne environ 34 °C, compatible avec les 35 °C retenus ensuite par l'énoncé ; à la question C-15 les deux sources sont prises à 33 °C et 20 °C, la valeur entre -10 °C et 39 °C étant donnée en commentaire ; ordre de grandeur du volume massique du liquide (C-13) et constante R (E-29) ajoutés par le corrigé."
+  },
+  "figures": [
+    {
+      "fichier": "figures/a2-schema-climatiseur-transferts.svg",
+      "question": "A-2",
+      "legende": "Schéma de principe du climatiseur avec le sens de circulation du fluide, le sens des transferts thermiques et les circuits haute et basse pression."
+    },
+    {
+      "fichier": "figures/c14-cycles-diagramme-enthalpique.svg",
+      "question": "C-14",
+      "legende": "Cycle 1-2-3-4 du R134A (question C-14) et cycle optimisé de la partie D dans le diagramme enthalpique, tracés à partir des valeurs lues sur la figure 3 du sujet ; compressions représentées par des segments."
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions (29 questions) à partir du fascicule et du feuillet mobile lus en image et du rapport du jury ; lectures des diagrammes R134A et R22 faites sur des rendus agrandis et étalonnés, applications numériques refaites par calcul, deux figures tracées, encadrés du jury relus contre le rapport."
+    }
+  ]
+}

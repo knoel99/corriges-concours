@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 500" font-family="sans-serif" font-size="14">
+<rect width="760" height="500" fill="#ffffff"/>
+<line x1="70" y1="440" x2="740" y2="440" stroke="#222" stroke-width="1.5"/><line x1="70" y1="440" x2="70" y2="20" stroke="#222" stroke-width="1.5"/>
+<line x1="70.0" y1="440" x2="70.0" y2="446" stroke="#222"/><text x="70.0" y="462" text-anchor="middle">160</text>
+<line x1="159.3" y1="440" x2="159.3" y2="446" stroke="#222"/><text x="159.3" y="462" text-anchor="middle">200</text>
+<line x1="248.7" y1="440" x2="248.7" y2="446" stroke="#222"/><text x="248.7" y="462" text-anchor="middle">240</text>
+<line x1="338.0" y1="440" x2="338.0" y2="446" stroke="#222"/><text x="338.0" y="462" text-anchor="middle">280</text>
+<line x1="427.3" y1="440" x2="427.3" y2="446" stroke="#222"/><text x="427.3" y="462" text-anchor="middle">320</text>
+<line x1="516.7" y1="440" x2="516.7" y2="446" stroke="#222"/><text x="516.7" y="462" text-anchor="middle">360</text>
+<line x1="606.0" y1="440" x2="606.0" y2="446" stroke="#222"/><text x="606.0" y="462" text-anchor="middle">400</text>
+<line x1="695.3" y1="440" x2="695.3" y2="446" stroke="#222"/><text x="695.3" y="462" text-anchor="middle">440</text>
+<line x1="64" y1="440.0" x2="70" y2="440.0" stroke="#222"/><text x="60" y="445.0" text-anchor="end">1</text>
+<line x1="64" y1="363.0" x2="70" y2="363.0" stroke="#222"/><text x="60" y="368.0" text-anchor="end">2</text>
+<line x1="70" y1="363.0" x2="740" y2="363.0" stroke="#bbb" stroke-dasharray="4 4"/>
+<line x1="64" y1="317.9" x2="70" y2="317.9" stroke="#222"/><text x="60" y="322.9" text-anchor="end">3</text>
+<line x1="64" y1="261.1" x2="70" y2="261.1" stroke="#222"/><text x="60" y="266.1" text-anchor="end">5</text>
+<line x1="64" y1="184.1" x2="70" y2="184.1" stroke="#222"/><text x="60" y="189.1" text-anchor="end">10</text>
+<line x1="70" y1="184.1" x2="740" y2="184.1" stroke="#bbb" stroke-dasharray="4 4"/>
+<line x1="64" y1="107.0" x2="70" y2="107.0" stroke="#222"/><text x="60" y="112.0" text-anchor="end">20</text>
+<line x1="64" y1="62.0" x2="70" y2="62.0" stroke="#222"/><text x="60" y="67.0" text-anchor="end">30</text>
+<text x="740" y="484" text-anchor="end">h (kJ/kg)</text><text x="14" y="18">P (bar), échelle logarithmique</text>
+<polyline points="82.7,440.0 109.1,394.9 129.4,363.0 160.0,317.9 185.0,285.9 205.6,261.1 240.2,223.7 283.7,184.1 336.2,139.0 380.7,107.0 419.3,82.2 459.0,62.0 496.6,44.8" fill="none" stroke="#777" stroke-width="2"/><polyline points="568.0,440.0 576.5,394.9 586.1,363.0 600.0,317.9 610.5,285.9 618.3,261.1 631.7,223.7 647.5,184.1 659.6,139.0 667.9,107.0 670.8,82.2 669.0,62.0 660.9,44.8" fill="none" stroke="#777" stroke-width="2"/>
+<text x="170.5" y="131.8" fill="#555" text-anchor="middle" font-size="13">liquide saturant</text><text x="650.7" y="62.0" fill="#555" font-size="13" text-anchor="end">vapeur saturante</text>
+<polygon points="585.9,363.0 661.8,184.1 284.4,184.1 284.4,363.0" fill="none" stroke="#1f5fa8" stroke-width="2.2" />
+<polygon points="597.1,363.0 675.2,184.1 268.8,184.1 268.8,363.0" fill="none" stroke="#b03a2e" stroke-width="2.2" stroke-dasharray="7 4"/>
+<circle cx="585.9" cy="363.0" r="4" fill="#1f5fa8"/>
+<circle cx="661.8" cy="184.1" r="4" fill="#1f5fa8"/>
+<circle cx="284.4" cy="184.1" r="4" fill="#1f5fa8"/>
+<circle cx="284.4" cy="363.0" r="4" fill="#1f5fa8"/>
+<circle cx="597.1" cy="363.0" r="4" fill="#b03a2e"/>
+<circle cx="675.2" cy="184.1" r="4" fill="#b03a2e"/>
+<circle cx="268.8" cy="184.1" r="4" fill="#b03a2e"/>
+<circle cx="268.8" cy="363.0" r="4" fill="#b03a2e"/>
+<circle cx="659.6" cy="184.1" r="3" fill="#ffffff" stroke="#b03a2e" stroke-width="1.5"/>
+<text x="571.9" y="383.0" fill="#1f5fa8" font-weight="bold">1</text>
+<text x="649.8" y="174.1" fill="#1f5fa8" font-weight="bold">2</text>
+<text x="292.4" y="174.1" fill="#1f5fa8" font-weight="bold">3</text>
+<text x="292.4" y="383.0" fill="#1f5fa8" font-weight="bold">4</text>
+<text x="607.1" y="383.0" fill="#b03a2e" font-weight="bold">1'</text>
+<text x="683.2" y="174.1" fill="#b03a2e" font-weight="bold">2'</text>
+<text x="248.8" y="174.1" fill="#b03a2e" font-weight="bold">3'</text>
+<text x="248.8" y="383.0" fill="#b03a2e" font-weight="bold">4'</text>
+<text x="472.0" y="176.1" text-anchor="middle" font-size="13">condenseur, 10 bar (39 °C sur le palier)</text>
+<text x="427.3" y="383.0" text-anchor="middle" font-size="13">évaporateur, 2 bar (−10 °C sur le palier)</text>
+<text x="297.8" y="275.3" font-size="13">détendeur</text><text x="297.8" y="291.3" font-size="13">(h constante)</text>
+<text x="737.8" y="275.3" font-size="13" text-anchor="end">compresseur</text><text x="737.8" y="291.3" font-size="13" text-anchor="end">(s constante)</text>
+<line x1="90" y1="478" x2="130" y2="478" stroke="#1f5fa8" stroke-width="2.2"/><text x="138" y="483" font-size="13">cycle 1-2-3-4 (question C-14)</text>
+<line x1="400" y1="478" x2="440" y2="478" stroke="#b03a2e" stroke-width="2.2" stroke-dasharray="7 4"/><text x="448" y="483" font-size="13">cycle 1'-2'-3'-4' (partie D)</text>
+</svg>
