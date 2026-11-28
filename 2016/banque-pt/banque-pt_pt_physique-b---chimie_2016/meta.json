@@ -1,0 +1,64 @@
+{
+  "slug": "banque-pt_pt_physique-b---chimie_2016",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique B - Chimie",
+    "annee": 2016
+  },
+  "questions": 36,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2016/ph_b_ch_2016_pt.pdf",
+    "sujet_sha256": "1f156523f889afa3b9246d717a5e04eff95128d481db278f087181b233f8c251",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2016/rapport_phys_b_ecrit_2016.pdf",
+    "rapport_sha256": "25beb48a2ef47fa5d1365b6644b05e833636c265523e9c53a6a2995b3c11e702"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36"],
+    "precision": "Sujet de 14 pages PDF lu en entier (énoncé p. 2 à 8, annexe à rendre p. 13, autres pages blanches ou barrées) ; 36 questions numérotées Q1 à Q36, toutes traitées. Rapport commun à Physique B de 6 pages, partie chimie p. 1 à 3. L'annexe à rendre (questions 34 et 35) est restituée par la figure 4. Lectures graphiques : droites de régression du sujet (question 12), palier à −20 µA et potentiel à courant nul de 0,48 V (questions 30 et 33), potentiels de 0,45 V et −0,01 V lus sur l'annexe à 0,01 V près (question 35)."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lewis-halogenes.svg",
+      "question": "4",
+      "legende": "Schémas de Lewis du dichlore, de l'acide hypochloreux et de l'ion triiodure."
+    },
+    {
+      "fichier": "figures/montage-trois-electrodes.svg",
+      "question": "29",
+      "legende": "Montage à trois électrodes : contre-électrode, électrode de travail et électrode de référence, avec ampèremètre, générateur et voltmètre."
+    },
+    {
+      "fichier": "figures/courbe-i-e-triiodure.svg",
+      "question": "30",
+      "legende": "Courbe intensité-potentiel sur platine avec les demi-réactions dans le sens où elles se produisent."
+    },
+    {
+      "fichier": "figures/annexe-courbes-i-e-dosage.svg",
+      "question": "34",
+      "legende": "Annexe complétée : points de fonctionnement de l'anode et de la cathode sur les trois courbes pour un courant imposé de 1 microampère."
+    },
+    {
+      "fichier": "figures/delta-e-volume.svg",
+      "question": "35",
+      "legende": "Allure de la différence de potentiel entre les deux électrodes en fonction du volume de thiosulfate versé."
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des corrigés brut et guidé des 36 questions et de cinq figures, à partir du sujet et du rapport du jury ; applications numériques recalculées, lectures des graphiques et de l'annexe contrôlées sur le PDF, encadrés JURY relus contre le rapport."
+    }
+  ]
+}
