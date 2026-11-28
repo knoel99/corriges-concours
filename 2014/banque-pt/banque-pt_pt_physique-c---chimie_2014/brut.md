@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Épreuve de 2 heures, sans calculatrice, autour de l'oxygène et du soufre : 45 questions numérotées de Q1 à Q45, en quatre parties indépendantes (approche structurale, dosage du dioxygène dissous par la méthode de Winkler, cinétique de la décomposition de l'ozone, procédé de contact), avec une feuille annexe à rendre (diagramme potentiel-pH simplifié du manganèse). Les 45 questions sont traitées. Les valeurs lues sur l'annexe et sur le réseau de courbes cinétiques sont signalées à l'endroit où elles servent. Les applications numériques sont menées à la main, comme le jour de l'épreuve ; les constantes d'équilibre sont données en puissances de 10, éventuellement décimales, comme l'autorise l'énoncé.
 
 [Sujet officiel (archive des deux parties de Physique C ; la partie chimie est le fichier `ph_c_2014_pt_ch.pdf`)](https://www.banquept.fr/documents/2014/ph_c_2014_pt.zip) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2014/rapport_phys_c_ecrit_2014.pdf)
@@ -201,9 +203,11 @@ $$\boxed{E_b = 1{,}23 - 0{,}06\,\mathrm{pH}\quad(\mathrm{V})}$$
 
 ### Question 13 — Première étape : oxydation du manganèse(II) par le dioxygène dissous
 
-**Avant oxydation.** La soude rend le milieu basique : le $\mathrm{pH}$ dépasse 8,7 et le manganèse(II) se trouve dans le domaine 3 du diagramme. Il précipite sous forme d'**hydroxyde de manganèse(II)** :
+**Avant oxydation.** La soude rend le milieu basique : le manganèse(II) précipite sous forme d'**hydroxyde de manganèse(II)** (domaine 3 du diagramme) :
 
 $$\mathrm{Mn^{2+}_{(aq)}} + 2\,\mathrm{HO^-_{(aq)}} = \mathrm{Mn(OH)_{2(s)}}$$
+
+Bilan de matière, avec des masses molaires que l'énoncé ne fournit pas ($40\ \mathrm{g\cdot mol^{-1}}$ pour la soude, $126\ \mathrm{g\cdot mol^{-1}}$ pour le chlorure de manganèse anhydre, $198\ \mathrm{g\cdot mol^{-1}}$ s'il est tétrahydraté) : 1,4 g de soude apportent $0{,}035\ \mathrm{mol}$ d'ions hydroxyde ; 4,0 g de chlorure de manganèse apportent $0{,}032\ \mathrm{mol}$ d'ions $\mathrm{Mn^{2+}}$ ($0{,}020\ \mathrm{mol}$ pour le sel hydraté), dont la précipitation complète demanderait $0{,}064\ \mathrm{mol}$ ($0{,}040\ \mathrm{mol}$) d'ions hydroxyde. La soude est donc en défaut : elle est presque entièrement consommée, il se forme $0{,}035/2 \approx 0{,}018\ \mathrm{mol}$ d'hydroxyde de manganèse(II) et le reste du manganèse(II) demeure dissous sous forme $\mathrm{Mn^{2+}}$. Le $\mathrm{pH}$ s'établit sur la frontière de précipitation, entre 8 et 9 (elle est à 8,7 pour la concentration de tracé) : le milieu est basique, sans excès d'ions hydroxyde.
 
 **Après oxydation.** Le dioxygène dissous oxyde le manganèse(II) en manganèse(III), dont la forme stable en milieu basique est l'hydroxyde : le précipité brun est l'**hydroxyde de manganèse(III)** $\mathrm{Mn(OH)_{3(s)}}$ (domaine 5).
 
@@ -223,7 +227,7 @@ Une mole de dioxygène dissous produit quatre moles d'hydroxyde de manganèse(II
 On superpose le diagramme du manganèse et la droite (b) du couple $\mathrm{O_2/H_2O}$, $E_b = 1{,}23 - 0{,}06\,\mathrm{pH}$ (figure 2).
 
 - **En milieu acide** ($\mathrm{pH} < 2{,}8$), la frontière $\mathrm{Mn^{3+}/Mn^{2+}}$ est à $1{,}50\ \mathrm{V}$, au-dessus de la droite (b) (au plus $1{,}23\ \mathrm{V}$). Le dioxygène et l'ion $\mathrm{Mn^{2+}}$ ont un domaine commun : le dioxygène n'oxyde pas le manganèse(II). La situation reste la même tant que la droite (b) est sous la frontière $\mathrm{Mn(OH)_3/Mn^{2+}}$, c'est-à-dire, par lecture de la figure 2, jusqu'à $\mathrm{pH} \approx 6{,}5$.
-- **En milieu basique** ($\mathrm{pH} > 8{,}7$), la frontière $\mathrm{Mn(OH)_3/Mn(OH)_2}$ est parallèle à la droite (b) et située nettement au-dessous : à $\mathrm{pH} = 8{,}7$, elle est à $0{,}43\ \mathrm{V}$ alors que $E_b = 1{,}23 - 0{,}52 = 0{,}71\ \mathrm{V}$, soit un écart d'environ $0{,}28\ \mathrm{V}$ qui se conserve jusqu'à $\mathrm{pH} = 14$. Les domaines de $\mathrm{O_2}$ et de $\mathrm{Mn(OH)_{2(s)}}$ sont disjoints : la réaction de la question 13 est thermodynamiquement très favorable, avec une constante de l'ordre de $10^{4 \times 0{,}28/0{,}06} \approx 10^{18}$.
+- **En milieu basique** ($\mathrm{pH} > 8{,}7$), la frontière $\mathrm{Mn(OH)_3/Mn(OH)_2}$ est parallèle à la droite (b) et située nettement au-dessous : à $\mathrm{pH} = 8{,}7$, elle est à $0{,}43\ \mathrm{V}$ alors que $E_b = 1{,}23 - 0{,}52 = 0{,}71\ \mathrm{V}$, soit un écart d'environ $0{,}28\ \mathrm{V}$ qui se conserve jusqu'à $\mathrm{pH} = 14$. Les domaines de $\mathrm{O_2}$ et de $\mathrm{Mn(OH)_{2(s)}}$ sont disjoints : la réaction de la question 13 est thermodynamiquement très favorable, avec une constante de l'ordre de $10^{4 \times 0{,}28/0{,}06} = 10^{18{,}7}$, soit près de $10^{19}$.
 
 Le milieu basique est donc nécessaire pour que **tout le dioxygène dissous soit consommé** (réaction quantitative), condition indispensable à un dosage.
 
@@ -239,7 +243,7 @@ Une fois le milieu acide, le dioxygène n'oxyde plus le manganèse(II) (question
 
 ### Question 16 — Choix d'un acide sulfurique concentré
 
-Il faut apporter beaucoup d'ions $\mathrm{H^+}$ : neutraliser les ions hydroxyde en excès, dissoudre les deux hydroxydes, puis amener le $\mathrm{pH}$ sous 2,8 environ pour que le manganèse(III) soit entièrement sous forme $\mathrm{Mn^{3+}}$.
+Il faut apporter beaucoup d'ions $\mathrm{H^+}$ : dissoudre les deux hydroxydes (ce qui revient à neutraliser toute la soude introduite), puis amener le $\mathrm{pH}$ sous 2,8 environ pour que le manganèse(III) soit entièrement sous forme $\mathrm{Mn^{3+}}$.
 
 Avec une solution **concentrée**, cette quantité est apportée par quelques gouttes, donc par un **volume négligeable** :
 
@@ -312,7 +316,7 @@ $$C_0 = \frac{1{,}00\cdot10^{-3} \times 20{,}0}{4 \times 50{,}0} = 1{,}00\cdot10
 
 $$\boxed{C_0 = 1{,}00\cdot10^{-4}\ \mathrm{mol\cdot L^{-1}}}$$
 
-Rapportées à l'erlenmeyer entier (500 mL, soit dix prises d'essai), les quantités de manganèse(III) formées aux étapes 1 et 2 valent dix fois plus, $2{,}00\cdot10^{-4}\ \mathrm{mol}$ ; la concentration $C_0$ n'en dépend pas. Avec une masse molaire du dioxygène de $32\ \mathrm{g\cdot mol^{-1}}$ (valeur non fournie par l'énoncé), $C_0$ correspond à environ $3\ \mathrm{mg\cdot L^{-1}}$, ordre de grandeur plausible pour une eau naturelle ou résiduaire, inférieur à la saturation (une dizaine de milligrammes par litre).
+L'énoncé ne dit pas dans quel volume compter les deux quantités intermédiaires. Rapportées à l'erlenmeyer entier, elles sont multipliées par le rapport du volume de l'erlenmeyer à $V_0$ : environ dix fois plus, soit de l'ordre de $2\cdot10^{-4}\ \mathrm{mol}$, si l'on assimile son contenu à 500 mL (rempli à ras bord, il en contient en réalité un peu plus, ce qui interdit trois chiffres significatifs). La concentration $C_0$ n'en dépend pas. Avec une masse molaire du dioxygène de $32\ \mathrm{g\cdot mol^{-1}}$ (valeur non fournie par l'énoncé), $C_0$ correspond à environ $3\ \mathrm{mg\cdot L^{-1}}$, ordre de grandeur plausible pour une eau naturelle ou résiduaire, inférieur à la saturation (une dizaine de milligrammes par litre).
 
 ## Partie 3 — Étude cinétique de la décomposition de l'ozone en solution aqueuse
 
@@ -497,7 +501,7 @@ $$\boxed{T \leqslant T_i = -\frac{b}{a}}$$
 
 $$T_i = \frac{2{,}0\cdot10^{5}}{1{,}9\cdot10^{2}} \approx 1{,}05\cdot10^{3}\ \mathrm{K}$$
 
-$$\boxed{K^\circ \geqslant 1 \ \text{pour}\ T \leqslant 1{,}1\cdot10^{3}\ \mathrm{K}\ (\text{environ } 780\ \mathrm{°C})}$$
+$$\boxed{K^\circ \geqslant 1 \ \text{pour}\ T \leqslant T_i \approx 1{,}05\cdot10^{3}\ \mathrm{K}\ (\text{environ } 780\ \mathrm{°C})}$$
 
 $T_i$ est la température d'inversion de l'équilibre : en dessous, la formation de $\mathrm{SO_3}$ est thermodynamiquement favorisée ; au-dessus, c'est sa dissociation.
 
@@ -602,7 +606,7 @@ Du seul point de vue thermodynamique, il faudrait donc travailler à la tempéra
 
 ### Question 42 — Taux de conversion à débit plus important
 
-Avec un débit plus important, le temps de séjour est court : l'équilibre n'est plus nécessairement atteint. À toute température, le taux de conversion est inférieur au taux d'équilibre du premier tableau, et il passe par un **maximum (62 %) vers 500 °C**.
+Avec un débit plus important, le temps de séjour est court : l'équilibre n'est plus nécessairement atteint. De 300 à 900 °C, le taux de conversion est inférieur au taux d'équilibre du premier tableau (à 1000 °C, les deux sont inférieurs à 1 % et ne peuvent pas être comparés), et il passe par un **maximum (62 %) vers 500 °C**.
 
 ![Figure 3 — Taux de conversion en fonction de la température pour les deux débits, d'après les tableaux de l'énoncé](figures/taux-conversion-temperature.svg)
 

@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** L'oxygène et le soufre, deux éléments de la famille des chalcogènes : structure des atomes et de quelques édifices, dosage du dioxygène dissous dans une eau d'épuration, décomposition de l'ozone utilisé comme désinfectant, synthèse du trioxyde de soufre par le procédé de contact. L'épreuve dure 2 heures, **sans calculatrice**, et comporte 45 questions numérotées de Q1 à Q45, réparties en quatre parties indépendantes. Une feuille annexe est à rendre avec la copie : le diagramme potentiel-pH simplifié du manganèse, sur lequel on porte les domaines et, utilement, les droites de l'eau.
@@ -20,7 +22,7 @@
 **Gestion du temps.** Environ 15 minutes pour la partie 1, 35 minutes pour la partie 2, 30 minutes pour la partie 3 et 35 minutes pour la partie 4, en gardant 5 minutes pour relire et compléter l'annexe. Les parties étant indépendantes, commencer par celle que l'on maîtrise le mieux et ne pas s'attarder sur une question bloquante.
 
 > [!JURY]
-> Le rapport 2014 dit avoir souvent apprécié la présentation (résultats numériques soulignés, expressions littérales encadrées, usage de couleurs) et la rédaction, et rappelle que seule une réponse justifiée reçoit l'intégralité des points. Il souligne que le sujet couvre assez largement les programmes de chimie de première et de deuxième année et privilégie des notions simples, de façon à valoriser un travail régulier. Bien que le sujet soit assez long, quelques candidats l'ont traité en entier grâce à une rédaction succincte mais efficace.
+> Le rapport 2014 dit avoir souvent apprécié la présentation (résultats numériques soulignés, expressions littérales encadrées, usage de couleurs) et la rédaction, et rappelle que seule une réponse justifiée reçoit l'intégralité des points. Il souligne que le sujet couvre assez largement les programmes de chimie de première et de deuxième année et privilégie des notions simples, de façon à valoriser les étudiants ayant fourni un travail sérieux en chimie. Bien que le sujet soit assez long, quelques candidats l'ont traité en entier grâce à une rédaction succincte mais efficace.
 
 [Sujet officiel (archive des deux parties de Physique C ; la partie chimie est le fichier `ph_c_2014_pt_ch.pdf`)](https://www.banquept.fr/documents/2014/ph_c_2014_pt.zip) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2014/rapport_phys_c_ecrit_2014.pdf)
 
@@ -288,7 +290,7 @@ $$\boxed{\frac{\mathrm{d}E}{\mathrm{dpH}} = -\alpha = -0{,}060\ \mathrm{V\ par\ 
 Vérification sur l'annexe : la frontière passe de $0{,}43\ \mathrm{V}$ à $\mathrm{pH} = 8{,}7$ à environ $0{,}11\ \mathrm{V}$ à $\mathrm{pH} = 14$, soit une pente de $-0{,}32/5{,}3 \approx -0{,}06\ \mathrm{V}$ par unité de $\mathrm{pH}$.
 
 > [!JURY]
-> Le rapport rappelle qu'il faut écrire la demi-équation d'oxydoréduction en milieu acide pour pouvoir appliquer la relation de Nernst avec le potentiel standard habituel.
+> Le rapport rappelle qu'il faut veiller à écrire la demi-équation d'oxydoréduction en milieu acide pour pouvoir appliquer la relation de Nernst.
 
 > [!METHODE]
 > Pour une demi-équation échangeant $m$ protons et $n$ électrons entre espèces d'activité fixée, la pente vaut $-0{,}06\,m/n$ volt par unité de $\mathrm{pH}$. Ici $m = n = 1$. La même règle donne $-0{,}18\ \mathrm{V}$ pour la frontière entre $\mathrm{Mn(OH)_{3(s)}}$ et $\mathrm{Mn^{2+}}$ ($m = 3$, $n = 1$), ce que confirme l'annexe.
@@ -371,9 +373,11 @@ $$\boxed{E_b = 1{,}23 - 0{,}06\,\mathrm{pH}\quad(\mathrm{V})}$$
 
 #### Solution
 
-**Avant oxydation.** La soude rend le milieu basique : le $\mathrm{pH}$ dépasse 8,7 et le manganèse(II) se trouve dans le domaine 3 du diagramme. Il précipite sous forme d'**hydroxyde de manganèse(II)** :
+**Avant oxydation.** La soude rend le milieu basique : le manganèse(II) précipite sous forme d'**hydroxyde de manganèse(II)** (domaine 3 du diagramme) :
 
 $$\mathrm{Mn^{2+}_{(aq)}} + 2\,\mathrm{HO^-_{(aq)}} = \mathrm{Mn(OH)_{2(s)}}$$
+
+Bilan de matière, avec des masses molaires que l'énoncé ne fournit pas ($40\ \mathrm{g\cdot mol^{-1}}$ pour la soude, $126\ \mathrm{g\cdot mol^{-1}}$ pour le chlorure de manganèse anhydre, $198\ \mathrm{g\cdot mol^{-1}}$ s'il est tétrahydraté) : 1,4 g de soude apportent $0{,}035\ \mathrm{mol}$ d'ions hydroxyde ; 4,0 g de chlorure de manganèse apportent $0{,}032\ \mathrm{mol}$ d'ions $\mathrm{Mn^{2+}}$ ($0{,}020\ \mathrm{mol}$ pour le sel hydraté), dont la précipitation complète demanderait $0{,}064\ \mathrm{mol}$ ($0{,}040\ \mathrm{mol}$) d'ions hydroxyde. La soude est donc en défaut : elle est presque entièrement consommée, il se forme $0{,}035/2 \approx 0{,}018\ \mathrm{mol}$ d'hydroxyde de manganèse(II) et le reste du manganèse(II) demeure dissous sous forme $\mathrm{Mn^{2+}}$. Le $\mathrm{pH}$ s'établit sur la frontière de précipitation, entre 8 et 9 (elle est à 8,7 pour la concentration de tracé) : le milieu est basique, sans excès d'ions hydroxyde.
 
 **Après oxydation.** Le dioxygène dissous oxyde le manganèse(II) en manganèse(III), dont la forme stable en milieu basique est l'hydroxyde : le précipité brun est l'**hydroxyde de manganèse(III)** $\mathrm{Mn(OH)_{3(s)}}$ (domaine 5).
 
@@ -407,7 +411,7 @@ Une mole de dioxygène dissous produit quatre moles d'hydroxyde de manganèse(II
 On superpose le diagramme du manganèse et la droite (b) du couple $\mathrm{O_2/H_2O}$, $E_b = 1{,}23 - 0{,}06\,\mathrm{pH}$ (figure 2).
 
 - **En milieu acide** ($\mathrm{pH} < 2{,}8$), la frontière $\mathrm{Mn^{3+}/Mn^{2+}}$ est à $1{,}50\ \mathrm{V}$, au-dessus de la droite (b) (au plus $1{,}23\ \mathrm{V}$). Le dioxygène et l'ion $\mathrm{Mn^{2+}}$ ont un domaine commun : le dioxygène n'oxyde pas le manganèse(II). La situation reste la même tant que la droite (b) est sous la frontière $\mathrm{Mn(OH)_3/Mn^{2+}}$, c'est-à-dire, par lecture de la figure 2, jusqu'à $\mathrm{pH} \approx 6{,}5$.
-- **En milieu basique** ($\mathrm{pH} > 8{,}7$), la frontière $\mathrm{Mn(OH)_3/Mn(OH)_2}$ est parallèle à la droite (b) et située nettement au-dessous : à $\mathrm{pH} = 8{,}7$, elle est à $0{,}43\ \mathrm{V}$ alors que $E_b = 1{,}23 - 0{,}52 = 0{,}71\ \mathrm{V}$, soit un écart d'environ $0{,}28\ \mathrm{V}$ qui se conserve jusqu'à $\mathrm{pH} = 14$. Les domaines de $\mathrm{O_2}$ et de $\mathrm{Mn(OH)_{2(s)}}$ sont disjoints : la réaction de la question 13 est thermodynamiquement très favorable, avec une constante de l'ordre de $10^{4 \times 0{,}28/0{,}06} \approx 10^{18}$.
+- **En milieu basique** ($\mathrm{pH} > 8{,}7$), la frontière $\mathrm{Mn(OH)_3/Mn(OH)_2}$ est parallèle à la droite (b) et située nettement au-dessous : à $\mathrm{pH} = 8{,}7$, elle est à $0{,}43\ \mathrm{V}$ alors que $E_b = 1{,}23 - 0{,}52 = 0{,}71\ \mathrm{V}$, soit un écart d'environ $0{,}28\ \mathrm{V}$ qui se conserve jusqu'à $\mathrm{pH} = 14$. Les domaines de $\mathrm{O_2}$ et de $\mathrm{Mn(OH)_{2(s)}}$ sont disjoints : la réaction de la question 13 est thermodynamiquement très favorable, avec une constante de l'ordre de $10^{4 \times 0{,}28/0{,}06} = 10^{18{,}7}$, soit près de $10^{19}$.
 
 Le milieu basique est donc nécessaire pour que **tout le dioxygène dissous soit consommé** (réaction quantitative), condition indispensable à un dosage.
 
@@ -439,7 +443,7 @@ Une fois le milieu acide, le dioxygène n'oxyde plus le manganèse(II) (question
 
 #### Solution
 
-Il faut apporter beaucoup d'ions $\mathrm{H^+}$ : neutraliser les ions hydroxyde en excès, dissoudre les deux hydroxydes, puis amener le $\mathrm{pH}$ sous 2,8 environ pour que le manganèse(III) soit entièrement sous forme $\mathrm{Mn^{3+}}$.
+Il faut apporter beaucoup d'ions $\mathrm{H^+}$ : dissoudre les deux hydroxydes (ce qui revient à neutraliser toute la soude introduite), puis amener le $\mathrm{pH}$ sous 2,8 environ pour que le manganèse(III) soit entièrement sous forme $\mathrm{Mn^{3+}}$.
 
 Avec une solution **concentrée**, cette quantité est apportée par quelques gouttes, donc par un **volume négligeable** :
 
@@ -536,7 +540,7 @@ $$C_0 = \frac{1{,}00\cdot10^{-3} \times 20{,}0}{4 \times 50{,}0} = 1{,}00\cdot10
 
 $$\boxed{C_0 = 1{,}00\cdot10^{-4}\ \mathrm{mol\cdot L^{-1}}}$$
 
-Rapportées à l'erlenmeyer entier (500 mL, soit dix prises d'essai), les quantités de manganèse(III) formées aux étapes 1 et 2 valent dix fois plus, $2{,}00\cdot10^{-4}\ \mathrm{mol}$ ; la concentration $C_0$ n'en dépend pas. Avec une masse molaire du dioxygène de $32\ \mathrm{g\cdot mol^{-1}}$ (valeur non fournie par l'énoncé), $C_0$ correspond à environ $3\ \mathrm{mg\cdot L^{-1}}$, ordre de grandeur plausible pour une eau naturelle ou résiduaire, inférieur à la saturation (une dizaine de milligrammes par litre).
+L'énoncé ne dit pas dans quel volume compter les deux quantités intermédiaires. Rapportées à l'erlenmeyer entier, elles sont multipliées par le rapport du volume de l'erlenmeyer à $V_0$ : environ dix fois plus, soit de l'ordre de $2\cdot10^{-4}\ \mathrm{mol}$, si l'on assimile son contenu à 500 mL (rempli à ras bord, il en contient en réalité un peu plus, ce qui interdit trois chiffres significatifs). La concentration $C_0$ n'en dépend pas. Avec une masse molaire du dioxygène de $32\ \mathrm{g\cdot mol^{-1}}$ (valeur non fournie par l'énoncé), $C_0$ correspond à environ $3\ \mathrm{mg\cdot L^{-1}}$, ordre de grandeur plausible pour une eau naturelle ou résiduaire, inférieur à la saturation (une dizaine de milligrammes par litre).
 
 > [!JURY]
 > D'après le rapport, l'exploitation du volume équivalent n'a que trop rarement été menée à son terme ; une réponse juste, qui demande des compétences simples mais de la rigueur, a été valorisée.
@@ -851,7 +855,7 @@ $$\boxed{T \leqslant T_i = -\frac{b}{a}}$$
 
 $$T_i = \frac{2{,}0\cdot10^{5}}{1{,}9\cdot10^{2}} \approx 1{,}05\cdot10^{3}\ \mathrm{K}$$
 
-$$\boxed{K^\circ \geqslant 1 \ \text{pour}\ T \leqslant 1{,}1\cdot10^{3}\ \mathrm{K}\ (\text{environ } 780\ \mathrm{°C})}$$
+$$\boxed{K^\circ \geqslant 1 \ \text{pour}\ T \leqslant T_i \approx 1{,}05\cdot10^{3}\ \mathrm{K}\ (\text{environ } 780\ \mathrm{°C})}$$
 
 $T_i$ est la température d'inversion de l'équilibre : en dessous, la formation de $\mathrm{SO_3}$ est thermodynamiquement favorisée ; au-dessus, c'est sa dissociation.
 
@@ -1025,7 +1029,7 @@ Du seul point de vue thermodynamique, il faudrait donc travailler à la tempéra
 
 #### Solution
 
-Avec un débit plus important, le temps de séjour est court : l'équilibre n'est plus nécessairement atteint. À toute température, le taux de conversion est inférieur au taux d'équilibre du premier tableau, et il passe par un **maximum (62 %) vers 500 °C**.
+Avec un débit plus important, le temps de séjour est court : l'équilibre n'est plus nécessairement atteint. De 300 à 900 °C, le taux de conversion est inférieur au taux d'équilibre du premier tableau (à 1000 °C, les deux sont inférieurs à 1 % et ne peuvent pas être comparés), et il passe par un **maximum (62 %) vers 500 °C**.
 
 ![Figure 3 — Taux de conversion en fonction de la température pour les deux débits, d'après les tableaux de l'énoncé](figures/taux-conversion-temperature.svg)
 
@@ -1035,7 +1039,7 @@ Avec un débit plus important, le temps de séjour est court : l'équilibre n'es
 Une élévation de température a donc deux effets antagonistes, augmentation de la vitesse et diminution de la constante d'équilibre : il existe une **température optimale de compromis**, de l'ordre de 500 °C dans ces conditions. Cela justifie l'emploi d'un catalyseur, qui permet d'obtenir une vitesse suffisante à une température où l'équilibre reste favorable.
 
 > [!JURY]
-> Le rapport félicite les candidats qui, par une rédaction succincte mais efficace, ont montré leur maîtrise des notions délicates de contrôle cinétique et de contrôle thermodynamique. Il présente cette partie comme la mise en évidence des deux rôles antagonistes d'une élévation de température : augmentation de la vitesse, diminution de la constante d'équilibre.
+> Le rapport félicite les quelques candidats qui ont traité le sujet en entier, pour leur rédaction succincte mais efficace et pour la maîtrise ainsi montrée de notions délicates comme le contrôle cinétique et le contrôle thermodynamique. Il présente cette partie comme la mise en évidence des deux rôles antagonistes d'une élévation de température : augmentation de la vitesse, diminution de la constante d'équilibre.
 
 > [!METHODE]
 > Commenter un tableau, c'est le comparer : ici au premier tableau, colonne par colonne. L'écart entre les deux taux mesure l'éloignement de l'équilibre.
@@ -1141,7 +1145,7 @@ En répétant la séquence réaction adiabatique puis refroidissement dans les q
 - *Thermodynamique chimique* : $\Delta_r G^\circ = \Delta_r H^\circ - T\,\Delta_r S^\circ$ dans l'approximation d'Ellingham ; $\mathcal{A} = RT\,\ln(K^\circ/Q)$ ; pour un déplacement d'équilibre, chercher le sens de variation de $Q$ (ou de $K^\circ$ si la température change) ; l'ajout d'un constituant actif à $T$ et $P$ fixées se traite par la différentielle de $\ln Q$.
 - *Procédé industriel* : compromis entre vitesse (température élevée) et rendement (température basse pour une réaction exothermique), d'où le catalyseur et les réacteurs adiabatiques séparés par des refroidissements ; pour un réacteur adiabatique isobare, $\Delta H = 0$ sur un chemin fictif réaction puis échauffement.
 
-**Résultats numériques.** $\mathrm{p}K_{s1} \approx 12{,}6$ (lecture à $\mathrm{pH} = 8{,}7$) ; $E_3^\circ = 1{,}50\ \mathrm{V}$ ; pente de la frontière $\mathrm{Mn(OH)_3/Mn(OH)_2}$ : $-0{,}060\ \mathrm{V}$ par unité de $\mathrm{pH}$ ; droites de l'eau $E = -0{,}06\,\mathrm{pH}$ et $E = 1{,}23 - 0{,}06\,\mathrm{pH}$ ; $K^\circ = 10^{29{,}3}$ pour l'oxydation des ions iodure ; $n_{\mathrm{I_2}} = 1{,}00\cdot10^{-5}\ \mathrm{mol}$, $n_{\mathrm{Mn^{3+}}} = n_{\mathrm{Mn(OH)_3}} = 2{,}00\cdot10^{-5}\ \mathrm{mol}$ et $C_0 = 1{,}00\cdot10^{-4}\ \mathrm{mol\cdot L^{-1}}$ ; $t_{1/2} \approx 7\ \mathrm{min}$, ordre 1, $k(T_1) \approx 0{,}10\ \mathrm{min^{-1}}$ ; ordre $\tfrac{3}{2}$ et $E_a = E_{a2} + (E_{a1} - E_{a4})/2$ pour l'initiation photochimique ; $\Delta_r H^\circ = -2{,}0\cdot10^{2}\ \mathrm{kJ\cdot mol^{-1}}$, $\Delta_r S^\circ = -1{,}9\cdot10^{2}\ \mathrm{J\cdot K^{-1}\cdot mol^{-1}}$, $K^\circ \geqslant 1$ pour $T \leqslant 1{,}1\cdot10^{3}\ \mathrm{K}$ ; $\xi_f = 5{,}0\ \mathrm{mol}$ et 10, 15, 10 et 80 mol de $\mathrm{SO_2}$, $\mathrm{O_2}$, $\mathrm{SO_3}$ et $\mathrm{N_2}$ à la sortie du premier réacteur.
+**Résultats numériques.** $\mathrm{p}K_{s1} \approx 12{,}6$ (lecture à $\mathrm{pH} = 8{,}7$) ; $E_3^\circ = 1{,}50\ \mathrm{V}$ ; pente de la frontière $\mathrm{Mn(OH)_3/Mn(OH)_2}$ : $-0{,}060\ \mathrm{V}$ par unité de $\mathrm{pH}$ ; droites de l'eau $E = -0{,}06\,\mathrm{pH}$ et $E = 1{,}23 - 0{,}06\,\mathrm{pH}$ ; $K^\circ = 10^{29{,}3}$ pour l'oxydation des ions iodure ; $n_{\mathrm{I_2}} = 1{,}00\cdot10^{-5}\ \mathrm{mol}$, $n_{\mathrm{Mn^{3+}}} = n_{\mathrm{Mn(OH)_3}} = 2{,}00\cdot10^{-5}\ \mathrm{mol}$ et $C_0 = 1{,}00\cdot10^{-4}\ \mathrm{mol\cdot L^{-1}}$ ; $t_{1/2} \approx 7\ \mathrm{min}$, ordre 1, $k(T_1) \approx 0{,}10\ \mathrm{min^{-1}}$ ; ordre $\tfrac{3}{2}$ et $E_a = E_{a2} + (E_{a1} - E_{a4})/2$ pour l'initiation photochimique ; $\Delta_r H^\circ = -2{,}0\cdot10^{2}\ \mathrm{kJ\cdot mol^{-1}}$, $\Delta_r S^\circ = -1{,}9\cdot10^{2}\ \mathrm{J\cdot K^{-1}\cdot mol^{-1}}$, $K^\circ \geqslant 1$ pour $T \leqslant 1{,}05\cdot10^{3}\ \mathrm{K}$ (environ 780 °C) ; $\xi_f = 5{,}0\ \mathrm{mol}$ et 10, 15, 10 et 80 mol de $\mathrm{SO_2}$, $\mathrm{O_2}$, $\mathrm{SO_3}$ et $\mathrm{N_2}$ à la sortie du premier réacteur.
 
 **Points signalés par le jury.** Représentations de Lewis à soigner (décompte des électrons de valence, octet pour les deux premières périodes, doublets non liants, charges formelles) et géométries VSEPR ; demi-équation à écrire en milieu acide avant d'appliquer la relation de Nernst ; rôle de chaque étape du dosage à traduire par une équation, exploitation du volume équivalent rarement menée à son terme ; équations différentielles de la cinétique et mécanisme en séquence fermée mal maîtrisés ; introduction d'un constituant actif très rarement bien rédigée ; calcul de la température de sortie souvent non traité ; seule une réponse justifiée reçoit tous les points.
 
