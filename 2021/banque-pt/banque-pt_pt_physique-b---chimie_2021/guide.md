@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** Le zinc et son sulfure, en phase solide et en solution aqueuse. L'épreuve dure 2 heures, **sans calculatrice**, et comporte 39 questions réparties en quatre parties largement indépendantes, sans document à rendre : les diagrammes demandés se tracent sur la copie.
@@ -17,7 +19,7 @@
 
 **Difficulté.** Le sujet reste proche du cours des deux années, mais il est long : 39 questions en 120 minutes. Les questions les plus discriminantes d'après le rapport sont l'inégalité sur les rayons (question 3), l'application numérique de la masse volumique (question 5), le passage en milieu basique (questions 8 à 10), l'interprétation du second diagramme (question 20) et les bilans acido-basiques du carbonate (questions 27 et 28). Les données de l'énoncé comportent quelques coquilles (seconde constante d'acidité notée $\mathrm{p}K_{a1}$, « bicarbonate » pour carbonate) et deux incohérences numériques, signalées aux questions 28 et 35.
 
-**Gestion du temps.** Environ 20 minutes pour la partie A, 40 pour la partie B, 30 pour la partie C et 30 pour la partie D. La partie D, souvent abandonnée faute de temps, contient pourtant plusieurs questions rapides (29 à 34, 37 et 38) : ne pas s'enliser dans la partie B.
+**Gestion du temps.** Environ 20 minutes pour la partie A, 40 pour la partie B, 30 pour la partie C et 30 pour la partie D. La partie D, pas toujours abordée faute de temps, contient pourtant plusieurs questions rapides (29 à 34, 37 et 38) : ne pas s'enliser dans la partie B.
 
 > [!JURY]
 > Le rapport 2021 rappelle que seule une réponse justifiée et argumentée reçoit tous les points, et qu'une valeur numérique sans unité n'est pas créditée. La présentation a été jugée soignée dans l'ensemble, mais l'orthographe et la syntaxe des réponses rédigées laissent à désirer. Le jury demande une attention particulière aux calculs d'ordre de grandeur, menés ici sans calculatrice.
@@ -53,7 +55,7 @@ $$N(\mathrm{Zn^{2+}}) = 4\times 1 = 4$$
 La maille contient **quatre motifs** $\mathrm{ZnS}$, ce qui respecte l'électroneutralité.
 
 > [!JURY]
-> Le rapport note que la maille cubique à faces centrées est connue, mais que les sites tétraédriques sont souvent mal placés. Les situer explicitement (centres des petits cubes d'arête $a/2$) et préciser lesquels sont occupés.
+> Le rapport note que la maille cubique à faces centrées est connue, mais que les sites tétraédriques sont souvent mal décrits. Les situer explicitement (centres des petits cubes d'arête $a/2$) et préciser lesquels sont occupés.
 
 ### Question 2
 
@@ -743,7 +745,7 @@ $$s \approx 1\cdot 10^{-6}\ \mathrm{mol\cdot L^{-1}}$$
 
 Dans les 100 mL de solution, seule une quantité de l'ordre de $10^{-7}$ mol de sulfure de zinc (environ $10\ \mathrm{\mu g}$) passe en solution : presque toute la masse introduite reste solide. Un milieu beaucoup plus basique serait nécessaire.
 
-**Remarque sur les données.** Les deux jeux de données de l'énoncé ne sont pas cohérents. La valeur $\Delta_r G^\circ = -321{,}5\ \mathrm{kJ\cdot mol^{-1}}$ des questions 24 et 25 conduirait à $K_1 \approx 10^{56}$, puis à $K_3 \approx 10^{45}$, et donc à la conclusion inverse (dissolution totale). On retient ici les constantes d'équilibre en solution ($K_{s2}$, $K_c$, $K_{a2}$), qui sont les seules exploitables sans calculatrice ni valeur de $R$, et dont le résultat est conforme au caractère très peu soluble du sulfure de zinc.
+**Remarque sur les données.** Les deux jeux de données de l'énoncé ne sont pas cohérents. La valeur $\Delta_r G^\circ = -321{,}5\ \mathrm{kJ\cdot mol^{-1}}$ des questions 24 et 25 conduirait à $K_1 \approx 10^{56}$, puis à $K_3 \approx 10^{45}$, et donc à la conclusion inverse (dissolution totale). On retient ici les constantes d'équilibre en solution ($K_{s2}$, $K_c$, $K_{a2}$), qui sont les seules à donner une valeur numérique simple en épreuve (la question 25 ne demande d'ailleurs que l'expression de $K_1^\circ$, et $R$ n'est pas fourni), et dont le résultat est conforme au caractère très peu soluble du sulfure de zinc. Le rapport du jury ne tranche pas entre les deux lectures : il ne commente ni la question 25 ni la question 28.
 
 > [!METHODE]
 > Combinaison de réactions : si $(3) = (1) + 3\times(2)$, alors $\Delta_r G_3^\circ = \Delta_r G_1^\circ + 3\,\Delta_r G_2^\circ$ et $K_3 = K_1\,K_2^3$. Les enthalpies libres s'ajoutent, les constantes se multiplient, avec les coefficients en exposants.
@@ -901,7 +903,7 @@ La constante apparente vaut $k\,[\mathrm{H_3O^+}] \approx 4{,}5\cdot 10^{-2}\ \m
 
 On considère l'équilibre $\mathrm{ZnS(s)} = \mathrm{Zn^{2+}} + \mathrm{S^{2-}}$, de constante $K_{s2} = 10^{-20}$, et le quotient de réaction associé $Q = [\mathrm{Zn^{2+}}]\,[\mathrm{S^{2-}}]$.
 
-Juste avant l'apparition du précipité, $[\mathrm{Zn^{2+}}] = 10^{-1}\ \mathrm{mol\cdot L^{-1}}$ (le nitrate de zinc est totalement dissocié). À $t_2 = 3$ min, la figure 3 du sujet donne une ordonnée voisine de 2 (la courbe passe par 1,3 environ à 2 min et 2,5 environ à 4 min). Le modèle le confirme, avec $1 - e^{-x} \approx x$ pour $x = k\,[\mathrm{H_3O^+}]\,t_2 \approx 0{,}14$ :
+Juste avant l'apparition du précipité, $[\mathrm{Zn^{2+}}] = 10^{-1}\ \mathrm{mol\cdot L^{-1}}$ (le nitrate de zinc est totalement dissocié). À $t_2 = 3$ min, la figure 3 du sujet donne une ordonnée voisine de 2 (la courbe passe par 1,3 environ à 2 min et 2,5 environ à 4 min). Le modèle le confirme, avec $x = k\,[\mathrm{H_3O^+}]\,t_2 \approx 0{,}14$ et $1 - e^{-x} \approx x - x^2/2 \approx 0{,}13$ :
 
 $$[\mathrm{S^{2-}}](t_2) \approx 1{,}5\cdot 10^{-17}\times 0{,}13 \approx 2\cdot 10^{-18}\ \mathrm{mol\cdot L^{-1}}$$
 
@@ -909,7 +911,7 @@ $$Q = [\mathrm{Zn^{2+}}]\,[\mathrm{S^{2-}}] \approx 10^{-1}\times 2\cdot 10^{-18
 
 $$\boxed{Q \approx 2\cdot 10^{-19} > K_{s2} = 10^{-20}}$$
 
-Le quotient de réaction dépasse le produit de solubilité d'un facteur 20 environ : la solution n'est pas simplement saturée, elle est **sursaturée**. La condition thermodynamique de précipitation, $Q = K_{s2}$, soit $[\mathrm{S^{2-}}] = 10^{-19}\ \mathrm{mol\cdot L^{-1}}$, est atteinte dès les premières secondes (vers $t \approx 0{,}15$ min d'après le modèle). Le solide n'apparaît qu'ensuite, car la formation des premiers germes cristallins est lente : la solution reste dans un état métastable jusqu'à $t_2$.
+Le quotient de réaction dépasse le produit de solubilité d'un facteur 20 environ : la solution n'est pas simplement saturée, elle est **sursaturée**. La condition thermodynamique de précipitation, $Q = K_{s2}$, soit $[\mathrm{S^{2-}}] = 10^{-19}\ \mathrm{mol\cdot L^{-1}}$, est atteinte dès les premières secondes (vers $t \approx 0{,}15$ min d'après le modèle). Le solide n'apparaît qu'ensuite, car la formation des premiers germes cristallins est lente : la solution reste dans un état métastable jusqu'à $t_2$. Cette conclusion repose sur les valeurs de la courbe, comme le demande l'énoncé ; avec les $\mathrm{p}K_a$ des données (voir la remarque de la question 35), on trouverait au contraire $[\mathrm{S^{2-}}](t_2) \approx 2{,}5\cdot 10^{-20}\ \mathrm{mol\cdot L^{-1}}$ et $Q \approx 2{,}5\cdot 10^{-21} < K_{s2}$, soit une solution non saturée.
 
 > [!METHODE]
 > Critère de précipitation : comparer $Q = [\mathrm{Zn^{2+}}]\,[\mathrm{S^{2-}}]$, calculé avec les concentrations réelles, à $K_s$. Si $Q < K_s$, pas de solide ; si $Q = K_s$, solution saturée ; si $Q > K_s$ sans solide, solution sursaturée, hors équilibre.
@@ -942,7 +944,7 @@ Sa constante d'équilibre vaut
 
 $$K = \frac{K_{a1}\,K_{a2}}{K_{s2}} = \frac{10^{-20}}{10^{-20}} = 1$$
 
-La réaction libère des ions oxonium : c'est le tampon qui maintient le pH constant pendant la précipitation.
+La réaction libère des ions oxonium : c'est le tampon qui maintient le pH constant pendant la précipitation. Une constante égale à 1 signifie qu'à pH = 1 la réaction n'est pas quantitative : elle n'avance que parce que $\mathrm{H_2S}$ est produit en continu (question 39).
 
 ### Question 39
 
@@ -970,13 +972,13 @@ Application numérique avec $\ln 2 \approx 0{,}69$ et $k\,[\mathrm{H_3O^+}] \app
 
 $$\boxed{t \approx 15\ \mathrm{min}}$$
 
-Il s'agit d'une estimation : elle suppose la précipitation quantitative et instantanée dès que $\mathrm{H_2S}$ est formé. La constante de la réaction de la question 38 valant 1, une faible fraction du zinc reste en réalité en solution à pH = 1, et la durée réelle est un peu supérieure.
+Il s'agit d'une estimation stœchiométrique : elle suppose la précipitation totale et instantanée dès que $\mathrm{H_2S}$ est formé. En réalité la réaction de la question 38 est équilibrée et la précipitation n'est jamais complète : en notant $x$ la concentration de zinc précipité et $y$ celle de $\mathrm{H_2S}$ produit, le produit $(0{,}1 - x)(y - x) = [\mathrm{Zn^{2+}}]\,[\mathrm{H_2S}]$ reste fixé par l'équilibre. Avec les valeurs de la courbe (figure 3 du sujet, où $[\mathrm{S^{2-}}] = 7{,}5\cdot 10^{-17}\,[\mathrm{H_2S}]$), ce produit vaut $K_{s2}/(7{,}5\cdot 10^{-17}) \approx 1{,}3\cdot 10^{-4}$ : il reste environ 12 % du zinc en solution à 15 min ($y = 0{,}1\ \mathrm{mol\cdot L^{-1}}$) et encore 1 % environ quand tout le TAA est décomposé ($y = 0{,}2\ \mathrm{mol\cdot L^{-1}}$). Avec les constantes des données ($K = 1$, soit un produit égal à $10^{-2}$ à pH = 1), la précipitation ne ferait que commencer à 15 min et environ 60 % du zinc resterait dissous à temps infini : c'est l'incohérence de données déjà relevée à la question 35.
 
 > [!METHODE]
 > Pour une cinétique d'ordre 1 de constante apparente $k_{\mathrm{app}}$, le temps de demi-réaction $t_{1/2} = \ln 2/k_{\mathrm{app}}$ ne dépend pas de la concentration initiale. Repérer qu'il faut consommer exactement la moitié du réactif évite tout calcul.
 
 > [!JURY]
-> D'après le rapport, cette dernière partie a été plutôt bien traitée par ceux qui l'ont abordée, mais beaucoup ne l'ont pas atteinte faute de temps. Les questions 29 à 34 et 37 sont proches du cours : elles méritent d'être traitées même si la partie B est restée inachevée.
+> D'après le rapport, cette dernière partie a été plutôt bien traitée par ceux qui l'ont abordée, mais elle n'a pas toujours été abordée, par manque de temps. Les questions 29 à 34 et 37 sont proches du cours : elles méritent d'être traitées même si la partie B est restée inachevée.
 
 ## Bilan
 
@@ -991,6 +993,6 @@ Il s'agit d'une estimation : elle suppose la précipitation quantitative et inst
 
 **Résultats numériques.** Rapport des rayons 0,40 (borne 0,22) ; $\rho \approx 4{,}1\cdot 10^{3}\ \mathrm{kg\cdot m^{-3}}$ ; frontières verticales à pH = 6,5 et pH = 13,5 ; $K = 10^{-1}$ pour la redissolution de l'hydroxyde ; palier du couple $\mathrm{ZnS/Zn}$ à $-1{,}18$ V et pente $-0{,}03$ V par unité de pH entre pH 7 et 13 ; $\Delta_r H^\circ = -340\ \mathrm{kJ\cdot mol^{-1}}$ ; $\Delta_r S^\circ = -62\ \mathrm{J\cdot K^{-1}\cdot mol^{-1}}$ ; $\Delta_r G^\circ = -321{,}5\ \mathrm{kJ\cdot mol^{-1}}$ ; $[\mathrm{HO^-}] \approx 4{,}5\cdot 10^{-3}\ \mathrm{mol\cdot L^{-1}}$ ; $K_3 = 10^{-16{,}1}$ ; $k \approx 0{,}45\ \mathrm{L\cdot mol^{-1}\cdot min^{-1}}$ ; $Q \approx 2\cdot 10^{-19}$ à 3 min ; durée de précipitation d'environ 15 min.
 
-**Erreurs les plus coûteuses d'après le jury.** Mal placer les sites tétraédriques ; ne pas savoir établir l'inégalité sur les rayons ; confondre compacité et masse volumique ou se tromper dans les conversions ; écrire de façon fantaisiste la redissolution de l'hydroxyde en milieu basique ; introduire des ions oxonium ou hydroxyde sans rapport avec le pH du milieu ; ne pas reconnaître l'ion carbonate comme une base ; ne pas savoir résoudre l'équation différentielle d'ordre 1 ; donner une valeur sans unité.
+**Erreurs les plus coûteuses d'après le jury.** Mal décrire les sites tétraédriques ; ne pas savoir établir l'inégalité sur les rayons ; confondre compacité et masse volumique ou se tromper dans les conversions ; écrire de façon fantaisiste la redissolution de l'hydroxyde en milieu basique ; introduire des ions oxonium ou hydroxyde sans rapport avec le pH du milieu ; ne pas reconnaître l'ion carbonate comme une base ; ne pas savoir résoudre l'équation différentielle d'ordre 1 ; donner une valeur sans unité.
 
 **Pour s'entraîner.** Refaire sans aide les questions 3, 5, 9 et 10, puis l'enchaînement 15 à 20, et enfin les questions 27, 28, 35 et 39, en terminant chaque application numérique à la main.

@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Épreuve de 2 heures, sans calculatrice, sur le zinc et le sulfure de zinc : 39 questions en quatre parties (cristallographie de la blende, diagrammes potentiel-pH, thermodynamique de la dissolution en milieu carbonate, cinétique de la précipitation homogène). Les 39 questions sont traitées. Les valeurs lues sur les trois figures du sujet sont signalées à l'endroit où elles servent ; deux incohérences entre données de l'énoncé sont relevées aux questions 28 et 35.
 
 [Sujet officiel](https://www.banquept.fr/documents/2021/ph_b_ch_2021_pt.pdf) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2021/rapport_phys_b_ecrit_2021.pdf)
@@ -477,7 +479,7 @@ $$s \approx 1\cdot 10^{-6}\ \mathrm{mol\cdot L^{-1}}$$
 
 Dans les 100 mL de solution, seule une quantité de l'ordre de $10^{-7}$ mol de sulfure de zinc (environ $10\ \mathrm{\mu g}$) passe en solution : presque toute la masse introduite reste solide. Un milieu beaucoup plus basique serait nécessaire.
 
-**Remarque sur les données.** Les deux jeux de données de l'énoncé ne sont pas cohérents. La valeur $\Delta_r G^\circ = -321{,}5\ \mathrm{kJ\cdot mol^{-1}}$ des questions 24 et 25 conduirait à $K_1 \approx 10^{56}$, puis à $K_3 \approx 10^{45}$, et donc à la conclusion inverse (dissolution totale). On retient ici les constantes d'équilibre en solution ($K_{s2}$, $K_c$, $K_{a2}$), qui sont les seules exploitables sans calculatrice ni valeur de $R$, et dont le résultat est conforme au caractère très peu soluble du sulfure de zinc.
+**Remarque sur les données.** Les deux jeux de données de l'énoncé ne sont pas cohérents. La valeur $\Delta_r G^\circ = -321{,}5\ \mathrm{kJ\cdot mol^{-1}}$ des questions 24 et 25 conduirait à $K_1 \approx 10^{56}$, puis à $K_3 \approx 10^{45}$, et donc à la conclusion inverse (dissolution totale). On retient ici les constantes d'équilibre en solution ($K_{s2}$, $K_c$, $K_{a2}$), qui sont les seules à donner une valeur numérique simple en épreuve (la question 25 ne demande d'ailleurs que l'expression de $K_1^\circ$, et $R$ n'est pas fourni), et dont le résultat est conforme au caractère très peu soluble du sulfure de zinc. Le rapport du jury ne tranche pas entre les deux lectures : il ne commente ni la question 25 ni la question 28.
 
 ## Partie D — Cinétique de la synthèse du sulfure de zinc
 
@@ -574,7 +576,7 @@ La constante apparente vaut $k\,[\mathrm{H_3O^+}] \approx 4{,}5\cdot 10^{-2}\ \m
 
 On considère l'équilibre $\mathrm{ZnS(s)} = \mathrm{Zn^{2+}} + \mathrm{S^{2-}}$, de constante $K_{s2} = 10^{-20}$, et le quotient de réaction associé $Q = [\mathrm{Zn^{2+}}]\,[\mathrm{S^{2-}}]$.
 
-Juste avant l'apparition du précipité, $[\mathrm{Zn^{2+}}] = 10^{-1}\ \mathrm{mol\cdot L^{-1}}$ (le nitrate de zinc est totalement dissocié). À $t_2 = 3$ min, la figure 3 du sujet donne une ordonnée voisine de 2 (la courbe passe par 1,3 environ à 2 min et 2,5 environ à 4 min). Le modèle le confirme, avec $1 - e^{-x} \approx x$ pour $x = k\,[\mathrm{H_3O^+}]\,t_2 \approx 0{,}14$ :
+Juste avant l'apparition du précipité, $[\mathrm{Zn^{2+}}] = 10^{-1}\ \mathrm{mol\cdot L^{-1}}$ (le nitrate de zinc est totalement dissocié). À $t_2 = 3$ min, la figure 3 du sujet donne une ordonnée voisine de 2 (la courbe passe par 1,3 environ à 2 min et 2,5 environ à 4 min). Le modèle le confirme, avec $x = k\,[\mathrm{H_3O^+}]\,t_2 \approx 0{,}14$ et $1 - e^{-x} \approx x - x^2/2 \approx 0{,}13$ :
 
 $$[\mathrm{S^{2-}}](t_2) \approx 1{,}5\cdot 10^{-17}\times 0{,}13 \approx 2\cdot 10^{-18}\ \mathrm{mol\cdot L^{-1}}$$
 
@@ -582,7 +584,7 @@ $$Q = [\mathrm{Zn^{2+}}]\,[\mathrm{S^{2-}}] \approx 10^{-1}\times 2\cdot 10^{-18
 
 $$\boxed{Q \approx 2\cdot 10^{-19} > K_{s2} = 10^{-20}}$$
 
-Le quotient de réaction dépasse le produit de solubilité d'un facteur 20 environ : la solution n'est pas simplement saturée, elle est **sursaturée**. La condition thermodynamique de précipitation, $Q = K_{s2}$, soit $[\mathrm{S^{2-}}] = 10^{-19}\ \mathrm{mol\cdot L^{-1}}$, est atteinte dès les premières secondes (vers $t \approx 0{,}15$ min d'après le modèle). Le solide n'apparaît qu'ensuite, car la formation des premiers germes cristallins est lente : la solution reste dans un état métastable jusqu'à $t_2$.
+Le quotient de réaction dépasse le produit de solubilité d'un facteur 20 environ : la solution n'est pas simplement saturée, elle est **sursaturée**. La condition thermodynamique de précipitation, $Q = K_{s2}$, soit $[\mathrm{S^{2-}}] = 10^{-19}\ \mathrm{mol\cdot L^{-1}}$, est atteinte dès les premières secondes (vers $t \approx 0{,}15$ min d'après le modèle). Le solide n'apparaît qu'ensuite, car la formation des premiers germes cristallins est lente : la solution reste dans un état métastable jusqu'à $t_2$. Cette conclusion repose sur les valeurs de la courbe, comme le demande l'énoncé ; avec les $\mathrm{p}K_a$ des données (voir la remarque de la question 35), on trouverait au contraire $[\mathrm{S^{2-}}](t_2) \approx 2{,}5\cdot 10^{-20}\ \mathrm{mol\cdot L^{-1}}$ et $Q \approx 2{,}5\cdot 10^{-21} < K_{s2}$, soit une solution non saturée.
 
 ### Question 37 — Réaction (5) du sulfure de dihydrogène avec l'eau
 
@@ -602,7 +604,7 @@ Sa constante d'équilibre vaut
 
 $$K = \frac{K_{a1}\,K_{a2}}{K_{s2}} = \frac{10^{-20}}{10^{-20}} = 1$$
 
-La réaction libère des ions oxonium : c'est le tampon qui maintient le pH constant pendant la précipitation.
+La réaction libère des ions oxonium : c'est le tampon qui maintient le pH constant pendant la précipitation. Une constante égale à 1 signifie qu'à pH = 1 la réaction n'est pas quantitative : elle n'avance que parce que $\mathrm{H_2S}$ est produit en continu (question 39).
 
 ### Question 39 — Durée nécessaire pour précipiter tout le zinc
 
@@ -622,4 +624,4 @@ Application numérique avec $\ln 2 \approx 0{,}69$ et $k\,[\mathrm{H_3O^+}] \app
 
 $$\boxed{t \approx 15\ \mathrm{min}}$$
 
-Il s'agit d'une estimation : elle suppose la précipitation quantitative et instantanée dès que $\mathrm{H_2S}$ est formé. La constante de la réaction de la question 38 valant 1, une faible fraction du zinc reste en réalité en solution à pH = 1, et la durée réelle est un peu supérieure.
+Il s'agit d'une estimation stœchiométrique : elle suppose la précipitation totale et instantanée dès que $\mathrm{H_2S}$ est formé. En réalité la réaction de la question 38 est équilibrée et la précipitation n'est jamais complète : en notant $x$ la concentration de zinc précipité et $y$ celle de $\mathrm{H_2S}$ produit, le produit $(0{,}1 - x)(y - x) = [\mathrm{Zn^{2+}}]\,[\mathrm{H_2S}]$ reste fixé par l'équilibre. Avec les valeurs de la courbe (figure 3 du sujet, où $[\mathrm{S^{2-}}] = 7{,}5\cdot 10^{-17}\,[\mathrm{H_2S}]$), ce produit vaut $K_{s2}/(7{,}5\cdot 10^{-17}) \approx 1{,}3\cdot 10^{-4}$ : il reste environ 12 % du zinc en solution à 15 min ($y = 0{,}1\ \mathrm{mol\cdot L^{-1}}$) et encore 1 % environ quand tout le TAA est décomposé ($y = 0{,}2\ \mathrm{mol\cdot L^{-1}}$). Avec les constantes des données ($K = 1$, soit un produit égal à $10^{-2}$ à pH = 1), la précipitation ne ferait que commencer à 15 min et environ 60 % du zinc resterait dissous à temps infini : c'est l'incohérence de données déjà relevée à la question 35.

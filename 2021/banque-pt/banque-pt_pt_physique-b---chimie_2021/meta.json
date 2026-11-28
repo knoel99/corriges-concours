@@ -89,6 +89,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Rédaction des corrigés brut et guidé des 39 questions et de trois figures, à partir du sujet et du rapport du jury ; applications numériques recalculées et lectures des figures contrôlées sur le PDF."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application d'une relecture indépendante, chaque défaut revérifié sur le sujet et le rapport, brut et guidé. Question 39 : remarque finale fausse remplacée (fractions de zinc restant en solution recalculées, résultat encadré inchangé). Question 38 : conséquence de K = 1. Question 36 : approximation accordée au facteur 0,13 et dépendance de la conclusion au jeu de données. Question 28 : remarque sur les données reformulée, silence du rapport signalé. Figure diagramme-e-ph-zinc.svg : étiquette de l'ion zincate replacée dans son domaine. Guidé : formulations sur la partie D et sur les sites tétraédriques alignées sur le rapport ; les 11 encadrés du jury contrôlés un par un."
     }
   ]
 }
