@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Problème de chimie de l'épreuve de Physique C (4 heures pour les deux problèmes, 2 heures conseillées pour la chimie, calculatrice autorisée), consacré au tungstène : 42 questions en quatre parties (élément et cristal, diagramme potentiel-pH, réduction des oxydes par le dihydrogène, lampes à incandescence), avec un feuillet mobile à rendre (diagramme potentiel-pH partiel à compléter) et une annexe (droites $\log K = f(10^3/T)$). Les 42 questions sont traitées. Les repères sont ceux de l'énoncé, précédés du numéro de la partie ; deux questions n'y portent pas de sous-numéro : l'écriture des cinq demi-équations en tête de la section II.2 (repérée ici II.2) et la question IV.1. L'énoncé demande trois chiffres significatifs. Dans la partie III, l'énoncé assimile l'ordonnée des droites de l'annexe au logarithme du rapport des pressions alors que trois des équations sont écrites avec plusieurs moles de dihydrogène : l'incohérence est signalée aux questions III.4 et III.7.
 
 [Sujet officiel (archive)](https://www.banquept.fr/documents/2008/phys_c_2008.zip) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2008/rapport_phys_c_ecrit_2008.pdf)
@@ -12,7 +14,7 @@ Problème de chimie de l'épreuve de Physique C (4 heures pour les deux problèm
 
 ### Question I.1.1 — Masse molaire du tungstène
 
-La masse molaire de l'élément est la moyenne des masses molaires des isotopes, pondérée par les abondances atomiques. L'énoncé ne donne pas les masses isotopiques : le corrigé assimile la masse molaire de l'isotope de nombre de masse $A$ à $A\ \mathrm{g\cdot mol^{-1}}$ (l'écart réel est inférieur à $0{,}1\ \%$). La somme des abondances vaut bien $100{,}0\ \%$.
+La masse molaire de l'élément est la moyenne des masses molaires des isotopes, pondérée par les abondances atomiques. L'énoncé ne donne pas les masses isotopiques : le corrigé assimile la masse molaire de l'isotope de nombre de masse $A$ à $A\ \mathrm{g\cdot mol^{-1}}$ (l'écart réel est inférieur à $0{,}1\ \%$ ; la valeur tabulée, $183{,}84\ \mathrm{g\cdot mol^{-1}}$, tient compte du défaut de masse, que l'énoncé ne permet pas d'évaluer). La somme des abondances vaut bien $100{,}0\ \%$.
 
 $$M = \sum_i x_i\,A_i$$
 
@@ -212,7 +214,7 @@ $$E_4 = E^\circ_4 + 0{,}030\,\log C_0 - 0{,}120\,\mathrm{pH}$$
 
 $$\boxed{E_4 = 0{,}212 - 0{,}120\,\mathrm{pH} \quad (\text{en V, pour } \mathrm{pH} > 4{,}03)}$$
 
-Contrôle de continuité à $\mathrm{pH} = 4{,}025$ : la droite (7) donne $-0{,}030 - 0{,}060 \times 4{,}025 = -0{,}2715\ \mathrm{V}$ et la droite (4) donne $0{,}2115 - 0{,}120 \times 4{,}025 = -0{,}2715\ \mathrm{V}$. Les deux frontières se raccordent sur la verticale, au point où celle-ci s'arrête sur le feuillet (lu vers $-0{,}26\ \mathrm{V}$).
+Contrôle de continuité à $\mathrm{pH} = 4{,}025$ : la droite (7) donne $-0{,}030 - 0{,}060 \times 4{,}025 = -0{,}2715\ \mathrm{V}$ et la droite (4) donne $0{,}2115 - 0{,}120 \times 4{,}025 = -0{,}2715\ \mathrm{V}$. Les deux frontières se raccordent sur la verticale, au point où celle-ci s'arrête sur le feuillet (lu vers $-0{,}25\ \mathrm{V}$, le tracé du feuillet étant approximatif).
 
 ### Question II.2.5 — Limite supérieure en pH du domaine de l'oxyde WO₂
 
@@ -414,6 +416,10 @@ $$\boxed{\mathrm{3\,W_4O_{11}(s) = W_{10}O_{29}(s) + 2\,WO_2(s)}}$$
 
 ![Figure 3 — Droites de l'annexe, domaines des espèces du tungstène, verticale T = 900 K et croisement des droites (2) et (3)](figures/droites-log-k-reduction.svg)
 
+La figure 3 reproduit l'annexe : les domaines y sont placés entre les droites $\log K_i$, comme l'énoncé invite à la lire. Avec les équations telles qu'elles sont écrites, les frontières exactes en $\log r$ sont les droites $\log K_i/\nu_i$ (question III.4) : à 900 K, l'ordre des domaines est inchangé, de même que l'abscisse du croisement de (2) et (3) ; seules les ordonnées des frontières (2), (3) et (4) changent.
+
+Sur la figure, à gauche du croisement des droites (1) et (2), vers $10^3/T \approx 0{,}84\ \mathrm{K^{-1}}$, la droite (2) passe au-dessus de la droite (1) : dans cette lecture, c'est $\mathrm{W_{10}O_{29}}$ qui n'aurait plus de domaine. Ce croisement dépend de la lecture retenue (les droites $\log K_1$ et $\log K_2/3$ ne se coupent pas dans l'intervalle tracé) ; l'énoncé ne le demande pas.
+
 ### Question III.6 — Espèces stables à 900 K
 
 À $T = 900\ \mathrm{K}$, $10^3/T = 1{,}11\ \mathrm{K^{-1}}$, à gauche du croisement des droites (2) et (3) : $\mathrm{W_4O_{11}}$ possède un domaine. Les lois de l'énoncé donnent :
@@ -430,17 +436,13 @@ Les cinq solides $\mathrm{WO_3}$, $\mathrm{W_{10}O_{29}}$, $\mathrm{W_4O_{11}}$,
 
 Le tungstène métallique est l'espèce réduite du couple (4), le plus bas des quatre : il n'est obtenu que si le point représentatif de l'état final est au-dessous de la frontière (4), les trois autres étant alors franchies.
 
-Avec l'équation (4) telle qu'elle est écrite ($K_4 = r_{\text{éq}}^{\,2}$, question III.2), la condition $\mathcal{A}_4 \geqslant 0$ s'écrit $r^2 \leqslant K_4$ :
+D'après la question III.2, l'équation (4) telle qu'elle est écrite donne $K_4 = r_{\text{éq}}^{\,2}$ ; la condition $\mathcal{A}_4 \geqslant 0$ s'écrit donc $r^2 \leqslant K_4$, avec $\log K_4(900\ \mathrm{K}) = -0{,}933$ :
 
 $$r \leqslant \sqrt{K_4(900\ \mathrm{K})} = 10^{-0{,}933/2}$$
 
-Avec la lecture directe de l'annexe que suggère l'énoncé (ordonnée du point comparée à la droite (4), soit $\log r \leqslant \log K_4$) :
+$$\boxed{\left(\frac{P_{\mathrm{H_2O}}}{P_{\mathrm{H_2}}}\right)_{\max} = \sqrt{K_4(900\ \mathrm{K})} \approx 0{,}341}$$
 
-$$r \leqslant 10^{-0{,}933}$$
-
-$$\boxed{\left(\frac{P_{\mathrm{H_2O}}}{P_{\mathrm{H_2}}}\right)_{\max} = \sqrt{K_4} \approx 0{,}341 \quad \text{(équation (4) telle qu'écrite)} \qquad \text{ou} \qquad 0{,}117 \quad \text{(droite (4) lue comme frontière)}}$$
-
-Les deux valeurs diffèrent parce que l'énoncé n'est pas cohérent sur ce point (question III.4) ; sur une copie, on annonce la lecture retenue. Dans les deux cas la conclusion pratique est la même : le dihydrogène doit rester en large excès, ce qui impose de l'introduire en grande quantité ou, industriellement, d'évacuer la vapeur d'eau par un balayage de dihydrogène sec.
+Remarque sur l'énoncé. Si l'on lit l'annexe comme l'énoncé y invite à la question III.4, en comparant directement l'ordonnée $\log r$ du point à la droite (4), on écrit $\log r \leqslant \log K_4$ et l'on trouve $r \leqslant 10^{-0{,}933} \approx 0{,}117$. Cette seconde valeur n'est pas cohérente avec la relation $K_4 = r_{\text{éq}}^{\,2}$ de la question III.2 : elle revient à traiter la loi fournie comme celle du rapport d'équilibre lui-même. La valeur retenue ici, $0{,}341$, est un choix du corrigé face à cette incohérence de l'énoncé : c'est celle qui découle des équations et des lois telles que l'énoncé les écrit ; sur une copie, on signale l'écart en une phrase. Dans les deux cas la conclusion pratique est la même : le dihydrogène doit rester en large excès, ce qui impose de l'introduire en grande quantité ou, industriellement, d'évacuer la vapeur d'eau par un balayage de dihydrogène sec.
 
 ### Question III.8 — État physique du tungstène obtenu
 
@@ -457,6 +459,8 @@ Question sans sous-numéro, en trois points.
 *Pourquoi un gaz inerte plutôt que l'air.* L'air contient du dioxygène. À la température du filament (de l'ordre de 2500 à 3000 K), le tungstène serait oxydé très rapidement : le filament brûlerait et se romprait presque aussitôt, l'oxyde formé se déposant sur le verre. Une réaction attendue, vers le degré d'oxydation maximal :
 
 $$\boxed{\mathrm{2\,W(s) + 3\,O_2(g) = 2\,WO_3(s)}}$$
+
+(l'oxyde, volatil à cette température, se condense ensuite sur le verre plus froid)
 
 Un gaz inerte (argon, krypton, diazote) ne réagit pas avec le métal.
 

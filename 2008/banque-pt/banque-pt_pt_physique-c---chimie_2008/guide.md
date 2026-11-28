@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** Le tungstène, de l'atome à la lampe à incandescence. L'épreuve de Physique C dure 4 heures pour deux problèmes de même barème, à rendre sur deux copies séparées ; le problème de chimie est prévu pour 2 heures, **calculatrice autorisée**, résultats numériques à donner avec trois chiffres significatifs. Il comporte 42 questions en quatre parties largement indépendantes. Un feuillet mobile est à rendre avec la copie de chimie : le diagramme potentiel-pH partiel du tungstène, à compléter. Une annexe donne les droites $\log K = f(10^3/T)$ des quatre réactions de réduction des oxydes.
@@ -20,7 +22,7 @@
 **Gestion du temps.** Environ 15 minutes pour la partie I, 45 minutes pour la partie II (feuillet compris), 30 minutes pour la partie III et 30 minutes pour la partie IV. Lire tout le sujet d'abord : la fin de la partie IV contient des questions courtes et rapides (IV.2.1 à IV.3.2, IV.4.1).
 
 > [!JURY]
-> Le rapport 2008 estime que le temps consacré au problème de chimie est resté raisonnable, sans superflu, et que sa résolution complète demandait une implication plus profonde, partagée par de rares candidats ; la moyenne est au niveau des années précédentes. Il salue la ténacité de ceux qui ont lu tout le sujet et sont allés chercher des points en fin de problème, et juge peu judicieux le choix de quelques candidats de ne pas accorder ses deux heures à la chimie. Points forts relevés : la cristallographie, les réactions d'oxydoréduction et leurs demi-équations, l'écriture des réactions simples, le calcul des constantes d'équilibre dans les cas classiques. Points faibles : le tracé des frontières et l'indication des domaines dans un diagramme potentiel-pH, la thermodynamique chimique en général, le calcul des potentiels standard, le sens physique des signes dans une équation différentielle. La rédaction progresse peu, mais la présentation (paragraphes, résultats encadrés, dessins soignés) retient l'attention de davantage de candidats.
+> Le rapport 2008 estime que le temps consacré au problème de chimie est resté raisonnable, sans superflu, et que sa résolution complète demandait une implication plus profonde, partagée par de rares candidats ; la moyenne est au niveau des années précédentes. Il salue la ténacité de ceux qui ont lu tout le sujet et sont allés chercher des points en fin de problème, et juge peu judicieux le choix de quelques candidats de ne pas accorder ses deux heures à la chimie. Points forts relevés : la cristallographie, les réactions d'oxydoréduction et leurs demi-équations, l'écriture des réactions simples, le calcul des constantes d'équilibre dans les cas classiques. Points faibles : le tracé des frontières et l'indication des domaines dans un diagramme potentiel-pH, la thermodynamique chimique en général, le calcul des potentiels standard, le sens physique des signes dans une équation différentielle. La rédaction progresse peu, mais le jury note un intérêt pour la présentation (paragraphes, formules encadrées, dessins parfois soignés).
 
 [Sujet officiel (archive)](https://www.banquept.fr/documents/2008/phys_c_2008.zip) · [Rapport du jury](https://www.banquept.fr/documents/ecrit/rapport/2008/rapport_phys_c_ecrit_2008.pdf)
 
@@ -40,7 +42,7 @@ Le sujet officiel est une archive de deux fichiers communs aux deux problèmes d
 
 #### Solution
 
-La masse molaire de l'élément est la moyenne des masses molaires des isotopes, pondérée par les abondances atomiques. L'énoncé ne donne pas les masses isotopiques : le corrigé assimile la masse molaire de l'isotope de nombre de masse $A$ à $A\ \mathrm{g\cdot mol^{-1}}$ (l'écart réel est inférieur à $0{,}1\ \%$). La somme des abondances vaut bien $100{,}0\ \%$.
+La masse molaire de l'élément est la moyenne des masses molaires des isotopes, pondérée par les abondances atomiques. L'énoncé ne donne pas les masses isotopiques : le corrigé assimile la masse molaire de l'isotope de nombre de masse $A$ à $A\ \mathrm{g\cdot mol^{-1}}$ (l'écart réel est inférieur à $0{,}1\ \%$ ; la valeur tabulée, $183{,}84\ \mathrm{g\cdot mol^{-1}}$, tient compte du défaut de masse, que l'énoncé ne permet pas d'évaluer). La somme des abondances vaut bien $100{,}0\ \%$.
 
 $$M = \sum_i x_i\,A_i$$
 
@@ -405,7 +407,7 @@ $$E_4 = E^\circ_4 + 0{,}030\,\log C_0 - 0{,}120\,\mathrm{pH}$$
 
 $$\boxed{E_4 = 0{,}212 - 0{,}120\,\mathrm{pH} \quad (\text{en V, pour } \mathrm{pH} > 4{,}03)}$$
 
-Contrôle de continuité à $\mathrm{pH} = 4{,}025$ : la droite (7) donne $-0{,}030 - 0{,}060 \times 4{,}025 = -0{,}2715\ \mathrm{V}$ et la droite (4) donne $0{,}2115 - 0{,}120 \times 4{,}025 = -0{,}2715\ \mathrm{V}$. Les deux frontières se raccordent sur la verticale, au point où celle-ci s'arrête sur le feuillet (lu vers $-0{,}26\ \mathrm{V}$).
+Contrôle de continuité à $\mathrm{pH} = 4{,}025$ : la droite (7) donne $-0{,}030 - 0{,}060 \times 4{,}025 = -0{,}2715\ \mathrm{V}$ et la droite (4) donne $0{,}2115 - 0{,}120 \times 4{,}025 = -0{,}2715\ \mathrm{V}$. Les deux frontières se raccordent sur la verticale, au point où celle-ci s'arrête sur le feuillet (lu vers $-0{,}25\ \mathrm{V}$, le tracé du feuillet étant approximatif).
 
 > [!METHODE]
 > Vérifier la continuité : en $\mathrm{pH} = 4{,}03$, les frontières (7) et (4) doivent donner le même potentiel, puisqu'elles se rejoignent sur la verticale. Ce contrôle détecte toute erreur de signe sur le terme en $\mathrm{p}K_6$.
@@ -740,6 +742,10 @@ $$\boxed{\mathrm{3\,W_4O_{11}(s) = W_{10}O_{29}(s) + 2\,WO_2(s)}}$$
 
 ![Figure 3 — Droites de l'annexe, domaines des espèces du tungstène, verticale T = 900 K et croisement des droites (2) et (3)](figures/droites-log-k-reduction.svg)
 
+La figure 3 reproduit l'annexe : les domaines y sont placés entre les droites $\log K_i$, comme l'énoncé invite à la lire. Avec les équations telles qu'elles sont écrites, les frontières exactes en $\log r$ sont les droites $\log K_i/\nu_i$ (question III.4) : à 900 K, l'ordre des domaines est inchangé, de même que l'abscisse du croisement de (2) et (3) ; seules les ordonnées des frontières (2), (3) et (4) changent.
+
+Sur la figure, à gauche du croisement des droites (1) et (2), vers $10^3/T \approx 0{,}84\ \mathrm{K^{-1}}$, la droite (2) passe au-dessus de la droite (1) : dans cette lecture, c'est $\mathrm{W_{10}O_{29}}$ qui n'aurait plus de domaine. Ce croisement dépend de la lecture retenue (les droites $\log K_1$ et $\log K_2/3$ ne se coupent pas dans l'intervalle tracé) ; l'énoncé ne le demande pas.
+
 > [!JURY]
 > Le rapport signale que la notion de dismutation, ici dans un autre domaine que celui de la partie précédente, n'est guère comprise.
 
@@ -778,20 +784,16 @@ Les cinq solides $\mathrm{WO_3}$, $\mathrm{W_{10}O_{29}}$, $\mathrm{W_4O_{11}}$,
 
 Le tungstène métallique est l'espèce réduite du couple (4), le plus bas des quatre : il n'est obtenu que si le point représentatif de l'état final est au-dessous de la frontière (4), les trois autres étant alors franchies.
 
-Avec l'équation (4) telle qu'elle est écrite ($K_4 = r_{\text{éq}}^{\,2}$, question III.2), la condition $\mathcal{A}_4 \geqslant 0$ s'écrit $r^2 \leqslant K_4$ :
+D'après la question III.2, l'équation (4) telle qu'elle est écrite donne $K_4 = r_{\text{éq}}^{\,2}$ ; la condition $\mathcal{A}_4 \geqslant 0$ s'écrit donc $r^2 \leqslant K_4$, avec $\log K_4(900\ \mathrm{K}) = -0{,}933$ :
 
 $$r \leqslant \sqrt{K_4(900\ \mathrm{K})} = 10^{-0{,}933/2}$$
 
-Avec la lecture directe de l'annexe que suggère l'énoncé (ordonnée du point comparée à la droite (4), soit $\log r \leqslant \log K_4$) :
+$$\boxed{\left(\frac{P_{\mathrm{H_2O}}}{P_{\mathrm{H_2}}}\right)_{\max} = \sqrt{K_4(900\ \mathrm{K})} \approx 0{,}341}$$
 
-$$r \leqslant 10^{-0{,}933}$$
-
-$$\boxed{\left(\frac{P_{\mathrm{H_2O}}}{P_{\mathrm{H_2}}}\right)_{\max} = \sqrt{K_4} \approx 0{,}341 \quad \text{(équation (4) telle qu'écrite)} \qquad \text{ou} \qquad 0{,}117 \quad \text{(droite (4) lue comme frontière)}}$$
-
-Les deux valeurs diffèrent parce que l'énoncé n'est pas cohérent sur ce point (question III.4) ; sur une copie, on annonce la lecture retenue. Dans les deux cas la conclusion pratique est la même : le dihydrogène doit rester en large excès, ce qui impose de l'introduire en grande quantité ou, industriellement, d'évacuer la vapeur d'eau par un balayage de dihydrogène sec.
+Remarque sur l'énoncé. Si l'on lit l'annexe comme l'énoncé y invite à la question III.4, en comparant directement l'ordonnée $\log r$ du point à la droite (4), on écrit $\log r \leqslant \log K_4$ et l'on trouve $r \leqslant 10^{-0{,}933} \approx 0{,}117$. Cette seconde valeur n'est pas cohérente avec la relation $K_4 = r_{\text{éq}}^{\,2}$ de la question III.2 : elle revient à traiter la loi fournie comme celle du rapport d'équilibre lui-même. La valeur retenue ici, $0{,}341$, est un choix du corrigé face à cette incohérence de l'énoncé : c'est celle qui découle des équations et des lois telles que l'énoncé les écrit ; sur une copie, on signale l'écart en une phrase. Dans les deux cas la conclusion pratique est la même : le dihydrogène doit rester en large excès, ce qui impose de l'introduire en grande quantité ou, industriellement, d'évacuer la vapeur d'eau par un balayage de dihydrogène sec.
 
 > [!PIEGE]
-> Les deux lectures donnent $0{,}341$ et $0{,}117$ : un facteur 3. Ne pas donner une valeur sans dire à quelle relation entre $K_4$ et le rapport elle correspond.
+> Lire $-0{,}933$ sur la droite (4) et répondre $10^{-0{,}933} = 0{,}117$ oublie l'exposant 2 de la question III.2 : avec l'équation (4) telle qu'elle est écrite, le rapport maximal est $\sqrt{K_4} = 0{,}341$, près de trois fois plus grand. Écrire la relation entre $K_4$ et le rapport avant de donner la valeur.
 
 ### Question III.8
 
@@ -821,6 +823,8 @@ Question sans sous-numéro, en trois points.
 *Pourquoi un gaz inerte plutôt que l'air.* L'air contient du dioxygène. À la température du filament (de l'ordre de 2500 à 3000 K), le tungstène serait oxydé très rapidement : le filament brûlerait et se romprait presque aussitôt, l'oxyde formé se déposant sur le verre. Une réaction attendue, vers le degré d'oxydation maximal :
 
 $$\boxed{\mathrm{2\,W(s) + 3\,O_2(g) = 2\,WO_3(s)}}$$
+
+(l'oxyde, volatil à cette température, se condense ensuite sur le verre plus froid)
 
 Un gaz inerte (argon, krypton, diazote) ne réagit pas avec le métal.
 
@@ -1069,7 +1073,7 @@ Le diiode assure donc un transport cyclique du tungstène de la paroi vers le fi
 - *Thermodynamique chimique* : relation de Van't Hoff, $\log K$ affine en $1/T$ si $\Delta_r H^\circ$ est constante ; $\mathcal{A} = -(\partial G/\partial\xi)_{T,P} = RT\ln(K/Q)$ et $\mathcal{A}\,\mathrm{d}\xi \geqslant 0$ ; avec des solides purs, $\mathcal{A} \neq 0$ entraîne la rupture d'équilibre, d'où des domaines d'existence ; variance pour distinguer déplacement et rupture.
 - *Bilan de matière différentiel* : algébriser avant d'intégrer ($\mathrm{d}m < 0$ pour une perte).
 
-**Résultats numériques.** $M(\mathrm{W}) \approx 183{,}9\ \mathrm{g\cdot mol^{-1}}$ ; $[\mathrm{Xe}]\,4f^{14}\,5d^4\,6s^2$ ; $r \approx 137\ \mathrm{pm}$, $C \approx 0{,}680$, $\rho \approx 19{,}4\ \mathrm{g\cdot cm^{-3}}$. Frontière $\mathrm{WO_3/WO_4^{2-}}$ à $\mathrm{pH} = 4{,}03$ ; $E^\circ_7 = -0{,}030\ \mathrm{V}$, $E^\circ_4 \approx 0{,}392\ \mathrm{V}$, $E^\circ_5 \approx 0{,}0512\ \mathrm{V}$ ; frontières $E_4 = 0{,}212 - 0{,}120\,\mathrm{pH}$ et $E_5 = -0{,}009 - 0{,}080\,\mathrm{pH}$ ; dismutation de $\mathrm{WO_2}$ au-delà de $\mathrm{pH} = 5{,}51$. $\Delta_r H^\circ_1 \approx 62{,}5\ \mathrm{kJ\cdot mol^{-1}}$ ; $\mathrm{W_4O_{11}}$ instable pour $10^3/T > 1{,}17\ \mathrm{K^{-1}}$ ; à 900 K, rapport maximal $P_{\mathrm{H_2O}}/P_{\mathrm{H_2}}$ de $0{,}341$ (équation (4) telle qu'écrite) ou $0{,}117$ (droite (4) lue comme frontière). $B \approx -4{,}60\cdot10^{4}\ \mathrm{K}$, $A \approx 7{,}98$ ; $P(2600\ \mathrm{K}) \approx 1{,}92\cdot10^{-10}\ \mathrm{bar}$, $P(3100\ \mathrm{K}) \approx 1{,}37\cdot10^{-7}\ \mathrm{bar}$ ; $v_S \approx 5{,}41\cdot10^{-8}\ \mathrm{g\cdot cm^{-2}\cdot s^{-1}}$ ; $\tau \approx 4{,}45\cdot10^{6}\ \mathrm{s}$, soit environ $1{,}24\cdot10^{3}$ heures ; variance 2 pour la lampe à iode.
+**Résultats numériques.** $M(\mathrm{W}) \approx 183{,}9\ \mathrm{g\cdot mol^{-1}}$ ; $[\mathrm{Xe}]\,4f^{14}\,5d^4\,6s^2$ ; $r \approx 137\ \mathrm{pm}$, $C \approx 0{,}680$, $\rho \approx 19{,}4\ \mathrm{g\cdot cm^{-3}}$. Frontière $\mathrm{WO_3/WO_4^{2-}}$ à $\mathrm{pH} = 4{,}03$ ; $E^\circ_7 = -0{,}030\ \mathrm{V}$, $E^\circ_4 \approx 0{,}392\ \mathrm{V}$, $E^\circ_5 \approx 0{,}0512\ \mathrm{V}$ ; frontières $E_4 = 0{,}212 - 0{,}120\,\mathrm{pH}$ et $E_5 = -0{,}009 - 0{,}080\,\mathrm{pH}$ ; dismutation de $\mathrm{WO_2}$ au-delà de $\mathrm{pH} = 5{,}51$. $\Delta_r H^\circ_1 \approx 62{,}5\ \mathrm{kJ\cdot mol^{-1}}$ ; $\mathrm{W_4O_{11}}$ instable pour $10^3/T > 1{,}17\ \mathrm{K^{-1}}$ ; à 900 K, rapport maximal $P_{\mathrm{H_2O}}/P_{\mathrm{H_2}} = \sqrt{K_4} \approx 0{,}341$ ($0{,}117$ si l'on lit la droite (4) comme frontière, lecture non cohérente avec la question III.2). $B \approx -4{,}60\cdot10^{4}\ \mathrm{K}$, $A \approx 7{,}98$ ; $P(2600\ \mathrm{K}) \approx 1{,}92\cdot10^{-10}\ \mathrm{bar}$, $P(3100\ \mathrm{K}) \approx 1{,}37\cdot10^{-7}\ \mathrm{bar}$ ; $v_S \approx 5{,}41\cdot10^{-8}\ \mathrm{g\cdot cm^{-2}\cdot s^{-1}}$ ; $\tau \approx 4{,}45\cdot10^{6}\ \mathrm{s}$, soit environ $1{,}24\cdot10^{3}$ heures ; variance 2 pour la lampe à iode.
 
 **Points signalés par le jury.** Masse molaire donnée en unité de masse atomique ; règles de remplissage non nommées ; définitions de la compacité et de la masse volumique mal connues ; confusion entre équation d'oxydoréduction et équation acido-basique ; nombre stœchiométrique de $\mathrm{WO_3}$ oublié ; domaine de l'acide placé du mauvais côté ; potentiels standard additionnés comme les demi-équations ; diagramme rarement complété correctement, domaines d'immunité, de corrosion et de passivation absents ; dismutation mal comprise, en solution comme en phase sèche ; relation de Van't Hoff et affinité chimique mal utilisées ; signe erroné dans le bilan de masse du filament ; variance fantaisiste, déplacement et rupture d'équilibre mal compris.
 

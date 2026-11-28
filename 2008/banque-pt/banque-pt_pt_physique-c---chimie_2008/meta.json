@@ -61,7 +61,7 @@
       "IV.4.3",
       "IV.4.4"
     ],
-    "precision": "Énoncé numérisé lu en image : garde commune p. 1, problème de chimie p. 2 à 8 du PDF de 20 pages (annexe p. 8), et feuillet mobile n° 1 (p. 1 du document-réponse) ; les pages du problème de thermodynamique ne sont pas traitées ici. 42 questions, toutes traitées, repérées par le numéro de partie suivi du numéro de l'énoncé ; deux questions sans sous-numéro dans l'énoncé : l'écriture des cinq demi-équations en tête de la section II.2 (repère II.2) et la question IV.1. Rapport du jury de Physique C de 5 pages, chimie p. 1 à 3. Question I.1.1 : l'énoncé ne donne pas les masses isotopiques ; le corrigé assimile la masse molaire de chaque isotope à son nombre de masse, choix signalé à sa place. Lectures sur le feuillet mobile (verticale vers pH 4, sommet du triangle vers pH 5,5 et −0,45 V) et sur l'annexe (croisement des droites (2) et (3) vers 1,17) recoupées par le calcul. Partie III : l'énoncé donne des lois log K pour des équations écrites avec 1, 3, 3 et 2 moles de dihydrogène mais fait lire l'annexe comme si son ordonnée, log(P(H2O)/P(H2)), se comparait directement à log K ; l'incohérence est signalée aux questions III.4 et III.7, et la question III.7 donne les deux valeurs du rapport maximal (0,341 avec l'équation telle qu'écrite, 0,117 avec la lecture directe de la droite). Le feuillet complété est reproduit par la figure 2."
+    "precision": "Énoncé numérisé lu en image : garde commune p. 1, problème de chimie p. 2 à 8 du PDF de 20 pages (annexe p. 8), et feuillet mobile n° 1 (p. 1 du document-réponse) ; les pages du problème de thermodynamique ne sont pas traitées ici. 42 questions, toutes traitées, repérées par le numéro de partie suivi du numéro de l'énoncé ; deux questions sans sous-numéro dans l'énoncé : l'écriture des cinq demi-équations en tête de la section II.2 (repère II.2) et la question IV.1. Rapport du jury de Physique C de 5 pages, chimie p. 1 à 3. Question I.1.1 : l'énoncé ne donne pas les masses isotopiques ; le corrigé assimile la masse molaire de chaque isotope à son nombre de masse, choix signalé à sa place. Lectures sur le feuillet mobile (verticale vers pH 4, sommet du triangle vers pH 5,5 et −0,45 V) et sur l'annexe (croisement des droites (2) et (3) vers 1,17) recoupées par le calcul. Partie III : l'énoncé donne des lois log K pour des équations écrites avec 1, 3, 3 et 2 moles de dihydrogène mais fait lire l'annexe comme si son ordonnée, log(P(H2O)/P(H2)), se comparait directement à log K ; l'incohérence est signalée aux questions III.4 et III.7, et la question III.7 retient 0,341 (équation (4) telle qu'écrite, relation de la question III.2) et mentionne en remarque 0,117 (lecture directe de la droite). Le feuillet complété est reproduit par la figure 2."
   },
   "figures": [
     {
@@ -93,6 +93,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Rédaction des corrigés brut et guidé des 42 questions et de trois figures, à partir de l'énoncé, du feuillet mobile, de l'annexe et du rapport du jury ; applications numériques recalculées, lectures du feuillet et de l'annexe recoupées par le calcul, encadrés JURY relus contre le rapport."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application de la seconde relecture, chaque défaut revérifié contre l'énoncé, le feuillet, l'annexe et le rapport. Question III.7 (brut et guidé) : une seule valeur encadrée, 0,341, la valeur 0,117 passant en remarque comme lecture non cohérente avec la question III.2 ; encadré PIEGE de III.7, Bilan du guidé et couverture.precision alignés. Question III.5 : phrase précisant la lecture suivie par la figure 3 et remarque sur le croisement des droites (1) et (2) ; étiquette du croisement de la figure 3 ramenée à 855 K. Question II.2.4 : lecture du feuillet corrigée à −0,25 V. Question I.1.1 : valeur tabulée de la masse molaire ajoutée. Question IV.1 : précision sur la volatilité de l'oxyde. Encadré JURY de présentation réaligné sur le rapport ; les 24 encadrés JURY recontrôlés, aucun requalifié."
     }
   ]
 }
