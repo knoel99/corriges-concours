@@ -1,0 +1,111 @@
+{
+  "slug": "banque-pt_pt_sciences-industrielles-b_2023",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Sciences industrielles B",
+    "annee": 2023
+  },
+  "questions": 56,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2023/si_b_2023_pt.pdf",
+    "sujet_sha256": "9ada2b696d11038ed903a4f54973ea84ea2ab4760e6ff0aea6df0610313efff2",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2023/rapport_si_b_ecrit_2023.pdf",
+    "rapport_sha256": "169ce634956627f75ff458e19523d530c82d5a1f7b4c2607f61551281bd337f5"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "56"
+    ],
+    "precision": "Les 54 pages du PDF ont été lues en image : 15 pages de texte, les annexes A à P (18 pages) et le cahier réponse de 11 pages ; le rapport du jury (3 pages) a été lu. Le sujet pose 56 questions, toutes traitées. Le tracé de la question 3 est reconstruit à l'échelle dans une figure originale à partir des coordonnées des points du cahier réponse, et le graphique de la question 31 est redessiné ; les fonds de l'énoncé ne sont pas repris. Trois réponses dépendent d'une interprétation signalée dans le texte : décompte des équations (question 6), ordre de l'équation simplifiée (question 22), tri des empilements (question 36, colonne ΔF% du cahier réponse incohérente avec l'effort presseur calculé)."
+  },
+  "figures": [
+    {
+      "fichier": "figures/q3-configuration-porte-ouverte.svg",
+      "question": "3",
+      "legende": "Question 3 : mécanisme porte fermée (gris) et porte ouverte (couleur), reconstruit à l'échelle à partir des points du cahier réponse"
+    },
+    {
+      "fichier": "figures/q31-pression-vitesse.svg",
+      "question": "31",
+      "legende": "Question 31 : les trois configurations dans le plan vitesse de glissement, pression de contact, avec les trois limites"
+    },
+    {
+      "fichier": "figures/q43-arbre-chargement.svg",
+      "question": "43",
+      "legende": "Questions 37 à 46 : actions extérieures sur l'arbre (A3) et sollicitations dans chaque tronçon"
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions pour les 56 questions à partir du sujet, des annexes, du cahier réponse et du rapport du jury. Applications numériques recalculées, construction de la question 3 reconstituée par le calcul et trois figures originales produites."
+    }
+  ]
+}

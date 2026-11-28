@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 500" font-family="sans-serif" font-size="13">
+<rect width="720" height="500" fill="#ffffff"/>
+<text x="20" y="24" font-size="15" font-weight="bold">Question 31 : pression de contact et vitesse de glissement</text>
+<rect x="80.0" y="202.0" width="428.6" height="228.0" fill="#e8f5e9"/>
+<line x1="165.7" y1="430" x2="165.7" y2="435" stroke="#000000"/><text x="165.7" y="450" text-anchor="middle">0,2</text>
+<line x1="251.4" y1="430" x2="251.4" y2="435" stroke="#000000"/><text x="251.4" y="450" text-anchor="middle">0,4</text>
+<line x1="337.1" y1="430" x2="337.1" y2="435" stroke="#000000"/><text x="337.1" y="450" text-anchor="middle">0,6</text>
+<line x1="422.9" y1="430" x2="422.9" y2="435" stroke="#000000"/><text x="422.9" y="450" text-anchor="middle">0,8</text>
+<line x1="508.6" y1="430" x2="508.6" y2="435" stroke="#000000"/><text x="508.6" y="450" text-anchor="middle">1,0</text>
+<line x1="594.3" y1="430" x2="594.3" y2="435" stroke="#000000"/><text x="594.3" y="450" text-anchor="middle">1,2</text>
+<line x1="680.0" y1="430" x2="680.0" y2="435" stroke="#000000"/><text x="680.0" y="450" text-anchor="middle">1,4</text>
+<line x1="75" y1="354.0" x2="80" y2="354.0" stroke="#000000"/><text x="71" y="358.0" text-anchor="end">5</text>
+<line x1="75" y1="278.0" x2="80" y2="278.0" stroke="#000000"/><text x="71" y="282.0" text-anchor="end">10</text>
+<line x1="75" y1="202.0" x2="80" y2="202.0" stroke="#000000"/><text x="71" y="206.0" text-anchor="end">15</text>
+<line x1="75" y1="126.0" x2="80" y2="126.0" stroke="#000000"/><text x="71" y="130.0" text-anchor="end">20</text>
+<line x1="75" y1="50.0" x2="80" y2="50.0" stroke="#000000"/><text x="71" y="54.0" text-anchor="end">25</text>
+<line x1="80" y1="430" x2="680" y2="430" stroke="#000000" stroke-width="1.5"/><line x1="80" y1="430" x2="80" y2="50" stroke="#000000" stroke-width="1.5"/>
+<text x="680" y="470" text-anchor="end">Vg (m/s)</text><text x="40" y="40">p0 (MPa)</text>
+<polyline fill="none" stroke="#000000" stroke-width="2" points="148.6,50.0 155.2,83.6 161.9,111.7 168.5,135.6 175.1,156.1 181.8,174.0 188.4,189.7 195.1,203.6 201.7,215.9 208.4,227.0 215.0,237.0 221.6,246.0 228.3,254.3 234.9,261.8 241.6,268.7 248.2,275.1 254.9,281.0 261.5,286.4 268.1,291.5 274.8,296.2 281.4,300.6 288.1,304.8 294.7,308.6 301.4,312.3 308.0,315.7 314.6,318.9 321.3,322.0 327.9,324.9 334.6,327.6 341.2,330.2 347.9,332.7 354.5,335.1 361.1,337.3 367.8,339.5 374.4,341.5 381.1,343.5 387.7,345.3 394.4,347.1 401.0,348.8 407.6,350.5 414.3,352.1 420.9,353.6 427.6,355.0 434.2,356.4 440.9,357.8 447.5,359.1 454.1,360.4 460.8,361.6 467.4,362.7 474.1,363.9 480.7,365.0 487.4,366.0 494.0,367.1 500.6,368.1 507.3,369.0 513.9,370.0 520.6,370.9 527.2,371.7 533.9,372.6 540.5,373.4 547.1,374.2 553.8,375.0 560.4,375.8 567.1,376.5 573.7,377.2 580.4,377.9 587.0,378.6 593.6,379.3 600.3,379.9 606.9,380.5 613.6,381.2 620.2,381.8 626.9,382.4 633.5,382.9 640.1,383.5 646.8,384.0 653.4,384.6 660.1,385.1 666.7,385.6 673.4,386.1 680.0,386.6"/>
+<text x="272.9" y="247.6">limite : p0 × Vg = 4 MPa·m/s</text>
+<line x1="80.0" y1="202.0" x2="680.0" y2="202.0" stroke="#d32f2f" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="542.9" y="196.0" fill="#d32f2f">p0 max = 15 MPa</text>
+<line x1="508.6" y1="430.0" x2="508.6" y2="50.0" stroke="#d32f2f" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="514.6" y="171.6" fill="#d32f2f">Vg max = 1 m/s</text>
+<text x="221.4" y="72.8" fill="#d32f2f" font-size="12">L3 : 0,06 m/s ; 21,3 MPa (pression excessive)</text>
+<text x="221.4" y="90.8" fill="#2e7d32" font-size="12">L2 : 0,23 m/s ; 5,7 MPa (retenue)</text>
+<text x="221.4" y="108.8" fill="#d32f2f" font-size="12">L1 : 1,27 m/s ; 1,1 MPa (vitesse excessive)</text>
+<rect x="619.8" y="408.8" width="9" height="9" fill="#d32f2f"/>
+<text x="616.3" y="403.3" fill="#d32f2f" font-weight="bold">L1</text>
+<rect x="174.1" y="338.9" width="9" height="9" fill="#2e7d32"/>
+<text x="188.6" y="348.4" fill="#2e7d32" font-weight="bold">L2</text>
+<rect x="102.5" y="101.7" width="9" height="9" fill="#d32f2f"/>
+<text x="99.0" y="128.2" fill="#d32f2f" font-weight="bold">L3</text>
+<text x="208.6" y="405.7" fill="#2e7d32" font-size="12">zone admissible : L2 retenue, L1 et L3 écartées</text>
+</svg>

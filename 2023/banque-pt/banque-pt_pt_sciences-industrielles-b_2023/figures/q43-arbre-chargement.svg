@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 470" font-family="sans-serif" font-size="13">
+<rect width="760" height="470" fill="#ffffff"/>
+<defs><marker id="f" markerWidth="9" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8 z" fill="#d32f2f"/></marker><marker id="k" markerWidth="9" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8 z" fill="#1a4fa0"/></marker></defs>
+<text x="20" y="24" font-size="15" font-weight="bold">Questions 37 à 46 : arbre (A3), actions extérieures et sollicitations par tronçon</text>
+<line x1="90" y1="200" x2="680" y2="200" stroke="#000000" stroke-width="5"/>
+<line x1="250" y1="200" x2="250" y2="245" stroke="#000000" stroke-width="2"/><line x1="236" y1="245" x2="264" y2="245" stroke="#000000" stroke-width="2"/>
+<line x1="410" y1="200" x2="410" y2="100" stroke="#000000" stroke-width="2"/><line x1="396" y1="100" x2="424" y2="100" stroke="#000000" stroke-width="2"/>
+<circle cx="90" cy="200" r="5" fill="#000000"/><text x="86" y="188" font-style="italic" font-weight="bold">A</text>
+<circle cx="250" cy="200" r="5" fill="#000000"/><text x="246" y="188" font-style="italic" font-weight="bold">B</text>
+<circle cx="410" cy="200" r="5" fill="#000000"/><text x="406" y="222" font-style="italic" font-weight="bold">C</text>
+<circle cx="680" cy="200" r="5" fill="#000000"/><text x="676" y="188" font-style="italic" font-weight="bold">D</text>
+<line x1="90" y1="260" x2="90" y2="212" stroke="#1a4fa0" stroke-width="2" marker-end="url(#k)"/><text x="62" y="278" fill="#1a4fa0">Y_A, Z_A</text>
+<line x1="680" y1="260" x2="680" y2="212" stroke="#1a4fa0" stroke-width="2" marker-end="url(#k)"/><text x="610" y="278" fill="#1a4fa0">X_D, Y_D, Z_D</text>
+<line x1="320" y1="186" x2="258" y2="186" stroke="#d32f2f" stroke-width="2" marker-end="url(#f)"/><text x="266" y="178" fill="#d32f2f">−F_r x (précharge)</text>
+<line x1="605" y1="186" x2="670" y2="186" stroke="#d32f2f" stroke-width="2" marker-end="url(#f)"/><text x="602" y="178" fill="#d32f2f">+F_r x</text>
+<line x1="250" y1="300" x2="250" y2="252" stroke="#d32f2f" stroke-width="2" marker-end="url(#f)"/><text x="260" y="292" fill="#d32f2f">I43 : R43 y + T43 z</text>
+<line x1="410" y1="50" x2="410" y2="94" stroke="#d32f2f" stroke-width="2" marker-end="url(#f)"/><text x="420" y="60" fill="#d32f2f">I23 : −R23 y + T23 z</text>
+<line x1="690" y1="200" x2="740" y2="200" stroke="#000000" stroke-width="2" marker-end="url(#k)"/><text x="732" y="192" fill="#000000">x</text>
+<line x1="40" y1="160" x2="40" y2="100" stroke="#000000" stroke-width="2" marker-end="url(#k)"/><text x="46" y="104" fill="#000000">y</text>
+<text x="218" y="230" font-size="12">r43</text><text x="378" y="150" font-size="12">r23</text>
+<line x1="90" y1="319" x2="90" y2="331" stroke="#555555"/>
+<line x1="250" y1="319" x2="250" y2="331" stroke="#555555"/>
+<line x1="410" y1="319" x2="410" y2="331" stroke="#555555"/>
+<line x1="680" y1="319" x2="680" y2="331" stroke="#555555"/>
+<line x1="90" y1="325" x2="680" y2="325" stroke="#555555"/>
+<text x="170" y="319" text-anchor="middle" fill="#555555">l1</text>
+<text x="330" y="319" text-anchor="middle" fill="#555555">l2</text>
+<text x="545" y="319" text-anchor="middle" fill="#555555">l3</text>
+<rect x="90" y="355" width="160" height="100" fill="#f3f3f3" stroke="#555555"/>
+<text x="170" y="375" text-anchor="middle" font-weight="bold">Tronçon 1</text><text x="170" y="397" text-anchor="middle" font-size="12">Ty, Tz, Mfy, Mfz</text>
+<text x="170" y="419" text-anchor="middle" font-size="12" fill="#1a4fa0">cisaillement, flexion</text>
+<rect x="250" y="355" width="160" height="100" fill="#f3f3f3" stroke="#555555"/>
+<text x="330" y="375" text-anchor="middle" font-weight="bold">Tronçon 2</text><text x="330" y="397" text-anchor="middle" font-size="12">N, Ty, Tz, Mt, Mfy, Mfz</text>
+<text x="330" y="419" text-anchor="middle" font-size="12" fill="#1a4fa0">traction, cisaillement,</text>
+<text x="330" y="435" text-anchor="middle" font-size="12" fill="#1a4fa0">torsion, flexion</text>
+<rect x="410" y="355" width="270" height="100" fill="#f3f3f3" stroke="#555555"/>
+<text x="545" y="375" text-anchor="middle" font-weight="bold">Tronçon 3</text><text x="545" y="397" text-anchor="middle" font-size="12">N, Ty, Tz, Mfy, Mfz</text>
+<text x="545" y="419" text-anchor="middle" font-size="12" fill="#1a4fa0">traction, cisaillement, flexion</text>
+</svg>
