@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** Rendement thermique d'une installation motrice à vapeur d'eau (centrale thermique ou nucléaire), sans surchauffe, et gain apporté par un ou deux soutirages de vapeur à la turbine. L'épreuve de Physique C dure 4 heures pour deux problèmes, chimie et thermodynamique, aux barèmes identiques : le sujet conseille d'y consacrer le même temps, soit 2 heures pour cette partie. **Calculatrices autorisées.** Le problème de thermodynamique comporte 17 questions numérotées de 1 à 17, en cinq parties, et un feuillet mobile (tableau n°6) à rendre avec la copie.
@@ -16,7 +18,7 @@
 
 **Notions mobilisées.** Premier principe pour un fluide en écoulement permanent, y compris pour un système à plusieurs entrées et sorties ; second principe pour une évolution réversible ; identité thermodynamique $\mathrm{d}h = T\,\mathrm{d}s + v\,\mathrm{d}P$ ; changement d'état liquide-vapeur d'un corps pur, titre de vapeur, théorème des moments ; rendement d'un moteur.
 
-**Documents à lire.** La table de la vapeur d'eau saturée de la page 17/17 du sujet, dont seules quatre lignes servent (44 °C, 140 °C, 209 °C et 269 °C) : on y lit sans interpolation $h'$, $h''$, $h'' - h'$, $s'$ et $s''$. Les schémas n°1 à n°4 décrivent les installations et doivent être lus avec soin (masses qui circulent dans chaque branche, points notés $\sim 6$, $\sim 8$ et $\sim 1$, états de même température que les points 6, 8 et 1 mais de pression différente). Le schéma n°5 est un diagramme de Mollier sans graduation.
+**Documents à lire.** La table de la vapeur d'eau saturée de la page 17/17 du sujet, dont seules quatre lignes servent (44 °C, 140 °C, 209 °C et 269 °C) : on y lit sans interpolation $h'$, $h''$, $h'' - h'$, $s'$ et $s''$. Les schémas n°1 à n°4 décrivent les installations et doivent être lus avec soin (masses qui circulent dans chaque branche, points notés $\sim 6$, $\sim 8$ et $\sim 1$, liquides de même température que les points 6, 8 et 1, dont la pression peut différer (pression du soutirage à la sortie du réchauffeur)). Le schéma n°5 est un diagramme de Mollier sans graduation.
 
 **Difficulté.** Les calculs sont courts ; ce sont les démonstrations qui sont notées. Presque tout repose sur une seule relation, $\Delta h = w_i + q$, appliquée à un système bien choisi. Les questions 5 et 12 demandent une vraie comparaison de fractions, et la question 16 une méthode sûre (entropie, titre, enthalpie).
 
@@ -327,7 +329,7 @@ Dans ce modèle, où le travail des pompes est négligé, le mode de réintroduc
 **Système.** On isole le système ouvert, en régime permanent, formé du réchauffeur n°1, de la pompe secondaire n°1 et de la jonction située en aval (schéma n°4 du sujet).
 
 - Entrées : masse 1 venant de la pompe principale, à l'enthalpie $h_2$ ; masse $x_1$ soutirée au point 5, à l'enthalpie $h_5$.
-- Sortie : masse $1 + x_1$ au point 6, à l'enthalpie $h_6$.
+- Sortie, après la jonction : masse $1 + x_1$, à l'enthalpie $h_6$ (sur le schéma n°4, le repère 6 est placé juste avant la jonction ; le liquide a la même enthalpie $h_6$ de part et d'autre, puisque le fluide soutiré sort du réchauffeur à la température $T_6$ et que la pompe secondaire est isenthalpe).
 
 Le système est calorifugé ($Q = 0$), sans pièce mobile hormis la pompe dont le travail est négligé ($W_i = 0$). Le premier principe en écoulement permanent donne, comme à la question 3,
 
@@ -341,7 +343,7 @@ $$\boxed{(1 + x_1)\,h_6 = x_1\,h_5 + h_2}$$
 ### Question 10 — Masse soutirée au second réchauffeur
 
 > [!INDICATION]
-> Même système qu'à la question 9, autour du réchauffeur n°2. Attention à la masse de liquide qui y entre par le point 6.
+> Même système qu'à la question 9, autour du réchauffeur n°2. Attention à la masse de liquide qui y entre, après la jonction qui suit le point 6.
 
 > [!INDICATION]
 > Écrire que l'enthalpie entrante, $(1 + x_1)\,h_6 + x_2\,h_7$, est égale à l'enthalpie sortante, puis isoler $x_2$.
@@ -350,8 +352,8 @@ $$\boxed{(1 + x_1)\,h_6 = x_1\,h_5 + h_2}$$
 
 **Système.** On isole le système ouvert, en régime permanent, formé du réchauffeur n°2, de la pompe secondaire n°2 et de la jonction située en aval.
 
-- Entrées : masse $1 + x_1$ venant du point 6, à l'enthalpie $h_6$ ; masse $x_2$ soutirée au point 7, à l'enthalpie $h_7$.
-- Sortie : masse $1 + x_1 + x_2$ (conservation de la masse) au point 8, à l'enthalpie $h_8$.
+- Entrées : masse $1 + x_1$ venant de la jonction située après le point 6, à l'enthalpie $h_6$ ; masse $x_2$ soutirée au point 7, à l'enthalpie $h_7$.
+- Sortie, après la jonction, vers le générateur de vapeur : masse $1 + x_1 + x_2$ (conservation de la masse), à l'enthalpie $h_8$ du point 8.
 
 Le système est calorifugé ($Q = 0$) et ne reçoit pas de travail ($W_i = 0$ : pas de pièce mobile, travail de la pompe négligé). Le fluide soutiré sort du réchauffeur à l'état liquide à la température $T_8$, donc à l'enthalpie $h_8$, que la pompe secondaire n°2 ne modifie pas. Le premier principe en écoulement permanent donne
 
@@ -451,7 +453,7 @@ $$\boxed{\eta_{th,n} = \frac{(h_3 - h_4) + \displaystyle\sum_{k=1}^{n} x_k\,(h_3
 
 Chaque terme ajouté étant positif, le rendement augmente à chaque soutirage supplémentaire : $\eta_{th,n} > \eta_{th,n-1}$, tout en restant inférieur à 1 puisque $h_3 - h_4 < h_3 - h_2$.
 
-**Remarque (hors de ce qui est demandé).** Le rendement ne peut pas dépasser celui de Carnot entre les températures extrêmes $T_3$ et $T_1$ du cycle, $1 - T_1/T_3$. Le gain apporté par chaque nouveau soutirage va donc en diminuant, et il se paie par un réchauffeur et une pompe de plus : le nombre de soutirages est un compromis technique et économique.
+**Remarque (hors de ce qui est demandé).** Le rendement ne peut pas dépasser celui de Carnot entre les températures extrêmes $T_3$ et $T_1$ du cycle, $1 - T_1/T_3$. Les gains successifs ne peuvent donc pas rester importants : ici le premier soutirage apporte 2,6 points de rendement et le second 1,0 point seulement (question 17). Chaque soutirage se paie par un réchauffeur et une pompe de plus : le nombre de soutirages est un compromis technique et économique.
 
 > [!JURY]
 > Le rapport note que la réponse se résume généralement à une affirmation accompagnée d'une discussion technique plus ou moins pertinente, et que peu de candidats proposent une expression correcte du rendement, avec l'indice $n$.
