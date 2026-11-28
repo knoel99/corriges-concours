@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 ## Présentation du sujet
 
 Épreuve de quatre heures, sans calculatrice, formée de deux problèmes indépendants : 81 questions au total, 48 de chimie générale et 33 de chimie organique.
@@ -74,7 +76,7 @@ $$\mathrm{Fe^{3+}(aq) + SCN^-(aq) \rightleftharpoons [Fe(SCN)]^{2+}(aq)}$$
 
 L'équivalence est repérée par **l'apparition d'une coloration rouge sang persistante**, due au complexe $\mathrm{[Fe(SCN)]^{2+}}$. Le fer(III) joue le rôle d'indicateur de fin de réaction. Le milieu est acidifié par l'acide nitrique pour éviter la précipitation de l'hydroxyde de fer(III).
 
-La donnée $\beta = 2{,}2$ se lit $\log\beta = 2{,}2$ : la constante de formation du complexe ($10^{2{,}2}$) est très inférieure à celle de la précipitation de $\mathrm{AgSCN}$ ($10^{11{,}9}$), si bien que le complexe ne se forme qu'une fois l'argent consommé.
+L'énoncé écrit « $\beta = 2{,}2$ ». Nous lisons $\log\beta = 2{,}2$, ordre de grandeur des valeurs tabulées pour ce complexe : c'est une interprétation de la donnée, non la donnée elle-même. Lue à la lettre, elle conduirait ici à la même conclusion qualitative. Avec cette lecture, la constante de formation du complexe ($10^{2{,}2}$) est très inférieure à celle de la précipitation de $\mathrm{AgSCN}$ ($10^{11{,}9}$), si bien que le complexe ne se forme qu'une fois l'argent consommé.
 
 ### Question 1.1.4 — Concentration résiduelle en ions chlorure
 
@@ -149,7 +151,7 @@ alors qu'à l'équivalence exacte $[\mathrm{SCN^-}] = \sqrt{K_s(\mathrm{AgSCN})}
 - Avec trop peu de fer(III), il faut un excès notable de thiocyanate pour voir la teinte : l'équivalence est détectée en retard, $V_{\text{éq}}$ est surestimé et la quantité de chlorure sous-estimée.
 - Avec beaucoup de fer(III), la teinte apparaît pour un excès infime de thiocyanate ; mais la couleur jaune-orangé propre des ions fer(III) gêne l'observation, et si la concentration était très grande le complexe commencerait à se former avant la fin de la précipitation.
 
-Comme la constante de formation du complexe ($10^{2{,}2}$) est très petite devant celle du titrage ($10^{11{,}9}$), le complexe ne concurrence pas la précipitation, et la quantité de thiocyanate immobilisée dans le complexe au virage (de l'ordre de $c_{\text{vis}} \times V \sim 10^{-7}\ \mathrm{mol}$) est négligeable devant $0{,}86\ \mathrm{mmol}$. **Quelques gouttes suffisent et l'erreur systématique reste très faible** ; l'essentiel est d'en mettre toujours la même quantité, modérée.
+Comme la constante de formation du complexe ($10^{2{,}2}$, avec la lecture $\log\beta = 2{,}2$ retenue à la question 1.1.3) est très petite devant celle du titrage ($10^{11{,}9}$), le complexe ne concurrence pas la précipitation, et la quantité de thiocyanate immobilisée dans le complexe au virage (de l'ordre de $c_{\text{vis}} \times V \sim 10^{-7}\ \mathrm{mol}$) est négligeable devant $0{,}86\ \mathrm{mmol}$. **Quelques gouttes suffisent et l'erreur systématique reste très faible** ; l'essentiel est d'en mettre toujours la même quantité, modérée. Cette conclusion dépend de la lecture retenue : avec $\beta = 2{,}2$ pris à la lettre et $[\mathrm{Fe^{3+}}] \sim 10^{-3}\ \mathrm{mol\cdot L^{-1}}$, il faudrait $[\mathrm{SCN^-}] \sim 10^{-3}\ \mathrm{mol\cdot L^{-1}}$ pour voir la teinte, soit un excès de titrant de quelques pour cent, et l'erreur ne serait plus négligeable.
 
 ### Question 1.1.7 — Réaction de Karl Fischer et constante d'équilibre
 
@@ -336,7 +338,7 @@ Les absorbances au maximum sont lues sur le quadrillage de la figure 2 (une grad
 
 Sur la figure 3, les deux bandes fines ont laissé place à une seule bande large, dont le maximum (absorbance $0{,}083$) se situe vers $3400$–$3420\ \mathrm{cm^{-1}}$, nettement plus bas : c'est l'allure du spectre de l'eau liquide. Au-delà de la concentration seuil, les molécules d'eau sont assez nombreuses pour se rencontrer : **elles s'associent entre elles par liaisons hydrogène** (dimères, puis agrégats de type eau liquide). L'état d'agrégation change : on passe de monomères isolés à de l'eau associée, avec l'abaissement et l'élargissement décrits à la question 1.1.12. L'épaulement résiduel vers $3600$–$3650\ \mathrm{cm^{-1}}$ signale les O–H encore libres.
 
-En ordre de grandeur, $c \approx 0{,}083 / (1{,}1\cdot 10^{-2}) \approx 7\ \mathrm{mol\cdot L^{-1}}$, bien au-dessus du seuil de $3{,}2\ \mathrm{mol\cdot L^{-1}}$ (estimation indicative, le coefficient d'absorption n'étant donné que pour la bande à $3640\ \mathrm{cm^{-1}}$).
+En ordre de grandeur, $c \approx 0{,}083 / (1{,}1\cdot 10^{-2}) \approx 7{,}5\ \mathrm{mol\cdot L^{-1}}$, bien au-dessus du seuil de $3{,}2\ \mathrm{mol\cdot L^{-1}}$ (estimation indicative, le coefficient d'absorption n'étant donné que pour la bande à $3640\ \mathrm{cm^{-1}}$).
 
 ### Question 1.1.16 — Effet de la température sur la solubilité de l'eau
 
@@ -419,9 +421,9 @@ $$K_H = \lim_{x_B \to 0}\frac{p_B}{x_B}$$
 
 ![Figure 2 — Points lus sur la figure 4 du sujet et tangente à l'origine : la pente vaut 0,014 par bar, soit une constante de Henry d'environ 70 bar](figures/tangente-a-l-origine-henry.svg)
 
-*Application.* Les premiers points de la figure 4 sont alignés avec l'origine : on lit environ $x_B \approx 0{,}085$ pour $p_B \approx 6{,}5\ \mathrm{bar}$ et $x_B \approx 0{,}16$ pour $p_B \approx 11\ \mathrm{bar}$, soit une pente d'environ $1{,}4\cdot 10^{-2}\ \mathrm{bar^{-1}}$.
+*Application.* Les premiers points de la figure 4 sont pratiquement alignés avec l'origine : on lit environ $x_B \approx 0{,}085$ pour $p_B \approx 6{,}7\ \mathrm{bar}$ et $x_B \approx 0{,}16$ pour $p_B \approx 11{,}5\ \mathrm{bar}$, soit une pente de $1{,}3$ à $1{,}4\cdot 10^{-2}\ \mathrm{bar^{-1}}$, c'est-à-dire $K_H$ entre $70$ et $80\ \mathrm{bar}$.
 
-$$\boxed{K_H(\mathrm{CO_2},\ 50\ ^\circ\mathrm{C}) \approx \frac{11}{0{,}16} \approx 7\cdot 10^{1}\ \mathrm{bar}}$$
+$$\boxed{K_H(\mathrm{CO_2},\ 50\ ^\circ\mathrm{C}) \approx \frac{11{,}5}{0{,}16} \approx 7\cdot 10^{1}\ \mathrm{bar}}$$
 
 La lecture graphique ne donne qu'un chiffre significatif : la figure 5, plus dilatée, conduit pour $50\ ^\circ\mathrm{C}$ à une valeur un peu plus élevée (de l'ordre de $90$ à $100\ \mathrm{bar}$), du même ordre de grandeur. Dans tous les cas $K_H$ est supérieure à la valeur du tableau 1 à $298\ \mathrm{K}$ ($53{,}4\ \mathrm{bar}$), comme attendu à température plus haute (question 1.2.4).
 
@@ -1266,7 +1268,7 @@ Le cycle créé comporte six atomes : le carbone quaternaire, le $\mathrm{CH_2}$
 
 *Étape 3 — hydrolyse acide.* L'énolate de l'aldéhyde est protoné sur le carbone (ou sur l'oxygène, puis tautomérie énol–aldéhyde), ce qui crée le centre $\mathrm{CH{-}CHO}$ ; la $\beta$-dicétone est protonée sous sa forme énol, stabilisée par conjugaison avec le benzoyle et par liaison hydrogène intramoléculaire. On obtient **[3]**.
 
-La formation d'un cycle à six chaînons, intramoléculaire, est rapide ; c'est l'énolate le plus stabilisé et son carbone le plus accessible qui réagissent.
+La formation d'un cycle à six chaînons, intramoléculaire, est rapide. Le carbone qui porte le benzoyle fermerait lui aussi un cycle à six chaînons ; la structure de **[3]** montre que c'est le carbone porteur du prényle qui réagit, ce qui peut s'expliquer par la moindre nucléophilie et l'encombrement du premier, placé entre trois groupes carbonyle.
 
 > [!JURY]
 > Le rapport 2014 résume l'attendu : réaction intramoléculaire, avec comme préalable la déprotonation d'une fonction alcool conjuguée (énol), suivie d'une addition 1,4 sur l'aldéhyde α,β-éthylénique.

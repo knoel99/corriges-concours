@@ -131,6 +131,18 @@
       "date": "2026-11-28",
       "modifications": true,
       "perimetre": "Rédaction des deux éditions pour les 81 questions, à partir du sujet et du rapport du jury. Applications numériques recalculées, classement de Cahn, Ingold et Prelog des deux têtes de pont de [10] contrôlé par un calcul indépendant, trois figures originales."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Application des cinq défauts mineurs de la relecture indépendante, vérifiés contre le sujet, dans le brut et le guidé. 1.1.3 et 1.1.6 : log β = 2,2 présenté comme une lecture de la donnée « β = 2,2 » de l'énoncé. 1.1.15 : 0,083/0,011 = 7,5 mol/L. 1.2.2 : abscisses des points de la figure 4 recalculées d'après les positions des marqueurs dans le PDF (6,7 et 11,5 bar), constante de Henry entre 70 et 80 bar, valeur encadrée inchangée, abscisses de la figure de la tangente alignées. 2.2.5 : phrase finale sur l'énolate le plus stabilisé remplacée. 2.3.1 : étiquette de la figure des profils déplacée sous la courbe, sur deux lignes."
     }
   ]
 }
