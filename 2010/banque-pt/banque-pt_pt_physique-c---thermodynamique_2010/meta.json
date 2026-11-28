@@ -1,0 +1,84 @@
+{
+  "slug": "banque-pt_pt_physique-c---thermodynamique_2010",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique C - Thermodynamique",
+    "annee": 2010
+  },
+  "questions": 28,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2010/phys_c_pt_2010.zip",
+    "sujet_sha256": "7fb6a4f7934bd30ec2fb3ca867da0bac6186b1396829e244c6fb0a4bd30d2f45",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2010/rapport_phys_c_ecrit_2010.pdf",
+    "rapport_sha256": "fe635a35c9683a1b2b919364695b3daf57ea943b7bbe55c65bc35787a6dd2504",
+    "precision": "L'archive phys_c_pt_2010.zip (SHA-256 7fb6a4f7934bd30ec2fb3ca867da0bac6186b1396829e244c6fb0a4bd30d2f45) réunit les deux parties de Physique C. Partie thermodynamique, identifiée par sa page de garde « Epreuve de Physique C - Thermodynamique » (code 10PT20) : fichier interne phys_c_th_pt_2010.pdf, à la racine de l'archive (6 pages PDF, SHA-256 0bfe11c109175d29446d34d26b049ec9c35b7e3e19a410636f3be89d40088865). Il n'y a pas d'annexe séparée : le diagramme enthalpique du R410A est la page 6/6 de ce fichier. L'autre entrée de l'archive, phys_c_ch_pt_2010.zip (SHA-256 87357df080ebbd3ae8bdd7a429756b42aa03e11b2e76605a6ade3b4b87d71e9f), contient la partie chimie, non traitée ici. Rapport commun à Physique C : rapport_phys_c_ecrit_2010.pdf (6 pages PDF, SHA-256 fe635a35c9683a1b2b919364695b3daf57ea943b7bbe55c65bc35787a6dd2504). Empreintes de l'archive, du fichier interne et du rapport identiques à celles de campagnes/x-ens/bilans/sources-epreuves-banque-pt-2008-2016.tsv. Aucun fichier campagnes/x-ens/bilans/constat-*.tsv ne porte sur cette épreuve."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28"
+    ],
+    "precision": "Sujet de 6 pages PDF lues en image : page de garde, énoncé sur les pages 2/6 à 5/6, diagramme (ln P, h) du R410A en page 6/6. 28 questions numérotées de 1 à 28, toutes traitées. Rapport commun à Physique C de 6 pages PDF, partie thermodynamique sur les pages 4 à 6, lues en image. Valeurs lues sur le diagramme de la page 6/6, agrandie pour la lecture : paliers du cycle à 24 bar et 6 bar environ (échelle logarithmique de gauche) ; h1 = 424, h2 = 464, h3 = h4 = 271 kJ/kg (échelle des enthalpies, à 1 ou 2 kJ/kg près) ; liquide saturant 186 kJ/kg et vapeur saturante 421 kJ/kg à 6 bar ; températures 40 °C (palier supérieur confondu avec l'isotherme 40 du domaine diphasé), -9 °C (palier inférieur, juste au-dessus de l'isotherme -10), 68 °C au point 2 (entre les isothermes 60 et 70 de la vapeur, à 2 ou 3 °C près) et -5 °C au point 1 (entre la courbe de rosée et l'isotherme 0) ; titre 0,36 au point 4 (entre les isotitres 0,30 et 0,40, recoupé par le théorème des moments). Les seuils -9 °C et -5 °C cités par la question 21 confirment deux de ces lectures. Applications numériques (questions 10 à 15, 17, 20, 28) refaites par calcul. Choix du corrigé signalés dans le texte : masse volumique de l'eau 1,00 kg/L (question 13, non fournie par l'énoncé) ; températures d'illustration à la question 4 ; épaisseur de givre de 5 mm pour l'ordre de grandeur de la question 28 ; disposition du schéma de la question 8 (évaporateur en bas, compresseur à droite, condenseur en haut, détendeur à gauche), l'énoncé n'indiquant pas le sens de circulation, l'autre disposition compatible étant mentionnée. Questions 7, 23 et 24 : questions ouvertes, l'explication donnée est une proposition argumentée. Question 19 : l'accord entre l'isentrope du gaz parfait et le diagramme est jugé qualitatif ; le segment 1-2 est tracé droit par l'énoncé."
+  },
+  "figures": [
+    {
+      "fichier": "figures/q01-transferts-pompe-a-chaleur.svg",
+      "question": "1",
+      "legende": "Transferts énergétiques d'une pompe à chaleur air/eau : le fluide reçoit un travail du compresseur et de la chaleur de l'air extérieur, il cède de la chaleur à l'eau du circuit de chauffage."
+    },
+    {
+      "fichier": "figures/q08-circuit-pompe-a-chaleur.svg",
+      "question": "8",
+      "legende": "Schéma de la pompe à chaleur complété : évaporateur, compresseur, condenseur, détendeur, états 1 à 4 et sens de circulation du fluide."
+    },
+    {
+      "fichier": "figures/q10-cycle-diagramme-enthalpique.svg",
+      "question": "10",
+      "legende": "Cycle de la pompe à chaleur dans le diagramme (h, log P), reconstruit à partir des valeurs lues sur l'annexe ; courbe de saturation esquissée à partir de quelques points relevés."
+    }
+  ],
+  "date_revision": "2026-11-28",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions (28 questions) à partir du sujet et de son diagramme lus en image et du rapport du jury ; valeurs lues sur le diagramme avec leur origine, applications numériques refaites par calcul, trois figures tracées, encadrés du jury relus contre le rapport."
+    }
+  ]
+}

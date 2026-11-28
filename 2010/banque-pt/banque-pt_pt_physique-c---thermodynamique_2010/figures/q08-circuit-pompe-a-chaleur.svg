@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 430" font-family="sans-serif" font-size="14">
+<rect width="720" height="430" fill="#ffffff"/>
+<rect x="270" y="40" width="180" height="60" rx="6" fill="#fde8e0" stroke="#222" stroke-width="1.5"/>
+<text x="360" y="67" text-anchor="middle" font-weight="bold">Condenseur</text>
+<text x="360" y="86" text-anchor="middle" font-size="13">24 bar</text>
+<rect x="270" y="300" width="180" height="60" rx="6" fill="#e3f0fb" stroke="#222" stroke-width="1.5"/>
+<text x="360" y="327" text-anchor="middle" font-weight="bold">Évaporateur</text>
+<text x="360" y="346" text-anchor="middle" font-size="13">6 bar</text>
+<rect x="520" y="170" width="150" height="60" rx="6" fill="#f3f3f3" stroke="#222" stroke-width="1.5"/>
+<text x="595" y="205" text-anchor="middle" font-weight="bold">Compresseur</text>
+<rect x="30" y="170" width="150" height="60" rx="6" fill="#f3f3f3" stroke="#222" stroke-width="1.5"/>
+<text x="105" y="205" text-anchor="middle" font-weight="bold">Détendeur</text>
+<polyline points="450,330 595,330 595,230" fill="none" stroke="#222" stroke-width="2.5"/>
+<polyline points="595,170 595,70 450,70" fill="none" stroke="#222" stroke-width="2.5"/>
+<polyline points="270,70 105,70 105,170" fill="none" stroke="#222" stroke-width="2.5"/>
+<polyline points="105,230 105,330 270,330" fill="none" stroke="#222" stroke-width="2.5"/>
+<path d="M0,0 l-13,-6 v12 z" fill="#222" transform="translate(535,330) rotate(0)"/>
+<path d="M0,0 l-13,-6 v12 z" fill="#222" transform="translate(595,115) rotate(-90)"/>
+<path d="M0,0 l-13,-6 v12 z" fill="#222" transform="translate(175,70) rotate(180)"/>
+<path d="M0,0 l-13,-6 v12 z" fill="#222" transform="translate(105,285) rotate(90)"/>
+<text x="550" y="355" text-anchor="middle" font-weight="bold" font-size="18" fill="#c62828">1</text>
+<text x="550" y="58" text-anchor="middle" font-weight="bold" font-size="18" fill="#c62828">2</text>
+<text x="160" y="58" text-anchor="middle" font-weight="bold" font-size="18" fill="#c62828">3</text>
+<text x="160" y="355" text-anchor="middle" font-weight="bold" font-size="18" fill="#c62828">4</text>
+<line x1="360.0" y1="40.0" x2="360.0" y2="13.0" stroke="#c62828" stroke-width="3"/>
+<path d="M0,0 l-13,-6 v12 z" fill="#c62828" transform="translate(360.0,5.0) rotate(-90.0)"/>
+<text x="372" y="22" fill="#c62828" font-size="13">chaleur cédée à l'eau du chauffage (30 → 35 °C)</text>
+<line x1="360.0" y1="405.0" x2="360.0" y2="370.0" stroke="#1565c0" stroke-width="3"/>
+<path d="M0,0 l-13,-6 v12 z" fill="#1565c0" transform="translate(360.0,362.0) rotate(-90.0)"/>
+<text x="372" y="395" fill="#1565c0" font-size="13">chaleur reçue de l'air extérieur</text>
+<line x1="715.0" y1="200.0" x2="680.0" y2="200.0" stroke="#222" stroke-width="3"/>
+<path d="M0,0 l-13,-6 v12 z" fill="#222" transform="translate(672.0,200.0) rotate(180.0)"/>
+<text x="606" y="254" text-anchor="start" font-size="13">travail reçu</text>
+<text x="360" y="195" text-anchor="middle" font-size="13">haute pression en haut,</text>
+<text x="360" y="213" text-anchor="middle" font-size="13">basse pression en bas</text>
+</svg>
