@@ -41,6 +41,18 @@
       "perimetre": "Rédaction des 51 réponses aux 38 questions du sujet XUSR et de leurs indications, confrontation avec le rapport officiel. Traitement des pas limites, de l’annulation des écarts, de la convergence de toute la suite, de la condition au bord et du régime initial dans le noyau. Trois figures.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "fournisseur": "claude-code",
+      "modele": null,
+      "famille_modele": "Claude",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-28",
+      "modifications": true,
+      "perimetre": "Seconde relecture des 51 réponses contre le sujet et le rapport officiel. Brut et guidé : calcul de l’égalité et justification de la minoration par τ en 10c ; unicité par le calcul direct en 19 ; continuité et signe sur chaque demi-droite en 22a ; seuils explicites en 1a ; théorème spectral et base propre introduits en 35 ; titres des cinq parties repris du sujet. Guidé seul : présentation du sujet, encadrés JURY (1a, 7, 18c, 22a, 33a) vérifiés dans le rapport, PIEGE (7, 15), METHODE (12b), bilan, indications de 2c et 35 reformulées. Figure 1 : légende sortie du cadre."
     }
   ],
   "couverture": {
@@ -106,5 +118,6 @@
       "date": "2026-11-24",
       "perimetre": "Rédaction des 51 réponses aux 38 questions du sujet XUSR et de leurs indications, confrontation avec le rapport officiel. Traitement des pas limites, de l’annulation des écarts, de la convergence de toute la suite, de la condition au bord et du régime initial dans le noyau. Trois figures."
     }
-  }
+  },
+  "date_revision": "2026-11-28"
 }

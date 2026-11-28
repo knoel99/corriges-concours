@@ -4,13 +4,15 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · modèle exact non renseigné (famille Claude) · effort non renseigné · vitesse non renseignée · 28 novembre 2026
+
 Les trois premières parties étudient la descente explicite sur la droite. La quatrième remplace le pas explicite par une minimisation et la dernière projette les itérées sur la boule unité.
 
-## Partie I — Premières propriétés
+## Partie I — Préliminaires
 
 ### Question 1a
 
-Soit $K=\{x\mid f(x)\le f(0)\}$. La continuité de $f$ rend $K=f^{-1}(]-\infty,f(0)])$ fermé. Les deux limites fournissent $R>0$ tel que $|x|>R$ implique $f(x)>f(0)$. Ainsi $K\subset[-R,R]$ est borné. Il contient 0.
+Soit $K=\{x\mid f(x)\le f(0)\}$. La continuité de $f$ rend $K=f^{-1}(]-\infty,f(0)])$ fermé. Par définition des limites en $\pm\infty$ (avec le seuil $f(0)$), il existe $A<0$ tel que $f(x)>f(0)$ pour tout $x<A$, et $B>0$ tel que $f(x)>f(0)$ pour tout $x>B$. Avec $R=\max(-A,B)>0$, $|x|>R$ implique $f(x)>f(0)$. Ainsi $K\subset[-R,R]$ est borné. Il contient 0.
 
 ### Question 1b
 
@@ -28,7 +30,7 @@ Comme $\widetilde x-\widetilde y=d-\tau h$, on a $(d-\tau h)^2=d^2-2\tau dh+\tau
 
 Puisque $f'(x_*)=0$, on a $\widetilde x_*=x_*$. Pour $x=x_n$ et $y=x_*$, le produit $dh$ est positif ou nul par convexité, et $\tau(2-\tau L)\ge0$. La question 2b implique donc $|x_{n+1}-x_*|^2\le|x_n-x_*|^2$. La suite des distances décroît.
 
-## Partie II — Convergence géométrique
+## Partie II — Convergence rapide, sous des hypothèses fortes
 
 ### Question 3a
 
@@ -62,7 +64,7 @@ La somme $f=g+\alpha x^2/2$ est convexe. On peut donc appliquer 2b. Puisque $\ta
 
 Posons $\rho=\sqrt{1-\alpha\tau(2-L\tau)}$. Pour $0<\tau<2/L$, $\tau(2-L\tau)>0$ et $\tau(2-L\tau)=(1-(1-L\tau)^2)/L\le1/L$. Avec $\alpha\le L$, on a $0\le\rho<1$. En prenant $y=x_*$ dans 7 puis en itérant, $|x_n-x_*|\le\rho^n|x_0-x_*|$ pour $n\ge1$ et l’inégalité est une égalité à l’indice 0. Si $\rho=0$, le premier pas atteint déjà le minimiseur.
 
-## Partie III — Convexité et convergence sans hypothèse forte
+## Partie III — Convergence lente, sous des hypothèses faibles
 
 ### Question 9
 
@@ -78,9 +80,9 @@ Décroissante et minorée par 0, la suite converge vers $\ell\ge0$. La continuit
 
 ### Question 10c
 
-Les termes sont strictement positifs, et
-$$\frac1{x_{n+1}}-\frac1{x_n}=\frac{\tau}{1-\tau x_n}\ge\tau.$$
-La somme de ces inégalités donne $1/x_n\ge1/x_0+n\tau$. En inversant les quantités positives, $x_n\le x_0/(1+n\tau x_0)$.
+D’après 10a, $0<x_n<1/\tau$ et $x_{n+1}=x_n(1-\tau x_n)>0$, donc les inverses existent et
+$$\frac1{x_{n+1}}-\frac1{x_n}=\frac{1-(1-\tau x_n)}{x_n(1-\tau x_n)}=\frac{\tau}{1-\tau x_n},$$
+ce qui est l’égalité demandée. Comme $0<1-\tau x_n<1$, on a $\tau/(1-\tau x_n)\ge\tau$. En sommant ces inégalités pour les indices $0$ à $n-1$, la somme télescopique donne $1/x_n\ge1/x_0+n\tau=(1+n\tau x_0)/x_0$. Les deux membres sont strictement positifs ; en passant aux inverses, $x_n\le x_0/(1+n\tau x_0)$.
 
 ### Question 11
 
@@ -139,11 +141,11 @@ La question 17 impose $f'(x_{\varphi(n)})\to0$. D’autre part, $f'$ est continu
 
 Par 12a en $x_{**}$, pour tout $y$, $f(y)\ge f(x_{**})+f'(x_{**})(y-x_{**})=f(x_{**})$. Ainsi $x_{**}$ minimise $f$. D’après 2c, la suite $|x_n-x_{**}|$ décroît et possède une limite positive ou nulle. La sous-suite $|x_{\varphi(n)}-x_{**}|$ tend vers zéro, donc cette limite vaut zéro et $x_n\to x_{**}$.
 
-## Partie IV — Descente proximale
+## Partie IV — Descente de gradient proximale
 
 ### Question 19
 
-Pour $a=x_0$, posons $F_a(x)=|x-a|^2/2+\tau f(x)$. Elle est continue et minorée par $|x-a|^2/2+\tau f(x_*)$, donc tend vers $+\infty$ aux deux extrémités. Les questions 1a et 1b donnent un minimiseur. La fonction $x\mapsto |x-a|^2/2$ est strictement convexe et $\tau f$ est convexe, donc leur somme est strictement convexe. Deux minimiseurs distincts donneraient en leur milieu une valeur strictement inférieure au minimum. Le minimiseur unique est noté $p_f(a)$.
+Pour $a=x_0$, posons $F_a(x)=|x-a|^2/2+\tau f(x)$. Elle est continue et minorée par $|x-a|^2/2+\tau f(x_*)$, donc tend vers $+\infty$ aux deux extrémités. Les questions 1a et 1b donnent un minimiseur. Pour l’unicité, soient $x_1\ne x_2$ deux minimiseurs de $F_a$, de valeur commune $m$, et $z=(x_1+x_2)/2$. Avec $u=x_1-a$ et $v=x_2-a$, l’identité $\tfrac12u^2+\tfrac12v^2-\left(\tfrac{u+v}2\right)^2=\tfrac14(u-v)^2>0$ donne $|z-a|^2<\tfrac12|x_1-a|^2+\tfrac12|x_2-a|^2$. La convexité de $f$ donne $f(z)\le\tfrac12f(x_1)+\tfrac12f(x_2)$. Comme $\tau>0$, en additionnant, $F_a(z)<\tfrac12F_a(x_1)+\tfrac12F_a(x_2)=m$, ce qui contredit la minimalité de $m$. Le minimiseur est donc unique ; on le note $p_f(a)$.
 
 ### Question 20
 
@@ -157,7 +159,7 @@ Si $f\in C^1$, alors $F_{x_0}$ est dérivable. En son minimiseur $x_1=p_f(x_0)$,
 
 ### Question 22a
 
-Fixons le point de départ $x$. Pour $z<0$, $F_x'(z)=z-x-\tau$, et pour $z>0$, $F_x'(z)=z-x+\tau$. Si $x>\tau$, la dérivée est négative jusqu’à $z=x-\tau>0$ puis positive. Si $x<-\tau$, elle s’annule en $z=x+\tau<0$ et passe du signe négatif au signe positif. Si $-\tau\le x\le\tau$, la dérivée est négative à gauche de 0 et positive à droite, avec une limite unilatérale éventuellement nulle au raccord. Ainsi
+Fixons le point de départ $x$. Pour $z<0$, $F_x'(z)=z-x-\tau$, et pour $z>0$, $F_x'(z)=z-x+\tau$. La fonction $F_x$ est continue sur $\mathbb R$ et dérivable hors de 0 ; il suffit donc d’étudier le signe de sa dérivée sur chaque demi-droite. Si $x>\tau$, la dérivée est strictement négative sur $]-\infty,0[$ (car $z-x-\tau<0$) et sur $]0,x-\tau[$, puis strictement positive sur $]x-\tau,+\infty[$ : $F_x$ décroît strictement jusqu’à $x-\tau$ puis croît strictement. Si $x<-\tau$, elle s’annule en $z=x+\tau<0$ et passe du signe négatif au signe positif. Si $-\tau\le x\le\tau$, la dérivée est négative à gauche de 0 et positive à droite, avec une limite unilatérale éventuellement nulle au raccord. Ainsi
 $$p_f(x)=\begin{cases}x-\tau,&x\ge\tau,\\x+\tau,&x\le-\tau,\\0,&|x|<\tau.\end{cases}$$
 
 ![Figure 2 — Pour la valeur absolue et un pas égal à un, tout point de l’intervalle central a pour image zéro. Les deux branches extérieures se rapprochent de zéro d’une unité.](figures/q22-seuillage.svg)
@@ -209,7 +211,7 @@ Comme $\varphi(n)\to+\infty$, la question 23 donne $x_{\varphi(n)+1}-x_{\varphi(
 
 Le critère de 20 donne que $x_{**}$ minimise $f$. Par 28, $|x_n-x_{**}|$ décroît. Elle admet une sous-suite tendant vers 0, donc sa limite vaut 0. On a bien $x_n\to x_{**}$.
 
-## Partie V — Descente projetée sur la boule unité
+## Partie V — Optimisation sur la boule unité
 
 ### Question 31
 
@@ -237,7 +239,7 @@ Le dernier terme est $O(\|h\|^2)$. La partie linéaire en $h$ est donc $\langle-
 
 ### Question 35
 
-Écrivons $Mx=\sum_i\lambda_i\alpha_ie_i$ avec $x=\sum_i\alpha_ie_i$. Par positivité et symétrie, toutes les valeurs propres sont positives ou nulles, et leur maximum $\lambda_{\max}$ est strictement positif puisque $M\ne0$. Sur $C$, $\langle x,Mx\rangle=\sum_i\lambda_i\alpha_i^2\le\lambda_{\max}\|x\|^2\le\lambda_{\max}$. L’égalité vaut exactement pour les vecteurs unitaires de l’espace propre de $\lambda_{\max}$. Ce sont les minimiseurs de $f$ et le minimum vaut $-\lambda_{\max}/2$.
+La matrice $M$ est symétrique réelle : par le théorème spectral, il existe une base orthonormée $(e_1,\dots,e_d)$ de vecteurs propres, $Me_i=\lambda_ie_i$. Écrivons $x=\sum_i\alpha_ie_i$, de sorte que $Mx=\sum_i\lambda_i\alpha_ie_i$. Comme $\lambda_i=\langle e_i,Me_i\rangle\ge0$, toutes les valeurs propres sont positives ou nulles, et leur maximum $\lambda_{\max}$ est strictement positif puisque $M\ne0$. Sur $C$, $\langle x,Mx\rangle=\sum_i\lambda_i\alpha_i^2\le\lambda_{\max}\|x\|^2\le\lambda_{\max}$. L’égalité vaut exactement pour les vecteurs unitaires de l’espace propre de $\lambda_{\max}$. Ce sont les minimiseurs de $f$ et le minimum vaut $-\lambda_{\max}/2$.
 
 ### Question 36a
 
