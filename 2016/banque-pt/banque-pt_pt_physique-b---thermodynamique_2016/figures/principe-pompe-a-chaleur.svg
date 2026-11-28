@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 430" width="760" height="430" font-family="sans-serif" font-size="14"><rect width="100%" height="100%" fill="white"/><defs><marker id="fn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#111"/></marker><marker id="fr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#b00020"/></marker><marker id="fb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1f4e9c"/></marker><marker id="fg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2e7d32"/></marker></defs>
+<rect x="210" y="20" width="340" height="70" rx="8" fill="#fde8e8" stroke="#b00020" stroke-width="1.5"/>
+<text x="380" y="48" text-anchor="middle" font-weight="bold">Source chaude</text>
+<text x="380" y="72" text-anchor="middle">eau du circuit de chauffage (logement)</text>
+<rect x="210" y="340" width="340" height="70" rx="8" fill="#e6eefb" stroke="#1f4e9c" stroke-width="1.5"/>
+<text x="380" y="368" text-anchor="middle" font-weight="bold">Source froide</text>
+<text x="380" y="392" text-anchor="middle">sol, par l'eau glycolée du circuit capteur</text>
+<circle cx="380" cy="215" r="62" fill="#f4f4f4" stroke="#111" stroke-width="1.5"/>
+<text x="380" y="203" text-anchor="middle" font-weight="bold">Fluide R407C</text>
+<text x="380" y="223" text-anchor="middle">cycle récepteur</text>
+<text x="380" y="243" text-anchor="middle">ditherme</text>
+<line x1="380" y1="338" x2="380" y2="282" stroke="#1f4e9c" stroke-width="3" marker-end="url(#fb)"/>
+<text x="394" y="308" fill="#1f4e9c">Q_f &gt; 0 : chaleur prise au sol</text>
+<text x="394" y="326" fill="#1f4e9c" font-size="12">(évaporateur, 5 °C, 6 bar)</text>
+<line x1="380" y1="151" x2="380" y2="95" stroke="#b00020" stroke-width="3" marker-end="url(#fr)"/>
+<text x="394" y="118" fill="#b00020">Q_c &lt; 0 : chaleur cédée à l'eau de chauffage</text>
+<text x="394" y="136" fill="#b00020" font-size="12">(condenseur, 60 °C, 27 bar)</text>
+<rect x="30" y="180" width="170" height="70" rx="8" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5"/>
+<text x="115" y="208" text-anchor="middle" font-weight="bold">Compresseur</text>
+<text x="115" y="230" text-anchor="middle">moteur électrique</text>
+<line x1="202" y1="215" x2="313" y2="215" stroke="#2e7d32" stroke-width="3" marker-end="url(#fg)"/>
+<text x="258" y="203" text-anchor="middle" fill="#2e7d32">W &gt; 0</text>
+<text x="600" y="205" text-anchor="middle">Sur un cycle :</text>
+<text x="600" y="227" text-anchor="middle">W + Q_c + Q_f = 0</text>
+<text x="600" y="249" text-anchor="middle">|Q_c| = Q_f + W</text>
+</svg>

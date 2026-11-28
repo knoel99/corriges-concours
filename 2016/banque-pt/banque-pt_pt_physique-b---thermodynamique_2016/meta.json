@@ -1,0 +1,75 @@
+{
+ "slug": "banque-pt_pt_physique-b---thermodynamique_2016",
+ "epreuve": {
+  "concours": "Banque PT",
+  "filiere": "PT",
+  "matiere": "Physique B - Thermodynamique",
+  "annee": 2016
+ },
+ "questions": 25,
+ "redaction": "Proposition non officielle rédigée par IA.",
+ "sources": {
+  "sujet": "https://www.banquept.fr/documents/2016/ph_b_th_2016_pt.pdf",
+  "sujet_sha256": "945cedfc35b74e9fe991c46e6d77f5fcee6486daf3e80f108ba7d9fc4bf03a6a",
+  "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2016/rapport_phys_b_ecrit_2016.pdf",
+  "rapport_sha256": "25beb48a2ef47fa5d1365b6644b05e833636c265523e9c53a6a2995b3c11e702"
+ },
+ "couverture": {
+  "statut": "complet",
+  "questions_entierement_traitees": [
+   "1.1",
+   "1.2",
+   "1.3",
+   "1.4",
+   "1.5",
+   "1.6",
+   "1.7",
+   "2.1",
+   "2.2",
+   "2.3",
+   "2.4",
+   "2.5",
+   "2.6",
+   "3.1",
+   "3.2",
+   "3.3",
+   "3.4",
+   "3.5.a",
+   "3.5.b",
+   "3.5.c",
+   "3.6",
+   "3.7.a",
+   "3.7.b",
+   "3.7.c",
+   "3.7.d"
+  ],
+  "precision": "Sujet de 8 pages PDF lu en entier (garde p. 1, énoncé p. 2 à 7, p. 8 blanche) ; 25 questions repérées 1.1 à 3.7.d (les sous-questions a, b, c, d de 3.5 et 3.7 comptées séparément, comme dans le rapport), toutes traitées. Rapport commun à Physique B de 6 pages, partie thermodynamique p. 4 à 6. Le sujet ne contient ni diagramme thermodynamique ni document-réponse : les enthalpies massiques viennent du tableau de la page 6 ; le diagramme de Clapeyron des questions 3.5.a et 3.5.c est une allure à construire, restituée par la figure 2. La valeur K = 0,15 m⁻¹ donnée à la question 2.4 a été recalculée à partir de l'expression de h de l'énoncé."
+ },
+ "figures": [
+  {
+   "fichier": "figures/principe-pompe-a-chaleur.svg",
+   "question": "3.1",
+   "legende": "Principe de la pompe à chaleur : sources, sens et signes des transferts d'énergie reçus par le fluide."
+  },
+  {
+   "fichier": "figures/clapeyron-r407c-cycle.svg",
+   "question": "3.5.a",
+   "legende": "Allure du diagramme de Clapeyron du R407C : courbe de saturation, isothermes 5 °C, 60 °C et 70 °C, et cycle 1-2-3-4 de la pompe à chaleur."
+  }
+ ],
+ "date_revision": "2026-11-28",
+ "contributions": [
+  {
+   "phase": "redaction",
+   "tour": 1,
+   "fournisseur": "claude-code",
+   "modele": null,
+   "famille_modele": "Claude",
+   "effort": null,
+   "vitesse": null,
+   "date": "2026-11-28",
+   "modifications": true,
+   "perimetre": "Rédaction des éditions brute et guidée des 25 questions et des deux figures ; applications numériques refaites par calcul, encadrés du jury relus contre le rapport 2016."
+  }
+ ]
+}
